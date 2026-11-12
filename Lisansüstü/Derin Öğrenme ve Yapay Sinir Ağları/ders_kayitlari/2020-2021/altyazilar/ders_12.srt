@@ -1,0 +1,1243 @@
+1
+00:02:02,804 --> 00:02:06,984
+Arkadaşlar, merhaba. Geliyor değil mi sesim?
+
+2
+00:02:08,204 --> 00:02:09,443
+Evet hocam, merhabalar.
+
+3
+00:02:12,444 --> 00:02:23,544
+Şimdi, önce aslında sizin sorularınız varsa bir onu alacağım. Bir de final için projeyi konuşacağız.
+
+4
+00:02:25,876 --> 00:02:47,256
+Ondan sonra derse geçeceğim. Arkadaşlarınızı beklerken aslında ben birazcık bahsedeyim. Şimdi biraz düşündüm. Sizden de bir konu önerisi gelmedi. Hani hala şu konuda yapmak istiyorum dediğiniz bir şey varsa olur. Yoksa da şöyle bir şey isteyeceğim.
+
+5
+00:02:49,907 --> 00:03:15,687
+Derin öğrenme ile ilgili belli başlıklardan derste yaptıklarımız da dahil. Ama bir de işleyemediklerimiz var. İşte generatif networkler gibi falan veya özel RCNN'di gibi şeyler. Bunlardan bir başlık. Ben liste vereceğim ama ben vermeden önce siz şu anda derse gelenler öncelikle olmak üzere.
+
+6
+00:03:16,180 --> 00:03:39,000
+Kendinize derin öğrenme kapsamında bir konu başlığı seçin. Onun üzerine bir sunum şeklinde bir şey hazırlayın diyeceğim. Proje kontrol etmek benim açımdan da zor olacak. Biraz da vakit daralıyor. O yüzden hemen konu başlığı şeklinde bir şey seçelim.
+
+7
+00:03:39,443 --> 00:04:00,443
+İşte o konudaki hem teorik altyapıyı verecek bir şey olsun istiyorum. Tamam, hemen birileri yazdı. Süpersin [öğrenci]. Hem teorik bilgiyi verin, hem o konudaki belli başlı yayınları verin.
+
+8
+00:04:04,915 --> 00:04:27,816
+Olur [öğrenci], Transfer Learning güzel olur. Şimdi genel, onun üzerinden konuşacak olursak, genel mantık nedir? Nasıl uygulanıyor? Belli başlı uygulamaları. Aslında pek çoğu için örnekler de var hitapta. Dolayısıyla bir şey de çalıştırıp onu da eklemek.
+
+9
+00:04:28,211 --> 00:04:53,752
+Olabilir. Yeniden yapın demeyeceğim ama kesinlikle konuyu iyi dört başından anlatmanız lazım. Teorik altyapısıyla birlikte. Ana istediğim şey bu. Yanına da güzel bir iki tane örnek. Küçük büyük fark etmez. [öğrenci] tamam, süper. Sizden daha yaratıcı şeyler geleceğini düşünüyorum. O yüzden varsa aklınızda bir şeyler siz söyleyin bir.
+
+10
+00:04:54,483 --> 00:04:59,004
+Ondan sonra da kalanları da ben dağıtayım.
+
+11
+00:05:01,504 --> 00:05:03,364
+Hocam bir şey sorabilir miyim?
+
+12
+00:05:08,915 --> 00:05:10,115
+Teşekkürler.
+
+13
+00:05:10,447 --> 00:05:11,807
+Dinliyorum, pardon.
+
+14
+00:05:13,087 --> 00:05:24,747
+Hocam, seçtiğimiz proje yazılı bir şekilde project proposal gibi mi göndermemiz lazım? Çünkü yapmak istediğim bir proje var ama detaylı bir şekilde mi göndermemiz lazım size?
+
+15
+00:05:26,127 --> 00:05:37,207
+Şöyle biraz detaylı gönderirsen iyi olur. Bir yere varmayacaksa, tıkanacaksa, senin kafanda da benim kafamda da netleşsin diye biraz detaylı yazarsan iyi olur.
+
+16
+00:05:37,651 --> 00:05:48,792
+Hani sonra yapamamış gibi olmasın. Bir sınırlarını tanımlamak için biraz yazarsan iyi olur.
+
+17
+00:05:49,192 --> 00:05:52,812
+Tamam hocam anladım. Bu hafta içerisinde Project Proposal gönderirim size.
+
+18
+00:05:53,111 --> 00:06:02,271
+Tamam tamam. O zaman şuraya şey yazar mısın? Proje önerisi göndereceğim diye. Şu ekranını ben tutayım diye şey yapıyorum. Şu anda söyleyenleri bileyim.
+
+19
+00:06:03,132 --> 00:06:04,331
+Tamamdır hocam yazıyorum.
+
+20
+00:06:06,036 --> 00:06:28,656
+Tamam, [öğrenci] ile yapacaksın. Pishing Dedection tamam. Kullanacağın yöntemleri yani şey manasında da yöntemlerin altyapısı manasında da bilgi vermenizi istiyorum. Uygulama yapacak bile olsanız anlatabildim değil mi? Beklediğim şeyi.
+
+21
+00:06:30,100 --> 00:06:47,240
+Hocam, ben tam olarak anlamadım ama ben mesela şey yapıyorum. Content-based, içerik tabanlı olarak web sitelerini sınıflandırmasını çalışıyorum. Burada içerik tabanlı özellikler kullandığımı bahsetmem yeterli olur mu? Yoksa…
+
+22
+00:06:47,240 --> 00:06:57,120
+Yok, içerik tabanlı özellikler hangi özellikler? Bu özellikleri seçerken özel bir işlem yaptın mı? Artık kullanacağın yöntem.
+
+23
+00:06:57,908 --> 00:07:03,768
+Hizan, GAN konusu tamam. Yöntem mesela neyle yapacaksın?
+
+24
+00:07:05,648 --> 00:07:13,687
+Yani hocam ben şu an aslında deniyorum. Mesela LSTM ile, BDSTM ile tek tek deneyeceğim.
+
+25
+00:07:15,148 --> 00:07:20,867
+BDSTM nedir? Neden bu işe uygun olduğunu düşünüyorum.
+
+26
+00:07:20,867 --> 00:07:21,187
+Anladım.
+
+27
+00:07:21,716 --> 00:07:40,916
+Anlatabildim mi? Yani altındaki dayanak ve teoride ilişkisi. Assemble Learning olur [öğrenci]. Tamam, Anomaly Detection olur. [öğrenci] kesinlikle olur.
+
+28
+00:07:41,696 --> 00:07:48,336
+Mesela neler var aklında? Matematiksel optimizasyon derken var mı ya da?
+
+29
+00:07:48,851 --> 00:08:03,391
+Hocam birkaç makale var. Dikkatimi çekmiş de onları inceleyeceğim. Onların kapsamında çıkacak birkaç farklı çalışma onun içinden muhtemelen ekleyeceğim.
+
+30
+00:08:03,391 --> 00:08:08,511
+Yani tek bir çalışma değil de o bağlamda birkaç çalışmayı değerlerim diye düşünüyorum hocam.
+
+31
+00:08:09,191 --> 00:08:10,571
+Tamam, tamam. Olur.
+
+32
+00:08:14,771 --> 00:08:38,572
+Ben şimdi çok özür dilerim. Gerçekten korkunç bir yoğunluk içine girmişim. Sizle yeterince ilgilenemiyorum. Gönderdikleriniz üzerinden birazcık arada bir özet bir şey isteyeceğim sizden. İçerik isteyeceğim ki doğru yere gidiyor mu gitmiyor mu takip edebilmek için.
+
+33
+00:08:40,244 --> 00:08:57,084
+Ondan sonrasında da deadline'lara uygun şekilde teslim tarihlerini söyleyeceğim. Bugün dersten sonra ilk işim sizin konularınızla ilgilenmek olsun. Onları yapayım ve sizle paylaşayım.
+
+34
+00:08:57,084 --> 00:09:03,604
+Yeni gelen arkadaşlar, duymayanlar varsa tekrar söylüyorum.
+
+35
+00:09:03,984 --> 00:09:14,604
+Dersim projesi için eğer uygulama öneriniz yoksa, belli bir aklınızda yapmak istediğiniz bir proje yoksa...
+
+36
+00:09:14,868 --> 00:09:34,388
+Belli bir spesifik ağ yapısı olabilir. Aslında direkt veri işlemeyle ilgili şeyler de olabilir. İlgili olabilecek herhangi bir konuda bir araştırma yapıp hem teorisini, öğretici bir şey de hazırlamanızı istiyorum, öğretici bir içerikle birlikte.
+
+37
+00:09:34,960 --> 00:09:59,900
+O konudaki belli başlı çalışmalar, makaleler ve mümkünse hazır kodlardan kesinlikle kullanabilirsiniz. Bir uygulama çalıştırıp onun üzerinden bir analiz veya işte animatif şeyler olabilir. Konuyu anlatan bir rapor artı sunum şeklinde bir şey hazırlamanızı istedim.
+
+38
+00:10:04,275 --> 00:10:21,755
+Şimdi yazılı hale getireceğim. Tabii duymayanlar için. Burada yazanlar öncelikle o konuları onlara aldı sayacağım. Yazmamış olanlar için de ben bir şey atayacağım artık.
+
+39
+00:10:28,148 --> 00:10:36,868
+Bir yandan yazmaya, [öğrenci] mailini gördüm senin de, tahminiyet izinle ilgili bir şey seçmedim diyeceğim.
+
+40
+00:10:44,307 --> 00:10:53,228
+Transfer Learning. Peki [öğrenci], uygulama olarak mı yapmayı düşünüyorsun? Tamam. Evet, uygulama demişsin. Olur.
+
+41
+00:10:53,228 --> 00:10:55,348
+Kusura bakmayın mikrofonu bağlamak için geç oldum.
+
+42
+00:10:56,659 --> 00:11:14,199
+Hocam, haklısınız. Ben biraz diğer derslerden de bir şeyler serpiştirip de bir şeyler yapmaya çalışıyorum. Çünkü aldığım derslerde bakıyorum. Biraz konular farklı farklı dalları bir ayrıştı. Tezlikte bir derin öğrenme de kullanacağın için bu bağlantı bir CNN ile merak edip bir araştırma sürecine girmek istedim.
+
+43
+00:11:15,079 --> 00:11:16,919
+Olur, tamam. Yani olmaz değil.
+
+44
+00:11:17,395 --> 00:11:38,095
+Teze yakın bir şey seçersen de daha iyi olur demiştim. Veri olarak en azından sıkıntı değil yani. Uygundur. Gördüm mailini. Sıkıntı değil. Tamam. Başka yazan olursa chat ekranından yazabilirsiniz.
+
+45
+00:11:44,788 --> 00:11:55,927
+Dersin duvarına yine söylediğim şeyleri yazılı olarak koyacağım. Sizden dönüş olmazsa da kalan kişilere ben konu aktarmış olacağım.
+
+46
+00:12:00,275 --> 00:12:15,535
+Peki. Şimdi geçen hafta korelasyon ve konvolüsyon biraz konuştuk. Birbirleriyle ilişkisi üzerinden de bir konuşmuş olduk.
+
+47
+00:12:22,259 --> 00:12:34,779
+Şimdi çok ufak bir orayı tamamlayayım ya da şöyle bir üstünden geçmiş olayım. Arkasından birazcık daha regularizasyon üzerinden konuşacağız.
+
+48
+00:12:34,779 --> 00:12:43,480
+Şimdi konvolüsyonda özellikle hata yapıldığı için tekrar tekrar söylemek istiyorum.
+
+49
+00:12:44,436 --> 00:12:57,196
+Kullanacağınız filtreyi dikeyde ve yatayda döndürerek uyguluyorsunuz. Yani konvolüsyon işlemi direkt filtreyi alıp noktasal çarpım yapmak değil.
+
+50
+00:12:57,716 --> 00:13:14,155
+Filtreyi döndürerek uyguluyorsunuz. Sanırım örneklerde falan çoğunlukla zaten döndürülmüş hali veriliyor vs. Genellikle öyle bir yanılsama oluyor. Bu döndürme işleminin.
+
+51
+00:13:14,480 --> 00:13:26,319
+Farkında olmuyor insanlar. Seçtiğiniz filtre, belli bir işi yapan bir filtre seçtiyseniz mutlaka döndürerek uyguluyorsunuz konvolüsyon işlemi için.
+
+52
+00:13:27,779 --> 00:13:38,579
+Bir de boyut, daha doğrusu algoritmanın karmaşıklığını azaltmak için, derin öğrenmedeki yükü azaltmak için ne yapabiliriz diye konuşmuştuk.
+
+53
+00:13:38,579 --> 00:13:41,899
+Bu da belki kullanabileceğiniz bir yöntem olabilir.
+
+54
+00:13:42,399 --> 00:13:59,000
+Filtrenizi eğer çarpanlarına ayırabiliyorsanız, 3'e 3'lük bir filtreyi 3'e 1'lik 2 filtre şeklinde veya 3'e 1'lik 2 tane vektörün çarpımı şeklinde ifade etmiştik hatırlarsanız.
+
+55
+00:14:10,388 --> 00:14:16,228
+Ene düşürebilmiştik. Bunlarda kullanabileceğiniz yöntemler.
+
+56
+00:14:18,508 --> 00:14:30,568
+Peki, farklı filtreler kullanabileceğimizi söylemiştik. Bu da tabii genellikle görüntü üzerinde çalışıyorsanız öngörebileceğiniz şeyler olabilir.
+
+57
+00:14:37,679 --> 00:14:49,279
+İhtiyacı varsa, kenar belirleme ihtiyacı varsa, ihtiyaçlarınıza göre farklı filtrelerle farklı konvolüsyon katmanları oluşturabilirsiniz demiştik.
+
+58
+00:14:49,279 --> 00:14:56,207
+Bir konvolüsyonel ağda boyutun...
+
+59
+00:14:56,207 --> 00:15:18,947
+Görüntü boyutunun ve ağ boyunca yapılan işlemler sırasında boyutların nasıl değiştiğine de biraz bakmıştık. SIFAR verisi üzerinden konuşmuştuk. SIFARO'nun içindeki görüntüler 32'ye 32'lik görüntüler. İşte üç kanalda renk var RGBD.
+
+60
+00:15:20,820 --> 00:15:41,120
+RGB dinlerden çıktı. Böyle olduğu zaman ilk Hidden Layer'da 32x32x3'den 3072 tane bağlantı ve dolayısıyla 3072 tane ağırlık hesaplaması işlemimiz vardı.
+
+61
+00:15:41,615 --> 00:16:00,815
+Bu hadi bir derece iyi. Eğer regülür ağlarla gidiyor olsaydık, yani arada hiç boyut azaltma yapmasaydık, bu size gidip 120 bin ağırlığa dayanacaktı. Biz ne yapıyorduk?
+
+62
+00:16:03,792 --> 00:16:18,872
+Girde nöronlarının belli bir kısmına uyguluyorduk. Dolayısıyla her şey her şeye bağlı değildi. Daha en baştan boyutu bir kere azaltmış oluyorduk. Filtremitizm boyutuyla alakalı da olarak da.
+
+63
+00:16:19,347 --> 00:16:38,987
+Dolayısıyla normal fully connected multilayer perceptron gibi bir ağdansa konvolüsyonel ağ kullandığımız zaman boyutta ciddi bir azaltma yapmış oluyoruz. Hesaplanacak ağırlıkların sayısını azaltmış oluyoruz.
+
+64
+00:16:39,475 --> 00:16:54,775
+Şöyle bir bakarsak aslında resim üzerinden sol taraftaki üç katmanlı bir normal multilayar perseptron, sağ taraftaki kabaca bir konvolüsyonel ağan çizimi.
+
+65
+00:16:55,231 --> 00:17:03,152
+Mutliliyel Perseptron'da her kademede hesaplanacak ağırlıkların sayısı artıyor.
+
+66
+00:17:03,672 --> 00:17:06,211
+Kullandığınız nöron sayısıyla da ilişkili olarak.
+
+67
+00:17:07,572 --> 00:17:11,192
+Konvolüsyonel ağda ise aslında azalmış oluyor.
+
+68
+00:17:11,192 --> 00:17:13,192
+İlk başta şu pembeyle görünen...
+
+69
+00:17:13,619 --> 00:17:28,659
+Yine 32'ye 32'lik diye düşünürsek sizin görüntünüz. Şu mavi ile gösterilen şey aslında üç renk olduğu için boyutu büyüttük. Yani üç boyut bir derinlik eklenmiş oldu.
+
+70
+00:17:39,215 --> 00:18:01,155
+Bölüm Bölüm Uyguladığımız için hesaplamayı azaltmış oluyoruz. Hem de ondan sonra pooling layer geliyordu. Reli'yi uyguladıktan sonra bir de pooling işlemi yapıp boyutu bir de orada azaltıyorduk. Dolayısıyla klasik bir multilayer perseptronu derin hale getirip hidden layer'lar ekleyerek.
+
+71
+00:18:01,536 --> 00:18:13,735
+Yapacağımıza konvolüsyonel ağla yaptığımız zaman işlemi oldukça bir boyut azaltması ve hesaplamanın azaltılması söz konusu oluyordu.
+
+72
+00:18:15,235 --> 00:18:23,076
+Başka ana kullandığımız katman tipleri mutlaka konvolüsyonel katmanımız vardı.
+
+73
+00:18:23,076 --> 00:18:28,715
+İhtiyacımız olduğu kadar ve ihtiyacımız olan filtreleri içerecek şekilde.
+
+74
+00:18:29,152 --> 00:18:52,971
+Pulling Layer'ımız vardı, Fully Connected Layer'ımız vardı. Bunlar, Fully Connected Layer zaten normal MLP'de de gördüğümüz katman. Burada farklı olan konvolisyonel layer ile Pulling Layer. Farklı olan bir de aslında Relo dediğimiz katman bizim.
+
+75
+00:18:53,392 --> 00:19:05,251
+Aktivasyon fonksiyonumuzun yerine geçiyordu. Orada kullandığımız şeyin rel olması farklı. Vanishing gradient probleminin önüne geçiyor demiştik.
+
+76
+00:19:21,044 --> 00:19:33,443
+İşlem yapmamız konvolüsyon dediğimiz şeyde filtrelere karşılık geliyor. Dolayısıyla özellikle görüntü üzerinde daha iyi sonuç elde edebilmemiz.
+
+77
+00:19:35,124 --> 00:19:46,503
+Sifar verisi küçük olduğu için, 32-30'luk veriler olduğu için üzerinde deneme yapmak için uygun bir veri seti.
+
+78
+00:19:46,832 --> 00:19:53,592
+Muhteşem bir şeyler beklemek değil ama CNN'i bir denemek için kullanabileceğiniz bir veri seti.
+
+79
+00:19:55,592 --> 00:20:06,592
+Classification için sifar üzerinde çalışırken birer tane konvolüsyon ve birer tane poolingleri kullanarak bile sonuç elde edebilirsiniz.
+
+80
+00:20:09,215 --> 00:20:24,215
+Bu 10 tane sınıf var zaten. Şöyle bir dizilimle oluşturacağınız bir mimariyle sifar üzerinde bir classification işlemi yapabiliyorsunuz.
+
+81
+00:20:26,355 --> 00:20:34,275
+Yine aynı şu dizilişte bir mimari için boyutların nasıl değiştiğine bir bakalım demiştik.
+
+82
+00:20:35,215 --> 00:20:50,795
+Girişte 32 x 32 x 3'lük görüntümüz var. Derinliği RGB'den geliyor 3 olan. Konvolüsyonel katmanda 12 tane filtre uygularsak boyut ne olur demiştik.
+
+83
+00:21:01,460 --> 00:21:14,480
+0 ile x arasında maksimumu seçecek şekilde bir fonksiyon uyguluyorduk. O neydi? x dediğimiz şey aslında nörona gelen toplam değerdi.
+
+84
+00:21:15,539 --> 00:21:26,840
+Eğer bu değer pozitif bir değerse olduğu gibi alacağız, değilse 0'a çekeceğiz. Yani negatif bir değer oluşmasını önlemiş oluyoruz.
+
+85
+00:21:27,183 --> 00:21:46,024
+Buradaki Max fonksiyonu onu yapıyor. ReloLayer'ında herhangi bir boyut azaltma yok. Bu dediğim gibi bir aktivasyon fonksiyonu diye düşünebilirsiniz. Direkt eleman eleman uyguladığımız, her bir elemente uyguladığımız bir aktivasyon fonksiyonu.
+
+86
+00:21:50,996 --> 00:22:01,536
+Boyut azaltma için bu sefer 32-32 ise yarıya indirmek için 16-16 x 12'lik bir boyuta indirebiliyoruz.
+
+87
+00:22:02,536 --> 00:22:07,936
+Pooling Layer'da pooling işlemini nasıl yaptığımız yine filtremizin boyutuyla ilgili.
+
+88
+00:22:12,799 --> 00:22:24,939
+Mevcut durumda en yüksek değer neyse onu çekerek, en yüksek bir, en yüksek iki değer çekerek kalanları atıyoruz.
+
+89
+00:22:24,939 --> 00:22:33,079
+Ve aslında üçe üçlük bir şeyden bire inebiliyoruz, bire kadar inebiliyoruz.
+
+90
+00:22:33,939 --> 00:22:40,799
+Fully Collective Layer'a geldiğimizde de Fully Collective Layer'ın çıktısındaki her şeyi aslında tümüyle çıkıyor.
+
+91
+00:22:40,799 --> 00:22:43,799
+Akışta beklediğimiz sınıf sayısı kadar...
+
+92
+00:22:44,960 --> 00:23:12,960
+Çıktı'ya bağlıyoruz. Sifar 10 için 10 tane klas var demiştim. Dolayısıyla 10 nöron olması gerekiyor full connected layer'da. Dolayısıyla çıktı da da bekleyeceğimiz boyut 1x1x10 olacak. Böylece 32-33 şeklinde giren verimiz çıkışta 10 tane klas oluşturacak.
+
+93
+00:23:12,960 --> 00:23:37,160
+10 tane nörona, 10 tane değere düşmüş olacak. Relu fonksiyonu aslında lineer fonksiyondu. Bunun negatif olmasını istemiyorduk. Dolayısıyla uyguladığımız fonksiyon max 0x fonksiyonuydu.
+
+94
+00:23:39,220 --> 00:23:42,600
+Bunun bazı avantajları, dezavantajları var.
+
+95
+00:23:42,600 --> 00:23:49,600
+Bu şekilde uyguladığımızda bir grup nöronun...
+
+96
+00:23:50,579 --> 00:24:07,259
+Oluşturduğu değeri sıfıra çekmiş olacağız. Oradan tekrar bunların pozitif olma şansını da azaltmış oluyoruz. Böyle bir durumda o nöronun öldüğü söyleniyor. Kerim olarak eğitim sırasında.
+
+97
+00:24:10,836 --> 00:24:19,836
+O ünitenin veya nöronun öldüğü söylenebiliyor. Tekrar çıkaramıyorsak aşağı yukarı...
+
+98
+00:24:33,652 --> 00:24:45,392
+Bir şekilde bazı örnekler için önemli ise bile biz o önemliliğini göremeyeceğiz. Bazı özellikleri kullanma şansımızı kaybedeceğiz diye.
+
+99
+00:24:50,736 --> 00:25:11,276
+Yöntem var. Likirelü'de yaptığımız şey sıfıra direkt çekmiyoruz da biraz sıfırın altında bir değeri veya sıfırın biraz üstünde bir değeri kullanıyoruz. Küçük bir negatif değere 0-0-1 gibi.
+
+100
+00:25:11,759 --> 00:25:29,599
+Bir değere izin veriyoruz ki ölmesin. Ölme neden oluyor? Sıfıra çektiğiniz zaman bir sonraki artık çarpma işlemlerinde falan sıfır direkt gelen değeri yuttuğu için bir daha artıya geçirme şansınız kalmıyor.
+
+101
+00:25:29,599 --> 00:25:37,240
+Onun dışında da başka yöntemler var ama Likirelu yaygın kullanılan bir yöntem.
+
+102
+00:25:37,844 --> 00:25:50,944
+Onun dışında Max Out var. Tabaca konvolüsyonel ağlar böyle. Var mı soracağınız bir şey?
+
+103
+00:25:58,420 --> 00:26:01,080
+Diğer bir slide açacağım ben.
+
+104
+00:26:09,652 --> 00:26:17,352
+Birkaç aslında temel şeylerdi bunlar ama sıra şimdi gelmiş gibi oldu.
+
+105
+00:26:17,352 --> 00:26:25,272
+Ya da arada lafları geçti, regularizasyon değil de underfitting ve overfitting nedir?
+
+106
+00:26:26,392 --> 00:26:30,592
+Aralarda söyledim ama biraz daha onları vurgulayalım.
+
+107
+00:26:32,403 --> 00:26:48,943
+Underfitting dediğimiz şey, aslında bizim sonuçta yapmaya çalıştığımız şey, elimizde bir grup örnek var, bir data var. Buna en uygun fonksiyonu yaratmaya çalışıyoruz. Bir şekilde o fonksiyonu genelleyebilmeye çalışıyoruz.
+
+108
+00:26:48,943 --> 00:26:54,884
+Çünkü elimizdeki datalara göre iyi bir fonksiyon yaratabilirsek.
+
+109
+00:26:55,152 --> 00:27:05,311
+Daha sonra yeni veriler geldiğinde aynı konsept içinde o verilerle ilgili de tahmin yürütebileceğimizi düşünüyoruz.
+
+110
+00:27:05,311 --> 00:27:19,991
+Ya da öyle işin gerçeği de. Fakat o modeli eğer çok genel üretmişsek bu sefer güvenilirliği azalmış oluyor. Underfitting dediğimiz şey bu kabaca.
+
+111
+00:27:20,596 --> 00:27:45,596
+Overfitting dediğimiz şeyde elimizdeki örneklerin hepsine birebir çok iyi uyan bir fonksiyon oluşturmaya çalıştırırsak, bu sefer de en ufak hatalı bir yeni örnek geldiğinde oluşturduğumuz o mükemmel fonksiyona uymayacağı için tahmin etme yeteneğimizi kaybetmiş oluyoruz.
+
+112
+00:27:46,420 --> 00:28:04,200
+Overfitting dediğimiz şey, genelleme yeteneğimizi kaybedersek de, yani ilk etapta eğitimde yüzde yüz başarı sağlayabilirsiniz. Bütün örnekler için sıfır hata sonucuna ulaşabilirsiniz. Ama bu her zaman iyi bir şey değil.
+
+113
+00:28:14,067 --> 00:28:20,347
+Onun için sonuç üretemeyeceksiniz, genelleme yeteneğinizi kaybedeceksiniz demektir.
+
+114
+00:28:22,747 --> 00:28:26,967
+Peki, çok hızlı şu örneklerden gideyim.
+
+115
+00:28:29,619 --> 00:28:53,459
+Özelliklerine bakarak bir aslan veya büyük bir kediyi modellemeye çalıştığımızı düşünelim. Özellik olarak seçtiğimiz vücut ölçüsü, ağırlığı, dişlerinin kuvveti, bir yelesinin olup olmadığı gibi özellikleri seçmiş olalım.
+
+116
+00:28:53,940 --> 00:29:16,440
+Underfitting dediğimiz şey herhangi bir yelesi olan hayvan veya işte eğer kükremeyi de bir özellik olarak sayarsak, kükreyebilen yelesi olan her hayvan aslan olarak sınıflanıyorsa bu underfitting'tir.
+
+117
+00:29:19,635 --> 00:29:31,675
+Eğer overfitting söz konusuysa da bu sefer de bir aslandan bekleyeceğimiz boyutlar çok net tanımlanmış demektir.
+
+118
+00:29:32,236 --> 00:29:43,395
+Azıcık bizim tanımladığımız boyutların üzerinde boyutu olan, biraz daha ağır, biraz daha hafif olan aslanları biz doğru tanıyamayacağız demektir.
+
+119
+00:29:43,395 --> 00:29:46,716
+Bu da overfitting. Çok net.
+
+120
+00:29:47,635 --> 00:30:04,996
+Aslan dediğin şeyin ağırlığı bu kadar olur, boyu bu kadar olur şeklinde bir model oluşturulmuşsa da bu sefer de bu normların dışında kalan hiçbir aslanı tanıyamayacağız ve overfitting yapmış olacağız demektir aslında.
+
+121
+00:30:11,076 --> 00:30:13,796
+Çok fazla laf var, geçiyorum.
+
+122
+00:30:14,355 --> 00:30:34,576
+Peki, overfitting neden olur? Eğer input olarak verdiğiniz özelliklerin sayısı çok fazlaysa overfitting'e neden olabilirsiniz. Yani bir şeyi tanımlarken o kadar çok da detaylı tanımlamamak lazım.
+
+123
+00:30:35,059 --> 00:30:51,240
+Eğer mimariniz çok kompleksse, yani ne kastediyorum? Bu resimde gördüğünüze benzer şekilde çokçana gizli katmanınız var. Bu gizli katmanlarda da çok da nöron var.
+
+124
+00:30:51,240 --> 00:31:03,059
+Şimdi inputta verdiğiniz şeylerin özellikleri temsil ettiğini düşünün. Bu özelliklerin alt özelliklerini de hidden layer'da çıkardığınızı düşünün.
+
+125
+00:31:03,059 --> 00:31:15,059
+Zaten çok fazla özellikle başlamışsınız. Ondan sonra onları biraz daha spesifikleştirmişsiniz hidden there'da. Dolayısıyla artık...
+
+126
+00:31:16,084 --> 00:31:37,624
+Eğitim sırasında oluşturduğunuz çıktılar. Çok fazla detay barındırıyor. Çok fazla detaya dayalı olarak oluşmuş çıktılar demektir. Dolayısıyla sizin artık bu özelliklerin hepsini taşımayan bir şeyleri tanımanız zor olacak demektir.
+
+127
+00:31:43,028 --> 00:31:58,947
+Peki, overfitting olduğu zaman ihtiyacımız olmayan aslında bir takım özellikleri de ağırlıklandırmış ve probleme katmış oluyoruz eğitim sırasında.
+
+128
+00:32:02,947 --> 00:32:08,087
+Çözüm olarak yaptığımız şey eğitim sırasında cross-validation.
+
+129
+00:32:08,531 --> 00:32:28,111
+Dediğimiz yöntemi uygulamak olabilir. Bunun için ne yapıyoruz? Bir kısım, bütün elimizdeki verinin bir kısmını, büyük kısmını training için ayırıyoruz, eğitim yapıyoruz. Ondan sonra bir kısmını, bir kısmıyla valide ediyoruz.
+
+130
+00:32:31,092 --> 00:32:45,112
+Training başarısıyla Cross Validation başarısı arasında fark varsa overfitting yapmış olabiliriz. Direkt biraz mimariyi ve kullandığımız özellik setlerini gözden geçirmek mantıklı olacaktır.
+
+131
+00:32:45,731 --> 00:32:52,052
+Cross Validation yapmadan önce verinin iyi karıştırıldığından da emin olmamız lazım.
+
+132
+00:32:53,875 --> 00:33:04,036
+Eğer training ve cross-validation sonuçları birbiriyle uyumluysa, bakın %100, %90 bir şey demiyorum. Yani tamamen probleminize bağlı ama.
+
+133
+00:33:04,468 --> 00:33:21,067
+Yani trainingde %90 başarı elde ettiniz, Cross Validation Seti ile %60 başarı ettiyseniz bir şeyler ters gitmiş demektir. Ya overfitting ya underfitting gibi bir probleminiz var demektir. Ya da data dağılımınız iyi değil demektir.
+
+134
+00:33:24,832 --> 00:33:32,332
+İki grupta olan verilere benzeyen herhangi bir şey kullanmamışsınız. Underfitting de genellikle o yüzden olur.
+
+135
+00:33:32,819 --> 00:33:47,359
+Demektir. Dolayısıyla verinizin iyi hazırlanmış olması, elinizdeki örneklerin hemen hemen hepsini temsil eden bir şeylerin eğitim setinde yer alması önemli.
+
+136
+00:33:47,359 --> 00:33:54,359
+Bu şekilde düzgün dağıtılmış bir veriden bir kısmıyla cross-validation yapıyorsunuz.
+
+137
+00:34:00,819 --> 00:34:14,079
+Başarı elde ediyorsanız, ondan sonra test verilerinizi kullanıyorsunuz. Test başarınız da yine bunlarla uyumluysa artık modeliniz doğru şekilde oluştu diyorsunuz.
+
+138
+00:34:15,347 --> 00:34:43,347
+Peki baştan ne kadar detay benim için anlamlı nasıl bilebilirim? Sonuçta eğer büyük verilerle uğraşıyorsak ve oluşturduğumuz problemin, elimizdeki problemin çözümüyle ilgili zaten bir fikrimiz olmadığı için Derin Ağ kullanmaya karar verdiysek özellikleri rastgele azaltma gibi bir şansımız var.
+
+139
+00:34:43,347 --> 00:34:51,108
+O zaman ne yapacağız? O zaman kullanacağımız bir yöntem, regularizasyon dediğimiz yöntem.
+
+140
+00:34:53,108 --> 00:34:56,148
+Regularizasyon nasıl bir şey ya da neye yarıyor?
+
+141
+00:34:56,559 --> 00:35:08,559
+İlk başta aslında elinizdeki örneğin düşünebildiğiniz bütün özellikleriyle veya örneği bütün detayıyla network'e veriyorsunuz.
+
+142
+00:35:08,559 --> 00:35:24,559
+Fakat oluşan, öne çıkan özellikleri daha ağırlıklı kullanıp diğerlerini fazla etki etmeyecek şekilde, ayarlayacak şekilde parametrelerin önüne bir...
+
+143
+00:35:24,559 --> 00:35:32,559
+Fatsayı ekliyorsunuz, önemini azaltıyorsunuz ve böylece biraz daha genellenebilir bir denklem oluşturuyorsunuz.
+
+144
+00:35:33,639 --> 00:35:36,340
+Hemen örnekler üzerinden söyleyeyim.
+
+145
+00:35:36,340 --> 00:35:47,659
+Aslında bazı şeylere, bazı özelliklere veya bazı inputlara bir penaltı terimi tanımlamış oluyorsunuz.
+
+146
+00:35:49,108 --> 00:36:00,387
+Böylece yüksek penaltı verdiğiniz zaman o özelliği etkisini azaltmış oluyorsunuz.
+
+147
+00:36:03,748 --> 00:36:09,688
+Peki, genel tanımlamaları yapayım. Ondan sonra biraz sonraki örnek daha açıklayıcı olacak.
+
+148
+00:36:10,887 --> 00:36:14,807
+Başka bir yöntem, Max Norm Constraint'i koymak.
+
+149
+00:36:17,811 --> 00:36:37,831
+Ağırlıkların ve biyasların alabileceği değerleri limitliyorsunuz. En fazla en az şeklinde. Genellikle fazlalığı bizim için önemli. Belli bir özellik çok fazla öne çıkacak olursa sizin diğer özellikleri ihmal etmenizi ve o...
+
+150
+00:36:38,112 --> 00:37:01,412
+Öne çıkan ağırlığı artan özelliği de mutlaka mutlaka aramanıza sebep olur. Bu da işte yine overfitting olmuş oluyor. Bunu da engellemek için direkt maksimum şu seviyeye kadar yani Relu'daki gibi belli bir değere çekmek. Belli bir değerin üstünde çıktıysa ağırlıklar.
+
+151
+00:37:01,760 --> 00:37:15,860
+O nora da daha fazla yükselmesine izin vermemek gibi bir yöntem söz konusu olabilir. Bir daha değişik bir yaklaşım da dropout. Bu da çok kullanılan bir yöntem.
+
+152
+00:37:21,172 --> 00:37:41,931
+Bir kısmını seçiyor eğitim sırasında, bir kısmını düşürüyor. Bunu genellikle rastgele olarak yapıyoruz. Bazı nöronları kapatıyorsunuz aslında, işleme sokmuyorsunuz. Yani silmek demeyelim de buna. O nöronları işleme sokmuyorsunuz.
+
+153
+00:37:49,172 --> 00:38:00,460
+Birinci hidden layer'da bir nöronu kapatmışız, işlem dışı bırakmışız. Diğer nöronları...
+
+154
+00:38:01,204 --> 00:38:27,983
+İşleme almışız. Bir sonraki layer'da da işte bir tane diğer nöronu kapatmışız. Burada değerlere dikkat ederseniz değeri yükselen nöronları genelde de öyle yapıyoruz. En yüksek değeri sahip nöronları dropout'a tabi tutuyoruz. Onların üzerinde işlem yapmıyoruz. Bu da bir çeşit sınırlama. Yani artık bunun değeri fazla yükselmiş.
+
+155
+00:38:29,204 --> 00:38:57,204
+İkinci turda bunun daha fazla yükselmesini istemediğimiz için direkt bu nöronu kapatmışız. Bu layer'da da en yüksek değerli nöronu kapatmışız. Dropout işlemi de bu şekilde pratik uygulanabilen bir işlem. Böylelikle bu nöronların temsil ettiği özellikler her neyse o özelliklerin çok fazla öne çıkmasını eğitim sırasında öğrenmek.
+
+156
+00:38:57,204 --> 00:39:12,543
+Bu örneğin özenme için çok fazla öne çıkmasını engellemiş oluyoruz. Bunlar geniş çapta uygulanan yöntemler ama overfittingi engelliyor.
+
+157
+00:39:13,023 --> 00:39:35,563
+Ama çok da fazla sistematik değil, çok temel bir şeye dayanıyor. Regülerizasyon biraz daha belki matematiksel olarak anlamlandırabiliriz. Ama diğer tarafta ağırlıklara sınır koymak veya drop out, biraz daha rastgele yapılan yine de işe yarayan yöntemler.
+
+158
+00:39:37,876 --> 00:39:57,996
+Farz edelim ki elimizde bir ev fiyatı tahmin etme için oluşturduğumuz bir ağ olsun. Bu lineal regresyon problemi aslında verimiz gayet böyle iki boyutlu. Çok da zor modellenmeyecek bir veri.
+
+159
+00:40:00,019 --> 00:40:27,339
+Diyelim ki evin boyutu ve fiyatı arasında ilişkiyi temsil eden bir verimiz var. Biz buna bir aslında model oluşturmaya çalışıyoruz. Bu regresyon problemi olduğuna göre verimizde bir şekilde bir eğri temsil ediyor. Ben bunu istersem istediğim derecede polinomla temsil edebilirim.
+
+160
+00:40:28,019 --> 00:40:36,920
+Ama bunun yanı sıra bir doğruyla bile temsil edebilirim. Sadece kötü bir fonksiyon uydurma olur ama olur mu? Olur.
+
+161
+00:40:36,920 --> 00:40:41,579
+Birinci örneğimiz bu olsun.
+
+162
+00:40:43,248 --> 00:41:05,967
+Aynı veriye doğru uydurmuşuz. İşte teta sıfır artı teta bir x şeklinde bir doğru uydurduğumuzu farz edelim. Diğer durumda aynı veriye ikinci derece bir denklem uydurmuşuz. Bir sonraki durumda da aynı yine veriye dördüncü derece bir denklem oluşturmuşuz.
+
+163
+00:41:06,708 --> 00:41:28,188
+Birinci durumun kötü olduğu aşikar belli pek çok örneğin üzerinden bile geçmeyen bir doğru uydurulmuş. İkincisi fena değil aslında pek çok verinin yakınından veya üzerinden geçiyor. Ama işte bazı veriler biraz dışında kalıyor oluşturduğumuz fonksiyonun.
+
+164
+00:41:28,480 --> 00:41:37,519
+Üçüncüye baktığım zaman mükemmel bütün verileri tam olarak üzerinden geçen bir denklem.
+
+165
+00:41:38,400 --> 00:41:47,280
+Şimdi kavramları bunun üzerinden söyleyecek olursam ne soldakini ne de sağdakini istemiyoruz biz aslında.
+
+166
+00:41:47,280 --> 00:41:52,700
+Yani soldaki underfitting örneği neredeyse hiçbir şeyi tutturamıyor.
+
+167
+00:41:54,592 --> 00:42:12,432
+Ama işte bir fonksiyon uydurulmuş. Sağdakine baktığımız zaman da her şeyi doğru tahmin ediyor. Yani %100 bu veri setiyle eğitim yapsam, böyle bir dördüncü derece denklem oluştursam, bununla eğitim yapsam sonuç %100 doğru.
+
+168
+00:42:12,980 --> 00:42:29,800
+Ama biraz sonra test edeceğim veriler bu eğrinin herhangi bir şekilde dışında kaldığında benim tahmin yapma olasılığım kalmayacak. Bu kadar mükemmel uyumu da istemiyoruz. Bu da overfitting örneği.
+
+169
+00:42:35,860 --> 00:42:42,860
+Bir miktar hata var ama bu hata çok büyük değil. Ortadaki gibi bir model uydurmak.
+
+170
+00:42:42,860 --> 00:42:48,860
+Bu örneğin üzerinden bakarsak eğer...
+
+171
+00:42:51,860 --> 00:42:54,660
+Söylemiş gibi oldum.
+
+172
+00:42:56,467 --> 00:43:03,467
+Şuradan devam edeyim. Bu örneğin üzerinden bakacak olursak...
+
+173
+00:43:03,467 --> 00:43:08,748
+Ay özür dilerim. Biraz ben erken konuştum.
+
+174
+00:43:09,844 --> 00:43:37,844
+Şimdi istediğimiz şu parabolik ikinci derece denklemi uydurmak dedik. Ama bunun ne olacağını şu anda elimizde iki boyutlu veri. Bu örneği çok rahat görebiliyorum. Bir tane de değişken var. Sadece fiyata bağlı bir şey var. Burada tahmin yürütmem zor değil ama çok boyutlu verim olduğu zaman bu kadar rahat kaçıncı derece bir şey uyması lazım.
+
+175
+00:43:37,844 --> 00:43:55,164
+Neresi benim için idealdir, karar vermem zor. Onun yerine şunu yapıyoruz. Dördüncü derece veya olabildiğince kompleks bir şey uydurmaya izin veriyoruz. Yani aklımıza gelen her özelliği kullanıyoruz belki.
+
+176
+00:44:03,891 --> 00:44:27,751
+Özellikleri veya derecesini artıran özellikleri bir penaltıya tabi tutuyoruz. Bu kat sayılar var, hiç yok değil. Etkisi var ama bunu küçültmek için, bu kat sayıların önündeki kat sayıları küçültmek için bir penaltı terimi oluşturuyoruz.
+
+177
+00:44:27,751 --> 00:44:30,891
+Onu da şöyle bir fonksiyonla yapıyoruz.
+
+178
+00:44:31,315 --> 00:44:44,516
+Şimdi Yİ dediğimiz şey bizim hesapladığımız olmak üzere, bu da modelimiz olmak üzere aradaki farkın karesini minimum tutmaya çalışıyoruz.
+
+179
+00:44:44,516 --> 00:44:52,215
+Eğer modelimiz birazcık fark yarattıysa,
+
+180
+00:44:53,199 --> 00:44:59,199
+olması gerekenle bizim hesapladığımız arasında bir fark yaratıldıysa...
+
+181
+00:45:00,884 --> 00:45:24,804
+Diğer terimlerin önüne bir penaltı kat sayısı koyarak bunların etkisini az tutuyoruz. Bu neye yarıyor? Yeni gelen örneğimizde bu teta 3 ve teta 4'ün temsil ettiği terimlere dair veya özelliklere dair bir şey varsa hiç kale almayalım değil.
+
+182
+00:45:25,331 --> 00:45:40,891
+Ama mümkünse az etki ettirelim istiyoruz. Şu başa koyduğumuz terim ne kadar modelimizle hesapladığımız şeyin yakın olduğunu gösteriyor.
+
+183
+00:45:40,891 --> 00:45:51,231
+Bunun değeri küçükse yani modele yeterince yaklaşmışsak şu terimlerin etkisi daha az olacak.
+
+184
+00:45:51,615 --> 00:46:01,155
+Burada büyük fark varsa bu terimlerin etkisi daha fazla olacak. Dolayısıyla bu bize birazcık şurada bir şey de göstermek isteyeyim.
+
+185
+00:46:04,155 --> 00:46:09,155
+Şöyle bir maviyle çizdiğimiz detaylı modeli oluşturduk.
+
+186
+00:46:10,068 --> 00:46:24,108
+Ondan sonra iki terimi penaltı kat sayısı koyduk başlarına. Eğer değerleri küçükse bu terimlerin bunlar neredeyse sıfıra yakın bir şey olacak.
+
+187
+00:46:24,108 --> 00:46:33,188
+Ve denklemimiz bizim beğendiğimiz şu ikinci derece denkleme dönecek veya yaklaşacak en azından.
+
+188
+00:46:35,123 --> 00:46:55,783
+Bu, regularizasyonda da yapmaya çalıştığımız şey bu. Şimdi biraz daha detaylı, şurada bakayım. İki tane tip var, regularizasyonda iki tane kullanılan model var. Onları bir söyleyeceğim de, örneğin üzerinden söyleyeyim.
+
+189
+00:46:56,148 --> 00:47:12,988
+Diyelim ki elimizde yine ev örneği olsun. Bu sefer sadece evin boyutu değil, onun yanı sıra 100 tane daha örnek veya özellik olsun. Dolayısıyla 100 tane parametremiz olsun.
+
+190
+00:47:13,460 --> 00:47:32,739
+Şimdi artık bilmiyoruz yani bu yüz tane özelliğin hangisi önemli? Şöyle bir denklem oluşturduğumuz zaman hangisi bu penalize edilecek terim olacak? Hangisi esas ağırlıklı olan terim olacak?
+
+191
+00:47:33,215 --> 00:47:59,955
+Herhangi bir fikir yürütemeyeceğimiz bir durumda. Dolayısıyla bunların arasından seçmemiz gerekiyor. Bir cost function'ı yine yazıyoruz. Emin yazdığım işte bizim hesapladığımız ve oluşan olması gereken sonuç ya da target değerimiz diyelim. Yine bunu yazıyoruz karesel hata gibi.
+
+192
+00:48:00,467 --> 00:48:15,887
+Ondan sonra Cosfunction'ın bütün terimler için bir lambda katsayısıyla yanına eklemeler yapıyoruz.
+
+193
+00:48:15,887 --> 00:48:24,487
+Eğer 100 tane örneğimiz varsa 100 tane terim için buraya eklemeler yapacağız.
+
+194
+00:48:27,539 --> 00:48:44,539
+Bu lambda'nın aslında her bir parametreyi kontrol etmesini sağlayacağız. Yani her birini kare olarak yazacağız. Lambda küçük bir sayı olacak. Eğer bu özelliğin değeri yüksekse...
+
+195
+00:48:46,387 --> 00:49:06,608
+Hem kontrol edilemez derecede yüksek olmasını sağlamamış olacağız, lambda ile küçülteceğiz. Hem de var olmasını sağlayacağız. Yani ikinci derece bir şey yanında yine ikinci derecede diğer bütün terimlerin, bütün özelliklerin yer aldığı bir denklem.
+
+196
+00:49:14,516 --> 00:49:25,576
+Lambdayı çok yüksek bir sayı seçip şuradaki değerin küçüklüğüne göre şu eklenecek parametrenin değerini belirtiyoruz.
+
+197
+00:49:26,576 --> 00:49:36,376
+Artık bütün özellikler var ama özelliklerin değeri kadar ana fonksiyona katkısı olacak.
+
+198
+00:49:42,516 --> 00:49:44,836
+Sıfır katkısı olacak gibi.
+
+199
+00:49:46,396 --> 00:49:49,316
+Şimdi şuradan gideyim.
+
+200
+00:49:56,596 --> 00:49:59,596
+Bu Underfit özelliği...
+
+201
+00:50:05,364 --> 00:50:06,564
+Anlamlı gelmedi.
+
+202
+00:50:09,844 --> 00:50:21,964
+Peki, şurada çok anlamlı bir örnek değildi. Sadece Teta sıfır özelliğinin öne çıktığını düşündüğümüz bir örnek.
+
+203
+00:50:29,376 --> 00:50:52,135
+Diğer özellikler sıfır olsaydı ya da hiç olmasaydı ne olurdu? İşte o durumda bir tane doğru oluşturdu. Ama biz ne yapıyoruz? Diğer bütün özellikleri de alıyoruz, küçük küçük ekliyoruz. Doğrudan parabole veya biraz daha ileri üst düzey bir eğriye doğru evrilebiliyoruz.
+
+204
+00:50:54,324 --> 00:50:58,463
+Bunu şunun için söylemiş.
+
+205
+00:50:58,463 --> 00:51:02,463
+Eğer regularizasyon parametresini...
+
+206
+00:51:04,500 --> 00:51:23,960
+Çok büyük seçersek, çok küçük seçersek bir şekilde yanına gelecek değerler. Bu da neyle ilgili? Sizin datanızla ilgili. Burada mesela 10 üzeri 10 demişiz ama sizin teta 1, teta 2 dediğiniz özelliklerin değeri kaç oluyor? En az kaç oluyor, en çok kaç oluyor?
+
+207
+00:51:24,403 --> 00:51:39,423
+Ona bağlı olarak şu katsayı seçmeniz lazım. Onu demek istemiş, özür dilerim. Bu katsayı ona uygun seçmezseniz bu sefer farkında olmadan da yok edebilirsiniz diğer özellikleri.
+
+208
+00:51:39,923 --> 00:52:03,223
+Eğer tetalar çok küçük değer alan şeylerse bir anda sıfıra çekebilir ve yine underfitting'e neden olabilirsiniz. Dolayısıyla şu fonksiyondan çıkacak değeri ve tetalarınızın seçtiğiniz özelliklerin değerlerini hangi aralıkta olduğunu dikkate alıp lambdayı öyle seçmeniz veya ayarlamanız gerekiyor.
+
+209
+00:52:07,923 --> 00:52:27,784
+Örnek için deneyerek de yapabilirsiniz. Veya tetaların aldığı değerlerin aralıklarını belirleyip hangi lambda değeriyle çarparsam sıfıra çekerim, hangi lambda ile çarparsam çok büyür deyip lambayı arada uygun bir yerde seçmeniz lazım.
+
+210
+00:52:31,155 --> 00:52:36,275
+Genel olarak regülozasyon için kullandığımız denklem bu.
+
+211
+00:52:38,576 --> 00:52:44,735
+Bir de şimdi bunun yapacağı şey de şöyle bir şey.
+
+212
+00:52:45,456 --> 00:52:48,516
+Hatayı veya kos fonksiyonu böyle tanımladık ya.
+
+213
+00:52:49,516 --> 00:52:53,096
+Gradiyen düşüm yöntemi uygulayacağız veya backprop uygulayacağız.
+
+214
+00:52:53,096 --> 00:52:57,295
+İşte türevleri aldığımız zaman şu tetalar.
+
+215
+00:52:57,780 --> 00:53:03,259
+Esas küçülecek. Ona göre de tetalar gidecek.
+
+216
+00:53:06,619 --> 00:53:17,820
+Burada şeyi göstermek istiyordum. L1 ve L2 diye iki tane regularizasyon yöntemi var.
+
+217
+00:53:24,659 --> 00:53:51,919
+Parametre, teta parametresini olduğu gibi alıyoruz L1'de. L2 regularizasyon dediğimizde de karesini alıyoruz. Bu regularizasyon terimi dediğimiz lambdanın önüne gelecek kat sayının karesinin veya kendisinin kullanılması şeklinde iki yöntem var. Onlar da L1 ve L2 regularizasyon diye ayrılıyor.
+
+218
+00:53:52,371 --> 00:53:54,412
+Şuraya bir tekrar döneceğim.
+
+219
+00:53:55,492 --> 00:54:06,072
+Şimdi, gradiyan düşümle bu denklemi, bu post fonksiyonunu nasıl kullandığımıza da bir bakalım.
+
+220
+00:54:08,072 --> 00:54:19,192
+Yapmamız gereken şey aslında şurada beklediğimiz target değer, hesapladığımız değer.
+
+221
+00:54:19,615 --> 00:54:40,336
+Ve işte o andaki inputumuz. Her bir kas sayısı için şu alfayı da öğrenme kas sayısı olarak düşünün. Backprop uygularken her seferinde bunun türevini alıp her bir parametreye göre türevini alıp ondan sonra çarpma işlemimiz var.
+
+222
+00:54:45,523 --> 00:55:00,903
+Bunu yaptığımız zaman, türevi aldığımız zaman şu lambda yukarıda kalacak parametre sayımız kadar da bir bölme işlemi gelecek. Lambda'yı niye büyük seçtiğimizi söylemek istiyorum.
+
+223
+00:55:00,903 --> 00:55:04,903
+Şu türevi aldığımız zaman...
+
+224
+00:55:06,675 --> 00:55:15,275
+Hatanın türevini aldığımız zaman bir parametreye göre aslında şu lambanın büyük olması o zaman bizim için.
+
+225
+00:55:15,679 --> 00:55:25,959
+Anlamlı, lambdanın önüne bir bölen gelecek. Bir de türev aldığımızdan dolayı burası küçülecek.
+
+226
+00:55:26,519 --> 00:55:36,699
+Ve eğer şu teta'nın değeri küçükse iyice küçük olup aslında bu terim neredeyse yok olmuş gibi olacak.
+
+227
+00:55:36,699 --> 00:55:40,759
+Sayısal bir örneğim galiba var mı?
+
+228
+00:55:51,860 --> 00:55:52,900
+Şöyle gideyim.
+
+229
+00:55:56,559 --> 00:55:56,820
+Tamam.
+
+230
+00:55:56,820 --> 00:56:12,760
+Teta'yı update ederken kullandığımız şeyi hatırlarsanız eski değeri, öğrenme kas sayısı, çarpı, türevden gelen.
+
+231
+00:56:13,168 --> 00:56:36,468
+İşte içinde lambdanın da regularizasyon kat sayısında olduğu büyük bir değer şu aşağıdaki gibi düşünün. Dolayısıyla burada öne çıkan şey şu 1- öğrenme kat sayısı lambda bölü M terimi oluyor. Yanındakileri boş verelim. Şurası öne çıkan terim.
+
+232
+00:56:36,820 --> 00:56:54,860
+Bizim şey yaptığımız şeyde şu öğrenme kat sayısının da küçük olduğunu biliyorsunuz. Birden küçük en azından sıfırla bir arasında bir şey. Şurası da birden de çıkaracağımız için, şurası da büyük bir sayı bölü bir şey.
+
+233
+00:57:04,820 --> 00:57:24,119
+Burası her ne kadar büyükse bu kat sayı küçülecek. Bu kat sayı kim? Bu kat sayı bizim şu lambda, tetamızın önemini belirleyen veya onun temsil ettiği denkrendeki parametrenin önemini belirleyen kat sayı.
+
+234
+00:57:38,195 --> 00:57:41,016
+Tam bir sayısal örneğim yokmuş.
+
+235
+00:57:42,936 --> 00:57:43,695
+Tamam.
+
+236
+00:57:45,376 --> 00:57:47,596
+Şu anda uyduramadım sayı.
+
+237
+00:57:48,096 --> 00:57:50,536
+Sayısal bir şey size sonra yapayım ben.
+
+238
+00:57:52,295 --> 00:57:53,596
+Koymamışım buraya.
+
+239
+00:57:55,275 --> 00:57:58,235
+Peki, şuradan diyeceğim bir şey daha vardı.
+
+240
+00:58:08,659 --> 00:58:25,279
+Aslında bunu da bir nevi konuşmuş olduk. Yine bir tane underfitting, overfitting örneği yapacak olursak, lojistik regresyon için bu ama yine şekilsel olarak bakın.
+
+241
+00:58:25,279 --> 00:58:33,279
+Diyelim ki sınıflama problemi yapıyorsunuz veya iki tane kümeniz var ayırmaya çalışıyorsunuz.
+
+242
+00:58:34,612 --> 00:58:48,891
+Çok detaylı ayırmaya çalışırsanız, yani hiçbir örnek yanlış yere düşmesin, yanlış kümeye düşmesin derseniz, oluşturmanız gereken denklem son derece kompleks oluyor, üst derece oluyor.
+
+243
+00:58:52,612 --> 00:59:00,771
+Rastgele ayırmaya çalışırsanız, yani çok basit bir denklemle veya doğruyla ayırmaya çalışırsanız, işte bizim ilk zor problemimiz gibi.
+
+244
+00:59:01,235 --> 00:59:12,875
+Bu sefer çok fazla örnek yanlış yere düşüyor. Bu arada da bir dengeyi bulmanız lazım. Aslında ilk etapta da bakıyorum şimdi chat'e.
+
+245
+00:59:19,603 --> 00:59:29,324
+[öğrenci] bir daha, overfitting'de high variance kavramı non-linear denklemin değişkenlerinin sayısı oluyor. Evet, öyle oluyor.
+
+246
+00:59:31,423 --> 00:59:44,423
+Şimdi, overfitting'de high variance dediğimiz şey aslında varyansın ne kadar yüksek olduğu, veriler arasındaki varyansın.
+
+247
+00:59:47,092 --> 00:59:58,912
+Eğri veya herhangi bir fonksiyon uydurduğunuzda verilerinizin bireysel olarak buna uzaklıklarından varyans hesaplıyorsunuz ya.
+
+248
+01:00:01,588 --> 01:00:23,728
+Şöyle bakayım, [öğrenci] dediğin şeyi şuradan açıklamaya çalışayım. Doğruya bakalım. Şimdi doğru uydurduğum zaman arkadaşınızın dediği şeyi anlatmaya çalışıyorum. Benim, şu örnek doğru değil aslında bu kümeleme gibi. Yine şeye döneyim.
+
+249
+01:00:24,532 --> 01:00:50,112
+Ev örneğine döneyim. Her bir verimin olması gereken, alması gereken değerin benim uydurduğum doğruya olan uzaklığını hesaplayıp onları karesel olarak topladığımda varyans elde ediyorum. Bu varyans değerinin büyük olması aslında underfitting'i gösteriyor. Cem bunu demek istiyorsun değil mi?
+
+250
+01:00:52,275 --> 01:01:04,635
+Varyansın büyüklüğü yani high variance dediğimiz şey bize under fitting olduğunu gösteriyor. Şuradakine baktığımız zaman pardon.
+
+251
+01:01:05,684 --> 01:01:18,543
+İkinci örneğimize baktığımız zaman, burada varyans hesaplayacak olsam, evet uydurduğum eğriden biraz mesafeli çıkan örnekler var, birebir oturanlar var.
+
+252
+01:01:18,543 --> 01:01:32,364
+Yani mesafenin sıfır olduğu yerler var, bir de küçük olanlar var. Bunların karelerini toplayacak olsam, varyans hesaplayacak olsam, soldaki kadar büyük olmayacak, küçük bir varyans değeri olacak.
+
+253
+01:01:33,684 --> 01:01:50,423
+Buradaki için hesaplasan varyans sıfır. Dolayısıyla varyansın sıfır olmasını istemiyoruz. Burada da yazmışız aslında. High Varyans dediğimiz durum. Hiçbir şey yok, sapma yok.
+
+254
+01:01:50,768 --> 01:02:13,407
+Burada az bir satma var. Burada da çok yüksek bir varyans var. Dolayısıyla istediğimiz şey varyansın sıfır olması da değil, çok büyük olması da değil. Arada bir değer olması ama işte regularizasyon kullanmamızın sebebi de bunu tabii baştan bakarak…
+
+255
+01:02:14,579 --> 01:02:29,399
+İki boyutlu falan bir şey veya üç boyutlu da belki kısmen görünür de çizip görebilsek veya varyansları hesaplasak belki biraz öngörebiliriz verinizi analiz ederken.
+
+256
+01:02:29,399 --> 01:02:36,480
+Ama otomatize etmek istersek de işte regularizasyon formülünü kullanırsak.
+
+257
+01:02:36,559 --> 01:02:50,271
+Daha sonra gelecek veriler içinde, yani görmediğimiz örnekler içinde aslında varyansın belli bir seviyede kalmasını ve önemsiz olan örneklerin…
+
+258
+01:02:50,271 --> 01:03:05,831
+En azından denklemde yer almamasını veya küçük değerlerle yer almasını oluşturduğumuz fonksiyonun herkesi kabul edilebilir olması, gelecek diğer örnekleri de kabul edebilir olmasını istiyoruz.
+
+259
+01:03:05,831 --> 01:03:08,831
+O denklemde işte...
+
+260
+01:03:15,059 --> 01:03:41,559
+Şu herhalde en iyi ifadesi ya da şu. O denklemde bu şekilde ifade edilebilir. Yani ağırlık update'inde kullandığımız şey bir lambda parametresiyle bu ilk baştaki etajı kısmı şeyden geliyor. Eski değeri ağırlığın eksi.
+
+261
+01:03:42,068 --> 01:04:04,728
+Bu katsayı kadar hata ile update edeceğiz ağırlığı. Her seferinde bu update kuralını kullanırsak şu lambda katsayısı bizi koruyacaktır. Belli bir özelliğin öne çıkması veya denklemimizin çok kompleks olmasını engelleyecektir.
+
+262
+01:04:06,036 --> 01:04:19,556
+Aşkım, biraz kötü anlattım. Neyse, beğenmedim. Bir örnek üzerinden size yapmaya çalışayım ben bunu. Var mı arkadaşlar sorunuz?
+
+263
+01:04:25,427 --> 01:04:27,648
+Şurada atladığım bir şey var mı diye bakacağım.
+
+264
+01:04:32,947 --> 01:04:59,947
+Peki sizin yapabileceğiniz ne var? Eğer yapabiliyorsanız, işte ev için yüz tane özellik seçersek demiştik ya, belki ön bilgilerinize göre bu özelliklerden bazılarının önemsiz olduğunu, işte burada pek önemsiz bir şey de göremiyorum ama şu olabilir mesela, işte komşularınızın...
+
+265
+01:05:00,596 --> 01:05:07,215
+Gelir oranı. Gerçi o da semtle ilgili bir şey verir mi bilmiyorum bilgi.
+
+266
+01:05:09,748 --> 01:05:26,568
+Kat sayısı bilmiyorum. Bunlardan bazılarının önemsiz olduğunu biliyorsanız özellikleri kendiniz manuelde azaltabilirsiniz. Ama hiçbir fikriniz yoksa bu yüz özellik elinizde varsa o zaman regularizasyonla bu işi yapabilirsiniz.
+
+267
+01:05:29,172 --> 01:05:44,731
+Özellik azaltma ilk başta sizin de yapabileceğiniz bir şey. Regülarizasyona da bırakabileceğiniz bir şey. Bir de tabii overfitting'e neden olmamak için, demin onu söyleyecektim. Şu şekle döneyim.
+
+268
+01:05:45,652 --> 01:06:13,652
+Verinin ilk başta iyi analiz edilmesi ayrıca önemli. Eğer verinin içinde outlier'lar varsa, yani şuradaki örnektekine bakalım. Aslında şu ikinci derece eğriyle gayet güzel ayrılabilecekmiş gibi görünüyor bu örnekler. Ama şu iki tane kırmızı niye buraya düşmüş? Bunların hatalı veri olma ihtimali de...
+
+269
+01:06:13,652 --> 01:06:31,891
+Ekstrem örnekler. Dolayısıyla uç örnekleri, modelinizi yanıltacak örnekleri direkt eğitim verisinden atmak, önce onları bir ayıklamak da fena olmayabilir.
+
+270
+01:06:37,876 --> 01:06:42,476
+Öyle bir durumda zaten baştan modeliniz çok kompleks hale gelmez.
+
+271
+01:06:43,136 --> 01:06:47,356
+İşte çok kompleks hale gelirse de sağdaki durum overfitting.
+
+272
+01:06:47,496 --> 01:06:54,476
+O zaman regularizasyon kullanırsanız yine iş değilse buraya evrilmesine izin vermiş olursunuz.
+
+273
+01:06:54,476 --> 01:06:57,556
+Ama datayı zaten baştan bir temizlemek lazım.
+
+274
+01:06:57,816 --> 01:07:04,816
+Yani şöyle bir örnek varsa elinizde direkt düşünün yani şu iki tane niye buraya düşmüş diye.
+
+275
+01:07:05,588 --> 01:07:11,908
+Büyük ihtimalle yanlış ölçüm, ekstrem örnek. Onları da atmak lazım.
+
+276
+01:07:13,908 --> 01:07:20,228
+Peki. Var mı arkadaşlar soru?
+
+277
+01:07:29,460 --> 01:07:45,039
+Konuştuğumuz şeylerin tekrar aslında slide'ları paylaşırım. Yine bir bakarsınız ama elinizde çok özellik varsa gereksiz detayı dikkate aldın.
+
+278
+01:07:54,420 --> 01:08:12,240
+Belli sayıda EPOC çalıştırıyoruz. Aynı örnekleri tekrar tekrar gösteriyoruz. Ama orada bir sınır koymak lazım. Yani sıfır hata hedeflemek çok sağlıklı değil. Sıfır hata hedeflerseniz o örnekleri ezberletmeye gidersiniz.
+
+279
+01:08:17,376 --> 01:08:32,156
+Bilin ki artık durmanız gerekiyor veya çok küçük azalıyorsa daha fazlası örneklerin ezberlenmesi demek olacaktır. O gösterdiğiniz örnekler dışında bir şeyi tanımayacaktır.
+
+280
+01:08:36,916 --> 01:08:43,576
+Tamam. Ödev için başka konu söyleyecek olan, yazacak olan var mı?
+
+281
+01:08:47,828 --> 01:08:49,648
+Varsa yazar mısınız buraya?
+
+282
+01:08:54,452 --> 01:08:57,012
+Ara vermedim. Dersi bitireceğim çünkü.
+
+283
+01:09:00,884 --> 01:09:09,484
+Hocam benim bir sorum olacaktı ama ortalık olarak bizim sunumlarımız ne zaman olur? Kesin değil ama.
+
+284
+01:09:09,484 --> 01:09:22,163
+Ya final haftası içinde, final haftası kaçına yazmışlardı? Dur bakayım hemen önümde varsa takvim söylemeye çalışayım.
+
+285
+01:09:32,340 --> 01:09:34,340
+yazmamışım.
+
+286
+01:09:39,988 --> 01:09:48,988
+Not etmemişim final haftasını ama şimdi kesinlikle 10 Ocaktan sonra olacak. O kadarını söyleyebilirim.
+
+287
+01:09:50,048 --> 01:09:52,087
+11-23'ü arası sanırım.
+
+288
+01:09:52,768 --> 01:09:54,307
+Finaller 11-23 mi?
+
+289
+01:09:55,108 --> 01:09:58,888
+O zaman ocağın ortası gibi olacaktır.
+
+290
+01:10:05,524 --> 01:10:25,324
+Uymamız çok gerekmiyorsa, yüksek sans derslerinde genelde öyle bir esneklik oluyor. Final sınavı tarihini sınavda yapmayacağım için hocaya bırakırlarsa ben sizinle anlaşarak ayarlarım olabildiğince uç noktayı ama bazen o da iyilik olmuyor.
+
+291
+01:10:25,324 --> 01:10:31,423
+Yani bütün dersler sona doğru kalırsa yine bütün ödevleriniz bir arada birikmiş oluyor.
+
+292
+01:10:31,891 --> 01:10:45,711
+Biraz böyle ortalarda bir yerde yaparız diye düşünüyorum. En azından çünkü bir ufak düzeltme isteme şansım olsun gibi. Yani 15'i civarları düşünelim olur mu biz?
+
+293
+01:10:46,912 --> 01:10:48,271
+Tamam hocam, teşekkür ederim.
+
+294
+01:10:49,172 --> 01:10:50,471
+Ben teşekkür ederim.
+
+295
+01:10:52,811 --> 01:10:55,012
+Var mı başka arkadaşlar soru?
+
+296
+01:10:55,923 --> 01:11:07,923
+Ben chatte yazdığınız konuları alıyorum. Üzerine benim koyacaklarım, dağıtmam gereken kişiler varsa onları ekliyorum.
+
+297
+01:11:12,404 --> 01:11:36,884
+O zaman haftaya ders yapmayacağım. Ocağın ilk haftası bir genel gözden geçirme yaparız. Ödevleriniz de oluşmuş olur. Belki onların üzerinden de bir konuşma şansımız olur. Ben hem ders sayfasına açıklama koyacağım duvara hem de mail atacağım size.
+
+298
+01:11:38,003 --> 01:11:40,344
+Tamam, maillerinizi de takip edin olur mu?
+
+299
+01:11:47,956 --> 01:11:50,876
+O zaman görüşmek üzere diyeyim. Kendinize iyi bakın.
+
+300
+01:11:52,735 --> 01:11:53,796
+Görüşmek üzere hocam.
+
+301
+01:11:54,015 --> 01:11:54,835
+Hoşçakalın.
+
+302
+01:11:55,376 --> 01:11:56,476
+İyi günler hocam.
+
+303
+01:11:56,835 --> 01:11:59,796
+İyi günler. Bakayım kaç kişiden ses geliyor.
+
+304
+01:12:00,355 --> 01:12:01,296
+İyi günler hocam.
+
+305
+01:12:01,296 --> 01:12:02,036
+Teşekkürler.
+
+306
+01:12:02,036 --> 01:12:03,115
+Dört oldu zaten.
+
+307
+01:12:03,235 --> 01:12:04,136
+Görüşmek üzere.
+
+308
+01:12:04,515 --> 01:12:05,335
+Görüşürüz hocam.
+
+309
+01:12:05,496 --> 01:12:06,716
+İyi günler hocam.
+
+310
+01:12:07,136 --> 01:12:08,355
+Hoşçakalın kendinize.
+
+311
+01:12:09,876 --> 01:12:10,456
+İyi günler.

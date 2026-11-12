@@ -1,0 +1,2263 @@
+1
+00:04:52,148 --> 00:04:55,248
+Merhaba arkadaşlar. Selcan merhaba.
+
+2
+00:04:55,588 --> 00:04:56,368
+Merhaba hocam.
+
+3
+00:04:57,188 --> 00:05:00,628
+Ben zor yoldan mı yolladım linki? Emin olamadım şimdi de.
+
+4
+00:05:00,628 --> 00:05:06,308
+Yok hocam, kolaydı. Sadece bir kayıt işlemi yapmak gerekiyor.
+
+5
+00:05:06,888 --> 00:05:18,848
+Tamam. Ben direkt yollayacağım. Bir iki dakikamız daha var. Biraz bekleyelim isterseniz. Katılımlar artsın.
+
+6
+00:08:54,100 --> 00:09:00,580
+Peki, normalde ders biraz daha kalabalık Sercan ama sanırım yavaş yavaş başlayabiliriz.
+
+7
+00:09:00,899 --> 00:09:03,360
+Olur hocam, bekleyebileceğiz isterseniz.
+
+8
+00:09:05,139 --> 00:09:07,539
+Geliyorlar, bir iki dakika daha bekleyeyim peki.
+
+9
+00:10:24,340 --> 00:10:50,779
+Peki arkadaşlar, şöyle özetleyeyim. Bugün Sercan Hocanız backprop birazcık anlatmıştım ben. Onunla ilgili hem üzerinden geçecek hem bir uygulama yapacak size. Ben birazdan sözü ona bırakacağım ama sizin bana soracağınız bir şey varsa onları bir alayım. O arada da gelenler olursa gelsinler.
+
+10
+00:10:51,475 --> 00:10:53,255
+Ödev sonuçları belli mi hocam?
+
+11
+00:10:54,336 --> 00:11:14,176
+Yok [öğrenci], açık söyleyeyim. Biraz bekletirim ben o konuda. Çok da merak etmeyin. Zannediyorum bir dönemin sonuna doğru ancak topluca bakabileceğim. Merak etmeyin ama çok büyük bir sıkıntı olduğunu zannetmiyorum. Bir şey olursa da ben size dönerim bireysel olarak.
+
+12
+00:11:18,355 --> 00:11:20,675
+Başka var mı arkadaşlar sorusu olan?
+
+13
+00:11:21,615 --> 00:11:22,596
+Yok hocam, teşekkür ederim.
+
+14
+00:11:23,556 --> 00:11:23,816
+Tamam.
+
+15
+00:11:24,135 --> 00:11:31,816
+Hocam, dönem projesiyle ilgili benim kaçırdığım bir şey mi oldu acaba? Herhangi bir bildirimde bulunmuş muydunuz?
+
+16
+00:11:31,816 --> 00:11:41,596
+Yok, daha söylemedim onu. Bugün aslında biraz Sercan Hocanız Backprobe'un üzerinden geçsin. Backprobe'la ilgili olacak.
+
+17
+00:11:41,984 --> 00:11:59,944
+Onu söyleyeyim. Aslında veri toplayabilirsem, aklımda bir şey var da veri verebilecek miyim ona bakacağım. Aksi halde de hazır veri seti üzerinden backpropagation ile ilgili bir şey olacak dönem ödeviniz. O yüzden özellikle backpropagation üzerinde durursanız iyi olur.
+
+18
+00:12:02,704 --> 00:12:07,844
+Onun dışında size seçenek sunmak isterdim ama çok kalabalıksınız.
+
+19
+00:12:08,307 --> 00:12:16,567
+Herkese farklı ödev vermek konusunda biraz çekincem var. Ama haftaya açıklamış olacağım ödevimizi.
+
+20
+00:12:18,567 --> 00:12:29,028
+Sercan, sen buradayken sana da sorayım. Sınav yapmak gibi bir zorunluluk var mı? Yoksa proje ve ödev üzerinden gidebiliyor muyuz değerlendirmede?
+
+21
+00:12:29,648 --> 00:12:33,687
+Yüzdesi galiba hocam önemli sadece. Ama yine de uzun bir sorarım ben bunu.
+
+22
+00:12:34,355 --> 00:12:42,456
+Tamam, yani o gelen yönergede bir V veya demiş, o böyle birazcık anlaması şey.
+
+23
+00:12:42,796 --> 00:12:50,755
+Evet, benim hatırladığım kadarıyla yüzde kırk, altmış olarak bölecek şekilde yapılıyor. Lisans üstünde herhalde öyledir.
+
+24
+00:12:51,755 --> 00:12:58,296
+Daha öyle, orası tamam, yani şey demiş, işte ödev proje V veya sınav.
+
+25
+00:12:58,868 --> 00:13:03,248
+Oradaki VVA'yı biraz yorumlamakta şey yaptım.
+
+26
+00:13:04,648 --> 00:13:05,768
+Sorayım hocam.
+
+27
+00:13:06,067 --> 00:13:07,208
+VVA diye anlıyorum ama.
+
+28
+00:13:08,208 --> 00:13:12,088
+Evet, dediğiniz gibi ise belki iki seçenek de mümkündür.
+
+29
+00:13:12,088 --> 00:13:16,728
+Yani hiç sınav yapmadan. Çünkü online olduğu için yazılı değil her halükarda.
+
+30
+00:13:17,268 --> 00:13:19,868
+Belki mümkündür ödev ve projeyle.
+
+31
+00:13:21,968 --> 00:13:42,388
+Onu o zaman sizlere de söylemiş olayım arkadaşlar. Benim projeyle gitmek. Bir bölümden kontrol edeceğim. Haftaya da vermiş olacağım. O dönem projenizi aslında finale doğru uzatmayı düşündüğüm bir ödev olacak. Final sınavınızı da onun üzerinden değerlendirmek istiyorum.
+
+32
+00:13:42,899 --> 00:13:49,460
+Planım bu şekilde. Benim yanlış anladığım bir şey yoksa öyle gidecek.
+
+33
+00:13:50,720 --> 00:13:56,379
+Vize sınavı olmadığımız başka dersler de var hocam. Ben kolektif öğrenme dersini alıyorum. Orada da vize sınavı yok.
+
+34
+00:13:59,079 --> 00:14:05,079
+Birkaç arkadaşınız başka derslerde söylenmiş de bir sınav yapılacak mecburen falan gibi.
+
+35
+00:14:05,491 --> 00:14:25,371
+Bir kısım yanlış anlıyoruz ama hangimiz yanlış anlıyoruz onu bilmiyorum. Benim de gelen yönergeden anladığım sınav olmadan ödevle yürütebildiğimiz, onu onun için bir merkezi olarak bölümden öğrenmemde fayda var. Ama büyük ihtimalle ödevle gidebileceğiz.
+
+36
+00:14:26,067 --> 00:14:32,707
+Hocam belki evrak istedikleri için projenin raporunu sınav evrakı olarak gösterebilirsiniz.
+
+37
+00:14:33,087 --> 00:14:34,488
+Kesinlikle, kesinlikle.
+
+38
+00:14:34,528 --> 00:14:35,847
+O yüzden sorun.
+
+39
+00:14:36,528 --> 00:14:42,687
+O şey, onda bir sıkıntım yok. Hatta sistemden özellikle yüklemenizi isteme sebebim de o.
+
+40
+00:14:43,207 --> 00:14:45,408
+Kayıt altına alınmış olsun diye.
+
+41
+00:14:47,187 --> 00:14:53,488
+Ama ayrıca illa yazılı sınav soru şeklinde olacak falan diyorlar mı onu bir anlamam gerekiyor.
+
+42
+00:14:53,908 --> 00:14:58,208
+Ondan da emin olursam, istenmiyorsa biz bu şekilde gidiyoruz zaten.
+
+43
+00:15:00,847 --> 00:15:05,928
+Tamam, sanırım bir de soru mu var?
+
+44
+00:15:06,587 --> 00:15:10,888
+Ha tamam, [öğrenci] mesajını gördüm. Evet, arkadaşlarım da söylüyor.
+
+45
+00:15:11,468 --> 00:15:17,567
+Ben de olması gerektiğini anlamıyorum gelen yönergeden ama bir kontrol edeyim yine de.
+
+46
+00:15:18,163 --> 00:15:23,104
+Sonradan size de bana da sürpriz olmasın diye emin olacağım ondan.
+
+47
+00:15:24,903 --> 00:15:28,243
+Tamam, peki tekrar yeni gelenler için söylemiş olayım.
+
+48
+00:15:28,243 --> 00:15:35,743
+Sercan Hocanız bugün size uygulamalı olarak biraz backpropagation ve multileri perseptron.
+
+49
+00:15:36,115 --> 00:15:39,016
+Biraz da farklı bir şeyler yapacaksın herhalde Sercan.
+
+50
+00:15:39,135 --> 00:15:40,836
+Sen içeriğini açacaksın.
+
+51
+00:15:40,836 --> 00:15:43,816
+Evet hocam, birkaç böyle bir şeyler derlemeye çalıştım.
+
+52
+00:15:44,755 --> 00:15:48,255
+Çok belki banderi network tarafına geçmem.
+
+53
+00:15:48,596 --> 00:15:51,475
+Belki sonradan elimizde materyal olur hem.
+
+54
+00:15:52,255 --> 00:15:54,195
+Ama şöyle güzelce bir tekrar etmeye çalışacağım.
+
+55
+00:15:54,195 --> 00:16:00,036
+Özellikle böyle formüllerin üzerinden nasıl çıktığını yeniden bir kendim de düzenledim.
+
+56
+00:16:00,403 --> 00:16:08,783
+Tamam. Benim slide'larım biraz özetti. Biraz da böyle uzaktan olunca, tahta kullanmayınca zor oldu. Ne kadar anlaşılır oldu bilmiyorum.
+
+57
+00:16:09,331 --> 00:16:13,991
+O yüzden bir de senden dinlerlerse zannediyorum.
+
+58
+00:16:14,091 --> 00:16:15,652
+Sen yine hazırlamıştın tezin için zaten.
+
+59
+00:16:16,552 --> 00:16:17,231
+Süpersin.
+
+60
+00:16:17,511 --> 00:16:18,672
+Belki hata vardır arada.
+
+61
+00:16:19,052 --> 00:16:19,672
+Birlikte bakalım.
+
+62
+00:16:20,112 --> 00:16:24,312
+Ben açıkçası bir şeyleri düzeltip hazırlamak istedim ama yetiştiremedim yine.
+
+63
+00:16:24,432 --> 00:16:25,471
+Çok sıkışık program.
+
+64
+00:16:26,672 --> 00:16:28,271
+Seninkiler daha güzeldir eminim.
+
+65
+00:16:28,659 --> 00:16:31,639
+O zaman sana sözü bırakayım.
+
+66
+00:16:32,799 --> 00:16:37,799
+İyi etkili verebilirsiniz eğer. Gerçi ekran paylaşabiliyorum ama.
+
+67
+00:16:37,980 --> 00:16:41,039
+Bir dener misin? Tamam, gerekiyorsa vereyim.
+
+68
+00:16:41,220 --> 00:16:46,019
+Galiba gerekmiyor. Şu an ekranımı görüyorlar.
+
+69
+00:16:46,019 --> 00:16:48,240
+Senin bir şey yapabilirim istersen. Ekranın geldi, evet.
+
+70
+00:16:49,079 --> 00:16:50,940
+O zaman galiba gerek yok hocam.
+
+71
+00:17:00,115 --> 00:17:01,115
+Başlayayım mı hocam?
+
+72
+00:17:01,755 --> 00:17:10,775
+Tabii. Herkes görüyor değil mi? Bir sıkıntı olursa chatten yazarsınız arkadaşlar veya sesinizi açar söylersiniz. Ben görüyorum ekranını.
+
+73
+00:17:13,295 --> 00:17:13,996
+Tamamdır.
+
+74
+00:17:14,316 --> 00:17:15,275
+Tamam. Söz senin.
+
+75
+00:17:15,275 --> 00:17:26,275
+Tamam hocam. Merhaba arkadaşlar. Ben araştırma göre sercim Aygül. Böyle zaman zaman asistanlığını yapıyorum. Online olunca bu sene çok...
+
+76
+00:17:26,480 --> 00:17:29,500
+Belki göremediniz beni ama geçen yıl biraz daha yoğundu.
+
+77
+00:17:30,660 --> 00:17:35,319
+Hocamızın da dediği gibi bugün bir miktar böyle kısaca bir özet geçeceğim.
+
+78
+00:17:35,319 --> 00:17:39,000
+Bir tekrar olmuş olacak kendisi için.
+
+79
+00:17:40,160 --> 00:17:46,299
+Bir miktar biraz derledim. Biraz daha kendim anlamaya çalışırken elde ettiğim şeyleri koymaya çalıştım.
+
+80
+00:17:47,140 --> 00:17:50,319
+Ben de tezimi yazıyorum diyebiliriz doktora tezine.
+
+81
+00:17:51,155 --> 00:18:05,255
+O yüzden böyle formül çıkarma, işte bu benzer konularda neyin nereden geldiğini anlamaya çalışırken bazı şeyleri derlemek gerekiyor. O yüzden iyi oluyor.
+
+82
+00:18:06,935 --> 00:18:16,695
+Şimdi normalde böyle bu tarz tekrarlarda baştan sona kısaca bir böyle gitmeyi uygun buluyorum ben.
+
+83
+00:18:17,107 --> 00:18:31,967
+Bazı yerler çünkü anlaşılamayabilir. Single nörondan tutup onu büyüterek multi-layer perceptrona ulaşıp her adımda optimizasyonu nasıl yaptığımızı anlatmaya çalışacağım.
+
+84
+00:18:31,967 --> 00:18:40,967
+Hep verilen bir örnek vardır. Lojik kapıların davranışından modellemeye başlayıp.
+
+85
+00:18:43,028 --> 00:18:45,807
+Oradaki linearlik, non-linearlikten bahsetmek.
+
+86
+00:18:46,907 --> 00:18:49,068
+Şimdi elimizde lojik fonksiyonlar olsun.
+
+87
+00:18:49,448 --> 00:18:50,807
+AND, OR, EXOR gibi.
+
+88
+00:18:53,448 --> 00:19:00,367
+Bu iki yeşil bildiğimiz, hepiniz lojik sayısal devre almışsınızdır.
+
+89
+00:19:01,008 --> 00:19:06,668
+Orada anlatılan lojik fonksiyonların aslında x'ye eksene çizilmiş hali.
+
+90
+00:19:07,251 --> 00:19:22,591
+Beyazlar 1'i, siyahlar 0'ı reprezent ediyor burada. Örneğin end kapısı için x ekseninde, yani birinci girişimiz 0 olursa, y ekseninde, yani ikinci girişimiz 0 olduğu zaman 0'a 0 ve bize 0 verecek.
+
+91
+00:19:23,971 --> 00:19:31,091
+İşte yine x ekseninde birinci girişimiz 1, ikinci girişimiz d1 olursa, yani şurası.
+
+92
+00:19:31,955 --> 00:19:36,955
+Mouse'umu görebiliyor musunuz? Onu da sorayım.
+
+93
+00:19:36,955 --> 00:19:38,955
+Gözüküyor.
+
+94
+00:19:38,955 --> 00:19:41,955
+O zaman şuradayım.
+
+95
+00:19:41,955 --> 00:19:53,955
+Dolayısıyla ben bütün lojik fonksiyonları gelen o 2 bitlik 0, 0, 1, 0, 0, 1 ve 1, 1 durumuna göre bu şekilde gösterebilirim.
+
+96
+00:19:54,708 --> 00:20:10,347
+Ve onları da kendi arasında çıkışın 1 veya 0 olma durumuna göre ilgili lojik fonksiyon uyarınca onları label'layabilirim. Bu label'lara göre de aslında iki kümeye ayırmışsı alıyorum. Bu iki kümeyi de birbirinden ayırabilirim.
+
+97
+00:20:11,008 --> 00:20:18,008
+X, Y koordinatı dedim. O zaman bunu lineer olarak, matematiksel olarak birbirinden ayırabilirim.
+
+98
+00:20:20,564 --> 00:20:26,403
+İlk iki fonksiyonun üçüncüsünden farkı var. Sizce ne o? Hocamahak bahsetmiştir bundan.
+
+99
+00:20:28,704 --> 00:20:30,664
+Linear olarak ayrılamıyor olması.
+
+100
+00:20:31,564 --> 00:20:41,344
+Evet, üçüncüsünü linear olarak ayrılıyor. Yani elimi düz çizgi çekerek, hiç kaldırmadan ve hiç dönmeden, tek bir çizgiyle, exor için bunu yapamıyorum.
+
+101
+00:20:41,344 --> 00:20:44,024
+Ama diğerleri için, örneğin şuradan şöyle çizerek.
+
+102
+00:20:45,024 --> 00:20:46,384
+Şöyle güzel çizemedim, şöyle.
+
+103
+00:20:47,443 --> 00:20:51,443
+Şuradan çizerek aslında siyahlar ve beyazlar olarak ayırabiliyorum.
+
+104
+00:20:52,723 --> 00:20:59,283
+Peki, ilk iki problem biner olarak ayrılabilen, ikincisi ayrılamayan.
+
+105
+00:21:00,003 --> 00:21:07,324
+Bu bana nörel network ve nöronlar cinsinden konuşursak, bunu böyle bir birim olarak alalım.
+
+106
+00:21:07,844 --> 00:21:08,923
+Bu ne anlama geliyor?
+
+107
+00:21:10,743 --> 00:21:12,803
+Bir sistem tasarımı yapacak olsam.
+
+108
+00:21:13,268 --> 00:21:21,508
+İkincisinin ve birincisinin, üçüncüsünden bana bir nörel network sistemi tasarlarken ne gibi bir getirisi oluyor?
+
+109
+00:21:23,907 --> 00:21:29,748
+Yani tek katman kullanamıyoruz. Üçüncüsünde ondan mı bahsediyorsunuz?
+
+110
+00:21:29,748 --> 00:21:37,288
+Evet, aynen öyle. Yani mimari açıdan bana birincisi ne gibi bir avantaj sağlıyor? Yani ne yaparak birincisini tasarlayabilirim?
+
+111
+00:21:39,188 --> 00:21:54,847
+Ben dersi dinlerken hoca egzor'ı ödev olarak vermişti. Belki yine öyle yapmış olabilir bilmiyorum. Egzor problemini çözmek için tek bir tane nöron kullansak bunu yapabilir miyiz? Yapamayız değil mi?
+
+112
+00:21:55,768 --> 00:22:05,708
+Peki tek bir tane nöronun o zaman bizim için ne gibi bir ifadesi var? Ne anlama geliyor? Bir tane nöron.
+
+113
+00:22:07,220 --> 00:22:34,680
+Linear bir sınıflayıcı aslında. Yani elimde birbirinden ayrılabilen, örneğin iki sınıflada ta varsa, tek bir çizgiyle ben onu ayırabildiğimi varsayın, burada olduğu gibi. Ben bunu single nöronla birbirinden ayırabiliyorum. O zaman bunun bir modeli var. Matematiksel olarak bir tane line'ın bir equation'ı var. O zaman bu equation'a uyuyor olması gerekiyor. İki tane label'ım var, iki feature'ım var aslında.
+
+114
+00:22:36,692 --> 00:22:57,692
+Şimdi ondan biraz bahsedeceğim. Diyelim ki tek bir nöronu besliyorum ben ve X dediğim şeyler benim elimdeki bana gelen veri, W dediğim şeyler de nöral network sistemini kurarken aslında birazdan hani biyolojik olarak ne anlama geldiğini de kısaca göstereceğim bir görselde.
+
+115
+00:23:03,731 --> 00:23:16,351
+İki tane bana ait olan elimdeki feature'ları, verileri verirken aslında onlar x1 ve x2 dediğim şey xy koordinasında x ve y pozisyonları olabilir.
+
+116
+00:23:17,951 --> 00:23:21,351
+Bu pozisyon bilgisini buraya verirken bir tane nöron var aslında şurada.
+
+117
+00:23:21,351 --> 00:23:26,711
+Bunu zoom'dan çizeyim bir saniye.
+
+118
+00:23:30,932 --> 00:23:33,192
+Ekran paylaşımı devam ediyor, değil mi arkadaşlar?
+
+119
+00:23:35,952 --> 00:23:36,271
+Evet.
+
+120
+00:23:36,932 --> 00:23:37,512
+Tamam, süper.
+
+121
+00:23:41,395 --> 00:23:46,816
+Bendeki o şeyini kaldırdı çünkü. İngiltere şekilde neyse ama.
+
+122
+00:23:51,731 --> 00:23:52,351
+Seveceğim.
+
+123
+00:24:01,332 --> 00:24:02,572
+Şurada bir nöronumuz var.
+
+124
+00:24:05,312 --> 00:24:08,412
+Şimdi şurada da yuvarlak çizdiğim şeyler biraz daha küçük kalsın.
+
+125
+00:24:09,072 --> 00:24:09,711
+Burası input.
+
+126
+00:24:10,612 --> 00:24:11,572
+Şurada bias'ın var.
+
+127
+00:24:13,032 --> 00:24:14,072
+Ne olduğundan bahsedeceğim.
+
+128
+00:24:15,412 --> 00:24:19,231
+Bias'ın iki tane işte W3 ve B diye parametresinin olması önemli değil.
+
+129
+00:24:19,291 --> 00:24:20,332
+Bunlardan biri zaten hep bir.
+
+130
+00:24:20,892 --> 00:24:21,992
+Öbürünü optimize ediyorum.
+
+131
+00:24:22,612 --> 00:24:24,751
+Bazen B, bazen W3 diye görebiliriz.
+
+132
+00:24:24,932 --> 00:24:26,012
+Bu slide'larda da öyle.
+
+133
+00:24:26,012 --> 00:24:27,372
+Bazen B, bazen W3.
+
+134
+00:24:27,711 --> 00:24:51,791
+Ama bir tanesi bir. Aslında matematiksel olarak ne olduğunu söyleyince onun sadece c kat sayısına düştüğünü göreceğiz. Mutlaka bahsetmiştir hocada Bias için. Çok önemli bir parametre ama minicik bir parametre ama aslında bizim çizeceğimiz olan line'ın sadece orijinden geçmemesini sağlıyor bu örnek için özellikle.
+
+135
+00:24:52,435 --> 00:24:58,576
+Demiştim, X1 ve X2 feature'larım var benim elimde. Dolayısıyla az önceki örnekten veya bu başka bir örnekte olabilir.
+
+136
+00:24:58,576 --> 00:25:04,516
+X'ye eksenindeki X ve Y pozisyonel bilgilerimi veriyor benim. Başka bir örnek olmuş olsun örneğin.
+
+137
+00:25:05,375 --> 00:25:13,175
+Kırmızılarla ve turuncularla çizilen, lineer olarak ayrılabilen bir yığın olmuş olsun.
+
+138
+00:25:18,195 --> 00:25:38,076
+Modelini yapmak için bir nöronun tasarımında weightlerimi ve verdiğim feature'larımı, şuna bir diyelim, bir şekilde sistemi kurup, optimize ederek son haline eriştirmem lazım. Burada son hal ne, optimizasyon ne, aşama aşama onlardan bahsedeceğim aslında.
+
+139
+00:25:42,816 --> 00:25:50,836
+Sisteme verdiğim zaman bunları weightlerle çarpmam gerekecek. En başta weightleri varsayın ki random aldık veya hepsini bir aldık, hepsini sıfır aldık.
+
+140
+00:25:50,836 --> 00:26:05,836
+Tamamen performans etkileyen cümleler bunlar ama W1, W2 ve W3'ü en başta weight initialization denilen bir prosesten geçirerek initialize ettim. Elimdeki X1 ve X2 ile de bunları besliyorum.
+
+141
+00:26:08,948 --> 00:26:35,928
+Aslında ilk adımda nöronun girişine gelen veriler veytlerle çarpılıyor değil mi? İlk eleman, ilk yapılan iş çarpma işlemi. Dolayısıyla adım adım gelen veriler x1 ile v1, x2 ile v2, 1 ile v3 çarpılıp toplanacak. Yani mantıplayan ekümüleit işlemi yapılıyor. Dolayısıyla çarpımların toplamı bulunuyor.
+
+142
+00:26:36,531 --> 00:26:56,572
+Buradaki şu çarpımlar toplamına ne diyoruz biz? Bunun ismi nedir? Aktivasyonla ilgili. Genelde S ile gösteriliyor. Ve ne deniyor? Preaktivasyon deniyor değil mi? Henüz topladım çarpımları ama hiç başka bir işlem yapmadım.
+
+143
+00:27:04,660 --> 00:27:25,680
+Çarpımları topladığınız şu tek toplam sonucunu, yani S'yi yani preaktivasyonu bir fonksiyondan geçirmek. O da hani şu işte fonksiyon, daha doğrusu nöron iletimde mi değil mi gibi binary olarak konuşursak eğer veya bana bir range'de hangi değeri döndürüyor sorusunun cevabı.
+
+144
+00:27:30,483 --> 00:27:36,923
+Dolayısıyla burada toplamın gittiği bir teta ile fi ile farklı kaynaklarda farklı şekilde görülüyor.
+
+145
+00:27:36,923 --> 00:27:39,803
+F ile gösterdiğimiz bir aktivasyon fonksiyonuna gidiyor.
+
+146
+00:27:43,700 --> 00:28:10,140
+Literatürde bir sürü aktivasyon fonksiyonu var. En çok bilinenleri tangent perbolik, sigmoid, signum, relu. Ama bir sürü çeşidi var aslında. Biraz uygulamaya özer. Örneğin 0-1 çıkışı versin istiyorsanız unit step kullanabilirsiniz. İşte bu binary rise denilen yapılarda böyle. Yani nöron sadece çalışıyor veya mekanik bir switch gibi çalışıyor aslında.
+
+147
+00:28:10,867 --> 00:28:18,468
+Onun dışında, aktivasyon fonksiyonları ile ilgili en önemli söylenecek şey, rencileri bunların.
+
+148
+00:28:18,468 --> 00:28:30,067
+Relu, lineer olarak pozitif değerlerde gidiyorken, örneğin sigmoid 0 ve 1 arasında değişen değerlere sahip.
+
+149
+00:28:30,067 --> 00:28:33,908
+Burada taneciz, evet o da çizilmiş.
+
+150
+00:28:36,928 --> 00:29:00,648
+Negatif değerleri de eksi 1'e konverge olarak devam ediyor. Yani y'de aldığı, yansıma tarafında aldığı y değerleri eksi 1 ile 1 arasında. Bu neden önemli benim için? Bir aktivasyon fonksiyonunun tek nöron için konuşalım. Tek nöron olduğu zaman aslında tamam girişlerim var ama tek nöron aslında aynı zamanda out tut benim için.
+
+151
+00:29:03,092 --> 00:29:19,452
+Bir ölçüm yapıp değerlendirmeye alırken o ilgili nöronun sonucunu bana bir fonksiyon sonucu, yani bu fonksiyonun sonucu döndüğü için y değerlerinin hangi rençte olduğu önemli. Yani çıkışımın hangi rençte olduğu önemli. Bu da şunun için önemli.
+
+152
+00:29:20,012 --> 00:29:29,732
+Az önce bahsettiğim, örneğin lojik problemi için beklediğim sonuçlarla elde ettiğim sonuçlar arasında bir ilişki olması lazım. Örneğin orada.
+
+153
+00:29:30,163 --> 00:29:55,644
+Birilerini 1, öbürlerini 0 diye kodlamıştım. Burada seçeceğim aktivasyon fonksiyonuna bağlı olarak sayısal değerler elde edeceğim nöronun çıkışında. Ve sonuç olarak iş optimizasyon tarafına geldiği zaman beklediğimle elde ettiğim arasında farka bakacağım. Bu direkt fark olabilir, bir error fonksiyonu olabilir ki genelde öyle. Birazdan bahsedeceğiz ondan da.
+
+154
+00:29:56,819 --> 00:30:22,900
+Az önce çizdiğim örneğin bir benzeri. Yuvarlak ve yıldızları lineer olarak birbirinden ayırmaya çalışıyorum. Eğer söylediğime geri dönecek olursak, bir tane single nöronun lineer bir sınıflayıcı olmasının aslında en büyük sebebi, weightler cinsinden bir single line yazmaya çalışırsak, yani ax artı, şurada vardı o, ax artı by artı constant.
+
+155
+00:30:23,508 --> 00:30:43,668
+Constant burada B'yi ifade ediyor. Direkt bu şeyden geçmiş olsa, direkt orijinden geçmiş olsa aslında Y eşittir X doğrusu, kat sayılarda bir. C'de yok. C'nin olması aslında bana orijinden değil de başka bir yerden geçmesi için shift etmeyi sağlıyor. Bir de Y'nin ve X'in kat sayıları var.
+
+156
+00:30:47,476 --> 00:31:06,796
+Burada kısaca aslında, buraya detaya girmeye gerek yok. Y'yi elde etmeye çalışıyorum. Burada eğimi bulabilirim. M'yi bulmayıp, bir diye belirttiğim bir noktada birine sıfır verip öbürüne hangi noktada geçtiğini bulup Y'yi yazabilirim. Bir şekilde Y'yi yalnız bırakarak bir ekoyşi bulmaya çalışıyorum.
+
+157
+00:31:07,220 --> 00:31:21,720
+Genelde bunu veriyor olmamızın sebebi şu aslında. Siz birazdan anlatacağımız optimizasyonla buradaki W1, W2 ve W3'ü B1 optimize ederek bulurken
+
+158
+00:31:22,163 --> 00:31:47,403
+Aslında bu line'e uyan bir şeye erişmeye çalışıyorsunuz. Yani mesela şöyle bir ödev vermiş olsaydık bugün. Arkadaşlar işte ben size random data vereceğim. İki separable, linearly separable. İki sınıf. Neural Network ile bir örneğin beş terasyon, beş epoch bunu eğitmeye çalışın. Ve bunun sonucunda ideal olan sınıflayıcı çizgisiyle arasındaki olan ilişkiye bakın.
+
+159
+00:31:47,955 --> 00:32:00,255
+O ideal olan çizgi bir şekilde matematiksel olarak şurada göründüğü üzere mavi ile çizilebilir ve bunun da böyle bir fonksiyonu var. İdeali ile elde ettiğiniz değerleri kıyaslayabilirdiniz örneğin.
+
+160
+00:32:05,364 --> 00:32:23,003
+Tamam, single neuron tamam. Ama çok daha derin yapılar kullanıyoruz tabii ki. Bugün multi-layer'ı anlatacağımız için birden fazla, bir tane layer değil ama birden fazla layer'ın olduğu mimarileri göz önüne almamız gerekiyor. Layer ne demek?
+
+161
+00:32:23,923 --> 00:32:44,963
+Az önce bahsettiğim o girişte olan X1, X2 aslında input layer'ı oluşturuyor. Yani okuduğunuz datanın, okuduğunuz feature'nı elde ettiğiniz veya elde ettiğiniz feature'ın ta kendisi. Öteki tarafta birinci layer'dan itibaren hidden layer. Şurası. Çıkış layer'ına kadar aralarda başka hidden layer'larda olabilir.
+
+162
+00:32:47,155 --> 00:32:53,316
+Bir veya birden fazla nöronun bulunduğu katmanlardan bahsediyorum Türkçe ismiyle.
+
+163
+00:32:54,996 --> 00:33:01,556
+Bu haliyle aslında her nöron birbirine bağlı olan nöronlardan oluşuyor.
+
+164
+00:33:03,115 --> 00:33:12,155
+Bugünkü multilayer fully connected örneği olacağı için aslında herhangi bir nöron, herhangi bir noktada önünde...
+
+165
+00:33:13,683 --> 00:33:40,083
+Var olan bütün nöronlarla ilişkisel oluyor. İlişki demek aslında V ile ilgili gelen değerin çarpılarak ilgili nöronun fonksiyonuna gitmesi demek. Bu tıpkı işte biyolojide böyle lise biyolojisinde falan anlatılan işte dendritin aksondan sinir hücresinde ilgili elektriksel şeyi iletip bir sonraki hücreyi uyarması gibi.
+
+166
+00:33:41,107 --> 00:33:44,188
+Tamamen bunu modellemeye benzetmeye çalışmışlar aslında.
+
+167
+00:33:46,347 --> 00:33:51,387
+Burada, işte hücrem şurada. Hücrenin çekirdeğinde aslında aktivasyon fonksiyonu var. Benim seçtiğim.
+
+168
+00:33:54,428 --> 00:34:01,587
+Çevremde perceive ettiğim, perseptronu da kelime olarak şey yapan, bana gelen veriler var.
+
+169
+00:34:02,768 --> 00:34:06,428
+Bu gelen veriler aslında weightlerle çarpılıyor. 05, 02, 01 gibi.
+
+170
+00:34:07,443 --> 00:34:19,684
+Bunlar da kimyasal nörotransmitter maddeler aslında. Bu çarpımlar sonucunda oluşan toplam çekirdekte aktivasyon fonksiyonundan geçerek nöronun çıkışını oluşturuyor. Bu da bana sayısal bir değer döndürmüş oluyor.
+
+171
+00:34:20,304 --> 00:34:33,684
+Sistemin en sonundaki çıkışın sonucu beklenenle elde edilen, yani olması gerekenle sayısal olarak elde edilen arasındaki hataya bakılarak,
+
+172
+00:34:34,931 --> 00:34:49,591
+Birbirine tamamen aynıysa hiç hata yok. Ama hata varsa hatanın optimizasyonuyla bu defa bitirdiğim yerden başladığım yere geri dönerek bir optimizasyon run etmeye başlıyorum.
+
+173
+00:34:51,951 --> 00:35:00,692
+Şimdi az önce bahsettiğim gibi input layer dedik, hidden layer'lar var dedik. İki ve daha fazla olduğu zaman artık bu derinleşmeye başlayacak.
+
+174
+00:35:01,588 --> 00:35:28,328
+Bir de çıkış değerim var. Bu probleme göre bunun şeyi değişiyor. Ama burada belki en önemli söylenecek şey, baktığınız zaman hepsi birbirleriyle bağlantılı olduğunu varsayarsak eğer fully connected ise yani, değilse eğer fully connected değilse, buralarda kopmalar varsa o zaman aslında bu purun edilmiş. Yani bazıları bağlanmamış oluyor. Böyle puruning algoritmaları var.
+
+175
+00:35:28,884 --> 00:35:56,523
+Büyük bir bağlantıları.
+
+176
+00:35:56,880 --> 00:36:23,000
+Toplamış olan bir sürü nöron.
+
+177
+00:36:23,443 --> 00:36:46,703
+Aktivasyonu işlemini paralel olarak yapabilmek. Ders dinlerken ben daha önceki yıllarda hoca bahsetmiştik, size muhakkak söylemiştir. Son yıllarda bu derin öğrenme sistemlerine olan eğilimin artmasının sebebi aslında daha önceden paralel ortamlarda veya hesaplama platformlarında bu.
+
+178
+00:36:47,155 --> 00:37:03,255
+İşte matris çarpımının bu kadar eficiente olmamasıydı. Özellikle bu GPU'ların da gelmesiyle birlikte. Şurada gördüğünüz X ve W matrislerinin hızlı çarpımı mümkün olmaya başladı. Yani gelen örneğin bu örnek için gelen girişteki X verileri.
+
+179
+00:37:03,731 --> 00:37:09,612
+beslediğim inputlarım hemen birinci hidden layer'ın önündeki weightlerle çarpılırken,
+
+180
+00:37:10,891 --> 00:37:16,211
+efficient olarak çarpılabiliyor. İkisinin size'ının birbirleriyle ilgili olduğuna, madresi çarpımı olacağı için dikkat edin.
+
+181
+00:37:17,971 --> 00:37:23,731
+Yine örneğin bu bir ödev olmuş olsa, işte multi-layer perceptron kodunu yazıyorsa en azından forward path için,
+
+182
+00:37:23,731 --> 00:37:25,891
+forward path yani soldan,
+
+183
+00:37:26,228 --> 00:37:53,508
+Nöronlarının veikleri çarpıp aktivasyonu yapa yapa soldan sağa doğru, bunu bugün hep böyle söyleyeceğim, gitmek demek. Yani bir adım input'tan output'a kadar bir seyahat gerçekleştirmek demek. Dediğim gibi bir aslında matriz çarpımı gerçekleşiyor. Arka planında bu işlerin. Ve aynı zamanda paralel olarak bütün nöronlarda aktivasyon gerçekleşiyor.
+
+184
+00:37:54,996 --> 00:38:11,436
+Her bir layer'ın, genel olarak her layer, yani çıkış layer'ı hariç bir aktivasyon fonksiyonu seçiyorum ama bazı uygulamalar var. Örneğin Layerwise aktivasyon fonksiyonunu da kendisi değiştirebiliyor.
+
+185
+00:38:11,987 --> 00:38:28,987
+Çıkış da yani output değerinde de tabii ki çarpılan ve toplanan değerlerin çıkıştaki aktivasyon fonksiyonunu ziyaret ederek çıkması tıpkı single nöronda olduğu gibi. O zaten kendisi çıkıştı. Orada da söz konusu. Ama yine bazı özel nöran networklerde...
+
+186
+00:38:30,324 --> 00:38:45,943
+Örneğin binary hale getirilmiş olanlarda çıkış sadece 0,1 olup binary değer üretmesi mantıklı olamayacağı için onu örneğin sigmoid gibi istediğimiz bir aktivasyon fonksiyonuna set edebiliriz.
+
+187
+00:38:46,703 --> 00:38:49,503
+Bunu da özgürüz yani aslında train ederken. Öyle de uygulamalar var.
+
+188
+00:38:51,743 --> 00:38:54,304
+Peki, aktivasyonu kendimiz belirleyebiliyoruz.
+
+189
+00:38:54,672 --> 00:39:10,211
+Number of Hidden Layers, NOHL diye gösterdim ben ona. İşte burada iki örneğin. İki tane hidden layer var. En bilinen, işte 90'lı yılların sonunda çıkan el yazısı veri setini sınıflamak için iki hidden layer.
+
+190
+00:39:20,820 --> 00:39:28,279
+Hemen hemen %95'in üstünde bir test ekürisiyle sınıflamayı gerçekleştirebiliyor.
+
+191
+00:39:30,239 --> 00:39:31,880
+Peki neye göre karar veriyoruz?
+
+192
+00:39:33,920 --> 00:39:41,000
+Yani number of hidden layers yine tamamen problemin aslında non-linearitiesine bağlı.
+
+193
+00:39:41,423 --> 00:40:01,583
+İçindeki şey de aynen o şekilde, nöron sayısı da. Tıpkı yine EXOR ile AND problemlerinin birbirinden farklılaşması gibi. Ben burada hepsini parametrik verdim bir noktada anlatırken. Çünkü istediğim şekilde J dediğim yani input size o feature'ların sayısına bağlı.
+
+194
+00:40:02,579 --> 00:40:23,440
+O elindeki dataya bağlı aslında. Ama ondan sonraki derinliği ve her bir derinlikteki katmanın kendi nöron sayısı tamamen o network engineering kısmındaki işlere giriyor. K'yi, M'yi belirlemek tamamen biraz deneme yanılma aslında.
+
+195
+00:40:23,987 --> 00:40:42,667
+Bununla ilgili bazı akademik çalışmalar var. Bilinen shape'leri sınıflayabilmek için birbirinden tamamen lineayar ayırmak. Evet, söyledik. Input layer ile single layer. Two layer demesinin sebebi o. Az önceki x1, x2 meselesi gibi bir tane de nöronun kendisi var.
+
+196
+00:40:45,440 --> 00:40:57,880
+Gittikçe eğer ki o shape, o region linearlikten uzaklaşmaya başladıkça dolayısıyla kurguladığım katman sayısı da artmaya başlıyor.
+
+197
+00:40:58,260 --> 00:41:02,600
+Ama bunu böyle çok büyük problemlerde bir matematiği oturtmak maalesef o kadar kolay değil.
+
+198
+00:41:05,268 --> 00:41:14,028
+3 layer ile de deneyip, 4 layer ile de deneyip, sonra onu 200'e 100'e 100'e 100 alıp, sonra işte bu sayıları biraz hüristik olarak deniyoruz.
+
+199
+00:41:15,548 --> 00:41:16,828
+Sorusu olan var mı buraya kadar?
+
+200
+00:41:22,291 --> 00:41:24,311
+Sesim geliyor, görüntü var değil mi? Bir sorun yok.
+
+201
+00:41:27,751 --> 00:41:28,451
+Evet, geliyor.
+
+202
+00:41:32,391 --> 00:41:41,831
+Bir yandan da belli bazı temel kavramları tekrar ederim. Eminim biliyordur herkes ama belki bir kişi bile bilmiyorsa kar olmuş olur. Tekrar çünkü.
+
+203
+00:41:42,643 --> 00:41:50,603
+Genel olarak literatürde gösterildiği isimleriyle. X'e biz giriş, eğer direkt features'ız, direkt...
+
+204
+00:41:50,675 --> 00:42:15,355
+Görüntü sınıflaması, görüntünün kendisi ise input layer'a direkt piksel değerlerini verdiğim, X ile semboliz ettiğim veya değilse örneğin CNN'den gelen feature'ların verildiği bir multi-layer perceptron söz konusuysa girişe. O zaman girişi feature'ların verildiği. Verinin ta kendisi değil. X1, X2 gibi. Ama özetle girişi X olarak ben temsil ediyorum.
+
+205
+00:42:17,043 --> 00:42:43,543
+W, V'ti zaten. B harfine bir yaz demiştim. S'yi söylemiştim. Preaktivasyon değeri. Yani herhangi bir nöronun önüne gelen, arkadaki layer'dan veya girişten çarpımların toplama cinsinden ifade edilmiş değer. Yani birazdan nöronun içinde aktivasyon fonksiyonuna gidecek. F aktivasyon fonksiyonu. Fi, theta, her şey olabilir. Sembolü. Y dediğimde nöronun çıkış ifadesi.
+
+206
+00:42:44,115 --> 00:43:07,256
+Yani F fonksiyonun içine S preaktivasyonu geldiği zaman Y'ye eşit olmuş oluyor. Yani Y eşittir F-S. Burada önemli bir şey var. Elimdeki hatayı bir şekilde benim bulmam lazım. Az önce söz ettiğim aslında çıkıştaki single neuron veya multi-layer, fully connected, neyse.
+
+207
+00:43:08,083 --> 00:43:23,083
+Hepsinde bir çıkış değeri söz konusu. Bu çıkış değeri de aslında benim sınıfladığım probleme göre, bu bir lojikse eğer beklediğim değerlerin 0-1 olması, expected değerler yani.
+
+208
+00:43:25,083 --> 00:43:33,283
+Veya eğer bu bir daha çok sınıflı bir şeyse, birazdan bahsedeceğim, eğer ben onu nasıl kodladığıma yine bağlı.
+
+209
+00:43:34,643 --> 00:43:48,384
+1, 2, 3, 4, 5 mi dedim yoksa OneHot Encoding denilen bir kodlama yöntemi mi kullandım beklenen değerler için? Dolayısıyla beklenenle elde edilen değer arasında bir hata var. Ve benim bu hatayı ne yapmam lazım? Optimize etmem lazım.
+
+210
+00:43:49,523 --> 00:44:02,644
+Ben hatayı E1'den ET'ye kadar, burada T çıkışın size'ı. Dolayısıyla her bir nöronun çıkışındaki hatayı bulacağım. Output nöronunun daha doğrusu. Çıkıştaki her nöronun hatasını bulacağım.
+
+211
+00:44:03,092 --> 00:44:29,311
+Çünkü o son adım. Artık son adıma kadar arkadan gelen bütün değerler toplana, çarpıla, aktivasyondan geçe geçe sona kadar geldi. Çıkışta da yine son defa aktivasyondan geçti ve bana bir değer verdi. Artık o değerin benim için bir şey ifade ediyor olması lazım. İster bütün işte birden t'ye kadar değerlerin hepsine baktığımda en büyüğünü alacağım. Kodladığım şeye göre. Veya başka bir yöntem kullanacağım bunun için.
+
+212
+00:44:31,155 --> 00:44:42,155
+Ama bir şekilde sonda çıkıştaki nöronların sayısal değerlerini 1'den t'ye kadar olan bakmam lazım. Her birinin bana getirdiği bir hata var. Bu hata genelde bir fonksiyon uyarınca belirtiliyor.
+
+213
+00:44:43,275 --> 00:44:54,576
+Min square error, hinge loss. Yani bu loss dediğimiz çıkıştaki elde edilen hata fonksiyonu vasıtasıyla toplam hatanın elde edildiği durum.
+
+214
+00:44:57,012 --> 00:45:09,692
+Şimdi burada bir parantez açmak lazım. Şunu anlatmadan şu tanımı vermek istiyorum. Az önce söyledim. Inputtan başlayıp çıkışa kadar.
+
+215
+00:45:17,715 --> 00:45:28,875
+İmputtan başlayıp, çıkışa kadar, çarpıla toplaya, aktivasyona gelerek, şuraya kadar, yani E'lerin belirlenmesine kadar geçen adımlara ne diyoruz biz?
+
+216
+00:45:32,403 --> 00:45:55,184
+Feed Forward. Forward Path. Değil mi? Şu kısım yani. Hataları bulup, bunları artık geriye geriye giderek bu defa, onu başka bir şeyle çizeyim. Geriye geriye giderek her bir adımda bir şey yapıyorum. Ne olduğunu söyleyeceğim. En başa kadar ta ki.
+
+217
+00:45:56,148 --> 00:46:21,327
+Aynı ağı, çıkıştan bu defa girişe doğru seyahat ettiğim, buna ne diyorum? Backford. Backpropagation oluşturan adım. O şurada. Bir de son bir adım var. En başta bir defa gittim. Elimde en başta belirlediğim weightler vardı. Nasıl bunları belirlemiştim? Örneğin sıfır alın demiştim. Örneğin random alın demiştim.
+
+218
+00:46:24,148 --> 00:46:42,228
+Initialize ettiğim değerleri. İlk birinci adımda bir defa gittim. Errora baktım. Hatanın optimizasyonu için geri geri gittim. Bu sırada waitleri de update ediyorum aslında. O zaman benim amacım ne?
+
+219
+00:46:44,988 --> 00:46:51,368
+E ile W arasında bir optimizasyon yapmak değil mi?
+
+220
+00:46:54,003 --> 00:46:57,083
+Hangi matematiksel işlem bunun için kullanılabilir?
+
+221
+00:47:01,972 --> 00:47:02,972
+Biraz konuşalım.
+
+222
+00:47:07,315 --> 00:47:08,455
+Duyuyor musunuz beni arkadaşlar?
+
+223
+00:47:15,188 --> 00:47:21,928
+Optimizasyon deyince, yani hatanın minimize edilmesi deyince, hangi operasyon aklımıza gelir?
+
+224
+00:47:24,468 --> 00:47:25,468
+Türev almak mı?
+
+225
+00:47:25,868 --> 00:47:28,808
+Evet, türev alıp, onu ne yapmak?
+
+226
+00:47:29,208 --> 00:47:30,008
+Minimize etmek.
+
+227
+00:47:30,208 --> 00:47:33,308
+Evet, onu minimize edip sıfıra yaklaştırmaya çalışmak.
+
+228
+00:47:42,483 --> 00:47:44,244
+Parşal derivatileri üzerinden.
+
+229
+00:47:46,423 --> 00:47:51,003
+Dolayısıyla benim amacım aslında E'nin V'ye bağlı değişimini bulmak.
+
+230
+00:47:52,744 --> 00:47:56,164
+Aslında bu bana bir optimizasyon problemini getiriyor.
+
+231
+00:47:56,784 --> 00:48:03,044
+Amacım bunu işte gradiyentsel algoritması yardımıyla şu delta kuralı birazdan bahsedeceğim.
+
+232
+00:48:05,076 --> 00:48:19,496
+Backpropagation'da kullanmak. Backpropagation adını, aslında motivasyonu bunun üzerine kurdu. Burada önemli olan şu pembeyle, yeşille, kahverengiyle çizdiğim temel adımları bilmek aslında önemli olan, isimlerini bilmek. Belki bunları kaçıran olmuştur.
+
+233
+00:48:21,175 --> 00:48:27,496
+Bu sırada başka bir şey daha söyleyeceğim. Bu akış olurken ne işlemler oluyor? Hem bu tanımları vermek açısından bu slide hem de...
+
+234
+00:48:29,940 --> 00:48:52,900
+Bazı şu akıştaki batch gibi tanımları vermek açısından iyi. Buraya kadar sorusu olan var mı? Üç tane temel adımı var yani. Bunu biz kodluyor olsak bugün, tek tek kullanıcıdan hidden layer sayısını ve size'ını alıp elimdeki giriş datasının da size'ına bağlı bir network oluşturuyor olsam, çarpa toplaya F'i kullanarak.
+
+235
+00:48:53,523 --> 00:49:12,203
+Soldan sağa gidip, çarpıp toplayıp, aktivasyona verip, aktivasyonun sonucunu alıp bir sonraki nöronun çıkışı, bir sonraki katmanın girişi, rake'te çarpılarak, soldan sağa gide gide şuraya kadar gelebilirim. Bunun kodunu yazmak çok çok zor olmayabilir. Dolayısıyla buraya kadar geldiğim gibi 10 tane nöron var.
+
+236
+00:49:18,963 --> 00:49:23,324
+Actual değerlere göre, burada elde ettiğim, ikisi arasında girişkiye bakmam lazım.
+
+237
+00:49:25,224 --> 00:49:29,943
+İşte bundan sonra geriye doğru giderken sonra backpropagation kodunun çalışması lazım.
+
+238
+00:49:29,943 --> 00:49:31,764
+Şimdi.
+
+239
+00:49:40,884 --> 00:49:47,184
+Şimdi burada bir parantez açalım. Genelde görüntü sınıflama üzerinden konuşuyoruz hep.
+
+240
+00:49:52,052 --> 00:49:54,891
+Diyelim ki elimde 3 tane resim var.
+
+241
+00:50:00,500 --> 00:50:06,420
+Ayrıca 10 tane de ayrı bir devamı var.
+
+242
+00:50:10,739 --> 00:50:23,659
+Training sırasındaki veride işini şimdilik bir kenara koyalım. Elimde 100 tane veri var. Ben bunu training için kullanacağım. 101'den 110.'ya kadar olan verileri de test için kullanacağım.
+
+243
+00:50:26,419 --> 00:50:35,679
+Şimdi problem benim şu anki problemim CNN falan değil. Şu anki problemim Multi-Lay Perceptron Image Classification yapacağım diyelim ki.
+
+244
+00:50:38,931 --> 00:50:39,931
+Bir dakika.
+
+245
+00:50:42,431 --> 00:50:48,931
+Şu birinci resim olmuş olsun, şu ikinci resim olmuş olsun, yüzünceye kadar. Elimde resimler var. M'e enlik.
+
+246
+00:50:49,931 --> 00:50:57,431
+Ekstra bir feature extraction yapmadan direkt piksel değerlerini grayscale bunlar bu arada. Yani renkli değil.
+
+247
+00:50:57,931 --> 00:51:04,431
+Herhangi bir imaja alacağım. Şuraya vereceğim. Input layer olarak. Hiçbir feature olmadan.
+
+248
+00:51:05,331 --> 00:51:14,392
+Ve ben bu resmi sınıflamaya çalışacağım. Diyelim ki bu resimler kuş, köpek, kedi gibi resimler diyelim ki. Ve buna göre de bir sınıflama gerçekleştireceğim.
+
+249
+00:51:15,092 --> 00:51:20,632
+100 tane elimde bu farklı sınıflardan oluşan hayvan resimleri var. Bunları sisteme veriyorum.
+
+250
+00:51:20,632 --> 00:51:31,852
+Şimdi bunu söylememin sebebi şu. Training sırasında, birazdan detaylarını vereceğimiz optimizasyon sırasında
+
+251
+00:51:32,307 --> 00:51:54,087
+Elimdeki verilerin tek tek mi hepsini alayım? Yani birden yüze kadar. Yoksa belli gruplar halinde mi alayım? Bu önemli. Eğer tek tek hepsini alırsanız o zaman algoritmaya göre hiç batchlememiş, yani hiç alt grupları ayırmamış tek tek birinci resmi alıp forward peti yapıp.
+
+252
+00:51:54,420 --> 00:52:05,880
+Sonra yine aynı resim ve aynı resime bağlı olan hata değerleri için geriye doğru gidip, ilgili weightleri update edip, bu defa tekrar ikinci resme geçip, bu defa ikinci resmi vermek.
+
+253
+00:52:05,880 --> 00:52:11,640
+O zaman ben burada size bunu bir alarak tek tek bütün resimleri 100 taneye 100 adımda yapmış oluyorum.
+
+254
+00:52:12,920 --> 00:52:19,200
+Burada bir tanım var yine. Kaçıranlar bu neydi ya falan diyenler için. Ben bunu böyle yapıyorum diyelim ki.
+
+255
+00:52:21,876 --> 00:52:24,056
+Ben bir neyi tamamlamış oluyorum?
+
+256
+00:52:25,916 --> 00:52:26,556
+Epoch.
+
+257
+00:52:26,916 --> 00:52:41,215
+Evet, bir epoch'u tamamlamış oluyorum böylece. Yani aslında hani böyle bir yerlerde görmüşsünüzdür muhakkak. Bir epoch tamamlayabilmek için bütün tapasiyeti bir defa atamam lazım training için. Peki batch ne? Batch'te bunları gruplara ayırıyorum.
+
+258
+00:52:42,195 --> 00:52:49,596
+Peki sadece grupları ayırıyorum. Tanımı yeterli mi? Başka ne yapıyorum? Yani tamam. Diyelim ki ben bunu iki gruba ayırdım. Haydi dört gruba ayırayım.
+
+259
+00:52:51,896 --> 00:52:54,695
+Yüzü dörde böldüm. Yirmi beşerli olarak grupladım ben bunları.
+
+260
+00:52:57,516 --> 00:52:58,076
+Şöyle.
+
+261
+00:53:01,195 --> 00:53:05,175
+Az öncekinden farkı ne bunun? Sadece ne yapacağım? Yirmi beş tane alacağım.
+
+262
+00:53:07,603 --> 00:53:12,724
+Hatayı da toplam olarak düzeltmek gerekir.
+
+263
+00:53:12,724 --> 00:53:33,003
+Evet, aynen öyle. Batch demek şu demek. Batch'in size neyse o kadar görüntüyü al, o kadar görüntüyü forward pet yap. Ama sadece forward petler yap beşi sıra. Bu sırada elde ettiğin totaldeki hata değeri üzerinden ortalama alınabiliyor burada. Beş tane resim varsa beş tane e total üzerinden.
+
+264
+00:53:33,556 --> 00:53:47,536
+Ortalama alabilirsiniz. Ama o 5 tane resme ait olan toplam hata değerinden optimizasyonu gerçekleştirmek. Yani burada bir optimizasyon, burada bir, burada bir, burada da bir tane optimizasyon. Bu kod akışı onu anlatıyor aslında.
+
+265
+00:53:55,219 --> 00:54:03,739
+Forward yap, sonra ortalama değerler üzerinden Backward ve Update yap gibi bir akış söylüyor bana. Ne gibi bir avantajı var bunun?
+
+266
+00:54:07,795 --> 00:54:24,355
+Öğrenmeyi etkilemiyor ve onun yanında performans açısından da tek tek her bir adımda Backford yapmaktansa, Backford Propagation'ı birazdan göreceğiz, aslında iki tane çarpma işlemi var.
+
+267
+00:54:24,595 --> 00:54:30,635
+Ben kendi tezim için bu ileri geri bütün bu adımları yeni baştan yazmaya çalıştım.
+
+268
+00:54:35,699 --> 00:54:59,663
+Ben başladığım zaman bu kadar meşhur değildi. Bazı şeyleri Metap'te yapmaya çalışmıştım. Oldu da yani çok sıkıntı olmadı ama biraz daha az performans çalışıyor tabii. İlk başta CPU'da yazdım hatta. O zaman kodu analiz ettiğim zaman Metap'in öyle bir şeyi var hatta. Analiz ettiğiniz zaman bir baktım en çok zamanın gittiği yer çarpma işleme, backpropagionik çarpma işlemi. Yani batchi yapmadan...
+
+269
+00:54:59,664 --> 00:55:15,963
+Bu, single'da zaten yapmak mümkün değil single core'da MNIST problemi için. Yani bu Handwritten Digit, MNIST onun ismi. Dolayısıyla batch'in hem generalization anlamında hem de performance açısından bir avantajı var.
+
+270
+00:55:25,876 --> 00:55:41,136
+K-fold cross-reliation vardır örneğin. K-foldlara bölersiniz. Kendi içinde ayrıca her bir alt segmenti her bir error optimizasyonu sonunda güncellenen weightler üzerinden veya epochlar üzerinden.
+
+271
+00:55:41,136 --> 00:55:43,556
+Yani birinci epoğu beklerken.
+
+272
+00:55:44,724 --> 00:55:56,084
+Beklemek koşuluyla veya beklemeden her bir batch'in sonunda istediğiniz şekilde elde ettiğiniz performansı, wait'leri update ettiğiniz her adımda isterseniz ve ölçebilirsiniz.
+
+273
+00:55:56,527 --> 00:56:18,827
+Bu sırada ölçmek için de elde ettiğiniz verilerin bir kısmını training için kullanırken, training seti içinden ama, bir kısmını da aslında validasyon seti olarak ayırıyorsunuz. Training seti kendi içinde gizli bir subset ayırıyorsun ama training'e onu vermiyorsun ki gerçek performansını verilebilirsin. O da mümkün. Ama o zaman buna validation ekürüsü deniyor.
+
+274
+00:56:19,280 --> 00:56:32,500
+Genelde Network Training'i devam ederken test setinle hiçbir işin yok. Çünkü trainingin bitmesi lazım test seti test edebilmek için. Ama validasyon ekürisi size bu açıdan bir bilgi sağlıyor.
+
+275
+00:56:34,440 --> 00:56:35,400
+Tamam Epo'u söyledik.
+
+276
+00:56:38,400 --> 00:56:39,600
+Tamam, ön önüm, ön oyun zaten.
+
+277
+00:56:40,740 --> 00:56:41,340
+Beçle birlikte.
+
+278
+00:56:49,684 --> 00:57:08,684
+Şundan bahsetmiştik, S'yi söyledik. Bunu söyledik. Tamam. O zaman özetle amacım E toplamı bir şekilde weight'e göre partial derivati vasıtasıyla türevin gücünü kullanarak bu işte...
+
+279
+00:57:09,811 --> 00:57:33,851
+Hani şu hep çizilen stokastik gradient descent platı böyle bir plattır. Bunun üzerine aslında 3 boyutlu. Onun üzerinde yürürken minimum olan yere doğru, mümkünse global minimuma gidip hatanın minimum olduğu yerde bir şekilde tam olarak orada durup weightleri o noktadaki weight değerleri için belirlemeyi hedefliyorum algoritmanın içinde.
+
+280
+00:57:37,235 --> 00:57:39,555
+Devam edeyim mi? Bir beş dakika ara verelim mi?
+
+281
+00:57:44,083 --> 00:57:45,864
+Ara versek iyi olabilir hocam.
+
+282
+00:57:45,983 --> 00:57:56,123
+Tamam, peki. Bir beş dakika ara verelim o zaman. Hiç kapatmayalım hiçbir yeri. Ben de bir soğuklanayım. Ondan sonra devam edelim. Bir bu kadar daha var. Çok yok.
+
+283
+00:57:59,303 --> 00:57:59,743
+Tamamdır.
+
+284
+01:08:12,436 --> 01:08:14,276
+Burada mı herkes arkadaşlar? Duyabiliyor musunuz beni?
+
+285
+01:08:15,936 --> 01:08:17,596
+Evet duyuyoruz.
+
+286
+01:08:18,396 --> 01:08:20,156
+Yavaş yavaş başlayabiliriz.
+
+287
+01:09:03,572 --> 01:09:04,971
+Görüyorsunuz ekranı değil mi yine?
+
+288
+01:09:06,871 --> 01:09:07,931
+Evet hocam.
+
+289
+01:09:35,315 --> 01:09:42,935
+Az önce demiştik ki hatayı weight'e göre optimize edeceğiz. Bunun için de şu partial derivative kullanacağız.
+
+290
+01:09:44,376 --> 01:09:58,416
+Hep demiştik hatta bu dersler anlatılırken bazı internet kaynaklarda bir tane lokal minimaları, global miniması olan bir plat çizerler aslında.
+
+291
+01:10:02,036 --> 01:10:23,695
+İşte o körbün üzerine seyahat ederken ki ama lokal ama global minimumunu elde etme durumu. Hedef en küçüğüne ulaşıp hatanın öyle bir weight değeri var ki minimum değerine ulaştığı halini bulmak. Optimizasyon problemi bu demiştik. Bunu optimizetmeye çalışıyor üzerine.
+
+292
+01:10:23,695 --> 01:10:25,876
+Peki.
+
+293
+01:10:26,644 --> 01:10:40,644
+Bu adımda hep şey denir. Bütün kaynaklarla şöyle geçer. Tamam, E'ye bağlı wait'i optimiz etmek için bir fonksiyon kullanmam gerekecek o zaman bu parçal derivat için. Peki ben E'ye bağlı V'yi nasıl elde edeceğim?
+
+294
+01:10:41,424 --> 01:10:49,463
+E'ye bağlı V'yi, daha doğrusu V'ye bağlı E'yi, yani W'ler cinsinden bir error fonksiyonu. Nasıl yazabilirim?
+
+295
+01:10:57,684 --> 01:10:59,684
+Duyuyorsunuz değil mi? Sorun.
+
+296
+01:11:13,971 --> 01:11:17,051
+Nasıl yazarım arkadaşlar? Ne kuralı, ne ruh?
+
+297
+01:11:24,532 --> 01:11:28,332
+Çete bir şey yazmış olma ihtimalinize karşı çeti açayım.
+
+298
+01:11:48,819 --> 01:11:52,760
+Duyuyor musunuz arkadaşlar beni? Biriniz ses verin bari ya.
+
+299
+01:11:53,959 --> 01:11:54,479
+Evet [öğrenci].
+
+300
+01:11:55,760 --> 01:12:01,399
+Ne ruldu o? Bir şey ruldu. Lise 3 fizikte falan da anlatılır mı?
+
+301
+01:12:01,500 --> 01:12:02,659
+Zincir kuralından bahsediyor.
+
+302
+01:12:02,659 --> 01:12:13,859
+Evet, zincir kuralı. Aynen öyle. Dolayısıyla direkt W'lar cinsinden E'yi yazamadığın için, W'lar cinsinden yazabildiğim başka şeyleri bir araya getirerek,
+
+303
+01:12:14,644 --> 01:12:23,684
+yazabildiklerimi yazamadıklarımı çarpım cinsinden bir araya getirerek bu partial derivatifi bir fonksiyon olarak ifade etmiş olacak.
+
+304
+01:12:23,684 --> 01:12:40,324
+Buna zincir kuralı deniyor. Chain rule. O da şu. Direkt E'den E, W'yu set ederek E'yi elde edemediğim için partial derivatif toplam hatanın çıkışlar cinsinden
+
+305
+01:12:40,948 --> 01:12:55,028
+Yani aktivasyon fonksiyonunun preaktivasyon cinsinden partial derivativi ve preaktivasyonun weightler cinsinden partial derivativi şeklinde çarpımlar cinsinden yazıyorum.
+
+306
+01:12:55,028 --> 01:13:05,307
+Bakın burada iki değer çarpılıyor, sonra bir de üçüncüsüyle çarpılıyor. En çok zaman alan yer bu oluyor. Bu zor. Backprop'u geçtiğinde en çok zaman alan kısım bu yani.
+
+307
+01:13:06,644 --> 01:13:26,604
+Bu noktada aslında burada da sağdan sola doğru bir gidiş var. Ne cinsinden yazabilirim normalde? Veytleri yazdığım fonksiyon ne? S fonksiyonu. Fonksiyon demeyeyim de S ifadesi. Ne yapıyorum? Girişlerle veya bir öncekinden onun çıkışına çarptığım veytlerim var elimde ve onlar toplam durumunda.
+
+308
+01:13:26,604 --> 01:13:33,064
+Dolayısıyla önce bunu yazıyorum. Sonra o zaman diyorum ki madem öyle S'ler cinsinden başka bir şey yazayım.
+
+309
+01:13:39,796 --> 01:14:06,456
+Dolayısıyla şu S birbirleriyle şu aşağısındakiyle çarpılarak birbiri götürecek şekilde ve aynı şekilde buradaki Y ve buradaki parçalere birbirini götürecek şekilde böyle bir şey kurduruyorum. Şunlar ve şunlar birbirleriyle gittiği zaman geriye yine elimdeki hata ve veyte bağlı parçalere bitiriler kalmış oluyor.
+
+310
+01:14:12,500 --> 01:14:35,079
+Şimdi herhangi bir noktadaki, aslında ben for rütbeti yaptım şu az önce pembeyle gösterdiğim fw. Sonra artık geriye gideceğim. Geriye giderken de demiştim ki hataya bakacağım. Hataya bakıp hata fonksiyonu üzerinden, min square error ünlü neyin. Bu hata fonksiyonu üzerinden geriye doğru giderken herhangi bir anda ilgili weight'i güncelleyeceğim.
+
+311
+01:14:35,796 --> 01:14:55,675
+Diyelim ki bu şurası olmuş olsun. Yani ben şu Namburo Fidenlayer artı bir indisini kullanıyorum sağdan sola giderken veya soldan sağa her neyse. Bu da bana şunu söylüyor. Mesela burada iki tane Fidenlayer var. Üç adım yapmam lazım. Çünkü neden? Şu son adımdan geriye.
+
+312
+01:14:58,131 --> 01:15:16,351
+Şuradan şuraya, şuradan şuraya, şuradan şuraya. Üç aralık var aslında. Laylar arasındaki aralıklardan bahsediyor. Dolayısıyla şurada ikiyi söyleyin bu örnek için. Üç tane üçüncü adımdayım ve üçüncü aralığı ilgilendiren late ile ilgili. Ve bunun birin biri. Yani buradaki bir, buradaki de bir. Şunu güncelleyeceğim yani.
+
+313
+01:15:19,507 --> 01:15:42,528
+Forward biti yaptım, buraya kadar geldim, errorları buldum. Errorları buldum demek ne demek? Çıkıştaki nöron değerlerinin, expected ve actual olanların arasındaki farkı bakmak. Burada expected-actual, actual-expected diyebilirsiniz. Bu tamamen delta rule'da. Weight'i güncellerken elde ettiğiniz güncelleme değerini weight'e ekleyeyim mi, çıkarayım mı hakkında da bilgi veriyor aslında.
+
+314
+01:15:43,539 --> 01:16:03,340
+X-Pacted ile actual arasındaki farka bakıp, karesi 1 bölü 2, mean alıyor aslında orada iki tane değer olduğu için. Böyle bir fonksiyon olmuş olsun. EU dediğim şey birden T'ye kadar toplam T tane çıkışta herhangi bir çıkış. Dolayısıyla ben bunu E1 için, E2 için, ET'ye kadar yapmam gerekecek.
+
+315
+01:16:09,171 --> 01:16:28,511
+Hani şu şeyi ilgilendiren, kırmızıyla gösterdiğim güncellenecek olan W'yu ilgilendiren, 4-3 ile gösterdiğim E1'de hata fonksiyonu uyarınca beklenen A tuttu değerinden elde edilen, actual elde olan aktüel değeri çıkartıp karesini alarak ortalamasını alıyor.
+
+316
+01:16:33,684 --> 01:16:44,004
+Actual Değer dediğim şey aslında number of id nere artı 1 dediğim sondaki, 3. Aralıktan sonra gelen en sondaki çıkış nöronunun değeri, fonksiyonunun sonucu.
+
+317
+01:16:45,203 --> 01:16:52,203
+E total dediğimde birden t'ye kadar veya birden 2'ye kadar, örneğin birden 2'ye kadarsa e1 artı e2, e totali bulmak.
+
+318
+01:16:52,703 --> 01:16:56,443
+Burada öyle bir şey göstermiş. İkisinin toplamı demiş yani. 4-6'ı.
+
+319
+01:17:00,051 --> 01:17:11,252
+Şimdi Chain Rule'un elemanlarını hatırlayalım. Parşil dergatif E total bölü parşil dergatif E aktivasyon. Aktivasyon fonksiyonu nöron çıkışı.
+
+320
+01:17:13,252 --> 01:17:23,252
+Burada Y son nöronun indisine göre o parametre için parşil dergatif aldığınız zaman E total'de.
+
+321
+01:17:23,859 --> 01:17:45,920
+İşte burada ikisi için söylemiş aslında ama iki tane çıkış olduğu durumdaki şeyi basitleştirmiş ama şu mesajı veriyor aslında. Elimde partial derivatini aldığım eşitliğin sol tarafındaki NOHL artı bir Y1 aslında sadece bir tane E1'de vardı yerlerinde yok. Dolayısıyla öbürleri sıfır. Sadece şu var.
+
+322
+01:17:48,083 --> 01:17:51,644
+Şu an ekranda iki tane şey görüyorsunuz değil mi? Biri kırmızı, biri imleç.
+
+323
+01:17:54,644 --> 01:17:54,863
+Evet.
+
+324
+01:17:55,064 --> 01:17:56,523
+Nasıl oluyor bunu bilmiyorum.
+
+325
+01:17:56,843 --> 01:17:57,943
+Yani Zoom'un şeyi galiba.
+
+326
+01:18:01,619 --> 01:18:05,779
+Kapatamıyorum da. Kapattım. Tamam.
+
+327
+01:18:08,579 --> 01:18:23,039
+Yani şu birinci ifade içinde şu kendisinden olduğu için türevin yani üstü başa indir, bir azalt, içinin de türevini yaz. Ama diğer ifadeler artık sıfır. Burada bir iki tane ikinci ifade vardı E1 artı E2'deki. Ama E-T'ye kadar olsa hepsi sıfır.
+
+328
+01:18:24,340 --> 01:18:51,700
+Sonra dolayısıyla şu ifadeyi bulmuş oluyorum. Chain rule'un birinci çarpanını buldum. 3 tane çarpan vardı ya. Şöyle bir ifade geldi bana. İşte y'nin f, z olduğunu hatırlatmışım burada. F'de herhangi bir aktivasyon fonksiyonu. Bu örnekte ben tangent hyperbole'yi kullandım. Genel bir çözüm vermeyeyim ama tane h olduğunda nasıl oluyor? Sonra yine f, s'e geri döneriz genellerken wait'i update etmek açısından.
+
+329
+01:18:57,363 --> 01:19:02,163
+Sonra ikinci çarpandayız. Parşel derevetif Y bölü parşel derevetif S.
+
+330
+01:19:05,163 --> 01:19:09,723
+Şu kırmızı lazeri hiç ben açmamama rağmen kendisi açılıyor. Nasıl hiç anlamadım.
+
+331
+01:19:20,340 --> 01:19:22,340
+Benim kontrolüm dışında hareket ediyor gibi.
+
+332
+01:19:23,819 --> 01:19:25,100
+Hocadan olabilir belki.
+
+333
+01:19:25,860 --> 01:19:27,600
+Ama evet, hocadan olabilir belki, doğru.
+
+334
+01:19:43,347 --> 01:19:44,747
+Ama öyle bir şey olamadı bence ya.
+
+335
+01:19:48,948 --> 01:19:49,507
+Devam edelim.
+
+336
+01:19:50,548 --> 01:19:53,208
+Kırmızı lezare takılmayın. Ben kendim kalemimi kullanacağım.
+
+337
+01:19:55,268 --> 01:19:56,468
+Şu kalemi açayım şuyla.
+
+338
+01:20:02,452 --> 01:20:03,212
+Şuradaydık.
+
+339
+01:20:04,612 --> 01:20:10,212
+Şimdi, yani şu parametredeyiz şu anda. Şunu hallettik. Şuradayız.
+
+340
+01:20:12,471 --> 01:20:14,772
+Y'yi biliyorum. Az önce söylediğim gibi Fs'e bağlı.
+
+341
+01:20:15,332 --> 01:20:17,992
+F. Preaktivasyon geliyor içine. Şu yani.
+
+342
+01:20:17,992 --> 01:20:20,292
+F'i tanjantifarabilik olarak aldım bu örnekte.
+
+343
+01:20:21,132 --> 01:20:24,712
+Şurada. İçine de preaktivasyonu yazdım.
+
+344
+01:20:26,731 --> 01:20:28,372
+Şunu optimize ediyordum hatırlarsanız.
+
+345
+01:20:29,684 --> 01:20:55,644
+Dolayısıyla şu fonksiyonu yazarken şunu yani şöyle yazabilirim. Bu tangent hyperboleyn türevi. Bir eksi tane iç kare. Hangi aktivasyon fonksiyonunu kullanıyorsanız onun türeviyle de hep işiniz oluyor. Yani böyle sıfırdan bir şey yazıyor olsak mutlaka onun türevine ihtiyacımız olur. Mutlaka onu belirtmemiz gerekiyor. Çünkü backpropagation'da türev ihtiyacımız olacak hep.
+
+346
+01:20:56,884 --> 01:21:14,023
+Türevi de bu. Bu kolay. Neden? Çünkü aktivasyon fonksiyonu belli. İçine aldığı parametre zaten fs. Fonksiyonun s'ye bağlı, girişe bağlı türevi. Dolayısıyla fonksiyonun kendi türevi olmuş oluyor. Dolayısıyla şu kolay. Şunu da bulduk. Şimdi şundayız. Bu da aslında çok zor değil.
+
+347
+01:21:24,243 --> 01:21:50,243
+Bu konuda kullandığınız hatayı ölçme fonksiyonuna, min square error, hinch veya min absolute error ne kullanıyorsanız. Şuradaki aktivasyon fonksiyonuna bağlı ama buradaki bunlar gibi bir şeye bağlı değil. Herhangi bir network'te hep S'nin W'ye bağlı. Alacağınız şey aynı oluyor. Çünkü S'nin formülü belli, W'ye göre olan karşı derivatifi belli.
+
+348
+01:21:52,627 --> 01:21:53,667
+Şuradan ilerleyelim.
+
+349
+01:21:56,967 --> 01:21:58,387
+Şunun için, şimdi şuradayım.
+
+350
+01:21:59,688 --> 01:22:00,407
+S'yi yazayım.
+
+351
+01:22:01,327 --> 01:22:03,547
+Şu şurası için, preaktivasyon değerini.
+
+352
+01:22:04,507 --> 01:22:16,387
+Gelen, işte bir öncekinden gelen çıkış, güncel olarak şu aralıkta olan, 3. aralıkta olan, yani 2 artı 1'den, weight değerlerinin çarpımlarının toplamı.
+
+353
+01:22:16,987 --> 01:22:19,167
+Bakın burada B demiş artık, V3 dememiş.
+
+354
+01:22:19,796 --> 01:22:30,615
+V3 yok zaten. İşte V kaçsa. Burada da B demişiz. Bazen B bazen de bu olarak görebilirsiniz diğer kaynaklarda da. Ama bir ile çarpılıyormuş gibi. Sabit bir C değeri var yani burada.
+
+355
+01:22:31,556 --> 01:22:31,935
+Bir yaz.
+
+356
+01:22:33,203 --> 01:22:52,623
+Sonra bunun partial derivatörünü v'ye göre aldığı zaman yine az önceki mesele. Bunu zaman zaman ziyaret ediyor oluyoruz bu özelliği. Sadece buna bağlı türev sadece bir tane toplam termünde, çarpımdan gelen toplanan termde olduğu için geriye kalanları hep sıfır oluyor. Şunlar. Dolayısıyla sadece bu olmuş oluyor.
+
+357
+01:22:54,771 --> 01:23:08,131
+Yani ilgili hangi şeyde ise ona bağlı olan anlam tünev sadece bir tane elemanda olduğu için öbürleri sıfır. Dolayısıyla üçünü de bulmuş oldum. Bunu da buldum. Çarpımı yazabilirim artık.
+
+358
+01:23:14,996 --> 01:23:16,655
+Chain rule'u tekrar yazdım şuraya.
+
+359
+01:23:18,576 --> 01:23:21,216
+Şu sondaki şey güncellemesi için.
+
+360
+01:23:22,655 --> 01:23:24,496
+Bütün elde ettiğim değerleri bir araya getirdim.
+
+361
+01:23:26,775 --> 01:23:34,415
+Şimdi bu benim artık hatamı minimize edeceğini düşündüğüm delta rule'a gitmesi gereken değer.
+
+362
+01:23:36,155 --> 01:23:39,095
+Gradient descent'den delta rule'a geçersek eğer,
+
+363
+01:23:39,988 --> 01:24:03,788
+Veyt'in güncel değerini, aslında şurada bir şey var. Ben bunu böyle şey gibi yazmışım ama şurada şöyle bir şapka olsa iyi olur. Güncellenecek olan veyt. Güncel veyt'e bir sabit uyarınca çarpılan şu partial derivatifin, burada çıkarılmış, toplanabilir de. Dediğim gibi hata fonksiyonu alınan işarete var mı?
+
+364
+01:24:05,684 --> 01:24:31,664
+Bir güncelleme işlemi yapılması gerekiyor. Burada şöyle bir katsayımız var. Bu Learning Rate. LR diye kısaltmasını görürsünüz Python'da falan. Bunun ne olduğunu, ne işe yaradığını birazdan bir genelleştirme ispatını yaptıktan sonra söyleyeceğim. Learning Rate herkes biliyordur zaten ama. Daha ziyade uygulama perspektifinden ne işe yarıyor.
+
+365
+01:24:32,340 --> 01:24:52,340
+Sabit alabiliriz. Kendimiz bir fonksiyon yazıp eksponansiyel olarak değiştirebiliriz. Ama bunların her birinin olabildiğince adaptif yapılması lazım. LR için. Neden? Çünkü bu bir optimizasyon problemiyse aslında. LR'nin farklı versiyonları için aslında en iyi...
+
+366
+01:24:54,996 --> 01:25:06,615
+Şu şapkalı W için benim network'ümün verdiği bir performans var. Bunu en iyileştirmek için de LRE'yi de sabit almak yerine uygun şekilde seçmem lazım.
+
+367
+01:25:08,115 --> 01:25:21,756
+Şimdi bütün kaynaklarda şöyle bir terim görürsünüz. Bu işte E parşal derivatif bölüğü parşal derivatif Fiyenin YS parşal derivatif bölüğü çarpımları demek. Hep onu sembolize ediyor.
+
+368
+01:25:23,347 --> 01:25:40,347
+Aslında şunlar gittiği zaman şunlar kalıyor. Şu yani. Şu ifadeyi şu sigma ile gösteriyorlar. Bir amacı var onun. Şu delta ru'u 4.14'da 4.16'da güncellersek eğer, şuradaki şu şey aslında sigma ile...
+
+369
+01:25:40,979 --> 01:26:02,659
+Şu Y'nin çarpımı. Neden sigma ile Y'nin çarpımı? Çünkü hatırlarsanız şunun 3 tane terimi vardı. İkisi şuydu. Biri bu, diğeri bu. Bir üçüncüsü vardı. O da S'nin W'ya bağlı türevi. O da Y'ydi zaten. Dolayısıyla şu partial derivatif E, partial derivatif W'dan gelen değer sigma'lı cinsinden yazılmış oldu. Niye böyle bir şey yaptığımızı şimdi söyleyeceğim.
+
+370
+01:26:11,060 --> 01:26:36,680
+Buraya kadar aslında, burada bir şey, küçük bir noktalı verim koyayım. Buraya kadar hep weight'in nasıl update edildiğini son bir örnek üzerinden hep böyle anlatılır. İnternetlik kaynaklar böyle gözüküyor. Biraz daha böyle derine inerek, gerçekten biz bunu implement ediyor olsak, bu fonksiyon tek başına en sağdaki çıkışla ilgili olan weight için geçerli olsa da,
+
+371
+01:26:37,747 --> 01:26:59,967
+Herhangi network'ün herhangi bir yerindeki weight'i güncellemek için kullanılabilecek bir fonksiyon değil. Sigma 10 için var aslında. Onu genelleştirebilir hale getirmek için var. Şuradan şuraya geçtik bir şey tanımlayarak. Aslında hiçbir şey yapmadık. Zincir kullanım içindeki iki çarpımı bir kat sayı ile ifade ettik.
+
+372
+01:27:00,627 --> 01:27:09,927
+Üçüncü çarpımı da getirdik, ekledik o yeni ifade ettiğimiz değere. Zincir kuralını kullanarak Delta Rule'u yeniden yazdık. Hiçbir şey yapmıyor.
+
+373
+01:27:15,764 --> 01:27:32,244
+Şimdi söylediğime geri döneyim. Şu genelleştirilmiş formül bu arada. Herhangi bir yerdeki, herhangi bir layer'daki, herhangi i'inci ve j'inci network weighti için güncelleme nasıl yapılacak onu söylüyorum.
+
+374
+01:27:33,024 --> 01:27:37,504
+Bu da f ile aktivasyon fonksiyonu türevi demişim prime ile birlikte.
+
+375
+01:27:38,484 --> 01:28:04,804
+Şu etaydı galiba. O işaretle herhangi bir layer'ı diğerleriyle de o ilgili layer üzerindeki kaçıncı elemandayım onu söylüyorum. Şurada şöyle bir genelleştirme yapmışım artık. Buna nasıl ulaştığımı şimdi söyleyeceğim. Bakın bir şeyin türevi gelmiş bu arada. Az önceki fonksiyon genelleşince bu hale gelmiş. Dolayısıyla layer'ın sonunda değilsem.
+
+376
+01:28:05,460 --> 01:28:27,779
+Bütün layer'ların en sonunda output'a bağlı bir retik güncellemiyor da aralarda bir şey yapıyorsam nedir onu genelleştirilmiş harika? Bu onu anlatıyor aslında. Buraları biraz karışık gelebilir. Ben bu slide'ları hocaya gönderirim. Sizinle de isterseniz birinize mail atarım. Bunları ben kendim çıkarmaya çalıştım. Hem birlikte bakmış oluruz şimdi. Var internette bir sürü yerde var ama.
+
+377
+01:28:28,144 --> 01:28:39,764
+Benden dinlemiş olursunuz. Belki kaydoluyor zaten. Sonra da dinlersiniz. Biraz böyle buraları anlamak zor olabiliyor çünkü. Hem Hoca da projeyi Backprop'la ilgili verecekmiş galiba. Belki işinize yarar.
+
+378
+01:28:40,764 --> 01:28:50,764
+Şimdi buradaki temel şey neydi? Chain rule'da artık. Total hatayı, total hata aynı evet. Ama herhangi...
+
+379
+01:28:51,828 --> 01:29:14,408
+İşte NOHL artı bir demiştin ya, iki hidden layer'da üçüncü aralığa denk gelen çıkışla ilişkilenen rate değil de arada bir yerdeyim artık. Geriye geriye gelmeye başladım. Dolayısıyla NOHL var sadece, artı bir yok. Chain rule'u ona göre yazdım tekrar. Burada şöyle bir şey yapıyorum. Artık genelleştirmiş olarak tek tek elemanların üzerinden gidebilirim.
+
+380
+01:29:14,836 --> 01:29:39,736
+Delta diyeyim ona, parçal derivatife. E1'den Y'yi, 2'den Y'yi ve burada Z demişim. Az önce T idi o, şimdi artık Z. Bir şekilde hepsinin toplamını yazabilirim. Burada herhangi şu törümü de şöyle S'ler cinsinden yazabilirim yine Chain Rule sayesinde.
+
+381
+01:29:50,515 --> 01:30:11,775
+Tekrar yazdım şunu. Şunu da tekrar yazdım. Şimdi şunlar birbirini götürebildiği için bu şekilde yazmıştım. Bunun özelliği şu, aslında şu ifadeyi bulurken benim sağ tarafımda kalan output'a yakın olan bir preaktivasyon değeri de benimle ilişkileniyor.
+
+382
+01:30:17,524 --> 01:30:39,200
+Sigma değerlerinin kendi içinde taşıması gereken, geride kalan, Propagate olan değerlerin de benimle birlikte gelebilmesi için bu önemli. Bunu da şöyle yazabilirim. Yine benden bir sonra olan aslında, yani Outlook tarafında kalan ama ben daha içeride kaldım. Girişe doğru gidiyorum. N-O-H-L ile. Bu sırada...
+
+383
+01:30:39,199 --> 01:30:49,180
+Bu ifadeyi de yine altta daha yakın olan bir sonraki layer'dan gelen değerler cinsinden yazabilirim. Aynı şey olmuş oluyor. Yine chain rule mantığında olduğu gibi.
+
+384
+01:30:52,559 --> 01:30:56,520
+Şu ifade cinsinden yazmışlarım. Yani şunu, aslında şunu.
+
+385
+01:31:02,387 --> 01:31:11,347
+Şöyle gösterdiğim şey yani ve aynı şekilde şurada. Şunu kullanarak ve şunu kullanarak şöyle yazabiliyorum.
+
+386
+01:31:11,347 --> 01:31:17,347
+Devamı var tabii bunun aslında ve şunu yani şunun tamamını şunu unutmuşum.
+
+387
+01:31:19,568 --> 01:31:24,347
+E1 için E2 için ET'ye kadar yazabilirim.
+
+388
+01:31:25,043 --> 01:31:32,664
+Burada Z demişim. Şu T olacak galiba. Yalnız söyledim az önce de. T çıkışım çünkü. Şöyle.
+
+389
+01:31:38,036 --> 01:31:49,296
+Şimdi optimize etmek istediğim şey burada. Şu ifadeyi az önce bulduğum şu ifadeyle güncelleyeceğim. Kalanlar aynı. Chain rule'daki ikinci ve üçüncü termler.
+
+390
+01:31:53,043 --> 01:32:03,123
+Şu komple kırmızıyla olan ifadeye gittim, fonksiyonun içine yazdım. Şurası, yani y'nin s'ye ve s'nin w'ya bağlı, chain rule'daki ikinci ve üçüncü elemanlar hala duruyor. Bu da yine şuna eşit.
+
+391
+01:32:04,023 --> 01:32:19,443
+Şu az önce getirdiğim hatalardan, sağdan bana propagate olarak gelmiş olan fonksiyon değerleri. Parşal derivatifler vasıtasıyla yazdığım değer. Tamamen hepsi birlikte.
+
+392
+01:32:19,904 --> 01:32:25,384
+e-total'ın partial derivatifi bölü, y'nin partial derivatifi anlamına geliyor.
+
+393
+01:32:32,884 --> 01:32:54,083
+Şimdi burada şöyle bir şey var aslında. E-total'ı kullandığım zaman, tıpkı hani içinde sadece bir tane buna bağlı term var, diğerleri toplam durumunda ve bu termler içinde yok. O genel kuralına bağlı olarak. Burada da aslında aynı şey. E-total bölü.
+
+394
+01:32:57,076 --> 01:33:12,536
+Parşı derivatif Y içinde söylenebiliyor. Çünkü içinde sadece E1 cinsinden bir ifade var. Birincisi için. İkincisi için E2 cinsinden var. Dolayısıyla biz bu ifadeleri bu ifadeyle güncelleyebiliyoruz.
+
+395
+01:33:16,372 --> 01:33:28,372
+Öte yandan bu e-total olarak yazdığım, aslında aynı anlama gelen, çünkü partial derivatifini yaptığım zaman diğerleri olmadığı ve sıfır olduğu için aynı kapıya çıkan.
+
+396
+01:33:29,052 --> 01:33:32,852
+Ama ben bunu daha genel elde yazabildiğim için bunu tercih ettiğim şu değeri.
+
+397
+01:33:32,852 --> 01:33:35,648
+Az önce söylediğim...
+
+398
+01:33:35,648 --> 01:33:59,947
+Sigma tanımını tekrar çağırarak, Sigma'lar cinsinden de yazabilirim. O zaman E-Total'i Sigma'lar cinsinden yazıyorum şu büyük parantezde az önce verdiğim ifadeden. Ve Sigma'lar cinsinden o büyük parantezimi güncelledim. İkinci ve üçüncü parçalari ve parametrelerim duruyor hala. Parantezin içinde S'nin Y'ye bağlı türevi var.
+
+399
+01:34:03,091 --> 01:34:13,212
+Aslında S'nin bu defa Y'ye bağlı türevi, tıpkı S'nin W'ye bağlı türevinde olduğu gibi, bu defa bana Y'ye değil de W'yu verecek.
+
+400
+01:34:13,212 --> 01:34:24,412
+Dolayısıyla o parantezlerdeki ifadelere de bu parşal derivatif S ve parşal derivatif Y'ye sağ tarafa yazdığım weightlerle güncelleyebilirim.
+
+401
+01:34:27,796 --> 01:34:52,615
+Dolayısıyla sigmalar, weightler parantezin içinde kaldı şimdi. Yine hala ikinci ve üçüncü chain rule termlerim şurada duruyor. Şurada ve şurada. Ve hala en son adımda elde etmeye çalıştığım şey toplam hatanın ilgili herhangi network'ün herhangi noktasındaki weight için güncel hali. Burada artık genelleştirebilirim bunu.
+
+402
+01:34:53,300 --> 01:35:14,160
+Sigma'lar elimde var. Arka layer'da T olduğu için T'ye kadar. Alfa törmüne bağlı toplam sembolünde birden T'ye kadar onu yazdım. Aynı şekilde bunlar weightlerle çarpılıyor. Bir önceki layer'dan gelen weightlerle çarpılıyor.
+
+403
+01:35:16,212 --> 01:35:32,852
+Propagation işlemi burada oluyor. Yani bir önceki adımdan gelen değerlerim burada çarpılacak ve diğer chain rule elemanlarıyla ikinci ve üçüncü dediğim çarpılarak bana ilgili partial derivatif delta yani e bölü delta w'yu verecek.
+
+404
+01:35:35,956 --> 01:35:57,796
+Şu şeyi tekrar çağırdım buradan. Delta rolü. Aynı şey aslında. Sadece şurada az önce başka bir weight optimizasyonu vardı. Burada artık oralarda bir yerlerde bir şey var. Ama daha önemli olarak bu çıkışa yakın bir şey değil. Çıkıştan da propagate olarak gelmiş olan şu sigma yeniden tanımlaması halsasıyla gelen kat sayılar var.
+
+405
+01:35:58,336 --> 01:36:03,436
+Orada şu yeşille gösterdiğim ifadeyi, kendi ifadesini yazdığım zaman şöyle uzunca.
+
+406
+01:36:03,956 --> 01:36:08,236
+Size en başta verdiğim o genelleştirilmiş kuralı elde etmiş oluyorum aslında.
+
+407
+01:36:09,696 --> 01:36:12,396
+Buraya isterseniz eta din, isterseniz artı bir din fark etmez.
+
+408
+01:36:12,616 --> 01:36:16,916
+Şu bir önceki ile bir sonrakinin arasındaki ilişki göstermek için iyi oluyor böyle yazmak.
+
+409
+01:36:18,296 --> 01:36:26,136
+Fonksiyonun türevi ile y'nin kendi değeri şu ve şu için hala orada eta ile çarpılıp weight güncelleniyor.
+
+410
+01:36:26,136 --> 01:36:31,396
+Bu fonksiyonu artık herhangi bir noktada weight'i güncellemek istediğinizde
+
+411
+01:36:32,115 --> 01:36:33,216
+kullanılabiliyor.
+
+412
+01:36:34,636 --> 01:36:36,376
+Çıkıştakinin formülüyle herhangi
+
+413
+01:36:36,376 --> 01:36:38,336
+içeridekinin formülü arasında fark var yani.
+
+414
+01:36:39,416 --> 01:36:40,435
+Çünkü çıkışta
+
+415
+01:36:40,435 --> 01:36:42,315
+propagate olan bir şey henüz yok ama
+
+416
+01:36:42,315 --> 01:36:44,336
+burada var. Tamam burası
+
+417
+01:36:44,336 --> 01:36:46,216
+biraz karışık gelmiş olabilir ama belki
+
+418
+01:36:46,216 --> 01:36:48,216
+hoca da başka bir şeyden anlatmıştır bilemiyorum.
+
+419
+01:36:49,475 --> 01:36:50,515
+Bir de buna bakarsınız
+
+420
+01:36:50,515 --> 01:36:54,136
+sizin için de bir şey olmuş olur.
+
+421
+01:36:54,456 --> 01:36:54,836
+Adım adım.
+
+422
+01:36:56,475 --> 01:36:58,256
+Şimdi LRE noktasına burada geri
+
+423
+01:36:58,256 --> 01:36:59,315
+dönmek istiyorum. Çünkü
+
+424
+01:37:00,020 --> 01:37:21,620
+Ben o minimum hata uyarınca bana gelen çarpımı, şurasını yani komple, eta ile çarpıyordum hatırlarsanız. Learning Rate ile. Bu Learning Rate'in seçimi önemli. Bunu sabit almak, çok büyük almak ve çok küçük almak belli başlı sorunları beraberinde getiriyor.
+
+425
+01:37:24,200 --> 01:37:25,920
+Mesela çok büyük alırsak ne oluyor?
+
+426
+01:37:27,988 --> 01:37:29,988
+Learning Rate'in çok büyük seçilmesi ne demek?
+
+427
+01:37:34,804 --> 01:37:39,184
+Çok büyük atlamalar yapıldığı için minimum noktayı kaçırma olasılığı doğuyor sanırım.
+
+428
+01:37:39,703 --> 01:37:44,344
+Aynen öyle. Global minimumu atlama ihtimali doğuyor. Lokale konverge olabiliyor.
+
+429
+01:37:45,444 --> 01:37:53,423
+Sabit almak ne yapıyor? Sabit alırsam ne oluyor? Aldığım sabit değerin boyutuna bağlı bu. Çok uzun sürebilir.
+
+430
+01:37:53,423 --> 01:38:00,844
+En iyisi bunu adaptif almak. Yani baktım hata azalıyor.
+
+431
+01:38:02,068 --> 01:38:10,828
+Ama hatanın azalması azalmaya başladığı zaman, dolayısıyla artık minimuma yaklaşmaya başladığım zaman benim adımlarımı da küçültmem lazım.
+
+432
+01:38:11,788 --> 01:38:20,188
+İşte Adam Optimization'lar, literatürde böyle yaklaşımlar var. Python'da direkt bazı frameworklerin içinde çalıştırabileceğiniz.
+
+433
+01:38:20,188 --> 01:38:26,988
+Şu keywordleri ararsanız internette Learning Rate Optimization diye.
+
+434
+01:38:27,423 --> 01:38:49,403
+3 tane çok kullanılan var. Onlara bakabilirsiniz. Burada şu solda mesela sabit anılan Learning Grade için, böyle Bulab Dejection gibi bir problem için, işte resimde bir şey bulmaya çalışıyoruz öyle söyleyeyim. Sabit anılan değerler için öğrenmenin, yani ekürisinin nasıl değiştiğini gösteriyor bana.
+
+435
+01:38:50,452 --> 01:39:12,572
+Yani 0.001'i almak lazım. Ya elle deneyeceğiz bunları tek tek. En iyisini bulmak için. 0.1'den veya 1'den başlayıp küçülte küçülte. Onar onar. Veya ben bunun eksponansiyel bir kod parçasını kendim yazacağım. Kendi denerken ekir üstü değerinin en hızlı hangisine eriştiğini anlaması için. Veya bunlar optimize olarak hazır var aslında. Veya onu kullanacağım.
+
+436
+01:39:16,243 --> 01:39:38,203
+Burada da söylediğimizi benzer şekilde söylüyor. Solda ve sağda çok küçük ve çok büyük olduğundaki problemler var. Biri çok uzun sürüyor, öbürü lokal minimayı kaçırıyor. Global minimayı pardon. Ortadaki uygun adımlarla ilerlemek, yani boyutu değişken doğru çözümü sunmuş oluyor. Hem hız açısından hem de etürüs açısından.
+
+437
+01:39:39,983 --> 01:39:43,343
+Şimdi Learning Rate'in değişimini kendim yazdım Yenki.
+
+438
+01:39:44,051 --> 01:39:56,511
+Yani uygulama saatleri hani belki böyle daha çok olsa bunları belki ödev olarak falan verebilirdik bir tane problem üzerinden. Geçen dönem biraz öyleydi. Bilmiyorum geçen dönemden ders alıp bir daha alan varsa hatırlar belki.
+
+439
+01:39:59,132 --> 01:40:07,511
+Learning rate'imin değişimini optimize ederken ben nasıl karar vereceğim? Burada loss'a bakıyorum aslında. Learning rate'in değişimiyle...
+
+440
+01:40:08,372 --> 01:40:19,372
+Hata nasıl değişiyor? Bunu ölçümleyerek ben iyi gidip gitmediğine karar verebilirim. Çünkü gradient descent'in fonksiyonu hatırlarsanız loss'a bağlıydı.
+
+441
+01:40:21,052 --> 01:40:28,372
+Learning rate değişirken eğer loss'um sabit kalıyorsa veya bir anda loss'um...
+
+442
+01:40:30,420 --> 01:40:39,679
+İstenilen düşün eğimine ulaşıyorsa, ona göre learning rate'in değişimine karar verebilirim. Bazı algoritmalar ise buna dayanıyor.
+
+443
+01:40:40,564 --> 01:40:59,644
+Gözlemleyebileceğimiz şey bu aslında. Bilmiyorum hoca hani direkt belki keres üzerinden bir problem mi verir yoksa sıfırdan kodlar mısınız network'u bilemiyorum ama eğer öyle bir durum söz konusu olursa learning rate kendinizin yapması karar vermeniz gereken monitör etmeniz gereken şey loss. Yani learning rate değişimine bağlı loss.
+
+444
+01:41:06,479 --> 01:41:07,479
+Şimdi...
+
+445
+01:41:06,420 --> 01:41:21,859
+Birazdan bir örnek göstereceğim. Kodsal tarafı da var, bakarsanız kendiniz. En temel problemin çözümünü Multinale Perseptor'una yaparken birkaç implementasyon notu ile birlikte sonra da bitireceğim.
+
+446
+01:41:22,979 --> 01:41:33,299
+Weight Initialization demiştik hatırlarsanız. Single Narrow'un en başta weightlerini belirlerken isterseniz sıfır alın, isterseniz random belirleyin demiştim. Bunun bir aslında matematiği var arkasında.
+
+447
+01:41:34,260 --> 01:41:49,164
+Xavier Initialization diye geçiyor. Bu kişilerin yaklaşımı da, iki kişi galiba bu şeyler, Kanadalı iki araştırmacı. Yeni, yani çok da eski dil paperları ama bazı frameworklerde...
+
+448
+01:41:49,619 --> 01:42:16,039
+Çokça kullanılıp onların kendi isimleriyle galiba parametreyi çağırdığınız zaman initialize edebiliyorsunuz veikleri. Yani şunu söylüyorum, forward pet'e başlayacaksınız, datayı verdiniz, hangi veiklerle çarpacaksınız en başta? Optimizasyon falan yok daha. İlk initial değerlerinin olması gerekiyor. Tamamen sıfır almak, tamamen bir almak. Yani bazen problemi hiç çok uzun süre epochlar koştursanız da çözmüyor. Ya Gaussian Distribution'dan kendiniz sample edeceksiniz ya da
+
+449
+01:42:16,372 --> 01:42:27,391
+Her bir layer'ın size'ına bağlı bir range belirleyip bu range'den random sample edebilirsiniz. Şu birinci onu söylüyor aslında. Weight Initialization için bu sabit bir fonksiyon yaratmışlar.
+
+450
+01:42:27,391 --> 01:42:42,391
+Diyor ki bu range'den alırsanız genel olarak layer size'ına bağlıdır. Ve bu layer size'ından elde edilen size'a bağlı bu range'den seçilen weight'ler her zaman sizi...
+
+451
+01:42:43,507 --> 01:43:04,068
+Doğru sonuca götürür. Yani doğru sonuca götürür derken gidip de 100 bin epoch gitmenize gerek kalmaz. Birinci şey bu. Birinci implementasyon notu bu. Yani rate'lere herhangi bir problemi bilmiyorum. Hiç şey yaptınız mı bu arada arkadaşlar? Herhangi bir sıfırdan kodunu mesela exor problemi için falan yazma durumunuz oldu mu?
+
+452
+01:43:11,667 --> 01:43:14,587
+Hoca Perseptron'u ödev olarak vermişti.
+
+453
+01:43:15,667 --> 01:43:16,887
+Hangi problemi çözmek için?
+
+454
+01:43:18,507 --> 01:43:24,688
+Harf tanıma. Üç farklı boyuttaki harfleri tanımak için Perseptron koduyu aldırdı.
+
+455
+01:43:25,228 --> 01:43:32,568
+Peki. Aslında şey yaptınız. Kendiniz nöronun çarpımının toplamını kendiniz kurdunuz. Hazır bir şey kullanmadınız.
+
+456
+01:43:33,087 --> 01:43:34,068
+Yok yok. Kendimize.
+
+457
+01:43:34,448 --> 01:43:37,868
+Tamam. Süper. Mesela weightleri nasıl initialize etmiştiniz orada?
+
+458
+01:43:39,667 --> 01:43:54,627
+Yani sıfırdan başlattık ama aklıma farklı şeyler de gelmişti. Acaba desem ne olur diye. Ama en sonunu denemedim. Genel olarak kitaptaki örneği baz aldığımız için sıfırdan başlattım ben şahsen.
+
+459
+01:43:54,627 --> 01:44:02,627
+Yani sıfır değeri verdiniz hepsini enişe olarak değil mi? Evet. Bazı problemler için mesela, tam hatırlayamıyorum ama galiba...
+
+460
+01:44:02,944 --> 01:44:25,164
+Şu az önce gösterdiğim benim kırmızılı sarılı bir işte iki linear separable data vardı. Ayırmak için kullanılan. Orada mesela random değerler sample etmiştim ben o clusterları yaratmak için. Bir de bir koridor yarattım böyle SVM'in sınıfladığı bir koridor gibi. Margin yani. Keyline geçebilsin diye.
+
+461
+01:44:25,779 --> 01:44:47,439
+Orada değerler çok büyük falan seçilince böyle weightleri sıfır almak o bir sürü epoh hiç doğru sonuç getirmiyordu. Yani problemin cinsine göre en başta belirlediğiniz initialize ettiğiniz weightler önemli. Buna Xavier Initialization diye geçiyor. XAvier diye yazılıyor. Bakarsanız eğer onların Montreal galiba.
+
+462
+01:44:47,956 --> 01:45:15,956
+Kanada'dan iki kişi. Olmadı ben bu site paylaşırken tam bu sayfaya onun linkini koyarım. O paypere bakarsanız eğer weightlerin nasıl initialize edildiği ile ilgili bir bilgi var. Çünkü daha büyük problemlerde bu baya önemli. Bir de Python'da herhangi bir framework kullanıyorken bazı parametreler var. Adam, işte Xavier falan gibi isimler var. Bunların ne anlama geldiğini bilmek lazım. Bu bir o açıdan önemli. Bu iki biraz sonra anlatacağım şeyle ilgili aslında. Veri madenciliği alan veya almış olan...
+
+463
+01:45:15,956 --> 01:45:37,996
+Bu da yine bir implementasyon notu bence. Çünkü elimizde resimler olduğunu bilmiyorum yine kullandığınız harf tanımada siz nasıl yaptınız. Sisteme direkt elinizdeki değerleri verdiğiniz zaman bir feature falan çıkarmıyor. CNN falan yok. Perceptron gibi yani aynen.
+
+464
+01:45:39,859 --> 01:45:58,159
+Input Değer olarak sisteme verdiğinizde initialize ettiğiniz veya sıfır aldığınızda, her neyse waitlerle çarpıldığında, sıfır aldığınızda o problem değil ama random initialize ettiğiniz zaman sıkıntı. Çarpıldığı zaman elinizdeki veriler, örneğin elinizdeki veriler, x'e eksenindeki pozisyonlar.
+
+465
+01:45:58,528 --> 01:46:15,768
+25, 38, 42 gibi artılı eksili değerler. Çarpıp topladığınız zaman bunları, aktivasyon fonksiyonuna da gönderdiğiniz zaman preaktivasyon değerini örneğin tangent hiperbolik ve örneğin sigmoid kullanıyorsanız, relu değil ama. Ne gibi bir problem olur?
+
+466
+01:46:20,275 --> 01:46:22,115
+Ne tarz bir problemle karşılaşırsınız?
+
+467
+01:46:24,695 --> 01:46:26,415
+Şurada sayısal değerlerimi verdim.
+
+468
+01:46:26,535 --> 01:46:27,295
+Weightlerle çarptım.
+
+469
+01:46:27,355 --> 01:46:29,395
+Diyelim ki weightlerim de random initialize oldu.
+
+470
+01:46:29,535 --> 01:46:31,155
+Hadi 0-1 arasında olsun yine de.
+
+471
+01:46:32,155 --> 01:46:33,675
+Ama buradan büyük büyük değerler geliyor.
+
+472
+01:46:34,375 --> 01:46:37,895
+Ve burada diyelim ki benim 10 bin tane nöronum var.
+
+473
+01:46:40,615 --> 01:46:44,076
+Şuraya gelen 10 bin tane çarpılmış değerin toplamı var yani şurada.
+
+474
+01:46:45,115 --> 01:46:46,235
+F fonksiyonu da gidecek bu.
+
+475
+01:46:46,235 --> 01:46:47,355
+Evet bir şey diyor galiba.
+
+476
+01:46:48,819 --> 01:46:50,819
+Hesaplama taşması olabilir mi?
+
+477
+01:46:50,819 --> 01:46:51,679
+Evet, aynen öyle.
+
+478
+01:46:53,519 --> 01:47:00,219
+Şu preaktivasyon fonksiyonu verdiğimiz zaman hatırlarsanız örneğin bu bir sigmoid ise şöyleydi galiba.
+
+479
+01:47:02,219 --> 01:47:03,840
+Maksimum 1, minimum 0.
+
+480
+01:47:05,139 --> 01:47:08,619
+Ama o zaman belli bir yerden sonra ben hep 1 alıyorum burada o zaman.
+
+481
+01:47:10,380 --> 01:47:12,819
+Dolayısıyla bazı aktivasyon fonksiyonları için...
+
+482
+01:47:14,644 --> 01:47:32,944
+Bir konverjans durumu ortaya çıkabilir. Çünkü toplam hep zaten şu toplam değeri. Bir yerden sonra büyük bir değer. Çünkü bir sürü değeri topluyorum. O zaman hep bir alıyorum burada. Veya eksiye hep sıfır alıyorum. Dolayısıyla sürekli saçürasyona giriyor.
+
+483
+01:47:33,652 --> 01:47:57,652
+Bunun için de elimdeki veriyi, rate'leri initialize ettiğim mantıkta verirsem daha iyi olur. Genelde bu rate initialization işi size genelde böyle 0-1 arasında küsurlu değerler getiriyor. Yani positive, negative, unity interval içinde düşen. Düşmese bile büyük değerler gelmiyor en azından çok fazla. Onun ötesinde...
+
+484
+01:47:58,560 --> 01:48:12,460
+Direkt input'tan kendiniz datayı verirken şuraya, işte şu perseptörün önündeki harf denoada olduğu gibi, harf dediğiniz şey bilmiyorum piksel mi veya datanın kodlanmış bir şeyi miydi ama problemi bilmiyorum.
+
+485
+01:48:12,460 --> 01:48:21,200
+Eğer bu örneğin bir resmin piksel değeri olursa, o zaman buraya direkt piksel değerinin kendisini yazmak aktivasyon fonksiyonunda.
+
+486
+01:48:21,779 --> 01:48:46,440
+Satürasyonu sizi götürebilir. O yüzden ne yapıyoruz? Elimizdeki piksel değerlerinde 0-1 arasında memf ederek min-max normalizasyon yapıyoruz. Bütün hepsini 255'e bölüyoruz. Örneğin 8 bitlik grayscale imaj kullanıyorsak en büyük değerim neyse her şeyi en büyük değerime bölüyorum yani kısaca. Minimum değerim 0 nasıl olsa bir görüntüde. Ama 0 değilse de o zaman formülü şu.
+
+487
+01:48:48,083 --> 01:49:03,883
+Yani elimdeki veriyi bir aralığa, bir intervala map etme. Sıfırla bir arasında. Sadece pozitif olunarsa görüntü olduğu için. Şundan bahsetmiştim zaten. Buradaki mesele tamamen batch kullanmazsanız çok uzun sürer ve genelleştirme problemini desteklemezsiniz.
+
+488
+01:49:07,859 --> 01:49:09,039
+Soru sola var mı buraya kadar?
+
+489
+01:49:12,532 --> 01:49:15,272
+Kısa bir kısım kaldı. Onu da söyleyeyim, bitireyim.
+
+490
+01:49:20,979 --> 01:49:38,819
+Şimdi literatürde böyle ufak data setler var. Kendiniz denemek isterseniz bence deneyin. Belki bu konuda çalışan kişiler vardır, bunlar basit gelebilir ama ilk baş için çok bir sürü insanın dersi aldığı bir ortamda fena bir örnek değil bence.
+
+491
+01:49:39,939 --> 01:49:46,019
+Derse yeni başlayanlar varsa kesinlikle bunun muhakkak kodunu yazıp denesinler veya hazır kodu anlamaya çalışsınlar.
+
+492
+01:49:46,804 --> 01:50:00,724
+En bilinen örnek MNIST'tir. Size işte dersin ortalarında söylediğim el yazısı dataseti. 90'lı yılların sonundaki çalışılan dataset. Yan ve Kun diye bir araştırmacının Derin Öğrenme ile çalışan.
+
+493
+01:50:02,564 --> 01:50:11,624
+Kişilerin el yazılarından 0'dan 9'a kadar rakamların o 10 tane label'a bağlı bir veri seti hazırlanıyor.
+
+494
+01:50:12,083 --> 01:50:18,083
+İşte herkes bir yazıyor, herkes iki yazıyor. Herkesin yazı karakteri farklı. Dolayısıyla böyle bir dataset oluşturuluyor.
+
+495
+01:50:18,083 --> 01:50:22,083
+28 ile 28'lik 784 tane Grayscale pikselden oluşuyor bu.
+
+496
+01:50:23,028 --> 01:50:34,888
+8 bit'lik Brexcale. Burada bir örneği var. Çok güzel göstermiş bunu. Çünkü Multi-Layer Perceptron kullanarak M-List'i sınıflamanın bir görselini koydum az sonra.
+
+497
+01:50:35,568 --> 01:50:46,068
+Input'a ne veriyoruz sorusunun cevabı. Tabii ki CNN ve daha ileri ağları kullanırken bambaşka meseleler var. Önünde sizin için feature'ları extract eden, convolutional layer'lar var.
+
+498
+01:50:46,588 --> 01:50:50,868
+Hiç bunlara gerek kalmıyor. Resmin kendisini veriyorsunuz. O sizin için resimden çıkarılacak olan anlamları.
+
+499
+01:50:51,028 --> 01:51:03,568
+Kendisi oluyor aslında. Ama biz burada öyle bir şey yapmıyoruz. Bugünkü amacımız backpropagation anlamakta aslında. O sebeple bu uygulamayı da multilayer perceptron anlattığımızın üzerine kuralım.
+
+500
+01:51:04,408 --> 01:51:11,768
+MNIST dataset'lerden biri bu arada. Başka dataset'ler de var. Birazdan bahsedeceğim. Weight'leri varsayın ki bir şekilde initialize ettim. Sol üstteki gibi.
+
+501
+01:51:12,275 --> 01:51:36,855
+Elimde weightler bekliyor yani benim. Ama weightleri initialize ederken de, şu size eta, size eta bir dediğim, hangi layer'ın weightini initialize ediyor ki, ediyorsam onun önünde arkasında kalan layer size'larını da dikkate alıyorum. Kaç tane nöron var yani. Dolayısıyla benim en baştan neyi belirlemem lazım bunun kodunu yazıyorsam? Kaç tane hidden layer kullanacağım? Her bir hidden layer'ın içinde kaç tane nöron olacak?
+
+502
+01:51:37,311 --> 01:51:45,511
+En baştaki parametrelerim bu, belirlemem gereken. Çıkış, output layer neye bağlı? Kaç tanedir output layer burada?
+
+503
+01:51:47,391 --> 01:51:51,511
+Classification problemi bu. Sayı, rakam sınıflıyorum.
+
+504
+01:51:52,851 --> 01:52:03,612
+Aynen öyle. Amacım sayısal olarak veriler elde etmek çıkışta. Nümerik değerler elde etmek. Bu nümerik değerlere göre de
+
+505
+01:52:04,148 --> 01:52:17,588
+Ve çok büyük ihtimalle dominantlığına göre hangi nöronun örneğin sayısal değeri beklediğime yakınsa örneğin daha büyükse diğerlerinden bir kontrol mekanizmasıyla onu diyeceğim ki bu nöron şu sayıdır.
+
+506
+01:52:18,048 --> 01:52:21,408
+Dolayısıyla bunu diyebilmek için de her bir nöronun bir sayı temsil ettiğini varsaymam lazım.
+
+507
+01:52:21,408 --> 01:52:25,888
+Bir de regression problemi var. O daha zor buna göre.
+
+508
+01:52:26,387 --> 01:52:52,547
+Ama bu classification, görüntü işlemecilerin çok çok kullandığı, regresyonda da bir fonksiyon var elinize, onu benzetmeye çalışıyorsunuz. Bir miktar daha zor buna göre. Bu elinizdeki 10 sınıfa göre 10 verinin sınıflaması. Dolayısıyla çıkışta 10 tane nöronumuz var. Birinci nöron sıfır sayısına, ikincisi 1'e, üçüncüsü 2'ye, sonuncusu 9'a, 9 ile ilgili bilgi taşıyor.
+
+509
+01:52:54,260 --> 01:53:20,119
+Girişe verdiğim değerler az önce gösterdiğim şu grayscale pikselleri değerleri. Ama min-max normalization yapıyorum ki işte buradaki mesele yani uç değerler geldiğinde örneğin büyük piksel değerleri geldiğinde weightlerle çalkıp şuraya şu nörona geldiği zaman satürasyon problemi olmasın diye. Çünkü örneğin sigmoid kullandıysam range'im 1 ile 0 arasındaydı. Hatırlarsınız aktivasyon fonksiyonunun y değerlerinin range'i.
+
+510
+01:53:21,300 --> 01:53:22,239
+Onu da önledim.
+
+511
+01:53:22,500 --> 01:53:23,760
+Rankleri de initialize ettim.
+
+512
+01:53:25,140 --> 01:53:26,480
+Layer sayısına ve
+
+513
+01:53:26,480 --> 01:53:28,860
+nöronlara karar verdim. Çok bilinen bir problem
+
+514
+01:53:28,860 --> 01:53:30,840
+olduğu için literatürde genelde
+
+515
+01:53:30,840 --> 01:53:32,560
+iki layer 1024-1024
+
+516
+01:53:32,560 --> 01:53:34,980
+yani iki tane hidden layer 1024-1024
+
+517
+01:53:34,980 --> 01:53:36,760
+birinde 97 civarı sonuç
+
+518
+01:53:36,760 --> 01:53:38,680
+veriyor. Çıkışta da 10 tane var.
+
+519
+01:53:39,079 --> 01:53:40,619
+Çıkışa zaten problemin
+
+520
+01:53:41,024 --> 01:53:59,963
+Bu tipine bakarak karar verebildim. Giriş zaten beni neyle restrict etti? Elimdeki dataların, feature demeyeyim burada feature değil aslında bunlar ama feature'ları ben piksel değerleri olarak kabul ettim. Kaç tane giriş nöronum var? Input layer size'ım ne yani?
+
+521
+01:54:00,644 --> 01:54:01,863
+28 x 28.
+
+522
+01:54:01,863 --> 01:54:07,323
+Aynen öyle. 28 x 28. Yani bütün görüntünün içindeki piksel sayısı. Satırda ve sütundaki.
+
+523
+01:54:08,692 --> 01:54:32,711
+Boyutun çarpımı. Datasetim burada. 60 bin tane training, 10 bin tane test set elemanı var bu datasette. Doğru hatırlıyorsam. Python'da tabii ki single line code'da bunu direkt çekebiliyorsunuz. Bir link koydum. Orada örneği var. Bakarsınız. Burada bir şey soracağım size.
+
+524
+01:54:34,931 --> 01:54:56,211
+Şimdi bunu mesela biz gitsek, şimdi benden sonra şurada bir yerdeki link'e tıklayıp şuna gitsek, run etsek, orada güzel anlatıyor gerçi ama direkt böyle network üzerinden bunu run ettiğimiz zaman bazı detayları atlayabiliyoruz. Bu derin öğrenmenin de sıkıntısı bu. Herkes bir şey yaptığı için çok üst seviyeden bakılıyor. Bazı noktalar kaçabiliyor. Mesela sorum şu.
+
+525
+01:54:57,395 --> 01:55:14,975
+Elimde sayısal değerler var sıfırdan dokuza kadar. 10 tane çıkışta nöron var. Ben her defasında bir forward path yaptığım zaman çıkışta nöron değerleri elde ediyorum. Hata fonksiyonu da diyelim ki min square error. Kullandığım fonksiyonu aynen devam ediyorum yani az önceki back prop anlatırken.
+
+526
+01:55:24,787 --> 01:55:33,127
+Elimdeki değerleri neyle kıyaslayacağım? Sayıların nömerik değerleriyle mi?
+
+527
+01:55:37,267 --> 01:55:38,067
+Nasıl?
+
+528
+01:55:39,107 --> 01:55:40,727
+Hedef matrisi oluşturmuyor.
+
+529
+01:55:41,287 --> 01:55:45,747
+Evet, aynen. Hedef matrisi oluşturacağız. Ama nasıl besleyeceğiz içini, neye bağlı olarak?
+
+530
+01:55:51,123 --> 01:55:58,163
+En optimum yolu bunun şu. Çıkışta kullandığınız aktivasyon fonksiyonunun örneğin sigmoit yine onun üzerinden gidelim.
+
+531
+01:55:59,384 --> 01:56:04,064
+Neydi sigmoitin y değerlerinin rengi?
+
+532
+01:56:04,684 --> 01:56:08,864
+Yani sigmoite ne verirsem vereyim. Maksimum olacağım değer 1, minimum olacağım değer 0.
+
+533
+01:56:10,203 --> 01:56:14,884
+Dolayısıyla 0-1 aralığında. O zaman ben şunu diyebilirim.
+
+534
+01:56:15,347 --> 01:56:29,047
+Ben bu sınır değerlerini kullanarak One Hut Enkoding yapabilirim. Yani bu şu demek, training sırasında train etmek ne demek? Ben sisteme verdiğim şu piksel değerlerinin hangi sayıya ait oldum? 3'e ait mesela az önce.
+
+535
+01:56:29,547 --> 01:56:42,807
+Forward Pet en başta başladı, weightleri initialize ettikten sonra kodum soldan sağa doğru çalışacak, çıkışa gidiyor. Çarpa çarpa pikselleri weightlerle veya nöron outputlarını weightlerle aktivasyon fonksiyonundan süzdüm, sona kadar geldim.
+
+536
+01:56:43,604 --> 01:57:10,984
+Burada ben şunu diyebilirim. Elimdeki nöronun output değerleriyle, yani actual değerlerle benim aslında kodun daha çalışmaya başlamadan önce hedef matrisi dediği arkadaşımızın veya benim expected değerler olarak belirttiğim bir veri yapısı tutmam lazım. Ve bu mantıklı olması lazım. Matematiksel olarak kıyaslanabilir olması lazım. Çıkıştaki aktivasyon fonksiyonunun range'i uyarınca benim esasen beklediğim şey şudur aslında.
+
+537
+01:57:11,572 --> 01:57:37,271
+Örneğin 3 sayısı için 0'ı, 1'i, 2'yi ve 3'ü yani 4. nöron sembolize eden nöronun çıkışının aslında maksimum değeri vermesi, diğerlerinin de minimum değeri vermesi lazım. Neye göre? Aktivasyon fonksiyonuna göre. O zaman ben maksimum değerin 1 olduğu diğerleri de 0 minimum değerleri olduğu için şöyle bir kodlama yapabilirim. Yani benim expected değerlerimi böyle kurgulayabilirim.
+
+538
+01:57:38,579 --> 01:58:03,939
+Vanathen Goding yaptım. 0, 1, 2, 3. nörona. 0, 1, 2, 3. nörona. Ki burada bu 0, 1, 2, 3. Evet aynen. 4. nörona pardon. 3 sayısı için. 1 yazdım. Öbürlerine 0 yazdım. Expectative'ımı böyle label ettim. Actual gelen değerlerim var. Şurada. Nöronun çıkışında. Bunları bunlarla kıyaslayabilirim. Kıyaslanabilirim. Evet matematiksel şeye de uyuyor.
+
+539
+01:58:06,260 --> 01:58:27,200
+İkisi arasındaki örneğin, işte MinSquare Error, ikisi arasındaki farka baktım. O MSE fonksiyonunu run ettim her biri için. İşte her bir renk için E1'den E, T'ye kadar, burada T değerim 10. 10 tane hatayı buldum. Backproba başlayacağım artık, geriye doğru gideceğim buradan. Az önce bahsettiğim adımların tamamı. Genelleştirilmiş weight'i kullanarak.
+
+540
+01:58:28,532 --> 01:58:52,811
+Sağdan sola doğru adım adım giderek ve önceki bilgileri de kullanarak, çünkü hatırlarsanız Sigma diye bir şey vardı ve o propagation'ı sağlıyordu bana. Onu da alarak girişe kadar weight'lerimi güncelleyeceğim bu resim için. Eğer tek tek her bir resimde bu stokastik gradient descent run ediyorsam, batch yapıyorsam o zaman ne yapacağım?
+
+541
+01:58:55,380 --> 01:59:20,420
+Şu renklerle belirttiğim errorları bulacağım. Bir yere kaydedeceğim. Diğer resmi alacağım training için. Onu yapacağım. Label'ı OneHotEncoding olarak elimde zaten var. Bu şekilde devam edip ortalama hata üzerinden örneğin 5 resim için, bad size'ın 5 ise tekrar backpropagation'ı ve waitupdate yapacağım. Bütün dataset'i tarayacağım. Birinci epofu bitirmiş olacağım.
+
+542
+01:59:21,076 --> 01:59:46,136
+Örneğin dataset size 50 ise 5 patch ile toplam 10 defa update işleminde bir tur dataset'i taramış olacağım ve birinci epoch'u bitireceğim. Bunu genelde epoch cinsinden, mertebesinden söylerler. Örneğin 200 epoch sonunda 200 defa dataset'i mini patch'lerle taradıktan sonra wait'lerin final hale gelmiş olacak training set uyarınca sonra elimdeki hiç training sesine tanıtmadığım testle de test yapmış olacağım.
+
+543
+01:59:49,076 --> 02:00:12,496
+Şu linkte bunun bir örneği var. Başka bir şeyde de buldum ben. Bir sürü örnek var yani. Colab'da falan denedim. Gayet basitçe çalışıyor. Tabii ki orada siz bir framework üzerinden bunları görüyorsunuz. Keras'ta iki satırda iki tane hidden layer'ı kurgulamış. Arkada ne çalışıyor? Back propagation'lar nasıl oluyor? Hiç onlara ait bir bilgi yok.
+
+544
+02:00:15,283 --> 02:00:30,663
+O yüzden bu bilgiler biraz anlamı açısından önemli gibi geliyor bana. Sadece Mnist yok bu arada. Daha değişik dataset'ler de var. Mnist Fashion var. Bilmiyorum projenizde hoca bir dataset verirse.
+
+545
+02:00:31,188 --> 02:00:53,967
+Onu kullanırsınız ama kendiniz denemek için bunlar değişik böyle uygulamalar. Bunların size'ları da çok küçük donanım. Ben örneğim, donanım çalışan, neural network'un donanımı üzerine çalışan kişiler için küçük size dataset'ler iyi oluyor. Büyük dataset'ler ve büyük network'lerin donanım tasarımı yapmak çok zor. Yani bir kişi bir doktoratezinde onu yapması neredeyse imkansız.
+
+546
+02:00:54,739 --> 02:01:20,579
+İşte Sifar var, yine bilinen. Renkli bu. Diğerleri gibi değil. Amnist ve Amnist Fashion. Amnist Fashion daha yeni. Hep böyle işte bununla yaptığım bir de Amnist Fashion var, bir de onunla test edeyim. Amnist Fashion daha zor bir problem. Bu renkli. Yine küçük saizlerden oluşuyor. Burada sayılar yok veya kıyafetler yok. Bu defa işte objeler var. Hayvan, obje, işte araç vesaire gibi.
+
+547
+02:01:23,891 --> 02:01:43,971
+Son bir, buna hazırlanırken benim dikkatimi çeken birkaç sizin okuyabileceğiniz, hep her kısmına değil ama giriş kısımları özellikle hoşuma giden birkaç yayın ve uygulama şeyi gördüm. Bir de şöyle bir şey var, daha önceden görmüşsünüzdür belki. Ben de böyle çok ileri networkleri bilen biri değilim. Generate Gun falan çalışmadım örneğin, bilmiyorum.
+
+548
+02:01:44,595 --> 02:02:10,995
+Ama burada bir miktar hem şeyin cevabı var. Bazı networklerin structure'ına ilişkin bilgi var. Hem de kendi içinde birinci katman ne, ara katman ne, öbür katman ne onu renklendirerek güzel bir map vermiş. Altta da linki var, bakarsanız. Bu kadar söyleyeceklerim benim. Sağ olun dinlediğiniz için. Sorunuz varsa alabilirim.
+
+549
+02:02:12,340 --> 02:02:16,280
+Teşekkür ederiz hocam.
+
+550
+02:02:16,820 --> 02:02:17,619
+Ben teşekkür ederim.
+
+551
+02:02:17,820 --> 02:02:20,360
+Teşekkürler hocam. Slide'ları paylaşabilirseniz sevinirim.
+
+552
+02:02:21,079 --> 02:02:25,960
+Tamam, peki. Ben hocaya da gönderirim ama istersin kim konuştu bir daha konuşsun.
+
+553
+02:02:25,960 --> 02:02:30,280
+Ben konuştum. Hocam, hocaya göndermeseniz iyi olur. Direkt bize gönderseniz daha iyi olur.
+
+554
+02:02:30,280 --> 02:02:32,300
+Tamam, olur. Fark etmez. Şöyle yapalım.
+
+555
+02:02:33,555 --> 02:02:59,675
+[e-posta]'e benim mail adresim. İsmim Sercan Soyadım Aygün. İnternetten bakarsan mail adresimi anlamadıysam. Avesiste mailim var. Bana mail atarsan eğer hatırlatma açısından ben de sana cevap olarak maile sunumumu eklerim. Sen de arkadaşlarını paylaşırsın. Bir şey yok galiba. Google Classroom'unuz herhalde yok. Yok WhatsApp grubumuzdan oradan paylaşırsın.
+
+556
+02:03:00,180 --> 02:03:01,420
+Tamam hocam, teşekkür ederim.
+
+557
+02:03:01,819 --> 02:03:27,439
+Bir ricam var sadece. Bu fonksiyonları ben kendim bazılarına arada anlattığım kısımları extraction yapıp ispatlayarak gittim. Hatam olabilir. Eğer bana dönerseniz çok sevinirim. Benim için de böyle bir iyiliği olmuş olur. Gözümden kaçan bir değil iki yazmışımdır falan. İnsan hata yapıyor yazarken. Mail atarsanız çok sevinirim. En başına ben sunumu mailime yazdım zaten. Hatta dur ona dur şuradan.
+
+558
+02:03:28,979 --> 02:03:30,579
+[öğrenci] mail'in bu bu arada.
+
+559
+02:03:31,019 --> 02:03:32,119
+Tamam hocam ben hemen atıyorum.
+
+560
+02:03:32,420 --> 02:03:32,779
+Peki.
+
+561
+02:03:33,380 --> 02:03:33,880
+Teşekkür ederim.
+
+562
+02:03:33,880 --> 02:03:43,960
+Bu kadar benim söyleyeceklerim arkadaşlar. Bitirebiliriz. Böyle planlamıştık zaten. İki saat aralı yaparız diye. Kolay gelsin hepinize. Hocam buralarda mısınız? Ben ders kapatayım mı?
+
+563
+02:03:47,796 --> 02:03:50,956
+Tamam, ben kapatabilirim. Bitti zaten bu günlük.
+
+564
+02:03:51,516 --> 02:03:52,196
+Teşekkürler.
+
+565
+02:03:52,756 --> 02:03:54,656
+İyi günler.
+
+566
+02:03:56,256 --> 02:03:57,296
+Teşekkürler hocam.

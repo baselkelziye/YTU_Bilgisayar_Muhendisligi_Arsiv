@@ -1,0 +1,1887 @@
+1
+00:02:20,467 --> 00:02:29,287
+Merhaba arkadaşlar. Biraz bekliyorum gelen olur mu diye. Biraz sonra başlarız.
+
+2
+00:02:30,507 --> 00:02:31,167
+Tamamdır hocam.
+
+3
+00:04:35,827 --> 00:04:39,827
+Aslında kalabalık da değilken...
+
+4
+00:04:52,596 --> 00:05:03,516
+Sizlere bir sormuş. Özellikle kullanmak istediğiniz bir yöntem varsa konuyu size seçtireyim mi? Bununla ilgili yorumunuz varsa alayım mı?
+
+5
+00:05:07,987 --> 00:05:23,447
+Hocam aslında iyiyordur. Yönteme bağlı kalmayıp daha geniş, çaplı bir araştırma olanağımız olursa en azından tezde kullanacağımız yöntemler açısından daha mantıklı olur ama sizin görüşünüz de tabii ki önemli.
+
+6
+00:05:23,447 --> 00:05:31,108
+Tamam, şimdi herkes belki böyle bir şey kendi üretemeyebilir.
+
+7
+00:05:31,504 --> 00:05:59,403
+Ben bir iki standart opsiyonda sunarım. Ama şöyle yapalım mı? O zaman aklında bir konu fikri olan hem uygulayacağı mimari açısından, yöntem açısından hem de kullanacağı veri setini düşünerek veri seti mevcut mu? Açık bir veri seti kullanabilecek mi? Veya elinde kendi verileri var mı? Onu da değerlendirerek.
+
+8
+00:05:59,504 --> 00:06:19,604
+Bana kısa bir mail atar mısınız? Hani ben projemde şunu yapmak istiyorum diye. Kısaca uygulamak istediğiniz yöntem ve veri setini nasıl temin etmeyi düşündüğünüz veya açık bir veri seti ise veri setinin linki, ismi gibi bir bilgiyle birlikte.
+
+9
+00:06:20,211 --> 00:06:34,932
+Bana bilgi verirseniz en azından özel bir ilgi alanı olanlar için o seçeneği sunmuş olayım. Kendi tanımlamayanlar için de ben atarım. Böyle yapalım o zaman.
+
+10
+00:06:36,084 --> 00:06:58,144
+Hocam bir de özür diliyorum. Bu proje için bizden beklenilenler, yapmamız gerekenler hani bir dokumentasyon halinde bize bildirilirse çok da iyi olur. Çünkü hocam hani projeye başladığımızda belli bir form olmadığımız için de belli bir format. Neye göre yapacağımız, nasıl ilerleyeceğimiz, hangi sonuçları elde edeceğimiz sizin beklentilerinizi tam olarak belirleyemiyoruz açıkçası.
+
+11
+00:06:59,220 --> 00:07:07,300
+Tamam, şöyle söyleyeyim. Aslında şeyde birazcık tanımlamıştım ama ödevde açık gelmedi mi size?
+
+12
+00:07:07,827 --> 00:07:31,027
+Yani analizleri yapmanızı bekliyorum. Biraz açık bırakmamın sebebi de bazen orada kendiniz yazdığınızda veya denediğinizde gözlemleyeceğiniz problemler olacak. Onları gözlemleyebildiniz mi? Görmek için de o kadar açık söylemek istemiyorum tek tek sorular halinde ama.
+
+13
+00:07:31,507 --> 00:07:53,528
+Burada şu anda konu için biraz serbest bırakayım sizi. Ondan sonra ama şeyi söylerim size. Sonuçları şu formatta en azından bunları içersin. Veri setiyle ilgili en azından şu bilgileri içersin diye bir şey tanımlamaya çalışırım. Olur mu uygun?
+
+14
+00:07:55,860 --> 00:07:59,560
+Benim için uygun hocam arkadaşlar da fikirlerini belirtiyse.
+
+15
+00:07:59,740 --> 00:08:03,259
+Söylesinler yoksa senin sorduğun şeyi doğru anladın mı?
+
+16
+00:08:04,080 --> 00:08:05,740
+Evet hocam doğradınız. Teşekkür ederim.
+
+17
+00:08:05,740 --> 00:08:10,080
+Tamam. Varsa arkadaşlar yorumlarınız.
+
+18
+00:08:14,163 --> 00:08:33,124
+Hocam arkadaşın söylediğine katılıyorum. Bazen yaparken tam olarak ne beklediğinizi kestiremeyebiliyoruz. Ödevde de kendi aramızda tartıştık bunları birazcık. Ortalama herkesin söyledikleriyle ortalama bir şey çıkarıp size vermeye çalıştık. O yüzden güzel olacaktır.
+
+19
+00:08:33,491 --> 00:08:53,192
+Tamam, onları bana da söyleyebilirsiniz, yazabilirsiniz. Çok çok sıkı tanımlamak istemiyorum. Merak etmeyin, lehinize olacak şekilde kullanıyorum gelen şeyi. Hani herkeste bir şeyler eksikse onu yokmuş varsayıyorum vesaire.
+
+20
+00:08:53,683 --> 00:09:11,624
+Aşırı da sıkı tanımlamayayım ben yine. Daha rahat değerlendireceğim. Ama hani şunlar olsun şeklinde söylerim. Genel bir şey tanımlarım. Yine de hala açık değilse geri bildirimde bulunun olur mu?
+
+21
+00:09:11,624 --> 00:09:20,263
+İşte o slide'ları paylaştım gördünüz mü? Mail atmadım size ama ders duvarında slide'lar var şimdi.
+
+22
+00:09:23,028 --> 00:09:42,148
+Evet hocam. Gördünüz değil mi? Görmeyenlere de söylemiş olalım. Onun dışında geçen hafta nasıl geçti ders? Başını dinledim ama sonrasında katılamadım. Anlaşılmayan bir nokta var mıydı? Backpropagation kafanızda oturdu mu?
+
+23
+00:09:44,628 --> 00:10:06,148
+Hocam, teori olarak hangi adımları izleyeceğimiz, hangi basamaklardan back propagation'a ulaşacağımız oturdu. Fakat bunu bizim uygulamamız gerekiyor. Kendi başımızın en azından bir matematik şekli olarak. Ama genel olarak ders faydalıydı. Hocanın sunumları da paylaştı bizimle. Bir arkadaş paylaştı grup üzerinde.
+
+24
+00:10:06,148 --> 00:10:10,348
+Ben bekledim. Benim şeylerin devamında o da var.
+
+25
+00:10:10,772 --> 00:10:36,172
+Ulaşamayan olduysa diye söylüyorum. Selcan hocanızınki de dahil sunumlar şu anda var duvarda. Diğer şey de aslında ders konuları gibi ve ders notları gibi bir bölüm var ama oradan eklemede problem var. O yüzden duvardan paylaşmak zorunda kaldım. En azından ben denediğimde çalışmıyordu.
+
+26
+00:10:36,628 --> 00:10:42,948
+O yüzden ders duvarında paylaşıyorum ne varsa. Orayı zaman zaman kontrol edin.
+
+27
+00:10:46,355 --> 00:10:47,635
+Teşekkürler hocam.
+
+28
+00:10:48,216 --> 00:11:05,995
+Tamam. Bir de belki size projede kullanmanız için bir iki tane eğitim dökümanı paylaşırım. İnternette de bolca var ama yine de biraz daha iyi olduğunu düşündüklerimden sizle paylaşırım.
+
+29
+00:11:11,903 --> 00:11:26,963
+Bana bildirin. Çıkmaz bir yere götürmeyecekse, size zorluk yaşatmayacaksa sizin seçtiğiniz konuyu genel olarak onaylarım diyeyim. Aksi durumda da ben bir iki alternatif söylerim size.
+
+30
+00:11:29,299 --> 00:11:49,119
+Bildiğim kadarıyla yine bu hafta sanırım konuşulacak bölüm içinde de final sınavını da projeyle devam edebiliyoruz. O yüzden derin öğrenme ağıyla yapacağınız bir uygulama bu haftadan veya önümüzdeki haftanın başından başlayarak.
+
+31
+00:11:49,471 --> 00:12:05,632
+Adım adım ilerletirsek, orada sizin de talep ettiğiniz şeye gelecek aslında. Bu da olsun, bunu da deneyin diye yönlendiririm sizi. Onunla da final sınavınızı da öyle tamamlamayı düşünüyorum.
+
+32
+00:12:08,572 --> 00:12:12,971
+Tamam, 20 kişi oldu. Herhalde başlayabiliriz diye düşünüyorum.
+
+33
+00:12:14,803 --> 00:12:30,824
+Geçen hafta biraz böyle mevcut derin öğrenme yöntemlerine yüzeysel bir giriş yapmıştım. Birazcık CNN'i konvonisyonel ağları bugün daha detaylı bakalım.
+
+34
+00:12:31,824 --> 00:12:37,524
+Rekürent ağlardan henüz bahsetmedim. Regülerizasyon falan birkaç tane.
+
+35
+00:12:37,936 --> 00:12:50,596
+Ayrı konu var bahsedeceğim. Onları önümüzdeki haftaya bırakıyorum. Bugün birazcık daha konvolüsyon özelinde konuşmuş olalım diye düşünüyorum.
+
+36
+00:12:50,596 --> 00:12:59,316
+Şimdi konvolüsyonel ağlarda farklı çeşit katmanlar var demiştik.
+
+37
+00:12:59,635 --> 00:13:20,556
+En önemlisi konvolüsyon katmanıydı. Burada istediğimiz sayıda filtreler, farklı özellikle filtrelerle oluşturduğumuz ve aslında bu filtrelerin uygulanması da konvolüsyon işlemi ile yapıldığı için adı konvolüsyon katmanı.
+
+38
+00:13:21,215 --> 00:13:25,516
+Konvolüsyonel katmanda filtreler uyguluyorduk.
+
+39
+00:13:25,759 --> 00:13:42,460
+Biraz daha multilayer perseptrom veya fully connected ağlardan farklı olarak bu filtreleri istediğimiz sayıda ve istediğimiz input bölgesine yansıyacak şekilde uyguluyorduk.
+
+40
+00:13:42,460 --> 00:13:44,399
+Yani filtrelerin boyutu kadar.
+
+41
+00:13:44,864 --> 00:13:58,084
+Bir yere datada karşılık geliyordu. Bu bir resim ise genellikle öyle oluyor. Görüntünün belli bir kısmına aynı filtreleri tekrar tekrar uyguluyorduk.
+
+42
+00:13:58,451 --> 00:14:22,471
+Bu şekilde uyguladığımız filtrenin de boyutuna bağlı olarak. Oradan birkaç tane daha aslında konvolüsyon ağları uygularken kullanacağınız strike parametresi gibi, işte filtre boyutu gibi, filtrenin tipi gibi bir takım şeyler, tanımlamalar çıkacak ama temel prensipte mantık buydu.
+
+43
+00:14:24,724 --> 00:14:28,464
+Birden fazla farklı filtre uygulayabiliyoruz demiştik.
+
+44
+00:14:29,384 --> 00:14:38,864
+Aslında görüntünüzde veya verinizde belirlemek istediğiniz özelliklerin gerektirdiği kadar çeşit filtre uygulayabiliyorsunuz.
+
+45
+00:14:39,283 --> 00:14:43,864
+O kadar çeşitte konvolüsyonel katmanınız olmuş oluyor.
+
+46
+00:14:44,724 --> 00:14:49,303
+Dolayısıyla tek bir konvolüsyon katmanınız yok istediğiniz kadar.
+
+47
+00:14:49,875 --> 00:14:54,015
+İhtiyacınız kadar konvolüsyon katmanı ekleyebiliyorsunuz.
+
+48
+00:14:54,015 --> 00:14:58,815
+Onun dışında neler vardı?
+
+49
+00:15:01,587 --> 00:15:24,587
+Relo ve Pulling katmanları vardı. Relo aslında yine neural networklerdeki aktivasyon fonksiyonumuzun yerine bir yerde geçiyor. Öğrenme için yine Back Propagation kullanıyoruz. Back Propagation'ın sırasında aslında Gradian'ın kaybolması problemini...
+
+50
+00:15:24,788 --> 00:15:33,967
+Aşmamıza da yardımcı olan Relu fonksiyonu, default olarak konvolüsyon ağlarda kullandığımız bir fonksiyon.
+
+51
+00:15:36,692 --> 00:15:57,771
+Konvolüsyon işlemini sadece görüntünün belli boyutlarına veya bir filtre boyutuyla kısıtladığımız için, Relu'yu da aynı şekilde her konvolüsyon katmanı için konvolüsyonun bağlı olduğu düğümlere etki edecek şekilde.
+
+52
+00:15:58,240 --> 00:16:20,779
+Ayrı ayrı şekildekine bakarsanız aslında şuradaki gibi sözle ifade etmeye çalışmayayım. Burada dört tane farklı filtrem var, konvolüsyon işlemim var. Bu işlemler veya bu düğümler resmimizde belli sayıda düğüme bağlı.
+
+53
+00:16:21,235 --> 00:16:28,696
+Bunun birebir aynısını tekrar resmin yine başka bir bölgesine yansıtıyoruz. Tekrar yansıtıyoruz.
+
+54
+00:16:28,696 --> 00:16:37,796
+Tek dikkat etmemiz gereken şey genelde mimaride mümkünse bir kesişim noktası olmasını istiyoruz.
+
+55
+00:16:38,635 --> 00:16:46,696
+Burada da gördüğünüz şu üçüncü düğme bakarsanız hem birinci konvolüsyon...
+
+56
+00:16:47,220 --> 00:17:14,400
+İşlemi bu düğme bağlı. Hem ikinci konvolüsyon işlemi. Benzer şekilde kesişimler olacak şekilde dağıtmışız. Sonra da bunların ardından bir relu katmanı geliyor. Bu da her bir konvolüsyon katmanının dikeydeki boyutuna bağlı olarak o kadar da relu işlemimiz var. Ondan sonra da pooling katmanı geliyor.
+
+57
+00:17:14,895 --> 00:17:32,295
+Pooling katmanının yaptığı şey de aslında bir boyut küçültme işlemi. Backpropagation ile yine eğitimimizi yapıyoruz. Dediğimiz gibi Relu fonksiyonunu hatırlıyorsunuz. Rectified Linear Unit.
+
+58
+00:17:36,051 --> 00:17:55,172
+Nöronun girdisinin aynen yansıtılması ama belli bir maksimum noktayla da sınırlanması şeklinde tanımlanan lineer bir fonksiyon kullandığımız şey.
+
+59
+00:17:57,031 --> 00:18:02,471
+Relu'nun sızması, liki relu dediğimiz bir kavram var.
+
+60
+00:18:02,832 --> 00:18:16,812
+Onu önlemek için de ek mekanizmalar var. Burada uygulamada karşılaşacağınız çeşitler benim söyleyeceklerimden daha fazla olacaktır mutlaka. Farklı farklı denemeler göreceksinizdir.
+
+61
+00:18:16,812 --> 00:18:23,132
+Ama standartta en azından bir relü katmanımız olması gerekiyor.
+
+62
+00:18:30,528 --> 00:18:35,288
+Üst ve alt sınırlarını belirlemeniz gerekiyor.
+
+63
+00:18:37,028 --> 00:18:44,688
+Cooling Layer dediğim gibi aslında boyut azaltma için kullandığımız bir katman.
+
+64
+00:18:45,248 --> 00:18:47,427
+Burada da varsaydığımız şey şu.
+
+65
+00:18:47,824 --> 00:19:05,483
+Bu kadar konvolüsyonu uyguladıktan sonra aslında neyin önemli olduğu ortaya çıkmış oluyor.
+
+66
+00:19:07,443 --> 00:19:20,483
+Buradaki belki dört nöronun özetini en ağırlıklı, ağır basan özelliği indirgeyerek tek bir nöronla ifade etme şansımız oluyor.
+
+67
+00:19:20,483 --> 00:19:23,463
+Bunu yapma sebebimizi de tahmin edeceksiniz.
+
+68
+00:19:23,963 --> 00:19:31,307
+Buradaki bütün back propagation sırasındaki toplamalar, çarpmalar sonra geri dönüp, gradyan hesaplayıp...
+
+69
+00:19:31,316 --> 00:19:51,255
+Ağırlık ayarlamalar gibi işlemleri azaltmış oluyoruz. Diğer yaptığımız şey de en sonunda Pulling Layer'dan sonra bir Pulling Connected Layer oluşturmak. O da aslında tamamen çıktıların etiketlenmesi için.
+
+70
+00:19:51,763 --> 00:20:09,824
+Kullandığımız bir şey. Pulling Layer'dan sonra tamam bir takım özellikler çıktı. Bunlara bakıp biz bu resme veya bu girdiğe nasıl bir etiket atayacaksak veya bir sınıflama yapıyorsak, kaç tane sınıfa ayıracaksak.
+
+71
+00:20:10,228 --> 00:20:16,468
+Çıktı katmanında da o kadar nörondan oluşan bir katman oluşturuyoruz.
+
+72
+00:20:17,468 --> 00:20:26,688
+Ve bu noktada artık poolingden sonraki bağlantılar fully connected olarak bütün çıktı katmanındaki nöronlara bağlı oluyor.
+
+73
+00:20:27,476 --> 00:20:39,756
+Mimarenin genel görünüşü böyleydi. İstediğimiz kadar konvolüsyon, istediğimiz kadar relu ve istediğimiz kadar pooling layer kullanabiliyorduk.
+
+74
+00:20:41,436 --> 00:20:53,816
+Tek kesin olan en sonunda bir full connected layer olması gerektiği ve konvolüsyondan sonra relu ve poolingin uygulanması gerektiği.
+
+75
+00:20:54,740 --> 00:21:15,700
+Şimdi dezavantaj olarak sadece ya da en önemli dezavantaj olarak söyleyebileceğimiz şey süpervazı öğrenmek kullanmamız gerekiyor. Bu da bize çok sayıda etiketlenmiş veri bulma problemini getiriyor.
+
+76
+00:21:20,339 --> 00:21:28,819
+Uygulamada en çok zorlayan bizi. O yüzden sizden de istediğim şey bu olacak. Probleminiz her neyse.
+
+77
+00:21:29,263 --> 00:21:52,043
+Derin Ağla veya özellikle CNN'le veya CNN'in versiyonlarıyla çözmeyi düşünüyorsanız, elinizde etiketlenmiş çok sayıda veri olduğundan emin olmak zorundasınız. Aksi halde belki CNN'le çözebileceğiniz problem çok başarılı olarak çözülemeyecek vs.
+
+78
+00:21:53,236 --> 00:21:58,176
+Şimdi biraz konvolüsyon işlemine yakından bakmak istiyorum.
+
+79
+00:21:59,876 --> 00:22:05,116
+Konvolüsyondan önce korelasyon tanımı yapalım.
+
+80
+00:22:05,116 --> 00:22:12,216
+Çünkü korelasyon ve konvolüsyon aslında birbiriyle çok yakından ilişkili işlemler.
+
+81
+00:22:13,436 --> 00:22:17,836
+Belki hatırlıyorsunuzdur, belki bir tazelemekte fayda var.
+
+82
+00:22:18,228 --> 00:22:43,908
+Korrelasyon işlemi şu şeklin alt tarafında tanımladığımız gibi iki tane fonksiyon veya diskret olarak düşünürsek iki tane belli boyuttaki matrisin noktasal çarpımıyla elde ettiğimiz bir işlemdi veya noktasal çarpımıyla tanımladığımız bir işlemdi.
+
+83
+00:22:44,352 --> 00:22:57,172
+Ve sonunda da elde ettiğimiz şey bir tane sayıydı. Yani birden fazla boyutu olan iki matrisi çarpıyoruz noktasal olarak.
+
+84
+00:23:06,387 --> 00:23:15,307
+Görüntünün veya verinin birbiri hücresine denk gelen şeyi çarparken burada da bir ikiyle de bir ikiyle çarpıyoruz.
+
+85
+00:23:15,907 --> 00:23:23,727
+Sırayla bütün karşılıklı aynı indisli hücreleri çarparak noktasal çarpım işlemi yapıyoruz.
+
+86
+00:23:23,967 --> 00:23:27,508
+Noktasal çarpım buydu, onu da hatırlıyorsunuzdur diye umuyorum.
+
+87
+00:23:27,508 --> 00:23:30,347
+Yani klasik matriz çarpımı değil.
+
+88
+00:23:30,804 --> 00:23:39,423
+Matrislerde iki tane matrisi çarparken sadece aynı indislere sahip olan gözleri çarpıyoruz.
+
+89
+00:23:40,124 --> 00:23:45,024
+Ve ondan sonra da bunları topluyoruz. Tek bir sayı haline indiriyoruz.
+
+90
+00:23:45,864 --> 00:23:47,764
+Bu korelasyon işlemiydi.
+
+91
+00:23:49,004 --> 00:23:53,203
+Konvolüsyon işlemi ise korelasyonla aynı şey.
+
+92
+00:23:56,084 --> 00:24:10,364
+Maske olarak tanımlayabileceğimiz, buradaki ya da kernel matris diyebileceğimiz matrisi hem yatay hem dikey olarak döndürüp o şekilde çarpma yapıyorduk.
+
+93
+00:24:10,364 --> 00:24:19,784
+Konvolüsyon işlemini yıldız işaretiyle gösteriyoruz. Yani noktasal çarpım noktayla korelasyon.
+
+94
+00:24:20,115 --> 00:24:36,895
+Konvolüsyon ise yıldız ile gösteriliyor. İki tane fonksiyonun korelasyonu veya iki tane matrisin korelasyonu bu ifadeyle yazılabiliyor.
+
+95
+00:24:44,211 --> 00:25:06,051
+Birinci fonksiyonumuzdaki Vx'ye dediğimiz fonksiyonumuz simetrik bir fonksiyonsa, yani Vx'ye ve eksi x ve eksi y'ye eşit ise, pozitifi ve negatifini x ve y'nin kullandığımızda da fonksiyon aynı sonucu veriyorsa simetrik diyorduk.
+
+96
+00:25:06,352 --> 00:25:20,532
+Fonksiyonumuz bu şekilde simetrikse, şurada çıkan sonuç, denklemin sağ tarafı, korelasyonun aynısı olacak. Neden? Şurada X artı S, Y artı T diye gördüğümüz şey.
+
+97
+00:25:20,912 --> 00:25:32,851
+Burada x yerine xs yazdığımda, şurası x artı s, burası da y artı t'ye dönüşür ve birebir korelasyonla aynı sonucu verir.
+
+98
+00:25:32,851 --> 00:25:46,652
+Yani konvolüsyonla korelasyon arasında böyle bir ilişki var. Onu da bu vesileyle not etmiş olayım. Başka durumlarda da işinize yarayabilecek bir şey bu.
+
+99
+00:25:47,124 --> 00:26:09,144
+Kolay konvolüsyon almak için. Diskret durumlarda zaten matriz çarpımı gibi bir işleme dönüyor. Çok zor değil. Sürekli fonksiyonlarda konvolüsyon işlemi biraz daha karmaşık olabilir. Hatırlarsanız bunun içinde domen değiştirme.
+
+100
+00:26:09,587 --> 00:26:20,508
+Zaman domeyinden S domeyine geçme veya uzay domeyine geçme gibi şeyler yapıyorduk. Onun sebebi de işte şurada oluşacak.
+
+101
+00:26:20,880 --> 00:26:40,620
+Kompleks çarpımları kolaylaştırmak içindi. Veya Fourier transformu benzer şekilde aslında konvolüsyonlara ve noktasal çarpımlara dayanır. Ama diskrit olarak yaptığınızda kolayken sürekli fonksiyonlar için bir Fourier dönüşümü uygulamak için domen değiştirmeniz gerekir.
+
+102
+00:26:41,140 --> 00:26:51,060
+Gibi. Buralar, bu söylediklerim size bir şey ifade ediyor diye umuyorum. Bir şey sormak istiyorsanız bölebilirsiniz.
+
+103
+00:26:53,940 --> 00:27:04,420
+Şimdi kullanacağımız fonksiyonların boyutuna göre de konvolüsyon işleminin boyutunu belirleyebiliriz veya tanımlayabiliriz.
+
+104
+00:27:04,884 --> 00:27:15,884
+Sadece X'e bağlı F ve G gibi iki tane fonksiyonumuz var. Bunlar sürekli fonksiyonlar. Bunların konvolüsyonunu tanımlarken...
+
+105
+00:27:17,119 --> 00:27:30,159
+Bir A noktasında F'in aldığı değer ve G'nin ötelenmiş şekli, GXXA'daki değerini çarpıyoruz ve integralini alıyoruz.
+
+106
+00:27:30,159 --> 00:27:35,579
+Yani aslında bu çarpımın altında kalan alanı hesaplıyoruz.
+
+107
+00:27:37,079 --> 00:27:42,039
+Konvolüsyonun sürekli uzaydaki tanımı da böyle bir şey.
+
+108
+00:27:42,516 --> 00:27:58,396
+Konvolüsyon işleminin yer değiştirme özelliği var. Bundan bazı durumlarda yararlanmak isteyebilirsiniz. F'in G ile konvolüsyonu G'nin F ile konvolüsyonuna eşit.
+
+109
+00:27:58,396 --> 00:28:09,316
+Yani aslında kimin filtre, kimin ana veri veya resim olduğu fark etmiyor yapacağımız işlem.
+
+110
+00:28:09,779 --> 00:28:33,559
+Aynı sonucu verecek yer değiştirsek bile. İki tane şu şekilde konvolüsyon yapmak için seçtiğimiz fonksiyonlar olsun. İkisi de step fonksiyon. Birisinin üst değeri 1, diğerinin 1 bölü 2. X ekseninde x de 1'e kadar gidiyor. Yani genlikleri aynı.
+
+111
+00:28:34,228 --> 00:28:53,408
+Bu şekilde iki tane fonksiyonun konvolüsyonunu almak demek, birinci fonksiyonu ikincinin üstünden veya ikinciyi birincinin üzerinden her noktada geçirip çarpımlarını alıp altındaki alanı hesaplamak demek.
+
+112
+00:28:54,228 --> 00:28:56,708
+Görsel olarak canlandırmak için.
+
+113
+00:28:57,508 --> 00:28:59,368
+Şurada olması lazım.
+
+114
+00:29:00,788 --> 00:29:18,668
+Biraz hızlı geçtim. Şu iyi. İki tane eşit birbirinin aynı fonksiyonu konvolüsyonunu alıyoruz. Yaptığımız şey birinciyi diğerinin üzerinde kaydırıyoruz. Noktasal çarpıyoruz.
+
+115
+00:29:24,723 --> 00:29:34,823
+alanı hesaplamış oluyoruz. Konvolüsyonumuzun sonucu da böyle oluşmuş oluyor. Şu üçgen şekliyle oluşmuş oluyor.
+
+116
+00:29:35,539 --> 00:29:55,119
+Bu birazcık konvolüsyonun kafanızda canlanması için, yoksa CNN'de de çoğunlukla sizin karşılaşacağınız uygulamalarda da diskret versiyonu karşınıza çıkacak ama konvolüsyon işlemi bu anlama geliyor.
+
+117
+00:29:55,119 --> 00:30:00,000
+İki fonksiyonu çizdiğinizde altlarındaki kalan alanları...
+
+118
+00:30:00,000 --> 00:30:15,740
+Birbirinin üzerinden geçiriyorsunuz ve yeri çıkan her noktada iki fonksiyonun çarpımıyla oluşan yeni fonksiyon sizin konvolüsyon işleminizin sonucu oluyor.
+
+119
+00:30:15,740 --> 00:30:24,859
+Şimdi bu işlemler ne yapıyor? Aslında burada da görünüyor. Mesela şu şekilde bir üçgen oluştuğu zaman,
+
+120
+00:30:26,675 --> 00:30:45,375
+Bu iki fonksiyonun aslında tepe noktasını belirginleştirdi. Biraz daha farklı boyutlarda matrisleri veya fonksiyonları ve farklı şekildeki fonksiyonları birbiriyle çarpsaydık biraz daha farklı yönlerini belirginleştirecekti.
+
+121
+00:30:53,440 --> 00:31:02,680
+Uyguladığımız fonksiyonlar, görüntüde kenar belirleme, kontrast yaratma gibi etkilere sahip oluyor.
+
+122
+00:31:03,300 --> 00:31:11,080
+Dolayısıyla aslında elektrikte, elektronikte çok farklı sebeplerle kullanılan konvolüsyon işlemi,
+
+123
+00:31:12,080 --> 00:31:16,080
+görüntüde veya bilgisayar mühendisliği tarafında da...
+
+124
+00:31:18,804 --> 00:31:27,144
+Filtreler ve bir takım özellikleri ortaya çıkarmak anlamında önemli olmuş oluyor.
+
+125
+00:31:28,504 --> 00:31:33,484
+Ana geldiği yer aslında diğer mühendislik alanlarındaki uygulamalar.
+
+126
+00:31:33,484 --> 00:31:40,724
+Şimdi şu örnekden geleyim tekrar.
+
+127
+00:31:42,483 --> 00:31:46,223
+İki tane fonksiyonun konvolüsyonunu hesaplayacaktık.
+
+128
+00:31:46,763 --> 00:31:51,723
+Yapmamız gereken şey, öncelikle ikinci fonksiyon olarak G'yi seçmiş olalım.
+
+129
+00:31:53,103 --> 00:31:57,823
+G'nin ötelenmiş halini G-A'yı hesaplamamız gerekiyor.
+
+130
+00:31:58,623 --> 00:32:01,943
+Ondan sonra G-A'yı hesaplamamız gerekiyor.
+
+131
+00:32:01,943 --> 00:32:05,383
+Çünkü konvolüsyon işlemi bu şekilde tanımlanmıştı.
+
+132
+00:32:05,443 --> 00:32:08,843
+Bize G-A lazım. Bir de F-A lazım.
+
+133
+00:32:09,460 --> 00:32:27,120
+GXXA'yı oluşturduktan sonra FA'yı da şu şekilde tanımlayabiliriz. Bu iki fonksiyonu artık birbiri üzerinden örtüştükleri noktada çarparak işleminizi yapacağız.
+
+134
+00:32:32,819 --> 00:32:49,460
+Bu işlemi yaptığımızda, bunları birbirimiz üzerinden geçirdiğimizde, şimdi F fonksiyonu koordinat sisteminin sağ tarafında sadece pozitif alanda tanımlı iken, GXXA'nın negatif tarafa düşen bir kısmı da var.
+
+135
+00:32:49,839 --> 00:33:02,460
+Şu negatif tarafta f'in hiçbir etkisi olmayacak. Yani başlangıçta g'yi kaydırmadığım sürece şurada herhangi bir değişiklik olmayacak.
+
+136
+00:33:03,119 --> 00:33:15,019
+Dolayısıyla x'in alacağı değere göre birkaç tane farklı durum olacak. Onu da şu şekilde parçalı bir fonksiyon şeklinde sonucu tanımlamamız mümkün.
+
+137
+00:33:15,635 --> 00:33:29,295
+Gx-A şurada, F-A burada diyelim ki x'in sıfırdan küçük olduğu durumda herhangi bir örtüşme yok fonksiyonlar arasında.
+
+138
+00:33:29,844 --> 00:33:48,803
+Dolayısıyla bu integralin sonucu sıfır olacak. Çünkü burada f'le çarpacağım, f'in sıfır olduğunu varsayarsam f'le çarpacağım durumda her noktada sıfır elde edeceğim. Onları da integraline aldığımda veya topladığımda elde edeceğim sonuç sıfır.
+
+139
+00:33:56,627 --> 00:34:23,788
+Sonuç var. Ondan sonra x'in 0 ile 1 arasında olduğu durum için şöyle bir şekil oluşacak. Bu iki fonksiyonun çarpımının integralini almam gerekiyor. Nereye kadar? 0'dan x'e kadar şu taralı alan için f ile çarpım yapacağım. Onun sonucu da x bölü 2 çıkmış.
+
+140
+00:34:24,340 --> 00:34:51,220
+İkinci parçayı da bu şekilde tanımlayabilirim. Bir de x'in birden büyük olduğu en son gidebileceği noktada yani en son gidebileceği noktadan kastım ne? Her iki fonksiyonun da x80'indeki genişliği bir birim olduğuna göre birbirlerinden ayrıldıkları nokta.
+
+141
+00:34:51,827 --> 00:35:08,168
+Bir birim burası, bir birim de burası. İki noktası olacak. Gidebileceği yer x'in bir ile iki olduğu maksimum iki olduğu yere kadar. İkiden büyük olduğunda ne olacak sonuç? Yine sıfır olacak. Çünkü iki fonksiyonun artık kesişen bir yeri kalmayacak.
+
+142
+00:35:08,988 --> 00:35:14,288
+Üçüncü case olarak da x'in bir ile iki olduğu bölgeyi tanımlayabilirim.
+
+143
+00:35:14,608 --> 00:35:42,128
+Orada da integralimizi hesapladığımızda 1-x bölü 2 çıkıyor. Son durum, iki fonksiyonun yine birbirinden ayrıldığı durum, x'in 2'den büyük olduğu durum yine 0 çıkıyor. Herhangi bir ölçüden alan yok. Dolayısıyla ben f ile g'nin konvolüsyonunun sonucunu x'in değerine göre 3 parçalı olarak tanımlayabilirim.
+
+144
+00:35:42,447 --> 00:35:57,547
+İşte sıfırdan küçükken ve ikiden büyükken kısmını elsewhere diye geçersek esas fonksiyonun değer aldığı yerler sıfırla bir arasındayken x, x bölü 2.
+
+145
+00:35:58,407 --> 00:36:03,007
+Bir ile iki arasındayken de bir eksi x bölü 2 şeklinde.
+
+146
+00:36:03,007 --> 00:36:05,507
+Onun dışında her yerde sıfır diyorum.
+
+147
+00:36:10,032 --> 00:36:30,472
+Küçük artımlarla değer vererek hesaplama yapabilirsiniz. Bunu da çizdirirseniz şu üçgeni, biraz önce animasyonda gösterdiğim üçgeni elde etmiş olacaksınız. Konvolüsyon işlemi bu şekilde. Tabi bu bir boyutta.
+
+148
+00:36:35,860 --> 00:36:49,720
+Konvolüsyonun sonucunun genişliği, konvolüsyonun sonucunda elde edeceğimiz fonksiyonun genişliği, fx'in genişliği artı gx'in genişliği şeklindedir.
+
+149
+00:36:49,720 --> 00:37:02,260
+Yani bizim örneğimiz durumunda bir birim fx'in genişliğiydi, bir birim gx'in genişliğiydi. Dolayısıyla ikisinin toplamı ikiydi. Biz de öyle yaptık zaten.
+
+150
+00:37:02,688 --> 00:37:12,387
+Bu bir tespit. İntegralin sınırlarını belirlerken de bunu kullanabiliriz.
+
+151
+00:37:12,387 --> 00:37:26,387
+Alt limit olarak fx'in en solda alabileceği en küçük değerle gx-a'nın en solda, eksenin en solunda alabileceği...
+
+152
+00:37:27,635 --> 00:37:42,996
+Değeri arasında en büyük olanı seçiyoruz. Yani solda en uzak nereye gider? Üst limit olarak da FX ile GXXA'nın sağ tarafta alacağı değerlerin minimumunu seçiyoruz.
+
+153
+00:37:46,708 --> 00:38:01,087
+En yakın nereye dayanıyorsa elde edeceğimiz fonksiyonun limitleri de o olacaktır. Bizim durumumuzda da bu sıfırla iki olarak alt ve üst sınırlar belirlenmiş.
+
+154
+00:38:13,331 --> 00:38:36,391
+Limitleriyle ilgili de böyle bir şey söyleyebiliriz. Bir tane farklı fonksiyonla yine bizim step fonksiyonumuz veya kare fonksiyonumuzun konvolüsyonunu aldığımızı düşünelim. Çıkacak sonuç şu şekildeki testere fonksiyonu gibi bir şey oluyor. Bir yarım testere fonksiyonu vardı.
+
+155
+00:38:37,748 --> 00:38:51,688
+Kare fonksiyon veya step fonksiyon geçirdik. Genliği daha düşük olan ama bir tam testlere gibi bir fonksiyon elde ettik.
+
+156
+00:38:54,568 --> 00:39:03,248
+Yine sayısal olarak yapacak olsanız bu fonksiyonu parçalı olarak tanımlayabilirsiniz.
+
+157
+00:39:03,795 --> 00:39:18,315
+Hatta o da burada var veya bir benzeri var. Şu iki fonksiyonun konvolüsyonu için yine bir parçalı fonksiyon olarak konvolüsyonun sonucunu tanımlayabilirsiniz.
+
+158
+00:39:20,715 --> 00:39:29,155
+Şekildeki duruma bakarsanız impas fonksiyonu yani sadece tek bir noktada değer alan.
+
+159
+00:39:29,519 --> 00:39:43,639
+Bir fonksiyonla, farklı bir fonksiyonun konvolüsyonundan bahsediyorsak, bu impalsın nerede olduğuna bağlı olarak fonksiyonun şekli hiç değişmeyecek.
+
+160
+00:39:43,639 --> 00:39:52,639
+Yani bu birim konvolüsyon işleminde etkisiz eleman diye düşünebileceğiniz bir fonksiyon, impals fonksiyonu.
+
+161
+00:39:53,652 --> 00:40:05,512
+Farklı bir şekilde üç impals fonksiyonu uygulayacak olursanız da ne olur sonuç bir yorumu olan var mı? Nasıl bir şekil oluşur?
+
+162
+00:40:12,083 --> 00:40:14,503
+Birisi yorum yapıyorsa çok sevineceğim.
+
+163
+00:40:17,063 --> 00:40:23,023
+Şurada sonuçta beklediğiniz konvolüsyon sonucunda çıkacak fonksiyon neye benzer?
+
+164
+00:40:27,347 --> 00:40:37,887
+Sadece bu sağdaki iki tane atmalar gözükür herhalde değil mi? Eksi T zaten olmaz. Yanlış mı düşünüyorum?
+
+165
+00:40:38,988 --> 00:40:40,248
+Aynısı çıkar galiba.
+
+166
+00:40:41,748 --> 00:40:50,028
+Bir tane kare mi çıkar? Yani deminkiyle aynı şey mi olur? Şu mu çıkar?
+
+167
+00:40:51,367 --> 00:40:53,648
+Yok, üç tane ayrı impans.
+
+168
+00:40:54,579 --> 00:41:02,059
+Evet, tamam. Üç tane aile. İkinizin de demek istediği buydu herhalde değil mi?
+
+169
+00:41:03,240 --> 00:41:08,300
+Ben sağdakini anladım da soldakini anlamadım. Hani soldaki sönümlenmiyor muydu?
+
+170
+00:41:09,480 --> 00:41:19,240
+Soldaki şöyle sönümlenmeyecek. Çünkü aslında biz burada bir kaydırma da yapacağız ya. Bu bir birim. Çarpımı herhangi bir şey yapmayacak.
+
+171
+00:41:19,583 --> 00:41:26,503
+Ama biz sonuçta kaydırma yaptığımız için onun üzerinden geçmiş olacak ve sönümlenmemiş olacak.
+
+172
+00:41:27,204 --> 00:41:32,644
+Öteleyeceğiz kare fonksiyonu ve üç tane bu şekilde oluşacak.
+
+173
+00:41:34,503 --> 00:41:40,644
+Bir A kadar veya bir T kadar bir miktar kaydırın.
+
+174
+00:41:41,483 --> 00:41:45,644
+Sonra sayısal olarak bakın böyle çıktığını göreceksiniz.
+
+175
+00:41:47,027 --> 00:42:01,307
+Peki, bu kadar görseli elinizde uğraştığınızda daha kolay canlandırırsınız muhtemelen ama genel olarak bir fikir vermiş olsun.
+
+176
+00:42:02,748 --> 00:42:11,307
+Peki, frekans domeninde yaparsak bu konvolüsyon işlemini aslında işlerimiz kolaylaşıyor.
+
+177
+00:42:11,891 --> 00:42:33,771
+O zam sal domeninde veya zaman domeninde bizim için biraz daha kompleks olan, hele de sürekli fonksiyonlar için integral gibi karmaşık bir işlem gerektiren olay, fonksiyonları frekans domenine çevirirsek çarpma işlemiyle eşdeğer oluyor.
+
+178
+00:42:34,452 --> 00:42:50,532
+Dolayısıyla konvolüsyon uygulanırken, özellikle de sürekli fonksiyonlar için, öncelikle fonksiyonları frekans domenine çeviriyoruz. Demin söylemiş oldum aslında Fourier Transformer'ında falan da aynı şey yapılıyor.
+
+179
+00:42:59,632 --> 00:43:19,572
+Sonra frekans domeninde rahat rahat bir çarpma işlemi yaparak sonuca ulaşabiliyoruz. Tabii bunu yaptıktan sonra geri dönmeyi unutmamak lazım. Çıkan sonucu da tekrar geri uzamsal domene veya zaman domenine çevirmemiz gerekiyor.
+
+180
+00:43:21,412 --> 00:43:22,872
+Tersi de doğru.
+
+181
+00:43:23,860 --> 00:43:43,880
+Uzamsal domeyinde veya zaman domeyindeki çarpma işlemi frekans domeyinde biraz daha karmaşık olan konvolüsyon işlemine eşdeğer bir işlem. Dolayısıyla elinizdeki işlemin karmaşıklığına göre domeyin değiştirmeniz mantıklı bir yaklaşım olur.
+
+182
+00:43:46,132 --> 00:44:05,132
+F ile G'nin konvolüsyonunu hesaplarken o zaman yapmamız gereken adımlar şu şekilde. Öncelikle her iki fonksiyonu da frekans domenine çeviriyoruz. Sonra bunları çarpıyoruz ve en sonunda elde ettiğimiz sonucu da...
+
+183
+00:44:06,099 --> 00:44:28,099
+F ve G çarpımını, büyük harflerle gösterdiğim FU ve GU frekans domenindeki karşılıkları, bu çarpımın ters dönüşümünü tekrar uzamsal domene veya zaman domenine dönüşümünü yapıyoruz ve konvolüs dönüşüleminin sonucunu bulmuş oluyoruz.
+
+184
+00:44:29,940 --> 00:44:33,940
+Ayrı konvolüsyonda aslında bütün söylediğimiz şeyler...
+
+185
+00:44:34,384 --> 00:44:57,464
+Geçerli. İntegral yerine bu sefer artık bir toplam işlemi gelmiş oluyor. Dolayısıyla yine iki fonksiyonu nokta nokta çarpıyoruz. Ama burada bahsettiğimiz fonksiyonlar matrisler şeklinde. Dolayısıyla matrisleri çarpıyoruz, topluyoruz ve en sonunda da bir skaler değer elde ediyoruz.
+
+186
+00:45:04,436 --> 00:45:14,335
+Şöyle gösterebiliriz belki. Aslında sürekli fonksiyondan belli sayıda örnek alıyoruz.
+
+187
+00:45:14,880 --> 00:45:29,280
+Ve bu örnekler üzerinden, yani fonksiyonun tümünü her noktada ifade etmeden, diskrit hale çevirdiğimiz örnekler üzerinden çarpım işlemini gerçekleştiriyoruz.
+
+188
+00:45:30,000 --> 00:45:36,860
+Ve elde ettiğimiz sonucu da yine diskrit olarak ifade ediyoruz.
+
+189
+00:45:41,427 --> 00:46:02,167
+Yine elde edeceğimiz sonucun hangi aralıkta kalacağını söylememiz gerekirse, hangi iki fonksiyonun veya çarptığımız konvolüsyon işlemi uyguladığımız iki fonksiyonun genişlikleriyle ilgili,
+
+190
+00:46:04,755 --> 00:46:18,975
+F ve G'nin konvolüsyonunun sonucu F'in genişliği ve G'nin kaydırılmış halinin genişliğinin toplamıyla hesaplanabilir.
+
+191
+00:46:19,795 --> 00:46:25,675
+Burada da görüyorsunuz zaten 1, 2, 3, 4, 5, 6, 7, 8 noktam var.
+
+192
+00:46:25,675 --> 00:46:28,635
+5 artı 3, 8 olacak.
+
+193
+00:46:29,655 --> 00:46:31,515
+İki uç sınırı arasındaki.
+
+194
+00:46:32,052 --> 00:46:32,932
+Uzunluk.
+
+195
+00:46:39,284 --> 00:46:55,184
+Şimdi, inputlarımız birden fazla fonksiyon olsun. F0 birden fazla fonksiyon değil de birden fazla nokta ile ifade edilmiş olsun fonksiyonlarımız.
+
+196
+00:46:55,184 --> 00:46:59,724
+F0, F1, FA-1 gibi A tane noktada.
+
+197
+00:47:00,244 --> 00:47:16,864
+F'in aldığı değer, yani diskret ifade edeceğim ya F fonksiyonunu örnekliyorum. A tane nokta için aldığım örnekler bir küme. G fonksiyonu için de B tane örnek almışım. Onlar da bir küme olarak düşünürsek.
+
+198
+00:47:18,612 --> 00:47:42,531
+Sonucun, ikisinin konvolüsyonunun sonucunun boyutunu A'nın değeri, yani birinci fonksiyondan kaç örnek alınmışsa bu, artı ikinci fonksiyondan kaç örnek alınmışsa B ile gösterdiğimiz değer. Bunların ikisinin toplamı eksi bir şeklinde ifade edebiliriz.
+
+199
+00:47:44,531 --> 00:47:45,211
+Başka?
+
+200
+00:47:46,387 --> 00:47:59,367
+İmput seküenslerini uzatmamız mümkün. Padding kavramından daha sonra bahsedeceğim daha görsel bir şekilde. O yüzden şu anda çok üzerinde durmuyorum.
+
+201
+00:47:59,367 --> 00:48:11,907
+Ama padding duydunuz mu? Zirolar, sıfırlarla padding işlemi yapmak dediğimde aklınızda bir şey canlanıyor mu? Duymuş muydunuz hiç?
+
+202
+00:48:14,643 --> 00:48:15,963
+Ben duymuştum hocam.
+
+203
+00:48:16,884 --> 00:48:18,083
+Ben de hocam duymuştum.
+
+204
+00:48:18,263 --> 00:48:21,643
+Hangi konuda? Kulağınız ya da...
+
+205
+00:48:21,643 --> 00:48:25,123
+Duymadım.
+
+206
+00:48:30,068 --> 00:48:37,088
+Aynamda gittik sanırım hocam. Sayısal işlemede görmüştük sanırım. Bitleri dolduruyorduk ama son katalarında.
+
+207
+00:48:37,088 --> 00:48:52,148
+Tamam. Yani çok çok fazla uygulamada karşınıza çıkabilir. Tamam. Fedi de yazdı. Görüntü işlemede. Orada da kullanıyorsunuz. Hatta kriptografide de kullanıyoruz.
+
+208
+00:48:52,639 --> 00:49:04,652
+Belki dersi alırsanız orada da karşınıza çıkacak. Dolayısıyla istediğimiz boyuta getirmek için veriyi ekstra...
+
+209
+00:49:05,204 --> 00:49:22,604
+Dolgu ekleyebiliyoruz. Genellikle de sıfırlarla yapıyoruz bunu. Bu işlemede padding diyoruz. Burada da görüntüyle uğraşırken veya başka datalar içinde boyutları istediğimiz hale getirmek için padding işlemi son oluşumlarla da kullanacağız.
+
+210
+00:49:33,331 --> 00:49:44,331
+Bazen sadece uzatılmış veya genişletilmiş durumlar için konvolüsyon teoremi geçerli.
+
+211
+00:49:45,791 --> 00:49:59,391
+Oradan kastettiğimiz şey de boyutu seçerken, sonucun boyutunu seçerken şu çarpma işleminin bir şekilde bir matrize aktaracağız ya.
+
+212
+00:50:00,000 --> 00:50:26,620
+A artı B eksi birden büyük olacak şekilde seçmemiz lazım. Çünkü pedig vs. uygulandığında sonucun sığamaması gibi bir durum var. Diskret işlem yaptığınızda da bu sıkıntı var. Sonuçta boyutu dikkat etmeniz gerekiyor. Matriz çarpımı yapacaksınız. Matematiksel olarak baktığınızda da iki matrizi çarpabilmeniz için.
+
+213
+00:50:26,992 --> 00:50:47,092
+Aslında bunların çarpılabilir olması lazım. Yani birinin satır sayısıyla diğerinin sütun sayısı eşit olması lazım. Orada da padding uygulayacaksınız. Padding uyguladığınızda da padding ile birlikte boyutları dikkate almanız lazım. Burada özet olarak biraz karmaşık şekilde söylenen şey o.
+
+214
+00:50:52,179 --> 00:51:18,360
+Peki, konvolüsyon işlemi periyodik bir işlem. Gerek sürekli gerek ayrık durumda. Periyodik bir işlem derken neyi kastediyorum? Aynı fonksiyonu aslında demin impals örneği oydu. Aynı fonksiyonu periyodik olarak tekrarladığınızda bunların çarpımlarının sonucu da periyodik olarak aynı çıkacak.
+
+215
+00:51:18,784 --> 00:51:38,423
+Bu konvolüsyona giren her iki fonksiyonun boyutlarının toplamı, diskret durumda toplama eksi bir şeklinde bir boyuta sahip olacak.
+
+216
+00:51:43,007 --> 00:51:49,527
+Şu şekilde ifade etmek çok doğru olmayabilir ama örnek verildiği için hemen belirteyim.
+
+217
+00:51:50,007 --> 00:51:58,547
+DFT denen şey Discrete Fourier Transform'u. O da periyodik bir dönüşüm olarak geçer.
+
+218
+00:52:01,547 --> 00:52:08,547
+Peki, işlemi yaparken eğer çıktının boyutunu doğru...
+
+219
+00:52:08,719 --> 00:52:18,440
+Seçmezsek ne olur? Bu periyodik oluşan sonuçlar birbiri üzerine biner ve hatalı sonuç üretir.
+
+220
+00:52:19,280 --> 00:52:31,360
+Boyutu seçerken iki fonksiyonun boyutları eksi birden büyük bir değer seçersek ise periyodik olarak sonucu çizimde de görebiliriz.
+
+221
+00:52:32,692 --> 00:52:49,491
+Şimdiye kadar yaptığımız bir boyutlu konvolüsyon da iki boyutlu konvolüsyon dediğimiz zaman da aslında iki değişkenli fonksiyonlarla uğraştığımız, iki değişkenli fonksiyonların konvolüsyondan bahsettiğimizi düşünebiliriz.
+
+222
+00:52:49,991 --> 00:52:57,692
+Bunu geçmeden önce arkadaşlar bir on dakika ara vereyim. Ondan sonra iki boyutlu konvolüsyonu göstereyim.
+
+223
+00:53:00,724 --> 00:53:05,903
+Saate hemen bakıyorum. 1-5 geçe başlayabilir miyiz tekrar?
+
+224
+00:53:06,644 --> 00:53:07,403
+Tamamdır hocam.
+
+225
+00:53:09,084 --> 00:53:15,244
+Ya bu arada öğlen ara verelim falan diyen arkadaşlarınız oluyordu ama ben orayı kaçırdım.
+
+226
+00:53:16,744 --> 00:53:20,324
+Biraz da erken bitirmek durumunda kalıyorum ben de.
+
+227
+00:53:20,755 --> 00:53:29,275
+Yine de çok öyle bir ihtiyacınız olursa bana söylerseniz size göre ayarlamaya çalışırım arayın.
+
+228
+01:09:26,707 --> 01:09:30,268
+Merhaba arkadaşlar, kusura bakmayın. Gecikmiş oldum azıcık.
+
+229
+01:09:32,288 --> 01:09:41,467
+Şimdi fonksiyonumuz iki boyutlu olursa, bu arada geldiniz değil mi? Ben gecikinceyiz. Siz gibi kaçmamıştık.
+
+230
+01:09:41,487 --> 01:09:42,288
+Buradayız hocam.
+
+231
+01:09:42,788 --> 01:09:43,987
+Tamam, teşekkür ederim.
+
+232
+01:09:44,340 --> 01:09:59,760
+Fonksiyonumuz iki boyutlu olunca birazcık tanım değişiyor. Özde aynı. Yine G fonksiyonunu kaydırıyoruz ama bu sefer hem X değişkeni hem Y değişkeni için birinde.
+
+233
+01:10:00,000 --> 01:10:21,020
+A diğerinde B miktarında kaydırıyoruz. İki değişkenimiz olduğu için çift integral alıyoruz. Komütatif yani yer değiştirme özelliği yine var. Yine frekans domeninde çarpmaya karşılık geliyor konvolüsyon işlemi.
+
+234
+01:10:21,427 --> 01:10:31,768
+Tersi de doğru. Zaman domenindeki veya special domeninde çarpma işlemi frekans domeninde konvolüsyona karşılık geliyor.
+
+235
+01:10:33,887 --> 01:10:36,967
+Hızlıca diskret versiyonuna geçeyim.
+
+236
+01:10:38,448 --> 01:10:44,567
+Şimdi F ve G'nin imeçler olduğunu, görüntüler olduğunu düşünelim.
+
+237
+01:10:48,724 --> 01:10:57,304
+F fonksiyonumuz, C çarpı D boyutunda da G fonksiyonumuz veya görüntümüz, filtremiz olsun.
+
+238
+01:10:58,724 --> 01:11:07,404
+İkisinin konvolüsyonunda oluşacak sonucun boyutu N çarpı M olsun.
+
+239
+01:11:07,923 --> 01:11:28,463
+Bu durumda n'in değeri a artı c eksi bir, n'in değeri de b artı d eksi bir şeklinde olacaktır. Yani solda dayandıkları nokta eksi bir, toplamları eksi bir, sağda dayandıkları nokta maksimum değer eksi bir şeklinde olacaktır.
+
+240
+01:11:28,463 --> 01:11:34,604
+Aynı bir boyutlu olandakine benzer şekilde.
+
+241
+01:11:35,091 --> 01:11:54,871
+Yine görüntüleri Zero Padding ile büyütmüş olabiliriz. Öyle bir durumda bunlardan biraz daha büyük boyutta seçmemiz lazım. Sonucun sınırlarını ne kadar padding yaptıysak ona göre bu boyutlar değişecek tabii.
+
+242
+01:11:57,844 --> 01:12:10,064
+Peki, padding işlemi yapmamız konvolüsyon işleminin özelliklerini değiştirmiyor. Aynı şekilde frekans domenine çarpma işlemi olarak taşıyabiliyoruz.
+
+243
+01:12:11,524 --> 01:12:24,244
+Peki, korelasyon ve konvolüsyon bir de bunu not olarak düşmüş olayım. Linear işlemler. Linear işlemler demek ne demek?
+
+244
+01:12:24,576 --> 01:12:37,855
+İki tane özelliği sağlamaları gerekiyor. Ya da birlikte superposition principle dediğimiz toplamsallık ve sabit çarpanın dışarı.
+
+245
+01:12:38,323 --> 01:12:50,644
+Bu iki işlemin gerektiği kadar bunları konvolisyon işlemi yaparken kullanabilirsiniz.
+
+246
+01:12:52,224 --> 01:12:56,304
+Biraz sonra kullanacağım bu söylediğim özellikleri o yüzden önemli.
+
+247
+01:12:57,304 --> 01:13:00,003
+Toplam sağlık özelliği bize ne diyordu?
+
+248
+01:13:00,564 --> 01:13:04,304
+X1 artı X2'nin toplamının...
+
+249
+01:13:05,311 --> 01:13:18,611
+F fonksiyonundaki karşılığını hesaplamak istiyorsam, X1'in F için ürettiği değer, X2'nin F için ürettiği değerleri hesaplayıp toplayabilirim.
+
+250
+01:13:18,611 --> 01:13:24,451
+Yani X1 ve X2'yi ayrı ayrı F için ürettiği değerleri hesaplayıp,
+
+251
+01:13:24,756 --> 01:13:32,155
+F'yi toplarsam, değişkenleri toplayıp F için aldığı değeri hesaplamamla aynı anlama gelir.
+
+252
+01:13:33,376 --> 01:13:48,355
+Homogeneity'de ise değişkenin bir skaler değerle çarpılmış olması söz konusuysa bu skaler değeri fonksiyonu uygulamayıp dışarıya alabilirim.
+
+253
+01:13:52,368 --> 01:14:04,427
+Olmalı hem konvolüsyon işlemi için hem de korelasyon için. Olmalı değil, bu özellikleri sağlıyorlar zaten. Dolayısıyla kullanabiliriz.
+
+254
+01:14:16,307 --> 01:14:32,347
+Yine iki tane matrisimiz var. Bunlardan birisi genellikle maske veya bir törnal veya filtre diye adlandırdığımız matrisimiz. Diğeri de bir görüntümüz veya verimiz olsun.
+
+255
+01:14:44,051 --> 01:15:07,611
+Tek değer üretmek, bunu yapmak için de birebir çarpımları yapıyoruz ve topluyoruz çarpımların sonucunu. Oluşan değeri de ortaya yazıyoruz. Önce çarptık, sonra topladık oluşan değerleri. Görüntüyse bu, belli bir ölçekleme yapmak isteyebiliriz.
+
+256
+01:15:07,952 --> 01:15:27,051
+Varsa öyle bir ölçekleme katsayımız, onu da yapıyoruz. Yani büyütmek veya küçültmek isteyebiliriz. Öyle bir katsayı varsa onunla da çarpıyoruz. Ve oluşan sonucu bir çıktı olarak piksele yazıyoruz.
+
+257
+01:15:27,051 --> 01:15:32,332
+Şimdi Zero Padding kısmını da söyleyeyim.
+
+258
+01:15:32,435 --> 01:15:57,395
+Zero Pelling dediğimiz şey çok silik çıkmış ama şöyle bir şey. Görüntünün kenarlarına sıfırlarla yine diskret olarak düşünelim. Matrisin satır veya sütün sayısını veya ikisini birden artırmak için sıfırlarla doldurarak büyütme işlemi uyguluyoruz.
+
+259
+01:16:00,275 --> 01:16:08,715
+Kovalisyon işlemi yaparken bu çarpmaları yaptığımız sırada oluşacak değerlerin…
+
+260
+01:16:08,756 --> 01:16:32,996
+Sıfır olmaması için de aslında köşelerden katlıyormuşuz gibi düşünebiliriz. Yani ya zirolarla peding yapacağız ya da büyütmek için köşelerden katlıyormuş gibi düşünerek şu üst ve soldaki sütunları, şu satırı ve sütunları
+
+261
+01:16:34,783 --> 01:16:55,603
+Kıvırıp diğeriyle birleştireceğiz ki aslında tekrar aynalamış gibi oluyoruz burayı. Tekrar kullanabilsinler, bizim istediğimiz boyuta gelebilsinler. İki tane seçeneğimiz var. Genel ve Zero Padding. Yaygın kullanılıyor. O şekilde uygulayabiliriz.
+
+262
+01:16:55,603 --> 01:17:00,503
+Şimdi bir tane şöyle animasyonlu bir örnek yapalım.
+
+263
+01:17:00,916 --> 01:17:24,976
+Yapmak istediğimiz şey şu şekilde birlerden oluşan üçe üçlük bir filtre uygulayacağız. Bir de bir bölü dokuz diye bir ölçekleme parametremiz var. Scaling parametremiz var. Bunu böyle de yazabilirsiniz veya bu birlerin yerine bir bölü dokuz yazıp scaling'i de direkt uygulamış da olabilirsiniz. İkisi de uygun.
+
+264
+01:17:25,492 --> 01:17:49,231
+Ana verimiz şu ortadaki 90'lardan oluşan veri veya biraz daha fazlası pardon şu boyutta bir şey. Kaç bu? 2, 4, 6, 8, 9'luk bir şey. 6'ya 9'luk bir şey minimumda.
+
+265
+01:17:49,663 --> 01:18:04,844
+Kenarları zirolarla pedlenmiş olabilir. Şurada iki satır, iki sütun, sağda da iki sütun, aşağıda da bir satır şeklinde bir zero padding işlemi yapılmış.
+
+266
+01:18:04,844 --> 01:18:13,844
+Kare hale getirilmiş eni boyu bir olmuş görüntünün. Şimdi üzerinden üçe üçlük şu filtremizi.
+
+267
+01:18:14,420 --> 01:18:39,420
+Geçirip korelasyon işlemi uygulayacağız. Umuyorum oynayacak. Peki. Şimdi birinci adımda filtremizi bir kaydırdık. Kaydırmadan önce neydi? Şurada hemen korelasyon işlemini yapalım. Filtremiz bir bölü dokuzlardan oluşuyor. Ama görüntüde sıfırlar var. Dolayısıyla her...
+
+268
+01:18:40,032 --> 01:19:07,492
+Hücre sıfırla çarpılacak, sonuç sıfır olacak. Burada hiçbir değişikliğe sebep olmayacak. Korelasyonun sonucu sıfır olacak. Yani burada korelasyonu yaptım varsayın. Kaydırıyorum filtreyi. Tekrar işlem yapıyorum. 1 bölü 9 ile çarptığımda buralar yine sıfır olarak kalacak. Şu göz 1 bölü 9 çarpı 90'dan 10 olacak. Onu yaptık.
+
+269
+01:19:07,923 --> 01:19:34,463
+Bir tane daha kaydırdık. Bu sefer, esas burada göreceksiniz şeyi, hücrelerin her birini çarptık. Buralar sıfır, burası on, burası da on. Çarpımların sonucunu topluyorduk hatırlarsanız. Toplayıp öyle yazacağız ilgili piksele. O da yirmi. Bir daha kaydırdım. Bu sefer üç piksel.
+
+270
+01:19:36,979 --> 01:20:00,760
+Sayısal sonuç verecek şekilde çarpmada kaybolmayacak. Onların toplamı da 30 edecek. 1 bölü 9 ile çarpıldılar. Kaydırdım, kaydırdım ve en sonunda çıkacak şey, sonuç şu şekilde bir şey olacak. Bir filtre gezdirdim görüntünün üzerinde ve bu sonucu elde ettim.
+
+271
+01:20:03,764 --> 01:20:17,604
+Diskret olarak korelasyonun yapılması bu kadar basit bir işlem aslında. Bir şekilde noktasal çarpım işlemi. Bu korelasyondu tabii.
+
+272
+01:20:28,948 --> 01:20:54,148
+diye duymuş olma ihtimaliniz yüksek. Kosinüs benzerliği dediğimiz şey bu noktasal çarpımdan geliyordu. O da neydi? İki tane vektörümüz varsa bunların noktasal çarpımını bu şekilde ifade ediyoruz. Aynen demin yaptığımız gibi nokta nokta çarpıyoruz ve topluyoruz.
+
+273
+01:20:54,496 --> 01:21:13,015
+Elde ettiğimiz sonuçta bizim korelasyon değerimiz oluyor. Noktasal çarpımın diğer bir ifadesi de bu x ve y vektörlerini çizdiğimizde aralarındaki açının kosünüsünü biliyorsak x'in ve y'nin uzunlukları
+
+274
+01:21:13,427 --> 01:21:38,427
+Vektörl olarak uzunlukları, skaler değerleri ve aralarındaki açının çarpımı şeklinde idi nokta çarpımın tanımı. Şu ikisi de geçerli. Dolayısıyla biz de korelasyon yapıyoruz dediğimizde şu noktasal çarpımı yaptığımızı veya notasyonu...
+
+275
+01:21:39,412 --> 01:21:48,872
+Geldiği yerin şu iki vektörün arasındaki açı veya birbirine yakınlığıyla ilişkisini görmüş oluyoruz diyeyim.
+
+276
+01:21:50,872 --> 01:22:02,032
+Geometrik olarak yorumlayacak olursak, x ve y'nin noktasal çarpımını şu şekilde x'in uzunluğu.
+
+277
+01:22:02,547 --> 01:22:22,347
+Y'nin uzunluğu çarpı kosinüs theta diye tanımlayabiliriz dedik. Kosinüs benzerliğini de dolayısıyla veya aralarındaki açıyı da şu ifadeyle tanımlayabiliyoruz. Bu açının büyüklüğü bize iki vektörün ne kadar uzak veya yakın olduğunu.
+
+278
+01:22:23,220 --> 01:22:41,159
+Çizdiğimizde geometrik olarak görüyoruz zaten. Bu açı küçüldükçe yaklaşacak bu vektörler. Dolayısıyla benzerlikleri artacak demek mümkün. Normalize edebiliriz korelasyonun sonuçlarını.
+
+279
+01:22:41,159 --> 01:22:45,100
+Çok önemli değil.
+
+280
+01:22:47,539 --> 01:22:58,960
+Normalize edilmiş korelasyonun veya direkt normal korelasyonun da uygulanmış haline şöyle bakabiliriz.
+
+281
+01:22:59,420 --> 01:23:05,039
+Elimizde bir maske olsun veya filtre olsun bir de büyük olan görüntümüz var.
+
+282
+01:23:06,639 --> 01:23:12,860
+Bu maskeyi uyguladığımız zaman beklediğimiz şey bu maskenin aynısı herhangi bir yerde varsa.
+
+283
+01:23:13,427 --> 01:23:26,307
+Oranın değerinin büyümesi olmadığı yerlerde de aslında çarpımların bir nevi sıfır olması veya küçük değerler alması gibi düşünebilirsiniz.
+
+284
+01:23:26,307 --> 01:23:30,648
+Çünkü pikseller birbirleriyle uyumlu olmayacak.
+
+285
+01:23:36,275 --> 01:23:42,335
+Bu iki görüntü ve maskenin korelasyonunun sonucu da şöyle bir sonuç verecek.
+
+286
+01:23:42,335 --> 01:23:48,335
+İşte maskemizin uyduğu noktanın merkezi.
+
+287
+01:23:49,203 --> 01:24:05,443
+Daha parlak veya keskinleşmiş olacak. Bu da bir nevi korelasyon işleminin iki görüntü arasındaki benzerliği ifade ettiğini görsel olarak gösteren bir örnek diye düşünebilirsiniz.
+
+288
+01:24:05,443 --> 01:24:12,243
+Yani şu görüntü burada hiç olmasaydı şu parlaklık oluşmayacaktı.
+
+289
+01:24:12,627 --> 01:24:16,067
+İki görüntü arasında ilişki yok diyebilecektik.
+
+290
+01:24:16,847 --> 01:24:32,627
+Korelasyon işlemi yaptığımızda da eğer böyle bir değerin büyüdüğü veya görsel olarak keskinliğin oluştuğu yer yoksa maskemizle ilişkisizdir diyebiliriz.
+
+291
+01:24:33,652 --> 01:24:59,271
+Konvolüsyon için dedik, korelasyonla ilişkisini söylemiştik. Burada tek yaptığımız şey maskeyi döndürüyor olmamızdı yatayda ve dikeyde. Onu da şöyle gösterelim. Şu bizim maskemiz olsun. Önce yatayda döndürüyoruz. Şu hale geliyor.
+
+292
+01:24:59,956 --> 01:25:14,536
+Sağa doğru çevirdim. Ondan sonra vertical döndürüyoruz. O da şu hale geliyor. Ondan sonra aynı korelasyonda yaptığımız gibi bu döndürülmüş maskeyi çarpıyoruz.
+
+293
+01:25:23,123 --> 01:25:48,203
+Kendiniz yapmaya çalıştığınızda veya örneklerde gösterilirken ya döndürülmüş haliyle veriliyor maske veya burası çok detaya girilmeden geçiriliyor. Direkt maskeyi noktasal olarak çarpma şeklinde uygulamalar yapılıyor. Maskeyi döndürmeniz gerekiyor. Bunu atlamayın. Yani konvolüsyon işlemi bu demek.
+
+294
+01:25:48,851 --> 01:26:00,011
+Önce maske döndürülecek hem yatayda hem dikeyde. Ondan sonra noktasal çarpım yapılacak doğru konvolisyon sonucunu elde etmek için.
+
+295
+01:26:01,211 --> 01:26:15,371
+İki boyutlu konvolisyon için örnek. Görüntümüzle maskemiz aynı boyutta. Böyle iki tane maddesimiz var. Bunları konvolisyon işlemine tabi tutacağız.
+
+296
+01:26:16,659 --> 01:26:36,719
+Aynı indisli gözlere denk gelen veya aynı piksel, aynı yerde olan pikselleri çarpıyoruz. Ne yapmam lazım? 1 ile 2'yi çarpmam lazım. Çarptım 2. 2 ile 3'ü çarpmam lazım 6. 1 ile 3'ü çarpmam lazım 3 şeklinde.
+
+297
+01:26:37,136 --> 01:26:55,176
+Bunları noktasal olarak çarptıktan sonra topluyorum. Diğer satır için de aynı ve son satır için de aynı. Çarpımları yaptım, topladım. Veya şu çarpımları peş peşe de yazabilirsiniz. Hani satır satır göstermek için burada böyle yazdım ama.
+
+298
+01:26:57,460 --> 01:27:20,880
+Bu arada durmanız gerekmiyor. Arada toplama almak gibi bir şey söz konusu değil. Direkt çarpıp ondan sonra hepsini bir arada da toplayabilirsiniz. Sonuç 65 çıktı. Dolayısıyla şu maskeyi, bu görüntüyü uyguladığım zaman ortadaki hücrenin alacağı değer 65 olacakmış.
+
+299
+01:27:21,460 --> 01:27:42,480
+Şimdi işlem karmaşıklığı olarak bakarsanız 3-3 boyutundaydı. 3 tane toplama işlemim var burada. Bu 3 tane toplama işleminden önce de 3 tane çarpma işlemim var. Her gözü diğer matrisin ilgili gözüyle çarptım.
+
+300
+01:27:42,868 --> 01:27:58,548
+Üç tane çarpma işlemi, üç çarpma işlemi de burada, üç çarpma işlemi burada. Dokuz tane çarpma işlemi var. Yani boyutun karesi kadar bir çarpma işlemi var. Ondan sonra da dokuz tane toplama işlemi var.
+
+301
+01:28:08,543 --> 01:28:23,083
+Bizden 9 çarpma, 9 da toplama işlemi. Hatta şu toplamaları ayrı ayrı yaparsak daha fazla da toplama ama hadi bir arada yaptığımızı düşünelim. 9 tane toplama işlemi gerektiriyor.
+
+302
+01:28:24,564 --> 01:28:27,443
+Karmaşıklığı azaltmak için bir şey yapabilir miyiz?
+
+303
+01:28:27,840 --> 01:28:49,620
+Yapabiliriz, boyutu küçültebiliriz. Eğer tabii uygulayacağımız filtre veya görüntü buna uygunsa, örneğimizdeki ilk matrisi alıyorum. Bu ilk matrisi iki boyutlu olan matrisi acaba tek boyutlu olarak ifade edebilir miyim?
+
+304
+01:28:49,967 --> 01:28:57,127
+İki tane tek boyutlu matris vektörün artık çarpımı olarak ifade edebiliyormuşum.
+
+305
+01:28:57,127 --> 01:29:01,927
+Bu iki tek boyutlu vektörün çarpımı bize bu matrisi veriyor.
+
+306
+01:29:02,927 --> 01:29:10,207
+Eğer bunu yapabiliyorsa, şu anda işte superposition kurallarından yararlanmış olacağım.
+
+307
+01:29:13,707 --> 01:29:16,087
+Böldüm fonksiyonumu bir nevi.
+
+308
+01:29:17,108 --> 01:29:39,488
+Bunların ayrı ayrı konvolüsyonlarını alarak toplayacağım. İlk önce şu sağdaki vektörü aldım. Bunu filtremle çarptım. Çarptım değil konvolüsyona tabi tuttum. Çıkan sonucum bu şekilde oldu. 11, 18, 18.
+
+309
+01:29:40,275 --> 01:29:52,575
+Ondan sonra bu çıkan sonucu diğer orijinal verimin çarpanıyla konvolüsyona soktum.
+
+310
+01:29:53,075 --> 01:29:56,675
+Çıkan sonuç yukarıda yaptığımız işlemin aynısı oldu.
+
+311
+01:29:56,675 --> 01:30:00,355
+Şimdi burada ne kadar işlem yaptım ona bakalım.
+
+312
+01:30:00,979 --> 01:30:23,979
+Üç tane değerim olduğu için aslında şurada yaptığım çarpma azalmış oldu. Direkt dokuz elemanla çarpım yapacağıma, üç elemanla altı değeri çarptım. Yani altı tane çarpım yaptım. Ondan sonra şurada daha da az, bir iki üç tane çarpma yaptım.
+
+313
+01:30:24,467 --> 01:30:41,427
+Toplamalarım da aynı şekilde azalmış oldu. Yukarıda 9 tane değeri toplamıştım. Şu anda 3 değerin toplamı bana aynı sonucu verdi.
+
+314
+01:30:43,267 --> 01:30:51,427
+Karmaşıklık olarak bakarsak en dediğimiz şey kare matrislerim olduğunu varsayarsam.
+
+315
+01:30:52,243 --> 01:31:12,223
+Kare matrisin boyutu yani üç üç ölçük matrisin varken dokuz tane işlem yapmamı söyleyecek şekilde en kare karmaşıklığında bir problem. Şuradaki çarpma veya konvolüsyon işlemi.
+
+316
+01:31:15,956 --> 01:31:38,916
+Çok daha iyi. Artık lineer karmaşıklığa düştü. İki en tane işlem yapıyorum, çarpma işlemi yapıyorum. Onu da zaten hatırlarsanız karmaşıklığı ifade ederken sabit kat sayıları atıyorduk. O zaman en karmaşıklığında bir işleme indirgemiş oldum.
+
+317
+01:31:40,275 --> 01:31:43,615
+Var mı burada sorularınız varsa cevaplayayım.
+
+318
+01:31:45,300 --> 01:31:53,420
+Hocam ben o 9 sayısını nasıl bulduk onu çok anlayamadım. Bir daha gösterebilir misiniz acaba? 9 tane saymadım ama ben toplamlar zaten altta.
+
+319
+01:31:53,420 --> 01:32:05,439
+Tardaki şey mi söylüyorsun? Evet. Çarpma. Şimdi 1 çarpı 2, 1 çarpma. 2 çarpı 3, 2. çarpma. 1 çarpı 3, 3. çarpma.
+
+320
+01:32:06,515 --> 01:32:18,416
+Burayla burası dördüncü, beşinci, altıncı, yedinci, sekizinci, dokuzuncu çarpma. Görebildin mi?
+
+321
+01:32:18,655 --> 01:32:21,216
+Evet, dokuz çarpma o zaman da altı toplum.
+
+322
+01:32:21,216 --> 01:32:29,895
+Dokuz çarpma. Şimdi ha evet, şöyle ama bunların her birini ayrıca çarptım.
+
+323
+01:32:30,323 --> 01:32:41,743
+Toplama ekledim. Yani birincinin sonucu iki, ikincinin sonucu altı. Bu çarpmalardan dokuz tane sonuç elde ettim. Dokuz tane sayıyı da topladım.
+
+324
+01:32:43,063 --> 01:32:45,043
+Tek tek topluyormuş gibi saydık yani.
+
+325
+01:32:45,123 --> 01:32:55,703
+Mecburen. Yani sen işlem yaparken ne yapabilirsin? Şimdi gözle baktığımdaki gibi düşünme. Bilgisayarda bunu yapacaksın. Dokuz tane sayıyı toplamak durumundasın.
+
+326
+01:32:56,180 --> 01:33:20,779
+Tabii burada şeyi de hatırlarsanız toplamın karmaşıklığı çarpmanın yanında önemsiz. Esas olan bizim için şu karmaşıklığı belirlerken çarpma sayısı. Yani daha az toplam yapıyor bile olsaydık karmaşıklığımız en kare olacaktı ya da çarpmanın sayısı kadar olacaktı. Onu da gözden kaçırmayın.
+
+327
+01:33:24,756 --> 01:33:27,176
+Tamam, var mı başka arkadaşlar bir şey?
+
+328
+01:33:29,016 --> 01:33:38,676
+Burada esas olan tabii bu karmaşıklığı azaltabilmemiz için şu filtremizin çarpanlarına ayrılabilir olması.
+
+329
+01:33:39,676 --> 01:33:42,676
+Dolayısıyla belki...
+
+330
+01:33:42,963 --> 01:33:53,404
+Kendiniz bir konvonisyon ağda filtre yaratırken veya filtre seçerken çarpanlarına ayrılan bir şeyi seçmeyi düşünebilirsiniz.
+
+331
+01:33:53,624 --> 01:34:00,044
+Eğer işlem karmaşıklığı ile ilgili bir sıkıntınız varsa hızlandırmak isterseniz.
+
+332
+01:34:01,164 --> 01:34:10,644
+Bu kadar 3'e 3'lük matrislerde çok önemli görülmeyebilir ama büyük görüntüye bunu uyguladığınızı ve daha büyük filtreler uyguladığınızı düşünürseniz.
+
+333
+01:34:10,927 --> 01:34:26,368
+Nereden kar ederseniz kardır. Çünkü bir tane de uygulamayacaksınız bu filtrelerden. Dolayısıyla bu da işe yarar bir özellik. Kullanılabilir bir özellik.
+
+334
+01:34:27,667 --> 01:34:35,988
+Seçeceğiniz maskeye göre elde edeceğiniz sonuçlar var. Geçen hafta mı konuştuk?
+
+335
+01:34:35,988 --> 01:34:50,948
+Yüz üzerinden bir şekilde belki yüz tanımayla ilgili işlem yapmak istiyorsanız veya yüz tanıma yapan bir tane derin ağ oluşturmak istiyorsanız.
+
+336
+01:34:51,279 --> 01:35:12,439
+Yüzün üzerinde öne çıkarmak isteyeceğiniz bazı şeyler var. Bunlar keskin kenar belirleme. O zaman kenar belirleme yapan bir filtre kullanan bir konvolisyonel katman oluşturursunuz. Ondan sonra ten renginin ayırt edici olduğu ve sizin için önemli olduğu bir durum.
+
+337
+01:35:12,863 --> 01:35:26,064
+Varsa o zaman renk belirlemeniz gerekir. Ona bakacak bir şekilde renk belirlemeyle ilgili veya keskinleştirmeyle ilgili bir filtre uygularsınız.
+
+338
+01:35:34,163 --> 01:35:48,364
+Bariz şekilleri belirleyecek şekilde filtrelerinizi seçip ortaya çıkarmak istediğiniz özelliklerin en azından minimum özelliklerin sayısı kadar filtre seçebilirsiniz.
+
+339
+01:35:48,364 --> 01:35:50,364
+Bu filtreleri de...
+
+340
+01:35:51,891 --> 01:36:06,831
+Bir kısmını bilinçli seçeceksiniz belki. Bilinçsiz de seçseniz birden fazla farklı filtre uyguladığınızda belli özelliklerin öne çıktığını görmenize yarayacak.
+
+341
+01:36:06,831 --> 01:36:17,591
+Dolayısıyla konvolüsyonel ağın esprisi veya sırrı burada. Uyguladığınız filtreler belli özellikleri öne çıkardığı için
+
+342
+01:36:19,507 --> 01:36:29,347
+Neyin önemli olduğu bir görüntüyü sınıflamak için hangi özellikleri öne çıkartmanız gerektiğini size kendisi söyleyecektir.
+
+343
+01:36:29,347 --> 01:36:39,288
+Şimdi buradaki belki hepimizin farklı cevaplayabileceği soru şu.
+
+344
+01:36:40,007 --> 01:36:41,967
+Filtreleri ben seçiyorsam.
+
+345
+01:36:42,420 --> 01:36:54,760
+Aslında klasik görüntü işleme gibi ben mi karar vermiş oluyorum ağın ne yapacağına? Yoksa tersi mi ağ kendi mi karar veriyor?
+
+346
+01:36:56,900 --> 01:37:07,840
+Training yaparken filtrelerin değeri değişir mi? Yani trainingin içinde değiştiremezsin. Arkadaşınızın sorusu var.
+
+347
+01:37:10,163 --> 01:37:32,243
+Ama baktın ki iyi eğitilmiyor. Başka bir filtre kullanarak ama treningi yeniden başlatman gerekir. Çok anlamlı olmaz. Çünkü verinin bir kısmında başka bir filtreyle başka özellikleri çıkarmış olursun. Kalan kısmında başka bir şey yapmış olursun. Bu değil ama trening kısmında trening yeterince başarılı sonuç vermemişse.
+
+348
+01:37:32,724 --> 01:37:58,503
+Hatayı yeterince küçültememişsem ya filtrelerin yetersizdir ya uygun değildir. Filtre değiştirmeyi, eklemeyi düşünebilirsin. Fazla da olabilir. Treningin mükemmel olması da çok isteyebileceğimiz bir durum değil. Çok fazla ayrıntıya bakılmış ve ağın ezberlemesi söz konusu olmuş olabilir. Bunu da istemiyoruz.
+
+349
+01:37:58,927 --> 01:38:05,327
+Dolayısıyla training başarısına bakarak filtre sayısını ve türünü değiştirebilirsiniz.
+
+350
+01:38:11,060 --> 01:38:24,800
+Tekrar bakıyorum. Ben de teşekkür ederim. Yüz gibi durumlarda birazcık böyle aklımıza geliyor. Yani iki yüzü birbirinden ayırt etmek veya bir yüzü tanımak için neleri tanımalıyım?
+
+351
+01:38:24,800 --> 01:38:38,920
+İşte hatlarını görmem lazım, kaşı gözü görmem lazım, saça bakmam lazım. İşte buna göre şu şu filtreleri uygulayayım diyebilirsiniz. Birazcık siz karar veriyormuşsunuz gibi görünebilir.
+
+352
+01:38:39,060 --> 01:38:58,060
+Ama aslında bir derin ağda burada seçtiğiniz filtrelerin özellikle düşünülerek bilinçli seçilmesi gerekmiyor. Yeter ki farklı özellikleri ortaya çıkaracak yeterli sayıda filtre olsun. Hatta bunları sizin düşünmemeniz...
+
+353
+01:38:59,444 --> 01:39:15,824
+Daha da doğru. Çünkü sizin algınızda önemli görünmeyen bir özellik varsa ve ayırt edicisi aslında sizin verinizde, buna siz karar veremeyeceksiniz ama bu filtrelerin onu tespit etme ihtimali yüksek.
+
+354
+01:39:16,192 --> 01:39:37,152
+Dolayısıyla bizim mi aklımız karar veriyor, A mı karar veriyor? Aslında A karar veriyor benim görüşüm. Filtrelere bizim seçiyor olmamız çok da bilinçli seçtiğimiz anlamına gelmiyor. Bu filtreler belli özellikleri öne çıkarıyor.
+
+355
+01:39:44,192 --> 01:39:54,992
+Zayıflamış nöronları azaltmış oluyoruz ve önemli olmayan özellikleri, o bölgede ayırt edici görünmeyen şeyleri elemiş oluyoruz.
+
+356
+01:39:55,932 --> 01:40:08,452
+Bunu da tamamen ağın uyguladığı filtreler sonucunda merenin değerini yükselttiği, hangi özellikleri öne çıkardığı belirliyor.
+
+357
+01:40:08,452 --> 01:40:11,072
+Direkte biz belirlemiş olmuyoruz.
+
+358
+01:40:12,051 --> 01:40:29,271
+Bununla ilgili yorumu olan varsa söyleyebilirsiniz lütfen. Başka ne? İşte Einstein'ın bir şekilde keskinleştirilmiş, şart link uygulanmış hali.
+
+359
+01:40:31,636 --> 01:40:47,916
+Peki, klasik neural networklerle convolutional ağın arasında nasıl bir fark var diye bakarsak, klasik neural networkler çok da iyi ölçeklenmiyor.
+
+360
+01:40:57,684 --> 01:41:09,984
+Küçük görüntüler içerdiği için yöntem denemek için uygun, hızlıca eğitilebilecek bir dataset. Dolayısıyla kullanmak istersiniz zaman zaman.
+
+361
+01:41:10,579 --> 01:41:27,119
+32x32x3'lük veriler var. Buradaki 3 aslında RGB'yi temsil eden 3 tane renk kanalını söylüyor. 32x32 de resimlerin boyutu.
+
+362
+01:41:31,507 --> 01:41:54,007
+Eğer tek bir fully connected nöron varsa birinci hidden layer'da, gizli katmanda, nöron network'ün hesaplaması gereken ağırlık sayısı 32x32x3 toplamda 3072 olacak.
+
+363
+01:41:54,007 --> 01:41:58,728
+Halbuki CNN'de fully connected değildi artık.
+
+364
+01:41:59,155 --> 01:42:15,275
+Küçük veri için bile 3072 tane ağırlık hesabı çıkıyorsa daha gerçek problemlerde, daha büyük görüntülerde ortaya çıkacak işlem karmaşıklığını hayal edin.
+
+365
+01:42:15,275 --> 01:42:18,456
+Misal var misalde burada.
+
+366
+01:42:18,931 --> 01:42:30,011
+200'e 200'lük bir resim de yine üç renkle temsil edilmiş olsun. İşlem sayımız yani hesaplamamız gereken ağırlık sayısı 120 bine çıkıyor.
+
+367
+01:42:30,496 --> 01:42:47,135
+Şimdi bu 120 bin tane işlemi bir feedforward adımında yapacağız. Ondan sonra bir de her geri döndüğümüzü de yapacağız. Katman katman gezerek her seferinde 120 bin tane çarpma yapacağız ki sayı çok çok büyümüş oluyor.
+
+368
+01:42:47,891 --> 01:43:09,811
+Dolayısıyla CNN'de veya CNN oluşturulurken de ortaya çıkan fikirlerden biri şu anda da yaygın ve popüler olarak uyguladığımız durum bütün nöronların birbirine bağlı olması.
+
+369
+01:43:10,515 --> 01:43:26,895
+Şart değil. Bu bir işlem yükü getiriyor ve zaman kaybı. Dolayısıyla CNN işlemsel olarak da klasik neural network'e göre daha az işlem yükü içeriyor.
+
+370
+01:43:29,895 --> 01:43:33,055
+Peki biraz daha şöyle bakarsak.
+
+371
+01:43:34,515 --> 01:43:57,375
+Elimizde ne var? Klasik neural network'te soldaki şekil input katmanı var. Birkaç tane hidden layer var. En fazla iki veya üç tane oluyor. Daha ötesi çok da işe yaramıyor demiştik. Çünkü gradiyan kayboluyordu. Yol uzadıkça geriye dönerken çarpma işleminin sayısı artıyor ve gradiyan kayboluyor.
+
+372
+01:43:57,908 --> 01:44:16,968
+İki tane hidden layerim olsun. Bunun karşılığı konvolisyon layeri veya konvolisyonel anıya benzeyecek. Yine bir input katmanımız olacak. Input katmanının yanı sıra bir de üç derinliği de temsil edecek şekilde.
+
+373
+01:44:19,475 --> 01:44:35,115
+Katmanımız var. Relu'yu da burada uygulayacağız. Ondan sonra elde ettiğimiz, Relu'da uygulandıktan sonra elde ettiğimiz çok boyutlu matrisi 3'ten dolayı şu derinlik var.
+
+374
+01:44:36,695 --> 01:44:46,375
+Pulling Layer'a getireceğiz, küçülteceğiz. Ondan sonra da Fully Connected Layer'da etiketlemeyi veya sınıflamayı.
+
+375
+01:44:46,768 --> 01:45:12,208
+Yapmış olacağız. Sifar veri setinin verisini de buraya koymuşuz. Sifar veri setiyle uygulayabileceğiniz basit bir mimari, input katmanı, konvolüsyöner katman, relo, cooling ve fully connected. Sadece birer kere kullanarak
+
+376
+01:45:12,659 --> 01:45:19,619
+Bu katmanları yine de başarılı bir sonuç elde etmeniz mümkün oluyor.
+
+377
+01:45:22,899 --> 01:45:26,819
+Hesaplamaları da söyleyeceğim ama ben şöyle bakayım.
+
+378
+01:45:29,099 --> 01:45:32,599
+Hızlıca söyleyeyim, bir beş dakika sonra bitirmem gerekiyor.
+
+379
+01:45:33,639 --> 01:45:38,899
+Bu arada ben size bir veya bir ders en azından borçluyum galiba.
+
+380
+01:45:39,359 --> 01:46:01,759
+Uygun bir zamanda biraz da gidişe göre o dersi de yapacağım ama birlikte kararlaştırırız. Çok özür diliyorum. Bu uzaktan işi çok kötü oldu. Sabahtan akşama kadar sürekli bir şey var. Dersleri de hafif hafif aksatıyorum. Bir şekilde telafi edeceğim onları size.
+
+381
+01:46:03,923 --> 01:46:19,963
+Şimdi inputta yine sifar üzerinden gidelim. 32, 32 ve 3 renk kanalıyla temsil ettiğimiz görüntülerimiz var. Bunların ham piksel değerlerini alıyoruz.
+
+382
+01:46:22,996 --> 01:46:48,756
+Matris olarak baktığımız zaman 32-32'lik bir matrisimiz var. Bunlardan 3 tane var RGB için ayrı ayrı. Konvolüsyonel layer input görüntüde konvolüsyonel layer'da kullanacağımız filtrenin boyutuna da bağlı olarak input layer'daki görüntünün belli bölgelerine bağlı olacak.
+
+383
+01:46:50,771 --> 01:47:15,771
+Misal, 12 tane filtre kullanmış olalım. Konvolüsyonel layer'ı geçtiğimiz zaman elimizdeki verinin boyutu 32x32x12 şeklinde olacak. Ondan sonra Relo layer'ına geldiğimiz zaman boyutta herhangi bir değişme olmuyor. Çünkü Relo'nun yapacağı tek şey...
+
+384
+01:47:15,984 --> 01:47:33,324
+Nörona giren değerleri toplayıp bir lineer fonksiyon uygulamak, sonra da çıkan değeri, yani sadece değerde değişiklik yapmış oluyorsunuz. Relu fonksiyonunu uygulayıp boyutta herhangi bir şey yapmış olmuyorsunuz.
+
+385
+01:47:44,051 --> 01:47:51,671
+0 ile x'in maksını seçen bir fonksiyon diye düşünebilirsiniz. Bu ne demek?
+
+386
+01:47:53,412 --> 01:47:59,992
+Gelen nörona gelen toplam değer 0'dan büyükse olduğu gibi al.
+
+387
+01:48:00,467 --> 01:48:19,427
+Eğer sıfırdan küçükse veya sıfırsa sıfır olarak al. Yani şu relukatmanın izin vermeyeceği şey negatif bir değer. Bu fonksiyondan çıkmaz. Negatif olan değerler sıfıra çekilir.
+
+388
+01:48:19,891 --> 01:48:33,211
+Bazen bu sıfıra çekmek de risk yarattığı için buraya biraz sıfırdan biraz daha küçük, çok az bir sıfırın altına inmesine izin veriyoruz.
+
+389
+01:48:33,211 --> 01:48:38,191
+Dikir Relu veya Sızdıran Relu kavramı da o.
+
+390
+01:48:39,611 --> 01:48:45,391
+Cooling Leer'e gelince esas burada boyut azaltmayı hesap planlıyoruz.
+
+391
+01:48:48,212 --> 01:49:00,952
+En boy üzerinden bir boyut azaltma yaptığımızı düşünelim. Kullandığımız komolyisyon işlemlerinin sayısında herhangi bir azaltma yapmadık.
+
+392
+01:49:02,172 --> 01:49:12,552
+Yarı yarıya küçülttüğümüz zaman relülden gelen 32-32'lik resim bu sefer 16-16'lık gibi bir şeye düşmüş olabilir.
+
+393
+01:49:13,171 --> 01:49:22,631
+Bu aşamada eğer birer kere uygulayacaksak bütün katmanları bir de fully connected layer'i oluşturmamız gerekiyor.
+
+394
+01:49:23,691 --> 01:49:40,611
+Fully connected layer'da da yapmak istediğimiz şey her klas için bir skor, daha doğrusu her görüntünün hangi klasa ait olduğuna karar verecek bir skor değeri hesaplamak.
+
+395
+01:49:40,912 --> 01:49:59,012
+Eğer 10 tane kategoriye dağıtmak istiyorsak, elimizdeki resimleri 10 farklı kategori olarak sınıflayacaksak, Fully Connected Layer'ın boyutu da 1x1x10 şeklinde olacak. Yani 10 tane nörondan oluşan bir layer olacak.
+
+396
+01:50:00,000 --> 01:50:09,380
+Kabaca işlemler sırasında boyutların değişimi de bu şekilde meydana geliyor. Burada var mı bir sıkıntı arkadaşlar?
+
+397
+01:50:15,380 --> 01:50:17,199
+Tamam, yok diye anlıyorum.
+
+398
+01:50:19,279 --> 01:50:22,079
+Relo'nun şekli şöyle bir şey.
+
+399
+01:50:26,479 --> 01:50:30,140
+Buradan özel olarak söyleyeceğim bir şey yok.
+
+400
+01:50:30,699 --> 01:50:35,560
+Şimdi Relo'nun az önce birazcık söylemiş oldum.
+
+401
+01:50:36,479 --> 01:50:38,819
+Yine de hassas olduğu durumlar var.
+
+402
+01:50:41,460 --> 01:50:48,099
+Gradian'ın çok büyüdüğü durumlarda Relo'nun ölmesi gibi bir durum var.
+
+403
+01:51:05,971 --> 01:51:15,571
+Sıfıra inmesi, ondan sonra da sürekli sıfır olarak kalmasından dolayı bazı nöronların öldüğünü görüyoruz. Ölmekten kasıt ne?
+
+404
+01:51:15,952 --> 01:51:37,932
+Bir daha artık aktive olamıyorlar. Yani bir kere sıfıra düştükten sonra artık yeni bir örnek gösterseniz de değerini yükseltemiyorsunuz. Genel olarak da bu durumun %40 civarında nöronun ölmesiyle sonuçlandığı istatiksel olarak gözlemlenmiş.
+
+405
+01:51:38,336 --> 01:51:52,856
+Buna da hem izleyerek dikkat etmek lazım hem de relonun bu şekilde düşmemesi için yapılan birkaç tane yöntem var. Onları belki uygulamak lazım.
+
+406
+01:51:52,856 --> 01:52:01,696
+En iyi bilinen liki relon kullanılması. Sabit bir değer kadar.
+
+407
+01:52:02,195 --> 01:52:09,796
+0 değil de 0 yerine 0'dan biraz küçük bir değer kullanarak reloyu ifade etmek.
+
+408
+01:52:09,796 --> 01:52:15,396
+Max out denen bir yöntem kullanılabiliyor.
+
+409
+01:52:15,396 --> 01:52:19,796
+X'e ve X'e ve V1'e.
+
+410
+01:52:19,796 --> 01:52:23,796
+V1 artı...
+
+411
+01:52:24,819 --> 01:52:42,899
+X çarpı V2, yani bunlar nörona giren toplam değer. Bu toplam değerin maksimum olduğu nöronu seçiyoruz. Diğer nöronları atıyoruz. Bu da aslında ölüleri temizlemek gibi bir şey.
+
+412
+01:52:43,507 --> 01:53:09,588
+Onun dışında seçtiğimiz nöron type tipini dikkat edebiliyoruz. Burada learning rate'i ayarlayarak işlem yapabiliyoruz. Dolayısıyla max altta şurada nöronun elenmemesini sağlayabiliyoruz gibi.
+
+413
+01:53:10,676 --> 01:53:23,776
+Başka? Tekrar yazmışım aynı şey. Benim diyeceklerim bu kadar galiba. Var mı arkadaşlar sorunuz bugüne?
+
+414
+01:53:25,776 --> 01:53:27,856
+Hocam benim küçük bir sorum var ama.
+
+415
+01:53:30,463 --> 01:53:49,163
+Anladığım kadarıyla hocam bu CNN, yani convolution olayında genelde görüntü işleme kısımlarında, input'un büyük olduğu kısımlarda kullanıyoruz. Ama mesela sadece 1x50'lik, 1x100'lük bir input olduğunda da bu CNN kullanmak mantıklı mı?
+
+416
+01:53:50,036 --> 01:54:07,595
+Şöyle, görüntü kadar başarılı olmayacaktır. Bu da demin söylediğim şekliyle çok bariz ortada. Görüntüde başarı göstermiş filtreleri direkt aslında kullanmış oluyoruz.
+
+417
+01:54:18,036 --> 01:54:44,996
+Filtreler'in ifade ettiği şeylerde keskinleşen ayırt edici noktalar varsa başarılı olur ama görüntü dışında veya görüntüye kıyasla diğer verilerde başarılı olmama veya başarının azalmasının sebebi direkt kullandığımız filtreler görüntü işlemede kullanılan filtreler.
+
+418
+01:54:45,395 --> 01:55:07,076
+Bununla ilgili. Şimdi datalar çok büyük olduğu için hani görüntü işleme filtreleri yerine başka filtreler kullanalım tamam ama bu kadar bilinçli seçemeyiz. Datayı inceleyip zaten onu görebiliyor olsaydık onunla ilgili de klasik teknikler var olurdu vesaire.
+
+419
+01:55:11,347 --> 01:55:24,067
+Asla başarılı olmaz denmez ama oradan elde edeceğiniz sonuca güvenmek için başarılı olsa bile çok sıkı test etmeniz gerekecektir.
+
+420
+01:55:25,807 --> 01:55:29,807
+Biraz macera gibi oluyor. Tamam yani kullanılıyor, kullanılmıyor değil.
+
+421
+01:55:29,807 --> 01:55:37,947
+Farklı uygulamalar için insanlar deniyorlar ama yani görüntü kadar iyi sonuç elde etmemiz.
+
+422
+01:55:39,315 --> 01:55:50,496
+Uygun filtreleri bulamadığımız sürece biraz zor. Kendime göre yorumum böyle benim. Ya da görünüyor zaten. Yani matematiksel olarak da durum bu.
+
+423
+01:55:51,496 --> 01:55:52,755
+Sağ ol hocam. Tamamlaşma.
+
+424
+01:55:54,895 --> 01:55:57,215
+Başka var mı arkadaşlar sorunuz?
+
+425
+01:56:02,515 --> 01:56:16,716
+Peki, o zaman bugünü bitiriyorum. Haftaya görüşürüz. Ödevlerle ilgili siz bana dönün, ben de size döneceğim. Yapmak istiyorum dediğiniz bir konu varsa, veriniz varsa.
+
+426
+01:56:17,363 --> 01:56:38,143
+Onun üzerinden gidebiliriz. Bu arada deninki soruyla ilişkili olarak şunu söyleyebilirim. Uygulama alanı çeşitlenebiliyor. Her ne kadar görüntü üzerinden gitsek de bir şekilde görüntüyle ilişkilendirebiliyorsak yani verilerinizi çizdiğinizde görsel olarak.
+
+427
+01:56:38,623 --> 01:57:00,284
+Birbirinden farklı dağılımlar, bir nevi onu da görüntü olarak düşünebilirsiniz. Yani verileri çizdirdiğinizde çıkan bir gauss, öbür tarafta çıkan bir lineer doğru mesela, görsel olarak birbirinden farklıdır. Böyle bir şeyler yakalayabiliyorsanız ona da görüntü olarak bakabilirsiniz.
+
+428
+01:57:06,623 --> 01:57:32,003
+İzlediğinizde bir şeyler görünüyorsa CNN yine işe yarar. Dolayısıyla CNN'i farklı bir uygulama için kullanmak isteyenleri de caydırmış olmayayım. Birazcık verinize ve probleminize bağlı olarak görüntüye benzer şeyler, ayrı tedici durumlar görebiliyorsanız hala yine işe yarayacaktır.
+
+429
+01:57:35,444 --> 01:57:38,323
+Peki o zaman görüşmek üzere diyorum.
+
+430
+01:57:38,363 --> 01:57:39,503
+Hocam ben bir şey sorabilirim.
+
+431
+01:57:39,743 --> 01:57:40,323
+Efendim?
+
+432
+01:57:40,743 --> 01:57:41,583
+Bir şey sorabilir miyim?
+
+433
+01:57:41,923 --> 01:57:44,484
+Tabii tabii. Biraz sesini duyamıyorum.
+
+434
+01:57:45,003 --> 01:57:55,404
+Ödev ile ilgili, proje ödev ile ilgili hocam, bu konu ile ilgili fazla bilgisi olmayanlar için hem öğretici anlamda jenerik bir ödev verebilir misiniz?
+
+435
+01:57:55,404 --> 01:57:57,823
+İşin temellerini içeren...
+
+436
+01:57:57,823 --> 01:58:03,043
+Evet, evet. Proje değil de araştırma ödevi.
+
+437
+01:58:03,636 --> 01:58:14,775
+Yani uygulama ödevi de uygulama. Ortak bir uygulama yapabilirsek hani temel konuları içeren kendi projemizde.
+
+438
+01:58:14,775 --> 01:58:30,735
+Olur. Aslında şöyle yapayım. Gerçekten hakikaten tezinde kullanmak isteyen veya biraz daha zaten bir şeyler yapmıştım diyen arkadaşlarınız akıllarında fikir varsa onları versin.
+
+439
+01:58:31,104 --> 01:58:53,984
+Senin dediğin ne aklıma geldi? Bu aslında zaman zaman başka konularda yaptığım bir şey. Belki birden fazla algoritmanın biraz daha temel uygulaması şeklinde bir artık eğitim seti mi diyeyim, deney seti mi bir şey oluşturma gibi bir ödev de şekillendirebilirim.
+
+440
+01:58:54,355 --> 01:59:13,655
+Ya zaten kendi seçeceğim demeyenler için ben bir şey tanımlayacağım. Onu da dediğin gibi bir şey tanımlayayım. Hem öğretici olmuş olur hem de birkaç farklı algoritmayı denemiş olursunuz. Tamam öyle bir şey yapayım ben.
+
+441
+01:59:14,216 --> 01:59:15,176
+Teşekkürler hocam.
+
+442
+01:59:15,475 --> 01:59:17,615
+Ben de teşekkür ederim. Fikir geldi aklıma.
+
+443
+01:59:17,615 --> 01:59:18,975
+Tamam.
+
+444
+01:59:19,956 --> 01:59:22,696
+Hocam ben bir şey sorabilir miyim?
+
+445
+01:59:23,096 --> 01:59:23,336
+Tabii.
+
+446
+01:59:23,336 --> 01:59:36,376
+Yani geçen haftaki derse ben katılamadım da bir de GESİS'teki şeyleri alamıyorum. Daha başka bir ödev verdiniz mi yoksa sadece bu en son verdiğiniz o harf tanıma?
+
+447
+01:59:38,516 --> 01:59:41,336
+Güzel soru.
+
+448
+01:59:42,676 --> 02:00:05,176
+Şimdi ödev verdiğimi hatırlamıyorum. Bunu arkadaşlarının soracağını ya da dersi dinleyeceğini diyeyim. Notlanacak bir ödev, yani sabit edeceğiniz bir şey vermedim. Ama belki şunu deneyin, bunu deneyin diye bir şey demişimdir. Yok demedim galiba geçen hafta. Diğer sorun neydi?
+
+449
+02:00:06,739 --> 02:00:13,819
+Başka bir sorum yok da, ona ek olarak bir şey veriyorsunuz ya, bazen GESİS'ten üzerinden gönderiyorsunuz. Ben o mailleri alamadım.
+
+450
+02:00:13,819 --> 02:00:22,679
+Hayır, hayır. GESİS'ten bir şey göndermedim. Yalnız onu ne zaman düzeltecekler? GESİS kaydını.
+
+451
+02:00:23,087 --> 02:00:34,887
+Yani ben onun için 3-4 tane mail attım. Çok bir sonuç elde edemedim. Sürekli bana işte farklı bir şekilde bir tane şey var. Kalıp bir mailleri var. Onunla geri dönüyorlar.
+
+452
+02:00:35,947 --> 02:00:38,187
+Bilmiyorum yani nasıl yapacağımı da.
+
+453
+02:00:38,207 --> 02:00:40,727
+Çok ilgilenemiyorlar. Muhtemelen bakmıyorlar.
+
+454
+02:00:40,727 --> 02:00:41,787
+Tamam.
+
+455
+02:00:43,731 --> 02:01:02,251
+Bana sen yine bir mail gönderir misin? En azından geçişten, hani şimdi bu konu çok şey değil de, onu ders duvarında da duyuruyorum ama önemli bir şey gönderecek olursam veya son dakika bir şey gönderecek olursam kendime çok güvenmemekle birlikte hatırlamayı umuyorum.
+
+456
+02:01:03,091 --> 02:01:05,952
+Bak [öğrenci] arkadaşım WhatsApp grubu gönderdi.
+
+457
+02:01:07,011 --> 02:01:09,112
+Evet biliyorum, orada varım zaten hocam.
+
+458
+02:01:09,423 --> 02:01:22,003
+Tamam, oradan zaten söylüyorlar muhtemelen. Önemli bir şey varsa. Yani Gessis'ten gönderdiğim böyle önemli bir şey olursa yine grubunuz üzerinden.
+
+459
+02:01:22,203 --> 02:01:24,503
+Bayağıdır orada bir şey dönmedi de o yüzden.
+
+460
+02:01:24,703 --> 02:01:33,423
+Dönmedi. Yani yok dönmek zorunda değil zaten. O acil durumlarda kullandığım bir şey. Bir şekilde hepinize ulaşmam gerekirse.
+
+461
+02:01:33,935 --> 02:01:37,675
+Kullanacağım bir şey. O da genellikle ders yapamayacaksa.
+
+462
+02:01:37,695 --> 02:01:44,095
+Biraz böyle kişisel bir problem gibi bu ama işte bayağı da zor durumda kalıyorum bu konuda.
+
+463
+02:01:44,435 --> 02:01:51,215
+Yok yok. Bizim tarafta tek şeyi ders yok demişimdir. Ödevi yayınladım demişimdir.
+
+464
+02:01:51,756 --> 02:01:59,135
+Onu takip edersem WhatsApp grubunda zaten söylenecek bir şeydir diye tahmin ediyorum.
+
+465
+02:01:59,855 --> 02:02:01,496
+Sıkıntı yaşatmaz sana.
+
+466
+02:02:02,195 --> 02:02:03,515
+Teşekkür ediyorum hocam.
+
+467
+02:02:03,916 --> 02:02:09,456
+Tamam, ben de teşekkür ederim. O zaman arkadaşlar ben izninizi istiyorum.
+
+468
+02:02:10,836 --> 02:02:11,515
+İyi günler hocam.
+
+469
+02:02:11,895 --> 02:02:13,195
+İyi günler, haftaya gidelim.
+
+470
+02:02:13,195 --> 02:02:13,676
+İyi günler hocam.
+
+471
+02:02:14,296 --> 02:02:15,475
+Sağ olun, sağ olun.
+
+472
+02:02:25,140 --> 02:02:25,399
+Teşekkürler.

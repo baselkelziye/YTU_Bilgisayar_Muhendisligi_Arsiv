@@ -1,0 +1,1687 @@
+1
+00:01:54,932 --> 00:02:04,671
+Merhaba arkadaşlar. Biraz bekliyorum gelen olur mu diye. Bu arada bir şey sormak istiyorsanız dinleyebilirim.
+
+2
+00:04:25,555 --> 00:04:34,175
+Peki, başlayalım isterseniz. Var mı ödevlerle ilgili sorunuz? Varsa onları bir dersin başında halledelim.
+
+3
+00:04:55,956 --> 00:05:04,036
+Peki. Bu arada birisi benim sesimin geldiğini onaylayabilir mi?
+
+4
+00:05:05,496 --> 00:05:06,996
+Geliyor hocam.
+
+5
+00:05:06,996 --> 00:05:08,295
+Tamam, süper.
+
+6
+00:05:10,256 --> 00:05:16,536
+Şimdi geçen hafta biraz aslında özet geçmiş oldum ama tekrar tekrarlayacağız arada.
+
+7
+00:05:17,012 --> 00:05:36,872
+O yüzden çok üzerinde durmuyorum. Ödeviniz de ya Back Propagation ile ilgili olacak ya da şimdi konuşacağımız veya ilerleyen günlerde konuşacağımız diğer ağ yapılarından biriyle ilgili olacak bitirme projeniz gibi diyeyim finaliniz.
+
+8
+00:05:38,692 --> 00:05:42,091
+Dolayısıyla tekrar döneceğim Back Propagation'a.
+
+9
+00:05:42,516 --> 00:05:53,975
+Bugün birazcık artık Deep Learning'e giriş yapayım. Benden ötürü tabii biraz ağır gitti ders. Biraz Deep Learning konularına başlayalım istedim.
+
+10
+00:05:55,975 --> 00:06:07,176
+Şimdi ana meselemiz tabii Deep Learning dediğimiz şey, Nural Network ile ilgili dolayısıyla konuştuğumuz her şey aslında burada biraz daha gelişmiş versiyonlarıyla.
+
+11
+00:06:07,699 --> 00:06:17,419
+Karşımıza da çıkıyor. Dediğim gibi zaten backpropagation algoritması en önemli kullandığımız algoritmalardan biri olacak.
+
+12
+00:06:17,939 --> 00:06:27,639
+Onun dışında da öğrenme olayı aslında temelde mantık aynı ama kullandığımız aktivasyon fonksiyonu değişecek.
+
+13
+00:06:28,639 --> 00:06:38,439
+Ve bazen aktivasyon fonksiyonunun yerine filtreler, konvolüsyonel ağlarda filtreleri kullanarak işlem yapacağız.
+
+14
+00:06:42,995 --> 00:06:57,015
+Deep Network'e geçişimizin arkasındaki şey, bir iki tane backpropagation'daki problemin çözülmesi ki bu da aslında yine kullandığımız aktivasyon fonksiyonuyla ilgili.
+
+15
+00:06:57,015 --> 00:07:03,435
+Bir de GPU'ların çıkması nedeniyle daha fazla ara katman kullanabilmemiz.
+
+16
+00:07:08,208 --> 00:07:13,668
+Ara katmanla idare ediyorduk. Şimdi aralarda söyleyeceğim.
+
+17
+00:07:14,064 --> 00:07:36,972
+Onun bir iki sebebi var. Ama bir sebebi de çok fazla hesaplama işi olduğu için CPU'larla bunlarla baş edemememiz. Dolayısıyla hani Deep Learning çok yeni bir şey değil. Kendi içinde düşünce olarak sadece biraz silahların...
+
+18
+00:07:37,108 --> 00:07:54,807
+Artmış olmasıyla hesaplama bunların başında geliyor, hesaplama gücü. Tekrar popüler olmuş bir kavram. Bir şekilde de görüyorsunuz çok da fazla uygulama alanı buluyor kendisine.
+
+19
+00:07:57,300 --> 00:08:06,940
+Şuradaki şeyler kabaca çok duyacağınız terimler ama ben burada özellikle non-linearity'yi tekrar söylemek istiyorum.
+
+20
+00:08:07,680 --> 00:08:20,899
+Genel yapay sinir ağını da çok katmanlı multilayar perseptronları kullanmamızın sebebi de, deep learning'in sebebi de elimizdeki problemlerin non-linear olması.
+
+21
+00:08:20,899 --> 00:08:23,280
+Non-linear olması ne demek?
+
+22
+00:08:25,300 --> 00:08:33,840
+Burada parametreyi aynı anda optimize etmemiz, aynı anda problemimizi çözecek şekilde en uygun.
+
+23
+00:08:34,259 --> 00:08:49,779
+değerlerine getirmemiz gerekiyor. Birbirleriyle ilişkileri lineer olmadığı için bunları lineer denklem setleriyle veya bildiğimiz lineer cevir işlemleriyle ifade edip çözerek bulamıyoruz.
+
+24
+00:08:50,419 --> 00:09:00,700
+Dolayısıyla elimizdeki problemler her zaman için non-lineer problemler ve çok boyutlu non-lineer problemler.
+
+25
+00:09:02,259 --> 00:09:26,500
+Bir boyut, üç boyutta değil, çok daha yüksek boyutlara gidiyoruz. Dolayısıyla elinizde böyle bir problem varsa Deep Learning iyi bir araç diyebiliriz herhalde. Deep Learning araştırmacılarından adını yine çok duymuş olabileceğiniz Andrew Engie, Jeff Hinton, Jan Lecun, Yaşua Benjiyo, Andra Kapatye var.
+
+26
+00:09:26,995 --> 00:09:47,375
+Eğer duymadıysanız da onların kaynaklarına bakmak isteyebilirsiniz. Andrew Engine'in Coursera'da güzel Machine Learning ve Deep Learning kursları var. Açık YouTube'da da var. Benzer şekilde Jeff Hinton'un konuşmaları, Yanleko'nun da.
+
+27
+00:09:47,792 --> 00:10:00,451
+Bu konuda konuşmaları, Andra Kapati'nin dokümanları var. Bunlara bir şekilde denk gelmediyseniz, bakmadıysanız aklınızda olsun ve ara ara belki bakmak isteyebilirsiniz.
+
+28
+00:10:01,331 --> 00:10:28,971
+Deep Learning, biraz rakamlarım eski ama başlangıç için doğru olan şeyler. Deep Learning bir anda çok ilgi gördü ve büyük firmalar yatırım yapmaya başladı. Google'ın 5-6 sene önceki rakamdı galiba bu. 400 milyon dolarlık bir yatırımı vardı o zaman. Apple, Self-Driving Car projesini başlattı.
+
+29
+00:10:29,331 --> 00:10:43,132
+Zaten Nvidia şu anda da marketi tamamen domine etmiş durumda. GPU'ları üretmeye başladı. Ve Deep Learning'de çok fazla kullanılan işlemciler bunlar.
+
+30
+00:10:43,132 --> 00:10:51,932
+Toyota benzer şekilde 1 milyar dolarlık AI yatırımı yaptı, araştırma yatırımı yaptı.
+
+31
+00:10:52,000 --> 00:11:02,340
+Sonra da bu firmaların sayısı da zaten çok fazla bir şekilde arttı. Şu anda herkes AI ve Deep Learning diyor ve kullanıyor.
+
+32
+00:11:06,548 --> 00:11:20,347
+Basitçe derin öğrenmenin ne olduğunu söylememiz gerekirse, dediğim gibi elimizde non-linear bir problem var. Aslında oturup yazmaya kalksanız matematiksel olarak ifade edebilirsiniz.
+
+33
+00:11:20,347 --> 00:11:32,528
+Yapay sinir ağında da olduğu gibi sonuçta yaptığımız işlemleri biliyoruz tasarlarken. Bir şekilde hatta daha da indirgersek toplama çarpma matriz işlemlerine dayanıyor.
+
+34
+00:11:32,960 --> 00:11:40,900
+Fakat çok değişkenimiz olduğu için bu denklemler gittikçe büyük, karmaşık denklemler haline geliyor.
+
+35
+00:11:40,900 --> 00:11:49,860
+Ve sonucunda da bize aslında uzun kodlar çok fazla işlem olarak dönüyor.
+
+36
+00:11:51,900 --> 00:11:54,900
+Temelde basit ama...
+
+37
+00:11:55,668 --> 00:12:09,288
+Çok sayıda işlemin oluşturduğu yapılar, beynin dedik zaten bir şekilde basitleştirilmiş bir modelini oluşturmaya çalışarak yola çıkmış şeyler.
+
+38
+00:12:10,407 --> 00:12:17,728
+Burada tabii söylemek isteyeceğim şey, işte kalabalık, kod bir kalabalığı var.
+
+39
+00:12:21,076 --> 00:12:47,256
+Her şeye deep learning değil veya her şeye çok fazla katman kullanarak değil, belki daha farklı bir çözüm yolu var mı diye bakmak lazım. Çok fazla parametreniz yoksa, çok fazla elinizde veri yoksa deep learning sizin için iyi bir fikir olmayabilir. Dolayısıyla aralarda konuştuğumuz bazı şeyleri dikkate alarak deep learning'e.
+
+40
+00:12:47,631 --> 00:13:01,151
+Gitmemiz lazım. Tabi bu kadar çok matematiksel işlem için tekrar tekrar kod yazmanın zorluğundan dolayı şu anda sizin de haberdar olduğunuz pek çok.
+
+41
+00:13:01,524 --> 00:13:18,264
+Kütüphane var. Herkes bu kütüphanelerden yararlanıyor. Dolayısıyla siz de yararlanıyorsunuzdur, yararlanacaksınız. Burada da söylemek isteyeceğim şey, kütüphaneleri kullanılması ayrı bir şey.
+
+42
+00:13:18,803 --> 00:13:31,423
+Ama arkadaki mantığı anlamadan bir mimariyi kullanmaya kalktığınızda aslında çok da yenilikçi bir şey yapmış olmuyorsunuz.
+
+43
+00:13:31,423 --> 00:13:44,423
+Dolayısıyla mimari seçerken de en azından bilinçli seçmeniz, hazır eğitilmiş modeller veya başka bir problemde işe yaramış modelleri kullanmaya...
+
+44
+00:13:45,395 --> 00:14:07,595
+Başladığınız zaman orada herhangi bir modifikasyon yapabilmeniz için en azından anlamanız gerekiyor. Yoksa onun dışında kimse sıfırdan bir şeyleri yazmıyor. Öyle bir beklenti veya gerek de yok. Olmayacaktır ama arkadaki mekanizmayı anlamak lazım.
+
+45
+00:14:08,563 --> 00:14:31,163
+Peki, bir iki ufak daha farkı var Deep Learning'in. Nöron Network'lerde bir nöron ağı vardı. Bu nöronları bağlayan bağlantılarımız vardı. Bu bağlantıların ağırlıkları vardı. Ana fonksiyonumuz bir grup inputumuz.
+
+46
+00:14:32,947 --> 00:14:53,007
+Girdiğimiz vardı ağa. Bu ağları burada kompleks diyor ama kompleksin kastım yine işlemlerin içeriği değil, sayısından gelen toplamalar, çarpmalar ve fonksiyon uygulayarak yaptığımız hesaplamalar vardı. Ondan sonra da bir çıktı oluşturuyorduk.
+
+47
+00:15:01,076 --> 00:15:15,076
+Test ederek belli bir hata oranına düşürdüğümüzde de artık bir ağ oluşturduk. Bununla biz problemimizle ilgili diğer verileri de verdiğimizde problemin çözümünü yapabiliriz diyorduk.
+
+48
+00:15:18,419 --> 00:15:33,799
+Derin öğrenmede durum hiç farklı değil. Bir tek derin öğrenmede dediğim gibi fonksiyon olarak kullanacağımız şeyler değişebiliyor. Özellikle görüntü tarafında CNN'de filtreleri kullanabiliyoruz.
+
+49
+00:15:34,128 --> 00:15:59,348
+Bir de bütün nöronların olduğu gibi, baştan mimari oluşturduğumuz gibi kalması gerekmiyor. Başka teknikler uygulayabiliyoruz nöronların sayısını azaltmak için. Bir de nöron network'te bütün nöronların diğerlerine bağlı olması gerekiyordu. Burada bazı özel durumlarda, özellikle filtre kullandığımız CNN'de.
+
+50
+00:15:59,764 --> 00:16:17,423
+Her nöron, diğer katmandaki her nörona bağlı olacak diye bir kısıtlamamız yok diyebiliriz. Temelde bu kadar bir farkı var. Ama özde fonksiyonlarımız burada yazıldığı gibi aynı.
+
+51
+00:16:17,423 --> 00:16:23,083
+Peki, hangi problemlerde kullanıyoruz? Classification için?
+
+52
+00:16:25,683 --> 00:16:29,763
+Çok yaygın ve başarılı bir şekilde kullanabiliyoruz.
+
+53
+00:16:29,763 --> 00:16:48,603
+Bir takım objeleri veya farklı şeyleri gruplayacağımız, birbirlerinden ayıran özellikleri olan kümelerimiz varsa bunları ayırmada, gruplamada kullanabiliyoruz.
+
+54
+00:16:50,803 --> 00:17:07,284
+Bir classification probleminde neler olabilir diye bakarsak, kabaca yine burada bir hatadan bahsediyoruz ama deep learning de genellikle score olarak adlandırıyoruz.
+
+55
+00:17:09,460 --> 00:17:28,780
+Neural Network'te hata dediğimiz şeyi çoğunlukla bu tarafta skor olarak isimlendireceğiz. Bir grup inputumuz var. Bu inputlar gruplamak istediğimiz, klasifiye etmek istediğimiz şeyin özellikleri olarak düşünülmeli.
+
+56
+00:17:34,991 --> 00:17:55,192
+Sınıflamak istiyorsak kişinin boyu, kilosu ve ateşi gibi üç tane özelliğinden giderek bir karara varabiliriz. Hangi sınıfa koyacağımıza hasta veya değil şeklinde bir sınıflamaya gidebiliriz.
+
+57
+00:17:57,231 --> 00:17:59,731
+İçerideki mekanizma yine şeye benziyor.
+
+58
+00:18:00,115 --> 00:18:22,936
+Diğer çok yaygın kullanılan klasifikasyon için kullanılan yöntemler, lojistik regresyon var. Regresyondan biraz bahsettik. Lojistik regresyon da aslında onun özel bir hali. Esliyan var, Naif Bayez var. Belki Esliyan ve Naif Bayez bir yerlerde karşınıza çıktı mı?
+
+59
+00:18:25,907 --> 00:18:32,987
+Makine öğrenmesini de gördünüz. Herkes aldığımı bilmiyorum. Ben Bayez'i duymuştum hocam.
+
+60
+00:18:34,107 --> 00:18:41,947
+Bayez ama tek başına Bayez'den bahsetmiyoruz. Nayib Bayez'den bahsediyoruz. Ayırımını biliyor musun?
+
+61
+00:18:44,067 --> 00:18:47,827
+Tamam. Bir şekilde en azından o zaman duymuş olun burada.
+
+62
+00:18:50,003 --> 00:19:08,123
+Şimdi bunu söyleme sebebim de eğer probleminiz çok karmaşık değilse, çok fazla özellik, çok fazla sınıf söz konusu değilse, bu tip yöntemlerle çözülebiliyorsa direkt bunları da kullanmanız söz konusu olabilir.
+
+63
+00:19:08,123 --> 00:19:14,583
+Yani var olan her şeyi de deep learning silecek veya silmeli diye bir şey söz konusu değil.
+
+64
+00:19:14,976 --> 00:19:38,656
+Birazcık bugün ondan bahsedeceğim. Hangi durumlarda Deep Learning tercih edelim diye. Başka Classification için kullanılabilir dedik. Neural Network olarak da kullanabilirdik zaten Classification için. Kullandık da hatta. Ödevinizde yaptığınız şey de buydu.
+
+65
+00:19:40,948 --> 00:20:03,228
+Harfleri, kümeleri ayırdık işte farklı fontlardan gelenler. Dolayısıyla bunu bir multilayer perseptronla da yapabilirdik. Burada dediğim gibi eğer çok komplekse probleminiz en azından daha fazla katman ekleyerek deep learning ile de benzer problemleri çözebilirsiniz.
+
+66
+00:20:05,268 --> 00:20:06,588
+Peki.
+
+67
+00:20:07,220 --> 00:20:18,360
+Şimdi temelde yine işlemlerimiz aynı. Mutlaka inputlarımız var. Beklediğimiz outputlar var. Bu ister classlar olsun ister başka bir şey olsun.
+
+68
+00:20:18,816 --> 00:20:41,395
+Ara katmanlarımız var. Bir de bunlar mimariyle ilgili şeyler. Bir de öğrenme algoritmamız var. Dolayısıyla öğrenme algoritması da bize eğitimi nasıl yapacağımızı söylüyor. Bir eğitim aşaması belli bir mimariye bir öğrenme algoritması uygulanıp.
+
+69
+00:20:41,748 --> 00:20:59,528
+Sonuç almaya çalışıyoruz. Dediğim gibi burada farklı olarak kost terimini sıklıkla kullanacağız. Sonuçta kost dediğimiz şeyde maliyet, hatada bir maliyet bizim açımızdan.
+
+70
+00:21:01,208 --> 00:21:07,468
+Kastettikleri şeyler aynı şey aslında ama kost terimini de burada söylemiş olalım.
+
+71
+00:21:10,740 --> 00:21:32,019
+Training kısmında yapmaya çalıştığımız şey, bağlantı ağırlıklarını ayarlamak. Burada da durum farklı değil. Doğru bağlantı ağırlıkları kombinasyonunu bulduğumuz zaman da aslında ağın güvenilirliğine başka inputlar için de doğru sonuç verme olasılığını artırmış oluyoruz.
+
+72
+00:21:33,652 --> 00:21:39,252
+Bundan sonrasında da doğru tahminler yapabilmesini bekliyoruz ağın.
+
+73
+00:21:40,712 --> 00:21:44,752
+Şimdi ne zaman kullanmalıyız derin öğrenmeyi?
+
+74
+00:21:45,412 --> 00:21:50,532
+Eğer probleminiz basitse, basitten kastım eşittir.
+
+75
+00:21:51,132 --> 00:21:53,712
+Az sayıda parametre, az sayıda sınıf var.
+
+76
+00:21:54,512 --> 00:21:56,712
+Elinizde de örnek de çok fazla yok.
+
+77
+00:22:00,596 --> 00:22:23,135
+Yöntemler iş görecektir. Deep Network ile uğraşmanın gereği yok. Eğer orta komplekslikte yani biraz daha fazla özellik ve ikiden üçten fazla sınıf söz konusuysa o zaman Deep Network'leri kullanırsanız başarınız daha yüksek olacaktır.
+
+78
+00:22:23,471 --> 00:22:47,332
+Problemin sizin açınızdan önemi, hesaplama kaynaklarınız vs. göre SPM ile de iş yapabilirsiniz. Probleminiz kompleksse SPM gibi metotlarla sonuca gidemeyeceksiniz. O noktada da Derin Ağlar en veya tek mantıklı seçiminiz oluyor.
+
+79
+00:22:47,892 --> 00:23:02,352
+Şimdi derin ağlar yokken çözemediğimiz problemleri aslında çözebilmeye başladık. Yani yarattığı etkinin sebeplerinden birisi de veya en önemlisi de bu.
+
+80
+00:23:02,352 --> 00:23:09,892
+Hani bir takım problemler vardı, kompleks problemler vardı, doğada da.
+
+81
+00:23:10,208 --> 00:23:36,048
+Genel hayatın içinde de. Ama elimizde yöntem yoktu veya mevcut yöntemler yetersiz kalıyordu. Artık onları da çözebilmeye başladık. Zaten o yüzden bir takım alanlar açıldı ve ilerlemeye başladı. Dolayısıyla derin öğrenme veya derin ağların önemi büyük.
+
+82
+00:23:37,236 --> 00:24:04,516
+Peki kabaca bir pattern tanıma veya kompleks bir pattern'ın bir derin ağda işlenmesi sırasında neler olduğuna bakacak olursak, bu da aslında neden fazla katman kullanmamızın gerekli olduğunu veya fazla katman kullandığımızda bize ne faydası olduğunu biraz da açıklıyor.
+
+83
+00:24:04,976 --> 00:24:18,816
+Elimizdeki pattern eğer çok kompleksse mutlaka öne çıkan birden fazla önemli ayırt edici olabilecek birden fazla özellik söz konusu demektir.
+
+84
+00:24:18,816 --> 00:24:31,636
+Bu pattern'ı aslında parçalarına ayırmak ve bir takım özelliklerini ayrıştırmak için farklı yöntemler kullanmak isteyebiliriz.
+
+85
+00:24:32,976 --> 00:24:49,932
+Yüz tanıma yapan bir tane derin ağ düşünelim. Burada ilk katmanda...
+
+86
+00:24:50,003 --> 00:25:12,843
+Aslında ten rengiyle ilgili olarak belki piksel renklerini koyu açık şeklinde sınıflandıran bir işlem söz konusu olabilir. İkinci katmanda kenar, köşe veya temel basit şekilleri tespit eden bir...
+
+87
+00:25:12,915 --> 00:25:34,215
+Bu işlemler ne olacak? Bu işlemler aslında aktivasyon fonksiyonları. Yani birinci katmanın aktivasyon fonksiyonu bir şekilde rengi öne çıkaran, piksellerin koyuluğunu, açıklığını öne çıkaran, ikinci katmanda kenar belirlemeye yönelik bir şey olması lazım.
+
+88
+00:25:34,640 --> 00:26:02,619
+Şimdi problemi böyle düşündüğünüz zaman konvolüsyonel ağların çıkışı da çok doğal gelmeye başlayacak. Şimdi benim her katmanım bir iş yapacaksa, her katmanda belli özellikleri tespit etmeye çalışacaksam ve bu özellikleri işte görüntü işlemeyle ilgili açıktı, koyuydu, kenardı veya işte daha kompleks şekiller.
+
+89
+00:26:02,640 --> 00:26:19,259
+Özellikler ise görüntü işlemede kullandığımız filtrelerin veya renk filtrelisi olsun, kenar belirleme filtreleri olsun bunların kullanılması çok mantıklı geliyor.
+
+90
+00:26:20,480 --> 00:26:24,740
+Konvolüsyonel ağların çıkış noktası da bu aslında.
+
+91
+00:26:25,759 --> 00:26:53,619
+Klasik multiler persektron gibi çokçana katman ekleyerek de belli bir başarıya ulaşabilirdik ama her katmana daha spesifik bir görev verip orada da daha spesifik filtreler kullanmamız aslında hem başarıyı artıracak hem de işlemleri hızlandıracak bir şey olabilir mantığıyla düşündüğümüzde konvaryasyonel ağlar.
+
+92
+00:26:53,759 --> 00:27:04,480
+Bir şekilde ortaya çıkmış ve başarısı da ortada zaten. Şimdi ilk katman o zaman ter rengini belirlesin. İkinci katman işte kenarları.
+
+93
+00:27:04,880 --> 00:27:25,519
+Keskin şekilleri ve basit şekilleri belirlesin. Sonraki katman biraz daha kompleks şekilleri, kaşı gözü falan belirlesin diyerekten böyle katmanlardan oluşmuş bir derin ağ ile aslında yüz tanıma yapabiliyoruz.
+
+94
+00:27:29,011 --> 00:27:36,832
+Genelde mantık bu şekilde her lirada bir iş yapılacakmış gibi gidebilir.
+
+95
+00:27:37,779 --> 00:28:00,440
+En sonunda da bir bütün son çıkık katmanında da bir bütün haline getirip tespit ettiğimiz özellikleri aslında elimizdeki örneklerden en çok hangisine eşleştiğini, hangisine benzediğini tespit ederek aslında kişi tanıma, yüz tanıma gibi algoritmalar oluşturabiliyoruz.
+
+96
+00:28:00,884 --> 00:28:08,404
+Burada genelde sorulan şeyi daha sonra soracaktınız belki ama baştan söylemiş olayım.
+
+97
+00:28:08,819 --> 00:28:15,299
+Filtreleri seçerken bu kadar tasarlanmış mı seçiyoruz?
+
+98
+00:28:15,299 --> 00:28:36,819
+Şimdi duruma göre eğer işiniz yüz tanımaysa, bu kadar tanımlı bir işse yüzde olmasını beklediğimiz özellikler tam da burada söylediğim gibi yüzü ayırt eden ten rengiydi, keskin çizgiler, kaştı gözlü sonuçta her yüzde var.
+
+99
+00:28:36,819 --> 00:28:50,459
+Bunları ortaya çıkacak filtreleri seçmeniz, yani baştan kullanacağınız filtrelerin ne olacağını düşünerek, dizayn ederek seçmeniz çok doğal.
+
+100
+00:28:50,459 --> 00:29:03,699
+Ama çok da fazla bu kadar ayırt edici bir probleminiz yoksa, elinizde bir takım görseller var, onun içinde bir şey tespit etmeye çalışıyorsunuz.
+
+101
+00:29:04,819 --> 00:29:17,799
+Görsellerin background'u veya görsellerin daha büyük alanını kapsayan görüntüler birbirinden çok farklıysa bu filtre seçimini sizin tasarlamanız çok da anlamlı değil.
+
+102
+00:29:17,799 --> 00:29:21,799
+Temel filtreleri kullanacak şekilde...
+
+103
+00:29:22,271 --> 00:29:41,811
+Katvanlara dağıtıp aslında bir şekilde ağın bununla baş etmesini yani ihtiyacı olmayan filtreleri kullanmayacaktır. Zaten oradaki bağlantılar zayıflayacaktır. Ağın baş etmesi için bırakmak daha mantıklı.
+
+104
+00:29:42,240 --> 00:30:08,240
+Dolayısıyla biz mi problemi tasarlıyoruz yoksa A mı neyi kullanması gerektiğini karar veriyor? Orası mı akıllı, biz mi akıllıyız noktasında? İkisi birlikte diye düşünebilirsiniz ama sonuçta kararı Derin Ağ'ın vermesine izin veriyoruz. Biz sadece ona gereken...
+
+105
+00:30:08,496 --> 00:30:23,256
+Toolları, görüntü işleme durumunda da filtreleri vermek durumundayız. Onların hangisinin işe yaradığını veya ne kadar kullanacağına da derin ağın kendisi karar vermiş oluyor.
+
+106
+00:30:30,076 --> 00:30:33,956
+Derin ağların bir dezavantajı eğitim.
+
+107
+00:30:35,028 --> 00:31:00,667
+Prosesinin çok uzun sürmesi. Bu da doğal olarak çok fazla katmanımız ve çok fazla hesaplama işimiz var dedik. Dolayısıyla GPU'ların kullanımı neredeyse elzem. Şu anda problemler de o kadar büyüdü ki GPU'suz neredeyse herhangi bir derin ağ eğitmek mümkün değil.
+
+108
+00:31:01,087 --> 00:31:19,372
+Dolayısıyla belki bir dezavantaj GPU gerekliliği, kısmen fiyat parametresi. Ama zaman olarak da GPU'nun...
+
+109
+00:31:19,412 --> 00:31:33,332
+Bir haftadan aşağıda bitirdiği bir eğitim işlemini büyük bir problemden bahsediyorsak, CPU'nun haftalar veya aylar içinde yapabilmesi söz konusu. Bu arada olacak aksilikleri falan hiç katmıyorum.
+
+110
+00:31:34,852 --> 00:31:41,592
+Dolayısıyla GPU, Derin Ağların kullanımında kritik bir öneme sahip.
+
+111
+00:31:42,708 --> 00:32:06,928
+Peki, nasıl seçeceğiz kullanacağımız derin ağın modelini? Problemimiz için hangisi uygundur diye çok genel bir bakış yapmak istersek, dikkate almamız gereken şey öncelikle elimizdeki veri. Verimiz ne tip bir veri ve etiketli mi değil mi?
+
+112
+00:32:07,347 --> 00:32:24,207
+Eğer elinizdeki veri etiketsizse zaten seçenekleriniz oldukça kısıtlı oluyor. Birincisi autoencoderlar, ikincisi de Restricted Bosn Machine kullanabileceğiniz iki tane.
+
+113
+00:32:24,624 --> 00:32:39,244
+Derin ağ, elinizdeki etiketsiz veri için. Otoenkoder'larla aslında bir nevi veriyi verip, birazdan herhalde bugün yetiştirirsek bir bahsedeceğiz otoenkoder'ın yapısından.
+
+114
+00:32:41,200 --> 00:33:06,620
+Onun herhangi bir etiketle eşleşmesi için de öğrenmeyi autoencoder'a bırakıyorsunuz. Dolayısıyla aslında verinizi bir nevi etiketlemiş oluyor autoencoder'lar. Birbirine benzeyen patternları aynı etiketle eşleştirip, kalanları farklı etiketlerle eşleştirerek sizin için otomatik etiketleme işlemi yapmış oluyor.
+
+115
+00:33:07,124 --> 00:33:23,004
+Nerede yarar bu yapılar işimize RBM ve Auto Encoder'lar? Genellikle Feature Extraction, Pattern Recognition gibi problemlerde kullanabileceğimiz yapılar.
+
+116
+00:33:23,004 --> 00:33:29,544
+Tabii ki verimiz etketsiz olduğu için öğrenmemiz de unsupervised olacak.
+
+117
+00:33:31,892 --> 00:33:40,692
+Veriyi etiketlemek için autoencoder'ı kullandığımızda bir nevi feature extraction da yapabileceğimizi anladığınızı tahmin ediyorum.
+
+118
+00:33:41,492 --> 00:33:56,492
+Sonuçta farklı özellikler için farklı etiket veya birbirine benzeyen özellikleri olanları aynı tip gruba koyma veya aynı veriyle eşleştirme gibi.
+
+119
+00:33:57,811 --> 00:34:13,951
+Özellikleri var otoenkoderların. Elinizdeki veri etiketli ise seçenekleriniz tabii daha fazla. Burada da problemin türüne bağlı olarak aslında bir seçim yapmak gerekebilir.
+
+120
+00:34:16,115 --> 00:34:30,175
+Şimdi eğer ses işleme gibi, aslında bu sadece ses işleme de demeyelim, video işleme de dahil veya zaman serisine bağlı problemler.
+
+121
+00:34:32,211 --> 00:34:52,231
+Geçmişle ilişkili herhangi bir data varsa elinizde, geçmişten kastım sadece zaman olarak geçmiş değil, bir önceki, iki önceki veriyle şu andaki verinin herhangi bir ilişkisi, etkilenme durumu varsa kullanmanız gereken şeyler recurrent ağlar olacak.
+
+122
+00:34:54,072 --> 00:35:00,211
+Dolayısıyla konuşma tanımada, sonuçta konuşmanın içinde bir bütünlüğü ilişkisi var.
+
+123
+00:35:00,211 --> 00:35:17,211
+Vardır ya, lafa nereden başladığınız, nasıl bitireceğinize dair bir ipucu barındırır. Bu tür problemlerde reküren talarları kullanıyoruz. Obje tanıma ve görüntüyle ilgili şeylerde...
+
+124
+00:35:17,760 --> 00:35:33,460
+Arentiyel veya konvolüsyonel ağlar. Tabii bu arada konvolüsyonel ağlarında bir sürü çeşidi var. Sadece CNN değil artık. Varyasyonlarını da düşünebilirsiniz burada.
+
+125
+00:35:33,936 --> 00:35:48,096
+Bu tip problemlerde obje tanımada kullanabiliyoruz. Yine görüntü işleme, görüntü tanımada Deep Belief Networkler, DBN ve Kovalüsyonel Ağları.
+
+126
+00:35:48,480 --> 00:36:12,840
+Kullanabiliyoruz. Tekst işlemede de Recurrent Tensör Networkler yine alentiyen ve Recurrent Ağları kullanabiliyoruz. Burada yine aslında Recurrent Tekste de sonuçta metin işlediğiniz zamanda harf bazındaysa önceki harfler
+
+127
+00:36:14,547 --> 00:36:22,927
+Kelime bazında ise önceki kelimeler diğerini etkileyeceği için yine recurrent yapıları tercih ediyoruz.
+
+128
+00:36:24,467 --> 00:36:28,827
+Buraya kadar var mı söylemek istediğiniz, sormak istediğiniz bir şey?
+
+129
+00:36:35,059 --> 00:36:58,300
+Peki, Text Processing'den kastettiğimiz şeyler aslında sentiment analizi, parsing, isimlendirilmiş bir varlığın tanınması, herhangi bir dil modelinin
+
+130
+00:36:58,623 --> 00:37:21,463
+Karakter seviyesinde çalışan bir dil modelinin üzerinde yapacağınız işlemler, yani pars işlemi de dahil, entity tanıma da dahil, RNTL veya Recurrent Networklerle yapılabilir.
+
+131
+00:37:23,679 --> 00:37:29,199
+Görüntü için Deep Relief Networkler ve konvolüsyonel ağlar demiştik.
+
+132
+00:37:29,199 --> 00:37:45,259
+Gördüğünüz görüntüden bir objeyi tanımak veya görüntüyü herhangi bir etiketle manzaraydı, futboldu, şuydu, buydu gibi bir takım etiketlerle eşleştirmek için.
+
+133
+00:37:47,315 --> 00:37:57,835
+Tanıma işleminde kullanabilirsiniz konvolüsyonel ağları. Yine obje tanımada konvolüsyonel ağlar ve arantiyeni kullanabilirsiniz.
+
+134
+00:37:57,835 --> 00:38:04,835
+Buradaki arantiyen rekürant yapı olduğu için aslında...
+
+135
+00:38:05,523 --> 00:38:12,724
+Eğer akan bir sahne içinde obje tanıyacaksanız, aralardaki ilişkiyi de kurmanız söz konusu olabilir.
+
+136
+00:38:12,724 --> 00:38:32,223
+Yani birinci sahnede diyelim ki yaya yoktu. Bir araba geliyor. Burası yaya geçidi. Yaya geçidinin üzerinde yeni bir obje gördüğünüzde bunun bir yaya olduğunu, insan olduğunu anlamak için önceki bilgileri de kullanabilirsiniz.
+
+137
+00:38:33,523 --> 00:38:44,643
+Bir stop işareti vardı. İşte araba yoluydu burası. Burası da yaya geçidiydi. Yaya geçidinin üzerinde ne olabilir diyerek seçeneklerinizi azaltmış oluyorsunuz.
+
+138
+00:38:44,643 --> 00:38:54,563
+Recurrent bir ağ kullandığınızda veya konvolüsyonel networklerde direkt sahneye bakıp her objenin feature'ünü çıkararak.
+
+139
+00:38:54,896 --> 00:39:13,316
+Ayrıca etiketlemeniz söz konusu olabilir. Dolayısıyla işleme bakış açınız, rekürent bir ağ mı kullanacaksınız yoksa anlık sahneyi değerlendirmek üzere konvolüsyonel ağ mı kullanacaksınız. O kararı vermenize yarayacaktır.
+
+140
+00:39:14,736 --> 00:39:19,936
+Konuşma tanımada dediğim gibi rekürent ağlar ancak başarılı olacaktır.
+
+141
+00:39:21,396 --> 00:39:27,496
+Bir şekilde vurgular, vurgunun konuşmanın neresinde yapıldığı.
+
+142
+00:39:27,956 --> 00:39:55,076
+Belli kelimelerde insandan insana değişen ses tonu uzatma, kısaltma gibi özellikler değişebilir. Fakat bu özellikler ancak belli bir süre bakan bir konuşma içinde incelenirse daha doğru ayrılabilir. O yüzden de rekürent ağlar yine konuşma tanımı için.
+
+143
+00:39:55,503 --> 00:39:58,084
+Doğru bir seçenek olacaktır.
+
+144
+00:39:59,903 --> 00:40:05,824
+Klasifikasyon için multilayer perseptoronları da kullanabiliriz.
+
+145
+00:40:06,344 --> 00:40:10,403
+Zaten aslında bir nevi multilayer perseptoron kullanacağız.
+
+146
+00:40:11,324 --> 00:40:18,364
+Derin ağ demeye başladığımız noktada, Nural Network'teki çok katvanlı ağı,
+
+147
+00:40:18,364 --> 00:40:22,644
+derin ağ diye adlandırmaya başladığımız noktada aslında değişen tek şey,
+
+148
+00:40:22,976 --> 00:40:46,356
+Aktivasyon fonksiyonunu RELU, yani Rectified Linear Unitler olarak seçilmeye başlaması. Onun da faydasını ve sebebini söyleyeceğim birazdan. Dolayısıyla bildiğiniz neural network'teki çok katmanlı ağlarla da yapabiliriz klasifikasyon işlemini.
+
+149
+00:40:46,835 --> 00:40:52,055
+Zaman serisi analizinde ise yine Recurrent Ağlar kullanmamız gerekiyor.
+
+150
+00:40:53,807 --> 00:41:06,768
+Başka bir şeye bağlı, arda arda gelen durumlarda, değişkenlik gösteren, arda arda durumların birbiriyle ilişkili olduğu durumlar için rekür ürün taları kullanıyoruz.
+
+151
+00:41:08,048 --> 00:41:18,807
+Tabi bu zaman serisi analizi dediğimiz şey genellikle yıllara bağlı değişen pek çok istatiksel veriyi kapsıyor.
+
+152
+00:41:21,807 --> 00:41:48,468
+Anıldığı alan finansal sektörde her tür finans verisi zamanla ilişkili olarak veya zamana bağlı gösterdiği değişimler geleceğe dair tahmin yapmayı kolaylaştırdığı veya doğradığı için zaman serisi dediğimiz veriler genellikle finansal ve zamana göre istatiksel.
+
+153
+00:41:48,864 --> 00:41:56,224
+Veriler oluyor. Bunların da işlenmesinde rekürtörlerin kullanılması mantıklı.
+
+154
+00:41:56,224 --> 00:42:11,224
+Onun dışında, eğitme kısmına geldiğimiz zaman, madem böyleydi, nöra networklerden big networklere geçişimiz...
+
+155
+00:42:11,583 --> 00:42:33,803
+20 yıla yakındır sadece multilayer perseptrondan derina geçiş. İşte neural networklerin geçmişini de sayarsak 50 yılın üzerinde bir geçmiş var. Fikirin her şey ortada. Neden 50 yıl sürdü sahneye çıkması diye düşünülebilir.
+
+156
+00:42:34,304 --> 00:42:55,264
+Bunun nedeni işte eğitimin zorluğu ya da hesaplamaların karmaşıklığı. Dolayısıyla yeterince donanımsal altyapımız, işlem gücümüz yokken zordu derin ağların oluşturulması ve eğitilmesi.
+
+157
+00:42:58,356 --> 00:43:18,336
+Perseptron'a kadar olan ve perseptron da dahil non-linear problemleri çözmeyen yapıları saymıyorum ama non-linear problemleri çözeceğimiz multilayer perseptron ve backprop algoritmasının çıkışından itibaren bile onlarca yıl geçmiş durumda.
+
+158
+00:43:19,987 --> 00:43:38,288
+Weck-Prop algoritmasını biz niye multilere perseptron da şu anda kullandığımız gibi kullanamıyorduk? Çünkü çok temel bir problemimiz vardı. Bu da Vanishing Gradient dediğimiz gradiyanın kaybolması problemi.
+
+159
+00:43:38,804 --> 00:43:53,004
+Onu da şimdi söyleyeceğim. Vanishing Gradient probleminin çözülmesi ve GPU'ların sahneye çıkmasıyla aslında derin ağlar kullanılabilir hale geldi.
+
+160
+00:43:55,144 --> 00:43:59,124
+Vanishing Gradient ne? Onu bir konuşalım.
+
+161
+00:43:59,572 --> 00:44:17,871
+Şimdi hesaplamalarımızın nöron network'te de, DBN'de de, Derin Ağda da yapış şeklimiz aynı. Nörona gelen bağlantılar, bir önceki girdi nöronu çarpı ağırlık nörona giren toplam değeri veriyor.
+
+162
+00:44:18,304 --> 00:44:42,503
+Orada bir fonksiyon uyguluyoruz ve bu şekilde ileri doğru hesaplamalarımızı yapıyoruz. Sonra backprop yaparken ne yapıyorduk? Burada bir hata hesaplıyorduk. Hatayı da işte beklediğimiz değerle hesapladığımız değerin arasındaki farkı karesel olarak alıp karesel hata şeklinde kullanıyorduk.
+
+163
+00:44:42,900 --> 00:44:49,280
+Bu hataya etki eden ağırlıkları ayarlamak üzere hatayı geriye yaymaya başlıyorduk.
+
+164
+00:44:49,280 --> 00:45:07,239
+İşte o geriye yayma kısmı sıkıntı. Geriye yayma kısmı sıkıntı. Geriye yayarken biz bu hatayı hesapladık. Her hataya geçen hafta bahsettiğim şey bu.
+
+165
+00:45:07,599 --> 00:45:20,519
+Her hatayı hangi ağırlığın ne kadar etki ettiğini ve bu hata fonksiyonunu küçültmek için gradyanın tersi yönünde gideceğimizi söylüyordu bize back profile görütması.
+
+166
+00:45:21,420 --> 00:45:25,760
+Dolayısıyla hatanın gradyanını hesapladık, kısmi türevini hesapladık.
+
+167
+00:45:26,164 --> 00:45:34,564
+Dolayısıyla gradyanın kısmi türevini hesapladığımızda gradyanın değeri düştü.
+
+168
+00:45:34,564 --> 00:45:41,684
+Yani hata 3 birimdiyse onun bir değişkene göre türevini aldım. Küçürttüm.
+
+169
+00:45:42,420 --> 00:46:07,980
+Ondan sonra geriye yayarken tekrar bu türevi, burada küçük bağlantı ağırlıklarımız var. Küçük değerlerle çarptım, bir daha küçülttüm. Bir daha küçülttüm derken şu aradaki katman sayısı arttıkça, tabii sadece o değil, o gradiyanların açılımında hatırlarsanız zincir kuralını kullanıyorduk.
+
+170
+00:46:08,288 --> 00:46:26,107
+Üç tane, dört tane kısmi türevin yan yana çarpılması minimumda üç, dört tane çarpma işlemi olacak. Her geri yayışımızda bu çarpma işlemlerinin sayısı artıyor ve bizim elimizdeki değerin küçülmesi söz konusu oluyor.
+
+171
+00:46:31,764 --> 00:46:41,244
+Geriye dönüp giriş katmanına yaklaştığınızda sıfıra yakın bir değere düşmüş oluyor. Geriye yayarken yayarken.
+
+172
+00:46:41,764 --> 00:46:58,063
+İşte buna verishing gradient diyoruz. Burada bir gradyan değeri vardı ama biz geriye yayarken sürekli türev alıp küçük sayıları çarparken o gradyanı neredeyse sıfıra yakın küçük bir değer haline düşmüş oldu.
+
+173
+00:46:58,579 --> 00:47:15,279
+Peki, böyle bir şey neye yarar, ne zararı var diyeyim. Biz o gradiyanlar oranında bu ağırlıkları değiştiriyorduk. Demek ki ben buradaki ağırlıkları neredeyse hiç değiştiremeyeceğim.
+
+174
+00:47:23,155 --> 00:47:31,395
+Benim bu ağırlıklardaki ayarlama oranım sıfıra yakın olacak. Ağırlıkları neredeyse hiç değiştiremeyeceğim.
+
+175
+00:47:32,735 --> 00:47:45,536
+Sona yakın katmanlardaki ağırlıklar nispeten büyük ölçüde değişirken, başa yakın katmandaki ağırlıklar gittikçe daha az değişecek.
+
+176
+00:47:47,219 --> 00:48:10,639
+Bir daha geçeceğim bunların üzerinden ama özde durum türev alıp defalarca da türev sonucu çıkmış küçük sayıları birbiriyle çarpmamızdan geliyor. Birbiriyle çarparak küçültüyoruz. Katman sayısı arttıkça bu çarpmaların sayısı artıyor ve gradyanınız iyice küçülüp.
+
+177
+00:48:10,963 --> 00:48:15,384
+Başlangıçta neredeyse değişiklik yapamaz hale geliyor.
+
+178
+00:48:22,003 --> 00:48:28,884
+Gradiyan dediğimiz şey, geometrik olarak düşünürsek aslında eğimi gösterir.
+
+179
+00:48:32,755 --> 00:48:42,755
+Argoritmanızı bu yokuştan, gradiyanın gösterdiği yokuştan yuvarlanan bir top olarak düşünebilirsiniz.
+
+180
+00:48:43,615 --> 00:48:52,615
+Eğer eğiminiz dikse, bu yokuş dikse buradan yuvarlanan top daha hızlı gidecektir.
+
+181
+00:48:53,135 --> 00:48:56,856
+Aslında yani daha hızlı bir eğitim söz konusu olacaktır.
+
+182
+00:48:57,523 --> 00:49:11,324
+Eğer bu eğim dik değilse, neredeyse küçüldükçe burası düz bir yüzeye benzer, şöyle düz bir zeminde topun yuvarlandığını düşünün.
+
+183
+00:49:11,983 --> 00:49:15,824
+Neredeyse kıpırdamayacaktır kendi kuvvetiyle.
+
+184
+00:49:16,275 --> 00:49:25,475
+Dolayısıyla bunu da bir öğrenmeye benzetebilirsiniz. Öğrenme neredeyse olmayacak gibi veya çok yavaş olacak gibidir.
+
+185
+00:49:30,452 --> 00:49:44,412
+Şimdi, ilk katmanlarda gradiyan potansiyel olarak çok düşmüş olacak.
+
+186
+00:49:44,972 --> 00:49:50,652
+Yani ilk katmanların eğitimi çok yavaş kalmış olacak.
+
+187
+00:49:51,155 --> 00:50:01,416
+Fakat ilk katmanlar, deminki yüz örneğinden hatırlarsanız, genellikle basit ve...
+
+188
+00:50:02,771 --> 00:50:11,431
+Didekt etmeye çalıştığınız, tespit etmeye çalıştığınız şeye ait en temel özellikleri bize veren katmanlardı.
+
+189
+00:50:12,172 --> 00:50:19,612
+Yani aslında bir nevi yapı taşlarıydı problemdeki tespit edeceğiniz ana şeylerde, ana unsurlardı.
+
+190
+00:50:19,612 --> 00:50:26,112
+Benim burada öğrenmem yavaş olursa, yani gradyanım çok düşük olup.
+
+191
+00:50:26,452 --> 00:50:39,832
+Bu ilk katmanlardaki öğrenmem yavaş olursa ben o zaman aslında çok detay tespit edebilirken ana yapı taşlarını tespit edemeyeceğim anlamına gelir.
+
+192
+00:50:39,832 --> 00:50:48,792
+Burada da böyle bir çelişki var. Genellikle ilk katmanlarda bu gradiyanın kaybolması etki gösteriyor.
+
+193
+00:50:50,963 --> 00:51:14,243
+Doğal olarak temel yapı taşlarını tespit edemediğim için bizi bayağı yanlış sonuçlara götürebiliyor. Bunun etkisini tabii biraz daha problemin kendisi identifiye edilmeden öncesine düşünürseniz ya da diyelim içinde olmayan matematiğini bilmeyen birisi açısından düşünürseniz.
+
+194
+00:51:18,963 --> 00:51:22,563
+Sınıflara atayabilme gibi sonuçlar doğuracaktır.
+
+195
+00:51:24,603 --> 00:51:31,203
+Şimdi burada bir ara vereyim arkadaşlar. Ondan sonra devam edeyim tekrar buradan.
+
+196
+00:51:33,703 --> 00:51:35,443
+Saate bir bakayım da.
+
+197
+00:51:38,143 --> 00:51:42,223
+Saat 1 veya 1'i 5 geçe tekrar başlayalım mı?
+
+198
+00:51:42,867 --> 00:51:55,967
+Buradasınız arkadaşlar, birileri ses versin. Tamam. İyi misiniz siz? Bayılmıyorsunuz değil mi? Böyle çok şey geliyor, sessiz sessiz kendi kendime konuşmak.
+
+199
+00:51:56,436 --> 00:51:58,816
+Bana kötü geliyor. Size nasıl geliyor bilmiyorum.
+
+200
+00:51:59,115 --> 00:52:04,135
+Aksine hocam, normalde biraz böyle formül ağırlıklı gidince daha zorlanıyorduk.
+
+201
+00:52:04,396 --> 00:52:08,576
+Böyle biraz görselliz olunca daha ilgi çekici bence.
+
+202
+00:52:09,056 --> 00:52:10,735
+Nini gibi mi oldu? Tamam.
+
+203
+00:52:12,576 --> 00:52:15,296
+Daha güzel anlamda söylemiştim. Daha rahat oldum.
+
+204
+00:52:15,296 --> 00:52:16,996
+Biliyorum, ben şaka yapıyorum.
+
+205
+00:52:18,056 --> 00:52:21,195
+Tamam. O zaman biraz sonra görüşürüz diyeyim.
+
+206
+01:05:01,556 --> 01:05:03,036
+Başlayalım mı arkadaşlar?
+
+207
+01:05:08,052 --> 01:05:13,251
+Peki, birazdan görsel olarak tekrar göstermiş olacağım.
+
+208
+01:05:13,251 --> 01:05:28,251
+İlk katmanlarda işte gradyanın kaybolması problemimiz aslında basit ve temel blokları tespit etmemizi...
+
+209
+01:05:28,351 --> 01:05:39,032
+Büyük engelliyor ve tespiti bozuyor demiştik. Bu bir tane görsel örnek, yüz tanıma ile ilgili.
+
+210
+01:05:39,032 --> 01:05:54,472
+Burada dikkat ederseniz, kaş, göz vs. gayet yerinde tespit edilmiş. Hatta burun bile oldukça düzgün. Ama çok temel yüzün şeklini veren.
+
+211
+01:05:54,768 --> 01:06:11,407
+Ana bloğun tespitinde ciddi bir problem var. Dolayısıyla ilk katmanların problemleri olması sonucu da çok dramatik şekilde etkileyebiliyor ve yanlış tespite sebep olabiliyor.
+
+212
+01:06:13,407 --> 01:06:19,088
+Bu sanırım aklımızda kalabilecek bir görsel örnek olur.
+
+213
+01:06:24,052 --> 01:06:28,512
+Biraz daha... Pardon.
+
+214
+01:06:42,228 --> 01:06:50,228
+Biraz daha bakacak olursak, Back Propagation özelinde, geri yayım adımında...
+
+215
+01:06:51,251 --> 01:07:00,891
+Şöyle bakalım. İki tane çıktığımız varsa, bu iki çıktığa ait gradiyan, yani ikisinin bireysel hatasını hesaplayıp topluyorduk ya,
+
+216
+01:07:01,471 --> 01:07:06,311
+Türev'de de dolayısıyla iki hatanın da gradiyanı alınmış olacak.
+
+217
+01:07:06,891 --> 01:07:11,592
+İki tane gradiyan, iki tane küçük değer bir noda geliyor.
+
+218
+01:07:12,811 --> 01:07:14,791
+Sonra bu nodlara da geliyor.
+
+219
+01:07:15,315 --> 01:07:40,335
+Ondan sonra buradaki bu nispeten basit bir yapı, dört tane gradiyan hesaplanıyor. Bunlar da katlanarak artıp bir önceki layer'a geliyor. Dolayısıyla bu her gradiyanın birbiriyle çarpıldığını düşündüğünüz zaman çok sayıda çarpma işlemiyle gittikçe küçülerek ilk katmana geliyor.
+
+220
+01:07:47,795 --> 01:08:07,915
+Şöyle kompleks bir şeye bakabilirseniz, böyle bir yerde artık çok sayıda bağlantı var, çok sayıda çarpma işlemi var ve gradiyanlarımızın duruma göre eksi bir bir veya sıfırla bir arasında değiştiğini düşünürseniz,
+
+221
+01:08:14,132 --> 01:08:38,192
+Verdiğinize bağlı olarak ama binary, bipolar vs. Gradiyanlarınızın alacağı değerler de şu aralıklarda olacak. Bir de zincir kuralıyla bu gradiyanların çarpıldığını düşünürseniz, bu küçük sayıların en katmanlı bir networkte,
+
+222
+01:08:38,576 --> 01:08:57,896
+En kere çarpıma uğrayacağını düşünün. Bu şekilde hızlı bir küçülmeyle, geçen haftadan hatırlıyor musunuz? Hatanın gradiyanı çarpı öğrenme katsayısı çarpı input.
+
+223
+01:08:58,336 --> 01:09:21,396
+Şeklinde ağırlıklarda değişiklik yapıyorduk. İşte oradaki çarpan olarak sıfıra yakın bir değer olduğunu düşünürseniz buradaki ağırlığın değişimi de sıfıra yakın bir şey olacak. Ve inputtaki aslında katman eğitilmemiş olacak. Yani bizim eğitim dediğimiz şey ağırlıkların ayarlanmasıydı. Ben buradaki ağırlıkları değiştiremiyorsam.
+
+224
+01:09:21,747 --> 01:09:47,507
+Demek ki eğitemiyorum aslında bu katmanı. Dolayısıyla bu katman her ne yapıyorsa pek de bir şey öğrenemeyecek. Hatasını düzeltemeyecek. Sol katmanlar çok daha iyi bir şekilde hatayı düzeltirken, eğitilirken ilk katmanlar doğru düzgün eğitilmemiş olacak.
+
+225
+01:09:48,404 --> 01:10:00,744
+Şunu diyebilirsiniz. Peki tamam, niye biz fonksiyonlarımız burada kullandığımız aktivasyon fonksiyonları sonuçta türevine aldığımız şey bir nevi o fonksiyonların türeviydi.
+
+226
+01:10:01,463 --> 01:10:06,963
+Farklı bir fonksiyon kullansak, şu aralıkları sayıları biraz büyütsek olmuyor mu?
+
+227
+01:10:07,412 --> 01:10:26,711
+Tabii bu da denenmiş bir şey. Evet oluyor fakat bu sefer de o büyüttüğünüz sayıları çarpmaya başlıyorsunuz. İlk katmandaki eğitim bu sefer çok hızlanıyor. Ağırlık değişimleri büyük oranda oluyor. Buna da Exploding Gradient.
+
+228
+01:10:27,315 --> 01:10:45,315
+Yani Gradient'la ilgili Back Propagation algoritmasında iki tane problemimiz var. Birisi Verishing Gradient, diğeri de Exploding Gradient. Bu problem uzun bir zaman devam etmiş. Daha sonra...
+
+229
+01:10:46,144 --> 01:10:58,224
+Aslında bir doktora tezinde yapılan çalışmada çok da zor bir çözüm değil. Hatta biz de bahsettik Rectified Linear Unit'ten.
+
+230
+01:11:12,528 --> 01:11:21,228
+Bir nevi büyümesine izin veriyoruz. Hem de sıfırın altına düşmesi veya çok küçülmesine izin vermemiş oluyoruz.
+
+231
+01:11:21,228 --> 01:11:26,228
+Relo kullanımıyla aslında burada o Gradia'nın...
+
+232
+01:11:26,452 --> 01:11:34,192
+Explode veya patlaması, çok büyümesi veya yok olması probleminin önüne geçmiş oluyoruz.
+
+233
+01:11:34,551 --> 01:11:39,512
+Ve derin ağlarda da artık aktivasyon fonksiyonu olarak Relu'yu kullanıyoruz.
+
+234
+01:11:39,512 --> 01:11:47,072
+Aslında konvolüsyonel ağlarla belki ilgilenen olduysa büyük ihtimalle konvolüsyonel ağ kullanmıştır.
+
+235
+01:11:47,631 --> 01:11:52,416
+Oradaki Relu katmanı da aslında o aktivasyon fonksiyonunu...
+
+236
+01:11:52,416 --> 01:12:06,416
+Rectified Linear Unit olarak aktivasyon fonksiyonunu kullandığımızda Vanishing Gradient ve Exploding Gradient problemi büyük ölçüde çözülmüş oluyor.
+
+237
+01:12:06,416 --> 01:12:18,416
+RELU'da Rectified Linear Unit kullandığımız zaman bir de Licky-RELU diye problemler var. Gelince geçecek lafı diye tahmin ediyorum.
+
+238
+01:12:18,960 --> 01:12:41,579
+Fırsatımız olacaktır. Ama duyarsanız işte relinon sızdırması gibi bir problem de var. Sıfırın altına düşebilme durumu. Ama bunlarla ilgili artık önlemler alınabildiği için aslında backpropagation algoritması istediğimiz kadar çok katmanlı, derin bir ağda uygulanabilir hale gelmiş.
+
+239
+01:12:41,579 --> 01:12:43,979
+Teorik taraf da böyle.
+
+240
+01:12:44,463 --> 01:13:03,783
+Bu pratikte de yine de çok fazla işlem var. CPU'da baş edilir gibi değil. Ama GPU'ların çıkmasıyla orası da çözüldüğünde derin ağlar günümüzde olduğu gibi popülerleşecek bir zemin bulmuş oluyor aslında.
+
+241
+01:13:11,539 --> 01:13:26,000
+Okunmalı. Ben yeterince size aslında ödev verebilseydim belki ya da bir yandan da sizi de şu dönemde boğmamış oluyorum ama lütfen bakabilirsiniz. Çok sevinirim.
+
+242
+01:13:26,452 --> 01:13:43,072
+2006-2007 arasında Jeff Hinton, yani Lecun ve Yeşil Benji'nin bastığı üç tane paper var. Özellikle tez aşamasında falan Derin Ağ kullanmayı düşünen varsa bunları okumalı diye düşünüyorum.
+
+243
+01:13:52,340 --> 01:14:13,399
+Tamamen önemli gelişmeleri başlatan makaleler bunlar diyeyim. Bu adamların yayınlarının hemen hemen hepsine bir baksanız hiç fena olmaz. Ama 2006-2007 arasındaki ilk paperlarına mutlaka bakın derim.
+
+244
+01:14:18,836 --> 01:14:33,476
+Eğer Derin Ağ kullanıyorsak, evet eğitim uzun sürüyor ama bir yandan da iyi bir güvenilirlikle, iyi bir doğrulukla tahmin yapabiliyoruz.
+
+245
+01:14:33,476 --> 01:14:43,336
+Back Propagation ve GPU varsa elimizde aslında ideal bir çözüme ulaşmış olduk.
+
+246
+01:14:44,787 --> 01:14:48,987
+Başlarından itibaren oluşan gelişmelerle.
+
+247
+01:14:51,268 --> 01:14:55,587
+Peki, birazcık RBM'in yapısından da bahsedeyim.
+
+248
+01:14:55,587 --> 01:15:02,587
+RBM'de Jeff Hinton'ın aslında...
+
+249
+01:15:03,123 --> 01:15:28,384
+Öne sürdüğü bir yapı. Tabii Bosman-Mesh'in yeni bir kavram değil. Bosman-Mesh'in mekanikte ve dinamikte çokçana kullanılan bir teori. Bosman'ın kaşifi, Bosman diyeyim, teorisi. Buraya uyarlanması kısmında Hinton'ın rolü var.
+
+250
+01:15:28,916 --> 01:15:41,316
+Arbeyan dediğimiz yapı aslında iki katmanlı bir yapı. Sadece iki katman olduğu için katmanların isimlendirilmesi de burada biraz farklı.
+
+251
+01:15:41,792 --> 01:16:06,712
+Visible Layer ve Hidden Layer olarak adlandırıyoruz. Görünür katman ve gizli katman şeklinde. Restricted kısmı, yani kısıtlılık dediğimiz şey de bir katmanın içinde bağlantılar olmaması ki şimdiye kadar da bazı özel durumlar hariç, rekürent ağlar falan hariç.
+
+252
+01:16:07,055 --> 01:16:20,995
+İleri beslemeli ağlarda zaten yoktu öyle bir şey. Ama bu bir restriksiyon olarak buraya not edilmiş. Aynı katmandaki nöronlar arasında bağlantılarımız yok.
+
+253
+01:16:20,995 --> 01:16:32,995
+Bir çeşit çift yönünü tercüme gibi düşünebiliriz. Birinci katmandaki girdiler, ikinciyi oluştururken…
+
+254
+01:16:33,684 --> 01:16:53,284
+İkincide oluşan girdilerin de aynı şekilde kendisini oluşturan birinci kartmandaki girdileri oluşturmasını bekliyoruz. Yani A'nın karşılığı B ise B'nin karşılığı da A olmalı. Çift taraflı birbirlerini çağrıştırmamalılar bir çeşit çağrıştırma diye de düşünebiliriz.
+
+255
+01:16:55,572 --> 01:17:03,012
+İyi eğitildikleri zaman bu şekilde çift yönlü dönüşüm yapabilme kapasitesine sahipler.
+
+256
+01:17:05,268 --> 01:17:19,488
+Bu da ne demek? Aslında ilk başta girişte biraz söylemiş oldum. Etiketsiz bir veriniz varsa onu bir çeşit dekode edebiliyorsunuz, bir çeşit etiketleyebiliyorsunuz demek.
+
+257
+01:17:19,488 --> 01:17:31,427
+Bir şeyi gördüğünde öbürünü söylüyor, öbürünü gördüğünde yine onu söylüyor gibilerinden çift yönlü çağrışım yapabildiğiniz bir mekanizma.
+
+258
+01:17:34,131 --> 01:17:51,831
+Eğitimine yine aslında azıcık benziyor Backdrop Genshin'e ama kıyaslama noktasında sondaki hatayı tespit etmede kullandığımız yapı biraz farklı.
+
+259
+01:17:51,831 --> 01:17:58,831
+Bir ileri besleme adımımız var. Klasik yaptığımız gibi...
+
+260
+01:17:59,283 --> 01:18:04,543
+Bağlantı ağırlıklarıyla inputları çarpıyoruz. Nöronda bir girdi oluşturuyoruz.
+
+261
+01:18:04,916 --> 01:18:22,716
+Tersine giderken de artık burada oklarımızın çift yönlü olduğunu düşünebilirsiniz. Ya da iki ayrı şekil böyle gösteriliyor. Forward pass adımında ileri doğru hesaplamalar yapılıyor. Backward adımında da geri doğru hesaplamalar yapılıyor.
+
+262
+01:18:22,716 --> 01:18:32,775
+Aynı forward adımında bir nöronu besleyen bağlantılar nelerse, backward adımında da aynı nöronlara dağılacak.
+
+263
+01:18:32,916 --> 01:18:45,876
+Yani şu ekranda beni görebildiğinizi umuyorum. Sağ taraftaki parlak beyaz nöronun nörona giren her şeyi toplayıp çarpmıyoruz.
+
+264
+01:18:45,876 --> 01:18:59,876
+Bakford adımında. Forward da nelere gittiyse, Bakford'da da onlar geri geliyor bu nörona. Dolayısıyla bu şekilde iki...
+
+265
+01:19:00,207 --> 01:19:22,847
+Forward Pass ve Backward Pass adımında eğitim yapıyoruz. Eğitim sürecinde de bu ağırlıklarda değişiklik yapmamız için bir şey lazım bize, bir eğitim kuralı lazım. Eğitim kuralımızda KL Divergence dediğimiz kıyaslamayla yapıyoruz.
+
+266
+01:19:25,684 --> 01:19:53,644
+Burada kıyaslayacak neyimiz var? Aslında etiketimiz falan yok. Bu girdilere karşı ne beklediğimizde zahir bir şey yok. Ama ne var? Bu girdilerden ne ürettiysen o çıktılarında aynı girdileri geri üretmesini bekliyorum. Dolayısıyla kendiyle kıyaslıyoruz. Kendisinin ürettiği sonuç yine kendisine geri üretebiliyor mu diye kıyaslıyoruz. Bu da bir öğrenme sonuç.
+
+267
+01:19:53,684 --> 01:20:07,104
+Buna göre bağlantı ağırlıklarını değiştirerek çift taraflı inputlarında birbirini üretebilmesini bekliyoruz.
+
+268
+01:20:07,104 --> 01:20:10,463
+Kale Eda Görcüs'ten bahsedeceğim şimdi.
+
+269
+01:20:11,060 --> 01:20:37,140
+Bunu da belki bir yerlerde görmüşsünüzdür. Bir şekilde bir ölçüt kıyaslama parametresi, Courbet Labor Divergence. Aslında daha çok dağılımların kıyaslanmasında kullanılıyor. Simülasyon tarzı veya olasılık alıyorsunuz. Orada geçmiş midir?
+
+270
+01:20:37,747 --> 01:20:44,387
+Zorunlu olarak olasılık dersini alıyorsunuz değil mi? Geçmiş olabileceğini düşünüyorum.
+
+271
+01:20:44,387 --> 01:20:55,847
+Şimdi bazen olasılık teorisinde de bir dağılımı, daha doğrusu gerçek hayattan olabilir bu.
+
+272
+01:20:56,667 --> 01:21:02,948
+Tam da bir bildiğimiz, klasik formüle ettiğimiz dağılımlara benzemeyen elimizde bir dağılım varken,
+
+273
+01:21:03,475 --> 01:21:26,755
+Onu mesela Gauss'a benziyor ama tam da Gauss oturmuyor. Bazı satmalar var. Bunu Gauss dağılımıyla temsil edeyim dediğiniz durumda yaptığınız hatayı, iki dağılımı sizin modelinizle olması gerçek verinin arasındaki farkı ölçtüğünüz bir ölçüt.
+
+274
+01:21:27,152 --> 01:21:39,931
+İki dağılım arasında, işte diskret de olabilir, sürekli olarak da olabilir. İki dağılım arasında ne kadar sapma var? Veriler birbirinden ne kadar uzak?
+
+275
+01:21:39,931 --> 01:21:51,211
+RBM'in kullandığı ölçüt de bu. Benim aslında şurada diyelim bu inputlarımın gösterdiği değerler var.
+
+276
+01:21:51,636 --> 01:22:06,736
+Bu örneğe, outputlarımın ona karşı ürettiği değerler var. Outputlarımın inputları ürettiği değerler var. Bunları iki grafik diye düşünün. Onları üst üste oturttuğumda aradaki fark en kaba anlatımla.
+
+277
+01:22:15,315 --> 01:22:35,255
+Farkı veya mesafeyi ölçen bir ölçüt. Information Theory'den geliyor aslında. Benim slide'larımın sonunda da galiba bir açıklama var ama birazcık örneklerine bakabilirsiniz belki siz de.
+
+278
+01:22:37,555 --> 01:22:43,695
+Başka, ölçüt olarak, başarı ölçüt olarak bunu kullanıyoruz, kaleyi.
+
+279
+01:22:47,275 --> 01:22:57,095
+Peki, burada tabii en güzel yanı, RBM'in verinin etiketlenmesini gerektirmemesi.
+
+280
+01:22:57,915 --> 01:22:59,555
+Buradan da autoenkoder'lara.
+
+281
+01:23:00,020 --> 01:23:05,340
+Geçeceğim. RBM'de bir çeşit autoencoder aslında.
+
+282
+01:23:07,423 --> 01:23:10,683
+Etiketleme için kullanabileceğimiz bir mekanizma.
+
+283
+01:23:11,463 --> 01:23:19,443
+İşte girdileriniz belli bir çıktı üretiyor. Bu çıktıyı aslında o girdiğinin etiketi olarak düşünebilirsiniz.
+
+284
+01:23:19,443 --> 01:23:34,443
+Aynı gruptaki örneklerin birbirine yakın çıktılar ürettiğini ve aynı etiketi alabileceklerini düşünürseniz bir çeşit etiketleme aracı olarak da...
+
+285
+01:23:35,423 --> 01:24:02,264
+Bu şekilde verinin feature'larını çıkarmış oluyor.
+
+286
+01:24:03,423 --> 01:24:18,103
+Dolayısıyla bizim manuel etiketlerken veya gözle baktığımızda göremeyeceğimiz feature'ları da böyle bir yapının tespit etmesi daha kolay ve daha sağlıklı olabilir.
+
+287
+01:24:27,615 --> 01:24:43,775
+Bazen daha doğru etiket üretmeye de yol açabilir. Çünkü ne kadar olsa insan görüntü etiketlerken bir miktar ön yargı veya yönelme olmaması imkansız.
+
+288
+01:24:43,775 --> 01:24:52,775
+Hani genelde şeyden örnek veriyorum, çimenlerin üzerinde bir top var veya işte birileri top oynuyor.
+
+289
+01:24:53,216 --> 01:24:59,355
+Siz futbola meraklı birisiyseniz orada topu veya futbolu görürsünüz.
+
+290
+01:24:59,807 --> 01:25:15,068
+Orada yeşilliğe meraklı birisi oradaki yeşilliği veya manzarayı görür. Dolayısıyla benim manzara dediğim şeye veya yeşillik dediğim, çimenlik dediğim şeye siz top veya futbol gibi bir şey diyebilirsiniz.
+
+291
+01:25:16,427 --> 01:25:21,728
+Oysa böyle bir RBM gibi bir yapıya bıraksak bunu.
+
+292
+01:25:22,127 --> 01:25:34,448
+Hangisinin ağır bastığını, en azından görüntüde oransal olarak hangisinin ağır bastığını, onun tespit etmesi muhtemelen daha doğru ve sağlıklı olacaktır.
+
+293
+01:25:35,387 --> 01:25:45,707
+Dolayısıyla bir çeşit Future Extractor olarak düşünülebilir. Future Extractor, Nöral Networkler kategorisinde düşünülüyor.
+
+294
+01:25:46,771 --> 01:26:04,631
+Başka Deep Relief Networkler var, DBN'ler. Deep Relief Network'te yapımız yine klasik MLP'nin çok katmanlısı diye düşünebilirsiniz.
+
+295
+01:26:04,631 --> 01:26:12,631
+Tamamen çok sayıda hidden layer'ın olduğu bir multilayer perceptrona benziyor.
+
+296
+01:26:18,292 --> 01:26:31,472
+Genel olarak eğitimle ilgili DBN'de kullandığımız yöntemler farklılaşıyor. O da Backpropagation'daki farklardan dolayı.
+
+297
+01:26:32,472 --> 01:26:38,392
+Shallow dediğimiz yapıda ve her şey yine birbirine bağlı, fully connected.
+
+298
+01:26:40,532 --> 01:27:03,532
+Oldukça başarılı bir yapı. Görüntüde konvolüsyonel ağlar tamam ama onun dışındaki sayısal verilerinizde ve problemlerinizde Deep Belief Network yine sizi muhtemelen çözülebilir bir şeyse doğru sonuca götürebilecek bir yapı olacaktır.
+
+299
+01:27:03,532 --> 01:27:07,032
+Multilayer Perseptron için söylediğimiz gibi.
+
+300
+01:27:07,488 --> 01:27:19,268
+Bir çözüm varsa, bir optimum parametreler bulunabilecekse bulacak yapı böyle bir şey olacaktır.
+
+301
+01:27:20,808 --> 01:27:28,328
+Eğitimde şöyle bir farklılık var. Aslında bir açıdan da işlem yükünü azaltan bir farklılık var.
+
+302
+01:27:30,547 --> 01:27:58,087
+Bir sürü RBM'in arka arkaya dizildiği bir yapı olarak düşünebilirsiniz. Eğitimi RBM gibi yapıyoruz. Yani şey gibi değil, MLP gibi değil. RBM gibi yapıyoruz. Bu ne demek? Katmanları kendi arasında eğitiyoruz. Yani birinci katmanla ikinci katman önce RBM gibi, Restricted Postman Machine gibi birbirini eğitiyor.
+
+303
+01:27:58,579 --> 01:28:08,320
+Ondan sonra birinci katmanı geride bırakıyoruz. İkinci katmanla üçüncü katmanı kendi arasında eğitiyoruz. Şu ikinci şekildeki gibi.
+
+304
+01:28:08,851 --> 01:28:28,591
+Bunun mantığı ne? Ben aslında birinci katmanla ikinci katmanı kendi arasında eğittiğim zaman ikinci katman bu birinci katmanda olması önemli olan feature'ları barındıran bir sonuç üretecek değil mi? Yani bir nevi birinci katmanı da temsil eden bir şey haline gelmiş olacak.
+
+305
+01:28:28,992 --> 01:28:44,912
+Dolayısıyla artık birinci katmanı dikkate almama gerek yok. Yani MLP'deki backprop gibi ta en baştan, en sondan başa kadar hatayı dağıtıp ayarlama yapmama gerek yok.
+
+306
+01:28:56,560 --> 01:29:11,500
+Üçüncü katmana bunları katmış oldum gibi gibi aslında bir nevi bilgiyi toplaya toplaya, özellikleri toplaya toplaya sona doğru giden bir yapı söz konusu.
+
+307
+01:29:14,963 --> 01:29:25,323
+Deep Relief Network'ün kendisi bütün olarak baktığımız zaman input layer, output layer ve hidden layer'ler şeklinde adlandırıyoruz.
+
+308
+01:29:25,583 --> 01:29:36,323
+Ama eğitim sırasında artık visible layer ve hidden layer şeklinde restricted posthum machine gibi eğitimi uyguluyoruz.
+
+309
+01:29:37,587 --> 01:30:01,087
+En son katmana geldiğimiz zaman aslında sonuç olarak elde edeceğimiz şey bütün katmanlardaki olması gereken bilgilerin yani aslında her işlem sırasında farklı feature'ların inputlardan çıkarıldığı.
+
+310
+01:30:01,456 --> 01:30:07,355
+Ve sonucunda bütün bilgiyi taşıdığı bir yapı haline geliyor.
+
+311
+01:30:10,155 --> 01:30:14,556
+Peki CNN ile ilgili yüz örneğini göstermiştik.
+
+312
+01:30:15,855 --> 01:30:23,015
+Onu düşünürseniz yine o ilk gösterdiğim işte ilk katman yüzün ana bloğunu temsil ediyor.
+
+313
+01:30:23,775 --> 01:30:27,136
+Sonrası kenarları ve ondan sonra kaşı gözü demiştik.
+
+314
+01:30:27,475 --> 01:30:43,456
+Buradaki mantığı biraz daha farklı düşünebilirsiniz. Bütün inputu adım adım ama diğer özellikleri de yanında taşıyarak işliyoruz diye düşünebilirsiniz.
+
+315
+01:30:43,967 --> 01:31:08,707
+Buradaki örnek güzel. Bir çeşit kamera yavaş yavaş resme odaklanıyor diye düşünebilirsiniz. İlk başta daha blur bir görüş, birkaç temel özellik aldı. Odaklandıkça daha detayları toplayarak en sonunda bütün resmi oluşturabilmiş bir yapı gibi bakılabilir.
+
+316
+01:31:11,188 --> 01:31:16,507
+Bir susayım. Bir sorunuz var mı arkadaşlar? Yaşıyor musunuz? İyi misiniz?
+
+317
+01:31:17,827 --> 01:31:21,247
+Hocam bu da labellanmamış değil mi? Yani aynı şeydeki gibi.
+
+318
+01:31:22,804 --> 01:31:50,203
+Gerek yok. Yani en sonunda, bak tamam o aşamayı da söylemiş olayım. En sonunda bir şeyler çıkıyor ya, o çıkan şeyi siz bir de label atayabilirsiniz. Artık burada güzelliği şöyle, siz o label'ı atarken ismine ne derseniz deyin, çıktığının sayısal olarak temsil ettiği şey doğru aslında. Yani feature'lardan geldiği için.
+
+319
+01:31:50,804 --> 01:32:14,963
+Adına artık istediğimizi söyleyelim. Bir label atayabiliriz. Ama bizim esas bilgimizi temsil eden çıktı burada. Ve dolayısıyla label vermemişsek de elde ettiğimiz çıktı. En azından sayısal olarak özgün bir şey olduğu için bir nevi.
+
+320
+01:32:15,412 --> 01:32:19,612
+Etiketini üstünde taşıyor diyeyim. O bilgiyi üstünde taşımış oluyor.
+
+321
+01:32:21,612 --> 01:32:23,432
+Hocam bir şey sorabilir miyim?
+
+322
+01:32:23,775 --> 01:32:24,695
+Tabii, lütfen.
+
+323
+01:32:25,235 --> 01:32:39,795
+Object Detection'da kullanılan ağlarda çıktının hem pozisyonunu vermesi gerekiyor objenin hem de classification yapması gerekiyor sanırım. Bu bir ağda mümkün oluyor mu? Bir çıktı da yani hem pozisyon hem şey yoksa farklı farklı.
+
+324
+01:32:39,795 --> 01:32:51,215
+Ya işte bu aslında çeşit çeşit her gün neredeyse mimari çıkıyor ya biraz daha iyi yapabilmek için şunu yapabilirsiniz. Yani pozisyonla ilgili.
+
+325
+01:32:51,663 --> 01:33:18,603
+Eğer girdileriniz varsa, tabii sadece bu görüntüden mi bahsediyoruz? Yoksa işte ne bileyim, ikinci bir kamera olabilir, farklı bir yerden bakan, pozisyona dair başka sensörleriniz olabilir. Böyle bir şeyler de söz konusu olabilir. Bunları ve artı RGB bilgisini topluca bir input olarak vermek de söz konusu veya iki tane ayrağı olarak vermek de söz konusu.
+
+326
+01:33:19,663 --> 01:33:32,703
+Bir takım girdiler, bir ağa girsin. RGB bilgisi farklı bir ağa girsin. Sonra ikisini birleştirelim. Veya önce birisini işleyelim, sonra öbürünü işleyelim.
+
+327
+01:33:35,731 --> 01:33:50,692
+Özelleştirilmiş mimariler farklı farklı ele alıyor bunu. Dolayısıyla illa şöyle yapmak gerekir demekten ziyade bir iki farklı mimariyi denemek gerekir desem daha doğru olacak herhalde.
+
+328
+01:33:51,283 --> 01:33:52,684
+Teşekkür ederim hocam.
+
+329
+01:33:53,103 --> 01:34:05,063
+Yani hepsini tek elinizde ne input varsa konumu da gösteren, pozisyonu da gösteren bir şeyleri, renk bilgileriyle vesaireyle bütün featureler ne varsa elinizde verebilirsiniz.
+
+330
+01:34:05,063 --> 01:34:17,903
+Han bir veri olarak veya biraz daha özelleştirip iki network sonra da en son çıkarımı yapacak şekilde bir network'e verebilirsiniz.
+
+331
+01:34:18,515 --> 01:34:21,935
+Teşekkür ederim.
+
+332
+01:34:22,695 --> 01:34:25,916
+Rica ederim. Var mı başka arkadaşlar soru?
+
+333
+01:34:28,467 --> 01:34:48,347
+Tabii RBM çok cazip. Her zaman için yine şu hesaplama vesaire işlerinden dolayı her zaman kullanılır mı? Veya RBM'in bulacağı çeşitlikle etiketle karşılaşmak ister misiniz?
+
+334
+01:34:49,203 --> 01:35:16,363
+Eğer çok girdileriniz çok sayıdaysa ve biraz da fazla layer şey yaparsanız bu şu demektir. Çok ayrıntıya da bakıyorsunuz. Yani çok ayrıntı feature'ları da ele alıyorsunuz demektir. Bu kadar ayrıntı istemediğiniz durumlar da olabilir. Dolayısıyla her şeyde niye kullanmıyoruz dersek böyle bakılabilir olaya.
+
+335
+01:35:17,203 --> 01:35:29,003
+Bazen o kadar boşu boşuna hesaplama yapıp o kadar ince ayrıntı ve belki çok da fazla kendinize sınıf veya label yaratmak istemeyebilirsiniz.
+
+336
+01:35:29,884 --> 01:35:41,243
+Veya verileriniz zaten etiketlenmiştir. Hiç bu hesaplamalara girmek istemeyebilirsiniz. Birazcık durum özelinde karar vermek lazım.
+
+337
+01:35:42,868 --> 01:35:51,868
+Ama hiçbir fikriniz olmayan, çok da sağlıklı etfik deyemeyeceğinizi düşündüğünüz veriler de kesinlikle süper bir tool.
+
+338
+01:35:55,764 --> 01:36:12,084
+Peki, bir de fine tuning adımı olabilir. Fine tuning adımında olacak şey de şu, dediğim, aslında biraz önce söylediğim şeyin biraz karşılığı belki bu.
+
+339
+01:36:23,028 --> 01:36:33,188
+Bir miktar etiketleyebiliyorsanız, etiketleyip onları da eğitime katarsanız, şu label'ların da oluşmasını desteklemiş olursunuz.
+
+340
+01:36:33,307 --> 01:36:41,667
+Label'ları kısıtlamış olursunuz. Yani BBN'i bu şekilde kullanmak aslında daha efektif olacaktır.
+
+341
+01:36:41,667 --> 01:36:50,967
+Hem bütününde ağın güvenliğini artıracak, hem de şu etiketleme işini biraz daha sınırlamış.
+
+342
+01:36:51,028 --> 01:37:05,268
+Bunu da mutlaka dikkate almak lazım. Bir miktar etiketlenmiş datayla ağı son bir iyileştirmeye tabi tutabilirsiniz.
+
+343
+01:37:06,648 --> 01:37:13,268
+Faydaları neler? Az bir miktar etiketli datayla...
+
+344
+01:37:14,100 --> 01:37:34,720
+Kullanarak aslında eğitim zamanını da makul bir şeyde tutabiliyorsunuz. Çünkü ikişer ikişer katman eğittiğiniz için hesaplamalarınız çok uzun bir yolu geri dönmüyor. Güvenliliği de artırmış olabiliyorsunuz. Son derece güvenli çözüm.
+
+345
+01:37:35,283 --> 01:37:41,843
+Ve GPU kullandığımızda da eğitim de makul bir zamanda bitmiş oluyor.
+
+346
+01:37:45,443 --> 01:37:48,803
+Peki, şurada tekrar özetlemişim.
+
+347
+01:37:50,292 --> 01:38:07,952
+Buradan özel söyleyeceğim bir şey. Sanırım yok. Şöyle bir okursunuz. Slide'ları bulursanız tabii. Özür dilerim. Söylediğimde aklıma geliyor tekrar. Vanishing Gradient dediğimiz şey küçük sayıları backbroad da çarparak geriye.
+
+348
+01:38:08,372 --> 01:38:26,152
+Yansıttığımız için ilk katmanların aslında eğitilememesi, ilk katmanlara vardığında gradiyanın değerinin çok küçülmüş olması problemiydi. Exploding Gradient tam tersi olan durumdu.
+
+349
+01:38:31,648 --> 01:38:48,208
+Aslında multi-level high-rocky kullanılmayı öneren 92'de bir yayın var. Fakat tabii bütün durumlar için uygulanabilir olmadığı için fazla etkisi olmamış.
+
+350
+01:38:57,395 --> 01:39:13,155
+Yine lafı geçecek, kullanacağız. Yine özel belli problemlerde kullanılabileceği için genele yayabileceğimiz bir çözüm değil ama Vanishing Gradient için önerilen bir çözüm.
+
+351
+01:39:17,011 --> 01:39:29,651
+Sadece gradyanın işaretinden yararlanıp yani değeri kullanmayıp değer çok küçük olacağı için eğitim sırasında o değeri bir şekilde büyüterek sadece işaretine bakmak.
+
+352
+01:39:29,791 --> 01:39:39,771
+Sonuçta gradyanın tersi yönde gitmek veya gradyanın tersi yönünde ağırlığı artırıp azaltmak söz konusu olduğu için sadece işaretini kullanayım.
+
+353
+01:39:40,595 --> 01:39:56,355
+Değerine bakmayayım. Her seferinde gradiyan eksiyse bir birim eksilteyim, artıysa bir birim arttırayım şeklinde önerilen çözümler var. Bunların hepsi aslında kullanılabilir.
+
+354
+01:39:58,495 --> 01:40:04,355
+Ama Relu şu anki durumda, modern Derin Ağlar'da.
+
+355
+01:40:05,039 --> 01:40:13,079
+Yeterli çözümü sağlıyor gibi. Yine de ek mekanizmaların kullanıldığı şeylere denk gelebilirsiniz literatürde.
+
+356
+01:40:14,820 --> 01:40:19,680
+Kurbek Neighbor Divergence'a da yine bir bakarsınız demiştim.
+
+357
+01:40:20,500 --> 01:40:30,380
+Özetle iki tane olasılık dağılımı arasındaki farkı veya birbirlerine mesafelerini ölçmede kullandığımız bir ölçüt.
+
+358
+01:40:32,948 --> 01:40:34,368
+Başka.
+
+359
+01:40:41,043 --> 01:40:43,804
+Bu kadar yeterli sanırım.
+
+360
+01:40:49,332 --> 01:40:54,051
+Biraz daha bir şeyler var söyleyeceğim. CNN'den de biraz bahsetmiş olalım.
+
+361
+01:41:20,404 --> 01:41:28,704
+Peki, konvolüsyonel ağların çıkışıyla ilgili Yen Leku'nun yayınlarına bakabilirsiniz.
+
+362
+01:41:29,744 --> 01:41:34,704
+Hala Facebook'ta mı emin değilim. Bu slide'larım benim biraz birkaç senelik.
+
+363
+01:41:37,619 --> 01:41:50,619
+Ama Facebook'un AI direktörüydü ve Facebook'taki yüz tanıma vesaire bir takım derin öğrenme algoritmalarının arkasındaki kişi aslında yani Neckon.
+
+364
+01:41:52,511 --> 01:42:17,371
+2015'lerin başında çıkıyor komolysiyonel ağlar. Microsoft ve Google'un çalışmaları var. Onun yanı sırada aslında ImageNet yarışması var. ImageNet yarışmasında komolysiyon ağların kullanılmasının sağlayacağı faydalar ilk başta görülmeye başlanıyor.
+
+365
+01:42:18,771 --> 01:42:41,952
+2012'de Jeff Hinton'ın takımı, aslında görüntü işleme yarışması olan ImageNet'te konvolüsyonel ağlara benzer bir yapı kullanılıyor. Ve Deep Network ile CNN ile başarılı bir sonuç elde ediyor.
+
+366
+01:42:44,404 --> 01:42:51,764
+Şu anda şurada gördüğünüz 2012'nin sonuçları, 2012 için aslında en başarılı sonucu elde ediyor.
+
+367
+01:42:51,764 --> 01:43:00,764
+Tabii bu başarının üzerine diğer imejnete katılan takımlar da yoğun olarak Derin Ağları kullanmaya başlıyorlar.
+
+368
+01:43:06,195 --> 01:43:27,275
+Kullanılma oranı, görüntü işleme neredeyse çok az kalmış bunların arasında. Kaç? Yüzde 10-20 falan gibi bir şey herhalde. 2014'te neredeyse herkes derin öğrenmeli artık. ImageNet yarışmasında.
+
+369
+01:43:27,891 --> 01:43:46,291
+Yer almaya başlıyor. Dolayısıyla 2015'te de Microsoft ve Google'un gösterdiği birkaç başarıdan sonra derin ağlar gittikçe ve konvolisyonel ağlar özelinde daha da ziyade popülerleşmeye başlıyor.
+
+370
+01:43:47,539 --> 01:43:56,340
+Peki, konvonisyonel ağı bir analojiyle anlatmaya çalışacağım ama umuyorum daha kafa karıştırıcı olmaz.
+
+371
+01:43:58,179 --> 01:44:07,639
+Özellikle görüntüde başarılı olmasının sebebini de belki bir nevi gözünüzde canlandıracaktır.
+
+372
+01:44:08,139 --> 01:44:12,500
+Diğer tip verilerde her zaman o kadar başarılı olmuyor.
+
+373
+01:44:12,979 --> 01:44:36,759
+Şu sol üstte gördüğünüz gibi bir resmin duvarınız olduğunu düşünün ve bir grupta elinizde fener olduğunu düşünün. Duvara bu fenerleri tutuyorsunuz. Şu alttaki, sol alttaki gibi tuttuğunuzu düşünün. Her fenerin aydınlatma alanında işte bu dairesel.
+
+374
+01:44:37,087 --> 01:44:51,987
+Her velinin aydınlattığı alanlar arasında bir kesişme de var. Şu iki dairenin kesişimi şeklinde gördüğünüz yerler aydınlattığı alanların kesişimi.
+
+375
+01:44:51,987 --> 01:44:59,347
+Şimdi bütün lambalar aslında bu resim üzerine aynı petirne.
+
+376
+01:44:59,828 --> 01:45:09,628
+Arıyor diye düşünebilirsiniz. Bunlar aslında sizin filtreleriniz. Aynı tip filtre bu resimde aynı şeyleri arıyor.
+
+377
+01:45:11,539 --> 01:45:29,159
+Bir araya getirdiğimizde bu aslında bir filtre olmuş oluyor. Bu resim üzerinde aradığı pattern'ın, kullandığınız filtre her neyse, onun bulacağı pattern'ın var olup olmadığına bölgesel olarak bakmış oluyorsunuz.
+
+378
+01:45:29,376 --> 01:45:45,815
+Şu kesişim yerlerini de aslında bu filtrelerin her birini bir grup nöron olarak düşünürseniz, kesişim yerlerini de ana görüntüde ortak baktıkları yerler veya bağlandıkları ortak nöronlar olarak düşünebilirsiniz.
+
+379
+01:45:47,195 --> 01:45:53,855
+Resminiz şu tepedeki çizgi olmak üzere bir de yukarıdan baktığımızı düşünelim.
+
+380
+01:45:54,224 --> 01:46:08,104
+Görüntüye. Resim yukarıda. Şuradan fenerler aydınlatıyor. İşte belli bölgelerde kesişmeleri var. Eğer burada kullandığınız sekiz tane fener varsa.
+
+381
+01:46:08,595 --> 01:46:23,855
+8'e 6'lık grid şeklinde lambalar kullandığınızı düşünebiliyorsunuz. Bunların her birisi, daha doğrusu hepsi birlikte bir filtre temsil ediyor.
+
+382
+01:46:26,260 --> 01:46:45,039
+Ondan sonra bir katman daha ekliyorsunuz. Yine lambalar olsun. Bunlar da başka bir filtre. İşte filter 2, filter 3, filter 4 şeklinde. İstediğiniz kadar farklı filtre ekliyorsunuz. Şu şekil belki size kimin nereye bağlandığıyla ilgili.
+
+383
+01:46:45,587 --> 01:47:09,587
+Aklınızda kalacak veya boyutla ilgili aklınızda kalacak bir şey olabilir. Bu konvolüsyonel ağı, mesela bu şekilde dört filtre kullanan bir konvolüsyonel ağını, her filtreden sekiz tane olduğu için, sekiz çarpı altı çarpı dörtlük, dört tane de farklı filtremiz olduğu için,
+
+384
+01:47:11,604 --> 01:47:22,144
+Bir konvolüsyonel ağ olarak adlandırabiliriz. Lambaların her biri veya filtrelerin her biri farklı bir pattern arıyor.
+
+385
+01:47:23,284 --> 01:47:29,824
+İşte kenar belirleme olabilir, renk olabilir veya daha spesifik şekiller olabilir gibi.
+
+386
+01:47:37,140 --> 01:48:03,539
+Lamba dediğim veya el lambası dediğim şeyi. Buradan da bağlantıları görebiliriz. Her bir nöron aydınlattığı bölgedeki nöronlara kaç tanesi bağlı olacak. Arkadan gelen filtre de benzer şekilde öndekine ve diğerlerine bağlı olacak. Bağlantılar bu şekilde oluşturuluyor.
+
+387
+01:48:03,952 --> 01:48:22,952
+Şöyle gidersek, birinci katmandaki yani aynı filtrenin olduğu katmandaki bağlantı ağırlıkları birbiriyle aynı olarak ayarlanıyor. Şurada göründüğü gibi.
+
+388
+01:48:23,475 --> 01:48:42,935
+Bu filtre, bu filtre'nin aynısı. Her ikisi de dört nöronluk bir bölgeye bağlı ana pattern'ımızda. Dolayısıyla bunların ağırlıklarını da birbirinin aynısı olarak ayarlıyoruz. Şu nöron da olsaydı onun ağırlıkları da yine bu şekilde.
+
+389
+01:48:43,731 --> 01:49:03,132
+Diğerlerinin aynısı olarak ayarlanacaktı. Genel olarak başlangıç değerleri ayarlanırken bu şekilde gidiyor yapı. Arkasından kaç tane filtre kullanacaksanız, işte filtrelerin olduğu katmanlar var. Buna konvonisyonel katman diyoruz.
+
+390
+01:49:03,471 --> 01:49:26,371
+Filtre sayınız değiştirebiliyor. Konvolüsyonel katmandaki dolayısıyla katman sayısı değişebiliyor. Arkasından relo katmanı geliyor ve pooling katmanı geliyor. Aktivasyon fonksiyonumuz demin başta da söylediğim gibi relo olacak.
+
+391
+01:49:28,275 --> 01:49:46,595
+Burada Relu fonksiyonunun olduğu bir katmanımız var. Daha sonra Pulling katmanı da aslında Relu katmanının çıkışında oluşan, çıktığı küçülten bir katman olacak.
+
+392
+01:49:47,220 --> 01:50:01,619
+CNN'i de Back Propagation algoritmasıyla eğitiyoruz. Dolayısıyla hala Vanishing Gradient problemimiz potansiyel olarak mevcut diyebiliriz.
+
+393
+01:50:03,819 --> 01:50:11,460
+Relo Gradient'in kaybolması problemini en azından azaltmış olacak.
+
+394
+01:50:11,807 --> 01:50:20,988
+Ve eğitimin düzgün bir şekilde yapılmasını sağlayacak. O yüzden Relu katmanı önemli.
+
+395
+01:50:22,148 --> 01:50:32,188
+Pooling Layer, Dimension Azaltma için Relu'nun çıktısında oluşan çıktığı küçültme için kullandığımız bir katman.
+
+396
+01:50:32,908 --> 01:50:38,587
+Aslında şurada filtrelerle önemli özellikleri tespit ettik.
+
+397
+01:50:38,931 --> 01:50:56,492
+Relu katmanıyla bir kısmı bunların önemsiz hale geldi veya birbirine benzer çıktılar üretti. Cooling'le de buradan gelen çok sayıda inputu azaltıp boyutu küçültmüş olduk.
+
+398
+01:51:00,576 --> 01:51:14,836
+Hesapsal açıdan kullanılacak memorinin ve işlem gücünün biraz sınırlanması için faydalı olan bir katman. Pulling katmanından sonra da Fully Connected katmanımız var.
+
+399
+01:51:21,971 --> 01:51:27,091
+Üstümüyle birbirine bağlı zaten. Fatma'nın ismi o yüzden Fully Connected Live.
+
+400
+01:51:28,692 --> 01:51:55,271
+Çıkışta oluşan, poolingin çıkışında oluşan bütün nöronların bağlanacağı, bütün bağlantıların tam olduğu bir fully connected layer'ımız var. Bu fully connected layer'ın çıktısı da yine bir etiketle artık bir sınıf veya bir isimlendirme her neyse bir etiketle ilişkilendirilmek üzere aslında fully connected layer'a ihtiyacımız var.
+
+401
+01:51:55,663 --> 01:52:12,283
+Burada da yaptığımız iş bu. Şimdi bu katmanlardan sadece birer tane olmak durumunda değil. Farklı kombinasyonlarda, işte farklı sayıda konvolüsyon veya filtre içeren...
+
+402
+01:52:14,068 --> 01:52:36,427
+Konvolüsyonel katmanlardan çok sayıda kullanabiliriz. Aynı şekilde pooling layer, relu layer farklı sayıda olabilir. Ama en temelde olması gereken, CNN'de olması gereken katmanlar bunlar. Yapıları da tabaca bu şekilde.
+
+403
+01:52:39,731 --> 01:52:58,452
+Peki, bir tane örnek işte farklı kombinasyonların kullanıldığı. Üç çeşit katmanımız var demiştik. Bunların farklı dizimleri burada gördüğünüz gibi olabilir.
+
+404
+01:52:58,452 --> 01:53:03,412
+İşte bu aslında Classic Cation için önerilen bir tane.
+
+405
+01:53:03,859 --> 01:53:14,180
+Mimari, verdiğiniz resimden ait olduğu sınıfı belirlemeye çalışıyor. Polyconnected Layer'ın çıktısı.
+
+406
+01:53:16,899 --> 01:53:24,840
+Beş tane sınıf var burada. Bu beş sınıfla ilişkilendirilmiş. Buna göre bir etiketleme de yapmış oluyoruz.
+
+407
+01:53:30,420 --> 01:53:34,519
+Söylemek gerekirse bir iki dezavantajı var.
+
+408
+01:53:34,944 --> 01:53:51,244
+İlk olarak Superwise Learning kullanıyoruz. Dolayısıyla etiketli data ihtiyacımız var ve bu datadan da çok fazla sayıda olması lazım. İyi bir eğitim yapabilmek ve başarılı bir mimari oluşturabilmek için.
+
+409
+01:54:02,944 --> 01:54:13,924
+Biraz düşünürseniz siz de fark edeceksiniz. Çok da fazla çeşit yok. Yani tamam, görüntü tanıyacağım veya sınıflayacağım.
+
+410
+01:54:14,547 --> 01:54:32,047
+Ama ne için? Bu sınıflama sonucuyla ne yapacağım? Bir sınıflama veya tespit yapabiliyorsunuz. O tespitle ne yapacağınız noktasında bir uygulama alanına da bağlamanız gerekiyor.
+
+411
+01:54:33,844 --> 01:54:52,103
+Bu bir dezavantaj sayılmayabilir tabii ama hani SNR çok iyi, çok iyi, çok iyi ama hani çıkardığı sonuç tek başına çok da kullanılabilir değil. Mutlaka bir uygulama alanıyla ilişkilendirilmesi gerekiyor.
+
+412
+01:54:56,103 --> 01:54:58,323
+Arkadaşlar, bugünlük yetsin bu kadar.
+
+413
+01:55:00,020 --> 01:55:16,820
+Aslında çok bir şeyim yok ama haftaya birazcık kalan birkaç şey daha söyleyeyim, reküren talarları. Sonra biraz detaylarına girerek devam edelim diyeceğim. Var mı söylemek istediğiniz bir şey, sormak istediğiniz bir şey?
+
+414
+01:55:24,340 --> 01:55:24,980
+Yok mu?
+
+415
+01:55:26,819 --> 01:55:28,720
+Yok hocam, kendinize iyi bakın.
+
+416
+01:55:29,319 --> 01:55:32,399
+Tamam, bir tek sen mi varsın [öğrenci]? Kimseden başka ses mi?
+
+417
+01:55:32,980 --> 01:55:34,359
+Yok hocam, teşekkürler.
+
+418
+01:55:34,859 --> 01:55:39,640
+Tamam, teşekkür ederim. Dersin başında bir iki ses geliyordu en azından dedim.
+
+419
+01:55:40,899 --> 01:55:44,720
+Tamam, kendinize çok iyi bakın. O zaman haftaya görüşürüz diyeyim.
+
+420
+01:55:45,600 --> 01:55:46,840
+İyi günler hocam, teşekkür ederim.
+
+421
+01:55:46,859 --> 01:55:48,340
+İyi günler hocam.
+
+422
+01:55:48,340 --> 01:55:50,060
+İyi günler hocam, sağ olun.

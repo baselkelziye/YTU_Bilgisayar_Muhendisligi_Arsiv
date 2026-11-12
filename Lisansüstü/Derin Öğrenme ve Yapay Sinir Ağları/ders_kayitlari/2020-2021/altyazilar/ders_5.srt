@@ -1,0 +1,931 @@
+1
+00:01:52,852 --> 00:01:57,192
+Merhaba arkadaşlar. Bekliyorum gelen olur mu diye.
+
+2
+00:01:59,188 --> 00:02:24,768
+İki dakika daha bekleyelim. Bugün dersi biraz kısa yapacağım. Geçen hafta neyse resmi tatilmiş aslında. Ben dersi iptal ettim diye düşünüyordum ama resmi olarak tatilmişiz. Bugün biraz kısa yapacağım sonra ama iki dersimiz eksik olmuş olacağı için bir telafi dersi yapacağım. Onun ne zaman olacağıyla ilgili size soracağım tekrar.
+
+3
+00:02:25,524 --> 00:02:40,883
+Belki biraz daha dönem ortasına doğru yaparız. O yüzden kusuruma bakmayın. Anlaşılmaz bir şekilde pandemi döneminde yoğunluk var. Yetişemiyorum hiçbir şeye.
+
+4
+00:02:43,024 --> 00:02:50,783
+Şimdi önce sizin bana soracağınız bir şeyler varsa onları alayım. Ben de bu arada sunumumu açayım.
+
+5
+00:03:02,003 --> 00:03:04,043
+Hocam, ödevle alakalı soru sorabilir miyim?
+
+6
+00:03:04,623 --> 00:03:05,503
+Tabii, tabii. Lütfen.
+
+7
+00:03:06,323 --> 00:03:11,123
+Hocam, şimdi biz ödevde Single Layer Perceptor yapısı oluşturacağız.
+
+8
+00:03:12,403 --> 00:03:20,043
+Bunun için sizin anerdiğiniz bir şey var mı kütüphane? Keras, TensorFlow, istediğimizi kullanabiliyor muyuz?
+
+9
+00:03:20,863 --> 00:03:27,603
+İstediğimizi kullanabiliyorsunuz. Keras'la daha kolay yapabilirsiniz diye düşünüyorum.
+
+10
+00:03:28,276 --> 00:03:42,636
+Ama hiç programlama background'ı olmayanlar var galiba arkadaşlarımız arasında. Hiç demeyeyim ama belki daha az. Metlab tarzı bir şey kullanmak isteyen olursa onu da kabul ediyorum.
+
+11
+00:03:45,036 --> 00:03:54,956
+Ama hazır kütüphaneleri, yani temel işlemler için kullanın, matriz çarpımı vs. için ama algoritmayı kendiniz yazın olur mu?
+
+12
+00:03:55,443 --> 00:03:56,883
+Tamam hocam.
+
+13
+00:03:57,084 --> 00:04:20,103
+Onun dışında bir şey istemiyorum. Bir de mümkün olduğunca jenerik yazın. Çünkü o ödevin üzerinden devam ettireceğim. Back Propagation algoritması vs. Mümkün olduğunca değişkenlerinizi tanımlayın ve parametrik olsun ki sonradan değişiklik yapabilirsiniz. Yeniden her şeyi yazıyormuş gibi olmayın.
+
+14
+00:04:24,723 --> 00:04:26,783
+Başka var mı arkadaşlar sorunuz?
+
+15
+00:04:28,103 --> 00:04:29,403
+Ben de bir şey sorabilir miyim hocam?
+
+16
+00:04:29,703 --> 00:04:30,343
+Evet, lütfen.
+
+17
+00:04:31,004 --> 00:04:37,963
+Şimdi Bipolar ve Binary inputlar için ayrı ayrı denemeler yapıyoruz.
+
+18
+00:04:40,463 --> 00:04:45,043
+Bunları size gönderirken de ayrı programlar olarak mı gönderirdim yoksa tek programın içerisine?
+
+19
+00:04:45,812 --> 00:05:06,872
+Tek kodda olur ama raporda ben özellikle iki veri arasında sonuçlara etki oldu mu, hangisi daha çabuk eğitildi veya belki birisi hiç başarılı olamadı. Bu tür şeyleri raporlamanız için ikisini de denemenizi istiyorum.
+
+20
+00:05:06,872 --> 00:05:12,932
+Kod içinde birisini kapatıp koyun kodun içine.
+
+21
+00:05:13,427 --> 00:05:19,487
+Ama bir tanesinin okunduğu versiyonu yollasanız yeterli benim için.
+
+22
+00:05:20,927 --> 00:05:21,487
+Tamam hocam.
+
+23
+00:05:22,648 --> 00:05:31,228
+Onu da dediğim gibi yani iki veri de olsun seçebilelim. Kodun içinden en azından müdahale edebilelim. Yeterli olur.
+
+24
+00:05:35,699 --> 00:05:47,720
+Diğer yakın samayla ilgili ödevi yaptınız mı? Biraz az geldi bana sanki raporlar. Buradaki arkadaşlarımız yaptı mı acaba?
+
+25
+00:05:49,720 --> 00:06:00,587
+Peki, bugün de sisteme kaydetmediğim küçük ödevleriniz var. Onları da daha sonra...
+
+26
+00:06:00,596 --> 00:06:18,176
+Bir noktada ihtiyacınız olursa değerlendiriyor olacağım. O yüzden mümkün olduğunca yapmaya çalışın. Bir de sınav aşamasında veya arada bir yerde onlarla ilgili sorular olabilir. Kendinize egzersiz gibi de düşünün.
+
+27
+00:06:18,463 --> 00:06:23,604
+Geç de olsa verdiğim ödevleri kendiniz için en azından yapın olur mu?
+
+28
+00:06:24,144 --> 00:06:29,344
+Hocam ben bir hafta kadar geç vermiş oldum ama o derse katılmadım.
+
+29
+00:06:29,344 --> 00:06:32,783
+Tamam, yani yapmış olun da şey değil.
+
+30
+00:06:32,783 --> 00:06:34,604
+Ulaştı, ulaşıp ulaşmadı.
+
+31
+00:06:34,604 --> 00:06:37,644
+Ulaştı ama çok kötü yazmışsın. Bir de onu söyleyeyim.
+
+32
+00:06:39,283 --> 00:06:45,224
+Dosyalarınızda arkadaşlar ne olur kendi isminiz, dersin ismi.
+
+33
+00:06:45,684 --> 00:07:12,343
+Varsa numaranız da olabilir ama en azından isminiz olsun. Bana isimsiz ödev 3, ödev 2. Ödev numarası bile şeye göre değişiyor. Siz 3 diye algılıyorsunuz, birisi 2 diye algılıyor. Ödevin ismi, dersin ismi sizin isminiz gibi. Bakıldığı zaman dosya ne olduğunu anlayabileceğimiz şekilde dosya ismini adlandırın lütfen.
+
+34
+00:07:13,043 --> 00:07:25,764
+Bir de mail de geldiğini düşünün. Diğer derslerden de ödevler geliyor bana. Hani dosyayı benim kaydedeceğimi de düşünün. Onları ben yeniden adlandırmak zorunda kalıyorum. Sizin isimlerinizi yazın.
+
+35
+00:07:25,783 --> 00:07:27,084
+Tamam hocam, kusura bakmayın.
+
+36
+00:07:27,524 --> 00:07:34,603
+Tamam, sen soru sorduğun için sana patladı ama bir tek sen değilsin bu tabii. Genel olarak böyle bir problem var.
+
+37
+00:07:35,091 --> 00:07:49,812
+Lütfen isminizi, dersin ismini ve belki ödev konusunu, numarasını yazıyorsanız da doğru yazın en azından. Benim anlayabileceğim şekilde, ayırt edebilecek şekilde adlandırırsanız sevinirim.
+
+38
+00:07:51,112 --> 00:08:00,672
+Öbür türlü gözümden kaçabilir. Hani gönderirsiniz, göndermediniz zannederim. Her ne kadar bir ara listeye inleyeceğim ama ben de biraz gecikmeli hareket ettiğim için.
+
+39
+00:08:01,055 --> 00:08:06,156
+Üzerinden çok zaman geçmeden fark edebilmem için böyle yapın lütfen.
+
+40
+00:08:08,456 --> 00:08:19,795
+Peki. Çok kısa aslında geçen haftadan biraz tekrarlayıp bir tane örnek üzerinden gradiyan düşüm algoritmasının neye benzediğini göstermek istiyorum.
+
+41
+00:08:21,136 --> 00:08:26,196
+Biz daha sonra backpropagation'da da gradiyan düşüm mantığından yararlanacağız.
+
+42
+00:08:26,196 --> 00:08:28,316
+Şu anda göstereceğim örnek.
+
+43
+00:08:28,692 --> 00:08:47,632
+Biraz daha basit kalacak yapay sinir ağ içindeki kullanıma göre. Çünkü daha az değişken olacak. Daha düşük boyutta bir problem üzerinden göstereceğim. Ama mantığı anlamamız için önemli. Bir de Gradiyan ve Hesiyan nasıl hesaplanır onu görmüş olacağız.
+
+44
+00:08:48,179 --> 00:08:57,099
+Onu da yaparsam bugünlük o kadar yapmak istiyorum. Daha sonra backpropagation'a devam edeceğiz.
+
+45
+00:08:58,659 --> 00:09:15,019
+Şimdi düşüm algoritmalarını kullanmak zorundayız. Hatayı minimize etmek için aslında optimizasyon genelinde veya arama algoritmaları genelinde kullandığımız yöntemler bunlar.
+
+46
+00:09:15,635 --> 00:09:34,115
+Bir maksimizasyon işlemi için de kullanılabilir ama bizim dersimizin hedefinde sonuç itibariyle bir ağın sonunda bir hata oluşuyor ve onu minimize etmek istediğimiz için ben daha çok minimizasyon üzerinden konuşuyor olacağım.
+
+47
+00:09:35,975 --> 00:09:40,415
+Tam tersini uyguladığımızda da aslında fonksiyonun bir maksimum noktasını bulmak.
+
+48
+00:09:40,851 --> 00:09:47,391
+Şeklinde de kullanabileceğimiz bir algoritma, gradyan düşüm algoritması ve diğerleri de aynı şekilde.
+
+49
+00:09:48,771 --> 00:09:55,791
+Şimdi yapmamız gereken şey bir kere bir elimizde hata fonksiyonu veya işte bir fonksiyon var.
+
+50
+00:09:56,971 --> 00:10:01,912
+Bunu minimize eden veya maksimize eden parametreleri bulmak istiyoruz.
+
+51
+00:10:02,951 --> 00:10:04,651
+Bilinmeyen kat sayılarımız var.
+
+52
+00:10:05,043 --> 00:10:23,223
+Bu kat sayılarla ilgili hiçbir fikrimiz yoksa bu fonksiyonun minimum noktasının neresi olacağını, yani nasıl yapısal bir fonksiyon değil, gözle ayırt edebileceğimiz gibi bir yer değil. Dolayısıyla rastgele bir yerden başlamak durumunda kalıyoruz.
+
+53
+00:10:23,827 --> 00:10:32,967
+Bu parametreler için fonksiyonun tanımlı olduğu uzaydan herhangi bir x0 noktasıyla başlıyoruz denemeye.
+
+54
+00:10:33,687 --> 00:10:41,327
+Bu x0 dediğim şey aslında bütün parametrelerimizi, bulmaya çalıştığımız parametreleri içeren vektörel bir değişken.
+
+55
+00:10:41,327 --> 00:10:51,147
+Bir kere orada karıştırmayın. Artık hep çok boyutlu şeylerden bahsediyoruz. Değişkenlerimiz vektörel değişkenler.
+
+56
+00:10:51,604 --> 00:11:09,563
+Dolayısıyla bir vektörel değişken için rastgele bir değerlerle başlıyoruz. Ondan sonra yapmamız gereken şey, bu ilk seçtiğimiz noktanın fonksiyonu minimumunu bulan nokta olması ihtimali neredeyse yok gibi.
+
+57
+00:11:10,067 --> 00:11:25,687
+Ama kontrol edilebilir türev alınarak bir takım kontrol koşullarına baktıktan sonra bu noktanın istediğimiz gibi bir lokal minimuma işaret etmediğine karar verirsek yeni bir nokta seçmemiz gerekecek.
+
+58
+00:11:25,687 --> 00:11:33,888
+Yeni bir nokta seçmek için ne yapıyoruz? Yeni bir nokta seçeceğim ama artık onu da rastgele seçmemeliyim.
+
+59
+00:11:34,272 --> 00:11:46,212
+Bu konusunda türevin minimizasyonun veya fonksiyonun minimumuna işaret ettiğini bildiğim için türevden yararlanmıştık gradiyan düşüm yönteminde.
+
+60
+00:11:46,212 --> 00:11:59,132
+Gradiyanın tersinin, yani birinci türevin tersinin yönünün bize aslında fonksiyonu küçülten, fonksiyonun aldığı değeri küçülten bir yön göstereceğini söylemiştik.
+
+61
+00:11:59,604 --> 00:12:23,803
+Bu şekilde bir düşüm yönü belirliyoruz. Ondan sonra o yönde yeni bir nokta seçeceğim. O noktanın ne kadar uzakta olması gerektiğine dair de bir karar veriyoruz. Yani bir adım miktarı belirliyoruz ve seçtiğimiz yeni nokta için yine türev hesaplıyoruz vs. bir update işlemi yapıyoruz.
+
+62
+00:12:24,240 --> 00:12:45,960
+Bu yeni noktanın durma koşullarını yani fonksiyonu minimum eden, minimum yapan bir nokta olup olmadığını kontrol ediyoruz. Nereye kadar? Durma koşulları sağlanana kadar yani en azından bir lokal minimum bulana kadar veya belirlediğimiz bir EPOC sayısına ulaşana kadar.
+
+63
+00:12:46,515 --> 00:13:09,135
+EPOC sayısında tedbiren koyuyorduk hatırlarsanız. Belki tamamen yanlış bir yöntem seçtim minimizasyon için ve sonuca ulaşmayacak algoritmam sonsuza kadar dönmesin diye. Eğer bir minimum bulamıyorsam veya hesaplama süresiyle ilgili bir kısıtım varsa.
+
+64
+00:13:09,620 --> 00:13:19,480
+Dolayısıyla algoritmanın sonsuz döngüye girmemesi için bir epok sayısıyla da sınırlayabiliyorum. Bir durma koşulu olarak onu da koyuyorum.
+
+65
+00:13:20,180 --> 00:13:26,060
+Gradian düşün veya diğer yöntemlerin hepsinde mantık aynı şekilde işliyor demiştik.
+
+66
+00:13:26,060 --> 00:13:34,879
+İşte bir nokta ile başla, gideceğin yönü belirle, o yönde ne kadar uzakta yeni noktanı seçeceğini belirle.
+
+67
+00:13:35,248 --> 00:13:45,128
+Ve durma kriterlerini kontrol et. Genel yapı bütün optimizasyon algoritmalarında böyle. Bizim kullanacağımız algoritmalarda da aynı şekilde olacak.
+
+68
+00:13:46,128 --> 00:13:58,408
+Şimdi durma kriteri olarak neleri belirleyebiliriz demiştik. Bir hata hesabı yapıp bu hatanın belli bir değerin altında kalmasını isteyebiliriz.
+
+69
+00:13:59,059 --> 00:14:20,139
+Zaten yakınsama hikayesi de buradan çıkmıştı. Her adımda hata hesaplarsanız, adımlar arasında hatanın ne kadar değiştiğine göre geçen haftaki ödevimiz olan algoritmanın lineer yakınsama mı yoksa işte kuadratik yakınsama mı gösterdiğini veya süperlineer mi yakınsadığını tespit edebiliyorduk.
+
+70
+00:14:20,447 --> 00:14:40,427
+Hatta için bir sınır belirleyebiliriz. Yani sizin probleminize göre %10 hata iyidir derseniz hata hesaplarsınız. Hatayla normal olarak hesaplıyorduk. O hatanın belirlediğiniz değerin altında kalıp kalmadığına bakarsınız. Bu bir durma koşulu olabilir.
+
+71
+00:14:41,139 --> 00:14:59,799
+Aynı zamanda belki boşuna iterasyon çalıştırıyorsunuz. Fazla bir ilerleme olmuyor. Yani belki durağın bir düzlük noktaya geldiniz. Fonksiyonun değeri fazla değişmiyor. O da ikinci şu.
+
+72
+00:15:00,340 --> 00:15:20,279
+fxk-fxyıldız diye gösterdiğimiz ifade. Fonksiyonun k. iterasyonda seçtiğimiz nokta için aldığı değerle şu anda bulunduğumuz aday bir minimum değer arasında aldığı değer arasındaki farka bakıyoruz.
+
+73
+00:15:20,820 --> 00:15:26,900
+O da eğer çok küçükse, bir TOE2 değeri bu da çok küçük bir sayı olduğunu düşünelim.
+
+74
+00:15:27,160 --> 00:15:41,080
+Belli bir iterasyon boyunca bu şekilde değişmiyorsa, aynı düzlükte dolaşıp duruyoruz gibi görünüyorsa, burada da algoritmanın durmasına karar verebilirsiniz.
+
+75
+00:15:41,748 --> 00:15:58,087
+Tabii normalde gerçekte olması gereken X Yıldız'la fonksiyonun bir lokal minimumunu göstermiştik ya, normalde minimum değerin ne olduğunu bilmiyoruz ama işte o anki noktayı bir aday minimum diye düşünürsek ona göre hesaplayabiliriz.
+
+76
+00:15:58,416 --> 00:16:05,115
+Bu pratikte çok fazla kullanılmıyor çünkü herhangi bir düzlüğe girmiş olabiliriz. Minimumla alakamız bile olmayabilir.
+
+77
+00:16:05,755 --> 00:16:20,096
+Sadece buna bakarak en azından bir karar vermek doğru değil. Ama işte hata ve ondan sonra fonksiyonun iki iterasyon arasında aldığı değer farkına bakarak karar verebiliriz.
+
+78
+00:16:20,096 --> 00:16:23,296
+Bu kriterlerin birkaç tanesini bir arada da uygulayabiliriz.
+
+79
+00:16:25,652 --> 00:16:44,032
+Çeşitli versiyonlarında o şekilde kullanılıyor. Yaklaşık değer olması için, yani minimumdan ne kadar uzağıma temsilen iki nokta arasında fark, ne kadar uzakta bir, ne kadar adım miktarı ötede bir nokta seçmişim.
+
+80
+00:16:51,312 --> 00:17:04,852
+Epsilon değerinden küçük olmasını bekliyorum. Burada seçeceğim Epsilon değerleri birbirinden farklı olabilir, aynı olabilir. Tamamen bu uygulamaya bağlı olarak karar verebileceğiniz şeyler.
+
+81
+00:17:10,003 --> 00:17:21,743
+Noktalar arasındaki fark, fonksiyonun aldığı değerler arasındaki fark ve belki bir de hata miktarı durma koşulu olarak kullandığımız parametreler.
+
+82
+00:17:21,743 --> 00:17:33,223
+Şimdi, türev için geçen hafta biraz söyledim. Geri fark fonksiyonu şu bildiğiniz türev tanımı.
+
+83
+00:17:36,243 --> 00:17:41,423
+Türev tanımını daha farklı da yapabileceğimizi söylemiştik.
+
+84
+00:17:41,711 --> 00:17:58,811
+Bu formülleri kullanarak türev hesaplıyoruz. Şimdi siz tabii compiler kullanırken orada bu formülün uygulandığının belki farkında olmuyorsunuz ama biraz daha kendiniz kodu yazarken ihtiyacınız olabilecek daha iyi türev tanımları da kullanabileceksiniz.
+
+85
+00:18:06,036 --> 00:18:13,895
+Kalor serisini açtığımız zaman F üstü X eksi Fx şeklinde yazabiliyoruz.
+
+86
+00:18:15,791 --> 00:18:29,951
+Fx diye yazabiliyoruz. Şu aradaki fark çok küçüldüğünde, dikkat ederseniz türev formülünde, fx artı açta fx arasındaki fark çok küçüldüğünde türev sıfıra yaklaşacak.
+
+87
+00:18:30,531 --> 00:18:43,531
+Türev sıfıra yaklaştığında da aslında bir minimuma ulaşacağım. Şu ikinci durma koşulundaki fx k ile fx k artı bir arasındaki farkı da bu türev formülünün payı gibi düşünün.
+
+88
+00:18:43,791 --> 00:18:55,971
+Aslında buranın küçülmesi demek ki bizim türevin sıfır olduğu noktaya yaklaştığımızı söylüyor. Burada kullanmamızın matematiksel diğer bir mantığı da bu.
+
+89
+00:18:55,971 --> 00:19:01,971
+Yani fonksiyonun değeri küçülüyorsa ne oluyor? İşte türev tanımındaki...
+
+90
+00:19:02,451 --> 00:19:21,971
+Pay kısmı küçülmüş oluyor. Dolayısıyla türev sıfıra gidiyor oluyor ve biz de minimuma yaklaşmış oluyoruz. Burası sıfır olursa minimuma ulaşacağız ama ulaşmıyorsak bile çok küçüldüyse zaten yaklaşıyorum. Onu bilebilirim ve durmaya karar verebilirim.
+
+91
+00:19:30,451 --> 00:19:43,852
+Sağlıyorsa, daha fazla iterasyon çalıştırmadan durma kararı verebilirim. Tamamen yine türev mantığından dolayı bunu bir durma koşulu olarak tanımlayabilirim.
+
+92
+00:19:44,884 --> 00:20:05,683
+Diğer yakın sama kriteri olarak türevin belli bir epsilondan, ki o da zaten türevin sıfıra yaklaşmasını temsil ediyor. Türevin belli bir epsilondan küçük olmasını bekleyebilirsiniz. Ama bunun için türev hesaplamanız gerekir. Çok şart değil. Türevin bir kısmını hesaplasanız yeterli.
+
+93
+00:20:07,763 --> 00:20:17,183
+Bunun daha iyisi Hesiyan matrisine bakabilirsiniz. Hesiyan matrisi hatırlıyorsanız ikinci türev demiştik.
+
+94
+00:20:17,963 --> 00:20:31,564
+Fonksiyonun Taylor açılımını yazdığımızda ikinci terimdeki ikinci türevi eğer kısmiye türevlerden oluşan bir türevden bahsediyorsak Hesiyan matrisi diye ifade ediyorduk.
+
+95
+00:20:31,824 --> 00:20:51,543
+Hesiyan maddesinin de pozitif veya negatif olması bize aslında bir minimumda mı maksimumda mı olduğumuzu söylüyordu. Dolayısıyla eğer ikinci türev alma lüksünüz varsa, bunun hesaplama yükü fazla gelmiyorsa, ikinci türeve bakarak...
+
+96
+00:20:51,791 --> 00:21:10,831
+Hesiyan matrisine göre de karar verebilirsiniz. Gradiyan Düşüm Argo Yorultması sadece birinci türeve bakıyor. Ama Newton Argo Yorultması gibi ikinci türeve bakan başka yöntemler de var. Dolayısıyla Hesiyan matrisi de bir seçenek olabilir.
+
+97
+00:21:10,831 --> 00:21:14,771
+Peki, Düşüm Yönü'nün bulunmasında?
+
+98
+00:21:15,635 --> 00:21:41,675
+Talor açılımından aslında yararlanarak hangi yönde gitmemiz gerektiğine karar vermiştik. Talor açılımına bakarsanız sadece ilk terimi kullandığımız durum şurası. Diğer terimleri ihmal etmişiz. Bir x artı alfa h gibi bir fonksiyonun talor açılımını bu şekilde yazabiliyordum.
+
+99
+00:21:42,195 --> 00:21:56,395
+Benim istediğim şey fonksiyonun değerinin küçülmesi olduğuna göre aslında şu ikinci terimin alfa h çarpı f üstü x teriminin negatif olmasını istiyorum demektir.
+
+100
+00:21:56,395 --> 00:22:07,075
+O ne demek? Aslında o zaman türevin tersi yönde gidersem f x'i küçültecek bir yönde gitmiş olacağım demektir.
+
+101
+00:22:07,175 --> 00:22:09,395
+Gradyan düşüm yönteminin dayandığı...
+
+102
+00:22:09,824 --> 00:22:22,824
+Tamamen temel mantık da buradan geliyor. Türevin pozitif olduğu yön bize fonksiyonun...
+
+103
+00:22:22,867 --> 00:22:41,867
+Büyüdüğü, arttığı yönü gösterir. Yani maksimuma götürür. Tersi ise, türevin negatif olduğu yön ise fonksiyonun azaldığı yönü gösterir. E biz de minimuma gitmek istiyorsak fonksiyonun değerinin azaldığı yönde gitmek istiyoruz demektir. O zaman her zaman...
+
+104
+00:22:42,291 --> 00:22:55,971
+Türevin yani gradyanın negatifi yönde gitmemiz bizim minimuma yaklaşmamızı sağlayacaktır mantığıyla oluşmuş bir yöntem gradyan düşüm yöntemi.
+
+105
+00:22:56,500 --> 00:23:12,279
+Gerçekten de öyle zaten. Taylor serisi de bunun aslında matematiksel olarak bir çeşit ispatı. Dolayısıyla gradiyan düşüm yöntemi aslında bizim her zaman fonksiyonu azaltan yönde gitmemizi sağlıyor.
+
+106
+00:23:12,279 --> 00:23:18,340
+Bizi minimuma yaklaştırıyor. Eğer varsa bir minimum, lokal bir minimum bile olsa.
+
+107
+00:23:18,816 --> 00:23:43,316
+Eninde sonunda oraya ulaştıran bir yöntem. Yani bir nevi garantili bir yöntem. Dezavantajı ne? Oraya giderken biraz yavaş ilerliyor. Yani adım miktarlarını daha küçük seçiyor. Fakat dediğim gibi varsa bir minimum oraya ulaştıracağını garanti eden bir yöntem. Dolayısıyla da çok yaygın kullanılan bir yöntem.
+
+108
+00:23:46,036 --> 00:24:00,316
+Dolayısıyla biz artık eksi f üstü eks veyahut da eksi gradiyan yönünün bizi bir minimuma götüreceğini söyleyebiliriz.
+
+109
+00:24:01,695 --> 00:24:13,675
+Bu bizim için bir arama yönü olmuş oluyor. Mutlak düşüm yöntemi aslında tüm k değerleri için
+
+110
+00:24:14,067 --> 00:24:27,807
+Gradiyan ile Türev ile Haş arasındaki açının minimize olduğu bir gönül seçmek anlamına geliyor.
+
+111
+00:24:28,319 --> 00:24:34,499
+Bunun için de aradaki açının kosünüsüne bakıyoruz.
+
+112
+00:24:35,219 --> 00:24:42,399
+Ve global yakın sama içinde beklenen koşulu buradan şöyle çıkarabiliyoruz.
+
+113
+00:24:42,399 --> 00:24:56,119
+H ile eksi gradiyan arasındaki açı arasındaki fark 2 bölü 2 eksi mün şeklinde yazıldığında eğer mün sabit kalıyorsa bütün değerler için, bütün adımlar için.
+
+114
+00:24:56,319 --> 00:25:10,199
+Veya belli bir noktadan sonraki her adım için. O zaman global bir minimum bulduk diyebiliyoruz. Ama genel olarak algoritmanın derdi o değil. Yani böyle bir kontrol yapmayacağız normalde algoritmada.
+
+115
+00:25:10,675 --> 00:25:29,536
+Bu ancak bir çıkarım olabilir. Algoritmanın çalışma mantığı artık lokal de olsa bir minimum bulmak. Tamamen sizin başlangıçta seçtiğiniz, rastgele seçtiğiniz o başlangıç noktasıyla ilintili olarak bu global minimuma ulaşabilirsiniz veya ulaşamazsınız.
+
+116
+00:25:29,536 --> 00:25:38,536
+Genel anlamda global minimumu bulmak için lokal minimumları pas geçip algoritmayı çalıştırmaya devam ederseniz...
+
+117
+00:25:38,675 --> 00:25:52,256
+Bir gün bulursunuz global minimumu ama genelde değmediği için, o kadar uzun algoritmayı çalıştırmak istemeyeceğiniz için bunu kullanmıyoruz. Genel olarak lokal minimumda yetiniyoruz.
+
+118
+00:25:53,355 --> 00:26:01,336
+Şimdi bir endigradian düşüm yönteminin bir uygulanmasından örnek yapalım.
+
+119
+00:26:01,748 --> 00:26:27,748
+Dediğim gibi bir rastgele X0 noktasından aramayı başlatıyoruz. Oradaki gradiyanı yazıyoruz. Genel olarak, değişken olarak yazabiliriz gradiyanı. Kendimize bir iterasyon sayısı seçmemiz lazım. K ile gösterdiğimiz iterasyon olsun ve büyükmeyle de gösterdiğimiz maksimum iterasyon sayısı olsun.
+
+120
+00:26:28,607 --> 00:26:34,467
+Kontrol için kullanacağım için baştan bir maksimum iterasyon veya epox sayısı belirlememiz lazım.
+
+121
+00:26:35,467 --> 00:26:42,307
+Şimdi x0 noktası ile başladığım için x0 noktasında gradiyanın değerinin ne olduğunu hesaplıyorum.
+
+122
+00:26:42,307 --> 00:26:55,047
+Bu gradiyanın belli bir epsilon değerinden küçük olup olmadığını, türev yani sıfıra yaklaşıyor mu, kazara belki minimuma yakın bir yerden başladım, kontrol etmem lazım.
+
+123
+00:26:55,571 --> 00:27:18,131
+Türevin belli bir epsilon değerinden küçük olup olmadığını kontrol ediyorum. Maksimum iterasyona ulaşıp ulaşmadığımızı kontrol ediyoruz. Eğer bu koşullar sağlanmamışsa x0 noktası bizim için işimizi görecek bir minimum değildir. O zaman yeni bir nokta seçmeliyim.
+
+124
+00:27:18,511 --> 00:27:27,351
+Peki nerede seçmeliyim? Bir D0 yönünde ve T0 adım uzaklığında yeni bir nokta seçmeliyim.
+
+125
+00:27:28,291 --> 00:27:44,331
+D0 ve T0'a göre yeni X1 noktasını hesapladıktan sonra, şimdi artık elimizde iki nokta olduğu için iki nokta arasındaki uzaklığın normunu alıyoruz ve onun bir epsilondan küçük olup olmadığına bakıyoruz.
+
+126
+00:27:44,884 --> 00:28:02,284
+Yine türevin sıfıra yaklaşıp yaklaşmadığını bize gösteren iki nokta arasındaki fonksiyonun değerini hesaplıyoruz ve hepsinin ondan küçük olup olmadığına bakıyoruz. Eğer bu koşullar sağlanmıyorsa gradiyanı hesaplıyoruz X1 için.
+
+127
+00:28:02,708 --> 00:28:22,347
+Onun hepsine ondan küçük olup olmadığına bakıyoruz. Olmadıysa artık yeni bir nokta seçeceğim. Yine baştaki gibi devam ediyoruz. Maksimum iterasyona ulaşmadıysam yeni bir arama yönü, yeni bir adım miktarı ve yeni bir x2 noktası hesaplıyoruz. Bu şekilde algoritma dönüyor. Nereye kadar?
+
+128
+00:28:22,932 --> 00:28:49,152
+Şu ilk adımdaki durma koşulları daha kısıtlı tek nokta olduğu için şöyle bakın. Şuradaki durma koşulları sağlanana kadar x1 ile x0'ın arasındaki fark, fonksiyonun aldığı değerler arasındaki fark, bir de maksimum iterasyon, gradiyanın değeri ve maksimum iterasyon gibi durma koşullarımızı kontrol ediyoruz. Bunlar sağlanana kadar.
+
+129
+00:28:49,619 --> 00:28:52,799
+Aynı şekilde yeni nokta seçerek devam ediyoruz.
+
+130
+00:28:54,920 --> 00:29:02,740
+Bir tane sayısal örnek yapmamız gerekirse, bunu bir hata fonksiyonu olarak düşünün.
+
+131
+00:29:03,899 --> 00:29:09,240
+İki tane bileşenli, yani her zaman dediğim gibi vektörel değişkenlerimiz var.
+
+132
+00:29:09,240 --> 00:29:15,240
+X1 ve X2 şeklinde bileşeni olan bir fx fonksiyonu.
+
+133
+00:29:15,791 --> 00:29:26,112
+X değişkenimiz iki bileşenli. Böyle bir fonksiyonumuz var. Biz bu fonksiyonun minimum olduğu noktayı, X değerini bulmak istiyoruz.
+
+134
+00:29:27,932 --> 00:29:35,672
+Anlattığım algoritma mantığında gidersem bir başlangıç değeri seçmem lazım. 0, 5'e 1 olarak seçmiş olalım.
+
+135
+00:29:37,432 --> 00:29:42,111
+Hemen bu değer için gradiyan kontrolü yapacağız. Onun için önce bir...
+
+136
+00:29:42,112 --> 00:29:55,511
+Şimdi gradiyan hesaplaması yapacağız. Şimdi koşullarımızı, durma koşullarımızı yazalım. Gradiyanın normu bir epsilon değerinden, o da 0,1 olsun demişiz bu örnek için.
+
+137
+00:30:08,692 --> 00:30:17,872
+10 iterasyonu tamamladıysak durmaya karar vereceğiz. Bunlar da durma koşullarımız. Bu şekilde problem tanımlanmış olsun.
+
+138
+00:30:19,432 --> 00:30:22,892
+Gradiyan hesabını nasıl yaptığımızı hatırlarsak.
+
+139
+00:30:23,347 --> 00:30:42,028
+Birinci kısmı türevleri alıyorduk. Örneğimiz için x1 ve x2 şeklinde iki tane sadece birleşen olduğu için gradyan hesabımız bf bölü bx1, bf bölü bx2 şeklinde yine iki birleşenli bir vektör olacak.
+
+140
+00:30:44,147 --> 00:31:04,668
+Normalde normunu hesaplarken gradiyanı da aslında şu x1'e göre iki kere türev alıp karesini hesapladığımızda x1 ve x2'ye göre türevleri alıp karesini hesapladığımızda ve topladığımızda kare kökünü aldığımızda normu bulacağız.
+
+141
+00:31:04,668 --> 00:31:10,668
+Normun formülünü hatırlıyorsunuz değil mi? x1'in karesi artı x2'nin karesinin kare köküydü.
+
+142
+00:31:10,688 --> 00:31:30,248
+Şimdi gradiyanın normunu hesapladığımız için aslında benim birinci bileşenim şu, df bölü dx1. İkinci bileşenim bu, df bölü dx2. Birinci bileşenin karesi artı ikinci bileşenin karesi ve bunun kare kökü.
+
+143
+00:31:30,248 --> 00:31:37,867
+Yani şu aşağıdaki toplamın kare kökü gradiyanın normunu verecek bize.
+
+144
+00:31:39,059 --> 00:31:51,159
+Sonrasında yapmamız gereken şey, Gradia'nın normunu da hesapladık. Bir arama yönü ve bir adım miktarı hesaplamak.
+
+145
+00:31:51,159 --> 00:32:06,659
+Şimdi arama yönü ve adım miktarını hesaplayacağımız formül nasıl oluşuyor ona bakıyoruz. Bir adım miktarına bağlı bir denklem yazmaya çalışıyorum.
+
+146
+00:32:07,039 --> 00:32:20,419
+Bizim için önemli olan Taylor serisinde neydi? Gradiyanın tersi yönde bir TK kadar gittiğimde bir küçük değere ulaşmam gerekiyordu.
+
+147
+00:32:20,419 --> 00:32:33,500
+Yani XK ile bir TK adım ötesindeki nokta arasındaki farkın, fonksiyonun aldığı değerin farkının sıfıra yakın bir şey olmasını istiyordum.
+
+148
+00:32:34,036 --> 00:32:48,136
+Bunu biliyorum. Bunu koydum bir kenara. Yeni bir nokta seçerken nerede seçiyordum? Bir TK adım kadar ötede bir D arama yönünde seçiyordum. Onu da bu şekilde ifade edebilirim.
+
+149
+00:32:55,508 --> 00:33:08,147
+Arama yünü dediğim şey aslında bir nevi işaret sağlayacak şu ikinci bileşeni. TK'da mesafeyi sağlayacak. Yani XK'dan ne kadar öteye gideceğim?
+
+150
+00:33:08,692 --> 00:33:30,791
+Artımı, eksimi. Bir tabii D'nin de bir değeri olacak, bir çarpan da sağlayacak ama daha ziyade de yön anlamında XK'dan eksiltecek miyim, artıracak mıyım, ne kadar eksiltip artıracağım yeni noktayı seçmek için. Dolayısıyla yeni noktanın seçimi için de böyle bir denklem yazabiliyoruz.
+
+151
+00:33:31,152 --> 00:33:47,992
+Şimdi tekrar dönelim. X0 noktamızı rastgele seçmiştik. Durma koşullarını seçmiştik. Şimdi bu sayısal değer için hesaplarımızı yapalım. Gradiyanın formülünü oluşturacak olursam, buraya koymamışım, fonksiyonumuzu bir hatırlayalım.
+
+152
+00:33:48,468 --> 00:34:10,568
+2x1 kare, x1 x2 ve x2'nin karesiydi. Gradiyanın hesabı nasıl yapılıyordu? Önce x1'e göre fonksiyonun türevini alacaktım. Alayım. 4 tane x1 gelecek buradan. Buradan x2'yi gidecek zaten. 1 gelecek. Türevini alırsan.
+
+153
+00:34:10,927 --> 00:34:26,547
+Üçüncü terimde herhangi bir x1'li bir şey olmadığı için, değişken olmadığı için üçüncü terimin türevi de direkt 0 olacak. Yani 4x1 artı 1 şeklinde x1'e göre türevimiz olacak.
+
+154
+00:34:33,280 --> 00:34:56,360
+Pardon, x1. Üçüncü terimin türevi 0. Pardon, 2x2. Bir şey mi söylediniz? Tamam, bir ses geldi gibi geldi. Gradiyanı bu şekilde aldım. x1'e göre türev 4x1 artı x2. x2'ye göre türev x1 artı 2x2 şeklinde.
+
+155
+00:34:56,947 --> 00:35:22,547
+Gradyanın formülü oluştuktan sonra iterasyon kauntörümü başlatıyorum. K'ya sıfır olarak ayarlıyorum. Ve ilk seçtiğim, rastgele seçtiğim nokta için gradyanı hesaplıyorum. Nasıl hesaplayacağım? Gradyanın formülü burada. Noktam burada. Noktanın birinci bileşeni x1 dediğim değer. İkinci bileşeni x2 dediğim değer.
+
+156
+00:35:23,023 --> 00:35:46,823
+x1 yerine 0,5 x2 yerine de 1 koyarsam şuradan 2 buradan da 1 gelecek. Birinci bileşeni gradiyanın 3 olarak çıkacak. Diğer tarafta 0,5 artı 2, 2,5 olarak da gradiyan vektörünün ikinci bileşeni oluşmuş olacak. Buraya kadar bir şey var mı arkadaşlar? Soru var mı?
+
+157
+00:35:52,659 --> 00:35:58,719
+Peki. Bakıyorum şimdi chat'e.
+
+158
+00:36:02,771 --> 00:36:09,051
+Açamadım. Tamam, teşekkür ederim. Soru sorduğunu zannettim, yok demişsin.
+
+159
+00:36:13,211 --> 00:36:23,632
+Şimdi, gradiyanı hesapladım. Şimdi ikinci adım gradiyanın normuna bakmam lazım. Şurada daha norm hesabını rahat göreceksiniz.
+
+160
+00:36:24,148 --> 00:36:32,648
+Gradiyan vektörünün birinci bileşeninin karesi artı ikinci bileşeninin karesinin kökü, toplamının kökü.
+
+161
+00:36:33,907 --> 00:36:41,387
+Birinci bileşenim üçtü, ikinci bileşenim üçtü gradiyan vektöründe. Dolayısıyla onların karelerini alıp topladım.
+
+162
+00:36:42,867 --> 00:36:51,007
+Kare kökünü aldığımda da gradiyanın normunu buldum. Bunun bir epsilon değerinden küçük olup olmadığına bakmam gerekiyordu.
+
+163
+00:36:51,572 --> 00:37:16,412
+Baktım. Maalesef Epsilon değerim 0.1'di. 0.1'den büyük bir değer çıktığı için koşul sağlanmadı. Diğer kontrol edeceğim koşula bakıyorum. İterasyon, bulunduğum iterasyon sayısı maksimum iterasyon sayısından küçük mü diye bakıyorum. Küçük. Dolayısıyla maksimum iterasyona ulaşmadım. Bu koşul da sağlanmadı.
+
+164
+00:37:16,947 --> 00:37:36,087
+O zaman ben devam etmem gerekiyor algoritmaya. Arama yönü seçmem lazım. Arama yönünü seçerken ne yapıyordum? Yeni arama yönüm gradiyanın tersi yönde olmalı demiştik. O zaman gradiyanı hesapladım zaten. Onun tersi yönde bir arama yönü seçeceğim.
+
+165
+00:37:37,331 --> 00:37:57,411
+3 ve 2,5'tu gradyanımın bileşenleri. Tam tersini seçersem, eksi 3 ve eksi 2,5 şeklinde benim arama yönümü gösteren vektör ortaya çıktı. Bunun vektör olması da şaşırtıcı değil değil mi? Zaten vektör yönlü bir şeydir. Bize de bu lazımdı.
+
+166
+00:38:05,876 --> 00:38:08,936
+Şöyle döneyim. Onu kullanıyorum çünkü.
+
+167
+00:38:10,976 --> 00:38:19,996
+XK'dan gradiyanın tersi yönde TK adım kadar uzaklaşmam gerekiyor demiştik.
+
+168
+00:38:19,996 --> 00:38:26,376
+Ne için? Bu aslında türev formülünden gelen farkı küçültmek için.
+
+169
+00:38:27,376 --> 00:38:28,996
+O L formülünü yazdım.
+
+170
+00:38:30,512 --> 00:38:40,812
+F fonksiyonuna koydum. Benim fonksiyonum neydi? 2x1 kare x1 çarpı x2 artı x2'nin karesi şeklindeydi.
+
+171
+00:38:40,812 --> 00:38:51,452
+Ta orijinalde minimize etmek istediğim fonksiyon. Dolayısıyla şuradaki bakın f ifadesi var ya, o f fonksiyonunu uyguluyorum ben.
+
+172
+00:38:51,987 --> 00:38:56,128
+Ama burada esas soru x1 ve x2 olarak neyi alacağım?
+
+173
+00:38:56,128 --> 00:38:59,028
+V fonksiyonunda neyi alacağım?
+
+174
+00:39:01,188 --> 00:39:03,748
+x0 başlangıçta seçtim.
+
+175
+00:39:03,927 --> 00:39:09,728
+Yani bir önceki iterasyondaki x değerinin birinci bileşeni.
+
+176
+00:39:10,748 --> 00:39:18,648
+Eksi t0 dediğim adım miktarı çarpı ikinci bileşen.
+
+177
+00:39:19,219 --> 00:39:42,219
+Öyle değil mi? Bakın şu formüle. Tk çarpı gradiyanın xk noktasındaki değeri. Bunları kullanarak, yani şuradaki xk, k bizim için birinci iterasyondaydı.
+
+178
+00:39:47,572 --> 00:39:58,432
+Tk dediğimiz şey henüz bilmiyoruz ama adım miktarımız ve gradiyanın o noktadaki değeri. Bu değişkenleri alarak buraya koydum.
+
+179
+00:39:59,272 --> 00:40:10,452
+X1 olarak elimdeki noktanın birinci bileşenini kullandım. X2 olarak elimdeki noktanın ikinci bileşenini kullandım.
+
+180
+00:40:13,599 --> 00:40:28,960
+Fonksiyonu buraya yazmışım. Bir L fonksiyonu oluşturdum. Bu L fonksiyonunu oluşturduktan sonra benim istediğim şey bu fonksiyonu türevine alıp sıfıra eşitlemek.
+
+181
+00:40:31,152 --> 00:40:38,652
+Sıfır olduğu anda benim bunu minimize eden aslında t değerini bulmam mümkün olacak.
+
+182
+00:40:39,331 --> 00:40:46,891
+Benim istediğim şey bu. Bunu minimize eden değeri bulayım, t değerini bulayım. O da benim adım miktarım olsun.
+
+183
+00:40:46,891 --> 00:40:51,531
+Giderken hep bu kontrolle gidiyoruz. Yani ne kadar ötede bir nokta seçmeliyim?
+
+184
+00:40:52,351 --> 00:40:58,791
+Mümkün olduğunca fonksiyonu minimize eden miktarda ötede bir nokta seçmeliyim.
+
+185
+00:40:59,284 --> 00:41:13,764
+L'yi minimize eden değeri de doğal olarak kısmı türevinin şu anda tek bir değişken olduğu için T0 diye adi türevinin aslında 0 olduğu noktayı bulmam lazım.
+
+186
+00:41:14,284 --> 00:41:21,764
+Şu ifadenin türevini 0 eşitliyorum. Oradan bir denklem elime geliyor. Bu denklem...
+
+187
+00:41:23,188 --> 00:41:45,807
+Bir tane değişken olduğuna göre T0'ı çözmeme yetecek bir denklem. Buradan T0'ı seçiyorum. O da 0,24 çıkıyormuş. Ve adım miktarımı bulmuş oluyorum. Yönümü gradyanın tersi seçtim. Adım miktarımı da şu şekilde yazdığım benim elimize etmek istediğim fonksiyonun.
+
+188
+00:41:46,096 --> 00:42:07,416
+Türevini sıfıra eşitleyerek adım miktarımı buldum. Artık ne yapabilirim? Yeni bir nokta seçebilirim. Çünkü yeni noktayı seçerken yapacağım şeyi biliyorum. Başlangıçtaki şu anda bulunduğum nokta artı adım miktarı çarpı arama yönü. Yeni noktanın olacağı yer burası.
+
+189
+00:42:07,956 --> 00:42:16,676
+Arama yönümü gradyanın tersi seçmiştim. Şurada bir eksi olacaktı. Yanlış olmuş galiba. Kesinlikle burada bir eksi olacak.
+
+190
+00:42:18,196 --> 00:42:27,336
+X0 artı T0 D0 diye seçeceğim. X0 başlangıçtaki noktam, adım miktarım, arama yönüm.
+
+191
+00:42:27,668 --> 00:42:35,807
+Bu işlemi yaptığım zaman yeni noktamın da 0, 22, 0, 4 olacağını tespit etmiş oluyorum.
+
+192
+00:42:37,008 --> 00:42:44,188
+Şimdi x1-x0 yani iki nokta arasındaki mesafenin normunu hesaplayacağım.
+
+193
+00:42:45,648 --> 00:42:49,108
+Birbirine çok yakın noktalar mı seçmeye başladım?
+
+194
+00:42:49,619 --> 00:42:55,679
+Çünkü o bize minimuma yaklaştığımızı gösteren bir işaretti ya, o yüzden kontrol ediyorum.
+
+195
+00:42:56,359 --> 00:43:06,259
+Noktalar arasındaki mesafenin normunu hesaplarsam 0.72'ye 0.6 çıkıyormuş eksi.
+
+196
+00:43:07,119 --> 00:43:12,079
+Norm olarak alırsam iki nokta arasındaki farkı hesapladım, sonra normunu aldım.
+
+197
+00:43:12,659 --> 00:43:31,039
+Bu belirlendiğim epsilon değeri 0,15'ti galiba. Oradan büyük bir şey çıktığına göre x1 ve x0'ın henüz istediğim kadar birbirine yakın noktaların olmadığını, biraz daha birkaç itirasyon daha gitmem gerektiğini düşündürdü bu bana. Dolayısıyla algoritmam durmayacak.
+
+198
+00:43:31,456 --> 00:43:56,655
+Bir de fonksiyonun aldığı değerler açısından farka bakacağız. Fonksiyonumuz buydu. X1 değerini koyacağız, X0 değerini koyacağız. Arasındaki farka bakacağız. Ona da baktığımız zaman istediğimiz X0 değerinden 0,15'te büyük olduğunu görmüşüz. Dolayısıyla bu durma koşulu da sağlanmamış.
+
+199
+00:43:57,056 --> 00:44:15,916
+Algoritma devam ediyor. Artık X1 noktasını kullanarak yeniden gradiyan hesaplamam lazım. Hesapladım. Gradiyanın normunu hesaplayacağım. Durma koşulunu sağlıyor mu diye. Sağlamadı. İterasyonu sağladı mı diye bakıyorum. Sağlamadı.
+
+200
+00:44:16,659 --> 00:44:43,579
+Bu durumda mecburen yeni arama yönü ve adım miktarı hesaplayacağım ki başka bir nokta seçeyim. Henüz minimum diyebileceğim bir noktaya ulaşamadım. Arama yönünü Gradia'nın tersi yönde seçtim. Yeni adım miktarını hesapladım. O L fonksiyonunu yazmıştım ya. L fonksiyonunun türevini sıfır eşit diyerek adım miktarını buldum.
+
+201
+00:44:43,967 --> 00:44:55,767
+Yeni noktamı da düşündüğüm, hesapladığım adım miktarı ve seçtiğimiz arama yönü ötede yeni bir nokta olarak seçtim.
+
+202
+00:44:55,767 --> 00:45:09,227
+Durma koşullarını kontrol ettim. Koşullar sağlanmamış. Bir sonraki iterasyona geçtim. Vesaire şeklinde gidiyoruz. Bu şekilde nereye kadar?
+
+203
+00:45:10,036 --> 00:45:19,476
+Şu istediğimiz durma koşulları belirlediğimiz epsilon değerlerinin altına düşene kadar iterasyona devam edeceğiz.
+
+204
+00:45:21,096 --> 00:45:27,735
+Şimdi ödev gelecek sorunuz varsa alayım. Pardon chatte bir şey varmış görmemişim.
+
+205
+00:45:29,056 --> 00:45:34,375
+Peki adım miktarı ve learning rate aynı şey mi diye sormuş arkadaşınız.
+
+206
+00:45:36,192 --> 00:45:59,231
+Aynı şey birebir diyemem çıkış noktaları olarak ama aynı amacı hizmet ediyorlar. Evet, yani bir şekilde ne kadar uzağa gideceğimizi söylüyor. Learning Rate sabit bir şekilde çoğunlukla kullanılırken söylüyor. Mesela 0-1 seçtiysem Learning Rate'i hep 0-1 adım öteye gidiyorum.
+
+207
+00:45:59,827 --> 00:46:25,467
+Ama şu anda biz hesaplarken adım miktarı hep farklı değer çıkıyor dikkat ederseniz. Bazen yavaşlayan, bazen hızlanan bir şey adım miktarı. Learning Rate'in geliş noktası burası mıdır? Evet. Burada bizim adım miktarını hesaplarken kullandığımız şu fonksiyonu minimize ediyoruz ya, L fonksiyonunu. Hesaplaması biraz...
+
+208
+00:46:26,132 --> 00:46:39,371
+İşlem gerektirdiği için şunu, bunu yapmak yerine sabit bir adım miktarı almak, yani learning rate kullanmak daha mantıklı gelmiş, daha pratik gelmiş.
+
+209
+00:46:40,371 --> 00:46:53,512
+Aynı şeyler değil ama evet birbirinden türetilmiş şeyler. Ve aslında değişken learning rate kullandığımız durumlar da var. O mesela buraya daha yakın bir mantık.
+
+210
+00:46:53,856 --> 00:47:20,315
+Ne yapıyoruz? Öğrenme hızlandıysa öğrenme oranını, öğrenme kat sayısını azaltıyoruz. Öğrenme yavaşladıysa öğrenme kat sayısını artırıyoruz gibi bir şey yapıyoruz. Burada aslında o mekanizma daha matematiksel olarak ve daha doğru olarak işlemiş oluyor. Yani bu bir tık daha matematiksel olarak doğru versiyonu diyeyim. Mantık aynı.
+
+211
+00:47:20,947 --> 00:47:27,567
+Cevaplayabildim mi [öğrenci]? Tamam, teşekkür ederim ben de. Var mı arkadaşlar başka sorunuz?
+
+212
+00:47:34,068 --> 00:48:01,108
+Yok mu? Peki bak ödev vereceğim ama. Veriyorum. Şu kaldığımız noktadan bir iterasyonda sizin işletmenizi isteyeceğim. Bunun için istiyorum. Genellikle şu fonksiyonu oluşturup çözerken, burada bakarken anlamış gibi oluyorsunuz ama kendiniz yapmaya çalıştığınızda sıkıntı oluyor.
+
+213
+00:48:01,715 --> 00:48:10,735
+Onu bir kere elinizle yapmanızı istediğim için, birer kere işte gradiyan ve norm hesaplamış olasınız diye pratik için istemiş olayım.
+
+214
+00:48:11,995 --> 00:48:15,955
+Kaldığımız en son seçtiğimiz nokta Fx2 idi.
+
+215
+00:48:15,955 --> 00:48:17,835
+Şu nokta.
+
+216
+00:48:20,436 --> 00:48:33,556
+Sonrasında seçeceğimiz X3 noktasının ne olduğunu bulup, X3 noktasındaki gradiyanların ve durma koşullarının da kontrol edilmesine kadar tam bir iterasyon daha hesaplamanızı isteyeceğim.
+
+217
+00:48:35,335 --> 00:48:36,016
+Anlaşıldı mı?
+
+218
+00:48:37,996 --> 00:48:38,556
+Evet hocam.
+
+219
+00:48:39,335 --> 00:48:39,635
+Tamam.
+
+220
+00:48:40,215 --> 00:48:40,875
+Evet hocam.
+
+221
+00:48:41,635 --> 00:48:43,496
+Başka bir sorunuz var mı?
+
+222
+00:48:48,019 --> 00:48:56,679
+Peki, o zaman bugün için ben sizden izin istiyorum. Dediğim gibi bir telafi dersiyle kalan kısmı kapatacağım sonra.
+
+223
+00:48:57,900 --> 00:49:02,700
+Hocam bu ödevimizi de gelecek derse kadar yapabiliriz.
+
+224
+00:49:02,700 --> 00:49:12,860
+Evet, lütfen. Büyük ödev değil bu verdiklerim. Bunları kağıt üzerine, tabii bilgisayarda yazarsanız çok daha şık olur ama.
+
+225
+00:49:13,264 --> 00:49:38,144
+Elinizle bile bir kağıt üzerine yazarsanız, bana iletirseniz bir hafta içinde yapılabilecek şeyler. Haftaya teslim ederseniz sevinirim. Maile gönderebilirsiniz. Dediğim gibi ne olur ödev dosyalarının isminizi ve ödevle ilgili bir ipucu, ders ismi gibi bir şeyleri içermesine dikkat edin. Gözünden kaçmasın mailde.
+
+226
+00:49:41,300 --> 00:49:45,240
+Peki, teşekkür ediyorum o zaman. Haftaya görüşmek üzere diyorum.
+
+227
+00:49:45,860 --> 00:49:47,140
+Teşekkür ederiz hocam.
+
+228
+00:49:47,600 --> 00:49:48,820
+Sağ olun, sağ olun.
+
+229
+00:49:50,820 --> 00:49:52,940
+Görüşürüz hocam, görüşmek üzere.
+
+230
+00:49:53,080 --> 00:49:56,340
+Efendim canım? Ha tamam. Görüşmek üzere dedin değil mi?
+
+231
+00:49:57,140 --> 00:50:02,100
+Tamam. Bunu dördüncü ödev olarak mı adlandıralım demiş arkadaşınız. Olur.
+
+232
+00:50:03,620 --> 00:50:08,880
+Ödev dört deyin ama ne olur kendi adınızı mutlaka koyun, ders ismini mutlaka koyun.
+
+233
+00:50:11,380 --> 00:50:14,260
+Peki, görüşürüz arkadaşlar. İyi günler.

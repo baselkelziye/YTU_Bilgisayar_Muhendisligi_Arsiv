@@ -1,0 +1,2043 @@
+1
+00:00:48,723 --> 00:01:03,003
+Merhaba arkadaşlar. Sesim geliyordur değil mi? Merhabalar hocam geliyor. Merhaba hocam ses geliyor. Tamam. İyi misiniz? Arkadaşlarınız gelirken bizle konuşalım.
+
+2
+00:01:06,263 --> 00:01:16,123
+Yiyiz hocam siz nasılsınız? Teşekkür ederim. Ben de iyiyim. Şimdi bir iki şey söyleyeyim. Sınav.
+
+3
+00:01:16,563 --> 00:01:19,743
+Yapmayacağım. Anladınız herhalde onu değil mi?
+
+4
+00:01:23,284 --> 00:01:29,444
+Tamam, ödevlerden arasına notunuzu belirleriz diye düşünüyorum.
+
+5
+00:01:30,963 --> 00:01:41,564
+Geçen hafta verdiğim uzatmayı biraz erken söylediğim için o gece gelen ödevler kabul olacak mı olmayacak mı diye bir tereddüt oluşmuş galiba.
+
+6
+00:01:41,564 --> 00:01:47,564
+Birkaç tane mail almıştım. Tabii ki ilk verdiğim tarihte gönderenlerinkini...
+
+7
+00:01:49,108 --> 00:02:01,328
+O geceye kadar olanları kabul ettim. Diğerlerini de kabul ettim. Zaman konusunda o kadar kaygılanmayın. Ama ne olur ödevleri güzel yapın. O daha önemli benim için.
+
+8
+00:02:01,867 --> 00:02:13,328
+Şimdi benzer bir örnekle Back Propagation'dan bir tane ödev vereceğim. Bundan sonrasında, yani bu haftaki eklemeleri bitirdiğinizde.
+
+9
+00:02:15,252 --> 00:02:36,632
+Bir tane de daha farklı bir ödev daha veririm diye düşünüyorum. Bir de arada söylediğim küçük ödevler var. Yıl içi notlarınız bunlarla olacak. Finalde ne yaparız bilmiyorum. Aslında belki bu haftadan sonra artık biraz sizin iki dersinizi kaçırdığım için telafi yapmam lazım.
+
+10
+00:02:37,139 --> 00:02:49,019
+Back Propagation ve biraz derin öğrenme anlattıktan sonra belki biraz test konunuza da yakın olan bir tane herkesin farklı yapabileceği bir ödev üzerinden gidebiliriz.
+
+11
+00:02:51,879 --> 00:03:01,359
+Onu da önümüzdeki haftadan sonra net söylemiş olayım size. Bir iki tane örnek vereceğim neler olabilir diye.
+
+12
+00:03:02,068 --> 00:03:10,468
+Final sınavında belki öyle değerlendiririz. Var mı bunlarla ilgili bir sorunuz?
+
+13
+00:03:14,900 --> 00:03:40,020
+Peki. Şimdi yapay sinir ağlarını aşağı yukarı kapatmak istiyorum bugün. Rekabetçi ağlardan biraz bahsedeceğim. Birazcık RBF ve RNN kalıyor ama onları Deep Learning ile ilgili konulara geçtiğimizde zaten ilişkili şeyler var orada da. Hatta LSM.
+
+14
+00:03:40,756 --> 00:04:05,276
+Ağına geçtiğimizde rekünt ağları orada işleriz diye düşünüyorum. O yüzden herhalde yapay sinir ağları ile ilgili şey olarak bugünkü konu sonu olacak. Devamında da biraz derin öğrenme ile ilgili olan şeylere bakmaya başlarız. O noktada belki daha çok orayla ilgili bir ödev düşüneceğim.
+
+15
+00:04:07,699 --> 00:04:13,379
+Katılım biraz az onu bekliyorum ama yavaş yavaş biz başlayalım.
+
+16
+00:04:21,620 --> 00:04:36,320
+Peki. Rekabetçi ağlar şimdiye kadar gördüklerimizden biraz daha farklı olarak aslında mutlaka bir kazananın olmasını beklediğimiz yapılar.
+
+17
+00:04:36,767 --> 00:04:49,668
+Çıkışta %90 bu, %10 şu şeklinde kararsız birbirleri arasında farklı olsa kararsız bir sonuç vermek istemiyoruz.
+
+18
+00:04:49,668 --> 00:04:57,168
+Ve kesin bir seçim yapmak istiyoruz. Daha ziyade kümelemeye uygun.
+
+19
+00:04:59,091 --> 00:05:22,831
+Yapılar. İki tip rekabetçi ağ var. Bunlardan üç tane örneğini göreceğimiz sabit ağırlıklı rekabetçi ağlar var. Bir de aslında an süpervaziyat öğrenmeyle çalışan self-organizing maps, LEVQ, ters yayılım ağları gibi farklı yapıdaki ağlar da var.
+
+20
+00:05:25,524 --> 00:05:33,243
+Dediğim gibi uygulama alanı olarak daha ziyade clustering için uygun yapılar.
+
+21
+00:05:34,124 --> 00:05:51,084
+Girdi sinyallerimizi farklı kategorilerden birisine sınıflamaya çalışıyorsak ve birden fazla sinyalin, birden fazla girdinin, birden fazla kategoriye ayrılması gibi bir durum varsa,
+
+22
+00:05:51,603 --> 00:06:09,123
+Tek bir kategoriye sınıflayabilmek için bunu zorlayacak bir yapı ihtiyacı doğmuş. İşte o yapıda bir rekabet mekanizması olabilir diye ortaya çıkmış mimariler aslında bunlar.
+
+23
+00:06:09,620 --> 00:06:27,959
+Rekabetin en uç örneği Winner Take All diye VTA diye adlandırılan yapı. Bizim göreceğimiz örneklerden de iki tanesi özellikle VTA için uç örnekler. Mutlaka bir kazanan.
+
+24
+00:06:28,915 --> 00:06:40,555
+olacak şekilde ağı zorluyor. Bunlar MaxNet gibi yapılar. Şimdi göreceğiz. Aslında çok basit mimariler ama mutlaka bir nöron.
+
+25
+00:06:40,944 --> 00:07:04,604
+Ya da bir kazanan klaster olarak sınıflanıyor. Mexican Head dediğimiz yapıda ise daha genel bir rekabet söz konusu. Burada da kazanan belirginleşiyor belli bir epok sayısından sonra ama diğerlerinin sadece olasılıklarının düşmüş olmasını yeterli bulup.
+
+26
+00:07:04,879 --> 00:07:20,259
+Diğerlerini direkt kaybeden diye ilan etmiyoruz. Her klasterın belli bir doğruluk oranı varsa onu o şekilde bırakabiliyoruz. İlla ki birisi kazansın, diğerleri tümüyle kaybetsin demiyoruz.
+
+27
+00:07:20,259 --> 00:07:24,099
+Biraz örneklerini yaptığımda daha açık olacak söylediklerim.
+
+28
+00:07:26,355 --> 00:07:52,695
+Öğrenme açısından dediğimiz gibi eğitim çiftlerini kullandığımız süperviz öğrenmeyle çalışanlar var. Bir de verilerin ortak özelliklerine bakarak kümelemeye çalışan, tamamen özelliklerin veya vektörlerin yakınlığına bakarak unsuperviz öğrenmeye uygun yapılar var.
+
+29
+00:07:54,355 --> 00:07:58,115
+Göreceğimiz bugünkü örnekler ikisine de ait olacak.
+
+30
+00:07:58,615 --> 00:08:06,336
+Bir kümeleme ağında input vektörünün bileşen sayısı kadar giriş birimi olacak doğal olarak.
+
+31
+00:08:07,596 --> 00:08:16,995
+Çıktı birimi de aslında oluşturmak istediğiniz küme sayısına bağlı olarak sizin belirleyeceğiniz bir maksimum küme sayısıyla sınırlı.
+
+32
+00:08:17,408 --> 00:08:29,568
+Dolayısıyla istediğiniz kadar çıktı olabilir. Kaç tane kümeye ayırmak istiyorsanız örneklerinizi o kadar çıktı oluşturabilirsiniz.
+
+33
+00:08:29,808 --> 00:08:41,748
+Genel yapı mimarı şu şekilde. Input vektörümüz diyelim ki D tane bileşeni olan bir vektör. O zaman D tane input neronum olacak.
+
+34
+00:08:42,323 --> 00:08:50,123
+Çıkışta oluşturmaya çalıştığımız sınıf sayısı da M ise M tane de Output vektörümüz olacak.
+
+35
+00:08:50,676 --> 00:09:14,656
+Buradaki öğrenme algoritmaları diğer gördüğümüz öğrenme algoritmaları gibi değil, tamamen dediğim gibi benzerliklere bakıp bir rekabet oluşturan bir şey. Dolayısıyla buradaki çıktı katmanına, hesaplamaların veya öğrenmenin olduğu katmana kompetitif layer diyoruz özel olarak.
+
+36
+00:09:16,307 --> 00:09:36,248
+LVQ ve Ters Yayılım Ağları daha ziyade Mapping tarzı uygulamalar, yani bir değil de çıktı arasındaki ilişkiyi kurmak için, iki şeyi eşleştirmek için kullandığımız yapılar. Bunlar Superwise'de öğrenmek kullanıyor.
+
+37
+00:09:37,307 --> 00:09:41,867
+Diğer anlatacağım MaxNet, Mexican Hat vs. onlar da Superwise.
+
+38
+00:09:42,292 --> 00:10:08,312
+Burada farklı olarak Self-Organizing Map, Unsupervised Öğrenme oluşturuyor. Unsupervised Öğrenme ile çalışıyor. Girdi verisinin belli sayıda kümelere dağıtılması için tamamen girdiler arasındaki ilişkileri tespit edip kümeler oluşturuyor.
+
+39
+00:10:11,028 --> 00:10:15,208
+Onunla ilgili de örnek vereceğim. Daha fazla bir şey demeyeyim.
+
+40
+00:10:17,108 --> 00:10:33,028
+Kümeleme ağında bir çıktı için ağırlık vektörü o çıktığının temsil ettiği kümeyle girdi desenleri arasında ilişkiyi kuracağımız bir örnek vektör oluşturuyor.
+
+41
+00:10:35,251 --> 00:10:41,451
+Kompetitif ağlar için kullanacağımız, özellikle bilmeniz gereken bir terim var.
+
+42
+00:10:42,451 --> 00:11:00,851
+Representative, Exampler, Codebook, Vektör gibi bir şey dediğiniz zaman aslında bir kümeyi temsil eden, temsil ettiğini varsaydığımız bir ağırlık vektöründen veya o kümeye ait bir vektörden bahsediyoruz.
+
+43
+00:11:02,580 --> 00:11:15,100
+Farz edelim ki üç tane farklı kümeniz var. Bu üç kümeyi temsil eden üç tane representative veya exemplar vektörünüz olması lazım.
+
+44
+00:11:15,480 --> 00:11:26,159
+Genellikle de her kümede kaç tane örnek varsa elinizde onların bir ortalaması veya onların ağırlıklarının ortalaması.
+
+45
+00:11:26,559 --> 00:11:49,120
+Olarak temsil edilen bir vektör bu. Biraz yuvarlak konuşmamın sebebi algoritmalarda farklı şekilde kullanılması. Birazdan örneğini göreceğiz. Ama sonuçta o kümenin temsilcisi olacaksa o kümeye düşen bütün örnekleri yansıtacak bir örnek vektörünüz olması lazım.
+
+46
+00:11:54,559 --> 00:12:22,059
+Kıyaslamanız gerekiyor. Elinizdeki örnek vektörle veya test edilecek vektörle girdiğiyle exemplar vektörü kıyaslıyorsunuz. Bütün kümeler için exemplar vektörleri kıyaslıyorsunuz. Hangisine yakınsa o kümeye elinizdeki örneği dahil etmeye karar veriyorsunuz.
+
+47
+00:12:22,707 --> 00:12:49,567
+En iyi eşleşen o zaman kümeyi bulmak için bir exemplar vektörle kıyaslamamız gerekiyor. Daha sonra kazanan birim için yani hangi kümeye yakın bulduysak öğrenme algoritmamıza göre güncellemelerimizi yapıyoruz, ağırlık güncellemelerimizi ve en sonunda da kümeler oluşmuş oluyor.
+
+48
+00:12:50,355 --> 00:13:15,675
+Şimdi Kohanan Öğrenme Algoritması kullanılıyor genel olarak. Kohanan Öğrenme Algoritması'nın söylediği de çok bildiklerinizden farklı bir şey değil. Ağırlık vektörüyle giriş vektörüne kıyaslamada öklit mesafesini kullanıyoruz. Norm hesaplarken öklit mesafesi hesapladık hatırlarsanız.
+
+49
+00:13:16,115 --> 00:13:21,755
+Bileşenlerin karesel farklarına bakıyoruz aslında iki vektörü kıyaslarken.
+
+50
+00:13:23,316 --> 00:13:27,196
+Buna göre de en yakın birimin ağırlığını güncelliyoruz.
+
+51
+00:13:27,396 --> 00:13:38,076
+Yani hangi sınıfın exemplar vektörüne yakınsa oranın ağırlığını güncelliyoruz, diğerlerini güncellemiyoruz.
+
+52
+00:13:43,956 --> 00:13:55,916
+Ağırlık vektörü olarak temsil ediyoruz. Her kümenin bir ağırlık vektörü var. Burada yine Kohen'in algoritmasında öğrenme kat sayısını kullanabiliyoruz.
+
+53
+00:13:56,676 --> 00:14:08,096
+Dolayısıyla bir kümenin yeni ağırlığını belirlerken eski ağırlık değeri artı öğrenme kat sayısı çarpı elimizdeki x.
+
+54
+00:14:08,596 --> 00:14:23,615
+Örneğin sınıflamaya çalıştığımız örnek vektörle kümenin ağırlık vektörü arasındaki karesel farka baktık ve buradan yeni ağırlık değerini belirledik küme için.
+
+55
+00:14:23,615 --> 00:14:32,716
+Çünkü bu ağırlık vektörü kümedeki elemanların bir ortalaması dedim ya, yeni bir tane oraya eleman katılıyorsa,
+
+56
+00:14:33,168 --> 00:14:48,907
+Ben aslında o kümeyi temsil eden ağırlık vektörünü de güncellemem lazım. Sonuçta yeni katılan eleman diğerlerinden az da olsa farklı olacak. O kümeye düşen diğer elemanlardan. Onun da bir katkısı bulunması gerekiyor.
+
+57
+00:15:00,563 --> 00:15:09,303
+Olacağı için o kümeyi temsil eden exemplar vektöre veya ağırlık vektörüne onun katkısını da yansıtmamız lazım.
+
+58
+00:15:09,443 --> 00:15:13,483
+Buradaki yaptığımız güncelleme o manada bir güncelleme.
+
+59
+00:15:14,423 --> 00:15:26,423
+Kümenin temsilini bir şekilde değiştiriyor yeni örneğimiz ve dolayısıyla kümeyi temsil eden ağırlık vektörünü de değiştirmemiz gerekiyor.
+
+60
+00:15:27,764 --> 00:15:52,564
+Öklüt mesafesine göre nereye atacağımıza karar verdik. Hangi kümeye ait olduğuna karar verdik elimizdeki örneğin. Ondan sonra da girdiği kümenin ağırlığını güncelledik. Diğerlerinin ağırlığını doğal olarak güncellemiyorum. Çünkü sadece bir kümeye ait olmasına karar vereceğim. Ve oranın ağırlığını güncellemem yeterli.
+
+61
+00:15:55,155 --> 00:16:10,935
+Genellikle HLN'i uygularken öğrenme kas sayısı, şimdiye kadar çok fazla değiştirmedik öğrenme kas sayısını ama bu yapılarda, rekabetçi ağlarda genellikle değiştirerek kullanıyoruz.
+
+62
+00:16:10,935 --> 00:16:14,935
+Öğrenme kas sayısını işlem boyunca azaltıyoruz.
+
+63
+00:16:16,063 --> 00:16:29,463
+Öğrenme kat sayısını çoğu zaman her hipokta yarıya indirerek değişken bir şekilde ayarlıyoruz.
+
+64
+00:16:30,183 --> 00:16:34,903
+Onu da söylemiş olayım. Biraz sonra örnekle karşımıza çıkacak.
+
+65
+00:16:34,903 --> 00:16:36,223
+Peki.
+
+66
+00:16:37,716 --> 00:16:56,456
+Yakın olan ağırlık vektörünü belirlemenin iki yolu var. Birisi söylediğim gibi karesel öklit yakınlığı. Bir de başka algoritmaların veya uygulamaların bazılarında kullanılan input vektörüyle ağırlık vektörünün noktasal çarpımına da bakabilirsiniz.
+
+67
+00:17:04,511 --> 00:17:27,971
+Bir durum. Hatırlarsanız korelasyonu daha sonra yine karşımıza çıkacak korelasyon ve konvolüsyon noktasal çarpımdan hesaplıyorduk. Aynı zamanda iki vektörün korelasyonu bize aralarındaki ya da noktasal çarpımı iki vektörün arasındaki açıyla, açının kosünüsüyle ilgili bir bilgi veriyordu.
+
+68
+00:17:31,028 --> 00:17:41,788
+En büyük noktasal çarpım ya da noktasal çarpımın büyük olması vektörler arasındaki açının küçük olması anlamına gelir.
+
+69
+00:17:42,288 --> 00:17:45,347
+Korelasyonun da yüksek olduğu anlamına gelir.
+
+70
+00:17:45,347 --> 00:17:50,347
+Buna bakarak da iki vektörün yakınlığı hakkında bir çıkarım yapabiliriz.
+
+71
+00:17:52,592 --> 00:18:14,652
+Ya karesel öklit yakınlığı ya da noktasal çarpımla iki vektörün birbirine benzeyip benzemediğini kümelemek için kullanmak istediğimiz veya kümelemek istediğimiz vektörün hangi kümeye daha yakın olduğunu tespit edebiliriz.
+
+72
+00:18:15,220 --> 00:18:31,360
+Öklit mesafesini dediğim gibi norm olarak da tanımlamıştık. İki vektör arasındaki öklit mesafesi, iki vektörün farkının normu olarak da düşünebilirsiniz.
+
+73
+00:18:38,804 --> 00:18:59,364
+Karesi dedim. Tabii elimizdeki vektör olduğu için, pratik yazabilmek için vektörün transpozu ve kendisinin çarpımı, şuradaki karesel bir ifade oluyor, kare kökü şeklinde iki vektörün farkının normunu hesaplıyoruz.
+
+74
+00:18:59,364 --> 00:19:02,824
+Bu da bize iki vektörün yakınlığını söylüyor.
+
+75
+00:19:03,263 --> 00:19:10,523
+Burada transpoz ve kendisini kullanma sebebimi aslında söylememe gerek olmadığını umuyorum.
+
+76
+00:19:11,243 --> 00:19:17,883
+Çarpım yapabilmemiz için vektör boyutlarının çarpıma uygun olması gerekiyor.
+
+77
+00:19:18,363 --> 00:19:23,623
+Dolayısıyla bir transpozu bir de kendisi şeklinde çarpmamız lazım.
+
+78
+00:19:23,763 --> 00:19:26,283
+Karesini alırken iki vektörün farkını.
+
+79
+00:19:28,144 --> 00:19:49,384
+Örgüt mesafesiyle bu şekilde hesaplayabiliriz. Elimizde diyelim ki x diye bir örnek var. X'in hem x1'e hem x2'ye uzaklığını hesaplayacağım. Hangisi daha yakın çıkarsa onun olduğu kümeye atacağım. İşte iki tane kümemiz var burada.
+
+80
+00:19:49,940 --> 00:20:16,880
+İki kümenin her biri için bir example'ım var. Exampler vektörüm var. X1 ve X2 olmak üzere. Elimde de yeni bir tane örnek var. X diye. Bunu hangi klastra atmam lazım karar vermem gerekiyor. X ile X1'in uzaklığını, X ile X2'nin uzaklığını ayrı ayrı şu şekilde hesaplarsam hangisine yakın çıkıyorsa o klastra atacağım.
+
+81
+00:20:18,067 --> 00:20:30,927
+Ya da dediğim gibi iki vektör arasındaki açıya bakacağım. Yine aynı şekilde iki tane klaster var. Bu klasterı temsil eden x1, x2 vektörleri var. Bizim elimizde de bir x vektörü var.
+
+82
+00:20:30,927 --> 00:20:43,927
+x vektörünün x1 vektörüyle oluşturduğu açının kosünüsünü hesaplayabilirim nokta çarpımda. x2 ile oluşturduğu açının kosünüsünü hesaplayabilirim.
+
+83
+00:20:44,627 --> 00:20:53,127
+Bu iki açıyı hesapladıktan sonra hangisine daha yakınsa o kümeye atmam gerekir.
+
+84
+00:20:54,268 --> 00:21:10,508
+Buradaki noktasal çarpım ve aşağıdaki de vektörlerin normları yani aslında skaler değerleri noktasal çarpımın nasıl yapıldığını hatırladığınızı umuyorum.
+
+85
+00:21:11,124 --> 00:21:21,944
+İki tane vektörün noktasal çarpımı, iki vektörün skaler normları çarpı aralarındaki açının kosünüsü şeklindedir.
+
+86
+00:21:22,744 --> 00:21:28,224
+Yani şu x transpos çarpı x'i ile x'i eşittir.
+
+87
+00:21:28,804 --> 00:21:36,144
+Aslında x'in normu çarpı x'inin normu çarpı kosünüs fi şeklinde, aralarındaki açı şeklinde.
+
+88
+00:21:36,596 --> 00:21:41,015
+Bu noktasal çarpım ifadesinden kosünüs fi'yi çekmişiz burada.
+
+89
+00:21:42,235 --> 00:21:49,235
+Bunu da kosünüs benzerliği diye de yakınlık ölçütü olarak zaten bir yerlerde denk gelmişsinizdir.
+
+90
+00:21:50,775 --> 00:21:55,235
+Buradan da tabii bunun ark kosünüsünü alarak aralarındaki açıyı direkt bulabiliriz.
+
+91
+00:21:57,115 --> 00:22:02,235
+Bu açıya bakarak da hangi kümeye atacağımıza karar verebiliriz.
+
+92
+00:22:03,763 --> 00:22:13,384
+Peki, dediğim gibi öncelikle sabit ağırlıklı rekabetçi ağlardan bir iki tane örnek bahsedelim.
+
+93
+00:22:13,384 --> 00:22:22,423
+Sabit ağırlıklı derken aslında nöronların bağlantı ağırlıkları hiç değişmiyor. Gerçekten onu kastetmiş oluyoruz.
+
+94
+00:22:23,324 --> 00:22:30,503
+Bağlantı ağırlıkları ile ilgilenmiyoruz. Sadece kümeyi temsil eden vektörü değiştiriyoruz.
+
+95
+00:22:30,996 --> 00:22:36,636
+MaxNet'te zaten çok fazla bir şey de değiştirmiyoruz. Şimdi göreceksiniz.
+
+96
+00:22:37,696 --> 00:22:45,216
+En büyük girişi olan düğümü seçmek için bir alt ağ yapısı olarak kullanılan bir şey MaxNet.
+
+97
+00:22:45,216 --> 00:22:56,996
+Yani kendi başına çok da anlamlı değil. Tamamen elinizdeki nöronları yarıştırıp bir tanesini kazanan ilan etmenize yarayan bir şey.
+
+98
+00:22:57,359 --> 00:23:14,740
+Normalde kullanılış yeri öncesinde sizin başka bir ağ yapınız vardır ve sonuç olarak çıkan şey elinizdeki örneğin birden fazla kümeye ait olabileceğini söylemektedir.
+
+99
+00:23:14,740 --> 00:23:24,740
+Ve siz bu kümelerden bir tanesini seçmek zorundasınızdır. O zaman kullandığınız ağın yani bir perseptron veya çok katmanlı ağın.
+
+100
+00:23:25,119 --> 00:23:42,740
+Sonunda bir de MaxNet eklersiniz ve bir karar vermeye zorlarsınız yapıyı. Genellikle kullanımı bu şekilde tek başına değil de başka bir ağın sonunda karar verme mekanizması olarak kullanıyoruz.
+
+101
+00:23:51,923 --> 00:24:12,563
+Bütün nöronlar arasında bağlantı var, yani fully connected. Her nöronun kendine bağlantısı da var. Nöronların kendisine bağlantıları bir birim ağırlığında. Birbirleri arasındaki bağlantı da epsilon dediğimiz sabit bir ağırlıkta.
+
+102
+00:24:13,107 --> 00:24:36,248
+Epsilon'un ne olacağını siz seçebilirsiniz. Bu da bütün bağlantı ağırlıkları birbirine eşit. Sadece nöronun kendine bağlantısı bir. Yani diagoneli bir olan bir ağırlık matrisinden bahsediyoruz. Diğer ağırlıkların da hepsi birbirine eşit olduğuna göre aslında simetrik.
+
+103
+00:24:36,980 --> 00:24:41,339
+Diagonali 1 olan simetrik bir matristen bahsediyoruz demektir.
+
+104
+00:24:42,240 --> 00:24:44,460
+Değil mi? Buradan onu görebilirsiniz.
+
+105
+00:24:46,140 --> 00:24:49,720
+Peki, algoritmanın çalışması kabaca.
+
+106
+00:24:50,319 --> 00:24:55,980
+Başlangıçta aktivasyonları yani her bir nöronun aktivasyon değerini...
+
+107
+00:24:56,403 --> 00:25:12,243
+Set etmemiz gerekiyor. Bu dediğim gibi muhtemelen bize öncesinde problemimiz için kullandığımız bir ağ yapısından gelecek. Ondan sonra o başlangıçtaki epsilon ile gösterdiğimiz ağırlık değerini set etmemiz gerekiyor.
+
+108
+00:25:22,943 --> 00:25:27,144
+Arasında bir epsilon değeri seçerek başlayabilirsiniz.
+
+109
+00:25:28,763 --> 00:25:36,144
+Diagoneli bir olmalı. Yani nöronların kendine bağlı bağlanma ağırlıkları bir olmalı.
+
+110
+00:25:36,884 --> 00:25:43,943
+Onun dışındakilerde eksi epsilon şeklinde bu kriterlerde seçtiğiniz epsilon değerini alması lazım.
+
+111
+00:25:44,843 --> 00:25:47,623
+Yine tabii durma koşullarınız olması gerekiyor.
+
+112
+00:25:47,623 --> 00:25:49,623
+Durma koşulu burada aslında...
+
+113
+00:25:49,715 --> 00:26:04,056
+Açık birinin kazanması gerektiğine göre diğer tüm nöronlar, tüm aktivasyonlar sıfır. Bir tane aktivasyon bir olana kadar devam ettirmemiz gerekiyor.
+
+114
+00:26:05,755 --> 00:26:12,296
+Belki hani bir epok sayısı, maksimum epok sayısı söylenebilir ama.
+
+115
+00:26:12,723 --> 00:26:26,243
+Yapı birinin kazanmasını sağlayacak şekilde dolayısıyla o ek durma koşullarına çok da gerek yok. MaxNet çalıştıracaksanız zaten birisi kazanana kadar devam ettirirsiniz.
+
+116
+00:26:27,796 --> 00:26:46,556
+Bundan sonra her birimin aktivasyonunu güncelliyoruz. Bundan kastettiğim ne? Aslında yaptığımız, her zaman yaptığımız nöronun inputunu hesaplayıp nörondaki aktivasyon fonksiyonunu uygulamak şeklinde inputu nasıl hesaplıyorum?
+
+117
+00:26:50,799 --> 00:27:08,000
+Nöronun o andaki değeri, bunu da eski aktivasyon değerinden çıkarırsam ve nörondaki aktivasyon fonksiyonu da uygularsam yeni aktivasyon değerini bulmuş olurum.
+
+118
+00:27:09,059 --> 00:27:15,000
+Kullandığımız aktivasyon fonksiyonu MaxNet'teki bir lineer fonksiyon şu şekilde.
+
+119
+00:27:18,336 --> 00:27:41,516
+Yani girdileriniz sıfırdan büyükse olduğu gibi alıyorsunuz. Diğer durumlarda da sıfır olarak alıyorsunuz. Bu şekilde bir lineer aktivasyon fonksiyonu kullanıyoruz ve nöronun girdilerinde klasik ağırlık çarpı nöronun mevcut değeri şeklinde hesaplıyoruz.
+
+120
+00:27:42,451 --> 00:28:07,251
+Bunu iteratif bir şekilde çalıştırıyoruz. Her seferinde durma koşulunu kontrol ediyoruz. Durma koşulu olarak da değeri pozitif olan tek nöron kalana kadar devam etmek. Diğer nöronlarında zaten aktivasyon fonksiyonu ona zorlayacak ya sıfırdan büyük bir değer alacak nöronunuz.
+
+121
+00:28:07,632 --> 00:28:21,652
+Ya da sıfır olacak. Bir zaman sonra bir tane nöronun değeri sıfırdan büyük kalıp diğerleri sıfır olmuş olacak. Bu noktaya kadar kontrol ederek iteratif bir şekilde çalıştırıyoruz.
+
+122
+00:28:23,032 --> 00:28:30,492
+Var mı bir sorunuz? Ya da örnek üzerinden gideyim. Ondan sonra varsa sorun isterseniz.
+
+123
+00:28:35,476 --> 00:28:49,976
+Tüm timiz olsun. Aslında bunu şöyle düşünebilirsiniz. Dört tane küme var. Ben bu kümelerden birisini kazanan olarak ilan etmek istiyorum.
+
+124
+00:28:50,875 --> 00:29:02,976
+Öncesinde, işte ben bir input vermişim. Bunun öncesinde bir ağım varmış diye düşünün. Bir input vermişim. Buradaki dört tane sınıfa...
+
+125
+00:29:03,059 --> 00:29:25,640
+Bir takım olasılıklar oluşturmuş benim yapay sinirağım. Demiş ki işte %90 A1'dedir, %20 buradadır, %5 buradadır vs. şeklinde şu kümelerden hangisine ait olabileceğine dair verdiğim inputun bir fikir oluşmuş.
+
+126
+00:29:26,324 --> 00:29:48,324
+Fakat biz bununla yetinmiyoruz. Net olarak bir tanesine ait olsun. Orada da olabilir, burada da olabilir, az bir olasılıkla burada da olabilir gibi bir cevap işimize yaramıyorsa, mutlaka bir klastere ait olmasını istiyorsak, o zaman MaxNet'i de ekleyip...
+
+127
+00:29:50,483 --> 00:30:05,723
+Tek bir kümeye atanmasını sağlayabiliriz inputumuzun. Yani buradaki nöronlar bir input veya örnek diye düşünmeyin de buradaki nöronların her biri bir kümeyi temsil ediyor diye düşünün.
+
+128
+00:30:05,723 --> 00:30:17,723
+Bu kümelerden birisi daha önceden verilmiş inputun hangisine bu kümelerden hangisine ait olacağına karar vereceğimiz.
+
+129
+00:30:18,099 --> 00:30:20,139
+Bir mekanizmayı çalıştıracak.
+
+130
+00:30:21,139 --> 00:30:29,099
+Peki, bağlantı ağırlıklarını epsilon'u 0,2 olarak, eksi 0,2 olarak seçtiğimizi düşünün.
+
+131
+00:30:30,319 --> 00:30:37,339
+İmput sinyalleri de 0,2, 0,4, 0,4 ve 0,8'miş.
+
+132
+00:30:37,940 --> 00:30:49,220
+Yani demin söylediğim şeye bakarsak, elimde bir örneğim vardı. İşte bir şeyler yaptım, ben onunla bir yapay sinir ağa çalıştırdım.
+
+133
+00:30:50,600 --> 00:30:57,180
+Vesaire, kümeleme için başka bir şey de çalıştırmış olabilirsiniz. Bir kümeleme algoritması çalıştırdım.
+
+134
+00:30:57,619 --> 00:31:13,599
+Ve en sonunda bu algoritmanın kararı, verdiğin örnek %20 A1 sınıfına ait, %40 A2 sınıfına ait, %40 A3'e, %80 A4'e ait gibi bir karar çıkardı.
+
+135
+00:31:13,599 --> 00:31:24,599
+Şimdi bu benim için yeterince net bir karar değilse, MaxNet'i çalıştırıyorum ve bu kümelerden birisine...
+
+136
+00:31:24,884 --> 00:31:31,924
+Bu örneğin kesinlikle daha önce kullandığım örneğin atanmasını sağlıyorum.
+
+137
+00:31:32,403 --> 00:31:38,903
+Şimdi kullandığımız örnekler basit olduğu için, hani şurada zaten %80 olan bir şey var.
+
+138
+00:31:39,484 --> 00:31:48,484
+Ben direkt onu seçerim diyebilirsiniz ama bu yapı kodladığınız zaman işlemi otomatize eden, yani gözle baktığınız gibi bakmayın.
+
+139
+00:31:48,915 --> 00:32:04,055
+İşlemi otomatize etmek için kullandığımız basit ama faydalı bir yapı. Aktivasyonun nasıl değişeceğini görmek için bir adım çalıştıralım algoritmayı.
+
+140
+00:32:04,055 --> 00:32:16,055
+Pardon. Başlangıç değerlerimiz bu şekildeydi. Birinci adımda ne olacağını görmek için önce A1 için.
+
+141
+00:32:16,448 --> 00:32:35,368
+işlemlerimizi yapacağız. A1'e bağlantısı olan nöronlar, işte A2, A3 ve A4 nöronları, eksi epsilon ağırlığıyla bağlılar. Dolayısıyla bu nörona giren değerler eksi epsilon çarpı.
+
+142
+00:32:35,796 --> 00:33:01,076
+A2'nin değeri, A3'ün değeri, A4'ün değeri şeklinde. Bir de kendisine bağlantısı vardı. O da burada. A1'in o önceki değeri veya mevcut değeri ile diğer nöronlardan gelen inputları topladım. Ondan sonra da aktivasyon fonksiyonumu uyguladım. O da lineer fonksiyonuydu. Şu sağ alttaki fonksiyon.
+
+143
+00:33:01,556 --> 00:33:08,855
+Topladığım zaman, şunların değerlerini yerine yazıp topladığım zaman, eksi 0,12 çıkıyormuş.
+
+144
+00:33:09,956 --> 00:33:20,216
+Eksi 0,12'nin benim aktivasyon fonksiyonumdaki karşılığı 0'dan küçük olduğu için 0 olarak çıkacak demektir.
+
+145
+00:33:21,016 --> 00:33:27,656
+Sonuç 0 oldu. A1'in değeri 0,2 iken 0'a düştü. Bu ne demek?
+
+146
+00:33:28,276 --> 00:33:39,736
+A1 nöronum kaybetti birinci iterasyonda daha. A1 nöronunun sıfıra çekilmiş olması demek artık o kümenin hiç şansı kalmadı.
+
+147
+00:33:41,076 --> 00:33:52,896
+Bu şekilde A1'in beş iterasyon boyunca ve A2'nin, A3'ün, A4'ün beş iterasyon boyunca değerlerinin değişimini hesaplamışız.
+
+148
+00:33:53,279 --> 00:34:19,760
+A1'i hesapladığımız zaman A1 zaten baştan gitti. Diğerlerinde henüz bir değişiklik yok. Bir tur daha çalıştırdığımız zaman A2 sıfıra düşmüş. Üçüncü turda bir değişiklik olmamış. A1 ve A2 sıfır. A3 ve A4 henüz sıfıra düşmemiş ama değerleri azalmış dikkat ederseniz.
+
+149
+00:34:20,275 --> 00:34:36,015
+0,192'den 0,96'ya 0,096'ya 0,48'den 0,44'e düşmüş. Dördüncü iterasyonda yine büyük bir değişiklik yok. Yani yeni bir kaybeden nöron yok.
+
+150
+00:34:36,403 --> 00:34:55,104
+Ama değerler yine azalmış ve en son beşinci iterasyonda artık A3 nöronu da sıfıra düşmüş. Dolayısıyla üç tane nöronumuz sıfır oldu. Bir tane nöronumuz pozitif kaldı. Bu bizim kazanan kümemiz olacak.
+
+151
+00:35:04,244 --> 00:35:13,523
+Klaster'ın seçilmiş olması anlamına geliyor. A4'e atanacağı anlamına geliyor. Diğerleri kaybetti. Bu da bizim kazanmamız.
+
+152
+00:35:14,844 --> 00:35:22,523
+Peki, var mı bir sorunuz arkadaşlar? Basit ama genel olarak aklınıza yatmayan bir şey varsa söyleyin.
+
+153
+00:35:30,835 --> 00:35:34,455
+Peki. Bugün çok az kişisiniz.
+
+154
+00:35:38,516 --> 00:35:42,175
+Sınavlarla mı alakalı? Ödevlerle mi alakalı?
+
+155
+00:35:44,756 --> 00:35:50,155
+Peki, Mexican Head biraz daha genel bir yapı.
+
+156
+00:35:50,536 --> 00:35:56,956
+Yani illa ki kalan bütün nöronları sıfırlayayım, bir tane kazanan olsun demiyor ama…
+
+157
+00:35:56,960 --> 00:36:04,000
+Belli bir nöron ve biraz daha fazlası öne çıkmış oluyor.
+
+158
+00:36:04,000 --> 00:36:16,340
+Buradaki yapı elimizdeki nöronları veya kümelerin bazılarını komşu olarak sayıyoruz.
+
+159
+00:36:16,519 --> 00:36:23,559
+Bazılarını da rekabetçi komşu olarak, yani işbirlikçi komşularımız var, rekabetçi komşularımız var.
+
+160
+00:36:24,052 --> 00:36:40,052
+İşbirlikçi olarak kabul ettiğiniz nöronları, her bir nöronun kendi işbirlikçi komşuları ve rekabetçileri var. Yani bir nöron için işbirlikçi olan, diğeri için rekabetçi komşu sayılabilir.
+
+161
+00:36:40,527 --> 00:37:01,907
+Mimarisini göstereceğim birazdan. İşbirlikçi olan komşulara pozitif ağırlıklarla bağlı oluyor nöronlar. Rekabetçi komşulara da negatif ağırlıklarla bağlı oluyor. Bir de bağlı olmadıkları, hiçbir bağlantılarının olmadığı daha uzakta olan nöronlar bulunabiliyor.
+
+162
+00:37:03,987 --> 00:37:18,707
+Yine dışarıdan bir aktivasyon fonksiyonu alabilir, MaxNet gibi. Yani MaxNet'i %99 şey için kullanıyoruz, başka bir ağın devamında kullanıyoruz.
+
+163
+00:37:19,307 --> 00:37:29,287
+Meksik'ın Het'i de çoğunlukla öyle kullanıyoruz. Dolayısıyla Meksik'ın Het'in de girdisi aslında öncesinde başka bir ağ veya başka bir yapı çalıştırılmış.
+
+164
+00:37:29,840 --> 00:37:54,380
+Fakat çok kesin cevap alınamamışsa o cevabı netleştirmek, yine bir kazanan birilerini belirlemek için kullandığımız bir yapı. Bu external aktivasyon dediğim problemin öncesinde bir şey uygulanmış ve elde edilen sonuç olarak düşünün. Bir başlangıç değeri olarak düşünün. Örneklerde de zaten öyle kullanıyorum.
+
+165
+00:37:54,867 --> 00:38:07,688
+Böyle bir başlangıç değeri olabilir. Yapı mimari olarak şu şekilde yine nöronun kendisine bağlantısı var.
+
+166
+00:38:08,275 --> 00:38:21,495
+Komşularına bağlantısı var. Siz hangi yakınlıktaki komşularınızı işbirlikçi kabul edeceksiniz? Hangilerini rekabetçi kabul edeceksiniz? Buna karar veriyorsunuz.
+
+167
+00:38:21,495 --> 00:38:27,695
+Burada iki komşuya kadar işbirlikçi kabul edilmiş.
+
+168
+00:38:29,396 --> 00:38:54,796
+X, İ nöronu üzerinden konuştuğumu düşünün. X, İ'nin solundaki iki nörona bağlantısı pozitif ağırlıklı olacak. Sağındaki iki nörona bağlantısı pozitif olacak. Üçüncü nörona bağlantısı negatif. Yani X, İ eksi 3 ile X, İ artı 3 de X, İ'ye göre rekabetçi komşular.
+
+169
+00:38:55,476 --> 00:39:14,936
+Üç birim uzağındaki, sağında ve solunda üç birim uzağındaki nöronları da rekabetçi nöron olarak kabul etmişiz. Daha ötesini etkisiz olarak kabul ediyoruz. Dört birim ve daha ötede komşuları varsa onları hiç işleme katmıyoruz.
+
+170
+00:39:15,603 --> 00:39:27,603
+Bu şekilde yine nörona gelen aktivasyonları hesaplıyoruz. Bir başlangıç değerimiz var. External aktivasyon dediğimiz. Oradan başlayıp...
+
+171
+00:39:28,211 --> 00:39:37,112
+Başlangıçta belirlenmiş bu komşuluk mesafelerine ve ağırlık değerlerine bağlı olarak nörona gelen değerleri hesaplıyoruz.
+
+172
+00:39:37,112 --> 00:39:44,992
+Aktivasyon fonksiyonumuzu uyguluyoruz ve her iterasyonda dolayısıyla bu nöronların değerleri değişiyor.
+
+173
+00:39:45,812 --> 00:39:53,452
+Doğal olarak değişiyor çünkü komşunuz değiştiğinde sizin değişmeme ihtimaliniz yok, bağlantınız var.
+
+174
+00:39:53,907 --> 00:40:00,927
+Bir nöronun değeri değiştiğinde öbürlerinin hepsi zaten değişecek. Pozitif ya negatif yönde fark etmez.
+
+175
+00:40:00,927 --> 00:40:09,347
+Bu şekilde belli bir iterasyon çalıştırdığınızda oluşan durum şu sağ alttaki şekildeki gibi.
+
+176
+00:40:12,563 --> 00:40:21,003
+Nöronların aldığı değerleri, aktivasyon değerlerini çizdirdiğimizde bir Meksika şapkasına benzer şekil çıkıyor.
+
+177
+00:40:21,143 --> 00:40:25,003
+Tabii bu hemen oluşmuyor. Belli bir epok sonrasında.
+
+178
+00:40:26,323 --> 00:40:31,443
+Bu da aslında gösterdiği şu tepedekiler kazanan nöronumuz.
+
+179
+00:40:31,443 --> 00:40:36,863
+Aşağı yukarı buralarda bir kısmı böyle pozitif ağırlıklarla yukarı doğru çıkıyor.
+
+180
+00:40:37,364 --> 00:40:46,443
+Bu aşağıdakilerde kaybeden nöronlar olarak düşünebileceğimiz değeri küçülmüş nöronlarımız.
+
+181
+00:40:47,344 --> 00:40:54,983
+İsmi de dolayısıyla bu aldığı şekilde belli bir epoksora aldığı şekilde geliyor.
+
+182
+00:40:55,123 --> 00:40:58,083
+Mexican head dememizin sebebi bu.
+
+183
+00:41:01,844 --> 00:41:12,143
+Pozitif bağlantıların hangi komşulukta olacağı, negatif bağlantıların ne kadar mesafede olacağı sizin ayarlayacağınız parametreler.
+
+184
+00:41:12,683 --> 00:41:18,724
+Dolayısıyla bu komşuluk alanının boyutunu ayarlıyorsunuz. Bu değişken bir şey.
+
+185
+00:41:20,304 --> 00:41:22,724
+Aktivasyonları hesaplarken...
+
+186
+00:41:23,411 --> 00:41:43,311
+Yine klasik bildiğimiz şekilde hesaplıyoruz. Bir önceki nöronun değeri çarpı ağırlığı şeklinde o nöronla bağlantısı olan tüm nöronların ağırlıklarla çarpılmış değerlerin toplamı.
+
+187
+00:41:49,204 --> 00:42:07,824
+Ağırlık değeri veya bir önceki ağırlık değeri diye de düşünebilirsiniz bunu. O andaki değeri. O da neden? Kendi kendine bağlantısı var ya. Kendine de bir birim ağırlıkla bağlı. Dolayısıyla kendisi artı diğer komşularının değerleri çarpı ağırlıkları şeklinde.
+
+188
+00:42:14,192 --> 00:42:18,831
+Her iterasyon sonrası çıktı değerini hesaplamış oluyorsunuz.
+
+189
+00:42:22,672 --> 00:42:28,012
+Şimdi 5 dakika ara vereyim arkadaşlar. Ondan sonra devam edelim.
+
+190
+00:42:28,231 --> 00:42:30,271
+10 dakika vereyim mi? 10 dakika ara vereyim.
+
+191
+00:42:32,148 --> 00:42:34,848
+Ondan sonra devam edelim örnek üzerinden.
+
+192
+00:42:35,168 --> 00:42:37,008
+Merhaba, sesim geliyor mu acaba?
+
+193
+00:42:37,307 --> 00:42:37,688
+Geliyor.
+
+194
+00:42:38,268 --> 00:42:41,827
+Ödevle alakalı bir soru soracaktım da. Ödevin testin tahmini.
+
+195
+00:42:42,468 --> 00:42:49,588
+Bu arada Fedi soru sormuşsun, kaçırmışsın. Kaçırmışım. Döneriz buna istediğin zaman.
+
+196
+00:42:50,324 --> 00:42:54,063
+Dinliyorum şimdi, özür dilerim. Çatteki sesini gördüm de.
+
+197
+00:42:54,403 --> 00:42:58,844
+Hocam, şöyle ödevin teslim tarihinden bir saat sonra yolladım da.
+
+198
+00:42:59,803 --> 00:43:04,603
+Ben de söyledim onu. O kadar ince düşünmeyin.
+
+199
+00:43:05,076 --> 00:43:11,896
+O kadar önemli değil. Yani bir saat geç geldi diye sıkıntı yaratmayacağım. Merak etmeyin.
+
+200
+00:43:12,115 --> 00:43:16,916
+Peki hocam, iyileştirme yaparsak puanlamada bir etki olacak mı?
+
+201
+00:43:17,436 --> 00:43:32,115
+Kesinlikle, kesinlikle. Onu söylemeye çalışıyorum. Aslında düzenli olarak çalıştığımızı takip etmek için deadline'lar koyuyorum ama geç bile olsa yapın, yaptığınızı bileyim. Kesinlikle puan veririm.
+
+202
+00:43:33,076 --> 00:43:56,615
+Tarihi geçti, beş dakika geç kaldı, bir saat geç kaldı falan gibi şeyler düşünmeyin. Ben o deadline'ları koyduğumda pozitif olarak katkısı olacağını düşünün ama sıfırlamış olmuyorum. Artık o ödevi verme şansınız yok demek istemiyorum. Demek istediğim şey düzenli çalışıyorsanız, erken bitirirseniz.
+
+203
+00:43:56,980 --> 00:44:01,019
+Daha iyi puan alırsınız. Mesaj bu diyeyim, özet olarak.
+
+204
+00:44:01,519 --> 00:44:02,319
+Teşekkürler hocam.
+
+205
+00:44:02,920 --> 00:44:08,420
+Ben teşekkür ederim. Tamam. O zaman birazdan görüşürüz. 10 dakika dedim.
+
+206
+00:58:45,907 --> 00:59:11,907
+Arkadaşlar, merhaba. Geciktim galiba ben. Buradasınız değil mi? Merhaba hocam, buradayız. Merhaba. Sorunun cevabı geçti mi? Hala burada mısın? Geçmedi. Bu şey için sordun herhalde değil mi? MaxNet için mi sordun? Daha öncesi için mi sordun?
+
+207
+00:59:12,532 --> 00:59:13,831
+Döneyim, cevaplayayım.
+
+208
+00:59:19,443 --> 00:59:22,663
+Peki, klaster'ı temsil eden vektörü?
+
+209
+00:59:26,243 --> 00:59:33,263
+Tamam, mesafeleri hesapladık ama kime mesafeyi hesapladık diye düşünüyorsun, değil mi?
+
+210
+00:59:33,263 --> 00:59:41,323
+Bir açıdan. Tamam. Şimdi aslında örnekte de göreceğiz ama ben şöyle bir döneyim.
+
+211
+00:59:41,823 --> 00:59:47,143
+Neyin üstünden bir şeklin üzerinden mesela söyleyeyim.
+
+212
+00:59:47,507 --> 01:00:10,907
+Şimdi farz et ki şu klaster birin içine de bir grup örnekler var. Sonuçta sen bir küme tanımlarken o kümede olmasını istediğin belli özellikler olacak ya. Bu özellikler olabilir, o kümeyi temsil eden bir takım örnekler olabilir. Yani unsupervised öğrenme bile yapıyor olsan.
+
+213
+01:00:11,476 --> 01:00:31,835
+Aslında, işte, cluster olsun veya başka bir işlem içinde olabilir. Tamam, öğrensin ama kime göre, neye göre, yani araba dediğim şey nasıl bir şeydirin örneğini göstermen lazım. Az miktarda etiketlenmiş data, unsupervised öğrenmede de kullanılır.
+
+214
+01:00:32,244 --> 01:00:50,284
+Bunu öyle düşün. Burada bir grup az miktarda ama o klasterı temsil ettiğini düşündüğümüz data var. Yani burası araba olsun öbürü de gemi olsun mesela klasterlarımız. Bir şeyi arabaya mı benziyor, gemiye mi benziyor karar vermem lazım.
+
+215
+01:00:57,967 --> 01:01:13,507
+Arabaya ait temel özellikler gibi verinin olduğu bir grubum olması lazım. Bir grup etiketlenmiş az sayıda datam olması lazım. İşte bu datalar bu klasterın temsilcisi.
+
+216
+01:01:14,195 --> 01:01:22,795
+Ortak olarak temsil etmeleri için de önce bu verileri sayısallaştırabilirim ve ortalamalarını alabilirim.
+
+217
+01:01:22,795 --> 01:01:35,175
+Yani ne diyelim, motor kapasitesi, ondan sonra büyüklüğü, teker sayısı, böyle birkaç parametre olduğunu düşünelim bu örneğe ait.
+
+218
+01:01:35,755 --> 01:01:40,835
+Her biri için bunların sayısal değerini yazdığımda her biri için bir vektör oluşturmuş olurum.
+
+219
+01:01:41,172 --> 01:01:52,432
+Sonra bunların bileşen bileşen, her bir bileşen neyi temsil ediyorsa işte tekeri temsil eden, motoru temsil eden, şunu bunu temsil eden bileşenleri var vektörümün.
+
+220
+01:01:52,432 --> 01:01:58,432
+Her bir örnek için motorla ilgili bileşenlerin ortalamasını aldığında...
+
+221
+01:01:58,480 --> 01:02:12,160
+Bir tane bu grubun vektörünü ilk bileşenini oluşturmuş olurum. Ondan sonra işte diğer bileşenlerinde ortalamalarını alırsam bir tane ortalama vektör oluşturmuş olurum bu cluster için.
+
+222
+01:02:12,160 --> 01:02:22,060
+İşte bunu mesela bir exemplar vektör olarak düşünebilirsin. Bunların her biri de ayrı ayrı da kullanırsam exemplar olur ama.
+
+223
+01:02:22,400 --> 01:02:30,760
+Daha genel temsil etmek için en güzeli bu cluster'da olacağını varsaydığım vektörlerin ortalamasını almak.
+
+224
+01:02:31,440 --> 01:02:33,000
+Exampler dediğim bu.
+
+225
+01:02:37,800 --> 01:02:45,360
+Evet, clustering yapmadan önce sınıfların çok iyi tanımlı olması lazım değil mi demiş arkadaşınız.
+
+226
+01:02:45,360 --> 01:02:45,740
+Evet.
+
+227
+01:02:46,224 --> 01:02:55,064
+Yani hiçbir vektörünüz yoksa, yok kullanamayız arkadaşlar. Yani burayı temsil eden bir şeyiniz yoksa az olur.
+
+228
+01:02:55,572 --> 01:03:16,112
+Yeterli temsil olmayabilir ama bir şey olmak zorunda. Yani unsupervised öğrenme de öyledir ya, tamam yani eğitim yapmayacağım, elimde çok fazla eğitim verisi yok ama yine de hiç değilse 3-5 tane problemimi temsil eden veriyi etiketlememiz lazım.
+
+229
+01:03:20,884 --> 01:03:36,483
+Etiketli bir grup veri hazırlıyoruz. Bir tane de olsa bir tanedir, iki tane olursa daha iyidir vs. Ama az sayıda bir veriyle bu klasterı temsil eden bir şey oluşturmamız lazım tabii.
+
+230
+01:03:36,884 --> 01:03:46,784
+Example Vector o. Ben şimdi onlar oluşturulmuş gibi, arkadaşınızın sorusunun kaynağı bu doğru tahmin ediyorsam.
+
+231
+01:03:47,072 --> 01:04:09,771
+O egzemplar vektör elimizde varmış gibi davranıyorum. Evet, tabii o egzemplar vektör bir şekilde gerçek örneklerden oluşturulmuş olması gerekiyor. Öncelikle öyle bir işiniz var. Yani sıfırdan başlıyorsanız klaster'ı tanımlamanız, o klaster'ı temsil eden bir egzemplar oluşturmanız lazım.
+
+232
+01:04:11,351 --> 01:04:14,391
+Açık oldu değil mi? Bir sıkıntı var mı?
+
+233
+01:04:16,019 --> 01:04:19,460
+Tamam. Ben de teşekkür ederim.
+
+234
+01:04:24,724 --> 01:04:43,523
+Peki, Mexican hat için örneğimize bakarsak, şimdi herhangi bir birimin, herhangi bir nöronun bağlı olduğu birim sayısını R2 olarak, yani şu dışarıdaki eliptik alanı olarak düşünün.
+
+235
+01:04:45,619 --> 01:04:53,099
+Üç sağda, üç solda altı nörona kadar bağlantıyı dikkate alacağımızı söylüyoruz.
+
+236
+01:04:53,099 --> 01:04:57,099
+Bu altı nörondan bir kısmını...
+
+237
+01:04:58,900 --> 01:05:20,099
+Kooperatif komşu, yani işbirlikçi komşumuz olarak tanımlayacağız. Bir kısmını da rekabetçi komşu olarak tanımlayacağız. R2 en genel anlamda dikkate alacağımız komşu sayısı. R1 ise pozitif komşularımızın olacağı alan olarak düşünün. Pozitif komşularımızın sayısı.
+
+238
+01:05:20,596 --> 01:05:27,615
+R2'nin dışındaki alanda kalan nöronları, yani daha uzak komşularımızı dikkate almayacağız.
+
+239
+01:05:28,775 --> 01:05:34,056
+Meksikon Head algoritmasını çözdürmek için bu iki tane parametreyi tanımlamamız gerekiyor.
+
+240
+01:05:36,076 --> 01:05:44,016
+Genel olarak kaç komşuyu dikkate alıyorum ve kaç komşuluğa kadar pozitif sayıyorum, onu bilmem lazım.
+
+241
+01:05:44,175 --> 01:05:47,596
+Bu R1 ve R2 başlangıçta set etmemiz gereken.
+
+242
+01:05:48,115 --> 01:06:10,756
+Ağırlık değerler. Onun yanı sıra bağlantı ağırlıkları başlangıçta set etmemiz gereken değerler. İşte R1 alanına düşen yani işbirlikçi komşularımız için pozitif, diğer rekabetçi komşularımız için negatif olmak üzere ağırlık değerlerini belirlememiz gerekiyor.
+
+243
+01:06:11,219 --> 01:06:34,459
+Ondan sonra bir aktivasyon vektörümüz olacak. Her bir nöronun, aslında her bir kümenin başlangıçtaki değeri, elimizdeki örnek klasterlarla oluşturduğumuz her klasterı temsil eden vektör aslında bu aktivasyon vektörü.
+
+244
+01:06:39,123 --> 01:06:58,884
+İstediğinde ortak temsili olan vektör, daha sonra da yeni örnekler ekledikçe değişen bir vektör. Demin söylediğim o klaster resmini tekrar düşünün. İşte beş tane etiketli örnek varsa onların ortalaması ile bir egzempler, bir temsil vektörü oluşturabiliriz dedim ya.
+
+245
+01:07:00,416 --> 01:07:09,895
+Her yeni örnek gösterdiğimizde veya Mexican Head'le eğitim yaptığımızda aslında bir tane daha örnek eklemiş gibi oluyoruz.
+
+246
+01:07:09,895 --> 01:07:17,195
+Her örnek eklediğimizde o ortalama veya o kümeyi temsil eden exempları da değişebiliyor.
+
+247
+01:07:17,735 --> 01:07:27,755
+Eğer eklersek yeni örnek. Bir önceki adımdaki aktivasyon vektörünü de X-Sold'la gösterdiğimizi düşünelim.
+
+248
+01:07:28,143 --> 01:07:45,643
+Bir de maksimum iterasyon sayısı söylememiz lazım. Şimdi MaxNet de önemli değildi. Bir tane kazanan olması gerekiyordu çünkü. Ama Mexican Hat'te öyle değil. Mexican Hat'te belli.
+
+249
+01:07:46,175 --> 01:08:03,115
+Belli nöronlar değeri yükselecek, belli nöronların değerleri düşecek ama istediğim bir noktasında kesebilirim bu eğitimi. Dolayısıyla burada maksimum iterasyon sayısını da kullanıyoruz.
+
+250
+01:08:08,480 --> 01:08:18,840
+Bizim işte kümelemeye çalışacağımız yeni örneğimiz, yeni çıktığımız diye düşünün. Bir de bu değişkenimiz var.
+
+251
+01:08:20,579 --> 01:08:35,079
+Algoritmanın çalışması yine birbirlerine benziyorlar ama burada temel olarak dediğim gibi bir maksimum iterasyon sayısı, pozitif komşuluğun ve genel komşuluk çapının parametreleri.
+
+252
+01:08:35,636 --> 01:09:00,596
+Ağırlıklarımız, işbirlikçiler için pozitif, rekabetçiler için negatif olan ağırlık değerlerimiz atanması lazım. Ondan sonra ilk gelen örneği başlangıç değeri olarak atıyoruz. Her bir nörona değerlerini atıyoruz. Ondan sonra input hesaplıyoruz her nöron için.
+
+253
+01:09:00,975 --> 01:09:11,855
+Aynı klasik ağırlık çarpı o andaki nöronun değeri şeklinde.
+
+254
+01:09:12,795 --> 01:09:14,395
+Buradaki formül niye böyle?
+
+255
+01:09:16,115 --> 01:09:24,835
+Nöronun bizim pozitif mi negatif mi komşumuz olduğuna göre ağırlığı pozitif veya negatif olduğu için
+
+256
+01:09:25,363 --> 01:09:31,583
+Hangi nöronlar işbirlikçimizse onlara C1 ağırlığını, pozitif olan ağırlığı.
+
+257
+01:09:32,283 --> 01:09:43,343
+Hangileri bizim rekabetçi komşumuzsa onlara da C2 ağırlığını verecek şekilde şu toplamın sınırları değişmiş dikkat ederseniz.
+
+258
+01:09:44,203 --> 01:09:51,643
+Pozitif komşularımız ve negatif komşularımız şeklinde toplamları ayrı ifade ettiğimiz için böyle bu formül uzun görünüyor.
+
+259
+01:09:52,015 --> 01:10:07,655
+Yoksa aslında ağırlık çarpı input. Yani bir farkı yok yine her zaman. Nörona gelen değer yok. Nörona gelen toplamı hesapladıktan sonra da aktivasyon fonksiyonumuzu uygulayacağız. Bakıyorum soruya.
+
+260
+01:10:10,295 --> 01:10:17,155
+Evet, [öğrenci] az önce Mexican hatin şeklini gösterdiğimde gördün mü bilmiyorum.
+
+261
+01:10:17,615 --> 01:10:30,975
+O da bir gausa benziyor ya. Dolayısıyla yapılan işlemler anlamında gaus çıktısı oluşturabildiğini söyleyebiliriz. O manada bir alakası var.
+
+262
+01:10:33,216 --> 01:10:44,275
+Arkadaşınız sormuş görüntü işlemedeki gaus filtresinin benzeyen yapısı var diye. Evet, Meksik'ın hetinde çıktısına bakarsak.
+
+263
+01:10:44,560 --> 01:10:54,239
+Bir de aktivasyon fonksiyonumuz var tabii burada. Aktivasyon fonksiyonu üç parçalı bir fonksiyon.
+
+264
+01:10:59,699 --> 01:11:24,579
+Eğer nöronun aktivasyon değeri sıfırdan küçükse sıfıra çekiyoruz. Sıfırla bizim belirlediğimiz bir maksimum değer arasındaysa buradan çıkan şu toplam değerini direkt kullanıyoruz. Eğer maksimumdan büyükse onu da maksimuma çekiyoruz. Şuradaki şekil ifade ediyor aslında.
+
+265
+01:11:25,119 --> 01:11:47,779
+Belli bir aralık içinde şu çıkan toplamı olduğu gibi kullanabiliyoruz. Ama alt ve üstte sınır koyuyoruz. Alt sınırı sıfır, üst sınırı da maks dediğimiz bir değer olabilir. Dolayısıyla bu şekilde de aktivasyon fonksiyonunu uyguladığımızda nöronun yeni değerini belirlemiş oluyoruz.
+
+266
+01:11:52,020 --> 01:12:03,140
+Örneğimiz şöyle, şekil biraz küçük ama dönerim tekrar eskisine olmazsa. 7 nöronlu bir tane yapay sinir ağımız var.
+
+267
+01:12:03,667 --> 01:12:16,028
+Aktivasyon fonksiyonu demin tarif ettiğim gibi maksimum değer olarak 2 alınmış. Dolayısıyla her bir nöronda bu aktivasyon fonksiyonunu uygulayacağız.
+
+268
+01:12:16,467 --> 01:12:31,127
+Başlangıç değeri olarak da R1'i 1 seçmişiz, R2'yi 2 seçmişiz. Yani 2 komşuya kadar bu şekil soruyla uyumlu mu? Evet uyumlu. Yok, değil. 2 komşuya kadar dikkat alacağız.
+
+269
+01:12:31,667 --> 01:12:53,467
+Bu şekilde direkt bunu yansıtmıyor. Yani sağımda solumda birer yakınlıktaki komşularım benim pozitif komşum olacak. İki yakınlığındaki komşum negatif olacak. Onun ötesini de hiç işleme almayacağım.
+
+270
+01:12:53,971 --> 01:13:04,612
+Pozitif bağlı olduğum komşularımın bağlantı ağırlıkları 0.6, negatif bağlı olduklarımın bağlantı ağırlıkları 0.4.
+
+271
+01:13:06,371 --> 01:13:16,072
+Başlangıç değerleri bu nöronların 0, 05, 08, 1, 08, 05 ve 0 şeklinde.
+
+272
+01:13:17,012 --> 01:13:19,652
+Simetrik olarak oluşturuyoruz yapıyı.
+
+273
+01:13:21,844 --> 01:13:29,564
+O anda işleme alacağımız nöronun ağırlığı 1 olarak düşünüyoruz. Diğerleri de simetrik olarak dağılıyor.
+
+274
+01:13:29,564 --> 01:13:44,783
+Bu bir başlangıç değeri. Ondan sonra her adımda burayı update ederek bazı nöronların değerinin yükselmesini kazanan olmasını isteyeceğiz.
+
+275
+01:13:44,783 --> 01:13:47,783
+Şimdi işlem yaparken...
+
+276
+01:13:48,340 --> 01:13:59,120
+En baştaki bağlantıya giren, yani şu R2 alanına giren ilk nörondan başlıyorum. Yani ortadakinden değil, şuradan göstereyim.
+
+277
+01:13:59,780 --> 01:14:09,340
+İlk işleme alacağım nöron en soldaki diye düşünün, yazdığım formülleri değerlendirirken. Ondan sonra sırayla bakacağım.
+
+278
+01:14:13,743 --> 01:14:20,171
+Sol tarafında bağlı olduğu bir komşusu yok. Sol tarafında var olan...
+
+279
+01:14:20,180 --> 01:14:45,680
+Nöronla bağlantısı yok. Dolayısıyla solda bir komşusu yok. Ancak sağındaki komşularıyla işlem yapabileceğim. Onların da sağında yeterince varsa pozitif komşusu ve negatif komşusu ile işlem yapacağım. Bir de kendisi kendisine bağlı. Bir de onu ekleyeceğim. Ama sol tarafında herhangi bir komşusu yok. Dolayısıyla bu nöronun inputunu hesaplarken daha az.
+
+280
+01:14:46,195 --> 01:14:50,275
+Dışarıdan, diğer nöronlardan besleme gelecek.
+
+281
+01:14:52,015 --> 01:15:02,595
+Öyle bakarsak eğer, bizim ilk nöronumuzun, şu şekilden bakıyorum sadece burada üç komşuya kadar gitmiş, aman ona dikkat edin.
+
+282
+01:15:03,496 --> 01:15:10,456
+İlk nöronumuzun, şu olsun, kendisine olan bağlantısı bu.
+
+283
+01:15:11,252 --> 01:15:37,372
+Pozitif ağırlıkla kendisine bağlı. Ondan sonra sağındaki bir pozitif komşuyu alıyorum. İki ötesinde de negatif komşusu var. Bu kadar bağlantıları. Bir sonraki nörona bakarsam, işte kendisi var. Sağında pozitif komşusu var. Solunda pozitif komşusu var. Solunda henüz negatif komşu oluşmadı.
+
+284
+01:15:37,872 --> 01:15:58,252
+İki birim uzağında bir şey yok çünkü. Ama sağında bir tane negatif komşusu var. Üçüncü nörona geçtiğim zaman bütün bağlantılar var sağında ve solunda. Kendisi var. Ortadakini öyle düşünün. Kendisi üçüncü nöron. Kendisine pozitif bağlı.
+
+285
+01:15:58,739 --> 01:16:06,319
+Solunda pozitif bir komşusu var, sağında bir pozitif komşusu var, solunda ve sağında birer tane negatif komşusu da var.
+
+286
+01:16:08,319 --> 01:16:13,739
+Nöronların yeni değerlerini hesaplarken kullanacağım denklemler bu şekilde.
+
+287
+01:16:13,739 --> 01:16:21,699
+Önce genel olarak bunları oluşturduktan sonra her adımda güncelleyerek gidiyorum.
+
+288
+01:16:24,243 --> 01:16:39,623
+Başlangıç değerlerini kullanarak yeni değerleri hesapladım bir tur. Bir tur hesaplama sonucunda her nöronun değeri bu şekilde değişmiş. Ondan sonra dördüncü adım da şu hale gelmiş.
+
+289
+01:16:43,828 --> 01:16:56,548
+Şimdi bu adım dediğim şeyler, her bir nöronun değerini değiştirdiğim, beş adım sonrasında yeniden başlamış oluyoruz.
+
+290
+01:16:57,368 --> 01:16:59,888
+Epok olarak düşünebilirsiniz ondan sonrasını.
+
+291
+01:17:01,808 --> 01:17:08,528
+Tekrar hesapladığımda bütün nöronların yeni değerleri de bu şekilde oluşmuş.
+
+292
+01:17:11,615 --> 01:17:25,796
+Bir adım sonunda şu yani T0 anında şu koyu kesimsiz çizgi, ondan sonra T1 anındaki grafik, ondan sonra T2 anındaki grafik.
+
+293
+01:17:25,796 --> 01:17:32,536
+Dikkat ederseniz bir nöron zaten kazanana yaklaşmaya başladı.
+
+294
+01:17:33,235 --> 01:17:53,815
+Diğer nöronlar gittikçe zayıflayacak. Biraz daha iterasyon çalıştırırsanız bu sivrilik artacak. Aşağıda bir sıfıra çektik aktivasyon fonksiyonuyla. Çekmeseydik orada bir negatif şey oluşup o Meksika şapkasının yan kısımları da oluşacaktı.
+
+295
+01:17:55,195 --> 01:17:58,335
+[öğrenci] soruna cevap olarak.
+
+296
+01:17:58,707 --> 01:18:09,847
+Benzerliği burada görürsün. Go seyrisine benziyor. Bizim aktivasyon fonksiyonumuz şu sağ ve solu sıfırladığı için daha keskin sadece.
+
+297
+01:18:10,768 --> 01:18:25,667
+Aktivasyon fonksiyonunda orada sıfır değil de küçük bir değer veya daha genel bıraksaydık orada da biraz daha böyle yana doğru olasılıkları az olan.
+
+298
+01:18:26,036 --> 01:18:34,296
+Uzantılar oluşacaktı. Var mı bununla ilgili arkadaşlar sorunuz?
+
+299
+01:18:40,787 --> 01:18:50,347
+Peki, bir tane daha sabit ağırlıklı ağlara örnek olarak Heming ağını konuşalım.
+
+300
+01:18:51,447 --> 01:19:06,127
+Heming ağa birkaç tane Xample Vektör'den hangisinin input vektörüne benzediğini yine aynı amaçla maksimum benzerliğe göre sınıflandıran bir ağ yapısı.
+
+301
+01:19:06,644 --> 01:19:18,564
+Example Vektörler A'nın ağırlık matrisini belirliyor. Example Vektör dediğimiz şey o kümedeki örneklerin ortalaması manasında bir şey.
+
+302
+01:19:30,036 --> 01:19:36,595
+Kümeyi temsil eden egzemplar vektör arasındaki farkı bu sefer hemik benzerliği olarak hesaplıyoruz.
+
+303
+01:19:36,595 --> 01:19:46,595
+Hemik benzerliği dediğimiz şey ne? En bileşenli bir vektör ise, en bit ile ifade ettiğimiz bir vektör ise,
+
+304
+01:19:57,908 --> 01:20:18,608
+Bileşenlerinin sayısı şeklinde hesaplayabiliyoruz. Benzerleri sayarsak, aynı olanları sayarsak şurada, farklı olanları sayarsak benzerlik hesaplamış olacağız. Aynı olanları sayarsak distance olarak hesaplamış olacağız. Yani Heming distance'ı duydunuz muhtemelen.
+
+305
+01:20:19,252 --> 01:20:45,032
+Daha çok onu kullanmışsınızdır. Burada bahsettiğimiz benzerlik, distans değil de, farklılıkları değil de, benzerlikleri dikkate alacağız. Dolayısıyla n'den çıkardığımız şey, farklı olanların sayısı. Bize geriye kalanlar, benzer olanlar. İki vektör arasındaki hemik mesafesi farklı olan bileşenlerin sayısıydı.
+
+306
+01:20:45,587 --> 01:21:02,427
+İki tane bipolar veri arasında kemik mesafesi n-a olarak ifade edersek, d-distansı, n bileşenlerin sayısını, a'da birbirine benzeyen sayıyı gösteriyor.
+
+307
+01:21:02,427 --> 01:21:12,847
+Bu distance ifadesi bizim istediğimiz şey de aslında benzerlik, yani distance'ın n'den çıkarılmış hali.
+
+308
+01:21:13,231 --> 01:21:37,332
+Birbirine benzeyen bitlerin sayısı. En büyük input'u bulmak için yine Heming Ağ'ın sonunda MaxNet'i kullanmamız gerekiyor. Çünkü Heming Ağı benzerlikleri hesaplayacak, bir gruba atacak ama diğer grubunda bir olasılığı olacak. En sonunda MaxNet'le bu ayrımı yapmamız gerekiyor.
+
+309
+01:21:40,787 --> 01:22:04,547
+Bir alt katmanımız var, input'un olduğu yer. Y1 ve Y2 diye iki tane cluster'ımız var diye düşünebilirsiniz. İki tane çıktığımız var. Ve en sonunda bu input'un Y1'e mi Y2'ye mi ait olduğuna karar vermek için de bir üst katmanda MaxNet Ağ'ını kullanıyoruz burada.
+
+310
+01:22:06,292 --> 01:22:29,892
+Alt katman her biri M tane çıktı düğümüne bağlı olan M tane girdi düğümünü temsil ediyor. M dediğimiz şey yani çıktı sayısı elimizdeki exemplar vektör sayısı veya küme sayısı yani burada M2. Dolayısıyla elimizde iki tane exemplar vektör varmış.
+
+311
+01:22:30,287 --> 01:22:35,028
+Veya iki tane küme varmış diye düşünebilirsiniz.
+
+312
+01:22:36,087 --> 01:22:43,387
+Alt katmanın çıkış düğünleri giriş vektörünü en iyi eksempler eşitler ismesini hesaplayan bir MaxNet'e besliyor.
+
+313
+01:22:43,387 --> 01:22:48,987
+Bir de eksempler vektörlerini bipolar olarak kullanıyoruz. Arkadaşlar, bipolar kullanıyoruz.
+
+314
+01:22:50,067 --> 01:22:53,127
+Heming Distance'ı doğru hesaplayabilmek için.
+
+315
+01:22:55,412 --> 01:23:02,891
+1-0 yaptığımızda mesafe doğru olmayacak. Şimdi göreceksiniz.
+
+316
+01:23:03,992 --> 01:23:11,092
+Şimdi bir çift bipolar exemplar vektör verildiğinde, exemplar vektörleri E1 ve E2 diye gösterdiğimizi düşünün.
+
+317
+01:23:11,851 --> 01:23:17,532
+Bipolar giriş vektörüne en yakın örneği bulmak için Heming'i kullanabiliriz.
+
+318
+01:23:21,076 --> 01:23:42,835
+Outputlarımız var M ve E dediğimizde Exampler Vektörümüz. Buna göre algoritmanın akışı kabaca şöyle. M tane Exampler Vektörü kaydetmek için ağırlıkları ve Bias'ı set ediyoruz. Burada bir Bias kullanıyoruz.
+
+319
+01:23:47,007 --> 01:24:13,667
+Exampler vektörlerin yarısını kullanıyoruz. Bias'ı set ederken de yine kaç bileşeni varsa input'umuzun, onun yarısı değerini kullanıyoruz. Her vektör için input hesaplıyoruz. Aynı her zamanki gibi. İlgili bileşen çarpı ağırlık artı bias şeklinde. Bias olduğu için onu da ekledik burada.
+
+320
+01:24:14,228 --> 01:24:35,547
+Bias'ın ağırlığı doğal olarak yine burada da bir, bildiğimiz Bias. MaxNet için bu input'u hesapladık. Ondan sonra bu input'u olduğu gibi, yani aktivasyon fonksiyonu yok diye düşünebilirsiniz veya linear diye düşünebilirsiniz.
+
+321
+01:24:38,287 --> 01:24:58,727
+O sınıfın sonucu olarak düşünüyoruz. Yani 0'ın oğlu exemplar vektöre benzerlik ölçüsü olarak düşünüyoruz. Daha sonra da max neti kullanarak, şimdi y0 için hesapladık, y1 için de hesaplayacağım. Kaç tane varsa çıktım, hepsi için hesaplayacağım.
+
+322
+01:24:59,188 --> 01:25:16,568
+Ondan sonra da MaxNet'i kullanarak bunlardan birisini seçeceğiz. Ne zamana kadar bütün vektörler için, elimizdeki bütün gruplamaya çalıştığımız vektör için bu işlemleri yapıp bitirene kadar yapacağız.
+
+323
+01:25:19,387 --> 01:25:21,728
+Örnek bir tane yapalım.
+
+324
+01:25:22,676 --> 01:25:30,656
+Elimizde iki tane exemplar vektör var. Y1 ve Y2 ile gösterdiğimiz çıkışları temsil eden.
+
+325
+01:25:32,116 --> 01:25:33,896
+Input'umuz dört bileşenli.
+
+326
+01:25:36,356 --> 01:25:40,036
+İşte input'un bileşen sayısına ne demiştik?
+
+327
+01:25:41,156 --> 01:25:44,116
+Çıktının sayısına da M demiştik.
+
+328
+01:25:44,616 --> 01:25:49,736
+Dolayısıyla N4 ve M'in iki olduğu bir problem bu. Heminki A bu.
+
+329
+01:25:50,159 --> 01:26:06,679
+Öncelikle elimizde dört tane de input vektörü var. Bu dört input vektörünün her birinin hangi exemplar vektöre daha fazla beklediğini karar vermemiz lazım ve ona göre de uygun sınıfa atmamız lazım.
+
+330
+01:26:06,679 --> 01:26:13,800
+Her input'u verdiğimizde çıktı, y1 mi olacak, y2 mi olacak? Bunu karar vermemiz gerekiyor.
+
+331
+01:26:14,707 --> 01:26:26,147
+Heminki An'ın kullandığımız nokta, elimizdeki örneklerin bunlara her exemplar vektörü olan benzerliğini hesaplamak.
+
+332
+01:26:27,147 --> 01:26:30,367
+Ağırlık vektörü hesaplayacağız dedik.
+
+333
+01:26:32,020 --> 01:26:52,260
+Bu arada elimizde iki tane ağırlık vektörü olduğu için ikisinin ortalamasını, iki egzemplerin ortalamasını ya da her egzemplerin yarısını bir sütuna yazacak şekilde iki egzempleri da temsil eden bir ağırlık matrisi oluşturuyoruz.
+
+334
+01:27:00,020 --> 01:27:13,940
+Y2'nin egzemplarının yarısı burada. Y1 ile ilgili ağırlıkları güncellerken sol sütunu, Y2 ile ilgili ağırlıkları güncellerken sağ sütunu güncellememiz lazım.
+
+335
+01:27:14,579 --> 01:27:25,520
+Her ikisi birlikte şu ağırlık matrisiyle de aslında bizim Heming ağımızın tümünü temsil eden bir ağırlık matrisi oluşturmuş oluyor.
+
+336
+01:27:28,595 --> 01:27:40,036
+Matrisin her bir elemanı, ilgili egzempleri vektörün ilgili bileşenini temsil ediyor.
+
+337
+01:27:41,815 --> 01:27:48,195
+BIAS dediğimiz şeyi de input vektörlerimizin bileşen sayısının yarısı kadar seçecektik.
+
+338
+01:27:48,195 --> 01:27:54,916
+Dört bileşenli örneklerimiz olduğu için BIAS'ımız da 4 bölükten 2 olarak.
+
+339
+01:27:55,539 --> 01:28:14,199
+seçilmiş, belirlenmiş olacak. Elimizdeki ilk örnek vektörü aldık. Hangi kümeye aittir bakmak istiyoruz. Yapmamız gereken şey iki tane exemplar vektörün ikisiyle de kıyaslayacağız bunları ayrı ayrı.
+
+340
+01:28:14,739 --> 01:28:28,359
+Ve aralarındaki hemik benzerliğini oluşturacağız. Hemik benzerlikleri oluştuktan sonra da MaxNet'e verip bunlardan hangisine atamamız gerektiğine karar vereceğiz.
+
+341
+01:28:28,359 --> 01:28:42,059
+Şimdi şurayı yapmadan önce işlemlere dikkat ederseniz her iki cluster içinde veya her iki input içinde pozitif bir değer oluşuyor.
+
+342
+01:28:42,448 --> 01:28:50,307
+Yani Heming Distance'a bakarak kesin bir karar veremiyorum. Şu anda belki üçte bir...
+
+343
+01:28:50,420 --> 01:29:17,519
+Birbirinden yeterince uzak gibi görünebilir ama bunlar birbirine daha yakın değerler de çıkabilirdi. Aynı da çıkabilirdi hatta. O yüzden benim burada MaxNet gibi keskin bir rekabetçi ağa ihtiyacım var. Bunlardan birisini illaki seçmesi lazım. İkisinin değeri de üç olsaydı ne yapacaktım? Ben nasıl seçim yapacaktım veya nasıl bir mekanizmayla seçim yapacaktım?
+
+344
+01:29:18,420 --> 01:29:30,619
+Teknik Üniversitesi burada MaxNet'i kullanmak. Bu ikilemden çıkış için özellikle belli bir klasterın seçilmesi gerekiyorsa. MaxNet de o iş için burada.
+
+345
+01:29:31,188 --> 01:29:48,608
+Şimdi vektörümüzle birinci eksempler arasındaki distansı hesaplıyoruz. Dediğim gibi bir yaz artı her bir bileşen çarpı ilgili ağırlık şeklinde hesaplama yapacağım. Bunları topladığım zaman 3 çıkıyormuş.
+
+346
+01:29:56,115 --> 01:30:21,115
+Bu miktarı. Şimdi bakın ilk bileşenleri aynı bu iki vektörün. İkinci bileşenleri farklı. Üçüncü bileşenleri aynı. Dördüncü bileşenleri yine aynı. Yani iki vektörün üçer bileşeni birbirinin aynısı. Bir tane farklılık var. Dolayısıyla benim birinci vektör için veya birinci...
+
+347
+01:30:21,152 --> 01:30:36,951
+Cluster'ın input'u için gelen toplam değerim 3. Çıktısının da aynısı olacağını söylemiştik. Nasıl bir toplam oluşursa aynen onu çıkarıyorduk. Aktivasyon fonksiyonu olarak linear demiştik.
+
+348
+01:30:43,731 --> 01:31:01,112
+Elimdeki örnek vektörün Heming benzerliğine baktığım zaman da bakın birinci bileşenlere birisinde birken öbüründe eksi bir, bire eksi bir, eksi bire eksi bir bir tane aynı olan çıktı.
+
+349
+01:31:01,112 --> 01:31:08,112
+Eksi bire bir sadece bir bileşenlere ortak. Dolayısıyla şu hesapla da bulduğum sayı.
+
+350
+01:31:08,243 --> 01:31:15,604
+Onu gösteriyor. Heming benzerliğini gösteriyor. Y2 içinde bir değerini hesaplamış olduk.
+
+351
+01:31:15,604 --> 01:31:24,904
+Şimdi en sonunda bu ikisi arasındaki seçimi de MaxNet yaparak bir yere atacak.
+
+352
+01:31:27,764 --> 01:31:33,764
+MaxNet çalıştırdığımızda E1 vektörünü seçmiş veya
+
+353
+01:31:34,228 --> 01:31:43,867
+İşte şu Y1 kümesini seçmiş diyeyim. Bu zaten beklediğimiz bir sonuçtu ama MaxNet'i çalıştırıp siz de deneyebilirsiniz.
+
+354
+01:31:46,967 --> 01:31:56,927
+İkinci input vektörünü verdiğim zaman yine aynı hesapları yapıyorum. Y1'in değeri 4 çıkıyormuş, Y2'nin değeri 2 çıkıyormuş.
+
+355
+01:31:57,344 --> 01:32:14,304
+Bunlar Heming benzerlikleri. Daha sonra MaxNet'e veriyoruz bu inputları. MaxNet'in seçtiği de yine birinci küme yani Y1 oluyormuş bu durumda.
+
+356
+01:32:24,212 --> 01:32:44,872
+Y2 olarak çıkmış MaxNet'in sonucunda. Başlangıçta 2 ve 4 değerini almışlar. 2 ve 4 değerini MaxNet bir ağına soksanız, çıkan sonuçta kazanan ya da Y2 olacakmış. Buradan onu da söylemiş oluyoruz.
+
+357
+01:32:44,872 --> 01:32:48,852
+Yine son input vektörümüzü verdik.
+
+358
+01:32:49,171 --> 01:33:07,711
+Y1'in değeri 1, Y2'nin değeri 3 olarak oluştu. Ve MaxNet'e bu 1 ve 3 değerlerine girdiğimizde de Y2'yi, yani büyük olan 3'ü seçti. Dolayısıyla bu vektör de okümeye attı.
+
+359
+01:33:10,452 --> 01:33:21,652
+Bütün bu vektörleri ekledikçe aslında biz bir yandan da o kümenin şu ağırlık matrisinde değişiklik yapmış olduk.
+
+360
+01:33:23,652 --> 01:33:29,471
+Var mı sorunuz arkadaşlar? Varsa şimdi sorun veya yazın.
+
+361
+01:33:36,627 --> 01:33:58,587
+Peki. Bir de Cohen'in algoritmasından ya da sondan bahsedelim. Bugünlük öyle kapatayım. Nüfusun az olmasının bir sebebi var mı arkadaşlar? Özel bir durum var mıydı bu hafta? Ben bir şey mi kaçırdım?
+
+362
+01:34:01,363 --> 01:34:03,423
+Yok sanırım hocam. Bilgim kadarıyla.
+
+363
+01:34:03,443 --> 01:34:04,304
+Bir bilgim yok hocam.
+
+364
+01:34:04,304 --> 01:34:04,943
+Yok hocam evet.
+
+365
+01:34:06,844 --> 01:34:10,224
+Erkenden sınav mı çalışıyorlar diyeceğim ama pek sanmıyorum.
+
+366
+01:34:10,863 --> 01:34:13,743
+Pek sınav da yok gibi zaten derslerde ama.
+
+367
+01:34:14,483 --> 01:34:15,703
+Genellikle ödev değil mi?
+
+368
+01:34:16,283 --> 01:34:17,384
+Evet hocam.
+
+369
+01:34:17,939 --> 01:34:27,339
+Hocam bir de sanırım bu dönem biraz geri kaldı. Çoğu derste böyle daha başlarında gibiyiz ama bir şeyler bitmemiş gibi yani vize dönemine.
+
+370
+01:34:27,359 --> 01:34:29,519
+Daha yapacak bir şey de yok ortada diyorsun.
+
+371
+01:34:30,292 --> 01:34:36,752
+Evet, ödevi bile zor çıkartıyoruz. Bir tane ödevi zorlaya zorlaya buluyorlar. İki ders daha alıyorum şu anda.
+
+372
+01:34:38,492 --> 01:34:45,892
+Öyle mi? Ben kendimi kötü zannediyordum. Tamam, o zaman iyi sevindim. Kendi adıma sizin için kötü oluyor da.
+
+373
+01:34:46,892 --> 01:34:52,352
+Hakikaten böyle biraz bir açıdan iyi ama bir açıdan da zor.
+
+374
+01:34:54,547 --> 01:35:19,067
+Açıkçası ne kadar geçiyor, ne anlatabiliyoruz çok emin değilim. Ama ne yapalım, bu süreçte böyle olacak herhalde. Ben zaten kendi tarafımda bizim için de her şey çok yoğunlaştı. Çok fazla talep geliyor sanki böyle hani şey olunca, her şey online olunca. Gece gündüz kavramı da kalktı, yol mol falan da kalktı ortadan.
+
+375
+01:35:19,488 --> 01:35:43,448
+24 saat herkes ulaşılabilir hale geldi. O da yükümüzü çok artırdı. Benim zaten kendi tarafımda bir şeylerim var. Bu da dersleri birazcık sanki ikinci planı attı gibi oldu. Bilmiyorum. Talepleriniz olursa siz iletin yine de elimden geldiği kadar size faydalı olacak bir şeye çevirmeye çalışalım.
+
+376
+01:35:43,956 --> 01:36:08,735
+En azından final ödevlerinizi biraz tezlerinize yarayacak bir şey şeklinde yapmaya çalışalım. Sonuçta bir yandan da evde olduğumuz bir süreç o kadar verimsiz geçmesin. Hepiniz biliyorum bir şekilde evde olmanın getirdiği yükleri de yaşıyorsunuz ama değerlendirmeye çalışalım olabildiği kadar.
+
+377
+01:36:10,996 --> 01:36:18,256
+Peki, SOM'un yapısından da biraz bahsedeyim. Ondan sonra bugünlük bitireceğim herhalde.
+
+378
+01:36:18,536 --> 01:36:33,635
+Şimdi Kohane'nin 89'da geliştirdiği bir algoritma. Genel olarak biraz daha farklı bir yapısı var. Topoloji koruma veya topoloji oluşturma.
+
+379
+01:36:34,547 --> 01:36:53,487
+Amacıyla komşular arasındaki ilişkileri oluşturma, bir topolojik harita oluşturma, elimizdeki örnekler veya sınıflar arasında diyebiliriz. Bu amaçlarla kullanmaya uygun bir algoritma.
+
+380
+01:36:56,819 --> 01:37:16,460
+Bu dayandığı mantık beyinde görülen bir yapı. Biz de nöronlarımız arasında işte o her nöronun da belli duyguları, belli şeyleri davranış biçimlerine temsil ettiğini düşünürseniz onlar arasında da aslında topolojik ilişkiler var.
+
+381
+01:37:16,895 --> 01:37:31,195
+Değerli olan kısmı da biraz o açıdan hani insana benzer veya yapay zekayı insan davranışına benzetmeye çalışıyorsak bu şekilde hem unsupervised olan yapılar.
+
+382
+01:37:31,615 --> 01:37:45,876
+Hem de beyinde görünen ilişkilerin benzerlerini kuran yapılar anlamlı ve önemli olacaktır. O açıdan değerli ama her türlü uygulama için.
+
+383
+01:37:46,287 --> 01:38:10,988
+Bu örneğe kullanılabilir değil. Yine de başarılı uygulamaları var. Biraz sonra ben de gezgin satıcı problemi için göstereceğim ki, yani gezgin satıcı probleminin sonuçta zor bir problemdir. En azından onu çözebilmiş olması, ansüpervaz şekilde yapay sinir hale çözebilmiş olması bir başarı.
+
+384
+01:38:14,100 --> 01:38:26,640
+Tek veya iki boyutlu diziler halinde düzenlenmiş kümeleme birimleri var elimizde. Giriş sinyalleri yine en bileşenli diye düşünebilirsiniz.
+
+385
+01:38:26,640 --> 01:38:34,579
+Sonda yaptığımız şey aslında belli geometrik formlarda komşu tanımlamak.
+
+386
+01:38:38,560 --> 01:38:59,140
+Hangilerinin, sonuçta bir de kimyasal ya beyindeki etkilenmeler, bir şekilde belli yakınlıklarındaki komşuları etkiliyor, nöron belli kısımlardakini etkilemiyor. Birbirine yakın görünen bazı nöronları etkilemiyor, biraz daha uzak görünenleri etkiliyor.
+
+387
+01:39:02,355 --> 01:39:22,355
+Aynı hizada olan komşular birbirinden etkileniyor olabilir. Bir kare komşuluğunda olanlar birbirinden etkileniyor olabilir veya...
+
+388
+01:39:22,771 --> 01:39:28,292
+Daha farklı şöyle heksagonal gridler şeklindeki komşular etkileniyor olabilir.
+
+389
+01:39:28,292 --> 01:39:35,271
+Yani bu nöronun şu komşusu etkilenirken bu komşusu niye etkilenmiyor?
+
+390
+01:39:35,731 --> 01:39:38,972
+Veya şu etkilenirken hemen yanındaki niye etkilenmiyor?
+
+391
+01:39:40,032 --> 01:39:50,771
+Burada bir etki alanı varsa ve bu da bir geometrik bir şekilse diye düşünülerek aslında şu hangi komşuluğu dikkate alacak?
+
+392
+01:39:50,771 --> 01:40:06,052
+Hangilerinin aktivasyonlarını değiştireceğiz? Her bir nöron için işlem yaparken hangi komşularını update edeceğiz? Ona karar vermek üzere parametreler ayarlayabildiğimiz bir algoritma.
+
+393
+01:40:06,484 --> 01:40:30,043
+Genellikle de tamamen unsupervazda olduğu için bu ne kadar yakınlıkta ve ne biçimdeki komşuları, hangi geometrik yakınlıktaki komşuları değiştireceğiz kısmında bu parametrelerle oynayarak somun başarısını oldukça farklılaştırmak mümkün olabiliyor.
+
+394
+01:40:30,043 --> 01:40:34,043
+O yüzden biraz daha deneysel olarak iyileştirilebilen...
+
+395
+01:40:34,484 --> 01:40:55,484
+Bir algoritma diye düşünebiliriz bunu herhalde. Yine elimizde exemplar vektör olarak düşündüğümüz bir vektör var. O da ağırlık vektörümüz. O kümeyle ilişkili input destanelerinin exempları olarak o...
+
+396
+01:40:56,467 --> 01:41:18,327
+Kümedeki örneklerin ağırlık vektörünü kullanıyoruz. Hangi kümeleme biriminin ağırlık vektörü input desenine en yakınsa onu da kazanan olarak seçiyoruz. O kümeyi de kazanan olarak seçiyoruz. Kazanan birimin komşularını ve kendisinin ağırlıklarını güncelliyoruz.
+
+397
+01:41:19,087 --> 01:41:34,487
+Her iterasyonda bir kazanan nöronumuz olacak. O kazanan biriminde gösterdiğim bu geometrik şekillerdeki ve yakınlıktaki komşularını güncelleyeceğiz. Diğer komşuları güncellemeyeceğiz.
+
+398
+01:41:35,367 --> 01:41:38,347
+Argoritma bu şekilde çalışan iteratif bir argoritma.
+
+399
+01:41:38,804 --> 01:41:47,384
+Şimdi şu şekil üzerinden bakarsak, şu diyezle gösterdiğimiz bizim kazanan nöronumuz.
+
+400
+01:41:49,724 --> 01:42:04,364
+Etrafında belirlediğimiz geometrik şekil ve o geometrik şeklin büyüklüğü veya komşuların yakınlığı da bir nevi o geometrik şeklin çapı veya komşu yakınlığını da bir parametre olarak.
+
+401
+01:42:04,884 --> 01:42:30,463
+Ayarlıyoruz ve o komşuluğun içine düşen nöronları da kazanan nöronla birlikte güncelliyoruz. Dediğim gibi şekiller farklı farklı olabilir. Genel olarak ağın yapısı, her zaman bildiğimiz yapı, fully connected, inputlar ve outputlar şeklinde. Mimari de bir farklılık yok. Farklılık şu komşuların seçiminde.
+
+402
+01:42:30,895 --> 01:42:57,915
+Hangi komşular kazanan komşunun yanında güncellenecek? Ne çapta ne yakınlıkta komşuları dikkate alacağız. Onu seçmemiz gerekiyor. Hangi birimlerin eğitileceği, birimlerin nasıl eğitileceği yani hangi eğitim fonksiyonlarını kullanacağı, bütün birimlerin aynı miktarda mı eğitileceği şeklinde bir takım kararlar vermemiz gerekiyor.
+
+403
+01:42:58,387 --> 01:43:22,648
+İki tane temel eğitim şekli var. Bir başlangıç formasyonu, yani komşuların geometrik olarak hangi komşuları sayacağımız şeklinde bir formasyon var. Bir de en son yakınsama durumu var. Bu formasyonu algoritma içinde değiştiren başka başka uygulamalar da görebilirsiniz.
+
+404
+01:43:23,891 --> 01:43:40,311
+Sabit tutuluyor ama burası işte bizim deneysel alanımız. Farklı formasyonlar denenebilir. Eğitimin ne zaman sonlanacağına karar vermemiz gerekiyor bir de. Yine maksimum EPOC sayısı bir parametre olabilir.
+
+405
+01:43:40,800 --> 01:43:58,560
+Çünkü belki elinizdeki veriler SOM için uygun değildir. Yani bir miktar evet parametrelerle oynayarak SOM'la çözmeye çalışabilirsiniz ama çok uzun sürüyorsa da bir yerde algoritmayı durabilmek için bir EPOC sayısı.
+
+406
+01:43:58,992 --> 01:44:24,992
+Eğitimi sonlandırmak için gerekebilir. Bir de haritanın artık çok az değiştiği durumda. Yani tekrar tekrar çalıştırıyorsunuz ama artık ağırlıklar fazla değişmiyor. Demek ki bir öğrenme olmuyor. O durumda da bir önceki ağırlık değeriyle yeni hesapladığınız ağırlık değeri arasındaki...
+
+407
+01:44:25,587 --> 01:44:33,647
+Farka bakabilirsiniz. Böyle iki tane ağırlık durma koşulu da belirlenebilir.
+
+408
+01:44:36,212 --> 01:45:03,092
+Ne yapıyoruz? Ağırlıkları set ediyoruz. Topolojik komşuları set ediyoruz. Bir öğrenme kat sayısı burada da kullanıyoruz. Öğrenme kat sayısını set ediyoruz. Ondan sonra durma koşulumuzu da tanımladık varsayarsam. Durma koşulu sağlanmadığı sürece bütün input vektörleri için net input'u hesaplıyoruz. O da bizim klasik ağırlık çarpı.
+
+409
+01:45:03,456 --> 01:45:23,576
+Şimdi bir distance hesaplamamız lazım. Distance'ı hesaplarken de exemplar olarak kabul ettiğimiz ağırlık vektörüyle bizim inputumuz arasındaki karesel farkları toplayarak.
+
+410
+01:45:24,051 --> 01:45:36,811
+D değeri hesaplıyoruz. Ondan sonra da komşuların bu D değeri en büyük olan küme için, bütün kümeler için hesaplıyoruz bunu.
+
+411
+01:45:36,811 --> 01:45:39,811
+D değeri en büyük çıkan küme için...
+
+412
+01:45:42,387 --> 01:45:48,847
+Ağırlıkları ve belli yakındaki komşulukların ağırlıklarını güncelliyoruz.
+
+413
+01:45:48,847 --> 01:46:02,028
+Ağırlık güncellemesinde yaptığımız şey nöronun bir önceki veya o andaki değeri ile input vektörümüz, eksi ağırlık vektörümüzün.
+
+414
+01:46:02,304 --> 01:46:27,203
+Farkı çarpı mü öğrenme veya alfa öğrenme katsayısı şeklinde ağırlık güncellemesi yapıyoruz. Bir de bu öğrenme katsayısını her iterasyonda değiştiriyoruz. Komşuluk yarı çapıyla da oynayabiliyoruz. Yani algoritma içinde oynayacağımız birden fazla parametre var.
+
+415
+01:46:27,604 --> 01:46:35,703
+Komşuluk yarı çapını ve learning rate'i her iterasyonda değiştirebiliyoruz.
+
+416
+01:46:36,703 --> 01:46:53,264
+Küçülterek gitmek genellikle mantıklı olan, yani biraz daha geniş bir alanda komşuluklarını update ederek başlayıp, daha sonra daha dar alanlara indirmek öğrenme için daha faydalı oluyor.
+
+417
+01:46:53,908 --> 01:47:14,228
+Başka? Learning Rate'i farklı şekillerde azaltabilirsiniz. Epox sayısıyla ilişkilendirebilirsiniz. İterasyon sayısıyla ilişkilendirebilirsiniz. Ya da dümdüz her iterasyonda yarıya bölerek veya belli bir oranda küçülterek devam edebilirsiniz gibi.
+
+418
+01:47:18,036 --> 01:47:39,796
+Şimdi genel olarak haritanın oluşması iki aşamada gerçekleşiyor. Önce bir doğru şekilde bir düzen oluşması gerekiyor. Yani doğru yarı çapa yaklaşma ve komşuların şimdi her seferinde kazanan değişecek ya kazananın komşuları da değişecek.
+
+419
+01:47:44,655 --> 01:48:07,155
+Aslında final haritada yer alacağı öğrenme sırasında sürekli değişiyor. Dolayısıyla kabaca bir şekil belli olduktan sonra kazananların oluşturduğu bir geometri görüldükten sonra bir de en son yakınsama için bir miktar daha algoritmanın bir miktar epok daha gitmesi gerekiyor.
+
+420
+01:48:07,604 --> 01:48:19,984
+Dolayısıyla aslında birçok eğitim epoğu sonrasında çoğu uygulama için çözüm oluşabiliyor.
+
+421
+01:48:19,984 --> 01:48:28,623
+Şimdi bir tane basit örnek yapalım. Elimizde dört tane vektör var. Bunları kümelemek istiyoruz.
+
+422
+01:48:29,104 --> 01:48:48,344
+Bu arada daha önceki konuşmalarımızdan buraya yansıyan şeyi söyleyeyim. Şu anda direkt kümeyi temsil eden bir örnek elimizde olmayabilir.
+
+423
+01:48:51,188 --> 01:49:18,728
+Ortalamalarından bir şey alabiliriz veya kümedeki örneklere dair az miktarda etiketlenmiş data varsa onlardan bir ağırlık matrisi, onların ortalamasından bir ağırlık matrisi oluşturabiliriz. Bunu yapabiliyorsak çok daha anlamlı tabii. Çoğu örnek için yapabilirsiniz ama elinizde çok da ne anlam ifade etmediğini bilmediğiniz unsupervised.
+
+424
+01:49:19,119 --> 01:49:34,800
+Bir şekilde birbirlerine benzeyen bir şeylerini bulabilir miyim dediğiniz bir şey varsa burada rastgele bir yerlerden de başlayabilirsiniz. Az miktarda etiketli veri işinizi kolaylaştıracaktır.
+
+425
+01:49:36,020 --> 01:49:45,760
+Maksimum küme sayımızın 2 olmasını istemişiz. 4 input, 2 output şu şekilde uygun değil.
+
+426
+01:49:46,163 --> 01:49:59,703
+Dört bileşenli inputlarım olacak. Zaten burada örneklerim. İki tane de kümem olacak. Öğrenme kat sayısını 06 olarak başlatıyoruz.
+
+427
+01:50:00,020 --> 01:50:27,340
+Ve her adımda yarıya düşürüyoruz. Bir sonraki öğrenme kat sayısı, bir öncekinin yarısı olacak şekilde gidiyoruz. Başlangıçta veya sürekli olarak burada aslında komşuluk çapını sıfır seçmişiz. Ama dediğim gibi komşuluk çapını biraz büyük seçip buradaki learning rate gibi onu da her iterasyonda bir miktar azaltabilirdik.
+
+428
+01:50:28,020 --> 01:50:51,440
+Önce örneğimizi alıyoruz. İki tane output'un dolayısıyla iki tane sınıfım vardı. Orası için ilgili şu ağırlık maddesinin sütununda birinci sütun.
+
+429
+01:50:51,828 --> 01:51:12,648
+Birinci kümenin ağırlıklarını ifade edecekti ya, oradaki her bir değerle ilgili bileşenin farkı, yani birinci kümenin birinci ağırlık değeri, eksi birinci örneğimizin ilk bileşeni.
+
+430
+01:51:13,108 --> 01:51:38,248
+Farkının karesi. Bu şekilde karesel farkları bileşen bileşen alıyorum. İkinci ağırlık değeri birinci küme için 06, ikinci bileşen eksi bir karesi, 05 eksi üçüncü bileşenimiz 0 karesi gibi birinci küme için bir D değeri hesapladım.
+
+431
+01:51:38,676 --> 01:51:44,076
+Ondan sonra ikinci küme için bu sefer ikinci sütunu kullanarak D değerini hesapladım.
+
+432
+01:51:45,516 --> 01:51:53,496
+İmput vektörümüzün ikinci düğme daha yakın olduğuna karar verdim.
+
+433
+01:51:53,496 --> 01:51:58,276
+Şimdi bunlar distanslar aslında öklit mesafesi sonuçta.
+
+434
+01:51:58,655 --> 01:52:11,855
+İçinlikle büyük olan değil de küçük olan daha yakın olduğunu ifade ettiğine göre input vektörümüz aslında D2 değeri daha küçük olduğu için ikinci sınıfa daha yakın.
+
+435
+01:52:14,931 --> 01:52:33,412
+Kümenin, ikinci sınıfın kazandığını söyleyebiliriz. Bu kazanan birime yakın olan ağırlıklar güncellenecek. Bu kazanan birimin ağırlıkları şu ikinci sütundaki ağırlıklardı. Demek ki ben sadece bu ağırlıkları güncelleyeceğim.
+
+436
+01:52:42,163 --> 01:53:01,743
+Sütundaki her bir bileşenin eski değeri artı öğrenme kat sayısı çarpı işte o andaki bileşenin değeri, örneğin bileşeninin değeri, eksi eski ağırlık değeri şeklinde yeni matrisimiz bu hale gelmiş.
+
+437
+01:53:01,743 --> 01:53:08,263
+Başlangıçta şöyleydi 08-04-07-03 şeklindeydi. Bu örnek için.
+
+438
+01:53:08,608 --> 01:53:21,928
+Bu örneği D2'ye kattığım anda onu da ortalamaya katmam gerekti. Şu şekilde ağırlıkları buna göre değiştirdim ve yeni değerler güncellenmiş olarak böyle oluştu.
+
+439
+01:53:22,488 --> 01:53:31,028
+Birinci sütundaki ağırlıkları güncellemedim çünkü birinci kümem kaybeden küme. Orada herhangi bir güncelleme yapmayacağım.
+
+440
+01:53:31,028 --> 01:53:32,968
+Sonraki vektör.
+
+441
+01:53:33,876 --> 01:53:48,296
+Elimizdeki örnek vektör için yine hesaplamalarımı yaptım, distansları. Bu sefer D1 daha küçük çıktı. Dolayısıyla bir vektörün D1 sınıfına ya da birinci kümeye ait olması.
+
+442
+01:53:48,768 --> 01:54:08,948
+Bu vektörü birinci kümeye katacağıma göre ağırlıkları, birinci kümenin ağırlıklarını güncelleyerek ağırlık madresini tekrar update ettim.
+
+443
+01:54:08,948 --> 01:54:12,887
+Devam edersek, üçüncü vektörümüz.
+
+444
+01:54:13,300 --> 01:54:36,159
+İkinci kümeye düşmüş. İkinci küme kazanan olduğu için onlar update edilmiş. Daha sonraki dördüncü vektörümüz birinci kümeye düşmüş ve onun ağırlıkları güncellenmiş. İki vektör, birinci küme, iki vektör, ikinci kümeye gitti galiba. İkisi de iki kümenin ağırlıkları da iki kere güncellenmiş oldu.
+
+445
+01:54:37,268 --> 01:54:45,967
+Şimdi artık bu dört vektörü bir kere gösterdik. Yani bir epok tamamladık şu anda. Bir epok tamamladıktan sonra...
+
+446
+01:54:46,579 --> 01:55:04,859
+Learning Rate'imizi değiştireceğiz. Ne yapıyoruz? Yarıya düşürecektik. 0,6 idi başlangıçtaki öğrenme katsayımız. Onu 0,3 olarak değiştireceğiz. Yeni güncelleme fonksiyonumuz şu öğrenme katsayısının değişmiş haliyle bu şekilde olacak.
+
+447
+01:55:05,587 --> 01:55:28,927
+Bu şekilde ikinci epoğda yaptığımızda, yani ikinci epoğ ne demek? O dört örneği tekrar göstereceğim. Tekrar kazanan sınıfın kim olduğuna bağlı olarak ağırlıkları güncelleyeceğim. İlgili ağırlıkları güncelleyeceğim. Bu şekilde 100 epoğ gittiğimizde ağırlık matrislerimiz şu hale geliyormuş.
+
+448
+01:55:29,524 --> 01:55:41,944
+Şimdi birinci ve ikinci vektörlerin ortalaması ilk kolonu oluşturmuş. Üçüncü ve dördüncü vektörlerin ortalaması da ikinci kolonu oluşturmuş.
+
+449
+01:55:41,944 --> 01:55:57,024
+Şimdi bakın elimde aslında şu başladığım ağırlık matrisi belki az sayıda örneğin ortalaması olarak bir egzempleri olarak seçmiştik. Belki rastgele seçmiştik.
+
+450
+01:55:57,247 --> 01:56:09,827
+Ama sonra ben bir takım örnekler gösterdim. Yüz epok boyunca bu dört tane örneği gösterdim. Bunların aslında birbirlerine benzerliklerine de bakılmış oldu.
+
+451
+01:56:09,827 --> 01:56:19,667
+Bu örneklerden birinci ve ikinci örnek birinci sınıfa, diğerleri de ikinci sınıfa denk gelmiş.
+
+452
+01:56:20,180 --> 01:56:24,180
+Artık 100 epok sonrasında oluşan ağırlık matrisi...
+
+453
+01:56:25,811 --> 01:56:44,672
+Her sınıfa ait olan vektörlerin ortalaması gibi oldu. Yani birinci ve ikinci vektör birinci sınıfa aitti. O ikisinin ortalaması bu ağırlık matrisini oluşturdu. Üçüncü ve dördüncü vektörler ikinci sınıfa aitti. Onların ortalaması da bu ağırlık matrisini oluşturdu.
+
+454
+01:56:53,811 --> 01:57:15,032
+Ortalamasını yansıtan bir ağırlık mahcısımız olması lazım. Ortalamasından kastettiğimde bileşen bileşen 1 artı 0'ın ortalaması 0,5. İşte 1 artı 0'ın ortalaması tekrar 0,5. 0,0,0 gelecek. 0 ile 1,0,5 gelecek.
+
+455
+01:57:15,583 --> 01:57:21,983
+100 epok sonunda oluşan da aynen bu değerler olması lazım.
+
+456
+01:57:21,983 --> 01:57:33,243
+Tamam, ilk iki vektörün ortalaması burada, diğer iki vektörün ortalaması da ikinci sütunda olacak şekilde oluşuyormuş.
+
+457
+01:57:39,123 --> 01:57:50,023
+Bu, belki şu bu haftaki ödevinizi bitirdikten sonra vereceğim bir ödev olabilir. Sizin karakter tanıma ödeviniz gibi.
+
+458
+01:57:54,387 --> 01:58:11,608
+Şimdi üç tane farklı fontla yazılmış karakterlerimiz var yine. Sizin kullandığınız karakterler. Şöyle, birinci fontla yazılmış, ikinci fontla ve üçüncü fontla yazılmış karakterler var.
+
+459
+01:58:14,319 --> 01:58:39,059
+Topolojik bir yapı oluşturamazsak Winner Take All şeklinde bir öğrenme yapabiliriz. Bu durumda da, şimdi bunu somla aslında kümelemeye çalışıyoruz. Yani hangi karakterler aynı kümeye girecek diye bakıyoruz. Bizim de şu anda Perseptron'la yapmaya çalıştığımız şey buydu. Bunu somla da yapabilirsiniz.
+
+460
+01:58:41,043 --> 01:58:52,943
+Bu örnekleri tekrar tekrar belli epoklarda gösterip en sonunda hangi karakterler hangi gruba giriyor diye düşünebiliriz.
+
+461
+01:58:52,943 --> 01:58:58,963
+Burada yaptığımız şey 25 tane kümeleme birimimiz var.
+
+462
+01:59:03,028 --> 01:59:18,127
+5 tane sınıfa sokmaya çalışmışız. Bizim 5 tane karakterimiz vardı. Dolayısıyla 5 tane sınıfımız olması normal. Farklı fontta da olsa A'ların birinci gruba, işte B'lerin ikinci gruba.
+
+463
+01:59:18,560 --> 01:59:40,840
+İkinci klaslara girmesini bekleriz. Som ile denediğimiz zaman beş küme oluşturmak için 21 deseni denediğimizde bu şekilde bir sonuç çıkıyormuş. Bu dediğimiz şey winner take all şeklinde öğrenme yaptığımız durum.
+
+464
+01:59:44,416 --> 01:59:59,595
+Aslında doğrusal bir yapı oluşturarak yaptığımız durum. Burada gördüğünüz gibi aslında dört tane şey bile oluştursak, işte A'lar bir yere, B'ler, C'ler, D'ler bir yere düşmüş.
+
+465
+02:00:00,355 --> 02:00:05,296
+Burada birazcık B ile D karışmış ama C'ler, E'ler.
+
+466
+02:00:05,716 --> 02:00:31,476
+Ayrı olmuş. Şu K, ikinci fonttaki K biraz değişik olmuş. Bu başka bir örnek için galiba. Bir bakayım. Bir dakika. Yok tamam, bu örnek içinmiş. Farklı çaplarda ve farklı topolojilerde denediğinizde elde edeceğiniz sonuçlar değişecek. Mesela Diamond yapısı kullanarak yaptığımız zamanda.
+
+467
+02:00:31,988 --> 02:00:50,508
+Oluşan sonuçlar şu şekilde olmuş. Bakın C'ler ayrılmış, C'ler ayrılmış, K'lar ayrılmış, E'ler, D'ler ayrılmış şurada. Beş tane gruba düşen sonuçlar. Aslında bu güzel bir ödev olurmuş şimdi onu düşünüyorum.
+
+468
+02:00:51,155 --> 02:01:08,775
+Belki bir sonraki aşaması olarak somuda çalıştırabiliriz sizin elinizde hazır örnekler varken. Birkaç tane farklı geometrik ve yakınlık parametresine göre harfleri ne kadar iyi sınıfladığına bakabiliriz.
+
+469
+02:01:10,420 --> 02:01:29,539
+Şimdi gezgin satıcı problemi için SOM'u kullanmak istemişler. Aslında uzun bir süre uğraşılmış bir şey bu. Sonuçta gezgin satıcıda bir topolojik harita oluşturmaya çalışıyoruz ya, SOM ile çözülebilir mi diye bakmışlar.
+
+470
+02:01:32,148 --> 02:01:41,488
+Farklı farklı denemeler sonucunda aslında bir çözüm yapılmış. Kaç şehir içindi bu? Unuttum.
+
+471
+02:01:42,668 --> 02:01:48,648
+2, 4, 6, 8, 10, 15 falan galiba.
+
+472
+02:01:50,128 --> 02:01:58,507
+Şimdi tamamen şehir sayısına bağlı ama 2-3 şehir için çözmesi daha kolay.
+
+473
+02:01:58,963 --> 02:02:10,944
+Olmuş ama şehir sayıları yüzlere falan çıktığı zaman daha çok epokta, daha farklı geometriler denenerek biraz daha zor çözülmüş bir problem.
+
+474
+02:02:20,756 --> 02:02:30,695
+Doğru sağlık birer komşuluğa bakarak yapılmış bir örnekte. Yüz epok sonrası oluşan çözüm bu şekilde.
+
+475
+02:02:31,655 --> 02:02:41,536
+R'yi sıfır aldığımızda, bakın R1 iken böyle, R'yi sıfır aldığımızda aynı örnek için kim geride kalmış?
+
+476
+02:02:41,536 --> 02:02:43,136
+Şurada.
+
+477
+02:02:43,731 --> 02:02:58,511
+İki tane şehrimiz tam isabeti olmamış ama neredeyse R'yi sıfır aldığımda çözümün tamamı yani bütün şehirleri gezecek şekilde oluştuğu görülebiliyor.
+
+478
+02:02:58,511 --> 02:03:01,451
+Dolayısıyla farklı problemler için.
+
+479
+02:03:01,908 --> 02:03:14,228
+Çözüm sunabilen ama birazcık parametrisi ayarlaması zor olan bir de an süpervazı olduğu için aslında veri hazırlaması gibi bir derdi olmayan bir yöntem.
+
+480
+02:03:16,748 --> 02:03:18,588
+Peki, var mı sorunuz?
+
+481
+02:03:20,708 --> 02:03:21,908
+Arkadaşlar.
+
+482
+02:03:25,716 --> 02:03:27,576
+İyi misiniz? Yaşıyor musunuz?
+
+483
+02:03:31,507 --> 02:03:39,787
+Şükür hocam, yaşıyoruz. Tamam. Arada bir ses verin. Sağlığınız iyi değil mi herkesin?
+
+484
+02:03:42,967 --> 02:03:49,347
+Yani çevremizden gelen eskiye göre şeyler biraz daha arttı hocam inşallah.
+
+485
+02:03:49,347 --> 02:03:53,488
+Arttı değil mi? Yani hepimizin daha yakınından geçmeye başladı.
+
+486
+02:03:55,108 --> 02:03:57,287
+Üniversitesi'nize kadar geçerli.
+
+487
+02:03:57,811 --> 02:04:20,751
+Evet, evet. Geçen gün biz de rektörlükte bir toplantıydık. Sonra oradan da bir haber geldi. Hiç farkında olmadan bir şekilde yakın geçiyor. Ne yaptığımızı sanırsak sanalım. Koruduk diyoruz ama ne kadar koruyoruz bilinmez. Hepimiz dikkatli olalım ne diyeyim.
+
+488
+02:04:21,492 --> 02:04:28,572
+Arkadaşlar, o zaman bugün böyle bitireceğim. Bir isteğiniz var mı, sorunuz var mı?
+
+489
+02:04:30,036 --> 02:04:34,216
+Hocam, dersin dışında ben sunumları sisteme yükleyebilir misiniz?
+
+490
+02:04:34,275 --> 02:04:40,756
+Çok özür dilerim. Evet, çok fazla talep var. Ben de çok kötü bir şekilde unutuyorum.
+
+491
+02:04:41,256 --> 02:04:53,815
+Şöyle, en kötü ihtimali olduğu gibi yüklerim. Ne olur dikkat edin. Arada ben typo hatalar gördüğüm için yüklemekten kaçınım, kontrol etmek istedim ama o vakti de bir türlü bulamadım.
+
+492
+02:04:58,036 --> 02:05:12,595
+Gözünüzden kaçmaz görürsünüz. Ama dikkatli olun hata görürseniz de affola diyeyim. Fark ettim bir iki tane hata var. O haliyle kabul ederseniz yükleyeyim ben olduğu gibi.
+
+493
+02:05:13,024 --> 02:05:34,503
+Daha fazla bekliyoruz. Evet, bence de yüklerseniz iyi olur. Zaten derste üstünden geçerken tekrar fark ederiz hataları bence. Tamam, yani ben derste gördüğüm zaman söylüyorum zaten ama burası yanlış yazılmış diye. Okurken de olabileceğini düşünün hata. Ona göre dikkatli takip edin o zaman. Tamam.
+
+494
+02:05:34,503 --> 02:05:36,543
+Tamam hocam, teşekkürler.
+
+495
+02:05:38,228 --> 02:05:50,608
+Kendinize iyi bakın diyorum o zaman. Haftaya bir şey yapmıyoruz. Gerçi sizin de çok sınavınız yoksa telafiyi haftaya yapayım mı arkadaşlar dersin?
+
+496
+02:05:50,608 --> 02:05:59,908
+Ben mesela onu alamadım. Bana diyorsan duymuyorum. Senin sesin mi [öğrenci]?
+
+497
+02:06:00,948 --> 02:06:02,568
+Yok hocam, ben değilim.
+
+498
+02:06:03,008 --> 02:06:05,468
+Özgür hocam, benim buradan geldim açık ofis.
+
+499
+02:06:05,468 --> 02:06:07,408
+Tamam, anlaşıldı.
+
+500
+02:06:08,668 --> 02:06:15,048
+Ders yapmamız zorlamayacaksa haftaya dersimizi yapalım o zaman.
+
+501
+02:06:15,268 --> 02:06:18,768
+Çünkü ben telafi yapmam gerekecek. Geride kaldık.
+
+502
+02:06:20,228 --> 02:06:24,548
+Haftaya o zaman tekrar dersimizi yapalım. Başka telafi saati aramayayım.
+
+503
+02:06:27,380 --> 02:06:28,059
+Tamamdır.
+
+504
+02:06:28,500 --> 02:06:31,259
+Normalde haftaya dersler yok mu sistemde?
+
+505
+02:06:32,399 --> 02:06:38,699
+Şöyle, sınav haftası, normalde sınav haftasında ders yapmayabiliyoruz.
+
+506
+02:06:39,159 --> 02:06:42,539
+Özellikle sınavınız olduğu zaman siz de gelmezsiniz diye.
+
+507
+02:06:43,079 --> 02:06:46,399
+Ama yüksek lisans da şu anda çok ödev ağırlıklı gittiği için.
+
+508
+02:06:46,868 --> 02:07:10,888
+Galiba pek de sınav yapılmayacak. Bir de sınavlar çakışıyor. Şu anda ekstra ders almaya da izin verdiler ya. Lisansta pek mümkün olmayacağız ders yapmamız. Ama yüksek sınav da daha kolay. O yüzden yapalım sizden. Lisansta yapamayacağız. Yani sınav saatlerini oynatmak zorunda kaldılar. Bir de onlara ikişer tane ekstra ders hakkı vermişlerdi. Çakışsa da alıyorlardı.
+
+509
+02:07:11,539 --> 02:07:21,219
+Ama sınav döneminde o sıkıntı yarattı. Orası karışık ama burada pek sıkıntı yok sanırım. Burada yapabiliriz dersimizi.
+
+510
+02:07:25,319 --> 02:07:27,819
+Kendinize iyi bakın o zaman. Görüşmek üzere.
+
+511
+02:07:28,739 --> 02:07:29,519
+Teşekkürler hocam.
