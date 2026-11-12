@@ -356,6 +356,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Hesaplamalı Anlambilim Ders Kayıtları](./Hesaplamal%C4%B1%20Anlambilim/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
