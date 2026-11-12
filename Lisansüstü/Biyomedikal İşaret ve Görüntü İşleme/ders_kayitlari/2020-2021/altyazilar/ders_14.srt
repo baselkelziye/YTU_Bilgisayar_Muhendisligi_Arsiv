@@ -1,0 +1,699 @@
+1
+00:00:25,876 --> 00:00:26,996
+Merhaba arkadaşlar.
+
+2
+00:00:29,336 --> 00:00:30,536
+Merhaba hocam.
+
+3
+00:00:31,475 --> 00:00:35,055
+Kusura bakmayın. 9.30'da dersimizi başlatacağız olur mu?
+
+4
+00:00:37,936 --> 00:00:39,856
+9.30'da geliyorum ben.
+
+5
+00:00:41,076 --> 00:00:41,816
+Tamam hocam.
+
+6
+00:12:29,331 --> 00:12:36,672
+Merhabalar arkadaşlar. Kusura bakmayın. Bugün biraz geciktik. Kim başlamak ister?
+
+7
+00:12:40,371 --> 00:12:42,631
+Ben başlayabilirim isterseniz hocam.
+
+8
+00:12:43,211 --> 00:12:49,891
+Tamamdır. Ekran paylaşımını sana vereyim.
+
+9
+00:12:51,991 --> 00:12:55,271
+Tamam, sana verdim. Şimdi ekran paylaşımını.
+
+10
+00:12:59,635 --> 00:13:26,456
+Şöyle hocam, geçen hafta bana patchler al demiştiniz. Görüntüden merkez itibariyle. Servix 93 görüntüsünden. Ben de onları şu şekilde aldım. Her görüntüden. 2433 tane görüntü çıktı. Bayağı bir çıktı. Bu şekilde aldım. Bayağı gidiyor. Bir de bunları etiketledim ben her bir görüntüyü.
+
+11
+00:13:27,187 --> 00:13:29,947
+Ve bir CSV dosyası oluşturdum.
+
+12
+00:13:30,548 --> 00:13:48,268
+Burada bir problem vardı herhalde. O problemden bahsetsene. Seninle baya bir konuşmuştuk bu konuyu. Onu bir hatırlatır mısın? Sen farklı bir yaklaşımla yaptın mı demiştim? Neydi senin daha önce yaptığın daha sonra buna geçmiştik?
+
+13
+00:13:54,484 --> 00:14:07,283
+Şöyle, nükleileri çıkartmıştım ama şu şekilde. Siz de patch alarak görüntü sayısını artır demiştiniz. Ben de görüntü sayısı 93 taneydi.
+
+14
+00:14:08,764 --> 00:14:16,724
+Anladım. Burada kaç sınıf vardı bu servis? 3 sınıf var hocam. 2 sınıf değil mi? 3.
+
+15
+00:14:17,683 --> 00:14:28,823
+3 sınıf var. O zaman bu nükleilerin çevresinde patchler alarak bu 3 sınıfı sınıflandırmaya çalışacağız. Yani hücre tiplerinden yardım olarak değil mi?
+
+16
+00:14:29,083 --> 00:14:40,223
+Ben şu şekilde onu da şöyle bir dosya oluşturdum hocam. Zaten etiketli gelmişti veriler. Ben de aldığım sınıf fremlere göre tekrar etiketledim.
+
+17
+00:14:40,659 --> 00:14:46,159
+Tamam, birinci sınıftaysa, birinci sınıfta imajları aldıysan hepsine bir koydum.
+
+18
+00:14:46,159 --> 00:14:52,659
+Evet, internetimde biraz yavaş sanıyorum hocam ama açamadım.
+
+19
+00:14:52,659 --> 00:14:54,659
+Peki çalıştırabildin mi bunları?
+
+20
+00:14:54,659 --> 00:15:00,659
+Çalıştırdım hocam, Inception kullandım. Bir de Data Augmentation yaptım.
+
+21
+00:15:02,035 --> 00:15:11,015
+Ama şu an ekürüsü %55 civarında onu artırmaya çalışacağım. İşte parametreleri değiştireceğim. Görüntülere bir de ön işlem uygulamak istiyor.
+
+22
+00:15:11,015 --> 00:15:21,235
+%55 şöyle bir sorun da vardır. Demek ki bu aldığın hücre boyutunda çok ayrışmıyor olabilir. Şöyle bir şey yapalım.
+
+23
+00:15:21,255 --> 00:15:23,275
+Yüze yüz hocam boyutlarım. Çok mu küçük?
+
+24
+00:15:24,052 --> 00:15:34,751
+Yüzeyüzse şayet ben senin yerinde olsam, nasılsa merkezleri biliyorum. 156'ya 256 ve 512'ye 512'ye patch boyutların büyütürüm.
+
+25
+00:15:35,056 --> 00:15:39,416
+Bir de öyle deneyeyim. Merkezin X noktasından.
+
+26
+00:15:40,176 --> 00:15:42,436
+Dokuya alamıyor olabiliriz belki.
+
+27
+00:15:42,996 --> 00:15:46,016
+Çekirdekleri alıyor ama doku da bir sıkıntı oluyor sanırım.
+
+28
+00:15:46,576 --> 00:15:47,196
+Evet, evet.
+
+29
+00:15:49,036 --> 00:15:53,115
+512 yapılabilir. Belki biraz daha da büyütülebilir fırsat varsa.
+
+30
+00:15:54,375 --> 00:16:02,176
+Tamam, bir de şey yapayım. Yani büyütürsem muhtemelen 2400 olmaz. Daha küçük bir sayı olur.
+
+31
+00:16:02,836 --> 00:16:30,155
+Evet, kesinlikle. Ama data augmentation yapılabilir yani. Evet, zaten yapıyorum. Bir de 128 yapıyorum. 256 böyle sırayla deneyeyim o zaman. Bir de şöyle bir şey dene muhakkak. Hani Inception demiştik ya. Bir de NasNet deneyeceğim hocam. Efendim? NasNet demiştiniz. NasNet, DenseNet ve ResNet'leri denebilir. Tamam. Sen Matlab'de yapıyordun değil mi?
+
+32
+00:16:31,028 --> 00:16:32,468
+Yok, Python'da yapıyor.
+
+33
+00:16:32,687 --> 00:16:41,087
+Python'da. Bir bak bakayım en son şeyler neler, pretrain modeller neler var başka?
+
+34
+00:16:42,048 --> 00:16:42,388
+Tamam.
+
+35
+00:16:43,087 --> 00:16:50,268
+Standart bildiğin ne yap şimdilik. Ondan sonra yüksek çıkmaya başlayınca diğerleriyle de karşılaştırırız, oldu mu?
+
+36
+00:16:50,528 --> 00:16:53,107
+Tamam, bu şekilde hocam görünüyor mu sizde?
+
+37
+00:16:53,587 --> 00:16:55,048
+Evet, evet gördüm.
+
+38
+00:16:55,107 --> 00:17:01,347
+Bu şekilde peti verdim. Bu petten görüntüyü okuyorum direkt. Burada da sınıf ismini verdim.
+
+39
+00:17:02,967 --> 00:17:03,347
+Tamam.
+
+40
+00:17:03,667 --> 00:17:07,907
+Bu şekilde devam ediyor. İnternetim yavaş olduğu için şu an çok.
+
+41
+00:17:08,627 --> 00:17:15,268
+Şimdi bir onları deneyeceksin anladın. Benim dediğimi. Başka var mıydı herhangi bir soru bununla alakalı?
+
+42
+00:17:15,892 --> 00:17:34,112
+Buna yok gibi. Zaten Herlev'le çalışıyordum. Herlev'de Unet Segmentation yapmıştım. %90'a yakın bir ekurisi çıkmıştı. Ona da direkt sınıflandırma yapabilirim zaten. Herlev daha alışık olduğum bir veri seti olduğu için daha önce yaptığım için. Deep Learning ile sınıflandırma yapacağım.
+
+43
+00:17:34,771 --> 00:17:35,052
+Tamam.
+
+44
+00:17:36,147 --> 00:17:45,467
+Bir onu da dene bakalım. İkisini de şeyin içine katalım. Hani bir ulusal dergi tadında bir şeyler çıkabilir diye düşünüyorum.
+
+45
+00:17:46,007 --> 00:17:51,067
+Tamam, tamam hocam. İkisini ayrı ayrı karşılaştırma yaparım. İki ayrı veri seti gibi yazarım.
+
+46
+00:17:51,847 --> 00:17:56,027
+Evet, evet. İki ayrı bir seti olacaklar ama aynı sınıflandırma mantığı.
+
+47
+00:17:56,027 --> 00:17:56,487
+Evet, evet.
+
+48
+00:17:57,567 --> 00:18:02,087
+Güzel bir de flowchart muhakkak çiz. Nasıl yaptığını, ne ettiğinle alakalı tamam mı?
+
+49
+00:18:02,307 --> 00:18:03,607
+Tamam.
+
+50
+00:18:04,180 --> 00:18:05,760
+Benim söyleyeceklerim bu kadar.
+
+51
+00:18:06,019 --> 00:18:07,460
+Tamamdır, kolay gelsin.
+
+52
+00:18:07,539 --> 00:18:09,160
+Teşekkürler.
+
+53
+00:18:10,480 --> 00:18:12,440
+Sırada kim anlatmak ister?
+
+54
+00:18:13,320 --> 00:18:14,900
+Hostluğuna doğru verirsin sen.
+
+55
+00:18:18,996 --> 00:18:20,736
+Ben anlatabilirim hocam eğer uygunsa.
+
+56
+00:18:21,115 --> 00:18:23,996
+Tamam. [öğrenci]'e doğru aktarabilir misin [öğrenci]?
+
+57
+00:18:24,896 --> 00:18:26,836
+Direkt paylaşabiliyorum sanki hocam. Şu an oldu mu?
+
+58
+00:18:28,635 --> 00:18:29,216
+Evet.
+
+59
+00:18:33,172 --> 00:18:34,552
+Şu an geliyor değil mi hocam İkram?
+
+60
+00:18:34,991 --> 00:18:35,491
+Evet, evet.
+
+61
+00:18:36,711 --> 00:18:49,112
+Benim datasetim Panduk dataset'ti hocam. Bundan yukarı segmentation yapacaktım. Başta classification olarak başlamıştık ama dataset segmentation'a daha uygun olduğu için sizinle son görüşmemizde segmentation'a kayacağız demiştik.
+
+62
+00:18:49,112 --> 00:18:55,052
+Üç folder halinde verilmişti bu. Toplam 7901 tane örneğim var burada.
+
+63
+00:18:55,571 --> 00:19:23,411
+Boyutları, resimlerin boyutları 256-256, 3 bandında. Maskların boyutları ise 256-256, 6. Bu 6, şöyle hemen devam edeyim. 19 farklı doku tipinden alınmıştı. Masklardaki 6 layer nükleik klaslarından geliyor. Neoplastik, informatik, kondektivlet ve epitel olmak üzere 6. klas da non-nükleik olarak.
+
+64
+00:19:23,571 --> 00:19:30,831
+Bunlar vardı elimizde. Bunlarla segmentation yapacaktık. Segmentation olduğu için ben unit modeli kurdum hocam.
+
+65
+00:19:30,831 --> 00:19:41,291
+Şöyle bir şey de var. Mesela 6. değer non-nükleeyi dedik ya. Aynı zamanda all nükleeyini dönüştürülebilir mi bu?
+
+66
+00:19:42,051 --> 00:19:47,351
+Dönüştürülebilir hocam. Tüm sıfırlar 1, 1'ler 0 yapılırsa dönüştürülür hocam.
+
+67
+00:19:47,571 --> 00:19:48,531
+Tamam, tamamdır.
+
+68
+00:19:51,923 --> 00:19:57,183
+Nükle'yi tipini belirtmezsek, sınıfını belirtmezsek direkt nükle'yi veya değil olarak kullanılmazdım.
+
+69
+00:19:57,183 --> 00:20:06,903
+Aslında bizim için 6. sınıf, yani hepsi bütün hücreleri gösteren, hücreleri yerini gösteren kısım da bence yararlı bizim için.
+
+70
+00:20:07,443 --> 00:20:32,523
+Evet, yalnız şöyle bir şey olacağım. Şimdi hemen devam edelim, onu geri geldiğinde izah edeceğim. UNED modeli kurdum ben. UNED modelde de Dice Metric değerlendirmesiyle başarımı ölçmeye çalıştım. İlk başta şöyle güzel bir şeyim vardı. Yalnız dün bu görüntü, slide hazırlamak için görüntüleri almaya çalıştığım zaman fark ettim ki sistem sadece şuna evrilmiş.
+
+71
+00:20:35,443 --> 00:20:46,243
+İndeksli layer yani şu non-nuclear'lerin olduğu layer'ı tamamen bir yaptığı için ve bunun oranı çok fazla olduğu için başarım tam sadece ondan geliyordu.
+
+72
+00:20:46,783 --> 00:20:52,324
+Ben de şu an şöyle bir şey yaptım. Bu layer'ı kaldırarak bir eğitim yaptırmaya çalışıyorum.
+
+73
+00:20:52,824 --> 00:20:57,284
+Fazla zaman aldım ama önümüzdeki birkaç gün içinde bunu netleştiririm diye düşünüyorum.
+
+74
+00:20:58,723 --> 00:21:03,284
+Mesela ikisini beraber, üç folder halinde vardı. İki folder'ı birleştirip hocam...
+
+75
+00:21:03,443 --> 00:21:14,423
+Bunları train için. Son folderı da test için kullanmaya çalışıyorum ama ikisini birleştirdiğimde 40 dakika, 1 saate yakın sürüyor her bir şey. O yüzden şey yapamadım.
+
+76
+00:21:14,423 --> 00:21:22,503
+Yönet eğitimi verilirken bir tane örnek resim açsana. Demin gösteriyordun.
+
+77
+00:21:31,380 --> 00:21:53,800
+Bunları rastgele bir random sayı üreterek ben şey yaptım karşılaştırma için. Şu alttakilerde bir şeyin prediktettiklerim. Burası şu üsttekilerin renksiz olması. Yani birinci ve üçüncü imajın renksiz olması tamamen şey. Orada o nükleer sınıfına hiç veri olmaması. Yani tamamen sıfırlardan oluşuyor burası. Şu ortadaki beşinci leğere denk geldiği için bu şekilde görünüyor.
+
+78
+00:21:54,483 --> 00:22:09,443
+Peki ben sana şöyle bir soru sorayım. Sen burada UNET eğitimini yaparken, giriş olarak orijinal resmini söylüyorsun, çıkış olarak segmente edilmiş. Yani all nükleeyi veriyorsun değil mi?
+
+79
+00:22:09,483 --> 00:22:11,103
+Evet, maskları veriyorum hocam.
+
+80
+00:22:11,844 --> 00:22:15,103
+Masklarım veriyorsun yoksa şeyim veriyorsun?
+
+81
+00:22:15,324 --> 00:22:20,003
+Tüm layer'larıyla, 6 layer'ı yani 5 index'e kadar 6 layer'la beraber veriyordum hocam.
+
+82
+00:22:20,723 --> 00:22:41,023
+Bu altta yeri verdiğim sonuç. Yani şu grafik de ona ait. Hani %82 gibi bir oran çıkıyordu. Ama dediğim gibi fotoğrafla resimlerini almaya çalıştığım zaman, yani şu da mesela şu ortadaki resmi aslında tamamen birilerden oluşuyor. Ama bunu da bu şekilde renklendirdiği şey, Python.
+
+83
+00:22:41,683 --> 00:22:54,683
+Ama sadece bu birlerden oluşuyor. Sadece beşinci ile yarım birlerden oluşuyor. Diğerlerinde hiç şey yapmamış. Nükle'yi tahmininde bulunmamış. Burada nükle'yi var gibi. İşin ilginç tarafı yani şeyimde yüzde…
+
+84
+00:22:54,683 --> 00:22:57,543
+Bu data setinde bunu yapabilmişler miydi?
+
+85
+00:22:58,903 --> 00:23:00,124
+Segmente etmeyim hocam.
+
+86
+00:23:01,523 --> 00:23:15,203
+Yani şöyle bununla ilgili çalışma açıkçası çok yoktu. Ama bu segmentation ve classification için direkt oluşturulmuş bir dataset olduğu için oradan segmentation yaparız diye düşünmüştük.
+
+87
+00:23:15,943 --> 00:23:18,603
+Tamam. Ekranı bir de ben paylaşayım şimdi.
+
+88
+00:23:19,803 --> 00:23:21,223
+Ben stop etmem gerekiyor mu hocam?
+
+89
+00:23:21,403 --> 00:23:21,864
+Evet, evet.
+
+90
+00:23:38,195 --> 00:23:40,655
+Ekran geliyor değil mi? Evet hocam.
+
+91
+00:23:54,867 --> 00:24:06,387
+Şimdi şöyle bir şey var. Şimdi sen UNET yapısı itibariyle şöyle de çalışıyor olabilir. Hani bir patch veriyorsun. Mesela bu senin orijinal resmin olsun.
+
+92
+00:24:08,887 --> 00:24:19,087
+Bu Grand Truth olarak senin yaptığının haricinde sadece 10 nükleği. Yani bu 6. layer var ya.
+
+93
+00:24:19,087 --> 00:24:20,127
+Evet hocam.
+
+94
+00:24:20,596 --> 00:24:27,096
+Sadece bunu verdiğin zaman segmentasyonu yapabiliyor çalışmaları, tarzında çalışmalar biz yapmıştık daha önce.
+
+95
+00:24:28,956 --> 00:24:33,915
+Tamam, sadece nükleileri çıkarma şeklinde olacak o zaman. Nükleilerin sınıflarını göz arayacağım.
+
+96
+00:24:33,915 --> 00:24:40,016
+Senin dediğin gibi, klasifikasyon yapma, yani yönetle klasifikasyon yaptırma pek mümkün değil.
+
+97
+00:24:41,907 --> 00:25:05,907
+Sen bu 6. layer'ı, sadece masklerin 6. layer'ını, yani bütün şuraları 1 yaptıracaksın, hücreleri 1 yaptıracaksın, background'ı 0 yaptıracaksın. Bunu bir oluşturacaksın önce. Bunları yaptırdın ya, bunları yaptırdıktan sonra belki bu bulduğun hücrelerin çevresinde sınıflar...
+
+98
+00:25:07,124 --> 00:25:17,624
+Yaptırılabilir belki. Daha sonra mesela ikinci aşamasında bunun, hani buldun diyelim, buldun diyelim veya bunların çevresinde şey alacaksın, ne derler?
+
+99
+00:25:18,403 --> 00:25:28,624
+Peçler alacaksın. Aynı ilk başta şeyin yaptığı gibi, ne derler? [öğrenci]'nın yaptığı gibi. Bunların karşılığında...
+
+100
+00:25:29,364 --> 00:25:54,704
+Grand Truth'larını da oluşturacaksın. Sonra bunun geleceksin. İki Grand Truth'un oluşacaksın. Bunların boyutunda bir şeyler yapılabilir belki. Ama önce şunu yönet. Ondan sonra bizim bir tane şey paylaşmıştım hatırlarsak. Çeşitli derin segmentation metod.
+
+101
+00:25:55,476 --> 00:26:01,956
+[öğrenci], sadece ilk başta ben sana şunu söyleyeyim. Derin segmentasyon yöntemlerini bir uyarla.
+
+102
+00:26:02,856 --> 00:26:08,655
+Tamam hocam. Ben burada yaptığımda herhalde hem segmentation hem de classification işin içine girdiği için orada problem yaşıyorum.
+
+103
+00:26:09,316 --> 00:26:12,056
+Sadece 6. layer ile yapmaya çalışayım ben.
+
+104
+00:26:12,336 --> 00:26:15,076
+6. layer ile sadece segmentation yapacaksın.
+
+105
+00:26:15,516 --> 00:26:16,096
+Tamam hocam.
+
+106
+00:26:17,476 --> 00:26:18,675
+Bunu iyice bir edeceksin.
+
+107
+00:26:18,675 --> 00:26:20,675
+Tabii burada...
+
+108
+00:26:21,715 --> 00:26:37,076
+Ben olsam senin yerinde ilk başta bütün 3 layer, 3 folder'ı da alırım. Hepsini toparlarım. Ondan sonra 5-fold cross-validation yaparım. 5 kere tekrar ettiririm bu olayı.
+
+109
+00:26:38,355 --> 00:26:46,115
+Bir tanesini test yapıyorsun 5-fold'da. Bunu 5 kere tekrarlarım. Ortalama bir accuracy.
+
+110
+00:26:46,867 --> 00:27:01,307
+Oral Ecurisi, F-Measure, Dice Metric, Kappa gibi değerleri çıkarırım. Tamam mı? Sen bir buna bak. Tabii yönet yetmez bizim için. Onu söyleyeyim.
+
+111
+00:27:03,208 --> 00:27:08,387
+Farklı segmentation yöntemlerini de paylaşmıştım ya size dosyayla. Dur bakayım.
+
+112
+00:27:21,715 --> 00:27:31,115
+Şu Image Segment'in using Deep Learning as Survey vardı ya. Onun içerisinde mesela Deep Lab V3.
+
+113
+00:27:33,755 --> 00:27:34,536
+Şurada.
+
+114
+00:27:38,483 --> 00:27:39,623
+Neleri denem?
+
+115
+00:27:46,963 --> 00:27:55,163
+Mesela Multiscale Pyramid Networks'u dene, RCNN'i dene.
+
+116
+00:27:58,644 --> 00:28:04,104
+Deep Lab, V3 veya V4'ü, V3 Plus veya V4'ü dene.
+
+117
+00:28:07,124 --> 00:28:10,443
+Attention Based modellerden bir tane bul, onu dene.
+
+118
+00:28:12,144 --> 00:28:17,064
+Ve de Generative Modelsen, Adversarial Training. Buna da bir bakabilirsin, tamam mı?
+
+119
+00:28:17,443 --> 00:28:18,104
+Tamam hocam.
+
+120
+00:28:19,584 --> 00:28:20,423
+Şimdi bunlar.
+
+121
+00:28:26,067 --> 00:28:27,748
+Tamam mı [öğrenci]? Başka soru var mıydı?
+
+122
+00:28:27,748 --> 00:28:31,127
+Yok hocam, not aldım. Anlaşıldı. Ben deneyeceğim.
+
+123
+00:28:31,288 --> 00:28:34,748
+Tamamdır. Yani segmentation işiyse...
+
+124
+00:28:36,339 --> 00:28:48,420
+Zaten UNED'le, SEGNET'le normal lisans öğrencileri de şu anda aynı dataset ile yapabiliyorlar. Senin bunun üstüne çıkman lazım. Yani iyi bir şeyler çıkarabilmen lazım ortaya. Anlaştık mı?
+
+125
+00:28:48,799 --> 00:28:49,379
+Tamam hocam.
+
+126
+00:28:49,379 --> 00:29:03,480
+Yani bu dönem mesela UNED'le falan çıkardığı arkadaşlar aynı dataset ile lisansdaki öğrenci. Senin birkaç tane çeşit kaliteli en son model segment işin yöntemlerini uyarlayabilmen lazım.
+
+127
+00:29:04,564 --> 00:29:10,764
+Tamam. Şimdi sırada [öğrenci] var. Merhaba hocam.
+
+128
+00:29:10,784 --> 00:29:16,964
+Bir de edeyelim arkadaşlar. Bu arada hızlandıralım çalışmaları. İyice final haftalarına doğru geldik çünkü.
+
+129
+00:29:20,692 --> 00:29:36,711
+Şimdi hocam öncelikle bana geçen haftalarda şey geçen haftalarda şey yapmıştık. Resnet ve ResUnet karışımı bir şeyle sonuç elde etmiştik. Şöyle. Fakat siz demiştiniz ki işte Wnet'e bir bak. Bir de şey yapalım demiştik.
+
+130
+00:29:37,971 --> 00:29:55,571
+Atıyorum, burada kullanılmayan katmanlar var. Onları ayıklayalım demiştik. İlk önce ondan bahsettim. Onları ayıkladım. Fakat iki hem UNET'te hem RESNET'te şey düştü, ECURSE düştü ve daha fazla bölge almaya başladı. Böyle bir şey oldu. Neredeydi? Şurada gösterebilirim sanırım.
+
+131
+00:30:05,844 --> 00:30:26,563
+Herhalde silinmiş ama işte dediğim gibi öyle bir şey olmuş oldu. Sonra Wnet'i bayağı bir çalıştırmaya çalıştım. Ondan sonra bir şekilde dün akşam başardım. Çalışmama sebebi bu genelde ya Grayscale ya da 3 kanallı çalışıyordu. Önce Wnet'ten biraz bahsedeyim. Wnet'in şeyi bu şekilde.
+
+132
+00:30:28,403 --> 00:30:46,864
+Algoritması. Dolayısıyla VGG19 kullandığı ve VGG19 şeyde TensorFlow'da tanımlı şekli olduğu için 3 kanallı veri aldığı için ve benim verim 4-5 kanallı olduğu için orada bir çakışma oldu.
+
+133
+00:30:50,355 --> 00:31:00,016
+Bir şekilde düzenlenmiş bir VGG19 kullanıp çalıştırmayı başardım. Ama ondan sonra da şu an predik yaparken bir problemim var.
+
+134
+00:31:01,516 --> 00:31:05,836
+VGG19'un yerine başka mimariler de kullanabilirsin değil mi?
+
+135
+00:31:05,836 --> 00:31:17,655
+Evet, Inception V3 denemeye çalıştım. Bir de Resnet 50'yi de çalıştım. Ama önce dedim ki VGG19 sonuçta başkası çalıştırmış. Ben de çalıştırırım. Ona inat edip biraz ona zaman harcadım.
+
+136
+00:31:18,036 --> 00:31:27,895
+Ama evet, şurada, ha burada silmiştim gerçi ama şeyde var. Şurada yedekteki dosyamda Inception V3'de ResNet'in dosyaları var.
+
+137
+00:31:28,556 --> 00:31:35,895
+Tamam, onları da deneyebilirsin. Onların daha iyi sonuç vereceğine de eminim ben. Şimdi sen bir sonuç elde edebiliyor musun sonuçta?
+
+138
+00:31:38,720 --> 00:31:52,519
+Teknik olarak sonuç kısmında sıkıntılar var. Ya veriyi alış şeklinde bir sıkıntı var ya da yanlış bir kanal kullanıyorum herhalde eğitim yaparken.
+
+139
+00:31:53,044 --> 00:31:55,624
+O zaman sen debugging için süre mi istiyorsun?
+
+140
+00:31:56,163 --> 00:32:01,703
+Evet, biraz. Ya da farklı bir yöntem aklınıza geliyorsa Double Unet'ten başka ona da bir bakabilirim.
+
+141
+00:32:01,703 --> 00:32:05,344
+Double Unet, sonuçta segmentation yapmıyor musun sen Double Unet'te falan?
+
+142
+00:32:05,884 --> 00:32:10,523
+Bak demin sana açtığım derin öğrenmeyle ilgili segmentation yöntemleri vardı. [öğrenci]'e söyledim.
+
+143
+00:32:10,523 --> 00:32:17,203
+Sen de onları kullanabilirsin içlerinden. Özellikle multi-scale olanları, attention-based olanları.
+
+144
+00:32:17,844 --> 00:32:19,063
+Onlara bir baksana.
+
+145
+00:32:19,604 --> 00:32:20,163
+Tamam hocam.
+
+146
+00:32:20,624 --> 00:32:22,423
+Seni sınırlayan hiçbir şey yok yani.
+
+147
+00:32:22,903 --> 00:32:25,844
+W-Yunet'e sıkışıp kalma diye dedim mesela.
+
+148
+00:32:25,903 --> 00:32:26,723
+Yünet demiştin.
+
+149
+00:32:27,443 --> 00:32:29,983
+W-Yunet'i yapamıyorsan geç öbürkülere o zaman.
+
+150
+00:32:30,403 --> 00:32:34,183
+Anladım. Ben onu dediniz diye onu başarıp geleyim dedim.
+
+151
+00:32:34,943 --> 00:32:36,043
+Tamam. Tamamdır.
+
+152
+00:32:36,443 --> 00:32:39,344
+Sen direkt diğer diğerinin öğrenme yöntemlerine bak.
+
+153
+00:32:39,443 --> 00:32:41,703
+Aynı [öğrenci]'e söylediklerim senin için de geçerli.
+
+154
+00:32:41,763 --> 00:32:42,923
+Onlarla bir dene bakalım.
+
+155
+00:32:43,443 --> 00:32:43,983
+Tamam hocam.
+
+156
+00:32:44,743 --> 00:32:45,003
+Tamam.
+
+157
+00:32:47,220 --> 00:33:01,920
+Başka var mı arkadaşımız? Başka yok herhalde. Bitirdiğiniz gibi konuşabiliriz. Mail atın. Hocam müsaitsiniz yapalım. Şöyle bir hızlı bir 5-10 dakikalık akşamları veya uygun gün içerisinde uygun bir zamanda. Sen de evden çalışıyorsun değil mi [öğrenci]?
+
+158
+00:33:03,839 --> 00:33:04,440
+Evet.
+
+159
+00:33:05,359 --> 00:33:05,720
+Tamam.
+
+160
+00:33:05,900 --> 00:33:07,759
+Ben çalışmıyorum da evdeyim.
+
+161
+00:33:08,096 --> 00:33:18,875
+Tamamdır. Yani bitirdiğiniz zaman mail atın, yine görüşürüz. [öğrenci] sen geçenlerde mail atmıştın, çok bu aralar yoğun dönemedim. Başka var mı senin gösterdiğin?
+
+162
+00:33:20,135 --> 00:33:24,756
+Yok hocam, bu ilerlemeye gösterecektim. Yani sorun olmaz, buradan devam ederim ben.
+
+163
+00:33:25,175 --> 00:33:30,115
+Tamamdır. O zaman siz devam edin, bir sorun olduğunda yine haberleşiriz.
+
+164
+00:33:31,028 --> 00:33:39,508
+Bu arada bir de elde ettiğim sonuçlar da yine hatalı ama şu şekildeydi. Modeli 100 epokta falan çalıştığım.
+
+165
+00:33:39,508 --> 00:33:45,468
+Yani sonuçta biz buradaki tümörlü bölgeyi segment edeceğiz. Bizim temel problemimiz segmentation değil mi?
+
+166
+00:33:45,847 --> 00:33:46,067
+Tamam.
+
+167
+00:33:46,627 --> 00:33:48,887
+Tamam, buna göre o zaman ilerleyeceğiz diyelim.
+
+168
+00:33:49,067 --> 00:33:49,627
+Tamam hocam.
+
+169
+00:33:50,268 --> 00:33:50,827
+Tamamdır.
+
+170
+00:33:53,087 --> 00:33:56,627
+[öğrenci] kolay gelsin arkadaşlar hepinize. Kendinize çok iyi bakın.
+
+171
+00:33:57,587 --> 00:33:58,167
+Siz de hocam.
+
+172
+00:33:58,644 --> 00:33:59,403
+Sağ olun hocam.
+
+173
+00:33:59,884 --> 00:34:01,223
+Yine görüşürüz o zaman.
+
+174
+00:34:04,948 --> 00:34:12,728
+Hepinize iyi günler. Belki hafta sonu filan eğer ilerlerseniz hafta sonu bir saat beliririz. Bir yarım saatte filan herkesinkine hızlı bir değiniriz olmadı.
+
+175
+00:34:15,087 --> 00:34:17,467
+Tamam. Kolay gelsin. Görüşürüz.

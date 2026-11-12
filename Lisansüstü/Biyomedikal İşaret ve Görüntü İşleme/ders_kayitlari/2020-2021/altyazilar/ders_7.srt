@@ -1,0 +1,2723 @@
+1
+00:03:23,443 --> 00:03:24,563
+Günaydın arkadaşlar.
+
+2
+00:03:31,156 --> 00:03:32,276
+Günaydın hocam.
+
+3
+00:03:33,336 --> 00:03:34,896
+Merhabalar, sesler geliyor.
+
+4
+00:03:41,907 --> 00:03:43,907
+Tamamdır.
+
+5
+00:03:49,268 --> 00:03:59,027
+Şimdi biraz daha bekleyeceğiz. 10-12 gece gibi dersimize başlarız arkadaşlar. Ben bir yandan dersin slide'larını açayım.
+
+6
+00:04:32,468 --> 00:04:37,708
+Arkadaşlar, 12-13 kez çekip dersimize başlarız. Bir diğer arkadaşlar da gelsinler.
+
+7
+00:10:57,299 --> 00:11:03,299
+Tekrar günaydın arkadaşlar. Ses geliyor mu?
+
+8
+00:11:04,679 --> 00:11:05,719
+Günaydın Hicam, evet geliyor.
+
+9
+00:11:05,719 --> 00:11:11,899
+Tamamdır. Şimdi ödevlerimize bakalım.
+
+10
+00:11:27,443 --> 00:11:30,203
+Soldaki hikaye neden salgı etmiyor?
+
+11
+00:11:32,603 --> 00:11:35,003
+Ayartayım derslerinin altında.
+
+12
+00:11:41,076 --> 00:11:44,908
+Dersler, Sınavlar, Kontrol Pöneli.
+
+13
+00:11:54,964 --> 00:11:56,064
+Gidersin.
+
+14
+00:12:01,107 --> 00:12:18,587
+Bu hafta hangisi vardı? 11.11 demiştik. Bu haftaya tanımladığımız yoktu herhalde ödev. Değil mi? Önümüzdeki haftaya bir tane vardı. Bir özet dosyası söylemiştik. Onu hangisi?
+
+15
+00:12:19,587 --> 00:12:21,407
+Bu hafta ödev 3 vardı hocam.
+
+16
+00:12:21,407 --> 00:12:26,587
+Ödev 3 vardı. Evet. Ben yine bir gösteriyorum böyle ki.
+
+17
+00:12:26,964 --> 00:12:33,884
+Henüz gönderilmeyen ve boşta olan ödevler bir gözüksün şeklinde.
+
+18
+00:12:33,884 --> 00:12:43,204
+Şu açıklama kısmını yazmayın arkadaşlar. Olabildiğince sadece açıklamasına ödev 3 falan yazsanız yeterli.
+
+19
+00:12:43,564 --> 00:12:47,464
+Uzun açıklamalar yapmayın. Ekranda bir tam olarak frame'ler oturmuyor.
+
+20
+00:12:48,784 --> 00:12:50,384
+[öğrenci]'ınki daha.
+
+21
+00:12:51,059 --> 00:12:58,559
+[öğrenci]'ünki, [öğrenci]'ınki şu anda sabit edilmemiş. Aramızda mı arkadaşlarımız?
+
+22
+00:13:02,644 --> 00:13:04,283
+Ben buradayım hocam.
+
+23
+00:13:04,984 --> 00:13:07,683
+Tamamdır. Henüz submit edilmemiş onlar.
+
+24
+00:13:08,024 --> 00:13:09,764
+Bugün submit edeceğim.
+
+25
+00:13:10,244 --> 00:13:11,624
+Tamamdır, tamamdır.
+
+26
+00:13:12,663 --> 00:13:17,624
+Şimdi geçen hafta en son şeylerde kalmıştık hatırlarsanız.
+
+27
+00:13:19,004 --> 00:13:21,624
+Sayısal imgede bu zamsal çözünürlük.
+
+28
+00:13:22,624 --> 00:13:24,443
+İki tane çözünürlüğümüz vardı.
+
+29
+00:13:25,443 --> 00:13:26,624
+Alan başına düşen...
+
+30
+00:13:27,216 --> 00:13:49,635
+Piksel sayısı bizim uzamsal çözünürlüğümüzü belirliyordu. Aynı zamanda belki Quantization'da bizim uzamsal çözünürlüğümüzü etki ediyor. Çünkü kullandığımız bit sayısıyla beraber ifade ettiğimiz gri seviyesi sayısı da etkileniyordu arkadaşlar.
+
+31
+00:13:55,379 --> 00:13:58,720
+[öğrenci] açtım. Şöyle açıyorum.
+
+32
+00:14:09,427 --> 00:14:15,668
+Görüntü İşleme ile alakalı kısımları paylaşmış mıydım sizle arkadaşlar?
+
+33
+00:14:22,548 --> 00:14:25,967
+Örneğe ilgili bir kitabımız vardı. Onu paylaşmış mıydım?
+
+34
+00:14:28,887 --> 00:14:32,207
+Eski arkadaşların notlarından devam edelim.
+
+35
+00:14:33,887 --> 00:14:39,508
+Şimdi önümüzdeki hafta sınav haftası diye gözüküyor arkadaşlar.
+
+36
+00:14:41,187 --> 00:14:49,227
+Yani 8. hafta oluyor. 23'ü ile 27'si arası sınav haftası olarak gözüküyor.
+
+37
+00:14:49,716 --> 00:14:57,975
+Bu sınav haftasında arkadaşlar ders tanımlayacaklar mı onu bilmiyorum. Fen Bilim Enstitü daha çok sınavları tanımlıyorlar.
+
+38
+00:14:57,975 --> 00:15:09,796
+Ders tanımlanmazsa önümüzdeki hafta dersimiz olmayacak büyük ihtimalle ama ders tanımlanırsa aynı şekilde 24'ünde yine online olabilirsiniz.
+
+39
+00:15:10,596 --> 00:15:16,436
+Eğer tanımlanmaz ise birinde bir aralıktan itibaren devam edeceğiz arkadaşlar.
+
+40
+00:15:17,440 --> 00:15:28,204
+Ben önümüzdeki hafta sınavları da, daha doğrusu proje konularını da yavaş yavaş oturtturmak istiyorum. Bu hafta sizlere...
+
+41
+00:15:28,692 --> 00:15:40,011
+Ön çalışmanız için, makine öğrenmesi yöntemleri, biyomedikal verilere nasıl uyarlanır konusunda bir tane de ödev vereceğim arkadaşlar.
+
+42
+00:15:40,851 --> 00:15:46,951
+Ki en azından bu 23-27 hasis haftasında bunu okursunuz. Aynı şeyleri konuşalım.
+
+43
+00:15:47,591 --> 00:15:54,692
+Birinde de arkadaşlar artık proje konularını dağıtır. Ondan sonra birebir görüşmelerimize başlarız arkadaşlar.
+
+44
+00:15:56,083 --> 00:15:57,884
+Sizlerin sorusu var mıydı arkadaşlar?
+
+45
+00:16:02,611 --> 00:16:06,451
+Hocam, proje sunumları kaç dakika sürecek kişi başı?
+
+46
+00:16:07,652 --> 00:16:10,432
+Kişi başı, önce şöyle bir şey yapacağız arkadaşlar.
+
+47
+00:16:14,131 --> 00:16:24,371
+Ben size proje konularını atacağım. Önce proje konuları belirlenecek.
+
+48
+00:16:25,711 --> 00:16:34,611
+Şimdi katılan miktarı önemli burada arkadaşlar. Normalde dersimizde 20 kişi kadar gözüküyordu herhalde hatırladığım kadarıyla.
+
+49
+00:16:34,611 --> 00:16:40,231
+16 veya 20 ikisinden biri. Eğer 16 kişinin tamamı gelirse.
+
+50
+00:16:40,788 --> 00:16:57,608
+İkişer ikişer proje konularını atlayacağım. Eğer bu dersteki gibi sekiz kişi gelmişse, sekiz kişiye ben proje konusunu atarım. Herkes ayrı çalışmaya başlar.
+
+51
+00:17:01,011 --> 00:17:26,851
+Derse katılım gösteren arkadaşlarınkini beliriz. Bir kısım arkadaşlarımızın da zaten [öğrenci]'in, [öğrenci]'nın, ondan sonra [öğrenci] arkadaşımızın şu anda burada değil zannedersem ama zaten yüksek lisans da almış oldukları proje konularına benzer içerikleri üretmesini bekleyeceğiz. Daha doğrusu o konuda konu geliştirmelerini bekleyeceğiz.
+
+52
+00:17:27,380 --> 00:17:32,500
+Onun dışındaki arkadaşlara ben önümüzdeki hafta içerisinde hazırlayacağım konuları.
+
+53
+00:17:32,560 --> 00:17:49,240
+Bir sonraki makine öğrenmesiyle alakalı kısmı anlatırken de nasıl yapılacağını, hangi proje konularının hangi yöntemlerle çözümlenebileceği üzerine önce bir literatür, proje konuları belirlendikten sonra kişilere atanacak proje konuları.
+
+54
+00:17:55,763 --> 00:18:06,083
+Veri Setleri ve de Introduction veya Literatür Araştırması yapılacak.
+
+55
+00:18:07,083 --> 00:18:15,043
+Burada hem konu üzerinde literatür araştırması yapılacak hem de kullanılacak yöntem üzerinde araştırma yapılacak.
+
+56
+00:18:15,823 --> 00:18:18,763
+Ondan sonraki haftalarda arkadaşlar, aynı ders saatimizde...
+
+57
+00:18:20,692 --> 00:18:43,991
+Zaman çizergesi çizeriz. 20 dakikalık slotlar halinde şöyle herkes kendi gelir konusunu anlatır veya herkes yaklaşık kendi anlatacağı vakitte bağlanır ve de konusunda hangi ilerlemelerini göstereceğine dair ufak sunumlar yapar ve de orada
+
+58
+00:18:44,564 --> 00:18:51,264
+O sunumlar sırasında nelere hız verilmesi gerektiği, neler yapılması gerektiğini anlatacağız arkadaşlar.
+
+59
+00:18:53,044 --> 00:18:59,644
+Artık ondan sonrası orta çaplı bir dönem projesine dönecek.
+
+60
+00:18:59,644 --> 00:19:06,144
+En sonunda bu dönem projesinden bizim bildirilerimiz hazırlanacak arkadaşlar.
+
+61
+00:19:06,764 --> 00:19:08,963
+Bu bildirilere göre ne yapılacak?
+
+62
+00:19:12,147 --> 00:19:26,768
+Final notumuz belirlenecek. Bir de final haftası bu anlattığımız teorik kısımlarla alakalı bir sınavımız olacak. Bu sınavın arkasının asıl yapacağımız şey bizim projelerin değerlendirilmesi.
+
+63
+00:19:27,604 --> 00:19:36,463
+Projelerde ekstür alabilmek açısından herkesi bütünlemeye bırakıp, yani iyi de hazırlası, kötü de olursa bütünlemeye bırakırız.
+
+64
+00:19:36,804 --> 00:19:39,943
+Veya finale tam yetiştirmiş arkadaşlarım geçer belki.
+
+65
+00:19:40,604 --> 00:19:45,903
+Ama bütünleme sonuna kadar içerik geliştirmeye devam edeceğiz arkadaşlar.
+
+66
+00:19:48,644 --> 00:19:49,604
+Anlaşıldı mı?
+
+67
+00:19:52,344 --> 00:19:53,483
+Anladım hocam.
+
+68
+00:19:53,971 --> 00:20:04,852
+Tamamdır. Şimdi tabii ki bu proje konularında görüntü işleme artı makine öğrenmesi konularına yöneleceğiz arkadaşlar.
+
+69
+00:20:05,932 --> 00:20:10,892
+En temelde görüntü işlemiyle ilgili temel bilgileri bu hafta bitirmeyi düşünüyorum.
+
+70
+00:20:10,892 --> 00:20:14,892
+Temel kullanabileceğiniz bilgileri...
+
+71
+00:20:15,316 --> 00:20:27,115
+Bu konuda da okumalar yapmanızı istiyorum. Bununla alakalı güzel paylaşımlar bakalım. Elimizde görüntü işleme kitapları var mı?
+
+72
+00:20:27,396 --> 00:20:34,175
+Görüntü işleme kitapları internetten de bulabilirsiniz veya güzel dersler var. Onların üzerinden devam edebilirsiniz.
+
+73
+00:20:35,635 --> 00:20:40,516
+Şimdi sonuçta elimizde imgelerimiz var.
+
+74
+00:20:40,912 --> 00:20:45,831
+İmgelerin tutulduğu çok farklı formatlar var. Hepinizin karşılaştığı gibi.
+
+75
+00:20:45,831 --> 00:21:04,831
+Burada imge boyutunu belirleyen uzamsal çözünürlük ve quantization veya nicemleme diyoruz.
+
+76
+00:21:09,523 --> 00:21:20,523
+Kayıpsız olmak üzere çeşitli dosya formatlarında saklandığında kayıplı kayıpsız olarak sıkıştırılarak saklanabiliyor arkadaşlar.
+
+77
+00:21:20,523 --> 00:21:28,523
+En basitinden bir gris seviye gris scale bir görüntümüz olsun. 8 bit ile...
+
+78
+00:21:29,236 --> 00:21:37,175
+örnekle 8 bit ile beraber kuantize edilmiş bit derinliği yasak. Buna bit derinliği de deniyor arkadaşlar kuantize işine.
+
+79
+00:21:37,436 --> 00:21:40,756
+200 çarpı 200 piksel tuttuğunu düşünelim.
+
+80
+00:21:41,016 --> 00:21:54,836
+200 çarpı 200 pikselden yaklaşık 40 bin piksel bulunuyor. Her bir de 8 bit ile kuantize edildiği için 8 bit de 1 byte düşünecek olursak yaklaşık 40 bin byte.
+
+81
+00:21:55,155 --> 00:22:04,435
+O da 40.000 byte'ı 1024'e böldüğümüzde 39 kilobyte bellekte yer kaplayacağını söyleyebiliriz.
+
+82
+00:22:04,996 --> 00:22:21,576
+Peki, aynı şekilde bu gri seviye değil de renkli bir görüntü olsaydı, bir matris için 39 kilobyte olursa, 3 tanesi için 3x39 kilobyte tutacağını söyleyebiliriz.
+
+83
+00:22:22,548 --> 00:22:28,107
+Tabi bu herhangi bir sıkıştırma algoritması kullanılmaması durumunda geçerli arkadaşlar.
+
+84
+00:22:43,087 --> 00:22:54,427
+Daha doğrusu dosya quantization tiplerini okuyabilme, information alabilme ile alakalı çok fazla komut var arkadaşlar.
+
+85
+00:22:54,427 --> 00:23:01,847
+Veya Resize, ondan sonra buradaki bir Reshape.
+
+86
+00:23:04,372 --> 00:23:23,052
+Çeşitli komutlar var. Buradaki kısımları size bırakıyorum. En temeldeki dosya tipimiz raw. Demin gösterdiğimiz gibi herhangi bir sıkıştırma yapılmadan Quantization ile beraber arka arkaya bitlerin sıralanmasıyla raw tipi oluşturuluyor.
+
+87
+00:23:23,284 --> 00:23:50,344
+Farklı RAW tipleri de var. Örneğin, pikselleri yukarıdan aşağıya mı arka arkaya dosyada dizeceğiz veya sağdan sola mı dizeceğiz veya renkli bir resim ise bunu önce bir RGB dediğimizde arka arkaya şu şekilde mi sunacağız yoksa önce R'ları tarayacağız, ondan sonra mı G'ye geçeceğiz gibi çeşitli tipler de oluşuyor.
+
+88
+00:23:52,756 --> 00:24:12,076
+RGB resimlerin, RGB bileşenlerini saklayabileceğimiz gibi bazı dosya tüpleri de YUV dediğimiz önce ışıklılık bilgisini daha sonra da renk bileşenlerini ayrıca dönüştürüp saklayabiliyor.
+
+89
+00:24:12,655 --> 00:24:17,296
+Şimdi renk bileşenleri ve ışıklılık kavramı nedir? Biraz buna bakalım.
+
+90
+00:24:18,003 --> 00:24:24,503
+Biz baktığımızda arkadaşlar en temelde şöyle açalım.
+
+91
+00:24:26,963 --> 00:24:43,563
+Bir koordinat dizleme gibi düşüncek olursak renk uzaylarını en temelde R, G ve B şeklinde düşüncek olursak buradaki herhangi bir renkten bahsedelim.
+
+92
+00:24:44,915 --> 00:24:48,056
+Şöyle baktığımızda, şöyle yeşilliği göstereyim.
+
+93
+00:24:51,443 --> 00:24:54,043
+Şu noktada bir bileşen olsun.
+
+94
+00:24:58,451 --> 00:25:07,751
+Böyle bir görüntü de uzayda şu noktadaki görüntü G'de almış olduğu değer burada veya yeşille çizeyim onu.
+
+95
+00:25:07,751 --> 00:25:16,331
+G'de almış olduğu değer burada. Red'de almış olduğu değer burada. Ve de Blue'de almış olduğu değer ise burada arkadaşlar.
+
+96
+00:25:17,672 --> 00:25:21,951
+Şimdi, yeşil de çizik ama iyi orada.
+
+97
+00:25:25,715 --> 00:25:41,355
+Renk bileşeninin, yani şuradaki renk bileşeninin merkeze olan uzaklığı, şu noktadaki bizim parlaklık seviyemizi, yani y değerimizi belirliyor.
+
+98
+00:25:49,236 --> 00:26:02,496
+Karteziyen koordinatlarda AGB değerimiz tutulabiliyor. Bu karteziyen koordinatlarda tutulan değerin şöyle bir iz düşümü var.
+
+99
+00:26:15,892 --> 00:26:30,492
+Başka bir şekilde ifade etmişizsek, bir, şuradaki merkeze olan uzaklık, R, pardon ona Y diyelim, Y diyelim, Y şeklinde bir merkeze olan uzaklığını bahsederiz. Polar koordinatlar cinsinden.
+
+100
+00:26:30,492 --> 00:26:41,492
+İki, onun örneğin alttaki BG, BG'deki açısını, Fi açısını yazabiliriz.
+
+101
+00:26:42,451 --> 00:26:48,172
+Aynı noktaya ulaşabilmek için aynı zamanda bir açı daha belirlememiz lazım.
+
+102
+00:26:48,172 --> 00:26:52,271
+Bir de şuradaki açıyı belirlersek buna da teta diyelim.
+
+103
+00:26:53,331 --> 00:27:04,172
+Teta dediğimiz zaman iki tane açı ve bir tane de parlaklık seviyesi.
+
+104
+00:27:04,756 --> 00:27:29,155
+3 bileşenliğine ifade edebiliriz. Bu parlaklık seviyesi arkadaşlar çeşitli renk dönüşüm uzaylarında I, R, I, Y gibi değerlerle parlaklığın yani direkt merkezden noktaya olan uzaklık olarak tanımlanabiliyor.
+
+105
+00:27:29,584 --> 00:27:41,084
+Y'yi şöyle tanımlayabiliriz. Y eşittir. R kare artı G kare artı B kare şeklinde tanımlayabiliriz.
+
+106
+00:27:41,084 --> 00:27:56,483
+Yani merkeze olan uzaklığı hesaplayabilmek için. Geri kalan bizim fi ve tetamız ise renk bileşenleri.
+
+107
+00:28:00,180 --> 00:28:12,180
+Çünkü biz aslında şu merkeze olan uzaklıktan da sonra merkeze olan uzaklığın haricinde sadece elimizde bu değer olsa sadece parlaklığını bilebiliyoruz.
+
+108
+00:28:23,635 --> 00:28:30,336
+Teta değerlerine ihtiyaç duyuyoruz. O yüzden bunlara renk bileşenleri adı veriliyor arkadaşlar.
+
+109
+00:28:32,556 --> 00:28:42,336
+Aynı burada da Y parlaklık değerini gösterirken U ve V ise renk bileşenleri olarak adlandırılmış.
+
+110
+00:28:43,412 --> 00:29:02,251
+Farklı dosya tiplerinde, renk uzaylarında bu Y, U, V yerine farklı adlılar vereceğiz. Örneğin, LAB uzayı var. L, luminans veya parlaklık. A ve B ise krominans olarak geçiyor arkadaşlar.
+
+111
+00:29:11,316 --> 00:29:29,476
+Görüntüyü anlayabiliyoruz. Renk uzayları ise ayrı yerlerde tutuyor. Tabi burada boyutu düşük verilmiş. Hepsi bir arada gözüksün diye ama bu Y, U, V değerleri de aynı boyutta oluyor. Tabi renk uzaylarındaki değişimden de yaklaşık olarak ne olduğunu çıkarabiliyoruz arkadaşlar.
+
+112
+00:29:37,715 --> 00:30:00,000
+Piksellerin değerlerinin yazılı bir kısım var. Bunun haricinde header file denilen, işte buradaki bmp dosya tüpünü tutan, boyutları tutan, ondan sonra belki piksel derinliğini tutan, ondan sonra dpi değerleri.
+
+113
+00:30:00,000 --> 00:30:11,900
+Bunların da açılıp bir yere bastırılması lazım. Bu tarz bilgilerin tutulduğu veya öncelikli olarak ne tipte tarandığın resmin gibi bilgiler bulunuyor burada.
+
+114
+00:30:11,900 --> 00:30:25,820
+Veya içerisinde aynı zamanda check sum yapabileceğimiz bilgilerin de bulunduğu bir header kısmı bulunuyor. Bu header kısmından sonra asıl data kısımları başlıyor arkadaşlar.
+
+115
+00:30:27,443 --> 00:30:54,604
+Örneğin, MATLAB'te bütün dosya tiplerini okuyabileceğimiz Image Read komutu var. Bütün dosya tiplerini açabiliyor. Onun dışında TIF, JPEG gibi ondan sonra GIF, PNG, HDP, PCX her firmanın tabii ki kendine ait çeşitli geliştirmiş olduğu renk formatları bulunabiliyor arkadaşlar.
+
+116
+00:30:56,948 --> 00:31:09,288
+Evet, en temel yapılan işlemlerden devam edelim. Şimdi görüntü deyince en basitinden bir matris yapısı düşüneceğiz arkadaşlar.
+
+117
+00:31:09,288 --> 00:31:19,008
+Bir matris yapısı düşündüğümüzde U ve V yönünde, eğer şurayı 0-0 yönü belirsek, 0'dan yukarı doğru satır sayısı artacak.
+
+118
+00:31:20,884 --> 00:31:34,443
+Yine sağa doğru ilerlediğimizde sütün sayısı artacak. Burada basitçe imgeyi ters çevirmek istediğimizde en basitinden şu pikselle ikinci bir aynı boyutta dosya hazırlıyoruz.
+
+119
+00:31:34,443 --> 00:31:45,963
+00'ı en sona veya buradakini en başa alıp çevirdiğimizde ters çevrilmiş imge oluşuyor. Veya tam tersi
+
+120
+00:31:46,195 --> 00:31:50,195
+Aynalamak istersek görüntüyse yine şuradaki...
+
+121
+00:31:50,579 --> 00:31:59,500
+Piksellerin yerini değiştirdiğimizde bu sefer de bizim u eksenine göre aynalanmış görüntümüzü de oluşturabiliriz arkadaşlar.
+
+122
+00:32:00,179 --> 00:32:14,579
+Burada ikisini birden yapmış anladığım kadarıyla. Hem yerlerini değiştirmiş, bunu buraya geçirmiş gibi sadece ikinci bir dosya oluşturup orada piksellerin yerini değiştiriyoruz.
+
+123
+00:32:14,579 --> 00:32:16,619
+Burada da aynalamadan bahsetmiştim.
+
+124
+00:32:18,579 --> 00:32:29,579
+Yerlerini değiştirmek lazım. Bunun dışında, standart yerlerini değiştirmek için görüntüyü döndürme.
+
+125
+00:32:29,579 --> 00:32:37,579
+Bazen mesela Biyomedikal bazı imajlarda görüntü kaymış oluyor.
+
+126
+00:32:38,771 --> 00:32:59,771
+Yani burada mesela göğüs kafesi resmi var veya MR resmi var. Bunu öncelikle bir çevirmek gerekiyor. Burada da Rotating işlemi yapılabiliyor. Rotating yapıldığında bazı piksellerin değerlerinin tekrar şöyle oturtulabilmesi için, şöyle tam olarak görüntünün oturtulabilmesi için.
+
+127
+00:33:00,144 --> 00:33:21,323
+Bazı piksel değerleri, örneğin tam bir yerine otururken bazı piksel değerleri ara değerlerde kalıyor veya tam oyuşmuyor boyutlar. Burada çeşitli enterpolasyon yöntemleri, yani ara değerleri bulunması gerekiyor. Yani yeni piksel değerlerin hangi ara değerleme? Ara değerleme, interpolasyon.
+
+128
+00:33:24,627 --> 00:33:42,627
+Bir yerde bir piksel değeri atamamız lazım. Tam uyuşmadığı için boyutlar. Buna interpolasyon deniyor. Örneğin, bir önceki pikselin değeri A, bir sonraki pikselin değeri bilmiyor, bir tek pikselin B diyelim.
+
+129
+00:33:42,627 --> 00:33:51,627
+Düzeltildiğinde ara bir piksel boşluğu kaldı. Buna ne yapabiliriz örneğin? A artı B bölü 2 atamak örneğin ne yapılıyor?
+
+130
+00:33:52,115 --> 00:34:06,176
+Ortalamasını almak demek veya buna daha yakın hangi değeri atıracaksak veya kubik, bilineer gibi çeşitli farklı polinomsal yöntemlerde kullanılabiliyor.
+
+131
+00:34:07,895 --> 00:34:16,076
+Görüntü öteleme dediğimizde, tabi burada görüntüyü ötelediğimizde yeni gelen piksel yerine ne ped edeceğiz?
+
+132
+00:34:17,155 --> 00:34:17,596
+Örneğin.
+
+133
+00:34:18,420 --> 00:34:28,420
+Bu değerleri yerinde bırakıp görüntüyü marketeceğiz veya burada olduğu gibi sıfırlarlama dolduracağız. Buna karar vermek lazım.
+
+134
+00:34:29,420 --> 00:34:39,920
+Boyut değişikliği, burada Reshape komutu, Medtap'te kullanılabilir. Resize gibi komutlar kullanılabilir.
+
+135
+00:34:46,291 --> 00:34:53,291
+Bir resim haline getiriyoruz. En basitinden yapacağımız işler, piksellerin double'lanmasıdır.
+
+136
+00:34:53,291 --> 00:34:56,143
+Ve içinde şurayı double'ladık diyelim.
+
+137
+00:34:56,143 --> 00:35:04,143
+Peki bunu büyüttüğümüz zaman, buradaki karesel etki, görüntüde karesel etki çok fazla olacaktır.
+
+138
+00:35:04,663 --> 00:35:11,603
+Yani resmin piksellerinin parlaklık değeri büyüyecek ve çok daha göze çarpılar durumda olacak.
+
+139
+00:35:12,224 --> 00:35:16,043
+Bunu daha iyi yapmanın bir yolu var mı? Var tabii ki.
+
+140
+00:35:16,963 --> 00:35:23,684
+Örneğin A değerini buraya kopyaladık diyelim. B değeri buraya geldi. C değeri buraya geldi. Arada değerler var.
+
+141
+00:35:24,307 --> 00:35:45,307
+Bunu tekrar A yapmak yerine bir önceki ve bir sonraki pikselin ortalamasının buraya yazılması, aynı burada olduğu gibi ortalamasının yazılması veya tam böyle diagonalde gittiğimizde ise buradaki dördünün ortalamasının yazılması arkadaşlar parlaklık geçişlerini daha yumuşak hale getirir.
+
+142
+00:35:45,307 --> 00:35:50,087
+Böylece piksellerdeki kareselleşme etkisini azaltır.
+
+143
+00:35:52,403 --> 00:36:09,043
+Aynı şekilde yakınlaştırma örneği de kullanabilir. Yakınlaştırma dediğimiz zaman, bu sefer de zoom in dediğimizde bu sefer çok piksel sayısından yaklaşıyoruz. Daha aynı benzer alanda, şu benzer alanda daha az piksel görmemiz lazım.
+
+144
+00:36:09,043 --> 00:36:18,844
+Tabi ki burada 4 piksel var. En yapılacak en güzel şey bunların ortalamasının alınıp bir piksel şekline dönüştürmesi oluyor.
+
+145
+00:36:20,947 --> 00:36:37,648
+Burada, Image Resize komutu ile beraber hangi oranların, hangi yöntemlerin kullanabileceği ile alakalı MATLAB'te genellikle Help fonksiyonu veya Python'da o konuyla ilgili Help dosyalarının okuması yararlı olacaktır arkadaşlar.
+
+146
+00:36:38,207 --> 00:36:47,927
+Bunlar temel, hepimizin az çok zaten tahmin edeceği, bulabileceği bilgiler.
+
+147
+00:36:49,523 --> 00:36:59,344
+Evet, Image Posting ile ilgili bu dersi açalım. Şimdi, Image Enhancement.
+
+148
+00:37:05,427 --> 00:37:29,728
+Görüntü Zenginleştirme veya Görüntü Pekiştirme diye geçiyor. Daha önceki derslerde de söylemiştim. Image'in yerine biz daha çok görüntü kullanıyoruz. Bazı hocalar bu görüntü kelimesinin videoyu da kapsadığını düşünüp, image'e sadece imge de diyebiliyor. Bu da aklınızda olsun.
+
+149
+00:37:30,420 --> 00:37:43,920
+İmge pekiştirme temellerinin çeşitli nedenlerden dolayı kullanışsız olan imgenin işlenerek görsel ve işlevsel anlamında daha iyi bir imge edilmesi anlamında kullanılıyor.
+
+150
+00:37:43,920 --> 00:37:49,980
+Örneğin, pozlandırma süresinden dolayı buradaki görüntüde ne olduğu çok anlaşılmıyor.
+
+151
+00:37:50,779 --> 00:37:53,980
+Yani parlaklık değerleri bir yerde.
+
+152
+00:37:54,931 --> 00:38:17,851
+Toparlanmış. Düşük yerlerde toparlanmış. Burada pekiştirmeden sonra biz parlaklıkları tekrar ayarladığımızda daha çok anlaşılır bir hale getirilmiş. Detaylar ortaya çıkmış. Şu düşük kontrastlı bir görüntü yüksek kontrastlı hale getirilmiş.
+
+153
+00:38:21,780 --> 00:38:33,780
+Görüntü Zenginleştirmede yapılacak işlem adımlarından bahsedebiliriz. Örneğin, GXY bizim çıkış resmimiz.
+
+154
+00:38:35,780 --> 00:38:45,780
+FXY'de bir matriz tanımladığı için iki değişkenle beraber görüntü manasında kullanımı, bu da giriş resmimiz.
+
+155
+00:38:45,780 --> 00:38:48,780
+Yani orijinal resmimiz, şu yani.
+
+156
+00:38:49,427 --> 00:39:05,248
+Ben buna B değeri eklediğimde, yani matrisin bütün elemanlarına B eklediğimde, yani şu gözlerdeki bütün elemanların her birine artı B eklediğimde, bu B sıfırdan büyük de olabilir, negatif de olabilir.
+
+157
+00:39:05,248 --> 00:39:14,988
+Genel olarak kullandığımda B sıfırdan büyükse arkadaşlar parlaklık arttırılır. B sıfırdan küçükse, negatif değerde ise.
+
+158
+00:39:15,360 --> 00:39:36,940
+Resim koyulaşmaya başlar. Dikkat edin. Örneğin 8 bitlik bir resim bu. 8 bitlik bir resimde. Minimum değer nedir? 0. Maksimum değer ise 255. Benim değerim şurada yer alsın. Ben buna bir değer eklediğimde bu yukarı da orada gidebilir, aşağı da orada gidebilir.
+
+159
+00:39:39,795 --> 00:39:52,795
+Eğer aşağı doğru gitmesi bu resmi sıfıra doğru parlaklık silmesi düşük piksellere yönelendirici için kararacaktır. Yukarı doğru çıktığında ise parlaklık silmesi artacaktır.
+
+160
+00:39:52,795 --> 00:40:06,795
+Burada dikkat edelim yalnız. Eğer benim piksel değerim örneğin 255 ile 240. Ben buna örneğin 20 eklediğimde 255'i aşacaktır.
+
+161
+00:40:07,923 --> 00:40:31,744
+255'i açtığı zaman en yüksek değer olan 255 alıp parlaklık seviyesi. Dolayısıyla parlaklık seviyesi 255 olacak. Dolayısıyla 240 ile 255 arasındaki her piksel 255 olacağı için renk patlamaları olacaktır. Parlak yerlerin hepsi aynı beyazlığa gelecektir veya aynı durum siyahlıkta da geçerli.
+
+162
+00:40:32,211 --> 00:40:41,552
+Yani örneğin 15 ile 0 arasında eğer bir çıkarma yapıyorsam, eksi 20'lik bir çıkarma yapsam her tarafta kararmalar olabilir.
+
+163
+00:40:42,792 --> 00:40:44,251
+Buna da dikkat edeceğiz arkadaşlar.
+
+164
+00:40:45,632 --> 00:40:51,412
+Peki, çıkış resminizi belli bir skalerle çarparsak ne elde ederiz?
+
+165
+00:40:51,956 --> 00:41:00,155
+Eğer A0'dan büyükse karşıtlık arttırılır. A0'dan küçükse karşıtlık azalır arkadaşlar.
+
+166
+00:41:00,155 --> 00:41:04,235
+Örneğin, orijinal resmimiz burada.
+
+167
+00:41:04,235 --> 00:41:10,636
+Bizim eğer şurada karşıtlık azalmış. Ne demek karşıtlığın azalması?
+
+168
+00:41:10,636 --> 00:41:18,316
+Bütün rengi, yani gri seviyenin bütün tonlarının ifade edilmemesi. Tek bir yerde sıkışıp kalınması.
+
+169
+00:41:19,251 --> 00:41:33,532
+Örneğin şurada da karşıtlık çok arttırılmış. Siyah ve beyaz geçiş arasında çok fazla hale gelmiş. Bu da zararlı. İstediğimiz belli bir kullanabileceğimiz değere getirebilmek.
+
+170
+00:41:36,231 --> 00:41:46,591
+Dikkat edin. Belli bir skalerle çarpılması niye karşıtlığı arttırıyor? İki tane piksel düşünelim yan yana. Bunun değeri bir, bunun değeri iki örneğin.
+
+171
+00:41:47,155 --> 00:41:52,556
+Biz burada a değerini 3 belirlediğimizde çarpmadan sonra ne olacak?
+
+172
+00:41:52,556 --> 00:41:56,036
+Bunların neydi? 1 çarpı 3, 3. 2 çarpı 3, 6.
+
+173
+00:41:56,976 --> 00:42:02,175
+Eskiden aralarında bir tane bir piksellik değer varken artık aradaki fark.
+
+174
+00:42:02,579 --> 00:42:16,399
+3'e çıkmış durumda. Dolayısıyla piksellerin parlaklık seviyeleri arasında daha yüksek bir oran bulunuyor. Bu da karşıtlığın arttırılması anlamında kullanılıyor arkadaşlar.
+
+175
+00:42:20,275 --> 00:42:27,615
+Şimdi parlaklık, karşıtlık ayarlığıyla alakalı çeşitli komutlar var. Örneğin şu bir resmimiz bizim.
+
+176
+00:42:27,615 --> 00:42:40,555
+Hem karşıtlığı hem de parlaklık seviyesini ayarlayarak resimleri daha kullanışlı hale kullanabileceğimiz şekillere çevirebiliriz.
+
+177
+00:42:41,036 --> 00:42:42,815
+Örneğin şurada düşük kontrastla.
+
+178
+00:42:45,523 --> 00:43:11,463
+Ve parlaklık seviyesi, parlaklık düşük olan bir resim var. Bir uydu görüntüsü verilmiş. Şehirler çok belli olmuyor. Ondan sonra buradaki doku, dokular birbirinin içerisine geçmiş. Çok anlaşılmıyor. Örneğin bunu belli bir değerle çarpıp topladığımızda istediğimiz netliği elde edebiliyoruz.
+
+179
+00:43:12,659 --> 00:43:23,719
+Bunun için çeşitli ara fonksiyonlar da kullanılıyor. Örneğin, giriş resmimizde şu alttaki değerler kullanılan parlaklık seviyelerini belirlesin.
+
+180
+00:43:23,719 --> 00:43:38,139
+Şu çıkış resminde ise benim yeni oluşturduğum resmin parlaklık seviyelerini bulsak. Örneğin, giriş seviyesindeki sıfırların değeri sıfırda kalsa, 10 değerin değeri sıfırda kalsa,
+
+181
+00:43:38,900 --> 00:43:46,500
+Örneğin 15 değerinin değeri 0'da kalsa, soldaki eksen yeni piksel değerlerini gösteriyor.
+
+182
+00:43:47,100 --> 00:43:54,880
+15'den itibaren ise lineer olarak yavaş yavaş örneğin 16'ya geldik, 15'e kadar kullanmıştık.
+
+183
+00:43:54,980 --> 00:44:04,059
+16, 0'a, 17, 1'e, 18, 2'ye, 19, 3'e gibi burada bir lineer artım var şu kısımda.
+
+184
+00:44:04,820 --> 00:44:19,320
+Ondan sonra belli bir genlik değerinden sonra da örneğin ne yapılmış? Örneğin, 240'den sonra her bir değere de ne vermişiz? Şuralar yeni değerleri gösteriyor.
+
+185
+00:44:19,320 --> 00:44:31,180
+Böylece kontrastı belli aralıklar, belli piksel arasında lineer olarak değerleri alınmış. Belli bir noktadan sonra da ne yapılmış arkadaşlar? Değerleri eklenerek
+
+186
+00:44:31,347 --> 00:44:39,228
+Veya gerçekten siyah kalması gereken yerleri de siyah yaparak veya beyaz yaparak görüntüyü de anlaşılır hale getirebiliriz.
+
+187
+00:44:39,327 --> 00:44:50,887
+Tabi ki burada kullanabileceğimiz çeşitli fonksiyonlar var. Bu bir dönüşüm. Dönüşümü gösteriyor. Girişin çıkışta ne hale getirileceğini gösteriyor.
+
+188
+00:44:52,851 --> 00:45:18,391
+Şimdi lineer olarak arttırabileceğimiz gibi örneğin 50 ile 100 arasındaki şeyleri eksponansiyel olarak değerlerini arttır. Yani bu ne demek istiyor? 50 ile mesela 100'e yakın yerlerde hızlı bir şekilde değerleri arttır. Yani parlaklık seviyeden arttır. 50'den itibaren ise düşük bir seviyede arttır. Daha böyle.
+
+189
+00:45:19,027 --> 00:45:31,487
+Daha yavaş bir şekilde arttırılıyor. Bu tarz çeşitli dönüşüm eğrileri tanımlanabilir. Kullanım amacına bağlılar.
+
+190
+00:45:33,447 --> 00:45:41,307
+Metlab'de ve Python'da Image Adjust komutuyla parlaklık ve karşılıklı ayarları yapılabiliyor arkadaşlar.
+
+191
+00:45:42,967 --> 00:45:45,907
+Peki, en temelde yaptığımız işlem ne bizim?
+
+192
+00:45:46,400 --> 00:46:02,059
+Eğer bizim bu giriş çıkış eğrilerimize baktığımızda, belli bir T threshold değerine kadar olan, örneğin değerimiz burada mesela 25 belirlensin.
+
+193
+00:46:02,612 --> 00:46:20,192
+25 parlaklık değerine sahip piksellerin değeri 0'a 25 ve 25'ten büyük değerlerine 255'e atadığında, artık yeni resimde sadece 2 değer olacak. 0 ve 255.
+
+194
+00:46:21,292 --> 00:46:29,232
+Dolayısıyla bu yeni görüntü Thresholding ile eşitleme ile beraber Binary Image.
+
+195
+00:46:31,635 --> 00:46:51,455
+Yani ikili resim, ikili görüntü haline geliyor arkadaşlar. İkili görüntü 0-255 değerlerini alabileceği gibi bazen de daha doğrusu bütün gri seviye resimlerde 255'i 1'e normalize edersek 0-1 arasında da.
+
+196
+00:46:52,019 --> 00:47:01,699
+yer alıyor resimler. Sıfır, bizim tamamıyla sıfır parlaklık, bir ise tam parlaklık manasına da görebiliyor arkadaşlar.
+
+197
+00:47:04,599 --> 00:47:15,699
+Negatifleme dediğimiz kısım ise arkadaşlar, bizim sıfır olan değerimizi ne yapıyor? 255'e. 255 olan değerimizi sıfıra gönderiyor.
+
+198
+00:47:16,639 --> 00:47:32,159
+Yani örneğin buradaki düşük değerler yüksek parlaklık değerini, yüksek parlaklık değerleri ise düşük parlaklık değerini yaparak buna olumsuzlama veya bir görüntünün negatifini alma deniyor arkadaşlar.
+
+199
+00:47:32,159 --> 00:47:41,719
+Bazen tıbbi görüntülerde bu tür şeylere ihtiyacımız olabiliyor. Daha iyi damar yapıları veya doku yapılarını bulabilmek için negatiflemeyi kullanabiliyoruz.
+
+200
+00:47:44,532 --> 00:48:01,911
+Görüntü işlemede en önemli kavramlardan biri de arkadaşlar histogram kavramı. Histogramlar nedir arkadaşlar? Örneğin ben şöyle bir şey belirlesem. Bunun içerisinde toplam ben bit derinliğime göre kaç tane şey kullanabilirim?
+
+201
+00:48:10,420 --> 00:48:21,900
+Her bir piksel değerinden kaç tane piksel olduğunu bulabilsem.
+
+202
+00:48:21,900 --> 00:48:27,099
+Her bir piksel değerinden kaç tane olduğunu kaydetsem.
+
+203
+00:48:28,119 --> 00:48:35,420
+Örneğin 0'da belli bir sayıda var. 1200 tane var. 1'de 1300 tane var. 50'de.
+
+204
+00:48:37,076 --> 00:48:46,796
+40 tane var. Ondan sonra 170 de örneğin, şurada 170 olsun 1200 tane var gibi bütün piksel değerlerini
+
+205
+00:48:46,796 --> 00:48:58,036
+sırasıyla parlaklık değerlerine göre 0-255 arasında dizdiğimde bana bir eğri çıkıyor. Bu da bana aslında görüntü hakkında önemli bir bilgi veriyor.
+
+206
+00:48:58,036 --> 00:49:00,956
+Yani piksel parlaklık değerlerinin
+
+207
+00:49:01,344 --> 00:49:03,403
+Nerelerde yoğunlaştığını biliyor.
+
+208
+00:49:03,584 --> 00:49:09,483
+Bu resme bakacak olursak şöyle koyu kısımlarda bir eğri oluşmuş.
+
+209
+00:49:09,483 --> 00:49:13,284
+Bir de şurada parlak kısımlarda genelde parlak bir dağılım var.
+
+210
+00:49:13,724 --> 00:49:14,724
+Bir yerde tepe yapmış.
+
+211
+00:49:14,943 --> 00:49:23,084
+Koyu kısımlar genelde şu kameramanın paltosunun olduğu o koyu kısımları ifade ederken.
+
+212
+00:49:24,436 --> 00:49:29,436
+Şuradaki parlak tepecikler ise arka taraftaki parlak kısımları beliriyor.
+
+213
+00:49:30,256 --> 00:49:40,016
+En çok parlandığın belli gri seviyenin olduğu yer arka plandaki gökyüzünden dolayı ne kadar piksel sayısı çoksa tepeler o kadar rahat oluşuyor.
+
+214
+00:49:41,236 --> 00:49:51,635
+Sonuçta ben buradaki her bir şurada altta kalan alanı topladığımda bana ne verir arkadaşlar histogramda?
+
+215
+00:49:52,000 --> 00:49:56,019
+Instagram'daki altta kalan alanı topladığında neyi elde ederim?
+
+216
+00:49:58,599 --> 00:49:59,519
+Ali?
+
+217
+00:50:04,083 --> 00:50:07,603
+Histogramda altta kalan olum topladığımda neyi elde ederim [öğrenci]?
+
+218
+00:50:13,907 --> 00:50:14,807
+Duyuyor musun [öğrenci]?
+
+219
+00:50:17,028 --> 00:50:20,948
+Evet hocam, ben soruyu kaçırdım. Bir daha sorar mısın? Soru bakmayın.
+
+220
+00:50:21,907 --> 00:50:24,928
+Soruyu tekrar aldım iki üç kere. Dinliyor muydun dersi?
+
+221
+00:50:26,988 --> 00:50:30,488
+Diniyorum, dinliyorum ama ses kesik kesik geldi. En internetin bir sıkıntı vardı, o yüzden.
+
+222
+00:50:32,248 --> 00:50:40,688
+Histogram'da altta kalan alan, şu eğrinin altında kalan alan neyi verir bize?
+
+223
+00:50:43,380 --> 00:51:08,700
+Yani ben her bir pikselin parlaklık değerinde, o parlaklık değine ait kaç piksel değerinin olduğunu histograma koyuyorum. Eğer burada bütün hepsinin altında kalan alanı toparlarsam, her bir piksel değeri için, 0-255 değerinde bütün hepsinin altında kalan alanı toplarsam, neyi verir bana?
+
+224
+00:51:10,835 --> 00:51:17,875
+Evet, biri vermesi gerekir. Bu olasılık gibi bir şey. Ya da normalizasyon yapsak, biri vermesi gerekir.
+
+225
+00:51:18,115 --> 00:51:25,035
+Vermesi gerekmez. Mesela burada 1600 ile topladım, yanında da 1300 var, yanında 1200 var. Topladığımda bire gitmiyor.
+
+226
+00:51:25,035 --> 00:51:33,115
+Bunu ebicibiyotu var ya hocam, hani Bixit'i diğer 200 çarpı 200, bu toplamı bizi veriyor.
+
+227
+00:51:34,315 --> 00:51:38,335
+O CDF, oraya daha gelmedim. Ben sadece basit bir soru soruyorum şimdi.
+
+228
+00:51:42,387 --> 00:51:44,727
+O zaman ben soruyu algılayamadım hocam.
+
+229
+00:51:44,847 --> 00:51:46,207
+Evet [öğrenci].
+
+230
+00:51:52,563 --> 00:51:56,143
+[öğrenci], dersi dinliyor muyuz? Burada mısın?
+
+231
+00:51:59,063 --> 00:52:00,043
+Buradayım hocam.
+
+232
+00:52:00,583 --> 00:52:14,983
+Evet. Ne demiştik? Bir histogram oluştururken sırasıyla parlaklık değerlerine göre orada kaç tane piksel var? Burada 10 tane var, burada 20 tane var gibi şeylerle teker teker çizdik. Bir eğri oluştu şöyle.
+
+233
+00:52:15,683 --> 00:52:18,723
+Bu eğrinin altında kalan alanı toplarsam neyi verir bana?
+
+234
+00:52:22,771 --> 00:52:29,771
+Bir yorum yap. Bütün parlaklık seviyesine sahip...
+
+235
+00:52:29,771 --> 00:52:35,771
+Kaç tane piksel sayısını...
+
+236
+00:52:35,771 --> 00:52:39,771
+Piksel sayısı dediğin, daha böyle net bir şekilde ifade et.
+
+237
+00:52:43,891 --> 00:52:57,451
+Görüntüdeki neyi verir? Görüntüdeki toplam piksel sayısını verir. Çünkü sırasıyla ne yapıyorum? Sıfırdan 20 tane.
+
+238
+00:52:57,972 --> 00:53:20,512
+1'den 10 tane, 2'den 25 tane diyor. Dolayısıyla bütün parlaklık seviyesine sahip piksellerin dağılımını gösterdim. Eğer ben bunun altta kalan alanını toplarsam, dolayısıyla her parlaklık serisinin toplam piksel sayısını bulmuş olacağım. Öyle değil mi? Histogramın altında toplam piksel sayısı vardır.
+
+239
+00:53:25,876 --> 00:53:28,976
+Piksellerin dağılımıyla oluşmuş bu. Öyle değil mi?
+
+240
+00:53:30,456 --> 00:53:30,715
+Evet.
+
+241
+00:53:32,076 --> 00:53:45,496
+Şimdi burada şuna gelelim. Histogramlar bize nerede yardımcı olurlar? Histogramlar bir görüntünün değerlendirmesine bize çok yardımcı olurlar.
+
+242
+00:53:45,496 --> 00:53:50,096
+Örneğin demin size karşıtlık kavramını açıklamıştım.
+
+243
+00:53:50,463 --> 00:53:58,923
+Örneğin burada koyu bir resim var ve koyu ve koyu gri kısımlarda çok böyle net değil veya çok parlak bir resmimiz var.
+
+244
+00:53:59,643 --> 00:54:06,023
+Dikkat edin, histogramına baktığımızda örneğin sıfırla kırk arasında dağılmış bütün piksellerin değerleri.
+
+245
+00:54:06,543 --> 00:54:07,864
+Parlak pikseller yok.
+
+246
+00:54:07,864 --> 00:54:15,923
+Buradan biz ne anlıyoruz? Histogramın bir yerde toplandığını yani 255'e kadar gitmediğini görüyorum.
+
+247
+00:54:16,980 --> 00:54:21,039
+Bu da arkadaşlar şunu anlıyor. Kontrast düşük.
+
+248
+00:54:25,172 --> 00:54:49,012
+Veya çok parlaklık verilmiş. Kontrast bu sefer parlak kısımlarda sıkışmış durumda. Düşük seviyeli pikseller yok. Dolayısıyla ben histogramdan görüntünün içeriğiyle alakalı bir bilgi edinebilirim. Daha sonra bunların düzeltilmesiyle alakalı işlemlere geçeceğim ama histogramlar bana ön bilgiyi sağlıyorlar.
+
+249
+00:54:51,059 --> 00:55:15,819
+Örneğin, burada da bir tane low contrast, düşük contrastlı bir görüntü var. Çünkü green'in belli bir seviyesine sıkışmış kalmış. Şuraya sıkışmış kalmış. Bakın bu düşük contrastlı, ne olduğu anlaşılmayan resimden yüksek contrastlıya geçtiğimde, bakın daha iyi bir şekilde değerlendiriyorum. Daha böyle detaylar netleşiyor gözümde.
+
+250
+00:55:17,268 --> 00:55:38,608
+Biyomedikal görüntülerde de olabildiğince high contrast da arkadaşlar, bütün piksel değerlerine yayılma vardır, yayma vardır. Aynı görüntüyü bakın, buradan streç ettiğimizde iyice yayarsak, böylece bütün piksel değerli, parlaklık değerlerini yayarsak daha güzel bir görüntü ortaya çıkıyor arkadaşlar.
+
+251
+00:55:40,068 --> 00:55:41,608
+Karşıtlığı yüksek.
+
+252
+00:55:42,036 --> 00:55:50,655
+Yani sıfırdan farklı değer aldığı mesafe burada daha yüksekken buna karşıtlık diyelim.
+
+253
+00:55:51,316 --> 00:55:56,235
+Yani almış olduğu mesafe burada düşükken burada ise yüksek.
+
+254
+00:55:58,876 --> 00:56:05,336
+Şimdi histogramı eşitlerken arkadaşlar çeşitli yöntemler var.
+
+255
+00:56:08,307 --> 00:56:23,628
+Metlab'de veya partner'de histogram equalization diye komutumuz var. Temel olarak ne yapılıyor burada arkadaşlar? Olabildiğince şu dar alanı ne yapıyoruz? Stretch ediyoruz arkadaşlar.
+
+256
+00:56:26,628 --> 00:56:35,108
+Doğrusal veya doğrusal olmayan histogram eşitleme yöntemleri yapılıyor. Örneğin şöyle bir şey yapılabilir burada.
+
+257
+00:56:36,851 --> 00:56:53,652
+Burada derinlemesine çok girmeyeceğim ama şöyle bir şey yapılabilir. Örneğin şu 40 diyelim. Şurada ise 120 değerinde. Şu 40'ı buraya 0 değerini alırken 120'yi de 255'e koyarız.
+
+258
+00:56:53,652 --> 00:57:01,751
+Bu aradaki değerleri de artık örneğin ne yapacağız arkadaşlar? Aralara dağıtarak.
+
+259
+00:57:05,108 --> 00:57:11,008
+Yeni değerlerini bularak ne yaparız? Genişletebiliriz. Buna histogram eşitleme deniyor.
+
+260
+00:57:16,596 --> 00:57:35,135
+Böylelikle piksel seyleri daha belirgin haline gelecektir arkadaşlar. Örneğin, bir örneğimiz var diyelim. Burada, evet, daha çok burada toparlanmış parlaklık. Ondan sonra yukarıki parlaklık derlerini üzerip giderek azalmış.
+
+261
+00:57:41,940 --> 00:57:57,820
+Mesela demin verdiğim örnekte şuralar yoktu. Şuralar yoktu. Bazen de resimlerde yine yüksek değerli kısımlarda piksel olur ama az olur.
+
+262
+00:58:04,532 --> 00:58:08,372
+Daha yayıp, bunlara daha az yer verme gibi olur.
+
+263
+00:58:08,372 --> 00:58:11,532
+Şurada çok piksel bulunan yeri yaymışız.
+
+264
+00:58:11,532 --> 00:58:21,532
+Yani düşük piksel değerine sahip değerleri daha net bir şekilde ifade edebilmek için ona daha çok yer ayırıp,
+
+265
+00:58:21,532 --> 00:58:27,372
+şu az piksel değeri bulunan yerleri de şu alana sıkıştırabiliriz örneğin.
+
+266
+00:58:28,083 --> 00:58:47,683
+Bu da bir yöntemdir. Bakın burada bir lastik var. Lastiğin örneğin şuradaki izleri belli olmuyordu ama buna daha çok düşük parlaklık seviyesine sahip yerleri daha çok yeni parlaklık değerlerine çektiğimizde daha net bir görüntü elde edilmiş oldu.
+
+267
+00:58:48,820 --> 00:59:06,660
+Örneğin, burada da bir uzaktan algılama resmi var. Bu uzaktan algılama resminde arkadaşlar bakıyoruz ki belli bir gri seviyenin çevresinde dağılım var. Tamam, buralarda da bazı değerler var ama çok az, frekansı çok düşük.
+
+268
+00:59:10,096 --> 00:59:24,395
+Yeni 100 ve 150 arasında ifade etmek, 100 ile 140 arasındaki yeri ifade etmek yani onu daha geniş bir alana çeksem, yani daha bir geniş alana çeksem, bakın burada arttırılmış şu alana.
+
+269
+00:59:28,019 --> 00:59:54,659
+Dar bir alanda ifade edilmiş. Yani örneğin şuradaki 80 ile 0 arasında 0-80 diyelim. 0-80 artık 0 ile 10 arasına almış. 80 artık 10 oldu. 0-0 da kaldı. Örneğin 40 artık bizim için nerede? 5'te. Dar bir alan ayrılmış. Böyle olunca gri'deki farklılıklarla beraber
+
+270
+00:59:55,059 --> 01:00:00,500
+Daha net olarak algılanmaya başlayacak bir görüntü elde etmişiz.
+
+271
+01:00:02,000 --> 01:00:07,219
+Peki bu karşıtlığı yayma nasıl olabilir arkadaşlar?
+
+272
+01:00:07,879 --> 01:00:09,059
+En basit şey şu.
+
+273
+01:00:10,759 --> 01:00:17,059
+İmgenin değerini, yeni imge değerini bulmak isterseniz minimum değerinden çıkarıyorsunuz.
+
+274
+01:00:18,199 --> 01:00:20,839
+Bulunan max ve minimum piksel değerleriyle beraber
+
+275
+01:00:21,331 --> 01:00:30,111
+Maksimum Griton değeriyle çarptığınızda bu karşılıklı yayabiliyoruz. Basit, buna nokta işlemleri, Point Operations deniyor arkadaşlar.
+
+276
+01:00:30,111 --> 01:00:45,111
+Point Operations. Yani piksellerin sadece değerleriyle oynuyoruz. Çevre piksel değerleriyle hiç uğraşmadık şu ana kadar. Sadece...
+
+277
+01:00:45,748 --> 01:01:04,988
+Piksel değerlerinin yeni değerleri almasını sağlıyoruz. Burada yaptığımızda, eğer bunu yaydığımızda arkadaşlar bakın, şuradaki boş kısımları da artık kullanabiliyoruz. Bakın daha net bir görüntü haline getirmiş olduk arkadaşlar.
+
+278
+01:01:07,488 --> 01:01:10,307
+Evet, bir ara verelim mi arkadaşlar?
+
+279
+01:01:14,804 --> 01:01:19,304
+3'ü görmüştük herhalde.
+
+280
+01:01:19,304 --> 01:01:21,903
+3'eydik.
+
+281
+01:01:31,476 --> 01:01:39,416
+Şimdi bir 10.03. 10 çeyrekte buluşmak üzere arkadaşlar. Bir 15 dakika ara verelim.
+
+282
+01:14:43,155 --> 01:14:51,335
+Evet, slide'ları sizinle paylaşacağım. Daha güzel slide'lar da var hatta. Onlar da size paylaşacağım arkadaşlar. Ses geliyor herhalde.
+
+283
+01:14:52,835 --> 01:14:53,595
+Geliyor hocam.
+
+284
+01:14:53,595 --> 01:14:54,675
+Tamamdır.
+
+285
+01:14:55,188 --> 01:15:19,868
+Şimdi piksel komşuluk işlemlerinden bahsedelim. Demin bahsettiğim histogram, ondan sonra matris işlemleri, manipülasyonların hepsi piksel değerlerinin yeni bir değere yerleştirilmesi veya yeni değerler verilmesi, parlaklık arttırılması, karşılık arttırılması, histogram üzerinde yapan işlemler nokta olarak yani point operations demiştim piksel değerleri üzerinden yapılıyor.
+
+286
+01:15:21,555 --> 01:15:35,235
+Komşuluk işlemleri, yani bir pikselin yanında büyük ihtimalle kendisiyle yüksek derecede ilişkisi bulunan pikselleri de dikkate olarak, bu bilgiyi de dikkate olarak yaptığımız işlemler var.
+
+287
+01:15:36,515 --> 01:15:44,415
+Şimdi en temelde yapacağımız şey bizim konvolüsyon işlemimiz.
+
+288
+01:15:48,435 --> 01:15:58,835
+Bir görüntünün üzerinde diğer bir, şöyle çizecek olursak basitçe hızlı geçeceğim bu kısmı. Bir konvolüsyon işlemi dediğimde
+
+289
+01:15:59,835 --> 01:16:15,435
+Bir konvolüsyon kerneli belirliyoruz. Bu kerneli sırasıyla merkez piksel olmak üzere bütün pikseller üzerinde gezdirerek işlemleri yapıyoruz. Peki bu konvolüsyon kernel olarak belirlediğimiz
+
+290
+01:16:16,307 --> 01:16:36,387
+Kernel'ın almış olduğu değerlere göre yeni işlemler yapıyoruz. Basitçe konvolüsyonda ilgili piksel değeriyle, yani burada mesela 3'e 3 bir piksel verdik diyelim şöyle, kernel dediğimiz şeyle, merkez pikselimiz var veya bunu hotspot da deniyor.
+
+291
+01:16:36,907 --> 01:16:42,387
+Bunun altında kalan piksel değerleri var. Onu da şöyle gösterelim.
+
+292
+01:16:43,859 --> 01:16:47,539
+Onu da yan tarafına şöyle gösterelim.
+
+293
+01:16:50,459 --> 01:16:52,739
+Onu da altına şöyle çizelim.
+
+294
+01:16:54,260 --> 01:16:55,779
+Altında kalan alan.
+
+295
+01:16:55,779 --> 01:16:58,659
+Merkez piksel şurası ile ilgileniyoruz.
+
+296
+01:16:58,659 --> 01:17:06,819
+Bu pikselin çevre pikselleri. Örneğin 1, 2, 3, 4, 6, 7, 8 komşuluğu var.
+
+297
+01:17:07,539 --> 01:17:10,340
+Sırasıyla bununla bunu
+
+298
+01:17:10,868 --> 01:17:38,208
+İlgili pikselleri birbirleriyle çarparak sonuçları çarpıyoruz ve topluyoruz. Şurada gördüğünüz gibi yapılan işlem satır boyunca yani j eksi n'den n'e demiş. Eksi n'den n dediği kısım şurası arkadaşlar. Merkez pikselin kaç sağına gittiğiniz ve kaç soluna gittiğinizle alakalı.
+
+299
+01:17:39,220 --> 01:17:59,119
+Burada kernel boyutu 3'e 3 olabileceği gibi 5'e 5 de olabiliyor arkadaşlar. 7'e 7'e. Ne kadar çok kernel'ın boyutunu arttırırsanız bir merkezlerin örneğin bir komşuluk değerine sahip bir kernel ayarladığınızda 3'e 3'lük bir maddesi elde ediyorsunuz.
+
+300
+01:18:05,235 --> 01:18:13,456
+Bakın, 1-2 komşuluğu gibi gittiğimizde 5'e 5'lik bir matris. 3 dediğimizde 7'ye 7 elde ediyorsunuz.
+
+301
+01:18:13,456 --> 01:18:24,136
+Buradaki komşuluk sayısında boyunca orijinal görüntünün üzerinde çarpma ve toplama işlemleri yaparak komolysiyon işlemi gerçekleştiriliyor.
+
+302
+01:18:25,015 --> 01:18:27,376
+Basitçe şöyle yapılıyor.
+
+303
+01:18:28,532 --> 01:18:44,152
+Şimdi burada ters pikseller, birebir altında kalan pikseller üzerinde göstermemiş de biraz daha farklı göstermiş. İkinci pikselin örneğin şu pikselle, Kernel'ın bu pikseliyle tam tersini çarpmış.
+
+304
+01:18:53,268 --> 01:19:03,688
+En sonuncusu yanlış oldu. Hem X hem Y yönünde tam bunun tersini. Mesela bunun tam tersi burada şuraya denk geliyor.
+
+305
+01:19:04,627 --> 01:19:22,747
+Yani bir nevi transpozesini de aldığımızda tam tersi karşıt değerleriyle çarpıyoruz. Birebir çarptırmak da mümkün. Eğer biz kernel'ı baştan yerlerini değiştirsek elemanlarının, birebir yani 1 ile 50'ye, eksi 1 ile 75'i de çarpabiliriz.
+
+306
+01:19:23,188 --> 01:19:41,347
+Veya Kernel'ı sabit tutarsak, görüntünün farklı elemanlarıyla çarpma durumunda kalırız. Örneğin burası 1'e 3'e. Bu 1'e 3, 3'e 1'le çarpılacak. Yani şurası ile çarpılacak gibi dönüşümleri yapmamız gerekiyor.
+
+307
+01:19:42,579 --> 01:20:08,579
+Ve bu çarpma işlemlerinden sonra şu merkezde kalan pikselin yeni değeri belirleniyor. Burada onu yapmış arkadaşlar. Bakın uzun uzun yazmış değerlerini ve 70 olan pikselin değerinin görüntüde artık 70 olarak belirlenince, şurası artık 32 değerinde kullanılan şu kernel'a göre.
+
+308
+01:20:09,684 --> 01:20:13,404
+Şimdi, metlepte bunu da komut olarak arkadaşlar.
+
+309
+01:20:13,564 --> 01:20:18,244
+Kon 2, yani iki boyutlu konvolüsyon gibi düşünebilirsiniz.
+
+310
+01:20:19,023 --> 01:20:24,064
+Peki, görüntüde orijinal piksel değerlerini kullanırız.
+
+311
+01:20:24,064 --> 01:20:29,844
+Peki, burada kullandığımız eksi 1, eksi 2, 10, eksi 2, eksi 1 değerleri nedir?
+
+312
+01:20:30,443 --> 01:20:36,543
+Ve işlevi nedir? Ve orijinal görüntü üzerinde ne tarz bir etikte bulunur?
+
+313
+01:20:36,880 --> 01:20:47,020
+Örneğin, elimizde eksi bir, eksi iki, eksi bir sol tarafında sıfır sıfır bir iki olan bir kernel var. Aldık gerçekten bunu yerleştirdik şöyle.
+
+314
+01:20:48,600 --> 01:21:02,460
+Şimdi kafanızda hani buradaki ters yerlerini, yani çaprazlama çarpımı veya yerlerinin değiştirileceği kısımları düşünmeyin. Bire bir çarpıldığını düşünün şu anda.
+
+315
+01:21:03,764 --> 01:21:16,144
+Zaten bu konvolüsyon körnünün çapraz değerleri çarpılacak şekilde yerlerinin değiştirildiğini düşünün.
+
+316
+01:21:17,283 --> 01:21:25,543
+Geldik. Dikkat edin şu pikselle beraber merkez olmak üzere sıfırı ortasına yerleştirdik.
+
+317
+01:21:27,224 --> 01:21:30,064
+Buradan nasıl bir görüntü elde ederiz?
+
+318
+01:21:30,547 --> 01:21:46,547
+Basitçe, eksi 1 ile şurayı, eksi 2 ile şurayı, eksi 1 ile şurayı çarptığımızı düşünün. Burayı 1 ile, burayı 2 ile, burayı da 1 ile çarptığımızı düşünün.
+
+319
+01:21:46,547 --> 01:21:57,547
+Ve de çarpıyoruz ve değerleri toplayarak başka bir dosyaya bu yeni değeri yazmış oluyoruz. Şurayı yazmış oluyoruz.
+
+320
+01:21:58,899 --> 01:22:04,739
+Dikkat edin, burada şöyle bir sorun var tabii. Tam köşe noktalarda ne olacak sorunu?
+
+321
+01:22:05,699 --> 01:22:10,219
+Yani şöyle yaptığımızda geldik, merkez burası diyelim.
+
+322
+01:22:12,859 --> 01:22:16,000
+Şöyle yapalım, merkez şöyle diyelim.
+
+323
+01:22:19,099 --> 01:22:22,439
+Şuralar boşlukta kalıyor, tam köşelere geldiğimizde.
+
+324
+01:22:22,439 --> 01:22:25,379
+O köşelerde yapılacak işlemler bir.
+
+325
+01:22:25,844 --> 01:22:30,584
+Sıfır doldurabilirsiniz. Sıfır kabul edebilirsiniz. Veya şöyle bir şey yapabilirsiniz.
+
+326
+01:22:31,764 --> 01:22:39,824
+Buradaki merkez pikseli buraya yansıtabilirsiniz. Yani şu pikselin değerini buraya yazarsınız. Böylece görüntüyü genişletirsiniz.
+
+327
+01:22:41,004 --> 01:22:47,604
+Dolayısıyla bir süreklilik de sağlanmış olur. Aynalama deniyor buna da. Şuradaki değerleri buralara yazarsınız.
+
+328
+01:22:47,604 --> 01:22:51,783
+Şu değer ise buraya, şu değer de daha büyük kernel kullanırsanız.
+
+329
+01:22:51,891 --> 01:23:12,891
+Daha uzaklığına yazdırabilirsiniz. Dikkat edin. Ben şurada yeni piksel değerini belirlerken, şu merkezdeki piksel değerini belirlerken, sol tarafımdakileri eksi değerlerle, sağ tarafımdakileri ise pozitif değerlerle çarpıyorum. Dolayısıyla şöyle bir değerim olsa örneğin.
+
+330
+01:23:17,460 --> 01:23:23,360
+2 ve 3 değer olsa. Yeni değeri belirleyeyim. Sadece şurası için yapıyorum.
+
+331
+01:23:24,260 --> 01:23:28,819
+Eksi 2, 0, 2 değer ile çarpıyor. Bakalım çarptığımda ne oluyor?
+
+332
+01:23:29,500 --> 01:23:32,880
+Eksi 4 artı 6 eşittir 2.
+
+333
+01:23:36,000 --> 01:23:43,039
+Bir 2 değeri ürettim burada burada. Peki bunların hepsi 2, 2, 2 değerinde olsaydı.
+
+334
+01:23:43,699 --> 01:23:48,939
+Ve ben bunu eksi 2, 0, 2 ile çarpsaydım. Ne elde edecektim?
+
+335
+01:23:50,019 --> 01:24:06,079
+Eksi 4, artı 4, 0. Eğer bu merkez pikselin sağındaki ve solundaki pikseller birbirinden ne kadar ayrıysa, örneğin bir de şuraya kaç verelim?
+
+336
+01:24:08,079 --> 01:24:09,340
+5 verelim.
+
+337
+01:24:11,859 --> 01:24:23,760
+Bu değerleri çarpalım. Eksi 2, 0, 2 ile çarpalım. Eksi 4, 0, artı 0 merkez piksel, artı 10. Değerimiz 4 oldu.
+
+338
+01:24:24,000 --> 01:24:38,099
+Dikkat edin, eğer merkez pikselin solundaki ve sağındaki pikseller ne kadar birbirinden farklıysa parlaklık seviyesi açısından, bakın burada hepsi aynıydı.
+
+339
+01:24:38,771 --> 01:24:40,771
+Ve değerimiz sıfır çıktı.
+
+340
+01:24:41,891 --> 01:24:50,111
+Eğer ne kadar birbirinden ayrıysalar, o kadar bu konvasyon işlemi sonucunda değer artıyor.
+
+341
+01:24:50,111 --> 01:24:51,752
+Buraya baktığımda.
+
+342
+01:24:52,131 --> 01:24:55,192
+Aynı işlemleri şuralarla da yaptığınızı düşündüğünüzde.
+
+343
+01:24:55,791 --> 01:25:00,672
+Ne kadar sol taraf sağ taraftan farklıysa bu kadar çok.
+
+344
+01:25:01,216 --> 01:25:21,195
+Değerimiz artıyor. Bu yeni değerini buralara yazdığımızda, şuradaki yeni dosya değerini yazdığımızda ne çıkacak? Sol tarafı sağ tarafından farklı olan özellikle mesela şu piksel. Sol tarafındaki parlaklık değeri sağdan iyice farklı veya şu pencere kenarında sol sağdan farklı.
+
+345
+01:25:21,684 --> 01:25:38,184
+Veya şu ev geçişlerini sol sağdan farklı. Dikkat edin, sol tarafın sağ taraftan farklı olduğu yerler genellikle yatayda değişim gösteren yerler. Yani kenarlar.
+
+346
+01:25:38,184 --> 01:25:40,023
+Yataydaki.
+
+347
+01:25:40,851 --> 01:26:02,811
+Yatayda ilerliyoruz. Dikey kenarları olmuş oluyor. Dikkat edin bulmuş olduğumuz resimde büyük değerler daha parlak değerlere denk gelecektir. Şuralar gibi. Dikkat edin düşeydeki kenarları buluyor. Yani bizim bu kernel'ımız aslında bir kenar bulma.
+
+348
+01:26:03,604 --> 01:26:24,104
+İşlemini gerçekleştiriyor. Sol tarafından sağ tarafına bakarak bir kenar bulma işlemini gerçekleştiriyor. Sol taraf sağ taraftan ne kadar yüksekse ki burada yatayda karşılaştırmaları yapıyoruz. Dolayısıyla diklemesine olan kenarları bulmuş oluyoruz.
+
+349
+01:26:31,828 --> 01:26:34,528
+Komutuyla da gerçekleştirebiliyoruz.
+
+350
+01:26:35,328 --> 01:26:49,448
+Demek ki bizim bu kernel'ımız aslında komşuluk işlemlerini katarak bizim ne amaçla kullanacağımıza bağlı olarak bize bazı çıktılar sunuyor.
+
+351
+01:26:49,448 --> 01:26:56,108
+Örneğin bu kernel bizim için düşeydeki kenarları buluyor bizim için.
+
+352
+01:26:58,195 --> 01:27:17,956
+Şimdi konvolüsyonda bir, nelere dikkat edeceğiz? İşlenecek kenar kısımlara dikkat edeceğiz. Bunun çözümlerinden bahsetmiştim burada. Ondan sonra veya sadece kenarlarda çalışmayacaksınız da iç kısımlarda çalışacaksınız. Bu tabii ki sizin tercihiniz. Onunla ilgili komutlar var zaten.
+
+353
+01:27:21,939 --> 01:27:30,119
+Hesapsal zorluk büyük burada. Tabii ki her piksel için çalışıyorsunuz ve piksel boyutları büyüdükçe bu zorlaşmaya başlıyor.
+
+354
+01:27:30,612 --> 01:27:53,172
+Bazı kernel'lar ayrılabilir hale getirilebiliyor. Örneğin, şöyle büyük bir kernel dikeyde ve yatayda çalışacağı hale getirilebiliyor. Bunlar ayrıştırılabilir kernel'lar deniyor. Hesapsal zorluğu daha da kolaylaştırıyor bizim için. Örneğin birkaç örnek verelim.
+
+355
+01:27:53,619 --> 01:28:08,280
+Merkezinde bir olan bir kernel diyelim. Ne yapıyor orijinal işareti? Bu hiçbir şey yapmaz arkadaşlar. Buna delta fonksiyonu deniyor. Aynı bizim bu impulse fonksiyonu dediğimiz delta fonksiyonu gibi.
+
+356
+01:28:09,876 --> 01:28:21,296
+Anlık değeri üzerinden konvolüsyona tuttuğumuzda hiçbir değişiklik olmuyor. Aynı burada da öyle. Çünkü merkez pikseli 1 ile çarpıyor. Etrafındaki komşuluk değerleri tamamıyla 0.
+
+357
+01:28:21,896 --> 01:28:33,296
+Dikkat edin. 1-1 demiş burada. Ne yapıyor burada? Kaydır çıkar. Yani şu aradaki farklara bakıyor. Dolayısıyla...
+
+358
+01:28:33,408 --> 01:28:38,927
+Benim kenarlarımı, özellikle diagonaldeki kenarlarımı bulmuş oluyor.
+
+359
+01:28:40,427 --> 01:28:50,808
+Örneğin, merkezdeki pikseli 1 ile çarpmışız. Etrafındakileri eksi 1 bölü 8 ile yani ortalama 8 tane piksel var çevresinde.
+
+360
+01:28:51,347 --> 01:29:00,507
+Hepsini çıkartmışız. Dolayısıyla bu ne yapıyor? Bütün kenarları, şurada daha net belli oluyor, bütün kenar olacak yerlerde yüksek değerler veriyor.
+
+361
+01:29:01,076 --> 01:29:11,076
+Bu bir kenar bulma algoritması. Hem X hem Y yönünde yapılıyor. Buradaki K'yı arttırdıkça bizim neyimiz artıyor arkadaşlar?
+
+362
+01:29:11,816 --> 01:29:20,355
+Kenarları bulma olasılığımız artıyor. Bu da kenar pekiştirme algoritmayı veya kernel olarak geçiyor.
+
+363
+01:29:20,355 --> 01:29:22,175
+Şimdi
+
+364
+01:29:23,796 --> 01:29:41,216
+Dolayısıyla imgede bir uzamsal frekans kavramından bahsetmek gerekir. Bundan bir sonraki adım olarak resimde yumuşak geçiş gösteren çok fazla piksel değerlerinin değişmediği 2, 2, 3, 2, 2 gibi.
+
+365
+01:29:41,775 --> 01:29:50,475
+Çok fazla parlaklık seviyelerinin değişmediği, yumuşak geçişlerin olduğu yerlere bu zamsal düşük frekanslara denk geliyor.
+
+366
+01:29:50,975 --> 01:29:56,495
+Hani nasıl ki biz bir erayin frekansını DFT ile FFT ile bulmuştuk.
+
+367
+01:29:56,495 --> 01:30:06,075
+Şimdi burada değerler arasında 2, 2, 2, 3, 3, 3 gibi yumuşak geçişler bulunduğunda
+
+368
+01:30:06,768 --> 01:30:16,688
+Bunlar düşük frekanslara denk geliyor. Çünkü eğer ben bunu analog olarak çizecek olsam şöyle çok fazla değişim göstermediğini görüyorsunuz.
+
+369
+01:30:17,587 --> 01:30:23,247
+Buradaysa arkadaşlar dizi elemanların yüksekten birden parlaklık seviyesi artıyor.
+
+370
+01:30:23,247 --> 01:30:25,807
+Buraları arkadaşlar geçişler.
+
+371
+01:30:26,100 --> 01:30:32,920
+Sert geçişler, kenarlar, nesne sınırları uzamsal yüksek frekanslara karşılık geliyor.
+
+372
+01:30:33,060 --> 01:30:37,560
+Çünkü bunun mesela FFT'sini aldınız dizli olarak bir satırda ilerlediniz.
+
+373
+01:30:38,180 --> 01:30:42,780
+Ne yapıyor? Düşük frekans. Şuraya kadar düşük frekans ve birden kenar oluşuyor.
+
+374
+01:30:42,780 --> 01:30:48,780
+Bu ne yapıyor arkadaşlar? Burada bu kenarı oluşturabilmek için çok fazla sayıda...
+
+375
+01:30:49,779 --> 01:30:56,139
+Sinzoide ile ihtiyacımız oluyor. Yüksek frefanslı kısımlara denkleşmiş oluyor.
+
+376
+01:30:57,659 --> 01:31:09,459
+Şimdi, alçak geçiren süzgeç. Örneğin, en basitinden nasıl yapabilirim bir süzgeçle beraber bu görüntüyü yumuşatmayı?
+
+377
+01:31:09,459 --> 01:31:11,779
+Şu şekilde yapabilirim arkadaşlar.
+
+378
+01:31:12,336 --> 01:31:21,615
+Merkezdeki pikselin değerini yeniden belirlerken çevredeki piksel değerlerinin ortalamasını alsam ve buraya yazsam.
+
+379
+01:31:22,956 --> 01:31:29,496
+Aynı şekilde şu kenarlarda da sağının solunun bütün ortalamasını alsam yazsam ne olacak arkadaşlar?
+
+380
+01:31:30,136 --> 01:31:37,936
+Şu kenar geçişleri daha blurlaşmaya başlayacak. Çünkü ara değerler şuralara girmeye başlayacak. Burada görüyorsunuz belki.
+
+381
+01:31:38,963 --> 01:31:47,744
+Normalde orijinalde neydi? Orijinalde biraz daha keskin geçişler vardı. Şuralara bakın. Sağa ve soluna keskin geçişler var.
+
+382
+01:31:51,315 --> 01:31:57,715
+Dolayısıyla burada bir yumuşatma söz konusu. Onu da hangi tür kernel ile yapabiliriz?
+
+383
+01:31:57,715 --> 01:32:02,915
+Örneğin, etrafındaki bütün piksel değerlerini alıyor.
+
+384
+01:32:02,915 --> 01:32:10,115
+Örneğin, A artı B şöyle diyelim.
+
+385
+01:32:10,115 --> 01:32:16,515
+A, B, C, D, E, F, G, E, İ.
+
+386
+01:32:17,076 --> 01:32:25,956
+Burada kaç tane piksel var? 9. Dolayısıyla her birini 1 bölü 9 ile çarpsa, her bir piksel değerini, neyi elde etmiş olayım?
+
+387
+01:32:25,956 --> 01:32:34,756
+Her birinin, ben birer parça aldım toplama 9 ile birini kattım gibi oluyor. Yani ortalamasını almış oluyorum.
+
+388
+01:32:34,756 --> 01:32:42,195
+Burada da mesela 5'e 5'lik bir pikselle 1 bölü 25 ile çarpıyorum. Her bir piksel değerinin...
+
+389
+01:32:42,319 --> 01:32:54,319
+Kalesel olarak aldığımda eşit bir şekilde toplama katıldığını görüyoruz. Bunlar ortalama alan süzgeçler veya minfilter olarak yaplandırılıyor.
+
+390
+01:32:54,319 --> 01:33:06,319
+Konvizyon kernel'ının boyutu büyüdükçe, daha uzaktaki pikselleri de işleme kattığımızda...
+
+391
+01:33:07,252 --> 01:33:29,772
+Benim yumuşatmam. Çünkü pikseller birbirlerinden uzaklaştıkça birbirleri arasındaki ilişki azalmaya başlar. Dolayısıyla bu azalmayla beraber ne olur arkadaşlar? Daha çok ortalama, farklı piksellerin ortalamalara katıldığında daha fazla yumuşatma sağlanır arkadaşlar.
+
+392
+01:33:33,876 --> 01:33:46,275
+Şimdi, alçak geçiren süzgeç işlemi, bütün pikselleri alabileceğimiz gibi ortalamayız.
+
+393
+01:33:46,275 --> 01:33:57,036
+Sadece kuzey, güney, doğu batı yönündeki pikselleri de alsak, çevre piksellerinin ortalamasını almış oluyoruz.
+
+394
+01:34:01,872 --> 01:34:10,851
+Daha fazla değerlerini, parlaklık seviyelerini alsak, daha yüksek, alçak geçiren süzgeçler oluyor.
+
+395
+01:34:10,952 --> 01:34:23,452
+Veya kendi değerimizi almayıp, tamamıyla çevredeki piksellerin değerini alsak ve onları ortalamaya katsak, yine bir alçak geçiren süzgeç oluşturmuş oluruz.
+
+396
+01:34:23,832 --> 01:34:25,172
+Veya şöyle bir şey yapabilirsin.
+
+397
+01:34:25,844 --> 01:34:46,963
+Merkezdeki yani kendi piksel değerimizi aldık ama çevredeki piksel değerlerini daha az kattık. Yani çevre piksellerin çarpım ve toplama katkısını azalttık diyelim. Kendimizin payını arttırdık diyelim. Bu da mümkün. Bunlar da arkadaşlar gördüğünüz gibi 4, 16 gauss körnörleri deniyor bunlara da.
+
+398
+01:34:53,391 --> 01:35:11,331
+Daha az piksellerin katılmasını toplama söylüyoruz. Dolayısıyla kendi ağırlığımızı, merkez piksel ağırlığını çoğaltıyoruz. Bunlar da arkadaşlar aynı şekilde yumuşatma veya alçak geçiren.
+
+399
+01:35:11,796 --> 01:35:21,536
+Filtre olarak adlandırmakla beraber uzaktaki piksellerin değerini daha az katıyorlar. İlişkisiz pikselleri daha az hesaba katıyorlar.
+
+400
+01:35:22,696 --> 01:35:29,696
+Aynı şekilde bizim yüksek geçen süzgeçlerde bulmamız mümkün.
+
+401
+01:35:31,336 --> 01:35:35,156
+Yüksek geçen süzgeçlerde bu sefer şunu yapıyoruz arkadaşlar.
+
+402
+01:35:36,196 --> 01:35:36,616
+Örneğin.
+
+403
+01:35:37,076 --> 01:35:44,795
+Şuraya baktığımızda 8 ile merkezi çarpmışız. Tamam. Etraftaki her şeyi eksiyle çarpmışız. Bu ne demek?
+
+404
+01:35:45,895 --> 01:35:54,996
+Benim merkezdeki değerim, örneğin 3 diyelim. Etraftakiler 1 diyelim.
+
+405
+01:35:56,456 --> 01:36:00,895
+Ne yapılıyor arkadaşlar? Etrafta eksi 8 oluştu.
+
+406
+01:36:01,427 --> 01:36:26,108
+3 ise 8 ile çarpıldığında 3 x 8 24. Topladığımda ne elde edelim? 16. Peki benim her tarafım diyelim ki 3. Yani yumuşak bir bölgedeyim. Çarptığımda eğer burada bir kenar yoksa 3 x 8 24. Buradakiler de.
+
+407
+01:36:26,804 --> 01:36:30,724
+3 çarpı, eksi 1 ile çarpıldığı için bu da 24, 0 gelecektir.
+
+408
+01:36:30,724 --> 01:36:45,864
+Yani yumuşak geçişli bölgelerde, kenar olmayan bölgelerde veya değişim olmayan bölgelerde benim bu kenar bulma şeylerim, kernel'larım bir anda 0 değeri yapacak.
+
+409
+01:36:45,984 --> 01:36:50,724
+Ama değişim gösteren yerlerde çevreyle farkını aldığı için...
+
+410
+01:36:52,404 --> 01:37:08,524
+Kenarları bize bulduracaktır arkadaşlar. Burada arkadaşlar hem yatayda hem de dikeyde ayrı ayrı hem yatay kenarları hem dikey kenarları bulabilecek filtreler de geliştirebiliyoruz arkadaşlar.
+
+411
+01:37:19,412 --> 01:37:29,132
+Yüksek frekanslı. Yüksek frekans nerede oluyordu? Kenar geçişlerinde oluyordu. Kenar geçişindeki pikselleri ortaya çıkarmışız.
+
+412
+01:37:32,979 --> 01:37:46,979
+Şimdi gri seviye resimlerde kenar bulmaya geldik arkadaşlar. Kenarlar bulunurken şuna dikkat ediyoruz. Önce biliyorsunuz en büyük kenar bulmadaki...
+
+413
+01:37:47,188 --> 01:38:12,967
+Bir dezavantaj örneğin, şuralarda piksel değerlerinde gürültülerin olması. Bunun bir kenar gibi algılanmasına çünkü çevresindeki piksellerle alakasız farklı bir parlaklık seviyesi oluşuyor. Dolayısıyla onları gürültüler bizim hep kenar olarak algılamamız bu tarz böyle filtrelerde neden oluyor. Dolayısıyla tam anlamıyla istediğimiz kenarları elde edemiyoruz. Bu yüzden önce gürültü giderimi yapıyoruz.
+
+414
+01:38:13,587 --> 01:38:36,927
+Daha sonra kenar pekiştirme yapıp, kenarlarda daha yüksek tepki veren bir filtre veya maske, filtre, maske, kernel hep birbirleriyle beraber aynı manada kullanılıyor burada. Daha sonradan da kenar tespitini yapıyoruz. Önce gürültüyü azaltıyoruz. Kenarları pekiştiriyoruz.
+
+415
+01:38:38,131 --> 01:38:55,371
+Arkasından kenar tespit algoritmamızı çalıştırıyoruz. Demin bahsettiğim gibi kenar bulma algoritmalı çeşitli körnullar var önceden tanımlı. Örneğin burada kuzey güney yönünde eksi ve artılar var.
+
+416
+01:38:55,371 --> 01:39:04,031
+Ben bunu yatayda çalıştırdım. Dikkat edin sadece şu geçişlerin olduğu. Çünkü düşeyde bakıyor.
+
+417
+01:39:04,659 --> 01:39:16,859
+Yani bir üstüne bir altına bakarak eksi ve artlarcı. Dolayısıyla tam şu geçiş noktalarında ne yapıyor arkadaşlar? Bizim için yüksek değerleri buluyor.
+
+418
+01:39:17,299 --> 01:39:26,379
+Aynı şekilde, aynı şekilde eğer ben bu diklemesine baktıracak olursam ne oluyor arkadaşlar? Şöyle.
+
+419
+01:39:27,380 --> 01:39:35,079
+Benim dik kenarlarımı buluyor. Buna Previt Kernel deniyor basitçe. Sağıyla sol arasındaki farkı alıyor gibi düşünün.
+
+420
+01:39:35,079 --> 01:39:42,956
+Sobel Kernel'larında merkezdeki, merkeze en yakın, Kuzey-Güney yönündeki...
+
+421
+01:39:42,996 --> 01:39:56,996
+Piksellerin fark aldırması arttırılıyor. Bunlar da aynı şekilde yataydaki kenarları bulurken, bunlar da dikeydeki yerlerini değiştirilirse dikeydeki kenarları buluyorlar.
+
+422
+01:40:00,000 --> 01:40:15,279
+Normal görüntüsünü direkt bu görüntüyü uyarladığımızda bakın gürültülü bir resim bu. Gürültüler var, değişimler var. Bakın kenar bulmadan tamam kenarlarımız bulmuş ama şu bölgeye bakın. Gürültünün olduğu her yerde değerler artmış.
+
+423
+01:40:28,851 --> 01:40:39,132
+bastıracak. Dolayısıyla bizim gerçek anlamda daha net bir şekilde kenarlarımız ortaya çıkacaktır arkadaşlar.
+
+424
+01:40:41,252 --> 01:40:51,372
+En bilindik kenar bulma algoritmaları yani Kernel'ları Previt, Sobert, Laplacian of Gaussian, Roberts, Zero Cross ve Kenny.
+
+425
+01:40:52,052 --> 01:40:56,252
+Kenny diğerlerine göre daha iyi sonuçlar bile en çok kullanılan.
+
+426
+01:40:56,724 --> 01:41:01,484
+Kenar Bulma algoritması Keni olarak söylenebilir.
+
+427
+01:41:03,524 --> 01:41:10,864
+Bunun dışında imge pekiştirmede diğer bir kavram ise korelasyon.
+
+428
+01:41:11,544 --> 01:41:22,784
+Bu korelasyonda da arkadaşlar, korelasyon formülü şu şekilde orijinal resimin üzerinde korele edeceğimiz bir filtr parçacığı veya bir görüntü parçacığı bulunuyor.
+
+429
+01:41:23,252 --> 01:41:39,912
+Burada yapılan işlemde arkadaşlar, bir bile çarptığımız için ne kadar bu filtre parçacığı veya korelasyonu bulacağımız parçacık görüntüye benziyorsa korelasyonu yüksek çıkıyor. Ne kadar alakasızsa o kadar düşük çıkıyor.
+
+430
+01:41:40,756 --> 01:41:46,756
+Özellikle imgenin içerisinde önemli bilginin benzerlik aranmasını da çok kullanılıyor.
+
+431
+01:41:46,756 --> 01:41:53,756
+Konvolüsyondan farklı olarak kerneldaki kastelerin doğrudan kendi konumlarına karşılık gelen piksel değerleriyle çarpılıyor.
+
+432
+01:41:53,756 --> 01:41:57,756
+Konvolüsyonda bu ters işlemin yapılması gerekiyor.
+
+433
+01:41:57,756 --> 01:42:08,756
+Örneğin, şurada bir resmimiz olsa, resmimiz de harf karakterlerinden, harflerden oluşsa, ben bunun içerisinde M'yi
+
+434
+01:42:08,756 --> 01:42:34,056
+M'ye benzer bir korelasyon. M ufak kernel parçacıyla bir korelasyon baksam. En çok şu çarpımda nerede yüksek değer verecektir? Benzerliğin en yüksek olduğu yerde. Dolayısıyla tam şuradan başlatıyorum bunu. Getiriyorum şöyle M. Gezdirmeye başlıyorum. Nerelerde maksimum değer verecek? Şurada.
+
+435
+01:42:34,739 --> 01:42:58,819
+Şununla şunun üstüne geldiğinde en çok kendisine benzeyen yerlerde maksimum korelasyon değerlerini üretecektir. Bakın, şuralar, şurada, şurada, şurada ve şurada maksimum değerleri üretmiş. Bunu plot ettiğimde bakın, korelasyon katsayısı değerleri tam da göstermiş olduğum yerlerde pik yapmış.
+
+436
+01:43:01,743 --> 01:43:07,063
+Aradığımız belli template'ler varsa bunu kullanabiliriz arkadaşlar.
+
+437
+01:43:07,363 --> 01:43:09,844
+Örneğin, bir örnek uygulama yapılmış burada.
+
+438
+01:43:10,423 --> 01:43:12,264
+Sağlam matkap ucu verilmiş.
+
+439
+01:43:12,963 --> 01:43:17,643
+Bunların içerisinde hangi matkapın ucu sağlamdır denmiş, yenmemiş demiş.
+
+440
+01:43:17,643 --> 01:43:20,804
+Bakın bunlarınki biraz daha ne böyle? Yenmiş.
+
+441
+01:43:21,460 --> 01:43:43,420
+Sağlam mat kapıcı ise şöyle üçgen gibi gidiyor. Ne yapacak? Buraya denk geldiğinde o üçgen ucu maksimum sonucu verecek. Buralarda daha düşük sonuçlar verecek. Belki şurada da biraz yüksek biri. Bakın en parlağı şurada bulmuş. Yerlerinde de parlak noktalar belirlemiş ama en yüksek yer şurada. Burada bir threshold kullanarak.
+
+442
+01:43:43,792 --> 01:43:49,552
+En sağlam körnün matkabucunu bulmamız mümkün arkadaşlar.
+
+443
+01:43:52,112 --> 01:43:58,492
+Diğer kullanacağımız başka bir filtre de ortanca süzgeci, medyan filtri arkadaşlar.
+
+444
+01:44:00,975 --> 01:44:16,355
+Bu, belli bir boyutta, K çarpı K boyutunda, örneğin 3 çarpı 3 boyutunda bütün piksel değerlerini alıyorlar. Bunları sıralıyorlar. Aynı medyan değerini bulur gibi en ortadaki değerini hesaplıyorlar.
+
+445
+01:44:27,699 --> 01:44:34,359
+Yeni piksel değerimiz olacak. Bakalım medyan filtrenin nasıl bir etkisi bulunuyormuş.
+
+446
+01:44:34,359 --> 01:44:45,880
+Örneğin burada orijinal bir görüntüye tuz biber gürültüsü ekleyelim. Daha sonra bunu alçak geçiren süzgeç ile yumuşatalım.
+
+447
+01:44:45,880 --> 01:44:54,059
+Bir de ortanca süzgeci ile yumuşatalım. Alçak geçiren süzgeçte çok yoğun gürültünün olması durumunda
+
+448
+01:44:54,260 --> 01:44:59,119
+Gürültüler de tekrar hesaba katılacağı için bir yumuşatma olacak.
+
+449
+01:44:59,119 --> 01:45:04,699
+Tabi ki burada yumuşatma etkisi var ama gürültünün tamamını yok edemiyor.
+
+450
+01:45:05,559 --> 01:45:11,599
+Bakın ortanca süzgeci daha iyi sonuç vermiş. Neden ne olabilir sizce arkadaşlar?
+
+451
+01:45:18,292 --> 01:45:20,292
+Nedeni ne olabilir arkadaşlar?
+
+452
+01:45:20,292 --> 01:45:22,292
+Bir fikri olan
+
+453
+01:45:27,188 --> 01:45:53,528
+Aydın? Burada gaussiyen gibi bir şey mi var işlevi? Yok. Dikkat et. Temelde şey ne yapıyordu? Tuz biber gerilatısı şurada oluşuyor veya şurada oluşuyor. Çok böyle içeriği doldurmuyor. Ama çoğunluk olan piksellerin değerini... Mesela tuz biber gerilatısı şurada oluştu diyelim sıfır.
+
+454
+01:45:54,036 --> 01:46:16,036
+Veya tam derste 255. O ekstrem noktalarda bulunuyor. Dolayısıyla ortalama değerini aldığımızda ne oluyor arkadaşlar? Genelde şu 3'e 3'lük şeyde çoğunluk olan piksel değerinin merkezde olması sağlanacağı için bu tarz gürültülerde mesela kenarları da koruyan...
+
+455
+01:46:16,095 --> 01:46:19,555
+Ortancası ilgeci daha yoğun olarak kullanıyor arkadaşlar.
+
+456
+01:46:20,155 --> 01:46:24,315
+Yani bir arada bulunan pikselleri topluyor, diğerlerini ayıklıyor.
+
+457
+01:46:25,735 --> 01:46:30,975
+Evet, yani şuraya baktığımızda, şöyle arttırdığımda, bakıyorum şöyle.
+
+458
+01:46:32,095 --> 01:46:35,175
+Genel olarak backgrounddaki piksel sayısı daha fazladır.
+
+459
+01:46:35,175 --> 01:46:40,175
+Şöyle baktığımda, şöyle aldığımda diyelim, şöyle alayım mesela.
+
+460
+01:46:41,043 --> 01:47:00,024
+Arkasındaki siyahlıklar veya beyazlıklar, tuz biber gültüsü ya bu. Siyahlıklar veya beyazlıklar örneğin şurada bulunuyor, şurada bulunuyor ama çoğunluk background diyelim. Dolayısıyla ortalama değere background'un daha çok yakınlaması sağlanıyor.
+
+461
+01:47:04,340 --> 01:47:04,840
+Evet.
+
+462
+01:47:11,667 --> 01:47:13,988
+Şimdi 5'e mi bakmıştık?
+
+463
+01:47:16,387 --> 01:47:18,708
+Peki şu 5'i açıyoruz.
+
+464
+01:47:24,756 --> 01:47:50,935
+Evet, şimdi biraz da renklerden bahsedelim. Renkler önemli bir kavram arkadaşlar. Renklerde en çok dikkat etmemiz gereken şey, renklerinde veya ışığında aslında bir elektromanyetik dalganın parçası olduğunu bilmemiz.
+
+465
+01:47:52,576 --> 01:48:19,695
+İşaretler nelerdir arkadaşlar? Hem elektrik alanın hem de buna dik olan manyetik alanın beraberce ilerledi. Ben güzel çizemedim ama dalgalar. Dikkat edin. Işık, radyo dalgaları, elektrik hatlarındaki dalgalar, TV, mikrodalgalar, infrarret, gama ışınları, kozmik ışınlar hepsi elektromanyetik dalga.
+
+466
+01:48:20,180 --> 01:48:37,540
+Dikkat edin, biz şurada dar bir bölgeyi, dar bir, bizim gözümüz dar bir alandaki yani 400 ile 700 nanometre arasındaki dalga boyunu sadece görebiliyor.
+
+467
+01:48:37,540 --> 01:48:45,160
+Dedim ya elektromanyetik dalga demiştim. Dalga dediğim zaman ne olacak arkadaşlar? Bunun bir periyodu olacak.
+
+468
+01:48:47,956 --> 01:48:59,735
+Bu da bir bölü f'e eşit. Yani frekansın tersine eşit. Dalga boyu küçüldükçe frekans ne olacak? T küçülürse frekans artar.
+
+469
+01:48:59,735 --> 01:49:11,615
+Veya t büyüdükçe yani t büyürse frekans düşer. Burada dalga boyuna bakıyoruz.
+
+470
+01:49:12,064 --> 01:49:16,844
+400 nm dalga boyu mu büyüktür? 700 nm dalga boyu mu büyüktür?
+
+471
+01:49:23,699 --> 01:49:28,819
+Dalga boyu açısından düşündüğümüzde 400 mü, 700 nanometre mi daha büyüktür arkadaşlar?
+
+472
+01:49:29,859 --> 01:49:30,279
+700.
+
+473
+01:49:30,959 --> 01:49:37,839
+700 daha büyüktür. Peki dalga boyunun büyük olması frekansın yüksekliğine mi düşüklüğüne mi işaret eder?
+
+474
+01:49:38,519 --> 01:49:40,919
+Dalga boyu yüksekse frekans düşük olur.
+
+475
+01:49:40,919 --> 01:49:47,919
+Frekans düşük olur. Demek ki bizim görünür ışık bölgemi bildiğimiz mavi genel olarak...
+
+476
+01:49:48,127 --> 01:50:09,487
+Yeşil ve kırmızı parçalara ayrılmış durumda. Ama burada biz tabii kabaca geniş bir alanı örneğin 400 ile 500 arasına mavi demişiz. 500 ile 600 arasına yeşil demişiz. 600 ile 700 arasına kırmızı demişiz. Geniş bir bant aralığına biz isim takmışız. Yeşil bant, kırmızı bant. Ama daha dar bantlar almak mümkün.
+
+477
+01:50:09,971 --> 01:50:19,551
+Dikkat edin, infraret bantlar sağ tarafa doğru, dalga boyu küçülürken, ultraviyole mor ateşli ışınlarda ise dalga boyu küçülüyor.
+
+478
+01:50:20,371 --> 01:50:26,471
+Şimdi, görünün ışık boyunda, yani 400 ile 700 nanometre arasındaki kısımda.
+
+479
+01:50:28,371 --> 01:50:33,051
+Mavi mi yoksa kırmızı mı daha yüksek frekanslı?
+
+480
+01:50:33,891 --> 01:50:35,551
+Başka bir arkadaş cevap versin buna.
+
+481
+01:50:41,108 --> 01:50:43,668
+[öğrenci], [öğrenci].
+
+482
+01:50:48,340 --> 01:50:50,060
+Duyuyor musun onu [öğrenci]?
+
+483
+01:50:56,051 --> 01:50:58,051
+Bununla ilgili ses geliyor mu?
+
+484
+01:51:02,260 --> 01:51:04,780
+Onu [öğrenci] dinlemiyor zannedersem dersi.
+
+485
+01:51:06,140 --> 01:51:07,380
+Chat'ten de yazabilirsin.
+
+486
+01:51:11,539 --> 01:51:36,759
+Evet, online değil. Sadece açtı. [öğrenci]. Evet hocam. Kırmızı mı yoksa mavi dalga boyu mu daha yüksek frekansa sahip? Mavi daha yüksek sahip. Evet. Dalga boyu küçük olduğu için daha yüksek frekansa sahip. Mavi dalga boyu. Burada şuna dikkat ediyoruz. Bir.
+
+487
+01:51:37,184 --> 01:51:48,284
+Elektromanyetik spektrumda, demek ki bizim şu havada gezen veya cep telefonlarımızı çalıştıran elektromanyetik dalgalarla ışık arasında hiçbir fark yok.
+
+488
+01:51:49,884 --> 01:52:02,144
+İkisi de elektromanyetik dalga. Sadece bizim gözümüz bu dalga boyundaki, bu daha da 400 ile 700 nanometre arasındaki dalga boyunu görmeye özelleşmiş.
+
+489
+01:52:04,020 --> 01:52:13,100
+Mavi dediğimiz kısım 400 ile 500 arasında, 500 ile 600 arasında yeşil, 600 ile 700 nanometre arasında ise kırmızı dalga boyları bulunuyor.
+
+490
+01:52:15,120 --> 01:52:21,080
+Şimdi frekans kavramından da bahsettiğimiz için burada biraz ilerliyorum.
+
+491
+01:52:21,080 --> 01:52:31,000
+Demek ki biz mikrodalga fırının içerisini görebilseydik, ona da bir beynimizde renk ataması yapacaktık veya renkleri öyle oluşturacaktık.
+
+492
+01:52:31,572 --> 01:52:51,572
+Şimdi koni ve de çubuk şeklinde hücreler bulunuyor gözümüzün arka tarafında. Burada optik bir mekanizma var. Daha sonra burada koni ve de çubuk şeklinde hücrelerle beraber biz parlaklık seviyesini...
+
+493
+01:52:51,775 --> 01:53:10,975
+Ve de renkleri birbirinden ayırıyoruz. Karmaşık, çok kompleks bir yapı. Koniler ve Rotlar diyor burada. Beyinde bir görüntü algısı oluşturuluyor arkadaşlar. Ve bu tamamen analog bir şekilde gerçekleşiyor. Çok karmaşık, kompleks bir sistem.
+
+494
+01:53:10,975 --> 01:53:15,195
+Şimdi buna çok fazla ben girmiyorum.
+
+495
+01:53:18,771 --> 01:53:34,252
+Temelde baktığımda ben Red Green Blue şeklinde düşündüğümde bu Red Green Blue bileşenlerin bir araya gelmesinden renklerin oluştuğunu söyleyebilirim.
+
+496
+01:53:34,912 --> 01:53:38,771
+Şimdi biz bu Red Green Blue'yu da ne yapıyorduk arkadaşlar?
+
+497
+01:53:39,512 --> 01:53:41,852
+Üç tane band olduğunu düşünürsek şöyle.
+
+498
+01:53:42,351 --> 01:54:07,771
+Her bir piksel değeri üç tane değerle ifade ediyoruz. Piksel üç tane değerle ifade ediyoruz. Red, Green, Blue. Şimdi bunların hepsi 255 ise ne oluyor arkadaşlar? Piksel beyaz oluyor. Hepsi sıfırsa siyah oluyor.
+
+499
+01:54:08,372 --> 01:54:15,492
+Sadece şöyle ise 255.00 ise en parlak kırmızı olmuş oluyor.
+
+500
+01:54:16,072 --> 01:54:22,672
+Veya 128.00 ise yine kırmızı ama parlaklığı düşük olmuş oluyor.
+
+501
+01:54:24,152 --> 01:54:30,032
+Mesela 5.00 da bir kırmızı rengidir ama parlaklığı en düşük seviyededir.
+
+502
+01:54:33,011 --> 01:54:56,011
+250, 128, 128, 0. Nedir bu? Kırmızıdan da var, yeşilden de var. Ne olacak bunun sonucu? Ara renk? Sarı. Sarı renk olacak. Bu şekilde red, green, blue ana renkler yapıyor. Bazen de bunun tam tersi...
+
+503
+01:54:56,627 --> 01:55:03,847
+Ara renkler ana renk yapılıyor. Çünkü biz sonuçta şu kartezyen koordinatı istediğimiz gibi belirleyebiliriz.
+
+504
+01:55:03,907 --> 01:55:08,967
+RGB de diyebiliriz. C, M, Y de diyebiliriz.
+
+505
+01:55:09,507 --> 01:55:14,667
+Bu sefer ara renkler bizim ana renk olarak bildiğimiz renklere dönüşmüş oluyor.
+
+506
+01:55:14,667 --> 01:55:22,307
+Burada merkezde beyaz bulunurken burada ise siyah bulunuyor arkadaşlar.
+
+507
+01:55:24,275 --> 01:55:37,636
+Demin de anlattığım gibi aslında renkli bir resim demek. Şuraya geldiğimde, şöyle baktığımda, biz bir ışığı, mesela bir nesne var diyelim şöyle.
+
+508
+01:55:39,315 --> 01:55:47,796
+Renkli fotoğrafını çektik diyelim. Geldi, buradan yansıyanı biz kameraya çekmiş oluyoruz değil mi? Dijital halini oluşturuyoruz.
+
+509
+01:55:51,840 --> 01:56:18,000
+Dikkat edin, mavi ve de yeşiller, yeşiller belki şuralarda tutuluyor ama, kırmızı elma diyelim buna. Kırmızı bir elmayı algılamamızın nedeni, buradan kameraya kırmızı uzun dalga boylu şu kısımdaki elektromanyetik dalgaların yansıması. Mavi ve yeşil ise burada yutuluyor. Yutulmayan dalga boyunu bizim gözümüz veya kameralar anca algılıyor.
+
+510
+01:56:18,899 --> 01:56:39,619
+Dolayısıyla şunu söyleyebiliriz. Renkli bir resimde, eğer ben bunların bantlarına bakacak olursam, bantlarına şuraya bakacak olursam, RGB, RGB değerini tutuyorum. Burada yansıyan değerin yüksek, buralarda ise nispeten küçük. Green ve Blue'da ise küçük olmasını bekliyorum.
+
+511
+01:56:41,299 --> 01:56:44,919
+Burada da arkadaşlar aynı öyle bir resim var.
+
+512
+01:56:45,279 --> 01:57:11,139
+Şimdi dikkat edin. Kırmızılar nerede? Burada. Ben neyi beklerim? Şurada da kırmızı var. Niye? Red artı green. Şurada red olan yerler. Dikkat edin. Red bileşenin olduğu yerler daha parlak çıkmış. Yani ben bunu 3 plane'e, yani renkli resim 3 tane plane'den.
+
+513
+01:57:11,503 --> 01:57:20,163
+Veya 3 matristen oluşuyor dersen, kırmızı bileşenin çok olduğu, yani 0-255 arasında yer alıyor ya parlaklık değerli.
+
+514
+01:57:20,163 --> 01:57:30,023
+Dikkat edin, buralarda kırmızı bileşenin çok olduğu yerlerde bizim red plane'imizde daha yüksek değerler oluşuyor.
+
+515
+01:57:31,003 --> 01:57:38,323
+Dikkat edin, elmanın içinde mavi bileşen olmadığı için mavi plane'de, yani mavi matrisde,
+
+516
+01:57:38,739 --> 01:58:05,300
+Şöyle Red, Green, Blue. Şu Red'i buraya çizdirmişiz, parlaklıkları. Green'i buraya çizdirmişiz, Blue. Elmaya denk düşen pikseller şuralar yani mavi katkısı en az olduğu için bakın oralarda siyah çıkmış. Gördünüz mü? Ama mavi bileşenin olduğu yerlerde artık parlaklık şuralarda aralıklar da artmış gözüküyor arkadaşlar.
+
+517
+01:58:08,724 --> 01:58:19,604
+Evet, buraları geçiyorum. Onun dışında renkle alakalı ciddi çalışmalar var. Renk üzerine ciddi arkadaşlar.
+
+518
+01:58:22,323 --> 01:58:27,203
+Farklı değerlendirme yöntemleri var. En çok bildiğini GE denir.
+
+519
+01:58:27,283 --> 01:58:38,743
+Commission International Demiş. Renk modelleri en çok bildiğimiz RGB, CMY, yani cyan, magenta, yellow şeklinde.
+
+520
+01:58:39,743 --> 01:58:42,323
+Işıklılık ve renklilik bileşenleri ayrı olarak...
+
+521
+01:58:42,644 --> 01:58:52,804
+Düşündüğümüzde dersin başında anlatmıştım. HSI, HSP, Hue, Saturation, Intensity or Brightness gibi değerler tutuluyor.
+
+522
+01:58:54,323 --> 01:58:59,703
+En basitinden RGB renk modeline baktığımızda arkadaşlar,
+
+523
+01:59:00,340 --> 01:59:20,779
+RGB renk modelinde, örneğin burası R, burası G, burası B. Biri 255 olarak algılayın arkadaşlar. Normalize edilmiş. Eğer bütün bileşenler aynı değeri alıyorsa burada şu gri hatta bulunuyor. Yani şunun merkezindeki gri hatta bulunuyor.
+
+524
+01:59:21,231 --> 01:59:29,751
+Burada uzaydaki herhangi bir nokta, red-gris bulundan ne kadar değer aldığına göre bir renge dönüşüyor.
+
+525
+01:59:30,372 --> 01:59:34,532
+Bunun dışında HSI modeli de var. Çok değer şeylerine girmiyorum.
+
+526
+01:59:36,612 --> 01:59:41,631
+Farklı uzaylar burada karşılaştırılmış. Buralar benim ilgi alanıma girmiyor.
+
+527
+01:59:41,631 --> 01:59:42,631
+Şimdi...
+
+528
+01:59:45,235 --> 01:59:58,315
+6 ile beraber devam edeceğim. Şimdi bir ara vereceğim arkadaşlar. Bir 10 dakikalık aradan sonra frekans uzayı kavramına gireceğiz arkadaşlar. Sizin sonunda istediği sorular var mı?
+
+529
+02:00:02,131 --> 02:00:06,011
+Tamam. Bir 10 dakika sonra tekrar beraberiz.
+
+530
+02:10:32,372 --> 02:10:33,891
+Tekrar merhaba arkadaşlar.
+
+531
+02:10:37,492 --> 02:10:41,872
+Merhaba hocam. Tamam, ses geliyor anladığım kadarıyla. Evet hocam.
+
+532
+02:10:41,872 --> 02:11:02,872
+Şimdi frekans uzayı, görüntülerin frekans uzayı yorumlanmasına geçelim. Temel kavramları verdik arkadaşlar. Piksel temelli, komşuluk temelli işlemleri verdikten sonra şimdi frekans uzayında nasıl bir...
+
+533
+02:11:03,199 --> 02:11:08,460
+Değerlendirme yapabileceğimize genel kapsamda bir değineceğiz.
+
+534
+02:11:11,796 --> 02:11:18,416
+Frekans uzayında ışıklık veya renk değişimlerine bağlı olarak çeşitli parlaklık seviyesi geçişleri var.
+
+535
+02:11:19,555 --> 02:11:24,836
+Yatay veya düşeğe doğrultuda pikseller arasındaki ışıklık değişimleri gözüküyor.
+
+536
+02:11:24,836 --> 02:11:31,695
+Bunları bir dizi şeklinde görürsek aslında tek boyutlu dizilerin toplamından.
+
+537
+02:11:32,036 --> 02:11:34,015
+Maddisleri de o şekilde yorumlayabiliriz.
+
+538
+02:11:36,047 --> 02:11:51,648
+Bu şekilde bir analizleri gerçekleştirelim. Özellikle kenar geçişlerinin yüksek uzamsal frekanslara denk geleceğini söylemiştik. En başta tekrar bir furya dönüşümünü hatırlayacak olursak.
+
+539
+02:11:53,747 --> 02:12:03,188
+Herhangi bir işaretin aslında kendini oluşturan birçok sayıdaki sinüsün toplamı şeklinde ifade edilebileceğini söylemiştik.
+
+540
+02:12:03,188 --> 02:12:13,547
+Şu kenar geçişlerinin yüksek olduğu yerler, şuradaki gibi, şuradaki gibi. Ne olacak arkadaşlar? Yüksek frekanslı bileşenlerin yoğun olduğu yerler olacak.
+
+541
+02:12:14,260 --> 02:12:23,539
+Veya çok az değişimin olduğu, eğer şöyle olsaydı burası, şu gibi yumuşak geçişlerin olduğu yerlerse düşük frekanslara denk gelecekti.
+
+542
+02:12:25,880 --> 02:12:32,840
+Hatırlarsınız, bir boyutlu, biz baktığımızda en son ne diyorduk?
+
+543
+02:12:35,252 --> 02:12:39,092
+Genel olarak Fourier kavramında ne diyorduk?
+
+544
+02:12:39,092 --> 02:12:41,552
+XK, en son onu görmüştük.
+
+545
+02:12:41,652 --> 02:12:46,052
+XK, n eşittir.
+
+546
+02:12:46,712 --> 02:12:48,992
+X sonsuzdan sonsuza kadar.
+
+547
+02:12:49,712 --> 02:12:57,172
+Xn, e üzeri eksi j, 2pi bölü n, nk demiştik.
+
+548
+02:12:57,619 --> 02:13:08,599
+Aslında hepsi aynı şey. Veya büyük XT'yi açıklayacak olursak sürekli haldeki X sonsuzdan sonsuza kadar XT işaretini gerçeğine alıyoruz.
+
+549
+02:13:08,599 --> 02:13:20,599
+E üzeri eksiği, J'yi ne diyorduk arkadaşlar? Omega T. Burada yapılanlar...
+
+550
+02:13:21,844 --> 02:13:28,624
+Genel olarak işaretle bir temel fonksiyonun çarpımını söylüyor. Farklı frekanslardaki.
+
+551
+02:13:28,624 --> 02:13:38,884
+Tabi biz sayısal hale geçtiğimizde eksi pi, pi aralığında biz işaretlerimizi inceleyebildik. Sürekliden farklı olarak.
+
+552
+02:13:39,796 --> 02:13:53,816
+Veya 0, 2 pi arasını düşünüyorduk. Dikkat edin, en yüksek frekanslar pi'ye yaklaştığımız kısımlarda oluyordu. Şurada ondan sonra simetrik bir hali de vardı hatırlayacağınız gibi.
+
+553
+02:13:55,816 --> 02:14:03,916
+Şimdi, biz bulduğumuz furya kat sayıları kompleks sayılardı.
+
+554
+02:14:04,659 --> 02:14:08,039
+Dolayısıyla bu kompleks sayıların neyini çiziyorduk biz arkadaşlar?
+
+555
+02:14:08,680 --> 02:14:10,239
+Magnitüdünü çiziyorduk.
+
+556
+02:14:10,239 --> 02:14:14,000
+Real kısım ve imajinal kısım ise şayet.
+
+557
+02:14:14,539 --> 02:14:24,420
+Square root, real kare artı imajinal kare bulup burada bir magnitude veya amplitude değerlerini buluyorduk.
+
+558
+02:14:24,939 --> 02:14:31,180
+Bir de aradaki açıyı hesaplarken arkadaşlar, burada da teta açısını arktanjant,
+
+559
+02:14:33,395 --> 02:14:37,475
+İmajinal, böyle real şeklinde hesaplıyorduk.
+
+560
+02:14:38,875 --> 02:14:45,035
+Evet, şimdi basitçe şöyle bir şey yapabiliriz.
+
+561
+02:14:45,735 --> 02:14:54,575
+Görüntüdeki orijinal görüntümüzü iki boyutlu furya dönüşümüne tabi tutup kompleks değerleri elde ettikten sonra,
+
+562
+02:14:54,575 --> 02:14:58,235
+rekans domeyinde yapacağımız işlemlerden sonra,
+
+563
+02:14:59,091 --> 02:15:04,971
+Ters furya dönüşümü alarak değiştirilmiş görüntümüzü elde edebiliyoruz.
+
+564
+02:15:05,452 --> 02:15:11,811
+Şu kısım bizim şu yönden gittiğimiz kısım frekans işlemlerimiz.
+
+565
+02:15:13,931 --> 02:15:20,271
+Eğer direkt yaptığımızda ise bizim uzamsal işlemlerimizi.
+
+566
+02:15:21,908 --> 02:15:41,688
+İfade ediyoruz. Frekans domeyine geçmenin faydası ne bizim için? Frekansda uzamsalda göremediğimiz bilgileri işleme üzerinde daha basit işlemler yapıp daha amacımıza uygun işlemleri gerçekleştirip geri dönme olasılığımız var.
+
+567
+02:15:49,108 --> 02:16:10,448
+Gürültüyü kattığımızda bakın, gürültü demek yüksek frekanslı geçiş bilgileri demek. Merkezde olan yüksek değerler ki şuna denk gelir, şöyle alçak frekans bileşenleri varlığına denk gelir eğer bir satır bazında ilerlerse. Eğer buralarda gürültü eklediğimde şuraların artmasını beklerim ben.
+
+568
+02:16:11,060 --> 02:16:18,740
+Bakın burada da öyle olmuş. Gürültü eklediğimde şuralar veya dikeydeki yerlerde parlaklık değerleri artmış.
+
+569
+02:16:18,740 --> 02:16:25,000
+Bu da aslında yüksek frekanslı bileşenlerin işin devreye girdiğini gösteriyor.
+
+570
+02:16:25,600 --> 02:16:30,400
+Veya bir yumuşatma filtresi geçirdiğimde, yumuşatma filtresi ne demek?
+
+571
+02:16:37,012 --> 02:16:51,252
+Şurası frekans seyirsi olsa olduğunu gösteriyor. Bakın burada da daha dar bir alana iki boyutlu furya. Dikkat edin bunlar da amplitude'lerdir arkadaşlar. Kompleks değerlerin amplitude değerleri veya mutlak değerleridir.
+
+572
+02:16:54,772 --> 02:17:19,812
+Örneğin bir işlem yapalım sizinle beraber. Bir tane görüntümüz olsun. Ortası beyaz ve gürültü içersin. Arka plan daha koyu renkli ve yine gürültüler var. O gürültüleri burada yükseklik bilgisi olarak, brightness değerlerini yükseklik bilgisi olarak vermişiz. Parlak değerler şuradaki gibi bir karesel.
+
+573
+02:17:20,180 --> 02:17:26,319
+bir küp oluşturuyor. Şimdi burada DFT'ye baktığımızda arkadaşlar,
+
+574
+02:17:26,579 --> 02:17:31,440
+neyi görüyoruz? Frekans bileşenlerini görmüş oluyoruz. Aslında şurada
+
+575
+02:17:31,700 --> 02:17:35,020
+gittiğinizde şöyle bir alçak frekans bileşenleri, ufak ufak
+
+576
+02:17:35,280 --> 02:17:37,579
+yüksek frekans bileşenleri de bulunuyor.
+
+577
+02:17:38,100 --> 02:17:42,959
+Bir alçak geçiren filtre uygulasak şuna
+
+578
+02:17:43,219 --> 02:17:57,979
+Sadece şuradaki kat sayıları alsak, yani kessek bunu, şurayı alsak sadece. Yüksek frekansları elimine etsek. Yani bunu yapmanın yolu da nedir? Belli bir alandaki değerleri korursunuz, diğer her tarafın maddesini sıfırlarsınız.
+
+579
+02:18:09,299 --> 02:18:36,879
+Gürültülerin bakın arka plandaki gürültüler gitmiş veya beyazın üstündeki gürültüler gitmiş. Daha yumuşak bir görüntü elde etmişiz. Artı şuradaki kare bakın eğimli olarak yükseliyor. Bu alçak geçiren filtrenin frekans domeynindeki normalde biz kernel'larla yapıyorduk bunu. Kernel'larla yapılmış halini daha basit bir şekilde yaptık. Alçak frekans bileşenliğini aldık.
+
+580
+02:18:37,332 --> 02:19:04,332
+Veya yüksek frekans bileşenlerini alalım. Bu sefer de ortayı boşaltalım, sıfırlayalım. Ondan sonra ters full'a dönüşmüyor. Sadece kenarlarda yüksek değerler veriyor bakın. Onun dışındaki her yerde, şuralarda ve içeride ve dışarıda hemen hemen aynı değerleri, düşük değerleri almış. Sadece geçişlerde, bakın şurada, sadece geçişlerde yüksek değerler vermiş durumda.
+
+581
+02:19:18,484 --> 02:19:23,283
+Görüntü işlemede bir diğer önemli kavram da arkadaşlar morfolojik işlemler.
+
+582
+02:19:23,404 --> 02:19:28,644
+Morfoloji şekil bilim olarak geçiyor.
+
+583
+02:19:29,484 --> 02:19:39,144
+Şekillerine yani görüntüdeki nesnelerin şekilleriyle biraz ilgileneceğiz arkadaşlar.
+
+584
+02:19:39,924 --> 02:20:05,123
+Burada matematiksel morfolojik işlemlerden bahsedeceğiz. En temelde kullandığımız iki temel morfolojik işlem var. Morfolojik işlemler arkadaşlar, Binary görüntülerde, Binary imgelerinin analizinde kullanılıyor. Kenar bulma, ültü gider, müpeşe, böğütme gibi uygulamalarda da kullanılıyor.
+
+585
+02:20:06,355 --> 02:20:24,556
+İnceltme, filtreleme, budama gibi en son özellikle morfolojik işlemler son. Post-processing işlemlerinde çok kullanılır arkadaşlar. Temel iki tane işlem var. Yayma, delation operatörü ve erosion, aşındırma operatörü olarak.
+
+586
+02:20:25,075 --> 02:20:36,175
+Karşımıza çıkıyor. Bir de bu işlemlerin arka arkaya uygulanması sonucunda açma, opening ve kapama, closing işlemleri de ayrıca tanımlanabiliyor.
+
+587
+02:20:37,195 --> 02:20:48,175
+Yayma dediğimizde iki tane görüntü var. Bir tanemiz orijinal görüntü, diğeri ise yapı elemanı olarak adlandırılıyor. Structural element olarak adlandırılıyor.
+
+588
+02:20:49,332 --> 02:21:04,132
+Görüntü üzerinde yapı elemanı gezdirilerek yaymada nasıl bir etkisi varmış onu göreceğiz. Arada yuvarlak artı şeklinde gösteriliyor. Bir görüntü neye dönüşecek ona bakacağız.
+
+589
+02:21:04,852 --> 02:21:30,352
+Yapı elemanlarımız yine kernel'lar gibi arkadaşlar. Aynı şekilde. Kare olabileceği gibi yuvarlak, değişik şekillerde olabiliyor veya şu şekilde olabiliyor. Önemli olan bazı hangi noktalara değdiğini, merkez noktasının çevresindeki komşu piksellerin değerlerini de elemana işleme katarak işlem yapıyor.
+
+590
+02:21:30,995 --> 02:21:49,036
+Örneğin, merkez noktası burası diyelim. Şöyle yerleştirebiliyoruz arkadaşlar. Şimdi bu 1-1-1 yapıldığı zaman ne yapıyor? Kendi içerisine yani yapı ilanın içerisinde en az bir bulunması halinde diğer kalan her yeri 1 yapıyor.
+
+591
+02:22:56,020 --> 02:22:58,580
+Evet arkadaşlar, tekrar geldik.
+
+592
+02:22:59,360 --> 02:23:15,280
+Şimdi belli bir alanda yani o Structural Eleman'ın alanı içerisine düşen şu alan içerisinde birilerinin bulunması halinde diğer kalan pikselleri de yani merkez pikseli bir yapıyor veya kenarda kaldık diyelim şöyle yaptık diyelim.
+
+593
+02:23:15,280 --> 02:23:20,960
+En az bir tane bir bulunması halinde diğer her tarafı da birilerle dolduruyor.
+
+594
+02:23:23,827 --> 02:23:41,367
+Kenarlar ne olmuş oluyor bu şekilde? İttikçe artmış oluyor. En az bir tane bir rastlanması halinde buralarda bir, şuralarda bir şeklinde yayma işlemiyle nesneler birbirleriyle birleştirilebiliyor.
+
+595
+02:23:41,367 --> 02:23:49,067
+Bu nerede işe yarıyor? Özellikle gürültü sayılabilecek bazı şeylerin kapatılması, azaltılması etkisinin.
+
+596
+02:23:49,471 --> 02:24:16,412
+Amacıyla kullanılıyor. Tek boyutlu olarak şöyle vermiş mesela bir tane örnek. Structural Eleman sadece bir boyutundan yararlanıyoruz. Yani bizim buradaki sadece bir tane satırdan, satırın ne iş yaptığına bakalım. Bakın bu alanda sadece bir tane bir bulunduğu için merkez piksel bir olmuş. Şuralarda boşluk, şuralar nesne gibi kabul edin. Bir, yavaş yavaş üzerinden geçiriyoruz.
+
+597
+02:24:17,172 --> 02:24:40,792
+Burada 0, 0, 0'a denk gelen yerlerde en azından 1, 1 yok. Orası 0 oluyor. Bir yana kaydırdığımızda artık bir tane bir en azından denk geliyor burada. Burası da merkez pikselinin olduğu yer 1 oluyor. Burada 1'ler 2 yerden çakışıyor 1. Ondan sonra 3 yerden çakışıyor burada. Burası da 1.
+
+598
+02:24:41,683 --> 02:25:08,783
+Veya şurada hala bir alıyoruz. Burası da bir. Burada iki yerden bir alıyor. Burası da bir. Bakın sıfır bir oldu. Arası kapandı. Burası da bir geldiği zaman. Ne oldu arkadaşlar? Şu geniş alanlar kapandı. Daha aradaki bölgeler daraldı. Ve de şu ufak olan boşlukları zaten yok oldu. Tamamıyla nesneler birleşmiş oldu.
+
+599
+02:25:09,907 --> 02:25:31,627
+Buna arkadaşlar yayma, gerçekten nesne yayılarak genişleme gösteriyor. Tam tersine aşındırma işlemi de şöyle yuvarlak içerisinde eksiyle çiziliyor. Yine bir structural elementimiz var. Structural elementimiz dikkate alınacak bölgeyi bize göstermiş oluyor arkadaşlar.
+
+600
+02:25:38,227 --> 02:26:00,027
+Bizim tamamıyla sıfır olan bir olan yerlerimizi bir uyguluyor. Eğer içerisinde bir miktar bile sıfır olsa orayı sıfırlıyor. Dolayısıyla nesnelerin sadece merkezinde yani search elementin tamamıyla içine düşen kısımlar ne oluyor?
+
+601
+02:26:05,716 --> 02:26:19,595
+Pikseller korunuyor. Dolayısıyla bir budama işlemi, nesnelerin daraltma, tinning işlemi gerçekleştirmiş oluyor. Örneğin, burada da sıfırla karşılaştığımız için sıfır.
+
+602
+02:26:19,595 --> 02:26:32,175
+Çünkü bir tane sıfır olması yeterli. Tamamıyla sıfır olan yerler zaten sıfır. Hala bir sıfırla temasımız var. Sıfır.
+
+603
+02:26:34,355 --> 02:26:37,076
+Yine burada bir sıfırla temasımız var. Sıfır.
+
+604
+02:26:38,115 --> 02:26:43,796
+Dikkat edin arkadaşlar. Sadece birilerle karşılaştığımız kısımda anca birimiz kaldı.
+
+605
+02:26:45,015 --> 02:26:47,556
+Onun dışında sıfıra değdik burada. Sıfır.
+
+606
+02:26:49,396 --> 02:26:51,155
+Hala sıfıra değiyoruz. Sıfır.
+
+607
+02:26:52,275 --> 02:27:03,835
+Burada da sıfır. Dikkat edin. Sadece şu geniş nesne bölümünü ortasındaki kısıma bir verip her tarafı erozyon da deniyor ya buna. Yok etmiş olduk.
+
+608
+02:27:03,835 --> 02:27:10,515
+Şimdi açma ve kapama işlemleri yayma ve erozyon işlemleriyle gerçekleştiriliyor.
+
+609
+02:27:10,963 --> 02:27:28,363
+Açma işlemi şu şekilde yuvarlak bir daire şeklinde. Kapama işlemi de içi dolu bir çember. Kapama işlemi ise içi dolu bir daire gibi gösterilmiş. Image Open ve Image Close konutlarıyla kullanılıyor.
+
+610
+02:27:28,363 --> 02:27:36,363
+Burada önce açma işleminde öncelikli olarak erozyon sonra delation.
+
+611
+02:27:37,203 --> 02:27:46,623
+Kapama işleminde önce yayma yapıyoruz. Daha sonra erozyon işlemini uygulayalım.
+
+612
+02:27:47,623 --> 02:27:52,743
+Açma işlemini niye açma denmiş? Önce erozyon yaptığımız için ilk adımda,
+
+613
+02:27:52,743 --> 02:28:04,684
+önce nesnelerin iskeletlerini çıkartıp, kenarlardaki fazlalıkları yok edip sonra yayıyoruz.
+
+614
+02:28:05,139 --> 02:28:14,939
+Dolayısıyla önce daralttığımız sonra açtığımız için, genişlettiğimiz için açma olarak adlandırılıyor.
+
+615
+02:28:14,939 --> 02:28:18,340
+Kapama işlemi de bunun tam tersi. Örneğin açma yapalım.
+
+616
+02:28:19,739 --> 02:28:25,840
+Önce merkezlik pikseller bulundu. Ondan sonra açma yapıldığı için bakın nasıl bir etkisi olmuş.
+
+617
+02:28:26,000 --> 02:28:40,079
+Kenarlık ekstrimiteler gitmiş, daha düzgün yuvarlakımsı bir şekilde oluşmuş. Kapamada ise öncelikli olarak ne yapıyorduk? Önce yayma işlemi yapıyorduk. Önce yayma işlemi yapıldığı için şuralar bir dolar öncelikli olarak.
+
+618
+02:28:41,075 --> 02:28:55,575
+Ondan sonra iyice çoğu yayıldıktan sonra arkadaşlar, ondan sonra Teknik İşlemi yaptığımızda dikkat edin nesnelerin kapalı bölgelerinin giderilmesi için kullanılıyor bu işlem.
+
+619
+02:28:57,515 --> 02:29:00,755
+Mesela şurada bir nesne var, burayı arasını birleştirmiş mesela burada.
+
+620
+02:29:01,716 --> 02:29:11,976
+Evet, mesela burada ne yapıyoruz önce? Önce erozyonla yok etmişiz şu ufaklıkları, sonra açmışız. Bu hangi işlem arkadaşlar?
+
+621
+02:29:12,819 --> 02:29:33,360
+Özellikle şu tarzdaki büyüklükteki partikülleri sadece kalmasını istiyorsak, bu bizim için Opening İşlemi. Bakın buradaki şu siyah kısımların giderilmesini istiyorsak, bu da Closing İşlemi ile beraber önce yayıyoruz, sonra inceltiyoruz. Aradaki şu gürültülü bölgeleri gidermiş oluyoruz.
+
+622
+02:29:40,819 --> 02:30:00,099
+İşlenmesiyle bu çıkıyor. Bakın bir parmak izi var. Gürültülü arka plan. Ama biz sadece neleri istiyoruz? Şuradaki net kısımları, parmak izlerini bulduk. Şuradaki kopuklukların giderilmesini istiyoruz. O kopuklukları da giderdikten sonra ne yapıyor arkadaşlar? Bunun için de kullanabiliyoruz.
+
+623
+02:30:02,239 --> 02:30:03,239
+Evet.
+
+624
+02:30:11,476 --> 02:30:14,796
+Görüntü Sıkıştırmayı göstermeyeceğim.
+
+625
+02:30:21,459 --> 02:30:24,379
+Video Sıkıştırma Formatlarını da göstermeyeceğim.
+
+626
+02:30:31,092 --> 02:30:39,031
+Hareket kestirme de bizim ilgi alanımızda değil. Şimdi ben şunu öncelikle bir paylaşayım.
+
+627
+02:30:42,579 --> 02:30:44,680
+Benim Biyomedikal Signal Procesi.
+
+628
+02:30:44,899 --> 02:30:52,719
+Şurada arkadaşlar, önümüzdeki hafta biraz görüntü işleme ile beraber makine öğrenmesini biraz anlatacağım.
+
+629
+02:30:52,819 --> 02:30:58,619
+Makine öğrenmesinin temel kavramlarını anlayabilmeniz için size bir tane paper yolluyorum.
+
+630
+02:30:59,099 --> 02:31:04,239
+Makine öğrenmesinin temellerini anlatan, Patent Ignition ile beraber çok yakınlar zaten.
+
+631
+02:31:04,920 --> 02:31:09,180
+Şu paper'ın özetini çıkarmak istiyorum. Bunun için de iki hafta vereceğim arkadaşlar.
+
+632
+02:31:10,036 --> 02:31:18,275
+Hemen onun ödevini tanımlayalım. Bunun el yazıyla özetini istiyorum arkadaşlar göndereceğim paper'ın.
+
+633
+02:31:18,275 --> 02:31:27,736
+Ki büyük ihtimalle önümüzdeki hafta sınav haftası olduğu için ders tanımlanmayabilir. Şu anda Fen Bilimler Enstitü ne yapacak onu bilmediğim için.
+
+634
+02:31:28,815 --> 02:31:34,256
+Ama bunun için eğer önümüzdeki hafta dersler olacak olursa sizden bunun özetini istiyorum.
+
+635
+02:31:36,691 --> 02:31:38,471
+Kontrol paneline gelelim.
+
+636
+02:31:43,891 --> 02:31:45,492
+Ödev tanımlayalım.
+
+637
+02:31:47,292 --> 02:31:48,412
+Hemen şurada.
+
+638
+02:32:04,564 --> 02:32:06,963
+Ödev kaçtı bizim arkadan? Ödev 5 miydi?
+
+639
+02:32:14,004 --> 02:32:15,844
+Ödev 5 miydi arkadaşlar bu?
+
+640
+02:32:16,884 --> 02:32:17,603
+Evet hocam, hadi.
+
+641
+02:32:27,796 --> 02:32:37,355
+Çok temel, sizlerin de çok işine yarayacak temel bir makale olduğu için bunu her dönem veriyorum hemen hemen.
+
+642
+02:32:39,156 --> 02:32:42,355
+Ödev şeklinde tanımlayalım. Başlangıcı da...
+
+643
+02:32:50,708 --> 02:32:52,368
+Bugünün tarihini verelim.
+
+644
+02:32:54,788 --> 02:33:01,808
+Ondan sonra son tarihini de 25'i derken ikisine çekelim.
+
+645
+02:33:01,808 --> 02:33:09,087
+Veya önümüzdeki haftaya ödeviniz yok değil mi?
+
+646
+02:33:10,268 --> 02:33:12,988
+Var hocam önümüzdeki haftaya.
+
+647
+02:33:12,988 --> 02:33:14,288
+İkisine çekelim.
+
+648
+02:33:14,968 --> 02:33:15,768
+İkisinin.
+
+649
+02:33:17,811 --> 02:33:19,051
+Akşamına kadar.
+
+650
+02:33:26,355 --> 02:33:27,335
+Ödevi Vermiş.
+
+651
+02:33:29,335 --> 02:33:34,855
+Bunu da, önce bir de dosyayı da seçelim tabii. Ödevi verecek dosyayı.
+
+652
+02:33:36,236 --> 02:33:38,315
+Kurs materyalsının içerisinde.
+
+653
+02:34:10,611 --> 02:34:24,151
+Kaydedelim. Bu da ödev beşiniz arkadaşlar. Son ödevimiz de bu. Ondan sonra dediğim gibi temel kavramları, bunu dikkatlice okuyun. Gerçekten alın çayınızı, kahvenizi içerisine.
+
+654
+02:34:24,151 --> 02:34:33,151
+Sadece çok da her tarafı özetlemenizi istemiyoruz. Elle yazarak, notlarınızı alarak, adım adım ilerleyerek.
+
+655
+02:34:34,195 --> 02:35:02,195
+Temel kavramları buradan bir çıkartmanızı istiyorum. Haftaya ödevimiz olacaksa şayet, haftaya dersimiz olacaksa şayet bunun hızlı bir şekilde yapılması iyi olur arkadaşlar. Ama ondan sonraki haftaysa eğer dersimiz o zamana kadar yayabilirsiniz. Ama önümüzdeki hafta belli olur. Ben şimdiden çalışmaya başlardım sizlerin yerinde olsam. Temel eksikliklerimin olduğu yerleri çok güzel YouTube'u...
+
+656
+02:35:02,195 --> 02:35:26,056
+Bu konuyla alakalı sitelerden, ne bileyim Medium Org gibi temel Tours Data Science gibi bloglardan çok temel kavramları anlamaya çalışırdım arkadaşlar. Çok yardımcı kaynak var. Çok introduction level kurslar var. Bunların da size yardımcı olacağını düşünüyorum. Bununla alakalı güzel dosyalar falan bulursam sizlere tekrar yollayacağım arkadaşlar.
+
+657
+02:35:26,835 --> 02:35:29,876
+Sizlerin soruları varsa sizlerin sorularını alalım.
+
+658
+02:35:34,355 --> 02:35:39,736
+Sormak istediğiniz kafanıza takılan, Image Processing ile alakalı olabilir, derslerle alakalı olabilir.
+
+659
+02:35:40,275 --> 02:35:42,755
+Sormak istediğiniz sorular varsa onları alalım arkadaşlar.
+
+660
+02:35:43,236 --> 02:35:45,216
+Ders slide'larını yükleyecektiniz ama hocam.
+
+661
+02:35:45,575 --> 02:35:49,495
+Ben daha kaliteli Image Processing slide'ları var elimde. Onları yüklemeyi düşünüyorum.
+
+662
+02:35:49,615 --> 02:35:53,435
+Bu biraz daha böyle temel seviye. Hızlıca derste anlattım.
+
+663
+02:35:53,435 --> 02:36:00,115
+Siz belki daha ayrıntılı bir şekilde görmek isterseniz diye elimde daha güzel slide'lar var. Onları yükleyeceğim arkadaşlar.
+
+664
+02:36:01,195 --> 02:36:02,056
+Tamam hocam.
+
+665
+02:36:02,195 --> 02:36:05,695
+Hocam bir şey sorabilir miyim?
+
+666
+02:36:06,155 --> 02:36:06,376
+Tabii.
+
+667
+02:36:07,915 --> 02:36:10,036
+Proje konuları siz mi belirteceksiniz?
+
+668
+02:36:10,995 --> 02:36:33,216
+Bizler de araçlarımızdan gelen tekliflere de açayım. Ben şu konuda çalışmak istiyorum. Ne dersiniz diye. Bulamayan arkadaşlar için ben proje konusu listesi hazırım. Orada devam edeceğiz. Sizlerden gelen önerilere de ben şu konuda çalışıyorum. Elimde şöyle bir dataset var. Şu konuda çalışmak istiyorum. Tekliflerinize de açayım arkadaşlar.
+
+669
+02:36:35,515 --> 02:36:36,735
+Mail olarak mı atacaksınız?
+
+670
+02:36:37,471 --> 02:36:39,932
+Yok, derste belirleyeceğiz. Derste beliriliriz.
+
+671
+02:36:40,652 --> 02:36:42,691
+Tamam, tamam. Ağladım hocam.
+
+672
+02:36:43,912 --> 02:36:48,691
+Hocam, peki bulacağımız proje konularının neleri içermesi gerekiyor?
+
+673
+02:36:49,272 --> 02:36:55,711
+Biyomedikal verilerin, o data setlerinin olmasını ve güncel bir konu olmasını amaçlıyoruz.
+
+674
+02:36:55,711 --> 02:36:56,711
+Çeşitli...
+
+675
+02:36:57,683 --> 02:37:17,644
+Yarışmalar var. Kaggle'da olsun, Grand Challenge'da olsun, datasetlerini yayınlıyorlar bazı konferanslarda. Onların üzerine de baya bir yayın mayın çıkıyor. Eğer datasetleri bulduğunuz zaman, amacınızı belirlediğiniz zaman, derin öğrenme yöntemleri var, makine öğrenmesinde güncel yöntemler var. Bunlarla birleştirip güzel bir şeyler yapabiliriz diye düşünüyorum.
+
+676
+02:37:20,564 --> 02:37:22,004
+Tamam hocam, teşekkür ederim.
+
+677
+02:37:22,423 --> 02:37:30,144
+Tamam, sizler de araştırın. Sizler de ilgi duyduğunuz bir alan varsa, özellikle biyometrik, sinyal, görüntü, her türlü şeye açığız arkadaşlar.
+
+678
+02:37:37,075 --> 02:37:43,015
+Şimdilik benim anlatacaklarım bunlar. Haftaya veya ondan sonraki hafta görüşmek üzere diyelim o zaman. Olur mu?
+
+679
+02:37:47,092 --> 02:37:47,891
+Görüşürüz.
+
+680
+02:37:48,792 --> 02:37:51,871
+Hepinize iyi çalışmalar. Görüşmek üzere. Kolay gelsin.
+
+681
+02:37:51,972 --> 02:37:52,492
+İyi günler.

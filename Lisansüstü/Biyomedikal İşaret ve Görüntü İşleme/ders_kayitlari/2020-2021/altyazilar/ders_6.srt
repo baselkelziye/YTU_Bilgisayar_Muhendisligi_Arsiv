@@ -1,0 +1,2871 @@
+1
+00:01:16,084 --> 00:01:17,224
+Günaydın arkadaşlar.
+
+2
+00:01:21,043 --> 00:01:27,963
+Günaydın hocam. Nasılsınız, iyisiniz? İyi hocam, siz nasılsınız?
+
+3
+00:01:28,643 --> 00:01:34,804
+Sağ olun. Şöyle bir başlatalım bakalım. Ekran paylaşımı geliyor mu iyi bir şekilde?
+
+4
+00:01:35,563 --> 00:01:41,403
+Geliyor hocam. Tamamdır. Şimdi biraz daha sayımız artsın, dersimize başlayalım.
+
+5
+00:07:50,899 --> 00:08:06,399
+Burada bulunan arkadaşlara söyleyeyim de, bazı arkadaşların ödevlerinin pdf'leri yüklenmemiş. Mesela [öğrenci], senin pdf yüklenmemiş. Yani şurada pdf'in gözükmesi lazımdı.
+
+6
+00:08:07,187 --> 00:08:12,447
+Onda bir sorun olabilir. Eğer yüklemeye çalışsam yüklenmemiş gözüküyor.
+
+7
+00:08:13,007 --> 00:08:15,267
+Daha yüklememiştim hocam, o yüzdendir.
+
+8
+00:08:15,707 --> 00:08:19,207
+Tamam. [öğrenci] için de aynı şey herhalde geçerli.
+
+9
+00:08:22,803 --> 00:08:30,043
+Hocam, ben ödevle ilgili her şeyi PDF'de dahil olmak üzere zip ile yolladım. Onu sadece PDF olarak mı yollayayım o zaman?
+
+10
+00:08:32,043 --> 00:08:46,743
+Tek PDF benim için yeterli. Hepsinin bir PDF'i, kodlar vardı biliyorsun. Kodlarla beraber birkaç örneğimiz vardı. Onları hep bir zip yerine PDF yaparsan daha iyi yoraydı.
+
+11
+00:08:46,743 --> 00:08:47,963
+Tamam, tamam.
+
+12
+00:08:48,307 --> 00:08:51,788
+Zaten zip'in içinde de PDF var. Hemen yüklüyorum.
+
+13
+00:08:57,011 --> 00:09:13,451
+Burada verdiğimiz ödevin adı yazıyor mu? DTMF. Tamam. Bir PDF yeterli bizim için. Zaten çok fazla kodluk bir şey yoktu. Önemli olan burada şeyi anlamaktı. Yani FastTuryTransform DFT'yi anlamaktı zaten.
+
+14
+00:09:17,652 --> 00:09:20,832
+Bu hafta bizim kaçıncı haftamız? Altıncı haftamız değil mi?
+
+15
+00:09:30,067 --> 00:09:31,607
+Bu hafta 6. hafta.
+
+16
+00:10:01,620 --> 00:10:03,620
+Derste 18 kişi var.
+
+17
+00:10:21,716 --> 00:10:30,556
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11. 11 kişi kadar devam ediyor gibi gözüküyor.
+
+18
+00:11:06,067 --> 00:11:08,887
+15 geçe gibi başlayalım dersimize arkadaşlar.
+
+19
+00:11:11,607 --> 00:11:18,788
+Ödevlerini henüz yükleyememiş olan arkadaşlar için bu akşama kadar ödevlerini yollamalığını istiyoruz.
+
+20
+00:11:20,028 --> 00:11:28,168
+Belli bir saatten sonra şey yapmayacağız, almayacağız ödevleri. Zaten sisteme yükleniyor. Ondan sonra notlandırmalar başlayacak arkadaşlar.
+
+21
+00:11:29,867 --> 00:11:32,888
+Dönem içi ödevleriniz de önemli.
+
+22
+00:11:33,587 --> 00:11:46,307
+Daha sonra beraberce projeler kısmına gireceğiz. 2-3 hafta içerisinde. Bu hafta bir zaman frekans analizi yöntemleriyle başlayacağız.
+
+23
+00:11:47,827 --> 00:11:54,107
+Çeyrek olduğu için şu anda 7 kişi gelmiş. Biraz daha bekleyelim, birazdan başlarız.
+
+24
+00:15:36,755 --> 00:16:00,775
+Herkese günaydın arkadaşlar. Bu haftaki dersimizde biraz geçmiş konuları tekrar edip, geçmişte öğrendiğimiz FFT, DTFT gibi yöntemlerin kısıtlarını, bunlara çözüm olarak kullanılan yöntemleri birkaç uygulamayla beraber görmeye başlayacağız.
+
+25
+00:16:04,083 --> 00:16:27,863
+Öncelikli olarak şunu söyleyelim. Sistemimizde şu an için 7 kişiyiz. Bazı ödevler submit edilmemiş. Şuraya çok fazla açıklama yazmayın arkadaşlar. Büyümesini satırlar. Sadece kaçıncı ödev olduğunu, ödev 2 yazmanız yeterli şu açıklama.
+
+26
+00:16:28,275 --> 00:16:40,775
+Ödev 2 DTMF yazmanız yeterli. Ondan sonra bu akşam biliyorsunuz son kısmı. Bugün yüklenmesi lazım. 3 kişi yüklemiş şu anda.
+
+27
+00:16:43,175 --> 00:16:52,275
+Şimdi göreceğimiz dersle beraber bir öncelikli olarak şuradan başlayalım.
+
+28
+00:16:53,955 --> 00:16:55,395
+Ses geliyor değil mi?
+
+29
+00:16:59,475 --> 00:17:00,395
+Geliyor o zaman.
+
+30
+00:17:00,395 --> 00:17:01,115
+Tamam.
+
+31
+00:17:02,015 --> 00:17:14,155
+Şimdi, öncelikli olarak bizim görmüş olduğumuz Fourier yöntemleri frekans analizi için kullanıyoruz.
+
+32
+00:17:14,236 --> 00:17:17,076
+Tabii matematiksel bir temeli var bunun.
+
+33
+00:17:21,268 --> 00:17:45,048
+1800'lerin başında geliştiriliyor. Daha çok frekans analizi, işaretlerin frekans analizini bulmaya çalışıyoruz. Ondan sonra yavaş yavaş frekans analizinde gördüğünüz gibi arkadaşlar sizlerin de ödevlerindeki gibi frekanslar tam bir şekilde tespit edilebiliyor ama hangi frekansın ne zaman oluştuğuyla alakalı bir zaman bilgisi yok.
+
+34
+00:17:45,875 --> 00:17:55,635
+Bunları değinebilmek için bu derste Short Time Fourier Transformu, yani kısa zamanlı Fourier dönüşümü ve dalgacık dönüşümlerinden bahsedeceğiz arkadaşlar.
+
+35
+00:17:55,635 --> 00:18:07,635
+1930'larda artık bizim basis functionlarımız, biliyorsunuz bizim Fourier dönüşümünde ne yapıyorduk?
+
+36
+00:18:11,059 --> 00:18:23,599
+e üzeri eksi j omega n dediğimizde bizim asıl fonksiyonumuzu bir karmaşık üstel ile çarpıyorduk.
+
+37
+00:18:23,599 --> 00:18:26,139
+Bu karmaşık üstel arkadaşlar neydi?
+
+38
+00:18:26,799 --> 00:18:29,659
+Kosümüz omega n eksi.
+
+39
+00:18:30,132 --> 00:18:38,872
+J sin omega n. Genel olarak bu işareti değineceğimiz de sinizoidal bir işaret.
+
+40
+00:18:40,632 --> 00:18:48,251
+Sinizoidal bir kısımda, bir kısmı real kısmı kosinus gibi ilerlerken,
+
+41
+00:18:48,692 --> 00:19:02,251
+Belli bir şeyde de tam tersinde, eksi olduğu için böyle yapıyorum. Sinüslü bir kısmı var ama iki işaretle bir topladığımızda, genliklerini topladığımızda sinüzoidal bir davranış gösteriyorlar.
+
+42
+00:19:02,251 --> 00:19:11,251
+Bunları arkadaşlar, base function'u, biz buradaki çarpmayı yapmamızın asıl nedeni, şuradaki çarpma işlemi yapmamızın nedeni,
+
+43
+00:19:12,243 --> 00:19:24,603
+Orijinal işaretle base function'un yani temel fonksiyonu ne kadar birbirlerine benzerlik gösterirlerse o kadar büyük katsayı üretmeleri.
+
+44
+00:19:24,603 --> 00:19:39,123
+Basis function bu demek daha çok. Bir nevi aslında bir iç çarpımla beraber birbirlerine benzerlikleri oranda ne yapıyorlar? Bizim katsayılarımız artıyor.
+
+45
+00:19:39,796 --> 00:19:51,355
+Şöyle söyleyebiliriz. Bir tane fonksiyonumuz var, işaretimiz var diyelim. Burada n'e bağlı olarak biliyorsunuz buradaki kosünüsün frekansı değişiyor.
+
+46
+00:20:02,740 --> 00:20:18,900
+Neye bakıyoruz? Altta kalanı beraberce değer aldıkları altta kalan alanlar ne kadar maksimum olursa değer o kadar yüksek oluyor. Örneğin burası 2, öbürkü de 2, 4 oluyor. Şurası 3 diyelim, şurası 2,5 diyelim.
+
+47
+00:20:19,539 --> 00:20:22,619
+Ne yapıyor arkadaşlar? Daha büyük bir değer almış oluyor.
+
+48
+00:20:23,119 --> 00:20:25,940
+Ne kadar birbirlerine benzemiyor? Şurada mesela
+
+49
+00:20:26,460 --> 00:20:31,059
+Eğer şurayı merkez kabul edersek, küçük değerlerle eksili değerlerin çarpılması
+
+50
+00:20:31,319 --> 00:20:34,139
+Bunların toplamına eksili yönde
+
+51
+00:20:34,379 --> 00:20:36,179
+Etki ediyor.
+
+52
+00:20:36,699 --> 00:20:37,460
+Bir başka
+
+53
+00:20:37,980 --> 00:20:39,000
+Fonksiyonda
+
+54
+00:20:39,259 --> 00:20:40,779
+Çalıştırdığımızda
+
+55
+00:20:41,299 --> 00:20:43,859
+Mesela sarıyı yapalım bu sırada.
+
+56
+00:20:44,723 --> 00:20:49,923
+Şurada ise baş sarıyla gösterelim. Çok güzel gözükmedi.
+
+57
+00:21:09,940 --> 00:21:11,220
+Siyahla gösterelim.
+
+58
+00:21:12,320 --> 00:21:24,599
+Bakın, daha yüksek frekanslı ve düşükgenlikli bir fonksiyonla çarptığımızda ise, bakın, bu sefer de buradaki yüksek frekanslı anardan maksimum katsı ile ediyoruz.
+
+59
+00:21:24,599 --> 00:21:37,400
+Yani temel olarak bir fonksiyonu bir temel fonksiyon dizisiyle çarpmak, onun o frekanslardaki benzerliğinin hesabıyla alakalı.
+
+60
+00:21:38,228 --> 00:21:47,668
+1930'larda artık ölçekleme ile değişen artık temel fonksiyonlar, basis function'lar kullanılmaya başlıyor.
+
+61
+00:21:52,268 --> 00:21:59,887
+Dolayısıyla altta kalan alanların hesabı demek bir nevi bir fonksiyonun enerjisinin hesabıyla alakalı bir şey.
+
+62
+00:21:59,887 --> 00:22:05,028
+Ondan sonra diyorlar ki bir sabit sinüs kullanmak yerinde.
+
+63
+00:22:05,364 --> 00:22:12,744
+Frekansa göre değişen temel fonksiyonlar kullanalım gibi bir yaklaşım oluyor.
+
+64
+00:22:13,284 --> 00:22:22,244
+Böyle sürekli halde değil de sörümlü halde veya daha böyle büyük değişik frekansları yakalayacak bir yapıda geçelim diyorlar.
+
+65
+00:22:22,244 --> 00:22:25,563
+Ve biletler 1960-1980 arasında.
+
+66
+00:22:26,036 --> 00:22:34,615
+İlk adımları atılıyor. 1980 sonrasında ise yoğun bir şekilde kullanılmaya başlıyor.
+
+67
+00:22:43,635 --> 00:22:55,275
+Şimdi bizim bu matematiksel dönüşümleri, furya dönüşümü olsun, diğer yöntemle olsun, temelde frekans temelli işlemleri çıkarmamızın nedeni,
+
+68
+00:22:55,615 --> 00:23:02,456
+normalde hazır olan datada gözükmeyen bilgileri daha açık bir şekilde ifade edebilmek.
+
+69
+00:23:02,456 --> 00:23:11,215
+Örneğin bir işaretin şöyle ayrık örneklerine baktığımızda bunun frekansla alakalı bir bilgi elde edinemiyoruz.
+
+70
+00:23:11,827 --> 00:23:24,107
+Bunlar zaman domenindeki işaretler. N yaptığımızı biliyorsunuz bunlar aslında ayrık sürekli işaretten elde edilmiş sampel'lardı.
+
+71
+00:23:24,107 --> 00:23:35,208
+Zaman domenindeki t yerine nts koyuyorduk. Geçen hafta sürekli bir işaretten ayrık işaretin elde edilmesiyle alakalı da örnek yapmıştık.
+
+72
+00:23:36,187 --> 00:23:37,607
+Biz zaman domenindeyiz.
+
+73
+00:23:38,708 --> 00:23:54,008
+Şimdi proses sinyal dediğimizde ise herhangi bir dönüşümle örneğin FFT, Revlet dönüşümü, Short Time Fourier dönüşümle beraber işaret yorumlanabileceği farklı bir uzaya aktarılıyor.
+
+74
+00:23:54,948 --> 00:24:03,407
+Tabii ki en popüler dönüşüm yöntemi Fourier dönüşümü arkadaşlar. Fast Fourier Transform.
+
+75
+00:24:05,556 --> 00:24:16,195
+Temelde frekans analize baktığımızda hem sürekli, şurada sürekli fonksiyonları var, şurada ise aylık fonksiyonları var.
+
+76
+00:24:17,416 --> 00:24:23,596
+Baktığımızda gördüğünüz gibi bir işaretle beraber neyi çarpıyoruz?
+
+77
+00:24:33,236 --> 00:24:46,236
+Şey olarak yazmamız lazım. Küçük W olarak yazmamız lazım. Ejci Omega T şeklinde. Burada sürekli olarak frekans kat sayılarını buluyoruz.
+
+78
+00:24:46,236 --> 00:25:00,635
+Tabii ki burada dikkat edin. DT ile değişiyorsa şayet, şuradaki T de değiştiği zaman, dolayısıyla bizim neyimiz değişecek? Kostünüz Omega T.
+
+79
+00:25:01,332 --> 00:25:28,692
+Şimdi öyle düşün. Sadece gerisini yazmıyorum. J'li kısmı yazmıyorum. Dolayısıyla burası değiştikçe veya omega değiştikçe frekansa bağlı çünkü bir değer. Ne yapıyor? Farklı base function'lar kullanıyoruz. Yani yüksekten, düşük frekanstan, yüksek frekanslara kadar kullanıyoruz. Bir de bunun ayrık hali vardı. Burada da ne elde ediyoruz? Burada biraz daha farklı bir şekilde yazmış ama.
+
+80
+00:25:29,332 --> 00:25:45,952
+x, k'yı hesaplarken ne yapıyorduk? 0'dan n-1'e kadar x, n, e üzeri, eksi j, 2pi bölü n, n, k diyorduk.
+
+81
+00:25:46,943 --> 00:25:53,963
+0'dan n-1'e kadar gidiyor. Bu da aynı şeyi yapıyor. Bu da sonuçta bir temel fonksiyonla çarpıyor.
+
+82
+00:25:53,963 --> 00:26:05,543
+Tabi burada işaret sürdüğü sürece yapıyor. Burada ise belli bir aralıkta 0 n-1 arasında işaretten alınmış belli bir örnek üzerinde işlem yapabiliyoruz.
+
+83
+00:26:07,923 --> 00:26:08,764
+Şimdi
+
+84
+00:26:09,907 --> 00:26:19,667
+Bu Fourier dönüşümün en önemli iki özelliği şu arkadaşlar. Birincisi, öncelikle işaretin frekans içeriğini buluyoruz.
+
+85
+00:26:20,327 --> 00:26:30,667
+İkincisi, her bir frekansın çarpmış olduğu temel fonksiyonlara, basis fonksiyonlara benzerliği oranında,
+
+86
+00:26:31,284 --> 00:26:38,604
+İşaretinde her bir frekansın ne miktarda var olduğunu hesaplamış oluyorsunuz.
+
+87
+00:26:38,604 --> 00:26:48,443
+Aslında bizim çizdiğimiz şöyle x, f diye frekansa bağlı şeyde şöyle bir şey çizmiştik hatırlıyorsanız.
+
+88
+00:26:55,667 --> 00:27:13,708
+Bu ne oluyordu? Simetrik hale geliyor, 3 oldu. Ama sonuçta şurayla ilgileniyoruz biz. Bu bize örneğin hangi frekanslardan, frekansın artan değerleriyle beraber frekans şeyini gösteriyor. Yani çarptığımız basis function ile beraber aslında bir nevi frekansların histogramı ortaya çıkmış oluyor.
+
+89
+00:27:13,708 --> 00:27:23,667
+Eğer alçak frekanslarda daha çok yüksek genlik değeri ediyoruz, anlıyoruz ki biz bu işaretin alçak frekans bileşenleri daha farklı.
+
+90
+00:27:23,667 --> 00:27:40,447
+Ona göre filtre yapılır filan tasarlıyorduk biliyorsunuz arkadaşlar. Şimdi bunları da hesabı atarak sonraki konuya geçelim. Stationary Signal dediğimiz Durağan İşaret.
+
+91
+00:27:40,447 --> 00:27:44,127
+Durağan İşaret.
+
+92
+00:27:47,988 --> 00:28:03,268
+Şimdi duran işaret deyince şunu anlayacağız. İşaretin frekans içeriğinin zamanla değişmediği ve de bütün frekans bileşenlerinin her an oluştuğu işaretler.
+
+93
+00:28:06,963 --> 00:28:18,103
+Durağın olmayan işaretler ise, frekansın zamanla değiştiği işaretler, örneğin bir çirp işareti, hemen görünce anlayacaksınız.
+
+94
+00:28:18,763 --> 00:28:27,884
+Örneğin, şurada 3 tane sinizoidal işaret var. 2 Hz, 10 Hz ve 20 Hz beraberce bulunabiliyor.
+
+95
+00:28:27,884 --> 00:28:29,583
+Mesela şu anda da varlar.
+
+96
+00:28:31,723 --> 00:28:32,943
+Şu anda da varlar.
+
+97
+00:28:33,296 --> 00:28:39,355
+Toplam olarak veriliyor. Matematiksel ifade ile beraber o işareti her an tespit edebiliriz.
+
+98
+00:28:58,516 --> 00:29:22,516
+20t dediğimiz an bizim xt işaretimizi vermiş oluyor. Fazların hesaba katılmadığını düşündüğümüzde. Dolayısıyla, örneğin 06'yı yazdığımızda şuradaki anlık değeri hesaplayabiliyoruz. Veya 08'i yaptığımızda anlık değeri hesaplayabiliyoruz.
+
+99
+00:29:27,188 --> 00:29:36,528
+Bu işaret içerikle nokta dört saniye arasında... Sesim geliyor mu?
+
+100
+00:29:38,228 --> 00:29:38,928
+Geliyor hocam.
+
+101
+00:29:40,088 --> 00:29:52,168
+Kesikleşmeye başladığı zaman beni uyarın arkadaşlar. Bazen internet bağlantısı unstable olabiliyor. Bu durumlarda hemen uyarın. Ben kaldığım yerden devam ederim tekrar.
+
+102
+00:29:52,756 --> 00:30:06,756
+Sesket üyeleştiği zaman sizden bir işaret bekliyorum. Örneğin 0 ile 04 arasında yani şu aralıkta 2 Hz'lik bir işaret var. Yani şuraya kadar 2 Hz'lik bir işaret uygulanmış.
+
+103
+00:30:06,756 --> 00:30:15,456
+0.04 ile 0.7 arasında ise yaklaşık şurası. Burada 10 Hz uygulanmış. Şurası 2 Hz.
+
+104
+00:30:16,276 --> 00:30:20,456
+07 ile 1 saniye arası ise 20 Hz uygulanmış.
+
+105
+00:30:20,796 --> 00:30:24,556
+Şimdi bizim elimizde şu ana kadar öğlendiğimiz hangi tool var?
+
+106
+00:30:25,755 --> 00:30:28,336
+FFT tool var. Yani DFT tool var.
+
+107
+00:30:29,076 --> 00:30:34,836
+İşareti örneğin örneklesek bu işaretlere. Şöyle gelsek örneklesek.
+
+108
+00:30:36,376 --> 00:30:39,155
+N tane örnek alsak. Aynı şekilde buradan da.
+
+109
+00:30:40,356 --> 00:30:41,936
+N tane örnek alsak şöyle.
+
+110
+00:30:45,172 --> 00:30:50,492
+Sonuçta örneğin en diyelim bin tane örnek aldık. Bundan da aldık.
+
+111
+00:30:51,592 --> 00:31:05,892
+FFT'yi kullandığımızda arkadaşlar, genel olarak biz hangi frekansların, sizin yapmış olduğunuz ödevdeki gibi, benim oluşturmuş olduğum iki tane frekansı ne yapıyorduk?
+
+112
+00:31:06,900 --> 00:31:30,680
+Topluyorduk, verdik. Benim oluştuğum, size verdiğim dosyalardaki işaretler stationary. Çünkü matematiksel bir formülle zamanın her anında iki frekans birlikte oluşuyorlar. Siz burada ne yaptınız arkadaşlar? FFT'yi kullandınız. Tepe noktalarına baktınız. Örnekleme frekansını biliyorsunuz. Hangi frekansların olunduğunu, kullanıldığını öğrendiniz.
+
+113
+00:31:32,403 --> 00:31:35,103
+Yine aynı frekans içeriğine sahip
+
+114
+00:31:35,955 --> 00:31:40,055
+Ama frekanslar zamanla değişiyor.
+
+115
+00:31:41,575 --> 00:31:50,295
+Bunun için de burada herhangi bir plot kötü çıkmış olsa da, bunda da FFT ile frekans içeriğini aşağı yukarı buluyorsunuz.
+
+116
+00:31:50,395 --> 00:31:56,715
+Tamam, burada bir süreksizliklerden dolayı bir tam anlamıyla buradaki gibi sağlam bir pik yapmıyorlar.
+
+117
+00:31:56,715 --> 00:32:03,715
+Ama yine bununla beraber ne yapıyorsunuz? Evet, şu frekanslar oluşmuş diyebiliyorsunuz.
+
+118
+00:32:03,955 --> 00:32:09,215
+O geçişlerdeki harmoniklerin etkisinden dolu oluyor. Onu şu anda hesaba katmayın.
+
+119
+00:32:09,755 --> 00:32:15,115
+Bununla da buluyoruz. Peki elimizde sadece şu iki veri varsa hangi frekansların kullanıldığını,
+
+120
+00:32:15,115 --> 00:32:22,275
+ben bundan nasıl bir işaret olduğunu, hangi frekansların kullanıldığını biliyorum.
+
+121
+00:32:23,275 --> 00:32:27,775
+Nasıl bir dağılım gösterdiğini, nasıl bir yapıda olduğuna geri dönebilir miyim?
+
+122
+00:32:28,500 --> 00:32:49,079
+Eğer sadece bana şu sağdaki kısmı versel ve ben onu analiz etsem bilemem. Yani şu frekanslar var derim ama hangi frekansın hangi zamanda oluştuğunu bilemem. Örneğin burada 20 Hz diyorum ama 20 Hz başta da oluşmuş olabilir, ortada da oluşmuş olabilir, sonda da oluşmuş olabilir.
+
+123
+00:32:49,079 --> 00:32:54,579
+Veya daha net bir örnekle devam edelim.
+
+124
+00:32:55,316 --> 00:33:09,155
+Diyelim ki yine çirp sinyali, bunun adı çirp sinyali yani frekansın yüksekten düşüğe geçtiği veya düşükten yükseğe geçtiği, frekansın değişkenlik gösterdiği işaretler.
+
+125
+00:33:09,155 --> 00:33:17,016
+Şimdi baktığımızda şurada bir saniye boyunca düşük frekanstan yüksek frekansa geçilmiş.
+
+126
+00:33:17,556 --> 00:33:22,395
+Oysa buradaki işaret değilse yüksek frekanstan düşük frekansa geçilmiş.
+
+127
+00:33:22,768 --> 00:33:29,367
+Biliyorsunuz bu iki işaret zaman domeninde birbirinden farklılar. Farklı bir yapıdılar.
+
+128
+00:33:30,728 --> 00:33:35,107
+Peki, bu 2 Hz'den 20 Hz'e değişen bir çip sinyaliymış.
+
+129
+00:33:35,107 --> 00:33:47,488
+Peki, ben bunların FFT'lerini alsam, yani DFT'lerini alsam, çıkacak olan output,
+
+130
+00:33:48,884 --> 00:34:06,064
+Yani genlik gösterimi birbirinin aynısı. Peki, ben bu ikisine bakarak hangisine geçeceğimi, station'ı olmayan sinyallerde bu, hangisine geçeceğimi nasıl bileceğim? Buna mı geçeceğim yoksa buna mı geçeceğim?
+
+131
+00:34:10,516 --> 00:34:12,796
+Şunu söylüyoruz sonuç olarak. Sonuç.
+
+132
+00:34:15,476 --> 00:34:23,796
+Furye dönüşümü hangi frekans bileşeninin ne zaman oluştuğunu bize söyleyemiyor.
+
+133
+00:34:24,855 --> 00:34:29,735
+Sadece işaretin frekans içeriği hakkında bize bilgi veriyor.
+
+134
+00:34:29,735 --> 00:34:35,596
+Hangi frekans ne zaman oluşmuş bilgisi furye dönüşümünde yok arkadaşlar.
+
+135
+00:34:37,811 --> 00:34:50,152
+Dolayısıyla ne demiş burada? Adım adım bakalım. Fulye dönüşümü sadece işarette var olan frekans bileşenliğini verir.
+
+136
+00:34:54,387 --> 00:35:01,667
+Zaman ve frekans bilgisi aynı zamanda gözlemlenemez, görülemez.
+
+137
+00:35:02,627 --> 00:35:06,407
+Dolayısıyla biz burada başka bir şeye ihtiyaç duyuyoruz.
+
+138
+00:35:07,407 --> 00:35:16,387
+Burada ihtiyaç duyduğumuz şey hem zamanı, yani hangi frekans ne zaman oluşmuş, hem de...
+
+139
+00:35:18,324 --> 00:35:26,403
+Bunların beraberce bir gösterildiği zaman frekans sunumu yöntemlerine bir bakabilmek.
+
+140
+00:35:27,764 --> 00:35:31,663
+Buna neden ihtiyaç duyuyoruz? Özellikle Biyomedikal Sinyal İşlem.
+
+141
+00:35:31,663 --> 00:35:36,043
+Çünkü çoğu işaretimiz bizim non-stationary.
+
+142
+00:35:36,663 --> 00:35:39,864
+Örneğin bir kalp datasına bakalım. Şöyle bir atımı var.
+
+143
+00:35:41,619 --> 00:35:48,779
+Yani şurada oluşan frekanslarla burada oluşan frekanslar birbirlerinden farklı ve de değişkenlik gösterebilir.
+
+144
+00:35:50,359 --> 00:35:52,439
+Şunu bilmek istiyoruz.
+
+145
+00:35:55,079 --> 00:36:00,659
+Bir frekansın ne zaman oluştuğunu ve içeriğini bilmek istiyoruz.
+
+146
+00:36:02,199 --> 00:36:05,840
+İlk çözümümüz ne olabilir arkadaşlar? Mesela siz.
+
+147
+00:36:06,612 --> 00:36:15,231
+Elimizde frekans analizi yapabilen bir tool'unuz var. İlk olarak siz nasıl bir yöntem geliştirdiniz bunu?
+
+148
+00:36:19,092 --> 00:36:45,092
+Sonuçta benim şöyle bir işaretim var değil mi? Almış olduğum şöyle. İlk aklınıza ne gelirdi? Ben işaretin tamamında full'ye dönüşümü yapmak yerine dar aralıklarda bakayım. En azından şu aralığı biliyorum. Burada hangi frekans bilgileri var? Daha sonra buraya geçeyim.
+
+149
+00:36:46,132 --> 00:37:04,672
+Buradaki frekans bilgilerin var. Dolayısıyla en azından Time 1, Time 2, Time 1, Time 2, Time 3. En azından bu aralıklarda aralıkların ne frekans taşıdığını bileyim. Gideyim de buradaki bulmuş olduğum frekansı burada aramayayım.
+
+150
+00:37:04,672 --> 00:37:12,311
+Bunu arkadaşlar Short Time Fourier Translator, kısa zamanlı Fourier dönüşümü demişler arkadaşlar.
+
+151
+00:37:14,739 --> 00:37:41,779
+Deniz Kabor Short Time Fourier Transform kavramını ortaya atıyor. Basitçe şöyle bir şey yapıyor. İşaretin küçük bir bölümünü alıyor. Buna da işareti pencereleme diyor. Mesela aynı bu şekil çok güzel sürekli bir işaret var. Şöyle burada ne yapabiliyor arkadaşlar?
+
+152
+00:37:42,320 --> 00:37:46,800
+Sadece şurayı inceliyor. Window. Yani bir pencere aralığı belirliyor.
+
+153
+00:37:47,360 --> 00:37:54,960
+Buradaki frekans içeriklerine bakıyor. Dolayısıyla şurası örneğin şu aralığa denk geliyor.
+
+154
+00:37:55,520 --> 00:37:58,740
+Buradaki frekans bileşenlerine bakmış oluyor.
+
+155
+00:37:59,380 --> 00:38:25,520
+Hangi yaratıda ne kadar var diyor. Dolayısıyla zaman frekans yöntemlerinde arkadaşlar, time frekans analizi yöntemlerinde şu göze çarpıyor. İki eksenli bir yapı bir zamanla beraber ilerliyor. Öbür kısım frekans. Peki pencereyi biz biraz daha geniş seçseydik ne olacaktı? Pencereyi biraz daha geniş seçmemizin bize şöyle bir yararı oluyor.
+
+156
+00:38:26,003 --> 00:38:46,224
+Biliyorsunuz, biz xk'yı hesaplarken şöyle n eşittir sıfırdan n-1'e kadar seçmiştik. Pencere aralığını arttırmak, buradaki aldığımız, işleyeceğimiz örnek sayısını arttırır.
+
+157
+00:38:46,547 --> 00:38:56,307
+Örnek sayısının arttırılması, dikkat edin, k'dan nasıl değişiyordu? Sıfırdan, n-1'e kadar. Dolayısıyla frekans çözünürlüğümüz artacaktı.
+
+158
+00:38:56,307 --> 00:39:04,447
+N artınca, yani aralıktaki, şuradaki n sayımız, sample sayımız arttıkça frekans çözünürlüğümüz de artacaktı.
+
+159
+00:39:04,547 --> 00:39:13,307
+Fakat burada bir dezavantaj var. Aralığı genişletmek demek, daha büyük aralıklarda, zamandaki...
+
+160
+00:39:13,327 --> 00:39:24,047
+Çözünürlüğü veya hangi frekans, hangi zaman aralığında olmuş biliyoruz ama o zaman aralığı genişledikçe bizim zaman bilgimiz de bir nevi zayıflamış oluyor.
+
+161
+00:39:24,047 --> 00:39:37,988
+Ne kadar dar aralıkta oldu incelersek en azından T1 anında oldu dersek şu dar aralıkta daha net bir bilgi vermiş oluruz. Yok T4 aralığında olmuş dersek bakın daha geniş bir aralık verdik.
+
+162
+00:39:38,516 --> 00:39:54,216
+Yani zamandaki netlik azalmış oluyor. Yani o pencereyi arttırmakla beraber frekansın çözünürlüğü artarken zamanın çözünürlüğü diyelim veya zamanın netliği diyelim azalmış oluyor.
+
+163
+00:39:55,416 --> 00:40:04,036
+Bakın STFT'de arkadaşlar bir pencereleme windowing function ile çarpıyoruz. Sadece belli aralığı alıyoruz burada.
+
+164
+00:40:05,076 --> 00:40:10,195
+Şöyle bir çarpma yapıp sadece işaretin belli kısmını kesiyoruz.
+
+165
+00:40:10,195 --> 00:40:12,916
+Mesela şu v fonksiyonu şöyle bir şey olsun.
+
+166
+00:40:14,936 --> 00:40:24,456
+Kestiğimizde, window function ile kestiğimizde artık sadece ilgili bölgenin furya dönüşümüne bakmış oluyoruz.
+
+167
+00:40:25,076 --> 00:40:30,216
+Akılcı bir yöntem. İlk başta kafamızda bazı soruları giderebilir.
+
+168
+00:40:31,668 --> 00:40:34,108
+En azından temel bazı frekansları.
+
+169
+00:40:34,488 --> 00:40:36,768
+Tabi burada en büyük sorun ne olacaktır?
+
+170
+00:40:38,368 --> 00:40:41,028
+Short time fluid dönüşümde en büyük sorun ne olabilir?
+
+171
+00:40:41,028 --> 00:40:42,648
+Kafamıza takılabilecek.
+
+172
+00:40:44,208 --> 00:40:45,648
+Evet gençler.
+
+173
+00:40:49,715 --> 00:40:51,735
+İlk aklımıza gelen soru ne olur?
+
+174
+00:40:58,324 --> 00:40:59,264
+Evet, [öğrenci].
+
+175
+00:41:02,043 --> 00:41:08,983
+Hocam, aklıma bir şey gelmiyor. İlk rezevantajları zaten söylediğimiz avantaj rezevantajları. İlk sorun ne olabilir?
+
+176
+00:41:10,284 --> 00:41:14,064
+Buradan bir sorun oluştur bakayım. Demin çok bahsettim.
+
+177
+00:41:18,579 --> 00:41:27,460
+Zamansal çözünürlük sıkıntısı olur. Eğer zamansal çözünürlüğü biz arttırırsak, süper frekans şey olacak.
+
+178
+00:41:28,340 --> 00:41:42,039
+Sorun bu. Yani seçilecek pencere genişliği ne olmalı? Sonuçta biz işaretin frekans içeriği hakkında hiçbir şey bilmediğimizde bize keyfi bir işaret veriyorlar.
+
+179
+00:41:43,603 --> 00:41:52,923
+Seçtiğimiz Window genişliğinin gerçekten frekansları ayırıp ayırmayacağız. Örneğin, şu chip sinyalinden bahsedelim.
+
+180
+00:41:53,923 --> 00:42:03,203
+Ben burada pencere aralığını şu kadar şu kadar yaparsam, en azından burada derim ki 20 Hz oluşmuş.
+
+181
+00:42:03,987 --> 00:42:26,007
+Ondan sonra buraya geldim. 10 Erse oluşmuş. 10, 2'ler de burada oluşmuş. Dar seçtiğim zaman. Ama geniş seçeyim. Şöyle iki parçalardı. Burada hem 20 var hem 10 var. Ama bu ne zaman oluşmuş hakkında bilgim yok. Burada hem 10 var hem 2 var mesela. Anlatabiliyor muyum?
+
+182
+00:42:27,123 --> 00:42:53,344
+Sonuçta ben bunu bilmiyorum. Bana böyle bir sinyal gelebileceği, şöyle bir sinyal gelirse bu sefer şu pencere boyutunu seçmemin hiçbir benim için zararı yok. Ama bunun gibi çok değişen bir işaret verildiği zaman benim geniş pencere boyutlarını seçmem işaretin ne zaman zaman bilgisi hakkında yine bir belirsizlik durumu oluşacak arkadaşlar. Bu da çok istediğim bir şey değil.
+
+183
+00:42:58,132 --> 00:43:18,012
+Buraya geçelim. Şimdi buradaki şey şu. Bir, drawbackleri yani dezavantajları istedim. Değişmeyen window size. Bunun baştan belirlemesi lazım. Çözünürlük dilenmesi, ikilemi.
+
+184
+00:43:25,588 --> 00:43:28,387
+Düşük Frekans Resolüsyonuna geçiyorum.
+
+185
+00:43:30,387 --> 00:43:34,748
+Good Time Resolution
+
+186
+00:43:34,748 --> 00:43:48,588
+Pencereyi genişlettikçe bu sefer kötü zaman rezolüsyonu, Good Frekans Resolüsyonu.
+
+187
+00:43:49,588 --> 00:43:50,668
+Anlatabiliyor muyum?
+
+188
+00:43:51,219 --> 00:44:10,979
+Dolayısıyla aynı fizikten hatırlayabileceğimiz bir şey vardı. Hatırlarsanız Heisenberg'in belirsizlik prensibi. Bir elektronun yeri tespit edildiğinde hızı tespit edilemiyordu. Hızı tespit edildiğinde ise yeri tespit edilemiyordu. Bir bulut oluşturuyordu.
+
+189
+00:44:17,907 --> 00:44:22,427
+Dediğim gibi pencere boyutuyla frekans özürsünün arasında ters bir ilişki var.
+
+190
+00:44:23,287 --> 00:44:26,967
+Örneğin bir tane burada farklı şeyler alınmış.
+
+191
+00:44:26,967 --> 00:44:32,907
+Bakın farklı pencereler alınmış.
+
+192
+00:44:33,287 --> 00:44:44,148
+Dar bir pencere kullanıldığında örneğin 15 saniye, 30 saniye, ondan sonra burada 10 saniyelik aralıklar yapılmış.
+
+193
+00:44:44,628 --> 00:44:52,148
+İşaretin şuradan bakacak olursanız arkadaşlar, aslında bir şöyle daha güzel göstereceğim maviyle herhalde.
+
+194
+00:44:52,668 --> 00:45:03,328
+Yeşille göstereyim. Sadece şuradan bakın arkadaşlar. Şöyle baktığımda 256 örnekten oluşan şöyle bir yapı var aslında.
+
+195
+00:45:05,108 --> 00:45:09,248
+İşaretin frekansör içeriğini gösteriyor. Simetrik bir yapı var.
+
+196
+00:45:12,340 --> 00:45:14,340
+İyice ediyoruz.
+
+197
+00:45:14,340 --> 00:45:20,340
+Belli bir süre sonra şurada bir FFT almışız. Şöyle de bir A almışız diyelim zaman aralıklarında.
+
+198
+00:45:20,340 --> 00:45:22,340
+Dolayısıyla bakın ne belli burada?
+
+199
+00:45:22,340 --> 00:45:26,340
+Hangi dar bir pencerede belirlediğimde sınırlar belli.
+
+200
+00:45:26,340 --> 00:45:29,340
+Hangi frekans ne zaman oluşmuş bulabiliyoruz.
+
+201
+00:45:29,340 --> 00:45:33,340
+Peki, daha geniş bir pencere seçtiğimizde işarette?
+
+202
+00:45:34,516 --> 00:45:51,256
+Yani işaret bu. Daha geniş pencereler seçtiğimize. Bu sefer de zaman rezolüsyonu bakın, birbirinin içine geçmiş durumda. Şuradan göstereyim mavi ile beraber veya siyahla şöyle. Birbirinin içine giriyorlar bakın.
+
+203
+00:45:52,376 --> 00:46:01,836
+Buradan bakacak olursam, şu yönden bakacak olursam, burada mesela işaretler bir gauss gibiydi. Frekansta bir belirsizlik vardı.
+
+204
+00:46:03,411 --> 00:46:29,652
+Frekans rezolüsyonu da bir gauss gibi gösteriyor. Şuralarda da olabilir yanlarda. Dar pencerede, çünkü dar pencere seçmemin şeyi şu, daha az örnek alıyorum sıfırdan en eksi bir. 10 tane örnek almakla 1000 tane örnek almak arasında fark var. 10 tane örnekle gerçek anlamda frekansları, içeriğini, frekansları belli eminim. Şunun gibi gauss vari bir tahminde bulunuyorum.
+
+205
+00:46:30,132 --> 00:46:50,412
+Fakat pencereleri genişlettikçe n sayım artıyor benim. Bu sefer bakın buradan bakın frekans bileşeni, yani şu kesitten şuraya doğru bakın daha net. Bakın şöyle baktığınız daha net. Daha net gözükmeye başlıyor.
+
+206
+00:46:51,860 --> 00:46:56,779
+Yani şu Gauss yapısı kayboldu. Daha net bir şekilde frekansları belirledim.
+
+207
+00:46:57,420 --> 00:47:01,420
+Ama bu sefer bu köşe şeyden bakalım, yönden bakayım.
+
+208
+00:47:01,420 --> 00:47:13,380
+Bu sefer de geniş geniş tuttuğum için şeyleri hangi zamanda hangi frekans oluşmuş artık birbirlerinin içine girmeye başlıyorlar.
+
+209
+00:47:14,356 --> 00:47:21,316
+Zaman Rezolüsyonu, hangi frekans, ne zaman oluştu bilgisi artık benden çıkmaya başlıyor.
+
+210
+00:47:23,056 --> 00:47:30,195
+Buna çözüm olarak Malte Resolution Analiz, MR'ye geçeceğiz.
+
+211
+00:47:30,416 --> 00:47:36,695
+Fakat ondan önce birkaç tane STFT ile alakalı bir örnek yapalım arkadaşlar.
+
+212
+00:47:43,251 --> 00:47:44,452
+Bir tane...
+
+213
+00:47:47,603 --> 00:47:51,703
+3 tane ben ses dosyası oluşturdum arkadaşlar.
+
+214
+00:47:52,463 --> 00:47:59,384
+Şimdi burada bunlar wav formatında ses, noise ve müzik şeklinde.
+
+215
+00:47:59,884 --> 00:48:04,503
+Şimdi okuyacağım. Bu fonksiyon wav read diye de olabilir.
+
+216
+00:48:04,503 --> 00:48:09,623
+Audio read diye olabilir. Zannedersem audio read fonksiyonu çalışıyor.
+
+217
+00:48:10,123 --> 00:48:11,663
+Temelde şunu yapıyor.
+
+218
+00:48:13,203 --> 00:48:15,003
+Bir wav dosyası var.
+
+219
+00:48:15,827 --> 00:48:20,827
+Bu wow dosyasını dinletecek olursak size arkadaşlar.
+
+220
+00:48:22,827 --> 00:48:24,652
+Şöyle bir dosya.
+
+221
+00:48:28,563 --> 00:48:31,323
+1, 2, 3
+
+222
+00:48:31,323 --> 00:48:34,923
+Duydunuz mu arkadaşlar? Ses geldi mi size?
+
+223
+00:48:36,223 --> 00:48:36,543
+Geldi.
+
+224
+00:48:38,003 --> 00:48:43,483
+Dikkat edin. Ses Vav dosyası içerisinde 1, 2, 3 diyorlar.
+
+225
+00:48:44,211 --> 00:48:57,012
+Şimdi bu AudioRid wow dosyasını okuyor. Bize Sample'ları veriyor. Yani yerleri veriyor. Toplam 139, 217. İki kanallı olarak vermiş.
+
+226
+00:48:57,012 --> 00:49:02,652
+Burada stereo olmadığı için iki kanalda da aynı ses kaydedildiğini düşünüyorum.
+
+227
+00:49:02,652 --> 00:49:09,552
+Bakacak olursam, Load 1-2-3 demişti hatırlarsınız değil mi?
+
+228
+00:49:10,260 --> 00:49:18,840
+Y'nin bir kanalını çizeyim örneğin. İki kanalı birden çizdiremiyorum. Birinci kanalı çizdiğim örneğin.
+
+229
+00:49:22,579 --> 00:49:27,739
+Ne demişti? 1, 2, 3 demişti.
+
+230
+00:49:29,419 --> 00:49:31,299
+Zamandaki örnekleri bunlar.
+
+231
+00:49:34,039 --> 00:49:34,279
+Peki.
+
+232
+00:49:35,679 --> 00:49:41,479
+Ve 44100, aynı anda örnekleme frekansı da yani örnekler arasındaki mesafe de önemli.
+
+233
+00:49:42,119 --> 00:49:43,919
+44100 demek ne demek?
+
+234
+00:49:46,612 --> 00:50:05,571
+Saniyede 44.100 tane örnek alıyorsun demek. Dolayısıyla önce şunu sorayım bakayım. Burada bir ses örneğimizde 139.217 tane örnek var. 139.217 tane yaklaşık örnek var.
+
+235
+00:50:06,711 --> 00:50:14,112
+Örnekleme frekansım da 44.100 Hz olduğuna göre. Sorduğum arkadaş cevap versin.
+
+236
+00:50:15,891 --> 00:50:23,471
+Bu ses dosyasının ne kadar sürdüğünü bu bilgilerle tespit edebilir miyim?
+
+237
+00:50:25,152 --> 00:50:26,291
+Ali?
+
+238
+00:50:32,148 --> 00:50:36,148
+Efendim, soru tıklayabilir misiniz şu an?
+
+239
+00:50:36,148 --> 00:50:55,308
+Okay. We have read the wow file. And in the wow file, we have got total of 140,000 samples, as you can see here. Can you see my pointer on the screen?
+
+240
+00:50:56,748 --> 00:50:57,828
+Yes, yes, I can see it.
+
+241
+00:50:57,828 --> 00:50:58,828
+Okay.
+
+242
+00:50:59,411 --> 00:51:06,231
+Bu, yaklaşık 140,000 samples.
+
+243
+00:51:06,231 --> 00:51:07,731
+Ve biliyoruz,
+
+244
+00:51:07,731 --> 00:51:17,532
+our sampling frequency is about 44,000 Hz.
+
+245
+00:51:17,532 --> 00:51:18,192
+Evet.
+
+246
+00:51:18,192 --> 00:51:20,831
+So, can we say,
+
+247
+00:51:20,831 --> 00:51:25,871
+how much long is the sound record?
+
+248
+00:51:26,164 --> 00:51:42,324
+Evet, of course, we can know that. We can divide the number of samples, which is 139 divided by the Fs, I think.
+
+249
+00:51:42,324 --> 00:51:48,064
+Okay, okay. What is the result? As you can see, 100.
+
+250
+00:52:04,403 --> 00:52:22,403
+Evet, dediğimiz gibi arkadaşlar, elimizde 140 bin tane sample varsa yaklaşık.
+
+251
+00:52:25,403 --> 00:52:30,844
+Dolayısıyla şunu da biliyorum. Saniyede almış olduğum sample sayısı da 44 bin civarında.
+
+252
+00:52:31,699 --> 00:52:38,719
+Dolayısıyla 44.000'e böldüğümde yaklaşık olarak kaç saniye sürmüş olduğunu bulurum ben bunu.
+
+253
+00:52:39,439 --> 00:52:48,159
+Audio Read ne yapıyor? Bir tek kanallı okumamış bunu. Çift kanallı okumuş. Bizim için bir kanalı yeterli bunun. Hani değerlendirmek için.
+
+254
+00:52:48,692 --> 00:53:09,132
+Ondan sonra okudum. Wow file header'ında aynı zamanda sampling frequency de, yani örnekleme frekansı da okunuyor. Bu da bizim için önemli bir bilgi. Hadi o zaman bir frekans bilgisine bakalım bunun.
+
+255
+00:53:11,692 --> 00:53:15,012
+Böyle yapınca çıkıyor muydu ki? Niye böyle yapmışız?
+
+256
+00:53:19,188 --> 00:53:29,188
+Tek bir kanunluk. Evet, gördüğünüz gibi 1, 2, 3 demişti ya. Onun frekans içeriği arkadaşlar. Tabii ki simetrik olacak. Tam böyle...
+
+257
+00:53:31,027 --> 00:53:48,727
+Bakın, alçak frekanslarda yoğunlaşmış. Şuralarda da frekanslar var. Tam ortaya gelen kısmı bizim için bu biliyorsunuz 140.000'e böldüğümüzde şu 70.000'ler yaklaşık bizim pi'mize denk geliyor.
+
+258
+00:53:48,727 --> 00:53:57,467
+Yani en yüksek frekansa yani 22.000, 44.000 olduğuna göre 22.000 Hz'ler burada.
+
+259
+00:53:57,936 --> 00:54:10,636
+Yani 7-22.000 Hz'i temsil ediyor. Bunlar da düşük frekanslar yapıyor. Tabi 1-2-3 dedik. Değişik frekanslar var. Ama neyin ne zaman oluştuğunu bilmiyoruz.
+
+260
+00:54:11,536 --> 00:54:21,636
+Bunun için arkadaşlar spektrogram fonksiyonunu kullanabiliriz. Şu Y'nin sadece bir tanesini kullanıyor arkadaşlar.
+
+261
+00:54:22,516 --> 00:54:26,096
+Burada iki kanalı birden almıyor, bir tanesini alıyor sadece.
+
+262
+00:54:26,876 --> 00:54:29,175
+Şöyle spektrogram Y diyelim.
+
+263
+00:54:30,456 --> 00:54:34,795
+Bu da Short Time Fourier Transform'unu alıyor arkadaşlar.
+
+264
+00:54:34,795 --> 00:54:36,596
+Avalanche Selection dedim.
+
+265
+00:54:37,876 --> 00:54:40,436
+Evet, burada hata vermesini bekliyorduk.
+
+266
+00:54:41,456 --> 00:54:44,016
+Bir kanalı seçmemiz lazım sadece.
+
+267
+00:54:44,795 --> 00:54:47,851
+Sadece birinci kanalın bütün sample'ları demek bu.
+
+268
+00:54:48,980 --> 00:55:15,780
+Yaptırdığımda arkadaşlar, bakın bu çıktı. Default değerleriyle çıktı yalnız burada. Dikkat edin. Burası sample'larla beraber veriyor. Burada da frekans içerikleniyor. Şu sample'ların arasında diyor. Dikkat edin. Sarılar yüksek değerler, maviler düşük değerler, alçak değerler varmış.
+
+269
+00:55:16,211 --> 00:55:42,692
+Ondan sonra şurada alçak değerli frekans bilgiler yok. Çünkü 1 dedikten sonra sustu ya. Şurada 1 dedi. Sustu. Düşük frekanslar yok. Sonra 2 derken 2. Şurada yüksek alçak frekans değerler arttı. 3 derken şurada yüksek frekanslı bir bileşen geldi. Ama dikkat edin. Kaç örnekte? Yaklaşık 3800 örnekte bir.
+
+270
+00:55:43,056 --> 00:55:45,936
+3800 örneğe denk gelen yerde yatmış.
+
+271
+00:55:45,936 --> 00:55:53,615
+Şey bakalım. Bunu Matlab'den bir Ctrl C diyelim.
+
+272
+00:55:57,108 --> 00:56:02,367
+Spektrogram Matlab hakkında bilgi edinelim. Nasıl bir şey varmış?
+
+273
+00:56:08,019 --> 00:56:10,019
+ve netlet diyelim.
+
+274
+00:56:13,876 --> 00:56:37,135
+Spectrogram using Short Time Fuller Transform. Ne yapıyormuş bu mesela? Bir sürü şey alabiliyormuş. Baktığımızda bilgi alabiliyor. Parametre alabiliyor. Neymiş? X öncelik olarak sinyal X'i kast ediyor. Window dediğimiz ise
+
+275
+00:56:37,972 --> 00:56:42,472
+Kullanacağım Window genişliğini bize veriyor.
+
+276
+00:56:42,472 --> 00:56:51,271
+Bazen de şöyle de yapabiliriz arkadaşlar. Bu Windowları alırken bir işaretim var diyelim şöyle.
+
+277
+00:56:51,271 --> 00:56:55,472
+Şu Windowları alırken şöyle alabilirim.
+
+278
+00:56:55,472 --> 00:57:01,771
+Daha sonra diğer işaretle hani ilk başta görmüş olduğunuz şey vardı ya.
+
+279
+00:57:02,164 --> 00:57:09,224
+Hani şurada kötü işaretler, dalgalanmalar var diye onu engellemek için arkadaşlar şöyle bir şey de yapabilirim.
+
+280
+00:57:09,864 --> 00:57:16,504
+Overlap denilen üst üste girme. İkinci penceremi, birinciyi burada alırken ikinciyi biraz da overlap ediyorum şurada.
+
+281
+00:57:17,224 --> 00:57:23,424
+Yani eski örneklerin de bir kısmını alıyorum. Şöyle önce bunu aldım, sonra bunu aldım.
+
+282
+00:57:24,115 --> 00:57:32,876
+Önce bir bu, daha sonra bunu aldım. Böyle işarette geçmiş bir kısım örneği alarak da örtüştürerek de ilerleyebiliyorum.
+
+283
+00:57:32,876 --> 00:57:42,256
+Buna da Short Time Fourier Transform deniyor arkadaşlar. Short Time Fourier Transform'ın Overlap özelliği deniyor.
+
+284
+00:57:51,315 --> 00:58:07,335
+Sayısının ne kadar? FFT Sample. FFT'de şöyle bir özellik vardı arkadaşlar. FFT kullanırken. FFT diyelim. X'i verebildiğiniz gibi arkadaşlar. Örneğin bu 128 uzunluklu bir şey olsun.
+
+285
+00:58:08,467 --> 00:58:20,068
+Frekans çözünürlüğünü arttırmanın bir yolu nedir? Çünkü buradan gelecek olan frekanslar 128 tane frekans oluşacak ama ben frekans rezolüsyonunu arttırmak istiyorum. Ne yapmam lazım bu durumda?
+
+286
+00:58:20,068 --> 00:58:32,427
+Eğer aldığım işaret, şöyle 128 tane işaret oluştu, 128. işaret bu. Sonlarına sıfırlar eklersem, şöyle.
+
+287
+00:58:34,483 --> 00:58:42,923
+Sadece sıfır ekledim. Başına ve sonuna sıfır ekledim. Böylece 256 tane sample aldım. Benim FFT'm.
+
+288
+00:58:43,476 --> 00:59:04,456
+Ne olacak bu sefer? Frekans rezolüsyonum. 0'dan n-1'e kadar gitmiyor mu? Frekanslarım da, xk da ilerlerimde. 256 tane, 128 yerine 256 tane olmuş olacak. Dolayısıyla incelemiş olduğum frekans aralıkları azalmış olacak. FFT'nin böyle bir opsiyonu var. X'in yerine.
+
+289
+00:59:04,947 --> 00:59:20,887
+Number of FFT dediğimizde, 256'lık FFT yap dediğinde bu şekilde bir padding yapıyor. İşareti uzatıyor. Bunun yapmasının nedeni frekans rezolüsyonunu daha iyi bir şekilde tespit etmek.
+
+290
+00:59:31,315 --> 00:59:48,895
+Window, Overlap ve de Number of FFT. Şimdi bakalım. Şurada da göstermişim. Önce X işaretini veriyorum. Window genişliğini veriyorum. Şimdi Default değerler kullanmak yerine artık işaretin kendisini verdim.
+
+291
+00:59:56,032 --> 01:00:07,972
+Seçtiğim 256 örneği, bir sonraki 256'yı seçerken ucundan seçmiyorum da, geçmişte kullandığım örneklerin yarısını alıyorum. 128 tane de yeni örnek almış oluyorum.
+
+292
+01:00:07,972 --> 01:00:18,632
+128 tane örnek ilk seçtiğim pencereden. Yani kısaca şöyle. Seçtiğim bir örnek.
+
+293
+01:00:19,251 --> 01:00:33,332
+Burada 0'dan 255'e kadar örnekler var. İkinci seçeceğim örnek, şuradan 128 tanesini kapsıyor. 128 tane de burada var. Yeni bir 256 tane örnekten oluşuyor.
+
+294
+01:00:34,872 --> 01:00:45,112
+Arkasından nfft ile 256'lık bir fft yapmışım. 256 sample için değiştirmemişim 256. Ve de fs'i de vermişim.
+
+295
+01:00:45,268 --> 01:00:49,628
+Örnekleme frekansını da vermişim. Şimdi ben bunu bir çalıştırayım.
+
+296
+01:00:51,407 --> 01:00:54,228
+Şunu da koruyayım olmadı. Şu korunsun.
+
+297
+01:00:54,748 --> 01:00:57,048
+Koruyarak yeni bir figür açayım.
+
+298
+01:01:02,003 --> 01:01:05,503
+Yeni figürü açtım ve şunu çalıştırayım bakayım.
+
+299
+01:01:07,363 --> 01:01:11,043
+Bu sefer daha böyle güzel bir şekilde.
+
+300
+01:01:14,043 --> 01:01:23,283
+Bakın, şurada hangi zamanda time saniyeler cinsinden yaklaşık ne demişti [öğrenci]?
+
+301
+01:01:23,463 --> 01:01:26,883
+Bize yaklaşık 3 saniye sürecek demişti bu şey.
+
+302
+01:01:27,795 --> 01:01:52,415
+Örnekleme frekansını verince, buradaki örnekler yerine time, geçen zamanı bize verebildi. Burada da frekans içerikleri var. Bakın, sol taraftaki kısımda, şurada yani. Şimdi burada baktığımda 0,5 saniyesinde 1 diyordu. Bakın, 1. Şurada. Bakın.
+
+303
+01:01:52,800 --> 01:02:16,400
+0 ile 5 arasında alçak frekanslar yoğunlaşmış. Yüksek frekanslı birleşenler de var. Sonra bir sessizlik oldu. 2 diyecekti değil mi o ara? O ara hiçbir frekans hemen hemen yok mavi bölgede. 2, iki parçalı bakın. 2, i, boşluk 2. Şurada frekanslar oluştu. 3.
+
+304
+01:02:17,012 --> 01:02:29,492
+Dediği zaman, çığ ile beraber farklı bir frekansı. Dolayısıyla ben saniyeler ilerledikçe şurada hangi frekans bileşeninin nasıl oluştuğunu görebiliyorum.
+
+305
+01:02:29,492 --> 01:02:43,652
+Şimdi size başka bir şey göstereyim. Bir tane müzik vabı açalım şuraya.
+
+306
+01:02:51,059 --> 01:02:53,059
+Bunu bir okutalım şöyle.
+
+307
+01:02:59,284 --> 01:03:08,484
+Dikkat edin, bu 22.050 Hz'li örneklenmiş. Yaklaşık 66.000 tane örnek var. Dolayısıyla burada ne kadar sürecek?
+
+308
+01:03:14,291 --> 01:03:31,271
+Yine 3 saniye. Yine 3 saniye sürecek, evet. Şimdi bunun spektrogramımızı çizelim. Önce biz dinleyelim bakalım bu nasıl bir sesmiş. Sound file'ı o ayrık örnekleri sese dönüştürüyor.
+
+309
+01:03:35,827 --> 01:03:41,527
+Bir Windows açılış sesi var. Şimdi bunu spektrogramına çizelim.
+
+310
+01:03:47,027 --> 01:04:00,587
+Bakın 3 saniye sürüyor. Önce düşük frekanslar azmış başlangıcında. Sonra düşük frekanslar bakın şuraya doğru genel olarak bakarsanız düşük frekanslar yayılmaya başlıyor 3. saniyeye doğru.
+
+311
+01:04:01,707 --> 01:04:06,387
+Bazı frekanslarda bakın şurada izler var. 3 tane tırmık izi gibi.
+
+312
+01:04:06,996 --> 01:04:13,196
+Bazı yüksek frekanslılar da zamanla yok oluyor. Düşük frekansa gidiyorlar ve yok oluyorlar.
+
+313
+01:04:13,696 --> 01:04:17,416
+Şurada yüksek frekanslı birleşenler daha fazla bu seste.
+
+314
+01:04:18,276 --> 01:04:28,116
+Peki bu müzik dosyasıydı. Bir de ben noise'u okutayım.
+
+315
+01:04:30,216 --> 01:04:32,316
+Noise'u da kendim oluşturdum arkadaşlar.
+
+316
+01:04:33,139 --> 01:04:39,539
+Bir gaustan rastgele sayı değerleri elde ettik. Bakın şöyle bir ses veriyor.
+
+317
+01:04:44,788 --> 01:04:53,487
+Yani rastgele matematiksel olarak üretilmiş genlik değerleri. Herhangi bir şey taşımıyor. Bakın gürültü gibi.
+
+318
+01:04:55,887 --> 01:05:02,067
+Rastgele arka plan gürültüsü gibi. Bunun frekans bileşenleri ne olacak sizce?
+
+319
+01:05:08,275 --> 01:05:27,215
+Bakalım. Gördüğünüz gibi gürültü dosyasının bütün frekanslardan zaman her anında var. Bakın frekanslar dağılmış. Yani gördüğünüz gibi zamanın her anda, zamanda ilerledikçe ne oluyor arkadaşlar?
+
+320
+01:05:35,572 --> 01:05:50,412
+Gördüğünüz gibi frekanslarımız her anda var. Demiyor muyduk zaten? Gürültü bütün... Demek ki buradan şöyle bir çıkarım yapabiliriz. Gürültü bütün frekansları içeren bir karmaşık yapıda.
+
+321
+01:05:51,792 --> 01:05:58,832
+Anlatabiliyor muyum? Şimdi ben sizlerden şunu istiyorum. Ödev 3 olarak. Ben noise ve müziği vereceğim size.
+
+322
+01:05:59,344 --> 01:06:13,124
+Sizden istediğim kendi ses dosyanızı, wow dosyasını oluşturmanız. Daha sonra onun spektrogramını çıkartmanız. Kiminiz abc der, kimi [öğrenci] filan der. Bunları alın ve yorumlayın.
+
+323
+01:06:22,324 --> 01:06:33,023
+Bir ses kaydı yapın. Farklı. Ve onların spektrogramı ile alakalı olarak, onun spektrogramını çıkararak... Ne yapın arkadaşlar?
+
+324
+01:06:35,188 --> 01:06:49,307
+Bir yorumlayın bakalım onu. Farklı mesela konuşurken arka planda mesela cips paketi gibi bir şeyi böyle vurun veya tam konuşurken ne bileyim iki camı birbirine vurun.
+
+325
+01:06:49,307 --> 01:06:59,028
+Yani farklı zamanlarda frekanslı değişiklikler yapabilecek şeyleri yapın. Konuşurken normal arkadan müzik açın.
+
+326
+01:06:59,103 --> 01:07:11,183
+Önce bunun bir spektrogramını çıkarın. Arkasından bir kağıtı hışırdatın. Ondan sonra camları birbirine vurun. Hızlıca masanıza vurun kaydederken.
+
+327
+01:07:11,183 --> 01:07:22,323
+3-4 tane bir örnek yapıp bunların bir yorumlarını yazarak hangi etkinliğin yapıldığını ve de yorumlarını yazarak veriyorsunuz. Anlaştık mı arkadaşlar?
+
+328
+01:07:27,411 --> 01:07:34,192
+Hemen ekleyelim şöyle bir. Ödev anlaşıl mı arkadaşlar?
+
+329
+01:07:36,672 --> 01:07:36,911
+Evet.
+
+330
+01:07:37,831 --> 01:07:39,592
+Ödev hakkında sormak isteyen var mı?
+
+331
+01:07:43,347 --> 01:07:46,768
+Bu yaptığım örneklerin benzerini istiyorum sizden arkadaşlar.
+
+332
+01:07:49,407 --> 01:07:51,087
+Ödevler, örnekler.
+
+333
+01:07:52,387 --> 01:07:52,708
+Yeni.
+
+334
+01:07:57,847 --> 01:07:59,007
+Ödev.
+
+335
+01:08:04,052 --> 01:08:05,052
+3.
+
+336
+01:08:07,052 --> 01:08:08,052
+STFT
+
+337
+01:08:24,435 --> 01:08:35,195
+Ödev türümüz de bu. Bunun başlangıç tarihi bugüne verelim. 10'da verilmiş, tamam.
+
+338
+01:08:36,716 --> 01:08:42,615
+Hocam, yapacağımız yüzey dosyasının uzunluğunun bir sınırı var mı? En fazla kaç saniye olsun?
+
+339
+01:08:42,615 --> 01:08:51,575
+3-5 saniye yapın. 22 kHz de örnekleyin. 22 kHz, çok fazla yer kat etmesin.
+
+340
+01:08:52,851 --> 01:09:08,231
+Bir de bazen birkaç tane de şeyini farklı örnekleme frekanslarında yapın. Ona göre spektrogramını değiştirsiniz. Bakalım bir değişiklik oluyor mu? Onu da bir incelersiniz. Oldu mu?
+
+341
+01:09:10,371 --> 01:09:18,231
+Bitiş tarihine de şöyle verelim arkadaşlar. Basit bir şey bu zaten. 18'i...
+
+342
+01:09:21,332 --> 01:09:25,332
+18'i 23
+
+343
+01:09:29,908 --> 01:09:32,068
+23.59 diyeceğiz buna da.
+
+344
+01:09:36,884 --> 01:09:39,663
+Bir hafta kadar zamanınız var.
+
+345
+01:09:43,663 --> 01:09:52,503
+Ödev içeriği derste aktarılmıştır.
+
+346
+01:09:53,623 --> 01:09:57,923
+Ve bunu da kaydediyorum.
+
+347
+01:10:05,300 --> 01:10:06,600
+Şöyle şey yapalım.
+
+348
+01:10:07,600 --> 01:10:08,520
+Düzenle.
+
+349
+01:10:12,692 --> 01:10:14,851
+3 şeklinde kaydedelim.
+
+350
+01:10:18,260 --> 01:10:34,800
+Evet, şimdi arkadaşlar buraya kadar geldik. Bir webletlerle ilgili kısma gireceğiz. Şimdi 15 dakika ara veriyoruz. 10-25'te dersimiz başlıyor arkadaşlar. Size sormak istediği bir soru var mı?
+
+351
+01:10:38,931 --> 01:10:45,851
+Hocam, o spektrogramları fotoğraf olarak kaydedip yanına da açıklama mı yazalım yoksa?
+
+352
+01:10:45,871 --> 01:10:48,271
+Aynen, screenshot alsanız yeterli.
+
+353
+01:10:48,572 --> 01:10:48,791
+Tamam.
+
+354
+01:10:49,971 --> 01:10:50,711
+Tamamdır.
+
+355
+01:10:52,012 --> 01:10:54,692
+Birazdan görüşmek üzere o zaman. Kolay gelsin.
+
+356
+01:29:47,988 --> 01:29:49,507
+Merhaba arkadaşlar, tekrar.
+
+357
+01:29:52,847 --> 01:29:53,587
+Merhaba hocam.
+
+358
+01:29:56,328 --> 01:29:59,388
+Bir şeyler göndermiş arkadaşınız. Neymiş bakalım.
+
+359
+01:30:03,667 --> 01:30:08,448
+Arada bir denedim de hocam. ABC dedim. Birinde poşet sesi var, diğerinde yok.
+
+360
+01:30:09,460 --> 01:30:14,319
+Tamamdır. Bunların şeylerini ödevine falan koyarsın böyle.
+
+361
+01:30:14,739 --> 01:30:15,520
+Evet hocam.
+
+362
+01:30:15,520 --> 01:30:17,140
+Tamamdır.
+
+363
+01:30:19,140 --> 01:30:22,020
+Şimdi nerede kalmıştık?
+
+364
+01:30:25,684 --> 01:30:48,703
+PDF'imizi açalım. Evet, zaman frekans analizi yöntemlerinin en basiti ve ilki arkadaşlar Short-Tank Fourier Transform. Bunun dışında Multi-Resolution Analiz Yaklaşımı ortaya çıkıyor. Bunun en önemli yöntemi de dalgacık dönüşme, Wave-LED Transform'u.
+
+365
+01:30:49,427 --> 01:31:08,427
+Bu, Short Time Fourier Transform'ına bir alternatif olarak geliştiriliyor. Rezolüsyon problemine. Çünkü ilk başlarda sadece tek bir rezolüsyonla çalışabiliyorduk. Yani pencere genişliğimiz sabitti bizim. Bunu aşmak istiyoruz artık.
+
+366
+01:31:11,636 --> 01:31:31,076
+Benzerliği STFT ile işaretin bir basis function ile, yani temel bir fonksiyonla çarpılması. Bizim base function'larımız, yani temel fonksiyonlarımız DFT'de veya FFT'de sinizoidal sürekli yapılar.
+
+367
+01:31:37,967 --> 01:31:46,407
+Farklı frekanslarda ve değişik rezolüsyonlarda analiz etmek.
+
+368
+01:31:46,407 --> 01:31:59,167
+Değişik rezolüsyonlarda analiz etmek demek, farklı frekanslarda, değişik rezolüsyonlarda bazı yerlerde zamandan ödülü, reman rezolüsyonu yükselteceğiz.
+
+369
+01:31:59,604 --> 01:32:08,923
+Frekans Resolüsyonu düşüreceğiz. Bazı önemli kısımlarda ise frekans Resolüsyonu yükseltip zaman çözünürlüğünü düşüreceğiz.
+
+370
+01:32:08,923 --> 01:32:15,923
+Ne demiş burada? Genel olarak yaptığı yaklaşım şu. Yüksek frekanslarda...
+
+371
+01:32:17,171 --> 01:32:24,391
+İyi zaman rezolüsyonu ve düşük frekans rezolüsyonu hedefliyor yüksek frekanslarda.
+
+372
+01:32:24,591 --> 01:32:30,091
+Çünkü bunu yapmasının nedeni, şurada yüksek frekans bileşenleri oluştu diyelim.
+
+373
+01:32:31,011 --> 01:32:37,031
+Burada zaman rezolüsyonunun iyi olması lazım. Yani pencereleme aralığının dar olması lazım.
+
+374
+01:32:38,452 --> 01:32:49,492
+O yüzden düşük frekans özürüzsünün, iyi zaman özürüzsünün. Çünkü yüksek frekanslı bileşenler bir işaretin, yani biyomedikal işaretler her zaman oluşmaz.
+
+375
+01:32:50,492 --> 01:33:04,372
+Oluştuğu zaman da iyi yakalamak lazım. İşaretin çoğunluğunu genel olarak, ortalama çoğunluğunu oluşturan alçak frekanslardaysa iyi frekans özürüzsünün.
+
+376
+01:33:04,688 --> 01:33:31,907
+Yakalayacağız. Yani oradaki frekans rezolüsyonlarının işaretin çoğunluğunu oluşturan kısmın frekans analizini iyi yapacağız. Ama düşük bir zaman rezolüsyonu olsa iyi olur. Böyle bir trade-off var. Birini arttırınca öbürki azalıyor. Öbürkünü arttırınca zamanı arttırınca ise frekanstaki çözünürlükler düşüyor.
+
+377
+01:33:33,716 --> 01:33:51,376
+Ne için daha önemliymiş? Özellikle kısa süreli olarak yüksek frekanslı bileşenler üreten ve daha çok uzun süreli olarak alçak frekanslı bileşenlerle devam eden işaretler için.
+
+378
+01:33:51,376 --> 01:33:56,256
+Ki bu biyomedikal işaretleri çoğu işeği için geçerli.
+
+379
+01:34:01,619 --> 01:34:06,739
+Parçacıklara, kısımlara ayırıyoruz arkadaşlar.
+
+380
+01:34:08,020 --> 01:34:14,639
+Aynı işareti temsil ederken farklı frekans bantlarıyla analiz ediyoruz.
+
+381
+01:34:16,779 --> 01:34:24,479
+Sadece hangi frekans bantlarının hangi zaman aralıklarında oluştuğunu veriyoruz.
+
+382
+01:34:28,595 --> 01:34:30,515
+Şuradaki kısım arkadaşlar.
+
+383
+01:34:32,475 --> 01:34:33,395
+Continuous
+
+384
+01:34:37,332 --> 01:35:03,391
+Wavelet Transform olarak geçiyor. Baş harfleri CWT. İki tane parametre alıyor. Bir tanesi To şeklinde gösteren Translation. Yani bir nevi Location of the Window. Yani pencerenin işaret üzerindeki yeri. Bir nevi öteleme parametresi gibi. Diğeri ise Scale.
+
+385
+01:35:04,051 --> 01:35:13,492
+Yani işaretin darlığını, scale deniyor burada. İşaretin darlığını, genişliğini ayarlayan bir yapı.
+
+386
+01:35:15,492 --> 01:35:22,411
+Formülizasyona bakacak olursak aslında bir şey çizeyim size.
+
+387
+01:35:23,072 --> 01:35:28,871
+X, F'i, Continuous Fourier Transform'u yapacak olursak.
+
+388
+01:35:28,971 --> 01:35:31,051
+X sonsuzdan sonsuza kadar.
+
+389
+01:35:32,051 --> 01:35:44,411
+XT işareti vardı. Arkasında E üzeri, Eksi J Omega T, D, T idi. Bakın birbirlerine çok benziyorlar.
+
+390
+01:35:48,180 --> 01:36:03,780
+Xt işareti, Xt işareti. Burada sinizoidal bir base function var ve sürekli bir şekilde devam ediyor. Burada ise mother wave let denilen sönümlü bir işaret var.
+
+391
+01:36:04,756 --> 01:36:13,676
+Sonsuza kadar gitmiyor. Farkı, temel farkı bu. Ki bunu yapmasının nedeni pencerelemeyi de, doğal olarak penceremeyi de kendi içerisinde yapabilmek.
+
+392
+01:36:13,676 --> 01:36:26,676
+Şurada bir ölçek parametresi var. Çünkü bu S parametresi şu Mother Wavelet denilen ve de kendisinden çeşitli genişlikte işaretlerin oluşturulduğu.
+
+393
+01:36:27,796 --> 01:36:31,355
+Daha böyle dar, daha geniş.
+
+394
+01:36:32,083 --> 01:36:41,564
+Şuradaki genişlik, pencere genişliğini belirliyor ve de şu s parametresiyle, scale parametresiyle kontrol ediliyor.
+
+395
+01:36:41,564 --> 01:36:50,163
+Şimdi burada tabii ki furyeden temel farkı şu olmuş oluyor.
+
+396
+01:36:59,444 --> 01:37:15,524
+Omega Window fonksiyonuna çarpmıştık. Burada hiç Window fonksiyonuna çarpmaya gerek yok. Çünkü zaten sönümlü bir işaret. Belli bir şeyden sonra yok oluyor zaten. Şunun kendi genişliği bizim sadece oradaki işaretlerle uğraşmamıza neden oluyor.
+
+397
+01:37:27,539 --> 01:37:46,159
+Kaydırıyor. Ana işaretimiz var. Bu Wavlet Function'ı şöyle adım adım kaydırarak gidiyor. Ve de kendi Scale'de değişken bir panometre olduğu için dolayısıyla farklı Scale'lerde farklı Frekans Kat sayılarını yakalıyor.
+
+398
+01:37:47,100 --> 01:37:53,319
+Şimdi gösterelim bunları. Wavlet, Small Wave demek arkadaşlar.
+
+399
+01:37:53,844 --> 01:38:20,543
+Yani küçük dalgacık denmesinin nedeni o. Şu led eki, cık eki ekliyor. Dalgacık gibi oluyor. Bunun anlamı, window function'ın, yani burada gösterdiğim gibi size, sonlu uzunlukta olması. Yani, full ye gibi sonsuz gitmiyor böyle. Belli bir yerde sönümleniyor şöyle. O yüzden dalgacık deniyor.
+
+400
+01:38:21,300 --> 01:38:41,300
+Mother Wavelet ise kendisi bir prototip olarak kullanılıyor. Bir window function prototipi. Farklı wavelet tipleri var. Bundan Scale ve de öteleme parametre ile Scale parametre ile farklı dalgacıklar oluşturulabiliyor.
+
+401
+01:38:47,123 --> 01:38:57,763
+Scale Parametresi ile beraber pencereler genişletiliyor veya sıkıştırılıyor.
+
+402
+01:38:58,163 --> 01:39:03,423
+Ve de bunların Shifted versiyonuyla beraber bütün işaret gezilmiş oluyor.
+
+403
+01:39:05,423 --> 01:39:11,583
+Scale Parametresi büyüdükçe sinyal genişliyor.
+
+404
+01:39:12,500 --> 01:39:34,819
+Sinyal genişliyor. Küçükse birden işaret ne oluyor arkadaşlar? Darlaştırılıyor. Buradan da göreceğiniz gibi Scale Parametresi şurada büyüdükçe ne oluyor arkadaşlar? İşaret daha genişliyor. Yani Mother Wavelet daha böyle genişliyor. Küçük olduğu zamansa hemen sönümleniyor.
+
+405
+01:39:39,855 --> 01:39:59,975
+Yüksek, yani birden büyük S'lerde düşük frekansları yakalıyoruz. Çünkü geniş frekansları yakalıyoruz. S birden küçükse yüksek frekansları yakalayabilecek.
+
+406
+01:40:00,000 --> 01:40:14,180
+Daraltılmış, hızlı değişimleri gösteren işareti buluyor. Biliyorsunuz, XT ile bir Base Function'ın çarpımında, Base Function XT'ye ne kadar benziyorsa o kadar yüksek değer üretiyordu.
+
+407
+01:40:15,399 --> 01:40:26,123
+Ne demiş burada? Genel olarak özetlemiş. Düşük frekanslar için yüksek ölçek değerleri çok detay olmayan...
+
+408
+01:40:26,484 --> 01:40:40,324
+Çıktılar çıkıyor. Böylelikle sinyalin genel görünümünü görüyoruz ki bu low frekansın bütün işaret bölünce yayıldığını düşünüyor.
+
+409
+01:40:47,444 --> 01:40:58,024
+Kat sayısıdır. Yani bir işaret var. Anında bir şey var. Bunları yakalamak için kullanıyor. Kısa sürede başlayıp biten işaretler için kullanıyor.
+
+410
+01:41:00,724 --> 01:41:13,444
+Şimdi baktığımızda bir tane örnek işaret vermiş. Şimdi ben bunun sizinle şeyini paylaşacağım arkadaşlar. Okumanızı istediğim güzel bir...
+
+411
+01:41:15,667 --> 01:41:20,087
+Şu ana kadar anlattığımız kısmı çok güzel bizim için özetleyen.
+
+412
+01:41:22,307 --> 01:41:26,147
+Bakalım ben onları nereye koydum? Şuraya koydum galiba.
+
+413
+01:41:37,555 --> 01:41:38,555
+Burada değil.
+
+414
+01:41:41,495 --> 01:41:45,715
+Bakayım, geçen dönemki biomedikal şeyime koymuş muyum onu?
+
+415
+01:41:52,819 --> 01:41:55,739
+Burada, neredeydi? Bir saniye.
+
+416
+01:42:07,859 --> 01:42:11,079
+Geçen seneki biyomedikallerin arasına koymuşum.
+
+417
+01:42:54,612 --> 01:42:56,832
+Ekranı Refresh etmiyor nedense.
+
+418
+01:43:01,171 --> 01:43:03,771
+Şurası mıydı bakalım.
+
+419
+01:43:06,771 --> 01:43:07,671
+Bu değil.
+
+420
+01:43:36,692 --> 01:43:39,511
+O zaman bunu internetten vermiş olabilirim.
+
+421
+01:43:47,155 --> 01:43:52,155
+Herkes not alsın arkadaşlar. Robi Policar Weblet Tutorial diye geçiyor.
+
+422
+01:43:53,395 --> 01:44:02,415
+Şimdi bununla alakalı arkadaşlar dört tane kısım var. Şöyle dört tane kısım.
+
+423
+01:44:02,935 --> 01:44:06,876
+Bu dört kısım da part 1, part 2, part 3, part 4'ten oluşuyor.
+
+424
+01:44:06,876 --> 01:44:10,956
+Ve de işaretli anlayabilmek için güzel bir kaynak arkadaşlar.
+
+425
+01:44:12,404 --> 01:44:27,804
+İki haftalık bir süresini veriyorum. Bunun bir özetini elle yazıyorsunuz ve de 3-4 sayfada bitirin. Temel anladıklarınızda part 1 part 2 4 sayfalık olsun. Her bir sayfaya ne anladığınızı yapın.
+
+426
+01:44:40,819 --> 01:44:54,519
+Uygulamayla beraber PDF'e dönüştürün. El yazısıyla yazıp kendinizin yapmasını istiyorum. İsteyen İngilizce, yani yabancı arkadaşlar İngilizce yapabilir, Türk arkadaşlar Türkçe'ye çevirerek yapmasını istiyorum.
+
+427
+01:44:55,239 --> 01:45:02,739
+Burada temel olarak sinyallerin işlenmesi, anlamlandırması üzerine güzel bir şey var.
+
+428
+01:45:02,739 --> 01:45:04,399
+Güzel bir...
+
+429
+01:45:04,399 --> 01:45:13,239
+Anlatım var. Hızlıca bunu okuyup, partlarını okuyup bir özetini çıkartmanızı istiyorum. Bu da bizim dördüncü ödevimiz olacak.
+
+430
+01:45:14,779 --> 01:45:16,920
+Şöyle yeni diyelim.
+
+431
+01:45:21,971 --> 01:45:26,811
+Ödev 4
+
+432
+01:45:26,811 --> 01:45:29,031
+Wavelet
+
+433
+01:45:33,395 --> 01:45:48,055
+Konu, özeti. Bunu ödev olarak veriyoruz. Açıklama kısmına linki ekledim. Ödev dedik. Bu başlangıç tarihini bugün yapalım.
+
+434
+01:45:48,055 --> 01:45:57,735
+Evet. Bitiş tarihini de 18'i demiştik.
+
+435
+01:46:01,171 --> 01:46:03,051
+25'i diyelim bunu da.
+
+436
+01:46:05,611 --> 01:46:09,891
+25'i akşam vaktine kadar diyelim.
+
+437
+01:46:18,579 --> 01:46:19,619
+kaydettik.
+
+438
+01:46:24,756 --> 01:46:40,115
+Burada arkadaşlar, örneğin part 1'e gireyim. Okuması kolay, anlatım dili güzel. Burada frekans informasyonu neden ihtiyaç duyduk. Daha çok görüntüler üzerinden anlatıyor.
+
+439
+01:46:40,115 --> 01:46:46,756
+Ultimate Solution Wavelet Transform diye, ondan sonra devam edecek şeklinde bırakmış.
+
+440
+01:46:46,899 --> 01:46:58,039
+Temel olarak işaretlerin anlaşılması üzerine güzel bir tutar. Sadece vevlet anlatmıyor, furya transformunda temel özelliklerini anlatıyor. O yüzden ödev olarak vermek istedim.
+
+441
+01:47:00,239 --> 01:47:04,699
+Şimdi ona iki hafta süre vermiştik. Ödev anlaşıldı mı arkadaşlar?
+
+442
+01:47:06,859 --> 01:47:07,619
+Anlaşıldı hocam.
+
+443
+01:47:07,619 --> 01:47:12,079
+Sadece okuyup özetini çıkaracaksınız. Bu kadar.
+
+444
+01:47:16,979 --> 01:47:43,779
+Neredeydik en son? Bu da, bu kısımda zaten sizin okuyacağınız o şeyden alınmış. Özetini çıkaracağınız kısımdan alınmış. Örneğin bir tane mavi fonksiyonumuz var. Sadece tabii ki yüksek bir şeyle geçiyor burada. Ne yapılıyor basitçe? İşaretimizde şu dalgalanan işaret kaydırılıyor bu.
+
+445
+01:47:44,532 --> 01:48:04,312
+Geçiyor. Nerede en çok benzerlik gösterdiği işaret bulursak orada yüksek değerler oluşturuyor. Bu şekilde şu Wavlet Function'ı tabi burada çok diklemesine seçmiş. Şöyle sadece dik kısmını gösteriyor.
+
+446
+01:48:06,612 --> 01:48:11,472
+Öyle bir özelliği var. Burada zaten ödevde çok daha ayrıntılı olarak bakacaksınız.
+
+447
+01:48:11,472 --> 01:48:19,672
+Dikkat edin arkadaşlar. Bizim şurası time, şurası frekansımız olsun.
+
+448
+01:48:21,612 --> 01:48:33,592
+Düşük frekanslarda, bakın, düşük frekanslarda gördüğünüz gibi aşağı kısımlarda düşük frekanslarda iyi bir rezolüsyon var. Aralığı belli.
+
+449
+01:48:34,047 --> 01:48:49,687
+Yani bizim hangi frekansların oluştuğunu biliyoruz. Ama yükseldikçe bu aralık artmaya başlıyor gördüğünüz gibi. Neden? Düşük frekansların aralığını iyi tespit etmek istiyoruz.
+
+450
+01:49:00,083 --> 01:49:11,823
+Büyük olursa frekans özürlüsünü iyi yaptık ama bu sefer pencere aralığı büyük. Time'ı bilemiyoruz. Time'da bir sorun var. Hangi aralıkta olduğunu bulamıyoruz.
+
+451
+01:49:13,043 --> 01:49:22,983
+2. Bakın biraz daha artmış. Frekans özürlüsü yonu düşmüş. Bu sefer en azından 1'de mi 2'de mi? Onu bilebiliyoruz.
+
+452
+01:49:23,507 --> 01:49:28,967
+Biraz daha artmış. Frekans rezolasyonu düşüyor. Aralık büyüyor çünkü.
+
+453
+01:49:29,807 --> 01:49:33,728
+Yani hangi frekans kesin söyleyemiyoruz. Aralık büyüdü.
+
+454
+01:49:33,728 --> 01:49:42,927
+Bu sefer ama bu pencere boyutunun küçültülmesi demek. Dolayısıyla en azından hangi aralıkta olduğunu biliyoruz.
+
+455
+01:49:43,047 --> 01:49:50,728
+İyice frekansın aralığı muğlaklaştığı zaman en azından artık zamanda nerede olduğumuzu...
+
+456
+01:49:51,731 --> 01:50:09,692
+Bilebiliyoruz. Bakın ne demiş buradaki kutucuya? İyi zaman rezolüsyonu, kötü frekans rezolüsyonu. Evet, niye kötü? Şurası gördüğünüz gibi belirsiz. Oysa zaman aralığı darlaşmış. Burada en fazlaydı zaman belirsizliği, burada daralmış.
+
+457
+01:50:11,692 --> 01:50:17,972
+Şimdi bizim bu güzel bir slide arkadaşlar.
+
+458
+01:50:18,479 --> 01:50:20,679
+Bu slide'da şeyi görebiliyoruz artık.
+
+459
+01:50:22,519 --> 01:50:36,899
+Transformasyonların eğer basitçe time serisi kullandığımızda, yani bizim iksenimiz şu şekilde belliyse, hangi işaretin ne zaman oluştuğunu bilebiliyoruz.
+
+460
+01:50:37,639 --> 01:50:42,899
+Dolayısıyla zaman rezervüsünün iyi, frekansla alakalı hiçbir bilgimiz yok.
+
+461
+01:50:44,948 --> 01:50:53,048
+Fourier dönüşümüne geldiğimizde ise arkadaşlar, artık işaretin frekansıyla ilgili bilgimiz var.
+
+462
+01:50:53,568 --> 01:50:59,347
+Hangi frekansın ne zaman oluştuğunu biliyoruz ama zamanı konusunda herhangi bir bilgimiz yok.
+
+463
+01:51:01,228 --> 01:51:05,728
+Üçüncü aşamaya geçiyoruz. Short Time Fourier Transform.
+
+464
+01:51:05,728 --> 01:51:09,148
+İşte burada artık pencere aralıkları sabit.
+
+465
+01:51:09,587 --> 01:51:15,587
+Bu pencere aralıklarında hangi frekansların oluştuğunu bilebiliyoruz.
+
+466
+01:51:15,587 --> 01:51:24,187
+Tabi ki pencere boyutu düştükçe, zahine şuraya gittikçe frekans özellisyonu düşer.
+
+467
+01:51:24,987 --> 01:51:28,067
+Genişledikçe frekans özellisyonu azalır.
+
+468
+01:51:29,187 --> 01:51:32,287
+V-LED dönüşümünde ise farklı bir yapı var.
+
+469
+01:51:32,659 --> 01:51:39,780
+Düşük frekanslarda iyi zaman rezolüsyonu, kötü zaman rezolüsyonu.
+
+470
+01:51:39,780 --> 01:51:47,420
+Yüksek frekanslarda ise iyi zaman rezolüsyonu, bu sefer frekans rezolüsyonu kötü.
+
+471
+01:51:48,840 --> 01:51:54,440
+Dolayısıyla farklı skellerde, skelle de bizim neyimizi ayarlıyordu?
+
+472
+01:51:54,940 --> 01:51:56,780
+Şuradaki pencere boyutumuzu.
+
+473
+01:51:57,460 --> 01:52:08,839
+S birden küçük olduğunda, scale birden küçük olduğunda ne yapıyorduk arkadaşlar? Pencere boyutu, yani bizim wavlet fonksiyonumuz daralmaya başlıyordu.
+
+474
+01:52:09,659 --> 01:52:17,139
+S birden büyük olduğu zamansa wavlet fonksiyonumuz genişlemiş oluyor. Dolayısıyla pencere boyutu genişlemiş oluyor.
+
+475
+01:52:17,139 --> 01:52:21,899
+Bu sefer de frekans özülüsünümüz iyi hale gelmiş oluyor.
+
+476
+01:52:25,332 --> 01:52:37,632
+Evet, şimdi burada basitçe nasıl yapıldığını, Wavelet'in MATLAB örneklerini göstereceğim birazdan arkadaşlar.
+
+477
+01:52:37,632 --> 01:52:49,232
+Genel olarak bir işaret geldiği zaman şöyle aldık işareti. Ne yapıyor arkadaşlar? Wavelet'i iki tür filtrelerle uyguluyor.
+
+478
+01:52:50,003 --> 01:52:58,443
+Filtre kullanarak yapıyor. Bir high filter, bir low pass filter kullanarak, high pass filter'ında
+
+479
+01:52:58,443 --> 01:53:06,563
+approximation yani yaklaşıklıklarını bulurken, pardon low pass filter'ında yaklaşık olarak
+
+480
+01:53:06,563 --> 01:53:14,123
+siyelin düşük frekanslarını bulurken, high pass filter'da ise yüksek frekanslarını buluyor.
+
+481
+01:53:15,315 --> 01:53:25,035
+Bu şekilde ilerleyerek arkadaşlar, sadece alçak frekanslardan detay ve approximation katsayıların çıkıyor. Çok kabaca bunlara değiniyorum.
+
+482
+01:53:27,355 --> 01:53:35,535
+Biraz daha şeyin üstünde görelim arkadaşlar. Matlab'de bir tane şey seçelim.
+
+483
+01:53:36,315 --> 01:53:41,163
+Çok fazla denilemesine sorumlu değilsiniz. Genel olarak bilgi sahibi olun diye anlatıyorum.
+
+484
+01:53:41,684 --> 01:53:44,163
+Toolbox'lar nereden açılıyordu?
+
+485
+01:53:50,228 --> 01:53:51,756
+Toolboxlar.
+
+486
+01:54:27,380 --> 01:54:28,659
+Evet, şuradaymış.
+
+487
+01:54:30,699 --> 01:54:33,519
+Metlepte güzel arayüzler hazırlamışlar böyle.
+
+488
+01:54:33,779 --> 01:54:35,319
+O yüzlerle beraber
+
+489
+01:54:35,819 --> 01:54:36,599
+hızlıca
+
+490
+01:54:36,859 --> 01:54:38,899
+işaretleri inceleyebiliyoruz.
+
+491
+01:54:39,159 --> 01:54:40,699
+İnceleyebiliyoruz arkadaşlar.
+
+492
+01:54:41,199 --> 01:54:41,979
+Şöyle
+
+493
+01:54:42,219 --> 01:54:44,779
+Weavlet One Dimension'lı bir açalım.
+
+494
+01:54:51,252 --> 01:54:53,092
+Tam ekran haline getirelim.
+
+495
+01:54:54,792 --> 01:54:55,352
+File.
+
+496
+01:54:57,092 --> 01:54:59,492
+Bir tane kalp datası yükleyelim.
+
+497
+01:55:03,444 --> 01:55:09,844
+O da bizim 256'ın içerisinde var zannedersin. Gördüğünüz gibi kalp işareti.
+
+498
+01:55:10,604 --> 01:55:11,384
+Şimdi
+
+499
+01:55:12,404 --> 01:55:13,164
+benim
+
+500
+01:55:13,684 --> 01:55:15,724
+yüksek frekanslılarda
+
+501
+01:55:15,984 --> 01:55:20,084
+zaman rezolüsyonum iyi olacaktı. Düşük frekanslılardaysa
+
+502
+01:55:20,344 --> 01:55:22,904
+düşük frekanslılardaysa
+
+503
+01:55:23,164 --> 01:55:27,504
+neyi elde ediyordum arkadaşlar? Sadece düşük frekanslı birleşenleri elde ediyordum.
+
+504
+01:55:27,764 --> 01:55:29,304
+Burada örneğin
+
+505
+01:55:29,684 --> 01:55:53,864
+Bir seviye bir mail, wave led dönüşümü uygulayayım. Şurayı niye almıyor? Analyze diyorum. Bakın. Kullanmış olduğu filtrelerle bir düşük, alçak geçiren filtre ve yüksek geçiren filtrelerle beraber alçak geçiren filtrelerde arkadaşlar düşük frekanslı.
+
+506
+01:55:54,547 --> 01:56:14,467
+İşaret bileşenlerinden işareti tekrar inşa ederken, bakın şurada gördüğünüz gibi 2300 ortalaması işaretin 2300'de, 2900'e kadar çıkmış. İşaretin düşük frekanslı bileşenlerini elde tutuyor. Oysa aşağıdaki işarete bakın.
+
+507
+01:56:14,927 --> 01:56:37,507
+İşaretin yüksek frekanslı birleşenliğinin olduğu yerde pikler yapıyor. Tam ortada şuradaki görmüş olduğunuz kısımda yüksek frekanslı birleşenler varmış. Bu ikisi birleştiğinde, mavi ve de yeşil birleştiğinde yukarıdaki orijinal işareti elde edebiliyoruz.
+
+508
+01:56:37,507 --> 01:56:40,407
+Ve evlet aşamalı olarak şunu sağlıyor.
+
+509
+01:56:41,747 --> 01:56:57,467
+Her bir seviyede yüksek geçiren ve alçak geçiren filtre uygulayan aslında alçak geçiren filtrelerden genel olarak düşük frekanslı, yani frekans analizinin yer bilgisinin çok önemli olmadığı.
+
+510
+01:56:58,515 --> 01:57:03,416
+Bilgiyi koparıyor. Dolayısıyla bu düşük frekanslı bileşenler haline geliyor.
+
+511
+01:57:04,456 --> 01:57:09,555
+Yüksek frekanslı bileşenler ise zamanın ve yerin tam olarak tespit edilmesi lazım.
+
+512
+01:57:10,355 --> 01:57:15,395
+Burada da frekans özgürlüsü kötü ama yerin nerede olduğu tam olarak tespit edilebiliyor.
+
+513
+01:57:16,532 --> 01:57:20,872
+Bakın burada bunun seviyeleri 60'larda, bunun seviyesi ise 260'larda.
+
+514
+01:57:20,952 --> 01:57:26,552
+Yani tam burada demek ki aslında bir yüksek frekanslı bileşen içeriği artmış durumda.
+
+515
+01:57:26,552 --> 01:57:32,292
+Özellikle şu tepe noktalarda falan bileşenler oraya oluşturabilmek için artıyor.
+
+516
+01:57:32,852 --> 01:57:36,452
+İki seviyeye geçelim mesela bunu. Analyze diyelim.
+
+517
+01:57:38,452 --> 01:57:59,112
+Bakın, bu sefer deminki seviyede bir düşük bir de yüksek geçen fitri sonuçları vardı. Bunlardan ilkini arkadaşlar, bir daha göstereyim onu. Şuna approximation diyorduk. Yani yaklaşıklık, işaretin yaklaşıklığı. Bu da detay, yani yüksek frekans bileşenleriydi.
+
+518
+01:58:05,876 --> 01:58:12,336
+Bakın, tekrar deminki approximation'a bir sefer daha uygulandı vevlet dönüşümü.
+
+519
+01:58:13,036 --> 01:58:16,215
+Detaylar aynı kaldı. Şu detay aynı kaldı arkadaşlar.
+
+520
+01:58:17,595 --> 01:58:23,615
+Sadece yukarıdakini, deminki ortadakini, yani alçak geçiren birleşene bir daha uygulandı.
+
+521
+01:58:24,456 --> 01:58:30,815
+Dolayısıyla bir seviye daha approximation, yani daha alçak frekanslar elde edilirken,
+
+522
+01:58:31,199 --> 01:58:37,420
+O da alçak frekansların da detayları elde edilmiş oldu. Böyle böyle gidiyor.
+
+523
+01:58:38,699 --> 01:58:46,680
+Temelde şunu elde etmeye çalışıyoruz. Şurada gördüğünüz gibi bir tane orijinal işaretimiz var bizim.
+
+524
+01:58:47,479 --> 01:58:52,779
+512 örnekten olsun ve de yaklaşık 0 ile 1000 Hz arasında olsun diyelim.
+
+525
+01:58:59,315 --> 01:59:04,595
+500-1000 Hz. Yüksek frekanslı 5 Hz. Burada detay katsıydı. Detay birinci seviye.
+
+526
+01:59:05,415 --> 01:59:08,355
+Ve buradan, yani şurayı elde etmiş olduk şöyle.
+
+527
+01:59:09,215 --> 01:59:13,255
+Bir daha approximation elde ediyoruz. O da 0 ile 500 Hz arasında.
+
+528
+01:59:14,255 --> 01:59:18,135
+Daha sonra bu 0 ile 500 Hz arasında bir daha uygulanıyor Biyomedal dönüşümü.
+
+529
+01:59:18,899 --> 01:59:28,139
+Bu sefer burası 0 ile 500 Hz arasındaydı. Burası 0 ile 250 Hz. Burası 250 Hz ile 500 Hz arasında.
+
+530
+01:59:28,879 --> 01:59:34,899
+Burası arkadaşlar bir daha approximation'a bir daha uygulanıyor. Burası 0, 125 Hz.
+
+531
+01:59:34,912 --> 01:59:40,172
+Burası da 125-250 Hz arasındaki işaretleri bize sunmuş oluyor.
+
+532
+01:59:40,511 --> 01:59:41,971
+Bunun faydası ne arkadaşlar?
+
+533
+01:59:43,271 --> 01:59:53,532
+Burada özellikle yüksek frekanslı bileşenlerle, yani approximation katsayılığıyla hangi işaretin ne zaman oluştuğu bilgisine sahibiz.
+
+534
+01:59:54,632 --> 01:59:58,391
+Dolayısıyla bu da bizim elimizi kuvvetlendiriyor yüksek frekans.
+
+535
+02:00:00,000 --> 02:00:12,960
+Approximation'lar aslında bizim için düşük frekanslı, düşük frekanslardaki yüksek rezolüsyondan dolayı yeniden çatılmış işaretleri oluşturuyor.
+
+536
+02:00:13,560 --> 02:00:18,960
+Daha ayrıntılı bir yapısı var. Ve evletleri okudukça daha iyi anlayacaksınız arkadaşlar.
+
+537
+02:00:19,920 --> 02:00:25,640
+Nelerde kullanılıyor arkadaşlar? Bütün hemen bilimsel alanlarda kullanıcı image processing.
+
+538
+02:00:26,176 --> 02:00:47,775
+Ondan sonra pür frekanslarını tanımlamak, denoizing için, ondan sonra görüntülerdeki devamsızlıkları kırılma noktaları bulmak için, benzerlikler, imaj kompresing, örneğin JPEG DCT kullanırken sıkıştırma yapmak için.
+
+539
+02:00:51,123 --> 02:00:57,823
+Buradaki kat sayıları kullanan discrete wavelet transformu kullanıyor arkadaşlar. JPEG 2000 standartta.
+
+540
+02:01:00,103 --> 02:01:08,363
+Evet. Başka bir sorumuz var mıydı arkadaşlar? Şu an kadar anlattığım kısımla alakalı.
+
+541
+02:01:15,444 --> 02:01:16,884
+Ses geliyor değil mi gençler?
+
+542
+02:01:17,604 --> 02:01:18,884
+Evet hocam geliyorum.
+
+543
+02:01:20,104 --> 02:01:23,184
+Tamamdır. Bir sorunuz varsa sorabilirsiniz.
+
+544
+02:01:23,184 --> 02:01:31,484
+Benim kavaca işaret işleme ile alakalı anlatacağım kısımlar bunlar arkadaşlar.
+
+545
+02:01:32,704 --> 02:01:35,423
+Temel olarak bir işaretin ayrıklaştırılması.
+
+546
+02:01:36,148 --> 02:01:54,688
+Ondan sonra Nyquist frekansı neye dikkat etmemiz gerektiği, ayrık zamanda işlemenin nasıl yapıldığı, standart frekans analizi yöntemlerinin eksiklikleri, bunlara çare olarak geliştirilen zaman frekans yöntemlerinin nasıl geliştiği konusunda genel bir bilgi sahibi oldunuz.
+
+547
+02:01:55,228 --> 02:02:03,328
+Bundan sonraki kısımda ise arkadaşlar, görüntü işleme ile alakalı kısma geçeceğim. Görüntü işlemeye bu hafta biraz girelim.
+
+548
+02:02:03,859 --> 02:02:10,559
+Ondan sonra önümüzdeki hafta tekrar buna devam ederiz.
+
+549
+02:02:14,003 --> 02:02:15,563
+Bunu şöyle açalım.
+
+550
+02:02:21,555 --> 02:02:22,155
+Açalım.
+
+551
+02:02:41,140 --> 02:02:46,659
+Görüntü İşleme ile alakalı olarak elimde güzel slide'lar var. Onları da paylaşacağım arkadaşlar sizinle.
+
+552
+02:02:48,720 --> 02:02:50,300
+Önümüzdeki haftadan itibaren.
+
+553
+02:02:50,300 --> 02:02:59,979
+Şimdi, imge kavramı deyince, biliyorsunuz artık biz şu ana kadar nelerle uğraşmıştık?
+
+554
+02:03:00,439 --> 02:03:02,680
+Hep bir boyutlu işaretlerle uğraşmıştık.
+
+555
+02:03:03,539 --> 02:03:06,779
+Buradaki temel parametre t idi değil mi? x, t.
+
+556
+02:03:08,243 --> 02:03:30,843
+Artık bizim görüntü işlemede ise değişkenlerimiz aslında zaman yerine uzam parametresi oluyor. U ve V yönünde. Yani bir matrisle uğraşmaya başlayacağız. Değişkenimiz T yerine U ve V. Uzamsal yani special değişkenimiz olmuş oluyor.
+
+557
+02:03:35,988 --> 02:03:42,648
+Bir matriz yapısı şeklinde genellikle bunu ifade ediyoruz. Örneğin ilk resim gri seviye bir resim.
+
+558
+02:03:44,948 --> 02:03:46,488
+Bu ise renkli bir resim.
+
+559
+02:03:49,308 --> 02:03:50,588
+Renkli bir resim.
+
+560
+02:03:51,088 --> 02:03:55,188
+Bu renkli resim arkadaşlar tek bir matrizle ifade edilebiliyor.
+
+561
+02:03:55,708 --> 02:03:56,988
+Her bir pikseli
+
+562
+02:03:57,488 --> 02:04:00,048
+beyazdan siyaha kadar
+
+563
+02:04:00,568 --> 02:04:02,348
+grinin tonlarını tutarak
+
+564
+02:04:03,252 --> 02:04:21,252
+İfade ediliyor. Oysa renkli resimde ise neye ihtiyacımız var? Üç tane matrize ihtiyacımız var. Red, green ve blue bileşenlerini saklayacak şekilde. Ama her halükarda ben bu görüntü dediğimiz zaman iki boyutlu.
+
+565
+02:04:21,844 --> 02:04:44,264
+Sonuçta iki boyutlu plane'lerden oluşuyor. Her görmüş olduğunuz katmana plane deniyor arkadaşlar. Sonuçta iki boyutlu matrisler şeklinde ifade ediyoruz. Nasıl ki daha önceki işaretlerimiz bir array şeklinde tutuyorsak, işaretlerimiz array şeklinde tutuyorsa, görüntüler ise bir matris yapısı şeklinde yapılıyor.
+
+566
+02:04:45,268 --> 02:04:56,047
+Şimdi uygulama alanlarına baktığımızda ise, imge işleme ve uygulama alanlarına baktığımızda ise, en geniş kullanım alanı burada zannedersem.
+
+567
+02:04:56,147 --> 02:05:08,768
+Özellikle görüntülerin zamanımızda yaygınlaştığı zaman da, tıp, biyoloji, yani x ışınları, biyomedikal görüntüler, coğrafi bilimler, geodezi, hava, uydu görüntüleri, hava tahmini.
+
+568
+02:05:09,332 --> 02:05:16,152
+Restorasyon, eski hasar görmüş fotoğrafların onanması. Videoyu da şöyle düşünebiliriz arkadaşlar.
+
+569
+02:05:16,771 --> 02:05:27,752
+Aslında çerçeve renkli veya siyah beyaz arka arkaya oynatılması. Frame frame örneğin saniyede 25 frame per second örneğin.
+
+570
+02:05:28,832 --> 02:05:36,172
+Yani bir saniyede 25 tane aynı resmi gösterirseniz hareketli resim haline gelmiş oluyor arkadaşlar.
+
+571
+02:05:38,100 --> 02:05:47,160
+Onda da çalışılan bir konu. Her biri aslında bir imge olduğu için imge veya görüntü diyorlar.
+
+572
+02:05:50,020 --> 02:05:53,820
+Şimdi burada bu tabii ki imejin karşılığı.
+
+573
+02:05:55,960 --> 02:06:03,160
+Görüntü deyince daha farklı bir anlam. Genellikle image prosesinki görüntü işleme deniyor.
+
+574
+02:06:03,160 --> 02:06:04,680
+Veya imge işleme.
+
+575
+02:06:05,171 --> 02:06:19,011
+Görüntü olunca videoyu da kapsadığını söyleyenler falan var. Videoya görüntü deyip imge şeklinde yaklaşanlar var.
+
+576
+02:06:20,011 --> 02:06:25,731
+Şimdi onun dışında biz daha çok görüntü işleme diyoruz tabii alışılageldiği üzere.
+
+577
+02:06:26,387 --> 02:06:41,987
+Fizik alanında elektromikroskobi görüntüleri, spektrometreler, uzay bilimi çok kullanılıyor uzaktan algılaman, uydu, mikrodalga radar görüntüleri, sar görüntüleri gibi multispektral, hiperspektral görüntüler.
+
+578
+02:06:43,028 --> 02:07:03,488
+Savunma sanayinde gece görüş, akıllı roket sistemleri, kameralardan bir şekilde nesne tespiti veya hedef tespitini yapılabildiği şeyler. Endüstriyel uygulamalar çok kullanılıyor. Hata tespiti, süreçlerin düzgün işleyip işlemediğini, hatalığın ayıklanmasında kullanılıyor. Tüketici elektroniği.
+
+579
+02:07:03,988 --> 02:07:16,648
+Cep telefonlarından tutun da her alanda, güvenlik sistemlerinde iris, parmak izi, göz tanıma, güvenlik uygulamaları gibi artık hayatımızın her anında görüntü işleme var arkadaşlar.
+
+580
+02:07:18,908 --> 02:07:27,628
+Temel olarak bakacak olursak bir görüntü nasıl oluşuyor? Sonuçta bir doğal bir ışık kaynağımız var bizim.
+
+581
+02:07:28,064 --> 02:07:37,204
+Bu objeye yansıyor. Yansıyan ışık bir sensör tarafından kaydedilerek şu matriz yapısı oluşturuluyor.
+
+582
+02:07:37,204 --> 02:07:46,944
+Immuser veya Spatial Domain de diyebiliriz. Dikkat edin.
+
+583
+02:07:47,412 --> 02:08:13,231
+Şimdi bu ışık ve görüntü kavramlarını biraz daha gireceğiz. Bir aydınlatmanın bizim bir görebilmemiz için veya bir sensörün görebilmesi için öncelikli olarak bir şeyin ışıklandırılması lazım. Onda absorbe edilenler yansımıyor. Yansıyanlar ise artık kamera veya göz tarafından algılanabilir bir yapıya dönüşmüş oluyor.
+
+584
+02:08:13,876 --> 02:08:23,115
+Demin de dediğim gibi video kavramı burada görüntülerin arka arkaya gelmesiyle oluşuyor.
+
+585
+02:08:23,115 --> 02:08:35,996
+Veya televizyonda aslında videonun iletimiyle alakalı bir yöntem. Analog ve dijital iletim olmak üzere farklı yapılar var. Bunlara çok girmiyoruz.
+
+586
+02:08:37,336 --> 02:08:40,115
+Şimdi buralara da girmiyoruz.
+
+587
+02:08:41,427 --> 02:08:53,127
+Video işaretleri farklı bir dersin konusu. O kısımlara girmeyelim. Buradan gidelim. Şimdi baktığımızda biz MATLAB'de veya
+
+588
+02:08:53,127 --> 02:09:08,207
+Python'da çalışıyoruz. Şimdi eğer I'yi görüntünün kendisi X ve Y şeklinde düşünecek olursak, MATLAB'de aslında şöyle tutuyor.
+
+589
+02:09:09,152 --> 02:09:20,072
+Y ve X şeklinde tutuyor. Yani ilk kullanılan şey satır. İkincisi ise sütünün olsun.
+
+590
+02:09:20,872 --> 02:09:27,672
+Yani sıfıra sıfır dediğimizde sıfırıncı satır tam şurası sıfırıncı sütün oluyor.
+
+591
+02:09:34,228 --> 02:09:48,967
+Sütun oluyormuş gibi davranıyoruz. Dolayısıyla mesela I 10'a 0 dediğimiz zamansa 10. satırda şurada şu kısma gelmiş olur.
+
+592
+02:10:00,051 --> 02:10:11,091
+Biliyorsunuz koordinat sisteminde yukarı doğru çıkışımızdı. Burada tam tersi bir mantık var. Programlama dillerinde farklı bir mantık olabilir. Buna biraz dikkat edeceksiniz.
+
+593
+02:10:12,372 --> 02:10:20,332
+Peki, görüntü iki boyutlu ışık yoğunluk fonksiyonu olarak adlandırılabilir diyor.
+
+594
+02:10:20,787 --> 02:10:40,787
+Yani bizim I, X, Y'nin içerisinde tuttuğumuz yani şu piksellerde tuttuğumuz değerler, matrisin gözlerinin değeri aslında bizim o piksele denk düşen ışıklılık yani intensity, ışık yoğunluğu.
+
+595
+02:10:41,807 --> 02:10:44,127
+Yoğunluk demek ya intensity, yoğunluk.
+
+596
+02:10:45,108 --> 02:10:55,488
+Işık yoğunluğu gösteriyor. Eğer oradan çok ışık yansımıyorsa, karanlık bölgeler, dark bölgeler, yansıdıkça light bölgeler oluşuyor arkadaşlar.
+
+597
+02:11:00,564 --> 02:11:09,144
+Dolayısıyla bizim sensörümüz veya göz yapımızda da biz bu parlaklık, intensitik şeylerine bakıyoruz.
+
+598
+02:11:10,024 --> 02:11:13,283
+Peki, görüntüler sayısalığa nasıl dönüştürülüyor?
+
+599
+02:11:13,783 --> 02:11:19,043
+Biliyorsunuz aslında biz görüntüleri, gözümüzle gördüğümüz bir görüntü kavramı var.
+
+600
+02:11:19,043 --> 02:11:25,203
+Burada gözde arkadaşlar artık ne oluyor? Gelen ışık geliyor.
+
+601
+02:11:27,636 --> 02:11:45,056
+Birinde parlaklık, koni ve de çubuk hücreleri tarafından birinde konilerde parlaklık bilgisi kullanılırken çubuklarda ise renk bilgisi ayrışlar, beyinde bir imge yaratılıyor ve bu analog bir imaj.
+
+602
+02:11:45,456 --> 02:12:01,756
+Analog, yani piksel kavramı yok. Veya standart fotoğraf makinelerini düşünelim. Bunlarda da ne? Arkada bir film var. İşte geliyor, mercekten yansıyor şöyle fotoğraf filmine. Her anında, burada kimyasal bir yapı var.
+
+603
+02:12:03,655 --> 02:12:12,796
+Piksel kavramı olmadan her tarafına o bölgedeki parlaklık değeri işlenmiş oluyor. Peki sayısala geçiş nasıl olacak?
+
+604
+02:12:13,300 --> 02:12:19,560
+Sayısal makinelerde artık, DSLR diyelim, piksel kavramı var.
+
+605
+02:12:19,560 --> 02:12:33,400
+Bu kullanılan piksel sayısı arttıkça, aynı analog işaretlerinin işlenmesinde olduğu gibi, analog işareti, tek boyutlu işareti ne yapıyorduk? Örnekliyorduk.
+
+606
+02:12:33,908 --> 02:12:44,888
+Şöyle ne yapıyorduk? Şöyle örnekler alıyorduk. Burada da öyle bir şey olacak. Bir işaretimiz var. Artık örneklerimiz bizim hem X yönünde hem G yönünde olacak.
+
+607
+02:12:46,368 --> 02:12:57,888
+Öncelikli olarak ilk aşama örnekleme. İkincisi ise kuantalama. Aynı şekilde sayısallaştığı iki adımdan oluşuyor. Örnekleme yani bunların...
+
+608
+02:12:59,604 --> 02:13:05,144
+Hangi sıklıkta örneklenecek? İkinci kısım ise bunların değerinin saklanması.
+
+609
+02:13:06,044 --> 02:13:11,744
+Çünkü örneğin, biz nicemleme deyince ne diyorduk ona? Quantization.
+
+610
+02:13:12,684 --> 02:13:14,423
+Hocam sesiniz gitti de az önce.
+
+611
+02:13:15,884 --> 02:13:18,444
+Tamam. Şimdi nasıl sesim?
+
+612
+02:13:18,444 --> 02:13:22,044
+Hocam, kusura bakmıyorum da sesiniz gitti de az önce.
+
+613
+02:13:22,704 --> 02:13:25,164
+Tamam. Şimdi beni duyuyor musunuz?
+
+614
+02:13:26,547 --> 02:13:53,047
+Şimdi duyuyoruz ama bir 5 saniye falan. Şu sayısallaştırma kısmı iki kısımdan oluşuyor arkadaşlar. Biri örnekleme, ikincisini jemleme. Aynı bizim şeyde yaptığımız gibi. Bir boyutlu işaretlerde yaptığımız gibi. Önce işareti ne yapıyorduk böyle? Önce ne yapıyorduk? Örnekliyorduk.
+
+615
+02:13:54,003 --> 02:14:01,463
+İkinci kısım neydi? Şu seviyelerinin de ne yapılması lazımdı? O da sonsuz değer alıyordu.
+
+616
+02:14:02,083 --> 02:14:11,223
+Belli aralıklara çekilmesi lazımdı. Kullandığımız bit sayısıyla beraber bunları seviye seviye kuantalara ayırabiliyorduk.
+
+617
+02:14:11,804 --> 02:14:19,403
+Ne kadar bit sayımız artarsa o kadar çok ayrı böyle ince ayrıntılara girme şansımız oluyordu.
+
+618
+02:14:22,003 --> 02:14:44,804
+Aynısı burada da söz konusu. Örnekleme ile beraber biz piksel sıklığını belirler hale geliyoruz. Peki bu pikseli nasıl saklayacağız? Orada da sonuçta bir parlaklık seviyesi var. Eğer 8 bit kullanırsak 256 tane seviye, 16 bit kullanırsak 65536 tane seviye.
+
+619
+02:14:45,203 --> 02:15:04,003
+Tabii ki bizim bit sayımız arttıkça fotoğraf için ayıracağımız değer sayısı da artıyor. Yani biz her göze 0-255 arası mı yazacağız? 0-65535 arasında mı yazacağız?
+
+620
+02:15:04,979 --> 02:15:16,460
+Bu kısımda nicemlemeyi belirtiyor. Ne kadar çok biz o pikselin değerini, şu pikselin değeri şurada olsun diyelim.
+
+621
+02:15:17,640 --> 02:15:21,779
+Biz bunları hangi hassasiyetle kaydedeceğimiz o bize bağlı bir şey.
+
+622
+02:15:23,000 --> 02:15:29,859
+Baktığımızda temelde elektronik olarak gerçekleştirdiğimizde örnekle ve tut devresi var.
+
+623
+02:15:32,595 --> 02:15:51,955
+Parlaklık değerini alıyor. Hemen yanındaki piksel de burada kaydediyor onu. Ve sırasıyla bu matris gözlerini dolaşarak örnekleye değeri tutuyor. Analogdan sayısal dönüştürücüyle beraber sayısal değer haline getiriliyor.
+
+624
+02:15:58,068 --> 02:16:04,347
+Görüntü verilmiş. Biyomedikal göz tabakası. 200 çarpı 200 piksel boyunda bir görüntü.
+
+625
+02:16:05,108 --> 02:16:09,768
+Baktığınızda satır ve sütunlarına baktığımızda burada büyütülmüş.
+
+626
+02:16:10,807 --> 02:16:20,568
+Bakın bunların her biri örneklediğimizde bir piksel element yani piksel veya pel deniyor.
+
+627
+02:16:20,568 --> 02:16:22,927
+Picture element veya piksel deniyor bunlara.
+
+628
+02:16:23,572 --> 02:16:34,592
+Sonuçta orijinal görüntü gibi olmuyor ama biz bunları, pikselleri çok ufak bir alanda çok sık tararsak belli bir çözünürlük bize yetiyor.
+
+629
+02:16:34,592 --> 02:16:47,952
+Tabi uygulamaya bağlı olarak bu piksel sayısının çok ayrıntılı piksel seviyesi isteyen tıbbi görüntüler ve uzay görüntüleri gibi görüntülerde bu pikseller çok daha önemli hale geliyor.
+
+630
+02:16:51,572 --> 02:17:17,391
+Yani şurada daha bakın hem böyle şurası örneğin hem horozun şeyi var, ibiği hem de arka plan beraber ortak bir parlaklık değeri çıkıyor buradan. Eğer daha iyi bir uygulama istiyorsak bunları bile ne yapmamız lazım? Daha çözünürlüğü yani x'ye çözünürlüğü arttırmamız lazım ki kaydırdığımızı çünkü bunlar ayrı ayrı değerler olarak.
+
+631
+02:17:18,227 --> 02:17:30,788
+Şuraya bakalım örneğin. Şuraya baktığınızda, iyice yaklaştırdığımda, bakın, şuradaki karesel etkileri görüyor musunuz? Çünkü onların her biri piksel olarak saklanmış.
+
+632
+02:17:30,788 --> 02:17:39,687
+Yani bu piksel etkiyi belli bir şeyde görmüyorsun. Şu büyüklükte görmüyorsun. Ama yaklaştırdığında onlar görünür hale geliyor.
+
+633
+02:17:41,207 --> 02:17:42,727
+Veya şöyle de diyebiliriz.
+
+634
+02:17:43,219 --> 02:17:54,479
+Pixel kavramıyla beraber kaç quantization'da bahsetmiştik, kaç değer kullanıldığıyla da alakalı.
+
+635
+02:17:54,479 --> 02:18:00,579
+Bu matriz gözlerinde örneğin 0-255 arasında burada kullanılmış.
+
+636
+02:18:00,680 --> 02:18:09,019
+255'e doğru parlak görüntü yani o piksel sensöründen alınmış ışıklılık yoğunluğu yüksekse
+
+637
+02:18:09,556 --> 02:18:20,296
+8 bit kullanıyorsak 255'e yakın değerler oluyor. Hiçbir şey alamamışsak parlaklık namına artık şuradaki gibi küçük değerler saklanıyor.
+
+638
+02:18:24,628 --> 02:18:49,368
+Evet, şimdi artık neyimizi elde ettik? Biz piksellerimizi ayrıklaştırdık. Artık bir matris yapısı şeklinde saklayabiliyoruz. Artık nelere dikkat etmemiz lazım? Örneğin kullandığımız sensör aynı alanı çekiyor. Örneğin 256-256 piksel çekmiş.
+
+639
+02:18:50,036 --> 02:19:13,635
+128'e 128 piksellik. Yani her birinde mesela bunda daha çok böyle aralık varken piksel aralığı. Burada biraz daha gevşemiş aralık. Dolayısıyla birim alana, şuradaki piksel birim alanları bunda daha fazla, birim alana daha çok parlaklık seviyesi kayıdı düşüyor.
+
+640
+02:19:14,067 --> 02:19:34,027
+Daha geniş olduğumu o alanda ne olacak arkadaşlar? Daha fazla bilgi, arka planla ön planla ayrıntılar kaybolmaya başlayacak. Bakın aynı alanı çekmişiz. Yani merciğimiz aynı yeri gösteriyor. Piksel sayımız farklı. 72 piksel per inch'e denk geliyormuş.
+
+641
+02:19:42,388 --> 02:19:53,747
+Bakın burada artık karelenmeler 128, 128. Aynı alanı çekiyorsak sensörün kalitesi düştükçe bakın detaylar gitmeye başladı.
+
+642
+02:19:55,128 --> 02:20:08,708
+Burada ise 32, 32. Sadece 100 bile algılanmıyor. Bakın burada 100 algılanırken. Tabi burada da şey var. Piksel etkisi var ama şöyle en azından 100 belli oluyor.
+
+643
+02:20:09,120 --> 02:20:32,620
+256'ye değil de 512'lik yapsaydık çok daha güzel olacaktı. Fiziksel boyutları 3.6 inçe futa 3.6 futmuş. Çözünürlükleri farklı burada sadece. Çektiğimiz alan aynı, çözünürlükler farklı. Şurada çözünürlük daha yüksekken ilk resimde sonra gittikçe düşüyor.
+
+644
+02:20:34,131 --> 02:20:39,631
+Çözünürlük imgenin piksel sayısı bölü, birim fiziksel boyut ifadesiyle bulunuyormuş arkadaşlar.
+
+645
+02:20:40,932 --> 02:20:46,912
+Birimi genellikle piksel per inch, yani bir inç başına düşen piksel sayısı.
+
+646
+02:20:47,912 --> 02:20:59,072
+Ne kadar? İnç de 2.54 cm falan. Yani 2.54 cm kalık alana ne kadar şey düşüyor?
+
+647
+02:21:01,652 --> 02:21:17,531
+Veya dot per inch de deniyor. Pixel per inch nokta da deniliyor. Daha çok şu dpi kullanılıyor. Dot per inch yani o pikseli çeken sensördeki noktayı kastederek yapıyor arkadaşlar.
+
+648
+02:21:17,531 --> 02:21:28,211
+Bu uzamsal çözünürlüktü. Sayısal imgede uzamsal yani spatial.
+
+649
+02:21:29,716 --> 02:21:30,716
+Resolución
+
+650
+02:21:35,347 --> 02:21:45,468
+Şimdi buradayız ise bu uzamsal değil bunun adı farklı bir şey. Nicemsel çözünürlük.
+
+651
+02:21:48,128 --> 02:21:59,788
+Örneğin ben artık gri seviyeleri yani pikselleri belirledim. Bu pikseller hangi değerlerde matriste hangi yapılarda saklanacak?
+
+652
+02:22:00,988 --> 02:22:01,427
+Örneğin.
+
+653
+02:22:01,780 --> 02:22:21,180
+Pikseller için 8 bit kullandığımda 0 ile 255 arasında 256 tane 0 tam karanlık, 255 tam aydınlık olmak üzere. Şu anda renkli resimleri düşünmüyoruz arkadaşlar. 256 tane seviye tutuyor olacağım.
+
+654
+02:22:30,355 --> 02:22:51,216
+5 bit'te 32 tane seviye var. 4 bit'te 16 tane seviye var. Dikkat edin. Burada çok belli olmuyor ama. Mesela tam siyahla tam beyaz arasında 255 tane seviye var. 256 tane seviye var.
+
+655
+02:22:51,700 --> 02:23:12,800
+Bakın, 7 bit de çok belli olmuyor. Ama nerede belli olmaya başlıyor artık? Yavaş yavaş şu gökyüzü geçişlerinde 5 bit ile beraber olmaya başlıyor. Burada ise çok daha keskin 4 bit kullanıldığında. 4 bit de çünkü piksel değerleri, yani şuradaki piksel değerleri 0 ile 15 arasında değer alıyor.
+
+656
+02:23:18,131 --> 02:23:42,511
+Bir bitte siyah ve beyaz var. Sıfır burası, burası bir. Buna da black and white veya siyah beyaz resim deniyor. Sadece iki tane değer almış oluyor. Dolayısıyla bütün neredeyse bit sayısı azaldıkça neleri kaybediyorum? Detaylı şeyleri, o geçiş bilgilerini kaybetmiş oluyorum arkadaşlar.
+
+657
+02:23:43,347 --> 02:23:47,528
+Bu da bizim nicemsel çözünürlüğümüz olarak adlandırılıyor.
+
+658
+02:23:49,988 --> 02:23:54,688
+Evet, görüntü işlemeye de bu hafta giriş yapmış olduk.
+
+659
+02:23:57,387 --> 02:24:02,067
+Sizden sormak istediği sorular var mı arkadaşlar? Bu haftalık benim anlatacaklarım bunlar.
+
+660
+02:24:02,788 --> 02:24:05,608
+Önümüzdeki hafta görüntü işleme ile devam ediyor olacağız.
+
+661
+02:24:07,796 --> 02:24:12,015
+Hocam, görüntü işlemede neden resmi gri olarak ele alıyoruz?
+
+662
+02:24:13,316 --> 02:24:17,216
+Şimdi, nerede benim şeyim? Şuraya açılsın.
+
+663
+02:24:17,936 --> 02:24:21,675
+Şimdilik en basitinden bahsediyoruz. En başta ne demiştik?
+
+664
+02:24:21,675 --> 02:24:29,056
+Biz bir X'de görüntüsünden başlamıştık. Bir boyutlu hale getirmiştik işe.
+
+665
+02:24:29,327 --> 02:24:37,067
+İki boyutlu olarak matris şeklinde işleyecek olsaydık her bir gözde bir değerin saklanması gerekiyordu.
+
+666
+02:24:37,927 --> 02:24:42,587
+Burada da tek bir matris düşünecek olursak bu gri seviye resimlere denk geliyor.
+
+667
+02:24:43,108 --> 02:24:51,167
+Renkli resimler için bu matrislerden her bir bandında çekilmiş red, green ve blue da çekilmiş 3 tane matris geçiyor.
+
+668
+02:24:51,167 --> 02:24:54,527
+Biz aşama aşama gidiyoruz. Önce gri seviyeyi anlatıyoruz.
+
+669
+02:24:54,963 --> 02:25:05,403
+Bu gri seviyede anlattıklarımız bütün bu renk bantları içinde geçerli olacak. Bu renk bantlarının oluşması hakkında bir bilgi de vereceğim. Ondan sonra biraz daha netleşecek konular.
+
+670
+02:25:08,043 --> 02:25:09,004
+Anladım hocam.
+
+671
+02:25:10,844 --> 02:25:14,324
+Evet. Başka sorusu olan?
+
+672
+02:25:17,203 --> 02:25:20,263
+Şimdi sorusu olan yoksa şayet.
+
+673
+02:25:20,948 --> 02:25:22,208
+Önümüzdeki hafta...
+
+674
+02:25:22,208 --> 02:25:24,347
+Hocam ikinci ödev için bir şey soracaktım da.
+
+675
+02:25:25,028 --> 02:25:25,387
+Evet.
+
+676
+02:25:26,768 --> 02:25:29,688
+İkinci ödev için siz elle yazı mı istemişsiniz hocam?
+
+677
+02:25:30,067 --> 02:25:43,808
+Kesinlikle. Yani o siyarla veya şeyle ekle yapıştır değil. Herkes anladığını okuyacak önce birinci bölümü. Anladığını bir sayfada özetleyecek. İkinci bölümü okuyacak. Anladığını...
+
+678
+02:25:45,075 --> 02:25:49,935
+Word of C için de biz yani onu yazarak, resim ekleyerek olmaz mı? Onu soracaktım.
+
+679
+02:25:50,415 --> 02:25:55,036
+Yazacaksın, yazarak yapacaksın. Çizimleri de elle yapabilirsin.
+
+680
+02:25:57,055 --> 02:26:02,895
+Veya yazarsın, boşluk bırakırsın elde. Resimleri, resim için bir yer bırakmak istiyorsan.
+
+681
+02:26:03,347 --> 02:26:24,507
+Ne yaparsın? Yazarsın, fotoğrafını çekersin. Ne hale geldi sonuçta? Resim haline geldi. Eğer çekmiş olduğun screenshotı taşıyacaksan yazarken ben bu resmi buraya yerleştireyim diye oraya boşluk bırak. Tek bir pdf haline getir. Daha sonra istediğin resmi yapıştırırsın oraya.
+
+682
+02:26:26,644 --> 02:26:28,024
+Anladım hocam. Tamam.
+
+683
+02:26:28,204 --> 02:26:34,484
+Elle yazdırmamın nedeni kesinlikle okunup özetinin yapılmasını.
+
+684
+02:26:34,984 --> 02:26:37,664
+Kopyalı yapıştırdan uzaklaştırmak için yapıyoruz.
+
+685
+02:26:40,583 --> 02:26:42,484
+Tabii tabii tabii. Teşekkür ederim.
+
+686
+02:26:42,484 --> 02:26:43,603
+Tamamdır.
+
+687
+02:26:45,664 --> 02:26:47,664
+Başka sorusu olan?
+
+688
+02:26:49,184 --> 02:26:49,763
+Evet hocam.
+
+689
+02:26:51,583 --> 02:26:52,204
+Evet buyurun.
+
+690
+02:26:53,855 --> 02:26:59,015
+Ödev 3 ilgili tekrar anlatabilir misiniz hocam? İngilizce'de.
+
+691
+02:27:01,456 --> 02:27:07,876
+Şimdi onu ayrıca anlatırım sana. Ödev 3 dediğimiz kısım hangisiydi benim verdiğim ödev?
+
+692
+02:27:22,131 --> 02:27:30,851
+In homework 3, you have to create your own sound file examples.
+
+693
+02:27:30,851 --> 02:27:44,291
+Then you will use spectrogram function of MATLAB and then you will analyze the results of what you have recorded.
+
+694
+02:27:49,012 --> 02:28:16,452
+You will record different kind of sound files. For example, one of them you can speak and at the same time you can make some noises at the background. Or you can record your sound by the time you have put somewhere, you have hit somewhere to make a big noise, for example. So you will create different kind of sound types.
+
+695
+02:28:17,012 --> 02:28:20,012
+Sonra, uygulayabilirsiniz.
+
+696
+02:28:23,572 --> 02:28:28,572
+Evet hocam.
+
+697
+02:28:28,572 --> 02:28:30,572
+[öğrenci]. Evet hocam.
+
+698
+02:28:30,572 --> 02:28:36,572
+Do you know [öğrenci] personally? Hayır hocam.
+
+699
+02:28:36,572 --> 02:28:41,572
+Okay. Ali can speak Turkish better than you I think.
+
+700
+02:28:41,572 --> 02:28:43,819
+And you can contact with him.
+
+701
+02:28:44,340 --> 02:28:51,340
+Evet, belki de kanıza yardımcı olabilirsiniz.
+
+702
+02:28:51,340 --> 02:28:54,340
+Bu, bu sorunlarınız hakkında konuşmak için.
+
+703
+02:28:54,340 --> 02:29:00,340
+Bu, e-mails hakkında konuşmak için e-mails hakkında konuşmak için.
+
+704
+02:29:00,340 --> 02:29:01,340
+Evet.
+
+705
+02:29:01,340 --> 02:29:04,340
+E-mails hakkında konuşmak için.
+
+706
+02:29:04,340 --> 02:29:10,156
+O, e-mails hakkında konuşmak için.
+
+707
+02:29:10,164 --> 02:29:16,384
+Tamam. You can take your phone numbers and you can connect with each other.
+
+708
+02:29:16,564 --> 02:29:17,783
+Tamam hocam.
+
+709
+02:29:19,004 --> 02:29:27,144
+So [öğrenci], if you can help [öğrenci] in this course where he can't understand some parts, it will be useful.
+
+710
+02:29:27,144 --> 02:29:29,463
+Tamam hocam.
+
+711
+02:29:29,463 --> 02:29:32,724
+Çok sağol hocam.
+
+712
+02:29:33,184 --> 02:29:33,824
+Rica ederim.
+
+713
+02:29:34,664 --> 02:29:37,084
+Görüşmek üzere arkadaşlar. Kendinize çok iyi bakın.
+
+714
+02:29:37,587 --> 02:29:54,987
+İyi haftalar diliyorum. Çok fazla ağır ödeviniz yok ama kopmadan devam edersek güzel bir şekilde ilerleyeceğiz. Bu arada MATLAB Python konusunda kendinizi geliştirin ve de özellikle Machine Learning kısımlarına iyi bakın.
+
+715
+02:30:04,239 --> 02:30:23,639
+Projeler ortaya çıkacak. O da sizin notunuzu ekleyecek. Şimdiden MATLAB'de ve de Python'da güzel makine öğrenmesi, altyapınızı oluşturun. Şimdiden tavsiye size. Anlaştık. Kendinize çok iyi bakın. Görüşmek üzere arkadaşlar.
+
+716
+02:30:24,259 --> 02:30:25,479
+Teşekkür ederim hocam. İyi günler.
+
+717
+02:30:26,379 --> 02:30:27,459
+Teşekkürler hocam.
+
+718
+02:30:28,079 --> 02:30:28,659
+İyi günler.
