@@ -1,0 +1,1871 @@
+1
+00:00:32,787 --> 00:00:34,207
+Merhabalar, günaydın.
+
+2
+00:00:36,907 --> 00:00:40,707
+Günaydın hocam.
+
+3
+00:00:41,167 --> 00:00:41,807
+Günaydın.
+
+4
+00:00:44,447 --> 00:00:46,027
+Günaydın hocam.
+
+5
+00:00:46,647 --> 00:00:47,367
+Merhabalar.
+
+6
+00:00:48,047 --> 00:00:49,787
+Bugün bizim...
+
+7
+00:00:50,771 --> 00:01:04,371
+Ders olarak yapacağımız son ders olacak. Bundan sonra önce iki hafta makale sunumlarınızı, daha sonra da uygulama sunumlarınızı dinleyeceğim sizden.
+
+8
+00:01:10,900 --> 00:01:26,680
+Release Management üzerinde duracağız. Daha önce de belirtmiştim bu konu üzerinde duracağımızı. Bir de öncelikle her zaman olduğu gibi geçen hafta durduğumuz konular üzerinde duracağız. Sonra Release Management üzerinde.
+
+9
+00:01:31,668 --> 00:01:42,528
+Arkadaşlarınızın sunduğu mobil test, mobil uygulamalarda test nasıl gerçekleşiyor, hangi konular önem taşıyor.
+
+10
+00:01:43,868 --> 00:01:57,308
+Bunu anlatan, hani geçen dönemin en iyisi diyemeyiz ama bir örnek vermek için onun hazırladığı sunumu da sizinle paylaşacağım.
+
+11
+00:01:59,987 --> 00:02:25,147
+Bir örneğini de görmüş olursunuz makale sunumunun. Böyle bir plan içindeyiz. Sınav kağıtlarınızı okudum. Sorularda zaten kaynaklarınızda olan sorulardı. Genel olarak iyi.
+
+12
+00:02:27,443 --> 00:02:46,943
+Silah sonuçlarınız. Girmeyen birkaç arkadaşınız var. Şu anda giremedim ben. Gitsiste not girişinde bir problem vardı herhalde. Akşam giremedim. O problem kalktığı zaman işleyeceğim notlarınızı.
+
+13
+00:02:48,783 --> 00:02:50,364
+Şöyle bir bakıyorum.
+
+14
+00:02:54,996 --> 00:03:17,975
+En düşük not 50 ile 100 arasında notlar var. Projeleriniz veya makale çalışmalarınızla ilişkili problemler olursa da paylaşırsınız dersin sonuna doğru.
+
+15
+00:03:23,316 --> 00:03:48,036
+Yapabiliriz diyen arkadaşlarınız vardı. Onların isimlerini almıştım. [öğrenci]'la [öğrenci]. Bir de [öğrenci] mı vardı? Yanlış hatırlıyor olabilirim ama liste almıştım. Şu anda bulamadım onu. Bugün tekrar konuşuruz önümüzdeki haftanın sunumları için.
+
+16
+00:03:54,228 --> 00:03:59,247
+Evet, şimdi tekrar için sunumları öncelikle paylaşacağım.
+
+17
+00:06:02,259 --> 00:06:16,939
+Geçen hafta bir, daha önce sınavda da gördüğümüz, sınavda da soru çıkan, SMMI üzerinde de bir tekrar yapmıştık.
+
+18
+00:06:28,052 --> 00:06:35,552
+Sevemay ve yazılım iyileştirme konusunda durmayacağım, tekrar yapmayacağım.
+
+19
+00:06:37,812 --> 00:06:44,211
+Eğer bütün eski konularla ilişkili sorunuz varsa yöneltebilirsiniz.
+
+20
+00:06:45,572 --> 00:06:50,052
+Şimdi geçen hafta üzerinde durduğumuz çevik yaklaşımlarla...
+
+21
+00:06:50,196 --> 00:07:00,656
+Yazılım geliştirmede test süreci nasıl gerçekleşiyor? Onun üzerinde tekrar duralım.
+
+22
+00:07:02,936 --> 00:07:12,416
+Evet, 2000'li yıllarda itibaren kullanıma alınan ecel yöntemler.
+
+23
+00:07:13,043 --> 00:07:23,763
+Son yıllarda artık sektörde yaygınlaştı. Alternatif olarak kullanıma alındı.
+
+24
+00:07:26,579 --> 00:07:48,959
+İlk örnek olduğu için XP üzerinde durmuştuk. Scrum'da da her birisinin yani genel olarak bütün agile sistemlerde çekirdek özellikler olan özellikler var.
+
+25
+00:07:49,391 --> 00:07:57,971
+Ama her birinde de bunların dışında kendine has öne çıkan özellikler var.
+
+26
+00:07:57,971 --> 00:08:15,932
+Ve bizim derslerde konuştuğumuz ecel süreç modelleri, XP, Scrum ve Kanban yazılım mühendisliği dersinde de.
+
+27
+00:08:17,012 --> 00:08:24,875
+Şimdi XP üzerinden başlamıştık ama XP'de...
+
+28
+00:08:30,196 --> 00:08:50,176
+XP'de temel olan yaklaşımlar, bütün agile'ın temeli aslında bu. Basitlik, iletişim, geri besleme ve cesaret. Yani bütün bunlar daha hızlı ürün almamızı sağlayacak özellikler.
+
+29
+00:08:55,475 --> 00:09:10,536
+Prototiplerde çok fazla denemeler, çalışmalar yaparak tasarımı en iyileştirip buradan başlamak yerine ilk basit tasarımdan başlayarak devam etmek.
+
+30
+00:09:12,215 --> 00:09:19,036
+Birinci çekizek hedef tüm ecaililerde.
+
+31
+00:09:19,635 --> 00:09:38,276
+İletişim, ekip içindeki iletişim önemli. Tüm ekip birbirine karşı sorumlu. Birbirinden daha kısa toplantılarla haberdar oluyor. İletişim.
+
+32
+00:09:47,635 --> 00:10:02,495
+Artımlı özelliğiyle öne çıkıyorsa, skramda bu iletişim, kısa toplantılar, kısa görevler bunlarla bu özellikleri sağlamış oluyor.
+
+33
+00:10:02,495 --> 00:10:11,036
+Geri besleme, sıkı iletişim nedeniyle geri beslemeler de çok.
+
+34
+00:10:12,851 --> 00:10:16,971
+XP'de bu artımlı özellikle gerçekleştiriliyor.
+
+35
+00:10:19,031 --> 00:10:30,632
+Scrum'da da yine kısa görevlerin sık sık değerlendirilerek yenisine başlanmasıyla geri besleme devam ediyor.
+
+36
+00:10:31,135 --> 00:10:40,975
+Cesaret yenilikleri deneme ve bunların sonuçlarını görerek geliştirme yoluna gidiliyor.
+
+37
+00:10:41,652 --> 00:11:05,312
+Bu dört temel değer çerçevesinde agile süreçler aslında devam ediyor. Bu dört temel çerçeveden yola çıkarak daha fazla özellik, daha fazla kuralı vardır aslında agile yazılım geliştirme süreç modellerinin.
+
+38
+00:11:08,244 --> 00:11:14,044
+Planlama oyunu, küçük kısa aralıklı yayımlar yani rilizler.
+
+39
+00:11:15,988 --> 00:11:34,248
+Kısa aralıklarla olur. Aslında bu da XP'nin artımlı, inkremental özelliğinden kaynaklanır. Basit tasarımla bir çekirdek yazılım oluşturulur. Bunun üzerine eklemeler gerçekleştirilir.
+
+40
+00:11:43,988 --> 00:11:58,728
+Hızlı, biten bütün küçük yayınların testinin gerçekleştirilmesi ve bu basit tasarım devamlı yeniden tasarım, refactoring işlemi gerçekleştirilmesini belirtir.
+
+41
+00:11:58,728 --> 00:12:04,788
+Eşle programlama, pair programming, XP'nin özelliklerinden.
+
+42
+00:12:06,868 --> 00:12:11,968
+Diğer yaklaşımlarda daha farklı özellikler ortaya çıkıyor.
+
+43
+00:12:12,768 --> 00:12:15,868
+Ortak kod milkiyeti bu da...
+
+44
+00:12:17,587 --> 00:12:43,807
+İletişim ve birbirinin işinden haberdar olma, herkesin yapılan her iş konusunda temel bilgisinin olması, dolayısıyla ortak iş olduğu için kod mülkiyetinde ortak olması, sürekli tümleştirme, Continuous Integration, sürekli tümleştirip o kısmının test edilmesi olarak.
+
+45
+00:12:44,628 --> 00:13:07,248
+Çalışanlar için de bunu görüyoruz. Ecail yazılım geliştirme modellerinde. Devam ettirilebilir bir hız. Yani herkesin yüklenebileceği kadar yük alması, verilmesi. Yaklaşık 40 saat haftada çalışılması.
+
+46
+00:13:09,375 --> 00:13:33,056
+Müşterinin de ekip üyesi olması. Bu da ECEAL'in en önemli özelliklerinden ve bütün ECEAL projelerde ECEAL yaklaşımla oluşturulmuş olan yazılım geliştirme süreç modellerinde müşteri ekibin üyesi olarak görülür.
+
+47
+00:13:34,932 --> 00:13:47,712
+Bunun gibi genel özellikler, ecel, çevik metotlarda görebiliyoruz.
+
+48
+00:13:52,371 --> 00:14:16,411
+Peki, test ve kaliteye baktığımızda, geçen hafta da sizlere sorduğum bir soru vardı. Yine burada geleneksel yazılım geliştirme süreç modellerine göre, çevik modellerde dinamik değerlendirme, kalite değerlendirme daha fazla yapıyoruz.
+
+49
+00:14:16,895 --> 00:14:27,795
+Statik değerlendirmeden daha fazla uygulanıyor. Yani test işini dinamik kalite değerlendirmeyi daha fazla uyguluyoruz.
+
+50
+00:14:28,692 --> 00:14:43,932
+Kaliteyle ilgili işlemler sürecin daha erken adımlarında başlıyor. Kaliteyle ilişkili aktiviteler daha az aralıklarla, daha sık sık gerçekleştiriliyor.
+
+51
+00:14:46,163 --> 00:15:01,983
+Daha çok test yapıyoruz. Daha sık aralıklarla kalite aktiviteleri gerçekleştiriyoruz. Daha erken adımlarda kaliteyle ilgili işlemleri gözetmeye başlıyoruz.
+
+52
+00:15:05,779 --> 00:15:15,720
+Kullanıcı hikayeleri, birim testler, müşteri geri beslemesiyle doğruluk ve süreklilik sağlanıyor çevik yaklaşımlarda.
+
+53
+00:15:15,720 --> 00:15:30,779
+Nasıl? Yani bir use case gereksinim analizi sırasında bir use case belirlendiğinde bu use case'in test senaryosu oluşturuluyor.
+
+54
+00:15:32,947 --> 00:15:47,788
+Bu hikayenin kullanıcı hikayesini oluşturduğumuzda bunun testini nasıl gerçekleştireceğiz? Bu tarafına gitmiş oluyoruz.
+
+55
+00:15:53,299 --> 00:16:18,299
+Test Driven Development kavramı, Agile süreç modellerinde kullanılan yaklaşıma diyoruz biz test yaklaşımına. Nasıl bir strateji bu? Küçük ve hızlı iterasyonlarla, yazılım geliştirme araçları ile hazırlanmış testler yazılarak.
+
+56
+00:16:20,659 --> 00:16:25,659
+İlerleyen bir yazılım geliştirme metodolojisi Test Drive and Development.
+
+57
+00:16:26,659 --> 00:16:31,939
+Ve baktığımızda zaten ecel projeler bu şekilde yürüyorlar.
+
+58
+00:16:33,059 --> 00:16:41,639
+Test güdümlü yazılım geliştirme, çevik yaklaşımlar için daha uygun.
+
+59
+00:16:47,379 --> 00:17:08,339
+Hangi özellikler var? Yani test drive'ın yaklaşımı kullanarak çevik metot içinde hangi adımlarla bu yaklaşımı sürdürüyorlar yazılım mühendisleri?
+
+60
+00:17:11,508 --> 00:17:22,327
+Senaryoları oluşturup, birim kodları geliştirmeden önce test gezleri yazmak gerekiyor.
+
+61
+00:17:22,327 --> 00:17:29,327
+Yani test senaryolarını oluşturmak. Test senaryolarında henüz kod yazılmadığı için...
+
+62
+00:17:30,576 --> 00:17:54,316
+Başarısız kabul edilecek. Kod yazarak test kezlerin geçmesini sağlamak ve tekrar çalıştırmak. Kodu yeniden düzeltmek. Yani burada daha kısa döngüler de oluşuyor demiştik. Daha kısa tekrarlar. Bunları görebiliyoruz. Bu şekilde yürüdüğünü de görebiliyoruz.
+
+63
+00:17:56,627 --> 00:18:18,307
+Test Driven hakkındaki çalışmalardan da söz etmiştik yine geçen hafta. Bu noktada da baktığımızda Hakan Erdoğmuş'un ilk çalışmalar olduğu için daha sonra bu Test Driven Development konusunda daha çok çalışmalar oldu ama ilk çalışmalarda.
+
+64
+00:18:22,003 --> 00:18:41,763
+Önce test, sonra test yöntemleri hakkında bir araştırma yapıp Test Driven Development'ın programcı üretkenliğini arttırdığı, tabii bu da zaten görüyoruz sektörde tercih edildiğini, Ece'nin süreçler ve Test Driven Development'ın.
+
+65
+00:18:44,756 --> 00:18:56,096
+Kod yazma üretkenliğini arttırıyor. Fakat kalitede diğer yöntemlerle çok farklı olmadığı görülmüştür.
+
+66
+00:18:56,096 --> 00:19:06,096
+Bu programcıyı kodları ve test sonuçlarını...
+
+67
+00:19:06,195 --> 00:19:13,315
+Yedekleme konusunda da teşvik ettiğini görmüştük.
+
+68
+00:19:15,056 --> 00:19:20,735
+Evet, bunun üzerinde durduk geçen hafta.
+
+69
+00:19:22,755 --> 00:19:29,815
+Scrum ve Kanbanda da yine aynı şekilde Test Driven Development'ı görebiliyoruz.
+
+70
+00:19:33,652 --> 00:19:37,912
+Bu konu üzerinde sorunuz var mı?
+
+71
+00:19:53,491 --> 00:19:59,491
+Evet, bu slide'ı değiştiriyorum.
+
+72
+00:22:46,900 --> 00:23:05,820
+Hocam merhabalar. Daha önce mikrofonu tam olarak çalışmıyordu. O yüzden cevaplayamadım. Bu makale sunumuyla alakalı ben konuşmak istiyordum. Ben gelince bir sonraki hafta sunabilir miyim? Şu anda literatür tarihmasını tam olarak tamamlayamadık arkadaşımla beraber, proje arkadaşımla. O yüzden gelince bir sonraki hafta sunabilir miyiz acaba?
+
+73
+00:23:05,820 --> 00:23:09,800
+Tamam. Siz geçen hafta sunacağız diye belirtmiş miydiniz?
+
+74
+00:23:10,324 --> 00:23:11,663
+Yok hocam, belli etmedik.
+
+75
+00:23:11,663 --> 00:23:37,464
+O zaman tamam. Ben bir yere yazmıştım, arada bulurum onu. Kimler sunacak diye. Ona göre önümüzdeki hafta için tekrar konuşuruz. [öğrenci] ile iki [öğrenci] sunacaktı. Birkaç kişi daha belirtmişti.
+
+76
+00:23:38,132 --> 00:23:41,532
+Onların üzerinden tekrar geçeriz.
+
+77
+00:23:41,532 --> 00:23:43,412
+Tamam hocam, çok teşekkür ederim.
+
+78
+00:24:16,019 --> 00:24:21,019
+Evet, yazılım test planlama aşamasında konuştuğumuzda...
+
+79
+00:24:23,635 --> 00:24:43,635
+Yazılım konfigürasyonu, yazılım teslim edildikten sonra gerçekleştirecekler. Teslim sırasında başlayıp daha sonra da gerçekleştirecek olan işlem, yazılım konfigürasyonu kalite aktivitelerinden bir tanesidir diye belirtmiştik. Hatta bunu da sınavda da sormuştum.
+
+80
+00:24:45,755 --> 00:24:49,475
+Burada genel olarak bir hatanız olmuş.
+
+81
+00:24:51,220 --> 00:25:04,840
+Yani sınıfın yarısında bu doğru ise de yarısında hatalı bir tanımlama olmuştu.
+
+82
+00:25:05,960 --> 00:25:14,460
+Yazılım konfigürasyon yönetimi nedir? Yazılım konfigürasyon elemanları nelerdir diye sormuştum.
+
+83
+00:25:19,955 --> 00:25:35,295
+Yazılım konfigürasyon işlemlerinin gerçekleştirdiği yazılımın alt elemanları bizim yazılımızın konfigürasyonunu, yazılımızın düzenini belirtir.
+
+84
+00:25:37,195 --> 00:25:47,295
+Yazılım konfigürasyon yönetimi etkinlikleri diye maddelediklerimi yazılım konfigürasyon elemanları olarak yazmışsınız.
+
+85
+00:25:47,647 --> 00:26:08,107
+Yani şu slide'ı baz alarak. Nasıl ki donanımın elemanları, donanım parçaları, ekran donanım birimleri, bellek gibi elemanlarsa.
+
+86
+00:26:09,332 --> 00:26:15,912
+Yazılım elemanları da programlar, belgeler ve veri yapıları.
+
+87
+00:26:16,352 --> 00:26:21,451
+Bütün bunlara topluca yazılım konfigürasyonu diyoruz.
+
+88
+00:26:21,451 --> 00:26:41,264
+Ve yazılım konfigürasyon yönetiminde de bunların her birinin yazılım kullanımı ilerledikçe, yazılımı geliştirme sürecinin başından itibaren bunların takip edilmesi, bunların güncel tanımlarının...
+
+89
+00:26:41,263 --> 00:26:53,263
+Her an açıklanacak şekilde tutulması konfigürasyon yazılım, konfigürasyon yönetimi aktiviteleridir.
+
+90
+00:26:54,263 --> 00:27:09,263
+Sırasıyla konfigürasyon tanımı, konfigürasyon identifikasyon, değişiklik kontrolü, konfigürasyon change kontrol, konfigürasyon denetimi, konfigürasyon raporlaması işlemleri.
+
+91
+00:27:09,263 --> 00:27:37,023
+Yazılım konfigürasyon yönetiminde yaptıklarımız ve yazılım konfigürasyon yönetimi dediğimizde yazılım konfigürasyonunun yazılım geliştirme sürecinin başından kullanım sürecinin sonuna kadar hangi değişiklikler oldu, hangi durumda, hangi tarihte, hangi versiyonda, hangi içerikte yazılım elemanları.
+
+92
+00:27:37,263 --> 00:27:44,763
+Bunu belirtmek üzere yazılım konfigürasyon yönetimini gerçekleştiriyoruz.
+
+93
+00:27:48,723 --> 00:28:04,624
+Yazılım konfigürasyonu elemanları dediğimiz zaman programlar, belgeler, veri yapıları, hatta burada yazmadığım test verileri bunların hepsi.
+
+94
+00:28:06,836 --> 00:28:14,076
+Veritabanı elemanları, bunların hepsi yazılım konfigürasyonunun elemanları olarak karşımıza çıkıyor.
+
+95
+00:28:14,556 --> 00:28:18,275
+Neden şimdi yazılım konfigürasyonu konusunu getirdim?
+
+96
+00:28:18,955 --> 00:28:24,336
+Çünkü bugün Release Management konusu üzerinde duracağız.
+
+97
+00:28:34,836 --> 00:28:54,895
+Geçilecekse kullanılan yazılımda veya ilk geliştirilen hali kullanıcılarla bütünleştirilecekse, kullanıcılara sunulacaksa, işte bu sunma, kullanıma alma aşaması.
+
+98
+00:28:55,412 --> 00:29:18,252
+Yayınlama aşaması, release aşaması ve bu noktada konfigürasyonla ilişkili bir işlem. Release Management ile Configuration Management yeni bir versiyondaki değişiklikleri
+
+99
+00:29:20,660 --> 00:29:37,860
+Yazılım Konfigürasyon Yönetiminde tanımımızı alıyoruz. Release Management'ta da kullanıcıların uyumlu olarak yayınlanması için neler yapıyoruz? Bundan bahsediyoruz.
+
+100
+00:29:41,748 --> 00:29:46,428
+Bu aktivite arasında bir ilişki de var.
+
+101
+00:29:47,607 --> 00:29:52,208
+Buradan bunu belirterek başlangıç yapıyoruz.
+
+102
+00:29:52,208 --> 00:29:58,208
+Yazılım konfigürasyon yönetiminde herhangi bir...
+
+103
+00:30:00,435 --> 00:30:27,675
+İşlem için standart kullanıyorsak, yazılım standartlarımız varsa, yazılım aktivitelerimizden bir tanesi, yazılım konfigürasyon yönetiminde de nasıl planlama yapacağız, bu planda neler içeriliyor, konfigürasyon yönetim işleyişini nasıl sürdüreceğiz, bu da IEEE veya ISO standartlarına göre yerleşmiş durumda.
+
+104
+00:30:28,435 --> 00:30:41,335
+Evet, şimdi Release Management konusuna geçeceğiz. Bir 10 dakika ara verelim o zaman. Ondan sonra Release Management konusuna geçelim.
+
+105
+00:30:45,652 --> 00:30:46,471
+Tamamlıyorum.
+
+106
+00:44:36,563 --> 00:44:51,623
+Özellikle son yıllarda önemi çok fazla ortaya çıkmış olan Release Management konusu son yıllarda sektörde de önemli konular haline gelmiştir.
+
+107
+00:44:51,623 --> 00:45:00,264
+Release çalışan arkadaşlarınızın çoğunun bildiği gibi sektörde çalışanların özellikle.
+
+108
+00:45:00,755 --> 00:45:28,755
+Bu yeni bir release'e geçiş oldukça önemli bir süreç. Bu nedir? Yayınlama yönetimi diyebiliriz. Yeni bir yazılım geliştirildi ya da bu yeni bir yazılımın yeni bir versiyonu oluşturuldu. Bunun uygulamaya konması.
+
+109
+00:45:28,755 --> 00:45:39,336
+Deployment aşaması, uygulamaya geçiş süreci, uygulamanın yerleştirilmesinin gerçekleştirildiği zaman.
+
+110
+00:45:54,195 --> 00:46:06,175
+İşletmedeki bu yazılımın uygulamaya konduğu birim ve servisler hepsini ilgilendiren bir aşama Release Management.
+
+111
+00:46:06,175 --> 00:46:17,175
+Burada projenin artık uç kullanıcıların kullanımına sunulacağı zaman.
+
+112
+00:46:18,164 --> 00:46:37,764
+Bu yönetimi nasıl gerçekleştiriliyor? Bundan sorumlu bir ekip, kalite birimi olabilir ya da yazılım uygulamaları yönetimi olabilir.
+
+113
+00:46:46,099 --> 00:47:04,099
+Gruplara verilen bir sorumlulukta. Release Management'da esas hedef, yayınlanacak yazılım elemanlarının,
+
+114
+00:47:05,748 --> 00:47:13,208
+Yaşam ortamını koruyarak devreye alınması ve bütünleşme sağlanması diyebiliriz.
+
+115
+00:47:13,208 --> 00:47:25,208
+Yani teknik herhangi bir bilişim ürününün...
+
+116
+00:47:27,188 --> 00:47:53,508
+Teknik olarak kullanıma alınmasının dışında kurumun ilgili organizasyon parçasının da etkileneceğini bilmek ve burada iş süreçlerindeki değişiklik söz konusu olacaksa özellikle.
+
+117
+00:47:54,195 --> 00:47:58,556
+Yayınlanacak yazılım.
+
+118
+00:47:58,931 --> 00:48:20,991
+Ve ilgili iş biriminin uyumunun göz önüne alınması, yani ilgili birimin uyum sağlaması, adoption kavramının da üzerinde durulması gerekir release management'ta.
+
+119
+00:48:23,391 --> 00:48:38,391
+Konfigürasyon yönetimiyle ilişkili çünkü yeni değişiklikleri o noktadaki durumun ne olduğunu...
+
+120
+00:48:39,572 --> 00:48:48,872
+Daha sonra bakacağımız konfigürasyon yapısı, yazılım konfigürasyon yapısına da doğru yerleştirmiş olmak gerekiyor.
+
+121
+00:48:48,872 --> 00:49:01,231
+Hem de bu yazılımın uygulamada kalacağı iş biriminin uyum sağlamasına dikkat etmek gerekiyor.
+
+122
+00:49:01,748 --> 00:49:21,288
+Bu noktada Release Management günümüzde yazılım sistemlerinin bu kadar hayati önemde olduğu, bütün iş süreçlerini etkilediği günümüzün uygulamalarında Release Management'da
+
+123
+00:49:23,347 --> 00:49:37,748
+Çok daha önem kazanmış oluyor bütün sektördeki uygulamalardan edindiğimiz bilgilere göre.
+
+124
+00:49:37,748 --> 00:49:43,563
+Evet, şimdi Release Management'ı...
+
+125
+00:49:46,675 --> 00:50:07,675
+Burada tabii ki hiçbir şey ezbere yapılmıyor. Özellikle sektörde bu geçiş süreci, IT Infrastructure Library, ITIL...
+
+126
+00:50:08,628 --> 00:50:35,408
+Bu çerçevede de Release Management'ın nasıl olacağı tanımlanmış durumda. Hatta Release and Deployment Management olarak temel bir süreç olarak tanımı gerçekleştirilmiş.
+
+127
+00:50:36,628 --> 00:50:41,728
+Ama kısaca bunu Release Management olarak görüyoruz.
+
+128
+00:50:41,728 --> 00:50:50,228
+Ve IT Infrastructure Library'de bu şu şekilde tanımlanmış.
+
+129
+00:51:03,764 --> 00:51:25,644
+Üretim yeni bir jilis üretildiğinde, yani bir uygulamanın önemli değişikliklerinin gerçekleştirildiği bir aşamada ya da yeni bir ürünün yayınlanmasında
+
+130
+00:51:28,019 --> 00:51:52,100
+Tüm IT servisleri ve bu uygulamanın kullanılacağı servis için bir planlama iş listesi ve IT servisleriyle bu kullanıma alınacak birimlerin iş birliği içinde çalışma düzeninin oluşturulması gerekiyor.
+
+131
+00:51:56,755 --> 00:52:15,755
+Release Management, proje aktiviteleri ve proje ekibinin ürettiği işlemler.
+
+132
+00:52:18,771 --> 00:52:26,672
+Kullandıkları malzemeler arasında bir köprü oluşturacaktır.
+
+133
+00:52:26,672 --> 00:52:37,011
+Ve kurumlarda birçok proje birlikte yürür.
+
+134
+00:52:37,427 --> 00:53:05,188
+Birlikte yürüyen yani aynı zamanda tek bir departmanda bile çok sayıda proje geliştirilir. Bunların organizasyonunun yapılması, aynı zamanda bir sıralamanın yapılması önce hangisi devreye alınacak, daha sonra hangisi devreye alınacak, birbirlerini etkilemeleri...
+
+135
+00:53:05,427 --> 00:53:20,887
+Bu söz konusu olabilir. Bütün bunların planlanması, yönetimi, organize edilmesi bu Release Management kurallarına göre gerçekleştirilecektir.
+
+136
+00:53:27,188 --> 00:53:39,927
+Uzman yazılım mimarisi görevlileri ve yazılım mühendisi uzmanları tarafından bu kararlar verilecektir.
+
+137
+00:53:39,927 --> 00:53:52,927
+Ama aynı zamanda kurumdaki iş süreçleri de önemli. Bu konuda da bilgi sahibi olması, bu planlamayı gerçekleştirecek kişilerin ya da...
+
+138
+00:53:53,780 --> 00:53:59,140
+Bu taraftaki ekiple birlikte çalışmaları gerekecektir.
+
+139
+00:54:11,411 --> 00:54:33,652
+Bilgisayar Mühendisliği süreci nasıl bir süreç? Proje ekibi için çok önemli. Aynı süreç adımlarının, kuralların, guideline'ların, rehberlerin, standartların uygulanması.
+
+140
+00:54:34,112 --> 00:54:58,571
+Önemli Release Management sürecinde ki her devreye alınacak uygulamada yeni yeni kurallar kullanmamak adına kurumda release yönetimi, yayınlama yönetimi nasıl planlanacak, nasıl oluşturulacak, nasıl test edilecek.
+
+141
+00:55:00,596 --> 00:55:15,336
+Yeni bir rilizin uygulamaya konması nasıl sağlanacak? Bu süreçin bir tanımı yapılmış bu nedenle.
+
+142
+00:55:27,219 --> 00:55:45,779
+Infrastructure Library'de bu 6 tane alt sürece bölünmüş, etkin ve emin bir şekilde bu adımların oluşturulabilmesi için.
+
+143
+00:55:45,779 --> 00:55:52,199
+Öncelikle Release Management destek işlemleri.
+
+144
+00:55:55,539 --> 00:56:16,860
+Bütün süreçlere destek verme işleminin nasıl tanımlayacağı, release planlama, release'in oluşturulması, release'in gerçekleştirilmesi, yani uygulamaya konulması,
+
+145
+00:56:17,972 --> 00:56:36,772
+Ve yeni bir release'e geçtikten sonra destek verilmesi ve artık bu release'in kapatılması aşaması.
+
+146
+00:56:42,228 --> 00:57:02,188
+Nasıl gerçekleşecek? Bu tanımlamalar itil süreçlerinde belirtilmiş. Yani her bir adım, bu 6 adım ve bu 6 adımdaki kurallar belirtilmiş.
+
+147
+00:57:07,315 --> 00:57:28,076
+Çok eski yıllardan beri böyle bir yazılımınızı yaptınız. Bunu uygulamaya koymanız sürecinde neler yapmanız gerektiği yazılım ekiplerine söylenirdi, bildirilirdi.
+
+148
+00:57:29,204 --> 00:57:46,003
+Bu kadar release management aşaması, bunların kurallarının konulması, süreci tanımlı olması son yıllarda daha fazla ortaya çıktı.
+
+149
+00:57:55,123 --> 00:58:05,943
+Bundan çok önceki yıllarda. Bunun adı bu şekilde değildi ama şu şekilde bize söylenirdi.
+
+150
+00:58:14,291 --> 00:58:31,931
+Küçük boyuttaki yazılımlarda bile bir yazılımı yaptınız. Ne kadar iyi bir yazılım olursa olsun, bunu ilk uygulamaya geçiş sırasında takibini bırakmamanız gerekir.
+
+151
+00:58:42,291 --> 00:58:48,431
+Onlara uğrayıp nasıl gidiyor diye sormanız gerekir şeklinde.
+
+152
+00:58:48,431 --> 00:58:56,291
+Yani bundan 30 sene önce bile böyle bir kavram vardı.
+
+153
+00:58:56,851 --> 00:59:14,911
+Bugün artık daha tanımlı ve bu tanımlama işleri, Liz Management kavramı, konfigürasyon yönetimi kavramı daha önceki yıllarda da vardı ama çok yaygınlaştı.
+
+154
+00:59:14,911 --> 00:59:21,831
+Ve artık birçok kurumun bu şekilde kurallı çalışması gerekiyor.
+
+155
+00:59:23,699 --> 00:59:40,019
+Proje Yönetim Ofisi'de, Project Management Institute'u de yine RIS Management için tanımlamalar gerçekleştirmiş durumda.
+
+156
+00:59:49,108 --> 01:00:08,388
+Burada bir rehber oluşturulması gerekiyor. Yeni bir release geçişte nasıl bir yol izlenecek, destek işlemi nasıl gerçekleştirecek?
+
+157
+01:00:16,788 --> 01:00:33,927
+Burada bir iş listesi oluşturma için, test için ve bizin artık uygulamaya koyma aşaması için bir...
+
+158
+01:00:34,771 --> 01:00:51,692
+Proje iş takvimi şeklinde bu geçiş süreci için bir takvim oluşturulmalı. Sorumlular belirlenmeli, hangi işten kimler sorumlu ve nasıl bir takvim çerçevesinde gerçekleştirilecek.
+
+159
+01:01:01,108 --> 01:01:11,108
+Burada gerçekten bu işin geliştirilmesi tüm komponentleri...
+
+160
+01:01:14,867 --> 01:01:37,927
+Hangileri ve bu geçerlik testleri, geçerlik ve test çalışmaları için hazır mı? Bütün bu rilizdeki tüm elemanlar, bunların oluşturulması.
+
+161
+01:01:38,516 --> 01:01:51,335
+Artık burada bir sonraki adımda ise kullanım ortamında, yaşam ortamında uygulamanın geçişinin...
+
+162
+01:01:51,568 --> 01:02:18,448
+Gerçekleştirilmesi, eğitimlerin uç kullanıcılara eğitim verilmesi, işleten kişilere uç kullanıcılara eğitim verilmesi ve yazılımla ilişkili dökümetasyona adapte olmalarını sağlayarak yaşama geçirilmesi adamı.
+
+163
+01:02:19,443 --> 01:02:36,443
+Bu release sonrasındaki destekte yeni bir release alınmış uygulamanın burada...
+
+164
+01:02:39,507 --> 01:02:56,227
+Daha yakın takibe alınması, hatalar çıktı mı, işlemsel olarak nasıl yürüyor, bunun takip edilmesi.
+
+165
+01:03:07,860 --> 01:03:29,860
+Kapatılması, yani tüm güncelleme, raporlama, çıktılar, proje ekiplerine feedback gönderme işlemlerinin doğrulanması.
+
+166
+01:03:33,012 --> 01:03:40,952
+Tüm belgelerin ve artık bu release aktivitelerinin formal olarak tamamlanması aşaması.
+
+167
+01:03:52,447 --> 01:04:01,647
+Devreye alınması aşamasında birçok kişinin görevi var.
+
+168
+01:04:01,647 --> 01:04:12,907
+Tabii ki burada Rees Manager'ın rolü en önemlisi.
+
+169
+01:04:18,931 --> 01:04:23,951
+Bu adımlarda koordinasyonun sağlanması,
+
+170
+01:04:25,972 --> 01:04:52,192
+Her bir rolün ve görev verilen kişinin belirlenmesi ve takip edilmesi etkin ve emin bir şekilde yayınlama işleminin sağlanması için koordinasyonun gerçekleştirmesinden rol oynar Liz Manager.
+
+171
+01:04:52,768 --> 01:05:17,447
+Burada yani tipik olarak bir IT profesyoneli, IT uzmanı hangi yeteneklerde ise bu yetenek ve deneyimde olması, işte standartları, süreçleri, toolları,
+
+172
+01:05:19,795 --> 01:05:29,955
+Kullanabilmesi ve böylece de Riz aktivitelerini koordine etmesi beklenecektir.
+
+173
+01:05:44,628 --> 01:06:02,088
+Yöneticilerle de beraber çalışacak. Hangi departmana uygulanıyorsa yeni yazılım, oradaki yöneticilerle koordineli olarak çalışacak.
+
+174
+01:06:12,724 --> 01:06:26,104
+Bu uygulama iş birimi yöneticileriyle paylaşarak onlarla bütünlük içinde çalışması gerekir.
+
+175
+01:06:35,059 --> 01:06:57,059
+Şirketin herhangi bir biriminde olabilir, pazarlama, iş geliştirme, araştırma birimlerinden herhangi birinde buradaki yöneticilerle koordine içinde çalışıp bu ürünün yayınlanmasını...
+
+176
+01:06:59,476 --> 01:07:20,976
+Hasarsız yürütme görevindedir. Tabii ki büyük bir uygulama, tek bir işletmecilik uygulaması, tek bir birimdeki görevlileri etkilemeyecektir.
+
+177
+01:07:21,327 --> 01:07:42,407
+Birçok birimin bir arada kullandığı bir uygulama olabilir. O zaman Release Manager daha geniş bir release ekibi içinde çalışmalıdır.
+
+178
+01:07:47,219 --> 01:08:15,219
+Hem kurumun kuralları içinde iş süreçlerinin gerçekleşmesinden hem canlı yürüyen yaşamın en az etkilenmesinden sorumlu olacak şekilde bu yayınlama sürecini yönetecek ekibi daha büyük uygulamaları devreye alırken dikkate alıp...
+
+179
+01:08:15,219 --> 01:08:42,319
+Bu yürütme ekibini ona göre kurması gerekecek. Tabii ki bu işte riskten de söz edilir. Bir büyük bir uygulama geçişi için risk yönetimini de göz önünde bulundurması gerekecek. Risk yönetimde yapması gerekecek.
+
+180
+01:08:44,212 --> 01:09:09,872
+Şimdi burada bazı şeyler var. İşte Scrum'la Release Management'ın iç içe girdiği, Agile süreçlerde nasıl gerçekleştiği, Release Management'ın hangi adımlarla, hangi aktivitelerle döngü içinde gerçekleştiği gibi şekiller falan da var.
+
+181
+01:09:12,212 --> 01:09:21,832
+Ben bu şekillerle sizi çok yönlendirmek istemedim. Kavram olarak bunu yerleştirmek istedim sadece.
+
+182
+01:09:21,832 --> 01:09:33,172
+O yüzden işin bu klasik bir şekil yapısı vardır. Release Management'ın konfigürasyon yönetimiyle ilişkisini belirten.
+
+183
+01:09:33,672 --> 01:09:36,152
+Şimdilik o tarafına girmiyorum işin.
+
+184
+01:09:37,876 --> 01:09:44,876
+Rezmanagement'ın faydaları zaten açık kullandığımızda.
+
+185
+01:10:00,083 --> 01:10:15,823
+Uygulamadaki değişiklikle yeni özellikleri ve değişiklikleri daha hızlı yaymak, kullanıcılara bunu adapte etmek, release management'ın baş faydası.
+
+186
+01:10:26,739 --> 01:10:40,059
+Yani riski azaltarak değiştirmek. Yani burada bir risk var. Bu riski azaltmak için çalışmalar yapılması.
+
+187
+01:10:54,644 --> 01:11:12,283
+Yeni yazılımı ya da update edilmiş yazılımı bir iş listesi oluşturup uygulamaya koymak.
+
+188
+01:11:22,163 --> 01:11:30,564
+Örtüşerek değişiklikleri, yeniliklerin sağlanılmasını sağlamak.
+
+189
+01:11:32,843 --> 01:11:43,963
+Bu arada kullanıcılar ve destek personeline de gerektiğinde uygun bilginin sağlanması.
+
+190
+01:11:43,963 --> 01:11:47,823
+Bütün bunlar Release Management'ın faydaları.
+
+191
+01:11:48,467 --> 01:12:10,827
+Release Management'ı bunun için yeni yayınlanacak, yeni uygulama ya da yapılan değişiklikler, önemli değişiklikler, versiyon değişikliklerinde kullanmamız gerekiyor.
+
+192
+01:12:25,363 --> 01:12:29,503
+Release Management ve DevOps yaklaşımı.
+
+193
+01:12:31,563 --> 01:12:37,563
+DevOps yaklaşımı üzerinde durmamıştık.
+
+194
+01:12:37,563 --> 01:12:40,943
+Özellikle Ecein yaklaşımlarda.
+
+195
+01:12:47,699 --> 01:13:14,939
+Devolupment ve Operation kelimesinin birleştirimi DevOps ve günümüzde bu çevik süreçlerle yazılım geliştirme söz konusu olduğunda bu DevOps yaklaşımı da ortaya çıkmış bir kavram.
+
+196
+01:13:15,539 --> 01:13:39,539
+DevOps stratejisinde geliştirme ekibi ve operasyon ekibinin birlikte çalışması ve etkin riliz yönetimine baktığımızda
+
+197
+01:13:42,387 --> 01:14:08,307
+Deops yaklaşımı birçok IT departmanı için daha uyum sağlamasını kolaylaştırıcı bir yapı ve etkin riliz yönetimi ile birleştirilmiş olduğunu görüyoruz.
+
+198
+01:14:08,787 --> 01:14:14,688
+Ve burada.
+
+199
+01:14:22,996 --> 01:14:42,275
+IT firmasındaki ekipler için bu DevOps stratejisi de Release Management'da her ikisi birlikte kullanılırsa daha etkin çözümler getiriyor.
+
+200
+01:14:44,851 --> 01:14:57,032
+Buradan ecail yaklaşımdaki süreçler kullanıldığında
+
+201
+01:14:57,524 --> 01:15:24,724
+Release Management yapısında daha dinamik, daha kolay uygulanabilir bir özellik görebiliyoruz. Bunun da yine şekille belirtildiği şeyler var. Bu da daha sonra gerekirse bu şekil üzerinden de gidebiliriz.
+
+202
+01:15:25,119 --> 01:15:37,000
+Şimdi bir örnek üzerinde duracağım. Sizin anlatımınız.
+
+203
+01:15:37,876 --> 01:16:04,476
+Makale anlatımınız için geçen seneki arkadaşlarınızdan birinin sunumu üzerinde duracağım. Hem de bizim üzerinde durmadığımız bir konu, işte mobil uygulamalarda nasıl gerçekleşiyor çalışmalar şeklinde. Bu konuyu mobil test, mobil uygulamalarda test.
+
+204
+01:16:04,944 --> 01:16:14,984
+İşleminin tanımlanması şeklinde. Bu konuda sorunuz var mı?
+
+205
+01:16:32,532 --> 01:16:47,532
+Önce örnek üzerinde mi duralım? Ben tek tek gideyim. [öğrenci] burada bugün.
+
+206
+01:16:54,707 --> 01:17:00,487
+Şimdi, ilişkili...
+
+207
+01:17:03,604 --> 01:17:13,824
+Siz geçen hafta sunum yapacağınızı belirtmiştiniz.
+
+208
+01:17:15,264 --> 01:17:15,923
+Evet hocam.
+
+209
+01:17:17,064 --> 01:17:22,543
+Diğer [öğrenci] da bugün, [öğrenci]nda bugünün konusu Release Management ile ilişkili.
+
+210
+01:17:24,684 --> 01:17:29,304
+Şirketlerinde yeni bir release geçişi olduğu için.
+
+211
+01:17:29,648 --> 01:17:50,967
+Gelemeyeceğini söyledi ama önümüzdeki hafta o da sunumunu yapacak. Tam da onun işiyle ilgili bir konu üzerinde durduk zaten bugün. İki [öğrenci] ayrı ayrı konularınız. İkiniz sunum yapacaksınız. [öğrenci] sen de sunacak mıydın?
+
+212
+01:17:55,539 --> 01:17:58,879
+Yok hocam, ben daha sonraki hafta diye düşünmüştüm. Konuşmadık hiç olur da.
+
+213
+01:17:59,239 --> 01:18:00,520
+Tamam. [öğrenci]?
+
+214
+01:18:01,739 --> 01:18:04,020
+O yüzden ben de bir sonraki hafta olursa daha iyi olabilir.
+
+215
+01:18:05,319 --> 01:18:09,420
+Geçen hafta sunarım diyen kimdi? Ben o kağıdı bulamadım şu anda.
+
+216
+01:18:09,879 --> 01:18:12,260
+Hocam ben varım. Mail üzerinden de iletmiştim.
+
+217
+01:18:12,579 --> 01:18:16,619
+Tamam. [öğrenci] ilk bildiren sende zaten.
+
+218
+01:18:16,760 --> 01:18:17,139
+Evet.
+
+219
+01:18:17,420 --> 01:18:20,920
+Evet. Geçen hafta seni söylemiştim.
+
+220
+01:18:23,891 --> 01:18:49,091
+Hocam merhabalar [öğrenci] ben. Merhaba [öğrenci]. Daha önce söylemedim ama boşluk varsa ben de sunabilirim. İyi olur çünkü bir sonraki haftaya daha sonra da uygulamalarınızı anlatacağınız için sunman iyi olur. En azından genel olarak derslerde.
+
+221
+01:18:49,631 --> 01:18:53,291
+İşte 14 kişi falan oluyorsunuz.
+
+222
+01:18:56,115 --> 01:19:05,216
+Tamam hocam, ben de sunabilirim. Projeyle ilgili bir şey soracaktım ama sorayım yoksa bu kısmı bitirdiğimizde mi sorayım?
+
+223
+01:19:05,236 --> 01:19:06,435
+Yok yok, sorabilirsin.
+
+224
+01:19:07,155 --> 01:19:14,496
+Projede istediklerinizi bir doküman olarak alma, bunları istediklerinizi var mıdır bize?
+
+225
+01:19:14,496 --> 01:19:22,195
+Evet, bugün diğer dersler için koyduğum şeye. Onu iyi ki sordunuz.
+
+226
+01:19:22,899 --> 01:19:45,840
+Her ikisini de, yani bu makaleyi de, projeyi de hem döküman olarak koyacağım. Nasıl ki sınavlara baktığınız ödevler ve sınavlar bölümünde iki tane ödev tanımı yapacağım. Bir tanesi uygulama ödevi, bir tanesi makale ödevi.
+
+227
+01:19:46,899 --> 01:20:10,599
+Şimdi siz uygulama projelerinizde çoğunuz SRS dökümanını verdiniz. Bunun için SRS dökümanını hazırlarken zorluk çektiğiniz bir taraf oldu mu?
+
+228
+01:20:18,547 --> 01:20:27,028
+Yani bunların üzerinden bir kez daha geçmemize gerek var mı? Bir tane örnek, birinizin örneği üzerinden.
+
+229
+01:20:31,252 --> 01:20:35,212
+Bir bakayım ben ara verdiğimizde gerekirse üzerinde dururum.
+
+230
+01:20:38,092 --> 01:20:41,532
+Evet, şimdi [öğrenci]'in sorusuna cevap vereyim.
+
+231
+01:20:43,132 --> 01:20:45,252
+Mail üzerinden değil de...
+
+232
+01:20:46,739 --> 01:20:56,600
+Bu ödev ve sınav sistemi üzerinden hem tanımını yapacağım, hem son süremizi belirteceğim.
+
+233
+01:20:57,139 --> 01:21:01,000
+Sizin teslim etmenizi sağlayacağım.
+
+234
+01:21:01,000 --> 01:21:05,479
+Yalnız şöyle bir durum var.
+
+235
+01:21:12,916 --> 01:21:33,736
+İki şeyiniz var. Bir tanesi PowerPoint'te hazırlayacağınız sunum. Arkadaşlarınıza konuyu sunarken kullanacağınız. Diğeri de makale hazırlama.
+
+236
+01:21:34,355 --> 01:21:55,415
+O yüzden onu sanki iki ödev gibi tanımlayabilirim. Zaten PowerPoint sunumunu siz sunarken de kendiniz paylaşarak, size yetkiyi vereceğim, kendiniz paylaşarak sunacaksınız.
+
+237
+01:21:57,492 --> 01:22:06,712
+Makale sunum, uygulama projesinde de gereksinim belgelerinizi bana mail ile gönderdiniz.
+
+238
+01:22:19,347 --> 01:22:43,768
+Önümüzdeki hafta 11. hafta olacak. 12. hafta yine makale sunumlarınız devam edecek. 12. haftanın sonunda bir gün veya 13. haftanın başında pazartesi günü uygulama projelerinizi yüklemenizi bekleyeceğim.
+
+239
+01:22:44,275 --> 01:23:02,235
+Proje tanımını da aynı şekilde oraya yükleyeceğim. Böyle daha iyi olur. Mailde de bazen fazla kalabalık olabiliyor. Burada bir problem yok değil mi?
+
+240
+01:23:02,771 --> 01:23:04,591
+Hocam bu konuda bir şey sorabilir miyim?
+
+241
+01:23:05,031 --> 01:23:05,311
+Tabii.
+
+242
+01:23:05,871 --> 01:23:10,631
+Hocam proje raporları için örnek bir şablon bulamadık da bu konuda standart bir şablonumuz olacak mı?
+
+243
+01:23:10,791 --> 01:23:11,891
+Yani testlerimizi yaptık.
+
+244
+01:23:12,572 --> 01:23:14,231
+Evet, evet, evet.
+
+245
+01:23:14,231 --> 01:23:15,231
+Evet.
+
+246
+01:23:16,231 --> 01:23:18,231
+Ya ona...
+
+247
+01:23:19,220 --> 01:23:29,420
+Daha önceki yıllardan hazır bir şablonum vardı ama gereksiz bir şekilde herkes o şablona uydurmaya çalışıyor.
+
+248
+01:23:29,520 --> 01:23:33,940
+Boşluklar bile kalsa o formata göre hazırlamaya çalışıyor.
+
+249
+01:23:34,579 --> 01:23:40,260
+O yüzden ne istediğimi hep derslerde belirtmeye çalışıyorum.
+
+250
+01:23:41,180 --> 01:23:44,360
+Şablon vermesem daha iyi olur diye düşünüyorum.
+
+251
+01:23:46,387 --> 01:23:54,807
+Onu tekrar bir bakayım. Gerekirse önümüzdeki hafta şablonu veririm ya da tekrar tanımlayıp size bırakırım.
+
+252
+01:24:01,619 --> 01:24:05,199
+Başka sorunuz var mı bu şeyle ilişkili?
+
+253
+01:24:10,804 --> 01:24:35,103
+Evet, o zaman [öğrenci] ve [öğrenci]. Bir, iki, üç, dört, beş kişi sunacak. Bir sonraki haftaya daha fazla sunum kalmış olacak. Bir de derste daha az devam eden arkadaşlarınız var.
+
+254
+01:24:40,851 --> 01:24:51,091
+Bunlardan da liste oluşturmuş olacağım. Kimler verdi şimdiye kadar makale teklifini diye.
+
+255
+01:24:51,091 --> 01:25:06,891
+Evet, şimdi bu örneğimize geçelim isterseniz. Geçen seneki arkadaşların özellikle ortalama bir şey seçtim. Hani çok da gözünüz korkmasın daha iyi yapanlardan.
+
+256
+01:25:07,859 --> 01:25:16,340
+Ama ortalama bir sunum üzerinde karar kıldım.
+
+257
+01:26:53,203 --> 01:27:15,724
+Konu mobil uygulamaları nasıl test ederiz? Seçtiği IEEE software'den ve konferans yayınlarından birleştirdiği bir şeydi.
+
+258
+01:27:21,140 --> 01:27:39,720
+Cihazlar çok fazla kullanılır olduğunda bunların güvenirliği ve test sürecini diğerlerinden nasıl farklılaştırıyoruz?
+
+259
+01:27:41,720 --> 01:27:46,920
+Uygulama alanı gittikçe yayılıyor.
+
+260
+01:27:48,768 --> 01:27:54,208
+Bunların test edilmesi daha farklı, daha zaman alıcı bir işlem.
+
+261
+01:27:54,963 --> 01:28:15,804
+Bu konuda kullanılabilirliği, mobilitesi ve güvenliği daha çok ağır basıyor. Yani mobil uygulamaların testinde kullanılabilirlik, mobilite ve güvenlik üzerinde durmak daha farklı oluyor ve maliyeti daha fazla.
+
+262
+01:28:20,627 --> 01:28:34,948
+Bu yüzden ilk baştaki testleri emülatörlerle gerçekleştiriliyor. Yazılım testlerinin daha az olduğu söz ediliyor.
+
+263
+01:28:37,011 --> 01:28:58,851
+Mobil uygulamalar, yani mobil cihazlarda yürüyen, çalışan yazılımların test edilmesi ve bu testlerde daha çok hangi testler ağır basıyor, hangi özellikleri test etmek ağır basıyor.
+
+264
+01:29:03,123 --> 01:29:11,484
+Bu sunumdaki özellikle bölümler, test kapsamı,
+
+265
+01:29:11,887 --> 01:29:28,467
+Gerekli mobil uygulamalarda testin içeriği nedir? Hangi test stratejileri kullanılır? Ve zorlukları nelerdir? Dediğim gibi bu daha ortalama bir sunum seçtim.
+
+266
+01:29:36,307 --> 01:29:52,988
+Kaliteyle, testle ilişkili, daha Citation Index'e girmiş yayınlar içinde daha spesifik araştırma makaleleri de vardı.
+
+267
+01:29:54,268 --> 01:30:00,368
+Ama daha ortalama olan bir örnek seçtim.
+
+268
+01:30:02,707 --> 01:30:20,127
+Mobil uygulamalar akıllı telefonlarda, tabletlerde. Özellikle grafik uygulama ara birimi üzerindeki çalışmalar ağır basan uygulama yazılımları.
+
+269
+01:30:21,076 --> 01:30:38,515
+Mobil web uygulamaları, doğal mobil uygulamalar ve hibrit mobil uygulamalar. Mobil uygulamalar genellikle server-side teknolojisiyle oluşturulmuş uygulamalar.
+
+270
+01:30:38,963 --> 01:31:00,183
+Ve internet bağlantısı gerekiyor. Kullanım amaçları ne olursa olsun, mobil uygulamanın başarılı olması için bazı nitelikleri ve ayırt edici özellikleri olmalıdır. Burada bağlantı, kaliteli tasarım.
+
+271
+01:31:00,627 --> 01:31:23,627
+Hangi cihazları desteklediği, hangi programlama dilinde yazıldığı, içeriği, güvenlik kavramı, kişiselleştirilebilme özelliği, ulaşılabilirlik yapısı ve yerleştirilmesinin...
+
+272
+01:31:26,515 --> 01:31:32,835
+Önemli özelliklerin bunlar olduğuna bakıyoruz.
+
+273
+01:31:35,555 --> 01:31:41,075
+Her zaman bu testler yapılırken internet bağlantısına ihtiyaç var.
+
+274
+01:31:41,555 --> 01:31:56,535
+Tabi ki bu internetin de hızı, güvenirliği değişebilir. Bu nedenle farklı ağlarda ve bağlantı senaryolarında işlevsel testler tekrarlanmalıdır.
+
+275
+01:31:57,535 --> 01:32:08,695
+Grafik kullanıcı arayüzü, kullanım kolaylığı veya mobil uygulamanın kolaylığını test etmek için farklı cihazlarda test etmek gerekir.
+
+276
+01:32:09,140 --> 01:32:34,780
+Mobil uygulamalardaki test işlemleri hangi yöntemlerle test edilecek? Kullanılabilirlik, birlikte çalışabilirlik, mobil bağlantı, güvenlik, mahremiyet ve bunlar test açısından büyük önem taşımaktadır.
+
+277
+01:32:40,180 --> 01:32:55,140
+Yüksek dinamiklik, sık sık güncelleme ve her uygulamanın kendine özgü iş ve veri akışına sahip olması bunların karmaşıklığını getiren faktörler.
+
+278
+01:32:55,636 --> 01:33:07,976
+Mobil uygulamaların test edilmesi farklı amaçlar için, yani donanım uyumluluğu, yazılım güvenirliği, uygulama işlevselliği gibi farklı yaklaşımlar kullanılarak yapılır.
+
+279
+01:33:12,856 --> 01:33:21,976
+Uygulamanın test edilmesi için yine bizim genel yaklaşımımız gibi yapısal testler.
+
+280
+01:33:22,368 --> 01:33:28,788
+Saydam Kutu Testleri gerçekleştirebiliriz.
+
+281
+01:33:28,788 --> 01:33:42,848
+Mobil uygulama dillerine uygun olması gereklidir ayrıca.
+
+282
+01:33:46,336 --> 01:34:13,676
+Test işlemlerinde mobil uygulama dillerine uyumlu olması gerekir. Otomatik tarama testi yazılımı hataların ve cihaz tutarsızlıklarının hızlı bir şekilde test edilmesini sağlayan bir araç olarak geçecektir.
+
+283
+01:34:14,228 --> 01:34:28,068
+Yeni kapsama kriterleri en azından yeni mobilite algılamasını ve enerji yapılarını düşünmenin bir yolu olarak bakılabilir.
+
+284
+01:34:28,728 --> 01:34:39,068
+Bunlar bizim test süreci adımlarımız. Birim test, bütünlük testi, sistem testi, kullanıcı ara birim testi, regresyon testi.
+
+285
+01:34:39,807 --> 01:34:48,108
+Ve kabul testi. Bu sınavda da size sorduğum test süreci adımlarıydı.
+
+286
+01:34:48,532 --> 01:35:02,251
+Bu adımlar mobil testte de uygulanıyor. Özellikle sistem testinden öne çıkmış olan kullanıcı ara birim testi gerçekleştiriliyor.
+
+287
+01:35:02,251 --> 01:35:15,511
+Çünkü bu kullanıcı ara birim özelliklerinin mutlaka test edilmesi gerekiyor.
+
+288
+01:35:16,307 --> 01:35:28,527
+Uygulamanın test edilmesi için iki farklı test tipi var.
+
+289
+01:35:28,527 --> 01:35:38,527
+Fonksiyonel testler, kara kutu testleri ve stake-based yaklaşımlar.
+
+290
+01:35:41,108 --> 01:35:50,067
+Düşük pil toplantı, uçuş modu bunlar durumunda. Yani hangi durumda nasıl çalışıyor?
+
+291
+01:35:51,247 --> 01:36:08,167
+Fonksiyonel test, performans testi, security test, kullanışlılık testi, yoğun yükleme, stres testi, load test.
+
+292
+01:36:08,528 --> 01:36:35,508
+Lokalizasyon testi ve senkronizasyon testi gerçekleştirilmesi gerekiyor. Bu karakutu test yapısında bunların gerçekleştirilmesi gerekiyor. Bir de farklı durumlara göre diye gerçekleştirilmesi gerekiyor.
+
+293
+01:36:40,724 --> 01:36:47,644
+Burada mobil test yaklaşımlarında daha çok kullanıcı arayüz testi.
+
+294
+01:36:55,123 --> 01:37:08,604
+Kullanıcı arayüz testinde farklı cihazların yeterli verinin görünümünü sağlayıp sağlamadığı görüntünün test edilme şeklidir.
+
+295
+01:37:08,604 --> 01:37:10,123
+Kullanıcı arayüz testi.
+
+296
+01:37:21,587 --> 01:37:47,067
+Çalıştırılması nasıl sağlanıyor? Burada özellikle otomatik yazılım araçlarını kullanarak gerçekleştirmek önemli. Daha hız kazandıracağı için bunlara uygun, açık kaynaklı.
+
+297
+01:37:49,108 --> 01:38:10,528
+Yazılım Test araçlarında faydalanabileceği belirtilmiş. Başka bir önem kazanan işlem, Performans Testi. Mobil uygulamanın başarılı bir şekilde başlatılmasında önemli bir adım.
+
+298
+01:38:13,268 --> 01:38:30,427
+Hızı ve kullanım kolaylığını etkileyebilecek mobil taşıyıcıların testi önemli. Uygulama performansı son kullanıcı için zayıfsa diğer uygulamalara ve hizmetlere yönlendirilebilirler.
+
+299
+01:38:39,872 --> 01:38:51,872
+Gerçekleştirilebilir ve performans testi sayesinde...
+
+300
+01:38:55,699 --> 01:39:13,139
+Cevap süresi ama belirlenecek. Performanslı ve güvenirliliği cihazın donanım gücüne, cihazın çalışma moduna, bağlantı kalitesine, değişkenliğine bağlıdır.
+
+301
+01:39:23,699 --> 01:39:33,719
+Aygıtlarda ama bu aygıtların özelliğini belirterek denemek önem taşıyor.
+
+302
+01:39:34,619 --> 01:39:48,719
+Başka bir şey de güvenlik testi. Mobil ağların farklı güvenlik seviyeleri var. Virüsler kişisel bilgilere erişebilir. Şifreleri veya kullanıcı adlarını...
+
+303
+01:39:50,579 --> 01:39:59,340
+Cihazda şifre vermemiş olarak bırakılması güvenlik sorunu olabilir.
+
+304
+01:40:00,200 --> 01:40:08,880
+Uygulamanızın mobil bir cihaza yüklenmesi sırasında uygulama yürütme izinleri için seçeneklerle karşılaşabilirsiniz.
+
+305
+01:40:17,840 --> 01:40:27,940
+Bağlantı türlerine, etkileşimlerine, kullanıcı verilerine erişmesine izin vermeniz, istemeniz veya reddetmeniz istenebilir.
+
+306
+01:40:29,160 --> 01:40:40,240
+Uygulamanın kurulumdan sonra bile cihazın güvenlik ayarlarını ve uygulama izinlerini değiştirmek mümkündür.
+
+307
+01:40:43,572 --> 01:40:52,511
+Farklı senaryolarla test edilmesi gerekir uygulamanızın.
+
+308
+01:40:53,043 --> 01:41:01,344
+Cihazların değişikliğinden doğan test, bu tür testlerde en büyük test zorluğunu yaratır.
+
+309
+01:41:01,344 --> 01:41:11,764
+Farklı cep telefonları, farklı özellikler, donanım bileşenleri ve farklı işletim sistemlerine sahip olmayı gerektirecek.
+
+310
+01:41:12,583 --> 01:41:19,184
+Birçok cihazda test yaklaşımı kullanıldığında maliyet artacaktır.
+
+311
+01:41:21,043 --> 01:41:27,543
+Cihaz zorluğunu ele almak için üç seçenekten birisi kullanılabilir.
+
+312
+01:41:28,063 --> 01:41:33,764
+Gerçek cihazlar, emülatörler veya her ikisinin kombinasyonunun kullanılması.
+
+313
+01:41:33,764 --> 01:41:36,884
+Bu daha önce de geçmişti zaten.
+
+314
+01:41:38,903 --> 01:41:47,144
+Gerçek aygıtları kullanmak, emülatör kullanmak arasındaki farklılıklar üzerinde durulmuş.
+
+315
+01:41:47,731 --> 01:42:14,231
+Bu bir uygulamaları test ederken hangi kilit noktalar var, hangi mobil cihazları ve hangi işletim sistemleri sürümlerini destekleyecek uygulamanız, uygulamaları bu platformlarda çalıştıklarından emin olmak için nasıl test ederiz?
+
+316
+01:42:16,020 --> 01:42:34,159
+Platformlar arasındaki farklara uyum sağlamak için hangi değişiklikler yapılmalıdır? Yeni mobil cihazlar, teknolojiler ve uygulamalar sürekli güncellendiğinden yeniliklere nasıl desteklenecek?
+
+317
+01:42:36,787 --> 01:42:58,847
+Yapılan testlerin yeterli olduğu nasıl anlaşılacaktır? Aslında bu sadece mobil uygulamalar için değil, genel olarak testte önemli bir sorun. Testlerin yeterli olduğu nasıl anlaşılacaktır? Bu aslında minimum olması gereken test sayısı.
+
+318
+01:43:04,787 --> 01:43:25,787
+Tabii ki test sayısını arttırdığımızda maliyetin ne kadar artacağı ile ilişkili değerlendirmeler yaparak test sayısının yeterli konusunda bilgi alabiliriz.
+
+319
+01:43:33,043 --> 01:43:57,744
+Mobil uygulamalardaki test matrisi karmaşık bir senaryo haline geliyor. Burada network, gizlilik, kullanılan tool'lar bunların hepsi ve merkezde de
+
+320
+01:43:57,811 --> 01:44:10,492
+Hangi test yenilikleri kullanılacak? Bunlara göre buralarda değişiklikler olabilir.
+
+321
+01:44:11,752 --> 01:44:17,752
+Fragmentation, çeşitli işletim sistemlerinde çalışan çok sayıda mobil cihaz var.
+
+322
+01:44:18,804 --> 01:44:28,344
+Farklı kullanıcı arayüzleri uyumluluk nedeniyle zorluk seviyesini arttırır. Bu yüzden testte parçalanmalar olmaktadır.
+
+323
+01:44:28,344 --> 01:44:40,344
+Network ilişkilidir. Kullanıcının uygulama deneyimini etkiler. Her bir mobil operatör birden fazla şebeke teknolojisini destekleyebilir.
+
+324
+01:44:41,123 --> 01:44:46,184
+Dolayısıyla bu ağlarda hepsinde mobil uygulamanın test edilmesi.
+
+325
+01:44:46,771 --> 01:45:10,640
+Bu örneğe bakalım.
+
+326
+01:45:10,640 --> 01:45:32,440
+Zorlukların temel olarak son boyutu da test araçlarının çeşitliliği. Böyle bir test aracı hangisi kullanılacak, bunun seçimi nasıl seçim gerçekleştireceğiz. Bu da önemli.
+
+327
+01:45:33,171 --> 01:45:45,431
+Mobil uygulamalarda test stratejileri diye baktığımızda %30-40'ı bu yaklaşım emülatörler kullanılarak yapılır.
+
+328
+01:45:47,091 --> 01:45:54,711
+Bir test cihazı sadece uygun cihaz profilini yükleyerek kolayca farklı cihaz türlerine geçebilir.
+
+329
+01:46:01,268 --> 01:46:19,587
+Gerçek cihaz kullanılmaz, emulatörlerin kullanılması, kullanıcı arayüzü, stres ve performans testi gibi farklı test tipleri emulatörler kullanılarak gerçekleştirilebilir.
+
+330
+01:46:20,087 --> 01:46:27,068
+Bunun dezavantajı nedir? Gerçek sonuçları her zaman yansıtmayabilir.
+
+331
+01:46:27,648 --> 01:46:41,408
+Mobil bulut bilişim çözümleri. Bu yaklaşımda mobil cihaza web arayüzü üzerinden erişilebilir ve uygulamalar uzaktan deploy edilebilir, test edilebilir ve yönetilebilir.
+
+332
+01:46:41,408 --> 01:46:54,587
+Bulut çözümleri kullanmanın çeşitli faydaları var. Örneğin saat başına kira kullanarak maliyeti düşürmek, sorun gidermede cihaz günlüğünü kaydetmek.
+
+333
+01:46:54,927 --> 01:47:07,488
+Test için çok sayıda cihazın mevcudiyeti, paralel olarak birkaç cihazda yapılabilmesi, bu da mobil bulut bilişim çözümleri.
+
+334
+01:47:07,488 --> 01:47:12,667
+Bir de gerçek ağlara sahip, gerçek zamanlı cihazlar kullanımı.
+
+335
+01:47:19,539 --> 01:47:25,500
+Gerçek dünya senaryosunda optimize edilmiş bir çözüm olarak kabul edilir.
+
+336
+01:47:26,680 --> 01:47:29,240
+Tabii ki maliyetli bir çözüm.
+
+337
+01:47:31,300 --> 01:47:46,440
+Uygulama yalnız cihaz özelliklerine ve ara yüze bağlı olarak çalışıyorsa, test özellikleri tarafından destekleniyorsa, o zaman gerçek cihazlarda test edilmesi.
+
+338
+01:47:47,475 --> 01:48:02,655
+Gerekmez. Aksine uygulama mobil cihazların coğrafi konum yeteneklerine ve çeşitli ağlarda kullanıcı varlığına dayanıyorsa gerçek cihazlarda test edilmelidir.
+
+339
+01:48:02,655 --> 01:48:08,956
+Kısaca özetlemek gerekirse mobil uygulamalara her zaman her yerde erişilebilir.
+
+340
+01:48:13,076 --> 01:48:21,456
+Çeşitli mobil cihazlarda test etme, farklı cihazlarda farklı işletim sistemleri bulunur.
+
+341
+01:48:22,395 --> 01:48:39,235
+Büyük ölçekli mobil simülasyon ve sanallaştırma kullanılarak test etme yapılırsa, mobil uygulama performansını ve ölçeklenebilirliğini değerlendirmek için gerekebilir.
+
+342
+01:48:39,859 --> 01:48:58,059
+Donanım maliyeti azaltılabilir bu durumda. Farklı ağ bağlantısıyla test etmek, bu ağ bağlantıları farklı olduğunda mobil uygulamaların doğrulanması gerekebilir.
+
+343
+01:49:07,380 --> 01:49:32,380
+Durmuş olduk. Bu konuda bir şeyiniz var mı? Bunu dinledikten sonra kendi hazırlayacağınız makale...
+
+344
+01:49:32,787 --> 01:49:59,787
+Çalışması. Aslında ben her iki seneyi de bildiğim için bu sene, yani bazı örnekleri dışında tutuyorum ama bu sene daha sürekli devam eden arkadaşlarımızın konularını daha araştırma makalelerini...
+
+345
+01:50:00,000 --> 01:50:09,000
+Daha dergiler üzerinde çalıştıklarını gördüm.
+
+346
+01:50:12,000 --> 01:50:27,199
+Daha bilgisayar ya da yazılım kalite magazin makaleleri değildi.
+
+347
+01:50:27,551 --> 01:50:37,752
+Araştırma makalelerinden seçenler, Site Eşin İndekse girmiş dergilerden seçenler daha fazla.
+
+348
+01:50:41,752 --> 01:50:53,511
+Umarım bu seçtiğiniz makaleleri işleyişiniz ve sunumunuz da iyi olacaktır.
+
+349
+01:50:54,292 --> 01:51:10,912
+Konu olarak ilişkilendirerek anlatım şeyine gitmiyorum. Sizin hazır olmanız ve nasıl sunmak isteyeceğinizle.
+
+350
+01:51:12,659 --> 01:51:33,539
+İlişkili program yapıyorum. Yani bazı senelerde birbiriyle ilişkili konuları arka arkaya getirecek şekilde sunum programı yapıyordum. Ama bu çok da gerekli değil. Makale çalışmasını birlikte götürenler de var mıydı? Projesini birlikte götürenler var.
+
+351
+01:51:36,239 --> 01:51:40,020
+[öğrenci] siz galiba beraber götürüyorsunuz değil mi?
+
+352
+01:51:41,235 --> 01:51:44,195
+Evet hocam.
+
+353
+01:51:44,195 --> 01:51:45,036
+Evet.
+
+354
+01:51:47,956 --> 01:51:51,435
+Ben ve [öğrenci]'la beraber yapacağız.
+
+355
+01:51:51,795 --> 01:51:52,576
+Evet.
+
+356
+01:51:53,119 --> 01:51:58,819
+Evet, siz önümüzdeki hafta sunabilecek misiniz [öğrenci]? Yoksa daha sonraki hafta?
+
+357
+01:51:59,359 --> 01:52:09,380
+[öğrenci]'ın şey maalesef ki anneannesini kaybetti. Şehir dışına çıkmak zorunda kaldı. Bir sonraki hafta yaparsak daha iyi olacak bizim için.
+
+358
+01:52:09,880 --> 01:52:11,779
+Tamam. [öğrenci] senin?
+
+359
+01:52:14,099 --> 01:52:16,279
+Hocam ben de bir sonraki hafta yaparsam daha iyi olacak.
+
+360
+01:52:16,279 --> 01:52:16,899
+Bir sonraki.
+
+361
+01:52:36,500 --> 01:52:42,920
+Hocam ben de 12. hafta diye düşünmüştüm fakat inceleyeceğim eğer geçtirebilir.
+
+362
+01:52:42,920 --> 01:52:44,359
+Olabilirse. Tamam.
+
+363
+01:52:44,359 --> 01:52:46,440
+Öncelikle hafta size mail atarım yani bu hafta.
+
+364
+01:52:46,440 --> 01:52:47,260
+Tamam, tamam.
+
+365
+01:52:47,695 --> 01:53:04,855
+Tamam, o zaman şu anda 5 arkadaşınız var zaten. Başlangıç için uygun. Bir sonraki hafta daha olmazsa uygulamalarınızdan da ama yok. Yani herkes 12. hafta tamamlayacak gibi düşünsün.
+
+366
+01:53:15,695 --> 01:53:39,855
+Sonuna şey koyarsanız, kullandığınız kaynakları iyi olur. Bu arkadaşınız koymamıştı mesela. En son slide'ınızda veya ilk slide'ınızda, ona siz karar verin. Hangi kaynaklardan faydalandıysanız onları da yazmanız iyi olacaktır.
+
+367
+01:53:42,260 --> 01:53:52,800
+Bu şekilde, yani bu slide sayısı biraz tekrarlardan da oluşuyordu mesela. Daha az da olabilir.
+
+368
+01:53:52,800 --> 01:54:00,800
+Yani siz olayı özümsemiş ve iyi anlatmış olduktan sonra...
+
+369
+01:54:04,180 --> 01:54:11,519
+Slide yaklaşık 10-15 arasındaki slide sayısı yeterli olabilir ama 10 gibi düşünün yani.
+
+370
+01:54:11,519 --> 01:54:27,059
+Önemli olan sizin seçtiğiniz konuyu iyi özetler biçimde arkadaşlarınızla o konudan haberdar etmek için gerekli ana hatları koyacaksınız sunumunuza.
+
+371
+01:54:32,180 --> 01:54:50,559
+Sizin bir makale formatındaki yazıyı hazırlayabilir oluşunuzla ilişkili olacak bana teslim edeceğiniz diğer yazı.
+
+372
+01:54:55,475 --> 01:54:57,015
+Evet, sorunuz var mı?
+
+373
+01:55:10,707 --> 01:55:15,467
+Hocam merhaba, ben size birkaç noktalar sizinle konuşmak istiyorum.
+
+374
+01:55:15,667 --> 01:55:15,927
+Evet.
+
+375
+01:55:16,927 --> 01:55:25,028
+Siz önce bizden SRS, Software Requirements Dispiration, bir proje istediniz. Ben size gönderdim.
+
+376
+01:55:25,427 --> 01:55:25,688
+Evet.
+
+377
+01:55:25,688 --> 01:55:27,328
+Bu sorun yok.
+
+378
+01:55:27,636 --> 01:55:47,636
+Evet. Sonra bir makale. Biz 3-4 sayfaya yazıyoruz ve sunum hazırlıyoruz. Evet. Doğru? Evet. Tamam. Sonra bu örneğe sunum yapılacak. Evet.
+
+379
+01:55:48,724 --> 01:56:03,644
+Ben çünkü biraz bazı şeyler benim üçüncü kereşik oldu. Daha önce yapmadım. Bu yüzden size soruyorum. Yanlış anladım ya da anlamadım.
+
+380
+01:56:06,771 --> 01:56:22,471
+Şimdi senin sınav kağıdından da ben onu anladım. Bütün derslere devam etmene rağmen, çok çaba göstermene rağmen bir kargaşa olmuş İngilizce yazdın.
+
+381
+01:56:22,471 --> 01:56:31,471
+Ama benim yüklediğim şeyler Türkçeydi tabii ki.
+
+382
+01:56:34,100 --> 01:56:52,239
+Şimdi bu senin İngilizce kullanacağın kaynaklar konusunda sen özellikle tek sormadın bana, ben de düşünemedim.
+
+383
+01:56:52,659 --> 01:57:13,239
+Bir şeye ihtiyacım var. Software Quality Test Kitabı var. Bir de Software Engineering kitaplarından ilgili konuların olduğu slide'lar var.
+
+384
+01:57:18,195 --> 01:57:21,175
+Pardon hocam, siz chatte yazabilir misiniz?
+
+385
+01:57:22,615 --> 01:57:29,895
+Chatten yazmayayım da şu anda, şu anda yanımda değil ama ben sana mail atayım.
+
+386
+01:57:30,415 --> 01:57:32,055
+Teşekkürler hocam, teşekkür ederim.
+
+387
+01:57:32,076 --> 01:57:37,076
+Çünkü öyle bir ihtiyacım var yani ben de düşünemedim onu baştan.
+
+388
+01:57:37,935 --> 01:57:39,635
+Tamam hocam, teşekkürler.
+
+389
+01:57:40,415 --> 01:57:44,475
+Sen nereden çalıştın mesela sınava?
+
+390
+01:57:46,159 --> 01:58:05,859
+Nasıl hocam? Hangi kaynaktan çalıştın? Sınav. Sınav için? Benden hocam. Nasıl anladım çalıştım. Bu yüzden sıra çok az şey düşündüm.
+
+391
+01:58:07,220 --> 01:58:09,900
+Siz 35 dakika verdiniz.
+
+392
+01:58:10,320 --> 01:58:11,280
+Evet, evet.
+
+393
+01:58:11,280 --> 01:58:24,680
+İşte çevrim sürende olduğu için, yani çalışmanı, sınavı İngilizce yazacağın için çalışacağın kaynağın da İngilizce olması lazım.
+
+394
+01:58:24,860 --> 01:58:28,600
+Benim derste anlattıklarım sadece sana ek olabilir.
+
+395
+01:58:29,280 --> 01:58:34,060
+Ama yüklediğim kaynaklar sana yeterli değildir.
+
+396
+01:58:34,400 --> 01:58:35,220
+Türkçe yazmıyor.
+
+397
+01:58:35,220 --> 01:58:41,400
+Evet, ben sana mail atacağım birkaç gün için.
+
+398
+01:58:41,400 --> 01:58:42,060
+Teşekkür ederim hocam.
+
+399
+01:58:42,700 --> 01:58:43,020
+Tamam.
+
+400
+01:58:43,620 --> 01:58:44,340
+Teşekkürler.
+
+401
+01:58:45,800 --> 01:58:47,700
+Başka sorusu olan var mı?
+
+402
+01:58:54,228 --> 01:59:06,448
+O zaman, günümüzdeki hafta için [öğrenci], [öğrenci] ve [öğrenci].
+
+403
+01:59:08,307 --> 01:59:14,028
+Evet, ben bir kişiyi daha kaydetmişim. Beş kişi gibi yazmışım. Dört kişi sunum yapacak.
+
+404
+01:59:16,528 --> 01:59:20,307
+Kim? Birisi de [öğrenci] mı?
+
+405
+01:59:20,979 --> 01:59:25,739
+[öğrenci] de belki sunum yapacak.
+
+406
+01:59:26,859 --> 01:59:28,339
+Evet, öyle bitirelim o zaman.
+
+407
+01:59:38,068 --> 01:59:49,007
+Sizin içinizden, siz daha devamlılar olduğunuz için SRS belgesini göndermeyen yoktu herhalde. Var mı?
+
+408
+01:59:51,887 --> 01:59:55,807
+SRS belgesini göndermemiş olan var mı içinizde?
+
+409
+02:00:02,547 --> 02:00:26,547
+Evet, tamam. Ben bunları bir dakika, bir beş dakika içinde birinizin SRS belgesi üzerinden bu...
+
+410
+02:00:29,652 --> 02:00:43,992
+Teslim ettiğiniz SRS belgelerinin üzerinden bir geçelim istiyorum. Rastgele birinizinkinin üzerinden geçeceğiz şimdi. Bir beş dakika sonra bunu yapacağım. O zaman şöyle yazıyorum.
+
+411
+02:01:04,884 --> 02:01:18,703
+5 dakika ara veriyorum. Birinizin SRS belgesi üzerinden bu SRS uygulamayı biraz daha açmak istiyorum.
+
+412
+02:05:25,332 --> 02:05:27,332
+Şimdi, Gereksinim Analizi...
+
+413
+02:05:33,876 --> 02:05:39,935
+Örneğine, [öğrenci] burada mıydı bu arada?
+
+414
+02:05:46,963 --> 02:05:47,844
+Yokmuş.
+
+415
+02:05:50,184 --> 02:05:54,963
+Evet, aranızda olmayan bir arkadaşınızın projesi.
+
+416
+02:05:56,963 --> 02:05:59,423
+Şimdi devam edelim.
+
+417
+02:06:01,564 --> 02:06:06,804
+Evet, IEEE 830'dan bakabileceğinizi söylemiştim.
+
+418
+02:06:06,804 --> 02:06:08,804
+Bu...
+
+419
+02:06:10,579 --> 02:06:27,340
+Gereksinim analizi için öncelikle amaç, ürün, kapsam ve genel tanım vereceğinizi, daha sonra gereksinimleri belirteceğinizi bildirmiştim.
+
+420
+02:06:27,340 --> 02:06:33,340
+Ve daha sonra da sistem özelliklerini.
+
+421
+02:06:33,844 --> 02:06:42,144
+Bunları rastgele seçtim bu arada sizin gönderdiklerinizden herhangi birini.
+
+422
+02:06:47,923 --> 02:07:01,644
+Önce bu giriş kısmı oldukça fazla. Genel tanımlamada ürün nasıl bir ürün?
+
+423
+02:07:09,587 --> 02:07:32,188
+Seçilen yerle ilişkili referansları bildirildiği, bu belgede geçen kısaltmaları tanımladığı ve genel olarak uygulama bir sistem.
+
+424
+02:07:34,484 --> 02:07:50,963
+Altyapısıyla ilişkili bir uygulama ve bu uygulamanın çalışma ortamını tanımlamış bir diagramla.
+
+425
+02:07:52,963 --> 02:07:55,684
+Nasıl bir çalışma ortamı var?
+
+426
+02:07:59,220 --> 02:08:11,599
+Gereksinimlerde, işlevsel gereksinimler sistemin kullanıcıya hangi hizmeti verdiklerini tanımlamış.
+
+427
+02:08:11,599 --> 02:08:13,739
+Ürünün fonksiyonları.
+
+428
+02:08:29,619 --> 02:08:49,019
+Burada yani ürünün hangi işleri yapabileceği, ürünün fonksiyonları tanımlanmış ama biz her bir iş adımını görmek istiyorduk.
+
+429
+02:08:49,019 --> 02:08:56,019
+Daha alt seviyede gerçekleştirilen işlemleri görmek istiyorduk.
+
+430
+02:08:56,404 --> 02:09:11,384
+Burada biraz daha genel belirtilmiş. Kullanıcı dokümentasyonunun taşıması gereken özellikler verilmiş.
+
+431
+02:09:11,384 --> 02:09:22,524
+Evet, use case diagramıyla gerçekleştirilen, evet şurada alt işlemleri görmek istediğimi belirtmiştim.
+
+432
+02:09:22,912 --> 02:09:30,391
+Buradaki her bir alt işlemin nasıl yürüdüğü, işlemlerinin neler olduğuyla ilişkili.
+
+433
+02:09:30,391 --> 02:09:35,552
+Yüz kez diagramında bunları belirtmiş.
+
+434
+02:09:45,395 --> 02:09:58,375
+Hangi durumda, hangi işin gerçekleştirildiği, HTTP isteğinin iptal edilmesi uygulamasının nasıl olacağını belirtip,
+
+435
+02:10:13,300 --> 02:10:24,359
+Devam etmiş. Alt işlemleri burada yazmış. Böyle bir alt işlemler gereksinim tanımlarını görmek istiyordum.
+
+436
+02:10:24,815 --> 02:10:44,855
+Yukarıda genel uygulamanın alt fonksiyonlarını yazıp bu fonksiyonları gerçekleştirmek üzere hangi use case çerçevesinde, hangi alt işlemlerle bunları yapacağını belirtmiş.
+
+437
+02:10:59,667 --> 02:11:14,667
+Evet, sistemin içinde hangi işlerin olması gerektiğini belirtip, alt işlemlerini de...
+
+438
+02:11:18,484 --> 02:11:27,544
+İki temel fonksiyon için use case diagramlarıyla belirtmiş.
+
+439
+02:11:27,544 --> 02:11:39,504
+Sistem özellikleri dediği fonksiyonel olmayan gereksinimler, fonksiyonel olmayan gereksinimleri de bu başlık altında yazması daha iyi olurdu.
+
+440
+02:11:52,051 --> 02:12:06,412
+Fonksiyonel gereksinimler, sistem özellikleri dedikleri aslında fonksiyonel olmayan özellikler. Başlığın bu şekilde olması daha iyi olurdu.
+
+441
+02:12:07,091 --> 02:12:19,072
+Ama temel olarak fonksiyonel gereksinimleri belirtmiş. Fonksiyonel olmayan özellikleri de sistem özellikleri adı altında belirtmiş.
+
+442
+02:12:19,072 --> 02:12:34,091
+Ve uygulamasıyla ilişkili, yani performans özelliği uygulamaya nasıl olmalı? Güvenirlik gereksinimi nasıl olmalı?
+
+443
+02:12:35,091 --> 02:12:51,931
+Bu donanım gereksinimi nasıl olmalı? Bunları belirtmiş. Donanım gereksinimi bundan ayrı olmalıydı. Bu şekilde belirtilmemeliydi.
+
+444
+02:12:53,152 --> 02:12:59,471
+Bundan farklı yapan var mı içinizde? Henüz hepinizinkine tek tek bakmadım.
+
+445
+02:13:01,536 --> 02:13:13,855
+Temel yapı olarak, farklı bir format kullanan var mı içinizde?
+
+446
+02:13:13,855 --> 02:13:24,256
+Burada dediğim gibi sistem özellikleri dediğim, fonksiyonel olmayan özellikler, işlevsel olmayan özellikler olacaktı.
+
+447
+02:13:25,555 --> 02:13:34,535
+Bu örnek üzerinden gittiğimizde gönderdiğiniz SRS belgesiyle ilişkili sorunuz var mı?
+
+448
+02:14:12,756 --> 02:14:29,216
+Evet, o zaman dersi bitirebiliriz. Dersle, projelerle, ödevlerle ilişkili sorunuz var mı? Yine de makale çalışmanızı geliştirin.
+
+449
+02:14:38,547 --> 02:14:53,507
+Yazı olarak vereceğiniz IEEE formatındaki makalenizi daha sonra 14. haftada bana göndereceksiniz. Ona göre de ödev tanımı yapacağım.
+
+450
+02:14:53,507 --> 02:15:01,568
+Ama sunumunuzda sadece sunumunuzu yükleyeceksiniz.
+
+451
+02:15:06,015 --> 02:15:09,095
+Daha sonra yapabilirsiniz.
+
+452
+02:15:14,131 --> 02:15:21,091
+Bu arada hazırlamış olan varsa bana bildirsin.
+
+453
+02:15:27,252 --> 02:15:35,591
+Makale sunumunu yere mi yükleyeceğiz sisteme yoksa süze mail mi atacağız?
+
+454
+02:15:37,931 --> 02:15:44,572
+Makale sunumunu da sisteme yükleyin ama o zaman bir son tarih vermem lazım.
+
+455
+02:15:51,699 --> 02:15:58,439
+Sunacak olan arkadaşlar, dersten hemen önce yüklerlerse iyi olur.
+
+456
+02:16:00,680 --> 02:16:05,119
+Hani ben bir göreyim hazırladığınızı önce.
+
+457
+02:16:06,859 --> 02:16:10,260
+Çünkü ben bir geniş aralık vereceğim teslim tarihi için.
+
+458
+02:16:10,779 --> 02:16:18,699
+Hani son tarih var. O son tarihi de daha sonrası için vereceğim.
+
+459
+02:16:26,739 --> 02:16:41,779
+Yarın sabah bu ödevler kısmına bakarsanız orada yazacağım ödevlerin tarihini.
+
+460
+02:16:46,164 --> 02:16:47,564
+Başka sorunuz var mı?
+
+461
+02:17:03,028 --> 02:17:07,788
+Evet, o zaman dersi bitiriyorum. İyi haftalar diliyorum.
+
+462
+02:17:09,168 --> 02:17:11,087
+İyi haftalar hocam.
+
+463
+02:17:11,087 --> 02:17:11,708
+Teşekkürler.
+
+464
+02:17:11,907 --> 02:17:13,168
+İyi haftalar hocam.
+
+465
+02:17:13,168 --> 02:17:14,988
+İyi günler hocam. Görüşmek üzere.
+
+466
+02:17:14,988 --> 02:17:15,708
+İyi haftalar hocam.
+
+467
+02:17:17,988 --> 02:17:19,268
+Teşekkürler hocam.
+
+468
+02:17:19,907 --> 02:17:22,268
+Teşekkürler. Ben size şey atacağım.

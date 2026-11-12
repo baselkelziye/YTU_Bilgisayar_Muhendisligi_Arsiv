@@ -1,0 +1,2259 @@
+1
+00:00:20,916 --> 00:00:22,475
+Merhabalar, günaydın.
+
+2
+00:00:26,056 --> 00:00:45,215
+Geçen hafta bugün için bir sıralama yapmıştık. Bugün ilk önce [öğrenci] ve [öğrenci] anlatacak diye belirlemiştik. Sonra [öğrenci], sonra [öğrenci] diye gidecektik.
+
+3
+00:00:47,923 --> 00:00:56,783
+Biraz daha arkadaşlarınızın da katılımı artsın. Bir beş dakika sonra [öğrenci] ve [öğrenci] anlatabilir mi?
+
+4
+00:00:58,443 --> 00:00:59,064
+Evet hocam.
+
+5
+00:00:59,524 --> 00:01:04,183
+Tamam, tamam. Bir beş dakika sonra başlıyoruz o zaman.
+
+6
+00:05:27,028 --> 00:05:32,248
+İlk sunumu [öğrenci] yapabilirsiniz herhalde, başlayabilirsiniz.
+
+7
+00:05:36,403 --> 00:05:38,423
+Tabii hocam. Bir saniye.
+
+8
+00:05:40,723 --> 00:05:45,063
+[kişisel bilgi]
+
+9
+00:05:45,644 --> 00:05:46,723
+Şimdi görüyorum.
+
+10
+00:05:47,963 --> 00:05:48,944
+Evet, aslan.
+
+11
+00:05:49,963 --> 00:05:51,723
+Tamam, tamam. Oldu.
+
+12
+00:05:52,504 --> 00:05:54,423
+Evet, sizi dinleyebiliriz şimdi.
+
+13
+00:05:54,863 --> 00:05:57,463
+O beş dakikayı geçmezsin.
+
+14
+00:05:58,663 --> 00:06:00,944
+Tamam, olabildiğince hızlı, hoş bir şekilde o zaman.
+
+15
+00:06:01,603 --> 00:06:02,423
+Tamam, oldu.
+
+16
+00:06:07,091 --> 00:06:09,091
+Ancak ekran paylaşımını yapayım.
+
+17
+00:06:13,492 --> 00:06:14,852
+Ekranı görüyor musunuz?
+
+18
+00:06:18,420 --> 00:06:19,700
+Evet, görüyoruz.
+
+19
+00:06:24,564 --> 00:06:32,564
+Öncelikle merhaba herkese. Bugün bizim ürünümüzün adı Ürün Stok Takip Sistemi. Biz buna...
+
+20
+00:06:33,012 --> 00:07:00,312
+[öğrenci] ile birlikte ANA diye bir şey koydu ki [öğrenci] olduğumuz için Üniversitesi takip sistemi gibi dedik. Bugün anlatacaklarımızın içeriğine gelirsek, Üniversitesi takip sistemimiz nedir onu anlatacağız. Test planımız hakkında birkaç bilgi vereceğiz. İçerisindeki itemlerle ilgili bilgi vereceğiz. Fonksiyonel entegrasyon testi, birim testi ve kullanıcı kabul testi uyguladık. Bunlarla ilgili bilgi vereceğiz.
+
+21
+00:07:02,163 --> 00:07:27,823
+Ürün stok takip sistemi nedir? Bu sistem kendi başına çalışan ve kullanıcı dostu arayüzüyle işletmenin ihtiyacına cevap verecek ticari bir program. Herhangi bir yazılımın alt ürünü değil, piyasada kullanılan diğer ticari programların alternatif olarak tasarlanmıştır. Küçük ve orta büyüklük işletmelerin, ürün stok yönetimi sisteminin tüm bileşenlerce eş zamanlı sağlanmasını hedefliyor sistemimiz.
+
+22
+00:07:28,564 --> 00:07:42,704
+Sistemin Yuskiz diagramına bakarsak iki tane kullanıcı tefi var. Birincisi admin tipli kullanıcı, ikincisi standart kullanıcı. Standart kullanıcı bütün yetkilere sahip değil. Hızlı olsun diye bütün şeyleri anlatmayacağım şimdi ama.
+
+23
+00:07:44,468 --> 00:07:57,968
+Belli yetkilere sahip standart kullanıcı. Edmin kullanıcısının yetkileri daha geniş. Örneğin sisteme ürün ekleyip ürün silme gibi yetkiler standart kullanıcı da yok ama admin kullanıcı bu haklara sahip.
+
+24
+00:07:59,427 --> 00:08:02,408
+Ara yüzden birkaç ekran görüntüsü ekledik.
+
+25
+00:08:03,572 --> 00:08:23,372
+Bir kategori listemiz var, bir product listemiz var. Bu product listesinden, burada birkaç tane ekran görüntüsü var bu arada. Bu product listesinden herhangi bir ürünü sepete ekleyip, yani add diyeyim, çarta ekleyip, oradan işte sepet detayını yukarıdaki şuradan, sepet detayını görebiliyoruz.
+
+26
+00:08:23,372 --> 00:08:31,091
+Bu bir admin kullanıcı ekran görüntüsü, arayüzü. İşte kullanıcı ekle, kullanıcı sil, ürün ekle, ürün sil gibi.
+
+27
+00:08:31,572 --> 00:08:36,032
+Detayları var ve işte sepet detayı da bu şekilde görülmekte. Şu alttaki gibi.
+
+28
+00:08:38,072 --> 00:08:44,971
+İşte kullanıcı eklerken neye göre olacak? Ürün güncellenken vesaire hızlı olması için buraları hep böyle hızlı hızlı geçiyorum.
+
+29
+00:08:46,851 --> 00:08:48,331
+Test planına gelelim.
+
+30
+00:08:48,851 --> 00:09:00,591
+Test planında proje zamanlaması, buradaki gun chart'ın aslında görevleri proje zamanlamasını. Biz proje zamanlamasını aslında dörde böldük. SRS'i de bunun içerisine kattık.
+
+31
+00:09:02,131 --> 00:09:22,471
+Test plan dökümanımızda da bu var. Çünkü projemizin içerisindeki bir task olduğu için bunu bu şekilde ekledik ama normalde işte test hazırlık sürecinden de başlatabilirdik bunu. Test hazırlık, testin gerçekleştirilmesi, test özet raporunu hazırlanıp onaylanması altında, üç tane ana başlık altında test planı zamanlaması yapıldı.
+
+32
+00:09:24,884 --> 00:09:46,203
+Testin kapsamı, testin modülleri, fonksiyonel modüllerinden bahsettik. Kullanıcı girişi, kullanıcı ekle, kullanıcı sil, ürün kategori listeleme, bunların hedef kitlesi ve tanımları yer alıyor. Bu modüller fonksiyonel testin kapsamı içerisinde yer alıyor.
+
+33
+00:09:48,563 --> 00:10:08,263
+Risk yönetimi. Risk yönetiminde bazı riskleri burada belirtmek istedik. Birincisi, birinci risk takvim. Test planı çok uzun, çok yoğun ve çok yoğun bir zamanlamaya sahip. Testin başlaması tasarım veya geliştirme süreçinin uzaması nedeniyle ertelenirse yani
+
+34
+00:10:09,524 --> 00:10:13,524
+Test, yazılım geliştirme sürecinin en son adımı oluyor.
+
+35
+00:10:15,524 --> 00:10:17,484
+Ve bu süreçte de...
+
+36
+00:10:17,716 --> 00:10:42,216
+Tasarım sürecinde ertelemeler, Development Sıra özesindeki ertelemeler hep testin zamanının üzerine biniyor. Deadline'da hiçbir zaman değişemediği için müşteriyle çalışırken, bu çok zor bir ihtimal olduğu için bütün yük, bütün stres testin üzerinde binebiliyor. Bunu birebir yaşamış bir insan olarak da deneyimlediğim için de söyleyebiliyorum. Bütün her şey evet testli bir şekilde yapıp çıkılması gerekiyor gibi bir sonuç ortaya çıkabiliyor.
+
+37
+00:10:45,716 --> 00:10:56,776
+Yüksek ihtimalle etkisi yüksek bir risk. Bu sebeple de önlem planı olarak tüm proje ekibiyle düzenli toplantıların yapılması sağlanmalı gibi bir önlem planı düşündük ve plana yazdık.
+
+38
+00:10:57,895 --> 00:11:08,336
+Personel, kim membru olarak adlandırılan kilit konumundaki personellerin içten ayrılması veya test arasınca çalışamaz olması. Bunu zaten dersin içerisinde de bir risk olarak konuşmuştuk.
+
+39
+00:11:12,724 --> 00:11:24,944
+Risk bu, gerçekleşirse. Çünkü key member olarak anlandırılan bu personeller kilit bilgiye ve önemli bilgilere sahip oldukları için projeyle ilgili.
+
+40
+00:11:27,187 --> 00:11:50,008
+Kişilerin ayrılıyor olması veya hastalanıyor olması, ayrılması da gerekmez. Hastalanıyor ve çalışamaz hale geliyor olması proje açısından büyük bir risk haline geliyor. Bunun için de işte bilgi yedeklemesinin çalışanlar arasında sağlanması gerekiyor. Yani yedekli çalışanların backup'ı, o kişinin bir backup'ı olması gerekiyor. Hatalar, kritik hataların test ödücünün geç bir evresinde bulunması çok fazla zaman alacaktır.
+
+41
+00:11:55,187 --> 00:12:11,927
+İkinci fazla çok fazla da kritik hatanın bulunmamasını, hatta mümkünse bulunmamasını hedefleriz. Çünkü birinci fazla bu hataların hepsinin bulunup, raporlanıp ikinci fazla gelene kadar bunların regresyonunun dahi yapılmış olması gerekmektedir. İki fazla bir test koşulurken.
+
+42
+00:12:11,927 --> 00:12:22,927
+Ancak biz şayet bunu ikinci fazın sonuna doğru bulursak bir kritik hatayı bu bütün test planını etkileyecek bir duruma gelmiş demektir. Çünkü...
+
+43
+00:12:23,187 --> 00:12:46,508
+Bu sorunların fikslenmesi, düzeltilmesi, daha sonra regresyonun koşulması, onun etki ettiği alanların koşulması hep bunlar bir sürece etki edecek problemler haline gelir. O yüzden bu orta ihtimalli ve yüksek etkili bir risktir. Bu da sorunların derletilmesi, düzeltilmesi sanmak için hata yönetimi bilinim.
+
+44
+00:12:47,059 --> 00:13:12,059
+Bu şekilde bir önlem planı uyguladık. Yeni sorunlar nedeniyle gecikmiş test. Çok detaylı artık bu yeni sorun çıktı. Testin gecikmesine sebep oldu. Doğal afetler. Doğal afetlerde böyle ben ilk bunu hatta test zamanında testtir olarak çalışırken bunu yazdığımda bana garip gelmişti açıkçası. Ama gerçekten her şeyi...
+
+45
+00:13:12,692 --> 00:13:18,692
+Etrafı düşünmek gerektiğinde, doğal afetle, çalışamaz olmakta, eğer bir sor burada tutuyorsak...
+
+46
+00:13:19,183 --> 00:13:45,783
+Bu yazılımımızda ki serverda tutmamız gerekir genelde. Bu serverın o dağılafette etkilendip seldir, depremdir, etkilenip etkilenmemesi. Çünkü onlar bir şekilde ortadan kalkıyor ve proje devam ediyor, proje süreci devam ediyor bir şekilde. Bunlar da artık planlanan şeyler, risk olarak belirtilen şeyler önüne geliyor. Ve düşük ihtimalle orta etkili bir risk olarak bunu da belirttik. Kapsam.
+
+47
+00:13:46,548 --> 00:14:08,708
+Tasarımın kapsamının geliksizli analiz dokümanında tam olarak belirtilmesi gerekmektedir diyerek bunun da bir risk olduğunu belirttik. Bu orta ve ihtimalle ve orta etkili bir risk. Kapsamın net olarak tanımlanması gerekmektedir. Ancak bu süreçte etkilenecek yazılım süreç yönetimiyle de ilgili bir şey bu.
+
+48
+00:14:10,899 --> 00:14:25,960
+Herhangi bir şey varsa bunun aslında çok net test edilemeyeceğini de buraya belirtip, daha sonra çünkü bu yazılım test planı aslında onaylandığı için herkese bu koşulları aslında test ekibi olarak sunmuş oluyoruz.
+
+49
+00:14:28,467 --> 00:14:44,227
+Takım kadrosuna gelince proje ekip planlamasına yani proje müdürü, proje müdürüne bağlı test koordinatör ve geliştirme lideri ve test koordinatör ve geliştirme liderine bağlı olarak da test uzmanı ve developerlar var takım kadrosunda operasyonel planlamada.
+
+50
+00:14:45,652 --> 00:14:56,351
+Test ortamı, her test kullanıcısı için Internet Explorer 8.9, 10 ve Firefox 27.0 ile Google Chrome 32.0 ve sonraki sümle olan bir Windows ortamı olmalıdır.
+
+51
+00:14:57,192 --> 00:15:07,211
+Test kriterleri, testin çeşitli kriterleri var. Başlatılma, tamamlanma, durdurulma ve tekrar başlatılma kriterleri. Birazcık bunlardan bahsedeceğim.
+
+52
+00:15:08,371 --> 00:15:19,831
+İlgili test seviyesinde ait test durumları ve senaryoları yazılmış olmalıdır. Bu bizim test planı içerisinde yazdığımız kriterler bu arada.
+
+53
+00:15:19,831 --> 00:15:24,831
+Yazılan test durum ve senaryolarıyla ilgili ihtiyaç...
+
+54
+00:15:25,908 --> 00:15:43,728
+Sırasında izlenebilecek, izlenebilikler kurulmuş olmalıdır. Bir önceki test aşamasında testler başarıyla sona erdirilmiş olmalıdır. Az önce söylediğim faz 1-faz 2 durumundan bahsediyorum. Eğer faz 1 STVs veya Functional Integration Testi bitmediyse ikinciye başlatılamaz.
+
+55
+00:15:53,908 --> 00:16:10,048
+Test durumları ve senaryoların tamamı başarıyla sonuçlandırılmış olmalıdır. Tüm testlerde ortaya çıkan birinci, ikinci ve üçüncü derece hataların tamamı çözülmüş olmalıdır. Tüm seviye testlerdeki test faaliyetlerin tamamı raporlanmış olmalıdır.
+
+56
+00:16:12,500 --> 00:16:40,139
+Testlerin durdurulma kriterleri. Testlerde birinci derece bir hata bulunmuşsa test işlemi durdurulacaktır. Hata düzeltilmeden teste devam edilmeyecektir. Testlerde ikinci derece hata oranı %80'nin üstünde ise, yani artık test edilemez durumda bir yazılım varsa elimizde, test edilen sistemi işlevsel etomak test edilemiyorsa testler durdurulacaktır. Proje yöneticisi ve test yöneticisi istediği durumlarda testleri durdurma etkisine sahiptir.
+
+57
+00:16:40,500 --> 00:16:59,559
+Böyle bir şart koşuyoruz test planında aslında. Böyle bir koşul sunuyoruz. Testlerin tekrar başlatılma kriterleri, bulunan birinci ve ikinci derece hatalar düzeltildikten sonra test faaliyetine kalınan yerden devam edilecektir. Proje yöneticisi veya test yöneticisi tarafından durdurulan testler ancak kendi kararlılığı ile devam ettirilebilir.
+
+58
+00:17:08,564 --> 00:17:15,224
+Test raporlama, günlük raporlar, haftalık raporlar, bu raporlarda nelerin olacağı.
+
+59
+00:17:15,224 --> 00:17:30,192
+Örneğin test hazırlık yürütme durumunda tamamlandı, PES, FAIL'di raporlamak için veya açık herhangi bir hata kartı varsa veya kapandıysa da o gün herhangi bir hata kartı, günlük veya haftalık olarak isteğe göre bu raporlama...
+
+60
+00:17:30,192 --> 00:17:48,592
+türleri kullanılabilir diye pes planımızda belirttik. Hata düzeyleri, hata düzeyleri bundan çok daha fazla olabilir malum ama biz bu projeyle ilgili çok büyük kapsamlı bir proje olmadığı için üç tane hata düzeyi belirledik. Bir yani kritik, yüksek ve minor hatalar işte suggestion'da bir hata düzeyi olarak.
+
+61
+00:17:50,195 --> 00:18:01,675
+Bu sorunlarla sunabiliriz veya çok daha farklı, daha düşük gibi seviyelerde ekleyebiliriz. Ama biz bu üç hata düzeyini uygun gördük projemiz için ve bunu uyguladık.
+
+62
+00:18:03,508 --> 00:18:21,608
+Test süreci içinse, test süreci burada kısa bir aslında testin yapılması raporla hata süreci de yeriz aslında buna. Test uzmanı bir hatayı raporladığında test koordinatörü hatayı kontrol eder ve onaylar veya onaylamaz test uzmanına geri gönderir. Orada bir okak eksikliği yapmışız.
+
+63
+00:18:22,088 --> 00:18:31,508
+Geliştirme lideri hatayı ilgili geliştiriciye atar, geliştirici hatayı düzeltir, test uzmanı hatayı tekrar test eder ve reglasyon testi yapar.
+
+64
+00:18:31,508 --> 00:18:47,688
+Test başarılıysa hata kapanır ve süreç biter. Ama test başarılı değilse bu süreç tekrar geliştirme liderinin hatına gönderilir ve geliştirme lideri tekrar ilgili geliştiriciye hatayı gönderir.
+
+65
+00:18:49,688 --> 00:18:51,887
+Fonksiyonel entegrasyon testi.
+
+66
+00:18:53,347 --> 00:18:56,327
+Tek tek bütün yaptığımız testleri anlatmayacağız.
+
+67
+00:18:58,003 --> 00:19:07,063
+Birebir anlatmayacağız ama ben bütün hepsini içeren bir use case'i en azından test case'ini de göstermiş olmak istedik. Öyle düşündük.
+
+68
+00:19:09,268 --> 00:19:33,347
+Şimdi sisteme ürün ekleme modülüyle ilgili bir test case bu. Test case'imizin içerisinde gördüğümüz field'ler var. Burada önemli olan ön koşullar, test adımları, bekletilen sonuç aslında hepsi önemli. Hangi test fazında bunun koşulduğu örneğin ikinci fazda fonksiyonel entegrasyon testi, faz 2 diye bunu belirtmemiz gerekiyor ki herhangi bir karışıklık olmasın.
+
+69
+00:19:37,268 --> 00:19:59,268
+Otomasyon mu? Bunları belirtmemiz gerekiyor. Testin oluşturma tarihi ve test tarihi, en sonunda testin yapıldığı tarihi belirtiyoruz. Burada önemli olan test sonucunda PES bir değil mi? Bunlar belirtiliyor. Herhangi bir remark ekstra not varsa bunlar ekleniyor. Ama fail olduğunda mutlaka remark eklenip yani...
+
+70
+00:20:00,000 --> 00:20:15,319
+Karşımızdaki bu daha sonra bu raporu alıp açacak kişiye neyin feyli olduğunu da açıklayabileceğimiz, daha sonra bize sorduklarında veyahut da bizim açıp bakıp ne olduğunu rahatça anlayabileceğimiz, çünkü çok yüksek test kezli durumlarda söz konusu olabiliyor, çok fazla test kezli.
+
+71
+00:20:15,319 --> 00:20:27,019
+İşte remark ekliyoruz ve kanıtlar kısmını da eğer mümkünse GIF'ini veya ekran görüntüsünü alarak kanıtları ekleyip test kezimizi bu şekilde oluşturuyoruz.
+
+72
+00:20:29,044 --> 00:20:40,224
+Biz fonksiyonel entegrasyon testi sırasında iki tane fazla uyguladık. İki fazla fonksiyonel entegrasyon testi koştuk. Buna 2 STB koştuk da diyebiliriz.
+
+73
+00:20:40,884 --> 00:20:46,944
+Fonksiyonel entegrasyon testi sırasında ilk fazla bir tane kritik hata...
+
+74
+00:20:46,943 --> 00:21:11,844
+İki tane yüksek seviyeli hatayla ve dört tane de minor hatayla karşılaştık. Ve bunları bu şekilde test raporunda da raporladık. Daha sonra fonksiyonel entegrasyon testi ikiye geçmeden önce, fazı ikiye geçmeden önce bunların regrasyonu da yapıldı tabii ki. Daha sonra temiz bir şekilde fazı ikiye geçildi ve burada üç tane minor hata bulundu ve bunlar raporlandı.
+
+75
+00:21:13,811 --> 00:21:18,091
+Şimdi buradan sonrasını [öğrenci] devralayacak, [öğrenci] anlatacak.
+
+76
+00:21:24,372 --> 00:21:29,592
+Buradan yeni ekran paylaşımını yapayım mı yoksa hocam devam edelim mi bu şekilde?
+
+77
+00:21:30,632 --> 00:21:31,932
+Devam edebilirim.
+
+78
+00:21:36,339 --> 00:21:37,279
+Geçiyorum.
+
+79
+00:21:37,279 --> 00:21:38,639
+Geçiyorum. Tamamdır.
+
+80
+00:21:38,639 --> 00:22:00,440
+Birim testinde kullandığımız test ve proje ortamından bahsetmek istiyorum öncelikle. Zaten projemiz Visual Code idesi üzerinde yazıldı. Birim testler yapılırken de JET ve Enzym kütüphaneleri, yani frameworkleri kullanıldı. Bir sonraki slide'da.
+
+81
+00:22:02,132 --> 00:22:10,831
+Zaten projemiz, tabii ki test adına konuşulmadı ama React.js ile geliştirilen bir frontend projesi.
+
+82
+00:22:11,351 --> 00:22:19,891
+Ve burada bilim testi için kullandığımız, Jest ise Facebook tarafından geliştirilmiş olan bir JavaScript test framework'ü.
+
+83
+00:22:19,891 --> 00:22:25,751
+Daha çok React, Angular, Vue gibi frontend kütüphaneleri.
+
+84
+00:22:26,256 --> 00:22:39,756
+Üzerinde çalışıyor. Test Runner ve Assertion Library özelliklerini bize sunuyor. Enzim ise Airbnb tarafından sadece React.js için oluşturulmuş bir özellik.
+
+85
+00:22:54,256 --> 00:22:59,916
+Enzim Kütüphanesini kullandık. Bunun bir takım özellikleri var.
+
+86
+00:23:02,548 --> 00:23:25,548
+Mount gibi özellikleriyle bizim şeyimizi sağlıyor. Unit testi diğer komponentler bazında daha izole bir şekilde gerçeklememizi sağlıyor. Fakat Enzym Kütüphanesi tabii ki tek başına test işlemini gerçekleştiremiyor. Bir test runner'a ihtiyaç duyuyor. Zaten bu sebeple de Jest'i kullanıyoruz o durumda.
+
+87
+00:23:30,548 --> 00:23:45,867
+Aslında her bir test case durumunda da belirttiğimiz gibi gerekli özellikleri her bir bağımsız modül şeklinde kodladık. Örneğin ad product ya da kullanıcı ekleme ya da sepete ürün ekleme gibi.
+
+88
+00:23:48,403 --> 00:24:12,624
+Kodlanan komponentin hemen altında da bilim testi çalıştırıldı. Sağ tarafta da bunun bir çıktı ekran görüntüsünü görüyoruz. Orada da 9 farklı modül için 9 farklı test dosyası ve 31 de test case'i koşulmuş ve bunlardan hepsi başarıyla geçmiş olarak görünüyor.
+
+89
+00:24:13,587 --> 00:24:24,567
+Bir sonraki slide. Birim test sonrasında ve bu fonksiyonel entegrasyon testlerimizin en sonunda da kullanıcı kabul testini yaptık.
+
+90
+00:24:24,928 --> 00:24:40,567
+Kullanıcı kabul testinde, daha çok tabii ki bu fonksiyonel entegrasyon testinde çözülmemiş bir hata döndürmediğimiz için ve zaten kullanıcı kabul testi de tamamen uygulamanın...
+
+91
+00:24:40,720 --> 00:24:56,539
+Arayüzünün test edilmesi ve kullanıcıların herhangi bir hatayla karşılaşmaması ile sonuçlandığı için burada başarılı olmayan bir test keyfimiz olmadı. Zaten toplamda 29 keyf üzerinden bu durumu gerçekleştirdik.
+
+92
+00:25:00,039 --> 00:25:05,680
+İzleyiz başarıyla sonuçlandı. Bizi dinlediğiniz için teşekkür ederiz.
+
+93
+00:25:07,827 --> 00:25:21,487
+Evet, teşekkürler. Bir şey paylaşayım mı? Geçen hafta böyle bir herhangi bir test, unit test üzerinden bir kod üzerinden de çalıştırmıştı arkadaşlar. Onu paylaşmama gerek var mı?
+
+94
+00:25:24,051 --> 00:25:42,751
+Şimdi ben sizin sürenizi şey tuttum. Bu özellikle test planınız ve fonksiyonel testleriniz. [kişisel bilgi]
+
+95
+00:25:44,339 --> 00:26:11,179
+Evet hocam. O yüzden format olarak daha profesyonel hayata uygun bir formatta hazırlamışsınız. Benim verdiğim formatın dışında o yüzden kesmek istemedim. Gerçek hayattaki bir formatı da arkadaşlarınız da takip etsin diye. Böylece zamanımız biraz geçti.
+
+96
+00:26:11,680 --> 00:26:30,980
+İsterseniz diğer arkadaşlarınız anlatsın. Sonra vakit kalırsa veya gerek olursa ama gerek de yok. Yapmışsınız bunları. Siz de bu tarafında daha çok zamanınızı kullandınız. Gerek yok. Teşekkürler. Arkadaşlarınızın sorusu var mı?
+
+97
+00:26:36,627 --> 00:26:43,987
+Tamamdır. O zaman bir sonraki sunum olarak [öğrenci]'i verebiliriz.
+
+98
+00:26:45,607 --> 00:26:46,447
+Günaydın hocam.
+
+99
+00:26:47,247 --> 00:26:47,867
+Günaydın.
+
+100
+00:26:48,507 --> 00:26:50,327
+Ben ekran paylaşımını durduruyorum.
+
+101
+00:26:50,587 --> 00:26:51,967
+Tamam, teşekkürler.
+
+102
+00:26:52,227 --> 00:26:53,287
+Teşekkür ederiz hocam.
+
+103
+00:26:54,287 --> 00:26:55,727
+Ben de paylaşıyorum şimdi.
+
+104
+00:27:30,132 --> 00:27:31,652
+Öncelikle güven herkese.
+
+105
+00:27:32,711 --> 00:27:33,132
+[öğrenci].
+
+106
+00:27:33,832 --> 00:27:48,771
+Hemen projesinin test raporunu burada sunacağım. Öncelikle bu proje aslında kişisel olarak geliştirdiğim bir projeydi ve development olarak da devam edilmesi gereken yerler arasında.
+
+107
+00:27:48,771 --> 00:27:53,791
+SRS dokümanında belirtilen ama implementasyonu yapılmamış kısımlar mevcut.
+
+108
+00:27:56,019 --> 00:28:01,019
+Kapsamını da aslında implementasyonu yapılan taraflar için gerçekleştirdim.
+
+109
+00:28:03,019 --> 00:28:16,460
+Neler yapılacağımıza bakacak olursak, test edecek yapıların belirlenmesini, test saniye olan oluşturması, testlerin koşulması ve sonuçların kaydedilmesi şeklinde ilerleyecek.
+
+110
+00:28:17,460 --> 00:28:20,019
+Test edecek yapıların belirlenmesi aslında...
+
+111
+00:28:20,948 --> 00:28:28,948
+Böyle bir adımın şu an için eklenmemin sebebi, dediğim gibi orada geliştirme aşamasında daha birçok fonksiyon olması gerekiyordu login aşamaları.
+
+112
+00:28:29,948 --> 00:28:39,948
+Buradaki bu test kapsamında elde doldurulan bir optik formun, OSC ile okunup doğru veya yanlış kısımlarını da test edilmesi gerekiyor.
+
+113
+00:28:41,236 --> 00:28:55,635
+Şu an için sadece hangi kısımlar implement edildi ve neler test edecek onlardan bahsedeceğim. Test ettiğim buradaki keyiflerde de birim testlerini, entegrasyon ve son kullanıcı testlerini gerçekleştirdim.
+
+114
+00:28:56,372 --> 00:29:12,372
+İlk olarak testlerden oluşturması, bu da birim testlerinde neler yaptım onlardan bahsedeyim. Bu MMPI aslında psikolojik enverter çıkartan bir test. Şu anda hastanelerde vesaire de kullanılıyor ama çok fazla...
+
+115
+00:29:12,756 --> 00:29:27,216
+Dijital tarafta dokümentasyonu olmadığı için ve bu da işlerinde çok fazla normal paper olarak ilerlediği için bu testi dijital ortama taşımak istedim aslında.
+
+116
+00:29:28,376 --> 00:29:33,756
+Bu MMPI'de da 566 tane soru mevcut ve bu soruların yanıtlarına göre de...
+
+117
+00:29:34,451 --> 00:29:56,092
+Kitapçıkta belirtilen kurallar çerçevesinde burada K-plus values, raw values ve T-values şeklinde değerler üretiliyor. Daha sonra tabii bunların yorumlanması da var. Çünkü tek başına bu değerler bir şey ifade etmiyor. Buradaki işte L, FK değerleri, diğer değerler ne anlama geliyor diye tekrardan kitapçıkta o yönergeleri okuyarak aslında bir sonuç hertet ediyor.
+
+118
+00:30:00,000 --> 00:30:08,000
+Bu soru olarak, sosyo kültürel olarak, içine kapanıkları vs. sonuçlar verebiliyor.
+
+119
+00:30:08,000 --> 00:30:16,000
+Bilim testinde de aslında bu 566 soruda ne sorular verdim ve ne yanıtlar bekledim.
+
+120
+00:30:16,000 --> 00:30:19,980
+Burada değerlerim ne olmalıdır testleri yapıldı.
+
+121
+00:30:20,211 --> 00:30:44,352
+Buradan mesela o 566 soruyu da örnek olarak gösterebilirim. Çok büyük olduğu için ekrana sığdıramadım hiçbir türlü. Burada çıktılarını en azından göstermek istedim. Mesela orada ilk tablodaki P4, PD4K değeri verilen input'a göre 90 olması gerekiyordu. Buradaki unit testte de şu anda JSON data içerisinden.
+
+122
+00:30:44,948 --> 00:30:51,948
+Bu derleri okuyup benim buradaki GetEvolution fonksiyonum vardı. Onun yanıtındaki tablonun altıncı...
+
+123
+00:30:52,607 --> 00:31:04,367
+7. değerine denk geliyor aslında bu index. Orada 90 değerinin bulmasını bekliyordum. Burada asret yükülde. O değerinde 90 olup olmadığına göre doğru veya yanlış şeklinde döndürüyor.
+
+124
+00:31:04,367 --> 00:31:14,207
+Benzer şekilde burada CS içerisinde tekrardan bir cinsiyet değeri de giriliyor. Bu 0'e 1, male female şeklinde.
+
+125
+00:31:14,708 --> 00:31:23,108
+Bu testte kullandığım Jason'a 1 gönderdiğim için ben de 1 olmasını 1 olacak şekilde yaptım.
+
+126
+00:31:23,108 --> 00:31:39,908
+Buradaki bu tek tek yapmamın sebebi her değer için aslında kitapçıktan bakarak ilerlediğim için buradaki değerlerin gerçekten beklenen değerler bulup olmadığını, bir yerde bir yanlışlık bulup olmadığını tespit etmek, görmek amacıyla hazırlanın.
+
+127
+00:31:41,299 --> 00:31:50,000
+Her bir soru değerinin buradaki bu değerlere katma değeri farklı olduğu için bunların tek tek kontrol edilmesi gerekiyor.
+
+128
+00:31:50,000 --> 00:32:03,060
+Bu şekilde dört tane örnek olarak koydum. Bu arada bu projede Python ile implement ediyorum. Burada test case'ini yazmak için de Django'nun...
+
+129
+00:32:03,284 --> 00:32:14,644
+Framework'ünü kullandım. Orada Django'nun test, Unit Test ile ilgili bir tane kütüphanesi var. Onu import ettiğimiz takdirde. Bu şekilde basitçe Unit Testler yazabiliyoruz.
+
+130
+00:32:15,204 --> 00:32:22,264
+Burada da benim konuştuğum testlerin sonuçlarını gösteriyor.
+
+131
+00:32:24,115 --> 00:32:29,755
+Beni affedersiniz, bölüyorum ama slide'ı değiştirdiniz mi?
+
+132
+00:32:31,195 --> 00:32:31,836
+Hangisinde?
+
+133
+00:32:31,955 --> 00:32:35,635
+Aynı slide'da kaldı.
+
+134
+00:32:36,255 --> 00:32:37,355
+Şu an hangisi görünüyor?
+
+135
+00:32:38,395 --> 00:32:40,615
+İlk slide'ı görünüyor sadece.
+
+136
+00:32:40,615 --> 00:32:44,035
+Bir dakika.
+
+137
+00:32:45,076 --> 00:32:48,636
+Şimdi test senaryoların oluşturulması sayfası geldi.
+
+138
+00:32:48,916 --> 00:32:53,256
+Öyle mi? O zaman üç tane slide geçmiştim de ben görmedim mi hiçbiri?
+
+139
+00:32:54,936 --> 00:32:55,176
+Yok.
+
+140
+00:32:55,176 --> 00:33:00,836
+Evet, aynı slide'da kaldı. Ben de rapordan takip ettiğim için atladım.
+
+141
+00:33:01,587 --> 00:33:07,127
+Şu anda görünüyor mi? Ajanda. Evet, evet görünüyor. Bu şekilde ilerlesek.
+
+142
+00:33:07,127 --> 00:33:19,247
+O bir türlü. Belki kodu gösteririm diye ben Linux'ta çalışıyordum da o yüzden oradan paylaştım. Belki onunla ilgili bir Zoom tarafında bir şey var sanırım. İlerlediği görülmüyor galiba.
+
+143
+00:33:21,332 --> 00:33:39,731
+Tam bahsetmiştim. Şunu gösteriyordum aslında burada testten oluşturması ve birim testteninde neleri kontrol ediyordum. Buradaki kod parçalıklarını koydum burada. Veli'den sorulara karşılık gelen ve beklenen işte PD4K değerinin nasıl kontrol edileceği ile ilgili örnekler ve...
+
+144
+00:33:40,596 --> 00:34:08,596
+Birim testlerini buraya ekledim. İşte cinsiyettir, boş soru kaç tane, iki tane göndermişim, iki tane bekliyorum şeklinde. Bunları şu şekilde örnek kod parçacı tekrardan koydum. Python Django Framework'ünde yazılan testgezörde şu şekilde yaptığınız zaman test klasörü içerisinde yalan tüm testler koşuluyor. Ve buradaki tabii hepsi sağlandığı için şu da run 6 tane test koşulmuş.
+
+145
+00:34:08,596 --> 00:34:17,836
+ve hepsi okey dönüyor. Yanlış olduğu durumda da orada hangi hatanın hangi değere karşı geldiği şekilde belirtiliyor.
+
+146
+00:34:20,476 --> 00:34:31,936
+Entegrasyon testi tarafında bu bir web sitesi olacağı için burada hem bir web arayüzü var ve buradaki backend tarafında da bir web servisi çalışıyor.
+
+147
+00:34:32,403 --> 00:34:42,403
+Burada web servis tabi kullanıcıdan gelecek JSON'ın karşılanması ve bahsedilip ilgili fonksiyonlara gönderilmesi işlemini gerçekleştiriyor.
+
+148
+00:34:42,403 --> 00:34:46,403
+Yani unit testinde aslında benim fonksiyonlarım doğru çalışıyor mu diye test ettim.
+
+149
+00:34:46,403 --> 00:34:53,403
+Entegrasyon testinde çalıştığım web servisi kullanıcıdan gelen verileri doğru işliyor mu?
+
+150
+00:34:53,403 --> 00:34:57,403
+Ve içerideki fonksiyonları da bu değerler doğru şekilde gönderiyor mu?
+
+151
+00:34:57,403 --> 00:35:00,403
+Ve kullanıcıya tekrardan respons olarak doğru veriyor.
+
+152
+00:35:00,403 --> 00:35:24,003
+Bu şekilde üretiyor mu? Burada gördüğünüz gibi şurada Question and Answer from User. Bu kullanıcıdan gelecek olan sorular mevcut. Çok uzun olduğu için bir kısmı görünüyor. Burada post datasıyla bunu gönderdim. Ve respons'ta da metrik başlığının olmasını bittiyorum. L değeri 48.4 bekliyorum. Şeklinde aşağı doğru. Devam ediyor bu değerler.
+
+153
+00:35:28,275 --> 00:35:54,435
+Kullanarak, farklı soruların yanıtlarını göndererek farklı değerler bekliyorum. Bu sefer bu değerler de doğru mu gelmiş diye kontrol ediyorum. Burada da tekrar ünit testte benzer şekilde yine test geyzerim koş dediğimiz takdirde bu post isteğini kendisi yapıp yanıtları da kontrol ediyor içerisindeki yanıtları arayarak. Burada da ikisi de başarılı olduğu görünüyor.
+
+154
+00:35:55,188 --> 00:36:09,807
+Son taraf, son adım olarak da bu son kullanıcı testi aslında uygulamanın arayüzü şöyle bir şeydi. Ben siteyi ilk ziyaret ettiğimde böyle bir sayfa karşılıyor ve şurada aşağı doğru akordiyen şeklinde övüsü almış 6 tane soru mevcut.
+
+155
+00:36:09,807 --> 00:36:19,807
+Bunu da tabii sunucudan çekiyor. Bu sorular hard call değil. Yine sunucu tarafında tanımlanmış. Jason'ı farsetip bu şekilde buraya yazılıyor.
+
+156
+00:36:20,947 --> 00:36:31,608
+Tamamlandıktan sonra Complete Quiz denildiği zaman buradaki bu form isteği az önce İntegrasyon Testi'ndeki ve badasında JSON olan data'yı gönderiyor web servise.
+
+157
+00:36:31,907 --> 00:36:40,228
+Web serviste de içerisinde implementer eden fonksiyonlardan geçiyor ve tekrardan beklenen yanıtlar burada dönüyor.
+
+158
+00:36:40,228 --> 00:36:47,547
+Burada tablo içindeki değerler ve şuradaki grafiklerin doğru çıkıp çıkmadığını aslında kontrol ettim.
+
+159
+00:36:49,268 --> 00:37:14,748
+Benim göstereceğim bu kadar. Bir önceki sunuma nazaran birazcık zayıf geldi kendimce de. Test en azından projede anlamda hoş proje olduğu için ben de yaptığım testleri bu şekilde anlatmış olayım dedim. Bu şekilde hocam bu kadardı.
+
+160
+00:37:14,748 --> 00:37:16,688
+Evet, teşekkürler.
+
+161
+00:37:17,556 --> 00:37:20,735
+Sorunuz var mı arkadaşınıza?
+
+162
+00:37:24,576 --> 00:37:26,735
+Tamam [öğrenci], teşekkürler.
+
+163
+00:37:26,956 --> 00:37:28,476
+Ben teşekkür ederim hocam, sağ olun.
+
+164
+00:37:30,876 --> 00:37:36,155
+Şimdi sıraya göre [öğrenci]'a söz verecektik. [öğrenci] hazır mısın?
+
+165
+00:37:36,851 --> 00:37:54,851
+Evet hocam, benimki biraz farklı çünkü ben SLS yaptıktan sonra, fark etmediğim, üzerinde bir test yapmalıyım. Ben buraya geldikten sonra her şey teslim ettim.
+
+166
+00:37:55,635 --> 00:38:01,295
+Neşe, Bülümle Kalp Dilleri, E'de kullanıcı Bülümle Kalp Dilleri.
+
+167
+00:38:01,515 --> 00:38:06,375
+[öğrenci] sıralamada, [öğrenci]'tan sonra seni yazmışız geçen hafta.
+
+168
+00:38:06,975 --> 00:38:14,175
+Evet, evet. Biliyorum hocam. Benim sunum biraz farklı, genel olarak anlatıyorum.
+
+169
+00:38:14,195 --> 00:38:16,215
+Tamam, tamam. Seni dinliyoruz.
+
+170
+00:38:17,055 --> 00:38:17,815
+Tamam hocam.
+
+171
+00:38:37,940 --> 00:38:39,480
+Evet, devam edebilirsin.
+
+172
+00:38:40,319 --> 00:38:41,119
+Tamam hocam.
+
+173
+00:38:45,119 --> 00:38:50,659
+About this presentation, talk about web application test.
+
+174
+00:38:51,476 --> 00:39:17,867
+Ben, ben
+
+175
+00:39:17,940 --> 00:39:31,940
+Bu web-application runs on any device that can access the internet. It's like a desktop, computers, tablets, and mobile phones.
+
+176
+00:39:31,940 --> 00:39:44,940
+There are a lot of web-applications that are being developed every day, so it's need to test it to...
+
+177
+00:40:12,724 --> 00:40:29,760
+Bu, bu
+
+178
+00:40:29,760 --> 00:40:53,552
+Bu web
+
+179
+00:40:53,552 --> 00:40:59,932
+Üniversitesi,
+
+180
+00:40:59,932 --> 00:41:02,552
+ve
+
+181
+00:41:12,340 --> 00:41:24,340
+Bu web site'in birleştirilmesi, sistem ve sistem ve kompilersi ile eficiente ve satış birleştirilmesi gerektiğini veriyor.
+
+182
+00:41:25,200 --> 00:41:29,440
+Faktional testi, bir tür bir black box testi.
+
+183
+00:41:30,440 --> 00:41:37,119
+Mara, uygulamandan örnekler verebilecek misin bunlarla ilişkili?
+
+184
+00:41:37,876 --> 00:41:58,876
+Bu, Hücağım, ben de yapmadım. Çünkü ben de söyledim. Her yerine her yerine geldim. Bu yüzden genelde konuşuyorum.
+
+185
+00:41:58,876 --> 00:42:03,532
+Evet, evet. Uygulaman neydi senin?
+
+186
+00:42:04,596 --> 00:42:06,976
+Ve bu uygulaması ne konudaydı?
+
+187
+00:42:07,696 --> 00:42:25,476
+Bu konuda, şey, projecet, projecet, projecet, projecet, et cetera.
+
+188
+00:42:25,476 --> 00:42:28,436
+So we made a data set for it.
+
+189
+00:42:28,980 --> 00:42:35,980
+ve
+
+190
+00:42:44,211 --> 00:42:57,911
+ve bu projelerin,
+
+191
+00:42:57,911 --> 00:42:59,911
+bu projelerin,
+
+192
+00:43:02,900 --> 00:43:28,460
+Bu projeye nasıl bir hedefi?
+
+193
+00:43:28,596 --> 00:43:39,315
+Bütün bu teoride bildiğimiz testleri yani kısıtlı ölçülerde bulamamız.
+
+194
+00:43:39,315 --> 00:43:42,255
+Ben de bunu anlamadım.
+
+195
+00:43:55,443 --> 00:43:57,124
+Sevinmiş galiba.
+
+196
+00:44:19,155 --> 00:44:21,155
+Hocam sesiniz gelmiyor bu arada.
+
+197
+00:44:21,155 --> 00:44:23,155
+Hocam yok mu?
+
+198
+00:44:23,155 --> 00:44:28,748
+Şu an slide'ları biz görüyoruz ama galiba hocanın sesi.
+
+199
+00:44:35,539 --> 00:44:36,159
+Bu yüzden işte.
+
+200
+00:45:48,436 --> 00:45:49,836
+Devam edebilirsiniz.
+
+201
+00:45:50,736 --> 00:45:51,776
+Tamam hocam.
+
+202
+00:45:53,276 --> 00:45:57,816
+Siz en son ne söylediniz? Hocam tam olarak anlamadım.
+
+203
+00:46:00,296 --> 00:46:01,816
+Özetleyerek anlat.
+
+204
+00:46:20,724 --> 00:46:22,724
+Faktur-e-testingi çalışıyor.
+
+205
+00:46:22,724 --> 00:46:25,724
+Öncelikle, bu şekilde,
+
+206
+00:46:25,724 --> 00:46:37,724
+ve bu şekilde,
+
+207
+00:46:37,724 --> 00:46:47,724
+bu şekilde,
+
+208
+00:46:48,532 --> 00:46:58,172
+Bu, KUETS'in Profesionali,
+
+209
+00:46:58,172 --> 00:47:03,771
+ve SELINIUM'in Faktionali,
+
+210
+00:47:03,771 --> 00:47:09,092
+SELINIUM'in Portable Framework,
+
+211
+00:47:16,115 --> 00:48:01,836
+Bu, bu
+
+212
+00:48:01,940 --> 00:48:10,940
+or findable, acceptable and usable, in son desirable.
+
+213
+00:48:10,940 --> 00:48:17,940
+So, completely testing is ensure that the tools
+
+214
+00:48:17,940 --> 00:48:22,940
+can display correctly across the different devices.
+
+215
+00:48:22,940 --> 00:48:24,940
+So, the...
+
+216
+00:48:25,364 --> 00:48:50,411
+Bu, bu
+
+217
+00:49:16,436 --> 00:49:33,036
+Bu tarifte testi,
+
+218
+00:49:33,036 --> 00:49:33,936
+Sponsor,
+
+219
+00:49:33,936 --> 00:49:35,936
+Stabilit,
+
+220
+00:49:35,936 --> 00:49:37,436
+Reliability,
+
+221
+00:49:37,436 --> 00:49:38,236
+Spabilit,
+
+222
+00:49:38,236 --> 00:49:40,236
+Andresource usage
+
+223
+00:49:40,236 --> 00:49:42,336
+Of software application.
+
+224
+00:49:42,612 --> 00:50:00,000
+Bu nedenle, bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işçilerin de bu işç
+
+225
+00:50:00,000 --> 00:50:07,179
+There are techniques that are used in performance testing, which are log testing.
+
+226
+00:50:07,179 --> 00:50:08,719
+Bunları geçirebilirsin [öğrenci].
+
+227
+00:50:09,280 --> 00:50:10,099
+Tamam hocam.
+
+228
+00:50:10,280 --> 00:50:19,260
+Database testing is also part of functional testing, which includes performing data availability.
+
+229
+00:50:19,260 --> 00:50:21,000
+Uygulayabilirsin.
+
+230
+00:50:22,460 --> 00:50:23,219
+Tamam.
+
+231
+00:50:23,775 --> 00:50:31,935
+İntafesest testing veripiyle, eğer birbirine ilişki verilir, bu iki farklı konuyu örneğe verilir.
+
+232
+00:50:31,935 --> 00:50:38,215
+Ve ve last testi, testi en a product,
+
+233
+00:50:38,215 --> 00:50:43,096
+ve bu birçok konuyu örneğe verilir.
+
+234
+00:50:43,096 --> 00:50:47,096
+Açık birçok konuyu örneğe verilir.
+
+235
+00:50:48,083 --> 00:51:12,083
+Bu testlerden herhangi birisine uygun...
+
+236
+00:51:25,844 --> 00:51:42,823
+Uygulamana bunlardan herhangi birini uygulayabildin mi?
+
+237
+00:51:42,823 --> 00:51:52,823
+Evet hocam ama bende değil şu anda. Çünkü ben oradan ayrıldıktan sonra her şeyi...
+
+238
+00:51:53,012 --> 00:51:57,512
+Teslim ettim. Yani ona bana paylaşamam. Özür dilerim.
+
+239
+00:52:00,251 --> 00:52:02,512
+Evet, [öğrenci] devam edebilirsin o zaman.
+
+240
+00:52:10,003 --> 00:52:13,844
+Bir dakika, [öğrenci] sesle bir problem mi var, bana mı gelmiyor?
+
+241
+00:52:14,364 --> 00:52:15,364
+Şimdi geliyor mu hocam?
+
+242
+00:52:15,603 --> 00:52:19,204
+Geliyor, evet. Devam edebilirsin.
+
+243
+00:52:19,623 --> 00:52:24,403
+Tamamdır, ben de biraz farklı yaptım. Ben biraz daha aslında bizim kullandığımız tarzda yaptım.
+
+244
+00:52:24,403 --> 00:52:29,364
+Gerek şu anki çalışma ortamında gerek daha önce başka projelerde yaptığım gibi.
+
+245
+00:52:31,204 --> 00:52:33,164
+Screen share edeyim, oradan devam edelim.
+
+246
+00:52:33,583 --> 00:52:34,704
+Aslında daha basit olacak.
+
+247
+00:52:37,427 --> 00:52:38,407
+Geldim [öğrenci].
+
+248
+00:52:42,132 --> 00:52:42,931
+Evet, geldim.
+
+249
+00:52:43,831 --> 00:52:45,751
+Tensin kapalıymış, geldim.
+
+250
+00:52:47,172 --> 00:52:48,871
+Şunu sarkı çoğumunla alayım.
+
+251
+00:52:50,231 --> 00:52:53,911
+Daha böyle bizim kullandığımız şekilde yaptım.
+
+252
+00:52:54,751 --> 00:52:58,172
+Öncelikle giriş olaraktan bir online appointment sistemi bu yazılım.
+
+253
+00:52:58,391 --> 00:53:02,591
+Doktor muayeneleri veya herhangi bir randevu sistemle çalışılabilecek şekilde hazırlanmıştır.
+
+254
+00:53:03,351 --> 00:53:06,951
+Örnek test keser için psikoterapi merkezi olsun dedik.
+
+255
+00:53:08,820 --> 00:53:17,500
+Doküman hedef kitlesi, yazılım geliştiriciler, proje yöneticileri, test geliştiriciler, test uzmanları ve kullanıcılar olacak şekilde dikkat alınabilir.
+
+256
+00:53:18,804 --> 00:53:37,463
+Kapsam ve planlama. Dokümanın kaplaması sadece ilk testing cycle'ını kapsamaktadır. Ürünün life cycle'ında düzgün çalışması için belli aralıklarda bu testlerin tekrar edilmesi gerekmektedir. Aralık test yapılması hem bug ve fault'ların önüne geçecektir. Dokümanın içerisinde hem white box hem de white box testleri bulunmaktadır.
+
+257
+00:53:37,923 --> 00:53:46,564
+Şunu not düşeyim. Burada biz daha çok şöyle yapıyoruz. Bizim bir development ekibimiz, analistler ve developer'lar olaraktan biz ön bir testleri yapıyoruz.
+
+258
+00:53:46,804 --> 00:53:54,804
+Bu tarz bir dokümanın tamamen aynısı olmasa da formatı biraz farklı. Test uzmanlarına ve test geliştiricilere veriyoruz.
+
+259
+00:53:54,804 --> 00:54:00,804
+Gerçi şu an elimizde test geliştirici şey olarak yok, development tarafında yok.
+
+260
+00:54:00,804 --> 00:54:05,804
+Ama test uzmanlarına veriyoruz. Onlar bu dokümanı baz alarak kendi testlerini yapıyorlar.
+
+261
+00:54:05,804 --> 00:54:13,548
+Gerek regression testing olsun veya functionality testing olsun eklenen bir şey de bu dokümanı baz alarak ilerliyorlar.
+
+262
+00:54:14,003 --> 00:54:40,483
+Referans materyali, SRS dokümanı. Daha doğrusu günlük hayatta kullanıldığı şekilde analize dönüp bakılıyor. Tam aslında analize olmuyor ama günlük hayatta öyle kullanılıyor. Test edecek iki önemli modül var. Biri Entity modülleri, ikincisi de UI tarafı. Entity modülleri White Box olarak test edecek, UI tarafı da Black Box olarak test edecek. Bu arada ekran değişiyor değil mi? Onu da bir emri olayım da bazen değişmiyordu.
+
+263
+00:54:41,780 --> 00:54:43,280
+Evet, evet. Değişe.
+
+264
+00:54:43,820 --> 00:55:06,180
+Tamam. Entity modülün içerisinde unit testing ile test edilecek. Birleşenlerimiz Appointment, Banner, Client, Company, Expert ya da Doctor diyebiliriz. Features, Plans ve Works olarak bu entity modülleri unit testing ile test edilecek. User Interface Browser üzerinden Black Box olarak test edilecektir. Tamamen aslında Functionality'ye yönelik bir test yapılacak.
+
+265
+00:55:07,155 --> 00:55:15,315
+Pass-fail kriterlerimiz var. Pass-fail kriterlerimiz şöyle. Unit testlerin hepsini run etmiş olması ve başarılı olması gerekmektedir.
+
+266
+00:55:15,916 --> 00:55:26,175
+Fakat minor hatalar varsa, örnek veriyorum bir tane value'nun bir yerde bir diğerinden dolayı çok küçük bir hata veriyor ama akışı bozmuyorsa bu hatalar kabul edilebilir oluyor.
+
+267
+00:55:26,175 --> 00:55:28,996
+System fail'lere sebep olan hiçbir hata kabul edilmiyor.
+
+268
+00:55:29,556 --> 00:55:43,795
+Beşten fazla unit test fail ederse, o unit testlerin bulunduğu modül tekrar kontrol edilmelidir. Tekrar bir gözden geçilmelidir diyoruz. Test kodu bu arada şey değil, hani ana kod değil. Tabii gerekirse ana koda dönebilir.
+
+269
+00:55:44,516 --> 00:55:50,275
+UI, yani madde 2'deki minör hataları da dikkat edilerek SRS'e belirtildiği şekilde çalışmalıdır.
+
+270
+00:55:54,324 --> 00:56:22,143
+Durdurma ve tekrar başlama kriterlerimiz var. Onlar da şurada testleri durmamız gerekiyor mu herhangi bir şekilde. Eğer bir ihtiyaç olsa durdurabiliyoruz. Genelde bu ihtiyaçlar şöyle oluyor. Testin yapıldığı ortamdaki sunucunun veya testi yapan kişinin bilgisayarındaki donanım sıkıntıları oluyor. Kodda acil değişiklikler yapılıyor. Developer tarafından, çünkü üst yönetimden vesaire bir yerden bir istek geliyor. Veya şöyle olabiliyor. Test ortama diplomat sorunları yaşayabiliyoruz.
+
+271
+00:56:22,324 --> 00:56:36,003
+Eksik deployment olabiliyor, hata olabiliyor ve şirket içi prosedür sıkıntıları. O da şöyle oluyor. Test sürecinde şurası yanlış yapılmış, bu prosedür uygun değil vs. gibi sıkıntılar çıkabiliyor.
+
+272
+00:56:36,603 --> 00:56:47,143
+Tabii ki de sorunlar giderinde bu tekrar başlama kriterini sağlamış oluyor. Bir örnek olarak mesela, sistem faileri. Bu buglardan bir tanesi bir sistem faileri sebep olursa bu tabii bir durdurma örneği.
+
+273
+00:56:47,827 --> 00:56:50,827
+Testi durdurup, tekrar düzeltip tekrar devam edilebiliyor.
+
+274
+00:56:51,827 --> 00:56:58,827
+Yine testleri şöyle göstereyim. Entity modülün içerisinde her bir şey için, entity için ayrı ayrı testleri var.
+
+275
+00:56:59,827 --> 00:57:10,827
+Örnek olarak mesela company testleri böyle. GetSet'leri özellikle test ediyoruz ki, doğru çalışıyor mu, veriyi alıp verebiliyor muyum diye.
+
+276
+00:57:13,204 --> 00:57:24,224
+Hepsini yazmadım. Asıl önemli olanlar sign-in sayfası, uzman veya doktor eklemesi, listesi, danışan hasta listesi, bunun eklenmesi, randevu işlemleri, takvim ve sport gibi.
+
+277
+00:57:25,492 --> 00:57:47,231
+Test planı şöyle bir plan yapıyoruz. Genelde bilim testleri her software iterasyonunda gerçekleştiriliyor. Hatta normalde bizim pro deploymentlarımız haftada bir gün oluyor. Ama büyük deploymentları ayda bire saklıyoruz. Eğer büyük deployment ise bizim regression testi bütün sistem üzerinde aslında hepsini tekrar yapıyoruz. Ama eğer ufak deployment ise sadece modül bazında test yapıyoruz.
+
+278
+00:57:48,244 --> 00:57:51,244
+Bu test planı regression test olarak da kullanılabilir.
+
+279
+00:57:51,244 --> 00:57:55,244
+UI testlerini genelde UI'de çok büyük bir değişiklik olmadığı sürece yapmıyoruz.
+
+280
+00:57:55,244 --> 00:57:59,244
+Çünkü yani UI'nin bozulması çok olası bir şey değil.
+
+281
+00:57:59,244 --> 00:58:06,220
+Eğer çok değişiklik yapılmalıysa Flow'da veya içindeki elementlerde büyük bir değişiklik yapılmalıysa.
+
+282
+00:58:06,804 --> 00:58:32,463
+Test sonuçlarına, ön test sonuçları, biz bunları normalde test uzmanlarına veriyoruz. Bakın biz yaptık, bir şey olursa haberiniz olsun aslında olması gereken bu. Çalışması gereken şekil bu. İlk başta şöyle bir şey yaptım. Ben bir tanesini çalıştırdım sadece testin ki şeyi gördüm. Ayrı bir test projek oluşturduğum için Visual Studio'da. Test projekten hakikaten çalıştığını gördüm. Tek bir projes çalıştı. Bu altın bir saniyede çalıştı.
+
+283
+00:58:32,847 --> 00:58:57,668
+Geri GAN 82'sini hiç çalıştırmadım. İkinci tekrar çalıştırdığımda 78 tanesi çalıştı ama 5 tanesi çalışmadı. Bunlardan da şöyle bir şey oldu orada. Bir tane kullanılan bir paket vardı Visual Studio'da. O paket hata verdi. Tabi bir süre bayağı onu düzeltmeye uğraştım. Şöyle bir şey yapıyor Visual Studio son versiyonunda. Test projesini build ediyor.
+
+284
+00:58:58,195 --> 00:59:06,596
+Hata veren kısmı Build at Me, Partial Build yapıyor. Bu sefer sanki siz şey gibi görüyorsunuz. Sana tamam Build etti sanıyorsunuz ama aslında etmemiş oluyor. 5 tanesini çalıştırmıyor.
+
+285
+00:59:08,135 --> 00:59:22,115
+Süresi de fena değil. Bu milisaniye bu arada. 586 milisaniye. En son çalıştırdığımda da hepsi çalıştı. 83 tanesi geçerli, pas etti. Çalışmayan kalmadı ve süresi 780 milisaniye olarak ilerledi.
+
+286
+00:59:23,572 --> 00:59:33,572
+UI tarafındaki uzman listesi, hepsini koymadım diye önemli şey, uzmanların eklenmesi vs. gibi dediğim gibi psikoterapi merkezinde kalmıştık.
+
+287
+00:59:33,572 --> 00:59:40,572
+Randevu işlerinde, randevunun eklenmesi, görüntülenmesi, şuradaki renklerin çalışması o kontrol edildi.
+
+288
+00:59:40,572 --> 00:59:45,195
+Randevunun güncellenme ve eklenme ekranı kontrol edildi.
+
+289
+00:59:46,579 --> 01:00:05,679
+Tabii bu da mesela aslında bizim en çok kullandığımız ve en depend ettiğimiz kısım burası. Çünkü şöyle bir şey oluyor. Testlerde veya devamında herhangi bir sorun çıkarsa dönüp buraya bakıyoruz. O yüzden buraya yazmamız önemli oluyor. Test atasını manuel yaratıyoruz fonksiyonelte testleri için.
+
+290
+01:00:06,420 --> 01:00:12,659
+Ui tarafı daha doğrusu, fonksiyonetiden kastım. Ui tarafı. Genelde fonksiyonetel Ui'de test edildiği için bu tarz şeylerde.
+
+291
+01:00:13,220 --> 01:00:18,260
+Unit testler için auto-generation kullanılabilir fakat da tanımlı kuralları karşılaması gerekiyor.
+
+292
+01:00:19,039 --> 01:00:21,139
+Testler için özel bir donanma ihtiyacımız yok.
+
+293
+01:00:21,940 --> 01:00:27,159
+Framework uyumuluğu test için bu proje üzerinde risk olarak görünüyor.
+
+294
+01:00:30,260 --> 01:00:39,559
+İkinci, Framework 2'de yazıldığı için ve 3.5'a kadar support ediyor ama 4 artıya geçtiğiniz zaman bu sefer compatibility sorunları çıkmaya başlıyor.
+
+295
+01:00:39,559 --> 01:00:46,760
+İki de en başıma gelen çok büyük sorunlardan biriydi bu. Çünkü Visual Studio'nun en sonunda 4.6'yı veriyor size Framework olarak.
+
+296
+01:00:46,760 --> 01:00:52,260
+Bunu 2'ye döndürmek, bütün projeleri tek baştan döndürmek hatta şöyle bir sıkıntı da oluyor.
+
+297
+01:00:52,260 --> 01:00:58,260
+Ana projeniz 2'de olsa bile testiniz 4.6'da oluyor. 4.6 çalışma, 2'ye dönünce testler çalışmıyor falan.
+
+298
+01:00:58,260 --> 01:01:05,300
+Bir değişiklik durumlar oluyor. Package'ların uyarlanması gerekebilir. Bunun için de dönüp developerlardan destek alabilirsiniz.
+
+299
+01:01:07,780 --> 01:01:16,119
+Database ile ilgili bir risk öngörülmüyor. Genel olarak kolay test için SQLite kullanılabilir ama herhangi bir database bağımlılığı yok.
+
+300
+01:01:16,820 --> 01:01:24,440
+Test uzmanları bahsettiğim gibi başında kendi test dokümanlarını yaratıyorlar. Bu dokümanı beklenen sonuçlar olarak kullanabilirler.
+
+301
+01:01:26,036 --> 01:01:38,396
+Bazı özellikler değişime tabidir. Test uzmanlar için bile elektrisim gereksin yoktur. Ve şunu da çok önemli not olarak düşünüyoruz. Çünkü bu bazen bize sıkıntı yaratıyor. Production ortamında test yapılmamalıdır.
+
+302
+01:01:38,396 --> 01:01:48,196
+Test ortamında yapılmalıdır. Çünkü bazı durumlarda test uzmanları şey diyebiliyor. Ya işte production'a geçsin biz sonra bakarız buna diyebiliyorlar. Bu yapılmamalıdır.
+
+303
+01:01:49,811 --> 01:02:05,311
+Kritik durumlar ve fail'ler için test uzmanlarının önceki anı supervisorlarını bilgilendirmeleri gerekiyor. Daha devamında da modül yazan developerla konuşmaları gerekiyor. Planlama ve takvim ihtiyaca bağlı olarak güncellenebilir.
+
+304
+01:02:16,244 --> 01:02:20,684
+Göndermelik bir madde koyuyoruz oraya. Bu kadar. Teşekkür ederim.
+
+305
+01:02:22,923 --> 01:02:24,024
+Sorusu olan var mıydı?
+
+306
+01:02:26,544 --> 01:02:28,403
+Evet, teşekkürler.
+
+307
+01:02:40,596 --> 01:02:42,596
+[öğrenci], sen sunum...
+
+308
+01:02:49,331 --> 01:02:51,291
+Hocam merhaba, sesim geliyor mu?
+
+309
+01:02:51,751 --> 01:02:52,171
+Evet.
+
+310
+01:02:53,051 --> 01:03:00,971
+Sunum yapacağım. Bir 10 dakikanızı alsam bir işim vardı yanında da 10 dakika sonra yapsam olur mu sizin için uygunsa?
+
+311
+01:03:01,451 --> 01:03:03,171
+[öğrenci] sen...
+
+312
+01:03:03,171 --> 01:03:05,311
+Bu arada ben yapabilirim hocam isterseniz.
+
+313
+01:03:06,031 --> 01:03:06,311
+Tamam.
+
+314
+01:03:09,051 --> 01:03:14,451
+Tamam, o zaman [öğrenci]'den sonra ben devralım. İşle ilgili bir şeye bakıyorum şu anda. Teşekkür ettim.
+
+315
+01:03:15,476 --> 01:03:32,176
+[öğrenci], sen tek mi yapacaktın? [kişisel bilgi] Ben şu anda tek yapacağım yani.
+
+316
+01:03:33,696 --> 01:03:36,176
+Birlikte mi hazırlıyormuş? Evet, birlikte hazırladık.
+
+317
+01:03:38,867 --> 01:03:43,867
+Nasıl olacak? O zaman o daha sonra bilgi mi verecek? Nasıl yapıldığını falan anlatan.
+
+318
+01:03:45,187 --> 01:03:50,987
+Neyse, bugün o olmaz. Başka bugün yapmak isteyen var mı sunum?
+
+319
+01:03:52,167 --> 01:03:53,268
+Ben yapabilirim hocam.
+
+320
+01:03:54,487 --> 01:03:55,127
+[öğrenci]?
+
+321
+01:03:56,627 --> 01:03:57,547
+Ben de yapabilirim.
+
+322
+01:04:00,659 --> 01:04:03,619
+Ben de yapabilirim diyen [öğrenci] mi?
+
+323
+01:04:07,731 --> 01:04:13,231
+Tamam, o zaman [öğrenci] seni dinleyelim, sonra [öğrenci]'i dinleriz, sonra da [öğrenci].
+
+324
+01:04:14,092 --> 01:04:15,272
+Tamam hocam, benimkisi zaten.
+
+325
+01:04:24,947 --> 01:04:28,967
+Şimdi hanginizi anlatıyorsunuz? [öğrenci] mı? Tamam. Evet, dinliyoruz.
+
+326
+01:04:30,787 --> 01:04:36,227
+Hocam ben aslında test planı ve test raporunu IEEE formatında hazırladığım için...
+
+327
+01:04:39,603 --> 01:04:40,983
+Sesimi duyabiliyor musunuz?
+
+328
+01:04:42,423 --> 01:04:43,123
+Duyuyoruz.
+
+329
+01:04:43,123 --> 01:04:51,203
+Sadece test raporu ve test planı IEEE formatında hazırladığım için sadece kullandığım teknolojileri anlattım burada slide'da.
+
+330
+01:04:51,699 --> 01:04:56,299
+Kullandığım test ortamı aşağıdaki şekilde. Kendi bilgisayarımda yaptım bu testleri.
+
+331
+01:04:56,299 --> 01:05:13,319
+Ben aslında diğer arkadaşlarınızla [öğrenci]'da da aynı şey vardı. Yani yaptığınız şeyler, raporunuz da var. Sunum yaparken biraz yani o tool'ları falan nasıl kullandınız onları anlatmanızı istiyorum.
+
+332
+01:05:14,879 --> 01:05:17,759
+Evet hocam, ben de biraz ona ağırlık verdim.
+
+333
+01:05:18,128 --> 01:05:26,827
+Test ettiğim kütüphane Axios diye bir kütüphane. Hem tarayıcıdan hem de Node.js üzerinden HTTP request atmanını sağlayan bir kütüphane.
+
+334
+01:05:27,588 --> 01:05:35,148
+Altta örnek bir kullanımını verdim. Daha sonra bu kütüphaneyi test edeceğim için bir tane API sağlamam gerekiyordu.
+
+335
+01:05:35,148 --> 01:05:43,668
+Çünkü ona request atacağım, haberleşeceğim. Bunun için internette bir tane mock API yani sahte bir API buldum test için.
+
+336
+01:05:44,148 --> 01:06:01,788
+Ondan sonra bu API'nin desteklediği root'lar aşağıdaki gibi. Daha sonra yaptığım testleri Notch.js üzerinden gerçekleştirdim. Jest kütüphanesini kullandım. Bu çok popüler bir kütüphane. Tamamen basitlik üzerine kurulu. Bir sürü framework'i destekliyor.
+
+337
+01:06:02,996 --> 01:06:14,096
+Bu API bir sürü kolaylık sağlıyor test sonuçlarını kontrol etmemiz için. Örneğin 2B fonksiyonu var. İki değerin denk olup olmadığını, bu çift eşittire denk geliyor.
+
+338
+01:06:14,716 --> 01:06:20,456
+2B Close To, iki değer arasındaki farkın beklenen aralıkta olup olmadığını test etmenizi sağlıyor.
+
+339
+01:06:21,476 --> 01:06:28,456
+2Equal, aslında 2B'ye benziyor ama objeler de birebir aynı olmalı. Yani 3 eşittire karşılık geliyor diyebiliriz.
+
+340
+01:06:29,108 --> 01:06:45,688
+ToStreetEqual fonksiyonu var. Burada Undefined değerlere de bakıyor. Bir değerin olup olmadığını ToEqual'da mesela bir değer yoksa diğerinde de Undefined'sa ikisini Equal kabul edebiliyor. Ama bunda bu değerlere de bakıyor.
+
+341
+01:06:46,771 --> 01:06:56,791
+To have property verilen objenin içinde bir alt başlık var mı yok mu aslında bunu kontrol ediyor. Bir alt başlığın altında da başka bir alt başlık var mı bu tarz özellikleri de var.
+
+342
+01:06:58,311 --> 01:07:02,611
+Too much snapshot bu aslında UI bileşenleri için kullanılan bir.
+
+343
+01:07:02,960 --> 01:07:24,159
+Test yöntemi. Bir bileşenin içinde bir bileşen düzgün render edilmiş mi? Bunu kontrol etmemizi sağlıyor. Aslında sağladığı daha pek çok fonksiyon var. Mesela bazı değerlerin case sent olup olmamasını bile sağlayabiliyoruz. Sadece büyük harf olarak kontrol ediyor mesela denkliğini vs.
+
+344
+01:07:26,452 --> 01:07:39,552
+To throw error, buna verdiğimiz fonksiyon, içinde yazılan fonksiyonun error throw etmesini ve bu error'un throw ettiği mesajın beklenen mesajla aynı olup olmadığını kontrol ediyor. Böyle bir fonksiyonu var.
+
+345
+01:07:40,467 --> 01:08:01,547
+JS kurulumu, aslında kurulum da çok basit. Direkt paketi projeye eklemeniz gerekiyor, yan veya NPM aracılığıyla. Daha sonra package.json'da run scriptleri var. Buraya bir tane test ya da herhangi bir isim verdiğiniz bir script ekliyorsunuz. Karşısında da JS yazmanız yeterli. Daha sonra NPM test komutunu çalıştırdığınızda testleriniz çalışıyor.
+
+346
+01:08:07,923 --> 01:08:18,603
+görebildiğiniz üzere. Aslında bu bir HTTP request kütüphanesi olduğu için işte get, post, put ve delete komutlarını test ettim. Temel olarak kullanılan şeyler bunlar.
+
+347
+01:08:19,824 --> 01:08:31,683
+Daha sonra işte o internetten kullandığım API'nin dokumentasyona bakarak da bana ne değer döneceğine oradan baktım. Daha sonra bu değeri eşit mi değil mi? Bunları test ettim.
+
+348
+01:08:32,724 --> 01:08:36,184
+Testi çalıştırmak için npm testi almamız yeterli.
+
+349
+01:08:41,619 --> 01:08:44,180
+Burada bütün testlerin geçtiğini görebiliyoruz.
+
+350
+01:08:45,299 --> 01:08:46,680
+Gelen cevaplar geçtiğinde.
+
+351
+01:08:47,960 --> 01:08:51,180
+Hocam, benim anlatacaklarım bu kadardı aslında. Çok fazla bir şey yok.
+
+352
+01:08:58,899 --> 01:08:59,939
+Duyabiliyor musunuz?
+
+353
+01:09:05,108 --> 01:09:05,688
+Evet.
+
+354
+01:09:25,140 --> 01:09:26,800
+Hocam sesiniz gelmiyor şu an ama.
+
+355
+01:09:28,979 --> 01:09:33,140
+[öğrenci], ekran paylaşımını bitirirsen şimdi [öğrenci]...
+
+356
+01:09:39,507 --> 01:09:41,067
+Kendinize de hızlı, teşekkürler.
+
+357
+01:09:41,827 --> 01:09:42,807
+Teşekkür ederiz.
+
+358
+01:10:02,996 --> 01:10:05,355
+[öğrenci] başlatabiliyor musun sunumunu?
+
+359
+01:10:06,095 --> 01:10:08,335
+Screen şu anda ekle.
+
+360
+01:10:08,335 --> 01:10:09,796
+Evet, paylaşabiliyorsun.
+
+361
+01:10:10,755 --> 01:10:12,435
+Tamam, açıyorum onu.
+
+362
+01:10:57,140 --> 01:10:58,260
+Ekran geldi herhalde.
+
+363
+01:11:00,260 --> 01:11:00,559
+Evet.
+
+364
+01:11:01,899 --> 01:11:03,220
+Merhaba arkadaşlar.
+
+365
+01:11:03,440 --> 01:11:04,220
+Çevir ekranı çevriliyor mu?
+
+366
+01:11:05,340 --> 01:11:05,760
+Efendim?
+
+367
+01:11:06,460 --> 01:11:09,700
+Bir çevir ekranı çevriliyor mu, hareket ediyor mu?
+
+368
+01:11:10,840 --> 01:11:12,640
+Evet, tamam. Devam edebiliriz.
+
+369
+01:11:12,640 --> 01:11:17,840
+Merhaba arkadaşlar. Ben [öğrenci]. [öğrenci] ile birlikte.
+
+370
+01:11:19,731 --> 01:11:33,031
+Test projemizi gerçekleştirdik. [kişisel bilgi] İş staj portalı olarak gerçeklemiştik.
+
+371
+01:11:34,431 --> 01:11:46,912
+İçerik olarak ürünü tanıtacağız. Modüller, yazılım, donanım gereksinimleri, test yaklaşımları, risk yönetimi, test tool ve oluşturduğumuz test case'ler ve test sonuçlarından bahsedeceğim.
+
+372
+01:11:48,372 --> 01:12:11,112
+Çalışma Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği öğrencileri için iş staj portalı gerçekleştirecek, yani panolarda asılan iş ilanlarını ortadan kaldıracak bir projeydi. Öğrenciler işledikleri işleri, stajları bu portal üzerinden gerçekleştirilecek bir ortam hazırlanacaktı.
+
+373
+01:12:13,684 --> 01:12:25,503
+Yayınlanan ilanlardan bütün bölümdeki öğrencilere haberdar olmasını sağlayıp, aradıkları özelliklere sahip iş, staj olanaklarını kolaylıkla bulabilecekleri bir web uygulamasıdır.
+
+374
+01:12:25,923 --> 01:12:41,503
+Sistem genel olarak iş ve konumundaki kurum, kuruluşların üye olup ilanlarını duyurdukları, öğrenciler ise bu sistem üzerinden bu ilanlara kolaylıkla...
+
+375
+01:12:41,684 --> 01:13:05,164
+Erişip başvuracaktır. Web sitesinin projenin modüllerine baktığımızda yönetici, işveren, öğrenci ve memur modülü olarak dört parçadan oluşmaktadır. Bunlar ayrı ayrı test kezlerine oluşturulup test edilmiştir.
+
+376
+01:13:09,619 --> 01:13:27,739
+İşletim sistemi Windows 8 üzerinde yazılmıştı o zaman yazdığımız zaman. Ve test araçları olarak normal Google Chrome, Firefox, Internet Explorer üzerinde çalışıp HTTP protokolü üzerinde çalışmaktadır.
+
+377
+01:13:28,959 --> 01:13:34,879
+Yazılım ortamı .NET üzerinde geliştirildi. Meritaban MS SQL kullanıldı.
+
+378
+01:13:35,699 --> 01:13:55,399
+Test araçları olarak MS Test, Selenium ve Chrome Selenium eklentisi üzerinde test yapıldı. Bius Dio 2013'ü kullanarak yazılmıştı derleyici olarak. Donanım gereksinleri ekranda görüldüğü gibi. Buraya geçiyorum.
+
+379
+01:13:56,595 --> 01:14:09,716
+Oluşturduğumuz test planı birim testiyle başladı. Daha sonra yazılım sistem testi, kabul testleri, beta testleri ve kullanıma alma testleri olarak gerçekleştirildi.
+
+380
+01:14:09,716 --> 01:14:20,956
+Test yaklaşımı olarak test ekibi tarafından oluşturuldu senaryo olarak. Gereksinim analizi belgesindeki gereksinimleri karşılayacak.
+
+381
+01:14:22,355 --> 01:14:37,695
+Ölçüde testlerimiz gerçekleştirildi. Şurada bir diagram oluşturduk. Yazılım gereksinimleri belgesi, daha sonra test tanımlama belgesi ve daha sonra da test sonuçlarını raporladığımız bir pdf dökümanımız oldu.
+
+382
+01:14:39,220 --> 01:15:00,640
+Test yaklaşımı olarak test durumları proje test tekiği tarafından belirlendi ve belgelendirildi. Test durumları belirlenirken de gereksinim tabanlı test yaklaşımı, bilim testler, kara kutu testleri yöntemi kullanılmıştır. Ayrıca kullanıcı arayüzü içinde Selenium Tool kullanılarak test edilmiştir.
+
+383
+01:15:05,203 --> 01:15:23,304
+Eş değer girdi, kullanılan ve davranışla sonuçlanan farklı test durumları oluşturmaya çalışıldı. Daha sonra geliştirilen yazılımın görevi gerçekleştirmesine yönelik beklenen veri girişlerine ve pozitif test durumları yazıldı.
+
+384
+01:15:23,304 --> 01:15:31,484
+Kabul edilmeyen veri girişi durumlarında yazılımın nasıl davranması gerektiğine yönelik negatif test durumları yazılmıştır.
+
+385
+01:15:32,435 --> 01:16:00,195
+Hatalarımızı derecelendirdik. Birinci derece hatalar, portalın genel çalışmasını direkt etkilen hatalar olarak gördük. İkinci derece hatalar, genel çalışmasını direkt etkilemeyen fakat işlevsel yönden bazı yönlerinin çalışmasına ingenilen hatalar olarak kabul ettik. Üçüncü derece hatalar için çalışmayı etkilemeyen, görsel olarak çıkan hatalar olarak kabul ettik.
+
+386
+01:16:00,435 --> 01:16:13,735
+Risk Yönetimi olarak, risk takibi için risk yönetim planı geliştirildi. Bu plan dahilinde her bir risk belirlenerek olası durumlar, alternatif çözümler değerlendirilmiştir.
+
+387
+01:16:13,735 --> 01:16:27,735
+Bir risk izleme tablosu oluşturduk. Burada risklerin ne derece riskli ve alternatif olarak çözüm ne üretebiliriz? Bunları...
+
+388
+01:16:28,275 --> 01:16:36,755
+Hazırladık. Örnek olarak görebilirsiniz. Ve risk sorumlusu olarak birbirimizi atamıştık.
+
+389
+01:16:38,876 --> 01:16:49,275
+Kullandığımız test tool'larda bir unit test için MS Test kullanıldı. Kullanıcı arayüzü testi içinde Selenium ve Google Chrome Extension kullanıldı.
+
+390
+01:16:49,275 --> 01:16:53,355
+Sağda ID'nin görüntüsü görülmektedir.
+
+391
+01:16:54,931 --> 01:17:13,532
+Daha sonra bu kullanıcılar için test keyzleri oluşturulduk. Örnek birkaç tane ekran paylaştım. Test adımları ve test sonucunda beklenen değerlerin gösterildiği test girdilerimiz ve çıktılarımız adımla adım gösterilmiştir.
+
+392
+01:17:14,811 --> 01:17:18,951
+Örnek olarak başka bir test keyzimiz.
+
+393
+01:17:20,372 --> 01:17:35,512
+Test sonuçlarını tablolar halinde gösterdik. Testin başarılı başarısız olmadığı durumuna göre açıklamalarda da o hataya ait bilgi paylaştık.
+
+394
+01:17:36,332 --> 01:17:46,012
+Örnek olarak bir tane ekrandaki resim bozukluğundan kaynaklanan, hata derecesi yazan.
+
+395
+01:17:46,612 --> 01:18:13,391
+Bir tablomuz var. Test değerlendirme sonuçlarımız da, yani toplamda yaptığımız test ve testlerin geçiş değerini veren bir tablo. Toplam test sayımız 7, değerlendirmemiz 7'sini de gerçekleştirdiğimiz hata bulunan test sayılarımız var. Hata bulunan yapılmayan testlerimiz de yok olarak değerlendirdik.
+
+396
+01:18:13,908 --> 01:18:27,888
+Benim sunumum bu kadardı. Normalde [öğrenci] arkadaşımız da olacaktı. [kişisel bilgi] O yüzden ben yalnız yapmak zorunda kaldım.
+
+397
+01:18:29,427 --> 01:18:36,368
+Benim anlatacaklarım bu kadardı. İdeyi gösterebilirim isterseniz. Selenium idesini.
+
+398
+01:18:42,515 --> 01:18:44,427
+Ses geliyor mu acaba?
+
+399
+01:18:50,612 --> 01:18:51,572
+Evet, ses geliyor.
+
+400
+01:18:52,711 --> 01:18:58,612
+Ben bir ideyle çalıştırmayı deneyeyim eğer siz de uygunsanız.
+
+401
+01:18:58,612 --> 01:19:00,612
+Şimdi evlenti...
+
+402
+01:19:04,180 --> 01:19:06,260
+Selanyum ID eklentisi böyle.
+
+403
+01:19:10,228 --> 01:19:12,408
+Create New Project bir isim veriyoruz.
+
+404
+01:19:28,884 --> 01:19:31,743
+Şuradan daha sonra yörel.
+
+405
+01:20:05,971 --> 01:20:07,971
+Neden girmiyor, anlayamadım.
+
+406
+01:20:20,212 --> 01:20:35,552
+Nasıl başladığını görmüş olduk. Normalde test yapması gerekiyor. Ekranı açıp böyle bir senaryo şeklinde açması gerekiyor ama neden olduğunu şu anda çıkaramadım.
+
+407
+01:20:45,427 --> 01:20:47,587
+Evet, tamam. Teşekkür ederiz [öğrenci].
+
+408
+01:20:47,587 --> 01:21:12,587
+Testi yaptıktan sonra da şöyle bir loglar oluşuyor. Normalde bir simülasyon gibi kendi otomatik olarak adım adım yapıyor ve sonucunda şöyle loglarımız oluşuyor. Buradan test kezlerine erişebilirsiniz. Yani burada testi geçip geçmediğini söylüyor, hangi adımları gerçekleştirdiğini. Böyle loglarımız oluşmaktadır.
+
+409
+01:21:13,652 --> 01:21:15,712
+Gösteremedim, kusura bakmayın arkadaşlar.
+
+410
+01:21:17,192 --> 01:21:17,452
+Tamam.
+
+411
+01:21:18,952 --> 01:21:21,752
+Sorunuz varsa cevaplayabilirim.
+
+412
+01:21:28,916 --> 01:21:30,716
+Evet, teşekkürler.
+
+413
+01:21:32,136 --> 01:21:32,775
+Ben teşekkür ederim.
+
+414
+01:21:37,076 --> 01:21:39,476
+[öğrenci], sen sulum yapmış mıydın?
+
+415
+01:21:40,916 --> 01:21:42,276
+Şimdi yapabilirim.
+
+416
+01:21:43,396 --> 01:21:45,016
+Yapmadın da yapacak mısın?
+
+417
+01:21:48,756 --> 01:22:05,396
+Tamam. Hocam ben de geldim bu arada. Nasıl uygunsa bilgi vereyim istedim. Tamam. Tamam. Teşekkürler. [öğrenci] veya [öğrenci] başlayabilir. [öğrenci] sen hazır mısın?
+
+418
+01:22:10,003 --> 01:22:16,183
+Geliyor. O zaman seni dinleyelim, sonra [öğrenci]'i dinleyelim.
+
+419
+01:22:21,108 --> 01:22:22,327
+Ekran geldi değil mi?
+
+420
+01:22:24,007 --> 01:22:25,087
+Geldi, evet.
+
+421
+01:22:25,807 --> 01:22:47,487
+Merhaba arkadaşlar. Emlak Fiyat Tahmin Uygulamasının test raporunu sunacağım bugün. Bu uygulamayı ben bir arkadaşımdan aldım. Kendisi makine öğrenmesiyle ilgili bir ödev yapmış, oradan aldım. Biraz da merak etti makine öğrenmesiyle alakalı testler nasıl yapılıyor. Çünkü ben daha önce çok deneyimlediğim bir şey değil.
+
+422
+01:22:48,051 --> 01:23:10,231
+O yüzden. Bu arada şeyin bilgisini de vereyim. Python'da Spider'de de yazılmış bir proje. Ürünün konusu ve kapsamından bahsedeyim. İşte burada hedef, örnek veri seti önceden programcı tarafından uygulamaya veriliyor.
+
+423
+01:23:10,720 --> 01:23:19,579
+Uygulama bu veri setini işleyip, kendisine kullanıcı tarafından verilen parametrelere göre bir emlak fiyat tahmin yapıyor.
+
+424
+01:23:19,779 --> 01:23:31,940
+Mesela bu parametrelerde neler? Metrekare, oda sayısı, banyo sayısı, dairenin bulunduğu kat ve bina yaşayla alakalı parametreler veriliyor.
+
+425
+01:23:32,560 --> 01:23:35,380
+Bu parametrelerle bir tahminde bulunuyor.
+
+426
+01:23:37,779 --> 01:23:58,079
+Burada test için kullanılan yöntemler iki tane test uyguladım. Birim test ve beta testi. Bunlar neler? Tanımlamak gerekirse birim test, bir yazılımın en küçük test edilebilir bölümlerinin tek tek veya tek tek ve bağımsız olarak doğru çalışması için incelendiği yazılım testidir. Beta testi de...
+
+427
+01:23:59,060 --> 01:24:08,260
+Potansiyel kullanıcıların ürünün beta versiyonunu test edip buldukları hataları kullanıcılara, geliştiricilere bildirip test sürecidir.
+
+428
+01:24:09,680 --> 01:24:12,539
+Daha sonrasında burada birim testin uygulanması.
+
+429
+01:24:13,380 --> 01:24:22,060
+Uygulamanın içinde bulunan ve verilerin girdiler karşılığında emlak fiyatı tahminlerinde bulunan fonksiyon üzerinde 4 adet birim test uyguladım.
+
+430
+01:24:51,119 --> 01:25:06,119
+Pardon, projenin girdileri yorumlama şeklini vesaire test ettim. Burada bir test senaryosu oluştuğunun tablo, burası umarım net görünüyordur. Burada ilk önce bir unit test yaptım.
+
+431
+01:25:24,011 --> 01:25:35,271
+Tabii bu bir makine öğrenmesi projesi olduğu için burada net bir şekilde şu çıktığı verecektir diye bir tahminde bulunamıyoruz. Oradaki verileri inceledim birkaç sayfa.
+
+432
+01:25:36,083 --> 01:26:02,324
+Genelde bu aralıkları belirledim. Çok fazla daraltamadım aralığı. Zaten gerçekleşen çıktı da ucu ucuna. 496, 1812 çıktısı oldu ve ilk test başarılı gerçekleşti. Çünkü tabii burada emlak dediğimiz zaman farklı şehirler, farklı konumlar, sadece bu 5 parametre dışında bir sürü farklı parametreyle bu fiyatlar da farklılık gösterebiliyor. Kat kat artıp azalabiliyor.
+
+433
+01:26:03,412 --> 01:26:10,412
+Daha sonrasında ikinci olarak bu sefer bina yaşını üç tane daha arttırdım.
+
+434
+01:26:11,132 --> 01:26:20,092
+Ve orada da beklenen çıktıları incelediğim zaman bina yaşının hemen hemen biraz şöyle bir 20-30 bin kadar düştüğüydü.
+
+435
+01:26:20,351 --> 01:26:22,792
+Pardon, bina yaşının artmasıyla fiyatın düştüğüydü.
+
+436
+01:26:23,412 --> 01:26:28,351
+Bu şekilde test ettiğimde daha yüksek bir çıktı verdi ve başarısız oldu.
+
+437
+01:26:28,351 --> 01:26:29,932
+Bunda da tahminim şu oldu.
+
+438
+01:26:30,963 --> 01:26:58,144
+İncelediğimde bu site üzerindeki emlak fiyatlarını oradaki çok fazla gürültülü veri vardı. Mesela genelde şu 300 ve 470 bin arası emlak fiyatlarının yanı sıra bazen mesela çok elit bir muhitte işte 1 milyon liraya diyelim veya 1 milyon 200 bin liraya evlerde koyulabilmiş yani. O yüzden.
+
+439
+01:26:58,771 --> 01:27:18,552
+Fiyatta da tabii bu şekilde bir tahminimce yani çıktılarda bir yanlışlık oldu. Bu yüzden bu test başarısız oldu. Üçüncü olarak da şöyle bir şey denedim. Metrekare ve oda sayısını epey bir azalttım. Bu sayede neler yapacak onu görmek istedim.
+
+440
+01:27:25,728 --> 01:27:41,448
+Bu da yine de bir tahmin yapması gerekiyordu. 50 metrekare ve 1 artı 1 oda üzerinden. Fakat burada da 80 bin tahmin yaptı ve bu da başarısız oldu. Yani biraz lineer gitti. Zaten programda lineer regresyon yöntemi üzerinden tahmin yapıyor.
+
+441
+01:27:42,420 --> 01:28:09,780
+Daha sonrası dördüncü olarak burada da şöyle biraz ekstrem bir şey denemek istedim. Metrekare ve oda sayısını bayağı astronik bir şekilde arttırdım. Burada da görmek istediğim şey şuydu. Web sitesinde inceleme yaptığımda şöyle 250 metrekare ve 7 artı 1 oda sayısıyla alakalı çok fazla veri yoktu. Sadece 3 tane bulabildim koskoca sitede. O yüzden dedim acaba hani böyle az nadir bulunan veriler için nasıl tahminlerde bulunacak?
+
+442
+01:28:10,228 --> 01:28:28,728
+Bununla ilgili de tabii bu üç veri de yine şu fiyatlar arasındaydı. Tabii daha da yüksek olabilir fakat zaten çok fazla dediğim gibi olmadığı için belli başlı iki üç şehirde vardı ve şu fiyatlar arasındaydı. Fakat gerçekleşen çıktı. O fiyatların yine üstünde oldu ve bu da başarısız oldu.
+
+443
+01:28:35,712 --> 01:28:56,632
+Burada gördüğünüz gibi diğer unit testlerde oda sayısı bir şey artı, bir şey olarak veriliyor. Burada ilk önce şunu denedik potansiyel kullanıcılarla beraber. Metrekare, bina yaşı kat sayısı ve banyo sayısı aynı kalmak üzere oda sayısını şöyle sadece bir sayı olarak verdim.
+
+444
+01:29:02,623 --> 01:29:26,623
+Arada artı işareti olarak vermek zorundasınız veya işte o da artı salonu salon olarak vermek zorundasınız diye. Bu sayede hani kullanıcı bunu bilemeyeceği için direkt şöyle bir sayı girdisi oluştu ve burada benim beklentim hatalı giriş. İşte yeniden deneyiz gibi bir şeyken program herhangi bir çıktı vermedi çalışmayı durdurdu. Burada da başarısız oldu. Daha sonrasında...
+
+445
+01:29:27,764 --> 01:29:48,284
+Potansiyel kullanıcı testinde ikinci olarak bunlara tek tek harf verdim. Yani bu sefer string integer değil de string bir ifade verdiğimde yine beklediğim çıktı değil de hata verdi yani. Burada da başarısız oldu. Son olarak da tam olarak doğru parametreleri verdiğimizde bu sefer program doğru çalıştı ve hata vermedi.
+
+446
+01:29:49,300 --> 01:30:03,039
+Burada sonuçlara gelelim. Unit testlerin sonucunda uygulamanın veri setinde bulunan görüntülü verilerin ve uygulama için verilerin tek bir kaynaktan alınmasının, uygulamanın temel fonksiyonunu doğruya daha yakın sonuçlar vermesini zorlaştırmıştır.
+
+447
+01:30:03,039 --> 01:30:12,039
+Yani burada dediğim gibi emlak fiyatları da çok değişken olacağı için sadece 5 parametre üzerinden alındığı için burada...
+
+448
+01:30:13,300 --> 01:30:33,359
+Program yeterince doğru sonuçlar çıkartamıyor. Yeterince iyi tahminler yapamıyor ve bunu yanı sıra tek bir kaynaktan alındığı için, mesela şu şekilde 250 metrekarelik bir ev için sadece 3 tane sonuç olan bir sitesi. Burada uygulama çok sağlam tahminler yapamıyor bu yüzden.
+
+449
+01:30:34,452 --> 01:31:00,931
+Onun dışında beta testiyle ilgili zaten beta testi uygulamanın marketlenmeye hazır olup olmadığını ölçüyor. Burada ürünün marketlenmeye hazır bir ürün olmadığını tespit ettik. Yani burada potansiyel son kullanıcı için hatalı türde veri giriş durumlarında yani böyle basit durumlarda bile düzgün tebliğler veremediğini gördüm. Anlatacaklarım bu kadardı. Dinlediğiniz için teşekkür ederim.
+
+450
+01:31:01,684 --> 01:31:10,284
+Sesim açıkmış. [öğrenci], bir uygulama verebilir misin?
+
+451
+01:31:11,644 --> 01:31:17,664
+Hocam, maalesef masaüstü bilgisayarımda kaldı ama nasıl yapalım?
+
+452
+01:31:22,664 --> 01:31:24,104
+Teşekkürler.
+
+453
+01:31:29,524 --> 01:31:31,524
+O zaman, bir neyse seniz git ama.
+
+454
+01:32:06,100 --> 01:32:10,540
+Tamamdır hocam. Selamlar herkese. O zaman devralıyorum ekranı.
+
+455
+01:32:17,524 --> 01:32:19,324
+Ekranım geldi mi arkadaşlar?
+
+456
+01:32:20,484 --> 01:32:21,423
+Görebiliyoruz.
+
+457
+01:32:21,923 --> 01:32:23,003
+Tamamdır hocam.
+
+458
+01:32:28,340 --> 01:32:38,939
+Şimdi sunum modunda görünüyor mu yoksa şöyle yaparsam tam olacak sanırım. Tamam. Şimdi sunum modunda görebiliyorsunuz sanırım.
+
+459
+01:32:41,899 --> 01:32:52,279
+Başlıyorum. Merhabalar herkese. Ben [öğrenci]. Bugün kurumsal hayattan yaptığımız bir projeyi, ben derste gördüklerimizi Aralık ayı başında.
+
+460
+01:32:52,735 --> 01:33:12,275
+Bu projeye uyguladığımız ve devreye aldığımız bir projeye uygulamak ve test sonuçlarını bu proje üzerinden anlatmaya çalışacağım. Biz normal şartlarda evet test yapıyoruz ama biraz da rutinde resmi ve olması gerektiği gibi değil.
+
+461
+01:33:12,640 --> 01:33:21,460
+İş dünyasındaki acil kavramına göre hızlı hızlı testler gerçekleştirip bunları devreye alıyoruz.
+
+462
+01:33:21,460 --> 01:33:26,080
+Görmüş oldum bu haliyle. Şimdi biraz bunlardan bahsedeceğim.
+
+463
+01:33:27,604 --> 01:33:44,963
+Projemde bugün bir kısa projenin özetini, sonra yazılım gereksinimlerini, test stratejilerini, test senaryosunu, hata ve test sonuç raporlamalarının nasıl yapıldığını, test ortamımızı, bu testler için nasıl bir kaynağı ve eğitime ihtiyacımız var bunlardan bahsedeceğim.
+
+464
+01:33:45,624 --> 01:33:51,064
+Test takvimimizi anlatacağım. Sonra da yaşadığımız gerçekleşen canlı risk.
+
+465
+01:33:51,488 --> 01:33:58,748
+Örneklerimizden bahsedeceğim ve örnekler vereceğim. En sonunda test çıktılarımızla sunumu bitiriyor olacağım.
+
+466
+01:33:59,828 --> 01:34:17,628
+[kişisel bilgi] Genel olarak işimiz tekstil perakende işi. Burada da bugün ben bir alokasyon, sevkiyat, yasak yönetimi projesini anlatacağım.
+
+467
+01:34:27,828 --> 01:34:39,768
+Doğru zamanda sevk etme işi olarak tanımlanır. Kısacası depodan ilgili mağazalara ürünün satılma, yani ürünün sevk edilmesini, lojistik işlemini devralar.
+
+468
+01:34:39,768 --> 01:34:50,668
+Ama buradaki alokasyonun uzmanlık alanı hangi mağazada, hangi zamanda ve hangi fiyata yer alacağına karar vermektir. Buradaki önemli olan uzmanlık alanı bu.
+
+469
+01:34:51,168 --> 01:34:55,328
+Çünkü stok yönetimi önemli. Toyota üretim sistemlerinden de biliriz.
+
+470
+01:34:55,828 --> 01:35:10,068
+Topla, Sıfır Stoğa en yakın şekilde çalışıp doğru zamanlama ve planlamayı yapabilen şirketler her zaman lojistik maliyetinden de, mağazada doğru ürünü satma maliyetinden de her zaman kazanıyor durumundalardır.
+
+471
+01:35:10,588 --> 01:35:14,448
+Amacımız oraya gitmek aslında alokasyonda bu işi yöneten ekip.
+
+472
+01:35:14,868 --> 01:35:32,528
+Bugün anlatacağım nokta, evet bu alokasyon sürecinde biz mağazaya belli depolardan ya da belli tedarikçilerden ürünü indiriyoruz. Zamanı önemli ama aynı zamanda bu sistemsel olarak da kısıtlanması gereken konular olabiliyor.
+
+473
+01:35:42,868 --> 01:36:10,868
+Gözle sevkiyatının engellenmesinin garantisini alamazsınız. Kişinin gözüne bunu bırakamazsınız. Nedir bu kısıtlar? Mesela Pakistan ve Bangladeş miydi? Pakistan ve Mısır mıydı? Bu iki ülke arasında ambar bu mevcut. Benim Mısır üretimli ürünleri Pakistan'a göndermemem lazım. Yine aynı şekilde tersi de var. Bunu kişinin inisiyatifine bırakamayız. Sistemsel olarak kısıtlamamız lazım. Bunlara menşe...
+
+474
+01:36:10,868 --> 01:36:36,728
+Bunun yanında benim ürünüm yine mısır özelinde. Askeri kamuflajlı darbeden sonra askeri kamuflajlı ürünleri mısır almıyor. Alırsa gönderirseniz burada bir gümrükte firm olarak ceza yiyorsunuz. Böyle yasal yaptırımlar var. Projemiz bunları bu sevkiyatları gerçekleştirirken bu kısıtları sistemsel yönetebilmek aslında.
+
+475
+01:36:38,868 --> 01:37:00,128
+Dört modülünden bahsedeceğim. Tek başıma bu kadarını test edebilirim bu sürede. Bu kadarını yürütebilirim detaylı diye dört modülünden bahsedeceğim. Bunlar da hiyerarşi, option, lot ve ürün seviyesinde yasakları kapsayacak. Birazdan daha detaylı bu anlamlar nedir? Oralarda değiniyor olacağım.
+
+476
+01:37:00,543 --> 01:37:17,823
+Öncelikli olarak projenin Life Cycle'ında başında gereksinim spesifikasyonları olarak biz kullanıcılarımızdan, müşterilerimizden bize hikayenizi anlatın. Ne yapmak istiyorsunuz? Analize başlamadan önce siz ne yapmak istiyorsunuz? Bunu bize anlatını istiyoruz.
+
+477
+01:37:17,823 --> 01:37:28,543
+Burada da birkaç tane kullanıcı hikayesi örneği ekledim ben. Hepsini değil. Nedir mesela? Alokasyon ekibi olarak biz Counter ve Store bazında...
+
+478
+01:37:28,543 --> 01:37:50,283
+Yasakların yanısına channel bazında da yasak koyabilmek istiyoruz diyor. Ülke ve mağazanın yanında channel dediğimiz kavram bizim satış noktasıdır, kanalıdır. Bu e-ticaret olabilir, yurt içi mağazı olabilir, yurt dışı mağazı olabilir. Bir de marketplace dediğimiz kavram, benim ürünlerimi satan ama benim olmayan firmalar olabilir.
+
+479
+01:37:56,543 --> 01:38:13,264
+Aynı zamanda lot bazında da yasak koymak istiyorum diyor. Lot nedir? Lot bir tane ürün değil, birim adet ürün değil. Birden fazla ürünün paketlenmiş versiyonudur lot. Aynı tişörtün farklı bedenlerinin tek pakete konulması olarak düşünebilirsiniz.
+
+480
+01:38:13,844 --> 01:38:35,844
+Bunun yanında yine bir kullanıcı hikayesi. [kişisel bilgi] Hem fiziksel destek verirken aynı zamanda teknolojik olarak e-Store olarak da destek verebiliyor. Ben tüm Türkiye'de bu yasağı işletmek istiyorum ama bu e-Store'da bunu işletmek istemiyorum diyor alokasyon ekibi. Proje buna da hizmet etmeli.
+
+481
+01:38:36,271 --> 01:39:02,011
+Noktasında yazılım gereksinimlerini alıyoruz ve analist arkadaşlarla bunların detaylarını nasıl yapılabilir, bunların nasıl riskleri vardır, bunu yaparken şöyle ihtiyaçlar olacak mıdır diye bu noktada analizler gerçekleştiriliyor. Bizim bu proje kapsamında test stratejimiz neydi? Birim testi, bütünleme testi, sistem ve kullanıcı testleri yapıyoruz biz dört adımdan oluşan.
+
+482
+01:39:04,271 --> 01:39:15,112
+Dediğimiz nokta, evet bir unit test mantığı ve tüm projemizde unit testler yazılsın, otomatik koşsun istiyoruz ama şu anda firma olarak biz bütün testlerimizi manuel gerçekleştiriyoruz.
+
+483
+01:39:15,952 --> 01:39:20,032
+Burada birim testleri de biz manuel yaptık, onlardan da bahsedeceğim.
+
+484
+01:39:20,032 --> 01:39:22,032
+Bu modül kapsamında...
+
+485
+01:39:22,355 --> 01:39:33,335
+Altı test kes kısmı yanlış olmuş. Dört farklı modülde her birinde altı durumdan yirmi dört test kes test edildi.
+
+486
+01:39:33,716 --> 01:39:42,935
+O kısmı yanlış yazmışım. Kusura bakmayın. Dediğim gibi hiyerarşi, option, lot ve product bazında yasaklamayla ilgili testleri anlatıyor olacağım.
+
+487
+01:39:43,355 --> 01:39:52,296
+Hiyerarşi nedir? Çok kısa bir cümleyle anlatayım. Ürünün bağlı bulunduğu ürün grubunun ağacıdır. Bu nedir? Şöyle örnek verirsem.
+
+488
+01:39:52,296 --> 01:39:59,155
+Bayan ürün grubunda dokuma alt dediğimiz bu ürünün bir hiyerarşisidir.
+
+489
+01:40:00,000 --> 01:40:18,560
+Dokuma alt grubunda pantolon mesela. Bunun bir ağacıdır, ürün grubudur. Option dediğimiz kavram bir ürünün renk detayına kadarki noktasıdır. Eğer siz az önce bahsettiğim ürünün yanına bir de bunun mavi rengi derseniz artık option'ına geçmiş olursunuz.
+
+490
+01:40:18,560 --> 01:40:27,800
+Lod'dan az önce bahsetmiştim. Paketli üründür. Paketin içerisinde bütün ürünlerin hepsi aynıdır ama bedenleri farklıdır.
+
+491
+01:40:28,000 --> 01:40:31,739
+Farklı bedenlerin tek pakette yer alması demektir lot.
+
+492
+01:40:32,112 --> 01:41:00,112
+Bilot dediğimizde içerisinde tek ürün yoktur ama hepsi aynı üründür. Bunu düşünebiliriz. Product da bizim kendi kendimizin de kullandığı, giydiğimiz ya da kullandığımız her bir birim adet ürüne verilen isimdir. Bu dört modül bazında 24 test case ile bir test işlemi gerçekleştirdim ben. Burada örnek test senaryolarımız var. Birinci durum için test senaryomuz Channel Vahiyat.
+
+493
+01:41:00,112 --> 01:41:11,292
+Yerarşi bazında yasak konulmasının kontrol edilmesi kısmı, target dediğimiz hangi lokasyona, ben nereye yasak koyacağım, aradığım hedef lokasyonum neresidir?
+
+494
+01:41:11,292 --> 01:41:23,011
+Bu bazda yasak. Test teplerimiz var. Aslında ekran görüntüsünde göstereceğim. Bu test teplerini gerçekleştirip bu datayla doğru sonuçları veriyor muyu test ettik.
+
+495
+01:41:23,131 --> 01:41:28,032
+İki tane örnek hem target, aynı zamanda da source bazında test senaryomu.
+
+496
+01:41:28,112 --> 01:41:30,792
+Buraya ekledim. Bunu burada görebiliyoruz.
+
+497
+01:41:32,148 --> 01:41:46,868
+Biz hata ve test sonucunu nasıl raporluyoruz firma olarak? Biz Team Foundation Server'ı kullanıyoruz teknik anlamda projelerimizi yönetmek için. Bütün iş, PBI kayıtlarımızı da burada takip ediyoruz.
+
+498
+01:41:46,868 --> 01:42:00,148
+Ve dört tane de birencimiz var bizim. Birenç kavramında da öncelikli olarak yazılımı geliştirdiğimiz development kavramı, development birenci. Onun üzerine test ekibinin test...
+
+499
+01:42:00,148 --> 01:42:07,608
+Testleri'nin koştuğu test birenci, kullanıcı kabul testlerini aldığımız UAT birenci ve en sonunda da canlı birenci.
+
+500
+01:42:08,167 --> 01:42:15,467
+Canlı birencinin, production birencinin yanında bizim release candidate dediğimiz canlıya yakın RCE ortamımız da var.
+
+501
+01:42:15,948 --> 01:42:21,887
+Canlı verisiyle bir test koşulması istenirse bu release candidate ortamını da kullanıyoruz.
+
+502
+01:42:27,264 --> 01:42:47,264
+Bir hata çıkarsa TFS üzerinden de Test Failure olarak işaretleyip yazılım ekibine bu testleri TFS üzerinden gönderiyoruz. Yine UAT aşamasında bir hata çıkarsa hangi ortamda ve hangi case'lerle bulunduğunu anlamak adına da yine TFS üzerinden UAT Failure olarak...
+
+503
+01:42:47,680 --> 01:42:48,820
+arkadaşlara
+
+504
+01:42:48,820 --> 01:42:51,520
+kayıt olarak geri dönüyor.
+
+505
+01:42:52,140 --> 01:42:53,800
+Canlı ortamda çıkarsa artık
+
+506
+01:42:53,800 --> 01:42:55,440
+bu bir failure değildir. Bu bir
+
+507
+01:42:55,440 --> 01:42:57,720
+bug'tır. Yine TFS üzerinden
+
+508
+01:42:57,720 --> 01:42:59,360
+servis desk ekibinden
+
+509
+01:42:59,360 --> 01:43:00,079
+bug olarak
+
+510
+01:43:00,079 --> 01:43:03,240
+ilgili yazılım ekibine geri dönüş
+
+511
+01:43:03,240 --> 01:43:04,579
+sağlıyoruz. Bu
+
+512
+01:43:04,579 --> 01:43:06,600
+TFS kayıtlarımızın da
+
+513
+01:43:06,600 --> 01:43:09,020
+bağlı bununla çözülmesi gereken
+
+514
+01:43:09,020 --> 01:43:10,460
+SLA kriterlerine göre
+
+515
+01:43:10,460 --> 01:43:13,360
+seviyeleri mevcut. Kritik dediğimiz
+
+516
+01:43:13,360 --> 01:43:14,920
+bir bug ise bu eğer
+
+517
+01:43:15,264 --> 01:43:32,304
+Canlı'dan gelmişse çözüm süresi 1 saattir. Yüksek dediğimiz kaydın çözüm süresi 4 saattir. Düşükse de 8 saat olarak çözüm süresi var. Yine aynı şekilde test fail'ların da bu seviyeleri var. Bu da ne anlama gelir? Kritikse bu.
+
+518
+01:43:34,579 --> 01:43:52,119
+Engeldir bu projenin. Yüksekse belli bir iş yapılamıyordur. Tüm sistem etkilemiyordur ama belli bir iş yapılamıyordur. Bu kısmı kullanılamaz. Düşükse de biraz kozmetiktir, biraz kullanıcı ihtiyacına göre şekillenmiştir. Ama canlıya alınmasına engel değildir anlamına gelir.
+
+519
+01:43:53,587 --> 01:44:05,747
+Burada da test ortamımız nasıl bizim? Test ortamımız 4 core CPU ve 8 GB RAM içeren virtual sanal makinelerin üzerindeki sunuculardan oluşuyor.
+
+520
+01:44:06,127 --> 01:44:31,607
+Yine canlı ortamımızda 7 core CPU 32 GB RAM içeriyor. Bunun farkını neden belirttim? Çünkü yüksek data ile çalıştığımız noktalarda test ortamının donanımı yetmezse, yeterse zaten canlıya alınmasına engel yok ama yetmezse bu testin tekrarlanması gerektiği anlamına gelir. Canlı da çalışabilir ama bunun garantisini bu ortamın kaynaklarıyla veremiyor oluruz.
+
+521
+01:44:32,884 --> 01:44:52,224
+Yine bunun için nasıl bir ekibe ihtiyacımız vardı bu testi koşmak, bu projeyi canlıya çıkarabilmek adına? Bir yazılım geliştirici arkadaşa, bir tane proje yönetimi ekibinden iş analisti arkadaşa, bir tane de test uzmanı arkadaşa ihtiyacımız vardı. Teknik olarak üç kişiyle bu testleri yürütüyor olduk biz.
+
+522
+01:44:53,684 --> 01:45:19,123
+Bir de analiz arkadaş bu analizini yaptıktan sonra test aşamasına geçmeden önce analiz dökümanının üzerinden ve iş akış diagramından süreçleri test uzmanı arkadaşa anlattığı bir eğitim seansına ihtiyacımız vardı. Neyi test edecek? Çünkü biznes de önemli bir kavram. Bulduğu bulgu süreçsel mi yoksa cidden bir bulgu mu? Bunu anlayabilmesi gerektiği için.
+
+523
+01:45:20,340 --> 01:45:22,340
+Test Teknik Üniversitesi
+
+524
+01:45:22,836 --> 01:45:50,836
+Süreler biraz kısa olarak görünebilir ama normal bizim özel sektörde ya da bizim firma adında da olabilir. Daha önceki gördüğüm firmalarda da aynı şey mevcuttu ama birazcık hızlı ilerliyor işler. Çünkü herkesin acelesi var. Bu test takvimimiz bu süreçler için bir buçuk günü aldı. Yarım günü eğitim, test uzmanının eşitlenmesi adına eğitimle geçti. Bunun üzerine birim testler, yazılım gelişti.
+
+525
+01:45:50,836 --> 01:46:18,836
+Bu, testlerinin arkasına sorduğumuz arkadaşa iki saatte gerçekleştirdiğini belirtti. Bütünleme testlerini test uzmanı arkadaş test ortamında iki saatte tamamladı. Sistem testleri yine yük testleri ve aynı zamanda ortam testlerini bir saatte tamamladı. En son olarak da kullanıcı kabul testlerini UAT ortamında müşteriyle birlikte tüm ekip üç saatte tamamlayarak bir buçuk günde...
+
+526
+01:46:18,836 --> 01:46:26,475
+Testi yaptık ama bulgularımız vardı. Düzeltilmesi gereken. Bunun için zaman tekrar devam etti.
+
+527
+01:46:27,764 --> 01:46:55,764
+Riskimiz neydi? Riskler canlı risklerdir bu arada arkadaşlar. Yaşadığımız risklerdir. Pandemi bize çok fazla risk gösterdi. Şimdiye kadar hep yazıp çiziyorduk. Bu risk olursa ne olur? Derste de konuştuk. Bu risk olursa ne olur? Ama pandemi bunun hepsiyle yüzleşmemizi sağladı bizim. Nedir mesela? Buradaki test uzmanı arkadaşın işten ayrılması bir risktir. Ayrıldığında farklı bir test uzmanınız varsa yerine koyabiliyorsunuz.
+
+528
+01:46:55,764 --> 01:47:22,764
+Ama şöyle bir durum oldu. Test hizmetini biz NetAş firması üzerinden alıyorduk firma olarak. Ama pandemi zamanı bütçelerde kısıtlama olduğu için bir anda yedek testçinizin bile, yedek test uzmanınızın bile kalmadığı bir ortam oluşmuş oldu. Sözleşmeler durduruldu ve arkadaşlar NetAş kendi firmalarına döndü. Bu noktada da insan kaynağı ciddi anlamda riskiyle yüzleşmiş olduk.
+
+529
+01:47:23,764 --> 01:47:40,003
+Ne yaptık dersek riskin karşılığına işin devam etmesi lazım diye birazcık analist arkadaşlara yüklendik. Analist arkadaşlar tam uzmanlıkları olmasa da süreci devam ettirmek gibi bir misyon da yüklenmiş oldular bu işlerde.
+
+530
+01:47:40,003 --> 01:47:51,003
+Bunun yanında ortam ve birençlerimiz az önce bahsettiğim 4K800 GB'lık ortam eğer başka proje içinde kullanılıyorsa ve test takvimleri aynıysa.
+
+531
+01:47:51,055 --> 01:48:01,895
+Bu noktada sıkıntı yaşayabiliyoruz. Biz ortamın yetmediğini düşünüyoruz ama aslında projenin ortamı değil, birden fazla projenin aynı ortamı kullanması riski var.
+
+532
+01:48:02,292 --> 01:48:18,052
+Yine aynı şekilde paydaşlardan ve müşteriden kabul testlerine gerekli vakit ayrılmaz ve ciddiyet oluşmazsa, bunların hepsi ya direkt tamam ben kabul ettim, tamamdır, canlıyı alabiliriz dediğinde ayrı bir risk.
+
+533
+01:48:18,432 --> 01:48:30,292
+Vakit ayırmadığında projenin gecikme riski mevcut. Diğer türlü kabul ettim dediğinde de canlıda baklarla yüzleşme riski var. Hatalı veriş oluşabiliyor bu proje özelinde.
+
+534
+01:48:30,292 --> 01:48:34,392
+Şöyle bir hata gözden kaçmış. Nedir?
+
+535
+01:48:34,804 --> 01:49:02,804
+Az önce bahsettiğim Mısır ülkesine kamuflajlı ürün göndermeniz yasal olarak Mısır hükümeti bunu kabul etmiyor. Kamuflajlı ürünlerin ülkede satılmaması gibi bir kuralları var. Biz göndermişiz, pantolon göndermişiz. Karşılığı da bize gümrükten hem sevkiyat maliyeti, çünkü geri almamız gerekti o ürünleri tekrar. Aynı zamanda da mağazaya geçenler için de cezayı...
+
+536
+01:49:02,804 --> 01:49:17,604
+İşlem uygulanması, 100-100K noktalarına kadar cezai işlem uygulanması noktasına gittik onu. Böyle büyük sonuçlarla karşılaşabileceğimiz risklerimiz de mevcut. Çoğunu yaşadık.
+
+537
+01:49:17,984 --> 01:49:36,264
+Bire bir yaşadık. Ceza kısmını da yaşadık. Test uzmanı yokluğunu, projenin ortasında bir yana test uzmanı kaynağının çekilmesi riskini de yaşadık. Bu noktalarda risklerle yüzleşmiş olduk.
+
+538
+01:49:36,627 --> 01:49:53,747
+Ekranlarımız bunlar. Modüllerimize ait ekranlarımız. Üst tarafta bir filtre alanımız var. Alt kısımda da bu yasakların listelendiği ve sağ tarafında da bu yasağın neye istinaden yapıldığına ait bilgilerini girebildiğimiz ekranlarımız mevcut.
+
+539
+01:50:00,000 --> 01:50:26,100
+Zaten bir web uygulaması arkadaşlar da biliyordur. Üst barda bir onay noktası çıkıyor. Bu hatalı e olursa eğer kırmızı olarak görebiliyoruz bunu. Bunun yanında çıktılarımız nedir? Dediğim gibi bütün testlerimizi biz manuel gerçekleştiriyoruz şu anda. Birim ve bütünleme testlerinde fonksiyonel bir sıkıntı çıkmadı. Buralardaki sıkıntıları yani bu aşamalarda.
+
+540
+01:50:26,543 --> 01:50:37,963
+Bizim radarımıza girmedi. Ama sistem testlerimizde birazcık hatalarımız çıktı. Nedir? Var olan bizim 4K 8 GB'lık test ortamımız.
+
+541
+01:50:38,771 --> 01:51:03,451
+Bizim 100 bin, 200 bin adetli ürün yasağını yapmamıza imkan vermedi. Buralarda Time Out'taki State hataları aldık. Çözümü nedir diye baktığımızda ya kodda bir sıkıntı vardı, performans sıkıntısı ya da ortam yetmiyor. Canlı da çalışabilir ama şu an biz bunu göremiyoruz. Az önce bahsettim bir Release Candidate ortamımız var bizim 5 Core CPU 16 GB RAM içeren.
+
+542
+01:51:03,887 --> 01:51:09,527
+Orada da bunu deneyelim. Koddan mı kaynaklı yoksa ortamdan mı kaynaklı diye.
+
+543
+01:51:10,036 --> 01:51:35,915
+Release Candidate ortamında bu sistem testleri başarılı koştuğunu gördüğümüz için bu projeyi canlıda çalışır. Çünkü nereden baksanız bunun bir buçuk katı kaynağı fazla canlı ortamımızın ve o şekilde onay alınarak devam etti. Sistem testlerinde yine web uygulaması birden fazla browser üzerinde bunu denedik. Kendo UI kullanıyoruz biz.
+
+544
+01:51:38,036 --> 01:51:51,215
+Biz geliştirme frame örgü olarak Kendo UI'in Chrome browser'u üzerinde en iyi performansı verdiği ve en stabil çalıştığı ortam olduğunu raporladı arkadaşlarımız da.
+
+545
+01:51:51,215 --> 01:52:06,036
+Burada da müşteri ve paydaşlarımız da Chrome kullanmaları yönünde bilgilendirmiş olduk. En son da UAT ortamında müşteriyle yaptığımız kabul testleri de başarıyla sonuçlandı ve onay alınarak projeyi canlıya taşıdık.
+
+546
+01:52:06,036 --> 01:52:10,795
+Benim anlatacaklarım bu kadar. Sorunuz varsa alabilirim.
+
+547
+01:52:12,915 --> 01:52:15,155
+Evet, teşekkürler [öğrenci].
+
+548
+01:52:15,655 --> 01:52:16,615
+Rica ederim hocam.
+
+549
+01:52:18,076 --> 01:52:25,775
+Bugün için sunumlarımız tamamlandı. Başka bir arkadaşımız daha vardı sunum yapacağına ama katılmadı demek ki.
+
+550
+01:52:26,695 --> 01:52:30,076
+Şu anda ben de katılanlardan göremiyorum adını.
+
+551
+01:52:36,212 --> 01:52:47,332
+Evet, şu anda var olanlardan, derste var olanlardan sunum yapmayan yok. Böylece iki projemizi de tamamlamış olduk.
+
+552
+01:52:51,292 --> 01:52:55,192
+Sorusu olan var mı? Yoksa dersi bitiriyorum.
+
+553
+01:53:01,363 --> 01:53:04,183
+Önümüzdeki hafta sınav programı.
+
+554
+01:53:04,183 --> 01:53:09,983
+Hocam adettendir ben sorayım. Sınav notlarımızı görebilme şansımız var mı?
+
+555
+01:53:09,983 --> 01:53:27,603
+Evet, ben onu size mail atacağım demiştim geçen hafta ama giremedim henüz şeye. Artık hepsini bir proje notlarınız ve şeylerle beraber, ilk vize notlarınızla beraber.
+
+556
+01:53:28,115 --> 01:53:33,115
+Hepsini birden göndereceğim size.
+
+557
+01:53:34,036 --> 01:53:35,015
+Tamamdır hocam.
+
+558
+01:53:35,895 --> 01:53:41,416
+Önümüzdeki hafta hangi saate koymuşlar sınav programında?
+
+559
+01:53:42,015 --> 01:53:43,095
+Ders saatinde hocam.
+
+560
+01:53:44,775 --> 01:53:48,496
+Ders saatinde değil mi? Onda başlamak üzere galiba. Öyle gördüm.
+
+561
+01:53:50,555 --> 01:53:53,496
+13'ünde haftaya.
+
+562
+01:53:56,756 --> 01:53:58,756
+Test olacak büyük bir ihtimalle.
+
+563
+01:54:12,756 --> 01:54:25,436
+Evet, hem benim sınavımda hem de diğer sınavlarınızda başarılar diliyorum. O zaman dersi tamamlayabiliriz. Herkese iyi haftalar diliyorum.
+
+564
+01:54:26,116 --> 01:54:27,556
+Sağ olun. İyi haftalar hocam.
+
+565
+01:54:27,956 --> 01:54:28,536
+İyi günler.

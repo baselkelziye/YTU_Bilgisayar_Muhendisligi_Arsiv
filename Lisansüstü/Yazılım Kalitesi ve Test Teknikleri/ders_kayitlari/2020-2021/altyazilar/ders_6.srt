@@ -1,0 +1,1551 @@
+1
+00:00:45,939 --> 00:00:55,339
+Evet, merhabalar. Biraz katılım arttı. Başlayabiliriz derse.
+
+2
+00:00:56,539 --> 00:01:11,340
+Öncelikle geçen haftadan beri bu son iki gündür birkaç arkadaşınız requirement specification dosyalarını gönderdi.
+
+3
+00:01:12,724 --> 00:01:31,584
+Ama önümüzdeki haftaya kadar süreyi uzatmıştım geçen hafta. Diğer arkadaşlarınız da bu hafta içinde gönderir diye düşünüyorum. Önümüzdeki hafta bugün son olacak onun gönderimi.
+
+4
+00:01:33,584 --> 00:01:39,584
+Makale konusunu da hemen hemen bütün arkadaşlarınız belirledi.
+
+5
+00:01:45,908 --> 00:02:08,247
+Öncelikle yine geçen haftaki bölümün bir tekrarıyla derse başlayacağız. Daha sonra da bu hafta sizin uygulama projelerinizde de gerekli olacak olan test planlama ve yönetim konusunu bugün işleyeceğiz.
+
+6
+00:02:09,588 --> 00:02:13,187
+Derse başlamadan önce sorunuz var mı bana?
+
+7
+00:02:21,044 --> 00:02:22,804
+O zaman slide'ı yüklüyorum.
+
+8
+00:03:59,731 --> 00:04:10,211
+Evet, şimdi arkadaşınızın sorusu üzerine biraz bu sınav konusunu konuşalım.
+
+9
+00:04:22,067 --> 00:04:44,067
+Öncelikle [öğrenci]'nın yazdığına cevap vereyim. SRS belgesinin 830 formatını paylaşamadım henüz. Bu hafta göndermiş olan arkadaşlarınız da içeriklerine...
+
+10
+00:04:48,627 --> 00:05:06,807
+Bir kısmına baktım. Ama IEEE 830 dosyasını paylaşayım. En azından bu öğrenci sistemi de paylaşamasam bile onu AVS'e koyabilirim. Diğerlerini bu sisteme koyacağım.
+
+11
+00:05:08,947 --> 00:05:15,947
+Sınav konusunda bir vize sınavı yapacağız.
+
+12
+00:05:16,468 --> 00:05:39,468
+9. hafta diye düşünüyorum. Bu hafta 6. haftadayız. 9. hafta yapmamız iyi olur ama bu sınav arayüzünü henüz tam olarak şey yapamadım. O yüzden hani test mi olur yoksa...
+
+13
+00:05:39,668 --> 00:05:45,168
+Klasik sınavımı yaparım. Henüz ona karar vermiş değilim.
+
+14
+00:06:04,723 --> 00:06:14,504
+[öğrenci], bunu şey için yazdın. SRS formatı için arkadaşına destek olmak için yazdın.
+
+15
+00:06:14,504 --> 00:06:15,004
+Evet hocam.
+
+16
+00:06:16,004 --> 00:06:23,743
+Herkes aslında bunu alırsa oradan da, yani ben de öyle bir yerden yükleyip formatı göndereceğim size.
+
+17
+00:06:24,323 --> 00:06:30,123
+Yani template değil aslında hocam ama detaylarını veriyor. Yani nerede ne olmalı onu bir yüklendiriyor.
+
+18
+00:06:31,923 --> 00:06:47,503
+Evet, içindekiler listesi gibi benim de göndereceğim bu tip bir şey olacak. Ben de AVS'e koyarım ama zaten arkadaşınız buradan uzantısını vermiş.
+
+19
+00:06:49,503 --> 00:06:53,043
+Evet, yani sınav için 9. hafta diye.
+
+20
+00:06:53,524 --> 00:07:18,343
+Bu konuda belirlersek iyi olur. Çünkü daha sonra sizin makale sunumlarınız olacak, uygulama sunumlarınız olacak. O yüzden 9. haftada bunu bitirdikten sonra, sınavı bitirdikten sonra konularla ilişkili belki bir hafta daha ek yapacağım.
+
+21
+00:07:19,411 --> 00:07:38,411
+Konu olacaktır. Ondan sonra sizin sunumlarınız olacak. Dokuzuncu hafta uygun. Yüzdeleri için yüzde otuz final sınavı.
+
+22
+00:07:47,252 --> 00:08:07,951
+Bu vize, projeniz ve makale çalışmanızı ayırmak istiyorum. Aslında makale çalışmasında hem sunumunuz olacak hem de bana onu söylememiştim henüz.
+
+23
+00:08:13,076 --> 00:08:22,076
+sunumunuzu yaptıktan sonra dönem sonunda bana I3Play formatında
+
+24
+00:08:22,324 --> 00:08:48,304
+Konunuzu özetleyecek 3-4 sayfalık bir özet metin hazırlamanızı istiyorum. O da yine yüksek lisans öğrencisi olduğunuz için akademik bir yayın formatını, referansların verilmesi, özetin oluşturulması gibi.
+
+25
+00:08:50,303 --> 00:09:10,783
+Konunuzu başka bir makaleden faydalanarak bir review çalışması yapsanız da makale formatına nasıl getireceğinizi görmeniz için gerekli olacak.
+
+26
+00:09:16,128 --> 00:09:21,948
+%40 olarak paylaştıracağız.
+
+27
+00:09:21,948 --> 00:09:23,288
+Pardon.
+
+28
+00:09:27,567 --> 00:09:31,948
+%70'i...
+
+29
+00:09:36,371 --> 00:09:44,611
+Makale çalışmasına ağırlık vererek paylaştıracağım.
+
+30
+00:09:48,980 --> 00:09:51,160
+Sizin bu konuda bir öneriniz var mı?
+
+31
+00:10:07,956 --> 00:10:33,235
+Dersin slide'larını soruyorsunuz. Onları da özetleyerek bu sistemin içindeki dosyalara koyacağım. Şimdiye kadar çok önemsemedim onu. Çünkü dersin tekrarlarına da bakabiliyorsunuz diye. Ama buradan çalışmanız daha kolay olursa diye slide'ları da yükleyebilirim. Biraz özetleyerek yükleyeceğim yalnız.
+
+32
+00:10:45,652 --> 00:10:47,652
+Başka sorunuz var mı?
+
+33
+00:10:55,124 --> 00:10:58,124
+O zaman geçen haftaki dersin özetine geçebiliriz.
+
+34
+00:11:19,283 --> 00:11:26,203
+Evet, şunu da şöyle yazayım o zaman buraya. Hani herkese belirtmiş olalım.
+
+35
+00:11:58,100 --> 00:12:15,259
+Sadece ara sınavın haftasına belirlemiş olduk. Sınavın neteliğiyle ilişkili. Önümüzdeki hafta konuşuruz nasıl yapacağımızı.
+
+36
+00:12:27,283 --> 00:12:45,884
+Makale ödevi ile uygulama ödevi arasında olacak. Aslında yaklaşık olarak finalin vizenin uygulama projesinin ağırlıkları birbirine çok yakın olacak. Makale ödevi biraz daha fazla olacak.
+
+37
+00:12:54,131 --> 00:13:07,231
+Onların da tam yüzdesini önümüzdeki hafta sınavların yapısı konusunda biraz daha bilgi aldıktan sonra ağırlıkları konusunda net cevap verebileceğim.
+
+38
+00:13:07,231 --> 00:13:21,391
+O yüzden şimdi bir başladım ama tam emin olamadım sınav yapısını nasıl oluşturabileceğiz diye. O yüzden daha sonra onun üzerinde konuşalım.
+
+39
+00:13:24,500 --> 00:13:25,879
+Başka sorunuz var mı?
+
+40
+00:13:33,235 --> 00:13:35,596
+Şimdi
+
+41
+00:13:41,203 --> 00:13:45,923
+Dersen gelen arkadaşlar sayısı da 14'e ulaştı.
+
+42
+00:14:22,163 --> 00:14:30,943
+Hangi ölçüm sistemleri üzerinde durmuştuk geçen hafta? Software Matrix yazılım mühendisliğinin de önemli konularından bir tanesi.
+
+43
+00:14:30,943 --> 00:14:49,443
+Ve yazılım kalite konusuyla da iç içe. Aslında yazılım proje yönetiminde de ölçümle ilişkili konuşuyoruz ama proje yönetiminde daha çok.
+
+44
+00:14:49,775 --> 00:15:14,216
+Bir arşiv verisi oluşturup biten, var olan projelerde. Daha sonra bu bilgileri yeni bir projeye başlayacağımız zaman proje tahmininde, maliyet tahmininde, iş gücü tahmininde, süre tahmininde kullanmak üzere.
+
+45
+00:15:14,644 --> 00:15:32,724
+Bir bilgi birikimi olarak faydalanıyoruz yazılım ölçümünden. İlk başlayacağımız projenin büyüklüğünü ve maliyetini tahmin etmekte kullanıyoruz.
+
+46
+00:15:38,131 --> 00:15:43,951
+Niye gerekli? Kimin için? Hangi açıdan bakanlar için? Gereği nedir?
+
+47
+00:15:43,951 --> 00:15:47,951
+Evet, Software Matrix...
+
+48
+00:15:49,556 --> 00:16:01,456
+Çok klişe bir cümleyle başlar. Eğer bu her alan için geçerlidir, bütün metrik alanları için, ölçemediğinizi kontrol edemezsiniz.
+
+49
+00:16:20,307 --> 00:16:34,687
+Bir temeli hendese bilimini oluşturur. Mühendis de ölçme işlemi gerçekleştirendir denir.
+
+50
+00:16:41,268 --> 00:17:02,288
+Zorunluluğu var mühendisliğin. Birisi tasarım, diğeri ölçüm gerçekleştirmek. Yazılım mühendisliğinde de yazılım geliştirme adına hem tasarım önem taşıyor. Tasarım yapmadan programa geçmeyelim diyoruz. Bunun yollarını görüyoruz yazılım mühendisliğinde ayrıntılı olarak.
+
+51
+00:17:06,612 --> 00:17:12,572
+Yazılım üzerinde çeşitli ölçümler gerçekleştiriyoruz.
+
+52
+00:17:13,572 --> 00:17:20,132
+İşte yöneticiler için yazılım üretimi için maliyetin ne olacağına karar vermek,
+
+53
+00:17:21,132 --> 00:17:27,012
+farklı bölüm çalışanlarının ücretlerini belirlemek, personel verimliliğini ölçmek için,
+
+54
+00:17:27,672 --> 00:17:33,731
+yazılım ürünlerini yani altyapıda kullanılan yazılım ürünlerini kıyaslayabilmek için.
+
+55
+00:17:34,612 --> 00:17:48,791
+Bu ölçüm sistemlerini, metrikleri, ölçütleri kullanıyoruz. Kullanılıyor. Yani yöneticiler açısından bu anlamda önemi var.
+
+56
+00:17:50,632 --> 00:17:53,708
+Yazılım mühendisleri için ise...
+
+57
+00:17:53,748 --> 00:18:21,748
+Sistemin kalitesini izlemek için, geliştirdikleri sistemin tasarım süresince yapılan değişiklikler ve farklı gözden geçirmeler, test adımlarında bunlardan faydalanmak için, daha ölçülebilir terimlerle kalite ve performans gereksinimlerini belirleyebilmek için, sertifika çalışmalarında bu ölçütlerle tanımlamalar.
+
+58
+00:18:21,748 --> 00:18:47,748
+İyi bir yazılım ne kadar koddan oluşur, modüller, iyi bir yazılımda karmaşıklık derecesinin ölçülmesi, büyüklüğü nasıl etkiler gibi değerler kullanılır.
+
+59
+00:18:49,811 --> 00:19:08,371
+Bir de var olan ürünler, proje yönetiminde söylediğimiz gibi var olan ürünler uygulanan süreçlerden faydalanarak gelecekteki ürünler için tahminler yapılabilmesine gereksinim olur.
+
+60
+00:19:26,612 --> 00:19:39,992
+Yazılım ölçümünde hangi metrikler kullanılıyordu? Bunları da yine geçen hafta üzerinde durmuştuk.
+
+61
+00:19:39,992 --> 00:19:50,992
+İşte aritmetik karmaşıklık için hashtag metriğin daha diğer derslerinizde de gördüğünüz gibi, operatörler ve işlenenler...
+
+62
+00:19:52,147 --> 00:20:04,687
+Bu operatörlerin, işlenenlerin bulunduğu işlemler nasıl bir döngü içinde, yinelemeler içinde kullanılıyor, kaç kez döngüde çalışıyor.
+
+63
+00:20:07,284 --> 00:20:17,344
+Program uzunluğu, program hacmi, program gücü konusunda değerlendirmeler yapılabiliyor.
+
+64
+00:20:18,244 --> 00:20:27,444
+Ayrıca MacGabe'in bulduğu döngüsel karmaşıklık, cyclomatik kompleksli bize fikir veriyordu.
+
+65
+00:20:27,444 --> 00:20:34,444
+Burada da program grafını oluşturup, akış grafını oluşturup,
+
+66
+00:20:35,284 --> 00:20:43,764
+Bu akış grafı üzerinden döngüsel karmaşıklığı hesaplıyorduk.
+
+67
+00:20:44,184 --> 00:20:48,004
+Ve döngüsel karmaşıklığı hesapladığımızda bu ne işe yarıyordu?
+
+68
+00:20:49,864 --> 00:21:00,384
+İki ders öncesinde gördüğümüz saydam kutu testinde, temel yol testinde bu sayklomatik kompleksiyeti kullanmıştık.
+
+69
+00:21:00,384 --> 00:21:02,624
+Yani döngüsel karmaşıklığı.
+
+70
+00:21:03,059 --> 00:21:17,299
+Bunu nasıl hesaplıyorduk? Kapalı bölgeleri sayarak hesaplıyorduk. Bu bir farklı bir şeydi. Ortalama alma yöntemi için.
+
+71
+00:21:19,119 --> 00:21:26,880
+Önce bu akış grafı. Akış grafını çizerken deyimleri, düğümler olarak kullanıyoruz.
+
+72
+00:21:31,059 --> 00:21:41,000
+Kapalı alanları belirleyecek, akışı etkileyecek düğümler, kontrol deyimlerinin bulunduğu düğümler.
+
+73
+00:21:41,960 --> 00:21:50,139
+Bazen deyimlerle kontrol deyimlerini birleştirip tek bir düğüm olarak da gösterirsek aynı sonucu elde edebiliriz.
+
+74
+00:21:50,139 --> 00:21:51,139
+Çünkü sadece...
+
+75
+00:21:51,599 --> 00:22:00,239
+Bu akışta düğüm sayısı arttıkça kenar sayısı da artıyor ama kapalı bölgelerde farklılık olmuyor.
+
+76
+00:22:12,372 --> 00:22:25,872
+Düğüm sayısı, kenar sayısı arasında bir işlem yaparak bu döngüsel karmaşıklık değerini hesaplayabiliyoruz.
+
+77
+00:22:32,336 --> 00:22:44,256
+Benim hesapladığı döngüsel karmaşıklık değeri bize saydam kutu testiyle bir ilişki kurmuş oluyor.
+
+78
+00:22:44,256 --> 00:23:00,336
+Saydam kutu test tipleri olan, saydam kutu test tiplerinden olan iki şey vardı. Bir döngü testi, bir de temel yol testi.
+
+79
+00:23:00,336 --> 00:23:27,756
+Temel yol testinde bu MacGabe'in döngüsel karmaşıklık değeri bize kaç tane bağımsız yol olduğunu gösteriyor. Bu bağımsız yol sayısı da bize neyi veriyordu? Bağımsız yol sayısı temel yol testinde bize neyi hesaplamamıza yarıyordu?
+
+80
+00:23:32,596 --> 00:23:34,235
+[öğrenci], sen söyleyebilir misin?
+
+81
+00:23:37,355 --> 00:23:40,495
+Efendim hocam, soruyu bir daha alayım. Telefondaydım çünkü.
+
+82
+00:23:40,495 --> 00:23:51,795
+Bu Maccape yazılım ölçütünü gördüğümüzde akış grafı yoluyla döngüsel karmaşıklığı buluyoruz.
+
+83
+00:23:55,892 --> 00:24:07,872
+Temel yol testinde kullanıyoruz. Temel yol testinde neyi vermiş oluyor bize bu döngüsel karmaşıklık? Saklomatik kompleksi.
+
+84
+00:24:14,067 --> 00:24:18,628
+Yani branch'ın coverjını bulmaya yaramıyor muydu?
+
+85
+00:24:18,628 --> 00:24:29,768
+Evet, yani kaç tane akış var, program yolu var. Buradan yola çıkarak nerede kullanıyoruz bunu?
+
+86
+00:24:31,347 --> 00:24:38,948
+Test case'lerin bulunmasında yarıyordu. Kaç test case'in afrobandını bulmaya yarıyordu?
+
+87
+00:24:38,948 --> 00:24:52,288
+Evet, kaç tane test case bulmamız gerekecek? Bu sterklomatik kompleks sayısı kadar en az test case'imiz olmalı ki bütün yolları deneyelim.
+
+88
+00:24:59,347 --> 00:25:04,488
+Seti oluşturalım test etmek için. Evet, teşekkür ederim.
+
+89
+00:25:08,147 --> 00:25:14,167
+Ayrıca Maccape ölçüsü en yüksek modül büyüklüğünü de saptamakta kullanılabilir.
+
+90
+00:25:14,167 --> 00:25:20,347
+Yani tasarım sırasında da biz bunu kullanıyoruz.
+
+91
+00:25:34,483 --> 00:25:42,923
+Bu karmaşıklık sayısının ondan büyük olmamasının daha iyi olacağı sonucuna varılmıştır.
+
+92
+00:25:42,923 --> 00:25:45,923
+Döngüsel karmaşıklığın...
+
+93
+00:25:46,291 --> 00:25:55,571
+Bu sayı aşması halinde modülün test edilmesinde baya zorluk olacağı belirtilmiştir.
+
+94
+00:25:55,571 --> 00:26:02,051
+Şimdi bu Mach-Gap ölçüsünden başka karmaşıklıkla ilişkili.
+
+95
+00:26:03,051 --> 00:26:08,852
+Algoritmalar dersinde gördüğünüz algoritmik karmaşıklıklar da var.
+
+96
+00:26:09,511 --> 00:26:11,051
+Algoritma karmaşıklığı.
+
+97
+00:26:14,291 --> 00:26:32,811
+Burada da yaptığınız yazılım tasarımının, algoritmanın ne kadar karmaşık olduğu ile ilişkili bir fikir olmuş oluyor.
+
+98
+00:26:42,804 --> 00:27:07,444
+Kullandığımız büyüklük ölçütü vardı. Bu slide'da yok ama yazılım mühendisliği derslerinde gördüğümüz bir büyüklük ölçütü. Hatta ölçüm sistemi deyince hemen yazılımın büyüklüğü nedir? Yazılımın kapsamı konusunda yorum yapacağımız zaman.
+
+99
+00:27:07,887 --> 00:27:25,827
+Ne büyüklükte bir yazılım geliştireceğiz ya da geliştirilmiş olan yazılımın büyüklüğü nedir sorusuna cevap aradığımızda kullandığımız bir büyüklük ölçütüdür.
+
+100
+00:27:30,516 --> 00:27:43,836
+İki sistemimiz var genel olarak. Birisi dolaylı olarak ölçmek, diğeri de doğrudan ölçmek.
+
+101
+00:27:43,836 --> 00:27:55,856
+Doğrudan ölçmek yani tek bir değeri yazılımla ilişkili sayıp büyüklüğünü bulmak. Tek bir değeri saymak.
+
+102
+00:27:57,428 --> 00:28:15,168
+Kod sayısı ilk akla gelen ve birimimiz de Line of Code ya da Bin Code Satır, Kalog. Bunlar biraz tabii ki sübjektif.
+
+103
+00:28:17,332 --> 00:28:27,132
+Programın etkinliğine bağlı, programlama diline bağlı ama yine de bize bir fikir veriyor.
+
+104
+00:28:27,132 --> 00:28:38,132
+Ve burada da büyüklükle ilişkili ilk akla gelen ölçüm.
+
+105
+00:28:38,212 --> 00:28:41,212
+Çünkü en kolay ölçecek şey.
+
+106
+00:28:42,771 --> 00:28:56,651
+Bununla ilişkili de biraz daha kullanışlı yapmak için programlama dilleri arasında bir çevrim sisteminde oluşturulduğunu biliyoruz.
+
+107
+00:28:56,651 --> 00:29:06,451
+Ki kodlar arasında ölçüm gerçekleştirebilelim, yani denklik oluşturabilelim programlama dilleri arasında.
+
+108
+00:29:09,652 --> 00:29:23,992
+Bu noktada log ve k-log halen, yani ne kadar objektif değil desek de yorum yaparken kullanılan bir ölçüm sistemi.
+
+109
+00:29:23,992 --> 00:29:29,612
+Bunun dışında bir de function point vardı.
+
+110
+00:29:30,132 --> 00:29:45,172
+Function Point'i geçen hafta da üzerinde durmuştuk. Sizlere de sormuştum. [öğrenci], Function Point'i biraz açıklayabilir misin? [öğrenci], iyi de.
+
+111
+00:29:52,339 --> 00:29:53,099
+Ayağı burada mı?
+
+112
+00:30:01,619 --> 00:30:15,239
+[öğrenci], Function Point ile ilişkili bir açıklama yapabilir misin?
+
+113
+00:30:20,627 --> 00:30:24,619
+mikrofon sorunu vardır Erbahçe'nin değil mi?
+
+114
+00:30:37,556 --> 00:30:43,596
+[öğrenci], sen Function Point'i açıklayabilir misin?
+
+115
+00:30:45,175 --> 00:30:51,256
+Hocam, Function Point, fonksiyon sayısı diyebilir miyiz?
+
+116
+00:30:51,816 --> 00:30:52,175
+Evet.
+
+117
+00:30:55,776 --> 00:30:58,216
+Toplam fonksiyon sayısı kullanılan.
+
+118
+00:31:02,612 --> 00:31:08,252
+Onun da düşük olmasını istiyoruz. Düşük diyere sahip olmasını.
+
+119
+00:31:08,252 --> 00:31:18,652
+Fonksiyon noktası, Function Point işlev noktası olarak söyleyebiliriz ama açılımı şöyle.
+
+120
+00:31:18,784 --> 00:31:41,163
+Burada sonuçta projemizin büyüklüğü konusunda bir şeyler söylemek için, bir sayı bulabilmek için bunu yapıyoruz. Yani projemizin büyüklüğünü sayıya dökmek istiyoruz. Projenin büyüklüğü için az önce kod sayısı doğrudan ölçerek buluruz dedik.
+
+121
+00:31:46,784 --> 00:32:08,224
+Fakat ekranların büyüklüğü, girdi sayısı, çıktı sayısı, ne kadar ekranı var, arayüzü var, ne kadar sorgu oluşturuyor. Genellikle ticari yazılımlar için kullanılan bir şey. Bu amaçla çıkarım yapılmış.
+
+122
+00:32:13,364 --> 00:32:33,124
+Dosya sayısı da önem taşır. Kaç tabloluk bir uygulama deriz mesela. Bu tabloların büyüklüğü, input sayısı, output sayısı, sorgu sayısı, ara birim sayısı bunların hepsi bir tabloda.
+
+123
+00:32:34,036 --> 00:32:49,576
+Bunların hepsi yerleştirilir sayılarak. Bunların hepsi sayılabilecek değerler. Bu sayılabilecek büyüklüğü etkileyen değerleri belli ağırlıklarla topluyoruz.
+
+124
+00:32:49,576 --> 00:33:00,576
+Yani hepsinin ağırlığı aynı değil. Girdi sayısıyla dosya sayısını kıyasladığınızda bir programın büyüklüğü için dosya sayısı daha ağırlıklı etkendir.
+
+125
+00:33:02,036 --> 00:33:08,864
+Bunları birleştirip bir değer elde ediyoruz. Ama bu değer...
+
+126
+00:33:08,864 --> 00:33:23,264
+Bunlar tek başına yeterli değil. Function Point ilk oluşturulurken 14 tane de soru sorularak, bu da ağırlıklı değerler verilmiş 0'dan 5'e kadar.
+
+127
+00:33:36,864 --> 00:33:53,264
+Bu sorulara göre de bir düzeltme faktörü uygulanıp bütün bu bileşenlerle function point değeri hesaplanıyor.
+
+128
+00:33:54,099 --> 00:34:02,599
+Bu da bir büyüklük göstergesi olacak, büyüklük ölçütü olacaktır.
+
+129
+00:34:04,000 --> 00:34:07,000
+Dolaylı, bu yüzden dolaylı diyoruz.
+
+130
+00:34:07,119 --> 00:34:10,920
+Yani tek bir şeyi ölçüp söylemiyoruz büyüklük değerini.
+
+131
+00:34:18,708 --> 00:34:26,188
+Birleştirip bir değer elde ediyoruz Function Point'i hesaplarken.
+
+132
+00:34:27,188 --> 00:34:49,588
+O yüzden dolaylı ölçümlerden birisidir diyoruz ama büyüklük konusunda da. Tabi bu saydıklarım hep şey, girdi sayısı, çıktı sayısı, ara birim sayısı, ekran sayısı, sordu sayısı. Bunlara baktığınızda bunlar hep ticari yazılımlarda daha çok önemlidir.
+
+133
+00:34:55,188 --> 00:35:23,108
+O yüzden ticari yazılımlarda daha çok girdi çıktı, güzel raporlar almak, çok fazla veri kullanmak önemlidir. Bu Function Point de seneler önce ticari yazılımlar için büyüklük yorumu yapmak üzere çıkarılmış ve çok da kullanım alanı bulmuş.
+
+134
+00:35:23,188 --> 00:35:37,628
+Bir ölçüm sistemi. Evet, geçen hafta da bunun üzerinde durmuştuk. Bu slide'da yok ama yine yazılım mühendisliğindeki bilgilerimizi hatırlatarak derste bahsetmiştik.
+
+135
+00:35:37,628 --> 00:35:45,307
+Hatta [öğrenci] da bunun yazılım mühendisliğindeki sorulara göre.
+
+136
+00:35:45,775 --> 00:35:52,635
+Konulara göre hatırlamışsınız dediğimde o da açıklama yapmıştı değil mi?
+
+137
+00:35:54,095 --> 00:35:54,775
+Evet hocam.
+
+138
+00:35:55,215 --> 00:36:01,355
+Evet, tamam. O zaman bunu hatırlamış oldunuz artık.
+
+139
+00:36:01,355 --> 00:36:03,355
+Şimdi...
+
+140
+00:36:11,284 --> 00:36:32,824
+Başka bir şey de, konuda yazılım ölçümü konusunda, yani yazılımla ilişkili yapılan ölçümler konusunda bir tanesi de güvenirlik modelleriydi.
+
+141
+00:36:35,507 --> 00:36:40,327
+Reliability, güvenirlik modelleri hakkında ne söyleyebiliriz?
+
+142
+00:36:54,900 --> 00:37:11,720
+Güvenirlik Reliability bizim kalite özelliklerinde gördüğümüz bir kavram. Yazılımların doğru sonuç vermesini isteriz yazılım kalite özellikleri o çerçevesinde.
+
+143
+00:37:15,215 --> 00:37:34,555
+Bu doğru sonuca ne kadar güvenebiliriz? Ne kadar hata yüzdesi nedir? Burada da bunu belirtiyoruz. Yazılım güvenirliği, relabileti, geçmiş bilgilere ve teste dayalı olarak.
+
+144
+00:37:34,963 --> 00:37:51,703
+Ne kadar toplam işletim süresinde ne kadar başarılı sonuçlar vermiş, başarı oranı nedir? Ayrıca bu farklı modeller kullanılıyordu.
+
+145
+00:37:58,804 --> 00:38:09,944
+Bir düzeltme yapıldıktan sonraki hata sayısı gibi değerlerle güvenirlik modellerinde sonuçlar buluyoruz.
+
+146
+00:38:24,340 --> 00:38:38,780
+İstatistik değerlendirmeler gerçekleştirmek, kullanım süresi içinde ne kadar toplam hata bulunmuş, buna göre güvenirlik düzeylerinin oluşturulması.
+
+147
+00:38:39,347 --> 00:39:03,488
+Söz konusu oluyor. Birçok model var. Şurada da adını saydığımız. Bu birçok modelde hangisini kullanacağız? Yüze yakın güvenirlik modeli var. Farklı uzmanların çalıştığı. Ne kadar kolay ölçebiliyoruz güvenirliği?
+
+148
+00:39:04,115 --> 00:39:28,376
+Bu modele göre. Yazılımın tamamı mı yoksa bir bölümünü kullanmak yeterli mi bu modeli kullanıldığında? Dış etkenlerden etkileniyor mu? Bunlar uygulamamıza ne kadar uygun olduğunu belirleyen uygulama değerleri.
+
+149
+00:39:33,235 --> 00:39:59,235
+Geçen hafta bir de program içindeki ölçüm sistemlerinden bahsettik. Özellikle nesneye yönelik uygulamalarda farklı uygulama modelleri vardı.
+
+150
+00:40:02,068 --> 00:40:26,268
+Bizim nesneye dayalı uygulamalarda kullandığımız işte CK metrikleri, Mood metrikleri gibi farklı metrikler var. Bunları da hatırlattık. Nesneye dayalı programlama derslerinden, nesneye dayalı tasarım derslerinden hatırlayabilirsiniz.
+
+151
+00:40:26,868 --> 00:40:30,028
+Ayrıca yüksek lisansta da Yunus Emre.
+
+152
+00:40:30,068 --> 00:40:39,028
+Hocadan Nesne'ye dayalı tasarım dersi almış olabilirsiniz. Burada da geçmiştir.
+
+153
+00:40:40,628 --> 00:40:49,568
+Ama hepiniz için bir birleşim yapmak üzere dersle ilgili. Ondan da bahsedeceğim.
+
+154
+00:41:38,900 --> 00:42:03,900
+Geçen haftada CK metrikleri üzerinde durmuştuk. Nelerdi? Diğer yazılımlarda çok üzerinde durulmayan sınıflara bağlı, özellikle nesneye yönelik yaklaşımda var olan sınıflara bağlı özellikler...
+
+155
+00:42:06,099 --> 00:42:22,419
+Nelerdir? Hem bu özellikler hem de bu özellikleri nasıl ölçüyoruz? Sayısal hale dönüştürüyoruz. Niteliklerden bahsediyoruz bazı şeylerden ama bunların ne kadarını sayısala dönüştürebiliyoruz?
+
+156
+00:42:28,628 --> 00:42:39,628
+Paket halinde nesneye dayalı metrik sistemi diye tanımlıyoruz. Biz şu anda Çitemberk Kemerer'in...
+
+157
+00:42:41,492 --> 00:42:49,332
+CK metrikleri üzerindeki ölçüm sistemleri üzerinde duruyoruz.
+
+158
+00:42:50,272 --> 00:42:54,072
+Sınıfın ağırlıklı metot sayısı, Weighted Methods Per Class.
+
+159
+00:42:55,352 --> 00:42:57,232
+Bu bir birimi.
+
+160
+00:42:59,052 --> 00:43:03,412
+Bir sınıftaki metotların karmaşıklığının toplamı.
+
+161
+00:43:05,472 --> 00:43:06,492
+Burada...
+
+162
+00:43:08,980 --> 00:43:36,200
+Tekrar kullanılabilirliği, yeniden kullanılabilirliği etkiler bu değer. Sınıfın metotlarının sayısı ve metotlarının karmaşıklığı, yani bakıma ne kadar çok zaman harcarız. Bunu etkiler bu ölçüm.
+
+163
+00:43:36,692 --> 00:43:38,311
+Ey...
+
+164
+00:43:43,923 --> 00:44:02,604
+Sınıf sayısı çok olan sınıfların uygulamaya özgü olma ihtimali yüksektir. Uygulamaya özgü, domain alana özgü yaklaşım ve tekrar kullanılabilirliği de daha düşük olur.
+
+165
+00:44:03,023 --> 00:44:26,483
+Kalıtım ağacı derinliği, Depth of Inheritance Tree, sınıfın kalıtım ağacının köküne uzaklığıdır. Hiçbir sınıftan türetilmemiş sınıflar için bu sıfırdır. Eğer çoklu kalıtım varsa en uzak köke olan uzaklık kabul edilir bu değer.
+
+166
+00:44:31,603 --> 00:44:48,023
+Daha kalıtım ağacı, kalıtım hiyerarşisinde daha derinde olan sınıflar daha çok metot türettikleri için bunların davranışlarını tahmin etmek zordur.
+
+167
+00:44:49,123 --> 00:44:55,844
+Derin kalıtım ağaçları kullandığımızda tasarım karmaşıklığı daha fazla olur.
+
+168
+00:44:58,291 --> 00:45:19,731
+Bu da bizim ölçebileceğimiz bir şey. Alt sınıf sayısı, sınıftan doğrudan türetilmiş alt sınıfların sayısı. Eğer bir sınıf çok fazla alt sınıfa sahipse, bu durum kalıtımın yanlış kullanıldığının bir göstergesi olabilir.
+
+169
+00:45:22,867 --> 00:45:31,807
+Çok fazla alt sınıfı olan sınıfların metotları daha çok test etmeyi gerektirir.
+
+170
+00:45:34,807 --> 00:45:41,807
+Demek ki bu metreye baktığımızda çocuk sayısı number of children değerine baktığımızda...
+
+171
+00:45:42,963 --> 00:45:51,264
+Bu sınıfı test etmek için daha fazla bütçe ayıracağımızı, daha fazla iş gücü gerekeceğini bulabiliyoruz.
+
+172
+00:45:58,708 --> 00:46:14,548
+Nesne sınıfları arasındaki bağımlılık. Bu bağımlılık coupling. Yani CK metrikleri içinde var, diğer nesneye yönelik metrikler içinde var. Ayrıca yapısal yaklaşımda da geçiyor.
+
+173
+00:46:16,896 --> 00:46:22,275
+Sınıfın bağımlı olduğu sınıf sayısı diye tanımlıyoruz.
+
+174
+00:46:27,572 --> 00:46:45,771
+Modüler yaklaşım, yapısal programlamada ise modüller arası bağlılık diye geçer ve tasarım sırasında coupling'i çok fazla olmamasına dikkat edin denir.
+
+175
+00:46:55,572 --> 00:47:15,172
+Olmamasına dikkat edilmesi gerekir denir. Burada sınıflar arasında kalıtım yoksa iki sınıf arasında bağımlılık vardır.
+
+176
+00:47:17,076 --> 00:47:42,336
+Aşırı bağımlılık tasarıma zarar verir. Bu da neyi getirir? Biz yeniden kullanılabilirliği önemsiyoruz. Özellikle nesneye yönelik yaklaşımı bunun için kullanıyoruz. Yeniden kullanımı azaltır. Sınıfların birbiriyle çok iç içe çok bağlı olması. Bir sınıf ne kadar bağımsızsa başka uygulamalarda.
+
+177
+00:47:42,768 --> 00:48:04,768
+O kadar yeniden kullanılabilir olur. Bağımlılıktaki artış bakımı da zorlaştırır. Aynı zamanda tasarımın farklı parçalarının ne kadar karmaşık test edilebileceği hakkında da fikir verir. Yani test maliyeti de artacaktır.
+
+178
+00:48:14,099 --> 00:48:20,800
+Bir diğer ölçütler CK metrikleri içindeki.
+
+179
+00:48:39,668 --> 00:48:53,588
+Response for a Class, sınıfın tetiklediği metot sayısı. Verilen sınıftan bir nesnenin metotları çağrıldığında bu nesnenin tetikleyebileceği tüm metotların sayısıdır.
+
+180
+00:48:56,788 --> 00:49:21,788
+Bu metrik sınıfın test maliyeti hakkında fikir verir yine. Bir mesajın çok sayıda metodun çağrılmasını tetiklemesi, sınıfın testinin ve hata ayıklamasının zorlaşması demektir. Bir sınıftan fazla sayıda metodun çağrılması sınıfın karmaşıklığını arttıran bir işarettir.
+
+181
+00:49:24,275 --> 00:49:35,615
+En sonda da Likom değeri, Likom Cohesion in Methods, metotların uyumluluğu.
+
+182
+00:49:35,615 --> 00:49:38,115
+Burada da bir metrik.
+
+183
+00:49:45,619 --> 00:49:50,259
+Bir sınıftaki iç bağlılığı, iç uyumu gösterir.
+
+184
+00:49:51,779 --> 00:50:00,000
+C1 sınıfının M1, M2, Mn metotları olduğunu ve İ kümesinin de Mi metodunda kullanılır.
+
+185
+00:50:00,000 --> 00:50:13,320
+Nitelik değişkenleri kümesi olduğunu kabul edersek, Likom bu en kümenin kesişiminden oluşan ayrık kümelerin sayısıdır diye bir tanımlama gelir.
+
+186
+00:50:27,155 --> 00:50:35,956
+Daha özet bakarsak, Cohesion bir sınıfın kendi iç uyumunu gösterir.
+
+187
+00:50:39,135 --> 00:50:55,956
+Özelliklerin, yerel değerlerin birbiriyle uyumunu yine metotlarında birbiriyle sadece o sınıfa has özelliğini belirtecektir.
+
+188
+00:51:00,692 --> 00:51:22,652
+Yani nesneye dayalı uygulamalar için yazılımda ölçebileceğimiz değerler. Hem hashtag metri gibi bütün programlarda aritmetiksel işlemlerin yoğunluğu konusunda bize bilgi veren değerler.
+
+189
+00:51:28,628 --> 00:51:39,628
+Line of Code, Function Point gibi değerler. Hem Maccape gibi test ve tasarımda önemli olan...
+
+190
+00:51:43,284 --> 00:52:02,664
+Döngüsel karmaşıklık, yani kontrol değişkenlerinin sadece döngüler değil, tüm kontrol değişkenlerinin sayısıyla tasarımdaki algoritmik yol değerlerini bize veren ölçütler.
+
+191
+00:52:07,219 --> 00:52:27,559
+Sadece bir sanat olarak yapmak değil de yazılım geliştirmeyi ölçmeyle birleştirerek bir mühendislik uygulaması halini dönüştüren etkenler bu ölçütler.
+
+192
+00:52:29,588 --> 00:52:44,947
+Bu tasarım sırasında, yazılımın tasarımı sırasında bu değerleri ölçerek daha iyi bir yazılım geliştirmeyi sağlamış oluyoruz.
+
+193
+00:52:48,820 --> 00:53:03,480
+Güvenirlik gereksinimini de non-functional requirementlardan birisi olan bunu da istatistiksel modellerle en iyiye çekmiş oluyoruz.
+
+194
+00:53:04,820 --> 00:53:08,020
+Bunları geçen haftada konuşmuştuk.
+
+195
+00:53:11,699 --> 00:53:15,819
+Tekrarla gittiğim için tekrar üzerinde durdum.
+
+196
+00:53:15,819 --> 00:53:23,659
+Şimdi bu haftanın konusu test yönetimi.
+
+197
+00:53:24,179 --> 00:53:47,820
+Test yönetimini nasıl gerçekleştiriyoruz? Bu aslında sizin uygulama projenizde de gidiş yolunuzu biraz açacak olan bir konu. İsterseniz buna geçmeden önce bir ara verelim. Ondan sonra yeni konuya geçelim.
+
+198
+00:54:00,500 --> 00:54:02,500
+Evet, 10 dakika ara veriyoruz.
+
+199
+01:11:50,420 --> 01:12:02,260
+Evet, şimdi test planlama ve yönetimle ilişkili yeni slide'ı paylaşacağım sizinle.
+
+200
+01:12:11,988 --> 01:12:15,288
+Saiti görebiliyor musunuz?
+
+201
+01:12:16,888 --> 01:12:17,568
+Evet hocam.
+
+202
+01:12:17,568 --> 01:12:19,208
+Tamam, teşekkürler.
+
+203
+01:12:20,288 --> 01:12:33,788
+Evet, yazılım, test planlama ve yönetim. Burada biz hangi konudan bahsedeceğiz? Test spesifikasyonu belgelemesi nasıl hazırlanır?
+
+204
+01:12:34,323 --> 01:12:50,923
+Bu test spesifikasyonunun elemanlarından bir tanesi test planı. Test planında neler var? Test senaryoları nasıl hazırlanır? Test yönetimini nasıl gerçekleştiririz?
+
+205
+01:12:55,923 --> 01:13:01,423
+Bakım çalışmasını nasıl oluştururuz?
+
+206
+01:13:02,823 --> 01:13:11,083
+Çok kısa da konfigürasyon yönetimi nedir tanımlayacağız?
+
+207
+01:13:11,083 --> 01:13:17,023
+Ama konfigürasyon yönetimi konusuna girmeyeceğiz.
+
+208
+01:13:23,796 --> 01:13:25,096
+Ne anlıyoruz?
+
+209
+01:13:41,363 --> 01:13:42,043
+Daha büyütelim.
+
+210
+01:13:51,956 --> 01:13:54,316
+Test planlama ve yönetim.
+
+211
+01:13:55,876 --> 01:14:03,456
+Test yönetimi, test kapsamında gerçekleştirilen işlemlerin sıralanması.
+
+212
+01:14:04,536 --> 01:14:06,695
+Bu işlemler nelerdir?
+
+213
+01:14:09,140 --> 01:14:27,239
+Bunu şöyle bir blok diagramda da bakarsak. Öncelikle test metodolojimize karar veriyoruz. Yani test ederken hangi sırayı uygulayacağız, hangi işlemleri yapacağız ve bunu hangi modele göre yapacağız.
+
+214
+01:14:37,140 --> 01:14:55,600
+Testi gerçekleştireceğimiz zaman önce planlama yapıyoruz. Daha sonra testin tasarımını yapıyoruz.
+
+215
+01:14:59,923 --> 01:15:11,984
+Aşamasına geçiyoruz. Yani testi gerçekleştirmeden önce, önce planlıyoruz, sonra tasarlıyoruz, sonra testi oluşturuyoruz.
+
+216
+01:15:11,984 --> 01:15:18,264
+Şimdi bakalım test kapsamında tabii ki bu yaptığımız işlerde.
+
+217
+01:15:18,771 --> 01:15:31,612
+Nasıl yaptığımızı belirten bir belgede oluşturuyoruz. Yazılım testlerinin tanımlanması, planlanması, düzenlenmesi ve belgelenmesi.
+
+218
+01:15:33,235 --> 01:15:52,855
+Test spesifikasyonunda belirtilir. Bu belge, sizin hazırlayacağınız projede de neler olacak? Test planları, test senaryoları, test verisi olarak kullanılan senaryolar.
+
+219
+01:15:53,332 --> 01:16:11,832
+Test işlemleri, testi nasıl gerçekleştirdik, nasıl bir ortamda gerçekleştirdik ve gerçek beklenen sonuçlar nelerdi, gerçek sonuçlarımız neler oldu. Referanslar ve eklerle böyle bir belgeyi tamamlamış oluyoruz.
+
+220
+01:16:17,043 --> 01:16:39,963
+Tam anlamıyla standartlardaki belge içeriğinin aynısını değil de daha özet halini istiyorsak, daha basit versiyonunu oluşturmanızı istiyorsak, yine bu test spesifikasyonunu, raporunu da aynı şekilde oluşturacaksınız.
+
+221
+01:16:43,891 --> 01:17:01,291
+Test yönetimi geri beslemeli bir süreç olarak gidiyor. Yani testteki hata mesajlarını da döküman testi içinde bulunduruyoruz.
+
+222
+01:17:01,291 --> 01:17:06,211
+Hata mesajı içeriği de belge olarak test ediliyor.
+
+223
+01:17:08,756 --> 01:17:24,216
+Kod testi yapılması gerekiyor. Burada Software Test Documentation standartı da test spesifikasyonunu tanımlamaktadır.
+
+224
+01:17:24,216 --> 01:17:36,756
+Burada numarayı yanlış yazmışım. 830 gereksinim belgesinin numarası. Numara yanlış ama IEEE standartlar el kitabında test...
+
+225
+01:17:36,756 --> 01:17:50,536
+Documentation diye bir standardımız var. Test spesifikasyonunu geliştirirken önce test spesifikasyonunu yazıp onun üzerinden giderek inceliyoruz.
+
+226
+01:17:50,536 --> 01:17:58,536
+Bu incelemeye dayalı olarak düzeltmeler oluyor ve bunu yenileyerek sürekli yaşayan hale getiriyoruz.
+
+227
+01:18:01,492 --> 01:18:09,432
+Şimdi test planı siz de oluşturacaksınız. Test planında neler vardır?
+
+228
+01:18:11,315 --> 01:18:38,855
+Bundan daha az madde de olabilir. Mutlaka gerekli olacaklar. İşte test stratejisi. Yani bir Eceal Proje Yönetimi, Eceal Süreç Modeli kullandıysanız, Test Travel Development yapmışsanız, o zaman buna belirtiyorsunuz. Test stratejiniz test edilecek.
+
+229
+01:18:39,315 --> 01:18:48,056
+Bu sorunlarınız nelerdir? Hangi modüller test edilecek? Yazılımın bütünü test edilecekse bu yazılımın kapsamı nedir?
+
+230
+01:18:52,500 --> 01:18:59,500
+Test planı içinde öncelikle test adımlarınızı belirtiyorsunuz.
+
+231
+01:19:00,020 --> 01:19:06,079
+Doğrulama yöntemleri, bu her planda olması da olur.
+
+232
+01:19:06,079 --> 01:19:13,079
+Testlerin tamamlanma kriterleri, yani daha önceki bir dersimizde de...
+
+233
+01:19:16,307 --> 01:19:39,568
+Sözler olarak söylemiştim ama burada da geçecek zaten. Yani ne zamana kadar devam edecek test? İşte şu kadar hata oranına kadar diyebiliriz. Mesela şu kadar hatayı giderdikten sonra tamamlanma kriteri nedir? Yani test ne zamana kadar sürdürülecek?
+
+234
+01:19:44,340 --> 01:20:11,319
+Ne şekilde olacak? Test sorumlulukları nelerdir? Yani bir test ekibi varsa bu ekibi, ekibin görevlerini hangi testler, yazılım geliştiriciler tarafından yapıldı? Hangileri test grubunun hangi elemanları tarafından yapıldı? Test sorumlulukları, test ortamı, test ortamı işte sizden de mesela.
+
+235
+01:20:12,692 --> 01:20:15,692
+Geliştirdiğiniz...
+
+236
+01:20:18,323 --> 01:20:33,224
+Projede sistem testini yaparken özellikle, birim testini yaparken kendi yazılımınıza uygun test tool'ları araştırmanızı şimdiden söylemiştim.
+
+237
+01:20:34,043 --> 01:20:40,523
+Test ortamında böyle bir şey. Yani hangi tool'ları, ne amaçla hangi tool'lar kullanılacak?
+
+238
+01:20:40,523 --> 01:20:43,484
+Eleman ve eğitim ihtiyacı var mı?
+
+239
+01:20:43,956 --> 01:21:07,755
+Mesela kullanıcı testi için bir tester alınacak mı? Test takvimi dediğimizde nasıl ki biz proje planı oluşturuyorsak, proje planının içinde de bir Gantt diagramı hazırlıyorsak, projenin hangi seviyesi, hangi tarihte olacak, hangi iş adımları var diye test içinde aynı şey geçerli.
+
+240
+01:21:11,764 --> 01:21:29,424
+Bir Gantt Diagramı içinde hangi tarihte hangi testler uygulanacak, ne zaman bitecek ve risk yönetimi eğer test planında planladığımız gibi gitmeyen şeyler.
+
+241
+01:21:30,195 --> 01:21:53,136
+Olursa, risk olacak şeylerle karşılaştığımızda bunları nasıl bertaraf edeceğiz? Test çıktısı olarak göreceklerimiz nelerdir? Bu plandaki ayrıntılar, az önce de söylediğim gibi burada da yazıyor zaten, değişebilir.
+
+242
+01:21:54,579 --> 01:22:10,420
+Daha az maddeyle de ama test stratejisi ve test edilecek öğeler, testin tamamlanma kriteri, hata ve test sonuçları nasıl raporlanacak, test ortamı nedir?
+
+243
+01:22:13,043 --> 01:22:30,023
+Test takvimi ve sorumlulukları çalışanlar, risk durumları, test için risk durumlarının incelenmesi, bunlar bir test planında mutlaka olmalıdır.
+
+244
+01:22:32,603 --> 01:22:37,623
+Ayrıntılar, başlıklar da küçük değişiklikler olabilir.
+
+245
+01:22:40,115 --> 01:22:58,956
+Bu test planını oluşturacağız. Test planını oluşturduktan sonra bir de test senaryosu var. Yani test senaryosu dediğimizde biz ne anlama geliyordu? Test veri grupları.
+
+246
+01:23:00,275 --> 01:23:24,155
+Özellikle kullanıcı testi için hangi case'ler bizim senaryolarımız? Bu test senaryosunun adı, yani hangi test bu? Yazarı, tarihi, kim oluşturdu bunu?
+
+247
+01:23:24,735 --> 01:23:44,055
+İlgili gereksinimler, hangi gereksinimi test ediyor ya da amacı ne bu testin? Ön koşulu var mı, varsayımları var mı? Test girdileri, test senaryosu adımları ve beklenen sonuçlar nelerdir?
+
+248
+01:23:51,412 --> 01:23:59,412
+Nasıl bir sonuç bekliyoruz? Bunların hepsi test senaryosunda bulunur. Test senaryoları...
+
+249
+01:24:00,212 --> 01:24:27,352
+Bu konuda bizim yazılım belgelerimiz arasında da yer alır. Yani daha sonra saklanacak belgeler arasında da yer alır. Hangi durumlar, hangi veriyle test edilmişti? Bunu daha sonradan da mesela işte bu modülde bir hata çıktı ama daha önce bunu neyle test etmiştik, niye bulamadık? Böyle bir geri dönüş olabilir.
+
+250
+01:24:36,851 --> 01:24:45,931
+Test yönetiminden söz ettiğimizde, test çalışma ekibimiz nasıl olmalı?
+
+251
+01:24:45,931 --> 01:24:56,931
+Yazılımın test edilmesi sürecinde, testte bağımsızlık özelliğinin sağlanması gerekir.
+
+252
+01:24:57,591 --> 01:25:00,931
+Dolayısıyla testten sorumlu olan kişiler...
+
+253
+01:25:01,184 --> 01:25:18,884
+Yazılımı tasarlayan ve yazılımı geliştiren gruptan olmazsa daha iyi olur. Eğer böyle bir ekip oluşturabiliyorsa ayrı bir ekibin oluşturması testi daha doğru olacaktır.
+
+254
+01:25:29,076 --> 01:25:48,996
+Gerekli test hazırlıklarını yapmak, testleri yürütmek, testlerde bulunan hataları yazılımcıya bildirmek, testi izlemek ve test sonuçlarını raporlamak. Bunlar test ekibinin görevleri.
+
+255
+01:25:52,979 --> 01:26:10,139
+Genellikle bir test ekibi de vardır orta ve büyük boy yazılım şirketlerinde. İyi bir testçinin bütün hataları yok etmeyi beklememesi gerekli.
+
+256
+01:26:17,395 --> 01:26:40,595
+Her yazılım projesinde o yazılım projesinin optimum test miktarı farklıdır. Bunu da şöyle bir şekilde daha iyi görebiliyoruz. Kaçırılan bug sayısı kırmızıyla gösteriliyor. Test maliyeti de mavi ile gösteriliyor.
+
+257
+01:26:45,587 --> 01:27:00,627
+İlk başta test maliyeti yok. Yukarıya doğru gidiyor test süreci, test miktarı arttıkça maliyet artıyor. Kaçılan bug sayısı da başta daha fazla.
+
+258
+01:27:02,927 --> 01:27:09,007
+Ama test süreci arttıkça kaçılan bug sayısı azalıyor.
+
+259
+01:27:10,347 --> 01:27:13,807
+Şimdi biz ne zamana kadar teste devam edelim?
+
+260
+01:27:13,807 --> 01:27:20,648
+Maliyet önemli. İhmal edilebilir bir test.
+
+261
+01:27:22,579 --> 01:27:30,840
+Optimum Test miktarında sonra artık ihmal edilebilir bir bug kalacaktır mutlaka.
+
+262
+01:27:30,840 --> 01:27:41,399
+Burada şu ikisinin kesişim noktası Optimum Test miktarını veriyor.
+
+263
+01:27:48,724 --> 01:27:58,724
+Test ekibinde olduğumuzda bu optimum test miktarını doğru yakalayabilmek.
+
+264
+01:28:00,384 --> 01:28:05,724
+Yazılım kalitesiyle uğraşan akademik camiada...
+
+265
+01:28:06,579 --> 01:28:26,100
+Bu optimum test miktarı konusunda, bunun nasıl bulunacağı konusunda çalışmalar var. İdeal test sayısı ne kadardır gibi makaleler var. Ya da bu ideal sayıyı hangi yöntemlerle bulabiliriz?
+
+266
+01:28:34,579 --> 01:28:35,879
+Çalışılıyor.
+
+267
+01:28:38,039 --> 01:28:52,859
+Şimdi, yazılım yaşam döngüsü boyunca biz test etkinliklerini nasıl görüyoruz?
+
+268
+01:29:01,811 --> 01:29:12,572
+Yazılım-Yaşam döngüsü dediğim gibi farklı yazılım geliştirme süreç modellerinde daha değişik olabilir.
+
+269
+01:29:12,572 --> 01:29:20,572
+Ama genellikle yazılımın planlanması sırasında yazılım geliştirme sürecinin...
+
+270
+01:29:22,131 --> 01:29:39,211
+Sistemle ilişkili bir test planı gerçekleştirilir. Yazılım kalite planı gerçekleştirilir. Kalite planında hangi kalite özellikleri ne şekilde sağlanacak bu planlanır.
+
+271
+01:29:39,923 --> 01:29:51,984
+Standartlar planlanır. Gereksinim analizinde alt sistemlerin test planları oluşturulur.
+
+272
+01:30:08,180 --> 01:30:13,120
+Nasıl test edileceği de belirtilir.
+
+273
+01:30:17,043 --> 01:30:21,224
+Tasarım sırasında modüllerin test planı oluşturulur.
+
+274
+01:30:21,583 --> 01:30:30,203
+Test tanımları gerçekleştirilir ve bir yandan da eğitim el kitapları oluşturulur.
+
+275
+01:30:31,203 --> 01:30:38,463
+Gerçekleme aşamasında da zaten kodlamayı yapan kişi birim testi oluşturacak.
+
+276
+01:30:38,463 --> 01:30:49,463
+Daha sonra bu gerçekleme sırasında biten modüller, yazılım modülleri arttıkça bunların bütün...
+
+277
+01:30:49,583 --> 01:31:10,224
+Bütünlük işlemleri gerçekleştirecek. Sistem testi modül aşamasında da yapılır demiştim. Yani bir modül üzerinde de sistem testi gerçekleştirilebilir. Bütünlük testinden sonra genel bütün sistemin sistem testi yapılır.
+
+278
+01:31:17,583 --> 01:31:28,743
+Kurulum sırasında da artık kullanıcı testi ve test raporunun oluşturulması aşaması gerçekleştirilecektir.
+
+279
+01:31:33,908 --> 01:31:37,908
+Yazılımı bu şekilde test ediyoruz.
+
+280
+01:31:37,908 --> 01:31:43,908
+Yani test işlemini gerçekleştirirken...
+
+281
+01:31:44,256 --> 01:31:54,016
+Bu test işlemini nasıl gerçekleştirdiğimizi belirten bir spesifikasyon da oluşturuyoruz.
+
+282
+01:31:54,016 --> 01:32:03,216
+Belgeler bütünü oluşturuyoruz. Test spesifikasyonu dediğimizde test spesifikasyonunun içinde
+
+283
+01:32:03,712 --> 01:32:16,971
+Benim de sizden uygulama projenizde istediğim test planları, test senaryoları, test işlemleri beklenen sonuçlar ve gerçek test sonuçları olacak.
+
+284
+01:32:32,467 --> 01:32:34,927
+Nasıl oluşturacağınız.
+
+285
+01:32:38,676 --> 01:32:50,056
+Bugün gereksinim belgelerinizi bir kısmınız teslim ettiniz. Haftaya kadar da hepiniz teslim edeceksiniz.
+
+286
+01:32:50,056 --> 01:33:00,136
+Bu arada bazı arkadaşlarınız daha büyük projelerde birlikte çalışma imkanınız varsa çalışabilirsiniz demiştim.
+
+287
+01:33:00,876 --> 01:33:05,936
+Bazı arkadaşlarınızdan ortak çalışanlar çıktı ama en fazla iki arkadaşınız.
+
+288
+01:33:06,676 --> 01:33:29,556
+İki kişi birlikte çıktı. Birkaç grup oldu öyle. Yani buna izin vermiştim daha önce de. Şimdi de isteyenler olursa birlikte çalışabilirsiniz. Bunu birkaç arkadaşınız uyguladığı için hepinize söylüyorum.
+
+289
+01:33:32,851 --> 01:33:56,572
+Hazırlayacağınız belgeler de bu şekilde. Testden önce gereksinim raporlarınızı vereceksiniz. Sonra, sondan üçüncü haftada herkes bu test spesifikasyonlarını bana teslim edecek.
+
+290
+01:33:57,716 --> 01:34:01,216
+Hocam şu an hala uygulama seçiminde değişiklik yapabilir miyiz?
+
+291
+01:34:02,256 --> 01:34:03,372
+Yani...
+
+292
+01:34:03,667 --> 01:34:09,307
+Bir arkadaşınızla birleştirmek mi istiyorsunuz yoksa uygulamanızı mı değiştirmek istiyorsunuz?
+
+293
+01:34:09,608 --> 01:34:13,467
+Hocam değiştirmek istiyordum. Test kısmında biraz zorlanacağımı...
+
+294
+01:34:13,467 --> 01:34:20,067
+Olur, olur. Çünkü bu şey aslında iyi ki sordunuz. Hepiniz için geçerli bu.
+
+295
+01:34:21,028 --> 01:34:24,667
+İlk başta siz bir uygulama konusu seçtiniz ama...
+
+296
+01:34:27,636 --> 01:34:54,816
+Bir program seçelim diye seçtiniz. Şimdi bunları yapacaklarınızı gördükçe bu işleri yani test senaryosu hazırlamak, test ortamını oluşturmak, testi çalıştırmak, bunları raporlamak, bunları yapabileceğiniz, en kolay yapabileceğiniz, en hakim olabileceğiniz uygulamayı seçebilirsiniz.
+
+297
+01:34:55,731 --> 01:34:56,971
+Teşekkürler hocam.
+
+298
+01:34:56,971 --> 01:35:08,652
+O zaman şimdi gereksinim raporunu bildirmeden önce bugün ve yarın bildirin bana. Ki ondan sonra gereksinim raporlarınız gelecek.
+
+299
+01:35:09,372 --> 01:35:10,112
+Tamamdır hocam.
+
+300
+01:35:10,532 --> 01:35:21,971
+Tamam. Yani başka bu durumda olan varsa herkes için geçerli bu. Hani bunu sonradan da fark edebilirsiniz çünkü. İlk başta bir hızla.
+
+301
+01:35:22,836 --> 01:35:34,695
+Bir yazılım seçeyim diye girişmiş olabilirsiniz ama bu işleri daha rahat kotarabileceğiniz bir yazılım seçmeniz uygun olur.
+
+302
+01:35:39,956 --> 01:36:03,956
+Evet, şimdi bu test yönetimiyle ilişkili sorunuz var mı? Bunu neden projeyle birleştirdim? Projede test spesifikasyonu hazırlayacaksınız. O yüzden bu çerçevede bu konuyu işleyince aklınıza gelmiş soru projeyle ilgili soru olabilir ya da konuyla ilişkili soru olmuş olabilir.
+
+303
+01:36:06,228 --> 01:36:12,967
+Tekrar bir sormak istedim size. Var mı sorunuz?
+
+304
+01:36:13,907 --> 01:36:15,627
+Sorum olacaktı da.
+
+305
+01:36:16,268 --> 01:36:16,647
+Evet.
+
+306
+01:36:17,527 --> 01:36:27,387
+Burada test spesifikasyonunda projesi modelle göre seçiliyor değil mi? Test planı.
+
+307
+01:36:28,187 --> 01:36:30,807
+Test planı nasıl seçiliyor mu?
+
+308
+01:36:31,220 --> 01:36:40,220
+Software Development Process Modeler'e göre seçilir. Mesela Waterform. Evet, evet. Evet. Evet. Evet. Evet. Evet.
+
+309
+01:36:40,220 --> 01:36:47,220
+Şimdi bu sistemlerimiz yapmadığımızda göre istediğimiz bir model mi seçmemiz gerekiyor.
+
+310
+01:36:48,756 --> 01:37:03,796
+Yani o modeli belirtirseniz, mesela ben Ecaile göre yapıyorum diye o zaman yani test metodolojiniz nedir dediğimizde.
+
+311
+01:37:07,604 --> 01:37:21,944
+Mesela siz diyeceksiniz ki biz Test Drive and Development yapıyoruz. Test planını daha erken oluşturuyoruz. Testleri daha erken planlıyoruz. Test tasarımlarını daha farklı oluşturuyoruz.
+
+312
+01:37:24,404 --> 01:37:41,404
+Bu noktada fark edecek. Yoksa yine yapacağınız iş aynı. Yine bir tane birim testi yapmanızı istiyorum. Bir tane sistem testi yapmanızı istiyorum. Bir kullanıcı testi yapmanızı istiyorum. Ama bunları raporlarken...
+
+313
+01:37:43,764 --> 01:37:55,304
+Yazılım Geliştirme Süreç modeline göre benim test metodolojimde de sıra açısından farklılıklar var diye belirtebilirsiniz.
+
+314
+01:38:03,220 --> 01:38:04,820
+Başka sorunuz var mı?
+
+315
+01:38:19,060 --> 01:38:40,020
+Sonuç olarak eğer birlikte çalışacağız veya ben konumu değiştirdim diyenler varsa bu iki günde perşembe günü akşamına kadar bana bildirebilirsiniz.
+
+316
+01:39:05,171 --> 01:39:11,931
+Evet, şimdi test sonrasında gerçekleştirdiğimiz işlemler nelerdir?
+
+317
+01:39:27,731 --> 01:39:44,871
+Teslim sonrasında kaliteyi sağlama, Software Maintenance, Yazılım Bakımı ve Konfigürasyon Yönetimi'ni de kısaca açacağım.
+
+318
+01:39:50,676 --> 01:40:03,676
+Yazılım sisteminin geliştirilmesi, ürünün müşteriye teslimiyle ve müşterinin kullanıma başlamasıyla tamamlanmış oluyor.
+
+319
+01:40:04,275 --> 01:40:14,415
+Ama kullanım sürecinde de Software Maintenance, bakım süreci ile karşı karşıyayız.
+
+320
+01:40:32,275 --> 01:40:52,175
+Şeklinde yürüyebilir. Bunlara baktığımızda en fazla uyarlama olduğunu görüyoruz. Ondan sonra hata düzeltme veya iyileştirme yarı yarıya kendi arasında paylaşıyor.
+
+321
+01:41:03,891 --> 01:41:18,411
+Müşteriye teslimden sonra test sırasında bulunamamış birçok işlem, performans ya da tasarım hataları ortaya çıkabilir.
+
+322
+01:41:18,411 --> 01:41:27,251
+Yazılımın yeteneğin bunların bulunması ve düzeltilmesi.
+
+323
+01:41:27,712 --> 01:41:32,692
+Söz konusu olabilir. Yani hata düzeltme şeklinde.
+
+324
+01:41:32,692 --> 01:41:42,112
+Tabii bu daha önce de değindiğimiz gibi yazılım geliştiricilere güven.
+
+325
+01:41:44,756 --> 01:42:05,396
+Eksilmesine de yol açacaktır. O yüzden hataları mümkün olduğu kadar en azı indirmeye çalışıyoruz. Ama yine de kalan hatalar olursa müşteri kullanımında bunların fark edilmesi bir güven eksikliğine de neden oluyor.
+
+326
+01:42:08,756 --> 01:42:26,756
+Yeteneğini, performansını iyileştirmek, kullanımını kolaylaştırmak üzere programa bazı eklemeler yapılabilir. Bu da yine yazılım geliştiricilere göre olabilir.
+
+327
+01:42:34,036 --> 01:42:54,775
+Yazılıma ekler istenilebilir. Gereksilme analizi, tasarım ve gerçekleştirme süreci çerçevesinde yeni eklemeler gerekebilir.
+
+328
+01:42:58,644 --> 01:43:16,703
+Bazı değişiklikler de uyarlamalardır. Yani sistemde müşterinin ilk başta farkına varmadığı ama daha sonra da bu yazılım üzerinde elde edilebileceğini anladığı.
+
+329
+01:43:17,268 --> 01:43:39,807
+Değişiklikler ya da süreçte bazı değişiklikleri olmuşsa bunları yazılıma aksettirilmesini isteyebilir. Bu tür değişiklikler olduğunda yazılım da maliyetli olacaktır tabii ki.
+
+330
+01:43:44,212 --> 01:43:50,472
+Yazılım geliştirme maliyetinden daha fazla bile olabileceğini biliyoruz.
+
+331
+01:43:52,472 --> 01:43:58,472
+Bakım maliyetlerinin azaltılması için bizim...
+
+332
+01:43:59,412 --> 01:44:13,412
+Yazılım kalite özellikleri içinde bakım ve onarıma elverişli, yani maintainability, bakım yapılabilir niteliği var kalite özellikleri içinde.
+
+333
+01:44:13,904 --> 01:44:30,783
+Bu bakım yapılabilir olması için yazılım mühendislerinin tasarımı daha iyi yapması, daha yetenekli olması, kolay işletilebilir bir sistem tasarlanması.
+
+334
+01:44:32,404 --> 01:44:49,464
+Programlama dillerinin standartlara uygun bir şekilde kullanılması, test programlarından yararlanılması bakım maliyetini azaltacaktır.
+
+335
+01:44:53,684 --> 01:45:13,644
+Yazılımı daha kolay bakım yapılabilir bir şekilde tasarlamak sonradan bakım maliyetini etkileyecektir. Baştan buna göre işlem yapmak gerekiyor.
+
+336
+01:45:16,384 --> 01:45:19,644
+Bakım ve onarıma elverişliliği.
+
+337
+01:45:19,967 --> 01:45:39,627
+Maintenability'i test kolaylığı, basitlik, değiştirilebilirlik, taşınabilirlik, güvenirlik ve esneklik özelliklerinin bir bileşkesi olarak ortaya çıktığını görüyoruz.
+
+338
+01:45:43,380 --> 01:45:52,380
+Daha kolay test edilebilirlik nedir? Daha kolay test edilebilmesi için bu yazılımın...
+
+339
+01:45:54,239 --> 01:46:11,199
+Modüler olması gerekecek. Daha kolay izlenebilir olması gerekecek. Tasarımın çok karmaşık yapılmaması gerekecek. Takip edilebilir olması için bu basitlik özelliği bu nedenle gerekli oluyor.
+
+340
+01:46:15,199 --> 01:46:19,199
+Değiştirilebilirlik özelliği olması.
+
+341
+01:46:20,287 --> 01:46:34,007
+Bütün bunlar yazılımın daha kolay bakım yapılabilmesine elverişliliği gösteriyor.
+
+342
+01:46:48,287 --> 01:47:02,847
+Daha maliyetli. Çünkü yazılım bakımı, software maintenance. Çünkü yazılım geliştirme sürecinin aynısını burada da uygulamamız gerekiyor.
+
+343
+01:47:03,847 --> 01:47:09,547
+Nerede hata? Gereksinim analizinde olabilir.
+
+344
+01:47:12,627 --> 01:47:26,247
+Tasarımda olabilir, kodlamada olabilir. Eğer gereksinimde ise en başa kadar dönüp birçok şeyi, buna bağlı farklı şeyleri de değiştirmek gerekecek.
+
+345
+01:47:26,247 --> 01:47:39,787
+Bu nedenle diğer alanların bakımından daha maliyetli olacak.
+
+346
+01:47:41,492 --> 01:47:43,492
+Şimdi teslim sonrasında...
+
+347
+01:47:48,532 --> 01:48:06,051
+Teslim sonrasında yapılacak başka şey de yazılım konfigürasyonunu sürdürebilmek, konfigürasyon yönetimini sürdürebilmek.
+
+348
+01:48:16,467 --> 01:48:18,467
+Bu maddeler...
+
+349
+01:48:23,028 --> 01:48:39,188
+Sadece kod değil, kodlar, belgeler ve veri yapıları. Bu ürünlere ait bütün maddeleri topluca yazılım konfigürasyonu, yazılım düzeni diyoruz.
+
+350
+01:48:39,188 --> 01:48:43,188
+Konfigürasyon item'da...
+
+351
+01:48:47,923 --> 01:48:58,503
+Bu incelenen modülün tanımlarıyla birlikte bir bütün olarak gösterilmesi.
+
+352
+01:48:58,503 --> 01:49:12,784
+Bunun için konfigürasyon tanımı, configuration identification her bir yazılım elemanının özelliklerini belirterek saklamak.
+
+353
+01:49:13,268 --> 01:49:30,807
+Konfigürasyon değişiklik kontrolü. Eğer yazılımda bir değişiklik yapılmışsa bu değişikliğin bizim konfigürasyon belgelerimize de yansıtılması.
+
+354
+01:49:32,979 --> 01:49:45,939
+Ki versiyon yönetiminde her bir yeni versiyonda temel değişiklikler bu konfigürasyon yapısına da yerleştirilir.
+
+355
+01:49:45,939 --> 01:50:00,000
+Konfigürasyon denetimi ve konfigürasyon raporlanması her adımın kontrol edilerek değerlendirilmesi standartlara uygulamayabilir.
+
+356
+01:50:00,000 --> 01:50:20,359
+Uygun olarak yapılıp yapılmadığının konfigürasyon raporlama ise herhangi bir durumda farklı kriterlere göre yazılımda yazılım parçalarıyla ilişkili bilgi alabilecek bir yapının oluşturulmasıdır.
+
+357
+01:50:24,659 --> 01:50:46,559
+Konfigürasyon yönetimi, yazılım konfigürasyon yönetimi etkinliklerini bu şekilde görüyoruz. Ayrıca yazılım konfigürasyonu son zamanlarda sektörde de önemli olan release yönetimiyle, software release management ile de iç içe bir kavram.
+
+358
+01:50:50,739 --> 01:50:52,739
+Yeni bir...
+
+359
+01:50:54,292 --> 01:51:08,772
+Teslim aşaması olduğunda bu noktada yazılım konfigürasyonu ne durumda, hangi değişiklikler oldu, bunu kaydetme işi iç içe yürüyen bir işlem.
+
+360
+01:51:08,772 --> 01:51:21,312
+Daha sonra bu Release Management'ta bahsettiğimizde konfigürasyon yönetimiyle ilişkisini de iç içe yapıda nasıl işlediğini de göreceğiz.
+
+361
+01:51:25,427 --> 01:51:35,167
+Konfigürasyon yönetiminde yine her şeyi standartlara bağlı olarak yapıyoruz.
+
+362
+01:51:35,907 --> 01:51:43,067
+Yazılım konfigürasyon yönetimi sürecinde standartları oluşturuyoruz.
+
+363
+01:51:43,067 --> 01:51:50,487
+Yani bu yazılım konfigürasyon yönetiminin planı nasıl oluşturulacak, bunun standartı var.
+
+364
+01:51:50,895 --> 01:52:16,135
+Bunun için bir rehber var. 828 ve 1042'de IEEE standartında bunlar anlatılıyor. Ayrıca ISO 9004 kalite yönetimi ve kalite sistem elemanlarında da yine yazılım konfigürasyon yönetiminin nasıl gerçekleştirileceği ile ilişkili.
+
+365
+01:52:16,692 --> 01:52:20,271
+Tanımlamalar mevcut.
+
+366
+01:52:21,811 --> 01:52:26,011
+Bugünkü dersle ilişkili sorunuz var mı?
+
+367
+01:52:40,115 --> 01:52:55,576
+Bugünkü ders aynı zamanda sizin uygulama projelerinizin de nasıl yönetileceğiyle ilişkili bir açıklama gibi oldu.
+
+368
+01:53:07,667 --> 01:53:27,567
+Ve sadece hangi testi gerçekleştirdiğiniz değil, bunun bir sıra dahilinde test planı, test senaryoları, test işlemleri, test işlemlerinde bu testte beklenen sonuç nedir ve gerçek test sonuçlarımız nedir?
+
+369
+01:53:27,567 --> 01:53:35,667
+Böyle bir bütün halinde bir test raporu, test spesifikasyon raporu oluşturacağız.
+
+370
+01:53:35,667 --> 01:53:54,807
+Bunun da teslim tarihi derslerin bitiminden önceki üçüncü haftada bunun teslimi gerçekleştirecek. Bu arada sizin incelemeniz gerekenler nelerdir?
+
+371
+01:54:03,155 --> 01:54:24,155
+Ortamlarla ilgili bilgi edinmeniz, seçtiğiniz yazılım için hangi programlama dilinde, hangi ortamda yaratılmışsa o ortama özgü sistem testleri gerçekleştireceğiniz...
+
+372
+01:54:25,555 --> 01:54:30,796
+Açık kaynaklı sistem test araçları.
+
+373
+01:54:31,412 --> 01:54:40,511
+Performans Test Aracı, Dayanıklılık Test Aracı gibi araçları incelemeniz ve bulmanız gerekiyor.
+
+374
+01:54:42,131 --> 01:54:48,831
+Birim Testi için yine size yardımcı olacak tool'u seçmeniz gerekiyor.
+
+375
+01:54:50,112 --> 01:54:55,612
+Kullanıcı Testi için de gereksinim spesifikasyonunuzu hazırlıyorsunuz.
+
+376
+01:54:55,612 --> 01:54:59,391
+Bu gereksinim spesifikasyonu da sizin kullanıcı testiniz.
+
+377
+01:54:59,412 --> 01:55:15,171
+Bu konuda, kullanıcı testinizde yol göstericiniz oluyor. Gereksinim belgesiyle çakıştırarak kullanıcı testinizi de nasıl gerçekleştirdiğinizi açıklayacak bir yapı dahilinde çalışmanız gerekecek.
+
+378
+01:55:23,220 --> 01:55:26,980
+Proje ya da şeyle ilgili sorunuz var mı?
+
+379
+01:55:41,363 --> 01:55:46,783
+Evet, 2-3 kişi daha son dakikalarda eklendi derse.
+
+380
+01:55:52,979 --> 01:56:10,500
+Bugün için dersi bitirebiliriz o zaman. Tekrar ara vermiyorum. Dersi bitirmeden önce dersle, projeyle ya da bugünkü dersle ilişkili sorunuz var mı?
+
+381
+01:56:25,716 --> 01:56:26,876
+Sorusu olan var mı?
+
+382
+01:56:35,380 --> 01:56:56,760
+Evet, teşekkürler [öğrenci]. Aklınıza gelen bir şey olursa mail de atabilirsiniz. Dediğim gibi Perşembe günü akşamına kadar, yarın akşama kadar uygulama projelerinizde değişiklik yapıyorsanız bildirebilirsiniz bana.
+
+383
+01:57:03,220 --> 01:57:18,039
+Derse girmeden önce de herkesin gereksinim raporlarını hazırlamış olması gerekiyor. O saatten sonra oldukça azalacaktır bunun puanı.
+
+384
+01:57:26,292 --> 01:57:31,392
+Evet, o zaman bu hafta için dersi bitirebiliriz. İyi haftalar diliyorum.
+
+385
+01:57:32,712 --> 01:57:34,252
+İyi günler hocam, teşekkürler hocam.
+
+386
+01:57:35,112 --> 01:57:35,832
+Teşekkürler.
+
+387
+01:57:36,312 --> 01:57:38,172
+İyi günler hocam.
+
+388
+01:57:38,832 --> 01:57:40,732
+İyi günler.
