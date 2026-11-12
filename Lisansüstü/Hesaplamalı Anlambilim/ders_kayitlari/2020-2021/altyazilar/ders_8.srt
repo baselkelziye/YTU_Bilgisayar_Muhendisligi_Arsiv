@@ -1,0 +1,2619 @@
+1
+00:00:50,963 --> 00:00:51,923
+Merhaba arkadaşlar.
+
+2
+00:00:53,683 --> 00:00:54,384
+Geliyor mu?
+
+3
+00:00:54,704 --> 00:00:56,283
+Merhabalar hocam. Geliyorsayseniz.
+
+4
+00:01:04,691 --> 00:01:05,191
+Teşekkürler.
+
+5
+00:02:24,883 --> 00:02:32,123
+Evet hocam.
+
+6
+00:02:36,243 --> 00:02:48,243
+Bağlantıları bu modellerine bakacağız. Öde 3 dersi vermeyeceğim. Bugün online de de içeriye yüklerim. Oradan görebilirsiniz.
+
+7
+00:02:50,243 --> 00:02:57,243
+Önümüzdeki haftada bu günlere geçecekmişiz ve hoşçakalın varmış.
+
+8
+00:02:58,419 --> 00:03:12,439
+Yarışmaya ilgili hafta yetkili dersi açıklama yaparım. Bugünkü derin gibi Ödev 3'ün dergesini online videoyu sereye yıkayacağım. Eğer sorularınız olursa zaten sorarsanız.
+
+9
+00:03:51,987 --> 00:03:53,048
+Son geldi derman arkadaşlar.
+
+10
+00:04:02,259 --> 00:04:03,259
+Güzel.
+
+11
+00:04:07,027 --> 00:04:32,028
+Şimdi bunun için konumuz bağlam farkında sinirsel dil modelleri. Bağlam farkında sinirsel dil modelleri geçerim biraz garip oluydu ama temelde şu. Daha önce gördüğümüz anlamsal uzaylar vardı. Bu anlamsal uzaylarda aslında kelimelere birer vektör atıyorduk.
+
+12
+00:04:34,196 --> 00:04:40,336
+String benzerliğin ötesinde de anlamsal benzerlikleri bu vektörlerin arasındaki benzerliklerle çıkartabiliyorduk.
+
+13
+00:04:41,216 --> 00:04:44,216
+Ama kelimeleri birer vektör atıyorduk.
+
+14
+00:04:44,896 --> 00:04:48,136
+Kelimeleri birer vektör atadığımızda bir sıkıntısı vardı.
+
+15
+00:04:48,876 --> 00:04:58,136
+Aslında birden fazla anlama gelen farklı durumlarda, farklı anlamlarda, sözlülükler tek bir şey atıyorduk.
+
+16
+00:04:58,548 --> 00:05:15,548
+Bu da problem. Bu problemi çözebilmek için aslında bir kelimenin vektörünün etrafındaki kelimelerle göre değişebilir olması gerek. Ne demek istiyorum? Mesela...
+
+17
+00:05:16,148 --> 00:05:29,748
+Çay diyelim mesela. İçilen bir çayı bahsettiğimizdeki çay kelimesinin vektörüyle önce nehir çay, hani küçük dere anlamındaki çayın birbirinden farklı vektörlere sahip olması.
+
+18
+00:05:30,255 --> 00:05:50,415
+Gerekir. Peki bunu nasıl anlayacağız? Etrafındaki kelimelerle olabilir bir şey bu. Yoksa etrafında çay içiyorum, akan çayı gördüm, akan çayın yanına indim falan gibisinden şeyler söylediğinizde etrafındaki kelimelerden bunun hangi çay olduğunu algılayabilirsiniz.
+
+19
+00:05:55,636 --> 00:06:00,115
+Bağlam farkında dediğimiz şey, o bağlam farkında sinisal film haberleri.
+
+20
+00:06:00,636 --> 00:06:01,475
+Bunu göreceğiz.
+
+21
+00:06:02,036 --> 00:06:05,676
+Onun öncesinde birkaç tane temel kavramdan bahsedeceğim ama.
+
+22
+00:06:09,056 --> 00:06:12,355
+İşte dağınık temsil nedir? Onu bir göreceğiz.
+
+23
+00:06:12,355 --> 00:06:16,416
+Sonra ailemleri ve onların türelerinden biraz bahsedeceğiz.
+
+24
+00:06:17,216 --> 00:06:20,096
+Self-supervised learning nedir? Onu göreceğiz.
+
+25
+00:06:20,276 --> 00:06:22,456
+Sonra white bear encoding, sonra da bağlam.
+
+26
+00:06:22,848 --> 00:06:32,567
+Bağımlı dil modellerinden birkaç tane örneğini burada göreceğiz. En sonunda da vaktimiz kalır diye tahmin ediyorum.
+
+27
+00:06:32,567 --> 00:06:43,067
+Bert'i birazcık daha özellikle kullanım noktasında birazcık daha anlatmaya çalışacağım. Bu tarz bir plan var.
+
+28
+00:06:43,067 --> 00:06:47,788
+Yani en sonunda bir de Bert'in biraz daha kapsamlı bir hali olacak. Peki.
+
+29
+00:06:48,851 --> 00:07:11,591
+Şimdi o zaman başlayalım. Şimdi buradaki ilk anlatacağım nokta aslında derin öğrenmelerin katmanlı yapılarının, fazla katman sayısının ne işe yaradığını biraz görmeye çalışacağız burada.
+
+30
+00:07:15,891 --> 00:07:21,292
+Yoksa kavramsız olarak derken neden işe yarıyor olabileceklerine dair bir fikir bu.
+
+31
+00:07:21,292 --> 00:07:26,891
+Şey kısmı yoksa matematik olarak daha iyi çalışmalar dair bir şey değil.
+
+32
+00:07:26,891 --> 00:07:35,291
+Şimdi diyelim ki resimlerdeki insanları kadın, erkek, gözlüklü gözlüklü uzun, kısa diye belirlemek istiyoruz.
+
+33
+00:07:35,291 --> 00:07:43,091
+Yani bir resim var, o resimdeki insanın işte kadın mı, erkek mi, gözlüklü mü gözlüklü uzun, kısa mı diye bir etiket vereceğiz.
+
+34
+00:07:43,199 --> 00:07:58,360
+Eğer sekiz tane sınıf tanımlarsak, sekiz tane sınıf dediğim şey şu. Mesela birinci sınıf kadın gözlüklü uzun. Mesela bu birinci sınıf. İkinci sınıf kadın gözlüklü kısa.
+
+35
+00:07:58,836 --> 00:08:10,635
+Üçüncü sınıf erkek gözlükte uzun, dördüncü sınıf erkek gözlükte kısa şeklinde bunları böyle ilerlendirebilirsiniz. Sonuçta üç tane şey var. Her iki binayı. Dolayısıyla üç tane, sekiz tane sınıf.
+
+36
+00:08:11,635 --> 00:08:24,076
+Şimdi eğer sekiz sınıf tanımlarsak her sınıftan örneklere ihtiyacınız olacak. Eğer üç alt özelliği örneğin, üç tane binayı sınıflandırıcı tanımlarsak, bakın üç tane alt özelliği örneğin, yani
+
+37
+00:08:24,500 --> 00:08:31,780
+Kadın ve erkek mi? Bunu öğrenen bir şey. Gözüklü mü gözüksünüz? Bunu öğrenen başka bir şey. Uzun mu kısa mı? Bunu öğrenen başka bir şey. Üç tane.
+
+38
+00:08:32,639 --> 00:08:43,740
+Özelliği altı üzerinde sınıf öğrenen, üç paylaşık sınıf olarak tanımlarsa. Eğitim hükümemizde mesela uzun kadın gözüksüz bir örnek olmasa bile onu tanımlayabiliriz.
+
+39
+00:08:43,740 --> 00:08:51,840
+Ne demek istiyorum? Veri hükümenizde uzun kısa örnekler olabilir. Kadın erkek örnekler olabilir. Gözüklü gözüklü örnekler olabilir. Değil mi?
+
+40
+00:08:52,340 --> 00:08:59,060
+Ama mesela örnek olarak, şöyle bir örnek olmayabilir eğitim kümenizde. Uzun kadın gözükür.
+
+41
+00:09:00,083 --> 00:09:22,263
+Şimdi bunu sekiz sınıflı olarak tanımlamaya kalkarsak böyle bir şey kesinlikle ihtiyacınız var. Böyle bir sınıftan örnekleri tanımlayabilmek için. Ama eğer bu şekilde bunları tanımlarsak, 3 alt özelliği yönelik 3 tane Binance sınıflandığı şeklinde bunları tanımlarsak o zaman elimizde şu konfigürasyon şart değil ama bu konfigürasyondan bir şey gelirse de biz bunu ne yapabileceğiz? Tanımlayabileceğiz.
+
+42
+00:09:24,659 --> 00:09:31,599
+Şimdi dolayısıyla d adet alt özellikle bakın, d adet alt özellikle iki üzeri d adet farklı kombinasyonu ifade edebiliriz.
+
+43
+00:09:31,599 --> 00:09:46,819
+Yani en adet sınıf böyle örtüşmeli özellikler taşıyorsa, bugünkü en tane adet alt özellikle elde edilir ki bu oldukça güzel bir özellik olduğunu görüyorsunuz.
+
+44
+00:09:50,323 --> 00:09:58,083
+Devam edelim. Diyelim ki 1024 tane sınıf var. Bakın 1024 tane sınıf var. Klasik yaklaşımda 1024 tane prototip öğrenmeniz lazım.
+
+45
+00:09:59,683 --> 00:10:07,323
+Şimdi mesela D çarpı D'lik resimleri sınıflandıracağımız için bakın D çarpı D'lik resimleri sınıflandıracaksak.
+
+46
+00:10:07,623 --> 00:10:15,023
+A'ın yapısı D çarpı D'lik resimler, bunlar input katmanı, çarpı 1024'lük bir şey olacaktır.
+
+47
+00:10:15,923 --> 00:10:17,763
+Yani hani şöyle düşünürsek.
+
+48
+00:10:18,484 --> 00:10:36,724
+Bir şeyiniz var sizin. İmput katmanız var. Bir de output katmanız var. Burası, şuradaki boyut nasıl olacak? D çarpı D.
+
+49
+00:10:43,700 --> 00:10:55,740
+Burası d çarpı d'lik bir şey. Yani uzunluğu mesela d'yi atıyorum yüzlerimi sekizlersek mesela yüzlerimi sekiz çarpı yüzlerimi sekizlik bir uzunluğunda tekten vektör gibi düşünün bunun.
+
+50
+00:10:56,500 --> 00:11:08,019
+Ve çıkışları 1024 olduğunda sizin buradan bu d çarpı d'lik uzunluğundaki vektörden bu 1024'lük vektöre mapping yapan bir w'yi öğrenmeniz gerekecek değil mi?
+
+51
+00:11:08,019 --> 00:11:09,600
+W'yi öğrenmeniz gerekecek.
+
+52
+00:11:10,388 --> 00:11:13,968
+Dolayısıyla burada, şurada yazdığımız gibi DHL'ı yazdım.
+
+53
+00:11:20,980 --> 00:11:37,620
+Dolayısıyla D çarpı D çarpı 1024 tane parametreyi öğrenmemiz gerekir. Ama mesela şöyle bir şey düşünün. 10 tane alt özelliği kullanırsak, alt yapısını bir katman arttırırsak. Yani şöyle bir şeyden bahsetmiyorum.
+
+54
+00:11:49,172 --> 00:11:50,552
+Giriş kısmı aynı.
+
+55
+00:11:57,331 --> 00:12:12,411
+Bununla aynı. Şununla hiçbir farkı yok. Çıkış da aynı. Ama ortaya bir şey koyacağız. Şimdi bu ortaya bir şey koyduğumuz zaman ne anlatıyoruz aslında burada?
+
+56
+00:12:12,411 --> 00:12:23,411
+Şimdi şu kısımda D çarpı delik bir vektördü burası. Şimdi burada mesela şu 1024'lük sınıfı ben 10 tane farklı özellikle ifade edebileceğimi düşünsem.
+
+57
+00:12:25,043 --> 00:12:45,624
+Dolayısıyla bu onluktan 1024'ye bir mapping yapmam gerekecek. Dolayısıyla benim için buradaki ağım nasıl bir şey oldu? Burada mesela D128 için değil, mesela 128'lik bir şeyden bir vektör uzayından, onluk bir vektör uzayına indirileceğiz. Ondan sonra bu onluğu da 1024'de çıkartacağız.
+
+58
+00:12:46,484 --> 00:12:57,904
+Peki, böyle yaparsak, yani araya bir tane katman eklersek, ne oluyor? Öğrendiğimiz gereken parametre ne oluyor? Parametre sayısı ne oluyor?
+
+59
+00:12:59,064 --> 00:13:06,404
+Şimdi son katman alt özelliklerin kombinasyonu, stiflik etleri ve eşleşme örneği, yani şu bölgeden bahsediyor.
+
+60
+00:13:06,404 --> 00:13:13,284
+Şurada bizim bir tane, şöyle yapalım, şurada bir V var.
+
+61
+00:13:13,711 --> 00:13:23,491
+Tamam. Burada ise bir V1 var. Burada da öğrenmemiz gereken bir V2 var.
+
+62
+00:13:24,391 --> 00:13:31,331
+Mühendisliği. Yani bu input'tan output'a direkt meclameyi öğrenen bir tane şey. Şu ilk yapı.
+
+63
+00:13:32,251 --> 00:13:35,231
+İkinci yapıda ise arada bir tane kaplan önderdiğimizde iki tane...
+
+64
+00:13:35,231 --> 00:13:50,951
+W oluşuyor bu sefer. Bu girişten ortaya değişimleri meplemeye öğrenen bir tane W1 katmanı, W1 ağırlıkları, orta katmanların çıkışa geçişi öğrenen W2 katmanı.
+
+65
+00:13:50,951 --> 00:13:58,412
+Şimdi bunların büyüklüklerine bakarsak, şu W matrisinin büyüklüğü D çarpı D çarpı 1020'de.
+
+66
+00:13:59,827 --> 00:14:12,807
+Buradaki W1 ve W2'nin maddesinin büyüklüklenmesinin için D çarpı D çarpı 10'a şey yapacak. 10 burası, şurası, artı. Bir de 10'luktan da 1024'e mapping yapacak. Dolayısıyla bu.
+
+67
+00:14:12,807 --> 00:14:26,807
+Buraya bakarsak, D128 için klasik yaklaşım 4 milyon yaklaşım. Şurada şu W'nun 4 milyon tane değeri var. Öğrenmemiz gereken. Ama şu ikincisine bakarsak.
+
+68
+00:14:27,923 --> 00:14:35,923
+Dissributed olarak düşünsek bu da 180.000. Çok çok az değil mi? Yani oldukça şey buna göre bakarsak.
+
+69
+00:14:35,923 --> 00:14:43,923
+Katman sayısını arttırarak öğrenme mülgeyken paramet sayısını azaltıyoruz. Katman sayısı arttığında gördüğünüz gibi ne yapmış olduk biz?
+
+70
+00:14:43,923 --> 00:14:50,923
+Buradaki paramet sayısı sayısını epey bir azaltmış olduk. Ama tabi bu olay dediğim gibi şu Distributed Learning mezusu.
+
+71
+00:14:55,668 --> 00:15:11,947
+Gözüktü mü, gözüksüz mü? Erkek mi? Kadın mı? Uzun mu? Kısa mı? Şişman mı? Zayıf mı? Gibi böyle alt özellikleri öğrendiğinizi düşünün burada. Burada siz bu 1024 tane sınıfı bu farklı özelliklerin çeşitli kombinasyonlarıyla ifade edebiliyorsunuz.
+
+72
+00:15:15,908 --> 00:15:19,827
+Şimdi var mı buraya kadar sorusu olan? Buradaki mantığı anladık mı?
+
+73
+00:15:26,419 --> 00:15:27,620
+Ses geliyor mu acaba?
+
+74
+00:15:30,319 --> 00:15:32,019
+Ses geliyor hocam da.
+
+75
+00:15:32,559 --> 00:15:33,179
+Görüntü mü?
+
+76
+00:15:36,916 --> 00:15:57,255
+Ben tam şey yapamadım burayı. Açıkçası. Birbirleriyle eşleştiklerinde sorun yok. Oradan Logan'le düşüyor da. Bu 1024 sınıf birbirinden tamamen farklı sınıflar olduğunda her biri bir kelimelik bir sınıf olursa o zaman bunu yapabiliyor muyuz?
+
+77
+00:15:58,475 --> 00:16:00,515
+Bir kelimelik bir sınıf derken?
+
+78
+00:16:02,995 --> 00:16:08,296
+İşte yani 1024 tane farklı renk diyelim. Resimleri okuyup yoğun renk olanı söyleyelim.
+
+79
+00:16:09,115 --> 00:16:16,296
+Orada mesela şöyle bir şey düşünün. Güzel bir örnek verdim. Mesela renkler için düşünelim. 1024 tane farklı sınıf var, renk var diyelim. Tamam mı?
+
+80
+00:16:16,836 --> 00:16:21,336
+Ama mesela burada bu alt özellikler bu sefer ne olacaktır? Belki temel renkler olacaktır. Tamam mı?
+
+81
+00:16:22,416 --> 00:16:28,596
+Yani mesela 3-4 tane temel renk. 3 tane temel renk. Mesela yeşil, kırmızı, mavi mi var bile? 3'ü.
+
+82
+00:16:29,011 --> 00:16:42,111
+Şu yeşil, kırmızı, mavi şu orta kısımda olacaklar. Onların çeşitli oranlarla birleşimleri de istediğin kadar farklı sınıftaki rengi ifade edebilecek. Olay yani kelime şeyi değil aslında sadece. Kelimeye asıl bir şey değil.
+
+83
+00:16:43,331 --> 00:16:55,731
+Ya şey, peki hiç mesela burada şu an biz renkleri ortak alt renklere bölüp oradan renk üretebildik. Benim aslında yapmak istediğim, yani sormak istediğim şey hiç ortak şeyleri yok. Yani birbirleriyle birleştirip yeni bir şey oluşturamıyoruz.
+
+84
+00:16:57,299 --> 00:17:00,080
+Şimdi ortak alt özellik, yani...
+
+85
+00:17:00,080 --> 00:17:07,019
+1024 tane ülke, il olsun hocam ya da ilçe. 1024 tane ilçe resimleri atıyoruz. Hangi ilçeye ait olduğunu tespit edecek.
+
+86
+00:17:07,679 --> 00:17:12,360
+Tabii, şimdi şöyle bu Distributed Representation aslında şöyle bir şey.
+
+87
+00:17:13,720 --> 00:17:18,259
+Bir şekilde bu temel bileşenlerin bir şekilde var olması lazım.
+
+88
+00:17:18,655 --> 00:17:35,036
+Temel birleşenler yoksa hiçbir şekilde, tamam mı? Temel birleşenler. Bak yani ortak birleşenler falan bahsetmiyorum. Sınıfların arasındaki ortaklıktan falan bahsetmiyorum. Temel birleşenler birleştirip bir şeyler oluşturmuyorlarsa, tamam mı? Burada zaten herhangi bir şey yapmak da pek mümkün olmaz herhalde.
+
+89
+00:17:38,451 --> 00:17:42,731
+Yani işin içerisinde bir temel birleşenlerin olması lazım. Tamam mı?
+
+90
+00:17:43,731 --> 00:17:49,771
+Şimdi resimler üzerinde tekrardan bir şeyimiz var. Bir sonraki slide var. Orada da göreceğiz.
+
+91
+00:17:49,771 --> 00:17:58,451
+Yani temel bir şeyler yoksa elinde, temel birleşenler bir parçalar yoksa, bütünün içerisinde, yani bütünler parçalardan oluşmuyorsa, tamam mı?
+
+92
+00:17:58,451 --> 00:18:05,731
+Bütünler kendileri blok blok halinde verse, o durumda zaten yapacak hiçbir şey yok zaten. Orası bir look up table'a dönüşür.
+
+93
+00:18:06,228 --> 00:18:23,087
+Bizim buradaki amacımız ne? Aynı sınıftaki örneklerin arasındaki benzer alt özellikleri görebilmek ve farklı sınıflar arasındaki farklı alt özellikleri görebilmek. Alt özellik diye bir şey yoksa zaten öğrenecek hiçbir şey yoktur. Anlatabildim mi demek istediğimi?
+
+94
+00:18:26,420 --> 00:18:28,159
+Evet hocam, gayet anladım.
+
+95
+00:18:47,796 --> 00:18:57,296
+Peki bir sınıfı ifadeye sınıflar arası ortak olabilecek parçaları önceden nasıl bilebiliriz? Bunları nasıl bulacağız?
+
+96
+00:18:58,436 --> 00:19:02,016
+Şimdi buradaki belki sorulması gereken soru buydu.
+
+97
+00:19:02,776 --> 00:19:08,556
+Şimdi bu soruyu da cevabı aslında bulmayacağız. Yine A'nın kendisi öğrensin isteyeceğiz.
+
+98
+00:19:08,556 --> 00:19:15,296
+Burada mesela en erdiği de düşünün. Yani multilever proseptorunda.
+
+99
+00:19:16,019 --> 00:19:34,139
+Her bir gizli katmandaki, her bir nöron bir tane alt özelliği öğreniyor arkadaşlar. Bu networklerin ağırlıklarını görselleştiren şeyler var. Toollar var. Olardan da inceleyip görebilirsiniz.
+
+100
+00:19:34,804 --> 00:19:58,264
+Şimdi CNN'deki her bir filtre bir alt özelliği öğreniyor. Varsayım tüm resimler ortak küçük parçalardan oluşur. En alt seviyede basit özellikler sonrasında bunların kombinasyonunu öğrenelim. Mesela buradaki örneğe bakalım. Şimdi bütün şeyler, sınıflar mesela yüzler diyor, arabalar, filler, bir de standalya var. Şimdi bunlar normalde önünden çok çok farklı şeyler.
+
+101
+00:20:00,000 --> 00:20:15,199
+Bunlar en alt tabakada, en alt tabakada hepsi aslında şurada gördüğünüz ortak alt özellikleri içeriyorlar. Yani yüz dediğiniz şey de böyle bir şeylerden oluşuyor. Buradaki böyle bir şeyler dediğimiz şeyden değil. Çok küçük şeyler, çizgiler.
+
+102
+00:20:16,115 --> 00:20:44,096
+Bunlar tamamen koyu ya da tamamen açık alanlar ya da belli açılarda farklı farklı çizgiler. Bütün her şeyin ortak noktaları bunlar. Bunlar mesela bir şekilde birleştirerek mesela yüzün parçalarını, başka bir şekilde birleştirerek arabanın parçaları, başka bir şekilde sandalyenin parçalarını oluşuyor. Bunlar da daha da fazla şekilde birleştirip farklı farklı böyle üst seviyeye doğru ilerliyorlar. Dolayısıyla en alt seviyede aslında en basit.
+
+103
+00:20:44,115 --> 00:20:54,496
+Özellikler, en temel özellikler öğreniliyor. Onların çeşitli kombinasyonları, bunların çeşitli kombinasyonları da ileriye doğru bizim asıl tanımaya çalışacağımız şeyleri öğreniyor.
+
+104
+00:20:58,195 --> 00:21:15,655
+Şimdi bu CNN'lerin yapısında aslında şöyle bir şey var. Belli alt özellikler o resmin içerisinde var mı yok mu buna bakıyorlar. Pulling katmanı bunların nerede olduğunun önemsiz bir şey. Yani sadece var mı yok mu?
+
+105
+00:21:16,180 --> 00:21:41,480
+Buna göre aslında şöyle bir durum var. Bir yüzü aldığınızda yüzü parçalarsanız, yani yüzün farklı parçalarını farklı yerlere koysanız CNN hala orada bir yüz olduğunu düşünebilir. Ama aslında parçaların dibine göre konumları da dahtemelde önemlidir. Bir yüz resminde ağızda gözünü yeni değiştirirseniz hala bir yüz olur mu? Bunu hala bir yüz demek ister misiniz?
+
+106
+00:21:42,163 --> 00:22:03,948
+Böyle bir şey var. İşte bu CNN'lerin alternatifi olan kapsül networkler, Clinton'ın son zamanlarda çıkarttığı, bu birbirine göre konumları da işe katıyorlar. Bu birbirine göre konumlar da doğru yerlerde ise o zaman ancak onlara şey diyorlar, yüz vesaire diyorlar. Dolayısıyla alt parçalarının var ya da yokluğu...
+
+107
+00:22:04,147 --> 00:22:20,187
+Mesela CNN'de önemli iken, kapsül networklerde varlığı artı birbirlerine göre konumları da önemli. Yani gözü bulduysan, işte iki tane göz bulduysan burada yüz vardı değil, sadece iki tane göz bulduysan bunlar mesela yan yana olmalıdırlar gibi. Anlatabildim mi?
+
+108
+00:22:20,187 --> 00:22:27,228
+Bu tarz nasıl olmaları gerektiğiniz zaten yine varlığın örneklerden öğrenerek ilerliyorlar.
+
+109
+00:22:29,715 --> 00:22:39,335
+Şimdi bu genel bilgiler bunlar. Birkaç tane genel küpür şeklinde düşünebilirsiniz.
+
+110
+00:22:39,335 --> 00:22:47,855
+Şimdi gelelim Recurrent Menel Networkler. Recurrent Menel Networkler çok uzun zamandır varlar.
+
+111
+00:22:48,795 --> 00:22:52,035
+Tekrar özgünlemeli yapay sinir ağları.
+
+112
+00:22:53,076 --> 00:23:08,375
+Bunlar bir CNN'den ya da normal klasik bir yapay sinirandan birazcık farklı. Neden farklı? Bunlar da giriş bir zaman serisi. Yani zaman serisinden kastımız nedir?
+
+113
+00:23:26,483 --> 00:23:26,923
+Neyse.
+
+114
+00:23:42,996 --> 00:23:58,996
+Mesela bu noktaları biliyorum ben. Bu pazartesi, salı, çarşamba, perşembe ya da cuma mesela günler var. Bunlar diye ne bileyim x parasının kuru olsun. Tamam mı?
+
+115
+00:24:06,099 --> 00:24:25,099
+Şimdi burası zaman. Zaman da mesela şöyle bundan tık tık tık diye inmiş mesela. Kur böyle aşağı doğru iniyor. Şimdi bizim buradaki amacımız mesela bir sonraki kurun değerini bulmak. Bir sonraki kurun değerini düşündüğünüzde aslında burada şimdi bu mesela sadece...
+
+116
+00:24:32,243 --> 00:24:51,803
+Şuna baksanız. Bu yeterli olur mu? Olmaz. Tek bir değere bak. Yani dünkü değere bakarak bugünkü değeri tahmin edebilir misiniz? Bu çok mantıklı bir şey olmaz. Anlamlı olmaz. Çünkü neden? Şimdi şöyle bir şey düşünün. Aynı değere, aynı değer için bakın şöyle bir durum da olacaktır.
+
+117
+00:25:05,268 --> 00:25:26,567
+Eğer geçmiş, bakın bu nokta dünden önceki değerler, mesela şu kırmızılar gibiyse, sizin yarınki tahmininiz başka bir şey olur. Önceki değerler, şu portakal rengi değerler gibiyse, sizin yarınki tahmininiz başka bir şey olur. Geçmişe bakmanın gerektiğini burada görüyor muyuz? Tek bir değerle hareket edemeyeceğimizi.
+
+118
+00:25:28,567 --> 00:25:29,147
+Evet.
+
+119
+00:25:29,147 --> 00:25:30,928
+Değil mi?
+
+120
+00:25:31,380 --> 00:25:39,040
+Şimdi burada yapacağım işlem, işte bu geçmiş bilgileri de işin içine katan yapılar. Çok pardon arkadaşlar.
+
+121
+00:26:17,652 --> 00:26:27,872
+Arkadaşlar, şimdi dediğim gibi rükke yönetmenen networkler geçmiş bilgileri de kullanmayı sağlayacaklar. Şimdi nasıl bunu sağlayacaklar? Bakalım.
+
+122
+00:26:40,627 --> 00:26:56,267
+Şimdi mesela bir cümlenin kelimeleri, bir filmin fremeleri, bir konuşmanın fonemleri gibi gibi sesleri düşünürseniz, gerçek dünyadaki birçok şeyin bir sırası var, doğal bir sırası var. Sıralarını karıştırdığımızda anlamını kaybederiz.
+
+123
+00:26:57,683 --> 00:27:18,203
+Şimdi burada belli yapılarımız var. Bu yapıları şimdi inceleyelim. Şimdi Ht dediğimiz şey çıkışımız. Tnci çıkış. Yani Tnci andaki çıkış. Xt dediğimiz şey ise Tnci andaki giriş. Yani sisteme Tnci anda bir bilgi giriliyor ve Tnci anda bir bilgi çıkımı gerçekleştiriliyor.
+
+124
+00:27:23,763 --> 00:27:44,543
+X'te dediğimiz şey şu anki giriş ve HT-1'e bağlı. Yani HT-1'e bağlıdan kastımız ne demek? HT-1 neyi gösteriyor? Bir önceki bilgiyi, yani bir önceki durumdaki çıkışı gösteriyor. Bunu bilgi olarak da düşünebilirsiniz. Onun içeride de saklamamız mümkün çünkü.
+
+125
+00:27:45,008 --> 00:28:01,167
+Yani bizim şu andaki çıkışımız sadece şu anki girişe bağlı değil. Daha önceki bir şeylere de bağlı. Şimdi o daha önceki bir şeyleri bütün hepsini birden tutmak yerine, bütün geçmişteki bütün bir yerinden hepsini birden tutmak yerine onların hepsine aslında bir bağlamının içerisine sıkıştırıyoruz.
+
+126
+00:28:10,932 --> 00:28:12,812
+Bir dakika.
+
+127
+00:28:15,491 --> 00:28:24,971
+Mesela şöyle gittiğimizi düşünelim. Bir sonraki durumu tahmin edeceğiz.
+
+128
+00:28:24,971 --> 00:28:38,292
+Mesela bu andaki değeri tahmin edeceğiz. Şu çizginin üzerinde nereyi tahmin edeceğiz?
+
+129
+00:28:39,412 --> 00:28:49,152
+Burada bir şey söyleyeceğiz. Tamam mı? Şimdi bu ana kadar mesela geçmiş bilgilerin hepsi birikiyor, birikiyor, birikiyor. En sonunda sizin tahmin edeceğiniz yer şu noktada.
+
+130
+00:28:49,712 --> 00:29:02,472
+Ht-1'iniz aslında sizin. Ht-1'iniz aslında sizin neyi tutuyor? Sizin başlangıçtan şu ana kadarki bütün bilgilerin hepsini tutuyor. O bilgileri kullanarak sizin bir sonraki değeri tahmin etmenizi sağlıyor.
+
+131
+00:29:03,604 --> 00:29:20,083
+Geçmiş veriler mesela bu şekilde ise siz bir sonrakinde işte şuralarda bir şeyleri tahmin edeceksiniz belki. Ama geçmişlerler şöyle yukarıya doğru gidiyorlarsa, şuradan başlayıp böyle gidiyorlarsa, bu sefer hashtag'iniz ne olacak? Farklı bir şey olacak ve farklı bir şey dışarıya söyleyebileceksiniz.
+
+132
+00:29:28,980 --> 00:29:51,819
+Bu yapıya bakarsak, şurası bunun böyle bir rükörsif gösterimi gibi. Şu anda bakın, şurada bir X0 var, bu input kısmı. H0 output kısmı. Bir de şu tarafta yan tarafa doğru bir ok var. O yan tarafa doğru bu aslında kendinden çıkıp kendine giren gibisinden bir şey gibi. Aslında şöyle, geçmiş andaki değeri aslında buraya çıkıyor.
+
+133
+00:29:57,140 --> 00:30:15,279
+Girdiği zaman H1 değeri üretecek ama bu H1 değeri sadece X1 değeri bağlı değil. Neye de bağlı? Bir önceki zamandan gelen şu aktarım şeyinize bağlan vektörünüz. O bağlan vektörünüze de bağlı.
+
+134
+00:30:17,556 --> 00:30:31,576
+Güzel. Bu Rikörn yapılar bu şekilde. Tabii bu yapıyla siz şunu da kullanabilirsiniz. Mesela klasik bir yapay sinir anı da zamanı kullanır hale getirebilirsiniz. Bunu da birazcık gösteriyor.
+
+135
+00:30:32,000 --> 00:30:58,759
+Ne demek istiyorum? Mesela sadece o anki veriyi verip bana output'u ver demek yerine yapar sinir ağında şunu yapmak da mümkün. Ne bileyim şu andan itibaren 5 gün öncesi ne kadarki verilen hepsini ver tek bir seferde ve o zaman bana çıkışı üret de diyebilirsiniz. Yani o ana göre değil de işte en son 5 güne göre de output ürettirmek. Klasik yapar sinir ağları da mümkün.
+
+136
+00:31:00,000 --> 00:31:01,560
+Kullanmanız şart değil.
+
+137
+00:31:03,100 --> 00:31:14,000
+Şimdi, mesela CNN'ler falan da bu tarz şeyler öğreniyorlar. CNN'lerde de ne yapılıyor? CNN geçmişe nasıl bakar? Şöyle bir şey düşünün.
+
+138
+00:31:16,539 --> 00:31:23,640
+CNN normal bir şey değil. Zamana bağlı falan bir şey yok biliyorsunuz. Şurayı düşünürsek.
+
+139
+00:31:25,011 --> 00:31:48,231
+Resimlerin üzerinden çeşitli keneller öğreniyorlar. Hepiniz muhtemelen okunsunuzdur. Artık bunların genel kültür olduğunu varsayıyoruz. Burada herhangi bir şey yok. Zaman bilgisi yok. Special bilgi var. Konumsal bilgi var. Ama mesela CNN'in zamansal bilgi öğrenmesi mümkün mü? Mümkün. Mesela şöyle bir şey düşünün.
+
+140
+00:31:58,996 --> 00:32:22,216
+Daha sonra bir tarz şeylere bakacağız ama şimdi önlemde bir videomuş oldu. Mesela bu bir cümle olsun, bir cümlenin temsili olsun. Ne demek bir cümlenin temsili? Şurada mesela bu birinci kelimenin kelime vektörü olsun. Ondan sonra bu ikinci kelimenin kelime vektörü olsun. Bu üçüncü kelimenin kelime vektörü olsun.
+
+141
+00:32:22,216 --> 00:32:25,816
+Tamam mı? Kelime vektörlerine böyle yan yana sıraladığınızı düşünüyorum.
+
+142
+00:32:28,276 --> 00:32:36,796
+Dolayısıyla aslında bir cümle de böyle bir resim haline gelecektir. Yani ne demek istiyorum? Mesela her bir kelime 300 boyutluysa.
+
+143
+00:32:37,332 --> 00:32:58,572
+Anlamsal uzay terimcinin de. 300 boyutlu bir vektör burada var. 300 boyutlu bir vektör oluyor. Yani arka arkaya bunlar böyle sıralanmışlar. Bu sıra neye göre? Cümledeki kelimelerin sırasına göre. Yani bir cümleniz aslında şurada gördüğünüz bir matriz haline gelir. Farklı uzunluklardaki, lirindeki padding falan da yaparsınız. Orası önemli. Ama sonuçta bir resim haline getirebilirsiniz bir cümlenizi o manada düşünürseniz.
+
+144
+00:32:59,059 --> 00:33:07,059
+Burada CNN'i kullanarak zamansal bilgi, önceki kelime, sonraki kelime bilgisini nasıl kullanmak mümkün? O zaman da şöyle bir şeyler yapabiliyorsunuz.
+
+145
+00:33:07,059 --> 00:33:15,059
+Şunlar şöyle gidiyor. Mesela dördüncü kelimemiz görmek için, beşinci kelimemiz görmek için.
+
+146
+00:33:15,059 --> 00:33:24,059
+Mesela bir tane kernel düşünelim. CNN kernel'i. CNN kernel şöyle bir şey. Şöyle bir tane.
+
+147
+00:33:24,980 --> 00:33:39,480
+Böyle bir kenel demek ne demek? Ardışık ikili kelimeyi içeren bir kenel demek. Dolayısıyla ardışık iki yani kelimenin kendisi ve kenelinin bir öncesi. Üçlük yaparsanız bunu kaydıra kaydıra. Yani şöyle bir şey düşünün.
+
+148
+00:33:39,480 --> 00:33:46,200
+Bunu kaydıramayalım. Ama demek istediğim şu.
+
+149
+00:33:57,652 --> 00:34:04,731
+Şöyle bir pencereyi düşünün. Bu pencereyi aldınız işte. Burada hesapladınız. Sonradan alıp...
+
+150
+00:34:04,731 --> 00:34:06,852
+Bir dakika, şey yapmasak yok, şey yapabiliriz.
+
+151
+00:34:37,940 --> 00:34:39,940
+Neyse, şöyle bir şey düşünün.
+
+152
+00:34:54,003 --> 00:35:21,003
+Mesela 3x300'lük bir filtre olduğunu düşünün. Bunu mesela buradan çıkarttınız, burada kullandınız. Sonra bir yana kaydırıyorsunuz, bir yana kaydırıyorsunuz, bir yana kaydırıyorsunuz. Aslında resmin üzerinde şöyle bir filtreyi gezdiriyorsunuz. Şimdi bu filtre şey olduğu için, ne derler ona, birden fazla kelimeyi içerdiği için birden fazla kelime. Yani kelimenin kendisi ve daha önceki kelimelerde bakan bir yapı da oluşmuş oluyor. Onunla da bakmamış oluyor. Dolayısıyla...
+
+153
+00:35:21,327 --> 00:35:37,087
+Zamanı da aslında CNN'lerle, zaman dediğimiz şey, ne kadar büyük bir şey yaparsanız o kadar geniş bir zamanı işin içerisine katmış olursunuz. Şöyle kaydedildiğinizi düşünürseniz. Bunlarla bunları da yapmak dediğimiz şey pek hala mümkün.
+
+154
+00:35:39,087 --> 00:35:41,068
+Hocam bir şey sorabilir miyim acaba?
+
+155
+00:35:41,167 --> 00:35:41,307
+Tabii.
+
+156
+00:35:42,788 --> 00:35:45,507
+Şu CNN'de gösterdiğiniz örnek var ya mesela.
+
+157
+00:35:46,568 --> 00:35:47,507
+Hocam burada...
+
+158
+00:35:48,128 --> 00:36:13,008
+Kelime vektörleri yan yana duruyor mesela. Kelime vektöründeki üçüncü elemanla, birinci kelimenin, ikinci elemanın, ikinci vektörün üçüncü elemanı yan yana gelecek. O yüzden sanki böyle yani piksel olarak düşünsek, onlar böyle ilişkili gibi duracak ama aslında o şekilde bir ilişkide değil. Yani başarılı mı bu tarz bir yöntem?
+
+159
+00:36:14,260 --> 00:36:36,120
+Şimdi normalde mesela CNN'de mesela 2x2, 3x3, 4x4'lük falan kerneler alınır. Gezdirilir değil mi normalde? Ama burada mesela bak ben nasıl bir şey kerneler tanımladım. Mesela 300'e 3'lük bir şey tanımladım. Tamam mı? Yani hepsini birden. Yani mesela şöyle bir kerneler gezdirsem bunun çok fazla bir anlamı olmaz.
+
+160
+00:36:39,572 --> 00:37:03,692
+Dediğim şey şu noktada haklı bir eleştiri. Mesela ben şöyle bir kendini alıp gezdiriyor olsam, tamam mı? Bunun çok fazla bir anlamı olmaz. Ama şöyle bir kendini, yani kelimenin boyutuyla bak, şöyle. Tamam. Şöyle bir kendini gezdirdiğimiz zaman bu şey değil. Bunda herhangi bir sıkıntı yok.
+
+161
+00:37:04,500 --> 00:37:23,840
+Ama hocam şey olmayacak mı? Mesela onun yukarısıyla yani şey, düşey ve dikey de farklı anlamları, farklı ilişkisi var aslında yanındaki diğer elemanlarla.
+
+162
+00:37:23,840 --> 00:37:25,619
+Ama Sienan'ın...
+
+163
+00:37:25,619 --> 00:37:30,840
+Yok niye bir dakika, şöyle bir şey düşün. Şimdi buradaki, mesela şu birinci, yani şuradaki kelime...
+
+164
+00:37:31,123 --> 00:37:36,623
+İlk kısımdan bahsediyorum. Bu birinci kelime. Birinci kelime 300 tane boyutu var burada. Değil mi?
+
+165
+00:37:39,423 --> 00:37:58,223
+Yanındaki ikinci kelime, bunun da 300 boyutu var. Yanındaki üçüncü kelime, bunun da 300 boyutu var. Bunların birinci satırları, hepsinin birinci boyutları. İkinci satırlar, hepsinin ikinci boyutları. Dolayısıyla yan yanılıkta herhangi bir yanlış bir olmayan bir ilişki sokmuyoruz için içerisine.
+
+166
+00:38:03,476 --> 00:38:12,756
+Doğru. Yani ben ilişki, farklı bir ilişki var sanki mesela diye düşündüm. Yan yana olanla alt üst olanlar.
+
+167
+00:38:13,756 --> 00:38:17,856
+Yok, alt üst diye bir şey yok ki burada. Alt üst dediğin ne?
+
+168
+00:38:18,936 --> 00:38:22,516
+Alt üst dediğim bir kelime vektörünün farklı elemanları.
+
+169
+00:38:23,556 --> 00:38:28,615
+Bir kelime vektörünün farklı elemanları kendi içinde zaten bir tane sütun halinde duruyorlar. Öyle değil mi?
+
+170
+00:38:28,615 --> 00:38:29,876
+Evet.
+
+171
+00:38:30,612 --> 00:38:45,412
+Bir sütun halinde duruyorlar. Yanındaki kelimeninkiler de yanındaki bir sütun olarak duruyor. Yani hani burada var olmayan bir ilişkiyi işin içine sokmuyoruz. Zaten var olan bir ilişkiyi koyuyoruz buraya. Çünkü bunlar yan yanalar. Utabildim mi?
+
+172
+00:38:46,192 --> 00:38:47,372
+Doğru, anladım hocam.
+
+173
+00:38:48,172 --> 00:38:48,412
+Tamam.
+
+174
+00:38:52,052 --> 00:38:56,052
+Peki. Şimdi...
+
+175
+00:38:56,052 --> 00:38:58,796
+Tamam mı kızım?
+
+176
+00:39:04,532 --> 00:39:21,132
+Aralem'in bir sürü uygulaması var. Şimdi birazdan matematik olarak nasıl çalıştığını da gördüğünüz ama nasıl yapılar var? Şimdi klasik yapay sınavlarının yaptığı şey bir tane input'a karşılık bir tane output üretmektir. Bir zaman, one to menu falan gibisinden bir şeyler yoktur.
+
+177
+00:39:22,260 --> 00:39:41,940
+Şimdi örneğe neler yapabilirsiniz? One to menu. Yani bir tane input girebilir ve bir sekans çıkabilir. Tamam mı? Şimdi bir tane bir resim girer ve onu anlatan bir cümleyi üretebilirsiniz. Yani inputta tek bir anlık bir şey, tek bir anda gelir. Öyle söyleyelim. Ve siz burada ne yapabilirsiniz? Onu anlatan bir cümleyi üretebilirsiniz.
+
+178
+00:39:42,420 --> 00:40:09,380
+Mesela Many to One bir sürü kelimeden oluşan bir metin girebilir ama ondan sadece bir tane output üretebilirsiniz. Ya da bir cümle girer, yani bir sekans girer burada ve outputta da bir sekans çıkar. Bunların çeşitli varyasyonları bu kadar zaten. Yani One to Many, Many to One, Many to Many. Şunlar birbirinden farklı MN de olabilirler. Aynı sayıda üretmek zorunda değiller.
+
+179
+00:40:10,612 --> 00:40:18,271
+Bir cümlenin, mesela 10 kelimelik bir cümlenin başka bir dildeki karşılığı 5 kelimelik olabilir.
+
+180
+00:40:19,612 --> 00:40:25,472
+Burası menü tüm menü yani eşit sayıda üretmek zorunda değillerdi.
+
+181
+00:40:27,412 --> 00:40:31,492
+Neyse, gelelim bu kısma.
+
+182
+00:40:33,619 --> 00:40:58,799
+Şimdi RNN nasıl çalışıyor? RNN dediğimiz şeyin bir iç state'i var. O iç state dediğimiz şey şuradaki HT, daha önce konuştuğumuz bu HT'ler. Bu HT'nin içerisinde ne birikiyor? O ana kadar gelen girişler birikiyorlar. Bütün hikaye aslında şu kadar.
+
+183
+00:40:59,443 --> 00:41:24,183
+Arananlar için konuşuyorum. Nedir bu? Bakalım. Şimdi X'te bizim inputumuz. Görüyorsunuz X'te herhangi bir anındaki input. WXH. Şimdi H dediğimiz şey state'i ifade ediyordu. Bakın onu hatırlayın. XH var. WXH'te bir matriz var elimizde. Bu matriz ise bu X'e çarpıyoruz. Peki.
+
+184
+00:41:24,884 --> 00:41:46,664
+Şimdi ht-1 dediğimiz şey de bir önceki state'imiz. Bir önceki state'imiz bizi de whh ile çarpıyoruz. Bu da başka bir maçlısı. Sonra bu ikisini topluyoruz. Daha sonra bir non-neler fonksiyonundan geçirip bu da bizim yeni ht'miz olur. Şimdi yeni ht demek ne demek? Aslında bu ht'yi de altta olarak dışarıya veriyoruz.
+
+185
+00:41:47,603 --> 00:42:10,123
+Bakın, XT giriyor. Önceki HD-1'e göre onu da kullanarak yeni HD'yi üretiyor. Şimdi bunu biraz daha düşünelim. Bu ne demeye geliyor aslında? Şöyle bir şey. X tane H'a geçişleri düşünelim. WXH maddesini düşünelim.
+
+186
+00:42:10,708 --> 00:42:37,568
+W, X, H matrisi temel olarak aslında şöyle bir input gelirse şöyle bir state'e gitti ifade eder. Bakın, X, H dediğimiz şey, yani inputun şöyle bir şey geldiğinde, böyle bir input geldiğinde şu state'e gitti. Bunu temsil ediyor. Yani girişin state'in ne kadar etkilediğini ifade ediyor.
+
+187
+00:42:38,579 --> 00:43:04,300
+W ve HH neyi ifade ediyor arkadaşlar? Daha önceki şu state'de sen bir sonraki state'de nerede olacaksın? Onu ifade ediyor. Aslında bu Markov yapıları vardı. Orada da o tarz bir şey vardır. Önceki state neyken şimdi bir sonraki state'in ne olacağının bir maddesi falan vardı orada da. Onlara benziyor aslında buradaki olay. Tüm olay burada öğreniliyor bu.
+
+188
+00:43:05,268 --> 00:43:30,288
+Şimdi bakın, ht-1 şuyken, whh ne yapacak? Yani geçmiş noktadaki ht-1'e göre ht'nin ne olacağına bakacak. Yani aslında x1'den bağımsız olarak ht'yi tahmin etmeye çalışıyor. Yani ht-1 iken yeni ht ne olacak? Burası bulmaya çalışıyor.
+
+189
+00:43:31,027 --> 00:43:35,688
+Ht'ye x1 iken yine ht bu sefer neye bağlı olacak? Bakın, xd'ye bağlı olarak.
+
+190
+00:43:36,211 --> 00:43:47,192
+Yani girişe göre gelecek tahmin ediliyor. Geçmişteki HT'ya göre gelecek tahmin ediliyor. Bu ikisinin tahminleri birleştirip bir tanenin anlendimlerden geçirilerek HT'ya tahmin ediliyor.
+
+191
+00:43:47,192 --> 00:44:01,792
+Yani HT'nin tahmininde bu ikisi birbirleriyle ağırlıklı nasıl da her birbiriyle tahmin üretiyor. O şekilde düşünün. HT'ye eksi 1'e bağlı olarak bir tahmin üretiliyor. XT'ye bağlı olarak bir tahmin üretiliyor.
+
+192
+00:44:05,588 --> 00:44:27,188
+Yeni HD'miz çıkartılıyor. RNN'lerin temel yapısı bu kadar aslında. Bütün RNN'ler temel yapısı bu. Tabii daha da çeşitlendirebiliyor. Burada mesela RNN'lerle bir sonraki karakter tahmini yapılmış.
+
+193
+00:44:34,483 --> 00:45:00,344
+İfade etmek ne demek? Bir tanesi bir diğerlerine hepsi sıfır haline getiriyorsunuz. Neyse o tahmin ediyeniz şey. Mesela burada dört karakterli bir sözlüğümüz olsun. Sözlüğümüz karakterlerden oluşuyor. Okobuları size 4. 4 tane karakterimiz var. Burada mesela H dediğimiz şey 1-0-0-0'la, E dediğimiz şey 0-1'le, L dediğimiz şey 0-0-1-0'la ifade etmişiz.
+
+194
+00:45:00,704 --> 00:45:20,184
+Bu şekilde bir input sekansı var. Şimdi input sekansı ama tek seferde girmiyor bakın. Şurada gördüğünüz şey mesela yapay sınavlarında bunların hepsini tek seferde içeriye koyabilirsiniz. Ama burada öyle bir şey yok. Burada her biri teker teker geliyorlar. Yani ilk önce mesela bu hash geliyor. Hash geldiği zaman bu hidden layer'da şu hashtag'imiz de işte bizim.
+
+195
+00:45:20,851 --> 00:45:46,731
+Bu öğreniliyor. Burada bir tane bir farklılık var, küçük bir farklılık var. Ek olarak yani deminki şuradaki şu mimari, ht'yi output'a vermenin haricinde, ht'yi output'a verirken de o ht'yi bir tane madde size çarpıp output'un ne olacağını tahmin ediyorsunuz. Yani ht'tan y'ye bir geçişi de öğreniyorsunuz. Bakın şurada. W ht dediğimiz şey bu.
+
+196
+00:45:47,088 --> 00:45:53,348
+Demin sadece şunları konuştuk. W, X, H'ı konuştuk. W, H, H'ı konuştuk. Şurada.
+
+197
+00:45:54,168 --> 00:45:56,888
+Görüyorsunuz değil mi? Şurada bunlar var.
+
+198
+00:45:58,048 --> 00:46:04,728
+Burada bir fazladan şey daha var. Öğrenmeniz gereken bir şey. W, H ile yani Hidden State'e göre output ne olacak?
+
+199
+00:46:06,408 --> 00:46:11,008
+Bunu öğreniyorsunuz. Dolayısıyla şu üç tane matrisi öğrenmek bütün hikaye.
+
+200
+00:46:11,568 --> 00:46:13,948
+Bunları düzgün bir şekilde öğrenebildiğiniz zaman
+
+201
+00:46:14,320 --> 00:46:27,900
+Zaten o sistemin modelini ortaya koymuş oluyoruz. Yani her bir input için bir tane outputtan bir şey üretmeyi görüyoruz.
+
+202
+00:46:29,220 --> 00:46:33,800
+Şimdi dediğim gibi temel mekanizma bu kadar. Bütün RNN dediğimiz şey bu.
+
+203
+00:46:34,740 --> 00:46:40,800
+Tabii bunların çeşitli trevleri var. LSTM'ler var, GRU'lar var. Daha sonra RNN'lerin düşüşü var.
+
+204
+00:46:41,652 --> 00:47:07,311
+Neyse. İlk önce şeye bakacağız ama RNN'lerle dil çevirisi nasıl yapılıyor? Bunlar ilerideki konularımız için önemli. RNN'lerle dil çevirisi aslında bir enkoder-decoder yapısına dönüştürüyor. Enkoder-decoder yapısı nasıl bir şey? Tamamen demin gördüğümüz şey aslında. Enkoder'ın içerisini düşünürsek.
+
+205
+00:47:08,019 --> 00:47:34,140
+Demin gördüğümüz şey. Enkoder, şurada gördüğümüz gibi bir şey giriyor, teker teker bir dildeki cümleler, bir cümledeki kelimeler teker teker veriliyor. Bunlar verile verile verile verile. En sonunda şurada bir tane bir vektör elde ediyor. Bu bizim h ne bileyim kaç olsun, t olsun. En sondaki.
+
+206
+00:47:35,411 --> 00:47:58,031
+Enkoder'da aslında toplanıyor bunlar. Yani bütün cümleyi bir tane vektöre sıkıştırıyorsunuz. Öyle söylüyorum. Enkoder. Yapısı tamamen şey, deminki gördüğümüz şey. Yani işte HD-1'e göre haşı tahmin eden ve X'e göre haşı tahmin eden iki tane matrizlerimiz ve buradan bu haşlar da ne yapılıyorlar? Üretiliyorlar.
+
+207
+00:47:58,400 --> 00:48:21,120
+Yani işte başlangıçta hın içerisi boş, x1 geldi zaman içerisinde bir şey geliyor. Daha sonra işte yeni bir tane kelime geldi. Eski şeye göre, ht-1'e göre ve şimdikine göre güncellemiyor. Yine güncellemiyor, yine güncellemiyor. En sonunda bir tane bir matriz, matriz diyorum bir tane vektörümüz var. Bu vektörün içinde bakın, şu ana kadarki bütün cümlenin temsili var.
+
+208
+00:48:23,219 --> 00:48:34,119
+Şimdi decoder'da ise ne yapılıyor? Bakın, HD'si bulun. Çünkü bu da bir sonrakine aktaracak.
+
+209
+00:48:34,119 --> 00:48:48,019
+HH ve HD-1. Burada çünkü herhangi bir input yok artık fark ettiyseniz. Herhangi bir input yok. Yani şey bitti. Yeni bilgi falan girmiyor.
+
+210
+00:48:48,692 --> 00:49:12,831
+İngilizce için olan kelimelerin ya da buradaki herhalde şey, Almanca. Almanca için olan bütün kelimeler bitti. Şimdi mesela İngilizce için olanları üretmeye başlayacaksınız. Artık yeni bir şey girmeyecek. Her şeyi toparladığınız tek bir tane vektörün içerisinde. Şimdiki amacınız bu vektörü kullanarak bunları da her birini üretmeye çalışmak. Bunları üretirken iki durum var. Birer birer kelimeler üreteceksiniz.
+
+211
+00:49:13,427 --> 00:49:34,887
+Yani bir tane kelime üreteceksiniz, sonra bir sonrakine geçeceksiniz. O zaman bir kelime ürettiğinizde sizin neyinizin değişmesi lazım? Yani kelimeyi neye göre üretebilirsiniz? H'a göre üretebilirsiniz. Ki orada şu YT dediğimiz şey, bizim output'umuz HD ve WS. Bu WS dediğim gibi bir şey yapmaya çalışıyor. Şuradaki şu aslında. Şu W, H, Y. Yani Hidden State'e göre output'u üreten yapı.
+
+212
+00:49:35,539 --> 00:50:00,000
+Hidden State'e göre output'u üreten yapı zaten olacak. Yani ona göre üretebilirsiniz. Başka elinizde bir şey yok. Bir tane kelime ürettiniz. Sonraki kelimenin farklı bir şey olması lazım. Farklı bir şey olması için. Çünkü hem farklı bir haline geçmeniz lazım. Dolayısıyla artık neye geçmeniz lazım? Yeni bir State'e geçmeniz lazım. Yeni bir State'e geçebilmeniz için de HT'nizi ne yapıyorsunuz? Tekrardan güncelliyorsunuz. Neye göre? İşte bu HT-1 ve...
+
+213
+00:50:00,000 --> 00:50:19,000
+Yani mevcut şey ve şu maddese göre. Dolayısıyla RNN yapısı ilk başladığında bu şekilde tasarlanmış. Bu tabii belli bir aşamaya kadar başarı göstermiş ama henüz bu yapı mesela...
+
+214
+00:50:19,731 --> 00:50:44,711
+Nasıl ifade edelim? Kural tabanlı çevirimin çok çok ötesinde işler yapabilen bir yapı değil. Çünkü bunun çok bariz bir sıkıntısı var ki, ne o arkadaşlar? Şu C'yi, yani bütün her şeyi tek bir şeye topluyorsunuz, vektörü topluyorsunuz. Yani bir tane cümle var, o cümleyi tek bir tane vektör oluşturuyorsunuz. Sonra o vektörü kullanarak bütün yeni cümleyi de ondan öğretiyorsunuz.
+
+215
+00:50:45,940 --> 00:51:05,400
+Bu çok kolay bir şey değil. Kolay öğrenilebilecek bir yapı değil. Nitekim dediğim gibi çok başarılı ve olamıyor. Burada sorusu olan var mı arkadaşlar? Klasik RNN'de bu işi yapmayı kavradık mı? Nasıl yapıldığını kavramsız olarak.
+
+216
+00:51:09,652 --> 00:51:17,472
+Hocam benim bir sorum var. Buradaki YT'yi mesela ilk in alsın olmak için kullanıyoruz değil mi hocam?
+
+217
+00:51:18,812 --> 00:51:22,852
+Bir daha söylese, bir daha alabilir mi hafı sen? Neyi kullanıyoruz?
+
+218
+00:51:23,672 --> 00:51:29,572
+YT fonksiyonu. YT bizim tencandaki çıkış bilgisi.
+
+219
+00:51:29,932 --> 00:51:34,711
+İlk inona normal bizim gelen o C dediğiniz şeyi veriyoruz değil mi?
+
+220
+00:51:36,115 --> 00:51:41,316
+C dediğimiz şey, yani şu andaki en sondaki yani şu kısım.
+
+221
+00:51:41,316 --> 00:51:41,615
+Evet.
+
+222
+00:51:41,996 --> 00:51:42,175
+Hayır.
+
+223
+00:51:42,695 --> 00:51:45,516
+Bu ev verip A'sını buluyoruz.
+
+224
+00:51:46,036 --> 00:51:46,316
+Evet.
+
+225
+00:51:46,836 --> 00:51:50,756
+Daha sonra da A'sını verip sosu buluyoruz değil mi hocam? Bu Y, T.
+
+226
+00:51:51,536 --> 00:51:55,956
+A'sını vermiyoruz burada. Hani A'sını bir şekilde vermiyoruz şu anda bu gördüğümüz yapıda.
+
+227
+00:51:57,036 --> 00:51:58,256
+Şu anda burada öyle bir şey yok.
+
+228
+00:51:58,623 --> 00:52:07,423
+Şu Y1'i anladın mı hocam? Y2 tam olarak nasıl buluyoruz onu anlamadım. Yukarıdaki sos var ya mesela Avsım sos yazıyor orada.
+
+229
+00:52:07,443 --> 00:52:23,683
+Tamam, şimdi Avsım'ı ürettik. Tamam mı? Avsım'ı ürettik, Avsım'ı şu YT'yi kullanarak ürettik. Şimdi bir sonraki haş üretilecek. Artık şimdi yeni bir tane haş oluştu. Tamam mı? Avsım'ı ürettiğimizde. Şurada artık bunu güncelliyoruz. Şununla.
+
+230
+00:52:24,052 --> 00:52:27,632
+Yani benim HT-1'im artık Avsım mı oluyor?
+
+231
+00:52:28,731 --> 00:52:31,072
+Avsım değil, Avsım'ı üreten şey.
+
+232
+00:52:32,351 --> 00:52:33,411
+Avsım'ı üreten.
+
+233
+00:52:33,831 --> 00:52:37,391
+Avsım GT ama Avsım'ın HT'si diyeyim ona.
+
+234
+00:52:37,771 --> 00:52:38,152
+Tamam mı?
+
+235
+00:52:39,112 --> 00:52:40,211
+Avsım'ın HT'si burada.
+
+236
+00:52:40,931 --> 00:52:43,211
+Avsım'ın HT'sini artık ben ne yaptım burada?
+
+237
+00:52:43,632 --> 00:52:44,231
+Değiştirdim.
+
+238
+00:52:44,991 --> 00:52:46,311
+HH'la çarparak.
+
+239
+00:52:47,380 --> 00:52:51,980
+Anladım. Diğerini bulmak için de onu veriyoruz.
+
+240
+00:52:52,080 --> 00:52:57,020
+Aynen, onu kullanıyoruz. Bu hashtag'i kullanıyoruz. Bu hashtag'i verdiğimiz zaman da sos üretiyor.
+
+241
+00:52:57,460 --> 00:52:58,680
+Tamam, tamam. Anladım.
+
+242
+00:53:00,060 --> 00:53:07,780
+Şimdi tabii bu mimari, zor bir mimari, bunu iyileştirmek için çeşitli şeyler yapılmış. Neler var?
+
+243
+00:53:09,492 --> 00:53:33,672
+Mesela burada demin [öğrenci]'in söylediği mesela şu Y'yi de mesela şeye vermek, bir sonrakine vermek yapısı var mesela şurada görüyorsunuz. Enkoder'da yapılan neyse orayı geçmeyelim hemen atlamayalım. Tek cümleyi siteye indirgenmesi zor bir problemdi. Şimdi enkoder'da şöyle şeyler yapılmış, denenmiş. Cümleyi tersten verelim. Yani cümleyi tersten verelim demek ne demek enkoder'da?
+
+244
+00:53:37,076 --> 00:53:42,076
+Çünkü şöyle bir şey, nasıl söyleyelim onu?
+
+245
+00:53:42,076 --> 00:53:43,796
+A, B, C.
+
+246
+00:53:50,228 --> 00:53:55,888
+C cümlesinin karşılığı mesela D, E, F al. Tamam mı?
+
+247
+00:53:56,968 --> 00:53:59,228
+Yani ben...
+
+248
+00:54:10,003 --> 00:54:12,163
+Burada bunu yapmak için şunu yapmışlar.
+
+249
+00:54:29,619 --> 00:54:56,400
+Şimdi böyle yazınca çok belki şey gözükmedi ama ne yapıldığını gösteriyor burası da. Ama şöyle bir şey olduğunu düşünün. A kelimesinin karşılığında D üretilecek, B'nin karşılığında E üretilecek, C'nin karşılığında F üretilecek. Burada şunu tersten yazmak aslında neyi sağlıyor? C, A, B mesela bundan sonra D'yi üretmek daha kolay olabilir. Çünkü A'nın karşılığı D ya.
+
+250
+00:54:57,172 --> 00:55:24,172
+Yani çok uzun bir aradan sonra üretilmesi yerine, çok kısa bir aradan sonra bunun üretilmesi sağlanmaya çalışılmış. Bu yapı da tabii problemi çözmek için, yani buradaki bir problem ne? Bütün her şeyi tekliften cümleyi indiriyorsunuz. Yani tüm cümleyi tekliften ve vektöre indiriyorsunuz. Sonra bu vektörden sıralı değerler üretmeye çalışıyorsunuz.
+
+251
+00:55:24,692 --> 00:55:45,612
+Yani geçmişteki sıralı değerleri tek bir tane bir şeye indirgediniz. Sonra da yine bundan sıralı bir şeyler üretmeye çalışıyorsunuz. Bu dediğim gibi oldukça zor bir hale geliyor. Burada ne yapılmaya çalışılmış? Encode ve decode edecek bilgiler arasındaki mesafeyi azaltmaya çalışmışlar. Yani A ile D. Mesela A ile D'nin arasında burada.
+
+252
+00:55:47,443 --> 00:56:10,244
+Mesafe var epey ama buradaki mesafe çok daha kısa. Ama bu çok çok da böyle süper bir şey değil, olay değil. Biraz daha iyi olan kısım decoder kısmındaki iyileşmeler. Decoder kısmındaki değişikler şöyle. Şimdi biz normalde HT'yi, şuradaki HT'yi neyden üretiyorduk? HT eksilirden üretiyorduk. Başka bir şey var mıydı?
+
+253
+00:56:14,996 --> 00:56:41,735
+Sadece HT-1'dir. Onu birazcık geliştirmişler. Ne yapmışlar? Ne yapılmış? Bir tanesi YT-1'de eklemiş. Yani ne söylendiğin kendi alt kutunu da bakın. Kendi alt kutunu da işin içine koyalım. Yani aslında sosu üretmek için buraya gelsin. Bir de aynı zamanda şu C'yi de biz unutmayalım. Yani C'yi de her zaman şeyin içerisine katalım.
+
+254
+00:56:42,483 --> 00:57:06,043
+Bu hesabın içerisinde. Yani şuradaki üretilmiş olan, şu bütün cümlenin hepsinin içinde sıkışmış olduğu C temsilini, bağlamı da her durumda biz tutalım. Dolayısıyla eskiden sadece HT-1'e göre bu üretimi yapılırken, şurada C'nin ve YT-1'in de üretimiyle daha başarılı sonuçlar üretilmiş olmuştu. Ve her bir için birer V'si var bunların.
+
+255
+00:57:06,931 --> 00:57:31,011
+GT'yi bu sefer aynı şekilde sadece HT'ye bağlı olarak değil, aynı zamanda C'ye de bağlı olarak ne yapılıyor? Üretiliyor. Mesela bunlar RNN'lerle yapılan iyileştirmeler. Bunlar bir miktar daha şey olmuşlar. Daha başarılı hale getirebilmişler olayı.
+
+256
+00:57:32,148 --> 00:57:33,628
+Şimdi arkadaşlar bir ara verdim.
+
+257
+00:57:39,603 --> 00:57:42,543
+10 dakika araçları yeterli olur.
+
+258
+00:57:56,755 --> 00:57:57,755
+Hoşçakalın.
+
+259
+01:09:47,091 --> 01:09:48,251
+Sesim geliyor mu arkadaşlar?
+
+260
+01:09:52,500 --> 01:09:53,439
+Geliyor hocam.
+
+261
+01:09:54,340 --> 01:09:54,920
+Tamamdır.
+
+262
+01:09:56,379 --> 01:09:58,279
+Peki, devam edelim şimdi.
+
+263
+01:10:06,003 --> 01:10:07,103
+Slide geldi mi?
+
+264
+01:10:09,243 --> 01:10:10,243
+Geldi hocam.
+
+265
+01:10:14,243 --> 01:10:28,683
+Aranenlerin güzel başarıları var, oluştu. Fakat daha sonra bu aranenlerden daha iyi yöntemler geliştirmeye başlandı.
+
+266
+01:10:30,355 --> 01:10:34,775
+Arnen gibi yapılar demiyorum da zamanı da kullanan yapılar.
+
+267
+01:10:34,775 --> 01:10:43,255
+Şimdi şöyle bir şey var. Arnenlerde şeyi hatırlayalım. Şu yapıyı hatırlayalım.
+
+268
+01:10:46,635 --> 01:10:55,575
+Şimdi burada bir XT'ye geldiği zaman, yani yeni bir kelime geldiği zaman.
+
+269
+01:10:56,148 --> 01:11:04,007
+Bu kelime illaki neyi etkileyecektir? Haşteyi etkileyecektir. Yani haşteyi etkilememesi gibi bir durum söz konusu değil.
+
+270
+01:11:08,507 --> 01:11:11,688
+Mesela sıklık ve kullanışı bir.
+
+271
+01:11:14,484 --> 01:11:36,043
+Cümlenin anlamını, ifade etmek istediği anlamı çok da değiştirmeyen kelimeler de vardır. Fakat bunlar bile ne olacaklardır? Bu sistemin içerisinde HT'yi etkileyeceklerdir. Ama bazı şeyler o kadar da etkilememeliler gibisinden düşünülmüş.
+
+272
+01:11:36,416 --> 01:11:56,476
+Peki o zaman bu etkilememeleri için nasıl bir yaklaşım izlenebilir gibi. Burada bazı XT'lerin HT'yi etkilemesine izin verip, bazılarının etkilemesine izin vermeyerek bunu gerçekleştirebiliriz denmiş.
+
+273
+01:11:56,476 --> 01:12:03,136
+Bir yaklaşım, bir çıkış noktası bu LSTM'lerin. Yani bütün inputlar.
+
+274
+01:12:03,475 --> 01:12:15,056
+Hidden State'i etkilemek zorunda değiller. Bazıları etkilemeyebilirler. İkincisi, herhangi bir noktadan sonra şeyin değişmesi gerekebilir. Bağlamın değişmesi gerekebilir.
+
+275
+01:12:15,056 --> 01:12:24,056
+Yani mesela iki cümlenik bir şeyi düşün. Mesela bir cümleyi ürettiniz, sonra ikinci cümleye geçeceksiniz.
+
+276
+01:12:24,564 --> 01:12:49,344
+Yani iki cümlenin arka arkaya olduğunu düşünün. İki cümleyi arka arkaya veriyorsunuz ve iki tane cümlenin arka arka üretilmesini bekliyorsunuz makine çevresinde. Mesela birinci cümle bittikten sonra birinci cümleye dair bir şeyler artık kalmamalı içeride. Birinci cümleyi ürettikten sonra aslında sanki bir şekilde bir resetleme, bir sıfırlama yapmanız gerekiyor o noktadan itibaren gibi bir durum var.
+
+277
+01:12:51,091 --> 01:13:04,971
+Hem sıfırlanabilmesi hem de X'nin onu etkileyip etmemesini kontrol altına almak için aslında bu iki temel amaçla LSTM'ler ortaya çıkartılmış.
+
+278
+01:13:06,323 --> 01:13:22,384
+Şimdi burada mesela şey yazıyor işte, XT'ler H'a etki etmeyebilir. Tabi helestriyanların iki tane yapısı var. Şimdi şu klasik RNN, şurada gördüğünüz RNN yapısı. Yani bakarsak buraya XT ve HT eksi bir birleşerek tam H'tan geçip HT'yi üretiyorlar. Bütün yapı bu.
+
+279
+01:13:22,836 --> 01:13:49,656
+LSTM'de ise bu birazcık daha kompleks bir yapıya dönüşüyor. Şimdi LSTM'de iki tane şey var. Şuradaki bir HT'yi görüyorsunuz. Bir de CT. Şu yukarıdan giden CT, aşağıdan giden HT. Yani iki tane yapı ilerliyor. İki tane konteks vektörü ilerliyor. O şekilde düşünün. İki tane konteks ilerliyor. O şekilde düşünebiliriz.
+
+280
+01:13:50,003 --> 01:14:12,823
+Şimdi yukarıdan giden, pardon aşağıdan giden aslında bizim çok klasik mağda HT olan kısım. Yukarıdan giden ise CT olan kısım diye ilerleyecek. Şimdi burada öğrenilen, ikisini birden birleştirirseniz tek bir tane W öğrenebilirsiniz ARN'e. Ama burada öğrenilen dört tane matris var. Şimdi bu dört tane matrisin ne olduklarına bakalım.
+
+281
+01:14:15,220 --> 01:14:42,700
+Şimdi, CT-1, bir de CT. Hani iki tane yol var demiştim. Yani bir üretim kısmı var, HD'ler. Yani outputlar, orası ayrı. Bir de ama içeride yürüyen iki tane değer var. Bir tanesi CT'ler, bir tanesi HD'ler. HD'lerin zaten aranenlerde de varlardı. Buradaki ekstradan bir bilgi. Şimdi bu ekstradan bilgi bize neler sağlıyor? Bu yüzden CT-1 belli oranlarda unutur, saklanır. Yani bazen bunu unutuyorsunuz, bazen tutuyorsunuz.
+
+282
+01:14:43,007 --> 01:14:55,528
+Üstüne bir şey eklenecek. Mesela şuradaki ilk çarpıyı düşünelim. Bu çarpı geçmişe dair bilgileri bunun içerisine çarpalım, şey olsun, ederler ona unutulsun.
+
+283
+01:14:55,887 --> 01:14:58,967
+Ya da ileride görüşürüz adı mesela ekleyelim üzerine bir şey.
+
+284
+01:14:59,827 --> 01:15:04,948
+Şimdi unutulur saklanmasını ilk kısım sağlıyor. Ht-1'e göre bu değerlendiriliyor.
+
+285
+01:15:11,636 --> 01:15:30,636
+Şuradan gelecek olan ct'nin çarpımı, yani geçmiş ct-1 ile şimdiki input için hesaplanan ct ve tildanın ağırlık toplamlarından, şurada gördüğünüz ct üretiliyor. Bu ct'yi şeyin üzerine ekliyor zaten. Yani şuradaki yapıda tamamen ekliyor.
+
+286
+01:15:47,220 --> 01:15:51,260
+Şurada Ft ile Ct-1'in çarpıldığını görüyorsunuz.
+
+287
+01:15:51,300 --> 01:15:53,199
+Burada da işte Ft, Ct, Ct-1'in çarpımı.
+
+288
+01:15:53,480 --> 01:15:55,220
+Sonra artı Iıt.
+
+289
+01:15:55,340 --> 01:15:56,400
+Iıt nereden geliyor?
+
+290
+01:15:58,440 --> 01:16:02,619
+Bizim geçmiş ve şimdiki bilgilerimizden geçmiş derken.
+
+291
+01:16:05,268 --> 01:16:23,768
+Bu geçmişteki Hidden State ve şimdiki Current Input'u kullanarak bir IT üretiliyor. Bu IT ile de çarpılıp yine burada da öğrenilen bir başka yapı var VC maddesiyle. Bunlar çarpılıp bu şekilde ilerletiliyor.
+
+292
+01:16:23,768 --> 01:16:29,387
+Yani CT'nin içerisinde bir şeyler katılacak mı, katılmayacak mı, eskisi duracak mı, durmayacak mı onun yapısı.
+
+293
+01:16:29,876 --> 01:16:52,015
+Bu şekilde dört tane, yanlış hatırlamışsam, formülasyon var. Bu dört tane formülasyon çok temel olarak bizim şu dört tane, bütün hikaye, şuradaki dört tane matrisi öğrenmeye çalışıyor. Bu matrisler şurada gördüğünüz içerilerdeki dönüşüm matrisleri. Aynen RNN'deki, şuradaki şu WHH, WHX diye ifade ettiğimiz matrisler gibi matrisler.
+
+294
+01:16:52,435 --> 01:17:06,636
+Alestiyem'den eğitimi dediğimiz nokta bu dört tane maddesin öğretilmesi olarak ifade edebiliriz. 1990'larda geliştirilmiş bir yöntem Alestiyem'de çok yeni bir yaklaşım değil.
+
+295
+01:17:07,060 --> 01:17:22,700
+Hestiyanlar kadar karmaşık olmayan ama onlardan aşağı yukarı benzer performans gösteren GRU'lar var. Onların üç tane maddesi var. Dört tane maddesi öğrenmek yerine üç tane maddesi öğreniyorlar.
+
+296
+01:17:23,039 --> 01:17:42,819
+Ama burada şey yok. Bu GRU'nun falan baktığınızda bu buna neden denk? Bu teorik bir açıklama çok fazla yok. İmplementasyon yani aynı görevlerde bunları denemişler ve benzer başarılara sahip olduklarını görmüşler. Aynenenden de ikisi daha iyiler o noktada.
+
+297
+01:17:43,252 --> 01:17:58,592
+Yani GRU'da LSTM kadar iyi. Aralarında çok çok büyük farklılıklar olmadığı göstermiş. Ama matematik olarak bu işi yapıyor, bu işi yapıyor çok net bir şekilde söylemek mümkün değil.
+
+298
+01:18:07,920 --> 01:18:29,000
+Çok daha kritik bir gelişme yaşanıyor. Bu gelişmenin adı attention. Şimdi attention mekanizması temelde aslında ananenler ya da elestiyenler için artık neyse, sonuçta recurrent yapılar için oluşturulmuş bir yaklaşım. Başlangıçta böyle.
+
+299
+01:18:31,572 --> 01:18:43,451
+Gerçi daha da öncesinde resimler için de yapılmış şeyleri falan da var da ama yani attention'ın ilk çıkışı şey değil, onu demeye çalışıyorum. Transformer modelleri değil. Transformer modellerine bakacağız sonra.
+
+300
+01:18:43,451 --> 01:18:56,231
+Şimdi attention, dikkat demek. Şimdi burada bir nasıl ifade edelim?
+
+301
+01:18:58,515 --> 01:19:10,195
+Mesela makine çevresini için konuşalım. Makine çevresinde mesela bir source dil var, bir de target dil var. Yani bir giriş dili var, bir de çevrilecek olan dil var.
+
+302
+01:19:22,496 --> 01:19:33,595
+Hangi kelimelerle, yani onun üretiminde hangi kelimelerle etkili olduğunu bulmak için tasarlanmış bir mekanizma.
+
+303
+01:19:33,595 --> 01:19:38,595
+Şimdi, burada...
+
+304
+01:19:43,155 --> 01:19:57,935
+Herhangi bir anda, bakın herhangi bir anda enkoder'ın tüm state'leri etkin. Yani şöyle bir şey değil. Şuradadaki gibi, LSTM ya da RNN'lerdeki gibi bir mekanizma değil de.
+
+305
+01:20:00,000 --> 01:20:20,420
+YT'nin üretiminde, o şekilde düşünelim, şu Ausum'ın üretiminde, buradaki ifadelerin hepsinden gelen şu H1, H2, H3, bunların her birbiri şey ya, vektör ya, bu vektörlerin hepsi birden çeşitli ağırlıklarla çarpılarak bunu üretmeye çalışıyorlar.
+
+306
+01:20:20,420 --> 01:20:24,779
+Bakayım, şurada daha şey göreceğiz.
+
+307
+01:20:25,779 --> 01:20:30,779
+CNN'deki gibi mi hocam? Hepsini birlikte mi veriyoruz tek tek vermek yerine?
+
+308
+01:20:34,779 --> 01:20:38,779
+Hepsi bir üretiliyorlar. Onu söyleyeyim ilk önce. Mesela şurada.
+
+309
+01:20:39,667 --> 01:20:58,667
+X1, X2, X3 ve Xt var ya, şimdi burada mesela bir direction LSTM var şurada, bu yapıda. Bir bu tarafa doğru hesaplar yapılmış, bir geriye doğru hesaplar yapılmış. Bunlar birleştirilmişler. Orası çok çok kritik değil. Ama bu X1 için üretilen vektör...
+
+310
+01:20:59,507 --> 01:21:17,528
+X2 için üretilen vektör, X3 için üretilen vektör. Bunların hepsi birden veriliyorlar. Aynen öyle. Tek seferde. Ama bunlar ilk önce bu şekilde üretiliyorlar burada. Tamam mı? Yani ilk önce şu elestiyem çalışıyor.
+
+311
+01:21:18,068 --> 01:21:33,388
+LSTM'in çıkışları, şuradaki LSTM'in çıkışları X1 için, X2 için yani her birisi için LSTM'in çıkışları elde ediliyor. Sonra bu elde edilen şeyler, bir tane şuradaki alfa, T1, T2, T3 işte onlar alfalar bizim attention katsayıları.
+
+312
+01:21:33,388 --> 01:21:46,068
+Attention katsayısı demek ne demek? YTNC output üretmek için benim şu X1, X2, X3'ten hangileri o kadar etkili olacaklar? Bu alfaların.
+
+313
+01:21:46,068 --> 01:21:51,268
+öğrenilmesi süreci aslında bizim attention mekanizmamızı oluşturuyor.
+
+314
+01:21:52,468 --> 01:22:02,347
+Tabii burada şu alfaların, şu alfa i, g denilmiş, i'inci çıkışa, j'inci girişinin ne kadar etkisinin olacağı için öğrenmeniz gereken mevzu bu.
+
+315
+01:22:03,708 --> 01:22:09,668
+Tabii diyelim ki 20 kelimelik bir inputunuz var, 20 kelimelikte bir outputunuz var.
+
+316
+01:22:12,467 --> 01:22:26,047
+Katsayı sayısı 400, yani 20 çarpı 20 şeklinde düşünseniz. 400 tane katsayı öğrenmeniz gerekecek.
+
+317
+01:22:26,987 --> 01:22:35,147
+Yani inputun token sayısı çarpı, outputun token sayısı neyse o kadar ekstra parametre öğrenmeniz gerekecek.
+
+318
+01:22:35,147 --> 01:22:37,147
+Şimdi...
+
+319
+01:22:37,376 --> 01:22:56,636
+Bu dediğim gibi ilk çıktıkları zamanki mevzu. Yani şuradaki şu mesela bu C vektörü hani şeyde üretiliyordu ya tek bir yani işte en sondaki HT aslında C idi.
+
+320
+01:23:02,195 --> 01:23:09,255
+Belli katsayılarla çarpılarak C'yi üretiyorlar ve o katsayının da ne olacağı süreç içerisinde öğreniliyor.
+
+321
+01:23:10,636 --> 01:23:25,235
+Şimdi bu klasik attentionlardı. Daha sonra bir adım daha ileriye gidildi ki işin içerisinde alenen yapısı, yani şuradaki şu gördüğümüz yapı tamamen çıkartıldı.
+
+322
+01:23:26,420 --> 01:23:42,199
+Tamamen attention'lar üzerine bir mekanizma kuruldu. Attention is all you need adlı makalede bu duyuruldu. Bizim herhangi bir şekilde RNN falan yapmamıza, yani rekörsif yapılar kullanmamıza gerek yok.
+
+323
+01:23:42,199 --> 01:23:53,199
+Sadece attention kullanarak biz makine çevirisinde çok iyi performanslar elde edebiliriz dediler ki gerçekten...
+
+324
+01:23:53,684 --> 01:24:00,164
+İşte şimdiki yani state of art yaklaşımlar, şu anki de temelde bu transformerları kullanıyorlar.
+
+325
+01:24:00,164 --> 01:24:12,904
+Şimdi transformerları nasıl çalıştıklarını, yani attention mekanizmasını falan, şimdi burada çok detayına girmeyeceğim.
+
+326
+01:24:12,904 --> 01:24:19,123
+Ama şeyde, nasıl ifade edeyim?
+
+327
+01:24:19,604 --> 01:24:45,984
+Şu dersin bizim ders sayfasını bir açarsanız orada derslerin arasında bir tane Traktakus diye bir tane kısım var. O Traktakus'un şu anda en sonunda bu Transformer'lar nasıl çalışır diye bir şey var. Döküman var. Orada biraz formal olmayan bir dille bunu birazcık anlatmaya çalışıyorum.
+
+328
+01:24:46,547 --> 01:25:05,268
+Çeşitli kaynakları kullanarak onları inceleye inceleye çıkarttığım şeyler zaten işlerden. Sonlar bekler fena değil. Sondaki birkaç tanesi özellikle iyi kaynaklar. Onlardaki mekanizmaları, yazıları okuyabilirsiniz.
+
+329
+01:25:10,036 --> 01:25:15,976
+İçini anlatmayacağım ama şeyde, Bert kısmını anlatırken birazcık buraya gireceğim aslında.
+
+330
+01:25:17,636 --> 01:25:20,556
+Oradaki attention mekanizması, şöyle söyledim.
+
+331
+01:25:22,115 --> 01:25:25,896
+Hani buradaki, yani şuradaki gördüğümüz attention mekanizması şuydu.
+
+332
+01:25:27,155 --> 01:25:32,775
+İyinci çıkışa jinci girişinin ne kadar etkisinin olacağı.
+
+333
+01:25:33,140 --> 01:25:50,760
+Burada yani output'un üretilirken input'taki nelere dikkat edilmesi gerekiyor buna odaklanıyordu. Yani input'un üzerine nerelere bakmalıyım ki ben output'u iyi üreteyim bu.
+
+334
+01:25:51,520 --> 01:25:59,800
+Şimdi transform mekanizmasında ise böyle bir şey var. Artı buna ek olarak çok daha değişik olan bir şey var. Self-attention diye bir mevzu var.
+
+335
+01:26:00,144 --> 01:26:18,144
+Self-Attention. Self-Attention kendine dikkat. Self-Attention dediğimiz şey de çok kabaca yine ifade etmek gerekirse, bir cümlenin içindeki kelimeler o cümlenin içindeki diğer kelimelere ne kadar bağlılar?
+
+336
+01:26:20,064 --> 01:26:27,164
+Ya da bir metnin içerisindeki bir kelime o metnin içerisindeki diğer kelimelere ne kadar bağlı? Hangilerine bağlı? Hangilerinden şey yapılıyor?
+
+337
+01:26:27,604 --> 01:26:31,104
+Mesela nasıl ifade edelim?
+
+338
+01:27:00,307 --> 01:27:22,068
+Komik bir cümle. Ali okula gelince onu gören Hilmi çok sevindi. Şimdi buradaki Ali okula gelince, buradaki onun kelimesini düşünelim. Şu onun kelimesinin vektörü. Buradaki diğer kelimelerin vektörlerine hangisine yakın olmasını istersiniz?
+
+339
+01:27:31,572 --> 01:27:46,252
+Ali. Ali, değil mi? Yani şu onu kelimesinin vektörü sabit bir şey olmasa, tamam mı? Şimdi mesela şey hatırlayamıyorum. Mesela word to back falan gibisinden yapılır hatırlayamıyorum. Onun kelimesi için word to back bize sabit bir tane kelime üretecek, değil mi?
+
+340
+01:27:56,851 --> 01:28:02,851
+Vektörü neyse ona yakın bir şey üretilecek. Ama mesela şu cümle için...
+
+341
+01:28:08,884 --> 01:28:27,884
+Kedi okula gelince onu görmeni çok sevindiğim, onu kelimesinin vektörü bu sefer kedi kelimesine yakın bir şey olacak. Anlatabildim mi? Yani bir kelimenin özelliklerine konuşursak, bunların...
+
+342
+01:28:28,243 --> 01:28:36,043
+Çok iyi bir şekilde temsil edilebilmesini aslında sağlıyor bu tarz bağlam temelli yapılar.
+
+343
+01:28:36,043 --> 01:28:47,623
+Şimdi self-etention dediğim gibi buradaki her bir kelimenin kendisinin haricindeki diğer bütün kelimeler olan bağımlılıklarını, attentionlarını yani şu alfaları vardı ya.
+
+344
+01:28:48,692 --> 01:28:58,532
+Yani yinci kelimenin yinci kelimeye ne kadar etkisinin olacağını hesaplamada kullanıyorlar. Self-attention dediğimiz mekanizma bu.
+
+345
+01:29:07,475 --> 01:29:13,995
+Transformer'ın girişin ve çıkışın kendi içindeki bağımlılıklarının. Yani girişin de kendi içindekilerine bakıyor, çıkışın da kendi içindekilere bakıyor.
+
+346
+01:29:16,035 --> 01:29:22,095
+Ve dediğim gibi bu Transformer'lar ilk önce makine çevirisi için öneriliyorlar.
+
+347
+01:29:34,899 --> 01:29:56,519
+Doğal değiştiremedeki şey kısmı başlıyor. Pre-trained modeller kısmı başlıyor. Ama pre-trained modeller aslında direkt Berk'le başlamıyor. Onun öncesi de var. Şimdi birincisi RNN tabanlı yaklaşımlar var. Yani dil modellemede mesela sonraki kelimeyi tahmin edilmek için eğitilmiş mesela tek emel şey var, mimarisi var.
+
+348
+01:30:01,555 --> 01:30:14,595
+Daha önce gördük, mesela bir sonraki kelimeyi tahmin etmek, bir sonraki kelimeyi tahmin etmek gibisinden şeyleri gördük, yapıları gördük, modelleri gördük. Çok klasik istatistiksel din modelleriyle bunları gerçekleştirdik.
+
+349
+01:30:14,595 --> 01:30:22,996
+Şimdi bu TagML bir RNN mimarisi, o demin gördüğümüz RNN yapısında bir mimari. Fakat önemli olan kısmı şu.
+
+350
+01:30:23,344 --> 01:30:47,163
+Modelin bir başka görevde ilk kullanımı. Yani pre-trained mimarilerin ortaya çıkışın ilk prototipi belki diyebiliriz. Yani bir sonraki kelimeyi tahmin etmek için bir mimari tasarlanmış ve kullanılmış, eğitilmiş. Daha sonra bu mimari farklı görevlerde kullanmış, metin sınıflandırmada kullanmış, nerede kullanılmış gibi gibi.
+
+351
+01:30:47,796 --> 01:31:04,355
+Dolayısıyla ilk örnek bu noktada Tekemeli alabiliriz. Tekemel'den sonra mesela Tekemel'de başka bir görevde deneme yapılmış. Elma ortaya çıkıyor. Elma da yine arinden tamamlı.
+
+352
+01:31:04,787 --> 01:31:24,927
+Elmo'da çok sayıda görevde performans artışı ortaya konuyor. Yani bir tane model eğitiyorsunuz yine sonraki kelimeyi tahmin etmek için. Ama daha sonra modelin mimarisini koruyorsunuz. O mimarın üzerine birazdan Berthe anlatırken konuşacağım aslında onları.
+
+353
+01:31:26,868 --> 01:31:43,188
+Çok küçük bir katman yerleştiriyorsunuz bir sınıflandırma katmanı. O sınıflandırma katmanın da farklı görevlere göre özelleştiriyorsunuz. Bu şekilde birçok görev için kullanılabilecek tek bir tane mimari çıkıyor ve fantone edebilecek bir tane mimari çıkıyor.
+
+354
+01:31:43,188 --> 01:31:51,608
+İşte elma. Dediğim gibi ilk klasik manada birçok görev için özelleştirilebilir dil modeli, sinirsel dil modeli elma.
+
+355
+01:31:52,500 --> 01:32:16,739
+Daha sonra Transformer'lar geliyorlar. Transformer'lar aran tabanlı yaklaşımları geçiyorlar. Bunlardan ilk örnek GPT. Open AI'ın GPT'si. GPT çok temel olarak sonraki kelimeyi tahmin etmek için eğitiliyor sadece. Aynen önceki Elmo ve Tekneme'de olduğu gibi.
+
+356
+01:32:17,300 --> 01:32:29,460
+Sonra Bert çıkıyor. Bert'te maskelenmiş kelimeyi tahmin diye bir şey çıkıyor. Şimdi bu sonrakki kelimeyi tahmin etmek, maskelenmiş kelimeyi tahmin etmelerin pretrain kısımları.
+
+357
+01:32:29,460 --> 01:32:44,460
+Şimdi pretrain demek şu, siz önceden çok büyük bir derlemle, yani aynen Word2Vac'te olduğu gibi mesela ne yapıyorsunuz? Derlemi kullanarak eğitim yapıyorsunuz. Şimdi Word2Vac'te mesela...
+
+358
+01:32:44,511 --> 01:32:51,572
+Eğitimi oluşturmak için herhangi bir etiketleme yapmaya ihtiyacı var mı arkadaşlar World2Wack'te?
+
+359
+01:32:55,347 --> 01:33:09,387
+Hayır. Yok değil mi? Öyle bir şey yok. Ne yapılıyor orada? Bir tane kelime veriliyor. Etrafındaki kelimeleri tahmin etmeye çalışıyor. Ya da etrafındaki kelimeleri verip ortadaki kelimeyi tahmin etmeye çalışıyor değil mi? Hani böyle iki tane mekanizması vardı.
+
+360
+01:33:09,971 --> 01:33:24,231
+Burada da yine benzer bir şekilde, mesela GPT'de belli bir sayıdaki kelime verilip ondan sonra, ondan sonra kelime tahmin edilmeye çalışıyor. Bir sonraki kelimeyi tahmin etmesi. Buradaki bütün olay GPT için.
+
+361
+01:33:25,311 --> 01:33:37,372
+BERT ise maskelenmiş kelimeyi tahmin etmeye çalışıyor. Maskelenmiş kelimeyi tahmin etmek ne demek? Bir cümlenin içerisindeki bazı kelimeleri kapatıyorsunuz. O kapattığınız kelimelerin ne olduğunu bulmaya çalışıyor sistem.
+
+362
+01:33:38,931 --> 01:34:03,612
+Bu da yine güzel olan kısmı. Bunda da herhangi bir etiketleme ihtiyacı var. Yani insanların bir etiketleme yapmasına gerek yok. Çünkü zaten cümlenin içerisinden, mesela elinizde derlem var, o derlemlerinden bir tane cümle seçtiniz. O cümlenin içerisindeki rastgele seçilmiş kelimeleri kapattınız. O kelimelerin ne olduğunu zaten biliyorsunuz. Dolayısıyla şey değil, hani training datası üretmek oldukça basit.
+
+363
+01:34:04,724 --> 01:34:31,384
+Bir diğer yine Task Bert'in üretiminde cümle sonraki cümle mi ifadesi. Şimdi sonraki cümle mi demek şu demek, hani iki tane cümle var, bu iki cümle birbirinin arkası, yani birinci cümle sonra ardından ikinci cümle giriyorsa bu işte ardışık cümle, is next, these are not next diye iki tane sınıflandırma. Bunun detayına dediğim gibi gireriz.
+
+364
+01:34:33,779 --> 01:34:59,079
+Roberta, Bert'in içerisindeki bu sonraki cümle tahmini mevzusunun çok da fazla bir etkisinde olmadığını düşünüp onu kaldırmışlar. Yani sadece maskelenmiş kelimeyi tahmin etmek var. Sonra Albert var mesela maskelenmiş kelimeyi tahmin etmek ve sonraki cümlemi ikili sınıflandırma yine şeydeki gibi, Bert'teki gibi.
+
+365
+01:35:01,203 --> 01:35:15,543
+Ama sadece cümlenin ikili sınıflandırılmasında ardışık iki cümleyi pozitif, negatif olarak ise rastgele iki cümle verirken Albert pozitifteki iki tane cümleyi yer değiştiriyor.
+
+366
+01:35:16,764 --> 01:35:19,023
+Yani daha zor bir soru soruyor.
+
+367
+01:35:19,023 --> 01:35:26,304
+Yani A'dan sonra B mesela var. Bu pozitif. Negatif olan B'den sonra A gelmesi.
+
+368
+01:35:27,028 --> 01:35:48,028
+O mesela negatif olarak vermiş. Mesela Bert rastgele iki cümle veriyor o negatifleri üretmek için. Elektra yine kullanan, elektrada maskelenmiş kelimeyi tahmin etmek değil de bir cümlenin içerisindeki bir kelimeyi rastgele değiştiriyorsunuz, başka bir kelimeyle değiştiriyorsunuz. Hangi kelimenin değiştirdiğini tahmin etmeye çalışıyor.
+
+369
+01:35:50,323 --> 01:35:55,743
+Bart var. O birazcık daha farklı şeyler yapıyordur. Onunla geçelim.
+
+370
+01:35:57,523 --> 01:36:06,923
+Şimdi Bart ve self-supervised şeyler. Bart'ın içinde görevlerdi. Öyleler zaten.
+
+371
+01:36:07,344 --> 01:36:32,583
+Neler? Büyük miktarda eğitim verisi üretmek için üretilen yan görevler, bizim bu self-supervised görevlerimiz oluyor. İnsan etiketlemesine emeğine ihtiyaç yok. Sonra kelimeyi üretmek, cümleyi üretmek, film kardesini üretmek. Mesela o tarz yaklaşımlar da var. Mesela bir sekans düşünün, bir film düşünün. O filmin içerisindeki belli parçaları kaldırıp onları tahmin etmeye çalıştığınızı düşünün.
+
+372
+01:36:33,268 --> 01:36:56,147
+Tabii bunlar çok çok kolay şeyler değiller. Mimaller olmuyor. Yani kelimeleri yapmak daha basit bir şey o noktada düşünürsek. Neyse. Ama hani bu tarz şeyler aslında tamamen olayla self-supervised şeyler, train datası üretmek buradaki olay.
+
+373
+01:36:59,123 --> 01:37:11,623
+Başarılı ve yararlı görevleri üretebilirseniz aslında o kadar bedavadan bilgi kazanmış oluyorsunuz. Bedavadan bilgi derken etiketleme ihtiyaç duymadan.
+
+374
+01:37:12,563 --> 01:37:22,823
+Mesela neler yapılabiliyor? Gürüte eklemek. Mesela oldukça yine bu tarz South Supervisal görevlileri için yapılabilecek bir şey. Mesela maskelenmiş kelimeleri tahminyonu konuştuk.
+
+375
+01:37:22,823 --> 01:37:24,043
+Mesela başka ne var?
+
+376
+01:37:24,404 --> 01:37:50,224
+Sırası bozulmuş cümleyi düzeltmek. Yani bir şey veriyorsunuz, bu BART'taki mesela görevlerden bir tanesi. Sentence Permutation. Normalde orijinal cümle şu. ABC.DE. Mesela üç tane kelime var, sonra bir nokta, sonra iki tane kelime var, bir tane nokta. Böyle bir segment aldığınızı varsayalım. Mask gelmiş kelimeni tahmin edin. Token masking dediğimiz şey, oradaki bazılarının alt çizgi haline gelmiş.
+
+377
+01:37:50,655 --> 01:37:52,655
+Onları tahmin etmeye çalışacak.
+
+378
+01:37:52,655 --> 01:37:59,655
+Sentence Permutation, bunların yerlerini karıştırmış, bunu orijinal haline çevirecek, dönüştürecek.
+
+379
+01:37:59,655 --> 01:38:02,655
+Yani input olarak bunu veriyorsunuz, output olarak bunu istiyorsunuz.
+
+380
+01:38:02,655 --> 01:38:07,655
+Document Rotation, sadece yerini değiştirmişiz. Şurada görüyorsunuz.
+
+381
+01:38:10,355 --> 01:38:31,715
+Başka ne var? Harfleri bozulmuş kelimeleri düzeltmek. Yani cümlenin içerisinde kelimeleri tahmin etmek değil de, harfleri bozulmuş olan kelimeleri düzeltmeye çalışmak. Görüntü işlemede ne var? Mesela resmin bir kısmını silip orasını tahmin etmek. Bu da yine self-supervice bir iş düşünürseniz.
+
+382
+01:38:33,779 --> 01:38:45,500
+Yine mesela Contrastive Learning'de şey var, onu da söyleyebiliriz. Mesela bir resimin içinden iki tane parça seçiliyor.
+
+383
+01:38:55,604 --> 01:39:06,364
+Mesela bunu alalım. Bir resim olsun mesela bu. Şimdi tek bir tane resimden eğitim örnekleri üreteceğiz. Nasıl eğitim örnekleri üreteceğiz? Şöyle.
+
+384
+01:39:12,564 --> 01:39:14,504
+Mesela şurası.
+
+385
+01:39:20,180 --> 01:39:29,360
+Mesela bu resim büyük resim var. En azından büyük para büyük resim. Şu alttaki dikdörtgenler sizin onun içerisinden rastgele seçtiğiniz parçalar.
+
+386
+01:39:30,260 --> 01:39:37,920
+Self-superbuzz görev şöyle bir şey olabilir. Mesela bu parçayla bu parça aynı resimden mi? Arkadaşlar bunlar mesela şöyle de olabilir.
+
+387
+01:39:38,739 --> 01:39:59,999
+Şu iki parça aynı resimden mi? Böyle bir sürü buradan görev üretebilirsiniz. Tabii farklı resimlerdeki farklı parçaların da aynı olmaması istiyor. Kontrastiflerinin o tarz bir şey. Yani aynı resmin içindeki parçalar birbirleriyle benzer oldukları öğrenilsin. Fakat farklı resimlerdeki parçaların buradaki parçalardan farklı oldukları öğrenilsin.
+
+388
+01:40:00,000 --> 01:40:14,119
+Bunlar hep self-supervised görevler üretmenin çeşitli yolları. Bunların güzel tarafı şu.
+
+389
+01:40:14,547 --> 01:40:31,208
+Etiketleme yapmadan büyük miktarda üretilebiliyor ve gerçekten anlamlı şeylerse bunlar gerçekten pretrain modellerin oluşturulmasında, kullanılmasında çok fazla faydalı olabiliyor.
+
+390
+01:40:31,467 --> 01:40:42,528
+Dediğim gibi mesela BART'ta epey bir şey var, farklı yapı var. Şurada gördüğünüz gibi token muskling, token dilation, silmiş nereyi sildi onu bul gibisinden.
+
+391
+01:40:42,547 --> 01:40:48,948
+Doldur, arasını doldur, dokümanı çevir, karıştır resmi falan.
+
+392
+01:40:49,347 --> 01:40:56,408
+Şeyler de var mesela görüntü işlemede de yine o tarz şeyler var. Mesela resmi alıyor, on alt tane parçayı ayırıyor, dörde dörtlük.
+
+393
+01:40:56,768 --> 01:41:03,127
+Sonra o parçaları yer değiştiriyor, karıştırıyor. Karıştırdıktan sonra onun orijinaline döndürmek istiyor.
+
+394
+01:41:04,659 --> 01:41:19,880
+Bunların hep şeyler, böyle pretren yapılar. Bu pretren yapılar üretmek için kullanan görevler, öyle söyleyeyim. Bunları sistemler yapabilir hale geldikleri zamandan sonra siz bunları alıyorsunuz, kullanmaya başlıyorsunuz. Nerede? Kendi işinizde.
+
+395
+01:41:25,043 --> 01:41:43,683
+Burada konuşmamız gereken birkaç nokta daha var. Ondan sonra Bert'in detaylarını birazcık daha geçeceğim. BytePair Encoding mevzusu var. BytePair Encoding normalde veri sıkıştırmak için kullanılan bir yöntem. Nasıl bir şey? Mesela şöyle bir metin düşünün. Böyle bir metin var, bir sekans var.
+
+396
+01:41:44,083 --> 01:42:08,064
+Bu sekansın içerisinde mesela sıklıkla geçen ikilleri düşünelim. Sıklıkla en fazla geçen ikili hangisi burada? Arka arkaya A herhalde değil mi? Ben A'lara Z diyeyim mesela. A'lara Z dersem şu hale gelir değil mi bu veri? Şu anda ardışık en çok geçen ne var mesela? AB'ler var şu anda görünen mesela AB. AB'lere de mesela Y diyeyim. Şöyle bir şey oldu.
+
+397
+01:42:09,395 --> 01:42:31,155
+Sonra burada şu anda en çok kullanılan ne var? Mesela x, y'ler böyle arka arkaya gelmiş gibi gözüküyor. Mesela bu x, y'leri de şey yapayım, x diyeyim. Hani z, y'lere yalnız söyledim. Z, y'leri de x diyeyim. Şu hale geldi. Şu anda var mı pek bir şey, bir şey kalmadı. Şimdi ne yaptım ben aslında? Şurada gördüğümüz şeyi şu hale getirdim. Tamam mı? Şurada gördüğümüz şeyi şu hale getirdim. Tabii şunları da kullanalım.
+
+398
+01:42:32,884 --> 01:42:51,304
+ByteBand Encode'u dediğim gibi verileri sıkıştırmak için şurada gördüğünüz gibi bir yöntem. Aslında sekansın içerisindeki en sıklıkla geçen subunitleri buluyor.
+
+399
+01:42:51,695 --> 01:42:59,235
+Bu sap unitler bir dil için düşünürseniz kelime parçalarına da denk gelebilir.
+
+400
+01:42:59,376 --> 01:43:05,475
+Bazı sıklıkla yani çok sıklıkla kullanan tekil kelimelere de denk gelebilir. Bu şekilde düşünebilirsiniz.
+
+401
+01:43:06,315 --> 01:43:14,855
+Dolayısıyla aslında frekansı en yüksek olan kelimeler ve kelime parçaları bulunuyorlar. Öyle ifade edebiliriz.
+
+402
+01:43:15,412 --> 01:43:30,391
+Sinirsel dil modellerinde bunu kullanmak çok yaygın bir şey. Bunun temel sebebi unknown token'lardan kurtulmak. Unknown token'larından kurtulmak. Unknown token demek ne demek.
+
+403
+01:43:32,372 --> 01:43:48,472
+Biliyorsunuz, temelde makine öğrenmesinde sistemlerde bir eğitim kümesi vardır, bir test kümesi vardır. Eğitim kümesinin içerisinde belli dokümanlar yer alır, testin içerisinde belli dokümanlar yer alır.
+
+404
+01:43:48,472 --> 01:43:57,311
+Fakat siz mesela kelimeleri en küçük birimler olarak kabul ederseniz, kelimeleri en küçük birimler olarak kabul ederseniz,
+
+405
+01:43:57,619 --> 01:44:17,899
+Eğitim kümesinin içerisinde olup da test kümesinin içerisinde olmayan kelimeler olabilir mi? Olabilir ama bunlar çok sıkıntı değil. Asıl büyük sıkıntı ne? Eğitim kümesinde olmayıp test zamanında karşımıza çıkacak olan kelimeler, yeni kelimeler. Yani eğitim sürecinde bulunmayan kelimeler.
+
+406
+01:44:19,456 --> 01:44:26,536
+Biz nasıl işleyeceğiz? Bunlar için bir unknown token kullanılabilir.
+
+407
+01:44:27,475 --> 01:44:32,916
+Ki unknown token kullanmak işte burada nadir kullanılan bir kelime var demek aslında.
+
+408
+01:44:32,916 --> 01:44:37,255
+Ve ona da bir şey atanıyor tabii, bir kelime vektörü atanıyor.
+
+409
+01:44:37,315 --> 01:44:40,715
+Nadir kelimelerin hepsi için aynı kelime vektörü kullanılıyor, öyle söyleyeyim.
+
+410
+01:44:42,068 --> 01:44:50,288
+Çünkü farklı bir şey kullansanız hangisinin hangisi olduğunu bilemeyeceğinizden dolayı orada farklı bir şey kullanmanın da bir anlamı yok. Hepsinde aynı şey kullanılıyor.
+
+411
+01:44:50,568 --> 01:44:57,168
+Unown kullanacaksa. Ama bu unown kullanmanın alternatifi şu. ByteBare Encoding kullanmak.
+
+412
+01:44:57,588 --> 01:45:03,148
+ByteBare Encoding kullandığınızda aslında unownlar hiçbir zaman oluşmuyor. Nasıl oluşmuyor?
+
+413
+01:45:03,148 --> 01:45:08,808
+Çünkü ByteBare Encoding'in içerisinde en küçük birim arkadaşlar karakter.
+
+414
+01:45:10,547 --> 01:45:15,667
+Yani en küçük bilim karakteri. Yani hiç şöyle bir şey düşünelim.
+
+415
+01:45:25,140 --> 01:45:25,859
+Ne sanırım.
+
+416
+01:45:36,467 --> 01:45:49,467
+Mesela böyle bir kelime düşünelim. Böyle bir kelimenin içerisinde bilinen subtokenlar var. Bakın görüyorsunuz. İlkbahar var. Bu aslında şu hale gelecek.
+
+417
+01:45:57,171 --> 01:46:18,091
+İyi ki buluyor zaten. İlk var şeyde, Vekobler'de. Bahar da var, bunu da buldum. Ama şimdi bunlar yoklar Vekobler'de. Böyle bir kelime falan, öyle bir şey yoklar. Şimdi burada bunlar yaygın tokenlar değillerse ki muhtemelen değillerdir. Şimdi şuradakilerin her birini ayrı birer token olarak alıyor. Tamam.
+
+418
+01:46:18,836 --> 01:46:28,175
+Dolayısıyla yani x'in de bir vektörü var, d'nin de bir vektörü var, e'nin de bir vektörü var, bar'ın da bir vektörü var. Tamam. F'nin de var, s'nin de var, re'nin de var.
+
+419
+01:46:28,435 --> 01:46:43,395
+Dolayısıyla burada ne yazarsanız yazın, anla onun haline ne olmayacak? Yani olmayan bir karakter kullanırsanız farklı bir enkodik, orası ayrı bir mevzul ama o da zaten pre-proses'te ortaya çıkacak ve çözülecek bir problemdir.
+
+420
+01:46:43,988 --> 01:46:49,308
+Unown Token oluşmayacak şekilde bir yapı kuruluyor.
+
+421
+01:46:56,500 --> 01:47:23,140
+İlk önce şeyle başlıyor. Neural Machine Translation for Rare Words with Subword Üniversitesi de başlıyor. Burada onlarla alakalı şeyler var. İki tane burada kütüphane var. Bir tanesi WordPiece, bir tanesi Sentence Piece. Sentence Piece herhalde ücretsiz ve hızlı bir şey. WordPiece'i bilmiyorum şu anda ama implementasyonu illaki vardır. Parasız halde vardır diye tahmin ediyorum.
+
+422
+01:47:24,500 --> 01:47:36,640
+Burada, unknown word about, burada şeyle, out of vocabulary diye ifade edilmiş. Şimdi Türkçe şimdi sadece out of vocabulary değil de normal kelimeler için de çok önemli bu byte pair mevzusu.
+
+423
+01:47:38,739 --> 01:47:57,920
+Yani bizi morfolojik anlız, yani şimdi Türkçe gibi diller, eklemeli diller. Eklemeli dillerin en büyük problemine, aynı kelimenin sonuna gelen farklı eklerle kelimelerin anlamlarının değişmesi, kelime sayılarının korkunç derecede artması, gereksiz yer artması, yünün kelime sayılarının vesaire vesaire.
+
+424
+01:47:57,920 --> 01:48:06,659
+E burada biz ne yapıyorduk daha önceden? Morfolojik anlız tulları kullanıyor. İşte zemberek vesaire gibi. Onlar bize parçalıyordu işte. Kelimenin eki şurası, gövdesi şurası vesaire.
+
+425
+01:48:06,739 --> 01:48:16,739
+Ama şimdi bu ByteBare Encoding zaten, ByteBare Encoding'in tokenizerı, yani hani vocabularisinin ne olacağını da siz bir derlemi ona vererek ne yapabiliyorsunuz?
+
+426
+01:48:19,319 --> 01:48:24,739
+Ürettirebiliyorsunuz. Yani şu derlemi al, bana buradan 64 binlik bir sözlük üret diyorsunuz.
+
+427
+01:48:25,340 --> 01:48:30,559
+Ve o derleme göre bir sözlük üretiyor. Ve tokenizer da o sözlüğe göre parçalamaya başlıyor.
+
+428
+01:48:31,439 --> 01:48:33,739
+Mesela Türkçe için bunu yaptığınızda...
+
+429
+01:48:34,260 --> 01:48:39,380
+Yani kelimenin şu tarz parçalara ayrıldığını görüyorsunuz örnek olarak.
+
+430
+01:48:40,819 --> 01:48:46,659
+Şimdi bunları normalde sanki bir...
+
+431
+01:48:47,188 --> 01:49:08,848
+Morfolojik analizden çıkmış gibi gözüküyorlar ama aslında değil. Bunlar tamamen neden bu şekilde oluşabiliyorlar? Çünkü ecekmiş, miş, müştü gibi gibi ifadeler çok sıklıkla kullanılan subword unitler. Ve bu subword unitler Türkçe bildiğinden değil sistemin sadece frekans tabanlı olarak bunlar ortaya çıkıyorlar.
+
+432
+01:49:15,188 --> 01:49:40,668
+İşin içerisine giriyorlar. Dolayısıyla gelecekmiş diye bir kelime ve korubları da yok ama gel diye bir kelime var. Bir de ecekmiş diye ya da mesela ecek var bir de miş var. Hani o şekilde söyleyelim. Bunlar ve korubların içerisinde varlar ve dolayısıyla gelecekmiş gelsin şudur budur gibisinden bir sürü farklı kombinasyonların hepsine birer şey ne yapılabiliyor? Üretilebiliyor. Bir word vector.
+
+433
+01:49:43,188 --> 01:49:47,988
+Bir token üretiliyorsa o tokenların ne, neler, neler temsil edeceği bulunuyor vesaire.
+
+434
+01:49:49,568 --> 01:49:57,108
+Şimdi dolayısıyla şey kısmı, Türkçe için bu çok çok daha önemli bir hale geldi bu ByteBare Enkoding mevzu.
+
+435
+01:49:57,108 --> 01:50:02,008
+Dolayısıyla bizi morfolojik analiz yapmaktan bir şekilde kurtardı.
+
+436
+01:50:02,328 --> 01:50:06,668
+Ama tabii şey için, morfolojik analizi sadece tek bir amaçla yapmazsınız, başka amaçlarınız da olabilir.
+
+437
+01:50:10,192 --> 01:50:13,932
+Oluşumundan, Rokobler'deki, kurtarmış oldu.
+
+438
+01:50:15,472 --> 01:50:19,772
+Şimdi, büyük resim burada şey var işte.
+
+439
+01:50:21,112 --> 01:50:25,712
+Demin bahsettiğim gibi işte Elmo, Umelefit ondan çıkıyor.
+
+440
+01:50:25,792 --> 01:50:28,532
+Buraya tek emeli koymamışlar herhalde ama neyse önemli değil.
+
+441
+01:50:28,812 --> 01:50:29,852
+Sonuçta Bert ortaya çıkıyor.
+
+442
+01:50:30,412 --> 01:50:34,092
+Bert ortaya çıktıktan sonra işte GFT ondan daha önce.
+
+443
+01:50:34,579 --> 01:50:57,559
+Ondan önce elmalar. Ama GPT, işte GPT-2, GPT-3 falan var şu anda biliyorsunuzdur. Herhalde trilyon falan parametresi var şu anda. Trilyona yaklaştı herhalde. Dolayısıyla burada bir patlama var. Burada şeyler de var. Visual yapılarda var.
+
+444
+01:51:01,747 --> 01:51:20,608
+CNN mimarilerinden birazcık kurtarmak, pardon yerine geçirmek. Çünkü transformanın içerisinde CNN de yok. Yani RNN yok kısmında ama CNN de yok. CNN'den de kurtarmak üzerine çalışmalar şu anda yapılıyor.
+
+445
+01:51:21,140 --> 01:51:46,840
+Yani CNN ile çözülen görüntü işleme problemlerini de transformer yapılarıyla çözme üzerine şeyler var. Yaklaşımlar var. Şu anda epey bir yol alındı diyebiliyorum onlarda da. Yani transformerlar hem RN'lerin hem CNN'lerin pabucunu dama atmak için şey yapıyor, uğraşıyor. Öyle söyleyeyim. Tazmimara çıkarılmaya uğraşılıyor.
+
+446
+01:51:48,275 --> 01:52:10,395
+Şimdi burada şeyler var. Çeşitli örnekler var. Türkçe için de çeşitli örneklerimiz var burada. Onlara bakabilirsiniz. Metinleri sınıflandırmak nasıl yapılıyor? Eksik kelime tahmini nasıl yapılıyor? Türkçe için Berth'i nasıl kullanıp eğitiyorsunuz? Vesaire vesaire. İşte GPT-2'nin Türkçesi var gibi gibi. Burada Berth Türk var mesela.
+
+447
+01:52:12,948 --> 01:52:21,087
+Türkçe derlemlerle eğitilmiş Bert mimarisi. Bunları alıp hazır bir şekilde kullanabiliyorsunuz kendi modellerinizle.
+
+448
+01:52:22,688 --> 01:52:28,248
+Burada yine şeyler var. Bert'a da Fatih'un anlattığı kısım var.
+
+449
+01:52:29,728 --> 01:52:32,807
+Bunları birazdan birkaç tanesine bakacağız da.
+
+450
+01:52:34,207 --> 01:52:37,728
+Reforma, self-paz yöntemler. Tamam, evet bunlar.
+
+451
+01:52:38,260 --> 01:52:44,279
+Klasik şeyler. İşinize yarar bunlar. Merak ederseniz inceleyebilirsiniz.
+
+452
+01:52:44,279 --> 01:52:55,279
+Evet, şimdi arkadaşlar bir ara verelim. Ondan sonra şu Bert'in özellikle FineTune kısmının nasıl çalıştığını hep beraber göreceğiz.
+
+453
+01:52:56,180 --> 01:53:03,479
+Şöyle durdurayım. 54, 3'ü 5 geçe devam edebiliriz herhalde.
+
+454
+01:53:03,479 --> 01:53:05,019
+Şuradan yazalım.
+
+455
+01:53:06,484 --> 01:53:10,956
+Çeviri ve Altyazı Mühendisliği
+
+456
+01:53:19,572 --> 01:53:21,572
+Sonra görüşmek üzere arkadaşlar.
+
+457
+02:06:24,659 --> 02:06:33,039
+Tekrar merhaba arkadaşlar. Sesim geliyor. Ses görüntü tamam mı? Geliyor hocam.
+
+458
+02:06:35,319 --> 02:06:39,619
+Peki. Şimdi bugün son bir konuya bakacağız.
+
+459
+02:07:07,028 --> 02:07:09,467
+Ya dedi mi? Bert'in nasıl çalıştığı vesaire.
+
+460
+02:07:10,648 --> 02:07:13,087
+Görünüyor hocam.
+
+461
+02:07:13,627 --> 02:07:23,587
+Tamam. Şimdi burada bir YouTube videosu var. Onu izlerken aldığım notlar bunlar. Size de faydalı olur diye paylaşayım istiyorum.
+
+462
+02:07:24,148 --> 02:07:29,547
+Şimdi burada ilk önce şey var. Bert, Paper'ını anlatıyor burada. Bert, Paper'ını anlatıyor. İlk önce onu söyleyeyim.
+
+463
+02:07:31,060 --> 02:07:56,760
+Bell Paper'ı ELMO'dan ve GPT'den daha sonra çıkan bir yapı mimari. Şimdi burada ELMO'yu görüyorsunuz. ELMO'nun şey kısmı, RNN kısmı burada belli oluyor zaten. Çift yönlü LSTM'leri alıyor. Yani sola doğru giden LSTM'ler ve sağa doğru giden LSTM'lerin bilgilerini konkaten edip temsilleri üretiyorlar.
+
+464
+02:07:58,996 --> 02:08:14,235
+Open AI'da Transformer var. Berk'te de Transformer var. Yani RNN, Elmod'a dediğim gibi RNN mimarisi var. Yani RNN diyorum ama Aristyan var ama bu yani Aristyanlar zaten bir RNN olduğu için yanlış bir tabir olmuyor.
+
+465
+02:08:16,148 --> 02:08:39,108
+OpenAI ve BERT'te Transformer'lar var. OpenAI'nin içerisindeki yapı tamamen bir sonraki kelimeyi tahmin etmeye yönelik. Bütün her şey bunun üzerine kurulu. BERT'in içerisindeki ise, dolayısıyla burada her bir kelimenin bakın sadece kendinden sonraki kelimelere şeyleri var, ilişkileri var, şurada görüyorsunuzdur. Burada ise her kelimenin her kelimeyi var.
+
+466
+02:08:41,939 --> 02:08:58,379
+O yüzden bu yapı nasıl söyleyelim? Bidirectional representation diye geçiyor zaten şeyin içerisinde. Şu bidirectional transformer diye kullanmışlar. Ama çok çok kritik bir şey değil.
+
+467
+02:09:01,203 --> 02:09:15,483
+Aslında OpenAink'i Bert'in özel hali diyebiliriz. Yani bu daha az miktarda şey kullanıyor. Ettenşin mekanizması kullanıyor. Daha az şey öğreniliyor. Bert'te daha fazla var.
+
+468
+02:09:15,483 --> 02:09:22,403
+Şimdi ettenşin dediğimiz şey, yani self-ettenşin dediğimiz şey öyle söyleyeyim.
+
+469
+02:09:22,671 --> 02:09:31,152
+Onun çok kabaca asıl şeyde var bu nasıl çalışır transformların içerisinde daha iyi örnekler var.
+
+470
+02:09:32,112 --> 02:09:35,551
+Şimdi her bir kelime için bir k ve v vektörü üretiyor.
+
+471
+02:09:35,551 --> 02:09:41,471
+Şimdi k vektörü ve v vektörü demek ki bunlar key ve value diye geçiyorlar.
+
+472
+02:09:46,591 --> 02:09:47,871
+Q ise şey.
+
+473
+02:09:51,155 --> 02:10:02,555
+Şimdi asıl olay her bir kelime için. Etenşin dediğimiz şey neydi? Konuşmuştuk ya.
+
+474
+02:10:02,555 --> 02:10:06,635
+Kedi okula gidin.
+
+475
+02:10:10,715 --> 02:10:13,915
+Ali çok sevindi.
+
+476
+02:10:18,783 --> 02:10:32,203
+Kelimesinin vektörü. Normalde bu yapılar şöyle söyleyeyim. E1, E2, E3 bunlar input encodingleri. Yani hani ham bir encoding buna anlığı veriliyor.
+
+477
+02:10:32,688 --> 02:10:45,007
+En sonda ama oldukça iyi enkodingler ortaya çıkartıyor. Aslında bir şekilde temsilleri öğreniyor. Yani siz ona bir sekans veriyorsunuz. O sekansa dair size tokenlar veriyor.
+
+478
+02:10:45,007 --> 02:10:58,707
+Tokenlar zaten byteberry enkodingde bulmuşsunuz. O byteberry enkodingde bulunmuş her bir token için size bir vektör veriyor. Zaten girişte bunların birer vektörleri var.
+
+479
+02:10:59,119 --> 02:11:04,219
+Ama asıl daha iyi olan vektörler şu en sondaki vektörleri.
+
+480
+02:11:05,000 --> 02:11:08,399
+Şimdi peki bu en sondaki vektörleri nasıl üretiyor, nasıl kullanıyor bunları?
+
+481
+02:11:09,039 --> 02:11:11,759
+Üretirken bu self-attention mekanizmasını kullanıyoruz.
+
+482
+02:11:11,840 --> 02:11:16,139
+Self-attention mekanizmasında da temel olarak 3 tane vektörümüz var.
+
+483
+02:11:16,139 --> 02:11:17,239
+Bu 3 tane vektör.
+
+484
+02:11:21,395 --> 02:11:33,775
+Her kelimenin üç tane vektörü var. Öyle söyleyelim. Yani key, value ve query vektörleri var. Her bir kelime için üretiliyor bunlar.
+
+485
+02:11:34,355 --> 02:11:41,395
+Her bir kelime için, burada mesela abcd diye bir kelimelerimiz olduğunu düşünüyorum. Bu abcd kelimelerin her biri için.
+
+486
+02:11:43,123 --> 02:12:04,784
+Key ve value vektörleri var. Peki bu key ve value vektörleri nasıl üretiliyor? Ya da query vektörü nasıl üretiliyor? Şimdi burada aslında şunların her biri için dediğim gibi şeyde daha detaylı açıklanmaları var ama WK, WK, WB ve WQ matrisleri şey yapılıyor, neden? Öğreniliyor.
+
+487
+02:12:10,131 --> 02:12:21,192
+Mevcut reprezentasyonunu WK ile çarpıp key vektörünü elde ediyorsunuz. Ne için? O kelime için.
+
+488
+02:12:22,631 --> 02:12:29,411
+İşte B kelimesinin reprezentasyonunu mesela VK ile çarpıp bu sefer B kelimesinin key vektörünü üretiyorsunuz.
+
+489
+02:12:29,583 --> 02:12:33,683
+Dolayısıyla şuradaki VKV, VVVQ dediğimiz şeyler öğrenilen şeyler.
+
+490
+02:12:33,683 --> 02:12:38,723
+Yani aslında matrisle çarptığımız zaman bir projeksiyon yapmış oluyoruz.
+
+491
+02:12:39,363 --> 02:12:46,183
+Ama herhalde 512 boyuttan, yani orijinaldeki 512 boyuttan bunlar herhalde 64 boyuta falan indiriyorlar.
+
+492
+02:12:47,043 --> 02:12:53,683
+Şeyi, uzayı. İlk önce 64'e indiriyorlar. Sonra multi-head yapıyla tekrardan 512'ye çıkartıyorlar.
+
+493
+02:12:53,823 --> 02:12:55,403
+Ama şimdi orada detayına girmeyelim.
+
+494
+02:12:56,243 --> 02:13:10,623
+Temel olarak yapılan işlem öğrenilmiş olan şu matrislerle elimizdeki mesela A'yı çarpıp A için key vektörünü, A için value vektörünü, A için query vektörünü üretiyoruz.
+
+495
+02:13:11,963 --> 02:13:15,083
+Şimdi buradaki k'ları v'leri bulduk.
+
+496
+02:13:18,387 --> 02:13:35,907
+Şimdi bir query vektörümüz var. Diyelim ki işte onu kelimesi diyelim. Onu kelimesinin query vektörünü düşünelim. Onun kelimesinin query vektörü var. O query vektörü ile şu key vektörlerini yani içerideki herkesi öyle söyleyelim, içerideki herkesi çarpıyoruz.
+
+497
+02:13:36,916 --> 02:13:53,456
+Dot product yapıyoruz. Bu dot product bize bir tane rakam söylüyor. Tek bir tane rakam. Bu rakamlar aslında bize işte bu query vektörü elimizdeki key vektörlerinden hangisine en çok benziyor onu söylüyor.
+
+498
+02:14:01,460 --> 02:14:12,899
+Key vektörünü çarpıyoruz. Buna çarptığımız zaman şu query vektörüne en çok benzeyen key vektörünün değerini de buluyoruz. İndisini de buluyoruz.
+
+499
+02:14:12,899 --> 02:14:25,680
+Daha sonra, şimdi Q kelimesinin, yani Q'nun karşılık geldiği, hangi kelimenin Q'suysa, o kelimenin temsilini bulurken de yapacağımız şey şu oluyor.
+
+500
+02:14:26,355 --> 02:14:43,095
+Bu kelimenin value'larını şuradaki ağırlıklarla çarpıyoruz. Ne demek istiyorum? Mesela A kelimesine bu birazcık benzeyecekmiş ama B kelimesine çok benzeyecekmiş. C birazcık, D birazcık, E de en azmış mesela.
+
+501
+02:14:54,260 --> 02:15:08,000
+Q'nun şeyi, o bir yerde yazmıyorum burada. Yazmamışız ama neyse. Önemli. Yani şuradaki K çarpı Q ile, bu Softmax'e falan da sokuluyor onların detaylarına bakarsanız önemli değil.
+
+502
+02:15:19,252 --> 02:15:33,252
+Benzediği kelimelerin value'larının ağırlıklandırılmış hali haline geliyor. Ve bu yapı da her cümlede farklı değerler alabilmelerini sağlayan yapı.
+
+503
+02:15:33,252 --> 02:15:40,152
+Şimdi neden böyle üçlü bir yapı kullanılmış, ikili de bir yapı olamaz mıydı falan filan, oralar ayrı bir mevzu.
+
+504
+02:15:42,003 --> 02:16:00,083
+Matematik olarak böyle olması daha iyidir falan gibisinden bir şey yok. Uygulama bazı bunlar oldukça iyileştirmiş yapılar. Dediğim gibi, yani bu bütün self-attention mekanizması şu üç tane vektörün üretimi ve şuradaki ağırlıklandırma üzerine kurulu.
+
+505
+02:16:05,855 --> 02:16:23,715
+Şey söylemiştik, Next Sentence Prediction yapılıyor demiştik. Yani şöyle bir şey düşünün. Bir cümle var. CLS ile başlıyor bütün Bert'in şeyleri, pretrain sekansları. Bir cümle var, sonra separator var. Yeni bir cümleye geldiğini söylüyor.
+
+506
+02:16:24,783 --> 02:16:49,943
+Bu cümle var. Burada separatörle bitiyor. İki cümlelik bir şey bu. Şimdi bu iki cümlenik şey için buna is next demiş. Mesela yani bu cümle bu cümleden sonradır. Böyle bir label var. Mesela not next demiş. Bu cümle ondan sonra rastgele başka bir cümle seçmiş. Bu da not next demiş. Burada şeyi görüyorsunuz. Bir de masklı kısımlar var. Görüyorsunuz masklı. O masklarında ne olduğunu tahmin edecek. İşte dediğim gibi şey mekanizması bu.
+
+507
+02:16:50,388 --> 02:16:51,708
+Ama onu konuşacağız.
+
+508
+02:16:51,708 --> 02:16:52,988
+Yani nasıl yaptıklar.
+
+509
+02:16:58,368 --> 02:17:04,128
+Şimdi bunun giriş embeddinglerinde bir inputumuz var.
+
+510
+02:17:04,868 --> 02:17:07,008
+Inputtan sonra token embeddingleri var.
+
+511
+02:17:07,087 --> 02:17:08,668
+Token embedding dediğimiz şey şu.
+
+512
+02:17:08,788 --> 02:17:11,608
+Hani parçalar var diye oluşuyor demiştik ya BytePair Enkoding'de.
+
+513
+02:17:12,020 --> 02:17:36,840
+Oradaki parçaların her birinin tokenları. Sonra segment embedding var. Segment embedding birden fazla cümleden oluşan inputlarda aslında birinci cümlenin embeddingini bir şekilde kodluyor. İkinci cümlenin embeddingini bir şekilde kodluyor. Yani böyle çok korkunç, kompleks bir şey değil. Yani A'yı ve B'yi birbirine ayırt edebilmek için kullanılan mekanizmandan bir tanesi. Separator ile ayırt ediyor.
+
+514
+02:17:37,427 --> 02:17:53,188
+Bu örneğe inputta kattı. Bir de bu segment embelling de. Position embelling asıl enteresan mevzu. Şimdi position embelling de her bir kelimenin nerede olduğu bilgisi normalde şeyde yok.
+
+515
+02:17:53,683 --> 02:18:20,399
+Şimdi RNN'lerin yapısında bu var. RNN'lerde Position Embodied'in kullanmaya gerek yok. Çünkü RNN'lerde siz kelimeleri sırayla veriyorsunuz. Yani hangi sırada geliyorsa o kelimeleri sırayla veriyorsunuz. Ama şimdi burada her şey tek seferde veriliyor. Recursive bir yapı yok burada. Her şey tek seferde veriliyor. Tek seferde veriliyor ama bunların yerlerinde bir kelime geldi. O kelime o cümlenin başında mıydı, sonunda mıydı, ortasında mıydı bunu çok fazla...
+
+516
+02:18:20,399 --> 02:18:27,739
+Bilemez. Yani bilemez sistem tamamen bir bag of words'muş gibi gözükür. Bu bag of words'ten kurtulmak için position embeddingler kullanıyor.
+
+517
+02:18:27,739 --> 02:18:38,319
+Şimdi position embeddinglerde de temelde yapılmaya çalışılan şey şu. Biraz çizmeye çalışayım onu ama başarabileceğim.
+
+518
+02:18:43,347 --> 02:18:48,028
+Sinüs fonksiyonu kullanıyor. Farklı sinüs fonksiyonları kullanıyor.
+
+519
+02:19:07,219 --> 02:19:17,259
+Biraz daha sık. Neyse ne demek istediğimi anlınız herhalde. Farklı farklı sinüsler var.
+
+520
+02:19:17,259 --> 02:19:26,259
+Şimdi burada 3 tane var ama gerçekten daha fazla tabii ki.
+
+521
+02:19:32,628 --> 02:19:41,868
+Cümlenin başlarında ya da sonlarında, mesela şöyle, burası da şeyleri ifade edeyim. Dur bir saniye, onu da yazmak lazım.
+
+522
+02:19:48,659 --> 02:19:50,239
+Burası Position.
+
+523
+02:20:01,172 --> 02:20:09,731
+Yani şimdi mesela birinci kelime ile ikinci kelimeyi düşünün. Şimdi birinci kelime ve ikinci kelimenin bu embedding değerleri.
+
+524
+02:20:14,644 --> 02:20:28,584
+Şurası, yani şu birinci sütun, o şekilde düşün. Bunların her biri, yani bunun gibi mesela şeyler olsun, en azından 50 tane şey olsun, sinüs fonksiyonu olsun, tamam mı? Bu 50 tane sinüs fonksiyonu 50 tane satır eder.
+
+525
+02:20:29,384 --> 02:20:34,584
+Sütunlarda ise bizim kelimelerimiz var. Yani her bir satırdaki kısım...
+
+526
+02:20:34,708 --> 02:20:55,948
+Mesela birinci kelimenin, birinci kelimeyi ifade etmek için kullanan elli tane sinüs fonksiyonun değerleri. İkinci kelimeyi ifade etmek için de işte bu ikinci sütundakilerin değerleri. Burada üç tane sinüs fonksiyonumuz var gibi düşünelim. Üç tane satırımız var. Kelime sayısı kaç tane de o kadar sütunumuz var.
+
+527
+02:20:56,672 --> 02:21:08,972
+Birinci sünüs bize neyi sağlıyor? Birinci sünüs şunu sağlıyor. Birbirine yakın olan, mesela aralarında bir kelime, iki kelime, üç kelime, dört kelime falan olanların değerleri birbirlerine yakınlar değil mi? Görüyor musunuz?
+
+528
+02:21:10,312 --> 02:21:13,551
+Ama çok uzakların değerleri birbirlerine uzak.
+
+529
+02:21:14,515 --> 02:21:31,896
+Cümlenin işte aşağı yukarı başında mı, sonunda mı gibisinden şeyleri birazcık ifade ediyor. Burada ise biraz daha dar bir alanda birliktelikleri ifade ediyor. Burada ise yan yana kelimeler bile olsa bunların hangisinin önce hangisinin sonra olduğunu ifade edebiliyor.
+
+530
+02:21:31,896 --> 02:21:41,855
+Yani cümlenin içerisinde farklı çözünürlüklerde aslında bakın, farklı çözünürlüklerde pozisyon bilgisini elde ediyor. Yani şöyle bir şey düşünün.
+
+531
+02:21:51,603 --> 02:22:00,664
+A, B, C, D, F, C, H, C, A, M, M.
+
+532
+02:22:00,984 --> 02:22:06,583
+Mesela şu en yukarıdaki şeylerin birlikteliklerini ifade ediyor.
+
+533
+02:22:06,583 --> 02:22:11,004
+Mesela şöyle büyük, mesela beşli parçaların.
+
+534
+02:22:14,708 --> 02:22:33,788
+Mesela yani beşlik bloklar için değerler birbirlerine yakınlar. Fonksiyonun değerleri. Ama mesela burada beşlik dedikler de değil de mesela üçlük dedikler de yakınlar. Ama mesela burada anca birlikler de aynı şeyler. Yoksa bir önceki kelimede bir sonraki kelimenin fonksiyonu değeri birbirinden çok farklı burada. Ama burada birbirlerine yakın. Burada ise daha da yakınlar.
+
+535
+02:22:42,708 --> 02:22:51,268
+En alttaki ise mesela yan yana bile olsa bunlar farklı şeyler oldukları hangisinin son olduğunu ifade etmeye çalışıyor.
+
+536
+02:22:52,128 --> 02:22:59,328
+Dolayısıyla kabaca böyle bir yapısı var. Yani daha da pozisyon emmelikleri araştırırsanız görebilirsiniz.
+
+537
+02:23:06,328 --> 02:23:07,848
+Kapatalım, devam edelim.
+
+538
+02:23:08,948 --> 02:23:31,888
+Şimdi gelelim asıl şey kısmına. Şimdi Bert'i, dediğim gibi Bert pretrain ediliyor. Pretrain edildikten sonra da, yani pretrain edilirken iki tane görev kullanıyor. Bir tanesi işte bir sonraki cümle mi değil mi, bir tanesi de Masked World Prediction. Şimdi bunlar yapıldı, bitti. Bittikten sonra şu anda...
+
+539
+02:23:31,888 --> 02:23:50,528
+Bizim elimizde aslında şöyle bir şey var. Mesela bir görev. Göremimiz şu. İki tane cümle vereceğiz Berthe. Yani sisteme daha doğrusu Berthe demeyelim. Sisteme iki tane cümle vereceğiz. Bu iki cümle arasındaki ilişkinin tipini bulacak bize. Mesela şöyle şeyler olabilir.
+
+540
+02:23:50,963 --> 02:24:17,043
+Bu iki cümle eş anlamlıdır, bu iki cümle eş anlamlı değildir gibi olabilir. Ya da mesela bu iki cümle ahlakasızdır olabilir, bu iki cümle birbiriyle alakalıdır olabilir. Başka bu iki cümleyi aynı adam yazmıştır, bu iki cümleyi farklı adamlar yazmıştır olabilir gibi gibi bir sürü şeyler olabilir. Sonuçta iki tane cümle veriyorsunuz, bu iki tane cümleye dair de bir sınıf tahmini yapmak istiyorsunuz. Tamam, hikayemiz bu. Peki biz bunu Berk'te nasıl yapacağız?
+
+541
+02:24:17,907 --> 02:24:45,907
+Şimdi BERT de şöyle bir şey olduğundan bahsetmiştik. Bütün pretrain'deki sekanslar bir CLS tokenıyla başlıyor. Ve bu CLS tokenıyla başlıyor. Siz burada böyle bir şey üretiyorsunuz. Yani separate içinde, yani separate de cümleleri birbirine ayırmak için olan token. Bir de sentence'larımız var. Bunlar da bizim işte tokenizer'ımızdan gelen tokenlar. Yani tokenizer'dan gelen tokenlar derken mesela.
+
+542
+02:24:45,907 --> 02:24:47,207
+Nerede? Var mı örneğin?
+
+543
+02:24:52,051 --> 02:24:53,811
+Neyse, önemli değil.
+
+544
+02:24:54,631 --> 02:24:57,691
+Token analizinden gelen im şeyler, tokenlar.
+
+545
+02:24:58,151 --> 02:24:59,851
+Bunu biz Berth'e veriyoruz.
+
+546
+02:24:59,991 --> 02:25:02,891
+Şimdi Berth bunların şuradaki E'lerini oluşturuyor.
+
+547
+02:25:02,971 --> 02:25:03,752
+E'lerini nasıl oluşturuyor?
+
+548
+02:25:03,811 --> 02:25:05,272
+Şuradakiler de oluşturuyor.
+
+549
+02:25:06,011 --> 02:25:07,791
+Şu üç tanesinin toplamını oluşturuyor.
+
+550
+02:25:09,231 --> 02:25:09,791
+Oluşturdu.
+
+551
+02:25:09,891 --> 02:25:12,291
+Ondan sonra Transformer mekanizmasına veriyor bunu.
+
+552
+02:25:12,291 --> 02:25:14,291
+Transformer mekanizması en sonunda...
+
+553
+02:25:14,868 --> 02:25:25,128
+Şurada, şu yeşil kısmı üretiyor. Aralarda da üretiyor tabii ki. Çünkü 12 tane katman var burada. 12 tane stack transformer yapısı var.
+
+554
+02:25:28,691 --> 02:25:34,631
+Temsiller temsillere, temsiller temsillere, temsiller temsillere dönüşüyor ve en sonunda şu temsil elde ediliyor.
+
+555
+02:25:34,631 --> 02:25:40,191
+Şimdi bu temsilin içerisinde en baştaki CLS'ye karşılık gelen C.
+
+556
+02:25:42,871 --> 02:25:46,951
+Şimdi buradaki C'nin ne yapacağız, ne istiyoruz?
+
+557
+02:25:47,091 --> 02:25:48,831
+Biz C vektörünü veriyoruz.
+
+558
+02:25:48,951 --> 02:25:54,631
+Berth'e iki tane cümleyi biz de verirsek, Berth şunları da, yani şunların her biri için bize birer...
+
+559
+02:25:54,963 --> 02:26:10,524
+Bir de C için bir değer veriyor. Yani CLS'nin dönüşmüş hali C için bir değer veriyor. Classed Label bu. Şimdi bu Classed Label'ı ifade etmek için kullanılacak aslında şey o. Vektör bu.
+
+560
+02:26:16,384 --> 02:26:26,384
+Bert'i kullanıp iki tane cümleyi sınıflandırmak için yapmamız gereken şey şu. Bu 512 boyutlu vektörü alıp...
+
+561
+02:26:27,412 --> 02:26:53,211
+Onu bir W matrisiyle çarpmak ki o bu W matrisi 3 tane sınıfa dönüştürecekse 512'ye 3 olacak. 10 tane sınıfa dönüştürecekse 512'ye 10 olacak. 2 tane sınıfa dönüştürecekse 512'ye 2 olacak gibi bir W matrisi. Bu W matrisini öğreneceksiniz. Fine-tune işlemi temelde buradaki şu W matrisini öğrenmekte sınırlı aslında. Tamam mı?
+
+562
+02:26:53,780 --> 02:27:10,000
+Şimdi burada tüm belti, yani bütün mimarideki weightleri de bu fine-tune işlemi sürecinde değiştirmek de mümkün mü? Mümkün. Bu tam bir fine-tune işlemi olacaktır.
+
+563
+02:27:10,675 --> 02:27:23,115
+Yani o göreve özel bir şey olacaktır. Çünkü buradaki C'nin daha iyi üretilmesi için işte daha da daha da daha da önceki katmanlardaki şeylerin üretilmesi, daha da iyi üretilmesi şeklinde ilerleyecek süreç.
+
+564
+02:27:23,115 --> 02:27:31,735
+Ama dediğim gibi buradaki bütün hikaye aslında Sentence Pair Classification için diyorum. Şuradaki bir tane matrisi öğrenmek oluyor.
+
+565
+02:27:32,175 --> 02:27:42,195
+Bert'in kendi içindeki 300 küsür milyon parametrinin haricinde ona ek olarak. Ki o da devede kulak kalır diye düşünebiliriz.
+
+566
+02:27:43,036 --> 02:27:45,175
+Peki soru cevaplama için...
+
+567
+02:27:53,811 --> 02:28:07,652
+Şimdi soru cevaplama için Berk nasıl kullanılıyor? Şimdi bu dediğim gibi aynı Berk yapısını şey için kullandık. Sınıf iki tane cümlenin aralarındaki ilişkiyi belirlemek. Yani o ilişkin türlü sınıf işte.
+
+568
+02:28:09,459 --> 02:28:25,819
+Şimdi başka ne için kullanabiliriz? Soru cevaplama için Berti kullanmak. Şimdi sorunun cevabı için mesela burada squat kullanılmış. Şimdi sorunun cevabı paragrafın neresinde başlayıp bitiyor onu bulacağız. Yani soru cevaplamadan kastımız bu burada. Yani bir şey var elimizde.
+
+569
+02:28:29,396 --> 02:28:51,276
+Bir soru var. Bir tane paragraf var. Sonra bir tane soru var. Sonra cevap ise bu PPP'nin mesela şu kısmı. Tamam mı? Burası da bizim cevabımız olacak. Yani sorunun cevabı, paragrafının neresinde başlıyor bitiyor onu bulacağız. Hikayemiz bu. Bunun için ne yapılıyor?
+
+570
+02:28:55,540 --> 02:29:13,880
+Şimdi aynı şekilde biz şu ilk kısımda soruyu veriyoruz. İkinci kısımda ikinci cümle olarak, iki cümle alıyor demiştik yani bütün beltyapıları, iki cümle alabiliyor. İlk kısımda soru, ikinci kısımda paragraf.
+
+571
+02:29:21,075 --> 02:29:42,675
+Buradaki her bir input için bu bir tane token üretiyor ya, bu tokenların paragraf için üretilenleri şuradaki T1 üstü, T2 üstü, Tm üstü olarak ifade edilsin. Bunların her biri, şuradaki gördüğünüz her bir şey aslında 512 boyutlu vektörler. Şuradaki T1 üstü, Tm üstü dediğiniz şeyler.
+
+572
+02:29:43,476 --> 02:29:52,256
+Şimdi iki tane query var burada. İki tane query. Bunlardan bir tanesi qstart, bir tanesi qent. İki tane query vektörü öğreniyoruz.
+
+573
+02:29:54,036 --> 02:30:02,396
+Yani burada şeyi öğreniyorduk. Bir tane w maddesi öğreniyorduk. Burada ise iki tane vektör öğreniyoruz. Bu vektörler dediğim gibi yine 512 boyutta.
+
+574
+02:30:11,040 --> 02:30:34,380
+Vektörüyle elimizdeki paragraftaki bütün şunların her biri çarpılıyor. Çarpıldığı zaman hangisi, yani dot product yapılıyor tek bir tane değer çıkıyor oradan. O tek bir tane değer hangisinde daha yüksekte o değer bizim için o indis daha doğrusu.
+
+575
+02:30:34,835 --> 02:30:40,095
+Bizim için şey oluyor, ne denir? Başlangıç oluyor. Hent için de aynı şey geçerli.
+
+576
+02:30:46,100 --> 02:31:13,479
+Start olma ihtimali bütün paragraf vektörlerinin, paragraf tokenlarının vektörleriyle çarpılıyor. En yüksek değere sahip olan aslında start olma ihtimali en yüksek olan demek. Bir de aynı şey end vektörüyle gerçekleştiriyor. End vektörü elimizdeki yine buradaki T1 üstü ve Tm üstüne kadarki bütün vektörleri çarpılıyor. En yüksek değere sahip olan yine end vektörü olma olası da en yüksek oluyor.
+
+577
+02:31:13,940 --> 02:31:25,979
+Detayları var. Paper'ı da okursunuz. Paper güzel bir paper bu arada. Okuması keyifli. Dolayısıyla buradaki bütün hikaye aslında Q-Stack ve Q-End vektörlerini öğrenmek haline geliyor.
+
+578
+02:31:25,979 --> 02:31:38,840
+Tabii bunlar bir tane. Her birisi için başka bir şey öğrenmiyorsunuz. Değişen bir şey zaten bunların şu kısımları oldu. Paragrafların vektörleri tamamen değişiyorlar.
+
+579
+02:31:42,131 --> 02:32:04,252
+Nere için ne yapılıyor? Nerede? Nerede dediğimiz neydi? İlk önce onu hatırlayalım. Name Entity Recognition. Name Entity Recognition'da şey var, tek bir tane cümle giriyor işin içerisinde. Burada iki cümlelik bir yapı yok. Her bir cümlenin, her bir token'ın işte buradaki Name Entity'den neyse onların token'ları ile ifade edilmesini istiyoruz.
+
+580
+02:32:05,236 --> 02:32:17,276
+Sonuçta ne yapılıyor? Cümlenin her token'ı için üretilen sonuç token'larını, yani şu an T1, T2, TN token'larını Nell etiketten atlamak için bir tane W öğrenmek gerekiyor.
+
+581
+02:32:17,276 --> 02:32:21,876
+Yani şuradakine çok benziyor.
+
+582
+02:32:22,451 --> 02:32:35,771
+Burada sadece şu C için bir şey öğreniliyordu. Burada ise hepsinin de kullanılmak için ortak bir şey öğreniliyor. Fakat burada mesela 3 sınıflıydı ya da 2 sınıflıydı artık kaç tane sınıf ayıracaksanız. Burada ise tek fark ne?
+
+583
+02:32:37,203 --> 02:32:53,963
+Sınıf sayısı Entity türü kadar. Bu da en fazla kırk tane falan olur zaten. Hatta üç beş tane falan olanları da vardır. Yani name entity taslarına bağlı olarak geliştirilen süreçler. Dolayısıyla NER için Bert'u kullanmakta bu. Birkaç bir şeyler yazmamış, onları da ben yazayım.
+
+584
+02:33:00,435 --> 02:33:17,615
+NSP ve MLM dediğimiz şey Next Sentence Prediction ve Mask Language Modeling. Bu ikisi pretrain kısmı. Bunlar nasıl eğitiliyorlar? Onların eğitiminde şöyle bir şey var. NSP aslında Sentence Payer. Klasifikasyon da aynı şey.
+
+585
+02:33:19,860 --> 02:33:36,299
+Mesela neredeydi o? Şurada. Şuradaki class table'ına göre zaten bir tane W öğrenme mevzusu gerçekleştiriliyor. Yani NextCenters Prediction'da şu NextCenters Prediction için şu W maddesi öğreniliyor.
+
+586
+02:33:36,299 --> 02:33:43,979
+Yani Bert'in içerisinde, yani pretrain kısmında şu yukarıda aslında bir şey oluşuyor.
+
+587
+02:33:44,564 --> 02:33:58,684
+İnce bir sınıflandırma layeri oluşuyor. Burada hem NSP'yi hem de MLM'i ne yapıyor? Öğrenecek. MLM'i öğrenmesini de biraz anlatacağım.
+
+588
+02:34:00,531 --> 02:34:28,391
+Üst kısımda, şurada, şu üst kısımda bir sınıflandırma katmanı oluşturuluyor. Orası da eğitiliyor. Berth'in kendi içiyle beraber. Daha sonra pretrain aşaması bittiği anda o katman kaldırılıyor ve şu yapı kalıyor. Daha sonra siz fine tune, yani nerede kullanmak istiyorsanız Berth'i, bu altyapıyı alıp onun üstüne kendi görevinize özel bir küçük yine bir sınıflandırıcı layer katmanı ekliyorsunuz.
+
+589
+02:34:28,531 --> 02:34:43,631
+Yapı tamamen bu şekilde. Şimdi, pretreign aşamasında NSP'yi eğitirken aynen sentence player classification'da olduğu gibi şuradaki en baştaki etiketin, yani bu da bir vektör, 512 boyutlu bir tane vektör bu.
+
+590
+02:34:43,631 --> 02:34:54,871
+Yani label dediği şey, yani class label'a dönüştürülüyor bu. O demek anlamında değil. C class label için kullanılacak bir şey demek.
+
+591
+02:34:55,476 --> 02:35:09,015
+C dediğimiz şey, yani buradaki çıkan şey 512 boyutlu bir şey. 512 boyutlu bir şeyi çarpacağız bir şeyle. İşte o W maddesini öğreneceğiz. Peki, NSP için böyle. Peki şey için ne yapacağız?
+
+592
+02:35:17,332 --> 02:35:24,652
+Yani input cümlesindeki bazı tokenlar, input cümlesindeki bazı tokenlar mask'ta çevriliyor, berte veriliyor.
+
+593
+02:35:25,092 --> 02:35:29,231
+Her token için bir vektör üretiyor. Yani masklar için de bir tane şey üretiyor.
+
+594
+02:35:30,452 --> 02:35:36,231
+Bu vektörlerden masklara karşı gelenler için bir W öğreniyor. Ama buradaki W birazcık büyük bir W.
+
+595
+02:35:36,231 --> 02:35:42,092
+Yani şöyle bir şey yapmamız gerekiyor çünkü. Her birisi için de masklar için mesela.
+
+596
+02:35:42,868 --> 02:36:09,808
+Orada bunun bir örneği var. Mesela diyelim ki burada masklı bir şey var. Ona karşılık gelen bir t değeri var. Bir vektör. O vektör ürü bizim neye dönüştürmemiz gerekiyor? Bir kelimeye dönüştürmemiz gerekiyor. Bir token'a bir token tahmin edeceğiz orada. Tamam mı? Şimdi token size da mesela burada herhalde 32 bin civarında felandı. Yani 32 bin sınıftan bir tanesini atayacağız.
+
+597
+02:36:10,352 --> 02:36:30,031
+Tamam mı? Yani vocabulary'dan herhangi bir tanesini çünkü bulmamız, dönüştürmemiz gerekiyor. Yani burada 512'ye işte 30 binlik falan bir matriz haline geliyor şudaki W. Üçlük bir şey değil mesela. Üç sınıfa atamak değil de 32 bin sınıfa atamak. Tamam mı? Tek fark o. Yani softmax'de bu gerçekleştiriliyor.
+
+598
+02:36:32,531 --> 02:36:47,951
+Burada onu anlatıyor zaten. Yani C dediğimiz şey, işte H'ımız kaçsa, 512 dedim mesela. H bu. W ise vocabulary size çarpı H'lı olmak zorunda. En sonunda da burada çıkan işlem bu gerçekleştiriliyor.
+
+599
+02:36:48,631 --> 02:36:58,351
+Özellikle iki cümlen oluşan bir input dizisi oluşturuyor. Cümleler birbirini takip eden ya da değil şeklindeler. Sonra bu diziden bazı kelimeler mask haline getiriliyor. Yani aynı anda yapılıyor bunlar.
+
+600
+02:36:59,252 --> 02:37:12,612
+Yani şu ikisi birlikte tek bir sekans ağ veriliyor. Çıkışta CLS'nin çıkış vektörü için NSP için bir W, bir de MASK için de başka bir W öğreniliyor.
+
+601
+02:37:13,311 --> 02:37:19,072
+Training Loss bu tahminlerin aslında doğruluklarının, yani tahminlerin losslarının toplamı oluyor.
+
+602
+02:37:19,072 --> 02:37:25,132
+Training Loss. Oradan devam edebiliyorsunuz. Bütün yani dediğim gibi pre-training mekanizması bu şekilde ilerliyor.
+
+603
+02:37:26,579 --> 02:37:48,419
+Burada şey de anlatılmamıştı, onu da bahsediyoruz. Çoktan seçmeniz sorular var mesela bir NLP taskı olarak. Mesela SWAC dataset var. Bu cümle aşağıdaki şıklarına hangisiyle devam eder? Yani can etme olasılığı en yüksektir, öyle söyleyeyim. Çoktan seçmeniz şıklar.
+
+604
+02:37:49,492 --> 02:38:16,291
+Ama tabii bu aslında bütün çoktan seçmeni, sorular için bir model olabilir. Nasıl bir şey yapılıyor? Bu gibi de setler için Fine Tuning'de bu sefer dört tane girdi oluşturuyor arkadaşlar. Dört girdi. Yani cevap şıkkı sayısı kaç ise o kadar tane daha doğrusu. Şimdi bu girdi her biri iki kısımdan oluşuyor. İlk kısımlar aynı ve soru cümlesi. İkinci kısımlar ise cevap şıkları. Yani soru cümlesi A şıktı. Aslında şöyle yapabilirim.
+
+605
+02:38:18,420 --> 02:38:31,139
+Yani soru artı aşıkı. Bu bir şey.
+
+606
+02:38:37,556 --> 02:38:58,536
+Mesela 4 şıkkı olsun bizim görevimiz. C şıkkı, burada D şıkkı. Burada C-L'sinin çıkış vektörü olan C ile, 2 tane sekans girdiğinde de şurada bir tane C çıkıyor da, şu C ile, evet ne yapacak mıyız o C ile?
+
+607
+02:39:00,943 --> 02:39:28,484
+Dot Product yapılacak bir vektör öğreniyor. Bir tane vektör öğreniyoruz. Tek bir tane vektör öğreniyor burada. Dot Product. Dört sekansının çıkışlarına bakılarak hangisi büyükse olacak. Yani bir tane bir vektör öğreniyorum ben. Şimdi şunu veriyorum sisteme. Bu bana bir tane şey veriyor. C veriyor. Bu da başka mesela bu CA şıkkının olsun. Bu CB şıkkının olsun. Bu C şıkkının vektör olsun. Bu da C.
+
+608
+02:39:29,620 --> 02:39:56,900
+D şıkkının vektörü olsun. Tamam mı? Ben bir tane asıl yapılacak bir tane vektör olmalı R diyeyim mesela. Bu R ile C A'yı çarpıyorum. R ile C B'yi çarpıyorum. R ile C C'yi çarpıyorum. R ile C D'yi bakıyorum. Bu dört tane sekansın çıkışlarına bakarak hangisi daha şeyse, büyükse bu R ile çarpıldığında onu cevap olarak döndürüyorum. Yani mesela C C en büyükse R ile çarpımında.
+
+609
+02:39:57,683 --> 02:40:02,403
+O zaman cevap şıkkı C'dir diye sistem bulabiliyor cevabı.
+
+610
+02:40:03,823 --> 02:40:06,323
+Şimdi bunlar fine-tune kısımlarıydı.
+
+611
+02:40:06,563 --> 02:40:10,443
+Yani hem free-train hem de fine-tune kısmı.
+
+612
+02:40:10,503 --> 02:40:12,903
+Şimdi kullanım açısından bir farklılık var.
+
+613
+02:40:13,780 --> 02:40:41,020
+Şimdi Berth, finetune sürecinde tüm ağ güncelleniyor. Yani işte içinde 300 milyon tane, large içinde 300 milyon tane var herhalde. Base'inde de 110 milyon tane. Yani finetune işlemi esnasında, yukarıda yapılan işlemler esnasında tüm ağ güncelleniyor. İstenen çıkışı üretebilmek için. Ve her finetune işlemi sonrasında o göreve özel bir ağ çıkıyor ve siz onu daha sonra kullanabilirsiniz. Ama bu şart değil. Ne yapabilirsiniz?
+
+614
+02:40:42,100 --> 02:41:05,000
+Yapabileceğiniz şeylerin bir tanesi şu. Buna Feature Based Berth deniyor. Feature Based Berth de şu olay. Siz tokenlarınızı veriyorsunuz. Yani tek single sentence da verebilirsiniz, birden fazla da verebilirsiniz, paragraflı da verebilirsiniz vs. vs. veriyorsunuz ve outputları alıyorsunuz. Şuradan şu C. Yani şuradaki temsilleri alıyorsunuz aslında.
+
+615
+02:41:05,523 --> 02:41:29,384
+Daha sonra o temsilleri alıp istediğiniz makine öğrenmesi modeline, istediğiniz doğal dil işleme kütüphanesine, istediğiniz yere verip kullanabiliyorsunuz. Yani fine-tune işlemini yapmayı Bert'in kendi üzerinde yapmıyorsunuz da, Bert'in temsillerini kullanıyorsunuz verileriniz için.
+
+616
+02:41:29,791 --> 02:41:55,572
+O temsillerle problemi çözüyorsunuz. Bunun da oldukça başarılı sonuçlar verdiği görülmüş. Yani bütün mimari fine tune etmek bir yaklaşım. Ya da şunu yapabilirsiniz diyoruz. Deniyor burada. Berk temsillerini al, tamam aldı. Ondan sonra şu üst tarafta sen sınıflandırma yapacaksın, şunu yapacaksın. Onu tamamen kopar. Yani onu ayrı bir yerde tut, onu ayrı bir yerde eğit. Kendi başına eğit.
+
+617
+02:41:56,500 --> 02:42:01,880
+Bu şekilde de sistem oldukça başarılı çalıştığını gözlemlemişler.
+
+618
+02:42:02,680 --> 02:42:07,200
+Şimdi orada birkaç tane detay var. Onlardan bahsedeyim.
+
+619
+02:42:09,720 --> 02:42:14,739
+Şimdi bizim 12 tane layer var. 12 tane layer var BERT'in içerisinde.
+
+620
+02:42:15,319 --> 02:42:21,079
+Aslında BERT'te her token için her layer bir çakış vektörü üretiyor.
+
+621
+02:42:21,504 --> 02:42:45,564
+Yani hani şurada şunları gösterir ki şu C, T1, T2. Şimdi bunlar son layer'ın çıkışları. Aslında bu arada her bir layer bunlarla aynı büyüklükte, yani 512 ise 512 ise 64 ise 64. O büyüklükte çıkışlar üretiyor. Yani sizin her bir token'ınız için aslında Bert'in içerisinde 12 tane çıkış üretiliyor. Anlatabildim mi?
+
+622
+02:42:45,940 --> 02:42:56,139
+Her bir token'ız için ilerleyen şekillerde, yani birinci katmanda bir çıkış üretiliyor, ikinci katmanda bir çıkış üretiliyor, üçüncü katmanda bir çıkış üretiliyor, en son katmanda da bir çıkış üretiliyor.
+
+623
+02:42:56,139 --> 02:43:08,139
+Tamam mı? Şimdi bunları yani bir giriş dizisi için aslında öyle söylüyoruz, on iki kere de temsil üretiliyor. En son katmandaki temsilleri almak...
+
+624
+02:43:09,139 --> 02:43:14,079
+Sondan bir öncekini almak, son dört layarı concatenate etmek gibi yaklaşımlar.
+
+625
+02:43:14,479 --> 02:43:18,739
+Ürün performansını denemişler mesela üzerinde. Paper'da, tablo 7'de.
+
+626
+02:43:20,680 --> 02:43:27,319
+Sondan bir önceki layarı kullanmak mesela şeyden daha iyi. En son layarı kullanmaya göre, yani şunu demek istiyorum.
+
+627
+02:43:27,779 --> 02:43:31,659
+Şu en son layarı ya, bundan daha öncedeki layarlar da var, 12 taneler.
+
+628
+02:43:32,211 --> 02:43:41,451
+En son lehiri kullanmak yerine ondan bir öncekini kullanmak ya da en sondaki dört tane lehirin çıkışlarını konkatenet etmek daha iyi sonuçlarlar.
+
+629
+02:43:41,572 --> 02:43:48,271
+Şimdi neden en sonuncusu daha iyi değil de ondan bir öncesi daha iyi? Bunu şu şekilde açıklamışlar.
+
+630
+02:43:49,851 --> 02:43:53,211
+Şimdi bu en son lehiri aslında pretrain esnasında...
+
+631
+02:43:54,131 --> 02:44:19,671
+Görevlere özgü olarak üretiliyor. Yani oraya çok fazla yakın söylüyor. Yani must work prediction ve next sentence prediction. Bu ikisine çok fazla odaklanıyor. O yüzden son katman o işi yapmak için çok daha iyi odaklanmış. O yüzden onu bir önceki halini almak daha genel geçer problemler için daha iyidir gibisinden bir şeyler söylemişler.
+
+632
+02:44:20,404 --> 02:44:28,603
+Tabii mesela şey de var, son dört tanesini kullanmak gibi sonuçlar vermişler.
+
+633
+02:44:29,384 --> 02:44:30,443
+Buraya geçelim.
+
+634
+02:44:31,884 --> 02:44:35,724
+Şimdi özetle arkadaşlar, Bert bir enkoder.
+
+635
+02:44:36,064 --> 02:44:40,103
+Yani bir sekansı veriyorsunuz, o sekans için bir temsil üretiyor.
+
+636
+02:44:41,324 --> 02:44:45,623
+Şimdi Attention is All You Need makalesinde okuduysanız daha önce.
+
+637
+02:44:47,540 --> 02:45:06,979
+Orada Transformer'lar şey olarak tanımlanmışlar. Yani bir Encoder kısmı var, bir de Decoder kısmı var. Aynen şeydeki gibi. Arnenler'in hani demin görmüştük ya, inputları, sekansı topluyor bir tane vektörün içine gömüyor. Öteki tarafta da o vektörü, Decoder'da da o vektörü kullanıp output sekansını üretiyor.
+
+638
+02:45:07,667 --> 02:45:29,667
+Şimdi buradaki bert şeyden farklı, yani o makaledeki yapıdan farklı. Çünkü bert bir dilden başka bir dile çevire falan üretmek için yapılmış bir şey değil. Sekans üretmiyor. Yani sekansdan sekans üretiyor demek çok doğru olmaz. Bir temsil üretiyor bert. Bu temsili kullanarak siz bambaşka problemler çözebilirsiniz. Orası apayrı bir mevcut.
+
+639
+02:45:32,559 --> 02:45:41,299
+Enkoder var ve içinde de attention yapısı var. Attention yapısı şeyle aynı. Attention is all unit'in yapısıyla aynı. Self-attention, onun encoder kısmındaki yapıyla tamamen aynı.
+
+640
+02:45:42,399 --> 02:45:48,579
+Pre-training'de bu mimarinin üzerine basit bir sınıflandırma layer'ı ekleniyor. Eğitim bittiğinde bu eklenmiş olan şey çıkartılıyor.
+
+641
+02:45:48,579 --> 02:45:57,639
+Funtone sürecinde ise bu mimarinin üzerine göreve yüzgü basit bir sınıflandırma mimarisi, sınıflandırma için mimari ekleniyor.
+
+642
+02:45:58,067 --> 02:46:22,187
+Şeklinde ifade edebiliriz. Burada çeşitli birkaç tane bir şeyler sormuş. Bu an çok çok da kritik değiller. Peki arkadaşlar, var mı sorularınız? Sorunuz. Sesim geliyor mu hala? İnşallah geliyordur. Bayağıdır ses. Geliyor hocam. Geliyor. Hala buradasınız değil mi? Evet hocam. Peki, tamamdır.
+
+643
+02:46:22,739 --> 02:46:39,439
+Peki arkadaşlar, o zaman bugünlük bu hafta bu kadar diyorum. Dediğim gibi bu akşam size üçüncü ödevinizi göndereceğim. Ödevde anlaşılmayın falan bir şeyler olursa sorarsınız. Online Yıldız Edyo TR üzerinden yayınlanmış olacağım. Tamam mıdır?
+
+644
+02:46:44,020 --> 02:46:44,500
+Peki.
+
+645
+02:46:45,159 --> 02:46:51,440
+Hocam dersin içerisinde bir de şey soracaktım. Ödevle ilgili bir bilgi verdiniz mi acaba? Ben kaçırmış olabilirim de görmedim.
+
+646
+02:46:53,420 --> 02:46:56,560
+Söyledim ya. Yok, ödevin kendisiyle alakalı bir şey söylemedim.
+
+647
+02:46:56,700 --> 02:46:57,900
+Evet, içeriyle alakalı. Tamam.
+
+648
+02:46:57,959 --> 02:47:04,240
+Yok, yok. Söylemedim, söylemedim. Yani akşamleyin şey yapacağım, duyuracağım tamamını. Tamam mı?
+
+649
+02:47:04,240 --> 02:47:05,240
+Tamam, tamamdır hocam.
+
+650
+02:47:05,340 --> 02:47:07,120
+Sadece akşam duyuracağımı söyledim.
+
+651
+02:47:07,580 --> 02:47:09,860
+Tamam, o zaman tamam. Bir şey kaçırmamışım hocam.
+
+652
+02:47:10,000 --> 02:47:10,860
+Aynen, tamam.
+
+653
+02:47:11,316 --> 02:47:17,436
+Peki arkadaşlar, görüşmek üzere diyorum zaman bu haftalıkta, haftaya. Kolay gelsin.
+
+654
+02:47:18,456 --> 02:47:19,276
+İyi günler hocam.
+
+655
+02:47:19,695 --> 02:47:20,536
+İyi günler hepinize.
