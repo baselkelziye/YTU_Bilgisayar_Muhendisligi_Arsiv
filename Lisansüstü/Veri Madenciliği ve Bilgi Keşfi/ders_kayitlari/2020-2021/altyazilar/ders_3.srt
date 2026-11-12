@@ -1,0 +1,3911 @@
+1
+00:05:34,579 --> 00:06:04,340
+Merhaba arkadaşlar. Üçüncü hafta sizlerle yine buluştuk. Üçüncü hafta dersleri için. Profil resmi ekleyen arkadaşlarıma teşekkür ediyorum. [öğrenci], [öğrenci]. Bakıyorum başka kimde var? [öğrenci], [öğrenci] eklemiş, [öğrenci] eklemiş. Profil fotoğrafı görünüyor.
+
+2
+00:06:17,843 --> 00:06:18,923
+bilmeyenler de var.
+
+3
+00:06:27,124 --> 00:06:35,124
+Hocam merhaba. Ben profil fotoğrafını koymuşum ama geçen hafta da vardı. Şimdi bağlandığımda çıkmadı. Çok anlayamadım açıkçası.
+
+4
+00:06:35,124 --> 00:06:50,124
+Evet, [öğrenci] senin görünmüyor şu anda. [öğrenci]'nun da görünmüyor. [öğrenci] ama senin şeyde görünmüyor mu? [öğrenci], ha yok gözükmüyor. Bağlantıda gözükmüyor.
+
+5
+00:06:50,124 --> 00:07:07,484
+Yani arada bir daha deneyim hocam. Aslında çıkıp tekrar bağlanmak istedim de şimdi bağlantı sorunu falan olursa diye çıkmak da istemedim hocam. Tamam tamam okey. Bundan sonraki şeyde bağlantılarda ona bir dikkat edin bakalım hangi durumda olmuyor bağlantıda çıkmak.
+
+6
+00:07:07,484 --> 00:07:16,124
+Şeyden olmuyor olabilir hocam. Zoom'a giriş yapmamış olup sadece linkten yani site üzerinden tıklayıp girince Zoom'a giriş yapmıyor hesabına.
+
+7
+00:07:16,124 --> 00:07:18,763
+Hesabına giriş yapması gerekiyor olabilir
+
+8
+00:07:18,763 --> 00:07:21,504
+Önce Zoom'u çalıştırması lazım
+
+9
+00:07:21,504 --> 00:07:22,063
+Doğru mu?
+
+10
+00:07:22,743 --> 00:07:24,423
+Önce Zoom'u çalıştıracak
+
+11
+00:07:24,423 --> 00:07:26,863
+Ondan sonra linke tıklarsa
+
+12
+00:07:26,863 --> 00:07:28,403
+Aynen
+
+13
+00:07:28,403 --> 00:07:29,324
+O zaman oluyor
+
+14
+00:07:29,324 --> 00:07:31,804
+Ben de öyle tahmin ediyorum
+
+15
+00:07:37,459 --> 00:07:45,019
+Evet, bu hafta güzel bir şey yaptım arkadaşlar. Geçen hafta derste hatırlarsanız duyuyorsunuz değil mi beni?
+
+16
+00:07:47,639 --> 00:07:48,639
+Duyuyoruz hocam.
+
+17
+00:07:49,979 --> 00:07:52,199
+iPad kullanacaksınız değil mi hocam?
+
+18
+00:07:52,199 --> 00:08:02,439
+iPad değil, benim Windows tabletim var. Bu hafta ilk defa bir Windows tablet üzerinden çizimlerimi kalem kullanarak yapacağım.
+
+19
+00:08:02,559 --> 00:08:08,939
+Çünkü geçen hafta mouse ile ve touchpad ile çizim yaparken ne kadar kötü çizdiğimi fark ettim.
+
+20
+00:08:08,939 --> 00:08:14,619
+Aslında uzun zamandır bunu yapmaya çalışıyordum da nasıl yaparım diye düşünüyordum.
+
+21
+00:08:14,619 --> 00:08:35,159
+yani işte ben daha çok fiziksel bağlantılar, USB bağlantısı falan düşünüyordum. Şu anda Remote Desktop Connection, AnyDesk uygulamasıyla şeye de bağlandım, Windows tablete bağlandım.
+
+22
+00:08:35,159 --> 00:08:58,919
+kalemi var. Orada bir 3D Paint açtım. Çizimlerimiz artık daha güzel olacak. Ümitliyim. Çünkü gerçekten çok komik oluyor. Yani mouse ile bir şey çizmek, yazmak çok zor. Onu fark ettim. Bu hafta biraz daha profesyonel çözümler kullanacağız.
+
+23
+00:08:59,619 --> 00:09:03,099
+Bilgisayar bir soru vardı hocam. Ona benziyordu çizimler.
+
+24
+00:09:03,099 --> 00:09:04,979
+Neye benziyordu?
+
+25
+00:09:05,919 --> 00:09:13,040
+90'larda bilgisayar kursları olurdu böyle ilk daha yeni geldiğimizde. Orada böyle peinte, çizgi çizgi falan anlara benziyor.
+
+26
+00:09:13,599 --> 00:09:18,680
+Evet çok zor yani mecbur kalınca farklı çözümler arıyorsunuz tabii.
+
+27
+00:09:19,760 --> 00:09:19,939
+Evet.
+
+28
+00:09:20,979 --> 00:09:28,879
+Hocam bir de derste siz tahtayı çok eğlenceli kubandınız için öyle dinlemeye alışıyor sizi. O yüzden şimdi daha eğlenceli olacak.
+
+29
+00:09:28,879 --> 00:09:38,839
+İnşallah hadi bakalım ben de ümitliyim. Evet şu anda dersimizde 22 kişiyiz. Fena değil.
+
+30
+00:10:15,155 --> 00:10:22,155
+Geçen hafta data preprocessing konusuna başlamıştık.
+
+31
+00:10:31,059 --> 00:10:51,539
+veri üzerinde geçen hafta bazı dönüşüm işlemlerini konuştuk. Transformation of raw data ile önce veri üzerinde normalizasyon işlemi nasıl yapılıyor onu gördük.
+
+32
+00:10:51,539 --> 00:11:03,179
+arkasından data smoothing işlemini gördük ve bu hafta time dependent data'ya başlayacağım.
+
+33
+00:11:06,619 --> 00:11:09,619
+Bir de missing value elimination komutunu görmüşüz.
+
+34
+00:11:47,731 --> 00:12:07,091
+Aslında zaman serileri konu başlığımız. Çok zaman serileri bu dersin ana konusu değil. Aslına bakarsanız bu şekilde time dependent data dediğimiz formda verilerle ilgili başlı başına bir ders anlatılabilir. O kadar detayı var aslında bu işin.
+
+35
+00:12:07,091 --> 00:12:15,971
+zamana bağlı data dediğimiz zaman ya da zaman serisi dediğimiz zaman ne anlıyoruz ona bakalım.
+
+36
+00:12:17,751 --> 00:12:23,431
+Aslında tek bir tane öz nitelik var yani single feature dediği bir tane öz nitelik var.
+
+37
+00:12:25,231 --> 00:12:31,811
+Şurada bahsedilen ve bu öz niteliğin belli zaman aralıkları içerisinde alınmış örnekleri var.
+
+38
+00:12:31,811 --> 00:12:39,551
+Bu zaman aralıkları dediğimiz aralıkların sabit aralıklar olması gerekiyor.
+
+39
+00:12:40,131 --> 00:12:42,931
+Mesela hava sıcaklığı örneği vermiş burada.
+
+40
+00:12:43,531 --> 00:12:54,231
+Her saat yani birer saat arayla hava sıcaklığı ölçümlerinin yapılıp bir yere kaydedilmesi bir zamana bağlı veri üretilmesi anlamına geliyor.
+
+41
+00:12:54,231 --> 00:13:15,711
+Peki burada bir X kümesiyle belirtilmiş T1 anında T2, T3 ve Tn dediği zaman diliminde aldığı değerleri bir kümeye yerleştiriyor, bir sayı dizisine yerleştiriyor
+
+42
+00:13:15,711 --> 00:13:23,191
+ve diyor ki buradaki TN dediği değer most recent value yani en yakın zamanda kaydedilmiş değeri gösteriyor.
+
+43
+00:13:23,311 --> 00:13:26,291
+T1 dediği ilk ölçüm değerini gösteriyor.
+
+44
+00:13:26,291 --> 00:13:40,011
+Bu tür bir zamana bağlı veri ile veri madenciliğinde nasıl çalışılır, veri madenciliği sürecine nasıl hazırlanır biraz bundan bahsedeceğiz.
+
+45
+00:13:48,947 --> 00:14:14,227
+Aslında burada çalışma mantığımız elimizde bir zaman serisi var ve bu Time Series Problem olarak isimlendiriliyor ve amaç T1'den TN zaman dilimine kadar alınmış ölçümler var ve amacımız TN artı bir dediğimiz değeri tahmin etmek. Genelde çalışma mantığı bu şekilde oluyor.
+
+46
+00:14:14,227 --> 00:14:43,287
+Peki veriyi işlemek için nasıl hazırlayabiliriz? Verinin ön işlemlerinde aslında bu zaman serilerinde belli bir window mantığı kullanılıyor ve bir time lag dediği bir zaman aralığı belirleniyor ve bu zaman aralığındaki sample'lar, alınamış olan örnekler bir giriş değişkeni olarak kabul ediliyor
+
+47
+00:14:43,288 --> 00:14:51,887
+ve tahmin etmek istediğimiz değer, bir sonraki değer oraya işleniyor.
+
+48
+00:14:52,208 --> 00:15:03,867
+Şimdi burada basit bir örnek olması için t eşit sıfırdan başlayıp ona kadar 11 tane ölçüm alınmış ve bir diziye yazılmış.
+
+49
+00:15:03,867 --> 00:15:11,907
+Bu zaman serisi formunda verilmiş olan veri dizisiyle nasıl çalışırız?
+
+50
+00:15:11,907 --> 00:15:24,447
+Az önce söylediğim gibi bir window tanımlıyoruz ve tanımladığımız window'u burada uzunluğunu 5 olarak kabul edelim.
+
+51
+00:15:24,848 --> 00:15:32,087
+Buna göre 6. değer tahmin edilen değeri gösterecek şekilde veriyi hazırlayalım diyor.
+
+52
+00:15:32,668 --> 00:15:38,727
+Gördüğünüz gibi T0 anından T10'a kadar 11 tane değer var kaydedilmiş.
+
+53
+00:15:38,727 --> 00:15:44,827
+buna göre aslında elimizdeki bu veriden farkındaysanız 6 tane sample üretiyor
+
+54
+00:15:44,827 --> 00:15:46,047
+ne yaptık?
+
+55
+00:15:46,907 --> 00:15:56,447
+birinci satırda T0, 1, 2, 3 ve 4'ü yani ilk 5 tane değeri bu bizim windowumuzdu
+
+56
+00:15:56,447 --> 00:16:04,947
+ve burada window size'ı şurada window size'ını 5 olarak tanımladık dedik
+
+57
+00:16:04,947 --> 00:16:19,147
+Dolayısıyla ilk 5 değeri aldı T0'dan başlayıp 4'e kadar. Next value dediği değeri T5'i yazdı. Yani şuradaki sütuna lütfen dikkat edin. Next value'ya T5'i yerleştirdi.
+
+58
+00:16:19,147 --> 00:16:35,248
+Sonuç olarak amaç 11 tane değer vardı ölçülmüş. Mesela her saat alınmış sıcaklık değerleri olabilir bunlar. Buna göre buradan 6 tane sample üretmiş oldu.
+
+59
+00:16:35,248 --> 00:16:49,647
+Window'u bir kaydırdı. İkinci satırdaki sample'a lütfen dikkat edin. T1'den başladı. T2, T3 diye oradaki beş tane değeri aldı. Bu defa T6'yı next value olarak kaydetti.
+
+60
+00:16:49,647 --> 00:16:57,827
+yaptığımız işlemle her defasında window'u bir kaydırarak sample üretiyoruz zaman serisinden.
+
+61
+00:16:57,827 --> 00:17:05,308
+Veri madenciliğinde kullandığımız şekilde 6 tane satıra yerleştirilmiş, 6 tane sample üretmiş oldu.
+
+62
+00:17:06,267 --> 00:17:10,087
+Next value dediği değer burada nümerik değerler bunlar.
+
+63
+00:17:10,687 --> 00:17:11,828
+O zaman ne yapacağız?
+
+64
+00:17:11,827 --> 00:17:30,027
+Yani yaptığımız işlem regresyonu gerektiriyor. Çünkü nümerik bir output'u siz burada tahmin etmeye çalışıyorsunuz. Dolayısıyla train datası dediğimiz bir data üretmiş oluyoruz. Bu gördüğümüz örnekte.
+
+65
+00:17:30,027 --> 00:17:36,907
+6 tane sample'da ben aslında hepsinin next value'larını biliyorum.
+
+66
+00:17:37,299 --> 00:17:48,299
+buradan 6 tane sample ürettim. Bundan sonraki aşamada T11 dediğim değeri tahmin etmek istiyorsam eğer 6, 7, 8, 9, 10'u buraya koyacak.
+
+67
+00:17:48,299 --> 00:17:58,299
+Window'un input parametreleri olarak alacak ve T11'i estimate etmek istediği değer olarak düzenleyeceğiz.
+
+68
+00:17:59,039 --> 00:18:04,699
+Veri bu şekilde veri madenciliği süreci için hazır hale gelmiş oluyor.
+
+69
+00:18:08,596 --> 00:18:32,675
+Burada her zaman az önce gördüğümüz örnekte olduğu gibi next value dediğimiz değer zaman serisinin ilk değeri olmak zorunda değil. Eğer yapmak istediğimiz işlem daha ileri bir dönemi tahmin etmeyi gerektiriyorsa
+
+70
+00:18:32,675 --> 00:18:47,695
+output variable'ı burada örnekte verildiği gibi 3 adım sonrasını hesaplayacak şekilde de seçebiliriz.
+
+71
+00:18:47,695 --> 00:19:01,515
+Bunu şöyle düşünün. Biz son 5 saatin sıcaklık ölçümlerini biliyoruz ama buna göre 3 saat sonra hava sıcaklığı ne olacağı söylemek istiyoruz.
+
+72
+00:19:01,515 --> 00:19:06,735
+veya son 5 günkü en yüksek hava sıcaklıklarını kaydettik biliyoruz.
+
+73
+00:19:08,275 --> 00:19:16,855
+3 gün sonra en yüksek hava sıcaklığı kaç derece olacak acaba diye bir tahminde bulunmak istiyoruz.
+
+74
+00:19:16,855 --> 00:19:24,635
+Yani daha ileri bir evredeki değeri tahmin etmek isteyebiliriz.
+
+75
+00:19:24,636 --> 00:19:47,935
+Tabi bu problem zaman aralığı arttıkça yani ne kadar ileride bir tarihi tahmin etmeye çalışıyorsak başarısı o kadar düşük olacaktır. Yani bir sonraki adımı tahmin etmeye göre biraz daha hata olasılığınız artacaktır.
+
+76
+00:19:53,268 --> 00:20:16,047
+Evet, bu konuyu konuştuk. Burada şundan da bahsedebiliriz. Az önce konuştuğumuz örnekte next value olarak bir nümerik değerdir dedik. Next value'yu bir nümerik değer değil de kategorik değer olarak da planlayıp bunu bir classification problemine de dönüştürebiliriz.
+
+77
+00:20:16,047 --> 00:20:35,647
+Nasıl yapabiliriz? Belli sıcaklık değerlerini mesela değer aralıklarını kategorik bir değer atayabiliriz. Low, medium, high gibi ya da işte farklı tanımladığımız belli aralıklar daha fazla kategorik değer koyabiliriz oraya.
+
+78
+00:20:35,647 --> 00:21:04,007
+Bu şekilde bir kategorik değere dönüştürüp, burada verdiği örneğe lütfen dikkat, diyor ki T değeri İ artı bir ile İ artı birin belli bir threshold değerinden büyük olması veya küçük olması durumunda buna biz bir kategorik değer atayıp bu kategorik değeri bir binary sayıyla gösterebiliriz
+
+79
+00:21:04,007 --> 00:21:09,187
+ve böylece bir classification problemi haline getirip bu şekilde de çözebiliriz.
+
+80
+00:21:11,887 --> 00:21:18,467
+Evet, zaman serileriyle ilgili bu dersin çok konusu değil, onu söyleyeyim.
+
+81
+00:21:19,467 --> 00:21:30,488
+Ama temel olarak başlama noktasını bu şekilde düşünürseniz eğer, çok da zor bir problem değil zaman serileriyle çalışmak.
+
+82
+00:21:30,488 --> 00:21:58,848
+Bu da ilginç bir konu olabilir ileride çalışmayı düşünüyorsanız. Özellikle mesela borsadaki hisse senetlerinin fiyatlarının tahmin edilmesinde ya da BIST 100 endeksinin çıkış mı yapacak, düşüşte mi olacak bunların tahmin edilmesinde hep zaman serileri üzerinde çalışılıyor.
+
+83
+00:21:58,847 --> 00:22:13,628
+Şimdi bu özellikle yatırım uzmanları robotlar kullanıyorlar işlem yaparken alsat kararlarını vermek için bu zaman serileri üzerinden çalışılıyor.
+
+84
+00:22:14,187 --> 00:22:20,027
+Çok ilginç bir konu, baya güzel bir alan onu belirtmeliyim.
+
+85
+00:22:20,027 --> 00:22:31,647
+Şimdi bu bölümde veri ön işleme bölümünde bir de aykırı değer analizinden bahsedeceğiz.
+
+86
+00:22:31,647 --> 00:22:44,667
+Büyük veri setlerinde zaman zaman çalıştığımız verinin içerisinde verinin kendi karakteristiğine uymayan bazı değerler içeriği olabilir.
+
+87
+00:22:44,667 --> 00:23:13,667
+Bu tür değerlere outlier diyoruz. Bu değerler aslında burada belirtildiği gibi outlier dediğimiz değerler yanlış ölçme sonucunda oluşabileceği gibi ilginç bir şekilde zaman zaman verinin kendi değişim aralığı içerisinde de kendi doğasında üretilmiş
+
+88
+00:23:13,667 --> 00:23:23,107
+üretilmiş böyle bir farklı beklenen değerin dışında değer içerebilir.
+
+89
+00:23:24,847 --> 00:23:41,027
+Buna örnekler vermiş. Yani aslında amacımız şu, bir ölçme hatasından kaynaklanıyorsa, yanlış yazılmış bir değerse bu bir outlier olarak veri içerisinde bulunmamalıdır.
+
+90
+00:23:41,027 --> 00:23:48,527
+ama eğer bu verinin kendi doğasında varsa bu durumda aslında bunu değerlendirmemiz gerekir.
+
+91
+00:23:48,827 --> 00:23:53,087
+Çünkü test aşamasında da bu tür değerlerle karşılaşacağız demektir.
+
+92
+00:23:53,556 --> 00:24:14,556
+Şimdi, aykırı değerler için burada mesela diyor ki kişinin yaşı, database'de eksi bir olarak verilmiş olabilir. Bunun gerçek bir değer olmadığı açıktır diyor. Muhtemelen kaydedilmemiş boş bir alan varsa bunu temsil etmek için bazen kullanılabiliyor.
+
+93
+00:24:14,556 --> 00:24:37,655
+örneğini vermiş. Diğer bir örnek de kişinin birinin çocuk sayısı demiş. Muhtemelen yanlış kaydedilmiş olabilir. Bu bir iki yazarken 25 yazmış olabilir. Tipografik hatalar olabilir. Yani aykırı değerlerin oluşmasının pek çok sebebi var.
+
+94
+00:24:37,655 --> 00:24:52,395
+Şimdi ne yapmalıyız? Aykırı değer analizinde aykırı değerlerin otomatik olarak bulunması yoluna gideceğiz.
+
+95
+00:24:52,395 --> 00:25:06,615
+Ama bazı çalışmalarda ve bulduğumuz outlier dediğimiz aykırı değerleri veri içerisinden elimine edeceğiz, temizleyeceğiz tespit ettikten sonra.
+
+96
+00:25:07,655 --> 00:25:33,475
+Fakat bazı örneklerde burada verilmiş olan bir örnek mesela kredi kartı işlemlerinde görülen sahtecilik gibi işlemlerde aslında aradığımız şey aykırı değerdir ve veri içerisinde çok az miktarda da olsa bu tür değerinin doğasına uymayan hareketleri bulmak başlı başına bir problemdir
+
+97
+00:25:33,475 --> 00:25:41,015
+ve bunu tespit etmek demek işte kart kullanımındaki sahteciliğin tespit edilmesi anlamına gelir.
+
+98
+00:25:42,475 --> 00:25:56,416
+Dolayısıyla veri madenciliğinde üzerinde çok çalışılan konulardan biri verinin doğasına aykırı olan değerleri tespit etmemiz gerekiyor.
+
+99
+00:26:03,859 --> 00:26:30,299
+Ve burada önemli bir konu şu, veri içerisinde aykırı değerleri tespit etmek özellikle çok boyutlu veri üzerinde çalışıyorsak bu aykırı değerlerin tespiti çok önem arz ediyor ve zorluk problem haline geliyor.
+
+100
+00:26:30,299 --> 00:26:37,659
+Bir boyutluya göre baktığımızda çok boyutlu veri üzerinden bu analizi yapmak.
+
+101
+00:26:39,119 --> 00:26:51,220
+Ve aykırı değer analizinde data visualization methods dediğimiz veriyi görselleştirerek bunun içerisinden aykırı değerlerin tespit edilmesi gibi bir alternatif çözümümüz de var.
+
+102
+00:26:51,220 --> 00:27:10,220
+Fakat aykırı değerlerin tespitinde eğer veri bir boyutlu, iki boyutlu ya da üç boyutluysa evet bir derece bunları görselleştirerek aykırı değerleri görmek, tespit etmek mümkün.
+
+103
+00:27:10,220 --> 00:27:12,179
+mümkün ama çok
+
+104
+00:27:12,179 --> 00:27:13,980
+boyutlu bir veri üzerinde
+
+105
+00:27:13,980 --> 00:27:16,220
+işlem yapıyorsak yani öz niteliklerimizin
+
+106
+00:27:16,779 --> 00:27:18,200
+sayısı 3'den fazla
+
+107
+00:27:18,200 --> 00:27:19,980
+ise bu şekilde
+
+108
+00:27:19,980 --> 00:27:22,660
+bir görselleştirme
+
+109
+00:27:22,660 --> 00:27:23,440
+ile
+
+110
+00:27:23,440 --> 00:27:26,660
+tespit işlemi
+
+111
+00:27:26,660 --> 00:27:28,580
+aykırı değerlerinin tespit edilmesi
+
+112
+00:27:28,580 --> 00:27:30,580
+çok da mümkün gözükmüyor.
+
+113
+00:27:32,339 --> 00:27:34,319
+Ama az önce dediğim gibi
+
+114
+00:27:34,319 --> 00:27:36,239
+tabii ki bir
+
+115
+00:27:36,239 --> 00:27:38,620
+boyutlu, iki boyutlu, üç boyutlu veri üzerinde
+
+116
+00:27:38,619 --> 00:27:40,459
+bu mümkün
+
+117
+00:27:40,459 --> 00:27:43,299
+diyebiliriz. Burada bir örnek
+
+118
+00:27:43,299 --> 00:27:45,059
+verilmiş iki boyutlu veri seti
+
+119
+00:27:45,059 --> 00:27:47,319
+için. X, Y düzlemi
+
+120
+00:27:47,319 --> 00:27:49,419
+var. X, Y düzlemi dediğimde
+
+121
+00:27:49,419 --> 00:27:50,599
+iki tane eksen,
+
+122
+00:27:50,999 --> 00:27:53,039
+iki eksen, X ekseni ve
+
+123
+00:27:53,039 --> 00:27:55,119
+Y ekseni birer öz niteliği
+
+124
+00:27:55,119 --> 00:27:57,039
+temsil ediyor. O yüzden iki
+
+125
+00:27:57,039 --> 00:27:59,279
+boyutlu veri dedim. İki boyutlu
+
+126
+00:27:59,279 --> 00:28:00,559
+veride
+
+127
+00:28:00,559 --> 00:28:02,899
+yedi tane sample'ın
+
+128
+00:28:02,899 --> 00:28:04,619
+aldığı değerler
+
+129
+00:28:04,619 --> 00:28:06,919
+düzlemde, koordinat
+
+130
+00:28:06,919 --> 00:28:07,759
+düzleminde
+
+131
+00:28:07,759 --> 00:28:10,319
+görselleştirilmiş.
+
+132
+00:28:10,720 --> 00:28:12,259
+Yani boyut
+
+133
+00:28:12,259 --> 00:28:14,599
+sayısı 2 ise
+
+134
+00:28:14,599 --> 00:28:16,940
+3 ise az önce söylediğim gibi
+
+135
+00:28:16,940 --> 00:28:18,859
+veriyi görselleştirmek ve bu
+
+136
+00:28:18,859 --> 00:28:21,300
+görsel yapı içerisinde
+
+137
+00:28:21,300 --> 00:28:23,139
+aykırı değerleri tespit etmek
+
+138
+00:28:23,139 --> 00:28:24,759
+kolaylaşıyor.
+
+139
+00:28:25,179 --> 00:28:27,300
+Mesela buradaki örneğe dikkat edecek
+
+140
+00:28:27,300 --> 00:28:29,279
+olursak 7 tane sample var.
+
+141
+00:28:30,479 --> 00:28:31,639
+Aykırı değer ne demek?
+
+142
+00:28:32,199 --> 00:28:33,199
+Verinin doğasına
+
+143
+00:28:33,199 --> 00:28:35,020
+aykırı dedik. Yani birbirine
+
+144
+00:28:35,020 --> 00:28:36,999
+benzer örneklerin olduğu
+
+145
+00:28:36,999 --> 00:28:38,960
+ortam ne demek?
+
+146
+00:28:40,880 --> 00:28:43,040
+Normal kabul edilen örnekler demek.
+
+147
+00:28:43,040 --> 00:28:43,400
+Yani
+
+148
+00:28:43,400 --> 00:28:45,340
+pardon
+
+149
+00:28:45,340 --> 00:28:48,499
+mouse hareket ettirince şey gitti.
+
+150
+00:28:49,900 --> 00:28:51,080
+Bunu kullanamıyorum.
+
+151
+00:28:51,380 --> 00:28:53,080
+Touchpad üzerinden hareket edince.
+
+152
+00:28:53,419 --> 00:28:54,559
+Şimdi verinin
+
+153
+00:28:54,559 --> 00:28:57,040
+dağılımına baktığımız zaman
+
+154
+00:28:57,040 --> 00:28:58,919
+birbirine yakın olan örneklerin
+
+155
+00:28:58,919 --> 00:29:00,380
+oluşturduğu şu bölge
+
+156
+00:29:00,380 --> 00:29:02,580
+aslında normal kabul ettiğimiz
+
+157
+00:29:02,580 --> 00:29:04,419
+verinin dağılımının
+
+158
+00:29:04,419 --> 00:29:06,380
+bulunduğu alanı gösteriyor.
+
+159
+00:29:06,839 --> 00:29:07,959
+Fakat bu alandan
+
+160
+00:29:07,959 --> 00:29:09,539
+uzaklaştıkça
+
+161
+00:29:09,539 --> 00:29:12,419
+gördüğümüz örnekler
+
+162
+00:29:12,959 --> 00:29:14,279
+aykırı değer olarak
+
+163
+00:29:14,279 --> 00:29:15,419
+isimlendirilebilir.
+
+164
+00:29:16,259 --> 00:29:18,199
+Burada da 3 numaralı ve
+
+165
+00:29:18,199 --> 00:29:19,919
+5 numaralı örnekler
+
+166
+00:29:19,919 --> 00:29:22,220
+genel olarak buradaki örneklerin
+
+167
+00:29:22,220 --> 00:29:24,059
+dağıldığı bölgeden
+
+168
+00:29:24,059 --> 00:29:25,999
+uzakta kaldıkları için
+
+169
+00:29:25,999 --> 00:29:27,580
+aykırı değer olarak
+
+170
+00:29:27,580 --> 00:29:30,379
+işaretlenmiş. Üzerine bir ok işareti
+
+171
+00:29:30,379 --> 00:29:31,839
+konmuş. Bunların aykırı değer
+
+172
+00:29:31,839 --> 00:29:34,080
+olduğu belirtiliyor.
+
+173
+00:29:34,419 --> 00:29:44,020
+Neden? Çünkü düzlemde ben bu iki noktanın diğer nokta grubunda uzakta olduğunu görüntüleyebiliyorum.
+
+174
+00:29:44,020 --> 00:29:48,279
+Ve verinin görselleştirilmesi burada işime yarıyor.
+
+175
+00:29:48,699 --> 00:29:56,339
+Ama dediğim gibi boyut sayısı 3'ün üstüne çıktığımda bu görselleştirme işleminden faydalanamıyorum.
+
+176
+00:29:57,839 --> 00:30:00,359
+Arada sorunuz olursa el kaldırabilirsiniz.
+
+177
+00:30:00,359 --> 00:30:00,759
+ben
+
+178
+00:30:01,907 --> 00:30:12,067
+kaptırıp gidiyorum bazen. Lütfen soru sormaktan çekinmeyin. Sadece ben konuşmayayım. Olur mu?
+
+179
+00:30:13,248 --> 00:30:21,727
+Hocam, burada aykırı değerler X düzleminde baktığımızda aslında 5 ile 3'ün uzaklığı 6 ile aynı neredeyse. Yani bir birim.
+
+180
+00:30:21,727 --> 00:30:29,467
+Y düzleminde de aslında 3'ün 2 ve 7'ye uzaklığı 1, 5'in ise 1'e uzaklığı 2.
+
+181
+00:30:29,467 --> 00:30:36,448
+Fakat diğer bütün kümelerle, kümenin elemanlarıyla birbirleriyle uzaklığına baktığımızda 3 ve 5'in ki çok uzak çıkıyor.
+
+182
+00:30:36,567 --> 00:30:38,067
+O yüzden dolayı aykırı diyoruz değil mi?
+
+183
+00:30:38,588 --> 00:30:49,167
+Evet doğru. Şöyle düşünün aslında tüm örneklerden faydalanarak bir verinin dağılımına göre bir merkez noktası bulursak.
+
+184
+00:30:49,167 --> 00:30:52,707
+Ne yaparsınız? Merkez noktasını nasıl bulursunuz?
+
+185
+00:30:55,507 --> 00:30:56,647
+Ortalama alsak.
+
+186
+00:30:57,067 --> 00:30:59,347
+Evet, ortalama. Peki ortalamayı nasıl alacaksın?
+
+187
+00:30:59,347 --> 00:31:08,348
+Yani X koordinatlarını bir yerde, Y koordinatlarını toplayıp bir yerde sonra ortalaması çıkacak.
+
+188
+00:31:08,707 --> 00:31:15,588
+Güzel, çok güzel. X'in ortalamasını ve Y'in ortalamasını aldığımda muhtemelen şuralarda bir ortalama değer bulacağım.
+
+189
+00:31:15,768 --> 00:31:17,427
+Hatta biraz daha şöyle. Doğru mu?
+
+190
+00:31:17,427 --> 00:31:23,327
+şuralarda bakın mouse'un durduğu yerde bir merkez noktası bulacağım.
+
+191
+00:31:23,327 --> 00:31:36,667
+Sonra aslında şöyle düşünebilirsiniz tüm örneklerin bu merkez noktasına olan uzaklığına bakıp bu merkeze en uzak olan örnekler aykırı değerdir de diyebilirsiniz.
+
+192
+00:31:37,107 --> 00:31:42,987
+Yani burada yaptığımız inceleme multi-dimensional yani çok boyutlu inceliyoruz.
+
+193
+00:31:42,987 --> 00:32:05,767
+Ama az önce sizin verdiğiniz örnekte olduğu gibi her bir ekseni kendi içinde bakmadık. Bununla ilgili zaten çözümleri verirken ona dikkatinizi çekeceğim. Bu yöntem, bu şekilde yaptığımız çözüm bir multivariate analiz demek. Çok boyutlu analiz yapmış oluyoruz. Tüm öz nitelikleri bir arada değerlendirmiş oluyoruz yani.
+
+194
+00:32:06,987 --> 00:32:07,887
+Peki teşekkür ederim.
+
+195
+00:32:07,887 --> 00:32:27,467
+Şimdi aykırı değer analizinde 3 tane yöntemden bahsedeceğim. Birinci tekniğimiz Boxplot analizi olacak. Boxplot analizinde quartiles dediğimiz çeyrekleri kullanacağız.
+
+196
+00:32:27,467 --> 00:32:41,807
+ve elimizdeki öz niteliğin, tabii bu yöntem hemen şunu belirteyim, Bugs Plot analizi, univariyet bir çözümdür.
+
+197
+00:32:41,807 --> 00:32:49,367
+Her öz niteliği kendi içinde çözümler. Bu bir dezavantaj aslında, bir eksiklik olarak görülebilir.
+
+198
+00:32:49,367 --> 00:33:04,247
+ne yapıyor? Verinin önce minimum maksimum noktalarını buluyoruz. Daha sonra sıraya dizdiğimiz bu veri dizisinin içerisinde şurada gördüğümüz gibi
+
+199
+00:33:04,247 --> 00:33:17,587
+5 number summary 5 tane sayıyla veriyi özetliyoruz. Önce sıralı dizinin en küçük elemanı, en büyük elemanı M dediğimizdeğer medyanı gösteriyor.
+
+200
+00:33:17,587 --> 00:33:35,407
+Q1 ve Q3 ise Q1 %25. eleman diyelim sıralanmış dizide Q1 %25'i gösteriyor. Q3 ise %75. elemanı gösteriyor.
+
+201
+00:33:35,407 --> 00:33:57,288
+Bu şekilde 5 tane sayı ile veriyi özetliyoruz ve şu kuartaylar bizim için önemli yani çeyrek dediğimiz Q1 ve Q3 çeyrek değerleri önemli. Bu ikisinin birbirine olan uzaklığına da inter-kuartay range deniyor. Çeyrekler arasındaki uzaklık adı veriliyor.
+
+202
+00:33:57,683 --> 00:34:09,203
+buradaki değerlerden faydalanarak bir box plot çizeceğiz ve bu box plot üzerinden de aykırı değerleri tanımlayacağız.
+
+203
+00:34:09,203 --> 00:34:27,543
+Box plot çizerken hesapladığımız interquartile range dediğimiz çeyrekler arasındaki mesafe yani Q3 ile Q1 arasındaki mesafenin bazen bir buçuk katı, bazen uygulamanın verinin türüne göre bu değiştirilebilir bir kat.
+
+204
+00:34:27,684 --> 00:34:40,323
+ama biz derste 1,5 kullanacağız. 1,5 katı kadar olan mesafeyi normal kabul edilebilir aralık olarak alacağız.
+
+205
+00:34:41,264 --> 00:34:49,764
+Bunun dışındaki değerleri ise outlier olarak işaretleyeceğiz. Ama bu mesafeyi alırken lütfen dikkat.
+
+206
+00:34:49,763 --> 00:34:55,823
+Burada diyor ki, aykırı değer olduğunu düşündüğümüz değerleri nasıl tanımlamış?
+
+207
+00:34:55,823 --> 00:35:04,724
+At least one half interquartile range above the third quartile or below the first quartile diyor.
+
+208
+00:35:05,103 --> 00:35:16,823
+Yani üçüncü çeyrek dediğimiz Q3'den itibaren bir buçuk IQR kadar yukarı çıkıyor ve bunun üstünde olan değerlere,
+
+209
+00:35:16,823 --> 00:35:37,883
+değerlere outlier diyor. First Quartile dediği Q1'in bir buçuk IQR kadar altına iniyor ve bunun altında, daha da altında varsa bazı değerlerimiz bunlara outlier diyeceğiz diyor. Bu şekilde Boxplot'un tanımını yapmış.
+
+210
+00:35:37,883 --> 00:35:49,663
+veriyi 5 tane sayıyla özetliyoruz. Minimum, maksimum, median, birinci çeyrek, üçüncü çeyrek.
+
+211
+00:35:49,663 --> 00:36:03,943
+Buna göre bir box plot çizimi yapacağız ve çizime göre de aykırı değerleri, işte bu tanımladığımız aralığın dışında kalan aykırı değerleri bulabileceğiz.
+
+212
+00:36:03,943 --> 00:36:12,223
+Bu da bir örnek vermiş. Tabi örnek çok sayıları vesaire görünmediği için çok anlamlı değil belki ama
+
+213
+00:36:12,223 --> 00:36:18,463
+BoxBlood dediğimiz çizim buna benziyor. Ortadaki çizgi medyanı gösterecek.
+
+214
+00:36:19,583 --> 00:36:26,483
+Altta gördüğümüz çizgi Q1'i, üstte gördüğümüz bu çizgi ise Q3'ü gösterecek.
+
+215
+00:36:26,484 --> 00:36:39,523
+Buna göre Q1 dediğimiz değerden 1.5 IQR kadar aşağıya ineceğiz ve tanımladığımız normal kabul edilebilir bölgeyi işaretleyeceğiz.
+
+216
+00:36:40,144 --> 00:36:50,404
+Q3'den yukarıya doğru 1.5 IQR kadar gidip yukarıda normal kabul edilebilir bölgeyi göstereceğiz.
+
+217
+00:36:51,523 --> 00:36:53,523
+Çizim bu şekilde olacak.
+
+218
+00:36:54,264 --> 00:36:56,243
+Bununla ilgili bir örnek yapalım.
+
+219
+00:36:56,484 --> 00:36:59,383
+Buraya kadar sorunuz var mı?
+
+220
+00:37:06,420 --> 00:37:33,799
+sorumuz yok. Peki. O zaman soruyu okuyalım. Bize ne verilmiş? Bize diyor ki, bir veri setinde yaş öz niteliğini sadece ele alıyor ve veri setindeki yaş değerlerini sıralı bir şekilde küçükten büyüye doğru yazıyor.
+
+221
+00:37:33,799 --> 00:37:53,600
+Buna göre işte 13 ile başlıyormuş. 13, 15, 16, 16, 19, 20, 20 tekrar eden değerler var. Yani 22 olan 2 tane sample varmış. 25 yaşında olan 4 tane kişi varmış. Bu şekilde elimizde bir dataset var.
+
+222
+00:37:53,600 --> 00:38:10,320
+ve bize sorulan şey şu, birinci adımda veri setinin ortalaması nedir, medyanı nedir, Q1 ve Q3 değerleri nedir ve bu bulduğunuz değerlere göre Boxplot'u çizin demiş.
+
+223
+00:38:10,320 --> 00:38:12,320
+Evet sorular böyle.
+
+224
+00:38:12,320 --> 00:38:15,620
+buna göre
+
+225
+00:38:19,731 --> 00:38:22,091
+Siz söyleyebilirsiniz.
+
+226
+00:38:23,091 --> 00:38:24,491
+İki, üç, üç.
+
+227
+00:38:24,491 --> 00:38:26,111
+Hocam ortalamayı bilmiyorum da.
+
+228
+00:38:28,251 --> 00:38:31,152
+Kaç tane sample var?
+
+229
+00:38:31,231 --> 00:38:32,171
+Onu soracağım önce.
+
+230
+00:38:32,751 --> 00:38:33,391
+Yirmi yedi.
+
+231
+00:38:34,471 --> 00:38:36,951
+Yirmi yedi adet örnek var.
+
+232
+00:38:37,531 --> 00:38:37,771
+Tamam.
+
+233
+00:38:38,191 --> 00:38:38,412
+Evet.
+
+234
+00:38:38,531 --> 00:38:41,171
+Onda dümdü değer yirmi beş yani medyama.
+
+235
+00:38:41,771 --> 00:38:42,271
+Evet.
+
+236
+00:38:45,031 --> 00:38:47,591
+İlk yirmi beşlik çeyrek.
+
+237
+00:38:47,851 --> 00:38:49,251
+Yirmi olarak hesapladım.
+
+238
+00:38:49,731 --> 00:38:50,391
+Öbürü de 35.
+
+239
+00:38:51,772 --> 00:38:53,252
+Güzel. Doğru.
+
+240
+00:38:54,912 --> 00:38:57,412
+Kim konuştu? Ben adınızı göremedim
+
+241
+00:38:57,412 --> 00:38:59,112
+ekranımda. [öğrenci].
+
+242
+00:38:59,691 --> 00:39:01,612
+[öğrenci]. Teşekkür ediyorum.
+
+243
+00:39:02,991 --> 00:39:03,551
+Rica ederim.
+
+244
+00:39:04,471 --> 00:39:05,432
+Burada
+
+245
+00:39:05,432 --> 00:39:06,592
+yaptığımız işlem
+
+246
+00:39:06,592 --> 00:39:09,431
+önce mi ortalama değeri
+
+247
+00:39:09,431 --> 00:39:11,471
+hesaplayacağız dedik. 27 tane
+
+248
+00:39:11,471 --> 00:39:13,171
+değer varsa toplayacağız.
+
+249
+00:39:13,851 --> 00:39:15,772
+Eleman sayısına bölerek
+
+250
+00:39:15,772 --> 00:39:17,592
+ortalamayı hesaplayabiliriz.
+
+251
+00:39:17,592 --> 00:39:19,851
+29.9 çıkıyormuş.
+
+252
+00:39:20,051 --> 00:39:21,272
+Ortalamayı hesapladım.
+
+253
+00:39:21,391 --> 00:39:22,432
+29.96
+
+254
+00:39:22,432 --> 00:39:25,272
+29.96 güzel.
+
+255
+00:39:25,992 --> 00:39:27,392
+Virgilden sonra iki basamak
+
+256
+00:39:27,392 --> 00:39:28,772
+söylemeniz daha iyi oldu.
+
+257
+00:39:31,172 --> 00:39:32,532
+Bunu da ben yazayım da.
+
+258
+00:39:35,352 --> 00:39:35,772
+Güzel.
+
+259
+00:39:37,252 --> 00:39:39,452
+İlk olarak ortalamayı hesapladık.
+
+260
+00:39:40,011 --> 00:39:41,731
+İkinci adımda
+
+261
+00:39:41,731 --> 00:39:43,592
+ortanca değeri
+
+262
+00:39:43,592 --> 00:39:44,592
+soruyordu bize.
+
+263
+00:39:44,592 --> 00:39:47,752
+ortamca değerde
+
+264
+00:39:47,752 --> 00:39:50,032
+27 tane eleman olduğu için
+
+265
+00:39:50,032 --> 00:39:51,412
+tek sayıda olduğu için
+
+266
+00:39:51,412 --> 00:39:54,092
+ortadaki değerin
+
+267
+00:39:54,092 --> 00:39:56,051
+14 olduğunu söylemek kolay.
+
+268
+00:39:59,151 --> 00:39:59,412
+Ve
+
+269
+00:39:59,412 --> 00:40:02,291
+medyanın 25 olduğunu
+
+270
+00:40:02,291 --> 00:40:04,452
+hepiniz hesaplayabiliyorsunuz herhalde.
+
+271
+00:40:04,452 --> 00:40:05,752
+Ve sayıyoruz şuradan
+
+272
+00:40:05,752 --> 00:40:08,511
+2, 4, 6, 8,
+
+273
+00:40:08,912 --> 00:40:10,471
+10, 12, 13,
+
+274
+00:40:11,532 --> 00:40:12,111
+14.
+
+275
+00:40:12,651 --> 00:40:14,511
+14. eleman 25.
+
+276
+00:40:14,592 --> 00:40:21,011
+25'e göre diziyi iki parçaya ayırıyorsunuz.
+
+277
+00:40:21,011 --> 00:40:23,871
+Lütfen dikkat Q1 ve Q3 için söylüyorum.
+
+278
+00:40:24,452 --> 00:40:27,911
+25 ortanca eleman.
+
+279
+00:40:30,411 --> 00:40:33,452
+Dolayısıyla bunu işaretledim medyan olarak.
+
+280
+00:40:35,351 --> 00:40:38,991
+Ve medyana göre diziyi iki parçaya bölüyorum.
+
+281
+00:40:39,911 --> 00:40:43,991
+İlk parçada 13, ikinci parçada 13 tane sample var yine.
+
+282
+00:40:43,991 --> 00:40:46,151
+tek sayıda. Dolayısıyla
+
+283
+00:40:46,151 --> 00:40:47,831
+bu tek sayıda iki
+
+284
+00:40:47,831 --> 00:40:49,931
+dizi içerisinden
+
+285
+00:40:49,931 --> 00:40:52,111
+ortanca elemanı
+
+286
+00:40:52,111 --> 00:40:53,911
+söylemek kolay. Kaçıncı eleman
+
+287
+00:40:53,911 --> 00:40:54,271
+olacak?
+
+288
+00:40:56,351 --> 00:40:56,771
+7.
+
+289
+00:40:56,771 --> 00:40:58,471
+7. Güzel.
+
+290
+00:40:58,851 --> 00:41:00,751
+7. eleman Q1 olacak.
+
+291
+00:41:01,452 --> 00:41:02,931
+2, 4, 6, 7.
+
+292
+00:41:04,051 --> 00:41:05,131
+O yüzden
+
+293
+00:41:05,131 --> 00:41:06,511
+Q1'i 20 olarak
+
+294
+00:41:06,511 --> 00:41:09,031
+işaretledik. Diğer parçada
+
+295
+00:41:09,031 --> 00:41:10,871
+da yine 2, 4,
+
+296
+00:41:11,111 --> 00:41:12,371
+6, 7. eleman
+
+297
+00:41:12,371 --> 00:41:13,952
+35 olduğu için
+
+298
+00:41:13,952 --> 00:41:16,431
+bunları bulmuş olduk.
+
+299
+00:41:17,172 --> 00:41:18,911
+Şimdi amacımız
+
+300
+00:41:18,911 --> 00:41:20,612
+bir yere
+
+301
+00:41:20,612 --> 00:41:22,631
+not alın. Minimum ve maksimumu da
+
+302
+00:41:22,631 --> 00:41:23,931
+ya da ekranın bir
+
+303
+00:41:23,931 --> 00:41:26,711
+kopyasını, fotoğrafını çekin.
+
+304
+00:41:28,892 --> 00:41:30,651
+Şimdi Boxplot
+
+305
+00:41:30,651 --> 00:41:32,011
+çizimini yapalım beraber.
+
+306
+00:41:42,228 --> 00:41:54,887
+Evet, Boxplot çiziminde, acaba şöyle dikine tutabiliyor muyum tabletini, bir de onu kontrol edin ama yine sayfa yatay olduğu için çok şey yardımıyla şöyle kullanacağız.
+
+307
+00:41:55,887 --> 00:42:01,947
+Amacımız şu, bir Boxplot çizeceğiz dedik.
+
+308
+00:42:01,947 --> 00:42:30,507
+Bu box plotun medyan dediğimiz değeri M25'ti. Medyanı 25 olarak bulduk. Q1 değerimiz yani şurası 20 ve burası Q3 dediğimiz değer
+
+309
+00:42:31,947 --> 00:42:32,947
+Ok, beş
+
+310
+00:42:39,092 --> 00:42:49,711
+Tabii çok ölçekli bir çizim yapamadım. Olsun yerimiz dar olduğu için. Şurada ölçmek istediğimiz mesafe bu. Yani
+
+311
+00:42:49,711 --> 00:43:07,111
+Q3-Q1 için inter-quartile range dedik IQR. IQR değeri. Q3'den Q1'e kadar olan mesafe nedir?
+
+312
+00:43:11,539 --> 00:43:15,539
+15. Teşekkürler.
+
+313
+00:43:16,099 --> 00:43:27,399
+Interquartile range'i 15 olarak bulduk. Bizim amacımız şu, Q1'den başlayarak aşağıya doğru iniyoruz. Ne kadar iniyoruz?
+
+314
+00:43:27,399 --> 00:43:43,039
+1.5 interquartile range kadar iniyoruz. Eğer interquartile range'imiz 15 ise 1.5 IQR için ne oldu? 22.5 oldu.
+
+315
+00:43:43,039 --> 00:43:55,599
+Şimdi burası Q1 değeri eğer 20 ise ben 22.5 aşağıya doğru indiğimde eksi 2.5 çıkar. Doğru mu? Değer.
+
+316
+00:43:55,599 --> 00:44:09,399
+çizimde şuna bakmam gerekiyor. Elimdeki veri dizisindeki en küçük değer bu çizdiğim mesafenin içinde mi dışında mı?
+
+317
+00:44:10,599 --> 00:44:23,499
+En küçük değer. En küçük değer kaçtı? 13'tü. Ve bu alanın içinde. O yüzden ben eksi 2.5'e kadar gidebilirdim. Bunun tamamı normal kabul edilecekti.
+
+318
+00:44:23,499 --> 00:44:31,900
+ama benim elimdeki değer zaten minimum sayı olan 13 ile burada kapanıyor.
+
+319
+00:44:31,900 --> 00:44:36,959
+Dolayısıyla box plot çiziminde lütfen şuraya dikkat, burayı kapalı çizdim.
+
+320
+00:44:37,440 --> 00:44:40,279
+Bunun amacı, bunun altında başka değer yok demek.
+
+321
+00:44:40,819 --> 00:44:47,760
+Ve bu veri içerisinde alt bölgede herhangi bir aykırı değer olmadığını gösteriyor.
+
+322
+00:44:48,239 --> 00:44:50,499
+Şimdi yukarı tarafta aynı işlemi yapacağım.
+
+323
+00:44:50,499 --> 00:45:09,459
+Q3 bizim 3. çeyreğimiz 35 ve 1.5 IQR kadar ekleyip yukarı çıkacağım. Bunun üstünde değer var mı diye kontrol edeceğim. Sınır değeri ne oluyor o zaman?
+
+324
+00:45:09,459 --> 00:45:13,720
+35 artı
+
+325
+00:45:13,720 --> 00:45:15,019
+57.5
+
+326
+00:45:15,019 --> 00:45:17,779
+22.5'dan 57.5
+
+327
+00:45:17,779 --> 00:45:21,900
+Peki 57.5 şurası
+
+328
+00:45:21,900 --> 00:45:24,639
+57.5
+
+329
+00:45:24,639 --> 00:45:30,859
+Benim elimdeki veri setinde bu değerin üstünde daha başka değer var mı?
+
+330
+00:45:32,079 --> 00:45:33,299
+Bir tane var
+
+331
+00:45:33,299 --> 00:45:53,519
+bir tane var. Demek ki bu bölgede veri setinin şeyini çizerken şöyle çiziyorum. Bunun dışında değer var diyor. Ve bunun dışında var olan değeri şuraya çiziyorum. Bu da benim elimdeki dizi içerisindeki maksimum değerim. Yani 70.
+
+332
+00:45:53,519 --> 00:46:19,999
+70. Dolayısıyla şu bölgede bir tane outlier detected diyorum. Bir tane outlier gördüm. 70 için bu çizdiğim şeyin boxplotun dışında. Tek bir tane outlier nokta bulundu. Bu da 70'tir diye belirtiyorum.
+
+333
+00:46:19,999 --> 00:46:44,899
+çizimde şu bölgede uçlarını kapatmadım. Buna dikkat edin. Alt tarafta kapatmıştım şu bölgede. Alt tarafta kapatmıştım bunu ama burada kapatmadım. Bunun sebebi aşağıda minimum sayının tanımlı olan kabul edilebilir aralığın içinde olduğunu gösteriyor.
+
+334
+00:46:44,900 --> 00:47:02,480
+O yüzden burayı kapattık. Dışarıda herhangi bir değer olmadığını göstermek için. Yani her iki uç içinde bir şey görmüş olduk bu uygulamada. Boxplot analizi için. Sorunuz var mıdır?
+
+335
+00:47:04,679 --> 00:47:09,519
+Hocam şimdi mesela bu outlier'ı attıktan sonra tekrar mı en baştan bütün işlemleri yapıyoruz?
+
+336
+00:47:10,036 --> 00:47:12,036
+bütün işlemler derken
+
+337
+00:47:12,036 --> 00:47:18,036
+yani en baştan mean bulunma, median bulunma, squartırlar vesaire hani eledik diyelim outline'ları
+
+338
+00:47:18,036 --> 00:47:21,036
+ha yok hayır tekrar yapmanıza gerek yok
+
+339
+00:47:21,036 --> 00:47:23,036
+tekrar yapmanıza gerek yok
+
+340
+00:47:23,036 --> 00:47:27,036
+ama burada mesela şunu konuşabiliriz
+
+341
+00:47:27,036 --> 00:47:30,036
+az önce dedim ki size 1.5 IQR
+
+342
+00:47:30,036 --> 00:47:34,036
+diye kabul ettik biz bu derste ama
+
+343
+00:47:34,036 --> 00:47:38,036
+mesela bunu varsayalım ki öyle bir çalışma yaptınız
+
+344
+00:47:38,036 --> 00:47:48,396
+yaptınız, 1.5 IQR aldınız ve verinin neredeyse %25'i çok büyük bir bölümü aykırı değer olarak çıktı ve veriden atılması ihtimali var.
+
+345
+00:47:49,155 --> 00:47:57,796
+Burada şunu yorumlayabilirsiniz, ya verinin %25'i ne demek? Çok büyük bir miktar. Ben bu kadar veriyi atarsam çok büyük bir veri kaybına uğrarım.
+
+346
+00:47:57,795 --> 00:48:15,495
+O zaman acaba bir buçuk IQR değil de bunu iki IQR alsam ve Q1'e iki IQR ekleyip daha aşağıdaki örnekleri de kabul edilebilir aralığın içinde kabul etsem diyebilirim.
+
+347
+00:48:15,495 --> 00:48:25,616
+Anlatabiliyor muyum? Yani uygulamada bazı parametrelerle ihtiyaca göre oynayabiliyorsunuz. Bunları değiştirebiliyorsunuz.
+
+348
+00:48:25,616 --> 00:48:29,976
+değiştirdiğinizde sonucun ne olduğuna bakıp ona göre karar vermeniz gerekiyor.
+
+349
+00:48:32,355 --> 00:48:40,296
+Veya tam tersi olabilir. Yaptık hiç şey, outlier çıkmadı fakat veride bayağı da böyle düzensizlikler var.
+
+350
+00:48:40,396 --> 00:48:45,355
+Görmek istiyoruz ne olduğunu. Bir buçuk yerine bir alabilirim. Bu da bir alternatif olabilir.
+
+351
+00:48:45,355 --> 00:49:13,116
+Bu şekilde bu parametre IQR dediğimiz interquartile range yani mesafesi şuradaki aralığın kaç katını alacağımı değiştirebiliyorum. Şuradaki kat sayı 1.5 IQR yerine 1 olabiliyor, işte 1.5 olabiliyor veya 2 olabiliyor. Yani bunları uygulamada farklı farklı şekillerde kullanabiliyoruz.
+
+352
+00:49:15,355 --> 00:49:16,315
+Hocam bir şey çoğunca mı?
+
+353
+00:49:17,616 --> 00:49:18,256
+Buyurun.
+
+354
+00:49:18,836 --> 00:49:19,396
+Hocam.
+
+355
+00:49:19,996 --> 00:49:24,495
+Kendinizi tanıtır mısınız önce? Ben çünkü şeyden ekran açıkken…
+
+356
+00:49:24,495 --> 00:49:25,015
+[öğrenci] Hocam.
+
+357
+00:49:25,636 --> 00:49:26,815
+[öğrenci], evet buyurun.
+
+358
+00:49:29,175 --> 00:49:39,095
+Hocam bunun peki optimizasyonu için bir şeyler yapmıyorlar mı? Yani veri setine göre bir aykırı değeri bulmak için. Hep bizim aykırı değeri, aykırın kat sayısı için.
+
+359
+00:49:39,095 --> 00:49:54,675
+İşte bunun için şey böyle az önce dediğim gibi denememiz gerekiyor. Evet evet aynen öyle. Çünkü yaptığınız çalışmada mesela bir buçuk seçtiğimde kaç tane outlier detekt ettim? Ona bakıyorum. Miktarına bakmanız gerekiyor.
+
+360
+00:49:54,675 --> 00:50:08,116
+biz burada eşik değeri tanımlarken hep bundan gidiyoruz. Ben aykırı değer tespitinde yaptığım çalışmalarda şunu diyorum yani outlier'ın miktarı bence %5 kadar olabilir en fazla.
+
+361
+00:50:08,776 --> 00:50:16,315
+%5'den fazla veriyi atmak çok büyük bir kayıptır. Onlar aykırı değer olarak kabul edilmemelidir.
+
+362
+00:50:16,315 --> 00:50:24,455
+Dolayısıyla yani nerede duracağız, nereye kadar ki uç noktaları atacağız orada karar verme şeyi bizim.
+
+363
+00:50:24,675 --> 00:50:34,815
+[öğrenci] bizim. Elinizdeki verinin miktarıyla da ilişkidir bu. Yani az sayıda örneğiniz varsa çok fazla veri kaybetmek istemezsiniz. Bu da bir parametre.
+
+364
+00:50:37,235 --> 00:50:49,655
+Hocam bir de tekrar ben bu veriler ben adlarıyla falan çalışmıştım. Bir de lokal outlier faktör diye bir şey var. Bunu kümelemeyle yapıyorlar.
+
+365
+00:50:49,655 --> 00:50:50,215
+Evet.
+
+366
+00:50:50,835 --> 00:51:13,955
+kuturlara da bakarak. O çok daha az bir yüzdeyle şey çıkartıyor buna nazaran. Bu hep yüksek bir yüzdeyle outlier çıkartıyor. Yok, bunda da dediğim gibi oradaki kat sayı hep orada etkili olan şey. Yani siz kat sayıyı değiştirerek şey yapabilirsiniz, bunu değiştirebilirsiniz. Miktarını değiştirebilirsiniz.
+
+367
+00:51:15,495 --> 00:51:17,695
+Anladım. İdeal yüzde beş civarlık.
+
+368
+00:51:17,695 --> 00:51:42,175
+Ben öyle olduğunu düşünüyorum. Yani bir verinin içerisinde normal dağılım gibi düşünün. Yani normal dağılımda biz kabul ettiğimiz aralığa göre %5 kadar olabilir. Yani onun hatta %5'den bile azdır. Yani maksimum benim outlier diyebileceğim %5'dir. Daha fazlası veriyi kaybetmek anlamına gelir.
+
+369
+00:51:42,176 --> 00:52:06,575
+Şimdi Boxplot çizimini de anladık sanıyorum. Yani Q1 ve Q3'ü bulduktan sonra bir Boxplot çizimi yapmanızı istiyorum. Ve çizimde az önce söylediğim konuya dikkatinizi çekmek istiyorum. Ne zaman Boxplot'un uçları kapalı oluyor, ne zaman açık bırakılıyor bunu da vurgulamış oldum. Çiziminizde lütfen buna dikkat.
+
+370
+00:52:06,575 --> 00:52:24,935
+Evet, şimdi ikinci bir çözüm örneği, outlier analizinde distance based solution diye bir yöntem var. Burada hem problemi veriyor örneğin içinde hem de çözümden bahsediyor. O yüzden oradan gideceğim.
+
+371
+00:52:24,935 --> 00:52:54,916
+ve
+
+372
+00:52:53,427 --> 00:52:54,427
+Hocam.
+
+373
+00:52:54,427 --> 00:52:55,427
+Buyurun.
+
+374
+00:52:55,427 --> 00:53:03,427
+Böyle birazcık daha ara verip öğle yemeği, hani bilmiyorum arkadaşlar ama çok daha iyi olabilir.
+
+375
+00:53:03,427 --> 00:53:07,427
+Ha daha uzun ara istiyorsunuz. Hadi 15 dakika olsun.
+
+376
+00:53:07,427 --> 00:53:09,427
+15 dakika. Tamam.
+
+377
+00:53:09,427 --> 00:53:10,427
+Daha fazla olmaz.
+
+378
+00:53:10,427 --> 00:53:12,427
+Tamam.
+
+379
+01:09:26,676 --> 01:09:28,676
+Evet, derse başlayabiliriz.
+
+380
+01:09:43,891 --> 01:09:45,091
+kimler burada?
+
+381
+01:09:45,991 --> 01:09:47,491
+ben buradayım hocam, [öğrenci]
+
+382
+01:09:47,991 --> 01:09:49,691
+merhaba, evet
+
+383
+01:09:49,691 --> 01:09:51,211
+elleri görelim
+
+384
+01:09:54,707 --> 01:09:56,267
+raise your hand
+
+385
+01:10:00,000 --> 01:10:20,639
+bazı arkadaşlar öğle yemeği için zaman istedi. O yüzden 15 dakika kadar yaptık arayı. Şimdi derse devam edeceğim. Büyük çoğunluk burada. Bir iki kişi henüz gelmemiş görünüyor. Evet. Peki. Teşekkür ederim.
+
+386
+01:10:43,060 --> 01:10:55,980
+İkinci çözüm yöntemi, aykırı değer tespitinde mesafeye bağlı çözüm. Aslında mesafeye bağlı çözümü az önce farklı şekilde de yorumladık.
+
+387
+01:10:56,099 --> 01:11:02,900
+Mesela bize verilmiş olan verinin merkez noktasını bulup merkeze olan uzaklıklardan faydalanabiliriz dedik.
+
+388
+01:11:02,900 --> 01:11:09,660
+burada daha farklı bir uzaklıktan daha farklı bir şekilde yararlanıyor.
+
+389
+01:11:09,660 --> 01:11:14,879
+Yani yine bir mesafe ölçümü var ama farklı bir çözüm önermiş.
+
+390
+01:11:16,240 --> 01:11:19,219
+Bu defa elimizde iki boyutlu bir veriseti var.
+
+391
+01:11:19,420 --> 01:11:24,640
+Çünkü yöntem burada da belirtildiği gibi Multi-Variate Solution diye geçiyor.
+
+392
+01:11:25,539 --> 01:11:32,820
+Elimizde iki, dört, altı, yedi tane sample var ve düzlem de iki boyutlu verilmiş veri.
+
+393
+01:11:32,819 --> 01:11:42,519
+görüyorsunuz. Mesela X ve Y eksenleri olabilir. Bu şekilde düzlemde tanımlı 7 tane nokta var. Sample'ımız var.
+
+394
+01:11:45,519 --> 01:11:59,240
+Diyor ki problemin A şıkkında outlier'ları mesafe ölçüsüne dayalı bir teknik ile tespit edin diyor, bulun diyor.
+
+395
+01:11:59,240 --> 01:12:21,899
+Buradaki mesafe ölçüsüne dayalı çözümü ise aşağıda tarif etmiş iki tane parametresi var, distance. Her sample'ın birbirine olan uzaklıkları önce ölçülüyor. Daha sonra bu mesafeler üzerinden bir threshold distance seçiliyor. Burada 3 olarak belirlenmiş bu.
+
+396
+01:12:21,899 --> 01:12:39,299
+ve üçten büyük ise eğer, iki örnek arasındaki uzaklık üçten büyükse eğer, bu örneklere non-neighbor samples diyor, yani komşusu değil diyor.
+
+397
+01:12:39,379 --> 01:12:45,739
+Yakınında olanlara komşusu, uzağında olanlara ise komşusu değil diye etiket veriyor.
+
+398
+01:12:45,740 --> 01:12:57,839
+Burada komşusu saymadığı örneklerin sayısı içinde threshold fraction p for non-neighbor samples is 4 demiş.
+
+399
+01:12:57,839 --> 01:13:14,060
+bir örneğin uzak komşularının ya da işte komşusu olmayan örneklerin sayısı dörtten fazlaysa buna outlier diyecek.
+
+400
+01:13:14,060 --> 01:13:20,500
+Yani P dediğimiz ölçü bunu gösteriyor. Distance 3'den büyük olan uzakta kaç tane komşusu var?
+
+401
+01:13:20,500 --> 01:13:33,679
+kavram bu şekilde tanımlanmış ve ipucunda da diyor ki bir XE örneği, bu dataset'te verilmiş olan XE örneği için
+
+402
+01:13:33,679 --> 01:13:48,780
+Sample Space'deki komşusu olmayan örneklerin sayısı, yani D mesafesi 3'den büyük ve 3'e eşit olanların sayısı
+
+403
+01:13:50,500 --> 01:13:59,140
+tanımladığı threshold'dan büyükse eğer bu durumda outlier olarak isimlendirilecek.
+
+404
+01:13:59,140 --> 01:14:02,440
+Yani koşulu böyle tanımlamış.
+
+405
+01:14:03,580 --> 01:14:15,459
+Şimdi bu örnekte, bu örnekte, önce 7 tane sample vardı.
+
+406
+01:14:15,459 --> 01:14:31,639
+Bu sampların birbirlerine olan uzaklıklarını bulup yazmamız gerekiyor. Uzaklıkları yazarken de öklüt mesafesinden faydalanacağız. Düzlemde iki nokta arasındaki uzaklığı tarif ederken
+
+407
+01:14:38,292 --> 01:14:52,271
+yine şeye geçelim. Bu arada ekranda gördüğünüz değerleri bir not alın isterseniz arkadaşlar. Hemen tekrar açayım onu. Şöyle. Değerler böyleydi.
+
+408
+01:14:52,271 --> 01:15:08,611
+3'e 2'ni, 1'e 1, 4'e 3, 1'e 6, 5'e 3, 4'e 2. Birinci sample için yanlış yazmışım. Şu 2'ye 4 olacak arkadaşlar. Şurası 2'ye 4 olacak.
+
+409
+01:15:41,076 --> 01:15:43,076
+not aldıysanız eğer
+
+410
+01:15:50,931 --> 01:15:52,931
+Şunu 2-4 olarak düzelttim.
+
+411
+01:16:07,252 --> 01:16:13,331
+Bu örneği şöyle yapalım.
+
+412
+01:16:17,712 --> 01:16:28,071
+Düzlendi önce sample'ları yerlerine işaretleyelim. İki boyutlu bir data set verilmiş.
+
+413
+01:16:28,071 --> 01:16:39,511
+boyutlardan birinde X doğrultusunda birinci özüncelik için en büyük 5 değer almış, 5'e kadar değer almış.
+
+414
+01:16:46,899 --> 01:16:52,199
+G ise 6'ya kadar değer almış en büyük 6 var gördüğüm kadarıyla.
+
+415
+01:16:59,667 --> 01:17:13,667
+Önce düzlemde verildiği için bu örnekleri yerleşimlerine çizeceğim. 2'ye 4 olarak verilmiş bir tanesi birinci sampulun yeri.
+
+416
+01:17:18,195 --> 01:17:20,555
+ikincisi 3'e 2'in
+
+417
+01:17:24,180 --> 01:17:28,259
+kizdiki. üçüncü sample mız birebir.
+
+418
+01:17:30,600 --> 01:17:31,859
+s3
+
+419
+01:17:32,879 --> 01:17:35,399
+dördüncü örnek dördü 3
+
+420
+01:17:38,219 --> 01:17:41,360
+şurada 1 s4 var.
+
+421
+01:17:42,100 --> 01:17:44,759
+beşinci örneğimiz 1 e 6.
+
+422
+01:17:44,759 --> 01:17:46,059
+şurada
+
+423
+01:17:46,799 --> 01:17:50,279
+s5 var.
+
+424
+01:17:50,279 --> 01:17:54,099
+6. örnek 5'e 3
+
+425
+01:17:59,475 --> 01:18:01,735
+ve yedinci sampumuz dörde iki
+
+426
+01:18:01,735 --> 01:18:06,235
+dörde iki şurada
+
+427
+01:18:10,963 --> 01:18:33,963
+düzlemde yani iki boyutlu olduğu için çizdik, örneklerin yerleşimlerini gördük. Amacımız sample'lar arasındaki uzaklığı yazmak. Yani ben de S1 sample ile S2 sample arasındaki uzaklığı yazmalıyım. Birin ikiye olan uzaklığı dediğim zaman
+
+428
+01:18:35,667 --> 01:19:00,348
+Şuradaki mesafeden bahsediyoruz. Bu mesafeyi ben öklit mesafesi kullanarak hesaplayabilirim. Öklit mesafesi dediğim, şuradaki üçgenin iki dik kenarının kareleri toplamının kare kökü bana bu mesafeyi verecektir. Yani x'leri arasındaki mesafe ve y'leri arasındaki mesafe.
+
+429
+01:19:00,348 --> 01:19:18,547
+Buna delta x diyelim x'leri arasındaki uzaklığın karesi artı delta y dediğim y'leri arasındaki uzaklığın karesi toplamının kare kökünü aldığımda öplik mesafesi bu iki sample arasındaki uzaklığı hesaplamış olurum.
+
+430
+01:19:18,547 --> 01:19:30,267
+Buna göre ben bu örnekte bana verilmiş olan tüm örneklerin birbirlerine olan uzaklıklarını yazabilirim.
+
+431
+01:19:30,348 --> 01:19:48,407
+Şimdi hepinizin elinde şeyler var, değerler var. Buna göre bir distance matris oluşturacağız. Hesaplamaya başlayın. Ne yapayım? Sırayla mı sorayım? Size soracağım.
+
+432
+01:19:48,407 --> 01:19:53,867
+Hocam burada öplit değil de başka bir distance örneği şey yapsak daha hızlı ilerleyebiliriz. Menhatın mesela.
+
+433
+01:19:53,867 --> 01:20:00,967
+yapabiliriz ama Öplit'den gidelim. Öplit en çok kullandığımız olduğu için ilk öğrendiğiniz o olsun istiyorum.
+
+434
+01:20:11,380 --> 01:20:16,499
+şimdi bir, pardon,
+
+435
+01:20:20,564 --> 01:20:28,843
+bir matris yazacağım. D matrisi. Pardon, yine aynı şeyi yaptık. Bir şeylerden gideceğiz.
+
+436
+01:21:04,212 --> 01:21:34,191
+ve
+
+437
+01:21:34,100 --> 01:21:36,100
+kalemim kötü geldi.
+
+438
+01:21:42,996 --> 01:22:07,096
+bir D matrisi tanımlayacağım. Bu D matrisi örneklerin birbirleri arasındaki uzaklığı gösteriyor. Yani bir distance matrisi oluşturacağım. Bu distance matriks veri seti içerisindeki örneklerin birbirlerine arasındaki uzaklığı gösterecek.
+
+439
+01:22:07,096 --> 01:22:27,375
+Distance between samples. Elimdeki örnekte 7 tane sample olduğu için bu madresin boyutu 7 çarpı 7'lik bir madres olacak.
+
+440
+01:22:33,427 --> 01:22:36,067
+7x7'lik matrisin
+
+441
+01:22:39,188 --> 01:22:47,188
+ana köşe gene her bir sampel'ın kendi kendisine olan uzaklığını gösterecek ve bu sıfırdır.
+
+442
+01:22:47,188 --> 01:22:55,188
+İkinin ikiye olan uzaklığı sıfır, evet ve simetrik olacak, teşekkürler.
+
+443
+01:22:55,188 --> 01:23:02,188
+Dördün dörde, beşin beşe olan uzaklığı, altının altıya ve yedinin yediye olan uzaklığı sıfır olacak.
+
+444
+01:23:02,188 --> 01:23:12,548
+simetrik madris olduğu için benim sadece şu alanları hesaplayıp buraya yazma yeterlidir.
+
+445
+01:23:14,368 --> 01:23:21,847
+Bu şekilde bu madrisi doldurmam gerekiyor. Bu distance madris örneklerin birbirlerine olan mesafelerini gösterecek.
+
+446
+01:23:21,847 --> 01:23:35,507
+Şimdi az önce birin ikiye olan mesafesi demiştik. Birin ikiye olan mesafesi için örneklerin koordinatlarını yani özün tekliflerin değerlerini de görüyorsunuz.
+
+447
+01:23:35,507 --> 01:23:50,027
+Buna göre x'ler arasındaki uzaklık ne kadar? Bir birim. Y'leri arasındaki uzaklık? İki birim. Kareleri toplamı? Beş.
+
+448
+01:23:50,027 --> 01:23:59,027
+5 ve kare kökü kök 5 olacak. Bu şekilde ben bu madrisi dolduracağım. Tamam mı?
+
+449
+01:24:00,027 --> 01:24:05,047
+Birin ikiye olan uzaklığı kök 5, birin üçe olan uzaklığı nedir?
+
+450
+01:24:05,607 --> 01:24:07,548
+Öpek 10.
+
+451
+01:24:08,147 --> 01:24:10,067
+Birin dördü olan uzaklığı?
+
+452
+01:24:11,947 --> 01:24:14,247
+Kök 5.
+
+453
+01:24:14,847 --> 01:24:16,807
+Birin beşe olan uzaklığı?
+
+454
+01:24:18,087 --> 01:24:18,967
+Yine kök 5.
+
+455
+01:24:18,967 --> 01:24:25,927
+1'in 6'ya olan uzaklığı, KÖK 10, güzel.
+
+456
+01:24:26,667 --> 01:24:31,927
+Ve 1'in 7'ye olan uzaklığı, KÖK 8.
+
+457
+01:24:33,868 --> 01:24:40,787
+Evet, bu şekilde madresi bütün örneklerin birbirlerine olan uzaklığını hesaplayarak dolduracağım.
+
+458
+01:24:40,787 --> 01:24:44,787
+İkinci örneğin 3'e olan uzaklığını hesaplayarak başlayabilirim.
+
+459
+01:24:45,387 --> 01:24:47,507
+Çünkü 2'nin 1'e olan uzaklığını biliyorum.
+
+460
+01:24:47,507 --> 01:25:15,067
+1'in 2'ye olan uzaklığıyla aynı. O yüzden bunu tekrar hesaplamama gerek yok. 2'nin 3'ü olan uzaklığı. Kök 5. Evet, kök 5. 2'nin 4'e olan uzaklığı. Kök 2. Kök 2. 2'nin 5'e olan uzaklığı. Kök 5. Kök 20.
+
+461
+01:25:15,067 --> 01:25:27,427
+hepsini aynı şeyde bırakmak istiyorum. 2'nin 6'ya olan uzaklığı ve 2'nin 7'ye olan uzaklığı
+
+462
+01:25:30,868 --> 01:25:31,868
+1
+
+463
+01:25:31,868 --> 01:25:32,868
+Evet
+
+464
+01:25:32,868 --> 01:25:39,868
+Geldik üçüncü satıra. Üçüncü satırda 3'ün 4'ü olan uzaklığı
+
+465
+01:25:39,868 --> 01:25:41,868
+3'ün 4'ü olan uzaklığı
+
+466
+01:25:43,091 --> 01:25:44,091
+4, 13
+
+467
+01:25:44,091 --> 01:25:50,411
+Uyumuyorsunuz değil mi? Cevap bekliyorum. 3'ün 5'e olan uzaklığı
+
+468
+01:25:54,963 --> 01:25:55,723
+beşi
+
+469
+01:26:00,692 --> 01:26:02,692
+evet, kök 20
+
+470
+01:26:02,692 --> 01:26:06,692
+3'ün 6'ya olan uzaklığı kök 20
+
+471
+01:26:06,692 --> 01:26:12,692
+3'ün 7'ye olan uzaklığı kök 10
+
+472
+01:26:12,692 --> 01:26:18,692
+4'ün 5'e olan uzaklığı
+
+473
+01:26:18,692 --> 01:26:20,692
+18
+
+474
+01:26:20,692 --> 01:26:26,692
+4'ün 6'ya olan uzaklığı
+
+475
+01:26:26,692 --> 01:26:29,032
+1
+
+476
+01:26:33,076 --> 01:26:35,655
+4'ün 7'ye olan uzaklığı.
+
+477
+01:26:36,515 --> 01:26:37,755
+1.
+
+478
+01:26:41,716 --> 01:26:46,835
+5'e geldik. 5'in 6'ya olan uzaklığı
+
+479
+01:26:49,427 --> 01:26:50,427
+23
+
+480
+01:26:50,427 --> 01:27:09,427
+kaç? 4? 25, 5 yani. 25 yani 5 güzel. Peki 5'in 7'ye olan uzaklığı da 5. 6'nın 7'ye olan uzaklığı 2.
+
+481
+01:27:09,427 --> 01:27:25,807
+Bu şekilde bu distance matrisi doldurdum. Distance matrisde bu matrise bakarak şimdi her bir sample için bunun uzak komşularını sayacağım. Mesela birinci satıra bakıyorum.
+
+482
+01:27:28,747 --> 01:27:38,987
+Birinci satırda mesafesi 3'ten büyük olan kaç tane komşusu var acaba bir numaralı sample'ın bunları saymak istiyorum.
+
+483
+01:27:39,427 --> 01:27:55,048
+mesafesi 3'ten büyük. Kaç tane komşusu var? 2 tane. Evet. Bunlar için P değeri, bu satır için P değeri 2'dir. İkinci satırda aynı işlemi yapacağım.
+
+484
+01:28:03,028 --> 01:28:09,028
+Ama ikinci satırın bütün gözleri doğru değil. İkinci satırın boş olan gözünü nerede görüyorum?
+
+485
+01:28:09,028 --> 01:28:11,028
+Simetri.
+
+486
+01:28:11,028 --> 01:28:15,028
+Aslında şurada görüyorum. Bunu yeşille çizelim.
+
+487
+01:28:17,028 --> 01:28:20,028
+Simetriyi de görüyorum güzel. Yani şöyle görüyorum.
+
+488
+01:28:21,028 --> 01:28:29,028
+Burada üçten büyük kaç tane komşusu varmış ona bakalım. Uzak komşularının sayısını bulmak istiyorum. Kaç?
+
+489
+01:28:29,028 --> 01:28:31,028
+Bir tane.
+
+490
+01:28:31,028 --> 01:29:00,528
+bir tane. P eşit bir. Üçüncü satıra geçtim. Üçüncü satırda şöyle başladım. Ama şöyle ölçmeliyim. Bir, iki, üç, dört tane, dört tane mi? Beş tane mi? Beş hocam. Beş değil mi? P eşit beş.
+
+491
+01:29:00,528 --> 01:29:21,087
+çünkü en sondaki de kök 10 o yüzden 5 tane. Uzak komşularının sayısı 5 çıktı. Bu şu demek arkadaşlar lütfen şöyle hayal edin. Zaten elinizde kaç tane sample olduğunu biliyorsunuz 7 tane. 7 tane sample'ın 5 tanesi uzak komşuysa bunun yakınında az sayıda örnek var demektir.
+
+492
+01:29:21,087 --> 01:29:37,047
+Dolayısıyla P değeri soruda da şeyi anlatırken outlier'ları tespit ederken P değeri 4'e eşit ve 4'ten büyük olan tüm sampullar için bunların outlier olduğunu belirttim diyordu.
+
+493
+01:29:37,047 --> 01:29:43,047
+Dolayısıyla burada 3 numaralı sampulların outlier olduğunu söyleyebiliriz.
+
+494
+01:29:43,847 --> 01:29:47,187
+S3, BİZEN OUTLİER
+
+495
+01:29:53,555 --> 01:30:16,535
+birini bulduk. Devam ediyoruz. Şimdi 4 numaralı sample'ın komşularına bakacağız. Komşularıyla olan uzaklığına bakacağız. Şuradan. Kaç tane uzak komşusu var? Yani mesafesi 3 ve 3'den büyük komşularının sayısı nedir?
+
+496
+01:30:16,535 --> 01:30:20,855
+iki
+
+497
+01:30:20,855 --> 01:30:22,495
+eşit
+
+498
+01:30:22,495 --> 01:30:24,916
+ben iki saydım
+
+499
+01:30:24,916 --> 01:30:25,495
+doğru mu?
+
+500
+01:30:25,615 --> 01:30:26,736
+evet
+
+501
+01:30:26,736 --> 01:30:28,155
+iki tane
+
+502
+01:30:28,155 --> 01:30:29,855
+ondan sonra
+
+503
+01:30:29,855 --> 01:30:34,655
+beşinci sample için benzer bir sayma işlemini yapıyorum
+
+504
+01:30:34,655 --> 01:30:35,456
+üç
+
+505
+01:30:35,456 --> 01:30:38,596
+beşinci sample şöyle sayacağım
+
+506
+01:30:38,596 --> 01:30:40,136
+beş tane
+
+507
+01:30:40,136 --> 01:30:41,855
+bir
+
+508
+01:30:41,855 --> 01:30:42,695
+iki
+
+509
+01:30:42,695 --> 01:30:43,416
+üç
+
+510
+01:30:43,416 --> 01:30:44,035
+dört
+
+511
+01:30:44,035 --> 01:30:44,855
+beş tane
+
+512
+01:30:44,855 --> 01:30:45,815
+değil mi?
+
+513
+01:30:45,815 --> 01:30:57,895
+5, 5, uzak komşularının sayısı 5 olduğu için yine burada S5'i bir outlier olarak kenara not alacağız.
+
+514
+01:30:57,895 --> 01:31:05,475
+S5 içinde bir outlier'dır diye not alacağız.
+
+515
+01:31:06,416 --> 01:31:08,015
+6'ya bakıyorum.
+
+516
+01:31:17,844 --> 01:31:37,543
+3 tane. 1, 2, 3 tane. T eşit 3 çıktı. Buradan bunun bir outlier olduğunu söyleyemiyoruz. 4 ve 4'ten büyük olması bekleniyordu. 7 için baktığımda 2 tane var.
+
+517
+01:31:44,884 --> 01:31:58,063
+Evet, böylece bu örnekte biz toplam iki tane outlier tespit etmiş olduk. 3 ve 7. örneklerin birer aykırı değer olduğunu söyledik.
+
+518
+01:31:58,063 --> 01:32:14,103
+Peki, bu örneği, aynı örneği, bu defa farklı şekilde çözüyor. Çözeceğiz.
+
+519
+01:32:44,851 --> 01:32:50,851
+Bu gördüğümüz örnek distance based solution için verilmiş bir çözüm.
+
+520
+01:32:53,851 --> 01:33:10,851
+Ve gördüğünüz gibi multi-variate solution yani her bir sample'ın tüm boyutlarını işin içine kattık. Yani iki boyut, iki boyut üzerinden bir distance hesapladık, örnekler arası uzaklık hesapladık ve bundan faydalanarak bir outlier analizi yapmış olduk.
+
+521
+01:33:10,851 --> 01:33:28,851
+3. bir teknik daha göstereceğim aynı örnek üzerinde ve sonra size soracağım sizin aykırı değer tespiti için önerebileceğiniz neler olabilir diye devam edelim
+
+522
+01:33:37,076 --> 01:33:57,775
+Bu verilen iki boyutlu örnek üzerinden giderek diyor ki, B şıkkında, Solution by mean value, aynı örneği bu defa her boyut için ayrı ayrı ortalama değer ve varyanstan faydalanarak çözümlüyor.
+
+523
+01:33:57,775 --> 01:34:24,555
+çözümde threshold olarak bakın burada yine ilginç bu threshold çözümde bize sunulmuş ortalama değer artı eksi iki standart sapma aralığının içinde ise değerler normal kabul edilecek ama bunun dışında olan değerleri aykırı değer olarak işaretleyeceğiz.
+
+524
+01:34:24,555 --> 01:34:28,515
+çözümde bu şekilde bir yol izlememiz isteniyor.
+
+525
+01:34:28,515 --> 01:34:39,675
+Yani iki boyutlu veri setinin her bir öz niteliği için ortalama değer ve standart sapla bulacağız.
+
+526
+01:34:40,175 --> 01:34:45,495
+Daha sonra buna göre aykırı değerleri işaretleyeceğiz.
+
+527
+01:35:11,636 --> 01:35:18,636
+Elimizde 7 tane sample ve bunların aldığı değerler var. Şöyle yapalım.
+
+528
+01:35:22,547 --> 01:35:24,427
+özünçeliklerimizi
+
+529
+01:35:33,300 --> 01:35:34,300
+1x1x2 dedim.
+
+530
+01:35:39,796 --> 01:35:41,395
+her biri sen bulun.
+
+531
+01:35:41,395 --> 01:35:43,475
+Beyaz bir ekran var ama.
+
+532
+01:35:49,652 --> 01:35:54,012
+benim yazdıklarım gözükmüyor. Bakıyorum.
+
+533
+01:36:07,604 --> 01:36:10,163
+Evet, şimdi gözüküyor herhalde
+
+534
+01:36:12,723 --> 01:36:13,743
+Evet, tabii
+
+535
+01:36:24,819 --> 01:36:33,160
+7 tane sample'ımız var. Bu sample'ların her bir özü niteliğine x1 x2 özü niteliği dedik. Bunların aldığı değerleri biliyorum.
+
+536
+01:36:33,160 --> 01:36:56,219
+1, 2, 4, 3, 2, 1, 1, 4, 3, 1, 6, 5, 3 ve S7, 4, 2.
+
+537
+01:36:56,219 --> 01:37:16,799
+Buna göre her bir öz nitelik için sütun doğrultusunda ortalama değer ve varyansı hesaplayacağım.
+
+538
+01:37:25,716 --> 01:37:31,815
+şey, M dediğim değer, mean value'yu gösteriyor.
+
+539
+01:37:36,595 --> 01:38:00,715
+her bir öz nitelik için ortalama değer hesaplıyorum. Ortalama değer x1 öz niteliği için 2.85 x2 öz niteliği için buna m1, m2 de diyebiliriz. Şuna m1 diyelim, buna m2 diyelim. İkinci öz nitelik için ortalama değer 3.
+
+540
+01:38:00,715 --> 01:38:11,855
+Benzer şekilde, yani, X2 özün teliği içinde, sütun doğrultusunu ortalama hesapladım. Daha sonra,
+
+541
+01:38:19,283 --> 01:38:28,403
+her bir özüntilik için standart sapmayı hesaplayacağım. S1 ve S2 değerlerini.
+
+542
+01:38:30,403 --> 01:38:39,603
+Standart sapmayı geçen hafta konuşmuştuk. Burada 7 tane örnek var. Mesela S1'i hesaplarken
+
+543
+01:38:39,603 --> 01:38:59,743
+i eşit birden 7'ye kadar her x i örneğinin ortalama ile arasındaki fark, bu farkların karelerinin toplamını neye bölüyorduk?
+
+544
+01:38:59,743 --> 01:39:16,583
+n-1'e yani bu örnekte ben eğer 7 tane sample var diyorsam 6'ya böleceğim ve kare kökünü alarak standart sapmayı hesaplayacağım.
+
+545
+01:39:16,583 --> 01:39:35,303
+S1 dediğim standart satma değeri bu örnekte 1.57 imiş. S2 standart satma değeri 1.63 imiş. Buna göre bizim şunu yapmamız gerekiyor.
+
+546
+01:39:55,828 --> 01:40:04,927
+Neyse, bunu bir ara ben bir ara bakayım. Şimdi yapacağımız şey şu, her bir öz nitelik için kabul edilebilir bir aralık bulacağız.
+
+547
+01:40:04,927 --> 01:40:26,008
+Yani mesela X1 öz niteliği için şu değerden büyük, bu değerden küçük ise bu normal kabul edilecek bu sınır değerlerini üstünde ise veya altında ise haykırı değer olarak yazacağız.
+
+548
+01:40:26,007 --> 01:40:44,407
+Sınır değerleri yazarken şunu yapmamız gerekiyor. Aslında burada yaptığımız şey bunu bir normal dağılım gibi düşünün. Ortalaması var M değeri. Bir de standart sapması var. Belli bir sigma değeri kadar yani S değeri kadar sapma gösteriyor.
+
+549
+01:40:44,407 --> 01:41:02,707
+Bu kabul edilebilir aralık dediğimiz aralık 2 sigma yani eksi 2 sigma artı 2 sigma aralığı kabul edilebilir normal aralık şu bölgede ise ama bunun dışında ise yani şurada çizdiğimiz değerin dışında ise outlier olarak işaretlenecek.
+
+550
+01:41:02,707 --> 01:41:22,447
+Buna göre x1'in ortalama değeri 2.85'ti. Bundan 2 sigma çıkartırsam eğer bulacağım değer eksi 0.29. Nasıl buldum ben bu değeri? Şuraya yazıyorum.
+
+551
+01:41:22,447 --> 01:41:30,567
+Bu, 285M1 değerinden 2S değerini çıkartarak buldum.
+
+552
+01:41:31,127 --> 01:41:39,207
+Eksi 2 çarpı 2 çarpı S değeri dediğimde 1.57 idi.
+
+553
+01:41:40,787 --> 01:41:42,107
+Bunu çıkartarak buldum.
+
+554
+01:41:42,107 --> 01:41:49,247
+X1 için üst sınır 285 artı 2 sigma olacak, 2S değeri olacak.
+
+555
+01:41:49,247 --> 01:41:56,947
+Bu değerde 2.85 artı 2 çarpı 1.57'den gelecek.
+
+556
+01:41:57,548 --> 01:42:00,807
+Bulduğum sınır değeri 5.99'muş.
+
+557
+01:42:00,807 --> 01:42:02,707
+Şimdi veri setine bakıyorum.
+
+558
+01:42:02,908 --> 01:42:14,167
+X1'in 0.29'dan küçük ya da 5.99'dan büyük değeri var mı?
+
+559
+01:42:14,967 --> 01:42:17,188
+Yok. Şurada görüyorsunuz.
+
+560
+01:42:19,247 --> 01:42:32,387
+O yüzden x1 özü niteliği için baktığımızda herhangi bir sapma görünmemiştir diyebiliriz. Benzer analizi aslında x2 özü niteliği için de yapacağız.
+
+561
+01:42:46,931 --> 01:43:14,511
+Burada aynı analizi x2 özün teliği için de yapacağım. Ve şuraya x2 yazdım. Buna göre x2 özün teliğinin ortalama değerini biliyorum. Standart sapmasını biliyorum. Ortalama değer artı eksi 2 sigma diyeceğim yine burada. Dolayısıyla burası 3 eksi. 2 çarpı 1.63'den eksi 0.26 çıkacak.
+
+562
+01:43:14,511 --> 01:43:30,551
+üst tarafta ise sınır 3 ortalama değer artı 2S değeri dediğim zaman ne çıkıyormuş? 6.26 gibi bir değer çıkmış.
+
+563
+01:43:30,551 --> 01:43:33,691
+bakıyorum X2 için
+
+564
+01:43:37,619 --> 01:43:53,279
+Bu sınırın dışında herhangi bir değer var mı? Yok. O zaman ben bu veri setinde herhangi bir aykırı değer yoktur diyebiliyorum. No outlier.
+
+565
+01:43:53,279 --> 01:44:21,279
+Eğer daha hassas bir araştırma yapmak istiyorum dersem bize verilmiş olan ortalama değer artı eksi iki standart satma eşik değerini iki yerine bir buçuk kullanıp bunun dışında kalan alanları aykırı değer kabul edeceğim diyebilirdim.
+
+566
+01:44:21,279 --> 01:44:39,399
+çekebilirdim. Böyle gittiğim zaman da şuradaki çizime bakın. Şu aralığı 2 sigma yerine 1.5'dan keserseniz eğer daha içeriden kesmiş olursunuz. Bunun dışında kalan bölgeyi outlier olarak işaretlemiş olursunuz.
+
+567
+01:44:39,399 --> 01:45:02,379
+Bu dediğim gibi tekrar söyleyeceğim. Hani orada kullandığımız katsayı da iki katı bazen üç katı kullanabiliyoruz. Ama duruma göre daha küçük de seçebiliyoruz. Bu da yine deneyip görebileceğimiz ve karar verebileceğimiz bir konu.
+
+568
+01:45:02,379 --> 01:45:14,619
+Evet, üçüncü yöntemi de gördük. Üç tane çözüm görmüş olduk. Aykırı değerlerin tespitinde.
+
+569
+01:45:14,619 --> 01:45:32,139
+Şimdi şöyle bir soru soracağım size. Elimizdeki veri setinde, yani ben bu şekilde bir univariyet, yani her bir öz niteliği ayrı ayrı değerlendirmek
+
+570
+01:45:32,139 --> 01:45:35,519
+yerine yine Malkivar Eğit bir çözüm bulmak istiyorum.
+
+571
+01:45:37,499 --> 01:45:41,119
+Ve varsayalım ki bu veri setinde bir de sınıf etiketi var.
+
+572
+01:45:41,819 --> 01:45:43,999
+Sınıf etiketli bir veri üzerinde çalışıyorum.
+
+573
+01:45:45,999 --> 01:45:49,619
+Ne yaparsınız? Nasıl bir çözüm bulursunuz?
+
+574
+01:45:50,959 --> 01:45:51,840
+diye sorsam.
+
+575
+01:45:53,179 --> 01:45:54,679
+Aklınıza herhangi bir şey geliyor mu?
+
+576
+01:46:03,764 --> 01:46:06,984
+her sınıf için ayrı ayrı bu işlemi yapabiliriz hocam.
+
+577
+01:46:08,983 --> 01:46:25,043
+Her sınıf için ayrı ayrı bu işlemi. Yani şu artı eksi ikisi standart satın. Ama burada bu bir univariate çözümü. Her bir özün teliği ayrı ayrı inceliyor dedim. Yani daha böyle distance-based bir çözüm düşünebilir miyiz acaba?
+
+578
+01:46:29,524 --> 01:46:32,823
+Hocam, Principal Component Analiz falan kullanabilir miyiz?
+
+579
+01:46:33,643 --> 01:46:51,583
+Principal Component Analiz'inde şeye ihtiyacınız yok. Sınıf etiketine ihtiyacınız yok. Bir de orada aykırı değer bulmak için değil de daha çok biliyorsunuz öz nitelik azaltmak için kullanılan bir teknik.
+
+580
+01:46:51,583 --> 01:46:55,303
+Amaçım aslında burada iki niteliği tek niteliğe indirebilmektir.
+
+581
+01:46:55,303 --> 01:46:55,963
+şimdi.
+
+582
+01:46:56,563 --> 01:46:58,283
+Öyle diyorsunuz.
+
+583
+01:47:00,003 --> 01:47:02,864
+Evet, dolaylı yoldan olabilir belki.
+
+584
+01:47:04,323 --> 01:47:05,704
+Ama sınıf bilgisini ne yapacaksın?
+
+585
+01:47:06,863 --> 01:47:07,943
+Yok saymış oluyorsun.
+
+586
+01:47:08,583 --> 01:47:10,043
+Evet, uzanmamış oluyorum.
+
+587
+01:47:10,043 --> 01:47:10,743
+Evet.
+
+588
+01:47:12,763 --> 01:47:14,323
+Şöyle düşünelim.
+
+589
+01:47:14,963 --> 01:47:16,263
+Şimdi varsayalım ki bakın.
+
+590
+01:47:18,683 --> 01:47:21,943
+Ben veriyi görüntüledim.
+
+591
+01:47:22,483 --> 01:47:24,103
+Şuradaki üç tane sample.
+
+592
+01:47:25,303 --> 01:47:37,744
+Diyelim ki ne olsun hasta olan grup sağ taraftaki dört tane nokta ise sağlıklı olan grubu temsil ediyor. Sınıf etiketi var dedim.
+
+593
+01:47:39,123 --> 01:47:47,223
+Daha önce dersin başında konuştuğumuz gibi elimizdeki sample'ların sınıf içi ortalamasını alsak, her sınıfın bir ortalama değerini bulsak.
+
+594
+01:47:48,303 --> 01:47:52,384
+Sonra bundan faydalanarak bir çözüm düşünsek ne diyebilirsiniz?
+
+595
+01:47:52,384 --> 01:47:56,824
+Hızık buraya kadar ben bir şeyler söylemiş olsam. Üstüne ne dersiniz?
+
+596
+01:48:01,524 --> 01:48:06,803
+sınıf içi ortalamaları biliyorum. Her sınıfı temsil eden bir merkez noktası var elimde.
+
+597
+01:48:10,260 --> 01:48:19,879
+Sınıf bazında distance hesaplayıp, sınıf bazı içerisindeki sample'larda distance hesaplayıp, sınıfsal outlier'ı bulabiliriz.
+
+598
+01:48:20,520 --> 01:48:27,860
+Evet, evet. Zaten öyle yapmayı planlıyoruz. Her sınıf için ayrı ayrı bakacağız. Ama sınıfların bir merkez noktası var.
+
+599
+01:48:28,879 --> 01:48:37,020
+Örneklerin birbirleri arasındaki uzaklığı hesaplamak yerine, diyorum ki, mesela şurada bir merkez noktası var.
+
+600
+01:48:37,020 --> 01:48:45,219
+her sample'ın kendi sınıf merkezine olan uzaklığına baksak ve buradan bir aykırı değer hesaplasak.
+
+601
+01:48:45,340 --> 01:48:50,520
+Mesela bu merkeze en uzak olanlar aykırı değerdir gibi.
+
+602
+01:48:52,219 --> 01:49:00,260
+En uzak olan bir iki tane değeri seçip yani orada yine mesafeye göre koyacağımız bir threshold üzerinden giderek
+
+603
+01:49:00,260 --> 01:49:04,879
+o uzak olan sample'ları outlier olarak isimlendirebiliriz mesela.
+
+604
+01:49:04,879 --> 01:49:07,639
+Aklımıza yatıyor mu?
+
+605
+01:49:09,280 --> 01:49:12,260
+Bir nevi aslında çalışıp lokalleştirmiş oluyoruz değil mi hocam?
+
+606
+01:49:12,699 --> 01:49:13,260
+Bir nevi?
+
+607
+01:49:14,120 --> 01:49:15,599
+Lokalleştirmiş oluyoruz aslında
+
+608
+01:49:15,599 --> 01:49:20,859
+Yani lokallik sınıf için, karnımı için söylüyorsunuz, evet doğru
+
+609
+01:49:20,859 --> 01:49:23,899
+Başka yorum?
+
+610
+01:49:23,980 --> 01:49:26,359
+Peki okümedeki bütün değerler alırsa?
+
+611
+01:49:28,219 --> 01:49:32,959
+O zaman dataların hepsi çöp demektir zaten, öyle bir şey olamaz
+
+612
+01:49:32,959 --> 01:49:35,999
+mutlaka yine kendi içinde
+
+613
+01:49:35,999 --> 01:49:39,399
+kümeye bölmedik.
+
+614
+01:49:39,399 --> 01:49:43,679
+sınıf etiketi var.
+
+615
+01:49:43,819 --> 01:49:49,999
+sınıf etiketi olan veri için her bir sınıfın kendi ortalamasını hesapladık.
+
+616
+01:49:50,279 --> 01:49:53,639
+sağlıklı olan bir grup sample'ımız var.
+
+617
+01:49:53,999 --> 01:49:56,539
+bir de hastalıklı olan bir grup sample'ımız var.
+
+618
+01:49:57,499 --> 01:50:00,559
+onların kendi içinde ortalaması üzerinden gidebiliriz dedik.
+
+619
+01:50:00,559 --> 01:50:11,179
+bu bir alternatif olabilir. Sınıf etiketi olmasaydı tüm veri için bir ortalama hesaplayıp öyle de gidebilirdik. Bu da bir başka çözüm olabilirdi.
+
+620
+01:50:14,179 --> 01:50:25,980
+Bu yöntemlerde öz nitelikleri bir arada kullandığımız distance tabanlı, mesafe tabanlı olan çözümlerin aslında daha doğru olduğunu söyleyebiliriz.
+
+621
+01:50:25,980 --> 01:50:38,120
+Ama diğeri de tabii kullanılıyor. Yani univariate dediğimiz tek boyut üzerinden her bir boyutu kendi içinde değerlendirdiğimiz çözümlerimiz de var. Boxplot analizi bunun bir örneğiydi.
+
+622
+01:50:38,120 --> 01:50:49,519
+Veya ortalama değer ve varyansa dayanarak yaptığımız çözüm de benzer şekilde univariate her öz niteliği kendi içinde değerlendiriyor.
+
+623
+01:50:49,519 --> 01:51:05,879
+Hocam bir şey sorabilir miyim? Hibrit bir çözüm yapılabilir mi peki? Yani ikisini bu outlier analizde iki yöntemi de birden kullanırsak mesela hem uzaklık hem de
+
+624
+01:51:05,879 --> 01:51:10,539
+Kesişim kümesine bakmak mesela gibi mi?
+
+625
+01:51:10,539 --> 01:51:23,399
+Olabilir hocam. Yani mesela o iç yöntemin sonucunda kesin olarak bu outlier değil. Belki daha gerçekçi bir sonuç elde edebilir miyiz?
+
+626
+01:51:23,399 --> 01:51:35,739
+Olabilir. Olabilir. Yani o da mantıklı. Kesişim kümesi üzerinden giderek yani birden fazla çözümü bir arada kullanıp o şekilde de bir sonuca varabiliriz.
+
+627
+01:51:35,739 --> 01:52:05,719
+mesela şimdi size şunu söylemek istedim biz az önce ortalama değer ve varyansa göre bir çözüm yaptık varsayalım ki oradaki çözümde şu örneği yani şu 6 değeri sınırın içinde kalmadı bu varsayalım ki 6 değil de 6.90 gibi bir değer olsaydı şu değer o durumda sadece şu x2 öz niteliği sınırın dışında kaldığı için ben bu
+
+628
+01:52:05,719 --> 01:52:07,719
+bu sample'ı silmek zorunda kalacaktım.
+
+629
+01:52:08,948 --> 01:52:21,547
+Yani her bir boyut için ayrı ayrı bakıyorsunuz ama bu boyut içerisinde tespit ettiğiniz outlier'a göre bu sample'ın tamamını kaldırıyorsunuz veri setinden. Bunun farkındayız değil mi?
+
+630
+01:52:24,787 --> 01:52:49,607
+outlier analizinde eğer tek boyut üzerinden analiz yapıyorsak yani Univariate dediğimiz Box Plot analiziyle veya ortalama değer ve varyansı kullanarak yaptığımız çözümde boyutlardan bir tanesi için bir değeri sınırın dışında yakalamışsak eğer ilgili sample'ı veri setinden silip atıyoruz.
+
+631
+01:52:49,607 --> 01:52:59,607
+Yani elimination of outlier dediğimiz zaman evet o bir boyutta tespit ettik ama sample'ın tamamını veri setinden kaldırmış olduk.
+
+632
+01:53:02,407 --> 01:53:11,968
+Dolayısıyla aslında o geri çıkardıktan sonra hocam yeni parametreleri saplayıp aslında bir daha outlier yapsak belki başka bir noktada outlier gözükebilir.
+
+633
+01:53:11,968 --> 01:53:39,828
+kalanlar için diyorsunuz. Ama o veriyi gitgide ne yapar aşındırır aşındırır sürekli veri kaybedersiniz. Yani onu gelen veri üzerinden doğrudan yapmak ve ona göre sınır değerlerinin hangi aralığı ben normal kabul edeceğim bu aralığı hani trash oldum eşik değerim ne olacak bunun kararını başta gelen veri üzerinden belirliyoruz.
+
+634
+01:53:44,307 --> 01:53:48,307
+Peki, soru yok sanıyorum.
+
+635
+01:53:51,699 --> 01:53:55,019
+saat 3 oldu 14.54
+
+636
+01:53:56,559 --> 01:54:00,660
+Peki yeni bir şeye geçeceğiz
+
+637
+01:54:02,959 --> 01:54:04,499
+bölüme geçeceğiz
+
+638
+01:54:05,019 --> 01:54:07,819
+bu bölüme ilişkin sorunuz var mıdır
+
+639
+01:54:10,140 --> 01:54:16,779
+bazı eller görüyorum havada bunlar az önce buradayım demek için kalkan eller mi
+
+640
+01:54:17,819 --> 01:54:18,960
+sorun var
+
+641
+01:54:22,868 --> 01:54:38,307
+Az önce hocam. Tamam. Peki. O halde ben yine küçük bir ara vereyim ve şeye başlayalım ondan sonra. Yeni slide'a geçeceğim. Yeni slide'da
+
+642
+01:54:42,579 --> 01:54:47,579
+Data Reduction konusuna başlayacağız.
+
+643
+01:54:51,667 --> 01:54:56,068
+ben veriyi hazırlayayım. Evet, 10 dakika arkadaşlar.
+
+644
+02:03:32,435 --> 02:03:54,215
+Evet, aramız bitti, devam edebiliriz. Şimdi yeni bir konu başlığıyla, data reduction konusuyla devam edeceğim. Kimler burada? Ben buradan giriyorum. Evet, [öğrenci]. Raise your hand. Ellerinizi görelim.
+
+645
+02:03:55,795 --> 02:03:56,915
+Buradayız hocam.
+
+646
+02:03:58,015 --> 02:03:58,755
+Evet, [öğrenci].
+
+647
+02:04:01,455 --> 02:04:01,696
+Tamam.
+
+648
+02:04:02,435 --> 02:04:07,175
+[öğrenci] burada mı? [öğrenci], [öğrenci]?
+
+649
+02:04:09,255 --> 02:04:10,016
+Buradayız hocam.
+
+650
+02:04:11,235 --> 02:04:12,656
+Teşekkür ediyorum.
+
+651
+02:04:13,935 --> 02:04:15,895
+Boşluğa konuşmadığıma sevindim.
+
+652
+02:04:17,516 --> 02:04:20,095
+Ara sıra böyle feedback almak iyi geliyor.
+
+653
+02:04:29,684 --> 02:04:38,343
+üçüncü hafta slide'larını paylaşmış mıydım sizinle hatırlamıyorum olmayabilir. Bunları da ekleyeyim.
+
+654
+02:04:47,412 --> 02:05:03,912
+Evet, bu bölüm Data Reduction konusundan bahsedeceğiz. Chapter Objectives dediği bu bölüm altında hangi konu başlıklarımız var? Şimdi onlara bir bakalım.
+
+655
+02:05:06,547 --> 02:05:10,268
+boyut kavramında özü niteliklerin
+
+656
+02:05:10,268 --> 02:05:23,547
+örneklerin veya bu veri seti içerisinde her bir sample'a ait, örneğe ait özü niteliklerin değerleri üzerinde
+
+657
+02:05:23,547 --> 02:05:33,587
+konuşuyor olacağız. Bunların her biri için bir veri azaltma işlemi uygulanabilir.
+
+658
+02:05:33,587 --> 02:05:38,707
+veri azaltma işleminin
+
+659
+02:05:42,515 --> 02:06:03,955
+Veri azaltma işleminin sağladığı alan tarihler nelerdir? Biraz bunları da konuşacağız. Daha sonra veri azaltma işleminde öz nitelikler için, featureler için kullanabileceğimiz iki yöntem, feature selection ve feature composition yöntemlerinden bahsedeceğiz.
+
+660
+02:06:07,955 --> 02:06:08,955
+Bunların...
+
+661
+02:06:11,123 --> 02:06:26,383
+principal component analizi ile feature composition dediğimiz tekniğin nasıl uygulandığından, entropy-based teknik dediğimiz yöntemden yine bu başlık altında konuşacağız.
+
+662
+02:06:26,383 --> 02:06:45,343
+verilerin diskretize edilmesi yani ayrıklaştırılması işleminde key merge teknik ve bin base teknik dediğimiz iki tekniği yine bu bölüm altında konuşacağız.
+
+663
+02:06:45,343 --> 02:06:48,763
+Konu başlıklarımız kısaca böyle özetlenebilir.
+
+664
+02:06:48,763 --> 02:07:02,923
+veri seti içerisinde özellikle ham veriyle çalışırken feature extraction yöntemleri dediğimiz bazı yöntemlerden bahsediyoruz.
+
+665
+02:07:04,603 --> 02:07:07,783
+Ben burada chat bölümüne bir şey yazabiliyor muyum?
+
+666
+02:07:07,783 --> 02:07:11,083
+Participants, buradan yazılıyor. Bakalım.
+
+667
+02:07:15,123 --> 02:07:18,703
+Slide Show'dayken, şurada yapılıyor.
+
+668
+02:07:26,547 --> 02:07:34,447
+Feature Extraction kavramı Feature Extraction chat bölümünde yazdım.
+
+669
+02:07:35,348 --> 02:07:52,447
+Öz nitelik çıkarma işlemi diyoruz buna. Veri tabanından çektiğimiz her parametre elbette ki bizim için bir öz nitelik olabilir ama bunlardan türetilmiş farklı öz nitelikler de oluşturabiliriz.
+
+670
+02:07:52,447 --> 02:07:59,867
+oluşturabiliriz. Bu yönteme Feature Extraction adı veriliyor. Mesela şey örneğini vereyim.
+
+671
+02:08:01,927 --> 02:08:15,867
+Bireysel emeklilikle ilgili bireysel emeklilik yatırımı yapan kişilerin aylık ödemeleri, birikimleri vesaireleriyle ilgili veri tabanında pek çok değer var tutulan.
+
+672
+02:08:15,867 --> 02:08:29,107
+biz bireysel emeklilik sisteminden ayrılma ihtimali olan insanları önceden tespit etmek istediğimizde şöyle bir karşılaştırma yaptık.
+
+673
+02:08:29,667 --> 02:08:41,268
+Birikimlerinin aylık kazancı ile diğer yatırım araçlarının aylık kazançları arasındaki farka baktık.
+
+674
+02:08:41,268 --> 02:08:48,268
+Yani karda mıyım, zararda mıyım? Ben normalde kendi yatırımımı böyle kontrol ederim.
+
+675
+02:08:48,748 --> 02:08:56,628
+Dolayısıyla bunu da bir parametre olarak oraya eklemek her kişinin kendi yatırım portföyü farklı olabilir.
+
+676
+02:08:56,627 --> 02:09:12,107
+bu yatırım portföyünün getirisi, diğer yatırım araçları yani ne olabilir altının, dövizin kazancıyla karşılaştırılarak bir etkisi var mıdırı inceleyebiliriz.
+
+677
+02:09:12,667 --> 02:09:17,807
+Bu şekilde yeni öz nitelikler üretebiliriz. Bunlara future extraction diyoruz.
+
+678
+02:09:17,807 --> 02:09:33,287
+yani öz nitelik çıkartma teknikleri. Bizi amaca götürecek bazı öz nitelikleri veri içerisinden kendimiz düşünüp hesaplayıp her sample için, her kullanıcı için bunları bu tabloya yazabiliyoruz.
+
+679
+02:09:33,287 --> 02:09:47,647
+Fakat bazen bu öz niteliklerin sayısı o kadar fazla oluyor ki yani 3, 5, 10, 20 değil 100, 200 bazen 250 tane öz nitelik olabiliyor her bir sample için.
+
+680
+02:09:47,807 --> 02:10:01,607
+Bu kadar çok öz niteliğin olduğu bir durumda da neye ihtiyaç duyuyoruz? Bu defa feature selection dediğimiz ya da feature reduction dediğimiz, önce reduction diyelim
+
+681
+02:10:01,607 --> 02:10:10,867
+Öz nitelikleri indirgeme işlemine ihtiyaç duyuyoruz, feature reduction yöntemlerine ihtiyaç duyuyoruz
+
+682
+02:10:10,867 --> 02:10:20,587
+Bunun altında teknikleri birazdan konuşacağız. Her birinin başlıklarını önce vereceğim.
+
+683
+02:10:21,527 --> 02:10:32,087
+Dolayısıyla feature extraction ayrı bir şey, feature reduction ve selection ayrı bir şey ne anlam ifade ettiğini örneklerle vermeye çalıştım.
+
+684
+02:10:32,087 --> 02:10:47,887
+amacımız veri indirgeme noktasında öz nitelik bazında olur, sample bazında olur veya tabloda bulunan değerler için bir indirgeme işlemine ihtiyacımız var.
+
+685
+02:10:47,887 --> 02:10:53,647
+Burada diyor ki three main dimensions of the pre-processed data sets.
+
+686
+02:10:53,647 --> 02:11:16,827
+ön işleme yaptığımız veri setinde 3 tane boyutumuz var aslında matrisi düşünecek olursak matrisin satırları var, matrisin sütunları var ve bu matris içerisinde yer alan değerler var. Bunların her biri için ayrı ayrı indirgeme işlemi yani data reduction işlemi uygulayabiliriz.
+
+687
+02:11:17,363 --> 02:11:40,624
+Eğer veri setindeki öz niteliklerin sayısı, işte az önce dediğim gibi 200 tane, 250 tane öz nitelik olabilir. Hele doğal dil işlemede bunların sayısı binlere çıkıyor. Bin tane öz nitelik var. Neye ihtiyacımız var? Bu durumda kolonların sayısını, yani öz niteliklerin sayısını azaltma yöntemlerine başvurmamız gerekiyor.
+
+688
+02:11:40,624 --> 02:11:49,503
+sadece değerli olan, bizim için anlamlı olan verinin veri seti içerisinde kalması gerekir, diğerlerinin bulunması gerekmiyor.
+
+689
+02:11:49,503 --> 02:12:07,963
+Sample Reduction'da ise veri seti içerisindeki satırları azaltma işlemi yapılabilir veya yine bir üçüncü işlem olarak matriz içerisinde yer alan değerlerin azaltılması.
+
+690
+02:12:07,963 --> 02:12:15,403
+ve bu konuda da data discretization teknik istediğimiz verinin ayrılaştırılması yöntemleri işin içine giriyor.
+
+691
+02:12:22,963 --> 02:12:46,763
+Burada Body Mass Index örneği tekrar verilmiş. Bu bir öz nitelik çıkarma işlemidir, Future Extraction'dır. Boyu ve kilosu varsa ben yeni bir öz nitelik üretip bunu veri setine ekleyebilirim ve önceki iki tanesinden çok daha iyi bir gösterge olabilir. Future Extraction için bu kavramdan bahsedebiliriz.
+
+692
+02:12:46,763 --> 02:12:56,703
+veri indirgenme işlemi yani data reduction işleminin sağlayacağı avantajlar neler olacaktır?
+
+693
+02:12:56,703 --> 02:13:08,123
+Eğer veriyi sadeleştirirsek ve gerçekten gerekli olan alanları veri setin içerisinde bırakırsak hesaplama süresinden kazancımız olacak demektir.
+
+694
+02:13:08,123 --> 02:13:23,364
+Gereksiz öz niteliklerin varlığı işlemin süresini uzatacaktır. O nedenle avantajı burada computing time için verilebilir. Burada kazancımız var.
+
+695
+02:13:23,363 --> 02:13:34,123
+Predictive and Descriptive Accuracy bazen gereksiz alanların atılması aslında tahmin başarısının da artmasına neden oluyor.
+
+696
+02:13:34,663 --> 02:13:44,803
+Gereksiz verinin aslında veri içerisinde bulunması sonucun doğruluğunu da olumsuz etkileyebiliyor.
+
+697
+02:13:44,803 --> 02:13:48,923
+Her zaman böyle olduğunu söyleyemeyiz ama olduğu durumlarda vardır.
+
+698
+02:13:48,923 --> 02:14:09,303
+Tabii ki ne kadar az öz nitelik olursa veri içerisinde bu veriyi temsil etmek, bazen görüntülemek, bir visualization yöntemlerini uygulamak daha kolay hale geliyor.
+
+699
+02:14:09,303 --> 02:14:23,863
+Bu da yine kazançları arasında sayılabilir. Yani veri indirgeme işleminin veri madenciliği süreçlerine başlamadan önce mutlaka ele alınması gerekiyor.
+
+700
+02:14:30,260 --> 02:14:44,379
+Şimdi burada ilk olarak Feature Reduction ile başlamış. Ben burada size biraz şeyden bir tablo şeklinde bunu vermek istiyorum. Şöyle yapalım yine.
+
+701
+02:14:57,203 --> 02:14:59,343
+Data Reduction yöntemlerine
+
+702
+02:15:11,188 --> 02:15:13,188
+başlığa ayıracağız.
+
+703
+02:15:15,887 --> 02:15:17,188
+Feature
+
+704
+02:15:18,287 --> 02:15:19,688
+Reduction
+
+705
+02:15:21,887 --> 02:15:23,188
+Sample
+
+706
+02:15:25,688 --> 02:15:27,188
+Reduction
+
+707
+02:15:28,188 --> 02:15:29,688
+Value
+
+708
+02:15:30,887 --> 02:15:32,188
+Reduction
+
+709
+02:15:33,688 --> 02:15:38,188
+Feature Reduction işlemlerini iki şekilde ele alacağız.
+
+710
+02:15:44,372 --> 02:15:46,372
+iki şekilde ele alacağız.
+
+711
+02:15:50,100 --> 02:15:52,100
+Feature Selection
+
+712
+02:15:58,420 --> 02:16:01,420
+Diğeri de, nafeature composition.
+
+713
+02:16:08,051 --> 02:16:18,051
+Feature Selection yöntemlerini ikiye ayıracağız. Supervised'dan supervised diye.
+
+714
+02:16:19,636 --> 02:16:23,996
+unsupervised, feature selection.
+
+715
+02:16:26,835 --> 02:16:28,375
+Here is unsupervised.
+
+716
+02:16:38,420 --> 02:16:44,659
+Feature Composition'da kullanacağımız yöntem PCA olacak.
+
+717
+02:16:47,659 --> 02:16:56,979
+Principal Component Analysis yöntemlerinden bahsedeceğiz.
+
+718
+02:16:57,539 --> 02:17:06,739
+Supervised Feature Selection'da şu bölümde ise ortalama değer ve varyansa dayalı bir çözümden bahsedeceğim.
+
+719
+02:17:06,739 --> 02:17:24,859
+Supervised Feature Selection'da sınıf bilgisi var elimizde. Bu sınıf bilgisine göre her sınıf için sınıf içi ortalama ve varyansı hesaplayarak bunun üzerinden öz ünitelikleri karşılaştırma işlemi yapacağız.
+
+720
+02:17:24,859 --> 02:17:33,259
+Hangi öz ünitelikler sınıfları birbirinden ayırt etmede daha etkin bir kararını buna göre vereceğiz.
+
+721
+02:17:33,260 --> 02:17:43,159
+Unsupervised teknikte ise entropiye dayalı bir çözüm yöntemimiz var. Bundan bahsedeceğim bu ders içinde.
+
+722
+02:17:46,159 --> 02:17:54,019
+Alan olmadığı için burada yazamıyorum. Kırmızıyla bunların her birine çözümlerin, yöntemlerin isimlerini yazacaktım ama
+
+723
+02:17:54,019 --> 02:18:07,239
+Supervised Future Selection'da tekrar söylüyorum ortalama değer ve varyansa dayalı sınıf için ortalama değer ve varyansa dayalı bir çözüm burada veriyor olacağız.
+
+724
+02:18:08,000 --> 02:18:17,739
+Diğer tarafta sample reduction için aslında çok da uyguladığımız bir yöntem değil.
+
+725
+02:18:17,739 --> 02:18:25,140
+genelde veri setlerinde az sayıda örnek olduğu için çoğunlukla sample atma yoluna pek gitmiyoruz.
+
+726
+02:18:25,140 --> 02:18:34,039
+O yüzden orada herhangi bir yöntem vermiyorum. Value Reduction kısmında ise Key Merge Teknik ile
+
+727
+02:18:37,652 --> 02:18:49,471
+Data Discretization'a bir yöntem olarak vereceğiz. Yani bu bölümün konu başlıklarını bu şekilde özetleyebiliriz.
+
+728
+02:18:53,471 --> 02:19:03,971
+Bu yapıyı aklımıza hep getirmeye çalışın. Veri indirgeme işlemi üç farklı alanda olabiliyor.
+
+729
+02:19:03,971 --> 02:19:29,971
+En çok başvurduğumuz yöntemler Feature Reduction yöntemleri. Feature Reduction'ı iki şekilde yapabiliyoruz. Selection ya da Composition şeklinde. Selection mevcut öz niteliklerden hangilerinin daha değerli olduğunu ve sınıfları ayırt etmede etkili olduğunu seçip karar verip seçmemizi sağlıyor.
+
+730
+02:19:29,971 --> 02:19:43,271
+işimize yaramayan öz nitelikleri veri setinden slip atıyoruz. Feature selection yöntemleriyle. Feature composition ise öz nitelikleri birleştirerek yeni bir öz nitelik uzayı yaratıyor.
+
+731
+02:19:43,271 --> 02:19:58,611
+Ve bu yeni yarattığımız uzayda daha etkin olan öz nitelikleri belirlemek daha kolay oluyor. O nedenle feature composition,
+
+732
+02:19:58,611 --> 02:20:03,372
+ve principal component analysis burada başvurduğumuz yöntemlerde.
+
+733
+02:20:07,827 --> 02:20:20,007
+Hocam, şeyi anlamadım, value dediğimiz net, future anladım, sample anladım ama value dediğimiz direkt içindeki değeri mi?
+
+734
+02:20:20,007 --> 02:20:37,687
+Direkt içindeki değeri şöyle indirgemek, aslında onu data smoothing'te de görmüştük hatırlarsanız. Veri seti içerisinde değerlerin, hani böyle many distinct values diyoruz ya, çok fazla sayıda birbirinden farklı değer olmasını çok istemiyoruz.
+
+735
+02:20:37,827 --> 02:20:45,208
+Bunun yerine belli sayı aralıklarını temsil eden tek bir değer olsun istiyoruz veri setinde.
+
+736
+02:20:46,168 --> 02:20:55,607
+İşte bu da bu açıdan baktığımızda bir reduction işlemi olmuş oluyor. Anlatabildim mi? Zaten örneklerini dediğim gibi göreceğiz.
+
+737
+02:20:59,956 --> 02:21:17,615
+Şimdi slide'dan devam edecek olursak. Evet, burada Feature Selection ve Feature Composition'dan bahsettik. Yani öz nitelik azaltma işlemini yaparken ilk başvuracağımız yöntem Feature Selection yöntemleri olacak.
+
+738
+02:21:22,708 --> 02:21:42,987
+ve ilk yöntemimiz eğiticili bir yöntem. Varsayalım ki bu veri setinde başlangıçta bize sınıf etiketleri verilmiş olsun. Bu durumda veri içerisinde sınıf içi ortalama değer ve varyansı hesaplayarak
+
+739
+02:21:42,987 --> 02:21:52,867
+her bir öz niteliğin sınıfları ayırt etmedeki etkinliğini belirleyebiliyoruz.
+
+740
+02:21:59,219 --> 02:22:16,219
+Bunun için A ve B bizim sınıf etiketlerimiz olsun. A sınıfı ve B sınıfı örneklerin her bir özüntelik için ortalama değerini aldık.
+
+741
+02:22:16,219 --> 02:22:34,499
+Bu ortalama yani A sınıfının sınıf içi ortalaması ile B sınıfının sınıf içi ortalamaları arasındaki uzaklığa bakarak bunlar birbirinden ne kadar uzaksa veriyi ayırt etmede o kadar etkindir diyebiliyoruz.
+
+742
+02:22:34,499 --> 02:22:44,300
+Ama sadece ortalama değerleri arasındaki açıklığın fazla olması yetmiyor. Aynı zamanda sınıf dağılımlarına da bakmamız gerekiyor.
+
+743
+02:22:44,299 --> 02:22:52,839
+yani sınıf dağılımında standart sapma çok büyükse yine bu öz nitelik için verinin birbiri içine geçtiğini gösterir.
+
+744
+02:22:52,839 --> 02:23:11,319
+O nedenle bu test işleminde burada bir test işlemi tanımlanmış A sınıfı ve B sınıfları arasında ortalamaları arasındaki uzaklık şuradaki ölçü distance demek.
+
+745
+02:23:11,319 --> 02:23:19,139
+bölü, şurada SEA-B dediği yukarıda tanımlanmış.
+
+746
+02:23:19,839 --> 02:23:26,199
+Varyansların A sınıfının varyansının kendi sınıf sayısına oranı artı.
+
+747
+02:23:26,440 --> 02:23:39,959
+B sınıfı için sınıf içi varyansın sample sayısına bu B sınıfındaki örnek sayısına oranları toplamından bir ifade elde edilmiş.
+
+748
+02:23:39,959 --> 02:23:55,299
+bunun kare köke alınmış. Bu değeri oranlayarak bir test işlemi yapıyor ve bu test işleminin sonucu ne kadar büyük çıkarsa bu öz nitelik bizim için o kadar değerlidir anlamına geliyor.
+
+749
+02:23:55,299 --> 02:24:11,919
+Bu ne kadar büyük çıkarsa göreceli bir kavram olduğu için istersek bunun için bir eşik değeri tanımlayabiliyoruz ve bu eşik değerinden büyükse eğer bu öz nitelik bizim için değerlidir diyebiliyoruz.
+
+750
+02:24:11,919 --> 02:24:15,099
+Bu şekilde bir analiz söz konusu.
+
+751
+02:24:20,691 --> 02:24:25,092
+Veya hocam burada değerleri büyükten küçüğe sıralayıp ilk onu alabiliriz değil mi?
+
+752
+02:24:25,891 --> 02:24:39,051
+Evet, büyükten küçüğe doğru sıralayıp kesinlikle öyle. Veya şunu yapabiliriz, büyükten küçüğe doğru sıraladık fakat öyle bir yere geliyor ki bir yerde atlama yapıyor.
+
+753
+02:24:39,051 --> 02:24:46,511
+Yani değerler birbirine çok yakın, büyük giderken bir bakıyorsunuz birdenbire çok küçük bir değere geçiyor sıralanmış dizi üzerinde.
+
+754
+02:24:46,511 --> 02:24:55,971
+O zaman diyebiliyorsunuz ki ben veri setindeki öz nitelikleri buradan keseyim. Bunun altındaki değerleri hiç kullanmayayım da diyebiliyorsunuz. [öğrenci] soru mu var?
+
+755
+02:25:00,051 --> 02:25:21,211
+Hayır hocam. Yok, tamam peki. Şimdi burada bir örnek verilmiş. Örneğimiz şöyle. X ve Y öz nitelikleri var. Burada data set with tree features diyor ama C sütununda gördüğümüz ise sınıf etiketi olsun.
+
+756
+02:25:21,211 --> 02:25:26,451
+A ve B sınıfı olmak üzere iki tane farklı sınıfımız var.
+
+757
+02:25:27,511 --> 02:25:29,691
+Altı tane sample'ımız var.
+
+758
+02:25:30,311 --> 02:25:35,092
+Bu altı sample'dan üç tanesi A sınıfına ait, diğer üç tanesi B sınıfına ait.
+
+759
+02:25:35,471 --> 02:25:43,991
+Toplam altı tane sample'dan oluşan iki öz niteliğe sahip, X ve Y öz niteliklerine sahip bir veri setinden bahsediyoruz.
+
+760
+02:25:43,991 --> 02:25:46,991
+Şimdi amacımız Feature Selection işlemiydi.
+
+761
+02:25:46,991 --> 02:26:02,991
+yani X ve Y öz niteliklerinden bu ikisinden hangisi acaba bizim için A sınıfını B sınıfından ayırt etmede daha etkilidir, etkindir bunun kararını vermek istiyoruz.
+
+762
+02:26:04,272 --> 02:26:08,811
+Onun için önce örnekleri kendi içinde gruplamamız gerekiyor.
+
+763
+02:26:08,812 --> 02:26:24,672
+Grupladığımız örneklerde X ve Y değerlerine bakarak bunların sınıf içi ortalamalarını ve sınıf içi standart sapmalarını veya varyanslarını kullanacağız.
+
+764
+02:26:30,804 --> 02:26:39,804
+Datayı önce düzenleyelim ve A sınıf örnekleri, B sınıf örnekleri ayrı ayrı yazalım.
+
+765
+02:26:50,227 --> 02:26:54,067
+Örneği not aldınız mı değerleri?
+
+766
+02:26:57,188 --> 02:26:57,907
+Evet hocam.
+
+767
+02:26:58,488 --> 02:27:03,987
+Tamam. Not almış olmanız önemli çünkü birazdan bu tabloyu göremeyeceksiniz.
+
+768
+02:27:05,207 --> 02:27:10,267
+Bu yüzden kenara not alırsanız sevinirim ya da fotoğraf çekebilirsiniz tekrar.
+
+769
+02:27:22,963 --> 02:27:37,243
+Elimizde 6 tane sample'dan oluşan bir veri seti var. X, Y öz niteliklerimiz var. Bir de Class Label'ımız var.
+
+770
+02:27:39,156 --> 02:27:42,555
+dedim ki A sınıfına ait 3 tane sample var
+
+771
+02:27:42,555 --> 02:27:48,195
+B sınıfına ait 3 tane sample var
+
+772
+02:27:48,195 --> 02:27:50,915
+bunları ayrı ayrı yazalım
+
+773
+02:27:50,915 --> 02:27:53,036
+A sınıfı sample'ların değerleri
+
+774
+02:27:53,036 --> 02:27:59,916
+x için 0.3
+
+775
+02:27:59,916 --> 02:28:02,435
+y için 0.7
+
+776
+02:28:02,435 --> 02:28:07,195
+A sınıfına ait 2. sample'ın değeri
+
+777
+02:28:07,195 --> 02:28:09,095
+0.6'ya
+
+778
+02:28:12,115 --> 02:28:14,635
+kaç? O da mı 0.6?
+
+779
+02:28:19,219 --> 02:28:25,099
+ve A sınıfı diğer örnek 0.5'e 0.5
+
+780
+02:28:25,099 --> 02:28:32,719
+B sınıfı sample'larımız 0.2'ye 0.9
+
+781
+02:28:32,719 --> 02:28:36,640
+0.7, 0.7
+
+782
+02:28:40,244 --> 02:28:50,124
+Payes'in ıksamplı 0.4'e 0.9 bu şekilde verilmiş.
+
+783
+02:28:54,260 --> 02:29:12,260
+Bunların her birinin sınıf içi ortalamalarını hesaplamam gerekiyor. Ve sınıf içi ortalamalardan giderek sınıf içi varyanslarını hesaplamam gerekiyor. Buna göre test işlemini uygulayacağım ve karar vereceğim.
+
+784
+02:29:12,260 --> 02:29:23,919
+Şimdi her bir öz niteliği kendi içinde değerlendireceğiz. X öz niteliğinin A sınıfı sampulları, B sınıfı sampulların değerleri var.
+
+785
+02:29:23,919 --> 02:29:42,679
+X öz niteliğini, burayı X ekseni alalım, X öz niteliğinin değişim aralığı A sınıfı için minimum 0.3, maksimum 0.6 değerini almış.
+
+786
+02:29:43,559 --> 02:29:49,499
+Bunun sınıf içi ortalaması 0.46 gibi bir şey çıkıyor.
+
+787
+02:29:53,172 --> 02:29:55,831
+şöyle şurada bir
+
+788
+02:29:55,831 --> 02:30:01,451
+A sınıfı sample'ların
+
+789
+02:30:01,451 --> 02:30:04,632
+dağılımı olsun bu.
+
+790
+02:30:06,211 --> 02:30:06,731
+Şuna
+
+791
+02:30:06,731 --> 02:30:08,691
+plus
+
+792
+02:30:08,691 --> 02:30:11,291
+eyleyelim.
+
+793
+02:30:13,131 --> 02:30:14,711
+Değişim aralığı
+
+794
+02:30:14,711 --> 02:30:16,971
+şu aralık için baktığımda
+
+795
+02:30:16,971 --> 02:30:20,051
+0.3 ile
+
+796
+02:30:20,051 --> 02:30:22,592
+0.6 arasında
+
+797
+02:30:22,592 --> 02:30:25,112
+değerler almış şu bölgede.
+
+798
+02:30:28,724 --> 02:30:42,144
+aynı x öz niteliğinin B sınıfı için bakacak olursak dağılımın ortalaması 0.43'müş.
+
+799
+02:30:44,020 --> 02:30:44,520
+bunu
+
+800
+02:30:44,520 --> 02:30:47,439
+yeşille çizelim.
+
+801
+02:30:48,859 --> 02:30:49,579
+Buna göre daha
+
+802
+02:30:49,579 --> 02:30:51,779
+ortalama değerleri birbirine aslında
+
+803
+02:30:51,779 --> 02:30:52,579
+çok yakın.
+
+804
+02:30:54,159 --> 02:30:55,499
+X öz niteliğinde
+
+805
+02:30:55,499 --> 02:30:57,980
+0.43'müş.
+
+806
+02:30:58,259 --> 02:30:59,699
+Ama varyansı çok daha
+
+807
+02:30:59,699 --> 02:31:00,419
+büyükmüş.
+
+808
+02:31:03,280 --> 02:31:04,020
+Şöyle bir
+
+809
+02:31:04,020 --> 02:31:06,319
+dağılımı var.
+
+810
+02:31:08,319 --> 02:31:09,159
+Diyebiliriz.
+
+811
+02:31:09,700 --> 02:31:10,099
+Bu da
+
+812
+02:31:10,099 --> 02:31:11,339
+plus
+
+813
+02:31:11,339 --> 02:31:17,240
+B sınıfı örneklerin dağılımını gösteriyor.
+
+814
+02:31:18,819 --> 02:31:20,420
+Bunun ortalaması da
+
+815
+02:31:20,420 --> 02:31:23,299
+şöyle dağılımını yapacak olursak
+
+816
+02:31:23,299 --> 02:31:26,119
+şurada bir yerde ortalaması var.
+
+817
+02:31:28,839 --> 02:31:30,259
+X özü niteliği için
+
+818
+02:31:30,259 --> 02:31:34,240
+şimdi Y özü niteliğine bakacak olursak
+
+819
+02:31:34,240 --> 02:31:36,179
+Y özü niteliğinin
+
+820
+02:31:36,179 --> 02:31:40,939
+A sınıfı örneklerinin
+
+821
+02:31:40,939 --> 02:31:43,299
+değişim aralığı 0.5 ile
+
+822
+02:31:43,299 --> 02:31:45,579
+0.7 arasında değer almış.
+
+823
+02:31:47,959 --> 02:31:50,100
+Ortalaması 0.6'dır.
+
+824
+02:31:50,359 --> 02:31:52,079
+Ve şöyle bir dağılım gösteriyor.
+
+825
+02:31:54,259 --> 02:31:54,740
+Bu yine
+
+826
+02:31:54,740 --> 02:31:59,139
+klas A.
+
+827
+02:32:00,439 --> 02:32:03,139
+Klas B için bakacak olursak
+
+828
+02:32:03,139 --> 02:32:04,619
+ortalaması
+
+829
+02:32:04,619 --> 02:32:06,880
+0.8 gibi bir değer.
+
+830
+02:32:09,579 --> 02:32:13,619
+Şurada bir yerde şöyle bir dağılım gösteriyor.
+
+831
+02:32:14,819 --> 02:32:17,520
+Bu da plus B.
+
+832
+02:32:18,020 --> 02:32:18,939
+B sınıfı.
+
+833
+02:32:20,579 --> 02:32:23,359
+Bunun ortalaması da şurada.
+
+834
+02:32:24,839 --> 02:32:31,279
+Bu ikisinin ortalama değerleri arasındaki uzaklık, her bir öz nitelik için bakın tekrar söylüyorum.
+
+835
+02:32:31,279 --> 02:32:33,899
+mesela Y öz niteliğinde
+
+836
+02:32:33,899 --> 02:32:35,699
+sınıfların ortalama değerleri
+
+837
+02:32:35,699 --> 02:32:38,219
+arasındaki açıklık yani uzaklık
+
+838
+02:32:38,219 --> 02:32:39,879
+ne kadar fazla ise
+
+839
+02:32:39,879 --> 02:32:42,219
+bu öz nitelik
+
+840
+02:32:42,219 --> 02:32:44,179
+sınıfları birbirinden ayırt etmede
+
+841
+02:32:44,179 --> 02:32:45,459
+o kadar etkindir.
+
+842
+02:32:45,959 --> 02:32:47,759
+Testte de zaten bunu görmüştük.
+
+843
+02:32:47,839 --> 02:32:50,219
+Ortalamaları arasındaki uzaklık demiştik.
+
+844
+02:32:50,619 --> 02:32:52,259
+Ama tek başına bu yeterli
+
+845
+02:32:52,259 --> 02:32:53,219
+değildir dedik.
+
+846
+02:32:54,740 --> 02:32:56,419
+Ortalama değerleri arasındaki
+
+847
+02:32:56,419 --> 02:32:57,599
+açıklık çok olacak.
+
+848
+02:32:58,020 --> 02:32:59,879
+Aynı zamanda varyansları
+
+849
+02:32:59,879 --> 02:33:00,919
+küçük olacak.
+
+850
+02:33:01,279 --> 02:33:06,659
+Varyansının küçük olması ne demek? Değişim aralığının dar bir bölgede olması anlamına geliyor.
+
+851
+02:33:07,299 --> 02:33:13,399
+Üstteki dağılımda yeşille çizmiş olduğum sınıf B için söylüyorum.
+
+852
+02:33:14,559 --> 02:33:22,359
+Varyansı çok büyük olduğu için veri A sınıfı ve B sınıfı için birbirine geçmişti.
+
+853
+02:33:22,719 --> 02:33:26,659
+Neden? Çünkü varyansı çok büyük bir klas B var orada.
+
+854
+02:33:26,659 --> 02:33:31,779
+Y öz niteliği için bakacak olursak
+
+855
+02:33:31,779 --> 02:33:34,079
+Y öz niteliğinde B sınıfının
+
+856
+02:33:34,079 --> 02:33:37,779
+dağılımı ve değişim aralığı
+
+857
+02:33:37,779 --> 02:33:39,180
+şurada
+
+858
+02:33:39,180 --> 02:33:41,159
+varyansı küçük.
+
+859
+02:33:41,680 --> 02:33:44,699
+Ama şurada baktığımızda varyansın büyük olduğunu görüyoruz.
+
+860
+02:33:44,779 --> 02:33:48,320
+Çünkü 0.2 ile 0.7 arasında değer almış.
+
+861
+02:33:48,659 --> 02:33:51,400
+Ama buradaki değişim aralığı çok daha düşük.
+
+862
+02:33:52,120 --> 02:33:54,939
+Varyansı ne kadar azsa o kadar iyi.
+
+863
+02:33:54,939 --> 02:33:57,859
+ortalamaları arasındaki uzaklık
+
+864
+02:33:57,859 --> 02:33:59,919
+ne kadar fazla ise o kadar
+
+865
+02:33:59,919 --> 02:34:01,859
+iyi. Bunu vurgulayan
+
+866
+02:34:01,859 --> 02:34:03,439
+bir test işleminiz var.
+
+867
+02:34:03,919 --> 02:34:05,839
+Ve bu test işlemini de
+
+868
+02:34:05,839 --> 02:34:07,359
+zaten
+
+869
+02:34:12,948 --> 02:34:42,607
+Şöyle yazmıştık, test eşitliğinde ortalama değerler arasındaki fark bölü, karikök içerisinde her bir sınıfın varyansı, A sınıfının varyansı bölü örnek sayısı, B sınıfının varyansı bölü örnek sayısı toplamlarında bir değer elde ediyor.
+
+870
+02:34:42,948 --> 02:35:04,208
+Testin büyük çıkması için yani test işleminin sonucunun büyük çıkması için kesrin üstündeki ifadenin büyük olması, kesrin altındaki ifadenin ise küçük olması gerekir. Böylece biz bu test işleminin sonucunun büyük çıkmasını sağlayabiliriz ya da büyük çıktığını görebiliriz.
+
+871
+02:35:04,207 --> 02:35:11,287
+Bu da bize, tekrar söylüyorum, kesrin altının küçük çıkması demek varyansların küçük olması ile mümkün olabilir
+
+872
+02:35:11,287 --> 02:35:18,207
+Dağılımların varyansları ne kadar küçükse bu kesrin altındaki ifade o kadar küçük olacaktır
+
+873
+02:35:18,827 --> 02:35:24,207
+Dolayısıyla sınıfları birbirinden ayırt etmede o kadar etkili olacaktır diyebiliyoruz
+
+874
+02:35:26,888 --> 02:35:32,367
+Bu yorumu yapabilmeniz çok önemli çünkü hiçbir şeyi ezbere yapmıyoruz
+
+875
+02:35:32,367 --> 02:35:35,427
+her şeyi anlayarak yapmamız gerekiyor.
+
+876
+02:35:35,707 --> 02:35:36,327
+Soru var mı?
+
+877
+02:35:40,084 --> 02:35:41,423
+yok. Peki.
+
+878
+02:35:41,584 --> 02:36:04,023
+Hocam, eldeyeye çok mu benziyor yoksa ben mi benzetiyorum? Linear diskriminant analizinde de evet, sınıf içi varyanslar, sınıflar arası varyans kavramları kullanılıyor, doğru. Ama burada öz nitelik bazında bir indirge, karşılaştırma yapıyoruz farkındaysanız.
+
+879
+02:36:04,764 --> 02:36:06,863
+Orada bütün nitelikleri kıyaslıyor.
+
+880
+02:36:06,863 --> 02:36:27,023
+Evet, evet. Ve buradaki kullanım amacımız feature selection. Mantığı aslında şey, yani güzel olan kullandığı mantık. Ve bu yöntemi uygulayabilmek için mutlaka tabii class labeled data olması gerekiyor. Elimizde sınıf etiketi olan veri olması gerekiyor.
+
+881
+02:36:29,124 --> 02:36:30,343
+Anladım hocam, teşekkür ederim.
+
+882
+02:36:30,343 --> 02:36:48,823
+Evet örneğe geri dönecek olursak bu örnek üzerinden hesaplamaları yaptığımızda az önce gördüğümüz gibi A sınıfı sampulların X değerleri B sınıfı sampulların X değerlerinden ortalamaları hesapladık, varyansları hesapladık.
+
+883
+02:36:49,183 --> 02:36:59,923
+Y öz niteliği için A sınıfına ait sampulların değerlerini bunların ortalaması hesapladık, varyanslarını hesapladık.
+
+884
+02:37:00,343 --> 02:37:10,903
+Buradan test denkleminde, eşitliğinde bize verilen ifadede yerlerine yazıp bu karşılaştırmayı yapabiliyoruz.
+
+885
+02:37:10,903 --> 02:37:13,323
+Karşılaştırmayı yaptığımızda
+
+886
+02:37:17,012 --> 02:37:31,191
+X öz niteliği için test işleminin sonucu 0.0735 çıkmış. Y öz niteliği için baktığımızda test işleminin sonucu 2.66 çıkmış.
+
+887
+02:37:31,191 --> 02:37:41,192
+Zaten yaptığımız çizimde de gördünüz, değerleri az çok tabloda gördüğümüz sayılara uygun yerleştirmeye çalıştık.
+
+888
+02:37:41,192 --> 02:37:54,671
+çalıştık. Y öz niteliğin için A sınıfı ve B sınıfı örneklerin dağılımları birbiri içine geçmemiş olduğu için Y öz niteliği daha ayırt edici bir öz nitelik olarak görünüyor.
+
+889
+02:37:56,131 --> 02:38:00,032
+Ve bu seçimi buna göre yapabiliyoruz.
+
+890
+02:38:02,631 --> 02:38:10,211
+Evet, future composition yöntemlerini haftaya geçeceğim. Bu hafta için bu kadar diyebiliriz.
+
+891
+02:38:10,211 --> 02:38:19,671
+sorunuz var mıdır acaba? Hocam benim ufak bir sorun var ama hani outlier'larla ilgili. Buyurun. Tabii.
+
+892
+02:38:19,671 --> 02:38:40,191
+[öğrenci] ben bu arada. Şimdi şöyle yüksek lisans tezimi yaparken şöyle bir sorun çıktı bende. Anadatada bir grup var ama bir grupta kendi içerisinde sağda bir yerde duruyor ayrı olarak. Hani bir network olarak hani visualize edersek veya düzleme koyarsak. Ama şöyle bir kısım var. O köşede duran kısım datanın yüzde
+
+893
+02:38:40,192 --> 02:38:50,831
+%25'i %30'u falan. Bu tarz durumlarda ne yapmamız gerekiyor? Ben mesela incelediğimde onları kendi içinde ayrı bir network olarak ayırdım.
+
+894
+02:38:51,952 --> 02:38:56,732
+Outlier'lar ama kendi işlerinde kendi bir mantıkları var. O zaman datayı mı ayırmamız gerekiyor?
+
+895
+02:38:57,952 --> 02:39:05,232
+Aslında miktar olarak çok fazla değil mi? %25, %30 dediğiniz zaman gerçekten çok büyük bir veriden bahsediyorsunuz.
+
+896
+02:39:05,232 --> 02:39:21,052
+Yani outlier diye bunları etiketlemek o yüzden çok kolay değil. Miktarı fazla olduğu için. Verinin toplam miktarına bakmak tabii orada akıllıca olabilir. Bir de sınıf etiketi var mıydı sorusu?
+
+897
+02:39:23,931 --> 02:39:26,271
+Efendim bir daha demeyelim hocam bir ses kesildi de.
+
+898
+02:39:26,972 --> 02:39:28,931
+Sınıf etiketi var mıydı veride?
+
+899
+02:39:28,931 --> 02:39:30,431
+Yok etiketsiz.
+
+900
+02:39:30,711 --> 02:39:31,931
+Yok etiketsiz veri.
+
+901
+02:39:31,931 --> 02:39:42,172
+sınıf etiketi yok. Yani eğer öyle olsa yine sınıf içi değerlendirme yapabilirsiniz diyecektim ama sınıf etiketi yoksa tabii bunu yapmanız mümkün değil.
+
+902
+02:39:44,512 --> 02:39:51,271
+Ya onları çıkarıp baktınız mı hiç? Tamamını çıkarsanız ne kalıyor elde? Yani tamamını bir anlamlı iş yapılabilir mi?
+
+903
+02:39:51,271 --> 02:40:00,051
+Yani şöyle yapmıştım ben mesela hani onları çıkarıp onları bir ada gibi koyup ana veriydi ana kara gibi düşünüp ikisini farklı incelemiştim.
+
+904
+02:40:00,051 --> 02:40:04,051
+en mantıklısı o geldi. Onu ayrı bir data seti olarak almıştım.
+
+905
+02:40:05,071 --> 02:40:12,831
+Anladım. Evet yapılabilir ama mesela bunun yanı sıra ikisini bir arada değerlendirip bir çalışmada yapabilirdiniz.
+
+906
+02:40:14,851 --> 02:40:21,331
+İşte orada benim kafam karıştı o yüzden öbürü daha mantıklı geldi bana. Daha mantıklarken kafama yattı diyeyim mantıklı değil mi?
+
+907
+02:40:21,331 --> 02:40:28,991
+Evet anladım. Yani dediğim gibi bu işlerde tek bir doğru var da diyemiyorsunuz. Mutlaka denemeniz gerekiyor.
+
+908
+02:40:28,991 --> 02:40:31,471
+karşılaştırmalı işlem yapmamız gerekiyor.
+
+909
+02:40:32,931 --> 02:40:37,691
+Tamam. Teşekkür ederim hocam. Deneyip tekrar o zaman bakacağız hangisinde sonuçlar nasıl çıkıyor diye.
+
+910
+02:40:39,012 --> 02:40:40,732
+Evet. Başka sorunuz var mı?
+
+911
+02:40:42,571 --> 02:40:51,531
+Arkadaşa bir şey katabilirim hocam. Tekli mi bakmış acaba? Çoklu ağırlara mı bakmış? Yani multiple mi bakmış? Diğer future'ları da katmış mı işin içine?
+
+912
+02:40:52,691 --> 02:40:54,031
+Tabii tabii çoklu olarak da.
+
+913
+02:40:55,131 --> 02:40:56,531
+Orada ilerlemeye çıkıyor.
+
+914
+02:40:56,531 --> 02:40:59,611
+şey hani motorayet olarak
+
+915
+02:40:59,611 --> 02:41:05,051
+adıcık dediğiniz kümelenmiş bir veri var orada diyorsunuz öyle mi?
+
+916
+02:41:05,051 --> 02:41:09,311
+o grafiğe döktün mü peki sonuçlarını hani böyle
+
+917
+02:41:10,708 --> 02:41:21,227
+çünkü şey oluyor, görebiliyorsun böyle hani o %25'in böyle ufak bir kesimi gerçekten uçurum oluyor. Ama diğer kesimler normal gözüküyor ama outlier'da gözükebiliyorlar. Onu böyle bir grafiğe döksen.
+
+918
+02:41:22,067 --> 02:41:34,847
+Şey oldu zaten, hani dedim ya bir taraf ana kara gibi oldu verinin tamamı. Bunlar küçük böyle ayrı bir ada gibi böyle. Ana karadan uzakta ayrı bir ada gibi. Kendi içerisinde mesela ayrı ayrı kümelenmeleri de vardı. O yüzden ben ayırdım mesela.
+
+919
+02:41:35,747 --> 02:41:36,927
+Geçmiş olsun, zormuş.
+
+920
+02:41:38,327 --> 02:41:39,007
+Teşekkürler.
+
+921
+02:41:39,007 --> 02:41:43,627
+Çalışmada kaça böldünüz veriyi? Yani clustering yaptınız herhalde değil mi?
+
+922
+02:41:45,267 --> 02:41:48,947
+Valla hocam o kadar iki sene geçti hatırlamam ama algoritmalardan geçti.
+
+923
+02:41:49,087 --> 02:41:54,507
+Kendi algoritmaları da vardı. Network algoritmalarından geçti. Clustering'ini yaptı.
+
+924
+02:41:54,587 --> 02:41:59,127
+Onların modification'larını falan da yaptım. Tekrar bir bakarım. Olmadı.
+
+925
+02:42:00,748 --> 02:42:07,467
+Şunu söylemek istiyorum. Yani kümeleme yaptığınızda belki kümeler dengeli dağılmamış olabilir.
+
+926
+02:42:07,467 --> 02:42:19,667
+bir kümede daha çok veri, diğer kümede daha az veri olabilir. Yani siz zaten kümeleri birbirinden ayırıp bir işlem yapmış gibi oluyorsunuz. Eğer bu veriyi bölerseniz.
+
+927
+02:42:19,667 --> 02:42:34,888
+Şeye baktığımızda, Subject Matter Expert'la baktığımızda şey çıktı zaten o, film datası olduğu için independent producerlar çıktı. Onların datası çıktığı için sıkıntı olmuş zaten. Hani ana network'tan zaten ayrılmışlar.
+
+928
+02:42:34,888 --> 02:42:45,527
+ama genel bir mantık olarak böyle yüksek çıkarsa nasıl yapacağız diye sordum ama tamam. Deneyip görmek lazım her türlü karşılaştıracağız yani.
+
+929
+02:42:45,527 --> 02:43:01,307
+Evet yani veri madenciliği biraz öyle o akış içerisindeki feedbackleri hatırlıyorsunuz sonuca gidiyorsunuz sonra tekrar geri dönüp bir şeyleri değiştirip tekrar sonuç alıyorsunuz ve karşılaştırıyorsunuz sonuçlarınızı. Böyle bir süreç.
+
+930
+02:43:01,307 --> 02:43:07,708
+Peki arkadaşlar teşekkür ediyorum. Bu haftalık bu kadar. Sağ olun hocam.
+
+931
+02:43:07,727 --> 02:43:08,788
+Sağlıcakla kalın.
+
+932
+02:43:08,907 --> 02:43:09,947
+Teşekkürler.
+
+933
+02:43:11,108 --> 02:43:11,527
+Buyurun.
+
+934
+02:43:12,227 --> 02:43:20,228
+Bu son yaptığımız örnekte ben şeyi yakalayamadım da biz burada hangi veriyi indirgemiş olduk?
+
+935
+02:43:20,228 --> 02:43:24,508
+O feature selection ile ilgili en son yaptığımız örnek var mı hocam? Sınıfları ayırdık.
+
+936
+02:43:24,747 --> 02:43:25,068
+Evet.
+
+937
+02:43:26,648 --> 02:43:29,728
+Neyi tespit etmiş olduk? Bunu yakalayamadım da.
+
+938
+02:43:29,728 --> 02:43:45,188
+Amacımız neydi? Feature Selection yapmaktı. Yani bizim iki tane feature'umuz var. X ve Y feature'leri. Bunlardan hangisi daha değerli? A ve B sınıflarını birbirinden ayırt etmeden hangisi daha etkilidir? Cevabını arıyorduk.
+
+939
+02:43:45,187 --> 02:44:00,167
+ve bu işlemin sonucunu test parametresini ölçerek yaptık. Test parametresi Y öz niteliği için daha büyük çıktı X ile kıyasladığımız zaman.
+
+940
+02:44:00,167 --> 02:44:10,648
+O nedenle Y öz niteliğinin ayırt ediciliğinin sınıfları birbirinden ayırt etmede daha etkin olduğunu gördük.
+
+941
+02:44:10,648 --> 02:44:27,528
+Eğer bir selection yapmak gerekirse X öz niteliği ile Y öz niteliği arasında bir seçim yapmamız gerekirse Y'yi seçeriz Y daha değerlidir X öz niteliğini ise veri setinden silip atabiliriz
+
+942
+02:44:27,527 --> 02:44:45,487
+Tabii bu örneği çok sığ bir örnek olarak verdik kolay çözülebilir olsun diye. Veri setinde ikiden fazla öz nitelik olacak. Belki 50 tane 100 tane öz nitelik için biz bu test işlemini yapacağız. Test skorlarını büyükten küçüğe doğru sıralayacağız.
+
+943
+02:44:45,487 --> 02:45:03,747
+Test sonucu skoru en büyük olanlar en değerli öz nitelikler olacak. Test skoru küçük olanlar ise veri setindeki değersiz öz nitelikler olacak ve onları veri setinden silerek öz nitelik sayısını azaltmış olacağız. Amaç buydu.
+
+944
+02:45:04,568 --> 02:45:06,027
+Doğru hocam çok teşekkür ederim.
+
+945
+02:45:06,167 --> 02:45:09,088
+Rica ederim. Haftaya bir daha büyüsünden geçeriz.
+
+946
+02:45:10,164 --> 02:45:12,164
+Evet, sorunuz var mı arkadaşlar?
+
+947
+02:45:14,383 --> 02:45:20,403
+Peki. Hepinize iyi günler, sağlıkla kalın. Bana bir el sallayın bakayım çıkarken.
+
+948
+02:45:20,403 --> 02:45:25,223
+Evet. Teşekkürler.
+
+949
+02:45:25,223 --> 02:45:40,684
+[öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci]
+
+950
+02:45:40,684 --> 02:45:47,543
+İyi günler arkadaşlar isimlerini okuduğum arkadaşlar ayrılabilir [öğrenci] hoşçakalın
+
+951
+02:45:47,543 --> 02:45:49,263
+Hocam biz ayrılamıyor muyuz?
+
+952
+02:45:49,263 --> 02:46:17,223
+el kaldırın dedim. [öğrenci] el kaldırmadığın için adını okumadı. Hocam ben nereden el kaldırıldığını bulamadım açıkçası. [öğrenci] şu an elim tavada senin. Evet [öğrenci] teşekkür ediyorum. Evet [öğrenci], [öğrenci] hoşçakalın. İyi günler hocam. İyi günler arkadaşlar. Geriye kalanları bir göreyim. İyi günler. İyi günler. Hoşçakalın.
+
+953
+02:46:17,223 --> 02:46:21,344
+Evet [öğrenci], [öğrenci], teşekkürler
+
+954
+02:46:21,344 --> 02:46:21,783
+İyi günler
+
+955
+02:46:21,783 --> 02:46:25,303
+[öğrenci]
+
+956
+02:46:29,971 --> 02:46:37,651
+[öğrenci], hoşçakalın. Geriye kalan arkadaşlar derste yoklar galiba. [öğrenci], derste misin?
+
+957
+02:46:38,471 --> 02:46:39,192
+Buradayız hocam.
+
+958
+02:46:39,932 --> 02:46:42,211
+[öğrenci], tamam. Hoşçakalın.
+
+959
+02:46:42,511 --> 02:46:43,331
+Ben de buradayım.
+
+960
+02:46:43,932 --> 02:46:47,211
+Tamam. Az önce elin kalkmamıştı o yüzden.
+
+961
+02:46:48,211 --> 02:46:53,812
+Hocam ben de buradayım. Yalnız bir krizle uğraşıyordum. Kusura bakmayın.
+
+962
+02:46:53,812 --> 02:47:22,451
+enteresan bir durum oldu harçla ilgili. Bir anda öğrenciliğin pasifi alınmış. Her kriz geçiyor. Hem ders izliyorsun hem öğrenci değilsin. Bak şimdi. Yani öğrenci belgesi talep ettim. Mail geldi enstitüden. Yanlışlık olmuş. Bir harç yatırılmamış. Çok enteresan. Sistemden de kontrol etmiştim. Gözükmüyor. Sonra tanımladılar benim için harç tekrardan. Biraz çileli oldu.
+
+963
+02:47:22,451 --> 02:47:23,411
+şimdi de işte
+
+964
+02:47:23,411 --> 02:47:24,611
+çok iyi
+
+965
+02:47:24,611 --> 02:47:29,751
+görüşürüz haftaya [öğrenci]
+
+966
+02:47:29,751 --> 02:47:31,372
+görüşmek üzere hocam hoşçakal
+
+967
+02:47:31,372 --> 02:47:31,992
+hoşçakal
+
+968
+02:47:31,992 --> 02:47:33,652
+evet
+
+969
+02:47:33,652 --> 02:47:35,152
+hoşçakal
+
+970
+02:47:35,152 --> 02:47:38,772
+[öğrenci] burada mısın?
+
+971
+02:47:39,731 --> 02:47:40,171
+[öğrenci]
+
+972
+02:47:40,171 --> 02:47:42,832
+ben buradayım
+
+973
+02:47:42,832 --> 02:47:44,971
+elimi almadım aslında ama
+
+974
+02:47:44,971 --> 02:47:46,552
+ben de el kaldırdım
+
+975
+02:47:46,552 --> 02:47:49,971
+gözükmüyor sizde
+
+976
+02:47:49,971 --> 02:47:52,171
+bir daha kaldırayım
+
+977
+02:47:52,171 --> 02:48:19,332
+Bakayım. Ekranımda mı çıkmıyor? Yok ben göremiyorum. Şu reaksiyon kısmından kaldırıyoruz ama. Ya daha doğrusu ben oradan. Participants da galiba. Raise your hand oradaydı. Dur bakayım ben. Ben de bakayım. Gördüm sanki. Evet şimdi oldu. Peki. Görüşürüz [öğrenci]. Hoşçakal [öğrenci]. Görüşürüz.
+
+978
+02:48:19,332 --> 02:48:22,652
+Dersi bitirebiliriz. Hoşçakalın.
