@@ -1,0 +1,2179 @@
+1
+00:03:04,692 --> 00:03:14,592
+Hoş geldiniz arkadaşlar. Bu dönem ni birlikte yürüteceğiz.
+
+2
+00:03:16,152 --> 00:03:29,632
+Bugün ben bir giriş yapmak istiyorum sizlere. Dersin içeriğinde ne var? İlerleyen haftalarda nelerle karşılaşacağız? Nasıl bir değerlendirme sistemiyle ders yürütüyor olacağız?
+
+3
+00:03:30,355 --> 00:03:34,075
+Bir de algoritma analizine temel bir giriş yapacağım.
+
+4
+00:03:34,075 --> 00:03:41,036
+Şimdi önce kaynaklardan başlayalım.
+
+5
+00:03:41,036 --> 00:03:47,756
+Şimdi burada gördüğünüz kitaplardan ilk ikisini özellikle bolca kullandım.
+
+6
+00:03:47,987 --> 00:03:59,687
+Tabii online olarak da erişebiliyorsunuz. PDF'lerine bunların. Tabii internette bolca kaynak da var. Spesifik olarak bilgi edinmek istediğiniz bir konuda.
+
+7
+00:04:00,692 --> 00:04:10,612
+Bir tane gradingi bir proje, bir midterm exam, bir final exam yazmışım. Buradaki projeden kastım aslında bakarsanız bir sunum sizden yapmanızı bekliyorum.
+
+8
+00:04:10,612 --> 00:04:24,271
+Şimdi biz haftalar boyunca, yani son haftalara kadar çeşitli algoritma tasarlama yöntemlerinden bahsediyoruz. Bunların hepsini ayrı ayrı analizleri üzerinde durarak zaten ders boyunca işleyeceğiz.
+
+9
+00:04:24,755 --> 00:04:36,755
+Tabi bu dersin amacı hem temel algoritmik yapılar üzerindeki bilginizi tazelemek ve algoritma analizi ile alakalı bilginizi tazelemek bir de...
+
+10
+00:04:37,204 --> 00:05:05,204
+Daha advanced olan yapılara giriş yapabilmek ve bu advanced yapıların günümüzdeki kullanım amaçlarına dair bilgiler verebilmek. Dolayısıyla çok fazla aslında ileri algoritma yapı var burada, data yapısı var özellikle. Bunları lisans seviyesinde çok görme şansımız olmuyor. Ve her senede artıyor bunların çeşitliliği. Ben sizlerin kendi ilgi alanlarınız dahilinde bu yapılardan benim genelde ben ve...
+
+11
+00:05:05,204 --> 00:05:30,764
+Bir liste. Sizden de gelen önerileri açığım. İnceleyebileceğiniz, kullanım alanlarını bizlere anlatabileceğiniz, temel yapının orijini oluşturan yapılardan başlayarak, temel bilgileri vererek bugünkü kullanım alanına kadar götüreceğiniz bir sunum yapmanızı bekliyorum. Bu son haftalara tekabül ediyor. Bir de tabii buna sunumla beraber bir de rapor hazırlamanızı bekliyorum.
+
+12
+00:05:31,636 --> 00:05:54,975
+Bir tanesi bu. Notlandırma ile ilgili kalemlerde. Ara sınavımız var, bir de final sınavımız var. Şimdilik öngörüm bu şekilde. Burada haftaların yerleşimini biraz sizlerin işte proje hazırlamak isteyen arkadaşların sayısına göre çünkü biraz dersi belki bırakanlar olabiliyor ilerleyen haftalarda falan. Yerleşim o noktada biraz daha dinamik bir yapıda olacak.
+
+13
+00:05:57,267 --> 00:06:12,227
+Evet, temel olarak bir algoritma nedir dediğimiz zaman burada önemli bir kavram olan herhangi bir karmaşıklığa yol açmadan bir takım komutları verebilmek. Yani karmaşıklığa yol açmamaktan kastım şu.
+
+14
+00:06:12,819 --> 00:06:28,180
+Yani net olacak. Böyle mi böyle mi gibi değil. Net bir şekilde bir takım instructionların dizi halinde verilmesi ve bunu belirli bir kabul edilebilir bir zaman içerisinde çözülmesini bekliyoruz problemimizin.
+
+15
+00:06:28,180 --> 00:06:38,439
+İmputumuzu alıp outputumuzu eritecek şekilde. Şimdi bir algoritmanın iyi olması ne demektir? Tabii ki doğru çalışacak.
+
+16
+00:06:39,187 --> 00:07:02,687
+Efficient olacak. Biz bu derste bol bununla ilgileniyoruz. Burada efficiency'yi hem zaman hem de space, yani yer açısından değerlendirmek gerekiyor. Sizlerin de bildiği gibi sisteminizin gereksinimlerine göre mümkün olduğunca genelleştirilebilir bir yapıda olacak.
+
+17
+00:07:04,660 --> 00:07:10,399
+Farklı domenlerde de kullanılabilmesi açısından. Genelleştirilebilir, modifiye edilebilir, bakım yapılabilir.
+
+18
+00:07:12,660 --> 00:07:17,960
+Peki, her zaman daha iyi bir algoritma var mıdır? Bunu araştırmak zaten aslında bu bilimin işi.
+
+19
+00:07:19,779 --> 00:07:28,159
+Daha iyi çalışma sürelerine sahip, optimum olmaya daha yatkın algoritmaları aramak gerekiyor.
+
+20
+00:07:29,300 --> 00:07:51,259
+Şimdi birtakım temel data structure'lar var. Bu data structure'ları geçeceğim önce ama galiba size atladım vermeyi arkadaşlar. Onun bir üzerinden geçelim ondan sonra bunu yapalım. Sıra bakmayın. İçeriği bir paylaşmadım sizinle. Önce bir içeriği paylaşayım.
+
+21
+00:07:59,315 --> 00:08:00,315
+Pardon.
+
+22
+00:08:11,156 --> 00:08:27,256
+Bunları sayfaları geçmiş yanlışlıkla bir şekilde. Tamam, pardon. Hemen şimdi geliyorum. Şunları bir şekilde geçmişim. Şu an paylaşımı durdurdum zannedersem ama değil mi? Tekrar paylaşalım.
+
+23
+00:08:30,932 --> 00:08:38,532
+Evet. Geldi mi arkadaşlar? Gelmemiş. Pardon.
+
+24
+00:08:47,731 --> 00:08:48,031
+Tamam.
+
+25
+00:08:53,875 --> 00:09:11,975
+Tamam. Şimdi biz bu derste neler göreceğiz? Öncelikle algoritma temellerinden bahsedeceğim. Burada algoritmanın hızıyla alakalı efficiency classlarımız var. Asomtetik analizde bulduğumuz.
+
+26
+00:09:12,416 --> 00:09:27,135
+Bunları lisansta da zaman zaman mutlaka görmüşsünüzdür. Bu sınıflara bir giriş yapacağım. Nedir bunlar? Notasyonlar, Big O Notation, Big Data, Big Omega gibi. Büyüme hızı nedir? Bunlardan bir kavramsal olarak bahsedeceğiz.
+
+27
+00:09:27,135 --> 00:09:35,655
+Sonra Recursive ve Non-Recursive algoritmaların analize söz konusu. Burada farklı metodlar var.
+
+28
+00:09:36,371 --> 00:09:49,231
+İşte backward substitution yapabilmek ya da işte recurrence relation'ı bulabilmek. Bir recurrence fonksiyonda yani kapalı bir çevrim şeklinde çalışma zamanını ortaya koyan bir fonksiyon yazabilmek.
+
+29
+00:09:49,831 --> 00:10:02,711
+Farklı yöntemlerle bunları analiz ediyor olacağız. Aynı şekilde non-recurrence algoritmalarda da karmaşıklığı nasıl hesaplandığını, hangi parametrelere bu anlamda dikkat etmek gerektiğini konuşacağız.
+
+30
+00:10:03,572 --> 00:10:29,991
+Divide and Conquer algoritmaları var. Bunlardan birkaç farklı alt başlık, decrease and Conquer ya da transform and Conquer gibi bahsediyor olacağım ama her seferinde karşılaştırma yapmak aslında faydalı oluyor. Dolayısıyla brute force algoritmaları, exhaustive search algoritmalardan da bahsedeceğim ki bu yapıları karşılaştırarak ele alabilelim diye.
+
+31
+00:10:31,316 --> 00:10:44,576
+Hashing algoritmaları var sonrasında. Klasik entermal hashing ile alakalı probing, open probing, close probing falan vereceğim. Ondan sonra da biraz bunları kriptoloji açısından hashing algoritmalarına bir iş yapacağız.
+
+32
+00:10:51,392 --> 00:10:56,672
+Hem dinamik algoritmaların çalışma mantığına bakacağız hem de bunların analizi nasıl yapılıyor bakacağız.
+
+33
+00:10:56,672 --> 00:11:04,711
+Burada işte temel road coding, Matrix Chain Multiplication gibi birtakım örnekler üzerinden gideceğiz.
+
+34
+00:11:04,711 --> 00:11:07,832
+Sonra greedy algoritmalar karşımıza çıkıyor.
+
+35
+00:11:07,832 --> 00:11:17,951
+İşte Activity Selection problem üzerinden, greedy stratejide elemanlar nelerdir, bunların analizi nasıl yapılır, bunlara bakacağız.
+
+36
+00:11:18,995 --> 00:11:34,316
+Muhtemelen 8. hafta gibi bir ara sınavımız olacak. Sonrasında bir amortize analizden bahsetmek istiyorum size. Bu, aslına bakarsanız bir algoritmanın karmaşıklığına dair worst case, best case senaryoları var bildiğiniz gibi.
+
+37
+00:11:42,548 --> 00:11:59,327
+Biraz pesimistik olduğu fikri üzerine çıkmış bir analiz çeşidi bu amortize analiz. Bunu yapabilmenin farklı metodları var. Potential Metod, Accounting Metod vs. Örnekler üzerinden bir hafta bunlarla ilgili bilgi vermek istiyorum.
+
+38
+00:12:00,548 --> 00:12:05,347
+Advanced Data Structure'lar var. B-Tree'ler, Fibonacci Heap'ler gibi.
+
+39
+00:12:06,004 --> 00:12:14,004
+Temel olarak Data Structure'ları hatırlayıp sonrasında Advanced olanlarından bahsederek devam edeceğiz.
+
+40
+00:12:14,004 --> 00:12:27,004
+Şimdi graflarla ilgili çalışmalarımız olacak. String Matching algoritmaları var temel. Bunlardan bahsedeceğim.
+
+41
+00:12:27,004 --> 00:12:30,004
+Approximation algoritmalarından bahsedeceğim.
+
+42
+00:12:30,259 --> 00:12:35,899
+Bu aralarda tabi sunumlar başlayacak. İki ya da üç haftayı sunumlara ayırıyor olacağız.
+
+43
+00:12:36,659 --> 00:12:38,460
+Akış bu şekilde.
+
+44
+00:12:40,500 --> 00:12:42,799
+Buraları anlatmıştım sizlere.
+
+45
+00:12:43,819 --> 00:12:46,639
+Şimdi temel data structure'larımız neler bizim?
+
+46
+00:12:46,899 --> 00:12:51,759
+Linear data structure'larımız var. Diziler, LinkedIn listeler, stackler, Q'lar gibi.
+
+47
+00:12:52,279 --> 00:12:54,319
+Graflarımız var biliyorsunuz.
+
+48
+00:12:55,155 --> 00:13:00,315
+Bunlar da bu graflarda farklı şekillerde kurgulanıyor, tutuluyor.
+
+49
+00:13:00,315 --> 00:13:07,315
+İşte, bitişiklik matrisi ya da listeler gibi nodlardan ve ejderden oluşan trilerimiz var.
+
+50
+00:13:07,315 --> 00:13:17,555
+Bir de setlerimiz var. Bunlar üzerinden birtakım temel bilgileri yeri geldikçe ilgili yapının Advanced versiyonuna geçmeden önce size anlatıyor olacağım zaten ben.
+
+51
+00:13:17,555 --> 00:13:22,355
+Şimdi bir algoritmanın analizinde
+
+52
+00:13:22,868 --> 00:13:45,808
+Analizi düşündüğümüz vakit. Burada bizim performansımızı etkileyen parametreler nelerdir? Birincisi sistemden bağımsız en büyük etken tabii ki algoritmanın kendisi. Bir problemi çözerken kullandığınız algoritmanın kendisi. Sistem bağımlı etkenler var. Bunlar işte donanımımız.
+
+53
+00:13:46,323 --> 00:13:56,004
+İşte kompilerimiz vesaire yazılımımız ve sistemimiz. Bunlar birleştiği vakit sizin algoritmanızın çalışma zamanıyla alakalı bir bilgi ortaya çıkıyor.
+
+54
+00:13:57,384 --> 00:14:02,543
+Şimdi burada şunu şöyle bir anlat istiyorum.
+
+55
+00:14:05,783 --> 00:14:11,723
+Tabii ki algoritmamızın çalışma zamanıyla alakalı dikkat etmemiz gereken
+
+56
+00:14:12,244 --> 00:14:28,224
+Bu kısmın sistemden bağımlı mı, bağımsız mı özellikler olduğu ya da işte verinin boyutuyla ilişkisini vesaire anlayabilmek için burada ufak bir formülasyon var.
+
+57
+00:14:30,035 --> 00:14:51,415
+Şimdi normal koşullarda tabii ki kullandığınız üzerinde oynama yaptığınız verenin boyutu doğrudan sizde algoritmanızın çalışma zamanını etkiliyor. Mesela eğer iki tane madresi çarpıyorsanız burada elemanlar önemli bir etkiye sahip. Ya da bir polinomu değerlendiriyorsanız polinomu degreesi çalışma zamanınıza etkiliydi.
+
+58
+00:14:51,415 --> 00:14:55,195
+Şimdi şurada bir rezerv pointe'ye geçeyim.
+
+59
+00:14:58,644 --> 00:15:11,044
+Bakın şurada, tl sizin çalışma zamanınızla alakalı bir fonksiyonu olsun. Eniniz datanızın boyutunu işaret ediyor.
+
+60
+00:15:11,044 --> 00:15:17,444
+Şimdi c-op, bir basic operation'ın, algoritmanızdaki bir basic operation'ın
+
+61
+00:15:17,620 --> 00:15:33,419
+çalışması için gerekli olan zaman, yani sisteminizde bağımlı bir birim bu. Sistem Dependent olarak herhangi bir Basic Operation'ı var, bir toplama, karşılaştırma vs. Bu Basic Operation için gerekli olan zaman C-OP ile gösterilmiş.
+
+62
+00:15:37,748 --> 00:15:50,707
+Algoritma boyunca tekrarlanması da C'e göstereyim. Bunları çarptığınız vakit toplam algoritmanız için bir zaman parametresi elde ediyorsunuz. Yani ne kadar zaman harcadığına dair bir bilgi elde ediyorsunuz.
+
+63
+00:16:02,932 --> 00:16:08,932
+Basic Operasyonu n'e bağlı olarak fonksiyonunu bulmak üzerinden analizi tamamlamak.
+
+64
+00:16:08,932 --> 00:16:14,932
+Şimdi burada şöyle bir fonksiyon bu algoritma için verilmiş olsun.
+
+65
+00:16:14,932 --> 00:16:23,932
+1 bölü 2'e çarpı n-1 diye. Yani Basic Operasyonu n'e bağlı olarak tekrarlanma sayısını gösteren bir fonksiyon bu.
+
+66
+00:16:23,932 --> 00:16:26,604
+Şimdi burada eğer ben input size'ı...
+
+67
+00:16:26,644 --> 00:16:36,644
+İki katına çıkarırsam, total zamanımda nasıl bir değişiklik olur diye soracak olursam, aslında yapacağım şey şu ikisinin oranını bulmak.
+
+68
+00:16:36,644 --> 00:16:48,644
+Yani, totalde iki enlik bir datam varken toplam zamanım ne harcadığım enlik bir datam varken harcadığım zamanım ne? Bunların oranına bakıyorum.
+
+69
+00:16:50,515 --> 00:16:57,555
+Açtığınız zaman karşımızda 1 bölü 2 n kare eksi 1 bölü 2 n gibi bir şey ortaya çıkıyor.
+
+70
+00:16:58,195 --> 00:17:04,235
+Şimdi bizim algoritmaların analizinde sürekli olarak kafamızda bulunduğumuz şey,
+
+71
+00:17:05,016 --> 00:17:15,895
+datanın boyutunun küçük olduğu zamanlar için bu analizi getireceği getiriden ziyade çok büyük olduğu zamanlarda olayın nereye doğru gitti.
+
+72
+00:17:16,736 --> 00:17:36,856
+Sizin 10 tane, 15 tane elemanınız varsa bunları sort etmek için kullanacağınız algoritmalar zaten çok ciddi bir fark yaratamayacak ama burada çok fazla elemandan bahsediyorsanız, işte o zaman algoritma 1 milyon tane, 10 milyon tane elemandan bahsediyorsanız o zaman burada algoritma size bir hız kazandıracak vs.
+
+73
+00:17:36,856 --> 00:17:41,856
+Dolayısıyla enin hep sonsuza gittiği durumlar için biz bu analizleri konuşuyoruz.
+
+74
+00:17:44,915 --> 00:17:55,556
+Enin çok büyük değerleri için şu şekilde verilmiş bir fonksiyonda en karenin artma miktarı çok büyük olacağından,
+
+75
+00:17:55,815 --> 00:18:07,355
+aslına bakarsanız buradaki çalışma zamanında enin bu bir olan üstü, yani sadece en kat sayısıyla verilmiş olan kısmın etkisi ihmal edilebilir, derecede küçük oluyor.
+
+76
+00:18:07,355 --> 00:18:11,715
+Dolayısıyla buradaki çalışma zamanını şu şekilde yakın sayabiliriz.
+
+77
+00:18:12,435 --> 00:18:24,476
+Şimdi T2N böyle N'in oranını hesapladığınız zaman COP'la C'de parametre olarak 2N verdiğiniz değerin çarpımı ve N olarak verdiğiniz değerin çarpımının oranına da ekleniyor.
+
+78
+00:18:25,016 --> 00:18:29,115
+O da işte şuradaki formulizasyondan oransal olarak bize 4 veriyor.
+
+79
+00:18:29,935 --> 00:18:35,375
+Şimdi bu bilgi bana, bu hesaplama bana nasıl bir bilgi verdi?
+
+80
+00:18:39,955 --> 00:18:57,315
+Sistem Dependent bilginin, aslına bakarsanız algoritmada yaptığım değişikliğin analizine dair bize bir bilgi vermediğini, bunun sistem dependent özelliklerin zaten order of growth yani büyüme hızı açısından elendiğini görüyoruz.
+
+81
+00:18:58,455 --> 00:19:01,395
+Dolayısıyla bizim ilgilenmemiz gereken şey burada.
+
+82
+00:19:02,067 --> 00:19:14,288
+Datamızın büyüklüğü üzerinden, datamızın büyüklüğünün iki kat arttığı, dört kat arttığı vesaire durumda benim overall'da çalışma hızım kaç kat artar gibi bir hesap yapabilmek.
+
+83
+00:19:21,971 --> 00:19:47,692
+Bir takım temel çok sıklıkla karşılaştığımız algoritmaların hızları var. Temel bir işlem varsa tek bir işte A eşittir B artı C yani bir atama işlemini tek bir statementımız var. İki sayıyı topluyorsunuz.
+
+84
+00:19:48,084 --> 00:19:58,224
+Burada yaptığınız işlemin karmaşıklığı tabii ki 1 oluyor. Yani iki katına çıkarttığınız vakit buradaki data sayısına konstant bir işlem yaptığınız için bir etki yok.
+
+85
+00:19:58,224 --> 00:20:11,284
+Şimdi eğer örneği binary search yapıyorsanız yani her seferinde ikiyi ayırarak search ediyorsanız diyelim ki bir dizi içerisindeki bir elemanı burada logaritmik bir karmaşıklık var.
+
+86
+00:20:13,779 --> 00:20:33,019
+Dolayısıyla iki katına çıkarttığınızda datayı çok fazla bir şeyle karşılaşmıyorsunuz büyümeyle. Şimdi linear olduğu vakit mesela bir diziyi baştan tarayıp minimumun ya da maksimumunu bulmak. O zaman doğrudan oyutla ilişkili bir büyüme hızı karşımıza çıkıyor.
+
+87
+00:20:33,971 --> 00:20:47,952
+İse datamızın boyutu n. Dolayısıyla iki katına çıktığında da iki kat büyüme var. Şimdi bu noktadan sonra da devam ediyor artarak gitmeye. Divide and Concur bir algoritma olan WordStore mesela en loganlik bir karmaşıklığa sahip.
+
+88
+00:20:49,811 --> 00:21:13,171
+İki tane iç içe döngünün kullanıldığı, örneğin iki ayrı dizideki eşleşen elemanları bulmaya yönelik bir algoritma tasarlarsınız. Burada en karelik, kuvazretik bir karmaşıklık var. Aynı şekilde örneğin bir matriz çarpımı yapıyorsunuz ya da üçlü çiftleri belirlemeye çalışıyorsunuz. Üçlüleri belirlemeye çalışıyorsunuz. Kübük bir karmaşıklık var falan gibi gidiyor.
+
+89
+00:21:15,412 --> 00:21:33,112
+Hani mesela Liner Enlogen güzel bir karmaşıklık, kuadratik de belki kabul edilebilir falan ama bir süre sonra gerçekten işler karmaşıklaşmaya başlıyor ve o noktada sizin artık efficient olabilmesi için bir çözüm üretmeniz gerekiyor.
+
+90
+00:21:35,932 --> 00:21:41,312
+Şimdi bu worst case, best case ve average case durumları var biliyorsunuz bir algoritmanın analizinde.
+
+91
+00:21:42,259 --> 00:21:50,380
+Datanın burada dağılımıyla alakalı olarak iyi durum, kötü durum ve ortalama durum senaryoları.
+
+92
+00:21:50,380 --> 00:21:59,720
+Doğumlukla first case üzerinde aslında biz yani lisansla daha çok bunu muhtemelen yapmışsınızdır. İyi durum senaryosu.
+
+93
+00:22:00,360 --> 00:22:04,100
+Şimdi burada örneğin Secure Search yapan bir algoritmamız olsun.
+
+94
+00:22:06,607 --> 00:22:24,607
+Bir elemanı arıyorsunuz. Bakın burada da Piso'da kodu verilmiş. Dizinin sonuna gelmediğiniz sürece ya da elemana bulmadığınız sürece aramaya devam ediyorsunuz. Çıktığınız vakit eğer dizinin sonuna gelmişseniz bulamamışsınız demektir. Eksi bir döndürüyorsunuz. Aksi takdirde iyi döndürüyorsunuz.
+
+95
+00:22:24,607 --> 00:22:33,607
+Şimdi böyle bir algoritma varken elimizde, burada iyi durum, kötü durum ve ortalama durumda ne olur bizim karmaşıklıklarımız bir bakalım.
+
+96
+00:22:34,195 --> 00:22:55,755
+Kötü durum senaryosu, tabi ki aradığınız elemanı bulamadığınız ya da en sonda bulduğunuz durum. Bu linear bir algoritma yani burada karmaşıklık. Ne oluyor haliyle? Tüm elemanları tek tek taramanız gerekiyor. En tane elemanınız varsa en kez.
+
+97
+00:22:56,180 --> 00:23:21,880
+Buradaki temel işlemi yapıyorsunuz. İşte temel işlem şuradaki kontrol ile beraber arttırımın yapıldığı işlem. Bunu enkene yapıyorsunuz. Peki, best case'de ne oluyor? İşte best case'de de hemen birinci elemanda tık buldunuz. Bu durumda zaten tek bir kontrol yapıyorsunuz ve karmaşıklığınız bir. Şimdi bazı algoritmalarda worst case bazılarında best case kullanmak mantıklı olabilir.
+
+98
+00:23:24,211 --> 00:23:34,192
+İşte datanın ve probleminizin durumuna göre. Bazen de Average Case. Aslına bakarsanız mantıklı oluyor. Ama Average Case'i hesaplamak bir tık daha zor.
+
+99
+00:23:34,192 --> 00:23:41,872
+Bir tık daha karmaşık. Mesela bu örnek için, bu sequential search için Average Case'i nasıl hesaplarız ona bir bakalım.
+
+100
+00:23:41,872 --> 00:23:48,532
+Şimdi burada Average Case hesaplayabilmek için bir Asimtion'ımız var aslına bakarsanız.
+
+101
+00:23:48,532 --> 00:23:51,092
+Diyorsunuz ki
+
+102
+00:23:51,539 --> 00:24:14,139
+Benim bir search'ümde yani bir diziyi baştan sona taradığınızda bir search tamamlamış oluyorsunuz. Bu search'ın başarılı bir search olma olasılığı. Bu ne demek? Bu diziyi baştan sona taradığım zaman istediğim elemanı bulma olasılığı. Buna P diyorum.
+
+103
+00:24:18,163 --> 00:24:30,443
+Bu tabi P'yi sizin datanızın dağılımına göre gerçekçi bir şekilde belirlemeniz lazım. Çünkü Average Gaze için bulduğunuz değeri doğrudan etkiliyor. Bu P'nin değeri 0 ile 1 arasında bir şey olacak.
+
+104
+00:24:32,503 --> 00:24:43,003
+Datanızın uniform dağıldığını yani herhangi bir gözle aradığınız elemanı bulma olasılığınızın aynı olduğunu esküm ederseniz bu da ikinci hesabımız.
+
+105
+00:24:43,539 --> 00:25:09,839
+O zaman Average Case için karşınızda şu formül çıkıyor. Bu ne? Şimdi benim sörçümün başarılı olma olasılığı P ya. En tane de elemanım var. Şimdi birinci item'da ben bu elemanı bulduğumu düşünelim. Bunun olasılığı P bölü n. En tane item olduğu için. Bir tane sadece adım gezip bulduğum için 1 çarpı P bölü n. Aslına bakarsınız bunun olasılığı.
+
+106
+00:25:10,259 --> 00:25:15,540
+Daha doğrusu işlem sayısı bunun için. İkinci aytıma geçiyorum.
+
+107
+00:25:16,115 --> 00:25:33,816
+Diyelim ki ikinci gözde elemanı bulma olasılığın P bölü A. İkinci gözde elemanı bulabilmem için iki kere dönmem gerekiyor var içerisinde. Üçüncü gözde bulma olasılığın P bölü A. Üç kere dönmem gerekiyor. Dolayısıyla bunları son elemana kadar bu şekilde devam ettiriyorsunuz.
+
+108
+00:25:40,852 --> 00:26:03,951
+P bölü en çarpı en. Şimdi bunlar, şuradaki köşeli parancız içerisindeki bilgi elemanı bulduğunuz durumun tekrar sayılarının ortalaması. Bir de bulamadığınız durum var. Bulamam olasılığınız da 1-P olduğu için ve bulamamak için de en kere dönmek zorunda olduğunuzda bunu da bu şekilde ekliyorsunuz. En çarpı 1-P diye. Şimdi bu size average case'inizi veriyor.
+
+109
+00:26:08,723 --> 00:26:16,324
+Bunun gerçekçi bir sonuç verebilmesi için demin dediğim gibi P'nin değeri önemli.
+
+110
+00:26:16,324 --> 00:26:29,923
+Şimdi düşünelim P ile alakalı ne yapabiliriz. Diyelim ki şöyle düşünelim. Bu böyle uniform bir diziydi ve başarılı bir search yapıyorsunuz.
+
+111
+00:26:34,996 --> 00:26:40,916
+Aradığınız elemanı dizinin ortalarına doğru bir yerde bulursunuz.
+
+112
+00:26:41,107 --> 00:27:09,107
+Yani en bölü 2'lik bir karmaşıklığa doğru gidecek bu. Kötü durum senaryosunda sonuna kadar aramanız gerekecek. İyi durum senaryosunu da birinci kezde bulacaksınız. Yani PN'ın 0 ile 1 arasındaki kısmına göre burada Best Case'e ya da World Case'e doğru evrilme söz konusu. Dolayısıyla PN'in iyi seçilmesi önemli. Bunun için ne yapabilirsiniz? Örneğin Gauss dağılımına sahip bir datanız var ve bu data üzerinde bir işlem yapıyorsanız bunun ortalarda başarılı olmasının ihtimali belki de...
+
+113
+00:27:09,107 --> 00:27:16,407
+Daha yüksek olabilir. Ya da işte dağılımının segment segment değiştiği bir datada bir iftiham yaptığınızı düşünelim.
+
+114
+00:27:16,407 --> 00:27:21,867
+Belki o segmentler içerisinde bir olasılığı tutarlı bir şekilde belirlemek kolaysa sizin için.
+
+115
+00:27:22,727 --> 00:27:34,267
+Bu segmentler için ayrı ayrı hesaplamalar yapmak, hepsi için ayrı bir probability eskiyum edip yapmak mantıklı olabilir gibi.
+
+116
+00:27:38,867 --> 00:27:43,667
+Şimdi bu slide'ımı bitiriyorum. Devam edeceğim.
+
+117
+00:27:59,028 --> 00:28:01,068
+Bu arada arkadaşlar, soru var mı?
+
+118
+00:28:03,088 --> 00:28:06,348
+Hocam, konuyla alakalı soru mu yoksa konudan bağlantı soru olabilir mi?
+
+119
+00:28:06,568 --> 00:28:07,508
+Her türlü olabilir.
+
+120
+00:28:08,488 --> 00:28:11,508
+Hocam, yoklama... Yani ne kadar dikkat edeceksiniz, onu sorabilir miyim ben?
+
+121
+00:28:13,088 --> 00:28:14,708
+Yoklamaya ne kadar dikkat edeceğim?
+
+122
+00:28:15,508 --> 00:28:19,068
+Yani şöyle, yoklama alıyorum derslerde tabii ki.
+
+123
+00:28:19,604 --> 00:28:31,464
+Yani şöyle söyleyeyim, ders şeyleriniz iyi olduğu vakit, sınavlarınız vesaire, yoklama da bir miktar kaçak oldu diye kimseye bırakmadım şimdiye kadar. Ama yoklama alıyorum.
+
+124
+00:28:31,807 --> 00:28:33,128
+Sağ olun hocam, çok sağ olun.
+
+125
+00:28:33,587 --> 00:28:34,348
+Rica ederim.
+
+126
+00:28:34,748 --> 00:28:36,348
+Ben bir soru sorabilir miyim acaba?
+
+127
+00:28:36,587 --> 00:28:37,288
+Tabii, buyurun.
+
+128
+00:28:38,388 --> 00:28:41,688
+Derslerin uzaktan işlenmesi konusuna ne yapıyorsanız?
+
+129
+00:28:42,307 --> 00:28:44,067
+Uzaktan işleyemiyoruz maalesef.
+
+130
+00:28:44,908 --> 00:28:45,928
+Sadece bu haftaya özel.
+
+131
+00:28:46,648 --> 00:28:47,228
+Efendim?
+
+132
+00:28:47,708 --> 00:28:49,188
+Sadece bu haftaya özel galiba.
+
+133
+00:28:49,188 --> 00:28:53,728
+Bu haftaya özel kar sebebiyle böyle oldu.
+
+134
+00:28:54,307 --> 00:28:57,428
+Tabii ki ara ara belki sağlık problemimiz olur, bir şey olur.
+
+135
+00:28:57,628 --> 00:28:59,807
+Yine elimizde olmayacak.
+
+136
+00:28:59,807 --> 00:29:04,268
+Sebeplerle ara ara belki yapılabilir ama yüz yüze işlenecek yani ders.
+
+137
+00:29:05,148 --> 00:29:08,848
+Neticede. Sizlerin de biliyorum çalışma hayatınız var, zorlanıyorsunuz.
+
+138
+00:29:09,567 --> 00:29:11,848
+Elimizden geldiğince sağlıklı yürütmeye çalışacağız.
+
+139
+00:29:15,796 --> 00:29:21,715
+Bir de sunum haftası var ya, sunum haftasında online değil yüz yüze olacak değil mi?
+
+140
+00:29:22,576 --> 00:29:23,995
+Sunumları yüz yüze yapıyoruz, evet.
+
+141
+00:29:26,056 --> 00:29:30,375
+Hocam ben de ders materyallerine yükleyecek misin?
+
+142
+00:29:31,827 --> 00:29:44,107
+Tabii sunumları yüklerim. Zaten slide'ların başında kitap isimlerini vermiştim. Onlara da bakarsınız. Online olarak indirebileceklerinize bakarsınız. Sunumları da yüklüyor oluyorum tabii ki.
+
+143
+00:29:44,587 --> 00:29:45,948
+Tamamdır. Teşekkürler hocam.
+
+144
+00:29:45,948 --> 00:29:53,567
+Teşekkür ederim. Sizin bu derste ilgili beklentiniz nedir arkadaşlar? Madem biraz konu dışında konuşuyoruz.
+
+145
+00:29:54,708 --> 00:29:57,087
+Valla hocam yani pod yazarken.
+
+146
+00:29:57,587 --> 00:30:01,127
+Daha efektif, daha arka plandan da her şekilde yazabilmek aslında benim amacım.
+
+147
+00:30:04,428 --> 00:30:08,528
+Özellikle şöyle bir şey yapalım gibi bir öneriniz varsa da onu bana iletebilirsiniz.
+
+148
+00:30:13,028 --> 00:30:15,347
+Hocam bugün okulda olacak mısınız acaba?
+
+149
+00:30:16,347 --> 00:30:19,367
+Bugün okulda olmayacağım. Hayırdır?
+
+150
+00:30:21,367 --> 00:30:23,688
+Yok, yanına da gelecektim hocam danışmak için.
+
+151
+00:30:24,019 --> 00:30:31,140
+Tamam. Ben önümüzdeki hafta itibariyle görüşebiliriz. Mail atarsan şey yapabilirim, randevu verim.
+
+152
+00:30:33,600 --> 00:30:39,360
+Ben de 8 yaş 6 çocuğu olan biri olarak idari izni sayılıyorum arkadaşlar.
+
+153
+00:30:41,120 --> 00:30:47,360
+Şimdi sizinle sunum paylaşıyorum.
+
+154
+00:30:52,468 --> 00:30:53,668
+Onu geçtim.
+
+155
+00:31:09,971 --> 00:31:11,115
+Ve don.
+
+156
+00:31:20,372 --> 00:31:22,372
+Ne bileyim, bu çöğe.
+
+157
+00:31:22,372 --> 00:31:24,044
+Tak.
+
+158
+00:31:42,900 --> 00:31:58,600
+Şimdi Asymptotic Notation Ve Basic Efficiency Classes. Bundan biraz bahsedelim. Arkadaşlar, elimizde bir algoritma olduğu zaman,
+
+159
+00:32:05,523 --> 00:32:15,483
+Bu algoritmanın karmaşıklığı üzerinde çalıştığı veriye bağlı olarak şu gördüğünüz sınıflardan bir tanesine ait olabilir.
+
+160
+00:32:16,083 --> 00:32:19,843
+Ya da birden fazlasının birleşimi şeklinde olabilir.
+
+161
+00:32:22,523 --> 00:32:28,603
+Dolayısıyla bizim aslında burada ait olduğu sınıf kümesini bulabilmek için
+
+162
+00:32:29,556 --> 00:32:56,056
+Kullandığımız bir notasyonlar var. Big Omega Big Theta gibi. Big O dediğimiz şey bu algoritmanın upper bound'unu belirliyor. Yani burada upper bound ile kasıt algoritmanın karmaşıklık sınıfının maksimum şuralardadır. Daha doğrusu şunun altındadır dediğiniz bir sınır belirliyorsunuz. Lower bound'da da şunun üstündedir dediğiniz bir sınır belirliyorsunuz.
+
+163
+00:32:56,435 --> 00:33:13,435
+Bunların ikisinin daha böyle mümkün olduğunca gerçek karmaşıklığa yakın olduğu notlayı da bize Average Bound veriyor. Şimdi bunları nasıl hesaplayacağız? Bunlar nasıl birer notasyona sahip onu bir görelim.
+
+164
+00:33:13,435 --> 00:33:21,435
+Bu biraz formül formül ama aslında bildiğiniz bir şey. Kolay da bir şey. Üzerinden geçelim. Şimdi benim bir fm fonksiyonum var.
+
+165
+00:33:22,291 --> 00:33:38,771
+analizini yapmak istediğim algoritmamın çalışması fonksiyonu bu. Çalışma zamanını gösteriyor. Şimdi ben bunun bir gold'a GN'e eşit olduğunu, yani GN'in bir alt kümesi olduğunu
+
+166
+00:33:39,284 --> 00:33:58,004
+Tespit etmek istiyorsan, yani bir go'da endir, bir go'da en karedir dediğiniz ifade var ya, oradaki en, en kare dediğim şey g'ye denk geliyor. Yani bir go'da ait olduğu sınıfı bulmak istiyorsan, bununla alakalı şuradaki eşitsizliği sağlayan yapıları tespit etmem gerekiyor.
+
+167
+00:34:06,067 --> 00:34:16,068
+Herhangi bir C ve non-negatif N0 bulabilirsem, tabii ki N0'ın N0'dan büyük tüm N değerleri için bu eşit izleyi sağlayacak şekilde.
+
+168
+00:34:16,627 --> 00:34:24,247
+O zaman diyebilirim ki, Efendim, işte Big O'da GN'dir diyebilirim. Ne gibi mesela?
+
+169
+00:34:24,967 --> 00:34:31,407
+Diyelim ki benim elimde şöyle bir fonksiyon var, 2N çarpı 3 diye. Bunun Big O'daki sınıfını bulmaya çalışıyorum.
+
+170
+00:34:32,052 --> 00:34:46,731
+Bunun karşısında şu eşitsizliği sağlayacak şekilde ne yazabilirim? Bir C, bir de GN bulmam gerekiyor ve bunun en belirli bir N sıfırdan büyük değerleri için tutarlı bir formül olması gerekiyor. Bu da önemli bir bilgi.
+
+171
+00:34:48,672 --> 00:34:58,731
+Örneğin karşısına ben herhangi bir şey yazabilirim. Yazılabilir bir tane set bulmam yeterli zaten. Diyelim ki C için onu buldum.
+
+172
+00:35:00,019 --> 00:35:23,940
+10N yazdım buraya. Bu durumda da işte GN'de N'e tekabül ediyor. N'in birden büyük olduğu durumlar için bu case çalışıyor. Burası da Fn. Bu seti oluşturduğum zaman artık ben 2N çarpı 3'ün Big O'da N'e denk geldiğini söyleyebiliyorum. Bu notasyonun iş değişikliği bu.
+
+173
+00:35:24,436 --> 00:35:45,115
+Başka örnekler verelim. Peki ben mesela burada 10N yazdım. Başka ne yazabilirim? Örneğin 7N yazabilir miyim? Şartlar sağlıyor mu? C'nin 7 olduğu, C'nin N olduğu, N sıfırın 1 olduğu bir durum için evet sağlıyor. Yazabiliyorum. Yine zaten N'e tekabül ediyor.
+
+174
+00:35:46,336 --> 00:35:50,076
+İşte 5N yazabiliyor muyum? Evet yazabiliyorum.
+
+175
+00:35:50,931 --> 00:36:18,271
+Peki, 4N kare artı 3N kare yazabiliyor muyum mesela? Ki 7N kareye tekabül ediyor bu. Bakıyorum, işte C, bu da 7, N kare Ciyen. Birden büyük olduğu durumlar için tutuyor. Olabiliyor mu? Olabiliyor. Şimdi ben şu ikisini de 7N yazdığımda ya da işte 5N yazdığımda Efe'nin O-N kümesine ait olduğunu söylemiştim. Şimdi burada Efe'nin O-N kare kümesine ait olduğunu söylemiş oluyorum.
+
+176
+00:36:18,867 --> 00:36:39,748
+İkisi de doğru. Çünkü siz burada bir bound belirliyorsunuz. Yani n'in ya da n karenin altında bir yerde demiş oluyorsunuz. Dolayısıyla n küpte belirleseydiniz, 8 n küpte deseydiniz, onun altında bir yerde olduğunu söylemiş oluyordunuz. Dolayısıyla hepsi aslında sizin fonksiyonunuzun yeri hakkında size doğru bir bilgi veriyor ama
+
+177
+00:36:40,159 --> 00:36:46,460
+Tabii ki en yakın gerçek karmaşıklığına en yakın değerden gitmede uzaklaşmış oluyorsunuz.
+
+178
+00:36:46,519 --> 00:36:47,899
+Bound'unuzu yukarı çektikçe.
+
+179
+00:36:50,519 --> 00:36:56,940
+Şimdi ben şunların hepsini az önceki fonksiyon için on, on kare iki üzeri an hepsini yazabilirim.
+
+180
+00:36:57,019 --> 00:37:02,960
+Ve bu durumda benim upper bound'um şuradaki kümelerde kümedeki elemanlardan oluşuyor olacak.
+
+181
+00:37:03,199 --> 00:37:06,920
+Yani en dahil olmak üzere yukarı doğru giden kısım benim üst sınırım.
+
+182
+00:37:07,956 --> 00:37:28,956
+Peki şunu yazabilir miyim? O loga. Bunu yazamıyorum. Çünkü burada herhangi bir C için bu F'nden büyük olma durumunu karşılayamıyorum. O yüzden şu noktadan sonra aşağıya doğru geçerli değil benim apurbounduma. Ait sınıflar değil bunlar diyebiliyorum.
+
+183
+00:37:29,684 --> 00:37:57,164
+Omega'da aslında aynısı, şuradaki işaretin yönü değişiyor. Burada da bir Loverbank buluyorsunuz. Yani şundan yukarıdadır demiş oluyorsunuz. Yine aynı şekilde bir FM fonksiyonum var. Big Omega'da Gn'e ait olduğunu tespit edebilmek için bir C ve N0 bulmalıyım. C konstat olacak ve non-negatif olacak N0. Şu şart eşitsizliği sağlama durumuna bakarak.
+
+184
+00:37:57,940 --> 00:38:11,739
+Mesela yine 2n çarpı 3 olsun. Bu noktada ben 1 çarpı n diyebilir miyim? Ve bunu n'in herhangi bir n sıfırdan büyük olduğu her durum için doğruluğunu gözlemleyebilir miyim?
+
+185
+00:38:13,119 --> 00:38:24,039
+C dediğiniz vakit, gn dediğiniz vakit bunu gözlemleyebiliyorsunuz. Dolayısıyla sizin aslında Big Omega'da da fn'inizin n sınıfına ait olduğunu söyleyebiliyorsunuz.
+
+186
+00:38:24,403 --> 00:38:35,483
+Şimdi aynı şekilde burada GN yerine Logen yazdığınızda C1 olduğu durum için mesela aynı eşit istediği gözlemleyebiliyorsunuz.
+
+187
+00:38:35,483 --> 00:38:40,483
+Ama en kare yazdığınızda bunu gözlemleyemiyorsunuz. Dolayısıyla alt sınır olarak sizin...
+
+188
+00:38:40,851 --> 00:38:55,211
+Big Omega'da N dediğiniz, Big Omega'da Log N dediğiniz durumlarda fonksiyonunuzun yerini doğru tespit etmiş oluyorsunuz. Ama N kare dediğiniz vakit o zaman bu eşitsizliği sağlayacak bir ikili tespit edemediniz.
+
+189
+00:38:55,211 --> 00:38:56,771
+Dolayısıyla
+
+190
+00:38:57,940 --> 00:39:04,940
+Az önce bulduğumuz ifadeler size bir lower bound verdi. Bir upper bound vardı. Az önce bulmuştuk Omega ile.
+
+191
+00:39:04,940 --> 00:39:13,932
+İşte bu arasındaki kısım sizin Big Theta'nızı gösteriyor. Yani ikisinin kesiştiği, tespit edebildiğiniz doğruluğa en yakın kısım.
+
+192
+00:39:14,996 --> 00:39:28,635
+Şimdi bir detayı tespit edebilmek için aslında hem kendisinden büyük olduğunu bildiğiniz bir set, bir de küçük olduğunu bildiğiniz bir seti ayrı ayrı bulabilmeniz lazım.
+
+193
+00:39:28,635 --> 00:39:40,195
+Şimdi burada C1 ve C2 kat sayılarını olduğunu bir de L0'ın bir non-negatif int olduğu bir durumu gözlemleyebilmelisiniz.
+
+194
+00:39:40,628 --> 00:40:00,000
+Eşitlik sağlanacak şekilde. GN'in Fn'den büyük olduğu ve küçük olduğu iki eşitsizlik parçasında da aynı olma zorunluluğu var. Dolayısıyla bir lower band bir de upper band belirlemiş oluyorsunuz. Aslında özet olarak yaptığınız şey bu. Bir upper band bir lower band tespit.
+
+195
+00:40:00,000 --> 00:40:26,059
+ekledirmiş oluyorsunuz. Bu da size Big Theta'daki sınıfınızı veriyor. Az önceki örnekte 2n artı 3 örneğinde örneğin, 5n dediğiniz şey sizin upper bound'unuz, n de lower bound'unuz olabilir. Bu da sağlıyorsunuz çünkü bu eşitliği. Bu durumda Gn'iniz her ikisinde de n'i gösteriyor. Bu da sizin average bound'unuz olacak. Big Theta karşılığı olacak gibi.
+
+196
+00:40:33,844 --> 00:40:50,844
+Mesela bakalım, 1 bölü 2n n-1 gibi bir fonksiyonum var. Bunun Big Data'da n kareye eşit olup olmadığını kontrol edelim. Oluyor mu olmuyor mu diye. Bir upper bound bulmam lazım, bir de lower bound bulmam lazım. Upper bound bulurken c2 çarpı gn...
+
+197
+00:40:51,135 --> 00:41:02,135
+ifadesinden küçük olması gerekiyor bahsettiğim fonksiyonun. Bu eşitsizliği sağlayacak bir cn ve c2 tespit etmem gerekiyor.
+
+198
+00:41:02,135 --> 00:41:14,135
+Ve bir n0 tespit etmem gerekiyor. Şimdi şöyle bir şey yazarsam, 1 bölü 2 çarpı n kare, 1 bölü 2 c2 olarak ve cn de n kare olarak verirsem,
+
+199
+00:41:14,963 --> 00:41:27,503
+O zaman, burada bir çıkarma işlemi olduğu için bu eşitsizlik sağlanmış oluyor. Bunu yapabiliyorum. Peki aynı cihine lower bound için kullanabilir miyim? Bu sefer ona bakacağım.
+
+200
+00:41:28,523 --> 00:41:34,163
+Şuradaki az önce verdiğim formülizasyonu açık hale getirirsem.
+
+201
+00:41:34,452 --> 00:41:41,172
+Bunun bu sefer C1 kat sayısı ve N2 olarak belirlediğim Gn'e iki tarafta da aynı olması gerekiyor.
+
+202
+00:41:41,271 --> 00:41:44,331
+Dden büyük olması gerekiyor. Bu sağlanır mı diye bakıyorum.
+
+203
+00:41:45,831 --> 00:41:50,391
+Bunun sağlanmasını bana getirecek olan bir C1 değeri arıyorum.
+
+204
+00:41:50,851 --> 00:41:55,871
+Dolayısıyla C1'e farklı değerler için bakıyorum. Mesela bir için sağlanıyor mu diye bakıyorum.
+
+205
+00:41:55,871 --> 00:42:00,411
+N2 örneğin sağlanmıyor. İki için sağlanıyor mu diye bakıyorum.
+
+206
+00:42:00,820 --> 00:42:21,679
+Hala sağlanmıyor. Çünkü burada bir bölü iki enkara var. Bir de bundan bir şey çıkartıyor. Üstelik dolayısıyla iki dediğiniz vakit yani iki enkara dediğiniz vakit bu eşitlik yine sağlanmıyor. Bu bir bölü dörde doğru gittikçe aşağıya doğru indikçe bir bölü sekiz vesaire eşitlik sağlanmaya başlıyor. Bu noktadan sonra sağlanan bir set bulduğumuz için.
+
+207
+00:42:22,547 --> 00:42:31,547
+Şimdi C1 ve C2'yi tespit ettiniz. Bir de bu eşitsizlikleri verebilecek n0 değeri bulmanız gerekiyordu.
+
+208
+00:42:31,547 --> 00:42:35,547
+Ne negatif bir değer. Bir de onun varlığını test etmeniz gerekiyor.
+
+209
+00:42:35,547 --> 00:42:43,547
+Onun varlığını tespit edebilmek için de, yan yana bulduğunuz kat sayıların arasında fonksiyonunuzu yazdığınızda,
+
+210
+00:42:43,547 --> 00:42:47,435
+cn'lerin de n kare olduğunu biliyoruz.
+
+211
+00:42:47,539 --> 00:43:14,639
+Farklı N0 değerleri için eşitsizliğin sayılıp oluşup oluşmadığını kontrol ediyorsunuz. N0'a 1 verdiğiniz zaman örneğin, işte ne oluyor? Buradaki GNN kare olduğu için burası 1 bölü 4 alıyor, burası 1 bölü 2 oluyor. Burası ikisinin arasında kalıyor mu? 1 bölü 4 ile 1 bölünün 2'nin arasında kalan bir değer veriyor mu bana diye bakıyorsunuz. Belki vermiyor. Dolayısıyla olmadı. N0'ın 1 olduğu durum için olmadı.
+
+212
+00:43:15,539 --> 00:43:21,220
+2 olduğu durum için olur mu diye bakıyorsunuz. Sefer birleştiricisliği orada tespit edebildiniz.
+
+213
+00:43:21,684 --> 00:43:45,884
+İşte L03 olduğu durum için bakıyorsunuz. Eşitliği hala sağlandığını gözlemlediniz. Demek ki L0'ın birden büyük olduğu durumlar için upper bound ile tutarlı bir eşitsizlik durumunu tespit edebildiniz. O zaman siz rahatlıkla Big Theta'da en kare olduğunu bu ifadenin söyleyebilirsiniz.
+
+214
+00:43:51,443 --> 00:43:57,443
+Şimdi burada, F'nin 4N² artı 5N artı 4N olduğu bir durum var.
+
+215
+00:43:58,443 --> 00:44:02,155
+Neler söyleyebiliriz bunun upper bound'u ve lower bound'u için?
+
+216
+00:44:02,643 --> 00:44:19,143
+Zaten artık fark ettiğiniz üzere, zaten biliyordunuz böyle örnekler üzerinden de gördünüz. Bir dominasyon söz konusu. Yani eğer bir fonksiyonda enin farklı kuvvetlerinin olduğu bir birleşim varsa enin büyük değerleri için...
+
+217
+00:44:20,788 --> 00:44:34,788
+Bu işi büyüttüğünüz vakit, enin büyük değerler için hesaplama yaptığınız vakit, n karenin yükselme hızı çok fazla olduğu için bu terim daha küçük kuvvetleri domine ediyor zaten. Dolayısıyla ilk bakışta da Big Omega Big Theta için bir çıkarım yapabiliyorsunuz.
+
+218
+00:44:35,288 --> 00:44:45,968
+İşte n kare terimi burada domine bir terim. Big Theta'da, Big Omega'da şöyle sınırlar belirleyebiliyorsunuz. Mesela n karenin.
+
+219
+00:44:46,260 --> 00:45:03,900
+Big Omega'yı belirleyebilmek için n kare verdiğinizde, yani C1'e 1 verdiğinizde, Gn'e n kare verdiğinizde bu eşitlik sağlanıyor. Big O için C'ye 9 verdiğinizde yine Gn'e n kare olduğunda bu eşitlik sağlanıyor. O zaman ikisi arasında bir yerdedir, Big Teta'da n karedir diyebiliyorsunuz gibi.
+
+220
+00:45:07,539 --> 00:45:14,840
+Şimdi şuna bakalım mesela bu fonksiyonuna bakalım. Burada ne olabilir? n²logen artı n diyor.
+
+221
+00:45:16,519 --> 00:45:27,420
+Şimdi n²logen artı n. Bundan büyük olacak ve küçük olacak boundlarla alakalı eşitsizlikleri yazmaya çalışıyoruz.
+
+222
+00:45:33,844 --> 00:46:01,484
+N kare ve 5 N kare, daha doğrusu C'nin N kare logen olduğu durum için 1 ve 5 olmak üzere C'ler. Böyle bir eşitsizlik yazabiliyorum. Bu durumda benim Big Omega N kare logen, Big Teta N kare logen, Big O N kare logen gibi oldukça birbirine çakışmış olan bağlılarımı belirledim. Bu Efenin de karmaşıklık sınıfı bu durumda N kare ile Eq parasında bir yere tekabül ediyor diyebiliyorum.
+
+223
+00:46:02,579 --> 00:46:07,579
+Tüm bu anlattıklarımın grafiksel gösterimi. Bu meşhur her yerde gördüğünüz grafik.
+
+224
+00:46:09,579 --> 00:46:12,579
+Bu grafikte işte ne görüyoruz?
+
+225
+00:46:13,579 --> 00:46:17,579
+Burada verinin boyutuyla alakalı x80'in de bir bilgi var.
+
+226
+00:46:17,579 --> 00:46:21,579
+Belirli bir noktadan sonra burada n sıfırı belirlememiz bu yüzden önemli.
+
+227
+00:46:21,579 --> 00:46:24,203
+n'in küçük değerleri için
+
+228
+00:46:24,628 --> 00:46:32,568
+Değil ama bir noktadan sonraki değerleri için bu sınıfsal yapı bir oturmuş oluyor. Dolayısıyla n0'ın bulunduğu kısmı
+
+229
+00:46:32,568 --> 00:46:43,068
+ama tabii ki yani tespit edebilmek n0'dan büyük değerleri için buradaki tutarlılığı sağlandığını görmek yeterli. Yoksa n0'ın şurada ya da burada olmasıyla doğrudan ilgilenmiyorum.
+
+230
+00:46:43,068 --> 00:46:48,948
+x ekseni aynı olmak üzere bir de büyüme hızını gösteren y ekseni var. Bu benim fonksiyonum.
+
+231
+00:46:50,228 --> 00:46:51,916
+tn fonksiyonu.
+
+232
+00:46:52,148 --> 00:47:15,788
+C1 çarpı GN dediğim benim upper bound'um. Yani Big O'daki bu da lower bound'um. Bunların arasında bir yerdedir diyebiliyorum. Üstteki de şey aradaki de Big Theta'da olmak üzere. Dolayısıyla ne kadar yükseliştirirsen bu araları birbirine o kadar gerçekçi bir analiz elde etmiş oluyorum.
+
+233
+00:47:17,139 --> 00:47:21,460
+Şimdi buçukla başladık. Bir on dakika ara verelim isterseniz arkadaşlar. Sonra devam edelim.
+
+234
+00:47:24,859 --> 00:47:26,019
+On dakika sonra görüşelim.
+
+235
+01:01:55,027 --> 01:01:57,307
+Merhaba arkadaşlar. Tekrar devam edelim.
+
+236
+01:02:02,452 --> 01:02:16,292
+Bu arkadaşlar merhaba. Devam edelim işte şey. Youtuberlar yapıyorlar ya böyle. Bugün size şunu anlatacağım falan. Onlar gibi oldu. Evet.
+
+237
+01:02:26,483 --> 01:02:34,784
+Hocam, bu üst kısımda, işte şu an sizin mağazının üstünde durduğu yer var ya, orası karanlık gözüküyor da, onu gizleme şansınız var mı?
+
+238
+01:02:35,563 --> 01:02:35,824
+Tabii.
+
+239
+01:02:37,684 --> 01:02:38,423
+Oldu mu?
+
+240
+01:02:41,304 --> 01:02:42,244
+Oldu evet hocam.
+
+241
+01:02:42,244 --> 01:02:43,224
+Oldu. Tamam.
+
+242
+01:02:45,744 --> 01:02:51,824
+Şimdi bu, ödeme geçelim. Bu slide'ı geçmiştik.
+
+243
+01:02:52,947 --> 01:03:00,387
+Şimdi iki tane farklı parttan oluşan, arka arkaya gelen partlar tabii bunlar.
+
+244
+01:03:01,172 --> 01:03:09,132
+Arka arkaya gelen partların karmaşıklıklarını eğer tespit edebiliyorsak, overworld'daki karmaşıklığına dair nasıl bir yorum yapabiliriz?
+
+245
+01:03:09,952 --> 01:03:13,371
+Şöyle bir teorem var. Az önce de zaten söyledik de [öğrenci] de.
+
+246
+01:03:13,452 --> 01:03:21,331
+İşte diyoruz ki, T1N, Big O'da C2N eşitsi.
+
+247
+01:03:27,635 --> 01:03:48,816
+C1n ve C2n'den maksimum hangisi büyükse onun o karmaşıklığı sınıfa aittir teoremi var. Az önceki yüksek işte n küp mesela n kareyi domine eder şeklinde anlattığım iş aslında. Bunun teoreminin ispatına bakacağız şimdi nasıl olur diye.
+
+248
+01:03:53,811 --> 01:04:14,231
+değişkenim olsun. A1, B1, A2, B2 diye. A1'e B1'den küçük olduğu ya da eşit olduğunu, A2'nin de B2'den küçük eşit olduğunu kabul edersem, benim A1 ve A2'yi topladığım zaman elde ettiğim değer de B1 ve B2'den büyük olanın iki katından küçük oluyor neticede.
+
+249
+01:04:14,231 --> 01:04:18,971
+Şimdi bunu kullanarak şu yukarıdaki teoremin ispatına bakacağız.
+
+250
+01:04:19,391 --> 01:04:45,311
+Big O Notation'a sahip olabilmesi için ne yapmamız gerekiyor? Bunları anlatmıştık ya ilk başta notasyonlarında. Bir C1 bulmamız, bir de GN bulmamız gerekiyordu. Bu ikisini çarptığım vakit herhangi bir N0'dan büyük N'ler için eşitsizliğin sağlanması gerekiyordu. Bu Big O'nun notasyonu zaten. T1 fonksiyonu için yazılmış hali.
+
+251
+01:04:45,748 --> 01:05:04,828
+P2 için de bu şekilde yazıyoruz. Buradaki N0'lar birbirinden farklı olacak. İki farklı fonksiyondan bahsediyorum. O yüzden N1 ve N2 olarak bunlar adlandırılmış. Aynı şekilde kat sayılarda C1 ve C2 olarak adlandırılmış. Farklı iki karmaşıklık sınıfına ait olduğunu C1 ve C2 diye kabul ettiğim durum için.
+
+252
+01:05:04,828 --> 01:05:11,108
+Şimdi burada bu C1 ve C2 kat sayılarından büyük olanı C3 diyelim.
+
+253
+01:05:13,204 --> 01:05:34,304
+N1 ve N2'lerden büyük olanın da N'den küçük olduğunu kabul edelim. Tamam, bunları zaten karşılıklı işte N1'in ve N2'nin N'den küçük olduğunu biliyorsunuz. Dolayısıyla bunların büyük olanı da N'den küçük oluyor. Şimdi bunları sağladıktan sonra T1'en artı T2'yeni araştırıyorum ben.
+
+254
+01:05:36,596 --> 01:05:51,836
+Aynı zamanda notasyon gereği biliyorsunuz şu eşitsizliğin bir goda sağlanmış olması gerekiyor. Dolayısıyla bu ikisini topladığımız vakit C1 çarpı cn artı C2 çarpı cn'den küçük bir şey elde etmeniz lazım. Notasyon gereği.
+
+255
+01:05:58,132 --> 01:06:08,952
+Yerlerine C3 koyduğunuzda, buradaki eşitsizlik büyüktür yönünde olduğundan sonuç değişmeyecek. Dolayısıyla C3 parantezini aldığınızda C1n artı C2n diye bunu yazabilirsiniz.
+
+256
+01:06:09,872 --> 01:06:20,152
+Şimdi burada da, burada da yine bunların maksimumunu alıp, en büyük olanını alıp 2 ile çarptığınızda yine sonuç değişmeyecek. Eşitsizliğin yönünden dolayı.
+
+257
+01:06:20,512 --> 01:06:39,412
+Neticede aslına bakarsanız şuna dönüştürmüş oluyorsunuz. T1n artı T2n bütünleşik fonksiyonumuz. Bu bir gol notasyonda C1n ve C2n'den hangisi büyükse bir gol de ona ait oluyor demiş oluyorsunuz. Dolayısıyla böyle bir ispatı var.
+
+258
+01:06:44,211 --> 01:06:58,211
+Şimdi bakalım, diyelim ki benim bir tane array'im var. Bu array'imde eşit olan yani birbiriyle aynı olan elemanlar olup olmadığına bakmaya çalışıyorum.
+
+259
+01:06:58,211 --> 01:07:06,211
+Tabii kötü bir algoritma ile ne yaparım? Bunları sıralarım önce, sonra da sıralanmış dizide.
+
+260
+01:07:06,452 --> 01:07:30,632
+Yan yana olan elemanlara bakar diyelim. Böyle iki ayrı parttan oluşan bir algoritma olsun. Sort karmaşıklığımın n kare olduğunu, işte iki n, n-1'lik bir karmaşıklıkla sort ettiğimi, bu da n kareye tekabül ediyor. Sort ettiğim r'yde de arama yapıyorum. Bütün elemanları tek tek arıyorum. Yan yana olanlara bakıyorum. N-1'lik bir karmaşıklığa tekabül ediyor.
+
+261
+01:07:33,844 --> 01:07:39,484
+algoritmamın karmaşıklığı bunlardan maksimum olan en kare olduğu için en kare olarak karşıma çıkıyor.
+
+262
+01:07:41,524 --> 01:07:48,444
+Şimdi burada tabii ki ben bunu çok kötü bir şekilde çözdüm. Yani nasıl çözebilirim normalde?
+
+263
+01:07:48,444 --> 01:07:50,744
+Mesela kaçta çözersiniz siz bunu?
+
+264
+01:07:54,324 --> 01:07:56,124
+Big O'da kaçta çözülür sizce?
+
+265
+01:08:00,500 --> 01:08:09,540
+Eninde çözülür değil mi normalde? Tekrar sayılarını tuttuğunuz bir ekstra değişkeniz olsa o eninde çözebilirsiniz.
+
+266
+01:08:09,540 --> 01:08:19,540
+Tabii space karmaşıklığını o zaman arttırmış olursunuz. Şu an space karmaşıklığı bunu ne? Yani aynı eleman sayısı için memoriye de ayrılmış bir blok var enlik.
+
+267
+01:08:19,540 --> 01:08:23,940
+O blok içerisinde bu işi yapabiliyorsunuz. Bu size en kareye mal oluyor.
+
+268
+01:08:24,083 --> 01:08:32,144
+Eğer her elemanın tekrar sayısını tuttuğumuz ekstra bir değişkeniz olsa iki ene çıkacak bir space karmaşıklığınız olacak ama ende çözeceksiniz gibi.
+
+269
+01:08:34,963 --> 01:08:39,703
+Tamam, siz beni durdurun arkadaşlar. Konuşmak istediğiniz bir şey olursa örneklerle ilgili.
+
+270
+01:08:40,963 --> 01:08:48,324
+Şimdi farklı algoritmaların büyüme hızlarını karşılaştırmanın bir yolu da limit kullanmak.
+
+271
+01:08:50,292 --> 01:08:57,532
+Herhangi bir algoritmanın büyüme hızıyla alakalı bir tahmininiz varsa bu tahmininizi doğrulamak için de kullanabileceğiniz bir yöntem.
+
+272
+01:08:58,112 --> 01:09:04,692
+TN ve GN fonksiyonları var. Bu da N'in her seferinde sonsuza gittiği durum için.
+
+273
+01:09:05,811 --> 01:09:17,832
+Bunların oranının limitine baktığım zaman eğer bu bana sabit bir sayı veriyorsa, bir constant veriyorsa, o zaman Big Theta'da T'nin GN'e eşit olduğunu söyleyebiliyorum.
+
+274
+01:09:18,420 --> 01:09:28,920
+Eğer sıfıra gitme durumu söz konusuysa, sonsuza giderken limitin sıfıra gitme durumu söz konusuysa, o zaman T'nin Big O'da G'ye eşit olduğunu söyleyebiliyorum.
+
+275
+01:09:30,300 --> 01:09:33,460
+Aksi taktirde de Big Omega'da eşit olduğunu söyleyebiliyorum.
+
+276
+01:09:34,452 --> 01:09:43,412
+Bunu dediğim gibi iki farklı fonksiyonu kıyaslarken ya da bir tahmininiz varsa doğruluğunu test etmek için kullanabilirsiniz.
+
+277
+01:09:44,352 --> 01:09:50,272
+Örneğin burada işte 1 bölü 2 n, n-1'lik bir fonksiyon var ve n karelik bir fonksiyon var.
+
+278
+01:09:50,872 --> 01:09:58,172
+Bunların büyüme hızlarını limit kullanarak karşılaştırmak istediğiniz zaman oranlıyorsunuz.
+
+279
+01:10:00,148 --> 01:10:09,667
+Temel Limit ile alakalı had sayılarının örneği dışarıya çıkarılabilmesi. Enkara eksen açarak yazmak. Altta da enkara görünüyor.
+
+280
+01:10:12,328 --> 01:10:20,908
+Sadeleştirmelerinizi yapıyorsunuz. Şurayı bir eksi bir böleğen olarak yazıyorsunuz. Neticede sabit bir sayıya gidiyor buradaki limitiniz.
+
+281
+01:10:23,380 --> 01:10:39,420
+Sabit bir sayıya gittiğine göre bu bize şuradaki ifadeden aynı Order of Growth'a sahip olduklarını söylüyor. Bunları ters olarak yazsaydınız da yine o zaman da yine sabit bir sayı bulacaktınız.
+
+282
+01:10:39,420 --> 01:10:48,380
+Ve aynalıklarını test etmiş olacaktınız. Big Data'da n kare eşit olduğunu 1 bölü 2 n n eksi 1'in görmüş oldunuz.
+
+283
+01:10:50,739 --> 01:10:56,879
+Mesela n Faktöriyelle 2 üzeri n'i karşılaştıralım. Bunlar için ne söyleyebiliriz?
+
+284
+01:10:57,659 --> 01:11:02,260
+Yine limitlerini alıp, en sonsuza giderken oranlamanız gerekiyor.
+
+285
+01:11:03,019 --> 01:11:14,299
+Burada n Faktöriyelin açılımı için bir formül var.
+
+286
+01:11:14,539 --> 01:11:17,099
+Kullanışlı bir formül, Stirling's formül diye geçiyor.
+
+287
+01:11:17,268 --> 01:11:26,448
+Enin ama çok büyük değerleri için yakınsadığı bir eşitlik bu n faktöriyeli. Burada da sonsuza giden durumu konuştuğumuz için kullanışlı.
+
+288
+01:11:26,448 --> 01:11:40,608
+Bu formüle istinaden n faktöriyelin yerine koyduğunuz vakit yukarıdaki bilgiyi 2 pi'ye'nin kare kökü n bölüğe üzeri n diye böldüğünüz zaman
+
+289
+01:11:40,979 --> 01:11:46,299
+İşte yine sabitleri dışarıya çıkarıyorsunuz ve bu sonsuza giden bir ifadeye dönüşüyor.
+
+290
+01:11:46,299 --> 01:11:59,219
+Dolayısıyla anlıyoruz ki az önceki 3 tane kondisyon verildiği şu durumdan anlıyoruz ki Big Omega'da 2 üzeri n ne eşitmiş n faktör yani.
+
+291
+01:12:01,680 --> 01:12:03,000
+Bunları çıkarabiliyoruz.
+
+292
+01:12:09,171 --> 01:12:18,171
+Şimdi, yani ne demek istiyoruz? İki üzeren aslında oldukça hızlı büyüyor. Ama M faktöriyel çok daha hızlı büyüyor. Bunu görmüş oluyoruz.
+
+293
+01:12:18,171 --> 01:12:27,171
+Şimdi biz Asymptotic Notation ile de, yani sembolik olarak M faktöriyel Big O'da iki üzeren yazabiliriz.
+
+294
+01:12:29,363 --> 01:12:39,463
+Şimdi siz bunu şu şekilde yazdığınız vakit. Aslında bakarsanız, hatırlarsanız Asymptotic Netration'daki o büyük eşit.
+
+295
+01:12:40,083 --> 01:13:08,083
+Sebebinden dolayı, o büyük eşit işaretinden dolayı, alt sınırı ve üst sınırı belirlediğimiz vakit eşitliği de aslında border'ın içerisine koymuş oluyoruz ya, o border kömesinin içerisine. O yüzden o şekilde yaptığınızda E faktör yerle iki üzereyinin eşit olma durumunu eleyememiş oluyorsunuz. Ama bu şekilde yaptığınızda eşit olma durumlarında büyüme hızlarının constant bir değer limit işlemi size vereceği için onu elemiş oluyorsunuz.
+
+296
+01:13:08,083 --> 01:13:14,664
+Dolayısıyla bir tık daha size bu anlamda kesin bir bilgi veriyor.
+
+297
+01:13:18,547 --> 01:13:33,355
+Peki. Şimdi gökluğunun üst tarafını muhtemelen görebiliyor musunuz? Niye yok olmuyor? Heh tamam bitti. Şimdi
+
+298
+01:13:37,939 --> 01:13:49,939
+Farklı klaslara ait, büyüme hızlarıyla alakalı ve bu büyüme hızlarını veren algoritmalarla alakalı bilgiler var bu slide'da.
+
+299
+01:13:49,939 --> 01:13:59,939
+İşte constant olanları en iyi durum zaten bu. Sabit zamanda bu işi çözüyor. Logaritmik olanlar...
+
+300
+01:14:02,707 --> 01:14:28,768
+Logalitmik olarak, Logen anlatmıştım ya mesela. Binary olarak bölüp arama yaptığınız vakit örneğinde yarıyordu. Liner olanlar tamamen enin boyutuyla doğru orantılı olarak büyüme hızının arttığı karmaşıklıklardı diye. Bu tabi aşağıya doğru iniyor. Enkara, enküpü, iki üzeren gibi gidiyor. Dolayısıyla bizim bir noktadan sonra
+
+301
+01:14:29,460 --> 01:14:36,699
+İstemediğimiz karmaşıklığı çok yüksek. Örneğin faktöryel karmaşıklıkta, eksponansiyel karmaşıklıkta.
+
+302
+01:14:37,319 --> 01:14:41,680
+Argo örtmalarımız varsa, bunlar için nasıl bir optimizasyon yaparız, bakmamız lazım.
+
+303
+01:14:43,960 --> 01:14:45,399
+Şimdi biraz daha...
+
+304
+01:14:45,399 --> 01:14:50,260
+Pardon, bu blok hala ekranda var. Baştan hemen altında yer alıyor.
+
+305
+01:14:51,299 --> 01:14:54,479
+Blok hala ekranda var. Tamam mı? Oldu mu?
+
+306
+01:14:56,404 --> 01:14:58,404
+Herhalde oldu.
+
+307
+01:14:58,404 --> 01:15:06,404
+Blok yeni çıktı bu bloğun ekrana gelmesi de onu anlayamadım. Şimdi ne yapacağız?
+
+308
+01:15:06,404 --> 01:15:16,404
+Non Recursive ve Recursive algoritmaların analizi ile alakalı basit örnekler çözüp size bir hatırlatalım.
+
+309
+01:15:22,515 --> 01:15:30,115
+Bir algoritmanın Pisa'da kodu var. Maksimum elemanı buluyor. Bir array var içi. Input arrayi. En elemanlık bir array bu.
+
+310
+01:15:30,115 --> 01:15:39,115
+Varca size elemanı bulmaya çalışıyor. Dolayısıyla bir max value tanımlıyor. Bir lokal maksimum tanımlıyor. Geziyor.
+
+311
+01:15:39,115 --> 01:15:49,915
+En kadar dizi elemanı boyunca ve her seferinde atama yaparak lokal max'tan global max'a geçiyor.
+
+312
+01:15:49,971 --> 01:16:03,971
+Böyle bir işlemim varken, bunların biz bu recursive değil de sequential algoritmalarda temel olarak aslında şunu yapıyoruz. Bir Basic Operation belirliyorsunuz.
+
+313
+01:16:03,971 --> 01:16:16,971
+Onun tekrar sayısını formülize etmeye çalışıyorsunuz ve toplam sembolleri bu işte çok etkili. Mesela bu örnekte buradaki Basic Operation şuradaki atama ve bunu en eksi bir kere yapıyor.
+
+314
+01:16:17,011 --> 01:16:24,351
+Dolayısıyla i'nin birden n-1'e kadar gittiği bir döngü içerisinde bir tane işleminiz var.
+
+315
+01:16:24,351 --> 01:16:34,811
+Toplam işlem sayınızı dolayısıyla c'n'e veriyorsa size bu toplam sembolüyle göstermeniz mümkün ki bu da n-1'e tekabül ediyor.
+
+316
+01:16:35,451 --> 01:16:41,351
+Dolayısıyla ben bu sequential bir şekilde max bulmaya çalıştığını algoritmada...
+
+317
+01:16:41,551 --> 01:16:45,991
+Big Theta'da n denk geldiğini basit bir şekilde ifade edebiliyorum.
+
+318
+01:16:47,231 --> 01:16:59,631
+Buradaki kısa algoritmada yaptığımız gibi elinizde eğer narkörüsü bir algoritma varsa input size gibi bir parametre belirlemeniz lazım.
+
+319
+01:17:01,271 --> 01:17:03,811
+Bu önemli. Yani neye göre ben bu?
+
+320
+01:17:08,020 --> 01:17:20,820
+Karmaşıklığı hesaplayacağım. Hangi parametreye göre bunun karmaşıklığını hesaplayacağım? Basic Operation'ınızı belirlemeniz lazım. Benim Basic Operation'ım hangisi? Hangisinin tekrar sayısını saymam gerekiyor?
+
+321
+01:17:26,700 --> 01:17:32,340
+Sadece input size'a mı bağlı Basic Operation'ın execution sayısı?
+
+322
+01:17:32,595 --> 01:17:39,595
+Bunu check etmeniz lazım. Bu sizin belki worst case'i, belki best case'i falan kullanma noktasında yönelmenizi sağlayacak.
+
+323
+01:17:39,595 --> 01:17:53,595
+Toplam sembolüyle bir expression vurgulamanız gerekiyor ki basic operation'ın birkaç kere execute edildiğini gösterebilsin diye.
+
+324
+01:17:53,595 --> 01:17:57,595
+Sonra da standart formüllerle border-out-growth'u bulmaya çalışıyorsunuz.
+
+325
+01:17:57,971 --> 01:18:18,951
+Bununla alakalı işlemler yaparken bir takım formülleri sık sık kullanıyor olacağız. Başta bahsettiğim kitapların Efendix kısmında falan da var. Sağda solda da bulabilirsiniz. Ben buraya slide'lara da ekledim. Elinizin altında bulunsun diye. Standart formüller bunlar.
+
+326
+01:18:23,220 --> 01:18:25,680
+Yani bir kısmını çok sık kullanıyor olacağız.
+
+327
+01:18:25,960 --> 01:18:27,360
+İşte şunu, şunu.
+
+328
+01:18:29,220 --> 01:18:30,539
+Çok sık kullanıyor olacağız.
+
+329
+01:18:31,399 --> 01:18:32,460
+Hakkınızda bulunsun.
+
+330
+01:18:34,620 --> 01:18:47,380
+Sabitlerin çıkarılması, sam içerisindeki farklı terimli ifadelerin bölünmesi üzerine rulolar var.
+
+331
+01:18:48,520 --> 01:18:50,440
+Aşağıya da yukarıya.
+
+332
+01:18:50,496 --> 01:18:55,355
+Yuvarlama yine arada işinize yarayacak. Bunları kullanacaksınız.
+
+333
+01:18:55,355 --> 01:18:57,355
+Şimdi...
+
+334
+01:19:00,948 --> 01:19:04,948
+Bir başka örnek şunu yapıyor.
+
+335
+01:19:05,948 --> 01:19:12,948
+Aray içerisindeki elemanların birbirinden farklı olup olmadığını kontrol eden bir algoritma bu.
+
+336
+01:19:12,948 --> 01:19:16,948
+Dolayısıyla iki tane iç içe for kullanılmış.
+
+337
+01:19:16,948 --> 01:19:25,948
+Karşılıklı elemanlara bakıyor. Karşılıklı elemanların herhangi bir aynı olan çift bulduğu durumda for döndürüyor.
+
+338
+01:19:26,131 --> 01:19:37,652
+Bütün elemanların birbirinden farklı olma isteğini karşılamadığı için aksi takdirde eşit olan bir eleman çifti bulamamışsa onun açısından her şey yolunda return true ile çıkıyor.
+
+339
+01:19:37,652 --> 01:19:45,072
+Bunun mesela çalışma zamanına ait şu formulizasyonu yapabiliriz.
+
+340
+01:19:45,072 --> 01:19:47,011
+İçi içe forlar olduğunda.
+
+341
+01:19:47,011 --> 01:19:52,371
+Basic operasyonunuzu belirliyorsunuz. Buradaki basic operasyon eksikliğin kontrol edilmesi.
+
+342
+01:19:52,819 --> 01:20:01,819
+Dolayısıyla birlik bir basic operation var burada. Dıştaki döngüyü ve içteki döngüyü ayrı ayrı formülleriyle yazıyoruz.
+
+343
+01:20:01,819 --> 01:20:10,819
+Şimdi J'nin i artı birden en eksi bire kadar gittiği bir durum var. Dıştakinde ise i'nin sıfırdan en eksi ikiye kadar gittiği bir durum var.
+
+344
+01:20:10,819 --> 01:20:20,703
+Tabii bu kötü durum senaryosunu gösteriyor bize. Bir tane eşitliği ilk iki elemanın da eşit olduğunu bulup çıkabilirdi.
+
+345
+01:20:20,703 --> 01:20:25,064
+Ama kötü durum senaryosunda tüm örneğe tamamlaması gerekiyor.
+
+346
+01:20:25,064 --> 01:20:38,363
+Şu ifadeyi açıp, Big Data'da karşılığını bulmaya çalışıyoruz.
+
+347
+01:20:46,963 --> 01:20:59,443
+Bu iki SAM formülün açılımını yazabilirsiniz. Şurada işte sabit bir terim varken üstünden bir çıkarıp bir eklemek şeklinde.
+
+348
+01:20:59,443 --> 01:21:14,564
+Ki açılma halini buraya yazıp ondan sonra dıştaki SAM formülünü sabit tutarak ilerlediğiniz zaman, gerekli sadeleştirmeleri yaptığınız zaman
+
+349
+01:21:15,060 --> 01:21:33,480
+2'ye böldüğünüzde vs. Bu size 1 bölü 2 n kareye yakın sayan bir ifade getiriyor. Aslına bakarsanız şunu doğrudan elde ediyorsunuz. n-1 çarpı n bölü 2 diye. Dolayısıyla burada da işte domina olan kısmı kullandığımız için 1 bölü 2 n karelik.
+
+350
+01:21:34,612 --> 01:22:00,271
+Piktata da bize karmaşıklık verdi. İç içe zaten iki tane döngü gördüğünüzde, bunun artık biliyorsunuz ki siz bir tanesi bitecek, en kare aşağı yukarı, diğeri de. Yani aslında en kare böyle iki dediği demesinin sebebi, hani bunu bir taradığınız alanları bir görselleştirirseniz, böyle bir üçgen şeklinde bir yapıda aslında tarama sayılarını, hani bir karenin diagonaliğini düşünün. O üst tarafına.
+
+351
+01:22:00,916 --> 01:22:11,916
+Taradığımızı düşünün. n² art bölü 2 aslına bakarsınız ama Big Theta da n²'ye tekabül ediyor. Şimdi mesela Matrix Multiplica için işlerimiz olsun.
+
+352
+01:22:11,916 --> 01:22:22,416
+Burada verilmiş misodokodu. İki tane matrixiniz var. Bir tanesinin satırlarıyla diğerinin sütunlarını
+
+353
+01:22:23,412 --> 01:22:29,112
+işlediğiniz ısımlar ilk iki döngüde karşılıklı işlemlerin çarpılıp toplandığı,
+
+354
+01:22:29,112 --> 01:22:33,412
+karşılıklı rakamların birincisinin satırı ikincisinin sunulun karşılıklı rakamlarının
+
+355
+01:22:33,412 --> 01:22:40,512
+çarpılarak toplanmasını sağlayan döngü de burada. Üçüncü döngü. Dolayısıyla iç içe üç tane döngü var.
+
+356
+01:22:40,512 --> 01:22:47,211
+Basic operasyon da şurada çarpıp ekleme yapıyorsunuz. Dolayısıyla burada sıfırdan en eksi bire,
+
+357
+01:22:50,899 --> 01:23:06,600
+Bir sınırlar topluluğu var. Burada karamatrislerin çarpımından bahsediyor tabii ki. Yani boyutları aynı olan karamatrislerin çarpımından bahsediyor. Bu da neticede bana en küplük bir karmaşıklık üretiyor.
+
+358
+01:23:12,564 --> 01:23:30,744
+Bir pozitif sayı verildiği vakit bana, onluk tabağında verilen bir sayı. Bunun banner dijit sayısını bulmak istersem, biliyorsunuz her seferinde ikiye bölerek ilerliyorum. Kaç kere bu işlemi yapabildiğime bakıyorum. Ve bu bana banner dijit sayısını veriyor.
+
+359
+01:23:30,744 --> 01:23:39,064
+Her seferinde ikiye bölerek ilerleme söz konusu olduğu için, buradan geçme sayısı aslında logaritmik. Logaritmiki tabanında n demek.
+
+360
+01:23:39,764 --> 01:23:47,604
+Tabi burada ikinin kuvveti olmayan sayılarda alta yuvarlamak gerekiyor. Tam olarak dönüş sayısını bulabilmek için.
+
+361
+01:23:50,036 --> 01:24:12,496
+Şu while'a son kez girmeden önce bir karşılaştırma yapıyor. Son kez biliyorsunuz yani işte n'in 1 olduğu durumda çıkacak ya son karşılaştırmayı yapmadan çıkamayacak. Bu artı 1 de oradan kaynaklanıyor. Dolayısıyla bir binary reprisantasyonundaki dil sayısını bulabilmek için kullanacağınız algoritmanın big data'da karşılığı log n artı 1 olacak.
+
+362
+01:24:14,496 --> 01:24:15,255
+Şimdi.
+
+363
+01:24:15,988 --> 01:24:38,108
+Recursive olanlara geçersek. Recursive algoritmalara. Burada en faktöriyeli hesaplayan bir algoritma var. Tabii ki non-negatif olduğunu düşünüyoruz. Ondan sonra. Recursive algoritmalar nasıl çalışıyor? Şöyle bir hatırlayacak olursak.
+
+364
+01:24:38,868 --> 01:24:53,468
+Önemli olan şey, bir recursive algoritma yazarken mutlaka bir çıkış keyzini oluşturmanız lazım. Burada enin 0 olduğu durumda bir döndürerek fonksiyonlar çıkıyorsunuz.
+
+365
+01:24:58,323 --> 01:25:07,323
+gelmeden önceki tüm ifadeler için de Recuracy Funksiyon tekrar n-1 için function call yapıyor ve bunu n ile çarpıyor.
+
+366
+01:25:07,323 --> 01:25:17,323
+Dolayısıyla Recuracy'e bir şekilde n faktörü ile buluyorsunuz. Şimdi bunun analizine bakalım.
+
+367
+01:25:17,323 --> 01:25:25,131
+Şimdi burada karşımıza Recuracy Relation diye bir şey çıkıyor. Recuracy Funksiyonların
+
+368
+01:25:25,427 --> 01:25:33,528
+Analizi ile bunu sıklıkla kullanacağız. Şu yukarıdaki şey fonksiyonunuz zaten sizin.
+
+369
+01:25:33,528 --> 01:25:42,028
+Fonksiyonunuzun kendisi. Rekorist Relation fonksiyonunuzun sonucuna dair bir şey vermiyor bize de.
+
+370
+01:25:42,028 --> 01:25:49,028
+Buradaki işlem sayısının n'e bağlı bir formulizasyonu demek aslında.
+
+371
+01:25:49,235 --> 01:25:56,036
+Sonucu üreten mekanizmayı vermiyor. İşlem sayısını ene bağlı olarak veriyor.
+
+372
+01:26:05,140 --> 01:26:22,940
+Bu n-1'in faktörlerini hesaplayabilmek için yapacağım çarpım sayısı ise eğer, n-1'in faktörlerini hesaplamak için yapacağım çarpım sayısına tonda bir tek ilave çarpım ekleyerek.
+
+373
+01:26:23,475 --> 01:26:37,975
+n-1 ile n-1 faktöriyel çarpı n faktöriyeli verdiği için o fondaki çarpımı işlem sayısını artı 1 olarak ekleyerek yazdığım vakit yukarıdaki fonksiyonu recurrence relation ile oluşturmuş oluyorum.
+
+374
+01:26:37,975 --> 01:26:48,475
+Şimdi recurrence relation oluşturduktan sonra da bunu çözümlemeniz gerekiyor. Çünkü recurrence relation da n'e bağlı şu sağ taraftaki değer yine m
+
+375
+01:26:48,948 --> 01:27:15,667
+En eksi bir şeklinde ifade edilmiş. Şimdi burada bunun doğrudan sadece en üzerinden karşılığını bulmanız lazım. Bunun içinde farklı yöntemler var. Verilen bir recurrence relation çözümleyebilmek için farklı yöntemler var. Bir tanesi en basiti backward substitution dediğimiz yöntem. Şimdi bu backward substitution ile yapılan şey belirli bir adım.
+
+376
+01:27:15,891 --> 01:27:31,492
+miktarı kadar geriye giderek Recurrence Relation'ın alacağı değerleri gözlemlemek ve genel olarak gidişat üzerinde bir yörü oluşturmak ve bunu genelleştirilebilir bir formüle dönüştürmek.
+
+377
+01:27:31,492 --> 01:27:42,871
+Şöyle ki işte mn-1 şu Recurrence Relation'da bir adım geriye gitseniz, mn-1 artı 1 ise örneğin.
+
+378
+01:27:43,028 --> 01:27:57,148
+mn-1 neye eşit olur? Bir adım geriye gidiyorsunuz. mn-2 artı 1'e eşit olur. O zaman şu formülde n-1'in olduğu yere mn-2 artı 1 yazalım.
+
+379
+01:27:59,148 --> 01:28:06,467
+Artı 1 buradan geliyor. Bu neye eşit? mn-2 artı 2'ye eşit. Şimdi formülümde n-2'yi gördüm.
+
+380
+01:28:08,148 --> 01:28:32,728
+Onun yerine n-3 artı 1 yazalım. O zaman formül neye dönüşür? n-2 yerine n-3 artı 1 yazdım. Dolayısıyla m n-3 artı 3'e denk geldi. Bunu belirli bir işlem sayısı kadar sürdürmeliyim. Neticede ilk adım kadar geriye gittiğimde hemen m n-i artı i'ye dönüşüyor. Şimdi bu noktadan sonra
+
+381
+01:28:33,300 --> 01:28:52,720
+Bu formülizasyonu çıkarttıktan sonra benim aslında bu ilk başta konu olan fonksiyonumla alakalı initial condition'ı belirlemem lazım. Yani hangi noktadan sonra ben artık bu call'ları yapmayı bırakıyorum ve bana ne döndürüyor return değeri olarak? Buna bakmam gerekiyor.
+
+382
+01:28:57,811 --> 01:29:03,692
+Fonksiyonunda n'in sıfır olduğu durumda bir döndürerek function kollardan çıkma durumu var.
+
+383
+01:29:03,692 --> 01:29:06,252
+Biliyorsunuz n'in sıfır olduğu durumda bir döndürecek.
+
+384
+01:29:06,771 --> 01:29:11,372
+Dolayısıyla burada da n'in sıfır olduğu durumu elde etmeye çalışacağım ben.
+
+385
+01:29:12,152 --> 01:29:17,532
+Şu eşitlikte n'in sıfır olabilmesi için i ile n'in birbirine eşit olması gerekiyor.
+
+386
+01:29:17,771 --> 01:29:19,052
+Dolayısıyla ben
+
+387
+01:29:21,872 --> 01:29:24,692
+i'nin yerine n koyduğumda
+
+388
+01:29:24,692 --> 01:29:25,452
+şurada
+
+389
+01:29:25,615 --> 01:29:52,556
+Bana bakın bunu verecek. M, n-n artı n'i verecek. Ben bu durumda böyle olduğu zaman bana bunu initial condition'dan dolayı sıfır vereceğini biliyorum. Dolayısıyla bu bana n'i sonuç olarak çıkartıyor. Demek ki benim backward substitution ile bu current condition çözümlediğimde karmaşıklı teta n'e denk geliyormuş diyorum.
+
+390
+01:29:54,899 --> 01:30:00,219
+Şimdi buradan yola çıkarak ben bu Time Efficiency'i, Recursive Algoritma'larda hesaplamak için ne yaptım?
+
+391
+01:30:00,219 --> 01:30:12,999
+Input Size'ı belirleyen parametreyi hesap, karar verdim. Ondan sonra işte Algoritma'nın Basic Operasyon'unu yine belirledim.
+
+392
+01:30:14,499 --> 01:30:19,799
+Basic Operasyon farklı inputlar için.
+
+393
+01:30:20,212 --> 01:30:45,912
+Aynı size sahip farklı input setleri için benim çalışma zamanım bu basic operasyon işletilmesi için gerekli olan işletilme sayısında bir değişiklik var mı bunu check ettim. Bu benim ne tarafa doğru hesaplama yapacağıma karar vermemi sağlayacaktır. Recurrence relation'ı kurdum. Sonra da herhangi bir metotla bunu çözümledim.
+
+394
+01:30:47,220 --> 01:31:14,319
+Örneğin, yine bir örnek. Hanoi Kuleleri örneği var. Bu en tane disk için. Bu disklerin stickler üzerinde, her seferinde küçük disk, büyük diskin üzerinde olacak şekilde, yani bu kuralı bozmadan, bir source stickler bir yerine geçirilmesini içeren bir problem.
+
+395
+01:31:14,804 --> 01:31:24,804
+Bir oyuncak aslında. Bu burada tabi recursive bir yaklaşım çözüm şeklinde belirliyor. Temel olarak aslında yapılan şey şu.
+
+396
+01:31:24,804 --> 01:31:37,804
+N tane disk var ya toplam. N-1 disk. Yani N disklerin tamamını iki parçaya ayırdığınızı düşünün. Taban diski ve üstündeki diskler olarak iki parçaya ayırdığınızı düşünün.
+
+397
+01:31:43,859 --> 01:31:58,359
+Şuraya B, yani Stine örneğin, şimdi A, B, C dersek şunlara, Sorsumuz A, Destinationımız C olsun. Buradaki yardımcı disk B'yi kullanarak en eksi birlik şu disk grubunu aktarmanız gerekiyor aslında.
+
+398
+01:32:01,079 --> 01:32:07,359
+C'yi kullanarak B'yi aktarıyorsunuz. Burada C'yi kullanarak B'yi aktarmak dediğimde recursive bir iş içeriyor kendi içerisinde.
+
+399
+01:32:07,828 --> 01:32:23,528
+Bunu aktardıktan sonra tabandaki disk A açıkta kalmış oluyor. Onu J'ye yerleştiriyorsunuz. Ondan sonra da tekrar diğer diskleri yine boşta kalan bu sefer A'yı kullanarak geri yerleştiriyorsunuz.
+
+400
+01:32:23,528 --> 01:32:29,168
+Dolayısıyla aslında en eksi birlik disk transferini içeren bir grup recursive içiniz var.
+
+401
+01:32:29,747 --> 01:32:36,868
+Sonra da bu tek bir tane sonda kalan Larges Diski Destination'a tek bir hamlede geçirme süreci var.
+
+402
+01:32:36,868 --> 01:32:42,148
+Dolayısıyla TUTL NWMVS'u şöyle formülize edebiliyoruz. En dislik bir yapı varsa,
+
+403
+01:32:42,148 --> 01:32:54,228
+şuradaki iki transfer işleminden dolayı TN-1'lik burada işlem sayısı karşımıza çıkıyor. Bunlardan iki tane var. Bir de Larges Diski geçirme işlemi var.
+
+404
+01:32:56,787 --> 01:33:04,467
+Bu şekilde benim recurrence relation'ını kurabilirim. Bir tane disk kaldığında da tek hamlede bunu yerleştiriyorsunuz ki sonlanma noktası da bu.
+
+405
+01:33:04,987 --> 01:33:07,787
+Şimdi şunları nasıl çözümleriz bakalım.
+
+406
+01:33:11,127 --> 01:33:13,427
+Şu formül buraya geldi.
+
+407
+01:33:14,967 --> 01:33:16,747
+M1'in 1 olduğu durum için.
+
+408
+01:33:17,787 --> 01:33:23,667
+Yine Backward Substitution ile 2M n-1 artı 1 dediğimiz eşitlikle
+
+409
+01:33:25,300 --> 01:33:40,240
+Önce n-1 bir adım geriye gidip n-1'in açılımını yapalım. 2 n-2 artı 1 olarak bunu yazıyoruz. Dolayısıyla şu ifadede n-1'in olduğu yere
+
+410
+01:33:40,884 --> 01:33:51,463
+2 çarpı n-2 artı 1 yazdım. Artı 1 buradan geldi. Şu artı 1 de buradan geldi. Dolayısıyla bu neye dönüştü? 2'nin karesi m n-2 artı 2 artı 1'e dönüştü.
+
+411
+01:33:52,423 --> 01:34:00,484
+m n-2'yi yine bir adım geriye gidip yazmaya çalıştığım vakit 2 çarpı n m n-3 artı 1 dedim.
+
+412
+01:34:01,544 --> 01:34:03,584
+Yerine koyduğumda bu eşitlik ortaya çıktı.
+
+413
+01:34:05,811 --> 01:34:29,452
+İ'ye bağlı olarak bunu yazabilmek için bir görü oluşturdu. 2 üzeri i çarpı m, bakın şuradaki kat sayılar eşit çünkü. N-i artı, 2 üzeri i-1, 2 üzeri 2, i-2 diye gidiyor ta ki 1'e kadar. Dolayısıyla şöyle bir benim relation'ım var. Şimdi bunu elde ettikten sonra şuradaki başlangıç değerini bulmaya çalışıyorum.
+
+414
+01:34:29,823 --> 01:34:38,783
+1 olabilmesi için ne yapmalıyım? 1 olabilmesi için şu emin içerisindeki eneksi iyilik kısmı iyiye eneksi bir demeliyim. O zaman biri bulmuş oluyorum.
+
+415
+01:34:39,303 --> 01:34:49,283
+Bir yerine eneksi bir koyduğumda da işlemleri sürdürdüğüm vakit 2 üzeri eneksi birlik 1 bana karmaşıklık getirdi.
+
+416
+01:34:50,043 --> 01:34:54,143
+Power of Hanoi'nin Recurrent Solution çözümü. Backlit Substitution da böyle oluyor.
+
+417
+01:34:57,619 --> 01:35:07,859
+Şimdi, Backward Substitution yapılabilir. Başka şeyler de yapılabilir. Ağaç üzerinden de çözümlemeye gidilebilir.
+
+418
+01:35:09,659 --> 01:35:18,619
+Ağaç üzerinden çözümlemek görsel bir iş. Kolay da bir çözüm yolu aslına bakarsanız eğer ağaca dökebiliyorsanız.
+
+419
+01:35:24,340 --> 01:35:34,840
+Bakın şurada ne yapıyordu? 2 çarpı n-1 için bir function call var ve bir işlem yapılıyor her seferinde.
+
+420
+01:35:34,840 --> 01:35:46,668
+Bunu döktüğümüz zaman ağaca şöyle oluyor. Enlik bir veriniz varken n-1 için iki kere function call yapıyorsunuz.
+
+421
+01:35:48,051 --> 01:36:13,792
+Ve her seferinde bir işlem yapıyorsunuz. Yani burada n-1 için function call yaptınız. Bir de şuradaki işleminiz var artı bir. Bir işlem burada yaptınız. Her seferinde iki tane ikiye bölünerek çalıştırmaya devam ediyorsunuz kodumuzu ve bunun n-1'in mevcut durumundan bir azaltarak. Yani n-1 için iki tane n-2'lik.
+
+422
+01:36:14,176 --> 01:36:39,476
+Function call'unuz var. Burada da öyle. N-2 için iki tane N-3'lük function call'unuz var. Ve her function call yaptığınızda da bir tane operasyonunuz var. Dolayısıyla total operasyon sayının sizin not sayınıza eşit olmuş oluyor. Bu örnek için. Şuradaki kısım bir olduğunda. Buradaki kısımın birden farklı olduğu durumlar için de ilerleyen haftalarda çözerim. Not sayınızı eşit olmuş oluyor. Not sayınızı bulabilmek için de
+
+423
+01:36:40,083 --> 01:37:05,963
+Tabi burada ağacın derinliğine bakacaksınız. Şu formulizasyonda görüyorsunuz ağacın derinliğe olmak üzere işte L'nin n-1'e sıfırdan n-1'e bittiği durum için her seviyedeki not sayısının toplamı 2 üzeri n-1 yani.
+
+424
+01:37:06,707 --> 01:37:15,707
+Benim toplam node sayım aynı zamanda toplam işlem sayıma eşit oluyor. Yani Backward Substitution ile yaptığımızın ağaç üzerinden de çözebilmiş olduğumuz böylece.
+
+425
+01:37:15,707 --> 01:37:31,707
+Dolayısıyla burada dikkat etmeniz gereken şey Recurrence Relation'da eleman her bir n dediğimiz o data boyutu için kaç kere Function Call yapıyorum ve her Function Call üzerinde ayrı kaç işlem yapıyorum. Ağaç üzerinde o dağılımı işaretliyoruz.
+
+426
+01:37:34,131 --> 01:37:41,131
+Şimdi, burada yine bir backwards substitution ile bir çözüm örneği var.
+
+427
+01:37:44,131 --> 01:37:47,131
+Binary representation bulmaya yönelik yine.
+
+428
+01:37:48,131 --> 01:37:55,131
+Her seferinde ikiye bölme işlemini, az önce bunu sequential olarak çözmüştük.
+
+429
+01:37:55,131 --> 01:37:57,631
+Burada recursive versiyonu var.
+
+430
+01:37:58,292 --> 01:38:07,292
+Her seferinde ikiye bölüyor ve Counter'ı bir arttırıyor yan tarafında. Yani dolayısıyla sizin Recurrence Addition'ınız şuna dönüyor.
+
+431
+01:38:08,292 --> 01:38:18,292
+Return Value'yu bir arttırmak ve ikiye bölerek tekrar kendisini çağırmak ve enin birden büyük olduğu durumlar için buna devam etmek gibi.
+
+432
+01:38:26,100 --> 01:38:32,760
+yapmıyorsunuz. Dolayısıyla bir olduğu durumda Editions sayınız sizin sıfır olacak. Şimdi bu
+
+433
+01:38:33,260 --> 01:38:37,619
+Buraya niye böyle oldu? Sizi kapatıyor mu?
+
+434
+01:38:41,971 --> 01:39:03,851
+Şimdi Şunu Şuradaki ifadeyi Buraya alarak çözmeye çalışıyorum ama bu bölmeli ve bu işte aşağı yuvarlama kısmını basic bir şekilde çözüme katabilmek için ene iki üzeri k dedim.
+
+435
+01:39:03,851 --> 01:39:08,292
+Enin iki üzeri k olduğu durum için şurada en yerine iki üzeri k yer.
+
+436
+01:39:08,384 --> 01:39:31,304
+yerleştiriyorsunuz. A iki üzeri k oluyor. Şurada en bölü iki vardı hatırlarsanız. O iki üzeri k eksi bir olarak yazılabilir. Yanında da artı bir var ve bunun sıfırdan büyük olduğu durumlar için yapıyorsunuz. A birinde sıfır olduğunu belirlemiştim. Onu da bu şekilde ifade edebiliyorum. Bu noktadan sonra Backward Substitution yapmaya çalıştığımda
+
+437
+01:39:35,315 --> 01:39:49,855
+İşte ifadem şu. A2 üzeri k-1 artı 1. Bir adım geriye gidiyorum. O zaman A2 üzeri k-1 neye denk gelir? A2 üzeri k-2 artı 1'e denk gelir.
+
+438
+01:39:49,855 --> 01:40:03,175
+Burada şu ifadenin yerine bunu koydum. Dolayısıyla A2 üzeri k aslında A2 üzeri k-2 artı 1 bir de şuradaki biri getirdi. Bir adım daha geriye gittim.
+
+439
+01:40:04,180 --> 01:40:05,699
+Tekrar yerine koydum.
+
+440
+01:40:06,940 --> 01:40:11,199
+Neticede karşıma yine İ'ye bağlı olarak yazabileceğim bir ifade çıktı.
+
+441
+01:40:12,060 --> 01:40:15,320
+A2 üzeri K-İ artı İ şeklinde yazabiliyorum.
+
+442
+01:40:15,320 --> 01:40:16,500
+İfadeyi ben.
+
+443
+01:40:18,579 --> 01:40:21,920
+Şimdi burada şunu
+
+444
+01:40:22,484 --> 01:40:47,744
+Initial State'i sağlayabilmek için ikinin üzerindeki değeri sıfır olması gerekiyor. Yani k, i'nin k'ye eşit olması gerekiyor. i'ye k verdiğiniz zaman şunu sağlamış oluyorsunuz. Burası da 1'e denk geldiği için 2 üzeri sıfır 1'e denk geliyor. Dolayısıyla onun değeri de sıfır olduğundan neticede şuna
+
+445
+01:40:48,112 --> 01:41:09,652
+Evrilmiş oluyor ifadeniz. A1 artı K, K'ya denk gelmiş oluyor. Şimdi K, logaritma iki tabanında N olduğundan çünkü N eşittir iki üzeri K şeklinde bu işlemi başlatmaktık. Dolayısıyla sizin A'n'iniz logaritma iki tabanında N'e denk geldi. Bu da logenlik bir tata karmaşıklığa sahip olduğunu gösteriyor.
+
+446
+01:41:10,484 --> 01:41:27,644
+Backward Substitution neticede böyle çalışıyor. Her sıfırda bir adım geriye gidiyorsunuz, yerine koyuyorsunuz, bir görevde ediyorsunuz, i'ye bağlı olarak yazıyorsunuz. Başlangıç Initial State için de ne olması gerekiyorsa oradaki i'yi, i terimini yok edecek şekilde işleminizi tamamlıyorsunuz.
+
+447
+01:41:30,144 --> 01:41:36,144
+Şimdi Backward Substitution tabii her zaman çok iyi çalışmıyor. Böyle durumlar var. Mesela
+
+448
+01:41:37,460 --> 01:41:56,139
+Fibonacci sayılarını ele alalım. Fibonacci sayılarının recursive olarak bulunması işlemi de şöyle bir şey aslında relation elde ediliyor. Normalde fonksiyon nasıl çalışıyor? Arka arkaya gelen.
+
+449
+01:41:56,256 --> 01:41:59,576
+İki sayının toplamı bir sonraki terimi veriyor her seferinde.
+
+450
+01:41:59,976 --> 01:42:05,096
+Sıfırla birin toplamı biri veriyor. Birle birin toplamı ikiyi veriyor. İkiyle birin toplamı üçü veriyor gibi.
+
+451
+01:42:06,196 --> 01:42:10,896
+Şimdi burada, şurada da şeyi var. Fonksiyonun kendisini görebiliyorsunuz.
+
+452
+01:42:11,896 --> 01:42:14,776
+Şimdi burada Backward Substitution yapmanız çok kolay değil.
+
+453
+01:42:14,776 --> 01:42:23,576
+Çünkü iki ayrı fonksiyon birleşeni yani iki ayrı function call var ama bunların sonlanma şeyleri aynı değil.
+
+454
+01:42:24,051 --> 01:42:28,731
+Aynı anda sonlanmıyor bu function call'lar. Bir tanesi önce sonlanıyor her seferinde.
+
+455
+01:42:28,731 --> 01:42:33,652
+Dolayısıyla Backward Substitution'la yapmaya kalktığınız zaman bu iş karışık hale geliyor.
+
+456
+01:42:33,652 --> 01:42:41,652
+Mesela böyle bir şeyi de tri oluşturmak size o anlamda kolaylık sağlayabilir.
+
+457
+01:42:41,652 --> 01:42:43,652
+Tabi burada bir altın oran kavramı var.
+
+458
+01:42:43,652 --> 01:42:48,652
+Biliyorsunuzdur arka arkaya gelen Fibonacci sayılarının oranı altın oranı veriyor bize.
+
+459
+01:42:49,171 --> 01:43:16,511
+Oran. Bunu ağaca döktüğünüz zaman n için n-1 ve n-2 için function kollar yapıyorsunuz. Burada da işlem sayınız aslında sabit. Bunları yapıyorsunuz. Burada bir işleminiz var. Toplama işleminiz var ya. Toplama işlemini yapıyor. Artı n-1 için çalıştırıyor. n-2 için çalıştırıyor. n-1 toplama işlemini yapıyor. n-2 için çalıştırıyor. n-3 için çalıştırıyor.
+
+460
+01:43:16,927 --> 01:43:36,247
+n-2, n-3 ve n-4 için çalıştırıyor gibi. Ve burada n'in örneğin 5 olduğu durumda şu ağacın dalı buraya kadar inecek ama bu ağacın dalı buraya kadar inecek. İşlem sayıları not sayıları ile birebir eşit değil. Tam dolu bir ağaç olsaydı bu.
+
+461
+01:43:37,011 --> 01:44:04,851
+Hatta Hanay Kuleleri'ninki gibi bir görsel olacaktı. Tam dolu bir ağaç olsaydı. O zaman bizim not sayımız gerçekten işlem sayımıza tekabül edecekti ve o upper bound'umuzu verecek. O iki üzeri en. Nasıl yani upper bound neydi? İki üzerinden daha aşağıda bir karmaşıklığı olduğunu söylemiş oluyordunuz. Gerçekten de öyle. Tam a dolu olsaydı iki üzeri on olacaktı ama tam dolu değil. Daha önce sonlanan function kollar var.
+
+462
+01:44:05,011 --> 01:44:29,992
+Bu aslında iki yerine şey koyduğunuz zaman, Golden Ratio'yu koyduğunuz zaman işte 1.618, 1.618 üzeri n'e tekabül ediyor. Big Theta'da. Big Theta'da bu Fibonacci Namburların karmaşıklı Golden Ratio üzeri n'e bakarsınız. Çünkü aynı seviyede sonlanmadığı için Function Gold var.
+
+463
+01:44:33,587 --> 01:44:39,987
+Şimdi böyle biraz egzersiz yapıp şey yapalım. Pekiştirelim dersi.
+
+464
+01:44:43,307 --> 01:44:52,268
+Şimdi mesela benim iki tane fonksiyonum var. n çarpı n artı bir ve iki bin çarpı n kare diye.
+
+465
+01:44:52,268 --> 01:45:00,203
+Bunların büyüme hızlarını karşılaştıralım derseniz ne yapıyorsunuz? Burası aslında n kare artı n.
+
+466
+01:45:00,435 --> 01:45:15,855
+Burası da 2000n². Dolayısıyla yine domine yapı yani daha iyi baskın olan terime bakıyorsunuz n² olduğu için ikisinin aynı olduğunu büyüme hızlarını söyleyebilirsiniz.
+
+467
+01:45:16,675 --> 01:45:27,835
+Şimdi şurada 100n² var. 0.01n³ var. Bakın biri n³, biri n². Katsayılar farklı. Yani n'in küçük değerleri için
+
+468
+01:45:28,948 --> 01:45:56,048
+Bu ikisinin büyüme hızı arasında bir fark göremeyeceksiniz. Yani 100'e kadar bir fark göremeyeceksiniz. Ama n'in büyük değerlerinde bir tanesi kübik olurken diğeri kuadratik olacak. Dolayısıyla kat sayıların önemli olmamasının sebebi bu. Ama n sıfırın hangi değerinden itibaren bu boundlar geçerli? Bilgisi burada önemli. Burada n'in kaçtan büyük olduğu durumlar için bu boundlar geçerli.
+
+469
+01:45:56,448 --> 01:46:10,448
+Bunu tespit etmek gerekiyor. Şimdi Logaritma 2 tabanında n ve elenen örnekleri var. Bunların oranlarına bakmak istersek ne yapıyoruz?
+
+470
+01:46:20,787 --> 01:46:27,207
+Taban değiştirirsek, elen tabanına geçirirsek, 1 bölü elen 2 çarpı elenen ne geliyor?
+
+471
+01:46:27,707 --> 01:46:34,608
+Elen tabanına geçirdiğiniz için. Demek ki bu ikisinin de karmaşıklık sınıfı aynıdır diyebiliriz.
+
+472
+01:46:35,648 --> 01:46:40,307
+Mesela şuna bakalım. En eksi bir faktöriyel ile en faktöriyel. Bunları içinde söyleyebiliriz.
+
+473
+01:46:40,307 --> 01:46:44,827
+İkisi de böyle faktöriyel. Yakı aynıymış falan gibi görünüyor.
+
+474
+01:46:45,268 --> 01:46:57,268
+Ama aslına bakarsanız n faktöriyel dediğiniz şey n-1 faktöriyel ile elin çarpımı. Dolayısıyla daha büyük bir büyüme hızı var diyebiliriz.
+
+475
+01:47:01,363 --> 01:47:13,763
+Şimdi burada yine bir fonksiyon verilmiş. Burada SAM formüllerini kullanarak Biktana'daki karşılığını bulmaya çalışıyoruz.
+
+476
+01:47:15,223 --> 01:47:18,523
+İ giderken bir denene kadar İ üzeri K'nın.
+
+477
+01:47:22,163 --> 01:47:31,663
+Açılımı için şöyle bir formülümüz var. Dolayısıyla burada önce iç tarafın açıyoruz.
+
+478
+01:47:48,819 --> 01:48:02,699
+Dolayısıyla i'nin 0 olduğu durumu eklemeniz toplamda n olduğu durumu da çıkartmanız gerekiyor ki şu formülü uygulayabilirsiniz. Bunun üzerinden işlemleri sürdürdüğünüz zaman.
+
+479
+01:48:05,739 --> 01:48:11,560
+Şunu elde ediyorsunuz. 1 bölü 5 en üzeri 5 eksi en üzeri 4 diye. Bu da yüksek.
+
+480
+01:48:12,020 --> 01:48:24,500
+Kat sayılı, tıpkı bir polinom gibi düşünebilirsiniz bunun polinom terimi gibi. Kat sayılı olanın ek tadadaki karşılığı bize verdiğini görüyoruz.
+
+481
+01:48:26,060 --> 01:48:37,000
+Şimdi birkaç tane daha örnek üzerinden gidelim. Mesela burada bir tane algoritma verilmiş. Ne iş yapıyor bu algoritma? Ve şu soruların cevapları nelerdir diye bakalım.
+
+482
+01:48:38,739 --> 01:49:05,119
+Ne yapıyor? Bir denene kadar olan sayılar var. Bunların karelerinin toplamını buluyor. Yaptığı işlem bu. Peki, buradaki basic operasyon hangisi? Şuradaki çarpma işlemi. Toplayan şu işlem basic operasyon aslında. Toplama ve çarpma aynı sayıda burada aynı sayıda çalışıyor. Bu basic operasyon kaç kere?
+
+483
+01:49:05,876 --> 01:49:13,876
+Execute ediliyor. En kere Execute ediliyor. Dolayısıyla F-E-C-S-Klası'na teta n diyebiliriz.
+
+484
+01:49:13,876 --> 01:49:26,876
+Burada peki bir improvement yapabilir miyiz? En kere gezmeden birilerin arasındaki sayıların karelerinin toplamını bulabilir miyiz?
+
+485
+01:49:26,876 --> 01:49:32,876
+Aslında bulabiliyoruz. Bir formülümüz var biliyorsunuz. Sam formüllerinde az önce de.
+
+486
+01:49:33,395 --> 01:49:45,576
+Muhtemelen vermiştim. Formüller arasında. Normalde dönmenize gerek yok. Birilerin arasındaki sayıların karelerini bulmak istiyorsanız n çarpı n artı bir çarpı iki n artı birden zaten bunu bulabiliyorsunuz.
+
+487
+01:49:49,363 --> 01:50:00,203
+Dolayısıyla eğer böyle yaparsanız sabite gelmiş oluyor. Sabit bir karmaşıklık aslında O1'de bu işi çözebiliyorsunuz. Öbür türlü N'de çözecektiniz. Böyle yapınca O1'de çözdünüz.
+
+488
+01:50:01,423 --> 01:50:02,783
+Şimdi ikinci örneğe bakalım.
+
+489
+01:50:06,663 --> 01:50:15,223
+Burada yapılan iş nedir? Burada bir minimum bir de maksimum bulma işlemleri var bir dizi içerisinde.
+
+490
+01:50:15,667 --> 01:50:37,427
+Bunların farkını alıyor. Yaptığı iş bu. Yani minimum ve maksimum elemanın farkını buluyor. Buradaki basic operasyon ne? Karşılaştırmalar var. Aslına bakarsanız. Şimdi şunları her seferinde yapmıyor. Şunları her seferinde yapıyor. Basic operasyonlar var ve bunlar iki tane. Ama neticede orada iki.
+
+491
+01:50:38,804 --> 01:50:51,483
+Sabit bir değer olduğu için buradaki çalışma zamanı n-1'e bağlı diyebiliriz. Yani teta n oluyor. Neden? Çünkü sabit değerleri ignore ettiğimizden teta n'lik bir karmaşıklığı var diyebiliriz.
+
+492
+01:50:51,483 --> 01:51:04,483
+Bunu improve edebilir miyiz diye düşünecek olursak. Yani tek yapabileceğimiz şey şuradaki if yerine else if demek.
+
+493
+01:51:04,960 --> 01:51:31,859
+her seferinde girmesin diye yani şu kontrolü sağlamıyorsa girsin, burayı sağlıyorsa bir daha bunu kontrol etmesin diye onu her sefer yapabilirsiniz. Bu bir tık. Evet size şey sağlayacak. Zaman kazandıracak ama bu sizin algoritmanızın efficiency kılısını etkileyecek bir improvement olmaz. İki işleminiz var.
+
+494
+01:51:32,756 --> 01:51:44,256
+Şuradaki iki ayrı kontrolümüz var. n-1 kere bunu yapıyorsunuz. 2 n-1 işte bu da teta n'e denk geliyor. Buradaki sabiti ignore ettiğiniz için.
+
+495
+01:51:49,140 --> 01:52:15,600
+Şimdi bu işlem ne yapıyor? Burada bir matriziniz var sizin. Yani bir kare matriz var. Bu kare matriz içerisinde bakıyorsunuz. Aslına bakarsanız simetrik mi diye bakıyorsunuz. Karşılıklı işte 1'e 2'yi 2'ye 1'le 3'e 1'i 3'e 1'i 1'e 3'le karşılaştırarak örneğin simetrikliğini kontrol ettiğiniz bir algoritma bu.
+
+496
+01:52:16,307 --> 01:52:42,307
+Buradaki basic operasyonunuzu aslında karşılaştırma yapıyorsunuz. Bunun kaç kere tekrar edildiğini şu SAM formülüyle yazabilirsiniz. Buradaki sınırlar I artı birden N eksi biri, sıfırdan N eksi ikiye gidiyor. Sıfırdan N eksiye karşılaştırmanız var. Dolayısıyla SAM formüllerini içtekinden başlayarak açtığınız vakit
+
+497
+01:52:43,444 --> 01:52:47,444
+İşte bu sizi şu formüle getiriyor.
+
+498
+01:52:49,444 --> 01:53:04,944
+Ondan sonra dolayısıyla n-1 çarpı n bölü ikilik bir toplam formülüne beni ulaştırmış oluyor.
+
+499
+01:53:06,244 --> 01:53:09,444
+Peki, neticede
+
+500
+01:53:09,684 --> 01:53:12,044
+En karelik bir ifadeye götürdü beni bu.
+
+501
+01:53:12,444 --> 01:53:15,024
+Peki bu, çok özür dilerim, pardon.
+
+502
+01:53:16,364 --> 01:53:21,064
+En karelik bir ifadeye götürdü. Bunun için bir improvement yapılabilir miydi diye düşünebilir miyiz?
+
+503
+01:53:23,904 --> 01:53:29,744
+İşte ne yapıldı? Daha kötü olurdu muhtemelen. İyi bir şey varsa iyileştirme kadına söyleyebilirsiniz.
+
+504
+01:53:29,744 --> 01:53:32,804
+İşte transposesini alıp karşılaştırabilirsiniz vs.
+
+505
+01:53:33,471 --> 01:53:58,371
+Diyelim ki iki matrisiniz, bir matrisin simetrik olup olmadığını anlamak için transpozesini alıp üst üste elemanları karşılaştırma yoluna gittiniz. Transpoze alabilmek için zaten en karelik bir karmaşıklığa ihtiyacınız var. Karşılıklı elemanları karşılaştırabilmek için de yine n'e bağlı olarak gideceksiniz. Yine n'e bağlı olacak eğer.
+
+506
+01:54:01,555 --> 01:54:08,555
+Satırınızın sayısı olmak üzere. Neticede Efficiency ikisini topladığınız vakit Efficiency değişmeyecek.
+
+507
+01:54:08,555 --> 01:54:19,555
+Aslına bakarsanız Efficiency kılığı daha doğrusu değişmeyecek ama iki katlı kadar bir işlem yapma durumunuz burada söz konusu olacak.
+
+508
+01:54:25,779 --> 01:54:44,879
+Son örnekte de diyelim ki benim elimde bir grid var. Bunun ortasında 1x1'lik 1 kare oluşuyor. Her seferinde bunun 4 komşuluğuna bir renkleme yaparak ilerliyorum.
+
+509
+01:54:47,019 --> 01:54:52,039
+Komşuluğum sürekli genişliyor. Bunun kompleksitesi ne olur?
+
+510
+01:54:53,716 --> 01:55:09,896
+Dediğim zaman, nasıl bir şey ortaya çıkar? Bir tane karem var normalde. Dört komşuluğuna ekledim. Her bir karenin dört komşuluğuna ekleme yapıyorum. Dolayısıyla bir, iki, üç, dört komşuluk ekledim. Beş oldu.
+
+511
+01:55:11,336 --> 01:55:15,036
+Şimdi burada yine her bir karenin dört komşuluğuna ekleme yapıyorum.
+
+512
+01:55:16,180 --> 01:55:22,000
+Bunun 4 komşuluğu haliyle dolmuş oluyor. Şu, şu ve şu. Yani şunlara denk geliyor.
+
+513
+01:55:22,920 --> 01:55:29,059
+İşte bunun 4 komşuluğu dolmuş oluyor. Şu ikisi aynı anda zaten dolduracaklar. Orada ikisi için bir tane artış var falan.
+
+514
+01:55:29,819 --> 01:55:32,519
+N2 olduğunda durum böyle. Bu böyle büyüyerek gidecek.
+
+515
+01:55:33,140 --> 01:55:35,859
+Bunun kompleksitesi için nasıl bir çıkarım yapabilirim.
+
+516
+01:55:36,779 --> 01:55:39,739
+Şimdi N0 iken bir tane kare var.
+
+517
+01:55:42,127 --> 01:55:57,167
+Toplam 5 tane kare var. Aslında bu 5 tane karenin oluşma şekli sıfırıncı en sıfır olduğu durum için elde ettiğim kare sayısı artı 4 komşuluğa bakıyorum.
+
+518
+01:55:59,127 --> 01:56:02,547
+Enin 1 olduğu durum için bunu 1 ile çarpıyorum. Birinci iterasyonda.
+
+519
+01:56:03,247 --> 01:56:06,167
+Şimdi C2 olduğu vakit, dolayısıyla bu bana 5'i veriyor.
+
+520
+01:56:06,167 --> 01:56:08,287
+C2 olduğunda ne yapıyorum?
+
+521
+01:56:09,076 --> 01:56:13,175
+Burada bakın toplam 13 tane kare var. Aslında bu neyle neyin toplamı?
+
+522
+01:56:15,175 --> 01:56:23,155
+C'nin 1 olduğu durumda, yani şurada elde ettiğim sayı yani 5 artı 8, 4 çarpı 2.
+
+523
+01:56:24,595 --> 01:56:36,355
+C'ye 3 olduğunda bu 25 kareye kadar çıkıyor. C'nin bir önceki durumu C2 için bulunan kare sayısı artı.
+
+524
+01:56:36,500 --> 01:56:55,560
+Üçüncü iterasyon n3, 4 komşuluk çarpı 4. Dolayısıyla bunu formalize ettiğim zaman cn'in cn-1 artı 4n olduğunu görebilirim. n'in sıfırdan büyük eşit olduğu tüm durumlar için cn'in sıfır olduğu durum için de 1 olacak. Initial state diyebilirim.
+
+525
+01:57:04,532 --> 01:57:13,292
+Relation'dan yola çıkarak, the backward substitution yaparsam eğer cn-1 mesela cn-2 artı 4 çarpı n-1 olur.
+
+526
+01:57:14,512 --> 01:57:17,512
+cn-1 o gördüğüm yere bunu yazalım.
+
+527
+01:57:18,892 --> 01:57:25,392
+n-2 cn-2 cn-3 artı 4 çarpı n-2 olur. Onun yerine onu yazalım gibi.
+
+528
+01:57:32,115 --> 01:57:43,695
+eşitliği yazarsam, başlangıç değerinin de C0'ın 1 olduğu durumu elde edebilmek için, şuranın 0 olduğu durumu elde edebilmek için n'e iyi demem gerekiyor.
+
+529
+01:57:45,216 --> 01:57:51,395
+Yerine koyduğum zaman, C0 artı 4 çarpı 1 artı 4 çarpı 2 diye gidiyor.
+
+530
+01:57:52,836 --> 01:57:56,296
+C0 1'e denk geldiği için, burası 1.
+
+531
+01:57:56,884 --> 01:58:23,204
+Burası 4. 4 çarpı n diye giden bir durumum var. 4 parantezini aldığımda 1 artı 2 artı bla bla bla n. Dolayısıyla 1 artı 2n çarpı n artı 1. Bir derene kadar olan sayıların toplam formülünden yola çıkarak. Yani 2n kare artı 2n artı 1'miş. Dolayısıyla en karelik bir tetada karmaşıklığı varmış diyebilirim.
+
+532
+01:58:25,108 --> 01:58:30,368
+Benim bugünkü anlatacaklarım bu kadar arkadaşlar. Sizin genel olarak bir sorunuz var mıdır?
+
+533
+01:58:32,128 --> 01:58:40,528
+Hocam, ben şey sormak istiyorum. Şimdi bir sürü formül gördük. İşte bu toplam formüleri vesaire. Bizim bunları ezberlememize gerek var mı hocam?
+
+534
+01:58:40,548 --> 01:58:42,208
+Yok canım, bence gerek yok.
+
+535
+01:58:42,739 --> 01:59:02,159
+Ben eğer ihtiyacınız olan bir şey olursa, sınav için soruyorsan eğer bunu, sınav için soruyorsun eğer. Zaten şeyin kenarına yazarım. Ben kendim de formül ezberlemeyi çok sevmiyorum. Ama neyin bir formül dahilinde olduğunu bilin tabii ki sizin için de. Formül ezberlemek sizce beğeni geliştiriyor mudur?
+
+536
+01:59:02,804 --> 01:59:15,123
+Hocam ben hiç sevmiyorum. Ondan sordum zaten. Yok ama beyni geliştiriyor mudur? Ben onu merak ediyorum. Formül ezberlemek. Hani böyle beyni kullandığınız yönlerde gelişiyor ya. Mesela çok ezberlemek ezber yeteneğini arttırır mı sizce?
+
+537
+01:59:16,123 --> 01:59:19,944
+Hocam bence formül mesela yanda formül duracak, solda soru olacak mesela.
+
+538
+01:59:20,532 --> 01:59:37,732
+Soruyu çözerken formüla bakıp çözüp böyle 20-30 tane soru çözmek şey yapar belki. Beyni geliştirir ama orada formül de otomatik olarak ezberlenmiş olur belki. Ama hani böyle gidip de formülü bakıp ha işte birden ne kadar olan toplam işte n çarpıya n artı 1 bölü 2'dir. İşte bir daha bir daha bir daha böyle tekrar etmek bence çok bir şey geliştirmiyor.
+
+539
+01:59:38,652 --> 01:59:40,672
+Ezberlemek beyni geliştirmez biliyorsun yani.
+
+540
+01:59:42,420 --> 01:59:50,100
+Merak ediyorum. Çocuklara şiir falan ezberletiyorlar ya, beyni geliştiriyor mudur sizce? Fikrinizi soruyorum arkadaşlar.
+
+541
+01:59:56,692 --> 02:00:12,152
+Ezberlemenin yolu dediğin gibi kullanarak zaman içerisinde beğenin oturması. Yani senin söylediğini anlıyorum. Kullandıkça kullandıkça ilgili bağlantılar beyinde oluşuyor falan. Neyse bu konu ilginizi çekmedi pek. Haftaya görüşmek üzere o zaman. Başka bir sorunuz varsa alayım.
+
+542
+02:00:14,671 --> 02:00:15,291
+Görüşürüz hocam.
+
+543
+02:00:15,952 --> 02:00:17,231
+Görüşmek üzere. Teşekkürler.
+
+544
+02:00:17,231 --> 02:00:18,152
+Görüşürüz hocam.
+
+545
+02:00:18,711 --> 02:00:19,471
+Hoşçakalın.
