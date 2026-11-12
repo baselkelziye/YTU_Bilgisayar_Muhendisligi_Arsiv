@@ -1,0 +1,3127 @@
+1
+00:02:01,396 --> 00:02:03,456
+Evet, arkadaşlar, günaydın, merhabalar.
+
+2
+00:02:04,835 --> 00:02:11,475
+Geçen hafta hatırlayacak olursanız, fonksiyonlar arası veya yordamlar arası parametre aktarımından bahsetmiştik.
+
+3
+00:02:12,575 --> 00:02:17,295
+Tabii burada yordamlarla ilişkili olarak şunu söylemek lazımdı.
+
+4
+00:02:18,615 --> 00:02:21,975
+Bir ana yordam tarafından, alt yordam çağrıldığında
+
+5
+00:02:22,867 --> 00:02:48,527
+Register değerleri olduğu gibi mevcut değerleriyle Alt Yordan'da da aynı şekilde kullanılabilir durumdaydı. Bunun hem bir avantajı hem de bir dezavantajı var. Şundan dolayı, eğer ki biz parametre aktarımını yazmaç üzerinden yapmak istiyorsak bu doğrudan bizim kullanabileceğimiz bir özellik oluyordu. Hatırlayacak olursanız bu geçen hafta ve önceki hafta anlatmıştık bunları.
+
+6
+00:02:49,427 --> 00:03:00,508
+Dolayısıyla yazmaç üzerinden parametre aktarımı yapmak istiyorsak bu doğal olarak yazmaçların alt yordama değer değiştirmeden aktarılması sayesinde otomatikman sağlanmış oluyordu.
+
+7
+00:03:02,087 --> 00:03:06,728
+Sadece belirli yazmaçlar değişiyordu. Bu yazmaçlar temel olarak şunlardı.
+
+8
+00:03:07,948 --> 00:03:12,487
+Bir alt yordama gittiğimiz için stack pointer değeri otomatik olarak değişecekti.
+
+9
+00:03:12,668 --> 00:03:16,168
+Çünkü yığına geri dönüş değerlerini atıyordu sistem otomatik olarak.
+
+10
+00:03:16,627 --> 00:03:24,487
+Bunun yanında farklı bir program alanına dallandığımız için near tipinde bir dallanma ise fonksiyon çağırması ise instruction pointer değişiyordu.
+
+11
+00:03:25,207 --> 00:03:32,687
+Far tipinde bir dallanma ise bu durumda da hem instruction pointer hem de kod segment değerleri değişerek alt yordama gidiyorduk.
+
+12
+00:03:33,687 --> 00:03:44,108
+Şimdi bu register değerinin olduğu gibi aktarılması parametre aktarımı açısından bir avantaj fakat dezavantaj olarak çalıştığı bir durum da vardı.
+
+13
+00:03:44,659 --> 00:04:10,959
+O da şu. Değerler olduğu gibi geldiği için alt yordama. Ben alt yordam içerisinde bu yazmaçları kullanarak geçici bir takım hesaplamalarla yapmak istiyorsam, yani temporary değişkenler olarak bunlarda değer tutmak istiyorsam, burada bir problem çıkıyordu. Şöyle düşünelim. Alt yordamda örneğin AX yazmacı 5 değeriyle ayarlanmış veya CX için düşünelim.
+
+14
+00:04:11,443 --> 00:04:25,084
+CX yazmacı o sırada 5 değerine sahip ve bir alt yordama dallandık. Bu arada ana yordamda CX bir döngü işleminin iteratörü şeklinde çalışıyor olsun ve o sırada kaçıncı adımda olduğumuzu belirliyor olsun.
+
+15
+00:04:25,803 --> 00:04:30,903
+Alt yordama gittik. Alt yordam içerisinde biz de başka bir döngü daha oluşturduk.
+
+16
+00:04:31,444 --> 00:04:56,584
+CX'e yeni bir değer atadık, alt yordam içerisinde döngümüzü döndük ve return ettik. Return ettiğimiz zaman loop işlemi bittiği için CX 0 olarak döneceğiz. Hani 5 olarak kaldığı yerden devam etmesi gerekiyordu. Dolayısıyla doğrudan yazmaçların alt yordama değerlerini koruyarak geçiriliyor olmasının dezavantajını burada görmüş oluyoruz.
+
+17
+00:04:56,927 --> 00:05:01,087
+Bu durumda ise şöyle bir temel kuralı ortaya çıkartmış oluyoruz.
+
+18
+00:05:02,028 --> 00:05:10,807
+Alt yordam içerisinde dönüş değeri için kullanmayacağımız bir yazmaç varsa ve biz bunu geçici işlemler için kullanıyorsak,
+
+19
+00:05:12,007 --> 00:05:19,148
+bu yazmaç değerini fonksiyonu alt yordama girer girmez yığına atıp çıkarken de attığımız sırada çekerek
+
+20
+00:05:19,507 --> 00:05:43,727
+orijinal değerlerini korumalıyız. Bu bizim için temel bir kural. Yazmış olduğumuz bütün alt yordamlarda ve bütün fonksiyonlarda buna dikkat etmemiz gerekiyor arkadaşlar. Bu çok önemli bir kural olarak ortaya çıkıyor. Siz de mutlaka yazmış olduğunuz bütün alt yordamlarda şuna dikkat etmelisiniz. Geri dönüş değeri için kullanmıyorsanız yazmacı, özellikle bu amaçla kullanmıyorsanız.
+
+21
+00:05:44,244 --> 00:06:06,084
+içeride geçici bir takım değerler tutmak için kullanıyorsanız bu durumda orijinal yazmaç değeri bozulacaktır. Bu anlama geliyor bu. Dolayısıyla orijinal değerleri koruyabilmek adına yığına girdiğiniz zaman şey pardon alt yordama girdiğiniz zaman orijinal yazmaç değerlerini korumak adına burada push işlemlerini kullanmamız gerekiyor.
+
+22
+00:06:06,579 --> 00:06:16,819
+Alt yordamda return etmeden önce de bu yığına attığımız değerleri geri yazmaçlara yükleyerek orijinal değerlerini korumuş olmamız lazım.
+
+23
+00:06:17,560 --> 00:06:23,079
+Burada tabii dikkat etmek gereken bir başka noktada, örneğin geçen haftaki örnekleri de bu şekilde yapmıştık.
+
+24
+00:06:24,660 --> 00:06:31,060
+Yığına hangi sırada atıyorsak ters sırada da yığından çekmemiz lazımdı.
+
+25
+00:06:31,060 --> 00:06:33,199
+Hatırlayacak olursanız böyle bir işlem vardı.
+
+26
+00:06:33,651 --> 00:06:38,711
+ne kadar geçici kullandığım yazmaç varsa bunları yığından çekeceğim ki
+
+27
+00:06:38,711 --> 00:06:46,091
+return sırasında artık yığının en üstünde geri dönüş instruction pointer ve kod segment değerlerim kalsın.
+
+28
+00:06:46,171 --> 00:06:50,851
+Fart ipindeyse mesela. Bunu geçen hafta detaylı bir şekilde görmüştük.
+
+29
+00:06:52,915 --> 00:07:13,235
+Dolayısıyla konu kapsamını parametre aktarımı üzerinden tamamlayacak olursak, yazmaç üzerinden parametre aktarımı var. Bunun sebebi tam olarak alt yordam çağrıldığında sadece birkaç yazmaç haricinde diğer bütün yazmaç değerlerinin korunarak taşınıyor olması. Bu doğal olarak parametre aktarımı için kullanılabilir.
+
+30
+00:07:15,187 --> 00:07:27,127
+Ama yazmaç değerlerinin olduğu gibi değer aktarılarak alt yordama geçiyor olması da bir yandan problem. O da kullanmış olduğumuz alt yordamdaki veya yazmış olduğumuz alt yordamdaki
+
+31
+00:07:28,115 --> 00:07:35,395
+fonksiyonlar, işlemler yaz maçlarda değişiklik yapıyor olabilir. Bu durumda da orijinal değerlerini korumamız gerekiyor.
+
+32
+00:07:36,315 --> 00:07:44,036
+Bunun için de push ve pop işlemlerini fonksiyon girişinde, alt yordam girişinde ve alt yordam çıkışında uygun şekilde yapmamız gerekiyor.
+
+33
+00:07:44,955 --> 00:07:51,895
+Birinci dolayısıyla parametre aktarım yöntemlerimizden birincisi bu şekilde yaz maç üzerinden parametre aktarımıydı.
+
+34
+00:07:51,895 --> 00:07:54,955
+Yaz maç üzerinden parametre aktarımını ne zaman tercih edebilirim?
+
+35
+00:07:55,540 --> 00:08:16,340
+az sayıda parametre aktarımı yapacaksam bu yöntem tercih edilebilir. Bunun haricinde ikinci yöntemimiz yine yığın üzerinden parametre aktarımıydı. Yığın üzerinden parametre aktarımını pek çok varyasyonuyla yine geçen hafta görmüştük arkadaşlar. Burada temel olarak yaklaşımlar şöyle olabilirdi.
+
+36
+00:08:17,716 --> 00:08:38,676
+Önce sistemi, tabii dönüş değeri ne şekilde oluyorsa ona göre kurgulamak gerekecek. Öncelikli olarak alt yordamımızı tanımlayalım burada. Bütün işlemlerde siz de bu şekilde ilerleyin. Öncelikli olarak alt yordamı tanımlayın. Alt yordamın girdisi ve çıktısı nasıl oluyor bunları belirleyin. Gereksinimlere göre bunları belirledikten sonra
+
+37
+00:08:39,155 --> 00:08:45,895
+fonksiyona ilişkin parametre aktarımı ve parametre dönüşü nasıl olacak? Bunlar otomatik olarak ortaya çıkacaktır.
+
+38
+00:08:46,735 --> 00:08:52,735
+Örneğin, geçen hafta yapmış olduğumuz en büyük ortak bölen örneğinde şöyle ilerlemiştik.
+
+39
+00:08:52,735 --> 00:08:59,415
+Alt yordamımız, yığın üzerinden iki adet word değer kabul etsin.
+
+40
+00:09:00,035 --> 00:09:05,115
+Dönüş değeri olarak da bunu AX yazmacı üzerinden döndürsün diye bir örneğimiz vardı.
+
+41
+00:09:06,259 --> 00:09:18,400
+Bu örnek için, spesifik olarak bu örnek için düşünecek olursak, bir kere yığına iki adet word değerin fonksiyon çağrılmadan önce atılmış olması gerekiyor. Bu önemli bir konu.
+
+42
+00:09:21,279 --> 00:09:27,639
+Dolayısıyla önce yığına ilgili iki tane parametreyi attık. Daha sonra call fonksiyonu ile alt yordamımızı çağırdık.
+
+43
+00:09:28,244 --> 00:09:31,224
+Bu durumda tabii şeyleri incelemiştik hatırlayacak olursanız.
+
+44
+00:09:31,423 --> 00:09:37,443
+Fonksiyon çağrılmadan önceki yığının haliyle fonksiyon çağrıldıktan sonraki hallerini incelemiştik.
+
+45
+00:09:38,344 --> 00:09:41,864
+Şu ana kadar anlattığımız haliyle yığında neler vardı?
+
+46
+00:09:42,044 --> 00:09:47,004
+İşletim sistemine geri dönüş, kod segment, işletim sistemine geri dönüş, sıfır offset değeri,
+
+47
+00:09:47,943 --> 00:09:52,264
+daha sonrasında bizim yığını atmış olduğumuz iki tane parametre.
+
+48
+00:09:52,788 --> 00:10:04,827
+Alt yordam çağırdık, far tipinde olduğunu düşünelim. Ana yordama dönüş, kod segment değeri, ana yordama dönüş, offset değeri oldu. Daha sonrasında da alt yordam içerisinde işlemlerimizi yapacağız.
+
+49
+00:10:06,448 --> 00:10:16,928
+Şimdi ne demiştik ilk örneğimizde? Yığından iki adet word kabul ediyor, AX üzerinden geri dönüş yapıyor. Şimdi bu durumda yığına değer atan ana yordam
+
+50
+00:10:17,331 --> 00:10:29,172
+iki tane parametre attı, fonksiyonu çağırdı, fonksiyonun geri dönüş değeri AX'de, bu durumda ana yordam işletim sistemine dönmeden önce yığını atmış olduğu bu iki parametreyi kaldırmak zorunda.
+
+51
+00:10:30,172 --> 00:10:37,511
+Bu örnek spesifik olarak düşündüğümüzde bu örnekte yığına veri koyan ana yordam yığından da verileri kaldırmak durumundaydı.
+
+52
+00:10:38,731 --> 00:10:40,572
+Bu örnek spesifik örnekte.
+
+53
+00:10:40,980 --> 00:10:49,460
+Bunu bir adım daha ilerletmiştik. Bunu bir adım ilerlettiğimizde yığından çöp veriyi kaldırma görevine Alt Yordam'a vermiştik.
+
+54
+00:10:50,120 --> 00:10:53,540
+Bunu nasıl başarmıştık? Yine Alt Yordam'ımızı tanımlayalım.
+
+55
+00:10:54,300 --> 00:11:01,860
+Alt Yordam yığın üzerinden iki tane Word parametre kabul edecek. Daha sonra AX üzerinden değer dönecek.
+
+56
+00:11:02,420 --> 00:11:06,899
+Fakat yığına konulan parametreleri Alt Yordam kaldırır. Bu şekilde tanımlamış olalım.
+
+57
+00:11:07,283 --> 00:11:13,343
+kaldırma işlemini nasıl yapacaktı? Kaldırma işlemini çok pratik bir şekilde şöyle yapabiliyorduk.
+
+58
+00:11:15,343 --> 00:11:27,223
+Örneğin, return fonksiyonundan sonra vermiş olduğumuz shift sayı kadar dönüşle birlikte stack pointerı bu miktarca arttırıyordu.
+
+59
+00:11:28,980 --> 00:11:33,460
+otomatik olarak arttırılmasını sağlayan bir komut grubuydu.
+
+60
+00:11:33,680 --> 00:11:37,660
+REDF komutundan sonra veya RED komutundan sonra vermiş olduğumuz çift sayı.
+
+61
+00:11:37,660 --> 00:11:41,980
+Çift sayı olması gerekir çünkü yığından Word çekip Word yazabiliyoruz.
+
+62
+00:11:42,700 --> 00:11:46,460
+Dolayısıyla Word büyüklüğüne karşılık gelecek şekilde ikinin katı olması lazım.
+
+63
+00:11:47,840 --> 00:11:52,980
+Örneğin iki tane parametreyi alt yordam attıysa, bu örnek tabii başka bir örnek için şu anda ekranda gördüğünüz,
+
+64
+00:11:53,080 --> 00:11:54,660
+hani bu varyasyonları çeşitlendirmiştik.
+
+65
+00:11:55,443 --> 00:12:10,083
+yığına iki tane word attık, alt yordamı çağırdık, alt yordam içerisinde işlemlerimizi yaptık, dönüş değerimizi AX'e sakladık. Şimdi yığında ana yordamı koymuş olduğu iki tane çöp değer var. Bunları nasıl kaldıracağız?
+
+66
+00:12:10,803 --> 00:12:19,303
+Pratik bir şekilde burada görmüş olduğumuz örnekte olduğu gibi normalde fonksiyon alt yordamımız far tipinde olduğu için dönüşünde red F olması lazım, bu kesin.
+
+67
+00:12:20,019 --> 00:12:33,279
+REDF komutundan sonra iki tane Word'ü yığından kaldırmak istiyoruz. O zaman REDF 4 dediğimiz vakit fonksiyon dönüşüyle birlikte yığında iki tane Word değeri çöp yapılmış olur.
+
+68
+00:12:33,279 --> 00:12:44,159
+Bunun bir başka teknik söyleyişi de dönüşle birlikte SP yazmacının değeri 4 arttırıldı. Bunu şöyle düşünebilirsiniz.
+
+69
+00:12:45,076 --> 00:13:03,736
+Alt yordama geldiğim zaman yığındaki değerler, işletim sistemine dönüş kod segment değeri, işletim sistemine dönüş offset değeri, yığına koyduğu ana yordamın iki tane parametre, ana yordama dönüş kod segment değeri, ana yordama dönüş offset değeri, işlemlerimizi yaptık.
+
+70
+00:13:12,884 --> 00:13:26,564
+bunları IP ve CS'ye yükle. Daha sonra SP değerinde 4 arttır. 4 arttırmadan önce SP'nin göstermiş olduğu değerler aslında ana yordamın yığını atmış olduğu iki tane word parametresiydi.
+
+71
+00:13:27,844 --> 00:13:37,824
+4 birim daha artıldığı zaman SP değeri, SP değerinin dönüşle birlikte göstermiş olduğu yeni değerler işletim sistemine dönüş, offset değeri satırı olmuş oldu.
+
+72
+00:13:38,131 --> 00:13:57,751
+Dolayısıyla ana yordamda return yaptığında işletim sistemine muntazam bir şekilde dönmüş olacaktı. Bu da bizim parametre aktarımı ile ilgili olarak görmüş olduğumuz ikinci varyasyondu. Üçüncü varyasyonu şöyle yapmıştık hatırlayacak olursanız. Yine alt yordamımızı tanımlayalım. Alt yordam yığından iki tane parametre kabul ediyor.
+
+73
+00:13:58,355 --> 00:14:09,855
+işlemlerini yapıp işlem sonucunu tekrar yığında artık çöp haline gelmiş olan ana yordamın yüklemiş olduğu, yazmış olduğu veri alanlarından bir tanesini yazıyor.
+
+74
+00:14:09,995 --> 00:14:16,175
+Çünkü düşünecek olursak iki tane word değerin en büyük ortak böleğinin yine tek bir tane word değeri olacaktır.
+
+75
+00:14:16,255 --> 00:14:20,775
+Bir word'e sığacaktır bu. Dolayısıyla bu word değerlerinden bir tanesinin yerine yazdık.
+
+76
+00:14:22,100 --> 00:14:29,299
+Şimdi burada yazma işlemini, geri dönüş değerini, yığının neresindeki parametre yazdığımıza göre işlem sonucu değişebilir.
+
+77
+00:14:30,340 --> 00:14:39,700
+Eğer ki yine yığından kaldırma işlemini Ana Yordam'a devretmişsek, bu durumda Ana Yordam iki tane parametreyi pushladı, fonksiyonu çağırdı.
+
+78
+00:14:40,560 --> 00:14:46,180
+Alt Yordam hangi sırada veriyi yazması gerektiğini hesapladı, veriyi bu noktaya yazdı.
+
+79
+00:14:46,919 --> 00:14:49,159
+Birinci veya ikinci parametre için yazmış olsun.
+
+80
+00:14:49,552 --> 00:15:13,951
+Daha sonrasında return ettik. Return ettiğimiz zaman stack pointer artık yığına atılmış parametreleri gösteriyor. Hangi sırada yazdıysak buna göre okuma yapacak. Örneğin yığının üst tarafındaki bölgedeki bu aktardığımız parametrelerden üste olana değeri yazdığımızı düşünelim. Bu durumda POP işlemiyle aslında yığından geri dönüş cevap değerimizi okumuş olduk.
+
+81
+00:15:14,323 --> 00:15:36,623
+Bunu ilgili yazmacı aktarıp veya ilgili bellek bölgesine aktarmamız gerekiyor. Daha sonrasında şu anda bu aşamada yığında bir tane çöp değer kaldı. Bu çöp değeri çekebilmek için de arkadaşlar bir tane boş POP işlemi yapıyoruz. POP AX yapıyoruz örneğin ve AX'deki değeri çöp olduğunu bilerek buna göre hareket ediyoruz. Böyle bir işlem olabilir.
+
+82
+00:15:37,139 --> 00:15:57,139
+Eğer ki geri dönüş değerimizi, iki tane parametre atmıştık yığına, ana yordam tarafından. Geri dönüş değerimiz yığının altındaki değerde ise bu durumda iki alternatif ortaya çıkıyor. Bu arada şunu hatırlatmak gerekiyor. Eğer yığın üzerinden bir dönüş varsa yığından döndüğümüz değeri...
+
+83
+00:15:57,375 --> 00:16:24,735
+ana yordam çekmek zorunda. Fakat çöp olan değeri, çekme görevi ana yordam veya alt yordama bırakılabilir. İlk verdiğim örnekte, bu çöp değerin yığından çekilmesi görevini ana yordama vermiştik. Şimdi mutlaka ana yordam çekmek zorundaydı o örnekte. Şimdi ikinci vereceğim bir örnekte ise, yığından çöp veriyi çekme işlemini aynı zamanda, yığına aynı zamanda alt yordama veyahut da
+
+84
+00:16:25,364 --> 00:16:52,124
+Ana yordamı aktarabiliriz. Önce ana yordamı aktardığımız duruma bakalım. Yığına iki tane parametre attık. Bu parametrelerden A sayısı ve B sayısı var. Ana yordam içerisinde fonksiyonunu çağırdık. Alt yordam içerisinde geri dönüş değerini alttaki parametre yerine yazdık. Ve ana yordama return ettik. Bu durumda ana yordam ilk okuyacağı değer, yığından ilk okuyacağı değer çöp değer.
+
+85
+00:16:52,596 --> 00:17:18,415
+Bunu boş bir POP işlemiyle aldı. Daha sonra ikinci bir POP işlemi yaptı. Burada da anlamlı dönüş değerim var. Bu anlamlı dönüş değerini alıp ilgili bellek bölgesine yazdı. İkinci alternatif şu olabilir. Yine yığına iki tane parametreyi attık ve alt yordamı çağırdık. Alt yordan işlemlerini yaptı. İşlem sonucunu yığının altındaki parametre yerine yazdı. Onu override etti.
+
+86
+00:17:18,900 --> 00:17:42,680
+çöp değerim yığının üstünde. Bu durumda yine dönüş yerine alt yordam, REDF dönüşü yerine REDF2 dönüşü yaparsa buradaki çöp değer otomatik olarak atlanmış olacak. Bunu atladık. Sırada yığının göstermiş olduğu, stack pointer'ın göstermiş olduğu değer geri dönüş değerimizi tutan göz. Dolayısıyla ana yordama döndüğümüzde POP işlemi yaparak
+
+87
+00:17:43,028 --> 00:17:49,228
+yığından geri dönüşlerini alıp, bunu ilgili bellek bölgesine yazarak işlemimizi sonlandırabiliyoruz.
+
+88
+00:17:49,628 --> 00:17:55,508
+Bunu da yapabilmek için RETV2 şeklinde bir komutla dönüşü yapmamız gerekiyor.
+
+89
+00:17:56,607 --> 00:18:09,407
+Dolayısıyla bu geçen hafta içerisinde yığından parametre aktarımı ve yığından parametre dönüşüyle ilgili olarak ortaya koyduğumuz bütün varyasyonları içeren bir tekrar olmuş oldu.
+
+90
+00:18:10,067 --> 00:18:16,688
+Geriye bir tek parametre aktarımıyla ilgili olarak extern ve public kelimeleriyle aktarım kalmıştı.
+
+91
+00:18:17,567 --> 00:18:24,088
+Şimdi bir onlara bakacağız. Daha sonrasında da kesim birleştirme konusuna bakacağız.
+
+92
+00:18:26,528 --> 00:18:32,248
+Bu geçen haftaki konuyla ilgili olarak arkadaşlar sormak istediğiniz bir şey var mı? Bu konu önemli çünkü.
+
+93
+00:18:32,887 --> 00:18:35,988
+Nasıl çalıştığını anlamak gerekiyor. Belki şu şeyi hatırlatabiliriz.
+
+94
+00:18:36,756 --> 00:18:41,856
+yığından veriyi okurken nereye bakmamız gerekiyordu? Onu bir hatırlatabiliriz.
+
+95
+00:18:43,635 --> 00:18:48,496
+Şimdi temel kural olarak hatırlayacak olursanız, ne demiştik?
+
+96
+00:18:49,076 --> 00:18:58,256
+Yığından bir parametre aktarımı yaparken, yığının çizerek ilerleyeceğiz.
+
+97
+00:18:58,376 --> 00:19:01,976
+Yığını çizerek ilerlersek neler olup bittiğini anlamamız mümkün.
+
+98
+00:19:04,564 --> 00:19:21,564
+Ana yordam, bu sağdaki pencere, alt yordam, soldaki pencereydi. Bu örnek, en son anlatmış olduğum varyasyona göre yapılan bir örnekti. Bu örnekte...
+
+99
+00:19:22,291 --> 00:19:45,291
+geri dönüş öncelikli olarak ana yordam iki tane word değeri yığını atıyor, alt fonksiyonu çağırıyor, geri dönüş değerine yığının altındaki iki tane yığın değerimiz var da alttaki göze yazıyor, dolayısıyla üstteki göz çöp. Bu çöp veriye yığından kaldırma görevini alt yordama verdik. Dolayısıyla bu durumda bir...
+
+100
+00:19:46,420 --> 00:19:58,400
+veri çifti için, A ve B sayıları için en büyük ortak böleni hesaplamak istediğimizde, bu yazmış olduğumuz fonksiyonlara göre, yığının yapısı nasıl değişiyor? Buna bakarak ilerleyelim şimdi.
+
+101
+00:20:01,907 --> 00:20:03,367
+Körümüzü renkli olarak alalım.
+
+102
+00:20:26,324 --> 00:20:27,484
+Yanımız bu şekilde.
+
+103
+00:20:29,183 --> 00:20:34,864
+EGZE programımıza girdiğimiz anda arkadaşlar, ilk yaptığımız işlem hatırlayacak olursanız neydi?
+
+104
+00:20:35,524 --> 00:20:36,463
+Bir daha mı hatırlayalım.
+
+105
+00:20:37,423 --> 00:20:39,203
+Şurada görmüş olduğunuz işlemler.
+
+106
+00:20:39,524 --> 00:20:41,124
+Şu 3 satırlık işlem.
+
+107
+00:20:41,224 --> 00:20:42,624
+Bu işlemlerin amacı neydi?
+
+108
+00:20:43,304 --> 00:20:45,724
+Tekrar tekrar söylemiş gibi oluyor ama.
+
+109
+00:20:47,183 --> 00:20:48,864
+İşletim sistemine dönüşü sağlamak.
+
+110
+00:20:49,491 --> 00:21:09,251
+İşletim sistemine dönüş sağlamak adına egze tipi program çalıştırıldığında işletim sistemi DS yazmacında işletim sistemine geri dönüş segment değerini oluşturarak egzeyi çağırmış oluyor ve işletim sistemi DS'nin 0 offsetine dönüşünüzü bekliyor.
+
+111
+00:21:09,683 --> 00:21:16,763
+Bunun için yığına öncelikle DS'deki değeri ve sıfır değerli bir offset değerini atmamız lazımdı hatırlayacak olursanız.
+
+112
+00:21:16,864 --> 00:21:23,463
+Dolayısıyla yığının en altında OSCS diye ifade edebileceğimiz işletim sistemine dönüş segment değeri var.
+
+113
+00:21:23,923 --> 00:21:28,503
+Hemen onun üstünde de OSIP diyebileceğimiz işletim sistemine dönüş offset değerimiz var.
+
+114
+00:21:29,544 --> 00:21:36,084
+Bu programda, bu örnek programımızda hatırlayacak olursanız yığına iki tane değer atıp daha sonra
+
+115
+00:21:36,756 --> 00:21:38,216
+Bu en son yaptığımız örnek.
+
+116
+00:21:38,336 --> 00:21:40,796
+Yığına iki tane değer atıp daha sonra fonksiyonu çağırıyorduk.
+
+117
+00:21:40,876 --> 00:21:43,136
+Bu aşamaya kadar olan işlemlere bakalım şimdi.
+
+118
+00:21:44,456 --> 00:21:46,276
+Yığına iki tane parametre atalım.
+
+119
+00:21:46,896 --> 00:21:49,396
+Yığına öncelikli olarak A sayısını atıyoruz.
+
+120
+00:21:50,296 --> 00:21:51,616
+Bu örnekte öyle yapmışız.
+
+121
+00:21:52,536 --> 00:21:54,096
+Daha sonra B sayısını atmışız.
+
+122
+00:21:54,956 --> 00:21:56,416
+Daha sonrasında da call işlemi var.
+
+123
+00:21:56,416 --> 00:22:01,516
+Call işlemine baktığımızda çağırılan fonksiyon farklı bir dosyadaki far tipindeki fonksiyon.
+
+124
+00:22:01,596 --> 00:22:02,116
+Dolayısıyla
+
+125
+00:22:03,188 --> 00:22:07,388
+Bu fonksiyonun içine gittiğimizde yığında şunları göreceğiz.
+
+126
+00:22:07,728 --> 00:22:09,048
+Yığına şunlar eklenecek.
+
+127
+00:22:09,728 --> 00:22:19,028
+Ana yordamın dönüş kod segment değeri ve yine ana yordamın dönüş instruction pointer değerlerini görmüş olacağız.
+
+128
+00:22:20,108 --> 00:22:21,548
+Şimdi temel kuralımız neydi?
+
+129
+00:22:22,099 --> 00:22:33,139
+fonksiyon içerisinde kullandığımız fakat geçici olarak kullanacağımız, geri dönüş değeri için tutmayacağımız ne kadar yazmaç varsa kullandığımız bunların değerlerini korumamız lazım.
+
+130
+00:22:34,079 --> 00:22:37,679
+Genel olarak fonksiyon yapısına baktığımızda siz de belki böyle ilerleyebilirsiniz.
+
+131
+00:22:37,899 --> 00:22:42,439
+Öncelikli olarak ana gövdeyi yazın, fonksiyonun görevini yerine getiren.
+
+132
+00:22:42,439 --> 00:22:45,939
+Daha sonra burada kullanmış olduğunuz yazmaçlar ortaya çıkacaktır.
+
+133
+00:22:47,711 --> 00:22:55,132
+öncelikli olarak değer korumak adına yığını atarsınız. Sonra da ters sırada yığından çekebilirsiniz. Böyle bir yol izleyebilirsiniz.
+
+134
+00:22:55,792 --> 00:23:03,552
+Bu şekilde ilerlediğimizi düşünelim. Bakıyoruz ki fonksiyon içerisinde AX, BX ve DX yazmaçlarını kullanmamız gerekiyor.
+
+135
+00:23:03,552 --> 00:23:13,652
+DIV işlemi var. DIV işlemi var. DIV işleminden dolayı AX, BX kullanılıyor. BX'de zaten A ve B sayılarını attık. Onlar var.
+
+136
+00:23:14,324 --> 00:23:33,964
+Bunları korumamız lazım. Yine temel bir kural, parametre aktarımında, örneğin ben alt yordam içerisinde yine başka fonksiyonel olarak bir takım push ve pop işlemleri yapacaksam, stack pointer değeri arada değişiyor. Değil mi?
+
+137
+00:23:34,288 --> 00:23:51,928
+Dolayısıyla bu değişimden dolayı ben alt yordama girer girmez aktarmış olduğum parametreler yığının belirli bir noktasını referans alarak nerededir bunları sabitlemek istiyorum. Yani bu referansımı sabitlemek istiyorum. Bu amaçla da BP yazmacının kullanılabileceğini söylemiştik.
+
+138
+00:24:00,531 --> 00:24:17,692
+stack segment ile birlikte kullanılıyor. Yani bu base pointer dediğimiz yazmacın default segment yazmacı stack segment. Dolayısıyla tam olarak istediğimiz işi yapıyor. Yığın üzerinden bir bölgeye erişimimizi sağlıyor.
+
+139
+00:24:19,831 --> 00:24:28,071
+Şimdi bu durumda BP'yi kullanacağım. BP benim için sabit bir referans olacak. Dolayısıyla BP değerini de benim
+
+140
+00:24:28,468 --> 00:24:34,408
+korumam lazım. Dolayısıyla fonksiyona girer girmez yine BP'yi korumak adına onu da puşladığımızı görüyoruz burada.
+
+141
+00:24:35,107 --> 00:24:41,428
+Puşlayabilmek adına da arkadaşlar burada BP'yi yığına attığımız haliyle yığında bir de BP var.
+
+142
+00:24:42,208 --> 00:24:50,268
+Şimdi bu haliyle bizim stack pointer'ımız bu noktayı gösteriyor. En son yığına attığımız değer.
+
+143
+00:24:50,655 --> 00:25:02,375
+Daha sonrasında BP'ye SP değerini atayaraktan BP ve SP'nin burayı göstermesini sağlıyoruz. BP'de, SP'de bu adresi gösteriyorlar. Tamam mı?
+
+144
+00:25:04,036 --> 00:25:11,655
+Ama daha sonra koruyacağımız diğer yazmaçlar vardı. Onları da yığına atacağız. Onları yığına attığımız zaman da şu oluyor. Hangi sırada atmışız?
+
+145
+00:25:16,019 --> 00:25:26,820
+Tabi burada yığını her değer attığımızda stack pointer yukarı doğru gidiyor. Yani yukarı doğru gidiyor derken, yığının en yüksek adresi burasıydı. Yığına bir şeyler attıkça adres değeri küçülüyor. Onu da şöyle çizelim.
+
+146
+00:25:30,836 --> 00:25:52,496
+şu nokta daha düşük adres, bu nokta daha yüksek adres. Tamam mı? Aradaki farkımız da buydu. Dolayısıyla şimdi stack pointer değerimiz şöyle gitti. Yukarı doğru gitti. Ama base pointer atadığımız değerle kaldı. Bu noktada kaldı. Bu bizim için çok önemli. Stack pointer buraya kadar ilerledi bu aşamada.
+
+147
+00:25:55,236 --> 00:25:57,375
+Şimdi böyle olunca
+
+148
+00:25:57,428 --> 00:26:12,148
+Ben içeride A ve B değerlerine erişmek istersem, A ve B sayılarına erişmek istersem, bu durumda SP ile ilgili aşağıda işlem yapıyorsam, SP yine yukarı aşağı oynayacak. Dolayısıyla bundan emin değilim. Ama BP'den eminim.
+
+149
+00:26:12,768 --> 00:26:23,848
+Ne kadar uzakta B sayısı? BP'den her bir değer 2 byte ve değer olduğuna göre, 2, 4, 6 offset uzaklıkta, BP artı 6 uzaklığında
+
+150
+00:26:25,011 --> 00:26:33,691
+B değerimiz var. BP artı 8 uzaklıkta da A değerimiz var. Dolayısıyla AX ve BX yazmaçlarına bu ikisini alıp işlem yapabiliriz.
+
+151
+00:26:34,351 --> 00:26:46,551
+Burada özellikle şunu da hatırlayalım. BP artı 6 dediğim zaman, BP artı 6 dediğim zaman, bundan hesaplanacak olan fiziki adres hangi çiftliği için hesaplanır?
+
+152
+00:26:54,036 --> 00:27:09,536
+Stack segmentim bu. Stack segmentte BP değerim burayı gösteriyor. Bundan 6 büyük adres, yani şurasını ifade etmiş oluyoruz. Stack segment ile birlikte kullanıldığını özellikle ifade etmek için bunu yazdım.
+
+153
+00:27:16,372 --> 00:27:31,592
+Şu aşamada neredeyiz? Yığına değerlerimizi attık, işlemimizi yaptık, hesapladık, bir değer hesapladık. Bu hesapladığımız değeri yığında nereye atıyoruz? Bakın arkadaşlar, yığında, şunu silebilirsem daha iyi olacak sanki.
+
+154
+00:27:37,236 --> 00:27:58,196
+Bakın ne demiştik? Yığında bu değeri alttaki parametrenin yerine yazacağız. Dolayısıyla şurada görmüş olduğunuz BP hala buraya gösteriyor ya, BP artı 8'e yani yığında aktarılmış olan parametrede altta olanın yerine geri dönüş değerimizi yazacağız. Bu da mesela GCD diyelim şimdilik.
+
+155
+00:28:02,132 --> 00:28:17,552
+yığına değerlerini korumak için 60 olduğumuz parametreleri tek tek çekiyoruz. Çektikçe SP değeri 2'şer 2'şer artacak ve BP'yi de yığından çektiğimde BP artık burayı göstermeyecek, orijinal değerine dönmüş olacak.
+
+156
+00:28:18,432 --> 00:28:24,692
+Yığından değer çekiyorum. İlk çektiğim değer yığının en üstündeki değeri çekip DX yazmacını atadım.
+
+157
+00:28:25,587 --> 00:28:31,887
+Bu orijinal DX'in orijinal değeri idi. Dolayısıyla DX yazmacı orijinal değeriyle yüklenerek geri dönecek. Çok güzel.
+
+158
+00:28:32,627 --> 00:28:36,647
+Sonra sırada yığının sıradaki üstündeki değeri çektim. BX yazmacını atadım.
+
+159
+00:28:38,707 --> 00:28:46,607
+Düzgün şekilde ayarladığımız için sıradaki değer zaten BX'in orijinal değeri idi. Onu da çektim. Orijinal değerini çektim BX'in. BX'i atadım.
+
+160
+00:28:47,443 --> 00:29:05,283
+Sıradaki çektiğim değer, AX yazmacına ilişkinmiş. AX'in orijinal değerini yığından çektim. Onu AX yazmacına atadım. Düzgün şekilde sıraladığım için bu da mümkün oldu. Daha sonra en başta BP'yi yığına atmıştım. Orijinal BP değeri burada. Onu da çektim yığına attım.
+
+161
+00:29:13,748 --> 00:29:33,748
+en üstündeki değeri alıp Instruction pointer'a koyuyordum. Güzel, anayordama dönüş, offset değerimi doğru şekilde atmış oldum. Daha sonra yığının üstündeki sıradaki değeri alıp kod segmente yazıyordum. O da doğru bir değer. Çünkü artık anayordama dönüş için offset ve segment değerlerim uygu şekilde yazılmış oldu.
+
+162
+00:29:40,051 --> 00:30:06,891
+atlamış oluyor. SP değeri burayı gösterirken bir sonraki değere gelmiş oldu artık SP değeri. Dolayısıyla SP değeri buraya boş geçtiği için, B satırını boş geçtiği için artık stack pointer nereye gösteriyor? Ana yordama döndüğümüz haliyle stack pointer şu satırı gösteriyor. SP değerimiz ana yordama döndüğüm anda bu satırı gösteriyor. Burada da zaten geri dönüş GCD değerimiz var.
+
+163
+00:30:08,180 --> 00:30:12,779
+Şuraya bakın, fonksiyonu çağırdık, geri döndüğüm zaman POP sonuç satırına geldim.
+
+164
+00:30:13,539 --> 00:30:19,859
+POP sonuç, yılın sıradaki değeri, o da GC'de dönüş değerimizdi. Bunu aldı, sonuç olarak yazdı ve
+
+165
+00:30:19,859 --> 00:30:24,519
+şöyle birazcık aşağı gelelim.
+
+166
+00:30:25,587 --> 00:30:47,668
+ve daha sonrasında da return etti. Return ederken de, anayordan return ederken de, yığının en üstündeki işletim sistemi gördülmüş offset ve segment değerlerini çekmiş oldum. Dolayısıyla başarılı bir şekilde yığın üzerinden parametre aktarımını tamamlamış oldum. Bu noktada yapılabilecek bir başka işlem ise arkadaşlar, bunu recursive bir şekilde
+
+167
+00:30:50,708 --> 00:31:18,268
+Alt yordamı çağırarak hesaplayabileceğimiz durumlar olabilir. Yani öyle bir alt yordam var ki, alt yordamın dönüş değeri recursive bir şekilde tanımlı ise, bu özel bir durum. Dikkat edeceğiz, yığından parametre aktarımıyla ilgili durumlara dikkat edeceğiz ve sonrasında da tekrar tekrar fonksiyon kendini çağırdığı için parametre fonksiyon geri dönüş değerleri recursive olarak kaçıncı derinlikte isek?
+
+168
+00:31:18,624 --> 00:31:37,524
+Daha sonrasında Alt Yordam değer yazacak ama bunun da dönüşü için recursive olarak tekrar kendini çağırması gerekiyorsa yine parametreler, geri dönüş değerleri, tekrar parametreler, geri dönüş değerleri şeklinde böyle bir yığına üst üste recursive olarak derinliğine göre verileri basmış olacağız.
+
+169
+00:31:39,024 --> 00:31:42,064
+Daha öncesinde elimizde şu mevcuttu hatırlayacak olursanız.
+
+170
+00:31:42,704 --> 00:31:45,164
+GCD fonksiyonunun recursive hali mevcuttu.
+
+171
+00:31:45,715 --> 00:31:54,115
+Dolayısıyla onu kullanarak bu recursive işlemi yapmamız mümkün. Bir örnek olarak biz onu nasıl yaptık bir bakayım şuradan.
+
+172
+00:31:57,844 --> 00:31:59,484
+En son hangisini yaptık?
+
+173
+00:32:01,384 --> 00:32:05,963
+Bunu recursive olan versiyonunu parametre aktarımı ile birlikte yapmamışız.
+
+174
+00:32:06,844 --> 00:32:11,084
+Bunu size zorunlu olmayan ev ödevi olarak vermiş olayım.
+
+175
+00:32:11,084 --> 00:32:18,604
+Tamam mı? Tekrar söyleyeyim burada sizin yapacağınız zorunlu olmayan ev ödevini.
+
+176
+00:32:19,344 --> 00:32:21,963
+Alt yordamımız recursive bir fonksiyon ise
+
+177
+00:32:24,564 --> 00:32:49,163
+ana yordam üzerinde parametre aktarımı yığın üzerinden olmak şartıyla, yine alt yordamda da parametre aktarımı yığın üzerinden olmak şartıyla recursive halinde, yığın üzerinden parametre aktarıp yığın üzerinden geri dönüş yapan recursive, en büyük ortak bölen fonksiyonunu assembly koduyla gerçekleyin şeklinde zorunlu olmayan, zorunlu olmayan bir ev ödevi şeklinde bunu düşünebilirsiniz.
+
+178
+00:32:52,276 --> 00:33:12,516
+Burada programınızı değerledikten sonra özellikle DEBAC programı yardımıyla yığının içini, yığından sıradaki okuyacağınız değerleri dikkatli bir şekilde inceleyerek programınızın doğru şekilde çalıştığını da kontrol etmiş olursunuz. Tamam mı? Bu zorunlu olmayan bir ev ödevi olsun sizin için.
+
+179
+00:33:12,516 --> 00:33:13,635
+Şimdi
+
+180
+00:33:17,844 --> 00:33:21,144
+bu yığından parametre aktarımını da tamamladıktan sonra
+
+181
+00:33:21,144 --> 00:33:24,224
+üçüncü bir parametre aktarım yöntemi var arkadaşlar.
+
+182
+00:33:24,444 --> 00:33:25,944
+Bu üçüncü yöntemde ise
+
+183
+00:33:25,944 --> 00:33:29,424
+tıpkı fonksiyonlarda olduğu gibi
+
+184
+00:33:29,424 --> 00:33:31,944
+extern ve public kelimelerini kullanarak
+
+185
+00:33:31,944 --> 00:33:33,744
+yığına ve pardon
+
+186
+00:33:33,744 --> 00:33:37,184
+başka bir kesimdeki değerleri kullanmamız mümkün oluyor.
+
+187
+00:33:37,764 --> 00:33:39,564
+Şimdi bir geri dönelim.
+
+188
+00:33:40,224 --> 00:33:43,104
+Yazmaç üzerinden veri aktarımı ne zaman anlamlıydı?
+
+189
+00:33:43,539 --> 00:34:08,439
+az sayıda verim varsa bu anlamlıydı. Yığın üzerinden veri aktarımı ne zaman anlamlı? İşte özel bir takım durumlar varsa, yığın üzerinden veri aktarımı gerekiyorsa ve az sayıda veri için geçerli. Ama daha yüksek kapasitede ve daha yüksek sayıdaki veri aktarımları için aslında extern ve public kullanımı daha anlamlı oluyor. Mesela bir diziyi komple parametre olarak aktarmak istiyorsak,
+
+190
+00:34:08,788 --> 00:34:34,967
+Bu durumda aslında dizinin adresini bir external public tanımıyla vermemiz gerekecek. Bu yapı tıpkı şeye benziyor. İki farklı dosyada bizim kodlarımız mevcuttu. Ana yordam ikinci dosyadaki alt yordamı kullanmak istiyorsa ana yordam dışarıdan kullanacağı fonksiyonu extern ve tipini belirleyerek tanımlamalıydı. Dışarıya bir fonksiyon kullandıracak kodumuz varsa bu da.
+
+191
+00:34:35,380 --> 00:34:44,940
+bu fonksiyonu public olarak tanımlamalıydı. Tıpkı buna benzer şekilde de veri aktarımı mevcut ve mümkün oluyor. Şimdi ona ilişkin şöyle bir
+
+192
+00:34:44,940 --> 00:34:50,820
+bir, iki, üç tane fonksiyon olması lazım.
+
+193
+00:35:02,452 --> 00:35:03,948
+Şimdi daha açabiliriz.
+
+194
+00:35:22,771 --> 00:35:50,011
+Şimdi buradaki örneğimizde arkadaşlar, elimizde bir dizi var. Öncelikli olarak bir altyapısını kuralım. Tanımlamalarımızı yapalım. Bir tane dizimiz var. Bu dizimiz 10 elemanlı bir Word dizisi. Bu diziye ilişkin olarak minimum, ortalama ve maksimum değerleri hesaplamak istiyoruz. Bununla ilgili olarak da bizim elimizde fonksiyonlarımız var.
+
+195
+00:35:50,420 --> 00:36:13,600
+Bu fonksiyonlarımıza bakacak olursak, işte bir tane fonksiyonumuz bize verilen bir dizi içerisindeki minimum değeri bulan bir fonksiyon. Daha sonrasında bir başka fonksiyonumuz bize verilen bir dizi içerisindeki maksimum değeri bulan ayrı bir fonksiyonumuz.
+
+196
+00:36:17,652 --> 00:36:40,152
+verilen bir dizi içerisindeki ortalama değeri bulan üçüncü bir fonksiyonumuz var. Bunların her birisi ayrı bir dosyada tanımlı, fonksiyon olarak tanımlı. Bizim burada özellikle aktarmak istediğimiz parametre ne olarak ortaya çıkmış oluyor? Ana yordam içerisinde tanımlı olan
+
+197
+00:36:40,724 --> 00:37:07,443
+neleri aktarmalıyız? Dizi ve eleman sayısı değişkenlerini aktarmamız gerekiyor. Şimdi burada ana iskeleti nasıl kuracağız öyleyse? Bir exit tipi program gibi düşünecek olursak, işletim sistemine geri dönüş değerlerini ayarladıktan sonra ana yordamda bizim exit tipi programın kendi data segmentini kullanabileceği bir ayarlamaları yaptık. Daha sonrasında ise
+
+198
+00:37:11,315 --> 00:37:15,915
+Daha sonrasında ise sırasıyla fonksiyonları çağırıyoruz. Bu fonksiyonlarımız
+
+199
+00:37:15,915 --> 00:37:18,935
+extern public mantığında
+
+200
+00:37:18,935 --> 00:37:21,255
+girdi kabul ediyor.
+
+201
+00:37:21,915 --> 00:37:23,875
+AX üzerinden değer döndürüyor.
+
+202
+00:37:24,275 --> 00:37:30,835
+Dolayısıyla her bir fonksiyonu, burada bahsetmiş olduğum maksimum, ortalama ve minimum fonksiyonlarını tek tek çağırıp
+
+203
+00:37:30,835 --> 00:37:36,155
+elde etmiş olduğumuz sonuçları da ilgili hafıza gözlerine yazmış olacağız.
+
+204
+00:37:36,692 --> 00:38:03,831
+Daha sonrasında da return edeceğiz. Şimdi bunu yapabilmek için neler yapmamız lazım? Bir, dışarıdan kullanmış olduğumuz bir tane fonksiyon var. İkinci fonksiyon var ve bir de üçüncü fonksiyonlar var. Bunlar daha önce de görmüştük. Bu fonksiyonları tanımlayabilmek adına burada bu dosya içerisinde yok bunlar. Dolayısıyla bunlar dışarıdan kullanılacak. Dolayısıyla linkleme aşamasında farklı obje dosyalarını birlikte linkleyerek ben bu işlemi yapmam gerekiyor.
+
+205
+00:38:04,224 --> 00:38:10,024
+Bu durumda da bu fonksiyon isimlerinin ekstern olarak tanımlanması lazım.
+
+206
+00:38:10,744 --> 00:38:12,844
+Fonksiyonların orijinal hallerine bakalım.
+
+207
+00:38:19,347 --> 00:38:21,028
+burada near olarak yazmışız ama
+
+208
+00:38:21,028 --> 00:38:25,548
+şöyle yapalım şimdilik.
+
+209
+00:38:26,668 --> 00:38:29,168
+Daha o konuya girmediğimiz için bu bir miydi?
+
+210
+00:38:29,307 --> 00:38:30,188
+Code 1 olsun.
+
+211
+00:38:32,847 --> 00:38:34,708
+Şu code 2 olsun.
+
+212
+00:38:36,327 --> 00:38:38,048
+Bu da code 3 olsun.
+
+213
+00:38:38,968 --> 00:38:40,768
+Ve fonksiyon tiplerimiz bizim
+
+214
+00:38:40,768 --> 00:38:42,788
+far tipinde olsun.
+
+215
+00:38:42,788 --> 00:38:44,788
+Aslında bunlar da silahımı kafa karıştırmasın.
+
+216
+00:38:46,835 --> 00:38:49,135
+dönüşlerimiz de REDF cinsinden olsun.
+
+217
+00:38:57,844 --> 00:39:04,763
+Aynı örneği kesim birleştirmede de, kod kesim birleştirmede de anlatacağım. Dolayısıyla orada da bu örneği görüyor olacağız.
+
+218
+00:39:08,243 --> 00:39:14,183
+Tamam. Dolayısıyla fonksiyonlarımız bizim far tipinde tanımlanmışlar. Ona tanımlandıkları yerlerinde.
+
+219
+00:39:14,183 --> 00:39:18,183
+Dolayısıyla buraya geldiğimiz vakit, extern dizi.
+
+220
+00:39:19,603 --> 00:39:37,083
+Bunların far tipinde olduğunu belirtmemiz gerekiyor. Bu daha önce yaptığımız bir örnekti. İki farklı dosyada biz alt yordam ve ana yordamı tutuyorsak bunlar ayrı ayrı derlenip obje dosyaları oluşturacaktı. Bu obje dosyalarından hareketle de bunları birlikte linkleyecektik. Bu tamam.
+
+221
+00:39:44,083 --> 00:40:05,023
+dizi ve eleman isimli bu iki değişkeni arkadaşlar bu fonksiyonların her birisine aktarmam gerekiyor. Baktığımız zaman çok sayıda parametreye karşılık geliyor. Yazmaç üzerinden aktarmam mümkün değil. Yığın üzerinden aktarsam belki örneğin dizimiz yüz elemanlıysa ne olacak? Yığın taşabilir. Bu durumda bunları
+
+222
+00:40:05,523 --> 00:40:26,043
+Referans olarak karşı tarafa aktarmamız lazım. Dolayısıyla burada tıpkı fonksiyonlarda olduğu gibi dışarıya kullandırılacak olan değişkenler içinde, data segmentteki değişkenler içinde public tanımlamasıyla bunların dışarıya kullanılacak referanslar, dışarıdan kullanılabilecek referanslar olduklarını söylemiş oluyoruz.
+
+223
+00:40:26,867 --> 00:40:36,467
+Şu aşamada bu haliyle bu ana yordam kendi başına derlenebilir durumda. En azından obje dosyası oluşabilir durumda.
+
+224
+00:40:37,647 --> 00:40:45,607
+Çünkü dışarıdan kullanacağımız fonksiyonlar var. Dışarıya kullandıracağımız iki tane de bizim parametremiz mevcut.
+
+225
+00:40:45,607 --> 00:40:48,287
+Şimdi bu alt yordamlara gelelim.
+
+226
+00:40:53,844 --> 00:40:57,043
+bir minimum değer bulduran örnek.
+
+227
+00:40:57,783 --> 00:41:00,183
+Bir dizinin minimum değerini bulduran örnek.
+
+228
+00:41:00,703 --> 00:41:01,903
+Şimdi bununla ilgili olarak
+
+229
+00:41:01,903 --> 00:41:05,523
+bir kere bu fonksiyonumuz
+
+230
+00:41:05,523 --> 00:41:07,483
+dışarıdan kullanılacak.
+
+231
+00:41:07,623 --> 00:41:09,384
+Dışarıdan kullanılacak olan
+
+232
+00:41:09,907 --> 00:41:28,228
+fonksiyonun mutlaka public olarak tanımlanması gerekiyor. Şu anda elimizde üç tane alt yordam, bir tane ana yordam var. Bu üç tane alt yordam içerisinde her birisi için bakıyoruz tek tek. Dışarıya bir fonksiyon kullandıracağım için bunun public olarak tanımlanması gerekiyor.
+
+233
+00:41:29,235 --> 00:41:48,295
+Peki, dışarıdan biz iki tane değişken alacaktık, iki tane extern değişken kullanacaktık. Bunlar dizi ve eleman isimli değişkenlerdi. Dizi aslında Word tipindeki bir dizinin başlangıç adresini ifade ediyordu. Dolayısıyla burada extern ve tipini de belirtmemiz gerekiyor.
+
+234
+00:41:48,692 --> 00:42:15,672
+Aynı şekilde eleman isimli değişkeni de kullanacağız. Bunun da tipi Word'tü, orijinal haliyle. Dolayısıyla bunların da Word tipinde olduğunu belirtmemiz gerekiyor. Daha sonrasında kod segmentimiz var. Kod segment içerisinde fonksiyonumuzu gerçekle diyemiz ve return, redfeyle return ettik. Şimdi bu haliyle tek başına bu da derlenip obje dosyası oluşturulabilir durumda. Şimdi normalde bu dosya içerisinde baktığımızda dizi ve eleman isimli tanımlamalar yok. Ama
+
+235
+00:42:16,128 --> 00:42:24,008
+Bunların dışarıdan kullanılacağını belirttiğimiz haliyle şu anda bu da derlenip obje dosyası oluşturabilir durumda.
+
+236
+00:42:25,008 --> 00:42:26,148
+Bunu da belirtmiş olalım.
+
+237
+00:42:26,328 --> 00:42:27,248
+Şimdi şeye gelelim.
+
+238
+00:42:29,488 --> 00:42:31,488
+Bu fonksiyonun içerisini nasıl gerçekleyeceğiz?
+
+239
+00:42:32,228 --> 00:42:37,528
+Bize dışarıdan bir dizinin başlangıç adresi ve dizinin eleman sayısı verilmişken
+
+240
+00:42:37,528 --> 00:42:41,948
+ax yazmacı üzerinde bu dizinin minimum değerini dönmemiz gerekiyor.
+
+241
+00:42:41,948 --> 00:42:42,888
+Bunu nasıl yaparız?
+
+242
+00:42:43,443 --> 00:43:07,864
+dizinin bütün elemanlarını tarayacağız. Bir pivot olarak okuduğumuz ilk değer bizim alternatif en küçük değerimiz. Dizi boyunca ilerledikçe tutmuş olduğumuz en küçük değerden daha küçük bir değer görürsek elimizdeki pivot değeri bundan değiştireceğiz. Bu şekilde ilerleyecek. Şimdi bunun için nasıl bir implementasyon yapmalıyız?
+
+243
+00:43:08,628 --> 00:43:34,828
+Şimdi bir kere döngü yapacağız. Çünkü diziyi taramamız lazım baştan sona. O zaman CX yazmacını kullanmam gerekiyor içeride. Şöyle yapalım. Öncelikli olarak şuraya odaklanalım. Dizi içerisinde döngü yapacağım. Dolayısıyla CX'i kullanmam lazım. Daha sonra bir de dizideki elemanları iterasyonla dolaşmak için SI yazmacını kullanmaya karar vermişiz. Dolayısıyla
+
+244
+00:43:35,280 --> 00:43:59,100
+SI ve CX yazmaçları içeride temporali değişken tutan yazmaçlar olarak ortaya çıkıyor. AX değil, AX de geri dönüş değerini tutacağım. AX de geri dönüş değerini tutacağımız için bu durumda AX'i korumamıza gerek yok. Çünkü eğer çıkarken POP AX ile çıkarsam değeri buldum, içeride AX'e atadım, çıkarken
+
+245
+00:43:59,572 --> 00:44:26,291
+Fonksiyona girerken ki AX değerini geri yazdım, override ettim, buldum değeri bozdum. Bunu yapmamam lazım. CX ve SEI'yı kullanacağımız için arkadaşlar içeride orijinal değerlerini yığına atıyoruz. Push CX ve push SEI yapıyoruz. Geri çıkarken de yığının en üstünde SEI vardı. Dolayısıyla SEI'ya değer okuduk yığından. Bu içerideki işlemleri doğru yaptıysak zaten SEI'nın orijinal değerini geri okumuş olmalıyız.
+
+246
+00:44:26,708 --> 00:44:30,807
+Saat sonra yapmış olduğumuz okumada da CX'in orijinal değerini okumuş olmalıyız.
+
+247
+00:44:32,407 --> 00:44:33,728
+Şimdi içeride ne yapacağız?
+
+248
+00:44:34,407 --> 00:44:35,728
+Fonksiyonun ana gövdesinde.
+
+249
+00:44:36,768 --> 00:44:42,467
+Dizi isimli değişken ne diyebiliriz buna?
+
+250
+00:44:46,427 --> 00:44:51,487
+Dizi isimli dizinin başlangıç adresini S, I yazmacına aldık.
+
+251
+00:44:52,371 --> 00:44:58,271
+eleman sayımızı cx'e atadık ki eleman sayısına iterasyon yapacağız.
+
+252
+00:44:59,531 --> 00:45:02,051
+Dizinin ilk elemanını ax'e atadık.
+
+253
+00:45:02,151 --> 00:45:15,851
+Dolayısıyla şu anda bizim geçici olarak yapmış olduğumuz tahmine göre, ilk tahmine göre dizinin ilk elemanı en küçük elemanındır diye bir iddiada bulunuyoruz, bulunacağız.
+
+254
+00:45:19,956 --> 00:45:24,216
+eleman sayısı kadar değil, eleman sayısından bir eksik adım ilerlememiz lazım.
+
+255
+00:45:24,336 --> 00:45:26,416
+Dikrement, CX ile döngüye girdik.
+
+256
+00:45:27,036 --> 00:45:29,116
+Her seferinde S'yı 2 arttırdık.
+
+257
+00:45:29,216 --> 00:45:30,516
+Bir sonraki elemana geçtim.
+
+258
+00:45:31,576 --> 00:45:38,056
+Elimdeki şu ana kadar gördüğüm en küçük eleman olan AX değeriyle sıradaki dizi elemanını karşılaştırdım.
+
+259
+00:45:38,056 --> 00:45:41,056
+Eğer AX daha küçükse...
+
+260
+00:45:42,387 --> 00:46:04,688
+Bir işlem yapmadan tekrar loop'una döndüm. Sıradaki elemana bakıyorum. Eğer ki SI ile işaret edilen dizi gözü elimdeki şu ana kadar gördüğüm en küçük eleman değeri olan AX'den küçükse yeni en küçük değerini alıp AX'e atıyorum ve tekrar bir sonraki eleman için döngüye dönüyorum.
+
+261
+00:46:05,023 --> 00:46:27,723
+Bu döngüyü kırdığım zaman AX'de dizinin bütün elemanlarını taramış olmakla birlikte dizinin en küçük elemanı bulunur. Dolayısıyla bunu da elde etmiş olduk. Şimdi bir sonraki fonksiyonumuza bakalım. Bir sonraki fonksiyonumuz dizinin ortalama değerini bulan fonksiyon. Şimdi burada yine şöyle işaretleyelim.
+
+262
+00:46:28,467 --> 00:46:37,627
+ana görevi yerine getiren kısımı işaretledim. Bunun haricindeki kısımlar orijinal değerleri korumak içindi. Yine az önce yaptığımız gibi bir işlem yapalım.
+
+263
+00:46:38,708 --> 00:46:48,728
+Burada tanımlamış olduğumuz dizi ort f function, buradaki prosedür dışarıya kullandırılacağı için bunun public olarak tanımlanması gerekiyor bir.
+
+264
+00:46:49,228 --> 00:46:54,568
+İkincisi bu kod parçası içerisinde tanımlı olmayan dizi ve eleman isimli değişkenler var.
+
+265
+00:46:55,128 --> 00:47:00,547
+Bu dizi ve eleman isimli değişkenleri ise dışarıdan kullanacağımızı belirtmemiz gerekiyor.
+
+266
+00:47:00,911 --> 00:47:11,092
+Orijinal yerlerinde dizi, Word tipinde bir dizinin başlangıç adresiydi. Eleman ise Word tipinde bir değişkendi. Dolayısıyla bunların extern olduğunu da bu şekilde tanımlamamız gerekiyor.
+
+267
+00:47:12,451 --> 00:47:16,911
+Ana gövde içerisinde yapmamız gereken işlem aslında...
+
+268
+00:47:21,940 --> 00:47:38,159
+bir Word dizisini toplamak şeklinde bir işlem. Bir Word dizisini toplarken, yani bunu quiz diyeceğimiz ödev uygulamasında, vize sınavında çokça gördüm. Çok büyük bir hata olarak bu ortaya çıkıyor arkadaşlar. Lütfen buna dikkat edin.
+
+269
+00:47:39,319 --> 00:47:46,679
+Word tipinde bir diziyi toplarken şunu yapacağız. Word tipindeki bir elemanın alabileceği maksimum değer nedir? İşte belirli bir şey.
+
+270
+00:47:47,764 --> 00:48:13,344
+Bunlardan toplayarak gidersem, işte n eleman var, burada 10 tane eleman vardı. Mesela 10 tane eleman var diyelim. Bu 10 tane eleman veyahut da daha doğrusu Word tipinde bir değer var. Yani Word kadar eleman olabilir. Yani 65531 tane eleman olabilir maksimum. Her bir elemanda 65531 değerine sahip olabilir. Bu iki durumu düşündüğümüzde aslında bu
+
+271
+00:48:14,675 --> 00:48:35,855
+65531 tane 65531 değerinin toplamı neye sığar diye hesap yapmamız lazım. Bu değer arkadaşlar doğal olarak 16 bite sığmaz. Dolayısıyla 32 bitlik bunu bir geçici yazmaçta tutmamız lazım. Baktığımız zaman 8086 32 bitlik toplama ve bölme işlemlerini desteklemiyor.
+
+272
+00:48:36,403 --> 00:49:00,023
+O zaman ne yapacağız? O zaman bu 32 bitlik toplama işlemini bizim yazılımla gerçeklememiz lazım. Burada nasıl yapmışız bakalım? Yine aynı mantık yapacağımız işlem neydi? Dizinin bütün elemanlarını toplayıp bunları 32 bitlik bir biriktiricide toplayacağız. Daha sonra eleman sayısına böleceğiz. Beklentimiz çıkan sonuç en fazla Word tipinde olabilir. 32 bite.
+
+273
+00:49:00,463 --> 00:49:07,743
+fazla fazla geliyor. 16 bite ama sığabiliyor. Dolayısıyla geri dönüş değerim de AX de olabilir. Bundan da sıkıntı yok.
+
+274
+00:49:08,943 --> 00:49:20,943
+Ne yapacağız? Bütün dizinin elemanlarını toplayacağız. Daha sonra bunu eleman sayısına böleceğiz. Bölme işlemi varsa ve bizim eleman sayımız Word tipinde olduğuna göre demek ki 16 bitlik bir bölme işlemi yapacağım.
+
+275
+00:49:20,943 --> 00:49:26,223
+16 bitlik bölme işlemlerinde DX ve AX yazmaçları geçici bir
+
+276
+00:49:26,547 --> 00:49:44,507
+sanal bir 32 bitlik yazmaç olarak kullanılıyor. Dolayısıyla ben 32 bitlik biriktirme işlemini DX yüksek anlamlı 16 bit veya Word, AX düşük anlamlı Word olmak üzere DX, AX 32 bitlik sanal yazmacında biriktirebilirim. Bu ortaya çıktı. Ne yapacağız o zaman?
+
+277
+00:49:45,187 --> 00:49:49,327
+Dizinin başlangıç adresini SU'ya aldım. Dizinin eleman sayısını CX'e aldım.
+
+278
+00:49:53,108 --> 00:49:59,327
+Daha sonra bölme işlemini yapacağım için MOV, CX, BX yapmışım.
+
+279
+00:50:00,508 --> 00:50:05,948
+Çünkü işlem sonunda tekrar CX sıfırlanacağı için onu kaybetmek istememişiz.
+
+280
+00:50:06,708 --> 00:50:09,568
+Daha sonrasında AX ve DX'i sıfırladık.
+
+281
+00:50:09,568 --> 00:50:11,268
+Bundan sonra yapacağımız işlem.
+
+282
+00:50:11,615 --> 00:50:23,916
+dx, ax, 32 bitlik sanal yazmacı için, dx yüksek anlamlı word, ax düşük anlamlı word olmak üzere, dizinin sıradaki gelen elemanlarını bu 32 bitlik yazmaçla toplamak. Bunu nasıl yaparız?
+
+283
+00:50:24,956 --> 00:50:34,096
+Dizinin ilk başladığımızda ax0. Dizinin ilk elemanıyla başlıyorum. ax0 olduğu için aslında ax'de dizinin ilk elemanı atandı.
+
+284
+00:50:34,463 --> 00:50:51,684
+Bu işlem sonucunda toplama sıfırla bir şeyi topladığım zaman elde oluşmaz. Bu durumda ADC DX, 0 dediğimde DX'de 0 var. Birinci adım için. Sonra SI'yi 2 arttırdım. Tekrar loop'un başına geldim. Sıradaki elemanı aldım.
+
+285
+00:50:52,371 --> 00:51:04,431
+AX ile bu sıradaki elemanı topladım. Bu işlem sonucunda bir taşma veya kere olabilir. İşte o kereyi şurada yakalayarak ADC işlemiyle yakalayarak DX ile biriktiriyorum.
+
+286
+00:51:05,012 --> 00:51:22,312
+Dolayısıyla bir sonraki, bir sonraki eleman için AX toplaması sonucunda, o ana kadar olan AX toplaması sonucunda bir elde varsa bunu DX tarafında biriktiriyorum. Yani bizim normal desimal toplama yaptığımız gibi düşük anlamlı basamaklardan bir elde varsa onu bir sonraki basamakların toplamına ekliyoruz.
+
+287
+00:51:30,384 --> 00:51:54,184
+bütün dizi elemanlarının toplam değeri mevcut olmuş oluyor. Daha sonra ne yapacağız? Bu dx, ax ve 32 bitlik değerini eleman sayısına böleceğiz. Burada zaten bir integer bölmesi yapıp işlem sonucumuz nerede oluşuyor? İşlem sonucumuz ax'de oluşuyor. Kalan sonucu nerede? dx'de ama dx'i kullanmayacağım. Dolayısıyla burada çöp bir değer var.
+
+288
+00:51:54,804 --> 00:52:15,344
+Dolayısıyla orijinal değerleri geri çekmeliyim. Kim için? DX için, SI, BX ve CX için bu orijinal değerleri sırasıyla geri çekerek return ettiğimde AX'de ortalama değeri mevcut olmuş olacak. İkinci fonksiyonumuz da bu şekilde. Üçüncü fonksiyona bakalım. Aynı şeyler burası için de geçerli.
+
+289
+00:52:17,139 --> 00:52:29,860
+Burada yine dışarıya kullandırdığımız bir fonksiyon var. Bu dizi maxf fonksiyonu. Dışarıdan kullandığımız iki tane değişken var. Dizi ve eleman isimli değişkenler. Bunların tiplerinin word olduğunu biliyoruz.
+
+290
+00:52:31,639 --> 00:52:37,820
+Daha sonrasında ana gövdeye bakacak olursak, bu ana gövde aslında minimum bulduğumuzla aynı işlem.
+
+291
+00:52:39,900 --> 00:52:42,559
+İçeride ana gövde içerisinde, şunu şöyle yapalım.
+
+292
+00:52:43,123 --> 00:52:49,203
+ana gövde içerisinde, ana fonksiyonel gövde içerisinde, SI ve CX yazmaçlarını geçici işlemler için kullanıyorum.
+
+293
+00:52:49,723 --> 00:53:05,763
+AX üzerinden dönüş yapacağım. Dolayısıyla AX'de dizinin ilk elemanı benim aslında dizinin en büyük elemanıdır diye şu ana kadar gördüğüm dizi elemanları içerisinde en büyük elemandır diye aldığım değer.
+
+294
+00:53:06,239 --> 00:53:11,099
+Daha sonra ilk elemanla ilgili işlem yaptığım için CX'i biraz azaltıyorum.
+
+295
+00:53:12,179 --> 00:53:15,919
+Dizinin sıradaki elemanları için AX'de karşılaştırma yapıyorum.
+
+296
+00:53:16,119 --> 00:53:19,379
+Eğer AX daha büyükse bir sonraki elemana geçiyorum.
+
+297
+00:53:20,459 --> 00:53:22,259
+Hatta Ebovor Ecul diyebiliriz.
+
+298
+00:53:23,347 --> 00:53:46,388
+above or equal ise bir sonraki elemana geçiyoruz. Ama AX daha küçükse sırada şu ana kadar görmüş olduğum en büyük eleman SI köşeli parantez içerisindeki değerdir. Onu alıp AX'e atıyorum. Geri dönerken içeride kullandığım SI ve CX vardı. Fonksiyona girerken bunları yığına atmıştık. Aynı sırada yığından çekip return işlemimizi yapmış oluyoruz.
+
+299
+00:53:46,867 --> 00:53:51,707
+Şimdi bu dört tane dosyayı birlikte nasıl değerleyeceğiz ona bir bakalım.
+
+300
+00:53:57,652 --> 00:53:59,231
+Ben burada şey yapmıştım ya.
+
+301
+00:54:00,692 --> 00:54:02,032
+Oh, bundan uğraşamayız.
+
+302
+00:54:03,472 --> 00:54:06,532
+Ödevleri değerlendirirken bir kolaylık olsun diye bir şey yapmıştım da.
+
+303
+00:54:07,152 --> 00:54:07,812
+Kaldıramım onu.
+
+304
+00:54:08,812 --> 00:54:10,092
+Ah, yine aynı şeyi açtım.
+
+305
+00:54:43,027 --> 00:54:44,827
+Bu dosyaların isimleri neydi?
+
+306
+00:54:46,927 --> 00:54:48,487
+Bunlar da niye böyle kalmış?
+
+307
+00:54:48,728 --> 00:54:50,827
+Önceki örnekler olduğu için böyle kalmış.
+
+308
+00:54:52,568 --> 00:54:54,768
+Şimdi sırayla bakalım.
+
+309
+00:54:57,768 --> 00:54:58,387
+30, 11
+
+310
+00:55:10,771 --> 00:55:24,211
+Bunun da derlemesini yaptık. Bir obje dosyası oluştu. Şimdi ikinci dosyamızı derliyoruz. Bu minimumu bulan birinci dosyamız ana dosyamızdı.
+
+311
+00:55:26,852 --> 00:55:29,251
+Üçüncü dosyamız ortalamayı bulan.
+
+312
+00:55:32,132 --> 00:55:37,172
+Dördüncü dosyamız ise maksimumu bulan örnekler olacak.
+
+313
+00:55:37,427 --> 00:55:41,687
+Şimdi 3 tane obje dosyası oluşturduk. Bunları birlikte linkleyelim şimdi.
+
+314
+00:55:41,687 --> 00:55:44,647
+Şöyle gelelim.
+
+315
+00:55:46,647 --> 00:55:48,587
+Link.exe deyip
+
+316
+00:55:48,587 --> 00:55:51,047
+30, 11, 1
+
+317
+00:55:51,047 --> 00:55:54,587
+Obje artı
+
+318
+00:55:54,587 --> 00:55:59,367
+30, 11, 2
+
+319
+00:55:59,367 --> 00:56:01,367
+Obje artı
+
+320
+00:56:01,367 --> 00:56:04,327
+30, 11, 3
+
+321
+00:56:04,916 --> 00:56:06,356
+obje artı
+
+322
+00:56:06,356 --> 00:56:07,736
+otuz on bir
+
+323
+00:56:13,235 --> 00:56:15,235
+Ne oldu? Küçük kaldı orada.
+
+324
+00:56:22,356 --> 00:56:34,496
+1, 2, obje, artı, 30, 11, 3, obje, artı, 30, 11, 3, obje, artı, 30, 11,
+
+325
+00:56:43,315 --> 00:56:46,275
+dört obje. Bunları
+
+326
+00:56:46,275 --> 00:56:49,835
+minort
+
+327
+00:56:49,835 --> 00:56:52,395
+minort max
+
+328
+00:56:52,395 --> 00:56:53,515
+şeklinde
+
+329
+00:56:53,515 --> 00:56:57,035
+bir exe'ye dönüştürelim.
+
+330
+00:56:59,435 --> 00:57:02,895
+Map dosyasına da bakalım ve derledik. Şimdi
+
+331
+00:57:02,895 --> 00:57:06,855
+bu tanımlamış olduğumuz dosyaları
+
+332
+00:57:06,855 --> 00:57:09,175
+bir de map dosyasına oluşturuyor.
+
+333
+00:57:09,619 --> 00:57:14,719
+Durduk. Şu özellikle map dosyasına bir bakmak istiyorum. Şu aşamada size de göstermek istiyorum.
+
+334
+00:57:16,500 --> 00:57:24,579
+Şimdi map dosyasına baktığımız zaman arkadaşlar, şu bizim ana yordamda tanımlamış olduğumuz segmentler.
+
+335
+00:57:24,679 --> 00:57:28,159
+Stack segment, data segment, kod segment bunlar ana yordamdan geliyor.
+
+336
+00:57:28,980 --> 00:57:34,199
+Alt yordamların oluştuğu dosyalarda ise sadece kod segmentler vardı.
+
+337
+00:57:34,655 --> 00:57:48,175
+Bunların isimleri aynı olmakla birlikte, klasları farklı olduğu için, bunlar farklı birer segment olarak tanımlanmışlar. Buna niçin baktık? Buna özellikle segment birleştirme konusunda tekrar dönebilmek adına baktık.
+
+338
+00:57:48,175 --> 00:58:00,515
+Biraz sonraki dersimizde, ara verdikten sonraki, devam ettiğimiz noktada, bu alt yordamlardaki segment isimlerini, kod segment isimlerini ve kod sınıflarını
+
+339
+00:58:01,204 --> 00:58:26,804
+birleştirilebilecek şekilde verdiğimiz zaman farklı bir şey göreceğiz. O durumda ise sadece 3 tane segment olacak. Elimizde 4 tane dosya var, 4 farklı segment var. Pardon 4 değil, 1, 2, 3, 4, 5, 6 tane segment var fakat bütün kod segmentlerin birleşik olduğunu göreceğiz. Bu durumda zaten far tipinde tanımlamış olduğumuz fonksiyonları farklı bir şekilde tanımlama imkanımız da olacak.
+
+340
+00:58:27,539 --> 00:58:43,920
+Onlara bakacağız biraz sonra. Ama şimdi şu haliyle elimizde 6 farklı segment var. Bunlardan 3 tanesi ana yordama ilişkin yığın, veri ve kod segmenti. Diğerleri de her bir alt yordamın kendi kod segmentleri olarak ortaya çıkmış oluyor.
+
+341
+00:58:43,920 --> 00:58:50,920
+Şimdi derlemiş olduğumuz kodu bir çalıştırmaya çalışalım.
+
+342
+00:59:11,668 --> 00:59:13,348
+EXE'yi oluşturamadık mı biz?
+
+343
+00:59:15,428 --> 00:59:17,688
+Ne oldu? Sanki derlemiş gibiydi.
+
+344
+00:59:28,275 --> 00:59:31,795
+İsmi vermediğimiz için öyle olmuş. Şöyle yapalım tekrar.
+
+345
+00:59:46,099 --> 00:59:51,480
+Ana yordamımızdayız. Ana yordam içindeki değerlerimiz bunlar. Ana yordamı da şöyle görelim.
+
+346
+00:59:54,579 --> 01:00:04,980
+Ana yordamımız buydu. Ana yordam içerisinde değerlerimiz mevcut. Şimdi geri dönüş değerlerimizi yanına attık. Bir de 0 offset değerine attık.
+
+347
+01:00:05,860 --> 01:00:10,920
+Daha sonrasında bu data segmenti, tanımladığımız data segmenti kullanmak istediğimizi belirttik.
+
+348
+01:00:11,264 --> 01:00:37,503
+Şimdi bu aşamada dump edip data segmentin sıfırına baktığımızda işte 13, 12 gibi word diziler geliyor. En son olarak da eleman sayımız olan A değişkenimiz burada mevcut. 0A yani 10 adet eleman. Sonrasında gelen 1, 2, 3 tane değer ise sırasıyla minimum, ortalama ve maksimum değerleri için ayırdığımız bellek bölgeleri. Tamam.
+
+349
+01:00:38,291 --> 01:00:51,231
+Şimdi, neredeyiz? Devam edeceğimiz noktada, call noktasındayız. Şimdi bakın, burada, call noktasında, maksimum değeri hesaplayan fonksiyona dallandık.
+
+350
+01:00:51,231 --> 01:01:03,192
+Şimdi onu açalım. Maksimum olan hangisiydi? Bence max'ı mı çağırmışız? Max hangisiydi? Şu mu? Ortalamaymış.
+
+351
+01:01:05,684 --> 01:01:15,524
+max değerimizi çağırdık. Burada şu satırdayım. Kullanmayacağım değerleri yanına attım. Şimdi bakın.
+
+352
+01:01:17,524 --> 01:01:25,044
+Burada data segmentin 0 offsetini kullanıyor. Burada özellikle ds değerimiz
+
+353
+01:01:25,556 --> 01:01:53,115
+Bu içeri girdiğimizde, bu alt yordama girdiğimizde içeride farklı bir segment işlemi olmadığı için doğru data segmenti gösteriyor. Bakın bu fonksiyona girmeden önce data segment değerimiz neydi? 076E idi. Girdiğimizde ne? Girdiğimizde de 076E. Ama şöyle bir şey olmuş olsaydı, bu programın da kendi içerisinde bir data segmenti olmuş olsaydı, o zaman burada bir data segment ayarlaması gerekebilecekti arkadaşlar. Ama şu haliyle,
+
+354
+01:01:53,523 --> 01:02:01,203
+bu yazmaç değerinin olduğu gibi gelmesi mantığını kullanarak herhangi bir sıkıntıyla karşılaşmadan devam edebiliyoruz.
+
+355
+01:02:01,683 --> 01:02:07,243
+Trace ettiğimizde bakın dizinin ilk elemanını biraz sonra alacağız.
+
+356
+01:02:08,423 --> 01:02:13,323
+CX'de okuduğumuz değer nedir ona bakalım. CX'de 10 değerini okuduk. Uygun değeri okuduk.
+
+357
+01:02:13,863 --> 01:02:18,423
+Dizinin ilk elemanı AX'e attık. O da dizinin ilk elemanı zaten 13 değeri idi.
+
+358
+01:02:20,436 --> 01:02:26,076
+13 değeri doğru bir şekilde okuduk. Daha sonra döngü üzerinde işlemimizi yapıp
+
+359
+01:02:29,135 --> 01:02:30,675
+10 tane eleman için
+
+360
+01:02:32,976 --> 01:02:35,796
+3, 2, 1
+
+361
+01:02:36,816 --> 01:02:41,936
+Daha sonrasında döngüyü kırdık. Döngüyü kırdığımızda cizin en büyük elemanı 19H yani
+
+362
+01:02:42,112 --> 01:03:03,771
+20, ne oluyor? 16, 25 değerimiz olmuş oluyor. Orijinal dizide bakalım en büyük değerimiz kaçtı? Orijinal dizide de en büyük değerimiz zaten 25'ti. Dolayısıyla sıkıntı yok. Geri dönüş için, yığına korumak için attığımız değerleri tekrar geri çekiyoruz. Bakın, geri dönerken CX değeri çektik.
+
+363
+01:03:04,179 --> 01:03:30,139
+FB değerine geldi. Demek ki bir üst aşamada aslında ana yordamda da bir döngü olmuş olsa, alt yordamda da bir döngü olmuş olsa bunu ancak bu şekilde koruyabiliyoruz. T ile return ettiğimizde sırada AX'deki değerimiz geri dönüş değer. Yani 25. Bunun ilgili max satırına yazmış olduk. Bir sonraki işlem içinde benzer şekilde bu sefer hangisini çağırdık bakayım.
+
+364
+01:03:35,380 --> 01:03:39,159
+Ortalama bulduranı çağırmışız. Ortalama bulduran da neredeydi?
+
+365
+01:03:41,840 --> 01:03:43,579
+Şuraya attıram da. Evet.
+
+366
+01:03:44,579 --> 01:03:46,480
+Buradaki işlemleri çalıştıracağız.
+
+367
+01:03:49,059 --> 01:03:52,579
+Bir kere fonksiyona girdiğimiz için şunları yapmaya çalışalım.
+
+368
+01:04:01,427 --> 01:04:20,107
+bölme işlemini de yaptık. Bölme işlemini yaptıktan sonra, AX'de kalan değer, 11, geri dönüş değerlerimizi uygun şekilde yığından çektik ve return ettik. Şimdi bu aşamada 3. fonksiyon, geri dönüş değerimizi uygun şekilde yazdık ve geri dönüş değeri içinde
+
+369
+01:04:26,291 --> 01:04:49,751
+19, 20, 21, 19, A, B, C, D, E. Go, 0, 7, 7, 0. Ne demiştik? 19, A, B, C, D, E.
+
+370
+01:04:50,516 --> 01:04:55,135
+2E diye dersek, bu call fonksiyonu geçmiş olması lazım.
+
+371
+01:04:58,596 --> 01:05:00,155
+Ona yordama tekrar gelelim.
+
+372
+01:05:01,456 --> 01:05:04,896
+O da RedFay satırıydı. RedFay'de de programı sonlandırmış olduk.
+
+373
+01:05:06,016 --> 01:05:09,735
+Bu aşamada data segmenti eğer kaybetmediyse hemen bakalım.
+
+374
+01:05:11,476 --> 01:05:38,976
+Geri dönüş değerlerimiz için arkadaşlar bakın ayırmış olduğumuz değerler minimum 2 değeriydi, ortalama 11 değeriydi, maksimum da 25 değeriydi. Bu değerleri yığına yazarak programımızı sonlandırmış olduk. Dolayısıyla bu örnekte de 3. parametre aktarım yöntemi olan extern ve public tanımlamalarını görmüş olduk. Daha öncesinde extern ve public tanımlamasını fonksiyonları çağırırken kullanmıştık. Aynı mantık burada da geçerli.
+
+375
+01:05:39,344 --> 01:05:48,384
+Nasıl ki fonksiyonu extern olarak kullanacağımız, dışarıdan kullanacağımız vakit ismi ve tipiyle birlikte tanımlıyorsak,
+
+376
+01:05:48,923 --> 01:05:56,183
+extern olarak kullanacağımız değişkenler için de isim ve tipi şeklinde tipiyle birlikte tanımlama yapmamız gerekiyor extern olarak.
+
+377
+01:05:56,763 --> 01:06:00,643
+Örneğin bu fonksiyon dışarıdan dizi isimli word tipinde bir değişken.
+
+378
+01:06:00,943 --> 01:06:05,563
+Aslında bu word isimli dizinin başlangıç adresi olarak da okuyabileceğimiz bir şey.
+
+379
+01:06:06,387 --> 01:06:15,188
+ve yine dışarıdan word kullanacağımız, dışarıdan kullanacağımız eleman isimli word tipindeki ikinci bir değişkeni de ekstern olarak tanımlamış olmamız gerekiyor.
+
+380
+01:06:15,847 --> 01:06:25,867
+Karşı tarafta da dikkat edeceğimiz nokta tıpkı fonksiyonlarda olduğu gibi dışarıya kullandırılacak olan değişkenler tanımlı olduğu yerde public olarak tanımlanmalı.
+
+381
+01:06:32,159 --> 01:06:42,419
+far tipinde tanımlanmışken ekstern olarak tanımlandıkları yerde ise dışarıya kullandırılacakları için public olarak tanımlanmış olmaları gerekiyor.
+
+382
+01:06:42,959 --> 01:06:52,499
+Bu şartlar sağlandığı haliyle bu fonksiyonlarımızı biz dışarıdan kullanabiliriz, farklı dosyalarda tanımlayabiliriz,
+
+383
+01:06:52,659 --> 01:06:59,119
+benzer şekilde değişkenlerimizi de farklı dosyalardan tanımlayıp farklı dosyalardan kullanma imkanına sahip olmuş olduk.
+
+384
+01:06:59,668 --> 01:07:03,887
+Dolayısıyla döndüğümüz vakit 3 tane parametre aktarım yöntemi gördük.
+
+385
+01:07:03,988 --> 01:07:07,548
+Yazmaç üzerinden, yığın üzerinden ve external public kelimeleriyle.
+
+386
+01:07:08,288 --> 01:07:16,927
+Özellikle external ve public kelimelerinin kullanımı büyük miktardaki veriyi parametre olarak aktarırken daha avantajlı olmuş oluyor.
+
+387
+01:07:17,048 --> 01:07:18,068
+Bunu da söylemiş olalım.
+
+388
+01:07:18,708 --> 01:07:23,528
+Şimdi bu haliyle parametre aktarım yöntemlerini bitirmiş olduk.
+
+389
+01:07:25,012 --> 01:07:32,871
+dersin ortasında size zorunlu olmayan bir ev ödevi vermiştim. O ödevini de tekrar etmiş olayım. Yeni gelenler de duymuş olsun.
+
+390
+01:07:33,612 --> 01:07:40,771
+Geçen hafta yapmış olduğumuz en büyük ortak bölen örneği aslında döngü şeklinde çalışan bir fonksiyondu.
+
+391
+01:07:40,771 --> 01:07:47,471
+Fakat daha öncelerinde bu fonksiyonun recursive olan halini de yapmıştık. Dolayısıyla sizden beklentim şu.
+
+392
+01:07:52,148 --> 01:08:12,148
+yığına parametre atıp yığından dönüş değerini okuyacak olsun. Alt yordam yani ortak bölenlerin en büyüğünü hesaplayan alt yordamda recursive bir fonksiyon olsun. Yine bu fonksiyon da yığından parametre okuyup yığına değer dönen bir alt yordam olarak gerçekleşsin. Böyle oluşturmuş olduğunuz bir fonksiyonda
+
+393
+01:08:12,416 --> 01:08:23,816
+vermiş olduğunuz bir AB ikilisi için yığının en derin halindeki almış olduğu değerleri bir inceleyerek analiz yapmanızı isterim.
+
+394
+01:08:24,176 --> 01:08:26,275
+Yani dediğim gibi zorunlu olmayan bir ev ödevi bu.
+
+395
+01:08:27,056 --> 01:08:35,516
+Bununla ilgili olarak da debug ekranından stack segmenti dump ederek uygun şekilde yığının en derin halini görmeye çalışabilirsiniz.
+
+396
+01:08:36,195 --> 01:08:39,316
+Bu konuyla ilgili olarak sormak istediğiniz bir şey var mı?
+
+397
+01:08:54,387 --> 01:09:00,387
+Evet, soracağınız bir şey yoksa arkadaşlar, bir 15 dakika kadar ara verelim ve 10.25'de devam edelim.
+
+398
+01:09:07,572 --> 01:09:08,572
+Var mı sorunuz?
+
+399
+01:09:20,212 --> 01:09:23,532
+sorunuz yoksa 25 geçe devam ediyoruz.
+
+400
+01:09:25,852 --> 01:09:27,084
+Şimdi ara verdik.
+
+401
+01:25:25,876 --> 01:25:27,636
+Evet arkadaşlar, tekrar merhaba.
+
+402
+01:25:30,636 --> 01:25:44,636
+Geçen dersimizde hatırlayacak olursanız, az önceki dersimizde, farklı dosyalarda bulunan değişkenlerin birbirine ekstern ve publik kelimeleri kullanılarak aktarıldığını görmüştük.
+
+403
+01:25:44,716 --> 01:25:49,275
+Bu dersimizde de kesim birleştirme konusuna bakıyor olacağız.
+
+404
+01:25:53,011 --> 01:25:56,172
+şöyle bir durumla karşı karşıyayız.
+
+405
+01:25:57,252 --> 01:26:00,771
+Bir exe tipi program veya com tipi program için düşünelim.
+
+406
+01:26:01,431 --> 01:26:06,492
+Tanımlamış olduğumuz her bir segment için aslında bir yer ayırmış oluyoruz.
+
+407
+01:26:06,572 --> 01:26:12,451
+Yani baktığımız zaman toplamda bizim 2 üzeri 16 farklı segment değerimiz olabilir.
+
+408
+01:26:12,451 --> 01:26:13,692
+Bunlardan
+
+409
+01:26:14,228 --> 01:26:39,528
+harcamış oluyoruz, kullanmış oluyoruz. Her birisi de 64 kilobayt yer kaplıyor bu arada. Yani her bir segment dediğimiz zaman üst üste örtüşmeler söz konusu olabilir ama kabaca söylemek gerekirse her birisi de belirli bir alan kaplayacak şekilde oluşmuş oluyor. Biz kodlarımızı yazarken bu kesimleri belirli hizalama kodlarıyla birlikte yazıyoruz. Örneğin para byte gibi.
+
+410
+01:26:40,032 --> 01:27:05,631
+page gibi kelimeler kullanıyoruz. Bunlar ise şu anlama geliyor. Kesimlerin tanımları örneğin sıradaki boş alandan itibaren başlasın, sıradaki 2'nin tam katı alandan itibaren başlasın, sıradaki 16'nin tam katı alandan itibaren başlasın, sıradaki 256'nin tam katı alandan itibaren başlasın şeklinde tanımlayabiliyoruz.
+
+411
+01:27:05,971 --> 01:27:24,011
+Böyle bir durumla karşılaştığımızda, baktığımızda şunu da görmüştük hatırlayacak olursanız. Örneğin data segmente bakmıştık. Data segment için senin de değişkenlerimiz mevcut, tanımlı. Hemen bunu örnek olarak göstereyim. Az önceki örnekte de mevcuttu bu. Şöyle gösterelim.
+
+412
+01:27:36,404 --> 01:28:02,244
+Şimdi şu kesim kullanımını yapalım. Ayarları yaptıktan sonra dump edip data segmentin sıfırından itibaren baktığımızda arkadaşlar, bu az önceki örneğimiz. Bu az önceki örnekte 10 tane eleman vardı. Eleman sayısı vardı. Daha sonrasında 1, 2, 3 tane değişkenimiz vardı. Nerede bitiyor? Şurada bitiyor. Yanlış mı saydım?
+
+413
+01:28:06,068 --> 01:28:31,068
+Birinci değişken, ikinci değişken, üçüncü değişken. Şurada bitiyor. Bir sonraki segment, kod segmenti. Kod segmenti şuradan itibaren başlıyor. Fakat burada bakın iki tane word değeri sıfır değeri ve ne olduğunu bilmiyoruz. Neden böyleydi? Sebep şuydu çünkü biz kod segmentimizi para hizalaması ile başlatıyoruz. Para hizalaması ile başlattığımız için
+
+414
+01:28:31,408 --> 01:28:40,908
+16'nın tam katından başlayacak kod segment. Data segment şurada bitiyor. O zaman geri kalan değerler ne olacak? Geri kalan değerler kullanılmayacak. Boş alanlar.
+
+415
+01:28:41,300 --> 01:28:58,260
+Dolayısıyla böyle bir sıkıntı da var. Ben hizalamayı kullanmak durumundayım. Çünkü hizalama kullanırsam, örneğin veri kesiminde, Word tipinde bir dizi tanımlarsam ve tanımlamış olduğum diziler aslında hep çift sayılardan başlarsa veya 16 para şeklinde hizaladığım durum içinde düşünecek olursak benzer bir şey söz konusu.
+
+416
+01:28:59,319 --> 01:29:05,800
+Verilerim hizalı bir şekilde mevcutsa benim mikro işlemci açısından çift adresten 16 bitlik ve değer okuma.
+
+417
+01:29:06,323 --> 01:29:26,091
+tek adresten 16 bitlik değer okumama göre iki kat daha hızlı. O zaman bu hizalayarak bu hız farkından faydalanabiliyorum. Bu önemli. Hizalama yapmam lazım. Hizalama yaptığım zaman arada kullanmadığım boşluklar kalıyor. İşte bu gibi sebeplerden dolayı arkadaşlar tanımlama...
+
+418
+01:29:26,100 --> 01:29:43,020
+ihtiyacı, arada kalan boşluklar, her bir segment tanımının mevcut segment uzayından yer kullanması, her birinin alan kaplaması gibi sebeplerden dolayı segment birleştirme söz konusu olabiliyor.
+
+419
+01:29:43,140 --> 01:29:49,180
+Segment birleştirme dediğimiz zaman aslında burada şu örneğimizi de hemen tekrar açalım.
+
+420
+01:29:55,252 --> 01:29:56,672
+34'ün sinere gitmiş.
+
+421
+01:30:06,579 --> 01:30:11,500
+Segment birleştirme dediğimizde ise aslında kast edilen durum şöyle bir şey oluyor.
+
+422
+01:30:18,420 --> 01:30:26,340
+Şu dört tane kodumuz vardı. Bunlardan şu bizim ana yordamımız.
+
+423
+01:30:26,340 --> 01:30:28,000
+Şöyle yukarı alayım.
+
+424
+01:30:40,819 --> 01:30:49,299
+Şimdi bahsedeceğimiz ilk birleştirme, ilk kesim birleştirmesi, kod segment birleştirmesi üzerine neler yapabiliriz anlatıyor.
+
+425
+01:30:50,159 --> 01:30:57,159
+Şimdi burada bakın, bunun map dosyasına da bakmıştık. Map dosyasına baktığımızda şunu görmüştük, hatırlayacak olursanız.
+
+426
+01:31:02,836 --> 01:31:12,775
+yanlış şeye baktık, bu değildi, pardon, burada. Baktığımız zaman, Ana Yordam için bir segment var. Şimdi bu stack segment özelinde bakalım.
+
+427
+01:31:12,775 --> 01:31:23,456
+Stack segmentin boyutu ne kadarmış? Stack segmentin boyutu 64 byte olmakla birlikte. Bu, nerede stack segment?
+
+428
+01:31:24,500 --> 01:31:33,659
+0'dan başlayıp 3F'ye kadar gidiyor ve boyutta 40. Mükemmel hizalı olduğu için burada hiç ekstradan bir yer harcanmamış. Bunda hiçbir sıkıntı yok.
+
+429
+01:31:34,220 --> 01:31:40,899
+Data segmente bakalım arkadaşlar. Data segmente baktığımızda aslında bizim kaç tane verimiz var?
+
+430
+01:31:41,539 --> 01:31:47,819
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 tane byte'ımız var.
+
+431
+01:31:48,640 --> 01:31:50,939
+28 byte'lık yer kaplayacak.
+
+432
+01:31:51,500 --> 01:31:55,960
+28 byte yer kaplamakla birlikte toplam genişlik ne kadar ayrılmış?
+
+433
+01:31:56,100 --> 01:32:00,519
+Bakın, C dediğimiz şey 12 idi.
+
+434
+01:32:01,439 --> 01:32:06,579
+12 artı 16, 12 artı 16, 28.
+
+435
+01:32:06,579 --> 01:32:11,579
+28 byte'lık bir genişliğe sahip olması gerekirken, bakın 40'dan...
+
+436
+01:32:12,127 --> 01:32:33,188
+5B'ye kadar alan kullanmış ama 5B ile 60H arasındaki alan kullanılmıyor. 5B ile 60H arasındaki alan kullanılamıyor. Çünkü bir sonraki gelen kod segmentin hizalaması da para olduğu için o da tam 16'nın katından başlayacak. Bundan dolayı bir problem var.
+
+437
+01:32:38,228 --> 01:33:03,288
+60'dan 81 haşa kadar 22 haş yani 32 artı 2, 34 baytlık bir kod segmentimiz var ana program içerisinde. Ama 90 haşa kadar olan alandaki ne kadar bir alan yapıyor bu yani 16, 2, 14 baytlık alan yani 81 haştan 82 haştan 90 haşa kadar olan
+
+438
+01:33:03,699 --> 01:33:18,679
+14 byte'lık alan, bir sonraki gelen şu kod segmentin hizalamasının 16'nın tam katından başlaması gerektiği için arada kullanılamayan alan olarak ortaya çıkıyor. Bu şekilde hepsi için bu durum söz konusu.
+
+439
+01:33:18,679 --> 01:33:20,799
+Şimdi burada
+
+440
+01:33:22,963 --> 01:33:45,363
+segment birleştirme nasıl olacak? Segment birleştirme için kod segment ve veri segmentlerini birleştirme söz konusu olabilir demiştik. Öncelikli olarak kod segment birleştirmeden başlayacağız. Şimdi bakın kod segmentlerimiz burada. Kod segmentleri birleştirebilmek için öncelikli olarak kod segment tanımında neler vardı? Bir etiketimiz vardı. Bu içerideki label'dı.
+
+441
+01:33:46,068 --> 01:34:12,688
+İki segment keywordünü kullanıyorduk. Üçüncüsü hizalama parametresiydi. Dördüncüsü class ismiydi. Bunun hangi classta olduğunu. Eğer biz segmentleri birleştirmek istiyorsak, label, hizalama tipi ve class isminin aynı tipte olması lazım. Dolayısıyla bu üç alt yordam ve ana yordamı biz kod segmentlerini birleştirmek istiyorsak, bunların her birisinin
+
+442
+01:34:15,091 --> 01:34:39,491
+etiket, izalama tipi ve sınıf isimlerinin aynı şekilde tanımlanmış olmaları gerekiyor. Dolayısıyla bu değişikliği yaptığımız zaman arkadaşlar artık elimizde şu var. Bakın kod segmentleri birleştirebilmek için dört dosya var. Biz bunu derleyip obje dosyası yapıyorduk, bunu derleyip obje dosyası, bunu derleyip obje dosyası, bunu derleyip obje dosyası, bunu da obje dosyası yapıp hepsini birlikte linkliyorduk.
+
+443
+01:34:41,876 --> 01:34:44,096
+6 farklı segment oluşuyordu.
+
+444
+01:34:45,236 --> 01:34:51,836
+Kod segmentleri aynı label, aynı hizalama ve aynı sınıf isiminde verdiğimiz zaman ne olacak ona bakalım şimdi.
+
+445
+01:35:10,003 --> 01:35:12,884
+Birinci dosyamızın obje dosyasını oluşturduk.
+
+446
+01:35:14,764 --> 01:35:18,944
+İkinci dosyamızın obje dosyasını oluşturduk.
+
+447
+01:35:20,323 --> 01:35:22,804
+Üçüncü obje dosyamızı oluşturduk.
+
+448
+01:35:24,543 --> 01:35:26,963
+Dördüncü obje dosyamızı oluşturduk.
+
+449
+01:35:27,783 --> 01:35:29,323
+Şimdi bunları birlikte linkleyelim.
+
+450
+01:35:33,043 --> 01:35:36,543
+Şimdi linklerken şuna dikkat edelim arkadaşlar. Bakın.
+
+451
+01:35:39,423 --> 01:35:51,583
+Alt yordamları içerisinde herhangi bir end kelimesinden sonra bir entry point yok. Dolayısıyla doğrudan bu fonksiyonları çağıracak bir durum yok. Sadece ana yordamda bu entry point var. Ona da dikkat etmiş olalım.
+
+452
+01:36:21,140 --> 01:36:47,140
+4 tane obje dosyasını aldım. Bunlara ilişkin olarak ismini değiştirelim. Bunun alttan tireli olsun. Bir exe dosyası, bir de map dosyası da oluşturalım. Bunun da ismi şöyle farklı olsun. Map dosyası oluşturalım ve değerleme sonucumuzu elde ettik. Şimdi bu bizim az önceki bütün segmentlerin farklı olduğu durumdaki örneğimizdi. Şimdi şeye bakalım. En son yaptığımıza.
+
+453
+01:36:50,292 --> 01:36:55,852
+Bu da yeni oluşturduğumuz, alttan tireli olan. Buna baktığımızda birleştiremedik bunları.
+
+454
+01:36:58,072 --> 01:36:59,472
+Neyini birleştiremedik acaba?
+
+455
+01:37:05,043 --> 01:37:07,503
+neyi birleştiremedik? Bir taneye.
+
+456
+01:37:13,971 --> 01:37:15,971
+Tekrar bir daha bir bakalım.
+
+457
+01:37:24,500 --> 01:37:25,939
+4 segment.
+
+458
+01:37:35,444 --> 01:37:37,043
+Tekrar bir bakıyorum.
+
+459
+01:37:45,363 --> 01:37:48,583
+tepsinin aynı olmakla birlikte neden birleşmedi?
+
+460
+01:38:13,363 --> 01:38:35,003
+Neyi atladık diye bir bakıyorum tekrar. Heh, tamam. Şimdi oldu. Bu tanımlamalarımız sırasında, tamam ekranı tekrar parlayayım. Bir yerlerden kopya çektim de siz görmeyin. Şimdi, burada yapmış olduğumuz tanımlamalarda bir şeyi unuttuk. O da,
+
+461
+01:38:35,444 --> 01:38:53,604
+Bunların hani şurada dışarıya kullandırırken değişken ve fonksiyon için public tanımlaması yapıyorduk ya, aynı durum burada segment tanımlaması için de kullanmamız gerekiyor. Dolayısıyla burada para public dememiz gerekecek. Burada bir identifier kullanmamız gerekiyor.
+
+462
+01:38:59,828 --> 01:39:10,068
+Aynı şekilde tanımlı olan segmentler için verdiğimiz halde ise artık bunları birleştirmeye başarabileceğimizi umut ediyorum.
+
+463
+01:39:10,748 --> 01:39:12,188
+Tekrar deneyelim.
+
+464
+01:39:13,768 --> 01:39:21,968
+Obje dosyası, ikinci obje dosyası, üçüncü obje dosyası, dördüncü obje dosyası.
+
+465
+01:39:21,968 --> 01:39:23,748
+Şimdi birlikte linkliyoruz bunları.
+
+466
+01:39:24,979 --> 01:39:33,759
+Burada alttan tireli yapalım demiştik. Map dosyasında alttan tireli yapalım demiştik. Derledik. Şimdi bakalım ne hale geldi. Tamam, güzel.
+
+467
+01:39:34,759 --> 01:39:42,939
+Dolayısıyla arkadaşlar çok önemli bir noktayı da tekrar görerek üzerinden geçmiş olduk. Önemli bir noktaydı bu.
+
+468
+01:39:42,939 --> 01:39:48,439
+Şimdi segmentleri birleştirmek istediğimiz vakit label.
+
+469
+01:39:48,916 --> 01:39:59,236
+hizalama tipi, sınıf ismi yanında bir de bunların public identifier ile birlikte verilmesi gerekiyor ki bunlar birleştirilebilsin.
+
+470
+01:39:59,356 --> 01:40:05,376
+Şimdi orijinal durumda ana yordamın 3 tane segmenti vardı, code, data ve stack.
+
+471
+01:40:05,856 --> 01:40:11,756
+Daha sonra her bir alt yordamın kendi segmentleri de ayrı birer segment olarak ortaya çıkıyordu.
+
+472
+01:40:12,851 --> 01:40:33,311
+Şimdi birleştirme işleminden sonra ne oldu? Birleştirme işleminden sonra bakın her bir segmentten sonra atıl olarak kalan mesela AA'dan B0'a kadar kalan alan, 81'den 90'a kadar kalan alan, D2'den E0'a kadar kalan alan bunlar hepsi çöp olmuştu, boş kullanılmayan alanlardı.
+
+473
+01:40:40,148 --> 01:41:01,148
+FA bir sonraki değer 100H'da olacak. Dolayısıyla her birinde bu kadar bir boşluk kalıyordu. Bunu dörtte birine düşürmüş olduk. Kullanılmayan alanı dörtte birine düşürmüş olduk. Elimizde de bir tane segment kalmış oldu. Şu noktaya kadar geldiğimiz haliyle...
+
+474
+01:41:02,739 --> 01:41:26,400
+kod segment için bu şekilde label, hizalama tipi, sınıf ismi ve identifier olarak public verdiğimiz haliyle birlikte linklediğimiz bu dört dosya için tek bir kod segment oluşturulmuş durumda. Şimdi asıl sorumuz şu, biz normalde bu fonksiyonları bakın far tipinde tanımladık.
+
+475
+01:41:26,804 --> 01:41:42,963
+Burada da far tipinde tanımlı, burada da far tipinde tanımlı. Ama segmentleri birleştirdik. Artık bu kodların her birisi aynı segmentte, aynı kod segment içerisinde. Bakın bir tane kod segmentim var ve hepsi burada. Bu durumda aklımıza bir soru geliyor mu arkadaşlar?
+
+476
+01:41:52,627 --> 01:41:55,807
+Şu anda sizin aklınıza gelmezse, finalde benim aklıma gelecek.
+
+477
+01:42:05,971 --> 01:42:13,351
+Daha önceki haftalarda en azından bir tepki alabiliyorduk. Bu hafta komple herkes gitmiş yani.
+
+478
+01:42:19,188 --> 01:42:23,408
+extern yapmaya gerek kalıyor mu? Deneyelim bir tane şey için.
+
+479
+01:42:29,248 --> 01:42:38,248
+Mesela şunları kaldırabiliriz değil mi? Bunun başına bütün şeyler bir olduğu için artık fonksiyonlar aynı segmentte mi acaba? Bakalım.
+
+480
+01:42:39,328 --> 01:42:46,668
+Yaptığımız işlem şu anda soru üzerine extern fonksiyonları extern olarak tanımlamak. Aynı şey.
+
+481
+01:42:47,155 --> 01:42:50,536
+Burada diziler için de geçerli olabilir. Sadece bir tanesi için bakalım.
+
+482
+01:42:52,235 --> 01:42:53,055
+Şöyle yapıyoruz.
+
+483
+01:42:55,355 --> 01:42:58,595
+Bir ASM'yi derlediğimde hata verip vermeyeceğine bakıyorum.
+
+484
+01:42:59,255 --> 01:43:03,235
+Bakın burada içeride kullandığımız fonksiyonlar var.
+
+485
+01:43:03,235 --> 01:43:09,536
+Ama bu dosya tek başına bir obje dosyası olduğu için bunların dışarıdan kullanılacağını bilmesi gerekiyor.
+
+486
+01:43:09,635 --> 01:43:13,576
+O yüzden extern kelimesine her türlü ihtiyacımız var. Deneyerek gördük.
+
+487
+01:43:14,707 --> 01:43:39,087
+Başka ne gelebilir aklımıza? Bakın ne yaptık tekrar söyleyelim. Normalde her birisi ayrı bir segment olarak ortaya çıkıyordu. Buradaki alt fonksiyonların olduğu yerler. Daha sonra biz bunlara uygun label, hizalama tipi ve public kelimesiyle birlikte sınıf ismini vererek hepsini tek bir segment haline getirdik. Şimdi öyleyse aklımıza bir soru geliyor mu? Tekrar sormuşum.
+
+488
+01:43:46,003 --> 01:43:48,463
+Bunların hepsi aynı segmentte olmuş oldu.
+
+489
+01:43:52,404 --> 01:43:59,824
+yani near tipinde bu fonksiyonları near tipinde kullanabilir miyiz şeklinde soruya dönüştürebilirdik.
+
+490
+01:43:59,824 --> 01:44:03,824
+Aynı segmentte olduklarına göre. Şimdi bunun denemesini yapalım.
+
+491
+01:44:05,204 --> 01:44:14,584
+Çıkış noktamız neydi? Çıkış noktamız her bir dosyadaki kod segmenti birleştirdiğimize göre artık fonksiyon çağırmaları
+
+492
+01:44:15,028 --> 01:44:25,167
+segment içi call fonksiyonu olabilir mi? Yani call near olabilir mi? Buna bakıyoruz. Bunun için fonksiyonların tiplerini near'a çevirdim.
+
+493
+01:44:27,091 --> 01:44:47,171
+Bir kere isterseniz önce şuna bir bakalım. Bu kodu çalıştırmıştık. Hatırlıyorsunuz. Bu kodu çalıştırdığımızda farklı, her birisi farklı segmentteydi. Far tipinde çağırıyordu. Şimdi kod segmenti birleştirdikten sonra yine far halinde kalmış olsa bile far tipinde çağırma var mı? Öncelikli olarak ona bakalım.
+
+494
+01:44:48,771 --> 01:44:50,211
+Debug yapalım şöyle.
+
+495
+01:45:05,492 --> 01:45:27,432
+Şimdi evet, doğru soruyu [öğrenci] sormuştu. Burada fonksiyonlar near tipinde tanımlanabilir mi? Ama ona geçmeden önce şuna bakalım. Sadece kod segmenti birleştirdiğimiz haliyle, bunun dışında hiçbir değişiklik yapmadığımız haliyle bu fonksiyonumuzdaki fonksiyon kodları nı halde? Ona bir bakalım.
+
+496
+01:45:31,315 --> 01:45:31,895
+ona bakalım.
+
+497
+01:45:36,692 --> 01:45:38,692
+ne yaptık, ne becerdik şu anda.
+
+498
+01:45:45,939 --> 01:45:46,659
+Bu derli.
+
+499
+01:45:48,659 --> 01:45:50,539
+Hepsini bir kaydedeyim mi?
+
+500
+01:45:53,819 --> 01:46:00,340
+Daha sonrasında 2.asm'yi obje dosyası oluşturduk.
+
+501
+01:46:01,239 --> 01:46:03,880
+3.asm'nin obje dosyasını oluşturduk.
+
+502
+01:46:04,840 --> 01:46:07,019
+4.asm'nin obje dosyasını oluşturduk.
+
+503
+01:46:07,079 --> 01:46:10,279
+Şimdi bunları birlikte linkleyelim.
+
+504
+01:46:10,868 --> 01:46:23,128
+linkleme sonucunda şöyle bir dosyamız oluşsun, alttan tireli. Yine bu da alttan tireli bir şekilde gelsin. Şimdi tekrar dosyamıza bakalım. Sadece
+
+505
+01:46:23,128 --> 01:46:29,128
+kod segment birleşti bütün dosyalarda. Devak işlemine tekrar bakalım.
+
+506
+01:46:36,212 --> 01:47:01,352
+Şimdi, veri kesim ayarlamalarını da yapalım. Ondan sonra bakın, call satırına geldiğimizde, sadece kod segmenti birleştirdiğimiz halinde şu call satırı, burada içeride extern far olduğu için, fonksiyon tanımları far olduğu için, kendi orijinal dosyalarında far tipinde tanımlandıkları için, call işlemi yine far tipinde. Bunu gördük.
+
+507
+01:47:01,716 --> 01:47:27,836
+Şimdi [öğrenci]'in önerisiyle birlikte fonksiyonlar aynı segmentte olduğuna göre biz bunları Near tipinde kullanabilir miyiz? Bakalım. Bunları değiştirdik. Fonksiyon return'leri return haline geldi. Son olarak burada tanımlı hallerinde bunlar artık Near tipinde birer fonksiyon.
+
+508
+01:47:32,819 --> 01:47:33,880
+olacak mı bakalım.
+
+509
+01:47:37,159 --> 01:47:41,380
+Çağırmayla ilgili bir değişiklik yapmamıza gerek yok. Şimdi tekrar Dostbox'ımızı açtık.
+
+510
+01:47:42,640 --> 01:47:43,900
+Birinciyi derledik.
+
+511
+01:47:45,239 --> 01:47:46,739
+İkinciyi derledik.
+
+512
+01:47:48,279 --> 01:47:49,500
+Üçüncüyü derledik.
+
+513
+01:47:50,720 --> 01:47:54,940
+Dördüncüyü derledik. Bunları birlikte linkledik.
+
+514
+01:47:54,940 --> 01:47:57,579
+Oluşan dosya 2 tireli olsun.
+
+515
+01:48:01,492 --> 01:48:03,692
+Şimdi bu dosyayı devak yapalım.
+
+516
+01:48:08,243 --> 01:48:16,323
+Veri kesimi ayarlarını yaptıktan sonra call satırına geldik. Bakın arkadaşlar, call işlemi artık near tipinde yapılabildi.
+
+517
+01:48:16,983 --> 01:48:27,764
+Şimdi bu durumda eğer ki alt yordamların assembly hali elimde varsa, kod birleştirme yapıp bunlar için near tipine dönüştürebilirim.
+
+518
+01:48:27,764 --> 01:48:28,764
+Ama eğer ki...
+
+519
+01:48:29,395 --> 01:48:47,395
+Alt yordamların assembly dosyası yok da sadece obje dosyası varsa ben bu obje dosyasının açıklamasında içerideki fonksiyon tanımının far tipinde olduğunu biliyorsam bu durumda yapacak bir şeyim yok ama assembly dosyaları varsa bu şekilde birleştirme yapıp call işlemini near'a çevirebilirim.
+
+520
+01:48:48,515 --> 01:48:55,975
+Şimdi burada kazandığımız avantajlar neler? Kod kesimini birleştirdiğimizde elde etmiş olduğumuz avantajlar neler oldu? Bir onlara bakalım.
+
+521
+01:48:56,659 --> 01:49:01,779
+bir şuradan açarak anlatalım. Birincisi
+
+522
+01:49:03,796 --> 01:49:24,796
+3 farklı dosyam vardı, 4 farklı dosyam vardı. Ana yordamı içeren dosyada 4 tane segment, 3 segment tanımım vardı. Diğer dosyaların her birisinde de bir tane kod segment tanımım vardı. Dolayısıyla burada her birisi ayrı bir segment alanını işgal ediyordu. Bu bir. İkincisi, segmentlerin hizalama tipinden dolayı
+
+523
+01:49:24,884 --> 01:49:33,764
+sıradaki gelecek bir sonraki segment hep 16'nın katında başlıyor. Mesela burada değişiklik yaparak başka sonuçlar da elde edebiliriz ama
+
+524
+01:49:33,764 --> 01:49:43,943
+hizalı başlamanın bir avantajı vardı. Hizalı başlamanın avantajı mikro işlemci çift adreslerden 16 bitlik okuma ve yazmalarda
+
+525
+01:49:43,943 --> 01:49:51,943
+bunun tek adresten yapılan 16 bitlik versiyonlarına göre iki kat daha hızlı. Bunu da şöyle açıklayabiliriz.
+
+526
+01:49:53,395 --> 01:50:12,875
+tek adresten 16 bitlik okuma yazma işlemleri mikro işlemci açısından ikiye bölünüyor. Önce tek adresten bir okuma yapıyor 8 bitlik daha sonra ikinci bir çift adresten yine 8 bitlik bir okuma yapıyor. Çünkü bu işte mikro işlemcinin uygun hafıza arayüzü dolayısıyla
+
+527
+01:50:13,344 --> 01:50:24,724
+aynı satıra denk gelmeyen iki hafıza gözü olmuş oluyorlar bunlar. Ama çift adresten 16 bitlik, çift adresten 8 bit ve bir sonraki tek adresten 8 bit bunlar aynı hafıza sırasına geliyor.
+
+528
+01:50:24,724 --> 01:50:33,384
+Denk geliyor. Dolayısıyla mikro işlemci aynı anda ikisini de aktif yapabiliyor. İki sütunu da aynı numaralı satırlarını aktif yapabiliyor.
+
+529
+01:50:33,524 --> 01:50:40,284
+Çift ve tek bloklardan bahsediyorum sütun derken. Dolayısıyla bir seferde 16 bitlik okumayı çift adresten yapabiliyor.
+
+530
+01:50:40,979 --> 01:51:05,159
+hizalama önemli. Dolayısıyla bu haliyle 6 farklı segment kullandığım her bir segment yer kaplıyor. 64 bitlik bir alan aslında buna denk geliyor. İkincisi segmentlerde kullanmadığım alanlar kalabiliyor. Bir segment ve bir sonraki segment mesela kullandığım segmentten tanımlı olan segment 16'ya hizalıysa
+
+531
+01:51:05,235 --> 01:51:11,695
+ve benim bir önceki segmentte tanımladığım alan 16'nın tam katı değilse arada bir boşluk kalıyor.
+
+532
+01:51:11,795 --> 01:51:18,175
+Kullanamadığım alanlar kalıyor. Örneğin burada stack segment bu alanı tam olarak kaplıyordu.
+
+533
+01:51:18,255 --> 01:51:26,095
+Bunu söyledik. Ama şuraya bakacak olursanız 5C'den 60H'a kadar olan, 5CH'den 60H'a kadar olan alan kullanılamadı.
+
+534
+01:51:26,815 --> 01:51:30,036
+82H'den 90H'a kadar olan alan kullanılamadı.
+
+535
+01:51:30,484 --> 01:51:39,204
+ABH'dan B0H'a kadar olan alan kullanılamadı. D3'den E0'a kadar olan alan kullanılamadı. Bunlar boşa gitmiş oldu.
+
+536
+01:51:39,884 --> 01:51:44,524
+Farklı dosyalarda olduğu için buradaki fonksiyon çağırmaları far tipinde olması lazım.
+
+537
+01:51:45,224 --> 01:51:54,084
+Far tipinde bir fonksiyonu çağırırken öncelikli olarak geriye dönüş için hem segment hem de offset değerini yığını atmam lazım.
+
+538
+01:51:54,707 --> 01:52:21,068
+Instruction pointer ve kod segment yazmaçlarının değişmesi lazım. Alt yordamdan dönerken de yine yığından iki tane değeri çekmem lazım. Segmentleri birleştirdiğimde, kod segmenti birleştirdiğimde ne oldu? Tek bir kod segmentim var. Bu az önce tanınamış olduğumuz dört tane kod segmentin arasındaki boşluklar, kullanılamayan alanlar giderildi. Ama bunun da sonunda
+
+539
+01:52:21,555 --> 01:52:44,055
+FBH'dan 100H'a kadar olan alanda bir kerelik bir boşluk kaldı. Ama öncekinde bunlardan dört tane vardı. Hatta beş tane vardı. Şimdi bir tane var. İkincisi, bütün kodlarım aynı segment içerisinde yerleştirilebildiği için burada artık benim bütün fonksiyon çağrılarım near tipinde tanımlanabilir.
+
+540
+01:52:44,511 --> 01:53:04,752
+Böyle bir avantaj oldu. Near tipinde fonksiyon çağırıyorsam, alt yordam çağırıyorsam, alt yordamı çağırırken yığına sadece offset değeri atıyorum. Bu bir. İkincisi, sadece instruction pointer değeri alt yordama gitmek için değişmesi yeterli. Üçüncüsü, alt yordamdan dönerken sadece ve sadece
+
+541
+01:53:07,412 --> 01:53:28,612
+Instruction pointer'ı yığından çekmem yeterli. Dolayısıyla bunlar kod segment birleştirmenin avantajları olarak ortaya çıkmış oluyor. Aynı işlemi arkadaşlar, aynı işlemi veri kesimi birleştirmek için de yapabiliriz. Veri kesimi için bunu birleştirdiğimizde aslında benzer bir mantık geçerli ama yine orada da
+
+542
+01:53:28,948 --> 01:53:52,128
+şeyi kullanamıyoruz. Nedir onun adı? External ve public kelimelerini kullanmadan olmuyor. Mutlaka onları da kullanmamız lazım. Onları kullanmamız lazım. Ama avantaj ne? Yine benzer avantaj var. İki farklı dosyadaki data segmentler birleştirildiği için aradaki hizalamadan dolayı kayıplar giderilmiş oluyor. Benzer bir mantık orada da geçerli.
+
+543
+01:53:55,028 --> 01:54:00,748
+Ama iki farklı dosya arasında veri paylaşımı yapmak istiyorsam yine orada şunu yapmam gerekecek.
+
+544
+01:54:01,408 --> 01:54:04,668
+Hani burada yapmış olduğumuz tanımlama vardı ya.
+
+545
+01:54:05,588 --> 01:54:07,807
+Yine public, pardon o değil şurası.
+
+546
+01:54:08,568 --> 01:54:12,168
+External, dışarıya, dışarıdan kullandığımız.
+
+547
+01:54:16,819 --> 01:54:42,840
+Bu içerisindeki tanımlı olan değişkenleri dışarı kullandırıyor. O yüzden public olarak tanımlı. Bu üç dosyada ise word ve dizi ve eleman isimli değişkenler. Bunlar da dışarıdan kullanıldığı için ekstern olarak tanımlanması gerekiyor. Burada da data segmentleri birleştirmek istediğimizde yine aynı durumla karşı karşıya kalmış oluyoruz. Benzer bir durum. Orada da ortaya çıkmış oluyor.
+
+548
+01:54:43,475 --> 01:54:46,055
+Şimdi şöyle bir kontrol edeyim.
+
+549
+01:55:07,060 --> 01:55:28,700
+Burada bir başka deneme şöyle yapılabilir. Segment hizalama tiplerini değiştirerek bunların etkisi tekrar incelenebilir ama benzer bir sonuç verecektir. Ona bakılabilir. Onun haricinde başka anlatacağımız ne vardı ona bir bakmaya çalışıyorum. Onun dışında bir şey yok. Tamam.
+
+550
+01:55:37,619 --> 01:55:42,479
+Şimdi bir de şeyden bahsedelim arkadaşlar. Ondan sonra bu haftalık dersi bitiririz.
+
+551
+01:55:45,679 --> 01:55:50,979
+80-86, yani bu haliyle artık şu ana kadar getirdiklerimiz şeyleri anlatalım.
+
+552
+01:55:51,139 --> 01:56:01,059
+Birincisi, özellikle bu son 3 hafta içerisinde gördüğümüz konular, önemli olan konular, bunlardan bir tanesi yazmaç üzerinden parametre aktarımıydı.
+
+553
+01:56:01,439 --> 01:56:19,899
+Bunu exe tipi programlar için gördük ama kom tipi programlar için de geçerli bu. Daha sonra yığın üzerinden veri aktarımı vardı. Daha sonra external public kelimeleriyle veri aktarımı vardı. Bunları gördük. Her birisinin farklı varyasyonlarını ele aldık, inceledik ve çalıştırma sonuçlarına baktık.
+
+554
+01:56:20,256 --> 01:56:32,836
+Daha sonra kod segment birleştirme işine baktık. Kod segment birleştirmenin özel olarak tanımladığımız fonksiyonları near tipine dönüştürmek gibi bir avantajı vardı. Onun üzerinde durduk.
+
+555
+01:56:33,356 --> 01:56:46,136
+Aynı işlemi data kesimlerini birleştirmek için de yapabiliriz. Fakat aynı kural orada da geçerli. İki farklı dosyadaki data segmentleri birleştirmek istiyorsak bunların label'ları, hizalama tipleri
+
+556
+01:56:46,739 --> 01:56:54,759
+ondan sonra sınıf isimleri aynı olmak zorunda ve mutlaka ve mutlaka Public Identifier'ı kullanılmak durumunda.
+
+557
+01:56:54,759 --> 01:57:00,619
+Bu şekilde kullandığımız zaman iki farklı dosyadaki data segmentler de birleştirilmiş oluyor.
+
+558
+01:57:01,119 --> 01:57:06,739
+Burada kazandığımız avantaj segmentlerin hafızaya yerleşimi sırasındaki hizalama tipinden kaynaklı.
+
+559
+01:57:07,104 --> 01:57:28,244
+boş alanları, çöp alanları birleştirerek daha verimli bir şekilde kullanmış oluyoruz. Bu ortaya çıkıyor. Bu önemli bir konu. Ama baktığımız zaman kod segment birleştirmeyle aynı şey. Dolayısıyla bu 3 hafta görmüş olduğumuz konuların kaba özeti bu şekilde verilebilir. Şimdi bir başka konuya değineceğiz. O da sistemin başlatılması, sistemin reset hali.
+
+560
+01:57:29,043 --> 01:57:55,724
+Sistem resetinde arkadaşlar, bazı yazmaçların almış olduğu özel değerler var. Bundan bahsedebiliriz. Bunlardan birincisi, 8086'lı sistemlerde sistem resetlendiğinde instruction pointer ve code segment değerleri özel bir initial değerlerle yükleniyor. Bu initial değerlerimiz neler? Onu bir şöyle belirteyim.
+
+561
+01:57:57,300 --> 01:57:59,460
+şuraya yazabiliriz.
+
+562
+01:58:02,963 --> 01:58:05,304
+Bu özellikle şöyle ortaya çıkıyor.
+
+563
+01:58:05,884 --> 01:58:11,824
+Code segment değerimiz arkadaşlar, sistem resetlendiğinde bu değerle yükleniyor.
+
+564
+01:58:12,444 --> 01:58:17,304
+Instruction pointer ise bu değerle yükleniyor.
+
+565
+01:58:18,564 --> 01:58:19,644
+Bunun anlamı nedir?
+
+566
+01:58:19,644 --> 01:58:23,604
+Sistem resetlendiği zaman, sistem resetlendiği zaman,
+
+567
+01:58:24,819 --> 01:58:34,219
+Bizim reset vektörümüz neresi olmuş oluyor? Yani 20 bitlik adresimiz neresi oluyor? Buna fiziki adres diyorduk. Physical adres nasıl hesaplanıyordu arkadaşlar?
+
+568
+01:58:35,599 --> 01:58:46,519
+Code segment değerimizi biz 10H ile çarpıp buna instruction pointer değerimizi ekliyorduk. Bu durumda bakalım physical adresimiz ne oluyor?
+
+569
+01:58:50,963 --> 01:58:57,503
+FFFF0H artı 0000H yani
+
+570
+01:58:57,503 --> 01:59:11,524
+başındaki sıfırı da koyalım, o da önemli. Yani bizim reset vektörümüz 0FFF4 tane oldu değil mi? 0H değeri olmuş oluyor.
+
+571
+01:59:11,524 --> 01:59:16,404
+Bu bizim reset değerimiz. Sistem resetlendiğinde
+
+572
+01:59:17,011 --> 01:59:42,871
+kod segment, ffffh, instruction pointer, 0000, h değerlerini alıyor. Dolayısıyla buradan hesaplanan 20 bitlik fiziki adres, ffffh olmuş oluyor. Bunun anlamı ne? Sistem ilk açıldığında bütün kontrolleri yapan, sistemdeki eksiklikleri kontrol eden bir BIOS yapısı var değil mi? BIOS yapısı. Bu BIOS yapısı bir ROM ile sağlanıyor.
+
+573
+01:59:43,311 --> 01:59:58,871
+Dolayısıyla bu ROM yapısının, adres uzayının FFFF0H adresine içerecek şekilde, hatta o adresi başlayacak şekilde bir başlangıç kodunun yerleşik olması gerekiyor.
+
+574
+01:59:58,871 --> 02:00:00,000
+Yani tam olarak...
+
+575
+02:00:00,000 --> 02:00:27,960
+ffff0 adresinde BIOS'un, BIOS ROM çipinin, sistem bootunu ele almasını sağlayacak ilgili, CAM komutunun olması gerekiyor ki, sistem kontrolü çeklerini, BIOS çipi yapabilsin. Dolayısıyla sistem reseti, bu açıdan önemli. Sistemi ilk boot edecek olan BIOS'un, bu adresinde, bu fiziki adresin, vermiş olduğumuz değerini içerecek.
+
+576
+02:00:28,000 --> 02:00:54,480
+şekilde hafıza uzayından yerleşmiş olması lazım ve spesifik olarak bu adreste de ilgili dallanma komutunun veya sistemi ele alan komutun bulunması gerekiyor. Bu önemli bir nokta. Bir başka husus ise arkadaşlar, diğer bütün yazmaçlarımıza baktığımızda diğer bütün yazmaçlar örneğin bayrak yazmaçlarımız, bayrak yazmaçlarının her bir biti sıfırlanıyor sistem resetlendiğinde.
+
+577
+02:00:55,380 --> 02:01:10,319
+Data segment, extra segment ve stack segment değerleri sıfır değerlerini alıyor. Bunu söyleyebiliriz. Daha sonrasında da sırasıyla yapılan işlemler var.
+
+578
+02:01:10,899 --> 02:01:18,379
+Öncelikli olarak sistemdeki güç değerinin stabil ve mantıklı bir değerde olup olmadığı kontrol ediliyor.
+
+579
+02:01:19,119 --> 02:01:27,999
+Eğer bununla ilgili bir doğrulama işareti gelmişse, yani power good şeklinde isimlendirdiğimiz bir sinyal gelmişse bir sonraki aşamaya geçiliyor.
+
+580
+02:01:27,999 --> 02:01:30,999
+Bir sonraki aşamada...
+
+581
+02:01:31,923 --> 02:01:44,463
+özellikle BIOS çipinin ilgili adresindeki JMP komutuyla birlikte BIOS sistemi devreye alıyor ve Power-on self-test işlemlerini yürütüyor.
+
+582
+02:01:44,463 --> 02:01:52,404
+Buradan kasıt, işte RAM var, yok, işte ekran kartı var, yok.
+
+583
+02:01:52,787 --> 02:02:17,987
+işte hafıza var yok gibi işlemlerin hard disk var yok ilgili klavye mouse var yok gibi işlemleri kontrol ederek daha sonrasında da sistemi işletim sistemine devredecek şekilde dallanmayı gerçekleştiriyor. Dolayısıyla bu mantık çerçevesinde sistemin resetlemeden sonraki çalışma mantığı da bu şekilde oluşmuş oluyor.
+
+584
+02:02:20,756 --> 02:02:24,016
+Kabaca sistem resetini de bu şekilde anlatmış olalım.
+
+585
+02:02:25,356 --> 02:02:28,616
+Bundan sonraki dersimizde arkadaşlar kesmelere gireceğiz.
+
+586
+02:02:28,756 --> 02:02:32,436
+Kesmelerle ilgili olarak bir takım konulardan bahsedeceğiz.
+
+587
+02:02:33,276 --> 02:02:36,376
+Ama bu haftalık bu noktada bırakmayı düşünüyorum dersi.
+
+588
+02:02:36,836 --> 02:02:40,016
+Buraya kadar olan konuyla ilgili sormak istediğiniz bir şey var mı acaba?
+
+589
+02:02:47,091 --> 02:03:00,991
+Dediğim gibi önümüzdeki hafta kesmelerle ilgili konuya geçeceğiz. Özellikle kesme vektör tablosunu bunu tanımlayacağız. Kesme işlemlerinde yürütülen adımların üzerinde duracağız.
+
+590
+02:03:02,991 --> 02:03:10,891
+Tabii önümüzdeki hafta 31'ine denk geliyor. 31'inde acaba bir sıkıntı olur mu?
+
+591
+02:03:11,636 --> 02:03:20,676
+olabilir aslında. O yüzden şöyle yapsak daha iyi olur. Biraz kesme konusuna da başlamış olayım ben birazcık. Önümüzdeki haftayı rahatlatmak açısından.
+
+592
+02:03:23,076 --> 02:03:28,036
+Süremiz var nasılsa. Biraz bu konuya girmiş oluruz.
+
+593
+02:04:20,532 --> 02:04:28,391
+Şimdi kabaca bahsetmek gerekirse mikro işlemci açısından 3 farklı veri aktarım yapısı var.
+
+594
+02:04:29,931 --> 02:04:39,752
+Şimdi önümüzdeki hafta belki dersle ilgili bir sıkıntı olabilir şu anda bilmiyorum ama böyle bir sıkıntı olma ihtimaline karşı birazcık önümüzdeki haftanın konusundan bahsedeyim istedim.
+
+595
+02:04:39,851 --> 02:04:41,811
+O yüzden dolayı şu anda buna başladık.
+
+596
+02:04:42,351 --> 02:04:44,612
+Önümüzdeki haftanın konusu kesmeler olacaktı.
+
+597
+02:04:44,692 --> 02:04:47,212
+Kesmelerle ilgili olarak birkaç konudan bahsetmek istiyorum.
+
+598
+02:04:47,648 --> 02:04:51,188
+Böylelikle işte biraz önümüzdeki haftayı rahatlatmış oluruz.
+
+599
+02:04:52,747 --> 02:04:56,787
+Mikro işlemci açısından 3 farklı veri aktarım tipi var arkadaşlar.
+
+600
+02:04:56,967 --> 02:05:02,908
+Bu veri aktarımı derken örneğin bir IO biriminden hafızaya veri aktarımını düşünebilirsiniz.
+
+601
+02:05:03,412 --> 02:05:09,352
+Bunlardan ilki polling dediğimiz bir mantık veri aktarımında. Bunun için şöyle yapmak gerekiyor.
+
+602
+02:05:09,492 --> 02:05:17,732
+I.O. cihazından, örneğin klavyeden düşünelim. Ben bir tuşa bastım. Bu tuşun, bu basmış olduğum tuş değerinin hafızada belirli bir bölgeye aktarılması lazım.
+
+603
+02:05:18,512 --> 02:05:22,952
+Şimdi bu işlem için yapılabilecek işlemlerden bir tanesi sürekli olarak
+
+604
+02:05:23,380 --> 02:05:49,720
+ilgili IO cihazını kontrol edip veri hazır mı diye bakmak. Veri hazır mı? Değil, tekrar bak. Veri hazır mı? Değil, tekrar bak. Veri hazırsa oku. Ama bu durum mikro işlemciyi ve işte mikro işlemciyi diyelim mikro işlemci dolayısıyla aktif bir şekilde meşgul ediyor. Bu ortaya çıkmış oluyor. Ama bu durumda ikinci alternatifimiz ne? İkinci alternatifimiz bunu kesmeyle ele almak.
+
+605
+02:05:50,131 --> 02:06:06,612
+kesmeyle aldığımız vakit mikro işlemci ilgili IO cihazını kesme üretecek şekilde ve gelen kesmeyi de uygun şekilde değerlendirmek üzere ilgili alt fonksiyonla birlikte ayarlıyor ve bırakıyor. Donanımsal olarak bunu ayarlıyor.
+
+606
+02:06:07,091 --> 02:06:19,872
+Daha sonrasında ise örneğin ekran mı sürecek veyahut da farklı okuma işlemleri mi yapacak neyse belki bir takım hesaplamalar yapıyor olabilir. Bunlarla ilgili olarak işlemlerini yapıyor.
+
+607
+02:06:21,492 --> 02:06:29,091
+I.O. cihazından ben bir tuşa bastığımda bu sefer bir kesme isteği mikro işlemciye gönderilerek bu kesme isteğine karşılık gelen
+
+608
+02:06:29,811 --> 02:06:51,051
+fonksiyonun yürütülmesi sağlanıyor. Mikro işlemci açısından baktığımızda ne oldu? Mikro işlemci o sırada ekranda bir takım değerler yakmakla meşguldü. Ama bir yandan da klavyeden basılan tuşu da yakalamak istiyor. Klavyeden bir tuşa basıldığında mikro işlemciye bir kesme isteği gitti. Mikro işlemci ekran sürmeyle ilgili işlemini geçici olarak bıraktı. Klavyeden gelen tuşu okuyup hafızaya yazdı.
+
+609
+02:06:51,507 --> 02:06:55,228
+Bu da kesme tabanlı veri aktarımı olarak değerlendirebileceğimiz bir durum.
+
+610
+02:06:55,347 --> 02:06:57,068
+Ama ikisinde de dikkat edin arkadaşlar.
+
+611
+02:06:57,768 --> 02:07:02,927
+Veri IO cihazından okundu, mikro işlemci içerisine kadar kopyalandı.
+
+612
+02:07:03,387 --> 02:07:05,908
+Daha sonra mikro işlemciden hafıza elemanına aktarıldı.
+
+613
+02:07:07,268 --> 02:07:10,648
+Dolayısıyla bu iki yöntemde de, bu iki veri aktarım yönteminde de
+
+614
+02:07:10,648 --> 02:07:15,568
+temel olarak verinin mikro işlemci içerisinden, CPU içerisinden dolaşması söz konusu.
+
+615
+02:07:16,083 --> 02:07:34,583
+Üçüncü bir veri aktarım yöntemi ise Direct Memory Access yöntemi arkadaşlar. Bunda yine yardımcı bir devre kullanılıyor. Bu yardımcı devre veri aktarımında mikro işlemciyi devreden çıkartarak çalışan bir yapı. Örneğin mikro işlemci Direct Memory Access Controller var.
+
+616
+02:07:34,996 --> 02:07:45,396
+Bu kontrolürde hangi I.O. adresinden itibaren, hangi hafıza adresine kaç adet veri yazılacağını programlıyor, önceden programlıyor.
+
+617
+02:07:46,016 --> 02:07:53,076
+Ve bu veri aktarım işlemi sırasında kontrolü DMA kontrolcüsüne devrediyor.
+
+618
+02:07:53,695 --> 02:07:57,456
+Mikro işlemci artık veriler mikro işlemci üzerinden dolaşmadan
+
+619
+02:07:57,971 --> 02:08:03,971
+Mevcut veri yolu ve adres yolu üzerinde kontrolü, DMA kontrolcüsü sağlayacak şekilde
+
+620
+02:08:03,971 --> 02:08:09,251
+IIO cihazının sıradaki adresinden okuyor, verinin veri yoluna çıkmasını sağlıyor.
+
+621
+02:08:09,747 --> 02:08:16,287
+ilgili hafıza elemanının veri yolundan veri okumasını sağlıyor. Böylelikle karşılıklı veri aktarımı sağlanıyor.
+
+622
+02:08:16,807 --> 02:08:22,768
+Burada dikkat edilecek olursa mikro işlemciye veri kopyalanıp tekrar hafıza elemanına gitmiyor.
+
+623
+02:08:23,327 --> 02:08:29,768
+Doğrudan iki cihaz birbiriyle bağlı ve dolayısıyla bu iki cihaz arasında veri aktarımı söz konusu olmuş oluyor.
+
+624
+02:08:29,768 --> 02:08:32,987
+Bu üç tane veri aktarım yönteminden
+
+625
+02:08:33,332 --> 02:08:42,292
+Biz polink ile olan mantığı kabaca yapmış olduğumuz işlemlerde aslında genel olarak kullandığımız bir yapıydı.
+
+626
+02:08:42,412 --> 02:08:46,612
+Kesme yapısı ise dediğim mantık çerçevesinde çalışan bir yapı.
+
+627
+02:08:47,512 --> 02:08:56,332
+Şimdi kesme kaynakların, yani bu slide aslında mükreşlemciler dersinde de bahsettiğim bir slide ama genel olarak kavramsal olarak...
+
+628
+02:08:57,140 --> 02:09:06,000
+kesme vektör tablosuna kadar gelen kısmı açıklayacağı için uygun ve yeterlidir. Ekstra bir takım bilgiler varsa ben onları geçeceğim zaten.
+
+629
+02:09:07,800 --> 02:09:15,019
+Temel olarak kesme kaynakları arkadaşlar donanımsal ve yazılımsal kesme kaynakları olarak ikiye ayrılıyor.
+
+630
+02:09:15,019 --> 02:09:17,019
+Yazılımsal kesme kaynaklarının da...
+
+631
+02:09:17,619 --> 02:09:26,720
+Instruction'dan kaynaklanan kesme kaynakları ve işlem dolayısıyla kaynaklı kesmeler olarak iki başlık altında inceleyebiliriz.
+
+632
+02:09:27,739 --> 02:09:32,460
+Örneğin yazılımsal kesmelere baktığımızda int isimli bir tane instruction'ımız var.
+
+633
+02:09:32,460 --> 02:09:40,159
+Bu int instruction'ı yanında 0 ile 255 arasında bir 8 bitlik değer alıyor.
+
+634
+02:09:44,435 --> 02:10:08,875
+bir sabit değerle birlikte çalışan bir instruction komut. Bu int komutu aslında yanında vermiş olduğumuz değer de kesme tipini belirtiyor. Yani 0 ile 255 arasında toplamda 256 farklı kesme tipinden istediğimizi, çağırmamızı, tetiklememizi sağlayan bir instruction bu. Bu şekilde bir instruction.
+
+635
+02:10:09,332 --> 02:10:25,891
+Bununla birlikte özel bazı instruction'lar var. Özellikle bir parametre almıyor int o'daki gibi, interrupt overflow'daki gibi. Bu komut ise özellikle overflow durumuna karşılık gelen kesme tipini tetiklemek için kullanılıyor.
+
+636
+02:10:32,083 --> 02:10:49,684
+overflow kesmesini tetiklemek için kullanılan bir instruction. Şimdi diğer taraftan yine yazılımsal olarak ikinci tip kesme kaynakları ise bir işlem sonucunda oluşan durumlardır. Bunlardan bir tanesi şu olabilir arkadaşlar.
+
+637
+02:10:51,023 --> 02:10:59,264
+Bir bölme işlemi yapıyorum ama x bölü sıfır bölmesi yapıyorum. İşte bir sıfıra bölme durumun ile karşılaştığımız zaman
+
+638
+02:10:59,663 --> 02:11:03,023
+div zero kesme tipi tetikleniyor.
+
+639
+02:11:03,983 --> 02:11:05,764
+Şimdi biraz sonra bunlara daha detaylı bakacağız.
+
+640
+02:11:06,483 --> 02:11:10,203
+Vermiş olduğumuz isimlerle kesme tipleri nasıl eşleşiyor biraz sonra bakacağız.
+
+641
+02:11:10,863 --> 02:11:14,783
+Veyahut da yapmış olduğumuz işlem sonucunda bir overflow oluşuyorsa,
+
+642
+02:11:15,483 --> 02:11:17,684
+mesela öyle bir bölme işlemi yapıyorum ki,
+
+643
+02:11:18,224 --> 02:11:22,583
+yapmış olduğum 16 bitlik bölme işlemi sonucunda sonuç 16 bite sığmıyor.
+
+644
+02:11:22,703 --> 02:11:23,943
+Buna bir örnek verebilir misiniz?
+
+645
+02:11:25,779 --> 02:11:33,679
+16 bitlik bölme işlemi sonucunda bölme sonucu 16 bite sığmıyor. AX de overflow oluyor. Buna ilişkin bir örnek verebilir misiniz?
+
+646
+02:11:38,579 --> 02:11:42,899
+Bu arada ayın 31'inde yarım gün olacaksa biz her türlü dersimizi yaparız.
+
+647
+02:11:49,043 --> 02:11:50,764
+Evet, soruya geldim tekrardan.
+
+648
+02:11:55,315 --> 02:12:04,256
+öyle bir değer düşünelim ki, değer grubu düşünelim ki, 16 bitlik bölme işlemi yaptığımda overflow oluşsun.
+
+649
+02:12:15,123 --> 02:12:17,123
+yok mu arkadaşlar hiçbir fikrimiz?
+
+650
+02:12:22,355 --> 02:12:26,535
+negatif değer olması, overflow olmasını garanti etmez.
+
+651
+02:12:31,155 --> 02:12:41,336
+Şimdi bölme işleminde, 16 bitlik bölme işleminde, DX ve AX yazmaçlarıyla 32 bitlik bir sanal yazmaç oluşturuluyor.
+
+652
+02:12:41,436 --> 02:12:43,836
+Hatırlayacak olursak, DIV komutu için bahsediyorum.
+
+653
+02:12:44,796 --> 02:12:50,196
+Bu 32 bitlik sanal yazmaç, vermiş olduğumuz DIV BX komutunu kullandıysak mesela,
+
+654
+02:12:50,836 --> 02:12:55,536
+DX, AX 32 bitlik yazmacı BX'e bölünüyor. İşlem sonucu AX'de saklanıyor.
+
+655
+02:12:59,155 --> 02:13:02,315
+Evet, mesela örnek olarak şöyle bir değer olsa,
+
+656
+02:13:04,516 --> 02:13:07,155
+[öğrenci]'in dediği doğru bir sonuç verecek.
+
+657
+02:13:07,876 --> 02:13:15,735
+Mesela MOV DX, 100H, MOV AX, XOR AX, AX hiç fark etmez.
+
+658
+02:13:19,828 --> 02:13:30,807
+Daha sonrasında MOV, BX, 1 ve DIV, BX dediğimizde işlem sonucu ne olacak arkadaşlar?
+
+659
+02:13:34,676 --> 02:14:00,796
+işlem sonucu, aslında 32 bitlik yazmacımız, bizim oluşturduğumuz 32 bitlik yazmacımız, yani DX, AX yazmacındaki değer şu oluyor değil mi? 100, sonrasında da böyle bir değer oluyor. DX'de 100H var, AX'de 0 var. Biz bunu DX, AX'i 1'e böldüğümüzde elde ettiğimiz sonuç
+
+660
+02:14:01,427 --> 02:14:27,948
+Yine aynı şey. 100, 1, 2, 3, 4, H. Bu durumda bölme işlemi sonucu 16 bite. Yani AX'e sığmıyor. AX'e overflow oluyor. Bu da bölme işlemi sonucunda overflow olmasına ilişkin bir örnek olarak ortaya çıkacak bir durum. Dolayısıyla yazılımsal kesmelere baktığımız zaman bunlardan bir tanesi doğrudan kesme tetikleyen bir instruction olmakla birlikte
+
+661
+02:14:28,431 --> 02:14:52,991
+İkincisi ise yürütülen işlemler sırasında oluşabilecek kesme tetiklemeleriydi. Bir tanesi bir değeri sıfıra böldüğümüzde oluşan kesme. İkincisi bölme sonucu, overflow oluşması sonucunda işlem sonuçlarında overflow olması ile birlikte karşılaştığımız durum olarak ortaya çıkmış oluyor. Dolayısıyla yazılımsal kesmeleri bu iki başlık altında gördüm.
+
+662
+02:14:53,264 --> 02:15:06,744
+Bir de donanımsal kesmeler var arkadaşlar. Donanımsal kesmeler için mikro işlemcinin iki tane fiziki ucu var. Bunlardan bir tanesi int-r ucu, bir tanesi n-m-i ucu. Int-r dediğimiz uç, bu fiziki bir uç.
+
+663
+02:15:07,584 --> 02:15:13,704
+Fiziki bir uç bu, int-r ucu. Bu ucun ismi açıklaması interrupt request ucu.
+
+664
+02:15:15,572 --> 02:15:21,172
+Bu uç ve diğer ikinci ucumuzda non-maskable interrupt şöyle açıklayacak olursak.
+
+665
+02:15:31,091 --> 02:15:33,091
+Birinci ucumuz bu, ikinci ucumuz
+
+666
+02:15:43,764 --> 02:15:51,524
+İkinci ucumuz da bu. Birincinin karşılığı intre, ikinci ucun karşılığı N, M, I. Tamam mı?
+
+667
+02:15:58,484 --> 02:16:25,784
+Şimdi bu iki uç donanımsal kesmeleri tetiklemek için kullanılıyor. Mikro işlemcinin NM-I ucunda bir yükselen kenar gördüğümüz durumda mikro işlemcide iki tipindeki kesmeler tetikleniyor. Tamam mı? Bu spesifik bir örnek. Ama mikro işlemcinin fiziki NM-I ucunda bir yükselen kenar gördüğümüzde tip iki kesmesi tetikleniyor.
+
+668
+02:16:27,060 --> 02:16:38,740
+tip ile kesme fonksiyonunu nasıl bağdaştıracağımızı biraz sonra göreceğiz. Ama burada bilmemiz gereken NME ucunda yükselen kenar olduğunda tip 2 kesmenin tetiklendiği bilgisi.
+
+669
+02:16:38,740 --> 02:16:47,440
+Aynı şekilde Interrupt Request ucunda lojik bir seviyesi, belirli bir süre bulunmuş ise bu da
+
+670
+02:16:48,180 --> 02:16:58,360
+donanımsal kesmeleri tetikliyor. Bakın, NMI ucundaki yükselen kenara karşılık hangi tip kesmeyi çalıştıracağın belli. Hep fix. İki tipindeki kesme.
+
+671
+02:16:59,139 --> 02:17:10,540
+Fakat Interrupt Request ucundan gelen kesme isteklerinde hangi tip kesmenin tetikleneceğini, mikro işlemci ikinci bir cycle'da veri yolunun düşük anlamlı byte'ından bekliyor.
+
+672
+02:17:10,540 --> 02:17:11,119
+Yani.
+
+673
+02:17:11,603 --> 02:17:16,523
+Bu ne demek? Ben bir çevre birimiyim. Örneğin klavyelini okuduğum birimi düşünelim.
+
+674
+02:17:17,463 --> 02:17:21,283
+Tuşa bastığım, intre ucuna bağlı benim tetikleme ucum.
+
+675
+02:17:21,583 --> 02:17:27,003
+Tuşa bastığım anda mikro işlemcinin intre ucunda bir lojik bir seviyesi belirli bir süre boyunca oluştu.
+
+676
+02:17:28,144 --> 02:17:33,263
+Mikro işlemci bir kesme isteğe geldiğini anladı ama hangi tip kesmenin tetikleneceğini bilmiyor.
+
+677
+02:17:36,915 --> 02:17:46,655
+Veri yoluna bakıyor. Veri yolunun düşük anlamlı 8 bitinden bir örnekleme yapıyor. Yani okuma yapıyor. Bu durumda da hangi tip kesmeyi tetikleyeceğini biliyor.
+
+678
+02:17:47,156 --> 02:18:15,016
+Bizim kesme tiplerimiz 0 ile 255 arasında toplam 256 farklı kesme tipimiz vardı. Veri yolunun düşük anlamlı 8 bitinden okuyacağımız değer de zaten 0 ile 255 arasında bir 8 bitlik değer. Dolayısıyla yapacağımız okumayla hangi kesme tipini tetikleyeceğimizi artık öğrenmiş oluyoruz. Dolayısıyla çevre birimi önce intre ucundan kesme isteği gönderiyor. Bu belirli bir süre boyunca intre ucunda lojik bir seviye olarak kalıyor.
+
+679
+02:18:15,156 --> 02:18:28,176
+Daha sonra ise çevre birimi veri yoluna bir 8 bitlik değer çıkıyor düşük anlamlı kısmına. Bu şekilde hangi kesme tipini tetikleyeceğimizi anlamış oluyoruz.
+
+680
+02:18:30,515 --> 02:18:48,056
+Şimdi NME kesmesi ne zaman için geçerli ve anlamlı? NME kesmesi arkadaşlar bakın adı üzerinde non-maskable hiçbir şekilde yazılımsal olarak maskelenemiyor, kapatılamıyor. Demek ki bu acil durumlar için geçerli bir kesme isteği. Ne zaman geçerli olabilir?
+
+681
+02:18:48,896 --> 02:18:51,935
+Good power az önce anlattık sistem reset anında.
+
+682
+02:18:52,368 --> 02:19:05,328
+Baktık mesela, good power sinyali yoksa, bu durumda sistemi boot etmemek üzere, BIOS'un ilgili kesme programıyla sistem açılmadan kapatılabilir, boot etmeden kapatılabilir mesela.
+
+683
+02:19:06,008 --> 02:19:10,468
+Gibi, böyle kritik ve acil durumlar için tetiklenebilecek bir kesme.
+
+684
+02:19:11,228 --> 02:19:15,427
+Intr-R ucu ne için geçerli? Intr-R ucu ise,
+
+685
+02:19:16,051 --> 02:19:25,651
+Normal operasyon sırasında çeşitli çevre birimlerinin kesme isteklerini kabul etmek için kullanacağımız tek bir uç, bir tane uç.
+
+686
+02:19:26,331 --> 02:19:34,072
+Baktığımız zaman bir sürü çevre birimi var bilgisayarda. Klavye var, seri port var, şeyi sürüyor, nedir onun adı?
+
+687
+02:19:34,851 --> 02:19:40,671
+Çeşitli kontrol birimleri var, onlarla haberleşiyor. Herhangi birisinden kesme isteğe gelebilir.
+
+688
+02:19:41,299 --> 02:19:59,139
+Bu durumda da arkadaşlar birden fazla kaynaktan kesme isteği gelebileceği mümkünse bu durumda da başka yardımcı devre kullanılıyor. Bu yardımcı devrede kesme kontrolcüsü farklı kaynaklardan gelen kesme isteklerini alıyor.
+
+689
+02:20:00,000 --> 02:20:03,619
+Bunları tek bir kesme istek ucu olarak mikro işlemciye bildiriyor.
+
+690
+02:20:04,139 --> 02:20:13,399
+Ve aynı zamanda farklı kaynaklardan gelen kesme isteklerine karşılık da veri yoluna her birisi için atamış olduğumuz kesme tipini veri yoluna çıkıyor.
+
+691
+02:20:13,520 --> 02:20:14,819
+Böyle bir kontrolcümüz var.
+
+692
+02:20:15,572 --> 02:20:28,811
+Dolayısıyla intre ucu da farklı operasyon sırasındaki farklı donanımsal kaynaklardan gelen veri aktarımına dayalı kesme isteklerini değerlendirmek için kullandığımız uç olarak ortaya çıkmış oluyor.
+
+693
+02:20:30,112 --> 02:20:34,491
+Mikro işlemci açısından baktığımızda arkadaşlar intre ucu var.
+
+694
+02:20:35,152 --> 02:20:38,572
+Interrupt Request ucu bu mikro işlemci açısından bir giriş ucu.
+
+695
+02:20:39,211 --> 02:20:42,131
+Bir de mikro işlemcinin Interrupt Econology ucu var.
+
+696
+02:20:42,331 --> 02:20:42,932
+Bunu da yazalım.
+
+697
+02:20:58,708 --> 02:21:07,567
+bir de Interrupt, EKNOV uçucu var. O burada görmüş olduğunuz INT A ucu. Hani demiştik ya, mikro işlemciye bir kesme isteğe geldiği zaman
+
+698
+02:21:08,435 --> 02:21:19,935
+Mikro işlemci kesme tipini veriyor onun düşük anlamlı kısmında ikinci bir cycle da okumak istiyor. Bunu tetikleyen ise mikro işlemcinin Interrupt Econol ucu. Sistemi tekrar düşünelim.
+
+699
+02:21:20,556 --> 02:21:32,835
+Çevre birimin var. Çevre birimin bir kesme isteği oluşturdu. Interre ucunda. Mikro işlemci o anda yapmakta olduğu, tam ortasında kaldığı bir instruction var. Onu bitirdikten sonra
+
+700
+02:21:33,231 --> 02:21:39,811
+gelen kesme isteğini değerlendirebilirim anlamında bir ECNOLUŞ işareti gönderiyor çevre birimlerine.
+
+701
+02:21:40,371 --> 02:21:45,211
+Çevre birim bu ECNOLUŞ işaretini aldıktan sonra veri yoluna kesme tipini çıkartıyor.
+
+702
+02:21:46,031 --> 02:21:48,371
+Dolayısıyla aradaki sinyalleşme bu şekilde işliyor.
+
+703
+02:21:49,211 --> 02:21:52,132
+Kesmelerle ilgili olarak iki tane bayrağımız var önemli.
+
+704
+02:21:52,832 --> 02:21:54,891
+Interrupt flag ve trap flag.
+
+705
+02:22:04,404 --> 02:22:31,844
+Interrupt ve Trap flag'lerimiz var arkadaşlar. Şimdi NMI ucu non-maskable olduğuna göre maskelenen bir tane de kesme istek ucu var. İşte o maskelenen kesme istek ucu da IntR ucu. Maskelemeyi nasıl yapıyoruz? IF bayrağı ile yapıyoruz. Eğer ki Interrupt flag değeri 0 ise IntR ucundan gelen kesme istekleri değerlendirmeye alınmıyor.
+
+706
+02:22:32,371 --> 02:22:41,771
+intre ucundan gelen donanımsal kesme isteklerini değerlendirebilmek için IF bayrağının 1 olması gerekiyor. Dolayısıyla IF bayrağının kullanımı bu.
+
+707
+02:22:42,451 --> 02:22:57,031
+TF bayrağına baktığımızda ise TF bayrağı trap flag. Bu ise arkadaşlar her bir instruction yürütüldükten sonra TF bayrağı 1 ise TF bayrağı ile ilgili olarak tip 1 kesme isteği tetikleniyor.
+
+708
+02:22:57,652 --> 02:23:21,531
+Bir adım instruction yürütüyorum, tip 1 kesme tetikleniyor, TF bayrağı 1'si. Daha sonra o kesme alt programından geri döndüm, bir adım daha instruction yürüttüm. Gene TF bayrağı 1 olduğu için o instruction'dan sonra da yine tip 1 kesmesi oluştu. Bunun anlamı nedir? Her bir adımda ben bir adımlık single step interrupt'a giriyorum.
+
+709
+02:23:22,067 --> 02:23:39,507
+Single step interrupt. Bunun anlamı nedir? Adım adım debug yapmak istediğim zaman kullanabileceğim bir bayrak bu. Bu ortaya çıkıyor. Bir de kesme kaynaklarını inceledik. Yazılımsal olabilir, dışarıdan donanımsal olabilir.
+
+710
+02:23:40,115 --> 02:23:49,015
+Bu kesme isteklerine karşılık çağıracağımız, yürüteceğimiz kesme alt programlarının özel bir dönüş instruksiyonu var.
+
+711
+02:23:49,296 --> 02:23:50,936
+URED, Interrupt, Return.
+
+712
+02:23:55,540 --> 02:24:21,319
+Interrupt, return kelimesiyle dönüyoruz. Demek ki bu i, red fonksiyonu, return'den, return far'dan farklı bir şey. Farklı olduğuna göre ayrı bir şekilde tanımlanmış. Return, yığından sadece en üstteki değeri çekip, instruction pointer'ı atıyordu. Red, f, return far, yığının en üstündeki değeri çekip, instruction pointer'ı atıyordu. Bir sonraki değeri çekip,
+
+713
+02:24:21,811 --> 02:24:43,511
+Onu da kod segmenta atıyordu. Interrupt Return Instruction ise, yani iRED fonksiyonu ise, yığından en üstünden çektiği değeri Instruction pointer'a atıyor. İkinci çektiği değeri kod segmenta atıyor. Bir de üçüncü bir değer çekiyor. Bu çektiği değeri de flag yazmacına atıyor. Demek ki şu ortaya çıkıyor.
+
+714
+02:24:43,951 --> 02:25:08,891
+kesme istekleri yürütülürken, kesme istekleri yürütülürken, bunlar sanki birer function call gibi görev gösteriyor, function call gibi çağrılıyor ama function call'dan farklı olarak ekstra olarak bir de bayraklar yığına atılıyor. Demek ki bir kesme fonksiyonuna gidebilmek için öncelikle yığına flag yazmacı atılıyormuş.
+
+715
+02:25:09,263 --> 02:25:32,283
+Daha sonra segment değeri atılıyormuş, yani geri dönmek için. Hani o sırada mesela mikro işlemci ekranı sürmekle ilgili işlem yapıyordu ya, kesme isteği geldi, onunla ilgili alt fonksiyona gittim, kesme alt fonksiyonunu. Orada işlemlerimi yaptım, geri döneceğim. Geri dönerken nereye döneceğim? Kaldığım yere döneceğim. Onun için öncelikli olarak kesme fonksiyona gidebilmek için.
+
+716
+02:25:33,332 --> 02:25:39,632
+flag yazmacı yığına atılıyor, segment değeri yığına atılıyor ve offset değeri yığına atılıyor.
+
+717
+02:25:39,752 --> 02:25:44,412
+Geri dönerken de URED fonksiyonuyla geri dönüyoruz. Bu Instruction'la geri dönüyoruz.
+
+718
+02:25:45,112 --> 02:25:56,092
+Bu da yığından önce çektiği değeri Instruction pointer'e, sıradaki çektiği değeri Code segment'e ve sıradaki çektiği değeri de flag yazmacına otomatik olarak atmış oluyor.
+
+719
+02:25:56,092 --> 02:25:59,632
+Dolayısıyla şey için nedir onun adı?
+
+720
+02:26:00,115 --> 02:26:04,515
+kesme alt programları için böyle özel bir durum söz konusu olmuş oluyor.
+
+721
+02:26:09,811 --> 02:26:17,211
+Şimdi, kesme tipi ile kesme alt programlarını birbirine nasıl bağlarız? Ona bakabiliriz.
+
+722
+02:26:20,595 --> 02:26:45,355
+Şimdi, mikro işlemci için veya 8086'nın bir hafıza bölgesi kesme vektör tablosu olarak ayrılmış durumda. Bu kesme vektör tablosu, kesme tiplerine karşılık çağrılacak olan fonksiyonların adreslerini tutuyor. Bakın arkadaşlar, bu çok önemli. Kesme vektör tablosunda her bir kesme fonksiyonuna ilişkin olarak çağrılacak fonksiyonun tanımı yok.
+
+723
+02:26:45,907 --> 02:26:51,667
+Çünkü bu kesme vektör tablosu çok özet bir tablo. Çok az sayıda veri tutuyor. Öyle aklımızda tutalım.
+
+724
+02:26:52,327 --> 02:27:00,488
+Sadece ve sadece kesme vektör tablosunda herhangi bir kesme tipine karşılık çağrılacak olan fonksiyonun adres bilgisi var.
+
+725
+02:27:00,648 --> 02:27:04,867
+Başka hiçbir şey yok. Sadece ve sadece bu fonksiyonların adres bilgisi var.
+
+726
+02:27:05,747 --> 02:27:13,608
+Toplamda 256 farklı kesme tipi olduğuna göre bu kesme vektör tablosu 256 adet göze sahip.
+
+727
+02:27:14,036 --> 02:27:18,835
+Her bir gözümüzün içerisinde neler olması lazım kesme vektör tablosunda?
+
+728
+02:27:19,515 --> 02:27:22,995
+Aslında bir tane kesme fonksiyonunun adresleri olacak demiştik.
+
+729
+02:27:22,995 --> 02:27:27,915
+Ama bu adresler aynı segment içerisinde olmadığı için fonksiyonlar...
+
+730
+02:27:28,180 --> 02:27:47,580
+sanki far kola karşılık girecek şekilde segment ve offset değerlerini içermesi gerekiyor. Dolayısıyla 256 tane gözümüz var. Gözlerin her birinde ilgili vektör tipine karşılık, kesme vektörüne karşılık çağrılacak fonksiyonun segment ve offset değeri var.
+
+731
+02:27:49,012 --> 02:28:11,072
+Şimdi işletim sistemi başladı. Sistem boot etti. Kesme vektör tablosu boş. Kesme vektör tablosunda neler olacak? Mesela BIOS'a devrettik. Boot'u BIOS'a devrettik. BIOS bir takım kendisiyle ilişkili olan kesme alt programlarının adreslerini kesme vektör tablosuna yerleştirdi. Daha sonra BIOS kontrollerini yaptı.
+
+732
+02:28:11,540 --> 02:28:28,000
+sistemi mesela DOS işletim sistemine devretti. DOS boot ederken kesme vektör tablosunu yine kendisiyle ilgili bir takım kesme fonksiyonlarının ilgili tipleriyle eşleştirerek ilgili kesme vektör tablosu gözlerine bu fonksiyonların adreslerini yazdı.
+
+733
+02:28:28,468 --> 02:28:49,088
+Daha sonra işletim sistemi boot etti. Ben komut satırından bir tane kod çalıştırdım. Kendi yazdığım kodu çalıştırıyorum. Ama kendi yazdığım kodda örneğin mouse hareketlerine ilişkin farklı bir takım işlemler yapacak. Farklı işaretlemeler falan yapacak. Dolayısıyla benim programımın da kendine özel kesme tipleri var, kesme fonksiyonları var.
+
+734
+02:28:56,308 --> 02:29:16,468
+kesme tiplerine karşılık yürütmek istediğim kesme alt programlarının adreslerini de ben vektör tablosuna ekliyorum. Böylelikle BIOS, DOS ve kullanıcı programları akışı sırasında kesme vektör tablosuna bir takım adres değerleri yazılmış oldu. Bu şekilde bir kullanım söz konusu.
+
+735
+02:29:23,188 --> 02:29:27,087
+ilgili kesme tipine karşılık gelen çağırmak istediğim
+
+736
+02:29:27,087 --> 02:29:33,828
+kesme alt program fonksiyonunun adres değeri yani segment ve offset değerleri var.
+
+737
+02:29:34,368 --> 02:29:34,948
+Çok önemli.
+
+738
+02:29:35,788 --> 02:29:38,368
+O zaman şunu söyleyebilir miyiz?
+
+739
+02:29:38,868 --> 02:29:46,288
+Kesme vektör tablosunun boyutu ne kadar?
+
+740
+02:29:57,747 --> 02:29:58,628
+Hadi gençler.
+
+741
+02:30:08,564 --> 02:30:10,804
+Kesme vektör tablosunun boyutu ne kadar?
+
+742
+02:30:25,299 --> 02:30:27,539
+Yok mu bir cevabı olan, fikri olan yok mu?
+
+743
+02:30:33,332 --> 02:30:56,252
+Evet, ne yapıyor bu? Yok, 8 değil. 256 tane tip var, doğru. Ama her bir gözde segment ve offset değeri var. Yani iki tane word var. Dolayısıyla 256x4 olacak. Evet, doğru cevap bu cihat. 256x4. Yani 1024 byte yer kaplıyor. Kapladığı alan 1024 byte.
+
+744
+02:30:56,628 --> 02:31:20,888
+ve mikro işlemcinin hafıza uzayında bu kesme vektör tablosu 0000H adresine 20 bitlik olarak 0H adresinden itibaren başlayıp 3FFH adresine kadar yani 0'dan 1023 adresine kadar 0 ve 1023 dahil olmak üzere toplamda 1024 byte'lık alana yerleşik durumda.
+
+745
+02:31:23,827 --> 02:31:50,827
+dün dahil olmuş olduğu 0 adresinden itibaren 1024 byte'a karşılık gelen alan için uygun RAM ve ROM yapısının mikro işlemci hafıza uzayında bulunuyor olması da gerektiğini gördük. Az önceki örnekte ne vardı? Sistem resetlendiğinde sistem FFFF0H adresinden başlıyordu. Dolayısıyla bu adresi içerecek şekilde BIOS ROM'un yerleşik olması gerektiğini söylemişti.
+
+746
+02:31:51,252 --> 02:31:52,952
+Burada da benzer bir durum geçerli.
+
+747
+02:31:54,612 --> 02:32:03,792
+Dolayısıyla toplamda 0H'dan 3FFH'a kadar toplam 1024 byte'lık bir alanda 256 farklı tip kesme tanımlanabiliyor.
+
+748
+02:32:04,432 --> 02:32:10,072
+Her bir göz içerisinde kesme tipine karşılık çağrılacak olan fonksiyonların adresleri var.
+
+749
+02:32:10,072 --> 02:32:14,832
+Dolayısıyla bir kesme tetiklendiği zaman mikro işlemci otomatik olarak
+
+750
+02:32:15,412 --> 02:32:40,731
+örneğin NMI çağrılmışsa, vektör tablosunun iki numaralı gözüne gidecek, otomatik. Bir intre'ye tetiklenmişse, veri yolun düşük anlamlı 8 bitinden değer okuyacak, o numaralı kesme tipine gidecek. O vektör tablosunun ilgili gözündeki iki tane, bir byte, bir tane word alacak instruction pointer'e yazıyor, ikinci byte'e alıyor, kod segment'e yazıyor. Bunları otomatik bir şekilde yapıyor.
+
+751
+02:32:41,172 --> 02:32:47,112
+Böylelikle ilgili kesme tipine karşılık çağrılacak kesme alt fonksiyonuna dallanmış olduk.
+
+752
+02:32:47,112 --> 02:32:48,472
+Bunu da sağlamış oluyor.
+
+753
+02:32:49,492 --> 02:32:55,992
+Şimdi son olarak bir de kesme vektör tablosunun şöyle genel bir yapısına bakmış olalım.
+
+754
+02:32:57,792 --> 02:33:03,832
+Kesme vektör tablosu 0 adresinden 3ff adresine kadar gidiyor toplam 1024 baytlık alan.
+
+755
+02:33:04,435 --> 02:33:09,315
+Bu aynı zamanda 256 tane kesme tipine karşılık geliyor.
+
+756
+02:33:10,095 --> 02:33:21,795
+Her bir kesme tipi, yani bu tablonun her bir gözü aslında çağrılacak, o tiple ilişkili olarak çağrılacak olan fonksiyonun segment ve offset değerlerini içerecek.
+
+757
+02:33:22,735 --> 02:33:25,435
+Bununla ilgili olarak sıfır tipindeki kesme...
+
+758
+02:33:25,940 --> 02:33:33,920
+sıfıra bölme ile ilgili bir tipindeki kesme trap flagten kaynaklı olan her instruction yürütülmesinde tetiklenen kesme,
+
+759
+02:33:34,740 --> 02:33:42,159
+iki numaralı kesme tipi non-mustable interrupt ucundan gelen yükselen kenarlığında gelen kesme isteklerini karşılıyor.
+
+760
+02:33:43,260 --> 02:33:51,720
+Tip 3 bir seferlik breakpointlere karşılık gelen kesme, overflow olduğunda tetiklenen kesme tip 4,
+
+761
+02:33:53,940 --> 02:34:04,760
+BIOS'a veya DOS'a ayrılmış durumda. Belirli bir alan ise kullanıcıya ayrılmış durumda. Kesme vektör tablosu da bu şekilde özetleyebiliriz.
+
+762
+02:34:10,611 --> 02:34:14,491
+Bir de özellikle şundan bahsedeyim. Ondan sonra dersi bu haftalık bitirelim.
+
+763
+02:34:17,151 --> 02:34:24,491
+IF bayrağından bahsetmiştik. IF bayrağı donanımsal kesmeleri açıp kapanmak için kullandığımız bir bayraktı.
+
+764
+02:34:25,211 --> 02:34:32,791
+IF bayrağına ilişkin olarak iki tane özel komut var, instruction var. Bunlardan birincisi STI komutu.
+
+765
+02:34:33,492 --> 02:34:47,352
+STI komutu, setinterrupt flag anlamına geliyor. Yani IF bayrağını 1 yapmak için kullanılıyor. CLI komutu ise clearinterrupt flag. Bu da IF bayrağını 0 yapmak için kullanılıyor.
+
+766
+02:34:48,072 --> 02:34:59,972
+Bunun haricinde TF bayrağı için özel bir komut yok. Bunun için ya LAHF, SAHF komutlu kullanılabilir.
+
+767
+02:35:00,979 --> 02:35:11,639
+Veyahut da flag register yığına atılıp yığında bit manipülasyonu yapılıp tekrar yığından flag yazmacına okunabilir.
+
+768
+02:35:14,479 --> 02:35:16,939
+Son olarak da bunu söylemiş olayım arkadaşlar.
+
+769
+02:35:19,159 --> 02:35:22,899
+Önümüzdeki hafta yine kaldığımız yerden devam ederiz.
+
+770
+02:35:23,020 --> 02:35:25,439
+Yani kesmelerle ilgili olarak devam edeceğiz.
+
+771
+02:35:26,100 --> 02:35:35,880
+Bu aşamaya kadar gelen konuyla ilgili sormak istediğiniz bir şey var mı? Yani şu ana kadar gelen konuda bugün özellikle neler gördük? Tekrar etmiş olayım.
+
+772
+02:35:35,880 --> 02:35:48,579
+Bugün gördüğümüz konular, external public kelimeleriyle veri aktarımı, kod segment birleştirme, data segment birleştirme, sistem reset adımları.
+
+773
+02:35:49,108 --> 02:36:15,208
+Daha sonrasında da kesme işlemiyle ilgili olarak, kesme tabanlı veri aktarımı ile ilgili olarak bir takım altyapı bilgilerini vermiş olduk bu ders boyunca. Şu ana kadar olan durumla ilgili sormak istediğiniz bir şey var mı? İkinci vize olmayacak. İkinci vize yapmayacağız. Başta duyurmuştuk onu. Evet, yükleyeceğim. Onları şöyle yapacağım.
+
+774
+02:36:15,667 --> 02:36:23,727
+Şu anda online Yıldız Edyo TRD grupları birleştirip ortak sınav yaptığımız için ben doküman koyamıyorum.
+
+775
+02:36:24,567 --> 02:36:30,147
+USIS üzerinden bütün dokümanları paylaşırım. Link gönderirim size.
+
+776
+02:36:32,687 --> 02:36:41,927
+Ödevli bugün duyurmayı planlıyoruz. Birinci ödevi bugün duyurmayı planlıyoruz. İkincisi için de daha sonra bakacağız.
+
+777
+02:36:42,739 --> 02:36:45,139
+Birinci ödevi bugün vermeyi planlıyoruz ama.
+
+778
+02:36:48,884 --> 02:36:51,703
+Bunun haricinde sormak istediğiniz bir şey var mı arkadaşlar?
+
+779
+02:37:01,683 --> 02:37:05,523
+Yine herhangi bir şeyi sormak isterseniz mail üzerinden de sorabilirsiniz.
+
+780
+02:37:06,984 --> 02:37:09,683
+Başka soracağınız bir şey yoksa bu haftalık burada bitirelim.
+
+781
+02:37:09,804 --> 02:37:12,943
+Haftaya kesmelerle ilgili olarak kaldığımız yerden devam ederiz.
+
+782
+02:37:14,843 --> 02:37:17,383
+Haftaya görüşmek üzere. Herkese iyi günler diliyorum.

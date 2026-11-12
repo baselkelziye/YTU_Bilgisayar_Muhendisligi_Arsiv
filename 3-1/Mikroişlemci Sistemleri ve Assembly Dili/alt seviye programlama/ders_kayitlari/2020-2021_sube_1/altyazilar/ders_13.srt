@@ -1,0 +1,3091 @@
+1
+00:02:12,180 --> 00:02:36,540
+Evet, arkadaşlar merhabalar, günaydın. Bu haftaki dersimizde assembly ile ilgili olarak yüksek seviyeli dillerle assembly arasındaki bağlantıyı göstereceğim. Burada temel olarak Visual Studio tarafında inline assembly kodu nasıl yazılır? Bir, ona bakacağız. İkincisi olarak da, ikinci olarak da.
+
+2
+00:02:36,948 --> 00:02:39,388
+Yine Visual Studio tarafında
+
+3
+00:02:39,388 --> 00:02:45,328
+Assembly dosyası, assemblyden derlenen obje dosyasının açısı çağrılır.
+
+4
+00:02:45,968 --> 00:02:47,008
+Ona bakıyor olacağız.
+
+5
+00:02:47,888 --> 00:02:48,448
+Yine
+
+6
+00:02:48,448 --> 00:02:53,528
+Assembly tarafında C fonksiyonlarını çağırma konusu var. Onu atlayacağım.
+
+7
+00:02:54,768 --> 00:02:57,288
+Daha sonrasında da Linux tarafında
+
+8
+00:02:57,288 --> 00:02:59,068
+GCC ve
+
+9
+00:02:59,539 --> 00:03:17,139
+NASM kullanarak, bu yüksek seviyeli dillerle yani C ile SM ile arasındaki bağlantıyı nasıl kurarız? Hem 32 bit hem de 64 bit değerleme kurallarıyla birlikte bunları görüyor olacağız. Dolayısıyla bu haftaki dersimiz bu konuları içerecek.
+
+10
+00:03:17,840 --> 00:03:21,139
+Visual Studio tarafında öncelikli olarak...
+
+11
+00:03:21,716 --> 00:03:39,716
+assembly dosyalarının derlenebilmesi için özel bir takım işlemler yapmamız gerekiyor. Onlardan bahsedeceğim. Daha sonrasında inline assembly ve C tarafında assembly objekt dosyasının çağrılmasından bahsetmiş olacağım. Böyle başlayacağız. Ama bundan önce
+
+12
+00:03:43,996 --> 00:03:48,415
+assembly ile ilgili olarak ödevi ilan etmiştik. Sizler de yüklediniz.
+
+13
+00:03:48,852 --> 00:04:05,632
+Genel olarak şu anda okuması bitmedi ama genel olarak iyi gittiğini söyleyebilirim. Yani verilen cevaplar genel olarak doğru. İkinci bir ödevimiz daha olacak arkadaşlar. O da büyük ihtimalle bu haftanın konusuyla bağlantılı bir şekilde.
+
+14
+00:04:06,195 --> 00:04:27,216
+C ile SML'nin birlikte kullanıldığı bir örnek olacak. O yüzden bu haftaki örnekleri ve anlatımı dikkatli dinlemenizde fayda var. Gerçi ödevle birlikte bunu da ayrıntılı bir şekilde açıklıyor olacağız. Örnek fonksiyonlar da olmuş olacak. Ama yine de bu haftayla birleştirirseniz daha faydalı olur diye düşünüyorum.
+
+15
+00:04:30,483 --> 00:04:54,483
+Ödev tarafında şöyle bir istek gelmişti. Çeşitli kod yazma durumları için pratik yapabilir miyiz gibi bir istek gelmişti. Örneğin hani küp almayla ilgili durumu nasıl ele alacağız veyahut da bu şey tarafında diğer exit bir programda rastal sayı üretmeyle ilgili durumu nasıl ele almalıyız gibi.
+
+16
+00:04:54,995 --> 00:05:02,115
+sorular gelmişti. Şimdi onlarla ilgili isterseniz birazcık konuşalım. Şuradan sorulara bir bakayım.
+
+17
+00:05:21,204 --> 00:05:30,424
+Şimdi şu örnekler üzerinden gidelim. Yani genel olarak doğru ama bir takım hatalar da vardı. O yüzden hani üzerinde durmakta fayda olabilir.
+
+18
+00:06:00,435 --> 00:06:12,115
+Evet, bu birinci örneğimiz şöyle bir soruydu, hatırlayacak olursanız. Burada AL, BH, CL, BL'nin toplamının DX'de saklanmasını istiyoruz.
+
+19
+00:06:13,036 --> 00:06:23,536
+Şimdi burada genel olarak yapılan hata şöyle bir şey olmuş. Şimdi DX'de biriktireceğiz ama son toplamayı DX üzerinde 16 bit olarak yaparken
+
+20
+00:06:23,887 --> 00:06:50,707
+DH değerinin ne olduğunu garanti edilmemesinden bir sıkıntı doğuyor. Bununla ilgili bir problem vardı. Niye buraya geldik? Tekrar söyleyeyim yeni gelen arkadaşlar için de. Şundan dolayı vermiş olduğumuz ödevle ilgili olarak kodlama kısmında nasıl yapacağımıza dair bazı karışıklıklar olmuş. Birkaç arkadaş da bununla ilgili olarak pratikte yapabilir miyiz ders arasında diye sormuşlardı. O yüzden dolayı buraya bakıyoruz.
+
+21
+00:06:51,315 --> 00:06:58,915
+ödevleri okumaya başladım. Genel olarak iyi ama birkaç noktada özellikle takıldığımızı görüyorum.
+
+22
+00:07:00,435 --> 00:07:06,515
+Şimdi arkadaşlar, burada özellikle karşılaştığım temel problem şuydu.
+
+23
+00:07:07,696 --> 00:07:14,955
+DX'de toplamayı biriktireceğimiz için son toplamayı DX üzerinden 16 bit olarak yapıyoruz. Güzel ama
+
+24
+00:07:15,444 --> 00:07:27,084
+Burada daha önceki işlemler hep 8 bitlik, 8 bitlik gitmiş ve son olarak DX üzerinden toplamı yaparken DH'ın değerini kesinleştirmemişiz veya netleştirmemişiz.
+
+25
+00:07:27,504 --> 00:07:31,603
+Oradaki rastgele değer neyse onu kullanmışız. Sınavda da böyle sorunlar vardı.
+
+26
+00:07:32,483 --> 00:07:37,163
+Örneğin sınavlarda, hani sınavdaki sorularda hatırlayacak olursanız.
+
+27
+00:07:37,552 --> 00:07:45,512
+bir değerin, bir dizinin, her bir elemanının, beşte birinin ortalamasını alacağız örneğin.
+
+28
+00:07:46,151 --> 00:07:47,352
+Böyle bir durum vardı.
+
+29
+00:07:50,632 --> 00:07:53,672
+Veyahut da işte üç katı, bir çarpma bölme işlemleri var.
+
+30
+00:07:54,192 --> 00:07:57,891
+Şimdi on altı bitlik bölme ve çarpma işlemleri sıralı bir şekilde geliyorsa,
+
+31
+00:07:58,552 --> 00:08:01,531
+temel kural olarak önce çarpma işlemini yaparsanız,
+
+32
+00:08:02,252 --> 00:08:04,512
+bu durumda DX ve AX'de
+
+33
+00:08:04,848 --> 00:08:20,108
+zaten çarpma işleminin değerleri oluşacak. DX'deki rastgele değer üzeri yazılacak, çarpma işleminin sonucuyla değiştirilecek. Daha sonrasında da bölme işlemini yaparsanız istediğiniz sonucu elde edersiniz. Ama genel olarak karşılaşılan bir problem veya yapılan bir hata
+
+34
+00:08:20,480 --> 00:08:48,480
+çarpma ve bölme sıralı işlemleri yapılacağı zaman öncelikli olarak bölme işlemini yapıp daha sonra çarpma işlemini yapmaya çalışıyoruz. Bu durumda öncelikli olarak bölme işlemini yaptığımızda DX yazmacı üzerinde, 16 bitlik işlemlerde DX yazmacı üzerinde kalan değer olacak. Bu kalan değeri göz ardı etmeden veyahut da kalan değerle ilgili gerekli aksiyonu yerine getirmeden doğrudan çarpma işlemine geçersek
+
+35
+00:08:48,480 --> 00:09:07,120
+yanlış sayıyı çarpmış oluyor. Yani DX, AX sayısını çarpacaktık ya. DX, AX sayısında aslında istediğimiz değer sadece AX'deki değer. DX'de bir kalan değeri var. Bu kalan değeri de yüksek anlamlı byte'mış gibi veya yüksek anlamlı word'mış gibi ele alınarak işleme sokuluyor. Böyle bir hata olmuş oluyor.
+
+36
+00:09:07,635 --> 00:09:35,615
+Aynı durum 8 bitlik bölme ve çarpma sıralı işlemlerinde de geçerli. Orada da öncelikli olarak çarpma işlemini yaparsanız, daha sonra bölme işlemini yaparsanız, oluşacak değerleri garantilemiş olursunuz. Bu hangi durum için geçerli? Peş peşe çarpma ve bölme işlemlerini yapacaksak, bunların sırası matematiksel açıdan bir öncelik arz etmiyor ama SMD tarafında oluşacak değerlerin kontrolü ve kesinleştirilmesi açısından çok büyük bir önem arz ediyor. Bu noktaya dikkat et.
+
+37
+00:09:35,635 --> 00:09:59,635
+Tekrar etmek gerekirse sıralı çarpma ve bölme işlemlerinde önce çarpma daha sonra bölme işlemini yapmak daha faydalı oluyor. Bir de genel olarak karşılaşılan bir problem boyutlarla ilgili analizde sıkıntı var. Örneğin yine sınav sorusundaki ve ödev uygulamasındaki örneklerden hareket edecek olursak işte bir dizi boyutu verilmiş. Bu dizideki her bir...
+
+38
+00:10:00,000 --> 00:10:06,200
+elemanın alabileceği değerlerin sınırları verilmiş. Sınırlara baktığımız zaman bu işaretli 8 bite sığıyor.
+
+39
+00:10:06,920 --> 00:10:13,940
+Şimdi bunu ele aldık. İşaretli 8 bite sığmakla birlikte eleman sayısı örneğin 6 bin civarında veya 60 bin civarında.
+
+40
+00:10:13,940 --> 00:10:18,140
+Böyle olduğu zaman yapmamız gereken analiz şu aslında.
+
+41
+00:10:18,676 --> 00:10:37,696
+127 alabilecek en büyük değer, x60.000 adet göz var. Dolayısıyla bu dizinin toplamını biriktirmek istediğimiz zaman ihtiyaç duyduğumuz boyutu buradan ortaya çıkartmış oluyoruz. Bakıyoruz, burada 16 bite sığmayan bir durum var. Dolayısıyla 32 bite taşacağını dikkate almamız gerekiyor.
+
+42
+00:10:37,696 --> 00:10:46,676
+Veya benzer bir şekilde Word tipinde bir dizimiz var. Bu Word tipindeki diziden örneğin 500 tane eleman var. Burada ortalama hesabı yapacağız.
+
+43
+00:10:46,676 --> 00:11:02,355
+Yine alınabilecek en büyük değer Word olduğu için dizi elemanı açısından 65534 değer olabilir maksimum. 500 tane de eleman olduğu için bu durumda da toplama işlemi 16 biti taşıyacaktır, 32 bite taşıyacaktır. Buna dikkat etmemiz gerekiyor.
+
+44
+00:11:02,996 --> 00:11:09,236
+Bu gibi durumlarda 32 bite taşma varsa ve ortalama hesabı yapacaksam izleyeceğimiz strateji şu olmalı.
+
+45
+00:11:09,583 --> 00:11:19,783
+Yani bizim doğal olarak kullanılan, varsayılan olarak kullanılan bir sanal 32 bitlik yazmacımız var aslında. O nedir? Bölme ve çarpma işlemlerinde DX, AX ikilisi.
+
+46
+00:11:20,371 --> 00:11:36,391
+Bundan dolayı eğer 32 bite taşıma yapan bir biriktirme toplama işlemin varsa, düşük anlamlı Word'u AX'de biriktirip, her bir adımdaki toplamadan gelen LD'yi DX'e keriyle toplamak. Aslında buradaki izlememiz gereken yol olacaktı.
+
+47
+00:11:36,391 --> 00:11:40,391
+Burada bu örnek özelinde...
+
+48
+00:11:40,916 --> 00:12:06,456
+Şunu da yapmışız, onları doğru kabul ettim. Benzer bir işlemi, sanal 32 bitlik yazmacı, veri kesiminde bir define double word yaparak, tanımlayarak kullanan arkadaşlar var. Burada uygun şekilde kullanım olduğu için onu da doğru kabul ettim tabii ki. Fakat daha pratik olan, extra olarak başka bir şekilde ihtiyaç duymadım, DX ve AX yazmaçlarını.
+
+49
+00:12:07,635 --> 00:12:26,816
+bu biriktirme için kullanmak olmalıydı. Tabii ki burada DX ve AX'i bu biriktirme için kullanacaksam, diğer yaz maçları da, yani DX ve AX'i sadece bu iş için ayırmalıyım, diğer işler için elimdeki diğer yaz maçları kullanmalıyım şeklinde bir yol izlememiz gerekiyor.
+
+50
+00:12:27,860 --> 00:12:38,240
+Şimdi ödev tarafındaki bu örneğe gelecek olursak, şimdi elimizde AL, AH, BL ve CL'yi toplamamız gereken bir örnekle karşı karşıyayız.
+
+51
+00:12:38,819 --> 00:12:47,340
+Burada DX'e biriktirmemiz gerekiyor. Şimdi işlem sonucuna baktığımızda 4 tane 8 bitlik işlem 16 bite sığar değil mi?
+
+52
+00:12:47,340 --> 00:12:55,860
+255 çarpı 4 diyecek olursak 16 bite sığar. Bunu dikkate alalım. Bir de biriktirmeyi...
+
+53
+00:12:55,860 --> 00:13:18,980
+DX'de yapacağımız için baştan şöyle ilerleyelim. DX'in yüksek anlamlı kısmı yani DH'da 8 bitlik toplamaların kerisini biriktireyim. Her bir 8 bitlik toplamanın kerisini DH'da biriktireyim. DLD ise düşük anlamlı 8 bitlerin toplamasını biriktireyim. Yani bu şekilde hareket edebiliriz. Bu durumda mesela yapacağımız ilk işlem
+
+54
+00:13:19,475 --> 00:13:23,055
+DL'de biriktirme yapacağımıza göre şu olabilir.
+
+55
+00:13:25,715 --> 00:13:31,595
+Örneğin, ADDL, A, şöyle diyelim hatta.
+
+56
+00:13:33,135 --> 00:13:38,955
+DX'de biriktireceğimiz için, DH'ın da biriktirmede kullanılacağı için onun sıfır olduğundan emin olmamız gerekiyor.
+
+57
+00:13:39,515 --> 00:13:42,495
+Bu durumda yapılacağımız ilk işlem XOR DX, DX olabilir.
+
+58
+00:13:42,715 --> 00:13:45,815
+Daha sonrasında, şimdi DH ve DL sıfır.
+
+59
+00:13:46,176 --> 00:13:52,256
+Bu durumda ilk yapacağımız iş, ADD, L virgül, mesela AL ile başlayacağız, AL'yı topladık.
+
+60
+00:13:52,356 --> 00:13:56,276
+Buradan herhangi bir elde gelme ihtimali yok, DH'ın sıfır kalması gerekiyor.
+
+61
+00:13:56,816 --> 00:14:01,876
+Bir sonraki adımda sıradaki elemanımız AH, toplamaya AH'ı da ekleyelim.
+
+62
+00:14:03,896 --> 00:14:08,236
+Ama burada daha önceden 8 bittik bir değer vardı, ikinci bir 8 bittik değer geldi.
+
+63
+00:14:08,236 --> 00:14:12,236
+Taşma olabilir, yapacağımız işlem burada DH'ı.
+
+64
+00:14:13,844 --> 00:14:35,124
+DH'ı sıfırla, ADD, CERI yapmak. Bu durumda ne yapmış olduk? Birinci toplamdan 8 bitlik değer gelmişti. İkinci toplamdan bir 8 bitlik toplama daha var ama burada taşma olabilir veya CERI olabilir. Bunu DH'a ekledik. Bir sonraki toplamamız BL'e olacak. Yine aynı işlem dolayısıyla burada da geçerli.
+
+65
+00:14:35,892 --> 00:14:46,012
+bu işlem sonucunda da ataşma olabilir. ADC, DH, 0. Son olarak CL'yi de toplayacağız. ADDL, CL,
+
+66
+00:14:48,892 --> 00:14:58,012
+ADWITKER'i DH, 0 diyerek bu toplamı elde edebiliriz. Şimdi bir de mutlaka şunu yapın arkadaşlar. Elde etmiş olduğunuz toplamalarda
+
+67
+00:14:58,580 --> 00:15:08,360
+bir sağlama yapmanız lazım. Bunun için de initial değer oluşturalım. MOV mesela ALD 255 olsun. Olabilecek maksimum değerleri yazın burada.
+
+68
+00:15:09,000 --> 00:15:17,700
+Yani yapılabilecek en güzel kontrol bu şekilde olur. İşlemlerimiz işaretsiz sayı olarak kabul ettik. Dolayısıyla maksimum değerleri yazıyorum.
+
+69
+00:15:18,659 --> 00:15:24,960
+Son olarak CL kaldı. Ona da 255'i yazalım. Şimdi bu işlemler sonucunu adım adım yürütecek olursak.
+
+70
+00:15:26,580 --> 00:15:28,580
+Şu anda göremiyorsunuz.
+
+71
+00:15:30,580 --> 00:15:32,580
+Şöyle tekrar paylaşayım.
+
+72
+00:15:36,275 --> 00:15:46,395
+Şimdi adım adım yürüttüğümüzde de initial değerleri yükledik, DX'i sıfırladık, daha sonra sırasıyla toplama işlemlerimizi gerçekleştiriyoruz.
+
+73
+00:15:46,855 --> 00:15:55,795
+Birinci toplamada DH'e zaten taşma olmayacaktı. İkinci toplamada şu anda bir taşma var ama onu daha yerine yazmadık. Şuradan.
+
+74
+00:15:56,244 --> 00:16:12,543
+flag'lerden kontrol edelim. Bakın, carry flag'te bir değeri var. Bunun DH'a taşırılması lazım. Bu işlemi şu anda gerçekleştirdik. Daha sonra yine ikinci eleman toplamasını yaptık. Bakın, burada da bir taşma var. Bunu da DH'a taşırmamız lazım.
+
+75
+00:16:13,139 --> 00:16:32,559
+Üçüncü toplama işlemini yaptığımızda yine bir taşma oluştu. CL'yi inceliyoruz. Bunu da taşırmamız lazım. Elde etmiş olduğumuz sonuç bu. Şimdi bunun karşılığını buluyor mu? Hemen şuradan da hesap makinesinden kontrol edelim. Burada programlayıcı hesap makinesinin şu şekilde açılacaktır sizde.
+
+76
+00:16:33,940 --> 00:16:39,340
+kullanmak açısından bahsediyorum. Programlayıcı kısmına getirirseniz istediğiniz durumu elde edersiniz.
+
+77
+00:16:39,960 --> 00:16:43,840
+Yazacağınız değerleri hex mi, decimal mi kullanacağınızı buradan seçiyorsunuz.
+
+78
+00:16:44,919 --> 00:16:51,820
+355 çarpı 4 tane değeri topladık. Toplamda 1020 yapıyor. Elde edeceğimiz değer de 03FC olması lazım.
+
+79
+00:16:52,100 --> 00:16:58,740
+03FC değerini bu şekilde elde etmiş oluyoruz. Bu bizim birinci soruyla ilgili olan.
+
+80
+00:16:59,316 --> 00:17:03,996
+ödevdeki örnek uygulamasıydı. Şimdi bir sonrakine bakalım.
+
+81
+00:17:39,700 --> 00:17:42,420
+Yine ödevde olan bir başka sorumuz da arkadaşlar.
+
+82
+00:17:44,019 --> 00:17:48,360
+TL'deki sayının küpünü hesaplamakla ilgili olan kod parçasını yazma üzerindeydi.
+
+83
+00:17:49,519 --> 00:17:52,320
+Yine burada da dikkat etmemiz gereken durum.
+
+84
+00:17:53,748 --> 00:18:20,468
+8 bitlik bir değerin küpü kaç bite sığar? Bunun bir hesabını yapmamız lazım. Yapacağımız işlem basit. Maksimum değer ne? 255. Yine aynı şekilde kalkülatoru açıp, hani şu anda görmüyorsunuz önemli değil ama, x 255 x 255. Çıkan sonuç arkadaşlar, 16 milyon küsur bir şey oluyor. Dolayısıyla bu değer 32 bite sığabilir. Bir kere bunun farkında olmamız lazım. Hatta şunu da söyleyelim.
+
+85
+00:18:20,864 --> 00:18:36,344
+İlk çarpma işlemimiz 255 x 255 bu 16 bite sığıyor. İlk çarpma işlemi ilk karesini aldığımız durumda. Küpünü aldığımız durumda ise işlem 32 bite taşmış oluyor.
+
+86
+00:18:36,884 --> 00:18:57,264
+Burada 24 bitlik bir yazmacımız olmadığı için onu direkt geçiyorum. 8 bit, 16 bit, 32 bit şeklinde kullanıp taşırabiliriz. Bundan dolayı özellikle bunu geçmiş oldum. 8 bitli, 16 bit daha sonra da 32 bit diye ilerliyoruz. Şimdi DL'de değerin hazır olduğunu varsayalım.
+
+87
+00:18:58,003 --> 00:19:11,103
+Şimdi, 32 bitlik çarpma yapacağımız için, nihayet olarak, ilk kare alma işlemi de 16 bite sığdığı için, öncelikli olarak, DL'nin karesini alıp, sonucu AX'de olduğundan emin olalım, değil mi?
+
+88
+00:19:11,963 --> 00:19:21,943
+Bunun için, işlem sonucunu hatırlayacak olursanız, 8 bitlik çarpma. 8 bitlik çarpma da işlem sonucu,
+
+89
+00:19:22,036 --> 00:19:29,496
+AX'e atanıyordu. Burada da AL ile verdiğimiz operant çarpılarak bu işlem sonucu AX'e atanıyordu.
+
+90
+00:19:30,155 --> 00:19:35,976
+Şimdi bunu kullanabilmek adına ne yapmamız lazım? Öncelikli olarak AL'ye DL değerini attık. Daha sonrasında da MUL.
+
+91
+00:19:36,996 --> 00:19:45,376
+DL komutunu çalıştırdık. Artık bu işlem sonucunda AX'de ne var? DL'nin karesi mevcut.
+
+92
+00:19:46,099 --> 00:20:06,059
+Şimdi bu aşamadan sonra küpünü aldığımız durumda işlem sonucu 32 bite taşıyacaktı. Yani bir 16 bitlik çarpma yapmamız lazım. Kesinlikle. Bu durumda da, yani şunu yaparsam sıkıntı oluyor. Tekrar MUL DL edersem ne yapacak gene? AL ile DL'yi çarpacak değil mi?
+
+93
+00:20:06,548 --> 00:20:34,227
+AL ile DL'ye çarpacak ve AH'daki anlamlı çarpım sonucum uçacak. Dolayısıyla burada dikkat etmemiz lazım. Burada yapmamız gereken işlem 16 bitlik bir çarpma olması lazım. AX'deki değeri kaybetmemek adına. AX çarpı DL yapacağım yani daha doğrusu. AX çarpı DL işlemini yapmam lazım. Bunu uyumsuzluk olduğu için bu şekilde yapamayacağımdan dolayı aslında burada yürütmem gereken işlem AX çarpı DX işlemi yapmak.
+
+94
+00:20:35,124 --> 00:21:02,203
+DL'de değerim var. Dolayısıyla DX'deki değerle DL'deki değerinin aynı olabilmesi için şunu yapmam lazım. XOR DH virgül DH diyeceğim ki, DX'in yüksek anlamlı kısmı sıfır olsun. DL'de de orijinal çarpma değerim var. Bu durumda artık DX'deki değerim benim, DL'deki değerimin eş değeri ve 16 bitlik hali olmuş oluyor. Bu durumda, bu noktaya geldikten sonra artık
+
+95
+00:21:02,675 --> 00:21:28,975
+AX ile DX'i çarpabilirim. Yapacağımız işlem, MUL, DX işlemi olmuş oluyor. Bu işlem sonucunda artık, DX, AX, 32 bitlik sanal yazmacına, AX'deki değer çarpı DX'deki değer veyahut da DH'ı sıfır olduğu için, DL'deki değerin çarpımını atamış oluyoruz. Deneme yapmak için de yine burada da,
+
+96
+00:21:29,811 --> 00:21:35,411
+DL'ye yazabileceğimiz en büyük değer olan 255'i yazarak sonucu test edelim.
+
+97
+00:21:37,191 --> 00:21:39,551
+Tekrar durdurup geniş açıyorum.
+
+98
+00:21:45,748 --> 00:21:49,868
+Şimdi değeri yükledik. Şuradan da çarpma işlemi sonuçlarımıza bakalım.
+
+99
+00:21:54,900 --> 00:22:20,420
+İlk değerimiz FE01 olacak. FE01 olacak. AX'de oluşması gerekiyor. Çarpma işlemini yaptıktan sonra FE01 değeri 16 bitlik olarak AX'de oluştu. Bir adım sonra bunu XOR DH yaparak, orijinal değerimizi bırakarak tekrar çarpma işlemi yaptığımızda da FD02FF değerini elde etmiş oluyoruz.
+
+100
+00:22:21,107 --> 00:22:24,987
+FD, 02, FF değerini elde etmiş oluyoruz. Bir soru var galiba.
+
+101
+00:22:28,248 --> 00:22:39,508
+Yani burada işaretsiz olarak kabul ettim. İşaretli olarak kabul edenlerinkini de çıkan sonuçları kontrol ettim. Ona göre aynı şekilde de çalışıyor zaten. Onlarda da sıkıntı yok.
+
+102
+00:22:39,508 --> 00:22:48,067
+Yani orada da işaretli sayı kabul etmişlerse IMUL kullanacaklar. Dolayısıyla ikisinde de IMUL kullanmışlarsa buna göre.
+
+103
+00:22:48,692 --> 00:22:52,371
+ilerlemiş olacağız. Tabi bu durumda DL'nin
+
+104
+00:22:52,371 --> 00:22:57,071
+DX'e büyütülmesinde veya genişletilmesinde
+
+105
+00:22:57,071 --> 00:23:00,911
+eğer işaretli sayı kullanıyorsak bu durumda işaretli
+
+106
+00:23:00,911 --> 00:23:04,311
+genişletme yapmamız gerekiyor. Ona dikkat edeceğiz tabi.
+
+107
+00:23:06,011 --> 00:23:09,091
+Yani şunu demek istiyorum. DL'deki değeri
+
+108
+00:23:09,091 --> 00:23:13,071
+işaretli sayı kaybol etmişsek en yüksek anlamlı bit yani
+
+109
+00:23:14,579 --> 00:23:33,119
+DL'nin en yüksek anlamlı biti 1 ise bu 8 bitik sayı negatif sayıdır. O zaman DH'ı uygun şekilde FF şeklinde yazmamız gerekiyor veya uygun şekilde aritmetik bir yapı mantıkta genişletmemiz, işaretini koruyarak genişletmemiz gerekiyor. Buna dikkat edeceğiz arkadaşlar.
+
+110
+00:23:34,179 --> 00:23:42,099
+Ama ben örneği işaretli sayı olarak yaptım. İşaretli sayı yapanlarda da ilgili değişiklikleri yapanları bu şekilde kontrol etmiş oldum.
+
+111
+00:23:42,740 --> 00:23:44,379
+Bu da ikinci örneğimizdi.
+
+112
+00:23:45,819 --> 00:23:48,019
+Şimdi üçüncü örnek için bakalım.
+
+113
+00:23:51,859 --> 00:23:55,319
+içerisinde kodlama barındıran örnekler için bunu söylüyorum.
+
+114
+00:24:00,564 --> 00:24:02,064
+Söyü hatırlayalım.
+
+115
+00:24:22,708 --> 00:24:27,088
+Bu da hatırlayacak olursanız random sayı üreticiliği ile ilgili soru.
+
+116
+00:24:28,148 --> 00:24:31,968
+Burada da dikkat etmemiz gereken nokta tanımlamalar sonrasında.
+
+117
+00:24:33,028 --> 00:24:37,208
+Bakın bir çarpma ve toplama işlemi var.
+
+118
+00:24:37,348 --> 00:24:38,928
+Daha sonrasında da mod işlemi var.
+
+119
+00:24:38,928 --> 00:24:46,248
+Dolayısıyla bahsettiğimiz sırada öncelikli olarak çarpma ve daha sonra bölmeyi yaparsak
+
+120
+00:24:47,700 --> 00:25:10,539
+orijinal değerler hazır bir şekilde oluşacaktır. Ondan yana hareketmemiz lazım. Birincisi, ilk seed değerini kod segmentin 23'ünden almamız gerekiyordu. Kod segmentin eksplisit olarak kullanılmasını gerektiriyor bir durum varsa bunu bu şekilde segment ismi yazıp iki nokta üst üste yazmamız gerekiyordu.
+
+121
+00:25:10,991 --> 00:25:19,731
+Bunun için cs2.üstüste de yazsanız olur. Veyahut da es'yi bu şekilde kod segment değerini es'ye atıp kullansanız da olur.
+
+122
+00:25:20,611 --> 00:25:24,111
+Daha sonrasında yapılacak ilk işlem bu seed değerimiz ax'de.
+
+123
+00:25:24,932 --> 00:25:28,851
+A sayısıyla çarpma yapmak, toplama yaparken
+
+124
+00:25:31,059 --> 00:25:58,539
+32 bite taşma olabilir. Bunu dikkate alarak toplama işlemini yapıyoruz. Daha sonrasında da bölme işlemi yapıyoruz. Ama çıkan sayı 16 bitlik bir random sayı oldu. Bunu nasıl değiştireceğiz? Bunun içinde farklı yollar var. İsterseniz düşük anlamlı 8 bite doğrudan alın. Yani en pratiği bu. İsterseniz 256'ya göre mod alın. 0 ile 255 arasında sayı oluşsun.
+
+125
+00:25:58,943 --> 00:26:23,803
+Bunlardan herhangi birisini kullanabilir olursunuz. Ama burada dikkat etmemiz gereken öncelikli olarak çarpma işlemi daha sonrasında da bölme işleminin yapılıyor olması gerekiyor. Onu da söylemiş olalım. Dolayısıyla bu örnekleri bu şekilde vermiş oldum. Şimdi arkadaşlar bu haftanın konusuyla ilgili olarak başlayacağız. Buraya kadar sormak istediğiniz bir şey var mı?
+
+126
+00:26:33,428 --> 00:26:37,108
+Şimdi bu haftanın örnekleri vardı. Bu örnekleri de
+
+127
+00:26:44,339 --> 00:26:49,000
+Yani burada bir tane random sayı üretmemiz yeterliydi.
+
+128
+00:26:51,939 --> 00:27:02,279
+Bir tane random sayı, yani ilk soruyla, adaşımın sorusu ile ilgili olarak, döngü halinde en adet sayı üretmenizi istemiyorduk.
+
+129
+00:27:02,779 --> 00:27:04,079
+Tekrar kontrol edeyim.
+
+130
+00:27:08,819 --> 00:27:11,299
+Özellikle en adet yazmıyordu herhalde.
+
+131
+00:27:14,359 --> 00:27:17,399
+Bir tane random sayı üretmemiz yeterliydi burada.
+
+132
+00:27:18,259 --> 00:27:20,319
+Birden fazla ürettiyseniz de sıkıntı yok.
+
+133
+00:27:20,939 --> 00:27:26,619
+Şimdi [öğrenci]'in sorusuyla ilgili olarak da çıkan değer 0.255 arasında olmayınca tekrar hesaplamak.
+
+134
+00:27:26,719 --> 00:27:28,259
+Evet, böyle de uygulamalar vardı.
+
+135
+00:27:29,259 --> 00:27:31,059
+Bunu da doğru kabul ettim.
+
+136
+00:27:43,380 --> 00:28:00,500
+Tamam, yani sıkıntı yok. Birden fazla bulsak da, yani senin neticede, senin yapmış olduğun işlem birden fazla random sayı üretmeye karşılık gelir. Bir random sayı dizisi üretmeye karşılık gelir. Koşul en az bir tane üretmekte. Dolayısıyla sıkıntı yok diye düşünüyorum.
+
+137
+00:28:07,188 --> 00:28:09,188
+Bu haftanın konusu ile ilgili devam edelim.
+
+138
+00:28:12,723 --> 00:28:19,223
+Daha önceki haftada arkadaşlar bütün ders konularını içeren bir şey paylaşmıştım, link paylaşmıştım.
+
+139
+00:28:19,824 --> 00:28:24,564
+Bir Google Drive linkiydi. Bu link içerisinde bu haftanın örneklerini de koydum.
+
+140
+00:28:24,564 --> 00:28:27,564
+Daha önce sadece bu haftanın...
+
+141
+00:28:27,564 --> 00:28:31,564
+Şöyle açalım.
+
+142
+00:28:32,884 --> 00:28:34,347
+Bu haftanın...
+
+143
+00:28:34,387 --> 00:28:45,147
+sunumu vardı. Bu haftanın örneklerini de aynı linke koydum. Oradan yine tekrar güncelleme yaparsanız, yeniden indirirseniz örneklere de erişebilirsiniz.
+
+144
+00:28:46,167 --> 00:29:01,567
+Dediğim gibi bu haftanın temel konusu yüksek seviyeli dillerle assembly bağlantısı. Bunu da özellikle Windows tarafında Visual Studio ve Built-in olarak gelen ilgili assembler aracını kullanarak bunu nasıl yapacağımızı göreceğiz.
+
+145
+00:29:01,983 --> 00:29:08,723
+Linux tarafında ise GCC ve NASM kullanarak bunu nasıl yapacağımızı göreceğiz.
+
+146
+00:29:09,584 --> 00:29:17,604
+Şimdi yüksek seviyeli dillerle ilgili olarak iki farklı yaklaşım var. Bu Linux ve Windows tarafında ortak bir şey.
+
+147
+00:29:19,324 --> 00:29:22,683
+Birincisi inline olarak assembly kodları yazılabiliyor.
+
+148
+00:29:23,220 --> 00:29:40,059
+İkincisi ise bir assembly dosyasında derlemiş olduğumuz assembly dosyasında bir fonksiyonumuz var. Bu assembly dosyasını derledikten sonra elde etmiş olduğumuz bir obje dosyası var. Bu obje dosyasını C koduyla birlikte linkleyerek
+
+149
+00:29:40,432 --> 00:30:04,971
+iki farklı obje dosyasını birlikte linkleyerek elde ettiğimiz bir sonuç var. Bu da doğrudan ayrı bir dosyamız var. Assembly dosyası, kod orada yazılı fonksiyon orada var. Oradaki fonksiyon çağırma şeklinde yani neticede iki farklı yapıyı böyle tanımlamış oluyoruz. İlki inline assembly, ikincisi assembly function call şeklinde ifade edebileceğimiz iki durum söz konusu olmuş oluyor.
+
+150
+00:30:10,483 --> 00:30:30,483
+Bunun iki yönü de söz konusu olabilir. Yani burada yüksek seviyeli dillerle assembly arasında iletişim kurarken C tarafında bir assembly fonksiyonunu da çağırabilirim. Veyahut da assembly tarafında bir C fonksiyonunu da çağırabilirim. Bu ikisi de geçerli durumlar. Ama biz burada...
+
+151
+00:30:31,104 --> 00:30:36,344
+Şuna bakacağız. Yüksek seviyeli dilden SMD yordamının çağrılmasına bakıyor olacağız.
+
+152
+00:30:36,944 --> 00:30:44,344
+Şimdi bununla ilgili olarak öncelikli olarak bu Visual Studio tarafında ilgili ortam nasıl oluşturulur?
+
+153
+00:30:44,344 --> 00:30:51,663
+Onunla ilgili bir küçük anlatım var. Bunları YouTube'da videolar şeklinde de tanımlamışlar insanlar.
+
+154
+00:30:51,824 --> 00:30:57,344
+Oradan da bakabilirsiniz. Ben şimdi kısaca birkaç adımdan bahsedeceğim. Bunlardan ilki arkadaşlar.
+
+155
+00:30:58,256 --> 00:31:03,176
+Visual Studio'da boş bir proje oluşturuyorsunuz.
+
+156
+00:31:04,355 --> 00:31:07,855
+Gördüğünüz gibi boş bir proje seçerek başlıyorsunuz.
+
+157
+00:31:08,396 --> 00:31:11,096
+Daha sonra bu proje oluşturduktan sonra
+
+158
+00:31:11,096 --> 00:31:17,296
+Source File kısmında ekle diyerek yeni bir öğe ekliyorsunuz.
+
+159
+00:31:19,296 --> 00:31:21,615
+Bu eklediğiniz öğenin
+
+160
+00:31:33,044 --> 00:31:43,443
+Daha sonrasında da bu eklediğiniz ö'ye header dosyası olacak şekilde seçiyorsunuz. Fakat uzantısını asm olarak veriyorsunuz. Tamam mı?
+
+161
+00:31:44,344 --> 00:31:49,544
+Header dosyası ekliyorsunuz ama uzantısını asm olarak veriyorsunuz.
+
+162
+00:31:49,855 --> 00:31:56,916
+Daha sonrasında ise .asm uzantılı dosyalar için özel bir derleme kuralı tanımlayacağız.
+
+163
+00:31:57,496 --> 00:32:10,256
+Bunu yaparken de IDE'de özellikler menüsü üzerinden hareket edip buradan genel tabu altında öğe türüne bir ekleme yapacağız.
+
+164
+00:32:10,256 --> 00:32:15,296
+Onu da şöyle göstereyim. Tekrar yollarını tanımlayalım.
+
+165
+00:32:16,019 --> 00:32:39,627
+IDE üzerinde özellikler kısmından, genel menüsü üzerinden öğe türünde özel derleme aracını seçiyoruz. Şuraya geliyoruz. Genel bölümünden öğe tipinde custom build tool'u seçiyoruz. Bunu seçtikten sonra bizim için custom build
+
+166
+00:32:39,859 --> 00:32:49,859
+Tool için ayrı bir ekleme yapıyor. Bu eklemede ise, Command Line ve Output tarafları özellikle bizim için önemli.
+
+167
+00:32:49,859 --> 00:33:02,859
+Buradaki değişiklikleri yapmamız lazım. Burada vermiş olduğumuz Command Line aslında komutu şuna karşılık geliyor. Visual Studio ile birlikte gelen Build-in Assembler'ı
+
+168
+00:33:03,183 --> 00:33:15,624
+bu ASM uzantılı dosyaları derlemek için kullanacağımızı ve hangi flaglerle birlikte bu derleme işlemini, assembly işlemini gerçekleştireceğimizi belirtmiş oluyoruz.
+
+169
+00:33:16,343 --> 00:33:27,963
+ml, boşluk, slash, c, boşluk, slash, c, x, boşluk, slash, c, off, daha sonrasında da full pet olarak bunu
+
+170
+00:33:28,468 --> 00:33:35,307
+tanımlıyoruz. Karakterleri dikkat edin, çift tırnak, yüzde ve full pet şeklinde tanımlıyoruz.
+
+171
+00:33:35,468 --> 00:33:38,248
+Description kısmı çok önemli değil aslında.
+
+172
+00:33:39,947 --> 00:33:42,627
+Assembly işlemi yapılacağına ilişkin bir açıklama.
+
+173
+00:33:43,048 --> 00:33:51,528
+Çıktığı olarak da dosya ismi .obj tipinde bir dosya oluşacağını buradan belirtmiş oluyoruz.
+
+174
+00:33:52,500 --> 00:34:02,240
+Bu hazırlıkları yaptıktan sonra artık derleme noktasında SM dosyalarında derleme noktasında bir altyapı oluşturmuş oluyoruz.
+
+175
+00:34:02,380 --> 00:34:07,260
+Şimdi bu noktada size örnek olarak da verdiğim bu hangisiymiş bu arada? Şuna bir bakayım.
+
+176
+00:34:09,860 --> 00:34:11,159
+İnline olanmış.
+
+177
+00:34:12,440 --> 00:34:14,400
+Şu komutu kaldıralım.
+
+178
+00:34:14,619 --> 00:34:19,480
+Size vermiş olduğumuz örnek projelerden bir tanesi arkadaşlar. Hatta şöyle göstereyim.
+
+179
+00:34:28,724 --> 00:34:34,043
+örneklerden bir tanesi şu inline projesi. Bu inline'da solution'ı açıyoruz.
+
+180
+00:34:36,984 --> 00:34:39,024
+Kodu bir inceleyelim şimdi.
+
+181
+00:34:40,624 --> 00:34:44,204
+Şimdi kod tarafına baktığımız zaman şuradan kaynaklarımıza da bakalım.
+
+182
+00:34:45,584 --> 00:34:51,423
+Bir tane source.c isimli C dosyası olduğunu görüyoruz.
+
+183
+00:34:51,884 --> 00:34:54,864
+Bu C dosyasının içerisinde bir main fonksiyon var.
+
+184
+00:34:55,284 --> 00:35:21,224
+ana giriş noktası bir de şurada gördüğünüz üzere inline assembly bloğu var. Tek bir dosya içerisinde inline assembly ile birlikte C içerisinde assembly'nin inline olarak kullanımını görüyoruz. Burada inline assembly bloğunu oluşturduğumuz veya tanımladığımız kısma bakacak olursanız arkadaşlar underscore underscore ASM ile başlayan
+
+185
+00:35:21,536 --> 00:35:40,275
+curly brace'lerle başlangıcı sonu işaretlenmiş olan bir blok var. Tamam, buraya dikkat ediyorsunuz. Underscore, underscore. Şöyle de göstermiş olayım. Burada iki tane underscore var. Tamam mı? Özellikle bu şekilde tanımlanması gerekiyor. Buradaki işlemi şöyle ele alalım.
+
+186
+00:35:44,052 --> 00:35:49,052
+n sayısını 10 olarak belirtmişiz burada sabit bir değer, constant değer olarak belirlemişiz.
+
+187
+00:35:49,752 --> 00:35:53,112
+C tarafında 10 elemanlı bir dizi tanımlıyoruz.
+
+188
+00:35:53,292 --> 00:35:57,012
+Bu dizinin her bir elemanı birden 10'a kadar giden değerler.
+
+189
+00:35:57,652 --> 00:36:05,471
+Yani dizinin elemanları birden 10'a kadar gidiyor ve bu dizinin her bir elemanını atadıktan sonra ekrana yazdırıyoruz.
+
+190
+00:36:05,632 --> 00:36:06,952
+Yan yana yazdırıyoruz bunları.
+
+191
+00:36:07,072 --> 00:36:09,092
+Aralarında boşluk ve virgül olacak şekilde.
+
+192
+00:36:09,092 --> 00:36:11,311
+Ve bunları yazdırırken
+
+193
+00:36:11,731 --> 00:36:25,192
+ne olarak yazdırıyoruz? Bakın arkadaşlar, 8 tane HEX değer olarak yazdırıyoruz. Buradaki amaç ne olabilir? Neye karşılık gelmiş olabilir? Fikri olan var mı? Niye 8 tane HEX basamak yazdırdık burada?
+
+194
+00:36:32,596 --> 00:36:33,935
+neyi görmek istiyoruz?
+
+195
+00:36:39,155 --> 00:37:00,275
+Şimdi burada C tarafındaki değişkenle ilişkilendirsek daha iyi olur aslında. Dizimiz bir integer dizisi. Dolayısıyla burada şunu görmemiz lazım bizim. Size of int neye karşılık geliyor bunu bilmemiz lazım. Yani doğrudan bununla alakalı aslında bir int dizisi olduğu için.
+
+196
+00:37:12,788 --> 00:37:16,007
+Şu haliyle bir bakalım. Şuraya da bir breakpoint atalım.
+
+197
+00:37:29,043 --> 00:37:31,283
+size of int değeri 4.
+
+198
+00:37:42,164 --> 00:37:43,764
+bir şeye bakıyorum.
+
+199
+00:38:10,516 --> 00:38:12,516
+Tamam, aynı hesaba geliyor zaten.
+
+200
+00:38:12,516 --> 00:38:22,516
+4 byte yer kaplıyor. Her bir byte'ımız bizim 8 bit olduğuna göre 32 bitlik bir değer elde etmiş oluyoruz.
+
+201
+00:38:22,516 --> 00:38:28,516
+Hex basamaklara baktığımız zaman her bir hex basamak 4 bitten oluşuyor.
+
+202
+00:38:28,516 --> 00:38:34,516
+Biz 8 tane hex basamak yazdırdığımızda da yine 32 bitlik bir değere karşılık gelmiş oluyor.
+
+203
+00:38:37,679 --> 00:38:50,679
+veya 8 tane hex basamak karşılığını bu şekilde ele alabiliriz. Bizim dizimizin tanımı integer tipinde. Dolayısıyla bu integer'in size'ına baktığımız zaman burada tabi bunu sizde...
+
+204
+00:38:52,340 --> 00:39:02,340
+alışık olunduğu durumda, örneğin Windows tarafında veya Visual Studio kullanırken, 64 bit veya 32 bit derleme yaparken alışık olduğunuz şekliyle
+
+205
+00:39:02,340 --> 00:39:13,699
+integer'ın size'ı sabit olabilir. Ama farklı bir platforma geçtiğiniz zaman, o veyahut da orada tanımlı olan compiler'daki integer size'ını kontrol ederek,
+
+206
+00:39:17,427 --> 00:39:38,707
+bunu dikkat alarak işlem yapmakta fayda var. Bizim için şu anda kullanmış olduğumuz, tanımlamış olduğumuz integer'ın boyutu 4 byte'dan oluşuyor. Dolayısıyla 4 byte toplamda 32 bit yapar. Biz bunları gösterirken bu 32 biti 8 tane hex basamak olarak göstermek istediğimiz için bu şekilde yazdırmış durumdayız.
+
+207
+00:39:42,675 --> 00:40:06,635
+Daha sonra arada bir assembly bloğu var. Assembly bloğundan sonra da dizinin tekrar yazdırılması söz konusu. Dolayısıyla bu assembly bloğu içerisinde bir işlem yapacağız. Yapacağımız işlem bu dizinin her bir elemanın, dizinin her bir gözünü bit bazında ters çevirmek. Tamam mı? Her bir gözünü bit bazında ters çevirmek istiyoruz. Bunun için ne yapabiliriz?
+
+208
+00:40:07,059 --> 00:40:10,239
+Bunu inline assembly ile gerçekleştirmeye çalışmışız.
+
+209
+00:40:10,659 --> 00:40:13,799
+Şimdi biraz biz kendimiz düşünmeye çalışalım burada.
+
+210
+00:40:15,519 --> 00:40:18,179
+32 bitlik değeri ters çevirmek istiyoruz.
+
+211
+00:40:19,699 --> 00:40:22,659
+Bunu da dizinin kaç tane elemanı var?
+
+212
+00:40:22,799 --> 00:40:23,839
+10 tane elemanı var.
+
+213
+00:40:24,000 --> 00:40:30,119
+10 tane eleman için her bir elemanı kendi içerisinde ters çevirerek yani bit sırası buyken.
+
+214
+00:40:30,527 --> 00:40:54,167
+bu şekilde olacak, ters çevrilecek. Yani en düşük anlamlı bit, en yüksek anlamlı bite. Sıradaki bit tam ayna görüntüsü şeklinde karşı taraftaki yüksek anlamlı ve düşük anlamlı bitler arasında yer değiştirme yaparak ters çevirme sağlanmak isteniyor ve bunu 10 tane eleman içinde gerçeklemek istiyoruz. Bu durumda ne yapabiliriz? Şunu yapabiliriz belki.
+
+215
+00:41:00,083 --> 00:41:02,243
+Elimizde iki tane değer var.
+
+216
+00:41:03,603 --> 00:41:05,263
+Bu bizim orijinal değerimiz.
+
+217
+00:41:05,423 --> 00:41:06,983
+Buradaki değerlerimiz mesela,
+
+218
+00:41:07,923 --> 00:41:09,463
+şöyle yapalım,
+
+219
+00:41:10,603 --> 00:41:12,243
+işte 0010
+
+220
+00:41:12,243 --> 00:41:15,983
+nokta nokta nokta nokta gidiyor.
+
+221
+00:41:17,983 --> 00:41:20,623
+Nereye kadar gitmesi lazım? Şuraya kadar gitmesi lazım.
+
+222
+00:41:22,203 --> 00:41:24,763
+011 şeklinde bir dizi gibi gelsin bu.
+
+223
+00:41:25,172 --> 00:41:28,251
+Bunu ters çevirmek için yapacağımız işlem ne olabilir?
+
+224
+00:41:29,852 --> 00:41:40,112
+32 tane bit olduğu için buradan bir tane biti alıp başka bir yazmaca sağ taraftan öteleyerek almak olabilir.
+
+225
+00:41:40,112 --> 00:41:49,972
+Yani buradaki orijinal değerimizi sağa doğru öteleyip, keriye düşürüp her bir biti şöyle, şu da bizim keri bitimiz olsun.
+
+226
+00:41:52,563 --> 00:42:13,843
+En düşük anlamlı bitten itibaren bunu öteleyerek, keri bite düşürüp, keri bitten de başka bir yazmaca sağdan beslemek. Dolayısıyla orijinal değeri sağa doğru ötelerken yardımcı yazmacı ise sola doğru ötelememiz gerekecek.
+
+227
+00:42:14,143 --> 00:42:39,463
+Bu işlemi 32 bit için tek tek yaptığımız vakit orijinal değer yardımcı yazmaçta ters sırada üretilmiş olacak. Yani işlemi 32 defa yürüttüğümüzde 110...0100 şeklinde dönüşmüş, değişmiş değeri, 32 bitlik değeri elde etmiş olacağız. Bu yapabileceğimiz işlerden birisi.
+
+228
+00:42:41,427 --> 00:42:43,947
+Bununla ilgili olarak kod parçamıza bakalım.
+
+229
+00:42:45,647 --> 00:42:47,647
+Bir kere 10 eleman için döneceğiz.
+
+230
+00:42:48,127 --> 00:42:51,748
+Dolayısıyla CX'e N atardık.
+
+231
+00:42:51,827 --> 00:42:54,947
+Normalde 16 bitlik assembly de CX'e N atardık.
+
+232
+00:42:55,087 --> 00:43:02,547
+Fakat artık biz burada kullandığımız yapı itibariyle 32 bitlik assembly kullanacağımızı söylüyoruz.
+
+233
+00:43:02,647 --> 00:43:04,288
+32 bitlik assembly kullanacağız.
+
+234
+00:43:04,719 --> 00:43:13,039
+Dolayısıyla mutlaka ve mutlaka burada derleme kuralını x64 için değil x86 için seçmemiz gerekiyor.
+
+235
+00:43:13,900 --> 00:43:14,900
+Neden dolayı bu şekilde?
+
+236
+00:43:15,079 --> 00:43:27,639
+Yazmış olduğumuz kodla köşeli parantez içerisine vermiş olduğumuz dolaylı yazmaç ile adreslemede kullanıldığımız değer ekstra esi yazmacı.
+
+237
+00:43:28,724 --> 00:43:37,443
+Eğer ki 64 bitlik bir derleme yapmak istiyorsak, içerideki yazmaç kullanabileceğimiz yazmaç RSI olacaktı.
+
+238
+00:43:37,443 --> 00:43:52,864
+Şimdi 32 bitlik derleme yaparken, dolaylı adreslemelerde Extra Source Index, Extra Destination Index ve Extra EBX yazmacı, bu üçü kullanılabilir.
+
+239
+00:43:53,907 --> 00:44:00,987
+Dolayısıyla 16 bitten farklı olarak mutlaka 32 bit karşılıklarını vermemiz gerekiyor. Buna dikkat edeceğiz.
+
+240
+00:44:01,568 --> 00:44:06,547
+Ve kullanacağımız yazmaçlar, eriştiğimiz mesela bu eleman ile eriştiğimiz değer ne olacak?
+
+241
+00:44:06,708 --> 00:44:12,047
+Bakın bu bir dizi tanımlaması. Eriştiğimiz değer yine 4 byte'lık bir değer.
+
+242
+00:44:12,188 --> 00:44:17,128
+4 byte'lık bir değeri ben MOV ettiğim zaman nasıl bir yazmacı almam lazım?
+
+243
+00:44:17,128 --> 00:44:20,940
+32 bitlik bir yazmacı almam lazım. Yani dizi...
+
+244
+00:44:21,652 --> 00:44:31,711
+değişkenimiz veya dizi tanımlamamız aslında bizim 32 bitlik bir değerimiz. Dolayısıyla bunun 32 bitlik bir yazmacı aktarılması lazım.
+
+245
+00:44:31,831 --> 00:44:39,472
+32 bitlik yazmacımız da EAX yazmacı. Yine döngülerde arkadaşlar ECX üzerinden döngü yapılıyor.
+
+246
+00:44:39,472 --> 00:44:48,092
+Dikkat etmemiz gereken 32 bitlik değerleme yaparken. Dolayısıyla döngüler ECX üzerinden dönecek. Buna da dikkat etmemiz lazım.
+
+247
+00:44:48,980 --> 00:45:15,159
+Şimdi ne yapıyoruz ilk olarak? 10 eleman için işlem yapacaktık. Bunun için E, C, X'e n değerini atadık. n değerimiz bizim 10. Daha sonrasında da şu büyük loop'a bakalım. Büyük loop'umuz L2. Loop L2. Burada 10 eleman için dönüyoruz. Her eleman için ne yapacağız? Her eleman için az önce çizmiştik. Her bir dizinin gözü için 32 defa
+
+248
+00:45:18,260 --> 00:45:41,440
+Şimdi burada C kodu olduğu için biz şu anda inline assembly kullanıyoruz. Ama C'nin kendi içerisinde de yani şu main'dan dolayı gelen tanımlardan dolayı bunun kendi içerisinde stack tanımı var. Biraz sonra disassembly kısmından bakarız. Görüyor olmamız lazım. Oradan kontrol ederiz ama bu stack ve ilgili kısımlar C tanımından dolayı otomatik olarak gelecek.
+
+249
+00:45:44,403 --> 00:45:48,544
+Evet, her bir eleman için, dizinin her bir elemanı için 32 gere
+
+250
+00:45:48,544 --> 00:45:55,244
+orijinal değeri sağ öteleyecektik. Bir tane de yardımcı yazmaçta
+
+251
+00:45:55,244 --> 00:46:00,064
+her bir sağ ötelemeye karşılık bir tane sola öteleme yapmamız gerekiyordu.
+
+252
+00:46:00,964 --> 00:46:02,204
+Şimdi bunu nasıl yapmışız?
+
+253
+00:46:02,564 --> 00:46:06,864
+Orijinal değerimiz EAX'te, yardımcı yazmacımız EBX'te
+
+254
+00:46:06,864 --> 00:46:10,044
+32 defa döngü yapacağız burada.
+
+255
+00:46:10,044 --> 00:46:12,044
+Bu döngüyü yapabilmek için
+
+256
+00:46:12,436 --> 00:46:13,036
+yine
+
+257
+00:46:13,036 --> 00:46:22,256
+32 defa döngü, CX, bir başka iç loopumuz var. Bu loopta bu işlemi yapabilmek için yine ECX'e ihtiyacımız var.
+
+258
+00:46:22,416 --> 00:46:29,336
+Dolayısıyla ECX'i bozmamak için, üst döngünün, dizi, gözleri üzerindeki döngünün, CX'lerini bozmamak için
+
+259
+00:46:30,036 --> 00:46:44,235
+iç döngüde başlamadan önce CX'i pushluyoruz, E, CX'i pushluyoruz. Bir sonraki L2 loopu için E, CX'in orijinal değerini geri çekiyoruz. Dolayısıyla push ve pop işlemi var.
+
+260
+00:46:45,516 --> 00:46:53,615
+Orijinal 10 elemanlı dizinin her bir gözünü taradığımız iterasyon için kullandığımız E, CX değerini bozmamak için push ve pop işlemi yaptık.
+
+261
+00:46:54,132 --> 00:47:13,072
+Şu tekrar iç döngüye gelelim. 32 defa yapacağımız bir işlem. Her seferinde EAX'i bir kere sağa öteliyoruz. İlk sağa ötelemede en düşük anlamlı bit carry'e geldi. Daha sonra rotate carry left EBX1 dedik. Bu sefer carry de dahil olmak üzere
+
+262
+00:47:13,536 --> 00:47:40,956
+EBX yazmacıyla toplamda 33 bitlik bir işlem yapmış oldu. Bu 33 bitlik sanal yazmaç üzerinde bir kere sola doğru döndürme işlemi yaptı. İşlem sonucunda AX'den çıkan en düşük anlamlı bit EBX'in en düşük anlamlı bitine yüklendi. Bir sonraki döngüde EAX'in sıradaki en düşük anlamlı biti alınıp yine sağdan EBX'e besleniyor.
+
+263
+00:47:41,407 --> 00:47:58,127
+Az önce anlattığım gibi bu işlem sonucunda 32 kere bu işlemi yürüttüğümüz durum itibariyle EAX'deki orijinal değerin bit sırası ters çevrilmiş hali EBX'de oluşur. EBX'deki değeri dizinin ilgili sırasındaki gözüne atıyoruz.
+
+264
+00:47:58,771 --> 00:48:13,572
+E, C, I'yi 4 arttırıyoruz. Neden 4 arttırıyoruz? Çünkü az önce gördük, size of int'den baktık. Bu 4 byte'lık yer kaplıyormuş. Dizinin bir sonraki elemanı 4 byte offset ötede. Dolayısıyla bunu da 4 byte offset öteye atadık.
+
+265
+00:48:13,871 --> 00:48:41,871
+dizi elemanları üzerindeki döngü için ECX'i orijinal değerini yığından çektik ve loop'u döndük. Burada bakacak olursanız, dolaylı adresleme dizi adresi artı ESI olarak ilerliyor. O zaman ESI'yi de bu loop'a girmeden önce sıfırlamamız gerekiyor. O işlemi de XOR ESI, ESI işlemiyle gerçekleştirmiş oluyoruz. Bu işlem sonucunda artık her bir gözün, her bir dizi gözün...
+
+266
+00:48:41,871 --> 00:49:00,592
+ters çevrilmiş hali aynı sırada göze geri yazıldı. Elde etmiş olduğumuz yeni diziyi de tekrar komut satırında yazdırıyoruz. Dediğim gibi burada 32 bitlik bir assembly yazdığımız için bunun x86 olarak seçilmesi gerekiyor. Şimdi çalıştırılmasına bir bakalım.
+
+267
+00:49:04,192 --> 00:49:06,991
+Çalıştırma sonucunda elde ettiğimiz değerler bunlar.
+
+268
+00:49:07,764 --> 00:49:16,844
+orijinal dizimiz 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 değerlerine sahipti. Burada bit bazında döndürme işlemi yaptığımızda ne oluyor bakalım şimdi.
+
+269
+00:49:18,043 --> 00:49:27,844
+Aslında yani basit bir şey tekrar etmeye gerek yok. Görmüş olalım. Şimdi ilk orijinal dizimize baktığımız zaman bu değer 0, 0, 0 diye bütün bitler geliyor.
+
+270
+00:49:28,788 --> 00:49:42,108
+sadece en düşük anlamlı bitimiz bir. Bunu biz ters çevirdiğimizde bu neye dönüşecek? Bir en yüksek anlamlı bite gelecek. 00.000 değerine sahip olacak.
+
+271
+00:49:42,579 --> 00:50:05,759
+Burada 31 tane sıfır var, 1 tane 1 var. Bunları 4'er bit, 4'er bit böldüğümüzde en yüksek değer olarak 1, 0, 0, 0 var. Bu hegzadesimal olarak 8'e karşılık geliyor. 8, diğer bütün bitler 0 olduğu için toplamda da 28 tane daha 0 var. Her birinden de 0 gelecek. 7 tane daha 0 hegzadesimal olarak yazıyoruz.
+
+272
+00:50:10,771 --> 00:50:21,271
+Şöyle olduğu için karşılık gelen ters çevirme işlemi bu. İlk yüksek anlamlı 4 bit'e baktığımızda bu değer 4'e karşılık geliyor. Diğer bütün bitler 0.
+
+273
+00:50:21,831 --> 00:50:26,071
+Nokta nokta nokta bütün işlemler için bunları tanımlayabiliriz. En son A için de görelim.
+
+274
+00:50:26,851 --> 00:50:33,271
+A değerini yazdığımızda 1, 0, 1, 0 şeklinde sonlanır. Biz bunu ters çevirdiğimizde ise
+
+275
+00:50:33,780 --> 00:50:41,340
+bu şekli alacaktır. En yüksek anlamlı 4 biti hex olarak okuduğumuzda 5'e karşılık geliyor. Geri kalan bütün bitler 0.
+
+276
+00:50:41,860 --> 00:50:51,400
+5, 0, 0, 0, 0, 0 hex olarak sonucu elde etmiş oluyoruz. Burada istediğimiz değeri elde etmiş olduğumuzu görüyoruz.
+
+277
+00:50:51,400 --> 00:51:01,160
+Şimdi burada fonksiyonun girişinde örneğin şurada bir breakpoint koyup bunu debug modunda
+
+278
+00:51:01,940 --> 00:51:24,280
+başlattığımız vakit, fonksiyona girer girmez bir breakpointte durduk. Bu aşamada arkadaşlar, debug penceresi üzerinden, Windows menüsü üzerinden, disassembly'e bakacak olursak, burada kod kısmına ilişkin olarak,
+
+279
+00:51:24,692 --> 00:51:50,891
+disesamli edilmiş halini görüyoruz. Bakın, mesela burada main fonksiyonun başlangıcıyla birlikte yapılan bir takım işlemler var. Bunları görüyoruz. İşte print işlemlerine falan gelen kısmı neyle ilgili bunlar? Genel tanımlarla ilgili kısımlar bunlar. İşletim sistemine dönüş değerlerini falan da içeriyor. Daha sonra tanımlamalar var.
+
+280
+00:51:52,820 --> 00:51:56,500
+İlgili print fonksiyonunun nasıl çağrıldığını burada görüyorsunuz.
+
+281
+00:51:57,400 --> 00:52:02,780
+Bakın burada assembly'den bir tane C fonksiyonu, printf fonksiyonu çağrılmış durumda.
+
+282
+00:52:03,560 --> 00:52:06,700
+Bununla ilgili olarak parametreler aktarılmış.
+
+283
+00:52:07,920 --> 00:52:17,620
+Bir döngü yaparken, birden n'e kadar döngü yaparken, burada hangi karşılaştırmaları yapıyor, yine dis assembly kısmında bunları görüyorsunuz.
+
+284
+00:52:17,680 --> 00:52:19,460
+Hatta bunları böyle adım adım.
+
+285
+00:52:19,923 --> 00:52:21,923
+yürütmek de mümkün.
+
+286
+00:52:24,923 --> 00:52:27,923
+F11 ile ilerliyormuş. İşte F11 ile
+
+287
+00:52:27,923 --> 00:52:32,923
+adım adım SM'li seviyesinde bunları yürüterek her bir adımda
+
+288
+00:52:36,923 --> 00:52:39,923
+neler istiyor veya neler yapıyor onları görmüş oluyoruz.
+
+289
+00:52:39,923 --> 00:52:43,923
+Tabii şu anda ekrana yazdırma ile ilgili kısma gittiği için
+
+290
+00:52:44,923 --> 00:52:46,923
+işte bazen
+
+291
+00:52:47,251 --> 00:52:57,739
+şöyle yapsak daha iyi olabilir. Mesela for döngüsüne kadar bir breakpoint dağıtıp continue deyip burayı geçip
+
+292
+00:53:00,947 --> 00:53:07,947
+Daha sonra yine adım adım devam etmek mümkün. Yine assembly kısmına baktığımız zaman assembly kısmında
+
+293
+00:53:10,148 --> 00:53:16,447
+inline assembly yazmış olmamıza karşın bazı durumlarda bunları biraz daha değiştirdiğini görüyoruz.
+
+294
+00:53:16,628 --> 00:53:36,568
+Tabi burada ta senenin başında göstermiş olduğum bir tane online compiler tool'u vardı. Orada istediğiniz compiler optimizasyon araçlarını veya flaglerini açarak elde ettiğiniz derleme sonuçları nasıl değişiyor onları inceleyebilirdiniz. Aynı tool'u yine öneririm.
+
+295
+00:53:39,347 --> 00:54:03,948
+normalde compiler tarafının optimizasyonunu düşündüğümüzde eksplisit olarak bizim bildiğimiz, kontrol ettiğimiz bir optimizasyon adımı yoksa, çok genel olarak söylüyorum bunu, ne yaptığımızı çok net bir şekilde bilmiyorsak, yazmış olduğumuz assembly kodu tarafı aslında compiler'ın CY'ye yazıp bunu uygun şekilde compiler optimizasyonlarını açtığımız durumdan daha düşük performansta kalabilir.
+
+296
+00:54:04,436 --> 00:54:15,956
+Ama biz harici olarak ve net bir şekilde ne yaptığımızı biliyorsak ve bunun farkındaysak SM'li tarafında, işte o zaman daha hızlı bir çalışma süresi elde etmemiz mümkün olabiliyor.
+
+297
+00:54:17,236 --> 00:54:21,155
+Bu özellikle hani bu list SM'li kısmına falan girmek gerekir mi?
+
+298
+00:54:21,936 --> 00:54:30,376
+Çok özel bir fonksiyonlar varsa, yani optimizasyon kısmını, compiler optimizasyon kısmını iyi bir şekilde kullandığımızı varsayalım.
+
+299
+00:54:30,867 --> 00:54:39,927
+ve yine de buna rağmen çok özel bir takım fonksiyonlar varsa ve burada yüksek performans istiyorsak, işte bu durumlarda yine dis assembly edip,
+
+300
+00:54:40,467 --> 00:54:48,947
+compiler'ın üretmiş olduğu assembly kodunu inceleyip, burada bizim harici olarak katkı yapabileceğimiz, fayda sağlayabileceğimiz, işleri hızlandırabileceğimiz,
+
+301
+00:54:49,047 --> 00:54:55,587
+gereksiz işlemleri giderebileceğimiz bir takım durumlar varsa bunları devreye alabiliriz.
+
+302
+00:54:55,587 --> 00:54:57,847
+Yine aynı zamanda şunu da söylemem gerekir.
+
+303
+00:54:58,452 --> 00:55:24,292
+Mesela biz şimdi debug aşamasında derledik ya, bunu debug değil de release olarak derlesek ve adım adım kontrol etmeye çalışsak, elde edeceğimiz lisesem sonucu farklı oluyor. Bunda hani debug tarafında farklı bir optimizasyon var, diğer tarafta farklı bir optimizasyon var. Bakın, örneğin main tanımından sonra oluşan kod kısmı farklılaştı.
+
+304
+00:55:24,916 --> 00:55:29,376
+Bunlar da farklı seviyelerdeki optimizasyonlar olarak aslında karşımıza çıkıyor.
+
+305
+00:55:31,636 --> 00:55:33,896
+Bu şekilde incelemek mümkün.
+
+306
+00:55:34,376 --> 00:55:35,756
+Onu da söylemiş olayım.
+
+307
+00:55:35,996 --> 00:55:37,516
+Ve hızlandırma imkanı var.
+
+308
+00:55:38,156 --> 00:55:42,296
+Ama özel olarak ne yaptığımızı biliyorsak bu anlam kazanmış oluyor.
+
+309
+00:55:43,076 --> 00:55:48,316
+Şimdi burada threadli bir yapı olduğu için şey kısmına bakıyorum doğrudan onu görebiliyor muyuz diye.
+
+310
+00:55:48,936 --> 00:55:52,236
+Şu anda farklı kod kısımlarına gittik herhalde.
+
+311
+00:55:52,788 --> 00:55:55,948
+Tabi yukarıda include, yani burada şunu da görüyorsunuz, bakın.
+
+312
+00:55:56,688 --> 00:55:57,628
+Kod kısmımız nerede?
+
+313
+00:55:58,188 --> 00:56:01,068
+Kod kısmında include ettiğimiz satırlar vardı değil mi?
+
+314
+00:56:01,128 --> 00:56:04,728
+Bu satırlara karşılık olarak, onu çalıştırdık oradan.
+
+315
+00:56:08,755 --> 00:56:13,615
+kod kısmında include ettiğimiz kısımlar vardı. Bakın bu include ettiğimiz kısımların hepsi buralarda
+
+316
+00:56:16,556 --> 00:56:20,275
+eklenmiş durumda. Bunları görüyoruz.
+
+317
+00:56:28,692 --> 00:56:38,932
+Buradan yine yığın ve ilgili yazmaçlara bakabiliriz. Onları da görelim. Şurada yazmaç değerlerimiz var. Yazmaç değerlerine de bakabiliyoruz.
+
+318
+00:56:40,692 --> 00:56:42,692
+Şimdi burada...
+
+319
+00:56:47,284 --> 00:57:00,444
+Real Mod olmadığı için, tablolar üzerinden bir takım sanal korumalı modlar çalıştığı için, tam adresler fiziki adreslere denk gelmiyor. Onu söylemek lazım.
+
+320
+00:57:02,684 --> 00:57:04,504
+Başka neye bakabiliriz buradan?
+
+321
+00:57:14,195 --> 00:57:18,355
+Hani stack ile ilgili olarak tam nasıl bakacağız onu kontrol ediyorum.
+
+322
+00:57:27,059 --> 00:57:29,299
+Şöyle bir şey olabilir mi? Bir bakalım.
+
+323
+00:57:31,299 --> 00:57:34,419
+Memory alanı açalım. Bu memory alanını da
+
+324
+00:57:39,092 --> 00:57:45,391
+Tamam, stack segmentlerini bilmediğimiz için, tabii doğrudan oraya erişemiyoruz.
+
+325
+00:57:47,391 --> 00:57:55,391
+Stack tanımının içeriğini doğrudan buradan nasıl göreceğiz onunla ilgili net bir fikrim yok aslında.
+
+326
+00:57:56,391 --> 00:57:58,347
+Şu kısım olabilir.
+
+327
+00:58:10,579 --> 00:58:14,119
+stack kısmıyla ilgili doğrudan nasıl erişeceğiz onu tam bilmiyorum ama.
+
+328
+00:58:15,579 --> 00:58:19,059
+Genel olarak bu yapıyı bu şekilde ifade edebilirim.
+
+329
+00:58:20,179 --> 00:58:21,219
+Durduralım şöyle.
+
+330
+00:58:22,260 --> 00:58:24,280
+Dolayısıyla ilk göreceğimiz yapı buydu.
+
+331
+00:58:24,400 --> 00:58:26,019
+İlk göreceğimiz yapı da arkadaşlar.
+
+332
+00:58:29,139 --> 00:58:37,479
+bir C dosyası içerisinde inline olarak assembly bloğu ekleyip bunun içerisinde ilgili işlemleri gerçekleştirebiliyoruz.
+
+333
+00:58:37,559 --> 00:58:43,299
+Visual Studio kullanacağımız için 32 bit veya 64 bit derleme imkanı var.
+
+334
+00:58:43,719 --> 00:58:45,939
+16 bitlik herhangi bir derleme imkanımız yok.
+
+335
+00:58:46,499 --> 00:58:52,079
+32 bitlik assembly açısından kullanacağımız dolaylı adresleme için
+
+336
+00:58:52,851 --> 00:59:05,451
+yazmacın adı, ESI, EDI, EBX olabilir. Mesela burada eğer 64 bit olarak denemiş olsaydık, bunu çalıştırmayı deneseydik. Örneğin.
+
+337
+00:59:06,387 --> 00:59:23,188
+köşeli parantez içerisinde ESI veyahut da döngüler için ECX kullanamayacağımızdan dolayı hata veriyor olacaktı. Bunun için biz derlememiz veya SM'limiz 32 bitlik olduğu için x86 seçmemiz gerekiyor. Onu söylemiş olalım tekrardan.
+
+338
+00:59:24,019 --> 00:59:39,579
+Bununla birlikte yine debug aşamasında breakpointler koyup debug'tan Windows ekranı üzerinden burada disassembly edip kodun adım adım assembly komutları üzerinden çalıştırılması da sağlanabilir.
+
+339
+00:59:40,420 --> 00:59:42,160
+Adım adım bu şekilde kontrol edilebilir.
+
+340
+00:59:43,440 --> 00:59:45,460
+Onları da söylemiş olduk.
+
+341
+00:59:46,068 --> 01:00:11,388
+stack tanımı, aslında bu bir C dosyası olduğu için C dosyasının stack tanımı nasılsa onunla birlikte geliyor. Dolayısıyla bunlar mevcut, o tanımlamaları yapmamıza gerek yok. Onu söylemiş olabiliriz. Söyleyelim. Başka neyimiz var? Kabaca bu şekilde. Ha bir de şeyi söyleyelim, özellikle döngü işlemleri için artık CX yazmacı değil, E, CX yazmacını kullanmamız lazım.
+
+342
+01:00:12,148 --> 01:00:13,827
+Ona da dikkat ediyoruz.
+
+343
+01:00:14,568 --> 01:00:16,847
+64 bitlik durumlarda ise
+
+344
+01:00:20,820 --> 01:00:39,220
+Burada tabii mesela EAX üzerinden işlem yapabiliriz ama AX ile de ilgili işlem yapabiliriz. Bunda da sıkıntı yok. Örneğin biz bir çar dizisi tanımlamış olsaydık, 8 bitlik bir değer, o zaman dizinin her bir elemanı AL'ye atalarak kullanılabilirdi.
+
+345
+01:00:45,684 --> 01:00:59,264
+CL, CH, DL, DH gibi gidiyor. Mesela AX yazmacının yüksek anlamlı 16 bitine erişim yok mesela.
+
+346
+01:01:01,972 --> 01:01:09,892
+tanım olarak da yok, erişim olarak da yok ama normal 16 bitlik durumda eriştiğimiz 8 bitlik ve 16 bitlik yazmaçlara erişim var.
+
+347
+01:01:10,432 --> 01:01:14,552
+Burada özellikle şunu ifade etmeye çalışıyorum.
+
+348
+01:01:15,172 --> 01:01:21,032
+Dolaylı adresleme için köşeli parantez içerisinde vermiş olduğumuz dolaylı adresleme yazmacının adı artık
+
+349
+01:01:21,032 --> 01:01:28,232
+E, S, I, S, I değil veya E, D, I, D, I değil gibi. Bunları da bahsetmeye çalışıyorum.
+
+350
+01:01:29,300 --> 01:01:33,800
+Data açısından 8 bit, 16 bit, 32 bitlik erişimlerimiz mevcut ama.
+
+351
+01:01:36,320 --> 01:01:48,760
+Tabii 32 bitlik duruma geçtiğimiz zaman örneğin bendeki i7 bir işlemci. i7 için ekstra bir takım instruction komutları var.
+
+352
+01:01:49,700 --> 01:01:53,300
+Bununla birlikte artık desteklenen farklı modlar var.
+
+353
+01:01:54,068 --> 01:02:17,407
+gibi durumlar söz konusu. Örneğin hani bizde 16 bitlik durumda iki hafıza birimi arasında veri aktarımı yok. Ama burada özel durumlar var. Veyahut da bizim görmüş olduğumuz instruction set kısmında population count ile ilgili bir takım komutlar yok ama bu tarafta var gibi biraz daha çeşitlenen bir durum. Ama bizim ödev açısından düşündüğümüz durumda
+
+354
+01:02:17,844 --> 01:02:40,923
+Ödev noktasında 16 bitlik assembly ile görmüş olduğumuz kapsam ödevi gerçeklemek açısından yeterli olacak. Nelere dikkat etmek lazım? Özel görevli yazmaçların isimleri 32 bitlik olarak kullanılacak ve isimleri ekstra ön eki ile birlikte verilen halleri ile kullanılmak durumunda. Bunu da söylemiş olalım.
+
+355
+01:02:41,523 --> 01:02:54,163
+Şimdi inline ile ilgili örnek bu kadar. Dediğim gibi bu örnekleri de daha önceden paylaştığım linkin içerisine ekledim. Oradan yine kontrol edersiniz. Şimdi bir 15 dakika kadar ara verelim arkadaşlar.
+
+356
+01:02:54,672 --> 01:03:11,711
+soracağınız bir şey varsa sorabilirsiniz. 15 dakika sonra devam edelim tekrar kaldığımız yerden. Aradan sonra da bir assembly.asm dosyası ile bir C dosyasını birlikte nasıl kullanırız ona bakıyor olacağız. Yine Visual Studio tarafında.
+
+357
+01:03:16,563 --> 01:03:20,824
+Hocam, dersimden 5 dakikasını ilk 5 dakika kaçırırımla ödev mi vereceksiniz acaba?
+
+358
+01:03:21,364 --> 01:03:23,364
+Evet, ikinci bir ödevimiz olacak.
+
+359
+01:03:24,244 --> 01:03:25,764
+Süresi ne kadar olacak peki belli mi?
+
+360
+01:03:29,204 --> 01:03:33,643
+Süresini yaklaşık olarak yine daha önceki gibi aslında düşünüyoruz.
+
+361
+01:03:33,724 --> 01:03:36,443
+Yani böyle bir haftayı aşmayacak şekilde düşünüyoruz.
+
+362
+01:03:37,076 --> 01:03:39,076
+İran edici netleştir.
+
+363
+01:03:39,076 --> 01:03:50,635
+Hocam, hafta, final haftası. Ona göre biraz süre verebilir misiniz? Yani bayağı dersimiz final var ve ilk defa final haftasına böyle 4-5 proje ve ödevle birlikte giriyoruz. Hangi birbirine gideceğimi ben bilmiyorum şahsen.
+
+364
+01:03:52,215 --> 01:03:55,076
+Tamam, süre olarak bakmaya çalışırız ama yani...
+
+365
+01:03:55,284 --> 01:04:00,164
+Neticede bir dersimiz de SMD dersi. En az diğer dersler kadar hakkımız vardır.
+
+366
+01:04:00,184 --> 01:04:02,724
+Tabii ki hocam. O konuda sıkıntı yok.
+
+367
+01:04:03,164 --> 01:04:06,344
+Tamam. Zaman olarak bakmaya çalışacağız. Söylediğim gibi.
+
+368
+01:04:06,884 --> 01:04:07,684
+Tamam. Teşekkür ederim.
+
+369
+01:04:08,204 --> 01:04:09,044
+Rica ederim.
+
+370
+01:04:09,664 --> 01:04:13,304
+Başka bir sorumuz yoksa arkadaşlar. 15 dakika sonra devam ederiz.
+
+371
+01:18:45,011 --> 01:18:46,511
+Evet arkadaşlar, devam edelim.
+
+372
+01:18:47,211 --> 01:18:54,572
+Şimdi az önceki bir örneğimizde siteyin içerisine bakmayla ilgili tam adresi doğru yazamamıştım veyahut da bulamamıştım daha doğrusu.
+
+373
+01:18:54,691 --> 01:18:57,411
+Şimdi onun nasıl olduğunu da bir göstermiş olayım, oradan devam edelim.
+
+374
+01:18:58,191 --> 01:19:01,871
+Az önceki örneğimiz buydu, C kodu içerisinde inline SMD vardı.
+
+375
+01:19:02,771 --> 01:19:08,631
+Bununla ilgili olarak şu push işleminin hangi yığın bölgesini hangi veriye attığını bir incelemeye çalışalım.
+
+376
+01:19:09,332 --> 01:19:24,152
+Şimdi debug ile ilgili olarak başlattım. Şu push satırında kaldık. Bunun yığın kısmıyla ilgili bakmak istiyorum. Bunun için yaz maçlardan şurada stack pointer değerimizin 32 bitlik yaz maç değerimizi kopyalıyorum.
+
+377
+01:19:37,619 --> 01:19:38,860
+Tekrar başlatalım.
+
+378
+01:19:40,380 --> 01:19:47,979
+Bu kod parçası, az önceki örnekteki kodumuz, C içerisinde inline assembly vardı.
+
+379
+01:19:48,760 --> 01:19:54,559
+Burada şu push işleminin sonucunun yığındaki etkisini incelemeye çalışıyoruz.
+
+380
+01:19:54,559 --> 01:19:57,840
+Bununla ilgili olarak push satırına bir breakpoint koydum.
+
+381
+01:19:58,559 --> 01:19:59,840
+Kodumu başlattım.
+
+382
+01:20:00,340 --> 01:20:11,739
+push satırına kadar geldik. Burada tekrar debug windows ekranından registers ekranına tıkladım ve stack pointer yazmaç değerinin 32 bitlik değerimi kopyaladım.
+
+383
+01:20:12,479 --> 01:20:17,899
+Burada bunu adres olarak açtığında şu anda yığın içeriği bu şekilde arkadaşlar.
+
+384
+01:20:18,880 --> 01:20:27,760
+Sıradaki assembly komutumuz push ejx. ejx içinde ejx'deki değerim 10'du. Çünkü 10 tane eleman vardı.
+
+385
+01:20:28,404 --> 01:20:52,824
+Şimdi bunu bir adım yürüttüğümde, F11 ile bir adım yürüttüğümde ilgili değer yığına pushlanmış olması lazım. Bakın burada zaten stack pointer değerimiz azaldı. Yığına bir şey attıkça stack pointer değerimiz azalıyordu. Bir sonraki komuta geçtiğimiz için de IP değerimiz de değişmiş oldu. Şimdi tekrar yığının daha düşük gözlerine gidelim.
+
+386
+01:20:53,171 --> 01:21:02,231
+Gördüğünüz gibi 4 byte olarak yığına en son atılmış olan Little Ending formatındaki 10 değerimizi bu şekilde de görmüş olduk.
+
+387
+01:21:03,011 --> 01:21:09,271
+Bunu da register üzerinden ESP değerini memory adresi olarak yazdığımız halde görüyoruz.
+
+388
+01:21:09,351 --> 01:21:10,691
+Memorileri nasıl açıyorduk?
+
+389
+01:21:11,331 --> 01:21:17,171
+Debug, Windows ve buradan memory seçip 4 farklı memory alanını aynı anda...
+
+390
+01:21:18,068 --> 01:21:39,688
+izleme imkanına sahibiz. Biz bunlardan bir tanesini seçerek göstermiş olduk bu sayede. Bu inline assembly ile ilgili tanımladığımız durumu oluşturmuş olsun. Şimdi ikinci örneğimiz için bakıyoruz. İkinci örneğimizde arkadaşlar C tarafında ayrı bir dosyamız var.
+
+391
+01:21:40,115 --> 01:21:45,695
+Yine assembly ile ilgili ayrı bir dosyamız var. Şimdi onların yapısını inceleyelim.
+
+392
+01:21:55,123 --> 01:22:20,463
+Şimdi SORT kısmında arkadaşlar bir tane main CPP dosyamız var. Bir tane de Selection SORT ile ilgili olarak tanımladığımız ayrı bir C dosyamız var. Bununla birlikte aynı işlemi SM'li tarafında yaptığımız bir başka kodumuz da mevcut. Dolayısıyla yapı bu şekilde.
+
+393
+01:22:21,363 --> 01:22:35,783
+Bununla birlikte derleme işlemi tarafında iki ayrı fonksiyonu, aynı fonksiyonu C tarafında ve SM tarafında çağırdığımız satırlar buralar.
+
+394
+01:22:37,323 --> 01:22:42,683
+Burada parametre aktarımı önemli bir konu. Parametre aktarımı ile ilgili olarak değineceğim.
+
+395
+01:22:43,823 --> 01:22:48,123
+Bunun nasıl olduğunu inceleyeceğiz birazdan ama kodun genel akışına bakalım.
+
+396
+01:22:48,948 --> 01:23:03,247
+Şimdi kodun genel akışıyla ilgili olarak biz dışarıdan bir assembly kodu olarak veya assembly fonksiyon olarak kullanacağımız fonksiyon için yapacağımız tanımlama bu şekilde olması gerekiyor.
+
+397
+01:23:10,452 --> 01:23:28,512
+dönülen return değeri olmayan iki tane int, bir tanesi pointer tipinde, bir tanesi de int tipinde olan iki tane parametreyi kabul eden selection sort, sell sort asm fonksiyonunu bu şekilde prototip olarak tanımlamak durumundayız.
+
+398
+01:23:28,512 --> 01:23:34,852
+Dışarıdan kullandıracağımız durum için. İkincisi yine aşağıda tanımladığımız için main'den.
+
+399
+01:23:35,220 --> 01:23:44,100
+main haricinde başka bir yerde tanımladığımız için ilgili C fonksiyonu karşılığını da prototip olarak yine tanımlıyoruz.
+
+400
+01:23:44,780 --> 01:23:56,739
+Buradaki amacımız temel olarak aynı işlemi yapan yani selection sort işlemini yapan C kodu ile assembly kodu arasındaki performans farkı oluşup oluşmadığını incelemek bir noktadan da.
+
+401
+01:23:56,739 --> 01:24:00,800
+Bununla ilgili olarak toplamda 100 bin tane eleman içeren
+
+402
+01:24:01,716 --> 01:24:27,716
+bir dizi oluşturuyoruz. Daha sonrasında fonksiyona giriş ve çıkış anlarındaki saat değerlerini tutup bunlar arasındaki farkı ekrana yazdırıyoruz. Dizinin doğru bir şekilde sıralanıp sıralanmadığını da anlamak adına dizinin ilk ve son elemanlarını da tekrar ekrana yazdırıyoruz ve bu şekilde bir uygulama sonucu elde ediyoruz. Selection Sort'u hatırlayacak olursanız arkadaşlar.
+
+403
+01:24:28,275 --> 01:24:46,355
+her seferinde dizinin kalanı için en büyük elemanı bulup ilgili baş veya son indisi, sıradaki baş veya son indisi yazıyor. Bunu toplam karmaşıklığı diziyi iki kere dolaştığı için en kare gibi ifade edebiliriz.
+
+404
+01:24:49,300 --> 01:24:58,120
+Dolayısıyla burada her adımda dizinin kalanı için en büyük elemanın bulunup ilgili indiste yazılması şeklinde ifade edeceğimiz bu durum.
+
+405
+01:24:58,120 --> 01:25:03,420
+C tarafında bunu nasıl ifade edebiliriz? Bir dizimiz var, bir de boyutumuz var.
+
+406
+01:25:04,560 --> 01:25:06,300
+Şu, uçuralım şundan.
+
+407
+01:25:07,060 --> 01:25:12,280
+Boyutumuz var. Yapacağımız işlem baştan itibaren tüm elemanlar için.
+
+408
+01:25:13,908 --> 01:25:34,708
+baştan itibaren tüm elemanlar için dizinin kalanındaki en büyük elemanı bulup ilgili indise bu elemanı yazmak şeklinde bir işlem. Şimdi bununla ilgili olarak ana fonksiyon içerisinde C tarafını çağırdığımız örnek için release modda, 86, 32 bitlik modda bu kodu çalıştıralım.
+
+409
+01:25:40,340 --> 01:25:46,880
+Şu anda değer üretmek ve sonrasında dizmekle ilgili olarak çalışıyor.
+
+410
+01:25:53,779 --> 01:25:58,859
+Toplamda 14.66 saniye civarında bir süre aldığını görüyoruz.
+
+411
+01:25:59,539 --> 01:26:03,979
+Dizinin de ilgili şekilde büyükten küçüğe doğru sızalanmış olduğunu gördük.
+
+412
+01:26:04,579 --> 01:26:14,879
+Şimdi burada özellikle bu calling convention ile ilgili olarak yani parametre aktarımının biz buraya değerleri yazdık ama bu değerler nereden aktarıldı?
+
+413
+01:26:15,380 --> 01:26:34,739
+Buna bakmamız gerekecek. Hatırlayacak olursanız biz assembly tarafında yığın üzerinden parametre aktarıp yığın üzerinden parametre döndürmeyi, yine yazmaç üzerinden parametre aktarıp yazmaç üzerinden döndürmeyi, yığın üzerinden aktarıp yazmaç üzerinden döndürmek gibi farklı versiyonları kendimiz implemente etmiştik.
+
+414
+01:26:35,072 --> 01:26:44,492
+Ama bunun C tarafında, Linux tarafında, Pascal tarafında, farklı programlama dillerinde, farklı işletim sistemlerinde birer standardı var.
+
+415
+01:26:45,032 --> 01:26:47,832
+Yazılan programların bu standarda uyması gerekiyor.
+
+416
+01:26:48,311 --> 01:26:50,631
+Bu da Calling Convention olarak isimlendiriliyor.
+
+417
+01:26:50,731 --> 01:26:56,172
+Örneğin Wikipedia tarafında x86 Calling Conventions isimli bir makale var.
+
+418
+01:26:56,672 --> 01:26:59,271
+Bu makale içerisinde siz de incelersiniz.
+
+419
+01:26:59,828 --> 01:27:10,828
+Bu calling convention'ı uygun bir şekilde anlatmış durumda. Örneğin, 16 bitlik 8086 mimarisi için, örneğin C tarafında,
+
+420
+01:27:11,528 --> 01:27:25,847
+Wattcom Compile veya Turbo C için bakalım. Turbo C'de aktarılan parametreler AX, DX ve BX yazmaçları üzerinden aktarılabiliyor.
+
+421
+01:27:26,868 --> 01:27:28,368
+Mesela bu ne demek?
+
+422
+01:27:29,448 --> 01:27:35,368
+Fonksiyona biz 3 tane parametre aktarmışsak, bu fonksiyondaki aktardığımız parametreler,
+
+423
+01:27:35,808 --> 01:27:41,328
+alt yordamda AX, DX ve BX yazmaçlarında hazır bir şekilde alt fonksiyona girmiş oluyoruz.
+
+424
+01:27:42,028 --> 01:27:45,427
+Fonksiyonun bu yazmaçlara aktarılma sırası left to right.
+
+425
+01:27:45,823 --> 01:27:55,884
+Yani left to right'tan kasıt ne? Örneğin burada dizi ve en isimli değişkenler var. Dizi soldaki değişken. Soldaki değişken AX'e.
+
+426
+01:27:56,500 --> 01:28:24,440
+BX, CX sırasında bu atama gerçekleşiyor. Bu anlama geliyor. Left to right anlamı bu. CX yokmuş pardon. AX, DX ve BX ataması şeklinde gerçekleşiyor. Bakın burada bir de stack cleanup meselesi var. Bu da hatırlayacak olursanız yığına iki tane parametre atıp yığından tek bir parametre döndüğümüz durum vardı hatırlayacak olursanız. Bu durumda yığında bir tane çöp değer kalıyordu. Bu çöp değeri
+
+427
+01:28:24,500 --> 01:28:36,860
+alt yordam da kaldırabiliyordu, ana yordam da kaldırabiliyordu. Burada çağrılan fonksiyonun bu yığının temizleme işlemiyle görevli olduğunu buradan anlıyoruz.
+
+428
+01:28:37,440 --> 01:28:48,500
+Veya caller yazıyorsa ana yordam burada kaldırmakla görevli. Benzer şekilde mesela 32 bitlik durum için incelediğimizde Visual Studio tarafında
+
+429
+01:28:51,028 --> 01:28:56,688
+Vücud Stüdyo tarafında ilgili sırada tanımlamaların, atamaların yapıldığını görüyoruz.
+
+430
+01:28:57,228 --> 01:29:00,028
+Burada gördüğünüz bir takım vektör yazmaçları da var.
+
+431
+01:29:00,108 --> 01:29:05,128
+Vektör yazmaçlarıyla standart bildiğimiz yazmaçlar arasındaki kullanım farkı da şu.
+
+432
+01:29:05,268 --> 01:29:08,248
+Hemen yine yukarıda makalede açıklanıyor. Tekrar siz de bakarsınız.
+
+433
+01:29:08,692 --> 01:29:31,371
+Eğer ki aktarılan parametreler integer tipinde ise bu durumda genel amaçlı yazmaçlar kullanılıyor. Burada vektör yazmaçlarını gördüğünüz zaman XY veyahut da Z de olabilir. XYZ multimedya vektör registerlarını gördüğünüzde bunlar ise flow tipindeki parametrelerin aktarımları için kullanılıyor.
+
+434
+01:29:31,956 --> 01:29:39,595
+x dediğimiz, y dediğimiz, z dediğimiz bunlar arasında hep iki kat kapasite farkı var. Bu şekilde ilerliyor.
+
+435
+01:29:40,895 --> 01:29:57,275
+Mesela Linux tarafında 64 bitlik bir durum için fonksiyona vermiş olduğumuz 8 tane parametrenin aktarımı ilgili RDI, RSI, RDX, RCX, R8 ve R9 yazmaçları üzerinden gerçekleşiyor.
+
+436
+01:29:59,667 --> 01:30:15,608
+yığın üzerinden aktarılıyor. Yani 8 değil de 15 parametre aktarsan ilk 6 parametre bu yazmaçlar üzerinde oluyor. Geri kalan parametreler ise yığın üzerinde olacak şekilde ayarlanmış oluyor.
+
+437
+01:30:16,212 --> 01:30:27,732
+çalışma mantığı için bu calling convention'a dikkat etmemiz gerekiyor. Bunu da burada bilgi olarak vermiş oldum. Şimdi burada biz şu fonksiyonumuzun içerisinde
+
+438
+01:30:27,732 --> 01:30:40,172
+bir breakpoint koyalım, bir tane de şuraya koyalım. Release mode'da bunu deneyelim. İlgili satıra geldik. İlgili satıra geldiğimiz halde
+
+439
+01:30:41,268 --> 01:31:04,988
+yazmaçlardaki değerlerimize bakalım. Bunlar elimizin altında bulunsun. Aktaracağımız parametre değerlerimize de bakalım. Şimdi burada, şurada dizi değişkenimiz aslında bu adreste ve aslında biz bunu bakın prototipinden görelim. Adres olarak aktaracağız. Dolayısıyla ilk aktarılacak parametre olarak biz
+
+440
+01:31:05,427 --> 01:31:09,188
+0089, DD, 78H'ı bekliyoruz.
+
+441
+01:31:09,708 --> 01:31:14,108
+N değerimizde 100.000 olacak şekilde aktarılmasını bekliyoruz.
+
+442
+01:31:15,028 --> 01:31:17,427
+Şimdi bunu bir adım yürüttükten sonra
+
+443
+01:31:17,427 --> 01:31:24,988
+şurada selection sort içerisinde ilgili satıra gelemedik mi?
+
+444
+01:31:30,707 --> 01:31:33,207
+Bir saniye, kodu mu çalıştırmaya geçti şimdi?
+
+445
+01:31:34,047 --> 01:31:37,007
+Step into demediğimiz için kodu çalıştırmaya geçti galiba.
+
+446
+01:31:41,587 --> 01:31:46,087
+Şöyle yapalım tekrardan. Bu ana programdaki breakpoint'i kaldıralım.
+
+447
+01:31:49,300 --> 01:31:50,659
+şu satıra bir
+
+448
+01:31:51,300 --> 01:31:54,100
+niye buna koymakta istihbar ediyor?
+
+449
+01:31:55,300 --> 01:31:56,739
+Sersort
+
+450
+01:32:04,979 --> 01:32:05,819
+Diyelim.
+
+451
+01:32:08,460 --> 01:32:11,340
+Burada yok, burada var. Tamam, tekrar deneyelim.
+
+452
+01:32:14,579 --> 01:32:16,579
+beni çalıştırarak ilerledi.
+
+453
+01:32:25,076 --> 01:32:28,676
+En azından bu şu anda selection sort fonksiyonunun içerisindeyiz.
+
+454
+01:32:29,296 --> 01:32:32,155
+Burada parametre aktarımıyla ilgili duruma bakacaktık.
+
+455
+01:32:32,956 --> 01:32:35,516
+100.000 ikinci parametremizdi.
+
+456
+01:32:35,596 --> 01:32:38,096
+Bir de bir offset adresi gelecek.
+
+457
+01:32:38,096 --> 01:32:45,636
+Şimdi bakalım şuradan 32 bitlik durum için hangi yazmaçlar üzerinden gelecekti bunlar.
+
+458
+01:32:46,056 --> 01:32:47,316
+Görmeye çalışalım.
+
+459
+01:32:55,859 --> 01:33:02,520
+şu iki yazmaç üzerinde olabilir. Bakalım şimdi kontrol edelim. 100000 değerinin
+
+460
+01:33:05,340 --> 01:33:08,399
+Hex karşılığına bakalım. 186A0
+
+461
+01:33:13,524 --> 01:33:17,684
+Burada göremedik. Şuradan yığından bakalım yığında mı aktarmış.
+
+462
+01:33:31,859 --> 01:33:34,079
+Hangi yazmaçta aktarmış bunu?
+
+463
+01:33:42,899 --> 01:33:44,899
+Fonksiyonun içinde değil miyiz acaba?
+
+464
+01:33:52,787 --> 01:33:59,147
+Normalde yığın üzerinden aktarması gerekiyor. Yığın üzerinden baktığımız haliyle göremedik.
+
+465
+01:34:07,028 --> 01:34:08,268
+sekhargini, ya?
+
+466
+01:34:27,956 --> 01:34:30,176
+kod içerisinde şeyi değiştiriyorsa,
+
+467
+01:34:32,236 --> 01:34:34,776
+yazmeç içerisini değiştiriyor olabilir belki,
+
+468
+01:34:34,896 --> 01:34:36,436
+belirlediyse sen neden bakalım.
+
+469
+01:35:02,484 --> 01:35:04,724
+Peki tekrar şuradan bir kontrol edeyim.
+
+470
+01:35:23,252 --> 01:35:27,252
+Aktardığımız iki panometre var. CX'de olma ihtimali var mı?
+
+471
+01:35:29,252 --> 01:35:31,252
+Hesapladığımız değer kaçtı?
+
+472
+01:35:33,252 --> 01:35:33,900
+Olmadı.
+
+473
+01:35:54,228 --> 01:35:57,347
+Frame'e tekrar geçelim, bir de buradan bakalım.
+
+474
+01:36:00,148 --> 01:36:01,667
+Aynı değer, evet.
+
+475
+01:36:10,996 --> 01:36:33,696
+Terminli tam yerini bulamadım ama şöyle şimdi. Dizi aktarımı, parametre aktarımı için bu calling convention çerçevesinde bu örnek için kullanacağımız SML ile de bunu birleştirdiğimiz durumda yığın üzerinden aktarıldığını söylemeye çalışacaktım. Yığındadaki yerini de bulmaya çalışacaktım.
+
+476
+01:36:34,579 --> 01:36:39,619
+Ama tam olarak yerini bulamadığım için şu anda onu söyleyemiyorum.
+
+477
+01:36:40,699 --> 01:36:42,159
+Şöyle gidelim.
+
+478
+01:36:43,079 --> 01:36:49,060
+Parametre aktarımı arkadaşlar bu kapsam çerçevesinde yığın üzerinden aktarılacak.
+
+479
+01:36:49,180 --> 01:36:52,800
+Dolayısıyla bu iki değerimiz bizim yığın üzerinden gelecek.
+
+480
+01:36:54,800 --> 01:37:01,800
+C tarafında çalıştırdığımız zaman elde etmiş olduğumuz sürenin 14 küsur saniye civarında olduğunu gördük.
+
+481
+01:37:01,876 --> 01:37:10,975
+Şimdi aynı işlemi yine Release Mod'da SMD tarafıyla çalıştıracak olursak ne kadar sürede gerçekleşiyor bir de ona bakalım.
+
+482
+01:37:13,975 --> 01:37:24,076
+Burada da gördüğünüz gibi o aslında oldukça bariz bir fark çerçevesinde yani 4 kata yakın, 3-4 kata yakın bir fark var.
+
+483
+01:37:24,467 --> 01:37:35,827
+sıralamayla ilgili olarak. Tabi burada optimizasyon bayraklarıyla ilgili olarak hepsi uygun şekilde açılmamış olabilir. Onu ayrı bir not olarak bırakıyorum.
+
+484
+01:37:35,827 --> 01:37:46,907
+Ama burada aktarılan parametreler nerede onları bulmaya çalışacak olursak. Kod içerisinde Selection Sort'la ilgili bir durum var. Selection Sort'la ilgili olarak
+
+485
+01:37:47,087 --> 01:37:54,528
+Bir kere yığından veri aktarımı olduğu için BP'yi veya EBP'yi sabit referans için kullanacaktık.
+
+486
+01:37:54,608 --> 01:38:04,587
+Kod içerisinde EC, CX, ED, ESE, EAX, EBX ve EDX geçici amaçlarla kullanıldığı için bunları da yığına pushladık.
+
+487
+01:38:04,587 --> 01:38:10,087
+Şimdi bu durumda bizim yığından aktarmış olduğumuz aktarma şekli de neydi?
+
+488
+01:38:13,652 --> 01:38:16,872
+Left to right mıydı? Tekrar onu da bir kontrol edeyim.
+
+489
+01:38:18,211 --> 01:38:19,992
+Right to left olarak gelecek.
+
+490
+01:38:24,372 --> 01:38:29,811
+Right to left olarak gelecek. Yani yığına ilk atılan değer, sağdaki değer.
+
+491
+01:38:29,811 --> 01:38:38,452
+Bakalım şimdi. Yığının altında kalan değer, n bir adım üstünde kalan adres değerimiz kalmış olacak.
+
+492
+01:38:38,800 --> 01:38:57,739
+Dolayısıyla yığının daha altından okuduğumuz değer, right to left convention ile bağlı olarak yığının altında kalan değer n. n değerini E, CX'e okuduk. Bir üstteki değeri ise adres değeri E, D, I'ye okuduk ki dolaylı adresleme yapabilelim.
+
+493
+01:38:57,739 --> 01:39:03,420
+Şimdi şu sırayı bir kontrol edelim. Yığın içerisinde ne var? EBP var.
+
+494
+01:39:04,051 --> 01:39:14,051
+ECX var, EDV var, ESV var, EAX, EVX, 1, 2, 3, 4, 5, 6, 7 tane burada parametremiz var değil mi?
+
+495
+01:39:16,872 --> 01:39:24,051
+7 tane parametremiz var. Bizim fonksiyonumuz da near tipinde. Demek ki bu kod segment olarak da
+
+496
+01:39:28,724 --> 01:39:37,304
+Near tipinde olduğu için sadece Instruction Pointer değişecek. Bizim ana fonksiyonundan bu fonksiyonu çağırırken sadece Instruction Pointer değerinin yığına atılması lazım.
+
+497
+01:39:37,884 --> 01:39:41,503
+Dolayısıyla en altta ana fonksiyona dönüş Instruction Pointer değerimiz var.
+
+498
+01:39:44,323 --> 01:39:46,423
+Ana IP değerimiz var.
+
+499
+01:39:48,304 --> 01:39:53,003
+Bunun üzerinde yığın atmış olduğumuz sırasıyla önce EBP'yi atmıştık.
+
+500
+01:39:53,003 --> 01:39:55,403
+Bunun üzerinde ECX.
+
+501
+01:39:55,728 --> 01:40:20,467
+yine bunun üzerinde ED, I, yine bunun üzerinde E, S, I, yine bunun üzerinde EAX, bunun üzerinde EBX ve bunun da üzerinde EDX yazmaçları var. Ve ben bu noktada stack pointer değerini, base pointer değerini eşleştiriyorum.
+
+502
+01:40:21,108 --> 01:40:29,608
+Dolayısıyla Base Pointer değerimi buraya gösterirken, ana fonksiyondan önce de yığına parametreleri attığımız için
+
+503
+01:40:36,532 --> 01:40:59,252
+şurada da ana programa dönüş IP değerinden önce de YIN'a right to left convention'ına göre önce N değere atılmıştı, daha sonrasında da dizi adresi atılmıştı. Dolayısıyla YIN'ın bu cellsort ASM fonksiyonu içerisine girdiğimiz halde şu MOV satırındaki
+
+504
+01:40:59,956 --> 01:41:27,096
+MOV, EBP, ESP satırı yürütüldükten sonraki hali bu. O zaman benim erişmek istediğim parametreler nerede? Bizim erişmek istediğimiz parametre, ben şu anda şu referanstayım, her bir değer 4 byte yer kaplıyor. 4 offset ötede, 8, 12, 16, 20, 24, 28, 32 offset ötede dizi adresi var, 36 offset ötede de en değerimiz.
+
+505
+01:41:27,604 --> 01:41:53,604
+yığında olmuş oluyor. Dolayısıyla bunları, 32 offset öteden, dizi adresini, 36 offset öteden de, CX değerini okuyup alıyoruz. Şimdi döngüsel olarak işlemimiz, eleman sayısının, üst döngümüz, eleman sayısının bir eksiği kadar yürüyordu. Dolayısıyla SM tarafında da benzer şekilde, bir eksik defa bu döngüyü döneceğiz.
+
+506
+01:41:54,260 --> 01:41:56,320
+Bununla birlikte
+
+507
+01:42:00,692 --> 01:42:16,511
+iç içe iki döngümüz var. Bu iç içe iki döngünün bir tanesini de Compare ile gerçekleştiriyoruz. Bir tanesi Loop ile gerçekleşiyor. Şu dış dön döngüsü. Diğeri ise burada bir kontrol çerçevesinde gerçekleşiyor.
+
+508
+01:42:17,524 --> 01:42:24,824
+Her iç döngüden sonra bulmuş olduğumuz en büyük elemanı baş taraftaki adrese yazmış oluyoruz.
+
+509
+01:42:25,064 --> 01:42:32,784
+Bulduğumuz en büyük değeri ve indis değerini uygun şekilde tutarak bu değeri en başa getirmiş oluyoruz.
+
+510
+01:42:32,844 --> 01:42:39,644
+Zaten iç döngü içerisinde indis ve en büyük değerleri tutarak bütün kalan elemanlar arasında karşılaştırmıştık.
+
+511
+01:42:40,204 --> 01:42:43,664
+Dolayısıyla bu şekilde işlem sonucunu elde etmiş oluyoruz.
+
+512
+01:42:44,979 --> 01:42:51,039
+sıralı bir dizimiz var. Büyükten küçüğe doğru sıralı bir dizimiz elde etmiş oluyoruz.
+
+513
+01:42:53,099 --> 01:42:55,599
+Burada EBX ile
+
+514
+01:42:55,599 --> 01:42:59,479
+neyi kullanmışız bir ona bakalım şimdi.
+
+515
+01:43:04,467 --> 01:43:05,907
+EBX dizinin
+
+516
+01:43:11,380 --> 01:43:38,319
+Şurada, iç döngüde, dizinin geri kalanı için döngü yapıyorduk. Dizinin geri kalanı kaç elemanlı? Dizinin geri kalanı, normaldeki o andaki döngü sayımız, ECX'in bir eksiği kadar. Bakın, i artı birden boyuta kadar gitmiş. Dolayısıyla o anki ECX'den bir eksik. Dolayısıyla EBX iç döngünün adedini tutuyor aslında.
+
+517
+01:43:39,091 --> 01:44:03,091
+ESEİ ise ve EDI ise indislerimiz. ESEİ sıradaki en büyük elemanın yazılacağı gözü tutuyor. EDI ise dizinin geri kalanını içerisindeki taramayı yapan pointerımız. Dolayısıyla...
+
+518
+01:44:04,115 --> 01:44:16,115
+elde ettiğimiz değeri, yani şöyle göstereyim. Şuradaki J değişkenimiz bizim buradaki EDI register'ımıza denk geliyor.
+
+519
+01:44:16,115 --> 01:44:29,115
+Dışarıdaki I değişkenimiz içerideki ESI register'ına denk geliyor. En büyük elemanı bulduktan sonra bunlar arasında
+
+520
+01:44:29,136 --> 01:44:36,336
+bir swap işlemi yapıyorduk, exchange işlemi yapıyorduk. Onunla ilgili durum burada görüyorsunuz.
+
+521
+01:44:39,336 --> 01:44:44,536
+En büyük eleman ve aslında indisini tutmaya gerek var mı?
+
+522
+01:44:45,536 --> 01:44:47,935
+Var, indisi tutarak ilerliyoruz.
+
+523
+01:44:55,028 --> 01:45:04,948
+J, E, D, I'ye denk gelirken, en büyük eleman, dizinin geri kalanındaki en büyük eleman değerimiz de EDX'de bulunmuş oluyor.
+
+524
+01:45:06,087 --> 01:45:09,868
+En son olarak da o EDX değerini atamış oluyoruz.
+
+525
+01:45:11,608 --> 01:45:15,347
+Dolayısıyla SM tarafında bu şekilde ifade edebiliriz.
+
+526
+01:45:17,587 --> 01:45:37,467
+Arada bariz bir fark var, bunu söylemiştik. Bu arada şu tanımlamalar, burada bakacak olursanız, buradaki tanımlamalar aslında yine MASM uyumlu bir tanımlama. Fakat farklı bir yapı. Burada bir kod segment olduğu belirtilmiş bir. İkincisi,
+
+527
+01:45:37,920 --> 01:45:57,219
+dışarıya kullandıracağımız Sersort ASM isimli fonksiyonun bir public tanımlaması yapılmış ki bu main fonksiyon içerisinde Sersort ASM fonksiyonu birlikte derlenirken veya linklenirken dışarıdan kullanılacağını bilebilsin. Bu da dışarıya kullandırılacağını bilsin anlamına geliyor.
+
+528
+01:45:58,119 --> 01:46:03,319
+Kullanılan segment tanımlamamız aynı olacak main ile birlikte.
+
+529
+01:46:03,988 --> 01:46:08,748
+Şöyle bir başlatıp durdursak onu görebilir miyiz? Bir bakayım.
+
+530
+01:46:26,484 --> 01:46:28,484
+Bu karlara doğru gitmek gerekiyor.
+
+531
+01:46:33,876 --> 01:46:57,376
+Doğrudan kod segment tanımını burada göremedim. Yani biraz daha yukarıda kalıyor. Daha ayrıntı bir şekilde aramak gerekir. Ama en azından şunu yaptığımız vakit pardon, şuradaki tanımlamayı yaptığımız vakit farklı bir dosyada olsa bile near tipinde çağrılabilir olduğunu görüyoruz. Bunun anlamı da aslında segment birleştirmeye karşılık geliyor.
+
+532
+01:46:58,068 --> 01:47:15,967
+Bu arada ana fonksiyon içerisinde çağıracağımız fonksiyon ismi sellsword.asm iken, SMC dosyasında bunun tanımının underscore ile başlaması gerekiyor. Bu da bir Visual Studio tarafındaki calling convention olarak tanımlamamız gereken bir durum.
+
+533
+01:47:15,967 --> 01:47:23,967
+Yine kod segmentin tanımını da uygun şekilde underscore ile label'ını vermemiz gerekiyor.
+
+534
+01:47:24,819 --> 01:47:27,719
+Ona da dikkat edelim. Şurada, şurası.
+
+535
+01:47:30,639 --> 01:47:35,219
+Bitişini de benzer şekilde yapmamız lazım. İlgili kod segmentin.
+
+536
+01:47:36,199 --> 01:47:40,719
+Dediğim gibi fonksiyonun isminin başında da bir tane underscore olması gerekiyor.
+
+537
+01:47:41,919 --> 01:47:44,819
+Bunun dışında temel olarak bu...
+
+538
+01:47:44,948 --> 01:47:52,508
+C fonksiyonu tarafından assembly'e parametre aktarımının yığın üzerinden gerçekleştiğini görmüş olduk.
+
+539
+01:47:53,048 --> 01:47:56,868
+Yığının hangi offsetlerde hangi parametreleri olduğunu inceledik.
+
+540
+01:47:57,428 --> 01:48:02,788
+Bunları okuyabilmek için yapmamız gereken işlemleri incelemiş olduk.
+
+541
+01:48:03,155 --> 01:48:14,155
+içeride geçici olarak kullanmış olduğumuz yazmaçları bozmamak adına bunları yığına atmamız gerektiğini gördük. Dolayısıyla buradaki offset değerlerinin nasıl belirleneceği ortaya çıkmış oldu.
+
+542
+01:48:15,155 --> 01:48:30,195
+C tarafıyla assembly tarafını karşılaştırmalı olarak verip karşılıklı yazmaç ve indis, iterator, iteration, indislerinin veya değişkenlerinin hangilerinin eşleştiğini söylemiş olduk. Örneğin E, S, I ile.
+
+543
+01:48:31,028 --> 01:48:38,988
+i değişkeni, j ile de edi değişkeninin veya yazmacının karşılık geldiğini söylemiş olduk.
+
+544
+01:48:39,988 --> 01:48:46,128
+Aradaki performans farkını 3 ila 4 kat arasında olduğunu görmüştük.
+
+545
+01:48:46,228 --> 01:48:47,967
+Mesela burada biz de şeye bakalım.
+
+546
+01:48:49,228 --> 01:48:51,368
+SM'li kodumuz elimizin altındayken.
+
+547
+01:48:51,743 --> 01:48:58,363
+Şurada C tarafının üretmiş olduğu kod karşılığının assembly dönüşümüne bir bakalım.
+
+548
+01:48:58,523 --> 01:48:59,763
+Aynen, liste bakacaktık, pardon.
+
+549
+01:49:01,143 --> 01:49:02,163
+Bir liste bakalım.
+
+550
+01:49:09,043 --> 01:49:10,743
+Breakpoint koymayı unuttum.
+
+551
+01:49:13,523 --> 01:49:16,383
+Herhangi bir çalıştığı anda durduracağım zaten, evet.
+
+552
+01:49:18,283 --> 01:49:23,623
+İlerlediği bir noktada durdum. Şurada duruyoruz şu anda. Bunun SM'li karşılığına bakacak olursak arkadaşlar,
+
+553
+01:49:25,643 --> 01:49:34,023
+içerideki karşılık bu. Bizim Sensor ASM'deki karşılığımız bu. Bir eşleştirmeye çalışalım. Neler var?
+
+554
+01:49:38,676 --> 01:49:44,916
+Burada karşılaştırmalı MOV komutlarını kullanmış. Mesela bu 8086'da olmayan bir komut mesela.
+
+555
+01:49:55,123 --> 01:49:57,503
+Aslında çıkan koduda baktığımızda
+
+556
+01:49:57,503 --> 01:50:02,603
+Mainmiş ya, yanlış yere bakıyormuşuz.
+
+557
+01:50:23,380 --> 01:50:32,819
+Aslında burada da bir compiler optimizasyonu var herhalde ama tam böyle adım adım çalıştırıp nasıl göründüğünü belki bakmak lazım.
+
+558
+01:50:37,652 --> 01:50:40,052
+ama kabaca söylemek gerekirse
+
+559
+01:50:40,052 --> 01:50:41,692
+bir takım
+
+560
+01:50:41,692 --> 01:50:46,112
+8086'da olmayan karşılaştırmalı MOV komutlarını
+
+561
+01:50:46,112 --> 01:50:46,792
+kullanmış
+
+562
+01:50:46,792 --> 01:50:51,692
+döngü için ne yapmış ona bakabiliyor muyuz bakalım
+
+563
+01:50:55,731 --> 01:51:00,131
+Doğrudan anlamlandırmak çok kolay değil aslında.
+
+564
+01:51:00,331 --> 01:51:03,131
+Yani çeşitli seviyelerde optimizasyonlar olduğu için
+
+565
+01:51:03,131 --> 01:51:08,211
+anlamsal sıradaki kod karşılığını veya kod akışını değil de
+
+566
+01:51:08,627 --> 01:51:14,127
+bunların optimize edilmiş hallerini verdiği için belki takip etmek biraz daha zor.
+
+567
+01:51:14,127 --> 01:51:22,927
+Ama döngüleri genel olarak CX üzerinden looplarla değil de compare işlemleriyle yaptığını burada görmüş oluyoruz.
+
+568
+01:51:22,927 --> 01:51:31,927
+Bir compare burada var, bir compare burada var. Dolayısıyla bu iki compare ile iç içe döngüleri yaptığını düşünüyorum.
+
+569
+01:51:38,355 --> 01:51:40,255
+Herhangi bir loop işlemi de yok zaten.
+
+570
+01:51:42,015 --> 01:51:46,275
+Dolayısıyla optimizasyon seviyesine göre burayı değerlendirmek ayrı bir iş.
+
+571
+01:51:48,735 --> 01:51:53,215
+Şimdi dolayısıyla tekrar geri dönüp toparlayacak olursak neler yapmış olduk?
+
+572
+01:51:53,755 --> 01:51:59,215
+Aynı fonksiyonun C ve SM'li karşılıklarının içerdiği bir...
+
+573
+01:51:59,891 --> 01:52:07,192
+solution'ımız vardı. Bu solution içerisinde bunların çalışma sürelerini karşılaştırmalı olarak incelemiş olduk.
+
+574
+01:52:07,891 --> 01:52:19,412
+SM'li tarafını çağırabilmek için bunun prototip tanımlamasının dışarıdan kullanılacak bir fonksiyon olmasıyla birlikte extern
+
+575
+01:52:20,307 --> 01:52:35,707
+C calling convention'a uygun olacak şekilde dönüş değeri void olan, ismi cellsortasm olan, bir tane int pointer ve bir tane de int değer kabul eden bir fonksiyon prototipi olduğunu belirtmemiz gerekiyor assembly tarafını yazabilmek için.
+
+576
+01:52:36,367 --> 01:52:41,268
+Assembly koduna geçtiğimizde kodumuz near tipinde bir fonksiyon içeriyor.
+
+577
+01:52:41,779 --> 01:52:47,539
+C tarafındaki fonksiyon isminin başta underscore ile belirtilmesi gerekiyor.
+
+578
+01:52:48,199 --> 01:52:54,119
+Near tipinde olduğu için kod segmentle ilgili olarak alttan tire label verilerek şuradaki,
+
+579
+01:52:54,880 --> 01:53:04,159
+alttan tire label verilerek kod şeklinde label verilerek tanımlanmasıyla kod kesim birleştirmesi de içeren bir yapı.
+
+580
+01:53:04,159 --> 01:53:05,720
+Bunu söylemiş olduk.
+
+581
+01:53:06,068 --> 01:53:25,148
+Yine SM'li tarafında geçici olarak kullandığımız yazmaçlar ile yığın üzerinden aktarılan parametrelere erişim için sabit referans oluşturan EBP yazmacının yığına atılmasıyla birlikte ana programdan gelen parametrelerin hangi offset dev olduklarını işlemsel olarak bulmuştuk.
+
+582
+01:53:26,427 --> 01:53:31,068
+Daha sonrasında SI tarafındaki indiz karşılıklarının
+
+583
+01:53:31,283 --> 01:53:37,884
+neler olduğunu fonksiyonlarda SM tarafında tanımlayarak fonksiyonu belirtmiştik.
+
+584
+01:53:38,543 --> 01:53:43,943
+Dönüşle birlikte de aradaki farkın belirli bir kat mertebesinde olduğunu söylemiştik.
+
+585
+01:53:44,463 --> 01:53:48,283
+Yine Release modda bu sefer C tarafını incelediğimizde ise
+
+586
+01:53:48,283 --> 01:53:56,283
+içeride iki tane loopla değil de bunun iki tane compare ile gerçekleştiğini görmüştük.
+
+587
+01:53:57,300 --> 01:54:16,079
+Şunu doğrulamak açısından şöyle bir şey yapalım. Bu assembly tarafını açalım tekrardan. Doğru yere bakıp bakmadığımızı görmek açısından. Şunu çalıştıralım. O satırda dursun. Ve sonrasında da yine dis assembly ile kodumuzu inceleyelim.
+
+588
+01:54:24,627 --> 01:54:29,027
+Şu noktadan itibaren bu ASM fonksiyonunu çağırdığını görüyoruz.
+
+589
+01:54:32,692 --> 01:54:34,192
+Yine breakpoint koyarak
+
+590
+01:54:34,192 --> 01:54:36,931
+bunu da kontrol etmeye çalışalım.
+
+591
+01:54:38,072 --> 01:54:42,391
+Zaten bu noktaya geldiği için artık bu noktadan itibaren ilerliyor olacak.
+
+592
+01:54:43,451 --> 01:54:45,031
+Bakın yığına atarken
+
+593
+01:54:45,031 --> 01:54:48,331
+tekrar durdurarak bir daha başlayalım.
+
+594
+01:54:48,572 --> 01:54:50,871
+En azından yığına atış şeklini görmüş olacağız.
+
+595
+01:54:51,831 --> 01:54:53,112
+Lise assembly'den bakınca.
+
+596
+01:54:59,796 --> 01:55:09,036
+Şöyle bir değeri alıp, bunu yığına atıyor. Bir de bu değeri yığına atıyor. Bakın ilk attığı değer aslında 100.000'e karşılık gelen değer.
+
+597
+01:55:09,916 --> 01:55:19,216
+100.000 değerini yığına attı. Daha sonrasında da bu da dizinin adresine ilişkin bir değişkendi. Dizinin adresini yığına attı.
+
+598
+01:55:19,855 --> 01:55:22,975
+Şeyle uyumlu mu? Right to Left Convention ile uyumlu mu?
+
+599
+01:55:23,408 --> 01:55:40,528
+Önce n'i attı, daha sonra adresi attı. Dolayısıyla uyumlu bir şekilde bunları yığını attığını görmüş olduk. En azından inceleme ile ilgili karşılaştırılabilecek bir durum oluşturduğumuz için tekrar geri dönüp, şunu da görelim o zaman.
+
+600
+01:55:55,604 --> 01:56:17,423
+doğrudan herhangi bir call olmadan fonksiyon burada olduğu için herhangi bir pushlama işlemi de gerekmeden direkt fonksiyonu buraya eklemiş. Biz de bunu son olarak debug modunda bakalım. Belki bu call işlemini burada görebilme imkanı olabilir. Bakalım tekrar son olarak. Evet. Debug modda baktığımızda.
+
+601
+01:56:18,355 --> 01:56:45,115
+bu yığına atma işlemini burada görüyoruz. Demek ki Release modda öyle bir optimizasyon yapıyor ki fonksiyona çağırmaları dahi elimine edip o fonksiyon içerisini alıp Main Program içerisine assembly olarak gömüyor. Bunu görmüş olduk. Şu anda debug modda baktığımızda ise tıpkı assembly tarafında olduğu gibi yığına ilgili değerlerin atıldığını görmüş oluyoruz.
+
+602
+01:56:46,036 --> 01:57:00,136
+yine benzer şekilde bakın öncelikli olarak N değerini attı, right to left convention, daha sonrasında da dizi adresini yığına atmış oldu. Bunları da bu şekilde netleştirmiş olduk.
+
+603
+01:57:05,043 --> 01:57:30,203
+Buraya kadar olan nokta ile ilgili arkadaşlar sormak istediğiniz bir şey var mı? Özellikle size de örnekleri paylaştım. Siz de bu şekilde hem debug modda hem release modda hem fonksiyonun ana program tarafında hem alt program tarafında incelemeler yaparak kontrol etmenizde fayda var. Sizin de benzer denemeleri yapmanızda fayda var.
+
+604
+01:57:30,612 --> 01:57:44,712
+Özellikle az önceki örnekte gördüğümüz haliyle release modda derlediğimiz zaman compiler optimizasyonu o kadar öyle bir seviyede ki call işlemini dahi elimine edip ilgili fonksiyonu main tarafına taşıdığını gördük.
+
+605
+01:57:45,771 --> 01:57:56,412
+Ve burada örneğin SM'li tarafında biz bir loop bir de compare ile işlemi yaparken iki döngüyü bu şekilde tanımlarken karşılaştırmayla döngü yaparken
+
+606
+01:57:56,768 --> 01:58:21,768
+Release tarafında bunu optimize ettiğinde aslında iki tane compare ile bu iç içe döngüleri yaptığını gördük. Bir de son olarak debug kısmında artık girerek bakacağımız haliyle şuraya da bir breakpoint koyalım. Continue dediğimiz haliyle. Bir de buradaki disesemleye bakalım. Burada da yine aslında iç içe iki döngüyü...
+
+607
+01:58:23,091 --> 01:58:37,091
+Yine Compay'lerle yapmış. Yine onu görüyoruz. Yine Compay'lerle yapmış. Zaten Release tarafındaki Optimize Code'da benzer şekilde olduğu için böyle bir durum beklemeliydik aslında.
+
+608
+01:58:39,091 --> 01:58:48,079
+Dolayısıyla bu denemeleri siz de yaparsınız, faydalı olur. Bunlar Windows tarafında Visual Studio ile
+
+609
+01:58:48,079 --> 01:59:13,380
+C tarafında SMD'yi birlikte kullanıma ilişkin örnekleri tamamlamış oluyor. Onu söyleyebilirim. Bir de, şimdi tekrar Linux tarafına geçmeden bahsedeceğim. Ama siz bu denemeleri Linux tarafında GCC ve NASM kullanarak tekrarlayabiliyor olacaksınız. Şimdi de Linux tarafındaki 32 bitlik ve 64 bitlik değerlemelerden bahsedeceğim.
+
+610
+01:59:13,743 --> 01:59:20,363
+veya birlikte kullanımdan bahsedeceğim. Bununla ilgili olarak GCC derleyicisini kurmanız lazım Linux'te.
+
+611
+01:59:20,943 --> 01:59:27,803
+Ve aynı zamanda da NASM Assembler'ını kurmanız gerekiyor. Linux tarafında birden fazla Assembler var.
+
+612
+01:59:28,423 --> 01:59:35,783
+Ama bizim şu ana kadar görmüş olduğunuz MASM formatıyla uyumlu olarak veya sintaksıyla uyumlu olarak NASM var.
+
+613
+01:59:35,783 --> 01:59:41,743
+Dolayısıyla o NASM formatını da kullanabilmek adına, oradan da faydalanabilmek adına bu ikisini birlikte kullanacağız.
+
+614
+01:59:41,743 --> 01:59:43,443
+kullanacağız. Onu söylemiş olayım.
+
+615
+01:59:45,663 --> 01:59:47,623
+Şimdi şunu kapatabiliriz.
+
+616
+01:59:54,323 --> 02:00:10,243
+Şimdi GCC tarafına baktığımızda arkadaşlar, aynı kod parçasının 32 bitlik ve 64 bitlik versiyonları var. Şimdi bununla ilgili olarak bir C dosyamız var. Şöyle açalım.
+
+617
+02:00:14,163 --> 02:00:27,663
+Dediğim gibi ben şu anda Windows tarafında olduğum için bir daha aç kapa yapmamak adına böyle ilerleyeceğim ama siz biraz sonra göstereceğim mantık çerçevesinde değerlemenizi yapabilirsiniz. Şunu da şöyle alalım.
+
+618
+02:00:31,539 --> 02:00:34,420
+Makefile'ı da alalım. Ritmi'yi de burada açalım.
+
+619
+02:00:42,260 --> 02:00:44,180
+ritmiyi açmamakta ısrar ediyor.
+
+620
+02:00:47,779 --> 02:00:51,840
+Şimdi arkadaşlar, öncelikli olarak bu Mac file'dan bir başlayalım.
+
+621
+02:00:52,275 --> 02:01:17,395
+şey tarafında, Linux tarafında derleme işlemlerinin Macfile üzerinden yapılması aslında olayı toplu bir hale getiriyor. Yani normalde biz aslında bu iki satırı ayrı ayrı komut satırında çalıştıracaktık. Bu iki satır komut satırında çalıştırmamız gerekiyordu. Ama bunu bir Macfile üzerinden toplarsak, bu Macfile aslında bu derleme adımlarını toplu olarak bir seferde yürütüyor.
+
+622
+02:01:20,275 --> 02:01:44,355
+C dosyaları mevcutken yapmamız gereken işlemle bir make komutunu çalıştırıyoruz. Make komutunu çalıştırdığımız zaman aslında buradaki bu iki satırı gerçekliyor. Bu iki satır ne? Bu aslında şu anlama geliyor. Topla.asm isimli SM'li dosyasını nasm kullanarak şurada elf32 veya 64 olarak seçebiliyoruz. Elf'ye verdiğimiz zaman 32 bittik derle mi?
+
+623
+02:01:44,819 --> 02:01:56,100
+32 bitlik olarak topla.asm'yi derleyerek çıktı dosyası olarak da topla.o isimli obje dosyasını oluşturuyor.
+
+624
+02:01:56,720 --> 02:02:09,560
+İkinci satırda ise obje dosyası, az önce oluşturduğumuz obje dosyası ile birlikte main.c dosyasını birlikte derleyip linkleyerek topla isimli çalıştırılabilir dosyayı oluşturduyor.
+
+625
+02:02:09,971 --> 02:02:25,471
+Zaten make işleminden sonra artık çalıştırılabilir dosya, topla isimli dosya oluştuğu için bunu da komut satırından çalıştırmak için nokta slash topla şeklinde komut satırından terminalden bu derlemiş olduğumuz kodu çalıştırmamız mümkün oluyor.
+
+626
+02:02:26,172 --> 02:02:35,091
+Şimdi ana program tarafına bakalım. Ana program tarafında arkadaşlar bizim dışarıdan tanımlayarak kullandığımız topla isimli bir fonksiyon var.
+
+627
+02:02:37,971 --> 02:03:03,511
+pointer bir tane de int tipinde, ikinci bir int tipinde değişken de kabul ediyor. Sizin de tahmin edeceğiniz üzere dizinin adresi ve dizinin eleman sayısı şeklinde iki tane değerimiz mevcut. Daha sonrasında ise yine uygun calling convention çerçevesinde fonksiyon çağrılmış olacak. Şimdi assembly tarafına gittiğimiz zaman
+
+628
+02:03:03,923 --> 02:03:18,163
+Şurada görmüş olduğunuz değişken tanımlamaları aslında bizim segment tanımlamalarımıza karşılık geliyor. Bakın burada bu dosyada çalışacak kodun bir kendine ait data segmenti var diye düşünebiliriz.
+
+629
+02:03:20,304 --> 02:03:27,064
+Topla isimli fonksiyon dışarıya kullandırılacağı için NAI ASM tarafında bunun global olarak tanımlanması gerekiyor.
+
+630
+02:03:27,731 --> 02:03:41,631
+parametre aktarımları yine yığın üzerinden şey olduğu için bu 32 bitlik bir yapı olduğu için parametre aktarımı yine yığın üzerinden içeride kullandığımız değişkenler ED ve ECX.
+
+631
+02:03:42,231 --> 02:03:52,931
+ECX ile döngüyü sağlayacağız. ED ile de dizinin sıradaki elemanını kullanacağız. Dolayısıyla yığına iki tane parametre atmış durumdayız. Alt yordam içerisinde.
+
+632
+02:03:53,395 --> 02:03:58,836
+Sabit referans için EBP'yi dağıtmıştık. Şimdi bu durumda kaç tane değer oluyor onu bir hesaplayalım.
+
+633
+02:04:01,336 --> 02:04:05,695
+Fonksiyon çağrılırken yığında şu değerler olacaktı.
+
+634
+02:04:05,695 --> 02:04:19,095
+Bir, n değerimiz olacak. Bu n değerinin üzerinde dizinin adresi olacak. Daha sonra çağırma ile ilgili ana yordama ilişkin IP değeri vardı.
+
+635
+02:04:20,243 --> 02:04:44,203
+şey tipini hatırlayamadım yalnız. Bunun far tipini de onu biraz sonra kontrol etmiş olalım. Yığına EBP'yi attık, gider girmez. Daha sonra EDI'yi attım ve son olarak da ECX'i attık. Bu durumda 4, 8, 12, 16 tabii olmadığı için burada bir de ana yordama dönüş segment değerimiz var.
+
+636
+02:04:45,203 --> 02:04:57,903
+Şimdi bu haliyle kontrol etmiş olduk. Tabi burada segment birleştirmeyle ilgili durum nasıl oluyor? Hani çok harici bir şekilde tanımlı olmadığı için varsayılan olarak far tipinde bir fonksiyon gibi bunu düşünelim.
+
+637
+02:04:58,983 --> 02:05:06,203
+E, C, X. Şu anda BP değerim burayı gösteriyor. Bu sabit referansı oluşturdum. 4, 8, 12.
+
+638
+02:05:07,636 --> 02:05:34,155
+4, 8, 12, 16, 20, 24. 24 olduğu için gene hatalı. Şöyle bir daha deneyelim. 4 offset, 8 offset, 12 offset, 16, 20. Yani near tipindekine denk geliyor. Tabi bu derledikten sonra daha net bir şekilde anlayabileceğimiz bir durum. Şu anda sadece biraz deneme yanılma gibi oldu ama demek ki bu da near tipinde bir kola karşılık geliyormuş.
+
+639
+02:05:34,644 --> 02:05:49,144
+Bunu anlayabilmek için dediğim gibi oluşan segmentin, kod segmentin main tarafıyla uyumuna bakmak lazım. Onu şu anda derlemediğimiz için doğrudan göremiyorum.
+
+640
+02:05:49,876 --> 02:06:06,016
+Ama çıkan hesaba göre bu şekilde bir yapı var. Alt programa girdiğimde MOV, EBP, ESP dediğimiz satır itibariyle yığının durumu bu. Sabit referansım şurası. Buna göre 4, 8, 12, 16 ve 20 offset ötelerde parametrelerimiz var.
+
+641
+02:06:06,016 --> 02:06:16,016
+Bu parametreleri alıp 16 offset'teki başlangıç adresimiz, 20 offset'teki eleman sayımız yapacağımız işlem her seferinde
+
+642
+02:06:17,332 --> 02:06:25,332
+ED, I ile gösterilen dizi gözündeki değeri EAX'e ekleyerek, biriktirerek toplamak.
+
+643
+02:06:26,632 --> 02:06:29,332
+Elemanlarımız bizim ne elemanlarıymış ona bir bakalım.
+
+644
+02:06:30,812 --> 02:06:37,452
+Int tipinde bir eleman olduğu için burada birden n'e kadar sayıların toplamı n çarpı n artı bir bölü 2.
+
+645
+02:06:38,292 --> 02:06:44,732
+Dolayısıyla burada 32 biti taşma durumu olabilir. Onu çok kontrol etmemişiz burada.
+
+646
+02:06:46,068 --> 02:06:53,307
+bir daha birden ene kadar en değerimizde int
+
+647
+02:06:53,307 --> 02:06:57,728
+dolayısıyla aslında burada daha uygun bir kontrol yapmak gerekiyordu
+
+648
+02:06:57,728 --> 02:07:00,788
+taşma olabilir bir sonraki elemana geçip
+
+649
+02:07:00,788 --> 02:07:03,728
+bütün dizi elemanları üzerinde toplam yapıyoruz
+
+650
+02:07:03,728 --> 02:07:07,248
+biriktirme yapıyoruz daha sonrasında da
+
+651
+02:07:07,248 --> 02:07:12,128
+dönüyoruz döndüğümüz haliyle dönüş değerimiz arkadaşlar nerede bakın
+
+652
+02:07:12,568 --> 02:07:15,568
+ımm
+
+653
+02:07:12,543 --> 02:07:35,703
+eax yazmacında kalıyor. eax yazmacındaki dönüş değerimiz, bu fonksiyonun dönüş değeri. int tipinde dönüş yaptığı için bu dönüş değeri eax. Bunu toplam isimli C tarafındaki fonksiyona atadık ve ekrana yazdırdık. Atama şekli ve dönüş şekli bu şekilde gerçekleşmiş oluyor. Önemli bir nokta. Tekrar şuradan kontrol edelim.
+
+654
+02:07:50,547 --> 02:08:02,407
+Dönüşle ilgili herhangi bir yazmaç kullanmamış, parametre aktarımıyla herhangi bir yazmaç kullanmamış, dönüş değerimizin ise EAX'de olduğunu söyleyebiliyoruz.
+
+655
+02:08:05,467 --> 02:08:12,347
+EAX'de fonksiyonda dönüş değerimizi bir değişkene atadık ve bunu tekrar ekrana yazdırmış olduk.
+
+656
+02:08:12,347 --> 02:08:15,507
+Bu 32 bitlik tarafıyla ilgili durum.
+
+657
+02:08:17,600 --> 02:08:21,240
+64 bitlik versiyonu var. Onun için bakalım.
+
+658
+02:08:41,043 --> 02:08:49,083
+Yine aynı şekilde bir MAC file'ımız vardı. Bu MAC file üzerinden derleme yapıp daha sonra da executable dosyayı çalıştırabilir hale geliyoruz.
+
+659
+02:08:49,644 --> 02:09:02,644
+MAC file'a tekrar bir bakalım. MAC file'da bu sefer farklı olarak derleme işleminin 32 bit değil de 64 bit olacağını belirtmek adına bu fileyi uygun şekilde set etmemiz lazım.
+
+660
+02:09:07,060 --> 02:09:09,880
+registerlar üzerinden işlem yapan bir
+
+661
+02:09:09,880 --> 02:09:18,400
+ASM dosyası olması lazım, SM dosyası olması lazım. Yani köşeli parantez içerisinde dolaylı adreslemelerde
+
+662
+02:09:18,400 --> 02:09:29,280
+RDI ve RSI ve RBX gibi varsayılan yazmaçları kullanmaya dikkat etmemiz de gerekiyor. 64 bitlik liderleme sonucu elde ettik. Daha sonrasında da bunu
+
+663
+02:09:29,779 --> 02:09:35,659
+ilgili obje dosyasıyla main C dosyasını derleyerek topla isimli executable dosyayı oluşturacağız.
+
+664
+02:09:36,739 --> 02:09:39,920
+Main tarafına bakalım. Herhangi bir farklılık yok.
+
+665
+02:09:41,119 --> 02:09:42,819
+Fonksiyon ismi topla.
+
+666
+02:09:43,659 --> 02:09:44,819
+Int tipinde dönüş yapıyor.
+
+667
+02:09:45,199 --> 02:09:48,179
+Bir int pointer var, bir int ikinci parametresi var.
+
+668
+02:09:48,659 --> 02:09:51,199
+External olarak bunu burada tanımlamamız lazım ki
+
+669
+02:09:51,636 --> 02:09:57,896
+Bu obje dosyasını ikinci aşamada, linkleme aşamasında C dosyası bulabilsin, C tarafı bulabilsin.
+
+670
+02:09:58,476 --> 02:10:00,836
+ASM tarafına geldiğimizde ise arkadaşlar.
+
+671
+02:10:20,724 --> 02:10:29,423
+Şimdi yine fonksiyon ismini
+
+672
+02:10:29,423 --> 02:10:31,663
+aynı şekilde bırakıyoruz. Bakın
+
+673
+02:10:31,663 --> 02:10:33,524
+Visual C tarafında
+
+674
+02:10:33,524 --> 02:10:35,604
+Visual Studio tarafında
+
+675
+02:10:35,604 --> 02:10:37,963
+underscore ile fonksiyon
+
+676
+02:10:37,963 --> 02:10:40,024
+ismini belirtmemiz gerekiyordu ama
+
+677
+02:10:40,024 --> 02:10:42,144
+Linux tarafında GCC ile
+
+678
+02:10:42,144 --> 02:10:44,064
+kullandığımızda fonksiyon
+
+679
+02:10:44,064 --> 02:10:45,784
+isminin aynı olması gerekiyor.
+
+680
+02:10:46,564 --> 02:10:47,184
+İkincisi
+
+681
+02:10:47,648 --> 02:10:58,608
+Burada parametre aktarımı için, 64 bitlik durum için parametre aktarımında özel bir şey vardı. Şu son satırda göreceğimiz yapı. Bakın şurada göreceğimiz yapı.
+
+682
+02:11:01,648 --> 02:11:14,608
+Integer değerleri için parametre aktarımları, ilk 6 parametre için DI, SI, DX, CX, R8 ve R9 üzerinden oluyor. Float 8 tane parametre aktarımı için vektör yazmaçları kullanılıyor.
+
+683
+02:11:15,503 --> 02:11:31,503
+gibi bir durum söz konusu. Aynı açıklamayı buraya da taşıdım. Dolayısıyla bizim birinci parametremiz RDI'da olacak. Bakalım birinci aktaracağımız parametre ne? Dizi değeri. İkinci aktaracağımız parametre de N. İkinci parametre de RSI'da olacak.
+
+684
+02:11:32,143 --> 02:11:42,903
+RSI bizim eleman sayımızı içerdi. Biz bu loopla döngü yapacağımız için döngünün CX üzerinde olması gerekiyor. 64 bitlik yazmaçlarla ilgili işlemlerimiz bunlar.
+
+685
+02:11:43,347 --> 02:11:50,067
+Tabi CX'i kullanacağımız için R, CX'i PUSH'luyoruz, çıkarken de POP'luyoruz, bozulmasın diye.
+
+686
+02:11:51,707 --> 02:11:53,727
+Diğer elemanlar bozulabilir, önemli değil.
+
+687
+02:11:54,292 --> 02:12:18,452
+döngümüz CX üzerinden loopla burada gerçekleşiyor. Bu döngü sırasında RDI ile gösterilen adres içeriği RAX'e toplanıyor. Burada RAX kullandığımız için taşmayla ilgili özel bir durum yok. N çarpı, yani N çarpı N artı 1 bölü 2 şeklinde tanımlayacağımız en büyük toplam değeri oluşacağı için RAX'de birikebilir bunlar.
+
+688
+02:12:19,091 --> 02:12:22,211
+her bir de int tipinde olduğu için taşma olmayacaktır.
+
+689
+02:12:23,671 --> 02:12:29,211
+Burada her bir eleman, bir sonraki eleman için 4 offset ileriye gitmem gerekiyor.
+
+690
+02:12:29,411 --> 02:12:32,291
+Bunu loop'ta döndürerek bir toplama biriktirmesini yaptım.
+
+691
+02:12:32,971 --> 02:12:36,071
+Geri dönüş değerimiz yine RAX yazmacında olacak.
+
+692
+02:12:36,751 --> 02:12:41,111
+Dolayısıyla RAX yazmacından dönüş değerini C tarafında bir değişkene atayıp
+
+693
+02:12:41,111 --> 02:12:46,331
+daha sonrasında da bunu ekrana yazdırdığımız bir durumu elde etmiş oluyoruz.
+
+694
+02:12:47,188 --> 02:12:55,288
+Dolayısıyla Linux tarafında GCC ve NASM kullanarak yapabileceğimiz derleme işlemlerini de bu şekilde özetlemiş oldum arkadaşlar.
+
+695
+02:12:56,248 --> 02:13:04,467
+Aslında bunları Linux tarafına geçerek derleyip oluşan SMD dosyalarını da görmekte fayda var.
+
+696
+02:13:07,572 --> 02:13:18,592
+Şuraya bir parametre olarak assembly dosyasının listinin de, dsts'in de oluşmasıyla ilgili olarak belki parametre vermek gerekiyordu, onu şu anda hatırlayamadım ama.
+
+697
+02:13:19,432 --> 02:13:24,212
+Eğer onunla ilgili bir güncelleme gerekiyorsa onu da yapar tekrar soru örneği güncellere.
+
+698
+02:13:25,012 --> 02:13:32,052
+Siz de benzer şekilde Linux tarafında burada anlatmış olduğumuz mantık çerçevesinde en azından derlemeyi yapıp,
+
+699
+02:13:32,435 --> 02:13:49,496
+adım adım bunu da debugla yürütmekle ilgili olarak işlem yapabilirsiniz. Linux tarafında debugla ilgili olarak kullanabileceğimiz bir tool var. Ondan bahsedeyim şimdi hızlıca da.
+
+700
+02:14:08,659 --> 02:14:35,039
+Şimdi kod derlememizi gerçekleştirdik diyelim. Tabi burada debug komutlarının veya debug modunun açık olarak değerlendiği durumu ele almak gerekiyor. Tıpkı 8086'daki debug komutunda olduğu gibi burada da GDB isimli bir tool var arkadaşlar. Kullanmışsınızdır belki. Burada derlenmiş olan kodu
+
+701
+02:14:35,923 --> 02:14:54,384
+gdb ile açarak adım adım yürütme imkanı oluyor. Bununla ilgili olarak örneğin topla isimli fonksiyonumuz, topla isimli çalıştırılabilir dosyayı debug yapmak istersek, komut satırından gdb topla şeklinde debug adımlarına başlayabiliyoruz.
+
+702
+02:14:54,384 --> 02:14:59,564
+Tabi burada topla isimli executable'ın bulunduğu klasör içerisindeyim şu anda.
+
+703
+02:15:00,047 --> 02:15:07,087
+Current Working Directory olarak bunu söyleyelim. Daha sonrasında
+
+704
+02:15:07,087 --> 02:15:17,807
+adım adım çalıştırmak için öncelikli olarak main etiketine bir tane breakpoint koyuyoruz. Şurada yapılan işlem.
+
+705
+02:15:18,292 --> 02:15:28,172
+tabii GDB'yi çalıştırdıktan sonra artık komut satırı olarak GDB içerisinde olduğunuzu belirtmek adına şöyle bir komut satırında belirteç var.
+
+706
+02:15:28,560 --> 02:15:53,560
+şu anda GDB içerisindeyiz. Break main diyerek main fonksiyonu ile birlikte bir break point koymuş olduk. Main etiketi bütün C fonksiyonların, bütün C dosyalarında bir main olacağını veya çalıştırılabilir olanlarda main olacağını düşünecek olursak main etiketine bir break point koymuş olduk. Daha sonrasında kodu çalıştırdığımızda
+
+707
+02:15:54,676 --> 02:16:01,036
+run ile çalıştırdığımızda koymuş olduğumuz breakpoint'e kadar ilerlemiş oluyoruz. Daha sonrasında
+
+708
+02:16:01,456 --> 02:16:14,355
+Bu aşamada disassembly olarak bakacak olursak aslında orijinal Linux tarafındaki çok da aşina olmadığımız farklı bir sintakstaki disassembly karşılığını görüyor olacağız.
+
+709
+02:16:14,355 --> 02:16:27,756
+Bunu değiştirmek adına Intel tarafında veya MASM ile alışık olduğumuz disassembly tarafında görebilmek için GDB komut satırında set disassembly flavor Intel şeklinde bir komut çalıştırıyoruz.
+
+710
+02:16:29,456 --> 02:16:35,216
+ise artık disassembly ettiğimiz durumda makine koduna karşılık elde ettiğimiz instructionlar
+
+711
+02:16:35,216 --> 02:16:43,876
+Intel uyumlu olarak göreceğimiz durumlar oluyor. Bununla ilgili olarak main etiketinden itibaren disassembly yapacak olursak,
+
+712
+02:16:44,155 --> 02:16:50,876
+disassemble main dediğimiz zaman main etiketinden itibaren belirli bir offset alanını disassembly ediyor.
+
+713
+02:16:51,636 --> 02:16:56,036
+Elde etmiş olduğumuz disassembly sonuç karşılıkları örneğin bu şekilde çıkıyor.
+
+714
+02:16:57,363 --> 02:17:18,763
+Bu aslında ana fonksiyonun işletim sistemine geri dönüşüyle ilgili bir takım değerleri içeren başlangıç işlemleri. Daha sonrasında örneğin bir tane register'ın içeriğine bakmak istersek, örneğin 64 bitlik instruction pointer'ın içeriğine bakmak istersek ve bunu
+
+715
+02:17:24,564 --> 02:17:30,224
+Instruction pointer'ın gösterdiği satırdaki koda bakmak istersek diye düzelteyim.
+
+716
+02:17:31,744 --> 02:17:41,443
+Bunun için çalıştıracağımız komut x, slash, i ve vermiş olduğumuz yazmaç değeri.
+
+717
+02:17:41,544 --> 02:17:46,644
+Dolayısıyla bu yazmaç içeriğinin, yani sıradaki komutun ne olduğunu görüyoruz aslında burada.
+
+718
+02:17:47,423 --> 02:17:50,404
+Burada sıradaki komutun ne olduğunu görmüş oluyoruz.
+
+719
+02:17:51,156 --> 02:17:57,636
+yine bu x komutunun hangisine karşılık geldiğini görmek istersek
+
+720
+02:17:57,636 --> 02:18:15,876
+integer formatında vermiş olduğumuz adres içeriğini gösteriyor bize ve buradaki sıradaki komut aslında bu şekilde görülmüş oluyor.
+
+721
+02:18:18,227 --> 02:18:38,567
+Main etiketinden itibaren gelen alanı binary olarak dump etmek istersek, o zaman çalıştıracağımız komut bu şekilde oluyor. Bu da aslında Main etiketinden sonra gelen alanları bu şekilde byte byte dump etmemizi sağlıyor.
+
+722
+02:18:38,567 --> 02:18:45,667
+Bakın şuradan main etiketinden itibaren 8 tane byte değerini vermiş. Daha sonrasında da
+
+723
+02:18:46,260 --> 02:19:03,779
+8 ve 9. byte'ları da burada vermiş. Yine registerların içeriklerini görmek istersek, info registers diyerek bütün yazmaç içeriklerini bu şekilde dökebiliyoruz. Herhangi bir yazmaç içeriğine bakmak istersek, bu sefer print fonksiyonuyla birlikte bunu kullanıyoruz.
+
+724
+02:19:07,779 --> 02:19:08,899
+Burada
+
+725
+02:19:10,388 --> 02:19:34,068
+EAX yazmacının içeriği şuradaki değer. Burada dolar 2 ile gösterdiği değer aslında bir nevi watch olarak düşünebilirsiniz. Yani onun kaçıncı izlemeyi yapıyoruz bu anlama geliyor. Yani doğrudan içerikle alakası yok. Ve benzer şekilde UP yazmacının içeriğinde görmek istersek yine benzer şekilde print fonksiyonuyla bunu da kullanılmış.
+
+726
+02:19:34,515 --> 02:19:59,795
+oluyoruz. Kabaca bunlar genel geçer tool'lar. Bununla birlikte burada örneğini vermediğimiz diğer komutlarda şöyle bir adres var. Bu adres üzerinden bunu veya internette aradığınızda GDB'nin komutlarıyla ilgili olarak bir arama yaptığınızda benzer bir tabloyası da erişirsiniz. Yani burada adım adım çalıştırma, step over, step in.
+
+727
+02:20:00,371 --> 02:20:15,072
+gibi belirli bir satıra kadar, belirli bir adrese kadar çalıştırma gibi gibi işlemler mevcut. Bu da Linux tarafında adım adım uygulayabileceğiniz debug işlemleri için hazır bir tool'u böylelikle tanımlamış oluyoruz.
+
+728
+02:20:15,072 --> 02:20:25,072
+Size tavsiyem arkadaşlar hem Visual Studio tarafında hem de Linux tarafında GCC ve NASM kullanarak bu örnekleri derleyip
+
+729
+02:20:25,727 --> 02:20:37,167
+Çıkan assembly tonuçlarını inceleyip bunlarla ilgili olarak sistemin kabaca nasıl çalıştığını irdelemeniz yönünde bir tavsiyem var. Bunu yaparsanız faydalı olur.
+
+730
+02:20:38,087 --> 02:20:47,527
+Dersin başında da dediğim gibi ikinci bir ödevimiz olacak. Onunla ilgili olarak zamanlamayı dikkate almaya çalışarak, bununla ilgili olarak itiraz gelmişti.
+
+731
+02:20:48,247 --> 02:20:50,867
+Zamanlama ve süreyi dikkate almaya çalışarak,
+
+732
+02:20:51,152 --> 02:21:15,412
+ödev ilanını yapacağız. Sizden de uygun bir şekilde ödevleri yine sistemden yüklemenizi bekleyeceğim. Kabaca dönemi değerlendirmek gerekirse arkadaşlar, kodla ilgili olarak özellikle sizlerin çok fazla veyahut da yeteri kadar hands-on deneme yapmadığınız izlenimini ediniyorum.
+
+733
+02:21:15,924 --> 02:21:20,084
+Bunu da daha çok ödev ve vize yaptık.
+
+734
+02:21:21,904 --> 02:21:35,724
+Hatta şöyle yaptım. Vizemiz vardı. Oradaki kodu ikinci defa tekrarladık. Yetişmedi. Hani sistemsel hata olabilir falan. Neyse bunu çok da size yüklememek adına tekrar klasik soruyu tekrarladık.
+
+735
+02:21:36,084 --> 02:22:01,584
+Ödev tarafında da benzer şekilde kodlama uygulamaları vardı. Fakat burada genel olarak tool'ları kullanmanıza izin olduğu halde bu tool'ları kullanmadan ezberden kod yazmaya çalıştığınızı gördük. Yani bu aslında iki taraftan da sıkıntılı. Yani ezberden bir şey yazmaya çalıştığı zaman insan, yani ben de hatayı benzer şekilde hatalar yapıyorum.
+
+736
+02:22:02,000 --> 02:22:26,759
+aklımdaki şeyle sintaks tıvamı uyumlu olmamış olabiliyor ve sizden toolları kullandığınız için tam çalışır kod beklediğimizden dolayı da aslında siz bu kontrolü yapmadığınız için akışta mantık olarak kabaca çözüme yaklaşmış olsanız bile nihai sonuç olarak çözümden çok farklı bir noktaya varıyorsunuz. Yani sintaks hatalarıyla dolu bir kodla karşılaşmış oluyoruz.
+
+737
+02:22:27,123 --> 02:22:48,043
+Özellikle sizden ricam ve beklentim şu arkadaşlar. Derslerde yapmış olduğunuz bütün örnekler elimizde var, problemler elimizde var. Bu problemleri siz kendiniz tanımlayarak çözmeye çalışın. Yani finale bu şekilde çalışın. Bu örnekleri kendiniz probleme bakın, problemin tanımını okuyun. Buna göre kendiniz bir çözüm üretmeye çalışın.
+
+738
+02:22:50,388 --> 02:23:04,388
+Tool'lar üzerinden yapın. Yani M8086 ile veyahut da DOSBox üzerinde derleyerek yapın. Yani bazı arkadaşlar yapıyor. Bu çok bariz bir şekilde belli. Ama çoğunluğun yapmadığını net bir şekilde görebiliyoruz bu gelen sonuçlardan dolayı.
+
+739
+02:23:05,228 --> 02:23:11,608
+Vizemiz çok düşük. Vizenin ortalaması çok düşük arkadaşlar. Kırkın altında. Yani bu dikkat etmeniz gereken bir nokta.
+
+740
+02:23:14,036 --> 02:23:28,916
+ödevle biraz toparlanacak ama vize ve ödev uygulaması, yani vizedeki sorunun tekrar verdiğimiz haliyle, ikinci verdiğimizde biraz daha düzelmiş durumda ama genel olarak vize ortalaması çok düşük.
+
+741
+02:23:30,175 --> 02:23:39,796
+Yani bundan dolayı finale özel olarak hazırlanmanızda fayda var ve son saniyede, son dakikada geçtim kaldım meselelerini dikkate almayacağız arkadaşlar.
+
+742
+02:23:39,796 --> 02:23:41,695
+Yani bunu da siz de tahmin ediyorsunuzdur.
+
+743
+02:23:42,324 --> 02:24:08,943
+Yani şu ana kadar 3 fırsat oldu. Bir de 4. yü sağlayacağız. Bir de final var. Toplamda 5 fırsat var. Bu 5 fırsatı da uygun şekilde değerlendirememişsek son dakikadaki mazeretler çok bizim için dikkate almayacağımız hususlar olacak. Bunu da baştan söyleyeyim. Ve kalan son 2 alternatif de bu son 2 imkanda iyi şekilde kullanmaya çalışın.
+
+744
+02:24:09,459 --> 02:24:30,119
+Finale ilgili olarak yaklaşık olarak benzer olacak. Daha tam içeriği hazırlamadığımız için net bir şey söyleyemiyorum. Ama mutlaka orada da kod yazmaya ilişkin bir takım sorular olacak ve bütün olarak çalışan bir kod parçası istiyor olacağız sizden. Belirli bir fonksiyonu yerine getiren.
+
+745
+02:24:30,675 --> 02:24:41,515
+Özellikle ikinci vizeden sonra görmüş olduğunuz konulara dikkat edin arkadaşlar. Parametre aktarımı, segment birleştirme gibi konuları içeren konulara hakim olun.
+
+746
+02:24:42,716 --> 02:24:50,216
+Vizeye benzer bir yapı olacak ama süreyle ilgili olarak ve soruların geliş sırasında dikkat etmeye yine artık dikkat edeceğiz.
+
+747
+02:24:50,416 --> 02:24:57,615
+Hem de onun nasıl olması gerektiğiyle ilgili olarak, sırayla ilgili olarak durumu netleştirdik bilgi işlemle de.
+
+748
+02:24:58,067 --> 02:25:06,948
+Dolayısıyla beklediğimiz şekilde klasik soru sonunda gelecek veya klasik soruyu komple ayırıp ikinci bir sınavda yapabiliriz.
+
+749
+02:25:08,047 --> 02:25:15,108
+Örneğin şunu demek istiyorum. Toplamda bir saat süremiz varsa veya bir buçuk saat süremiz varsa yarım saat.
+
+750
+02:25:15,731 --> 02:25:41,612
+test ve boşluk doldurma ile ilgili geçerse geri kalan bir saat için özel olarak kodlamayla ilgili ikinci bir sınav tanımlarız. Böylelikle yükleme ile ilgili de vakit kazanmış olursunuz. Ve boşluk doldurma gibi durumlar için ekstra arayarak bulma şeklinde ekstra vakit kaybetmezsiniz. Yeterince vakit klasik soru için ayrılmış olur diye düşünüyorum.
+
+751
+02:25:42,015 --> 02:25:48,935
+Dediğim gibi arkadaşlar, mutlaka ve mutlaka mevcut yaptığımız bütün örnekleri siz de kendiniz deneyin.
+
+752
+02:25:49,756 --> 02:26:00,536
+Tanımları inceleyin. Mesela egzekon farkı, ondan sonra parametre aktarım yöntemleri gibi durumlardaki tanımlamaları inceleyin, okuyun.
+
+753
+02:26:00,536 --> 02:26:05,155
+Bunları kavramaya çalışın. Karşılaştırarak tanımlayın siz de kendi açınızdan.
+
+754
+02:26:06,296 --> 02:26:09,456
+Tekrar etmek gerekirse vize notlarımız çok kötü.
+
+755
+02:26:10,324 --> 02:26:17,144
+Elimizde sadece imkan olarak ödev ve final kaldı. Lütfen bunları da iyi şekilde kullanmaya çalışın.
+
+756
+02:26:19,504 --> 02:26:22,244
+İkinci bir ödev vereceğiz. Bir de finalimiz var.
+
+757
+02:26:24,684 --> 02:26:25,544
+Evet [öğrenci], buyur.
+
+758
+02:26:25,940 --> 02:26:33,260
+Hocam, ne kadar uygun bilmiyorum da, acaba ilk ödevin yüzdesi artıp, şimdi vereceğiniz ödevin yüzdesi düşebilir mi acaba?
+
+759
+02:26:33,819 --> 02:26:36,360
+Algoritma analizinde de Amaç Hoca böyle bir şey yapmıştı daha.
+
+760
+02:26:36,920 --> 02:26:39,240
+Hani şimdi finallerde yaklaşıyor, çok fazla ders var.
+
+761
+02:26:40,940 --> 02:26:43,639
+Siz yok mu bilmiyorum da, diğer arkadaşlarla ne düşünüyorsunuz?
+
+762
+02:26:43,659 --> 02:26:47,600
+Diğer grupla da konuşuruz, diğer gruptaki Furkan Hoca'nızla da konuşuruz.
+
+763
+02:26:48,051 --> 02:27:15,291
+Ama baştan ilan ettiğimiz şekliyle ilerlemek daha iyi olabilir. Şimdi mesela senin için ikinci ödevin ağırlığının yüksek olması daha avantajlı olabilir ama bir başka arkadaş için de bu bir dezavantaj oluşturabilir. Bu gibi durumlarda başta nasıl ilan edildiyse o şekilde ilerlemek daha faydalı olabilir. Biz sizin faydanızda olacak şekilde durumu inceleriz. Genel çıkan not ortalamasını gerekiyorsa belli bir kat sayıla da
+
+764
+02:27:15,727 --> 02:27:38,187
+Çarparız, neyse, bir şeyler yaparız, bunu tam nasıl ifade ederim bilemiyorum ama bir nihai not hesaplarız ama şu anda o yüzdeleri değiştirmek bazıları için anlamlı, pozitif olurken bazıları için negatif olabilir. O yüzden dolayı böyle bir sıkıntısı var ödev açısından düşündüğümüzde.
+
+765
+02:27:40,912 --> 02:27:45,031
+ikinci ödeve göre daha kolay kalmış olacak. Öyle söyleyeyim.
+
+766
+02:27:46,192 --> 02:27:53,371
+Tamam hocam, teşekkür ederim. Ben duruma göre, siz de uygun görürsünüz, diğer arkadaşlar da, sadece benim isteğimle olacak bir iş değil tabii ki de.
+
+767
+02:27:53,932 --> 02:28:02,551
+Şimdi finallerde yaklaşacaksın, sanırım herkes şu an yoğun geçecek döneme. O yüzden böyle bir şey dedim ama dediğiniz gibi ikinci ödeve de telafi etmek isteyen olacaktır. Onu da haklısınız.
+
+768
+02:28:02,995 --> 02:28:11,955
+Dolayısıyla diğer grupla da konuşuruz ama varsayılan olarak az önce söylediğim mantık çerçevesinde hareket etme durumumuz olabilir.
+
+769
+02:28:13,295 --> 02:28:18,655
+Dolayısıyla arkadaşlar böyle dönemi tamamlamış oluyoruz.
+
+770
+02:28:19,376 --> 02:28:24,995
+Dönemle ilgili, dersle ilgili, geriye kalan ödev ve finalle ilgili sormak istediğiniz bir şeyler varsa
+
+771
+02:28:26,128 --> 02:28:31,268
+onları alayım. Yoksa dersimizi ve dönemimizi tamamlamış olalım.
+
+772
+02:28:48,371 --> 02:29:13,592
+Herhangi bir soru gelmiyor. Yorum yok herhalde. Bunlar haricinde arkadaşlar yine mail üzerinden de herhangi bir sorunuz olursa iletebilirsiniz. Ben hızlı bir şekilde cevap vermeye çalışıyorum. Bazı durumlarda yoğunluk oluyor ama dönüş yapmaya çalışıyorum. Aklınıza takılan başka şeyler olursa mail üzerinden de sorabilirsiniz diyeyim. Böylelikle bu dönemlik dersimizi tamamlamış olalım.
+
+773
+02:29:13,984 --> 02:29:36,044
+Tekrar vurgulayayım yalnız. Vize notlarımız kötü. Dolayısıyla bu ödev ve finaldeki fırsatı iyi değerlendirmeye çalışalım. Bunu tekrar vurgulamış olayım. Teşekkür ediyorum arkadaşlar. Final zamanı tekrar görüşürüz diyorum. İyi günler hocam. Teşekkür ederim. İyi günler.
