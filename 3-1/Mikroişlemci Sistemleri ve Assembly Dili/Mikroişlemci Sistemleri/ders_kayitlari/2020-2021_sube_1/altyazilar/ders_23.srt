@@ -1,0 +1,2399 @@
+1
+00:05:23,636 --> 00:05:25,164
+Arkadaşlar, merhaba.
+
+2
+00:05:28,915 --> 00:05:30,115
+Diyebiliyor musunuz?
+
+3
+00:05:37,363 --> 00:06:00,423
+Tamamdır. Bu hafta kesmelerle ilgili olarak devam edeceğiz. Kesme kavramıyla ilgili vektör tablosunda adresler nasıl değiştirilir ona bakacağız. Sonrasında 82.59'a bakacağız. Önümüzdeki hafta ayın 1 Ocak olduğu için dersimiz olmayacak.
+
+4
+00:06:01,076 --> 00:06:11,076
+Bir sonraki dersimiz de 8 Ocak'ta olacak ve o da son dersimiz oluyor. Dolayısıyla bu hafta 8259 ile ilgili konuyu bitirmemiz uygun olacak.
+
+5
+00:06:11,076 --> 00:06:18,076
+Son haftada RAM ve ROM ile ilgili hafıza arayüzünden bahsedeceğiz. Böylelikle dersimizi tamamlamış olacağız.
+
+6
+00:06:18,076 --> 00:06:28,076
+Bu hafta yine 4. laboratuvarın A grupları laba girecek, onu biliyorsunuz zaten. Bu dersimiz bittikten sonra diğer grupla ilgili devam edersiniz.
+
+7
+00:06:28,660 --> 00:06:38,379
+Yalnız bugün niye bu kadar az kişi var? Normalde dersi 10 katı kadar kişi alıyor yani katılanlara. Bunu merak ediyorum açıkçası.
+
+8
+00:06:45,043 --> 00:07:01,043
+Evet, haftaya da lab olmuyor doğal olarak çünkü zaten resmi tatil olmuş oluyor. Yani programda nasıl yaptılar bir bakayım tekrar ama yanlış hatırlamıyorsam haftaya lab konulmamış olması lazım. Hemen bakıyorum.
+
+9
+00:07:04,660 --> 00:07:15,660
+Hocam, o zaman bir hafta ertelemeli mi yapılacak lablar? Şimdi 4A grubu bu hafta, gelecek hafta da 5. labın A grubu olacak.
+
+10
+00:07:15,660 --> 00:07:23,660
+Onu arkadaşlar bir planlarlar. Belki son hafta bütün grupları almak falan düşünülebilir. O da bir alternatif.
+
+11
+00:07:23,660 --> 00:07:28,396
+Bazen şey oluyor, bu uzaktan eğitime geçtiğimiz durumdan itibaren...
+
+12
+00:07:28,468 --> 00:07:47,867
+Finallerin başlamasına kadar aradaki bir hafta bir mazeret haftası gibi de uygulanıyor. Ona da bir bakarız. Eğer öyle bir durum varsa o haftayı değerlendiririz. Şu anda programda son haftanın son laboratuvar tarihleri ilan edilmemiş. Beşinci deneyler için. Bununla ilgili tekrar duyuru yapar arkadaşlar.
+
+13
+00:07:47,867 --> 00:07:49,268
+Anladım hocam, teşekkürler.
+
+14
+00:07:53,555 --> 00:08:00,155
+Size takvim olarak uymayan durumlar varsa mutlaka belirtin. Arkadaşlar ona göre düzenleme yaparlar.
+
+15
+00:08:00,155 --> 00:08:04,655
+Yani duyuruları takip etmiş olun. Olur mu? Piyazadan zaten duyurmuş olurlar.
+
+16
+00:08:04,655 --> 00:08:11,655
+Tamam. Şimdi bu hafta kaldığımız yerden devam edelim.
+
+17
+00:08:19,283 --> 00:08:43,484
+Şimdi geçen hafta neler yaptık? Hızlıca bir üzerinden geçelim. Çok hızlı bir şekilde. Öncelikli olarak, polling mantığı ve interrupt mantığı arasındaki farkı görsel olarak anlatmaya çalışmıştık. Aslında burada üç farklı veri aktarımı metodu vardı. Bunlardan bir tanesi polling'ti, diğeri interrupt'tı, üçüncüsü de direct memory access'ti. Kavramsal olarak bunları bilelim arkadaşlar.
+
+18
+00:08:44,403 --> 00:08:54,403
+Polink mantığında bir I.O. cihazından veri okumak istediğimiz zaman, yani oradan veri aktarmak istediğimiz zaman cihaz hazır mı diye kontrol etmemiz gerekiyor. Polink mantığı bunu gerektiriyor.
+
+19
+00:08:54,403 --> 00:09:08,403
+Sürekli olarak cihazın ilgili bir statüs yazmacını okuyup bit maskelemesi yapıp ilgilendiğimiz değerin oluşup oluşmadığına kontrol etmemiz gerekiyor. Eğer değer oluşmuşsa bu şu anlama geliyor.
+
+20
+00:09:08,607 --> 00:09:18,607
+ilgili veri I.O cihazında hazır, gidip onu okuyabilirim. Bunu 8251'de iXredi ve TXredi üzerinden yapmıştık hatırlayacak olursanız.
+
+21
+00:09:18,607 --> 00:09:27,607
+8255'de grup A'da int, ea, int, eb uçları veyahut da pinleri üzerinden yapmıştık.
+
+22
+00:09:27,823 --> 00:09:47,023
+8254'de out ucunu kontrol ederek bunu yapmıştık. Başka ne entegremiz vardı arada? DAC ve ADC için intre uçları üzerinden bunu ayrı bir cihaz olarak mesela özellikle ADC'de bunu bu şekilde görmüştük ADC entegresinde.
+
+23
+00:09:47,988 --> 00:09:55,988
+Dolayısıyla polling mantığı bütün bu sistemlerde çalışıyor. Aynı zamanda bu sistemler doğal olarak interrupt'ı da destekliyor.
+
+24
+00:09:55,988 --> 00:10:10,988
+Örneğin 8255 için baktığımızda interrupt enable A ve interrupt enable B uçları zaten otomatikman adı üzerinde interrupt enable diye söyledim onları pardon interrupt request A ve interrupt request B uçları.
+
+25
+00:10:10,988 --> 00:10:14,892
+Bunlar doğal olarak zaten intre ucu ile uyumlu çalışan değerler.
+
+26
+00:10:15,091 --> 00:10:32,091
+Bunun yanında 8254'deki, 8251'deki RX Reddy ve TX Reddy uçlarını da interrupt tetikleme için kullanabiliriz. 8254'deki out ucunu kullanabiliriz. ADC'de zaten interrupt request isimli bir uç var, onu doğrudan kullanabiliriz. DAC'nin böyle bir...
+
+27
+00:10:33,043 --> 00:10:39,443
+Veri okuma yönünde çalışmadığı için, sadece veri yazma yönünde çalıştığı için böyle bir interrupt request ucu yok.
+
+28
+00:10:39,443 --> 00:10:50,203
+8259'da bütün bu cihazların, biraz sonra göreceğiz, bütün bu cihazların bu cihazlardan kaynaklı olarak gelen kesme isteklerini yöneten yardımcı devre olarak ortaya çıkıyor.
+
+29
+00:10:50,203 --> 00:10:58,283
+Dolayısıyla kesme temelli veri iletişimine baktığımızda mantık şuydu atılacak olursanız, o sırada mikroişlemci başka işle uğraşıyor ama öncesinde...
+
+30
+00:10:58,611 --> 00:11:02,611
+I.O cihazlarını uygun şekilde programlamış.
+
+31
+00:11:03,379 --> 00:11:22,579
+Dolayısıyla mikroişlemci başka işle uğraşırken veri hazır olduğunda kesme tetikleme ucu üzerinden I.O. cihazları mikroişlemciyi uyarıyor ve böylelikle mikroişlemci tam ortasında ise bir instruction onu bitirip daha sonrasında kesme isteğini değerlendirmek adına gerekli fonksiyona dallanıyor ve bu şekilde bir süreç yürüyor.
+
+32
+00:11:22,579 --> 00:11:30,779
+Direct memory access'de ise, onu dersimiz kapsamında göremeyeceğiz, yani vakit yetmedi onunla ilgili olarak. Direct memory access'de ise yine bir yardımcı devremiz var.
+
+33
+00:11:31,379 --> 00:11:56,220
+Bu çevre aslında iki tane birim arasındaki, birisi IO, diğeri memori olabilir veya memori memori arasında olabilir. Bu iki çevre birim arasındaki veri aktarımını kendi üzerinden döndürüyor. Şu anda mesela interrupt ve polling mantığında bakın, IO cihazından bir değer okuyup hazır olduğunda değer okuyup bunu bir memori bölgesine yazabilmek için verinin işlemciden geçmesi gerekiyor.
+
+34
+00:11:56,495 --> 00:12:01,495
+Veriyi önce işlemciye okuyacağım, daha sonra yazacağım. Direct memory access'de ise şu şekilde.
+
+35
+00:12:03,231 --> 00:12:28,731
+Direct Memory Access Controller'ı uygun şekilde programladığımız zaman neyi programlıyoruz? Hangi adresten itibaren okuyacak? Hangi adrese yazacak? Bunları yazıyoruz üzerine. Bir de ne kadar byte yazacak? Ne kadar byte'lık veri transferiyle görevli olacak? Bunu yazıyoruz. Daha sonrasında ise mikroişlemci veri yollarını kontrolünü Direct Memory Access Controller'a devrediyor ve bu iki cihaz arasında veri aktarımı hızlı bir şekilde sağlanıyor.
+
+36
+00:12:31,231 --> 00:12:34,231
+Bu da DirectMemure Access mantığı.
+
+37
+00:12:34,231 --> 00:12:41,231
+Kavramsal olarak bilelim bunları arkadaşlar. Sınavda sözel soru olarak sorabilirim. Haberiniz olsun. Devam edelim.
+
+38
+00:12:56,724 --> 00:13:13,724
+Çeşitli kesme kaynaklarından bahsetmiştik. Yazılımsal olarak iki farklı tip vardı. Bunlardan birisi doğrudan instruction'ın kendisiydi. Int diye bir instruction'ımız var. Yanına vermiş olduğumuz 0 ile 255 arasındaki değere göre 256 farklı kesme tipini tetiklememiz mümkündü.
+
+39
+00:13:13,724 --> 00:13:19,724
+Özel bazı instruction'lar vardı. Örneğin int o doğrudan 4 tipinde kesme tetikliyordu gibi.
+
+40
+00:13:19,923 --> 00:13:25,884
+Veyahut da bir takım işlemler sonucunda, aritmetik işlemler sonucunda kesme tetiklenebilir.
+
+41
+00:13:25,884 --> 00:13:32,243
+İşlem sonucuna göre, örneğin bir sayıyı sıfıra böldüğümüzde, bölmeye çalıştığımızda sıfıra bölme kesmesi tetikleniyor.
+
+42
+00:13:32,943 --> 00:13:39,443
+Veyahut da bölme, integer bölmesi yaptık, integer bölmesi de demeyin, işaretsiz sayı bölmesi yaptık örneğin, bir örnek olarak.
+
+43
+00:13:40,163 --> 00:13:45,163
+İşlem sonucunda taşma oluşabilir. Bu da overflow durumu olarak kesme tetikliyor.
+
+44
+00:13:45,716 --> 00:14:00,476
+Örnek vermek gerekirse, DX ve AX yazmaçlarındaki değerimiz çok büyükse, DX ve AX'deki değerler çok büyük, BX yazmacında çok küçük bir değer var.
+
+45
+00:14:00,476 --> 00:14:12,476
+DX, AX'i BX'e böldüğümüzde, yani div BX komutunu verdiğimizde çıkan sonuç 16 bitten daha büyük çıkabilir. Bu durumda da overflow kesmesi otomatik olarak tetikleniyor. Yani işlem sonucuna göre tetikleniyor.
+
+46
+00:14:12,851 --> 00:14:38,251
+Donumsal iki tane kesme ucumuz vardı. NME ve intre uçları. Intre, interrupt request, NME, non-maskeable interrupt uçları. Non-maskeable interrupt ucu olduğuna göre bir tanesinde maskable olması lazım. Yani maskelenin bilen. O da intre ucu. Intre ucu nasıl maskelenebiliyor? IF bayrağı ile maskelenebiliyor. IF bayrağı 0 ise intre ucundan ne kadar seviye tetiplomasi gönderirsek gönderelim.
+
+47
+00:14:38,676 --> 00:14:49,176
+Bu mikroişlemci tarafından değerlendirilmiyor. NMI ucu otomatik olarak tip 2 kesmeyi tetikliyor. Interrupt request hangi tip kesmeyi tetikleyecek?
+
+48
+00:14:49,176 --> 00:14:57,176
+Bunun için şu slide'a bakabiliriz.
+
+49
+00:14:57,279 --> 00:15:06,879
+Intr ucundan bir kesme isteğe geldiğinde mikroişlemci tarafından bir acknowledge işareti gönderiliyor. Bu da mikroişlemcinin int a ucu tarafından gönderiliyor.
+
+50
+00:15:06,879 --> 00:15:13,759
+8086'lı sistemlerde iki defa interrupt acknowledge aktivasyonunun geçmesi lazım.
+
+51
+00:15:13,759 --> 00:15:18,399
+Bazı sistemlerde ilk int a aktivasyonunda...
+
+52
+00:15:18,591 --> 00:15:23,591
+Kesme vektör tipini okuyabiliyor sistemler ama 8086 için iki kere geçmesi lazım.
+
+53
+00:15:23,591 --> 00:15:27,591
+İlk geçtiğinde data uçlarındaki değer, çöp değer onu okumuyor.
+
+54
+00:15:27,591 --> 00:15:36,591
+İkinci interrupt, eknoluç geçişinde ise bizim vektör tipini D0, D7 uçlarından mikroişlemciye göndermemiz gerekiyor.
+
+55
+00:15:36,591 --> 00:15:39,591
+Dolayısıyla, geldik geri.
+
+56
+00:15:39,591 --> 00:15:41,355
+Örneğin...
+
+57
+00:15:41,427 --> 00:15:48,627
+int komutunu çalıştırdıktan sonra yanında vermiş olduğumuz 8 bit immediate değer hangi tip kesme tetiklendiğini belirliyor.
+
+58
+00:15:48,627 --> 00:15:52,227
+NME ucu otomatik olarak tip 2 tetikliyor.
+
+59
+00:15:52,227 --> 00:16:04,028
+intre ucundan kesmeler ise veri yolunun düşük anlamlı 8 bitinden okuduğu tipe göre, okuduğu değere göre tetikleyeceği kesme tipini belirlemiş oluyor.
+
+60
+00:16:04,788 --> 00:16:19,548
+Burada donanımsal olarak bir uçtan daha bahsetmiştik. Int A ucu, interrupt request ile birlikte çalışıyor. Çalışma mantığında şu dalga şeklinden görmüş oluyoruz. Burada interrupt request seviye olarak çalışıyor. Bu arada onu söylemedim.
+
+61
+00:16:19,548 --> 00:16:26,548
+Interrupt request ucunun aktif olabilmesi için bu uçta lojik bir değerin belirli bir süre boyunca bulunması lazım.
+
+62
+00:16:27,347 --> 00:16:45,607
+Bu interrupt request geldiği vakit, yani belirli bir süre boyunca lojik bir kalmışsa, iki kere interrupt acknowledge aktivasyonu geçiyor. İkinci düşen kenarda veri yoluna çevre cihazının vektör tipini, kesme vektör tipini sağlaması gerekiyor.
+
+63
+00:16:45,607 --> 00:16:54,107
+NME ucuna baktığımızda ise NME ucu yükselen kenarla tetikleniyor. Yükselen kenarla tetiklemek aslında daha pratik bir durum.
+
+64
+00:16:54,484 --> 00:17:02,484
+Çünkü geçiş anı net, belli. Ama interrupt request ucunun belirli bir süre boyunca seviye lojik olarak birde kalması lazım.
+
+65
+00:17:02,484 --> 00:17:09,483
+Yapmış olduğumuz örneklemeye göre anlık bir değişim varsa bu anlamlı interrupt request ucunu kaybedebiliriz.
+
+66
+00:17:09,483 --> 00:17:18,483
+Dolayısıyla böyle bir riski var seviye tetiklemenin ama kenar tetikleme değişim anında bu otomatik olarak yakalanabiliyor diyebiliriz.
+
+67
+00:17:18,528 --> 00:17:27,528
+IF bayrağından bahsetmiştik. IF bayrağı interrupt request ucunun çalışıp çalışmamasını kontrol ediyor. Yani donanımsal kesmeleri kullanayım mı kullanmayayım. Bunu belirliyor.
+
+68
+00:17:27,528 --> 00:17:36,528
+Bir de trap flag vardı. Trap flag ise aslında arkadaşlar bir reset ettiğimiz durumda. Trap flag'i bir reset ettiğimiz durumda.
+
+69
+00:17:36,528 --> 00:17:46,316
+Her bir instruction yürütüldükten sonra ilgili single step kesmeye tetikleniyor. Yani her instruction'dan sonra niye kesme tetiklensin?
+
+70
+00:17:46,644 --> 00:17:50,644
+Adım adım debug yapabilmek için bunu tetiklemek gerekiyor.
+
+71
+00:17:54,644 --> 00:17:59,564
+Küçücük bir ara rica edeceğim arkadaşlar. Bir dakika önemli bir telefon var. Hemen geliyorum.
+
+72
+00:20:22,996 --> 00:20:24,996
+Tekrar merhaba arkadaşlar.
+
+73
+00:20:25,996 --> 00:20:39,996
+TF bayrağından bahsediyorduk. TF bayrağı, trap flag, her adımda bir, her bir instruction yürütüldüğünde tetiklenen bir kesme sağlıyor. Bu da adım adım debug yapmamızı imkanlı kılıyor.
+
+74
+00:20:39,996 --> 00:20:45,996
+Önemli bir nokta var. Otomatik olarak biz kesme alt programlarına gittiğimizde, yani şöyle düşünelim.
+
+75
+00:20:46,387 --> 00:21:01,067
+Bir kesme isteğe geldiği zaman mikroişlemci bunu karşılayabilecekse yaptığı işlem şu oluyor. O kesme tipine göre, her bir kesme tipine karşılık farklı bir kesme alt programı tanımlayabiliyoruz sistemde.
+
+76
+00:21:01,296 --> 00:21:26,135
+Gelen kesmeye göre kesme alt programına dallanıp oradaki işlemi yürütüyoruz. Kesme alt programı aslında sadece o kesme ile ilgili olarak o I.O. cihazının verisi hazır olduğunda yapılacak işlemlere ilişkin fonksiyonları içeriyor, instructionları içeriyor. Dolayısıyla sistem böyle çalışıyor. Bir kesme isteği geldiği zaman kesme alt programına dallanıyoruz, oradaki fonksiyonları yürütüp geri dönüyoruz.
+
+77
+00:21:26,516 --> 00:21:35,135
+Şimdi TF ve IF ile ilgili olarak bağlayacağım nokta şu. Ana program içerisinde IF ve TF'yi bir olarak set ettikten sonra
+
+78
+00:21:35,731 --> 00:21:47,331
+İlgili mesela interab flag ile ilgili durumu ile alalım. Bir dış kesme gelmiş ise, kesme alt programına dallandıktan sonra, arada bir takım işlemler var onu biraz sonra anlatacağım.
+
+79
+00:21:47,331 --> 00:22:00,831
+Kesme alt programına dallandığımızda otomatik olarak if bayrı 0 oluyor. Bunun anlamı şu, kesme alt programında if eşit 0 yapılıyor, otomatik olarak yapılıyor bu. Dolayısıyla kesme alt programı içerisindeyken ben.
+
+80
+00:22:01,364 --> 00:22:20,864
+Aynı cihazla ilgili tekrar bir kesme gelmesini default olarak engellemiş oluyoruz. Eğer istersek ve bunun farkındaysak, kesme alt programındayken kesme tetiklemesini biz ife bayrağını uygun şekilde bir yaparak kontrol edebiliriz. Ama default olarak kesme içerisindeyken kesme gelmesin diye
+
+81
+00:22:21,364 --> 00:22:34,364
+IF bayrağı 0'a set ediliyor. Aynı durum, TF bayrağı için de geçerli. Ana programda, TF bayrağını birer olarak set ettikten sonra, ilk instruction'ı yürüttüğümde, tip 1 kesme alt programına gidiyorum.
+
+82
+00:22:34,364 --> 00:22:39,364
+Kesme alt programına girdiğimde otomatik olarak, TF bayrağı sıfırlanıyor. Bunun anlamı şu.
+
+83
+00:22:39,536 --> 00:22:50,936
+Kesme alt programındaki fonksiyonları yürütürken, onun adımlarında da yine kesme iç içe gelmesin diye.
+
+84
+00:22:50,936 --> 00:22:54,536
+Tf'nin kullanımı yani bu şekilde tanımlayabiliriz.
+
+85
+00:22:54,536 --> 00:23:05,536
+Örneğin, mikroişlemcide adım adım her bir işlem yapıldığında, register'ların bütün değerlerini ekrana yazdıran bir kesme alt programı ile bu sistemi birlikte kullanmamız mümkün.
+
+86
+00:23:06,195 --> 00:23:16,695
+Kesmelerle ilgili özel bir durum vardı. O da şuydu arkadaşlar. Kesme alt programlarına giderken özel herhangi bir far call'dan farklı bir işlem yapılıyor.
+
+87
+00:23:16,695 --> 00:23:25,695
+Dönerken de farklı bir işlem yapılıyor. Dolayısıyla kesme alt programlarının dönüş fonksiyonu farklı, komut farklı, interrupt return fonksiyonunu kullanıyoruz.
+
+88
+00:23:25,695 --> 00:23:31,695
+Örneğin bir kesme alt programı tetiklendiği zaman, çağrılacağı zaman
+
+89
+00:23:31,892 --> 00:23:41,072
+Mikroişlemci otomatik olarak geri dönüş için segment ve offset değerlerini atıyor ama bunlardan önce de flag yazmacını atıyor.
+
+90
+00:23:41,072 --> 00:23:44,072
+Dolayısıyla kesme alt programına giderken önce...
+
+91
+00:23:44,276 --> 00:24:07,676
+Bayrak yazmacı yığına atılıyor. Daha sonra segment, daha sonra offset değeri yığına atılıyor. Dönerken de buna uygun şekilde çalışabilmesi için IRED komutuyla dönüyoruz. IRED önce yığının en üstünden çektiği değeri IP'ye atıyor. İkinci çektiği değeri CS'ye atıyor. Üçüncü çektiği değeri de flag yazmacına otomatik olarak atıyor diye söyleyebiliriz. Burada bunları anlatmıştık.
+
+92
+00:24:08,016 --> 00:24:20,316
+Peki, kesme vektör tablosu dediğimiz bir şey var. Kesme vektör tablosu aslında neyi içeriyor? Kesme vektör tablosu mikroişlemci içerisinde tanımlanabilecek bütün kesme tiplerinin tutulduğu bir tablo.
+
+93
+00:24:21,916 --> 00:24:34,216
+Toplam 256 tane farklı kesme tipimiz var. Bu tablonun boyutu da 1024 byte. Ne demek bu? Demek ki bu tablonun her bir gözü için 4 byte yer ayrılmış.
+
+94
+00:24:34,516 --> 00:24:37,516
+4 byte'e ben bu fonksiyonu nasıl yazacağım?
+
+95
+00:24:37,516 --> 00:24:44,516
+Dolayısıyla kesme vektör tablosunda kesme alt programlarına ilişkin fonksiyonlar veyahut da komutlar yok.
+
+96
+00:24:44,516 --> 00:24:51,516
+Sadece ve sadece kesme alt programının adresleri var. Adresleri nasıl belirlemeliyiz?
+
+97
+00:24:51,516 --> 00:24:57,516
+Şimdi programımız örneğin 700h segmenti civarında çalışıyor ama kesme vektör tablosu...
+
+98
+00:24:58,160 --> 00:25:13,160
+Hafıza uzayının 0 adresinden itibaren başlıyor. Dolayısıyla burada bir segmentler arası jump veyahut da dallanma var, koşulsuz dallanma var. Öyleyse sanki bir far jump gibi düşüneceğimiz durum söz konusu.
+
+99
+00:25:13,160 --> 00:25:22,160
+Öyleyse kesme vektör tablosunun her bir gözünde 4 byte var. Bunlardan iki tanesi kesme alt programının yani bu vektör tipiyle ilişkili.
+
+100
+00:25:22,387 --> 00:25:30,627
+kesme alt programının segment değeri 2 tane byte da bu kesme alt programının bulunduğu segmentteki offset değeri olacak.
+
+101
+00:25:31,284 --> 00:25:49,284
+Dolayısıyla kesme vektör tablomuzun 256 tane gözü var. Her bir gözünde 4 byte yer ayrılmış. Bunlardan iki tanesi o ve kesme tipiyle ilişkili fonksiyonun, kesme alt programının segment değeri 2 byte'da bu kesme alt programının offset değeri olmuş oluyor.
+
+102
+00:25:59,284 --> 00:26:11,764
+Bir alan kesme vektör tablosu için ayrılmış durumda ve bu kesme vektör tablosu fiziki adres uzayının yani 20 bitlik adres uzayının 0H adresinden, 20 bitlik 0H adresinden itibaren başlıyor.
+
+103
+00:26:12,723 --> 00:26:25,844
+Sistem başladığı zaman kesme vektör tablosu boş. Öncelikli olarak sistemin reset halini hatırlayacak olursanız FFFF0H adresinden itibaren reset vektörümüz başlıyordu. Bu ne demek?
+
+104
+00:26:26,291 --> 00:26:46,291
+Bilgisayar veya mikroişlemci resetlendiğinde kod segmente FFFFH değerini atıyor, instruction pointera da 0H değerini atıyor. Bunlardan hesaplanan 20 bitlik fiziki adres FFFF0 adresi. Dolayısıyla bu adreste ilk sistemi devralan bir BIOS ROM'unun yerleşik olması lazım.
+
+105
+00:26:52,847 --> 00:27:18,607
+BIOS'la ilgili bir takım kesmeleri vektör tablosuna dolduruyor. Yani neyi dolduruyor? Kendisi içerisinde tanımlı olan bazı kesme alt programlarının adreslerini kesme vektör tablosuna yerleştiriyor. Daha sonra çeşitli kontroller vardı. Bu kontrolleri yaptı. Boot'u işletim sistemine, DOS'a devretti. DOS bunu ele aldıktan sonra işletim sistemiyle ilgili soru mu var?
+
+106
+00:27:20,500 --> 00:27:29,059
+İşletim sistemi ile ilgili olarak kendi kesme alt programların adresini vektör tablosuna yerleştiriyor.
+
+107
+00:27:29,059 --> 00:27:38,179
+Üçüncü bir seviyede de biz kullanıcı olarak geliştirmiş olduğumuz yazılımların belki bazı kesme ihtiyaçları var olabilir.
+
+108
+00:27:38,179 --> 00:27:47,299
+Bizim için ayrılmış, kullanıcısı için ayrılmış alanı kullanarak biz de kendi kesme alt programlarımıza ait adresleri kesme vektör tablosuna yerleştiriyoruz.
+
+109
+00:27:47,604 --> 00:27:51,604
+Ve bu şekilde kesme vektör tablosunun içeriği belirlenmiş oluyor.
+
+110
+00:27:53,604 --> 00:27:56,604
+Böyle söyleyebiliriz. Bu az önce bahsettiğim meselelerdi.
+
+111
+00:27:57,604 --> 00:28:02,604
+Kesme vektör tablosuna baktığımız zaman sıfıra bölme kesmesi tip 0 kesme.
+
+112
+00:28:03,604 --> 00:28:08,604
+Tf bayrağı 1 olduğu zaman her instrakşından sonra tetiklenen kesme tip 1 kesme.
+
+113
+00:28:09,604 --> 00:28:11,604
+Nm'ye I ile her zaman tip 2 kesme tetikleniyor demiştik.
+
+114
+00:28:12,336 --> 00:28:27,336
+Bir tane breakpoint koyarak sağladığımız kesme tip 3 kesme, overflow durumlarında tetiklenen kesme tip 4 kesme, belirli bir bölgeler işletim sistemi ve BIOS için ayrılmış durumda ve belirli bölgelerde kullanıcı için ayrılmış durumda.
+
+115
+00:28:27,336 --> 00:28:34,336
+Bir kesme işlemi yürütüleceği vakit mikroişlemcinin otomatik olarak yaptığı birtakım işlemler vardı.
+
+116
+00:28:34,336 --> 00:28:39,336
+Öncelikli olarak kesmelerde bir... Ne denir buna?
+
+117
+00:28:39,827 --> 00:28:51,827
+Önem sırası var. Belirli bir önem sırasına göre kontrol yapıyoruz. Bu önem sırasına göre hangi kesme varsa öncelikli olarak o yürütülüyor.
+
+118
+00:29:00,980 --> 00:29:24,559
+Kesme kontrolü anında birden fazla kaynaktan kesme gelmiş olabilir. Analog bir sistem olmuş olsaydı aynı anda kesme isteğinin gelmesi şansı çok düşüktü ama ayrık zamanla çalışan bir sistem olduğu için veya dijital bir sistem olduğu için belirli clock cycle'larla kesme var mı yok mu diye kontrol ettiğimiz için o kontrol aralığında birden fazla kaynaktan kesme gelmiş olabilir. Bakma sıramız da şu şekilde.
+
+119
+00:29:25,587 --> 00:29:36,087
+Öncelikli olarak, TF bayrağı kaynaklı single step kesme var mı? Yoksa NME kesmesi var mı? Yoksa intre kesmesi var mı? Yoksa int komutundan kesme var mı diye bakıyoruz.
+
+120
+00:29:36,087 --> 00:29:51,087
+Bunlardan belirtilen sırada kontrol ettiğimiz haliyle bir kesme varsa, bu durumda mikroişlemci otomatik olarak bunları yapıyor. Bayrak yazmacının yığını atıyor.
+
+121
+00:29:51,763 --> 00:29:59,763
+Daha sonra IF ve TF bayrakları sıfırlanıyor otomatik olarak. Sonra segment değerini yığını atıyor, offset değerini yığını atıyor.
+
+122
+00:30:00,403 --> 00:30:09,403
+Şimdi çalıştırdığımız kesme tipine göre, örneğin NME tipinde bir kesme ise otomatik olarak vektör tablosunun iki numaralı gözüne gideceğini biliyor.
+
+123
+00:30:09,403 --> 00:30:15,403
+Int-R tipi bir kesme ise bu durumda da data uçlarının düşük anlamlı byte'ından kesme tipini okudu.
+
+124
+00:30:15,403 --> 00:30:23,403
+Int komutuyla zaten hemen yanında kesme tipini immediate olarak vermiştik. Dolayısıyla kesme tipi yani vektörün hangi numaralı gözüyle ilgili
+
+125
+00:30:23,759 --> 00:30:35,759
+İş yapacağımız belli. Dolayısıyla mikroişlemci otomatik olarak kesme vektör tablosunun vektör tipi numaralı gözüne gidip oradaki değerleri kod segment ve instruction pointer'ı okuyor.
+
+126
+00:30:35,759 --> 00:30:40,759
+Bunun anlamı ne? Şu okumayı yaptığımız anda artık kesme vektör tablosundan
+
+127
+00:30:41,248 --> 00:30:57,248
+Kesme alt programına geçtik anlamına geliyor. Yani ana programımız akış içerisinde bir şeyler yapıyordu, bir kesme isteği geldi, ana programdaki işlemi kestik ve kesme alt programına dallanmış olduk. Şu IP ve CS değerlerinin yazılması bunu sağlıyor.
+
+128
+00:30:57,248 --> 00:31:06,923
+Daha sonra kesme alt programı içerisinde kesme ile ilgili veri aktarımını yaptıktan sonra IRET ile dönüş sağlıyoruz. IRET aslında yaptığı işlem
+
+129
+00:31:06,932 --> 00:31:18,932
+Yığına koymuş olduğumuz sırada ilgili değerleri çekmek. Yığının en üstünden çektiği değeri offset değeriydi. Bu IP yazmacına koyuyor. Sıradan çektiği değeri CS yazmacına koyuyor.
+
+130
+00:31:20,932 --> 00:31:33,932
+Daha sonra ise flag yazmacının ilişkin değeri yığından okuyarak flag yazmacına yazıyor. Şimdi bu durumda otomatik olarak IF bayrağı bakın nasıl işliyordu.
+
+131
+00:31:34,355 --> 00:31:40,115
+Önce bayrakları yığına attıktan sonra IF bayrağını sıfırlayıp kesme alt programına gidiyorduk ya.
+
+132
+00:31:40,115 --> 00:31:45,235
+Dolayısıyla kesme alt programının içerisinde özel bir şey yapmazsak IF bayrağı sıfır olarak mevcuttu.
+
+133
+00:31:45,235 --> 00:31:54,235
+Dönerken de yığından popfeyi çalıştırmıyor da buna benzer bir mantık çalıştırıyor diyelim.
+
+134
+00:31:54,235 --> 00:31:57,596
+Bunun için ekstra bir vakit harcamıyor diye söyleyeyim.
+
+135
+00:31:57,743 --> 00:32:05,144
+Zaten orijinal bayrak değerlerini çektiği için ana programda IF1 yapmışsak yine IF1 olarak ana programda devam etmemiz sağlanıyor.
+
+136
+00:32:07,144 --> 00:32:16,743
+Özel olarak kesme alt programları, kesme bayraklarıyla ilgili komutlarımız var. Bunlar sadece IF bayrağı ile ilgili özel komutlar.
+
+137
+00:32:16,912 --> 00:32:22,912
+Bunlardan bir tanesi set interrupt flag. Bu komutu çalıştırdığımızda if bayrağı 1 oluyor.
+
+138
+00:32:22,912 --> 00:32:28,912
+Ve cli clear interrupt flag, o da interrupt flag'i sıfırlıyor.
+
+139
+00:32:28,912 --> 00:32:32,912
+tf için özel bir komut yok. tf için ne yapabiliriz?
+
+140
+00:32:32,912 --> 00:32:37,912
+Yapabileceğimiz işlerden birisi, bir kontrol edelim.
+
+141
+00:32:37,912 --> 00:32:41,912
+load a hash bit flag diye bir yazmacımız vardı.
+
+142
+00:32:42,900 --> 00:32:47,900
+Emo 8086'nın helpinden bir bakayım şimdi, onu kullanabiliyor muyuz diye.
+
+143
+00:33:15,284 --> 00:33:20,884
+Örneğin kullanabileceğimiz komutlardan birisi load, ahash, flag registers.
+
+144
+00:33:21,684 --> 00:33:29,884
+Burada bakalım tf bayrağını atıyor mu? tf bayrağını atmıyormuş burada. Dolayısıyla tf bayrağı ile ilgili işlemi nasıl yapabiliriz arkadaşlar? Bir tahmininiz var mı?
+
+145
+00:33:31,284 --> 00:33:41,084
+Eğer ki mesela sign flag ile ilgili işlem yapacak olsaydık, önce load ederdik ahash'a, daha sonra bu da bit manipülasyonu yapıp sonra da geri store ile o da
+
+146
+00:33:42,740 --> 00:33:43,740
+Bu komut.
+
+147
+00:33:44,740 --> 00:33:47,740
+Store ah to flag registers.
+
+148
+00:33:48,740 --> 00:33:52,740
+Daha sonra da ah'a geri yazabilirdik. Ama tf ile ilgili bunu nasıl yapabiliriz?
+
+149
+00:33:54,740 --> 00:33:56,620
+Var mı fikri olan?
+
+150
+00:34:10,516 --> 00:34:12,516
+TF bayrağını nasıl set edeceğiz?
+
+151
+00:34:28,340 --> 00:34:29,579
+Evet, [öğrenci] buyur.
+
+152
+00:34:33,588 --> 00:34:35,588
+Sonuç bir yardım istemiyorum.
+
+153
+00:34:37,588 --> 00:34:39,588
+Cevap için... Evet, [öğrenci] buyur.
+
+154
+00:34:42,588 --> 00:34:43,588
+Mikrofonun açık ama, buyamıyorum.
+
+155
+00:34:43,588 --> 00:34:44,588
+Evet, buyur.
+
+156
+00:34:44,588 --> 00:34:45,588
+Şimdi geliyor mu hocam ses?
+
+157
+00:34:45,588 --> 00:34:46,588
+Geliyor, hı hı.
+
+158
+00:34:46,588 --> 00:34:55,588
+Hocam, TF bayrağı kod içerisinde bir hata olduğunda ayağa kalkan bir bayrak olduğu için öyle hatırlıyorum, yanlış hatırlıyor olabilirim.
+
+159
+00:34:56,788 --> 00:35:09,788
+Kod içerisinde bir signed fly'i ayağa kaldırmak istiyorsak, kod tarafında bir hatalı bir şey yazıp, sonrasında bayrakları okusak elde edebiliriz diye düşünüyorum.
+
+160
+00:35:09,788 --> 00:35:16,788
+Peki, mesela bizim daha önceden kullanmış olduğumuz bir sistem vardı, örnek olması açısından söyleyeyim.
+
+161
+00:35:17,172 --> 00:35:25,851
+donanımsal bir sistemdi. 8086'da bizatihi tek tek hexadecimal kodları üzerine girip adım adım çalıştırabiliyorduk.
+
+162
+00:35:25,851 --> 00:35:30,492
+Dolayısıyla sistemde hata olmasa bile adım adım debug yapabiliyoruz.
+
+163
+00:35:30,492 --> 00:35:33,211
+Onu nasıl yapabiliriz?
+
+164
+00:35:33,211 --> 00:35:44,291
+Böyle bir durumda trep fileyi ayağa kaldıracak bir kodu öncesinde çalıştırıp, kendi özel komutu yok da onu ayağa kaldıran bir özel durum vardı.
+
+165
+00:35:44,563 --> 00:35:53,764
+Onu sağladıktan sonra, flekleri okursak zaten, biz trap fleği set edilmiş halde elimizi alacağız. Ama o durumu şu anda hatırlayamadım.
+
+166
+00:35:53,764 --> 00:36:06,323
+Tamam, peki. Şöyle bir örnekleme yapabiliriz. Flek yazmacını yığına atıp, yığın üzerinde bit manipülasyonu yapıp, daha sonra tekrar flek yazmacını geri yükleyebiliriz.
+
+167
+00:36:12,543 --> 00:36:32,043
+tf bayrağının bir olmasını sağlamamız mümkün olabilir. Böyle bir durum olabilir. Dolayısıyla tf için özel bir komut yok ama özellikle neydi onun adı? if bayrağı için set ve clear komutlarımız mevcut. Onu söylemiş olalım. Efendim?
+
+168
+00:36:32,659 --> 00:36:48,340
+Hocam, bir de işletim sistemleri dersinde biz TF bayrağını işletim sisteminde yapılan hatalarda da ayağa kalktığını gördük de, o durumla şu anki gördüğümüz TF aynı şey mi? İşletim sisteminde.
+
+169
+00:36:48,596 --> 00:36:58,996
+Eğer işletim sistemi tarafında bir hata olursa, hani kod çalışırken bir yerde hata olursa, TF bayrağı ayağa kalkıyor gibi bir şey görmüştük biz işletim sisteminde.
+
+170
+00:36:58,996 --> 00:37:10,596
+Yani işletim sistemi tarafında öyle çalışabilir ama ben özellikle hani TF bayrağı için özel bir komut yokken, bunu nasıl bir yapabiliriz konusu, yani spesifik bir konu olarak bunu sormak istedim.
+
+171
+00:37:16,596 --> 00:37:30,539
+Bu arada bir hata olmasa bile adım adım DEVAC için bunu kullanabiliyoruz. Bununla ilgili olarak bir vakti zamanında bir vize sorusu muydu, final sorusu muydu hatırlamıyorum. Böyle bir soru da sormuştum. Simülasyon tarafında da denemesini yapmıştım bunu.
+
+172
+00:37:30,708 --> 00:37:48,708
+Bu şekilde çalışıyordu yani. Spesifik olarak işletim sistemi, zaten bizim örneklerimizde işletim sistemi olmadığı için oradaki davranışı nasıl olur tam bilmiyorum ama native bir şekilde denediğimiz zaman adım adım kesme, her instrakşından sonra kesme oluşturuyor bu sistem. Anlattım.
+
+173
+00:37:48,708 --> 00:37:50,708
+Anladım hocam, teşekkürler.
+
+174
+00:37:50,708 --> 00:37:54,708
+Evet, [öğrenci] da örnek olarak vermiş.
+
+175
+00:37:54,719 --> 00:38:09,920
+Yığını attıktan sonra AX'e okuyup AX'de işlem yapabiliriz diye bunu paylaşmış. Yeri doğruysa 8. bitti olacak. Evet, 1 yapmak için bu. Peki 0 yapmak için ne yapacağız?
+
+176
+00:38:11,920 --> 00:38:15,319
+Dolga verdiğin cevap doğru. Bir de 0 yapmak için ne yapabiliriz?
+
+177
+00:38:19,315 --> 00:38:24,715
+Orada da end işleminde, 8. biti 0 olacak şekilde end işlemini yapabiliriz. Doğru.
+
+178
+00:38:26,915 --> 00:38:28,915
+Şimdi devam edecek olursak,
+
+179
+00:38:30,915 --> 00:38:32,415
+Nereye geldik?
+
+180
+00:38:32,715 --> 00:38:34,115
+Bilmiyoruz. Heh, tamam.
+
+181
+00:38:34,415 --> 00:38:35,215
+Şimdi,
+
+182
+00:38:36,271 --> 00:38:57,271
+Az önceki mantık çerçevesinde sistem boot etti, kesme vektör tablosu boş, BIOS, ROM, boot'u devraldı, kendine ilişkin bazı kesme alt programlarının adreslerini yerleştirdi, işletim sistemi DOS devraldı, o da kendisine ait bazı işletim kesmeleri o sisteme yazdı.
+
+183
+00:38:57,427 --> 00:39:09,467
+Biz kendimiz yazdığımız bir programda bunu nasıl değiştirebiliriz veyahut da kesme vektör tablosundaki adresler nasıl değiştirilir? Ona ilişkin bir örnek bakacağız arkadaşlar. Şimdi ama bununla ilgili bir ön bilgi vermem gerekiyor.
+
+184
+00:39:10,688 --> 00:39:17,467
+Normalde biliyorsunuz ki biz bir örneğin bir fonksiyon çağırdığımızda, call, far veya call yaptığımız zaman
+
+185
+00:39:19,327 --> 00:39:38,827
+İlgili şeye gittik, programa gittik, alt programa gittik. İşlemimiz bittikten sonra geri döndüğümüzde koldan bir sonraki satıra gelmiş oluyoruz değil mi? Bunu hatırlıyorsunuz. Yapmış olduğumuz SMD dersinde de bu şekildeydi. Mikroişlemcide de kontrol ettiğiniz vakit genel olarak bu şekilde çalıştığını görmüş olmanız lazım.
+
+186
+00:39:38,827 --> 00:39:46,827
+Ama özellikle div sıfır kesmesi için özel bir durum var. Bütün şöyle çok genel olarak söyleyelim.
+
+187
+00:39:46,931 --> 00:40:08,612
+Bütün kesme istekleri, bütün far kollar, bütün near kollar, bunlar çalıştırıldığında bir sonraki instruction'a dönüyoruz. Bir tanesi hariç, o da div 0'da. Div 0'da div 0 kesmesi tetiklendiği vakit geri dönüşte, ıretle geri döndüğümüzde otomatik olarak div 0 durumunu oluşturan satıra dönüyoruz. Dolayısıyla...
+
+188
+00:40:08,864 --> 00:40:15,864
+Mikroişlemcinin biz bu şeyi handle ettikten sonra, div 0 meselesini ele alıp çözdükten sonra,
+
+189
+00:40:15,864 --> 00:40:22,864
+mikroişlemcinin bir sonraki instrakçına gidebilmesi için kesme alt programında bir şeyler yapmamız gerekiyor.
+
+190
+00:40:22,864 --> 00:40:27,864
+Burayı anlatabildim mi? Özellikle önemli çünkü div 0 örneği için.
+
+191
+00:40:32,275 --> 00:40:41,875
+Karışık geldi diyorsanız tekrar söyleyebilirim ama özellikle bu örnek için burayı anlamamız gerekiyor. Bu anlattığım şeyi, anlatmaya çalıştığım şeyi daha doğrusu.
+
+192
+00:40:45,492 --> 00:40:55,492
+Anlamlı geldi mi? Tamam. Şimdi bunu kapatalım. Tekrar bir ekran paylaşımı açalım.
+
+193
+00:40:57,972 --> 00:41:24,231
+Şimdi arkadaşlar, birkaç şeye dikkat etmemiz lazım. Bunlardan bir tanesi, burada göreceğiniz örnek, burada paylaşmış olduğum örnek, sadece ve sadece bizim programımız aktifken kesme vektör tablosuna istediğimiz kesme alt programını yerleştiriyor. Programımız sonlandırdıktan sonra da bu yerleştirdiği kesme alt programını yığından kaldıracak. Pardon, kesme vektör tablosundan da kaldıracak.
+
+194
+00:41:24,563 --> 00:41:52,264
+Birinci özellik bu. Özellikle bunu vurgulamak istiyorum. Çünkü örneğin işletim sistemi seviyesinde veyahut da özellikle işletim sistemi seviyesinde bir kesme alt programı yerleştirilecek olsaydı kesme vektör tablosunda, bunun için özel bazı fonksiyonlar veyahut da işlemler vardı. Bizimki buradaki örneğimiz böyle değil. Program çalıştığı sürece aktif, program kapandığında da zaten eski kesme vektör içeriğini geri yazacağız. Böyle bir durum söz konusu.
+
+195
+00:41:52,724 --> 00:42:01,724
+İkinci olarak buradaki örneğimiz div 0 kesmesi ile ilgili bir durumdu. Dolayısıyla div 0 kesmesinde...
+
+196
+00:42:03,699 --> 00:42:14,699
+Kesme alt programından geri döndüğümüzde div zero meselesini oluşturan satıra geri dönüyorduk. Bunu da bir sonraki komuta geçebilmek adına biz bir şeyler yapmamız lazım, ona bakacağız.
+
+197
+00:42:14,699 --> 00:42:27,699
+Tamam mı? Şimdi bununla ilgili olarak üçüncü noktada biz kesme vektör tablosunun bir gözünü değiştireceğiz. Bu kesme vektör tablosu, memori uzayının 0 adresinden itibaren başlıyor.
+
+198
+00:42:31,219 --> 00:42:57,719
+4 byte veri var. Buradaki veriler temel olarak önce offset değeri daha sonra segment değeri olarak yerleşik. Onu da slide'da göstermiştik. Düşük adreslerde offset değeri var, yüksek adreslerde, tablonun her bir gözünde düşük adreslerde offset değeri var, yüksek adreslerde segment değeri var. Tamam mı? Bu çerçevede ne yapacağız bakalım.
+
+199
+00:42:58,739 --> 00:43:16,800
+Şimdi önce programın genel bir yapısını inceleyelim. Bir stack segment tanımlamamız var. Kodu görebiliyorsunuz bu arada değil mi? Yani file uygun pencere olarak, window olarak paylaşmıştım. Görüyor olmanız lazım. Bir tane stack segment tanımamız var. Stack segment ile ilgili olarak hatırlatmak gereken nokta şu.
+
+200
+00:43:26,547 --> 00:43:49,547
+Fonksiyon kodlardan yığınlara atılması gereken şeyleri desteklemesi lazım, boyutu desteklemesi lazım. İkinci olarak çok küçük olmaması lazım. Üçüncü olarak çift sayıda bir byte alanı kaplaması lazım. Define word dediğimize göre 2 byte 12x2 24 zaten. Demek ki define word diyorsam sıkıntı yok. Ama define byte dersen mutlaka burayın çift olması gerekiyor. İkinci olarak...
+
+201
+00:43:50,483 --> 00:43:59,483
+İki tane dizimiz var. Bu dizinin karşılıklı elemanlarını birbirine böleceğiz. Yani dizi 1i bölü, dizi 2i şeklinde ilerleyeceğiz.
+
+202
+00:43:59,483 --> 00:44:05,483
+Gördüğünüz gibi ilk bölme işlemini başarılı bir şekilde yapacak ama ikinci bölme işleminde 2 bölü 0 işlemi var.
+
+203
+00:44:05,483 --> 00:44:15,483
+Bu kesmeyi uygun şekilde ele alıp bir sonraki işlemlere geçebilmemiz lazım. Onu söyleyebiliriz.
+
+204
+00:44:17,684 --> 00:44:41,984
+Bir şey bölü sıfır yaptığımız zaman normalde hani matematikte sonsuza yakın ser deriz ya bir şey bölü sıfır. Burada da yazabileceğimiz en büyük 16 bitlik sayı şeklinde bunu dönmek istiyoruz. Yani bir şey bölü sıfır olduğu zaman sistemin FFF dönmesini istiyoruz. Bu şekilde bir planımız var. Kesme ve kesme al programı bu şekilde çalışacak. Toplamda 7 elemanlı dizilerimiz var.
+
+205
+00:44:42,335 --> 00:45:00,335
+Bir de arkadaşlar, burada bakın, eski offset ve eski segment isimli iki tane değişkenimiz var. Bunların amacı da şu, bizim programımız aktif olduğu süre boyunca kesme vektör tablosunun belirli bir adresindeki içeriği değiştireceğiz.
+
+206
+00:45:00,335 --> 00:45:10,251
+Ama bizim programımız bittikten sonra orijinal değerleri geri yazmak istiyoruz. Bunun için bu 4 byte'lik değerleri kendi data segment alanımızda bir yere saklayacağız.
+
+207
+00:45:10,452 --> 00:45:27,252
+Kendi yazdığımız kesme alt programını sisteme yerleştirmeden önce yedeğini alacağız. Daha sonra kendi kesme alt programımızın adreslerini yerleştireceğiz. Programımız sonlanırken de yedeklemiş olduğumuz adresleri geri yazarak işletim sistemine devrediyor olacağız.
+
+208
+00:45:27,252 --> 00:45:36,852
+Şimdi bununla ilgili olarak, şimdi bu kesme alt programını şimdilik geçiyorum. Kod segment tanımımız var. Kod segment içerisinde
+
+209
+00:45:37,076 --> 00:45:56,896
+Bizim vektör tablosuna yerleştirmek istediğimiz fonksiyon burada. Bakın fonksiyonlar da bu kod segment içerisinde. Bizim programımız derlenip hafızaya yüklendiği zaman bu programın nereye yerleşeceği belli değil. Yani net değil. Derlenip hafızaya yüklendikten sonra hangi adrese yerleşeceği belli oluyor. Ama baştan belli değil.
+
+210
+00:45:57,248 --> 00:46:16,868
+Dolayısıyla bu program çalışırken ben bu adresi, bu prosedürün adresini vektör tablosuna yerleştiriyor olacağım. Dolayısıyla bakın adres 0 bölgesinde bir fonksiyon değil bu, new int dediğimiz fonksiyon. Hafıza bölgesinin hangi alanı boşsa orada ayrılan segment içerisinde bir fonksiyon.
+
+211
+00:46:17,331 --> 00:46:27,012
+Dolayısıyla sıfır adresine uzak. Bu noktadan da segment ve offset değerini almamız gerektiğini, bunun bir far kola benzer olduğunu buradan da hayal edebiliriz.
+
+212
+00:46:29,371 --> 00:46:34,791
+Şimdi programın akışına bakalım. Şurada yapmış olduğumuz işlemler işletim sistemine dönüş değerlerini sağlamak.
+
+213
+00:46:34,871 --> 00:46:42,311
+Burada yaptığımız işlemlerde tanımladığımız bu segmentin, şuradaki segmentin data segment olarak kullanılmasını sağlayan iki tane satırlık işlemimiz.
+
+214
+00:46:45,619 --> 00:46:47,119
+Önemli bir nokta.
+
+215
+00:46:52,307 --> 00:46:59,907
+Burada şu işlemi yapıyoruz. Az önce bahsettiğim işlemleri yapıyoruz. Şimdi bunların ne olduğunu size de sorarak birlikte ilerlemeye çalışalım.
+
+216
+00:47:01,407 --> 00:47:07,907
+Bunlardan ilk arkadaşlar, biz orijinal değerleri yedeklemeliyiz. Orijinal değerleri nasıl yedekleyebiliriz?
+
+217
+00:47:07,907 --> 00:47:12,907
+Şurada yapılan işlemler orijinal değerleri yedeklemek için yaptığımız işlemler.
+
+218
+00:47:15,907 --> 00:47:18,508
+Burada yaptığımız işlem neye karşılık geliyor?
+
+219
+00:47:34,387 --> 00:47:36,387
+Ne yapmışız? Adım adım gidelim.
+
+220
+00:47:36,387 --> 00:47:42,387
+AX'i sıfırlamışız, E, S'ye AX'e atamışız. Niye böyle dolambaçlı bir yol izledik? Farkında olan var mı?
+
+221
+00:47:47,795 --> 00:47:49,675
+Niye ESA'ya sıfır atamadık?
+
+222
+00:47:59,380 --> 00:48:04,500
+Evet doğrudan sayısal değer atayamıyoruz. O yüzden dolayı AX üzerinden atamamız lazım. Çok doğru.
+
+223
+00:48:05,019 --> 00:48:09,619
+Daha sonra şurada eriştiğimiz adres neresi? Bakın bakalım şu adres neresi?
+
+224
+00:48:11,159 --> 00:48:15,760
+ES'nin 0 offset'i. Bakın normalde biz bunu şöyle görmüştük daha önce.
+
+225
+00:48:16,539 --> 00:48:18,320
+Bu şekilde bir kullanım görmüştük.
+
+226
+00:48:18,547 --> 00:48:26,347
+Böyle bir kullanım yaptığımızda, bunu data segmentten bir erişim olarak anlayıp, DS'nin 0 offseti olarak kullanıyordu.
+
+227
+00:48:26,347 --> 00:48:29,547
+Fakat bu şekilde düzenlediğimizde olay niye dönüşüyor?
+
+228
+00:48:29,547 --> 00:48:41,227
+Bu durumda ise ES segmentinin 0 numaralı offsetine gidiyoruz. ES segmenti ne? 0. 0 segmentinin 0 adresinde ne var arkadaşlar? Niye buraya gittik?
+
+229
+00:48:44,500 --> 00:48:47,340
+0 segmentinin 0 offsetinde ne olsa gerek.
+
+230
+00:49:00,947 --> 00:49:01,947
+Ne olabilir?
+
+231
+00:49:03,047 --> 00:49:04,047
+Yok mu cevap?
+
+232
+00:49:05,947 --> 00:49:07,447
+Neyin offsette yer ama?
+
+233
+00:49:11,956 --> 00:49:19,835
+Evet, kesme vektör tablosunu hatırlayalım. Ben şöyle bir yine ekran paylaşımı olarak tam yapayım şunu şöyle.
+
+234
+00:49:21,635 --> 00:49:27,835
+Bakın arkadaşlar, kesme vektör tablosu bu. Bu da bizim 20 bitlik adresimiz. 0 adresinde
+
+235
+00:49:28,516 --> 00:49:36,635
+divide by 0'nun düşük anlamlı kısmında offset değerleri var. Yani 0 adresinde div by 0'nun
+
+236
+00:49:38,547 --> 00:49:59,547
+Daha önceden yerleştirilmiş olan, buraya yerleştirilmiş olan fonksiyonun offset değeri var. Dolayısıyla o daha önceden kalan offset değerini alıp, o offset değerini AX'e kopyaladık. AX'den de data segmentimizdeki geçici yere sakladık. Daha sonra aynı işlemi bu sefer ES'nin iki offset için yapıyoruz. Yani 0 offset'in...
+
+237
+00:50:00,000 --> 00:50:21,260
+AX'ın 2 numaralı adresi, yani fiziki 20 bitlik adres olarak 000002H adresinden bir değer okuduk, onu AX'e yazdık. Orada ne var? Orada da bakın, şurada gördüğünüz gibi segment değeri var. Yani daha önceden div 0 için yerleştirilmiş segment değerini de oradan alıp yedeklemiş olduk.
+
+238
+00:50:21,652 --> 00:50:37,471
+Sonrasında ne yapıyoruz? Bakın arkadaşlar, şimdi yapmamız gereken bizim tanımlamış olduğumuz, bizim şu anda tanımladığımız kod segment içerisindeki new int fonksiyonunun segment ve offset değerlerini 0 ve 2 adreslerine yazmamız gerekiyor. Bunu nasıl yapıyoruz?
+
+239
+00:50:38,132 --> 00:50:46,811
+Öncelikli olarak load efektif adres fonksiyonuyla bu new int etiketinin kendi bulunduğu segment içerisindeki offsetini aldık.
+
+240
+00:50:47,347 --> 00:50:58,347
+Şu anda bu örnek için hemen kod segmentin başında olduğu için 0 olacaktır. Bu ama başka örneklerde new int'i aşağıda tanımlamış olsaydık bu ana prosedür kadar ileride olacaktı.
+
+241
+00:50:58,347 --> 00:51:02,948
+Ama otomatik olarak çekmek için, hesaplamamak için bu kullanılabilir.
+
+242
+00:51:12,563 --> 00:51:18,264
+es'nin 0 numaralı offsetine yazıyor. Yani fiziki adres olarak 0 adresine yazdık.
+
+243
+00:51:20,304 --> 00:51:25,284
+Dolayısıyla fonksiyonu offset değerini yazdık. Peki bu new int fonksiyonu hangi segmentte?
+
+244
+00:51:28,023 --> 00:51:34,123
+Bir de segmentte yerini yazacağız yani. Zaten bizim programımız çalışmaya başladığı için değil mi?
+
+245
+00:51:34,804 --> 00:51:40,624
+Bu kod segment içerisinde çalışıyoruz. Yani bizim bu kod segment değerimiz CS yazmacında yüklü.
+
+246
+00:51:40,624 --> 00:51:50,164
+Yani biz şu anda bu ana programı çalıştırdığımıza göre bu CS değerinde new int programının veya alt yordamının segment değeri zaten CS'de.
+
+247
+00:51:50,164 --> 00:51:57,604
+O zaman CS değerini de AX üzerinden alıp, dolaylı olarak AX üzerinden alıp, iki fiziki adresine yazdık.
+
+248
+00:52:02,708 --> 00:52:27,928
+10H olmuş olsaydı, 10H olmuş olsaydı, burada yazacağımız adresler ne olurdu arkadaşlar? Şu 0 ve 2 yerine yazacağımız değerler. Basit bir şey soruyorum. Kesme vektör tipi burada div 0 ile ilgilendiğimiz için 0 tipindeki kesme. Dolayısıyla 0 ve 2 adreslerine gittik. Ama bizim ilgilendiğimiz kesme tipi 10H olmuş olsaydı hangi adreslere giderdik? Gitmeliydik.
+
+249
+00:52:33,043 --> 00:52:34,027
+Hayır.
+
+250
+00:52:37,172 --> 00:52:54,172
+Evet, [öğrenci]'nın verdiği cevap doğru. Her bir vektör tipi için 4 byte'lık yer ayrılıyor. Dolayısıyla mesela 0 tipindeki kesme için 4 çarpı 0 yine 0 haş yaptı. Ve bunun 2 fazlası. Bu durumda da 2 haş olur.
+
+251
+00:52:54,172 --> 00:53:03,884
+10 haş tipindeki kesme için tablonun 10 numaralı gözüne gitmem lazım. Dolayısıyla her bir gözde 4 byte olduğuna göre 4 çarpı 10 haş olur bu.
+
+252
+00:53:06,612 --> 00:53:13,012
+40H yapıyor değil mi? 6, 48 evet. Yapmıyor galiba ya. 40H'ı yanlış hesaplamış olabiliriz.
+
+253
+00:53:14,032 --> 00:53:19,411
+10H dediğimiz değer 16. 16'yı 4 ile çarp. 64, tamam. Yapıyor, yapıyor.
+
+254
+00:53:19,932 --> 00:53:27,851
+Tamam. Bir de bunun 2 fazlası o da 42H yapıyor. Demek ki bu adreslerimiz kesme tipinin 4 katı ve 4 katının 2 fazlası şeklinde belirlenecek.
+
+255
+00:53:29,391 --> 00:53:32,211
+Bu işlemler bunlar. Şimdi bir de sondaki duruma bakalım.
+
+256
+00:53:32,371 --> 00:53:52,371
+En sonda yaptığımız işlem ise, ana programın en sonunda yaptığımız işlem ise, yedeklediğimiz değerleri segment ve offset olarak yedeklediğimiz değerleri AX üzerinden tekrar alıp, bunları fiziki 0H adresine ve fiziki 20 bitlik 2 adreslerine geri yazmak, sakladığımız değerleri geri yazdık.
+
+257
+00:53:52,371 --> 00:53:58,371
+Program başlarken kendi fonksiyonu adresimizde değiştirdik, programdan çıkarken de orijinal değerleri geri yazdık.
+
+258
+00:53:59,188 --> 00:54:15,368
+Kod içerisinde neyimiz var? Eleman sayısını cx'e yükledik, bir loop'umuz var. Loop'ta ne yapıyoruz? 16 bitlik bölme işlemlerini yapıyoruz. Niye 16 bitlik? Çünkü bizim dizilerimiz Word olarak tanımlı. İki tane Word değerini birbirine bölebilmek için 16 bitlik bölme yapmamız lazım.
+
+259
+00:54:16,244 --> 00:54:27,244
+Bu durumda DX, AX, 32 bitlik sanal yazmacını, işte burada BX demişiz, BX'e bölüyormuşuz. Dolayısıyla bununla ilgili işlem yapacağız. Belki burada BX'e atamaya falan gerek yoktu ama biraz hani dolan başta olmuş.
+
+260
+00:54:28,244 --> 00:54:43,244
+DX'i sıfırladık. Birinci dizinin word değerini AX'e aldık. İkinci dizinin word değerini BX'e aldık. Burada DX, AX'i BX'e böldük. Bir sonraki elemanı geçebilmek için S'ı 2 arttırdık ve bu şekilde ilerliyoruz.
+
+261
+00:54:43,923 --> 00:54:49,423
+Eğer ki sıfıra bölmeyle ilgili bir sıkıntı olmamış olsaydı bu diziyi bitirip fonksiyonu sonlandıracaktık.
+
+262
+00:54:49,423 --> 00:55:01,423
+Ama bunu bu şekilde devam ettirdiğimiz durum için ikinci elemanlarda, şurada görmüş olduğunuz ikinci elemanlarda div by zero kesmesi oluşacak.
+
+263
+00:55:01,423 --> 00:55:10,923
+Fonksiyonu yerleştirdik, new wind fonksiyonu yerleştirdik. Demek ki div by zero oluştuğunda şu anda artık otomatik olarak new wind fonksiyonu çağrılacak.
+
+264
+00:55:11,411 --> 00:55:30,931
+NewInt fonksiyonu içerisinde şimdi DivByZero oluştuğu durumda AX yazmacında, normalde DX, AX'i biz değere böldüğümüz zaman sonuç AX'de çıkıyordu ya, AX'de FFF olacak şekilde dönüş sağlamak üzere bir fonksiyon yazıyoruz. Burada bir kesme alt programını tanımlamaya çalışıyoruz.
+
+265
+00:55:31,931 --> 00:55:39,011
+Kesme alt programına girdim. Kesme alt programına girdiğim zaman yığına neler atılıyordu? Bir onları hatırlayalım.
+
+266
+00:55:41,748 --> 00:55:43,748
+Şu ana kadar çalışan haliyle.
+
+267
+00:55:53,268 --> 00:56:08,748
+Y'nin en altında işletim sistemine dönüş değerlerimiz vardı değil mi? Bunun segment değeri vardı işletim sistemine dönüş. O DSD'ydi. Önce onu puşlamıştık. Daha sonra bir de işletim sistemine dönüş IP değeri var ki bu da zaten eşittir 0'dı.
+
+268
+00:56:08,748 --> 00:56:11,568
+Daha sonra ne var?
+
+269
+00:56:14,328 --> 00:56:14,748
+Daha sonra...
+
+270
+00:56:15,795 --> 00:56:24,795
+Biz bu kesme alt programına girmişsek, kesme alt programı tetiklenmiş demektir. O zaman neler olacak içeride söyleyebilir miyiz? Evet, flag yazmacı olacak.
+
+271
+00:56:24,795 --> 00:56:40,795
+Sonra, bunun üstünde segment değeri olacak. Tabi bu da ana programın segment değeri diyelim. Ana programda kaldığımız yerin IP değeri var.
+
+272
+00:56:41,940 --> 00:56:44,700
+Bunlarla birlikte kesme alt programının içerisindeyiz.
+
+273
+00:56:45,820 --> 00:57:04,320
+Şimdi, bizim yapmamız gereken bir özel işlem vardı. Onun için BP'ye ihtiyacımız var. Bu işlem, kesme alt programından eğer biz ekstra bir işlem yapmazsak, div0 kesmesinde otomatik olarak div0'yu oluşturan satıra dönüyoruz. Ne demek bu?
+
+274
+00:57:10,356 --> 00:57:36,556
+Örneğin div değil de başka bir işlem olmuş olsaydı, kesme oluşturan bir işlem olmuş olsaydı, bu işlemi yapıp dönerken bir sonraki satıra dönecektik. Ama div by 0'da özellikle bu satıra geri dönüyoruz. Dolayısıyla bu dönüş değerini bir sonraki satır olacak şekilde değiştirmemiz lazım. Bunu aklımızda tutalım. Yani demek ki burada işletim sistemine geri, ana programa dönüş, offset değerini ne yapmam lazım?
+
+275
+00:57:36,980 --> 00:57:43,579
+Arttırmam lazım değil mi? Kesin. Bir sonraki instruction'a gitsin diye. Ne kadar arttıracağım peki? Bunu bulabilir miyiz?
+
+276
+00:57:47,347 --> 00:58:00,628
+DivBX satırını geçsin istiyorum, DivBX satırından sonraki komuta yürütsün istiyorum. Ama normalde bu satırın başına dönüyor. IP'yi ne kadar arttırmalıyım? Bunu bilebilir miyiz?
+
+277
+00:58:12,628 --> 00:58:14,628
+Div komutunun kapladığı alana bakıyorum.
+
+278
+00:58:16,628 --> 00:58:18,628
+[öğrenci]'ın dediği gibi.
+
+279
+00:58:19,628 --> 00:58:21,628
+Ne kadar yer kaplıyormuş?
+
+280
+00:58:27,860 --> 00:58:49,860
+2 byte yer kaplıyor. Dolayısıyla benim IP değerini 2 arttırmam lazım. Bu durum tıpkı SMD dersinde gördüğümüz gibi sanki şuna benziyor. Yığından parametre aktarılmış da ben yığından aktarılmış parametrelerle işlem yaptım. Geri dönüş değerini de yığından döndüreceğim. Tıpkı buna benziyor.
+
+281
+00:58:50,208 --> 00:59:09,208
+O zaman benim yığın üzerindeki bir sabit referans oluşturup bu ana IP dediğimiz değeri iki arttırmamız lazım. Bunun için ne yapıyoruz? Yığında sabit referans oluşturmak adına BP'yi kullanacaktık ama BP'yi de geçici olarak kullandığım için, orijinal değer için onu da yığına atmam lazım.
+
+282
+00:59:09,556 --> 00:59:25,235
+Temel bir kuralımız vardı hatırlayacak olursanız. Alt yordam içerisinde geri dönüş için kullanmadığım, sadece geçici işlemler için kullandığım yazmaçlar varsa bunları ana program içerisinde korumak adına alt yordama girer girmez yığını atıyorduk.
+
+283
+00:59:25,235 --> 00:59:35,715
+Alt yordamdan dönme sırasında da, dönüş sırasında da ters sırada yığından çekmemiz gerekiyordu. Bu işlemi yapmalıyız öyleyse. BP'yi korumak adına bunu yapıyoruz.
+
+284
+00:59:36,628 --> 01:00:00,000
+Gelelim. Şimdi dolayısıyla yığına BP'yi de attık. Şu aşamada BP ve SP bu satırı gösteriyor. BP yazmacı da, SP yazmacı da bu satırı kullanıyor. Sadece SP'yi kullanarak bu işi neden yapmıyoruz, neden BP ile yapıyoruz? Çünkü belki de bu alt yordam içerisinde yığına bir şeyler puşlayıp bir şeyler poplayabiliriz. Bu durumda zaten SP yazmacı burada...
+
+285
+01:00:00,000 --> 01:00:21,000
+Bu arada kalmayacaktır. SP yazmacı, yukarı doğru hareket edecek. SP yazmacı. Dolayısıyla sabit bir referans yok. Ama BP'yi bir kere ben pushladıktan sonra move BP, SP yaptığım zaman sabit bir referans oluşturmuş oluyorum. Bu sabit referansa göre ana yordama dönüş instruction pointer'ım bu sabit referansa göre ne kadar uzakta?
+
+286
+01:00:22,516 --> 01:00:23,976
+Bu arada şunu söyleyelim.
+
+287
+01:00:24,615 --> 01:00:32,156
+EGZE tipi programlarda ve COM tipi programlarda yığının en dibi yüksek adres midir, düşük adres midir?
+
+288
+01:00:38,260 --> 01:00:39,260
+değildir.
+
+289
+01:00:42,708 --> 01:01:00,288
+Hatırlayalım. Yığına bir şey attıkça stack pointer 2 azalır. Dolayısıyla yığının dibi dediğimiz yer, yığına ilk atılan değer daha yüksek adrestedir. Yığının üstü ise daha düşük adreslerdedir. Çok önemli bir nokta arkadaşlar. Bunu kaçırmayın.
+
+290
+01:01:01,427 --> 01:01:06,288
+Dolayısıyla sabit referansımıza göre ana IP dediğimiz yer ne kadar uzakta?
+
+291
+01:01:06,639 --> 01:01:23,639
+Artı 2 ileride, BP'ye göre artı 2 ileride. O zaman şöyle yapıyoruz. Yığın'ın BP sabit offsetine göre 2 ilerisindeki, 2 ilerisindeki değeri okuyup AX'e atıyorum.
+
+292
+01:01:24,159 --> 01:01:30,679
+Hemen hatırlayalım, köşeli parantez içerisinde DS kullanılmıyor muydu? Yığın'la ne alakası var şimdi bunun?
+
+293
+01:01:32,211 --> 01:01:35,612
+Köşeli parantez verdiğimiz zaman her zaman DSL kullanılıyor muydu?
+
+294
+01:01:43,956 --> 01:01:52,956
+Köşeli parantezde varsayılan segment nedir? Yani dolaylı adreslemelerde, köşeli parantez dolaylı adreslemelerde vardı.
+
+295
+01:01:52,956 --> 01:02:04,956
+Dolaylı adreslemelerde varsayılan segment yazmacı nedir? Bakın yukarıda bunun önüne geçebilmek için, varsayılanı ezebilmek için ES2.üstüste kullandık.
+
+296
+01:02:04,956 --> 01:02:08,620
+Ooo, çok yanlış bir cevap geldi şimdi.
+
+297
+01:02:14,099 --> 01:02:37,119
+Evet, DS yazmacı. Normalde biliyoruz ki içeride DS yazmacı kullanılacak. Ama bu her zaman için geçerli bir durum değil. DS yazmacı sadece ve sadece köşeli parantez içerisinde BX varsa, S, I varsa, D, I varsa, bir de immediate değer varsa kullanılıyor.
+
+298
+01:02:41,523 --> 01:02:48,423
+BP varsa veya SP varsa bu durumda stack segment kullanılıyor. Şöyle çizelim.
+
+299
+01:02:52,947 --> 01:03:00,027
+Bunda dse kullanılıyor. Otomatik, bizim bir şey yapmamıza gerek yok. Bunda da stek segment kullanılıyor. Tamam mı?
+
+300
+01:03:00,027 --> 01:03:09,187
+Dolayısıyla ben köşeli parantez içerisinde bp artı 2 dediğim zaman bu stek segmentin, stek segmentin yeri de burası, stek segmentin...
+
+301
+01:03:09,376 --> 01:03:17,096
+Bp offsetinden iki büyük, iki adres ilerideki değer yani o da hemen bir sonraki gözle denk gelir.
+
+302
+01:03:17,096 --> 01:03:22,656
+Hatırlayalım, yığında her seferinde bir word atabilirim veya bir word çekebilirim. Bu ne demek?
+
+303
+01:03:22,656 --> 01:03:27,456
+2 byte'lık alanlar yani adresleri ikişer ikişer artıyor, azalıyor.
+
+304
+01:03:27,456 --> 01:03:35,456
+Dolayısıyla ne yaptık? bp artı 2 dediğimiz zaman aslında yığının bp artı ikisindeki değeri çekip ax attık.
+
+305
+01:03:35,699 --> 01:03:59,379
+ax'ı 2 arttırdık. Daha sonra ax'ı aynı sabit referansa geri yazdık. Yani ana ip değerimiz bizim artık ne olmuş oldu arkadaşlar? Artı 2 oldu. Geri döndüğümüzde div bx komutunu geçmiş olduk. Daha sonra ax için dönüş değerimiz olan ffff değerini attık. Dönüş değerimizi hazırladık.
+
+306
+01:03:59,764 --> 01:04:05,764
+Daha sonra BP'yi atmıştık yığına geçici olarak BP'yi geri çektik orijinal değerini ve üretle döndük.
+
+307
+01:04:05,764 --> 01:04:13,764
+Şimdi BP'yi pop yaptığımız zaman ne oldu bakalım? BP'yi pop yaptığımız zaman BP çıktı, orijinal değerini yazdık.
+
+308
+01:04:13,764 --> 01:04:20,764
+Stack pointer bu noktayı gösteriyor. üret komutu sırasıyla yığının en üstündeki değeri çekip üp'yi atardı.
+
+309
+01:04:23,092 --> 01:04:49,452
+div bx satırının iki ilerisi adresine gittik. Yani bir sonraki instruction'a geçmiş olduk. Bunu da çekti. Daha sonra yığın en üstündeki değeri çekip cs'ye atıyordu. Zaten orijinal cs değeri var. Daha sonra yığın en üstündeki değeri alıp flag yazmacını atıyordu. Zaten o da orijinal flag yazmacı. Dolayısıyla ıret işlemi sonucunda div bx satırından sonraki instruction ile birlikte devam ediyor.
+
+310
+01:04:49,903 --> 01:04:51,903
+Bir durum yakalamış oluyoruz.
+
+311
+01:04:53,903 --> 01:04:55,903
+Fonksiyon bu şekilde.
+
+312
+01:04:55,903 --> 01:04:56,903
+Çalışma mantığı da bu.
+
+313
+01:04:56,903 --> 01:05:01,903
+Şimdi bunun derleme sonucuna bir bakalım.
+
+314
+01:05:05,652 --> 01:05:08,652
+Şimdi bunun için Dostbox açıyorum.
+
+315
+01:05:16,659 --> 01:05:22,659
+Aynı komutu ben Dostbox'da değerleyip çalıştırmıştım. Şimdi bunu direkt de bakabilirim.
+
+316
+01:05:30,579 --> 01:05:34,980
+Şimdi, şu şeyi de açalım şurada, dursun gözümüzün önünde.
+
+317
+01:05:44,211 --> 01:05:50,871
+Şimdi neredeyiz bakalım, push ds satırındayız. Yani ana yordama girmişiz, data segmenti ayarladık.
+
+318
+01:05:50,871 --> 01:05:57,011
+Pardon, geri dönüş değerlerini ayarladık. ds'yi de uygun şekilde şu haliyle ayarlamış olduk.
+
+319
+01:05:57,011 --> 01:06:07,251
+Şimdi bakın, ne yapıyor? Şu yapacağımız işlemler, memory'nin 0 offsetinden itibaren 4 byte'lık alana bir şeyler yazıyordu.
+
+320
+01:06:11,891 --> 01:06:25,891
+yazamadım, pardon. numlog. 00, yine yazamadım, bir daha deniyorum. 00 segmentinin 00 offsetine bir bakalım. Bakın arkadaşlar, orada bazı değerler var.
+
+321
+01:06:27,211 --> 01:06:36,311
+1060H ile F0, 00H değerleri burada var. Şu anda demek ki bunun içerisinde div 0 ile ilgili bir işlem var.
+
+322
+01:06:36,884 --> 01:06:48,884
+Biz ne yapacağız? Bu değerlerin yedeğini alacağız. Nerede kalmıştık? AX'i sıfırladık, ES'yi sıfırladık. Bakın burada ES kullanıldığını şurada görüyorsunuz. Varsayılını overwrite etmişiz.
+
+323
+01:06:48,884 --> 01:06:56,884
+AX'e ilk değeri okuyacağız. Yani normalde, orijinalde kesme vektör tablosunun sıfır gözünde olan değeri okuduk.
+
+324
+01:06:56,884 --> 01:07:04,588
+1, 0, 6, 0, H. Daha sonra bu değeri bizim kendi yedekleme alanımıza yedekledik.
+
+325
+01:07:04,628 --> 01:07:18,828
+Bu sefer segment değerini okuduk. Segment değeri de F0.0.0'dı. Onu da kendi yedekleme alanımıza yedekledik ve şimdi kendi programımız içerisindeki new int fonksiyonunun offsetini arayacağız.
+
+326
+01:07:18,828 --> 01:07:27,748
+Şimdi sadece buraya bakarak, bu komuta bakarak, debug ekranına bakarak new int fonksiyonunun hangi offsette olduğunu söyleyebilir misiniz?
+
+327
+01:07:28,388 --> 01:07:31,028
+Yani bu komuttan sonra AX'e ne atanacak?
+
+328
+01:07:40,019 --> 01:07:57,019
+AX'e ne atanacak bu komuttan sonra? Evet, 0. Zaten 0 offsetindeki label'ın offsetini soruyor. Zaten 0. Tamam. Dolayısıyla 0 değeri var. Bu değeri aldık. AX'e 0 attık. Daha sonra...
+
+329
+01:07:57,811 --> 01:08:15,011
+Bu kendi offset değerimizi vektör tablosunun sıfırına yazdık. Şu andaki kod segment değerimiz ne? Onu kontrol edelim. Nerede bu? Kontrol. Kod segment 076F. Bunu da AX'e atıp 2H adresine yazdık. Şu anda gidip bakalım.
+
+330
+01:08:15,668 --> 01:08:30,268
+Dump edelim, 00 segmentinin 00 offsetini. Bakın, bu bizim kod segmentimizin 0 offseti. Yani new int'in adresi buraya yerleştirilmiş. Şu anda 0 segmentinin 0 offsetine bakıyoruz.
+
+331
+01:08:34,771 --> 01:08:41,171
+Nerede kaldığımıza bakalım. STI ile ilgili bir işlem yapmamıza gerek yok ama yine de yapmış olalım.
+
+332
+01:08:42,451 --> 01:08:51,171
+SI'yi sıfırladık. CX değerimizi aldık. İlk bölme işlemini başarılı bir şekilde yapıyoruz. Bir sonraki elemana geçiyoruz.
+
+333
+01:08:53,171 --> 01:09:02,572
+DX'i sıfırladık. Sıradaki A sayısını aldık. Sıradaki B sayısını aldık. Bu A sayısını B sayısına böldüğümüz anda nereye geldik bakın.
+
+334
+01:09:03,956 --> 01:09:16,956
+New Wind'in başına geldik, BP değerine geldik. Şimdi şu anda şeye bakalım, dump edip, stack segmentin, stack pointer E'ymiş, E offsetine bir bakalım.
+
+335
+01:09:16,956 --> 01:09:29,456
+Bakın burada şu değer, ana yordama dönüş, IP değeri, şurası ise ana yordama dönüş, offset değeri, şunlar ise
+
+336
+01:09:30,644 --> 01:09:56,244
+Arada bir tane daha değer var. BP şu muydu ya? Bir bakayım BP'ye. BP'yi daha puşlamadık. Ha bu da flag yazmacı. Tamam. Şimdi oldu. Şu ana yordama dönüş offset değerimiz, şu ana yordama dönüş segment değerimiz, şu bizim flag yazmacımız, şu işletim sisteme dönüş offset, şu da işletim sisteme dönüş segment değerimiz. Şimdi bu BP'yi de yığına attık.
+
+337
+01:09:56,948 --> 01:09:59,948
+Daha sonra BP sabit referans belirledik.
+
+338
+01:10:02,548 --> 01:10:08,548
+Yığındaki IP değerimizi okuduk. Bunu 2 arttırdık ve geri yazdık.
+
+339
+01:10:08,548 --> 01:10:14,948
+Şimdi tekrar dump edip Stag segmentin şu anda Stag pointer C değerini almış.
+
+340
+01:10:14,948 --> 01:10:17,948
+Buraya baktık. Şu BP değerimiz.
+
+341
+01:10:18,515 --> 01:10:26,515
+Bu az önce 4B idi. 2 artı 4D olmuş. Yani bir sonraki div x'i geçeceğimiz IP değerini almış.
+
+342
+01:10:26,515 --> 01:10:40,515
+A x'e f değerini atıyoruz ve daha sonra BP'yi çekiyoruz ve üretle döndüğümüzde div bx'den sonraki satır olan et si,2 satırına dönmüş oluyoruz.
+
+343
+01:10:41,043 --> 01:11:05,304
+Dolayısıyla şu anda bu iki değerin bölümünden elde etmiş olduğumuz sonuç yani bir şey bölü sıfırı FFF olarak hesaplamış olduk burada arkadaşlar. Daha sonra bütün elemanlar içinde çalıştırdığımızda benzer şekilde ilerliyor olacak. Bunun şekilde sonlandırmış olalım. Div sıfır örneğimiz bu şekilde. Adım adım debug etmeye de çalıştık. Bununla ilgili anlaşılmayan bir şey var mı arkadaşlar?
+
+344
+01:11:07,155 --> 01:11:18,095
+Önemli bir konu. Eğer bunu kavrarsak, diğer bütün kesme tipleri içinde kesme vektör tablosu nasıl değiştirilir, fonksiyon nasıl yazılır, kabaca bunları görmüş olduk. Tekrar ediyorum yalnız.
+
+345
+01:11:18,612 --> 01:11:35,852
+Neredeyse bütün far kollar, near kollar ve kesme tetiklemeleri bir sonraki satıra dönüş yapıyor. Özel bir durum sadece div 0 için vardı. Onu özel olarak ele aldık ve geri dönüş değerimizi 2 arttırmak zorunda kaldık. 2'yi nereden bulduk?
+
+346
+01:11:36,064 --> 01:11:44,404
+Div 0 işlemini, Div 0 durumunu oluşturan komut Div BX'ti. Dolayısıyla gidip Div BX'in ne kadar byte yer kapladığına baktık.
+
+347
+01:11:44,404 --> 01:11:50,824
+2 byte'miş. Dolayısıyla IP'yi 2 arttırmamız yeterli oldu kesme alt programından dönerken.
+
+348
+01:11:50,824 --> 01:11:55,684
+Bu şekilde söyleyebiliriz. Burayla ilgili soracağınız bir şey var mı arkadaşlar? Tekrardan sorayım.
+
+349
+01:12:07,412 --> 01:12:24,692
+Yani bir kere yazdığımız program hafızanın en sonuna yerleşmiş olsun. Bir kere programı sonlandırabilmek için bir Red F'ye ihtiyacımız var. Dolayısıyla olmaz. Kesinlikle en son instruction olsa bile ondan sonra da bir tane Red F var.
+
+350
+01:12:30,323 --> 01:12:46,724
+Veya red var, neyse. Dolayısıyla en son instruction, genel kurallara veyahut da yazım şekline tabi olduğumuz haliyle en son instruction sıfıra bölme durumu oluşturamaz. Yani bu durumda.
+
+351
+01:12:49,971 --> 01:12:56,971
+Bunun haricinde bir sorumuz yoksa arkadaşlar, bir 10 dakika ara verelim. Yani saat 15.20'de devam edeceğiz. Tamam.
+
+352
+01:23:59,828 --> 01:24:01,828
+Arkadaşlar, merhaba tekrardan.
+
+353
+01:24:01,828 --> 01:24:12,828
+Şimdi, az önce yaptığımız örnek aslında yazılım sırasında yürütülen işlemler sonucunda oluşturabilecek bir kesme tipiydi.
+
+354
+01:24:12,828 --> 01:24:19,828
+Bizim asıl ilgilendiğimiz kesme tiplerinden ana grubu ise donanımsal kesmeler oluşturacak bu ders kapsamında.
+
+355
+01:24:19,828 --> 01:24:24,828
+Bunlardan bir tanesi özellikle NMEI kesmesi, non-maskabal, inter-app kesme ucu.
+
+356
+01:24:25,652 --> 01:24:31,051
+Bu uçta özellikle yükselen kenarda tetiklenme sağlandığını hatırlamamız iyi olur.
+
+357
+01:24:32,252 --> 01:24:41,951
+Ve bununla birlikte NMU ucundan gelen kesme istekleri tip 2, vektör tablosunun tip 2 veya 2 numaralı satırıyla karşılanıyor.
+
+358
+01:24:41,951 --> 01:24:52,551
+2 numaralı satırda hangi fonksiyon varsa, hangi fonksiyonun adresi varsa veyahut da 08H adresinden itibaren yerleşik offset ve segment değeriyle karşılanıyor diyebiliriz.
+
+359
+01:24:52,948 --> 01:25:00,948
+Burada NME ucundan bir istek geldiğinde adres ve tip otomatik olarak belli. Mikroişlemci içsel olarak bunu çözüyor.
+
+360
+01:25:00,948 --> 01:25:07,948
+Bir başka donanım kesme kaynağımız Intr-E ucu. Intr-E ucundaysa arkadaşlar seviye tetiklemeli olarak çalışıyor.
+
+361
+01:25:07,948 --> 01:25:13,948
+Yani belirli bir süre boyunca Intr-E ucunda aktif bir işaretini görmüş isek bu durumda kesme isteği var olarak anlaşılıyor.
+
+362
+01:25:15,475 --> 01:25:23,475
+Özellikle dış kesmelerle ilgili olarak 1FH adresine kadar olan bölgeler özel olarak ayrılmış durumda.
+
+363
+01:25:23,475 --> 01:25:31,475
+20H adresinden itibaren gelen alanlar uygun şekilde işletim sistemi ve kullanıcı tarafından kullanılabilir durumda oluyor.
+
+364
+01:25:31,475 --> 01:25:37,475
+Donanım sal kesme ile ilgili olarak bunun karşılanmasının nasıl olduğundan geçen derste de bahsetmiştim.
+
+365
+01:25:43,507 --> 01:25:51,507
+Mikroişlemci, bu kesme isteğini değerlendirmek adına eğer uygunsa, interrupt, acknowledge ucu üzerinden sıfır geçişleri sağlıyor.
+
+366
+01:25:51,507 --> 01:26:07,115
+8086'lı sistem için iki adet interrupt, acknowledge ucunda iki adet sıfır geçişi gerekli. İlk sıfır geçişi boş okuma, ikinci sıfır geçişi ise vektör tipini D0, D7 uçları arasında bekliyor.
+
+367
+01:26:07,123 --> 01:26:29,963
+Bazı başka mikroişlemciler var. Onlar ilk acknowledge geçişinde adres değerini sisteme sağlayabiliyor. Tip, vektör tipini sisteme sağlayabiliyor. Birinci geçişlemi, ikinci geçişlemi vektör tipi sağlanacak. Bu da örneğin 8259 kullandığımızda ayrı bir ayar olarak mevcut. Ayrı bir config biti olarak mevcut. Onu da göreceğiz.
+
+368
+01:26:34,399 --> 01:26:57,399
+Temel olarak şöyle okuyalım bunu. Burada bir pull up direnç sistemi görüyoruz. Şu sağda görmüş olduğunuz kısım. Bir pull up direnç sistemi. Bu ne demek? Burada dip switch'ler var. Dip switch ya aşağıdaki şu sol tarafta kalan uçları sağ tarafa bağlıyor veyahut da bunlar arasındaki bağlantıyı koparıyor dip switch.
+
+369
+01:27:00,020 --> 01:27:13,579
+Ne yapılmış? Bakın bütün dip switchler kapalı, aşağıda bağlantıları mevcut. Sadece ve sadece şudaki en baştaki dip switch bağlantıyı koparmış şekilde çalışıyor.
+
+370
+01:27:13,579 --> 01:27:23,780
+Ama burada pull up trençler olduğu için burada bağlantısı kopmuş olsa bile bu telde lojik bir seviyesi mevcut. Tıpkı butonlarda gördüğümüz gibi bir mantık. Yani pull up hatırlıyorsunuz orada.
+
+371
+01:27:24,192 --> 01:27:49,912
+Dolayısıyla şu konfig dolayısıyla burada gördüğümüz değer 1.0.0.0.0.0 diye giden bir değer. Burada da bir bufferımız var. Veyahut da latch diyebiliriz. Latch'imiz var. Bu latch seviye tetiklemi olarak çalışıyordu hatırlayacak olursanız. Ve bunun enable uçlarına inter-app-ecne ucu bağlı. Mikroişlemcinin inter-app-ecne ucu bağlı.
+
+372
+01:27:51,028 --> 01:28:11,827
+Burada görmediğimiz bir halde interrupt request ucundan bir kesme isteği gelmiş ise int a ucundan 0 değeri çıktığı anda bu tarafta oluşturmuş olduğumuz 10H değeri, tersten okuyacak olursak 10H değil, bu 1 değeri 0'a gidiyormuş. 0, 1H değeri, yanlış söylemişim.
+
+373
+01:28:12,884 --> 01:28:22,484
+Şurada 0.1H değerini oluşturmuşuz. Interrupt Request isteğe geldiğinde Interrupt Acknowledge'ın her sıfır geçişinde veri uçlarına 0.1H değeri gönderilir.
+
+374
+01:28:22,484 --> 01:28:38,184
+Bu ne anlama geliyor? Bu yapmış olduğumuz konfigürasyonda Interrupt Request ucuna hangi kaynaktan gelirse gelsin bir kesme isteği geldiğinde bu kesme isteği 0.1H tipinde kesme tetikleyecektir. Sabit adresli
+
+375
+01:28:38,452 --> 01:28:46,051
+Sabit adresli bir kesme tipi oluşturan devreyi burada görmüş olduk. Dolayısıyla bir sonraki örneğimizde ise
+
+376
+01:28:46,051 --> 01:28:53,252
+Burada bakın arkadaşlar birden fazla kaynaktan bir kesme isteği gelebilir. Bu şekilde bir örnekleme yapılmış.
+
+377
+01:28:53,252 --> 01:29:03,252
+En yüksek anlamlı şurada görmüş olduğumuz bitimiz bizim 1'e bağlı. Dolayısıyla buradan 1 değeri var.
+
+378
+01:29:04,083 --> 01:29:13,144
+Hiçbir kesme isteği yoksa, kesme istekleri aktif 0 olarak gösterilmiş arkadaşlar. Hiçbir kesme isteği yoksa buradaki uçların bütün alabileceği değerler 1, 1, 1, 1, 1 şeklinde.
+
+379
+01:29:13,144 --> 01:29:28,663
+Ve bunların hepsi 1 ise bu NAND kapısının çıktısı ne olacak? 0 olacak değil mi? Dolayısıyla buralarda 1 değeri varsa interrupt request ucunda herhangi bir istek oluşturulmuyor. Bunlardan herhangi birisi 0 ise,
+
+380
+01:29:29,619 --> 01:29:38,379
+end işlemi sonucu 0, end işlemi sonucu 1. Herhangi birisi 1 olursa, interrupt request ucunda bir kesme isteği oluştururuz.
+
+381
+01:29:39,379 --> 01:29:43,859
+Buna karşılık, örneğin sadece ır0'ın 0 olduğunu düşünelim.
+
+382
+01:29:44,979 --> 01:29:51,519
+ır0, 0. Dolayısıyla bu, bakın, d0'ı 0 yaptı.
+
+383
+01:29:55,188 --> 01:30:01,167
+FEH tipinde bir kesme isteği oluşturacak. Adres uçlarına, data uçlarına çıktığı değer.
+
+384
+01:30:02,087 --> 01:30:10,688
+IR0, 0, IR1, IR2 bunlar 1. En yüksek anlamlı olanı da D7'ye denk geleni de 1 şundan dolayı.
+
+385
+01:30:10,768 --> 01:30:18,307
+Dolayısıyla 1, 1, 1, 1, 1, 1, 1, 0. Yani baktığımız zaman kesme tipi olarak FE tipini oluşturuyor.
+
+386
+01:30:18,963 --> 01:30:43,503
+Gelelim sadece IR6'da bir kesme isteği olsun. IR6, 0. IR6 neye denk geliyor? D6'ya denk geliyormuş. D6, 0. D7, 1. 1, 0, 1, 1. Yani B olur değil mi? B, F, H tipinde bir kesme isteği tetikliyor. Veya bir başka örnek üzerinden gidelim. Hem IR0 hem IR6, 0 olsun.
+
+387
+01:30:44,051 --> 01:30:47,252
+Diğerleri 1, diğerlerinden kesme işleyi yok. Ne olur bu durumda bakalım.
+
+388
+01:30:48,531 --> 01:30:59,572
+R0, 0 olduğu için D0 değerimiz 0, D6 değerimiz de 0. Bu durumda 1, 0, 1, 1, 1, 1, 1, 0. Nedir bu?
+
+389
+01:31:00,572 --> 01:31:04,631
+BEH. Yani bu oluşturmuş olduğumuz devre, bu yapı.
+
+390
+01:31:05,268 --> 01:31:17,508
+Farklı kesme isteklerinden herhangi birisi tetiklendiğinde veya bunların herhangi bir kombinasyonu tetiklendiğinde farklı bir kesme tipi oluşturan bir devremiz.
+
+391
+01:31:17,779 --> 01:31:36,359
+Bunlardan sadece bir tanesi tetiklendiğinde başka adres oluşturuyor. Herhangi iki tanesi birlikte aynı anda tetiklenmişse başka bir adres oluşturuyor. Herhangi üç tanesi aynı anda tetiklenmişse başka adres oluşturuyor. Hepsi tetiklenmişse bunun içinde başka bir kesme tipi oluşturan devre yapısını burada görmüş oluyoruz.
+
+392
+01:31:37,043 --> 01:31:46,043
+Yine kesme ile ilgili olarak donanımsal bir bağlantı olarak Daisy Chain mantığında farklı kaynaklardan gelen kesme isteklerini değerlendirebiliriz.
+
+393
+01:31:46,043 --> 01:31:52,715
+Normalde kesme istekleri aktif 1 olarak çalışıyordu. Dolayısıyla burada görmüş olduğunuz 82, 55'ler var 2 tane.
+
+394
+01:31:52,851 --> 01:32:08,711
+Bunların mod 1'de kullanıldığını varsayacak olursak, grup A ve grup B'lerinin, interrupt request A, interrupt request B, 2.8255 içinde interrupt request A ve interrupt request B uçları kesme isteği oluşturabilecek durumlar.
+
+395
+01:32:09,039 --> 01:32:27,039
+Bunları aktif bir yapıda oldukları için, orlayarak kullandığımız vakit, hep bütün uçları orlayarak kullandığımızda, bu uç, sonuçta çıkan uç, tek başına 4 farklı kaynaktan gelen kesme isteğini, tekil olan uca aktarmak için kullanılabileceğimiz bir donanım olarak ortaya çıkıyor.
+
+396
+01:32:27,039 --> 01:32:30,039
+Peki, interrupt request ucuna bir değeri geldi.
+
+397
+01:32:30,039 --> 01:32:32,039
+Ama hangi...
+
+398
+01:32:32,595 --> 01:32:40,195
+1.8255'in grup A'sı mı, grup B'si mi? 2.8255'in grup A'sı mı, grup B'si mi? Bunu nasıl tespit edebilirim?
+
+399
+01:32:42,595 --> 01:32:45,795
+Kesme isteği geldi ama nereden geldi? Onu nasıl tespit edebiliriz?
+
+400
+01:33:00,916 --> 01:33:01,916
+Yok mu cevap?
+
+401
+01:33:05,811 --> 01:33:17,411
+Evet, kesme alt programı içerisinde arkadaşlar, kesme tetiklendi, kesme tipi belli, günlük bir şey yok. Bu dördü içinde ortak bir kesme tipi var.
+
+402
+01:33:17,411 --> 01:33:20,399
+Kesme alt programına gittikten sonra...
+
+403
+01:33:20,399 --> 01:33:41,019
+Bakacağız, 1.8255'in statüsünü okuyacağız. Bunun interrupt request B ucuna bakacağız. Var mı? Yok. Diğerininkine bakacağız. Tabi burada hangi sırada bakarsak yazılımsal olarak, yazılımsal olarak öncelikle tanımış oluruz bunları. İkisi aynı anda gelmiş olabilir A, B ama önce A'yı okuyorsam A'ya öncelik vermiş olurum yazılımsal olarak.
+
+404
+01:33:41,395 --> 01:34:04,395
+Eğer A'dan bir kesme isteği anlıyorsam, statüsü okuduğumda o zaman buna ilişkin fonksiyonu yaparım. Grup A'dan okuma yaparım. Eğer interrupt request B'de bir değeri varsa giderim, grup B'den okuma yaparım. Bu şekilde Daisy Chain mantığında kesme isteği geliyor. Kesme isteğinin kimden geldiğini anlayabilmek için dönüp, bütün çevre birimlerinin statüslerini okuyup kontrol etmem gerekiyor.
+
+405
+01:34:04,819 --> 01:34:11,420
+Dolayısıyla böyle bir mantık var ve bu kontrol sırası da aslında Daisy Chain'deki önem sırasını belirlemiş oluyor.
+
+406
+01:34:12,560 --> 01:34:13,560
+Devam edelim.
+
+407
+01:34:14,619 --> 01:34:18,420
+Şimdi bunlar herhangi bir yardımcı devre kullanmadan,
+
+408
+01:34:20,319 --> 01:34:30,420
+sadece basit, lojik, mantıklar çerçevesinde 8086 mikroişlemcisinin interrupt request ucunu nasıl tetikleriz?
+
+409
+01:34:30,739 --> 01:34:49,500
+İnterap tipini nasıl sağlarız? Birden fazla kaynak varsa bunları bir arada nasıl kullanırız? Bunları basit seviyede nasıl çözebileceğimizi gösteren bir takım yaklaşımlarda. Bu noktadan itibaren ise arkadaşlar, 8259 kesme kontrolcüsünü inceliyor olacağız.
+
+410
+01:34:49,939 --> 01:35:14,880
+8259 entegresi temel olarak birden fazla kaynaktan gelen kesme isteklerini ki bunlar 8'e kadar tek bir tane 8259 kullanıyorsak 8'e kadar. Eğer ki kaskat bağlı bir şekilde kullanıyorsak da 64 farklı kaynaktan, master slave mantığında 64 adet farklı kaynaktan gelen kesme isteklerini bu yardımcı devre değerlendirebilir oluyor.
+
+411
+01:35:16,020 --> 01:35:32,220
+Burada 8259'un temel görevi birden fazla kaynağı kontrol edebilmek, kesme istek kaynağını kontrol edebilmesi, bu kesme isteklerine ilişkin olarak hangi vektör tiplerinin verilmesi gerektiğini üzerine programlıyoruz. Bunları sisteme sağlıyor.
+
+412
+01:35:32,220 --> 01:35:36,220
+Dolayısıyla bunun yanında...
+
+413
+01:35:36,243 --> 01:35:58,644
+Öncelik tanımlamayı da bu 8259 üzerinde yapabiliriz. Yani bir öncelik maskesi sırası var, onu varabiliriz. Bazı kesmeleri açıp kapatabiliriz maskeleyerek yine. Dolayısıyla daha yukarıda biraz önce yapmış olduğumuz bütün işlemleri donanımsal olarak yapmamızı sağlayan bir yardımcı devre. Tek bir tane kullanırsak 8 farklı kaynaktan kesme isteği.
+
+414
+01:35:58,960 --> 01:36:07,640
+Kaskat bağlı olarak master slave mantığında kullanırsak 64 tane farklı kaynaktan gelen kesme isteğini değerlendirmemize imkan sağlıyor.
+
+415
+01:36:07,640 --> 01:36:17,680
+Kaskat bağlarken bir tane master var, 8 tane kesme istek ucu var. Bu 8 tane kesme istek ucuna birer tane 8259 daha bağlanıyor.
+
+416
+01:36:17,680 --> 01:36:24,560
+Her bir uca 8 tane giriş, 8x8, 64 farklı kaynak değerlendirme imkanı sağlamış oluyoruz.
+
+417
+01:36:28,500 --> 01:36:44,500
+8259'un uçlarına bakacak olursak arkadaşlar, bu da 8 bitlik bir cihaz. Dolayısıyla, IOS uzayına yerleştirirken, ardışık çift adresler veya ardışık tek adreslere yerleştirme söz konusu olacak. Bununla birlikte...
+
+418
+01:36:47,667 --> 01:37:00,527
+Cihazın bir tane adres ucu var, A0, IO uzayında 2 byte'lık yer kaplıyor ama içerideki internal register'lar, erişilebilen internal register'lar, ikiden çok daha fazla. Nasıl erişileceğini biraz sonra göreceğiz.
+
+419
+01:37:01,608 --> 01:37:13,507
+Burada 8 adet data ucumuz var. Bu tarafta görmüş olduğunuz IR0'dan IR7'ye kadar olan uçlar, kesme istek uçları toplam 8 tane, 1.82, 7.9'da 8 tane uç var.
+
+420
+01:37:14,323 --> 01:37:25,323
+Temel olarak görebileceğimiz read, write ve chip select uçları var. Read, write mikroişlemciden gelen read, write'in bağlanacağı, chip select ise adres çözümleme devresinin çıktısı olarak bağlanacak uç.
+
+421
+01:37:25,323 --> 01:37:35,323
+Bu cihazın int ucuna, mikroişlemcinin interrupt request ucu bağlanacak. Yani bu devrenin çıkışı aslında int ucu gibi düşünebilirsiniz. Bu ne demek?
+
+422
+01:37:36,595 --> 01:37:49,595
+Bu 8 farklı kaynaktan gelen kesme isteğinin öncelikli olarak maskelenmiş olarak değerlendirildikten sonra kesme isteği kime ilişkin olarak verilecekse onun mikroişlemciye iletildiği uç.
+
+423
+01:37:50,595 --> 01:37:55,295
+A ucu, interrupt, eknoluş ucu, mikroişlemcinin interrupt, eknoluş ucu ile bağlantılı.
+
+424
+01:37:56,195 --> 01:37:57,735
+A0 dediğim gibi adres ucu.
+
+425
+01:37:58,127 --> 01:38:21,127
+CAS0'dan CAS2'ye kadar olan üç tane uç, kaskat bağlı uçlar. Bunlar aslında bir dekoder girişi gibi düşünebiliriz. 2 üzeri 3, 8 farklı, kaskat bağladığımız durumda 8 farklı slave 8259'u seçmek için kullanılıyor. Bunlar da doğrudan sp-enable ucu üzerinden kullanılıyor.
+
+426
+01:38:23,347 --> 01:38:27,947
+elde etmiş olduğumuz uçlarla birlikte diğerlerini kullanmış oluyoruz.
+
+427
+01:38:31,699 --> 01:38:43,699
+Burada biz tek dersimiz boyunca bir tane 8259 kullanıyor olacağız sistemlerimizde. Dolayısıyla CHP Enable için burada ilgili sabit bir değer oluşturacağız. Read-Write zaten belliydi.
+
+428
+01:38:43,699 --> 01:38:52,699
+A0 içeride farklı internal register'lar var. Tek bir adres olmasına rağmen nasıl erişeceğimizi biraz sonra bunları da bakıyor olacağız.
+
+429
+01:38:59,444 --> 01:39:09,344
+Şimdi burada 8259'dan tek bir tane kullanacağımız için slave program enable ucunun logic 1 olarak kullanılması gerekiyor ve yani bu ne demek?
+
+430
+01:39:09,344 --> 01:39:13,944
+Bir tane 8259 kullanacağım ve bu da benim masterım olacak bu anlama geliyor.
+
+431
+01:39:14,100 --> 01:39:28,100
+İçeride, 8259'un içerisinde farklı yazmaçlar var. Bu yazmaçlara baktığımız zaman bir kısmı ilk baştaki ayar komutlarımız, bir kısmı ise operasyon sırasında kullanacağımız komutlara karşılık geliyor.
+
+432
+01:39:31,100 --> 01:39:35,100
+Kabaca içeride çok sayıda yazmaç var, onu söylemiş olalım.
+
+433
+01:39:36,100 --> 01:39:39,100
+İç yapısına baktığımızda aslında burada...
+
+434
+01:39:39,859 --> 01:40:03,420
+Bu entegrenin, yardımcı devrenin bir maskeleme işlemi, öncelik verme işlemlerini yerine getirdiğini de söyleyebiliriz. Dolayısıyla iç yapısına baktığımızda uçlarda oluşan kesme isteklerini kendi iç yazmacına kopyalayabiliyor. Bunlar arasında bir öncelik tanımlayabiliyor. Bunlar arasında maskeleme yaparak bazılarını açıp bazılarını kapatma imkanı sağlıyor.
+
+435
+01:40:03,872 --> 01:40:13,072
+Bununla birlikte kendi veri yolu, iç veri yolu üzerinden de bu birimler arasında haberleşmesini sağlayabilmiş oluyor.
+
+436
+01:40:15,471 --> 01:40:29,171
+Şimdi 8259 kullandığımızda, bağlantısını şu anda burada göstermiyoruz herhalde ama, 8259 kullandığımızda kabaca bağlantısından bahsetmiş olduk gerçi ama.
+
+437
+01:40:29,395 --> 01:40:33,895
+Şu veri uçlarımız D0, D7 uçlarına bağlı mikroişlemcide.
+
+438
+01:40:34,064 --> 01:41:02,064
+Adres ucu, adres uçlarından gelen bir değer. Ardışık, çift adreslere yerleştirdiğimiz durumda. A1 ucu buraya bağlı olacak. Chip select dediğim gibi adres çözümleme devresinden bağlı. ReadWrite, mikroişlemciden gelen ReadWrite uçları. SPN ucuna, yani slave program enable ucuna, lojik bir değerini bağlıyoruz. Interrupt request ucunu, Interrupt acknowledge ucunu, şu 8 tane ucada farklı.
+
+439
+01:41:02,064 --> 01:41:08,463
+Farklı kaynaklardan gelebilecek olan 8 farklı kesme isteğini bağlamamız mümkün. Bağlantısı kabaca bu şekilde.
+
+440
+01:41:08,463 --> 01:41:20,863
+Peki bu uçlardan, IR0, IR7 uçlarından herhangi birisine bir kesme isteği gelirse, yani bu ne demek? Seviye olarak çalışıyor uyumlu olması açısından bahsedecek olursak.
+
+441
+01:41:20,863 --> 01:41:29,463
+Belirli bir süre boyunca lojik bir değer gelmişse, IR7'den IR0'a kadar olan uçların herhangi birisine, bu durumda
+
+442
+01:41:30,323 --> 01:41:57,663
+8259, bu gelen istekleri birden fazla da gelmiş olur. CPU'ya intre ucu üzerinden aktaracak. Bunu nasıl yapıyor? İşte önceliklendirmesi vardı, programlanabilir önceliklendirmesi var. Programlanabilir maskelemesi var. Bunları yaptıktan sonra en uygun, en öncelikli olan kesme isteği hangi kaynaktan geliyorsa bunu belirleyip daha sonra bir kesme isteği oluşturuyor.
+
+443
+01:41:58,228 --> 01:42:06,228
+Kesme isteği intre ucundan mikroişlemciye gönderildikten sonra mikroişlemci o sırada yaptığı işlemi bitirip ondan sonra ekno oluş gönderiyor.
+
+444
+01:42:06,228 --> 01:42:23,228
+Bitirirken şunu kastediyorum aslında, bir tane instrakşının tam ortasında olabilir, onu bitirdikten sonra bir başka instrakşına geçmeden karşılayabilirse bu kesmeyi, IF bayrağı falan bir olarak set edilmişse örneğin, interrupt ekno oluş ile karşılık veriyor.
+
+445
+01:42:23,283 --> 01:42:39,483
+8259, interrupt, eknoluç ucundan ilgili cevabı aldıktan sonra ise kendi içerisindeki öncelik ve diğerinin adını unuttum.
+
+446
+01:42:39,483 --> 01:42:46,483
+interrupt servis yazmacındaki ve interrupt request yazmacındaki ilgili bitlerde değişiklik yapıyor.
+
+447
+01:42:46,623 --> 01:43:09,824
+ve 8259 mikroişlemciden gelen ikinci interap ekme oluş darbesini bekliyor. İkinci darbeyi de aldıktan sonra, intihar sıfır geçişini aldıktan sonra, öncelik vermiş olduğu, öncelik atamış olduğu kesmeye ilişkin olarak yine kendi içerisinde programladığımız vektör tipini veri yoluna çıkıyor.
+
+448
+01:43:10,484 --> 01:43:16,884
+Bu veri yoluna çıktıktan sonra aslında kesme isteğinin kontrolünü tamamlamış oluyor.
+
+449
+01:43:16,884 --> 01:43:22,524
+Bu durumda iki modumuz var. Bunlardan bir tanesi automatic end of interrupt modu.
+
+450
+01:43:22,524 --> 01:43:28,403
+Eğer bu modda ise ilgili ISR biti 0 yapılarak kesme isteği kapatılmış oluyor.
+
+451
+01:43:28,884 --> 01:43:44,283
+değerlendirilmiş oluyor daha doğrusu. Eğer ki End of Interrupt modundaysak, End of Interrupt modundaysak, sonlandırmayı bizim yapmamız lazım. Bu da ne demek? ISR'nin ilgili bitini sıfır yapmak bizim görevimiz olmuş oluyor.
+
+452
+01:43:44,283 --> 01:43:50,983
+Ama biz dersimizde otomatik End of Interrupt modunu kullanacağız. Dolayısıyla...
+
+453
+01:43:51,667 --> 01:44:01,667
+IRE uçlarından bir istek gelecek. Biz daha önceden hangi isteğin hangi adres, hangi vektör tipini tetiklemesi gerektiğini daha önceden programlamış olacağız.
+
+454
+01:44:02,667 --> 01:44:15,127
+Böylelikle önceliklendirmemize göre kesme isteği INT-R ucundan aktarılacak. İkinci INT-A'da da bizim yazmış olduğumuz, vermiş olduğumuz adres değeri veya vektör tip değeri veri yoluna çıkmış olacak.
+
+455
+01:44:18,036 --> 01:44:34,155
+Şimdi şundan bahsetmiştik, 8259'un iki grup yazmacı vardı. Bunlardan bir grup Initialization Control Word'lerdi. Bunlar temel olarak nasıl ayarlanacağını belirtiyor. Yani başlangıçta nasıl ayarlamamız gerektiğini belirtiyor.
+
+456
+01:44:34,155 --> 01:44:43,615
+Bir de Operational Control Word vardı. Bu da çalışma sırasında, çalışmasıyla ilgili, operasyonla ilgili konfigleri içeren yazmaçlar.
+
+457
+01:44:44,115 --> 01:44:55,716
+Eğer ki biz adres ucu 0 ile adres ucu 0 iken 8259 seçersek bu Initialization Control Word 1'e erişmemizi sağlıyor.
+
+458
+01:44:55,716 --> 01:45:03,115
+Eğer adres ucu 1 ile adres değeri A0 ucu 1 iken cihazı adreslemiştik bu da
+
+459
+01:45:03,764 --> 01:45:23,963
+ICV2'den ICV4'e kadar olan 2, 3, 4 numaralı yazmaçlara erişimi sağlıyor. Bu tıpkı şeye benziyor aslında, 8251'de belirli bir flow chart takip ederek hangi yazmaçlara, hangi internal registerlara erişeceğimizi belirliyorduk. Burada da benzer bir mantık var. Aynı şey burada da geçerli.
+
+460
+01:45:28,659 --> 01:45:48,039
+Adres ucunu 0 yaptıktan sonra yapacağımız ilk erişim Initialization Control Word 1'e erişim. Daha sonrasında adres ucunu 1 yapıp yaptığımız ilk erişim Initialization Control Word 2'ye erişim sağlıyor.
+
+461
+01:45:48,307 --> 01:46:09,807
+Initialization Control Word 2'de 8259'ların caskat mı yoksa single mı çalışacağını belirten bir konfig var. Ona göre bir dallanmamız söz konusu. Eğer caskat modda çalışacaksak Initialization Control Word üce bir şeyler yazmamız lazım. Eğer tek çalışıyorsak bu durumda bu adımı atlıyoruz.
+
+462
+01:46:10,064 --> 01:46:25,304
+Yine Initialization Control World 2'de ICV4'ün kullanılıp kullanılmayacağıyla ilgili bir ayar var. Eğer ICV4'ü kullanacaksak, yapmış olduğumuz üçüncü erişim adres ucu 1 iken, ICV4'e karşılık geliyor.
+
+463
+01:46:25,304 --> 01:46:32,304
+Ve bu şekilde Flow Chart'ı bitirmiş oluyoruz. Şimdi içeriye bakalım. ICV1 ve 2'de.
+
+464
+01:46:32,756 --> 01:46:52,096
+ICV1'i kullanıyor olacağız arkadaşlar. Bizim yapmış olduğumuz kapsam tanımı çerçevesinde. ICV2'yi de kullanıyor olacağız. Tekil kullanacağımız için ICV3'ü kullanmayacağız. Bakın, kaskat modda kullanmayacağız. Tekil modda kullanacağımız için burayı atlıyoruz. ICV3'ü kullanmayacağız.
+
+465
+01:47:00,479 --> 01:47:20,919
+Otomatik End-of Interrupt mantığını ve 8086 kullandığımızdan dolayı, yani Interrupt, Econology ucunun ikinci geçişinde vektör tipini sağlamamız gerektiği için ICV4'ü de kullanacağız. Yani bizim ihtiyacımız olan şöyle bir değer olacak. Adres ucunu sıfırlayacağız, ICV1'e erişeceğiz.
+
+466
+01:47:21,587 --> 01:47:37,788
+Icv2'yi ilgili konfig'e atacağız. Icv2'ye atmış olduğumuz konfig single modu destekleyecek ve Icv4'ü kullanmak istediğimizi belirtecek. O yüzden akış şöyle gelecek. Icv4'e de erişeceğiz. Daha sonra initialization'ı tamamlamış olacağız.
+
+467
+01:47:50,547 --> 01:48:12,228
+8086 ile birlikte kullandığımız vakit en yüksek anlamlı 3 bitin 0 olması lazım 8086 için. Dördüncü bitimiz de yine D4 numaralı bitimiz de fix olarak bir. Burada bakın arkadaşlar, normalde 8259 mikroişlemcinin int-r ucuna bağlı olarak çalışıyordu. Normalde int-r ucu...
+
+468
+01:48:12,948 --> 01:48:29,268
+seviye tetikleme ile çalışıyor. Kenar tetikleme ile değil. Kenar tetikleme ile çalışan NMI ucuydu. Ama biz 8259 kullanarak donanımsal kesmelerin kenar tetikleme olarak çalışmasını sağlayabiliriz. Bu ne demek? Bu şu demek.
+
+469
+01:48:29,908 --> 01:48:53,108
+8259'un R uçları aslında kenar tetiklemeli olarak da programlanabilir. Sadece kenar geçişiyle birlikte intre isteğinin belirli bir süre boyunca mikroişlemcinin intre ucunda seviye olarak sağlanmasını, oluşturulmasını destekleyen bir yardımcı devre olarak ortaya çıkmış oluyor bu yapı.
+
+470
+01:48:53,587 --> 01:49:01,467
+Dolayısıyla ben istersem, 8259'da kenar tetiklemeli bir şekilde kesme isteği de üretebilirim, 8259 yardımıyla.
+
+471
+01:49:01,467 --> 01:49:10,787
+Ama burada yapmış olduğum ayar, 8086'nın intre ucunu kenar tetiklemeli yapmaz. Dikkat edin, bu ikisi arasında fark var.
+
+472
+01:49:21,492 --> 01:49:41,492
+Kenar tetiklemeli olarak da kullanabiliyorum. D2 biti 0'ı fix, D1 biti bir tane kullanacağımızı söylemiştik. Single tek bir tane kullanacağımız için 1'e eşit. ICV4'ü de kullanıyoruz. Tamam mı? ICV4'ü de kullanacağız. O yüzden bunun da 1 olarak set edilmesi lazım. ICV4'te ne vardı?
+
+473
+01:49:46,260 --> 01:49:54,260
+Interrupt Econology'ın ikinci geçişinde vektör tipini sağlamamızı imkanlı kılan ayarlar vardı. O yüzden ICV4'ü de kullanacağız.
+
+474
+01:49:55,180 --> 01:50:09,820
+Şimdi ICV2 çok önemli arkadaşlar. Bunu anlayabilirsek 8259'u çözüyoruz. Şöyle ki, ICV2'ye yazmış olduğumuz 8 bitlik değer şu anlama geliyor.
+
+475
+01:50:16,627 --> 01:50:22,427
+Bu aslında 8259'un üreteceği kesme tiplerine karşılık geliyor.
+
+476
+01:50:22,427 --> 01:50:23,427
+Tamam mı?
+
+477
+01:50:23,427 --> 01:50:32,827
+Şimdi, bizim buraya yazmış olduğumuz değerlerden T0, T1 ve T2 değerleri aslında otomatik olarak
+
+478
+01:50:32,827 --> 01:50:39,427
+IR0 ve IR7'ye kadar olan aralıkta 0'dan 7'ye kadar olan 0, 0, 0'dan 1, 1, 1…
+
+479
+01:50:39,764 --> 01:51:05,884
+0'dan 7'ye kadar olan değerlerle otomatik olarak dolduruluyor şurası. Dolayısıyla biz şu 3'den 7'ye kadar olan bitleri değiştirebiliriz. Bunlara verdiğimiz adres değeri neyse, T3'den T7'ye kadar verdiğimiz değerler neyse, bununla birlikte IR0'dan IR7'ye kadar olan bit karşılıklarında yazdığımız vakit, ilgili IR ucu tetiklendiğinde hangi kesme tipinin oluştuğu bu şekilde belirleniyor. Ne demek?
+
+480
+01:51:06,484 --> 01:51:07,984
+Şöyle ele alalım.
+
+481
+01:51:11,475 --> 01:51:15,055
+Örneğin, T7'den T3'e kadar biz şöyle yazdık.
+
+482
+01:51:19,155 --> 01:51:21,155
+Bu değerleri yazdık.
+
+483
+01:51:21,155 --> 01:51:23,155
+Ve
+
+484
+01:51:23,155 --> 01:51:29,155
+Daha sonra şuradaki değerler de otomatik olarak belli. Yani ı, r0 için
+
+485
+01:51:29,155 --> 01:51:32,155
+Bunlar 0, 0, 0
+
+486
+01:51:32,155 --> 01:51:34,155
+ı, r7 için
+
+487
+01:51:34,155 --> 01:51:36,155
+1, 1, 1
+
+488
+01:51:36,155 --> 01:51:39,155
+Bu durumda biz bu ayarı yaptığımız zaman
+
+489
+01:51:39,155 --> 01:51:44,768
+Mesela şuraya gelelim
+
+490
+01:51:44,768 --> 01:51:52,768
+I, R, 4 numaralı uçtan bir kesme isteği geldiği zaman mikroişlemciye hangi kesme tipi aktarılır?
+
+491
+01:51:52,768 --> 01:51:58,768
+I, R, 4'e bir kesme isteği geldiği zaman mikroişlemciye hangi kesme tipi aktarılır?
+
+492
+01:51:58,768 --> 01:52:05,615
+4 geldiği zaman bu 1, bu 0, bu 0. Dolayısıyla bunu okuduğumuzda da arkadaşlar şuradan ayırdım.
+
+493
+01:52:05,615 --> 01:52:22,615
+1, 4, 14H değeri kesme tipi olarak aktarılır. Aynı ayarlar mevcutken, 4 değil de, 7 numaralı uçtan, R7'den bir kesme isteğe gelirse, hangi vektör tipi aktarılır?
+
+494
+01:52:22,615 --> 01:52:32,615
+7'den dolayı 1, 1, 1 buraya gelecek. Şuradan ayırdık bunları. 17 mi demiştik? Bu 8'e karşılık geliyormuş. Pardon, az önceki.
+
+495
+01:52:33,332 --> 01:52:43,692
+84H'mış. Şimdiki de 87H olacak. Tamam mı? Kesme tipi olarak 87H sağladık. Az önceki örnekte şeyi yanlış söylemişim.
+
+496
+01:52:45,692 --> 01:52:57,771
+1, 0, 0 olduğu durumda, şuradan keselim tekrardan. Burası 8, burası 4, 84H. Bu ne oldu arkadaşlar? Bakın, şöyle daha güzel yazayım.
+
+497
+01:53:02,355 --> 01:53:12,756
+Hangi değer olur? 80H vektör tipi oluşur. 84'ü düzelttim herhalde değil mi?
+
+498
+01:53:12,756 --> 01:53:23,956
+UR1 tetiklendiğinde 81H olur. UR2 tetiklendiğinde 82H olur.
+
+499
+01:53:31,923 --> 01:53:47,923
+87H tipinde kesme isteği otomatik olarak üretilmiş olur. Tamam mı? Dolayısıyla bu ICV2'ye yazacağımız değerlerden, T3'den T7'ye kadar olanları biz kendimiz yazıyoruz.
+
+500
+01:53:48,659 --> 01:54:00,159
+T0'dan T2'ye kadar olan değerler otomatik olarak IR0'dan IR7'ye kadar hangisinde ilişkiliyse onun binary karşılığı oluyor. Tamam mı? Burası bu şekilde önemliydi.
+
+501
+01:54:06,452 --> 01:54:25,851
+Devam edelim. ICV3 ve ICV4, master ve slave durumlarında geçerli. Yani kaskat bağlı durumlarda geçerli. Onunla ilgili bir işlem yapmıyoruz. Bunun dışında ICV4 ile ilgili bir işlemimiz var. Automatic End of Interrupt, Enable olması lazım. Yani bunun bir değerini alması lazım. Bir de...
+
+502
+01:54:26,260 --> 01:54:35,260
+8086 kullanacağımız için bunu da bir değerini alması lazım. Yani özetçe söylemek gerekirse ICV4E03H değerini atmamız lazım.
+
+503
+01:54:35,260 --> 01:54:36,260
+Tamam mı?
+
+504
+01:54:37,260 --> 01:54:40,260
+Son olarak OCV'lerle ilgili konuşalım.
+
+505
+01:54:42,260 --> 01:54:47,260
+Bunlar da temel olarak maskeleme ve öncelik atamayla ilgili.
+
+506
+01:54:48,260 --> 01:54:49,260
+Örneğin...
+
+507
+01:54:50,612 --> 01:55:01,092
+Maskeleme ile ilgili olarak OCV1 kullanılır iken, kaskat modla da ilişkili olacak şekilde diğerleri de kullanılıyor.
+
+508
+01:55:01,092 --> 01:55:08,012
+Ama biz, dediğim gibi, ders kapsamında sadece bir tane 8259 kullanacağımız için, onu da master modda kullanacağımız için,
+
+509
+01:55:08,012 --> 01:55:13,292
+operasyon sırasında da automatic end of interrupt işlemi kullandığımızdan dolayı,
+
+510
+01:55:13,555 --> 01:55:29,555
+O, C, V, Operation Control Wordler ile ilgili bir işlem yapmıyor olacağız. Tamam. Şimdi bunu kabaca bu şekilde anlatmış olalım. Örneğimiz var bir tane. O örneği anlatarak dersi sonlandıracağım.
+
+511
+01:55:38,836 --> 01:55:48,136
+Şimdi, oluşturmuş olduğumuz bir kod parçası var. Kod parçasında sadece kod segment var. Herhangi bir data belgesi, bilgisi kullanmıyorduk.
+
+512
+01:55:48,136 --> 01:56:02,136
+Donanım kısmına gelelim. Şimdi biraz sonra yazılımı tekrar anlatacağım. Burada arkadaşlar bakın, sistemimizde mikroişlemci ile konuşan sadece bir tane 8259 var. 8259'un IR0 ucuna
+
+513
+01:56:02,287 --> 01:56:10,287
+Bir tane buton bağladık. Butonumuz pull down ile çalışıyor. Yani burada kesme isteği oluşturma durumunda uca lojik 1 gelecek.
+
+514
+01:56:10,287 --> 01:56:15,287
+Yani tuşa bastığım zamana karşılık gelir bu. Tuşa bastığımda uca lojik 1 geliyor.
+
+515
+01:56:15,287 --> 01:56:24,287
+Cihazı çift adreslere yerleştirdiğimiz için adres çözümleme devresine de bakalım. A0'ın 0 olması lazım.
+
+516
+01:56:24,287 --> 01:56:30,059
+A1 burada doğrudan adres ucuna bağlı. Şöyle hızlıca yazabilirsek eğer.
+
+517
+01:56:33,587 --> 01:56:48,767
+A0'da 0 değeri var, A1'de x değeri var, A2'nin ne olması lazımmış? Y0 numaralı çıkıştan çıkış alabilmek için A2'nin de 0 olması lazım, A3'ün de 0 olması lazım, A4'ün de 0 olması lazım.
+
+518
+01:56:49,527 --> 01:56:55,167
+A5 değerimiz, şurada görecek olursanız A5 ve A6'nın 1 olması lazım.
+
+519
+01:56:56,532 --> 01:57:14,791
+A7'nin de doğrudan aktif 0 uca bağlı, onun da 0 olması lazım. Buradan şunu anlıyoruz, bu cihaz 60H ve 62H adreslerine yerleştirmiş. Yani ardışık 60H'dan başlayan, 60H'dan başlayan, ardışık çift adreslere yerleştirilmiş olduğunu görüyoruz.
+
+520
+01:57:22,528 --> 01:57:35,528
+8259'un kesme isteği kontrol işlemini anlamak adına butona her bastığımızda ax yazmacını kesme temelli olarak bir arttıran bir kod yazmaya çalışacağız.
+
+521
+01:57:35,528 --> 01:57:36,528
+Tamam.
+
+522
+01:57:36,528 --> 01:57:38,476
+Kesme temelli olarak.
+
+523
+01:57:38,612 --> 01:57:45,372
+Butona her bastığımız anda, her bastığımız anda derken kenar tetiklemeyi kastediyoruz aslında.
+
+524
+01:57:45,372 --> 01:57:53,072
+Yani ben tuşa basılı tuttuğum süre boyunca ax artsın istemiyorum. Sadece tuşa bastığım anda ax artsın istiyorum.
+
+525
+01:57:53,072 --> 01:57:58,851
+Dolayısıyla buradan bir kesme tetikleyeceğim ve buradan tetikleyeceğimiz kesmenin, şuradan bir kopya çekeyim hemen.
+
+526
+01:57:58,851 --> 01:58:02,252
+Buradan tetikleyeceğimiz kesmenin arkadaşlar...
+
+527
+01:58:02,384 --> 01:58:09,043
+40H tipinde bir kesme olmasını istiyorum. Yani tekrar gelelim. Ben butona bastığımda
+
+528
+01:58:09,140 --> 01:58:20,140
+Tetiklenecek kesme, 40H tipinde bir kesme olsun ve bu kesme alt programında ben butona her bastığımda dolayısıyla AX yazmacı bir arttırılsın.
+
+529
+01:58:20,140 --> 01:58:25,140
+Dolayısıyla ben ne yapmak istiyorum? Kesme temelli olarak buton saymak istiyorum.
+
+530
+01:58:25,140 --> 01:58:31,539
+Bir event counter yapıyorum. Butonu bir event counter olarak kullanıp ben bu tuşa kaç kere basmışım bunu saymak istiyorum.
+
+531
+01:58:31,539 --> 01:58:37,140
+Veyahut da bu butonu ayakkabımızın altına bağladık, adım sayıcı gibi kullanmak istiyorum.
+
+532
+01:58:37,140 --> 01:58:39,240
+Bir başka örnek vermek gerekirse.
+
+533
+01:58:41,400 --> 01:58:42,500
+Kod kısmına gelelim.
+
+534
+01:58:43,560 --> 01:58:47,180
+Kod kısmında arkadaşlar, neler var?
+
+535
+01:58:48,380 --> 01:58:52,620
+Az önce div 0 örneğinde gördüğümüz yapıya çok benziyor.
+
+536
+01:58:54,320 --> 01:58:59,960
+Bizim vektör tablosuna yüklemek istediğimiz bir kesme alt programı var. O burası.
+
+537
+01:59:01,020 --> 01:59:02,180
+Kesme vektör tablosunu...
+
+538
+01:59:02,783 --> 01:59:27,263
+Bozduğumuz ve kendi programımızın adresleriyle değiştirdiğimiz kısım var. Programımızın ana kısmı var. Çıkarken değerleri geri yazmamışız. Yazsak iyi olabilirdi. Siz yazarsınız, kötü örnek almayın. Siz yazın. Ve daha sonrasında da 8259 ile ilgili bir takım ayarlar yapmamız lazım.
+
+539
+01:59:28,692 --> 01:59:32,791
+Arada bir tane delay fonksiyonumuz var. Bunu hiç kullandık mı? Bakayım.
+
+540
+01:59:33,551 --> 01:59:36,192
+Bunu da hiç kullanmıyoruz. Bunu da uçuralım şimdilik.
+
+541
+01:59:38,291 --> 01:59:40,291
+Tekrar bir kontrol edeyim de çalışıyorum.
+
+542
+01:59:50,644 --> 02:00:04,003
+O da başka yerden kalmış demek ki. Onu da uçurdum. Dolayısıyla ana programımız bu kadar. İki tane fonksiyon var. Bir tanesi kesme alt programının yerine geçecek olan, diğeri de bizim ana programımız. Ana programımız da kesme vektör tablosunu değiştirmek.
+
+543
+02:00:04,243 --> 02:00:19,243
+ve 8259 ayarları sonra da sonsuz dengüdeyim. Bakın herhangi bir polling yok, düğme okuma yok, herhangi bir şey yok. Sadece 8259'u ayarlıyorum ve tuşa her bastığında AX otomatik olarak 1 artacak. Bunu da sağlamış oluyorum.
+
+544
+02:00:21,243 --> 02:00:24,243
+Şimdi öncelikli olarak şuraya bakalım. Ne istenmişti bizden?
+
+545
+02:00:25,492 --> 02:00:29,492
+Her tuşa bastığımda 40H tipinde bir kesme tetiklenmesini istemiştik.
+
+546
+02:00:29,492 --> 02:00:33,492
+Ve tetiklenen kesmede butonun bir artmasını istemiştik.
+
+547
+02:00:33,492 --> 02:00:35,492
+O zaman şunu yapıyoruz.
+
+548
+02:00:37,492 --> 02:00:44,492
+Şurada yapılan işlemler aslında arkadaşlar, 40H tipine karşılık hangi adresi bulmamız gerektiği.
+
+549
+02:00:44,492 --> 02:00:46,492
+Yani 40 ile 4'ü çarptık burada.
+
+550
+02:00:46,492 --> 02:00:49,492
+AX'de artık 40H çarpı 4 değerimiz var.
+
+551
+02:00:52,180 --> 02:01:13,180
+Yedekleme de yapmamışız zaten burada. Daha sonrasında şunu yapıyoruz. AX'i geçici olarak kopyaladık. Oluşturduğumuz fonksiyonun offset değerini vektör tablosunun hesapladığımız adresine atıyoruz. Mevcut kod segmentimizi de bunun iki ilerikideki adresine yazıyor. Yani vektör tablomuzun 40 haş gözündeki segment ve offset değerlerini doldurduk.
+
+552
+02:01:21,427 --> 02:01:48,267
+60H adresinde 8259 var zaten. Şuna göre yapacağımız adres ucu 0 iken zaten erişim, ICV1'e erişiyor. ICV1'de ne var? Ne yazmıştık oraya, pardon. 13H. Yani şurası 1, bu 0, edge trigger, bu 0, bunlar 1. Yani bir tane bağlayacağım, master ICV4'ü kullanacağım. 8086 yapacağım ve edge trigger olarak bunu çalıştıracağım demiş oluyor.
+
+553
+02:01:49,076 --> 02:02:01,795
+Daha sonra ne yapmışız bakalım? Daha sonra 62H adresine 40 değeri gönder. 62H ne demek? 62H, A0 adres ucuna 1 verdiğim anlamına gelir.
+
+554
+02:02:01,795 --> 02:02:14,835
+1 verdiysem, yapacağım ilk erişim ICV3'ü kullanmadığıma göre, ICV2'ye oluyor. Pardon, adres ucu 1 iken yaptığım ilk erişim ICV2'ye oluyor. ICV2'ye bakalım şimdi.
+
+555
+02:02:17,171 --> 02:02:39,451
+ICV2'de ise 40 haşı yazdığımıza göre, şuradaki değerimiz ve buradaki değerler, IR0'dan 40 haş tipinde kesme oluşur, IR1'den 41 haş, IR2'den 42 haş, IR7'den 47 haş şeklinde kesme tipi oluşacak şekilde ICV2'yi ayarlamış olduk.
+
+556
+02:02:39,451 --> 02:02:43,451
+Bu iki satır bunu sağladı. Burası zaten otomatikti.
+
+557
+02:02:43,828 --> 02:03:01,507
+Hatırlayacak olursak, yani ICV4'ü kullanıyorum, otomatik end of interrupt yapacağım ve 8086 ile kullanabilmek için şu iki bitim 1 olacak, diğerleri 0 olacaktı. Dolayısıyla adres ucu 1 iken ikinci bir yazma ICV4'e erişiyor şu anki benim izlediğim akışa göre.
+
+558
+02:03:01,939 --> 02:03:12,939
+Daha sonrasında STI ile kesme, F bayrağını 1 yapıyorum. Çok önemli. Ve A-i sıfırladım. AX her tuşa basıldığında artacaktı ya. Ve sonra sonsuz döngüdeyim.
+
+559
+02:03:12,939 --> 02:03:26,939
+Dolayısıyla mikroişlemci bir şey yapmıyor ama tuşları sayabiliyor. Nasıl sayıyor? Bundan NewInt alt programımız da sağlıyor. Bakın ne yapıyor burada? Programı her girdiğinde A-i 1 arttırıyor.
+
+560
+02:03:30,163 --> 02:03:37,163
+Paus edelim. Şuraya bir tane break point koyalım. Yani nereye? AX'i arttırdığımız yere. Tekrar çalıştıralım.
+
+561
+02:03:38,063 --> 02:03:42,603
+Tuşa her bastığımda kesme alt programına geldi. Hatta şuraya koyalım kesmeyi de.
+
+562
+02:03:44,303 --> 02:03:50,623
+Devam etsin. Tuşa her bastığımda kesme isteği gelecekti. Niye gelmedi?
+
+563
+02:04:08,212 --> 02:04:11,612
+Tuşa bastık, şuradan debug'tan yazmaçlara bakalım.
+
+564
+02:04:14,412 --> 02:04:15,811
+AX değerim 1.
+
+565
+02:04:19,988 --> 02:04:21,448
+Devam ediyoruz.
+
+566
+02:04:23,548 --> 02:04:26,847
+Bu ikinci bastığımda niye gelmiyor onu bir bakayım bakayım.
+
+567
+02:04:43,123 --> 02:04:45,923
+Bizde gelip ikide gelmemekin sebebi ne olabilir?
+
+568
+02:04:59,091 --> 02:05:01,091
+Şu anda neredeyiz mesela yürüttüğümüz?
+
+569
+02:05:01,091 --> 02:05:02,591
+Üretle geri döndük.
+
+570
+02:05:04,291 --> 02:05:05,991
+Geri döndüğümüz değer bozuk.
+
+571
+02:05:05,991 --> 02:05:07,991
+Evet, geri döndüğümüz değer neden bozuk?
+
+572
+02:05:09,091 --> 02:05:11,491
+Üretle döndüğümüz değer bozuldu.
+
+573
+02:05:15,380 --> 02:05:26,979
+Burada da şundan dolayı bozuldu. Ben burada kodu gösterebilmek için stack segment ve data segmenti kapatmıştım. Onlardan dolayı bozuldu. Onu tekrar geri koyalım şöyle.
+
+574
+02:05:28,179 --> 02:05:30,956
+Stack segment olmayınca nasıl dönecek değil mi?
+
+575
+02:05:35,988 --> 02:05:48,988
+Tabi bunu da çalıştırabilmek için ds2.üstüste.data.sg, ss2.üstüste.steg.sg yazmamız lazım. Bir de
+
+576
+02:05:52,307 --> 02:06:16,347
+Bir de ana program içerisinde, ana program içerisinde, move ax virgül data sg deyip, move ds virgül ax dememiz lazım. Gerçi buna gerek yok, data segment kullanmıyoruz. Evet, buna gerek yok, uçurabiliriz bunu.
+
+577
+02:06:20,275 --> 02:06:21,876
+Şunu da kaldıralım.
+
+578
+02:06:27,923 --> 02:06:31,923
+Şimdi ama pause yaptığımızda acaba şeye girecek mi?
+
+579
+02:06:31,923 --> 02:06:36,923
+Tabii böyle yaptığımızda da debug komutları çalışmıyordu ama olsun en azından
+
+580
+02:06:36,923 --> 02:06:48,747
+herhangi bir noktada bunu durdurup 2, 3, 4, 4 kere bastım. Durdurduğum noktada 3 kerem basmışım. Son bir kere daha deneyelim.
+
+581
+02:06:50,036 --> 02:07:00,536
+1, 2, 3 kere bastım, durdurdum. AX'de 3 değerini elde etmiş oluyoruz. Evet, burada özellikle şeye dikkat etmiş olduk o zaman.
+
+582
+02:07:00,536 --> 02:07:11,536
+Return var, fonksiyon kolu yok ama otomatik olarak interrupt'tan geri dönerken stack segmentteki değerleri çekiyoruz.
+
+583
+02:07:16,532 --> 02:07:23,532
+Div sıfır bölmesinin olduğu örnekle eşleştirerek, benzeştirerek bu şekilde tanımlamış olalım.
+
+584
+02:07:23,532 --> 02:07:29,532
+Bu haliyle benim bu hafta anlatacaklarım bu kadar arkadaşlar. Sizin sormak istedikleriniz var mı?
+
+585
+02:07:29,532 --> 02:07:31,532
+Bir kaydedelim.
+
+586
+02:07:31,532 --> 02:07:37,532
+Hocam şey, benim labda sıkıntı olmuştu hatırlıyorsanız geçen hafta.
+
+587
+02:07:37,532 --> 02:07:38,532
+Evet.
+
+588
+02:07:38,532 --> 02:07:40,532
+Onu nasıl yapsak?
+
+589
+02:07:40,532 --> 02:07:42,532
+Bu haftanın sorusuna çalıştın mı?
+
+590
+02:07:45,363 --> 02:07:51,363
+Bu haftanın sorusuna çalışmadım hocam, yok. A grubunun şeyini yapmadım.
+
+591
+02:07:53,363 --> 02:07:58,363
+20 dakika vereyim, 20 dakika sonra ben sana bir link göndereyim, sen bana bir mail falan gönder.
+
+592
+02:07:59,363 --> 02:08:05,363
+Veya doğrudan şeyden gönderebilirim. Öğrenci mailine de gönderebilirim istersen.
+
+593
+02:08:06,363 --> 02:08:08,363
+Yani Zoom linki gibi mi?
+
+594
+02:08:08,363 --> 02:08:10,363
+Zoom linki göndereceğim, evet.
+
+595
+02:08:10,363 --> 02:08:11,363
+Tamam hocam.
+
+596
+02:08:14,579 --> 02:08:16,579
+Başka sormak istediğiniz bir durum var mı?
+
+597
+02:08:19,579 --> 02:08:27,579
+Lab sonraki oturum. Evet, lab sonraki oturum arkadaşlar. Lab'a girecek olanlar burada oturumlarını sonlandırsınlar, diğer gruba girsinler.
+
+598
+02:08:34,868 --> 02:08:39,868
+Onun dışında soracağınız bir şey yoksa arkadaşlar, dersimizi sonlandırmış olalım.
+
+599
+02:08:42,248 --> 02:08:47,968
+Haftaya ders yok. Ayın 8'inde, 8 Ocak'ta da son dersimiz var.
+
+600
+02:08:50,368 --> 02:08:52,428
+Herkese iyi günler diliyorum. Görüşmek üzere.

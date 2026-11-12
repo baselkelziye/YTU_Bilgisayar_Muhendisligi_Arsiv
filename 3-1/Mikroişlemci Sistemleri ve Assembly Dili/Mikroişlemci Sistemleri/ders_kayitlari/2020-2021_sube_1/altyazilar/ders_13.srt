@@ -1,0 +1,2027 @@
+1
+00:01:24,212 --> 00:01:25,292
+Arkadaşlar merhaba.
+
+2
+00:01:34,900 --> 00:01:43,400
+Biliyorsunuz önümüzdeki hafta vize haftamız. Dolayısıyla bizim için de mikroişlemciler dersi için de vize tarihi ilan edildi.
+
+3
+00:01:45,400 --> 00:01:59,700
+Ayın 18'i itibariyle miydi? Bir versiyon 3 ilan edilecek vize tarihleri ve saatleri için. Mutlaka bölüm sayfasından kontrol edin. Kendi diğer sınavlarınız için de.
+
+4
+00:02:00,212 --> 00:02:06,932
+Saatlerinizi kontrol edin, ona göre sınavlarınızı tamamlamış olursunuz.
+
+5
+00:02:10,740 --> 00:02:34,740
+Her ikisi de olacak. Evet, hem vize olacak hem laboratuvar olacak. Şimdi laboratuvar konusu 8251 olduğu için, 8251 de vizeye dahil. Dolayısıyla bir taşla iki kuş da vurmuş olabilirsin belki de. Dolayısıyla bir yandan şans, bir yandan da faydalı olabilir. Öyle düşünüyorum.
+
+6
+00:02:40,979 --> 00:02:49,379
+Geçen haftadan 80251 konusunu işlemiştik ve örneğimiz kalmıştı. O örnek üzerinde duracağız şimdi. Örneğimizi açalım.
+
+7
+00:02:54,388 --> 00:02:56,388
+Hocam sınavımız test mi olacak?
+
+8
+00:02:57,388 --> 00:03:01,388
+İlla test olması gerekmiyor ama bazı sorular test bantında olabilir.
+
+9
+00:03:02,388 --> 00:03:03,388
+Peki hocam, teşekkürler.
+
+10
+00:03:03,388 --> 00:03:04,388
+Sevinçliyim.
+
+11
+00:03:10,003 --> 00:03:16,503
+Şimdi burada iki tane örneğimiz var. Bunlardan bir tanesi veri gönderme, bir tanesi de veri almaya ilişkin örnekler.
+
+12
+00:03:17,204 --> 00:03:21,704
+Şöyle simülasyonumuzu açayım, ben de ekran paylaşımı yapayım.
+
+13
+00:03:24,803 --> 00:03:32,903
+Evet, şimdi ekranda görmüş olduğunuz simülasyonu ben... yok hala şey vermemiş miydim? Bir kontrol edeyim onu da.
+
+14
+00:03:38,388 --> 00:03:43,388
+Beşinci hafta örneği ve konusunu da ekleyeceğim ve tamamlamış olacağız.
+
+15
+00:03:44,388 --> 00:03:51,340
+Şimdi öncelikli olarak bu simülasyon ekranında kullanmış olduğumuz cihazlardan bahsedelim.
+
+16
+00:03:51,412 --> 00:04:07,911
+Burada standart olarak bir 8086 mikroişlemci simülasyonu var ve yolları ayrıştırmak için kullanmış olduğumuz bir yardımcı devre bloğu var. Bu yardımcı bloğu devrenin çıkışında bütün adres yolunu temsil eden ADR,
+
+17
+00:04:08,015 --> 00:04:21,415
+basımız var. Veri içinde AD isimli bası kullanabiliyorduk. Burada belki siz de dikkat etmişsinizdir. Bir data bas şeklinde değil de AD bas olarak bunu kullanmamız yeterli olmuştu.
+
+18
+00:04:21,415 --> 00:04:32,415
+Ve bu şekilde kullanıyor olacağız. Cihazımız için bir adres çözümleme devremiz var. Adres çözümleme devresinin temel amacı şuydu hatırlayacak olursanız.
+
+19
+00:04:34,132 --> 00:04:41,132
+Bir an için mikroişlemci ile sadece bir cihaz konuşuyor olacak. Bunun haricindeki herhangi bir cihaz hatta veri çıkmıyor olacak.
+
+20
+00:04:41,132 --> 00:04:44,132
+Temel amacımız buydu adres çözümleme devresi için.
+
+21
+00:04:44,564 --> 00:05:12,564
+Dolayısıyla mesela bizim bu örneğimizde bir 8086 bir de 8251 var. Ama öyle örnekler olabilir ki örneğin bize de karşılaşabilirsiniz. Bir tane 8086 ama diğer tarafta yardımcı devre olarak iki tane yardımcı devre var. Bunlardan bir tanesi 8255, bir tanesi 8251 olabilir. Yani iki farklı cihazı adres çözümleme devresinde çözmek zorunda kalabiliriz. Ve baktığınız zaman aslında bu iki cihazın adres aralıkları da farklı.
+
+22
+00:05:12,564 --> 00:05:21,564
+Birisi 4 byte yer kaplıyor, birisi 2 byte yer kaplıyor. Dolayısıyla farklı genişlikteki iki cihazı adres çözümleme devresi olarak da dekoder kullanarak nasıl çözeriz?
+
+23
+00:05:21,564 --> 00:05:28,364
+Mesela bu haftaya karşılaşacağınız bir şey olabilir. O yüzden arada siz de buna ilişkin bir antrenman yaparsınız.
+
+24
+00:05:28,980 --> 00:05:44,360
+Adres çözümleme devresini söyledim. 8251'imiz var. 8251 için standart bir bağlantı yapısı var demiştik. Bununla ilgili olarak tek bir adres ucu olduğunu söylemiştik. Read-write uçları vardı, bir chip select'i vardı.
+
+25
+00:05:46,163 --> 00:06:04,884
+Yine devrenin çalışabilmesi için minimum gerekli bağlantıları size vermiş oluruz. Bununla ilgili olarak mesela CTS ucunun granda çekilmesi lazım, reset ucunun granda çekilmesi lazım. Diğer uçlar yani simülasyon açısından konuşuyorum, lab için özellikle. Diğer uçlar ise modem uçları, bunları kullanmıyoruz.
+
+26
+00:06:05,396 --> 00:06:30,396
+Karşı tarafta receive ve transmit için receive, clock ve transmit, clock uçlarına bir saat darbesi üretici bağlı. Bunun özelliklerine bakalım. 9.6K'lık, 9600 Hz frekansında bir kare dalga bağlanmış buraya. Bir clock işareti bağlanmış. Buna niçin ihtiyacımız var? Buna da şunun için ihtiyacımız var. Asenkron modda 8251'i ayarladığımız vakit...
+
+27
+00:06:30,548 --> 00:06:38,228
+Clock Faktörü vardı. Bu Clock Faktörü bağlamış olduğumuz saat frekansını bölerek 8251'de kullandırtıyordu.
+
+28
+00:06:38,228 --> 00:06:45,908
+Dolayısıyla biz iki farklı saat darbesi üretecini, bir tanesini Receive Kuloğuna, bir tanesini Transmit Kuloğuna bağlamış olsaydık,
+
+29
+00:06:45,908 --> 00:06:50,468
+Receive ve Transmitleri farklı frekanslarda gerçekleştiriyor olacaktık.
+
+30
+00:06:50,468 --> 00:06:55,348
+Bununla birlikte devremizde bir tane Lojik Analizör var. Lojik Analizör şöyle çalışıyor.
+
+31
+00:06:58,004 --> 00:07:15,484
+Bas veya tekil pinler bağlanabilir, tekil kablolar bağlanabilir. Tekil kablolar bağladığımız zaman o kablo üzerindeki lojik değer değiştiğinde bu sistemde bir tetiklemeye sebep oluyor ve bunu ekranda kaydediyor.
+
+32
+00:07:15,484 --> 00:07:24,944
+Yani şöyle düşünün, uzun süreli bir ekrana sahip osiloskop gibi, yani kayıt yapan bir osiloskop ekranı gibi düşünebilirsiniz ve içten tetikleme mantığı var.
+
+33
+00:07:25,235 --> 00:07:34,235
+Eğer bir bus bağlamış olsaydık da bu busdaki değer değiştiğinde, yani 8 bitlik değer değiştiğinde bize bir kayıt tetiklemesi üretiyor olacaktı.
+
+34
+00:07:34,235 --> 00:07:47,235
+Son olarak bir de virtual terminalimiz var arkadaşlar. Bu virtual terminalin özelliklerine bakalım. Bu virtual terminalimiz için, bu tabii 8251'den bağımsız.
+
+35
+00:07:47,264 --> 00:08:13,144
+Bir görselleştirme arayüzü olarak kullanıyoruz. Aynı zamanda dış çevre birimi olarak da düşünebiliriz. Yani bu sistemimizin, bizim 8086'lı sistemimizin dış çevreyle konuştuğu bir senaryoyu düşünelim. İşte bu dış çevre cihazı buradaki virtual terminal olmuş oluyor. Virtual terminal üzerinde veri gönderip alabiliyoruz. Bunun kendisine ait ayarları var.
+
+36
+00:08:13,588 --> 00:08:38,468
+Asenkron haberleşmede sizin de hatırlayacağınız üzere, geçen hafta anlattığımız şekliydi. Asenkron haberleşmede her iki uç, her iki terminalde haberleşme konusundaki parametrelerden haberdardı. Mesela her iki tarafta haberleşmenin 9600 bautta olacağını, işte pariti kullanılıp kullanılmayacağını veyahut da bu paritinin even mu odd mu olacağını ve aynı zamanda kaç tane stop biti kullanılacağı konusunda birbiriyle anlaşıyordu.
+
+37
+00:08:38,772 --> 00:08:48,672
+Burada virtual terminali fixlediğimizi düşünün. Yani virtual terminal için ayarlar fix ve değişmiyor gibi düşünün. Buna göre 8086 tarafını uyumlaştırmaya çalışacağız.
+
+38
+00:08:49,672 --> 00:08:57,432
+Dolayısıyla bizim uymamız gereken haberleşme standartı neymiş? Buradan virtual terminalin özelliklerine şöyle sağ tıklayıp edit properties diyerek bakıyoruz.
+
+39
+00:08:57,971 --> 00:09:04,272
+9600 Baht'ta konuşuyorlarmış, 8 tane data biti varmış, pariti kullanılmıyor, bir tane stop biti varmış.
+
+40
+00:09:04,659 --> 00:09:12,659
+Bu özellikler bizim için yeterli aslında. Bu özelliklere biz de uymaya çalışacağız. Şimdi simülasyonu çalıştırdığımız zaman...
+
+41
+00:09:14,836 --> 00:09:28,836
+Normalde gelmesi lazım. Virtual terminal için bu şekilde bir ekran geliyor. Eğer ki simülasyon sırasında virtual terminali kapatıp daha sonra simülasyonu sonlandırırsanız tekrar simülasyonu başlattığınızda bu virtual terminal ekranı gelmeyebiliyor.
+
+42
+00:09:28,836 --> 00:09:37,836
+Bunun için yapacağınız işlem arkadaşlar şuradan debug ekranından virtual terminal'e tıklamak olacak. Daha sonra yine virtual terminal'i görebiliyor olacaksınız.
+
+43
+00:09:38,580 --> 00:09:52,580
+Benzer şekilde lojik analizörü kullanabilmek için de arkadaşlar şurada bir capture tuşu var. Bu capture tuşuna bastığınız anda sistemdeki veriye tekrarlayan bir veri varsa bunu bir periyodunu alıp kaydediyor.
+
+44
+00:09:52,580 --> 00:09:59,580
+Ekranda da bakın iki tane uç bağlamışız. O iki tane uca ilişkin olarak değerlerimizi görüyoruz. Bunların tetiklemesi...
+
+45
+00:10:00,000 --> 00:10:18,339
+Hem yükselen kenar hem düşen kenar hem de seviyelerde tetikleme olacak şekilde switchleri en sola getirdiğimizde görüyorsunuz şu switchleri. Dolayısıyla herhangi bir değişiklik olduğunda da bu switchler tetiklemeyi aktif yapıyor. Yani o kaydı almamızı sağlıyor. Dolayısıyla sisteme genel bir bakış bu şekilde düşünebiliriz.
+
+46
+00:10:26,932 --> 00:10:33,331
+Devresini tasarlayarak ilerledik. İki yönde de gidebiliriz burada.
+
+47
+00:10:37,432 --> 00:10:41,272
+Bu cihazın adresleri neydi? Hemen bir kontrol etmem lazım. Tamam.
+
+48
+00:10:42,032 --> 00:10:44,331
+Şimdi şunu istiyoruz.
+
+49
+00:10:45,371 --> 00:10:50,991
+Öncelikli olarak 208H adresinden itibaren, yani soruyla ilişkin bir öncü bilgi veriyorum.
+
+50
+00:10:51,252 --> 00:10:53,812
+208H adresinden itibaren
+
+51
+00:10:54,836 --> 00:11:08,276
+Ardışık, çift adreslere yerleştirilmiş bir tane 8251'i 8086 ile interfeys etmek istiyoruz. Bu durumda adres çözünme devresini nasıl oluşturmalıyız sorusuna cevap arayalım öncelikli olarak.
+
+52
+00:11:08,788 --> 00:11:23,067
+Burada kendimiz işte bu tasarıma bakmadan bir custom adres çözümleme devresi üretelim. Daha sonra da dönüp bu devrenin, önümüzdeki devrenin hangi adres aralığında çözüm sağladığını nasıl analiz ederiz? Ona bakmaya çalışalım.
+
+53
+00:11:24,507 --> 00:11:34,668
+Şimdi adres aralıklarımız 208 ve 208'den itibaren ardışık çift değerler olduğu için bunu şöyle bir Word dosyası veya Excel dosyası açayım daha kolay olacak.
+
+54
+00:11:35,475 --> 00:11:52,875
+Burada görmeye çalışalım. Şimdi bir kere 208H adresinden itibaren dediğimiz için arkadaşlar burada bu cihazın yazılım tarafındaki adreslemenin nasıl olması gerektiğini düşünürsünüz. Doğrudan port adresi verebilir miyiz?
+
+55
+00:11:59,604 --> 00:12:10,504
+Dx üzerinden bu adreslerini vermemiz gerekiyor. Bir kere buna dikkat edeceğiz. Zaten önce adres değeri nereye erişmek istiyorsak önce Dx atacağız. Daha sonra Dx ile adresleme yapıyor olacağız.
+
+56
+00:12:11,044 --> 00:12:22,184
+Şimdi gelelim adres çözümlemenin nasıl yapılacağına. Adres çözümleme için adreslerimiz 208'den itibaren ardışık çift adresler. Dolayısıyla birinci adresim 208H.
+
+57
+00:12:22,803 --> 00:12:33,963
+İkinci adresim ne olacak? Bakın en çok yapılan hatalardan birisiydi. Hegzadesimal olarak sayıyorsak, 208'den sonra gelen adres 20A hegzadesimal değerli olacak.
+
+58
+00:12:33,963 --> 00:12:49,043
+Yani bu 208'den sonra gelen değer 210H diye yazmayın sakın. Tamam, buna dikkat edin. Zaten uyanmanız gereken bir nokta var. Şunu da aşağıya yazayım mesela. Eğer yanlışlıkla 210H yazmışsanız,
+
+59
+00:12:49,076 --> 00:13:02,475
+Olay şuradan patlayacak. Bir kere biliyoruz ki bu cihazın bir tane adres ucu var. Öyleyse adres uzayında iki tane alan kaplaması lazım. Bu da demek ki ben bunların binary hallerini yazdığım vakit sadece ve sadece
+
+60
+00:13:02,995 --> 00:13:21,615
+Bir tane bitin değişmesi lazım. Bir tane adres bitinin değişmesi lazım ki iki farklı adres durumu oluşsun. Ama 208'e 210 yazdığınız durumda birden fazla bit değeri değişecektir. Şimdi DX üzerinden hareket ettiğimiz için aslında bu şöyle de düşünmeliyiz. 0208H.
+
+61
+00:13:25,107 --> 00:13:32,607
+0, 2, 0, AH. Bir de hani yanlış yapılan durum içinde örnek oluşturacaktık ya, o da elimizin altında bulunsun.
+
+62
+00:13:32,607 --> 00:13:38,607
+Aslında bu şekilde 16 bitlik adresleri bir kere ayarlayacağız. Çünkü DX dediğimiz zaman 16 bitlik adres.
+
+63
+00:13:38,607 --> 00:13:42,607
+Buradaki adres değerlerimizi de biz şöyle birazcık küçültelim.
+
+64
+00:13:44,500 --> 00:13:53,259
+Buradaki adres değerlerimiz de işte 15, A15, A14, A13, A12, 11, 10.
+
+65
+00:13:58,580 --> 00:14:06,179
+0 şeklinde alalım. Asıl olan şu, hatalı olan bu alttakidir. Bunu kırmızıyla boyayayım da şimdilik yani hatalı olduğunu görelim.
+
+66
+00:14:06,179 --> 00:14:17,179
+Şunlar bizim doğru adreslerimiz. Bunu yazmaktaki asıl amaç da 208 ile 210 arasındaki yanlışlıkla seçim yapılırsa birden fazla bitin değiştiğini görmek olacak.
+
+67
+00:14:17,179 --> 00:14:20,779
+Şimdi 0208'i yazacak olursak.
+
+68
+00:14:21,427 --> 00:14:33,827
+1 hexadesimal basamak 0 için yazdım. 2 için yazıyorum. Daha sonra tekrar 0 var ve sonra 8 var. Bu değeri yazdım. Şimdi aynı değeri
+
+69
+00:14:35,316 --> 00:14:45,716
+2, 0, A, H için yapacağız. A nerede değişiyor? Sadece şurada bir değişiklik var. Tamam. Bunu da yazdık. Bu bizim adres değerlerimiz. Bunları da sarıyla boyayalım.
+
+70
+00:14:45,716 --> 00:15:01,115
+Peki yanlışlıkla 2, 1, 0, H yazmış olsaydık ne olacaktı? Ona da bakalım. Şurası 0, burası 2. Daha sonra buranın 1 olması gerekiyor. 1 şurada.
+
+71
+00:15:01,331 --> 00:15:13,331
+Buranın da sıfır olması gerekiyor değil mi? Sonuç itibariyle. Şimdi bakın, yanlış olan 255'e adres için düşündüğümüz vakit, bakın burada bir iki tane bit değişimi var.
+
+72
+00:15:14,035 --> 00:15:40,035
+İki tane bit değişimi ne yapar aslında? 4 byte'lık yer kaplaması lazım değil mi? Normalde düşündüğümüzde. Dolayısıyla bu hatalı olduğuna yani 2.08H'dan sonra 2.1.0H yazdığınızda uyanmamız gereken bir noktada iki tane bit değiştiğine göre demek ki bu aslında 4 byte yer kaplayacak bir adres aralığı. O zaman hata yaptık. 8251 sadece 2 byte yer kaplıyordu. Dolayısıyla bu adres değeri bizim için hatalı diye bunu...
+
+73
+00:15:40,371 --> 00:16:03,572
+Anlamamız gerekiyor. Bunu uçuralım. Adres değerlerimiz bu şekilde olduğu için arkadaşlar, bu bizim aramış olduğumuz değerler A15'in 0, 14'ün, 13, 12, 11, 10'un, 8, 7, 6, 5, 4, 2 ve 0'ın 0 olduğu durumlar, 3 ile 9'un 1 olduğu durumları arıyoruz. Yani bizim aradığımız durum aslında.
+
+74
+00:16:04,244 --> 00:16:26,624
+15, 14, işte nokta nokta olması gerekenlerin hepsi 0. 9 numara ve 3 numara bunlar 1. Başka ne vardı? Emo yo ucumuz vardı. Emo yo ucumuzun ne olmasını istiyoruz? Iyo işlemi için kullanacağımızdan dolayı bunu 0 olmasını istiyoruz. Özellikle de yazalım. A0'ın da 0 olmasını istiyoruz.
+
+75
+00:16:27,347 --> 00:16:44,548
+Bu şartları sağladığında chip select üretecek, bunlar haricinde chip select üretmeyecek bir mantık aramamız gerekiyor. Bunun için bakın devrede bize ne kullandıkmış? 4'e 16'lık bir dekoder kullandıkmış. 4'e 16'lık dekoderin özelliği neydi? Hemen onu tekrar hatırlayalım birazcık daha.
+
+76
+00:16:44,548 --> 00:16:54,947
+Burada iki tane enable ucuyla verilmiş ve bunlar aktif 0 uçlar. Dolayısıyla bunlara 0 haricinde bir değer gelmişse çıkışlarımızın hepsi 1 oluyor.
+
+77
+00:16:55,827 --> 00:17:07,827
+Bu ikisi değer 0 değerine sahipse, bu sefer de dcba sırasında yazmış olduğumuz binary sayının, decimal karşılığı ne ise, o numaralı çıkıştan.
+
+78
+00:17:07,827 --> 00:17:11,827
+Lojik 0 çıkıyor, diğer bütün çıkışlardan lojik 1 çıkıyor.
+
+79
+00:17:12,339 --> 00:17:21,699
+Dolayısıyla bu bizim istediğimiz mantığa uygun. Çünkü 8251'in chip select ucuna baktığımızda bu da aktif 0 bir uç. Aktif 0 olarak çalışan bir uç.
+
+80
+00:17:22,159 --> 00:17:30,199
+Dolayısıyla aktif 0 bir çıkış ile aktif 0 bir giriş ucunu sürebiliriz. Direkt sürebiliriz hatta. Aradığımız durum tam olarak bu oluyor.
+
+81
+00:17:31,519 --> 00:17:34,339
+Şimdi bu devreyi çizmeye çalışalım.
+
+82
+00:17:37,059 --> 00:17:39,139
+Şuradan bir yardım isteyeyim.
+
+83
+00:17:50,132 --> 00:17:54,132
+Evet, şimdi öncelikli olarak bu devrimizi bir çizelim.
+
+84
+00:17:55,132 --> 00:17:57,132
+Teko devrimizi çizelim.
+
+85
+00:17:58,132 --> 00:18:01,132
+İki tane aktif sıfır ucumuz vardı.
+
+86
+00:18:01,132 --> 00:18:05,132
+Dört tane seçim ucumuz var. Bunlara seçim ucu deniyor.
+
+87
+00:18:05,132 --> 00:18:08,132
+Anlam sırası da şeye göre değişiyor arkadaşlar. Dikkat edin.
+
+88
+00:18:08,132 --> 00:18:10,132
+Harf değeri büyüdükçe...
+
+89
+00:18:10,420 --> 00:18:19,840
+Anlam sırası büyüyor bunların. Burada da çıkışlarımız var işte. Kaç tane? 16 tane çıkış var. Bunların hepsini çizmeyeyim çünkü sadece bir tanesinden çıkış alacağız zaten.
+
+90
+00:18:20,740 --> 00:18:31,260
+Şimdi toplamda kaç tane ucumuz var giriş tarafımız var? 2-6 tane girişimiz var. Dolayısıyla bu tarafta da 16-17 tane girişimiz oluyor.
+
+91
+00:18:36,243 --> 00:18:55,743
+Bunları ulaştırabileceğim fiziki olarak 6 tane uç var. Bunlar arasında bir artık ayarlama yapacağız. Şunu yapabiliriz bakın, 0 olması gereken uçları birleştirip 0 olması gerektiğinde 0 üretecek şekilde, 0 input bekleyen şu enable bir ucuna bağlayabiliriz bunu. Bu enable bir.
+
+92
+00:18:55,855 --> 00:19:21,255
+Bu da enable iki uçları. Bu durumda şunu istiyoruz aslında. İki değeri de sıfırken, yani girdileri sıfırken sıfır üreten bir lojik arıyoruz. Sadece bu durumda girdileri sıfırken sıfır üreten, diğer durumlarda bir üreten bir lojik arıyorum. Yani bir x, y şöyle tablo yapalım, bir de çıkış yapalım. Sadece bunlar sıfırken sıfır üretsin. Diğer durumlarda ise
+
+93
+00:19:21,652 --> 00:19:39,951
+Diğer durumlarda ise 1 üretsin. Yani aslında bu tablomuzu şöyle genişletebiliriz bu durumda. 0, 0'da 0, 0, 1'de 1, 1, 0'da 1, 1, 1'de 1 üretsin istiyor mu demek ki? Aktif 0, 1, 3 kullanacaksam. Bu devre zaten arkadaşlar or devresi. Bunu görüyoruz değil mi?
+
+94
+00:19:43,635 --> 00:19:59,635
+Demek ki or devresi kullanmamız gerektiğini anladık. Hangi durum için? Tekrar edeyim. Aktif sıfır değerli girişlere karşılık, sıfır değerli çıkış üreten yani şu seçim uçlarına bağlanacak durum için. Bunu şöyle yapabiliriz.
+
+95
+00:19:59,635 --> 00:20:09,475
+A15, A14, ... A10'a kadar geldim. Devam edelim. A8.
+
+96
+00:20:10,740 --> 00:20:24,899
+...a4, daha sonra bir de a2 değerimiz olsun. Bunların her birisi, bu uçlarımız, kocaman bir tane or kapısına girdiğini düşünelim.
+
+97
+00:20:27,299 --> 00:20:36,319
+Bunun çıktısını alıp, şuradaki enable bir ucuna bağladık. Başka ne kaldı? Bir tane de a0 ve miyomuz kalmıştı.
+
+98
+00:20:37,203 --> 00:21:00,883
+Bunları da aynı şekilde bir tane or kapısından geçirip, yine bunları da ikinci enable ucumuza bağlayalım. Geriye ne kaldı şimdi? Şu uç kaldı, bir de şu kaldı değil mi? Bunları nasıl verebiliriz? Bunları da şöyle verebiliriz seçimlerden bir tanesi. Mesela A9'u en anlamlı uca versem.
+
+99
+00:21:01,428 --> 00:21:07,908
+A3'ü ikinci anlam sırasına versem diğerlerini de granda bağlayabilirim mesela. Yani sıfır değerlerini almış olacaklar.
+
+100
+00:21:07,908 --> 00:21:21,708
+Bu durumda 208 veya 20AH değerlerinden herhangi birisi verildiğinde sisteme bu dekoderin 4x16 dekoderin hangi çıktısı aktif olur onu bulalım.
+
+101
+00:21:22,548 --> 00:21:27,908
+Bizim vermiş olduğumuz adres geldiğinde buradaki değerlerin hepsi sıfır olacağı için orun çıkışı sıfır.
+
+102
+00:21:27,983 --> 00:21:50,983
+Enable 1'den seçim yaptık. A0 veya MIO da 0, dolayısıyla Enable 2'den de seçim yaptık. Buradaki uçlara baktığımızda ise D, C, B, A sırasındaki elde etmiş olduğumuz binary sayı nedir? A9, 1, A3, 1, B ve A uçlarına 0 geldi. Bu binary sayımızın karşılığı C yani 12'dir değil mi? Dolayısıyla...
+
+103
+00:21:51,584 --> 00:21:59,784
+Bizim Y12 numaralı uçtan bir çıkışımız var. Bunu da chip select 8251 olarak üretmiş olacağız.
+
+104
+00:21:59,784 --> 00:22:13,584
+Şeyi bir kontrol edeyim şimdi, devredeki ile aynısı olmasın. Farklı bir şey yapmak amacındaydık. Evet, farklı bir şekilde yapıp benzer bir sonuç elde etmişiz. Tebrik ediyoruz kendimizi. Tamam.
+
+105
+00:22:14,259 --> 00:22:23,679
+Ama en azından tasarım tarafı biraz farklılaşmış oldu. Dolayısıyla burada elde edeceğimiz arkadaşlar, adres çözümleme devresini bu şekilde ele almış olalım.
+
+106
+00:22:24,739 --> 00:22:33,919
+Şimdi gelelim, tersten düşünelim. Bu arada şey ne oldu? Onu soracaktım. Evet. Bu arada A1 ucu ne oldu arkadaşlar? Bunu ne yapıyoruz?
+
+107
+00:22:36,139 --> 00:22:40,119
+A1 ucunu getirip burada adres çözümleme devresine bağlamak mantıklı mı?
+
+108
+00:22:46,163 --> 00:23:06,744
+Evet, 8251'e gidiyor. Bakın zaten ne demiştik? İki farklı durum oluşması lazım. 208H ve 20AH için iki farklı durum oluşması lazım. Bunu oluşturan A1 ucu. Dolayısıyla bu A1 ucunun 8251'in CD adres ucuna bağlanması lazım.
+
+109
+00:23:14,483 --> 00:23:33,784
+kontrol tipli yazmaçlara erişiyordum. Sıfır değerini verdiğimde data tipli yazmaçlara erişebiliyordum. Dolayısıyla A1 doğrudan 8251'in adres uçlarına bağlanması gerekiyor. Tamam. Onu da çözdük. Şimdi gelelim şu noktaya. Bu sefer de tersten düşünelim.
+
+110
+00:23:34,175 --> 00:23:50,976
+Elimizde bir adres çözümleme devresi var. Bu adres çözümleme devresine bakarak, çünkü bazen böyle de veriliyor bize, bu adres çözümleme devresine bakarak biz cihazımızın hangi aralıkta olduğunu bulmaya çalışalım. Tamam mı? Bunun için şöyle bir yol izleyeceğiz.
+
+111
+00:23:56,976 --> 00:23:59,776
+Burada izleyeceğimiz yol şu arkadaşlar.
+
+112
+00:24:00,019 --> 00:24:11,019
+Bakın bir kere kontrol ediyoruz. A15'den itibaren uçlar başlamış. A0'a kadar da gidiyor. Dolayısıyla 16 bitlik bir adresleme söz konusu.
+
+113
+00:24:11,019 --> 00:24:23,852
+İşte 15, 14, 13, 12 bu bir dörtlü. Daha sonra işte 11, 10, 9, 8, 7, 6, 5, 4.
+
+114
+00:24:24,435 --> 00:24:34,435
+3, 2, 1, 0 şeklinde bütün bitlerin alacağı değerleri hesaplayalım. Bakın, chip select ucu olarak şurası bağlanmış, kullanılmış. Bu 12 numaralı uç.
+
+115
+00:24:34,435 --> 00:24:47,435
+12 numaralı ucun aktif olabilmesi için şuralarda 0 değeri oluşması lazım. Burada da d, c, b, a sırasında 1, 1, 0, 0 oluşması lazım. Dolayısıyla 1, 1,
+
+116
+00:24:47,667 --> 00:24:57,667
+0, 0 değerlerini elde etmemiz gerekiyor. Öncelikli olarak bu elde ettiğimiz değerleri yazalım. Bir görelim bunları. Ne diyoruz?
+
+117
+00:24:57,667 --> 00:25:10,667
+A9'un 1 olması gerekiyormuş. A3'ün 1 olması gerekiyormuş. A2 ve A0'ın 0 olması gerekiyormuş. Aradım taradım. A1 için hiçbir değer yok. Dolayısıyla bunu x olarak bıraktım.
+
+118
+00:25:10,708 --> 00:25:25,307
+Daha sonra şuradaki Enable 1'in 0 olabilmesi için NAT'tan geçirmişiz. O zaman burası 1 olacak. Buranın 1 olabilmesi için, bu NOR kapısı olduğu için girişlerin hepsinin 0 olması gerektiğini anlıyorum.
+
+119
+00:25:25,307 --> 00:25:38,307
+O zaman A15 0 olmalı, A14 0 olmalı, A13 0 olmalı. Unuttuğumuz bir tane daha uç vardı. Onu da hemen gördük orada. Bir de MIO ucumuz vardı.
+
+120
+00:25:38,576 --> 00:25:45,576
+MOI ucuna da değer yazalım. Bakın ne demiş MOI ucunda? 0 olması gerektiğini buradan görüyoruz. Onun değerini de yazalım.
+
+121
+00:25:45,576 --> 00:25:58,576
+Demek ki input output komutlarıyla çalışacak. Başka? Yine 0 olması gerekiyor. NAT'tan öncesinin 1 olması gerekiyor. NOR kapısı olduğu için de girişlerin hepsinin 0 olması lazım.
+
+122
+00:26:04,980 --> 00:26:29,619
+7a7'miz 0, a6 0, a5 ve a4 de 0 değerlerini alıyor. Bunları hexadesimal olarak yazdığımız zaman, birinci hex basamağımız 0, ikinci hex basamağımız 2, üçüncü hex basamağımız 0, dördüncü hex basamağımızdan dolayı şunun 1 ve 0 olabileceği durumlar var. O zaman 0 olduğu durumda 208H, 1 olduğu durumda da 0,2.
+
+123
+00:26:30,112 --> 00:26:41,112
+AH değerlerine erişmiş oluyoruz. Birinci adresimiz, adres ucunun sıfır olduğu duruma karşılık geliyor. Bakın şuradan hemen devremizi de inceleyebilirim.
+
+124
+00:26:41,112 --> 00:26:50,112
+Devremizi incelediğimizde yine devre üzerinden hareket ediyoruz ya. Burada A1'in adres ucu olarak bağlandığını görüyoruz.
+
+125
+00:26:50,112 --> 00:26:54,700
+Bunu nasıl ayarlayacağım? Şöyle yapalım.
+
+126
+00:26:54,836 --> 00:27:13,535
+Bu durumda 0208H'ın data yazmaçlarına erişim sağlayan adres olduğunu 020AH'ın ise
+
+127
+00:27:13,683 --> 00:27:22,983
+kontrol yazmaçlarına erişim sağlayan adres olduğunu anlamış oluyoruz. Bu şekilde de bu cihazın adresini devre üzerinden çıkartmamız mümkün.
+
+128
+00:27:25,543 --> 00:27:32,443
+Şimdi adres çözümleme devresini iki farklı açıdan incelemiş olduk. Şimdi burada amacımız ne? Bu sorudaki amacımız,
+
+129
+00:27:32,443 --> 00:27:38,104
+208H adresinden itibaren ardışık çift adresi yerleştirilmiş 8251 için
+
+130
+00:27:39,251 --> 00:27:46,651
+Sabit bir şekilde sürekli olarak, 8251 hazır olduğu süre boyunca tek bir karakteri dış dünyaya göndermek istiyoruz.
+
+131
+00:27:48,651 --> 00:27:57,451
+Evet, az önce söylemiş olduğum 208 ve 200 AH adresleri, 8251'in data yazmaçlarıyla ilgili.
+
+132
+00:27:57,451 --> 00:28:00,451
+Evet, data ve kontrolü kastediyorum.
+
+133
+00:28:03,251 --> 00:28:04,851
+Şimdi bizden istenen...
+
+134
+00:28:05,395 --> 00:28:21,316
+sürekli olarak, 8251 hazır olduğu süre boyunca dış dünyaya sabit bir karakter göndermek ve bu süre içerisinde de veri gönderme mantığının nasıl tetiklendiğini lojik analizör üzerinden incelemek. Örneğimiz kabaca bunları içeriyor.
+
+135
+00:28:21,619 --> 00:28:33,660
+Şimdi öncelikli olarak bu işlemi yürütebilmek için şu anda 8251 başladığında hangi state'de olduğundan emin olamayabiliriz. O yüzden öncelikli olarak mod yazmacına erişeceğiz.
+
+136
+00:28:34,031 --> 00:28:46,031
+Sonra mod yazmacından asenkron mod ayarlayacağız. Asenkron mod ayarladıktan sonra kontrol yazmacı üzerinden 8251'i resetleyeceğiz. Resetledikten sonra artık nerede olduğundan eminiz.
+
+137
+00:28:46,031 --> 00:28:54,031
+Gidip bu sefer gerçek değerlerimizi yazacağız. Yani 8251 hangi ayarlarda çalışmasını istiyorsak o ayarları yazıyor olacağız. Daha sonrasında da...
+
+138
+00:28:54,483 --> 00:29:11,163
+Ön işlemler bittikten sonra da 8251'i kontrol edip, 8251'in status word'ünü okuyacağız. Status word'te transmit ready işareti aldığımızda aynı karakteri, A karakterini, büyük A karakterini dış dünyaya göndereceğiz. Sonra bunu sonsuz döngüde tekrarlayacağız.
+
+139
+00:29:11,539 --> 00:29:23,139
+Dolayısıyla döngünün baş adına döndüğümüzde, 8251, TXR'de hazır mı? Hazırsa veriyi gönder, başa dön, yine bu işlemi tekrarla şeklinde bir kod parçasıyla karşılaşmış oluyoruz.
+
+140
+00:29:23,619 --> 00:29:27,579
+Bunu doğrudan source code üzerinden işleyebiliriz. Bakalım.
+
+141
+00:29:29,480 --> 00:29:38,259
+Exit-tip bir program olarak yazılmış bu örnek. Dolayısıyla bir tane data segment var, stack segment var ama bunlar çok, şu anda kullanmayacağız bunları.
+
+142
+00:29:39,347 --> 00:29:41,907
+direkt kod segment üzerinden ilerleyebiliriz.
+
+143
+00:29:43,708 --> 00:29:50,867
+Burada öncelikli olarak arkadaşlar ilk yaptığımız işlem sistem resetlemeye ilişkin olarak bir işlem.
+
+144
+00:29:52,147 --> 00:29:56,248
+Şuraya kadar olan kısmı yorumlayabilir miyiz?
+
+145
+00:30:00,915 --> 00:30:24,036
+Şöyle söyleyelim. Şimdi sistemin hangi state'de olduğunu bilmiyoruz ya, öncelikli olarak yapacağımız adres ucu 1 iken yapacağımız ilk erişimin mod yazmacına gideceğini biliyoruz. Dolayısıyla bu erişim mod yazmacına bir erişim sağlıyor. Ne yazdığımızın bir önemi yok aslına bakarsanız. Önemli olan kısım son 2 bitinin 0.0'dan farklı bir şey olması gerekiyor.
+
+146
+00:30:24,596 --> 00:30:29,276
+Son 2 bitin 0.0'dan farklı olması için gerekiyordu. En azından bunu söyleyebilir miyiz?
+
+147
+00:30:31,155 --> 00:30:33,556
+Geçen haftaki derslerden hatırlayabilirsiniz.
+
+148
+00:30:44,147 --> 00:30:46,647
+Mod yazmacının son iki biti ne işe yarıyordu?
+
+149
+00:31:01,779 --> 00:31:20,139
+Evet. Baud rate'i ayarlamaya yarıyordu ama bu son iki bitimiz mod yazmacının D1 ve D0 bitleri eğer 0,0 olmuş olsaydı bu senkron haberleşme anlamına geliyordu. Senkron haberleşmede ise
+
+150
+00:31:20,276 --> 00:31:42,776
+Senkronizasyon 1 ve gerekli ise senkronizasyon 2 karakterlerini sistem bekliyor olacaktı değil mi? Ama biz ne istiyoruz? Asenkron modda ayarlayalım ki hemen sonraki yerleşimimiz bizim kontrol yazmacına olsun. Onun için D1 ve D0'ın 0-0'dan hariç bir değer alması burada en önemli kriter. Bunun haricinde diğer bitler çok da önemli değil.
+
+151
+00:31:50,483 --> 00:32:03,263
+Asenkron haberleşmeyi set ediyor. Dolayısıyla ikinci C, D bitimiz birken erişimde biz kontrol yazmacına erişmiş oluyoruz.
+
+152
+00:32:04,183 --> 00:32:09,803
+Kontrol yazmacına erişmiş oluyoruz. Dolayısıyla asenkron bir haberleşme istedik şu anda.
+
+153
+00:32:10,683 --> 00:32:17,203
+Dolayısıyla ikinci out işlemimiz bizim nereye gidecek arkadaşlar? Kontrol yazmacına gidecek.
+
+154
+00:32:17,619 --> 00:32:26,619
+Kontrol yazmacına gönderdiğimiz değer ne? 01000000 değeri. Kontrol yazmacına bu değeri yazmanın anlamı nedir?
+
+155
+00:32:26,619 --> 00:32:28,619
+Hatırlıyor muyuz?
+
+156
+00:32:40,531 --> 00:32:43,171
+Hatırlamıyor muyuz arkadaşlar? Haftaya sınav var ya.
+
+157
+00:32:51,667 --> 00:32:56,268
+Sınav konularına, 8255 ve 8251 dahil bu arada tekrar edeyim.
+
+158
+00:33:01,140 --> 00:33:06,092
+Şunu hatırlayamadık mı? Kontrol yazmacına bu değeri göndermenin anlamı nedir?
+
+159
+00:33:13,971 --> 00:33:20,451
+Şu bit için bu kontrol bitinin anlamı arkadaşlar yazılımsal resetti.
+
+160
+00:33:25,011 --> 00:33:49,531
+Aslında biz burada 8251 resetlemiş oluyoruz. Yani şurada yapmaya çalıştığımız işlem bu iki satırla. Önce mod yazmacına eriş, asenkron olarak ayarla. Daha sonra kontrol yazmacına eriştiriyor bu zaten bizi. CD eşittir 1 olarak erişin. Orada da reset bitini aktif et. Yani 1 olarak bir değer yaz ve sonuç 8251 resetlendi.
+
+161
+00:33:50,740 --> 00:34:16,239
+Resetlendikten sonra artık uygun yazma işlemimizi yapabiliriz. Yani bundan sonra yapacağımız işlem, ana yapacağımız işlemler. Şu değerlere bakalım. 01001101. Buraya yazmış olduğumuz değer asenkron haberleşme ve Bout Rate ayarıydı, faktör ayarıydı değil mi?
+
+162
+00:34:16,623 --> 00:34:25,923
+Bu faktör ayarı olarak 1 değerini kullanmamız ne demek? RxC ve TxC'deki değerler neyse bunu 1'e böl ve olduğu gibi kullan.
+
+163
+00:34:25,923 --> 00:34:41,023
+RxC ve TxC'deki değerlerimiz bizim kaçtı? 9600 Hz'di. Dolayısıyla bizim buradan elde ettiğimiz baut değerlerimiz, 9600 bautluk haberleşme değerlerini elde etmiş oluyoruz.
+
+164
+00:34:43,135 --> 00:34:49,935
+Kullanacağımız bir çıl terminalinde bar trade'i 9600'ü dolayısıyla orayla uyumlu bir değer elde etmiş olduk.
+
+165
+00:34:49,935 --> 00:35:02,935
+Bunun haricinde diğer bitlerimiz nelerdi? Şurası ne anlama geliyordu? Bir tane stop bit anlamına geliyordu. Diğerleri için de şöyle bakalım.
+
+166
+00:35:22,516 --> 00:35:30,436
+Mod yazmacı için bakalım ne diyor. Siz de bu şekilde zaten ilerleyeceksiniz. Çalışırken de böyle ilerleyin.
+
+167
+00:35:31,556 --> 00:35:38,756
+Kaç bit ile haberleşecekmiş arkadaşlar? Burası 1.1 olarak set edilmişti hatırlayacak olursanız. Yazdığımız değer şuydu.
+
+168
+00:35:43,380 --> 00:35:51,880
+Yazdığımız değer şuydu. 01 001101'di. Şimdi bunun üzerinden gidersek daha anlamlı olur.
+
+169
+00:35:52,288 --> 00:36:05,087
+0, 1, faktör oranı 1. Dolayısıyla RxCX'deki uçları 1'e bölüyor. Oradaki frekansı olduğu gibi kullanıyor. Şuranın 1, 1 olması 8 tane data bitiyle konuşacağımız anlamına geliyor.
+
+170
+00:36:05,087 --> 00:36:17,587
+Parit'i kullanmayacakmışız ve son olarak da bir tane stop bitiyle haberleşeceğimiz anlamına geliyor. Bunlar virtual terminaldeki değerlerle uyumlu.
+
+171
+00:36:19,251 --> 00:36:25,652
+Uyumlu değerler. Daha sonra şuna da bakalım. Kod tarafında yine
+
+172
+00:36:25,652 --> 00:36:41,351
+Bu sefer kontrol yazmacı için ne yazmışız? 0 0 0 1 0 0 0 yani 11 h değerini yazmışız. Şimdi buradaki
+
+173
+00:36:41,351 --> 00:36:45,351
+11 h değerinin anlamı ne ona bakalım. Şimdi mod yazmacını bitirdik.
+
+174
+00:36:52,755 --> 00:37:10,155
+Bir de kontrol yazmacına bakalım. Kontrol yazmacına yazdığımız değerler 0, 0, 0, 1, 0, 0, 0, 1. Anlamı ne? Daha önceden kalan herhangi bir hata biti varsa bunları temizle. Hata bitlerini temizle.
+
+175
+00:37:14,516 --> 00:37:25,635
+Buklarını sil diyelim. Bir de bakın, receive modülünü aktif yapmıyor. Sadece ve sadece transmit modülünü aktif yapıyor. Zaten soruda ne demiştik?
+
+176
+00:37:25,635 --> 00:37:38,756
+Veri göndereceğiz. Sürekli olarak veri göndermemiz gerekiyor. Dolayısıyla buradan işlemden anladığımız, önceden kalan hata bitleri varsa temizle ve transmit'i enable yap olarak bir anlam çıkartmış oluyoruz.
+
+177
+00:37:38,756 --> 00:37:41,756
+Şimdi gelelim kodun devamına.
+
+178
+00:37:42,387 --> 00:38:00,688
+Şu satırları itibariyle ayarladık. Daha sonrasında ise bir sonsuz döngümüz var arkadaşlar. Bakın bir sonsuz döngü içerisinde sürekli olarak belirli bir karakteri karşı tarafa göndermeye çalışıyoruz. Burada 41H değeri var. 41H değeri aslında ne anlama geliyor?
+
+179
+00:38:05,139 --> 00:38:11,380
+ASCII olarak büyük A karakterinin karşılığı 41 hexadesimal. Bundan dolayı 41H var.
+
+180
+00:38:13,380 --> 00:38:19,380
+Normalde ASCII karakterler 7 bit. 7 bit olarak 41 yazılabilir.
+
+181
+00:38:25,268 --> 00:38:33,868
+Normalde 7 bit olarak bu şekilde yazılabilir ama en yüksek anlamlı bit içinde 0 koyduğumuz vakit 8 bitlik 41H değerini elde etmiş oluyoruz.
+
+182
+00:38:33,868 --> 00:38:44,108
+Şimdi burada yapmış olduğumuz işlem ne? Ona bakalım. Yine öncelikli olarak 020AH adresi ile ilgili işlem yapıyoruz. Bu ne demek?
+
+183
+00:38:46,900 --> 00:38:59,200
+ve status yazmaçlarının olduğu adres bu. Eğer ben 020A'dan bu adrese yazma yapıyorsam, bu kontrol yazmaçlarına yazma yapıyor.
+
+184
+00:38:59,200 --> 00:39:07,400
+Ben bu adresten bir okuma yaparsam, bu status word'u okutuyordu. Dolayısıyla bu adreste bu yazmaçlar var.
+
+185
+00:39:07,400 --> 00:39:13,599
+Ne yapıyoruz? Bakın in işlemi var. Yani okuma yapıyoruz. Bu da zaten status word'u okuduğumuz anlamına geliyor.
+
+186
+00:39:14,900 --> 00:39:31,659
+Sonra bunu maskeleme işleminden geçiriyoruz. Maskeleme işleminde de düşündüğümüz zaman, status word'ümüzün en düşük anlamlı bitinde arkadaşlar hangi değer vardı? Burada tx red ucu vardı.
+
+187
+00:39:32,083 --> 00:39:51,483
+Dolayısıyla, TxRed ucu da nasıl çalışıyordu? Eğer TxRed ucu 1 ise, daha önceden devam eden gönderme işlemi tamamlanmış, 8251'e yeni bir değer, 8086 tarafından yazılırsa, 8251 bu değeri dış dünyaya göndermeye başlayacak. Bu anlama geliyor değerimiz.
+
+188
+00:40:00,000 --> 00:40:22,280
+End işlemine soktuk. Bu işleme soktuğumuz zaman eğer ki Tx ready biti 0 ise, yani daha işlem devam ediyorsa işlem sonucunda 0 bayrağımız 1 oluşur. Eğer ki Tx ready bir şekilde 1'e çıkmışsa bu durumda ise 0 bayrağımız 0 olur. 0 bayrağının 1 olması ne demek? İşlem sonucu 0.
+
+189
+00:40:25,907 --> 00:40:40,508
+0 bayrağının 0 olması ne demek? İşlem sonucu 0 değil diyelim. Eşit değildir 0. Böyle anlıyoruz. Biz ne arayacağız?
+
+190
+00:40:40,508 --> 00:40:49,508
+Demek ki normalde tx reddinin 0'da olduğu bir durum onun meşgul olduğu durum anlamına geliyor. 0'dayken tekrar okumam lazım. Dolayısıyla
+
+191
+00:40:49,876 --> 00:41:12,876
+Test işleminden veya end işleminden sonra 0 bayrağımız 1 ise tekrar okuyorum, tekrar maskeliyorum, 0 mı diye bakıyorum, 0 olduğu süre boyunca burada dönüyoruz arkadaşlar. Bu ne demek? Txredi 1 olana kadar bekle demek. Bu döngüyü kırma anımız şu nokta, Txredinin 1 olduğu ana denk geliyor. Txredi 1 ise...
+
+192
+00:41:13,423 --> 00:41:21,024
+Artık 8251'in data out bufferına sıradaki veriyi yazabilirim. Şu anda sıradaki bir veri yok. Hep aynı veriyi gönderdiğim için.
+
+193
+00:41:21,024 --> 00:41:37,384
+41H değerini AL üzerinden 0208H adresine gönderiyorum. Bunun anlamı ne? Bunun anlamı da 8251, 8251'in data out bufferına
+
+194
+00:41:40,179 --> 00:41:44,679
+Ne yazmış oluyoruz? Büyük A karakterini yazmış oluyoruz.
+
+195
+00:41:48,340 --> 00:41:53,920
+Bundan sonrasında zaten 8251 veriyi bit bit göndermişini kendi hallediyor.
+
+196
+00:41:53,920 --> 00:42:01,119
+Ben tekrar buradan bu işlemi gönderdikten sonra Jump Atlas ile yukarı döndüm. Tekrar adresimi set ettim.
+
+197
+00:42:01,427 --> 00:42:16,667
+statüs bitini okudum. Az önce gönderdiğim A karakteriyle ilgili işlem devam ediyor olabilir. Dolayısıyla şuradaki tekrar bloğunda bir iki kere dönebilirim. İşlem TX Red'i 1'e çıktıktan sonra tekrar sıradaki A karakterini gönderiyor olacağız.
+
+198
+00:42:16,667 --> 00:42:26,187
+Dolayısıyla buradaki işlemimiz bu şekilde. Kodu çalıştıralım ve çıktısını inceleyelim. Kodu çalıştırdığımızda arkadaşlar beklediğimiz üzere
+
+199
+00:42:26,420 --> 00:42:36,420
+Burada yana doğru gidiyor, belirli bir pencere boyutu var. A karakterlerinin virtual terminal ekranında görüldüğünü, izlenebildiğini görüyoruz.
+
+200
+00:42:36,420 --> 00:42:43,420
+Burada capture tuşumuzu da çalıştıracak olursak, bakın işlem sonucu capture edilen değere bir bakalım şimdi.
+
+201
+00:42:43,420 --> 00:42:48,420
+Burada, durdurmadan önce şunu göstermem lazım.
+
+202
+00:42:49,619 --> 00:42:55,619
+Bakın, burada A0 ucuna ne bağlı? Logic Analizör'ün A0 ucuna TxRed'i bağlı.
+
+203
+00:42:56,619 --> 00:43:09,619
+Burada dolayısıyla A0'da TxRed'i göreceğiz. Diğer tarafta da A1 ucunda da seri olarak gönderilen TxData pinindeki değerleri görüyor olacağız. Şimdi durduralım şöyle, pause edelim.
+
+204
+00:43:09,619 --> 00:43:12,619
+Bakın, burada ne olmuş? Çok büyütemiyorum bunu ama...
+
+205
+00:43:15,188 --> 00:43:32,007
+tx redibiti bir olduğu bir an var. Bakın şurada hemen başta bir olduğu bir an var. O anı yakalar yakalamaz biz karakterimizi gönderiyoruz. Bu karakterimizi göndermemizle birlikte arkadaşlar çıkan değerleri kontrol edelim. Tam bunu hizalı bir hale getireyim de şöyle.
+
+206
+00:43:47,219 --> 00:43:49,219
+Tamam şunu 50 yapalım.
+
+207
+00:43:57,427 --> 00:43:59,427
+Tam böyle yaparsak olacak gibi.
+
+208
+00:44:00,927 --> 00:44:02,927
+Burada küçücük bir kaydırabilsek.
+
+209
+00:44:04,527 --> 00:44:06,727
+Tam hizalı oturtamıyorum ama neyse.
+
+210
+00:44:07,127 --> 00:44:10,127
+TxReddy'nin 1'e çıktığı anda biz verimizi gönderiyoruz.
+
+211
+00:44:10,727 --> 00:44:15,227
+TxData ucundaki değerlere bakın arkadaşlar neler var onları inceleyelim şimdi.
+
+212
+00:44:17,327 --> 00:44:19,327
+Şu cursoru da kapatalım.
+
+213
+00:44:21,527 --> 00:44:22,527
+TxReddy'nin
+
+214
+00:44:23,059 --> 00:44:49,460
+Şurada bir olma durumu var. Bu bir olur olmaz, biz yeni verimizi yazdık ve tx data ucuydu, burası da tx red ucuydu. Biz verimizi göndermeye başladık. Gönderdiğimiz verinin ne olması lazım? Bakın arkadaşlar, biz 41 haşı göndereceğiz. Bunu gönderirken de bir tane stop biti, parity yok.
+
+215
+00:44:50,867 --> 00:44:59,867
+Ve 8 tane data biti üzerinden gönderiyor olacağız. Dolayısıyla bu bilgileri burada görmüş olduğumuz dalga şekliyle ilişkilendirebilir miyiz? Ne dersiniz?
+
+216
+00:45:00,867 --> 00:45:09,867
+Karakterler nasıl gidecekti? Veyahut da seri veri nasıl gönderilecekti? Öncelikli olarak bir start biti gitmesi lazım.
+
+217
+00:45:09,972 --> 00:45:20,211
+Daha sonra göndereceğimiz veriyi en düşük anlamlı bitinden itibaren göndermemiz lazım. Yani 41H'ı da yazdığımız zaman 0100001 olacak.
+
+218
+00:45:20,211 --> 00:45:31,652
+Dolayısıyla en sondan itibaren gönderecek olursak bir tane 1 göndereceğiz. Sonra 0000 göndereceğiz. Sonra şurası için 0010 değerlerini göndermemiz lazım.
+
+219
+00:45:32,192 --> 00:45:36,432
+Pariti yok. Dolayısıyla buraya ek bir şey girmiyor. Bir tane de stop biti göndereceğiz.
+
+220
+00:45:36,800 --> 00:46:03,880
+Dolayısıyla bunlardan sonra da hat idle'da kalacağı için burada da 1'de kalması lazım. Start bitinden önce nasıl? Start bitinden önce de idle durumda olduğu için 1'de olması lazım. Dolayısıyla bizim şu anda görmediğimiz bir an var. Orada bir ara için logic 1'de, idle state'de. Daha sonra şurada start biti geliyor. Bakın şurası start bitine karşılık geliyor. Daha sonra verinin bir değeri var. Bir değerini gönderdik.
+
+221
+00:46:04,403 --> 00:46:12,644
+Her birisi yaklaşık 3 tane kare mi kapsıyor? Bakalım şimdi. Daha sonra 3, 6, 9, 10, 12 tane 0 değerimiz var.
+
+222
+00:46:19,123 --> 00:46:30,324
+5 tane 0 geldi. Bunların her birisi 0, 0. Bunlar datadan gelen değerler. Daha sonra bir tane 1 değerim var. Bu neyle ilgili? Yine data ile ilgili ve son olarak datanın 0'ı var.
+
+223
+00:46:30,688 --> 00:46:47,887
+Şurada görmüş olduğumuz değer ne? Bu da bizim stop bitimiz. Bundan hemen sonra sistem bir süre idle'da kalıyor. Txrede tekrar 1'e çıktığı için biz yeni veriyi 8251'e basmış oluyoruz. Dolayısıyla dalga şekli olarak da bu şekilde ilişkilendirmiş oluyoruz sistemi.
+
+224
+00:46:51,507 --> 00:46:54,307
+Bununla ilgili sormak istediğiniz bir şey var mı arkadaşlar?
+
+225
+00:47:06,579 --> 00:47:32,059
+İkinci bir örneğimiz var arkadaşlar. Bu örnekte de mantık aynı. Yine 8251, 208 ve 202.0 AH adreslerine yerleşik. Yine bir tane virtual terminalimiz var. Haberleşme özellikle 9600 buadrat'te 8 tane data biti. Parit'i kullanmıyor. Bir tane stop biti ile çalışıyor. Şuradan Rx ve Cx.
+
+226
+00:47:32,659 --> 00:47:47,320
+uçlarına bakalım. 9600 Hz'lik bir işaret bağlı. Burada ise bizden istenen soruyu özetlemek gerekirse, 208H adresinden itibaren ardışık çift adreslere yerleştirilmiş bir 8251 vasıtasıyla
+
+227
+00:47:47,956 --> 00:48:06,956
+Dış dünyadan bize gönderilmiş olan her bir karaktere karşılık bunun bir büyük bir sonraki karakterini geri basmak olacak. Anlatabildim mi? Mesela virtual terminal ekranına biz A karakterini basmışsak bize B'yi gönderecek. C'yi basmışsak D'yi gönderecek. Böyle bir yapı var. Şimdi öncelikli olarak çalıştırıp nasıl...
+
+228
+00:48:07,539 --> 00:48:15,979
+İşlediğini görelim. Bu virtual terminal ekranı hem data input için hem de data output için çalışıyor. Yani az önceki örnekte ne oldu?
+
+229
+00:48:15,979 --> 00:48:27,259
+8251'in virtual terminal'e göndermiş olduğu karakterleri bu virtual terminal ekranında gördük. Benzer şekilde bu virtual terminal ekranından basmış olduğum karakterlere karşılık da
+
+230
+00:48:27,259 --> 00:48:35,259
+ben burada bir takım değerler görebiliyor olacağım. Şu anda bu beklediğim gibi çalışmadı ama ne olduğunu bakarız biraz sonra.
+
+231
+00:48:36,244 --> 00:48:40,644
+Dolayısıyla böyle çalışıyor olacak. Şimdi kod tarafını inceleyelim.
+
+232
+00:48:45,907 --> 00:48:48,907
+Şunu bir komentleyerek tekrar denemek istiyorum.
+
+233
+00:49:01,652 --> 00:49:15,152
+Tamam, şöyle bir güzellik oldu arkadaşlar. Daha önceki versiyonlarda bir hata durumu vardı. Bunda bu giderilmiş. Dolayısıyla bunu da buradan çıkartabiliriz artık. En azından örneği açıklamak daha kolay olacak.
+
+234
+00:49:15,152 --> 00:49:27,152
+Eskiden seri olarak input, receive edilen verileri yanlışlıkla bir bit ötelemeli olarak alıyordu. Fazladan bir kere daha öteliyordu simülasyon. Bu örneklerde bunlar giderilmiş bu aşamada.
+
+235
+00:49:27,507 --> 00:49:37,507
+Şimdi yapacağımız işlemlere bakalım. Yine burada arkadaşlar bu üst blok, Initialization bloğu, önceki örnekle aynı. Yapılan işlem şu.
+
+236
+00:49:37,519 --> 00:50:01,920
+Mod register'ına erişiyorum. Dikkat edin, son iki biti 0.0'dan farklı bir değer yazılı ki asenkron modda bunu ayarlamış olalım ki bir sonraki erişimim kontrol yazmacına olsun. Kontrol yazmacına da 40 açlayan yazmak demek, 8251 resetlemek demek. Reset işlemini yaptık. Daha sonra şuradaki ayarlarımıza bakalım. 1101. Hemen gelelim.
+
+237
+00:50:05,844 --> 00:50:08,664
+bakın mod yazmacına yazdığımız değer neydi?
+
+238
+00:50:11,724 --> 00:50:13,004
+01
+
+239
+00:50:16,755 --> 00:50:39,775
+0, 1, 0, 0, 1, 1, 0, 1. Az önce yazdığımız değerinin aynısı. Bir tane stop biti kullan, pariti kullanma, 8 tane data biti kullan, faktör oranı olarak da 1'i kullan. Zaten 9600 Hz vardı. Onu 1'e böldük. Bu out rate'imizi bu şekilde kullanabildik.
+
+240
+00:50:47,476 --> 00:51:00,276
+Kontrol yazmacına gelelim. Kontrol yazmacına yazdığımız değerde arkadaşlar bakın 0001 daha sonrasında ise 0101.
+
+241
+00:51:02,739 --> 00:51:19,980
+Önceden kalan bütün hataları temizle, error bitlerini temizledik. Bu sefer sadece transmit enable'ı açmadık, aynı zamanda receive enable'da açtık. Dolayısıyla 80251 hem dış dünyaya veri gönderebilir hem de dış dünyadan veri alabilir hale gelmiş oldu.
+
+242
+00:51:19,980 --> 00:51:24,860
+Tamam. Şimdi devam edelim.
+
+243
+00:51:27,956 --> 00:51:30,956
+Daha sonraki işlemlerimiz işte arkadaşlar.
+
+244
+00:51:36,851 --> 00:51:46,851
+Daha sonraki işlemler için gelelim. Aslında iki blok var bakın. Birinci blokumuz şurada. Adres değeri olarak şimdi öncelikli olarak Ctrl Word ile çalışıyoruz ama şurada bir blokumuz var.
+
+245
+00:51:50,260 --> 00:52:15,460
+Devamı burası. Bir de ikinci bir bloğumuz var. Şuradan itibaren başlıyor. İki parça, birinci blok burası, ikinci parçası burası. Şimdi ilk yaptış olduğumuz işlem nedir bakalım. Burada arkadaşlar yapılan işlem 2.0.a.h adresinden yani bir okuma da yaptığımız için neyi okumuş oluyoruz? Status Word'u okumuş oluyoruz.
+
+246
+00:52:15,711 --> 00:52:30,711
+Status Word'ü 02H ile mask eliyoruz, endliyoruz, test de olabilirdi veya yahut da iki kere shift edip kereyi kontrol etmek de olabilirdi. Bunlar kod akışı içerisinde size bağlı durumlar.
+
+247
+00:52:31,632 --> 00:52:41,592
+Bunun arkadaşlar anlaşıldığı üzere D0 ve D1 bitleriyle ilgili olarak D0'daki ucumuz az önce de görmüştük. Transmit Ready ucuydu.
+
+248
+00:52:42,291 --> 00:52:46,052
+D1'deki kontrolücümüz ise RxRed ucu.
+
+249
+00:52:48,132 --> 00:52:58,052
+Dolayısıyla biz ne yapmış oluyoruz? Bakın RxRed ucu, az öncekinin aynı mantığı, 8251 dış dünyadan bit bit veri alıyor.
+
+250
+00:52:58,052 --> 00:53:04,771
+Bu alma işlemi bittiğinde RxRed 1'e çıkıyor. Neymiş bakın 1 olması, veri alma tamam.
+
+251
+00:53:08,211 --> 00:53:14,911
+Dış dünyadan veri alma tamam. Bu ne demek? 8086, 8251'in Data In Buffer'ından okuyabilir.
+
+252
+00:53:18,739 --> 00:53:25,619
+Tamam. 8086 data in bufferını okuyabilir.
+
+253
+00:53:28,420 --> 00:53:33,619
+Karşı taraftan txredinin 1 olması neydi? Bu da veri gönderme tamam.
+
+254
+00:53:38,068 --> 00:53:51,768
+Bunu nasıl değerlendirecektik? Bu durumda da 8086 data out bufferına yazabilir. Bufferına yazabilir. Yani yeni değerler yazabilir.
+
+255
+00:53:51,768 --> 00:54:04,568
+Dolayısıyla ilk blokta arkadaşlar, rxready 1 olana kadar dönüyoruz. rxready 1 olana kadar dönüyoruz. rxready 1 olduğunda artık data in bufferı hazır. Gidip data in bufferını okuyoruz.
+
+256
+00:54:04,851 --> 00:54:15,351
+Data in bufferı 0208H adresindeydi. Gittik bunu okuduk, AL'ye okuduk, AL'yi 1 arttırdık. Geçici olarak da BL'de sakladık.
+
+257
+00:54:16,351 --> 00:54:22,851
+Daha sonra yine kontrol yazmacı üzerinden, bu sefer de TxReady1 olana kadar burada dönüyoruz.
+
+258
+00:54:22,851 --> 00:54:32,351
+TxReady1 olduğunda da yine Data out bufferına bu sefer az önce 1 arttırmış olduğumuz değeri yazıp bunu sonsuz döngüde tekrarlıyoruz. Sonuç nedir?
+
+259
+00:54:32,500 --> 00:54:36,860
+Dış dünyadan bir veri geldiğinde bunu bir arttırıp geri gönderiyorum.
+
+260
+00:54:36,860 --> 00:54:40,100
+Çalıştırdığımız zaman neyle karşılaşıyoruz? Tekrar görelim.
+
+261
+00:54:40,100 --> 00:54:43,100
+Çalıştırdığımız zaman neyle karşılaşıyoruz?
+
+262
+00:54:45,588 --> 00:54:51,987
+Virtual Terminal ekranım açık. Buna belki iki kere tıklamanız gerekiyor olabilir. Bazen aktif olmuyor hemen.
+
+263
+00:54:51,987 --> 00:54:57,987
+Gönderdiğim karakter A karakterini gönderdiğimde küçük B'ye geldi. Büyük A'yı gönderdiğimde büyük B'ye geldi.
+
+264
+00:54:57,987 --> 00:55:02,387
+Z'yi gönderdiğimde ondan hatalı bir şey geldi. Çok önemli değil.
+
+265
+00:55:02,387 --> 00:55:08,588
+N harfini gönderdiğimde O geldi. M harfini gönderdiğimde büyük M'ye geldi.
+
+266
+00:55:13,588 --> 00:55:27,588
+Bize seri olarak gelen veriyi, 8251'deki veriyi override etmeden veya 8251 bufferındaki değeri çöpken okumadan, çöp halindeyken...
+
+267
+00:55:28,403 --> 00:55:41,284
+Okumadan, hazır olana kadar bekleyip, hazır olduğunda okuyup, yine 8251'i ezmeden, ona override etmeden, 8251 göndermek için hazır olduğunda veriyi dış dünyaya gönderen bir örnek.
+
+268
+00:55:41,284 --> 00:55:47,284
+Burada özellikle bağlantılara dikkat edelim arkadaşlar. Şimdi seri haberleşme açısından...
+
+269
+00:55:47,871 --> 00:56:12,491
+8251 tarafında transmit eden uç, virtual terminal tarafında receive eden uçla eşleşmiş. Mantık beklediğimiz gibi değil mi? Bir taraf için gönderilen veri, diğer taraf için alınan veridir. Bundan dolayı birisinin Rx'i diğerinin Tx'i diğerinin Rx'ine bağlı şeklinde bir bağlantı şekli elde etmiş oluyoruz.
+
+270
+00:56:13,280 --> 00:56:23,880
+Bu örneğimiz de bu şekilde. Ben bu örnekleri birazdan koyacağım şimdi. Hemen koyacağım. Siz de sınava kadar bu örnekler üzerinden hem kendi örneklerinizi üretip çalışma imkanı da sağlamış olursunuz.
+
+271
+00:56:23,880 --> 00:56:27,080
+Buraya kadar olan noktada sormak istediğiniz bir şey var mı?
+
+272
+00:56:38,739 --> 00:56:44,439
+Yoksa arkadaşlar şöyle yapıyoruz 15 10'a kadar ara veriyoruz 15 10'da devam edeceğiz.
+
+273
+01:08:47,123 --> 01:09:05,603
+Evet arkadaşlar, tekrar merhaba. Az önceki örneklerimizle birlikte 8251 konusunu bitirmiş oluyoruz. Dediğim gibi sınava 8251, 8255 ve 8086 ile ilgili olarak veya mikroişlemcilerle ilgili olarak baştan itibaren değindiğimiz bütün konular dahil.
+
+274
+01:09:07,463 --> 01:09:13,923
+Bu noktadan itibaren 8254 entegresine geçiyor olacağız. 8254 entegresi sınava dahil değil.
+
+275
+01:09:14,304 --> 01:09:26,584
+Şu anda konu anlatımını gerçekleştireceğiz. Belki bu haftaya tamamen yetişmeyebilir. Bir saat içerisinde ne kadar yetiştirirsek böyle ilerleyeceğiz.
+
+276
+01:09:26,584 --> 01:09:28,584
+Şunu açalım.
+
+277
+01:09:44,404 --> 01:09:55,904
+Evet arkadaşlar, 8254 entegresi yine bu da programlanabilir bir yardımcı devre. Programlanabilir Programmable Interval Timer olarak isimlendiriliyor.
+
+278
+01:09:55,904 --> 01:10:11,404
+Bu ders kapsamında 8254'ün uç tanımlarını, iç yapısını, nasıl ayarlanacağını, kontrol wordlerini, modlarını, çalışma şekillerini yani
+
+279
+01:10:12,340 --> 01:10:23,739
+Bundan kasıt, o anki sayma değerini tutabiliyoruz veyahut da statüsünü de okuyabiliyoruz. Yani bu çalıştırması ve kontrolüyle ilgili kısımlar. Bunlardan bahsedeceğiz.
+
+280
+01:10:23,739 --> 01:10:30,340
+Statüs byte'ı nasıl değerlendirilir, her bir bitin görevi nedir, bunlardan bahsediyor olacağız.
+
+281
+01:10:30,340 --> 01:10:33,340
+8254 ile ilgili olarak.
+
+282
+01:10:37,939 --> 01:10:51,939
+Bir kere 8254 arkadaşlar, temel olarak hassas bir şekilde ve kesin doğru bir şekilde zaman gecikmeleri veya zamanlama oluşturmak için kullanılan bir entegre.
+
+283
+01:10:51,939 --> 01:11:00,939
+Yani donanımsal bir zamanlayıcı aslında. Bunun alternatifi ne? Yazılımsal olarak bunu yapmak. Yazılımsal olarak bunu yapmak istediğimizde aslında...
+
+284
+01:11:01,247 --> 01:11:13,807
+Şunu yapabiliriz, bir fonksiyon yazarız. Bu fonksiyonun içerisinde kullanmış olduğumuz boş döngü sayısından hareketle her bir instruction'ın ne kadar sürede gerçekleştiğini, cycle'da gerçekleştiğini biliyoruz.
+
+285
+01:11:14,131 --> 01:11:24,271
+8086'nın bağlı olduğu clock frekansını biliyoruz. Dolayısıyla her bir alt adımın clock cycle'ının ne kadar sürede gerçekleşeceğini bulabiliriz.
+
+286
+01:11:24,271 --> 01:11:31,171
+Buradan hareketle bir instruction'u ne kadar süre aldığını bulabiliriz. Bir instruction bloğunun ne kadar süre aldığını bulabiliriz.
+
+287
+01:11:31,171 --> 01:11:35,731
+Bunun üzerine fonksiyon çağırma ve fonksiyondan geri dönüş sürelerini de dikkate alarak
+
+288
+01:11:36,819 --> 01:11:45,819
+Fonksiyon çağrıldığından, fonksiyondan dönülene kadar sürede ne kadar zaman geçtiğini hassas bir şekilde hesaplamaya çalışabiliriz.
+
+289
+01:11:45,819 --> 01:11:53,819
+Tabi bu durum bakın neye göre değişti? Bir kere frekans saat darbimize göre değişiyor.
+
+290
+01:11:53,819 --> 01:11:55,692
+Yazılımda...
+
+291
+01:11:55,859 --> 01:12:14,859
+Ufak tefek değişiklikler olduğu vakit araya interaplar falan girdiğinde bu süreç gene uzuyor, kısalabiliyor, değişiklik olabiliyor. Dolayısıyla bu iş için yani özel zamanlama işlemleri için özel bir donanıma ihtiyacımız olduğu ortaya çıkmış oluyor. Bu da zaten 8254'ün temel kullanım amacı.
+
+292
+01:12:18,496 --> 01:12:34,496
+Gerçek zamanlı saat, kare dalga üreteci, karmaşık şekildeki dalga yapılarını üretebildiğimiz bir yapı, tek seferlik tetikleme üretebileceğimiz bir darbe üreteci veya olay sayıcı olarak kullanılabiliyor.
+
+293
+01:12:34,496 --> 01:12:42,496
+Bu ne demek? Olay sayıcı ve zamanlayıcı, sayıcı ve zamanlayıcı bunlar iki ayrı kavram. Bunları birbirinden ayırt etmemiz gerekiyor.
+
+294
+01:12:45,363 --> 01:12:59,763
+8254'ün uçlarını gördüğümüzde daha net bir şekilde anlayacağız ama, 8254'ün içerisinde 3 tane zamanlayıcı var, 3 tane clock girişi var. Bunlar 3 farklı counter'a bağlı. Demek ki içeride 3 tane counter'ımız var.
+
+295
+01:12:59,763 --> 01:13:09,363
+Bu counter'lardan her birisinin clock girişini farklı iki mantıkla kullanabilirim. Ya bu clock girişine sabit frekanslı bir saat darbesi bağlayabilirim.
+
+296
+01:13:09,631 --> 01:13:30,391
+Veyahut da bir olaydan tetiklenen kare dalgayı bağlayabilirim. Ne demek? Örneğin, kulok darbesine bir kilohertzlik bir işaret bağladığımda bir periyot süremiz bir milisaniye olacak. Hassas bir şekilde her bir değişim bir milisaniye. Bunu biliyorum.
+
+297
+01:13:30,720 --> 01:13:46,720
+Dolayısıyla ben burada zamanlama yapabilirim. Bir milisaniyelik hassasiyette zamanlama yapabilirim. Bir milisaniyenin altındaki hassasiyete sahip değilim ama bunun buradaki geçen sürenin kaç milisaniyeye tekabül ettiğini hassas bir şekilde bulabilirim.
+
+298
+01:13:56,015 --> 01:14:05,015
+Karşılıklı olarak bir infrared alıcı ve verici var. Bu konveyör bant üzerinden de ürünler taşınıyor.
+
+299
+01:14:05,015 --> 01:14:16,015
+Herhangi bir ürün geçtiğinde ürünler birbirini engellemiyor, peş peşe sürekli olarak gelmiyor ve birbirlerinin önünde arkasında gelmiyor gibi bir varsayım yaparsak,
+
+300
+01:14:16,015 --> 01:14:23,015
+yani o anda sensör önünden tek bir ürün geçebilir ve aralıklı olarak geçer. Bunu elde etmişsek...
+
+301
+01:14:24,148 --> 01:14:34,828
+Her ürün geçtiğinde sensörün önü kapandı. Ürün geçmesi tamamlandıktan sonra sensör alıcıyı görmeye başladı, vereceği görmeye başlıyor.
+
+302
+01:14:34,828 --> 01:14:51,828
+Dolayısıyla her ürün geçtiğinde bir kare dalga üretiriz. Ama buradaki temel fark şu, eğer ki ben 8254'ün clock girişine bir zamanlayıcı bağlamışsam, pardon bir clock işareti bağlamışsam
+
+303
+01:14:52,435 --> 01:15:05,835
+Kulak işareti bağladığımızda, saat frekansı hassas bir şekilde ve periyodik bir şekilde olacaktır. Bu periyodik bir şekilde. Hepsinin aynı olduğunu varsayalım. Dolayısıyla, periyotlar burada eşit.
+
+304
+01:15:06,536 --> 01:15:07,536
+Periyotlar eşit.
+
+305
+01:15:07,840 --> 01:15:20,319
+Ama bu durum ne olarak isimlendiriliyor? Bu şekilde bir Kulok işaretini saat darbe üreteci üzerinden sürdüğümüz durum zamanlayıcı olarak isimlendiriliyor.
+
+306
+01:15:21,800 --> 01:15:35,360
+Alternatifi neydi? Örnek bu konveyör bantı vermiştik. Ürün yok yok yok bir anda bir ürün geldi geçti. Daha sonra uzun bir süre boyunca ürün yok bir anda ürün geldi geçti. Sonra hemen peşinden bir tane daha ürün geçti.
+
+307
+01:15:36,851 --> 01:15:38,851
+Bu da arkadaşlar olay sayıcı.
+
+308
+01:15:44,435 --> 01:15:54,435
+veya kısaca sayıcı, bu da kısaca zamanlayıcı. Demek ki, 8254'ü ben hem sayıcı, hem de zamanlayıcı olarak kullanabiliyorum.
+
+309
+01:15:54,435 --> 01:15:59,435
+Sayıcı olarak kullanmak istediğimde, bir sensör çıkışını clock işaretine bağlıyorum.
+
+310
+01:16:02,836 --> 01:16:10,236
+Zamanlayıcı olarak kullanmak istediğimde ise, klok ucuna bir tane saat darbe üretici bağlıyorum.
+
+311
+01:16:13,811 --> 01:16:19,572
+Bu şekilde hem zamanlayıcı hem sayıcı olarak kullanma imkanı elde etmiş oluyoruz.
+
+312
+01:16:27,764 --> 01:16:37,164
+8254'ün yine özelliklerine bakacak olursak arkadaşlar, 8254 içerisinde 3 tane birbirinden bağımsız counter'ımız var.
+
+313
+01:16:37,164 --> 01:16:44,363
+Her bir modülün adı counter olarak geçiyor. Bu counter'lar arkadaşlar 16 bitlik ve programlanabilir sayıcılar.
+
+314
+01:16:44,363 --> 01:16:52,963
+Her bir counter 6 farklı moddan bir tanesinde ayarlanıp kullanılabiliyor.
+
+315
+01:16:54,579 --> 01:17:02,600
+Counter'lar maksimum, yani 8 MHz'e kadar clock girişini kabul edebiliyor. Bu üç özelliğini vermiş olalım.
+
+316
+01:17:06,600 --> 01:17:12,600
+Temelde arkadaşlar, bu lojik devreler dersinde de gördük. Belki oradan da hatırlayacaksınız.
+
+317
+01:17:15,100 --> 01:17:21,019
+Sayıcıları, mesela asenkron bir sayıcı olarak tasarlayabiliyorduk, hatırlayacak olursanız.
+
+318
+01:17:21,587 --> 01:17:38,268
+Bir tane flip-flop'un Q çıkışı, ikinci flip-flop'un klok işaretine bağlı, ikinci flip-flop'un Q çıkışı, bir sonraki flip-flop'a bağlı ve her klok darbesinde Q değeri komplement oluyor.
+
+319
+01:17:38,771 --> 01:17:52,891
+Bu şekilde bir setup yaptığımız durumu hatırlayın. Bu bir asenkron sayıcıydı. Bu mantıktan da hareketle düşünecek olursak, benim en başta vermiş olduğum yüksek frekanslı saat darbesi, her bir flip-flop geçişinde yarıya bölünüyor.
+
+320
+01:17:52,891 --> 01:18:00,492
+Yarıya bölünüyor, yarıya bölünüyor, yarıya bölünüyor ve bu şekilde ilerliyor. Öyleyse bizim buradaki 8254'ü de aynı mantıkta düşünebiliriz.
+
+321
+01:18:02,528 --> 01:18:06,927
+Sayıcının temel olarak frekans bölücü olarak çalıştığını düşünebiliriz.
+
+322
+01:18:07,968 --> 01:18:15,048
+İçerisinde yüklemiş olduğumuz değer neyse frekans değerini buna bölen bir sayıcı olarak çalışıyor.
+
+323
+01:18:16,048 --> 01:18:19,568
+Flip-floplar niye ikiye bölüyor? Çünkü flip-floplar bir bitlik sayıcı.
+
+324
+01:18:19,568 --> 01:18:25,448
+Her birisi 0, 1, iki farklı değer alabilir. Her zaman frekansı ikiye bölerek ilerliyor.
+
+325
+01:18:25,808 --> 01:18:28,507
+Asenkron sayıcıdaki örnek için konuşacak olursak.
+
+326
+01:18:28,724 --> 01:18:37,724
+Burada 16 bitlik bir sayıcımız var. Dolayısıyla 16 bitlik sayıcıya yüklediğimiz değer neyse ona göre giriş frekansını bölerek çalışıyor.
+
+327
+01:18:38,724 --> 01:18:40,655
+Burada temel mantık şu.
+
+328
+01:18:40,655 --> 01:18:52,976
+Yüklediğimiz bir ilk değer var. Bu ilk değerden itibaren, bakın, 8254 counterları nasılmış? Down counter'mış. Ne demek bu? Bir değer yüklüyoruz. O değerden itibaren geriye doğru sayıyor.
+
+329
+01:18:52,976 --> 01:19:05,456
+Sayma değeri sıfıra ulaştığında çıktısıyla ilgili, bunun bir de out ucu var demek ki, 8254 counterlarının. Bir clock girişi var, bir de out ucu var. Out ucunda bir değişikliğe sebep oluyor.
+
+330
+01:19:05,619 --> 01:19:15,219
+Temeldeki çalışma mantığı da frekans bölücü olarak çalışıyor. Frekansı bu yüklemiş olduğumuz değere bölerek çalışmasını gerçekleştiriyor.
+
+331
+01:19:16,219 --> 01:19:21,219
+8254'ün PC'lerdeki kullanımı nedir diye bakacak olursak,
+
+332
+01:19:21,219 --> 01:19:23,219
+Örneğin,
+
+333
+01:19:25,427 --> 01:19:35,927
+Sistem saatini belirlemekte bu yapı kullanılabiliyor. Real-time clock mantığında da çalışan bir günlüğümüzde yapılar da var. Yani pilli bios yapıları da var.
+
+334
+01:19:35,927 --> 01:19:42,927
+Ama sistem saatini belirlemekte 8254'ün counterlerinden bir tanesi kullanılabiliyor.
+
+335
+01:19:53,427 --> 01:19:55,648
+bahsediyoruz aslında. Yani önceki
+
+336
+01:19:55,648 --> 01:19:57,608
+bayağı bir önceki bir ürün
+
+337
+01:19:57,608 --> 01:19:59,367
+aslında. Yine
+
+338
+01:19:59,367 --> 01:20:01,907
+arkadaşlar bu 8254
+
+339
+01:20:01,907 --> 01:20:03,547
+RAM'deki yenileme
+
+340
+01:20:03,547 --> 01:20:05,327
+işaretini sağlamak için 15
+
+341
+01:20:05,327 --> 01:20:07,448
+mikrosaniyede bir RAM
+
+342
+01:20:07,448 --> 01:20:09,568
+yenilemesini sağlayan bir tetikleme üretmek
+
+343
+01:20:09,568 --> 01:20:11,488
+amacıyla da kullanılıyor. Buradan
+
+344
+01:20:11,488 --> 01:20:12,028
+kasıt ne?
+
+345
+01:20:12,416 --> 01:20:28,416
+RAMM biliyorsunuz ki Random Access Memory her bir hafıza hücresi bir kondansatör ve bir transistörden oluşuyor. Temel olarak böyle söyleyebiliriz. Ama kondansatör ve transistör yapısında kaçak akımlardan dolayı aslında biz oraya veri yazdığımızda bir yük.
+
+346
+01:20:28,851 --> 01:20:48,851
+kapasitesinden faydalanarak, oraya yük saklama kapasitesini kullanarak orada veriyi saklamış oluyoruz. Ama bu kaçak akımlardan dolayı yapmış olduğumuz yük, yüklemiş olduğumuz yük miktarı yavaş yavaş azalabiliyor. Dolayısıyla belirli aralıklarla RAM'lere içerisindeki yazılı değer neyse bunu tekrar yüklemek lazım.
+
+347
+01:20:50,515 --> 01:21:06,015
+Mesela DDR RAM dediğimiz yapıda da Double Data Rate deniyor. Double Data Rate ne demek? Clock işaretinin hem düşen kenarında hem yükselen kenarında çalışabilen bir yapı. Dolayısıyla burada da belki bu yenileme frekansı çok daha yüksek anlamına geliyor.
+
+348
+01:21:07,188 --> 01:21:25,988
+Veyahut da bilgisayarınızı ilk boot ettiğiniz zaman bazen uyarı işaretleri falan verir. Mesela RAM eksikse veya RAM bozuksa, hard disk ile ilgili bir sıkıntı varsa, PC hoparlöründen birtakım sesler gelir. İşte bu sesleri üretmek için de yine 8254 kullanılır durumda.
+
+349
+01:21:27,387 --> 01:21:34,188
+8254'ün iç yapısına baktığımızda arkadaşlar, burada da hem iç yapısını hem de uç yapısını görmüş oluyoruz.
+
+350
+01:21:34,387 --> 01:21:50,587
+İkisini birlikte inceleyebiliriz. Burada şunu görüyoruz. Üç tane counter'ımız var. Bu counter'ların her birisi için bir tane clock girişi var, bir tane out çıkışı var. Bir de dışarıdan kontrolü sağlamak adına bir de gate ucu var.
+
+351
+01:21:50,587 --> 01:22:01,688
+Clock işareti sayıcının saat darbesi veya olay sayıcı olarak kullanacaksak, zamanlayıcı olarak kullanacaksak saat darbesinin bağlandığı uç.
+
+352
+01:22:01,887 --> 01:22:06,387
+Sayıcı olarak kullanacaksak da sensör çıkışının bağlandığı uç olarak düşünebiliriz.
+
+353
+01:22:06,387 --> 01:22:15,487
+Out ucu sayma işlemleri bittiğinde dış dünyaya bir fiziki sinyal göndermek gerekir. Ona ilişkin bir uç.
+
+354
+01:22:16,595 --> 01:22:25,595
+Gate ucuda arkadaşlar bu 8254'teki counterları dışarıdan kontrol etmemizi, tetiklememizi sağlayan yardımcı bir uç.
+
+355
+01:22:25,595 --> 01:22:33,595
+Bunları modları gördüğümüzde biraz daha detaylı bir şekilde göreceğiz ve orada tanımlıyor ve birbirinden ayırt ediyor olacağız yine.
+
+356
+01:22:33,595 --> 01:22:40,235
+Bununla birlikte 8254'ünde 8 bitlik bir yardımcı devre olduğunu görüyoruz. Onu şuradan anlıyoruz bakın.
+
+357
+01:22:40,307 --> 01:22:46,807
+D0, D7 data işlemi. Dolayısıyla şimdiye kadar gördüğümüz şey burası için de geçerli.
+
+358
+01:22:47,412 --> 01:23:03,612
+8086 mikroişlemcisi bir okuma yazma saykılığında tek adresten 8 bitlik, yine çift adresten 8 bitlik ve çift adresten 16 bitlik işlemleri bir okuma yazma saykılığında gerçekleyebiliyordu.
+
+359
+01:23:03,612 --> 01:23:10,811
+Hangi koşulda? Hafıza arayüzü de buna uyumlu bir şekilde gelmişse, yani çarpı 16 olarak ayarlanmışsa.
+
+360
+01:23:11,028 --> 01:23:24,828
+Bu çerçevede de 8254'ün 8086 ile interfeys edilmesinde şunları göreceğiz. Ya 8254 ardışık çift adreslere yerleştirilmiş olacak veyahut da ardışık tek adreslere yerleştirilmiş olacak.
+
+361
+01:23:35,568 --> 01:23:45,967
+Bu iki durumdan birisinde kalıyorduk. Üçüncü durumu da dersimizde görmüştük fakat donanımsal olarak ek bir yapı gerektirdiği için onu ders kapsamı dışında bırakmıştık.
+
+362
+01:23:47,568 --> 01:23:51,568
+Yine 8254'ün uçlarına baktığımızda bir tane chip select ucu var.
+
+363
+01:23:51,760 --> 01:24:06,760
+Adres çözümleme devresinden gelecek uç. Read ve write uçları var. Mikroişlemcinin read ve write uçları bağlı. Yine buradaki uçları da mikroişlemci açısından tanımlıyoruz. Mikroişlemci 8254'e yazma yapmak isterse write ucuna 0 gönderiyor.
+
+364
+01:24:06,760 --> 01:24:14,760
+8086, 8254'ten okuma yapmak isterse de read ucuna 0 gönderiyor. Aktif 0 uçlar olduğu için bu şekilde çalışıyor.
+
+365
+01:24:15,155 --> 01:24:31,655
+Yine burada arkadaşlar en önemli noktalardan birisi, bu cihazın iki tane adres ucu var. Dolayısıyla 8254, 8086 mikroişlemcinin adres uzayında 4 byte'lık yer kaplayacak. Buna da dikkat etmiş olalım.
+
+366
+01:24:31,655 --> 01:24:39,155
+Şimdi bu iç ve uç tanımdan sonra buradaki erişim mantıklarına bakalım.
+
+367
+01:24:41,684 --> 01:24:50,404
+Az önce söylediğim gibi clock gate ve out uçları ne şekilde çalışıyor bunları söylemiş olduk. Bir söylemediğim bir durum var, ondan da bahsedelim.
+
+368
+01:24:52,264 --> 01:25:07,404
+Donanımsal olarak bir zamanlayıcı yaptığımızdan dolayı, donanımsal bir zamanlayıcı olarak 8254'ü kullandığımızdan dolayı, aynı zamanda out ucunu 8086'nın interrupt request ucundan kesme isteği oluşturmaktadır.
+
+369
+01:25:09,171 --> 01:25:21,171
+Yani belirli bir süre boyunca sayması için ayarladım ben 8254'ü. Bu süre bittiğinde bize kesme isteği gönderebilir. Bunu nerede kullanabiliriz? Multitasking işlerini de kullanabiliriz örneğin.
+
+370
+01:25:21,171 --> 01:25:37,171
+8254 sürekli olarak işte 3 milisaniyede veya 5 milisaniyede bir tetikleme göndererek ben burada task switching yaparak multitasking bir çıktığı kullanıcıya sunabilirim. Mesela bu mantık çerçevesinde kullanılabilir.
+
+371
+01:25:37,171 --> 01:25:42,171
+Peki bu adres uçlarının alabileceği değerlere göre erişimler nasıl oluyor? Onlara bakalım.
+
+372
+01:25:42,832 --> 01:25:50,332
+Temel olarak konuşmak gerekirse arkadaşlar, 0-0 adres uçlarında 0-0 değeri varsa bu sayıcı 1'e erişmemizi sağlıyor.
+
+373
+01:25:51,347 --> 01:25:56,288
+0, 1 değeri binary olarak 1'e, decimal karşılığı 1, sayıcı 1'e eriştiriyor.
+
+374
+01:25:56,927 --> 01:26:00,908
+1, 0, decimal olarak 2'ye karşı geliyor, sayıcı 2'ye eriştiriyor.
+
+375
+01:26:01,548 --> 01:26:06,907
+1, 1 değeri de kontrol yazmacına erişmemizi sağlayan değerler olarak ortaya çıkıyor.
+
+376
+01:26:09,407 --> 01:26:16,788
+Burada kontrol yazmacının yapısına bakacak olursak arkadaşlar,
+
+377
+01:26:17,460 --> 01:26:38,140
+Burada aslında iki tane özel durum var. Bu özel durumları daha sonra anlatmak üzere temel ayarlama fonksiyonları üzerinden konuşacağım. Bunlar mod ayarı olarak geçiyor. Yani bu en yüksek anlamlı 2 bitin 1.1 olmadığı.
+
+378
+01:26:38,963 --> 01:26:47,263
+ve aynı zamanda da read write uçlarının 0-0 olmadığı durumlara karşılık ediyor. Şu iki durum özel durum.
+
+379
+01:26:47,263 --> 01:26:56,063
+Select counter bitlerinin 1-1 olduğu ve read write uçlarının 0-0 olduğu durumlar arkadaşlar özel durumlar.
+
+380
+01:26:56,063 --> 01:27:00,863
+Onları sonraya bırakmak üzere şimdi genel mod ayarlarından bahsediyorum.
+
+381
+01:27:04,435 --> 01:27:13,435
+Control Word'e erişebilmek için yapmamız gereken değerler, yani Control Word'e bir yazma işlemi yaptığımız durumu ifade ediyor buradaki örnekler.
+
+382
+01:27:13,935 --> 01:27:24,216
+Control Word'e yazma işlemi yaptığımızda arkadaşlar, bir kere cihazın seçilmiş olması lazım. Yani 8254'ün chip select ucuna sıfır değeri gelmesi lazım.
+
+383
+01:27:24,627 --> 01:27:44,327
+Yazma işlemi yapacağımız için Read'in bir Write'in sıfır olması lazım, aktif sıfır uçları olduğu için ve adres uçlarına da 1, 1 değerinin yazılmış olması lazım. Bu durumda 8254'e göndermiş olduğum değer, 8 bitlik değer, kontrol yazmacına aktarılır. Sorun mu madde?
+
+384
+01:27:52,595 --> 01:27:55,915
+Soru varsa arkadaşlar istediğiniz zaman bölüp sorabilirsiniz.
+
+385
+01:28:02,003 --> 01:28:09,623
+Dolayısıyla bu bitlerin görevlerine bakalım. Dediğim gibi özel iki tane durum var. Onları atlayarak şimdi konuşuyoruz.
+
+386
+01:28:10,623 --> 01:28:15,363
+En yüksek anlamda iki bitimiz arkadaşlar hangi counter'a ilişkin işlem yapılacağını belirtiyor.
+
+387
+01:28:15,563 --> 01:28:24,243
+3 tane counter'umuz olduğuna göre 0-1, 0-0 ve 1-0 ile ilgili sıradaki counter'ları seçme işlemini yapabiliyoruz.
+
+388
+01:28:24,692 --> 01:28:44,692
+Daha sonraki iki bitimiz ise arkadaşlar, en yüksek anlamlı şey, 0-0 değeri özel durumda, onu atlıyorum. Yapılacak sayma işleminin kaç değerinden itibaren, kaç bitlik bir değer olduğunu belirtiyor aslında. Örneğin, ben 0. counter'a...
+
+389
+01:28:45,652 --> 01:28:51,772
+100 değerinden itibaren geriye doğru say demek istersem, sayıcılarımız 16 bitlik.
+
+390
+01:28:51,772 --> 01:29:01,652
+100 değeri 8 bite sığıyor. Öyleyse benim sadece 16 bitlik verinin sadece düşük anlamlı byte'ını göndermem yeterli. O zaman şunu yapıyoruz.
+
+391
+01:29:01,908 --> 01:29:14,908
+Read Write 3'lerine 0, 1 değerini yazıyorum. Bu ne demek? Ben Counter'a sadece 8 bitlik bir değer yazacağım. Bu değerde 16 bitlik sayma değerinin düşük anlamlı byte kısmı olacak demek oluyor.
+
+392
+01:29:14,908 --> 01:29:24,908
+Eğer ki benim saydırmak istediğim değer 60.000 gibi bir değerse, bunu zaten 8 bite sığdıramam ancak 16 bite sığabilir. O zaman şunu diyorum.
+
+393
+01:29:25,203 --> 01:29:32,203
+Önce 8086 ile bu 8254, 8 bit üzerinden anlaşabiliyor. Çünkü 8254'ün sadece...
+
+394
+01:29:32,576 --> 01:29:39,175
+8 tane veri biti var. Ama ben buna 16 bitlik bir sayma değeri göndermek istersem, demek ki ne yapmam gerekiyor?
+
+395
+01:29:39,175 --> 01:29:48,375
+İki paket halinde bunu göndereceğim. Bu gönderme işlemi içinde kullanabileceğimiz mod, 16 bitlik sayma değerin önce düşük anlamlı 8 bitini,
+
+396
+01:29:48,375 --> 01:29:55,576
+daha sonra da yüksek anlamlı 8 bitini göndermek olabilir. O da read write uçlarına 1-1 değeri yazarak sağlayabileceğimiz bir değer.
+
+397
+01:29:55,576 --> 01:30:00,000
+Son olarak sadece mod significant byte'ını göndermek isteyebilirim.
+
+398
+01:30:00,372 --> 01:30:16,872
+Bu da belirli bir takım sayma durumları için, mesela 256'nın tam katı olan sayma durumları için kullanabileceğim bir imkan. Dolayısıyla read-write uçlarına 0-1, 1-0 veya 1-1 vererek sayma değerinin 8 bitme, 16 bitme olacağını set edebiliyorum.
+
+399
+01:30:16,872 --> 01:30:25,572
+Ve sayma değerinin kaç tane veri gönderimiyle gerçekleşeceğini belirlemiş oluyorum. Dolayısıyla bu 5 ve 4 numaralı bitler bu işe yarıyor.
+
+400
+01:30:26,707 --> 01:30:43,907
+Sonrasındaki gelen D3, D2 ve D1 bitleri ise arkadaşlar mod ayarını sağlıyor. Toplamda 3 bit olduğu için 8 farklı durum oluşturabiliriz ama toplamda 6 tane mod var. Dolayısıyla bazıları don't care durumlar oluşturuyor. Onlara dikkat edin.
+
+401
+01:30:44,340 --> 01:30:54,340
+Eğer ki mod yazmacına 0, 0, 0 değeri yazmışsam bu seçtiğim counter'ın, sc1 ve sc0 ile seçtiğimiz olduğum counter'ın mod 0'da çalışacağı anlamına geliyor.
+
+402
+01:30:54,800 --> 01:31:02,100
+Sırasıyla mod 1, mod 2, mod 3, mod 4 ve mod 5 için mod yazmacılarına aktarmam gereken değerler burada mevcut.
+
+403
+01:31:02,920 --> 01:31:08,540
+Yine son bit önemli bir bit arkadaşlar. 8254'ün çalışma mantığını anlamak açısından önemli.
+
+404
+01:31:11,060 --> 01:31:18,560
+Burada sayıcının içerisinde saklanan değerin BCD mi yoksa binary mi olacağını belirtiyor.
+
+405
+01:31:18,560 --> 01:31:21,860
+Şimdi şöyle düşünelim, 16 bitlik bir değerim var.
+
+406
+01:31:21,860 --> 01:31:24,860
+16 bitlik bir değerimiz var. Şunu alayım.
+
+407
+01:31:28,979 --> 01:31:35,380
+16 bitlik bir değerimiz var. Ben bunu hexadecimal olarak yazacak 16 bitlik bir değer olduğu için şöyle düşünebilirim.
+
+408
+01:31:41,108 --> 01:31:54,508
+Hatta 16 bit dediğimiz için öncelikli olarak binary durumunu düşünelim. 16 tane bitten oluşuyor. Yani şöyle veya decimal olarak düşünsek daha iyi olabilir. Şimdi geri alalım şunları.
+
+409
+01:31:57,008 --> 01:32:00,008
+Anlatım açısından decimal düşünsek daha iyi olabilir.
+
+410
+01:32:03,764 --> 01:32:21,163
+Şimdi elimizde 16 bitlik bir yazmaç var. Ben bunu binary olarak kullanmak istersem, buraya yazabileceğim değerleri de düşündüğümüzde, bu 4 tane hexadecimal basamaktan oluşacak değil mi?
+
+411
+01:32:21,163 --> 01:32:29,163
+Neticede 16 bitlik bir değer, 4 tane hex basamaktan oluşur. Buna yazabileceğim en büyük değer ne olur? Bu 16 bitlik yazmacı.
+
+412
+01:32:30,771 --> 01:32:37,431
+16 bitlik yazmacı, binary formatta kullanmak istersem, yazabileceğim en büyük sayma değeri ne olur?
+
+413
+01:32:38,451 --> 01:32:47,671
+Binary düşündüğümde her birisinin 11111 olduğu durum. Yani hexadesimal olarak da ffffh değeridir değil mi?
+
+414
+01:32:48,431 --> 01:32:57,131
+Binary sayma modunda arkadaşlar, mesela öyle bir an oldu ki, 8000h değerindeyiz.
+
+415
+01:32:57,203 --> 01:33:05,143
+Bundan sonraki sayıcının alacağı değer birer azalarak gidiyor ya, 7FFFH olur.
+
+416
+01:33:05,143 --> 01:33:06,303
+Tamam mı?
+
+417
+01:33:06,303 --> 01:33:13,243
+Toplamda da maksimum 65536 farklı değer sayabilir, binary iken.
+
+418
+01:33:13,243 --> 01:33:14,603
+Değil mi? Bu şekilde.
+
+419
+01:33:15,403 --> 01:33:17,563
+Peki, BCD modda çalışıyorsak ne olur?
+
+420
+01:33:20,003 --> 01:33:22,543
+BCD modda çalıştığımızda arkadaşlar,
+
+421
+01:33:23,315 --> 01:33:29,715
+BCD mode nasıl çalışıyor? Her bir 4 tane binary basamak. Burası 4 binary basamak.
+
+422
+01:33:34,387 --> 01:33:39,387
+Bir tane BCD basamak gösterir değil mi?
+
+423
+01:33:40,988 --> 01:33:49,355
+Yani aslında yapmamız gereken 0'dan 9'a kadar olan sayıları ifade etmek. BCD formatı bunu söylüyor. Binary Coded Decimal.
+
+424
+01:33:50,100 --> 01:33:59,700
+Her bir 4 bit, bir tane desimal değer gönderecek. Değerlerimiz, basamaklarımız desimal olarak 0 ile 9 arasında değiştiği için, bizim 4 bite ihtiyacımız var.
+
+425
+01:33:59,700 --> 01:34:04,500
+Çünkü 9'u yazabilmek için, 8 ve 9'u yazabilmek için, 4. bitlere ihtiyacımız var.
+
+426
+01:34:04,500 --> 01:34:18,100
+Örneğin, 0 değeri için 0, 0, 0, 0, 1 değeri için 0, 0, 0, 1, nokta, nokta, 7 değeri için 0, 1, 1, 1, 1, 8 değeri için 1, 0, 0, 0, 9 değeri için de ne olacak?
+
+427
+01:34:18,100 --> 01:34:26,820
+9 değeri içinde 1, 0, 0, 1 değeri kullanacağım. Demek ki her bir basamak için bir tane decimal değer kullanmam gerekiyor.
+
+428
+01:34:26,820 --> 01:34:40,820
+4 tane binary değer kullanmam lazım. O zaman arkadaşlar, BCD modundayken bu 16 bitlik sayac yazmacına yazabileceği maksimum değer BCD formatta ne olur?
+
+429
+01:34:41,080 --> 01:34:44,200
+Bunu söyleyebilir misiniz? Var mı fikri olan?
+
+430
+01:34:49,779 --> 01:34:51,779
+Evet arkadaşlar, bununla ilgili ne söyleyeceksiniz?
+
+431
+01:35:01,395 --> 01:35:04,595
+Evet, maksimum 9999 yazabiliriz.
+
+432
+01:35:07,536 --> 01:35:19,375
+Toplamda işte sayma değeri bu. Örneğin, velev ki arada biz 8000BCD sayma değerindeyken, bundan sonra gelecek değer 7999 olacak.
+
+433
+01:35:19,975 --> 01:35:25,655
+Yani bu decimal olarak sayacağım. Burası binary sayıyor. Bakın burada da toplamda 10.000 adım.
+
+434
+01:35:26,771 --> 01:35:41,971
+10.000 adım sayabilirim. Burada 65.000 adım sayabilirim. Niye BCD'yi tercih ederim? İnsanın okuması açısından kolay. Niye binary'yi tercih ederim? Daha geniş sayma aralıklarına erişebiliyorum. Bu imkanları bize sağlamış oluyor.
+
+435
+01:35:42,739 --> 01:35:56,980
+Burada 4 decades dediği 4 basamaklı bir BCD sayı anlamına geliyor bu arada. Dolayısıyla 8254 ile ilgili olarak sayma modunun binary veya BCD olarak kullanabilmemiz mümkün. Bunu da görmüş olduk.
+
+436
+01:36:04,627 --> 01:36:12,487
+Şimdi bir tane örneğimiz var. Bu örnek üzerinden ilerleyelim. Diyor ki bir tane 8254'ümüz var.
+
+437
+01:36:17,268 --> 01:36:36,140
+Buraya bir tane kontrol word'u attık. Bunun anlamı nedir? Bunu soran bir örnek. Şöyle yapalım. 98H adresinden itibaren yerleştirilmiş olduğuna göre, adres uzayında 4 baytlık yer kaplayacak bu vatandaş. O zaman 98H, sonra...
+
+438
+01:36:40,372 --> 01:36:54,852
+9AH, sonra 9CH ve sonra da 9EH'a bunun yerleşmesini bekliyoruz kabaca. Uygun şekilde adres çözümleme devresi ve bağlantıları sağlarsak, yani ne demek bu?
+
+439
+01:37:07,184 --> 01:37:25,304
+98H'da counter 0, 9AH'da counter 1, 9CH'da counter 2, 9AH'da da control word değerleri yerleşmiş olur. Tamam mı? Bu bağlantı yaptığımızı varsayarsak.
+
+440
+01:37:25,304 --> 01:37:31,724
+O zaman, 8254'te şurada bahsi geçen komut çalıştırıldığında ne olur diye bakalım.
+
+441
+01:37:32,564 --> 01:37:47,804
+Şimdi birinci değerimiz sc1 ve sc0'dı. Ondan sonra read write 1, read write 0'dı. Ondan sonra mod 2, mod 1, mod 0 ve sonrasında da binary bcd seçimi yapabiliyorduk.
+
+442
+01:37:47,804 --> 01:37:58,863
+Bu durumda 0, 0, 1, 1, 0, 1, 1 ve 0 diyor. Şimdi 0'ı tam hatırlayamadım bir bakayım.
+
+443
+01:38:05,363 --> 01:38:07,363
+0 dediğimizde binary imiş. Tamam.
+
+444
+01:38:07,363 --> 01:38:09,363
+Şimdi bu durumda
+
+445
+01:38:11,363 --> 01:38:13,363
+Counter 0'ı kullan.
+
+446
+01:38:13,363 --> 01:38:18,363
+Buna sayma değeri olarak 16 bitlik sayma değeri göndereceğim.
+
+447
+01:38:22,836 --> 01:38:24,836
+Bu mod 3'de çalışsın.
+
+448
+01:38:25,836 --> 01:38:34,836
+Ve binary olarak saysın. Bu ayarları göndermiş oluyoruz. Buradaki yapmış olduğumuz ayarlama bunları içermiş oluyor.
+
+449
+01:38:35,836 --> 01:38:38,836
+Şimdi bir örnek daha devam edelim.
+
+450
+01:38:40,836 --> 01:38:43,836
+Bu örnekte de arkadaşlar...
+
+451
+01:38:46,836 --> 01:38:48,836
+Bu örnekte de...
+
+452
+01:38:49,007 --> 01:39:05,127
+Farklı koşulları oluşturmak için kontrol veride atmamız gereken değerler nedir? Onları soruyor. Aynı durum burası için de geçerli. 98 haçtan itibaren ardışık çift değerler için olan durum ifade ediliyor.
+
+453
+01:39:06,407 --> 01:39:07,688
+Şöyle kenara atalım.
+
+454
+01:39:09,487 --> 01:39:10,247
+Yani
+
+455
+01:39:10,479 --> 01:39:18,479
+Eğer ben mikroişlemcinin A0 ucunu, 8254'ün, pardon şeyleri yanlış söyledik ya, az önceki örnekte de yanlış söyledim.
+
+456
+01:39:18,479 --> 01:39:37,479
+Mikroişlemcinin A1 ve A2 uçları olacak. Bunları 8254'teki A0 ve A1 uçlarına şu sırada bağlamış isek, ancak ve ancak bu durumda 98H'da counter 0,
+
+457
+01:39:38,131 --> 01:40:02,351
+9AH'da counter, CNTR diyormuşuz. Tamam, CNTR0, CNTR1, 9CH'da CNTR2 ve 9EH'da da control word yerleşmiş oluyor. Şunu düzeltmiş olalım arkadaşlar. Az önceki slide'da yanlış söylemişim.
+
+458
+01:40:02,707 --> 01:40:13,107
+Mikroişlemcinin A1 ve A2 uçları, 8254'ün A0 ve A1 anlam sırasındaki uçlarına bağlıysa, bu şekilde adres değerleri ve yerleşim sağlanmış olur.
+
+459
+01:40:13,107 --> 01:40:27,427
+O zaman biz Counter 0'ı Binary sayma modunda Mod 3'te kullanmak istiyorsak ve 4282 BCD değerine göre saydırmak istiyorsak ne yapacağız?
+
+460
+01:40:28,180 --> 01:40:34,779
+Buradaki 42.82 BCD değermiş. Şimdi şunu yapmamız lazım. Önce Ctrl Word'ü belirleyelim.
+
+461
+01:40:36,279 --> 01:40:47,380
+Counter 0'ı seçtireceğim. Göndereceğim değer 8 bite sığmıyor. Desimal olarak düşünelim bunu. Desimal olarak 16 bite sığar. O zaman 1, 1.
+
+462
+01:40:47,380 --> 01:40:51,880
+Mod olarak 3. Modda yazdım. Binary olarak da 1.
+
+463
+01:40:51,984 --> 01:41:12,764
+Öncelikli olarak bu değeri kontrol yazmacına atmamız lazım. Nasıl yapıyoruz? Bunun için move AL, buradaki değerimiz 37H, 37H, out 9H, AL dememiz lazım.
+
+464
+01:41:16,435 --> 01:41:40,995
+Binary 0'dı, evet onu düzeltelim. O zaman 36H olur. 36H'ı gönderdik. Daha sonra bu sayma değerini counter'a göndereceğiz. Counter'lar nerede? Bakın, counter 0'a göndermemiz lazım. Counter'da 98H'tı. O zaman şunu yapıyoruz, bakın. Move, ax virgül, bu decimal değeri göndermem lazım ya.
+
+465
+01:41:41,619 --> 01:42:04,079
+42, 82, desimal değeri AX'e attım. Daha sonra, OUT, 98H, AL, MOVE, AL, AH ve son olarak da OUT, 98H, AL diyerek bu değeri göndermiş olduk. Bakın, bu değer desimal bir değerdi.
+
+466
+01:42:04,511 --> 01:42:32,112
+Sayıcı binary olarak sayacağı için bunu atarken 42, 82 decimal değeri olarak AX'e attım. Önce low kısmını gönderdim. Daha sonra da bu AX'deki, AX'deki yüksek anlamlı kısmı 98H'e gönderdim. Şurada 1, 1 yazmamızın anlamı da zaten buydu. Önce LSB, sonra MSB bekliyordu. Onu sağlamış olduk burada.
+
+467
+01:42:32,479 --> 01:42:33,479
+Tamam.
+
+468
+01:42:35,479 --> 01:42:39,479
+Bu birinci şıkla ilgili yapacağımız ayar buydu.
+
+469
+01:42:39,479 --> 01:42:50,479
+İkinci örneğimize bakalım. İkinci örnek, counter2'yi mod3'te binary olarak bu hex değerden itibaren saydıracak şekilde ayarlamamız isteniyor.
+
+470
+01:42:50,479 --> 01:42:52,479
+Önce gene mod yazmacını bulalım.
+
+471
+01:42:53,479 --> 01:42:55,479
+Counter2'yi seçtirmek için
+
+472
+01:42:56,148 --> 01:43:09,547
+En yüksek anlamlı 2 bitimiz 1, 0. Göndereceğimiz değer 8 bite sığmıyor. Dolayısıyla 1, 1. Mod değerimiz mod 3, 0, 1, 1. Sayma değerimiz binary. O zaman burada elde etmiş olduğumuz değer bu.
+
+473
+01:43:10,207 --> 01:43:22,688
+Kodumuza gelecek olursak, öncelikli olarak kontrol yazmacına move, al, 1, 0, 1, 1, 0, 1, 1, 0. Binary değerini kaydediyoruz. Daha sonra
+
+474
+01:43:23,155 --> 01:43:49,876
+Out 9eh, al dediğimizde sayma değeri hariç işlemlerimizi bitirdik. Şimdi sayma değerini gönderebilmek için de öncelikli olarak Move ax, 0c26ah değeri dedik. Daha sonra Out counter 2'ye göndereceğiz arkadaşlar. Counter 2'imiz hangi değerdeydi? 9ch'daydı.
+
+475
+01:43:50,355 --> 01:44:09,456
+9CH, AL, daha sonra yüksek anlamlı kısmı, AX'in yüksek anlamlı kısmını AL'ye kopyalayalım. MOV, AL, AH ve son olarak da OUT, 9CH, AL değeriyle bu gönderme işini de gerçekleştirmiş oluyoruz.
+
+476
+01:44:20,532 --> 01:44:28,532
+Şuradaki değer de herhalde bu 1 olacak. Değil mi? Yanlış yazılmış.
+
+477
+01:44:33,332 --> 01:44:36,012
+Pardon, o değil de şurası yanlış yazılmış.
+
+478
+01:44:39,859 --> 01:44:56,859
+Şimdi bakın, clock 0'ın frekansı bu ise, çıkışın frekansı nedir? Sayıcı değeri olarak 4282 yüklediğimize göre aslında bu değeri 4282'ye bölmemiz gerekiyor. Bölüm işlemine bakalım.
+
+479
+01:45:03,539 --> 01:45:15,539
+Böyle, 4282 değeri. Bakın arkadaşlar, tam bölünen bir değer. Dolayısıyla çıkışın, yani şuradaki A30'ın frekansı, 280 Hz olmuş olacak.
+
+480
+01:45:15,539 --> 01:45:20,939
+HZ diyelim de, hexadesimalle karışmasın. Diğer yandan ise,
+
+481
+01:45:23,939 --> 01:45:30,739
+diğer yandan ise, clear edelim, clock 2'de 1800 MHz var.
+
+482
+01:45:33,076 --> 01:45:42,556
+Böyle yazılmaz. Böyle desimal olarak alalım. Bu değeri arkadaşlar, hexadesimal olarak neye böleceğiz?
+
+483
+01:45:42,556 --> 01:45:51,576
+C2, 6A değerine böleceğiz. Temel çalışma mantığı. Buradan çıkan değer de arkadaşlar,
+
+484
+01:46:01,043 --> 01:46:10,283
+anlamına gelmiş oluyor. Dolayısıyla doğrudan frekans bölücü çalıştırma mantığında bunu frekans bölücü gibi ele alıp işleyebiliyoruz.
+
+485
+01:46:12,384 --> 01:46:17,543
+Burada ilgili cevapları görebilirsiniz. Bu yanlış mı yazdık?
+
+486
+01:46:19,144 --> 01:46:25,844
+24 değerimiz egzadesimaldi tabii ki. 24 egzadesimal değerini desimaya çevirdiğimizde
+
+487
+01:46:26,163 --> 01:46:32,603
+32 artı 4, 36 değerini sağlamış oluyor. Dolayısıyla buradaki 36 Hz'i bulmuş oluyoruz.
+
+488
+01:46:32,603 --> 01:46:41,083
+Yine aslında bunlara cevap bulmuştuk. BCD modda yazabileceğimiz en büyük değer herhangi bir counter'a 9999.
+
+489
+01:46:41,083 --> 01:46:47,483
+Binary modda yazabileceğimiz değer ise FFFF hexadecimal değeri olmuş oluyor.
+
+490
+01:46:47,667 --> 01:47:11,667
+Şimdi bu modlar mantığına bakalım. Modlarda arkadaşlar modların detayına giremeyeceğiz herhalde süre açısından. Modlara baktığımızda 5 tane modumuz var. Bunların bir kısmı dışarıdan tetiklenebiliyor. Yani gate ucundan tekrar çalıştırılabiliyor veya gate ucundan durdurulabiliyor. Bazıları tekrarlı, bazıları bir seferlik işaretler.
+
+491
+01:47:13,184 --> 01:47:31,584
+Aslında modların çok detayına giremeyeceğiz çünkü uzun uzadıya vakit alacak bunlar. Dersimizi bu haftalık burada bitirebiliriz. Bu haftaki konuyla ilgili olarak, haftaya olan sınavla ilgili olarak veya labla ilgili olarak soracağınız bir şey var mı arkadaşlar?
+
+492
+01:47:31,584 --> 01:47:37,984
+Yani dersimizi burada bitirelim çünkü modlara girersek çok yarıda kesilmiş olacak.
+
+493
+01:47:42,868 --> 01:48:00,868
+Buralarla ilgili sormak istediğiniz bir şey var mı? Bu haftaki konu, örnek, çüphe dersin başında çözmüş olduğumuz örnek, vize sınavı, ondan sonra laboratuvar sorusu veya labla ilgili uygulama, bunlarla ilgili sormak istediğiniz bir şey var mı?
+
+494
+01:48:09,332 --> 01:48:16,652
+Ondan sonra geçen haftanın örneklerini yine yükledim. Onları kullanabilirsiniz.
+
+495
+01:48:16,652 --> 01:48:30,811
+Sınava 8251 sonuna kadar dahil. 8254 dahil değil. Ama özellikle bir kopya vermiştim dersin ortalarında bir yerde. Siz onu tekrar bakıp dinlersiniz.
+
+496
+01:48:30,811 --> 01:48:33,811
+Kopya değil de bir...
+
+497
+01:48:34,996 --> 01:48:45,796
+Dikkat etmeniz gereken bir durum örneği vermiştim. Dersi tekrar dinleyerek bakabilirsiniz. Çünkü dersin başında 8254'ün dahil olmadığını söylemiştim.
+
+498
+01:48:46,996 --> 01:48:48,971
+Var mı başka sormak istediğiniz?
+
+499
+01:49:00,787 --> 01:49:13,787
+Hocam, bu test sınavlarda çözdüğümüz soruya geri dönme durumu hocanın inisiyatifine bırakılmış galiba. Öyle bir şey duydum da. Siz öyle bir durumda geri dönmemize izin verecek misiniz veya sadece bir kere mi bakalım?
+
+500
+01:49:14,931 --> 01:49:41,471
+Onunla ilgili durumu arkadaşlar bir değerlendirelim. Diğer grupla da Hamza hocanızla da bir değerlendirelim. Ona göre size duyurmuş olalım. Olur mu? Şu anda ben tek başıma bir şey söylemiş olmayayım. İki grup çünkü ortak sınav olacak. Ondan sonra size duyurmuş oluruz. Bu özellikle geri dönmenin engellenmesi herhalde şundan dolayı. Hangi tip sorularda mantıklı olabilir? Mesela klasiktir. Herkes için belirli bir süre tanımlamışsındır.
+
+501
+01:49:41,823 --> 01:49:51,323
+O durum için anlamlı olabilir ama onun dışında pek anlamlı değil bence. Dediğim gibi bir Hamza hocanızla da konuşalım. Ona göre ortak bir karar alıp size bildiririz.
+
+502
+01:49:51,323 --> 01:49:53,083
+Anladım hocam, teşekkürler.
+
+503
+01:49:53,083 --> 01:50:06,923
+Daha önce dersin başında da sorulmuştu, test mi olacak diye. Hepsi test olmayabilir ama bazı sorularımız test ve çoktan seçmeli ve true false olabilir.
+
+504
+01:50:07,444 --> 01:50:10,264
+Onun haricinde klasik sorular da olacaktır.
+
+505
+01:50:16,724 --> 01:50:29,024
+Başka bir soracağınız yoksa arkadaşlar, bu haftalık dersimizi bitirmiş olalım. Haftaya sınav olacak. Şimdiden herkese başarılar. Tekrar dersin başında söylediğim bir durumu da hatırlatarak bitirmiş olayım.
+
+506
+01:50:30,123 --> 01:50:40,604
+Sınavlarla ilgili olarak takvim versiyon 3 olarak değiştirilmiş durumda. 2 ve 3. versiyonlar var. En son 3. versiyonun ilan edilmiş olması lazım.
+
+507
+01:50:41,007 --> 01:51:00,368
+Mutlaka bölüm sayfasındaki sınav duyurusunu kontrol edin. Kendi sınavlarınızı takvimlerinizde güncelleyin. Sınavları ona göre bekleyin arkadaşlar. Çünkü güncelleme oldu. Kaçak olmasın. Bunu da söyleyerek dersi bitirmiş olalım. Herkese iyi günler. Şimdiden sınavlara da başarılar arkadaşlar.

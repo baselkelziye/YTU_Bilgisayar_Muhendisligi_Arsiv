@@ -1,0 +1,1279 @@
+1
+00:01:59,028 --> 00:02:02,128
+Evet arkadaşlar, birazdan Sercan hocanız da bağlanacak.
+
+2
+00:02:04,528 --> 00:02:08,628
+Labla ilgili olarak yönlendirmeyi yapacak.
+
+3
+00:02:35,668 --> 00:02:40,668
+Merhaba hocam. Merhabalar. Hemen host yetkisi de veriyorum.
+
+4
+00:02:41,668 --> 00:02:42,668
+Tamamdır.
+
+5
+00:02:55,731 --> 00:02:57,731
+Ben artık ekran paylaşımı yapabilirim.
+
+6
+00:02:57,731 --> 00:02:59,731
+Evet, evet, hepsi hazır şu anda.
+
+7
+00:02:59,731 --> 00:03:01,731
+Hocam, teşekkür ederim. Başlıyoruz.
+
+8
+00:03:10,707 --> 00:03:12,707
+Ekranı görebiliyor musunuz arkadaşlar?
+
+9
+00:03:13,907 --> 00:03:15,507
+Evet hocam, görüyoruz.
+
+10
+00:03:15,507 --> 00:03:20,307
+Arka planda dosya yok, Windows olması lazım.
+
+11
+00:03:20,307 --> 00:03:21,507
+Olur.
+
+12
+00:03:22,507 --> 00:03:23,507
+Sembolü.
+
+13
+00:03:23,507 --> 00:03:25,507
+Daha sunumu da açayım.
+
+14
+00:03:27,907 --> 00:03:29,108
+Sunum geldi mi?
+
+15
+00:03:31,907 --> 00:03:32,907
+Geldi.
+
+16
+00:03:42,099 --> 00:03:45,099
+Mouse'u görebiliyor musunuz? Şu an M harfinin üzerindeyim.
+
+17
+00:03:45,099 --> 00:03:47,099
+Evet, görebiliyor.
+
+18
+00:03:49,099 --> 00:03:57,099
+Merhaba arkadaşlar, bu dönem mikroişlemci sistemleri laboratuvar uygulamasını bir arada işleyeceğiz.
+
+19
+00:03:57,099 --> 00:04:04,099
+Üç tane asistan olarak görevliyiz. Ben, Alper hocanız, bir de Kübra hocanız.
+
+20
+00:04:04,099 --> 00:04:09,099
+Bu LAP0'da kullanacağımız ortamı genel hatlarıyla bir göreceğiz.
+
+21
+00:04:09,939 --> 00:04:25,939
+Onun dışında böyle bir 5 dakika genel kurallardan bahsederiz. Biraz programın akışını göstereceğim şimdi. Bir de genel kuralların üzerinden geçeceğim. Şimdi bu lap sıfır, bir de bunun dışında 5 tane daha laboratuvar olacak.
+
+22
+00:04:25,939 --> 00:04:35,939
+Detaylarını yine ben paylaşacağım sizinle. Notlandırma, hangi hafta, hangi grubun ne yapacağı gibi.
+
+23
+00:04:36,564 --> 00:04:40,163
+Bu hafta sonu grupları asistan arkadaşı oluşturup paylaşacaktır.
+
+24
+00:04:41,864 --> 00:04:47,163
+Kullanacağınız uygulamayı da bununla ilgili bir duyuru konudur. Piyazayı takip edin.
+
+25
+00:04:47,163 --> 00:04:49,663
+Şimdi akışımız şöyle olacak.
+
+26
+00:04:56,851 --> 00:05:14,251
+Üçüncü hafta olarak planladık ama yine hocalarla bir konuşuruz. Belki bugün 80255 yetişmemiz de bir sonraki hafta da olabilir. Bunu duyururuz biz. Ama siz kesinlikle pazartesiye kadar Piyazada yayınlanan yazılımla ilgili duyuruyu göz önüne alarak Proteos'u bilgisayarınıza konuş olun.
+
+27
+00:05:16,312 --> 00:05:22,451
+Eğer önümüzdeki hafta başlayacaksa biz pazartesi soruyu yayınlarız. Genelde bizim referansımız pazartesi olacak.
+
+28
+00:05:22,899 --> 00:05:28,219
+Yani pazartesi günü, bir dakika.
+
+29
+00:05:32,211 --> 00:05:36,711
+size yüklenebilir bir link biz paylaşacağız. Piyazayı takip edin bunun için.
+
+30
+00:05:41,524 --> 00:05:50,844
+İlk hafta, 8255, yani birinci labda, lab 1'de, 8255'in temel giriş-yıkış birimi olarak kullandığı bir göreviniz olacak.
+
+31
+00:05:50,844 --> 00:06:00,704
+Biz genel olarak size zaten belirli kısımları tamamlanmış bir devre parçasını da sorunun ekinde ekliyoruz.
+
+32
+00:06:00,704 --> 00:06:03,704
+Bu sunumun sonuna doğru ondan da bahsedeceğim.
+
+33
+00:06:04,180 --> 00:06:10,580
+Şimdilik 23 Ekim gibi duruyor programa göre ama yine hocalarla konuşuruz. Bunu biraz da öteleyebiliriz, bilmiyorum.
+
+34
+00:06:10,580 --> 00:06:17,700
+Şimdi hocaların kısaltmaları sağ altta yazıyor, asistanların da yazıyor. Her hocanın kendi iki alt grubu olacak.
+
+35
+00:06:17,700 --> 00:06:26,180
+Erkan Hoca'nın da, Hamza Hoca'nın da. E-U-A ve E-U-B, öyle söyleyelim bunlara. Böyle etiket vereceğiz. Aynı şekilde H-I-A ve H-I-B olarak.
+
+36
+00:06:26,196 --> 00:06:44,196
+Herkes bir gruba sahip olacak ve herkes dönem boyunca o etiketini hiç unutmasın. Bu programa bakarak da hangi hafta, ben tarih yazmadım kayma olabilir diye ama, 3 aşağı 5 yukarı, akış nasıl? Buradan kendinizi takip edebilirsiniz.
+
+37
+00:06:44,196 --> 00:06:52,908
+Dediğim gibi hafta başında, bu pazartesi olmaz salı olabilir, labın kolaylığına, zorluğuna göre. Pazartesi olmaz pazar olabilir ama size hafta başında bir duyuru yayınlanır.
+
+38
+00:06:53,235 --> 00:07:03,536
+Hem kimin labı ilk göreceği hem de asistanların dönüşümü olabildiği kadar homojen dağıtıldı.
+
+39
+00:07:03,536 --> 00:07:18,036
+O yüzden şuna dikkat edin, örneğin şimdilik 4. hafta diyor yine güncellenebilir, bir hafta ötelenebilir ama mesela EUB ve HOI-AB grupları 4. hafta labı yaptıktan peşi sıra gelen hafta tekrar lab yapıyorlar.
+
+40
+00:07:18,036 --> 00:07:19,735
+Buradaki amaç ilk hafta.
+
+41
+00:07:19,887 --> 00:07:38,887
+A grupları soruyu ilk görüyor, ikinci hafta B grupları soruyu ilk görüyor. 5 tane rap var, bunu ayarlamaya çalıştık. Asistanlar da kendi içinde bir döngüde. Bir aksilik olmazsa, yani bizlerin işleri de çıkabiliyor bazen, asistanları da bir ikişer kere falan görüyorsunuz. Onu da ayarladım. Buraya kadar sorusu ve itirazlı olan var mı?
+
+42
+00:07:41,887 --> 00:07:42,887
+Güzel.
+
+43
+00:07:44,887 --> 00:07:46,887
+Bunu ben yine de piyazaya koyarım.
+
+44
+00:07:48,915 --> 00:08:04,915
+Şimdi genel olarak biz size bir problem veriyoruz. Bu problemin çözümü için iki temel adım olacak. Bir, bunun SMB kodunu yazma ama daha öncesinde şematik üzerinde donanım bağlantılarını yapma, ek bir donanım istiyorsak onu kurup bağlama gibi iki temel adım oluyor aslında.
+
+45
+00:08:04,915 --> 00:08:08,879
+Algorithmik olarak problemin çözümünü düşünüp kodluyorsunuz SMB kodunu.
+
+46
+00:08:08,879 --> 00:08:22,879
+Birazdan göstereceğim. Protöze üzerinde iki temel sekmeniz var. Birine kodunuzu yazdınız ve o kodu içine yüklediğiniz işlemci modülünün bağlı olduğu bir şematik ortam var. Yani sürükle bırak, bağlantıları yap gibi bir görsel ortam.
+
+47
+00:08:22,879 --> 00:08:34,879
+Burada kesinlikle bu senede asistan ve hocalarımızın da ortak şeyi, online eğitimin de özellikle olmasından da dolayı.
+
+48
+00:08:35,412 --> 00:09:02,032
+Tamamen kendi çalışmanızı sunun. Bir şekilde bu anlaşılırsa eğer sonradan sıkıntı çıkmasın. Tabii ki birbirinizle birlikte çalışabilirsiniz. Hatta Piazza'ya, Piazza'nın kurulum amacı o. Orada bir işi açıp, bir post yapıp orada sorunuzu sorabilirsiniz. Bu sorular lütfen teknik sorular olsun sadece ve üzerine iyice kafa yorduktan sonra sorun. Orada bizlerden veya arkadaşlarınızdan belki size geri dönüşü olur.
+
+49
+00:09:02,611 --> 00:09:26,211
+Birbirinize tartışabilirsiniz yani. Onun dışında da dediğim gibi, size normalde mail atıyor olması lazım. Geçen sene bunu kullanırken herkese mail gidiyordu ama bilmiyorum. Mesela ben duyuruyu koyduğumda [öğrenci] sana mail gelmedi mi? Mesela bak, arkadaşlarına gelmiş. Belki senin ayarlarına ilgili olabilir.
+
+50
+00:09:28,148 --> 00:09:41,148
+Gelmeyen var mı başka arkadaşlar mail? Duyurulara mail gelmeyen var mı? Ben bugün bir duyurup koyarım olmadı veya bu sunumu koyarım zaten. Bu sunum gelmezse bana tekrar mail atarsın. Bakarız tekrar yerine olur mu?
+
+51
+00:09:41,148 --> 00:09:53,148
+Piyaza üyelik oranımız 156 gibi bir sayıdaydı. O yüzden eğer varsa bir whatsapp bulabiliriz lütfen orada paylaşın. Herkes buraya üye olsun.
+
+52
+00:09:54,611 --> 00:10:07,611
+Burasını kullanımına arttıralım. Çünkü bu sizin avantajınıza. Tekrar hatırlatayım, magazinsel bir kullanım olmasın burada. Kolaylığı, zorluğu, dersin vesaire gibi. Geçen sene o tarz şeyler olmuştu.
+
+53
+00:10:07,611 --> 00:10:20,611
+İlk şeyde bu grubu tamamen kapatıp avaysiz üzerinden sadece soruyu yayınlamayı tercih ediyoruz. Şimdiden söyleyelim. Böyle bir arayüzü var. Sol tarafta duyuruları görüyorsunuz. Sizde de benzer bir arayüzü vardır.
+
+54
+00:10:21,043 --> 00:10:30,043
+Ben geçen seneden de örnek koydum, nasıl aktif kullanıldığımı göstermek için. Ben sürekli solda duyurular koymuşum.
+
+55
+00:10:30,043 --> 00:10:36,043
+Öğrenciler, mesela bir arkadaş Lab 4 için derste yaptığınız örneği içeren slide atabilir misiniz demiş.
+
+56
+00:10:36,043 --> 00:10:44,011
+Biz buradan gördüğünüz gibi kimlerin o duyuruyu görüp görmediğini bile görebiliyoruz aslında. Dolayısıyla gayet uygun bir ortam.
+
+57
+00:10:44,275 --> 00:11:10,915
+Şimdi, dün gece itibariyle üye olan arkadaşlar bunlardı. Bugün bir 15-20 kişi daha artmış. Ama lütfen bütün dersi alanlar buna üye olsunlar. Hafta sonu bu işi de halletmiş olalım. Tamam mı? İşleyişe yönelik benim anlatacaklarım bu kadar. Başka sorusu olan var mı? Yok. Peki. Şimdi, biz aslında bir donanım ortamına... Bir tane soruma geldi. Bakıyorum.
+
+58
+00:11:12,115 --> 00:11:29,195
+Şimdi yazılıma ilişkin ve işleyişe ilişkin iki duyuru paylaşılır piyazada. Şimdilik süremiz iki saat, bir değişiklik olmazsa işleyişin nasıl olacağını kesinleştirip hafta sonu sizinle de paylaşırız.
+
+59
+00:11:29,195 --> 00:11:38,195
+Aklımızda hocalarla da bir şey var ama bunu bir daha düşünelim. Sayımızla fazla. İki saate yetişecek şekilde mi bir çözüm olur yoksa...
+
+60
+00:11:38,803 --> 00:12:00,803
+Onu yapamaz isek onu biraz aşacak bir çözüm olur bilemiyorum. Ama şey şu, pazartesi, salı neyse soruyu paylaşıyoruz biz. Size işte 4 gün, 5 gün süre vermiş oluyoruz. Siz üzerine kodunuzu, donanımınızı üzerine çalışıyorsunuz. Bitti, süreniz doldu, lap saatinde.
+
+61
+00:12:01,279 --> 00:12:07,940
+Atandığınız asistana, az önceki listede vardı, örneğin EUA, yani Erkan Hoca'nın A grubu. Kime atanmış? Bana atanmış diyelim ki.
+
+62
+00:12:07,940 --> 00:12:14,519
+Erkan Hoca zaten yine Zoom linki paylaşır veya bize atanırsa Zoom biz yaparız, bilmiyorum onu da.
+
+63
+00:12:14,519 --> 00:12:23,539
+Ders linki size bir şekilde duyurulur, piyazadan veya avestan. A grubu olarak oraya gelip ekranınızı paylaşarak gösteriyorsunuz.
+
+64
+00:12:23,792 --> 00:12:31,032
+Ama buraya bir ek, bir şey gelebilir sonradan. Belki ilk 5 dakika bir demo hazırlarsanız sonra biz size soru sorabiliriz. Bunun detayını paylaşırız.
+
+65
+00:12:31,032 --> 00:12:42,392
+Bir de şimdilik kendi aramızda hocalarla da ön gördüğümüz notlandırma 0, 25, 50, 75, 100 şeklinde olur gibi duruyor.
+
+66
+00:12:42,392 --> 00:12:51,192
+Ama bu tamamen lapların gidişatına da bağlı. Yine bakarız. 0, 100'dü. Belki ona döneriz, bilemiyorum.
+
+67
+00:12:51,923 --> 00:12:52,923
+Tamam.
+
+68
+00:12:55,923 --> 00:13:09,923
+Şimdi şu an ekranda olan, aslında eskiden eskilerde kullanılan fiziksel ortamda kodunuzu yükleyip gerçekten fiziksel donanım elemanlarıyla bir şeyleri deneyebildiğiniz bir mikroişlemci ortamı.
+
+69
+00:13:09,923 --> 00:13:13,923
+Ama biz tabii ki online eğitimden önce de...
+
+70
+00:13:14,639 --> 00:13:20,639
+Bilgisayar ortamındaki simülasyon avantajını kullanıyorduk. Bunun için de Proteus diye bir yazılım kullanıyoruz.
+
+71
+00:13:20,639 --> 00:13:26,639
+Bilgisayarınızı kurulumla ilgili işlemi bu hafta sonu tamamlayın dedim, tekrar edeyim onu.
+
+72
+00:13:26,639 --> 00:13:31,639
+Yaptığınız bilgisayarınızı kurdunuz, masa üstüne sembolü geldi diyelim ki.
+
+73
+00:13:31,639 --> 00:13:37,639
+Bir saniye. Şimdi buna tıkladıktan sonra yazılımınız açılıyor bu şekilde.
+
+74
+00:13:37,639 --> 00:13:40,639
+Ve böyle bir sayfa çıkıyor karşınıza.
+
+75
+00:13:42,196 --> 00:13:52,795
+Burada yeni projeden, eğer sıfırdan bir proje yaratacaksanız, yeni projeden istediğiniz, ismi verebildiğiniz bir proje ortamı oluşturuyorsunuz.
+
+76
+00:13:52,795 --> 00:13:59,895
+İsminize girdiniz, burada şu an New Project girilmiş. Ben onu Lab 0 olarak değiştirmişim. Yeni proje.
+
+77
+00:13:59,895 --> 00:14:03,555
+Create a schematic from selected template, bu default olarak çıkıyor zaten.
+
+78
+00:14:09,812 --> 00:14:36,231
+PCB ile ilgili bir işimiz olmadığı için do not create a PCB layout, o da default. Sonraki adıma geçiyorsunuz. Bu önemli. Firmware Project seçeceksiniz. Donanım ailesi olarak 8086'yı seçiyorsunuz dersimizi kullandığınız için. Controller'da 8086. Burada bir şey var yalnız. Compiler'ı seçmeniz gerekiyor. Bazen arkadaşlar bunu seçmeyi unutabiliyor. Öyle bir şey yapmayın. Şimdi oradaki compiler'a tıkladığınız zaman.
+
+79
+00:14:37,524 --> 00:14:46,484
+Karşınıza böyle bir liste çıkacak. Orada masm32 diye bir şey var. Onu ilk kurulduktan ilk kullanımda download etmeniz gerekecek.
+
+80
+00:14:46,484 --> 00:14:54,524
+Download'a bastığınız zaman birkaç adımı var, bir kurulum yapıyor. Next, next diyerek tamamlayın onu. Sonra bu sayfaya tekrar ödüşüm sağladığınız zaman yes olacak orası.
+
+81
+00:14:54,524 --> 00:15:02,524
+Onu seçerek bir sonraki adıma geçebilirsiniz. Bu adımı unutmayın yani. Bir sonraki adımda artık...
+
+82
+00:15:03,028 --> 00:15:12,028
+Proje samarisini gösteriyor. Finish'e bastığınız zaman size iki tane temel sekme açacak. Solda şematiğiniz var, sağda şu an açık olan source code kısmı var.
+
+83
+00:15:14,028 --> 00:15:21,028
+Source code sizin assembly kodunuzu yazdığınız kısım, assembly dersi aldınız. Dersin içinde de tekrarını gördünüz bu haftalarda.
+
+84
+00:15:22,028 --> 00:15:28,844
+Buraya uygun formatta 8086 için assembly kodu yazacaksınız. Şematik bölümüne geçtiğimiz zaman da
+
+85
+00:15:28,851 --> 00:15:45,851
+Böyle bir workspace çıkıyor karşımıza. Burada biz sürükle bırak şekilde donanımları birbirine bağlayacağız, etiketleyeceğiz, giriş çıkış cihazları koyacağız, simülasyon için belki osiloskop bağlayacağız. Onu da bu görsel ortamda yapıyor olacağız.
+
+86
+00:15:46,451 --> 00:16:00,652
+Source Code'a gelip o sekmeye tıklayıp içine kod yazdığınız, run yaptığınız zaman şu an ekrana defalt olarak projeyi yaratırken ailesini 8086 ve MASM32'yi seçtiğiniz için defalt olarak çıkan 8086 işlemcisi var.
+
+87
+00:16:00,652 --> 00:16:04,851
+Birkaç bağlantısı yapılmış görüldüğü gibi, bazıları yapılmamış.
+
+88
+00:16:05,427 --> 00:16:13,888
+Bu aşamaya kadar gelmiş olmak demek, bir proje ortamı yarattınız sıfırdan 8086 için ve bu sizin için hazır bekliyor.
+
+89
+00:16:13,888 --> 00:16:18,268
+Çevre birimlerini bağlayıp, kodunu yazarak bir şey simülo edebilirsiniz demek.
+
+90
+00:16:18,268 --> 00:16:25,388
+Biz genel olarak bu kadar sıfırdan başlamak yerine size zaten hazır bazı bölümleri bağlanmış olarak veriyoruz.
+
+91
+00:16:25,388 --> 00:16:27,087
+Ondan da bahsedeceğim az sonra.
+
+92
+00:16:27,087 --> 00:16:29,388
+Şimdi yakından görünüşü bu.
+
+93
+00:16:29,620 --> 00:16:55,620
+Ya bu hafta ya geçen hafta buradaki pinlerin ne anlama geldiğini slide'da görmüşsünüzdür. İşte reset var, ready var, interrupt, enable var, interrupt var, hold, acknowledge var, interrupt, acknowledge, test, non-maskable interrupt var, minimum, maximum mode var, clock girişi var, AD var, address page enable var, ale, bus hash enable var.
+
+94
+00:16:56,179 --> 00:17:11,179
+Bu pinlerden bazılarını çok sıklıkla bazılarını kullanmıyoruz. Bazıları input, bazıları output. Slide'da bakarsanız bazılarının I harfi var, bazıların da O harfi var. O yüzden hangisinin input, hangisinin output olduğunu oradan anlayabilirsiniz slide teknolojilerinize bakarak.
+
+95
+00:17:11,179 --> 00:17:23,104
+Şimdi, çift tıkladığınız zaman da işte bu işlemciye ilişkin çeşitli program file nerede saklanıyor, klak frekansı nedir gibi bilgiler var. Çift tıklayarak buna ulaşabiliyorsunuz.
+
+96
+00:17:23,104 --> 00:17:30,344
+Ama bağlantılara geri dönelim şimdi. Default olarak reset'i toprağa bağlamış. Neden sizce?
+
+97
+00:17:35,092 --> 00:17:52,332
+Çete yazabilirsiniz veya mikrofonu açıp söyleyebilirsiniz. Ben programı kurdum, projeyi oluşturdum, 8086'ya uygun olarak ilerledim, bitirdim. Bana direkt bunu atadı buraya. Neden reset direkt toprağa bağlı? Veya niye redi üçgene bağlı ve üçgen ne anlama geliyor?
+
+98
+00:17:56,115 --> 00:17:58,115
+Sesim geliyor mu? Onu sorayım bari.
+
+99
+00:18:03,763 --> 00:18:27,523
+Tamam. O zaman bir daha soruyorum. [öğrenci] çalıştığı sürece reset 0, ready 1 olmadı. Evet. Ready 1 derken o zaman orada logic 1 ile besliyoruz. Ready ve MN, MX, üstten şapkayı. Şimdi reset 0'a bağlı olsun ki resetleme durumumuz olmasın.
+
+100
+00:18:27,988 --> 00:18:37,587
+Min-Max mod vardı, hoca bahsetmiştir. Biz bunu genelde, ne modda, genelde değil yani biz dönemde ne modda çalıştırıyoruz bunu?
+
+101
+00:18:37,587 --> 00:18:48,587
+Minimum modda çalıştırıyoruz hocam. Minimum modda çalıştırıyoruz değil mi? Sonra ekstra bufferlara falan ihtiyacımız olmasın diye minimum modda çalıştırıyoruz. Minimum MN'nin üzerinde bir şapka var mı?
+
+102
+00:18:55,347 --> 00:18:59,707
+Ben bu pin'e eğer 1 bağlarsam, lojik 1 bağlarsam bunu minimumda çalıştır.
+
+103
+00:18:59,707 --> 00:19:03,187
+0 bağlarsam, demek ki o zaman MX aktif low'da çalışıyor.
+
+104
+00:19:03,187 --> 00:19:05,427
+0 bağlarsam da maksimumda çalıştır demek.
+
+105
+00:19:05,427 --> 00:19:12,987
+O zaman bu pinlerde, örneğin input olanları için, tepesinde şapka varsa eğer onu 0 ile beslediğin zaman o aktif olacak.
+
+106
+00:19:12,987 --> 00:19:15,427
+Yoksa da 1 ile beslersem aktif olacak o özellik.
+
+107
+00:19:15,427 --> 00:19:17,987
+Aralarda slush'lı olan şeyler bunlar yani.
+
+108
+00:19:17,987 --> 00:19:20,427
+Bu output da olabilir.
+
+109
+00:19:20,427 --> 00:19:21,987
+Eğer output ise...
+
+110
+00:19:23,443 --> 00:19:26,243
+O zaman ne olacak? Mesela Ale. Ale neydi?
+
+111
+00:19:31,316 --> 00:19:32,776
+Adres, latch enable hocam.
+
+112
+00:19:33,175 --> 00:19:34,416
+Adres, latch enable değil mi?
+
+113
+00:19:37,276 --> 00:19:45,976
+Bus'ın burada adres bilgisini almasıyla ilgili bir bilgi veriyor bize. Bir çıktı veriyor o zaman. O zaman bu output port.
+
+114
+00:19:46,776 --> 00:19:57,096
+Bir olduğu durumda bus'a adres bilgisi capture ediliyor. Bir diyorum çünkü Ale'nin üzerine şapka yok. Tamam mı? Bunlara dikkat edin.
+
+115
+00:20:00,243 --> 00:20:06,243
+Şimdi bir de burada şu iki şeyi söylemek lazım. AD ne demek? Onu sorayım hemen.
+
+116
+00:20:09,243 --> 00:20:11,243
+A ve D harfleri ne anlama geliyor?
+
+117
+00:20:13,243 --> 00:20:20,243
+Neden hem adres hem data? Ben o mavi renkli kalın çizgilerden hem aynı anda adres aynı anda data mı okuyacağım?
+
+118
+00:20:23,635 --> 00:20:32,396
+Evet, time multiplexing var. Bazen adres, bazen data olması durumu. 16 biti ortak paylaşıyor bu şekilde.
+
+119
+00:20:34,476 --> 00:20:42,675
+16, 17, 18, 19'u da kalan 20. bitte tamamlayan kısımları da direkt adres olarak alıyor. Neden kalın mavi peki onlar?
+
+120
+00:20:48,596 --> 00:21:01,875
+Çünkü bus değil mi? Birden fazla bit. Evet, birden çok veri yolu var. Dolayısıyla ya single line ya da bus olacak bizim bu tasarımlar sırasında bu işlerimiz. Bağlarken de bunu göz önüne alacağız.
+
+121
+00:21:12,372 --> 00:21:20,832
+Şimdi normal single line'ları çizmeyi gösteririz yine ama bus biraz daha farklı.
+
+122
+00:21:22,892 --> 00:21:28,872
+Bus modunu alarak işte ya bir terminal ekleyeceğiz ya da ikisi arasını birleştireceğiz.
+
+123
+00:21:28,872 --> 00:21:39,552
+Herhangi bir boşluğa sağ tuşla play istediğiniz zaman oradan örneğin terminali seçerek AD0'dan 15'e kadar yazan o etiketlenmiş o pini, pinleri daha doğrusu 16 bitik bası.
+
+124
+00:21:39,763 --> 00:21:58,263
+Bir bas terminaliyle bitirebiliriz. Yani şunu yapıyoruz aslında. Şöyle bir şey atıyoruz oraya. Şimdi şu üçgen, o line'ın sonunda olması, sağ üst köşeye şimdi çizilen, onun bir terminal, o basın orada biteceğini söylüyor.
+
+125
+00:21:58,263 --> 00:22:06,239
+Ama ben onu bir yerde kullanacağım aslında az sonra ve hala arada bağlantı oluşturmadım, bağlantıyı da oluşturacağım. İkisi arasına...
+
+126
+00:22:06,240 --> 00:22:18,539
+Bas ekleyeceğim yine. Tekline diyeyim. Şimdi bunu uzattım. Demek ki o zaman terminal ekleme, iki bası birbirine bağlama bu şekilde yapılabiliyor.
+
+127
+00:22:18,539 --> 00:22:23,039
+Düşünün, başka bir devre elemanı daha var sağ tarafta.
+
+128
+00:22:24,660 --> 00:22:36,940
+Ben buradaki bastan buraya veri çekeceğim veya karma karışık devre çok yukarıda sağ üstte bir yerde bir tane devre var. Ben AD015'e olan bastan hepsini veya birkaçını çekmek istiyorum oraya.
+
+129
+00:22:36,940 --> 00:22:48,980
+Bunu 5-6 tane yerde yapacağım diyelim ki karma karışık bir devre olmasındansa biz labellama yapıyoruz. Bu tarz single line'lara veya buslara herhangi bir için bu yapılabiliyor.
+
+130
+00:22:49,299 --> 00:23:01,799
+Dolayısıyla kablo veya kablolara string isimler, label'lar atıyoruz. Bunları da başka bir yerde bağlantıyı devam ettirmesek bile aynı isimde yaratıp çağırdığımız zaman ikisi birbirine bağlı olmuş oluyor.
+
+131
+00:23:03,299 --> 00:23:05,099
+Buraya kadar sorusu olan var mı?
+
+132
+00:23:10,675 --> 00:23:35,675
+Şimdi sağ tuştan Edit Properties dediğimiz zaman basa, Label diye bir sekme çıktı karşımıza. Oraya pinle aynı ismi verdik. AD0'dan 15'e kadar bir label atadık. OK'ya bastık. Artık o basın adı AD015 olmuş oldu. Eğer ben başka bir yerde, başka bir uzak noktada...
+
+133
+00:23:36,339 --> 00:23:46,739
+Aynı bastan veri çekmek isteyeceksem, o bası orada tekrar çağırabilirim. Bakın arada bağlantı yok aslında ama isimleri aynı olduğu için birbirlerine bağlılar. Tamam mı?
+
+134
+00:23:47,539 --> 00:23:58,339
+Sonra işte bu bastan buraya başka bir devre varsa, düşünün bunun arası bu kadar kısa değil ama arada bir sürü başka devreler var. Dolayısıyla ben gelip...
+
+135
+00:23:58,387 --> 00:24:06,827
+Mikroişlemciden o devrelerin üzerinden atlayarak sağ taraftaki, uzaktaki başka bir devreye kablo çekmek zorunda kalmıyorum. Böylece birbirine label olarak bağlamış oluyorum.
+
+136
+00:24:06,827 --> 00:24:07,827
+Tamam mı?
+
+137
+00:24:12,692 --> 00:24:40,211
+Şimdi başka modüller de ekleyeceğiz. Dolayısıyla bir library'ye erişim sağlamamız lazım. Şurada gördüğünüz şu cursor mouse imlecinin altında bir de böyle bir sembol var. Ona tıkladığınız zaman şuradaki P'ye basarsanız eğer karşınıza şuradaki keyword vasıtasıyla arama yapabileceğiniz bir pick device penceresi açılıyor.
+
+138
+00:24:40,884 --> 00:25:03,604
+Derste işte buffer ve deep flip flop falan gördünüz. Ya bu hafta gördünüz ya da geçen hafta görmüşsünüzdür. Oraya örneğin devrenin kodunu yazdık. 74273. Bana listeliyor. Veya deep flip flop yazdık. Veya rez yazdık, rezistorun 3 harfini. Bana listeliyor onları otomatik olarak kendi programın library'lerinden.
+
+139
+00:25:05,332 --> 00:25:21,572
+74273, işte Octile, positive, trigger, D-type, flip float'tu. Bu şekilde ben buradan bunu okeyleyip enterlayarak herhangi bir workspace'in istediğim noktasına bırakabiliyorum. Dolayısıyla böyle bir eleman seçmiş olabiliyorum. Şu şekilde.
+
+140
+00:25:25,044 --> 00:25:31,044
+Aralara şu az önceki herhangi başka bir şey de olabilir. Bu bir D type click block.
+
+141
+00:25:32,544 --> 00:25:46,044
+Aralara istediğim bağlantıları da bus'tan çekebilirim örneğin. Tek tek AD'nin bit by bit bacaklarından diyelim ki veriler çekeceğim. O 8 bit için.
+
+142
+00:25:47,044 --> 00:25:50,044
+Ve bunlar diyelim ki AD sıfırdan başlasın.
+
+143
+00:25:51,188 --> 00:25:59,388
+Ne yaptım? Sağ tuş tıkladım. Label vereceğim o oradaki line'a. Yani şu anda az önce bahsa label vermeyi anlatmıştım. Şu anda single line'a label vermeyi anlatıyorum.
+
+144
+00:26:00,188 --> 00:26:05,587
+İsmini yazdım şuraya. Sağ tuş properties'den label'la atledikten sonra.
+
+145
+00:26:05,587 --> 00:26:17,587
+AD0 yazdım. Dolayısıyla adres data 0. bit için ben 74273 B-type flip flow'nun D0 girişine yani 3 numaralı pinine
+
+146
+00:26:17,811 --> 00:26:27,111
+AD0 mikroişlemciden gelen bir bitlik o veriyi bağlamış olduk. Tamam mı? Buraya kadar sorusu olan var mı?
+
+147
+00:26:30,612 --> 00:26:31,612
+Tamam.
+
+148
+00:26:32,612 --> 00:26:38,612
+Tabii ben bunu ad1, ad2, ad3 hepsi için yapıp sonuna kadar gelebilirim, ad7'ye kadar.
+
+149
+00:26:38,612 --> 00:26:40,612
+Dolayısıyla ben şunu yapmış oldum.
+
+150
+00:26:40,612 --> 00:26:54,612
+ad0'dan 15'e kadarlık, 0'dan 7'ye kadar olan least significant byte'ı, yani o 16 bitin sağ yarı ve sol yarıdaki sağ yarısını
+
+151
+00:26:55,443 --> 00:27:03,763
+Yani düşük anlamda 8 biti, yani low significant byte'ı buraya atayabilirim. Tamam mı? Bu isimleri vererek.
+
+152
+00:27:03,763 --> 00:27:13,363
+Bunun dışında az önceki üçgen sembolü, logic 1 ile beslemiştik ya, beslemişti otomatik olarak daha doğrusu bizim için.
+
+153
+00:27:13,363 --> 00:27:19,203
+Toprak ve bu tarz power elemanları da. Şu solda gördüğünüz...
+
+154
+00:27:20,019 --> 00:27:37,836
+Şu sembol'e tıklanarak alınabiliyor. Bu power örneğin. Veya default etiketiyle terminal seçebiliyorsunuz. Çünkü bunun da amacı şu, sadece basa veya single line'lere değil, terminallere de bir yani...
+
+155
+00:27:38,740 --> 00:27:48,740
+İşlemcinin her bir bacağına da bir terminal bağlayarak, ona label atayarak, onu da başka yerde, başka devrelere bağlayabiliyorsunuz. Bakalım mesela.
+
+156
+00:27:48,740 --> 00:28:05,516
+Şimdi, diyelim ki read write. Bakın 32. ve 29. bacaklara bakın. Oraya az önceki, şurada, şu giden gelen prob sembolü var bakın. Oradan default seçerek, enterlayarak.
+
+157
+00:28:06,036 --> 00:28:17,036
+Enter'ladıktan sonra da o prop terminaliyle 32. bacağı birbirine bağlayarak ve oraya da bir label atayarak, R'de gibi, böyle bir şey yapabiliyorum.
+
+158
+00:28:17,036 --> 00:28:22,036
+Bir label'lama işlemi yapabiliyorum. Bunu da istediğim yerde sonradan çağırabiliyorum.
+
+159
+00:28:22,036 --> 00:28:27,036
+Yine kablo devam etmiyor, label atanıyor. Dolayısıyla daha az karışık bir tasarım olmuş oluyor.
+
+160
+00:28:30,291 --> 00:28:46,291
+Bunu mesela özellikle henüz geçmemiş olabilirsiniz ama bizim 8255 diye bir yardımcı çevre birim var. Basic I.O işlemlerini, Handshake vesaire gibi işlemleri sağlayan. Önümüzdeki hafta görürsünüz eğer henüz görmediyseniz.
+
+161
+00:28:46,291 --> 00:28:56,291
+Özellikle onun örneği chip select'ini bu şekilde bir terminalle bağlayıp o terminalde başka bir yerlerde kullanabiliriz.
+
+162
+00:28:57,044 --> 00:29:05,244
+Onun dışında bakın Read'ine, Write'ına, A0, A1 şuradaki pinlerine bir şeyler bağlanabilir.
+
+163
+00:29:05,244 --> 00:29:16,544
+Biz size sıfırdan proje yaratın deseydik, örneğin buradaki reset boşsa, siz ekledikten sonra buradaki reseti toprağa çekmeniz gerekecek. Resetlemek istemediğimiz için. Tamam mı? Buradaki kontrol sinyalini beslemeniz gerekecek.
+
+164
+00:29:16,544 --> 00:29:17,744
+Öte yandan...
+
+165
+00:29:18,036 --> 00:29:28,036
+8255, basic IO işlemi yapıyor. Yani ne yapıyor? Örneğin, butonlarınız var, LED'iniz var. Butonlardan veri alıyor, o verileri de sonra LED'e atıyor diyelim ki.
+
+166
+00:29:28,036 --> 00:29:42,892
+Dolayısıyla giriş ve çıkış işlemi yapacak. Dolayısıyla sizin bir şekilde veriyi almanız ve göndermeniz gerekecek. O yüzden AD'den, D0'dan D7'ye kadar anlattığım şekilde bir etiketleme yapılmış.
+
+167
+00:29:44,115 --> 00:29:57,115
+Solda gördüğünüz mavi bastan çekilen giriş verileri sağda ya PA ya PB ya da PC ile gösterilen o 8'er bitlik yerlere bağlı olan IO cihazlarına gönderilecek veya oradan okunacak.
+
+168
+00:29:57,115 --> 00:30:10,115
+Dolayısıyla sol ve sağ arasında bize bu 8255 bir şey sunmuş oluyor. Bir basic input output işlemi sunmuş olacak. Detaylarını görürsünüz henüz görmediyseniz.
+
+169
+00:30:11,508 --> 00:30:13,107
+Sorusu olan var mı buraya kadar?
+
+170
+00:30:17,907 --> 00:30:21,771
+Bakın yüzünden. Şöyle.
+
+171
+00:30:26,099 --> 00:30:37,439
+Buraya bir bas koydum, ismi yok. Oraya bir isim veriyorum. Bu ismi de başka bir yerde aynı basa aynı ismi vererek arada bağlantı varmışçasına işlemlerime devam ediyorum.
+
+172
+00:30:37,439 --> 00:30:47,859
+Yapmazsam ne olur? Yapmazsam şu olur, şu an ekranda kırmızı gördüğünüz bası benim fiziksel olarak çekip uzatarak bağlamak istediğim yere sürükleyip oraya bağlamam gerekecekti.
+
+173
+00:30:47,887 --> 00:31:06,887
+E ben bunu diyelim ki 44 tane yerde yapıyorum. Düşünün ki 44 tane farklı bağlantı olacak. Karma karışık bir dizayn olacak ortada. Onun yerine bunlara etiket atıyorum ve o etiketleri çağırıyorum. Label ama bu. Oldu mu? Anladın mı [öğrenci]?
+
+174
+00:31:10,612 --> 00:31:11,852
+Anladın herhalde.
+
+175
+00:31:12,972 --> 00:31:13,692
+Tamam.
+
+176
+00:31:19,251 --> 00:31:23,251
+Şimdi bunu anlattık. Bunları geçelim.
+
+177
+00:31:27,700 --> 00:31:34,900
+Şuraya kadar gelmiştik. Şimdi şundan bahsetmiştik hatırlarsanız. İşte burada device çıkıyor demiştik.
+
+178
+00:31:37,700 --> 00:31:53,700
+Sadece şey yok. Bir sürü device çekebiliriz. Bizim bu 8255'i kullanmaya başladığımız zaman belli adreslerde işlem yapmamızdan, yapmamızın gerekliliğinden dolayı
+
+179
+00:31:55,284 --> 00:32:15,684
+Bizim 8255'imizi aktifleyeceğimiz zamanı, o ilgili adres söz konusu olduğunda kullanacak şekilde tasarım yapacağız. Bunun için de bir dekoder kullanma ihtiyacımız var. Bununla ilgili bir örnek vardı derste.
+
+180
+00:32:16,627 --> 00:32:24,827
+Dolayısıyla biz sadece işlemci, sadece 8255 değil, bazı başka yardımcı devre elemanları da kullanmamız gerekebilir.
+
+181
+00:32:26,227 --> 00:32:29,227
+Örneğin, buraya 74LS137 yazdım.
+
+182
+00:32:30,127 --> 00:32:34,227
+O gelen device library şeyinden, arayüzünden.
+
+183
+00:32:35,127 --> 00:32:39,127
+Buradan 3'e 8'lik bir dekoder seçiyorum.
+
+184
+00:32:40,564 --> 00:33:01,624
+Hatırlarsanız dekoderer N2, 2 üzeri N'di. Yani örneğin N3 ise, 3'ten 2 üzeri 3, 8'e aslında size bir çeşit o girişteki 3 biti çıkıştaki 8 farklı duruma map edebilen bir yapı sunuyordu. Örneğin 0, 0, 0 geldiği zaman 0. durumu yani 0. biti aktifleyecek.
+
+185
+00:33:01,983 --> 00:33:10,483
+001 geldiği zaman onun bir altını, bu şekilde 111'e kadar yani en son bite kadar istediğinizi decode etmenizi sağlayacak.
+
+186
+00:33:14,644 --> 00:33:19,244
+Şöyle bakalım. 8086 deyip, 8255 daha değin ediyorsak.
+
+187
+00:33:28,756 --> 00:33:32,256
+Gerekir. Evet, Erkan Hoca yazmış zaten. Tamam, süper. Erkan Hoca yazmış, onu yazan.
+
+188
+00:33:33,756 --> 00:33:34,732
+Okey.
+
+189
+00:33:38,291 --> 00:33:39,788
+Şöyle geriye gireyim.
+
+190
+00:33:43,635 --> 00:34:09,836
+Dolayısıyla bu önemli bir ek yardımcı devre elemanı bizim için. Şimdi bizim sol tarafta mikroişlemcili ve işte oradaki adresleri süzen bir yapı olacak. Onu az sonra göstereceğim. Sağ tarafta diyelim ki yardımcı devre birimimiz 8255 ve diyoruz ki 8255 sadece şu adreslerde, işte çift, tek, her neyse çalışsın diyoruz. Dolayısıyla adresi ona uygun olarak...
+
+191
+00:34:10,288 --> 00:34:17,788
+seçilip sadece o durumda aktiflenebilmesi için bir işlem yapmamız lazım. Biz buna adresleme diyoruz.
+
+192
+00:34:17,788 --> 00:34:27,288
+Bu adreslemeyi yapabilmek için de şu anda gördüğünüz bu tarz bir devreye ihtiyacımız var. 3, 2, 8, 4, 16, neyse artık.
+
+193
+00:34:27,288 --> 00:34:34,288
+Şurada bir data sheet'i var. Hatırlarsanız 3 tane enable'ı vardı bunun. Şurada daha iyi gösteriyor aslında.
+
+194
+00:34:35,027 --> 00:34:50,627
+Bunlardan, enable'lardan ikisi aktif love, biri aktif high. Dolayısıyla birine bir, diğerlerine 0-0 geldiği sürece bu çalışıyor. Şuraya da bakarsanız, gl ve g2 dediği üzerinde bar olduğu için, şundan bahsediyorum, şurası ve şurası.
+
+195
+00:34:50,627 --> 00:34:59,827
+Onlar sadece l ve l, yani low ve low olduğunda, yani 0 ve 0 verdiğinizde aktif olacak, çalışacak bu kısım. Öbürü de high olduğunda. Şunlar söz konusu değil o yüzden.
+
+196
+00:35:00,884 --> 00:35:08,203
+Geri gelelim. A, B, C dediği şey bizim üç tane inputumuz. Buraya adreslerden bir şeyler besleyeceğiz. Yani bu şu demek.
+
+197
+00:35:08,203 --> 00:35:20,203
+Öyle bir kombinasyon oldu ve öyle bir adres geldi ki ben bu dekoderin çıkışında uygun bir pin'i seçeyim. O pin de gitsin benim 8255'imin enable'ını enable etsin.
+
+198
+00:35:20,203 --> 00:35:28,003
+Böylece ben de 8255'imi o adres için aktifleyebileyim. Bu iş için kullanılıyor işte.
+
+199
+00:35:29,235 --> 00:35:55,215
+C, A, B sırasıyla most significant, sonra B, sonra A less significant. Dolayısıyla 0, 0, 1 aşağıdan yukarıya doğru C, B, A için geldiği zaman A, 1 olduğu için less significant. Dolayısıyla Y, 1 çıkış alacak. Y, 1'in çıkış alması demek, Y, 1'in 0 olması demek. Bakalım şurada hatta, doğruluk tablosuna. Yani şundan bahsediyorum.
+
+200
+00:35:55,635 --> 00:36:18,895
+C, low, B, low, A'da high olduğu için, yani 0, 0, 1 geldiği için, bu bana şunu söylüyor, birinci çıkışı al, 0 değil, 1. Dolayısıyla birinci çıkışı alarak, neredeyim, şuradayım, şunu, birinci çıkışı alarak bana bir sinyal ver. Çıkışta sağdaki devrelerin, sağdaki pinlerin, Y0'dan Y7'ye kadar,
+
+201
+00:36:19,380 --> 00:36:38,420
+Orada yuvarlak bubble gördüğünüz için bunlar aktif low çalışıyor. Yani şu demek, seçilim söz konusu olduğunda bana low sinyal verecek, diğerleri high'da kalacak. Yani şöyle bir şey çıkacak, 0'dan 7'ye kadar. 1, 0, 1, 1, 1, 1, 1 diye bir şey çıkacak. O sol tarafında şey olmasının sebebi o.
+
+202
+00:36:46,387 --> 00:36:57,667
+Evet, aynen arkadaşlar. Bunu belki daha en az örnek olarak çözmemiş olabilirsiniz ama, şimdilik az sonra ben lab 1'e bir miktar göz kırpmak için bir örnek koydum. Şimdi göstereceğim.
+
+203
+00:36:57,667 --> 00:37:05,108
+O yüzden birazcık bunlardan söz edeyim istedim. Ders de iyice pekişmiş olur böylece. Şimdi gelelim şuraya.
+
+204
+00:37:05,108 --> 00:37:12,947
+Şimdi biz genelde sizinle bu tarz bir ortam paylaşıyoruz. Şematik.
+
+205
+00:37:14,164 --> 00:37:33,484
+Şimdi solda işlemci var. Bazı bağlantıları yapılmış, bazıları aslında yapılmamış. Bakın şurada işte 74, LS137 diye, 3'den 8'e bir dekoder var. Bir tane chip select için bir label atanmış, CS8255 isminde. Öteki tarafta 8255 var, şurada.
+
+206
+00:37:34,068 --> 00:37:40,668
+Ne olduğunun hiçbir önemi yok. Bir devre elemanı diyelim ki bu. Ne işe yaptığını, ne yaradığını henüz görmediniz, bilmiyorsunuz. Önemi de yok.
+
+207
+00:37:40,668 --> 00:37:59,068
+Ama ben bir şekilde şuradaki giriş butonlardan veri alacağım, şuradaki ekrana yazacağım. Yani bunlar bir şekilde buraya bağlanacak, buralarda bir şekilde işlenecek, sonra çıkışımda buraya yazılacak. Bu işe yarıyor. Basic I.O işlemi yani. Şimdi şunların varlığı sizce neden var?
+
+208
+00:38:00,724 --> 00:38:03,423
+74273 neden var?
+
+209
+00:38:13,108 --> 00:38:14,604
+Var mı küçük olan?
+
+210
+00:38:22,771 --> 00:38:27,132
+Şöyle diyelim, en kaba haliyle bir şekilde bir filtreleme yapacak bizim için.
+
+211
+00:38:30,900 --> 00:38:50,900
+Nasıl olsa aynı anda A ve D belli durumlarda adres, belli durumlarda data görev üstleniyor ya, adres görevi üstlendiğinde o adreslerin sol taraftaki AD'lerden, yani şuradan, sağ taraftaki A'lara atanarak bir şekilde adres verisinin soldan sağ aktarılmasını sağlayacak bizim için.
+
+212
+00:38:50,900 --> 00:38:56,900
+Tamam, burada kullanılan bu Octal Detail Filp Glock'ların amacı o. Glock sinyali var.
+
+213
+00:38:58,324 --> 00:39:08,224
+İlgili uygun pozitif edge veya negatif edge trigger neyse, uygun yükselme veya düşme durumu gösterdiği anda ki bu ne demek?
+
+214
+00:39:08,596 --> 00:39:35,596
+Adres verisi AD'lerde söz konusu demek. Değil mi? Dolayısıyla ben bu time multiplexing meselesini, yani aslında daha az sayıda pin kullanarak hem adresi hem pini, buslarda, yani tasarımcı açısından kolaylık sağlayan bu şeyi, yani 8086'ı tasarlayan kişiler, bunu uygulayıcılar, biz mühendisler açısından bakıldığında, böyle bir çözümle adreslerin geldiği anlarda adresleri seçip süzüp daha doğrusu,
+
+215
+00:39:36,596 --> 00:39:51,596
+Adres geldiği anda adresi sol taraftan sağ tarafa doğru pes etmemiz gerekecek. Diffli plotlarla. Bunun da amacı bu. O zaman benim burada MR'ler bu arada reset ile ilgili bir şey. Data sheetine bakarsınız nasıl beslendiğini. Clock önemli ama.
+
+216
+00:39:55,987 --> 00:39:58,807
+Adresleri alacaksın. 20 tane adres var çünkü.
+
+217
+00:40:02,099 --> 00:40:11,599
+Ben oraya o label'ı vermişim. Bu saatten sonra o bası sağ tarafta bir yerde kullanırsam o label'da istediğim 20 biti çağırabilirim. Adres 20 bit ya. 0'dan 19'a kadar.
+
+218
+00:40:11,599 --> 00:40:25,599
+Data 15, 16, 0'dan 15'e kadar. Dolayısıyla adres ismi vermiş oraya. Şimdi şu 74273'lerin içinde ML'ler var bakın arkadaşlar. Onlar şu an boş. Dediğim gibi bu...
+
+219
+00:40:25,711 --> 00:40:33,312
+Lab 1'e göz kırpan bir şey. İlki çok zorla geçmesin diye. Ufak ufak ipuçlara veriyorum aslında şu anda.
+
+220
+00:40:33,312 --> 00:40:39,812
+İşte butonları, led'i nasıl bağlamanız gerektiğini az çok bir yerlerden bulabilirsiniz ama bu kısım karışık gelebilir.
+
+221
+00:40:39,812 --> 00:40:45,812
+MR dediğim gibi reset. Data sheet'inden bakarsanız clock önemli burada sadece.
+
+222
+00:40:45,812 --> 00:40:52,811
+Çünkü clock, soldan sağ verinin, D-type click clock'un amacı o biliyorsunuz. Clock geldiğinde soldakini sağ aktaracak.
+
+223
+00:40:53,139 --> 00:41:03,139
+O kılığı uygun şekilde beslemeniz lazım. Onu araştırın. Adresle ilgili bir sinyal var mikroişlemcide. Onu uygun şekilde kılığa vermeniz gerekiyor.
+
+224
+00:41:03,139 --> 00:41:18,139
+Yani şunu diyorum, mikroişlemci bana bir şey çıkış ediyor. O da şu, diyor ki bana şu anda buslarda adres var. O zaman ben tam o anda, o an bittiğinde daha doğrusu, adresler tamamen dolduğunda...
+
+225
+00:41:18,643 --> 00:41:26,643
+Clocklarımı uygun sinyalle besliyorum ki, D-type flip Clock'lar soldakini sağa aktarsın. Böylece adresler buraya süzülsün. Tamam mı?
+
+226
+00:41:26,643 --> 00:41:36,643
+Sonra ben buradan, artık adresler var, şimdi artık adresler sağ tarafta. Şuradan şuraya bir veri çekebilirim.
+
+227
+00:41:41,172 --> 00:41:49,331
+söz konusu olduğunda çalışsın, şurada verilen yardımcı device dendiği zaman, şuradaki adresleme artık yapılabilir.
+
+228
+00:41:49,331 --> 00:42:00,572
+Dolayısıyla genel olarak biz bunu bloklara ayırabiliriz. İşlemcinin olduğu blok, bir adreslemenin süzüldüğü, datanın verilmediği o an için bir blok.
+
+229
+00:42:00,572 --> 00:42:04,172
+Adres çözümlemenin olduğu şu ortadaki kısım.
+
+230
+00:42:04,659 --> 00:42:11,980
+Yardımcı bir devre elemanı var, 8255 olabilir, başka counter, usart, adc, duck her neyse o olabilir.
+
+231
+00:42:11,980 --> 00:42:17,139
+Ve bunlara bağlı giriş çıkış elemanları var. Buton, LED, oscilloscope her neyse.
+
+232
+00:42:17,139 --> 00:42:29,139
+Dolayısıyla biz bu blokları birbirlerine bağlayarak uygun şekilde ve sonra da 8086'ya o source code sekmesinden kodu yazarak tasarımımızı bitireceğiz.
+
+233
+00:42:31,347 --> 00:42:41,968
+Tekrar hatırlatayım şöyle. Şu sol taraftaki kırmızı kısımda bazı bağlantılar eksik. İşte cloak vesaire gibi. Bunlara bakarsınız. Sağ taraf zaten komple eksik.
+
+234
+00:42:42,968 --> 00:42:49,228
+Şöyle de bir ipucu vermiş olalım. Clockları besleyeceğiz dedik. Şu ortadaki şununla adres çözümleme yapacağız dedik.
+
+235
+00:42:49,228 --> 00:42:57,807
+Çünkü soru da bana diyecek ki, şu 8255 denilen cihaz sadece bu adresle çalışsın. Dolayısıyla...
+
+236
+00:42:58,132 --> 00:43:09,132
+Ben o adresleri buraya geçirdim ama o an hangi adres var? İstediğim adres mi değil mi? Onu da şuradan tekrar uygu bir süzgeç diyelim ona.
+
+237
+00:43:09,132 --> 00:43:17,732
+Süzerek sağ tarafa dekoderin çıkışının bir bitini uygun pozisyona, uygun sinyale getirerek 8255'i aktif edeceğim.
+
+238
+00:43:17,732 --> 00:43:25,332
+Ve böylece o adreste şu 8255 bloğu çalışacak. Veri alıyorsa veri alacak, veri yazıyorsa veri yazacak.
+
+239
+00:43:25,556 --> 00:43:35,456
+Yazma ve okuma ve yazma da sizin SMB'de o yazdığınız online'da uygun keywordlerle yazdığınız SMB koduna bağlı.
+
+240
+00:43:40,083 --> 00:43:42,643
+Adres çözümleme burada yapılacak demiştik.
+
+241
+00:43:47,003 --> 00:43:52,123
+Hocam, ben böyle bir örnek koydum ama buralardaysanız. Bunu geçeyim o zaman.
+
+242
+00:43:55,827 --> 00:44:02,827
+Daha adres çözümlemeyi görmediğimiz için kabaca bahsedebiliriz ama ne faydalısı olduğu, ne yönde kullanıldığı.
+
+243
+00:44:02,827 --> 00:44:05,827
+Tamam peki. Kısaca bahsedelim o zaman.
+
+244
+00:44:05,827 --> 00:44:17,827
+Şimdi, hoca önümüzdeki hafta anlatacak ama 16 bitlik veriyoruz, 8 bitlik çevre birimi. Bunun başka varsiyonları da var. Ona hiç takılmayın ama şurada gördüğünüz tabloya bakın sadece.
+
+245
+00:44:17,827 --> 00:44:23,632
+A dediği şey adresin en sağdaki list significant biti. Dolayısıyla o bize aslında...
+
+246
+00:44:23,632 --> 00:44:48,032
+Adresin çift mi, tek mi olduğu ile ilgili bir bilgi sağlıyor. Sorularda genelde tek adresler, çift adresler dediği zaman da biz biliyoruz ki o verilen adres ve onun peşi sıra gelen çift, işte devamında gelen adres, peşi sıra gelen adresleri, A0 hakkında onun sıfır mı, bir mi olduğu ile ilgili bir bilgi sunuyor bize. Bize şöyle diyebilir örneği, şu örneği göz önüne alalım.
+
+247
+00:44:48,628 --> 00:44:56,868
+Biz mikroişlemcide temel giriş çıkış işlemlerini yapması adına tasarımımıza 8255 eklemek istiyoruz.
+
+248
+00:44:56,868 --> 00:45:07,228
+Ve bu sadece F8H adresinde çalışsın ve çift adreslerde çalışsın. Başlangıç adresi de F8H olmuş olsun.
+
+249
+00:45:07,228 --> 00:45:12,628
+Şimdi 8255'in detaylarını görünce 4 peşi sıra gelen adrese ihtiyacınız olacak.
+
+250
+00:45:12,628 --> 00:45:15,828
+Başlangıç adresini söylemiş zaten F8H.
+
+251
+00:45:16,436 --> 00:45:23,636
+Ardışık gelen, ondan sonra gelen, öyle dediği için, çift adres FAH, F0 değil, yalnız burası çok önemli.
+
+252
+00:45:23,636 --> 00:45:33,636
+F9'dan sonra FA'ya geçiyor çünkü, 16'lık düzende. FA'dan sonra FC var, B'yi atlıyor. FC'den sonra da FD yok, FE var.
+
+253
+00:45:33,636 --> 00:45:41,636
+Çiftleri yazdı peşi sıra gelen. Bunun sebebi 8255'in portlarıyla ilgili. Detayını haftaya görürsünüz.
+
+254
+00:45:42,900 --> 00:46:05,320
+Bu 8 bitlik adresleri açtığınız zaman, bunlar adres ya, F ve 8'i işte 1, 1, 1, 1 ve 1, 0, 0, 0 olarak açtığınız zaman, A0'dan A7'ye kadar her birini pars ediyorsunuz aslında. Yani 16'lık düzenden ikilik düzene geçirdiniz altlarına yazdınız şu tabloda. Burada sağ tarafa baktığınız zaman A'nın hep 0 olduğunu görüyorsunuz.
+
+255
+00:46:06,708 --> 00:46:21,048
+Bu zaten bize çift adresleri alın demişti. O zaman zaten A'nın hep 0 olduğu durum bunun çift adresi olması. Ispatladık burada. Sol üstteki tabloya bakıyoruz. A0 çift adresteki bir veri. Şimdi devamlı bakacağız.
+
+256
+00:46:29,844 --> 00:46:35,443
+Yani 1 olması demek, tepesinde şapkı olduğu için aktif olmaması demek. O zaman bu bize şunu söylüyor.
+
+257
+00:46:35,443 --> 00:46:48,043
+Oradaki benim basımda söz konusu olan 16 bitlik verinin high kısmı değil low kısmı aktif. O zaman D0'dan D7'ye kadar olan kısmı aktif.
+
+258
+00:46:48,043 --> 00:46:55,643
+Dolayısıyla ben şunu biliyorum. Data ile ilgili D0'dan D7'ye kadar olan çift adresteki byte'ler söz konusu.
+
+259
+00:46:57,523 --> 00:47:08,523
+Şimdi tamamen adres çözme yapmayacağım. Ben hoca gösterir. Ama burada işte A0'ı biliyoruz artık sıfır. Bunun dışında 8255'in kontrol sinyallarını beslememiz gerekecek.
+
+260
+00:47:08,523 --> 00:47:21,523
+Örneğin orada kendi içinde işte A pinleri var. A pinlerini beslememiz gerekecek. Bu pinleri kullandıktan sonra geriye kalanlarla da örneğin A7, A6 falan olacak. Onlarla da
+
+261
+00:47:22,003 --> 00:47:47,443
+Bu adreslere ait bilgiler olduğu için onları işte az önceki bahsettiğim adres çözümlemede dekoderin adreslerini hani soldan sağa geçtikten sonraki ADR ile gösterilmiş olan bitlerinden seçilip o dekoderin beslenmesini sağlayacağız. Örnek yapılınca daha iyice oturacağını düşünüyorum. Saate şöyle bir bakalım. 10 dakika var.
+
+262
+00:47:48,083 --> 00:47:54,483
+Çoğunlukla söyleyeceğim bu kadar. Şöyle şunu da bir göstereyim. Görüyorsunuz değil mi ekran arkadaşlar?
+
+263
+00:47:54,483 --> 00:48:00,483
+Görünüyor mu? Protosu görüyor musunuz? Tamam.
+
+264
+00:48:00,483 --> 00:48:01,483
+Evet.
+
+265
+00:48:01,483 --> 00:48:03,483
+Mesela burada sıfırdan bir proje oluşturmuşuz.
+
+266
+00:48:03,483 --> 00:48:14,483
+Zoom yapabiliyorsunuz şu şekilde mouse'un tekerleğiyle. Şurada bir şeyler çizebiliyorsunuz. Şuradan şöyle tutup bırakarak.
+
+267
+00:48:15,219 --> 00:48:27,219
+Escape ile ondan vazgeçebilirsiniz. Hatırlarsanız şundan bahsetmiştik, şuraya basmıştık, buraya istediğimiz devre elemanını yazabiliriz. Örneğin, rezistör yazdım, rezistör çıktı.
+
+268
+00:48:29,219 --> 00:48:42,219
+Biz size her zaman vermeyebiliriz, bir butona ihtiyacınız olabilir örneğin. Buradan onu halledebilirsiniz. Şundan bahsetmiştik, burada işte default olarak istediğiniz label atayabilirsiniz terminal anlamında.
+
+269
+00:48:42,771 --> 00:49:05,891
+Başka, şuraya Ale ismiyle atadığım şey, şöyle yapalım, şunu basayım. Edit Properties'den adının, hani labellama ne diye sormuştunuz ya, şurasının isminin Ale olduğunu görüyorsunuz. Şu basa bakalım, bir defa tıkladım, sağ tuş.
+
+270
+00:49:09,300 --> 00:49:22,900
+Buraya istediğim label'ı verebilirim. Tekrar şuraya gelelim. Şuraya gelelim yine. 74, 127 miydi? Yok neydi? Bakalım şuradan.
+
+271
+00:49:27,923 --> 00:49:28,923
+137.
+
+272
+00:49:31,923 --> 00:49:34,923
+Örneğin, buna bir defa tıkladım. Bunu alacağım, kullanacağım.
+
+273
+00:49:34,923 --> 00:49:40,923
+Okeyledim. Bir defa tıkladım. İstediğim yere bana ikinci tıklamada bırakmak için seçenek sunuyor.
+
+274
+00:49:40,923 --> 00:49:48,923
+Tıkladım buraya. Diyelim ki, şunu bir yere bağlayacağım. Tutuyorum şöyle, basılı tutarak istediğim yere getirip bağlayabiliyorum.
+
+275
+00:49:49,923 --> 00:49:53,923
+Az çok elektronikte veya lojikte bunları yapmışsınızdır zaten.
+
+276
+00:49:54,452 --> 00:50:01,752
+Toprağı unutmayın bağlamaya, eğer bağlamanız gerekirse veya Lojik Van'la beslemeniz gereken yerleri.
+
+277
+00:50:01,752 --> 00:50:08,752
+Bunun dışında simüle etmek için devrenizi, onunla ilgili bir örnek açalım isterseniz.
+
+278
+00:50:08,752 --> 00:50:11,252
+Şuradan.
+
+279
+00:50:24,724 --> 00:50:28,403
+Şöyle ilk örneklerden bir şey bulayım dedim. Ben daha önceden başka almıştım ama.
+
+280
+00:50:47,795 --> 00:51:15,095
+Bu normal hocaların paylaştığı örneklerden biri. İşte burada örnek ve adresleme devresi yapmış örneğin. Sonra bir tane uygun olan pin seçilmiş. Şuradaki şu seçilen adres değerlerine göre. Sonra bu gidip buralara bağlanmış. Bakın chip selectine. Bundan bahsetmiştik aslında. Şurada giriş çıkış birimleri uygun şekilde 8255'e bağlanmış. Detayları önemli değil. Ana hatlarıyla bilseniz şu an için yeterli bence. Şuradaki şu Run Simulation tuşuna bastığımız zaman aslında bir şekilde simülasyon başlıyor.
+
+281
+00:51:15,507 --> 00:51:21,647
+tuşlara basabiliriz. Örneğin, bastığımız tuşlara göre ledlerin davranışı değişiyor.
+
+282
+00:51:21,647 --> 00:51:25,747
+Onun dışında burada source kodumuz var. Yazılan kod burada bakın.
+
+283
+00:51:30,804 --> 00:51:32,804
+Başka söyleyecek.
+
+284
+00:51:34,804 --> 00:51:38,572
+Bu kadar. Başka, hocam sizin eklemek istediğiniz bir şey var mı?
+
+285
+00:51:47,284 --> 00:51:48,284
+Tamam, peki.
+
+286
+00:51:51,284 --> 00:51:54,284
+Şuradan debug yapacağız arkadaşlar.
+
+287
+00:51:55,284 --> 00:52:01,284
+Ben şimdi süremiz şok yetmedi ama bununla ilgili olmadığı bir ekran çıkısı paylaşırım size. İyice diğer grubun süresini almamak için.
+
+288
+00:52:06,483 --> 00:52:13,483
+Evet, Piyazadan bu hafta sonu detayını paylaşırız. Siz de hemen yükleyin. Olur mu? Pazartesiye kadar yükleme işini bitirin yani kesin.
+
+289
+00:52:15,983 --> 00:52:17,983
+Sorusu olan var mı arkadaşlar başka?
+
+290
+00:52:18,483 --> 00:52:21,983
+Hocam, Piyazaya siz mi kaydediyorsunuz bize yoksa biz mi yöne?
+
+291
+00:52:22,483 --> 00:52:25,483
+Yok, linkini hocalar paylaştı galiba.
+
+292
+00:52:26,483 --> 00:52:28,483
+Ben herhangi bir link göremedim de.
+
+293
+00:52:31,284 --> 00:52:40,044
+Piyazanın linkini Piyazadan paylaşamayacağım için. Avicis'ten paylaşırım yine şey olması için. Diğer arkadaşlar nasıl uyuyor oldular onu sorayım hemen.
+
+294
+00:52:44,659 --> 00:52:46,411
+Nasıl uyuyor oldunuz arkadaşlar?
+
+295
+00:52:49,556 --> 00:52:51,052
+Nereye atılmıştı?
+
+296
+00:52:54,804 --> 00:52:59,804
+Tamam neyse, arkadaşlarımın liste eğer olmazsa bana mail at, ben davet sistemine davet linkini paylaşırım olur mu?
+
+297
+00:52:59,804 --> 00:53:01,804
+Tamam hocam teşekkür ederim.
+
+298
+00:53:01,804 --> 00:53:05,804
+Bu var, bir şifresi var çünkü arkadaşlarına sorarsın, mikro 2020'inden mi öyle bir şeydi?
+
+299
+00:53:05,804 --> 00:53:07,804
+Evet bak arkadaşım paylaştı.
+
+300
+00:53:07,804 --> 00:53:08,804
+Tamam hocam.
+
+301
+00:53:08,804 --> 00:53:09,804
+Hocam bir soru sorabilir miyim?
+
+302
+00:53:09,804 --> 00:53:10,804
+Tabii.
+
+303
+00:53:10,804 --> 00:53:16,804
+Bu biz SMD ile mikroişlemci aynı anda alırız ama bu lablara kadar kodu yazacak düzeye gelir miyiz?
+
+304
+00:53:16,804 --> 00:53:20,804
+Veya hani SMD'de şu konuya kesin bakıp gelin dediğiniz bir konu var mı?
+
+305
+00:53:22,516 --> 00:53:27,516
+SMD'yi aynı anda alıyorsunuz bu dersi. Demek ki ön koşul değil herhalde, bilmiyorum.
+
+306
+00:53:27,516 --> 00:53:41,516
+Aynen, ön koşul yok hocam. Erkan Hoca sorun olmaz, SMD'yi takip ederseniz dedi de, lablarda şimdi hiç bilmediğimiz bir konu gelme ihtimali var mı? Lablarla Erkan Hoca ilgilenmiyor olabilir diye düşündüm de.
+
+307
+00:53:41,516 --> 00:53:45,407
+Biz, lablarda hiç bilmiyor olduğunuz konu, yani tabii ki...
+
+308
+00:53:45,407 --> 00:54:04,587
+SMM kodlama, şu an ekranda gördüğün tarzda şeyler yapacaksın. Bunlar sana şu an çok yabancı olabilir. İstersen, yani almışsın artık dersi. Devam edeceksen de, bu temel en azından, derste bir üzerinden geçilen, hocaların şöyle bir üzerinden geçtiği bir kısım var, hatırlarsın belki, bu hafta veya geçen hafta.
+
+309
+00:54:04,587 --> 00:54:09,087
+Geçen hafta geçtikleri yerse sıkıntı olmaz yani, onları anladım.
+
+310
+00:54:09,492 --> 00:54:23,492
+Onun dışında da birkaç özel komut falan vardır belki orada olmama ihtimali olan. İşte prosedürler vesaire falan var. Onlara da bir bak. Kendin biraz önden gidersen eğer biraz yakalarsın umarım.
+
+311
+00:54:23,492 --> 00:54:25,492
+Tamam, teşekkür ederim.
+
+312
+00:54:25,492 --> 00:54:27,276
+Başka sorusu olan var mı arkadaşlar?
+
+313
+00:54:30,099 --> 00:54:53,759
+Debug'ı anlatacaktım aslında ama süremizi aşmayayım. Ben onunla ilgili birkaç ekran çıktısı paylaşırım Piazza'dan size. Olmadı bir video falan bile paylaşabilirim yani. Adım adım kodunuzun içindeki işte registerlardaki verileri görüyorsunuz aslında. Şu aşamada böyle çok karışmasın hem böyle daha iyi bence. Piazza'yı takip edin siz. Orada onunla da ilgili bir bilgi paylaşırım ben.
+
+314
+00:54:54,643 --> 00:55:06,643
+Anlık olarak böyle satır satır SM'lik olduğunu içinde line by line gidiyorsunuz. Böylece altta registerları görerek hangi registera işte AL'ye, AH'ye ne atan mı görüyorsunuz. Onunla ilgili bir bilgi paylaşacağım.
+
+315
+00:55:08,643 --> 00:55:18,643
+Bu örneği hocalar paylaşır. Bunlar derslerin başında paylaşılan örnekler. Önümüzdeki haftalarda muhtemelen paylaşılır. Var mı başka sorusu olan?
+
+316
+00:55:24,371 --> 00:55:44,612
+Peki, benden bu kadar arkadaşlar. Bir sorun yaşarsanız sizden ricam önce eğer notsal bir sorunsa o asistanla görüşünüz. Eğer çözüm olmuyorsa bana gelebilirsiniz. Hocaları hemen rahatsız etmeyin. Eğer hala sorun çözülmezse ben konuşurum hocalarla. Bu dönem böyle ilerlesin lütfen. Bir sorunuz olduğu zaman mail atmaktan çekinmeyin bana.
+
+317
+00:55:47,492 --> 00:55:49,492
+Ben teşekkür ederim dinlediğiniz için.
+
+318
+00:55:51,295 --> 00:55:52,295
+Biz bitirdik.
+
+319
+00:55:55,295 --> 00:55:59,295
+Sercan merhaba tekrardan. Host şu anda sensin. İstediğin zaman sonlandırabilirsin.
+
+320
+00:55:59,295 --> 00:56:02,295
+Bitirebilirim. Te ki tamam hocam. Çok teşekkür ederim. Görüşürüz tekrar.
