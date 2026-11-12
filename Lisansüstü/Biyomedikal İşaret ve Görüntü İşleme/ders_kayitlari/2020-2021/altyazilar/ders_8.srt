@@ -1,0 +1,2135 @@
+1
+00:02:16,211 --> 00:02:17,931
+Günaydın arkadaşlar.
+
+2
+00:02:22,068 --> 00:02:23,108
+Sesim geliyor mu?
+
+3
+00:02:26,528 --> 00:02:27,208
+Günaydın hocam.
+
+4
+00:02:28,008 --> 00:02:34,108
+Günaydın. Biraz daha bekleyelim. Sayımızı bir artsın. Ondan sonra başlarız. Olur mu? Bir 15 geçe başlayacağız.
+
+5
+00:02:34,548 --> 00:02:35,108
+Tamam hocam.
+
+6
+00:02:35,728 --> 00:02:36,308
+Tamamdır.
+
+7
+00:12:54,196 --> 00:12:55,956
+Günaydın arkadaşlar tekrar.
+
+8
+00:12:58,276 --> 00:12:59,036
+Günaydın.
+
+9
+00:12:59,676 --> 00:13:04,556
+Bu hafta sınavlar var mıydı yüksek lisansla? Doktora da.
+
+10
+00:13:05,956 --> 00:13:08,656
+Bir tane vardı hocam benim şahsen.
+
+11
+00:13:11,124 --> 00:13:20,064
+Yani yüksek lisans şimdi derslerini tanımlamışlar. Bu dersimizde yapacağız en azından bir giriş kısmı şeklinde.
+
+12
+00:13:21,104 --> 00:13:30,484
+Onun dışında ikinci önümüzdeki haftada artık konu dağıtımlarını yapıp ondan sonra bitireceğiz arkadaşlar.
+
+13
+00:13:31,764 --> 00:13:34,464
+Bu hafta biraz dersimize katılım düşük nedense.
+
+14
+00:13:39,860 --> 00:13:41,139
+Şu an 4 kişiyiz.
+
+15
+00:13:45,620 --> 00:13:48,720
+Şimdi ben şeyleri bir göstereyim önce.
+
+16
+00:13:55,187 --> 00:14:09,048
+Dün Biyomedikal dersi için birkaç tane şey yükledim. Machine Learning ile alakalı olarak bir Overview PowerPoint'i var burada. Bunu indirebilirsiniz.
+
+17
+00:14:09,048 --> 00:14:21,508
+Burada genel olarak Machine Learning ile ilgili temel kavramlar anlatılıyor. Şimdi biraz bundan bahsedeceğiz tabii ki.
+
+18
+00:14:23,316 --> 00:14:35,576
+Temel kavramlar nelerdir? Misition Trilerden başlıyor. Onun dışında da diğer yöntemleri de anlatarak genel kapsamlı olarak anlatıyor.
+
+19
+00:14:35,576 --> 00:14:42,716
+Tabii Machine Learning bizim dersimizde önemli bir kısmı. Şunu da indirelim olmadı.
+
+20
+00:14:50,388 --> 00:15:02,348
+Print'e bastığımızda indirme şansımız oluyor. Bunu da Download'un içerisine indirebiliriz.
+
+21
+00:15:31,251 --> 00:15:57,751
+Bu iki tane slide kalsın şimdilik. Şimdi, bunu da bir kapayalım. Bu hafta Robert Polycar'ın PDF'i çevrilmeye başlayacaktı. Bir de Machine'in örnekle alakalı olarak bu paper'ı ben paylaştım. Daha doğrusu slide PowerPoint sunumunu paylaştım.
+
+22
+00:15:58,196 --> 00:16:07,576
+Onun dışında ödevlerimiz vardı. Onlara bir bakalım. Onların da tarihi ne zamanmış? Ödevler, sınavlar kısmına girelim.
+
+23
+00:16:08,375 --> 00:16:11,416
+Ben bugün yükleyeceğim hocam. Benimkini henüz yüklemedin.
+
+24
+00:16:11,416 --> 00:16:18,096
+Tamamdır. Bugün 25'ye dediğimizde revlet konu özeti var.
+
+25
+00:16:19,316 --> 00:16:28,276
+Gönderilenler kısmına baktığımda bir [öğrenci] göndermiş, [öğrenci] göndermiş, [öğrenci] göndermiş gözüküyor.
+
+26
+00:16:32,211 --> 00:16:34,211
+Geriye gelelim.
+
+27
+00:16:36,211 --> 00:16:41,211
+Mesela geçmiş örneklerimizde gönderilenlere bakalım.
+
+28
+00:16:41,211 --> 00:16:49,211
+Burada 3. hedefi. Şurada dosya adı gözükenler, dosya adı kısmında gözükenler linki gelmiş gözüküyor.
+
+29
+00:16:51,211 --> 00:16:59,819
+Genel olarak şu arkadaşlarımız göndermiş. Şu arkadaşlarımız da sadece girip çıkmışlar sisteme.
+
+30
+00:17:05,491 --> 00:17:19,612
+Daha eski ödevler bak. Polikar'ın bugün temel bir giriş yapacağım dersin sunumları ise önümüzdeki hafta yapılacak. Ben yine de bu hafta genel bir bilgi vermeyi düşünüyorum.
+
+31
+00:17:19,612 --> 00:17:29,632
+Konu hakkında. Bu arada önümüzdeki haftaya biraz daha böyle kapsamlı katılalım istiyorum.
+
+32
+00:17:30,099 --> 00:17:36,859
+Neden diyecek olursanız önümüzdeki hafta konu anlatımları, yani herkese birebir görüşmemiz lazım.
+
+33
+00:17:36,859 --> 00:17:45,579
+Proje alacakların katılmasını istiyorum ki hem böyle neler yapacağımızı projeyle alakalı konu kısmını anlatacağım.
+
+34
+00:17:46,259 --> 00:17:52,859
+Hem de konu dağıtımlarını yapacağız. Bu arada tabii ki sizler de konu ile alakalı...
+
+35
+00:17:53,392 --> 00:18:12,092
+Kendi konu örneğinizle alakalı gelebilirsiniz tabii ki. Daha önce çalıştığınız bunlar olabilir. Örneğin [öğrenci]. [kişisel bilgi]
+
+36
+00:18:12,352 --> 00:18:16,932
+Biyomedikal çalışmıştın, serviks çalışmıştın değil mi? Evet çalıştım hocam.
+
+37
+00:18:17,587 --> 00:18:25,407
+Onda yeni yöntemler, yeni uygulamalar, özellikle derin öğrenme uygulamaları tarzında bir şeyler yapabilirim.
+
+38
+00:18:25,467 --> 00:18:28,947
+Deep Learning kullanmıştım ama hocam tekrar mı kullanayım ya da?
+
+39
+00:18:30,548 --> 00:18:32,847
+Deep Learning'de ne kullanmıştın daha önce?
+
+40
+00:18:35,228 --> 00:18:37,528
+[kişisel bilgi]
+
+41
+00:18:38,420 --> 00:18:49,360
+Şimdi farklı bir yaklaşım yapabiliriz. Yani segmentation üzerine çalışabiliriz. Daha önce classification mi çalışmıştın?
+
+42
+00:18:50,996 --> 00:18:56,456
+Tamam. Segmentation çalışabiliriz. Güncel segmentation yöntemleri falan var. Onlar şey alışabiliriz.
+
+43
+00:18:56,476 --> 00:18:59,456
+Yonef falan var ama hocam araştırmak lazım.
+
+44
+00:19:00,615 --> 00:19:14,836
+Yönetten daha böyle kompleks algoritmalara bakmak lazım. Yöneti de tabii ki karşılaştırma amacıyla kullanmak lazım. Bu tarz böyle elimizdeki dataset'lere bir bakalım. Yani sizler de araştırın. Özellikle yarışmalarda falan çok çıkıyor.
+
+45
+00:19:15,256 --> 00:19:18,816
+Biyomedikal dataset'ler, güncel dataset'ler. Onlara bir bakalım.
+
+46
+00:19:18,996 --> 00:19:19,655
+Olur mu arkadaşlar?
+
+47
+00:19:21,716 --> 00:19:22,436
+Tamam hocam.
+
+48
+00:19:23,916 --> 00:19:30,456
+Şimdi onun dışında hiçbir data seti falan bulan var mı aranızda arkadaşlar?
+
+49
+00:19:34,483 --> 00:19:52,523
+Dataseti araştırması falan yapan arkadaşlarımız var mı? Bir veri setini araştırıp öncelikle arkadaşlar, farklı yarışmalardan, challenge'lardan bunlara bir bakın. Önümüzdeki hafta gerçekten çalışmak istediğimiz bir datasette devam edelim.
+
+50
+00:19:53,183 --> 00:20:00,000
+Herkesin gelecek hafta bu kadar az katılımlı değil, yoğun katılım olarak. Çünkü projeleri paylaşacağız, konuları...
+
+51
+00:20:00,000 --> 00:20:23,639
+Orada bir netleştirmemiz gerekecek. Olur mu arkadaşlar? Ben belki hafta içerisinde bazı konu önerilerinde şeye, bizim ya buradan, buradan da hani bir ödev ölçme, duyuru gibi bir şey varsa, burada duyuru gibi bir panelimiz varsa bizim, şurada.
+
+52
+00:20:25,907 --> 00:20:37,288
+Dersler sınavlara gelelim. Ders duvarından da duyurabilirim arkadaşlar. Ders duvarından duyuracak olursam da toplu halde mesaj atarım arkadaşlar.
+
+53
+00:20:37,288 --> 00:20:42,768
+GESİS sistemi üzerinden toplu mesaj atarım. Oradan ilerleriz arkadaşlar.
+
+54
+00:20:44,847 --> 00:20:52,327
+Evet, şimdi temel kavramlardan başlayalım.
+
+55
+00:20:52,819 --> 00:20:54,439
+Whiteboard'umuz da açık.
+
+56
+00:21:05,299 --> 00:21:15,299
+Evet, burada önce şuradan paternal cognition kısmını açalım.
+
+57
+00:21:15,859 --> 00:21:21,639
+Şimdi en temelde artık biz elimizde biyomedikal verimiz var.
+
+58
+00:21:22,359 --> 00:21:26,440
+Bu biyomedikal veri arkadaşlar çeşitli formatlarda olabilir.
+
+59
+00:21:27,380 --> 00:21:37,440
+Örneğin, biyomedikal bir işaret çalışıyorsunuz diyelim. Biyomedikal bir işarette bir boyutlu bir işaret çalışabilirsiniz. Örneğin, bir kalp datası üzerinde çalışabilirsiniz.
+
+60
+00:21:38,804 --> 00:21:55,564
+Örneğin burada düğmini tekrar eden sinyaller var diyelim. Bunları belli segmentlere bölüp bunlardan bir dataset oluşturulabilir. Örneğin elimizde daha önce çalıştığımız çeşitli 256 uzunluklu frame'lere böldüğümüz.
+
+61
+00:21:55,988 --> 00:22:17,228
+QRS kompleksleri vardı. Bazı arkadaşlarımız bir boyutlu sinyal çalışacağında bunlara çalışıyordu. Buradan da data setinin içerisinde örneğin 6 veya 9 sınıf kadar normal, ondan sonra taşikardi çeşitli hastalık örnekleri vardı.
+
+62
+00:22:19,988 --> 00:22:33,407
+Makine öğrenmesi yöntemiyle bulmaya çalıştığımız şu. Örneğin bu normal bir kalp atımı ise farklı tiplerde farklı dalga tipleri oluşuyordu.
+
+63
+00:22:33,407 --> 00:22:47,168
+Burada normalde doktorlar 9 tane sınıf diyelim. 9 tane sınıfı bulurken görsel olarak tecrübelerine bağlı olarak bunların temel özelliklerinden yararlanarak
+
+64
+00:22:47,859 --> 00:23:11,559
+Gördüğü zaman dibinden ayırtabilecek temel şeyleri çıkarabiliyor. Örneğin, biz baktığımızda şöyle bir atım görebiliyoruz ama mesela şuradaki atım, şuradaki yapılanmalar veya bu tam atımın süresi veya bunun eğimi, şunların eğimi gibi çeşitli özün tehlike çıkarma yöntemlerinden yararlanarak burada
+
+65
+00:23:12,048 --> 00:23:29,567
+Ayırt edici kısımları bulmaya çalışıyorlar. Bizim de aslında makine öğrenmesi veya Patent Recognition dediğimiz kısımda, bunlar birbirlerine yakın kısımlar, birbirine yakın konular, Machine Learning, ondan sonra Patent Recognition.
+
+66
+00:23:29,971 --> 00:23:43,791
+Veri Madenciliği, Data Mining beraber ortak konulara sahipler arkadaşlar veya bunların hepsinin üst kimliğinde veri mühendisliği veya Data Science.
+
+67
+00:23:47,347 --> 00:24:14,367
+Konularından bahsediyoruz. Tabi data science'ın içerisinde artı istatistik, matematiksel modelleme gibi kavramlar da giriyor. Biz normalde şunu yapmaya çalışıyoruz. Bir doktorun tecrübesiyle öğrenmiş olduğu kısımları biz makineye öğretebilir miyiz sorusunun cevabını arıyoruz arkadaşlar. Bunun için de çeşitli yöntemler kullanacağız.
+
+68
+00:24:15,284 --> 00:24:38,304
+Bunun dışında bir boyutlu veriler olduğu gibi, ikinci tip olarak da görüntüler üzerinde çalışıyoruz. Görüntü üzerinde çalışma imkanımız var. Çünkü biyomedikal aletler, ne bileyim, ultrasound olsun, MR olsun, bilgisayarlı tomografi olsun, onun dışında mikroskop görüntüleri olsun.
+
+69
+00:24:39,731 --> 00:24:43,692
+Çeşitli ara birimlerle sayısallaştırılıyorlar arkadaşlar.
+
+70
+00:24:47,316 --> 00:24:55,375
+Bu sayısallaştırma ile beraber artık biz neye sahibiz? Bilgisayar ortamında bunları analiz etme şansına sahibiz.
+
+71
+00:24:55,375 --> 00:25:07,576
+Şimdi bu sayısallaştırmış görüntüleri en iyi şekilde doktora yardımcı bir sistem oluşturma.
+
+72
+00:25:15,155 --> 00:25:25,375
+Diagnosis, yani CAT sistemleri oluşturma şansımız var veya bir başka şey de karar destek sistemleri.
+
+73
+00:25:25,375 --> 00:25:29,955
+Karar destek sistemleri.
+
+74
+00:25:32,076 --> 00:25:38,275
+Decision Support System şeklinde çeşitli yapılanmalar var.
+
+75
+00:25:39,476 --> 00:25:46,976
+Şimdi kullanılan sensörün tipine göre veya kullanılan modalitenin tipine göre,
+
+76
+00:25:46,976 --> 00:25:58,976
+biz bir boyutlu aynı ultrasoundda olduğu gibi grey level görüntüler alabileceğimiz gibi renkli görüntüler de alabiliriz arkadaşlar.
+
+77
+00:25:58,976 --> 00:26:05,476
+Veya aynı MR'da olduğu gibi bir hastamız var diyelim şöyle.
+
+78
+00:26:06,548 --> 00:26:29,228
+Bunlar slice slice taranıyor diyelim. Şöyle bu durumda bir veri küpü yapılan çekilen slice sayısınca elde edilecek veri küpü kadar oluşturabilecek taramaları. Her bir taramanın şuradaki veri küpünün katmanlarını oluşturduğu bir yapı da elde edilebilir.
+
+79
+00:26:33,236 --> 00:26:39,115
+Daha doğrusu burada renkli görüntüyle iki boyutlu diyelim. Çünkü bu farklı frekanslarda çekilmiş.
+
+80
+00:26:39,539 --> 00:27:06,860
+Temel, görüntüsel özellikleri veriyor. Üç boyutlu veri deyince ise şunu anlamamız lazım. Aynı bu MR görüntüleri gibi bu da üç boyutlu olsun. 3D olsun. Şöyle gittiğimiz zaman örneğin şurada bir kara ciğerin üstünden geçiyor diyelim. Bu kara ciğerin arkadaşlar önce birinci görüntüde şu kadarlık bir kısmı oluşuyor. İkinci görüntüde bir alt katman oluşuyor. Üçüncü görüntüde biraz daha kısmı oluşuyor.
+
+81
+00:27:07,539 --> 00:27:08,539
+Genişleme sonucu.
+
+82
+00:27:08,980 --> 00:27:10,599
+Şunun kısımda azalmaya başlıyor.
+
+83
+00:27:10,779 --> 00:27:21,880
+Bunların üstüne geldiğinizde aslında bıçakla kesiyormuşsunuz gibi oradaki X-Y düzlemindeki görüntüsü oluşuyor.
+
+84
+00:27:21,880 --> 00:27:29,119
+Her bir katmana geçtikçe ise aralarda tabii ki slice'lar alınarak volümetrik yani şöyle.
+
+85
+00:27:30,900 --> 00:27:42,559
+Bir yapı oluşu X, Y, Z'de görebileceğimiz, X, Y, Z ortamında görebileceğimiz bir görüntü oluşmuş oluyor. Bir de bunlar üzerinde de çalışabiliyoruz.
+
+86
+00:27:43,559 --> 00:27:50,380
+Şimdi seçeceğimiz tipe bağlı olarak tabii ki elimizde dataset'leri oluşmuş oluyor.
+
+87
+00:27:50,380 --> 00:27:56,460
+Şimdi biz bu dataset'leri nasıl değerlendireceğiz? Sorusunun cevabı burada.
+
+88
+00:27:56,943 --> 00:28:14,583
+Temel olarak güzel bir girişle beraber anlatılmış. EKG sinyallerinden EEG sinyallerine kadar, beyin sinyallerine kadar çeşitli sinyalleri dış dünyadan elde edebiliyoruz.
+
+89
+00:28:14,583 --> 00:28:18,943
+Temelde bilmemiz gereken bazı kavramlar var.
+
+90
+00:28:20,211 --> 00:28:25,711
+Biz burada tek boyutlu işaretlerde çalışsak, 2 boyutlu işaretlerde veya 3 boyutlu işaretlerde çalışsak,
+
+91
+00:28:26,251 --> 00:28:31,172
+sonuçta bizim buradan bazı küçüller elde etmemiz lazım.
+
+92
+00:28:31,172 --> 00:28:39,032
+Bir, öncelik olarak saf data ile çıkardığımız, ön işleme ile çıkardığımız saf data ile çalışabiliriz.
+
+93
+00:28:39,476 --> 00:29:00,175
+Diyelim ki bir EKG işaretini aldık şöyle. Kaydettik. Uzunluğu da 256. İkinci örneğimiz var. Başka bir sinyal. Birden 255-256'ya kadar gidiyor şöyle. Bu birinci örneğimiz. İkinci örneğimiz. Üçüncü örneğimiz şöyle. Farklı bir örnek.
+
+94
+00:29:01,044 --> 00:29:06,824
+Bunları alt alta koyduğumuzda arkadaşlar, şu anda herhangi bir özellik çıkarım yapmıyoruz.
+
+95
+00:29:06,824 --> 00:29:16,464
+Sadece ön işleme ile ilgili parçaları kopardığımızda, işleyebileceğimiz, karar vereceğimiz sistemleri yazdırdığımızda, örneğin 256 uzunluk demiştik.
+
+96
+00:29:16,564 --> 00:29:26,684
+Eğer biz bunu bir ereğ şeklinde saklayacak olursak, ereğ şekline getirecek olursak, burada artık bu genlik değerlerini saklıyoruz.
+
+97
+00:29:27,220 --> 00:29:44,940
+Bunu da şöyle bir şeye yazalım. Örneğin 0, ilk değeri 0, 0.1, 0.2, tam şu orta noktalarda örneğin 0.9 gibi büyük bir değere geldi diyelim gibi değerlerle biz bunu sakladık.
+
+98
+00:29:54,675 --> 00:30:01,336
+Şöyle bütün datasetimizi oluşturduk diyelim. Elimizde eninci sample kadar.
+
+99
+00:30:01,336 --> 00:30:08,496
+Bunların içerisinde hastalıklı da hastalıksız da örnekler olabilir.
+
+100
+00:30:08,496 --> 00:30:14,775
+Bir tane de yardımcı bir vektörün içerisine bunların tiplerini saklayalım.
+
+101
+00:30:18,963 --> 00:30:30,423
+Bir hastalık çeşidi, bir bir hastalık çeşidi, 3, 2 şeklinde burada da label'ları yani bizim etiketlerimizi öğrettik.
+
+102
+00:30:31,003 --> 00:30:40,043
+En temelde bakın bu bir boyutlu biri için elde ettiğimiz bir iki boyutlu matriz yapısı var.
+
+103
+00:30:45,715 --> 00:31:06,036
+Örnekler olduğu veya sample'lardan oluşan her bir sütununun da, örneğin şuradan bir sütundan ilerledik, o andaki veya o bölgedeki, belirlediğimiz o bölgedeki genlik değeri olduğunu düşünüyoruz.
+
+104
+00:31:06,036 --> 00:31:11,395
+Burada az olurken mesela bu hastalık içinde burada yükselmeler başlıyor diyelim.
+
+105
+00:31:12,084 --> 00:31:22,284
+Bunların her birine de arkadaşlar future veya o işaretin properties, özellikleri.
+
+106
+00:31:23,904 --> 00:31:33,384
+Ama genel olarak makine şeyinde satırlara sample'lar, sütunlara ise future'lar deniyor.
+
+107
+00:31:33,384 --> 00:31:39,384
+Şu tek bir sample'lık yapıya, biz ne demiştik? Future vektörü.
+
+108
+00:31:43,667 --> 00:31:52,587
+Yani özellik vektörü diyoruz. O sample oluşturan özelliklerin yan yana dizildiği vektörü kastediyoruz.
+
+109
+00:31:53,607 --> 00:31:59,447
+Sonuçta bizim yeni bir sistem oluşturmak için temelde yararlandığımız yapı bu.
+
+110
+00:32:07,347 --> 00:32:12,048
+Bu da n çarpı d boyutunda bir matris oluşuyor.
+
+111
+00:32:12,587 --> 00:32:13,748
+n neydi arkadaşlar?
+
+112
+00:32:14,448 --> 00:32:15,468
+Sample sayısı.
+
+113
+00:32:17,648 --> 00:32:21,708
+d ise bizim future sayımız.
+
+114
+00:32:25,299 --> 00:32:34,679
+Bunun dışında şurada n çarpı birlik bir label rektörü de oluyor.
+
+115
+00:32:35,879 --> 00:32:42,059
+Bunun her bir satırı ilgili sample'ın hangi tipte olduğunu bize belirliyor.
+
+116
+00:32:43,379 --> 00:32:44,539
+Temel kavram bu.
+
+117
+00:32:44,799 --> 00:32:52,179
+Veya iki boyutlu bir görüntü için düşünecek olursak, iki boyutlu veya üç boyutlu bir görüntüden bahsedelim.
+
+118
+00:32:54,067 --> 00:33:10,147
+Burada örneğin, şurada çeşitli hücre yapıları var. Amacımız da, tabi bu arka plandaki görüntülerde de var. RGB olsun bu şeyimizde.
+
+119
+00:33:11,147 --> 00:33:20,727
+Baktığımızda, ben örneğin sadece hücre yapılarını ayırmak istiyorum. Buradaki problemim sınıflandırma problemiydi.
+
+120
+00:33:21,748 --> 00:33:37,908
+Sınıflandırma probleminde ne yapıyorum arkadaşlar? Ben hastalık tipinin örneğin EKG hastalığı devamlı böyle bir aletimiz var böyle. Atımlar yapıyor. Arada hastalıklı belirli oluşturuyor.
+
+121
+00:33:49,523 --> 00:34:04,063
+Bunları vektör yapıp, A-tip sistemi, hastalıklı ve hastalıksız örneklerle eğitip, bundan sonra yeni gelecek verilerle beraber merkezini bulup, bu hangi acaba hastalık tipine geliyor sorusunu arıyoruz.
+
+122
+00:34:05,103 --> 00:34:07,283
+Burada ise farklı bir probleme bakalım.
+
+123
+00:34:07,680 --> 00:34:19,920
+Yani problemin tanımı bizimle alakalı bulmamızı istediğimiz veya doktorun istediği veya teşhise yardımcı olabilecek çeşitli aşamaları işebilir.
+
+124
+00:34:19,920 --> 00:34:27,460
+Örneğin, diyebilir ki mikroskoptan bir kanser hastalığı araştırıyorsunuz. İlk problemimiz şöyle bir şey olabilir.
+
+125
+00:34:33,684 --> 00:34:39,404
+Kanser varlığını, dağılımını, ondan sonra slide üzerindeki dağılımını araştırmaya çalışıyoruz.
+
+126
+00:34:39,484 --> 00:34:42,003
+Peki bu aşamaya gelene kadar neler oluyor acaba?
+
+127
+00:34:43,244 --> 00:34:47,624
+Öncelikli olarak hastadan bir doku alınıyor.
+
+128
+00:34:49,404 --> 00:34:55,644
+Alınan bu doku şöyle bir lamelin altına yerleştiriliyor.
+
+129
+00:34:55,644 --> 00:34:57,144
+O doku parçası şöyle.
+
+130
+00:34:58,867 --> 00:35:10,728
+Ondan sonra çeşitli boyalarla örneğin arka planı ve hücreleri, DNA'yı hücre için farklı boyayan boyalarla boyuyor.
+
+131
+00:35:10,728 --> 00:35:19,487
+Örneğin şuradan bir tane örnek boyanmış görüntü göstereyim.
+
+132
+00:35:34,291 --> 00:35:49,211
+Patoloji görüntüsüne girelim. Şuradan görsellerden bakalım. Şunlar arkadaşlar. Gördüğünüz gibi burada bir kısım alınmış. Burada da daha yakın bir gösterilen şey var.
+
+133
+00:35:49,748 --> 00:35:56,988
+Hücrelerin rengi, burada iki tane tip boya boyanmış. Birisi mavi ağırlıklı, birisi daha çok kırmızı ağırlıklı. Bunlar birleşerek.
+
+134
+00:35:56,988 --> 00:36:04,827
+Dikkat ederseniz burada hücre merkezlerinde farklı yapılar olduğu için hücreler farklı renk boyanmış.
+
+135
+00:36:04,948 --> 00:36:16,988
+Aradaki epitel dokular falan farklı renklere girmişken, yağ doku gibi üzerinde veya boşluklar gibi üzerinde renk barındırmayan kısımlar,
+
+136
+00:36:17,364 --> 00:36:44,804
+Farklı renk almamış. Biz burada bir tespitte bulunmak istiyoruz diyelim. Farklı hücre, mitoz var mı? Veya farklı hücre yapılanmaları veya dağılımları var mı? Ondan sonra hücrelerin morfolojik özelliklerinde şey var mı? Değişiklikler var mı? Bunları çıkarmaya çalışıyoruz. Teşhis için ilk başta doktorun yaptığı bu. Bunu çıkarabilmek için öncelikli olarak arkadaşlar şuna bakıyoruz.
+
+137
+00:36:46,099 --> 00:36:51,159
+Ben acaba burada önce neye bakarım?
+
+138
+00:36:52,199 --> 00:36:57,539
+İnsan gözüyle baktığımızda problemin ilk şeyi hücreleri arka plandan ayırmaktır.
+
+139
+00:36:57,539 --> 00:37:03,939
+Daha sonra hücrelerin yapıları, onların dağılımları hakkında bir fikir elde ediliyor.
+
+140
+00:37:04,119 --> 00:37:12,000
+Ve otomatik olarak baktığımızda eğer yardımcı ön işleme adımları varsa ki burada boyama bir ön işleme adımı.
+
+141
+00:37:12,719 --> 00:37:30,759
+Gelmiş, daha rahat bir şekilde ben ne yapabiliyorum? Hücreleri ayırıyorum. Daha sonrasındaysa, bakın burada okla işaretlenmiş, farklı bir hücre yapısı oluşmuş. Mesela doktor buna şey yapabilir, odaklanıp başka bir şey yapabilir.
+
+142
+00:37:36,628 --> 00:37:43,807
+Yoğunlukları veya bir yerde prolifersyon var mı, bir yoğunlaşma var mı? Ona bakıyor arkadaşlar.
+
+143
+00:37:45,248 --> 00:37:59,568
+Veya aynı buradaki gibi mesela bazı noktalar dolmuş mu? Anormal yapılar var mı? Şuradaki gibi mesela anormallikler var mı? Bunları bir araştırıyoruz öncelikle olarak.
+
+144
+00:38:00,851 --> 00:38:20,811
+Şimdi bundan bir sonraki aşamada ise arkadaşlar ne yapıyoruz? Geldik bir tarayıcı. Yüksek çözünürlüklü tarayıcıya giriyor bu görüntü boyandıktan sonra. Burada çok büyük olaylarda büyük görüntüler elde ediliyor.
+
+145
+00:38:26,228 --> 00:38:51,908
+O bütün şuradaki yapıyı büyütülmüş halde var. Tabi bunun üzerinde bu mesela 10.000'e 10.000'lik bir görüntü olabilir. Bu cihazdan çıkan görüntü bütün slide'ı taradı. Tabi her bir noktayı yüksek çözüntü. Şimdi biz burada bir uzman öncelikli olarak bakılacak bölgeleri bir tespit ediyor. Şu bölgeye bir çalışalım.
+
+146
+00:38:52,288 --> 00:38:59,347
+Şu bölgeye bir çalışalım, şu bölgeye bir çalışalım gibi patchler belirlemeye başlıyor.
+
+147
+00:39:00,228 --> 00:39:06,967
+Dataset de bu noktadan sonra oluşuyor. Yani bütün görüntüyü alıp eğitmek bu şey de mümkün değil.
+
+148
+00:39:07,867 --> 00:39:11,407
+İçerisinden bakacağımız dataset'leri oluşmaya başlıyor.
+
+149
+00:39:11,407 --> 00:39:19,487
+Diyor ki, örneğin bir makine öğrenmesi yapılacaksa, bakın buradaki dağılımlar normal diyor.
+
+150
+00:39:19,987 --> 00:39:42,407
+Bu diyor ki normal ile hastalıklı arası diyor. Bu diyor hastalıklı diyor gibi sıfır, bir, iki. Ara değerli olarak ara sınıflar belirliyor. Elimizde bizim artık şöyle görüntülerimiz olmuş oluyor. Arka arkaya baktınız. Her birisi bir sample'dan oluşuyor.
+
+151
+00:39:42,931 --> 00:40:07,931
+Bu şekilde verecek olursanız. Bazı yapılar, hani bunları kabul ediyor. Aldınız, örneğin bir derin öğrenme yapısına verdiniz diyelim. Çıkıyor. Artık buradaki patchleri direkt sınıflama şansımız var. Veya size başka bir test veriyorlar. Diyorlar ki, şimdi ben bunları normal, hastalıklı veya hastalıklı ve normal arasında...
+
+152
+00:40:08,275 --> 00:40:35,435
+Bulabilecek gibi yaptığımız zaman farklı bir problem de çıkabiliyor. Örneğin şunun içerisinde önce hücreleri bir tespit et diyor bize. Şöyle. Hücreleri bir tespit edelim diyor. Tamam bu durumda problem farklılaştı. Hani bir sınıflandırma problemi değil, başka bir problemi dönüşmüş oldu. Ne dedik?
+
+153
+00:40:35,987 --> 00:40:59,807
+Önce bir segment edelim dedik. Aslında buradaki bir görüntüyü aldığımda ben artık şuradaki bir görüntüyü alıp şuraya çektim diyelim. Bu görüntü aslında ben burada tekli tekli çizdim ama bunlar patchlerin oluşturduğu patch dizileri. Her birinin de 3 katmanı var. Aynı burada görmüş olduğunuz renkli bir görüntü elde ettim.
+
+154
+00:41:03,027 --> 00:41:19,967
+Diyorlar ki, hücreyi önce hücre ve arka planını ayrıştır. Bu o kadar kolay bir şey değil. Yani burada baktığınız zaman, yakından göstereyim. Tamam, hücreleri tespit edelim. Şuradan bir kalem çıkarayım mesela.
+
+155
+00:41:24,371 --> 00:41:24,871
+Şöyle.
+
+156
+00:41:31,188 --> 00:41:48,387
+Hücreleri test edelim. Tamam. Hücre, hücre, hücre. Şunların hücre olduğu belli ama bakın arka planda bazı hücrelerin, mesela bunu da hücre olarak belirleyebiliriz ama dikkat edin.
+
+157
+00:41:48,387 --> 00:41:55,608
+Bunun bazı kısımları, bakın şu kısımın renksel olarak baktığında şuradaki renkle aynı.
+
+158
+00:41:57,684 --> 00:42:14,384
+Arka plandaki renkle aynı özellik gösteriyor. Veya şu bir hücre mi? Yani soluk çıkmış. Hücre mi acaba? Veya şurada bir hücre var diyelim. Bakın tam şu kısmı biraz daha parlak. Aynı şurası gibi görünüyor.
+
+159
+00:42:14,384 --> 00:42:24,463
+Yani burada soru işaretleri oluşturan kısımlar var. Yani herkes, her hücre şu netlikte çıkmayabiliyor.
+
+160
+00:42:25,139 --> 00:42:35,139
+Şu netliği göstermiyor, biliyor. Bu durumda clear diyelim, ondan sonra şunu da kapayalım.
+
+161
+00:42:36,979 --> 00:42:45,539
+Şimdi benim öncelikli olarak bunu iki türlü yapabiliriz. Bir segmenter, burada da çeşitli algoritmalar kullanabiliriz.
+
+162
+00:42:46,291 --> 00:42:53,931
+Örneğin, ben bir hücreye baktığımda, bir piksel olarak düşündüğümde ben bunu kaç şekilde ifade edebilirim?
+
+163
+00:42:54,211 --> 00:43:05,131
+Bir, öncelikli olarak o pikselin, yani bir ne oldu pikselin, yani bunun hücre dediğimiz bir hücresi olsun, bunun tipi de hücre olsun.
+
+164
+00:43:06,471 --> 00:43:10,671
+Üç tane özelliği var en temelde baktığımda. A, G, B değeri onun.
+
+165
+00:43:11,795 --> 00:43:20,795
+Onun dışında ikinci bir örnek aldım diyelim. Onun da RGB değeri var. Bu da bir nolu hücre kabul ediyorum.
+
+166
+00:43:20,795 --> 00:43:34,571
+Veya arka plandan seçiyorum artık. Şurası arka plan, şurası da arka plan. Buradan bir tane RGB görüntüsü seçiyorum. Bu da 0.
+
+167
+00:43:34,963 --> 00:43:52,083
+Yani hücresel değil. R, G, B. Bu da sıfır diyelim. Bakın bu sefer de aynı şuradaki mantıkla bir eğitim matrisi ve de label'ı oluşturabiliyorum.
+
+168
+00:43:54,224 --> 00:44:00,083
+Yani ben uygulamaya bağlı olarak bunları oluşturuyorum.
+
+169
+00:44:00,596 --> 00:44:18,336
+Elimde böyle bir sürü set bulundu. En basitinden, basit, şu etiketleri kullanmayan, hücresel yapının, hücresel olmayan yapıdan farklı olduğunu söyleyen algoritmalar var.
+
+170
+00:44:18,336 --> 00:44:22,555
+Şimdi birazdan onu deneyeceğiz. Veya buradaki etiket bilgisini de kullanalım.
+
+171
+00:44:22,963 --> 00:44:45,264
+Algoritmalar var. Bunlara etiket bilgisini kullanıyorsa supervised yani eğiticili algoritmalar derken etiket kullanmayan algoritmalar ise unsupervised yani eğiticisiz algoritmalar deniyor. Bunların çeşitli hatları var da güdülü, güdüsüz öğrenme diyenler de var. Güdü derken bir eğitim.
+
+172
+00:44:45,811 --> 00:45:07,692
+Yapıldığını, güdüzsüz derken eğitimin yapılmadığını kastediyor burada. Bu şekilde eğiterek veya eğiticisiz algoritmalarla hücresel yapılar olabildiğince çıkarılmaya çalışılıyor.
+
+173
+00:45:11,635 --> 00:45:31,876
+Şurada temel bir problem vardı. Ne demiştik? Hücrenin içerisinde bazı belirsizliklerden dolayı içinde bazı noktalar aynı arka plandaki mesela epitel doku gibi gözükebiliyor. El işareti gözüküyor mu arkadaşlar? Sizin ekranınızda da.
+
+174
+00:45:33,996 --> 00:45:36,296
+Ben de sol altta ama şu an hareket etmiyorum.
+
+175
+00:45:37,155 --> 00:45:38,215
+Hareket etmiyorum.
+
+176
+00:45:40,467 --> 00:45:42,467
+Baktığımızda burada,
+
+177
+00:45:45,268 --> 00:45:48,268
+Şurada el hareketini oynatıyorum. Sizde gözüküyor mu?
+
+178
+00:45:48,967 --> 00:45:50,967
+Bir hücrenin üzerinde.
+
+179
+00:45:50,967 --> 00:45:52,967
+Yok hocam hareket etmiyor bende.
+
+180
+00:45:52,967 --> 00:45:54,967
+Etmiyor tamamdır.
+
+181
+00:45:59,967 --> 00:46:05,931
+Şurada görmüş olduğum bölge arkadaki epitel. Burası gözüküyor değil mi? İşaretlemeleri.
+
+182
+00:46:06,452 --> 00:46:29,292
+Görüşüyor Hocam. Tamamdır. İşaretlerle aynı halde olabiliyor. Şimdi temizleyelim. Şimdi burada artık problem oluşmaya başladı. Peki farklı bir şey isteyebilirler. Tamam hücreleri bulduk diyelim biz.
+
+183
+00:46:29,780 --> 00:46:34,520
+Veya hücreleri olabildiğince iyi bulabiliyoruz belki. Şöyle bir şey çıkabilir.
+
+184
+00:46:35,520 --> 00:46:42,120
+Baktığımızda şöyle hücreleri temel olarak buldu ama içinde bazı boşluklar var.
+
+185
+00:46:44,100 --> 00:46:51,060
+Veya şeklini tam bulamayabildi. Şöyle. Burada aramış olduğunuz gibi bulamayabildi.
+
+186
+00:46:51,060 --> 00:46:54,220
+Yani bu şurasını arka planla aynı yaptı diyelim.
+
+187
+00:46:55,123 --> 00:47:08,103
+Arkası mavi diyelim. Arka plan diye işaretledim. Veya tam sınırlarını iyi bulamayabildim. Burada da başka bir algoritmalar çalıştırıyoruz. Burada da Post Processing örneği.
+
+188
+00:47:11,539 --> 00:47:32,399
+Algoritmaları çalışmaya başlıyoruz. Ne yapacağız? Örneğin şu içerideki boşlukları giderme, onu tam bir hücre haline getirme, ne bileyim kenarlarını düzeltme gibi. Burada post processing olduğu gibi şöyle bir şey de yapmak mümkün.
+
+189
+00:47:35,699 --> 00:47:48,840
+Bu ders kapsamında makinenin olabildiğince doktora yardımcı, insan gözü gibi veya insan beyinle yakın kararları oluşturabilmesi.
+
+190
+00:47:48,840 --> 00:48:01,039
+Tabii biz burada baktığımızda otomatik olarak ben sizden herhangi bir çocuğa bile versem al bakalım şunu güzelce bir işaretle benim için desem.
+
+191
+00:48:02,068 --> 00:48:29,068
+Çok rahat bu sınırı çizer. Şöyle, aynen hiç zorlanmaz. Sınırlarını da çok güzel çizer. Şöyle ayırır birbirinden. Üst üste binse bile birbirinden ayırır. Veya şurada kararsız kaldığı sınırları çok iyi çizebilir. Veya şöyle bulanıklığa rağmen güzel bir şekilde bana oluşturabilir bunu. Ama başka bir, bunu bilgisayara anlatmak...
+
+192
+00:48:29,391 --> 00:48:53,931
+Başka bir dert arkadaşlar. Yani bilgisayarda biliyorsun kurallı komutlar dizisi şeklinde anlatmaya çalışıyor bunu. Yani senin örneğin sadece RGB görüntüsüne batmıyorsun sen orada. Öyle değil mi? Ben burada sadece RGB şeyine mi bakıyorum? Başka neye bakıyor olabilirim burada arkadaşlar?
+
+193
+00:48:56,596 --> 00:49:16,996
+[öğrenci] neye bakıyor olabilirim? Ben burada mesela şeyi çiziyorum diyelim. Bir hücreyi şöyle çerçeve ediyorum, segmente ediyorum. Mesela sen bunu yaparken arka planda beyninde başka ne tür işlemler yaparsın? Rengine bir bakıyorsun herhalde. Değil mi [öğrenci]?
+
+194
+00:49:24,052 --> 00:49:28,911
+[öğrenci], geliyor mu sesim?
+
+195
+00:49:32,692 --> 00:49:33,512
+Görüyoruz hocam.
+
+196
+00:49:34,231 --> 00:49:36,652
+Yok, [öğrenci]'a soruyorum şimdi.
+
+197
+00:49:39,932 --> 00:49:43,632
+[öğrenci], duyuyor musun beni? Chatten de yazabilirsin.
+
+198
+00:49:49,076 --> 00:49:52,976
+Zaten dersem üsup yok. Evet, aydın.
+
+199
+00:49:56,724 --> 00:50:02,784
+Hocam soruyu tekrar edebilir miyiz? Nasıl ayırt edebilir miyiz? Başka nereye mi bakacağız diye sormuştunuz.
+
+200
+00:50:02,784 --> 00:50:24,264
+Mesela bunu ben böyle bir çevresine bir daire çizdim gördüğün gibi. Hücrenin. Sadece rengine mi baktım sence? Veya şurada yapıyorum bak. Şurada yaptım. Çerçevede mi? Mesela şu kısım biraz açık renk gördün mü?
+
+201
+00:50:25,780 --> 00:50:31,280
+Bu açık renkle şuranın arasında bir fark yok renk olarak baktığımda.
+
+202
+00:50:31,340 --> 00:50:35,519
+Ama ben onu çevrelerken güzelce çevreledim şöyle.
+
+203
+00:50:36,160 --> 00:50:40,380
+Renk değişim oranı veya parlaklık değişim oranına mı baktık? Köşe bulur gibi.
+
+204
+00:50:41,240 --> 00:50:43,039
+Şöyle bir şey yaptım ben orada.
+
+205
+00:50:44,820 --> 00:50:45,920
+Dikkat edin arkadaşlar.
+
+206
+00:50:51,251 --> 00:51:14,011
+Aynı zamanda çevre piksellerin dağılımına da bakıyoruz. Yani ben burada aslında ne yapıyorum? Bir yapı var. Burada yuvarlak bir yapı var. İçerisinde ona aykırı bir renklenme var. Değil mi? Şu kısımlar. Onu da dikkate alarak onun kontürlerini kafadan belirliyorum.
+
+207
+00:51:15,284 --> 00:51:22,903
+Aynı şekilde şurada bir bulanıklık var ama kaba olarak görüntünün değişimlerinden yararlanıyor.
+
+208
+00:51:24,844 --> 00:51:28,564
+Veya şurada mesela, şu kısım biraz parlak değil mi?
+
+209
+00:51:30,504 --> 00:51:34,504
+Nereye benziyor oranın görüntüsü? Şuraya benziyor mesela.
+
+210
+00:51:34,504 --> 00:51:38,443
+Ama ben yine de çizerken onu...
+
+211
+00:51:38,643 --> 00:51:53,523
+İçerisine alıyorum. Yani sırf RGB değerlerine bakmıyorum. Benim kafamda onun hücre içi bir bölge olduğunu söylüyorum. Farklı future'lar da üretebiliyorum.
+
+212
+00:51:53,523 --> 00:52:01,324
+Bu da insan beyninin gelişmiş bir yanını ortaya koyuyor aslında. Öyle değil mi?
+
+213
+00:52:06,143 --> 00:52:33,583
+Farklı, sadece ben burada söyledim basit bir şekilde geldim sadece renk değerlerini aldım diyelim. RGB değerlerini aldım diyelim. Ama ben aslında baktığımda şöyle farklı etraftaki piksellere de bakıyorum aslında merkezin harcındaki. Şöyle baktığımda onların renklerine de bakıyorum. Yani farklı sadece RGB değerlerini değil.
+
+214
+00:52:33,983 --> 00:52:46,864
+Örneğin burada Future Extraction algoritmalı var. Uzamsal. Etrafındaki piksellerin de dağılımını, yerleşimini göz önüne alıyor.
+
+215
+00:52:46,864 --> 00:52:59,804
+Örneğin burası mesela morlardan oluşsun hücre içi. Arka taraf pembe. Tam şu bir tane pikselde pembe çıksa ortada.
+
+216
+00:53:00,179 --> 00:53:18,179
+Ben orayı hücre dışı mı alacağım? Yani sonuçta bu skanada bir sensörden geçiyor. Bu sensör %100 doğruluk veriyor mu bana? Aralık pembe var ama etrafındaki hepsi, şuradakiler mor diyelim etrafındaki.
+
+217
+00:53:18,356 --> 00:53:22,096
+Ben bunu ne yapacağım? Bunun bir yanlışlık olduğunu bir kez tespit etmem lazım.
+
+218
+00:53:22,756 --> 00:53:29,076
+Çünkü çevresindeki pikselliğin ortasında bir pikselin bulunmasını insan gözü ne yapıyor burada baktığında?
+
+219
+00:53:29,076 --> 00:53:40,556
+Diyor ki, tamam burada bir parlaklık var ama diyor, aslında bunun hücre içi olması lazım.
+
+220
+00:53:40,796 --> 00:53:45,676
+Mesela şurada parlaklık var diyor. Aynı şurası gibi diyor.
+
+221
+00:53:46,000 --> 00:53:53,620
+Ama ben biliyorum ki onun çevrelendiği yapıyla beraber, ben şunu da çevreleyip bir hücre merkezi alayım diyor.
+
+222
+00:53:53,620 --> 00:53:57,040
+Yani kafadan yaptığımız bazı işlemler de var.
+
+223
+00:53:57,040 --> 00:54:09,040
+Veya bu tarz sadece RGB değerini değil çeşitli çevre piksel değerlerini de alıp, şuradaki future vektörü büyüyebilir.
+
+224
+00:54:09,076 --> 00:54:14,456
+Daha böyle hücre olup hücre olmadığını ayrıştırabilmek amacıyla arkadaşlar.
+
+225
+00:54:16,195 --> 00:54:17,275
+Gelelim.
+
+226
+00:54:19,315 --> 00:54:23,275
+Bu işi kolaylaştıracak başka yöntemler var mı demiştik.
+
+227
+00:54:23,275 --> 00:54:34,056
+Bir yaptığımız işlem sonucunda bulduğumuz sonuçların düzeltilmesi amacıyla post-processing yöntemlerini kullanabiliriz.
+
+228
+00:54:34,096 --> 00:54:34,295
+Peki.
+
+229
+00:54:34,931 --> 00:54:43,992
+Ben burada çalışırken, örneğin öz nitelikleri çıkarırken bana yardımcı olabilecek bazı işlemlerde yapabilir miyim?
+
+230
+00:54:43,992 --> 00:54:56,672
+Örneğin hücreler şu şekilde. Belki ön işlemlerle mesela buradaki gürültü giderilebilir. Ondan sonra filtreler uygulayıp geçişler yumuşatılabilir.
+
+231
+00:55:02,739 --> 00:55:18,460
+Filtre gibi işlemler yapılabilir ki ben daha sonra burada işleme aşamasına geçtiğimde biraz daha kaliteli sonuçlara ulaşabileyim diye. Bunlar da arkadaşlar preprocessing.
+
+232
+00:55:21,460 --> 00:55:27,719
+Preprocessing yani ön işleme yöntemleri deniyor.
+
+233
+00:55:28,916 --> 00:55:49,416
+Velhasıl benim burada odaklanmaya çalıştığım şu. Basit bir problem belirledik kendimize. Sonuçta buradan geldiği bir Thumbslide oluştu. Buna Thumbslide deniyor arkadaşlar. İngilizcesi Hall Slide. Onun içerisinde bir doktor vasıtası ile beraber.
+
+234
+00:55:50,867 --> 00:56:02,807
+Patch'ler belirledik. Çünkü bu patch'lerin belirlenmesi önemli. Üzerinde yoğunlaşılacak alanlar veya bazen de buna Region of Interest de deniyor.
+
+235
+00:56:02,807 --> 00:56:10,807
+Patch, biz patch de diyebiliyoruz. Görüntü aldık diyelim. Bu görüntülerin içerisinde...
+
+236
+00:56:12,340 --> 00:56:22,960
+Basitçe bu hastalıklı veya bunların tipleri de belli olabilir. İki tipindeki olabilir. Bunları da birbirinden ayırtabiliyoruz.
+
+237
+00:56:23,620 --> 00:56:34,500
+Farklı bir test vererek, örneğin bunun içinden hücreyi bul dediğimizde, hücrelerin çıkartılması ile ilgili farklı farklı algoritmalar çalıştırma şansımız var.
+
+238
+00:56:40,500 --> 00:56:50,599
+Aslında bilgisayar bilimi açısından o kadar çok değişik algoritma, yöntem, yaklaşım kullanıyoruz ki.
+
+239
+00:56:51,320 --> 00:56:58,019
+Hani bir başlangıçta sadece bizim baktığımız şu görüntüye bakarak ayırma problemine bakın.
+
+240
+00:56:59,139 --> 00:57:00,280
+Anında yapıyoruz değil mi?
+
+241
+00:57:00,800 --> 00:57:04,880
+Bir de bir de şu karmaşıklığı düşünün. Şuradaki karmaşıklığı.
+
+242
+00:57:07,871 --> 00:57:30,072
+Şuradaki karmaşıklığı düşün. Daha burada ele almadığım dünya kadar problem var. Anlatabiliyor muyum? Buradaki patchlerin oluşturulması, futurelerin, çevre piksellerle olan ilişkilerin oluşturulması. Burada her adımda neredeyse, burada, bunların kesilmesinde bile.
+
+243
+00:57:31,219 --> 00:57:41,299
+Artı oluşturulacak füçürlerde veya buradaki modelleme aşamasında veya segmentation asamasında ve post-processing aşamasında bakın.
+
+244
+00:57:42,499 --> 00:57:48,699
+Bizim basit gördüğümüz, yani örneğin bir doktora gidiyorsun, EKG yönlüsüne bakıyor veya şurada şu var.
+
+245
+00:57:50,359 --> 00:57:55,219
+Basit bir karar dediğimiz şeyin altında aslında birçok...
+
+246
+00:57:55,860 --> 00:58:13,200
+Algoritma çalışıyor. Birçok tecrübe çalışıyor. Bu algoritmalar tecrübelerle birleştirildiği zaman ki biz buna model eğitimi diyoruz. Tecrübeyle, tecrübeyi bir nevi aslında biz bilgisayara modellerle öğretmiş oluyoruz.
+
+247
+00:58:19,983 --> 00:58:33,503
+Geçmiş bilgilerini kaydediyor. Olumlu, olumsuz veya başka bir doktordan bir doktora şey de değişiyor biliyorsunuz. Kararlar da değişiyor. Niye? Çünkü bunlar farklı verilerle.
+
+248
+00:58:33,920 --> 00:58:59,440
+Aslında beyinlerini eğitiyorlar. Kimi diyor ki bu ara case değil, bu tam normal bir görüntü diyor. Çünkü daha önce rastladığı şeylerde bu tarz yapılanmaları, hücrelerin oluşabileceğini gösteriyor. Belli bir oranın altında olur. Başka birisi diyor ki hayır bu kesinlikle kanserli bir hücredir diyebiliyor. Çünkü o güne kadar görmüş olduğu, kendini eğitmiş olduğu yapılara tam benziyor.
+
+249
+00:59:00,275 --> 00:59:12,095
+Dediğim gibi insandan insana kararlar değişmekle beraber bazen baktığımızda temelde biz bunu birçok görüntüle yaptığınızı düşünün.
+
+250
+00:59:12,215 --> 00:59:20,355
+Şurada çok büyük görüntüler oluşuyor diyelim. Burada bir doktorun zamanını geçebileceği dünya kadar veri olmuş oluyor.
+
+251
+00:59:20,355 --> 00:59:26,355
+Ve zaman en değerli hazine bu devirde.
+
+252
+00:59:26,447 --> 00:59:45,287
+Çünkü bir şekilde doktorun şuralara dikkat et diyeceği, bakın şuralarda anormal durumlar var deyip ilgisini çekip yoğunlaşabileceği yardımcı bir sistem olsa, ki bu dersin amacı biraz doğru, birçok büyük bir zaman kazanmış olabiliyor.
+
+253
+00:59:53,012 --> 01:00:08,932
+Yaklaşık olarak bir saatte 12 hastaya, o 2 saatlik kısımda bir yerine 12 kişiye, hani %1200 kazanca sahip olmuş oluyor. Zamanını daha değerli olarak kullanma şansına sahip oluyor.
+
+254
+01:00:10,872 --> 01:00:16,572
+Saatimiz 10 ufak bir ara verelim, 15 dakikalık bir ara verelim. 10 çeyrekle başlıyoruz arkadaşlar.
+
+255
+01:15:24,884 --> 01:15:26,424
+Tekrar merhaba arkadaşlar.
+
+256
+01:15:30,131 --> 01:15:31,871
+Sesim geliyor herhalde.
+
+257
+01:15:32,011 --> 01:15:32,572
+Geliyor hocam.
+
+258
+01:15:33,191 --> 01:15:33,871
+Tamamdır.
+
+259
+01:15:38,420 --> 01:15:59,200
+Şimdi arkadaşlar, size vermiş olduğum bu pattern recognition ile alakalı özetini çıkartmanızı istediğim derli toplu bir makine öğrenmesine giriş yapısının içerisinde bu akışlar, demin anlatmaya çalıştığım akışların biraz teorik altyapısı güzel bir şekilde özetleniyor.
+
+260
+01:15:59,200 --> 01:16:03,720
+O yüzden bunu sizlerden özet çıkartmanızı istedim.
+
+261
+01:16:06,963 --> 01:16:18,043
+Feature'larda, Feature vektörlerin oluşturulmasında, bu Feature vektörlerin nasıl atlandırılacağında ki onu da hemen değinelim şurada.
+
+262
+01:16:19,283 --> 01:16:28,904
+Genel olarak biz şuradaki Feature vektörünü oluşturduğumuzda, şuradaki yapıyı oluşturduğumuzda bu iki boyutlu bir vektör haline gelmiş oluyor.
+
+263
+01:16:30,739 --> 01:16:57,659
+X'li yani bir matriz gösterimi yapıyor. Bilimsel yazılarda matrizler büyük yazılır arkadaşlar. Şu şekilde. Ve de boyutlarını belirtirken eleman R, N çarpı D şeklinde gösterilir. Peki bunu oluşturan vektörler nasıl gösterilir? Bunu oluşturan vektörler de küçük X'lerle gösterilir.
+
+264
+01:16:58,036 --> 01:17:21,935
+Eleman, R, A kaç boyutlu, D boyutlu şeklinde gösterilir. Bu bizim eğitim verimizin gösterilimi bir şekli arkadaşlar. Bizim bir de neyimiz var? Başka bir vektörümüz. Varsa şayet. O data setiyle alakalı etiketimiz de var.
+
+265
+01:17:25,908 --> 01:17:35,448
+R çarpı n boyutunda oluyor. Çünkü her bir sample için toplam birden n'e kadar toplam n sample'ımız var.
+
+266
+01:17:35,768 --> 01:17:43,488
+Öz nitelik sayımız ise d kadar burada. Bizim n çarpı d'lik matrisimiz oluşuyor.
+
+267
+01:17:43,488 --> 01:17:51,408
+Tabii siz bu eğitim verisini oluştururken çeşitli structure'lar oluşturabilirsiniz. En basiti mesela train.
+
+268
+01:17:52,307 --> 01:18:12,988
+Verisi oluşturduğunuz. Bunu bir ikisini ayrı bir yerde saklayabilirsiniz. Yine train içerisinde bir structure yapısı şeklinde saklayıp derli toplu bir şekilde tutabilirsiniz. Daha sonra bunlar alınıp modele veriliyor. Daha sonra sonuçlar elde edildikten sonra bu sefer de test için.
+
+269
+01:18:13,395 --> 01:18:24,835
+Kullanacağınız yapılara bakabiliyorsunuz. Testi verdiğiniz zaman elinizde sizin testin sonuçları yani Y-Predicted'lar. Predicted Y'ler yapılıp
+
+270
+01:18:25,203 --> 01:18:46,363
+Varsa eğer elinizde karşılaştırabileceğiniz test içinde sonuçlarınız, etiketleriniz burada bir karşılaştırma yaparak modelin başarım oranı, yüzdesel başarım oranı, yüzde ne kadar başarılı olmuş bu kısımda bunları değerlendirme şansımız oluyor arkadaşlar.
+
+271
+01:18:51,444 --> 01:19:00,444
+Önemli kavramlardan biri de bu modellerin nasıl çalıştığı, bu modellerde biz neleri yapabiliyoruz?
+
+272
+01:19:00,444 --> 01:19:08,084
+Baktığımızda burada bizim vektörlerimiz uzayda nasıl dağılıyor?
+
+273
+01:19:08,283 --> 01:19:12,004
+Öncelikle makine öğrenmesi neyi bulmaya çalışıyor?
+
+274
+01:19:12,144 --> 01:19:13,944
+Buna bir bakmaya çalışalım.
+
+275
+01:19:14,543 --> 01:19:16,564
+Şuradaki grafik üzerinden.
+
+276
+01:19:18,752 --> 01:19:27,992
+Baktığımızda, şuradaki her bir vektörümüz, örneğin bizim 3 boyutlu bir vektörümüz olsun.
+
+277
+01:19:27,992 --> 01:19:36,192
+İlk başta ne kullanmaya biz karar vermiştik? RGB değerlerini yani D'yi 3 olarak belirlemiştik.
+
+278
+01:19:37,131 --> 01:19:43,652
+Bu durumda baktığımızda bizim temelde 3 tane eksenimiz oluşuyor.
+
+279
+01:19:44,051 --> 01:19:48,332
+Bir vektör için RGB şeklinde.
+
+280
+01:19:49,371 --> 01:19:59,371
+Şimdi biz bir vektörün, yani şuradaki X vektörünü almış olduğu değeri,
+
+281
+01:19:59,371 --> 01:20:06,851
+koyalım R'da kaç almış, G'de kaç almış, B'de kaç almış gibisinin bunları bir yapmaya çalışalım şöyle.
+
+282
+01:20:07,604 --> 01:20:25,364
+Şöyle G'de aldığı değer, B'de aldığı değer şöyle çizdiğimizde tam şu noktada bir verimiz oluşsun. Bunun R'de almış olduğu değer şu. R değeri.
+
+283
+01:20:34,868 --> 01:20:36,788
+G'de almış olduğu değer de bu.
+
+284
+01:20:37,048 --> 01:20:48,208
+Baktığınızda bizim bu ilgilendiğimiz ana vektör şuradaki aslında 3 tane değerle ifade edilebiliyor.
+
+285
+01:20:48,208 --> 01:20:57,208
+Peki, ben, benim x vektörüm 3 tane, 3 tane değil de...
+
+286
+01:20:58,676 --> 01:21:15,576
+D tane olsa, 4 tane olsa diyelim. 4 taneyi çizmek kolay değil. Yani birbirine dik olarak ifade edilen şuradaki 3 tane farklı, birbirinden bağımsız değişkeni veya future çizebilmek mümkün ama
+
+287
+01:21:15,576 --> 01:21:21,876
+4 tane, 5 tane, 6 tane, 7 tane veya D tane
+
+288
+01:21:22,707 --> 01:21:27,688
+Yapabilmek biraz daha sana olarak kafada oluşturmayı düşünüyor.
+
+289
+01:21:27,688 --> 01:21:41,407
+Dikkat edin, biz burada her bir feature vektörünün birbirinden bağımsız olduğunu, yani bir pikselin R değeri alacağı G değerine bağlı değil veya G değeri B değerine bağlı değil.
+
+290
+01:21:41,867 --> 01:21:46,827
+Dolayısıyla onları dik çizmemizin nedeni birbirinden bağımsız olmalıdır.
+
+291
+01:21:50,836 --> 01:22:12,416
+Birbirinden bağımsız future'lara veya öz niteliklere. Buna da iki türlü şey diyor biliyoruz. Bir tanesi İngilizcesi future. Türkçe'de özellik veya öz nitelik olarak iki şekilde de kullanılabiliyor.
+
+292
+01:22:17,235 --> 01:22:25,415
+Sayısı arttıkça çizim olarak göstermek mümkün değil ama şunu söyleyebiliyoruz.
+
+293
+01:22:25,415 --> 01:22:29,755
+Aslında uzayda bir nokta teşkil ediyorlar.
+
+294
+01:22:29,956 --> 01:22:38,515
+Bunlar uzayda bir nokta teşkil ediyorlar ve merkez koordinatından belli bir uzaklıkta bulunuyorlar.
+
+295
+01:22:39,735 --> 01:22:43,655
+Bizim en temelde iki tane örneğe teliğimiz olsa.
+
+296
+01:22:44,340 --> 01:22:49,119
+Yani bu öz niteliklerinden biri future 1, diğerisi future 2 olsa.
+
+297
+01:22:50,239 --> 01:22:55,979
+Ve de aynı demin söylediğimiz gibi burada bizim 4 tane farklı sınıfımız olsa.
+
+298
+01:22:55,979 --> 01:23:09,979
+Biz şunu düşünüyoruz. Eğer benim 4 farklı sınıfım varsa bunları ölçüm yaptığım veya bunları birbirinden gerçekten ayıran,
+
+299
+01:23:12,884 --> 01:23:20,484
+Değerler, Future 1, Future 2 veya Future 3, 4, 5 için birbirinden farklılaşmaya başlayacak.
+
+300
+01:23:20,484 --> 01:23:31,004
+Bu farklılaşmanın sonucu olarak da düzlemde, eğer benim sadece iki tane Future'um varsa sadece bir düzlem göstermem.
+
+301
+01:23:31,144 --> 01:23:33,123
+Birbirine diki sadece bir tane.
+
+302
+01:23:33,520 --> 01:23:54,460
+Düzlemi ifade etmem yeterli. Üçüncü bir feature gelseydi bu sefer üç boyutlu uzay, dördüncüsü gelse dört boyutlu uzay düşünecektim. Bu feature'lar farklı sample'lar için farklı düzlem noktalarında yoğunlaşacaktır diye düşünüyorum.
+
+303
+01:23:54,460 --> 01:24:01,180
+Bakıyorum ki gerçekten birbirine benzer özellik, örneğin burası normal olsun.
+
+304
+01:24:01,684 --> 01:24:09,463
+Şurası hastalık bir tipi olsun. Şurası hastalık iki tipi olsun. Şurası hastalık üç tipi olsun.
+
+305
+01:24:10,804 --> 01:24:12,844
+Şu anda sınırları hiç düşünmeyin.
+
+306
+01:24:14,123 --> 01:24:26,123
+Baktığımda eğer etiket bilgim varsa tabii ki etiket bilgim bunların tiplerinin yıldızlar, kareler ve üçgenler etiket bilgileriyle bastırdığımı düşüneyim bunları.
+
+307
+01:24:28,287 --> 01:24:42,807
+Arasında belli bir düzen oluştuğunu görüyorum. Belli sınırların oluştuğunu görüyorum. Şöyle baktığımda örneğin hastalık 1, hastalık 2, hastalık 3 ve normalden arayan şöyle bir eğri var diyelim.
+
+308
+01:24:43,647 --> 01:24:48,787
+Veya normali diğerlerinden ayıran şöyle bir eğri var diyelim.
+
+309
+01:24:49,427 --> 01:24:57,487
+H3 hastalığını diğerlerinden ayıran şöyle bir eğri, H2'yi de diğerlerinden ayıran şöyle bir eğri olduğunu düşünüyorum.
+
+310
+01:24:57,487 --> 01:25:10,487
+Yeni bir test sample'ım gelse benim. Öncelikli olarak eğer ben buradaki karar sınırlarını, şurası karar sınırı olarak geçiyor, karar sınırı.
+
+311
+01:25:15,412 --> 01:25:20,631
+Ne yapabilirim? Eğer matematiksel olarak oluşturabilirsem yeni bir örnek geldi diyelim şuraya.
+
+312
+01:25:22,492 --> 01:25:23,872
+Ve etiketini bilmiyoruz.
+
+313
+01:25:25,891 --> 01:25:31,051
+Bakacağız. Konum olarak burada. Burası hangi sınırların içerisine giriyor?
+
+314
+01:25:32,512 --> 01:25:38,891
+H1'in sınırların içerisine. Bu x'e kararını h1 olarak veriyoruz.
+
+315
+01:25:38,891 --> 01:25:42,131
+Peki sorun nerede oluşacak?
+
+316
+01:25:42,547 --> 01:25:59,528
+Sorun karar sınırlarına yakın kısımlardaki, örneğin bir tane test sample'ımız geldi. X, test diyelim. Tam şu noktaya geldi. Acaba bu ne? Tam karar sınırında.
+
+317
+01:26:07,060 --> 01:26:21,020
+Çok büyük sorun değil ama tam karar sınırlarına yakın geldiğinde ise artık verdiğimiz kararın tipine göre hata oranlarımız işte bu sınırlara yakın yerlerde başlıyor.
+
+318
+01:26:21,140 --> 01:26:29,819
+O yüzden sınırların düzgün çizilmesi bir nevi oluşturan modelin kalitesiyle alakalı.
+
+319
+01:26:30,868 --> 01:26:43,667
+Artı neye bağlı? Train datalarının gerçekten oradaki dağılımı iyi temsil edip karar yüzeylerinin iyi seçilecek şekilde elde edilmesine bağlı.
+
+320
+01:26:43,667 --> 01:26:53,148
+Yani bizim başarımız bir toplanan sample'ların kalitesi veya gerçekten ayrıştırılabilirliği.
+
+321
+01:26:53,811 --> 01:26:58,652
+İki, modelin bu yüzey sınırlarını iyi çizmesine bağlı.
+
+322
+01:27:00,731 --> 01:27:06,672
+Şimdi bu kısmı anlayabildik mi arkadaşlar?
+
+323
+01:27:09,672 --> 01:27:20,471
+Eğer üç boyutlu uzayda çizecek olursam ben bunu, bu sefer de farklı renklerle çizeyim sınıfları.
+
+324
+01:27:24,275 --> 01:27:36,155
+Burada da farklı şeyler olsun. Dikkat edin. Bu sefer de arkadaşlar deminki gibi karar çizgileri değil, karar yüzeyleri oluşmaya başlayacak.
+
+325
+01:27:36,255 --> 01:27:42,275
+Çünkü üç boyutlu uzaydayız artık. Bunu birbirinden ayıran yüzeylerin tanımlanması lazım.
+
+326
+01:27:44,355 --> 01:27:51,835
+Farklı yüzeyler, sınırlar değil, yüzeyler ayırıyor artık. Yani plaka şeklinde diye düşünün. Şurada bir.
+
+327
+01:27:52,724 --> 01:28:08,623
+Öznü Teknikler varken diğer özünü Teknikler bu tarafta. Artık karar sınırı değil, bakın artık yüzeylere dönüşmüş oldu. Bunun da temel şeyi şu, iki boyutlu uzayda birbirini ayıran sınırlar çizebiliyorsun.
+
+328
+01:28:18,612 --> 01:28:23,131
+Örneğin 3 boyutlu uzayda yüzeyler 2 boyutludur.
+
+329
+01:28:23,672 --> 01:28:26,572
+Veya 4 boyutlu uzayda artık 3 boyutlu ayırıcılar.
+
+330
+01:28:27,412 --> 01:28:29,612
+5 boyutlu da 4 boyutlu ayırıcılar.
+
+331
+01:28:30,351 --> 01:28:31,572
+Göstermek gerekir.
+
+332
+01:28:31,572 --> 01:28:39,551
+Bu birazdan sizin kafanızda canlandırmanızla alakalı bu kavramları.
+
+333
+01:28:45,811 --> 01:28:48,492
+Ayırıcı yüzeyleri hyperplane.
+
+334
+01:28:49,752 --> 01:29:03,271
+Yani boyut arttıkça karar sınırları daha genel anlamda hyperplane'ler, çok boyutlu ayırıcı yüzeyler şekline gelmiş oluyor.
+
+335
+01:29:03,851 --> 01:29:08,611
+Matematiksel modeller de bunu sağlamış oluyor arkadaşlar.
+
+336
+01:29:14,260 --> 01:29:26,399
+Şimdi, tabii buradaki durum çok güzel ayrıştırılabiliyordu. Karayüzey sınırları birbirinden çok rahat ayrıştırılabiliyordu.
+
+337
+01:29:26,399 --> 01:29:36,819
+Fakat gerçekte tabii ki biraz daha ne arkadaşlar, biz burada bir matematiksel olarak bulabileceğimiz bir karayüzeyleri de belli tabii ki.
+
+338
+01:29:37,720 --> 01:29:39,399
+Fakat dikkat edin.
+
+339
+01:29:39,699 --> 01:29:50,719
+Bir karar yüzeyi oluşturduğumuzda o sınıfı kaplayan maksimum sınıfta birbirleri ayıran bir yüzey veya sınır bulmamız gerekiyor.
+
+340
+01:29:51,199 --> 01:30:02,979
+Bu yüzeyi çizdiğimizde bazen şurada görmüş olduğunuz gibi o yüzeyin içerisinde şuradaki gibi şu sınıftan geçmiş bazı ödünler vermeniz gerekiyor.
+
+341
+01:30:05,555 --> 01:30:19,815
+Dolayısıyla olabildiğince optimum çizseniz bile bazen sensörden kaynaklı, gerçekten birbirine yakın özellikler taşıyan öz nitelik dağılımlarından dolayı birbirlerinin içine geçme yaşanıyor.
+
+342
+01:30:20,355 --> 01:30:24,655
+Her ne kadar bu sınırları en iyi şekilde çizmeye çalışsanız bile.
+
+343
+01:30:25,716 --> 01:30:36,716
+Dolayısıyla bunu da verebilmek önemli. Çünkü demin de bahsettiğim gibi doktordan doktora gittiğinizde bile bazı kararlara...
+
+344
+01:30:36,884 --> 01:31:01,324
+Normal veya hasta diyebileceği gibi insanın kafasında da oluşmayabiliyor. Yani tecrübe çok önemli buradaki. Tam doğru cevap verilebilmiyor. Ara sınıflar oluşabiliyor, kararsız kalınan durumlar oluşabiliyor. Aynı şeyler bizim buradaki yapılarımızda da ortaya çıkabiliyor arkadaşlar.
+
+345
+01:31:02,003 --> 01:31:15,684
+Yani modeli eğittiğimiz verinin gerçekten bizim ayırmaya çalıştığımız sınıfları, ayırmaya çalıştığımız yapıları gerçekten ayırabiliyor muyuz? Bunlar önemli.
+
+346
+01:31:18,184 --> 01:31:22,003
+Şimdi bu kısımda...
+
+347
+01:31:25,747 --> 01:31:35,188
+Gelelim bir makine öğrenmesi veya pattern recognition sisteminin bileşenleri kısmına gelelim.
+
+348
+01:31:35,387 --> 01:31:51,867
+Genel olarak baktığımızda öncelikli olarak, önce bir problemin, gerçek dünya probleminin karar verilecek sistemin, yani analog sistemin bir belirlenmesi lazım.
+
+349
+01:31:52,832 --> 01:32:15,132
+EKG çekilecekse ne yapılıyor arkadaşlar? Sizin kalbinizde çeşitli atım sırasında potansiyeller oluşuyor, elektriksel potansiyeller. Bunlar çeşitli problar yardımıyla, vücudunuza konulan problar yardımıyla dış dünyadan, yani gerçekten vücudunuzdan kontinüüs, analog dünyadan sayısala çevrilmesi gerekiyor.
+
+350
+01:32:15,539 --> 01:32:27,539
+Bunu en iyi şekilde çevirebilecek sistem, data elde etme, datayı alma dediğimiz ilk kısım oluşmuşuz.
+
+351
+01:32:27,659 --> 01:32:29,479
+Gerçek dünya probleminden sonra.
+
+352
+01:32:31,260 --> 01:32:34,460
+Burada datayı nasıl elde edeceğimiz önemli bir soru.
+
+353
+01:32:35,100 --> 01:32:37,779
+Gerçekten potansiyellerin değerleri nelerdir?
+
+354
+01:32:38,340 --> 01:32:40,760
+Hangi değer aralıklarında ölçülmesi gerekir?
+
+355
+01:32:41,260 --> 01:32:42,420
+Anomaller var mı?
+
+356
+01:32:42,815 --> 01:32:55,435
+Neyse kullandığımız probun tipi nasıl olmalı? Veya bu probla mesela insan vücudunun arasına iletkenliği artırılacak bir şey sürülmeli mi? Veya ne kadar data toplanacak bununla alakalı?
+
+357
+01:33:09,844 --> 01:33:34,623
+Uygun örnekleme oranı, uygun genlik değerleri arasında kuantize edilmesi, bit derinliği, ondan sonra ne tip sensörlerini kullanılacak birçok parametre var. Bu data accusation kısmına geliyor. Daha sonra biz burada dataları elde ettik. İlk datalar şu şekilde, uzunca bir şekilde kayıt altına alınıyor.
+
+358
+01:33:35,507 --> 01:33:55,608
+İki, ön işlemlerin yapılması gerekiyor. Ön işlemlerde neler? Örneğin uygun segmentlere bölünmesi. Ondan sonra buradaki gürültülerin giderilmesi. Sonuçta bir alet gürültüleri de bunların üzerine bir şey. Hani saf bir şekilde şöyle kalp atım datasını elde etmiyorsunuz.
+
+359
+01:33:55,956 --> 01:34:17,956
+Bu data şöyle gürültülü bir şekilde yer alıyor belki. Ondan sonra şöyle gidiyor diyelim. Aşağı doğru gidiyor diyelim. Öncelikli olarak buradaki filtreleme ile 50 Hz'lik şiir şebeke frekansının düzeltilmesi gerekiyor çeşitli filtrelerle ki ben en sonunda şuradaki gibi güzel bir veriyi...
+
+360
+01:34:18,612 --> 01:34:25,512
+İşlenecek veriyi yapayım. Aynı şekilde test verisine de uygulanabilir olması lazım bu kısmı.
+
+361
+01:34:29,427 --> 01:34:56,108
+Dediğim gibi, onun dışında hani dedim ya, gerçekten bu veriler dümdüz böyle arka arkasına gelen bir şekilde değil. Bazen de bu filtreden dolayı böyle salınımlar olabiliyor. Bunların filtrelenmesi lazım. Belli frekansların yok edilmesi lazım. Görmek istemediğimiz sensörden kaynaklanan bileşenlerin yok edilmesi lazım.
+
+362
+01:34:56,819 --> 01:35:12,799
+Bir normalizasyon yapılması lazım. Örneğin sen eksi bir ile artı bir arasında mı çalışacaksın? Maksimum genlikler artı bire, minimum genlikler eksi bire çekilmesi gerekiyor. Bazen arada böyle şeyler olur.
+
+363
+01:35:13,199 --> 01:35:35,079
+Atımlar olabilir. Böyle aşırı böyle veya şu aşağı doğru göstereyim. Buraların temizlenmesi gerekir. Bu da outlier, aykırı noktanın uzaklaştığımız. Olabildiğince biz hatalardan normalde rastlanılmaması gereken öznetikleri önce bir elimine ediyoruz. İyice bir datayı temizliyoruz arkadaşlar.
+
+364
+01:35:41,171 --> 01:35:56,152
+Üçüncü kısım arkadaşlar Future Extraction olarak geçiyor. Future Extraction kısmında ise arkadaşlar, ben kendimi bir uzmanın yerine koyayım.
+
+365
+01:36:03,764 --> 01:36:29,283
+Bu segmentasyonu veya problem neyse tanımladığımız nasıl yapıyor? Nelerine bakıyor? Bir gözle bunu yaptığı zaman örneğin sen diyebilirsin ki şu derinliğe bakıyor ilk. Öncelikle bu derinliğe. Şu kiasinin genişliğine bakıyor. Veya şuradaki sürenin uzunluğuna bakıyor gibi.
+
+366
+01:36:29,971 --> 01:36:39,252
+O tip uzamsal, yani zaman boyutunda örneklenmiş olsa bile zaman domenindeki özelliklere bakıyor olabilir.
+
+367
+01:36:40,051 --> 01:36:46,111
+İki, bizim makine öğrenmesi veya bilgisayar mühendisinin ekstradan kazancımız şu.
+
+368
+01:36:46,531 --> 01:36:48,771
+İnsan gözü frekans domenine geçmiyor.
+
+369
+01:36:49,300 --> 01:37:09,560
+Bir doktor frekanstaki analizini yapabilmesi için veya bir sinyali farklı bir uzay değiştirilmesi için onu dönüştürmesi lazım. O dönüşümü gerçekleştirdiği zaman belli bazı frekanstaki var olup olmadığını, örneğin o QRS EKG işaretini görebilmesi için bir analiz toolu gerekiyor.
+
+370
+01:37:10,739 --> 01:37:25,039
+Bu da bizim avantajımız matematiksel olarak onu farklı uzaylarda, örneğin Fourier Transform'u yapabiliriz, Revlet Transform'u yapabiliriz, PCA gibi çeşitli öz nitelikleri elde edebiliriz.
+
+371
+01:37:25,039 --> 01:37:38,739
+Bir, Future Extraction deyince iki şeye ben özellikle odaklanmanızı istiyorum. Bir, gerçek anlamda ölçümsel bazı değerlerin, yani uzamsal dömende çıkarılacak belli zaman arasındaki,
+
+372
+01:37:38,739 --> 01:38:05,279
+Belli eğimler, birbirlerine oranlar, çeşitli öz niteliklerin arasındaki veya zamanlar arasındaki gibi kısımlar. Bir de matematiksel dönüşüm yöntemleriyle de future'lar çıkarılabilir. Örneğin bu EKG işaretinde hangi frekanslar baskın, hangisi ne kadar baskın, başka bir hastalık türünde olmayan frekanslar çıkıyor mu gibi matematiksel turları çıkarıp.
+
+373
+01:38:06,739 --> 01:38:30,259
+Yani datadan bu hastalığın tespitiyle alakalı öz niteliklerin çıkarılması. Bir de future selection denilen bir şey var. Bazen de data boyutumuz çok büyük olabilir. Daha doğrusu öz nitelik boyutumuz çok büyük olabilir. Bu öz nitelik boyutunun arkadaşlar azaltılması lazım. Neden?
+
+374
+01:38:30,752 --> 01:38:42,792
+Sonuçta biz en basitinden bir datayı X, Y datasının X, Y datasıyla karşılaştırırken basitçe birbirleriyle olan uzaklıklarını düşünelim.
+
+375
+01:38:42,792 --> 01:38:51,192
+Sadece öklediğinde olarak birbirlerinden uzaklıklarını düşünelim. X, Y, X, Y'nin karesini kökü diyelim.
+
+376
+01:38:58,355 --> 01:39:14,815
+Ne kadar büyükse burada o kadarlık çıkarma ve karesi alma işlemi yapılacaktır. Yani D'nin büyüklüğü buradaki basit bir öklit uzaklığının bile hesaplanmasındaki hesapsal yükü aktıracaktır.
+
+377
+01:39:16,756 --> 01:39:42,155
+Ve de makine öğrenmesi örneklerle anlatılmaz. Sadece bu kadar öküt gibi basit şeyler kullanılmaz. Çok daha farklı örnekler kullanılır. Yani kullanmış olduğum verinin büyüklüğü, yani future'nun büyüklüğü artı sample'nın büyüklüğü benim toplulak makinenin performansını ekleyecek. Sonuçta elimizde sınırlı bir kaynak var. Sınırsız bir işleme kapasitesi yok.
+
+378
+01:39:42,996 --> 01:39:52,115
+Şimdi bu adımdan sonra arkadaşlar bazı ayrıcı özelliklerin, yani D boyutlu uzaydayım ben.
+
+379
+01:39:52,115 --> 01:40:05,615
+D boyutlu uzay değil de belki daha az, D üstü diyeyim. D'den çok daha az bir boyut.
+
+380
+01:40:05,984 --> 01:40:17,423
+Zaten datayı ayırmama yeterli oluyorsa onu Future Selection dediğimiz boyut azaltma algoritmalarıyla yapabiliyoruz arkadaşlar.
+
+381
+01:40:18,944 --> 01:40:28,824
+Buna da karar verebilmek lazım. Özellikle DNA, bioinformatik ile alakalı verilerde bu çok önemli hale geliyor.
+
+382
+01:40:29,524 --> 01:40:56,384
+Daha sonra modelin seçimi ve eğitim. Her zaman eğiticili algoritmalar kullanılacak diye bir şey yok. Bazen de segmentation için başka algoritmalar kullanıyoruz. Unsupervised, unsupervised yöntemler kullanıldığı gibi ara yöntemler de gelişiyor. Örneğin semi-supervised learning denilen bir yöntem var. Yarı etiketli, yarı etiketsiz verilerle çalışıyor. Ve ensemble learning diyoruz.
+
+383
+01:40:57,524 --> 01:41:06,404
+Modellerle eğitip bunların kararlarını birleştiriyoruz gibi çeşitli stratejiler var. En sonunda da değerlendirme kısmına geliyoruz arkadaşlar.
+
+384
+01:41:07,044 --> 01:41:20,336
+Değerlendirmede de artık oluşturduğumuz modelin ne kadar doğruluğu ulaştığı, tekrar eğitilip eğitilmemesi gerektiği veya başka viri miktarlarına...
+
+385
+01:41:20,336 --> 01:41:26,376
+Veri miktarının arttırılıp arttırılmaması gerektiği gibi sorulara bu sefer yoğunlaşmaya başlıyoruz.
+
+386
+01:41:26,376 --> 01:41:41,796
+Veya şöyle diyoruz, acaba diyoruz veri miktarımız yeterli olsa bile çıkardığımız öz nitelikler mi acaba bu ayrışmayı veya istediğim karar sınırlarını veya sistem başarısını sağlamıyor?
+
+387
+01:41:48,595 --> 01:41:56,456
+Burada en önemli şey gerçekten verinin temsiliyeti arkadaşlar.
+
+388
+01:41:57,256 --> 01:41:59,836
+Temsili çok önemli bir kavram.
+
+389
+01:42:00,775 --> 01:42:08,376
+Gerçekten bizim ayırmamız için, veriyi sınıflandırma segmentin için gerçekten temsil kabiliyetine sahip mi?
+
+390
+01:42:10,635 --> 01:42:16,036
+Sorunuz var mı burada arkadaşlar? Sormak istediğiniz, tartışmak istediğiniz bir kısım var mı? Bu kısımlar önemli.
+
+391
+01:42:20,724 --> 01:42:31,484
+Kafanıza takılan, sormak istediğiniz bir kısım var mı? Kafanızda oluşmaya başladı mı artık yavaş yavaş makine öğrenmesinde ne amaçladığımız? [öğrenci].
+
+392
+01:42:37,043 --> 01:42:38,423
+Matuhan, geliyor mu sesin?
+
+393
+01:42:40,344 --> 01:42:41,463
+Evet hocam, geliyor.
+
+394
+01:42:42,384 --> 01:42:47,963
+Nasıl, kafanda oluşmaya başladı mı artık bir sistem modelinin nasıl oluşmaya çalıştı? Kafanda oluşan sorular var mı?
+
+395
+01:42:49,524 --> 01:42:50,724
+Şu an için yok hocam.
+
+396
+01:42:51,423 --> 01:42:54,104
+Tamamdır. [öğrenci], burada mısın?
+
+397
+01:43:04,916 --> 01:43:05,556
+[öğrenci]?
+
+398
+01:43:09,332 --> 01:43:14,812
+Şu anda anlaşılıyor mu makine öğrenmesi tarafı?
+
+399
+01:43:16,452 --> 01:43:17,212
+Tamam hocam.
+
+400
+01:43:17,212 --> 01:43:18,612
+Tamam.
+
+401
+01:43:24,307 --> 01:43:26,608
+Evet. [öğrenci] nasıl gidiyor?
+
+402
+01:43:28,908 --> 01:43:35,488
+Güzel gidiyor hocam. Ben zaten bu dönem kolektif öğrenme ve verim adancılığı ve bilgi keşfi derslerini de alıyorum hocam.
+
+403
+01:43:35,768 --> 01:43:37,788
+Çok güzel. Zaten belli bir altyapım var.
+
+404
+01:43:38,208 --> 01:43:45,328
+Evet hocam. Onlarla alakalı uygulamalarda yaptık ders sırasında ödevlerde. O yüzden az çok bilgi sahibiyim bu konuda.
+
+405
+01:43:45,328 --> 01:43:51,547
+Tamam. Tamam. Çok güzel. Şimdi devam edelim.
+
+406
+01:43:52,979 --> 01:44:15,059
+Preprocessing kısmını birazcık irdeleyelim burada. Preprocessing kısmında dediğim gibi neler yapılıyordu? Gürültü giderimi, filtreleme gibi, daha önce görmüş olduğumuz yöntemler, görüntü işlemede olsun, ondan sonra sinyal processing de olsun yöntemler burada kullanılabilir.
+
+407
+01:44:19,439 --> 01:44:40,619
+Biraz gürültülü diyelim. Artık hücre iç bölgelerle, hücre dışı bölgeler birbirlerinin benzerliği var. Burada mesela algoritmaların daha iyi çalışabilmesi için mesela bir yumuşak kenarları çok kaybettirmeden hücre, örneğin bir medyan filtrelemeyle kenarlardaki keskinliği kaybetmeden.
+
+408
+01:44:42,068 --> 01:44:52,648
+Hücre içi piksellerin yumuşak geçişliliği veya yumuşatılması sağlanabilir. Bu da segmentation'a yararlı olacak bir şeydir. Çünkü gürültüleri azaltmış olursunuz.
+
+409
+01:44:53,748 --> 01:45:04,028
+Onun dışında normalizasyon kavramı önemli bizim için. Örneğin, demin bahsetmiştim, artı bir, eksi bir aralığına çekebileceğiniz gibi datayı.
+
+410
+01:45:06,068 --> 01:45:15,807
+Belli bir ortalamasını yok edip, ondan sonra belli bir standart satmıyla Z-Transform'u gibi datayı normalize edebiliriz arkadaşlar.
+
+411
+01:45:16,528 --> 01:45:22,207
+Sıfır ortalamalı ve unit varyanslı hale de getirilir. Buna Z-Normalization deniyor arkadaşlar.
+
+412
+01:45:24,788 --> 01:45:27,747
+Veya belli bir aralığı getirebiliyoruz burada.
+
+413
+01:45:29,971 --> 01:45:50,471
+Onun dışında çeşitli outlier'ları atabiliyoruz. Bunun için örneğin malonimist distanstan yararlanıp belli bir sınır çerçevesinde dataların dağılması sağlanabiliyor. Çok detayına girmeyeceğim burada. Uygulamaya bağlı olarak.
+
+414
+01:45:51,699 --> 01:46:00,940
+Kullanılabilecek. Şurada bir covariance maddesi var. Belli sınıfların içerisinde, örneğin da tam dağıldı diyelim şu iki boyutlu uzayda şöyle.
+
+415
+01:46:08,735 --> 01:46:30,576
+Şurada aykırı noktaların oluştuğu durumlar, genel kovaryansların haricindeki noktalar silinip karar yüzeylerinin daha rahat çıkarılabilmesi, şuradan değil de daha düz bir şekilde ne kadar basit olursa bizim karar sınırımız matematik olarak değerlendirmemiz hesapsal yükümüz de o kadar azalacaktır.
+
+416
+01:46:33,203 --> 01:46:59,423
+Şimdi bir Future Extraction kısmına geleceğim arkadaşlar. Future Extraction kısmına genel olarak bir değinmeyi düşünüyorum. Bununla alakalı bazı önümüzdeki hafta burada PC'yi anlattıktan sonra biraz daha bu konuda yoğunlaşıp sizin de projelerinizde kullanabileceğiniz bazı yöntemleri de anlatıp
+
+417
+01:46:59,604 --> 01:47:05,244
+Sizleri biraz daha bilgilendirecek uygulamalarla devam etmek istiyorum.
+
+418
+01:47:06,324 --> 01:47:10,344
+Şimdi şu extraction kısmı demin de belirttiğim gibi.
+
+419
+01:47:17,492 --> 01:47:27,292
+Future Extraction kısmı, standart geleneksel makine öğrenmesi yöntemlerinde çok önemli bir kavram.
+
+420
+01:47:27,292 --> 01:47:37,492
+Biz ne yaparız öncelikli olarak? Önce Pre-processing, arkasından Future Extraction artı modelleme.
+
+421
+01:47:37,492 --> 01:47:43,148
+Şuradaki bu modelin başarısı Future Extraction'a çok bağlı.
+
+422
+01:47:43,636 --> 01:47:51,716
+Yani çıkaracağımız öz niteliklerin, ayrıştırıcıların, modelin sınırları çizebilmesindeki önemi çok fazla.
+
+423
+01:47:53,056 --> 01:48:00,176
+Yeni yöntemler olan, ben buna geleneksel veya konvensional.
+
+424
+01:48:03,859 --> 01:48:19,599
+Machine Learning dedik. Yenisinde arkadaşlar, Pre-processing'den sonra Deep Learning'de mesela Future Extraction kısmıyla model kısmı birleştirmiş oluyor.
+
+425
+01:48:19,599 --> 01:48:31,079
+Deep Learning diyor ki benim kendi iç mekanizmalarımda zaten ben konvolüsyonel yapılarla veya farklı yapılarla öz niteliğimi çıkaracağım diyor.
+
+426
+01:48:31,859 --> 01:48:50,539
+Ön niteliğimi çıkardıktan sonra ben bunu kendim bir şekilde modellerim. Eskiden, dediğim gibi, Hangi Future Extraction yöntemi kullanılacak, nasıl kullanılacak, nelere dikkat edilecek gibi üzerinde çokça çalışılması gerekiyordu.
+
+427
+01:48:52,180 --> 01:49:10,280
+Ama bu yeni yaklaşımlarda, deep learning gibi yaklaşımlarda, örneğin convolutional network veya evrişimsel yapay sinir ödüyorlar burada. Burada future extraction'ı biraz daha o kapalı kutunun içine itmiş durumdayız arkadaşlar.
+
+428
+01:49:15,347 --> 01:49:27,448
+Future Extraction deyince en bilindik yöntemlerden biri. Future Extraction ile şey çok karışılıyor. Ona da biraz değinmek lazım. Örneğin bir tane kalp datasından örnek vereyim.
+
+429
+01:49:39,731 --> 01:49:44,912
+Raw Data'yı da sınıflandırmak amacıyla kullanılır. Herhangi Future Extraction'ım yok.
+
+430
+01:49:46,752 --> 01:50:01,532
+İkinci bir yaklaşım şu olabilir. Üzerinden bazı ölçümler yaparak bunun uzunluğu, şuradaki ST dalgasının uzunluğu gibi bunları ayrı ayrı şöyle kaydettim diyelim.
+
+431
+01:50:01,672 --> 01:50:05,272
+Kendi Vector Motion. Buna da Future Extraction deniyor arkadaşlar.
+
+432
+01:50:06,100 --> 01:50:22,980
+Burada bir kafa soru işareti oluşuyor. Bir de demin de anlatmıştım. Örneğin sen buna bir FFT uyguladın. Şöyle FFT uyguladığımızda şöyle frekans içerikleri çıktı diyelim. Diyorsunuz birbirine simetrik.
+
+433
+01:50:23,699 --> 01:50:51,000
+Şurada 128 tane özellik çıkardım. Toplam 256 tane ama yarısını kullansam yeterli. Frekans içerini kullandım. Geldim burada 128 tane özelliği Future Extraction'la onu kullandım. Veya PCA gibi, LDG gibi çeşitli yöntemler var. Biraz sonra biraz deyince onlarla beraber dönüşümler yaptım. Daha az kat sayılar elde ettim. Bu da Future Extraction olarak adlandırılıyor.
+
+434
+01:50:51,956 --> 01:51:16,976
+Aslında buradaki kafa karışıklığı şu. Ben burada temel ölçümleri kullanabileceğim gibi bu da bir özellik çıkarıdır. Farklı uzaylara geçip çeşitli yöntemlerle, Wave'li, FFT, Short Time Fourier Transmode, onun dışında çeşitli ICA, değişik yöntemler var bu konuda veya PCA biraz sonra göreceğimiz diye.
+
+435
+01:51:18,515 --> 01:51:27,295
+Boyut sayısı korunabileceği gibi daha az elemanla ayrıştırıcılığı karşılaştırabileceğim alternatiflerim var.
+
+436
+01:51:28,375 --> 01:51:37,195
+Makine öğrenmesi yöntemlerinde genellikle Future Extraction, Dimension Reduction ile karıştırılır.
+
+437
+01:51:40,627 --> 01:51:48,287
+Dönüşüm yöntemlerinde örneğin bazı frekansları almayabilirsiniz. Sadece belli frekanslara yoğunlaşabilirsiniz.
+
+438
+01:51:48,847 --> 01:51:50,287
+Buraları ignore edebilirsiniz.
+
+439
+01:51:51,487 --> 01:51:55,987
+Dolayısıyla sizin future vektörünüz azalacaktır.
+
+440
+01:51:55,987 --> 01:52:03,187
+Future vektörün azalması tamam işlemsel bir yükümü kolaylaştırıyor.
+
+441
+01:52:03,988 --> 01:52:14,988
+Boyut da azaltıyor bana. Boyut azaltma da önemli bir kavram bu makine öğrenmesinde. Çünkü demin de söylediğim gibi hesapsal yükü ciddi manada rahatlatıyor.
+
+442
+01:52:21,363 --> 01:52:29,043
+Gördüğüm kadarıyla Future Extraction'ı genellikle Dimension Reduction olarak düşünüyorum.
+
+443
+01:52:29,043 --> 01:52:40,403
+Şimdi Dimension Reduction, boyut azaltma, Future Extraction'la da yapılabilir, Future Selection'la da yapılabilir.
+
+444
+01:52:41,652 --> 01:52:55,591
+Elinizde çok farklı boyutta datalar vardır. Onun çok daha veriyle veya öz nitelikte ifade etme şansımız var. İki türlü yöntemle de boyut azaltılabilir.
+
+445
+01:53:07,188 --> 01:53:25,087
+Yapısına izin vermesine göre boyut azaltılabilir. Future Selection ise zaten amacı bazı çok ayrıştırıcı, karay yüzeylerini çok daha iyi çıkarabilecek, daha az sayıdaki öz niteliğin çıkarılmasını amaçlıyor zaten.
+
+446
+01:53:29,460 --> 01:53:47,720
+Şimdi burada çok önemli bir kavram var. Makine öğrenmesinde. Curse of Dimension diyor. Yani bu çok boyutlu veya boyutların neyi diyor? Curse'ü nasıl çevirebiliriz? Laneti mi diye çevirebiliriz?
+
+447
+01:53:52,467 --> 01:54:07,068
+Tabii ki algoritmanın zaman ve hafıza gereklilikleri bunu biraz da zorunlu hale getiriyor. Boyut büyüdükçe bu işler zorlaşmaya başlıyor.
+
+448
+01:54:20,467 --> 01:54:33,087
+Bu konuda bir özentilik yapıda gidiyorsa sizin koyacağınız her bir öz nitelik size yani karesel, küp veya polinomsal olarak gittikçe artabilir bu.
+
+449
+01:54:34,307 --> 01:54:37,268
+Burada önemli bir kavram.
+
+450
+01:54:38,127 --> 01:54:44,408
+Okam'ın usturası diye bir filozofik bir yaklaşım var.
+
+451
+01:54:46,899 --> 01:54:54,940
+Mümkün olan en az şeyle sonucu bulmaya çalışın diyor.
+
+452
+01:54:55,039 --> 01:54:55,739
+Veya burada ne diyor?
+
+453
+01:54:56,420 --> 01:54:58,520
+Detentives are not to be multiplied with darkness.
+
+454
+01:54:58,760 --> 01:55:02,100
+Eğer gerek yoksa diyor, varlıkları arttırmayın diyor.
+
+455
+01:55:03,819 --> 01:55:08,480
+Gerek yoksa, varlıkları arttırmayın, işinizi zorlaştırmayın diyor.
+
+456
+01:55:11,539 --> 01:55:18,640
+En düşük potansiyele sahip olduğu yordan gider. Uzatmaz yol mu? Gibi de düşünebilirsiniz.
+
+457
+01:55:20,739 --> 01:55:29,260
+Burada Future Extraction'da dönüşüm amacıyla kullanabileceğimiz temel bazı yöntemler var arkadaşlar.
+
+458
+01:55:30,840 --> 01:55:34,800
+Bunlardan biri Principal Component Analizi arkadaşlar.
+
+459
+01:55:35,359 --> 01:55:59,520
+Principal Component Analiz, şeyde çok kullanılır. Makine öğrenmesinin en temel, küçük ekstraksyon yöntemlerinden biridir. Dikkat edin, etiketsizdir bu. Etiket bilgisi içermez. Linear Discreant Analiz, bunun benzer bir yöntemi. Etiketlidir. Etiketli datalardan sınıfları bilir, sınıfları bilerek çıkar.
+
+460
+01:56:02,931 --> 01:56:20,811
+Sınıf bilgisi yoktur. Normalde şu çizgiyi ve şu çizgiyi düşünmeyin arkadaşlar. İki tane öz niteliğimiz var. Future 1, Future 2 şeklinde. Bunlar birbirlerinin şu şekilde dağılmışlar.
+
+461
+01:56:28,435 --> 01:56:37,175
+Buradan ayırıcı bir yüzey çizmek istiyorsam şayet. Şu alttaki temel eksenleri düşüneyim.
+
+462
+01:56:39,815 --> 01:56:48,135
+Şurada da aslında bunların farklı sınıfları olduğunu düşüneyim şöyle. Ama bilmiyorum sınıf bilgim yok, etiket bilgim yok.
+
+463
+01:56:48,819 --> 01:56:58,639
+Baktığımda, eğer ben buradan bir ayıştırıcı yüzey çizecek olursam, sınıf bilgisini kullanmıyorum ise, şu sınıfta şu sınıfın iz düşümü şu şekilde.
+
+464
+01:56:59,899 --> 01:57:01,639
+Bir bilenin üzerine geçmiş oluyorlar.
+
+465
+01:57:02,639 --> 01:57:06,639
+Onun yerine ben şöyle bir yaklaşımda bulunuyorum.
+
+466
+01:57:06,639 --> 01:57:14,979
+Data'nın en çok değişim gösterdiği, daha doğrusu en dağılım gösterdiği.
+
+467
+01:57:15,060 --> 01:57:20,220
+Aksisleri bulabilir miyim? Öncelikle bu yönde. Bakın en çok bu aralıkta değişiyor çünkü.
+
+468
+01:57:21,580 --> 01:57:27,220
+İkinci en çok değiştiği aralık şu yönde. Burada değişim gösteriyor.
+
+469
+01:57:27,900 --> 01:57:34,880
+Gibi aşamalı aşamalı normalde kaç tane future kullanılıyorsa o kadar.
+
+470
+01:57:34,880 --> 01:57:41,020
+Değişim yönünü en yüksekten yani varyansın en büyük olduğu yönünde sıralamasıyla.
+
+471
+01:57:41,524 --> 01:58:01,704
+Bunları bir sıralamaya tabi tutuyor. Bunun için neler kullanıyor arkadaşlar? Öncelikli olarak covariance matrisi kullanıyor. Daha sonra bu covariance matrisine, yani şuradaki datalarından oluşmuş covariance matrisi bulunduktan sonra
+
+472
+01:58:04,307 --> 01:58:13,747
+Bu covariance maddesinin arkadaşlar, eigen value ve de eigen vektörleri çıkarılıyor.
+
+473
+01:58:13,747 --> 01:58:22,867
+Eigen vektörlerin yapısı bizim bu yeni koordinat sisteminin dağılımını verirken,
+
+474
+01:58:31,444 --> 01:58:47,664
+değişinti gösterdiğini gösteriyor. En büyük eigen veri en büyük değişimin olduğu yeni koordinat sistemin ilk elemanını gösterirken ikinci değer ise ikinci en çok değişintinin gösterildiği kısmı gösteriyor.
+
+475
+01:58:49,744 --> 01:58:58,884
+Linear Diskriminant Analiz'de ise bu Principal Component Analizleri falan çok detaylamasını anlatmayacağım arkadaşlar.
+
+476
+01:59:00,020 --> 01:59:10,660
+Ama temel çalışma mantığı budur. Bizim en çok değişinti gösteren yönümüzü bulabilmek. Burada biraz daha anlaşılır.
+
+477
+01:59:10,660 --> 01:59:20,680
+Mesela şöyle bir yapımızın olduğunu düşünelim. Tabi burada sınıf bilgileri var ama sınıf bilgilerinin olmadığını düşünelim.
+
+478
+01:59:21,980 --> 01:59:26,080
+Şimdi en çok değişinti gösterdiği yön bunun.
+
+479
+01:59:26,431 --> 01:59:29,051
+İlk elimizde iki tane eksen var böyle diyelim.
+
+480
+01:59:31,192 --> 01:59:36,612
+Noktalarda burada üçgen ve yıldız şeklinde, yuvarlak şeklinde gösterilmiş diyelim.
+
+481
+01:59:37,492 --> 01:59:42,751
+Biz bir karar yüzeyi çizecek olursak arkadaşlar, ne yapmamız lazım?
+
+482
+01:59:43,652 --> 01:59:46,152
+Şu şekilde bir karar yüzeyi oluşturmamız lazım.
+
+483
+01:59:53,779 --> 02:00:03,439
+Ayıramıyoruz. Fakat hani eğer tek bir threshold belirleseydik, bakın bu yönden ayıramıyoruz. Baya bir zayiat var.
+
+484
+02:00:06,659 --> 02:00:11,299
+Veya şöyle koysak, bakın burada zayiatlarımız var.
+
+485
+02:00:13,879 --> 02:00:20,919
+Acaba diyoruz, ön çek bunun, principal komponent analiz şuna bakıyor. Bu datanın en çok
+
+486
+02:00:21,587 --> 02:00:38,247
+Değişim gösterdiği bir değişimtisinin en yüksek olduğu yeri bulmaya çalışıyor ki, böylelikle basit bir sınırlandırmayla çok daha az kayıpla ben bunu ayrıştırabilir miyim bakıyor.
+
+487
+02:00:40,087 --> 02:00:42,707
+Şunu belki çizmem, silmem gerekecek belki.
+
+488
+02:00:50,260 --> 02:01:10,480
+Şurası Future 1, şurası Future 2'nin ekseniyle. Yeni eksenlerimiz de Future, yeni Principal Component diyoruz. PC 1 dediğimizde en çok değişiklik gösterilen yer. İkinci değişim gösterilen yer PC 2. Artık buradaki değişime bakıyorum.
+
+489
+02:01:18,612 --> 02:01:28,652
+Uzayı bizim için mesela şöyle buluyor. Bu da çokça kullanılan özelliklerinden biri.
+
+490
+02:01:29,952 --> 02:01:42,011
+Dineal diskonat analizisi arkadaşlar şunu sağlıyor. Ben bir projeksiyon yapacağım ama diyor. Yani yeni bir karar yüzeyi bulacağım ama diyor.
+
+491
+02:01:42,971 --> 02:01:44,851
+Amacım benim şu diyor.
+
+492
+02:01:44,916 --> 02:01:47,255
+Bir tane matematiksel model oluşturuyor.
+
+493
+02:01:48,956 --> 02:01:57,355
+Sınıflar arası, sınıflar arası, pardon, sınıf içi dağılımı en küçük diyeyim.
+
+494
+02:01:59,135 --> 02:02:01,515
+Sınıflar arası dağılımı en yüksekliği.
+
+495
+02:02:01,515 --> 02:02:05,755
+Ne demek bu arkadaşlar? Size bir soru.
+
+496
+02:02:07,456 --> 02:02:10,515
+Bir karar yüzeyi çizmek istiyorsunuz.
+
+497
+02:02:14,868 --> 02:02:21,028
+Sizin için en iyi karar yüzeyi çizilmenizi kolaylaştıracak yapı ne olur burada?
+
+498
+02:02:22,648 --> 02:02:24,308
+İki tane sınıf var elimizde.
+
+499
+02:02:25,888 --> 02:02:27,528
+Bir karar yüzeyi çizeceksiniz.
+
+500
+02:02:28,608 --> 02:02:33,128
+Bu karar yüzeyi çizmenizi en rahat ne sağlayabilir?
+
+501
+02:02:35,088 --> 02:02:36,688
+Cevap vermek isteyen var mı?
+
+502
+02:02:43,028 --> 02:02:48,967
+Ben eğer bir karar yüzeyi çizecek olsam burada arkadaşlar, şunu isterim.
+
+503
+02:02:49,967 --> 02:02:56,988
+Sınıfların olabildiğince kompakt olmasını, bir bileğe dağılmamasını isterim böyle.
+
+504
+02:02:56,988 --> 02:03:01,507
+Niye? Karar yüzeyi oluşturmak zorlanacaktır.
+
+505
+02:03:02,408 --> 02:03:09,427
+Dolayısıyla olabildiğince sınıflarımın bir yerde toplanmasını isterim.
+
+506
+02:03:10,068 --> 02:03:26,167
+Ve de buna sınıf içi dağılım en düşükte olacak. Sınıflar arası uzaklık ise maksimum olacak.
+
+507
+02:03:26,167 --> 02:03:32,587
+Böylelikle olabildiğince basit bir ayırıcı yüzey oluşturabilirim arkadaşlar.
+
+508
+02:03:36,372 --> 02:03:48,712
+Demek ki idealde en iyi ayrıştırıcılık sistemde sınıfın içi dağılım en düşük.
+
+509
+02:03:49,152 --> 02:03:51,832
+Yani birbirine benzer özellikler gösterecek.
+
+510
+02:03:53,932 --> 02:03:56,192
+Birbirlerinden de uzaklığı maksimum olacak.
+
+511
+02:03:56,671 --> 02:04:12,851
+Diner Disconnect Analiz biraz da bunu sağlamaya çalışıyor. Önce sınıf içi dağılımları bir hesaplıyor. Sınıflar arasını hesaplıyor. Daha sonra bir tane objektif fonksiyon veriliyor.
+
+512
+02:04:12,851 --> 02:04:21,511
+Between Class ve Within Class oranını maksimize etmeye çalışıyor.
+
+513
+02:04:21,844 --> 02:04:31,884
+Yani sınıflar arası mesafeyi yükseltirken sınıf içini azaltmaya çalışacak şekilde bir projeksiyon yüzeyi bulmaya çalışıyor.
+
+514
+02:04:32,484 --> 02:04:42,604
+Sırasıyla böyle deniyor, deniyor, deniyor. En yükseğini yakaladığı zaman dolayısıyla bir ayırıcı şey bulmuş oluyor.
+
+515
+02:04:42,604 --> 02:04:48,264
+Yüzey bulmuş oluyor. Burada onun biraz matematiksel temeli var. O anlatılıyor.
+
+516
+02:04:49,076 --> 02:04:52,036
+Siz biraz onun üzerinde yoğunlaşırsınız arkadaşlar.
+
+517
+02:04:53,855 --> 02:05:05,615
+Bunun dışında arkadaşlar, PCA, LDA dışında, ICA, onun dışında neler var?
+
+518
+02:05:06,055 --> 02:05:09,235
+Vavlet tabanlı, FFT tabanlı yöntemler var.
+
+519
+02:05:09,235 --> 02:05:15,416
+Ondan sonra geliştirilmiş farklı algoritmalar var.
+
+520
+02:05:15,828 --> 02:05:28,047
+Bizim kullanabileceğimiz son zamanlarda Curve LED'ler var. Çeşitli 1 boyutlu, 2 boyutlu, 3 boyutlu yapılar mevcut arkadaşlar.
+
+521
+02:05:30,728 --> 02:05:39,207
+Şimdi buradan ben bir devam edeceğim. Önümüzdeki hafta Future Selection'dan devam etmeyi düşünüyorum arkadaşlar.
+
+522
+02:05:41,684 --> 02:06:07,864
+Future Selections'dan kaldığımız yerde devam ederiz. Bir sonlandırırız. Ondan sonra verileri bir dağıtırız arkadaşlar. Özellikle şunu da söyleyeyim tekrar. Ben hafta içerisinde şu ders duvarına, Biyomedikal Ders Duvarına çeşitli konu başlıklarını PDF ile yapabilirim. Sizler de bunların üzerine çalışırsınız.
+
+523
+02:06:08,532 --> 02:06:12,572
+Acaba hangisini seçelim diye bugün veya yarın da hazırlayabilirim bunları.
+
+524
+02:06:14,792 --> 02:06:24,552
+Buraya pdf şeklinde yükleyeceğim. Siz sevdiğiniz konuları, ondan sonra çalışabileceğiniz konuyu biraz araştırın. Haftaya biraz hazırlıklı gelin arkadaşlar.
+
+525
+02:06:25,612 --> 02:06:31,552
+Ondan sonra haftaya konu dağıtımları olduğu için bunu kayıtla izleyen arkadaşlara da söylüyorum.
+
+526
+02:06:32,212 --> 02:06:40,832
+Konuları dağıtacağımız için ve bir başlangıç yapacağımız için herkesin katılmasını istiyorum. Kayıttan seyredelim diye düşünmeyin arkadaşlar.
+
+527
+02:06:42,472 --> 02:06:44,832
+Sorunuz var mıydı bu hafta için?
+
+528
+02:06:46,732 --> 02:06:49,192
+Hocam biz şimdi Feature Extraction gibi...
+
+529
+02:06:49,192 --> 02:06:53,832
+Katernok'un yaşının alakalı özeti kendinizin yapmasını istiyorum. Haftaya zaten...
+
+530
+02:06:54,931 --> 02:07:05,411
+Tamamlanmış olacak bu kısımda. Ben yarısına kadar anlatmış oldum. Önümüzdeki hafta bunu tamamlayıp artık proje üzerinden örnekler vererek ilerlemeye başlayacağız arkadaşlar.
+
+531
+02:07:08,371 --> 02:07:21,511
+Hocam, biz sorusu olan yoksa haftaya görüşmek üzere diyorum arkadaşlar. Kendinize çok iyi bakın. Bu sınav haftası olması nedeniyle biraz kısa tuttum dersi.
+
+532
+02:07:21,904 --> 02:07:29,484
+Öyle bir planlama yapmıştım. Yoğun olabiliyor çünkü bazı şeyler ama sizin fazla sınavlarınız yok herhalde.
+
+533
+02:07:36,787 --> 02:07:48,187
+Usi, Gesis maillerinizde kontrol etmeyi unutmayın. Bağlamayın. Kendi hesaplarınıza bağlamayı unutmayın arkadaşlar. Hepinize iyi günler. Kolay gelsin sınav haftasında.
+
+534
+02:07:50,027 --> 02:07:50,887
+Sağ olun hocam.
