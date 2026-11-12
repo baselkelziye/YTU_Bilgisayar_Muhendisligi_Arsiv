@@ -1,0 +1,3831 @@
+1
+00:00:26,356 --> 00:00:28,356
+Merhaba arkadaşlar, sesim geliyor muydu?
+
+2
+00:00:28,356 --> 00:00:30,356
+Geliyor hocam sesiniz.
+
+3
+00:00:30,356 --> 00:00:32,356
+Nasılsınız, iyi misiniz?
+
+4
+00:00:32,356 --> 00:00:36,356
+Çok iyi hocam, siz nasılsınız?
+
+5
+00:00:36,356 --> 00:00:46,356
+Teşekkür ederim, ben de iyiyim. Ne yaptık, geçen hafta tekrar yaptık mı? Kimler tekrar yaptı dersi?
+
+6
+00:00:54,100 --> 00:01:06,379
+Tekrar yapanınız var mı aranızda? Utanmayın arkadaşlar, çekinmeyin. Yani yaptıysanız yaptık deyin, yapmadıysanız yapmadık deyin. Ben ona göre review yapacağım bu hafta ya da yapmayacağım size bağlı.
+
+7
+00:01:06,379 --> 00:01:11,819
+Önerdiğiniz kitaptan okudum hocam. O yabancı bir adam vardı ismimi hatırlamıyorum ama.
+
+8
+00:01:11,819 --> 00:01:13,180
+Michael Barron'u diyorsunuz.
+
+9
+00:01:13,180 --> 00:01:14,060
+Aynen, aynen.
+
+10
+00:01:14,060 --> 00:01:21,060
+Tamam, çok güzel. Peki videoyu izleyen oldu mu? Dersin videosuna tekrardan.
+
+11
+00:01:24,884 --> 00:01:26,884
+Ben notlar üzerinden tekrar etmem.
+
+12
+00:01:26,884 --> 00:01:31,884
+Çok güzel. O zaman ben anlatırken senden not tutuyordun, doğru mu [öğrenci]?
+
+13
+00:01:31,884 --> 00:01:34,884
+Ben tutuyorum hocam.
+
+14
+00:01:34,884 --> 00:01:39,884
+Tamam. [öğrenci] sensin değil mi? Tamam.
+
+15
+00:01:39,884 --> 00:01:40,884
+Evet.
+
+16
+00:01:40,884 --> 00:01:49,884
+Aferin [öğrenci]. Hem derste not tutuyorsun hem de sonradan videoyu izlersen, o ders notuyla beraber çok daha faydasını görürsün.
+
+17
+00:01:51,156 --> 00:02:10,156
+Şimdi arkadaşlar, şöyle biraz bu kısımlarla Türkçe anlatayım. Türkçe anlatayım ki unutmayasınız. Şimdi ben dersi anlatıyorum, İngilizce anlatıyorum, yazarlar da anlatıyorum. Bu güzel bir şey.
+
+18
+00:02:10,156 --> 00:02:18,891
+Dersi takip ederseniz gözlerinize, sıkılırsınız, canınız sıkılır. Dersi çok fazla anlamayabilirsiniz.
+
+19
+00:02:20,020 --> 00:02:44,420
+Beni takip ederken aynı anda not alın. Lütfen çekinmeyin, not alın. Bakın bu dersi geçmek öyle kolay değildir. Zor bir ders, olasılık teorisi. Bütün derslerin temeli yani. Yani bu ders diğer derslerde ki, bu ders öğrendiğinizi diğer derslerde kullanacaksınız. O yüzden önemli. Tamam mı?
+
+20
+00:02:45,876 --> 00:03:00,876
+Şimdi, madem, şey, geçen haftadan belki kısa bir hızlı tekrar yaparız. Artık bir de Conditional Probability'lerden bahsedelim. Dur bir bakalım, neler anlatabiliriz?
+
+21
+00:03:04,876 --> 00:03:12,716
+Şimdi şunu, ders notlarımı açayım aynı zamanda, kendi ders notlarımı. Geçen hafta anlattıklarımız nerede?
+
+22
+00:03:13,587 --> 00:03:14,587
+Onu açalım.
+
+23
+00:03:20,020 --> 00:03:29,900
+Bir saniye gençler, ortamı hazırlıyorum. Sizin bu arada sormak istediğiniz bir şeyler var mı?
+
+24
+00:03:36,596 --> 00:03:40,596
+Hocam merhaba, bir talepte bulunabilir miyim? Tabi buyurun.
+
+25
+00:03:40,596 --> 00:03:47,596
+Hocam dersi İngilizce anlatıyorsunuz, bir yandan da not alıyoruz, hem anladıklarınızı çevirmek hem de not almak zor oluyor.
+
+26
+00:03:47,596 --> 00:03:55,596
+En azından önemli bulduğunuz, kaçırmamızı istediğiniz noktaları Türkçe olarak bir peşinden özet geçme imkanınız var mı?
+
+27
+00:03:55,596 --> 00:03:59,584
+Şöyle yapalım, anlaşma yapalım, şöyle yapalım.
+
+28
+00:03:59,584 --> 00:04:09,584
+Ben anlatırken çok önemli olduğunu, unutmamanız gerektiğini düşündüğüm yerlerde Türkçe açıklama yapabilirim.
+
+29
+00:04:09,584 --> 00:04:17,584
+Veya da siz bir soru sorarsınız, anlatırım, eğer anlamıyorsanız, tabii anlamadığınız yerleri tekrardan Türkçe olarak ifade edebilirim.
+
+30
+00:04:17,584 --> 00:04:23,584
+Belki benim İngilizcem iyi değildir, ondan anlamıyorsunuzdur, bilmiyorum. İngilizcem mi kötü?
+
+31
+00:04:23,584 --> 00:04:26,584
+Hocam ben kendime yapamadım.
+
+32
+00:04:27,007 --> 00:04:28,007
+Efendim?
+
+33
+00:04:28,007 --> 00:04:29,007
+İyi hocam İngilizceniz.
+
+34
+00:04:29,007 --> 00:04:30,007
+Evet, kötü.
+
+35
+00:04:30,007 --> 00:04:32,007
+Hocaları göre daha anlaşılır.
+
+36
+00:04:32,007 --> 00:04:35,007
+Efendim, en son söyleyeni duyamadım.
+
+37
+00:04:35,007 --> 00:04:39,007
+Diğer hocaları göre daha anlaşılır bir tarafız hocam.
+
+38
+00:04:39,007 --> 00:04:52,007
+Tamam, iyi sevindim yani duyduğuma. Diğer hocalar da inşallah daha iyi olacak. Şimdi şöyle düşünelim, ben hemen şuradan ders notlarını çıkartayım. Bir saniye gençler.
+
+39
+00:04:52,915 --> 00:04:59,556
+Şuradan hemen bir saniye. Şuradan nerede bu? Kompütür.
+
+40
+00:05:03,636 --> 00:05:05,388
+Pdf, wifi.
+
+41
+00:05:12,627 --> 00:05:17,627
+58-80. Yani şey yaparsanız...
+
+42
+00:05:32,660 --> 00:05:36,660
+Bir saniye.
+
+43
+00:05:39,160 --> 00:05:41,660
+Biraz böyle aksilikler oldu gençler.
+
+44
+00:06:04,339 --> 00:06:20,339
+Bir saniye. Şimdi biz geçen hafta ne yaptık? Ona bakıyorum. Şimdi biz geçen hafta en son neyi anlattım size? Permutations'ları anlattın mı? Frequency'yi.
+
+45
+00:06:20,339 --> 00:06:29,899
+Disjoint ve exhaustive'leri anlattınız. Ha öyle mi? Disjoint ve exhaustive'leri anlattım. Tamam. O zaman, efendim.
+
+46
+00:06:30,228 --> 00:06:32,728
+Operationları da anlattınız.
+
+47
+00:06:32,728 --> 00:06:37,728
+Operationları da anlattım, Union, Intersection gibi. Tamam, çok güzel.
+
+48
+00:06:37,728 --> 00:06:49,228
+Tamam, o zaman şöyle yapalım. Ben bu dosyalardan hemen indireyim birkaçını.
+
+49
+00:06:53,043 --> 00:07:05,343
+Ya da devam edeyim, hiç inler miyim? Dur bir saniye. Tamam. Şimdi neredeyiz? Bizim dosyanız şurada. Ben hemen açıyorum. Tamam. Ekran şehrini yapacağım şimdi.
+
+50
+00:07:10,612 --> 00:07:13,612
+Bir saniye gençler, nereden yapıyoruz ekran işehrini?
+
+51
+00:07:15,112 --> 00:07:17,112
+Screen Mirroring
+
+52
+00:07:25,684 --> 00:07:26,684
+Nalanı?
+
+53
+00:07:45,204 --> 00:07:50,384
+Bu neden çıkmıyor? Ekranı screen mirror yapamıyorum gençler ya.
+
+54
+00:07:56,019 --> 00:08:19,019
+Tamam, şu anda yapıldı. Böyle bir takım sıkıntılar çıkıyor, arada bir düzeltmek zaman alıyor. Evet arkadaşlar, bugün ayın kaçı? 15'i değil mi? Oktober 15, 2020.
+
+55
+00:08:20,180 --> 00:08:37,180
+Lastly, we have learned collectively exhaustive events, and also we have learned collectively mutually exclusive events. Okay, very good. Let me continue.
+
+56
+00:08:44,115 --> 00:08:45,115
+Ok, ok.
+
+57
+00:08:45,115 --> 00:08:50,115
+Collectively exhausted cells, let me say, collectively.
+
+58
+00:08:54,131 --> 00:08:54,971
+Sorry,
+
+59
+00:08:57,251 --> 00:08:58,291
+Exhaustive
+
+60
+00:09:01,011 --> 00:09:02,011
+Sets
+
+61
+00:09:03,131 --> 00:09:03,891
+Okay
+
+62
+00:09:05,091 --> 00:09:08,051
+It is this, a collection of
+
+63
+00:09:12,532 --> 00:09:37,532
+A collection, a collection of sets, let's say, a1, a2, a3, okay, dot dot dot, an, there are n sets, is said to be, is said to be, söylenebilir ki, is said to be, collectively,
+
+64
+00:09:41,556 --> 00:09:42,716
+Exhaustive
+
+65
+00:09:48,532 --> 00:09:50,532
+Ok, if and only if
+
+66
+00:09:54,580 --> 00:10:19,580
+Be careful, sometimes we write IWF. IWF means, if you hear IWF means, if and only if. If and only if, the union, we know the operations now, union, I1 to N, AII, okay?
+
+67
+00:10:19,923 --> 00:10:42,923
+We can write this like this, 1A1 union, A2 union, A3 union dot dot dot, union An, is equal to sample space. So their union become the sample space, okay? The partition collect mutually exclusive sets, mutually.
+
+68
+00:10:47,059 --> 00:10:50,379
+Exclusive Setsi.
+
+69
+00:10:50,379 --> 00:10:59,179
+It means that a collection of sets
+
+70
+00:11:02,484 --> 00:11:29,324
+that has, that have no common elements. Okay? In other words, for any combination, okay? A-i, A-k,
+
+71
+00:11:30,388 --> 00:11:44,827
+Let me write, A i1, intersection A i2, intersection A i k, sorry.
+
+72
+00:11:51,316 --> 00:12:18,572
+is empty set for any a i1, a i2, a i k. k is a number between 1 and n. Okay? And ek is a number also.
+
+73
+00:12:20,307 --> 00:12:33,267
+ve, they don't have any intersection. Last week we explained it. Ve normal. Ve, also, we have partition. Partition.
+
+74
+00:12:35,347 --> 00:12:47,244
+Okay, partition. What is partition? Partition is a partition, a partition of a sample space.
+
+75
+00:12:48,244 --> 00:13:09,676
+is a collection of, ok, sets, let's say a1, a2, dot dot dot, an, that are collectively,
+
+76
+00:13:12,820 --> 00:13:13,820
+Exhaustive
+
+77
+00:13:18,292 --> 00:13:20,932
+ve, mutlu olarak,
+
+78
+00:13:24,083 --> 00:13:25,083
+Exclusive.
+
+79
+00:13:27,083 --> 00:13:28,083
+What does it mean?
+
+80
+00:13:28,083 --> 00:13:38,083
+For example, look at now, this is sample space, this is event A, this is event B.
+
+81
+00:13:38,083 --> 00:13:47,083
+Okay, look at now here, event A intersection union event B.
+
+82
+00:13:50,323 --> 00:14:06,323
+Is it equal to sample space? No, it is not equal to sample space. Does a and b are not collectively?
+
+83
+00:14:10,484 --> 00:14:18,379
+Let me rewrite it now. Collectively exhaustive.
+
+84
+00:14:25,908 --> 00:14:27,908
+Bu bölüm ne?
+
+85
+00:14:36,916 --> 00:14:38,916
+Let's say this area is...
+
+86
+00:14:42,964 --> 00:15:09,644
+What is C? Can you write C in terms of A and B? Yes. What is C? A union B complement. Okay. On the other hand, A union B union C is what? Is sample space. Does. A, B and C.
+
+87
+00:15:10,515 --> 00:15:36,491
+O, O
+
+88
+00:15:39,091 --> 00:15:42,152
+Let's say A intersection B.
+
+89
+00:15:42,812 --> 00:15:43,351
+What about?
+
+90
+00:15:44,111 --> 00:15:44,451
+Sorry.
+
+91
+00:15:44,831 --> 00:15:47,231
+A intersection B intersection C.
+
+92
+00:15:48,192 --> 00:15:48,792
+Is it what?
+
+93
+00:15:48,912 --> 00:15:49,672
+It is empty.
+
+94
+00:15:50,052 --> 00:15:50,812
+Empty set.
+
+95
+00:15:51,491 --> 00:15:52,211
+Empty event.
+
+96
+00:15:52,451 --> 00:15:53,251
+Impossible event.
+
+97
+00:15:54,152 --> 00:15:54,771
+And also.
+
+98
+00:15:56,131 --> 00:15:56,932
+Sorry.
+
+99
+00:15:57,211 --> 00:15:57,851
+And also.
+
+100
+00:15:57,851 --> 00:15:59,412
+What about.
+
+101
+00:16:00,552 --> 00:16:04,192
+A intersection C.
+
+102
+00:16:04,611 --> 00:16:05,771
+Is also impossible.
+
+103
+00:16:07,091 --> 00:16:11,091
+A, intersection B, is also impossible.
+
+104
+00:16:13,091 --> 00:16:15,091
+Okay, very good.
+
+105
+00:16:16,091 --> 00:16:19,091
+A, B, intersection C.
+
+106
+00:16:20,091 --> 00:16:22,091
+Hocam, yanlış oldu gibi.
+
+107
+00:16:23,091 --> 00:16:32,091
+A, intersection B, intersection C, also not empty. Which one is wrong?
+
+108
+00:16:34,548 --> 00:16:38,548
+Düzelttiniz hocam, onu söyleyecektim.
+
+109
+00:16:38,548 --> 00:16:52,548
+B intersection C is also empty space, but A intersection B is not empty space.
+
+110
+00:16:52,548 --> 00:16:56,548
+Hocam, kolektivli exhaustif değil mi bunlar?
+
+111
+00:17:01,203 --> 00:17:26,804
+Sorry, let me complete, then I will ask you again. B and C are not mutually exclusive. Okay? Now I will define another event. Let's say D is A union B.
+
+112
+00:17:27,028 --> 00:17:29,028
+D is A union B.
+
+113
+00:17:29,028 --> 00:17:30,892
+Let me rewrite again.
+
+114
+00:17:35,859 --> 00:17:42,339
+What is D and what is C? C is A union B complement.
+
+115
+00:17:43,479 --> 00:17:43,659
+Okay.
+
+116
+00:17:44,599 --> 00:17:45,579
+What do you have?
+
+117
+00:17:46,619 --> 00:17:50,659
+C union B, C union D is sample space.
+
+118
+00:17:50,859 --> 00:17:51,519
+Okay, good.
+
+119
+00:17:52,239 --> 00:17:59,559
+Does C and D are collectively, what?
+
+120
+00:18:01,099 --> 00:18:02,039
+Tell me.
+
+121
+00:18:02,039 --> 00:18:02,899
+It's gonna see.
+
+122
+00:18:03,667 --> 00:18:14,795
+X-X
+
+123
+00:18:19,412 --> 00:18:24,364
+C and D are mutually
+
+124
+00:18:30,228 --> 00:18:31,228
+Mutually?
+
+125
+00:18:32,228 --> 00:18:33,228
+Hocam?
+
+126
+00:18:33,228 --> 00:18:34,228
+Exclusive.
+
+127
+00:18:34,228 --> 00:18:41,228
+A, B ve C, collectively exclusive mi yoksa exhaustive mi?
+
+128
+00:18:43,228 --> 00:18:49,228
+A, B, C are collectively exhaustive, A, B, C together.
+
+129
+00:18:49,228 --> 00:18:54,228
+But A and B together are not collectively exhaustive.
+
+130
+00:18:55,228 --> 00:18:56,228
+You see?
+
+131
+00:18:56,756 --> 00:19:04,756
+A and B, if you consider only A and B, they together are not collectively exhaustive, but? Alternatexsatür.
+
+132
+00:19:04,756 --> 00:19:09,756
+Which one? This is mutually exclusive.
+
+133
+00:19:09,756 --> 00:19:12,756
+Yo, şey B is sayfanın başında.
+
+134
+00:19:12,756 --> 00:19:15,756
+This one? Evet.
+
+135
+00:19:15,756 --> 00:19:22,756
+A union B union C is sample space, so A, B, C are collectively exhaustive.
+
+136
+00:19:24,147 --> 00:19:32,307
+Ok, exclusive, I wrote exclusive, sorry. Exhaustive, thank you, thank you.
+
+137
+00:19:35,827 --> 00:19:51,268
+Exhaustive, ok, thank you. Ok, so mutually exclusive, look at down, C and D, let me write this, what is C and what is D? This is sample space, this is A.
+
+138
+00:19:52,339 --> 00:19:54,339
+Bu, B.
+
+139
+00:19:54,339 --> 00:19:56,339
+What is C? C is this.
+
+140
+00:19:58,339 --> 00:20:00,339
+C is this.
+
+141
+00:20:07,508 --> 00:20:15,327
+This is C. What is D? This is D.
+
+142
+00:20:22,003 --> 00:20:24,003
+bu ok
+
+143
+00:20:24,003 --> 00:20:26,003
+c and d are
+
+144
+00:20:26,003 --> 00:20:28,003
+mutually exclusive and collectively
+
+145
+00:20:28,003 --> 00:20:30,003
+exclusive
+
+146
+00:20:30,003 --> 00:20:32,003
+what will we say
+
+147
+00:20:36,147 --> 00:20:37,527
+Terör,
+
+148
+00:20:40,788 --> 00:20:50,688
+C and D are together a partition.
+
+149
+00:21:04,180 --> 00:21:09,700
+Any question? Okay, there are algebra offsets.
+
+150
+00:21:24,500 --> 00:21:33,059
+Okay. The first one is associative exam, associative, associative.
+
+151
+00:21:36,019 --> 00:21:50,420
+Like, A union, B union, C is equal to A union, B union, C. You change the position of the parentheses if
+
+152
+00:21:50,836 --> 00:21:53,836
+Herkes operasyonlar dağılık.
+
+153
+00:22:01,172 --> 00:22:27,451
+And the other one is A intersection B intersection C or I can rewrite A intersection B intersection C. I changed the position of parentheses if all the operations are intersection. This is called associative. Okay? This is the algebra.
+
+154
+00:22:28,819 --> 00:22:38,819
+Algebra'ın kim bilmiyorsunuz? Ne demek Algebra? Algebra değil mi? Evet.
+
+155
+00:22:39,819 --> 00:22:42,819
+Ok. Distribütü.
+
+156
+00:22:49,683 --> 00:23:14,683
+distributive is this, A, let's say intersection A cap B cap C is equal to A cap B cap A cap C. Okay, this is distributive or here we distribute the cap over cap okay.
+
+157
+00:23:15,284 --> 00:23:42,284
+Or, sometimes we can distribute kap over kap. Kap means union, kap means intersection. So let's say kap union B intersection C can be written as A union B kap A union C.
+
+158
+00:23:42,516 --> 00:23:52,516
+Ok, this is distributive. And also there is De Morgan Rus, or Laos. Let's say De Morgan.
+
+159
+00:23:57,619 --> 00:23:58,763
+Loz
+
+160
+00:24:07,347 --> 00:24:29,347
+Ok, let's say, A union B complement can be written as A complement intersection B complement or A intersection B complement A complement union B complement.
+
+161
+00:24:29,347 --> 00:24:31,347
+You convert the...
+
+162
+00:24:32,276 --> 00:24:57,875
+union into the intersection operations, you convert the intersection operation to the union operation. This is very useful, especially for science, okay? For example, you are trying to solve this problem, you are trying to solve this problem, and you see that this problem is very difficult. Maybe this, you can solve this problem, this problem can be more simple, or can be simpler.
+
+163
+00:24:58,387 --> 00:25:04,028
+Bu problem, bu problem çok çok zor.
+
+164
+00:25:04,028 --> 00:25:06,107
+Bu problem, bu problem çok zor.
+
+165
+00:25:22,016 --> 00:25:35,884
+Bu, bu
+
+166
+00:25:51,059 --> 00:26:17,500
+So, for the probabilistic model, we will try to go from physical world to the probabilistic models. How can we find the probabilistic models for the physical problems or in the physical world? Okay? So, let me write going.
+
+167
+00:26:20,627 --> 00:26:22,067
+Goying from
+
+168
+00:26:25,332 --> 00:26:26,828
+Eksperiments
+
+169
+00:26:30,516 --> 00:26:35,516
+İntekler,
+
+170
+00:26:38,963 --> 00:26:40,963
+2 probabilistik modus.
+
+171
+00:26:47,796 --> 00:26:51,796
+Tamam, bu ne? Öncelikle, bir experiment yapmalıyız.
+
+172
+00:26:56,948 --> 00:27:02,708
+Experiment is a procedure. What we do, we follow a procedure.
+
+173
+00:27:06,579 --> 00:27:09,035
+ve görmek için bir bakış.
+
+174
+00:27:12,339 --> 00:27:14,339
+Ok, we will do observation.
+
+175
+00:27:14,339 --> 00:27:15,723
+Let me rewrite again.
+
+176
+00:27:27,316 --> 00:27:42,316
+Ok, observation. These observations, what we see, we observe, we observe, what? Outcomes, the outcomes.
+
+177
+00:27:53,107 --> 00:27:56,107
+of the experiment.
+
+178
+00:27:58,107 --> 00:27:59,107
+Example,
+
+179
+00:28:02,107 --> 00:28:06,107
+for example, we are tossing a fair coin,
+
+180
+00:28:11,028 --> 00:28:36,708
+coin, yıl, ok, yıl, to, possible, observation, one is hat, the other one is tail, ok, so you have the coin,
+
+181
+00:28:38,708 --> 00:28:43,708
+Bu, koin, ops, bu, koin, let's say.
+
+182
+00:28:51,508 --> 00:28:54,508
+ve say, bu part is,
+
+183
+00:28:56,708 --> 00:28:57,708
+head,
+
+184
+00:28:59,208 --> 00:29:01,708
+the other side is tail.
+
+185
+00:29:02,408 --> 00:29:12,508
+Okay, you draw and you see head or tail. Head and tail are the observations. Okay, what are these observations? These are our outcome.
+
+186
+00:29:12,908 --> 00:29:19,468
+And what else? We do experiment and we do also,
+
+187
+00:29:23,155 --> 00:29:27,655
+Biz de de de de de probabilistik modu yapıyoruz.
+
+188
+00:29:32,596 --> 00:29:43,596
+Bu, physical world. Probabilistic model, this is, probabilistic or simplified mathematical model.
+
+189
+00:29:48,756 --> 00:29:50,236
+Matematikal
+
+190
+00:29:55,796 --> 00:30:09,956
+To study the situation. To study the situation. What is our situation? The observations.
+
+191
+00:30:13,428 --> 00:30:18,988
+Orada outcomes of the experiment, the observations from experiment.
+
+192
+00:30:22,996 --> 00:30:24,492
+experiment.
+
+193
+00:30:27,571 --> 00:30:30,451
+or the outcomes.
+
+194
+00:30:33,091 --> 00:30:33,692
+Okay.
+
+195
+00:30:35,251 --> 00:30:40,531
+So, for the probabilistic model, we need to have some terminology, okay?
+
+196
+00:30:41,331 --> 00:30:42,611
+Let me explain.
+
+197
+00:30:43,251 --> 00:30:44,611
+The components of
+
+198
+00:30:50,483 --> 00:30:52,803
+of a probabilistik model.
+
+199
+00:30:59,443 --> 00:31:26,443
+What are these components? It has three components. The first one is, the first one, let me write my number one. The first one is outcome. You already know what outcome is. Outcome is, okay, one of the possible observations.
+
+200
+00:31:29,940 --> 00:31:34,796
+Possible Observations
+
+201
+00:31:39,412 --> 00:31:43,412
+Out of experiments.
+
+202
+00:31:46,996 --> 00:31:55,956
+Deneylerin sonucunda, çıkışında, mümkün olan gözlemlerinden birisine outcome diyoruz.
+
+203
+00:31:56,476 --> 00:32:10,456
+For example, when we throw a dice, the outcomes are one or two or three or four or five or six. There are six possible outcomes. Each one of them is an outcome.
+
+204
+00:32:14,771 --> 00:32:17,771
+Actually, we should try it.
+
+205
+00:32:17,771 --> 00:32:18,771
+Okay.
+
+206
+00:32:19,771 --> 00:32:21,771
+The second one is
+
+207
+00:32:21,771 --> 00:32:23,771
+Sample Space.
+
+208
+00:32:31,155 --> 00:32:58,655
+Outcome sample space denoted by Omega. Sample space is the set of all possible outcomes. Is the set of all possible outcomes. Okay, nice.
+
+209
+00:33:00,372 --> 00:33:01,372
+Çok iyi.
+
+210
+00:33:02,372 --> 00:33:03,372
+Ve ne daha?
+
+211
+00:33:03,372 --> 00:33:05,372
+Yeni bir şey,
+
+212
+00:33:05,372 --> 00:33:07,372
+bir şeyden de bilgilerimizin.
+
+213
+00:33:07,372 --> 00:33:08,372
+Bir de.
+
+214
+00:33:13,011 --> 00:33:16,011
+Event A.
+
+215
+00:33:16,011 --> 00:33:18,011
+What is Event A?
+
+216
+00:33:19,011 --> 00:33:21,011
+Event A
+
+217
+00:33:25,299 --> 00:33:29,799
+is a set of outcomes.
+
+218
+00:33:35,380 --> 00:33:44,440
+Not all outcomes, be careful. Here, all possible outcomes is sample space, set of outcomes. In other words,
+
+219
+00:33:48,339 --> 00:34:07,819
+We say a is subset of sample space. In other words, a implies sample space. Okay, let us do some terminology. Terminology is very important. Terminology for set and probability theory. Let me write here. Terminology.
+
+220
+00:34:12,307 --> 00:34:15,628
+For, set theory
+
+221
+00:34:20,403 --> 00:34:24,403
+ve Probabilit Teori
+
+222
+00:34:30,931 --> 00:34:52,091
+If you have any questions you can ask. Okay, let's say this is set theory, this is probability theory, this is symbol. Okay, very good.
+
+223
+00:34:55,635 --> 00:34:57,635
+İndissel teori,
+
+224
+00:34:57,635 --> 00:34:59,635
+the universe
+
+225
+00:35:03,411 --> 00:35:05,387
+or universal set
+
+226
+00:35:09,268 --> 00:35:13,768
+is called sample space in probability theory.
+
+227
+00:35:17,172 --> 00:35:22,172
+ve oğuga, or capital letter S.
+
+228
+00:35:22,172 --> 00:35:23,172
+Ok?
+
+229
+00:35:25,172 --> 00:35:27,172
+The element of a set,
+
+230
+00:35:30,172 --> 00:35:33,172
+of a set, is called outcome.
+
+231
+00:35:36,172 --> 00:35:38,172
+In probability theory.
+
+232
+00:35:38,172 --> 00:35:39,172
+Ok?
+
+233
+00:35:39,172 --> 00:35:44,172
+And outcome, sometimes we use e1, e2, or
+
+234
+00:35:44,788 --> 00:35:48,467
+E2 or O1, something like this. We can use letters.
+
+235
+00:35:52,628 --> 00:35:58,507
+What else? Subset. Subset of a sample space.
+
+236
+00:36:01,507 --> 00:36:04,988
+Is called event in probability theory.
+
+237
+00:36:06,788 --> 00:36:14,288
+And we use generally capital letter A or E, we use capital letter, okay?
+
+238
+00:36:15,488 --> 00:36:17,528
+And disjoint sets.
+
+239
+00:36:22,228 --> 00:36:34,228
+Ne olarak adlandırılır? Ne olarak adlandırılır?
+
+240
+00:36:34,228 --> 00:36:42,228
+Mutually exclusive events.
+
+241
+00:36:50,643 --> 00:37:05,643
+Ok, it means that event one intersection event two is empty. Oh, empty set.
+
+242
+00:37:09,523 --> 00:37:12,023
+Bazen, nal-set diyelim.
+
+243
+00:37:15,827 --> 00:37:39,243
+Ok, is called in probability theory, what is this? Impossible? Event. And it is denoted by phi, ok? There is one more. Universal set.
+
+244
+00:37:43,027 --> 00:38:08,027
+is also what we say it is also called certain event and it is also denoted omega. My question is this, what is, who will tell me, what is the complement of impossible event?
+
+245
+00:38:11,219 --> 00:38:13,219
+Hmm? Sample set.
+
+246
+00:38:13,219 --> 00:38:17,219
+Sample? Space. Space. Space.
+
+247
+00:38:17,219 --> 00:38:28,219
+Or, impossible, the complement of impossible event is the certain event, okay? Or the sample space. Okay, very good.
+
+248
+00:38:30,219 --> 00:38:38,219
+Nice. Okay. This is the general, uh, uh, conclusions. And now.
+
+249
+00:38:39,699 --> 00:39:06,955
+Let us focus on now the frequency. Last week, we stopped at partitions, yeah, and collectively exhaustive case. Okay, very nice. Now we can focus on
+
+250
+00:39:07,155 --> 00:39:12,155
+Fekücüsü, ok? Fekücüsü, ne? Fekücüsü, ne? Fekücüsü?
+
+251
+00:39:14,155 --> 00:39:15,947
+Ve, let me...
+
+252
+00:39:26,867 --> 00:39:28,867
+İzlediğiniz için bir şey.
+
+253
+00:39:38,483 --> 00:39:42,943
+A associated to a given experiment.
+
+254
+00:39:47,443 --> 00:39:58,443
+Aksiyom,
+
+255
+00:40:01,523 --> 00:40:16,443
+Same experiment n times and we denote.
+
+256
+00:40:21,643 --> 00:40:26,963
+Okay, we repeat the experiment n times and we denote by alpha.
+
+257
+00:40:29,331 --> 00:40:54,591
+The number of occurrences, the number of occurrences of the event, of the event a. Okay? So we have event a.
+
+258
+00:40:54,592 --> 00:41:16,592
+We have an experiment, we repeat the experiments n times, we observe the outcomes, and we count the number of events a, okay? So, our reputation is n times. What is n? n times, n times repetitions.
+
+259
+00:41:19,956 --> 00:41:30,855
+Okay, and time repetition. And alpha. Alpha is the number of occurrences.
+
+260
+00:41:43,315 --> 00:41:44,955
+Ne?
+
+261
+00:41:48,244 --> 00:41:57,844
+The number of occurrences of the event a.
+
+262
+00:42:02,547 --> 00:42:29,547
+Ok, I will ask you a question. What is the possible values of alpha? What is the possible values of alpha? You repeat the experiment n times. If each repeat results in event a, so the value of alpha is n. If you don't see event a at the outcomes of the experiments,
+
+263
+00:42:30,452 --> 00:42:46,452
+ve say the value of alpha is 0. Alfa is element of 0, 1, 2, dot dot dot, or 3, dot dot dot, n minus 1, and n.
+
+264
+00:42:54,260 --> 00:42:59,260
+Of course it is integer and it is the number of occurrences.
+
+265
+00:43:02,260 --> 00:43:04,260
+We have a little of occurrences.
+
+266
+00:43:06,260 --> 00:43:09,260
+The number of occurrences of a.
+
+267
+00:43:10,260 --> 00:43:13,260
+Alpha okay is called.
+
+268
+00:43:17,364 --> 00:43:18,795
+Absolut
+
+269
+00:43:23,347 --> 00:43:25,347
+Absolute Frequency
+
+270
+00:43:28,708 --> 00:43:30,708
+Ok, of the event A
+
+271
+00:43:36,884 --> 00:43:37,884
+Okay?
+
+272
+00:43:40,384 --> 00:43:41,804
+What is n?
+
+273
+00:43:47,411 --> 00:43:50,731
+ve maksimum nomborun okurrencisi.
+
+274
+00:43:54,612 --> 00:43:56,612
+maksimum,
+
+275
+00:43:56,612 --> 00:43:58,572
+number of
+
+276
+00:44:02,483 --> 00:44:07,243
+Okurrences, depends on the...
+
+277
+00:44:12,403 --> 00:44:38,804
+Ops, depends on the repetition, depends on the number of repetitions, okay? So this is the maximum, very nice. So who will tell me? Okay, let us do some remarks, okay, here.
+
+278
+00:44:40,148 --> 00:44:44,748
+Let us to remark, the number of occurrences,
+
+279
+00:44:52,980 --> 00:45:17,380
+Ok, this is the number of occurrences of event, event a, complement event is given by, what is this? If the number of occurrences of event a is alpha, what is the number of occurrences of the complement of a?
+
+280
+00:45:17,380 --> 00:45:20,364
+N minus alpha.
+
+281
+00:45:20,500 --> 00:45:23,820
+Evet, n minus alpha, exactly.
+
+282
+00:45:25,780 --> 00:45:34,460
+So this is total number of experiment repeti- repetition.
+
+283
+00:45:35,500 --> 00:45:46,700
+Total number of experiment repetition.
+
+284
+00:45:50,771 --> 00:46:08,271
+Okay, this is repetition. And what is alpha? Number of occurrences of a. Number of occurrences of a. Event a. Okay, very simple.
+
+285
+00:46:09,472 --> 00:46:18,572
+Now, what I will do, I will define a new number. Let us define a new number. Let's say,
+
+286
+00:46:23,731 --> 00:46:25,411
+ve numar
+
+287
+00:46:29,460 --> 00:46:49,036
+Let's say, f event a n, n time repetition, okay, for event a, is alpha over n is called relative,
+
+288
+00:46:54,291 --> 00:46:55,291
+Frequency,
+
+289
+00:46:55,291 --> 00:46:59,291
+Oralize it.
+
+290
+00:46:59,291 --> 00:47:03,291
+Frequency.
+
+291
+00:47:11,603 --> 00:47:14,603
+Ok? Of the event a.
+
+292
+00:47:20,340 --> 00:47:35,540
+Okay, look at now, F a n, it is alpha over n. This is, can be considered as a, the portion of occurrences.
+
+293
+00:47:38,020 --> 00:47:46,100
+Let me write in green, it's better. It means the portion
+
+294
+00:47:47,219 --> 00:47:51,219
+of occurrences
+
+295
+00:47:52,219 --> 00:47:53,219
+in which
+
+296
+00:47:57,619 --> 00:47:59,119
+event A.
+
+297
+00:48:04,628 --> 00:48:05,867
+Teks, please.
+
+298
+00:48:09,844 --> 00:48:16,844
+İzlediğiniz için,
+
+299
+00:48:16,844 --> 00:48:17,740
+ve
+
+300
+00:48:27,347 --> 00:48:29,347
+ve özel bir süreçte.
+
+301
+00:48:33,460 --> 00:48:39,460
+Okay, very nice. So let us consider the properties of relative frequencies.
+
+302
+00:48:41,140 --> 00:48:45,460
+Properties, oh yeah.
+
+303
+00:48:53,652 --> 00:49:05,652
+Probabilisiyonu, Relative Frequencil.
+
+304
+00:49:05,652 --> 00:49:07,652
+Okay.
+
+305
+00:49:07,652 --> 00:49:12,652
+The first observation is this.
+
+306
+00:49:12,652 --> 00:49:18,539
+0, F, A, N.
+
+307
+00:49:19,284 --> 00:49:46,423
+n less than 1. Look, what is the maximum value of n alpha? What is the maximum value of alpha is n? n over n is 1. So the maximum value of relative frequency is 1. Okay? The maximum value of alpha is n. So maximum value of relative frequency is 1.
+
+308
+00:49:47,188 --> 00:49:51,188
+Bu ne minimum değerliğe ve relative frequency?
+
+309
+00:49:57,268 --> 00:50:23,947
+0. So for any n element of natural numbers except 0. Positive natural numbers. Okay. And relative frequency of omega. Okay. What is this? What is its value?
+
+310
+00:50:28,211 --> 00:50:53,611
+Omega is the sample space. Bir mi? Of course it is one. Where Omega is the sample space. Okay, very good. And as F. Okay, let us write another thing. If.
+
+311
+00:50:55,027 --> 00:51:09,527
+A, intersection B is empty set. In other words, if A and B are mutually exclusive.
+
+312
+00:51:13,268 --> 00:51:17,768
+Exclusive or Disjoint.
+
+313
+00:51:21,907 --> 00:51:37,667
+Then, what we can write? Relative frequency, A intersection, sorry, not, yeah, A union B.
+
+314
+00:51:46,420 --> 00:52:01,859
+A'ın, B' is equal to, look, the intersection is empty, so you follow the procedure and you complete the experiment, you look at the output. The output could be A or could be B.
+
+315
+00:52:01,859 --> 00:52:13,539
+Okay, so their union we are looking at, so the frequency of A union B is equal to the sum of their individual frequencies.
+
+316
+00:52:14,291 --> 00:52:20,771
+let's say a n plus a f b n okay.
+
+317
+00:52:22,931 --> 00:52:33,251
+Example, for example, a union a intersection is sample space okay.
+
+318
+00:52:34,691 --> 00:52:35,971
+So,
+
+319
+00:52:39,539 --> 00:53:06,099
+A, sorry, A union A complement is in sample space, A intersection A complement is empty, and then what we can write? We can write, I will use heat this one, frequency of omega n is equal to frequency of A union A complement.
+
+320
+00:53:08,532 --> 00:53:27,731
+A union, a complement, can be written, can be simplified more using this property, the third property, so we can rewrite, because the intersection is empty.
+
+321
+00:53:31,668 --> 00:53:32,668
+Pulağız.
+
+322
+00:53:37,204 --> 00:54:00,403
+Ok, what is this? F Omega n. What is the value of F Omega n? This is equal to 1. Then, what we have, finally, the relative frequency of complement.
+
+323
+00:54:03,731 --> 00:54:09,731
+is equal to 1 minus frequency of event a.
+
+324
+00:54:09,731 --> 00:54:11,371
+Okay?
+
+325
+00:54:15,699 --> 00:54:16,699
+Very nice.
+
+326
+00:54:19,699 --> 00:54:21,699
+We can do example.
+
+327
+00:54:25,699 --> 00:54:26,699
+Example.
+
+328
+00:54:31,315 --> 00:54:34,187
+Bizi bir düzeye düşünelim.
+
+329
+00:54:47,251 --> 00:54:49,372
+Dice 60x
+
+330
+00:54:57,619 --> 00:54:59,219
+60 times, okay?
+
+331
+00:55:01,019 --> 00:55:04,819
+What are these? Let me show you.
+
+332
+00:55:06,119 --> 00:55:06,819
+Okay.
+
+333
+00:55:17,619 --> 00:55:42,119
+Ok, so what I write in MATLAB, for example, I flip the, I draw the dice 60 times, and these are the outcomes. So the first one is 1663513565416655534 and goes on. So these are the outcomes, ok?
+
+334
+00:55:43,155 --> 00:56:01,155
+Ok, I have an event, ok? Let me say, my event is this. Event is a set, ok? Set of elements. Let's say a, my event is this, 1. Ok?
+
+335
+00:56:03,155 --> 00:56:07,155
+So, what is the frequency of, relative frequency of event a?
+
+336
+00:56:12,532 --> 00:56:16,032
+F60.
+
+337
+00:56:17,232 --> 00:56:18,732
+What is this value?
+
+338
+00:56:19,332 --> 00:56:22,632
+I will count number of events a.
+
+339
+00:56:23,132 --> 00:56:29,532
+Number of a in the outcomes of the experiments and divide by n.
+
+340
+00:56:29,932 --> 00:56:31,232
+This is alpha.
+
+341
+00:56:32,532 --> 00:56:34,232
+a over n.
+
+342
+00:56:34,832 --> 00:56:36,032
+What is the value?
+
+343
+00:56:36,032 --> 00:56:37,332
+Let us count.
+
+344
+00:56:38,420 --> 00:57:04,599
+1, here is there is one, there is one, two, three, four, five, six, seven, eight, nine, ten, eleven, okay? So this is eleven over sixty. So this is approximately one over six.
+
+345
+00:57:04,788 --> 00:57:12,788
+So, did you see, when you throw the dice, what is the probability, what is the frequency you see?
+
+346
+00:57:12,788 --> 00:57:22,788
+One, when you throw six times, you will see at least one, one time.
+
+347
+00:57:22,788 --> 00:57:31,788
+Okay, when you throw six, you will see one, at least one time.
+
+348
+00:57:32,148 --> 00:57:57,148
+Yani 6 defa zara atıyorsunuz, en az 1 defa ne görmeniz lazım? 1'i görmeniz lazım. Bunu söylüyor. Peki gerçek hayatta böyle mi? Tabii 6 tane atıyorsun, hepsi 6 da gelebilir. Orası ayrı. Ama bunu sonsuz defa tekrarlarsan mesela, sonsuz defa zar attın, 1 gelme ihtimalinin 1 bölü 6 olduğunu göreceksin orada.
+
+349
+00:57:57,519 --> 00:57:58,519
+Evet, evet.
+
+350
+00:57:58,519 --> 00:58:13,067
+Evet.
+
+351
+00:58:05,811 --> 00:58:12,811
+Let's say this event is 1, 3, and 5. Okay? These are odd numbers.
+
+352
+00:58:18,400 --> 00:58:35,400
+Evet.
+
+353
+00:58:18,036 --> 00:58:22,036
+F, B, N.
+
+354
+00:58:22,036 --> 00:58:32,036
+What are these? We will count the number of B, number of outcome speed divided by N.
+
+355
+00:58:32,036 --> 00:58:45,036
+So what are these? We will count 1, 3 and 5. We already count to 1. What is the number of 1? It's 11 plus the value of 3.
+
+356
+00:58:47,284 --> 00:58:49,284
+3'e
+
+357
+00:58:49,284 --> 00:58:51,284
+1,2
+
+358
+00:58:53,284 --> 00:58:54,827
+3
+
+359
+00:58:57,844 --> 00:59:09,483
+4, 5, 6, 7, 8, 9,
+
+360
+00:59:17,172 --> 00:59:19,115
+I think it is Naina.
+
+361
+00:59:28,532 --> 00:59:34,412
+Ne? Is there any tree here? Okay, there is no tree. Is there more tree?
+
+362
+00:59:37,972 --> 00:59:39,884
+Okay, nein.
+
+363
+00:59:43,219 --> 00:59:46,219
+ve 5'e de.
+
+364
+00:59:50,132 --> 01:00:09,271
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+
+365
+01:00:13,396 --> 01:00:18,396
+ve 13, evet 13.
+
+366
+01:00:24,340 --> 01:00:41,324
+Divided by 60. What is the results? 20, 33 over 60. This is almost 1 over 2. Okay?
+
+367
+01:00:48,019 --> 01:00:50,019
+Bu, o ile değil numarlar?
+
+368
+01:00:54,036 --> 01:01:00,835
+2, 3, 5.
+
+369
+01:01:01,335 --> 01:01:03,135
+These are the prime numbers.
+
+370
+01:01:07,315 --> 01:01:34,315
+out of the Dice experiment. So, FCN is, you can count the number of 2's, 3's and 5's, and it is about 31 over 60, and it is approximately 1 over 2. Again, okay, you can count. So, these are the relative frequencies. Okay, very good.
+
+371
+01:01:35,827 --> 01:01:49,088
+Yeni bir süreç, bu anlamda büyük bir süreç.
+
+372
+01:01:59,795 --> 01:02:11,795
+Okay, large number of repetitions. Repetitions n. Okay, n is so big. The probability...
+
+373
+01:02:23,347 --> 01:02:25,259
+Can be estimated.
+
+374
+01:02:29,268 --> 01:02:35,028
+or computed, okay, estimated or computed by its relative.
+
+375
+01:02:39,891 --> 01:02:40,891
+Frequency.
+
+376
+01:02:46,371 --> 01:02:48,371
+Normaliz frequency.
+
+377
+01:02:48,371 --> 01:02:54,371
+Ok, sometimes we also call relative frequency as normalized frequency.
+
+378
+01:02:54,371 --> 01:02:57,371
+This is what I said here.
+
+379
+01:02:57,371 --> 01:03:02,371
+We can formalize this sentence.
+
+380
+01:03:02,371 --> 01:03:07,371
+Limit n goes to infinity.
+
+381
+01:03:07,371 --> 01:03:11,019
+Relative frequency of event a.
+
+382
+01:03:11,539 --> 01:03:20,012
+Ok, n goes to infinity, is equal to probability of event a. Nice.
+
+383
+01:03:27,092 --> 01:03:28,972
+Tamam, bu ne?
+
+384
+01:03:33,268 --> 01:03:34,908
+Probabiliteli,
+
+385
+01:03:39,603 --> 01:03:42,603
+of a. Okay?
+
+386
+01:03:43,903 --> 01:03:51,204
+Who proposed this formula? This formula is proposed by Elkindi, thanks to
+
+387
+01:03:55,443 --> 01:04:21,324
+Şimdi, ok? Ok, we know what frequency is, this is the probability, so you do experiments n times and these are the probabilities, ok? So there are probability laws and axioms. What are these probability laws and axioms? Ok, let us see.
+
+388
+01:04:22,483 --> 01:04:24,172
+Probability Lows
+
+389
+01:04:32,340 --> 01:04:40,340
+Probability, Lows, Axioms.
+
+390
+01:04:43,619 --> 01:04:47,539
+Okay, this is new title.
+
+391
+01:04:52,083 --> 01:05:16,083
+Okey, Bayes, gençler, niye söylemiyorsunuz, ara zamanı geçmiş? Bakın burada beraber ders yapıyoruz. Ara geçmiş ya, baya geçmiş, kusura bakmayın. Özür dilerim. Şimdi bir 10 dakika ara verelim, dinlenin biraz. Şimdi bu hoş olmadı. Sizinle bir anlaşma yapalım. Duyuyor musunuz beni?
+
+392
+01:05:16,628 --> 01:05:17,628
+Evet hocam.
+
+393
+01:05:17,628 --> 01:05:42,628
+Bakın şöyle bir şey yapalım. Yani zamanı geldiğinde, 10 dakika önce bana uyarın hocam işte ara zamanı geldi. Hemen ben de ona göre ara vereyim 10 dakika. Ama son derste uyarmıyorsunuz. Devam edeceğiz son derste. Çünkü sonuna kadar kullanmak istiyorum o 10 dakikayı. Tamam anlaştık mı? Şimdi 10 dakika ara verelim arkadaşlar.
+
+394
+01:05:43,635 --> 01:05:45,816
+Hocam dersleri 50 dakika mı işliyorsunuz?
+
+395
+01:05:46,816 --> 01:05:48,175
+50 dakika ders, 10 dakika.
+
+396
+01:05:48,175 --> 01:05:52,175
+Son ders 60 dakika, ilk 2 ders 50 dakika.
+
+397
+01:05:52,175 --> 01:05:53,175
+Tamam tamam.
+
+398
+01:05:54,175 --> 01:05:55,175
+10 minut büyük.
+
+399
+01:05:57,675 --> 01:05:58,476
+Tamam mı?
+
+400
+01:05:58,476 --> 01:06:02,436
+Bana unutmayın hatırlatmayı, unutmayın lütfen.
+
+401
+01:06:02,436 --> 01:06:04,596
+10 dakika sonra görüşelim arkadaşlar.
+
+402
+01:17:30,996 --> 01:17:55,996
+Sesim geliyor muydu? Okey. Geliyor mu sesi? Geliyor hocam. Geliyor hocam. Tamam, dersimize devam edebiliriz. Şimdi şeyden başlayalım. Terminolojiden bahsetmiştim değil mi ben? Evet.
+
+403
+01:17:56,787 --> 01:18:16,787
+Terminolojiden bahsetmiştik, şuradan bahsetmiştik. So we have the set theory, we have the probability theory, and we have the symbols. So these are the probabilistic models. And now it is good to check out the axioms. Okay? Let's say-
+
+404
+01:18:20,404 --> 01:18:24,284
+Bir second, let me arrange the figures.
+
+405
+01:18:24,564 --> 01:18:25,944
+Okay, probability.
+
+406
+01:18:27,484 --> 01:18:30,104
+Let me write here, probability lovers.
+
+407
+01:18:34,664 --> 01:18:36,744
+Which one I should choose?
+
+408
+01:18:36,944 --> 01:18:37,564
+Okay, this one.
+
+409
+01:18:38,564 --> 01:18:40,544
+Okay, let me write in new page.
+
+410
+01:18:41,144 --> 01:18:41,664
+Probability.
+
+411
+01:18:47,988 --> 01:19:10,847
+Olasılık, ve axioms, or sometimes we call axioms, okay, probability axioms. Okay, guys, do you know what theorem is, what axiom, do you know what axiom is?
+
+412
+01:19:15,572 --> 01:19:19,811
+Doğruluğu kanıtlanmayan, doğru kabul edilen tanımlar.
+
+413
+01:19:23,492 --> 01:19:27,992
+Their correctness is proved by observation, not matematically.
+
+414
+01:19:28,652 --> 01:19:34,891
+Axioms are the accepted things that are true by observation.
+
+415
+01:19:35,512 --> 01:19:37,532
+It is they are true by observation.
+
+416
+01:19:38,192 --> 01:19:41,492
+We don't prove them they are correct.
+
+417
+01:19:41,840 --> 01:19:45,840
+We just observe that they are always true. Okay?
+
+418
+01:19:47,840 --> 01:19:53,840
+So this is axiom. Okay? Let us write for an event a.
+
+419
+01:20:00,851 --> 01:20:03,652
+Ok, ve probability level.
+
+420
+01:20:14,484 --> 01:20:16,484
+Associates
+
+421
+01:20:18,484 --> 01:20:20,484
+Assigns
+
+422
+01:20:22,484 --> 01:20:23,484
+Ok
+
+423
+01:20:23,484 --> 01:20:25,420
+A Number
+
+424
+01:20:31,923 --> 01:20:32,923
+Number
+
+425
+01:20:36,724 --> 01:20:49,123
+Let's say this is probability a, such as, okay? The first one is axiom first. The first axiom.
+
+426
+01:20:52,724 --> 01:21:20,123
+Ok, the probability of event a is always greater than zero. This is the property of non-negativity. Non-negativity. So, the probability is always zero or greater than zero, ok? The probability cannot be negative.
+
+427
+01:21:22,100 --> 01:21:25,100
+Very good. And the second axiom is,
+
+428
+01:21:32,595 --> 01:21:39,595
+İzlediğiniz için, bu
+
+429
+01:21:39,595 --> 01:21:52,195
+bir şey, bu
+
+430
+01:21:52,195 --> 01:21:53,515
+bu
+
+431
+01:22:03,667 --> 01:22:05,667
+ve üçüncü aksiyom,
+
+432
+01:22:13,108 --> 01:22:31,788
+If A1, A2, dot dot dot, A n are, let's say, mutually exclusive events.
+
+433
+01:22:42,963 --> 01:22:50,324
+Ben, ok, who will explain me what mutual exclusive events are?
+
+434
+01:22:50,324 --> 01:22:54,724
+They don't have any intersection between them.
+
+435
+01:22:54,724 --> 01:23:00,724
+They don't have any possible intersection, ok, any possible intersection, ok.
+
+436
+01:23:00,724 --> 01:23:09,603
+Any combination of these sets will have no intersection, very good, thank you very much, ok.
+
+437
+01:23:10,068 --> 01:23:22,128
+Probabiliterle of, let's say, A1 union A2 union A3 A1.
+
+438
+01:23:22,728 --> 01:23:24,847
+I can write it like this also.
+
+439
+01:23:25,608 --> 01:23:33,347
+Probabiliterle union I1 to N, A1.
+
+440
+01:23:33,728 --> 01:23:35,488
+I can write it like this also.
+
+441
+01:23:38,420 --> 01:24:03,420
+And this is equal to probability a1 plus probability a2 plus dot dot dot probability an. Or we can write summation i equals 1 to n probability ai. Okay?
+
+442
+01:24:04,692 --> 01:24:30,851
+So, this is, if a1, a2, and an are mutually exclusive events, then we can write their union probability as the sum of their individual probabilities, okay? This is the property of additivity. This is additivity.
+
+443
+01:24:31,167 --> 01:24:41,167
+Bu aditivity axiom. Şimdi, 3 axioms, bu üç axioms, bu üç axioms, bu üç axioms, bu dağılımı yapabilir.
+
+444
+01:24:41,167 --> 01:24:53,167
+Ok, şimdi, let's look at the probabilities, properties of probability law. Ok, let me write, properties of,
+
+445
+01:25:02,452 --> 01:25:03,244
+Bu,
+
+446
+01:25:09,844 --> 01:25:20,564
+Okay, the properties of probability law. So, maybe our first property, let's say properties one. Okay.
+
+447
+01:25:23,043 --> 01:25:24,963
+The first property is about
+
+448
+01:25:40,243 --> 01:26:06,243
+R between 0 and 1. Okay? Proof. Can we do proof for this? Okay, very simple. What we know, A union A complement is sample space. Done.
+
+449
+01:26:07,923 --> 01:26:33,739
+A'ın A
+
+450
+01:26:34,676 --> 01:27:00,676
+3, ok? Using axiom 3. And also I have probability of sample space or certain event is always 1. This is from axiom 1, ok? 2, sorry, from axiom 2. And I combine 1 and 2 together.
+
+451
+01:27:02,452 --> 01:27:30,252
+I write, okay, probability a plus probability a complement is equal to one. Also from axiom one, what we know, this is also greater than zero, this is also greater than zero. So this is the sum of two
+
+452
+01:27:30,644 --> 01:27:44,804
+positive values, sum of two positive values is equal to one. It means, what does it mean? It means,
+
+453
+01:27:49,363 --> 01:27:57,363
+Probabilité a is less than or equal to 1.
+
+454
+01:27:57,363 --> 01:28:02,363
+And also it is greater than finally consequently.
+
+455
+01:28:02,363 --> 01:28:11,363
+Also it is greater than 0. 0 probability a 1.
+
+456
+01:28:11,363 --> 01:28:12,363
+Okay.
+
+457
+01:28:12,363 --> 01:28:16,363
+So all the probabilities are between 0 and 1.
+
+458
+01:28:18,100 --> 01:28:20,076
+İlk adı,
+
+459
+01:28:30,484 --> 01:28:32,484
+Bir second.
+
+460
+01:28:33,484 --> 01:28:36,484
+Second property is about the complement.
+
+461
+01:28:37,484 --> 01:28:38,484
+Okay.
+
+462
+01:28:38,484 --> 01:28:44,484
+Probabilit of complement A is equal to 1 minus probability A.
+
+463
+01:28:44,484 --> 01:28:46,484
+Okay, this is very simple to prove.
+
+464
+01:28:46,484 --> 01:28:47,484
+You can do it at home.
+
+465
+01:28:47,484 --> 01:28:48,484
+No problem.
+
+466
+01:28:48,484 --> 01:28:50,484
+I mean, it is easy.
+
+467
+01:28:50,484 --> 01:28:53,484
+So, Probability 3.
+
+468
+01:28:55,484 --> 01:28:56,428
+Okay.
+
+469
+01:28:57,619 --> 01:29:25,219
+In this property tree, let's say, the probability of impossible event is zero. Can you do proof for this? We can do it? What is this? What is the complement of sample space is? Sorry, complement of impossible event is the sample space.
+
+470
+01:29:26,260 --> 01:29:40,659
+So, phi union, phi is sample space. So, phi union sample space is sample space. Also, phi intersection sample space is empty.
+
+471
+01:29:43,500 --> 01:29:53,860
+From here, probability phi union phi is probability phi.
+
+472
+01:29:54,292 --> 01:30:16,292
+Plus probability phi complement, this is also equal to probability empty plus probability sample space and this is one, this is again probability samples plus one is equal to probability, what is this sample space? So probability,
+
+473
+01:30:21,779 --> 01:30:32,979
+Phe plus one is equal to one. So, probability impossible event is zero. Okay, we proved.
+
+474
+01:30:32,979 --> 01:30:42,680
+Hocam, ispat sorar mısınız bize de? Tabii ki. Kaçmaz yemeni. Sorarız tabii.
+
+475
+01:30:49,300 --> 01:30:53,300
+Property 4.
+
+476
+01:30:53,300 --> 01:30:59,300
+Okay, let's say this is the union, okay?
+
+477
+01:30:59,300 --> 01:31:15,052
+Probability, let's say, okay, let me write like this, probability a union b is equal to probability a plus probability b minus probability,
+
+478
+01:31:15,123 --> 01:31:40,484
+A intersection B. Okay? So, can we do that proof? Look, this is A. Let's say this is A. This is B. Okay? And what is this area? This area is A difference B. What is this area?
+
+479
+01:31:42,739 --> 01:31:46,500
+B, B, A.
+
+480
+01:31:46,500 --> 01:31:48,739
+Okay, this area is here.
+
+481
+01:31:51,891 --> 01:32:19,492
+bu area here, A intersection B, okay? Very good. So what we can write now? We can write A, we can write A, A difference B, union, what? A intersection B. So this is equals to A, okay?
+
+482
+01:32:21,268 --> 01:32:46,188
+You see? And what you see? Also here, we notice that, okay, let me write here, A difference B and A intersection B are disjoint. Did you notice?
+
+483
+01:32:49,332 --> 01:32:51,932
+ve ardaşılık, 10,
+
+484
+01:32:57,460 --> 01:32:58,460
+Çünkü,
+
+485
+01:32:59,960 --> 01:33:01,452
+biz yazarız.
+
+486
+01:33:07,155 --> 01:33:09,556
+Probabiliter A
+
+487
+01:33:13,011 --> 01:33:31,148
+equal to probability a difference b, because they are disjoint, plus probability a intersection b. Okay? In the same manner, we can also write,
+
+488
+01:33:35,155 --> 01:33:49,195
+aUnit b, look at here, note that, we can also write,
+
+489
+01:33:53,460 --> 01:33:57,228
+A, Union B.
+
+490
+01:34:00,595 --> 01:34:11,395
+Bakın now here, A union B. A union B can be written as A difference B union B.
+
+491
+01:34:11,395 --> 01:34:22,595
+Look, this part and B I will A difference B union B.
+
+492
+01:34:27,828 --> 01:34:29,828
+A, B, B
+
+493
+01:34:31,828 --> 01:34:32,780
+Wid
+
+494
+01:34:37,011 --> 01:35:01,771
+A difference B, let me write one second, okay here we notice that A difference B and B are disjoint, okay thus, we can write,
+
+495
+01:35:04,467 --> 01:35:15,467
+Probabilit A union B is equal to Probabilit A difference B plus Probabilit B.
+
+496
+01:35:15,467 --> 01:35:19,467
+Okay? This is my first equation.
+
+497
+01:35:26,260 --> 01:35:29,860
+Let's say this is one. This is my second equation.
+
+498
+01:35:33,460 --> 01:35:35,460
+Dessay, biz üstü sekund, pre?
+
+499
+01:35:40,404 --> 01:35:51,604
+From, Both, One and Two, We can write.
+
+500
+01:35:53,444 --> 01:35:54,564
+What we can write?
+
+501
+01:35:56,804 --> 01:35:58,004
+We can write,
+
+502
+01:36:01,427 --> 01:36:02,427
+Probabilit.
+
+503
+01:36:06,579 --> 01:36:33,451
+A minus probability A union B is equal to probability A difference B, okay, plus probability A intersection B minus,
+
+504
+01:36:34,100 --> 01:36:39,020
+Probabiliteli, here, minus Probabiliteli, A, Differensi B.
+
+505
+01:36:43,283 --> 01:36:45,283
+Minus Probability B.
+
+506
+01:36:47,283 --> 01:36:51,283
+Look at here, there is a minus here, I will delete this minus here.
+
+507
+01:36:51,283 --> 01:36:57,283
+Okay, so these two cancels each other because they will remove each other.
+
+508
+01:36:57,283 --> 01:36:58,283
+So,
+
+509
+01:36:59,283 --> 01:37:01,283
+what I do, I will
+
+510
+01:37:02,783 --> 01:37:08,283
+move these two terms to the right and I will move this term to the right.
+
+511
+01:37:08,783 --> 01:37:10,283
+So, what we have
+
+512
+01:37:12,404 --> 01:37:38,604
+Probabiliteli A, plus Probabiliteli B, minus Probabiliteli A intersection B, is equal to Probabiliteli A union B. We found it and then we proved. What is this? Proof is completed. Okay, the square means proof is completed, QAB. Okay.
+
+513
+01:37:38,931 --> 01:37:45,031
+Partition property, do you know what is partition is? We already explained it, do you remember?
+
+514
+01:37:47,031 --> 01:38:03,231
+Property, which property? This is property 5, 4, now property 5. Property 5. Partition property. Partition.
+
+515
+01:38:13,427 --> 01:38:18,747
+İzlediğiniz için,
+
+516
+01:38:24,532 --> 01:38:39,652
+Let's say for any wind and partition, let's say b1, b2, bn. We can write,
+
+517
+01:38:44,083 --> 01:39:01,083
+We can write probability of a is equal to probability, sorry, sum sum of k is equal to 1.
+
+518
+01:39:05,171 --> 01:39:14,171
+Oral, let's say i, i is equal to one to n, probability a intersection bi, okay?
+
+519
+01:39:17,171 --> 01:39:32,171
+Let me explain it very well. Look at now, this is my sample space, and this sample space has subsets, but these subsets will have no
+
+520
+01:39:33,203 --> 01:39:35,203
+Intersections, ok?
+
+521
+01:39:42,739 --> 01:40:09,420
+Tamam, bu a1, bu a2, bu b1, b2, b3, b4, b5, b6, b7, b8, b9, b10.
+
+522
+01:40:09,420 --> 01:40:10,219
+Tamam.
+
+523
+01:40:14,515 --> 01:40:17,515
+ve bu, eğer,
+
+524
+01:40:21,203 --> 01:40:23,203
+Event A, This is A.
+
+525
+01:40:30,452 --> 01:40:48,452
+This is event A. You see that B1, B2, Bn are mutually exclusive, plus they are collectively exhaustive, so they are partition. So look at now A has intersection by B2.
+
+526
+01:40:48,452 --> 01:40:58,060
+Event A has intersection, has an intersection with B3 and B4.
+
+527
+01:40:58,163 --> 01:41:17,579
+B5 may be very small, B6, B7, B8, B9, B10, but event a has no intersection with B1. Okay, so what is the probability of this?
+
+528
+01:41:20,819 --> 01:41:28,819
+Probabiliteli A'B'1'i 0, çünkü bu neyden bir intersection.
+
+529
+01:41:28,819 --> 01:41:33,819
+Okay, but what is the probability of A?
+
+530
+01:41:37,619 --> 01:41:39,619
+Çok kolay.
+
+531
+01:41:39,619 --> 01:41:41,619
+You see?
+
+532
+01:41:41,619 --> 01:41:43,619
+Oops.
+
+533
+01:41:43,619 --> 01:41:47,019
+Shut up.
+
+534
+01:41:50,931 --> 01:42:15,331
+Okay. So, all these intersections are, define the probability of A. So, what we can write here, this is probability, this is equal to probability, B2, intersection A.
+
+535
+01:42:16,051 --> 01:42:42,731
+Okay, or we can simplify more. Okay, okay, okay, okay, okay, okay, B2 intersection A, plus probability B3 intersection A, plus dot dot dot, probability B9 intersection A, plus probability,
+
+536
+01:42:43,091 --> 01:43:09,492
+B10 intersection A, okay? But what we have, we have probability of A intersection B1 is 0, okay? So we can write the summation i is equal to 2 to n probability i intersection B1 is probability A, okay?
+
+537
+01:43:10,996 --> 01:43:14,155
+Is it clear now? Hocam bir şey soru.
+
+538
+01:43:16,396 --> 01:43:38,476
+Let us do proof. Proof is very simple. We can write A is A intersection B1 union, A intersection B2 union dot dot dot union A intersection Bn.
+
+539
+01:43:38,739 --> 01:43:41,739
+Ok? And note that...
+
+540
+01:43:45,203 --> 01:43:53,963
+A intersection Bi and A intersection BJ are disjoint.
+
+541
+01:43:56,844 --> 01:44:02,243
+For any, I not equal to J. Okay?
+
+542
+01:44:03,564 --> 01:44:12,564
+So, I can write from axiom 3, probability I is equal to probability I intersection B1.
+
+543
+01:44:12,752 --> 01:44:22,971
+Plus, probability i intersection b2, plus, dot dot dot, probability i intersection bn. That is all.
+
+544
+01:44:24,052 --> 01:44:24,252
+Okay?
+
+545
+01:44:24,811 --> 01:44:27,132
+Any question?
+
+546
+01:44:27,912 --> 01:44:28,912
+Hocam, sesim geliyor mu?
+
+547
+01:44:30,752 --> 01:44:38,672
+Okay, very good. This is the partition property. There is also one extra property. It is the monotonicity property.
+
+548
+01:44:39,859 --> 01:44:44,220
+İçeride 6.
+
+549
+01:44:47,667 --> 01:44:53,667
+Monotonicity property.
+
+550
+01:44:55,268 --> 01:45:10,067
+Okay, let's if a is the subset of b, then we have probability of a is less than or equal to probability of b.
+
+551
+01:45:12,667 --> 01:45:14,167
+You have event b.
+
+552
+01:45:15,699 --> 01:45:24,699
+ve bu event a. Event a is inside b. Tamam. Do you have any questions?
+
+553
+01:45:26,699 --> 01:45:28,699
+Hocam, sesimiz geliyor mu?
+
+554
+01:45:30,699 --> 01:45:36,699
+Tamam. So, what we can write, proof,
+
+555
+01:45:39,699 --> 01:45:40,587
+if
+
+556
+01:45:41,555 --> 01:45:55,315
+A is subset of B, then we write B is A union, sorry B difference A.
+
+557
+01:46:00,051 --> 01:46:24,451
+What does it mean? This is a. What is this area? This area is b difference a. b difference a and a together gives you event b. So event b can be written like this. And also b difference a and event a are disjoint. So we write.
+
+558
+01:46:26,355 --> 01:46:54,188
+A and B difference A are disjoint, mutually excessive, then we can write, okay? Probability from axiom 3, additivity axiom, probability B is equal to probability A.
+
+559
+01:46:54,292 --> 01:47:20,940
+plus probability B difference a, okay? Bu, is here from axiom one? This is the probability, and from axiom one, this is always greater than zero. Okay, this is greater than zero. So what you see, if this is the positive number,
+
+560
+01:47:21,043 --> 01:47:25,043
+Ve bu eklik, bu eklik, bu eklik, bu eklik, bu eklik.
+
+561
+01:47:32,340 --> 01:47:48,119
+From here, we notice that probability a is less than or equal to probability b. Okay, who raised his hand?
+
+562
+01:47:53,011 --> 01:47:57,011
+sorun nedir?
+
+563
+01:47:57,011 --> 01:48:00,011
+Hocam sesimiz geliyor mu?
+
+564
+01:48:00,011 --> 01:48:06,667
+Alo? Arkadaşlar ses vermiyorsunuz. Geliyor mu sesim?
+
+565
+01:48:13,076 --> 01:48:14,536
+Sesiniz gelmiyor.
+
+566
+01:48:28,404 --> 01:48:30,404
+Geliyor mu sesim?
+
+567
+01:48:32,404 --> 01:48:34,404
+Sesiniz geliyor hocam, siz bizi duyuyor musunuz?
+
+568
+01:48:39,091 --> 01:48:58,091
+Gençler, geliyor mu sesim? Geliyor hocam. Tamam, sıkıntı oldu bilgisayarda. Şimdi düzelttik. Tamam, harika. Şimdi gençler, bir 10 dakika ara verelim. Bir arkadaşınızın sorusu vardı. Kimin sorusuydu o? Ne soruydu?
+
+569
+01:48:58,091 --> 01:49:02,091
+Bu Perkiş'in kısmında bir soru soracaktım da sesimiz size gelmiyordu hocam.
+
+570
+01:49:02,176 --> 01:49:03,775
+Neyi soracaktım?
+
+571
+01:49:03,775 --> 01:49:10,096
+Hocam, bu partition'da bu B'lerin mutual exclusive olması zorunlu mu? Yani bu şart sağlaması için?
+
+572
+01:49:10,096 --> 01:49:24,336
+Partition bak, hem collective ile exhaustive olacak, yani birleşimleri sample space olacak, hem de birbirleriyle kesişmeyecek. Yani mutual exclusive olacaklar. Bu iki şart sağlamazsa partition olmuyor.
+
+573
+01:49:24,336 --> 01:49:26,336
+Tamam hocam.
+
+574
+01:49:26,399 --> 01:49:39,199
+Partition ne demek? Parçalıyorsun bak. Şimdi sample space'i parçalamışsın B1'lere ve B'lerin hiçbiriyle birbiriyle kesişimi yok. Tamam? Tamam hocam.
+
+575
+01:49:39,199 --> 01:49:53,995
+Buna partition diyoruz. Eğer kesişimler olsaydı, B'ler birbirleriyle kesişseydi, o zaman partition olmayacaklar. Çünkü karşılıklı olan intersection'ları boş gibi olmayacaktır.
+
+576
+01:49:54,355 --> 01:49:56,355
+Tamam.
+
+577
+01:49:57,355 --> 01:50:00,355
+Biraz teorik olduk galiba bu dersen.
+
+578
+01:50:01,355 --> 01:50:13,355
+Şimdi bu monotoz, bir şey çok önemli. Bak, A, B'nin alt kümesi ise dolayısıyla A'nın olasılığı B'nin olasılığından küçüktür.
+
+579
+01:50:13,355 --> 01:50:19,355
+Çünkü daha az olma olasılığı var. Çünkü onun öbürünün alt kümesi. Bu bir property.
+
+580
+01:50:19,539 --> 01:50:27,539
+Bu bir çeşit önemli yani. Bunu bir dikkate alırsınız. Şimdi bir 10 dakika ara verelim.
+
+581
+01:50:27,539 --> 01:50:33,355
+Ten minute break diyelim.
+
+582
+01:50:36,404 --> 01:50:42,164
+10 dakika sonra tekrar dersimize devam ederiz. Hadi görüşürüz 10 dakika sonra.
+
+583
+01:59:43,539 --> 01:59:45,739
+Alo, geliyor mu sesim gençler?
+
+584
+01:59:46,739 --> 01:59:47,739
+Geliyorum.
+
+585
+01:59:49,539 --> 01:59:50,539
+Tamam.
+
+586
+01:59:55,667 --> 02:00:00,667
+Ok, and discrete models, let us see discrete models.
+
+587
+02:00:10,707 --> 02:00:38,107
+Ok, we have the physical world and there are intersection with, there are interactions among the physical phenomena's, so what we will try to find out, some we will try to find out is to, is the mathematical models to study the situation.
+
+588
+02:00:38,484 --> 02:01:06,203
+Bu, we have to define a model for the physical world. Defining a model requires, let me write like this, defining a model requires two things. First, you will define a sample space, okay?
+
+589
+02:01:15,444 --> 02:01:18,764
+bir şey, bir şey, bir şey, bir şey.
+
+590
+02:01:22,484 --> 02:01:44,484
+Okay, when you design a model, first you have to define the sample space. When you are asked a question about the probability, first you have to do is to define the sample space, okay? The second thing is specifying...
+
+591
+02:01:49,363 --> 02:01:52,363
+Aksiyom, satıble, conveni,
+
+592
+02:01:55,828 --> 02:01:56,828
+Probabiliteler.
+
+593
+02:02:06,804 --> 02:02:33,503
+Of course, the probability levels you specified must be consistent with three axioms. Do you remember these axioms? What are these? The first axiom is non-negativity.
+
+594
+02:02:34,195 --> 02:02:38,195
+The second axiom is, what is, do you remember?
+
+595
+02:02:42,195 --> 02:02:44,195
+Normalization.
+
+596
+02:02:44,195 --> 02:02:46,195
+Exactly, normalization.
+
+597
+02:02:46,195 --> 02:02:48,195
+Third one is?
+
+598
+02:02:48,195 --> 02:02:50,195
+Additivity.
+
+599
+02:02:50,195 --> 02:02:52,195
+Okay, toplam salik, additivity.
+
+600
+02:02:52,195 --> 02:02:54,195
+Okay.
+
+601
+02:02:54,195 --> 02:02:56,195
+Let us do examples.
+
+602
+02:02:56,195 --> 02:03:00,195
+Okay, let me write in green.
+
+603
+02:03:00,195 --> 02:03:02,091
+Okay, or
+
+604
+02:03:02,195 --> 02:03:03,796
+Purple, okay, example.
+
+605
+02:03:06,596 --> 02:03:07,596
+Examples.
+
+606
+02:03:08,796 --> 02:03:10,956
+A fair, first example,
+
+607
+02:03:12,155 --> 02:03:15,195
+a fair coin toss, okay.
+
+608
+02:03:16,796 --> 02:03:23,195
+For example, the pro, the problem is fair coin toss, fair coin toss.
+
+609
+02:03:25,524 --> 02:03:27,524
+Bu experimentin.
+
+610
+02:03:27,524 --> 02:03:29,524
+İkincisi bir coin ve...
+
+611
+02:03:29,524 --> 02:03:31,524
+Bu bir sampli space?
+
+612
+02:03:32,524 --> 02:03:34,524
+Bir sampli space var.
+
+613
+02:03:34,524 --> 02:03:36,524
+He orta tail.
+
+614
+02:03:36,524 --> 02:03:39,524
+Şimdi, her orta tail.
+
+615
+02:03:39,524 --> 02:03:42,524
+Ve şimdi, bir sürü.
+
+616
+02:03:42,524 --> 02:03:45,524
+Bir sürü, bir sürü,
+
+617
+02:03:45,524 --> 02:03:48,300
+bir sürü,
+
+618
+02:03:48,404 --> 02:03:51,404
+Bu bir sorun var.
+
+619
+02:03:51,404 --> 02:04:12,192
+Bir sorun var.
+
+620
+02:04:12,192 --> 02:04:33,579
+ve tos three coins, ok? Let us look at the three fair coin tosses, ok? Three fair coin tosses, ok? In this case, what is the outcome?
+
+621
+02:04:34,003 --> 02:04:43,904
+Sorry, what we will do first, we will define the sample space. What is the sample space for this experiment? Let me write.
+
+622
+02:04:46,703 --> 02:05:00,503
+It could be three pair coin, Ptosis. So the first element of the sample space could be hat hat hat. The second one is hat hat tail.
+
+623
+02:05:00,692 --> 02:05:06,332
+ve hat, tail, hat, or hat, tail, tail.
+
+624
+02:05:08,372 --> 02:05:23,731
+Tail, hat, hat, tail, hat, hat, sorry, tail, hat, tail, tail, tail, hat, and tail, tail, tail.
+
+625
+02:05:23,731 --> 02:05:27,252
+This is my sample space, okay?
+
+626
+02:05:27,636 --> 02:05:37,636
+ve, from the second rule, we need to specify the probability laws.
+
+627
+02:05:37,636 --> 02:05:51,636
+The probability laws we need to have is this. Probability of hat hat hat is 1, 2, 3, 4, 5, 6, 7, 8. So 1 over 8.
+
+628
+02:05:55,283 --> 02:06:16,163
+hat, tail is also 1 over 8. Probabilitiyon of hat, tail, hat is also 1 over 8. So and so on. Let's say probability, tail, tail, tail is also 1 over 8.
+
+629
+02:06:16,163 --> 02:06:22,643
+What is this point here? The point is here this, or conclusion. Each outcome,
+
+630
+02:06:29,395 --> 02:06:34,539
+ve
+
+631
+02:06:43,923 --> 02:07:10,923
+Okay? Okay, very good. Let's say, let us define an event. What is the event? Event is the subset of sample space. Let's say, A, suppose, okay, let me write in purple. Suppose, A is subset of sample space.
+
+632
+02:07:13,076 --> 02:07:15,916
+ve exactly 2 Hz okur.
+
+633
+02:07:25,492 --> 02:07:52,492
+Ok, what are these? Who will tell me? Please tell me. Exactly two heads occur. Which one? This is the sample space. Head, tail, head. Head, tail, head. Tail, head, head. Tail, head, head. Yes. Head, head, tail. Head, head, tail.
+
+634
+02:07:53,619 --> 02:07:54,619
+Evet, o.
+
+635
+02:07:54,859 --> 02:07:55,159
+Evet.
+
+636
+02:08:18,163 --> 02:08:23,163
+Bu bir durumda bir durumda.
+
+637
+02:08:23,163 --> 02:08:26,163
+Bir durumda bir durumda bir durumda
+
+638
+02:08:26,163 --> 02:08:28,163
+etkilenen,
+
+639
+02:08:28,163 --> 02:08:30,163
+bir durumda bir durumda
+
+640
+02:08:30,163 --> 02:08:33,163
+ve bu durumda bir durumda
+
+641
+02:08:33,163 --> 02:08:35,163
+bu durumda bir durumda
+
+642
+02:08:35,163 --> 02:08:41,163
+bir durumda
+
+643
+02:08:46,036 --> 02:09:11,340
+Bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle
+
+644
+02:09:11,699 --> 02:09:25,699
+ve normal dağılım, ok? Bu, bu, 1 over 8, 1 over 8, 1 over 8, 1 over 8, o, total 3 over 8.
+
+645
+02:09:25,699 --> 02:09:33,579
+Ok, now it is time to consider the equally likely outcomes. Look at here.
+
+646
+02:09:33,716 --> 02:09:42,764
+Bu, bu
+
+647
+02:09:47,699 --> 02:09:59,699
+Let me write in, okay, equally likely outcomes.
+
+648
+02:10:05,587 --> 02:10:21,827
+Do you know the meaning of equally likely? Eşit olabilirlikli. Tamam mı? Likely olabilirlilikli demek. Olabilirli. No, olabilirlikli. Hangisi doğru? Olabilirli.
+
+649
+02:10:21,827 --> 02:10:31,587
+Aha, Türkçeyi çeviremiyorum. Olabilirlikli. Evet. Okey.
+
+650
+02:10:32,467 --> 02:10:34,467
+İran'de, let's say, two events.
+
+651
+02:10:38,292 --> 02:10:39,292
+Tuğuluylağız.
+
+652
+02:10:44,212 --> 02:10:46,212
+A ve B
+
+653
+02:10:49,844 --> 02:10:51,627
+associated
+
+654
+02:11:02,612 --> 02:11:05,612
+associated to an experiment.
+
+655
+02:11:13,747 --> 02:11:16,627
+Evet, so to an experiment are equally likely,
+
+656
+02:11:23,956 --> 02:11:27,956
+İkiştirebilecek, daha fazla olabilir.
+
+657
+02:11:36,212 --> 02:11:38,212
+is
+
+658
+02:11:39,812 --> 02:11:40,812
+there is
+
+659
+02:11:43,532 --> 02:11:44,732
+no reason
+
+660
+02:11:49,427 --> 02:11:51,427
+to suppose
+
+661
+02:11:53,427 --> 02:11:53,927
+that
+
+662
+02:11:56,427 --> 02:11:57,927
+the occurrence of
+
+663
+02:12:03,220 --> 02:12:07,180
+bir de iki evans,
+
+664
+02:12:09,460 --> 02:12:13,340
+bir de iki evans
+
+665
+02:12:14,619 --> 02:12:16,380
+is favored with
+
+666
+02:12:21,876 --> 02:12:27,636
+ve ayrıca, özellikle birbirine sevdiğiniz.
+
+667
+02:12:34,163 --> 02:12:52,163
+Şunu demek istiyoruz. Şimdi iki tane event var, A ve B olayları. Bu olayların her ikisi de eşit olasılıklı ve bir olayın olması diğer olayın olmasını etkilemiyor. Onu desteklemiyor.
+
+668
+02:12:59,220 --> 02:13:24,980
+uzaklar. Tamam mı? Böyle birbirlerini etkiliyorlar gibi düşünemiyoruz. Dolayısıyla A olayının olması B olayını etkilemez. Örnek verelim. Zar atıyorsunuz. Tek sayı olma olasılığı ve çift sayı olma olasılığı. Bu ikisi birbirinden farklı. Yani tek sayıların olma olasılığı ve çift sayıların olma olasılığı bu ikisi iki farklı olay.
+
+669
+02:13:25,524 --> 02:13:45,524
+ve bu olay birbiriyle kesişmiyor. Çünkü ortak ama şu farklı bak, tek sayılarla, bir zar atıyorsun, tek sayılar var, bir de asal sayılar var. Bu iki olay birbiriyle birbirini etkiliyor. Niye? Çünkü kesişimleri var. Tamam mı? Tamam mı?
+
+670
+02:13:52,627 --> 02:14:11,027
+Sample space Omega consist of equally likely outcomes.
+
+671
+02:14:14,292 --> 02:14:33,492
+let's say Omega 1, Omega 2, or we can write different letters, let me think, okay, okay Omega 1, Omega 2, or Omega 3, da da da, Omega n.
+
+672
+02:14:37,939 --> 02:14:40,875
+ve her zaman,
+
+673
+02:14:52,148 --> 02:15:18,387
+So each one are equally likely, so the probability of each outcome is equal to the inverse of the number of outcomes, inverse of the number of.
+
+674
+02:15:19,315 --> 02:15:21,315
+Outcomes
+
+675
+02:15:22,915 --> 02:15:24,876
+From the sample space
+
+676
+02:15:33,747 --> 02:15:40,867
+Omega, what does it mean? It means this, probability of,
+
+677
+02:15:44,404 --> 02:16:10,824
+Omega 1 is equal to, okay, let me write like this first. This is my sample space, okay. My sample space, this is Omega 1, this is Omega 2, this is Omega 3, this is Omega 4, and so on. This is Omega n, okay. There are many dots. For we can write like this.
+
+678
+02:16:15,412 --> 02:16:24,732
+So, we can say this is omega 1, this is omega 2, this is omega 3, dot dot dot, this is omega n, this is my sample space, okay?
+
+679
+02:16:25,312 --> 02:16:39,332
+The probab- each outcome here has the same probability. So, the probability of w1 is equal to 1 over size of sample space.
+
+680
+02:16:40,371 --> 02:16:47,691
+What is the size of sample space? 1 over n. Okay, the probability of-
+
+681
+02:16:53,811 --> 02:16:56,451
+ve probabilitelerde de any event A
+
+682
+02:17:00,659 --> 02:17:07,020
+consisting of key outcomes.
+
+683
+02:17:12,435 --> 02:17:14,435
+Ok, is.
+
+684
+02:17:14,435 --> 02:17:24,435
+For example, let's say A is Omega 1, Omega 5, Omega 7, Omega 20.
+
+685
+02:17:24,435 --> 02:17:35,435
+Ok, Omega 20, and so on. Omega 100, or Omega n.
+
+686
+02:17:35,435 --> 02:17:39,435
+Omega...
+
+687
+02:17:40,308 --> 02:17:54,348
+n. The size of a is, what is the size of a is? Key, okay? It has key outcomes. The number of elements here.
+
+688
+02:18:02,899 --> 02:18:19,459
+Elements in A is key, okay? I am not able, I think I write the number of, okay, let me clean.
+
+689
+02:18:25,172 --> 02:18:27,148
+A.
+
+690
+02:18:40,628 --> 02:18:41,628
+Ok?
+
+691
+02:18:43,128 --> 02:18:45,628
+So, what is the probability of E?
+
+692
+02:18:50,195 --> 02:19:16,108
+Probability of E is number of favorable, number of outcomes in E. Of course this is key over n. This is the number of outcomes in E divided by number of outcomes.
+
+693
+02:19:17,780 --> 02:19:27,580
+in Omega. Okay, so this is the probability q over n. So this is the probability of event e.
+
+694
+02:19:27,580 --> 02:19:37,780
+Outcomes forming an event is also called favorable. Therefore, we say, for example,
+
+695
+02:19:42,195 --> 02:20:08,195
+növer of favorable outcomes, növer of favorable outcomes, növer of favorable outcomes, növer of you can write in this form. It's okay. So, probability of event e is computed using this formula. Okay? Here is sharp symbol means number. Very good. Do you have any questions?
+
+696
+02:20:10,835 --> 02:20:21,335
+Okay, after equally likely outcomes, we can look at the combinatorics, combinatorics and counting techniques.
+
+697
+02:20:43,540 --> 02:20:46,540
+Kiminatorik ve ölçüde teklikler.
+
+698
+02:20:51,188 --> 02:20:55,028
+Burada ilk bir şey, o dağılımın alışı.
+
+699
+02:21:05,299 --> 02:21:07,299
+Okay, what is multiplication?
+
+700
+02:21:08,899 --> 02:21:10,340
+If an experiment
+
+701
+02:21:18,899 --> 02:21:20,539
+A konsistof
+
+702
+02:21:24,340 --> 02:21:26,740
+Key Components
+
+703
+02:21:30,579 --> 02:21:34,579
+I mean the SAP experiments.
+
+704
+02:21:43,347 --> 02:21:48,075
+ve normal dağılım,
+
+705
+02:21:53,108 --> 02:21:55,108
+Possible outcomes.
+
+706
+02:22:01,843 --> 02:22:17,843
+Ar, let's say, n1, n2, n3, n4, let me write, n1, n2, n3, n4, dot, dot, dot, et cetera, nt,
+
+707
+02:22:31,891 --> 02:22:42,271
+Number of, the total number of experimental outcomes or the total number of experimental outcome.
+
+708
+02:22:45,620 --> 02:22:46,659
+Outcomes.
+
+709
+02:22:51,924 --> 02:23:05,924
+Or in other words, the size of the sample space. Okay, the size of the sample space.
+
+710
+02:23:08,424 --> 02:23:17,524
+What is the size of sample space? Is equal to. What is this?
+
+711
+02:23:18,291 --> 02:23:43,731
+Do you remember, look, three fair coin tosses, okay? If we toss only one coin, the sample space is H and T, okay? If I repeat three times, what is the size of new sample space? Look, eight.
+
+712
+02:23:44,564 --> 02:24:01,564
+It means I multiply 2 3 times because the size of sample space is 2 and you multiply 2 3 times, 2 times 2 times 2 is equal to 8. So the size of sample space is 8.
+
+713
+02:24:01,564 --> 02:24:08,564
+From here we notice that the total number of experimental outcomes
+
+714
+02:24:09,556 --> 02:24:11,556
+...
+
+715
+02:24:37,971 --> 02:24:48,971
+n1, n2, n3, n4, nk, nk.
+
+716
+02:24:57,172 --> 02:25:22,188
+Any questions? If their sample space is the key comp, each component, each component has the same number
+
+717
+02:25:24,308 --> 02:25:27,908
+of outcomes
+
+718
+02:25:31,188 --> 02:25:54,252
+Let's say, ni equals to nj equals to n. Okay? All of them has the same. Then, total number of them, the total number of experimental
+
+719
+02:25:58,164 --> 02:26:06,844
+Komponence,
+
+720
+02:26:09,844 --> 02:26:11,844
+is equal to,
+
+721
+02:26:13,484 --> 02:26:14,484
+what is that?
+
+722
+02:26:15,123 --> 02:26:25,603
+n1 is equal to n, n times, n2 is equal to n times, n3 is equal to n times, n4 is equal to n times, n4 is equal to n times.
+
+723
+02:26:26,324 --> 02:26:30,644
+dot dot dot, nk is equal to n times, so this is
+
+724
+02:26:34,420 --> 02:26:35,420
+Teşekkürler.
+
+725
+02:26:38,995 --> 02:26:43,995
+K times multiplication.
+
+726
+02:26:46,995 --> 02:26:51,995
+Ok, so the result is n power k.
+
+727
+02:26:54,995 --> 02:26:56,995
+Hocam, bunu Türkçe açıklar mısınız?
+
+728
+02:26:58,995 --> 02:27:05,995
+Ok, şöyle diyelim, bir tane deney yapıyorsunuz, deneyde de k tane bileşen var, tamam mı?
+
+729
+02:27:06,963 --> 02:27:24,963
+K tane bir deney, K tane deneyden oluşuyor. Her bir deneyin de farklı farklı outcomeları var. Mesela birinci deneyin N1 tane, ikinci deneyin N2 tane, üçüncü deneyin N3 tane outcome var, dördüncünün N4 tane outcome var.
+
+730
+02:27:24,963 --> 02:27:33,963
+Ve bu deneyler de birbirleriyle, tamam mı? Yani şey olabilir, ilişkili olabilir, hiç önemli değil.
+
+731
+02:27:34,164 --> 02:27:57,164
+Dolayısıyla sen bu hepsini K tane deneyi birlikte yapıyorsun, buna deney diyorsun. Şimdi K tane deneyi birlikte yapınca, sample space'ın nasıl olur? Bütün hepsinin elemanlarının çarpımını eşit olur. Mesela yukarıda ne yaptık hatırlıyorsanız, bir tane para attığımızda sonuç neydi?
+
+732
+02:27:57,200 --> 02:28:17,200
+yazı veya turaydı, değil mi? Sample Space'in size 2 idi. Ama 3 defa atınca, Sample Space'imiz bak 8 tane elemandan oluşuyor. Neden? Çünkü 2 çarpı, 3 defa atıyoruz ya, 2'yi 3 defa çarpıyoruz kendisiyle. 2 çarpı, 2 çarpı, 2. Yani 2 üzeri 3, 8. Bak, Sample Space 8 tane.
+
+733
+02:28:17,683 --> 02:28:32,683
+Ama burada her bir olayın sample spaceleri 2 olduğu için 2 üzeri 3 oluyor, 8 oluyor. Ama burada o katana komponentlerin elemanları eşit değil. Yani sample spaceleri eşit değil.
+
+734
+02:28:32,683 --> 02:28:38,683
+Birinci komponentin sample spesi n1, ikincininki n2, öyle düşün.
+
+735
+02:28:38,683 --> 02:28:40,111
+Dolayısıyla...
+
+736
+02:28:40,111 --> 02:28:52,591
+Hepsinin aynı anda olması durumunda ortaya çıkan sample space'in büyüklüğü, her bir komponentin sample space'in size'larının çarpımlarına eşit.
+
+737
+02:28:52,591 --> 02:29:01,991
+Eğer her bir komponent eşit sayıda outcome olsaydı, yani sample space'lerinin sayıları birbirine eşit olsaydı, o zaman ne olacaktı?
+
+738
+02:29:01,991 --> 02:29:05,912
+N'yi k taba çarpacaktık, o da n üzeri k olmuş olacaktı.
+
+739
+02:29:06,995 --> 02:29:08,995
+Tamam hocam, teşekkür ederim.
+
+740
+02:29:08,995 --> 02:29:16,995
+Lise, tamam. Lisede bunları görmüş olmanız lazım. Görmüş müydünüz, hatırlıyor musunuz lisede?
+
+741
+02:29:16,995 --> 02:29:24,995
+Gördüm hocam ama İngilizce olunca, hani pek İngilizcem iyi değil, açıkçası anlayamadım biraz. Tamam, benim de İngilizcem iyi değil. İşte...
+
+742
+02:29:25,811 --> 02:29:29,811
+İdare ediyoruz birbirimizi. Tamam hocam, sağ olun.
+
+743
+02:29:29,811 --> 02:29:35,811
+Şimdi Multiplication Rule, Permutations, buna bakalım şimdi.
+
+744
+02:29:35,811 --> 02:29:39,755
+Permutations, let me choose this.
+
+745
+02:29:46,195 --> 02:29:47,195
+Permutation,
+
+746
+02:29:49,195 --> 02:29:50,195
+is a
+
+747
+02:29:53,195 --> 02:29:54,195
+possible selection of
+
+748
+02:30:03,636 --> 02:30:05,548
+Çok distinguishing işlemi.
+
+749
+02:30:14,355 --> 02:30:26,059
+We have distinguishable means birbirinden ayrı edilebilir objects from a set of n objects.
+
+750
+02:30:41,876 --> 02:30:47,475
+Ok, let's say n is equal, n is greater than or equal to key, ok?
+
+751
+02:30:48,596 --> 02:31:08,756
+So there are, so total number of objects is n, or outcomes, and you choose some subset of the sample space, the number of the set you choose, the number of elements in the set you choose is key.
+
+752
+02:31:09,075 --> 02:31:15,876
+Okay, so here we say the order of the sampled.
+
+753
+02:31:27,156 --> 02:31:36,516
+Objects is important, okay? This is the permutation.
+
+754
+02:31:40,020 --> 02:31:58,956
+There are two types of permutations. One is the with replacement, the other one is without replacement permutation. Permutation with replacement. Let me write with replacement.
+
+755
+02:32:02,195 --> 02:32:25,795
+Ok, you choose and, for example, there is a urn, you choose one marble, and then you put it back to the urn again. So you repeat this. This is called with replacement permutation. Then with replacement, if the selection is performed with replacement, let me write,
+
+756
+02:32:28,435 --> 02:32:29,435
+if the
+
+757
+02:32:32,659 --> 02:32:46,500
+if the selection is performed with replacement.
+
+758
+02:32:53,523 --> 02:33:05,884
+If the selection is performed with replacement, this is important, then the experiment is,
+
+759
+02:33:13,907 --> 02:33:14,907
+M.K.
+
+760
+02:33:20,691 --> 02:33:23,471
+Key Identical Components
+
+761
+02:33:30,131 --> 02:33:36,131
+Okay, made up of key each with n possible outcomes.
+
+762
+02:33:48,275 --> 02:33:52,475
+Ok, the number of possible ways to select the key objects.
+
+763
+02:34:05,139 --> 02:34:08,139
+A number of possible ways to select.
+
+764
+02:34:09,139 --> 02:34:10,139
+One second.
+
+765
+02:34:20,051 --> 02:34:34,291
+The key objects is, this is the permutation and key is n power key, very simple.
+
+766
+02:34:37,011 --> 02:34:43,971
+If the selection is performat, if the selection is,
+
+767
+02:34:48,084 --> 02:35:15,180
+Bu, bu
+
+768
+02:35:20,819 --> 02:35:21,819
+...is...
+
+769
+02:35:21,819 --> 02:35:23,819
+...made up...
+
+770
+02:35:25,819 --> 02:35:28,819
+...it is made up of key components.
+
+771
+02:35:32,884 --> 02:35:44,587
+İç,
+
+772
+02:35:46,131 --> 02:36:10,131
+n-1, of course, because the first one has n possible choice, the second one is n possible outcome, because you choose, you didn't replace, so what is the possibility? It is n-1, so the number of outcomes reduces n-1, n-2, n-3, n-3, n-3.
+
+773
+02:36:11,347 --> 02:36:13,788
+K plus 1.
+
+774
+02:36:13,788 --> 02:36:14,788
+Okay.
+
+775
+02:36:14,788 --> 02:36:16,523
+Outcomes.
+
+776
+02:36:19,572 --> 02:36:20,952
+Respekt değilim.
+
+777
+02:36:32,468 --> 02:36:34,092
+Possible is
+
+778
+02:36:38,195 --> 02:37:03,876
+To select, to select what? To select the key object is, sorry, the key objects is, what is this? Probability, this is the permutation n key, this is the first one is n times.
+
+779
+02:37:04,084 --> 02:37:06,084
+N-1
+
+780
+02:37:06,084 --> 02:37:10,084
+N-2
+
+781
+02:37:10,084 --> 02:37:16,084
+N-k
+
+782
+02:37:16,084 --> 02:37:18,084
+1
+
+783
+02:37:18,084 --> 02:37:20,084
+Ok?
+
+784
+02:37:20,084 --> 02:37:22,084
+You can do what?
+
+785
+02:37:22,084 --> 02:37:24,084
+You can write it like this.
+
+786
+02:37:24,084 --> 02:37:26,084
+N-1
+
+787
+02:37:26,084 --> 02:37:28,084
+N-2
+
+788
+02:37:28,084 --> 02:37:30,084
+N-k
+
+789
+02:37:32,115 --> 02:37:34,115
+n-k
+
+790
+02:37:35,316 --> 02:37:37,316
+2 and 1
+
+791
+02:37:37,316 --> 02:37:39,316
+Divided by
+
+792
+02:37:41,115 --> 02:37:43,316
+Okay, this is multiplication
+
+793
+02:37:43,915 --> 02:37:45,915
+n-k
+
+794
+02:37:46,515 --> 02:37:48,515
+times
+
+795
+02:37:50,515 --> 02:37:53,515
+n-k-1 times
+
+796
+02:37:54,115 --> 02:37:56,115
+dot dot dot 2 and 1
+
+797
+02:37:56,115 --> 02:37:57,115
+You can write
+
+798
+02:37:57,115 --> 02:37:58,115
+And this
+
+799
+02:37:58,388 --> 02:38:07,508
+Terms cancels each other, and you obtain that. Okay, what is the first one?
+
+800
+02:38:10,772 --> 02:38:12,772
+n!
+
+801
+02:38:12,772 --> 02:38:14,772
+Numerator
+
+802
+02:38:14,772 --> 02:38:16,772
+of this expression
+
+803
+02:38:16,772 --> 02:38:18,772
+is n!
+
+804
+02:38:18,772 --> 02:38:20,772
+divided by
+
+805
+02:38:20,772 --> 02:38:22,772
+n!
+
+806
+02:38:22,772 --> 02:38:24,772
+k!
+
+807
+02:38:24,772 --> 02:38:26,772
+Bu
+
+808
+02:38:26,772 --> 02:38:28,772
+n!
+
+809
+02:38:28,772 --> 02:38:30,772
+Bu
+
+810
+02:38:30,772 --> 02:38:32,772
+n!
+
+811
+02:38:32,772 --> 02:38:34,772
+Bu
+
+812
+02:38:34,772 --> 02:38:36,772
+n!
+
+813
+02:38:36,772 --> 02:38:38,124
+Bu
+
+814
+02:38:39,763 --> 02:38:43,363
+ve combinations, permutation, ok?
+
+815
+02:38:43,363 --> 02:38:44,963
+This is here, let me write in.
+
+816
+02:38:46,963 --> 02:38:47,963
+Combination.
+
+817
+02:38:55,603 --> 02:38:57,603
+Ok.
+
+818
+02:38:57,603 --> 02:39:01,603
+The combination
+
+819
+02:39:01,603 --> 02:39:04,603
+Let me write.
+
+820
+02:39:04,603 --> 02:39:09,603
+Combination
+
+821
+02:39:09,603 --> 02:39:14,443
+is a possible selection of
+
+822
+02:39:19,271 --> 02:39:20,271
+n!
+
+823
+02:39:19,123 --> 02:39:30,603
+Kedistinguishable objects.
+
+824
+02:39:35,316 --> 02:39:36,316
+Fırın,
+
+825
+02:39:42,868 --> 02:39:47,067
+n-objects.
+
+826
+02:39:52,468 --> 02:40:12,968
+Of course, n is greater than or equal to k. Here, the order of the sampled objects is not taken in the account, okay? The order of the sampled objects.
+
+827
+02:40:39,252 --> 02:40:44,492
+is not taken into account means hesaba alınmıyor.
+
+828
+02:40:44,492 --> 02:40:45,492
+Okay.
+
+829
+02:40:45,492 --> 02:40:51,492
+If the selection is performed without replacement,
+
+830
+02:41:19,476 --> 02:41:30,376
+If the selection is performant without this replacement, then the number of possible ways to select the key objects.
+
+831
+02:41:38,451 --> 02:41:39,912
+To select.
+
+832
+02:41:47,796 --> 02:41:50,596
+key object
+
+833
+02:41:52,756 --> 02:41:54,596
+is equal to
+
+834
+02:41:58,484 --> 02:42:01,484
+Bu ne? Bu ne? Bu ne?
+
+835
+02:42:01,484 --> 02:42:02,484
+Bu ne? Bu ne?
+
+836
+02:42:02,484 --> 02:42:23,904
+Bu ne?
+
+837
+02:42:23,904 --> 02:42:33,804
+K, so this is n factorial, divided by k factorial, and n minus k factorial.
+
+838
+02:42:35,804 --> 02:42:39,604
+Sometimes we show it like this, n key.
+
+839
+02:42:40,804 --> 02:42:41,604
+Okay.
+
+840
+02:42:44,304 --> 02:42:46,104
+Sometimes we show it like this.
+
+841
+02:42:47,004 --> 02:42:48,504
+If the selection,
+
+842
+02:42:56,115 --> 02:43:08,835
+is performed, performed with replacement.
+
+843
+02:43:15,268 --> 02:43:19,268
+Bu ne?
+
+844
+02:43:15,188 --> 02:43:16,188
+Tamam.
+
+845
+02:43:16,188 --> 02:43:17,188
+Sonra...
+
+846
+02:43:18,188 --> 02:43:22,667
+...
+
+847
+02:43:27,028 --> 02:43:39,828
+Number of possible ways to select key objects.
+
+848
+02:43:44,084 --> 02:44:09,724
+key objects is equal to, what is that? This is the C, this is with replacement, let me say replacement and key. Okay. So this is equal to, when you replace, this is equal to the permutation with, without replacement like this.
+
+849
+02:44:13,043 --> 02:44:37,224
+Okay, and this is of course, sorry, I wrote, sorry, n plus k minus one, and this is equal to k plus one, sorry, k plus, similar to this, see, it is.
+
+850
+02:44:37,652 --> 02:44:52,891
+So here, look at k plus n minus 1 factorial divided by q factorial and n minus 1 factorial.
+
+851
+02:44:55,031 --> 02:44:58,731
+Okay, or you can write this like in this form.
+
+852
+02:45:04,724 --> 02:45:06,724
+Minus 1 key.
+
+853
+02:45:06,724 --> 02:45:08,724
+Okay.
+
+854
+02:45:08,724 --> 02:45:12,724
+Okay, your homework.
+
+855
+02:45:20,755 --> 02:45:22,155
+ve
+
+856
+02:45:27,763 --> 02:45:55,123
+Of course, you will not deliver your homework, but this is your homework. Read the chapters regarding the permutation and combination, okay? In our book, Michael Baran.
+
+857
+02:46:03,123 --> 02:46:08,123
+Bu kitabı, bu kitabı, bu kitabı,
+
+858
+02:46:08,123 --> 02:46:17,868
+bu konusunda,
+
+859
+02:46:18,123 --> 02:46:19,123
+ok?
+
+860
+02:46:26,611 --> 02:46:28,611
+Be careful, so, okay?
+
+861
+02:46:28,611 --> 02:46:30,611
+Any question?
+
+862
+02:46:35,443 --> 02:46:56,443
+If you don't have question, I will continue. Okay. So, now we will look at the conditional probability. Okay. What is conditional probability?
+
+863
+02:47:06,932 --> 02:47:09,372
+Okay, let's say conditional probability.
+
+864
+02:47:15,156 --> 02:47:16,140
+Sorry.
+
+865
+02:47:34,451 --> 02:47:37,451
+Okay? Okay.
+
+866
+02:47:41,451 --> 02:47:47,451
+Here, or motivation. What is the or motivation with condition and probability? Let me write here.
+
+867
+02:47:56,500 --> 02:47:58,412
+Orang examples.
+
+868
+02:48:04,788 --> 02:48:11,788
+ve
+
+869
+02:48:31,667 --> 02:48:45,484
+Bir eventiyle bir bir eventiyle bir bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir eventiyle bir
+
+870
+02:48:45,907 --> 02:49:10,347
+ve 100 metre bir
+
+871
+02:49:10,484 --> 02:49:19,164
+Bu, bu kable bu kable bir de iki faktörler.
+
+872
+02:49:19,164 --> 02:49:24,684
+Tamam, bu kable bu kable bir kable yoksa,
+
+873
+02:49:24,684 --> 02:49:33,164
+bu kable bu kable bir kable yoksa bir kable yoksa bir kable yoksa.
+
+874
+02:49:34,548 --> 02:49:59,948
+Or, what is the probability that the broken cable is produced by the second factor? Okay? You see, I put a condition. What is the condition if the cable is broken? Okay? So this is the condition. On this condition, what is the probability that the cable is produced from the-
+
+875
+02:50:00,000 --> 02:50:09,760
+first factory or from the second factory. This is the probability I want to learn. Okay, let us give another example.
+
+876
+02:50:12,060 --> 02:50:18,180
+And this example may be very interesting. Let me example one. Okay.
+
+877
+02:50:19,380 --> 02:50:20,639
+A spot.
+
+878
+02:50:23,987 --> 02:50:32,747
+shows, let me say, shows on a radar screen.
+
+879
+02:50:34,747 --> 02:50:39,147
+Okay, or on the radar screen, let me say, the radar screen.
+
+880
+02:50:43,667 --> 02:50:45,667
+Ok, you have a radar screen,
+
+881
+02:50:48,067 --> 02:50:49,067
+like this,
+
+882
+02:50:49,968 --> 02:50:51,968
+there is a dot like this,
+
+883
+02:50:53,167 --> 02:50:55,167
+and here there are some,
+
+884
+02:50:56,567 --> 02:50:57,067
+oops,
+
+885
+02:50:59,968 --> 02:51:01,667
+this is radar screen, ok,
+
+886
+02:51:01,667 --> 02:51:07,667
+and there is some point,
+
+887
+02:51:08,268 --> 02:51:10,468
+and this is moose.
+
+888
+02:51:11,956 --> 02:51:27,819
+Ok, it search. And there are some dots. For example, here there is a dot. Ok, shows a dot on the screen. And my question is this. How likely
+
+889
+02:51:31,092 --> 02:51:40,032
+is it that it corresponds to an aircraft.
+
+890
+02:51:47,796 --> 02:51:49,388
+İçin
+
+891
+02:51:54,100 --> 02:52:15,220
+to an aircraft. This is my question, okay? How likely is it that it corresponds to an aircraft? Another example, this is the look at this question, there is condition. If there is a spot on the screen,
+
+892
+02:52:15,763 --> 02:52:22,083
+on the radar six and then I ask you what is the probability that there is an aircraft
+
+893
+02:52:24,083 --> 02:52:30,243
+okay that spot could be something else also it could be an aircraft or it could be a rocket
+
+894
+02:52:30,884 --> 02:52:38,884
+rocket or it could be as something else okay so what is the probability that that spot is
+
+895
+02:52:39,924 --> 02:52:59,115
+an air, that spot corresponds to an aircraft, shows an aircraft, okay? It's about the aircraft, sorry. Another example, maybe much more simple to understand. A fair die, okay? A fair die.
+
+896
+02:53:02,484 --> 02:53:09,484
+ve
+
+897
+02:53:23,412 --> 02:53:25,484
+ve sonuçlar,
+
+898
+02:53:31,252 --> 02:53:35,252
+Okay, my question is this. How likely...
+
+899
+02:53:39,891 --> 02:54:03,492
+is that the outcome was 1. What is that probability? 1 over 6? 0. 0. Okay, 0.
+
+900
+02:54:04,308 --> 02:54:28,308
+Sorry, I didn't see it. There is a condition. Okay, what about this one? How likely is that the outcome was 6? What is this? 1 over 3. Yes, 1 over 3.
+
+901
+02:54:28,852 --> 02:54:32,852
+Okay, you see, we put some condition here.
+
+902
+02:54:33,852 --> 02:54:43,852
+Normally, each outcome has the probability of 1 over 6, but by the condition, their probability changes. Okay?
+
+903
+02:54:44,852 --> 02:54:47,852
+This is the conditional probability. Did you understand?
+
+904
+02:54:48,852 --> 02:54:51,756
+Okay, let's give definition.
+
+905
+02:54:59,316 --> 02:55:01,036
+Gide 2 evans
+
+906
+02:55:07,636 --> 02:55:20,076
+a and b, but the probability of b is not equal given to events a and b such that
+
+907
+02:55:23,860 --> 02:55:29,860
+Probabiliteli of event B is not equal to zero.
+
+908
+02:55:31,860 --> 02:55:33,860
+What does it mean this one?
+
+909
+02:55:36,860 --> 02:55:46,860
+Event B is not an impossible event.
+
+910
+02:55:48,860 --> 02:55:49,708
+Okay?
+
+911
+02:55:58,388 --> 02:56:24,788
+Then, the conditional probability of, let me write here, maybe it is not good to write here, okay, then, the conditional probability of event,
+
+912
+02:56:28,948 --> 02:56:55,948
+A, given event B. Given event B means, if event B occurred, you know that event B occurred, what is the probability that event E is occurred? Okay? Is defined by how? Look, probability.
+
+913
+02:56:56,691 --> 02:56:58,891
+A event B,
+
+914
+02:56:58,891 --> 02:57:23,691
+bu da,
+
+915
+02:57:23,028 --> 02:57:26,427
+Bir de yukarıda dağız ve bir output.
+
+916
+02:57:26,427 --> 02:57:28,788
+Eğer bir output bir even,
+
+917
+02:57:28,788 --> 02:57:30,268
+ne kadar da bir probability
+
+918
+02:57:30,268 --> 02:57:31,948
+bir outcome var 6?
+
+919
+02:57:31,948 --> 02:57:33,228
+1 over 3.
+
+920
+02:57:33,228 --> 02:57:34,988
+Ne kadar da bir probability
+
+921
+02:57:34,988 --> 02:57:36,948
+bir outcome var 1?
+
+922
+02:57:36,948 --> 02:57:37,667
+Bir 0.
+
+923
+02:57:37,667 --> 02:57:40,507
+Çünkü bir şeydi,
+
+924
+02:57:40,507 --> 02:57:42,268
+bir outcome var.
+
+925
+02:57:42,268 --> 02:57:43,388
+1 değil.
+
+926
+02:57:43,388 --> 02:57:45,347
+Yani bir probability var 0.
+
+927
+02:57:45,587 --> 02:57:53,747
+But for six, it is its probability is one over three, for two, its probability is one over three.
+
+928
+02:57:53,747 --> 02:58:06,108
+So from here, we write like this probability by observation, probability A intersection B divided by probability B.
+
+929
+02:58:06,108 --> 02:58:13,163
+Okay, be careful. I will stop the lecture one second.
+
+930
+02:58:13,747 --> 02:58:18,747
+This is...
+
+931
+02:58:18,747 --> 02:58:20,747
+What is this?
+
+932
+02:58:20,747 --> 02:58:21,747
+Bias...
+
+933
+02:58:21,747 --> 02:58:22,747
+Huh?
+
+934
+02:58:22,747 --> 02:58:26,747
+Probability of a difference b.
+
+935
+02:58:26,747 --> 02:58:29,747
+This is not equal to this.
+
+936
+02:58:37,876 --> 02:58:45,876
+Okay? This is probability of a difference.
+
+937
+02:58:59,123 --> 02:59:23,123
+B, this is probability of A given B, be careful, okay, these are not equal, look at here, so this is the conditional probability, okay, this is conditional probability.
+
+938
+02:59:35,667 --> 02:59:36,667
+Çok iyi.
+
+939
+02:59:36,667 --> 02:59:37,667
+Ne var?
+
+940
+02:59:37,667 --> 02:59:41,667
+Bizimle konsekvenler ne var?
+
+941
+02:59:41,667 --> 02:59:43,667
+Ne yazalım.
+
+942
+02:59:43,667 --> 02:59:44,667
+Orada durabiliriz.
+
+943
+02:59:44,667 --> 02:59:45,667
+Tamam.
+
+944
+02:59:45,667 --> 02:59:47,667
+Hocam bir şey soracaktım.
+
+945
+02:59:47,667 --> 02:59:53,667
+Şu P-R-A-B yazdık ya mavi şeyle yazdığımız altına da.
+
+946
+02:59:53,667 --> 02:59:55,667
+Dur, şuna P-R-E-Y-M.
+
+947
+02:59:55,667 --> 02:59:57,667
+Conditioning Proverbs mi?
+
+948
+02:59:57,667 --> 03:00:00,667
+Tamam, o da mı P-R-E-T-A-M?
+
+949
+03:00:06,164 --> 03:00:14,564
+PR means probability, okay? Sometimes we use P only the capital letter P's or you can use that one also so it's okay.
+
+950
+03:00:16,324 --> 03:00:32,564
+So we stop here. Okay guys, so next week we will continue on the properties of conditional probability and we will learn the bias theorem.
+
+951
+03:00:32,976 --> 03:00:38,976
+ve ve learn the total probability theorem, ve learn the independence, okay, next week.
+
+952
+03:00:40,096 --> 03:00:46,655
+And I strongly suggest you to read the book before coming to the lecture.
+
+953
+03:00:47,296 --> 03:00:53,775
+If you read the book previously, it will really help you to understand what is going on by the conditional probability.
+
+954
+03:00:54,736 --> 03:00:56,335
+Okay? Thanks.
+
+955
+03:00:57,456 --> 03:00:59,056
+Thanks, [öğrenci]. See you next week.
+
+956
+03:00:59,956 --> 03:01:01,956
+See you.
+
+957
+03:01:01,956 --> 03:01:02,956
+Teşekkürler.
+
+958
+03:01:02,956 --> 03:01:03,884
+Kolay gelsin.
