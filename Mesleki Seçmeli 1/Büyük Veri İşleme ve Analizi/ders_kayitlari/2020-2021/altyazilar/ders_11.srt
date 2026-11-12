@@ -1,0 +1,1847 @@
+1
+00:08:46,707 --> 00:08:47,548
+Arkadaşlarla...
+
+2
+00:08:51,892 --> 00:08:55,872
+Şu yankıyı kapatalım. Sesim geliyor mu acaba? Bir teyit edin lütfen.
+
+3
+00:09:01,011 --> 00:09:01,851
+Geliyor hocam.
+
+4
+00:09:02,651 --> 00:09:02,891
+Tamam.
+
+5
+00:09:05,231 --> 00:09:09,431
+[öğrenci], senin bir sorun var galiba. Mikrofonu sorabilirsin.
+
+6
+00:09:10,871 --> 00:09:16,951
+Hocam, iki soru soracaktım aslında. Haftaya galiba projelerimizin sunumu olacak, doğru mu?
+
+7
+00:09:17,071 --> 00:09:17,771
+Doğru, doğru.
+
+8
+00:09:18,451 --> 00:09:39,011
+Ben açıkçası bu multi-cluster'ı yüklemede biraz zorlandım. Yani hem sanal makine üzerinden hem de Amazon'un sağladığı servislerinden denedim. Merak ettim. Acaba projenin değerlendirmesi tam olarak nasıl olacak? Yani bir cluster'ı yazmamız var, bunların multi-not üzerinde çalışılması var vs. Bununla ilgili bir bilgi mevcut mu?
+
+9
+00:09:43,412 --> 00:09:58,971
+Yani proje assignment'ı aldığında proje description içerisinde yapılması gereken farklı özellikler var. Bu da onlardan bir tanesi. Bunların hepsini teker teker soracağım. Yanlarına check atacağım.
+
+10
+00:10:00,000 --> 00:10:16,340
+Sonra projenin karmaşıklığı, ne kadar emek koymuşsun, kodlarını göstereceksin. Bu konuda da bir fikrim olacak. Onun sonucunda notun ortaya çıkacak. Yani ne kadar fazla özelliği sağlamışsa senin projen, o kadar yüksek not alacaksın diye düşünebilirsin.
+
+11
+00:10:17,076 --> 00:10:38,036
+Anladım. Demek istediğim bu multi-note kısmında sürekli hatalarla karşılaştık. Arkadaşlarımdan da duyduğum kadarıyla. Sürekli özellikle bu bilgiyi sağlayan kaynaklarda bazı ayrıntılar unutabiliyor vs. Eğer böyle ayrı ayrı o dokümanda gösterilen maddeler üzerinden ilerleyeceksiniz tam o zaman. Teşekkürler.
+
+12
+00:10:39,495 --> 00:10:41,456
+Tamam. Başka sorusu olan var mı?
+
+13
+00:10:44,115 --> 00:10:54,975
+Tamamdır arkadaşlar. Şimdi gelecek hafta ben hemen tekrardan şunu sizle paylaşayım.
+
+14
+00:11:00,019 --> 00:11:08,019
+Gelecek haftaki dersimiz Perşembe günü. Perşembe gününden bir gün önce bana...
+
+15
+00:11:08,307 --> 00:11:30,827
+Gece 12'den önce bu assignment'larınızı göndereceksiniz. E-mail adresi burada var. Eğer bunu ekip olarak yaptıysanız öğrenci ID'lerini bu şekilde kullanaraktan isim veriyorsunuz. Tek yaptıysanız sadece kendi öğrenci ID'niz olacak.
+
+16
+00:11:31,668 --> 00:11:55,187
+Bunu buradaki e-mail adresine gönderin. Benim e-mail hesabıma göndermeyin. Bunu sağlama almak için hem oraya göndereyim hem oraya göndereyim derseniz, boş yere benim e-mail hesabıma doldurmuş olacaksınız. Bunu yapmayın arkadaşlar. Sizden sadece isteyen tek e-mail hesabı, yani şuradaki dersin e-mail hesabına projenizi göndermenizi istiyorum.
+
+17
+00:11:55,888 --> 00:11:59,668
+Proje description içerisinde zaten neler olması gerektiği var.
+
+18
+00:11:59,668 --> 00:12:16,827
+Sources kodlarınız bir tane projenizi anlatan rapor. Raporun içerisinde hangi alt başlıklar olması gerektiği burada var. Projenizle beraber bu raporu da göz önüne alarak projenizi değerlendireceğim.
+
+19
+00:12:27,316 --> 00:12:54,196
+Her bir öğrenci grubuyla ayrı ayrı toplantılar yapacağım. Bunlar için sizlere ya ders saatinde, dersin saatine sığmazsak belki cumartesini de alabilirim. Her birinizle ayrı ayrı toplantı yaparak projelerinizi anlatmanızı isteyeceğim. Proposanız elimde olacak. Bunun dışında yaptığınız projeyi bana adım adım anlatmanızı, çalışan projenizi göstermenizi isteyeceğim.
+
+20
+00:12:55,316 --> 00:13:02,475
+Ekran paylaşımı aldıktan sonra projeyi bana anlatacaksınız. Projenizle ilgili durum budur arkadaşlar.
+
+21
+00:13:04,156 --> 00:13:06,096
+Hocam bir şey sorabilir miyim?
+
+22
+00:13:06,596 --> 00:13:07,016
+Tabii ki.
+
+23
+00:13:08,179 --> 00:13:23,240
+Bu göndereceğimiz rapor iki sayfa olmuşsun demişsiniz ve onun haricinde bir de sistemin nasıl ayağa kaldırılması gerektiğini açıklayalım mı? Çünkü o da baya uzun sürer ben hani yaparsam bir iki sayfalık rapor daha atmam gerekir. Öfkeşiyor musunuz?
+
+24
+00:13:23,240 --> 00:13:34,519
+Evet yani bir readme dosyası yani bunu raporun bir parçası olarak da yapabilirsiniz. Ben maksimum iki sayfa yazmışsam onu şey yapabilirsiniz.
+
+25
+00:13:36,179 --> 00:13:56,059
+Onu proposal için düşünmüştüm ama şey için, rapor için daha uzun olabilir. İçerisinde projenizin nasıl ayağa kalkacağı, gerekli alt kütüphaneler gerekiyor mu? Yoksa projenizi indirdikten sonra asistanım direkt onu alıp Eclipse üzerinde çalıştırabilir mi?
+
+26
+00:13:56,639 --> 00:14:00,099
+Yahut da bir editör kullanması gerekiyor mu? Onları yazmanızı istiyorum.
+
+27
+00:14:01,268 --> 00:14:02,067
+Tamamdır bakayım.
+
+28
+00:14:02,528 --> 00:14:04,768
+Tamam. Onu da raporun bir parçası olarak düşünün.
+
+29
+00:14:07,443 --> 00:14:29,203
+Okey, şu anda geldiğimiz dersle ilgili geldiğimiz noktayı konuşacak olursak, bugün işleyeceğimiz konu clustering konusu. Bugün işleyeceğimiz konuyla beraber 9. çeptere kadar, kitabın 9. çeptere kadar neredeyse bütün çeptörleri işledik.
+
+30
+00:14:29,552 --> 00:14:53,432
+Bunlarla ilgili bütün dersin, benim işlediğim slide'ların hepsini zaten dersin sayfasında bulabilirsiniz. Bunun haricinde kitabın sayfasında da hem kitabın pdf'i, her bölümün pdf'i video lecture'larını bulabilirsiniz. Aynı zamanda kitabın PowerPoint slide'larını da bulabilirsiniz.
+
+31
+00:14:54,451 --> 00:15:03,711
+Bugün işleyeceğimiz konu dahil olmak üzere bütün ders kapsamında işlediğimiz bütün konular final sınavında sorulacak.
+
+32
+00:15:05,152 --> 00:15:11,451
+Birinci vizenizi şu ana kadar okuma, daha doğrusu birinci vizenizi sistemde...
+
+33
+00:15:13,652 --> 00:15:35,612
+Notlarınızı hesapladım. Sadece bir iki tane şeye dikkat etmem gerekli. Onu da hafta sonu açıklamış olurum. Onun dışında herhalde dersle ilgili başka söyleyeceğim bir şey kalmadı. Gelecek haftada projelerinizi değerlendiriyor olacağım.
+
+34
+00:15:38,612 --> 00:15:39,251
+Okey.
+
+35
+00:15:43,347 --> 00:15:47,587
+Evet arkadaşlar, bugün Clustering konusunu işleyeceğiz.
+
+36
+00:15:52,436 --> 00:15:54,395
+Şuna, Foskimo dağın.
+
+37
+00:15:59,700 --> 00:16:12,519
+Okey. Clustering ile bizim yapmaya çalıştığımız şey arkadaşlar, elimizdeki şu neden bütün ekranı almadı onu bir çözmeye çalışayım bir saniye.
+
+38
+00:16:24,532 --> 00:16:40,612
+Şöyle gidelim. Clustering'de çözmeye çalıştığımız şey bize verilmiş olan en tane data point'ı. Bunlar iki, bu görüntüde olduğu gibi iki boyutlu data point'lar da olabilir.
+
+39
+00:16:40,612 --> 00:16:48,692
+Ya da çok boyutlu data point'lar da olabilir. Bunları gruplandırmak, gruplar haline getirmek.
+
+40
+00:16:51,475 --> 00:17:08,715
+Bunu yaparken yapmaya çalıştığımız bu grupları oluştururken dikkat etmeye çalıştığımız iki şey var. Bunlardan bir tanesi aynı grup içerisine koyduğumuz data pointların birbirine yakın olmasını istiyoruz.
+
+41
+00:17:08,715 --> 00:17:19,175
+Farklı gruplar içerisine farklı oluşmuş grupların da birbirinden uzak olmasını istiyoruz olabildiğince.
+
+42
+00:17:19,476 --> 00:17:28,676
+Aynı grubun içerisine düşmüş olan data pointlar yakın olsun ve birbirinden farklı gruplar da birbirinden uzak olsun.
+
+43
+00:17:30,456 --> 00:17:37,416
+Şimdi bunu şuradaki şekilde baktığınız zaman eğer data pointlar iki boyutluysa hiçbir sorun yok.
+
+44
+00:17:37,996 --> 00:17:44,276
+Bunu kolaylıkla bu böylesi bir problemin üzerinden gelebiliriz. Bunu görselleştirerek de yapabiliriz.
+
+45
+00:17:44,915 --> 00:18:09,496
+Grupları tespit etmeye çalışabiliriz. Ama eğer data pointlar çok büyük boyutlu olursa, yani konuştuğumuz data pointlar 100 boyutlu, 200 boyutlu data pointlar olacak olursa, bunları görselleştirerek, bunlar içerisindeki grupları tespit etmek çok zor.
+
+46
+00:18:09,887 --> 00:18:20,048
+Hatta öyle bir noktaya geliyor ki iki nokta arasındaki uzaklık neredeyse bütün data pointlar için aynı noktaya gelebiliyor.
+
+47
+00:18:20,048 --> 00:18:24,688
+Böylesi büyük boyutlu data pointlar için.
+
+48
+00:18:26,548 --> 00:18:33,347
+Ve biz bu data pointları gruplandırırken, içindeki grupları tespit ederken
+
+49
+00:18:34,420 --> 00:18:43,960
+Ne dedik? Bunların birbirlerine yakınlığına bakıyoruz dedik. Yani aynı grup içerisindeki data pointlar birbirine yakın olsun, bir de farklı gruplar birbirinden uzak olsun.
+
+50
+00:18:43,960 --> 00:19:02,140
+İşte bu uzaklığı tespit etmek, yakınlığı tespit etmek için uzaklık metriyi kullanıyoruz. Daha önceden biz Euclid'in distance metriğini konuştuk, cosine distance metriğini konuştuk, Jakarta konuştuk, edit distance'dan bahsettik.
+
+51
+00:19:02,420 --> 00:19:27,780
+Bunların hepsi farklı distance metrikleri arkadaşlar. Bunların hepsini kullanabiliriz. Burada elimdeki az önce size gösterdiğim data pointlar üzerinde ben clustering işlemini gerçekleştirmişim. Grupları tespit etmişim. İdeal bir clustering sonucunda oluşan şey bu olmalı.
+
+52
+00:19:30,067 --> 00:19:50,188
+Ama elimdeki data pointlar bu şekilde olduğu gibi bu kadar birbirinden ayrı data pointlar olmayabiliyor. Gerçek hayat verilerine baktığımız zaman daha çok böyle bir şeyle karşılaşıyoruz. Yani birbirine kesişimi olan gruplardan bahsediyoruz.
+
+53
+00:19:53,172 --> 00:20:04,311
+Böylesi bir resimde biz uygun algoritmaları kullanarak grupları yani clusterları tespit etmek istiyoruz.
+
+54
+00:20:04,311 --> 00:20:13,031
+Özellikle bir de bu data pointların çok boyutlu olduğunu düşünecek olursanız problem oldukça zor bir problem haline dönüşüyor.
+
+55
+00:20:16,468 --> 00:20:28,608
+Az önce söyledik, iki boyutlu uzayda olan noktalar üzerinde, clustering yani grupların tespit edilmesi kolay.
+
+56
+00:20:28,608 --> 00:20:37,068
+Ama bu boyut sayısı arttığı zaman problem de challenging hale geliyor.
+
+57
+00:20:38,900 --> 00:20:53,340
+Özellikle mesela internette ulaşılabilir datasetleri arasından bir tanesi de bu Sky Object'lerin bulunduğu SkyCAD dataset'i.
+
+58
+00:20:53,340 --> 00:20:58,340
+Burada her bir uzayda olan her bir...
+
+59
+00:20:59,284 --> 00:21:14,164
+Ne diyelim, obje için 7 tane farklı boyut var. Bunlar Frequency Band'ler. Her bir objeyi 7 farklı boyutla ifade ediyoruz.
+
+60
+00:21:20,832 --> 00:21:34,832
+Farklı obje var. Şimdi bu objelerin her birisi de 7 boyutlu. Bunun üzerinde biz clustering işlemi gerçekleştirdiğimiz zaman birbirine yakın noktalar, data pointlar...
+
+61
+00:21:37,044 --> 00:21:53,184
+Yani belli bir objeyi ifade eden data point'ları olmuş oluyor. Yani bir galaksi ifade eden bir objeler birbirine daha yakın oluyor. Yıldızları ifade eden objeler birbirine daha yakın oluyor vs.
+
+62
+00:22:03,615 --> 00:22:24,456
+Zorlayıcı bir problem olduğunu ifade etmek için bundan bahsettim. Diğer bir problem ise örneğin büyük bir 10 mağaza üzerindeki müzik mağazasında satılan CD'lerin gruplandırılması.
+
+63
+00:22:24,456 --> 00:22:29,076
+Şimdi CD'leri klas gruplandırırken şöyle bir şey yapabilirsiniz.
+
+64
+00:22:31,615 --> 00:22:43,195
+Almış olan müşterileri bu CD'yi ifade eden vektör olarak gösterebilirsiniz. Yani mağazanın en tane müşterisi varsa.
+
+65
+00:22:43,827 --> 00:23:01,327
+Bu en tane müşteriden bu CD'yi almış olanları 1 diye gösterirsiniz. Diğerlerini 0 diye gösterirsiniz. Bu durumda ne oldu? Bu CD için bir tane en boyutlu vektör oluşturdunuz.
+
+66
+00:23:02,087 --> 00:23:05,907
+Aynı şekilde diğer CD'ler için de bunu gerçekleştirebilirsiniz.
+
+67
+00:23:11,827 --> 00:23:28,827
+Yüz ayında gruplandırma yaparak, clustering yaparak birbirlerine benzer olan CD'leri tespit ediyorsunuz. Bunun tam tersini de yapabilirsiniz. Bu sefer hani müşterileri gruplandırmak istiyorsanızdur, işte benzer...
+
+68
+00:23:29,907 --> 00:23:40,427
+beğenileri olan müşterileri gruplandırmak istiyorsanız bu sefer de müşterilerin satın aldığı CD uzayını oluşturursunuz her bir müşteri için.
+
+69
+00:23:40,832 --> 00:24:02,231
+Bir CD boyutları CD'lerden oluşan bir vektör oluşturursunuz. Eğer bu müşteri belli CD'leri almışsa onlara bir diğerlerine sıfır koyarsınız. Bu CD uzayında bir class link yaparaktan birbirine benzer beğenilir olan müşterileri bulabilirsiniz.
+
+70
+00:24:04,019 --> 00:24:09,900
+Diğer bir problem, hani dokümanların cluster edilmesi.
+
+71
+00:24:11,059 --> 00:24:29,299
+Burada da diyelim ki elinizdeki dökümanları dökümanın içerisinde bulunan kelimelerle ifade ediyorsunuz. Bir dökümanın içerisinde bulunan kelimeleri, önemli kelimeleri bir vektör olarak ifade ediyorsunuz.
+
+72
+00:24:29,299 --> 00:24:39,059
+İşte en tane kelime varsa totalde kelime uzayı içerisinde. Bu en tane kelimeden hangileri bu döküman içerisindeyse onlara bir, diğerlerine...
+
+73
+00:24:39,059 --> 00:24:59,319
+Bu sizin için bir tane kelime uzayındaki bir kelime vektörü. Bütün dokümanları bu şekilde yapıyorsunuz. Bunlar içerisinde bir clustering yaptığınız zaman bu durumda birbirine benzer aynı topik üzerinde olan birbirine benzer dokümanları buluyorsunuz.
+
+74
+00:24:59,680 --> 00:25:23,800
+Aynı şekilde bunu tam tersiyle yapabilirsiniz. Yani bir kelime alırsınız, belli kelimeleri alırsınız. Bu kelimeleri içeren elinizdeki bütün dökümanları sıralarsınız. Elinizdeki bütün döküman uzayından bu kelimeyi içerenlere bir diğerlerine sıfır koyarsınız. Yani boyutları döküman olan bir tane vektör yaratmış olacaksınız.
+
+75
+00:25:27,680 --> 00:25:30,680
+Üzerini gruplandırırsınız. Bu durumda da...
+
+76
+00:25:31,635 --> 00:25:58,155
+Gruplanmış olan bu dokümanların topiklerini bulabilirsiniz. Yani problemi iki önlü düşünebilirsiniz. Her iki problemde de büyük ölçekli data pointların çok sayıdaki ve boyutu da büyük olan hem sayıca büyük olan hem de boyutu büyük olan data pointların clustering problemi üzerinde konuşuyoruz şu anda.
+
+77
+00:25:59,124 --> 00:26:22,083
+Şimdi biz dedik ki bu gruplandırma işini yaparken biz uzaklığa bakıyoruz. Yani iki tane elimde vektör var. Bunlar en boyutlu vektörler. Bunların birbirine yakın olup olmamasına bağlı olarak bunları aynı gruba koyacağım ya da koymayacağım. Bu durumda bir uzaklık metriyi tanımlamam lazım.
+
+78
+00:26:22,548 --> 00:26:27,548
+Biz daha önce Jacquard Distance Metri'ni konuşmuştuk.
+
+79
+00:26:28,548 --> 00:26:33,548
+Hani iki doküman arasında bir...
+
+80
+00:26:35,347 --> 00:26:57,087
+Yakınlığı ifade etmek istiyorsam, bu iki doküman arasındaki ortak, bu iki dokümanın kesişimine de kalan kelime sayısı bölü, bu iki dokümanın toplamında kalan kelime sayısını böldüğüm zaman bana jacarte distansı veriyordu.
+
+81
+00:26:57,683 --> 00:27:06,683
+Ya da Euclidean Distance'ı konuşmuştuk. Euclidean Distance'da iki tane vektör arasındaki...
+
+82
+00:27:07,220 --> 00:27:18,659
+Uzaklığı bulmak için Euclidean Distance formülünü kullanarak uzaklığı bulabiliyorduk.
+
+83
+00:27:19,500 --> 00:27:35,139
+Üçüncü yöntem olarak bize verilmiş olan bir vektörü bir nokta olarak düşünüyorduk ve orijinden başlayarak yani sıfır noktasından başlayıp bu noktaya kadar sanki elimizde bir vektör varmış gibi düşünüyorduk.
+
+84
+00:27:35,220 --> 00:27:42,599
+Ve iki tane vektör arasındaki açıdan yola çıkaraktan bu iki vektörün cosine similaritiesine bakıyorduk.
+
+85
+00:27:42,659 --> 00:27:44,599
+Cosine distance metriğini kullanaraktan.
+
+86
+00:27:45,119 --> 00:27:49,339
+Bu üç tane metriyi de daha önceki derslerde konuşmuştuk.
+
+87
+00:27:52,627 --> 00:28:05,127
+Şimdi bu metrikleri kullanaraktan iki farklı iki kategorideki clustering algoritmalarını kullanarak arkadaşlar biz bu data point'ların gruplandırma işlemini yapıyoruz.
+
+88
+00:28:05,788 --> 00:28:13,408
+Birinci kategori hierarşik clustering, ikinci kategori ise point assignment tabanlı clustering.
+
+89
+00:28:14,195 --> 00:28:34,576
+Şimdi hiyerarşik clustering de kendi içinde ikiye ayrılmış. Bunlardan bir tanesi bottom-up approach, agglomative approach. Bu yaklaşımda en başta en tane benim data point'ım varsa en tane data cluster'ım var diyorum. Yani her bir noktayı bir tane cluster olarak ifade ediyorum.
+
+90
+00:28:35,347 --> 00:28:45,847
+Ondan sonra bu en tane cluster'ın içerisindeki bütün ikililerin, olası ikililerin arasındaki uzaklığı buluyorum.
+
+91
+00:28:47,147 --> 00:28:56,407
+Birin ikiyle uzaklığına bakıyorum, birin üçüyle uzaklığına, birin dörtle uzaklığına aynı şekilde, ikinin üçle uzaklığına, bütün olası ikililerin uzaklıklarına bakıyorum.
+
+92
+00:28:56,548 --> 00:29:02,228
+Ve bu uzaklıklardan en yakın olan hangisi ise onu bir küçük cluster haline getiriyorum.
+
+93
+00:29:02,771 --> 00:29:12,612
+Şimdi ne oldu? Bu sefer en eksi bir tane klaster'ım oldu. Çünkü iki taneyi birleştirdim, bir klaster haline getirdim. Bir tane klaster.
+
+94
+00:29:14,036 --> 00:29:25,976
+Artık içinde iki tane eleman içermiş oldu. Geriye kalan en eksi iki tane de içinde tek tane eleman olan cluster olmuş oldu.
+
+95
+00:29:26,196 --> 00:29:37,855
+Yeniden aynı şeyi yapıyorum. Bütün olası ikililerin arasındaki uzaklığı buluyorum. En küçük hangisi ise onu tekrardan birleştiriyorum. Bu şekilde yukarıya doğru çıkıyorum.
+
+96
+00:29:42,036 --> 00:29:51,476
+Birleştirerek yukarıya doğru çıkıyorum. Çıkarken de böyle bir metadata oluşturuyorum. Böyle bir ek data structure oluşturuyorum. Bunun da detayına az sonra gireceğiz.
+
+97
+00:29:52,395 --> 00:29:59,935
+Diğer approach ise top-down approach. Bunda ise en başta bu sefer bütün elimdeki data point'u tek bir cluster olarak düşünüyorum.
+
+98
+00:30:00,000 --> 00:30:22,360
+Ve bu sefer elimdeki bütün klasterı yukarıdan aşağıya öncelikle ikiye ayırıyorum. Sonra ayırmış olduğum ikilileri tekrardan ikiye ayırıyorum. Bu şekilde aşağıya doğru iniyorum. Bizim üzerinde yoğunlaşacağımız bottom-up approach, aglomative hierarchical clustering yaklaşımı.
+
+99
+00:30:23,188 --> 00:30:28,948
+Diğer kategori ise clustering'te arkadaşlar. Bu da point assignment tabanlı clustering.
+
+100
+00:30:30,900 --> 00:30:44,700
+Bu clustering de ilk başta kaç tane cluster olacağını algoritmalara söylüyoruz. Yani point design'ı tabanlı çalışan algoritmalara diyoruz ki en başta bu data içerisinde şu kadar cluster vardır.
+
+101
+00:30:44,700 --> 00:30:56,560
+Ve daha sonra bu algoritma ailesi her bir data point'ı bu başta belirlenmiş olan cluster'lara atıyor.
+
+102
+00:30:58,900 --> 00:31:13,380
+Hangi klastra daha yakınsa o ilgili klastırın elemanı olacak şekilde bir assignment yapıyor. Bütün datapointlar ilgili klastırlara atandıktan sonra o dataset içerisindeki gruplarını tespit edebiliyoruz.
+
+103
+00:31:16,660 --> 00:31:21,180
+Şimdi biz bu iki yöntemi sırasıyla konuşacağız.
+
+104
+00:31:23,923 --> 00:31:26,844
+Öncelikle hierarşik clustering'den başlayalım.
+
+105
+00:31:28,744 --> 00:31:42,384
+Az önce konuştuk, hierarşik clustering iki temel alt kategoriye sahip. Bir tanesi agglomative yaklaşım, ikincisi ise divisive yaklaşım. Biz agglomative yaklaşım üzerinde konuşuyor olacağız.
+
+106
+00:31:50,420 --> 00:31:57,420
+Sürekli olarak birbirine en yakın clusterları her adımda birleştiriyoruz.
+
+107
+00:31:57,840 --> 00:32:06,740
+Dikkat edin, ilk başta en tane cluster'ım var. Yani daha ilk algoritma çalışmaya başladığında her bir data point'e bir tane cluster diyor.
+
+108
+00:32:07,240 --> 00:32:08,100
+Bir saniye arkadaşlar.
+
+109
+00:32:22,195 --> 00:32:24,035
+Kusura bakmayın. Sesim geliyor mu?
+
+110
+00:32:26,675 --> 00:32:27,535
+Geliyor hocam.
+
+111
+00:32:27,755 --> 00:32:27,935
+Tamam.
+
+112
+00:32:29,515 --> 00:32:40,695
+En başta en tane cluster'ım var. Bu en tane cluster üzerinden başlıyorum. Bütün ikilileri tespit ediyorum. Bu ikililerin arasındaki uzaklığı buluyorum.
+
+113
+00:32:41,119 --> 00:32:53,539
+En yakın iki tane bir elemanlı cluster'ı birleştirip bir tanesinin arasındaki uzaklık, en yakın olan ikiliyi bulup onu tek bir cluster haline getiriyorum.
+
+114
+00:32:53,855 --> 00:33:04,515
+Ve bunu sürekli olarak yapıyorum. Yaparken de bu yan tarafta gördüğünüz dendogram adına verilen şuradaki data structure oluşturuyorum.
+
+115
+00:33:04,515 --> 00:33:12,515
+Şimdi buradaki bu algoritmanın çalışmasındaki üç tane önemli...
+
+116
+00:33:13,076 --> 00:33:40,656
+Bunlardan bir tanesi, birden fazla içerisinde data point olan bir cluster'ı nasıl represent ediyorsun? Az önce dedim ya, iki tane tek elemanlı cluster'ı birleştirip bir tane iki elemanlı cluster yaptığımı düşünün. Bu sefer bir sonraki aşamada içinde iki tane eleman olan bu cluster'ı neyle temsil edeceğim?
+
+117
+00:33:41,076 --> 00:33:50,355
+Çünkü içinde iki tane eleman var, diğerleri ise tek elemanlı cluster'lar. Karşılaştırma yaparken bu içinde iki tane eleman olan cluster'ı nasıl temsil edeceğim?
+
+118
+00:33:50,355 --> 00:33:52,276
+İkincisi,
+
+119
+00:33:53,907 --> 00:34:13,387
+Bu cluster'ların arasındaki uzaklığı buluyorum dedim. Hani bu uzaklığın hangisi birbirine daha yakındır? Yani ikililer arasındaki uzaklık en küçüktür diyebilmem için bir tane uzaklık metriyi söylemem gerekli.
+
+120
+00:34:13,876 --> 00:34:25,176
+Diyelim ki mesela içinde iki tane eleman olan bir tane cluster var. Bir de içinde üç tane eleman olan bir tane cluster var. Şimdi bu ikisi arasındaki uzaklığı söylemem lazım.
+
+121
+00:34:25,811 --> 00:34:49,032
+Neye dayalı söyleyeceğim? Acaba bu arkadaşların orta noktalarını bulup bu orta noktaları arasındaki uzaklığa mı bakacağım? Yoksa bu iki tane, birisinde iki eleman vardı, birisinde üç eleman vardı. Bu iki tane cluster'ın içerisinde birer tane noktayı seçip bu iki nokta arasındaki uzaklığa mı bakacağım?
+
+122
+00:34:53,811 --> 00:34:55,572
+Bu uzaklığı nasıl tespit ediyorum?
+
+123
+00:34:57,139 --> 00:35:14,420
+Üçüncü soru, tamam ben en baştan başladım. İçerisinde tek eleman olan en tane cluster var. Buradan başladım ve sürekli olarak birbirine en yakın olanları bulup birleştirdim ve bir daha aynı şeyi yaptım. Ama ne zaman duracağım?
+
+124
+00:35:25,139 --> 00:35:38,980
+En nihayetinde içerisinde en tane eleman olan bir tane cluster'a ulaşmışım. Ama burada bir yerde benim durmam lazım. Yani şurada, şuradaki, şuradan bir yerden yatay bir çizgi çektiğimde.
+
+125
+00:35:39,552 --> 00:35:57,811
+Diyelim ki mesela şuradan bir yatay çizgi çektim. Kaç tane cluster olmuş oldu? Şu bir tane cluster olmuş olur, şu bir tane cluster olmuş olur. Şuradan çektiğim için çizgiyi şu bir tane cluster, şu da bir tane cluster. Yani dört tane cluster olmuş olacak. Ama nerede durmalıyım? Bir de ona karar vereceğim.
+
+126
+00:36:00,572 --> 00:36:03,152
+Öncelikle birinci sorudan başlayalım.
+
+127
+00:36:08,788 --> 00:36:21,087
+Bu biçimde birden fazla eleman olan clusterları nasıl tespit, reprezent edebilirim? Bunun için kullandığımız arkadaşlar centroid buluyoruz.
+
+128
+00:36:21,087 --> 00:36:32,087
+Yani eğer kaç tane elemanım varsa, kaç tane data point varsa o cluster içerisinde bu data point'ların bir...
+
+129
+00:36:32,788 --> 00:36:44,868
+Average noktasını buluyorum. Bunu nasıl yapıyorum? Şimdi her bir data point ne olabilir? En boyutlu olabilir değil mi? Yani elimde en boyutlu bir vektör var. Her bir data pointu ifade eden.
+
+130
+00:36:45,268 --> 00:37:11,407
+Şimdi elimde kaç tane data point varsa o cluster içerisine düşen bu en boyutlu vektörlerin boyut bazında ortalamasını alacağım. Yani en nihayetinde yine bu cluster'ın içerisinde bulunan bütün data pointları ifade eden tek bir vektörüm olacak. Bu vektörün her bir boyutu da average değer olacak. Neyin average'i?
+
+131
+00:37:13,268 --> 00:37:35,947
+Bu noktadaki data point'ların o boyuta karşılık gelen değerlerinin average noktası olmuş olacak. Bunu yapabilmem için, yani centroid alabilmem için bu data point'ın her bir boyutundaki değerin mutlaka Euclidean Space'de olması lazım. Yani nümerik bir değer olması lazım. Kategoriyel bir değer değil de nümerik bir değer olması lazım.
+
+132
+00:37:38,260 --> 00:38:02,800
+Şimdi diğer soru, içinde birden fazla eleman olan iki tane klaster'ı arasındaki uzaklığı bulurken nasıl yapıyorum? Burada da bulmuş olduğum bu centroid'ler arasındaki uzaklığa bakıyorum. Kullanabileceğim yöntemlerden bir tanesi bu. İki tane centroid arasındaki uzaklığa bakaraktan klaster'lar arasındaki uzaklığı tespit edebilirim.
+
+133
+00:38:06,260 --> 00:38:09,560
+Nearness yahut da yakınlık
+
+134
+00:38:12,371 --> 00:38:21,791
+Yaklaşımları da var. İki tane klasterın birbirlerine en yakın olan noktaları arasındaki uzaklığa bakabilirsiniz.
+
+135
+00:38:21,791 --> 00:38:31,631
+Ya da iki tane klasterın birbirlerine en uzak noktalarındaki olan data pointlar arasındaki uzaklığa da bakabilirsiniz.
+
+136
+00:38:32,131 --> 00:38:40,371
+Ama biz burada neyi seçtik? Bu iki tane klasterın centroid noktaları arasındaki uzaklığa iki klasterın yakın.
+
+137
+00:38:40,371 --> 00:38:43,851
+Yakınlığını burada kullandık.
+
+138
+00:38:45,491 --> 00:38:52,311
+Şimdi hierarşik clustering'i burada bir şey yapalım. Örneğine bakalım.
+
+139
+00:38:52,471 --> 00:39:00,991
+Şimdi en başta 1, 2, 3, 4, 5, 6 tane noktam varmış.
+
+140
+00:39:01,951 --> 00:39:06,591
+Hierarşik clustering ile gruplandırmak istediğim 6 tane noktam varmış.
+
+141
+00:39:07,123 --> 00:39:19,483
+Şimdi ben ilk başta ne yapıyorum? Bunlar da iki boyutlu noktalar. Dikkat edin hepsi iki boyutlu noktalar. Öncelikle bir tane data structure'ımı initialize ettim. Elimde altı tane.
+
+142
+00:39:32,916 --> 00:39:59,976
+Okey. Elimde 6 tane data point'ım var. Bir data structure'ımı initialize ettim. Ne yaptım? İlk başta algoritma diyor ki, elimdeki bu 6 data point'ın her birisi olabilecek bütün ikilileri için aralarındaki uzaklığı bul. Yani 6'nın ikilisi kadar, 6'nın ikilisi, ikili kombinasyonu kadar farklı ikili var burada. Her birisi için aradaki uzaklığı bulmamayız.
+
+143
+00:40:00,000 --> 00:40:15,380
+Bunu yapıyorum. Bunu yaptığım zaman ilk karşıma çıkan 1-2 ile 2-1'in birbirine yakın olduğu. İlk iterasyonda bunu bulduktan sonra bunu bir cluster haline getiriyorum.
+
+144
+00:40:15,380 --> 00:40:27,380
+Ve dendogramda da ilk birleştirdiğim arkadaşlar bu iki arkadaş olduğu için hemen buraya bir tane bunları birleştirdiğimi ifade eden data structure'a bir ekleme yaptım.
+
+145
+00:40:28,436 --> 00:40:48,615
+Bu data structure'ın gösteriminde de şu y eksenini zaman ekseni olarak düşünebilirsiniz. Yukarıya çıkarken zaman ilerliyor diye düşünün. Burada ise data pointlarım var. Bu ilk merge ettiğim ikili. Dolayısıyla da zaman içerisinde en önde olan merge işlemi bu olmuş oldu.
+
+146
+00:40:49,684 --> 00:40:55,884
+Şimdi kaç tane cluster geriye kaldı bu işlemden sonra? Beş.
+
+147
+00:40:58,735 --> 00:41:26,615
+Üç tane item var. Data point var. Burada bir tane var. Dört. Bir de şu yeni oluşturduğum var. Beş. Artık dikkat edin. Şu ikilini ayrıca konuşmuyorum. Bunları merge ettiğim cluster'dan bahsediyorum. Şimdi tekrardan bu cluster'lar arasındaki ikilileri bulmam lazım. Yalnız bu yeni merge ettiğim bu mavi cluster'ı temsil ederken de ne yapıyorum? Buradaki centroid.
+
+148
+00:41:26,735 --> 00:41:47,415
+Bu centroid noktasıyla diğer tek elemanla bütün clusterların uzaklıklarına bakıyorum. Bu uzaklıklara baktıktan sonra bir sonraki aşamada şunu fark etmişim. Şuradaki ikili diğerlerine göre daha yakın.
+
+149
+00:41:47,795 --> 00:42:00,815
+Yani 4-1 ile 5-0 diğerlerine göre daha yakın. Dolayısıyla bir sonraki iterasyonda şunu birleştirmişim. Ve dendogramıma da bu ikisini birleştirdiğimi ifade eden eklemeyi yapmışım.
+
+150
+00:42:02,708 --> 00:42:14,047
+Ne olmuş oldu bu sefer? Bir burada, iki, üç, dört tane cluster olmuş oldu. Bu dört tane cluster'ın iki tanesi iki elemanlı, iki tanesi ise tek elemanlı.
+
+151
+00:42:15,268 --> 00:42:22,047
+Yine aynı şeyi yapıyorum. Bu dört tane cluster arasındaki ikililerin...
+
+152
+00:42:22,804 --> 00:42:40,963
+Uzaklıklarını buluyorum. Bu uzaklıkları bulduktan sonra bir sonraki aşamada şunu fark etmişim. Şuradaki mavi cluster ile şuradaki tek elemanlı cluster arasındaki uzaklık en yakın uzaklık. Dolayısıyla bir sonraki aşamada bunu birleştirmişim.
+
+153
+00:42:41,604 --> 00:42:49,264
+Görüyorsunuz bir sonraki aşamada bunu birleştiriyorum. Bu eklemeyi yapıyorum denedograma. Arkasından elimde şu cluster var.
+
+154
+00:42:50,804 --> 00:43:04,203
+Şu cluster var ve şu cluster. Yani üç tane cluster'a düşmüş oldum. Burada bu büyük yeni oluşmuş olan cluster'ı temsil edecek şekilde bunun da centroid noktasını buluyorum.
+
+155
+00:43:05,043 --> 00:43:15,943
+Ve bu centroid noktasıyla şuradaki ikili elemanı olan cluster'ın centroid noktasına ve buradaki tekli elemanlı cluster'ı uzaklıklarını tespit ediyorum.
+
+156
+00:43:16,943 --> 00:43:23,943
+Burada da şunu fark etmişim. Şu iki cluster arasında şu yeşil...
+
+157
+00:43:25,235 --> 00:43:43,275
+daire içerisindeki cluster ile teklik cluster arasındaki uzaklık birbirine en yakın olan uzaklıkmış. Dolayısıyla bunu merge ettim. Tek bir cluster haline getirdim. Şurada görüyorsunuz. En nihayetinde zaten iki tane cluster'ım kaldı ve bunları ne yapıyorum? Merge ediyorum.
+
+158
+00:43:43,275 --> 00:43:50,095
+Şimdi bu benim algoritmamın adım adım çalışma mantığı arkadaşlar.
+
+159
+00:43:50,516 --> 00:44:11,895
+Bunu gerçekleştirirken üçüncü sorum benim algoritmam nerede duracak? Yani sona kadar çünkü tek bir cluster oluşturmuş olmak bir anlam ifade etmiyor. Acaba nerede durmam gerekli ki doğru clustering değerine ulaşmış olayım? Şimdi ona geleceğiz.
+
+160
+00:44:17,907 --> 00:44:32,927
+Az önceki bu iki soruya yanıt verirken Euclidean Space'den bahsettik. Yani Euclidean Space ne demek? Her bir data point'ın elemanları, boyutları nümerik değerlerden oluşuyor demek.
+
+161
+00:44:33,396 --> 00:44:55,956
+Peki, bu boyutlardaki değerler eğer non-euclidean olursa yani kategoriyel değerler olursa bu durumda ben bu iki soruya nasıl yanıt vereceğim? Birinci sorumuz neydi? Bu cluster içerisinde birden fazla elemanı olan cluster'ı nasıl temsil edersin? Yani diğerleriyle nasıl karşılaştıracaksın?
+
+162
+00:45:00,692 --> 00:45:04,251
+Kullandığımız yöntem klastroid tespit ediyoruz.
+
+163
+00:45:13,204 --> 00:45:31,664
+Yüklidin Space'de bu arkadaşların aralarındaki uzaklığı ölçemiyorsam ben ne yapıyorum? Centroid'i hesaplayamıyorsam bu data pointlardan bir tanesini seçiyorum. Clustroid data pointini seçiyorum.
+
+164
+00:45:31,664 --> 00:45:41,204
+Bir tane data pointı seçeceğim. Peki bu data pointı seçerken farklı yöntemler kullanabilirim. Bunlardan bir tanesi diğerlerine...
+
+165
+00:45:41,204 --> 00:45:54,564
+En yakın olan data pointu ya da diğerleri içerisinde en merkezde olan data pointu seçerekten tamam bu cluster'ı bu data point ile temsil edeceğim diyebilirim.
+
+166
+00:45:56,467 --> 00:46:13,467
+İkinci sorum neydi? İki tane cluster var. Bu iki tane cluster arasındaki uzaklığı ölçmek istersem ne yapacağım? Bu durumda da bu iki tane cluster içerisindeki, bu iki tane cluster arasındaki...
+
+167
+00:46:14,612 --> 00:46:34,991
+Uzaklığı da temsil etmek için bu clustroidler arasındaki uzaklığa bakıyorum. Her clustery temsil eden bir tane data point seçmiş oldum. İki tane clustery arasındaki uzaklığa bakarken de bu clustery'e ait clustroidler arasındaki uzaklığa bakıyorum.
+
+168
+00:46:36,628 --> 00:47:02,528
+Yani artık average diye bir şey yok. Yani sanal bir centroid yok. Average almıyorum da bir tane gerçek data point'ı seçiyorum. O gerçek data point artık o cluster'ı temsil edecek diyorum. İki cluster arasındaki uzaklığa bakarken de centroidler yani average data point'lar arasında uzaklığa bakmıyorum. İki tane gerçek data point arasındaki uzaklığa bakıyorum.
+
+169
+00:47:03,923 --> 00:47:04,383
+Ok?
+
+170
+00:47:05,972 --> 00:47:26,732
+Buradan hani şuradaki örnekten bakabilirsiniz. Hani elimdeki böylesi üç tane elemandan oluşmuş olan bir tane klasterım varsa normalde bunlar Euclidean Space'de olmuş olsalardı buradan bir tane centroidi, average değer, sanal bir data point değeri bulmuş oluyorum average alarak.
+
+171
+00:47:26,732 --> 00:47:33,892
+Onu kullanıyordum ama eğer bu Euclidean Space'de değilse bu durumda elimdeki data point.
+
+172
+00:47:33,972 --> 00:47:41,292
+Bir tanesini seçiyorum. Burada ortada olanı seçmişim. Bütün şeyi temsil etmesi için.
+
+173
+00:47:47,572 --> 00:47:47,911
+Ok?
+
+174
+00:47:48,692 --> 00:48:04,512
+Burada hani Clustroid'i seçerken diğerlerine yakın olan noktayı seçeyim diye karar vermiştim. Bu yakınlığı da benim ifade etmem lazım.
+
+175
+00:48:16,692 --> 00:48:26,472
+Maksimum uzaklıkları toplamının minimum olmasını istiyorum. Yani şu noktadan başlayarak diğerlerine gidecek olsam bunların toplamanın minimum olmasını istiyorum.
+
+176
+00:48:26,472 --> 00:48:39,752
+Ya da bu noktadan ikinci şey olarak bu noktadan diğerlerine gittiğim uzaklıkların average'ını hesaplayacağım her bir nokta için. Bunun minimumu hangisindeyse onu seçeceğim.
+
+177
+00:48:40,192 --> 00:48:44,692
+Ya da yine bir noktadan diğerlerine gitmiş olduğum uzaklıklar.
+
+178
+00:48:44,692 --> 00:49:01,172
+Karelerinin toplamını bulacağım her bir nokta için. Bunlar arasından en küçüğü hangisi ise onu seçeceğim. Yani clauses derken de benim bu clauses'ı kastederken neyi kastettiğimi mutlaka belirlemem gerekiyor.
+
+179
+00:49:01,932 --> 00:49:09,252
+Unutmayın bu arada iki tane en boyutlu ve boyutlarında kategoriyel değerler olan iki tane.
+
+180
+00:49:10,708 --> 00:49:28,588
+İki tane noktanın arasındaki uzaklığı hesaplayabiliyoruz. Hani bu edit distance demiştik buna. Jacquard Coefficient ile bunu yapmıştık. Bunu derste konuşmuştuk.
+
+181
+00:49:38,356 --> 00:49:49,796
+İki tane en boyutlu kategoriyel değere sahip nokta arasındaki uzaklığı Edit Distance yöntemiyle hesaplayabiliyorum.
+
+182
+00:49:54,675 --> 00:49:59,375
+Şimdi yanıt vermediğimiz üçüncü soru kalmıştı.
+
+183
+00:50:00,000 --> 00:50:19,940
+Şuradan başlamıştık. Hani üç tane soruya yanıt vermemiz gerekiyordu. Bu iki tane soruya hem Euclidean Space için hem de Non-Euclidean Space için yanıt verdik. Euclidean Space için centroidleri hesaplayacağız dedik. Non-Euclidean Space için ise clustroidleri tespit edeceğiz. Clustroidler de gerçek data pointlardı.
+
+184
+00:50:20,400 --> 00:50:26,619
+Hierarşik clustering de üçüncü sorumuz da ben bu algoritmayı ne zaman durdurayım?
+
+185
+00:50:29,780 --> 00:50:45,220
+Şimdi bunun için bir yöntem en başta aynı partition tabanlı clustering algoritmaları gibi en başta data hakkında bir fikriniz vardır. Dersiniz ki burada K tane cluster vardır.
+
+186
+00:50:45,579 --> 00:50:57,780
+Yani mesela şeyi düşünelim, siz tişört size'larını biliyorsunuz. İşte small, medium, large, x-large. Daha baştan burada hani dört kategori olduğunu biliyorsunuz.
+
+187
+00:50:57,780 --> 00:51:09,440
+Biliyorsunuz. Size de çok sayıda tişört gönderilmiş. Siz bunları clusterlara ayırmak istiyorsunuz. Dolayısıyla en başta kaç tane cluster olduğunu biliyorsunuz. Bu basit bir örnek.
+
+188
+00:51:09,440 --> 00:51:19,360
+Eğer data hakkında bilginiz yoksa yalnız bu durumda baştan cluster sayısını bilmiyorsunuz. İkinci yaklaşımı kullanabilirsiniz.
+
+189
+00:51:22,579 --> 00:51:28,940
+Her algoritmanın her bir adımında cohesion metriğini hesaplıyoruz.
+
+190
+00:51:29,480 --> 00:51:31,539
+Cohesion metriği şunu ifade ediyor.
+
+191
+00:51:32,240 --> 00:51:37,119
+Oluşturulmuş olan clustering'in iyi ya da kötü olduğunu ifade ediyor.
+
+192
+00:51:37,599 --> 00:51:39,980
+Peki bu cohesion metriğini nasıl hesaplıyorum?
+
+193
+00:51:41,780 --> 00:51:46,180
+Şimdi bu cohesion metriği farklı şekillerde hesaplanabilir.
+
+194
+00:51:46,180 --> 00:51:47,480
+Bunlardan bir tanesi.
+
+195
+00:51:50,195 --> 00:52:03,515
+Çapa bakabilirsiniz. Elinizdeki her bir clustering'in birbirinden en uzakta olan noktaları arasındaki uzaklığa bakabilirsiniz.
+
+196
+00:52:06,996 --> 00:52:20,336
+İkincisi, Radius'e yarı çapa bakabilirsiniz. Bu da centroid ile o cluster içerisine düşmüş olan en uzaktaki noktanın arasındaki uzaklığa bakabilirsiniz.
+
+197
+00:52:34,224 --> 00:52:38,664
+Yarı çapa ya da çapa bölünmesiyle bulunabilir.
+
+198
+00:52:39,624 --> 00:52:44,164
+Yahut da yarı çapın karesine bölünmesiyle bulunabilir.
+
+199
+00:52:44,164 --> 00:52:52,403
+Şimdi benim eğer bulmuş olduğum, diyelim ki ben buradan şöyle.
+
+200
+00:52:52,864 --> 00:53:11,884
+Yapalım. Evet. Şimdi buradan başladım. Birinci adımımı bitirdim algoritmama. Ne yaptım? Birinci adımımda şu ikiliyi birleştirdim. Bir tane cluster haline getirdim. Elimde kaç tane cluster oldu? Şurada üç, dört, bir de şuradaki ikiliyi birleştirdim. Beş tane var.
+
+201
+00:53:20,864 --> 00:53:29,864
+Bu beş tane farklı cluster olmuş olsa benim koerjimetrim nedir? Mesela az önce konuştuk yoğunluğa bakabilirim. Burada...
+
+202
+00:53:30,452 --> 00:53:50,252
+Burada tek eleman var ve bunun yarı çapını bir diye düşünelim. Burada iki tane eleman var. Bunun yarı çapını hesaplayıp ikiyi bu yarı çapa böleceğim. Burada tekli elemanlar var.
+
+203
+00:53:58,452 --> 00:54:10,452
+Bu clustering sonucu için bir tane cohesion değeri bulabilirim. Arkasından bir sonraki aşamada yeni şeyi eklediğim zaman...
+
+204
+00:54:12,083 --> 00:54:22,703
+Yeni merge işlemini gerçekleştirdiğim zaman, bir tane daha clustering bulduğum zaman bu sefer bu durumdaki cohesion değerini bulurum.
+
+205
+00:54:22,703 --> 00:54:28,431
+Eğer benim cohesion değerim önceden belirlemiş olduğum...
+
+206
+00:54:28,431 --> 00:54:54,931
+Threshold'ın altına düşecek olursa bu durumda ben clustering'i noktalarım. Yani bulmuş olduğum cluster'lar içerisindeki noktalar hem birbirlerine yakın olacak olursa ve ortalamadaki cohesion değerim benim önceden belirlemiş olduğum Threshold'ın değerin altında olacak olursa ben o noktada clustering'i durdurabilirim.
+
+207
+00:54:57,876 --> 00:54:58,216
+Ok.
+
+208
+00:55:02,291 --> 00:55:09,512
+Şimdi peki bu algoritmanın kompleksitesi nedir? Time kompleksitesi nedir?
+
+209
+00:55:09,512 --> 00:55:14,512
+Şimdi biz bu algoritmada ne yaptık? Öncelikle her aşamada...
+
+210
+00:55:15,284 --> 00:55:28,244
+Her aşamada, burada 6 noktam vardı, her aşamada n'in ikililerini bulduk. Yani kaç tane ikili olabilecek, kaç tane ikili varsa bunlar arasındaki uzaklığı bulduk.
+
+211
+00:55:28,244 --> 00:55:43,284
+n'in ikilisini düşündüğünüz zaman bu şu demektir, n kare demektir. Yani n kare komplekslisinden bahsediyoruz. Çünkü n üzeri 2 tane.
+
+212
+00:55:43,284 --> 00:55:53,284
+farklı ikilinin arasındaki uzaklığı bulmuş oldum. Peki bunu bir tane...
+
+213
+00:55:53,376 --> 00:56:04,536
+elemanı bir başka elemanla cluster etmek için yaptım. Totalde bu işlemi sürekli buna bir tane daha, bir tane daha eleman ekleyerek gitmem lazım.
+
+214
+00:56:04,536 --> 00:56:14,156
+Totalde n tane eleman var. Her bir adımında eğer ben n square'dan bahsediyorsam bu durumda n küp kompleksden bahsediyorum.
+
+215
+00:56:16,179 --> 00:56:24,039
+Yani ben bütün bu iterasyonu tamamladığım zaman totaldeki benim zaman kompleksitim ne olacak? En üzeri 3.
+
+216
+00:56:25,780 --> 00:56:49,659
+Bu da yüksek bir maliyeti olan algoritma. Yani küçük veri setleri için, memoriye sığacak veri setleri için bunda bir problem yok. Ama az önce dersin başında verdiğimiz bu SkyCat örneğinde olduğu için 2 milyar tane 7 boyutlu data point'tan oluşan bir veri seti için oldukça yüksek bir maliyet oluşturuyor.
+
+217
+00:56:53,780 --> 00:57:06,320
+algoritmasını biraz daha optimize edecek olursanız n kare log n gibi bir time kompleksitesine indirebiliyorsunuz bu algoritmayı ama bu bile yine yüksek bir maliyet.
+
+218
+00:57:06,320 --> 00:57:20,559
+Yani büyük veri setleri için kullanabileceğimiz bir algoritma değil, sadece in memoriye sığacak, physical memoriye sığacak büyüklükte data setleri için kullanılabilecek bir algoritma.
+
+219
+00:57:22,003 --> 00:57:26,423
+Bir 10 dakika ara verelim arkadaşlar sonra kaldığımız yerden devam edelim.
+
+220
+01:06:28,148 --> 01:06:32,088
+Evet arkadaşlar, devam edelim. Sesim geliyor mu? Bir teyit eder misiniz lütfen?
+
+221
+01:06:34,828 --> 01:06:35,448
+Geliyor hocam.
+
+222
+01:06:37,228 --> 01:06:37,928
+Teşekkürler.
+
+223
+01:06:45,012 --> 01:06:58,132
+Bir hiyerarşik tabanlı algoritmalardan aglomative bottom-up yöntemini konuştuk. Şimdi de partition tabanlı algoritmalardan bir tanesini konuşacağız. Bu da Keymins algoritması.
+
+224
+01:06:58,692 --> 01:07:04,251
+Az önceki derste hiyerarşik clustering algoritmasının komplekslisini gördünüz.
+
+225
+01:07:08,307 --> 01:07:31,467
+En iyi ihtimalle n kare log n gibi bir kompleksitesi var. Yani büyük veri setleri üzerinde uygulayabileceğimiz bir algoritma değil. Bu yüzden de K-Means algoritmasına bakıyoruz. K-Means algoritması daha büyük ölçekli veriler üzerinde kullanılabilen bir algoritma. Bakalım bu algoritma nasıl çalışıyor.
+
+226
+01:07:33,043 --> 01:07:51,019
+Şimdi bu algoritmanın bir tane assumption'ı var. Bu assumption'da şu, varsayım şu. Diyor ki bu algoritma mutlaka Euclidean Space üzerinde çalışır. Yani bu algoritmayı kullanırken…
+
+227
+01:07:52,052 --> 01:08:08,092
+Bu şekilde üzerinde çalışacağımız data point'ların her bir boyutundaki değer nümerik bir değer olması lazım. Yani bu data point'ların bir average'ını alabilmem gerekiyor. Böyle bir assumption'ı var. K-Means ve K-Means ailesindeki algoritmalar.
+
+228
+01:08:08,820 --> 01:08:20,460
+Şimdi bu algoritma aynı zamanda şunu da diyor. Diyor ki en başta bir tane data hakkında bir bilgi sahibi olman gerekiyor. Yani bir K değerini baştan seçmen gerekiyor.
+
+229
+01:08:20,460 --> 01:08:34,460
+Bu K değerini seçme yöntemi için başta kaç tane cluster olacak diye karar vermek için uygulayabileceğimiz yöntemler var. Onu az sonra konuşacağız.
+
+230
+01:08:36,819 --> 01:08:41,180
+Başta kaç tane cluster olacağını bizim söylememizi istiyor.
+
+231
+01:08:41,180 --> 01:08:45,180
+Bu algoritma ile...
+
+232
+01:08:46,452 --> 01:09:00,731
+Diğer bir yaptığımız şey, kaç tane K cluster'ı olacağını söylememizin yanı sıra her bir cluster için bir tane data point seçmemiz gerekiyor.
+
+233
+01:09:01,771 --> 01:09:07,851
+İlk başta başlangıç olarak yani K tane data point seçmemiz gerekiyor dataset içerisinden.
+
+234
+01:09:14,452 --> 01:09:27,211
+Assignment yöntemiyle atamamız gerekiyor. Yani üç tane bu algoritma ile beraber gelen bizim constraintimiz var. Bizi sınırlayıcı üç tane.
+
+235
+01:09:28,372 --> 01:09:44,012
+Birincisi, bizim cluster yapacağımız data pointların Euclidean Spacede olması gerekiyor. Yani bu data pointların bir average noktasını bulabilmem gerekiyor. İki, başta kaç tane cluster olacağını söylemem gerekiyor algoritmaya.
+
+236
+01:09:44,012 --> 01:09:55,212
+Üçüncüsü, bu algoritmaya mevcuttaki data set içerisinden k tane data point seçip vermem gerekiyor. Bundan initialize it.
+
+237
+01:09:56,372 --> 01:09:59,512
+Bundan başlayaraktan clustering yapmaya başlıyor çünkü.
+
+238
+01:10:02,484 --> 01:10:25,344
+Şimdi bu algoritma bunları aldıktan sonra algoritmanın yaptığı şey şu. En başta K tane data point var. Bu data pointa elimdeki data set üzerinden bir tane bir defa gidiyor. Bu bütün data set'teki diğer data pointları bu K tane data pointa atıyor.
+
+239
+01:10:30,484 --> 01:10:57,144
+Her bir data point ile bu K tane cluster'ı temsil eden data point'lar arasındaki uzaklığa bakıyor ve hangisine yakınsa diyor ki sen bundan sonra artık bu cluster içerisinde olacaksın. Ondan sonra bu atamayı yaptıktan sonra ne yapıyor? Bu K tane cluster'ın her birisinin sentroidlerini tekrardan hesaplıyor.
+
+240
+01:10:57,503 --> 01:11:25,043
+İlk defa ne yapıyor? Elimdeki dataset'in tamamı üzerinden gittim. Her bir data point'u birer tane cluster'a atadım ve bütün datayı sken ettikten sonra atanmış olan, atama yapılmış olan cluster'ların her birisi için centroid değerini buluyorum.
+
+241
+01:11:25,363 --> 01:11:32,363
+Ondan sonra da ne yapıyorum? Bu centroid değerini bulduktan sonra...
+
+242
+01:11:33,908 --> 01:12:01,628
+Tekrardan elimdeki data pointları bu yeni oluşmuş centroid değerlerini atıyorum. Bu iki ve üç nola adımları ise sürekli yapıyorum. Elimdeki data pointları tekrardan closest centroid'e atıyorum. Ondan sonra bütün atamalar gerçekleştirdikten sonra centroid değerlerini update ediyorum.
+
+243
+01:12:01,908 --> 01:12:14,828
+Tekrardan data pointların hepsini yeni centroid değerlerine atıyorum. Ondan sonra atamaların hepsi bittikten sonra yeni oluşmuş olan clusterların centroid değerlerini hesaplıyorum. Bunu sürekli yapıyorum.
+
+244
+01:12:15,188 --> 01:12:35,288
+Belli bir noktada benim algoritmam Converge oluyor. Bu Converge için stopping noktam da şu. Eğer yeniden assign etme zamanında yani centroidleri buldum ve data pointları tekrardan mevcut centroidlere atamaya çalışıyorum.
+
+245
+01:12:43,188 --> 01:12:48,108
+Aynı klasterlara düşüyorsa bu durumda artık benim algoritmam konvorj olmuş demektir.
+
+246
+01:12:49,648 --> 01:12:51,427
+Burada bir örneğine bakalım.
+
+247
+01:12:52,851 --> 01:13:00,332
+Şimdi en başta şurada, şuradaki X ile gösterilen data pointlarım varmış.
+
+248
+01:13:01,332 --> 01:13:10,672
+Bu en başta da ben demişim ki benim iki tane eleman, cluster'ım olacak. En başta bunu belirtmişim algoritmaya.
+
+249
+01:13:11,371 --> 01:13:19,711
+Ve yine algoritmaya iki tane data point vermişim. Algoritma içerisinde iki tane initial data point seçmişim.
+
+250
+01:13:20,851 --> 01:13:35,791
+Algoritma bu aşamada çalışmaya başlıyor. İki tane initial seed data point'um var. Ne yaptı? Elimdeki bütün data point'ları öncelikle bu initial cluster'lara atadı.
+
+251
+01:13:36,711 --> 01:13:47,152
+Initial cluster'lara ataması bittikten sonra iki tanesi şunun tarafında kalmış. Şunlar ise buradaki nokta tarafında kalmış.
+
+252
+01:13:47,731 --> 01:13:56,471
+Atamalar bittikten sonra ne yapıyorduk? Atamaları bitirdikten sonra yeni oluşmuş clusterların centroidlerini buluyorduk.
+
+253
+01:13:57,871 --> 01:14:05,931
+Şurada atamaları bitirmişim. Bunların centroidini bulacağım. Bu pembe cluster'ın bir de bu mavi cluster'ın centroidlerini bulacağım.
+
+254
+01:14:09,587 --> 01:14:34,887
+Centroid'lerini buldum. Ondan sonraki aşamada ne yapıyordum? Tekrardan elimdeki bütün data point'ları ne yapıyordum? Bu centroid'lere atıyordum. Bu centroid'lere yeni oluşan centroid'lere atıyordum. Bu atama sonucunda şuradaki arkadaşlar şuradaki cluster içerisinde kalmış. Şunlarsa şuradaki dört tane ise bunun içerisinde kalmış.
+
+255
+01:14:36,979 --> 01:15:04,979
+Bir sonraki aşamada tekrardan bu yeni oluşmuş yani şurada yeni oluşmuş şunun için centroid değerlerini bulacağım. Centroid değerini buldum ve bu centroid şuradakinin de şunun da centroid değerini bulmuşum. Bu centroid değerlerini bu sefer yeniden elimdeki bütün data pointları atamaya başlıyorum.
+
+256
+01:15:04,979 --> 01:15:23,879
+Bu atama sonucunda da şuradaki data pointlar bu şu şeyde kalmış, cluster'da. Şuradaki data pointlar ise şuradaki cluster içerisinde kalmış. Şimdi bunu yaptıktan sonra tekrardan bu yeni oluşmuş olan cluster'lar için centroid değerlerini bulacağım.
+
+257
+01:15:25,363 --> 01:15:45,203
+Burada benim algoritmam sonlanmış. Yeni centroid değerlerini bulduktan sonra tekrardan atama yaptığımda yine aynı data pointlar aynı cluster'lara geldiği için benim algoritmam converge etmiş. Yani üçüncü iterasyon sonucunda artık nihai cluster'ları bulmuş.
+
+258
+01:15:48,020 --> 01:15:58,020
+Şimdi burada benim bu algoritmamın ilk başta istemiş olduğu şeyler nelerdi? Bir tanesi K'nın ne olacağını algoritmama söylemem gerekiyordu.
+
+259
+01:15:59,764 --> 01:16:10,943
+Peki bu k'nın değerini ben nasıl bileceğim? Yani data hakkında önceden bilgi sahibi olmayacağımı varsayıyorum. Bu durumda k'nın değerini nasıl bileceğim?
+
+260
+01:16:10,943 --> 01:16:20,184
+Bunun da yöntemi şu arkadaşlar. Öncelikle biz ne yapıyoruz? Farklı k'ları kullanarak da plus link yapıyoruz.
+
+261
+01:16:21,460 --> 01:16:28,119
+Okey. Farklı K değerlerini kullanaraktan clustering yapıyoruz ve K'ların değerlerini sürekli arttırıyoruz.
+
+262
+01:16:28,564 --> 01:16:39,364
+Şimdi burada mesela elimde hani şuna baktığımız zaman buradaki data pointları cluster'a oturttuğunuz zaman burada üç tane temel cluster var.
+
+263
+01:16:39,804 --> 01:16:43,684
+Onun dışında şurada tek başına olması gereken iki tane de data point var.
+
+264
+01:16:44,963 --> 01:16:56,564
+Ama ben bu yapıyı önceden bilmediğim için data üzerinde kaç tane ideal cluster olduğunu bilmediğim için K'yı 2'den başlatıyorum.
+
+265
+01:16:56,564 --> 01:17:03,543
+İkiden başlatmışım, clustering işlemini uygulamışım ve iki tane cluster oluşmuş.
+
+266
+01:17:05,543 --> 01:17:12,564
+Bu iki tane cluster oluştuktan sonra bu noktalar arasındaki...
+
+267
+01:17:13,439 --> 01:17:21,659
+Average Distance'ı buluyorum. Şuradaki noktalar arasındaki Average Distance, şuradaki noktalar arasındaki Average Distance'ı buluyorum.
+
+268
+01:17:21,659 --> 01:17:34,000
+Ve bunu K'yı arttırıp tekrardan deneyeceğim. Bu sefer K'yı 3 haline getirdim. Tekrardan denedim. Buradaki Average Distance'ları buldum.
+
+269
+01:17:41,439 --> 01:17:59,000
+HDFS'ların toplamı şuradaki HDFS'ların toplamına göre ne olacaktır? Daha düşük olacaktır. Sonra K'yı 3 yaptıktan sonra bu sefer K'yı 4 yapıyorum. Tekrardan HDFS'ları buluyorum. Ondan sonra K'yı 5 yapıyorum ve devam ediyorum.
+
+270
+01:17:59,380 --> 01:18:12,720
+Şimdi dikkat edin şurada y ekseni average distance bu average distance'ı söylerken de hani centroidi olan average distance onu söylemeyi unuttuk.
+
+271
+01:18:13,340 --> 01:18:23,659
+Buradaki şuradaki klasterın centroidi burada. Bütün noktaların bu centroidi olan uzaklıklarının average'ından bahsediyoruz. Burada da aynı şekilde.
+
+272
+01:18:24,307 --> 01:18:30,528
+Bir sonraki klasterda da bütün noktaların buradaki sentroidi olan average distance'ından bahsediyoruz.
+
+273
+01:18:31,528 --> 01:18:36,488
+Şimdi bu y ekseni average distance'ı gösterdiğini düşünelim.
+
+274
+01:18:37,007 --> 01:18:40,347
+x ekseni de k değerini gösterdiğini düşünelim.
+
+275
+01:18:40,747 --> 01:18:44,288
+Şimdi burada k eşittir 2'den başlıyoruz.
+
+276
+01:18:44,667 --> 01:18:46,307
+Sonra k eşittir 3'e düşüyoruz.
+
+277
+01:18:47,068 --> 01:18:50,007
+Sonra k eşittir 4, sonra k eşittir 5.
+
+278
+01:18:50,347 --> 01:18:51,807
+Hep bu şekilde gidiyoruz.
+
+279
+01:18:52,307 --> 01:19:10,208
+Her bir yapmış olduğumuz clustering değeri için average distance'ların, centroidi olan average distance'ların toplamlarını, farklı cluster'lar için bulduğumuz değerlerin toplamlarını buraya yazdığımızı düşünelim.
+
+280
+01:19:12,756 --> 01:19:27,476
+Bu durumda böyle bir eğri çıkıyor karşımıza. Burada da hangi K'yı seçeceğimize şu şekilde karar veriyoruz. Eğer bir K değerinden diğer K değerine giderken,
+
+281
+01:19:27,891 --> 01:19:40,072
+Yani gittiğim ivme birdenbire eğer azalıyorsa bu durumda ne yapıyorum? Azalma değeri en yüksek olan nokta hangisiyse o K değerini seçiyorum.
+
+282
+01:19:40,072 --> 01:19:54,172
+Yani şurada şuraya bakalım şu K değerinden şu K değerine gitmişim. Şurada şu ikisi arasında şöyle Y eksenine iz düşümüne baktığımız zaman bir azalma değeri var.
+
+283
+01:19:54,484 --> 01:20:15,224
+Şu K değerinden şu K değerine gittiğim zaman Y ekseninde iz düşümüne baktığım zaman bir azalma değeri var. Şu K değerinden şuradaki K değerine gittiğim zaman Y eksenine baktığımda bir azalma değeri var. Azalma değeri en yüksek oranda gerçekleşen nokta hangisi ise ben orada duruyorum.
+
+284
+01:20:15,636 --> 01:20:28,896
+Burada azalma değeri şunla şunu karşılaştırdığım zaman çok yüksek oranda değil ama şunla şunu karşılaştırdığım zaman bu average distance'in azalma değeri çok artmış.
+
+285
+01:20:28,896 --> 01:20:41,416
+Yani şu ikisi arasındaki şu noktanın y'ye düşen izdünümü arasındaki uzaklığa bakın. Bir de şu noktayla şu noktanın y'ye düşen arasındaki izdünümün uzaklığına bakın.
+
+286
+01:20:43,636 --> 01:20:53,056
+Birdenbire çok düşüyor. Azalma ilmesi birdenbire çok düşüyor. Bu durumda ben ne yapıyorum? En doğru K değerini tespit ediyorum.
+
+287
+01:20:57,268 --> 01:21:10,507
+Şimdi bu kullanılan yöntemlerden bir tanesi. Yani ben en başta data hakkında herhangi bir bilgiye sahip değilim. En doğru k'yı nasıl seçeyim için kullandığım yöntemlerden bir tanesi.
+
+288
+01:21:14,175 --> 01:21:15,175
+Şimdi...
+
+289
+01:21:14,163 --> 01:21:28,884
+Bu ilk başta kaç tane K olacağını belirledim. Bu yöntemi elbow yöntemi diyoruz. Bu yöntemi kullanaraktan kaç tane K cluster olacağına karar verdim. Diğer problemim neydi?
+
+290
+01:21:29,939 --> 01:21:50,719
+Daha doğrusu bu algoritmanın getirmiş olduğu diğer assumption neydi? İlk baştaki K noktasını seçmem gerekiyor. Yani K cluster olduğunu buldum tamam ama algoritma ilk başta K tane data point istiyor ki buna buradan başlayaraktan assignment işlemlerini gerçekleştirsin.
+
+291
+01:21:50,719 --> 01:21:57,799
+Bunun için de arkadaşlar kullanabileceğim farklı yöntemler var. Bunlardan bir tanesi sampling yöntemi.
+
+292
+01:21:57,939 --> 01:22:23,520
+Sampling yöntemi şu, benim çok büyük ölçekli verim var. Bu verinin tamamını in memoriye getiremiyorum, fiziksel memoriye getiremiyorum. Bu durumda ne yapıyorum? Bunun üzerinde bir sampling gerçekleştiriyorum. Random olarak bu datayı temsil eden, diyelim ki %10'unu memoriye sığacak kadarlık bir bölümünü seçiyorum.
+
+293
+01:22:24,435 --> 01:22:35,536
+Seçtikten sonra bir önceki derste gördüğümüz in-memory tabanlı algoritmalardan birisini kullanıyorum. Örneğin, Hierarchic Clustering algoritmasını kullanıyorum.
+
+294
+01:22:43,891 --> 01:23:06,951
+cluster oluşturuyorum ve bu cluster'lar içerisindeki centroid'e en yakın olan noktaları seçiyorum. Ve diyorum ki bu noktalar, diyelim ki K tane cluster'ım varsa bu K tane cluster içerisindeki centroid'e her bir cluster'ın centroid'ine en yakın olan noktalar benim başlangıç noktalarım olacak diyorum.
+
+295
+01:23:07,315 --> 01:23:24,216
+Bu sampling yaklaşımıyla ilk initial k point'ın seçimi. Diğer bir yöntem ise şu. Yine elimde in memory'e sığmayacak büyüklükte bir veri seti var. Bu veri seti üzerinden k tane noktayı seçmem gerekiyor.
+
+296
+01:23:27,859 --> 01:23:43,000
+İlk olarak olabilecek en uzaktaki noktaları seçiyorum. Yani diyelim ki bir tane random olarak bir nokta seçtim. Sonra ikinci noktayı seçerken bu birinci noktaya olabilecek en uzak noktadaki data point'i seçiyorum.
+
+297
+01:23:43,159 --> 01:23:53,000
+Üçüncü noktayı seçerken bu ilk seçmiş olduğum iki data point'e olabilecek en uzak noktadaki data point'i seçiyorum. Sürekli olarak...
+
+298
+01:23:53,140 --> 01:24:08,940
+Birbirinden olabildiğince uzak, data seti içerisinde bulunan, bildirinli olabildiğince uzak noktalarda olan K tane data point'ı seçiyorum. Ve bu initial K data point'tan başlayarak ben ne yapıyorum? Algoritmamı çalıştırıyorum.
+
+299
+01:24:11,252 --> 01:24:25,572
+Şimdi bu konuştuğumuz ne yaptık? Bu assignment tabanlı çalışan bu K-Means algoritmasında öncelikle algoritmanın nasıl çalıştığını gördük.
+
+300
+01:24:26,032 --> 01:24:35,032
+Algoritmanın assumption'ı vardı. Euclidean space olmasını istiyordu. En baştan K değerini yani cluster sayısını vermemizi istiyordu.
+
+301
+01:24:35,032 --> 01:24:39,212
+Bir de K tane initial data point seçmemizi istiyordu.
+
+302
+01:24:39,252 --> 01:24:40,392
+Ve algoritma çalışıyordu.
+
+303
+01:24:40,916 --> 01:24:58,676
+Biz bu birinci assumption'a okey dedik, o konuda bir şey yapamadık. Yani Euclidean Space'de çalışacağını söyledik. İkinci şey için ise Elbow yöntemini kullanaraktan optimum K değerini ilk başta hesaplayabileceğimizi gördük.
+
+304
+01:25:08,916 --> 01:25:35,736
+Data Point'u seçme yöntemiyle Initial K Data Point'u seçebileceğimizi gördük. Şimdi bu algoritmanın komplekslisi nedir peki? Şimdi bu algoritma en başta K tane Data Point seçmiştik ya algoritma Initial Seed olarak. Bu K tane Data Point'a bu N tane Data Point'u sürekli atıyor.
+
+305
+01:25:36,435 --> 01:25:53,755
+Yani datayı her bir iterasyonda ne yapıyor? Bütün dataset üzerindeki bütün data pointları kendisine en yakın olan cluster içerisindeki bu K tane data point içerisinde kendisine en yakın olan data point'a atıyor.
+
+306
+01:25:54,755 --> 01:26:03,755
+Dolayısıyla her bir iterasyonda K çarpı N kadar bir tane kompleksimiz var. Yani bunun kompleksitesini ON diyebiliriz.
+
+307
+01:26:04,435 --> 01:26:16,295
+Ama bu bir iterasyon için. Şimdi benim kaç tane iterasyon sonucunda algoritmamın konverj edeceğini ben bilemiyorum.
+
+308
+01:26:16,756 --> 01:26:36,756
+Yani algoritmamın kaç tane iterasyonu konverj edeceğimi bilemediğim için bu sayının da çok büyük olma ihtimali var. Bu sayı eğer çok büyük olacak olursa bu durumda benim buradaki kompleksim de yine çok artabilir.
+
+309
+01:26:38,515 --> 01:27:01,555
+Buna benim bir çözüm bulmam lazım. Yani sürekli olarak bu dataset üzerinde iterasyon yapmadan bir defa bu dataset üzerinden giderekten acaba ben bu K-Means Clustering yani assignment tabanlı bu clustering yöntemini kullanabilir miyim?
+
+310
+01:27:01,555 --> 01:27:05,515
+Şimdi bir sonra üzerine konuşacağımız konu bu olacak arkadaşlar.
+
+311
+01:28:27,828 --> 01:28:43,128
+Evet, bu algoritma BFR algoritması, Bradley Fayette-Reyn algoritması. Bu algoritmada K-Means yani Assignment tabanlı, partition tabanlı algoritma ailesi içerisinde bir algoritma.
+
+312
+01:28:43,731 --> 01:28:51,832
+Bu algoritmanın bize sağlamış olduğu avantaj K-Means algoritmasının bu dezavantajını kaldırıyor.
+
+313
+01:28:51,832 --> 01:29:01,311
+Yani K-Means algoritması ne yapıyordu? Her bir seferinde, her bir iterasyonda bütün veriyi tekrardan okuyup yeniden assignment yapması gerekiyordu.
+
+314
+01:29:02,692 --> 01:29:11,731
+Ve bunun converge olana kadar ne kadar iterasyon yapması gerektiğini önceden bilmediğimiz için bu sayı çok yüksek sayılara...
+
+315
+01:29:11,731 --> 01:29:29,211
+Gidebileceğinden kompleksliği artırıyordu. Biz bunu bir defa veriyi tarayaraktan acaba aynı işlemi yapabilir miyiz diye şu anda bir algoritma peşinden koşturuyoruz. Bu da BFR algoritması.
+
+316
+01:29:30,515 --> 01:29:41,515
+Bu algoritmanın yalnız aynı K-Means'in yapmış olduğu assumptionlar gibi, daha başta söylemiş olduğu assumptionlar gibi bu algoritmanın da bir assumption'ı var. Bu da diyor ki...
+
+317
+01:29:41,939 --> 01:29:57,000
+Bir, K-Means'in assumption'ından aynısı, yani benim cluster edebileceğim data point'ların mutlaka Euclidean Space'de olması lazım. Yani noktalar arasında bir average bulunabilmesi lazım. Bu birinci assumption'ın.
+
+318
+01:30:05,939 --> 01:30:15,679
+Normal dağılıma göre dağılmış olması gerekiyor. Yani diyelim ki bir tane data point var. Bunun en tane boyutu var.
+
+319
+01:30:17,171 --> 01:30:41,451
+Her bir boyut için elimdeki diğer bütün data pointların, data set içerisindeki bütün data pointların her bir boyut için normal dağılıma göre dağılmış olması gerekiyor. Bu da ikinci hesap. Peki bu normal dağılım neydi? Gaussian dağılımı ya da normal dağılımı hatırlayacak olursak.
+
+320
+01:30:42,163 --> 01:31:02,344
+Burada X ekseninde bir değişkenimiz var. Mesela X, bu X'in alabileceği farklı observationlar var. Bu Y ekseni ise Frequency Distribution. Yani bu farklı observationlar X'in hangi değerlerine dağılmış bunu buradan görebiliyorum.
+
+321
+01:31:06,387 --> 01:31:12,807
+X'in sıfırdan, X'in bulunduğu noktadan başlayaraktan.
+
+322
+01:31:13,939 --> 01:31:23,019
+Bir tane standard deviation pozitif yönde, bir tane standard deviation negatif yönde x'in x'den uzaklaştığımızı düşünelim.
+
+323
+01:31:23,659 --> 01:31:34,659
+Burada şuradaki alan benim x'in observation'larından yani değerlerinden yüzde altmış yedisi mesela şu alandaymış normal dağılımda.
+
+324
+01:31:34,659 --> 01:31:41,519
+Eğer x'in değerinden iki tane standard deviation uzaklaşacak olursanız.
+
+325
+01:31:41,939 --> 01:31:49,739
+Hem artı yönde hem eksi yönde. Bu durumda elinizdeki x'in değerlerinin %95'i şu alandaymış.
+
+326
+01:31:50,112 --> 01:32:14,171
+Yine X'den 3 standard deviation uzaklaştığınız zaman %99'u şu alandaymış. Eğer böyle bir karakteristik gösteren bir tane elinizde data varsa buna biz normal dağılıma uygun olan bir tane data diyoruz. Peki burada bu BFAR algoritmasının yapmış olduğu assumption ne?
+
+327
+01:32:18,112 --> 01:32:41,952
+Çünkü data point'ın her bir boyutu için bütün elimdeki data set normal dağılım olacak. Yani X, Y, Z bütün boyutlar için her bir boyut bazında benim elimdeki data point'ın değerlerinin normal dağılıma dağılmış olması gerekiyor. Böyle bir varsayım gidiyor.
+
+328
+01:32:42,804 --> 01:32:47,304
+Şimdi bu bakış açısıyla bakacak olursanız o durumda da…
+
+329
+01:32:48,180 --> 01:33:07,780
+Bu algoritma şunu varsayıyor, diyor ki benim elimdeki datadaki clusterlar böyle eliptik şekillere sahip olacak. Yani baktığınız vakit mesela şuradaki şekle bakın, y ekseni üzerinde baktığınız vakit normal dağılma dayalı dağıldığını söyleyebilirsiniz.
+
+330
+01:33:07,780 --> 01:33:16,180
+Çünkü ortalarda daha yoğun bir şekilde olacaktır bu eliptik şekil olunca. Yine buradaki pembe eliptiki düşündüğünüz zaman yine ortalarda...
+
+331
+01:33:16,180 --> 01:33:24,280
+Daha yoğun olacaktır diye düşünebilirsiniz. Böyle bir varsayımla bu algoritma çalışıyor.
+
+332
+01:33:25,108 --> 01:33:52,407
+Peki bu algoritmanın çalışma yapısı nedir? K-Mins algoritması ne demiştik? Her bir iterasyonda mutlaka datayı tekrardan okuyup datanın içerisindeki bütün data pointları mevcuttaki clusterlara ne yapıyordu? Atama yapıyordu. Ama bu algoritmanın avantajı ne dedik? Bu algoritma bütün data seti bir defa okuyor ve bir defa tamamıyla okuduktan sonra artık olası clusterları yaratıyor demiştik.
+
+333
+01:33:54,547 --> 01:34:12,148
+Şimdi bu algoritma nasıl çalışıyor? Öncelikle bu algoritma elimdeki büyük large scale datayı segmentlere bölüyor. Bu segmentlere bölerken de bir segmentin büyüklüğünü belirlerken de benim physical memorime sığacak büyüklükte bir segment belirliyor.
+
+334
+01:34:12,148 --> 01:34:22,507
+Diyelim ki benim 8 GB'lık memorim var. Ben segmenti 6 GB'lık belirleyeceğim. Dolayısıyla da 6 GB büyüklüğünde segmentler belirleri.
+
+335
+01:34:22,547 --> 01:34:44,828
+Bu datayı ne yapıyor? Segmentleri ayırıyor. İlk başta birinci segmenti alıyoruz. Birinci segmenti aldıktan sonra bu birinci segment üzerinde bir tane clustering gerçekleştiriyoruz. Bu clustering gerçekleştirdikten sonra bu clustering ile ilgili metadatayı tutuyoruz.
+
+336
+01:34:45,268 --> 01:34:51,068
+Sadece bu clustering ile ilgili metadatayı tutuyoruz. Datanın kendisini tutmuyoruz.
+
+337
+01:34:51,967 --> 01:35:07,068
+Şimdi bu ilk clustering'i oluştururken bunun içerisinde kaç tane K olacak ve bu K'ların değerleri ne olacak bunları hesaplarken ilk başta...
+
+338
+01:35:08,532 --> 01:35:31,631
+Bu algoritma farklı şekilde bunu gerçekleştirebiliyor. Bir tanesi bir in-memory storage yöntemi kullanarak yani hierarşik clustering yöntemi kullanaraktan kaç tane cluster olacağını tespit edebilir ve bunların centroidlerini bunları temsil eden data pointları ne yapabilir?
+
+339
+01:35:36,532 --> 01:35:39,251
+Hatırlayın sampling yöntemini konuşmuştuk.
+
+340
+01:35:39,912 --> 01:35:47,011
+Yahut da birbirinden uzak data pointları kullanaraktan ilk k data pointu seçmeyi konuşmuştuk.
+
+341
+01:35:47,011 --> 01:36:00,211
+İlk başta bu clusterları oluşturduktan sonra yani kaç tane k cluster olacağını ve bunları temsil eden data pointların ne olacağını oluşturduktan sonra şuradaki elemanları ne yapıyorum?
+
+342
+01:36:00,331 --> 01:36:02,051
+İlgili clusterları atıyorum.
+
+343
+01:36:02,515 --> 01:36:10,115
+Atadıktan sonra bu clusterlarla ilgili metadata'yı tutuyorum ve clusterların içerisindeki data pointları ise artık tutmuyorum.
+
+344
+01:36:10,931 --> 01:36:37,031
+Birinci segment bittikten sonra artık ikinci segmente geliyorum. İkinci segmentteki arkadaşları bu sefer mevcuttaki cluster'ların atamalarını gerçekleştiriyorum. Bu da bittikten sonra üçüncü segment. Tekrardan mevcuttaki cluster'ları atamalarını gerçekleştiriyorum. Dikkat edin atamalar gerçekleşirken, gerçekleştikten sonra bunların centroid değerlerini ve yarı çaplarını güncelliyorum ama datanın kendisini tutmuyorum.
+
+345
+01:36:37,344 --> 01:36:51,224
+Her seferinde yeni segmentteki data pointları ilgili clusterları atıyorum. Clusterların meta datasını, istatistiksel değerlerini güncelliyorum. Ne demek bunlar? Bu centroid değeri, yarı çapı.
+
+346
+01:36:52,083 --> 01:37:19,384
+İşte bu içindeki verilerin standart deviation değeri. Bunları tekrardan hesaplıyorum ve dataları ne yapıyorum? Data pointları kesinlikle memoride tutmuyorum. Bunu ta ki en sonuncu segmente kadar devam ettiriyorum. En sonuncu segmentte bittiği zaman geriye kalan cluster bilgisi benim bu büyük veri seti üçünün içinde kaç tane clustera sahip olduğumu gösteriyor.
+
+347
+01:37:20,083 --> 01:37:35,083
+Onlarını teker teker ilerleyerek bakalım. Öncelikle data pointları main memory'e segmentler halinde getiriyorum. İlk konuştuğumuz şey buydu.
+
+348
+01:37:36,307 --> 01:37:59,368
+Ondan sonra her bir segmenti getirdikten sonra, clustering uyguladıktan sonra oluşan clustering ile ilgili basit istatistiksel veriler tutuyorum. Bunlar nelerdi? Az önce söyledim. Centroid bilgisi, yarı çap bilgisi, ondan sonra o cluster içerisine düşmüş olan eleman sayısı gibi istatistiksel veriler.
+
+349
+01:38:01,460 --> 01:38:28,260
+İlk başta, yani ilk load'u, ilk segment'i buraya getirirken kaç tane K centroid seçeceğimi, yani K'nın değerinin ne olacağını ve ilk baştaki K tane initial seed değerinin ne olacağını az önceki K-Means'in en sonunda söylediğimiz yöntemlerle seçebiliyorum.
+
+350
+01:38:29,460 --> 01:38:39,939
+Yöntemiyle seçebilirim ya da birbirinden uzak noktaları seçebilirim. K'yı bulurken de elbow yöntemini kullanaraktan K değerini bulabilirim.
+
+351
+01:38:44,404 --> 01:38:59,224
+Şimdi bu algoritma şunu yapıyor. Diyor ki 3 tane veri tutacağız memoride. Dataların kendisini tutmayacağız. Yani bu 3 tane farklı.
+
+352
+01:39:00,340 --> 01:39:15,580
+Veri tutacağız. Bunlardan bir tanesi, en önemlisi discard set. Şimdi bu discard set dediğimiz sete şunu söyleyelim. Şuradaki bir tane cluster.
+
+353
+01:39:16,275 --> 01:39:30,055
+Ben bir data pointları bir cluster içerisine yerleştirebiliyorsam, yani data pointla bir cluster'ın arasındaki, centroidi arasındaki uzaklık belli bir threshold.
+
+354
+01:39:30,560 --> 01:39:36,800
+Altındaysa, DataPoint bu klastere giriyorsa bu DataPoint'e discard set diyorum.
+
+355
+01:39:36,800 --> 01:39:44,880
+Ve bir klaster içerisine girmiş olan bütün DataPoint'ları discard set diye adlandırıyorum.
+
+356
+01:39:45,399 --> 01:39:53,220
+Burada başka kümeler de olabilirdi. Burada sadece bir tane ana küme var.
+
+357
+01:39:53,699 --> 01:39:57,800
+Başka kümeler de olabilirdi. Bütün büyük kümelerin içerisine...
+
+358
+01:39:58,560 --> 01:40:02,380
+Girmiş olan data pointları ben ne yaptım? Discard set dedim.
+
+359
+01:40:04,460 --> 01:40:16,399
+İkinci ve bunları kesinlikle memoride tutmadım. Sadece bu discard setle ilgili estetiksel veriler tuttum. Yani centroid değeri, yarı çapı, içerisindeki eleman sayısı. Bunları tutuyorum.
+
+360
+01:40:19,380 --> 01:40:27,120
+İkinci tutacağım tipteki veri compression set verisi. Şimdi compression set verisi de şu.
+
+361
+01:40:28,372 --> 01:40:44,372
+Ben bu data pointları, mevcut clusterları atamaya çalıştım ama hiçbir clustera girmedi. Ama aynı zamanda bu data pointlar bir cluster oluşturmuyor, bir clustera girmiyor ama birbirlerine yakın data pointlar.
+
+362
+01:40:44,372 --> 01:40:53,452
+Bu türden birbirine yakın olan ama herhangi bir clustera girmeyen data pointlara ise ben compression set diyorum.
+
+363
+01:40:56,372 --> 01:41:05,552
+DataPoint'larını da tutmuyorum. Bunlar için de yine bir tane centroid bilgisi tutuyorum ve yarı çap bilgisi ve bunların içerisine düşen eleman sayısını tutuyorum.
+
+364
+01:41:06,432 --> 01:41:19,052
+Bunlar demek ki şuradaki büyük cluster'lara girmeyen ama aynı zamanda birbirine yakın olan DataPoint'ları temsil etmek için bu compression set verisini tutuyorum.
+
+365
+01:41:19,052 --> 01:41:23,552
+Burada da aynı bu büyük kümelerde olduğu gibi.
+
+366
+01:41:23,956 --> 01:41:32,636
+İstatistiksel bilgi tutuyorum. Centroid değeri, yarı çap bir de bunun içerisine düşen eleman sayısı.
+
+367
+01:41:34,696 --> 01:41:51,056
+Üçüncü ise, üçüncü set ise buna retain set diyoruz. Retain set ise hiçbir kümeye girmeyen, aynı zamanda hiçbir compression set'e yakın olmayan isolated noktalar. Bu noktaları ben artık memori'de tutmak zorundayım.
+
+368
+01:41:51,344 --> 01:42:06,764
+Neleri tutmadım? Büyük kümelerin içerisine giren data pointları tutmadım. Compression setler içerisine giren data pointları tutmadım memoride. Sadece hiçbir kümeye girmeyen isolated data pointları in memoride tuttum.
+
+369
+01:42:16,212 --> 01:42:27,712
+Bu birinci segmentim içerisinde kaç tane K olacağını bunun içerisinde K-Mins'i kullanıraktan clustering yapacağım. Öncelikle kaç tane K olacağını elbow yöntemiyle belirledim.
+
+370
+01:42:28,500 --> 01:42:46,720
+Bu elbow yöntemiyle belirledikten sonra her bir bu şey için clustera düşen noktalar arasında bu clusterların centroidlerine en yakın elemanları initial data point olarak seçtim.
+
+371
+01:42:46,720 --> 01:42:56,500
+Ve bu clusterlarla ilgili artık metadata'yı tutmaya başladım. Neleri tutuyoruz?
+
+372
+01:42:56,500 --> 01:43:21,460
+Şuradaki üç tane değeri. Birincisi şu ana oluşan kümelerin centroid değeri, yarı çapı, eleman sayısı, compression setler yani hiçbir kümeye girmeyen ama birbirine yakın olan noktalardan oluşan küçük kümeler. Bunlar için de yine aynı estetiksel değerleri tuttum. Bir de isolated duran noktaları memoriyle tuttum. Onun dışında başka bir şey tutmadım.
+
+373
+01:43:22,019 --> 01:43:24,500
+Ondan sonra da artık ikinci segment geliyor.
+
+374
+01:43:24,500 --> 01:43:36,340
+İkinci segment artık bütün ikinci segmentdeki data pointları mevcuttaki istatistiksel bilgisi olan clusterlara ve compression setlere yerleştirebiliyor muyum ona bakıyorum.
+
+375
+01:43:36,939 --> 01:43:48,460
+Yerleştiremiyorsam bunlar da retained set yani outlier olarak duruyor. Yerleştirebiliyorsam yerleştiriyorum ve bunları memoride tutmuyorum. Sadece ilgili cluster'ın istatistiksel bilgilerini güncelliyorum.
+
+376
+01:43:52,051 --> 01:44:08,391
+Şimdi peki bu tutmuş olduğum istatistiksel veriler neler? Bir tane cluster ile ilgili yahut da bir tane compression set ile ilgili bir tane discard set yahut da bir tane compression set cluster ile ilgili istatistiksel veriler neler?
+
+377
+01:44:08,391 --> 01:44:15,492
+Bir tanesi o cluster içerisine düşmüş olan totaldeki data point. Bunu tutuyorum. Bir.
+
+378
+01:44:16,148 --> 01:44:31,967
+İkincisi, her bir data point aslında bir tane vektör, en boyutlu vektör. Şimdi bu en tane, bu kümenin içerisine diyelim ki mesela X tane data point düştü.
+
+379
+01:44:32,372 --> 01:44:49,751
+Şimdi bu ilk tane data point'un her bir boyutu için sum değerlerini hesaplıyorum. Yani bütün bu data point'ları ifade eden bir tane vektörüm olacak, sum vektörüm olacak. Bu sum vektörüm de en boyutlu olacak.
+
+380
+01:44:49,751 --> 01:44:58,872
+Sum vektörünün her bir elemanı ise bu data point'ların ilgili boyutuna karşılık gelen değerlerinin toplamı olacak.
+
+381
+01:45:00,851 --> 01:45:14,551
+Bir üçüncü tutacağım vektör ise sum square vektörü. Bu sum square vektörü de her bir data point'ın ilgili boyutunun değerinin karelerinin toplamları olacak.
+
+382
+01:45:14,551 --> 01:45:20,152
+Yani bu da yine bir en boyutlu vektör ama bunun mesela birinci elemanı bu D tane.
+
+383
+01:45:21,011 --> 01:45:29,751
+Bu data pointların ilgili boyutlarının karelerinin toplamı olmuş olacak.
+
+384
+01:45:30,100 --> 01:45:44,620
+Şimdi neden bunu da tuttuğumuzu az sonra göstereceğiz. Bu üç tane bilgiyi tutuyormuşum. Demek ki her bir discard set ve her bir compression set için üç tane bilgiyi tutuyormuşum.
+
+385
+01:45:44,620 --> 01:45:57,340
+N neydi? İçindeki eleman sayısı. Sum neydi? Bir vektördü. Vektörün eleman sayısı kaç taneydi? Kaç boyutluysa bu nokta.
+
+386
+01:45:58,100 --> 01:46:16,520
+D boyutlu ise mesela D tane eleman içeriyor. Bir de sum square yine D boyutlu bir tane vektörden bahsediyorum. Bu sum square'de ne yapıyordu? İçindeki data pointların boyut bazında karelerinin toplamını veren vektördü.
+
+387
+01:46:22,739 --> 01:46:36,979
+Bir de compression set için, her bir cluster için düşündüğünüz zaman, totalde tuttuğunuz veri sayısı kaç tane? 2D artı bir tane. Neden iki tane de? İki tane vektör tutuyorum. Bir tanesi sum için, bir tanesi sum square için.
+
+388
+01:46:37,427 --> 01:47:03,147
+Her bir vektör d tane elemanı var içerisinde. O yüzden 2 çarpı d tane farklı integer değeri tutuyorum. Peki buradaki bir ne? Bir de o küme içerisindeki eleman sayısını tuttuğum için o da oradan geliyor. 2d artı bir tane farklı integer değer kullanaraktan bir tane kümeyi ne yapıyorum? İstatistiksel bilgisini tutuyorum.
+
+389
+01:47:04,595 --> 01:47:23,595
+Şimdi bu değerleri kullanaraktan, n, sum, sum square'ı kullanaraktan ben bir küme için bir average noktayı yani centroidi hesaplayabilirim. İkincisi standard deviation'ı hesaplayabilirim.
+
+390
+01:47:31,347 --> 01:47:43,007
+n'e böldüğüm zaman, sum vektöründeki her bir boyuta karşılık gelen elemanın değerini n'e böldüğüm zaman elde edeceğim vektör benim için centroid vektörüdür.
+
+391
+01:47:45,171 --> 01:48:10,851
+Bir de şurada gördüğünüz formülü uyguladığım zaman bu formül bana varyansı verecek. Bunun kara kökünü aldığım zaman standart deviyeti işini verecek. Şuradaki formülü uyguladığım zaman ve bunun kara kökünü aldığım zaman elde edeceğim vektör, yani vektör yine D boyutlu olacaktır. Her bir boyut için ben neyi bulacağım? Standart deviyeti işini bulmuş olacağım.
+
+392
+01:48:11,891 --> 01:48:39,112
+Burada Average'ı bulmuş oluyorum her bir boyut için. D boyutlu bir data noktalarından oluşan bir cluster'da. D boyutlu bir average vektörü bulmuş oluyorum. Burada da D boyutlu bir neyi bulmuş oluyorum? Standard Deviation vektörü bulmuş oluyorum. Bu average vektörüne biz Centroid diyoruz. Bu Centroid vektörüne ait ne yapıyor? Standard Deviation vektörü olmuş oluyor.
+
+393
+01:48:41,300 --> 01:49:02,400
+Şimdi artık bu istatistiksel değerleri tutacağımızı söyledikten sonra artık clustering işlemini gerçekleştirebilirim. İlk baştaki nottan başlayarak alıyorum segmenti. Elbow yöntemini uyguluyorum. Kaç tane K olacağını buluyorum. Bu kadar K değeri için initial K data noktasını seçiyorum.
+
+394
+01:49:03,731 --> 01:49:11,731
+Initial KData noktasını seçtikten sonra şurada geriye kalan elemanları buradaki cluster'lara atamaya başlıyorum.
+
+395
+01:49:11,731 --> 01:49:26,731
+Sonra burada compression, discard set için 3 tane istatistiksel veri, compression set için 3 tane istatistiksel veri, bir de hiçbir cluster'a girmeyen retained...
+
+396
+01:49:27,188 --> 01:49:31,608
+Outlier durumunda olan noktalar için onların kendilerini tutuyorum.
+
+397
+01:49:31,608 --> 01:49:32,148
+Okey.
+
+398
+01:49:35,028 --> 01:49:38,604
+Bunu gerçekleştirdikten sonra...
+
+399
+01:49:39,315 --> 01:50:01,496
+Ne yaptım? Bu atamaları gerçekleştirirken öncelikle discard set içerisindeki elemanları buldum. Discard setin istesiksel bilgilerini güncelledim ve o pointları artık tutmadım. Her bir discard set için n, sum ve sum square değerlerini hesaplamış oldum.
+
+400
+01:50:06,292 --> 01:50:25,612
+Geriye kalan data pointlar eğer geriye kalan yani discard sete girmemiş olan data pointlar için ise şu ilki için konuşuyorum. İlk segment için. Şuradaki arkadaşların hiçbirisine girmemiş olan geriye kalan data pointlar için ise şu yöntemi yapıyorum.
+
+401
+01:50:25,612 --> 01:50:32,132
+Bir tane in-memory clustering algoritması kullanıyorum. Yani hiyerarşik clustering algoritması kullanıyorum.
+
+402
+01:50:34,292 --> 01:50:43,032
+Algoritması ile geriye kalan discard setin içerisine girmemiş olan data pointlar arasında herhangi bir küme var mı onu tespit ediyorum.
+
+403
+01:50:43,752 --> 01:50:54,912
+Tespit ettiğim küçük kümelere compression set diyorum. Hiçbir küçük kümeye girmeyen dışarıda kalanlara ise retain set yani outlier diyor.
+
+404
+01:50:54,912 --> 01:51:00,908
+Yani ne yapmış oldum? Öncelikle şuradaki datayı aldım. Buradaki datayı...
+
+405
+01:51:01,427 --> 01:51:27,047
+Şuradaki cluster'lara atamasını yaptım. Bunların hiçbirisine girmeyenler kaldı. Bunların hiçbirisine girmeyenler üzerinde de bir tane hiyerarşik clustering algoritması çalıştırdım. Bunlar içerisinde birbirine yakın olanlar birer tane küçük küme haline gelmiş oldu. Hiçbirisine uymayan tekli noktalarda kalanlar ise onlar da artık retain set içerisine girmiş oldu.
+
+406
+01:51:29,427 --> 01:51:37,167
+Algoritmanın bu adımları da bittikten sonra artık elimde discard set, compression set ve retain set verileri olmuş oluyor.
+
+407
+01:51:37,167 --> 01:51:38,988
+Okey.
+
+408
+01:51:40,988 --> 01:51:41,867
+Şimdi.
+
+409
+01:51:42,452 --> 01:51:59,711
+Algoritma sürekli olarak her bir adımdan sonra yeni adımı getirdiği zaman yine aynı şeyi yapıyor. Elindeki data pointları mevcuttaki clusterlara atamaya çalışıyor.
+
+410
+01:51:59,711 --> 01:52:10,452
+Atamadığı zaman bu clusterlara girmeyenler, geriye kalanlarla daha önceki adımdan kalmış olan compression set ve retain sette olan arkadaşlarla...
+
+411
+01:52:10,452 --> 01:52:28,572
+Yine hiyerarşik clustering algoritmasıyla birleştirmeye çalışıyor. Eğer yapabilirse, birleştirirse bu durumda birleştirdiklerini compression set olarak tutuyor. Hiçbir tanesine sokamadıklarını yine retain set olarak bırakıyor.
+
+412
+01:52:29,652 --> 01:52:47,992
+Son rounda geldiği zaman algoritma, yani şuraya geldiği zaman, bunu bitirdiği zaman, yani bütün dataset'i okuduğu zaman artık geriye kalan bu compression set ve retain setleri kendilerine en yakın olan klastra algoritma ekliyor.
+
+413
+01:52:47,992 --> 01:52:56,992
+Yani algoritma en nihayetinde bittiği zaman retain setleri ve compression setleri ayrı bırakmıyor. Bunları kendilerine en yakın olan...
+
+414
+01:52:57,652 --> 01:53:01,352
+cluster'a atamasını gerçekleştiriyor.
+
+415
+01:53:03,539 --> 01:53:22,619
+Şimdi konuşmadığımız geriye kalan bir konu var. Bir data point'ın bir tane cluster'a yakın olup olmadığını ya da iki tane compression set cluster'ının birleştirilip birleştirilmediğine bu algoritma nasıl karar veriyor?
+
+416
+01:53:22,619 --> 01:53:26,159
+Yani yakınlık metri olarak ne kullanıyor? Bir ona bakalım.
+
+417
+01:53:26,868 --> 01:53:36,908
+Yakınlık metriği olarak Malanobis uzaklık metriği diye bir metrik kullanıyor. Bu metrikte de yapmış olduğu şey şu.
+
+418
+01:53:38,163 --> 01:53:52,443
+Şuradaki normal dağılımı hatırlıyorsunuz. X'in değerlerinden eksi ve artı yönde sigma kadar uzaklaştığınızda %67 olasılıkla datanın değeri burada.
+
+419
+01:53:53,063 --> 01:54:02,183
+2 tane sigma uzaklaştığınız zaman %95 üzerinde datanın değeri burada. 3 tane uzaklaştığınızda %99 oranında datanın değeri burada.
+
+420
+01:54:06,163 --> 01:54:33,503
+Şimdi biz herhangi bir anda bu cluster'ların yani discard set cluster'larının centroid'lerini biliyor muyuz? Biliyoruz. Çünkü bunu hesaplamamız için some array'i vardı. Bir de n o cluster'ın içerisine düşen eleman sayısı vardı. Bunu böldüğümüz zaman o cluster'a ait centroid değerini bulabiliyorduk.
+
+421
+01:54:34,036 --> 01:54:40,316
+Aynı zamanda o cluster'a ait standard deviation bulmanın yöntemini de gösterdim az önce.
+
+422
+01:54:41,056 --> 01:54:42,176
+Şimdi bu iki değer var.
+
+423
+01:54:43,176 --> 01:54:52,036
+Şimdi bir de bu atamasını yapacağım, yani bu elimdeki discard set cluster'larına atamasını yapacağım data noktam var.
+
+424
+01:54:52,596 --> 01:54:53,436
+Bu da benim elimde.
+
+425
+01:54:54,163 --> 01:55:04,943
+Şimdi bu data noktasının bir klastere ait olup olmadığına karar verirken uyguladığım uzaklık yöntemi, Malanovis uzaklık yöntemi şu şekilde hesaplanıyor.
+
+426
+01:55:04,943 --> 01:55:18,023
+Öncelikle ne yapıyorum? Bu data noktasının her bir boyutu için bir sentroidle arasındaki uzaklığın
+
+427
+01:55:18,399 --> 01:55:41,639
+Kaç tane standart sapma olduğunu hesaplıyorum. Yani ne demek? Bu data noktasının birinci elemanıyla centroidin birinci elemanı arasındaki fark. Diyelim ki mesela bir tane standart sapma ise, bir tane standart sapma uzaklığındaysa şurası ne olacaktır? Bir olacaktır.
+
+428
+01:55:42,003 --> 01:55:56,163
+Eğer iki tane standart sapma uzaklığındaysa, yani şuradaki X, buradaki C1'den iki tane standart sapma uzaklığındaysa, şuradaki Y değeri ne olacak? 2 olacak.
+
+429
+01:55:56,979 --> 01:56:11,359
+Bu şekilde ben bu data noktasıyla centroid noktası arasındaki uzaklıkları standart sapmaya oranlı bir şekilde yani normalize edilmiş bir şekilde buluyorum.
+
+430
+01:56:11,359 --> 01:56:24,139
+Yani bu y değerlerinden oluşan bir tane vektör hesaplıyorum. Bu vektörün eleman sayısı da yine d tane ve bu vektörün her bir elemanı ise
+
+431
+01:56:24,528 --> 01:56:34,108
+ilgili boyuttaki X'in değerinin C'den kaç tane standart sapma uzaklıkta olduğunu bana söylüyor.
+
+432
+01:56:34,515 --> 01:56:48,635
+Şimdi bunu bulduktan sonra, y değerlerini bulduktan sonra yani bu p noktası ile centroid arasındaki uzaklığı söyleyecek olan y vektörünü bulduktan sonra Mahlonovististens metriği şudur.
+
+433
+01:56:48,635 --> 01:57:00,455
+Bu y vektöründeki elemanların karelerinin toplamını alıp bunu kara kökünü alır. Mahlonovististens dediğimiz bu. Diyelim ki mesela.
+
+434
+01:57:01,811 --> 01:57:04,192
+Eğer bu
+
+435
+01:57:06,836 --> 01:57:19,636
+X noktası sentroid'den her boyutta bir tane standart sapma uzaklığında olmuş olsun. Yani aralarında bir tane değer olmuş olsun.
+
+436
+01:57:19,636 --> 01:57:34,636
+Hani bu durumda şuradaki Y değeri ne olacaktır? 1 olacaktır. 1 olacaktır ve kaç tane 1 var? Her bir boyutta böyleyse bu. D tane şey var. Dolayısıyla mal...
+
+437
+01:57:34,836 --> 01:57:38,695
+Hadoop, Nobis, Distance, Böylesi bir nokta için Karakök D olacaktır.
+
+438
+01:57:39,091 --> 01:57:59,311
+Eğer diyelim ki bu X noktası, bu P noktası pardon, centroidden her bir boyut için iki standart sapma uzaklığındaysa, yani şuradaki arasındaki fark iki standart sapma ise bu durumda ne olacaktır?
+
+439
+01:57:59,311 --> 01:58:06,751
+Her bir boyut için buradaki değer iki olacaktır. Burada ne olacaktır?
+
+440
+01:58:07,091 --> 01:58:22,811
+D tane yine elemanım var. İkinin karesi çarpı D olacaktır. O da iki kara kök D olacaktır. 3 olmuş olsaydı bu 3 kara kök D olmuş olacaktı.
+
+441
+01:58:24,532 --> 01:58:49,992
+Ne yapmış oluyorum ben? Eğer Mahlanovis Distance değeri bana verilmiş olan bir data noktası için, şu şuradaki değer, bu data noktasının hangi klastere ait olacağını şimdi hesaplamaya çalışıyorum. O data noktasını her bir klasterın sentroidiyle karşılaştırıyorum ve bu karşılaştırma sonucunda Mahlanovis Distance değerlerini buluyorum.
+
+442
+01:58:52,532 --> 01:59:06,811
+Mal'ın Ubi's Distance'ı benim belirlediğim threshold, bu threshold karakökl D olabilir, 2 karakökl D olabilir, 3 karakökl D olabilir. Eğer şu değerlerden küçük ise mesela diyelim ki thresholdu 3 karakökl D diye belirledim.
+
+443
+01:59:07,271 --> 01:59:17,171
+Bulmuş olduğum Mal'ın Ubi's Distance değeri 3 karakökl D'den küçük ise o zaman diyorum ki bu Mal'ın Ubi's Distance'ı hesaplamış olduğum
+
+444
+01:59:17,460 --> 01:59:26,019
+Şu centroidin ait olduğu klastera yeterince yakındır. Dolayısıyla bunun içerisine konulabilir.
+
+445
+01:59:26,515 --> 01:59:39,735
+Bunu bütün cluster'lar için yapıyorum. Yani bu Malo Nobis Distance değerini bütün cluster'lar için hesaplıyorum ve belirlemiş olduğum threshold'dan eğer daha küçükse ne yapıyorum? O cluster'a aittir diyorum.
+
+446
+01:59:39,735 --> 01:59:54,175
+Burada zaten en başta benim data point'larımda kaç tane boyut olduğunu bildiğim için şuradaki threshold'u ve belirlemek kolay. Sadece şuradaki Malo Nobis Distance değerini hesaplamam gerekiyor. Her bir data noktasıyla.
+
+447
+01:59:54,515 --> 02:00:12,135
+Mevcuttaki clusterların centroidleri arasında Malinobis Distance değerlerini hesaplayıp ilgili threshold'la karşılaştıracağım. Hangisi için ilgili threshold'dan daha küçükse diyeceğim ki tamam bu data point bu cluster'ın elemanıdır.
+
+448
+02:00:20,724 --> 02:00:35,704
+Yine diğer bir sorumuz neydi? İlk sorumuz bir node'un bir klastra yeterince yakın olup olmadığı, yani o discard set klasterına konulup konulmayacağına nasıl karar veriyorduk?
+
+449
+02:00:47,220 --> 02:00:50,319
+Birleştirecek miyim, birleştirmeyecek miyim? Buna bakıyorum.
+
+450
+02:00:52,212 --> 02:01:00,792
+Buna bakarken de her bir compression set için neleri biliyorum? N değerini biliyorum, sum değerini biliyorum, sum square değerini biliyorum.
+
+451
+02:01:00,792 --> 02:01:18,032
+Onun dışında içindeki data pointları tutmadığım için bilmiyorum. Şu değerleri her iki compression set için bildiğim için bu değerleri kullanaraktan bunları birleştirdiğim durumdaki oluşacak compression setin
+
+452
+02:01:18,336 --> 02:01:41,475
+Ben nesini bulabilirim? Varyansını bulabilirim. Yani standart sapmasını bulabilirim. Eğer bu standart sapma belirli bir threshold'un altındaysa, yani bunları birleştirdiğim zaman bunlar arasındaki uzaklık çok büyük olmayacaksa bu durumda ne yapıyorum? Bunları birleştiriyorum. Eğer böyle bir durum yoksa bunları birleştirmiyorum.
+
+453
+02:01:46,515 --> 02:02:14,515
+Bu da BFR algoritması arkadaşlar. K-Means algoritmasının dezavantajı neydi? Her iterasyonda bütün data seti okuması gerekiyordu. BFR algoritmasında ise sadece bir defa datayı okuyorum. Bir defa datayı okuduktan sonra ben ne yapıyorum? Bu data içerisindeki bütün data pointları, clusterları.
+
+454
+02:02:14,515 --> 02:02:25,036
+Atamasını gerçekleştirebiliyorum. Bu algoritmanın da kompleksitesi K-Minced olduğu gibi yine ON formatında yani linear bir algoritma.
+
+455
+02:02:27,595 --> 02:02:37,315
+Ben burada duracağım arkadaşlar. Clustering ile ilgili konuşacaklarımı anlatmış oldum. Bunlarla ilgili slide'ları dersin sayfasında bulabilirsiniz.
+
+456
+02:02:39,283 --> 02:02:53,283
+Gelecek hafta biliyorsunuz dönem projelerinizin sunumunun olacağı hafta. Lütfen projelerinizi yapın. Projeleri yapmadan...
+
+457
+02:02:54,131 --> 02:03:07,751
+Dersi geçmeyi riske atıyorsunuz. Projelerinizi yapın. En azından yapabildiğiniz kadarıyla bana mutlaka demosunu gelecek hafta dersimizde göstermenizi istiyorum.
+
+458
+02:03:09,332 --> 02:03:10,692
+Sorusu olan var mıdır?
+
+459
+02:03:15,891 --> 02:03:20,851
+Soru yok galiba. Tamam. Katılımınız için teşekkür ederim arkadaşlar. Hepinize iyi akşamlar diliyorum.
+
+460
+02:03:21,731 --> 02:03:22,971
+Teşekkürler hocam. İyi akşamlar.
+
+461
+02:03:23,511 --> 02:03:24,371
+İyi akşamlar hocam.
+
+462
+02:03:24,771 --> 02:03:25,431
+İyi akşamlar.
