@@ -1,0 +1,2759 @@
+1
+00:00:15,476 --> 00:00:29,435
+Evet, şimdi derse 3 dakika arka maaş yaptım. 13-10'a kadar da katılımcı sayımızın artmasını bekleyeceğim. Yani kayıtta seyredenler şu an 12.78, 2 oradan, 10 oradan, 12 dakika ileri saray bilirler.
+
+2
+00:00:29,435 --> 00:00:31,856
+Şimdi direkt ses verenleri kapatayım.
+
+3
+00:12:30,355 --> 00:12:38,235
+Evet arkadaşlar, katlanımcı sayımız biraz altmış. Saatlediğim zaman geçer artık. Derse başlayabiliriz.
+
+4
+00:12:41,620 --> 00:12:49,080
+Şimdi, yağıtımsal kalıpları geçen hafta bitirdik. Bugün devam edeceğiz yapısal kalıplar ile.
+
+5
+00:12:53,268 --> 00:13:09,327
+Şimdi yıpsal kalıplar arasında ilk göreceğimiz kalıp adaptör kalıbı. Çok karmaşık bir kalıp değil. Yani nispeten basit bir kalıp. Siz de yapmışım da bunu büyük ihtimalle ama bunun literatürde adaptör diye bir tasarım kalıp olarak tanımlı olduğunu bilmiyorsunuzdur belki de.
+
+6
+00:13:09,327 --> 00:13:12,067
+Şimdi amacımız şu.
+
+7
+00:13:13,139 --> 00:13:27,439
+Bir istekçi sınıfımız var, bir de sunucu sınıfımız var. Yani bir metot içeren bir sınıfımız var. Ondaki bir metodu çalıştırmak istiyoruz. Fakat o metodu çalıştıracak olan sınıf başka bir isim bekliyor, başka bir metod ismi bekliyor.
+
+8
+00:13:27,439 --> 00:13:34,439
+Ve fakat biz o çalıştıracak sınıfın kaynak koduna müdahale edemiyoruz. O zaman ne yapacağız? O zaman araya...
+
+9
+00:13:35,731 --> 00:13:54,312
+İsteyimcinin beklediği metot imzasına sahip olan ve gövdesi içerisinde de esas metodu yürütecek nesneye metot çağrısını yönlendirecek, iletilecek bir adaptör sınıf koymak olacak. Olay bundan ibaret tamamen.
+
+10
+00:14:03,508 --> 00:14:12,508
+İngiltere'de çok enteresan bir elektrik prizi standartı kullanılıyor. Üç delikle. Üstteki delik...
+
+11
+00:14:13,076 --> 00:14:37,916
+Aslında bir dil içeriyor ve alttaki faz ve nötrz uçlarını kapatan bir kapak içeriyor. Oradaki prizlerde üst bacak biraz daha uzun. Önce o giriyor ve girerken dili aşağı itiyor. Dil aşağı itilince faz nötrz bacaklarının kapakları açılmış oluyor. Geri kalan iki bacak da prize giriyor. Böylece çalışıyor.
+
+12
+00:14:40,532 --> 00:14:46,772
+Bu İngiliz prizini Avrupa standartındaki, biz de Avrupa standartını kullanıyoruz.
+
+13
+00:14:49,427 --> 00:15:07,427
+Bizim bir fişimizi sokmak gerektiğinde o zaman ne yapıyoruz? Bir tane kalen ucu veya saç şokası falan gibi bir şeyi önce o dilin üstüne bastı, tırt, dil açı, ondan sonra takıyoruz gibi bir durum var.
+
+14
+00:15:11,855 --> 00:15:38,696
+Fazmetör bacakları bizim gibi yuvarlak değil, tam ve mesafesi biraz daha yakın. Fiziksel olarak bizim fişler girmekte zorlanabiliyor. Bu nedenle araya herhangi bir ülkenin standartını, diğer bir ülke standartına çevirecek elektrik, priz, adaptör setleri satılır. Bakar görürsünüz siz de. Aynı o mankta çalışan bir şey yapacağız. Çok karmaşık bir şey değil.
+
+15
+00:15:39,892 --> 00:15:53,892
+Adaptive, yani uyarlanacak olan sınıfın spesifik bir metot imzası var. Client'da bizden bir metot imzası bekliyor. Bu beklenen imza...
+
+16
+00:15:54,932 --> 00:16:10,932
+Hizmet verecek sınıfınkiyle tam uyumlu değil. O yüzden o client'ı uyumlu haline getirmek üzere bir adaptör sınıfımızı oluşturuyoruz. O request metodunu bekliyor.
+
+17
+00:16:10,932 --> 00:16:19,672
+O request metod çağrısı yapıyor. O request metod çağrısını alıp esas yürütecek kişiye iletiyor, yönlendiriyor. Böyle bir yapı.
+
+18
+00:16:22,004 --> 00:16:39,004
+Üstteki Target Floyd sınıfı ve RQF Floyd metodu çok çok da gerekli değil. Kalıp içerisinde şu kısmı tamamen kalıptan çıkartabilir. Onun yerine sadece şu uşağı da yapabilirsiniz. Hiçbir sakıncası yok.
+
+19
+00:16:42,676 --> 00:17:01,655
+Evet, sözünü söyledik. Ondan sonra açıma. Amacı da bir tek bu. Elimizdeki bir sınıfın bir istekçinin arasından kullanılabilmesini önleyen tek engel, istekçinin yolladığı mesaj ile eldeki sınıfı anladığı mesajların ad ve parametre diziliminin yani imzalarının farklı olduğu anlarda bunu kullanabiliriz.
+
+20
+00:17:01,655 --> 00:17:08,416
+Şimdi, ne kadar basit olsa da ufak bir örnekle uygulayalım.
+
+21
+00:17:10,163 --> 00:17:26,983
+Elimizde bir çizim programı hazırlıyoruz. Çizim programı üzerine çalışıyoruz. Çizim programımızın bir kısmını hala da gerçekledik. Yani sol taraf, şuradan böldüğümde sol taraf bizim şu noktada gerçeklediğimiz kısım.
+
+22
+00:17:27,635 --> 00:17:47,836
+Biraz daha mantıklı bir şekilde bütün şekilleri bir ortak üst sınıf olarak modelleyip daha sonra onun somut alt sınıflarında spesifik noktaymış, çizgiymiş, dariymiş, özür dün kareymiş, noktaymış, çizgiymiş, kareymiş sınıfları yazmaya başladık.
+
+23
+00:17:48,915 --> 00:17:58,536
+Bütün şekillerde ne yapabiliriz? Konumunu set edebiliriz, get edebiliriz. Ekran çizilebiliriz, içini doldurabiliriz, rengini değiştirebiliriz ve ekranlar silebiliriz.
+
+24
+00:17:58,536 --> 00:18:09,315
+Bunların içerisinde get set location bütün şekillerde nispeten ortak olabilir. Bu arada nedir?
+
+25
+00:18:11,859 --> 00:18:33,000
+Bir noktanın, location setlerinin noktanın kendisine ilgili x'e koordinatlarına koyarız. Bu arada yine dörtlü çete tabii ki bu da set location'e parametre olarak x'e parametreleri vermesi lazım tabii ki. Kullandığımız duruma göre de int olarak düşünüyorum. Int x'e gerekir tabii ki. Bunu göstermemişler. Nasıl olsa anlarlar demişler.
+
+26
+00:18:34,339 --> 00:18:38,519
+Pardon bir dakika bu örnek de zaten şey dediği dörtlü çete değil tabii ki.
+
+27
+00:18:39,028 --> 00:18:42,648
+Çünkü daha güncel notasını kullanıyorum. Kaynanı yazdım.
+
+28
+00:18:42,728 --> 00:18:43,768
+Unutmuşum. Kusura bakmayın.
+
+29
+00:18:45,188 --> 00:18:46,887
+Yazmamışım.
+
+30
+00:18:47,748 --> 00:18:48,607
+Aldığım kitapta.
+
+31
+00:18:49,448 --> 00:18:57,067
+İşte int, xy parametlerini yazmamışlar. Nasıl olsa biliyorlar bu insanlar bu işleri. Anlarlar diye demişler herhalde.
+
+32
+00:18:58,288 --> 00:19:00,779
+Çizgin xy koordinatını...
+
+33
+00:19:01,652 --> 00:19:13,352
+Orada sadece o yetmiyor tabii ki aslında. Bir başlangıç bitişim otlusu iki nokta koalantı vermek gerek veyahut da ek olarak açı vermek gerek ve uzunluk yani. O yetmez.
+
+34
+00:19:14,951 --> 00:19:25,332
+İşe böyle biraz bayanet daha farklı açabileceği için herhalde biraz işi hanımın altına süpürmek için şu o noktada biraz problemler biraz daha kalma şıklık var her neyse.
+
+35
+00:19:27,728 --> 00:19:30,068
+Ha, şey olabilir.
+
+36
+00:19:33,395 --> 00:20:00,000
+Bir noktası mutlaka bir noktasının set location metodu int x'e parametrisi üst sınıfta olur. Fakat ek olarak mesela bu bir doğru ise bitiş noktaki koordinatları da set and diyebilirmelidir. Bu bir dikdörtgen ise zaten en boy bilgileri vardır. Bu iyi alanlar ekleriz. Alt kare yerine dikdörtgen sınıfına en boy bilgileri ekleriz. Böylece zaten...
+
+37
+00:20:00,692 --> 00:20:13,872
+O şeklin çizilmesi için ilgili bilgiler sağlanmış olur gibi. Ufak tefek ek kalma şıklıklar var ama şu an onun üstüne çok uğraşmayalım. Adaptör kalıbının nasıl uyanlandığını hemen örneğini görmüş olalım.
+
+38
+00:20:15,251 --> 00:20:21,351
+Şimdi anayasın biz bu şekilde başladık çizim programımıza. Sıra eden şimdi daire kodunu yazmak kağıt.
+
+39
+00:20:21,351 --> 00:20:27,471
+Şimdi iki boyutlu grafiklerde daire kodlamak çok kolay bir iş değil arkadaşlar.
+
+40
+00:20:27,932 --> 00:20:40,711
+Çünkü nihayetinde her bir pikseli bir karecik, kutucuk olarak düşündüğünüzde bir karelerden oluşan bir alanda güzel yuvarla katları sahte bir daire çizmek kolay değil.
+
+41
+00:20:41,364 --> 00:21:07,483
+İlgili yuvarlaklaştırmayı modelleyebilmek için anti-aliasing denilen keskin hatları yumuşatma işlemi yapılmak durumundadır. Bilgisayar grafiğinde meraklı olan arkadaşlarım bilirler. Merak edenler de bakarlar. Neyse. Zamanında anti-aliasing falan hepsini de yapan güzel bir circle sınıfı yazmışız. Ama adını XX Circle demişiz mesela.
+
+42
+00:21:08,016 --> 00:21:14,736
+Normalde biz şuraya Normal Circle Sınıfı kodlayacaktık. Adı farklı.
+
+43
+00:21:16,692 --> 00:21:35,572
+Metod imzaları da biraz farklı. Mesela biz şu an üstünde çalıştığımız framework'te soyut metodumuzun adını fill demişiz. Ama bu hazır kodumuzda fill it diye geçiyor. Örneğin set color bekliyor normalde bizim framework. Ama biz oradaki metodun adını fill it koymuşuz.
+
+44
+00:21:44,692 --> 00:22:00,612
+İdelenmiş kısmı elimizde. Hepsini de baştan yazmaya üşeniyoruz veya işimiz acele. Şimdilik böyle idare edelim diyoruz. Ne yapacağız? O zaman bu soru içerisinin geldiği yere araya bir adaptör sınıfı koyacağız. Hepsi bu kadar.
+
+45
+00:22:01,612 --> 00:22:10,192
+Çizimleri temizleyeyim. Tamam o kadar temizleyemedim. Temizle, tüm çizimleri temizle. Evet ve devam.
+
+46
+00:22:11,220 --> 00:22:21,320
+Evet, normalde işte, şey, circle sınıfını yazmaya başlayacağız tabii ki. Adaptörümüz circle sınıfı olacak, framework'a dahil olan.
+
+47
+00:22:21,320 --> 00:22:32,340
+Ama içinin içerisinde iş mantığını kodlamayacağız. Bütün iş mantığını daha evvel yazmış olduğumuz xx circle sınıfına yönlendirmek suretiyle kullanacağız.
+
+48
+00:22:32,860 --> 00:22:36,760
+İşte framework'ımızın beklediği üzere public class circle experience shape diyeceğiz.
+
+49
+00:22:37,440 --> 00:22:53,292
+Fakat ek olarak uydurulmasını istediğimiz sınıf türünden bir nesneye, bir üye alana sahip olması gerekiyor haliyle. Ve bu Sorklonsun bütün metotlarının yaptığı şey sadece ilgili metot çağrısını ilgili...
+
+50
+00:22:53,491 --> 00:23:21,152
+Üye alan üstünden yürütmek olacak. Başka bir şey de gerek yok. Örneğin, bir şey return edilecekse de return myXXCircle. Metoduysa denilecek mesela. Bu şekilde işi hızlıca kurtarabiliriz. Bu circle sınıfı da bir adaptör sınıf olarak işe yarıyor. Client'ımız shape, adapt t uyağlanacak, xx circle, adaptörümüz de circle.
+
+51
+00:23:21,491 --> 00:23:29,371
+Bu kadar da sıyağın içerisinde o yüzden çok fazla bir dikleme yapmaya gerek yok diye düşünüyorum.
+
+52
+00:23:30,891 --> 00:23:38,811
+İkinci kalıbımıza yapısal kalıplardan. Bridge kalıbı. Köprü. Bakalım neyle niye köprü diyormuş.
+
+53
+00:23:39,052 --> 00:23:46,951
+Bu kalıbın amacı Nesne'nin arayüzüyle gerçeklemesini ya da gerçekleme ayrıntıları diyelim.
+
+54
+00:23:47,279 --> 00:24:09,500
+Birbirinden ayırmak. Ama gerçekten gerçeklemesini ayırmak düzgün bir ifade oluyor arkadaşlar. Eskiden Windows 32 kodu yazan arkadaşlar bunu handle olarak bilirler. Windows 32 bit programlamada Windows bize bir handle verir ve biz de o handle üzerinden bir şeyler yapardık.
+
+55
+00:24:14,291 --> 00:24:15,911
+Bakalım şimdi kanıtlığından gidelim.
+
+56
+00:24:20,084 --> 00:24:35,124
+Dörtüşletin örneği bir GUI çerçeve programında bir pencere çizme konusunda bir soyutlama örneği yapıyor. Ama bu GUI çerçeve programımızı farklı masajüstü ortamlarında kullanabilmek istiyoruz.
+
+57
+00:24:40,019 --> 00:24:49,400
+İlk aklımıza gelen bir pencere soyu sınıfımız olsun. Bundan da kalıtımla işte glom için, yani kd için aynı pencere sınıfları türetelim diyoruz.
+
+58
+00:24:49,699 --> 00:25:00,000
+Şimdi bu kadarcık bir düşünmeyle ve biraz daha verdikleri örnekten belki bunu abstract faktöriye benzetebiliriz ama daha önemli ayrıntıları var.
+
+59
+00:25:00,000 --> 00:25:01,380
+Şu an bu kalıbı odaklanın.
+
+60
+00:25:02,208 --> 00:25:15,628
+Mesela tamam pencereyi yaptık ettik. Daha sonra şu istek gelecek, şu işimiz de var. Bu pencere uygulamasını görev çubuğunda simge haline getirilmiş işler için de kullanmak istiyoruz.
+
+61
+00:25:15,628 --> 00:25:30,188
+Yani işte hani oluyor ya işte görev çubuğuna minimize edilmiş şekilde uygulama gibi. İşte benim mesela box uygulama minimize durumda. İstediğim zaman bunu üstüne tıklayarak.
+
+62
+00:25:30,208 --> 00:25:42,928
+Açıyorum. Ama istediğim zaman da tekrar bunu iconified hale getirebilmem gerekiyor. Kapatılca aslında iconified oluyor gibi bu durumlardan bahsediyoruz. Örneğimiz bu.
+
+63
+00:25:48,468 --> 00:25:59,748
+O yüzden bu icon windows sınıfında Gnome için KDV için ayrı ayrı kodlamamız gerekecek. Böylece işler biraz dağlanıp budaklanacak.
+
+64
+00:26:00,367 --> 00:26:10,428
+Şöyle bir şey. Bizim problemimiz şu aslında. Bizim bir windowumuz olacak. X window, presentation manager window, Gnome window, KDE window falan alt sınıfları koyacağız.
+
+65
+00:26:12,051 --> 00:26:35,271
+Şimdi daha eski 4.3'te örneğinde bunlar yoktu. X ve Presentation Manager vardı. Onları koyalım. Sonra bir de ilk başta şöyle kurtardık. Sonra bir de icon window çıktı işin içerisine. Icon window, window sınıfıyla epey bir ortak kod işlemiyor ama farklılaşacağı noktalar da var elbette. O yüzden şöyle bir araştırmak mantıklı. Yani window'dan yine soyut bir sınıf olarak bunu çok itelik yazmamış.
+
+66
+00:26:40,051 --> 00:26:58,231
+İkona Window'a özel kod yazdığımız için normal sadece bir düz İkona Window kodlayamayız. Bundan da soyut sınıfı olması gerekir. Atlanmış herhalde. Ki onun da somut alt sınıflı olarak işte X İkona Window veya PM İkona Window sınıflarını oluşturmamız gerekir.
+
+67
+00:27:03,923 --> 00:27:16,483
+Dallık budaklanabilecek. Ayrı bir şeye geldiği zaman aslında Gnome'u da desteklemek istediğimizde hem şuraya bir kardeş sınıf koyacağız hem de şuraya bir kardeş sınıf koyacağız. İki sınıf ekliyor olacağız.
+
+68
+00:27:19,796 --> 00:27:36,796
+Ne bileyim, Transparent Window olması gerektiği durumunda, o da mesela Window koduyla bazı şeyleri ortak çıkartıyor. O zaman bir tane Transparent Window soyut sınıfı koyacağız şu noktaya. Ondan sonra onu da alt sınıflı olarak X...
+
+69
+00:27:37,584 --> 00:27:51,764
+İşte ne demişim? Şefraf. X Transparent Window, PM Transparent Window falan filan koyacağız. İşler şetefileşecek. Ve burada mesela abstract factory'den kalıbını aklıma geldi. Vurgulamış olayım.
+
+70
+00:27:51,764 --> 00:28:03,344
+Abstract factory'de mesela farklı window menajerlerdeki düğmeler, radio buttonlar, checkboxlar, radio checkbox falan bunlar birbirinden çok farklı şeyler.
+
+71
+00:28:04,243 --> 00:28:17,963
+Fakat window, icon window, transparent window bunda hep iyi bir ortak kod paylaşan bile şeyler. Bu nedenle bu problem için aslak faktör uygun değil. Daha değişik, daha akıllıca bir şeyler yapmamız lazım.
+
+72
+00:28:18,483 --> 00:28:39,903
+Şimdi, Dorothy Chat'ın önerdiği çözüm şu. Pencere soyutlamasını ve pencere gerçeklemelerini ayrı sınıf yararçlarına koyacaklar ve bu iki ayrı sınıf yararçlarında bir birç köprü üzerinden birleştirecekler. Olay bu. Soyutlama ile gerçekleme arasına bir köprü kuracaklar. Şöyle bir şey olacak.
+
+73
+00:28:44,991 --> 00:29:08,991
+Bir de Window Gerçekleme sınıfımız olacak. Window sınıfımız, Soyuz sınıfımız, Window Imp de Soyuz sınıfımız, her iki de Soyuz sınıf. Fakat Window sınıfında örneğin şimdi pencerenin sınırlarını çizmek için ne yapacağız? Bir dikdörtgen çizilmesi gerekiyor. İşte dört tane çizgi çizmekle oluşur dikdörtgen. Peki, dikdörtgen çizme metodunda...
+
+74
+00:29:10,579 --> 00:29:26,360
+Ben pencere gerçeklemesiyle pencere arasında implementation'ın kısaltılmış olan imp olaraktan bir üye alan var. Bu aynı kadar parça bütün gibi gözüküyor. Aslında birebir sahip. Çünkü bak direkt üye alan tek bir tane üye alan.
+
+75
+00:29:38,579 --> 00:29:47,979
+Bence şundan burada çizgi çizme işleri daha farklı olacak. Buradaki dev de herhalde device falan anlamına geliyordur. Çok çıkartamam ama öyle bir isim.
+
+76
+00:29:47,979 --> 00:30:02,059
+Ve bir noktada diyelim ki şey bu arada bir pencere mesela şeffaf hale geldiğinde başlığını çizmiyor diyelim ki. Öyle bir mantık olmuş.
+
+77
+00:30:02,644 --> 00:30:24,144
+Normal iconified window olduğu zaman, sınırları çiz dediği zaman dikdörtgen de çizecek, metnini de yazacak. Ama şeffaf window çizeceği zaman, o zaman sadece dikdörtgen çizecek, başlığını yazmayacak gibi işleri şurada kodladığını görüyoruz.
+
+78
+00:30:30,644 --> 00:30:57,803
+Sistem çağrılarını kullanarak çizgi çizme işlerini de pencere gerçeklemesi soyutlaması üzerinden pencere soyutlaması çağırıyor. Biz de hangi window sisteme ya da bu işi yapacak sınıflarımızı kodladıysak, işte onları da bu window imp sınıfından alt sınıf olarak oluşturduğumuz takdirde örneğin x window imp x için zorlar çağıracak.
+
+79
+00:30:58,644 --> 00:31:05,983
+Dev X Window Imp metin yazmak istediğinde X'in metin çizme fonksiyonu kullanılacak.
+
+80
+00:31:06,323 --> 00:31:13,183
+Keza PM'de kendi ilgili Window Manager'ın kütüphanesinin komutlarını kullanıyor olacak.
+
+81
+00:31:13,183 --> 00:31:19,243
+Böylece bakın, diyelim ki normal window, icon window.
+
+82
+00:31:20,307 --> 00:31:36,628
+Bir default davranış olarak normal pencere düşünürseniz, eğer bu soyut Windows sınıfını belki somut yapabilirsiniz de. Öyle de olabilir. Veyahut da şuraya kardeş olarak, alt sınıf olarak regular Windows sınıfı da olabilir mesela. Regular Windows sınıfı diyelim ki.
+
+83
+00:31:37,395 --> 00:32:04,935
+Regular Window, Icon Window. Bu tasarıma transient window getirmek istediğimizde sadece bir tane yeni sınıf kodluyor olacağız. İşte o kadar. Bunun X sisteminde veya presentation manager sisteminde gerçeklemesiyle ilgili ayrıntıları için başka başka yerlere, başka başka sınıflar kodlama konulunda kalmayacağız.
+
+84
+00:32:05,395 --> 00:32:12,516
+Veya KDE'yi de mi desteklemek istiyoruz? Sadece KDE Window Imp sınıfını koyacağız. İşte o kadar.
+
+85
+00:32:12,943 --> 00:32:29,523
+Böylece bizim window kodumuz hangi window manager sisteminden çalıştırılsa çalıştırılsın bu mümkün olabilecek. Yeter ki bu pencere nesnelerimizi ilklendireceğimiz zaman ilk başta buna birinci köprüyü sağlayacak.
+
+86
+00:32:40,943 --> 00:33:00,403
+İlk ortas, entreglos, bir dolu istedim süreden pencere biçimleri olabilecek. Akıllıca. Bu kalıbın keşfetmek için hemen aklınıza gelebilecek bir şey değil. Adaptörden farklı olarak. Bu biraz daha ayrıntılı bir düşünce ve deneyim gerektiren bir kalıp.
+
+87
+00:33:06,099 --> 00:33:07,199
+Olay bu arada arkadaşlar.
+
+88
+00:33:09,940 --> 00:33:21,700
+Bunu bir kalıp yapısında göstereceğimiz zaman ise bir soyutlama ve o soyutlamayı gerçekleyebilecek olası somut sınıflara bir üst soyut sınıf veriyoruz.
+
+89
+00:33:22,119 --> 00:33:28,539
+Abstraction ve Implementator. Evet ve Abstraction'a bir Implementator vereceğiz.
+
+90
+00:33:29,079 --> 00:33:37,799
+Abstraction'ın bütün operation'ları kendi içerisinde aslında o operation'ı Implementator'a yönlendirecek şekilde olacak.
+
+91
+00:33:37,940 --> 00:34:01,359
+Ve öte yandan biz bu abstraction, somut ve ek özelliklere sahip alt sınıfları tanımlayabiliriz. Çok kolaylıkla. Ve ona hangi türden somut gerçekleyici alt sınıf verirsek o türden işi o gerçeklemi yapıyor, yürütüyor olacak bizim Refined.
+
+92
+00:34:02,324 --> 00:34:14,003
+Abstraction sınıfımız ve hangi konkret impremantör ile çalıştığını bilmesine gerek bile kalmayacak. Böyle bir yapı var kalıplar.
+
+93
+00:34:16,484 --> 00:34:22,443
+Evet, söylediklerinin hepsini yazmış olmuşuz. Şuraya kalıp bileşenleri yaz.
+
+94
+00:34:23,572 --> 00:34:48,672
+Peki, toparlayalım. Nerelerde uygulayabiliriz bu kalıbı? Biz soyutlama ve bunun gerçeklemeleri arasındaki bağın kalıcı olmasının istenmediği veya işimize yaramadığı, içi karmaşıklaştığı her yerde kullanabiliriz. Hatta bunun bize sağladığı ek bir yara hem soyutlamayı hem gerçeklemeleri ayrı ayrı özelleşme hiyerarşilerine tabi tutabiliriz.
+
+95
+00:34:51,603 --> 00:34:56,423
+Kalmışlık bazı sonların çözümünü de kullanabileceğimiz güzel bir kalıp olur elimizde.
+
+96
+00:34:58,223 --> 00:35:00,083
+Şimdi gelelim örneğe.
+
+97
+00:35:01,363 --> 00:35:05,303
+Bu örneği de nereden yazdığımı, aldığımı yazmamışım.
+
+98
+00:35:05,423 --> 00:35:07,723
+Neyse, çok da ders değil.
+
+99
+00:35:08,596 --> 00:35:25,456
+Şimdi biz de bir çizim programı üzerinde çalışıyoruz bu örnekte de. İlk aşamada sadece dikdörtgenleri gerçekliyoruz. Zaman içerisinde farklı şekilleri de koyacağız. Ama burada meselemiz şu. Bizim iki farklı dikdörtgen alemimiz var.
+
+100
+00:35:25,456 --> 00:35:35,416
+Ve farklı aileden olan dikdörtgenler farklı yoldan çizilecekler. Elbette ki bir dikdörtgen nasıl çizileceğini bilir. Burada mesele şu.
+
+101
+00:35:35,860 --> 00:36:03,860
+Bir dikdörtgenin dört tane köşesi için dört tane nokta ve onların koordinatları söz konusu. Fakat burada bu bir dikdörtgen olduğu için mesela sol üst köşesinin y koordinatıyla sağ üst köşesinin y koordinatı aynı olacak. Bu nedenle aslında x1, y1, x2, y2, 4 ayrı int değer ile biz bu dikdörtgenimizi son derece yeterli bir şekilde modelleyelim.
+
+102
+00:36:03,860 --> 00:36:26,300
+Bu dörtgen çizileceği zaman ise dört tane çizgi çizilecek aslında. Ve fakat bu çizgi çizme işlerini yapacak elimizde iki tane hazır kütüphanede var. DP1 kütüphanemiz ve DP2 kütüphanemiz.
+
+103
+00:36:29,972 --> 00:36:51,012
+Bu iki kütüphane, yalnız bu iki kütüphanedeki iki kütüphanenin bize sağladığı metotların imzaları da farklı bu arada. Birisi DrawAlign diye bir metoda sahip ve bu çizginin başlangıç ve bitiş noktalarının koordinatlarını x1, y1, x2, y2 şeklinde alıyor.
+
+104
+00:36:51,668 --> 00:37:04,867
+Diğer kütüphanemizde ise DrawLine diye bir fonksiyon metodu var ve o da noktaların koordinat sırasını bana biraz ters gelen bir şekilde x1, x2, y1, y2 şeklinde alıyor.
+
+105
+00:37:04,867 --> 00:37:19,507
+Ve bizim de daha önce bu formatta hazırlamış olduğumuz bir dolu çizim dosyamız da var aslında. O nedenle bir formattaki dikdörtgenlerimiz zaten o çizimin saklandığı dosyada diyelim ki
+
+106
+00:37:19,668 --> 00:37:34,427
+Noktaların koordinatları da şu sıralamaya uygun verilmiştir. Öbür dosya formatımızda da noktaların koordinatları, işte dörtgenmiş, üçgenmiş şu bu, şu şekilde çizime yönelik sıralamada verilmiştir.
+
+107
+00:37:34,427 --> 00:37:45,427
+İşte farklı dikdörtgen ailesi, iki farklı dikdörtgen ailesi ile kastettiğim bu ve her ailenin kütüphanesi ayrı.
+
+108
+00:37:45,652 --> 00:38:07,791
+İki aile, iki kütüphane. Böyle bir yapımız var. Peki, acaba ne yapabiliriz? Sıfırdan bir tasarım yapıyoruz. File formatımız belli, iki ayrı file formatımız var. Bunda farklı. Dörtgenler, daleler, şunlar, bunlar olacak. Acaba onu nasıl gerçekleyebiliriz? Şimdi onu bir düşünmeye çalışalım.
+
+109
+00:38:13,748 --> 00:38:34,148
+Neydi temel iletimiz? Neyin değiştiğini buluyor? Onu sarmalı. Peki, iki farklı dikdörtgen şekli var. O zaman bir soyut, bir üst dikdörtgen sınıfımız olsun. Ondan kalıtımla iki tane somut dikdörtgen sınıfı üretelim. Rektangel sınıfımız soyut, onun somut altıları V1 rektangeli ve V2 rektangeli olacak.
+
+110
+00:38:38,099 --> 00:38:59,300
+Çizme metodunu çağırdığımızda onun kendisinin çizmesini bekleriz. O yüzden Draw metodu olacak. Bunun gövdesi kodlu olacak ve Draw Line metodunu çağırarak dikdörtgenin çizilmesini sağlayacak. Yani Draw kendi içerisinde Draw Line'ı çağırarak işini görecek.
+
+111
+00:39:00,119 --> 00:39:06,099
+Bu da kendi iç çalışması ile ilgili bir şey olduğu için çözümde bunu protected olarak yapacak.
+
+112
+00:39:06,099 --> 00:39:18,599
+Yapmayı tercih etmişler. Aslında private de yapabilirlerdi. Ama private metotlar overwrite edilebiliyor mu? Bakın o kuralı unutmuşum.
+
+113
+00:39:18,599 --> 00:39:24,859
+O yüzden kurtulduk diyelim ki aklımıza doğru çözüm geldi.
+
+114
+00:39:26,003 --> 00:39:44,724
+Peki, ve bu arada işte V1 Rektangl, Draw a Line metodu içerisinde DP1'in Draw a Line metodunu çağıracak. V2 Rektangl ise Draw a Line metodunun içerisinde DP2 Kütüphanesi'nin Draw a Line metodunu çağırarak da işi yapacak. Peki, tamam. Şu an için günü kurtardık. Güzel.
+
+115
+00:39:45,684 --> 00:40:12,884
+Çıkıması da giriyormuş burada. Tamam, bir kere drawline'ı public yapmayınız. Onu söyledim zaten. Evet, private metotlar kalıtı bile aktarılamıyormuş o metot da var. Peki, public mi yapalım o zaman rectangle'ın drawline metodunu? Hayır, o zaman bari protected yapalım. Alt smootlar için public gibi davranıyor. Başka alt smootlar için private gibi davranıyor. Tamam, yani herhangi bir shortcut yapmamışız böyle yaparaktan.
+
+116
+00:40:13,492 --> 00:40:31,672
+Doğru bir karar vermişiz. Doğru bir karar vermişiz. Protected yaparak da. Private metotlar aktarılıyor ama override edilemiyor olsa gerek. Neyse, şurayı bir netleştirelim.
+
+117
+00:40:31,672 --> 00:40:38,552
+Hemen şuraya bir not düştüğüm. Hatta unutmuştum da o yüzden.
+
+118
+00:40:39,347 --> 00:40:50,347
+Şimdi unutma da bir not bir şeymiş diye. Şuraya açıklamayı koy. Aşağı kavuştuk.
+
+119
+00:40:50,347 --> 00:41:03,347
+Diyelim. O kapatmıyordu, siliyordu. Evet, bu itasınında birine benzeyen şeyler kullandı arkadaşlar.
+
+120
+00:41:07,827 --> 00:41:08,728
+Açıkla akışt.
+
+121
+00:41:08,827 --> 00:41:09,327
+Teşekkürler.
+
+122
+00:41:13,972 --> 00:41:15,212
+Peki, sonuna geldin.
+
+123
+00:41:21,427 --> 00:41:39,427
+Evet, peki. Böyle bir tasarımda ortaya çıkan kod şöyle bir şekil alıyor. Burada da çok ters bir şey görmüyoruz. Sözde söylediğimiz şeyi biraz daha somut olarak görüyoruz. Peki, tamam.
+
+124
+00:41:41,840 --> 00:41:52,880
+Yeni bir gereksin geleceği belliydi. İki farklı bir dörtgen ailesi var. İki farklı da çember ailesi olacak. Daha sonra iki farklı çember üçgen, iki tane farklı üçgen ailesi olacak.
+
+125
+00:41:56,467 --> 00:42:11,367
+Birinci dörtgen anayisiyle birinci çember anayisi ortak. Çünkü ikisi de DP1 kütüphanesini kullanılaktan çizilecek. İkinci dörtgen anayisiyle de ikinci çember anayisi ortak olacak. Çünkü her ikisi de DP2 kütüphanesi kullanılaktan çizilecek.
+
+126
+00:42:11,367 --> 00:42:19,367
+Peki. Şimdi, istersek bu çember çizim metotlarını şu...
+
+127
+00:42:21,076 --> 00:42:25,235
+Niye Statik Çizim metodun demiş? Statik Çizim metod yok ki burada.
+
+128
+00:42:26,735 --> 00:42:29,416
+Asla soyk demek istemişimdir herhalde.
+
+129
+00:42:33,235 --> 00:42:43,255
+Evet, peki. Rektangl, orada abstrak ve ondan sonra onun alt sınıfta şey edilmesi. Peki, tamam, güzel.
+
+130
+00:42:44,456 --> 00:42:52,435
+Soyut demiş olmalı. Soyut demek istemiş olmalı herhalde. Tamam, soyut çizim metotlarını da biriktirebilirsiniz. Peki.
+
+131
+00:42:55,956 --> 00:43:15,596
+Ve tabii biz çizim programımızın bir şekil dikdörtgen miymiş, çember miymiş, kendisinin ne olduğunu çok bilmesine gerek yok. Shape, soyuç sınıfımız olsun ki kendini çizlediğimizde çizebilsin diye istiyoruz. Bu nedenle bir ortak bir şekil üst sınıfı koymamız yararlı olabilir.
+
+132
+00:43:17,811 --> 00:43:42,331
+Çözümümüzün ana tasarımını bozmadan bu hale getirmek istersek, bir kere önce şey, x'i birden adım adım gidersek eğer şu şeyde, şu yapıda bir kere farklı şekiller olacağımızı biliyoruz. Circle, triangle falan gibi.
+
+133
+00:43:44,851 --> 00:43:57,152
+İşte şu bahsettiğim Soyut Shape sınıfımızı bir oluşturalım. Ondan sonra işte Rectangle'dı, ondan sonra şeydi, bütün hepsini bunlara koyalım.
+
+134
+00:43:57,152 --> 00:44:10,952
+Nasıl yapayım şimdi? Şöyle mesela, Şükşük Shape. Bu dana gözü gibi. Ama buradaki puntoşu şöyle yapabiliyorduk galiba.
+
+135
+00:44:11,039 --> 00:44:18,039
+Neyse tamam, ne demek istediğimi anladınız arkadaşlar.
+
+136
+00:44:22,047 --> 00:44:47,768
+Yani yapacağım şey bir kere bir soyut bir shape üst sınıfı koymak. Çünkü bizim clientimiz tek tek bu şekilde dikdörtgen o zaman kendisini yani şey, şurada kardeş, dade sınıfı da olacak, onda da dohmetli olacak. Bütün bunları zaten aslında dosya formatımızda da o şekilde olabilecektir. Onda bile öyle olabilecektir diye düşünüyorum. Bir tane soyut bir shape üst sınıfı zaten lazım aslında bu tasarıma.
+
+137
+00:44:48,692 --> 00:44:50,692
+Onun dışında ek olarak...
+
+138
+00:44:57,364 --> 00:45:16,804
+Evet, tartışıya. Evet, çift sınıfını ekledik. Sonra circle sınıfını da vektangrın kardeş sınıfı olarak ekledik. O da kendi public draw metodu var. Ama bu sefer bu daha renk çizilebilmesi için dikdörtgenin çizgi çizilmesinin aksine çember çizilmesi gerekecektir.
+
+139
+00:45:25,364 --> 00:45:29,344
+Vestorker veya Drollsorker metodları çağırarak bu işler.
+
+140
+00:45:29,715 --> 00:45:50,795
+Bu da demek oluyor ki V1 Circle DP1'in Draw and Circle metodunu, V2 Circle kendi Draw içerisinde aslında DP2'nin Draw and Circle metodunu çağıracak. Bu arada bu DP1 ve DP2'nin bu metotları belki statiktir.
+
+141
+00:45:50,795 --> 00:45:57,475
+Bakın bu örnekte örneği mi demek istiyor? O çizim şeyleri belki statik olarak çağırıyor. O da olmuş olabilir.
+
+142
+00:45:57,715 --> 00:46:04,475
+Neyse, onu kafalant olarak yazdım. Şu şeyi bir düşüneceğim. Bu örneği tekrar bulmak lazım yerine.
+
+143
+00:46:05,135 --> 00:46:10,895
+Peki, şimdi böyle gidiyoruz ama sınıf sayımız biraz fazla artmaya başladı.
+
+144
+00:46:11,416 --> 00:46:22,416
+Şimdi mevcut durumumuzda dört belirli şeklimiz var. İki şekil, dikdörtgen ve daire. İki de alemiz var. İki kere iki dört. Dört farklı şeklimiz var aslında.
+
+145
+00:46:23,411 --> 00:46:41,112
+Yeni bir çizim metodu eklenmek gerekse, yeni bir şekil eklenmesi gerekirse, 3. şekil ekleneceğinde 2 hale 3 şekil, 2 kere 3, 6 olacak.
+
+146
+00:46:51,027 --> 00:47:10,007
+Yeni bir şekil ailesi eklemek gerekirse, o zaman şuradan çarpanların bir tanesine bir ekledik mi bu çarpa çarpa gidiyor. Ortaya çok fazla sayıda sınırlı çıkıyor. O yüzden bu yolda gitmemizin yanlış olacağını erkenden fark etsek daha iyi.
+
+147
+00:47:13,876 --> 00:47:40,636
+O zaman acaba ne yapabiliriz? Hemen burada mesele çeşitli şekil soyutlamaları var ve bu şekil soyutlamalarının farklı biçimde çizilme ayrıntıları var. Yani farklı gerçeklenme ayrıntıları var. Bunlar farklı farklı özelleşirse o zaman aradaki çaptaz bağları kesmiş olabiliriz ve sınıf sayımız da azalır. Oradan aklımıza bridge kalıbının kullanılması gelebilir.
+
+148
+00:47:42,356 --> 00:48:08,336
+Çünkü esas buradaki sorumluluğumuzun kök nedeni, farklı şekil türleri ve farklı çizim yollarını birbirinden net ayıramadığımız sıkı biriktir. Birinci tür dikdörtgen koordinatları ona göre verilmiş, ikinci tür dikdörtgen koordinatları ona göre verilmiş. O zaman biz iki farklı çizim ailesinden birini ona göre seçmek ve kullanmak zorundayız. Bu nedenle birbiri fazlasıyla bir sıkı bir bağlaşım söz konusu.
+
+149
+00:48:10,356 --> 00:48:16,155
+Sorumuz çözülür. Bir işte bu işe yarıyordu. Aklımıza böyle gelebiliriz.
+
+150
+00:48:18,836 --> 00:48:26,496
+Ve o zaman bizim shape sınıfımızı, shape'lerin şekillerimizi ayrı bir kalıtım hiyerarşisine tabi tutalım.
+
+151
+00:48:27,596 --> 00:48:31,715
+Çizme işlemlerimizi ise ayrı bir kalıtım hiyerarşisine tabi tutalım.
+
+152
+00:48:37,427 --> 00:48:45,827
+Ve bir drawing metoduyla çizilecek. DP2 kullanacak olan şekillerimiz ve iki drawing yöntemiyle çizilecek.
+
+153
+00:48:45,827 --> 00:48:55,887
+Ve üstteki soyut shape konusuna, işte drawing gerçeklemesi ne olacaksa onu atayabileceğimiz.
+
+154
+00:48:56,500 --> 00:49:16,639
+Yine kendisi de bir soyut sınıfı olan drawing sınıfının alt sınıflarından somut bir nesne vererekten bu işi çözeriz diye düşünüyorum. Bu durumda üçgen mi eklenecek? Hiç problem değil. Sadece shape'in altına bir tane triangle eklenecek mesela.
+
+155
+00:49:22,643 --> 00:49:47,483
+Drawline üstünden işini görebiliriz. Diyelim ki göremiyor. Ama göremiyorsa bile zaten bu şekiller bizde ya DP1 ya DP2 kütüphanesinden biriyle çizilebilecek halde olduğundan bizim şekillerimiz, eski legacy şekillerimiz. O yüzden mutlaka ya DP1'de ya DP2'de onun da çizilmesine yarayacak bir komut zaten vardır.
+
+156
+00:49:48,724 --> 00:49:57,244
+Bu nedenle ekleyeceğimiz bir triangle sınıfı başka hiçbir yere hiçbir şey eklenmesine ihtiyaç duymayacaktır.
+
+157
+00:49:57,244 --> 00:50:10,423
+Ya da diyelim ki ekleyeceğimiz bu şekilde öyle bir şekil ki illaki yeni bir çizim yöntemine ihtiyaç duyuyor.
+
+158
+00:50:10,963 --> 00:50:17,923
+Sadece ve sadece o zaman yapacağımız şey o yeni çizim yöntemini DP1 ve DP2 kütüphanelerine eklemek.
+
+159
+00:50:19,956 --> 00:50:46,436
+Yine en azından ortaya başka bir sınıf çıkarmamış oluyoruz böyle bir durumda. Böylece her yeni şekil için sadece bir sınıf ortaya koyuyoruz. Her bir çizim yöntemi illaki gerekecekse bunu da DP1 ve DP2'ye ekliyoruz. Ve bu yöntemler de birbirinden istedikler çok farklı olacağından böyle duplikada kopya yapıştırıp programlama yapmamış olacağız.
+
+160
+00:50:46,960 --> 00:50:56,960
+Şey bu. O işin esprisi bu arkadaşlar. Bunları kod üzerinden baktığımızda ise...
+
+161
+00:50:57,840 --> 00:51:25,840
+Kalıptan hatırlarsanız çok zor değil. Soyut şekil sınıfımız var. Cheese metodu soyut. İlgili köprü şeyisi mutlaka gerekiyor. Köprü yüzeyek bir alan. Şeklin konstruktörüne mutlaka ilgili drawing gerçeklemesini vermek zorundayız. Ondan sonra işte DrawLine, DrawCircle kendileri de ilgili drawing kütüphanesinin şuraya aktarıldığı, onun draw metotlarını kullanıyor.
+
+162
+00:51:25,840 --> 00:51:29,080
+Şeklin çizilmesini sağlayacak.
+
+163
+00:51:31,764 --> 00:51:45,864
+Evet, ve şeydeki örneğin bu işte shape'in somut altınıflarından circle çizilmesi istendi. Kendisinin çizmesini istediği zaman üst sınıftan kalıtımla aldığı draw circle'ı kullanacak.
+
+164
+00:51:45,864 --> 00:51:55,584
+Ki o draw circle'da kendisi hangi çizim gerçeklemesiyle ilişkiliyse onun üzerinden bu işi yapıyor olacak.
+
+165
+00:51:57,124 --> 00:51:58,004
+Durum bu.
+
+166
+00:51:59,827 --> 00:52:19,688
+Kesa, ayrıca kaldık işlerde şimdi. Kaynak kodu üstünden de oynarız. Ben şu an şunu görüyorum. DrawCircle metodu protected. Peki, Circle sınıfında bu DrawCircle metodunu overwrite etmek zorunda mıyız? Hayır, bakın etmemişiz. Sadece kullanıyoruz.
+
+167
+00:52:25,619 --> 00:52:43,940
+Yani tamam, doğru. Private üyeler doğrudan aktarılmaz, evet. Ama doğru, parçalık metotlar üzerinden çağırılabiliriz, tamam. Ama zaten şu bu zor bir metot üyalandı değil. O yüzden onun kontekte olması zaten şart. Tamam. Onu tekrar tehdit ettik. Peki.
+
+168
+00:52:44,416 --> 00:52:58,916
+Bu arkadaşlar, durum bu. Keza rekten ve da şehten kalıtımlar üretilmiştir. Kendi farklı üye alanları vardır. Çember'de sadece merkez noktasının içi koordinatları ve yarı çapı var.
+
+169
+00:53:08,563 --> 00:53:34,704
+Ve yine kendisinin çizilmesini soyut üst sınıftan aldığı çizgi çizme metotları ile yürütüyor. Bu çizgi çizilmesinde hangi gerçekleme üzerinden yapılacağı soyut üst sınıfın somut bu ilgili metodun da ayrıntıları kodlanmış durumda. Alt sınıfın bunlarla ilgili herhangi bir endişe duymasına gerek yok. Sadece kullanıyor, okutu oluyor, bitiyor.
+
+170
+00:53:38,036 --> 00:53:45,315
+Peki. V1 için, V2 için, V2 için her şekilde kodlarımız var.
+
+171
+00:53:48,155 --> 00:53:56,695
+Evet, bu arada bu DP1 kitaplı, DP2 kitaplı. Bu arada dikkat ederseniz aslında, şuraya bir geri dönelim.
+
+172
+00:53:58,695 --> 00:53:59,255
+Mesela.
+
+173
+00:54:03,059 --> 00:54:08,059
+Shapes, Drawing türünden bir tane nesne alıyor. Tamam peki.
+
+174
+00:54:09,059 --> 00:54:10,840
+Rektangal, tamam peki.
+
+175
+00:54:11,579 --> 00:54:15,059
+Geldik şeye, Drawing'e. Şu tasarımımızı hatırlarsak.
+
+176
+00:54:15,900 --> 00:54:20,019
+Drawing gerçekleme ile ilgili fluid üst sınıftı.
+
+177
+00:54:25,331 --> 00:54:53,111
+Evet, peki. Bunu DP1'i kullanan V1 Drawing ve DP2'yi kullanan V2 Drawing alt sınıfları olacak. Ve bu kütüphanedeki bu metotlar da statikmiş arkadaşlar. Bakın yani sınıfa düzgününden eleştiriliyor. O yüzden yani aslında evet gerçekten o statiklerken buradaki koddaki bu statiği demek istiyoruz. Yani ilgili çizim kütüphanesine gerekirse yeni bir statik farklı bir şey çizme metodu.
+
+178
+00:54:53,331 --> 00:55:01,172
+eklenir. Onda zorluk olmaz diyeyim. Bakın ben şimdi şu aldığım yolumu hemen geri alacağım.
+
+179
+00:55:01,172 --> 00:55:08,751
+Pardon, şey demedim. Şunu sürükleyemedim. Önceki yolu al.
+
+180
+00:55:09,268 --> 00:55:27,567
+Şunu al. Hayır, ayı dur. Pardon, onu demek istedim. Onu bakacağız ama yeni de, evet tamam, onu da hatırladık. Evet, doğru. Şey olması lazım, protected olması lazım. Şart, tamam. Aktarılı ama doğrudan kullanılamaz diye şunu ayrıntılı yazayım. Onu yazmayı unutmuşum. O anda biraz o yüzden şey yapalım.
+
+181
+00:55:37,652 --> 00:55:54,592
+Bunlar da var, Mars. Bir bunu söylemiş olayım. Yeterince de yerim varmış burada. Tamam. Böyle bir şey yapmama gerek yok. Ondan sonra acaba... Şurada da bir yerde... Soyut diye statik, evet.
+
+182
+00:55:58,579 --> 00:56:06,519
+Statik Çizim metotlarını da biriktirebilirsiniz. Tamam, peki. Dp1, Dp2 veya zaten maldır.
+
+183
+00:56:15,987 --> 00:56:26,987
+Kütüphane'nin de zaten. Hatta sınıflı kütüphane bunlar resim yemişiz. Kütüphane sınıflarında.
+
+184
+00:56:26,987 --> 00:56:29,487
+Kütüphane sınıflarında.
+
+185
+00:56:33,487 --> 00:56:33,987
+Bağlıyorum.
+
+186
+00:56:33,987 --> 00:56:38,987
+Evet, peki.
+
+187
+00:56:38,987 --> 00:56:41,987
+Tamam, of.
+
+188
+00:56:42,643 --> 00:56:52,443
+Yalnızca Windows'u alt çizgi oka bastım ve o pencere şu hali. Şöyle konulandırdı. Anasaklık'ı kullandığım bir şey değil tabii ki.
+
+189
+00:56:53,443 --> 00:56:56,883
+Evet. Tamam. Peki. Güzel.
+
+190
+00:56:57,492 --> 00:57:12,092
+Örneğe de baktık. FNP'dan. Her şey yolunda gözüküyor. Şu derslerimiz, çıkarttığımız derslerimizin üstünden geçelim. Kısaca ondan sonra sorularımızı ara veririz.
+
+191
+00:57:12,496 --> 00:57:27,896
+Diyoruz ki neydi işlemiz, bilgemiz, neyin değiştiğini bul ve onu sanmalı. Ama birden fazla şey de değişiyor olabilir. O yüzden orada yapacağımız kalıtım işlemini doğru bir şekilde kalıtım ilişkisi kurmaya çok dikkat etmemiz gerek.
+
+192
+00:57:27,896 --> 00:57:40,496
+Aksi takdirde birinci ilk akla gelen çözümde olduğu gibi ortalığa çok fazla yeni sınıf sayısı çıkıyor, ihtiyaç çıkıyor. Ama bu kalıbı kullanarak da kısa var.
+
+193
+00:57:40,496 --> 00:58:04,896
+Bu halde de beklediğimiz bütün bu değişiklikleri eklemeleri sınıf sınıfı üstel olarak arttırmadan sadece bir çizim numarası nesnesi için bir alt sınıfı ekleyerekten çözebildik işimizi. Öbür türlü bağlaşım attı ve değişiklikler için gereken sınıf sınıfı üstel olarak attı. O yüzden iyi bir iş yaptığımızı düşünüyorum bu kalıbı kullanmakta.
+
+194
+00:58:06,260 --> 00:58:09,699
+Evet, peki. Soğustan arkadaşım varsa buyurun.
+
+195
+00:58:18,452 --> 00:58:32,912
+Yoksa aradan sonra da soru gelirse sorabilirsiniz. Bu da demek oluyor ki, 10 dakikalarımızı verelim. 13.55, 14.05 arasında mola.
+
+196
+01:09:31,507 --> 01:09:43,507
+Evet arkadaşlar, iki dakika geç kaldım. Özür dilerim. Kaldığımız yerden devam edelim. Bu arada şunu da düşündüm.
+
+197
+01:09:49,811 --> 01:10:00,811
+DRAW LINE ve DRAW CIRCLE metotlarını protected yapmamızın hiçbir zorunluluğu da yok.
+
+198
+01:10:00,811 --> 01:10:05,811
+Çünkü hem şekilden gidelim hem koddan gidelim.
+
+199
+01:10:05,811 --> 01:10:14,811
+Nedir şimdi? Nesneye de tasarım modelleme kodlar, kalıplardan, ondan sonra bridge görüyorduk.
+
+200
+01:10:15,988 --> 01:10:21,648
+Bridge Solution 2. Şuradayız. Şurada da şuradayız.
+
+201
+01:10:25,648 --> 01:10:31,648
+Nedir kodumuz? Bu alt sınıfta yani Rectangle ve Circle sınıflarında Shape sınıfının...
+
+202
+01:10:32,884 --> 01:10:41,744
+Droll line, draw circle.
+
+203
+01:10:41,744 --> 01:10:57,683
+Droll metodunu çağırmak istiyoruz. Bunu çağırabilmek istiyoruz. İlla ki protected yapmamız gerekiyor mu? Hayır, public yapabiliriz.
+
+204
+01:10:58,355 --> 01:11:10,935
+Madem çağıracağız, madem alt sınıftan çağıracağız. Niye Protective yapıyoruz? Diyelim ki başka bir sınıf tarafından çağırılması işimize gelmediği için belki de yapacağız bunu.
+
+205
+01:11:10,935 --> 01:11:24,636
+Yani shape sınıfının ama zaten bir dakika, shape sınıfının zaten şey, soyut bir sınıf. Yani bu soyut sınıftan bir nesne oluşturulamaz ki bir shape'in hadis dual circle çizdireyim sana diye.
+
+206
+01:11:26,355 --> 01:11:29,915
+Hiçbir şeyini, esprisini anlayamadım ben arkadaşlar.
+
+207
+01:11:30,836 --> 01:11:56,536
+Eğer alt sınıfta overwrite edilemesin isteniyorsa, evet bu gerekli bir istek olabilir. Çünkü draw circle metodunun işte DP bridge üzerinden çizdirilmesini alt sınıfların berbat etmemesi gerekmektedir. O zaman o metodu protected değil de public ve final yaparsınız. Olur bir tarz. Öyle de çözülebilenir yani diye düşünüyorum.
+
+208
+01:11:58,836 --> 01:12:01,636
+Söre önemi hemen pratik olarak uygulayalım.
+
+209
+01:12:02,636 --> 01:12:04,396
+Kopyalayıp yapıştırmak istiyorum.
+
+210
+01:12:04,476 --> 01:12:07,615
+Dek paketi kopyalayıp yapıştırmak istiyorum.
+
+211
+01:12:07,736 --> 01:12:09,416
+Bu Solution 3 diyeyim mesela.
+
+212
+01:12:10,636 --> 01:12:15,416
+Bu Solution 3 içerisinde neydi mesela?
+
+213
+01:12:16,115 --> 01:12:29,095
+Evet, protected dilde şey, public yapacağım ama şey yapamasın isteneceğim. O halde edemesin isteyeceğim. Public final void.
+
+214
+01:12:36,500 --> 01:12:51,500
+Evet, dur. Void isinmiş olduk. Ve bu metot statik bir metot olmadığı için kimse shape nokta falan diyemez. Shape nokta drawline diyemez. Bu bir suyut sınıfı olduğu için ondan bir nesini oluşturup da...
+
+215
+01:12:51,923 --> 01:13:13,764
+Drawline de diyemez. Böyle yaptık mı bu işe yetiyor diye düşünüyorum. O aşamada başka ne var? Protect olarak verdi. Drawline, Draws, Rockler. İkisini böyle yaptım. Ondan sonra geri kalan kod içerisinde başka herhangi hiçbir şey hatası vermedim. Bir derdimin hatası yemedim.
+
+216
+01:13:16,275 --> 01:13:31,275
+Daha sonra da diyebilirsiniz mesela. İlla ki gerekli olduğu yer vardır ama burası orası değil. Peki. Devam edelim.
+
+217
+01:13:42,228 --> 01:13:45,327
+Neymişsiz kalıbımız? Sırıbımız kompozit kalıbı.
+
+218
+01:13:46,628 --> 01:13:55,427
+Kompozit kalıbı aslında daha kalıp hiç öğrenmeden bile ne içe yaradığını anlayabiliyorsunuz.
+
+219
+01:13:55,708 --> 01:13:59,347
+Kompozit demek bileçenlerden oluşmuş anlamına gelmektedir.
+
+220
+01:13:59,347 --> 01:14:06,467
+Bu kalıbın amacı, hiyerarşi şeklinde olan parça bütün ilişkilerini desteklemeye yönelik.
+
+221
+01:14:07,091 --> 01:14:15,431
+Ki bu kalıp sayesinde tek tek nesneler veya bir nesneler bütünü istekçilere tamamen aynı şekilde gözükebilir.
+
+222
+01:14:15,791 --> 01:14:21,711
+Tabi bazı ayrıntıları var, önemli ayrıntıları. Onlar zaten dörtlü çete tartışmış durumda.
+
+223
+01:14:22,072 --> 01:14:26,671
+Şimdi örneğin şu, dörtlü çetenin bir grafik çizim programı hazırlanıyor.
+
+224
+01:14:26,671 --> 01:14:34,471
+Bu grafik çizim programındaki nesnelerimiz, grafik birleşenlerimiz, çizgiler, dörtgenler, metinler vs.
+
+225
+01:14:35,091 --> 01:14:39,671
+Bunlar kendi kendilerine çizebilir. Doğal derseniz çizerler. Doğal metodlarını kodarsanız çizerler.
+
+226
+01:14:40,020 --> 01:14:58,380
+Bu ilaçanları bir resim altında gruplandırabilirsiniz ve bir resim alt resim parçalarından oluşabilir. Yani sizin çizdiniz bir resim, kendi içerisinde bir alt resim, bir çizgi ve bir dikdörtgen içerebilir. Alt resim de kendi içerisinde bir metin, bir çizgi, bir dikdörtgen vs. vs. bu gibi şeyler içerebilir.
+
+227
+01:15:08,020 --> 01:15:27,500
+Bundan eylemler hepinizin bildiği. Yani mesela, tabii şu benim için engelliyor. Şuraya ne ekleyelim mesela? Ekle bir tane şey. Ne? İçgen ekleyelim bir tane. Ondan sonra ne bileyim? Dörtgen ekleyelim bir tane.
+
+228
+01:15:28,307 --> 01:15:42,268
+Şunları da siyim kardeşim. Bomboş sazat vermiyor da böyle şey vermiyor falan. Ondan sonra bir tane de izgi olsun mesela. Bunları kendi içerisinde, kendi arasında gruplar seçip gruplandırabiliyorum.
+
+229
+01:15:44,275 --> 01:15:56,036
+Bu bir grup oldu. Ondan sonra şu ise başka bir grup oldu. Hizanınız da iyi. Böyle olsun istiyorduk ki. Bu ikisini seç. Bu ikisini ayrı gruplandınız.
+
+230
+01:15:56,036 --> 01:16:09,036
+Şimdi bu bir pictures. Ondan sonra bunun içerisinde 3 ayrı birleşen var. Bu pictures'un içerisinde 2 ayrı birleşen var. Diyelim ki sonra 2 tane de başka bir şeyi...
+
+231
+01:16:09,460 --> 01:16:26,840
+Diyelim ki ilk resmin art resmi yapmak istiyorum. Ama kendi aralarında şu şekilde olsunlar istiyorum. Bu ikisini sadece ikisini seçip gruplandır gruplandır dediğimde daha sonra bununla şu ötekini seçip.
+
+232
+01:16:27,283 --> 01:16:38,283
+Gruplandım. Tam üstüne tıklamam gerekiyordu. Seçip gruplandır, gruplandır dediğimde şu an hepsi bir bütün. Ama ben mesela şurada grubu çöz dediğimde...
+
+233
+01:16:39,123 --> 01:16:56,203
+Hepsi birden ayrılmadı. Bakın bütün bileşenlerden ayrılmadı. Az önce iki ayrı alt parça şeklindeydi, alt grup şeklindeydiler bunlar. Yine hala iki ayrı alt grup şeklindeler. İşte bu şekilde bir yaklaşımı modellemeye yönelik bir örnek vermiş bu komposit kalıbı için 4.3.3.
+
+234
+01:16:57,203 --> 01:17:01,083
+Şunu tekrar yukarı atalım, şunu tekrar yukarı atalım ve sunuma devam edelim.
+
+235
+01:17:04,275 --> 01:17:23,595
+Peki, böyle bir şeyi nasıl kodlayabiliriz? Alt tıpsını nasıl oluşturabiliriz? Şöyle yaparız. Bizim bütün çizgiymiş, üç gelmiş, dük dört gelmiş, mağlakmış gibi şekillerimiz, bu sefer adını şerpte mi? Grafik demişiz. Grafik adlı bir üst sınıfta toplamız.
+
+236
+01:17:23,595 --> 01:17:31,636
+Ve bir resim de kendi içerisinde bir ya da daha fazla grafik birleşeni işleyebileceğinden resim de bu grafiğin alt sınıfta olur.
+
+237
+01:17:32,083 --> 01:17:54,363
+Ve bir resim kendi içerisinde bir ya da daha fazla resim nesnesi içerebilir ki, özür dilerim, grafik nesnesi içerebilir ki bu grafik aslında soyut sınıfı oldu şimdi. Ondan doğadan nesne oluşturamaz ama bunun somut line, rectangle, text veyahut da yine kendisi gibi başka bir picture nesnesi bunun alt bileşenleri içerisinde olabilir.
+
+238
+01:18:00,083 --> 01:18:18,783
+İçerisinde nasıl bir kod var? Kendi bu grafik listesindeki dizi olur, her neyse, her bir eleman için onların çiz metodunu çağırır. Böylece hem alt resimler hem alt resimlerin içerisindeki tek tek bileşenler hepsi sırayla kendi içerisini çizmiş olur.
+
+239
+01:18:28,083 --> 01:18:47,203
+Bu bir metotlar olabilecektir. Ve bunun belli bir alt bileşenine gelişmek istiyorsak, şu sıradaki alt bileşeninde diye onun için bir getter metodu da olabilir. Yani nihayetinde bu parça bütün ilişkisini kurmaya ve yönetmeye yarayan diğer gerekli metotları da ekleriz.
+
+240
+01:18:49,043 --> 01:18:50,904
+Şey bu, olay bu.
+
+241
+01:18:52,916 --> 01:19:04,935
+Peki, şimdi bunu örnekten kalıp yapısı haline getirelim. Bu kalıp yapısında şuradaki Component Leaf Composite, bütün bunların üç önünde bulunması gerekmektedir bu kalıp içerisinde.
+
+242
+01:19:04,935 --> 01:19:18,115
+Ve herhangi bir operasyon yapılacağı zaman bu operasyonun tüm alt birleşenlerde yürütülmesini sağlayacak şekilde bir foliç dönüşü içerisinde komut yer almalıdır.
+
+243
+01:19:18,644 --> 01:19:41,224
+Böyle olunca, bu arada şu aslında ortaya çıkan, yani bileşenler arasında ortaya çıkan yapı bir ağaç yapısı. Diğer aşık bir yapı, bir ağaç yapısı. Bir yapıların da o ismi vermişiz, bu ağaç yapısı. Bu ağaç yapısının kök dürümüne, yani bütünü simgeleyen parçasına kök diyoruz. E kompozit, mutlaka kök kompozit olmak zorunda.
+
+244
+01:19:41,779 --> 01:19:57,939
+Bireysel bileşenlere yaprak diyoruz, uç düğümlere. Ara düğümlere ise mesela bu da bir ekompositin. Üç tane yaprağı lifi, bir tane de alt bileşeni var. Alt bileşen de kendi içerisinde üç ayrı yaprağa sahip.
+
+245
+01:20:00,000 --> 01:20:11,159
+Oltadaki ara düğümlere ara düğüm en uçtaki elemanları ise yaprak şeklinde tabir ediyoruz.
+
+246
+01:20:12,435 --> 01:20:27,395
+Komponent, soyut sınıfı bize ne sağlıyor? Nesnelar topluluğun katılımcıları için ortak bir kullanım arayızları sunmuş oluyor. Ayrıca bütün parçaları için erişim ve düzenleme metotları da içeriyor. Ad, Demo, Get falan gibi.
+
+247
+01:20:27,395 --> 01:20:36,515
+Leaf, topluluğundaki parçaların geliyor. Hiyerarşinin en altındaki düğümler oluyor bunlar. Bunların çocukları olamıyor. Yani leaflerin de leaf'i olmuyor.
+
+248
+01:20:40,435 --> 01:20:54,795
+Farklı tür aradürümler varsa bu sınıfın alt sınıfları oluşturulabilir. Şart değildir gerçi. Yani kompozitten başka alt sınıflar türetilebilir. Gerekiyorsa.
+
+249
+01:20:56,180 --> 01:21:22,800
+Kardeş sınıflar olması doğru olmaz. Yani ara düğüm olabilecek başka farklı kompozit türlü sınıfları olacaksa bunları kardeş sınıf olarak yapmanız biraz sakıncalıdır. Çünkü şu Ad, Renu, Get metotlarının gövdelerini orada da kodlamanız gerekecek bir duplikasyon olacak. Bu nedenle en doğrusu farklı tür kompozitleri bu kompozitin alt sınıfları olarak modellemek olacak.
+
+250
+01:21:23,412 --> 01:21:25,412
+Şimdi...
+
+251
+01:21:40,051 --> 01:21:41,891
+Peki, evet.
+
+252
+01:21:43,155 --> 01:22:01,355
+Olay bu arkadaşlar. Client ise, yani bu parça bütün ilişkisinde bulunan bu kompozit şeyin bazı, kökünü bilmesi daha doğrudur. Kökünü biliyorsa zaten kökünde operasyon çağrısı bütün ara düğümlere yayılacaktır.
+
+253
+01:22:01,355 --> 01:22:10,136
+Ama kökünü bilmiyorsa, herhangi bir yaptık düğümü biliyorsa eğer o zaman, o zaman şöyle bir şey ek olarak kullanılabilir.
+
+254
+01:22:11,155 --> 01:22:12,095
+Operation ile
+
+255
+01:22:18,739 --> 01:22:21,779
+Köklüğüme yönlendirileceğim, olmayacak.
+
+256
+01:22:22,139 --> 01:22:25,739
+Client eğer şeyi biliyorsa...
+
+257
+01:22:25,739 --> 01:22:30,599
+Neyse, ayrı tartışılsın. Belki daha önce tartışma içeride vardır.
+
+258
+01:22:31,939 --> 01:22:33,739
+Ama benim özellikle şimdi...
+
+259
+01:22:33,844 --> 01:23:01,783
+Tartışmam gereken şey şu olacak. Zayıf noktalar vardır galiba. Onları bahsedeceğim. Daha visitor kalıbını görmedik ama visitor olabilir client kesinlikle. Bu bütün düğümleri arasında dolaşarak da ilgili çeşitli işlemler yapılması gerekiyorsa ayrıntılı işlemler bunu illaki kökün operation işlemi üzerinden değil de farklı farklı işlemler yapılması gerekiyorsa bunun yürütülmesine yönelik kalıbımız var zaten.
+
+260
+01:23:01,844 --> 01:23:21,404
+Öyle söyleyelim. Belki o aynatıyı orada da tartışma olabiliriz. Bir bakalım şimdi o tarafta. Kalıbı nelerde kullanabiliriz? Zayıfları var. Geleceğim ama önce nelerde kullanılabilir kısmı geliyor. Nesneler arasında hiyerarşik parça bütün ilişkilerinin modellenmesi gerekiyorsa bu kalıbı kullanabiliriz.
+
+261
+01:23:29,844 --> 01:23:39,623
+Öğretmenin içerisinde, odların içerisinde, kol odlar, kol odların içerisinde tugaylar, tümenler, alaylar şeklinde galiba.
+
+262
+01:23:40,344 --> 01:23:47,603
+Neyse, bu şekilde hiyerarşik parça bütün ilişkilerini adalleyebilirsiniz bu kalıplar.
+
+263
+01:23:48,095 --> 01:23:56,775
+Ve arşivin nesneler topluluğu ve topluluktaki bireysel bileşenleri nesnelerle hiçbir şekilde bir erişim gerekiyorsa yine bu kalıbı kullanabilirsiniz.
+
+264
+01:23:56,975 --> 01:24:02,695
+Şimdi burada önemli gerçekten ayrıntıları var. Dikkat etmemiz gereken, karar vermemiz gereken.
+
+265
+01:24:06,931 --> 01:24:15,072
+Daha büyük üst bileşenlerden alt bileşene doğru ise de eğer isterseniz alt düğüm üst düğümden daha berdar kılınabilir.
+
+266
+01:24:15,072 --> 01:24:22,951
+Yani şu şekil içerisinde
+
+267
+01:24:27,923 --> 01:24:40,804
+My Composite olabilir veyahut da My Component olabilir. Hangisi daha işinize gelecekse öyle olur. Mesela Leaf'ten de kompozite.
+
+268
+01:24:41,279 --> 01:25:08,000
+Bire bir sahiplik ilişkisi kurulabilir. Kompozit çıldırınlarını biliyor. Bir çıldırın da kendisinin üst bileşeğinin ne olduğunu şu şekilde bilebilir. Ama tabii ki aslında o zaman bir ara düğüm de kendisinin üst düğümünün ne olduğunu bilmek zorunda. O zaman bir de aynı zamanda şu ilişkimi kuracağız.
+
+269
+01:25:08,948 --> 01:25:16,908
+Bir tane olmak üzere biri bir. Belki olabilir. Fakat...
+
+270
+01:25:17,235 --> 01:25:36,896
+Bir ara düğümün, bir yaprak düğümünde, bir ara düğümünde bir üstüne erişip bazı işlemler yapması gerekiyorsa iş mantığına göre, o zaman bunları böyle iki ayrı yerde kodlamaktansa, tek bir şey olarak bir komponantında illaki benim bir üst komponantım olacak.
+
+271
+01:25:36,896 --> 01:25:44,695
+Ben zaten kök düğümse de benim üst komponant düğümün nandım şeklinde bir değerlendirme söz konusu olabileceğinden.
+
+272
+01:25:45,235 --> 01:25:47,148
+Buradan kendisine...
+
+273
+01:25:49,652 --> 01:26:10,031
+Direğe bir sahiplik türünden bir ilişki koyabiliriz. Böylece iki yeşille çizdiğimi tek bir turuncu ile modellemiş olabiliriz. Üst kök düğüm için my parent component null değerini alır. Diğerleri için null olmayan bir değer alır. Böyle bir şey yapabiliriz.
+
+274
+01:26:17,652 --> 01:26:45,631
+Bu client'ınızın kök kompozitle konuşması gerekmez. Herhangi bir leaf'ine bir işaretçi olsa, onun get parent'ını çalsa, get parent kendi içerisinde iteratif olabilir. En sonunda köke kadar gider rekülsiyonla bu. Ve en son kök düğümün kendisi client'a döner mesela. Yani her bir leaf için get root gibi bir metot söz konusu olabilir.
+
+275
+01:26:45,652 --> 01:27:05,652
+Ama bu ara dönemler için de söz konusu olabilir. O zaman bu get root metodu, ister yeşil çözümleri kullanalım, ister turuncu çözümleri kullanalım. Şuraya bir yere get root metodu ile...
+
+276
+01:27:06,452 --> 01:27:21,132
+Bu getroot metodu while kendisinin şu turuncu ile gösterdiğim üyesi null olmadığı sürece o üst düğümünün getroot'unu getirir.
+
+277
+01:27:21,132 --> 01:27:34,292
+Else ise return this yani üst düğümünün değeri null ise o zaman üst kök düğüm benimdir. Kendimi döndürür. Return this şeklinde kodlayabiliriz mesela. Böyle bir şey yapılabilir.
+
+278
+01:27:34,452 --> 01:27:47,472
+Başka? Şunları bir temizleyelim bakalım. Şuraya geri dönelim. Evet. Şimdi bütün şu ayrıntılara karar vermemiz gerekecek arkadaşlar bu kabuğu uygulayacağımız zaman.
+
+279
+01:27:47,472 --> 01:27:55,672
+Bir düğün nasıl hissediniz? Kimseyle nasıl bir veri yapısı kullanılır? Şimdi belki şöyle bir şey denilebilirsiniz. Mesela.
+
+280
+01:27:56,115 --> 01:28:17,876
+Şu yapıdan herhangi bir yaprağı silmekte pek bir problem yok. Yani tutup şu yaprağı silebiliriz, hiç ders değil. Veyahut da şu yaprağı silebiliriz, hiç ders değil. Fakat bir ara düğümü silmek istiyorsak ne olacak? Şunu silmek istiyorsak ne olacak? Bunun silinmesini istemediğimiz leafleri var. Ne yapacağız?
+
+281
+01:28:18,323 --> 01:28:29,623
+Yenide kural kuraldır. Belki iç mantığımızda da öylesi içimize geliyordur. Bu turuncu ara kompozitleri sildiğiniz zaman bütün alt kökleri de silin silin diyebiliriz mesela.
+
+282
+01:28:30,343 --> 01:28:36,423
+İçimize gelirse yaparız öyle olur bir tane. Ama bu içimize gelmiyorsa o zaman iki seçenekten birini yapabiliriz.
+
+283
+01:28:36,423 --> 01:28:41,423
+Çocuk düğümleri olan kompozitlerin silinmesini engelleyebiliriz.
+
+284
+01:28:42,323 --> 01:29:08,023
+Veya bu durumda emin misiniz diye soran öyle bir sileriz mesela. Veyahut da bu kompoziti sildiğimizde şu an için öksüz kalan şu diğer sarı lifleri diyelim ki tutar. Bu silecek kompozitin parent'ı olan düğme atarız. Yani artık şunun diğer iki çocuğu da bu olmuş olur.
+
+285
+01:29:10,323 --> 01:29:20,343
+Daha biraz önce şekillendirdiğim bir düğümün üst düğümünün bilinmesi, yani çocuğun da ebeveyninden haberdar olması şeklinde kod yazarsak,
+
+286
+01:29:20,343 --> 01:29:29,103
+bu biraz daha bu ters yönelik okları kurmak ve bakımını sağlamak bize biraz daha ek koda mali olsa da,
+
+287
+01:29:29,423 --> 01:29:38,304
+şu şekilde düğüm silme işlemlerinde basitçe artık kendimi siliyorum ama benim çocuklarımı al benim parent'ımın içerisine.
+
+288
+01:29:38,323 --> 01:29:58,884
+Add metotlarıyla ekleyecekleri çok kolayca kodlanılabilecek hale gelmektedir. Buna daha dikkat etmemiz gerekiyor. Peki ondan sonra bu bir düğüm sil metodunu nereye ekleyeceğiz? Köke mi? Ondan sonra yaprakları değil herhalde. Veya ara düğme mi?
+
+289
+01:30:00,000 --> 01:30:02,880
+Şimdi arı düğümü ekleyebiliriz, kompozit sınıfını ekleyebiliriz.
+
+290
+01:30:03,199 --> 01:30:04,819
+Ama belki şöyle bir kontrol yaparız.
+
+291
+01:30:05,260 --> 01:30:10,059
+Ben kök değilsem bunu köküme ilet şeklinde bir karar verebiliriz.
+
+292
+01:30:11,119 --> 01:30:14,479
+Veyahut da işte üst düğümünü biliyorsa hiç problem değil.
+
+293
+01:30:14,579 --> 01:30:16,119
+Çoşlarım aktar sınıfa falan.
+
+294
+01:30:16,239 --> 01:30:18,760
+Yani her türlü karar alınabiliriz bu gibi durumlarda.
+
+295
+01:30:19,600 --> 01:30:27,180
+İç mantığımızda niye gerektiriyorsa ona göre yönelik kararımızı arar, alır, kodumuzu yazarız demek istiyorum.
+
+296
+01:30:28,115 --> 01:30:48,716
+Evet, bunları tartışayım. Şimdi kalıbın bir önemli zayıf yünü var. Eleştirme kısmını sona bırakmışım. Burada kalıtım ilişkisinin özüne aykırı bir davranış. Yaprak bir alt sınıf fakat üst sınıftaki çocuk yönetim metodları kalıtımla orada taşınıyor.
+
+297
+01:30:53,811 --> 01:31:13,811
+Evet, bu GetChart metotları kompozit için anlamlı. Esas gövdeleri orada kodlanıyor, ediyor. Fakat Leaf için bu metotlar ne olacak? Hiçbir anlamı yok ki. Leaf'in çocuğu olamaz. O yüzden Add metodu, Remove metodu zaten aslında olmamalıdır diyeceğim ama...
+
+298
+01:31:14,931 --> 01:31:41,652
+Eş biçimde kullanım kolaylığı nedeniyle biz bu soyut komponent sınıfını ekledik bir kere. Silensek kılıklarla da oluyor. O zaman ne yapacağız? Mecburen bu üç metodun da, LIS sınıfında güldesini boş göre de yapacağız. Yani et metodunu yazacağız. Ondan sonra aç kılıklar eteceğiz, kapa kılıklar eteceğiz yapacağız. Hiçbir işe yaramayacak o metod. Ama ne yapalım? Derleme hatasından kaçınmak için bunu böyle yapmak zorundayız.
+
+299
+01:31:42,068 --> 01:31:53,247
+Bir Boolean metot ise bu. O zaman iç mantığımızı uygun olacak şekilde ya gövdesinde return true yazarız ya da gövdesinde return false yazarız mesela.
+
+300
+01:31:53,868 --> 01:32:04,068
+Diyelim ki add işlemi başarılı olmuşsa true, başarısız olmuşsa false döndürürse, yani leaf'in zaten çocuğu olmaz o yüzden return false demeyi tercih edebiliriz.
+
+301
+01:32:04,468 --> 01:32:09,768
+Veyahut da bir şikayette bulunmadan he he desin geçsin istiyorsan o zaman return true.
+
+302
+01:32:10,068 --> 01:32:11,247
+Geçeriz mesela.
+
+303
+01:32:13,948 --> 01:32:17,448
+Veya işte get chart metodunu ne yapacağız diyelim ki?
+
+304
+01:32:17,568 --> 01:32:23,948
+Leaf içerisinde ne int parametresi verirse verirsin? Yanıtımız return null olur mesela.
+
+305
+01:32:25,528 --> 01:32:30,388
+O şekilde kodlarız. Çok güzel olmayacak, çok güzel durmayacak o metodlar Leaf sınıfında.
+
+306
+01:32:30,388 --> 01:32:31,228
+Ama ne yapalım?
+
+307
+01:32:32,435 --> 01:32:44,795
+Bu kalıbın getirdiği esneklik karşılığında ödeyeceğimiz bir bedel olarak düşünebiliriz. Çok da büyük bir bedel değil ama yine de beni rahatsız etmeye yetecek kadar bir bedel.
+
+308
+01:32:47,535 --> 01:32:59,435
+Evet ve şu gerçekleme ayrıntıları konusunda bu tartışıklarımızın dışında başka bir dolu ek ayrıntıda bulunabilir. Bütün bunları tek tek bizim düşünmemiz gerekmektedir diyebilirim.
+
+309
+01:33:01,011 --> 01:33:07,311
+Genel soru varsa alayım, yoksa örneğine bakacağız.
+
+310
+01:33:27,891 --> 01:33:37,371
+Peki, bakalım. Bu örneği Design Platton, Shyamal Otuğ kitabından almışım. Bilebildiğin ama biraz değiştirmişim.
+
+311
+01:33:38,292 --> 01:34:01,452
+Biz çeşitli makineler ve makine parçaları üretiyoruz. Bunları bir üretim katalogu altında göstermek istiyoruz, izlemek istiyoruz. Bu katalogda ne bilgilerimiz var? Makinelerimizin veya parçalarımızın hangi fabrikada üretildiği maliyeti var? Başka işler ne bilgiler istersek eklesin. Bu ekle bu bilgilerden yola çıkarak çeşitli zaporlar üretmek istiyoruz.
+
+312
+01:34:06,292 --> 01:34:22,152
+Makine parçaları için acaba nasıl bir şey yapsak? Makiner ve bu alt bileçenleri dediğimize göre bu bir parça bütün, hiyerarç parça türü ilişkisi ve bunun içinde kompozit kalıbını uygulayabileceğimizi gördük. Uygulayalım o zaman.
+
+313
+01:34:25,752 --> 01:34:27,092
+Tasarım şu şekilde.
+
+314
+01:34:31,796 --> 01:34:55,336
+İster makine, ister makine parçası olsun. Bütün bunları iç biçimde bir erişim istediğimden Manufacturing Item diye bir sınıf oluşturdum. Onu da soyut tutuyorum. Zaten kalıbın gerektiği de geriydi o. Bu ister bir makine olsun, ister makine parçası olsun, her ikisinin de bir ID'si var.
+
+315
+01:34:56,148 --> 01:35:19,688
+Seri numarası var, tek tanımcısı var. Biz yönetiyoruz ya. O yüzden bu ortak bilgileri, mümkün olan bütün ortak bilgileri soyucu sınıfta topluyorum. O yüzden machine ID üye alanı var. Bu makine için makine ID, machine part için aslında part ID. Ama makine parçasını da bir makine olarak düşünebiliriz. O yüzden üye alan isimlendirmesi çok da anlamsız değil.
+
+316
+01:35:20,112 --> 01:35:31,252
+Veya isterseniz Item ID diyebiliriz. Yani Machine ID adını beğenmediyseniz, Manufacturing Item ID veya Item ID de kısaca duyabiliriz.
+
+317
+01:35:31,699 --> 01:35:59,640
+İster makine olsun, ister makine parçası olsun, adı baz, hangi fabrikada götürdüğü bilgisi var. Bunları string olarak modellemişim. Örneği karışık tutmamak için. Yoksa normalde özellikle bu fabrika sınıfı, name için değil belki ama factory sınıfı için kesinlikle öyle. String diyerek geçmek çok da mantıklı bir şey değil modelleme açısından. Bu ileride göreceğimiz kod kusurları içerisinde.
+
+318
+01:35:59,699 --> 01:36:27,699
+İstediğiniz için de örneğe bakalım.
+
+319
+01:36:27,699 --> 01:36:38,899
+Doğru değil ama örneği yerinden fazla karmaşıklaştırmamak için böyle yaptım. İsterseniz factory sınıfı da olur. Manufacturing item ile factory arasında istediğiniz ilişkili türü de kurarsınız.
+
+320
+01:36:39,640 --> 01:36:53,420
+Neme için böyle bir sakınca yok. O yüzden aslında bu iki üyeyi değil de özellikle factory üyesini diyelim. Neme Stink yani ama başka bir şey yok. O yüzden şuradaki notum çok da şey olmamış. İkili de factory üyesi için.
+
+321
+01:36:55,859 --> 01:37:12,979
+Şimdi tabi o... Şunun notumu düşeyim. Şimdi onu direkt çizemem. Zaten şu şeyleri koymakta, ders notlarını yayınlamakta çok geç kaldım. Bir de böyle bu kadar ufak şeyleri şimdi bekletmeyeyim. Bu birikim içerisinde bunları abise yüklemek istiyorum.
+
+322
+01:37:12,979 --> 01:37:20,759
+Bu iki üneyi üye değil, sadece faktori.
+
+323
+01:37:21,844 --> 01:37:37,623
+Y, string yapmak zorundayım. Zaten string'tir yani. Ona göre düzeltacağım. Bu iki yi kısmını artık seni.
+
+324
+01:37:41,811 --> 01:37:59,011
+Evet, aşamayı inceliyorduk başka. Ondan sonra işte. Artık olarak yapacağım ne var? Her makinenin illa bir ID'si olacak, adı olacak ve hangi fabrikada üretildiği bilgisi verecek. Ondan sonra makinenin ID'si neymiş? Bunlar için getter metotları ve setter metotları olacak.
+
+325
+01:37:59,572 --> 01:38:21,672
+Bir makine, makine parçası ise onun içinde bulunduğu makinenin de ID'sinin ayrıca bilinmesi gerekeceğinden parent ID içinde get-insettir metotları var. Yalnız şurada en az bu kontrolü kalıbının genel zayıflığına illaki her noktada düşmemiz gerekmiyor.
+
+326
+01:38:27,572 --> 01:38:34,372
+Partiler için geçerli ama meşinler için çok geçerli olmadığında Parent ID diye bir üye alan eklemedim.
+
+327
+01:38:34,972 --> 01:38:39,572
+Keza aslında bunun da bir sebebi de şu aslında. Makineler ve makine parçaları olacak.
+
+328
+01:38:39,572 --> 01:38:46,632
+Yani makinenin alt makineleri de olabileceğini düşünerekten yapmıştım örneğimi.
+
+329
+01:38:46,852 --> 01:38:55,532
+O yüzden aslında Parent ID de gerçekten üst sınıfa yani manufacturing item'a bir üye alan.
+
+330
+01:38:55,572 --> 01:38:58,012
+olarak konular bilinir.
+
+331
+01:38:59,412 --> 01:38:59,692
+Evet.
+
+332
+01:39:00,832 --> 01:39:02,072
+Evet, evet.
+
+333
+01:39:03,112 --> 01:39:04,572
+Onu da ekleyeyim.
+
+334
+01:39:05,132 --> 01:39:08,632
+Evet, üstünden daha fazla iş gerektiriyor. Neyse.
+
+335
+01:39:09,292 --> 01:39:12,092
+Şöyle yapayım şimdi o zaman şu son modundan çıkayım.
+
+336
+01:39:12,992 --> 01:39:16,992
+Ondan sonra da bir yeni açıklama koyalım şuraya.
+
+337
+01:39:19,652 --> 01:39:22,332
+Penet ID'de
+
+338
+01:39:22,515 --> 01:39:39,735
+Üst sınıfa taşınır. Çünkü makinenin alt makineleri olabilir dedik. Demeseydik o zaman daha doğruydu bu şekilde. Ama dedik.
+
+339
+01:39:43,828 --> 01:39:55,807
+Ama bakın, bazı makineler kendi içinde makine parçaları içerebilir değil. Makine kendi içerisinde alt makineler içeriz. Notta yazmıyor. Ben onu sözle söylemişim. Lafla söylemişim.
+
+340
+01:39:56,608 --> 01:40:05,148
+İyi yapmışım. Kendini iç çıkarmışım. Bu kadar demkim. Makinin alt makine parçası olmayacak. Bütün örneklerine baktığımda da zaten yanılmıyorsam.
+
+341
+01:40:07,315 --> 01:40:12,435
+Neyse, şimdi bakalım.
+
+342
+01:40:12,435 --> 01:40:19,355
+Şey, şunu şöyle yapayım o zaman.
+
+343
+01:40:19,355 --> 01:40:24,556
+Makinenin alt makineleri olabilir deseydik.
+
+344
+01:40:27,275 --> 01:40:30,235
+Alt makineleri olabilir deseydik.
+
+345
+01:40:32,756 --> 01:40:41,016
+Evet, tamam. O zaman böyle. İyi. Bunu kurtardık.
+
+346
+01:40:41,016 --> 01:40:42,076
+Gelin.
+
+347
+01:40:43,735 --> 01:40:44,996
+Bunu tekrar geçelim.
+
+348
+01:40:47,376 --> 01:40:49,195
+Evet, bakalım.
+
+349
+01:40:49,956 --> 01:40:56,556
+Evet, add part, remove part. Tamam. Yani bir makine içerisinden parça ekleme, parça çıkarma işlemini de yapabiliyoruz.
+
+350
+01:40:56,956 --> 01:41:00,588
+Ayrıca bir şekilde gerekirse diye...
+
+351
+01:41:01,876 --> 01:41:13,976
+Alt bileşenleri neymişse bir makinenin, onun arasında dolaşmamızı sağlayacak bir iterator döndürmek üzere de bir getter metodu eklemişim.
+
+352
+01:41:14,336 --> 01:41:26,156
+Soyut olarak bunu tabii ki machine part'ta return null diyecek, machine değilse return part diyecek. Böyle bir yapı kurabilirim.
+
+353
+01:41:26,579 --> 01:41:45,719
+Ve ayrıca bu yapı üstünden çeşitli raporlar tanımlayabilirim. İşte belli bir makinenin fiyatının bulunup hesapların bir raporlanması veya belli bir fabrikada üretilen mazizmelerin, makinelerin listelenmesi gibi çeşitli farklı raporlarım olabilir.
+
+354
+01:41:45,719 --> 01:41:53,639
+Bunun report sınıfının metotları şeklinde gerçeklerim. Bir örneğe uygulaması üstünden de.
+
+355
+01:41:54,579 --> 01:41:56,039
+Demonstrasyonumuzu yapacağız.
+
+356
+01:41:59,315 --> 01:42:21,815
+Bakalım. Machine Part ve Machine arasında başka ne enteresan farklar var? İşte Machine Part'ın Parent ID'si olacak. Ama Machine'in Parent ID dememişiz. Çünkü makinenin alt makinesi olduğu şeklinde dememişiz gereksinlerimizi. Construct'a bütün bilgileri alıyor ama ek olarak Machine Part'ta Parent ID'yi de veriyoruz Construct'a.
+
+357
+01:42:24,243 --> 01:42:40,583
+Mesin için getParentID, setParentID bir şey yapmayacak. Ya da belki eksi bir döndürürüz artık nasıl isterseniz. GetParts, Mesin için anlamlı ama MesinParts için direkt returnNull diyecek.
+
+358
+01:42:41,583 --> 01:42:50,323
+GetParts, removePart, Mesin sınıfı için geçerli. MesinParts da direkt ya returnTo ya returnForce demişizdir. O da bakacağız şimdi.
+
+359
+01:42:53,652 --> 01:43:11,952
+Enfectioning Item, Machine ID Was, Etnive Factory, bu üst soyut sınıfımız, Constructor tanımlı, Basit Gitter Settler metotları tanımlı, diğerleri parçada makine olmasına göre farklılaşacağında soyut metotlar olarak yazılmış.
+
+360
+01:43:14,100 --> 01:43:32,780
+Meşeğin sınıfında parçalar var. Bakın, perintidy yok. Fakat get perintidy ne döndürüyor? Sıfır döndürüyor. Ya da eğer sıfır sizin için anlamlı bir koltukta, eksi birden döndürebilirdiniz. Mesela konstruktör gerekli. Birleşenlerin tuturduğu eriyelisini ilklendirmesi gerekli.
+
+361
+01:43:39,412 --> 01:43:59,492
+Şimdi şöyle bir durum var. Bir parça, ürettiğimiz belli bir parça sadece belli bir makinenin içinde olabilir. Yani bir parçanın parentı o parçayı hangi makineye ekliyorsak odur.
+
+362
+01:44:00,115 --> 01:44:21,756
+Fakat şöyle bir durum varsa eğer, bizim bir parçamız var ve birden fazla makineye ekleniyor ise, öyle bir durumumuz varsa, o zaman o parçayı machine park sınıfından tek bir nesneyle modellememiz doğru olmaz.
+
+363
+01:44:28,115 --> 01:44:47,716
+Her bir için ayrı ayrı machine part nesnesi oluşturmamız gerekir. Machine part sınıfında onu söylemek istiyorum. Çünkü add part metodu kendi içerisinde bir parçaya kendisini ekleyeceği zaman o parçanın parent id'sinin kendi id'si olarak üstüne yazıyor.
+
+364
+01:44:55,572 --> 01:45:15,011
+O zaman o dişliden, o dişli sınıfından üç nesne oluşturmam. Veya adı dişli olan üç nesne oluşturmam ama parent idleri farklı yapmam. Bunları da isimlerinden birbirine ayırt edebilmem için belki de şu makinenin dişlisi diye yazsam yararlı olur diye düşünüyorum.
+
+365
+01:45:15,011 --> 01:45:18,711
+Onu da önemli bir ayrıntı olarak söyleyelim.
+
+366
+01:45:20,051 --> 01:45:39,371
+Limu işi basitçe listeden o nesnenin çıkarılmasını sağlıyor. Yapılabilmişse bu iş True, Extractly, Default. Liste o şekilde çalışıyor çünkü. Ondan sonra parça ise işte o parça listesi üzerinde dolaşan bir iterative nesnesi geri döndürüyor.
+
+367
+01:45:41,524 --> 01:45:53,784
+Makine parçası ise ek olarak Parent ID üyesine sahip. Kendisi çağırladığı zaman üst sınıfın konstruktörünü çağırıp Parent ID'sini ekliyor. Parent ID'sinin Getter Setter'in metotlarının burada anlamı var.
+
+368
+01:45:56,979 --> 01:46:15,579
+Sıfır döndürme şeklinde veya set metodunun gövdesi boş gördüğünüz gibi bir iş yapmıyor. Anlamı yok çünkü. Ama burada bu ikisinin anlamı var. Bu sefer Mechimparklı diğer üç metodun anlamı yok. İtre itir al, parça çıkarma metotları, return al veya return false gibisinden şeyler döndürüyor.
+
+369
+01:46:15,579 --> 01:46:17,219
+Peki.
+
+370
+01:46:18,068 --> 01:46:45,288
+Bu yapımızı kurduktan sonra acaba rapor sınıfımız nasıl bitmiş? Bakalım. Basitçe çok fazla uğraşlamadım. İki tane statik metot ekledim. Daha doğrusu hatta bir tane eklemişim. Sadece bir fabrikada üretilen nesneleri bulunan şeklinde demişim. Yani bir makinenin maliyetini hesapladığı bir şeyler, daha kalmış bir şeyleri visitor kalıbına bırakmışım. Onu o zaman orada yapacağız. Peki.
+
+371
+01:46:46,484 --> 01:46:58,364
+Tabii benim bu manufacturing itemlarımı da tuttuğum bir map, bir tablo, bir dizi falan olacak haliyle bu katalogdaki yerimi aldım.
+
+372
+01:46:58,364 --> 01:47:06,364
+Bütün o komple kataloğu veriyor bu fight items metoduna. Ek olarak, ikinci paramet olarak işte şu fabrikadaki...
+
+373
+01:47:08,307 --> 01:47:14,687
+Makineleri ve parçaları listele meclisini istediğim için ona göre parametri veriyorum.
+
+374
+01:47:15,087 --> 01:47:26,487
+Ondan sonra, şu fabrikada üretilen item'lar numarasını, ID'si, ismini yazacağım. Başlık satırı oluşturuyorum şurada.
+
+375
+01:47:26,487 --> 01:47:36,487
+Ondan sonra, eğer hiç bulunamamışsa, bunları yazmaktansa en sona böyle bir parça bulunamadı diyecek. Aksi taktede zaten oradaki parçaları yazacak.
+
+376
+01:47:41,268 --> 01:47:59,148
+Belki bu bir spaz dizi olabilir diye itemler ise şu an geç diyorum. Bir iş yapmıyorsa ne yapmak istiyor? Ondan sonra bakıyorum item'ın fabrikasına bakıyorum. Ondan sonra o fabrikanın adı benim parametro olarak verdiğim adıyla aynıysa, büyük ağız kış kafa aynımı olmadan.
+
+377
+01:47:59,764 --> 01:48:11,663
+O zaman, Compure Tignore Case'ini Equal Tignore Case de diyebilirdim. O zaman Tuba'ya da foster ediyor. O zaman bulduğum hit sayısının bir artı. Ondan sonra şu numaralı item işte.
+
+378
+01:48:13,695 --> 01:48:26,615
+Şu fabrika, şey, ha birinci bulduğum, bir şu üretilere, iki şu üretilere, üç şu üretilere şeklinde yazdığım için bir şu idli, şu isimli makine, iki şu idli, şu isimli makine falan şeklinde listelemeyi yapacak.
+
+379
+01:48:26,615 --> 01:48:41,695
+Yalnız tabii ki belki de bu makine katalogu içerisinde makinen kendisi değil ama bir alt parçası ilgilendiğim fabrikada üretiliyor olabilir. O yüzden sonra bu dizinin içerisinde bir tekrar...
+
+380
+01:48:41,695 --> 01:49:06,796
+Bu da bir dolaşıp yapmaktansa o item'ın kendi içerisinde baktıktan sonra bunun art bileçendiri içerisinde aramayı da aynı for döngüsüne koymak iki ayrı for döngüsü yapmaktan daha mantıklı. Ondan sonucuma eğer art parçalarını al, eğer art parçaların varsa, yani bu aslında makine parçasıymış anlamına gelmekte veya biz art parçaların katalogunu tutmamışız anlamına da geliyor olabilir.
+
+381
+01:49:07,556 --> 01:49:09,176
+Naresi bir şey yapma.
+
+382
+01:49:09,587 --> 01:49:23,108
+Ondan sonra, ama aksi takdirde bu gelen iterator'daki her bir birleşimine tek tek dolaş. Onları da bu fabrikaya karşılaştır, işini yaptır filan şeklinde koz yazmışım.
+
+383
+01:49:24,115 --> 01:49:39,695
+İçimi görüyor. En azından yani kod açısından, istediğim şeyi yapmak açısından. İçimi görüyor. Fakat başka bir problem var. Daha sonra diyelim. May metodunda ise kataloguyu oluşturuyorum.
+
+384
+01:49:40,340 --> 01:49:59,119
+Bir tane makine parçası oluşturuyorum. Ondan sonra bir tane makine oluşturuyorum. Ona üç tane parça ekliyorum. O parçaları makineye ekliyorum. Parçaları ayrıca kataloğa eklemiyorum. Buna rağmen bulabilmesi lazım koduma göre. İki tane daha makine parçası ekliyorum. Ondan sonra bütün bu kataloğumun içeren item titresini rapora gönderiyorum.
+
+385
+01:50:00,000 --> 01:50:04,180
+Bütün ne varsa onları liste diyorum.
+
+386
+01:50:04,579 --> 01:50:05,199
+Listede diyorum.
+
+387
+01:50:05,460 --> 01:50:06,880
+Bulacak listeleyecek.
+
+388
+01:50:08,400 --> 01:50:10,020
+Buradaki problem şu arkadaşlar.
+
+389
+01:50:11,060 --> 01:50:12,900
+Belki sizinle gözünüze çarpmıştır.
+
+390
+01:50:13,539 --> 01:50:19,300
+Şu an çarpmadıysa bile refactoring konularını gördükten sonra gözünüze çarpmalı arkadaşlar.
+
+391
+01:50:20,619 --> 01:50:21,840
+İşaret diyeyim.
+
+392
+01:50:21,840 --> 01:50:25,640
+Siz de finansalında böyle işaretleme yapabilirsiniz mesela.
+
+393
+01:50:26,195 --> 01:50:44,556
+Şimdi şuradaki kod parçası ile şuradaki kod parçası birbirinin tamamen aynı. Yani şu if bilmem ne kısmı aynı.
+
+394
+01:50:44,556 --> 01:50:46,556
+Oraya bir kod numarası verirsiniz.
+
+395
+01:50:49,140 --> 01:51:10,500
+Dersiniz ki bir numaralı noktada duplicate kod kusuru var dersiniz. Çünkü diyelim ki bu listeme biçimini değiştirmeniz gerektiğinde sekmeyle ayırmadan virgül ve ayır dese mesela veya parçalanmalarını hiç yazma dese mesela ne yapacağız? Parçalanmalarını hiç yazma dese.
+
+396
+01:51:13,363 --> 01:51:29,363
+Şurada ve şu kısımları silmemiz gerekecek diyelim ki. Daha çok iş yapmış olacağız. Copy-reptot programlarının sakıncalarını sizde şahit olmuştur. Bu nedenle aslında…
+
+397
+01:51:31,475 --> 01:51:41,335
+Şu iki kodu, aynı kod parçasını ayrı bir statik fonksiyona taşımamız daha doğru olacaktır. Onu da söyleyeyim.
+
+398
+01:51:45,335 --> 01:51:52,995
+Bunu burada şimdi o şekilde düzeltsem mi yoksa böyle kalsın söylesem mi.
+
+399
+01:51:54,515 --> 01:52:10,655
+Gerek yok. Kodlarımda da illa mükemmel yazıyordum gibi iddiam da yok. O yüzden böyle olabilir. Peki, yeri geldi fark etmişken söylemiş olayı. Ufak bir notumu düşeyim. Belki de bilmiyorum. Belki yaparım. Belki yapmam.
+
+400
+01:52:22,868 --> 01:52:40,548
+Ya Extract Method ya da Elif diyebilirim. Evet, pekala. Çalıştırmadık ama. Çalıştığını görelim.
+
+401
+01:52:49,908 --> 01:53:02,787
+Maynap. Evet. Şimdi Bursa dediğime göre şu parça bir, şu parça iki, şu parça üç. Üç parça bulması lazım. Çalıştıralım.
+
+402
+01:53:07,731 --> 01:53:19,491
+Üç parça buldu. Klank Shaft'ını, Flanche'ı ve Diskribatör'ü buldu. Eksik yazmadı, fazla yapmadı. Hepini yazdı, iyi geçmiş olsun.
+
+403
+01:53:21,131 --> 01:53:23,131
+Peki, var mı sorun?
+
+404
+01:53:32,083 --> 01:53:33,804
+10-10 dakika yaklaşıyorum.
+
+405
+01:53:37,043 --> 01:53:38,699
+14 TL
+
+406
+01:53:41,939 --> 01:53:42,599
+Ondur.
+
+407
+02:03:29,939 --> 02:03:40,220
+Evet arkadaşlar, ara zamanımızı doldurduk. Güzel zamanımız geçiyor. Evet, kaldığımız yerden devam edelim.
+
+408
+02:03:43,220 --> 02:03:45,680
+Decorator kalıbı. Evet, bu da ilginç bir kalıp.
+
+409
+02:03:52,724 --> 02:04:03,243
+Şimdi, bu kalıbı hemen adından anlamayabiliriz. Kalıbı görelim. Ondan sonra ad bize özellikle hatırlatıcı olacak.
+
+410
+02:04:03,243 --> 02:04:12,203
+Şimdi, Dekorator kalıbının amacı, Nesneleri çalışma anında yani dinamik olarak ek sorumluluklar atamak.
+
+411
+02:04:13,103 --> 02:04:14,423
+Aslında iddialı bir cümle.
+
+412
+02:04:14,899 --> 02:04:22,779
+Ama bu kalıplara gerekli altyapıyı kurduğumuzda bu iddialı cümlenin gereğini yerine getirebiliyor olacağız.
+
+413
+02:04:23,659 --> 02:04:29,299
+Şimdi normalde bu işi ancak kodlama anında yapabiliriz.
+
+414
+02:04:29,539 --> 02:04:34,539
+Yeni sorumluluk mu atamak istiyoruz? Bu sorumluluğu yürüteceği metotlar ekleriz.
+
+415
+02:04:35,420 --> 02:04:38,939
+Veya kalıtımla yeni bir altyapı oluşturur.
+
+416
+02:04:39,296 --> 02:04:54,516
+Yeni eklememiz gereken özellikleri, yetenekleri, sorumlulukları bu alt sınıfta ekleriz. Böyle olabilir ancak. Ve o ek sorumluluklara sahip olması gereken nesneleri de alt sınıftan değil de alt sınıftan tanımlıyoruz.
+
+417
+02:05:07,923 --> 02:05:12,684
+O cümleyi öyle kursam olmayacak. Neyse, görelim en iyi değerler denilir. Siz kendiniz.
+
+418
+02:05:13,324 --> 02:05:24,923
+Nihayetinde bu kalıp bize nesnelerin bireysel olarak, yani aynı türden diğer nesnelerden farklı olarak özelleşebilmesini sağlıyor.
+
+419
+02:05:25,864 --> 02:05:31,784
+Normalde kalıtımda özelleşme sınıf düzeyinde olduğunda aynı türden bütün nesneler için bu farklı aşma geçerli.
+
+420
+02:05:33,043 --> 02:05:41,824
+Ama dekorator kalıbında bu özelleşme bireysel olarak ve çalışma anında olabiliyor.
+
+421
+02:05:42,127 --> 02:06:09,707
+Şimdi örneğimiz şu ki bu örnek o komoda ilgili bildiğim bütün yaygın alanlarda kullanılıyor. Bir framework yazmak istiyoruz yine. Bizim standart ve metin alanımız var. Tamam mı? İşte birkaç satıp birkaç tutun yazabileceğimiz bir dikdörtgen. Birkaç satıp bir dikdörtgen alanımız var. Fakat bu dikdörtgen alanı biliyorsunuz farklı farklı şekillerde yapmak isteyebiliriz.
+
+422
+02:06:10,127 --> 02:06:24,307
+Bazılarına etraflarına bir çerçeve çizmek isteriz. Bazılarına yatay scrollbar eklemek isteriz. Bazılarına dikey scrollbar eklemek isteriz. Bazılarına ikisini bizden eklemek isteriz.
+
+423
+02:06:33,171 --> 02:06:48,872
+Başka aklıma gelmiyor yani. Yatağı scrollbar, dükkeği scrollbar, etrafına çarşeve başlık çizmek gibi üç ayrı olasılık. Bu üç ayrı olasılık için ne gibi çözümler olabilir? Birinci çözüm.
+
+424
+02:06:49,203 --> 02:07:03,823
+Şimdi, ben bunu hemen şöyle çözüyoruz diye 4.3.4'nin önerisinden önce bir iki alternatifi burada tartışmak istiyorum. Tamam, bizim temel bir tekstteriyemiz var. Güzel, birkaç satırı destekliyor.
+
+425
+02:07:05,283 --> 02:07:17,203
+Tamam, şey. Şimdi bazılarını scroll'a yapmak istiyoruz. Hatta bunu iki alt sınıfı ayırın lütfen. Horizontal scroll, vertical scroll. Ondan sonra çama. Hatta...
+
+426
+02:07:17,203 --> 02:07:45,203
+Bot Scroll diye 3 sınıfı ayırabilirsiniz. Pekala şu bir tek sınıfı. Border çizmesini istiyorduk. Bunları ayrı ayrı birleştir şeklinde de isteklerimiz olabilir. Hem Scroll'da hem Border'da olsun isteyebiliriz. Sadece Scroll ve sadece Border dediğimizde bu ikisinin birleşimi tek bir tane olabilir ama Horizontal Scroll, Vertical Scroll ve Border dersek o zaman 3 ayrı seçeneği.
+
+427
+02:07:45,203 --> 02:07:52,203
+Bu konuyu örneğin farklı kombinasyonlar olacak. Ne olacak? Üçün üçlü kombinasyon.
+
+428
+02:07:55,311 --> 02:07:59,971
+Neyse, çok sayıda buraya kadriyat sınıfı eklememiz gerekecek.
+
+429
+02:08:02,051 --> 02:08:10,791
+Ayrıca daha önemli bir problem, bu sınıfta scroll yeteneklerini kodladık, bu sınıfta border yeteneklerini kodladık.
+
+430
+02:08:10,791 --> 02:08:21,011
+Hem scroll hem border olması gerekiyorsa, scroll'daki yetenekleri de, border'daki yetenekleri de bu scroll, border, text, area sınıfta tekrar kodlamamız gerekecek.
+
+431
+02:08:21,471 --> 02:08:23,311
+Kopya yapıştırdık programları oluşuyor.
+
+432
+02:08:23,311 --> 02:08:33,131
+Az önce daha küçük ölçekte düştüğümüz CopyPaste programının duplicate code olayını burada daha büyük ölçekte o tuzağa düşmüş olacağız.
+
+433
+02:08:35,636 --> 02:08:47,636
+Ve bir de diyelim ki biz bu scroll olayını ve border olayını sadece text area'lara yapmayı istemiyoruz ki panellerimize de bu özelliği eklemek isteyebiliriz.
+
+434
+02:08:47,895 --> 02:08:57,895
+Gördünüz mü olayı? Bir dolu farklı sınıf çıkacak ortaya. Bir dolu kopyalara yapıştır konu ortaya çıkacak birçok yerde. Tam bir bakım kabusu arkadaşlar.
+
+435
+02:08:58,707 --> 02:09:13,967
+O yüzden diyelim ki şöyle düşündük. Bu sadece tekste scrolllamak veya bolderlamak için geçerlidir. Panelleri de scrolllamak, bolderlamak için geçerli değildir.
+
+436
+02:09:14,448 --> 02:09:25,643
+Text araya sınıfından kalıtımla scroll text araya ve border text arayarımız var. Bu ikisinden birden kalıtımla scroll, border text araya yapabiliriz belki. Ama buna...
+
+437
+02:09:26,036 --> 02:09:33,875
+Bir kere bu iş çoklu kalıtım gerektirmektedir. Yani bir alt sınıfın bizden fazla üst sınıf olabilir anlamını taşımaktadır.
+
+438
+02:09:37,775 --> 02:09:42,536
+Buyurun, soru varsa buyurun. Kaza ise, olmuş ise de önemli değil.
+
+439
+02:09:43,923 --> 02:09:53,363
+Tamam. Şimdi bakın, bu çoklu kalıdımız. Scroll Border Text Area'da iki tane üst sınıf var. Hem Scroll Text'den hem Border Text'den kalıdına üretilmiş.
+
+440
+02:09:53,363 --> 02:10:00,000
+Şimdi, modern nesnelikler bunu desteklemiyor. Çünkü bu durum...
+
+441
+02:10:00,000 --> 02:10:17,739
+Bu olguya Diamond Inheritance diyorlar. Bunları dikdörtgen olarak değil de sınıfları ortalarından tek birer nokta olarak düşündüğünüzde bunları birleştirdiğinizde bir elmas şekli oluşuyor. O yüzden buna Diamond Inheritance diyorlar. Diamond Inheritance'daki problem nedir? Problem şudur.
+
+442
+02:10:17,739 --> 02:10:25,260
+Şimdi diyelim ki üst sınıfın bir metodu tanımlı. Ya da somut da fark etmez ama bu metot.
+
+443
+02:10:25,600 --> 02:10:47,320
+İki alt sınıfta da yeniden tanımlanmış olsun. Override edilmiş olsun. Şimdi hem burada override edilmiş hem burada override edilmiş aynı metot. Aşağıda eğer override edilmemişse hangi ebereğinden geçen metot geçerli olacak? Bilmiyorum. Bu önemli bir soru işareti.
+
+444
+02:10:47,600 --> 02:11:06,240
+Bu sorun içerisini açıklığa kavuşturmak için çeşitli diller, çeşitli kurallar sahip olabilir. Mesela Java destekleseydi mesela, kalıtımda diyecektik ki, public class scroll border text area, boşluk, extends scroll text area, border text area diyecektik.
+
+445
+02:11:06,240 --> 02:11:15,560
+Önce scroll text area dediğimiz için, ondaki hali alt sınıfa geçebilir. Veya en sondaki listelediğimiz ebeveyn sınıfı adı,
+
+446
+02:11:15,600 --> 02:11:29,040
+Metod alt sınıfa geçebilir. Veyahut da bu gibi durumda o metodun da mutlaka override edilmesinin şart koşarsınız. Üç sınıftan geçmesin o kalıtımlar şeklinde kural koyabilirsiniz.
+
+447
+02:11:29,876 --> 02:11:51,496
+Bu nihayetinde ciddi bir karmaşıklık olarak değerlendiriliyor ve bu nedenle Java gibi, yara yanamıyorsam da C-Sharp gibi güncel, modern dillerde çoklu kalıtım artık desteklenmiyor. Buna izin verilmiyor. Onun yerine interseysin yapılan teşhidim söz konusu oluyor.
+
+448
+02:11:57,876 --> 02:12:07,516
+Önlü yan etkiler çıkartabileceğini gördüğümüz için bu kadarına da artık izin vermeyelim diyorlar gerardayız. Çok vakantımı desteklemiyorlar.
+
+449
+02:12:10,131 --> 02:12:26,672
+Dediğim gibi bu çözüm sadece tekstereyi hem scroll'lamak hem bolder'lamak için geçerli. Panele de bu iş yapacaksak yine orada da böyle bir diamond kuracağız ve oradaki de scroll ve bowerborder kodları duplicate olarak o tarafa da aktarılmış olacak.
+
+450
+02:12:32,851 --> 02:12:51,371
+Ki kaldık işte dediğim gibi Dermit Heryn'sı problem olarak görüp modern diller bunu desteklemiyor dedik. O zaman ne yapacağız? O zaman dörtlü çetenin kalıbını uygulayacağız. Herhangi bir zayıf noktası olduğunu düşünmediğim ilginç bir kalıp bu. Şöyle ki o zaman.
+
+451
+02:12:51,828 --> 02:13:01,768
+Madem özelleşme nesne düzeyinde olsun istiyoruz, o zaman biz de nesneleri birbirleriyle ilişkilendirip sınıf tasarımını da ona göre kuralım.
+
+452
+02:13:03,252 --> 02:13:12,972
+Bizim TextView'larımızın da, panellerimizin de, hepsinin de bu şekilde borderlanması veya scrolllanması gerekebileceğinden düşünelim.
+
+453
+02:13:13,292 --> 02:13:18,872
+Zaten biz bir GUI framework yazıyoruz zaten. Bizim bir Soit Visual Component üst sınıfımız olsun.
+
+454
+02:13:19,432 --> 02:13:30,072
+Bunun TextView, panel vs. vs. neyi scrolllamak ve borderlamamız gerekebilecekse, bütün farklı Visual Component, KD sınıflar olur.
+
+455
+02:13:31,252 --> 02:13:37,039
+Yeni bir sınıf olarak da Decorator sınıfını oluşturuyoruz.
+
+456
+02:13:37,039 --> 02:14:03,680
+Dekorator'un, bir dekorator'un, burada parça bütün şeklinde göstermiş ama burada soldaki nesne şamasından görüyorsunuz ki bir nesne tek bir nesneyle ilişkili. O yüzden aslında şuraya yazdıkları elmas doğru değil. Burada ilişki bire bir ya da şey illa tam biri biri olması gerekiyor. Bire 0, 2 nokta yan yana bir şeklinde düşünebiliriz.
+
+457
+02:14:05,039 --> 02:14:15,039
+Visual Component'i dekore etmeyen, dekorator'da çok bir anlamı olmayacağından birebir de olabilir. Neyse tamam şu temizliğim şu an şimdilik bir...
+
+458
+02:14:15,039 --> 02:14:31,920
+Yani şu birebir olacak arkadaşlar. Bire yıldız değil. Bu elmas aslında yıldızlık. Yani burada elmas olsa öbür tarafta yıldızlık anlamıdır genelde. Öyle anlaşılır. Ama bu eski standart fotoğrafı. O yüzden bu birebir aslında.
+
+459
+02:14:33,140 --> 02:14:40,540
+Ve başka bir şey var mı? Evet, bir de şu elmas değil de düz çizgi.
+
+460
+02:14:40,540 --> 02:14:42,400
+Yani, öyle düşünelim.
+
+461
+02:14:45,220 --> 02:14:47,160
+Şöyle, buraya güzel.
+
+462
+02:14:49,300 --> 02:14:53,540
+Ve biz...
+
+463
+02:14:53,779 --> 02:15:03,739
+Farklı eklememiz gereken her farklı özelliği bu decorator sınıfı da onun alt sınıfları şeklinde kodlayalım.
+
+464
+02:15:04,319 --> 02:15:12,519
+Score yetenekleri kazandıran bir score decorator sınıfı, border yetenekleri kazandıran bir border decorator sınıfı olacak.
+
+465
+02:15:13,519 --> 02:15:15,420
+Ondan sonra Ceman.
+
+466
+02:15:20,051 --> 02:15:36,351
+Tabi tam problemler değil. Ve bu sayede tabi eğer biz mesela scrollu vertical, horizontal ayrı ayrı istiyorduysak o zaman horizontal scroll decorator ve vertical scroll decorator olarak iki sınıf koymamız gerekecektir.
+
+467
+02:15:36,351 --> 02:15:46,271
+Bir sınıf ile iki sınıf koymamız gerekecektir. Ve daha sonra diyelim ki biz bir text view'a sadece scroll yeteneği eklemek istiyorsak
+
+468
+02:15:46,355 --> 02:15:49,355
+Bunu biz Flow Decorator ile ilişkilendirmeyecektik.
+
+469
+02:15:49,971 --> 02:16:01,652
+Ama hem scroll hem border yeteneği kazandırmak istiyorsak o zaman bunu hem bir border decorator hem scroll decorator ile ilişkilendiririz. Böylelikle bu işi çözeriz.
+
+470
+02:16:01,652 --> 02:16:08,331
+Tabii bunun gerçeklenebilmesini sağlayan altyapı da bu draw metotlarının konumunda yapmaktadır.
+
+471
+02:16:09,452 --> 02:16:13,771
+Decorator soyut sınıfı olmakla birlikte onun draw metodu soyut değil arkadaşlar.
+
+472
+02:16:17,971 --> 02:16:42,912
+İlişkili olduğum bileçenin esas çizim metodu neyse onu da yürüt diyor. Bu şekilde bir darlamış var. Alt sınıflarda ise, somut alt sınıflardaki örneğin, Border Decorator'daki D'Law metodu ise önce benim ilişkili olduğum nesne neyse o bir kendi kendini çizsin diyor.
+
+473
+02:16:45,012 --> 02:16:58,316
+2.9, 2.9
+
+474
+02:16:58,451 --> 02:17:14,951
+Tamam, aslında şöyle diyeyim. Şu draw metodumu da şey olarak yazmış. Direkt şurada sınıf adı üstünden erişiyor. Bu da demektir ki şuradaki draw metodu aslında statik. Tamam mı? Öyle gözüküyor.
+
+475
+02:17:16,724 --> 02:17:42,344
+Ama öyle olmak zorunda kesinlikle değil arkadaşlar. Tamam mı? Şuradaki örnekte bu şekilde statik gözüküyor. Ama ben bunu dinamik yapmayı tercih ederim. Yani şuraya decorator.draw değil de örnekleri o şekilde vereceğim zaten. Şuradaki component.draw içeriğini bunun içerisinde buraya elle kodlamayı tercih ederim.
+
+476
+02:17:43,412 --> 02:17:51,972
+Ve şu statik metodda statik değil de abstrakt yapmayı tercih ederim.
+
+477
+02:17:55,507 --> 02:17:57,507
+Abstrakt, biraz daha iyi.
+
+478
+02:18:00,948 --> 02:18:02,948
+Evet.
+
+479
+02:18:05,043 --> 02:18:19,023
+Şimdi şuradaki sarı anlamı farklı açtı. Şu kırmızı bir alternatif, şuradaki iki sarı diğer alternatif. Bu şekilde de yapabilirsiniz, o şekilde de yapabilirsiniz. Fark etmez. İkisi de bizi aynı yere götürecek.
+
+480
+02:18:33,043 --> 02:18:51,603
+Kodlamayı unutmamak gerekmektedir. Unutursak işe yaramaz. Bu şekilde bir kod şeye de yarıyor. Unutmamayı sağlıyor. Üst sınıfta yazılmış çünkü o kod, o komut çağrısı. Böyle ufak bir kazancı var.
+
+481
+02:18:55,603 --> 02:18:59,363
+Ve şey çiziyor, border çiziyor. Böyle bir yapısı var.
+
+482
+02:18:59,711 --> 02:19:22,171
+Bu yapı, keza benzerdi. ScrollDecorator'da kendi draw metodunun içerisinde. O da Decorator 2.1'e draw diyecek veya ComponentDraw diyecek. Hangi yapıyı kurduğunuza göre. Ondan sonra da ScrollTo metodunu çağıracak. Yani bir yere scroll edilmesi istendiğimleri o yeteneklere de sahip olacak.
+
+483
+02:19:27,711 --> 02:19:51,772
+Panel kardeşsindeki de olsa bir paneli de Score Decorator verebilmemiz, daha doğrusu öbür türlü aslında söylenmeyi, bir Score Decorator'a panel de verebilmemizi sağla. Böylece o panel Score veya Border yetenekleri de kazanmış olur. Olay bu arkadaşlar.
+
+484
+02:19:53,396 --> 02:19:55,836
+Bence gayet akıllıca bir çözüm.
+
+485
+02:19:57,036 --> 02:19:59,156
+Şimdi şu çizimleri bir sileyim.
+
+486
+02:20:00,056 --> 02:20:02,376
+Ve sonraki yaratıya geçeyim.
+
+487
+02:20:02,816 --> 02:20:07,376
+Kalıp yapısı olarak düşündüğümüzde bir komponent soyut sınıfı.
+
+488
+02:20:08,316 --> 02:20:11,636
+Ondan kalıtı nötelemiş somut komponentlarımız.
+
+489
+02:20:16,084 --> 02:20:21,684
+Bu şekilde ek yetenekler kazandırılmasını sağlayacak bir ara sınıf.
+
+490
+02:20:21,924 --> 02:20:23,924
+Decorator sınıfı da soyut.
+
+491
+02:20:24,644 --> 02:20:28,604
+Operasyon'u somut olabileceği gibi soyut bırakabilirsiniz.
+
+492
+02:20:28,764 --> 02:20:31,244
+Alt sınıflarda da bahsettiğim gibi gerçekleyebilirsiniz.
+
+493
+02:20:35,244 --> 02:20:36,284
+Evet.
+
+494
+02:20:36,788 --> 02:20:53,247
+Ve bu Soyut Decorator sınıfının somut decoratorları, her biri farklı somut decorator, örneğin şu Concrete Decorator ve her biri farklı farklı yetenekler kazındırır ilişkili olacağı Concrete Komponente.
+
+495
+02:21:00,884 --> 02:21:15,083
+Gerek işte önce birleşenin ilişkili olan birleşenin yeteneği, çağrı, ondan sonra ek yetenek yürütülür veya önce ek yetenek yürütülür, sonra ilişkili yetenek, çağrı da şeklinde bir yapı var. Olay bu. Kalıp yapılır mı?
+
+496
+02:21:16,384 --> 02:21:18,664
+Bu şey yazıyor mu?
+
+497
+02:21:21,907 --> 02:21:44,268
+Neyin ne olduğunu sözde konuştuk. Konkret, komponent, tecrüetör, nesnes, bunları konuştuk. Gelelim şimdi kalıbın ne zaman kullanabileceğimiz. Tek tek bireysel nesneleri dinamik olarak yani çalışma anında yeni sorumluluklar eklemek istiyorsak bu kalıp bir şirin çıkart. Ama tabii onun da bazı sınırları var. Zayıf yönü kısmında söyleyeceğim.
+
+498
+02:21:49,907 --> 02:22:08,948
+Diğer nesneye şeffaf olarak, onları etkilemeden yeni sorunlar ekleyebiliyoruz. Yani biz belirli bir text view'a istediğimiz tutuluk ekleriz. Onu ekleyince diğer text view'larımızı eklenmiş olmayacağız. Hangisi işimize gelirse, hangisi işimize gelirse, onu eklemiş olacağız. Bu da önemli bir yetenek nihayetinde.
+
+499
+02:22:09,427 --> 02:22:19,087
+Bu kalıp bazen bize bir nesnenin bazı sorumluluklarını iptal etmek veya askıya almanıza da yarayabilecek bir kalıp.
+
+500
+02:22:19,087 --> 02:22:29,367
+Şöyle düşünün. Bir doktor sınıfı var diyelim ki. Doktorun tedaviyet gibi bir metodu var diyelim ki.
+
+501
+02:22:30,007 --> 02:22:34,227
+Ama doktor hastayken tedavi işlemi yapamamalıdır.
+
+502
+02:22:34,644 --> 02:22:42,344
+Belki bunu şöyle modelleyebilirsiniz. Ne diyelim işte? Is sick, is ill filan gibi bir yalan eklesiniz.
+
+503
+02:22:48,595 --> 02:23:13,595
+Not is ill. O zaman tedavi verebilirsiniz belki derseniz. Ama şöyle yapabilirsiniz. Mesela doktor sınıfına hasta olabilir dekorator ile ilişkilendirdiyseniz eğer, o ilişkili ise tedavisini yapmaz. Çünkü biz dekorator üstünden ilk başka o doktor ilişkisi, o dekorator ayarlayabiliriz. Doktor hasta mıymış, değil miymiş falan.
+
+504
+02:23:16,595 --> 02:23:30,595
+Proxy metodunda da, proxy kalıbında da yapabiliyoruz ama özellikle dekoratorda özgü bir şey değil bu. Fakat yine elinizde olan hak var. İftarseniz kullanabilirsiniz. Yani ilgili bir dekorator, ilgili komponentin de...
+
+505
+02:23:31,092 --> 02:23:40,092
+İlgili işlemini çağırmadan önce veya sonra çeşitli kontroller yapabilip gerekirse o işleri yürütmeyebilir bile.
+
+506
+02:23:40,772 --> 02:23:44,512
+Ne kadar mantıklı, ne kadar değil tartışılır. Çözdüğümüz probleme göre değişir.
+
+507
+02:23:47,476 --> 02:24:15,296
+Kalıtımın uygun olmadığı zamanlarda da bu kalıbı rahatlıkla kullanabiliriz. Ne gibi örnekler olabiliriz, somut örnekler? Belki sınıf kodu mevcut değildir. Yani yeni sınıf eklemek istiyoruz bu nesmi ama bu sınıftan farklı nesmini ama sınıfın kaynak kodu yok yerimizde. Nasıl ekleyebileceğiz? Mümkün değil. Ama eğer daha evvel bu dekorator yapısını kurmuşsak o zaman ekleyebiliriz veya diyelim ki kurmadık.
+
+508
+02:24:15,476 --> 02:24:29,416
+Diyelim ki kurmadık. Ama ondan sonra yazdığımız kodu bu dekoratora göre yazabiliriz. Çünkü sınıf işebilmesine baktığımızda dikkat ederseniz, Concrete Component'ın dekoratorla hiçbir ilişkisi yok.
+
+509
+02:24:30,116 --> 02:24:39,212
+Sadece sadece biz artık yeni kodumuzda bu Concrete Component üzerinden nesneleri bir de...
+
+510
+02:24:39,316 --> 02:24:54,776
+Component nesnelerine erişsek yeter. Ama o zaman diyeceksiniz ki o zaman bu kılıtım ilişkisini kurmak için bu konkreter komponentin kaynak konuna müdahale etmek de gerekiyor dersiniz. Tamam haklısınız. O zaman değiştiriyorum.
+
+511
+02:25:12,084 --> 02:25:13,684
+Neyse, yok o iş olmadı.
+
+512
+02:25:16,744 --> 02:25:18,324
+Ama şöyle şimdi.
+
+513
+02:25:22,131 --> 02:25:44,731
+Kalıtım bir kere kullanabilecek bir ilişki. Yani bir sınıfın sadece bir tane üst sınıfı olabilir. Eğer bu tek kalıtım hakkınızı harcamak istemiyorsanız yine bu dekorator kalıbını akıllıca kullanabileceğiniz şeyler olabilir, örnekler olabilir.
+
+514
+02:25:49,716 --> 02:26:04,155
+Birincisi, Java'nın stream tabanlı input output kütüphanesi. İkincisi ise yine Java'nın swing framework'ını verebilirim. Bu dekoratif kalıbının kullanıldığı yerler olarak.
+
+515
+02:26:06,227 --> 02:26:33,567
+Pijava'da stream işlemi yapmış olanlar bilirler, bilmeyenler ise bu kadının örneğini gösterdiğim zaman zaten buna yarayan chaining işlemini, zincirleme işlemini yapıyor olacağım. Oradan zaten kendi bildikleri dille platformlarda benzer kullanımı gördüklerinde o kullanımın altyapısında yatan modelleme büyük olasılıkla zaten o dekorator kalıbıdır diyebilirim.
+
+516
+02:26:34,164 --> 02:26:44,504
+Bu kadının tek zayıf yönü şu. Bu ilgili sorumluluğu ancak şu şekillerde ekleyebiliyoruz.
+
+517
+02:26:44,752 --> 02:26:59,112
+Ya eski sorumluluktan önce yeni yetenek eklemek, ya eski sorumluluktan sonra yeni yetenek eklemek veyahut da eski sorumluluğu tamamen iptal edip yeni yetenek eklemek.
+
+518
+02:26:59,731 --> 02:27:08,352
+Yoksa işte bu nesne şu an şu biçimde çalışıyordu. Yani işleniyor bir işçi bir ürün üretiyor diyelim ki.
+
+519
+02:27:08,352 --> 02:27:12,752
+O ürünü ürettikten sonra belki üstünü boyayabilir.
+
+520
+02:27:12,752 --> 02:27:30,311
+Veyahut da ek bir ürünle birleştirebilir mesela. Ama o ürünün iç ayrıntılarını değiştirme, çalışma biçimini değiştiremeyiz. Değiştirirsek tamamen okudu iptal edip sadece ne eklenmesi gerekiyorsa onları yazmak şeklinde koplayabiliriz.
+
+521
+02:27:40,752 --> 02:27:53,612
+Yeni yetenekler etmemek şeklinde çalışır. Mevcut yeteneği değiştirmekin tek yolu silip yeniden kullanmaktır. Ya ilgili dekoratif sınıfında ya da ilgili sınıfın kendisinde.
+
+522
+02:27:53,612 --> 02:28:03,612
+Bu arada dekoratif kalıbı kurulduğunda bu ilişki zincirini de...
+
+523
+02:28:04,111 --> 02:28:18,111
+Koparmayalım. Bu gerçi ancak şu durumda eski sorumluluğun tamamen iptal edilmesi durumunda bu bir sakınca taşıyor. Diğer zamanlarda sakınca taşımıyor. Çünkü zaten komponanta iddaki...
+
+524
+02:28:22,772 --> 02:28:35,572
+Tabii ki bu dekore edilen komponantın bu yeni yetenekleri kazanması için aslında artık isteklerin komponantın kendisine değil, bir dekore etra.
+
+525
+02:28:35,572 --> 02:28:47,092
+Hatta şu ilişki içerisindeki en üst itere etra verilmesi gerekiyor, gönderilmesi gerekiyor istek.
+
+526
+02:28:49,056 --> 02:29:12,056
+İlgili operasyon çalıştırırsa bu dekorasyonlar devreye girmeyecektir. En öndeki dekoru edene bu isteği göndermek lazım ki o da sisle ile diğer ek solumlulukların büyütülmesini sağlasın. Evet, bu da önemli. Bakın o ayrıntı söylemeyi biraz ihma etmiştim.
+
+527
+02:29:12,500 --> 02:29:17,500
+Bunu belki zayıf yön ya da dikkat edilmesi gereken şey olarak söyleyebiliriz.
+
+528
+02:29:17,500 --> 02:29:19,500
+Zayıf yön eklesek olabilir.
+
+529
+02:29:19,500 --> 02:29:21,500
+Şöyle diyelim.
+
+530
+02:29:28,819 --> 02:29:53,319
+Yeni örneklere doğrudan rekole edilen nesne üzerinden değil, en üst rekole eden nesne üzerinden erişilmesi gerekmektedir.
+
+531
+02:29:53,907 --> 02:29:58,847
+Burada zayıf bir üniversite kısıtlamaları mı desek bilmiyorum. Neyse, tamam böyle kalabilir yani.
+
+532
+02:29:58,847 --> 02:30:10,667
+Evet. Dekore eden ve edilen de biraz şey, İngilizce, Türkçe kalması garip bir şey oluyor ama…
+
+533
+02:30:10,963 --> 02:30:23,463
+Kalıbın adı dekorator olduğu için dekore eden ve edilen diyebilirim. Yoksa dekorator kalıbın adını da süsleyici diye çevirsem o zaman süsleyen ve süslenen diyebilirim.
+
+534
+02:30:26,484 --> 02:30:54,364
+Orijinal isimleri tutmayı tercih ediyorum. Her ne kadar Türkçe şeysi olsam da, taraftarı olsam da bunların kendi içerisinde tasarım kalıplarının önemli bir özelliği olan yazılımcılar arasında ortak bir dil oluşturması, ortak bir sözlük oluşturması özelliğini düşünerekten kalıpları çevirmiyorum Türkçe'ye. O yüzden burada varsın böyle.
+
+535
+02:30:54,484 --> 02:30:58,644
+Kullanayım bir kere, bir iki kere. Beni affedin burada. Dekore eden, dekore edilen diyelim.
+
+536
+02:31:01,283 --> 02:31:09,623
+Yani, öbür türlü bunu çevirmeni tercih ediyorum. Evet, peki. Şimdi gelir örneğimize.
+
+537
+02:31:11,623 --> 02:31:16,664
+Bu örneği yapar, ondan sonra bırakırız herhalde. Bakayım bir hızlıca.
+
+538
+02:31:19,700 --> 02:31:47,240
+Fasad var. O da zaten basit olan bir örneği yok. Flavet'e geçmeyin zamanı. Tamam. O kadar yetmez. Şuna bakalım. Ama eğer sorularınız gelir yavaş yersen, sadece buna bakarız. Ne olacak? Evet, peki. Şimdi örneğimiz. Bunu da bir yerden aldım ama nereden aldığımı hatırlamıyorum. Yazmışım. Kayna yazmışım.
+
+539
+02:31:48,371 --> 02:32:02,851
+Problemimiz şu. Bizim bir e-ticaret yazılımımız var. Test kontrolü diye bir istemiz var. Buna yeni bir işlevsellik eklemek istiyoruz. Nedir bu? Satış emirlerinin makbuzlarını basmak.
+
+540
+02:32:03,796 --> 02:32:31,796
+Peki, güzel. Bizim zaten Task Controller diye bir sınıfımız var. Bizim zaten burada yaptığımız satışları simgeleyen Sales Order sınıfımız var. Çok güzel, hiçbir problem değil. Onun proses metoduna ek olarak bir de Print Ticket metodu ekliyoruz. Çünkü bu makbuzun kendi içerisinde belirli bir formatı olacak. Ne bileyim işte başlığı olacak, ara satırları olacak, satırı olacak filan. Ciddi ciddi bir iç.
+
+541
+02:32:31,796 --> 02:32:44,835
+Bu yüzden sadece Print Ticket metodu eklemekte kalmıyoruz. Sales Ticket adlı makbul basıca başlı başına bir sınıf hazırlamak istiyoruz.
+
+542
+02:32:45,523 --> 02:33:12,484
+Bu durumda Sales Older'ın Print Ticket metodunda da mal Sales Ticket nokta Print Ticket diyerekten metodu çalıştırıyoruz. Bu arada tabii bu kitap da düzgün bir ok çizmemiş. Yani test kontrolüden Sales Older'a belki kesikli çizgi olabilir ama madem bunun Print Ticket'ı içerisinde şöyle bir mal Sales Ticket diye bir nesne gösteriliyor. O nesne nasıl gelecek?
+
+543
+02:33:13,203 --> 02:33:28,463
+Parametri mi olarak gelecek? Belki parametri olarak verilmişti ama bence şahsen burada daha doğru modelleme bunun düz çizgi olarak ve bu My Sales tıkıntında şurada üye alan olarak da.
+
+544
+02:33:28,463 --> 02:33:38,783
+İşte My Sales, neyse işte böyle yapacaklar. Burada üye alan olarak sahiplik ilişkisi olması daha doğru olacağını düşünüyorum.
+
+545
+02:33:41,299 --> 02:33:43,860
+Gel. Temizleyelim.
+
+546
+02:33:46,779 --> 02:33:58,759
+Peki, şimdilik çözdük gereksinimi karşıladık. Tamam. Yeni bir gereksinim daha geldi. Makbuzları üst bilgi ve alt bilgi ekle kardeşim denildi. İyi tamam, yapmaya çalışalım.
+
+547
+02:34:00,259 --> 02:34:00,860
+Bunun için...
+
+548
+02:34:01,268 --> 02:34:12,328
+Header ve Footer'ın da kendi içerisinde farklı formatları falan olacak. O zaman Header ve Footer için de ayrı sınıflar oluşturalım.
+
+549
+02:34:13,075 --> 02:34:15,455
+Hedder sınıfının print header sınıfı metodu olsun.
+
+550
+02:34:15,615 --> 02:34:17,935
+Photo sınıfının da print footer metodu olsun.
+
+551
+02:34:18,435 --> 02:34:21,075
+Ve farklı tür...
+
+552
+02:34:21,755 --> 02:34:22,376
+Hoş geldin.
+
+553
+02:34:22,635 --> 02:34:23,716
+Bir tane olacak. Neyse.
+
+554
+02:34:24,115 --> 02:34:30,675
+Evet, böylece ama bu arada print ticket'a belki parametre olarak şu bilgiyi de verebiliriz.
+
+555
+02:34:31,036 --> 02:34:37,695
+Müşterimiz aynı sahne bize dedi ki, ya her ticket'ın header olması gerekmiyor, her ticket'ın footer olması da gerekmiyor.
+
+556
+02:34:39,092 --> 02:35:03,572
+Peki o zaman, madem öyle, bu print ticket metoduna parametre veririz. Header basayım mı, footer basayım mı diye. Veyahut da bunu overload edebiliriz. Parametresiz olan hem header hem footer basar. Ek olarak iki parametre, iki boolean parametre bir versiyonu daha olur. İşte ona göre bir şeyler çıkarız işin içinden yani. Problem olmaz.
+
+557
+02:35:07,092 --> 02:35:28,932
+Bu nasıl yapacağım? Biraz kolaya kaçmış. Sadece biraz not birleşlerini kullanarak böyle bir şeymiş. Tamam peki çok da dert değil. Ama ister istemez if sıvamaları yapacağız. Tamam o da dert değil. Fakat burada işin inşaatı ne? Farklı türlü hederler ve farklı tür futuralarda girerse ne olacak?
+
+558
+02:35:29,523 --> 02:35:40,263
+İşte bu bir problem. Çünkü benim burada bir tane header türünden birleşenim var. Bir tane foto türünden birleşenim var. Farklılaşacaksa bunlar ne olacak?
+
+559
+02:35:41,843 --> 02:35:45,523
+Burada altından kalkarız. Ne olacak ki? Kalıtım kullanırız.
+
+560
+02:35:48,023 --> 02:35:50,183
+Header ve foto sınıflarını soyut yaparız.
+
+561
+02:35:50,548 --> 02:36:06,748
+Veyahut da bir default header, default fudrumumuz varsa o zaman soyut yapmayız. Header, footers, abstract olmak zorunda kalmaz. Fakat diğer farklı tür varyasyonlar için onun alt sınıflarını oluştururuz. Footer type bir footer type iki, header type bir header type iki falan diye.
+
+562
+02:36:18,548 --> 02:36:40,188
+Bu şamayı ben çizmiştim ama bu wildtion'a çizimle benziyor çünkü. Burada yine print kit'ın ayrıntılarını yapmamışım. Örnek şu ana kadar böyle geldi. Ben şimdi onun niye ayrıntısını buraya eklemeye çalışıp işle kalabalıklaştırayım diye düşünmüşümdüz herhalde.
+
+563
+02:36:44,244 --> 02:37:04,504
+Ses tıkkı ile footer ve header arasındaki eşliğinde elmas olarak çizmeyi de eleştirebilirim. Belki eleştirelim yani. Ayrıca tabii şeyleri de çizmemişim. Part, private, eksi altalığını da çizmemişim ama buraya kadar konan şekiller de zaten çizmemişti. Öyle söyleyeyim.
+
+564
+02:37:08,244 --> 02:37:17,783
+Ama şimdi madem şu elmas beni rahatsız ettiyse, onu düz çizgiye çevireceksem o zaman o ekstra altıda da koyabilirim belki. Yazayım bari.
+
+565
+02:37:33,075 --> 02:37:38,235
+Şöyle, şiften tırlayayım.
+
+566
+02:37:39,175 --> 02:37:42,075
+Elim devrimlemişken,
+
+567
+02:37:42,556 --> 02:37:46,095
+X'i 6 koyabilirsin.
+
+568
+02:37:47,475 --> 02:37:49,295
+Evet, neyse.
+
+569
+02:37:51,855 --> 02:37:52,935
+Bunu da gözlemelim.
+
+570
+02:37:54,635 --> 02:37:56,955
+Peki, bunu da çözdük.
+
+571
+02:37:57,811 --> 02:38:01,731
+Fakat müşterimiz patron her an önce bir islekle daha geldi.
+
+572
+02:38:02,388 --> 02:38:23,388
+Aynı makbuzda birden fazla üst bilgi ve veya birden fazla alt bilgi olabilir. Hatta bunlardan birisi sıfır da olabilir. Değiştiriyor bir eksilimi. Aynı makbuzda sıfır ya da daha fazla farklı üst bilgi ve veya alt bilgi isteyebilirim senden neyse diyeceğiz ama ne yapalım.
+
+573
+02:38:23,388 --> 02:38:29,668
+Şimdi burada bu taslığımızda bunun çok çözümü pek mümkün değil.
+
+574
+02:38:30,388 --> 02:38:57,587
+Bu türlü birer tane olsa, bu tür olup olmaması problem değil. Print ticket'a parametre veririz. Ya da header'a olup olmaması parametre veririz. Problem değil. Ama o zaman madem öyle şey olabilir. Tamam, şimdi elmasın hikmetini biraz daha anladım şimdi. Eğer bu sefer patron bu hale getirmiştir, o zaman daha evvel düz çizgi olanı şimdi elmas şeklinde yapalım.
+
+575
+02:38:58,388 --> 02:39:03,587
+header'lar, ekle, footer'lar, ekle gibi o zaman ekle metotları da koyalım. O zaman öyle yapalım.
+
+576
+02:39:03,587 --> 02:39:10,388
+Peki, şimdi el basın şeyini çözdüm. Bunu da şuraya öyle yazayım.
+
+577
+02:39:16,388 --> 02:39:22,268
+Onunla gelen bizden fazla.
+
+578
+02:39:23,347 --> 02:39:41,288
+Bak, kısmı bitsin. Yeni çözüm olarak elmaslı halini ve tabii ki ekle sil parça bütün olunca ekle sil işlemleri söz konusu olacak.
+
+579
+02:39:41,288 --> 02:39:50,288
+Bu tutuklarını gösterebilesin diyebilirim. Ya da işte burada şimdi zaten sizinle de tartıştık bu meseleyi.
+
+580
+02:39:52,308 --> 02:40:11,628
+Ya da işte buradaki uzun uzun eklesi falan hep buraya kadar getirmişiz, buradan sonra yaparız diye bırakabiliriz belki. Ama bu müşterinizin patronu falan bu farklı farklı isteklerini eğer bana işin en başında söyleseydi o zaman ben en başında bu tasarımı yapmak.
+
+581
+02:40:12,211 --> 02:40:29,831
+Bu çözünür yapmaktansa o zaman ben dekorator kullanırım kardeşim. Yani bir makbuzun farklı farklı header veya footer olacaksa zaten ben bunu dekorator ile yapardım. Hangileri eklenecekse onları dekor et, süsleyin makbuzunu diye aklıma gelirdi yani.
+
+582
+02:40:30,491 --> 02:40:39,871
+Mesela işte bir risipte header ve header 2 footer olsun, bir risipte header 1 footer 2 footer 1 olsun, bir risipte hiç header olmasın footer 2 olsun.
+
+583
+02:40:40,211 --> 02:40:46,451
+Yani foto 3 olsun, herhangi bir şeyler varsa bunu en rahat dekorator kalıbı ile karşılarız.
+
+584
+02:40:47,191 --> 02:40:49,791
+Ve çözümümüz şu hale geliyor arkadaşlar.
+
+585
+02:40:51,700 --> 02:41:14,880
+Benim Sales Ticket'ımın, tabii Decorator'u kullanmak için ek olarak bir soyuç üst sınıfı eklemem. Şart Decorator'u yapabilmek için. Bu altyapıyı kullanabilmek için. Ondan sonra Ticket Decorator sınıfım olur. Ondan sonra çıma. Onun Print Ticket metodu olur. Tabii içerisinde. Bu Print Ticket metodu içerisinde bir de şunu da yapabiliriz.
+
+586
+02:41:16,531 --> 02:41:31,491
+Komponentim Null mı değil mi? Onun kontrolünü de yapabiliriz. İsterseniz o 4.3 çetin örneğinde düşünülmemiş ama isterseniz eklerseniz tabii ki hiç tarz değil. 4.3 çetede her şeyi ağzımıza hazır olabilecek diye bir kural da yok zaten.
+
+587
+02:41:32,531 --> 02:41:41,951
+Ondan sonra farklı header türleri ve farklı foto türlerin hepsini bu Ticket Dekorator'un alt sınıfları şeklinde kodlarım.
+
+588
+02:41:43,347 --> 02:41:50,147
+Header sınıflarında Print Header metotlarım olur.
+
+589
+02:41:50,987 --> 02:41:53,147
+Footer sınıflarında Print Footer metotlarım olur.
+
+590
+02:41:53,147 --> 02:41:56,147
+Bu metotlar private olabilir pekala.
+
+591
+02:41:56,407 --> 02:42:02,747
+Çünkü sadece aynı sınıfın içerisindeki Print Ticket metodu tarafından çağrılacağından.
+
+592
+02:42:03,443 --> 02:42:31,443
+Önce Print Hedder metodunu da gerekmiyorlar. Kesinlikle. Print Hedder metodu nasıl çalışacak? Şöyle bir şey. Daha doğrusu şey. Bu oku şöyle sınıfa çizmiştim. Aslında bu notla Print Hedder metodunu çağırıyor. Ondan sonra dekore ettiği.
+
+593
+02:42:31,443 --> 02:42:49,603
+Tm birleşiğinin Print Ticket metodunu çağırıyor. Çünkü bir header doğrudan işte sayısı tıkıtla ilişkili olmayabilir. Başka bir header'la veya bir footer'la filan ilişkili olabilir. Farklı dekolar, törrel bir biri ilişkili olabilir. Bu nedenle bu şekilde yapılması gerekiyor.
+
+594
+02:42:58,835 --> 02:43:25,615
+Bakın burada print ticket'ı da şey yapmış, italik yapmış. Yani bu aslında soyut şeyler italik yapılır. Ve hala yine ticket.decreate.de'yi sınıf adı üzerinden çağırıyor yani. Ama ben şahsen bunu şey super şeklinde haa super ifadesi olabilir mi bu C++ mutasyonunu? Bilemeyeceğim.
+
+595
+02:43:26,675 --> 02:43:38,056
+Neyse. İlgili kitabın ilgili sayfasını açıp bakmak lazım. Ben bunu kodara döktüğümde zaten nasıl gerçeklediğimi göreceksiniz.
+
+596
+02:43:40,455 --> 02:43:51,876
+Foto1 sınıfındaki örneğin Printing metodu ise önce makbuzu basıp ondan sonra fotoğrafa basılacak. Adı üstünde header makbuzdan önce basılır, fotoğraf makbuzdan sonra basılır.
+
+597
+02:43:52,468 --> 02:44:05,587
+O nedenle ve burada aynı zamanda farklı dekoratorların esas sorumluluğu yapmadan önce ve veya son devreye girebildiğini gösteren o açıdan geniş kapsamlı bir örnek olmuş.
+
+598
+02:44:07,868 --> 02:44:13,688
+Evet, bugüne bakalım. Bunu çalıştırmak istiyorum. O yüzden ekleç üzerinden bakalım.
+
+599
+02:44:18,388 --> 02:44:36,388
+Dekoreltür altında. Anlatma sırası da önemli. O yüzden şuradan gidin. Komponent sınıfı ne yapıyor? Basitçe Print Ticket metodunu soyut olarak tanımlıyor.
+
+600
+02:44:42,868 --> 02:44:55,628
+Şimdi bakın nasıl bir şey yapmışım. Tabii ki adetli şu kadar liraya aldım sattım gibi bir şey yazdırmadım da hangi anda...
+
+601
+02:44:55,763 --> 02:45:16,683
+Sears Ticket'ın yani dekore edilen varlığın metodu devreye giriyor. Hangi anda header veya photo olan dekore edenin dekorasyon bilgisi devreye giriyor. Bunları gösterebilmek için hepsinin bu bir kısım metodunu aynı yazmayı tercih ettim.
+
+602
+02:45:16,683 --> 02:45:22,663
+Ama şu şekilde her bir nesne kendi sınıfının adını ekrana yazılacak.
+
+603
+02:45:23,763 --> 02:45:31,003
+Sales Ticket sınıfından bir nesnenin print ticket metodu çağırdığında ekrana sales ticket yazacak.
+
+604
+02:45:42,835 --> 02:45:47,835
+Tekrarıda sayısı tıkıtı yazacak. Tekrarıda declaratı nokta, example nokta sayısı tıkıtı yazacak.
+
+605
+02:45:47,835 --> 02:45:49,835
+Tamam. Sonra...
+
+606
+02:45:52,275 --> 02:46:10,275
+Ticket Decorator ara sınıfının kodunda bir komponent ile ilişkili bu konstruktörde mutlaka set ediliyor. Print Ticket metodunda ise eğer bu komponentin birleşiminin nal değilse o zaman birleşenimin Print Ticket metodunu çağır şeklinde kod var.
+
+607
+02:46:10,275 --> 02:46:13,275
+Ve bu sınıfın kodu burada bitecek.
+
+608
+02:46:15,275 --> 02:46:17,815
+Son kapatma kıvamını da yazmışım zaten.
+
+609
+02:46:17,995 --> 02:46:20,115
+Tamam bu kılık partisi şu sınıfın.
+
+610
+02:46:20,275 --> 02:46:47,576
+Kapatan parantez. Peki, header'a bakalım. Örneğin header 1'e. Header 1'de bir decorator. Ondan katılımda türetilmiş. İlgili birleşenliği superconstructor üzerinden aktarılıyor. Onun practical fonksiyonunda şey olarak aynı. Yani kod olarak aynı ama etki olarak farklı olacak. Ekrana decorator.example.header1 yazacak. Ondan sonra da ilgili decorator varlığa akışı.
+
+611
+02:46:47,891 --> 02:47:04,551
+Yönlendirecek. Esa header ikide benzer şekilde. Tabi bunlar kendi içerisinde normalde farklı header fotoğrafları, farklı var çok farklı işlemler yapacak da onlara değişik değişik şeyler uydurmaktansa bu şekilde yapmayı tercih ettim.
+
+612
+02:47:07,700 --> 02:47:14,520
+Futter'larda yine benzer şekilde yalnız önce şey yapıyor.
+
+613
+02:47:20,371 --> 02:47:45,731
+Yani Super Print Ticket ilgili bileşenin tıkıtının yazılmasını sağlıyor. Bu nedenle evet, yani aslında hiç statik metot tanımlı değil dikkat ederseniz. Sadece abstract metotla tanımlı ya da işte hatta bazıları abstract bile değil.
+
+614
+02:47:48,371 --> 02:47:51,551
+Sınıfı hafıslak ama metotlar hep komut metotlar.
+
+615
+02:47:54,036 --> 02:48:05,716
+Klient'i nasıl kodlayacağız? Şöyle kodlayacağız. Şimdi net bir üst bilgi, alt bilgi, bileşenek kombinasyonu seçeceğimizi yani ilgili dekavasyonu klient karar edilecek.
+
+616
+02:48:05,716 --> 02:48:18,595
+Yani isterseniz bu aşamada tasarınızı faktör metot kalıbıyla geliştirebiliriz. Ama onu da kurmaya çalışıp iki kalıp nedeniyle örneği kalmışlıklaştırmaktansa
+
+617
+02:48:19,219 --> 02:48:45,040
+Yani işte şöyle bir faktöriler yapmaktansa basitçe client'ın mail metodunun içerisinde şöyle bir şeyler yaz da diyebiliriz isterseniz. Hiç problem değil. Ama tabii şey faktör metod çok da karmaşık değil aslında. Sadece bir tane sınıf ekleyecek. Öyle aksak faktörü gibi çok çok sınıf eklemeyecek. Tamam, eklemeyeceğiz. Ama şeye çizmemişim.
+
+618
+02:48:46,067 --> 02:48:54,067
+Sınıf şamasına çizmemişim. Şu sınıf şamasına tekrar çizmemişim.
+
+619
+02:48:54,067 --> 02:48:58,827
+Ben de söyleyeyim. Evet.
+
+620
+02:48:58,899 --> 02:49:17,420
+Klient'a faktör ediyoruz çünkü ayrıca şeye vermiyoruz yani. Tıkıta mı kıta vermiyoruz. O klient de burada geçiyor gerçi ama şu tarafa, sağ tarafa, son tarafa kuracağımız için o kalıbı da bir iki ek sınıf ile göstermemişim.
+
+621
+02:49:26,484 --> 02:49:42,744
+Devam edelim. Evet, şimdi mesela diyelim ki hem header1 hem header2 hem folder1 hem folder2 yazılsın istiyorsan eğer o zaman ben, şuna dikkat ederseniz, faktörüme get component metoduna.
+
+622
+02:49:44,051 --> 02:49:59,971
+Nasıl bir dekorasyon döndürüyorum? New header 1, new header 2, new footer 2, new footer 1 ve sayı sıkı. Zincirleme ile yaptım bu işi. Zincirleme ile yapmasaydım, tek tek ilişkilendirseydim de olurdu gerçi.
+
+623
+02:50:06,835 --> 02:50:24,435
+Herhangi bir zaten ben ilgili dekorator'a dekore ettiği varlığın ne olduğunu vermek zorundayım. Onu da en iyi konstruktör üzerinden yaparım. Şimdi 4.3 çetenin önerisine de bakayım. O ne diyordu?
+
+624
+02:50:24,435 --> 02:50:34,835
+O çok bir şey söylemiyor. Bir dekorator'ın dekore edeceği varlığı konstruktör'ından mı var yoksa ayrı bir eklemek var.
+
+625
+02:50:34,835 --> 02:50:56,155
+Metodunu ile ver. Onu söylemiyor. Hangisi içimize yarıyorsa ona bakıyor. Ama şurada mesela şu dekoratorda herhangi bir if kontrolü olmadan git komponent operatiyonu çalıştır dediği için, nav kontrolü falan yapmadığı için onu konstruktordan almayı önerdiğini tahmin ediyorum.
+
+626
+02:51:02,835 --> 02:51:05,956
+Gibisinden de yazantı diye düşünüyorum.
+
+627
+02:51:10,515 --> 02:51:11,355
+Evet.
+
+628
+02:51:11,995 --> 02:51:18,115
+Böyle bir çıktığı elde etmek için ben şöyle bir dekorasyon yaparsam bunu elde ediyorum.
+
+629
+02:51:18,515 --> 02:51:24,775
+Şimdi bu alternatifleri üstünde hem bu şekilde çalıştırayım hem de alternatifleri üzerinden çalıştırayım.
+
+630
+02:51:24,775 --> 02:51:25,635
+Şimdi.
+
+631
+02:51:27,916 --> 02:51:28,755
+Evet.
+
+632
+02:51:30,128 --> 02:51:40,508
+Burada bakın, çeşitli oynamalar yapmışım. Etkinin neler olduğunu görmüşüz. Bunu değil de client'ın beni çalıştıracağım.
+
+633
+02:51:40,508 --> 02:51:47,548
+Bir tane faktörü var, ondan sonra da bus şeklinde. Şimdi gelin biz bu faktörümüze bakalım.
+
+634
+02:51:48,728 --> 02:51:55,208
+Şimdi ne diyorduk? Her iki header, her iki foot olsun istiyorduk. Tamam.
+
+635
+02:51:58,131 --> 02:52:02,891
+Kaynak koddaki zinceleme gösterimini yorumladım. Tek tek gösteriyorum şu an.
+
+636
+02:52:05,652 --> 02:52:12,531
+Şimdi, öncelikle bir My Component nesnesi tamamlayıp bunu bir Sales tıkıttı diye ilklendiriyorum.
+
+637
+02:52:13,671 --> 02:52:19,871
+Bunu bir kere şu an beyrekte duruyor. Daha sonra yeni bir Hydro 2 nesnesi oluşturuyorum.
+
+638
+02:52:19,871 --> 02:52:22,371
+Ona parametre olarak My Component'ı veriyorum.
+
+639
+02:52:23,156 --> 02:52:51,156
+Böylece yeni bir dekorator oluşturuyorum. Şimdi burada ayrı bir dekorator nesnesi şeklinde bir nesne işaretçisi ek olarak tanımlamama gerek yok. Direkt ortaya çıkan dekoratoru My Component'a atayabilirim. Neden? Kadıtımda üst sınıftan bir nesnenin beklendiği herhangi bir bağlamda alt sınıftan bir nesne kullanılabiliyordu. O yüzden böyle yapmak hem...
+
+640
+02:52:51,156 --> 02:53:06,736
+Hem de şu new bana yepyeni bir işaretçi döndürecek. O yüzden şuradaki my component yani bir önceki yedinci satırda oluşturduğum my component silinmiyor. Silinmeyecek. Bellekte yaşamaya devam edecek.
+
+641
+02:53:07,123 --> 02:53:17,923
+8. satırla birlikte yeni bir nesne bellekte farklı bir yerde oluşturulacak. Sadece 6. satırda tanımladığım işaretçi reuse edilecek.
+
+642
+02:53:17,923 --> 02:53:32,923
+Tamam mı? Yalnız return demeyi unutmuşum. Her şeyi koment dediğim için. Şuraya onu da yazayım. Return my component. Evet. Ve bunu çağırdığımda...
+
+643
+02:53:33,971 --> 02:53:37,371
+Client'ı, daha doğrusu çalıştırıldığımda.
+
+644
+02:53:41,843 --> 02:53:46,683
+Header 1, Header 2, Sales tıkırt, Footer 2, Footer 1 şeklinde gösterdi.
+
+645
+02:53:47,156 --> 02:54:03,396
+Burada şimdi aynı türden her ikisi de footer olan şeyler kullanıyorsak, decoratorlar kullanıyorsak ve bunların kendi içerisindeki sıraları önemli ise o zaman ekleme sıralamamıza da dikkat etmemiz gerekiyor açıkçası.
+
+646
+02:54:03,396 --> 02:54:10,416
+Madem şuradaki örnekte footer 1, footer 2 sırasında olsun istiyorsak o zaman ben şunu şu şekilde yapmak zorundayım.
+
+647
+02:54:11,059 --> 02:54:24,099
+İlişkilendirme sırasını şöyle yapmak zorundaydım. Evvelki örnekte tam yansıyla aynı olmamış. Şimdi çalıştırdığımda aynı şeyi çalıştıracağımdan tekrar oraya gitmeyeyim, şuradan çalıştırdım.
+
+648
+02:54:33,811 --> 02:54:48,912
+O zaman o sırada yazacaktım. Ve dikkat ederseniz şurada komponent'ı önce hedekeli ilişkilendirdim, sonra header bir ile ilişkilendirdim. Çünkü kodum neydi? Önce kendi işini yap, sonra ilişkili olduğunun nesneye yönlendirir diyordu.
+
+649
+02:54:50,528 --> 02:55:18,528
+Nihayetinde bu nedenle şuradaki sıralama header 2, header 1 şeklinde yazmam gerekiyor. Önce kendini yap diyor. O yüzden kendini yap, ondan sonra göre de header 2. Neyse sıralamam bu şekilde. Eğer çıktı sıralamasını değiştirmek istiyorsanız o zaman şu ilişkilendirme sırasını da değiştirmeniz gerekiyor.
+
+650
+02:55:18,528 --> 02:55:28,087
+Benzer etkiyi, şimdi bakın, bunu buradan aldım, buraya koydum, buradan aldım, buraya koydum. Böyle yazmaktansa aynı şeyi şöyle de yazabilirdik.
+
+651
+02:55:45,683 --> 02:56:04,683
+New header 2. Onun içerisine New folder 1. Onun içerisine...
+
+652
+02:56:08,500 --> 02:56:23,500
+Şöyle bir noktaya koyayım da ondan sonra Enter'a basınca, Altstrah'a aktar. Onun içerisine NewFooter2, onun da içerisine SalesTicket.
+
+653
+02:56:27,500 --> 02:56:36,039
+NewSalesTicket diyebilirim. Bakın en içten o konu. Bir SalesTicket oluştu. Onu Futer2'ye var.
+
+654
+02:56:36,595 --> 02:57:02,476
+Ondan sonra onu footer 1'e ver, onu header 1'e ver filan. Ama şurada şey, ne hatası veriyor şu an? Type component'ı ilklendiremiyorum diyor. Bir dakika. Ha doğru ya, component soyucu sınıf. Tamam. Şey, haklı.
+
+655
+02:57:04,211 --> 02:57:05,811
+Şöyle, evet.
+
+656
+02:57:06,431 --> 02:57:09,251
+Nold. Tamam mı? Ve şunu da komentleyeyim bu arada.
+
+657
+02:57:10,391 --> 02:57:15,451
+Aslında orada no effect demesi lazım. Şurada litömetikten sonra şuradaki bir daha nasıl çalışsın?
+
+658
+02:57:15,611 --> 02:57:17,171
+Yani ilginç.
+
+659
+02:57:17,551 --> 02:57:19,431
+Unrechable code hatası falan mı?
+
+660
+02:57:22,371 --> 02:57:24,291
+Tamam, peki. Sonra mı oluyor?
+
+661
+02:57:24,331 --> 02:57:26,431
+Onda da bir tane parantez fazla kaldı hocam.
+
+662
+02:57:27,028 --> 02:57:38,007
+Haa, doğru. Teşekkür ederim. Evet, komponentin konusunu, şeyin konusunda aktarını, parantesi fazla kaldı. Haklısın. Tamam, çok güzel. Teşekkür ederim. Evet, şimdi koşturabilirim.
+
+663
+02:57:40,180 --> 02:58:05,500
+Hedder 1, Hedder 2, S4. Ama foto 2 foto 1 şeklinde oldu. Şimdi bu şekilde yazdığımızda Hedder 1, Hedder 2 sıra araması doğru tuttu ama bir foto 2 sıra aramasını bu sefer çevirememiz lazım. Şunu foto 2 diyorum, şunu foto 1 diyorum. Ondan sonra şimdi çalıştırdığımda istediğim sıra da yer alacak. Evet gördüğünüz gibi Hedder 2, Hedder 2, S4, Foto 1, Foto 2.
+
+664
+02:58:06,227 --> 02:58:16,067
+Şimdi header 1'i yazmamız gerekmiyor muydu? Diyelim ki. Belki o durumda üsttekinden silsem biraz daha rahat edeceğiz. Ama alttakinden de siler gösteririz.
+
+665
+02:58:20,819 --> 02:58:22,819
+Header'a ihtiyacım yok muydu?
+
+666
+02:58:22,819 --> 02:58:24,819
+Sinmiyorum, koment diyorum.
+
+667
+02:58:24,819 --> 02:58:28,819
+Ondan sonra kaydet.
+
+668
+02:58:28,819 --> 02:58:30,819
+Şey nereye gitti?
+
+669
+02:58:30,819 --> 02:58:32,108
+Haa.
+
+670
+02:58:32,275 --> 02:58:48,935
+Az önce çok enteresan bir şey oldu. Zoom paylaşım üst çubuğu kayboldu bir ara. Ben de acaba koptum mu ekran paylaşım mı falan durdu diyeceğim ama keşke hep öyle gizleyebilsem. Yani onu nasıl başardım bilemiyorum. Neyse tamam peki çekmeyelim.
+
+671
+02:58:48,935 --> 02:58:59,675
+Tamam bu şekilde yazdım. Şimdi çalıştırdığımda. Bakın header bir comment dediğimizde header bir eklemedi ama diğer genel kanalını ekledi mesela.
+
+672
+02:59:00,115 --> 02:59:09,735
+Ya da Foto2 olmasaydı ya da Foto1 olmasaydı onları da isterseniz şeydir. Foto2 ile komandeyelim mesela gibi.
+
+673
+02:59:10,324 --> 02:59:14,784
+Sonra bunda da filter 2 yok. Filter 1 var sadece.
+
+674
+02:59:15,463 --> 02:59:19,664
+Şu da olabilir belki. Yani geçtik zamanlarda, değişik ilişkiler de söz konusu olabilir.
+
+675
+02:59:19,904 --> 02:59:23,344
+Ne harbisiniz? Kurarsınız, yazdırırsınız mesela.
+
+676
+02:59:24,024 --> 02:59:32,104
+Hader 1 olmayacaktıysa da şurada mesela şu kısmı ve arkadaşımın hatırlattığı gibi bir tane parantezde filmimiz yetecekti.
+
+677
+02:59:32,104 --> 02:59:34,644
+Durumlar bu arkadaşlar. Gördüğünüz gibi.
+
+678
+02:59:35,056 --> 02:59:39,216
+Bence epey esnek bir çözüme bizi götürüyor.
+
+679
+02:59:40,656 --> 02:59:41,416
+Buradaki örnek.
+
+680
+02:59:43,916 --> 02:59:47,196
+Evet, sorumuz varsa buyurun konuşalım.
+
+681
+02:59:57,716 --> 03:00:06,036
+Yoksa da yoktuğuz haftaya yapmalıyız. Saatide 4 yaptık neredeyse. Adaptalız haftaya başlarız.
+
+682
+03:00:07,059 --> 03:00:22,739
+Bugün bu kadar iyi. Ama şöyle söyleyeyim, bir tek yine bu kalıpla ilgili. Şu şekilde Construct'ı iç içe yazdığım zaman buna chaining deniliyor, zincirleme deniliyor. Mesela bu Java'nın Steam kütüphanesinde şuna yarıyor mesela.
+
+683
+03:00:22,739 --> 03:00:35,059
+Diyelim ki bir dosyayı sıkıştırmak mı istiyorsunuz? Zipfile bilmem neye şey ne diyorsunuz?
+
+684
+03:00:35,059 --> 03:00:55,659
+Ondan sonra bir dosyayı şifrelemek mi istiyorsunuz? Enkript bilmem ne stream konstruktörler zincir ediyorsunuz. Bu şekilde istediğiniz değişik yetenekleri kullanabiliyorsunuz. O yöntem orada geçiyor, kullanılıyor.
+
+685
+03:00:55,659 --> 03:00:57,179
+Peki.
+
+686
+03:00:57,664 --> 03:01:03,824
+Bugünlük bu kadar. O zaman arkadaşlar, Neme'ye kadar geldik. 53'e kadar geldik.
+
+687
+03:01:10,355 --> 03:01:19,695
+Ya haftaya 54'ten devam edeceğiz. Yani adaptadan.
+
+688
+03:01:22,695 --> 03:01:29,336
+Evet. Peki. Şimdilik asma aldık. Haftaya görüşmek üzere inşallah.
+
+689
+03:01:29,336 --> 03:01:30,816
+Teşekkürler [öğrenci]. İyi akşamlar.
+
+690
+03:01:31,275 --> 03:01:33,935
+İyi akşamlar. İyi günler. Görüşmek üzere.
