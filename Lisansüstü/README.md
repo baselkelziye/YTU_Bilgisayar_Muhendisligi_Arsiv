@@ -614,6 +614,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Mobil Teknolojiler İçin Veri İşleme Teknikleri Ders Kayıtları](./Mobil%20Teknolojiler%20i%C3%A7in%20Veri%20%C4%B0%C5%9Fleme%20Teknikleri/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 

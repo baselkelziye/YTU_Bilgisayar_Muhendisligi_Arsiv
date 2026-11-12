@@ -1,0 +1,2083 @@
+1
+00:01:02,451 --> 00:01:10,531
+Arkadaşlar, hoş geldiniz. Bir iki üç dakika diğer arkadaşlarınızın da katılımını bekliyorum. Ondan sonra derse başlayacağım. Teşekkür ederim.
+
+2
+00:06:11,156 --> 00:06:29,156
+Evet arkadaşlar, hepinize tekrar merhaba. Hoş geldiniz. Açıkçası biraz fazla da bekledim ama dersi 11 kişi almış olmasına rağmen şu anda 4 kişiyse hatta 3 kişisiniz diyebilirim.
+
+3
+00:06:29,596 --> 00:06:37,696
+[öğrenci]'le ve [öğrenci]'la tanışıyoruz. O yüzden burada [öğrenci] arkadaşımız var sanırım, [öğrenci] [öğrenci].
+
+4
+00:06:38,163 --> 00:06:41,843
+Merhaba. Hoş geldin [öğrenci]. Hoş bulduk.
+
+5
+00:06:44,243 --> 00:07:01,223
+Şimdi tabii sizleri tanıyacağım ama önce kendimden kısaca bahsedeyim. Amaç Güvensan 2013'ten beri öğretim üyesi olarak görev yapıyorum Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde. Bu dersi de yaklaşık 5 senedir veriyorum. Bazı seneler iki dönem birden vardı.
+
+6
+00:07:01,632 --> 00:07:07,211
+Bu dersin aslında İngilizce karşılığı Pervasive and Mobile Computing.
+
+7
+00:07:08,992 --> 00:07:13,692
+Türkçe'ye farklı şekillerde çevrilmesi yeni yeni başladı.
+
+8
+00:07:17,043 --> 00:07:35,543
+Parvasif ve Yubiküşüs kavramı her an her yerden her cihaz üzerinden erişebilirdiği temsil ediyor. Ve aslında bu konu şu anda birçok konuya da doğrudan dokunuyor. Bulut bilişim, büyük veri, derin öğrenme, mobil programlama gibi.
+
+9
+00:07:45,043 --> 00:07:52,823
+Veri üzerinde çalışacağımız ödevlerimiz olacak. Konular mümkün olduğunca gerçek hayattaki çözümler.
+
+10
+00:07:53,267 --> 00:08:14,847
+Üzerinden olacak. Onları konuşacağız. Yani teknolojiyle özellikle mobil teknolojilerle biz problemleri nasıl çözüyoruz? Gidişat nereye doğru? Hangi teknolojiler yükselen trendde? Bunların altında yatan fikirler neler?
+
+11
+00:08:15,283 --> 00:08:22,743
+Kavramlar neler? Özellikle mobil teknolojilerdeki terminolojiyi size aktarmaya çalışacağım ders boyunca.
+
+12
+00:08:25,083 --> 00:08:33,963
+Tabii burada interaktif bir ders yürütmeyi sevdiğimi hem [öğrenci] biliyor hem de bak biliyor.
+
+13
+00:08:36,000 --> 00:08:56,539
+Mümkün olduğunca sizden fikir sorduğumda, mantıklı ya da mantıksız, o andaki değişik fikirlerinizi duymaktan hoşnut oluyorum. Çünkü farklı projelerde de yer alıyorsunuz. O yüzden sizden geri dönen bildirim de hepinize bir bilgi oluyor, bana da olmak üzere.
+
+14
+00:09:04,000 --> 00:09:27,100
+ve biraz daha konuların derinlemesine anlatılması gereken bir ders. Artık daha spesifik bir alana yöneliyoruz. Bazı temel bilgilerinizin de var olduğunu kabul ederek bu dersi anlatacağız. Ama tabii ki arada bazı tekrarlar olacak. Merhaba, [öğrenci] iyi oldu kamera olayı.
+
+15
+00:09:27,572 --> 00:09:45,731
+Şimdi hepiniz kamerayı açınca çok mutlu oldum. Çünkü boş bir bilgisayara iki gündür, üç gündür ders anlatıyorum. Ara ara kameralar açılıyor, kapanıyor ama birini görünce yüzünde gülümseme, kızgınlık, mutsuzluk bir şey ifade ediyor ve ders daha keyifli hale geliyor.
+
+16
+00:09:45,731 --> 00:09:54,292
+Zaten bu dönemki 11 kişiyi gördüğünde, bu derste biraz da olsun, biraz yüzler görebileceğim diye.
+
+17
+00:09:55,572 --> 00:10:05,731
+Şimdi açıkçası biraz sonra sizinle dersin genel akışındaki konu başlıklarını ve değerlendirme sürecini de paylaşıyor olacağım.
+
+18
+00:10:05,731 --> 00:10:19,412
+Bugün bir giriş yapacağız. Çok böyle dolu dolu 3 saati geçirmeyeceğiz. Biraz daha neler yapmak istediğimizi, stilimin ne olduğunu sizlerle paylaşmak istiyorum. [öğrenci] hoş geldin.
+
+19
+00:10:22,163 --> 00:10:23,884
+Bir mikrofon bağlantısı.
+
+20
+00:10:24,004 --> 00:10:24,723
+Merhaba hocam.
+
+21
+00:10:24,803 --> 00:10:26,563
+Evet, süper. Merhaba, selam.
+
+22
+00:10:27,163 --> 00:10:28,844
+Birazdan sizleri de tanıyacağım zaten.
+
+23
+00:10:30,604 --> 00:10:33,584
+Dersten bahsediyorduk, nasıl gideceğiz, ne yapacağız diye.
+
+24
+00:10:34,004 --> 00:10:35,644
+Silivası da paylaşıyor olacağım şimdi.
+
+25
+00:10:36,884 --> 00:10:39,644
+Dersin tabii çeşitli ödevleri olacak ve bu ödevler...
+
+26
+00:10:40,336 --> 00:11:08,316
+Bu da mümkünse birbirine bağlı ödevler olmasını arz ediyorum ama tabii ki duruma göre değişecek. Bir de dersin sonunda bir proje teslim etmenizi bekleyeceğim. Biraz sonra dersten beklentilerinizi de öğrenmek istiyorum. Sebebi şu, biraz böyle çok her yüksek lisans programında olan bir ders değil. Farklı beklentiler olabilir çünkü ismi tam açıkçası Türkçesi benim anlatmak istediklerimi.
+
+27
+00:11:08,336 --> 00:11:35,836
+O alanı tam karşılamıyor. O yüzden perversif and mobile computing diye özellikle vurguluyorum. Genelde derste slide'lar üzerinden gideceğiz ama konu konuyu açıyor ve değişik örnekleri tartışıyor olacağız. Ben size böyle bir problemde ne yaparsınız ya da hangi yaklaşım uygulanır gibi sorular yöneltiyor olacağım. Siz de o anda aklınıza gelen, çok süzgeçten geçirmeden, böyle inceleyip sık dokunmanıza gerek yok.
+
+28
+00:11:36,336 --> 00:11:44,935
+Fikirlerinizi paylaşıyor olacaksınız. Belki de o çözüm, o problemi çok da aklımızda olmayan, sizden gelen bir çözümü dahil etmiş olacağız.
+
+29
+00:11:46,375 --> 00:11:55,135
+Şimdi ders 11 kişi, şu anda 4 kişiyiz. Tabii ilk hafta dolayısıyla farklı düşünüp derse katılamayanlar olabilir.
+
+30
+00:11:56,435 --> 00:11:57,932
+Online olduğu için...
+
+31
+00:11:57,940 --> 00:12:16,100
+Mümkün olduğunca derste katılımı bekleyeceğim. Tabii ki bu her hafta katılamayabilirsiniz iş yükü vesairesiyle dolayısıyla. Ama yaklaşık %60 civarında bir katılım, tatminkar bir katılım olacaktır.
+
+32
+00:12:18,611 --> 00:12:38,031
+Bazı konuları ilk defa duyulacaksınız. Bazılarını daha önceden görmüş olacaksınız. Önemli olan biraz da sizden gelecek feedback'e göre. Sona doğru olan konulara belki başka eklemeler de yapabilirsiniz. Silebüsü açacağım. Hatta hemen ekran paylaşımıyla başlayayım.
+
+33
+00:12:48,275 --> 00:12:57,995
+Evet. Şu anda sanırım görebiliyorsunuzdur diye düşünüyorum. Bu noktada çok çeşitli kaynaklar var.
+
+34
+00:12:58,451 --> 00:13:26,451
+Bu kaynakları, bu silibisi de Avesiz Yıldız Edyutere adresindeki duyurular üzerinden, bizim genel olarak hocaların sayfalarının olduğu duyurular üzerinden yayınlayacağım. Ama bu platformda düküman paylaşımına izin verileceği ve izin verildiği söyleniyor. Yalnız bazı sıkıntılar varmış. İlk etapta sistem oturana kadar bu noktada paylaşımı oradan devam ettireceğim Avesiz Yıldız Edyutere'den ama sonra işler oturursa.
+
+35
+00:13:26,451 --> 00:13:42,892
+Tabii ki kolaylık olması açısından online Yıldız ZTRE üzerinden ders dokümanlarını paylaşıyor olacağım. Şimdi bu dersin çeşitli kitapları var. Bunlar güzel kitaplar ama bu dersi böyle kitap üzerinden işlemek gibi bir alışkanlığım yok.
+
+36
+00:13:54,451 --> 00:14:18,451
+Bu konuları takip ederek sizlere her sene programı ya da anlattıklarımı biraz güncellemeye, konuları biraz daha ilgi çekici hale getirmeye çalışıyorum. Bu ismini gördüğünüz aslında dergi ve konferanslar sizin açınızdan da araştırma yapacağınız dönemde özellikle tercih edebileceğiniz...
+
+37
+00:14:19,988 --> 00:14:22,948
+konu ararken kaynaklar olabilir.
+
+38
+00:14:24,048 --> 00:14:29,327
+Tabii araştırmalarınızı yürüteceğiniz kaynaklar da ihtiyaç duyacaksınız.
+
+39
+00:14:29,327 --> 00:14:37,327
+Buna Scholar Google üzerinden eriştiğiniz Elsevier'in, ITRPLIN'in, ACM'in, Schpringer'in bu temel...
+
+40
+00:14:38,035 --> 00:14:55,716
+Bizim alanımızdaki yayın evlerinin yayınlarına kütüphanenin proksesini kullanarak ya da kütüphanedeki ayarlarınızı yaparak uzaktan da ilgili makaleleri ya da bildirileri indirerek takip etmenizi istediğim, araştırmanızı istediğim konular olacak.
+
+41
+00:14:56,244 --> 00:15:08,172
+Gerçekten bu alanda ilginç çalışmalar yapılıyor. Teori biraz daha geri planda kalıyor. Yüzde 30 diyelim. Pratiklik yüzde 70 civarında. Çünkü...
+
+42
+00:15:08,467 --> 00:15:32,307
+İnsanın hayatına dokunan teknolojiler genelde varlığını sürdürmeye devam ediyor. Ama teori de o teknolojilerin ilk başında ortaya çıkan ve o teoriler üzerine bu teknolojileri aslında oluşturuyoruz. Yani bilgisayar mühendisliği, bilgisayar bilimlerinde o kadar uzun yıllar olmasa da diğer mühendisliklere göre aslında bayağı bir yol katildi.
+
+43
+00:15:32,307 --> 00:15:36,307
+1980'ler itibariyle hayata geçmiş bölümleri...
+
+44
+00:15:36,467 --> 00:15:39,447
+Türkiye'de düşünürsek yaklaşık 40 senelik bir geçmiş var.
+
+45
+00:15:40,467 --> 00:15:51,048
+Dünya çapında da 50-60 senelik bir geçmiş olduğunu düşünürseniz artık bilgisayar bilimleri de belli kuramları oturtup belli teorileri bir noktaya taşımış durumda.
+
+46
+00:15:51,048 --> 00:15:56,648
+O yüzden de bu teorilerin üzerine açıkçası inşa ediyorlar yeni teknolojileri genelde.
+
+47
+00:15:57,008 --> 00:16:02,128
+Çok büyük, yepyeni teoriler üretmek çok kolay olmuyor.
+
+48
+00:16:04,467 --> 00:16:05,467
+Evet.
+
+49
+00:16:06,292 --> 00:16:22,532
+Çok da böyle çığır açıcı teknolojilerin de oluşturulması sırasında bu eski teorilerin üzerinde yeni, bambaşka yenilikler eklenerek çok daha farklı bir dünya tasarlanıyor açıkçası.
+
+50
+00:16:23,192 --> 00:16:29,552
+Bu anlamda bazı teknolojilerin arka planlarına da bakıyor olacağız ders içerisinde.
+
+51
+00:16:29,552 --> 00:16:34,292
+Şimdi bu detaylar syllabus'ın içerisinde daha sonra bakabiliriz.
+
+52
+00:16:34,292 --> 00:16:49,231
+Konsun hedefleri neler? Bu derste neyi hedefliyoruz? Çıktı ne olacak? Ve genel olarak içerikte neler var? Bunları kabaca özetleyen bilgiler bu dokümanın içerisinde var.
+
+53
+00:16:50,816 --> 00:17:13,579
+İlk haftada bir giriş yapacağız bu kavramlara. Nelere dokunması gerektiğini bu dersin biraz konuşacağız. Bu belki hiç duymadığınız kavramların bir açıklamasını yapmakta fayda var diye düşünüyorum. Sonra çevresel zeka kavramı, Ambient Intelligence'ı tanımlayıp aslında kontekst konusuna gireceğiz ki, kontekst aware sistemler şu anda...
+
+54
+00:17:13,875 --> 00:17:41,875
+En önemli sistemlerin başına geliyor. Sebebi bugüne kadar standart işler, yani bugüne kadar derken son 10 seneyi birazcık çıkartalım. Standart işleri yapmaya çalışırken şimdi artık insanların davranışları ve duygularının daha ön plana çıktı. Onları algılamanın, bulundukları ortamda onları izleyerek ya da hayatların içerisinde onların yaptığı...
+
+55
+00:17:41,875 --> 00:18:01,195
+davranışları analiz ederek çözümler getirme gereklilikleri çıktı. Bunlar da akıllı binalar, akıllı ulaşım, giyilebilir teknolojileri doğal olarak daha çok tetikledi. Bazı teknolojiler doğdu, çok büyük şey vaat etti ama sonradan devam edemedi. Google Glass gibi.
+
+56
+00:18:01,652 --> 00:18:28,791
+Ama bazı giyilebilir teknolojiler de çok uzun süre mücadele etti var olmak için. Sonunda kendini ispatladı ve şu anda birçoğumuzun kolunda akıllı saatler olarak yer alıyor. Ama giyilebilir teknolojilerin gerçekten hayatımıza girdiğini tam olarak söyleyemeyiz yaygınlaştığını. Daha çok iş yerlerinde belki kurduruluyor akıllı eldivenler.
+
+57
+00:18:29,167 --> 00:18:44,527
+Akıllı baretler gibi. Bunlar da kontekst anlamında bizim etrafta ne oluyor bitiyoru bir şekilde algılamamız gerektiğini gösteriyor. Bu yüzden kontekst evi sistemleri tartışacağız.
+
+58
+00:18:53,268 --> 00:18:57,908
+Bence temelini oluşturan Sensör Networks konusunu biraz konuşacağız.
+
+59
+00:18:57,908 --> 00:19:05,612
+Bütün hikaye bu askeri uygulamalarla, daha sonra tarım ve çevre uygulamalarıyla hayatımıza giren...
+
+60
+00:19:05,779 --> 00:19:18,819
+Sensör Networklerle aslında başlıyor bu kadar çevre-oriented yapı. Sonra bugünkü adıyla IoT'ye dönüyor bu wireless sensör networkler.
+
+61
+00:19:18,819 --> 00:19:26,639
+Ve ikisinin farklarını birazcık tartışıyor olacağız. Çünkü sensör network kavramı hala var.
+
+62
+00:19:27,251 --> 00:19:49,051
+Hala bu alanda çalışılıyor. Ama daha çok IoT'ye evrilmiş durumda. Bunun bağlantı noktasını oluşturan da mobil telefonlar, aslında sensör networklerin IoT'ye dönmesini sağlayan en önemli yapı taşı mobil telefonlar. Neden öyle olduğunu konuşacağız.
+
+63
+00:19:49,051 --> 00:19:54,891
+Mobil cihazları, onların üzerinde çalışan işletim sistemleri mi? Bazılarında işletim sistemi yok.
+
+64
+00:19:55,200 --> 00:20:02,779
+Bu cihazların platformların özelliklerini tartışıyor olacağız.
+
+65
+00:20:02,779 --> 00:20:10,860
+Tabii o hafta bunlar hafta hafta birebir tam denk gelmeyebilir, kaymalar olabilir ama o hafta 29 Ekim'e denk geliyor.
+
+66
+00:20:10,980 --> 00:20:16,579
+Bunu bir şekilde diğer derslere yedirerek gerçekleştirmeye çalışacağız.
+
+67
+00:20:17,300 --> 00:20:17,779
+Sonra...
+
+68
+00:20:18,579 --> 00:20:44,579
+Bizim için kritik olan mobil cihazlar üzerindeki sensörler ve bu sensörlerle neler yapabileceğimiz konusu geliyor. Verileri nasıl topluyoruz? Bunlara bakacağız. Hangi sensörle ne verisi topluyoruz? Bunların maliyeti nedir? Gerçekten bir iş yaparken sensör seçimini nasıl yapmalıyız? Bir tasarım yaparken bunları...
+
+69
+00:20:45,428 --> 00:20:58,307
+Normal parasal maliyeti dışında veri toplamadaki enerji maliyeti nedir? Veri aktarmadaki büyüklükten dolayı bandwidth ihtiyacı nedir? Bunlara bir bakacağız.
+
+70
+00:20:59,568 --> 00:21:12,140
+Doğal olarak hemen veriyle ilgili konuştuğumuzda bu verinin yönetimi devreye geliyor. Bu veriler nerede, nasıl saklanacak? Bu cihazların üzerinde mi saklanacak? Cloud'a mı götüreceğiz? Daha arada bir...
+
+71
+00:21:12,147 --> 00:21:36,507
+Yapımı oluşturmamız lazım. Burada institute processing kavramı geliyor. Yani yerinde işleme. Biz bu verileri acaba ham olarak mı taşımalıyız? Yoksa işleyip, bir karar alıp, bir çıkartı üretip sadece o verileri mi merkeze iletmeliyiz? Bunları bir tartışacağız. Doğal olarak bir de bu mobil cihazlar üzerinde bir işleme yapacaksak.
+
+72
+00:21:37,395 --> 00:21:48,036
+Neler kullanılıyor? Yani biz şeye çok alışkınız, sunucular üzerinde işte trening yapmaya, test yapmaya, bu platformları koşmaya.
+
+73
+00:21:49,715 --> 00:22:16,096
+Supervised Learning, Unsupervised Learning bunları yapmaya ama tabii bu akıllı telefonların belirli kısıtları var. Ki son senelerde bu kısıtlar da aşılmış durumda. Oldukça cebimizdeki telefonlar yetenekli hale geldi. Ama şimdi başka bir challenge var. Akıllı saatler. Akıllı saatlerin hala üzerindeki kapasiteleri telefonların inkallerine benziyor.
+
+74
+00:22:17,968 --> 00:22:45,268
+O kadar kötü demeyelim ama en azından akıllı telefona göre biraz daha geride kalıyor. O yüzden biz acaba bu cihazlar üzerinde hangi teknikleri uygulamalıyız? Neleri bu cihazlar kaldırır? Derin öğrenmeye karşılık verir mi? Derin öğrenme modellerini bu cihazlara entegre edebilir miyiz? Eğitimi ne yapacağız? Testi ne yapacağız? Modeli nerede çalıştıracağız? Refine etmemiz gerekir mi gibi sorular var.
+
+75
+00:22:47,347 --> 00:22:59,947
+Bu cihazlar üzerinde eğitim yapıyorsak ne kadar veri saklamalıyız gibi sorularak da geliyor ki, biraz sonra bu cihazlarla ilgili önemli bir problem olan security ile konuşuyor olacağız.
+
+76
+00:22:59,947 --> 00:23:10,847
+Sonra akıllı telefonlar üzerindeki sensörlere biraz daha yakından bakacağız ve oradaki veri toplama yaklaşımlarını konuşacağız.
+
+77
+00:23:11,407 --> 00:23:15,067
+Sonra bir crowdsourcing kavramı gelecek. Çok çok önemli bir kavram.
+
+78
+00:23:15,347 --> 00:23:36,567
+Birçok çözümde crowdsourcing'i uyguluyoruz. Bunu belki birazdan dersin içerisinde konuşuruz. Open Data dediğimiz artık birçok belediyenin, birçok kurumun topladığı veriyi public hale getirmesi var ve bundan da birçok araştırma grubu yararlanarak
+
+79
+00:23:36,960 --> 00:23:45,599
+Aslında kazan kazan modeli ortaya koyuyorlar. Ki bunun en güzel örneklerinden bir tanesi Stack Overflow'dur.
+
+80
+00:23:47,279 --> 00:23:49,500
+Wireless Communication'a bakacağız.
+
+81
+00:23:49,500 --> 00:23:53,500
+Wireless Communication bu...
+
+82
+00:23:53,875 --> 00:24:04,276
+Parvasifan Mobile Computing'in aslında kalbinde olan bir yer. Çünkü her an her yerden işlem yapabilme yeteneğini sağlamanızın yegane yolu kablosuz iletişim sağlamak.
+
+83
+00:24:21,268 --> 00:24:37,428
+Açıkçası sebebiyet verdiği, hangi protokolün ne kadar enerji tükettiği, kısıtları, nerelerde kullanılabileceği açık alan, kapalı alan, engellerin olduğu alan, olmadığı alan gibi bunları biraz tartışıyor olacağız.
+
+84
+00:24:37,428 --> 00:24:48,428
+Sonra olmazsa olmaz, wireless communication diyorsak security, bu verinin taşınma sırasındaki korunması kablamı, aynı zamanda mobil cihazlardaki...
+
+85
+00:24:48,819 --> 00:25:14,600
+Sıkıntılar neler? Security ile ilgili yapılan çözümler neler? İşte malware'ler var mesela. Bunlarla ilgili yaklaşımlar. Bunları konuşacağız. Privacy kavramı çok daha önem kazandı son yıllarda. İşte bu KBKK, GDPR yurt dışında. Yani artık öyle canınızın istediği veriyi alıp işleyemiyorsunuz. Veriyle ilgili iş yapacakken hem kullanıcı onayını almanız lazım.
+
+86
+00:25:15,059 --> 00:25:32,799
+Hem de oradaki bazı verileri karartarak kullanmanız gerekiyor. Bu da önemli. Lokasyon tabanlı servisler ve uygulamalar. Bence şu andaki en sık kullandığımız uygulamaların başında geliyor.
+
+87
+00:25:33,248 --> 00:26:01,248
+Hem iç lokasyon hem dış lokasyon. Yani sadece GPS değil artık bir binanın içerisindeki bulunduğunuz pozisyonu takip etmekte kritik hale geldi. Bununla ilgili birçok uygulama yapılıyor. Çünkü büyük binalar var. O binalar içerisinde de sizin yönlenmeniz ya da alışveriş merkezlerindeki gezerkenki davranışların incelenmesi için sizin pozisyonunuzu da tespit edilmesi gerekiyor. Hatta ve hatta marketlere girdiğiniz zaman.
+
+88
+00:26:01,248 --> 00:26:09,788
+Ama marketin içerisinde geçirdiğiniz zamanı ya da bir mağazanın içerisinde hangi bölümde daha çok vakit harcıyorsunuz?
+
+89
+00:26:10,324 --> 00:26:25,384
+Bunları tespit etmeleri gerekiyor ve bunları pazarlama aracı olarak kullanmaları gerekiyor. Tabi bu da bu tarafı olan ilgiye alakayı iyice arttırmış durumda. Mümkünse müşteriyi her daim izleyelim peşindeler.
+
+90
+00:26:38,324 --> 00:26:59,984
+Bu cihazların arasındaki protokoller neler? Normal protokollerden farkı ne? Nereye doğru gidiyor? Ne sınırın internet hikayesi? Bunu zaman zaman konular içerisinde, zaman zaman da örnek olarak kullanacağız ve son hafta da biraz daha yakından bu konulara büyük veriyi de biraz işin içine katarak.
+
+91
+00:27:00,468 --> 00:27:23,428
+Bakıyor olacağız. Şimdi dersin değerlendirmesi kısmı burada böyle gözükse de bunda bazı düzenlemeler yapabiliriz. Ki final ile ilgili %40 gibi üniversiteden gelen bir yönlendirme var. Yüksek lisansta bu geçerli olacak mı ondan emin değilim. Yıl içine %60, yıl sonuna %40 olarak belirliyorlar.
+
+92
+00:27:27,827 --> 00:27:39,208
+Yıl sonunda, yıl içinde de bir tane yapıyorum. Şimdi şartlar biraz daha değişik. O yüzden bu sınavlarda nasıl bir yol izleyeceğimi bir iki hafta içerisinde netleştirip sizinle paylaşacağım.
+
+93
+00:27:39,635 --> 00:27:56,079
+Biraz daha ödev, araştırma ve dönem projesi üzerinden gitmeyi planladığım bir ders. Belki %50, %60'ı çekebilirsem öyle bir düşüncem olabilir. Burada bir yüksek lisans dersinde size araştırma yapma kültüründe...
+
+94
+00:27:56,079 --> 00:28:03,899
+Aşılamak önemli diye düşünüyorum. Çünkü eninde sonunda tez yaparken bu noktaya geleceksiniz.
+
+95
+00:28:04,419 --> 00:28:07,719
+Ve kiminiz doktoraya devam etmek isteyecek, kiminiz şu anda doktoraya başladı.
+
+96
+00:28:08,479 --> 00:28:11,699
+Bu noktada bu kültüre edinmek çok değerli.
+
+97
+00:28:12,199 --> 00:28:19,059
+Her hocanın dersinde yapacağınız farklı ödevlerle ve onların farkı onun ya da o kişilerin farklı yönlendirmesiyle
+
+98
+00:28:19,539 --> 00:28:30,819
+Araştırmaya yönelik ipuçlarını almaya çalışırsanız hem tezinizi de çok rahat edersiniz hem de iş hayatınıza çok olumlu geri dönüşler olacaktır.
+
+99
+00:28:31,559 --> 00:28:34,379
+Çünkü yüksek lisans demek...
+
+100
+00:28:34,579 --> 00:28:51,019
+Bilgiyi bulmanın ötesinde araştırma yapmayı da iyi bir şekilde öğrenebilmek demek. Bu dersin içerisinde seçeceğiniz konularla ya da ilgi duyduğunuz konularla belki de yeni başlayanlar için söylüyorum.
+
+101
+00:28:52,319 --> 00:29:02,340
+Kendinize bir tez konusu bulacaksınız. İlginizi çekecek. Belki sonra görüşeceğiz. Diyeceksiniz ki ben bu alanda bir tez yapmak istiyorum. Şöyle bir fikrim var ya da sizin bir fikriniz var mı?
+
+102
+00:29:02,579 --> 00:29:09,343
+Elinizde bir test konusu var mı gibi. Bunları da konuşuyor olacağız yeni geldiğinde ama...
+
+103
+00:29:09,344 --> 00:29:37,344
+Genelde uzaktan ben izliyor olacağım. Siz ilgi duyarsanız, siz konuşmak isterseniz ben daha çok bu noktada devreye gideceğim. Sadece bazı konulara dikkat çekeceğim. Bu konular iyi bir araştırma konusu olabilir, test konusu olabilir, düşünebilirsiniz diye. Siz de o konuya bakın, ilgi duyarsanız. Özellikle danışmanlığı henüz belirlememiş arkadaşlarımız. Birinci dönem sonunda mutlaka belirlemek zorunda oldukları için bu döneme aldıkları dersleri...
+
+104
+00:29:37,344 --> 00:29:56,004
+Ekiple takip etsinler. Özellikle ilgi duydukları hocalarla da mutlaka görüşsünler. Çünkü tez süreçi, uzun bir süreç o konudaki eksik noktayı bulmakta, o problemi tespit edip, ona uygulanmış çözümleri inceleyip neyin uygulanması gerektiğini düşünmek bile bir zaman alıyor.
+
+105
+00:29:56,004 --> 00:30:00,940
+O yüzden şimdiden de acızane size bu konudaki...
+
+106
+00:30:01,140 --> 00:30:06,000
+Ve çalışmalarınızı algılarınız açık olarak devam ettirmenizi isterim.
+
+107
+00:30:06,720 --> 00:30:10,340
+Genel olarak dersle ilgili girişimiz bu şekilde olsun.
+
+108
+00:30:10,759 --> 00:30:14,960
+Şimdi biraz ben sözü size bırakayım, sizi tanıyım.
+
+109
+00:30:15,340 --> 00:30:21,060
+Nereden mevzusunuz, hangi bölümden geliyorsunuz, kaçıncı döneminiz, yüksek lisans mı, doktora mı yapıyorsunuz şu anda?
+
+110
+00:30:21,060 --> 00:30:27,200
+Bu dersten beklentiniz neydi bu programı görmeden önce? Nasıl bir beklentile geldiniz, ne gördüm diye düşünüyordunuz.
+
+111
+00:30:27,800 --> 00:30:29,140
+Nerede çalışıyorsunuz?
+
+112
+00:30:29,140 --> 00:30:41,200
+Çalıştığınız yer, derse katılımınız konusunda olumlu yaklaşımı var mı? Ya da aklınıza gelen başka soruları da tanıtımı yaptıktan sonra sorabilirsiniz.
+
+113
+00:30:41,820 --> 00:30:46,480
+Evet, kim başlamak isterse memnuniyetle dinlemeye hazır. Lütfen.
+
+114
+00:30:48,980 --> 00:30:50,200
+Merhaba hocam.
+
+115
+00:30:50,820 --> 00:30:51,259
+Merhabalar.
+
+116
+00:30:56,660 --> 00:31:11,000
+Ben ekran paylaşımını kapatıyorum şu anda. Ekran paylaşım derken, bilgisayarın ekran paylaşımını bir daha deneyelim.
+
+117
+00:31:12,760 --> 00:31:14,080
+Şu an bir sıkıntı var mı hocam?
+
+118
+00:31:14,500 --> 00:31:15,360
+Biraz daha iyi bir de.
+
+119
+00:31:15,360 --> 00:31:23,360
+[kişisel bilgi]
+
+120
+00:31:24,084 --> 00:31:50,827
+[kişisel bilgi] Bu dersi alma sebebim, mobil uygulamalar üzerine bir geliştirme yapmak istiyorum. Sensörler ve AET ile de bir ilgim var. Bu dersi akademik anlamda düşünmüyorum da bir proje yapıp işlik etleşme gibi bir yoluna gidebilirsem, şu an günümüzde de bu konularda biraz...
+
+121
+00:31:50,836 --> 00:32:07,775
+Destekler, hibeler, akıllı şehir gibi kavramlarda bunun üzerine durdukları için. Planım sensörlerle AYT'yi de kullanarak yeni bir şeyler çıkartmak. Makine öğrenmesi, teknik öğrenmesi gibi isteniyoruz.
+
+122
+00:32:07,775 --> 00:32:17,755
+Biktat'a, teknolojilerin bir kata üzerine yaptım. Bunları mobil uygulama üzerinde geliştirmeler yapıyorum. Çünkü gelecek mobil.
+
+123
+00:32:18,132 --> 00:32:25,612
+Her şey sensörlere falan döndüğü için. Bilgisayardan daha çok mobil üzerine çalışmalar.
+
+124
+00:32:29,672 --> 00:32:34,211
+Onun için aldım bu dersi. İnşallah istediğim gibi olacak.
+
+125
+00:32:34,867 --> 00:32:47,367
+Umarım. Şimdi bazı noktaları, yani %70'ini anladım ama bazı yerlerde kesiklikler oldu. Şunu soracağım. [kişisel bilgi]
+
+126
+00:32:48,147 --> 00:32:49,228
+[kişisel bilgi]
+
+127
+00:32:49,587 --> 00:32:51,228
+[kişisel bilgi]
+
+128
+00:32:51,827 --> 00:32:52,228
+[kişisel bilgi]
+
+129
+00:32:52,748 --> 00:32:57,548
+[kişisel bilgi]
+
+130
+00:32:58,428 --> 00:33:00,248
+Lisansta şey vardı.
+
+131
+00:33:02,675 --> 00:33:06,395
+Çinek sensörü vardı hocam. Çinekke bir ara çok meşhur oldu.
+
+132
+00:33:06,395 --> 00:33:13,276
+Ondan grafik yönlendirme oyunu yapmıştım ben. Grafik kurallarının olduğu bir oyun yapmıştım ben.
+
+133
+00:33:13,596 --> 00:33:17,016
+Güzel. [kişisel bilgi]
+
+134
+00:33:17,355 --> 00:33:25,155
+[kişisel bilgi] Seçim döneminde topladığım bir sürü kutası vardı.
+
+135
+00:33:25,551 --> 00:33:41,951
+2018 yerel seçimlerinde 7 ay boyunca topladığım bir veri vardı. Oradan Big Data Committee Detection algoritmaları kullanarak politik kutluplaşmayı ölçmüyor. Bunu bulabiliyorum. [kişisel bilgi]
+
+136
+00:33:50,804 --> 00:34:01,124
+[kişisel bilgi]
+
+137
+00:34:02,324 --> 00:34:05,884
+Bunda çünkü açık var. Onu düşünerek al.
+
+138
+00:34:07,024 --> 00:34:10,503
+Teşekkür ediyorum [öğrenci]. Tekrar aramıza hoş geldin.
+
+139
+00:34:11,956 --> 00:34:22,956
+Şimdi tabii bu derste mobil uygulamaları konuştuğumuz dönemler olacak. Genel olarak gidişat yorumlayacağız. Nelerin...
+
+140
+00:34:23,123 --> 00:34:44,183
+Daha önemli hale geldiğini, aslında hangi mobil uygulamaların biraz daha geride kaldığını, bundan sonra yapılırsa çok da ilgi çekmeyeceğini, özellikle bunlara zaman zaman değiniyor olacağız. Ama bu dersin temel hedefinde mobil programlamanın çok da ince detaylarına girmek yok aslında. Onu şimdiden söyleyeyim, yanlış bir beklenti olmasın.
+
+141
+00:34:51,123 --> 00:35:00,239
+Bu işletim sistemlerine uygulama geliştirirken nelere dikkat etmesi gerektiğini konuşacağız ama...
+
+142
+00:35:00,239 --> 00:35:21,799
+Programlama anlamında çok fazla bir şey yapmayacağız. Onu şimdiden söylemiş olayım. [kişisel bilgi] Neler açık?
+
+143
+00:35:22,224 --> 00:35:43,804
+Yeni neler katılabilir onu aslında birlikte tartışmak ve sizden gelen feedbacklerle de aslında benim de görmediğim teknolojinin özel sektör tarafını nasıl takip ettiğini, nasıl bir yol izlediğini de sizlerden almak. Bunu birlikte ben akademi tarafını sizler de biraz daha özel sektör tarafını söyleyeceksiniz. Ben şimdi [öğrenci]'e vereyim sözü.
+
+144
+00:35:46,444 --> 00:35:47,484
+Tabii hocam.
+
+145
+00:35:47,484 --> 00:35:48,204
+Evet.
+
+146
+00:35:48,788 --> 00:35:54,927
+[öğrenci] [öğrenci] ismim. [kişisel bilgi] 2017'de.
+
+147
+00:35:56,188 --> 00:36:05,248
+[kişisel bilgi]
+
+148
+00:36:05,807 --> 00:36:12,507
+[kişisel bilgi]
+
+149
+00:36:13,184 --> 00:36:23,804
+İlerliyor. Üç yıldır aynı devam ediyorum. [kişisel bilgi]
+
+150
+00:36:26,543 --> 00:36:37,704
+[kişisel bilgi] Çünkü parallelde yüz yüze olan derslere katılmak biraz zor olmuştu. Bu kadar ilerlettim aslında.
+
+151
+00:36:38,931 --> 00:36:45,871
+Bu pandeminin de aslında bir taraftan bana belki faydası olabilir. [kişisel bilgi]
+
+152
+00:36:46,611 --> 00:36:47,111
+Evet, tamam.
+
+153
+00:36:49,331 --> 00:36:58,763
+[kişisel bilgi] Onu Scientific Sidesi'nin nesli bir dergide...
+
+154
+00:36:58,804 --> 00:37:06,804
+Bastırmayı başardık. Orada bir çalışma var. [kişisel bilgi]
+
+155
+00:37:06,984 --> 00:37:10,844
+[kişisel bilgi]
+
+156
+00:37:11,204 --> 00:37:16,744
+Orada da body sensörlerle alakalı kişilerin kas hareketlerinden.
+
+157
+00:37:17,268 --> 00:37:27,268
+Daha doğrusu kolu vesaire uzun kopan hastaların kas hareketlerinden, VR ile hareket varmış gibi gösterme. Fantom...
+
+158
+00:37:27,795 --> 00:37:52,155
+Sendromu gibi bir isim var. O hastalığın tedavisi için bir proje vardı. Orada da ben de orada sensör, arka tarafta server ve diğer client monitoring için olan olacak kullanıcı şeylerin, backend yapının güvenli mimari tasarımını ve bu kullanılacak olan body sensördeki veri iletişimi için
+
+159
+00:37:52,628 --> 00:38:13,048
+Nasıl bir algoritma kullanabiliriz? Klasik kullanılan algoritmaların yanında lightweight algoritma var. Encryption için kullanan. Hani biz bir de bir şeyler yapabilir miyiz? Ne eksik ne fazla var. Onunla ilgili bir çalışma yapmıştık. [kişisel bilgi] Elektrik adıya. Orada yayınladık.
+
+160
+00:38:13,048 --> 00:38:14,048
+Çok güzel.
+
+161
+00:38:15,059 --> 00:38:37,779
+Burada da bu dersi de aslında bahsettiğiniz gibi bu mobile computing. Burada aslında telefondan ziyade gerçekten bu mobil device'lerle ilgili çok fazla popüler işte lambasından prizine kadar akıllı şeyler var şu anda. Orada da işte otoraktaki güvenlik şeyleri de var tabii o paya daha çok tabii beni de ilgilendiriyor. [kişisel bilgi]
+
+162
+00:38:39,827 --> 00:38:58,228
+Çok teşekkür ederim. Aslında güzel bir araştırma background'un da var gördüğüm kadarıyla. Bir şekilde o işlerin içerisinde aktif olarak yer almış olman, belirli bir araştırma kültürü kazandığını gösteriyor. Bu projede, bahsettiğim projede güven aşçı var mıydı?
+
+163
+00:38:58,988 --> 00:38:59,587
+Vardı, vardı.
+
+164
+00:39:02,387 --> 00:39:11,648
+Biz tabii onunla bu derste tanışmıştık. Sonra da birlikte bir iş yaptık, konferans yayınladık. [kişisel bilgi]
+
+165
+00:39:12,387 --> 00:39:15,648
+Biliyorum, fotoğrafları görmüştüm, o da anlatmıştı Cepneyi.
+
+166
+00:39:15,747 --> 00:39:22,387
+Evet, güzel bir maceramız olmuştu. Bu dersin kapsamında bir yayın çıkartmak...
+
+167
+00:39:22,963 --> 00:39:36,364
+Bu hedeflerimden bir tanesi. Yani ders içerisindeki araştırma konularından en azından konferans düzeninde ya da ulusal makale düzeninde bir şey çıkartmak çok güzel olur.
+
+168
+00:39:36,364 --> 00:39:49,363
+Tabii ki İndekse girmiş uluslararası bir dergiyi tercih ederim ama çok kolay değil. Onun için daha fazla bir zaman dilimi gerekiyor. O yüzden seçeceğiniz konular özellikle dönem projesinde.
+
+169
+00:39:50,036 --> 00:40:00,000
+Bu yönde olmalı ki, ki bunu konuşacağız. Sizler araştıracaksınız eğer, konu bulamazsanız ben atayacağım ama tercihim...
+
+170
+00:40:00,000 --> 00:40:27,980
+Ve puanlamayı da etkileyecek olan sizin yaptığınız araştırma sonucunda bulduğunuz bir konu olması ve keyifle o konuda bir şeyler yapmanız. Burada biraz programlama da yapmanızı bekliyor olacağım. Veriyi alıp işlemenizi vs. mümkünse. Ama bir tasarım olur, bir mimari olur, bir protokol olur. Bu birazcık sizin ilgi alanınıza bağlı. [kişisel bilgi]
+
+171
+00:40:28,000 --> 00:40:32,108
+İçin veren,
+
+172
+00:40:32,692 --> 00:40:57,411
+[kişisel bilgi] Oldukça onunla da zaman zaman konuştuğumuzda siber güvenlik tarafının aktif olduğunu biliyorum. Güzel bir alan. Belki bu ders içerisinde birazcık security'yi konuşuyoruz ama dersin geneline baktığımızda çok da ön planda olan bir konu değil aslında.
+
+173
+00:41:00,692 --> 00:41:06,131
+Gökhan Yavuz'un dersini öneririm ama tabii senin de son dönem ne olduğunu düşünürsek almış mıydı?
+
+174
+00:41:06,131 --> 00:41:14,151
+Daha gönül dersini diyorsanız onu almıştım. [kişisel bilgi] Belirlemiştik çalışmayı ama bu iş yorundan ve şeyden.
+
+175
+00:41:15,027 --> 00:41:25,067
+O taraftaki proje aslında aklımda, yapacak adımlar da birazcık belli aşağı yukarı. Sadece bu ders aşaması geçip ona yollaysam ilerleyecek bir şeyler.
+
+176
+00:41:25,387 --> 00:41:29,647
+Peki bu son dönem dediğin ikinci senenin son dönemi ders almak için değil mi?
+
+177
+00:41:30,187 --> 00:41:33,507
+Evet, evet bu dönem. Artık derste sonu geçilmezsek atılacağım.
+
+178
+00:41:34,207 --> 00:41:35,887
+Başka ders var mı? Tek ders mi?
+
+179
+00:41:36,247 --> 00:41:37,847
+Yok, aldım birkaç tane daha var.
+
+180
+00:41:38,420 --> 00:41:48,639
+Seminer var, etik ders var. Bir tane zorunlu dersin vardı geçen dönem. Bir şeyden bir saydım dondurmuştum. Zorunlu ders var. Bir de seçmeli dersin var.
+
+181
+00:41:49,876 --> 00:42:17,676
+Tamam, bol şans. Yani biraz zor bir dönem olacak. Yani seminer ve etik dersini bir şekilde halledeceğini tahmin ediyorum da diğer zorunlu derste aman dikkatliyim. Bu derste aktif üretken olursam çok sınavlarla ilgili başını ağrıyacağını düşünmüyorum. [kişisel bilgi]
+
+182
+00:42:17,876 --> 00:42:24,836
+İnşallah güzel bir dönem olur. Teşekkür ediyorum. Evet, kim başlamak isterse bana söz vereyim.
+
+183
+00:42:28,403 --> 00:42:32,143
+Ben başlayabilirim. Tamam, harika. [öğrenci], ne dinliyor musun?
+
+184
+00:42:32,143 --> 00:42:35,603
+[öğrenci], [öğrenci]. Sizle hocam bayağıdır tanışıyoruz zaten.
+
+185
+00:42:36,043 --> 00:42:36,543
+Aynen öyle.
+
+186
+00:42:36,543 --> 00:42:52,884
+[kişisel bilgi] Yaklaşık bir yıl olacak. Koronayla paralel olarak araştırma görevlisi.
+
+187
+00:42:53,427 --> 00:43:15,547
+[kişisel bilgi]
+
+188
+00:43:16,016 --> 00:43:28,036
+[kişisel bilgi]
+
+189
+00:43:28,715 --> 00:43:36,576
+[kişisel bilgi] Bir de bende şöyle bir şey oluştu hocam.
+
+190
+00:43:37,619 --> 00:44:03,219
+Sürekli robotik, robotik sanki hep aynı şeyin etrafında dönüyor gibi hissediyorum. Aynı zamanda mesela makine öğrenmesi, işte ne bileyim veri madenciliği, derin öğrenme gibi dersler var. Ben bu dersleri de aldım, verdim. Lisanslı da bununla paralel dersler almıştım. Hep böyle aynı şeyi görmekten artık gına geldi yani biraz. Kendim ayrıyeten Corsera'da falan ne bileyim Deep Learning sertifikaları falan da aldım. Ama yani hep aynı mevzular dönüp dolaşılıp anlatılıyor. Bu biraz...
+
+191
+00:44:03,635 --> 00:44:25,795
+İnsana bayıyor yani. [kişisel bilgi] Herkes de bu yapay zeka derslerine bir saldırma var. Yani hocam bunun kontenjanları artsın, şunun kontenjanı artsın falan. Herkes ciddi bir talep gösteriyor ama yani bilmiyorum. Ben bayağı bir şey gördüm diye düşünüyorum ders anlamında. Tabii ki pratikte [öğrenci].
+
+192
+00:44:26,260 --> 00:44:33,820
+Ders alma sebeplerimden bir tanesi o. Hem bu yapay zekanın mobil tarafında hayatımıza hakikaten söylediğiniz gibi müthiş dokunan bir şey.
+
+193
+00:44:34,356 --> 00:44:50,175
+Burada neler oluyor, neler dönüyor onları görmek. Ayrıyeten de bu dönem biraz hoca seçer gibi oldum. İki ders aldım açıkçası. Biri Çetin Kayakoç hocadan, bir de sizden. [kişisel bilgi]
+
+194
+00:44:50,175 --> 00:45:02,356
+Teşekkür ederim. O sebeple almak istedim. Çetin Kayakoç hocayı da çok namını duydum. Kendisi de akademi şeyde backgroundda güçlüymüş, biraz baktım. Dün de onun ilk dersi vardı, o da güzeldi.
+
+195
+00:45:02,356 --> 00:45:24,496
+[kişisel bilgi] Kendimi de robotikçi olarak görmüyorum. [kişisel bilgi] Her alanda bir şeyler ortaya koyabilmeliyim diye düşünüyorum.
+
+196
+00:45:25,300 --> 00:45:34,300
+Şimdi [öğrenci] teşekkür ederim. Aslında en sevdiğim öğrenci profili, nertiden derseniz her türlü şey böyle...
+
+197
+00:45:35,059 --> 00:45:56,699
+Söyleyen, aklımdaki fikri güzel bir şekilde ifade eden, olumlu ya da olumsuz, beğendiği yön ya da beğenmediği yön. Ben genelde buna açığımdır. [kişisel bilgi] Orada dokunduğu noktalar gerçekten önemli. Şu noktalar, çok kısa onlarınla bahsedeyim.
+
+198
+00:46:03,059 --> 00:46:08,659
+[kişisel bilgi]
+
+199
+00:46:09,340 --> 00:46:16,960
+[kişisel bilgi]
+
+200
+00:46:18,380 --> 00:46:27,179
+[kişisel bilgi]
+
+201
+00:46:27,179 --> 00:46:31,059
+Sonra işte tesadüfen orada aldığımız dersten benim deskorum çıkıyor.
+
+202
+00:46:31,059 --> 00:46:57,059
+[kişisel bilgi] Baya böyle hayatıma olumlu etkisi oldu. O yüzden farklı deneyimlere açık olmak ve birazcık kendi konfor alanınızın ya da işte o bahsedilen sıkılmışlığın verdiği o merkezden biraz çıkmak faydalı. Maalesef...
+
+203
+00:46:57,619 --> 00:47:23,539
+[kişisel bilgi] Bu kaçınılmaz bir son. Bu benim dersim için de bu sefer de olacak. Hatta [öğrenci]'e konuşuyoruz. [öğrenci]'le uzun süreye dayanıyor. İlişkiniz iki tane proje yaptık birlikte. [kişisel bilgi]
+
+204
+00:47:25,619 --> 00:47:50,619
+Bak dedim, doğru karar verdim, başka dersler var, emin misin? Sonra hayal kırıklığına uğrama. [kişisel bilgi] O da sağ olsun hayır ben bu konuda hala bir şeyler öğrenebileceğimi düşünüyorum. Baktım konulara, bana bir şeyler katacağımı düşünüyorum dedi. O yüzden yani mümkün olduğunca...
+
+205
+00:47:50,655 --> 00:48:12,576
+Dersin sonunda ya bu dersten de bir şeyler öğrendik dedirtiyorsan ben hedefime ulaşmışım demektir. Benim için önemli olan o nokta o. Ama zaman zaman bazı konular sıkıcı gelecek, bazı konular bildiğiniz konular olacak. Hatta biraz önce [öğrenci]'ın söylediği o üçgenine gireceğiz. Derin öğrenme, makine öğrenmesi, oradaki temel kavramları konuşacağız.
+
+206
+00:48:18,260 --> 00:48:42,000
+Açıkçası çok heyecanlıydım ve acaba ne kadar derinlemesine bilgi vermem gerekiyor diye büyük bir tedirginlik içerisindeyim bundan 5 sene önce. Ama bana yıllar gösterdi ki, yalnız bu ekipten biraz tırsıyorum onu söyleyeyim. Sizi iyi görüyorum. Yüksek lisanstaki gelen arkadaşlarımızın birçok temel bilgiden eksik olduğunu.
+
+207
+00:48:42,483 --> 00:48:46,564
+Gördüm. Ve benim ya biliyorlardır dediğim...
+
+208
+00:48:46,739 --> 00:49:13,839
+Birçok noktada cevabı alamayıp o background'ın oluşmadığı için anlattığım birçok temel nokta oldu. İyi de oldu, kötü olmadı kesinlikle. Ama maalesef farklı üniversitelerden gelindiğinde, farklı domenilerden bazen gelindiğinde bu tür sıkıntılar oluyor. O yüzden bunun dengesini sağlamaya çalışmak da önemli diye düşünüyorum. Çünkü çok biliyormuş gibi giderseniz bir kısmı kaybediyorsunuz. Ya da çok böyle temel şeyleri anlatırsanız sıkıcı oluyor.
+
+209
+00:49:14,739 --> 00:49:32,539
+Yeni bir şey duymayınca insanlar bunalıyor. Bunun bir dengesini sağlamakta fayda var. Ama yapay zeka ve bu aslında arkasından gelen makine öğrenmesi, verim adancılığı ve derin öğrenme kısmında konuşacak olursak ilgiyi, özellikle arkadaşımızın söylediği, yani bir veri bilimi diye bir kavram çıktı biliyorsunuz Data Science.
+
+210
+00:49:32,539 --> 00:49:42,539
+Yani Amerikalılar şeyi çok sever, yeni kavramlar çıkarmıyor. Aslında bayağı bildiğimiz biz bilgisayarlar her zaman veriyle çalışıyoruz. Başka bir şey de çalışılmadı ama böyle bir...
+
+211
+00:49:42,739 --> 00:50:09,939
+Biraz daha popüler oldu ki sensör network'lerin IoT'ye dönme hikayesi de çok benzer. Baya bildiğiniz aslında sensör network hikayesi var internet of teams'te ama öyle bir anlatıldı ki yepyeni bir konsept gelmiş. Hayır aslında baya sensör var, yine prosesör var, yine bellek var, yine veri işliyoruz. Ama tabii farklılık şu sensör network biraz daha dış ortamlar için.
+
+212
+00:50:10,420 --> 00:50:20,739
+Düşünülmüş bir yapı. Biraz daha özel donanımların tasarlandığı bir yapı. IoT'de ise eşyaları artık.
+
+213
+00:50:21,364 --> 00:50:49,364
+Akıllı hale getirmek için onları ona göre dizayn ediyoruz. İşte bu akıllı ev olabilir, çamaşır makinesi, bulaşık makinesi. Onların içerisine bir özel bir elektronik tasarım yapıyoruz. Ama sensör network'te bayağı bildiğiniz bir tane nod var, düğün var. Bunu yaratıyorsunuz ve bu zaten daha çok askeri alanda ve çevresel uygulamalarda uygulamalarda hala devam etmekle birlikte çok da şeyi olan, aslında çevre kirliliği olan, bir çoğunun zarar gördüğü...
+
+214
+00:50:49,364 --> 00:50:51,824
+Etrafa dağıtılma sırasında bir hikaye.
+
+215
+00:50:52,263 --> 00:50:55,563
+İnternet of Things çok daha anlamlı hale geldi.
+
+216
+00:50:56,023 --> 00:50:58,703
+Çünkü zaten eşyayı kullanıyorsunuz.
+
+217
+00:50:59,123 --> 00:51:00,203
+İçine elektronik sokalım.
+
+218
+00:51:01,139 --> 00:51:28,879
+İş. Harika, süper bir noktaya gelsin. Ama bunun da tabii çok daha farklı noktaları var. O yüzden onları da dersin yer alan kısımlarında konuşacağız. Çok teşekkür ediyorum [öğrenci] katkıların için. Şimdi son olarak [öğrenci]'in sözü bırakacağım. [öğrenci]'le konuşacağız. Sonra bir ara vereceğiz. Bu arada dersin gidişatında da şöyle bir planım var. Yaklaşık 40 dakikada bir ara vermeyi planlıyorum. Şu anda belki bunu açtık ama hani bölmeyelim diye bu sesimi.
+
+219
+00:51:29,139 --> 00:51:56,619
+Baya çok dokunmadım. İşte 40 dakikada bir 10 dakika verip idişata göre dersi belli bir saatte bitireceğiz. O günkü konunun yoğunluğuna bağlı olarak. Çünkü online ortamda fokuslanmak zaman zaman zor oluyor. Hani 50 dakikayı, bir saati bulmak çok istemiyorum. Bu sene böyle bir stratejiye geçtim. Geçtiğimiz zaman pandemide bayağı kautik bir ders anlatım süreci yaşadıktan sonra bizim için çok büyük hızlı.
+
+220
+00:51:57,139 --> 00:52:04,219
+Bu dönem acaba nasıl olacak diye merak ediyorum. Çünkü şu an o kadar mutluyum ki.
+
+221
+00:52:05,059 --> 00:52:09,039
+Sıratlarınızı görebiliyor olmak bana verebileceğiniz en büyük katkı şu anda.
+
+222
+00:52:09,739 --> 00:52:13,439
+Çünkü boş bir ekrardan sürekli anlatmak kadar kabus bir şey yok.
+
+223
+00:52:14,379 --> 00:52:19,719
+Ama biraz önce [öğrenci]'in çok önemli bir tespiti vardı.
+
+224
+00:52:19,719 --> 00:52:25,139
+Bence bu pandemi döneminin en büyük kazancı yüksek...
+
+225
+00:52:25,139 --> 00:52:36,259
+Bir lisans doktora yapan arkadaşların tezli tessiz uzaktan şirketinden ya da neredeyse katılıp bir şekilde ders işini çözebiliyor olması Davut Paşa'ya git gel yok.
+
+226
+00:52:38,324 --> 00:53:02,503
+Geç kaldım, işte aman o gün proje çıktı vesaire sıkıntıları yok. Lisans üstünde çok bence fena değil. Yani olur, gider. Hatta belki bazı programlar buna dönecek. Göreceğiz bunu. Tabii ki yüz yüzyenin eksikliklerini hissediyoruz ama sınıf 30 kişi olmadığı sürece 10 kişiler, 15 kişiler tönere edilebilir bir nokta diye düşünüyorum. Lafı uzatmıyorum.
+
+227
+00:53:04,244 --> 00:53:29,264
+Hocam selamlar tekrardan. Basitçe ben de özet geçeyim yine. [kişisel bilgi] Geçtiğimiz ay uzman yazılım mühendisi seviyesine yükseldim. Mobil teknolojiler üzerine geliştirme yapıyorum orada. [kişisel bilgi]
+
+228
+00:53:32,244 --> 00:53:32,784
+Başlayın.
+
+229
+00:53:33,204 --> 00:54:01,204
+Sizinle daha önceden yaptığımız projeler de zaten mobil temellerine dayanıyordu. Benzer şekilde yine server, back-end, client mimarisine bu projelerle birlikte fazlaca aşina almıştım. İki senedir de bunu meslek olarak sürdürüyorum. [kişisel bilgi] Bu dersi seçmem size zaten sürpriz olmayacaktır. Hem işin mobil tarafında...
+
+230
+00:54:01,204 --> 00:54:13,704
+[kişisel bilgi]
+
+231
+00:54:14,420 --> 00:54:41,679
+Aynı zamanda Saca Yağan'ın diğer tarafında da Amor Çocam olunca bu dersi seçmem benim %99 gibi bir orana yükselmiş oldu. Kendisinde söylediği gibi aslında tamamen ben isteyerek yeni bir şeyler hala öğrenebileceğimi düşünerek bu dersi seçtim. O noktada bir şey durumu oldu. Uzun süredir beraberiz. Bak seçmek zorunda değilsin bu dersi şeklinde bir konuşma olmuştu ama zaten kesinlikle önemli bir durum söz tanısı değil. Bunun dışında iki projem olmuştu.
+
+232
+00:54:42,420 --> 00:54:44,380
+Ne olmuştu hocam? Detaylarından bahsedeyim mi?
+
+233
+00:54:44,759 --> 00:54:48,599
+Kısaca ne olduklarını arkadaşların bilgilenmesi açısından söylemen faydalı olabilir.
+
+234
+00:54:49,139 --> 00:54:59,659
+Tamamdır. Bir tanesi bulut tabanlı Google Cloud yapısını kullanarak görsel içeriklerini tarayan bir mobil uygulamaydı. Android platformunda geliştirmiştim bunu.
+
+235
+00:55:00,659 --> 00:55:09,960
+[kişisel bilgi]
+
+236
+00:55:10,420 --> 00:55:28,460
+Diğer projemde bir park yeri adında park yeri rezervasyonu sağlayan, bunu web, mobil üzerinden hem işveren hem de hizmet alan tarafından kullanılabilir hale getirecek bir projeydi. Burada dediğim gibi biraz daha işin backend kısmı ve client kısmı işin içine girmiş oldu.
+
+237
+00:55:32,884 --> 00:56:00,784
+İlk projedeki yapıdan isterseniz birazcık bahsedeyim. Fazlaca derine inerek sadece cloud tabanlı bir taramada kalmayıp kullanıcının çok rahat şekilde aradığı fotoğraflara erişebileceği bir yapı kurgulanmış olduk. O projeyle birlikte aslında ben mobilin bayağı bir dibine inmiş oldum. Yani iç dünyasına atıldığımda neredeyse yeni bir şey görmediğimi bile söyleyebilirim. %90'ın neredeyse deneyimledikten sonra.
+
+238
+00:56:00,884 --> 00:56:08,824
+İş dünyasına atılmış gibi hissettim kendimi. Böyle bir avantaj olmuştu. Genel olarak bu şekilde hocam. Kaçıda atladığım bir nokta var mı?
+
+239
+00:56:08,824 --> 00:56:26,664
+Çok zannetmiyorum. Teşekkür ediyorum [öğrenci]. Şimdi tabii [öğrenci] ve [öğrenci], ben [öğrenci]'le [öğrenci], bizim araştırma görevimiz [öğrenci]'le de proje yaptım. Ama onlar bir sıfır önde başlamıyorlar. Her konuda eşitsiniz merak etmeyin.
+
+240
+00:56:28,884 --> 00:56:56,884
+Bağımızın olması bir şey değiştirmeyecek. Biliyorlar zaten benim bu konuda işle muhabbeti çok ayırdığımı. Ama yani şunu çok seviyorum. Böyle iş konusunda iyi işler yapıp ama aynı zamanda onun muhabbetini de yapmak ki güvenle de aslında öyle bir şansımız olmuştu. Güvenle iyi bir dönem geçirdikten sonra paperda yayınlayınca bambaşka bir dünyanın başka bir köşesine giderken çok değişik paylaşımlarımız oldu.
+
+241
+00:56:56,884 --> 00:57:12,124
+Çok keyifli günlerdi. O yüzden umarım pandeminin geçtiği bir dönemde bakarsınız. Sizle de bir yayın yaparız ve dünyanın bir noktasında böyle bir deneyimimiz olur. Bunun çok farklı katkıları var hakikaten.
+
+242
+00:57:13,907 --> 00:57:41,887
+[kişisel bilgi]
+
+243
+00:57:41,907 --> 00:57:54,527
+[kişisel bilgi]
+
+244
+00:57:54,527 --> 00:58:07,987
+[kişisel bilgi] Bu özellikle [öğrenci]'in tarafı için aslında [öğrenci]'yle yapacağı konuyu bilmiyorum. Belki konuşmuşuzdur [öğrenci]'yle ama çok büyük fırsat.
+
+245
+00:58:09,907 --> 00:58:33,907
+[kişisel bilgi] Geri dönüşü çok güzel oluyor. [kişisel bilgi] Yani geçmişte security ile ilgili öyle bir bağlantım var. Çok değişik bir deneyimli ve hatta...
+
+246
+00:58:34,420 --> 00:58:45,780
+Bu ismini unutuyorum ya her seferinde. Çok meşhur bir şifreleme altyapısı var. Çok eskiden beri kullanılan. Neydi ismi?
+
+247
+00:58:47,731 --> 00:59:03,152
+Network seviyesinde bu işi yapıyor. Hatırlayacağım. Hatta ders arasına bakarım. Onunla kıyasladığımızda daha iyi performans gösteren bir şey üretmiştik. Burada özellikle sektörde çalışan arkadaşlarımız için yüksek lisans özelinde şunu söyleyebilirim.
+
+248
+00:59:09,199 --> 00:59:25,319
+Çıkta üretebilirsiniz. İnanın gidişat çok değişiyor. Ve çalıştığınız alanda da bir proje aldığınız için açıkçası daha az zorlanıyorsunuz. Bambaşka bir alana girmek biraz risk yaratıyor. Ama bir de şu tarafı var. Ben bu konuda doydum.
+
+249
+00:59:25,648 --> 00:59:40,048
+Ama şurayı da öğrenmek istiyorum dediğiniz ve ilgi duyduğunuz bir alan ve oraya da geçme potansiyeliniz varsa o alanda bir şeyler araştırın. O yüzden Nazizane'ye ilk adımdaki arkadaşlar için tavsiyem bu.
+
+250
+00:59:53,648 --> 00:59:58,748
+Böyle bir kapı açılma ihtimali olabilir diye düşünüyorum.
+
+251
+01:00:00,000 --> 01:00:25,879
+Peki, mutlu olacağın, ileri dönük senin daha az problem yaşayacağın bir doktora konusu, test konusu seçmeni arzu ederim. Bu konuda da hep zaten [öğrenci]'in yönlendirmelerinden de anlayacağınız gibi, öğrencinin keyifle çalışması önemli. Hem hoca uyumu tabii doktora da biraz daha artıyor. Yani yüksek lisans da o kadar kritik değil de doktora da biraz kritik arkadaşlar. Buna da dikkat etmek lazım. Ama doktora için daha uzun bakıp,
+
+252
+01:00:27,923 --> 01:00:45,923
+Bitirdiğiniz zaman o alandaki bilgi birikiminizin sizi hala bir 5-10 sene taşıyabilecek olması önemli. Robot aslında alanı çok güzel bir alan. Bu açıdan baktığınızda uzun bir gelecek vaat ediyor. Ama tabii senin de aktardığın gibi...
+
+253
+01:00:46,079 --> 01:01:13,219
+Bazı alanlarda çok uzun süre faaliyet gösterince belki bir kanıtlık oluyor, bir topu oyunu açmak gerekiyor. Bu anlamda siz de kendi çalışmalarınızın dışında bir yan alan cepte bulunsun derim. Her zaman bunu unutmayın. Özel sektör içinde geçerli. Çünkü size sıkıştığınız anda bir wildcard gibi o konu cepten çıkıyor ve bir anda bir transfer yapıyorsunuz. Yeni bir sektöre ya da yeni bir birime geçiyorsunuz.
+
+254
+01:01:14,079 --> 01:01:22,319
+İlk sefer mühendisliğinin en zor kısmı zaten bu. Günceli takip etmezseniz belli bir süre sıradan oluyorsunuz.
+
+255
+01:01:22,996 --> 01:01:49,771
+Ki burada bazı konular var şanslı olunan, siber güvenlik de bunlardan bir tanesi. Onun şu an öyle bir sıkıntısı yok. Önümüzdeki 10 sene cepte zaten. Hatta orada çözülecek birçok konu var. Robot tarafında da birçok şey yapılmasına rağmen başka konularla birleştirilerek orada da çok uzun bir gelecek gözüküyor. Alt problemleri var. Ama mobil programlama konusuna gelirsek...
+
+256
+01:01:49,811 --> 01:02:06,811
+İşte kendim anlattığım konuda şunu söylemek istiyorum. Ben bu işe girdiğimde 2010 yılıydı. 2007'de daha iOS ve Google yeni işletim sistemlerini enağus etmişlerdi ve ilk defa akıllı telefon kavramı daha çok konuştum. Ve o zaman inanılmaz her şey, her uygulama...
+
+257
+01:02:07,731 --> 01:02:35,731
+Patpatıyordu olayı. Yani aynen 1990'ların sonundaki HTML gibi. Ne yapsanız böyle 1000 dolar, 2000 dolar, 3000 dolar acayip bir dönemdi o dönem. Biz yakalayamadık. Sonra PHP dönemi geldi. Dinamik web dönemi. Bu arada ben 2002 mezunuyum lisanstan. Yani aslında o HTML'i yakalayabilirdim ama o zaman hep böyle işte lisans bitsin. Aman bir yarın önce yolumuza bakalım algısı vardı. Ama çok arkadaşımın web sayfası...
+
+258
+01:02:35,731 --> 01:03:03,731
+Yaparak sadece HTML ile çok iyi kazançlar sağladığını biliyorum. Sonra PHP geldi. PHP ile beraber başka işte dinamik web programcılığı geldi ve 10 sene orada da kapalı gişe oynandı ve orada da iyi paralar kazanıldı. Yani böyle firmaya bir web sayfası yapıyorsunuz. Aman işte arkaya bir güzel bir mayeskü yerleştiriyorsunuz. Adamlar messed. O zaman paralar verildi. O devirde 2010'dan sonra trend yavaş yavaş azaldı. Şu an halen de...
+
+259
+01:03:03,731 --> 01:03:29,211
+Ama tabii ki etkisi biraz azaldı. 2010'larda da mobil başladı. Ne yapsanız gidiyor. Yani böyle herkes mobilci olmak istiyor. Tabii ben bunu biraz görerek mobille ilgili bir ders olmadığını da bildiğim için bu işe bir şekilde girdim. Ama dersin açılması falan filan 2014'leri buldum. O sırada baya güzel projeler yaptık. Hatta bunu hep anlatırım ki dersin içerisinde bir konu geçecek.
+
+260
+01:03:31,155 --> 01:03:38,295
+Ve burada bir ara vereyim çünkü çok abarttık olayı. Bir 10 dakika ara verelim, az sonra diyelim. 10 dakika sonra görüşürüz arkadaşlar.
+
+261
+01:03:39,635 --> 01:03:43,335
+Hocam ikinci yarıya ben kamera kapalı başlasam sıkıntı olur mu?
+
+262
+01:03:43,795 --> 01:03:46,496
+Yok, olmaz. Ara ara bunlara müsaade ederiz.
+
+263
+01:03:46,496 --> 01:03:50,016
+Tamam hocam. Görüşürüz arkadaşlar.
+
+264
+01:13:08,948 --> 01:13:33,408
+Evet arkadaşlar, 10 dakika aramızı tamamladık. Yavaş yavaş kaldığımız noktadan devam edelim. En son enteresan bir yerde bıraktım. Bu mobil işlerine girdim dedim. O zamanlar bu işler çok popülerdi dedik.
+
+265
+01:13:33,971 --> 01:13:59,051
+Ve benim 2010'lu yılların başında aklıma bir fikir geldi. Bu fikir de BİTAKSİ idi arkadaşlar. Bunu daha önce de anlatmışımdır. [öğrenci] de [öğrenci]. Ve bu BİTAKSİ fikrini o dönem uygulayacak bir öğrencim yoktu. Sonra bir sene sonra iki öğrencim geldi. İkisinin ismi de [öğrenci]'tı.
+
+266
+01:13:59,507 --> 01:14:25,288
+Ve ikisi de bana aynı bu projeyi tarif ettiler. Dedim, vay canına bu kadar mı denk gelir? Daha hala ortada bir taksi yok. O zaman da pozisyon gereği proje yürütücüsü olarak bitirme projelerinde gözükemiyordum. Gökhan Hoca'nın danışmanlığında, benim de co-advisorlarında projeyi yaptık. IBM'in Yazılım Akademisi yarışmasına katıldık.
+
+267
+01:14:26,547 --> 01:14:49,907
+100 projeler arasında ilk ona girdik ama bir derece alamadık. Tabii bunun çeşitli sebepleri var. Bazı son dakika ufak tefek problemler, sunumla ilgili maalesef pazarlama yönümüzün o dönemler bu kadar gelişmemiş olmasından dolayı jüriyi etkileyemeyişimiz falan filan.
+
+268
+01:14:52,020 --> 01:15:15,680
+Tabi bu hikayeyi neden anlattım? Onun hemen arkasından zaten bir sene sonra falan bir taksi çıktı. Fikir olarak inanılmaz güzel bir fikirdi. Çünkü zaten bu dersin de kor noktasındaki örneklerden bir tanesi. Siz bir yerdesiniz, yağmur yağıyor, çok zor durumdasınız.
+
+269
+01:15:16,144 --> 01:15:36,504
+Arka tarafta, binanın arkasında ya da sizin görmediğiniz noktada bir taksi var ama çok yakınınızda. Çağıramıyorsunuz, önünüzden geçiyor böyle taksiler, çıldırıyorsunuz, gelmiyor, yağmur, ıslanıyorsunuz vs. Ve bu işte crowdsourcing kavramının hayatımıza girmesini sağlayan en önemli işlerden bir tanesi oldu.
+
+270
+01:15:43,444 --> 01:16:09,724
+Aslında hayatımızı birçok anlamda kolaylaştırabileceğimizi gördük. Fakat o dönem bu tarz projeler çok fazla yoktu. Yani daha yeni yeni başlıyordu. Ve özellikle son 3-4 seneye kadar bunlar böyle arka arkaya startup fikirleri patladı. Ve inanılmaz güzel fikirler çıktı ve uygulandı. Büyük firmalar özelinde Yandex.
+
+271
+01:16:10,159 --> 01:16:31,880
+Google Maps ile birlikte hayatımızı değiştiren o trafiği tahmin etme işinin gene crowdsourcing yaklaşımıyla bize hediye etti diyelim. Çünkü ilk bu işler başladığında siz açıkçası en iyi ihtimalle köprüden geçmiş biri varsa yarım saat önce ona soruyordunuz.
+
+272
+01:16:31,880 --> 01:16:38,159
+Ya köprü nasıl trafik çıkayım mı diye. Sonra İBB renkli bir harita sundu önümüze.
+
+273
+01:16:38,159 --> 01:16:53,039
+Siz bakıyordunuz kırmızı, yeşil, iyi tamam, turuncu. Oradan artık herhalde 40 dakikaya gideriz falan bir hesaplar yapıyordunuz. Sonra içine rengi bambaşka bir noktaya geldi. Artık bayağı bildiğiniz 47 dakika.
+
+274
+01:16:53,555 --> 01:17:06,995
+Ve inanılmaz yüzdeyle doğru tahminler. Kimi Google Maps'ci, kimi Yandex'ci sorarsanız, kimi İBB navigasyoncu falan, kimi bunları kombinliyor iyice çıldırmış durumda.
+
+275
+01:17:07,055 --> 01:17:18,475
+Tabii öyle teknolojik arkadaşlarımız da var aramızda. Yani hakikaten böyle her türlü kombinasyonu inceleyip karar veren.
+
+276
+01:17:18,475 --> 01:17:21,355
+Neyse sonuçta bu hava durumunda da böyledir çünkü.
+
+277
+01:17:21,555 --> 01:17:36,095
+Sonuçta biz şu anda bildiğiniz kader parametresini dışarıda bırakıyorum tabii ki. Trafikteki kaza olma olasılıkları gibi ki onların da artık bu işin içine girdiğini biliyoruz.
+
+278
+01:17:36,095 --> 01:17:49,415
+Çünkü bir lokasyonda belli sayıda kaza olmuşsa risk parametresi olarak onu denkleme koyduğunuzda hani 47 dakikaya işte 52 dakika diyorsunuz vesaire onları da hesaba katıyorsunuz.
+
+279
+01:17:49,555 --> 01:18:10,555
+Bazen işler o kadar kötü gidiyor ki tem de bir tır devrediyor. Geçmiş olsun sizin 47 dakika oldu, 3 saat 47 dakika gibi başka problemler çıkıyor. Şimdi burada şunu söylemek için bu konulara girmiştim. Mobil programlama, mobil uygulamalar hala popülerliğini korumakla birlikte...
+
+280
+01:18:10,996 --> 01:18:27,855
+Çünkü mobil taraftaki ARGE çalışmaları belli oranda, uygulamayla ilgili olarak özellikle biraz hız kaybetti. Yani bundan sonra 2020 yılında ben mobilde işte şöyle şeyler yapacağım, böyle şeyler yapacağım demek çok iddialı.
+
+281
+01:18:28,192 --> 01:18:50,072
+Hala güzel fikirler çıkabilir. Mobil'in işletim sistemi seviyesinde, malware anlamında, security anlamında çok güzel araştırma konuları var. Ama programlama konsepti olarak buradan bir kariyer planlamak kendinize. Evet, stabil bir kariyer planlayabilirsiniz, iyi bir kazanç elde edebilirsiniz.
+
+282
+01:18:53,684 --> 01:19:21,663
+Burada [öğrenci]'in bahsettiği gibi daha önceki bilgi birikimlerinin [kişisel bilgi] ki işte bu tür bazı firmalar hala buradaki araştırma taraflarını daha çok yapay zekayı kullanarak işte parmak izi tanıma, face ID, telefonun işte yüzlüdeki belli açısıyla açılması, işte saniye, iki saniye sürmemesi, anında açılması, açılmadığında çünkü sinirleniyoruz artık internete bağlanamadığımızda bir üç dakika kesildiğinde.
+
+283
+01:19:21,684 --> 01:19:38,984
+Sinirleniyoruz mesela. Acayip bir başka hikaye var. O taraflarda hala ekmek var ama uygulama geliştirme anlamında belli bir doyuma doğru orada da gittiğimizi vurgulamak isterim. Kendi konum olmasına rağmen. Ama başka alanlarını yakalamada peşindeyim, mobilin.
+
+284
+01:19:39,315 --> 01:20:05,055
+Merve Detection'da Sekibit anlamında burası önemli diye düşünüyorum. Gelelim biraz önce bıraktığımız noktaya. Dedik ki burada Yandex hayatımıza girdi dedik ve bu noktada tahmin yapabiliyoruz dedik ama bunun eksiği nedir arkadaşlar şu anda? Yani Yandex ve Google'dan daha neyi talep ediyoruz?
+
+285
+01:20:06,100 --> 01:20:13,200
+Her şeyi vermişler. 47 dakika diyor adam. Daha ne yapsın yani? Ama hala talebimiz var. Ne istiyoruz? Sorayım size.
+
+286
+01:20:17,363 --> 01:20:23,943
+Benim bir talebim yok ama bazı farklı ihtiyaçlar vardır. Ben orada Google Maps'iyim. Yandeksten bir şey istemem de.
+
+287
+01:20:24,443 --> 01:20:31,443
+Tamam, peki. Evet, [öğrenci] ve [öğrenci]. Kameralarınız kapalı ama mikrofonlarınız açık olabilir.
+
+288
+01:20:32,263 --> 01:20:33,903
+Atma gelmedi şu an benim de yükseğe.
+
+289
+01:20:33,903 --> 01:20:42,484
+Yani hiç böyle biraz daha tahminle ilgili değişik bir şeyler söylesek güzel olmaz mı?
+
+290
+01:20:44,180 --> 01:20:46,539
+Şey falan mı hocam ne bileyim işte şu yol...
+
+291
+01:20:46,771 --> 01:20:49,851
+Sallıyorum yani buzlandı falan gibi bir şeyler mi yoksa?
+
+292
+01:20:50,192 --> 01:20:53,471
+Olur, ben her türlü fikri açayım. Çünkü hakikaten talep edecek.
+
+293
+01:20:53,471 --> 01:20:56,891
+Bir şey görmüştüm hocam. Bir Almanya'da fuara gitmiştik ben o zaman çalışırken.
+
+294
+01:20:57,692 --> 01:21:02,931
+Elemanlar bu arabaların içerisinde. Aslında arabalarda müthiş veri topluyorlar. İçerisinde bir bilgisayar var.
+
+295
+01:21:03,771 --> 01:21:09,112
+Sırf oradaki bilgiden, yani dışarıda hiçbir kamera vesaire hiçbir şey yok. İsveçli bir firmaydı.
+
+296
+01:21:10,072 --> 01:21:14,771
+Yolun buzlanma, kayma oranlarını vesaire topluyorlar. Onların hepsine bir merkeze aktarıyorlar.
+
+297
+01:21:14,771 --> 01:21:24,112
+Oradan da aynı bizim harita gibi, trafik haritası gibi ama işte buzlanma, işte buraya çakıl döküldün mü dökülmedin falan bilgilerini çıkartıyorlardı. O aklıma geldi.
+
+298
+01:21:24,711 --> 01:21:28,131
+Çok güzel. Aradığımız örneklerden bir tanesi bu.
+
+299
+01:21:33,711 --> 01:21:37,332
+Telefonum içerideymiş burada bilgisayardan çaldı. Kusura bakmayın lütfen.
+
+300
+01:21:39,332 --> 01:21:39,931
+Şimdi...
+
+301
+01:21:41,072 --> 01:21:47,712
+[öğrenci]'e söz vermeden küçük bir ekleme yapacağım [öğrenci]'ın değindiği konuya.
+
+302
+01:21:49,203 --> 01:22:08,203
+Aynen [öğrenci]'ın söylediği gibi arabalar üzerinde artık tabii bu işler koşacak bu arada. Yani böyle yanımızda telefon var. Şu anda her şey telefon üzerinden aslında akıyor merkeze. Ama şimdi yeni bir IoT device olarak bayağı arabalar işin içine giriyor. Hatta Mercedes ve BMW yeni şeyi açıkladılar.
+
+303
+01:22:17,203 --> 01:22:18,843
+Araç içerisine gömecekler.
+
+304
+01:22:19,220 --> 01:22:45,699
+Ama böylece bildiğiniz anahtar kullanmadan, hatta işin daha da aslında tehlikeli boyutu diyeyim, bu kodu başka birine de paylaşabileceksiniz. Yani siz orada yokken arabayı başka birisine almasın istiyorsanız bayağı kodu gönderip, işte tabii ki oradaki detayı şu an için konuşmuyoruz ama bu hayatımıza girmeye başlıyor. Bunun getirdiği artı ve eksiler var.
+
+305
+01:22:47,220 --> 01:22:53,220
+Bu noktada bu buzlanma olayı arabalardan toplanan verilerle şu anda...
+
+306
+01:22:53,652 --> 01:23:05,831
+Özellikle çukur tespiti, tümsek tespiti gibi yollardaki risklerin tespit edilmesi ve bunların belediyeye bildirilmesi için uygulanan harika bir yöntem.
+
+307
+01:23:05,831 --> 01:23:19,831
+Nasıl şu an hızları crowdsourcing mantığıyla biz alıp işliyorsak, aynı şey telefonlarımız üzerinden ya da araçlarımız üzerinden bu verileri toplayarak aslında bir araç gezdirmeden...
+
+308
+01:23:20,564 --> 01:23:22,984
+İstanbul üzerinde ya da bir in diyelim.
+
+309
+01:23:23,507 --> 01:23:40,907
+Yolların kalitesiyle ilgili harika bir rapor çıkartabilirsiniz insanlardan alacağınız. Özellikle araç içerisinde gömülü sensör olursa daha iyi olur ama çünkü telefon işin içine girdiği zaman başka filtreleri de devreye sokmak zorundasınız. Telefonların sensörleri birazcık hassasiyet anlamında sıkıntılı.
+
+310
+01:23:40,907 --> 01:23:49,907
+Ama bununla ilgili bu tür farklı haritalar aynı hız haritasında olduğu gibi çıkarma ihtimaliniz var.
+
+311
+01:23:51,507 --> 01:24:08,707
+İleride muhtemelen her iki firma içinde bu tür daha özel haritaların sunulduğu zamanlar gelecek. Risk haritaları diye biz bununla da ilgili bir ufak proje yapmıştık zamanında ama çok fazla üzerine gitme şansımız olmadı. Evet, [öğrenci] sendeyim.
+
+312
+01:24:09,555 --> 01:24:32,315
+Hocam önceden bize verdiği önerilerle mutlu oluyorduk Google'ın, Yandex'in. Şimdi aslında hep şey denir, balık tutmayı öğretince mutlu oluyorduk ama artık balığı da onun tutmasını istiyoruz. Şöyle ki araçlar artık otonom sürüş seviyesine geçmesi herhalde bir sonraki aşamadır diye düşünüyorum. Artık kırmızı, yeşili görmek bizi mutlu etmeyecektir de beni en hızlı yerden götür demeyi bekleyeceğiz gibi hissediyorum.
+
+313
+01:24:32,315 --> 01:24:37,535
+Evet, yani orada artık bir de arka planda 37 dakika, 38 dakika işte.
+
+314
+01:24:37,555 --> 01:25:00,375
+42 dakika, 3 tane seçenek çıkıyor. Biz onu acaba hangisi diyoruz vs. İleride olacak nokta bu. Ama ben derslerde bunu son birkaç senedir söylüyorum. Biraz da iddialı oluyor ama muhtemelen 10 sene sonra falan başımı ağrıyacak. O kadar da işlerin hızlı gelişeceğini ve otonom araçların hayatımıza hızlı gireceğini çok düşünmüyorum.
+
+315
+01:25:00,756 --> 01:25:16,935
+Ama bu dersin içerisinde otonom araçları da konuşuyor olacağız. Çok önemli bence. Gidişat o yönde. Hatta o yöndeki bir kariyer planlaması mesela çok güzel olabilir.
+
+316
+01:25:18,068 --> 01:25:38,268
+Orada ekmek var gerçekten. Araştırmaya çok müsait. Çok tehlikeli bir alan tabii. Yani bir sürü başka sıkıntıları var. Hem hukuki anlamda hem aldığınız kararların bedeli ağır olabilir. Bunun kaza örneklerini duyuyoruz bu araçlardaki. Uzun bir süreç gerekiyor ama indaki hayatımıza girecek. O kesin gözüküyor.
+
+317
+01:25:38,268 --> 01:25:45,608
+Peki ama benim hala sizden talebim var. İsteyim.
+
+318
+01:25:46,068 --> 01:25:49,708
+Bu cinden bir şeyler, Alaaddin'in lambasından çıkan cinden bir şey isteyin.
+
+319
+01:25:51,768 --> 01:25:55,948
+Hava durumunu düşünerek de bir fikir gelebilir aklınıza.
+
+320
+01:25:55,948 --> 01:26:01,948
+Yani hava durumu tahmini sitelerini göz önünde bulundurarak Google ve Yandex'den ne istersiniz?
+
+321
+01:26:03,748 --> 01:26:05,608
+Yani arabalar özelinde mi olması lazım hocam?
+
+322
+01:26:07,528 --> 01:26:09,048
+Yolculuk üstüne mi?
+
+323
+01:26:10,148 --> 01:26:12,168
+Bu bir yerden bir yere gitme üstüne.
+
+324
+01:26:13,779 --> 01:26:20,539
+Yani hava durumunu deyince ve trafik deyince aklıma direkt dolu geliyor. Çünkü bugünden mesela uyarısı falan yapıldı da. O tarz bir şey mi?
+
+325
+01:26:20,980 --> 01:26:25,899
+Zaten biraz sonra o konuya da geleceğim. O da enteresan. O tarz bir şey ama ben...
+
+326
+01:26:26,003 --> 01:26:43,024
+Konuyu uzatmadan söyleyeyim sizi, bazı yormayayım. Yani ben kendi adıma önemsiyorum ama sizin için ne kadar önemli onu bilmiyorum ama bunu bir konferansta IBM Genel Müdürlüğü'nün ağzından duymuştum. 3-4 sene önce. Transist konferansıydı.
+
+327
+01:26:43,796 --> 01:26:55,896
+Artık elimizde yeterli donanım var. Artık elimizde derin öğrenme gibi veriyi, çok büyük veriyi verimli bir şekilde işleyecek yazılım çözümleri var.
+
+328
+01:26:57,115 --> 01:27:05,796
+Ve biz artık yarın havalimanına kaç dakikada gideceğimizi sorup planlamamızı ona göre yapabiliriz.
+
+329
+01:27:06,456 --> 01:27:10,596
+Ama şu anda ne yapabiliyoruz? En fazla 1-2 saate kadar.
+
+330
+01:27:11,060 --> 01:27:32,119
+Bir saate kadar durumu öngörebiliyoruz. Artı Google bize ileri dönük tahmin söyleyebiliyor. Fakat Google'ın yaptığı tahmin şöyle. Yani ben yarın sabahleyip işte buradan havalimanına ne kadar süre giderim. Google diyor ki ya yarım saate gidersin ya da bir saate gidersin.
+
+331
+01:27:32,435 --> 01:27:47,076
+Şimdi arası 47 dakikaya alışmış biri olarak arası çok geniş bir tahmin. Hatta Google bunu yaparken yarın içinde aynı tahmin yapıyor.
+
+332
+01:27:47,796 --> 01:28:00,976
+Bir sonraki gün için de aynı tahmin yapıyor ve belli saatler için de aynı tahmin yapıyor. Yani burada daha hala spesifikleşmiş ve çözünürlüğü yüksek bir tahmin henüz yapılamıyor.
+
+333
+01:28:01,176 --> 01:28:12,976
+Hava durumunu örnek vermemin sebebi yıllar içerisinde hava durumunu eskiden 2-3 günü bile zor tahmin ederken şu anda bildiğiniz bayağı böyle bir aya kadar çok iddialı ama...
+
+334
+01:28:13,524 --> 01:28:28,524
+En azından 15 gün çok ciddi derecede yüksek tahmin oranıyla tahmin yapıyorlar. En kötü patternlar shift ediyor. İki gün önceye geliyor, bir gün sonraya geliyor ya da şiddeti değişiyor vs. Tabii ki bugünkü gibi...
+
+335
+01:28:28,819 --> 01:28:47,059
+Dolu yağacak deyip ortada hiçbir aksiyon olmadığı günler de oluyor. Ki özellikle mevsim geçişlerinde en çok yaşanan şey. Yaz ve kışta daha iyi tahmin oluyor. Bunlar şu anda aslında en büyük challenge'lar çözülmeye çalıştılar.
+
+336
+01:28:47,872 --> 01:29:08,512
+Tahmin, öneri sistemlerinin başarı oranını yükseltmek üzerine kurulu birçok mekanizma. Bunlar aslında karar destek sistemleri. Neden öyle derseniz, evet hava durumunu mükemmel tahmin ediyor. Weathercom'a bakıyorsun, AkuVedra'a bakıyorsun, meteorolojiye bakıyorsun. Hepsi farklı bir şey söyleyebiliyor.
+
+337
+01:29:09,332 --> 01:29:22,712
+Sonra ne yapıyorsun? Sen bir yorum yapıyorsun ya da meteorolojiyi çok iyi bilen biri bunları kombinliyor, hala insan aklını işin içine katarak sana diyor ki ya bence diyor bu dolu olayını abarttılar diyor, böyle bir şey olmayacak diyor.
+
+338
+01:29:22,712 --> 01:29:36,572
+Ya da benim gördüğüm işte tahmin yorumladığımda dolunun sabah değil de akşam saatlerine kaydığını düşünüyorum ben diyor gibi aslında hala insanın bayağı işin içinde olduğu kararlar veriliyor.
+
+339
+01:29:37,332 --> 01:29:53,932
+Karar destek sistemleri olarak hayatımızda var. Ben o yüzden robotların, yapay zekanın belirli işleri yapma konusunda insanın hayatını çok kolaylaştıracağını ama kesin karar verici konumda olacağını çok yakın zamanda göreceğimizi zannetmiyorum.
+
+340
+01:29:53,932 --> 01:30:00,000
+Yani biz her zaman başkan olmaya devam edeceğiz. İkinci başkan olarak yapay zeka hep destek...
+
+341
+01:30:00,000 --> 01:30:24,876
+Destek olarak bize sufle verecek ya da Teknik Traktör Yardımcı Antony'un her zaman bir feedback gelecek. Çok da değerli olacak ama bunu kullanmak önemli olacak. İnsanoğlu hep bunu yapıyor şu anda. Bazı konularda ise, satranç gibi konularda ise hamdeler belli olduğu için zaten insan beyninin o kadar uzun hamleyi planlama şansı yok ama bilgisayar kuralları bildiğinden...
+
+342
+01:30:25,140 --> 01:30:50,880
+Bütün kombinasyonları hesapladığı için orada çok daha büyük başarısı var. Şimdi şuraya geleceğim. Otonom araçlar şu anda İstanbul trafiğine çıksa bayağı Elon Musk'ı hayal kırıklığına uğratabilir. Sıkıntı çıkar yani. Projede bayağı bütçe kesintisi falan olabilir. Ama siz otonom aracı sahaya sürseniz nerede kullanmak istersiniz, iyi ki test etmek isteseniz?
+
+343
+01:30:54,292 --> 01:31:19,712
+Hocam, gördüğüm kadarıyla kırsal için zaten çok az denemeleri var. Genelde haritalanmış yollar üzerinde çok otonom şekilde çalışabiliyor. Orada bile hatta kusurları fazlaca var yerine göre. Buradaki arttıracak asıl öe diğer araçların da sensörlerini işe katarak alınan bilgileri değerlendirmek olacaktır ama kırsal taraf için bu yine bir anlam ifade etmiyor. Çünkü yalnızsınız. Belki bir kilometre çevrenizde farklı bir sensör, araç, kamera bulunmuyor.
+
+344
+01:31:22,292 --> 01:31:35,311
+Veri işleme tekniklerini geliştirmek yine gerekli olacaktır diye düşünüyorum. Yani kendi başına orada. Bir insan da yine doğaya vararsanız orada kendi başına seslenip bilgi alabileceği birisi yok. Araç daha en pozisyonda olacaktır.
+
+345
+01:31:36,391 --> 01:31:42,351
+Peki, siz test etmek istediğinizde aracı nerede test edersiniz?
+
+346
+01:31:44,091 --> 01:31:47,091
+Yani zorlayıcı bir alan olarak kırsalda test ederim.
+
+347
+01:31:48,091 --> 01:31:49,072
+Ama birisi var.
+
+348
+01:31:49,456 --> 01:31:50,855
+Riski var, fazlaca var.
+
+349
+01:31:51,315 --> 01:31:57,496
+Riski minimize etmeniz istense sizden. İlk daha böyle haberlere konu olmayalım. Aracı da bir deneyelim.
+
+350
+01:31:58,155 --> 01:31:58,935
+Türkiye'de mi olması lazım?
+
+351
+01:31:58,935 --> 01:32:00,355
+İlk ihtimal trafiğe kapalı mı?
+
+352
+01:32:00,376 --> 01:32:02,536
+Yok, Türkiye'de olması lazım değil. İstediğiniz yerde olur.
+
+353
+01:32:03,380 --> 01:32:25,340
+Yani kampüsün işi bunun için gayet iyi aslında hocam. Yollar haritalanmış durumda, kameralar var, GPS'in yine az çok iyi çalıştığı bir nokta. Fazlaca insan var, veri alınabilecek farklı uç noktalar var çünkü. O uç noktalardaki verileri kullanarak daha kararlı hale getirebiliriz. Bilinen ama trafiğe kapalı bir alanda yapmak isterim.
+
+354
+01:32:25,340 --> 01:32:27,840
+Çok güzel. [öğrenci]?
+
+355
+01:32:31,155 --> 01:32:31,996
+Merhaba hocam.
+
+356
+01:32:32,895 --> 01:32:33,536
+Efendim?
+
+357
+01:32:33,596 --> 01:32:36,076
+Hocam ben direkt İstanbul'da denerdim ya.
+
+358
+01:32:37,056 --> 01:32:40,615
+İstanbul'da bayağı bildiğin aracı trafiğe mi?
+
+359
+01:32:40,676 --> 01:32:48,935
+Hocam trafiğe sokardım. Zaten bütün hataları orada görürdüm. Hayatımda üç defa İstanbul'a gittim, üçüncü de düşman olup geri döndüm.
+
+360
+01:32:49,935 --> 01:32:58,536
+Evet, İstanbul biraz trafik anlamında adamı yoldan çıkartacak, yoldan çıkartacak bir yapıya sahip. Peki, sizlere soralım.
+
+361
+01:32:59,539 --> 01:33:08,680
+Ben enese katılıyorum. Kontrollü bir yer olması, birazcık da kullanılan bir alan olması, gerçekçi olması açısından fayda olabilir.
+
+362
+01:33:09,268 --> 01:33:30,627
+Evet, ben de doğru bir noktaya teşhis ettiğinizi düşünüyorum. Bu tür şeylerde her zaman için parametre miktarı minimize etmek adına değişkenli kontrolü ortamları tercih etmek lazım. [öğrenci] okul kampüsü içerisinde örnek verdi. Güzel bir örnekti. Ben daha önce bu örneği kullanmıyordum. Ama benim tercihimden bir tanesi metrobüs hattı olur.
+
+363
+01:33:31,055 --> 01:33:39,055
+Ki zaten bunun örneğini sürücüsüz metrolarda görüyoruz. Bunun için en dediklerden biri metrobüs yaptı.
+
+364
+01:33:39,055 --> 01:33:45,335
+Çünkü çok pardon hemen geliyorum Ankara'dan telefon geldi. Çok özür dilerim.
+
+365
+01:33:53,619 --> 01:33:58,559
+Metrobüs'ün orijinali de normalde aslında otonom yani. Bu arada söylemiş olayım da. Bizim ülkemizde sadece otonom çalışmak.
+
+366
+01:33:59,559 --> 01:34:00,199
+Neyse olay bu.
+
+367
+01:34:01,479 --> 01:34:02,100
+Metrobüs.
+
+368
+01:34:02,840 --> 01:34:04,600
+Metrobüs. Ha o şekilde mi? Bilmiyordum.
+
+369
+01:34:04,699 --> 01:34:14,039
+Normalde orijinali onların otonom çalışmak üzerine. Çünkü zaten Avrupa'da falan o tarz versiyonları varmış. Ama biz de o yemeyecek için.
+
+370
+01:34:15,731 --> 01:34:27,412
+Fiyatların o kadar yüksek olmasına bakarsak evet, ilk bir özellik olması gerekiyor. Yani standart bir Mercedes otobüsten ayıran bir yana olması gerekiyor. Çünkü çok pahalılar. Herhalde bu özellikler yine içinde yüklü ama aktif değil o zaman.
+
+371
+01:34:27,592 --> 01:34:40,152
+Evet, yani ilk bu metrobüs çıkarken, [kişisel bilgi] Oradan biraz aşinalığı var bu muhabbetlere. Daha ilk çıktığı zamanlar söylemişti. Yani bu normalde otonom ama bizde insanlar sürecek diye. Oradan aklımda kalmış.
+
+372
+01:34:40,692 --> 01:34:43,312
+Evet, bizde yine de çarpışmayı başarıyor metrobüsler ya.
+
+373
+01:34:43,731 --> 01:34:46,592
+İki insan var, iki sürücü var ama bilmiyorum nasıl oluyor.
+
+374
+01:34:47,672 --> 01:34:57,731
+Evet arkadaşlar, teşekkür ederim beklediğiniz için. Bu kontrolü ortamı konuşuyorduk. Ben metrolü sattını söylüyordum işte. Bu noktada özellikle...
+
+375
+01:34:58,036 --> 01:35:12,036
+Gelecek yıllardaki çözümler de bu robotlar için de geçerli. Hep kontrollü ortamlar üzerinden aslında hikayeler başlayacak. Buna tasarım sırasında ve test aşamalarında çok dikkat etmek gerekiyor. Bu nedenle işte...
+
+376
+01:35:12,532 --> 01:35:33,003
+Bu kırsal alan, biraz önce dedik ama şehir merkezi dışındaki alanlar, otobanlar, güzel adaylar diye düşünüyorum. Orada da genelde define edilmiş bir yapı var. Sonuçta dönüp dolaşıp şuraya geliyoruz. Bu araçların öğrenebilmesi yetenekleri var. Evet, öğreniyorlar ama...
+
+377
+01:35:33,076 --> 01:35:42,195
+300 bin kilometreye gelene kadar yaratacakları böyle olumsuz hikayeler bu öğrenme sürecinde talare edilemeyebilir.
+
+378
+01:35:42,771 --> 01:36:04,952
+Bu noktada otonom araçlar da bunu mobilize etmek adına birçok sensör kullanıyorlar. Bayağı böyle araçları görüyorsun üzerinde. Lidar sensöründen tutun, kameralar, GPS vs. Birçok aynı sensörden birden fazla açıyla yapanlar var.
+
+379
+01:36:10,771 --> 01:36:17,271
+Kereken temel kriterler var. Bunları zaman içerisinde, dersler içerisinde değerlendiriyor olacağız.
+
+380
+01:36:17,811 --> 01:36:30,592
+Şimdi insanın beş duyusu var ve etrafı algılayabiliyoruz biliyorsunuz. Bunlar görme, duyma, tatma, dokunma ve koku.
+
+381
+01:36:32,431 --> 01:36:35,492
+Şimdi ben [öğrenci]'le [öğrenci]'e sorayım gene.
+
+382
+01:36:38,292 --> 01:36:48,292
+Duyularımızı kullanarak karar vereceğimiz bir noktada sensörleri olan bir bilgisayara göre biz mi daha iyiyiz, onlar mı daha iyi?
+
+383
+01:36:50,292 --> 01:36:55,292
+İnsan daha iyidir. İnsan daha iyidir.
+
+384
+01:36:55,292 --> 01:36:56,292
+Evet.
+
+385
+01:37:05,876 --> 01:37:32,195
+Reflex olayı da bir hızdan kalıyor. Ama bilgisayarda bir hız sıkıntısı var. Ama hani derseniz stabil olarak hangisi yanıt veriyor? Tabii ki de bilgisayar her durumda aynı duyu bugün de gelse, aynı sensörü tetikleme bugün de gelse, yarın da gelse bilgisayar aynısını yanıt veriyor. Ama insanda böyle bir şey değil. İkincisine duygusu da geliyor.
+
+386
+01:37:33,171 --> 01:37:57,031
+O kokuya bugünkü yanıtımız farklı oluyor, yarınki duygu duyduğumuzda göre farklı oluyor. Burada iki durum söz konusu. Birincisi, insan daha doğru kararlar verebilir bir duygu da. Ama işin içine duygu gibi ya, bilgisayar burada daha öne giyiyor. İki tarafı şey, bir tarafında artılar var, bir tarafında değil.
+
+387
+01:37:59,155 --> 01:38:01,536
+Tamam. [öğrenci]'e dönelim.
+
+388
+01:38:03,615 --> 01:38:11,736
+Ya şimdi burada insan tarafında insanın belki kaç yaşında olduğu yaşı cinsiyeti birikimi de devreye girebilir.
+
+389
+01:38:11,976 --> 01:38:18,016
+Tamam. Biz insanın deneyimli olduğunu varsayalım böyle yaşı da ne bileyim 40-50 olsun.
+
+390
+01:38:19,516 --> 01:38:25,016
+Ya şeye bakımdan yorumlama açısından insanın daha doğru yorumlama...
+
+391
+01:38:25,619 --> 01:38:52,619
+Yorumlayacağını düşünüyorum. Çünkü orada Beş Duyu dışında, tabii insan o düşündüğümüz zaman içgüdü denilen, daha okan sanmamış teorik şeyler de var. Reflex, Reflex gibi şeyler de var. Karalanma tarafında, hani şu anda bile hani aslında işleri otomasyona teslim etmememizin nedeni ona güvenmediğimiz için, en azından doğru karar alacağımız için, ben insanın da o tarafı henüz hani çok şey...
+
+392
+01:38:52,851 --> 01:39:06,171
+duygusal anlamda insanın daha doğru karar vereceğini düşünüyorum. O tarafın duygu tarafında robotlar için daha koku tarafını bile halledemedik. O taraftaki şeylerde daha baya gelişme gereken alanlar var diye düşünüyorum.
+
+393
+01:39:06,612 --> 01:39:08,311
+Tamam. Teşekkür ediyorum.
+
+394
+01:39:08,311 --> 01:39:11,752
+Ben insan daha katkış, daha kesin karar vereceğini düşünüyorum.
+
+395
+01:39:12,252 --> 01:39:14,011
+Teşekkür ederim. [öğrenci]?
+
+396
+01:39:16,112 --> 01:39:20,311
+Hocam yani bir otonom sistem...
+
+397
+01:39:20,948 --> 01:39:29,948
+Daha önce görmediği bir şey olduğu zaman, onu değerlendirmesinde sıkıntı olabilir. Burada algıladığı şey artık mesela koku olabilir, her neyse veya göreceği bir şey.
+
+398
+01:39:30,948 --> 01:39:40,948
+Daha önce gördüğü ve eğitildiği şeylerden çok farklı bir şey karşısına çıktığı zaman, muhtemelen orada bir insanın yapacağı, doğaçlamayı yapamayacağı için çuvallayacaktır.
+
+399
+01:39:40,948 --> 01:39:47,948
+Ama insan çok farklı bir şeyle de karşılaşsa, bugün ne bileyim Mars'tan bir taş alıp onu getirip bize koklatsalar da, üç aşağı beş yukarı...
+
+400
+01:39:48,467 --> 01:39:54,247
+Yani gösterseler de daha bir makine göre mantıklı yorum yapacaktır diye düşünüyorum.
+
+401
+01:39:54,887 --> 01:39:56,067
+Tamam, teşekkürler [öğrenci].
+
+402
+01:39:57,127 --> 01:40:02,407
+Hocam, burada özellikle bir alan üzerine mi konuşuyoruz yoksa genel olarak mı değerlendirmeliyiz?
+
+403
+01:40:04,287 --> 01:40:09,027
+Burada yorumu size bıraktım. Yani spesifik bir alanı işaret etmedim.
+
+404
+01:40:09,187 --> 01:40:13,807
+Sadece hani şöyle olursa böyle olabilir diyeceğiniz yorum varsa ona da açığa durur.
+
+405
+01:40:13,907 --> 01:40:15,927
+Hani kendiniz dizayn edebilirsiniz şartları.
+
+406
+01:40:16,340 --> 01:40:34,340
+Şöyle ki, ön tanımları işleri yapmada her zaman makineler insanlara karşı bir sıfır öndedir. Refleks konusunda da bu şekildedir, hız konusunda da bu şekildedir. Ama yepyeni bir durum geliştiği anda makine bir anda ben ne yapacağım bilmiyorum hata pozisyonuna düşecektir.
+
+407
+01:40:44,340 --> 01:41:05,239
+Sıkıcı bulduğumuz işler de vardır. Bir işi çok defa yapmayı da sevmeyiz. Makinalarda yine bu durum da söz konusu değildir. Ön tanımlı işleri durmak bilmeden yaparlar. Aslında bu noktada yepyeni bir şey yapılacaksa bir insana güvenirim. Onun dışında eğer ki ön tanımlı nasıl yapılacağı belli ve çok defa yapılacak bir işse makineye güvenirim diye düşünüyorum.
+
+408
+01:41:05,652 --> 01:41:18,652
+Güzel. Herkesin cevapları için teşekkür ediyorum. Şimdi tabii daha çok karar verme noktasındaki kritikliği göz önünde bulundurarak çoğunuz cevabını verdiniz. Ben şöyle bir...
+
+409
+01:41:18,752 --> 01:41:37,092
+Açıdan size bu sorunun cevabını paylaşmak istiyorum. Beş duyudan bahsettik. Biz görebiliyoruz, hissedebiliyoruz. Ondan sonra dokun, daha doğrusu duyabiliyoruz. Kokulama ve tat alma kısmı şu an rekabet noktasında değil zaten.
+
+410
+01:41:38,192 --> 01:41:46,752
+Teknolojide böyle bir çalışma alanı var ama kritiklik açısından da hani şu anda yani gurme bir robotla oturup muhabbet...
+
+411
+01:41:46,752 --> 01:42:12,712
+[öğrenci] ya da onun ekibindeki arkadaşlarla yapılacak muhabbet gibi bir şey olmayacaktır hiçbir zaman. Ya sen de beğendin mi? Nasıldı kebap? İyi miydi? falan filan. Bu nokta henüz zaten kritiklik içermiyor. O yüzden bu iki sensörü devreden çıkartıyorum. Ama gelelim arkadaşlar şu enteresan noktaya. Sizi ben bir tepeye götürsem.
+
+412
+01:42:13,427 --> 01:42:32,647
+Yükseklik bilgisini sorsam, bana yükseklik bilgisini verebilir misiniz? Verirsiniz, sallarsınız 500 metre, 1200 metre. Ama kullandığımız sensör bize tam olarak kaç metrede yükseklikte olduğunu söyler. Tabii ki artı ekstra ta payı var sensörün kalitesine göre.
+
+413
+01:42:41,684 --> 01:43:07,144
+Teknolojik cihazlar bizden çok daha iyi ölçümleme yapıyorlar. Çok daha doğru ölçümleme yapıyorlar. Bunun en güzel örneği uçak. Uçakta bir insana güvenirseniz ve sensörleri uçaktan alırsanız artık hava açıksa inersiniz. Sis varsa hava kapalıysa geçmiş olsun.
+
+414
+01:43:07,828 --> 01:43:21,996
+Görmeden uçağın inme şansı ya da pilotun indirme şansı yok. O yüzden teknolojik cihazları değerlendirirken özellikle ölçüm yapan yani sens eden noktaları...
+
+415
+01:43:22,003 --> 01:43:49,284
+Ne kadar güçlü olduğunu, insandan birçok noktada daha önde olduklarını unutmadan tasarımlarımızı ve problemlerimizi çözmemiz gerekiyor. Ve bu da bize doğru sensör seçimi getiriyor. Yani jiloskop mu, aksiyelometre mi, GPS mi, Bluetooth, Low Energy mi? Yani buradaki beacon teknolojisinden bahsediyorum. İç konumlar için pozisyon belirlemede. Onun ötesinde kamera mı kullanacağız?
+
+416
+01:43:50,003 --> 01:44:09,824
+Yani aynı anda mı kullanmalıyız? Risk almamak adına bir tanesi yeterli mi? Park ederken ultrasonik sensörler kullanılıyor biliyorsunuz. Park sensörleri, ultrasonik sensörler. Bunlar orada işimizi çözüyor ama kısa mesafe olduğu için uzun mesafede işe yaramıyorlar gibi bunların maliyetleri, yetenekleri mesela çok iyi değerlendirmek gerekiyor.
+
+417
+01:44:17,108 --> 01:44:23,247
+Ölçümleme yapma konusunda, sans etme konusunda inanılmaz bir noktaya gelmiş durumdalar.
+
+418
+01:44:23,731 --> 01:44:51,731
+Bunun için bozulma olasılıkları var, haklısınız. Bunu da minimize etmek için redundant bir yapı kullanılıyor. Yani sensörden birden fazla konularak alınan değerler, hatta bazen outlier detection yapılarak üretilen 3 sensörden bir tanesinin çok uç bir değer üretmesi durumunda dışarıda bırakılabiliyor. Bunlar da aslında veri işleminin parçaları. Çünkü sensör networklerde de ormana sensörleri...
+
+419
+01:44:51,731 --> 01:45:01,051
+Bir tanesi diyor ki 72 derece, diğerleri diyor 28 derece. Şimdi alarm doğruysa çok kritik orman yanıyor.
+
+420
+01:45:01,423 --> 01:45:26,543
+Yanlışsa ekip oraya gönderdiğiniz boş bir durum. Kameranız yoksa görmeden hareket etmek zorundasınız. 5 sensör 28 diyor, 1'i 72 diyor. O zaman diyorsunuz ki burada majority voting yapıp bir karar veriyorsunuz. Burada biraz da kollektif öğrenme dediğimiz yapı da işin içerisine giriyor. Bazı teknikler uygulanıyor tabii ki bu tarafta. Bunları da değerlendiriyor olacağız ama şunu söyleyebiliriz.
+
+421
+01:45:29,423 --> 01:45:41,984
+Neyse, çevresel zekayla düşündüğümüzde, kontekst awareness kavramını, yani durum farkındalığını düşündüğümüzde, bu cihazları üzerindeki sensörler bizim için olmazsa olmazımız.
+
+422
+01:45:43,623 --> 01:45:52,724
+Bilgisayarda bunlar çok yoktur. Son dönemde işte mikrofon, kamera vs. bunlar standart ama yani bir laptop üzerinde çok da gyroskop olsun.
+
+423
+01:45:53,268 --> 01:46:13,208
+İşte aksiyon hatırı olsun derdine düşmeyiz. Ama telefonda bunun önemi var. Oyun oynarken de kullanıyorsunuz bunu. Ya da bir kişi düştü mü düşmedi mi? Saatlerde mesela en çok devreye giren. Artı yeni dönemde biyomedikal alanındaki sensörler, biosensörler çok popüler olmaya başlıyor. İşte kan ve oksijen değeri.
+
+424
+01:46:13,587 --> 01:46:27,967
+Hatta Apple yeni seri saatlerinde birçok insanın hayatını nasıl kurtardığını, kalbindeki ritim düzensizliğini, haber verdiğini, daha çok sağlık alanındaki bu gelişmeler yönelmiştir.
+
+425
+01:46:28,087 --> 01:46:34,288
+Bu işler önce adım sayısıyla günlük egzersiz takibiyle başladı.
+
+426
+01:46:35,188 --> 01:46:57,887
+Şimdi daha başka boyutlarını konuşuyoruz. Hatta işin tansiyonuydu vesaire, bu noktalara geldik ve hakikaten insanların hayatını kurtarabilecek giyilebilir teknolojiler üzerinden çözümler üretiliyor. Ama tabii ki hala o küçük cihazın içerisine koyulan sensörlerin bir hata payı var. Yani bir telefondaki jiroskopla...
+
+427
+01:46:57,887 --> 01:47:03,488
+Daha büyük bir cihaz içerisindeki jeloskop ya da aksanometrenin doğruluk oranlarında fark var.
+
+428
+01:47:04,028 --> 01:47:07,207
+Şimdi, ben yine bir örnekle devam edeceğim.
+
+429
+01:47:08,047 --> 01:47:10,728
+Bir yaklaşık 15 dakika sonra da dersi bitireceğiz zaten.
+
+430
+01:47:11,627 --> 01:47:12,528
+Bugün için.
+
+431
+01:47:14,047 --> 01:47:14,728
+Şöyle düşünün.
+
+432
+01:47:17,467 --> 01:47:20,667
+Bir zaman bununla uğraştık ama arkası gelmedi.
+
+433
+01:47:20,768 --> 01:47:22,087
+Çok da sevdiğim bir konu aslında.
+
+434
+01:47:22,648 --> 01:47:23,728
+Hala bence...
+
+435
+01:47:23,743 --> 01:47:38,184
+İlginç bir konu, tez bile olabilecek bir konu. Mesela ıssız bir yerde size araba çarptı. Ya da bir bisiklet çarptı. Ya da biri geldi vurdu. Kaçtı. Siz de bayıldınız.
+
+436
+01:47:40,024 --> 01:47:48,844
+Bunu anlamına yollarından bir tanesi, kolunuzda saat varsa ya da üzerinizde telefon varsa, düştüğünüzü tespit etmektir.
+
+437
+01:47:49,587 --> 01:48:04,347
+Ve belli bir süre hareketsiz olduğunuzu anlarsanız veriyi işleyerek, o zaman dersiniz ki burada acil bir durum var. Ama düştünüz, kalktınız hareket ediyorsunuz. O zaman bir yere haber vermeye gerek yok.
+
+438
+01:48:04,851 --> 01:48:16,851
+Gibi düşünebilirsiniz. Bakın çok basit karar verme taktikleri bunlar. Çünkü burada define edilmiş bir senaryo var. Belki biraz sonra çürüteceğimiz örnekler exceptional durumlar olacak ama.
+
+439
+01:48:16,851 --> 01:48:31,311
+Şimdi bunu yapan, fall detection işini yapan inanılmaz bir çalışma serisi oldu. 2012'li yıllardan 2020'li yıllara kadar, başına kadar.
+
+440
+01:48:32,020 --> 01:48:58,740
+Fall Detection'la ilgili böyle artık yüzlerce çalışmamalarla ilgili ben size. Ben de orada iki üç tane çalışma yaptım. Ama burada benim tespit etmek istediğim bir şey vardı. Düşme bir kaza sonrasında olabilir. Kazadan kastettiğim bir aracın ya da bir bisikletin çarpması sonunda. Ve bunun şiddeti çok önemli. İstediğim şeylerden biri şuydu.
+
+441
+01:48:59,119 --> 01:49:26,119
+Biz bu şiddeti acaba hesaplayabilir miyiz? Yani düştük de çarpmanın şiddeti neydi? İşte yediğimiz yumruğun şiddeti neydi ya da itilme kuvveti neydi kavga sırasında? Ya da hakikaten kendimiz düştük ama yere ne kadar sert bulduk? Ki buna göre bir gelen sağlık ekibinde bir bilgi. Bu bayağı bildiğiniz şu andaki teknolojiyi kullanarak...
+
+442
+01:49:26,515 --> 01:49:31,315
+Çok işe yarayacak bir bilgi. Sizce bu mümkün olabilir mi?
+
+443
+01:49:37,555 --> 01:49:46,615
+Ya da neler kritik? Bunu şiddetini ölçebilmek için şöyle bir şeye ihtiyacınız var. Ya da aklınıza gelen ne?
+
+444
+01:49:49,036 --> 01:49:59,555
+Hocam, akselerometer büyük ihtimalle bu konuda kullanılacak. İlk sensör olacaktır. Sizin de yine bu konuda çalışmalarınız olmuştu. Ancak oradaki asıl sorun gördüğüm kadarıyla...
+
+445
+01:50:00,000 --> 01:50:07,039
+Bir çarpmayı gerçek bir çarpmadan ayırmak konusunda zannediyorum asıl bir çalışma vardı.
+
+446
+01:50:07,559 --> 01:50:13,479
+Orada veriler işlenerek... Çünkü şöyle bir durum da söz konusu. Telefonunuzu sert bir şekilde masaya da koymuş olabilirsiniz.
+
+447
+01:50:13,479 --> 01:50:14,979
+Zaten biri o.
+
+448
+01:50:15,475 --> 01:50:34,496
+Kişi gerçekten düşmüş de olabilir. Ancak düştüğü durumda telefon illaki yere çarpacak diye bir durum söz konusu değil. Kişinin ön cebinde olabilir. Kişi sırt üstü düşmüş olabilir. Başını vurmuş olabilir. Yani neresini vurduğu kısmı da çok önemli. Orada veri almak birazcık zorlaşacaktır diye düşünüyorum.
+
+449
+01:50:34,996 --> 01:50:56,155
+Bu konuda bu gerçek ve false alarmı birbirinden ayırmak gerekiyor. Orası ile ilgili net bir fikir yürütemeyeceğim açıkçası. Belki o noktada hem saat hem de telefonun aldığı veriler karşılaştırılarak birbirlerine göre mesafelerine belki mümkünse bakılarak bir işlem yapılabilir. Öyle bir önerim olabilir.
+
+450
+01:50:56,696 --> 01:50:57,996
+Tamam, bence iyi bir başlangıç.
+
+451
+01:51:02,484 --> 01:51:03,364
+Diğer arkadaşlar?
+
+452
+01:51:05,984 --> 01:51:10,463
+Ben de kısmen katılıyorum çünkü tek bir yerden örnek bayağı yantıcı.
+
+453
+01:51:10,484 --> 01:51:11,264
+[öğrenci] sen misin?
+
+454
+01:51:11,984 --> 01:51:13,264
+Evet, [öğrenci] konuşuyor şu an.
+
+455
+01:51:13,284 --> 01:51:14,503
+Biraz sesini yükseltebilir misin?
+
+456
+01:51:15,344 --> 01:51:15,884
+Tabii ki.
+
+457
+01:51:17,824 --> 01:51:24,864
+Sizin yaptığı katkılara katılıyorum. En azından tek bir yerden, bir sensörden alman veriye göre bir karar vermek.
+
+458
+01:51:26,163 --> 01:51:48,943
+Yanıltıcı olabilir. Telefon artı bileklik artı. Belki vücudun hareket eden parçalarına yönelik belki ayak bilekliği de ileride bir geliştirebilecek bir yöntem. Ya da kulağa takılan kulaklıktan da böyle kafa tarafından alınan bir veri belki işlenebilir. Hani toplamda birden fazla sensörden alınan verinin olup payı da edecek olabilir.
+
+459
+01:51:50,771 --> 01:51:58,252
+Şiddetiyle ilgili tahmin yapmamızı engelleyecek ya da kolaylaştıracak bir çözüm var mı?
+
+460
+01:51:58,252 --> 01:52:00,771
+Şiddeti tahmin yapmak istiyoruz.
+
+461
+01:52:02,323 --> 01:52:15,643
+Burada çarpanın şiddeti dediğim gibi mesela atıyorum kulaklıktaki bir akserometer buradaki kafa çarptığında, kafa bir yere dokunduğunda ama bu sefer de kulaklıkla düşmüş olabilir mevzusu ortaya çıkıyor.
+
+462
+01:52:15,643 --> 01:52:30,003
+Burada ek olarak çarptıktan sonra belki kol hareket etti mi ya da bacak hareket etti mi ya da adam çarptı kafayı hareketsiz kaldı. Gerçekten diğer sensörlerden de hareketsizlik bilgisi.
+
+463
+01:52:30,323 --> 01:52:36,715
+Geldi mi? Ya da işte kan atışında bir değişiklik oldu mu? Belki bu durumlar...
+
+464
+01:52:36,851 --> 01:52:42,532
+İnsan tarafından yapay ortamda yapılıp örnekler alınabilir. Benzer şekilde.
+
+465
+01:52:43,452 --> 01:52:49,072
+Atıyorum bir yapay zeka tarafında o işli verim işlemesi durumu.
+
+466
+01:52:49,152 --> 01:52:53,551
+İşte insan çarptığında şu taz veriler toplandı diğer sensörlerden.
+
+467
+01:52:53,551 --> 01:52:58,072
+O sensörlerde çarpma özelinde basınç sensör de olabilir.
+
+468
+01:52:58,711 --> 01:53:01,992
+Ama tabi bu kulağa basınç kulaklık içerisi nasıl olur bilmiyorum.
+
+469
+01:53:03,155 --> 01:53:30,296
+Okey, teşekkür ederim. Şimdi senin bir not düşmüş toplantıya çağrına ayrılmak durumundayım diye. Yani okey, bugünlük böyle olsun ama sizden ricam önümüzdeki hafta diye arkadaşlar da söyleyeceğim. Yani şu anda fiziksel olarak bu derste bulursaydınız böyle bir imkanınız yoktu. O yüzden çok çok ekstrem bir durum olmadığı sürece bu tür durumları pek yaşamak istemiyorum. Onu şimdiden söyleyeyim.
+
+470
+01:53:31,155 --> 01:53:48,096
+Derse katılamayabilirsiniz. Çünkü bu gidişatı, yani bu bir alışkanlık halini almamalı. Ama yeri geldi. Anlayışı tabii ki göstereceğim. Okey, haber verdiğim için teşekkürler. Bu noktada arkadaşlar, değinmek istediğim güzel şeyler söylediniz.
+
+471
+01:53:49,844 --> 01:54:04,684
+Şu kısım çok önemli olduğunu düşünüyorum. Birincisi, evet, vücudun çeşitli pozisyonlarından, farklı açılardan bilgi almak, işi karar verme noktasını daha sofistik hale ve daha iyi hale getirecektir.
+
+472
+01:54:04,684 --> 01:54:12,063
+Ama telefon ve saatin dışında şu anda pozisyon olarak başka bir cihazı insana bağlamak intrusif.
+
+473
+01:54:12,787 --> 01:54:40,767
+İntrusif çözüm ne demek? Sizi dolen, rahatsız eden, sizin işin içinde olduğunuz ve konforunuzu bozan bir yapı demek. Yani ya katkı sağlıyorsunuzdur, telefona bir bilgi giriyorsunuz, bunda bir intrusif çözümdür. Ya da sizin üzerinize bir şey bağlanıyordur. Yine sizin default telefonu taşıma özgürlüğünüz var, zaten oradan topluyoruz. Zaten bunu yapıyorsunuz. Bu non-intrusif bir yapı.
+
+474
+01:54:40,787 --> 01:55:04,047
+Ama dışarıdan biri müdahale ediyorsa ve sizin konforunuz bozuluyorsa intrusif dediğimiz bir yaklaşım. Bunu dersler içerisinde zaman zaman kullanacağız. Intrusif, non-intrusif metotları. Farklı karşılıkları da var çünkü. Burada belki hakikaten ayaklarımıza bileklik takılacak ya da yaşlı insanlar için çok kritik olduğu için onlar bunu gönüllü takacaklar belki de.
+
+475
+01:55:08,532 --> 01:55:35,212
+İleride daha yaygınlaşacak. Sağlıkları kritik olduğu için nasıl şekerlerini ölçmek zorundalar belli bir periyotda ya da holter taşımak zorundalar gibi bunlar yaygınlaşacak. Ama diyelim ki normal genç bir insanla ilgili bir çözüm üretiyoruz. Bunları takmak istemeyecektir. Elindeki telefon ya da saat olsun.
+
+476
+01:55:35,923 --> 01:55:48,703
+O kişiye çarptığınız anda bir ivme oluşturuyorsunuz. Ve cihazın bulunduğu yer, yani daha yukarınızda mı, daha ebedeninizin alt bölgesinde mi?
+
+477
+01:55:49,171 --> 01:56:06,851
+Oradaki eşit değerlerinin de değişmesine sebebiyet verecek. Yani buna göre bir sistem tasarlamanız lazım. Kalça bölgesindeki yaratılacak ilmeyle vücudun üst bölümüne daha yukarıdan düşeceği için yaratılacak ilme arasında birazcık farklılık olacaktır. İster istemez. Yani çok büyük bir farklılık olmasa da etki tepki.
+
+478
+01:56:11,283 --> 01:56:38,483
+Yani biraz senderiyip düşersiniz muhtemelen. Yani pozisyonunuza bağlı tabii ki. Boş bulunmanıza bağlı. Ama 40'da giderken çarpsa sizi biraz uçurabilir, havaya kaldırabilir. 60'da giderken çarpsa bayağı bir uçurur. Zaten daha yüksek hızlarda pek şansınız kalmıyor geriye. O zaman da bu araştırmayı yapmamız aslında hala önemli ama birazcık daha farklı bir boyut oluyor.
+
+479
+01:56:38,688 --> 01:56:53,928
+Şimdi burada bizim tespit etmek istediğimiz şey aslında arabanın hızı. Ya da arabanın hızını doğrudan bilemesek de yavaş mıydı, orta hızlı mıydı, yüksek hızlı mıydı gibi üç kategoride bilgi sunmak istiyoruz.
+
+480
+01:56:54,515 --> 01:57:00,395
+İşte bunu biz denedik ve hakikaten çok eskiden yaptık, belki 2013 yılıydı.
+
+481
+01:57:01,695 --> 01:57:08,295
+%70 oranında bu üç sınıfla ilgili bir tahminde başarı elde ettik yüksek, orta ve düşük olmak üzere.
+
+482
+01:57:09,015 --> 01:57:16,875
+Ancak o zamanki telefonlarda bir kısıt vardı ve bizim çalışmamıza da bence bunun olumsuz bir etkisi oldu.
+
+483
+01:57:17,595 --> 01:57:18,576
+Ne olabilir bu kısıt?
+
+484
+01:57:24,435 --> 01:57:25,515
+Tersten soldun değil mi?
+
+485
+01:57:28,015 --> 01:57:29,475
+Hocam, şöyle olabilir.
+
+486
+01:57:30,435 --> 01:57:36,255
+Gyroskop da kullanılabilecek sensörlerden bir tanesi ve onun eksen sayısı önceden daha azdı.
+
+487
+01:57:36,515 --> 01:57:39,495
+İlk aklıma bu geliyor ve işlem gücü zaten hep söylediğiniz durum.
+
+488
+01:57:40,148 --> 01:57:43,407
+3 eksen değil o zaman. 3 eksen değil. Sıkıntı yok.
+
+489
+01:57:43,487 --> 01:57:48,667
+Şimdi bildiğim kadarıyla 5 eksene kadar çıkıldı diye biliyorum hocam. Bu belki işlem hacmini arttırmış olabilir.
+
+490
+01:57:49,347 --> 01:57:53,148
+Olabilir. Daha büyük bir problem. Ama...
+
+491
+01:57:53,148 --> 01:58:04,108
+Hassasiyet konusunda bir sıkıntı olabilir. Sensör kalitesi eskiden büyük ihtimal çok daha düşüktür. Şimdi büyük ihtimal onun diskret aralıkları da artmıştır diye düşünüyorum.
+
+492
+01:58:04,108 --> 01:58:08,108
+Güzel bir noktaya değindim. Eskiden Android işletim sisteminde aksiyonometre...
+
+493
+01:58:08,148 --> 01:58:11,667
+ve sensörü artı eksi 2G destekliyor.
+
+494
+01:58:12,275 --> 01:58:26,735
+Doğal olarak yaratılan İVM'e bizim manken ve GoKart aracıyla o zaman testlerimizin sonucunda yarattığımız bayağı mankeni böyle parçalanmalıklarına getirmiştim. Bildiğiniz yavaş da çarpsak, çok da çarpsak 2G'ye çıkıyor.
+
+495
+01:58:40,275 --> 01:58:49,595
+Yazılımsal olarak 4G artı da eksi 4G'yi desteklemesine rağmen Android işletim sistemi yazılımsal olarak artı eksi 2G'de hizmet vermesini sağlıyordu.
+
+496
+01:58:49,595 --> 01:59:01,095
+Ve bunun sebebi de o aralığı daha düşük tutarak hassasiyeti oyun oynama sırasındaki sizin küçük hareketlerinize ayırmıştı.
+
+497
+01:59:01,460 --> 01:59:27,219
+Böyle bir kullanım şekli vardı. Bu da kullanacağınız sensörlerin özelliklerini çok iyi irdelemeniz gerektiğini anlatan mükemmel bir örnek. Bugün artı eksi 8 hatta artı eksi 16 G'leri konuşabiliyoruz telefonlardaki aksolometrelerde. Bu da bize işte bu araçların çarpma şiddeti konusunda
+
+498
+01:59:27,680 --> 01:59:38,640
+Gerçekten böyle bir araştırma yapılırsa, bu bilginin çarpma anının kaçta olduğu, şiddetinin ne olduğu bilgisinin tespit edilmesi durumunda.
+
+499
+01:59:39,188 --> 02:00:04,528
+Çok güzel bu dijital operasik dediğimiz özellikle adli kurumların tespit yaparken kullandığı bazı teknolojik bilgiler var. Kullanılabilir ama şunu diyebilirsiniz. Adam manipüle edebilir, bunu farklı gösterebilir vs. Evet bunlar ayrı problemler doğru ama ileride kullandığımız teknolojik cihazlar üzerinden günlük hayatımızdaki...
+
+500
+02:00:04,916 --> 02:00:23,775
+Yani yaptığımız hareketler irdelenerek belki dava konuları çözümlenecek veya hukuka girip bu işlerin adını böyle koyacağız. Yani adam diyecek ki orada kamera yoktu, bir şey yoktu ama adamın telefonundaki bilgiyi inceleyerek çarpma şiddetinin yüksek olduğuna karar verip belki ona görebileceğiz aleyhis.
+
+501
+02:00:24,724 --> 02:00:46,204
+Yakın bir zaman olabilir mi bilemiyorum ama mutlaka bu noktaya gidiyor olacağız. Çünkü bugün siz karar verirken oradaki sokaktaki kameradan bakıyorsunuz, daha sonra yeni görüntü çıktı deyip evin kamerası, güvenlik kamerasından bir şey çıkıyor, iş yerinden çıkıyor ve bunlar delil olarak kullanılıyor.
+
+502
+02:00:46,804 --> 02:00:55,884
+Bunların manipülasyonunu da yaşıyoruz. Ses kayıtlarının manipülasyonu, kamera görüntüleri manipülasyonu. Bu işin...
+
+503
+02:00:56,020 --> 02:01:22,200
+Önemli başka bir kısmı. Data Integrity'den, Data Privacy'den, Data Security kısmından. Ama biz bunları bugün hali hazırda kullanıyorsak, dava dosyalarına girebiliyorsa, işte teknolojik cihazlarla ilgili de önümüzdeki dönemlerde insanların hareketlerinden inceleyerek kararlar verilecek. Bunun en güzel örneklerinden bir tanesi de bir kişinin kaza yaptığı sırada telefonu kullanıp kullanmadığını tespit edilmesi.
+
+504
+02:01:23,636 --> 02:01:42,276
+Kazan anı tespit edilir. O andaki telefonun da aktif logları incelenerek konuştuğu tespit edilirse alın size gene davanın şeklini değiştirecek, gidişatını değiştirecek bir bilgi. Bunlar size ilk giriş olarak vermek istediğim bu dersin içerisinde konuşacağımız çeşitli örnekler.
+
+505
+02:01:51,636 --> 02:02:11,736
+İlginç bir konu. Bu konu araştırılmayı hak eden bir konu olduğunu düşünüyorum. İleride karşımıza mutlaka çıkacak. Tespit etmesi kolay değil. Hatta en zor kısmı yüksek, orta, düşük şiddet demek değil de aracın hızını tahmin etmek. Esas bence süper kısım orası olurdu.
+
+506
+02:02:12,595 --> 02:02:29,475
+Burada işte F eşittir, M A kavramından, etki tepkiden, buradaki aracın kilosundaki yapıdaki A'nın öbür tarafa kuvvet olarak aktarılmasından kişinin kilosu mesela bir sürü ayrı başka fizik dinamikleri de var.
+
+507
+02:02:29,475 --> 02:02:34,347
+Biz o zaman aşağı yukarı kişiyle araç arasındaki oranı...
+
+508
+02:02:34,644 --> 02:03:02,644
+Bu konuda Go-Kart aracıyla manken arasında kurmaya çalıştık. Manken'e şof falan gidilmiştik. Cebine atıyorduk telefonu. Böyle ilginç şeyler vardı. Telefonumuz zarar görmesin diye falan dikkat ediyorduk. Bazen uçuyordu tabii havaya manken. Ama günün sonunda ilginç bir çalışmaya başlamıştık ama sonra arkası gelmedi. Çünkü bunun için belirle setuplar sağlamak lazım. Ben de biraz başka alanlara yöneldiğim için...
+
+509
+02:03:02,644 --> 02:03:12,423
+Şu an mesela bu pandemi geçse çok araştırmak isteyeceğim bir konu. Çünkü illaki bu konu kamera gibi.
+
+510
+02:03:13,235 --> 02:03:21,095
+Belirli anlamda adli işlerin içerisine girecek gibi gözüküyor. Ve zor da bir problem aslında. Özellikle hızı tahmin etmek.
+
+511
+02:03:21,875 --> 02:03:31,416
+Şimdi saat 3'ü 5 geçti. Belli bir süredir de 2.15'den beri de dersteyiz. Yaklaşık 45 dakika, 50 dakika oldu ikinci bölümünde.
+
+512
+02:03:32,935 --> 02:03:40,456
+Biz önümüzdeki hafta biraz daha böyle genel konuştuktan sonra çevresel zekaya geçiş yapacağız. Kontekste veri sistemleri konuşacağız.
+
+513
+02:03:41,235 --> 02:03:47,835
+Burada yine soru cevap, günlük örnekler üzerinden sizin neler, ne tür çözümler getirebileceğinizi konuşacağız.
+
+514
+02:03:48,435 --> 02:03:54,295
+Ve bugün yine güzel bazı fikirler oldu. Bunların üzerine başka şeyler de inşa ediyor olacağız.
+
+515
+02:03:55,956 --> 02:03:59,255
+Şimdilik bugünlük bu kadar diyelim. Katıldığınız için çok teşekkür ederim.
+
+516
+02:03:59,335 --> 02:04:02,855
+Dönem hepinize hayırlı olsun. Değer derslerinizde de şimdiden başarılar dilerim.
+
+517
+02:04:03,119 --> 02:04:31,079
+Dersin ölçme kısmıyla ilgili önümüzdeki 12 hafta içerisinde sizi lanet bilgilen bir yolu olacak. Sorularınız olursa bana amaç.at yıldız.edu.ev adresinden erişebilirsiniz. Çok özel bir durumunuz olursa derse katılamama ney üzerinden tabii ki bana ulaşabilirsiniz. Ama mümkünse çok da sıkmadan dersi böyle kıtadımda her hafta katılmanız bana keyif verecektir.
+
+518
+02:04:31,119 --> 02:04:34,019
+İyi bir darabı olmasını diliyorum. Teşekkür ediyorum.
+
+519
+02:04:36,139 --> 02:04:37,059
+Teşekkürler hocam.
+
+520
+02:04:38,679 --> 02:04:40,300
+Teşekkürler hocam. Görüşmek üzere.
+
+521
+02:04:40,679 --> 02:04:41,279
+Hoşçakalın.
