@@ -1,0 +1,2879 @@
+1
+00:01:08,852 --> 00:01:21,112
+Sesim geliyor mu arkadaşlar? Geliyor hocam. İyi akşamlar. Birkaç dakika bekleyelim katılacaklar için.
+
+2
+00:04:14,804 --> 00:04:22,223
+[öğrenci] iki defa mı bağlısın yoksa iki kişinin adı [öğrenci] aynı mı yok? Bir tane bağlantın düştü galiba.
+
+3
+00:04:27,923 --> 00:04:30,603
+Hocam, soy isim farklı. Herhalde farklı bir arkadaşımız.
+
+4
+00:04:30,783 --> 00:04:36,123
+Yok yok. İki defa bağlantısı vardı. [öğrenci] olarak ayrı ayrı görüyorum sizi de.
+
+5
+00:04:36,843 --> 00:04:40,704
+Aynı olarak iki defa görünüyordu ama diğer bağlantısı düştü bir şekilde.
+
+6
+00:04:42,003 --> 00:04:46,084
+Evet. Herhalde bu kadarsınız diye tahmin ediyorum.
+
+7
+00:04:48,084 --> 00:04:48,603
+Şimdi.
+
+8
+00:04:52,692 --> 00:04:59,852
+Şu Superpage Paper'ı.
+
+9
+00:05:02,552 --> 00:05:07,951
+Evet, kim anlatmak ister, başlamak ister? Nedir bu paper'ın konusu?
+
+10
+00:05:10,372 --> 00:05:12,232
+Merhaba hocam, ben anlatabilirim.
+
+11
+00:05:13,432 --> 00:05:15,432
+[öğrenci] sensin değil mi anlatmak istiyorsun?
+
+12
+00:05:15,451 --> 00:05:15,912
+Evet hocam.
+
+13
+00:05:16,412 --> 00:05:17,851
+Tamam, evet dinliyorum.
+
+14
+00:05:18,771 --> 00:05:26,351
+Videoyu da açayım mı? Videoyu da açayım mı? Olur. Evet. Geliyor mu? Geliyor video, aynen.
+
+15
+00:05:29,211 --> 00:05:39,451
+Burada hocam bize bir şeyden bahsedecek. SuperPage diye bir kavramdan bahsedecek. Daha önce hardware'de olan işletim sisteminde nasıl bunu implement edebiliriz diye.
+
+16
+00:05:40,052 --> 00:06:05,072
+Amaçlarında da şey diyor işte TL bir cover'ı yükseltmek istiyoruz falan. Şimdi bunu anlatmak için tabi page kavramı bilmek lazım önce. Ve TL nedir bunu açıklamak lazım. Burada işte memori kullanmak istediğiniz zaman iki şekilde kullanabiliyorsunuz. Biri segmented, diğeri şey. Paged memory. Segmented memori da işte 80-86'da biz mikro işlemci dersinde almıştık.
+
+17
+00:06:05,459 --> 00:06:22,339
+80-86'da işte data segments, tek segment, böyle segmentlere ayrıp verebiliyor şeyi. İşlemci size bunu sağlıyor. Segmentler yardımıyla işte bir de offsetle beraber gerçek memoriye ulaşabiliyorsunuz. İşte bunun kendi yararları var, bazı sıkıntılar falan var. Bir de işletim sistemleri page memory de kullanabiliyor.
+
+18
+00:06:23,339 --> 00:06:28,899
+Page memory'de de şey var, işte page'ler var. Bunların size sabit Linux 4 kilobyte kullanıyor şu an.
+
+19
+00:06:29,247 --> 00:06:38,548
+Sabit Size'da Page'ler, Memori'yi parçalara ayırıyorsunuz. Bunlara işte Page'lerinizi koyuyorsunuz, çıkarıp diske götürebiliyorsunuz, diskten getirip yeni Page'lere falan koyabiliyorsunuz.
+
+20
+00:06:39,247 --> 00:06:43,648
+Process'ler işte diyelim birkaç Page'ten oluşuyor, bu Page'leri koyabiliyorsunuz, Memori'ye falan.
+
+21
+00:06:44,747 --> 00:06:53,747
+Şimdi elinizde Page'ler var. CPU işte bir Page'e, bir adrese gitmek istediği zaman mantıklı olarak bir Page numarası, bir de bir offset veriyor.
+
+22
+00:06:53,747 --> 00:06:56,247
+Bu Page'in ben şurasına gitmek istiyorum diyor.
+
+23
+00:06:56,500 --> 00:07:23,320
+Sizin bunu bir gerçek adrese çevirmeniz lazım. Page Number'dan bir şekilde memordaki gerçek frame'e gidebiliyor olmanız lazım. Bunu da şeyle yapıyorsunuz. Page Number'ı frame number'a çeviren bir tablo. Page Table diye. Siz bir adrese gitmek istediğiniz zaman önce bir Page Table'a gidiyorsunuz. Frame'ini buluyorsunuz. Frame'le işte offset'i kullanıp memordaki adresine gidiyorsunuz. Şimdi her adrese gitmek istediğiniz zaman böyle bir işlem var. Bu maliyetli bir işlem.
+
+24
+00:07:23,795 --> 00:07:48,275
+Bunu aradan kaldıran spesifik bir donanım yapıyorlar bu iş için kullanılan. Ona da TLB deniliyor. Translation Look Aside Buffer diye. CPU bir adres ürettiği zaman page table'a gitmiyor. İlk önce TLB'ye gidiyor. TLB de spesifik bir donanım. İşte diyelim ki 100 entries'i var. Birden 100'üne bakabiliyor aynı anda. Yani siz bir page number ürettiğiniz anda frame number'unu alabiliyorsunuz.
+
+25
+00:07:48,692 --> 00:07:52,651
+Bu şekilde Page'e gidiyorsunuz. Bu zaten var olan bir yapı.
+
+26
+00:07:52,651 --> 00:07:59,932
+Bir de şey var. TLB'de yoksa TLB Miss oluyor. Page Table'a gideceksiniz. Page Table'da yoksa Page Miss oluyor.
+
+27
+00:07:59,932 --> 00:08:03,532
+Gidip diskten getirip koyuyorsunuz. Page Table'ı güncelliyorsunuz.
+
+28
+00:08:03,532 --> 00:08:08,651
+Varsa da işte Memory falan alıyorsunuz. Şimdi TLB Miss hiç yapmak istemediğimiz bir şey.
+
+29
+00:08:08,651 --> 00:08:12,252
+Çünkü gidip bir look up yapacaksınız.
+
+30
+00:08:12,252 --> 00:08:14,252
+Böylelikle şey...
+
+31
+00:08:14,644 --> 00:08:38,163
+Yani bu TLB ile biz ne kadar memori kavrederiz ki TLB mislimiz daha az olsun diye. İşte bir çözüm var zaten süper page. Bunun aklına gelecek en basit çözüm bir kere page şeyini artırmak. Paginiz ne kadar fazlaysa o kadar birden şey getirebileceksiniz. Ama tabii hemen böyle olmuyor. Page size'ını artırdık diye performanslar zaman artacak değil. İşte page size çok oldu. Siz bir bit kullandınız bir page'den. Geri kalan kısım hoş oldu.
+
+32
+00:08:38,163 --> 00:08:40,564
+Page sayısını artırmaktan neyi kastediyorsun?
+
+33
+00:08:40,564 --> 00:08:41,144
+Yok size.
+
+34
+00:08:41,620 --> 00:09:08,920
+İşte 4 kilobayt değil de, page'lerimiz 20 megawatt, gerçi 20 de olabilir de. Yani page size'ını arttırmak bu işi sağlayacaktır. Page'in boyutunu arttırmak. Peki page size'ını arttırırken neye göre arttırmam lazım? Hangi kritele göre arttırmam lazım? Şöyle zaten onu da açıklıyorlar. Page size'ını her zaman arttırmak size şey vermeyecek. Bu base page, bir de süper page, süper page'i de anlatayım. Süper page normal base page'lerden daha büyük olan page'ler.
+
+35
+00:09:09,344 --> 00:09:15,163
+Base Page'in size'ını arttırmak aslında benim burada dediğim. Base Page'in size büyük olursa, memori daha büyük kısımlarına ulaşırsınız.
+
+36
+00:09:15,344 --> 00:09:28,663
+Base Page'in size'ını mı arttırıyoruz yoksa birden fazla Base Page'i bir bütün olarak kullanıp onun bir katı olarak oluşturduğumuz yeni yapıya süper page mi diyoruz?
+
+37
+00:09:29,364 --> 00:09:35,464
+Base Page'in size'ını arttırmıyoruz. Çünkü burada şey diyor işte, bunu da bir yöntem olarak söylemiş ama bunun çok iyi olmayacağını söylüyor.
+
+38
+00:09:37,344 --> 00:09:55,624
+Büyütüp, işte birleştirelim. Belki ilk memori istediğimiz zaman birleştiririz ya da işte page'leri kullandıkça proses o ara bir bütün haline getiririz. Böyle bir yapıdan bahsediyor. Super page, best page'lerden bir bütün olarak daha büyük super page'leri oluşturmak.
+
+39
+00:09:56,264 --> 00:09:57,184
+Tamam, çok güzel.
+
+40
+00:09:57,184 --> 00:10:00,884
+Bundan bahsediyor. Daha sonra neleri anlatıyor?
+
+41
+00:10:03,668 --> 00:10:22,988
+Bir de birkaç şey daha vermişti. Bu constraintlerden bahsediyor. Superpage'in bir kere donanımdan support edilebilmesi lazım. Daha sonra superpage'in contiguous olması lazım. Hem virtuoda hem fizikselde.
+
+42
+00:10:24,087 --> 00:10:29,807
+Contiguous olmasından neyi kastediyoruz? Var mı [öğrenci] haricinde cevap vermek isteyen arkadaşlar?
+
+43
+00:10:32,692 --> 00:10:46,052
+Quantity Solumsuz Hocam, aynı şeyde arada boşluk olmadan, farklı pejler girmeden araya. Ardışıl, sequential olmuş.
+
+44
+00:10:46,771 --> 00:10:53,471
+Fiziksel olarak ardışıl gelmesi değil mi? Arka arkaya gelmesi. Peki niçin gerekli bu?
+
+45
+00:10:59,604 --> 00:11:04,604
+Burada belli bir indislemeyle gidiyor benim gördüğüm kadarıyla.
+
+46
+00:11:06,504 --> 00:11:07,604
+Bu indislemede...
+
+47
+00:11:08,467 --> 00:11:17,727
+Mesela şeyi çekerken falan birinciden git sonra ondan üç. Yani bir eray'deki erişim gibi ben algıladım.
+
+48
+00:11:18,028 --> 00:11:20,788
+Yani introduction'dan sonrasını çok okumadım.
+
+49
+00:11:20,788 --> 00:11:24,288
+Neyse okumadım introduction'dan sonrasını.
+
+50
+00:11:25,427 --> 00:11:29,907
+Hocam ben sadece introduction kısmıyla şey yapacağız gibi algılamıştım.
+
+51
+00:11:30,207 --> 00:11:31,147
+Ne kadar.
+
+52
+00:11:31,907 --> 00:11:32,727
+Olur mu bir şey.
+
+53
+00:11:33,288 --> 00:11:36,107
+Bütün şeyi okuyacak zamanım da olmadı açıkçası.
+
+54
+00:11:36,467 --> 00:11:39,967
+Biraz baktım şeylere falan ama...
+
+55
+00:11:39,967 --> 00:11:47,747
+Peki, başka introduction'un ötesini okuyup da... [öğrenci] sana söz veririm ama şu anda değil, diğer arkadaşlarının durumunu da anlamak istiyorum.
+
+56
+00:11:47,747 --> 00:11:56,087
+Introduction'un ötesini okuyup az önce sorduğum soruya, [öğrenci]'in cevap vermek için başladığı soruya cevap verebilecek olan kim var?
+
+57
+00:11:57,207 --> 00:11:59,747
+Hocam, ben bir cevap verebilirim.
+
+58
+00:12:00,087 --> 00:12:01,067
+Ver bakalım kardeş.
+
+59
+00:12:02,035 --> 00:12:07,155
+Evet, sequential ard arda olması bize erişim anlamında bir kolaylık sağlıyor.
+
+60
+00:12:08,035 --> 00:12:08,435
+Kolaylık.
+
+61
+00:12:09,815 --> 00:12:10,615
+Evet.
+
+62
+00:12:11,155 --> 00:12:16,675
+Yani ard arda olmasa da erişebilirim ama ard arda olduğu için daha mı kolay erişebilirim?
+
+63
+00:12:17,055 --> 00:12:19,515
+Yoksa ard arda olmazsa hiç mi erişemem?
+
+64
+00:12:20,215 --> 00:12:27,735
+Şöyle hocam, aslında ard arda olmasa fragmente bir memori elimizde olmuş oluyor.
+
+65
+00:12:28,371 --> 00:12:36,051
+Bu memoriye erişmek için de farklı adres bloklarında olduğu için farklı şeylerle erişmek gerekir.
+
+66
+00:12:36,051 --> 00:12:37,551
+Neymiş o?
+
+67
+00:12:39,231 --> 00:12:47,451
+Yani şey yapısında, bu tasarlanan yapıda amaç biraz daha verimliliği arttırmak.
+
+68
+00:12:48,231 --> 00:12:51,951
+Ama bir dakika daha ilerlemeden o söylediğin şeyde...
+
+69
+00:12:51,951 --> 00:13:02,151
+Bence tam doğru olmayan bir kısım var. Zaten Page ve Frame yapısı hangi problemi çözmek için ortaya atılmış bir yapı?
+
+70
+00:13:02,151 --> 00:13:14,751
+Kontücüs olmasın diye herhalde hocam. Paging sistemi normalde segment sisteminde arka arkaya gelmesi gerekiyor. Ama paging sisteminde...
+
+71
+00:13:15,028 --> 00:13:18,508
+Yani fiziksel memori'de, page'ler farklı yerlerde olabilir.
+
+72
+00:13:19,108 --> 00:13:26,628
+Olabilir. Yani buna bağlı olarak ben memori'de boş bulduğum bir page boyutuna denk düşen yeri kullanabilirim.
+
+73
+00:13:27,648 --> 00:13:33,567
+Böylece, [öğrenci] az önce söylemeye çalıştı ama fragmentation'ı en aza indiririm.
+
+74
+00:13:33,567 --> 00:13:43,028
+Peki, ben şimdi page'leri, base page dediğimiz mesela 4K, bundan 10 tanesini bir araya getirdim ve...
+
+75
+00:13:43,028 --> 00:13:57,048
+40K oluşturmak istiyorum. Bu 40K'lık page'in hem zaten page sanal tarafı ifade ediyor, hem de fiziksel taraftaki frame karşılığının mutlaka ve mutlaka nasıl olması gerekiyor?
+
+76
+00:13:58,388 --> 00:14:00,087
+Sequential olması lazım hocam.
+
+77
+00:14:00,087 --> 00:14:04,327
+Evet, çünkü eğer sequential olmazsa ne olur?
+
+78
+00:14:06,868 --> 00:14:18,688
+Erişmeye çalışırken sanal adres üzerinden gidiyoruz hocam. O yüzden gösterdiği adreste başka bir proses olacağı için erişim hatası alırız muhtemelen.
+
+79
+00:14:19,251 --> 00:14:46,771
+Yani indisi sıralı kullanmak zorundayız değil mi? Offset. [öğrenci] ilk söylerken ona offset dedi. O offset'i ben sıralı kullanmak zorundayım. Yani 5'ten 25'e atlayamam ki. 5'ten sonra 6 geliyordur. 6'dan sonra 7 geliyordur. Yani o 40k'ya denk düşen şey. O zaman şöyle bir problemle karşılaşmayacağız mı? Yani page frame yapısını niye geçtik?
+
+80
+00:14:47,155 --> 00:15:09,035
+Contiguous, fiziksel olarak ardışılığı en aza indirmek, fragmentation'ı en aza indirmek. Ama bu sefer bunları TLB'ye daha az gideyim, daha az erişeyim diye birleştirmeye başladığımda çözmeye çalıştığım problemi sanal olarak tekrar oluşturmuş olmayacak mıyım?
+
+81
+00:15:15,956 --> 00:15:17,395
+Yok mu yorum yapacak onu?
+
+82
+00:15:20,395 --> 00:15:28,536
+Aslında sistemde çalışan proseslerin sayısına göre de biraz bu durum değişebilir hocam bence.
+
+83
+00:15:28,536 --> 00:15:39,536
+Çünkü eğer sistemde hep aynı prosesler aynı şekilde çalışıyorsa ve ihtiyaç duydukları bellek...
+
+84
+00:15:39,988 --> 00:15:55,468
+Ama bunu öngörübilir miyim? Çoklu kullanıcı, çoklu işlem yapılan bir sistemde bunu öngörüp veyahut da bu varsayımdan yola çıkarak hep böyle olacağını kabul ederek bir şey kurabilir miyim?
+
+85
+00:16:07,379 --> 00:16:28,660
+Framelerin, Contiguous olmasının bir gerekliliği kalmasın istiyorum. Fakat daha sonra karşıma çıkıyor ki TLB işi hızlandırıyor ama yine de TLB'ye sürekli erişim yapmam lazım. O zaman TLB erişimini azaltmak için diyorum ki, Base Page'im.
+
+86
+00:16:29,299 --> 00:16:49,599
+x kadarsa ben o x tanesini bir araya getireyim. Mesela n tane, n x tanesi için bir entry tutayım. Yani tekrar bunları birleştireyim. O zaman başlangıçta çözmek istediğim problem tekrar karşıma çıkar mı? Çıkmaz mı? Çıkıyorsa nasıl çıkar?
+
+87
+00:16:51,668 --> 00:17:08,688
+Mesela ben başka şu ana kadar kimler var burada konuşmamış olan onları bir şey yapalım. [öğrenci] var, [öğrenci] var, [öğrenci] var, [öğrenci] var, [öğrenci] var, [öğrenci] var. Sizler ne diyorsunuz? [öğrenci] var.
+
+88
+00:17:13,203 --> 00:17:14,571
+Hocam benim...
+
+89
+00:17:14,708 --> 00:17:26,968
+[öğrenci] ben bu arada armağanık oluyorum ama ikisini de söyleyebilirsiniz. Şöyle, ben diğer iki makale okudum ama bunun okuma fırsatım olmadı. O yüzden yorum yapamayacağım. Diğer kısmı bekliyorum açıkçası.
+
+90
+00:17:26,968 --> 00:17:32,548
+Orayı bekliyorsun. Bu ama bir numaraydı. Sen ne yaptın? Sıfırı okudun, ikiyi okudun.
+
+91
+00:17:33,208 --> 00:17:42,307
+Onun serpesi daha az olunca bir de daha çok ilgimi çekti. Dedim ki bundan başlayayım, bunu da yetiştirebilirim diye düşündüm. Ama yetiştiremeyince böyle bir tablo çıktı ortaya.
+
+92
+00:17:42,675 --> 00:17:47,576
+Tamam, peki. Razı'ya anlaştık. Diğer arkadaşlar?
+
+93
+00:17:49,435 --> 00:17:51,935
+Hocam, ben şöyle bir yorumda bulunabilirim.
+
+94
+00:17:52,415 --> 00:18:00,496
+Yok, dur. Sizler konuşuyorsunuz. Sizlere zaten söz vereceğim de. Diğer bağlı olup da sessiz kalan arkadaşlara sesleniyorum.
+
+95
+00:18:01,235 --> 00:18:06,415
+Hocam, şöyle bir şey. Evet, iki tane [öğrenci] var.
+
+96
+00:18:06,415 --> 00:18:09,775
+Aa, [öğrenci]. Evet, [öğrenci]. Evet.
+
+97
+00:18:10,304 --> 00:18:15,003
+Hocam, ben açıkçası makaleyi okudum ama bu soruya herhangi bir cevabım yok maalesef.
+
+98
+00:18:15,023 --> 00:18:22,184
+Yok, zaten senin sesin, ya sen [öğrenci] konuşunca senin etrafındaki çerçeve güncellendi ama o [öğrenci]'miş.
+
+99
+00:18:22,503 --> 00:18:22,704
+Evet.
+
+100
+00:18:24,084 --> 00:18:27,784
+Evet, [öğrenci]. Diğer [öğrenci] yani, [öğrenci] olan. Söyle bakalım.
+
+101
+00:18:28,435 --> 00:18:39,476
+Hocam, benim de anladığım burada dediğiniz gibi problem oluşabilir. Bu durumda da sistemde demotion veya eviction gibi yapılar var. Demotion'a da süper peycin boyutunu küçültmeye gidebiliyor.
+
+102
+00:18:39,476 --> 00:18:54,175
+Ama ne problem oluşacak? Bana onu söyleyeyim. Promotion, demotion, evet onlar çözüm önerileri. Önce bir problemin tanımını yapalım ki. Şimdi başından sonuna kadar.
+
+103
+00:18:54,559 --> 00:18:58,139
+Kaçınız okudu bu paper'ı?
+
+104
+00:18:59,539 --> 00:19:00,420
+Ben okudum hocam.
+
+105
+00:19:00,859 --> 00:19:01,400
+Süper.
+
+106
+00:19:01,839 --> 00:19:03,779
+Ben de okudum hocam.
+
+107
+00:19:04,480 --> 00:19:09,460
+Tamam, hepiniz okuduysanız bir fikriniz... Yani bayağı bir ses geldi. 3-4 tane geldi demek ki.
+
+108
+00:19:14,132 --> 00:19:17,172
+Bir yorum yapabiliyor olmanız lazım ya.
+
+109
+00:19:17,492 --> 00:19:23,112
+Hocam, yüksek transfer boyutu olabilir mi? Transfer trafiği.
+
+110
+00:19:24,492 --> 00:19:32,231
+[öğrenci], yani paperda ne yazıyorsa odur. Olabilir mi? Her şey olabilir de paperda bir şeyler yazıyor. Merak ediyorum.
+
+111
+00:19:44,819 --> 00:20:00,000
+Arkadaşlar, problem yine en başa dönüyor. Bakın, eğer biz bunları birleştirip süper page yaparsak ve bu süper page'lerimiz işte 40K olur, 1 MB olur, neyse 20-30 MB.
+
+112
+00:20:00,000 --> 00:20:09,819
+O zaman yine başta kurtulmak istediğim temel sıkıntıyla uğraşmak zorunda kalacağım. Nedir?
+
+113
+00:20:09,819 --> 00:20:15,619
+Hocam o input-output costu artıyor o zamanda eğer super size.
+
+114
+00:20:16,115 --> 00:20:17,456
+Page boyutu artarsa?
+
+115
+00:20:18,036 --> 00:20:18,855
+O ayrı bir şey.
+
+116
+00:20:19,115 --> 00:20:22,996
+Ben page'in değil mi hocam? Buradaki en büyük sorunumuz şu anda oluşan.
+
+117
+00:20:23,316 --> 00:20:29,355
+Yani mesela bir page'in bir kısmını kullandık ama super page'i de atıyorum 40 tane page vardı.
+
+118
+00:20:30,016 --> 00:20:32,056
+Diğer kısımlara hiç dokunmadık.
+
+119
+00:20:32,056 --> 00:20:38,695
+Yani bir de super page ile birlikte hani mixed bir versiyonundan da bahsediyorum akalde.
+
+120
+00:20:39,195 --> 00:20:43,516
+Hani karışık kullanırsak özellikle büyükler için yer bulmakta zorlanacağız daha.
+
+121
+00:20:44,115 --> 00:20:57,516
+Yer bulmakta, fragmentation değil, fiziksel memuride bulmam gereken yer, o süper page'i bir seferde alabilecek kadar tek parça halinde olması gerekiyor.
+
+122
+00:20:57,516 --> 00:21:06,496
+Zaten başlangıçtaki problem bu. Bu kadar böyle page frame yapısıyla uğraşılmasının temel sebeplerinden biri bu. Değil mi?
+
+123
+00:21:07,188 --> 00:21:25,968
+Memoride boş alan var. Toplamda bakıldığı zaman ihtiyacı karşılayacak kadar boş alan var. Ama bu boş alan tek parça değil, bir bütün değil. Farklı yerlere dağılmış durumda. O zaman benim ne yapmam gerekiyor mantıken?
+
+124
+00:21:31,347 --> 00:21:54,807
+Bir araya tek parça olacak şekilde bir araya toplamam gerekiyor. Emotion and eviction dediği olay. Emotion ve eviction değil, buna compaction diyoruz. Değil mi? Veya defragmentation diyoruz. Disklerde bunu yaptığımız zaman defragmentation olarak geçiyor. Memoride bunu yaptığımız zaman ne olarak geçiyor?
+
+125
+00:21:55,443 --> 00:22:14,603
+Compaction olarak geçiyor. Hatta işte Java, C Sharp gibi heapte obje aloke ederek çalışanlar da bunu yaptığımızda da garbage collection diyoruz. Aynı şey. Hiçbir farkı yok. Peki bu söylediğimiz üç tane şeyin temel can sıkıntısı ne?
+
+126
+00:22:19,443 --> 00:22:23,804
+Gerçekten ihtiyaç duyacak mıyız? Ne kadar süreyle orada kaldı falan?
+
+127
+00:22:24,203 --> 00:22:29,423
+Duyuyoruz. Gerçekten ihtiyaç duyacağız. Ama bunu yaparken ne olacak arkadaşlar?
+
+128
+00:22:29,864 --> 00:22:32,203
+Real location yapacağız hocam. Oca zaman olacak.
+
+129
+00:22:32,764 --> 00:22:40,443
+Zaman değil mi? Bunları bir araya getirmek. Çünkü memurideki boş alanları bir tarafa, dolu alanları bir tarafa...
+
+130
+00:22:41,395 --> 00:22:58,775
+Almak istiyorsam, kopyalama işlemi yapmam lazım. Memoriden memoriye kopyalayacağım. Başka çarem yok. Peki, kopyalama yaparken, memori'deki bir alanı başka bir alana taşırken, kopyaladığım alanda çalışma ihtiyacı olan bir prosesi çalıştırabilir miyim?
+
+131
+00:22:59,995 --> 00:23:00,615
+Hayır.
+
+132
+00:23:00,615 --> 00:23:08,915
+Tamam, demek ki bütün prosesleri durdurmam lazım. Hangi sıklıkla bunu yapmam gerektiğine bağlı olarak?
+
+133
+00:23:10,740 --> 00:23:27,820
+Aperiyodik bir şekilde her şey duracak. Böyle dolular bir tarafa, boşlar bir tarafa. Onlar sağlı sollu biriktikten sonra tekrar kalınan yerden çalışacak. Demek ki çalışma anları var, böyle duraksama anları var.
+
+134
+00:23:29,340 --> 00:23:37,820
+Orijinal problem bu. Bunu çözmek için ne yaklaşımı getiriliyor? Page ve frame yaklaşımı getiriliyor. Onu başta [öğrenci] anlattı.
+
+135
+00:23:38,355 --> 00:23:58,416
+Ama Page boyutu da küçük, Frame boyutu da Page'e eşit. Ve bunlar Memory'de her yere dağılabilirler. Ve ben her seferinde bir prosese alokasyon yapacağım zaman hangi birim üzerinden yapıyorum? Page boyutu üzerinden.
+
+136
+00:24:04,051 --> 00:24:14,751
+Sanal tarafta, Virtual Address Space'de arka arkeye geliyor olabilirler. Fakat buna denk düşen frameler, fiziksel address space'de nasıl olabilir arkadaşlar?
+
+137
+00:24:18,451 --> 00:24:19,652
+Dağılmış olabilir hocam.
+
+138
+00:24:20,132 --> 00:24:24,652
+Evet, dağılmış olabilir. Kesinlikle farklı yerlerde olabilirler.
+
+139
+00:24:25,551 --> 00:24:33,311
+Şimdi her seferinde de bir tablo üzerinden bakılması gerekiyor. Page Frame Table üzerinden.
+
+140
+00:24:33,311 --> 00:24:39,051
+İşte [öğrenci] söyledi, memori de olduğu için zaman kaybı. O zaman TLB'ye koyduk. Donanımla yapıyoruz.
+
+141
+00:24:39,316 --> 00:24:57,076
+Ama donanımda yaparken de, hızlandırırken de yine bir zaman kaybı var. Onu da ortadan kaldırmak istediğimde TLB üzerinden yaptığım lukabın masrafını azaltmak için ne yapmam lazım?
+
+142
+00:25:01,683 --> 00:25:03,723
+Page'leri büyütmek lazım.
+
+143
+00:25:03,963 --> 00:25:06,483
+Page'leri büyütmem lazım. Süper.
+
+144
+00:25:07,524 --> 00:25:14,483
+İşte page, bunun arkasında bu paper'daki yapılan çalışmanın arkasında yatan temel ana fikir bu.
+
+145
+00:25:14,483 --> 00:25:19,324
+Page'leri büyütüyorum. Base page'im var. 4K diyelim, 8K.
+
+146
+00:25:19,943 --> 00:25:26,804
+Super page'de bunun X katı neyse artık. 10 katı, 20 katı, 30 katı.
+
+147
+00:25:26,963 --> 00:25:37,463
+Ama bunu ben kontrolsüz olarak büyüttüğümde yine olay nereye dönüşecek, hangi duruma gelecek, başta tariflediğimize gelecek değil mi?
+
+148
+00:25:42,483 --> 00:25:44,043
+Evet hocam. Tabii ki hocam.
+
+149
+00:25:44,043 --> 00:25:57,423
+O zaman bunu yaparken nasıl yapmam gerekiyor arkadaşlar? Kontrollü yapmam lazım değil mi? Durumu izleyerek yapmam lazım.
+
+150
+00:26:01,556 --> 00:26:06,855
+Şimdi buraya kadar anlaştık mı?
+
+151
+00:26:10,771 --> 00:26:12,631
+Evet hocam.
+
+152
+00:26:12,631 --> 00:26:14,471
+Tamam. Peki.
+
+153
+00:26:16,711 --> 00:26:27,911
+O zaman şimdi bunu implement ederken, SuperPage oluştururken kaç farklı yaklaşımla oluşturmuşlar?
+
+154
+00:26:31,859 --> 00:26:33,859
+Hocam, üç farklı yolla.
+
+155
+00:26:33,859 --> 00:26:35,859
+Tamam, söyle bakalım.
+
+156
+00:26:35,859 --> 00:26:46,859
+Biri rezervasyona dayalı, yer değiştirmeye ve donanım tabanlı olanlar bitişikliğe olan gereksinimi azaltarak ortadan kaldırılması sanırım.
+
+157
+00:26:46,859 --> 00:26:49,859
+Bunun donanım tabansız olanı var mı?
+
+158
+00:26:49,859 --> 00:26:54,859
+Yok, pardon. Yanlış taraf var.
+
+159
+00:26:59,604 --> 00:27:01,084
+Hocam bir incremental olabilir.
+
+160
+00:27:04,004 --> 00:27:13,144
+[öğrenci], paperda ne yazıyorsa olabilir değil. Nasıl yapmışlar? Adamlar bunu yapmış, yazmış. Burada artık kayıt altında.
+
+161
+00:27:14,824 --> 00:27:22,444
+Yayınlamışlar da. Olabilirler üzerinden, olasılıklar üzerinden konuşamayız. Nasıl yapmışlar bunu?
+
+162
+00:27:43,955 --> 00:27:54,355
+Evet, [öğrenci]ler. İkinizden biri veya [öğrenci] veya [öğrenci], [öğrenci], [öğrenci], [öğrenci].
+
+163
+00:27:58,867 --> 00:27:59,867
+Yok mu cevap?
+
+164
+00:28:12,915 --> 00:28:26,635
+Hocam, selamlar [öğrenci]. Ben burada şey makalede yazıyor. Ben de açıkçası introduction'da sonuca daha fazla odaklandım. Ama söyleyeyim, arkadaşlarım belki aklına gelir.
+
+165
+00:28:26,635 --> 00:28:27,435
+Tamam.
+
+166
+00:28:28,655 --> 00:28:39,635
+Rezervasyon'a, rezervasyon based allocation, yani daha önceden işte belli süper page'ler için belli alanları rezerve edip.
+
+167
+00:28:39,763 --> 00:28:47,963
+Bir ihtiyaç halinde oraya eleşim amaçlı item allocation.
+
+168
+00:28:47,963 --> 00:28:49,563
+Öbürü?
+
+169
+00:28:49,563 --> 00:28:58,963
+Diğeri, preferred super page size policy diyor. Buradaki polisinin açıkçası detayını bilmediğim için arkadaşlar...
+
+170
+00:28:58,963 --> 00:29:02,364
+Ne super page policy dedim, pardon?
+
+171
+00:29:02,771 --> 00:29:20,172
+Preferred, yani daha tercih edilmiş. Aslında yine benim mantıma göre bu rezervasyonla aynı oluyor. Daha önceden tercih edilmiş, mesela polislerle süper page'lerin kullanacağı belirleniyor diye anlıyorum.
+
+172
+00:29:20,172 --> 00:29:23,971
+Rezervasyon based alokasyonu okudum.
+
+173
+00:29:24,432 --> 00:29:43,811
+Değil mi? Söylüyorsun. Peki, Reservation Based Allocation anlatıldığı yerde hemen öncesinde bir yeri var. Preferred diyebilmesi için, tercih edilir demesi için birden fazla alternatif olmalı ki bunlardan birini tercih ettiğini söylesin.
+
+174
+00:29:44,127 --> 00:29:52,968
+Bu durumda da en az iki alternatifimiz olması gerekiyor. Reservation-based'in olduğu yerde aslında diğer yöntem de yazıyor arkadaşlar.
+
+175
+00:29:55,167 --> 00:29:59,427
+[öğrenci]'ın başta dediği doğru değil miydi hocam? Relocation-based ve reservation-based.
+
+176
+00:29:59,968 --> 00:30:01,667
+Kim söyledi onu? Ben duymadım.
+
+177
+00:30:02,427 --> 00:30:03,867
+[öğrenci] söyledi galiba.
+
+178
+00:30:03,867 --> 00:30:09,667
+Orada biraz karıştırdım aslında. Biri arkadaşın dediği gibi rezervasyon dayalı, diğeri yer değiştirme.
+
+179
+00:30:10,036 --> 00:30:14,816
+Bir de bitişiklik gereksinimi azaltarak yapmaya çalışıyoruz.
+
+180
+00:30:15,115 --> 00:30:19,415
+Ortada üç tane seçenek var mı? Relocation ve Reservation.
+
+181
+00:30:19,576 --> 00:30:21,476
+Ben o zaman öyle bir şey yanlış anladım.
+
+182
+00:30:21,915 --> 00:30:24,516
+Relocation yine neye denk düşüyor arkadaşlar?
+
+183
+00:30:27,736 --> 00:30:29,816
+Bizim ilk baştaki sorunumuza denk.
+
+184
+00:30:29,816 --> 00:30:31,696
+Kepiysel kopyalanması.
+
+185
+00:30:32,496 --> 00:30:37,216
+Yani diyelim ki ben super page oluşturmaya başladım.
+
+186
+00:30:37,748 --> 00:30:47,067
+İlk page'imi koyduğum yerde, ona denk düşen frame'i koyduğum yerde arkasında iki tane daha frame'lik boş yer vardı.
+
+187
+00:30:48,188 --> 00:30:53,768
+Şimdi 1, 2, 3 dedim ama super page'imin boyutunu 4'e çıkarmak istiyorum.
+
+188
+00:30:54,548 --> 00:30:59,968
+Üçüncü frame'in arkasında boş yer var mı? Az önceki söylediğim şeye göre yok.
+
+189
+00:31:00,788 --> 00:31:03,348
+O zaman memori'de ne bulmam lazım?
+
+190
+00:31:04,211 --> 00:31:06,352
+4 frame'lik boş başka bir yer.
+
+191
+00:31:06,831 --> 00:31:10,311
+Buldum. Bulduktan sonra ne yapmam gerekiyor?
+
+192
+00:31:10,751 --> 00:31:22,971
+3'lüğün olduğu yere kopyalayıp SuperPage boyutunu 4'e çıkarttığımda arkadaki 4. frame'i de bunun ucuna ekledim diye işletim sistemine söylemem lazım.
+
+193
+00:31:23,771 --> 00:31:24,912
+Yine bakın ne oldu?
+
+194
+00:31:26,036 --> 00:31:35,916
+Kopyalama işlemi oldu. Ha burada kopyalama işlemi sadece hangi kapsamda, hangi skopta gerçekleşti?
+
+195
+00:31:37,436 --> 00:31:38,816
+Donanım seviyesinde mi?
+
+196
+00:31:39,536 --> 00:31:44,836
+Hayır. Kopyalamayıp yani donanım, yazılım ikisi bir arada yapıyoruz da.
+
+197
+00:31:45,156 --> 00:31:46,316
+Tabii ki de canım.
+
+198
+00:31:46,316 --> 00:31:51,896
+Sadece ihtiyaç olduğumuz frame kadar yani.
+
+199
+00:31:52,403 --> 00:32:09,963
+Sadece bir şey ihtiyaç duyulan proseste gerçekleşti. Şu an için değil mi? O proseste SuperPage'i 3 frame'den 4'e çıkartmam gerekti. Sadece onu durdurup onunkini kopyaladım. Doğru mu?
+
+200
+00:32:11,843 --> 00:32:12,403
+Evet hocam.
+
+201
+00:32:12,403 --> 00:32:19,763
+Ama bu bir adım sonra veya birkaç adım sonra neye dönüşecek, nasıl bir tehlike var?
+
+202
+00:32:20,127 --> 00:32:26,607
+Yer bulamamaya başlayacağız. Yer bulamamaya başlayınca bu sefer ne yapmam gerekecek?
+
+203
+00:32:27,427 --> 00:32:30,207
+Tekrar hepsini ardışırmıştır.
+
+204
+00:32:30,567 --> 00:32:41,127
+Yani hepsini durdurup contraction yapmam gerekecek. Öyleyse relocation hem ilgili proses bazında...
+
+205
+00:32:41,332 --> 00:32:52,592
+Onun kapsamında hem de genel sistem kapsamında öngörülebilir bir performans getirmeyecek, bizi sıkıntılı duruma da sokabilecek değil mi?
+
+206
+00:32:55,932 --> 00:32:56,552
+Evet hocam.
+
+207
+00:32:58,012 --> 00:33:02,172
+Peki bunun alternatifi olarak ne demişler?
+
+208
+00:33:03,292 --> 00:33:04,472
+Reservation Based.
+
+209
+00:33:04,472 --> 00:33:06,932
+Reservation Based değil mi?
+
+210
+00:33:08,564 --> 00:33:20,404
+Peki, Reservation Based'de rezervasyon yapılırken temel olarak kabul edilen veyahut da kullanılan kriter ne?
+
+211
+00:33:30,644 --> 00:33:40,344
+Contiguous Page Frame eşit boyda ve istenen SuperVash boyutuna da eşit.
+
+212
+00:33:41,652 --> 00:33:43,492
+İstenen mi yoksa?
+
+213
+00:33:43,992 --> 00:33:45,272
+Arzu edilen daha doğrusu.
+
+214
+00:33:46,312 --> 00:34:00,731
+İhtiyaç öngörülen, arzu edilen, beklenen değil mi? Mesela ben diyorum ki bu uygulamada, bu uygulamanın optimal çalışması için page boyutunun, base page'in 50 katı olması lazım.
+
+215
+00:34:02,231 --> 00:34:05,552
+Peki, bunu benim söyleyebilmem için.
+
+216
+00:34:06,740 --> 00:34:08,180
+Neye ihtiyacın var?
+
+217
+00:34:08,840 --> 00:34:17,659
+Gözlemlemek ve daha önceden bunlarla kodlandığında, yani introduction'da bir bahsediyordu hocam, o konu galiba.
+
+218
+00:34:18,220 --> 00:34:24,559
+Önceden çalıştırmam lazım bunu. Yani bu prosesi çalıştırıp karakteristiğini görmem lazım.
+
+219
+00:34:24,800 --> 00:34:29,559
+Ama yani şunun ne anlamı olabilir arkadaşlar? Ben bunu bir çalıştırayım bakayım.
+
+220
+00:34:30,047 --> 00:34:55,327
+Böyleymiş. Ondan sonra bir daha çalışacak olursa ona şöyle süper page vereyim. Halbuki benim hedefim ne olmalı? Hiç daha önceden çalıştırmadığım bir prosesin super page ihtiyacını tahmin edebilmek veyahut da onu karşılayacak şekilde minimum performans kaybıyla bir yapı oluşturabilmek olmalı. Doğru mu?
+
+221
+00:34:56,980 --> 00:34:57,980
+Bu, Rado Rado.
+
+222
+00:34:58,996 --> 00:35:07,416
+Doğrudur deme [öğrenci]. Hoca söylüyor o zaman doğrudur deme. Belki ben paper'dan başka türlü kendime göre bir şeyler anlatıyorum.
+
+223
+00:35:07,416 --> 00:35:08,496
+Ben de mi hocam?
+
+224
+00:35:09,576 --> 00:35:10,715
+Bir arkadaş dedi.
+
+225
+00:35:11,416 --> 00:35:12,516
+Ben de hocam ona.
+
+226
+00:35:12,576 --> 00:35:14,036
+Valla ben bilmiyorum arkadaşlar.
+
+227
+00:35:14,395 --> 00:35:15,775
+Geformatik onlandır.
+
+228
+00:35:16,615 --> 00:35:22,215
+Etrafımızdaki kutucuklar böyle yeşil bende aydınlanıyor. Kiminki aydınlanırsa onun adını söylüyorum yani öyle değil mi?
+
+229
+00:35:22,235 --> 00:35:22,916
+Ben dedim hocam.
+
+230
+00:35:23,496 --> 00:35:25,056
+Sen mi dedin [öğrenci]? Peki tamam.
+
+231
+00:35:26,996 --> 00:35:43,615
+İstatistikte ne diyoruz? E priori, yani önceden tahmin edebilmemiz, öngörebilmemiz. Şimdi bu kolay bir şey değil. Daha önceden bunu bilmeden yapabilmek kolay değil.
+
+232
+00:35:44,675 --> 00:35:48,775
+Hocam bu tahmini mislediğimiz zaman tekrar bir relocation yapılır değil mi?
+
+233
+00:35:55,123 --> 00:36:03,663
+Optimal gitmekten çıktığı noktada veyahut da ihtiyacı karşılayamadığı noktada yine bir relocation olacak.
+
+234
+00:36:07,083 --> 00:36:13,023
+Şimdi, peki şeyle başladık diyelim.
+
+235
+00:36:15,743 --> 00:36:20,663
+Rezerve şey, relocation ile başladık. Öyle ilerliyoruz.
+
+236
+00:36:20,976 --> 00:36:25,316
+Relocation ne zaman optimum çalışır?
+
+237
+00:36:30,516 --> 00:36:37,876
+Bellekte çok kontücüs alan varsa, özellikle bir hareket ettiğimiz proses içerisinde.
+
+238
+00:36:37,876 --> 00:36:50,255
+Boş alanımız, belleğimiz büyükse, bellekteki arka arkaya kontücüs alanlarımız bolsa, o zaman relocation iyi çalışır. Çünkü relocation'a muhtemelen ihtiyaç duymayacağım.
+
+239
+00:36:51,475 --> 00:36:56,876
+Ama proses sayım arttıkça veya bellek kapasitem...
+
+240
+00:36:57,568 --> 00:37:14,608
+Kısıtlıysa o zaman sürekli relocation yapmak durumunda kalabilirim. Peki bu durumda şimdi reservation önceden bilgi gerektiriyor. Relocation tıkandığımız zaman kopyalama gerektiriyor.
+
+241
+00:37:22,900 --> 00:37:28,159
+Kontrollü yaklaşabilecek ne olabilir? Nasıl bir yaklaş?
+
+242
+00:37:28,640 --> 00:37:32,039
+Birden fazla süper page size olursa hocam.
+
+243
+00:37:32,900 --> 00:37:41,519
+Dur dur çok hızlı gittin. [öğrenci] dur çok hızlı gittin. Birden fazlasından önce bir ara adımı konuşmamız gerekiyor.
+
+244
+00:37:42,860 --> 00:37:46,000
+Incremental promotion dediğimiz konu müdür hocam?
+
+245
+00:37:46,279 --> 00:37:50,500
+Promotion ne ki incremental promotion ne olsun? Önce promotion'u tarifle.
+
+246
+00:37:53,780 --> 00:38:11,880
+Aslında şöyle bir şey görmüştüm introduction kısmında ama doğru yerde mi söylüyorum bilmiyorum. Mesela öngörümümüzdün iki katı gibi bir yeri aslında almaktan bahsediyor. Sonra aloke etmeyecek. Daha sonrasında promote ederek oraları kullanabilmek için.
+
+247
+00:38:12,596 --> 00:38:22,096
+Vallahi oku etmezse de tam oradaki şeyi anlayamadım ama arkasında boşluk olacak yeri seçiyor gibi bir şey vardı sanırım. Yanlış hatırlamıyorsam.
+
+248
+00:38:22,355 --> 00:38:39,676
+Şimdi diyelim ki ben ortalama süper page'i, onun boyutunu on base page olarak kabul ediyorum. Hiç daha süper page işine girmeksizin.
+
+249
+00:38:40,403 --> 00:38:46,984
+Onu hesaba katmaksızın, proseslere normal base page'lere aloke ediyorum. Tamam mı?
+
+250
+00:38:46,984 --> 00:39:00,844
+Ama bir taraftan da base page'lere, prosesler için base page'lere denk düşürülmüş frame'lerin memorideki durumlarını
+
+251
+00:39:01,748 --> 00:39:26,168
+Gözlemliyorum. Yani işletim sisteminin içerisinde periyodik bir kod parçası çalışıyor. Bir prosese ait kaç tane frame arka arkaya gelmiş. Contiguous. Bunlardan 10 tane öngörmüştüm ya. Hani super page boyutu 10 tane base page olacak demiştim ya.
+
+252
+00:39:26,708 --> 00:39:38,008
+Bunlardan 10 tane arka arkaya gördüğümde hemen ne diyorum? Bunlar için niye 10 tane entry tutuyorum ki ben diyorum değil mi? Ne yapmam lazım?
+
+253
+00:39:39,668 --> 00:39:41,528
+Şimdi promote etmemiz lazım.
+
+254
+00:39:44,108 --> 00:40:04,768
+Zaten kendiliklerinden memori de arka arkaya gelmişler. Değil mi? Arka arkaya getirmek için uğraşmamışım. Zaten o durumdalar. O zaman bunları birleştirelim. Bir super page yapalım. Tek bir entry ile hepsine ulaşalım. İşte bu işleme ne diyoruz?
+
+255
+00:40:05,868 --> 00:40:06,508
+Promotion.
+
+256
+00:40:07,059 --> 00:40:30,400
+Promotion diyoruz. Doğru mu? Yani doğal hali ile arka arkaya memuride fiziksel olarak gelmiş olan frenleri tespit ettiğimiz zaman bunları birleştirip tek bir entry ile erişilebilir hale getiriyoruz.
+
+257
+00:40:32,019 --> 00:40:33,739
+Hocam bir şey sorabilir miyim?
+
+258
+00:40:34,132 --> 00:40:44,512
+Böyle yapmasaydık, normalde TLB bunların her birini ayrı bir page olarak göreceği için yine de tek bir TLB entries ile bunlara ulaşamayacaktık değil mi? Bunların süper performansı lazım.
+
+259
+00:40:44,912 --> 00:40:48,032
+Aynen. Her biri için ayrı lookup yapılması gerekecekti.
+
+260
+00:40:50,032 --> 00:40:57,952
+Peki, promotion'ı incremental yani artarak nasıl yapabilirim?
+
+261
+00:41:04,436 --> 00:41:08,256
+Proses memorilere, page'lere dokundukça yapabilir miyiz hocam?
+
+262
+00:41:08,256 --> 00:41:19,256
+Şimdi, Romotion'un arkasında yatan, rahat yapılmasını sağlayacak olan...
+
+263
+00:41:20,596 --> 00:41:32,376
+Kavramı, az önce bir arkadaşınız söyledi aslında. Neyle ilişik bu ilişkili? Hangi alokasyon tipiyle? Relocation-based mi? Reservation-based mi?
+
+264
+00:41:37,523 --> 00:41:38,764
+Reservation Based.
+
+265
+00:41:39,824 --> 00:41:41,284
+Evet [öğrenci].
+
+266
+00:41:41,804 --> 00:41:44,324
+Reservation Based olması gerekmiyor.
+
+267
+00:41:44,324 --> 00:42:00,204
+Evet, aynen öyle. Yani Reservation'da ben Memori'de, fiziksel address space'de bir alanı önden rezerve ettiğimi varsayıyorum.
+
+268
+00:42:01,748 --> 00:42:15,047
+Orada page'lere denk düşen frame'lere alokü ediyorum. Bunların sayısı belirli bir eşit değerini açtığında promote ediyorum ve teke indiriyorum TLB'deki kayıt sayısını, entry sayısını.
+
+269
+00:42:16,327 --> 00:42:23,207
+Sonra bu işleme nereye kadar devam edebilirim arkadaşlar?
+
+270
+00:42:26,579 --> 00:42:36,279
+Yine bu belirlediklerimiz de, arka arkaya ardışlı olarak Super Smash'ler de geldikçe, bu sefer onları da birbirine bağlayabiliriz.
+
+271
+00:42:36,299 --> 00:42:41,239
+Nereye kadar bağlayabilirim? Nereye kadar gidebilirim? Oradaki bir sık var. Neyle sınırlı?
+
+272
+00:42:41,239 --> 00:42:46,719
+Proses artık rezerve edilen bazı kısımları kullanmadığı zaman.
+
+273
+00:42:47,092 --> 00:42:52,412
+Hayır, o zaman promote mu edersin? Rezerve edilen alanı kullanmıyorsa geri alman lazım.
+
+274
+00:42:52,432 --> 00:42:53,252
+Geri alacağız.
+
+275
+00:42:53,632 --> 00:42:57,392
+Geri alacağız. Nereye kadar devam edebilirim diyorum. Sen geri alacaksın.
+
+276
+00:42:58,072 --> 00:43:00,172
+Page boyutundan kadar devam edebiliriz hocam.
+
+277
+00:43:00,532 --> 00:43:06,472
+Nasıl ya? Page boyutunu zaten ben set etmişim. Nereye kadar gider arkadaşlar?
+
+278
+00:43:07,711 --> 00:43:09,852
+Hocam, ilk rezerve ettiğimiz sayıza kadar gidebiliriz.
+
+279
+00:43:10,192 --> 00:43:25,352
+Hah, rezervasyon ne kadar değilsa oraya dayanana kadar gidebilirim. Çünkü neyi garanti edebilirim en fazla? Rezervasyonumun içinde kaldığım sürece oradaki bütün memori kontücüyüz. Yani fiziksel olarak ardışıl.
+
+280
+00:43:32,148 --> 00:43:39,288
+Frame yok. Başka bir, daha doğrusu boş frame, uygun frame yok. Başka bir prosese alokiyet edilmiş bir frame var.
+
+281
+00:43:39,768 --> 00:43:47,027
+Burada rezervasyon size'ını kim veriliyor hocam? Proses kendisi mi bana şu kadar rezerv ediyor yoksa sistem mi takip ediyor?
+
+282
+00:43:54,195 --> 00:43:58,895
+Bilgiye ihtiyaç var, bunu bir görmeye ihtiyaç var, ne olduğunu.
+
+283
+00:43:59,475 --> 00:44:06,556
+Prozesten gelen talebe göre değil de tamamen işletim sistemi kendi tahminiyle yani.
+
+284
+00:44:07,215 --> 00:44:13,775
+Aynen, yani orada bir estimation, bir prediction yapması lazım. Yoksa bilimsel çalışma olmaz arkadaşlar.
+
+285
+00:44:18,164 --> 00:44:21,164
+Peki, şimdi...
+
+286
+00:44:25,300 --> 00:44:27,500
+Demotion ne zaman gerçekleşiyor?
+
+287
+00:44:33,268 --> 00:44:39,068
+Hocam artık base page'lerin bir kısmını kullanmıyorsa artık hepsi bir super page olmaması onda değil.
+
+288
+00:44:39,968 --> 00:44:40,348
+Hı hı.
+
+289
+00:44:40,568 --> 00:44:40,908
+Proses.
+
+290
+00:44:42,588 --> 00:44:45,428
+Tüm kısımlarını kullanmıyor aslında super page'in.
+
+291
+00:44:47,148 --> 00:44:47,488
+Tamam.
+
+292
+00:44:47,508 --> 00:44:48,148
+Aktif olarak.
+
+293
+00:44:50,068 --> 00:44:50,428
+Peki.
+
+294
+00:44:52,928 --> 00:44:56,688
+Demotion'daki temel problem ne?
+
+295
+00:45:06,579 --> 00:45:13,720
+İndirgeme yaptığımız zaman rezerve ettiğimiz alanın arasında sparse şeyler oluşacak.
+
+296
+00:45:15,079 --> 00:45:22,860
+Ama indirgeme yaparken maksimum değerden minimum değere göre indirgeyeceğim. Ama demotionla alakalı temel bir sıkıntı var.
+
+297
+00:45:23,420 --> 00:45:25,480
+Burada bit tutuyor.
+
+298
+00:45:26,452 --> 00:45:34,771
+Kirli mi değil mi şeklinde SuperPage için ama hangi base page kirli veya değil onu anlama şansımız zorlaşıyor burada.
+
+299
+00:45:35,092 --> 00:45:46,612
+Aynen. Çünkü donanımın page frame mantığındaki yapısı ne? Her frame için orasında değişiklik oldu mu olmadı mı? İşte dirty bit.
+
+300
+00:45:52,884 --> 00:46:09,884
+Promot ettiysem, bu sefer Superpage'in tamamı için değişti mi, değişmedi mi diye bir bilgi tutulacak. Hangi parçası değişti? Nereye kadar kısacağım? Değil mi? Nasıl yapacağım? Orada donanım desteği...
+
+301
+00:46:10,324 --> 00:46:22,884
+Bize ihtiyaç duyduğumuz gerçek desteği sağlamayacak. Çünkü donanımın kendisi page mantığı üzerine kurulur. Burada bir sıkıntımız var. Bunu çözmemiz lazım.
+
+302
+00:46:25,364 --> 00:46:27,124
+Peki, eviction ne?
+
+303
+00:46:30,516 --> 00:46:37,196
+Hocam, Mavic'sin o page'in diske alınması, standart bir prosedür aslında.
+
+304
+00:46:38,096 --> 00:46:50,056
+Tamam, standart. Yani normal page memory management'ta olan şeyin aynısı. Fakat burada diske alınacak olan page boyutu hangi boyutta?
+
+305
+00:46:51,636 --> 00:46:53,256
+Super page kadar hocam.
+
+306
+00:46:53,736 --> 00:46:54,976
+Super page kadar.
+
+307
+00:46:55,635 --> 00:47:03,635
+Biz bir tane base page kirli olsa da, 10 boyutlu bir super page oluşturduysak hepsini page'e at etmemiz gerekiyor.
+
+308
+00:47:03,635 --> 00:47:07,635
+Yani bu bir problem aslında.
+
+309
+00:47:07,635 --> 00:47:13,635
+Çok güzel. Peki. Şimdi, bir başka problem ne?
+
+310
+00:47:13,635 --> 00:47:17,579
+Super page'lerdeki eviction işlemi sırasında.
+
+311
+00:47:27,155 --> 00:47:30,336
+Biriniz söyledi bir ara ama tabii...
+
+312
+00:47:30,336 --> 00:47:40,916
+Bir öncekiyle benzer bazı base page'ler clean aslında temiz ama tek bit tutumuzdan dolayı bütün hepsini sallamış oluyoruz.
+
+313
+00:47:41,996 --> 00:47:52,235
+Çok teknik oldu, salladık. Ne diye? Diske mi salladık? Yazdık, sonra tekrar geri almamız lazım. Yani zaman kaybı oluşturuyoruz.
+
+314
+00:47:53,907 --> 00:48:04,727
+Superpage'in aslında içinde yer alan bütün base page'lerin tamamının değiştirilmiş olması olası değil.
+
+315
+00:48:05,487 --> 00:48:13,587
+Değişmemiş olanları da var. Her seferinde hepsinin birebir değişmiş olması olası değil. Çok düşük bir olasılık.
+
+316
+00:48:14,587 --> 00:48:19,667
+Buna rağmen biz değişmemiş, temiz olanları da yazıyoruz.
+
+317
+00:48:20,224 --> 00:48:44,903
+Ve tekrar onların tamamını geri getirmek zorundayız. O zaman boyut arttıkça ve eviction yapılması gerektikçe disk IOS'undan, page'lerin diske yazılıp tekrar geri okunmasından kaynaklı bir gecikmemiz olacak, bir zaman kaybımız olacak.
+
+318
+00:48:49,492 --> 00:49:01,432
+Bunu biliyoruz. Evict ettiğimiz, yani dışarı gönderdiğimiz page'ler var. Bunları geri alırken nasıl bir yöntem izleyeceğim?
+
+319
+00:49:06,324 --> 00:49:31,884
+Map'te tutuyoruz. Bu population map hocam. Bu o mudur acaba? Yani hangisinin kirli olduğunu map üzerinden yakalıyoruz diye anlıyoruz. Hayır, onu geçtik. Hangisinin kirli olduğunu yazdım ben. Diskte. SuperPage diske yazıldı. Artık diske yazıldıktan sonra kirliydi, temizdi diye bir şey kalmadı. Diske yazıldıktan sonra hepsi hangi statüyü aldı?
+
+320
+00:49:34,036 --> 00:49:55,716
+Kirli mi, temiz mi? Artık gitti. Dirty hepsi. Olur mu? Hepsi clean. Diske yazıldı. Bilinen bir noktaya geldi. Yani yazdık aslında. Evet hocam. Hepsi clean oldu. Dirty diye bir şey kalmadı. Çünkü dirty olduğu için oraya yazdık. Diske kaydettik. Şimdi diskten bunu geri getireceğim. Ne yapmam gerekiyor?
+
+321
+00:50:00,000 --> 00:50:19,440
+Yani şu ana kadar gördüğümüz ne mantığını uygulayabiliriz? O reservation falan gibi az önce konuştuğumuz mantıkların benzerini uygulayarak ne yapabiliriz? Geri döndürebiliriz. Doğru mu?
+
+322
+00:50:19,440 --> 00:50:21,540
+Evet.
+
+323
+00:50:24,371 --> 00:50:28,751
+Faktif ediyorum size arkadaşlar. Yavaş yavaş ilerliyoruz böyle. İttire ittire.
+
+324
+00:50:33,972 --> 00:50:41,172
+Peki, acaba buraya kadar kim geldi diye merak ediyorum. Spekülatif Demotion'a bakanınız oldu mu?
+
+325
+00:51:07,860 --> 00:51:09,800
+Hocam ben baktım da hatırlamıyorum.
+
+326
+00:51:09,800 --> 00:51:11,460
+Çok iyi tamam.
+
+327
+00:51:11,639 --> 00:51:22,059
+Çünkü spekulatif temoşuna geldiğimde falan biraz terimler yoğun olduğu için.
+
+328
+00:51:24,039 --> 00:51:31,380
+Dikkatimi açıkçası toplamakta da zorlanıyorum hocam makale okurken. Sizin kullandığınız bir teknik var mı?
+
+329
+00:51:31,923 --> 00:51:42,704
+Bununla alakalı yani böyle 20-30 dakika okuduktan sonra biraz okuyorum ama şey olmuyor. Detaylar yerleşmiyor yani.
+
+330
+00:51:43,963 --> 00:51:59,324
+Yani 20 dakika, 30 dakika aralıksız okumak güzel bir şey. Ondan sonra bir 5 dakika, 10 dakika ara verirsin ama okurken de not alman, bir yerlerini işaretlemen, kenara bir şeyler yazman gerekiyor.
+
+331
+00:51:59,711 --> 00:52:00,331
+Bence.
+
+332
+00:52:06,003 --> 00:52:15,963
+Sana önerebileceğim şey bu. Ben kendim okurken genel olarak bildiğim yerlere daha hızlı geçiyorum. Genel kavramları daha hızlı geçiyorum.
+
+333
+00:52:15,963 --> 00:52:31,583
+Ama yayının özüyle alakalı, orada yapılan çalışmayla alakalı kısımları ya işte highlighter'la ya da o anda elimde kalem varsa yanına bir çizik atarak ve not düşerek aklımdakileri de yazarak böylece pekiştirmiş oluyorum.
+
+334
+00:52:31,704 --> 00:52:33,364
+Bakmam gereken bir yer varsa da.
+
+335
+00:52:33,715 --> 00:52:41,735
+Onu ayrıca bakıyorum not alıp. Yani bunun çok da farklı bir yol olacağını düşünmüyorum.
+
+336
+00:52:48,083 --> 00:52:49,983
+Ben de benzeri şeyleri ömüyorum hocam.
+
+337
+00:52:50,223 --> 00:52:53,543
+O zaman o alışkanlığı kazanman lazım.
+
+338
+00:52:57,723 --> 00:53:09,703
+Mesela hani bir super page'in içerisinde hamamı kirli olmayabilir dedik ya, yani kirli olmaması ihtimali daha yüksek dedik ya arkadaşlar aslında.
+
+339
+00:53:11,283 --> 00:53:14,543
+Hangilerinin kirli, hangilerinin temiz olduğunu...
+
+340
+00:53:15,155 --> 00:53:21,295
+Öngörebileceğimiz bir yaklaşım var mı bu paperda? Onun üzerine çalışmışlar mı?
+
+341
+00:53:43,092 --> 00:53:54,092
+Ben okuduğum kadarıyla görmedim hocam. Kirli biti setlendiyse tüm superpage kirli olarak düşünülerek işlemler gerçekleştiriliyor.
+
+342
+00:53:54,092 --> 00:54:03,092
+O zaman bak 4.7 paging out, dirty superpages başlığı altında.
+
+343
+00:54:03,092 --> 00:54:07,884
+Evet, hashleme ile alakalı bir kısım da vardı.
+
+344
+00:54:08,500 --> 00:54:20,780
+Secure Hash. Bakın nasıl bir teknik? Normalde Secure Hash algoritmaları kriptografide kullanılıyor ama o algoritmayı burada,
+
+345
+00:54:22,160 --> 00:54:29,500
+Secure Page'in içerisinde nereler etkilenmiş veyahut da tamamı mı etkilenmiş, onu...
+
+346
+00:54:31,155 --> 00:54:34,476
+çözmek için farkına varmak için kullanabiliyoruz.
+
+347
+00:54:34,875 --> 00:54:37,255
+Evet. Orada şey de dikkatimi çekmişti.
+
+348
+00:54:37,375 --> 00:54:40,135
+2 üzeri 80 bir olasılıkla
+
+349
+00:54:40,135 --> 00:54:42,895
+eşin probabilitisi varmış.
+
+350
+00:54:43,755 --> 00:54:45,076
+Çakışma probabilitisi.
+
+351
+00:54:45,315 --> 00:54:49,536
+Bu donanım hatasından çok daha küçük olduğu için
+
+352
+00:54:49,536 --> 00:54:52,016
+güvenli bir yöntem olarak kabul edilerek
+
+353
+00:54:52,016 --> 00:54:54,315
+kullanılabiliyormuş.
+
+354
+00:54:54,795 --> 00:54:55,855
+Onu hatırlıyorum.
+
+355
+00:54:57,492 --> 00:55:03,992
+Demek ki bununla da alakalı bir şey yapmışlar burada. Deneme yapmışlar.
+
+356
+00:55:04,992 --> 00:55:19,932
+Bu şeyi tam hatırlayamadım ama hocam, bu hash base page'lerin hash'ini alıp mı değişip değişmediğini anlıyorlar yoksa toplam süpür page'in hash'i mi? Orayı çok hatırlayamadım ama.
+
+357
+00:55:23,347 --> 00:55:38,688
+Bak ne diyor? When a clean memory page is read from disk, yani temiz bir page, memory page, super page şeyden okunduğunda, a cryptographic hash digest of its contents is computed and recorded.
+
+358
+00:55:38,688 --> 00:55:47,088
+Bunun cryptographic hash üzerine, algoritması üzerine kurulu bir özeti oluşturuyor ve bir kenara konuluyor.
+
+359
+00:55:47,668 --> 00:56:09,307
+Sonra ne diyor? If a partially dirty set of beige pages is promoted to a super page, yani bir kısmı kirli olan beige pagelerden oluşan bir yapı super page'e promote edilirse veya diyor, or if a clean super page becomes dirty,
+
+360
+00:56:10,643 --> 00:56:22,663
+Then all its constituent base pages are considered dirty. Az önce konuştuğumuz şey, neresinin ne olacağını bilmediğimiz için onu oluşturanların tamamını şey yapıyoruz.
+
+361
+00:56:25,172 --> 00:56:27,351
+Ne derler ona? Kirli olarak.
+
+362
+00:56:27,971 --> 00:56:41,111
+However, when the page is flushed out, yani diske yazıldığında, the hash of each base page is recomputed and compared to determine if it was actually modified and must be written to disk.
+
+363
+00:56:41,111 --> 00:56:51,011
+Yani dikkat edin, bu kriptografik hashi base page başına gerçekleştiriyor. Super page'in içerisinde.
+
+364
+00:56:51,423 --> 00:57:04,043
+Superpage'in içerisinde 50 tane base page varsa, bunu diskten içeriye aldıysa 50 tane kriptografik hash hesaplıyor.
+
+365
+00:57:05,303 --> 00:57:13,123
+Okuma operasyonunun yani içeri alma operasyonunun bir parçası olarak 50 tane kriptografik hash hesaplıyor. Bunlar kenarda.
+
+366
+00:57:15,155 --> 00:57:18,875
+O oluyor, bu oluyor. Birilerine yazılıyor, değiştiriliyor, okunuyor falan.
+
+367
+00:57:19,475 --> 00:57:25,875
+Ve bir şekilde bunun evict edilmesi, yani tekrar flash out, dışarıya gönderilmesi gerekiyor.
+
+368
+00:57:26,535 --> 00:57:31,355
+Sonuçta bu karar Superpage'in tamamı için alınmış bir karar.
+
+369
+00:57:31,355 --> 00:57:33,675
+Çünkü hardware tek bir bit tutuyor.
+
+370
+00:57:34,255 --> 00:57:38,875
+Ama dışarıya alınacağı zaman tekrar ne yapılıyor arkadaşlar?
+
+371
+00:57:39,935 --> 00:57:42,355
+Base page başına...
+
+372
+00:57:42,400 --> 00:58:05,360
+O kriptografik peş değeri tekrar hesaplanıyor. Kenarda hesaplanıp da saklanmış olan değerle karşılaştırılıyor. Aynıysa değişmemiştir. Farklıysa değişmiştir. Peki buradaki hardware, failure probabilitiesi niye önemli?
+
+373
+00:58:07,827 --> 00:58:32,568
+Bir hata oluşup bir bit veya birden fazla bit flip olabilir değil mi? O yüzden seçilen secure hash'taki bit sayısının da donanımda hata oluşma ihtimalinden daha çok çok daha yüksek olması lazım. Bak 80'e 160 bit, 2 üzeri 80'deki de 80 bit. O şeyi denk düşürüyor, yarısının iki katı.
+
+374
+00:58:33,972 --> 00:58:39,752
+Yapı bu. Ama bunu yaptığınız zaman sürekli ne hesap etmeniz lazım?
+
+375
+00:58:39,992 --> 00:58:40,252
+40.
+
+376
+00:58:40,612 --> 00:58:42,412
+Evet, hash hesap etmeniz lazım.
+
+377
+00:58:43,912 --> 00:58:44,712
+Aynen.
+
+378
+00:58:48,340 --> 00:58:49,340
+Bakın ne ölçüş...
+
+379
+00:58:49,340 --> 00:58:53,620
+Gördükseydin de tüm şeyler için hesaplamak gerekecek. Base page'ler için.
+
+380
+00:58:54,120 --> 00:59:04,320
+Aynen. Yani çok çok kötü durumlarda nereye kadar bir performans düşüşü gözlemlemişler? %60. Çok ciddi bir şey.
+
+381
+00:59:07,891 --> 00:59:10,172
+Sonra da kullanmamaya karar vermişler hocam.
+
+382
+00:59:10,711 --> 00:59:13,291
+Evet. Aynen öyle. Anlamlı değil.
+
+383
+00:59:18,516 --> 00:59:33,096
+Şimdi, yani aslında keşke daha akıcı bir şekilde ilerleyebilseydik de, şu neredeyse bir saatimizi bu paper'a harcadık. Daha fazla sizin katkınız olsaydı çok daha hoşuma gidecekti.
+
+384
+00:59:35,236 --> 00:59:41,096
+Öncelikle arkadaşlar, sadece introduction'ı...
+
+385
+00:59:41,780 --> 01:00:02,120
+Veya abstraktı veya konklujunu okumuyoruz. Paper'ın tamamını okuyoruz. Tamam mı? Bu birinci kural. Paper'ın tamamıyla alakalı bilgi ve fikir sahibi olmamız lazım. Paper'da geçen kavramları bilmemiz lazım.
+
+386
+01:00:06,643 --> 01:00:24,663
+Önümüzdeki haftalarda buradaki yaklaşımlarınızın daha konuştuğumuz şeye yönelik olacağını düşünüyorum. Bakın aslında bu çok eski bir paper değil, güzel bir paper aslında.
+
+387
+01:00:27,483 --> 01:00:32,163
+Evet, ara verelim mi bir beş dakika yoksa diğer paper'a geçelim mi?
+
+388
+01:00:36,692 --> 01:00:51,751
+Verelim hocam. En azından benim için öyle. Tamam, okey. Beş dakika bir ara verelim. Ondan sonra devam edelim. [öğrenci], aradan sonra sözü sana vereceğim. Tamam hocam. Tamam, haydi bakalım.
+
+389
+01:09:57,587 --> 01:10:03,507
+Evet, [öğrenci] dinliyoruz seni. Nedir bu Communicating Sequential Processes?
+
+390
+01:10:04,127 --> 01:10:05,608
+Merhaba öncelikle herkese.
+
+391
+01:10:06,127 --> 01:10:06,547
+Merhaba.
+
+392
+01:10:07,507 --> 01:10:12,368
+Ben şöyle giriş yapayım. Huare diye okunuyor sanırım. Yanlış söylemiyorum umarım.
+
+393
+01:10:12,868 --> 01:10:13,587
+Huare, evet.
+
+394
+01:10:13,587 --> 01:10:28,227
+Bu proje, bu makalesinde aslında paralel ve dağıtık sistem yazılımlarının daha etkili bir şekilde tasarlanmasına yönelik bir programlama, yeni bir programlama modeli önermiş bu makalede.
+
+395
+01:10:35,507 --> 01:10:54,007
+Aksine multiprocessor işlemlerin yaygınlaşarak oluşturulan sistemlerin çok daha güvenilir ve yetenekli hale geleceğini savunmuş bu oluşturduğu CSP modeliyle.
+
+396
+01:10:56,243 --> 01:11:10,363
+Bunun için de Dijikstra'nın altyapısını kullanarak daha sistemli bir çalışma ortamı hedeflemiş. Bunları söyleyebilirim şu an.
+
+397
+01:11:13,123 --> 01:11:16,243
+Tamam, peki. Sonuç olarak...
+
+398
+01:11:17,332 --> 01:11:30,492
+Sonuç olarak aslında savunduğu şey, yani multiprocesör işlemlerin birbiriyle, şimdi bunların da haberleşmesi gibi sorunlar ve birbiriyle senkronizasyonu gibi sorunlar ön plana çıkıyor.
+
+399
+01:11:42,159 --> 01:11:47,360
+Gerçekleştirebilmesi için yeni bir programın modeli ortaya çıkarıyor.
+
+400
+01:11:48,180 --> 01:11:55,420
+Tamam, güzel. Şimdi bak, söylediklerinde haklısın, doğru.
+
+401
+01:11:55,420 --> 01:12:05,159
+Ama paperın daha bu abstract kısmında, introduction öncesindeki kısımda çok basit bir şey yazıyor.
+
+402
+01:12:06,380 --> 01:12:07,940
+Bu arada kimler okudu paperı?
+
+403
+01:12:08,916 --> 01:12:10,076
+Ben okudum hocam.
+
+404
+01:12:11,176 --> 01:12:12,556
+[öğrenci] okumuş. Başka?
+
+405
+01:12:13,176 --> 01:12:15,556
+Burada gördüğüm kadarıyla...
+
+406
+01:12:15,556 --> 01:12:22,336
+Dur, kimler okudu diye soruyorum [öğrenci]. Yavaş. Başka kimler okudun?
+
+407
+01:12:22,336 --> 01:12:23,836
+Introduction okudum ben.
+
+408
+01:12:24,636 --> 01:12:26,536
+Introduction okudun, süper.
+
+409
+01:12:26,996 --> 01:12:30,236
+Hocam ben de yarısını ancak gelebildim. Yetiştiremedim ya.
+
+410
+01:12:30,771 --> 01:12:34,692
+Paper'ın tamamının yarısı mı, introduction'un yarısı mı anlamı yok?
+
+411
+01:12:34,692 --> 01:12:36,832
+Yok, paper'ın yarı kısmına gelebildim.
+
+412
+01:12:37,471 --> 01:12:40,012
+Gelebildin, tamam. Peki diğer arkadaşlar?
+
+413
+01:12:41,391 --> 01:12:42,731
+Ben de bir çoğunluğunu okudum hocam.
+
+414
+01:12:42,731 --> 01:12:45,051
+Şey diyeceğim paper'da bir yerde yani.
+
+415
+01:12:45,684 --> 01:12:52,264
+Okuyucu belli yerleri skip edebilir diyor. İlgilenmedi. Öte bir başlık da var.
+
+416
+01:12:52,864 --> 01:12:59,604
+Tabii ama oradaki o, doğru söylüyorsun, içinde öyle yazıyor da siz o okuyucu kategorisinde değilsiniz arkadaşlar.
+
+417
+01:13:00,304 --> 01:13:03,984
+Vakit yetmeyince skip etmek zorunda kaldık.
+
+418
+01:13:04,684 --> 01:13:07,424
+Vay Allah'ım yarabbim. Bakın ilk cümle ne diyor?
+
+419
+01:13:07,424 --> 01:13:12,504
+This paper suggests that input and output are basic primitives of programming.
+
+420
+01:13:13,171 --> 01:13:26,991
+Yani bu input-output'u ister bir diskten input-output olarak tanımlayın, ister bir kullanıcıdan, ister networkten giriş çıkış olarak tanımlayın. Programlama yapıyorsak.
+
+421
+01:13:28,020 --> 01:13:43,360
+İmput, Outputsuz programlama yapmamız mümkün değil diyor adam. Çok temel bir şey. Yani düşünsenize dışarıdan hiç girdi kabul etmeyen, yaptığı şeyin sonucunda dış dünyayla paylaşmayan bir program. Ne işe yarar? Hiçbir işe yaramaz.
+
+422
+01:13:56,020 --> 01:13:59,340
+ürettiğini ve bunu dış dünyayla paylaştığını kabul etmemiz lazım.
+
+423
+01:13:59,500 --> 01:14:00,100
+Birincisi bu.
+
+424
+01:14:00,200 --> 01:14:02,300
+Yani programmingin temelinde bu var.
+
+425
+01:14:02,771 --> 01:14:13,372
+Hocam, aslında burada bir de oluşan sorunlar, daha doğrusu sorun oluşturabilecek ana konularda aslında bir prosesin çıktığı üretmesi değil.
+
+426
+01:14:13,372 --> 01:14:28,692
+Ama o daha doğrusu input alması asıl problem oluşuyor. Çünkü birbirleriyle haberleştiği sürece hangi prosesin ne zaman biteceğini veya onunla ne zaman iletişim kuracağını hesaplamamız aslında büyük problem halinde şu an.
+
+427
+01:14:30,771 --> 01:14:40,112
+Alabilmek, output üretebilmekten daha önemli ve büyük bir problem. İlk cümleyi daha bitirmedik. İlk cümlenin devamında da diyor ki,
+
+428
+01:14:58,420 --> 01:15:10,139
+Çoklu işlemci mimarisinde kurduğumuz, çalıştırdığımız o multi-tradet modeller falan var ya, aslında burayı referans alıyorlar. Ne diyor?
+
+429
+01:15:26,131 --> 01:15:44,411
+Girdiden bir çıktıya doğru ilerliyor. Ama biz bunları eş zamanlı olacak, paralel olacak şekilde ve birbirleriyle iletişimde olacak şekilde bir araya getiriyoruz, kompoz ediyoruz, birleştiriyoruz.
+
+430
+01:15:45,351 --> 01:15:53,391
+Öyleyse benim bunları nasıl birleştirdiğim doğrudan performans etkileyecek bir şey değil mi?
+
+431
+01:15:53,971 --> 01:16:00,332
+Evet hocam. Burada da senkronizasyon ve işte dediğimiz gibi eş zamanlı kavramları ortaya çıkıyor aslında.
+
+432
+01:16:00,332 --> 01:16:14,291
+Evet güzel, yavaş yavaş. Peki, Hoare bunu ortaya attığı zaman ilk defa mı bu böyle gündeme geliyor yoksa başka bununla alakalı yaklaşımlar var mı?
+
+433
+01:16:16,275 --> 01:16:23,175
+Hocam, zaten orada semiforlar var. Conditional Critical Regions diye. Aslında çözülen bir problem bu.
+
+434
+01:16:24,595 --> 01:16:28,456
+Ya onun öncesinde bak neler var. İnsanlar oraya yazmış, referans vermiş.
+
+435
+01:16:28,456 --> 01:16:30,395
+Sen [öğrenci], PayPal okudun mu?
+
+436
+01:16:31,055 --> 01:16:33,495
+Dijital'ın, bir dakika.
+
+437
+01:16:34,036 --> 01:16:36,435
+PayPal'ın referans vermiş hocam.
+
+438
+01:16:37,235 --> 01:16:42,255
+Arkadaşlar, sona kadar gittiniz bir anda. Daha introduction'dayız. Hepiniz introduction'u okudunuz.
+
+439
+01:16:43,028 --> 01:16:44,668
+Introduction'da yazmıyor mu?
+
+440
+01:16:45,708 --> 01:16:46,408
+Yazıyor hocam.
+
+441
+01:16:46,868 --> 01:16:47,808
+Ne yazıyor [öğrenci]?
+
+442
+01:16:48,308 --> 01:16:55,188
+Hocam farklı yaklaşımlar var ama bunlar da tercih edilme durumlarının öyle çok kullanılabilir olmadığı yazıyor.
+
+443
+01:16:55,188 --> 01:16:57,908
+Daha introduction kısımda, üçüncü kısımda.
+
+444
+01:16:58,308 --> 01:17:00,968
+O zamana kadar neler denenmiş bakın ne diyor.
+
+445
+01:17:01,684 --> 01:17:10,244
+Less agreement has been reached about the design of other important program structures.
+
+446
+01:17:10,244 --> 01:17:24,204
+And many suggestions have been made. Mesela subroutineler, procedureler, core routineler, classlar. Dikkat edin, class kavramı. Nerede var? Sivve 67'de var. Yıl ne demektir? 67 demektir. Algol 60 var.
+
+447
+01:17:24,924 --> 01:17:28,784
+Orada procedure kavramı. Veya concurrent Pascal var.
+
+448
+01:17:29,247 --> 01:17:30,247
+Tamam mı?
+
+449
+01:17:30,247 --> 01:17:31,247
+Vay be.
+
+450
+01:17:31,247 --> 01:17:34,247
+İşte vay be. O yüzden okuyun diyorum.
+
+451
+01:17:34,247 --> 01:17:43,247
+Şu an klas yeni olan bir şey değil yani. Çok çok eski bir şey.
+
+452
+01:17:43,247 --> 01:17:45,247
+Evet hocam.
+
+453
+01:17:45,247 --> 01:17:50,247
+Üzerine anlaşılan temel primitif strukturalarda kabul ediyorlar yani.
+
+454
+01:17:50,247 --> 01:17:54,247
+Wild'luk gibi, If-Hels gibi yapılarda göz ardı etmiyorlar.
+
+455
+01:17:54,247 --> 01:17:55,247
+Evet.
+
+456
+01:17:56,564 --> 01:18:12,884
+Burada herhalde hocam aslında temel problem, proses yapılarda hani işte diyor ya semafar vesaire tarzı yapılar herhalde herkes tarafından kabul görmüyor. Bak hala aslında herkes tarafından kabul görecek bir yapı oluşturmaya çalışıyor benim anladığım burada.
+
+457
+01:18:12,884 --> 01:18:19,024
+Çok güzel. Peki bu herkes tarafından kabul görecek yapıyı oluştururken nasıl bir yaklaşımı izliyor?
+
+458
+01:18:22,036 --> 01:18:28,296
+Orada da temel proposlar veriyor. Kastınız oysa eğer.
+
+459
+01:18:28,836 --> 01:18:39,736
+Bilmiyorum. Sen ne kastettiğini bana açıkla. Ben soru sordum. Bunu herkes tarafından kabul edilebilmesi için nasıl bir yol izliyor dedim ben. Yaklaşımı ne?
+
+460
+01:18:40,159 --> 01:18:58,260
+Temel problemlere çözüm önerileri sunuyor. Dining philosophers, monitors, bir sürü bilimliği, üç boyutlu dizilerin çarpılması, bir sürü problem alıyor ve bunların nasıl çözdüğünü gösteren çeşitli kod örnekleri paylaşmış.
+
+461
+01:19:01,043 --> 01:19:08,304
+Örnekler veriyor. Mesela koritinler için kopyalama, skeş etme, disassemble gibi konulara değinmiş.
+
+462
+01:19:08,304 --> 01:19:21,283
+Yani gördüğüm kadarıyla bilgisayar bilimlerinde temel olan konularla alakalı örnekler vererek kendi yöntemin nasıl çalıştığını anlatmaya çalışmış.
+
+463
+01:19:21,876 --> 01:19:45,115
+Hocam, burada [öğrenci] arkadaşımıza bir ekleme yapmak istiyorum. Yine makalenin bir kısmını bunları örnek olarak dediği gibi [öğrenci]'in yazılım-donanım tasarımı, ağ protokolü tasarımı, veri tabanı tasarımı, işletim sistemi tasarımı gibi alanlarda bunun başarılı bir şekilde uygulanabileceğini göstererek aslında insanlara bunun daha uygulanabilir bir yaklaşımı olduğunu söylüyor.
+
+464
+01:19:46,195 --> 01:20:08,195
+Yani o güne kadar üzerinde çalışılan ve ortaya atılmış bilgisayar bilimlerine temel olan kavramlar için, temel olan problemler için kendi ortaya attığı yöntemin ürettiği, oluşturduğu çözümlerin avantaj, dezavantaj ve tutarlılığını...
+
+465
+01:20:09,076 --> 01:20:10,316
+Sorguluyor değil mi?
+
+466
+01:20:10,716 --> 01:20:15,376
+Evet. Bunu savunurken de, pardon sözünüzü kestim.
+
+467
+01:20:16,576 --> 01:20:17,675
+Yok ben seni dinliyorum.
+
+468
+01:20:17,916 --> 01:20:25,456
+Bunu yaparken de oluşturulan sistemin daha yüksek verimlilik ve bellek kullanımının daha az olduğunu gösteriyor.
+
+469
+01:20:25,556 --> 01:20:30,655
+Aynı zamanda daha kolay programlama gibi bir savunması var.
+
+470
+01:20:30,655 --> 01:20:34,756
+Daha kolay programlanabilir bir sistem oluşturabiliriz diyor burada.
+
+471
+01:20:35,699 --> 01:20:39,680
+Güzel, harika. Başka katkı yapmak isteyen var mı?
+
+472
+01:20:41,299 --> 01:20:52,939
+Hocam, proposerlardan bahsediyorduk. Aslında oradan devam etmedik de. İlk olarak şey diyor, birincisi Day Jackstrand'ın gardı komentleriyle bulunan deterlinizin meselesini çözmemiz lazım diyor.
+
+473
+01:20:53,719 --> 01:20:55,500
+Arkadaşlar, adımın adı Dijkstra.
+
+474
+01:20:56,719 --> 01:20:58,539
+Dijkstra.
+
+475
+01:20:59,539 --> 01:21:26,420
+Dijkstra, J, Y gibi okunuyor. Dijkstra. Dijkstra. Evet, guarded komentleri. Bunlarla nandeterminizmi çözeceğiz diyor. Daha sonra işte paralel komentleri öneriyor Dijkstra'nın. Dijkstra'nın Concrete Execution şeyini kullanarak prosesten bahsediyor aslında.
+
+476
+01:21:27,028 --> 01:21:45,987
+Daha sonra bir prosesleri birbirine bağlama yönteminden bahsediyor. Input ve output'unu birbirine bağlamadan. Üçüncü olarak. Böylelikle yediye kadar devam ediyor. Yedi tane yöntem söylüyor.
+
+477
+01:21:46,927 --> 01:21:53,247
+Diğerleri ne? Yediye kadar söylüyor. Dördünü söyledim. İçerileri de şöyle canım. Devam edeyim mi?
+
+478
+01:21:53,876 --> 01:21:54,676
+Ödeyeceksem.
+
+479
+01:21:55,336 --> 01:21:57,115
+Kesmedim seni, devam et bakalım.
+
+480
+01:21:59,176 --> 01:22:11,736
+Dörtte de en son bu input ve output'u birbirine bağlarken bufferlama yapmadığını söylüyor da, gerekirse input'u bekleyen prosesi durdurup,
+
+481
+01:22:11,736 --> 01:22:20,756
+işte ilkinin işini bitirip, diğerini bekletip bunun input'un diğerine paslayacak bir yapıdan bahsediyor. İkisini konuşturacak.
+
+482
+01:22:21,268 --> 01:22:29,667
+Ondan sonra, 5 ve 6, 5'i gerçekten çok anlamadım.
+
+483
+01:22:32,608 --> 01:22:39,028
+6'da da, bunun da devamı var bu input ve output meselesinin.
+
+484
+01:22:42,676 --> 01:22:48,636
+Anlamış olan var mı? Beşi, altıyı, yediyi, yorum yapacak olan, [öğrenci]'ın anlamadığımı dediği kısmı.
+
+485
+01:22:49,996 --> 01:22:55,636
+Hocam, genel itibariyle bounded buffer, integer semaphore ve dining philosopher sorunlarına...
+
+486
+01:22:56,396 --> 01:23:00,996
+[öğrenci], deminden beri üç tane aynı şeyi söylüyorsun. Onun haricinde bir şey söyle, ne olur?
+
+487
+01:23:02,707 --> 01:23:07,688
+Hocam ben karıştırdım. Bu copy, squash, disassemble o kısımda mıyız?
+
+488
+01:23:08,067 --> 01:23:09,067
+Hayır değiliz.
+
+489
+01:23:09,127 --> 01:23:09,467
+Pardon.
+
+490
+01:23:10,028 --> 01:23:11,368
+En baş kısımda.
+
+491
+01:23:13,147 --> 01:23:15,368
+[öğrenci] cevap bekliyorum senden.
+
+492
+01:23:17,528 --> 01:23:18,368
+Hocam.
+
+493
+01:23:19,167 --> 01:23:20,188
+Evet hocam.
+
+494
+01:23:20,188 --> 01:23:23,188
+Yani bu problemleri...
+
+495
+01:23:23,380 --> 01:23:24,699
+Çözüm önerilerini söylüyorum.
+
+496
+01:23:24,699 --> 01:23:33,280
+İsimleri söylemeden bu problem. Ya [öğrenci] ne dedi orada? Mesela Gart'lardan bahsediyor dedi. Bu Gart nedir? Ne işe yarar?
+
+497
+01:23:34,739 --> 01:23:40,539
+Hiç merak edip baktınız. Dijkstra'nın Gart dediği zımbırtı neymiş arkadaşlar?
+
+498
+01:23:41,840 --> 01:23:43,360
+Paper'a gitmek lazım hocam orada.
+
+499
+01:23:43,360 --> 01:23:44,319
+Ben şey mi anlayamıyorum?
+
+500
+01:23:44,319 --> 01:23:46,420
+Oo işte [öğrenci] abi.
+
+501
+01:23:47,300 --> 01:23:50,300
+Paper'a gitmek. Kim gidecek diyorsun?
+
+502
+01:23:51,315 --> 01:23:57,136
+Hocam, bu gardlar critical section gibi durumlardı okuduğum kadarıyla.
+
+503
+01:23:57,136 --> 01:24:13,576
+Tamam, bak güzel. Yani korunması gereken, biri tarafından yazılırken başkasını değiştirmemesine gereken bellekteki alanlara erişimlerin kısıtlanması.
+
+504
+01:24:14,547 --> 01:24:18,028
+Güzel. Aslında kontrol yapıları olarak söyleyebilir miyiz?
+
+505
+01:24:18,907 --> 01:24:27,747
+Bir numarada, bir numarada, [öğrenci] binin size söylediği yetkili, daha burayı yapmadık hocam dedi, çok ilerledik dedi.
+
+506
+01:24:27,747 --> 01:24:34,788
+Dikstrass, guarded comments are adapted with a slight change of notation.
+
+507
+01:24:35,604 --> 01:25:01,043
+As sequential control structures. Sequential control, bakın sıralı akışı sağlayan kontrol yapıları olarak. And as a sole means of introducing and controlling non-determinism. Ne demek non-determinism? Yani burada hangi şeye vurgu yapıyorlar? Niçin non-determinism var? Huari'nin demek istediği şey ne burada?
+
+508
+01:25:02,387 --> 01:25:16,128
+Hocam, multiproces yapılarda diyelim ki iki proses aynı yeri okuyup değiştiriyor. Bunları bir sıraya almazsanız, acaba bu işte diyelim beşi arttırıyorsunuz, yedi olması gerekirken altı mı olacak ya da başka bir değer mi olacak?
+
+509
+01:25:16,128 --> 01:25:28,827
+Aynen. Çalışma sırası veya zamanlama çıkan sonucu değiştirmemeli. Hangi sırayla, hangi zamanlamayla ne şekilde çalışırlarsa çalışsınlar hep olması gereken sonuç.
+
+510
+01:25:29,235 --> 01:25:52,815
+Ama eğer biz bir kontrol oluşturmazsak, bir mekanizma oluşturmazsak o zaman çıkacak sonucu da önceden bilemeyiz. Bazen doğru sonuç üretir, bazen yanlış sonuç üretir. Bu durumda da non-deterministik bir yapıyla karşılaşırız. Bu da istediğimiz bir şey değil.
+
+511
+01:25:53,427 --> 01:26:18,327
+Öyleyse non-determinizmi kontrol etmek demek, kibarca yazmış adam, non-determinizmi ortadan kaldırmak. Ama bunu da bilimsel bir şekilde uygulanabilir, efektif bir şekilde yapacak. İşte Dijkstra'nın gardları bu işe yarıyor. Paralel, eş zamanlı ilerleyen prosesler, birbirleriyle etkileşimi olan prosesler.
+
+512
+01:26:19,283 --> 01:26:43,283
+Belirli noktalarda, belirli işleri yaparken, işte az önce hangini söyledi, öndermi söyledi, hatırlamıyorum. Critical Section dedi. Öyle mi? Bir değeri güncellerken, başkasının, başka bir prosesin müdahil olup, araya girip, o güncellemeyi bozmasını engellemek adına...
+
+513
+01:26:44,144 --> 01:27:10,503
+Koruma altına almamız lazım. Yani guard, bildiğimiz bu şey var ya, işte bodyguardtaki guard gibi. Oraya o anda kaç tane proses olursa olsun orayla ilgilenen sadece bir tanesinin. O çıktıktan sonra diğeri girer, o çıktıktan sonra diğeri girer. İşte bunu olduğu gibi kabul ediyor. Peki ikide ne diyor arkadaşlar? E paralel comment. Based on Dijkstra's Paralel Begin.
+
+514
+01:27:11,347 --> 01:27:29,728
+Specifies Concurrent Execution of Its Constituent Sequential Commands. Yani par begin diyorsun, A, B, C. Üç tane proses, A prosesi, B prosesi, C prosesi. Bunlar eş zamanlı başlatılıyor.
+
+515
+01:27:35,828 --> 01:27:50,888
+Aynı anım tarifine göre değişir ama sonuçta aynı zaman dilimi içerisinde. Çünkü başlatmak için de bir işlem yapması lazım. Diyelim ki 10 milisaniye gecikmeyle birbirlerine göre. 1 milisaniye ama aynı zaman dilimi içerisinde başlıyorlar.
+
+516
+01:27:51,448 --> 01:28:01,668
+All the processes start, bakın simultaneously. Simultaneously, aynı zaman dilimi içerisinde. And the parallel command.
+
+517
+01:28:02,195 --> 01:28:06,476
+Ends only when they are all finished. Ne demek?
+
+518
+01:28:07,756 --> 01:28:14,115
+Hocam, herhangi bir tanesinin bitmesi yetmiyor. Tamam bitecek, bir tane dayı kalmış. Bir tanesi bekleyecek bu diğerlerinde.
+
+519
+01:28:15,155 --> 01:28:20,155
+Birbirlerinin bitmesini bekliyorlar. Yani çünkü bunlar neden paralel başlatılmışlar arkadaşlar?
+
+520
+01:28:23,764 --> 01:28:33,604
+Konunun değişmemesi gerek. Aslında paralar bastırmasının sebebi sisteminin daha güvenilir ve ekonomik halde tutulmasını sağlamak.
+
+521
+01:28:34,063 --> 01:28:38,003
+Ama bu prosesler, ABC, bu üç tanesi niye paralel başlamış?
+
+522
+01:28:38,283 --> 01:28:41,083
+Birbiriyle iletişim içerisinde olabilirler hocam.
+
+523
+01:28:41,083 --> 01:28:50,463
+Bunlar birbirleriyle beraber çalışacak, yani herhangi birbiriyle hiçbir etkisi olmayanlar bizim için önemli değil.
+
+524
+01:28:51,764 --> 01:29:15,523
+3 tane, 4 tane, 5 tane proses var. Bunlar ortak bir amaç için çalışıyorlar. Mesela 1 milyon tane entry olan bir şey var, diksineri var. Ben bu diksineri içerisinde belirli kriteri sağlayan kelimeleri bulmaya çalışıyorum.
+
+525
+01:29:16,307 --> 01:29:30,307
+Diyorum ki ben bu dictionary'i 10 tane prosesi simultaneous, concurrent çalıştırarak inceleyeceğim. O zaman bunlar bakın birbirleriyle ilişkili. Birinin bitmiş olması...
+
+526
+01:29:30,868 --> 01:29:56,007
+Diğerlerinin bitmiş olacağı anlamına gelmiyor. Hepsinin bulunmuş olacağı anlamına gelmiyor. 10 tane prosesi eş zamanla çalıştırıp bu 1 milyon entry içerisinde belirli kriteri uygun kelimeleri yakalamaya çalışıyorsam, onun da bitmesini beklemem lazım. Yani aslında bunlar kooperatif prosesler, bir amaca yönelik, bir hedefe ortak, bir hedefe yönelik olarak çalışanlar.
+
+527
+01:29:56,404 --> 01:30:07,444
+Buradaki par-bigin rastgele 3 tane prosesi, 4 tane prosesi başlatmak için değil, birbirleriyle etkileşim halinde olacak prosesleri başlatmak için.
+
+528
+01:30:10,544 --> 01:30:14,864
+Mesela konsol komutu kullanıyor musunuz hiç?
+
+529
+01:30:16,724 --> 01:30:17,704
+Evet, kullanıyoruz.
+
+530
+01:30:17,704 --> 01:30:18,244
+Evet hocam.
+
+531
+01:30:18,284 --> 01:30:23,504
+Ama konsol komutu kullanırken pipe işaretinin sağ tarafına mesela soluna cat.
+
+532
+01:30:23,923 --> 01:30:30,943
+Linux'tan, Unix'tan örnek veriyorum. Cat filename deyip, pipe işareti koyup sağ tarafına da more yazdınız mı?
+
+533
+01:30:31,863 --> 01:30:33,783
+Evet hocam. Output'unu oraya gönderiyor.
+
+534
+01:30:33,783 --> 01:30:41,983
+Şimdi more komutu cat komutundan bittikten sonra başlarsa bir anlamı var mı?
+
+535
+01:30:42,579 --> 01:30:58,639
+Hayır. Hiçbir anlamı yok. Çünkü neden cat çalışır, işini bitirir, ondan sonra more neyi input olarak alacak da neyi bana sayfa sayfa veyahut da space'e bastıkça, enter'a bastıkça satır satır gösterecek. İkisinin nasıl başlaması lazım arkadaşlar?
+
+536
+01:30:59,956 --> 01:31:00,596
+Aynen.
+
+537
+01:31:00,876 --> 01:31:01,516
+Sequential.
+
+538
+01:31:02,176 --> 01:31:06,376
+Sequential değil, simultaneous, eş zamanlı, concurrent başlaması.
+
+539
+01:31:06,735 --> 01:31:15,636
+Bakın dikkat edin, komut satırında pipe işaretini koyup da iki tanesini böyle bağladığınız anda aslında ne yapmış oldunuz?
+
+540
+01:31:16,636 --> 01:31:21,596
+Dijkstra'nın par begin'ini yapmış oldunuz. İki tane prosesi aynı anda başladık.
+
+541
+01:31:22,420 --> 01:31:25,960
+Biri diğerini konsüm ediyor sürekli. Aynı anda başlamış.
+
+542
+01:31:25,979 --> 01:31:32,859
+Evet, burada özel o ilişkinin yapısı biri prodüse ediyor, cat prodüse ediyor, more konsüm ediyor.
+
+543
+01:31:33,319 --> 01:31:35,299
+Ama her zaman öyle olmak zorunda.
+
+544
+01:31:36,659 --> 01:31:37,639
+Özür dilerim hocam.
+
+545
+01:31:38,079 --> 01:31:45,359
+Bu örnekte herhalde öyle hocam. Normalde çıktığı verdikten sonra ilk komut, ikinci komut öyle onu input alıp devam etmiyor.
+
+546
+01:31:45,811 --> 01:31:48,051
+Yoksa her seferinde bu şekilde mi çalışıyor bu yapı?
+
+547
+01:31:48,051 --> 01:31:56,731
+Şimdi CAT'in bir terabayt ekrana bastığını varsa, bir terabayt yolladıktan sonra mu moru çalıştıracaksın [öğrenci]?
+
+548
+01:31:58,331 --> 01:32:04,291
+Anladım ama diğer türlü olduğu şeyler de var diye düşünüyorum yani. Çünkü her seferinde eş zamanlı çalışamaz bazen.
+
+549
+01:32:05,511 --> 01:32:12,031
+Araya pipe koyarsak bunların arasında bir pipe oluşturmamız lazım. Bunların ikisinin de canlı olması lazım.
+
+550
+01:32:12,724 --> 01:32:33,043
+Ama araya pipe değil de şey koysaydım, büyüktür işareti koysaydım, birinin output'u tamamlandıktan sonra öbürü başlayacaktı. Bak gördün mü arada fark var. Biri işini bitirecekti, sonra diğeri tetiklenecekti. İşte bu parbigin bu durumu ifade ediyor.
+
+551
+01:32:33,043 --> 01:32:35,543
+Evet.
+
+552
+01:32:42,515 --> 01:32:45,835
+ParBigin'de bakın çok ilginç bir şey daha yazmış.
+
+553
+01:32:46,355 --> 01:32:48,355
+All the processes start simultaneously.
+
+554
+01:32:48,635 --> 01:32:51,495
+And only when they are all finished.
+
+555
+01:32:51,495 --> 01:33:02,395
+They may not communicate with each other by updating global variables.
+
+556
+01:33:03,275 --> 01:33:05,795
+Hepsi kendi yolunda aslında işlem sonuna kadar.
+
+557
+01:33:06,576 --> 01:33:12,216
+Ama bakın, they may not communicate with each other by updating global variables.
+
+558
+01:33:13,096 --> 01:33:15,155
+Başka bir komunikasının yolu da var demek ki.
+
+559
+01:33:15,735 --> 01:33:19,615
+Aynen. Yani az önce pipe diyorum ya, arada bir boru var.
+
+560
+01:33:20,115 --> 01:33:25,956
+Çünkü düşünsenize, sadece ortak memori üzerinde paylaşılan bir memoriyi güncelleyip,
+
+561
+01:33:26,056 --> 01:33:28,676
+biri yazdım, biri okudum, ne kadar veri aktarabilir?
+
+562
+01:33:29,939 --> 01:33:49,979
+Yani halbuki diğerinde bir stream yapısı gibi değil mi? Continuous, böyle arka arkaya gelen byte'lar birinden çıkıyor öbürüne gidiyor gibi bir yapı, bir pipe yapısı. O pipe'ın disiplinini işte FIFO yaparsınız, işte FIFO tipinde pipe'lar olur. Başka bir şey yaparsınız, o olur.
+
+563
+01:33:53,880 --> 01:33:55,939
+Üçüncüsü de bakın buna hemen.
+
+564
+01:33:56,384 --> 01:33:57,783
+İlişik bağlantılı.
+
+565
+01:33:57,783 --> 01:34:07,264
+Simple forms of input and output command are introduced. They are used for communication between concurrent processes.
+
+566
+01:34:08,363 --> 01:34:13,203
+Diyor ki çok basit yapıda input ve output commandleri oluşturuyorum.
+
+567
+01:34:16,000 --> 01:34:24,640
+Es zamanlı çalışan prosesler arasındaki komünikasyonu sağlıyorum. Yani ikinci maddede yazan son cümle vardı ya.
+
+568
+01:34:24,699 --> 01:34:34,479
+They may not communicate with each other by updating global where I was. Demek ki memory üzerinden bunlar güncelleme yaparak konuşmayacaklarsa başka bir form oluşturmamız lazım.
+
+569
+01:34:34,979 --> 01:34:40,000
+O da neyle olacak? Input output komentleriyle olacak diyor. Bunların hepsi...
+
+570
+01:34:44,404 --> 01:35:08,384
+Birbiriyle ilintili. Dördüncü madde. Such communication occurs when one process names another as destination for output and the second process names the first as source for input. Burada tamamen named pipe'dan bahsetmiş. Yani birbirlerini rastgele iki tanesi değil de A ben B ile konuşacağım diyor, B de ben A ile konuşacağım diyor.
+
+571
+01:35:09,652 --> 01:35:15,311
+In this case, the value to the output is copied from the first process to the second.
+
+572
+01:35:16,172 --> 01:35:18,492
+There is no automatic buffering.
+
+573
+01:35:18,492 --> 01:35:27,652
+In general, an input and output command is delayed until the other process is ready with the corresponding output or input.
+
+574
+01:35:28,372 --> 01:35:50,224
+Yani bakın, burada çok az önce size söylemeye çalıştığım önemli bir problemi de adam adreslemiş. Dedim ya, bir terabayt veriyi bir tanesi ket edecek, öbürü şey yapacak. Bufferlamaya kalksaydınız nasıl bufferlayacaktınız? Nereye kadar bufferlayacaktınız? Bilemeyeceksiniz. O zaman...
+
+575
+01:35:50,224 --> 01:36:13,724
+Eğer proseslerden biri hazır değilse, yani input almaya hazır değilse, output yapan bekleyecek, output yapan hazır değilse input alan bekleyecek. Gördünüz mü? Yani arada bir senkronizasyon oluşuyor.
+
+576
+01:36:16,564 --> 01:36:37,084
+Birbirlerinin hızına uyum sağlama oluşuyor. Buffering mekanizması olmadan bufferlamış gibi oluyorsunuz ama aslında buffer oluşturmuyorsunuz. Sadece birinin çalışmasını durduruyorsun. Böylece o üretmemiş oluyor. Diğeri kabul edeceği zaman üretiyor.
+
+577
+01:36:38,195 --> 01:36:41,255
+Prodücür Konsümer'a çok benzedi hocam.
+
+578
+01:36:41,335 --> 01:36:44,715
+Prodücür Konsümer çok benzemedi Prodücür Konsümer.
+
+579
+01:36:44,975 --> 01:36:50,895
+Buffer'ın dolduğu duruma denk geliyor. Yani konsüm edemiyorsam bekliyor.
+
+580
+01:36:51,635 --> 01:36:56,975
+Kesinlikle. Such delay is invisible to the delayed process.
+
+581
+01:36:58,075 --> 01:37:01,155
+Yani ne anlama geliyor arkadaşlar? Bakın çok önemli.
+
+582
+01:37:01,844 --> 01:37:09,504
+Delayed Process, kendisi delay etmek için bir şey yapmıyor. Otomatikman delay ediliyor. Invisible dediği şey bu.
+
+583
+01:37:12,384 --> 01:37:13,504
+Output yapan...
+
+584
+01:37:14,131 --> 01:37:34,531
+Output yapması bekletiliyor. Input yapanın input yapması bekletiliyor. Demek ki Hoare bunu hangi seviyede sunuyor bu ortaya attığı yapıyı? İşletim sistemi seviyesinde sunuyor. Yani proseslerin bunun için birbirleriyle özel bir şey yapmalarına gerek yok.
+
+585
+01:37:41,140 --> 01:37:53,180
+İleri yaklaşımına uygun şekilde yazdıysam programlarımı işletim sisteminde de bunun için destek olacağından kendiliğinden gerçekleşecek. Otomatik olarak gerçekleşecek.
+
+586
+01:37:55,320 --> 01:37:59,100
+Input commands may appear in guards.
+
+587
+01:37:59,796 --> 01:38:12,456
+Guard neydi az önceki Critical Section? Yani biri onu yaparken, o işi yaparken diğerlerinin durması, beklemesi gerekiyor demiştik ya. En başta hatta [öğrenci] demişti sonuç 5 mi çıkacak, 6 mi şey mi yapacak diye.
+
+588
+01:38:12,456 --> 01:38:23,336
+A guarded command with an input guard is selected for execution only if and when the source named in the input command is ready to execute.
+
+589
+01:38:24,500 --> 01:38:34,199
+The Corresponding Output Comment, yani çıkış üretebilecekse çalıştırılacak. Değil mi?
+
+590
+01:38:34,880 --> 01:38:44,260
+If several input guards of a set of alternatives have ready destinations, yani hazırsa destinationler bunu kabul edebilecek durumdaysa,
+
+591
+01:38:44,260 --> 01:38:51,680
+only one is selected and the others have no effect. But the choice between them is arbitrary.
+
+592
+01:38:52,467 --> 01:38:55,427
+Kaç taneniz işletim sistemi aldı?
+
+593
+01:38:57,007 --> 01:38:58,107
+Ben aldım hocam.
+
+594
+01:38:58,107 --> 01:39:09,107
+O zaman bana senkronizasyon mekanizmaları içerisinde şu anda şu tarif edilen, 5 numarada tarif edilen şeyin...
+
+595
+01:39:10,036 --> 01:39:21,175
+Okuduğum cümlelerde, senkronizasyon mekanizmalarında günümüzün terminolojisiyle neye denk düştüğünü iki tane primitif ismi duymak istiyorum. Söyleyebilir misiniz bana?
+
+596
+01:39:25,619 --> 01:39:26,899
+Kim söyleyebilir?
+
+597
+01:39:30,163 --> 01:39:32,423
+Binary Semafora benzettim hocam ben.
+
+598
+01:39:33,043 --> 01:39:38,663
+Primitif ismi duymak istiyorum dedim. Binary Semafor için de bana söyleyebilirsin primitif ismini.
+
+599
+01:39:42,515 --> 01:39:44,515
+Primitive Siv derken...
+
+600
+01:39:44,515 --> 01:39:46,635
+Efendim?
+
+601
+01:39:47,135 --> 01:39:48,175
+Change Consumers'um.
+
+602
+01:39:48,975 --> 01:39:50,515
+Duymadım [öğrenci], bir daha söyle.
+
+603
+01:39:50,835 --> 01:39:52,515
+Primitive dediğiniz bu...
+
+604
+01:39:53,215 --> 01:39:56,595
+Mesela read bir primitiftir, write bir primitiftir.
+
+605
+01:39:56,875 --> 01:40:01,315
+Evet, exchange command ile yapıyorduk ya hocam, kendi yazmasını.
+
+606
+01:40:03,091 --> 01:40:04,192
+Yani primitivden...
+
+607
+01:40:04,192 --> 01:40:12,551
+Luck mesela senin dediğin o exchange ile yaptığımız luck. Değil mi? Gidip orayı test ediyoruz. Test and set veya luck.
+
+608
+01:40:13,091 --> 01:40:16,991
+Aynen. Test ettiğimiz anda kitlememiz lazım ki...
+
+609
+01:40:16,991 --> 01:40:18,971
+Ama sorduğun primitifler onlar değil.
+
+610
+01:40:19,511 --> 01:40:20,811
+Tamam. Bir şey yapamadım.
+
+611
+01:40:21,652 --> 01:40:28,811
+Ama yaklaşıyorsun yani. Bu konunun anlatıldığı sayfalardan birkaç sayfa sonradır genelde.
+
+612
+01:40:33,043 --> 01:40:37,064
+Yok mu arkadaşlar?
+
+613
+01:40:41,652 --> 01:40:46,172
+Wait, Signal. Hiçbir şey ifade etmiyor mu size? Aklınıza gelmiyor mu?
+
+614
+01:40:47,032 --> 01:40:47,312
+Evet.
+
+615
+01:40:48,412 --> 01:40:56,612
+Signal All. Ne diyor bakın? Choice is arbitrary. Birden fazla var. Ben Signal All diyorum.
+
+616
+01:40:58,432 --> 01:41:04,432
+Bir tanesini işletim sistemi seçiyor. Hangisini seçerse.
+
+617
+01:41:05,619 --> 01:41:32,360
+Wait tek ama Signal All'la sinyal gönderilip hadi çalış denilenler birden fazla. Yani şeyi görmenizi istiyorum. Bu paperın yazıldığı tarihle 1978 günümüzde böyle bir sürü yapıda sürekli bilerek, inmeyerek, farkına vararak, varmayarak kullanılan işte o
+
+618
+01:41:33,043 --> 01:41:47,184
+[öğrenci] deminden beri söylüyor ya, semaforlar diyor, critical section diyor, producer, consumer diyor. Bunların arkasında adam bunu 1978 yılında tanımlıyor.
+
+619
+01:41:48,264 --> 01:41:53,103
+Communicating Sequential Processes başlığı altında tanımlıyor.
+
+620
+01:42:06,484 --> 01:42:15,463
+Şimdi, başka kaldığımız yerden devam ettirmek isteyen var mı? Bir şeyler anlatmak isteyen var mı arkadaşlar?
+
+621
+01:42:20,595 --> 01:42:22,635
+Ben altıncıyı söyleyebilirim hocam.
+
+622
+01:42:23,216 --> 01:42:24,496
+Altıncıyı söyle, evet.
+
+623
+01:42:24,960 --> 01:42:52,960
+Burada da input ve output bekleyen bir, output bekleyen bir proses var ve de input'u üretmek için hızlanan bir proses var. Burada eğer output prosesi sonlanmışsa, input üretecek proses de bununla iletişim kurarak, yani bu output prosesi mevcut veya tamamlanmamışsa kendini sonlandırabiliyor. Bu da sonsuz bir şey, yani sürekli konsümeden bir yapıyı sonlandırmamız.
+
+624
+01:42:52,960 --> 01:43:06,559
+Yani bütün girdiler bittiyse çıktığı alanın, daha doğrusu çıktığı üretmek için onlardan girdiği alanın çalışmaya devam etmesine gerek yok değil mi?
+
+625
+01:43:07,039 --> 01:43:07,420
+Evet.
+
+626
+01:43:07,920 --> 01:43:08,720
+Bu onu söylüyor.
+
+627
+01:43:20,212 --> 01:43:21,452
+7 ne diyor peki?
+
+628
+01:43:49,043 --> 01:43:50,364
+Evet, 7 ne diyor arkadaşlar?
+
+629
+01:43:54,515 --> 01:43:59,515
+Hocam 7'nin tam dediğini hatırlayamıyorum ama 7'de geçen bir şey vardı.
+
+630
+01:44:00,475 --> 01:44:07,115
+Karşında açık değil mi [öğrenci]? Aç paper'ı, oku. Benim önümde açık duruyor. Sen daha çok hatırla.
+
+631
+01:44:31,155 --> 01:44:46,115
+Ya da aslında birbirlerini karşı, yani input-output'un birbirlerini karşılaması gerekiyor. Yani oluşturulan input şeklinde karşı tarafta bir paterne onu bekliyor olması lazım. Eğer bu durumda da o iletişim mümkün olmuyor, eğer sağlanmazsa bu paternler birbirlerine.
+
+632
+01:44:47,115 --> 01:44:54,115
+Yani çok basit bir secure, güvenli değilse bile.
+
+633
+01:44:54,576 --> 01:45:10,515
+Bu şekilde sekür sayılabilecek, tam güvenli olmasa bile bir yaklaşım ortaya atıyor. Her output, her input'u satisfy etmez diyor. Ben input için bir pattern belirleyebilirim.
+
+634
+01:45:10,931 --> 01:45:24,112
+O paterne uymayan, bana doğru gelen inputları, yani bir output'un bana geldiğini düşünelim input olarak, benim belirlediğim paterne uymuyorsa ben onu input olarak kabul etmem diyor.
+
+635
+01:45:25,412 --> 01:45:35,492
+Yani araya kriter koyabiliyoruz, filter koyabiliyoruz, filtreleyebiliyoruz. Bu da o kadar önemli bir şey ki.
+
+636
+01:45:36,884 --> 01:45:53,304
+Düşünsenize network paketleri yağıyor ama o paketteki işte protokole göre bunun IP'ye mi gitmesi lazım, TCP'ye mi gitmesi lazım, UDP'ye mi gitmesi lazım? Buyurun. Filtering.
+
+637
+01:45:59,796 --> 01:46:16,536
+İmput, Output bazlı olarak haberleşip etkileşim halindeyken aslında ne tarz bir input kabul edeceklerini, ne zaman tetiklenip de o inputu kabul edip çalışmaya başlayacaklarını da belirleyebilmeliler diyor.
+
+638
+01:46:17,896 --> 01:46:19,896
+Aslında çok basit ama etkili bir yöntem.
+
+639
+01:46:19,896 --> 01:46:22,296
+Aynen, kesinlikle.
+
+640
+01:46:24,659 --> 01:46:43,220
+Poire 78'de ortaya atıyor. Ve ne olarak atıyor? Bu Communicating Sequential Processes altyapısı içerisinde bunu tanımlıyor. Böyle bir özellik olmalı diyor. Bu filtering olmalı diyor.
+
+641
+01:46:45,587 --> 01:47:08,787
+Sonrası da önemli bakın. The programs expressed in the proposed language, yani ortaya atılan, kendince CSP adı altında ortaya atılan bu dil, are intended to be implementable both by a conventional machine with a single main store and by a fixed network of processors connected by input-output channels.
+
+642
+01:47:10,323 --> 01:47:38,203
+Yani bunu benim ortaya attığım bu CSP'yi gerçekleştirmek için çok özel ekstra bir donanım yapmanıza gerek yok. Sıradan alışılagelmiş konvensiyonel bir işlemci, yani makine dediği sistemde bir main store'u var ve bu main store'a bir şekilde erişebilen ve aralarında bir input-output channel bağlantısı olan işlemciler de çalıştırılabilir diyor.
+
+643
+01:47:38,323 --> 01:47:44,563
+Ve it is consequently a rather static language.
+
+644
+01:47:46,143 --> 01:47:52,323
+The text of a program determines a fixed upper bound on the number of processes operating concurrently.
+
+645
+01:47:53,643 --> 01:47:55,623
+Buradaki text dediği koda denk düşüyor.
+
+646
+01:47:56,083 --> 01:47:58,323
+There is no recursion and no facility for...
+
+647
+01:47:58,863 --> 01:48:16,043
+Yani buradakileri implement etmek için recursion falan kullanmanıza gerek yok diyor. Standart sequential akış içerisinde bunları zaten adı üzerinde communicating sequential processes.
+
+648
+01:48:17,423 --> 01:48:19,884
+Buradaki process volute variables ne demek hocam?
+
+649
+01:48:20,603 --> 01:48:20,983
+Efendim?
+
+650
+01:48:20,983 --> 01:48:22,743
+İyi kastediyor. Aynen.
+
+651
+01:48:23,252 --> 01:48:44,552
+Process valued. Yani prosese özgü değeri olan değişkenlere ihtiyaç duyulmuyor diyor. Az önce hani şey dedi ya ortak bir storage, ortak bir memori üzerinden konuşmak zorunda değillerdir. Arada bir önceki cümlesinde de input output channel diyor ya. Onu tarif ediyor.
+
+652
+01:48:57,108 --> 01:48:59,208
+Tamamdır. [öğrenci]'yi böldüm herhalde ama.
+
+653
+01:49:00,288 --> 01:49:02,568
+Yok ben sorunun cevabını aldım.
+
+654
+01:49:03,188 --> 01:49:05,927
+Sorunun cevabını aldım. Tamam güzel, harika.
+
+655
+01:49:05,927 --> 01:49:08,108
+Başka şey okudum hatta.
+
+656
+01:49:11,028 --> 01:49:23,268
+Evet. Arkadaşlar, bayanlar ve baylar. Performansımızı arttıracağız mı? Paperları introduction'un ötesinde okuyacağız mı?
+
+657
+01:49:24,467 --> 01:49:29,288
+Hocam, bir şey söyleyebilir miyim bu konuda? Her şeyi söyleyebilirim.
+
+658
+01:49:29,779 --> 01:49:33,859
+Bizim genelde çalıştığımız için hafta sonu vaktimiz oluyor.
+
+659
+01:49:35,159 --> 01:49:36,939
+Hafta sonu vereyim diyorsunuz.
+
+660
+01:49:37,379 --> 01:49:46,119
+Perşembe veya cumaya yükleyebilirseniz hafta sonu biraz daha fazla okuyabilme şansımız olur diye tahmin ediyorum. Diğer arkadaşların adına da konuşmayayım ama.
+
+661
+01:49:46,579 --> 01:49:57,619
+Yarın yüklerim, yarın gün içinde yüklerim. Hafta sonumuz da olur. Bakalım haftaya perşembe ne olacak hep beraber görürüz. Bugün saat 17'ye kadar mı ne süre verdim?
+
+662
+01:49:57,779 --> 01:49:59,779
+Klin şeylerinize ödebilirsiniz diye.
+
+663
+01:50:01,971 --> 01:50:04,971
+Hocam, bir de bir paper'a düşme şansımız olmaz mı?
+
+664
+01:50:06,351 --> 01:50:14,032
+Çok iyi. Şimdi bir paper'a düşelim [öğrenci], ondan sonra bir paper'ın sadece introduction'unu düşelim.
+
+665
+01:50:14,792 --> 01:50:17,051
+Yok, o kadar değil hocam. O kadar da değil.
+
+666
+01:50:17,532 --> 01:50:18,471
+O kadar da değil.
+
+667
+01:50:19,692 --> 01:50:27,771
+Bir de mümkünse hocam biraz daha... Mesela bir önceki Super Page Paper biraz daha yeni bir paper'dı.
+
+668
+01:50:27,771 --> 01:50:29,931
+Biri daha rahat ve daha anlaşılır bence.
+
+669
+01:50:29,971 --> 01:50:34,591
+1970'lere falan gittikçe biraz daha da şey.
+
+670
+01:50:35,211 --> 01:50:39,391
+Ama işte bak 1978'de adamın söylediği şeyi kullanıyoruz.
+
+671
+01:50:39,452 --> 01:50:42,492
+Yok ben paper'ın kalitesinin hakkında yorum yapmıyorum.
+
+672
+01:50:42,851 --> 01:50:45,252
+45 sene geçmiş bak, öyle düşün.
+
+673
+01:50:45,431 --> 01:50:46,731
+Hala etkili bir paper, evet.
+
+674
+01:50:47,771 --> 01:50:50,492
+Günümüzü etkilemiş haliyle 1970'de yazılınca ama.
+
+675
+01:50:51,475 --> 01:50:54,595
+Yani yerine bir şey yok. Öyle düşün.
+
+676
+01:50:54,935 --> 01:50:59,076
+Anladım. Hani varsa havuza daha güncel paperlar onlardan çekelim diyecek.
+
+677
+01:50:59,076 --> 01:51:10,355
+Şey gibi böyle ben çekiliş yapalım istersen. Böyle var 43 tane paperumuz, 44 tane paperumuz var. İşte 3 tanesini bitirdik. 40 taneden çekiliş yapalım istiyorsan.
+
+678
+01:51:11,215 --> 01:51:14,076
+Hangisi çıkacak? Yani...
+
+679
+01:51:14,739 --> 01:51:42,279
+Adam burada Dining [öğrenci] diyordu ya sürekli. Bounded Buffer var hocam. Dining Geozofer var. Onların hepsini bak burada çözüyor. Bunlar daha da eski problemler. Veya şurada Port Name var. Port kavramı herhalde bir şeyler ifade ediyordur size. Hem lokalde pipeler üzerinden, named pipeler üzerinden. Hem network programlamadaki portlar üzerinden falan.
+
+680
+01:51:42,739 --> 01:51:56,839
+Yani bunlar ciddi anlamda bu işin temeli. Evet. Bir de bir şey daha sorabilir miyim hocam? Herhalde artık derse başlaması süremiz saatimiz yedi buçuk değil mi? Yedi buçuk.
+
+681
+01:51:56,839 --> 01:52:00,619
+Çünkü geçen hafta ben, hatta bir arkadaşım daha var burada.
+
+682
+01:52:01,076 --> 01:52:01,756
+Geçen hafta biraz...
+
+683
+01:52:01,756 --> 01:52:08,356
+Biz 7-20-21'e bekledik. 21'e kadar dedik. Herhalde iptal oldu. Bir de Zoom'da kafamızı karıştırdı.
+
+684
+01:52:08,556 --> 01:52:09,436
+7 buçuk anlaştım.
+
+685
+01:52:09,436 --> 01:52:11,496
+Hafta 7 buçuk dedim diye hatırlıyorum.
+
+686
+01:52:12,396 --> 01:52:16,556
+Geçen hafta giremedik işte. İlk hafta sanki 7 diye anlaşmıştık. Yanlış anlamadıysam.
+
+687
+01:52:17,676 --> 01:52:20,976
+Pardon, 7 buçuk yapalım arkadaşlar.
+
+688
+01:52:21,816 --> 01:52:22,396
+Tamam o zaman.
+
+689
+01:52:22,396 --> 01:52:27,956
+2 saat şu anda dolu dolu şey yaptık.
+
+690
+01:52:28,372 --> 01:52:30,292
+Ama daha akıcı olmamız lazım.
+
+691
+01:52:32,112 --> 01:52:33,192
+Gerçekten daha şey...
+
+692
+01:52:33,192 --> 01:52:43,572
+Bizim için de biraz yeni olduğu için, bu şekilde hiç ders işleyen hocamız olmadı. Biz de yeni alışıyoruz yani. Artık üçüncü haftaya geldik.
+
+693
+01:52:43,572 --> 01:52:46,932
+Ben size işletiyorum değil mi arkadaşlar? Siz anlatıyorsunuz.
+
+694
+01:52:47,332 --> 01:52:54,592
+Biraz da iyi oluyor çünkü önden çalışıp gelince konuyu biraz daha iyi kavrayabiliyoruz diye düşünüyorum.
+
+695
+01:52:56,307 --> 01:53:17,307
+Benim de ümidim o yönde. Sizin konuyu kavramanız, benim buradaki varlığım sizin anlamadığınız veyahut da tereddütte kaldığınız kısımları size açıklamak olmalı. Yoksa buradaki her şeyi size satır satır anlatmaya kalkarsam, yani iki dönem, üç dönem sadece bunu konuşuyoruz. Buradaki şeyleri konuşuyoruz. O yüzden...
+
+696
+01:53:18,387 --> 01:53:38,087
+Sizin hazırlıklı gelmeniz çok çok önemli. Tabii diğer ilginç bir durum da şu anda 10 kişiyiz. Dersi alan 40'a yakın arkadaşınız var galiba. Tam ezberi hatırlamıyorum. Bana o kadar çok mail yağdı ki hocam alamadım ben de almak istiyorum. Neredeler acaba onlar şu anda? Merak içerisindeyim.
+
+697
+01:53:39,988 --> 01:54:03,468
+O zaman yarın bir sonraki haftanın ödevini koyuyorum. Hafta sonunda çalışabilin diye. Haftaya da o yayınladığım paperlar üzerinden ilerleriz. Önümüzdeki haftanın konularından bir tanesi önderseni çok mutlu edecek diye düşünüyorum. Monitörler.
+
+698
+01:54:04,724 --> 01:54:08,444
+Hani sen böyle dining filozoflar falan şey diyordun ya.
+
+699
+01:54:09,044 --> 01:54:09,684
+Evet hocam.
+
+700
+01:54:09,684 --> 01:54:29,516
+Onunla alakalı. Ondan sonra da bu tarz bu sequential proseslerin haberleşmesi ve monitörler falan bunlarla alakalı bunu içeren doğrudan bu mantık üzerine kurulu bir...
+
+701
+01:54:30,452 --> 01:54:42,412
+Deneysel işletim sistemi üzerine yoğunlaşacağız. Dil ve işletim sistemi, yani ikisi bir arada aslında. İşletim sisteminin kendine has bir dili var. O dil de aslında o işletim sistemini oluşturuyor falan gibi.
+
+702
+01:54:45,612 --> 01:54:49,972
+Doğal olarak dil, mesa diye. O ikisinin üzerinden geçeceğiz.
+
+703
+01:54:51,252 --> 01:54:54,412
+Evet, o zaman size şimdilik...
+
+704
+01:54:55,604 --> 01:54:57,163
+İyi akşamlar diliyorum arkadaşlar.
+
+705
+01:54:57,163 --> 01:54:59,583
+Hocam ben birçok soru sorabilir miyim?
+
+706
+01:54:59,743 --> 01:55:00,144
+Tabii ki.
+
+707
+01:55:00,144 --> 01:55:01,463
+Daha doğrusu bir icada bulunsam.
+
+708
+01:55:01,903 --> 01:55:07,403
+İlk haftada şey demiştiniz, verdiğim makaleler hep birbirini aslında destekleyebilecek şekilde de olacak.
+
+709
+01:55:07,403 --> 01:55:11,663
+Yani bir makaleden bahsederken birkaç hafta önceki şeyden de bahsedebilirim diye.
+
+710
+01:55:12,203 --> 01:55:16,543
+Eğer öyle bir şey olduğu zaman bizi ondan bilgilendirebilir misiniz?
+
+711
+01:55:16,724 --> 01:55:20,224
+Bazen mesela ben bir önceki makaleye hiç bakamadım.
+
+712
+01:55:20,923 --> 01:55:23,064
+Öyle bir problemle karşılaşmamak adına.
+
+713
+01:55:23,604 --> 01:55:32,984
+Tamam ama sana tavsiyem, bakamadığın makalelere o hafta hazırlanamadıysa bir sonraki haftaya hazırlanırken öncekilerine de bakmam.
+
+714
+01:55:33,384 --> 01:55:34,003
+Tabii, tamam.
+
+715
+01:55:34,003 --> 01:55:38,484
+Sana bu konuda yapabileceğim en temel tavsiye bu.
+
+716
+01:55:40,664 --> 01:55:42,003
+Teşekkür ederim hocam.
+
+717
+01:55:42,044 --> 01:55:42,904
+Ben teşekkür ederim.
+
+718
+01:55:44,340 --> 01:55:49,340
+Evet, o zaman herkese iyi geceler diliyorum. Haftaya görüşmek üzere.
+
+719
+01:55:49,779 --> 01:55:50,539
+İyi geceler hocam.
+
+720
+01:55:50,699 --> 01:55:55,939
+İyi akşamlar.

@@ -1,0 +1,2243 @@
+1
+00:01:40,275 --> 00:01:41,715
+Sesim geliyor mu arkadaşlar?
+
+2
+00:01:44,676 --> 00:01:45,935
+Geliyor hocam.
+
+3
+00:01:47,115 --> 00:01:54,195
+Tamam. Bir arkadaşınız bağlanmaya çalışıyor ama sesle alakalı sorunu var. [öğrenci] sen duyuyor musun?
+
+4
+00:02:09,139 --> 00:02:10,039
+Duyuyorum hocam.
+
+5
+00:02:10,699 --> 00:02:11,039
+Tamam.
+
+6
+00:02:11,959 --> 00:02:12,899
+İşte geldi.
+
+7
+00:02:18,132 --> 00:02:21,432
+Hocam, bu ay boyunca 8.30'da mı yapacağız?
+
+8
+00:02:21,432 --> 00:02:28,831
+Öyle yaparız diye düşündüm. Ramazan olması sebebiyle, yani şey olmasın diye, sıkıntı yaşanmasın diye.
+
+9
+00:02:31,032 --> 00:02:38,292
+Ram'an içerisinde ilerleyecek biliyorsunuz. 7.20 idi bugün. İşte bir yarım saat, 40 dakika ilerleyecek.
+
+10
+00:02:39,316 --> 00:02:45,896
+Yani ona göre biz de 8.5-8.40 gibi ayarlarız diye rahat rahat şey olmasın diye öyle düşündüm açıkçası.
+
+11
+00:02:47,876 --> 00:02:52,975
+Bir WhatsApp grubumuz var da oradan yazıyorum o zaman ben hocam. 8.5'da başlayacak canazan boyunca diye.
+
+12
+00:02:52,975 --> 00:03:00,556
+Tabii aynen. Daha önce de benzer şey yapıyorduk doğal olarak.
+
+13
+00:03:21,747 --> 00:03:28,807
+[öğrenci] bağlanamadı bir türlü sesin de sorun var. Duyuyor musun beni [öğrenci]? Muhtemelen duymuyor.
+
+14
+00:03:44,243 --> 00:03:48,064
+İki dakikada bekleyelim. İki üç dakikada başka bir gelecek arkadaş varsa diye.
+
+15
+00:07:40,307 --> 00:07:50,447
+Evet arkadaşlar, herhalde bu kadar olacağız. Şu kenardan [öğrenci]'a bir mesaj yollayayım da.
+
+16
+00:08:19,956 --> 00:08:31,636
+Kim bu monitör paperıyla alakalı konuşmak ister? Çok fazla kişi değiliz.
+
+17
+00:08:35,347 --> 00:08:37,207
+Hocam ben bir küçük bahsedebilirim.
+
+18
+00:08:37,847 --> 00:08:42,647
+Tamam, bahset bakalım [öğrenci]. Doğru anladım değil mi? Sensin konuşan.
+
+19
+00:08:42,788 --> 00:08:43,668
+Evet hocam, doğru.
+
+20
+00:08:45,467 --> 00:08:48,007
+Önce birkaç bir şey söylemek istiyorum da hocam.
+
+21
+00:08:49,207 --> 00:08:54,827
+Benim çok bilgisayar sistemler ve işletim sistemleriyle ilgili ön bilgim yok. [kişisel bilgi]
+
+22
+00:08:55,707 --> 00:08:59,187
+Fakat işletim sistemleri alanında da uzmanlaşmak istiyorum.
+
+23
+00:08:59,187 --> 00:09:01,527
+Aslında biraz dersi de o yüzden aldım.
+
+24
+00:09:02,388 --> 00:09:13,008
+Çok teknik terimlere ve konulara hakim olamayabilirim. [kişisel bilgi] Aslında yeni yeni katıldım derslere. O şekilde söyleyebilirim.
+
+25
+00:09:13,048 --> 00:09:20,228
+Bugün evet seni ilk defa görüyorum. Bundan sonra katılım sağlamaya da çalışacağım. Merhaba hocam, hoş bulduk.
+
+26
+00:09:21,448 --> 00:09:27,768
+İnşallah. Yani senin planlaman lazım. Umarım gönlünden geçtiği gibi güzel planlayabilirsin.
+
+27
+00:09:28,340 --> 00:09:35,340
+İnşallah önceki ders kayıtlarını da izledim. Gayet güzeldi. Güzel şeylerde öğreneceğimi düşünüyorum.
+
+28
+00:09:35,340 --> 00:09:42,340
+Monitörlerden bahsedelim. Bana bu monitörler biraz şey gibi geldi.
+
+29
+00:09:42,340 --> 00:09:53,036
+Semafor ve mutex'in daha böyle atasıymış gibi ya da semafor ve mutex'e yön veren bir teknik terim ya da kavram gibi düşündüm açıkçası.
+
+30
+00:09:54,163 --> 00:10:00,783
+Semafor ve mutex. Anladım. Peki, atası derken emin misin atası olduğuna?
+
+31
+00:10:01,983 --> 00:10:07,364
+Orada, bu ilk giriş kısmında zaten bir semafor kelimesi geçiyor açıkçası.
+
+32
+00:10:09,083 --> 00:10:16,004
+Yani bu ortaya çıkımda muhtemelen semafor vardı. Semafor'un bir çeşitliği olabilir ya da bir mutex'e benzeri bir yapıda olabilir.
+
+33
+00:10:20,532 --> 00:10:44,392
+Semafordan farkı, bunun kendi içerisinde yerel değişkenleri var ve kaynağa erişme talebi oluşturuluyor ve kaynağı bırakma talebi oluşturuluyor. Bu şekilde yerel değişkenler değiştirilerek kaynağı wait ya da bekleme ya da çalışma durumuna getirme gibi şeyler söz konusu anladığım kadarıyla.
+
+34
+00:10:45,620 --> 00:10:54,940
+Peki, diğer arkadaşlarınız [öğrenci], [öğrenci] geldi. [öğrenci] bizi duymuyor hala da.
+
+35
+00:10:54,940 --> 00:11:12,519
+Belki şöyle bir düzeltme yapabiliriz. Monitörleri atası değil de daha çok paper'da. Monitörleri semaforlarla implementasyonlu ve uygun bir kanıt yöntemi sunmaya çalışıyor aslında. Monitör yapısını oluşturmaya çalışıyor semaforlar üzerinden.
+
+36
+00:11:13,235 --> 00:11:18,635
+Yani cümleye başladın atası değil diye ama sonra başka türlü devam ettin.
+
+37
+00:11:19,415 --> 00:11:23,115
+Yani semaforlar atası, monitörler semaforlar atası değil de tam tersi aslında.
+
+38
+00:11:23,115 --> 00:11:32,255
+Tam tersi. Tamam. Yani monitör kavramından önce veya monitör yapısından önce aslında semafor yapısı var.
+
+39
+00:11:32,255 --> 00:11:37,536
+Evet. Çünkü bundan da implementasyonunu ispatlamaya çalışıyor.
+
+40
+00:11:39,663 --> 00:11:45,323
+Semafor ne o zaman? Bana bunu söyleyebilecek olan var mı? Madem temel semaforsa.
+
+41
+00:11:47,443 --> 00:11:50,604
+O da bir synchronization method. Aynı monitör gibi.
+
+42
+00:11:51,384 --> 00:11:55,783
+Synchronization? Ne dedim? Bir kelime kullandın orada.
+
+43
+00:11:56,503 --> 00:11:58,384
+Metot dedim ama metot.
+
+44
+00:12:01,299 --> 00:12:03,299
+Sekronizasyonu örnekler mi yapacağız?
+
+45
+00:12:03,299 --> 00:12:07,299
+Tamam da daha teknik açıklayabilir miyiz bunu sence?
+
+46
+00:12:07,299 --> 00:12:20,299
+Bu da şöyle, işletim sisteminde bulunan prosesler arasında ki sekronizasyonu sağlamak için kullanılan bazı primitivler var. Bu da onlardan bir tanesi gibi.
+
+47
+00:12:20,299 --> 00:12:24,299
+Semafor sadece senkronizasyon mu sağlar?
+
+48
+00:12:24,299 --> 00:12:27,299
+Hocam aslında...
+
+49
+00:12:29,556 --> 00:12:31,316
+Neyi de sağlar? Duyamıyorum.
+
+50
+00:12:31,696 --> 00:12:32,615
+Haberleşmelerini.
+
+51
+00:12:32,716 --> 00:12:38,375
+Haberleşmelerini ama o ayrı bir şey. Öndersen bir şey söylemek istiyorsun.
+
+52
+00:12:38,375 --> 00:12:57,036
+Biraz çıkış noktasına geleyim ben. Aslında olay resource utilization. Yani kaynakların verimli kullanımı hocam. Bunu kullanmak için birden çok prosesin, işlemin aynı kaynak üzerinde birbirlerini etkilemeden iş yapabilmesi gerekiyor.
+
+53
+00:12:57,460 --> 00:13:03,720
+Bunun için de semafor gibi yöntemler zaman içerisinde tanımlanmaya başlamış.
+
+54
+00:13:04,340 --> 00:13:08,779
+Sonrasında bu Condition Variables diye bir kavram ortaya atılmış.
+
+55
+00:13:09,556 --> 00:13:35,276
+Yani monitör kavramının içerisinde Condition Variable yöntemi ortaya atılıyor. Monitörleri de Bridge Hanson ve Dijkstra birlikte çalışarak icat ediyorlar hocam. Bu makalede, Huare'de var hatta. Geçen haftaki makalemizde okuduğumuz.
+
+56
+00:13:35,663 --> 00:13:50,943
+Bu şey, Poire'nin makalesiydi. Onlar da birlikte invent ediyorlar, buluyorlar. Bunun üzerine bir çalışma yapılmış burada. Ek olarak Condition Variable kavramını ortaya atmış monitörlerin içerisinde.
+
+57
+00:13:52,144 --> 00:13:53,503
+Onunla da amaçlı dışı...
+
+58
+00:13:53,503 --> 00:13:54,923
+Buna niye monitör deniyor?
+
+59
+00:14:02,740 --> 00:14:11,740
+Resurslara erişimi kısıtladığı için mi? Yani birden fazla proses erişmeye çalışıyor. Sadece bir tanesine izin veriyor.
+
+60
+00:14:11,740 --> 00:14:15,740
+Monitör kelimesinin anlamı ne? Bizim Türkçe'de kullandığımız...
+
+61
+00:14:16,259 --> 00:14:16,740
+Gözetlemek.
+
+62
+00:14:17,600 --> 00:14:26,420
+Gözetlemek değil mi? Yani biz monitörü daha çok görüntüleyen cihaz veyahut da görüntülemek olarak düşünüyoruz ama monitör burada gözetleme.
+
+63
+00:14:28,851 --> 00:14:46,932
+Bir nevi denetleme, kontrol altında tutma. Peki, ilk defa bu paperda sunulan kavram ortaya atıldığında ne olarak isimlendirilmiş? Onu biliyor musunuz?
+
+64
+00:14:50,388 --> 00:14:52,168
+Hangi kavram hocam?
+
+65
+00:14:52,428 --> 00:14:55,028
+Monitör kavramı.
+
+66
+00:14:56,608 --> 00:15:00,908
+Burada resource scheduler gibi sanki bahsediyor ama.
+
+67
+00:15:01,628 --> 00:15:14,648
+Yok yok, resource scheduler o yaptığı iş sonuçta. Kaynakların dağıtılmasını sağlamak. Ama monitör terimi yerine orijinalde başka bir terim kullanılmış. Bunu biliyor musunuz?
+
+68
+00:15:15,428 --> 00:15:16,908
+Yok hocam, rastlamadım.
+
+69
+00:15:18,323 --> 00:15:35,123
+Hemen Introduction'da, Shared. Bak ne diyor? Birinci sayfa, Introduction'ın kaçıncı? Bir, iki, üç, dördüncü paragrafı.
+
+70
+00:15:35,123 --> 00:15:44,683
+Does the structure of a class of monitors is identical to that described for a data representation in 13. kaynak?
+
+71
+00:15:45,056 --> 00:15:52,995
+Except for addition of the basic word, monitor, Bridge Hansen uses the word shared for the same purpose.
+
+72
+00:15:54,515 --> 00:16:09,956
+Aslında ilk başta kim konuştu? [öğrenci] konuştu galiba. [öğrenci]'in dediği gibi Bridge Hansen, söylediğiniz Hoare ve Dijkstra beraber çalışarak bu kavramı ortaya atıyorlar, oluşturuyorlar.
+
+73
+00:16:11,488 --> 00:16:17,588
+Huare bunu gerçek hayata uyguluyor. Peki.
+
+74
+00:16:21,172 --> 00:16:32,092
+Bundan önceki şey, işte Condition Variable bu kapsamda oluşturulmuş, doğru. Ama öncesinde semafor var. Niçin böyle bir şeye ihtiyaç duyuluyor?
+
+75
+00:16:40,820 --> 00:16:51,480
+Hocam, semaforda sanırım kaynakların durumunu belirten değişkenlere ulaşım doğrudan oluyor. Monitörde ise fonksiyonlar aracılığıyla oluyor diye.
+
+76
+00:16:51,480 --> 00:16:54,300
+Rus yudur aracılığıyla.
+
+77
+00:16:56,160 --> 00:17:01,960
+Kaynakların durumuna belirten değişken, tamam peki.
+
+78
+00:17:01,960 --> 00:17:03,692
+O değişken...
+
+79
+00:17:03,892 --> 00:17:11,771
+Semafor onun özel fonksiyonlarla, özel metotlarla kullanıldığı zaman isimlendirildiği hali.
+
+80
+00:17:14,971 --> 00:17:17,692
+Dediğim bir anlamda doğru.
+
+81
+00:17:17,692 --> 00:17:25,451
+Yani semaforda kaç tane temel operasyon var arkadaşlar?
+
+82
+00:17:29,236 --> 00:17:34,556
+Bir semaforla gerçekleştirebileceğim semafor üzerinde gerçekleştirebileceğim.
+
+83
+00:17:36,056 --> 00:17:39,256
+Alma verme gibi. Yani semaforu setleme.
+
+84
+00:17:40,256 --> 00:17:42,675
+Ama onu daha teknik söylesek [öğrenci].
+
+85
+00:17:43,655 --> 00:17:45,096
+Wait ve Signal mu hocam?
+
+86
+00:17:45,096 --> 00:17:55,976
+Wait ve Signal var, evet. Orjinalde bunu Dijkstra ortaya attığı zaman P ve V olarak ifade ediyor.
+
+87
+00:17:56,627 --> 00:18:22,567
+P test etmekten geliyor, DATÇA'dan. V ise arttırmaktan geliyor. Yani biri durumunu test ediyor, diğeri ise arttırıyor. Daha sonra bu zaman içerisinde test etmek V'ye dönüşüyor. Arttırmak ise, yani V operasyonu ise signal'a dönüşüyor.
+
+88
+00:18:23,827 --> 00:18:31,648
+Peki, şimdi Condition Variable'da da Weight ve Signal var. Bir semafora göre farkı ne?
+
+89
+00:18:34,288 --> 00:18:42,648
+Bu bir değişken değil diye belirtmiş. Aslında bir değil. Bir Boolean değişken değil diye belirtmiş.
+
+90
+00:18:42,648 --> 00:18:51,387
+Ama çok kritik bir şey söylüyorsun. Yani değişken veya Boolean değişken çok farklı şeyler. Hangisi değil?
+
+91
+00:18:52,660 --> 00:19:07,400
+Bu yeni değişken tipi daha doğrusu öyle söyleyeyim. Bu değişken tipinde de aslında prosesleri bir Q oluşturuyor. Bu Q da proseslerden oluşan bir Q aslında. Yani bu Q'nun elemanları prosesler oluyor.
+
+92
+00:19:08,059 --> 00:19:13,039
+Bu değişkenin bir değeri var mı veya bir değeri olsa da bizim için önem taşıyor mu?
+
+93
+00:19:17,236 --> 00:19:19,532
+Yok gibi. Yani bir değeri...
+
+94
+00:19:22,963 --> 00:19:30,943
+Ne işe yarıyor? Yani Condition Variable bu işin özünde çünkü monitör yapısının özünde bu Condition Variable var. O yüzden onu anlatacağım.
+
+95
+00:19:30,943 --> 00:19:44,943
+Prosesleri tutmak için yani aslında resource'u alır etmek isteyen proseslerin bu kuyruğa konularaktan takip ediliyor. Daha sonra resource...
+
+96
+00:19:45,460 --> 00:19:55,299
+Bırakıldığı zaman bir proses tarafından diğer bir proses, sıradaki proses daha doğrusu ilk mantığa göre resursu ele alıyor.
+
+97
+00:19:57,579 --> 00:20:01,539
+Başka [öğrenci]'in yaptığı yoruma eklemek isteyen var mı bir şeyler?
+
+98
+00:20:03,740 --> 00:20:06,099
+[öğrenci] sen bugün hangisine hazırlandın?
+
+99
+00:20:06,771 --> 00:20:09,271
+Hocam bu sefer de yine ikincisine hazırlandım.
+
+100
+00:20:09,731 --> 00:20:12,131
+Niye her seferinde ikinciye hazırlanıyorsun?
+
+101
+00:20:12,271 --> 00:20:19,091
+Aslında bu seferde çok olanı bitireyim. Uzun olanı diğerine çok hazırlanırım diye düşündüm ama yetişmedi zaman.
+
+102
+00:20:19,692 --> 00:20:20,431
+Tamam peki.
+
+103
+00:20:21,431 --> 00:20:26,652
+Hocam [öğrenci] bize lazım diğer paper'ı da. Biz de ona bakmadık falan.
+
+104
+00:20:27,571 --> 00:20:29,431
+Böyle görünüyor. Evet arkadaşlar.
+
+105
+00:20:29,431 --> 00:20:33,431
+Hocam ben çok net olarak...
+
+106
+00:20:34,675 --> 00:20:48,235
+Anlayamadım ama şunu söyleyebilirim. Semafor sadece bir variable. Monitör kavramı ise aslında bir class gibi makalede gördüğüm kadarıyla.
+
+107
+00:20:54,259 --> 00:21:03,219
+Bütün şeyi ifade eden, sistemi ifade eden bir tip olarak söyleyebilirim. Hani gördüğüm en şey bariz fark buydu diyebilirim.
+
+108
+00:21:03,219 --> 00:21:15,059
+Doğru, bakın yine ilginç bir andayız. Hangi kavramdan bahsediyoruz? Class kavramından bahsediyoruz. Yılkaç? 1974.
+
+109
+00:21:16,180 --> 00:21:39,840
+Değil mi? Object Oriented'ın temelinde yatan class mantığı. Class dediğimiz zaman ne aklımıza gelmeli? Burada yazıyor bakın class'ın ne olduğu. Condition Variable'ı henüz unutmuş değilim. Başka bir noktaya geçtik gibi görünüyor ama Condition Variable'ı da şey yapacağız. Bu class yapısı aslında nereden geliyor ta?
+
+110
+00:21:43,539 --> 00:21:45,259
+Notasyon veya bu yapı.
+
+111
+00:21:46,099 --> 00:21:48,300
+Resourcelerden mı?
+
+112
+00:21:49,119 --> 00:21:55,619
+Yok ya. Daha paperın birinci, ikinci sayfası arasında gidiyoruz, geliyoruz. Öyle söyleyeyim. Çok baştayız Enir.
+
+113
+00:22:01,076 --> 00:22:03,395
+Aslında bu monitörlerde kullanılan değişkenleri...
+
+114
+00:22:03,395 --> 00:22:05,316
+Tamam, neden bahsediyor hocam?
+
+115
+00:22:06,056 --> 00:22:06,755
+Class Notation.
+
+116
+00:22:06,755 --> 00:22:16,456
+Evet, dinliyorum arkadaşlar.
+
+117
+00:22:17,332 --> 00:22:20,392
+Birden fazla monitör olduğu zaman diyor sanırım hocam.
+
+118
+00:22:20,592 --> 00:22:28,711
+Yok, yok arkadaşlar. Abartmayın. Bakın bu klas kavramı Simula 67 programlama dilinden geliyor.
+
+119
+00:22:28,711 --> 00:22:34,751
+Hocam aslında bu Data Abstraction dediğimiz kavramı gerçekleştirmek için değil mi?
+
+120
+00:22:35,512 --> 00:22:40,492
+Yani bizim prosesimizin erişmesi gereken verilerin hangi veriye erişmesi gerekiyor?
+
+121
+00:22:40,572 --> 00:22:45,152
+Hangi değişkene erişmesi gerekiyor? Hangisinin erişmemesi gerekiyor? Bunun tanımlamak için.
+
+122
+00:22:45,332 --> 00:23:07,132
+Şimdi semafor olduğu zaman, semafora az önce arkadaşınız hanginiz söyledi? [öğrenci] söyledi galiba. Doğrudan erişim var ama monitörde ise [öğrenci] de söylemiş olabilir. Şimdi karıştırıyor olabilir. Ne dedi? Bir prosedür üzerinden erişim var.
+
+123
+00:23:10,336 --> 00:23:13,755
+Monitör için nasıl bir açıklama yapmışlar?
+
+124
+00:23:16,755 --> 00:23:32,336
+Each scheduler will consist of a certain amount of local administrative data together with some procedures and functions which are called by programs wishing to acquire and release resources.
+
+125
+00:23:33,415 --> 00:23:36,155
+Olayı aslında her şeyle özetliyor ve anlatıyor.
+
+126
+00:23:36,915 --> 00:23:51,315
+Such a collection of associated data and procedures is known as a monitor and a suitable notation can be based on the class notation of Simular67.
+
+127
+00:23:51,655 --> 00:24:02,675
+Hemen altında da bakın monitor ismi, monitor keyword ile tanımlanıyor. Aşağıda da ant ile bitiyor. Ama dikkat etmemiz gereken şey,
+
+128
+00:24:03,955 --> 00:24:17,235
+Bakın monitörün kendi bir begini var. Hemen arkasında declarations of data local to the monitor. Sonra procedure'lar var. Bunlardan birden fazla olabilir.
+
+129
+00:24:18,975 --> 00:24:30,596
+Ve en altta, end'in hemen üstünde özel bir şey yazıyor, önemli bir şey yazıyor. Initialization of local data of the monitor.
+
+130
+00:24:31,119 --> 00:24:38,299
+Yani neye denk düşüyor bu? Class kavramıyla denk düşürdüğümüz zaman, örtüştürdüğümüz zaman?
+
+131
+00:24:39,240 --> 00:24:40,079
+Class'ın ne?
+
+132
+00:24:40,579 --> 00:24:41,099
+Efendim?
+
+133
+00:24:41,460 --> 00:24:42,299
+Construction mı?
+
+134
+00:24:42,559 --> 00:24:56,720
+Constructor'ına denk düşüyor. Yani lokal değişkenler o monitör oluşturulduğu zaman almaları gereken değerler neyse onları alıyorlar. İklendiriliyorlar.
+
+135
+00:24:57,460 --> 00:25:17,040
+Kullanıcı hatasını en aza indirecek bir şey. Diğer taraftan her monitör için, her monitör yapısı için işletim sistemi açısından nasıl bir görev yerine getiriyor diyor. Teknik terimle. Burada yazıyor. Az önce okudum. Söyleyebilecek olan var mı?
+
+136
+00:25:23,571 --> 00:25:40,431
+Resource Scheduler diyor arkadaşlar. Resource Scheduler. Siz söylediniz. Yani ben aslında paylaşılmasını istediğim bir resource'um var ise bu resource'um paylaşılması için ne oluşturmalıyım?
+
+137
+00:25:44,723 --> 00:25:45,423
+Skeceler.
+
+138
+00:25:46,423 --> 00:25:49,419
+Yani bu paper özelliğinde...
+
+139
+00:25:52,660 --> 00:25:53,720
+Bir monitör mü?
+
+140
+00:25:54,260 --> 00:26:08,660
+Bir monitör. Evet, aynen öyle. Bir monitör oluşturmalıyım. Monitörün anlamı bu. Peki, monitör öncesinde semafor varken nasıl oluyor bu iş?
+
+141
+00:26:15,923 --> 00:26:19,084
+Tek bir global değişken var. Herkes oraya erişiyor.
+
+142
+00:26:19,084 --> 00:26:30,144
+Evet, bir global değişken, o global değişkenin güncellenmesine yönelik işletim sistemi tarafından sağlanan iki tane operasyon.
+
+143
+00:26:30,224 --> 00:26:33,544
+Az önce konuştuk, P operasyonu, V operasyonu.
+
+144
+00:26:34,344 --> 00:26:39,051
+Ve onun haricinde bütün sorumluluk oraya erişecek olan...
+
+145
+00:26:39,763 --> 00:26:46,863
+Uygulamalarda, proseslerde ama monitör olduğu zaman monitör bunu baştan sona regüle edecek şekilde.
+
+146
+00:26:46,863 --> 00:27:02,503
+Şimdi, notasyonu da nereden geliyor? Simula 67'deki klas notasyonundan geliyor. Oradaki klas notasyonu da bizim hakikaten bugün kullandığımız Object Oriented Programming'teki klas notasyonu. Temeli orada atılmış durumda.
+
+147
+00:27:02,867 --> 00:27:26,307
+Buradan da ben ne anlayabilirim aslında? Ne diyebilirim? Runtime'da aynı monitörden farklı resursları ama kullanım disiplini aynı olan farklı resursları schedule etmek için, paylaştırmak için aynı monitörden birden fazla kopya oluşturabilirim değil mi?
+
+148
+00:27:30,195 --> 00:27:30,855
+Evet hocam.
+
+149
+00:27:31,855 --> 00:27:46,135
+Tamam. Şimdi [öğrenci], senin sözün üzerine buraya geri döndük. Condition Variable'dayız. Şu Condition Variable ile alakalı daha böyle elle tutulur bir açıklama yapmak isteyen biri var mı?
+
+150
+00:27:48,564 --> 00:27:54,104
+Tam olarak anlamak istediğiniz şey ne Condition Rable'la alakalı? Ben onu tam anlamadım. Yani sorunuz ne orada?
+
+151
+00:27:54,504 --> 00:28:09,144
+Değeri var mı? Değerinin önemi var mı? Yani mesela şimdi ben bir semaforu da az önce söylediğiniz değişkenle ifade ediyorum. Global bir değişkenle ifade ediyorum. Ve ben size söyledim. İki tane operasyon var semafora ait.
+
+152
+00:28:09,551 --> 00:28:34,711
+Test operasyonu ve arttırma, inkrement operasyonu. Demek ki bir değeri var. Ben bunu test ediyorum ve arttırıyorum. Benzer bir şey condition variable içinde geçerli mi? Geçerliyse nasıl arttırılıyor veya test ediliyor? Değilse nasıl bir yaklaşımla çalışıyor bu condition variable? Onu merak ediyorum.
+
+153
+00:28:36,243 --> 00:28:57,923
+Hocam, semaforlar biraz daha prosesler arası bir konu. Yani tüm sistemin erişebildiği bir değişken. Condition Variables'lar ise daha çok çalışan proses üzerinde bir mekanizma kuruyor.
+
+154
+00:29:03,028 --> 00:29:05,428
+Yaptığın yorum doğru değil, onu söyleyeyim.
+
+155
+00:29:05,968 --> 00:29:11,988
+Bir, evet. Yani semaforla condition ve raygul arasında öyle bir ayrım var diyemezsin.
+
+156
+00:29:14,708 --> 00:29:18,028
+Hocam burada condition'ı bir paragrafta şey olarak tanımlıyor.
+
+157
+00:29:19,388 --> 00:29:29,968
+Bir değişken ama ne true ne false aslında herhangi bir program tarafından eleştirilebilen saklanmış bir değere sahip değil bu.
+
+158
+00:29:30,324 --> 00:29:43,264
+Teşekkür ederim. Condition Variable'ın o zaman değerinin uygulamalar açısından, kullanacak prosesler açısından hiçbir önemi yok değil mi? Bunu söylüyor.
+
+159
+00:29:44,044 --> 00:29:44,403
+Evet.
+
+160
+00:29:45,244 --> 00:29:53,324
+Doğal olarak tabii ki Condition Variable'ın içeride kullanılırken bir değeri olacak ama bu değerin ne olduğu...
+
+161
+00:29:53,715 --> 00:30:08,235
+Condition Variable üzerinden kaynaklara erişecek olan prosesleri ilgilendirmiyor. Demek istediği şey bu. Onun değerine göre prosesler karar vermeyecekler. Doğru mudur? Bunu mu anlıyoruz?
+
+162
+00:30:10,015 --> 00:30:12,875
+Evet. Programlar için bir önemi yok kısacası.
+
+163
+00:30:18,259 --> 00:30:26,599
+Programları o tarafın çalışma ayrıntılarından soyutlayan bir yapı oluşturulmuş oluyor değil mi?
+
+164
+00:30:28,419 --> 00:30:28,819
+Evet.
+
+165
+00:30:29,559 --> 00:30:32,480
+Ama güzel arkasında yatan şey bu.
+
+166
+00:30:32,480 --> 00:30:42,099
+Peki, Condition Variable anladık şimdi. Bir değişken. Değeri var ama yok. Bizi ilgilendirmiyor değerinin olduğu. Peki.
+
+167
+00:30:42,708 --> 00:30:52,888
+Neyi sağlıyor? Bu yapı üzerinden neyi gerçekleştiriyoruz? Niçin ihtiyaç duyuyoruz buna?
+
+168
+00:30:53,968 --> 00:30:55,708
+Bekleyenleri sıraya koymak için.
+
+169
+00:30:57,008 --> 00:31:03,008
+Veya daha öncesini söyle, bekleyenleri sıraya koymadan önce ne gerekiyor?
+
+170
+00:31:05,008 --> 00:31:06,528
+Sinyalleme için mi?
+
+171
+00:31:06,836 --> 00:31:10,415
+Bekletmek gerekiyor.
+
+172
+00:31:10,415 --> 00:31:30,935
+Bekletmek gerekiyor. Sıraya koymak ayrı bir şey. Önce bekletebilmek lazım. Çünkü niçin? Kaynaklara zaten aynı anda erişim sağlanmasını engellemek istediğimden ötürü böyle bir problemle karşı karşıyayım. Bunun çözülmesi gerekiyor. Doğru mudur?
+
+173
+00:31:32,155 --> 00:31:32,475
+Evet.
+
+174
+00:31:33,076 --> 00:31:40,076
+Tamam, güzel. Öyleyse Condition Variable ne için var? Bekletmek için var. Bekletirken...
+
+175
+00:31:40,855 --> 00:31:41,336
+Efendim?
+
+176
+00:31:42,176 --> 00:31:49,076
+Apadersiniz sözünüzü. Bir de aynı zamanda beklettikten sonra tekrar ne zaman devreye gireceğini...
+
+177
+00:31:49,619 --> 00:32:04,719
+Bulmamız için de var. Yani bir prosese durdurduk. Beklemem olduğunda. Ama gerekli kaynağın ya da onun için kullanılabileceği kaynağın serbest kalması durumunda tekrar çalışmaya başlamasını da sağlamamız lazım. Burada da kullanılıyor.
+
+178
+00:32:04,719 --> 00:32:09,719
+Aynen. Aynen. Aynen. Şimdi...
+
+179
+00:32:15,316 --> 00:32:38,536
+Her Condition Variable'ın arkasında değeri önemli değil ama bu bekletmeyi ve az önce Razi arkadaşınızın söylediği gibi çalıştırabilmeyi tekrar çalıştırabilmeyi sağlamak adına her Condition Variable'ın arkasında o Condition Variable'ı destekleyecek nasıl bir tip veri yapısına ihtiyaç duyuyoruz?
+
+180
+00:32:39,436 --> 00:32:40,276
+Q şeklinde.
+
+181
+00:32:40,276 --> 00:32:42,395
+Q şeklinde bir kuyruk.
+
+182
+00:32:43,059 --> 00:32:46,799
+Peki, bu kuyruğu dışarı açıyor muyuz?
+
+183
+00:32:48,879 --> 00:32:50,179
+Programları açık değil.
+
+184
+00:32:50,639 --> 00:32:54,279
+Açık değil. Programlar bu Q'nun, bu kuyruğun farkındalar mı?
+
+185
+00:32:55,639 --> 00:32:57,319
+Yok, herhangi bir şeyden haberleri yok.
+
+186
+00:32:57,839 --> 00:33:00,519
+Sadece kendileri varmış zannediyorlar zaten.
+
+187
+00:33:01,019 --> 00:33:08,519
+Arkadaki temel mentalite bu. Kaç tane programın, kaç tane prosesin aynı anda...
+
+188
+00:33:08,819 --> 00:33:30,279
+Aynı kaynağa eriştiğinin önemi yok. Her proses sadece sanki kendisi erişiyormuş diye olayı algılıyor. Ama bu çok saydam, transparent bir şekilde yapıldığı için diğerlerinden haberdar olmuyor. Bekletildiğinin de farkında olmuyor. Değil mi?
+
+189
+00:33:31,500 --> 00:33:32,480
+Evet hocam.
+
+190
+00:33:32,816 --> 00:33:50,856
+Tamam, güzel. Zaten işte işin özü bu. Peki biz bunu böyle yaparsak, bakın benim size böyle anlattığım şekilde yaparsak, transparent bir şekilde yaparsak, kullanıcıya ne rahatlığı sağlamış oluruz?
+
+191
+00:33:54,355 --> 00:33:58,735
+Proseslerinin birbirini bölmemesini, kesmemesini sağlamış oluruz.
+
+192
+00:33:58,735 --> 00:34:16,096
+O prosesi yazacak olan programcıya diyelim. Kullanıcı demeyeyim. Kullanıcı sanki bunu kullanacak olan gibi geliyor kulağa. O anlamda kastetmiyorum. O ilgili prosesi yazacak olan programcıya ne imkanı sağlamış oluruz?
+
+193
+00:34:17,376 --> 00:34:20,456
+Yani yönetme maliyetinden kurtarmış oluruz.
+
+194
+00:34:20,724 --> 00:34:40,724
+İlgilenmeyecek değil mi? O sanki normal tek başına sadece kendi yazdığı program bu kaynağı erişircesine yazacak. Özel olarak şu değer dönerse bunu mu yapacağım? Şu değer dönerse böyle mi davranacağım? Tekrar mı isteği göndereceğim? Bunların hiçbiriyle uğraşmayacak.
+
+195
+00:34:43,635 --> 00:34:52,716
+Şimdi o zaman temel semafor yapısında ise programcıya nasıl bir sorumluluk yükleniyor?
+
+196
+00:34:57,300 --> 00:35:00,240
+Programcı onu kontrol etmek zorunda hocam. Semafor boş mu değildi diye.
+
+197
+00:35:01,539 --> 00:35:09,060
+Semaforun üzerinde uyguladığı P ve V operasyonlarının sonucuna bağlı olarak kendisi kontrol edecek değil mi?
+
+198
+00:35:09,060 --> 00:35:20,579
+Ve doğru kontrol etmesi lazım. Semaforunu doğru ilklendirmesi lazım. Semaforunu yanlış ilklendirirse yine sıkıntı. Güzel.
+
+199
+00:35:24,467 --> 00:35:25,987
+Anlaştık mı şu ana kadar?
+
+200
+00:35:27,627 --> 00:35:28,467
+Evet hocam.
+
+201
+00:35:30,007 --> 00:35:37,887
+Yani, özetleyecek olursak, semaforlar, konuşmamızın en başına gidelim.
+
+202
+00:35:38,087 --> 00:35:39,927
+Şey, semaforlar diyorum, monitörler.
+
+203
+00:35:40,487 --> 00:35:41,847
+Semaforlardan sonra.
+
+204
+00:35:42,483 --> 00:36:09,224
+Monitörler semaforların atası değil, tam tersi semaforlar monitörlerin atası. [öğrenci], o söylediğin şeyi terse çevirmek lazım. Birincisi bu, onu unutmamak lazım. İkincisi, programcıları erişecekleri kaynaklara erişirlerken,
+
+205
+00:36:09,583 --> 00:36:23,163
+Başka kaç tane prosesin eriştiği bilgisinden ve buna bağlı olarak alınması gereken tedbirlerin karmaşıklığından tamamen izole etmiş oluyor, soyutlamış oluyor.
+
+206
+00:36:25,423 --> 00:36:31,303
+Bunun bütün yükünü neresi üstüne alıyor? Monitör üstüne alıyor.
+
+207
+00:36:38,547 --> 00:36:53,127
+Bu paperda bazı örnekler var. Monitörün denen diye. Niçin bu örnekler monitörde denenmiş? Bunu bana açıklayabilir misiniz?
+
+208
+00:37:01,876 --> 00:37:10,816
+Normalde Mutex'le çözdükleri örnekleri monitörle çözebiliyorlar mı? Nasıl çözüyorlar? Göstermek için.
+
+209
+00:37:11,816 --> 00:37:16,276
+Güzel, evet doğru. İkincisi bir sebebi daha var.
+
+210
+00:37:27,188 --> 00:37:28,307
+Var mı fikri olan?
+
+211
+00:37:36,115 --> 00:37:38,036
+Yine bana kalacak galiba açıklamak.
+
+212
+00:37:38,336 --> 00:37:46,476
+Hocam burada bir öncesinde Deadly Embarrassed diye bir şeyden bahsediyor. Yani Deadlock'tan bahsediyor da.
+
+213
+00:37:47,536 --> 00:37:50,256
+Onu mu şey yapıyorsunuz?
+
+214
+00:37:50,256 --> 00:37:52,735
+Yok, onu sormuyorum.
+
+215
+00:38:05,652 --> 00:38:26,632
+Bu sorunun arkasında yatan kavram şuydu. Şimdi eğer kaynak yöneticisi ise monitörün kullanılabilmesi için ilgili tipteki kaynağı o kaynağın kullanım politikasına, kullanım disiplinine uygun olacak tarzda yönetecek şekilde hazır olması lazım.
+
+216
+00:38:26,976 --> 00:38:44,675
+Çünkü ben bir taraftan ne diyorum? Kullanıcıyı bu işten soyutlamak, izole etmek istiyorum. Kullanıcının bununla alakalı bir fiyatı olmasın. Yani kalkıp kodunun içerisine özel bir şey yazmak durumunda olmasın. O sadece kullanma isteğini dile getirsin.
+
+217
+00:38:55,476 --> 00:39:15,216
+Özelliklere sahip olması gerekiyor. O zaman mevcut kaynak kullanım tipleri, eş zamanlı böyle aynı anda erişilir, concurrent kullanıma açık kaynak tiplerindeki mevcut kullanım senaryolarının
+
+218
+00:39:15,923 --> 00:39:27,983
+Ne kadarının desteklendiği veya hatta daha da güzeli tamamının desteklenip desteklenmediğinin görülebilmesi için o senaryolar monitörlerle şey yapılıyor.
+
+219
+00:39:27,983 --> 00:39:37,123
+Burada test ediliyor. Bakın yukarıda daha şeyde, abstrak kısmında.
+
+220
+00:39:37,684 --> 00:39:42,983
+Illustrative examples include a single resource scheduler.
+
+221
+00:39:44,019 --> 00:39:59,000
+Yani tek bir kaynak var, daha doğrusu bir kaynak var, oraya teker teker erişilmesi lazım. Birinin işi bittiğinde, diğeri. Neye denk düşer mesela bu? Hiç bana gerçek hayattan, işletim sisteminden bir örnek verebilir misiniz?
+
+222
+00:40:08,019 --> 00:40:10,880
+Hocam ben çok anlayamadım. Soruyu tekrar edebilir misiniz?
+
+223
+00:40:11,099 --> 00:40:26,260
+Single Resource Scheduler. İşletim sisteminde gerçek hayattan bir örnek, işletim sistemlerinde karşılaştığımız temel bir şey bu. Single Resource Scheduler. Bana işletim sistemi kapsamında bir gerçek hayat örneği verin diyorum. Soru bu.
+
+224
+00:40:31,380 --> 00:40:35,500
+Burada verdiği gibi manyetik teypler, konsollar vesaire, onların hepsi birer resurs değil mi?
+
+225
+00:40:36,100 --> 00:40:40,119
+Tamam. Ama single resource scheduler'a bir örnek ver. Hepsi resurs.
+
+226
+00:40:40,880 --> 00:40:51,079
+Printer bir resurs, tape bir resurs, USB stick bir resurs. Yani aklına gelebilecek disk bir resurs ama single resource scheduler ne demek?
+
+227
+00:40:53,460 --> 00:40:56,000
+Bunlara yazdığımız driverlar mı oluyor kısacası?
+
+228
+00:40:56,440 --> 00:40:56,880
+Hayır.
+
+229
+00:40:57,427 --> 00:40:58,427
+Bu...
+
+230
+00:40:58,427 --> 00:40:59,287
+Single Resource.
+
+231
+00:41:00,427 --> 00:41:02,047
+Gerçi o erişmek için ama.
+
+232
+00:41:02,648 --> 00:41:04,768
+Evet, o erişmek için. Aynen öyle.
+
+233
+00:41:13,780 --> 00:41:32,100
+Bakın arkadaşlar, bazı resource, bazı kaynaklar var ki aynı anda çoklu erişime daha yatkınlar. Mesela memory. Çok özel bir şey yapmama gerek yok. Bir kısmını bir prosese, bir kısmını bir prosese kullandırtabilirim. Hem de aynı anda.
+
+234
+00:41:34,240 --> 00:41:38,980
+Ama CPU, bir tane CPU'm var.
+
+235
+00:41:39,923 --> 00:41:47,083
+Herhangi bir T anında ya A prosesi kullanıyordur ya da B prosesi kullanıyordur. Doğru mu?
+
+236
+00:41:48,463 --> 00:41:51,564
+Veya printer'a çıktı yolluyorum.
+
+237
+00:41:53,003 --> 00:41:54,003
+Printer.
+
+238
+00:41:54,903 --> 00:42:04,844
+Şimdi aynı anda iki prosesi printer'a çıktı yollama imkanı versem ve herhangi bir scheduling yapmasam.
+
+239
+00:42:06,164 --> 00:42:15,964
+Ne olur? Bir satırda birinin çıktısı, arkasındaki satırda öbürünün hatta aynı satırın içerisinde iki harften sonra öbürünün üç harfi falan olur.
+
+240
+00:42:16,864 --> 00:42:21,724
+Bu tarz resurslar nasıl resurslar? Single resurslar.
+
+241
+00:42:25,811 --> 00:42:41,912
+Hocam, bu bir önceki sorunuzda dediniz ya, niye birden fazla örnek vermiş? Ben orada şey gibi algılamıştım, bir yerde işaretlemişim hatta. Daha çok ikna etmesi zor olaylar olduğu için, keyizler olduğu için birden fazla örnek veriyor. Aslında bir tane örnek de verebilirdim şeklinde söylüyor.
+
+242
+00:42:42,271 --> 00:42:48,912
+Hayır, hayır, hayır. [öğrenci] alakası yok. Bunlar ikna etmesi zor olan şeyler değil, bunlar...
+
+243
+00:42:49,043 --> 00:43:00,823
+İşletim Sistemindeki temel bir takım servisleri veyahut da temel kaynak kullanım senaryolarını tarifliyor.
+
+244
+00:43:00,823 --> 00:43:02,144
+Scheduling.
+
+245
+00:43:02,496 --> 00:43:20,855
+Kaynak erişimine bir zamanlamayla, bir planlama ile erişilmesi, bu kaynağın tek bir kaynak olması veyahut da kendisinden birden fazla kopya olması veya aynı kaynağa eş zamanlı erişime izin verilebilir veya verilemez olması.
+
+246
+00:43:21,615 --> 00:43:29,516
+Ben 6. kısım var ya, Further Examples diye bir pararaf var orada, oradan çıkardım bu şeyi yani normalde böyle bir yeni bir özelliğin.
+
+247
+00:43:29,907 --> 00:43:49,048
+Bounded Buffer. Geçen hafta var mıydın derste? Evet, evet. E tamam, geçen hafta hani communicating... Hani bir sebebi de budur diye söyledim. Normalde önderinde de vardı ama bir sebebi de bu gibi geldi bana. Alarm Clock. Alarm Clock niçin...
+
+248
+00:43:49,364 --> 00:43:59,123
+Yani bu alarm clock bizim böyle sabahları falan kalkmak için veya işte bildiğiniz bir saatte hatırlatmak için ayarladığımız alarm clock olarak mı anlaşılmalı?
+
+249
+00:44:11,860 --> 00:44:32,320
+Evet. Timer'dan bahsediyor. Yani ileri zamanda oluşacak bir eventle, bir olay ile haberdar olunması ve ona göre bir aksiyonun gerçekleşmesi. Değil mi? Timer olayı. Aynen öyle. Peki buffer pool.
+
+250
+00:44:37,684 --> 00:44:43,524
+Aynı memurye birden fazla prosesin ulaşması gibi olabilir mi? Aynı hafızalanına.
+
+251
+00:44:44,464 --> 00:44:47,604
+Aynı hafızalanına değil. Buffer pool ne demek?
+
+252
+00:44:49,444 --> 00:44:49,784
+Ne için?
+
+253
+00:44:49,864 --> 00:44:52,044
+Consumer Procedure problemi değil mi acaba?
+
+254
+00:44:54,024 --> 00:44:57,184
+Doğrudan consumer producer olmak zorunda değil.
+
+255
+00:44:59,224 --> 00:45:02,484
+Orada da kullanabilirsin ama buffer pool'un anlamı ne?
+
+256
+00:45:04,244 --> 00:45:05,804
+Niçin gölgüle.
+
+257
+00:45:10,771 --> 00:45:17,451
+Senin söylediğin prodüser, konzümerden yaklaşarak cevapları istersen, [öğrenci] sen mi söylemiştin?
+
+258
+00:45:17,811 --> 00:45:35,211
+Evet hocam ben söylemiştim. Orada biri yazıyor, yazarken başka biri okuma yapıyor. Orayı işte sinkronize etmemiz lazım. Çünkü biri yazarken diğerini okuyup, gerçi okuma bu tutu olsa sorun olmaz da yazmalarda sıkıntı olur.
+
+259
+00:45:35,911 --> 00:45:38,051
+Tamam. Tek sıkıntı bu mu?
+
+260
+00:45:45,876 --> 00:45:50,556
+Diyelim ki consumer daha yavaş çalışıyor, producer daha hızlı çalışıyor. Ne olacak?
+
+261
+00:45:52,876 --> 00:45:56,276
+Aynen orada da sıkıntı olur. Daha yazmadan bir diğeri okumaya çalışacak.
+
+262
+00:45:59,036 --> 00:46:03,616
+Hızlı olan sürecin, yavaş olan süreci beklemesi lazım.
+
+263
+00:46:03,616 --> 00:46:07,316
+O zaman arada bunları bufferlayabilmem lazım değil mi?
+
+264
+00:46:08,416 --> 00:46:08,796
+Evet.
+
+265
+00:46:09,596 --> 00:46:09,976
+Aynen.
+
+266
+00:46:10,547 --> 00:46:36,007
+Güzel, bakın. Veya Disk Head Optimizer. Şu an tabii artık neredeyse SSD kullanıyoruz ama bu elevator problem olarak da geçiyor. Aynı problem neredeyse. Elevator problem da şey, binalarda asansör çağırırsın, yukarı aşağı hareket eder. Oradaki hedef nedir asansörde?
+
+267
+00:46:38,547 --> 00:46:41,447
+Önce kim basarsa aslında onun tarafına gidecek.
+
+268
+00:46:42,847 --> 00:47:03,447
+Tamam, onu yapacak da ama diyelim ki 30 katlı bir binadayız ve farklı katlardan istekler geliyor. Böyle bir ortam için sizden gelen isteklere göre bu istekleri sıralama yönünde yani bir resource scheduler yazmanız istenseydi...
+
+269
+00:47:04,659 --> 00:47:14,420
+Başarı hedeflerinizden, kriterlerinizden biri, önemli olan biri aslında ne olurdu acaba? Öyle düşünün.
+
+270
+00:47:15,699 --> 00:47:20,480
+Doğru yere göndererek kostu azaltmak, elektrik maliyetini azaltmak ya da gecikmeyi azaltmak.
+
+271
+00:47:20,659 --> 00:47:23,659
+Doğru yere zaten çağrına göndermem lazım. Peki.
+
+272
+00:47:25,539 --> 00:47:28,940
+Aynı anda daha çok kişiyi istediği yere vardırmak gibi.
+
+273
+00:47:30,068 --> 00:47:50,968
+Ortalama bekleme süresini en aza indirmek desek. Genelde asansör başında beklemekten hiçbirimiz hoşlanmayız değil mi arkadaşlar? O sırada tabii ki [öğrenci]'ın söylediği doğru o da ikinci şey. Kesinlikle yapılması lazım. En az enerji ile.
+
+274
+00:47:51,440 --> 00:47:55,460
+En az bekleme süresi, ortalama bekleme süresini elde etmek.
+
+275
+00:47:56,100 --> 00:48:00,860
+Değil mi? İşte diskte de aynı şey yok mu? Veriye erişmek istiyorsunuz.
+
+276
+00:48:01,260 --> 00:48:06,780
+O an kafa bir X lokasyonunda ama sizin onu Y lokasyonuna götürmeniz lazım.
+
+277
+00:48:06,780 --> 00:48:14,360
+Bunun da bir maliyeti var. O maliyet her şeyden önce gecikme. Uygulama yavaş çalışacak.
+
+278
+00:48:14,963 --> 00:48:38,320
+Diske erişen de tek bir uygulama yok. Birden fazla uygulama var. O zaman ben bunları nasıl bir sıraya sokmalıyım ki aynı anda diskin iki fark değerinden okuyabilir miyim? Okuyamam. O zaman bunları bakın sıraya sokmak durumundayım. Nasıl bir sıraya sokmalıyım ki yaşanacak olan gecikme...
+
+279
+00:48:38,320 --> 00:48:58,699
+Ortalamada en az olsun. Mutlak en az olamaz. Zaten problemin doğası gereği söz konusu değil ama ortalamada bunu en aza indirebiliriz. Veya klasik işte Readers, Writers. Değil mi? Readers, Writers problemi ne?
+
+280
+00:49:02,195 --> 00:49:12,815
+Orada da geçen hafta konuşmuştuk ya, hocam, landeterimizin en temel problemi aslında bu. Birden fazla okumalarda değil de, bir yazmada ve okumada aynı anda yapılırsa değerin değişim ihtimali artıyor.
+
+281
+00:49:13,416 --> 00:49:14,096
+Artıyor.
+
+282
+00:49:14,115 --> 00:49:14,615
+Beklemenden.
+
+283
+00:49:16,056 --> 00:49:18,335
+Bunun da sıraya sokulması lazım.
+
+284
+00:49:21,335 --> 00:49:25,195
+Evet. Şimdi monitör yapısı demek ki...
+
+285
+00:49:28,083 --> 00:49:48,343
+Güzel kullanıcıları yani programcıları alt taraftaki ayrıntılardan uzaklaştıran, onlarla ilgilenmelerini gereksiz hale getiren güzel bir yapı. Ama diğer taraftan da bu ortaya atılmış olan monitör yapısının klasik senkronizasyon problemlerine değil mi?
+
+286
+00:49:51,251 --> 00:49:59,012
+Cevap verebildiğinin, sorunsuz bir şekilde bunları gerçekleştirmeye imkan sağladığını da gösterebilmemiz gerekiyor.
+
+287
+00:50:00,072 --> 00:50:05,251
+Hocam hatta şey oluyor. İlk gösterdiği şeyde monitörle semifor yazmak zaten. Onu da gösteriyor.
+
+288
+00:50:05,251 --> 00:50:10,372
+Tamam. Ama ne diyor? Onun devamında da diyor ki,
+
+289
+00:50:10,912 --> 00:50:14,972
+Having proved that semifors can be implemented by a monitor,
+
+290
+00:50:15,668 --> 00:50:31,748
+The next task is to prove that monitors can be implemented by semaphors. Yani bu monitör yapısının ne kadar esnek olabileceğini de göstermek adına güzel bir şey.
+
+291
+00:50:33,628 --> 00:50:40,848
+Hocam bir de şey değil mi? Zaten oradaki conditional variables o yükü compiler'a atıyor da aslında orada semaphore kullanıyor değil mi?
+
+292
+00:50:42,195 --> 00:50:44,796
+Yükü Compiler'ı atmak demek ne demek ki?
+
+293
+00:50:45,516 --> 00:50:54,135
+Ya oradaki o Q'yu, aslında Conditional Variables, onun da Wait ve Signal şeyleri var. Biz onu yazmıyoruz.
+
+294
+00:50:55,336 --> 00:50:59,996
+Arkadaşlar, işletim sistemi yazıyor.
+
+295
+00:51:00,756 --> 00:51:02,796
+İşletim sistemi yazıyor. Eyvah eyvah.
+
+296
+00:51:04,876 --> 00:51:06,896
+Yok yok, o yapıyı, monitör yapısını.
+
+297
+00:51:07,795 --> 00:51:29,795
+Programlama dilleri desteklediği için hocam, programlama dilini artık hangi... Nasıl destekliyor arkadaşlar? Yani... Hocam, Condition Variables için bize kullanabileceğimiz şeyler veriyor. Altyapılar. O altyapıları kullanarak biz aslında Condition Variables'ları...
+
+298
+00:51:30,708 --> 00:51:48,367
+Size arkadaşlar, gerçeği söylüyorum. Üzüleceksiniz belki ama Condition Variable'ın arkasındaki o kuyruğun, Q'nun oluşturulması, onun yönetilmesi ve benzeri şeylerle alakalı kod parçalarında insanlar yazıyorlar.
+
+299
+00:51:54,356 --> 00:52:18,636
+Ya işletim sisteminin içinde bir parça ya da işte Shared Library dediğimiz bir runtime environment'ın parçası olarak kullanıma sunuluyor. Yoksa başka türlü bu iş olmaz. Yani ne işletim sistemi o anda dinamik olarak arkada bir şey yapıyor ne programlama dili bir şey yapıyor. Bunlar var, kodlanmış, hazır.
+
+300
+00:52:19,956 --> 00:52:29,316
+İsterseniz siz de tabii ki monitör kodlayabilirsiniz. Niçin bunu yapabilirsiniz diyorum. Neden? Bana cevabını verebilir misiniz?
+
+301
+00:52:33,396 --> 00:52:36,315
+Monitör zaten kendisi bir program değil mi hocam burada?
+
+302
+00:52:36,755 --> 00:52:51,655
+Bir program başından beri onu konuşuyoruz. Bir program içinde konstraktör olan, içinde prosedürleri, funksiyonları olan, lokal datası olan ve az önce söyledik monitörleri semaforlar ile gerçekleştirebiliyoruz.
+
+303
+00:52:51,655 --> 00:53:00,856
+Eğer o zaman ben bir bu işten anlayan programcı olarak kullandığım işletim sisteminde de semafor desteği var ise,
+
+304
+00:53:01,396 --> 00:53:11,016
+O zaman buradaki temel kavramları kullanarak kendi monitörümü de yazabilirim. Ama bunu yapmam gerekiyor mu veya yapmam isteniyor mu?
+
+305
+00:53:14,396 --> 00:53:15,856
+Yapmasak daha iyi olur hocam.
+
+306
+00:53:17,076 --> 00:53:28,775
+Yapmasak daha iyi olur. Adamlar bunu programcılardan almaya çalışıyorlar. Yani diyorlar ki bu daha karmaşık bir iş, kompleks bir task.
+
+307
+00:53:29,300 --> 00:53:51,660
+Hataya açık. O hanginiz öndersen mi söyledin? Deadlock falan, deadly embarrassment. Aynen. Yani kalkıp da bir programcı semaforu düzgün kullanmazsa deadly embarrassed olur. Yani çok kötü, ölümcül bir şekilde utançya sebep olacak bir durumla karşılaşır. Bunun olmaması için de biz bunu onlardan almalıyız.
+
+308
+00:53:55,199 --> 00:54:01,059
+Farklı senaryolar için bize böyle kodlanıp hazır gelmiş olması lazım.
+
+309
+00:54:02,599 --> 00:54:08,899
+Hocam benim bir sorum var. Belki biraz makal dışında ama kafamı karıştıran. Geçen haftada bir muhabbete açılmıştı yine.
+
+310
+00:54:09,319 --> 00:54:18,659
+Monitör veya semafor gibi yapıları yazabilmemiz için yani sonuçta işletim sistemini biz yazıyor olsaydık bu tarz sekronizasyon yapılarını sunabilmemiz için.
+
+311
+00:54:20,052 --> 00:54:38,112
+Architecture'dan, yani donanımdan bize gelmesi gereken böyle atomic instruction'dan olması gerekmiyor mu? Kesinliğini bize sunması gerekiyor. Yani yapılan işlemin kesin ve kes memoriye yazıldığını veya bir değişkene aktarıldığını söyleyen. Aslında onlar olmadan yapamayız yani biz.
+
+312
+00:54:38,532 --> 00:54:39,512
+Yapamazsın tabii.
+
+313
+00:54:42,387 --> 00:54:49,227
+Burası öyle değil mi? O kesinlikler sağlanmadığı sürece yapılamaz benim anladığım.
+
+314
+00:54:50,107 --> 00:55:00,107
+Evet ama modern işlemci mimarisinin temelinde yatan şey de bu. İlk tasarlanan, çıkan derken bir yerden kazıp da çıkartmadılar.
+
+315
+00:55:07,923 --> 00:55:33,423
+Mantığı ile, atomik erişim mantığı ile bunun temeli oluşturuluyor. Şu anda kullandığımız bütün işlemcilerde Intel, ARM, PowerPC, yani geriye kalanlar bunlar, diğer bir sürü işlemci ailesi vardı. Onların hepsi ortadan kalktı neredeyse. Bunların hepsinde ne var? Böyle atomik instrakşınlar var. O olmadan olmaz zaten.
+
+316
+00:55:34,164 --> 00:55:37,304
+Yok sadece bir doğrulamak istedim de kafam bir karıştı o yüzden.
+
+317
+00:55:37,964 --> 00:55:44,264
+Aynen. Ama yani olayın en altındalar, en donanıma yakın taraftalar, donanımın kendisindeler.
+
+318
+00:55:44,264 --> 00:55:48,964
+Onun olması semafor yazabilmemi mümkün kılıyor.
+
+319
+00:55:49,443 --> 00:55:55,264
+Semafor yazabilmemi mümkün olması da monitör yazabilmemi mümkün kılıyor.
+
+320
+00:55:56,284 --> 00:55:57,604
+Bunlar zincirleme şey.
+
+321
+00:56:01,268 --> 00:56:02,448
+Tamamdır, teşekkür ederim.
+
+322
+00:56:02,468 --> 00:56:03,688
+Tamam, ben teşekkür ederim.
+
+323
+00:56:14,291 --> 00:56:15,632
+Ne durumdayız arkadaşlar?
+
+324
+00:56:18,552 --> 00:56:20,012
+Ne açıdan hocam?
+
+325
+00:56:23,311 --> 00:56:23,672
+Mola mı?
+
+326
+00:56:24,352 --> 00:56:26,572
+Yok, mola ayrı bir şey de.
+
+327
+00:56:26,872 --> 00:56:32,612
+Yani daha, hani bu example'lar öncesindeki kısımları epeyce bir konuştuk diye tahmin ediyorum.
+
+328
+00:56:35,052 --> 00:56:36,432
+Example'larda neler var?
+
+329
+00:56:37,192 --> 00:56:38,332
+Bounded buffer var.
+
+330
+00:56:38,552 --> 00:56:41,692
+İşte ondan sonra dördüncü kısımda bounded buffer var.
+
+331
+00:56:42,356 --> 00:56:58,856
+Beşte Scheduled Wait, hani bu alarm clock'tan bahsetmiştik ya, Scheduled, belirli bir süre bekleyeceğim ben. Sonra işte Further Example'da Buffer Allocation, o buffer pool, Disk Head Scheduler. Çok zevkli bir paper. Readers and Writers.
+
+332
+00:57:01,596 --> 00:57:09,695
+Şimdi bunları kaçınız okudu bakayım bu örnekleri varıncaya kadar.
+
+333
+00:57:10,420 --> 00:57:12,420
+Ben hepsini okudum hocam bu makalenin.
+
+334
+00:57:12,579 --> 00:57:13,880
+Süper, harika.
+
+335
+00:57:15,579 --> 00:57:22,840
+Hocam ben biraz şeyle çok boğuldum yani. Çok oradan çıkamadım. Oturtamadığım için biraz ben öyle çok ilerleyemiyorum bazı şeyleri oturtamadım.
+
+336
+00:57:22,840 --> 00:57:31,380
+Interpretation kısmı var ya, ikinci kısmı aslında o semaforları monitör cinsinden implement etme. Veya tam tersi.
+
+337
+00:57:32,280 --> 00:57:36,400
+Yok, semaforları monitör cinsinden implement etme hemen en başında var.
+
+338
+00:57:36,851 --> 00:57:38,131
+Çok basit bir şekilde.
+
+339
+00:57:38,611 --> 00:57:40,491
+Yani ikinci başlıktan bahsediyorum aslında.
+
+340
+00:57:41,231 --> 00:57:49,571
+Tamam, ikinci başlık orada monitörü semaforla nasıl yapacağız? O nasıl gerçekleşecek? Onu anlatıyor.
+
+341
+00:57:52,311 --> 00:57:58,391
+Teker teker. Orada da zaten aslında Condition Variable üzerinden gidiyor.
+
+342
+00:58:00,691 --> 00:58:02,471
+Ve onu tartışıyor.
+
+343
+00:58:05,940 --> 00:58:06,320
+Doğru, evet.
+
+344
+00:58:07,480 --> 00:58:14,640
+Yaptığı şey bu, başka bir şey yok. Çok da uzun bir kısım değil. Yani ne bir A4'ten biraz daha az.
+
+345
+00:58:14,640 --> 00:58:29,516
+Hocam, neresinde geçtiğini çok hatırlayamadım da biraz da konuştuk üzerine. Şeyden de bahsediyor burada. Burası da benim dikkatimi çekmişti. Bu condition variables'lar uzun süre...
+
+346
+00:58:29,588 --> 00:58:40,708
+Bir program bekliyorsa, aslında first in first out olarak çalışıyormuş. Başlangıçta birkaç farklılığı da gördüm ama tam şu anda toparlayabilecek miyim bilmiyorum.
+
+347
+00:58:40,708 --> 00:58:52,708
+Basit bir FIFA yapısında ilk kuyruğa gireni ilk çıkacak şekilde, first come, first serve it şekilde işliyor.
+
+348
+00:58:52,755 --> 00:58:59,755
+Sonrasında da ortaya bir priority kavramı atmış Condition Variables'lar için.
+
+349
+00:58:59,755 --> 00:59:00,755
+Güzel.
+
+350
+00:59:00,755 --> 00:59:01,755
+Bunu da...
+
+351
+00:59:02,068 --> 00:59:17,887
+Daha öncelikli işlerin daha çabuk yapılabilmesi, daha çabuk hizmet verilebilmesi için ortaya atmış. Onu söylemiş. Ancak öyle olunca da şey ortaya çıkıyor. Hangi problem? Deadly Embrace, Deadlock ya da şey.
+
+352
+00:59:17,887 --> 00:59:22,487
+Hayır, Deadlock değil. O değil, diğeri. Starvation.
+
+353
+00:59:24,487 --> 00:59:27,168
+Niçin starvation problemi ortaya çıkıyor?
+
+354
+00:59:30,068 --> 00:59:31,428
+dek şey alamaz.
+
+355
+00:59:31,948 --> 00:59:33,807
+İşlemci kaynağını alamaz.
+
+356
+00:59:34,448 --> 00:59:35,768
+Beklemek zorunda değil mi?
+
+357
+00:59:35,768 --> 00:59:37,048
+Beklemek zorunda kalır.
+
+358
+00:59:37,408 --> 00:59:39,668
+First come first third'ü niye yapmışlar?
+
+359
+00:59:39,868 --> 00:59:41,468
+Yani oradaki temel
+
+360
+00:59:41,468 --> 00:59:43,728
+fikir ne? Niçin öyle bir şey yapmışlar?
+
+361
+00:59:44,467 --> 00:59:51,748
+Onu da direkt en basit yöntem olduğu için aslında ortaya attıklarını okudum, öyle anladım yani.
+
+362
+00:59:51,907 --> 00:59:58,088
+Çok basit, ilk gelene ilk çıkar ama aynı zamanda ilk gelene ilk çıkartırsan neyi de garanti etmiş olursun?
+
+363
+00:59:58,088 --> 00:59:59,387
+Yani çok bekleyeni.
+
+364
+01:00:00,000 --> 01:00:04,239
+Herkes işlemciden zaman alabilir.
+
+365
+01:00:04,699 --> 01:00:13,400
+Bekleme süresini azaltmaya çalışıyor aslında değil mi? Zaten bu çok beklemişti. Peki, oradaki sıkıntı ne? Orada görülmeyen sıkıntı ne?
+
+366
+01:00:13,500 --> 01:00:24,460
+First come first serve de evet zaten bu beklemişti. Önce buna süre verirsem ortalama bekleme süresini azaltacağım. Güzel bir yaklaşım ama bir görülmeyen sonradan ortaya çıkan bir sıkıntı var.
+
+367
+01:00:25,235 --> 01:00:31,075
+Çok büyük işlemci zamanı ihtiyacı olan bir program olursa...
+
+368
+01:00:31,123 --> 01:00:35,283
+O diğer programların geç bitmesine neden olacak.
+
+369
+01:00:35,283 --> 01:00:51,223
+Sebep olacak değil mi? Yani ben bu çok bekledi diye onu önce çıkarttım ama aslında onun da işlemciyi çok uzun kullanma ihtiyacı vardı o paylaşılan kaynağa. O zaman diğerlerinin bekleme süresi de ne olacak? İnanılmaz derecede uzayacak.
+
+370
+01:00:59,123 --> 01:01:21,123
+İster misiniz? İstemezsiniz değil mi? Geçmek isteseniz geçemezsiniz. Çok zor. Sollamak isteseniz sıkıntı. Hızınızı arttırmak isteseniz belirli bir hızın üzerine çıkmaz. O neyse ona göre ilerlemek zorundasınız. Burada da aynı şey. İşlemciyi çok uzun kullanacak olan projesinin arkasında kalmak. Buna konvoy...
+
+371
+01:01:21,168 --> 01:01:34,288
+Konvoy sendromu, konvoy semptomu, sendrom değil de semptomu deniyor. Konvoyun arkasında ilerlemek konvoyun parçası olarak. Öbüründe de priority de starvation var.
+
+372
+01:01:47,827 --> 01:01:57,728
+Yaşlandırma yapıyoruz, aging yapıyoruz ki çok bekledikçe prioritisi yükselsin ve işlemci zamanı alabilsin.
+
+373
+01:01:57,967 --> 01:02:02,647
+Alabilsin hala. Peki sonra prioritisini tekrar ne yapıyoruz?
+
+374
+01:02:03,467 --> 01:02:08,688
+Olması gereken değere çekiyoruz. Bir kere skeç ilgilendikten sonra gibi.
+
+375
+01:02:10,748 --> 01:02:11,587
+Evet, güzel.
+
+376
+01:02:11,587 --> 01:02:15,708
+Öyle şeyler de görmüştüm makale de söylemek istedim.
+
+377
+01:02:15,827 --> 01:02:34,507
+İyi yaptın, güzel. Öndere yorumlar için teşekkür ediyoruz. Bence güzel yorumlar oldu. O zaman bir sonraki paperımıza geçmeden 5 dakika ara verelim arkadaşlar. Başlayınca da kiminle başlıyoruz?
+
+378
+01:02:34,748 --> 01:02:35,467
+Benimle.
+
+379
+01:02:35,467 --> 01:02:37,128
+Aynen.
+
+380
+01:02:37,807 --> 01:02:39,088
+Tamam hocam.
+
+381
+01:02:39,867 --> 01:02:40,467
+Tamamdır.
+
+382
+01:11:25,171 --> 01:11:26,991
+Evet, [öğrenci] dinliyoruz seni.
+
+383
+01:11:28,951 --> 01:11:29,591
+Evet hocam.
+
+384
+01:11:30,463 --> 01:11:54,443
+Bu makalede monitör kavramı daha derinlikle işlenmiş. Burada yazarlar bu çalışmalarına başlarken literatürde aslında monitörün çok defa tanımının, es zamanlı çalışma için tanımının ve üzerinde çok fazla çalışmanın olduğunu görmüşler ama gerçek sistemlerde, real life yaşamda herhangi bir karşılıkların olmadığını görmüşler.
+
+385
+01:11:58,463 --> 01:12:04,543
+Bunun üzerine çalışma yapılmaya başlanmış ve bunun üzerine yapılan çalışmalarda bazı sorunları ele alıyor.
+
+386
+01:12:04,543 --> 01:12:26,463
+Burada sekiz sorundan bahsediyor. Bunlardan bahsedecek olursam, monitör çağrılarının semantiği, weight sinyalinin çeşitli şekillerde tanımlanarak karmaşıklığa yol açması, priority scheduling, timeout problemi, abortlar.
+
+387
+01:12:26,463 --> 01:12:45,923
+ve diğer exceptional condition'lar. Ayrıca bunun yanında başka ne vardı? Yok etme, yani destruction ve creation problemleri. Bir de büyük sayıda daha doğrusu çok sayıda küçük nesnenin izlenmesi gibi.
+
+388
+01:12:46,387 --> 01:13:07,208
+Monitörlerde konular yer alıyor. Bunu yaparken de mesa dilini kullanıyorlar. Eş zamanı programlama ve senkronizasyon için mesa dilini kullanıyorlar. Ve bu mesa dilini de aslında bir işletim sistemi üzerinde gerçek sistemler üzerinde deneme şansı oluyor.
+
+389
+01:13:07,208 --> 01:13:10,128
+Peki bu mesa dili.
+
+390
+01:13:10,623 --> 01:13:15,443
+Mesela programlama dili hangi işletim sistemiyle ilişkili?
+
+391
+01:13:16,275 --> 01:13:38,636
+Burada Pilot'la kullanıyorlar. Evet, Pilot diye bir işletim sistemi var. Aynen öyle. Evet ve bu çalışmalarını bu işletim sistemi üzerinden yürütüyorlar. Bunu yaparken de üç ana başlık, temel üzerinde çalışmalarını yürütmek istiyorlar aslında. Bunlardan birisi Local Concrete Programming.
+
+392
+01:13:39,796 --> 01:13:46,216
+Diğeri Global Resource Sharing ve Üçüncüsü de Replacing Interrupts başlıkları.
+
+393
+01:13:47,356 --> 01:13:49,736
+Burada Local Concrete...
+
+394
+01:13:49,736 --> 01:13:54,056
+Tamam, onu soracağım. Local Concrete Programming'den ne anlıyoruz?
+
+395
+01:13:54,676 --> 01:14:07,996
+Burada aslında sistem içinde çalışan bir uygulamanın içinde bulunan ve eş zamanlı çalışması gereken işlemlerin çok sıkı bir şekilde bir araya getirip sanki birden fazla işlem değil de tek parça.
+
+396
+01:14:09,076 --> 01:14:31,636
+Bir işlem çalışıyormuş gibi yürütmeye uğraşıyorlar. Bu sayede hem uygulamanın hızı artıyor ve hem de kaynak kullanımında verimlilik artıyor aslında. Bunu hedefliyorlar. Bu sayede de aslında uygulama tasarımının hem karmaşıklığının önüne geçilmek hem de yönetilmesini kolaylaştırmaya çalışıyorlar.
+
+397
+01:14:32,627 --> 01:14:44,827
+Güzel. Peki, aslında bu kavramın bir adım sonrasında nereye doğru ilerlenmiş oluyor? Hangi yapı ortaya çıkıyor?
+
+398
+01:14:47,307 --> 01:14:50,507
+Concrete Programming değil mi aslında?
+
+399
+01:14:50,507 --> 01:14:56,507
+Tamam ama sen de söyledin ya, olabildiğince...
+
+400
+01:14:57,203 --> 01:15:01,283
+Böyle coupled bir şekilde, tightly coupled bir şekilde.
+
+401
+01:15:05,363 --> 01:15:09,343
+Bir adım sonrasında ne var aslında? Nereye doğru gidiyor bu yapı?
+
+402
+01:15:11,343 --> 01:15:12,943
+Bunları birbirinden ayrımak hocam değil mi?
+
+403
+01:15:13,523 --> 01:15:17,203
+Zaten birbirinden ayırıyoruz. Onda şeyimiz yok, sıkıntımız yok.
+
+404
+01:15:17,203 --> 01:15:20,203
+Yani bir program kendi içerisinde...
+
+405
+01:15:23,699 --> 01:15:46,380
+Alt programlardan, alt parçalardan oluşuyor. Zaten bakın daha en girişte söylüyor. An individual application can be implemented as tightly coupled group of synchronous processes to express the concurrency inherent in the application. Yani uygulamanın içerisindeki bu şeyi ifade edebilmek için, en net bir şekilde ortaya koyabilmek için.
+
+406
+01:15:48,863 --> 01:15:54,683
+Tightly Coupled Group of Synchronized Processes'ın bir adım sonrası sizce ne?
+
+407
+01:15:55,783 --> 01:15:58,323
+Global Resource Sharing diyor hocam. Orada da Independent.
+
+408
+01:15:58,343 --> 01:16:04,083
+Hayır, değil. Bak biri lokal, öbürü global. [öğrenci], bir adım sonrası değil.
+
+409
+01:16:04,819 --> 01:16:27,020
+Bunlar birbirini takip eden adımlar değil. Bunlar üç tane bu pilot işletim sistemi içerisinde monitör kavramı kullanılarak, monitör yapısı kullanılarak nereye kadar optimize edebiliriz, nereye kadar daha anlamlı bir şeyler yapabiliriz onu görmek üzere ortaya atılmış.
+
+410
+01:16:27,020 --> 01:16:30,279
+Üç tane ekstra geliştirmeye açık nokta.
+
+411
+01:16:31,764 --> 01:16:42,344
+Ama birbirinin devamı değil. Sadece fikir ürütmenizi istiyorum. Biliyor olmanız veya en azından duymuş olmanız gerekiyor diye düşünüyorum.
+
+412
+01:16:43,504 --> 01:16:49,783
+Tightly coupled group of synchronized processes'ın bir adım sonrası sizce ne olur?
+
+413
+01:16:55,475 --> 01:16:58,175
+Aklıma şey geliyor hocam, tek proses ama multi-thread yapılar.
+
+414
+01:16:58,175 --> 01:17:19,935
+Hah, aynen öyle. O olur işte. Yani prosesleri tightly coupled yapıyorsan ve bunları olabildiğince hızlı, efektif, performans yüksek bir şekilde çalışır hale getirmek istiyorsan sonrasında otomatikman bunlar thread mantığına dönüşür. Aynen öyle.
+
+415
+01:17:20,787 --> 01:17:23,448
+Peki, Global Resource Sharing.
+
+416
+01:17:24,948 --> 01:17:35,147
+Burada da aslında birbirinden bağımsız uygulamalarda aynı makinede, aynı sistemde çalışırken sistem kaynağını paylaşabilmesini tarif ediyor.
+
+417
+01:17:35,688 --> 01:17:45,847
+Örneğin, bir yoğun hesaplama gerektiren bir uygulama çalışırken diğer uygulamaların da işlemci kaynaklarının bir kesinti olmadan erişebilmesi lazım.
+
+418
+01:17:45,847 --> 01:17:48,287
+Burada da bunu tarif ediyorum.
+
+419
+01:17:48,787 --> 01:17:54,188
+Peki, üçüncü bu şey, Replacing Interrupt. Ne anlıyorsunuz?
+
+420
+01:17:55,091 --> 01:18:03,331
+Burada da benim anladığım aslında şöyle hocam. Öncesinde geleneksel sistemlerde bunu karıştırıyor olabilirim aslında. Çok emin değilim.
+
+421
+01:18:03,331 --> 01:18:15,031
+Geneleksel işletim sistemlerinde işlemci kontrolünde yüksek öncelik sebebiyle interap geldikten sonra diğer çalışan sistemler durduruluyor ve ona öncelik tanınıyor.
+
+422
+01:18:15,191 --> 01:18:23,091
+Yani interapta öncelik tanınıyor ama burada yapmaya çalıştıkları şey gelen interaptın aslında bir proses gibi yürütülüp diğer çalışan sistemlerine...
+
+423
+01:18:23,091 --> 01:18:27,572
+Uygulamaların çalışmasına engel olmamayı hedeflemişler. İyi anladım.
+
+424
+01:18:30,271 --> 01:18:39,351
+Interrupt sırasında, interrupt işlenmesi sırasında ne oluyor? Bana anlatabilecek olan var mı?
+
+425
+01:18:40,351 --> 01:18:48,072
+Hocam bu örneğin int 80 var bizim software interrupt. Interrupt geldiğinde interrupt table'daki karşılığı direkt çalıştırılıyor. Böyle bir şey mi acaba?
+
+426
+01:18:49,939 --> 01:19:05,340
+Şöyle [öğrenci], bak ne sordum. Interrupt olduğu zaman neler yapılıyor, ne gerçekleşiyor, bana anlatabilecek olan var mı dedim. Eğer int 80 ile alakalı örneği veyahut da orada olanları bu kapsamda anlatıyorsan kabulümdür.
+
+427
+01:19:09,684 --> 01:19:11,944
+Ne anla çıktın mesela sen o kapsamda?
+
+428
+01:19:13,224 --> 01:19:19,164
+Orada interrupt geldiğinde kodun şeyi değişiyor. Instructure pointer değişiyor. Bir yerden başka bir yer.
+
+429
+01:19:19,924 --> 01:19:20,924
+Tamam, güzel.
+
+430
+01:19:22,224 --> 01:19:26,304
+Oradaki prosedür devam ediyor. Çıktığında da call ve return geri geliyor.
+
+431
+01:19:26,304 --> 01:19:36,804
+Tamam, peki şimdi bir interrupt-driven program düşünelim.
+
+432
+01:19:37,119 --> 01:20:00,000
+Yani Interrupt'a çalışıyor bu program ve çalışması Interrupt'a göre şekilleniyor. Az önce [öğrenci]'ın söylediği gibi de o programa bir Interrupt geldiğinde programın o anki akışı kesintiye uğruyor. Özel bir adrese zorla götürüldü.
+
+433
+01:20:00,000 --> 01:20:14,880
+Yani aslında kendisi öyle bir instruction olmamasına rağmen sanki bir jump instruction'ı gerçekleştiriyor. Forced Branch yapıyor ve interrupt ile alakalı rutine gidiyor.
+
+434
+01:20:15,731 --> 01:20:37,072
+Orada bir şeyler gerçekleştiriyor. Sonra geriye dönüyor. Şimdi bu klasik yaklaşım. İşletim sisteminin bu konuda işletim sisteminin kendisi olarak yapabileceği çok fazla bir şey yok. Çünkü niye? Birinci seviye donanımla muhatap olunması gereken kod parçalarını içeriyor.
+
+435
+01:20:42,931 --> 01:21:03,612
+Bir programımız var. Diske yazmak istemiş. Yazma işlemi bitmeden de devam etmeyecek. Şimdi normalde diske yazma işleminin bittiğini, işletim sistemi nasıl anlayacak?
+
+436
+01:21:04,612 --> 01:21:05,572
+İnternat diyecek hocam.
+
+437
+01:21:05,887 --> 01:21:33,327
+Interrupt'la anlayacak. Biraz teknik konuşalım ya. Interrupt yemek yerine. Interrupt oluşacak. Interrupt gelecek değil mi istersen. Tamam. Interrupt'la anlayacak. Interrupt geldi. Peki, yukarıdaki yazılımada bunun aktarılması lazım değil mi? Çünkü o yaptığı, başlattığı işin bitip bitmediğini bilmeni ki devam edebilsin. Doğru mu?
+
+438
+01:21:33,939 --> 01:21:34,779
+Evet hocam.
+
+439
+01:21:35,599 --> 01:21:35,979
+Güzel.
+
+440
+01:21:36,595 --> 01:22:04,595
+Ne oldu? Diğer arkadaşların dilimi tutuldu. Niye hiç kimse bir şey söylemiyor? Biz [öğrenci]'la burada baş başa konuşuyoruz. Hayır olsun hocam. Dinliyoruz. Dinliyorsunuz. Araya da dinlemeyin sadece. Yorum yapın arkadaşlar. Peki şimdi bu program bakın zaten yazma işlemini kendisi başlattı. Diske yazılması sonuçlanmalı ki devam edebilsin. Ama yazılmanın sonuçlandığından da klasik olay.
+
+441
+01:22:04,595 --> 01:22:14,755
+İşletim Sistemleri'nin öğrendiği gibi interrap gelince öğrenecek bunun bittiğini. Peki o arada bu programın yapabileceği bir şey var mı?
+
+442
+01:22:15,828 --> 01:22:18,708
+Yok hocam, onun beklese daha iyi yani CPU kullanmasa.
+
+443
+01:22:18,708 --> 01:22:35,668
+Yani o sırada intiharap geldi mi gelmedi mi diye beklemek için bir kod çalıştırmasının hiçbir esprisi yok. Otomatikman aslında işlemci kullanımını dengelemek, iyileştirmek için bu programı ne yapmalıyız arkadaşlar?
+
+444
+01:22:35,968 --> 01:22:37,368
+İlgiden çıkarmalıyız.
+
+445
+01:22:38,488 --> 01:22:40,188
+Yazılım tabanını yapmamız aslında.
+
+446
+01:22:40,968 --> 01:22:42,368
+Onu uyutmalıyız.
+
+447
+01:22:42,836 --> 01:23:09,056
+Peki, mesela az önce konuştuk. Semaforda da aynı şey vardı ama monitörde üzerine basa basa konuştuk. Nasıl bir yapı vardı? Bir kuyruk yapısı vardı değil mi? Bir weight yapısı vardı. Yani bu durumda bu program bu haliyle böyle bir monitör üzerinden, bu amaç için yazılmış bir monitör üzerinden diske erişirse
+
+448
+01:23:09,555 --> 01:23:15,195
+Zaten yazma işlemi tamamlanana kadar otomatikman uyutulacak mı?
+
+449
+01:23:16,675 --> 01:23:17,315
+Evet hocam.
+
+450
+01:23:18,296 --> 01:23:24,956
+İşlem bittiğinde, işletim sistemine interhap geldiğinde ki zaten onun işlenmesi gerekiyor, başka çaresi yok.
+
+451
+01:23:25,716 --> 01:23:30,475
+İşletim sistemi de monitörün signal tarafını tetikleyebilir mi?
+
+452
+01:23:32,148 --> 01:23:58,708
+Tekniklerse hareketi geçirmiş olur. O zaman beklemekte olan programda kaldığı yerden devam eder. Çünkü işi bitmiş demektir. Şimdi gördünüz mü? Alt seviyedeki interabla gerçekleşen mekanizmayı üst seviyede tamamen neye dönüştürdük? Yazılıma dönüştürdük değil mi? Basit bir uykuya yatırma, uyandırma. Peki bunun güzelliği nerede?
+
+453
+01:23:59,923 --> 01:24:02,363
+Birkaç güzelliği var. Bana sayabilecek misiniz?
+
+454
+01:24:07,475 --> 01:24:10,056
+Hocam bir tanesi monitör yapsa zaten birebir uyuyor buna.
+
+455
+01:24:10,855 --> 01:24:13,395
+Tamam, güzel. Okey, kabul ediyorum. Başka?
+
+456
+01:24:14,655 --> 01:24:18,435
+Daha bir tek bir. [öğrenci], duyamadım dediğini.
+
+457
+01:24:18,796 --> 01:24:22,716
+Proses beklemede kalmıyor hocam. Yani başka işleri varsa onları yapıyor belki de.
+
+458
+01:24:23,444 --> 01:24:41,144
+Hayır ama bak az önce uyutacağız dedik. Proses beklemede kalmıyor değil. Bak onun içinde birinci maddeyi kafanda canlandırmanı isterim. Kendi içinde parçalara bölünmüş ama tightly coupled. Birden fazla parçadan oluşuyor. Bu parçanın görevi sadece diske yazmak.
+
+459
+01:24:42,364 --> 01:24:45,104
+Bir diğer prosesler çalışmasına devam edebilirim.
+
+460
+01:24:45,104 --> 01:24:50,584
+Tamam bu kısım ama yani niye bu kısma odaklanarak cevap vermiyorsunuz?
+
+461
+01:24:51,956 --> 01:25:15,956
+Bir soytlama var burada birazdan. Arkadaşlar, bu kısım uykuya yattığı zaman gereksiz yere işlemci kullanması söz konusu olabilir mi? Olmayacak. İşlemciyi bırakacak otomatikman. Yani işlemci boşa çıkacak. Bu proses artık işlemciyi elinde tutmak zorunda değil. Birincisi bu. Doğru mu? İkincisi...
+
+462
+01:25:16,564 --> 01:25:37,204
+İnteraptı donanım zaten sağlıyor, işletim sistemi bunu karşılıyor ama bir de aynı interaptın, aynı mantıkla yazılım olarak yukarıda yapıldığını düşünsenize. O programı ben herhangi bir yerde zaten boşu boşuna beklerken döngü halinde mesela alacağım, zorla.
+
+463
+01:25:37,652 --> 01:25:59,572
+Program içerisinde başka bir yere götüreceğim. Bak sana interrup geldi diye. Zaten sonucunu bildiğim bir şeyi ona tekrar aktaracağım. O evet diyecek. Diske yazma bitmiş diyecek. Kaldığı yere geri döndüreceğim. Ona göre de devam edecek. Halbuki burada bakın ben diske yazma, diyelim ki disk write olsun.
+
+464
+01:26:00,756 --> 01:26:25,536
+Proses bunu çağırıyor. Bunun sonucunda ne oluyor? Uykuya yatıyor. Alt tarafta interrupt oluyor. Interrupt'tan işletim sistemi haberi oluyor. İşletim sistemi signal'ı tetikliyor. Signal'ın sonucunda disk write geri dönüyor. Niçin? Uykudan uyandırılıyor. Yani bakın programcı yine neden soyutlanmış oldu? Neden haberi yok?
+
+465
+01:26:26,195 --> 01:26:28,475
+Hiç orayı kullanmayacak, hiç bilmeyecek bile hocam.
+
+466
+01:26:28,735 --> 01:26:49,036
+Evet, uyuyormuş, uyandırılıyormuş, bekletiliyormuş, öyleymiş. Umurunda değil. Oraya bir satır yazdı. Discribe arka tarafta nasıl olduğunu ilgilendirmiyor. Arada belki çok yavaş yazıyor. 10 saniye bekliyor. SSD süper yazıyor. 1 milisaniye bekliyor. Bilemeyiz. Hatta daha düşüyor. Ama programcı bununla ilgilenmek zorunda değil.
+
+467
+01:26:52,112 --> 01:27:17,952
+Hedeflediği şeylerden biri bu. Birinci maddeyle bunu birleştirirsek, eğer bir programı concurrency sağlayacak şekilde kendi içerisinde tightly coupled, alt parçalara bölersek, bu alt parçaları da canımın çektiği gibi bu alt taraftaki inter-hap dirimin mekanizmasına uygun olarak eğer bir inter-hapta göre kaldığı yerden çalışacak edecekse uyutabilirim. Programın geneli akmaya devam eder değil mi?
+
+468
+01:27:19,412 --> 01:27:41,952
+Eğer ilerleyebiliyorsa, konküransi yapısı içerisinde. Bakın ne kadar, nasıl diyelim, modern bir şey. Bunu ne zaman yazıyorlar? 1977 yılında. Yani şu anki Windows falan hepimizin önünde değil mi? Oradaki o şeylerin temelleri burada.
+
+469
+01:27:43,828 --> 01:27:46,868
+O dillerdeki asenkron yapılarda bunlar değil mi hocam?
+
+470
+01:27:47,307 --> 01:27:49,467
+Aynen. Aynen. Kesinlikle.
+
+471
+01:27:52,068 --> 01:27:59,047
+Peki Global Resource Sharing, onu da bana yorumlayabilecek bir arkadaşınız var mı acaba?
+
+472
+01:28:01,988 --> 01:28:03,908
+Bir iki cümle edebilecek.
+
+473
+01:28:05,188 --> 01:28:07,467
+Ben bir cümle olarak söyleyebilirim.
+
+474
+01:28:07,887 --> 01:28:08,568
+Söyle [öğrenci].
+
+475
+01:28:08,975 --> 01:28:16,115
+Birbirinden bağımsız programlar aynı kaynakları birbirini etkilemeden kullanabileceklerdir diyebiliriz.
+
+476
+01:28:17,855 --> 01:28:24,835
+Yani birden çok proses aynı kaynak üzerinde sorunsuz çalışacak şeklinde yorumlayabiliriz.
+
+477
+01:28:26,855 --> 01:28:32,615
+Burada hocam birden fazla proses monitörleri çağırırsa yapı sağlanmış olur değil mi?
+
+478
+01:28:33,995 --> 01:28:36,115
+Tabii ki. Bir monitörü...
+
+479
+01:28:36,275 --> 01:28:47,596
+Arka tarafta koruduğu ve kullandırttığı, schedule ettiği resource neyse ona ihtiyaç duyan prosesler aynı anda çağırabilirler.
+
+480
+01:28:47,596 --> 01:28:59,355
+Ama o an, o kaynak daha önceden çağrı yapmış bir proses sebebiyle meşgulse, erişilebilir değilse, monitörün görevi ne? O prosesi kuyruğa almak.
+
+481
+01:29:00,456 --> 01:29:03,435
+Proses bundan haberdar olacak mı? Olmayacak.
+
+482
+01:29:05,363 --> 01:29:08,144
+Askiye alınmış olacak, beklemeye alınmış olacak.
+
+483
+01:29:12,659 --> 01:29:16,019
+Şimdi, Cihal sen okudun mu bu paper'ı?
+
+484
+01:29:16,840 --> 01:29:35,559
+Mesai okudum hocam. Şu şeyleri de okudum da. Hatta monitörün Brinch Hanson Dijkstra, gerçi Dijkstra semaforu yazıyor. Bu ara implementasyonlarına falan baktım. Farklarına da baktım. Bu G'ye kadar yapıları da okudum.
+
+485
+01:29:36,115 --> 01:29:49,195
+Birincisine göz gezdirdim. Şeyi falan gördüm hocam. Bu klaslardaki üçüncü şey de var. Process creation var. Ona baktım. Üçüncü maddede de klasların, şu an kullandığımız klaslardaki public ve private.
+
+486
+01:29:50,016 --> 01:29:51,076
+Aynen. Değil mi?
+
+487
+01:29:51,076 --> 01:29:53,836
+Çok çarptı gözüme yani. Çok şey oldu.
+
+488
+01:29:56,536 --> 01:29:59,836
+45 sene öncesinden bahsediyoruz.
+
+489
+01:30:00,000 --> 01:30:15,760
+Kırkaltı sene öncesinden ki aslında o klas yapısı 67 bir üzerine şey daha koyun. Simüla 67, 67 yılında çıkıyor. Bir 10 sene daha koyun. 55 senelik bir kavram bugün kullandığımız şey. Peki [öğrenci] sen okudun mu?
+
+490
+01:30:17,060 --> 01:30:19,400
+Hocam ben bu hafta sadece ilkini okuyabildim.
+
+491
+01:30:19,400 --> 01:30:20,699
+Tamam. [öğrenci]?
+
+492
+01:30:22,460 --> 01:30:24,539
+Yok hocam ben de okumadım.
+
+493
+01:30:26,836 --> 01:30:30,615
+Sen [öğrenci]'sın, bir de [öğrenci]'imiz var bizim.
+
+494
+01:30:31,216 --> 01:30:33,756
+Ben okumadım hocam, yok. O yüzden pek yorum yapmadım.
+
+495
+01:30:34,235 --> 01:30:36,095
+Ben belli bir yere kadar okudum hocam.
+
+496
+01:30:37,555 --> 01:30:41,716
+O zaman bir dakika, ben belli bir yere kadar okudum diyen [öğrenci] sen misin?
+
+497
+01:30:42,115 --> 01:30:42,895
+Evet hocam benim.
+
+498
+01:30:43,256 --> 01:30:46,615
+Niye hiç sesin solun çıkmadı o zaman, belli bir yere kadar okuduysan?
+
+499
+01:30:47,055 --> 01:30:49,716
+Hocam yani yorum sırası gelmedi.
+
+500
+01:30:50,456 --> 01:30:52,036
+Allah Allah, şey mi yapıyoruz?
+
+501
+01:30:53,203 --> 01:31:04,923
+Kırmızı halı mı sermemiz lazım? Böyle harpuz mu kesmemiz lazım? Arkadaşlar zaten beş kişiyiz. Rahat rahat konuşun. [öğrenci] sende durumda.
+
+502
+01:31:09,587 --> 01:31:19,507
+[öğrenci]. [kişisel bilgi] Sağ olun hocam. Dersi de sırf kaçırmayayım.
+
+503
+01:31:20,847 --> 01:31:25,768
+Teşekkür ederim. Sağ olasın [öğrenci]. [kişisel bilgi]
+
+504
+01:31:26,728 --> 01:31:29,707
+[kişisel bilgi]
+
+505
+01:31:29,847 --> 01:31:32,288
+Peki. Tamam. [kişisel bilgi] [öğrenci].
+
+506
+01:31:34,100 --> 01:31:34,980
+Sen ne yaptın?
+
+507
+01:31:34,980 --> 01:31:40,140
+İlk üç sayfasını okudum. Diğer kısımlara bakacak vaktim olmadı açıkçası.
+
+508
+01:31:43,880 --> 01:31:44,920
+Anladım.
+
+509
+01:31:46,500 --> 01:31:50,400
+Şimdi arkadaşlar, sizi hep böyle teşvik etmeye çalışıyorum.
+
+510
+01:31:52,532 --> 01:32:07,711
+Benim hissettiğim heyecanı siz de hissedin diye bunlar da hakikaten çok güzel, tarihi gibi görünüyor ama bugün kullandığımız şeylerin temelleri kullanmaya, yani daha da üzerine böyle karşımıza çıkan yeni yapılarmış gibi aslında kalbisene önceki şeyleri var.
+
+511
+01:32:10,331 --> 01:32:14,032
+Şu ana kadar toplam kaç tane paper oldu ben size söyleyeyim.
+
+512
+01:32:14,032 --> 01:32:16,851
+Beş tane.
+
+513
+01:32:17,247 --> 01:32:33,688
+Lütfen sizden istirhamım, ricam, nasıl algılarsanız algılayın. Yani şu beş tane paperı yolda gidip gelirken mi, servisinizde mi, öğle aranızda mı, akşam şeyinizde mi? Lütfen gözünüzden biraz daha bir delinlemesine geçirin.
+
+514
+01:32:34,707 --> 01:32:40,268
+Size yine azar azar veriyorum. Bakın geçen hafta hangi arkadaşımızdı?
+
+515
+01:32:40,427 --> 01:32:43,847
+Ben söyledim hocam. Hafta sonu şey olursa daha çok makam.
+
+516
+01:32:43,868 --> 01:32:50,427
+Cumaattan verdim. Yine yarından vereceğim. Bir de az verin dediniz. Az verdim. İki tane verdim. Birbiriyle doğrudan ilişkili.
+
+517
+01:32:50,427 --> 01:33:02,608
+Yani biri monitör kavramını, ortaya atılmış olan monitör kavramını şey olarak teorik örnekler veyahut da basit lokalleştirilmiş pratik örnekler üzerinden inceliyor.
+
+518
+01:33:02,707 --> 01:33:29,547
+Öbürü ise bunu bir işletim sistemi içerisinde implement ederek inceliyor. Yani çok böyle birbirinden farklı değil. Şimdi yine iki tane veya üç tane vereceğim. Bilmiyorum. Yani iki tanesi kesin de belki üçüncü de veririm. Onları da yarın duyuracağım. Lütfen yani şu anki şeyiniz güzel bir şey kazandık derste. En azından dersin heyecanı var.
+
+519
+01:33:29,920 --> 01:33:40,159
+Keyfi var. Ama tempoyu biraz daha yoğunlaştırmamız gerekiyor arkadaşlar. Sizden daha çok katkı bekliyorum. Anlaştık mı?
+
+520
+01:33:40,579 --> 01:33:41,199
+Peki hocam.
+
+521
+01:33:41,876 --> 01:33:59,976
+Hocam, bir de ben bir şey sorabilir miyim? Sor. Bu makalelerde tabii doktora seviyesi bir ders olduğu için çok derinlemesine konuları işliyoruz da, şimdi biraz da hem aradan vakit geçip de bu ders aldığım için biraz temellerde bende kopuklar olmuş.
+
+522
+01:33:59,976 --> 01:34:05,756
+Yani bir resmi böyle bütüncül görebilmek adına tavsiye edebileceğiniz bütüncül bir kitap.
+
+523
+01:34:06,068 --> 01:34:08,387
+Bu alanda var mıdır? Bu makaleleri...
+
+524
+01:34:08,387 --> 01:34:09,307
+İşletim Sistemleri.
+
+525
+01:34:10,507 --> 01:34:12,228
+İşletim Sistemleri bu kitabı.
+
+526
+01:34:12,967 --> 01:34:13,448
+Evet hocam.
+
+527
+01:34:13,568 --> 01:34:26,032
+Hocam aynı sorunla ben de karşılaşıyorum. Mesela okulken aslında orada bahsedilen ama benim bilmediğim ya da hatırlamadığım kavramlar oluyor. Onları da öğrenmeye çalışınca...
+
+528
+01:34:26,032 --> 01:34:37,252
+Daha da uzaklaşıyorum. Başka yerlere gidiyorum. Evet, günün sonunda başka şeyler öğreniyorum. Ama zamanı yetiştiremiyorum. Bir de başka ders, bu dönem ders hüküm çok fazla.
+
+529
+01:34:37,712 --> 01:34:39,252
+Kaç tane dersim var rahatsız?
+
+530
+01:34:39,771 --> 01:34:43,811
+Hocam, etik dışında dört dersim var. Siz de dersinizle birlikte.
+
+531
+01:34:45,152 --> 01:34:46,051
+Çok fazla.
+
+532
+01:34:47,380 --> 01:34:50,819
+Hakikaten çok fazla. Sen doktora seviyesindemişsin şey mi?
+
+533
+01:34:50,920 --> 01:34:52,059
+Yok, yüksek sans.
+
+534
+01:34:52,800 --> 01:34:55,859
+Hocam benim 8 dersim var doktora seviyesindeyim.
+
+535
+01:34:56,359 --> 01:34:59,079
+E bu [öğrenci] sen ne yaptın? Yıldın mısın?
+
+536
+01:34:59,760 --> 01:35:01,180
+Şimdi dersleri aldım hocam.
+
+537
+01:35:02,460 --> 01:35:04,340
+[kişisel bilgi]
+
+538
+01:35:04,699 --> 01:35:05,579
+Çalışıyorsun bir de.
+
+539
+01:35:07,159 --> 01:35:09,460
+Çalışırken zaten ekstra zor oluyor.
+
+540
+01:35:09,460 --> 01:35:12,460
+[kişisel bilgi]
+
+541
+01:35:13,108 --> 01:35:23,208
+Yani şu ana kadar diğer dersler online diye girmiyorum. Bu da ders çalışma saatlerime denk gelmediği için giriyorum.
+
+542
+01:35:23,608 --> 01:35:30,028
+Ve makalelerini okuyarak ancak bu derse çok yoğunlaşabiliyorum. Diğerleri biraz geride kaldı o yüzden.
+
+543
+01:35:30,588 --> 01:35:40,088
+Arkadaşlar, dört ders çok fazla. Ben size söyleyeyim. Sekiz hele [öğrenci] iddia gibi bir şey.
+
+544
+01:35:40,532 --> 01:35:43,552
+Hocam şansımı deneyelim.
+
+545
+01:35:43,552 --> 01:36:04,372
+Ya arkadaşlar bakın lütfen bilim insanı olma yolunda ilerliyorsunuz. İster master yapın, ister doktor yapın. Artık böyle bilim insanı statüsü kazanmak için bu işi yapıyorsunuz. Bilimde şansımı deneyeyim.
+
+546
+01:36:04,819 --> 01:36:20,199
+Ancak istatistikle olabilir. Bunun da istatistiğine baktığımızda 8 tane ders alıp da bir dönemde bunu başarıyla tamamlamış olan %0. O yüzden şansımı deneyeyim, olmuyor.
+
+547
+01:36:22,707 --> 01:36:30,367
+Sıradan sokaktaki iki kişinin normal halkın konuşması şeklinde. Bir şansımı deneyeyim bakalım ne olacak.
+
+548
+01:36:30,607 --> 01:36:35,707
+Ama hocam inanıyorum ya sözünüzü. Kestim mi? Ben verebileceğimi inanıyorum.
+
+549
+01:36:36,607 --> 01:36:43,107
+Vallahi de hayırlısı. Senden gereğine kalır ondan sonra sen bu sekiz dersini çalıştın. [öğrenci] onu bilemiyorum.
+
+550
+01:36:43,107 --> 01:36:47,747
+Bu da böyle ayrı bir şey. Rehabilitasyona yollanmamız gerekebilirse mi?
+
+551
+01:36:48,227 --> 01:36:49,327
+Çok güzel.
+
+552
+01:36:50,739 --> 01:37:17,099
+Yani benim gözümde aceleye gerek yok. Üç ders alırsınız, iki ders alırsınız. Yani etikle beraber üç ders alsanız mis gibi yoğunlaşırsınız. En fazla etikle beraber dört ders aldınız. Ondan sonraki semestir seminerle falan aldınız. Yani zaten bir dönemde uzatma şeyleriniz falan var. Bayağı bir rahatsınız. Bu kadar aceleye, masterda gerek yok bence veya doktora da.
+
+553
+01:37:17,587 --> 01:37:43,127
+Neyse, şimdi ben size iki tane kesin, belki duruma bakarım. Onun da içeriğini bir daha bir gözden geçireyim. Üç tane paper veririm. Haftaya yine Ramazan olması sebebiyle hepiniz rahat edin. Sıkıntı olmasın. Kişisel tercihlerden bağımsız bir şekilde sekiz buçukta başlayalım arkadaşlar, tamam mı?
+
+554
+01:37:43,127 --> 01:37:45,087
+Hocam ben bir şey sorabilir miyim?
+
+555
+01:37:45,376 --> 01:37:46,376
+Tabii.
+
+556
+01:37:46,376 --> 01:37:57,376
+Makaleleri verirken sıralama veriyorsunuz ya, 3 ve 4 gibi. Biz onlara bakarak mı öncelikli olarak okuyalım?
+
+557
+01:37:57,376 --> 01:38:07,376
+Mesela diyelim ki hepsini yetiştiremedik. 3'ten başlasak en çok onu konuşacağız gibi düşünebilir miyiz mesela? 3 ve 4. makaleyi verdiği şey.
+
+558
+01:38:13,376 --> 01:38:34,536
+Öncesi daha bir temeli yüksek sayılı olan da onun üzerine daha genişletilmiş hali işte bugünkü gibi. Mesela üç numara monitörstü daha böyle temelini şeyini anlatıyordu özelleşmiş olarak. Diğeri ise onun gerçek hayatta uygulamasıydı MESA. Öyle düşünebilirsiniz.
+
+559
+01:38:34,536 --> 01:38:36,275
+Tamam hocam.
+
+560
+01:38:38,612 --> 01:38:47,032
+O zaman arkadaşlar, hepinize iyi akşamlar diliyorum. Sağlığınıza dikkat edin. Haftaya, Perşembe günü görüşmek üzere.
+
+561
+01:38:47,372 --> 01:38:48,731
+İyi akşamlar hocam.

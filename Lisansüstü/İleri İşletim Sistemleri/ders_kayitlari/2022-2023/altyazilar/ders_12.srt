@@ -1,0 +1,475 @@
+1
+00:01:36,052 --> 00:01:37,432
+Resim geliyor mu arkadaşlar?
+
+2
+00:01:39,432 --> 00:01:40,332
+Geliyor hocam.
+
+3
+00:01:44,500 --> 00:01:45,579
+Beni duyuyor musunuz?
+
+4
+00:01:46,959 --> 00:01:48,159
+Evet hocam, sesiniz geliyor.
+
+5
+00:01:48,879 --> 00:01:50,120
+Tamam, harika.
+
+6
+00:01:55,347 --> 00:02:02,388
+Bir iki dakika daha bekleyelim diyeceğim ama tecrübeyle sabit çok fazla arkadaşınız katılmıyor.
+
+7
+00:02:05,668 --> 00:02:07,168
+Genelde bu kadarız hocam, evet.
+
+8
+00:02:07,608 --> 00:02:08,728
+Evet, ne yazık ki.
+
+9
+00:02:12,563 --> 00:02:19,663
+Bu haftanın paperına kimler baktı? Sen bakmasındır [öğrenci] muhtemelen. Ben anlatayım.
+
+10
+00:02:20,243 --> 00:02:25,743
+Hocam ben Zen'i iyice okudum ama diğerine hiç vaktim olmadı hocam.
+
+11
+00:02:26,663 --> 00:02:31,003
+Tamam, peki. [öğrenci] veya [öğrenci], senin durumun ne?
+
+12
+00:02:31,383 --> 00:02:37,084
+Hocam benim çok fazla vaktim olmadı. Zen'i bir miktar inceledim ama maalesef çok detaylı inceleyemedim.
+
+13
+00:02:38,324 --> 00:02:39,004
+Anladım.
+
+14
+00:02:39,463 --> 00:02:45,384
+Hocam bir şey sorabilir miyim bu arada? Çok pardon [öğrenci]. Geçen hafta ders oldu mu? Makale yüklenmedi ama.
+
+15
+00:02:46,284 --> 00:02:52,343
+Geçen hafta ders yapamadık. Benim bir son dakika bir şeyim çıktı. Size haber veremedim. Yapamadık geçen hafta.
+
+16
+00:02:52,684 --> 00:02:53,963
+Tamamdır hocam. Teşekkür ediyorum.
+
+17
+00:02:55,084 --> 00:02:59,884
+Evet. O zaman başlayalım Zen'le.
+
+18
+00:02:59,884 --> 00:03:01,884
+Hanginiz?
+
+19
+00:03:02,304 --> 00:03:03,524
+Hangimiz anlatacak?
+
+20
+00:03:03,564 --> 00:03:04,304
+Hocam bu arada.
+
+21
+00:03:04,843 --> 00:03:05,264
+Efendim?
+
+22
+00:03:05,824 --> 00:03:12,564
+Ben hiç bakamadım hocam. Ben bugün girdim online Yıldız'a. Öyle gördüm. Geç oldu.
+
+23
+00:03:14,103 --> 00:03:18,144
+E mail gelmiyor mu? Normalde size mail geliyor olması lazım ödev olduğunda.
+
+24
+00:03:18,743 --> 00:03:20,483
+Yok hocam. Öyle bir sistem yok.
+
+25
+00:03:21,223 --> 00:03:24,644
+Hiç yok. Hep girip biz kendimiz bakıyoruz öyle.
+
+26
+00:03:25,223 --> 00:03:26,783
+Allah Allah. Çok üzülmüş.
+
+27
+00:03:27,983 --> 00:03:28,424
+Evet.
+
+28
+00:03:30,163 --> 00:03:31,303
+Hanginizi anlatıyor?
+
+29
+00:03:31,823 --> 00:03:32,983
+Ben başlayayım mı hocam?
+
+30
+00:03:33,623 --> 00:03:34,644
+Başla bakalım.
+
+31
+00:03:36,163 --> 00:03:42,303
+Hocam bu hafta, gerçi geçen bir önceki makalede VMware ESX Server vardı.
+
+32
+00:03:43,983 --> 00:03:47,563
+Orada full virtualization'dan bahsetmiştik biraz.
+
+33
+00:03:48,783 --> 00:03:50,163
+Burada onun aksine...
+
+34
+00:03:51,027 --> 00:04:14,827
+Onun bir iki sıkıntısından bahsedip bize para virtualization kavramından bahsedecek. O bir iki sıkıntı dediği de bunlardan bir tanesi şey hocam. Geçen makalede görmüştük. Bu virtual'dan fiziksele gidiyordu. ESX Server. Fizikselden de machine address dediği gerçek RAM adreslerine gidiyordu. Tabi bunu yine page table'larla yapıyordu. Obstrakşını öyle sağlıyordu.
+
+35
+00:04:17,843 --> 00:04:42,943
+Her Page Table'a yaptığı çağrıları sürekli intifat ediyordu. Çünkü orayı kendisi değiştiriyordu. Bunun yanında işte Shadow Page Table'lar tutuyordu. Direkt virtual'dan machine adrese gitti. Bir bunun sıkıntı olduğunu söylüyor. Her Page Table'a yazmayı intifat etmeniz zaman alır diyor. Bir de bu Super Page meselesinden bahsediyor.
+
+36
+00:04:45,747 --> 00:04:51,727
+Hatırladığım kadarıyla şey vardı. Bir constraint de süper pejlerin fiziksel olarak aynı yerde olması lazımdı.
+
+37
+00:04:52,767 --> 00:04:59,367
+İşte bir real location based bir de şey based iki farklı yöntemle yapıyordu.
+
+38
+00:04:59,367 --> 00:05:05,168
+İşte işletim sistemi baktı ki pejler büyüyor. Bunlar da fiziksel olarak tek bir yerde süper pej yapıyordu bunları.
+
+39
+00:05:05,967 --> 00:05:10,247
+Şimdi full virtualization yaptığınız zaman bu pejlerin aynı yere gelmemesi.
+
+40
+00:05:10,771 --> 00:05:36,411
+Bu ihtimal dahilinde oluyor. Gelmesi zor oluyor aslında aynı yerde oluşması. Çünkü bunu ESX Server hallediyordu full virtualization'da. Burada da bu ikisinden bahsedip, bunun yanında para virtualization, para da baktığım kadarıyla beraber birlikte demek. Yani guest OS şeyin farkında olacak. Bir sanallaştırma şeyin üzerinde çalıştığın farkında olacak. ESX Server de öyle değildi.
+
+41
+00:05:36,788 --> 00:06:01,628
+Yani GuestOS sanki sıfır adresini veriyorduk. O memory sıfır adresini bekliyordu. Biz de onu sağladığımız zaman kendisi hiçbir şeyin farkında olmuyordu. Burada farkında oluyor. Hatta içeriğini değiştiriyorlar GuestOS'in. Öyle ki artık kendisi ring sıfırda bile değil. Yani ring sıfırın üzerinde başka bir ringte olacak. Kendisi ring sıfıra geçtiler de hyperspace'e geçtiler de hypercall dedi. Biz nasıl user space'den kernel space'e geçiyorsak siz kollarla.
+
+42
+00:06:02,163 --> 00:06:27,864
+Öyle şeyler getirilmiş. Bunlar yazılmış yani. Hypercall Sistemi yazılmıştı. Bu Interface M Zen'de yapılmış. Hem de bu Interface'e haberleşecek şekilde işletim sistemleri değişti. Zaten port nasıl port edilir kısmında da bahsediyor biraz. Onun dışında burada değişiklik yapmışlar. Bir de şeyden bahsediyor. Abi'den bahsediyor biraz. Application Binary Interface'den. Abi'ye karışmadık diyor. Abi de şu.
+
+43
+00:06:28,500 --> 00:06:38,579
+Benim bildiğim kadarıyla, gerçekten bundan burada gördükten sonra bir de bu Sistem 5 abisi var, AMD'nin 6086 diye. 128 sayfa biraz ondan da okudum.
+
+44
+00:06:40,279 --> 00:06:51,719
+Derste şey, bizim mikro işlemli dersinde ya da esnamli dersinde şey oluyordu. Ben yazarken fonksiyon çağrısı yaptığım zaman bazen caller'da siteyi saklıyordum, base pointer'ı saklıyordum.
+
+45
+00:06:54,579 --> 00:07:17,759
+Topluyordu. Bazen de kolide saklıyordum. Bazen register üzerinden parametre pasıyordum. Bazen stack üzerinden. Bunların hepsinin bir şeyi olmalı. Sadece bunlar da değil. Veriyi nasıl koyacaksınız? Aslında aşağı yukarı siz SM'li kodunu nasıl üreteceksiniz? Çünkü işte bir mimarinin şeyleri var. Örneğin Arum'da nasıl diyeyim işte interappini.
+
+46
+00:07:18,228 --> 00:07:43,987
+Adı şey başkadır ya da siz bir registra yazdığınız değerle yaptığınız işlem başka bir mimaride başka olacak. Bunları nasıl üreteceğiniz abi diye hayal ediyorum. Tabi tam yanlış doğru da olmayabilir. Abi sayesinde işte bir interfej sağlıyor size. Şu işlemleri, şu işlemleri yapacaksınız. İşte register örneğin, caller function registerların şu registerlar karışmasın.
+
+47
+00:07:44,468 --> 00:08:05,448
+Başka ya da Koli Function şu registralar karışmasın gibisinden. Memor layout'lar da abiye bağlı. Abi tabii işletim sistemine bakan tarafı var. Bir de compiler'a bakan tarafı var. Çünkü compiler da şey kodu üretiyor, makine kodu. İşletim sistemi de kendi üzerinde kullandığı donanımla ilgili ürettiği kodlar.
+
+48
+00:08:10,291 --> 00:08:17,211
+şey yapması lazım yani değişmesi lazım. Compiler'da siz karıştınız diye muhtemelen değiştirmezler. O yüzden abiye karışmamaya dikkat etmişler.
+
+49
+00:08:19,252 --> 00:08:29,752
+Bunun dışında bunları anlatıyor işte. Virtualization nasıl yaptıklarını anlatıyor. Bir 3 şeyde yapmışlar. Bir CPU, bir memory, bir de IO device'larında.
+
+50
+00:08:31,031 --> 00:08:37,172
+Memori'da yaptıkları TLB'den bahsediyor. TLB'de SuperPage makinesinden yeni hatırladığım kadarıyla.
+
+51
+00:08:38,388 --> 00:08:53,768
+Util bir şey yapıyordu. Tek seferde bütün gözlere bakabiliyordu. BCPU Cycle'da bütün gözlere bakıp sizin o aradığınız, o yaptığınız look up oradan kalıyordu. Yani Page Table'ın gerçek frame numarası var mı diye.
+
+52
+00:08:54,227 --> 00:09:14,227
+Burada da Intel'de TLB'nin software'den şey yapılamadığını anlatıyor. Değiştirilemediğini. Yani muhtemelen TLB'ye update edecek bir instruction seti yok. Intel'in öyle instruction seti yok. Orada tamamen donanımda CPU, tamamen donanımda halledildiği için. TLB'ye karşılamaya tabii TLB demek yani her işletim sisteminin kendi...
+
+53
+00:09:14,240 --> 00:09:24,819
+TLB'si olacak sonuçta. Her address space'in kendi TLB'si olacak. Siz geçişler yaptığınız zaman address space arasında. TLB'yi ya yazılımla kontrol edeceksiniz, değiştireceksiniz ya da tamamen flashlayacaksınız.
+
+54
+00:09:25,680 --> 00:09:34,340
+Burası ondan bahsediyor. Tek TLB diye bir verida yapı şeyden, donanım yapısından bahsediyor. Bazı TLB'lerin galiba içerisindeki entry'lere ekstra bir tag de koyabiliyorum.
+
+55
+00:09:34,340 --> 00:09:36,799
+Şu address space'e ait. Identifier tag diye.
+
+56
+00:09:37,203 --> 00:09:43,163
+Onlar varsa oraya adres space koyarsınız, birbirinden ayırsınız ama yoksa mecbur. Flashlayacaksınız geçilerde.
+
+57
+00:09:44,604 --> 00:09:51,703
+Patch Table'lardan bahsiyordu burada biraz. Gerçi o daha devamındaydı. CPU'da da şeyden bahsiyordu.
+
+58
+00:09:51,703 --> 00:09:59,624
+Tabi Zen'in kendisi şey yapmak istiyor, Ring 0'da çalışmak istiyor. İstiyor değil, Ring 0'da çalışıyor, en yüksek Ring'de çalışıyor.
+
+59
+00:10:00,052 --> 00:10:18,471
+Bu da tabii normalde Kernel Space şeydi, işletim sistemindeki Kernel Space, Link 0'daydı. Artık onlar şeyde olamaz. Eğer mimarinin link desteği iki tane ise bir tanesi Zen'in olacak, diğer ikisi User Space uygulamalı. Kernel Space, işletim sisteminin ikisi de aynı linkte olacak.
+
+60
+00:10:18,912 --> 00:10:35,912
+Orada işte işlettiğimizde farklı bir adres space kullanarak kendisini user space'ten ayırabilir falan diyor. Intel'de böyle bir sıkıntı yok. Intel'de 4 link var. Zaten Linux'un kendisi 0 ve 3'ü kullanıyor. Burada Zen kendisi 0'a oturuyor. Diğerleri de işte 1-2'ye hangisini isterse orada şey yapabiliyor.
+
+61
+00:10:35,912 --> 00:10:44,652
+Tabi burada şöyle bir şey de var benim fark ettiğim. Şimdi boot esnasında işte işlemci başlıyor 0 adresinden diyelim. Instruksyonlar okumaya gidiyor.
+
+62
+00:10:45,056 --> 00:10:56,516
+Bios çipinden kodu yükledi. Ondan sonra Bios'a geçti. Oradan bu turu campladı. Oradan işletim sistemine geçti. Orada işletim sistemi RealMode'da. Daha Kernal Space kavramı da yok. Virtual Memory kavramı da yok.
+
+63
+00:10:57,971 --> 00:11:24,491
+Daha protected moda geçmeden. Orada interrupt table'ı ayarlamak mümkün olmayacak. Çünkü işletim sistemini de ayarlamak mümkün olmayacak. Çünkü Zen'in kendisi 0, işletim sistem 1'de çalışsa işletim sistemi gidip o interrupt table'ları ayarlayamayacak. Çünkü kendisi 1'de izin vermeyecek.
+
+64
+00:11:25,524 --> 00:11:51,923
+O da hyperspace'e geçtiler. Hypercall'larla, Zen'in böyle bir altyapısı da varmış, şey vermişler, o API'yi vermişler. Hyperspace call'larıyla orayı değiştirebiliyor. Çünkü bunu şeyde de görmüştük, işte thread makalesinde de demiştiniz, para virtualization buradan başlıyor diye. Orada virtual thread'lere kernel şeyi paslıyordu, interruptları paslıyordu. Burada da diyelim işte bir tane guest OS'in üzerinde bir user space programı var.
+
+65
+00:11:52,403 --> 00:12:19,644
+O adam kaynak, yani siz kollarla çalışacak. O siz kol, onun şeye gitmesi lazım. Siz kol demek, software interrupt demek. Software interrupt demek. Kod şeye geçecek. Interrupt table'da karşılığını kim koyduysa ona geçecek. Yani zene geçecek. Ama bunun şeye geçmesi lazım. Bir üstteki işletim sistemine çıkartması lazım. Orada da bu yapı var. Bununla bir üstteki nasıl o threadler, virtual thread'e, bir üstteki virtual thread'e thread bulu üzerinden.
+
+66
+00:12:20,052 --> 00:12:41,971
+O, process.blog.kernel'de thread.blog.kernel'de onu thread kütüphanesi, user space'de hallediyordu. Oraya çıkarıyordu kernel. Burada da öyle bir mekanizm var. Thread'i bir üste çıkarıyor. Daha sonraki 3'te kontrol ve management var diye. Ben böyle zengevi bir şey kullandım adını tam hatırlamıyorum ama genelde bir tane user interface oluyor. Onun da işte burada da öyle bir guestOS yapmışlar.
+
+67
+00:12:42,388 --> 00:12:58,728
+Management'ı Zen'in kendi kernelundan çıkarmışlar. Deploy et, çalıştır, başka bir şey ekliyor. Otorası kodları şeyden çıkarmışlar. Onu da bir tane işletim sistemi olarak, User Interface'li bir kontrol paneli olarak çıkarmışlar. Kontrol ve Management da böyle sağlanıyor.
+
+68
+00:12:59,728 --> 00:13:03,388
+Onun dışında başka ne var?
+
+69
+00:13:04,788 --> 00:13:19,908
+Yani [öğrenci], şu şey anlatıyorsun, çok da içinde önemli konuyla alakalı şeyler var ama şunları daha böyle bir paper'a bağlı anlatsam daha mutlu olacağım. Sen araya kendi reklamını da alıyorsun. Şu şöyleydi, bu böyleydi diye.
+
+70
+00:13:20,487 --> 00:13:22,028
+Biraz evet araya bir şeyler koydum hocam.
+
+71
+00:13:22,028 --> 00:13:29,148
+Evet, araya böyle şey yapıyorsun. Evet, başka yorum yapmak isteyen var mı [öğrenci]'ın haricinde?
+
+72
+00:13:37,331 --> 00:13:47,731
+Herhalde bu makalenin önceki virtualization'lardan farkı, herhalde burada tanımlamış olduğu para virtualization yöntemini gerçekleştirmiş olması.
+
+73
+00:13:49,312 --> 00:13:54,411
+Evet, onu gerçekleştiriyor. Bir de karşılaştırıyor. Yani değerlendirmesi yapıyor.
+
+74
+00:13:56,411 --> 00:13:59,884
+Fark olarak da temelde biraz daha tabii...
+
+75
+00:14:00,148 --> 00:14:16,048
+İşletim sistemlerine müdahale ediyor, ek kod getiriyor. Fakat bunun sayesinde diğerlerinin eksik kaldığı veya aynen eksik kaldığı yerleri gidermiş oluyor aslında. Tüm özellikleri sağlıyor gibi virtualizationdaki.
+
+76
+00:14:20,788 --> 00:14:30,008
+Şu ana kadar gördüğümüz o ESX VMware'deki virtualization mantığına göre burada uygulanan virtualization mantığının temel farkı ne arkadaşlar?
+
+77
+00:14:35,028 --> 00:14:36,347
+Ben söyleyeyim mi hocam, durayım mı?
+
+78
+00:14:37,128 --> 00:14:38,687
+Söyleyeyim birbirinizi bakayım, nedir?
+
+79
+00:14:40,248 --> 00:14:53,868
+ESX Server'da, GSTOS şeyin farkında değildi, sanavlaştırma yazının üzerinde çalıştığının. Tamamen memori kendisini sanıyordum. Ama burada farkında ve değiştirilmiş. İçerisinde de haberleşmeyi sağlayacak kodlar var. O şekilde değiştirilmiş.
+
+80
+00:14:55,528 --> 00:15:00,868
+Sadece olaya memori olarak bakmamak lazım bence her anlamda. Birinde...
+
+81
+00:15:01,120 --> 00:15:11,620
+Fiziksel makinenin işlemcisi, memurisi, çevre birimleri birebir bir kopyasını oluşturup işletim sistemine onu sunmaya çalışıyoruz.
+
+82
+00:15:23,764 --> 00:15:40,104
+Sananlaştırmayı daha kolay hale getiriyoruz. Hatta bu sayede performans kazanıyoruz. İşte nedir? Bakın o tablo 2. Linux tarafında ve bu işlemin, bu paperin yazıldığı dönemdeki işletim sistemi Windows XP tarafında.
+
+83
+00:15:43,539 --> 00:15:53,639
+Kendisiyle yani Intel mimarisiyle, 80x86 mimarisiyle alakalı olarak, işte Linux tarafında neymiş bu?
+
+84
+00:15:55,639 --> 00:15:59,879
+Kod satırı cinsinden düşünelim. Bir tarafta 78.
+
+85
+00:16:00,532 --> 00:16:11,532
+Satırda değişiklik, öbür tarafta 1299 satırda değişiklik oluyor. Sonra Linux'a Virtual Network Driver, Virtual Block Device Driver ekleniyor.
+
+86
+00:16:11,532 --> 00:16:28,331
+Ve Zen spesifikte, Driver haricinde değişiklik yapılıyor. Böylece işletim sistemi aslında sanal bir platformda çalıştığının farkında ama daha performanslı, daha uyumlu bir şekilde çalışıyor.
+
+87
+00:16:28,403 --> 00:16:53,764
+Bizim de sanavlaştırma için harcayacağımız emek, overhead azalıyor. Böylece performansımız artıyor. Tabi biri işte hani blue pill, öbürü red pill yaklaşımı. Red pill'de aşağıdan tamamen bağımsız farkında olmadan, blue pill'de öyle olmam lazım. Red pill'de ise burada olduğu gibi olayın farkındasın.
+
+88
+00:16:55,988 --> 00:17:12,228
+Anlatıldığı bir paper o açıdan önem taşıyor. Yani Zen Paragültualization'ın günümüz işletim sistemlerine efektif ve aktif olarak uygulanıp sanallaştırmanın sağlandığı ortamlardan bir tanesi.
+
+89
+00:17:21,172 --> 00:17:37,771
+İşlemcisiyle, memorisiyle, çevre birimiyle birebir limite eden, öyle bir şeyin kopyasını yazılımda oluşturan bir yapı var. Diğerinde ise yazılımdan yardım alarak sanallaştırmayı daha kolay, daha efektif hale getiren bir yapı var.
+
+90
+00:17:37,771 --> 00:17:42,351
+Evet. Peki.
+
+91
+00:17:45,779 --> 00:17:50,179
+Bir sonrakine bakabildiniz mi? Disko'ya bakabildiniz mi?
+
+92
+00:17:52,119 --> 00:17:53,839
+Hocam ben hiç bakamadım disko'ya.
+
+93
+00:17:55,519 --> 00:17:57,299
+Disko'ya bakamıyorum arkadaşlar.
+
+94
+00:17:58,920 --> 00:18:06,799
+Hocam ben de baktım ama çok az. Daha çok zene odaklanabildim bende ancak. Kısa diye ilk onu ele aldım.
+
+95
+00:18:07,460 --> 00:18:07,859
+Anladım.
+
+96
+00:18:09,683 --> 00:18:14,384
+Peki, Discord ile alakalı bilgi verebilecek olan en azından nedir?
+
+97
+00:18:15,783 --> 00:18:18,223
+diye bir şey, bilgi verebilecek olan var mı?
+
+98
+00:18:31,635 --> 00:18:33,476
+Şu an bir şey diyemiyorum.
+
+99
+00:18:37,268 --> 00:18:59,588
+Haftaya sadece bir tane veririm ama şu diskoyu da bir üzerinden geçeriz. Çünkü önemli. Yani hakikaten önemli. Onu bir, işte ESX'i gördük, şeyi gördük. Bir de şu disco yapısını. Yani bakın aslında kavram çok önemli bir kavram. Running Commodity Operating Systems on Scalable Multi-Processors.
+
+100
+00:19:02,228 --> 00:19:24,768
+Gidip herhangi bir yerden alabileceğim. İşte diyelim ki Microsoft'un Windows'u falan gibi düşünün veya şu an için Linux. O dönemdeki bu paper'ın yazıldığı dönemdeki böyle commodity işletim sistemlerinin herkese açık erişilebilir olan işletim sistemlerinin ölçeklenebilir multiprocessor ortamlarda çalıştırılabilmesi.
+
+101
+00:19:25,460 --> 00:19:44,367
+Bu da çok önemli. Çünkü niye? Scalability işin içine giriyor. Mesajlaşma işin içine giriyor. Performans işin içine giriyor. Sanallaştırma işin içine giriyor. Hepsi bir arada yine. Aslında baktığımız zaman...
+
+102
+00:19:44,367 --> 00:20:00,000
+Disco denen bu işletim sistemi gibi karşımıza çıkan yapılan bir Virtual Machine Monitor yani sanallaştırma ortamı sağlayan bir özel yazılım olduğunu görüyoruz.
+
+103
+00:20:14,451 --> 00:20:34,011
+Derinlemesini okumadığınız için ben size daha fazla soru sorsam bir faydası olmayacak. O yüzden dediğim gibi, şeyde de aslında hani, zem tarafında da bakmışsınız ama daha da çok bakabilirdiniz diye düşünüyorum. Daha da ayrıntılı bakabilirdiniz.
+
+104
+00:20:35,091 --> 00:20:40,331
+Haftaya sadece bir tane veririm. Dediğim gibi Disco ve O ondan sonra vereceğim.
+
+105
+00:20:40,756 --> 00:20:58,316
+Şu anda vereceğim diğer ikincisini tartışırız. Umarım daha böyle bir verimli bir şekilde, daha hararetli bir şekilde tartışabiliriz diye ümit ediyorum. Anlaştık mı?
+
+106
+00:20:58,976 --> 00:21:04,656
+Evet. Hocam ben şey soracaktım. Ben dersin başını biraz kaçırdım da buçuktan mı başladınız acaba yoksa kırk geçe falan mı?
+
+107
+00:21:04,656 --> 00:21:07,876
+Buçuk, otuz beş gibi falan başladım.
+
+108
+00:21:08,175 --> 00:21:12,675
+Peki sınav sonuçları belli oldu mu?
+
+109
+00:21:12,675 --> 00:21:14,475
+Yok, daha belli olmadı.
+
+110
+00:21:16,475 --> 00:21:18,475
+Telafi yapacak mıyız peki hocam?
+
+111
+00:21:18,975 --> 00:21:22,975
+Telafi yapmama gerektiren bir durum olduğunu zannetmiyorum öyle bir şey.
+
+112
+00:21:23,475 --> 00:21:28,475
+Yok anlamadım sadece merak ettim sordum yani dersin başına söylendi mi diye de.
+
+113
+00:21:28,475 --> 00:21:33,475
+Öyle bir şey yani bana mazeretle alakalı telafisiyle alakalı bir şey.
+
+114
+00:21:34,612 --> 00:21:36,991
+Zannetmiyorum.
+
+115
+00:21:38,692 --> 00:21:39,731
+Anladım.
+
+116
+00:21:40,372 --> 00:21:43,271
+O zaman iyi akşamlar diliyorum arkadaşlar hepinize.
+
+117
+00:21:44,011 --> 00:21:44,971
+İyi akşamlar hocam.
+
+118
+00:21:46,051 --> 00:21:46,751
+İyi akşamlar.
+
+119
+00:21:46,872 --> 00:21:47,912
+İyi akşamlar hocam.
