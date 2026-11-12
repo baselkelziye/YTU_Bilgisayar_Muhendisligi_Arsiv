@@ -1,0 +1,1235 @@
+1
+00:02:24,852 --> 00:02:26,372
+Sesim geliyor mu arkadaşlar?
+
+2
+00:02:31,316 --> 00:02:57,575
+Kusura bakmayın. Sabahtan bir değerlendirme toplantısı vardı. O uzadı. Ondan ötürü 11 çeyrek demiştim ama ancak bağlanabiliyorum. Fakat sorun değil. Geçen hafta kaldığımız yerden devam edeceğiz. Zaten bu hafta da geçen haftanın devamı onun tamamlayıcı kısmıydı.
+
+3
+00:02:57,575 --> 00:03:00,396
+Şimdi ekran paylaşımını açıyorum.
+
+4
+00:03:05,364 --> 00:03:13,544
+Arkadaşımız da derse bağlantıyla alakalı soru sormuş. Ona da cevap yazayım. Bir saniyede sağlayayım.
+
+5
+00:03:52,723 --> 00:03:53,983
+Geldi değil mi ekran?
+
+6
+00:03:55,463 --> 00:03:56,403
+Geldi hocam.
+
+7
+00:03:56,863 --> 00:03:57,943
+Tamam, süper.
+
+8
+00:03:59,323 --> 00:04:07,543
+Şimdi arkadaşlar, bu baştaki slide'lar zaten geçen hafta konuştuğumuz konuların bir özeti şeklinde.
+
+9
+00:04:09,024 --> 00:04:17,204
+Genel olarak network ile alakalı saldırıları da düşündüğümüz zaman, web tarafını söylemiyorum, network tarafını söylüyorum.
+
+10
+00:04:17,204 --> 00:04:25,283
+Saldırgan ya doğrudan man in the middle dediğimiz şekilde arada olabiliyordu.
+
+11
+00:04:26,603 --> 00:04:28,183
+Burada gördüğünüz gibi.
+
+12
+00:04:28,183 --> 00:04:39,183
+Ya da kenarda bir şekilde sistemin kontrolünü ele geçirerek kenarda olmasına rağmen saldırı düzenleyebiliyordu.
+
+13
+00:04:39,884 --> 00:04:43,543
+Birincisine on path diyoruz, yani yolun üzerinde.
+
+14
+00:04:44,163 --> 00:04:46,663
+Diğeri ise off path, yolun kenarında.
+
+15
+00:04:47,204 --> 00:04:54,843
+Böylece burada aslında şeyin sıkıntısını da görüyoruz.
+
+16
+00:04:54,843 --> 00:05:14,783
+Bugüne kadar derste gördüğümüz yöntemler ile bir sistemin kontrolü ele geçirilirse, bu illaki bir server görevi gören host olmak zorunda değil, bir router görevi gören host da olabilir.
+
+17
+00:05:14,783 --> 00:05:15,923
+Burada olduğu gibi.
+
+18
+00:05:15,923 --> 00:05:26,923
+O zaman bu sistem üzerinden akan trafiği kontrol etme, değiştirme, izleme şansımız var.
+
+19
+00:05:28,004 --> 00:05:29,343
+Bu da onu gösteriyor.
+
+20
+00:05:29,483 --> 00:05:32,283
+Yani tehlikenin büyüklüğünü görüyoruz.
+
+21
+00:05:32,283 --> 00:05:40,803
+İlla ki network saldırısı yapmak için şu senaryoda olduğu gibi yolun üzerinde, hattın üzerinde olmamıza gerek yok.
+
+22
+00:05:41,423 --> 00:05:55,504
+Burada göründüğü gibi dışarıdan da daha öncesinde gerçekleştirdiğimiz başarılı bir saldırıyla o yol boyunca akacak olan trafiği kontrol edebiliriz.
+
+23
+00:05:55,504 --> 00:06:00,183
+Kesintiye uğratabiliriz, inceleyebiliriz, değiştirebiliriz.
+
+24
+00:06:01,884 --> 00:06:04,283
+Hep aynı şeyi söylüyoruz.
+
+25
+00:06:05,403 --> 00:06:17,923
+Confidentiality, integrity ve availability açısından network protokollerinde çok fazla bizi öyle mutlu edecek özellikler maalesef yok.
+
+26
+00:06:17,923 --> 00:06:28,264
+Ethernet en fazla kullanılan protokolü hatırlayın en alt seviyede, physical data link layer seviyesinde.
+
+27
+00:06:28,264 --> 00:06:33,124
+Onun üzerinde IPC olsun, daha da üstünde UDP ve TCP olsun.
+
+28
+00:06:34,163 --> 00:06:37,084
+Confidentiality konusunda herhangi bir şey sağlamıyorlar.
+
+29
+00:06:37,324 --> 00:06:39,144
+Bir yetenekleri yok.
+
+30
+00:06:39,524 --> 00:06:41,124
+Bu konuda bir çalışma yapılmamış.
+
+31
+00:06:41,204 --> 00:06:43,963
+Her şey clear text olarak gidip geliyor.
+
+32
+00:06:43,963 --> 00:06:51,204
+Yol üzerindeki bir saldırgan, on attack, on pad attacker, her şeyi yapabilir.
+
+33
+00:06:52,283 --> 00:06:57,963
+ARB ve BGP sistemin ele geçmesine gerek kalmaksızın,
+
+34
+00:06:58,723 --> 00:07:06,384
+yani bir buffer overflow saldırısı veya benzeri bir saldırıyla sistemin kontrolünü ele geçirmeye gerek kalmaksızın,
+
+35
+00:07:06,384 --> 00:07:14,403
+sadece gönderilecek doğru paketler ile bir anda off pad saldırganın on pad olmasını
+
+36
+00:07:14,403 --> 00:07:23,963
+ve birinci senaryodaki man in the middle saldırısını yapabilir hale gelmesini sağlayan durumlar.
+
+37
+00:07:24,703 --> 00:07:29,423
+Integrity ile de alakalı yine bir özel uygulama yok.
+
+38
+00:07:29,423 --> 00:07:43,244
+Yani akan trafiğin değiştirilip değiştirilmediğine dair bir kıyaslama, karşılaştırma noktamız söz konusu değil.
+
+39
+00:07:45,604 --> 00:07:50,423
+Source authentication neredeyse yok gibi bir tek TCP'de...
+
+40
+00:07:50,815 --> 00:08:02,495
+Yani çok basit bir şekilde şu session kurulurken 3 tane paket değiş topuşu oluyor ya, gelen o sekans numaralarından ötürü evet bu sorstan geldi.
+
+41
+00:08:02,495 --> 00:08:09,495
+İlk paketi gönderen ve ikinciyi gönderen aynı sorstu deme şansımız var belki ama çok zayıf.
+
+42
+00:08:10,695 --> 00:08:18,415
+Availability, süreklilik, devam edilebilirlik, hizmet verilebilirlik anlamında.
+
+43
+00:08:18,415 --> 00:08:23,315
+En basitinden reset paketlerini görmüştük.
+
+44
+00:08:23,555 --> 00:08:32,395
+Reset paketleri kullanılarak mevcut olan bir bağlantının uzaktan sonlandırılabileceğini konuşmuştuk.
+
+45
+00:08:33,515 --> 00:08:39,615
+Şimdi o yüzden network'ün kötü niyetli olduğunu kabul ediyoruz.
+
+46
+00:08:40,015 --> 00:08:46,196
+Network'teki her unsurun saldırgan bir unsur olduğunu kabul ediyoruz.
+
+47
+00:08:46,196 --> 00:08:50,196
+Ve buna göre tedbirler alıyoruz.
+
+48
+00:08:50,196 --> 00:09:12,655
+Öncelikle eğer akıttığınız, aldığınız, verdiğiniz paketlerin, akıttığınız trafiğin izlenmesini ve dinlenmesini özellikle dinlenmesini istemiyorsanız mutlaka transport layer security kullanmak zorundasınız.
+
+49
+00:09:12,655 --> 00:09:14,655
+Birinci kural bu.
+
+50
+00:09:14,655 --> 00:09:21,596
+Yoksa onun haricinde bu trafiğin dinlenmediğinin bir kopyasının alınmadığının garantisi yok.
+
+51
+00:09:21,596 --> 00:09:40,015
+Aynı şekilde bu TLS transport layer security yani kriptografi bir noktaya kadar temelde alınıp verilen bilginin değiştirilmediğini de bozulmadığını da gösteriyor.
+
+52
+00:09:40,015 --> 00:09:44,015
+On pet etekler açısından baktığımızda...
+
+53
+00:09:51,124 --> 00:10:03,364
+Yani HTTPS, TLS kullanıyoruz diye kendimizi her zaman yüzde yüz korunmuş garanti altında hissetmemek gerekiyor.
+
+54
+00:10:05,864 --> 00:10:15,504
+Eğer kötü niyetli JavaScript veya malware bir web sitesine enjekte edildiyse, o web sitesinde varsa,
+
+55
+00:10:15,504 --> 00:10:21,584
+hatırlayın Dark Web üzerinden bunun örneklerini vermiştim size.
+
+56
+00:10:22,964 --> 00:10:30,644
+Hatta yönetim konsolu vardı, kaç siteye bulaştığına kadar bulaştı, hangi kullanıcılar ne özellikle bağlandılar, bağlanmadılar diye.
+
+57
+00:10:30,644 --> 00:10:39,644
+Bu durumda o JavaScript veya malware aradaki bağlantı HTTPS olsa bile bize gelecek.
+
+58
+00:10:39,644 --> 00:10:50,283
+Bizim lokal bilgisayarımızda çalışacak ve doğrudan bağlantı halinde olduğumuz serverden geldiği için de
+
+59
+00:10:50,283 --> 00:10:58,903
+o söylediğimiz hani origin, same origin principle, yok işte cross origin, resource sharing falan.
+
+60
+00:10:59,403 --> 00:11:04,704
+Bunların, onlar için almış olduğumuz tedbirlerin hepsi bir anda devre dışı kalacak.
+
+61
+00:11:04,704 --> 00:11:17,624
+Çünkü neden? Sayfayı indirdiğimiz sunucu bir şekilde saldırıya uğramış ve oraya kötü niyetli JavaScript veya malware yerleştirilmiş.
+
+62
+00:11:17,624 --> 00:11:30,464
+Yani o yüzden bunların da önüne geçebilmemiz için, bunları da devre dışı bırakabilmemiz için
+
+63
+00:11:30,464 --> 00:11:38,824
+sadece paylaşacağımız dokümanları değil, web sayfalarını da neye dönüştürmemiz lazım?
+
+64
+00:11:39,384 --> 00:11:44,304
+Her şeyle encrypted konuşabileceğimiz yapılara dönüştürmemiz lazım.
+
+65
+00:11:44,304 --> 00:11:54,584
+Hatırlayın, kukileri işte önce HTTP 10'unu yapıyorduk, sonrasında da secure yapmamız gerekiyor diye konuşmuştuk.
+
+66
+00:11:54,944 --> 00:12:04,064
+Değil mi? Yani kukilerin lokal de javascript tarafından erişilip browse edilememesi, kopyalamaması için HTTP 10'un yapılmaları gerekiyor.
+
+67
+00:12:04,064 --> 00:12:20,264
+Araya giren saldırganın da bu kukileri normal bir istekle browser'ımızdan dışarı çıkartmamamız için ne yapmamız gerekiyor?
+
+68
+00:12:20,443 --> 00:12:30,783
+Secure attribute ile sadece HTTPS, geçerli bir HTTPS connection'ı kurulduysa ondan sonra gönderilmelerini sağlamamız gerekiyor.
+
+69
+00:12:30,783 --> 00:12:32,783
+Bunlara çok dikkat etmemiz gerekiyor.
+
+70
+00:12:33,844 --> 00:12:43,964
+Şimdi, network protokollerini düzeltsek, değiştirsek, yenilerini ortaya atsak desek, sıkıntı.
+
+71
+00:12:43,964 --> 00:13:01,443
+Çünkü bir protokolün olgunlaşması ve bu söylediğimiz problemlerden etkilenmediğinin ortaya konulması ciddi anlamda sorun.
+
+72
+00:13:01,443 --> 00:13:15,324
+O yüzden mevcut olanları ve düzgünlüğü denenerek ortaya, analizler sonucunda ortaya konulmuş olanları kullanmamız lazım.
+
+73
+00:13:16,384 --> 00:13:29,804
+Bu açıdan ben kendim, kendi network protokolümü yazarım, security'imi de kendim sağlarım demek çok daha can sıkıcı durumlara sebep olabilir.
+
+74
+00:13:29,804 --> 00:13:36,283
+Şimdi, denial of service saldırılarını gözden geçirmiştik.
+
+75
+00:13:37,064 --> 00:13:42,964
+İşte bir servisi, bir network'ü, bir organizasyonu devre dışı bırakmak.
+
+76
+00:13:42,964 --> 00:13:45,943
+Nasıl yapıyoruz bunu? Network trafiğiyle yapıyoruz.
+
+77
+00:13:46,447 --> 00:14:07,807
+Ve oluşturulan network trafiği o kadar fazla ki gerçek isteklere cevap veremiyor. Bunun en önemli kriteri saldırganın çok fazla güç harcamaya ihtiyaç duymaması. Fazla efor harcamaya ihtiyaç duymaması.
+
+78
+00:14:07,807 --> 00:14:19,048
+Ancak diğer taraftan saldırı altındaki kurban gelen istekleri işlemek için, onlara cevap vermek için ciddi kaynak tüketiyor.
+
+79
+00:14:20,668 --> 00:14:26,207
+Ya bug şeklinde karşımıza çıkıyordu. Protokoldaki asimetriden dolayı.
+
+80
+00:14:27,307 --> 00:14:37,207
+İşte az önce de konuştuğumuz gibi protokolü tasarlamak kolay gibi görünebilir ama bunları da hesaba kattığımız zaman çok ciddi sıkıntılar olabilir.
+
+81
+00:14:37,807 --> 00:14:51,048
+Diğer taraftan da flat mekanizması. Flat mekanizması da doğrudan network isteklerinin işlenemeyecek kadar çok fazla sayıda olması.
+
+82
+00:14:52,048 --> 00:15:02,427
+Özellikle bir botnet üzerinden isteklerde bulunulması veya kontrol edilen diğer sistemler üzerinden isteklerde bulunabilmesi.
+
+83
+00:15:02,427 --> 00:15:16,487
+Her katmanda deny of service mümkündü. Link katmanında da, transport katmanında da, uygulama katmanında da bunları konuşmuştuk hatırlarsanız.
+
+84
+00:15:16,487 --> 00:15:26,807
+İşte bu TCP Handshake olayı, SIN Food saldırgan bir botnet üzerinden food SIN paketleri gönderiyor.
+
+85
+00:15:26,807 --> 00:15:38,067
+Bunun karşısındaki hedef noktadaki sistemin yapabileceği çok fazla bir şey yok.
+
+86
+00:15:39,067 --> 00:15:48,048
+İşte bunu, state bilgisini Tree ve Handshake tamamlanana kadar tutmamak şeklinde açıklamıştık.
+
+87
+00:15:48,148 --> 00:15:50,028
+Gerçekte bu uygulanacak olan çözümün.
+
+88
+00:15:50,028 --> 00:15:51,967
+Buna da SIN cookie demiştik.
+
+89
+00:15:52,627 --> 00:15:55,107
+Amplification attacklardan bahsetmiştik.
+
+90
+00:15:56,067 --> 00:16:07,887
+Basit bir UDP paketi, onun üzerinden gönderilen bir sorgu çok büyük bir cevabın gelmesine sebep oluyordu.
+
+91
+00:16:07,887 --> 00:16:15,548
+Özellikle burada sahte IP adresleri kullanılıyordu.
+
+92
+00:16:16,168 --> 00:16:18,487
+Yine bir botnetten yararlanılıyordu.
+
+93
+00:16:18,487 --> 00:16:27,927
+İşte sağ tarafta görüyorsunuz, victim yani kurban denilen sisteme her taraftan DNS sorgusu cevabı geliyor.
+
+94
+00:16:28,048 --> 00:16:37,087
+Kendisi istememiş olmasına rağmen ve bu cevaplar ciddi büyük olduğu için network benefitini daraltıyor.
+
+95
+00:16:37,887 --> 00:16:47,387
+DNS, NTP bunlar UDP amplifier her ikisi de sıklıkla kullanılıyor.
+
+96
+00:16:47,387 --> 00:16:47,867
+İNTRO
+
+97
+00:16:54,803 --> 00:17:19,163
+Yani baktığımızda günümüzde dahi, 2020'ye geldiğimizde dahi yüz binlerce seviyesinde konfigürasyonu yanlış olan ve herkesin erişimine, internette herkesin erişimine açık olan bu şekilde host olduğunu biliyoruz.
+
+98
+00:17:19,163 --> 00:17:29,543
+Bu da bu sistemlerin bu tarz amplification saldırıların da kullanılabilmesi için büyük bir fırsat.
+
+99
+00:17:30,644 --> 00:17:36,163
+İşte 2013, 2014, sonrasında 2016 bunları konuşmuştuk.
+
+100
+00:17:36,644 --> 00:17:44,364
+Mirai Melver'den, IoT Botnet'ten bahsetmiştik. Bu da bir ilkti.
+
+101
+00:17:45,364 --> 00:17:48,703
+Neden başarılı oldu dedik.
+
+102
+00:17:49,163 --> 00:17:59,344
+Çok kötü yazılmış olmasına rağmen ve herhangi yeni bir şey içermemesine, karmacık bir şey içermemesine rağmen,
+
+103
+00:17:59,463 --> 00:18:04,423
+birincisi, IoT cihazlarındaki güvenlik seviyesi çok çok düşük.
+
+104
+00:18:04,423 --> 00:18:21,604
+İkincisi, saldırının basitliği, yani bu IoT cihazlarının kullanım şeklinde basitliği çok farklı sisteme saldırılabilmesini mümkün kılıyor.
+
+105
+00:18:21,604 --> 00:18:28,864
+Üçüncüsü, şu ana kadar tarama işlemleri stateful daha çok.
+
+106
+00:18:28,864 --> 00:18:34,604
+Stateful taramayı tespit etmesi daha kolay.
+
+107
+00:18:35,223 --> 00:18:42,324
+Ancak burada stateless tarama yapıldığı için, scanning yapıldığı için hem tespit etmesi zor,
+
+108
+00:18:42,903 --> 00:18:53,003
+hem de çok fazla bir yük getirmediği için çok daha fazla miktarda cihazın açığı var mı yok mu taramasını daha kısa sürede yapabiliyorsunuz.
+
+109
+00:18:53,003 --> 00:18:58,023
+İşte bu password şeyi, bunu yine geçen hafta gözden geçirmiştik.
+
+110
+00:18:58,144 --> 00:19:13,763
+2018'deki memcash olayı, yakın 1'e 50 bin, düşünsenize request ile reply arasındaki boyut 1'e 50 bin oranında şey yapıyor.
+
+111
+00:19:13,763 --> 00:19:26,543
+Google'ın Project Shield'ından bahsetmiştik, ön tarafa bir proxy yerleştirilmesi ve tamamlanmamış olan connection'ları arkaya göndermemesi.
+
+112
+00:19:30,516 --> 00:19:55,036
+Bu tabii ki spoofed IP adreslerini durdurabiliyor ama bu sefer olay neye dönüşüyordu? Get flood'a dönüşüyordu. Gerçek adreslerden yapılıyor. Bağlantı kuruluyor. Sonrasında da ciddi trafik oluşturacak get istekleri gerçekleşiyordu.
+
+113
+00:19:55,036 --> 00:20:13,615
+Burada da kurban belirli IP adreslerini ya blokluyor ya da onlara trafik limiti koyuluyor. Böyle bir çözümümüz vardı. İşte GitHub saldırısından bahsetmiştik. 1.35 TB per second.
+
+114
+00:20:13,615 --> 00:20:33,336
+Sahte IP adresleri kullanıldığında servis sağlayıcılara çok büyük bir yük düşüyor. Çok büyük bir sorumluluk düşüyor.
+
+115
+00:20:33,336 --> 00:20:46,056
+Çünkü servis sağlayıcının kendi network'ünden dışarıya, kendi network'ünden gelemeyecek bir adresin çıkmasını engellemesi lazım.
+
+116
+00:20:47,336 --> 00:20:53,236
+Bu önemli bir şey. Yani çünkü servis sağlayıcı arka taraftaki adreslerin tamamını biliyor.
+
+117
+00:20:53,236 --> 00:21:05,716
+Kendisi dağıtmış, kendisi kullandırtıyor. Bu zaman kendi network'ünden dışarıya böyle bir adresin çıkmasını engellemesi gerekiyor.
+
+118
+00:21:06,135 --> 00:21:09,236
+Buna da ne diyoruz? İngres filtering diyoruz.
+
+119
+00:21:10,536 --> 00:21:15,416
+ISP only forwards packets with legitimate source IP.
+
+120
+00:21:15,416 --> 00:21:17,736
+Bunun yerine getirmesi lazım.
+
+121
+00:21:19,576 --> 00:21:29,676
+Yani düşünsenize %10'u bile bunu yapmasa o zaman savunma mekanizması maalesef devre dışı koluyor.
+
+122
+00:21:30,476 --> 00:21:35,376
+ISP'lerin bunu yapması için onları zorlayacak hiçbir şey yok.
+
+123
+00:21:35,576 --> 00:21:38,916
+Çünkü ISP'ye bir kazanç değil, ekstra yük getiriyor.
+
+124
+00:21:38,916 --> 00:21:47,296
+Bakın, 2017'de otonom sistemlerin %33'ü spoofing'e izin veriyormuş.
+
+125
+00:21:52,635 --> 00:22:03,696
+%23 duyurulmuş kullanımda olan IP adres bloklarının, yani onların ise %23'ü spoofing'e izin veriyormuş.
+
+126
+00:22:04,156 --> 00:22:07,876
+2017 yani bu çok da eski bir rakam değil.
+
+127
+00:22:07,876 --> 00:22:16,656
+Yine hatırlayın, 2013'teki 300 gigabitlik savunları 3 network kullanılarak gerçekleştirmişti.
+
+128
+00:22:16,716 --> 00:22:17,956
+O 3 network buralardan.
+
+129
+00:22:18,756 --> 00:22:19,896
+Öyle düşünmek gerekiyor.
+
+130
+00:22:21,056 --> 00:22:23,716
+Client puzzle'ı hatırlarsanız konuşmuştuk.
+
+131
+00:22:23,916 --> 00:22:33,816
+Client'ı yavaşlatacak, özellikle bağlantı kurarken geciktirecek, cevaplaması gereken ona bir soru sormak.
+
+132
+00:22:33,816 --> 00:22:38,496
+Bu CPU intensif olabiliyor veya memori intensif olabiliyor.
+
+133
+00:22:38,656 --> 00:22:46,135
+Çünkü client'in hem işlemcisinin hem de memori saykılığının server'a göre daha düşük olmanı kabul ediyoruz.
+
+134
+00:22:46,135 --> 00:23:01,656
+Ama bir taraftan client'i yavaşlatırken diğer taraftan yavaşlamaması gereken, hakikaten sorunsuz olan client'lara da ek yük çıkartmış oluyoruz.
+
+135
+00:23:01,736 --> 00:23:05,615
+Ek enerji tüketmelerine sebep oluyoruz gibi sıkıntılar.
+
+136
+00:23:06,355 --> 00:23:07,476
+Öyle düşünmemiz lazım.
+
+137
+00:23:07,476 --> 00:23:10,936
+Şimdi peki bu bir tekrardı.
+
+138
+00:23:11,336 --> 00:23:12,756
+Buna karşı ne yapabiliriz?
+
+139
+00:23:16,756 --> 00:23:17,596
+Şimdi
+
+140
+00:23:17,596 --> 00:23:19,456
+Bye.
+
+141
+00:23:19,456 --> 00:23:20,196
+ue
+
+142
+00:23:22,836 --> 00:23:39,435
+Çok böyle popüler, bilimlik TCP ve UDP servisleri var. Bunlar standart portlardan servis veriyorlar. İşte mesela HTTPS 443'ten veriyor, SSH 22'den veriyor.
+
+143
+00:23:39,435 --> 00:23:48,915
+Bazı servislerin internet üzerinden erişilir olmasına bile gerek yok.
+
+144
+00:23:48,915 --> 00:24:18,296
+Diğer taraftan Recursive DNS Resolver'lar var. Yani bir DNS Resolver kendi domeni haricinde gelen isteklere de o isteği çözümleyebilmek adına bir üstteki, bir üstteki, bir üstteki en tepeye kadar DNS Server'a gidilmesini yapacak şekilde, bunu destekleyecek şekilde konfigür edilmiş oluyor.
+
+145
+00:24:18,296 --> 00:24:25,456
+Veya Windows File Sharing özellikle internet tarafındaki dosya paylaşımını kolaylaştıracak.
+
+146
+00:24:27,935 --> 00:24:40,076
+Zaten Windows File Sharing en başından beri pek çok zafiyet içeriyor, pek çok sıkıntı içeriyor. Bugüne kadar bu defalarca şey oldu.
+
+147
+00:24:40,076 --> 00:24:50,736
+En basitinden çoğu zaman lokal tarafta şifre bile kullanılmıyor. Doğrudan bir bilgisayar sisteminden diğer bir bilgisayar sistemine erişilebiliyor.
+
+148
+00:24:51,435 --> 00:24:56,435
+Bunların hepsi bakın, zafiyet noktaları, saldırı noktaları.
+
+149
+00:24:56,435 --> 00:25:04,096
+O zaman ne diyoruz? En kolayından Firewall kullanalım diyoruz.
+
+150
+00:25:04,635 --> 00:25:09,395
+Local Area trafiği ile internet trafiğini birbirinden ayıralım.
+
+151
+00:25:09,596 --> 00:25:11,976
+İşte ortada Firewall var, Router var.
+
+152
+00:25:12,596 --> 00:25:21,435
+Router, sağdan sola aktaracağı her türlü paket için Firewall'a soruyor.
+
+153
+00:25:21,435 --> 00:25:25,915
+Bazen bu ikisi bir bütün olabiliyor.
+
+154
+00:25:26,056 --> 00:25:29,435
+Yani Router ile Firewall bir arada olabiliyorlar.
+
+155
+00:25:30,476 --> 00:25:32,436
+Burada yapılan şey paket filtrelemesi.
+
+156
+00:25:34,236 --> 00:25:37,135
+Temel bir paket filtrelemesi yapıyoruz.
+
+157
+00:25:37,836 --> 00:25:38,576
+Öyle düşünün.
+
+158
+00:25:39,395 --> 00:25:42,836
+IP source adrese, destination adrese, protokole,
+
+159
+00:25:43,836 --> 00:25:47,695
+TCP ve UDP'deki source ve destination portlara göre.
+
+160
+00:25:47,695 --> 00:25:50,836
+Yani biz buna five tuple diyoruz.
+
+161
+00:25:51,476 --> 00:25:52,576
+Beşi bir yerde.
+
+162
+00:25:53,496 --> 00:25:54,436
+Örnek verilmiş.
+
+163
+00:25:54,615 --> 00:25:58,195
+Drop all inbound packets to TCP port 445.
+
+164
+00:25:59,316 --> 00:26:01,716
+445 Windows File Sharing.
+
+165
+00:26:03,456 --> 00:26:09,355
+Dışarıdan gelen, internetten gelen ve 445 numaralı porta gidecek olan,
+
+166
+00:26:09,855 --> 00:26:14,776
+bütün içerideki herhangi bir hostun 445'ine gidecek olan bütün paketleri.
+
+167
+00:26:14,776 --> 00:26:17,976
+düşür diyoruz bunları, aktar mı diyoruz.
+
+168
+00:26:17,976 --> 00:26:28,956
+drain
+
+169
+00:26:29,195 --> 00:26:44,936
+bilin
+
+170
+00:26:23,731 --> 00:26:40,071
+Şimdi burada ise What if you have a network with lots of servers but only want outsiders to be able to access the web server? İçeride bir sürü server'ınız var ama dışarıdan gelenlerin sadece web server'a erişmesini istiyorsunuz.
+
+171
+00:26:40,071 --> 00:26:59,751
+O zaman diyorsunuz ki Destination port 80'den farklıysa eğer paketleri drop it. Ama dikkat edin dışarı çıkanların da source portları var.
+
+172
+00:26:59,751 --> 00:27:09,751
+Şimdi bu durumda ben bu kuralı böyle yazacak olursam onların geri dönüşlerini bloke etmiş olacağım.
+
+173
+00:27:09,892 --> 00:27:15,991
+Yani içeriden başlayan bir trafiğin geri dönüşünü bloke etmiş olacağım. O zaman konuşulmayacak duruma gelecek.
+
+174
+00:27:16,851 --> 00:27:28,432
+Bu durumda ne yapmam gerekecek? İçeriden başlıyorsa bir trafik ve dışarıya gidiyorsa geri dönüşünü serbest yapmam lazım.
+
+175
+00:27:28,432 --> 00:27:34,831
+Bunun içinde bir portların numaralandırılmasıyla alakalı bir standart oluşturulmuş.
+
+176
+00:27:35,851 --> 00:27:42,531
+1 ile 23 arası sistem tarafından kullanılan veya well-known port olarak geçen portlar. Burada servisler çalışıyor.
+
+177
+00:27:43,872 --> 00:27:55,491
+1024 ile 49.151 arası kullanıcıya açık veya kaydettirilmiş portlar. Well-known değil de o yüzden less well-known daha az.
+
+178
+00:27:55,491 --> 00:28:06,451
+49.152 ile 65.535 arası ise bağlantıların kurulması. Yani kullanıcı bir bağlantı yaptı.
+
+179
+00:28:07,271 --> 00:28:23,271
+2 dakika sonra işi bitti, kapandı. İşte orada dinamik olarak bağlantıların TCP'nin ve UDP'nin o sağladığı multiplexin mekanizmasının gerçekleştirmesinde kullanılacak olan portlar diye düşünmemiz lazım.
+
+180
+00:28:23,271 --> 00:28:28,851
+Bu durumda az önce söylediğim şekilde stateful filtering yapıyoruz.
+
+181
+00:28:29,071 --> 00:28:33,831
+Firewall dışarıya giden connection'ları takip ediyor.
+
+182
+00:28:34,971 --> 00:28:41,951
+Buna bağlı olarak geri dönüşündeki ilgili porta paket gelebilmesine izin veriyor.
+
+183
+00:28:41,951 --> 00:28:45,432
+Yani böylece hem dış hem iç iki taraflı çalışmış oluyor.
+
+184
+00:28:45,571 --> 00:28:48,192
+Buna stateful filtering diyoruz.
+
+185
+00:28:50,331 --> 00:28:55,571
+Başka bir şey de network address translation.
+
+186
+00:28:56,951 --> 00:29:03,592
+İçeride kullandığımız adreslerle dışarıda kullandığımız adresler birbirinden farklı.
+
+187
+00:29:03,592 --> 00:29:10,831
+Dışarıda public bir adresimiz var. İşte 145.12.131.17 şeklinde.
+
+188
+00:29:13,592 --> 00:29:17,351
+İçeride ise 192.168.11 adresi var.
+
+189
+00:29:18,011 --> 00:29:21,612
+İşte 103 adresi var. 104 adresi var.
+
+190
+00:29:21,612 --> 00:29:26,612
+Son taraf local network. Tamamen private IP adresler.
+
+191
+00:29:27,271 --> 00:29:33,491
+Yani bunlar başka local networklerde duplike olabilirler.
+
+192
+00:29:33,871 --> 00:29:40,392
+Çünkü bu local networkler birbirlerinden routerlar, NAT cihazlarıyla ayrılmış durumda.
+
+193
+00:29:41,132 --> 00:29:45,951
+Private subnet olarak sağ tarafta gördüğünüz 3 tane subnet'ı ayrılmış durumda.
+
+194
+00:29:45,951 --> 00:29:55,011
+10 en büyüğü, 172, bir küçüğü, 192, 168 ise en küçüğü.
+
+195
+00:29:55,132 --> 00:29:58,672
+Yani biri C klas, biri B klas, biri A klas.
+
+196
+00:29:58,951 --> 00:30:06,951
+O şekilde 10 A klas, 172, B klas, 192, 192, 168, C klas.
+
+197
+00:30:06,951 --> 00:30:09,951
+Ön.
+
+198
+00:30:14,900 --> 00:30:35,420
+Şimdi şu ana kadar konuştuğumuz iç network ile dış network'ü birbirinden ayırmaktı. O yüzden hani bunlara daha çok network firewall ismini veriyoruz. Ama diğer taraftan hostların üzerinde de firewall servisi çalıştırabiliriz. Buna da local firewall ismini veriyoruz.
+
+199
+00:30:35,420 --> 00:30:55,220
+Örneğin Linux'ta IP tables var. Çoğunlukla ne yapıyoruz? Hem network'ümüzü, internet'imizi internetten filtrelemek adına orada bir network firewall kullanırken,
+
+200
+00:30:55,220 --> 00:31:05,220
+hem de diğer tarafta hostların üzerinde lokal firewall kullanıyoruz. İkisinin kombinasyonundan yararlanıyoruz.
+
+201
+00:31:05,420 --> 00:31:19,160
+Bir başka şey de application seviyesinde filtreleme. Örneğin mail mesajlarının virüs taramasından geçirilmesi. Protokolün anlaşılması gerekiyor.
+
+202
+00:31:19,160 --> 00:31:37,180
+Mind encoding'in anlaşılması gerekiyor. Zip'ti, jpeg'ti, pdf'ti neyse. Yani mail'in aslında içeriğinin tamamı açılıp, virüs taramasından geçirilip, ondan sonra sorun yoksa kullanıcıya aktarılması gerekiyor.
+
+203
+00:31:37,180 --> 00:31:52,360
+Bir başka yaklaşım, bir başka olay. SQL injection için HTTP post request'lerinin incelenmesi. Yani gelip giden paketler içerisinde SQL injection için kullanılabilecek
+
+204
+00:31:52,360 --> 00:32:01,360
+özel yapılar var mı? Nedir o işte? Tırnak geliyor mu? Yan yana iki tane eksi işareti geliyor mu?
+
+205
+00:32:01,900 --> 00:32:09,740
+Veya orada or, bir eşittir, bir gibi bir şey geliyor mu? Bunların anlaşılması, bunlara bakılması.
+
+206
+00:32:09,740 --> 00:32:22,840
+Şimdi dışarıya çıkan trafiğin de incelenmesi gerekiyor. Pek çok kurum getirdiği maliyetten ötürü bunu yapmak istemiyor.
+
+207
+00:32:22,840 --> 00:32:39,500
+Ama bunun yapılması lazım. Niçin? Kötü niyetli olduğu bilinen sitelere erişimi bloke etmek için, kurum dışarısına istenilmeyen verinin çıkartılmasını engellemek için,
+
+208
+00:32:41,519 --> 00:32:51,980
+kullanımı sıkıntılı olan ve organizasyonun bant genişliğini baraltacak uygulamaları devre dışı bırakmak için.
+
+209
+00:32:51,980 --> 00:32:54,180
+Mesela bit donatı servisi gibi.
+
+210
+00:33:01,332 --> 00:33:06,192
+İntrusion Detection ise dışarıdan veya içeriden.
+
+211
+00:33:10,036 --> 00:33:23,336
+Oluşturulmuş olan network kurallarını ihlal eden network trafiği var mı, yok mu bunu anlamak adına bunun farkına varılması adına uygulanan bir sistem.
+
+212
+00:33:24,036 --> 00:33:36,556
+Bu tarz durumların farkına varıldığı zamanda Security Information and Event Management denilen sistemlere bir rapor gönderiliyor.
+
+213
+00:33:36,556 --> 00:33:41,716
+neyin farkına varıldığı, ne zaman farkına varıldığı, nerede farkına varıldığı diye.
+
+214
+00:33:43,516 --> 00:33:56,836
+İki yaklaşım var. Biri Signature Detection, yani kural tabanlı, kurallara bağlı olarak bu olmalıydı, bu olmamalıydı diyorsunuz.
+
+215
+00:33:56,836 --> 00:34:05,056
+Diğeri ise yapay zekalı, makine öğrenmesi üzerine kurulu ve işte son dönemde derin öğrenme de kullanıldığı,
+
+216
+00:34:05,056 --> 00:34:16,416
+Anomaly Detection, ancak burada söylerken de anlıyorsunuz, normalin öğrenilmesi lazım ki normalden satmalar rapor edilebilsin.
+
+217
+00:34:16,516 --> 00:34:21,416
+Çünkü normalden satmalar anomali olarak değerlendirilecek.
+
+218
+00:34:21,416 --> 00:34:30,296
+İşte Open Source IDS'ler var. Üç tane Snort, Zeek ve Surikata.
+
+219
+00:34:30,936 --> 00:34:35,735
+Snort en eski, en yargınlaşmış olanı.
+
+220
+00:34:35,735 --> 00:34:47,016
+Sonrasında Surikata, şu son dönemde de Z2, üç tanesi bu Intuition Detection için kullanılan Open Source yapılır.
+
+221
+00:34:47,016 --> 00:35:09,016
+Bakın Snort'un rule'u alert edecekmiş. ICMP protokolü varsa, 192.168.1.10'dan geliyorsa ve hangi host'a giderse gitsin, hangi porta giderse gitsin diyecekmiş ki ICMP Attempt Attack.
+
+222
+00:35:09,016 --> 00:35:16,695
+Bu da message kısmı. Bu mesajı log'a basacak veyahut da log server'a gönderecek.
+
+223
+00:35:18,016 --> 00:35:27,096
+Evet, şimdi bundan sonraki Slack'larda işte virtual private network ile remote erişimle alakalı.
+
+224
+00:35:27,096 --> 00:35:41,016
+mantık çok basit. İnternetin herkesin kullanımına açık olduğunu biliyoruz ve internetteki sıkıntıları biliyoruz.
+
+225
+00:35:41,735 --> 00:35:52,036
+O zaman bu sıkıntılar mevcutken internetteki herhangi bir yerde kurumsal çalışma ortamımıza nasıl erişeceğiz?
+
+226
+00:35:52,036 --> 00:35:57,215
+Bunun için de virtual private network oluşturuyoruz.
+
+227
+00:35:57,316 --> 00:36:08,076
+Yani internetin üzerinde sanal olarak özel networkler, private, şahsi networkler oluşturulması.
+
+228
+00:36:08,956 --> 00:36:11,036
+İki temel tipi var en çok karşılaştığımız.
+
+229
+00:36:11,775 --> 00:36:14,036
+Biri uzaktan bağlantı, remote client.
+
+230
+00:36:14,275 --> 00:36:17,036
+Diğeri ise iki lokasyonun birbirine bağlanması.
+
+231
+00:36:17,036 --> 00:36:25,916
+Remote client'da diyelim ki siz hareket halinde bir çalışansınız, bir satıcı olabilirsiniz,
+
+232
+00:36:26,115 --> 00:36:33,456
+pazarlanmacı olabilirsiniz, mühendis olabilirsiniz ve kurumsal network'ünüze bağlanmak istiyorsunuz.
+
+233
+00:36:33,456 --> 00:36:42,755
+Diğeri ise aynı kurumun farklı illerde hatta farklı ülkelerdeki lokasyonları diye düşünebilirsiniz.
+
+234
+00:36:42,755 --> 00:36:51,695
+İşte burada kullanılan protokoller çok farklı.
+
+235
+00:36:52,195 --> 00:36:59,436
+En çok kullanılan IPsec, buna karşı OpenVPN var.
+
+236
+00:36:59,775 --> 00:37:01,596
+O da open source olanı.
+
+237
+00:37:01,596 --> 00:37:03,876
+SIMLIG ki ad placing.
+
+238
+00:37:03,876 --> 00:37:17,195
+Bunu izleyerek marketeze bir örgüt distinguish ve
+
+239
+00:37:17,195 --> 00:37:31,056
+bu Recepetic ve Facebook'un onun üçiances MOOPs' yanına believer
+
+240
+00:37:03,251 --> 00:37:23,451
+IPCEC, Internet Engineering Task Force tarafından oluşturulmuş bir protokol diye düşünün. OpenVPN ise yine benzer çalışmayla, yani Public Domain'de oluşturulmuş bir yapı. Şu dönemde en fazla bu ikisi kullanılıyor.
+
+241
+00:37:23,451 --> 00:37:35,911
+İşte Cisco AnyConnect veya GUI Middle gibi şey ders söz konusu. Bir de Zero Trust Security diye bir kavram var.
+
+242
+00:37:36,911 --> 00:37:45,431
+Internal networklerin güvenli olduğunu düşünmüyoruz artık. Çünkü saldırıların büyük bir kısmı internal, intranetten geliyor.
+
+243
+00:37:45,431 --> 00:37:56,351
+O zaman diyoruz ki, servislerin tamamı nerede olsun? İnternette olsun. Zaten internetimi korumak için ekstra bir şey harcayacağım.
+
+244
+00:37:56,871 --> 00:38:04,431
+İşte mesela Google gibi bir ortamda bütün servislerinizi herkese açık bir yerde host ediyorsunuz.
+
+245
+00:38:07,711 --> 00:38:14,911
+Böylece uygulamaları koruyorsunuz, network'ı korunuyorsunuz. Buna da Zero Trust Security.
+
+246
+00:38:15,431 --> 00:38:16,391
+İsmi belirliyor.
+
+247
+00:38:17,172 --> 00:38:21,931
+Evet arkadaşlar, bu haftaki şeyimiz bu kadar.
+
+248
+00:38:22,692 --> 00:38:24,751
+Sünümümüz bu kadar.
+
+249
+00:38:26,592 --> 00:38:28,652
+Zaten konuları da bitirdik.
+
+250
+00:38:29,532 --> 00:38:31,271
+Geriye ne kalmış diye bakacağım.
+
+251
+00:38:32,532 --> 00:38:34,592
+Dönemin sonuna da epeyce bir yaklaştık.
+
+252
+00:38:34,692 --> 00:38:36,931
+Belki bir iki tane daha bir konu yaparız ama
+
+253
+00:38:36,931 --> 00:38:41,331
+normalde işleyeceğimiz konuların tamamını işledik.
+
+254
+00:38:41,331 --> 00:38:50,871
+Şimdi size dönem içerisinde gördüğümüz, işlediğimiz, benim anlattığım, sizin dinlediğimiz konularla alakalı
+
+255
+00:38:50,871 --> 00:38:55,132
+take home hazırlıyorum. O bitti gibi bir şey.
+
+256
+00:38:55,132 --> 00:38:58,552
+Bunu sizlerle paylaşacağım.
+
+257
+00:38:59,152 --> 00:39:06,491
+Bu online Yıldız Edutiyar üzerinden sınav formatında dokümanları ve diğer şeyleri neyse onları oraya yükleyeceğim.
+
+258
+00:39:07,132 --> 00:39:10,552
+Sonrasında da sizin yapıp teslim etmenizi isteyeceğim.
+
+259
+00:39:10,552 --> 00:39:17,911
+Geriye kalan konuları da dediğim gibi değerlendiririm, onların arasından incelememiz gerektiğini düşündüklerimi de
+
+260
+00:39:17,911 --> 00:39:21,172
+bir veya iki haftada da onları inceleriz.
+
+261
+00:39:21,271 --> 00:39:25,851
+Ama dönem içerisinde işte security kavramlarına baktık.
+
+262
+00:39:27,311 --> 00:39:29,411
+İşletim sistemleri tarafını inceledik.
+
+263
+00:39:29,652 --> 00:39:31,172
+Web tarafını inceledik.
+
+264
+00:39:32,351 --> 00:39:33,891
+Network tarafını inceledik.
+
+265
+00:39:33,891 --> 00:39:39,632
+Başta da söylemiştim, mobil tarafa, mobilde alakalı bir dersimiz var.
+
+266
+00:39:39,711 --> 00:39:40,431
+Orada giriliyor.
+
+267
+00:39:40,971 --> 00:39:44,271
+O yüzden ben mobil tarafa bu derste çok fazla girmiyorum.
+
+268
+00:39:45,271 --> 00:39:53,331
+Yani dönem başında size anons ettiğim, duyurduğum, işleyeceğimiz konuları aslında neredeyse tamamlamış olduk.
+
+269
+00:39:53,431 --> 00:39:55,211
+Çok az bir şey kalmıştır.
+
+270
+00:39:55,271 --> 00:39:56,152
+Onlara da bir bakarım.
+
+271
+00:39:56,751 --> 00:39:59,692
+Ona göre geri kalan zamanımızda onları toparlarız.
+
+272
+00:40:00,731 --> 00:40:02,471
+Sorusu olan var mı arkadaşlar?
+
+273
+00:40:03,891 --> 00:40:07,291
+Hocam, slide'ları paylaşacaksınız değil mi?
+
+274
+00:40:08,291 --> 00:40:11,612
+Zaten Stanford Üniversitesi'nin sayfasında var.
+
+275
+00:40:11,672 --> 00:40:12,612
+En başta söylemiştim.
+
+276
+00:40:12,711 --> 00:40:16,311
+CS155 her yerinde yazıyor ya ben sizinle zaten şey yaparken.
+
+277
+00:40:16,911 --> 00:40:17,471
+Doğru hocam.
+
+278
+00:40:17,811 --> 00:40:19,632
+Oradan alıp kullanıyorum ben de [öğrenci].
+
+279
+00:40:20,092 --> 00:40:20,911
+Tamamdır hocam.
+
+280
+00:40:21,211 --> 00:40:21,831
+Teşekkür ederim.
+
+281
+00:40:21,831 --> 00:40:23,192
+Ben teşekkür ederim.
+
+282
+00:40:23,331 --> 00:40:23,811
+Sağ olasın.
+
+283
+00:40:24,592 --> 00:40:25,612
+Hocam merhabalar.
+
+284
+00:40:26,291 --> 00:40:26,931
+Merhaba.
+
+285
+00:40:27,231 --> 00:40:27,871
+İsminiz ne?
+
+286
+00:40:27,911 --> 00:40:28,811
+Ben göremiyorum sizi.
+
+287
+00:40:28,951 --> 00:40:29,532
+[öğrenci] mı?
+
+288
+00:40:29,851 --> 00:40:30,271
+Evet hocam.
+
+289
+00:40:30,311 --> 00:40:31,112
+İsmim [öğrenci].
+
+290
+00:40:31,351 --> 00:40:32,152
+Evet [öğrenci].
+
+291
+00:40:32,152 --> 00:40:37,672
+Bu vereceğiniz ödevin son tarihi finale kadar olan süreçli mi olacak?
+
+292
+00:40:37,811 --> 00:40:38,751
+Yoksa belli bir tarih.
+
+293
+00:40:38,751 --> 00:40:40,351
+Ödevin tamamını bir yazayım.
+
+294
+00:40:40,431 --> 00:40:41,371
+Az bir şey kaldı.
+
+295
+00:40:41,451 --> 00:40:43,152
+Ona göre hani belki dört gün derim.
+
+296
+00:40:43,231 --> 00:40:44,311
+Belki beş gün derim.
+
+297
+00:40:44,391 --> 00:40:45,311
+Belki de senin dinleyin.
+
+298
+00:40:45,391 --> 00:40:46,791
+Bir finale kadar da bilemem.
+
+299
+00:40:47,311 --> 00:40:50,072
+Tamam tamam.
+
+300
+00:40:50,072 --> 00:40:55,092
+Çünkü farklı farklı kısımları var.
+
+301
+00:40:55,471 --> 00:40:57,351
+Bazıları çok basit hızlıca yaparsınız.
+
+302
+00:40:57,491 --> 00:41:01,511
+Diğerlerinde de biraz programlanan bir şeyler kullanmanız gerekecektir.
+
+303
+00:41:01,856 --> 00:41:03,736
+Tamam, tamam hocam. Teşekkürler. Sağ olun.
+
+304
+00:41:04,076 --> 00:41:05,796
+Teşekkür ederim. Sağlısınlar hocam.
+
+305
+00:41:07,136 --> 00:41:10,496
+Oldu o zaman. İyi haftalar arkadaşlar. Görüşmek üzere.
+
+306
+00:41:10,496 --> 00:41:11,736
+Hocam görüşmek üzere. Hoşçakalın.
+
+307
+00:41:12,096 --> 00:41:13,076
+Sağ olun. Sağlıcakla.
+
+308
+00:41:13,316 --> 00:41:14,416
+Çok üzere. İyi günler hocam.
+
+309
+00:41:14,616 --> 00:41:15,196
+İyi günler.
