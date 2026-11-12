@@ -1,0 +1,3459 @@
+1
+00:00:28,435 --> 00:00:41,835
+Evet, merhaba arkadaşlar. Derse ancak girebildim, ancak yetiştim. Ama zaten genelde alışkanlığım olarak bir saat 9.05 geçeyi bekliyorum. Katılım alanımız artsın diye.
+
+2
+00:00:42,612 --> 00:00:45,892
+Birazdan da dersimize başlarız.
+
+3
+00:00:46,432 --> 00:00:48,131
+El iki dönemin ilk haftası.
+
+4
+00:00:48,311 --> 00:00:50,492
+Yeni döneminiz hepinize hayırlı olsun arkadaşlar.
+
+5
+00:00:51,292 --> 00:00:52,672
+Hepinize günaydınlar olsun.
+
+6
+00:00:53,392 --> 00:01:00,551
+İnşallah geçen dönemlerden artık üstünüzden bu sargın koşullarının acemiliğini attık.
+
+7
+00:01:00,712 --> 00:01:05,831
+İnşallah bu dönem daha iyi, daha verimli çalışmalar yaparız hepimiz.
+
+8
+00:01:09,396 --> 00:01:13,475
+Evet, bir iki dakika bekledim. Ondan sonra bir derse başlayacağım.
+
+9
+00:01:43,956 --> 00:01:48,135
+Pekala. Bir an da saat 9.05 kaç yaptık? Başlayabiliriz artık.
+
+10
+00:01:54,164 --> 00:01:57,584
+Evet arkadaşlar, Nesli'nin en önemli programlama dersine hoş geldiniz.
+
+11
+00:01:58,524 --> 00:02:02,084
+Bu dönem dersi ikinci gruptan almayı tercih etmiştiniz.
+
+12
+00:02:02,563 --> 00:02:05,003
+O zaman bu grup olarak birlikte yürüteceğiz dersi.
+
+13
+00:02:05,903 --> 00:02:16,563
+Ders kapsamında artık acemiliğimizi, pandemi koşullarındaki acemiliğimizi üstümüzden attığınız için dersin normal işlerinin tarzına geri dönmek istiyorum.
+
+14
+00:02:16,884 --> 00:02:19,423
+Ufak bir iskisine hariç. Şimdi hepsini anlatacağım.
+
+15
+00:02:20,852 --> 00:02:30,872
+Ders kapsamında hep iki bize laboratuvar, proje çalışması ve final sınavı yürütüyorduk. Bunların yine hepsini yürüteceğiz inşallah.
+
+16
+00:02:31,668 --> 00:02:42,367
+Biliyorsunuz artık ikinci sınıf öğrencisi olarak üniversitemizde genel olarak sekizinci hafta vize haftası uygulaması söz konusu.
+
+17
+00:02:42,927 --> 00:02:47,187
+Biz de o hafta bir klasik usul sınavımızı yapacağız inşallah.
+
+18
+00:02:47,807 --> 00:02:51,948
+%20 ağırlık vermeye düşündüğümüz birinci sınav olacak bu.
+
+19
+00:02:52,948 --> 00:02:56,708
+İkinci sınavımızı test usulü yapmak istiyoruz.
+
+20
+00:02:59,252 --> 00:03:10,652
+Tek, yani normal yüzde eğitimdeki tek farkımız bu olacak. Normalde bütün sınavlarımızı klasik usulü yazılı yapıyorduk. Bu sefer ikinci sınavımızı test usulü yapmaya karar verdik.
+
+21
+00:03:11,987 --> 00:03:38,168
+Tabii ki normal düzende birinci veya ikinci vizeye bunun resmi prosedürü var. Haklı bir mazeretle başvurduğumuz zaman onun telafi vizesi de olması söz konusu. O da son haftada yapılan bir sınavdır. Telafi vizesi haftasında biz büyük ihtimalle ders işleriz. Sadece ayrı bir sınav oturumu açılır şeklinde diye düşünüyorum.
+
+22
+00:03:39,987 --> 00:03:45,987
+Bir saate bakarız. O daha şu an belli değil tabii ki. Kim ne kadar katılabilecek, nerelere katılamayacak, ne olacak.
+
+23
+00:03:46,307 --> 00:03:51,027
+Kahin olamadığımıza göre o ayrıntılarını daha sonra konuşacağımız bir olgu.
+
+24
+00:03:51,727 --> 00:03:59,167
+Ama tabii ki eğer bütün konuları bitirirsek o zaman belki ders yapmaz veya belki ekstra bir uygulama yaparız bir yandan.
+
+25
+00:04:00,147 --> 00:04:12,848
+O şekilde bakarız son haftaya. Final sınavda daha final programı belli olmadı. Final haftasında herhangi bir gün olacak. Bu dersin gününde ve saatinde olabilir de olmayabilir de.
+
+26
+00:04:13,235 --> 00:04:36,196
+Yani aynı saatte olacağın bir garantisi yok. Hatta bazen vize haftasında dersin saatinde bile vize sınıfı yapılamayabiliyor bazı durumlarda. O yüzden lütfen bölüm sayfasındaki ilanları mutlaka takip edin. Yusis'ten sahip olduğunuz öğrenci e-positanızı kontrol ediniz.
+
+27
+00:04:36,624 --> 00:04:41,984
+Sizleri bu kanallarda genel duyurular yapıyor olacağız.
+
+28
+00:04:43,795 --> 00:04:49,195
+Lab çalışmasını da yine eskisi gibi yapmayı planlıyoruz.
+
+29
+00:04:50,515 --> 00:05:00,415
+Şimdi önümüzdeki 14 hafta içerisinde laboratuvarların başlaması en erken 3. haftada başlayacaktır laboratuvar şeklinde çalışmamız.
+
+30
+00:05:00,415 --> 00:05:09,795
+Çünkü bu ders kapsamındaki, daha doğrusu laboratuvarı olan bütün dersler kapsamında genel bölüm olarak yaptığımız uygulama şu şekilde.
+
+31
+00:05:11,795 --> 00:05:21,435
+İkinci kere alanlar, Laptan Muaf. Ama bunun şartı ilk aldıklarında F0 ile kalmamış olmak.
+
+32
+00:05:22,163 --> 00:05:37,543
+Eğer devamsızlık etmişseniz de bu nedenle ders ikinci, üçüncü vesaire alıyorsanız o zaman sizi lablara dahil edeceğiz. Aksi takdirde lablara dahil etmeyeceğiz. Bu durumda labın %10 olan ağırlığını birinci ve ikinci vizeye dağıtacağız.
+
+33
+00:05:37,543 --> 00:05:49,184
+Şimdi ikinci vizenin test usulü olması acaba birinci vizeye göre %5 az arka sahip olmasına yol açabilir. Bilmiyorum bakacağız.
+
+34
+00:05:50,163 --> 00:06:11,124
+Ders veren üç grubun hocası olarak ortaklaşa vermemiz gereken bir karar bu. Öyle bir şey gündeme getirmedik ama belki olabilir. Ama bu arada tabii ki sizlerin üstüne düşen görev aslında elinizden gelen en iyi şekilde konuyu anlamak ve çalışmak. Onun dışında not zaten kendiliğinden gelecek bir şeydir.
+
+35
+00:06:11,507 --> 00:06:26,967
+Tabii ki siz de aldığınız birçok dersteki yükümlülüklerinizi dengelemeye çalışıyorsunuz. Daha zorlandığınız derste daha fazla çaba yapıyorsunuz. O yüzden nereden ne kadar puan alacağınızı net olarak bilmek elbette en doğal hakkınız.
+
+36
+00:06:28,500 --> 00:06:55,079
+En fazla birinci vize ikinci vizden yüzde beş fazla olur veya işit olur şeklinde düşünüyorum. Durum bu. Laboratuvar saatlerinde ben ders yapmayı pek planlamıyorum doğrusu. Ama olur da konularda geri kalırsak o zaman laboratuvar saatinde önümüzdeki hafta veya konularda geri kalırsak anlaşılmaz ama dünyada bin bir türlü hali var.
+
+37
+00:06:56,500 --> 00:07:00,899
+Bazı saatinde ders yapmamız mümkün olabilir, söz konusu olabilir.
+
+38
+00:07:00,899 --> 00:07:04,899
+O zaman en geç, o günün...
+
+39
+00:07:05,312 --> 00:07:10,911
+Mesaj saati içerisinde sabahında ya da öğlenine kadar ki bizim laboratuvarlarımız şarşambaya denk geliyor.
+
+40
+00:07:11,471 --> 00:07:12,291
+Haber verelim.
+
+41
+00:07:12,611 --> 00:07:16,192
+Maille arkadaşlar bugün laboratuvar saatinde ders yapacağız şeklinde.
+
+42
+00:07:16,192 --> 00:07:30,572
+Onun dışında bu laboratuvar programı belli olunca hangi dersin hangi grubuna hangi asistan hocanızın gireceği de belli olduğunda lab programını sizlere duyuracağız.
+
+43
+00:07:30,791 --> 00:07:33,291
+Yine üstten toplu mesaj ele doyur.
+
+44
+00:07:33,312 --> 00:07:36,411
+Duyuruyorum ben. Bu şekilde dersi ilerleteceğiz.
+
+45
+00:07:37,451 --> 00:07:49,711
+Proje ödevinde de derste öğrendiğiniz hemen hemen her şeyi yapacağınız, ek olarak üstüne GUI işlevselliği kazandıracağınız bir proje düşünüyoruz.
+
+46
+00:07:50,072 --> 00:07:55,531
+Onun ayrıntılarını da önümüzdeki haftalarda belirleyip sizlere söyleyeceğiz.
+
+47
+00:07:56,752 --> 00:08:00,291
+Temel olarak ders kapsamındaki notlandırma birleşenleri bu olacak.
+
+48
+00:08:01,716 --> 00:08:17,516
+Ders ile ilgili kaynak, kitap, ek kaynağı ihtiyacınız mutlaka almanız gerekmiyor kesinlikle. Fakat ben birkaç kitap önerebilirim özellikle.
+
+49
+00:08:24,127 --> 00:08:33,867
+pratik olarak kullanılan ve en yaygın olarak kullanılan programlama yaklaşımı olduğu için bunu mutlaka bilmeniz gerekmekte.
+
+50
+00:08:34,451 --> 00:08:51,152
+Hele ki eğer ileride yazılım geliştirme alanında ilerlemek istiyorsanız meselenize o zaman mutlaka ağırlık vermeniz gereken bir konu olacağı için ekstra kitaplarla da bilgi birikiminizi ilerletmek isteyebilirsiniz.
+
+51
+00:08:51,652 --> 00:08:57,991
+Biz bu ders kapsamında Java'nın daha doğrusu aslında öncelikle Nesneye Yönelimi öğreneceğiz özellikle.
+
+52
+00:08:58,964 --> 00:09:25,864
+Sonra daha ileri düzey özellikleri de bir yere kadar getireceğiz. Ama bu yeterli mi? Hayır yeterli değil elbette. Biz size çok geniş olan nefsine yönelimi ve uzmanlaşmaya başlandığınızda en yayın olarak kullanan iki platform olan Java platformu veya .NET platformunda ilerlemeniz için gerekli bütün altyapıyı kazandırmış olacağız. Ondan sonra geri size kalmış. Meşhur bir reklamın sloganı gibi.
+
+53
+00:09:26,964 --> 00:09:51,403
+Herkesin de her insanın da öğrenme tercihi, tercihleri farklı olmaktadır. O yüzden benim önerim aslında kendinize hitap eden bir kitabı bulun, inceliğin, seçin, devam edin. Ama ben özellikle iki kitabı zikretmek istiyorum. Birincisi Java How to Program adlı kitap. Aslında How to Program diye bir seri var.
+
+54
+00:09:51,807 --> 00:10:18,768
+Bu seride ünlü bir seri. Ünlü de hak ediyor bence. Java harfet programının iki yazarı var. Harvey Data ve Ford Data. Bunlar baba oğul. Baba olan akademisyen. Oğul olan da yazılımcı. Yani biri akademik camiada, biri meslek ortamında. Yetkin kişiler.
+
+55
+00:10:19,731 --> 00:10:39,731
+Hal böyle olunca ortaya çıkarttığı kitaplar hem pedagojik yönü, eğitici ve öğretici yönü yüksek oluyor. Genel ortalamanın üstünde bir yere çıkarttığı kitaplar. Hem de gayet ciddi bir biçimde konuyu derinlemesine çekirdeğine inip...
+
+56
+00:10:40,179 --> 00:10:59,719
+Praktikten de kaybolmadan çok güzel bir şekilde konuyu öğreniyorsunuz. Ben Nesniye Yönelimi ilk başta C++ ile başlamıştım üniversiteden mezun olduğumda. Daha sonra yüksek lisans çalışmadan başladığımda Java platformunda yürüteceğim belli olunca tezi.
+
+57
+00:11:00,371 --> 00:11:08,851
+O seneki How to Program kitabında C++ Tanja Vaya çok rahat bir geçiş yaptım.
+
+58
+00:11:09,052 --> 00:11:16,791
+Ve tezim kapsamında kullanmam gereken ileri düzey özellikleri de o kitaptan verimli bir şekilde öğrendim, kullandım, geçtim.
+
+59
+00:11:17,471 --> 00:11:19,812
+O yüzden deneyimlediğim bir kitap.
+
+60
+00:11:20,467 --> 00:11:39,868
+Fakat burada önemli bir ayrıntı var. Bizim dersimizle de ilgili bir ayrıntı bu. Bir edisyonundan sonra bu kitabın iki alt türü çıkmaya başladı. Birincisi early object version, ikincisi late object version. O da Nesliye Yönelik Programlama dersi.
+
+61
+00:11:40,467 --> 00:11:48,267
+Erkenden mi vermeye başladığınız yoksa daha sonradan vermeye mi başladığınız konusunda öyle bir ve latent anlamı.
+
+62
+00:11:50,259 --> 00:11:58,220
+Programlama dillerinin gelişimine kronolojik olarak bakarsanız, önce yapısal programlama ortaya çıkıyor.
+
+63
+00:11:58,519 --> 00:12:01,759
+Tabii ondan önceki işte makinedeli, eserbiye onları saymıyorum.
+
+64
+00:12:02,440 --> 00:12:07,980
+Yapısal programlama ve Nesliye Yönelik Programlama arasındaki ilişkiyi söylüyorum.
+
+65
+00:12:08,580 --> 00:12:14,840
+Yapısal programlama daha önce önerildiği ve pratik olarak da kullanılmaya başlandığı için
+
+66
+00:12:18,259 --> 00:12:22,480
+Hepsut programları öğreniyorlar. Ondan sonra nesneye yönelik öğreniyorlar.
+
+67
+00:12:24,039 --> 00:12:28,259
+Dünyada ve ülkemizdeki bilgiler mühendisliği...
+
+68
+00:12:28,820 --> 00:12:51,240
+Programlarının müfredatına da baktığınızda genelde önce hepsi programlama öğreniliyor. Ondan sonra neslinin programlama öğreniliyor. Bizde de böyle biliyorsunuz. BBG dersiyle algoritmalara ve hepsi programlara bir temel bir giriş erdiğiniz. Programlama dilleri dersinde bunu ilerleştirdiniz.
+
+69
+00:12:56,820 --> 00:13:03,639
+programlarınızda EPSA programlamayı iyice ilan ettiniz. Şimdi üstüne Nesneye Yönelik'i görüyorsunuz.
+
+70
+00:13:04,596 --> 00:13:16,836
+Siz de bu şekilde geçiniz. Ama yapısal programlarına girmeden önce Nesliye Yönelik, doğrudan Nesliye Yönelik programlarla birlikte başlayan programlar da var.
+
+71
+00:13:17,295 --> 00:13:28,155
+Ve bu programlarda da başarı elde edildiğini gösteren çalışmalarla eğitim bilimi çalışmalarının yayınları ile bunu görebiliyoruz.
+
+72
+00:13:28,395 --> 00:13:31,115
+Hatta bu çalışmalar lise düzeyinde bile yapılıyor.
+
+73
+00:13:31,635 --> 00:13:37,875
+Fakat yine de hala genel ağır basan yaklaşır. Önce bir sağ programlamayı görmek şeklinde.
+
+74
+00:13:40,019 --> 00:13:45,860
+Ders notlarında o yüzden ben de direkt en başta nesneye yönelimle başlamışım.
+
+75
+00:13:45,920 --> 00:13:48,360
+Yapı saat programını zaten biliyorsunuz.
+
+76
+00:13:49,700 --> 00:13:56,019
+Bu nedenle dersle daha paralel gidecek olan versiyon early object version'dır.
+
+77
+00:13:56,780 --> 00:14:00,800
+Ama siz bilirsiniz, isterseniz late object version'a da bakabilirsiniz.
+
+78
+00:14:01,040 --> 00:14:03,920
+Ama bulabilirsiniz early object version tercih edilir.
+
+79
+00:14:04,371 --> 00:14:23,731
+İkinci kitap ise Core Java serisi. Yalnız bu kitap iki cilt. Tek cilt değil, bu daha ayrıntılı. Hortman ve Korner iki yazar bir kitap yine. Bu da Java'ya yönelik, yani Java platformu çok geniş yeteneklere sahip bir ortam.
+
+80
+00:14:24,755 --> 00:14:34,515
+Birçok, yani tamamına yakın özellikliğinin gayet ayrıntılı ve oyuncak olmayan ciddi örneklerle anlatan bir kitap.
+
+81
+00:14:34,995 --> 00:14:38,035
+Bunun da üzerinde ben çalışmışlığım var.
+
+82
+00:14:38,535 --> 00:14:40,695
+Tercih ettiğim, beğendiğim bir kitap.
+
+83
+00:14:41,975 --> 00:14:45,175
+Onun da yedinci sürümün ya da daha yenisini öneririm.
+
+84
+00:14:45,635 --> 00:14:48,715
+Bu kitap kütüphanemizde var arkadaşlar, fiziksel topi olarak.
+
+85
+00:14:48,715 --> 00:14:52,755
+Eğer hani gelebilen falan filan oluyorsa, istersen ödünç bile alabiliriz.
+
+86
+00:14:52,755 --> 00:14:56,975
+Bunların PDF'lerini orada burada bir yerlerde bulabiliyorsunuz.
+
+87
+00:14:56,975 --> 00:14:57,755
+Bazen ona...
+
+88
+00:15:10,972 --> 00:15:20,552
+Ders kapsamında volume 1'i işleyeceğiz. Ama volume 2'den de bir konuyu ele alacağız. O yüzden eğer...
+
+89
+00:15:21,395 --> 00:15:39,336
+Yani haberiniz olsun. O yüzden elektronik ve otorik bir şekilde bir yerlerden buluyorsanız ikisini de kenarda olsun. Öbür türlü fiziksel olarak alacaksanız kitabı, o zaman birinci cildini alın, ikinci cildini almaya daha çok var. Son haftalara doğru olacak bir konu.
+
+90
+00:15:40,275 --> 00:16:02,655
+Ama bu ders kapsamında sizlere sadece Java programını mı öğretmeyeceğiz? Zaten öyle olsaydı aslında dersin adı Java programı oluyordu. Hayır, buradaki esas amacımız, birinci amacımız nesne yönelimi öğretmek ve nesne yönelimi doğru şekilde kullanmayı içselleştirmek. Birinci temelimiz bu.
+
+91
+00:16:03,316 --> 00:16:14,276
+İkinci amacımız ise Nesneye Yönelik ile birlikte UML modelleme diline de bir giriş yapmak.
+
+92
+00:16:15,283 --> 00:16:33,863
+Çünkü en basından şöyle örnek vereyim. Yapı saat programlamayı ve ondan öncesinde veya paralelinde algoritmaları size anlatmaya, öğretmeye başlattığımızda akış şemaları ile görselleştirerek anlattık.
+
+93
+00:16:34,419 --> 00:16:56,840
+Bunun sebebi, iki sebebi var. Birincisi, daha eski, tarihi sebebi. Bilgisayar sistemlerine erişim öyle kolay değildi. Ana makineli sistemlerle, hatta çok daha da eskidenci kartları değerekten yazması, programın çalıştırılması ve sonuç üretmesi size sıra gelene kadar günler geçiyordu.
+
+94
+00:17:02,419 --> 00:17:24,779
+Koda dökmenizdeki eksiklik veya hata size çok pahalıya mağazalıyordu. O yüzden on kere düşünüp bir kere yapmak şeklinde ilerliyorduk. O günler geride kaldı ama şimdi biz de öğrenmek sadece yaparak değil, görerek ve görselleştirerek de öğrenmek işe yardımcı olmaktadır.
+
+95
+00:17:25,152 --> 00:17:30,532
+Bu nedenle akış yamalarıyla birlikte olarak yapısa programlamayı öğrettik size.
+
+96
+00:17:31,172 --> 00:17:33,036
+Benzer mantık ile...
+
+97
+00:17:33,332 --> 00:17:43,952
+Nesneye Yönelik bir, Nesneye Yönelik'in metodolojiyi kullanarak bir problem çözeceğiniz zaman önce bir modelleme veya tasarım yapmanız gerekmektedir.
+
+98
+00:17:44,352 --> 00:17:54,232
+Çünkü biz bir gerçek dünya problemini çözmek için kod yazıyoruz. O zaman gerçek dünya problemindeki varlıkları koda eşleştirmemiz gerekecek.
+
+99
+00:17:57,983 --> 00:18:01,723
+Kodumuzda da birer varlık olarak kendini gösterecek.
+
+100
+00:18:03,244 --> 00:18:20,804
+O yüzden önce bu varlıklar, varlıkların verileri, varlıklarla yapılabilecek eylemler, varlıklar arasındaki ilişkiler, bunları önce çok güzel kısmında oturtmamız ve oradan bir tasarım yapmamız, ondan sonra koda geçmemiz gerekmektedir.
+
+101
+00:18:22,259 --> 00:18:29,979
+Tek törde yazılım geliştirme süreçlerinde de sıra bu şekilde ilerlemektedir.
+
+102
+00:18:30,719 --> 00:18:37,779
+Önümüzdeki sene 3. sınıfta ve hatta aslında sistem analizi dersiyle de bunların temellerini almaya başladınız.
+
+103
+00:18:38,319 --> 00:18:43,919
+Yazılım geliştirme süreçlerinde teknik dokümentasyonu, teknik belgelendirmenin önemi büyüktür.
+
+104
+00:18:48,160 --> 00:19:14,560
+kullanılan, sektörde yaygın olarak kullanılan modelleme dili ailesi UML'dir. Unified Modeling Language'in kısaltmasından gelmektedir. UML ailesi içerisinde farklı şema türleri bulunmaktadır. Yazılım, yaşam döngüsünün hangi aşamasında hangi etkinlikleri yapıyorsanız onun belgelendirmesi yönelik özel bir UML şeması türü vardır.
+
+105
+00:19:16,160 --> 00:19:25,560
+derslerinde sizlere UML sınıf şemalarını ve UML sıralama şemalarını, sequence'lerden bunları öğretiyor olacağız.
+
+106
+00:19:26,440 --> 00:19:32,820
+Ve hem Nesneye Yönelimi hem bu UML şemalarını birlikte öğretiyor olacağız.
+
+107
+00:19:34,140 --> 00:19:38,020
+Bu şekilde Nesneye Yönelimi öğreten tek kitap yok.
+
+108
+00:19:38,771 --> 00:19:58,831
+Bir önce bir Nesmi Yönelik Programlama dilini öğrettiği kitaptan çalışıyorsunuz. Ardından da özellikle UMLN'e odaklanmış bir kitap alıyorsunuz. Onun üstünden çalışıyorsunuz. Ayrı ayrı kaynaklardan çalışıyorsunuz. Çok güzel UMLN kitapları var. Örneğin Not Shell serisi var. UMLN'e Not Shell.
+
+109
+00:20:22,708 --> 00:20:30,788
+Ders kapsamında ya sektörde de çok yaygın kullanılıyor. Bu nedenle ders kapsamında size UMLN'de çok güzel anlatmaya çalışıyoruz.
+
+110
+00:20:31,380 --> 00:20:50,420
+UMLN'le ilgili benim özellikle beğendiğim bir kitap var. Martin Forlun'un UML Distilled adlı kitabı. 3. eleşim. Bunu PDF olarak bulmak falan biraz daha zor ama siz bu işlerde benden daha iyisinizdir. Rahat bulabileceğinizi düşünüyorum. Şart da değil ama.
+
+111
+00:20:51,028 --> 00:21:00,107
+Bu kitabın özelliği şu, distilled demek özümsen, özetlenmiş, özütü çıkartılmış anlamına geliyor.
+
+112
+00:21:02,087 --> 00:21:14,188
+UML şemalarını anlatırken farklı UML şema türlerini her bir şemayla ilgili artta yatan nesneye yönelik kavramları da anlatan bir kitaptır.
+
+113
+00:21:14,579 --> 00:21:31,399
+Sınıf şemalara ile başlıyor ve sınıf şemalara ile başladığında sınıf nedir, nesne nedir, aradaki ilişkiler nelerdir, bu ilişkiler hangi durumda nasıl modellenmeli ve nasıl kullanılmalıdır öyle bir anlatış tarzı var. Ders notlarındaki anlatış tarzı da benzer bir şekildedir.
+
+114
+00:21:32,564 --> 00:22:00,364
+O yüzden bu kitabı özellikle vurgulamak isterim. Ama kesinlikle mutlaka bunları alın falan demiyorum. Benim öncelikle sizden istediğim mutlaka ders notlarınız elinizde olsun. Şu an için sayfam, bu arada ders notlarını ben AWS'tan paylaşıyorum. Şu anki ders notlarımda, AWS'taki notlarda sadece şu tarih bilgileri güncel değil. Onun dışında eğer yapabilirsem bir iki hafta içerisinde
+
+115
+00:22:00,564 --> 00:22:12,604
+Bu ders notlarında bazı ufak düzenlemeler yapmayı planlıyorum. O zaman tekrar yükleyeceğim Avesiz'e güncellenmiş haliyle. Açıklamasını da o şekilde yazacağım. Sizler de oradan takip edip anlayabilirsiniz.
+
+116
+00:22:14,984 --> 00:22:23,104
+Ayrıca ders notlarında yer alan bütün örneklerin de kaynak kodlarını da yine Avesiz üzerinden paylaşmış durumdayım.
+
+117
+00:22:23,923 --> 00:22:37,284
+Şu an biraz daha gerilerde olabilir duygularını da bakarız birazdan onları da gösterelim. Ama oradalar. Almanızı, indirmenizi, edinmenizi özellikle öneriyorum.
+
+118
+00:22:40,435 --> 00:23:08,175
+Ders 3 grup yapacağız. 1. grupta Mehmet Hoca var. 2. grupta ben varım. 3. grupta bu dönem Ahmet Erdoğan Hoca sağ olsun bize destek oluyor. Kendisi de daha doktorasını tamamlama aşamasındayken zaten asistan olarak aramızda olan birisi. Tanırsınız kendisini. Ve daha asistanken de bu derslerin lablarına giren katılan bu konuda deneyimli bir hocanız. O da kartosunu aldı.
+
+119
+00:23:08,435 --> 00:23:24,615
+destek olmaya oldu sağ olsun. Yoksa öbür türlü 90 kişilik iki gruba, 90'lar kişilik iki gruba ayrılacakken şimdi 60 iler 70 arasında üç gruba ayrıldık. Bu veri hepimizde rahatlatmış oldu. İyi oldu.
+
+120
+00:23:25,428 --> 00:23:49,688
+Sınavlarımıza girerken lütfen kendi gruplarınızdan girin. Tabi ki artık şey, uzem sistemi sayesinde yanlış gruptan girmek gibi bir şey söz konusu olmuyor ama ders yüzde yapıyorken olabiliyordu. O da ben sizin kendi notunuzun sisteme yansımasında, kağıdınızın okunup notunuzun belli olmasında gecikmeleri sınav oluyordu.
+
+121
+00:23:50,644 --> 00:23:55,484
+Şu an bu durum ortadan kalktı ama yine de bunu da söylemek istiyorum.
+
+122
+00:23:56,664 --> 00:23:59,704
+Rabotar konusunda erken konuşmuş oldum.
+
+123
+00:23:59,824 --> 00:24:01,264
+Şimdi burada rüyasımız var.
+
+124
+00:24:01,384 --> 00:24:05,524
+Aslında söylediğim şeylerin hemen hemen hepsi burada geçiyor.
+
+125
+00:24:06,444 --> 00:24:08,244
+Evet, ekstradan bir şey yok.
+
+126
+00:24:09,284 --> 00:24:15,784
+Onun dışında şimdi pandemiden önce alınan bir senato kararı vardı.
+
+127
+00:24:18,064 --> 00:24:21,564
+En son regulation olarak sizlere paylaşıyordum.
+
+128
+00:24:22,244 --> 00:24:30,304
+Orada da diyor ki, 40'ın aşağısındaki notlar dersten geçemez şeklinde ben oradaki sözü yorumluyorum.
+
+129
+00:24:30,704 --> 00:24:43,184
+O yüzden not karşılığına baktığınızda, eğer işte bütün bu ağırlıklarla ortalamanızı çarpıp topladığınızda, eğer 40 oluyorsa bu notun geçmesi mümkün değil.
+
+130
+00:24:45,140 --> 00:25:11,559
+Hesap sorarlar diyelim. Ama 40 dereceye denk gelir mi? Artık da gelebilir. Gerçi o da her dönem kendi içerisinde belli oluyor haliyle. Ama tekrarlıyorum, not odaklı olmak yerine öğrenme odaklı çalışın. Yapacağınız şey belki işte hangi derslerde sorulanıyorsanız ona daha çok ağırlık vermek olabilir. Ama onun dışında elinizden geleni yapmanızı ben öneriyorum.
+
+131
+00:25:11,983 --> 00:25:18,463
+Ve özellikle madem derste canlı olarak katılıyorsunuz, hoş geldiniz, ağırlar getirdiniz.
+
+132
+00:25:19,144 --> 00:25:24,243
+Derste canlı olarak katılmanın en büyük avantajı soru sorabilmektir arkadaşlar.
+
+133
+00:25:25,044 --> 00:25:27,644
+Derste lütfen ve lütfen soru sorun.
+
+134
+00:25:28,304 --> 00:25:31,564
+Doğru anlayıp anlamadığınızı sınamak için soru sorun.
+
+135
+00:25:32,163 --> 00:25:35,584
+Bir şey anladıysanız zaten mutlaka sormalısınız.
+
+136
+00:25:36,079 --> 00:25:42,779
+Sizin sorularınız ve alınan cevapla diğer öğrencilerin de yararına bilgisini bulacaktır.
+
+137
+00:25:43,680 --> 00:25:48,680
+Bazen şöyle oluyor, anladım sanıyorsunuz ama arka planda oturmamış bir şeyler olabiliyor.
+
+138
+00:25:49,140 --> 00:25:50,480
+Birçok kişi bunun farkında değil.
+
+139
+00:25:50,779 --> 00:25:58,039
+Ama bir arkadaşım farkına var soru sorduğunda, ben de açıklamayı yaptığımda bütün sınıf bundan yararlanmış oluyor.
+
+140
+00:25:58,559 --> 00:26:02,120
+O yüzden lütfen çok rica ediyorum soru sorunu arkadaşlar.
+
+141
+00:26:02,120 --> 00:26:02,880
+Çok önemli.
+
+142
+00:26:06,836 --> 00:26:25,576
+Dersde epey bir şey göreceğiz dedik. Neler göreceğiz? Konuları şu şekilde bir listeledim. İlk başta bugün Java diline genel bakış ile başlayacağız. Java'da kod geliştirmek için gerekli ortam nedir? Biz bunları nasıl tırar indiririz? Ayağa kaldırız biraz onlardan bahsedeceğim.
+
+143
+00:26:34,836 --> 00:26:40,816
+bir bayramda bir hafta dersimiz kayıp olacak.
+
+144
+00:26:40,816 --> 00:26:51,375
+Hani çünkü şu matın başında başladık işte 14 hafta sonra finaller falan derken sonlara doğru arada kaybolacak bir haftamız var.
+
+145
+00:26:51,696 --> 00:26:56,276
+Bu ortaya çıktı. Bu nedenle bugün derste ilerlemek istiyorum işte.
+
+146
+00:26:59,731 --> 00:27:27,731
+Sınıflar ve nesniler karlamlarına giriş yapabiliriz belki son derste. Bakalım nasıl ilerleyecek ona göre belli olacak. Ama daha ilk konuyu anlatmaya başladım. Yani nesnilerin konularını anlatmaya başladım. İlk birkaç yansıdan sonra hemen UMLN aşamalarıyla birlikte başlangıcı yapacağız ve aslında tüm ders kapsamında şurada gördüğünüz karlamların şey dahil, yani elum dahil veyahut da generic classların ufak noktası.
+
+147
+00:27:27,731 --> 00:27:43,731
+Otasyon farkı dahil her aşamada her gördüğümüz konunun UML şamalarıyla olan ilişkilerini de görüyor olacağız. Bunları birlikte çalışıyor olacağız. O yüzden aslında UML'nin üçüncü olarak yazdım ama bir hafta bir şeyler çalışıp geçecek şeklinde değil bu.
+
+148
+00:27:47,188 --> 00:28:03,448
+Ondan sonra işte temel konulara neslinin durum bilgisinden, iş davranışlar, ne gelmiş metotlar, ne gelmiş bunlardan bahsedeceğiz. İlke düğü alanından sonra bunların sarmalayıcıları diye bir konuyundan bahsedeceğiz. Metot parametresi çağırmalarında işte nasıl bir mod söz konusudur.
+
+149
+00:28:03,908 --> 00:28:15,188
+C'de iki mod var da hatırlarsınız. Call by value ve call by reference. Java'da tek bir mod var. Call by value of references diye onun üstüne yazdık olacağız. Ondan sonra...
+
+150
+00:28:15,188 --> 00:28:37,988
+Kod yazmaya başladığınızda, erken yazmaya başlayacağız aslında. Belki ilk hafta yazılabileceğimiz zaman ondan sonra başlayacağız. Bütün gerekli temel kodlar görür görmez en gerekli olanları hemen tek sınıflı kodumuzu yazmaya başlayacağız. O zamandan itibaren UML sequence diagramlarını çizmeye başlayacağız.
+
+151
+00:28:39,155 --> 00:28:43,555
+Sonra kalıtım ve soyut sınıflar konusunu göreceğiz.
+
+152
+00:28:43,555 --> 00:28:46,555
+Ardından arayüzler ve...
+
+153
+00:28:46,932 --> 00:28:57,592
+Arayüzlerin çoklu kılıklılığında ilişkisi biraz ona değineceğiz. Çok biçimlilik, metot yeniden tanımlama ve metot çoklu tanımlama konularını göreceğiz. Enum sınıflarını göreceğiz.
+
+154
+00:28:58,792 --> 00:29:05,352
+Bu naz enumda dahil olmak üzere nesne yönelimin temel kavramlarıdır arkadaşlar.
+
+155
+00:29:14,932 --> 00:29:18,872
+Bu özellikler dile göre biraz farklılaşmaya başlayabiliyor.
+
+156
+00:29:18,872 --> 00:29:31,372
+Söz dizimi ve arka planda yatan gerçeklemeler kapsamında Java olarak artık jenerik yapılardan başlayaraktan Java diline daha özel ileri konularını görmeye başlıyor olacağız.
+
+157
+00:29:31,991 --> 00:29:38,872
+Liste ve MEP yapılarının üzerinden örnekleyerekten jenerik sınıfların kullanılmasını göreceğiz.
+
+158
+00:29:39,731 --> 00:29:41,812
+Kendi jenerik sınıflarımızı yazmayacağız.
+
+159
+00:29:42,932 --> 00:29:50,612
+Bu saat içerisinde değil ama herhangi bir kaynaktan bu konuları artık çalışabilecek durumda bulacaksınız.
+
+160
+00:29:51,312 --> 00:29:53,192
+Accepting handling konusunu göreceğiz.
+
+161
+00:29:53,612 --> 00:30:00,000
+Normalde bir metot başarılıysa tu, aksitaktırda false veya C alışkanlığı.
+
+162
+00:30:00,000 --> 00:30:11,539
+Anlıklarımıza bakarsak, metot başarılıysa bir başarısız hastası veya herhangi bir hata koduyla dönmesi gibi olan denetimin dışında bir farklı bir denetim türü daha var.
+
+163
+00:30:11,700 --> 00:30:17,980
+Exception Handling, aykırı durum yönetimi falan şeklinde çeviriyorum. Onu görüyor olacağız.
+
+164
+00:30:18,980 --> 00:30:22,539
+Typecasting tip dönüşümü konusunu görüyor olacağız.
+
+165
+00:30:24,539 --> 00:30:27,759
+Dosyalarda çalışmak için, uğraşmak için.
+
+166
+00:30:28,000 --> 00:30:39,299
+Java'ya özel bir yaklaşım var. Streamler üstünden serialization, deserialization konuları var. Onları görüyor olacağız. İç sınıflar diye bir kavram var. Onu görüyor olacağız.
+
+167
+00:30:39,299 --> 00:30:56,000
+Multi-Trading'e bir giriş yapacağız. Multi-Trading yani programın aynı programımızı birden fazla akış, paralel akış olarak çalıştırıp bu sayede her bir paralel akışı bilgisayarın çok işlemi.
+
+168
+00:30:56,000 --> 00:30:58,140
+İşlemci sistemleri uzun zamandır kullanıyoruz.
+
+169
+00:30:58,620 --> 00:31:09,840
+Farklı çekirdeklerde ve onun farklı alt kaynaklarında çalıştırılarak nasıl daha performanslı bir şekilde çalıştırabileceğinize yönelik konulara gireceğiz.
+
+170
+00:31:09,840 --> 00:31:14,340
+Tabi arada bir dolu senkronizasyon problemini şunlar bunlar olabilir.
+
+171
+00:31:14,740 --> 00:31:18,360
+Bunların çözümlerine yönelik en temel, en basit yapıları görüyor olacağız.
+
+172
+00:31:18,819 --> 00:31:21,500
+Onun dışında gerisi deryal deniz bir konudur.
+
+173
+00:31:24,000 --> 00:31:27,360
+Bir temel giriş yapacağız ve bu noktada ders müfredatımız bitecek.
+
+174
+00:31:28,380 --> 00:31:43,720
+Eğer vaktimiz kalırsa bu konuları yeterli bir verimlilikle işleyebilirsek Java'da klasik olarak oluşturma yöntemi olan Swing üzerinden kod yazma konusuna başlayabiliriz.
+
+175
+00:31:44,440 --> 00:31:50,240
+Ama bu şart da değil bu konuya çalışmayı tamamen size bırakabiliriz.
+
+176
+00:31:52,243 --> 00:32:04,223
+Inner class tamamlandıktan sonra, multi-trading'in teminini de aldıktan sonra artık GUI programları yazabilmek için gerekli her türlü altyapıya sahipsiniz demektir.
+
+177
+00:32:04,823 --> 00:32:08,103
+Hızlı bir çalışmayla altından kalkabileceğiniz bir konudur.
+
+178
+00:32:08,863 --> 00:32:11,563
+Durum ve içeriğimiz bu şekilde.
+
+179
+00:32:12,423 --> 00:32:14,543
+Şimdi, ben epey bir konuştum.
+
+180
+00:32:15,043 --> 00:32:17,723
+Buraya kadar mutlaka kafanızda sorularınız olabilir.
+
+181
+00:32:17,723 --> 00:32:20,223
+Soru olan arkadaşım var.
+
+182
+00:32:20,243 --> 00:32:26,243
+Lütfen açsın, sesini sorsun veya chatten de yazabilirsiniz. Sizin sorularınızı bekliyorum.
+
+183
+00:32:29,460 --> 00:32:32,180
+Hocam hangi editörü tercih edeceğiz?
+
+184
+00:32:32,960 --> 00:32:33,360
+Efendim?
+
+185
+00:32:34,160 --> 00:32:35,800
+Hangi editörü tercih edeceğiz?
+
+186
+00:32:36,420 --> 00:32:45,360
+Özel bir tercihimiz yok. Biraz da ona değineceğim. Ben şahsen Eclipse'i tercih ediyorum. Eclipse'i kullanıyorum. Ama NetBeans olabiliriz.
+
+187
+00:32:45,440 --> 00:32:52,280
+Birazdan gireceğiz. NetBeans olabiliriz. J-Creator olabiliriz. IntelliJ olabiliriz. Herhangi birisi olabiliriz. Hiç last değil.
+
+188
+00:32:53,971 --> 00:33:05,692
+Bazen arkadaşlarımın, yıllı zamanlı çalışan arkadaşlarım olabiliyor. İşlerimden verdikleri bilgisayarlarda belirli bir ide kurulu olabiliyor. Onu devam ettirebilirsiniz. Hiç önemli değil, hiç dertli değil.
+
+189
+00:33:08,251 --> 00:33:20,112
+Yani Notepad++'la kodlayıp komut satımından da denleyebilirsiniz isterseniz ama yani o daha zor bir iş. Dens kapsamında gerekmeyecek bir iş.
+
+190
+00:33:21,587 --> 00:33:24,347
+O yüzden tercih seçimi size bırakıyorum.
+
+191
+00:33:27,147 --> 00:33:28,227
+Evet, buyurun başka sorun.
+
+192
+00:33:31,048 --> 00:33:32,747
+Çete bir şeyler geldi bakalım.
+
+193
+00:33:34,483 --> 00:33:49,463
+GUI ile uğraşacağım bu süreniz. Buna yönelik dersimiz olacak mı ve ayrıca bunu önerdiğiniz bir kaynak var mı? Özel bir kaynak önermiyordum. Herhangi bir Java kitabında bunu çalışabilirsiniz arkadaşlar. Türkçe veya İngilizce hiç fark etmez.
+
+194
+00:33:49,463 --> 00:33:55,823
+Ama çalışmanızı öneleceğim konu Swing konusu üzerine.
+
+195
+00:33:58,259 --> 00:34:26,260
+Herhangi bir Java kitabından çalışabilirsiniz diyorum. Benim bu konuda hazır bazı notlarım da var. Onları da sizinle paylaşabilirim. Önümüzdeki haftalarda bunu bana hatırlatırsınız lütfen. Ben de paylaşırım bu konuları sizinle. Ama sizin de çok rahatlıkla okuyup anlayamayacağınız herhangi bir kitaptan bir konu değil. Çünkü gerekli bütün atlapıya sahip olacaksınız.
+
+196
+00:34:26,260 --> 00:34:51,460
+Ayrıca proje ödevinde swing'i de mutlaka swing yapacaksınız demeyeceğim. İşin daha bir dolu arka planında yatan şeyler olacak. Onları arka planı yapıp buna bir komut satırı ön yüz vermeniz de kabul edilir. Ama tabii ki GUI'li bir ön yüze sahip proje ödevinin bir daha fazla puan bileşeni olacak haliyle.
+
+197
+00:34:53,331 --> 00:35:00,431
+Projede de, sınavlarda da boş kağıt vermektense ne kadarını biliyorsanız o kadarını yapın.
+
+198
+00:35:00,851 --> 00:35:05,731
+Doğru yaptığınız konulara her birinin birer puan bileşeni oluyor.
+
+199
+00:35:06,211 --> 00:35:09,991
+Her doğru yaptığınız yazdığınız içerikten bir puan alıyorsunuz.
+
+200
+00:35:10,092 --> 00:35:12,931
+Ama az ama çok. Ama onlar birike birike büyüyor.
+
+201
+00:35:13,231 --> 00:35:19,592
+Bu yüzden önerim elinizden geleni yapmanızdır projede ve sınavlarda.
+
+202
+00:35:19,592 --> 00:35:21,311
+Hepsini yapamadım deyip bırak.
+
+203
+00:35:21,331 --> 00:35:25,552
+Ne kadarına hakimsiniz, o kadarını yapın.
+
+204
+00:35:29,011 --> 00:35:30,931
+Evet, başka soru var mı?
+
+205
+00:35:30,931 --> 00:35:31,552
+Buyuruz.
+
+206
+00:35:45,235 --> 00:35:48,915
+Peki, bir soru yoksa ben bir 10 dakika daha ilerleyeceğim.
+
+207
+00:35:49,455 --> 00:35:55,455
+3 dersi, yani dersleri normal 50 dakika ders, 10 dakikatenin arayıp şeklinde yapmak istiyorum.
+
+208
+00:35:56,595 --> 00:36:00,435
+Şimdi bu ders içeriğinin ardından yavaş yavaş başlayalım.
+
+209
+00:36:00,995 --> 00:36:07,975
+Java programlama dilinin genel yapısını, biraz tarihçesini ve genel yapısını sizlerle paylaşmak istiyorum.
+
+210
+00:36:08,532 --> 00:36:18,032
+Şimdi Java platformunda, Java'nın farklı ana versiyonları var. Bunları Edition diyoruz.
+
+211
+00:36:18,852 --> 00:36:24,072
+Java Standard Edition bizim temel aldığımız içerik olacak.
+
+212
+00:36:28,052 --> 00:36:49,532
+Aklınıza gelebilecek herhangi bir tür uygulamayı yazmak için, kodlamak için kullanacağınız edition budur. Standart edition. Sadece işte mobil cihazlar harç. Mobil cihazlar kod yazmak için ise Java Micro Edition mevcuttur.
+
+213
+00:36:50,003 --> 00:37:07,623
+İşte akıllı telefonlar ama akıllı telefonlardan çok daha düşük donluma sahip, hani 90'ların sonundaki Java uyumlu diye geçen telefonlar da akıllı telefonlar değil, Nokia falan gibi telefonlarından bahsediyorum.
+
+214
+00:37:16,403 --> 00:37:32,164
+Setüstü uydu kutularından bahsediyorum mesela. Çok düşük donanıma sahip, çok kısıtlı donanım kaynaklarına sahip cihazlarda koşabilecek Java programları hazırlamak için kullanılıyor Java Micro Edition süremi.
+
+215
+00:37:32,164 --> 00:37:41,304
+Fakat pratikte artık kullanılmıyor arkadaşlar. Yani o tip eski cihazları artık arasanız da zor buluyorsunuz. Vintage oldular.
+
+216
+00:37:41,844 --> 00:37:46,844
+Smartfonlarda da, akıllı telefonlarda da...
+
+217
+00:37:47,923 --> 00:38:15,543
+Uygulama yazmak için, tabii ki kimisi Java kökenli olan, kimisi başka platform kökenli olan, daha geniş ve gelişmiş frameworklar var. Onları kullanıyoruz. Yani Java Micro Edition, Java'nın çok çok küçük bir art kümesi. Kısa düzey kullanıldı. Hala indirilebiliyor, kullanılabiliyor ama çok işkence Java Micro Edition kullanarak uygulama yazmak.
+
+218
+00:38:15,923 --> 00:38:17,583
+Her şeyi sizin kodlamanız gerekiyor.
+
+219
+00:38:18,063 --> 00:38:19,263
+Birazdan bahsedeceğiz.
+
+220
+00:38:19,623 --> 00:38:23,123
+Çeşitli paketler altında sınıflarınızı toplayabiliyorsunuz.
+
+221
+00:38:23,123 --> 00:38:25,683
+Java dininde çok geniş bir sınıf kitaplığı var.
+
+222
+00:38:26,023 --> 00:38:27,923
+Çok sayıda paket altında toplanmış.
+
+223
+00:38:29,183 --> 00:38:30,923
+JSE bütün bunları içeriyor.
+
+224
+00:38:31,344 --> 00:38:33,864
+JME'de sadece Java lang paketi var.
+
+225
+00:38:34,384 --> 00:38:35,364
+O kadar sınırlı bir şey.
+
+226
+00:38:35,703 --> 00:38:39,003
+Gereken her şeyi altı ip sınıf sizin sıfırdan kodlamanız gerekiyor.
+
+227
+00:38:39,543 --> 00:38:41,023
+Hiç değmiyor yani.
+
+228
+00:38:41,684 --> 00:38:46,963
+Normal mobil uygulama geliştirmede 8 haftalık genelde çevrimlerden bahsediliyor.
+
+229
+00:38:47,423 --> 00:38:57,184
+8 haftada uygulamının bütün bu aşamalarından analiz, tasarım, kodlama, deployment, bütün bunlar 8 haftada tamamlanabiliyorken,
+
+230
+00:38:57,443 --> 00:39:03,943
+Geomik ve Değişimler yapmaya çalışırsanız bunu çok daha birkaç ayınız gider.
+
+231
+00:39:04,628 --> 00:39:08,927
+O yüzden ona değinmeni sadece bilgi olarak söyledim.
+
+232
+00:39:09,487 --> 00:39:11,327
+Bir de Java Enterprise Edition var.
+
+233
+00:39:11,807 --> 00:39:16,588
+Java Enterprise Edition, Java Standard Edition'dan tek farkı...
+
+234
+00:39:17,588 --> 00:39:24,108
+Bir sunucu uygulama yazılımı içermesi, Application Software Software dediğim.
+
+235
+00:39:24,888 --> 00:39:31,468
+JS'ye kullanarak yazdığınız kodanız uygulamaların çalışması için çok kullanıcılı olarak,
+
+236
+00:39:31,708 --> 00:39:40,188
+bulut üstünde veya bir sunucu üstünde gerekli hizmetlerin sağlanarak çalışması için bir sunucu yazılmalıdır.
+
+237
+00:39:40,188 --> 00:39:45,528
+Bu kullanıcı hesapları oluşturması, encryption, güvenlik.
+
+238
+00:39:45,588 --> 00:39:57,088
+vesaire vesaire gibi işlemleri için hazır servisleri içeren bir uygulama sonuncusu yazılımımız. Bu CSE'den tek farkı.
+
+239
+00:40:00,000 --> 00:40:07,779
+Odaklanmayacağız. Temel olarak Java Application Server adı verilir bu uygulama yazılımına.
+
+240
+00:40:07,779 --> 00:40:15,779
+Fakat farklı firmalar bu yazılımı temel alarak daha fazla yetenek sunan versiyonları da üretmektedirler.
+
+241
+00:40:16,840 --> 00:40:20,940
+IBM'in web seferi, BAY'nin web projeki, Apache'nin Tomcat'i gibi.
+
+242
+00:40:22,480 --> 00:40:28,000
+Bu ayrıntılara girmeyeceğiz arkadaşlar. Ders kapsamında Java Standart Elish'in üstünde.
+
+243
+00:40:28,000 --> 00:40:36,619
+odaklanaraktan Nesliye Yönelik'in bütün temel kavramlarını ve Java dirinin bazı ileri düzey yeteneklerini az önce bahsettim.
+
+244
+00:40:36,940 --> 00:40:40,239
+Görüyor, kullanıyor, kodluyor, çalıştırıyor olacağız.
+
+245
+00:40:44,340 --> 00:40:50,540
+Java'nın çok temel bir özelliği, Java'nın yorumlanan bir dil olmasıdır.
+
+246
+00:40:51,140 --> 00:40:56,320
+Şimdi hangi programlama dilini kullanıyorsanız kullanın, bir kaynak kod hazırlıyoruz.
+
+247
+00:40:56,700 --> 00:41:01,700
+Bu kaynak kod, insan tarafından okulun anlaşılır bir içerik oluyor.
+
+248
+00:41:02,980 --> 00:41:08,019
+Java dilinde kaynak kodlar nokta java uzantılı dosyalarda kaydedilir.
+
+249
+00:41:08,692 --> 00:41:13,992
+Sonra işte yine hangi dil olursa olsun bir derleyici program devreye girer, compiler.
+
+250
+00:41:14,772 --> 00:41:21,352
+Compilation işlemini yapar, kaynak kodu derler ve derlenmiş kod ortaya çıkar.
+
+251
+00:41:21,912 --> 00:41:24,052
+Derlenmiş kod artık binary moddadır.
+
+252
+00:41:24,692 --> 00:41:28,532
+İnsan tarafından okulduğunda anlaşılabilir durumda değildir.
+
+253
+00:41:29,252 --> 00:41:32,211
+Bu artık byte kod seviyesindedir.
+
+254
+00:41:32,628 --> 00:41:47,268
+Bu noktadan sonra ki Java'da değerlenmiş dosyalar, nokta class dosyaları olur. Bu noktadan itibaren iki farklı alternatiften biri izlenir programlama dillerinde.
+
+255
+00:41:47,795 --> 00:42:15,195
+C gibi dillerde bir Linker Programı devreye girer, bağlamak işlemi yapar. O da şu, ortaya işletim sistemi tarafından doğrudan çalıştırılabilecek kodu ortaya çıkarmak üzere hem sizin programınızın, kendi kodlarınız kısımların bile işletim sisteminden
+
+256
+00:42:15,795 --> 00:42:25,215
+İşletim sisteminden hizmet alınması gereken diğer kaynaklar ki mesela bu Windows sistemlerde DLR dosyaları mesela gibi o tüp bağımlılıklar.
+
+257
+00:42:25,476 --> 00:42:33,615
+O tüp bağımlılıkları bir araya getirir ve nihayetinde ortaya işletim sisteminin doğrudan çalıştıracağı bir kod ortaya çıkar.
+
+258
+00:42:33,615 --> 00:42:35,895
+Bu birinci alternatif.
+
+259
+00:42:36,695 --> 00:42:39,403
+Birinci farklı programlama dilleri tarafından kullanılır.
+
+260
+00:42:39,891 --> 00:42:44,891
+Java gibi yorumlanan dillerde ise linking işlemi yapılmaz.
+
+261
+00:42:46,611 --> 00:42:56,891
+Yorumlayıcı denilen bir kod, byte kodu okur ve işletim sistemine o yönlendirir.
+
+262
+00:42:58,171 --> 00:43:02,651
+Sanki burada araya bir tercüman girmiş gibi olur.
+
+263
+00:43:03,123 --> 00:43:08,123
+Tabii ki bu araya tercüman girmesinin...
+
+264
+00:43:08,947 --> 00:43:25,207
+Ufak da olsa bir ek yükü ortaya çıkmaktadır. Eski sistemlerde ve Java'nın 1.2 sürümüne kadar olan versiyonlarında bu ek yük önemli oranda hissedilebilir düzeyde idi.
+
+265
+00:43:25,207 --> 00:43:34,427
+Fakat daha sonraki sürümlerden itibaren bu yorumlayıcı daha akıllı hale getirildi.
+
+266
+00:43:36,947 --> 00:44:04,947
+sırayla ele alıp çalıştırmaktansa önceden bir kod optimizasyonu devreye sokulmaya başlandı. Ondan sonra optimize edilmiş kod çalıştırılmaya başlandı. Böylece mesela örneğin bir milyon elemanlı bağlı listeyi sıralama, araya eleman yerleştirme ve silme gibi işlemler doğrudan çalıştırılan dillerle başa baş nokta diye getirilmiştir.
+
+267
+00:44:04,947 --> 00:44:06,027
+Dilde mesela.
+
+268
+00:44:07,867 --> 00:44:09,647
+Birinci olarak bunu söylemek istiyorum.
+
+269
+00:44:10,247 --> 00:44:11,847
+İkinci olarak da şunu söylemek istiyorum.
+
+270
+00:44:12,607 --> 00:44:19,807
+Güncel programlama dilleri genelde bu yorumlama yolunu seçmektedir.
+
+271
+00:44:19,807 --> 00:44:24,587
+Çünkü yorumlanan dillerin iki önemli avantajı vardır.
+
+272
+00:44:25,187 --> 00:44:26,867
+Birinci avantajı taşınabilir.
+
+273
+00:44:27,956 --> 00:44:38,316
+Siz kaynak kodunuzu, yazdığınız kaynak kodu herhangi bir ortamda çalıştırabilmek için tek ihtiyacınız olan şey yorumlayıcı.
+
+274
+00:44:39,175 --> 00:44:49,436
+Eğer videolarda sizin dilinize ait yorumlayıcı varsa, sizin yazdığınız kod bütün farklı sistemlerde hep aynı şekilde çalışır.
+
+275
+00:44:50,896 --> 00:44:55,596
+Bu gibi yorumlanan dillerin taşınabilirliği çok yüksektir.
+
+276
+00:44:56,628 --> 00:45:11,047
+Bunun önemi gitgide daha fazla arttığında .NET platformda dahil olmak üzere güncel programlama ortamları yorumlanan şekilde çalışmaya meyletmiştirler.
+
+277
+00:45:12,447 --> 00:45:16,628
+Birinci avantaj bu. İkinci avantaj ise güvenlik arkadaşlar.
+
+278
+00:45:17,043 --> 00:45:29,663
+Doğrudan çalıştırılabilir dillerde, isterek veya istemeyerek zararlı kod yazmak veya basit bir hatayla bütün sistemi göçertecek kod yazmak çok daha kolay.
+
+279
+00:45:30,643 --> 00:45:37,543
+C kodunuzda ya pointer kullanan bir C kodunuzda bir tane yıldızı fazla ya da eksik yazın da görün bakalım ne oluyor.
+
+280
+00:45:38,203 --> 00:45:39,543
+Hatta hepiniz yaşarınız.
+
+281
+00:45:41,427 --> 00:46:00,523
+Fakat yorumlanan dillerde yorumlayıcı bir, güvenli bir çerçeve sunuyor programa. O çerçeveyi taşmak, aşmak bilerek veya bilmeyerek epey zor hale gelmiş oluyor. Bu da önemli bir güvenlik ve güvenilirlik avantajı sağlar.
+
+282
+00:46:00,980 --> 00:46:10,920
+Bu avantajların daha çok ağır bastığını düşünülüyor ve bu yönde eğilim var, yıllardır var, uzun yıllardır var.
+
+283
+00:46:12,320 --> 00:46:18,200
+Öte yanda bir zincirin gücü o zincirin en zayıf arkası kadardı.
+
+284
+00:46:19,059 --> 00:46:23,280
+Artık büyük bilgi sistemleri yazıyoruz, kodluyoruz, hazırlıyoruz.
+
+285
+00:46:24,400 --> 00:46:34,539
+Kodun bir kod parçasının 5 milisaniyede çalıştırılması ile 8 milisaniye arasında çalıştırılması arasındaki 3 milisaniyeli fark.
+
+286
+00:46:34,539 --> 00:46:46,539
+Büyük olasılıkla bu servisler web üzerinde veya ağ üzerinde farklı farklı sunuşlardan farklı servislerinden yararlanması gerektiğinden ortaya çıkacak ağ geçmesini karşısında...
+
+287
+00:46:47,059 --> 00:46:48,340
+Önemsiz kalacaklardır.
+
+288
+00:46:49,559 --> 00:46:58,019
+O yüzden ve ayrıca sürekli her sene işlem güçleri katlanarak, artarak ilerlemekte.
+
+289
+00:46:58,019 --> 00:47:06,059
+Bu nedenlerle artık taşınabilirliğe ve güvenliğe daha çok önem atfediliyor.
+
+290
+00:47:06,440 --> 00:47:07,619
+Bu yüzden eğilim bu şekilde.
+
+291
+00:47:09,396 --> 00:47:23,896
+Java ortamında derleyicim prosesimizin adı Java.exe bu C compiler'dan geliyor. Ve yine Java terminolojisinde yorumlayıcımızın adı Java sanal makinesi, Java Virtual Machine.
+
+292
+00:47:24,947 --> 00:47:30,507
+Java ile kod yazıp çalışabilmek için JDK'ya ihtiyacımız var.
+
+293
+00:47:30,507 --> 00:47:39,067
+Bu derleyiciyi ve ihtiyaç duyabileceğiniz diğer çeşitli gereçleri içermektedir.
+
+294
+00:47:39,487 --> 00:47:45,507
+Değişik JDK dağılımları seçimlik olarak NetBins ile birlikte dağıtılmaktadır.
+
+295
+00:47:46,687 --> 00:47:48,587
+Şu an artık o kadar yakın değiller ama.
+
+296
+00:47:49,076 --> 00:48:16,576
+İrginci yaparınız için de söyleyeyim onu. Sizin kod yazabilmeniz ve çalıştırdığınız için CDK'ya ihtiyacınız var. Ama kodu çalıştıracak ya da yazdığınız yazılımı dağıtacağınız müşterilerinizin CDK'ya ihtiyacı yok. Onların sadece Java sanal makinesine ihtiyacı var. O oldu mu onlara yetiyor. CDK kendi içerisinde CRE'yi de içeriyor. Böyle bir dağılım söz konusu.
+
+297
+00:48:19,347 --> 00:48:38,927
+Şimdi saati 10'a 10 kadar yapmışız. İsterseniz bir 10 dakika aramızı verelim şu anda. Ondan sonra ben biraz daha Java ortamından filan tercih edeceğimiz ideden filan filan bahsedeceğim. Örnekler ve internet tutunlar açık şuradan şunu indiriyorsunuz diyerekten.
+
+298
+00:48:39,295 --> 00:48:55,096
+şey edeceğim. Bu bir ders saatini sığabilirdi, sığınmayabilirdi ama nihayetinde konuları ilerlemeye devam edeceğim. O yüzden enerjimizi biraz idareli kullanalım. On dakika aramızda veriyorum arkadaşlar.
+
+299
+00:48:58,931 --> 00:49:01,011
+10.00 arasında ara veriyorum.
+
+300
+00:49:01,491 --> 00:49:07,751
+Sadece kameramı kapatacağım ve sesi kısaca 10 dakika sonra kaldığımız yerden devam ederiz arkadaşlar.
+
+301
+00:59:23,411 --> 00:59:27,572
+Arkadaşlar, 10 dakikayı doldurduk. Kaldığımız yerden devam edelim.
+
+302
+00:59:28,311 --> 00:59:31,331
+Şimdi ben özellikle WhatsApp grubu kurmuyorum arkadaşlar.
+
+303
+00:59:31,331 --> 00:59:37,532
+Ama pardon, isterseniz kendi aranızda yazışıp grup kurabilirsiniz.
+
+304
+00:59:39,072 --> 00:59:40,632
+Yani hayal bir süre kalmış.
+
+305
+00:59:42,072 --> 00:59:44,291
+Yoksa ben özel grup kurmuyorum.
+
+306
+00:59:45,231 --> 00:59:49,911
+Yani bu WhatsApp zaten hayatımızın içine dibine kadar girdi.
+
+307
+00:59:50,416 --> 00:59:52,876
+Yani çok fazla kişi olduk.
+
+308
+00:59:52,876 --> 00:59:55,716
+Ben WhatsApp üstünden pek tercih etmiyorum.
+
+309
+00:59:56,456 --> 01:00:03,316
+Yani kaçınamadığım gruplarım var elbette ama bir de ders için WhatsApp'ı ben kurmuyoruz.
+
+310
+01:00:03,576 --> 01:00:06,796
+Arkalarınızda kurmanız genelde olabilir size.
+
+311
+01:00:11,188 --> 01:00:24,648
+Şimdi, değişik Java sürümlerinden bahsetmek istiyorum size. Bu sırada biraz dilin tarihsel gelişiminden de, sahipliğinden de bahsetmiş olacağız.
+
+312
+01:00:25,928 --> 01:00:35,248
+Java ilk 1.0 sürümü ile temel nesne yönelik özellikleri, kazanları karşılayan bir dil olarak
+
+313
+01:00:36,340 --> 01:00:47,320
+Önce bir dikkatçüsünü topladı. O zaman da genel olarak verilen karar, promising, ümit verici bir dil olacağı idi.
+
+314
+01:00:47,891 --> 01:01:05,731
+Şimdi Java aslında ilk zamanlarında bu 1.0 sürümü dedikti. Sun Microsystems adlı firmanın bir ürünüydü. Sun Microsystems aslında çeşitli sunucu ve haberleşme donanımları ile bilinir.
+
+315
+01:01:07,380 --> 01:01:19,380
+Kendi yüksek performansı ve yüksek availability, high-gradedum diye tabir edilen özelliklere sayf sunucular üretildi.
+
+316
+01:01:20,200 --> 01:01:23,160
+Farklı cihazlar da üretildi.
+
+317
+01:01:34,387 --> 01:01:41,548
+Bu sunucu donanımlarını ve workstation iş istasyonlarını koştuğu çalışmalarıdır.
+
+318
+01:01:42,003 --> 01:01:54,683
+Ben de bir süre bu SAN cihazlarla sunucu ve Workstation düzeninde çalışma satı buldum. Kendine has bir Unix dağıtım. Aynı kralına girmeyeyim.
+
+319
+01:01:55,423 --> 01:02:04,003
+Peki neden temel olarak donanım ürünleriyle bilinen bir firma bir programlama dili ortaya çıkardı? Sebebi de şu.
+
+320
+01:02:05,588 --> 01:02:21,608
+Geniş bir donanım yer partisine sahip olan SAM firması, aynı zamanda team client'lar, status kutular ve network üzerinden sürekli birbiri konuşma ve haberleşme içerisinde bulunan
+
+321
+01:02:22,771 --> 01:02:45,771
+En yüksek tarafta çok çekirdekli, çok işlemceli, risk işlemceli soru sunucularından, en altta tinkalantlara, setüstü kutulara ve o zaman çok fazla yeteneği olmayan cep telefonlarına kadar çok geniş bir donanım yer parazesine hitap edebilecek bir...
+
+322
+01:02:46,356 --> 01:02:53,235
+Programlama diline sahip olmak istedik ki kendi ekosistemini kurup daha da genişletebilsin.
+
+323
+01:02:54,456 --> 01:03:05,956
+Şey buydu, olay buydu ve slogan da Right Ones Run Anywhere. Bir kere yaz her yerde koştu şeklinde bir sloganla devreye girdi.
+
+324
+01:03:08,436 --> 01:03:20,836
+Tabii bu dili ortaya çıkartırken kapalı bir dil olarak ortaya sunsa katılımcısının, destekçisinin çok az olacağının farkındaydı.
+
+325
+01:03:20,836 --> 01:03:36,436
+Sanda daha çok donanım ağırlıklı bir kurum olarak dikkati çekmekle birlikte Java'nın oluşturulmasında çalıştırıldığı ekip gayet iyi bilgisayar.
+
+326
+01:03:36,436 --> 01:03:38,336
+bilimci ve yazılımcılardan oluşan bir şey.
+
+327
+01:03:38,367 --> 01:03:48,108
+Neyse, güzel bir dil olarak Java 1.0'a çıkardılar ama ilk sürümüyle tabii daha henüz yetersizdi. Biraz daha proof of concept gibi çalışıyordu.
+
+328
+01:03:48,108 --> 01:04:06,367
+1.1 sürümünü bir süre sonra geliştirdiler. Dinin yetenekleri, sınıf kütüphanesi biraz daha arttı. Ama hala yani gündelik olarak sektörde kullanılan bilgi sistemleri oluşturmakta falan yani ağır sıklet uygulaması.
+
+329
+01:04:06,367 --> 01:04:09,088
+Bu uygulamalarda daha hala yeterli değildi.
+
+330
+01:04:10,547 --> 01:04:38,547
+Ki bu arada şeyden de azıcık bahsedeyim, bu Java dili açık kaynak bir dildir. Şöyle ki, tek sadece ve tek sanık kontrolünde olmadı, ola gelmedi. İsteyen herhangi bir bireysel veya kurumsal katılımcı Java'nın Java komünitesine üye olabilir ve dilin...
+
+331
+01:04:38,547 --> 01:04:49,367
+İlerlemesinde bir söz sahibi olabilir. O yüzden Java hiçbir zaman için sanın tek diktesinde ve kontrolünde olmadı.
+
+332
+01:04:49,775 --> 01:05:12,275
+Microsoft'un, .NET platform'unun aksine. Ama gerçi şu an onların da çok haksızlık etmemek lazım. .NET platformu da bu olayı görüp Linux gibi farklı işletim sistemleriyle açık kaynak olarak birlikte çalışabilirliği ilan etmek için Mono adlı projelerini epey bir ilan ettiler.
+
+333
+01:05:13,460 --> 01:05:19,119
+Ama yine de hala Microsoft desteği kesti mi olay yürümüyor.
+
+334
+01:05:19,119 --> 01:05:31,460
+Fakat Java'nın, san veya artık yeni sahibiyle Oracle, ben fişini çektim dese bile OpenJDK ortaya çıktı.
+
+335
+01:05:31,920 --> 01:05:40,199
+Ve OpenJDK, normal JDK'nın üst kümesi olarak hala kullanılmaya devam edilebilir ve edilecektir.
+
+336
+01:05:40,279 --> 01:05:41,440
+Çünkü tamamen açık kaynak.
+
+337
+01:05:41,460 --> 01:06:08,779
+Ayrıca yani belirli bir firmanın sabit sıkı kontrolünde olmaması ve gerek yazılım geliştirmeye yarayan araçlar, ideler, gerekse bir yazılım yaşam dönemlüsünün farklı adımlarında kullanılabilecek gereçlere desteklenmiş olması ve bunların çoğunluğunda açık kaynak olması sebebiyle
+
+338
+01:06:09,268 --> 01:06:13,687
+Java hala genel olarak tercih edilen bir dil.
+
+339
+01:06:13,687 --> 01:06:20,827
+Şimdi [öğrenci] demiş ki, orakıl kişisel kullanım dışında lisans ürün haline çevirmedi mi Java'yı diyor.
+
+340
+01:06:21,527 --> 01:06:24,907
+Şimdi, Java kodunun kendisi değil.
+
+341
+01:06:25,684 --> 01:06:50,804
+Fakat Java Application Server üzerine bazı kısıtlamalar koymuş olabilirler. Ama dediğim gibi Java Application Server tek seçenek değil. IBM, Apache'nin bazıları tamamen özgür yazılım olarak alternatifleri söz konusudur. O yüzden Oracle, SAN'ın tek sahibi değildir kesinlikle.
+
+342
+01:06:53,684 --> 01:06:55,784
+ufak bir fark oldu.
+
+343
+01:06:56,844 --> 01:07:09,824
+Fakat bunun büyük bir kurumsal firma olarak kendi yazım süreçlerinizde verdiğiniz hizmetlerde Java'nın nasıl ve hangi miktarla lisanslandığını bilmiyorum.
+
+344
+01:07:09,824 --> 01:07:11,644
+O ayrıntıya hakim değilim.
+
+345
+01:07:11,764 --> 01:07:14,564
+Çünkü tarihinde benim bir yazım ve müvekünüm yok.
+
+346
+01:07:22,164 --> 01:07:44,423
+Birden belli bir çekirdek sayısından daha geniş, diyelim ki 100 çekirdekli bir sistemle Java üstüne çalışan bir kod yazılıyorsa bununla ilgili bazı lisanslama konuları olabilir. Onun dışında hala bir sıkıntı, bir dert olmadan Java'yı ticari projelerinize dahil edebiliyorsunuz.
+
+347
+01:07:48,724 --> 01:08:06,443
+Dediğiniz gibi açabiliyorsunuz. Orada para vermeniz gereken. Google'sa ya da başka bir şeyse onların App Store'larına pay vermeniz sadece. O da satış hacmini geçmemişseniz sizden para almıyor gibi durumlar söz konusu.
+
+348
+01:08:06,771 --> 01:08:31,992
+O yüzden Java hala gayet açık ve serbest bir dil olarak kendisini gösteriyor. [öğrenci] teşekkür ediyor. Anlattıklarım yeterli olmuş herhalde. Dediğim gibi ticari kullanımı üstünde tam olarak lisans ücretleri falan bilmiyorum. Onları da zaten genelde halka açıkta duyurmuyorlar. Yazılım evleriyle sınmalar ve müzakere ettikleri şeyler olabilir.
+
+349
+01:08:34,739 --> 01:08:55,739
+Evet, biraz ön bilgi vermiş olduk. Şimdi anlatıp sıramına geri dönmek istiyorum. Sonra Java'nın 1.2 sürümüyle birlikte dilin epey zenginleştirdiler. Birlikte gelen sınıf kütüphaneleri çok yeteneklendi. Ve artık 1.2 sürümüyle birlikte Java pratik olarak...
+
+350
+01:08:56,819 --> 01:09:06,279
+Yazılım geliştirme sektöründe tercih edilebilecek bir ana dil ve ana platform haline geldi. Bir nokta küsurumuyla birikti.
+
+351
+01:09:08,279 --> 01:09:14,959
+Bu gelişmeyi herhalde pazarlama ekibi diye düşünüyorum.
+
+352
+01:09:16,627 --> 01:09:39,028
+Fırsat olarak gördü ve Java'nın 1.2 sürümünde biz artık buna Java 2 diyeceğiz dediler. Java 2 platform olarak lanse ettiler. Ama yani güzel kardeşim, yazılımın normal sürümlendirme versiyonundaki dijitlerde ilk basamak ana versiyon, ikinci basamak ad versiyon.
+
+353
+01:09:39,444 --> 01:10:04,704
+Java 2 deyince biz onu 2.0'lı zannedebiliriz. Ama aslında Java 1.2. 1.2 nerede? 2.0 nerede? 1.2'den 2.0'a geçiş bir ana sürüm geçişidir. Ama halbuki 1.1'den 1.2'ye geçiş bir ana sürüm geçişidir. Teknik olarak çok yanlış bir tercihtir ama öyle yaptılar.
+
+354
+01:10:06,195 --> 01:10:21,835
+Neyse, peki. Birçok kişi ama bundan hoşlanmadığı için, Java'nın kendi web sitesinde ve çeşitli teknik dokumentasyonunda bile birçok yerde 1.2 olarak adlandırılmaya devam etti.
+
+355
+01:10:22,707 --> 01:10:39,927
+Baktılar ki Java 2 diye çok şey demeyeceğiz. Her teknik insanlara Java 2'yi çok bastıramayacağız. İki adlandırma kanalı olaraktan hep iki adlandırma olarak devam etti. Devam ede geldi inşallah.
+
+356
+01:10:41,939 --> 01:10:58,420
+Peki, aladan bir süre geçti, bir nokta üstü mü çıkacak, ne diyeceklerdi? Java 3 mü diyeceklerdi? Bu iyice abartmak olacaktı. Ne yaptılar? Dediler ki, Java 2, standart edişim 3 veya enterprise edişim 3 veya micro edişim 3 dediler edisyonuna göre.
+
+357
+01:10:59,091 --> 01:11:22,412
+Kısaltması da hani J2SE3 ya da J2EE3 gibi kısaltmalarla yine lanse etmeye devam ettiler. Ama teknik adlandırma hala arka planda 1.3 olarak da devam etti süre geldi. Teknik adlandırma kapanmadı hala. Her iki farklı adlandırma kanalında devam ediyor Java.
+
+358
+01:11:23,923 --> 01:11:51,923
+1.4 ve 1.5 sürümlerinde aynı taktiği uygulamaya devam ettiler. J2SE4 veya J2SE5 dediler. Şimdi Java'nın 1.5 sürümü de kritik bir sürümdür. Dile söz dizimi açısından da ve değişik yetenekler açısından da önemli geliştirmeler yapıldı. O yüzden Java'nın 1.5 sürümü kritik bir sürümdür. Siz herhangi bir yerde, herhangi bir Java kitabı...
+
+359
+01:11:51,923 --> 01:12:13,423
+Herhalde etmişseniz, hoşunuza da gitmişse bu kitap, bu kitapta çalışıp çalışmamaya karar vermenizi sağlayacak önemli bir etken, kitabın ilk sayfalarına bakın, Java'nın hangi versiyonunun üzerine anlatılan bir kitap, bunun 1.5 veya yukarısı olması gerekmektedir.
+
+360
+01:12:19,923 --> 01:12:27,484
+generic sınıf kullanımı ile ve for each döngüsü o şekilde yazılmıyor ama ileride göstereceğim.
+
+361
+01:12:27,843 --> 01:12:38,603
+Ya da extended for diye de tabi ettiğimiz for döngüsü ve generic sınıfla ve exception handling'deki küçük bir notasyon ek notasyon desteği var.
+
+362
+01:12:38,963 --> 01:12:45,743
+Bunları içecek ders noktalarımız. O yüzden bizim ders noktalarımız da 13.5 kökenlidir diyebilirim.
+
+363
+01:12:47,188 --> 01:13:05,667
+1.5 sürümünden itibaren dile, sentaks, söz dizimi ve kullanım açılarında eklemeler, geliştirmeler yapmaya başladılar. O yüzden bu 1.5 kritiktir. 1.6'da da bu konuda devam ettiler.
+
+364
+01:13:07,155 --> 01:13:15,296
+1.6'da adlandırmada değişikliğe gittiler artık. Şuradaki saçma sapan iki kelimesini atmaya başladılar artık.
+
+365
+01:13:15,916 --> 01:13:21,315
+Şurada artık şu programı izleyeyim. Artık 1.6 sürümüyle birlikte şöyle demeye başladılar.
+
+366
+01:13:21,315 --> 01:13:34,976
+Java Platform Standard Edition Version 6 dediler mesela. Kısaltması Java SE6 veya CSE6 oldu. Veya Enterprise Edition işte CEE6 oldu.
+
+367
+01:13:35,155 --> 01:14:00,155
+Bu 1.6 sürümü geliştirildiğinde ve çıktığında Oracle biliyorsunuz bir yazılım firması aslında. Sun Microsystems'ı satın almaya karar verdi. Kendisi de Oracle daha çok veritavım ve yazılım geliştirme ve 4. kuşak uygulama geliştirme araçları sağlayıcısı olarak da.
+
+368
+01:14:01,395 --> 01:14:16,335
+Donanım sektörüne de girmeye karar verdi. Ve Sun Microsystems'ı satın aldı. Tabii bu satın almanın bakkala gidip bir şey almak gibi olmuyor. Belli bir süreç içerisinde gerçekleşiyor.
+
+369
+01:14:16,948 --> 01:14:25,948
+1.6 sürümdeyken bu satın alma çalışmaları ve birleşme çalışmaları da satın alma çalışmaları devam ediyordu.
+
+370
+01:14:26,528 --> 01:14:31,308
+San tamamen San tarafından çıkan son sürüm 1.6 oldu.
+
+371
+01:14:31,308 --> 01:14:37,508
+1.7 sürümüyle artık tamamen Oracle denetiminde çıkan sürüm 1.7 idi.
+
+372
+01:14:38,128 --> 01:14:44,168
+Arada bazı endişeler olmadı değil işte artık lisanslanır mı, kapalı kaynak hale gelir mi falan filan.
+
+373
+01:14:44,948 --> 01:15:04,248
+Java'nın açık yönetim yapısını sürdürmeye devam ettiler. Adlandırma değişmedi. İşte JSE 7 oldu. Sonra Java 1.8, JSE 8 oldu. Şimdi Java 1.8'in önemli bir ayrıntısı var.
+
+374
+01:15:04,671 --> 01:15:21,351
+Legacy Systems diye geçen eski işletim sistemi ve eski donanımların desteklendiği Java sistemi Java 1.8'dir. Long Term Support versiyonlarından biridir.
+
+375
+01:15:23,636 --> 01:15:40,256
+Kaç sene geçmiş 1.8 çıkarı hala eğer güvenlik açıkları, performans problemleri, çeşitli buglar vesaire keşfedilmişse bunun mümkün olan en uygun kısa zamanda çözüldü ve güncellemenin halkı açık olarak.
+
+376
+01:15:41,011 --> 01:16:08,931
+Sağlandığı sürümü bu. Long Term Support. Ama legacy sistemler için. Güncel sistemler için olan Long Term Support versiyonu ise günümüzde an itibariyle Java 1.11 olmakta. Java 1.11 de Long Term Support'tu ama güncel ve 64 bit işlemci ve işletim sistemine sahip bilgisayarlar için Long Term Support.
+
+377
+01:16:09,011 --> 01:16:21,152
+güncel versiyonundur. Şimdi bu aradaki farktan biraz bahsetmek istiyorum size. Önce şu drawinglerimi çizeyim. Ondan sonra masaüstü paylaşımına dönmek istiyorum.
+
+378
+01:16:21,152 --> 01:16:27,431
+Orada hepsini kapattım. Şöyle masaüstü paylaşayım. Sadece şey demem lazımdı.
+
+379
+01:16:29,771 --> 01:16:31,731
+Şaşırsın. Ondan çıkayım önce.
+
+380
+01:16:32,611 --> 01:16:33,251
+Şimdi.
+
+381
+01:16:38,612 --> 01:16:44,772
+Bilgisayar doğramının temel noktası işlemcidir, mikro işlemcidir biliyorsunuz.
+
+382
+01:16:44,772 --> 01:16:56,971
+Mikro işlemcide komutlar ve veriler byte'lar şeklinde, aslında bitler ama 8 bit bir araya gelerek byte'lar şeklinde işlemini saklanabiliyorsunuz.
+
+383
+01:16:57,311 --> 01:17:06,612
+Ve işte hani farklı işlemci ailelerinde, farklı veri tözleri, işte örneğin tam sayılar, farklı byte uzunluklarında veriler olarak simbol edilir.
+
+384
+01:17:06,612 --> 01:17:29,772
+Simgelenirler. Komutlar da, makine helikopter, uygulama komutları da farklı uzunlukta, byte'lar ile simgelenirler. Nihayetinde bilgisayar sistemi, mikroşemcisi, belli ve diğer bütün donlu birleşenleri arasında binary veriyi byte'lar şeklinde çeşit alt birleşenleri arasında iletir. Sürekli bir veri yakışı vardır.
+
+385
+01:17:34,612 --> 01:17:58,612
+Kaç byte genişliğinde veya kaç bit genişliğinde yapıldığı önemlidir. Bu bir otoyoldaki şerit sayısına benzetilebilir. Belki dairsiz doğmadan önce üretilen, internet tarafından üretilen 80.386 işlemci yerleriyle birlikte aslında
+
+386
+01:18:00,212 --> 01:18:28,192
+32 bite ve daha sonraki yanlış hatırlamıyorsam Pentium işlemciyle 64 bite geçildi. Yani mikro işlemci aslında çok uzun yıllardır 64 bit veri yollarına sahip. Bazıları 128 bit veri yollarına sahip olanlar da baktım. Hani genel olarak en azından 64 bit veri yolu desteklenmekte. Fakat işletim sistemleri bu veri yolu genişliğini desteklemekte biraz daha ağır kalkılar.
+
+387
+01:18:28,212 --> 01:18:29,372
+Her neyse.
+
+388
+01:18:30,492 --> 01:18:40,152
+Halen günümüzde bile, hani biraz maliyet tasarrucu, cost saving için, 32 bit işletim sistemleri kullanımda olabiliyor.
+
+389
+01:18:43,507 --> 01:18:50,227
+32 bit işletim sistemiyle daha az bir bellek uzayını adresleyebiliyorsunuz.
+
+390
+01:18:50,448 --> 01:18:57,188
+64 bit işletim sistemleriyle daha geniş bir bellek uzayını adresleyebiliyorsunuz.
+
+391
+01:18:57,188 --> 01:19:02,847
+Eğer sizin bilgisayarınızda doğrumunuzda örneğin 4 GB'den olmasına rağmen,
+
+392
+01:19:03,247 --> 01:19:10,188
+eğer 32 bit işletim sistemi bulduysanız bilgisayarınızda 4 GB'ların hepsine erişemiyorsunuz.
+
+393
+01:19:11,507 --> 01:19:18,347
+3.2 sürede bir takım kalıyor çünkü 32 biti de en fazla o kadar bellek adresleyebiliyor işletim sistemi.
+
+394
+01:19:18,347 --> 01:19:23,228
+Siz bilgisayarınızda büyük ihtimalle 64 biti kulludunuz ama işletim sistemi.
+
+395
+01:19:23,567 --> 01:19:33,847
+Eğer Windows kullanıyorsanız hangi tür işletim sistemiyle sahip olduğunuzu öğrenmenin yolu bilgisayarın simünesinin üstünde sağ tıklık özellikleri girip
+
+396
+01:19:34,323 --> 01:19:40,803
+Orada çıkan sistem bölümünün altında sistem türünün yanında yazıyor.
+
+397
+01:19:41,163 --> 01:19:46,983
+Ben de diyor ki işte 64 bit işletim sistemi x64 tabağında işlemci, tet işlemci.
+
+398
+01:19:47,843 --> 01:19:53,003
+Bu şekilde söylüyor. Anlıyorum ki benim işletim sistemi 64 bit işletim sistemi.
+
+399
+01:19:53,003 --> 01:20:02,003
+Eğer siz bir 32 bit işletim sistemine sahip bilgisayarda çalışıyorsanız sizin kullanmanız gereken Java sürümü
+
+400
+01:20:02,100 --> 01:20:11,100
+1.8. Ama 64 bit bir işletim sistemine sahip bir bilgisayarda çalışıyorsanız o zaman...
+
+401
+01:20:12,500 --> 01:20:20,139
+Şu an günümüzde ya long term support'a sahip olan Java 1.11'i kurabilirsiniz.
+
+402
+01:20:20,799 --> 01:20:25,599
+Veyahut da şu anki en güncel versiyonuna 1.15'i kurup indirebilirsiniz.
+
+403
+01:20:26,159 --> 01:20:37,420
+Eskiden güncel versiyon 1.12'dir. Sonra 1.13 oldu. Sonra 1.14 oldu. Şu an 1.15 en güncel versiyon.
+
+404
+01:20:39,123 --> 01:21:07,123
+İlla en güncel versiyonunu kullanılsa gerek yok. Ben şu an JDK11'deyim. Çünkü kullanmam gereken bazı Java diliyle yazılmış bazı yazılımlar, JDK11'de ihtiyaçları var. O yüzden ben 1.11'de kaldım. Daha ben de 1.15 kurmuştum. Ama diğer sözünü ettiğim programla kullanmam gereken için 1.11'e döndüm.
+
+405
+01:21:12,243 --> 01:21:19,243
+Siz istediğinizi şeydebilirsiniz, kurabilirsiniz. Bu arada işte bu güncel versiyon 6 ayda bir yenisi çıkıyor.
+
+406
+01:21:20,023 --> 01:21:26,583
+Yani bu demektir ki senede iki kere. Mesela bundan en fazla 6 ay sonra 1.16 çıkacak mesela.
+
+407
+01:21:27,223 --> 01:21:33,503
+1.11 veya 1.15 buldunuz. 1.16'ya geçeyim mi? Hiç gerek yok. Kesinlikle gerek yok.
+
+408
+01:21:34,963 --> 01:21:41,564
+Arasında bizim temelimiz. Yani 1.65 odaklı her iki ders ilerletiyoruz.
+
+409
+01:21:42,003 --> 01:21:53,463
+Ama tabii ki burada önemli olan hem kullandığınız JDK versiyonu hem de kullandığınız İDE'nin de o JDK'yı destekleyip desteklememesi de önemli bir soru işareti.
+
+410
+01:21:53,884 --> 01:21:56,944
+Şimdi bir sonraki adımda da ondan da bahsedeceğim.
+
+411
+01:22:00,020 --> 01:22:05,460
+Örnek olarak diyelim ki 32 bitki bir işletmesine sahipsiniz. O yüzden 1.8'i koltuğunuz.
+
+412
+01:22:06,160 --> 01:22:09,280
+Şimdi versiyonlama ayrıntısına biraz daha girmek istiyorum.
+
+413
+01:22:09,280 --> 01:22:16,980
+1.8 aslında 4 basamaklı bir versiyonlaması ola geldi Java dilinin.
+
+414
+01:22:17,640 --> 01:22:20,640
+Üçüncü versiyon basamayı sıfırda kaldı.
+
+415
+01:22:21,040 --> 01:22:28,020
+Ben Java'yı kullandığım süre boyunca, 2003'den boyunca, yani 2003'den beri, şuradaki üçüncü basamayı...
+
+416
+01:22:28,020 --> 01:22:30,680
+Sıfırdan farklı bir değer aldığını görmedim.
+
+417
+01:22:34,860 --> 01:22:43,780
+Ama dördüncü basamak, kimi zaman çok sık aralıklarda, kimi zaman biraz daha yavaş aralıklarda değişmekte.
+
+418
+01:22:44,500 --> 01:23:08,359
+Bu son dördüncü basama update diye adlandırıyorlar. Bu updateler küçük hata düzeltmeleri ve güvenlik alanındaki bazı açıklarının kapatılmasına yöneliktir. Ve işte seninde birkaç kere yeni update çıkabilmektedir. Yeni update çıkınca siz de ona geçmek zorunda kesinlikle değilsiniz.
+
+419
+01:23:09,779 --> 01:23:37,579
+Fakat, şey, JDK kurduğumuzda JRE de kuruluyor ve JRE her yeni update de, Java'nın yeni bir update çıkmış güncelleyi mi diye soruyor ondan sonra. Direkt o yaraları kapatın ayarlardan. Hiç gerek yok. Ayrıca şöyle bir durum da var. Diyelim ki bilgisayarınızda 1.1109'u kurdunuz. Birkaç hafta sonra 1.11.0.10 çıktı.
+
+420
+01:23:37,779 --> 01:23:49,019
+0.10'u indirdiğinizde eğer doğrudan kurarsanız bir önceki versiyonu kaldırmadan yeni versiyonu kuruyor.
+
+421
+01:23:49,779 --> 01:23:54,719
+Boşuna birden fazla acil versiyonu oluyor. Boşuna yer harcamış oluyorsunuz.
+
+422
+01:23:54,719 --> 01:24:04,639
+O yüzden eğer yeni update'e geçecekseniz de önce eski JDK'yı tamamen kaldırıp ondan sonra yenisini kurmanız gerekmektedir.
+
+423
+01:24:05,652 --> 01:24:08,631
+Bütün bu uğraşa gerek var mı? Kesinlikle gerek yok.
+
+424
+01:24:10,011 --> 01:24:20,051
+İndirin 1.11'i veya 1.15'i. Kafanız rahat etsin. Mezun olana kadar rahatlıkla o süreç kullanmaya devam edebilirsiniz arkadaşlar.
+
+425
+01:24:20,471 --> 01:24:24,231
+Çok çok spesifik bir bitirme projesi konusuna düşmediyseniz.
+
+426
+01:24:28,532 --> 01:24:29,832
+şey bu, durum bu.
+
+427
+01:24:30,592 --> 01:24:33,192
+Şimdi Java'yı nerede indireceğiz? Nasıl indireceğiz?
+
+428
+01:24:34,352 --> 01:24:36,231
+Bir onları göstermek istiyorum şimdi size.
+
+429
+01:24:37,092 --> 01:24:39,272
+Yalnız şuradan söyleyeceğim bir şey kaldı mı?
+
+430
+01:24:39,712 --> 01:24:40,452
+Kalmadı, tamam.
+
+431
+01:24:42,912 --> 01:24:44,612
+Şimdi, adres,
+
+432
+01:24:46,692 --> 01:24:47,832
+slash Java
+
+433
+01:24:47,832 --> 01:24:50,731
+Başlangıç noktamız bu.
+
+434
+01:24:52,272 --> 01:24:55,532
+Bir aralar bu site fun'ın tasarımı çok değişiyordu zırt pırt.
+
+435
+01:24:56,180 --> 01:25:12,800
+Ayrılızı tehdit ediyormuş. O an sonra Türkiye'ye geçmeme hiç kesinlikle gerek yok. Bu sayfanın tasamı çok sık değişiyordu. Bir sürede sabit. Yarın günü tekrar zıplık değişmeyeceğinin garantisi yok elbette ama şu an itibariyle downloadacağım ve tıkladığımızda.
+
+436
+01:25:14,612 --> 01:25:24,556
+Size Java'nın şu an kullanıma açık olan sürümlerinin listelendi. İndirme sayfası geliyor. İsterseniz Java 15'i...
+
+437
+01:25:24,948 --> 01:25:46,948
+İndirin. CDK downloadunu tıklayın. İsterseniz Java 11'in downloadunu tıklayın. Veya işte 32 bit ise zaten indirmeniz gereken Java 8'in downloadu. Bunu indirin. Bunu indirdiğinizde...
+
+438
+01:25:47,636 --> 01:25:51,296
+Yani bu sadece JDK içermektedir, bir IDE içermemektedir.
+
+439
+01:25:52,296 --> 01:26:04,956
+Çin, Java'nın 1.5, 1.6 sürümleri zamanlarında Oracle bu NetBeans komünitesini ki o da bir şey açık kaynaklı ya da satın almıştı.
+
+440
+01:26:04,956 --> 01:26:08,556
+Veya temel sponsoru olmuşlu diyebiliriz belki bir tabiri.
+
+441
+01:26:08,916 --> 01:26:15,596
+O yüzden işte NetBeans'i ya da NetBeans'i dağıtımını seçmek gibi bir alternatifiniz vardır.
+
+442
+01:26:15,636 --> 01:26:29,976
+Ben de her zaman şimdi derdim ki siz sadesini indirin. Sonra üstüne net mis istiyorsanız net misi son sürümlü kum indirin kum derdim. Şu an zaten sadece JDK'yı indiriyorsunuz.
+
+443
+01:26:34,996 --> 01:26:57,936
+Executor bir dosyadır. Default önerdiği pete, yola, yere kurabilirsiniz. Ben alışkanlık olarak biraz daha bazen komut satırı çalışma gereksinimlerinden dolayı ben JDK hangi sürmese örneğin 11 için J, J'nin hard diskinin altında direkt JDK 11'de bir klasör açarak JDK'ımı oya kurarım.
+
+444
+01:26:57,936 --> 01:27:02,936
+JRE'yi de program files altında kurmaya devam edebilirim.
+
+445
+01:27:02,996 --> 01:27:04,536
+şeklinde nextlik geçer.
+
+446
+01:27:06,616 --> 01:27:11,196
+Daha evvelden JDK 15 kurmuş olduğumu görüyorsunuz ama ondan sonra onu kaldırıyorum.
+
+447
+01:27:11,196 --> 01:27:13,356
+Şu an JDK 11 kullanıyorum.
+
+448
+01:27:14,716 --> 01:27:18,796
+Videonun 10. sürümünden yine epey de bir süredir.
+
+449
+01:27:19,236 --> 01:27:21,496
+Artık sadece bunu kurmanız yeterli.
+
+450
+01:27:21,796 --> 01:27:24,236
+JDK kurumunu çalıştırmanız yeterli.
+
+451
+01:27:24,876 --> 01:27:30,676
+Kulmuk satırından çalışmak için gerekli bütün alt tanımları kendisi yapıyor kurulum dosyası.
+
+452
+01:27:30,996 --> 01:27:49,096
+O yüzden doğru kurulup kurulmadığını test etmek için bir tane komut satırı islamcısı alıyorsunuz işletim sisteminden ve diyorsunuz ki işte Java version yani Java sanal makinesine versiyon parametreni bildir anlamında parametreyi veriyorsunuz.
+
+453
+01:27:58,996 --> 01:28:00,536
+ile kurulmuş oldu.
+
+454
+01:28:02,156 --> 01:28:05,136
+Ve işte 1.0.9.7
+
+455
+01:28:05,136 --> 01:28:06,856
+bunu böyle anlayın.
+
+456
+01:28:06,856 --> 01:28:07,756
+Ondan sonra cevap.
+
+457
+01:28:08,056 --> 01:28:10,856
+Ve hotspot, işte bu byte kodu
+
+458
+01:28:10,856 --> 01:28:14,456
+çalıştırmadan önceki optimizasyon süreci ki bu
+
+459
+01:28:14,456 --> 01:28:16,276
+şeye kadar dayanıyor. Yani
+
+460
+01:28:16,276 --> 01:28:21,196
+1.2'ye kadar dayanıyor. O kadar bir epey bir geçmişi var.
+
+461
+01:28:21,516 --> 01:28:22,516
+Bu hotspot da o.
+
+462
+01:28:23,276 --> 01:28:25,636
+Önce optimize ediyor. Ondan sonra
+
+463
+01:28:25,636 --> 01:28:26,996
+yolunlayarak çalışıyor.
+
+464
+01:28:26,996 --> 01:28:51,636
+Bu şekilde bir çıktığı gördüyseniz tamam, CDK'yı düzgün olarak kurmuşumuz demektir. Ama diyelim ki siz doğru kurulduğunuzu düşünüyorsanız fakat şu komut gelmiyor. O zaman belki de işte Java komut satırı gereçlerinin yolu doğru olarak sisteme tanıtılmamış olabilir belki. Onun için de şöyle yapıyorsunuz.
+
+465
+01:28:51,920 --> 01:29:11,160
+bilgisayarın üstünde saat 40 özellikler deyip, gelişmiş sistem ayarları deyip, ortam değişkenlerine tıklayıp, ister kendi kullanıcınız için, ister sistem düzeyinde PET değişkenini düzenle deyip, buna bir tane yeni bir yol ekliyorsunuz.
+
+466
+01:29:19,444 --> 01:29:22,824
+Nerede o? Şu an kapatmışım onu. Tamam, tekrar açayım.
+
+467
+01:29:25,764 --> 01:29:32,044
+Bu CDK'yi kurmuş olduğunuz dizindeki bin dizinin yolumuz burası.
+
+468
+01:29:32,364 --> 01:29:36,144
+Ki ben şöyle adres çubuğunu tıkladığımda zaten o yol şu an seçildi.
+
+469
+01:29:36,244 --> 01:29:43,024
+Ctrl, C ile kopyalanıp andan sonucuma buraya bir yere eklenebilecek hale geldi.
+
+470
+01:29:44,243 --> 01:29:59,243
+Bu şekilde yine deyip onu da şuraya yazabiliyorsunuz. Ki aslında şu daha genel bir terim. İşte bu program faresinin altına böyle bir kısa yola aslında nereye bulduğunuzun değerini oradaki bir sembolik linke yazıp...
+
+471
+01:30:00,000 --> 01:30:08,059
+Sizin buraya ayrıca pet ekleminize gerek bıraktırmıyor. Birkaç versiyonunuz. O açıdan bir sıkıntı yok.
+
+472
+01:30:08,319 --> 01:30:13,279
+Ama şunu da burada görüyorsanız, buna rağmen CLK çalışmıyorsa bir problem vardır demektir.
+
+473
+01:30:13,639 --> 01:30:19,219
+Önce bir denetim arasından kaldırın, bilgisayarınızı yeniden başlatın, ondan sonra tekrar kurup kurulabileceğini düşünüyorum.
+
+474
+01:30:20,115 --> 01:30:21,376
+O noktadan itibaren.
+
+475
+01:30:22,015 --> 01:30:23,355
+JDK'nın durumu bu.
+
+476
+01:30:23,956 --> 01:30:28,015
+Şimdi yalnız sadece JDK'yı kurmakla kalmayın arkadaşlar.
+
+477
+01:30:28,636 --> 01:30:30,716
+JDK dokumentasyonunu da kurun.
+
+478
+01:30:30,716 --> 01:30:32,916
+Bunu istediğiniz biri kurabilirsiniz.
+
+479
+01:30:33,376 --> 01:30:43,576
+Ben alışkanlık olarak JDK'yı nereye kurduysam orada açılacak olan bir docs class'ını kurmayı alışkanlık haline getirdim.
+
+480
+01:30:43,996 --> 01:30:47,155
+Gerçi Java Dokumentation online de mevcut.
+
+481
+01:30:48,115 --> 01:30:50,475
+İsterseniz, o eleştirebilirsiniz.
+
+482
+01:30:52,555 --> 01:30:57,376
+Ama, her zaman için, bir ağır bağlı olamayabilirsiniz.
+
+483
+01:30:57,836 --> 01:31:03,456
+3G bağlı tutukalım derseniz, kotanız şeydir belki, azalmaya başlamıştır.
+
+484
+01:31:03,456 --> 01:31:05,435
+Ondan sonra, o yüzden,
+
+485
+01:31:07,115 --> 01:31:10,376
+o yüzden,
+
+486
+01:31:11,091 --> 01:31:39,072
+Ya mesela babak için sayfada ufak bir problem var mesela yani. O yüzden her zaman için bu dokumentasyonu yerinize ayrıca indirmeniz yararlıdır. Onu da hemen altındaki hangi Java sünnetini indirdiyseniz onun download'un altındaki linkten de documentation'ı indirin. Bu aslında bir sıkıştırılmış dosya. Extract ediyorsunuz. Zaten zip dosyasının içerisinde tek bir klasör yer alıyor. Docs klasörü direkt extract ettiğiniz.
+
+487
+01:31:39,091 --> 01:31:49,411
+jdk'ye kuduğunuz yere dükkümentasyon oraya açılmış oluyor. API'nin altında index seçeneğine tıkladığınızda
+
+488
+01:31:51,155 --> 01:31:59,376
+Biz temel olarak Java Base üzerinden, Java'nın ana temel bileşenleri modülü üzerinden gideceğiz.
+
+489
+01:31:59,876 --> 01:32:09,155
+Java Base'i tıklıyoruz. Java Base'i tıkladığımızda Java dilindeki temel bütün paketleri listelendiğini görüyorsunuz.
+
+490
+01:32:10,068 --> 01:32:18,847
+Sınıf kitaplıklarına paket diyoruz. Siz de kendi yazacağınız sınıfları da paketler altına toplayabilirsiniz. Göstereceğim önümüzdeki ders veya bir sonraki hafta.
+
+491
+01:32:19,568 --> 01:32:24,927
+Örneğin, input asus işlemleriyle ilgili paketimiz Java.io bununla çalışıyor olacağız.
+
+492
+01:32:25,768 --> 01:32:32,728
+Java.lang paketi import etmenize, dahil etmenize gerek olmayan tek paket çünkü zaten otomatik olarak ekleniyor.
+
+493
+01:32:33,728 --> 01:32:36,347
+Java'nın en temel çekirdik özellikleri bu.
+
+494
+01:32:37,247 --> 01:32:47,467
+Paketin içerisinde. Köşkü matematik işlemleriyle ilgili sınıflar ve metotta işlenen paket Java Math paketi. Örneğin. Ondan sonra ne bileyim.
+
+495
+01:32:49,619 --> 01:33:17,119
+Bazı paketler Java X diye geçer. Bu X, extended'dan X'dir ama ta JDK 1.2 zamanından gelen extended paketler var. Aradan 10 seneden fazla geçmiş. Hala extended mı? Ama geriye doğru uyumluluğu kurmak için paket adını değiştiremiyoruz daha öyle. Java X paketi, Java X paketi olarak da geçmeye devam ediyor. Mesela Java JT paketini kullanacağız.
+
+496
+01:33:17,619 --> 01:33:31,479
+Çeşitli tarih işlemleriyle ilgili ondan sonra cemak, jenerik sınıflarla ilgili yapacağımız, çok sık yapacağımız bazı işlemler gibi vesaire önemli sınıflar içeren diğer bir paket mesela.
+
+497
+01:33:32,479 --> 01:33:35,679
+Örneğin işte Java Lank paketini tıklayalım mesela.
+
+498
+01:33:36,000 --> 01:33:45,420
+Buna tıkladığınızda o paket hakkında, o pakette tamamen ne gibi işlemlere yönelik sınıflar, bileşenler varmış, onlar hakkında bir genel bilgi veriyor.
+
+499
+01:33:48,659 --> 01:33:54,939
+Ondan sonra da bu pakette yer alan bütün arayüzleri, arayüz konusunda daha önümüzdeki sonraki haftalar diyeceğiz.
+
+500
+01:33:57,524 --> 01:34:15,344
+Tek tek listeliyor. Örneğin Java Lang paketinde Spring diye bir sınıfımız var. Karakter katarlarını simgeleyen bir sınıf. İlk haftalardan itibaren Spring türleri kullanmaya ve onların metotlarını kullanmaya falan başlayacağız. Giyelim şimdi içine.
+
+501
+01:34:16,467 --> 01:34:44,408
+Eğer bu sınıf bir kalıtım hiyerarşisi içindeyse onu liste ediyor. Kalıtım daha sonraki haftaların konusu. Sınıf hakkında ve sınıfın alt yapısı hakkında, arka planı hakkında bazı genel bilgiler veriyor. Ardından o sınıfla ilgili bütün üye alanları ve bütün üye önce kurucu metotları bir nesne oluştururken çağıran metottur. Önümüzdeki hafta çok dedikleyeceğiz bu constructor konusunu. Bazı metotlar deprecated oluyor.
+
+502
+01:34:44,467 --> 01:35:04,467
+Deprecated demek eskimiş demek. Örneğin, JS11'de şu an hala bu constructor destekleniyor fakat 12 sürümünde belki bu constructor artık kullanılmayacak. Deprecated olmanın sebebi de büyük ihtimalle...
+
+503
+01:35:05,716 --> 01:35:20,195
+Bazı şeyleri eksik yapması ve o eksikliğin düzeltilmesi için gerekecek çabanın daha da esnek olmayan tasarımlara yol açması nedeniyle onun yerine önerilen bambaşka bir yöntem önerilmektedir.
+
+504
+01:35:20,515 --> 01:35:24,296
+O yüzden eski kullanım şekli deprecated olarak işaretlenmiştir.
+
+505
+01:35:24,296 --> 01:35:33,296
+Siz de yaza gelmiş olduğunuz kodunuzdan bu deprecated metotlardan daha yeni çalışma biçimlerine taşımanız gerekmektedir.
+
+506
+01:35:33,716 --> 01:35:57,956
+Bunun bir işaretçisidir. Deprecated olarak işaretlenmiş metotlar ve kurucu metotlar. Ondan sonra mesela işte bir tanesine başka bir tane bakalım. Mesela compare tuttuğe bir metodu var işte. Başka bir stringi parametre olarak alıp metodu çağırdığınız için de parametre olarak gelen stringi karşılaştıran.
+
+507
+01:35:58,224 --> 01:36:02,283
+Söz dizimsel olarak, arfa ve sıraya karşılaştılar.
+
+508
+01:36:02,663 --> 01:36:03,583
+Ayrıntısını tıklıyorum.
+
+509
+01:36:03,984 --> 01:36:05,644
+Metodun bütün ayrıntılarını anlatıyor.
+
+510
+01:36:06,144 --> 01:36:14,003
+Ne işe yaralmış, aldığı parametre neymiş, ne zaman ne dönermiş, bütün bunları ayrıntıyla anlatıyor.
+
+511
+01:36:14,003 --> 01:36:18,043
+Şimdi tabii ki bir dil bu döküm atlasyondan öğrenilmez.
+
+512
+01:36:18,404 --> 01:36:18,963
+Kesinlikle.
+
+513
+01:36:19,503 --> 01:36:20,243
+Bir dil.
+
+514
+01:36:20,608 --> 01:36:27,507
+İşin güzel bir şekilde anlatıldığı kitabından öğrenilir, diğer kaynaklarından öğrenilir.
+
+515
+01:36:27,887 --> 01:36:36,167
+Fakat ders boyunca öğreneceğimiz temel yetenekler hangi paketlerle ilgili bu konuda bilgi birikiminiz olacak.
+
+516
+01:36:36,167 --> 01:36:48,608
+Daha sonra o konuyla ilgili bir şeyi nasıl yapacağınızı araştırmak zorunda kaldığınızda bazen bu konuları kitaplardan aramak, bulmak daha verimsiz olmakta.
+
+517
+01:36:48,608 --> 01:37:02,608
+Direkt tahmin edersiniz sınıfın adından. Ondan sonra metotların resmeninizde şu metotlar içime yarayabilir filan gibisinden tıklayıp bu şekilde içeriğine en ayrıntılı bilgiyle erişebiliyorsunuz.
+
+518
+01:37:03,307 --> 01:37:12,108
+O yüzden bunu bir kenarda, şeyde kaynılar birlikte, kullanın, açın, dursun şeklinde tavsiye ediyorum.
+
+519
+01:37:14,771 --> 01:37:26,852
+Yani özellikle önce bir JSI'yi indirin. Ondan sonra uygun JSI'yi indirin. Ya da JDK diyeyim. Ardından dokümentasyonu indirin. Ardından artık bir i de seçebilirsiniz.
+
+520
+01:37:29,747 --> 01:37:57,747
+Eskiden frameli bir dokumentasyon söz konusuydu. Yani ben hep böyle tık tık tık gittim ama yani paket listeleyince yeni sayfa açıldı. Aynı sayfasında bu sefer sınıflar listelendi. Daha evvel 3 frameli bir dizilim vardı. En üst tarafta paket adları listelemiyordu. Bir pakete tıkladığımızda altta o paketlik sınıflar listelemiyordu. Az önce bahsettiğim diğer ayrıntılarda...
+
+521
+01:37:57,747 --> 01:38:08,747
+daha büyük frame de gösteriliyordu. Ben onu seviyordum doğrusu ama bir süredir artık öyle yapmıyorlar bütün aktasyonu. Ne yapalım? Buna da alışacağız diye düşünüyorum.
+
+522
+01:38:12,148 --> 01:38:20,888
+İde olarak, dediğim gibi, istediğiniz idiyi seçebilirsiniz. Hiç önemli değil.
+
+523
+01:38:24,248 --> 01:38:27,208
+Ama ben Eclipse tercih ediyorum.
+
+524
+01:38:28,851 --> 01:38:36,851
+Artık Netminis'in JSE ile option olarak gelmişsiz söz konusu eskidendi. Onun düzeltini.
+
+525
+01:38:36,851 --> 01:38:48,671
+Eqtus olabilir, Netminis olabilir veya onun dışında Jcreators, IntelliJ, çeşitli ideler var. Herhangi birisi de olabilir. Sürekli kalmış hiçbir problem değil.
+
+526
+01:38:48,671 --> 01:39:00,071
+Ama ben derste örneklerimi Eclipse kullanmaktan yapıyorum olacak. O yüzden Eclipse'i nasıl indireceğinizi, nereden indireceğinizi de göstereyim.
+
+527
+01:39:01,991 --> 01:39:05,391
+Eclipse.org sitesinde indiriyorsunuz.
+
+528
+01:39:06,771 --> 01:39:20,171
+Pazartesi de erişilemiyordu. Hala erişilemiyor maalesef. Peki hala. Şöyle göstereyim. Sağ tarafta Download Equities çıkacaktı. Şimdi ben onu göstereyim size.
+
+529
+01:39:24,171 --> 01:39:29,491
+Equities.org slash download yazın bir de. Equities.org slash download.
+
+530
+01:39:30,112 --> 01:39:45,192
+Burada şimdi Eclipse farklı farklı yetenekler ve farklı farklı pluginlerle çok değişik özellikler kazandırılabilecek bir platform aslında. Çok zengin bir platform.
+
+531
+01:39:46,192 --> 01:39:57,732
+Java klasik standart JS uygulamaları geliştirmek için daha lightweight olarak da Eclipse for Java developers'ı önereceğim.
+
+532
+01:39:58,112 --> 01:40:07,092
+Hani şuradan ekliştiri de indirebilirsiniz ama biraz daha uzun sürecek bir download alacak.
+
+533
+01:40:07,471 --> 01:40:19,931
+Benim kullandığım, şurada Download Packages deyip, hele ki bir 32 bit bilgisayara serseniz zaten fonksörüm zaten sizin bilgisayarınızda çalışmayacaktır, çalışamayacaktır.
+
+534
+01:40:20,231 --> 01:40:26,071
+Her halükâdı. Önce bir şu az önce tıkladığım link olan Download Packages'ı tıklayın.
+
+535
+01:40:26,391 --> 01:40:33,471
+Bu sayfayı açmasına ne kadar soğuk olsaydı şuradaki şu kısım bileşen sağ tarafta yer alacaktı.
+
+536
+01:40:33,471 --> 01:40:34,851
+Şimdi burada yer alıyor.
+
+537
+01:40:35,471 --> 01:40:37,471
+Download Packages'i tıklıyorsunuz.
+
+538
+01:40:39,571 --> 01:40:44,891
+Burada Eclipse IDE for Java Developers. Bu yeterli. 321 MB.
+
+539
+01:40:45,631 --> 01:40:53,231
+Bir önceki sayfdakini tıkladıysanız şunu indirecektiniz. Eclipse IDE for Enterprise Java Developers. Bu 500 MB bir indirim.
+
+540
+01:40:54,484 --> 01:41:19,744
+Yani, si arayüzü sağlayan bir Eclipse IDE bile var ama tabii ki orada derleyici ayrıca indirmeniz ve bu IDE ile konuşuşabilir hale getirmeniz falan lazım. Mesela JavaScript developerlar için değişik sürümleri var falan. Ama bilmiyorum, tercih edilme edilmez mi? Ama JavaScript kodlayanlara sormak lazım. Bunu indirmeniz yeterli.
+
+541
+01:41:21,359 --> 01:41:22,559
+64 bit.
+
+542
+01:41:23,459 --> 01:41:24,999
+32 biti yok bile.
+
+543
+01:41:25,439 --> 01:41:30,279
+Eğer 32 bite ihtiyacınız varsa, normalde bu sayfada bulamıyorsunuz.
+
+544
+01:41:30,279 --> 01:41:33,459
+Daha eski sürümlere bir bakmak lazım.
+
+545
+01:41:33,899 --> 01:41:35,279
+2019'da desteklemiyordur.
+
+546
+01:41:36,219 --> 01:41:38,739
+Older versions tıklayalım.
+
+547
+01:41:39,499 --> 01:41:43,939
+Mesela bakalım şu 2018'in en eski sürümünü de destekliyor muymuş?
+
+548
+01:41:46,484 --> 01:41:54,623
+Biraz enteresan bir paket listesi geldi. Neon olabiliriz. O zaman da Neon kullandığımı hatırlıyorum.
+
+549
+01:41:55,123 --> 01:42:01,984
+R.C. List Candidate anlamındadır. Ondan sonucuma şu olabilir belki.
+
+550
+01:42:04,463 --> 01:42:10,884
+Evet mesela Eclipse Neon 3 paketlerinde bakın burada 32 bit seçeneği de gelmeye başladı mesela.
+
+551
+01:42:11,507 --> 01:42:37,867
+Bunun da Eclipse'i de for Java'da 161 MB'miş. Onun için de bunu indirebilirsiniz mesela. Ama zannediyorum herhalde etkisinin bilgisayarı 64 bitir diye tahmin ediyorum. Peki, Eclipse'i indiriyorsunuz. Eclipse'in ayrı bir kuruluma ihtiyacı yok. Bir zip dosyası iniyor sadece. O zip dosyasını istediğiniz yere extract ediyorsunuz. Ben nereye extract etmiştim? Belgelerime galiba.
+
+552
+01:42:41,043 --> 01:42:45,264
+Evet, belgelerinde Eclipse klasörünü extract etmişim.
+
+553
+01:42:45,623 --> 01:42:54,724
+Extract ettikten sonra direkt içerisindeki Eclipse 8'leri çalıştırarak da hideyi ayağa kaldırmış oluyorsunuz.
+
+554
+01:43:01,619 --> 01:43:07,820
+O yüklenirken, şu noktadan özellikle sormam gereken bir şey var mı? Bir anlayayım.
+
+555
+01:43:09,400 --> 01:43:13,099
+Peki. Şimdi ekran size biraz...
+
+556
+01:43:13,140 --> 01:43:35,940
+Kocamadan önce sonraki ders de yaparız. Bir de şimdi ben ders kapsamında, ders noktlarında bir durum UMLN şemaları çizmiş olduğunu göreceksiniz. İlerleyen yansılardan itibaren bakalım. Şuradan itibaren başlıyor. 14. yansıdan itibaren başlıyor. Çeşitli UMLN şemaları küçükten küçükten çizmeye başlamak. Ben bu şemaları neyle çizdim?
+
+557
+01:43:39,923 --> 01:44:00,164
+Uygulamayı geçirdim. Kendisi de küçük bir Java uygulaması aslında. Normalde kullanmanıza gerek olmayabilir mi? Fakat şimdi en azından proje ödevi yaparken eğer tasarımınızı anlatan bir UML sınıf şaması da çizim dersek o zaman sizin de UML şaması da çizme ihtiyacınız oluyor.
+
+558
+01:44:00,164 --> 01:44:07,923
+Ve hatta klasik kusurcu sınav yaptığımızda genelde UML şaması çizimini biz size sınav kapsamını...
+
+559
+01:44:07,923 --> 01:44:25,423
+Onu da hazır veriyoruz. Ama bazı ayrıntıları gizliyoruz. Onları daha sonra önerdeki haftalarda konuşuyoruz. Yani sizin doğrudan bir UML şaması, sınıf şaması çizmeniz gerekmeyecek büyük olasılıkla. Ama belki bir sequence derden çizmeniz gerekebilir.
+
+560
+01:44:27,283 --> 01:44:34,483
+Veyahut da size sequence diagramı veririz buradan Java kodu oluşturun da diyebiliriz. Öyle sorularımız olabiliyor.
+
+561
+01:44:34,483 --> 01:44:50,083
+Yani eğer bir UML aşaması çizmeniz gerekirse değişik araçlar var. Mesela DrawWire falan gibi var ya da değişik online chart tool'ları varmış ama hani tercih eden arkadaşlarım ister asla kullansınlar.
+
+562
+01:44:50,423 --> 01:44:54,483
+Fakat bu chart tool'larında UML notasyonuna ait şekiller.
+
+563
+01:44:55,283 --> 01:45:02,603
+bulunmayabilir. O yüzden benim önerim bu konuda eğer ihtiyacınız olursa Varlı Tüyemezdir.
+
+564
+01:45:03,252 --> 01:45:31,252
+Bunun da yerini göstereyim size. Ben biraz eski bir sürümünü kullanıyorum. Daha yeni sürümü çıkmış ama bazen eski sürümlerle oluştuğundan şemalarla ile ilgili geriye doğru uyumluluğa sahip değil maalesef. Ben de bu ders notlarını oluşturmak için bir dolu yana şemam var şimdi. Onları yeniden çizmekle uğraşamam hiç kusura bakmasınla. O yüzden eski versiyonunda ben kalıyorum. Ama ön yüz ve kullanım şekli tamamen...
+
+565
+01:45:31,252 --> 01:45:41,332
+Aslında bakın bir tane Java dosyası. Üstünde de Java'nın klasik ikonu olan kaynayan kahve var.
+
+566
+01:45:42,912 --> 01:45:49,972
+Class dosyalarını da bir araya getirip bir jar dosyası halinde paketleyip kullanıma sunabiliyorsunuz arkadaşlar.
+
+567
+01:45:50,412 --> 01:45:53,072
+Bu da öyle paketlenmiş bir uygulama.
+
+568
+01:45:53,072 --> 01:46:00,908
+Eğer JRE'yi, Jdk bileti, JRE kurulursak bilgisayarınızda, çift tıkladığınızda...
+
+569
+01:46:01,076 --> 01:46:10,076
+çalışan aslında Java ile yazılmış bir uygulama bu. Ben bu Java'nın standart şeyinden sıkıldığım için...
+
+570
+01:46:11,412 --> 01:46:28,312
+Simgesinden çıkıldığım için bir tane bitmap dosyayı ikon dosyasına çevirdim ve kısa yolun özelliklerine senin ikonun budur kardeşim şeklinde ilgili şeyi yükledim.
+
+571
+01:46:28,312 --> 01:46:39,312
+Yoksa şart değil sadece benim bir tercihim. Yoksa böyle kalabiliriz hiç dert değil. Tıklıyorsunuz, çalıştırıyorsunuz. Ondan sonra yeni...
+
+572
+01:46:39,412 --> 01:46:41,372
+Class diagram oluşturabiliyorsunuz.
+
+573
+01:46:41,492 --> 01:46:45,232
+Veyahut da işte Fire New Sequence diagram oluşturabiliyorsunuz.
+
+574
+01:46:45,432 --> 01:46:47,832
+Bu ders kapsamında bunlara da ihtiyacınız olacak.
+
+575
+01:46:47,832 --> 01:47:00,752
+Seneye yazılım manisli ders kapsamında diğer şema türlerine de State diagram, Activity diagram bunlara da ihtiyacınız ve Use Case diagram onlara da ihtiyacınız olacak.
+
+576
+01:47:01,592 --> 01:47:05,392
+Direkt paletten ilgili birleşeni seç, tıkla.
+
+577
+01:47:07,412 --> 01:47:24,572
+Üstünü değiştirmek için tercihen seçme modunda üstüne çift tıkla, işte sınıfının adını yaz, ondan sonra açığına, üye alanlarını yaz, üye metotlarını yaz, ondan sonra mesela diğer sınıfını al, mesela bu iki sınıf arasında kalıtım ilişkisi mi var?
+
+578
+01:47:24,572 --> 01:47:30,552
+İşte okları, paletten seçip okları birleştirip işte şemayı çizdin şeklinde.
+
+579
+01:47:34,771 --> 01:48:01,691
+kaydedebiliyorsunuz. Ondan sonra Cem'e mesela ve daha sonra bunu export to image file diyebiliyorsunuz. PNG formatında dosyayı kaydediyor. Onu da mesela sınav kağıdınıza yanıt olarak Word dosyasına o resmi ekleyebilirsiniz mesela. Böyle pratik kullanıma sahip bir araç. Gizlenebiliyor da şu palet.
+
+580
+01:48:02,739 --> 01:48:26,880
+Durum bu. Ders için ders kapsamında ihtiyacınız olan araçlar bu. O yüzden şimdi bir ara ver verme vaktimiz gelmiş. Ara vereceğim. Ondan sonra biraz daha konuşacağım. Bir ders saati daha yapalım. Bugünkü dersimiz bitince sizden ricam mutlaka JDK'yı indirin, kurun. Tercihen, dokumentasyonu da indirin, kurun.
+
+581
+01:48:27,279 --> 01:48:35,039
+Eclipse'i veya tercih edeceğiniz başka biri de varsa onu indirin, kurun veya zaten kuruluyorsa düzgün çalıştığından emin olun.
+
+582
+01:48:35,859 --> 01:48:45,760
+Tercihen bu Vali Tüyameli'i de indirin ve sonraki derse hazır olun şeklinde sizden ricam olacak.
+
+583
+01:48:47,619 --> 01:48:52,539
+Evet, şimdi varsa ara vermeden önce sizlerden soru alayım arkadaşlar.
+
+584
+01:48:54,579 --> 01:48:55,399
+Hocam merhaba.
+
+585
+01:48:55,859 --> 01:48:56,819
+Merhaba, buyurun [öğrenci].
+
+586
+01:48:57,959 --> 01:48:59,119
+Sesim iyi geliyor mu?
+
+587
+01:48:59,299 --> 01:49:00,899
+Geliyor, geliyor. Gayet güzel buyurun.
+
+588
+01:49:03,019 --> 01:49:12,359
+Java SE7 veya SE8 kullanılan bir kaynak kitaptan faydalanmamızda herhangi bir sakınca yok değil mi?
+
+589
+01:49:12,739 --> 01:49:13,619
+Hiçbir sakınca yok.
+
+590
+01:49:14,159 --> 01:49:15,539
+Tamam, teşekkür ederim.
+
+591
+01:49:15,539 --> 01:49:21,379
+Bir şey diyebilirim. Yeter ki işte JSE5 ya da yukarısı olsun. Hepsi okey.
+
+592
+01:49:22,387 --> 01:49:25,847
+Başka sorum buydu.
+
+593
+01:49:57,652 --> 01:50:12,331
+Peki arkadaşlar, o zaman şimdi saat 10.55 yaptık diyelim. O zaman saat 10.55 ile 10.05 arasına ara tanımlayalım. 10 dakika sonra görüşmek üzere.
+
+594
+02:01:50,195 --> 02:01:53,736
+Evet arkadaşlar, 10 dakika ara süremiz doldu.
+
+595
+02:01:54,655 --> 02:01:56,356
+Kaldığımız yerden devam edelim.
+
+596
+02:01:56,476 --> 02:01:58,615
+O, bu arada çete sorular gelmiş ben bakmıyordum.
+
+597
+02:01:59,036 --> 02:01:59,896
+Bakalım bakalım şimdi.
+
+598
+02:02:00,776 --> 02:02:01,636
+Haa tamam iyi.
+
+599
+02:02:02,136 --> 02:02:03,416
+Şey, bu başlamış.
+
+600
+02:02:03,916 --> 02:02:05,356
+İyi tamam, hayırlı olsun.
+
+601
+02:02:06,636 --> 02:02:07,695
+Allah'a sallı şuna.
+
+602
+02:02:11,988 --> 02:02:16,668
+Şimdi, nerede kalmıştık? Evet.
+
+603
+02:02:19,828 --> 02:02:25,708
+Eklistan bahsettik, ValiCenar'dan bahsettik. Başka gelen şeyler de olabilir, hiç problem değil.
+
+604
+02:02:26,068 --> 02:02:30,848
+Ama şimdi bak, bakın ben epey konuşmuş oldum önceki saatlerde.
+
+605
+02:02:31,268 --> 02:02:38,288
+O yüzden sizlerin soruları varsa önce aklınıza takılan, lütfen buyurun. Önce sizlerin sorularınızı alayım.
+
+606
+02:02:58,292 --> 02:03:02,292
+Aslında gerekli screen share'imi kapatayım sizden bir soru falan beklerken.
+
+607
+02:03:08,916 --> 02:03:14,076
+Mesela az önce oluşturduğum şamanın PNLG dosyasını görebilirsiniz.
+
+608
+02:03:21,140 --> 02:03:22,840
+Belki bir şeyler gösterelim.
+
+609
+02:03:25,220 --> 02:03:27,140
+Şunu şimdi kapatayım artık.
+
+610
+02:03:27,260 --> 02:03:28,780
+Artık bir daha daha vermeyeceğiz.
+
+611
+02:03:32,860 --> 02:03:33,680
+Peki.
+
+612
+02:03:34,460 --> 02:03:35,220
+Şimdi.
+
+613
+02:03:35,956 --> 02:04:00,016
+İşin temellerine bugün çok girmeyeyim. Geri kalan süreyi biraz işte Eclipse idesinin kullanımını göstermek şeklinde olsun. Bir adettendir, merhaba dünya yazılım falan. Ondan sonra ders notlarına nereden erişeceğinizi falan gösterin. Bu saati öyle kullanayım. En iyisi, en iyi konuya geçmektense.
+
+614
+02:04:04,076 --> 02:04:05,076
+Şimdi...
+
+615
+02:04:04,819 --> 02:04:06,899
+AWS sayfasına giriyorsunuz.
+
+616
+02:04:10,836 --> 02:04:11,836
+Arıyorsunuz.
+
+617
+02:04:23,060 --> 02:04:23,520
+Şöyle, está in.
+
+618
+02:04:27,636 --> 02:04:41,975
+Burada duyurular, dökümanlara giriyorsunuz. Burada göreceksiniz arkadaşlar. Şu an Nesne'ye dair kavramanlar bu bilgi teknolojilerinin dersi.
+
+619
+02:04:46,387 --> 02:04:51,527
+Nesli, tasım modellerini bu yücüsüne az üstünde verdiğim ders.
+
+620
+02:04:52,087 --> 02:04:55,487
+Ha bakın, Java's'ın ilgili goyi işlemlerinin notları duruyormuş hala.
+
+621
+02:04:55,707 --> 02:04:59,327
+Geçen bahar döneminden kalma, silmemişim.
+
+622
+02:04:59,828 --> 02:05:20,028
+Ondan sonra, geçen senenin projeleri hakkında bilgi varmış. Artık bu bayat, bayat olanları silerim. Böylece kafamız karışmaz. Fakat hani şu açımada ders noktalarının geçen seneki hali burada şu andan bile itibaren indirip bakmaya başlayabilirsiniz. Çok minor değişiklikler yapacağım bu dönem. Öyle bir şey olmayacak.
+
+623
+02:05:27,828 --> 02:05:50,088
+Yani dinleyici notu şeklinde iki yansı ve bir sayfaya sığdırdığım ve şu şekilde çerçevelediğim şekilde düzenlenmiş durumda indirebilirsiniz. Ben bir iki ufak tefek düzenlemeyle belki birkaç hafta sanmak değiştirebildim bu noktaları ama yine de bu da farkına varırsınız ve yeni olanı indiresiniz.
+
+624
+02:05:51,380 --> 02:05:57,380
+Ondan sonraki yine ders notlarında geçen bütün kodları...
+
+625
+02:05:57,876 --> 02:06:01,835
+Şurada Nesne Yönelik Programlama kodlar şeklinde bu dosyayı görebilirsiniz.
+
+626
+02:06:02,435 --> 02:06:07,675
+Kod düzeninde bilmiyorum, herhalde çok bilgi yapacağımı zannetmiyorum ama olursa onu da yine ekleyeceğim.
+
+627
+02:06:08,036 --> 02:06:11,815
+Bir zik dosyası şeklinde bütün kaynak kodlar yer almakta.
+
+628
+02:06:12,555 --> 02:06:16,115
+Bunları nasıl açıp indirip üstünde oynamaya başlayabilirsiniz?
+
+629
+02:06:16,115 --> 02:06:22,435
+Şimdi size biraz Eclipse kullanımını göstermekle birlikte oradan ilerleyelim derslerde.
+
+630
+02:06:23,188 --> 02:06:29,628
+Biraz işte düzfak düzenlemelerle bu dönemin dersleri, burada daha büyükleri çıkıyor, olacak.
+
+631
+02:06:34,612 --> 02:06:35,832
+Look at the matık.
+
+632
+02:06:39,412 --> 02:06:45,312
+Aslında eklipsi de kapatayım da bir başlangıç kısmını göstereyim size işlerin.
+
+633
+02:06:47,832 --> 02:06:55,752
+Şimdi eklipsi düzgün şekilde kurabildiyseniz, ha keşke kapatmasını o soruyu gösterecek.
+
+634
+02:06:56,012 --> 02:06:56,952
+Tamam pekala.
+
+635
+02:07:03,539 --> 02:07:08,340
+Ben tabii ki Eclipse'i bir sürede kullandığım için biraz daha farklı bir adımlar.
+
+636
+02:07:11,259 --> 02:07:23,119
+Siz Eclipse'i ilk çalıştırdığınızda karşınıza bir soru gelecek. Öyle bir soruyla karşılaşacaksınız. Şu değil, bu değil.
+
+637
+02:07:26,100 --> 02:07:28,380
+Şu pencereyle karşılaşacaksınız.
+
+638
+02:07:28,699 --> 02:07:54,100
+Diyecek ki, sizin yeni oluşturacağınız projelerdeki kaynak kodu ve binarileri default olarak o taklayacağım kök dizimi neresi ve bu Eclipse kullanımı ile ilgili kullandıkça değişik mesela boyutlandırma, text editörü, form seçenekleri, şunlar bunlar, Eclipse ile ilgili diğer bütün ayarları ve sizin default...
+
+639
+02:07:54,100 --> 02:08:21,180
+kod olarak oluşturacağınız projelerdeki kodları nereye saklayayım diye soru soruyor. Kullanıcı hesabınızın olduğu dizinin altında Eclipse Workspace diye bir dizini açaraktan normalde defolt olarak burayı tercih ediyor. Kodunun içinde dolu tuttuğunuzda, bunu kullan bir daha da sorma dediğinizde bir daha size bu soruyla gelmeyecek. Ve direkt Eclipse ortamınız açılacak.
+
+640
+02:08:21,587 --> 02:08:27,768
+Bu ortam açıldığında ilk başta hoş geldiniz ekranıyla karşılaşacaksınız.
+
+641
+02:08:29,268 --> 02:08:30,948
+Şuralarda bir yerdeydi ya.
+
+642
+02:08:31,627 --> 02:08:32,787
+Have the welcome.
+
+643
+02:08:39,444 --> 02:08:42,463
+Tamam mı? Bu kadar niye yazınız? Anlamadım ben de şimdi.
+
+644
+02:08:43,380 --> 02:08:50,380
+Şu hoşgen penceresiyle karşılayaksınız. Her sırfında göstermesine gerek yok mu kesinlikle?
+
+645
+02:08:50,380 --> 02:08:57,380
+Kapattığınızda sizin sol tarafta en güzel herhangi bir projeniz olmayacak. Daha ilk defa kurduğunuz için çünkü.
+
+646
+02:08:57,380 --> 02:09:05,380
+Benim bu eklifte kurduğum farklı plug-inler var. Burada bazı onların pencereleri var. Mesela şu olmayacak sizde.
+
+647
+02:09:05,380 --> 02:09:11,380
+Ama temel olarak bu şekilde dört bölümlü bir IDE ile karşılaşacağız.
+
+648
+02:09:11,380 --> 02:09:39,300
+Burada ilk aşamada hangi bir proje olmayacak? Eğer benim ders notlarını içeren zip dosyasını indirip nereye açtıysanız oradaki dosyaları komple bir proje olarak kendinize alabilirsiniz. O da şöyle olacak. Normalde burada da ben şunu sileyim. Sadece proje olarak sileyim. İçindeki dosyaları silmiyorum. Sadece projeyi kaldırmış oluyorum.
+
+649
+02:09:39,380 --> 02:09:43,020
+Şimdi nasıl yapacağımızı gösterelim.
+
+650
+02:09:45,699 --> 02:09:49,400
+File, new, Java project seçiyorum.
+
+651
+02:09:50,960 --> 02:09:53,480
+Şimdi use default location demeyeceğim.
+
+652
+02:09:53,640 --> 02:09:55,720
+Dikkat ederseniz işte orası Eclipse workspace.
+
+653
+02:09:56,300 --> 02:10:01,079
+Ben ders notlarının işte kaynak kodlarını nereye açtıysam oraya gitmem gerekiyor.
+
+654
+02:10:01,440 --> 02:10:03,920
+O yüzden default location'ın içini boşaltıyorum.
+
+655
+02:10:07,731 --> 02:10:11,992
+İşte programlama, kodlar, burası.
+
+656
+02:10:12,612 --> 02:10:17,532
+CDC'yi seçmiyorum, kodları seçtim. Şu an şurada kodlar yazıyor. Bu durumdayken class or seç diyorum.
+
+657
+02:10:17,992 --> 02:10:23,252
+Bu da şey, istediğiniz bir ismi verebilirsiniz. Ben dersin kısaltmasını vermeyi tercih ediyorum.
+
+658
+02:10:23,731 --> 02:10:27,811
+Nesneye dayalı programlama, kodlar gibi bir isim veriyorum.
+
+659
+02:10:30,091 --> 02:10:34,391
+Ve finish diyorum. Başka bir şey yapmama gerek yok.
+
+660
+02:10:34,815 --> 02:10:39,076
+Şu ekranda don't create deyip geçebilirsiniz. Bir önemi yok.
+
+661
+02:10:40,916 --> 02:10:47,076
+Ve işte burada NDP kodlar listeme eklendi. Sizde hiç bu gözüküyor olacak mesela.
+
+662
+02:10:47,076 --> 02:10:48,907
+Tıkladığınızda...
+
+663
+02:10:49,011 --> 02:10:54,191
+src yani source kaynak kodlar anlamında otomatik dizinin açılmış oluyor.
+
+664
+02:10:54,651 --> 02:10:58,971
+Şimdi yeni proje oluşturacağız. Orada da bu dizinin otomatik olarak açıldığını göreceğiz.
+
+665
+02:10:59,471 --> 02:11:03,591
+Ondan sonra benim çeşitli paketlerimi burada görüyorsunuz.
+
+666
+02:11:04,231 --> 02:11:06,451
+Mesela diyelim ki işte ders notlarında.
+
+667
+02:11:10,387 --> 02:11:13,707
+İlk kod örneğimde mesela.
+
+668
+02:11:16,068 --> 02:11:20,648
+Tabi kod yazana kadar bazı altyapı konularını görmeliyiz mutlaka.
+
+669
+02:11:21,248 --> 02:11:26,148
+Ondan sonra ilk bir bütüncül örneğimizi, kodun örnek kodu.
+
+670
+02:11:26,568 --> 02:11:29,568
+Bakın neymiş? NYP01A paketindeymiş.
+
+671
+02:11:29,984 --> 02:11:54,064
+İşte NEP01A paketi. Altını çift tıklarsam veyahut da işte artık yanındaki küçük aşağı bakan onka tıklarsam o pakette yalanan kar ve torsum Java sınıfları var. Bu örneğin kar örneği. Demek ki o paketteki şu kar sınıfı işte bunun kaynak kodları şimdi yüklüyor. Burada gördüğünüz kaynak kod aynı.
+
+672
+02:11:54,963 --> 02:11:58,584
+şeyde, yansıda gördüğünüz kaynak kodla aynı.
+
+673
+02:11:59,188 --> 02:12:13,887
+Bazı noktalarda belki örneğin main metodunun ardında daha fazla komutlar görebilirsiniz. Bunları sizlerle de yapacağız. Sizlerin soruları olacak hocam şunu şöyle yazsaydık nasıl olurdu veya şunu nasıl yapardık burada hemen açacağız yapacağız.
+
+674
+02:12:13,887 --> 02:12:24,407
+Önce konuyu anlattıktan ettikten sonra konuyla ilgili örnekle ilgili sorularınızı yaptıktan sonra şöyle olsa da nasıl olurdu, böyle yapsaydık nasıl olurdu gibi denemelerimiz olacak.
+
+675
+02:12:27,188 --> 02:12:39,688
+Biraz daha fazla kod olabilir ama azı olmaz kesinlikle. O yüzden ders noktalarında karşılaştığımız bütün kaynak kodu buradan görebileceksiniz arkadaşlar. Hepsi burada.
+
+676
+02:12:40,787 --> 02:12:55,007
+Onun dışında şimdi bir yeni proje oluşturalım mesela sizinle birlikte ve bir merhaba dünya diyecek bir şey yaslarım, bilgi satır bir şey yaslarım. Böylece her şeyin yerli yerinde olduğundan emin oluruz.
+
+677
+02:12:55,007 --> 02:13:06,787
+İşte TDK kurulu, Eclipse kurulu ondan sonra bir program, proje oluşturabiliyorum ve bir kod çalıştırabiliyorum. Bunun denemesini yapmış oluruz.
+
+678
+02:13:07,699 --> 02:13:09,699
+Şimdi bunun için
+
+679
+02:13:11,699 --> 02:13:13,699
+New Java Project diyorum.
+
+680
+02:13:13,699 --> 02:13:16,699
+Bu sefer Default Location'da bırakıyorum.
+
+681
+02:13:16,699 --> 02:13:17,699
+Adını da mesela
+
+682
+02:13:17,699 --> 02:13:18,699
+işte
+
+683
+02:13:18,699 --> 02:13:19,699
+NDP
+
+684
+02:13:20,699 --> 02:13:23,699
+Denemeler koyuyorum mesela.
+
+685
+02:13:24,699 --> 02:13:25,699
+Finish dediğimde
+
+686
+02:13:25,699 --> 02:13:29,699
+Yine şu, biz modüllerle uğraşmıyoruz. Don't create diyoruz.
+
+687
+02:13:29,699 --> 02:13:32,699
+NDP denemeler olarak projem açıldı.
+
+688
+02:13:33,524 --> 02:13:52,364
+Onun altında, SLC klasörü şu an için boş. Burası neresi? Burası, şurası. Demiştik ya, kullanıcınızın varı olduğu dizin. Ama bunu mesela direkt kendi kullanıcı adınızdan buradan göremeyebilirsiniz. Belki gizli klasördür, her neyse.
+
+689
+02:13:52,979 --> 02:13:59,339
+Buradan eriştim gerçi. Kullanıcı kısa yolundan eriştim. Equipped Workspace burası.
+
+690
+02:13:59,339 --> 02:14:07,319
+Ve burada da hatırlarsanız az önce bakın bugünün tarihi ve saatiyle NDP denemeler vermiştim projenin adını.
+
+691
+02:14:07,579 --> 02:14:19,459
+NDP denemeler diye class'ı açtım. Ve onun içerisinde SLC dizinin yeni bir paket ve paket içerisinde sınıf oluşturdukça burada da dosyalar artmaya başlayacak.
+
+692
+02:14:22,644 --> 02:14:23,944
+Dursun şurada bir şey.
+
+693
+02:14:27,024 --> 02:14:33,863
+Şimdi biz temel olarak aslında dersimiz adı nedir? Nesneye Yönelik Programlama.
+
+694
+02:14:34,984 --> 02:14:40,144
+Dersin adı da deneyelim de programlama yaklaşımın adı nesneye Yönelik Programlama.
+
+695
+02:14:40,743 --> 02:14:43,724
+Temel kodlama bileşenimiz nesneler olacak.
+
+696
+02:14:44,184 --> 02:14:48,564
+Ve her zaman için aslında nesneler cinsinden düşünmemiz lazım.
+
+697
+02:14:49,043 --> 02:14:59,444
+Bir nesne ise kendi tanımlı verisi ve o veri üstünde çalışan eylemler yani metotlar içeren temel programlama birimimizdir.
+
+698
+02:15:00,264 --> 02:15:10,104
+Fakat nesnelerin nasıl davranacağını, işte kuyu alanları neymiş, metotları neymiş ve metotları nasıl çalışılmış, metot gövdelerini nasıl kodlanmışız.
+
+699
+02:15:10,444 --> 02:15:15,043
+Yani bir nesneyi tanımlamak için yazacağımız kod ise sınıf kodu olacak.
+
+700
+02:15:17,043 --> 02:15:23,764
+ULF'tan istediğimiz kadar nesne oluşturup onların çeşitli metotlarını çağırıp çalıştık falan filan filan devam edeceğiz.
+
+701
+02:15:24,916 --> 02:15:27,176
+Yaklaşımımız bu olacak.
+
+702
+02:15:28,576 --> 02:15:36,076
+Sınıflarımızı paket adı verilen, yani birbiriyle aynı amaca yönelik sınıflarımızı paketler altında toplayabiliriz.
+
+703
+02:15:36,436 --> 02:15:37,816
+Söylemiştik, tekrarlayalım.
+
+704
+02:15:38,756 --> 02:15:41,776
+Şimdi burada, nereden buraya gelmiştim?
+
+705
+02:15:41,856 --> 02:15:47,556
+Herhalde paket atacağım, bunun içinde sınıf oluşturacağım ve merhaba dünyaya atılacağım.
+
+706
+02:15:47,556 --> 02:15:49,196
+O yüzden oraya gelmiştik.
+
+707
+02:15:50,547 --> 02:15:59,228
+Bu src'nin altında zaten bir new package diyorum. Bu ilk haftamız ya. Hafta 0.1 olsun mesela.
+
+708
+02:16:02,408 --> 02:16:11,847
+Şimdi hafta 0.1 adlı paketim oluştu. Keza artık src'nin altında hafta 0.1 diye klasör oluştu. Şu an çünkü boş.
+
+709
+02:16:15,604 --> 02:16:19,923
+Main ve sınıf oluşturalım. Adı da merhaba olsun.
+
+710
+02:16:22,083 --> 02:16:37,123
+Bir main metodu içersin diyeceğim. Bir kodun başlangıç noktası olabilecek metodun özel bir imzası vardır. O da budur. Şurada gördüğünüz kenarını işaretlediğim.
+
+711
+02:16:37,123 --> 02:16:40,024
+Tabii şimdi public neymiş, alternative private neymiş?
+
+712
+02:16:40,468 --> 02:17:08,448
+Statik neymiş, ne değilmiş, bunları göreceğiz önümüzdeki hafta. Uzun uzun anlatacağım, ondan sonra ilk bütüncül örneğin üstünden geçeceğim. Main adı tanıdık gelecektir. C'de de kodun başlangıç noktası main fonksiyonuydu. Yapısal programlarında fonksiyon diyoruz, nesne yönelinde metot diyoruz. Düzgün terminolojiyi de önümüzdeki hafta didikleyeceğiz, üstünde konuşacağız, çalışacağız.
+
+713
+02:17:08,468 --> 02:17:09,468
+Evet.
+
+714
+02:17:10,451 --> 02:17:17,011
+String'i tanıtmıştım size. Java Lang paketinde yer alan karakter katarlığının simgenleyen bir sınıftır.
+
+715
+02:17:17,651 --> 02:17:25,391
+Ve o türden aslında bir kutu değil tabii ki. Aç köşeli parantez, kapa köşeli parantezdir.
+
+716
+02:17:25,391 --> 02:17:28,851
+Birazdan sabit genişlik fontla yazılınca göreceğiz.
+
+717
+02:17:29,371 --> 02:17:36,531
+RGS ise argüman listesi. Yani String elemanları işlenen RGS adında bir dizi aslında bu.
+
+718
+02:17:36,771 --> 02:17:37,831
+Peki bu neye yarıyor?
+
+719
+02:17:38,451 --> 02:17:49,831
+Önce komut satığından Java'cı çalıştırıp ona ilk parametre olarak Traversion demiştim ya, işte bütün o verilen parametrelerin her biri bu dizinin birer elemanı olmuş oluyor.
+
+720
+02:17:50,391 --> 02:17:53,431
+Aradaki bağlantı bu şekilde kuruluyor.
+
+721
+02:17:53,431 --> 02:17:58,791
+Ama biz bu şekilde komut satığından parametre verme şeklinde yapmayacağız örneklerimizi.
+
+722
+02:17:59,311 --> 02:18:04,371
+Ama bu ben anlamı bu. Şu an bir ana giriş bilgi vereyim dedim.
+
+723
+02:18:06,164 --> 02:18:21,344
+Tabi şimdi henüz sınıf yani nesne oluştuğunu işaret etmeyeceğiz. Sadece ekrana bir satır bir şey yazacağız. Ekrana bir satır bir şey yazabilmek için de herhangi bir aslında kendi nesnimizi tasarlamaya ve kodlamaya gerek yok kesinlikle.
+
+724
+02:18:23,484 --> 02:18:29,504
+Şu an stigmatik konusuna hiç girmek bile istemiyorum. Çünkü bu sınavda anlatılması gereken konular.
+
+725
+02:18:29,968 --> 02:18:54,108
+Şuraya bir tane ufak bir işaret koydu. Ben bu metodu ot gövdesine koydum ama bu sadece bir takozlu geçici kodlu. Sen bunun için doğrudurmayı unutma diye bir tane yapılacak işi koydu. Şuraya da ufak bir işaretini de koydu. Ben bunu sileceğim şimdi ve bunun içerisine ekrana bir satır yazı yazma işini yürüteceğim. Bunun için kısa yol olarak şöyle yapıyorum.
+
+726
+02:18:54,804 --> 02:19:08,844
+CSS out yazıp control space basıyorum. Bu Eclipse'de tanınlanmış bir kısa yol. Sizin idinizde bu olmayabiliriz. O zaman uzun uzun büyük sır ile başlamak şartıyla system.out.printlant diyorsunuz.
+
+727
+02:19:08,844 --> 02:19:22,123
+Ve içine de string.java'da çift tırnak ile isimliyiniz. Ben çift tırnağı açtım da otomatik kapatmasını da yaptı Eclipse ve ortasında cursor tutmaya devam ediyor. Mesajımı yazmamı bekliyor.
+
+728
+02:19:22,772 --> 02:19:25,092
+Ya.
+
+729
+02:19:27,092 --> 02:19:31,012
+Git, ha, corona, diyelim, et felan.
+
+730
+02:19:38,100 --> 02:19:43,720
+Kodda değişiklik yapıp şu an kaydedilmemiş olduğunu şuradaki küçük yıldızdan anlıyorsunuz.
+
+731
+02:19:44,120 --> 02:19:46,560
+Ctrl S'ye bastığımda kayıt edecektir.
+
+732
+02:19:47,760 --> 02:19:53,180
+Ondan sonra şimdi bunu byte koda çevirip yürütülmesi gerekmektedir.
+
+733
+02:19:53,180 --> 02:20:02,260
+Bunun için de ilgili sınıf kodumun üstünde sağ tıklayıp run as Java application diyorum.
+
+734
+02:20:02,639 --> 02:20:05,180
+Main metodunu kodlamasaydım burada bir seçenek çıkmayacaktı.
+
+735
+02:20:07,412 --> 02:20:34,412
+Ve şuradaki alttaki pencereye verdiğim mesajı yazdı. Burası konsol penceresi. Eğer derlememde bir hatalar falan olsaydı bunlar problems penceresinde gözükecekti. Şu an burada gördüğünüz problemlar bu projeyle ilgili değil. Benim kod kalitesiyle ilgili kurduğum çeşitli pluginler var. Onların bu sol taraftaki tanıdığı diğer bütün projelerde buldukları kod...
+
+736
+02:20:35,219 --> 02:20:41,399
+Uygunsuzlukları veya şöyle yapsayayım daha iyi olurdu türünden önerileri bunlar.
+
+737
+02:20:41,876 --> 02:20:43,695
+Bununla ilgili değil.
+
+738
+02:20:45,155 --> 02:20:46,975
+Ve hepsi de warning durumunda.
+
+739
+02:20:47,515 --> 02:20:49,916
+Şurası ise işte konsol sekmesi.
+
+740
+02:20:51,136 --> 02:20:53,236
+Komut satırımız burası oluyor idede.
+
+741
+02:20:53,236 --> 02:20:58,195
+Bizim ayrıca bir Windows'tan komut satırı almamızı açmamıza gerek yok.
+
+742
+02:20:59,456 --> 02:21:07,175
+Yani fairly functional tamamen işlevsel bir komut penceresi olaraktan şu konsol penceresini kullanıyor olacağız.
+
+743
+02:21:08,691 --> 02:21:19,171
+Peki, biraz System Outprint Anlams'ın ne anlama geldiğini azıcık ön bilgi olarak vermem gerekirse System ve Sınıf arkadaşlar.
+
+744
+02:21:22,899 --> 02:21:45,700
+Üstünde durduğunda gelen bilgi aslında yine kurduğum bu plugin ile ilgili. Dur bakayım şu proje için şu plugin devre dışı bırakayım da onları karıştırmasın. Onun için de projenin üstüne sağ tıklıyorum, properties diyorum. Ve bir kere şu PMD zaten enable değil. SorarLint bunu şu an artık uğraşmıyorum, uğraşamıyorum maalesef.
+
+745
+02:21:45,700 --> 02:21:50,079
+Bir de check style. Check style zaten o da aktif değil.
+
+746
+02:21:50,708 --> 02:21:53,087
+Tamam, peki, apply and cross.
+
+747
+02:21:56,847 --> 02:22:07,708
+Bu başka hangisinin ki? Bakayım, şu yine, yine sona rentin. Evet ama bir belki Eclipse'i kapatmam, o progeni devre dışı bırakmak için tekrar çalıştırmam gerekebilir.
+
+748
+02:22:20,659 --> 02:22:28,819
+Documentation ile ilgi göstermek istiyordum da. O yüzden hani o warning işime yaramadı. Ha tamam, bir şey gibi olmuş.
+
+749
+02:22:30,680 --> 02:22:42,260
+Bakın, herhangi bir sınıfın üstünde durduğumuzda bu documentation sizin indirdiğiniz documentation dealer netliğiniz geliyordu diye düşünüyorum.
+
+750
+02:22:42,260 --> 02:22:43,220
+Ama bir dakika.
+
+751
+02:22:45,459 --> 02:23:11,959
+Olmayabilir mi? Durun şimdi merak ettim. Sizinle birlikte keşfedelim. Müsaadenizle şu ekibisi bir kapatıyorum. Ondan sonra şu JDK kurduğum dizimde. Şimdi Doge'un adını şöyle bir şey yapıyorum. Bakalım hala bulabilecek mi? Ondan mı kaynaklıyorum? Kendisinden mi geliyor bu tanımlar? Onu merak ettim şimdi.
+
+752
+02:23:13,203 --> 02:23:15,683
+Geçen sefer herhalde aklıma gelmemiş. Şimdi düştüm.
+
+753
+02:23:27,028 --> 02:23:28,608
+Bunun üstünde biraz duruyorum.
+
+754
+02:23:29,028 --> 02:23:31,427
+Tamam, kendi açıklaması geliyormuş.
+
+755
+02:23:31,427 --> 02:23:38,067
+Ama tabii ki NetBiz'in kendi Javadoc açıklamasını nereden navigate edersiniz bilemiyorum.
+
+756
+02:23:38,247 --> 02:23:48,047
+O yüzden bir real probleminiz veya band gençli probleminiz yoksa Javadoc'u kendiniz için de kurmanızı önermeye devam ediyorum ben.
+
+757
+02:23:57,876 --> 02:24:02,855
+Şimdi, System Java Lang paketinde yer alan bir sınıftır.
+
+758
+02:24:03,347 --> 02:24:28,387
+Java'dan hakikati dilin çekirdek kütüphanesi demiştik. Üstüne durunca onunla ilgili bilgi veriyor. System diye bir sınıfımız var. Bu sınıfımızın çeşitli sistemle ilgili farklı bileşenleri simgeleyen üye alanları, daha doğrusu üye nesneleri olacak. Out öyle bir nesne. Ama bunun kendisi de statik bir nesne. Statik neymiş neymiş neymiş onu daha sonra konuşacağız.
+
+759
+02:24:31,347 --> 02:24:46,108
+Satırı çıkışını simgeleyen bir nesnedir, bir varlıktır. Onun da println diye bir metodu vardır. Println metodu parametre olarak bir string alır. Aldığı stringi ekrana, komut satırına yazdırır.
+
+760
+02:24:46,108 --> 02:24:59,347
+Ve println metodu ise bu. O zaman bir alt satıra geçer. Bundan sonraki print veya println işlemleri alt satırdan itibaren devam eder. Ama print deseydim bundan sonra...
+
+761
+02:24:59,347 --> 02:25:04,987
+Sonrasındaki işlemler aynı satırdan itibaren devam eder. Aradaki fark da budur.
+
+762
+02:25:05,987 --> 02:25:21,387
+Yani şeyde bakarsanız, genel olarak bakarsanız söz dizimine ve sentaksa, Nesneye Yönelik'le ilgili kurallar dışında, örneğin public olayıymış, örneğin static olayıymış, söz dizimi C'ye epey benziyor değil mi?
+
+763
+02:25:24,531 --> 02:25:28,391
+Başka ne diyecektim? Ne diyordum? Ha, şunu çalıştırayım.
+
+764
+02:25:28,752 --> 02:25:40,432
+Şimdi en son bu hafta sıfır bir paketindeki Merhaba sınıfının main metodunu en son çalıştırdım. Şuradaki yeşil düğmeye doğrudan tıklarsam yine en son çalıştırdığım şeyi derleyip çalıştıracaktır.
+
+765
+02:25:40,772 --> 02:25:52,752
+Veya daha önce çalıştırdığım dosyalar, main metoduna sahip sınıf kodlarını da daha aşağıda görebiliyorum. İddirek tıklarsam bu en son çalıştırdığım çalışacaktır.
+
+766
+02:25:52,752 --> 02:25:55,152
+Veya buradan da tıklayabilirim işte.
+
+767
+02:25:55,860 --> 02:26:17,840
+Çalıştırıyorum. Şimdi konsola geldiğimde bakın daha bir alt satır yok gidemiyorum. Ama hani elen yazıp işte çalıştırdığımda bakın alt satıra inebiliyorum. Çünkü alt satıra geçti. Elen metodu geçirdik. O yüzden ben de artık tıkladığımda alt satıra inebiliyorum.
+
+768
+02:26:29,459 --> 02:26:33,259
+gibi göreceğiz işte.
+
+769
+02:26:33,939 --> 02:26:36,759
+Ctrl-Z hemen elini her çubuk kurasızı kere bastım.
+
+770
+02:26:37,259 --> 02:26:40,840
+Gördüğünüz gibi yeni satıra geçip oradan devam etti.
+
+771
+02:26:41,500 --> 02:26:48,599
+Şeklinde bunu da yapabilirsek tamam her şey yerindedir, yolundadır diye söyleyebilirim.
+
+772
+02:26:48,599 --> 02:26:49,359
+Peki.
+
+773
+02:26:49,920 --> 02:27:01,920
+Şimdi artık siz bu sorularımızı alayım. Vaktimiz var. Acele etmeyin. Sorunuz varsa çekinmeden lütfen sorup konuşuruz o soru hakkında. Ondan sonra dersi bitiririz artık.
+
+774
+02:27:02,659 --> 02:27:06,719
+Betirince çalışır diyebilirim. Sorunuz varsa soru bekliyorum.
+
+775
+02:27:11,476 --> 02:27:12,556
+Hocam merhabalar.
+
+776
+02:27:12,936 --> 02:27:14,056
+Merhaba [öğrenci], buyurun.
+
+777
+02:27:15,115 --> 02:27:22,155
+İki sorum olacaktı hocam. Bir, bu Eclipse'in sitesine baktım. Sanırım Macbook'lar için, MacOS için 32 bit var sadece, 64 bit yok.
+
+778
+02:27:22,936 --> 02:27:29,256
+Olabilir. Ama geriye doğru oyunluluk söz konusu. 32 bit de indirin, çalışın, herhangi bir sorun yaşamazsınız diye ümit ediyorum.
+
+779
+02:27:29,995 --> 02:27:38,216
+Onu soracaktım hocam. Bir teşekkür ederim. Bir de Nesli'ye Yönelik tam olarak ne demek? Biraz bilmediğim için bunu soruyorum. Yani C'den, Python'dan tam olarak farkı ne olacak?
+
+780
+02:27:38,963 --> 02:27:41,344
+Ya da bunlardan mı Nesliye Yönelik'ti ben mi bilmiyordum.
+
+781
+02:27:42,515 --> 02:27:48,015
+Şimdi şöyle, ki keza [öğrenci]'ın chatten sorduğu soru da biraz konumla ilişkili.
+
+782
+02:27:48,335 --> 02:27:51,956
+Java'nın sadece obje ile ilgili kısımları var, temelleri bilmemiz bekleniyor mu diye.
+
+783
+02:27:52,435 --> 02:28:00,036
+Nesneye Yönelik'le ilgili bütün temelleri sıfırdan bu dersin önümüzdeki haftasından itibaren anlatmaya başlayacağız.
+
+784
+02:28:00,416 --> 02:28:03,416
+Öncelikle bu. [öğrenci]'ın yanıtı daha kısa oldu.
+
+785
+02:28:03,935 --> 02:28:08,115
+Arkadaşımız sorusuna sözlü soruya yanıt verecek isek de.
+
+786
+02:28:11,156 --> 02:28:15,596
+Arkışım karıştı. Karıştı ya. Hatta karıştı. Tekrar alabilir miyim soruyu lütfen?
+
+787
+02:28:16,636 --> 02:28:19,636
+Yani Nesne'ye yönelik tam olarak neyi ifade ediyor hocam?
+
+788
+02:28:19,636 --> 02:28:22,195
+Farklı olarak ne yapıyorum? Bunu bilmediğim için sormuştum.
+
+789
+02:28:22,195 --> 02:28:23,276
+Peki. Peki. Peki.
+
+790
+02:28:24,396 --> 02:28:28,776
+Önümüzdeki hafta deneyeceğiz. Madem sordun, şimdi biraz işin içerisine girelim.
+
+791
+02:28:29,396 --> 02:28:34,776
+Şimdi, Nesne'ye yönelim aslında yapı saat programlamanın üst kümesi.
+
+792
+02:28:35,436 --> 02:28:38,640
+Yapı saat programında gördüğünüz her şey...
+
+793
+02:28:38,639 --> 02:28:40,639
+Nesneye Yönelik'de de geçerlidir.
+
+794
+02:28:41,379 --> 02:28:47,099
+Fakat Nesneye Yönelik size yeni kodlama bileşenleri getirmektedir.
+
+795
+02:28:48,239 --> 02:28:50,699
+Ve yeni kurallar getirmektedir.
+
+796
+02:28:51,259 --> 02:28:52,639
+Aradaki en büyük fark da şudur.
+
+797
+02:28:53,559 --> 02:29:01,020
+Yapısal programlamada veri ayrı tanımlanır, o veriyle çalışacak fonksiyonlar ayrı tanımlanır.
+
+798
+02:29:01,971 --> 02:29:28,891
+Bir noktası dosyası içerisinde belki global değişkenleriniz olur. Belki fonksiyon içinde tanımladığınız geçişi değişkenleriniz olur. Bunları nesne yönünde de yapabilirsiniz. Fakat yapısal programlamada belki diyelim ki bazı abstractlarınız olur mesela. Birbiriyle ilişkili veri bileşenlerini bir abstract altında toplayabilirsiniz. Ama sadece veriyi toplarsınız.
+
+799
+02:29:29,587 --> 02:29:49,747
+Veri ayrıdır. Sonra o veri üzerine çeşitli işlemler yapacak. Ayrı ayrı fonksiyonları da ister aynı C dosyasına, ister farklı C dosyalarına kodlar. Daha sonra işte include ederekten birinden diğerini dahil edip o şekilde kod yapabilirsiniz.
+
+800
+02:29:49,747 --> 02:29:54,867
+Ama bakın tekrarlıyorum. Struct'ı ayrı tanımlıyorsunuz. Fonksiyonları ayrı tanımlıyorsunuz.
+
+801
+02:29:55,540 --> 02:30:06,920
+Nesneye Yönelik'de ise veri, bir varlıkla ilgili veri ve o varlıkla ilgili eylemler yani metotlar ayrılmaz bir bütündür.
+
+802
+02:30:07,840 --> 02:30:11,220
+Aynı nokta Java dosyası içerisinde bir sınıf kodu içerisinde.
+
+803
+02:30:11,695 --> 02:30:20,595
+O sınıftan türetilecek olan varlıkların yani nesnelerin hem bilgilerini, verilerini, güya alanlar şeklinde söyleyeceğiz.
+
+804
+02:30:20,995 --> 02:30:28,275
+Hem de o nesnenin yapabileceği eylemleri ki o eylemlerde genellikle nesnenin kendi verisi üzerinde çalışır.
+
+805
+02:30:28,275 --> 02:30:39,275
+Ama metot parametresi veya sahiplik gibi hep ayrıntılarını önümüzdeki haftalarda göreceğimiz ilişkiler kurularaktan da bir nesne...
+
+806
+02:30:39,695 --> 02:31:07,695
+farklı nesnelerin metotlarını çağırabilir, çalıştırabilir. Aradaki en temel fark budur. Veri ve eylemlerin ayrılmaz bütünlüğüdür. Çünkü biz niçin kodu yazıyoruz? Biz gerçek dünyadaki bir problemi çözmek, kolaylaştırmak, izleyebilmek vesaire gibi amaçlarla kodu yazıyoruz. Ne olursa olsun problem alanıyla ilgili gerçek dünyada...
+
+807
+02:31:07,695 --> 02:31:10,876
+Dünya varlıklarını kodan aktarmamız gerekiyor.
+
+808
+02:31:11,059 --> 02:31:23,199
+Koda aktarırken de o varlığın niteliklerini yani verilerini ve o varlığın yapabileceği veya o varlıkla yapılabilecek tüm eylemleri de çeşitli metotla olarak kodluyoruz.
+
+809
+02:31:23,559 --> 02:31:30,119
+Fonksiyon demiyorum çünkü nesnenin iki termini aracında metot diyoruz ve o aradaki farkı da hatırlatırım.
+
+810
+02:31:30,119 --> 02:31:39,059
+Bir nesnenin metodu ortalıkta doğrudan erişilebilecek metot kullanımı pek azdır. O da statik dağlanışıdır.
+
+811
+02:31:39,059 --> 02:31:46,879
+Daha önümüzdeki haftalarda göreceğiz. Aradaki temel fark budur. Bilmiyorum yeterli olabildi mi?
+
+812
+02:31:48,039 --> 02:31:51,359
+Oldu hocam, çok teşekkür ederim. En azından biraz daha netleşti kafamda için.
+
+813
+02:31:51,924 --> 02:31:53,263
+Tamam, teşekkür ederim.
+
+814
+02:31:53,684 --> 02:31:54,283
+Ben teşekkür ederim.
+
+815
+02:31:54,664 --> 02:31:56,224
+Önemli, teşekkür ederim.
+
+816
+02:31:56,324 --> 02:31:56,984
+Çok güzeldi.
+
+817
+02:31:57,664 --> 02:31:58,864
+Olay budur arkadaşlar.
+
+818
+02:31:59,524 --> 02:32:03,463
+Tabii ki işte Neye Yönelik Yapısal Programlamanın üst hükümesidir.
+
+819
+02:32:03,463 --> 02:32:09,164
+Evet, Yapısal Programlamadaki yapabiliğiniz şey, Neye Yönelik'e de yapabilirsiniz ve daha da fazlasını yaparsınız.
+
+820
+02:32:09,524 --> 02:32:11,324
+Çeşitli ek kurallar kapsamında.
+
+821
+02:32:11,864 --> 02:32:13,344
+Ama bir de şöyle bir olay var.
+
+822
+02:32:16,000 --> 02:32:31,200
+İleri ket vurma diye bir kavram vardı. Eski öğrendiklerinizin, yeni öğrendiklerinizin önüne geçmesi veya yeni öğrendiğiniz şeyleri eskiye uydurmaya çalışma gibi bir olgu vardı öğrenmede.
+
+823
+02:32:31,200 --> 02:32:40,119
+O yüzden Nesliye Yönelik'in de, şimdi Nesliye Yönelik'in evet, UMLN'in üstümesidir ama Nesliye Yönelik'in de
+
+824
+02:32:40,512 --> 02:32:52,371
+Önerilen daha farklı davranışlar söz konusu olabilir. Yapısal programlamadaki bazı alışkanlıklar Nesliye Yönelik'in özüne aykırı davranışlar ortaya çıkarız.
+
+825
+02:32:52,731 --> 02:33:03,711
+Örneğin bir varlık ile ilgili başlı başına bir sınıf yazmaktansa siz tutup bir string, iki boyutlu matriz veya stringler matrizi yapabilirsiniz.
+
+826
+02:33:03,711 --> 02:33:08,452
+Hayır öyle bir şey yok. Bir sınıf ve o sınıfa o matrizini satır.
+
+827
+02:33:08,512 --> 02:33:23,612
+O türlerden iyi alanlar yazmanız gerekmekteydi gibi bazı istismarlar olabilir. Biz sizlere derste bunun doğru kullanımının ne olduğunu, nasıl olduğunu gösterek ders modlarını oluşturduk ve öyle anlata geliyor olacağız.
+
+828
+02:33:23,612 --> 02:33:35,132
+O öbür konu için yapısal programlardan kaynaklanan alışkanlıkların nesneye yönelik doğru kullanımı nasıl yanlışa çevirebilme olayı neyse.
+
+829
+02:33:36,512 --> 02:33:47,592
+veya antiklatağını denmekte. O başka bir konu. Çok kafanızı karıştırmıyorum o konuda. Ben onu yüksek lisans düzeyinde ayrı bir ders olarak veririm ama önce şu yapısal programını zaten tanımladınız.
+
+830
+02:33:47,952 --> 02:33:58,731
+Nesmi Yönelik Programlama'nın bu ders kapsamında iyice bir özümsin. Ondan sonra, bundan sonra ne yapılabilir kısımlarında o konulardan sizlere bahsedeceğim zaten.
+
+831
+02:33:59,132 --> 02:34:04,452
+Nesmi Yönelik konusunda kendinizi daha ilerletmek için neler yapabilirsiniz, hangi konular için?
+
+832
+02:34:04,512 --> 02:34:07,731
+Onları da son haftalarda değiliz.
+
+833
+02:34:12,180 --> 02:34:12,579
+Evet.
+
+834
+02:34:13,716 --> 02:34:18,796
+Bu arada, şimdi [öğrenci]'ın sorusu hala gözümünün de çektir. Aklıma şöyle bir şey de geldi.
+
+835
+02:34:19,436 --> 02:34:36,615
+Şey anlamında, işte ne bileyim, bir karmaşık bir problemde, mesela önemli bir sıralama probleminde, işte nasıl iş işe döngü yapılırmış, işte yapısal programlar, önceki yapısal programlamayla ilgili derslerde gördüğünüz içerikleri elbette unutmayacaksınız.
+
+836
+02:34:36,615 --> 02:34:40,236
+Eğer temeller derken biraz da orayı kastediyorsanız.
+
+837
+02:34:40,575 --> 02:34:41,376
+Albetta.
+
+838
+02:34:43,603 --> 02:34:59,804
+Onu da ayrıca söyleyeyim. Ama neslinin önemiyle ilgili her şeyi sıfırdan başlayarak da ilgili kavramların hepsini A'dan Z'ye öğreniyor olacağız. Daha sonra ek olarak da Java'nın bazı özel yetenekleri ama sadece ona eksklusif değil yani işte.
+
+839
+02:34:59,804 --> 02:35:11,304
+DatNet'te de şurada da burada da benzer yetenekler aynı veya bazı farklılıklarla yer almaktadır. Ama odamız tabii Java dili üzerine olacak. Oradaki örneklerin demonstrasyonunda.
+
+840
+02:35:11,603 --> 02:35:23,567
+Arkadaşlar, class, object, constructor, inheritance, polymorphism, interface,
+
+841
+02:35:23,567 --> 02:35:27,567
+Arkadaşlar, class, object, constructor, inheritance, property, inheritance, property, inheritance,
+
+842
+02:35:13,652 --> 02:35:40,912
+Peki, [öğrenci] demiş ki, hocam value type reference class ayrımı var mı? Pointer'ları kullanacak mıyız? Şöyle, önümüzdeki haftada diyeceğiz ki, Java'da iki tip veri vardır. Birincisi, primitive, yani bir birim bilgi içeren, o da tam sayılmış, tek bir karaktermiş, Boolean, True ya da False'muş ve ondaklı sayılmış diyeceğiz. İki farklı ondaklı sayı var, Float ve Double.
+
+843
+02:35:41,652 --> 02:35:59,272
+İlkeller diyeceğiz. Bir de sizin yazabileceğiniz herhangi bir sınıftan oluşturmuş nesneler. Onlar da non-primitif diyeceğiz. Primitiflerin ve non-primitiflerin metotlara parametre olarak aktarımında bazı farklar var.
+
+844
+02:35:59,763 --> 02:36:06,804
+Şöyle düşünebilirsiniz, primitive aktardığınız zaman parametre olarak bunu call by value ile aktarıyor.
+
+845
+02:36:07,644 --> 02:36:13,083
+Nesne aktardığınızda veya dizi aktardığınızda ki dizide aslında nesne olarak aktarılıyor.
+
+846
+02:36:13,680 --> 02:36:27,760
+O zaman call by reference olarak aktarıyor gibi bir basit bir ön kabilde bulunabilirsiniz. Ama yine de arada önemli bir nüans var. Onu da ilgili konu geldiği zaman örnekle göreceksiniz zaten.
+
+847
+02:36:28,115 --> 02:36:48,956
+O yüzden [öğrenci] size şimdilik yanıtım. İlkeller için call by value, ilkel olmayan, primitive olmayan yani nesneler için call by reference'ı diyeceğim. Ama o call by reference'ı da ufak bir istisnava. Çünkü call by value of reference. Yani ufak bir yansımla zamanı gelecek söyleyeceğim.
+
+848
+02:36:49,376 --> 02:36:51,036
+Ayrı bir pointer yapısı yok.
+
+849
+02:36:51,615 --> 02:36:56,015
+Yani Java'nın öyle bir önemli özelliği ve güzelliği de var.
+
+850
+02:36:56,556 --> 02:36:58,536
+Belliyet yönetimini siz yapmıyorsunuz.
+
+851
+02:36:59,716 --> 02:37:02,456
+O yükü sizin üzerinizden alıyor.
+
+852
+02:37:03,195 --> 02:37:08,315
+Ayrıca bir pointer veya referans karmaşıklığını da sizden soyutluyor.
+
+853
+02:37:08,636 --> 02:37:09,796
+O konuda daha rahatsız.
+
+854
+02:37:10,655 --> 02:37:12,615
+Önemli soruydu. Teşekkür ederim.
+
+855
+02:37:13,216 --> 02:37:15,615
+Başka sorunuz? Merak ettiğiniz bir şey varsa buyurun.
+
+856
+02:38:21,971 --> 02:38:46,112
+Arkadaşlar, başka soru yoksa o zaman şimdi direkt otomu kapatıyorum. Haftaya arkadaşlar bu Nesliye Yönelimin ilk temel noktalarıyla birlikte dersimize devam edeceğiz. O yüzden hepinizi derse bekliyorum. Katılamazsanız bile mutlaka kayıtlar dersi yedin, izleyin ve daha sonraki haftada aklınıza tıkılanları sonun.
+
+857
+02:38:49,203 --> 02:38:54,043
+Temelli ile haftaya dersimize başlıyor olacağız.
+
+858
+02:38:55,004 --> 02:38:58,724
+Şimdi çarşamba lap saatinde ders yapmayı düşünmüyorum.
+
+859
+02:38:59,344 --> 02:39:00,543
+Büyük olasılıkla yapmayacağım.
+
+860
+02:39:00,863 --> 02:39:11,863
+Ama olup bir durum değişikliği olursa öncesinde sizlere yüz yüze kullandığınız emin adreslerinizi toplu mesaj göndererekten sizlere haberdar ederim.
+
+861
+02:39:13,268 --> 02:39:19,427
+O yüzden sorumuzda olmadığına göre şimdilik Allah'a sınırladık. Sağlıkla kalın, sağlıcakla kalın arkadaşlar.
+
+862
+02:39:21,907 --> 02:39:26,887
+Evet, chatte iyi dilikler var sadece, sıvı yok. Görüşmek üzere arkadaşlar, sağlıcakla kalın.
+
+863
+02:39:27,707 --> 02:39:28,407
+Bunu kapatıyoruz.
+
+864
+02:39:31,148 --> 02:39:34,567
+Tamam, evet son iletiyi kopyalayacaklar, kopyalasın.
+
+865
+02:39:34,987 --> 02:39:36,867
+Anetler açtım, ondan sonra otomu kapatıyorum.

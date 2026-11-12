@@ -1,0 +1,2287 @@
+1
+00:03:59,604 --> 00:04:02,004
+Selamlar arkadaşlar, hoş geldiniz.
+
+2
+00:04:03,924 --> 00:04:05,664
+Bir iki dakika daha bekleyelim.
+
+3
+00:04:06,944 --> 00:04:09,724
+Gelecek arkadaşlar olabilir, sonra başlarız.
+
+4
+00:05:49,555 --> 00:05:53,955
+Evet, kişi sayımızda çok da bir artış olmuyor. Herhalde böyle devam edeceğiz.
+
+5
+00:05:55,775 --> 00:05:59,915
+Biz başlayalım uygulamamıza. Bugün biraz da fazla konularımız var.
+
+6
+00:06:02,815 --> 00:06:04,836
+Ben hemen ekranımı paylaşayım.
+
+7
+00:06:14,163 --> 00:06:33,524
+Şimdi bu hafta son uygulamamızı yapacağız. Dört tane konu var. Typecasting'dan biraz bahsedeceğiz örneklerini. Dosya işlemleriyle ilgili biraz örnekler bakacağız. Sonra işlememişsiniz daha. Inner class ve multi-threader de şöyle bir giriş seviyesinde biraz temellerini konuşacağız.
+
+8
+00:06:34,524 --> 00:06:39,084
+Şimdi typecasting ile ilgili birkaç örneğe bakalım.
+
+9
+00:06:40,115 --> 00:06:43,075
+Casting ne demek? Tip dönüşümleri.
+
+10
+00:06:44,656 --> 00:06:49,815
+Şimdi bizim, önce ben bunu nasıl anlatacağımı söyleyeyim.
+
+11
+00:06:49,956 --> 00:06:51,656
+İki sınıf hazırladım.
+
+12
+00:06:52,156 --> 00:06:53,575
+Type casting'i anlatacağım.
+
+13
+00:06:53,675 --> 00:06:55,575
+Bir tanesinde primitive tipler.
+
+14
+00:06:55,795 --> 00:06:57,716
+Hani bu ilkel tipler diyoruz ya işte.
+
+15
+00:06:58,735 --> 00:07:00,355
+Enteger'ı mesela çok sık görüyoruz.
+
+16
+00:07:00,415 --> 00:07:02,055
+Şunlar bizim primitive tiplerimiz.
+
+17
+00:07:03,536 --> 00:07:04,955
+C dilinde de kullandığımız.
+
+18
+00:07:05,836 --> 00:07:06,475
+Bunları
+
+19
+00:07:06,963 --> 00:07:12,504
+Nasıl burada cast ediyoruz, değiştiriyoruz, birbirlerine dönüşümleri nasıl oluyor?
+
+20
+00:07:12,944 --> 00:07:16,043
+Primitive casting de bu sınıfta bunun örneğini göreceğiz.
+
+21
+00:07:16,043 --> 00:07:28,683
+Object casting de de nesneler arasında, yani sınıflar arasında nasıl tür değişimlerini yapıyoruz bunun üzerine bahsedeceğiz.
+
+22
+00:07:29,423 --> 00:07:34,283
+Şimdi bu type casting de biz primitive tiplerde değişiklik yaparken
+
+23
+00:07:35,475 --> 00:07:44,936
+Şöyle bir olay var. Bir widening casting, bir genişletme, bir de narrowing, daha bir daraltma castingi.
+
+24
+00:07:44,936 --> 00:07:53,436
+Şimdi şunlar, şuradan şöyle ileri sağa doğru gittikçe bu aslında bir ne? Genişletme.
+
+25
+00:07:54,156 --> 00:08:00,056
+Mesela en basit örneğiyle nasıl? Integer bir sayı. İşte nedir? Noktalı da.
+
+26
+00:08:00,468 --> 00:08:04,848
+noktadan sonrası, virgülden sonrası sıfırdır. Öyle bir değeri yoktur.
+
+27
+00:08:04,908 --> 00:08:11,628
+Ama mesela ben bu sayı daha genişletmek, double nedir? Daha geniş bir veri tipidir. Daha fazla veriyi tutar. Neyi tutar?
+
+28
+00:08:12,148 --> 00:08:16,248
+Sayının bir tam sayı kısmı vardır. Bir de virgülden sonraki kısmı da vardır.
+
+29
+00:08:18,163 --> 00:08:22,764
+O yüzden mesela ben integer bir tipi double'a dönüştürürken aslında genişletme yapmış olurum.
+
+30
+00:08:22,943 --> 00:08:27,543
+Tam tersi durumda double'a integer'a dönüştürürken onu da daraltma diyoruz.
+
+31
+00:08:27,603 --> 00:08:30,264
+Aslında orada bir miktarda veri kaybı oluşuyor değil mi?
+
+32
+00:08:30,264 --> 00:08:39,124
+Mesela sayı, virgülde bir sayı, virgülden sonraki bir kısmı var ama ben onu double integer dönüşümü yaparken o virgülden sonraki kısmını almıyorum.
+
+33
+00:08:39,423 --> 00:08:41,343
+Bunu işte narrowing, daraltma demişler.
+
+34
+00:08:42,644 --> 00:08:44,983
+Mesela örneğine bakalım, genişletme örneğine.
+
+35
+00:08:45,844 --> 00:09:00,864
+Bir integer x'im varmış. Değeri 5'miş. Sonra bir double y tanımlamışım. Bu demişim ki x'i göstersin. X'e bunu eşitle. Sonra ben bunu yazdırdığım takdirde çalıştıralım da bunları.
+
+36
+00:09:08,340 --> 00:09:16,340
+Şimdi şu iki satır çalıştığında güzel x5'ti onu 5 yazdı. y de doubledi. Bakın onu nasıl yazdı hemen.
+
+37
+00:09:16,340 --> 00:09:25,340
+Virgülü bir şekilde 5.0 olarak yazdım. Burada ne yapmış oldum? Genişletme yapmış oldum. Böyle bir casting.
+
+38
+00:09:25,340 --> 00:09:30,187
+Bir diğer tipim de, bakın char.
+
+39
+00:09:30,899 --> 00:09:45,000
+Neye dönüştüyorum? Char olan bir şey. Integra. Char neredeydi? Integra'ın daha alt tipi olarak görünüyor. Yani daha alt tipi, daha dar bir şey. Char'dan integra dönüşüm o zaman ne grubuna giriyor? Genişletmeye giriyor.
+
+40
+00:09:45,819 --> 00:09:55,000
+Burada da şimdi Char değerli her birinin şöyle bunlar büyük harf olur, küçük harf olur. Char neyse tek karakter tutuyor.
+
+41
+00:09:56,211 --> 00:10:03,631
+Bu küçük harf olur, büyük harf olur işte tek rakamlar olabilir. Bunların hepsinin bu eski tablosunda bir dönüşümü var.
+
+42
+00:10:04,831 --> 00:10:09,812
+Mesela büyük A değerinin dönüşümü neymiş? Şurada bize çıktısını verdi şimdi integer şu çarı.
+
+43
+00:10:10,312 --> 00:10:15,231
+Integer bir değeri atadığım zaman çıktı ne geldi bana? 65 geldi.
+
+44
+00:10:17,991 --> 00:10:21,151
+Bunun demek ki aski dönüşümü 65'miş.
+
+45
+00:10:22,163 --> 00:10:25,384
+yazdırdım taktirde integer değer bu şekilde çıktı.
+
+46
+00:10:27,564 --> 00:10:29,564
+Daha sonra geliyorum.
+
+47
+00:10:31,223 --> 00:10:32,524
+Bir diğer örneğim de dedim.
+
+48
+00:10:33,344 --> 00:10:34,844
+Daha olayı daraltma üzerine.
+
+49
+00:10:35,463 --> 00:10:37,203
+Burada da double'dan integer'a.
+
+50
+00:10:53,875 --> 00:11:18,995
+kusura bakmayın kesmek zorunda kaldım. Şimdi daraltma olayında da dedik ki double'dan integer'e mesela bu bir daraltma işlemi. Double bir değerim vardı. Bunun değeri 7.8'miş. Sonra ben bunu gidip integer yapayım dediğimde mesela şu da şunu da vermemi istiyor. Artık integer yap.
+
+51
+00:11:19,508 --> 00:11:32,628
+Ben bunu integer'a çevirdiğim zaman, integer bir şey işaret ettirdiğim zaman artık onun değerinde şu virgilden sonraki kısmı atıyor bakalım. Direkt almış. Ben sisteme at, print, bu integer yazdı dediğimde 7 yazdırmış.
+
+52
+00:11:34,388 --> 00:11:45,628
+Bu şekilde daraltma işlerinde tabii biraz daha riskli oluyor, dikkatli olmak gerekiyor ama genişletirken daha rahat bir şekilde böyle eşleme, işaretlemeleri yapabiliyoruz.
+
+53
+00:11:47,988 --> 00:11:55,988
+Bir de string ile ilgili bahsedecek olacağımız bir tane parse etme diye bir olayımız var string değerlerde de.
+
+54
+00:11:56,988 --> 00:12:02,988
+Bu arada da mesela şöyle bir stringim olsun. String'in değeri sadece böyle içinde 80 yazıyor.
+
+55
+00:12:02,988 --> 00:12:08,988
+Şimdi bu double'a da dönüşebiliyor, integer'a da dönüşebilir bir değer değil mi?
+
+56
+00:12:08,988 --> 00:12:15,916
+Ben bunu double'a çevirmek istesem şöyle bir yöntemle yolla bunu yapmak zorundayım.
+
+57
+00:12:16,019 --> 00:12:20,740
+double nokta parseDouble diyorum. Bu double sınıfına ait bir metodum.
+
+58
+00:12:21,180 --> 00:12:28,379
+parseDouble diye bu stringi buraya verdiğim zaman bu artık şu değişkene bu değerini double haline atıyor.
+
+59
+00:12:28,500 --> 00:12:31,659
+Yalnız double'ı hemen noktalı olacak. 80.0.
+
+60
+00:12:33,059 --> 00:12:36,220
+Aynı şeyi integer versiyonunda yapmak istediğimde ne yapıyor?
+
+61
+00:12:36,220 --> 00:12:42,220
+Bu sefer integer sınıfından parseInt metodunu kullanıyorum. Aynı stringleri veriyorum.
+
+62
+00:12:42,644 --> 00:12:48,084
+Ve bunu buna eşitleyip yazdırdığım takdirde buna integer'a çevrilmiş hali.
+
+63
+00:12:48,163 --> 00:12:50,203
+Burada tabi hani düzgün bir değerin olması lazım.
+
+64
+00:12:50,764 --> 00:12:55,024
+Yazılar vesaireler diye şöyle bir sayının olması durumunda bunu çeviriyor.
+
+65
+00:12:56,584 --> 00:13:02,283
+Ama mesela işte bu virgülü bir sayı olduğunda tüm integer'a çevirme de sıkıntı oluyor.
+
+66
+00:13:03,379 --> 00:13:13,299
+Onu integer haline alamıyor ama bu halinden direkt hani genişletme diyoruz değil mi? Double'a mesela double'a dönüşümünü yapabiliyor, integer'a dönüşümünü yapabiliyor.
+
+67
+00:13:15,139 --> 00:13:18,519
+Bu şekilde primitive tiplerdeki dönüşümlerimiz oluyor.
+
+68
+00:13:20,660 --> 00:13:26,039
+Sonra bu castinglerle ilgili dedik ki bahsedeceğimiz diğer bir konuda
+
+69
+00:13:27,155 --> 00:13:32,056
+Nesneler arasında nasıl oluyor bu type dönüşümleri, tip dönüşümleri?
+
+70
+00:13:32,855 --> 00:13:35,535
+Daha doğrusu bu dönüşüm olaylarında da şöyle bir şey var.
+
+71
+00:13:36,775 --> 00:13:39,915
+Nesne tipi değil, referansı değişiyor.
+
+72
+00:13:39,915 --> 00:13:49,175
+Yani her nesnenin gösterdiği bir referans, içerdiği bir referans değeri var ve o inşaret ettiği referanslarını o diğer eşitlediğimiz nesne bunları alıyor.
+
+73
+00:13:50,004 --> 00:14:09,543
+Burada mesela typecasting'imiz ancak hangi sınıflar arasında yapabiliriz? Birebiriyle kalıtım almış sınıflar arasında, kalıtım oluşmuş sınıflarda bunları yapabiliriz. Birbirinden bağımsız hikaye sınıfı, birbirine dönüşüm yapalım gibi bir şey diyemeyiz. Ancak aralarında kalıtım olmaları lazım. Kalıtım olması lazım.
+
+74
+00:14:10,644 --> 00:14:33,124
+Şimdi mesela bu örnekte ben size ne göstereceğim dedim. Object Casting'i göstereceğim. Şimdi şu sınıf yapısı size biraz tuhaf gelebilir. Hemen onu da açıklayayım. Belki daha önceki derslerde de bunu yazmışızdır. Şu bizim açılan sayfamız, bizim oluşturduğumuz bu bir dosya değil mi? Bizim bu dosyamızın içinde biz hep o zamana kadar bir tane class koyardık.
+
+75
+00:14:33,779 --> 00:14:40,599
+Zaten o koyduğumuz class'ın erişim belirteceğini public yapardık ki diğer sınıflardan erişip de nesnesini üretebilelim diye.
+
+76
+00:14:41,099 --> 00:14:47,580
+Ve o sınıfın ismi, zaten dosyanın ismi, object, casting, Java. Direkt sınıfımızın ismi oluyordu.
+
+77
+00:14:48,059 --> 00:14:57,100
+Şimdi bu bir, bizim bu dosyada başka sınıflarda yazabilmemizin imkanı var. Bakın ben burada başka başka sınıflarda yazmışım.
+
+78
+00:14:57,844 --> 00:15:24,684
+Mesela bir Animal sınıfı yazmışım. Sonra başka bir Call sınıfı yazmışım. Bunlar ayrı. Parantezini aç, parantezini kapa. İçin istediğin gibi da şu sınıflar. Bunların bir şartı var. Aynı dosya içinde böyle bir sürü sınıf oluşturabilmem. Başına şöyle bir erişim belirteci koymamam gerekiyor. Yani bir public yapamam bu class'ı. Bir dosya içerisinde ancak bir tane public class olur. Bunların erişim belirteci ne o yüzden?
+
+79
+00:15:25,203 --> 00:15:32,963
+Hiçbir şey almamasına default erişim belirtici diyoruz. Default erişim belirtici olmasının anlamında şu oluyor.
+
+80
+00:15:34,403 --> 00:15:39,323
+Bu sınıf içinden erişebiliyor. Aynı paket içinden de erişim oluyor bu sınıflara.
+
+81
+00:15:40,663 --> 00:15:49,203
+Yani mesela şunlar birine paketlere. Ben şurada oluşturduğum sınıflara gidip işte diğer şu primitive casting sınıfından da erişebilirim.
+
+82
+00:15:49,203 --> 00:15:52,223
+Niye bunlar? Çünkü ikisi de type casting sınıfının altında.
+
+83
+00:15:52,628 --> 00:15:56,168
+Bu animal sınıfının, call sınıfının böyle bir özelliği oluyor.
+
+84
+00:15:56,228 --> 00:15:57,368
+Bunu da yeri gelmişken açıklayayım.
+
+85
+00:15:57,448 --> 00:16:01,848
+Belki diğer uygulamalarda ne anlatmışımdır, söylemişimdir ama bazen tuhaf gelebiliyor.
+
+86
+00:16:02,008 --> 00:16:04,568
+Neden işte bir sınıfa başka sınıflar mı koyduk gibi değil.
+
+87
+00:16:04,648 --> 00:16:05,508
+Bu bir dosyadır.
+
+88
+00:16:06,008 --> 00:16:09,968
+Biz buraya istediğimiz kadar bu şekilde default erişim belirti açtı diyelim.
+
+89
+00:16:10,068 --> 00:16:11,348
+Sınıflar oluşturabiliriz.
+
+90
+00:16:11,448 --> 00:16:14,068
+Diğer paketlerden de bunları çağırabiliriz.
+
+91
+00:16:15,028 --> 00:16:18,688
+Pardon aynı paket içindeki diğer sınıflardan çağırabiliyoruz.
+
+92
+00:16:20,244 --> 00:16:35,864
+Şimdi, bu sınıfta önce public class'ın içinde mail metodu var. Oraya gelmeden önce hangi sınıflarda bu mail metodunda nesneler oluşturacağız? Onun bir hizahını yapalım. Siz de görüyordunuz zaten, anlamışsınızdır bir miktar.
+
+93
+00:16:35,864 --> 00:16:44,364
+Bir animal sınıfı var, bir de call sınıfı var. Call sınıfı animal'dan kalıtımla alıyor, extend ediyor.
+
+94
+00:16:47,796 --> 00:17:01,416
+Bu extent işleminde hangi metotlar var? İkisinde de to-string metotları, işte to-stringin olayı neydi? Sistema deyip nesnenin adını verdiğimizde bize kolaylık sağlıyordu.
+
+95
+00:17:01,496 --> 00:17:06,715
+Nesnenin içeriğini işte yazdırabiliyorduk veya istediğimiz bir şeyi yazdırıyorduk.
+
+96
+00:17:07,675 --> 00:17:11,096
+Burada return ne direkt? This is an animal gibi bir şey yazdıracak.
+
+97
+00:17:13,076 --> 00:17:16,936
+Call sınıfı da aynı şekilde. O da this is a call yazdıracak.
+
+98
+00:17:18,076 --> 00:17:21,976
+Siz de mount print alan ile çağırdığım zaman enin call nesnesini.
+
+99
+00:17:23,016 --> 00:17:25,016
+Sonrakisinin içinde de aynı metottan var.
+
+100
+00:17:26,695 --> 00:17:28,115
+My method isimli.
+
+101
+00:17:29,428 --> 00:17:38,748
+Animal sınıfındaki diyecek ki Running Animals metod çalıştığı zaman, course sınıfında çalışırsa eğer bu, co nesnesi bunu çalıştırıyorsa ne yapıyordu?
+
+102
+00:17:38,948 --> 00:17:48,288
+Daha özelleşmiş olduğu için kendi alt sınıfında yazdığını kullanıyordu. O da Running Course metod diye bunu çalışacak. En çiftçisi böyle bir şey olacak.
+
+103
+00:17:51,548 --> 00:17:54,648
+Şimdi gelelim bunları nasıl kestetmişiz ona bakalım.
+
+104
+00:17:56,915 --> 00:17:58,915
+önce basitçe
+
+105
+00:17:58,915 --> 00:18:02,915
+bir yandan açıkçalarını da görelim çalışsın
+
+106
+00:18:09,140 --> 00:18:22,200
+Şimdi birer nesne oluşturuyor. Mesela önce Kov sınıfından bir tane oluşturayım. Normal, klasik nesne oluşturma biçimi. İsmi Daisy olsun diyor. İneğimize bir isim verdik.
+
+107
+00:18:22,675 --> 00:18:29,955
+Bunu yazdırdığım zaman ne yapacak? ToString metodunun içi çalışacak. ToString metodunun içinde şöyle bir şey return etmişiz.
+
+108
+00:18:30,135 --> 00:18:38,056
+This is a call. Bunu yazdığını yazdı. Diğeri basitçe my metodunu çağırıyor. My metod da ne diyordu? RunningCourseMethod.
+
+109
+00:18:38,675 --> 00:18:45,036
+Tamam, bu kısmı biliyoruz. O sınıftan bir nesne oluşturdum. Güzel güzel onun içeriğini ve metodunu yazdırdım.
+
+110
+00:18:45,815 --> 00:18:47,155
+Aynı şeyi Animal için yapayım.
+
+111
+00:18:47,892 --> 00:19:06,951
+Animal'dan da bir nesne oluşturdum. O da direkt Animal, Anim, New Animal. Güzel. Bunun da içeriğini yazdır dediğim zaman Animal'daki to string çalışacak. O da decision Animal yazıyordu. Sonra Animal'un My metodunda da ne yazıyordu? Running Animals metod yazıyordu. Bu da güzelce çalıştı.
+
+112
+00:19:09,092 --> 00:19:13,231
+Şimdi gelelim bunlar arasındaki casting olaylarına.
+
+113
+00:19:15,412 --> 00:19:23,192
+Benim şurada tanımladığım nesnemi, base olan neydi? Bir koldu, bir alt sınıftan oluşmuş bir nesneydi.
+
+114
+00:19:23,932 --> 00:19:26,991
+Annem ise animal'dan üst sınıftan oluşmuş bir nesneydi.
+
+115
+00:19:28,291 --> 00:19:34,132
+Şimdi upcasting olayında biz nesneler arasında şöyle bir şey yapıyoruz.
+
+116
+00:19:35,731 --> 00:19:41,672
+Child to parents, çocukta ney? O üst sınıfa doğru bir casting işlemi.
+
+117
+00:19:42,387 --> 00:19:52,307
+Daisy çocuktu. Alt sınıftı yani. Bunu animal işaret edecek şekilde ne yaptım? Animal'a böyle bir kest ettim.
+
+118
+00:19:53,827 --> 00:19:58,887
+Buradaki olay animal artık şu animal artık.
+
+119
+00:20:00,567 --> 00:20:03,987
+Daisy ona işlendiği için, ona atandığı için gibi düşünün.
+
+120
+00:20:04,256 --> 00:20:26,476
+Daha bir özellikleri gelişmiş oldu. Yani üst sınıf artık şu alt sınıfta değil mi alt sınıfın da metotlarını çağırabilir. Daha fazla bir neye sahip olmuş oldu, üye alana sahip olmuş oldu, metoda sahip olmuş oldu, daha bir genişlemiş oldu. Ona böyle bir özellik katmış oluyor upcast olması.
+
+121
+00:20:31,763 --> 00:20:44,243
+Daisy'yi animal'a bu şekilde atamadan sonra artık animal'ı yazdırdığım zaman, bu bir animal diyen nesne artık bu bir call demeye başlayacak.
+
+122
+00:20:44,364 --> 00:20:51,824
+Neden? Çünkü dediğimiz gibi biz burada Daisy'nin özelliklerinde artık animal'ın kullanılabilirliğini vermiş olduk.
+
+123
+00:20:52,703 --> 00:20:54,263
+Böyle bir genişletme yapmış olduk.
+
+124
+00:20:56,307 --> 00:21:05,648
+Aynı şekilde Enum artık My Method'u çağırdığı zaman, o COV sınıfındaki My Method'u çağırılmış oluyor.
+
+125
+00:21:07,268 --> 00:21:10,748
+Upcasting'da böyle Child to Parent diyoruz.
+
+126
+00:21:11,288 --> 00:21:12,907
+Daisy'yi Enum'e atadık.
+
+127
+00:21:12,907 --> 00:21:15,407
+Burada şu parantez içindeki Enum'a.
+
+128
+00:21:15,763 --> 00:21:21,663
+Bir notasyonu göstermemiz iyi olabilir ama buna çok da gerek duymuyor.
+
+129
+00:21:21,743 --> 00:21:25,283
+Bunu sildiği takdirde de gayet doğru bir şekilde çalışıyor.
+
+130
+00:21:26,063 --> 00:21:33,983
+Ama downcasting'te, downcasting yaparken orada o parantezler ve içine yazacağımız sınıflar bizim için önemli.
+
+131
+00:21:35,763 --> 00:21:43,983
+Downcasting'in olayı da parent bir nesne var, sınıftan bir nesne var. Onu bir child sınıftan bir nesneye atama gibi bir durum var.
+
+132
+00:21:43,983 --> 00:21:50,864
+Burada da mesela şimdi bir tane animal nesnesi oluşturduk. Tamam, new code dedik.
+
+133
+00:22:01,811 --> 00:22:12,491
+co sınıfı da aynı bir c nesnesine işaret ettiriliyor ve bu sayede artık biz hem n1 hem c'yi ne olarak görüyoruz?
+
+134
+00:22:13,271 --> 00:22:16,152
+co olarak görüyoruz, alt sınıf olarak görüyoruz.
+
+135
+00:22:16,271 --> 00:22:17,791
+Buna da downcasting demişler.
+
+136
+00:22:17,891 --> 00:22:28,391
+Şu işleme, başlangıçta bir animal belirteci vererek oluşturduğum bir nesneyi bu şekilde atamakla down ettiğimi söylemiş oluyorum.
+
+137
+00:22:29,940 --> 00:22:41,619
+Up casting, down casting bu şekilde oluyor. Böyle nesneleri, içeriklerini, kabiliyetlerini genişletebiliyoruz, arttırabiliyoruz.
+
+138
+00:22:49,172 --> 00:22:57,132
+Castinglerden bahsedeceğimiz şey bu kadar. Bundan sonra bakacağımız konumuz file'lar olacak.
+
+139
+00:23:04,147 --> 00:23:13,527
+Kıbrıca create file ile başlayalım. Sonra dosyaya yazalım, okuyalım ve dosyayı silmeyi görelim.
+
+140
+00:23:18,579 --> 00:23:21,460
+Şimdi file işlemlerinde biz
+
+141
+00:23:21,460 --> 00:23:31,119
+Java'nın hangi paketi I.O.'da file sınıfı var. Bunu kullanacağız. Bunun metotlarını kullanacağız.
+
+142
+00:23:31,480 --> 00:23:36,740
+Tabii başka başka sınıflar ve metotlar da olacak. Onları da ileriki örneklerde göreceğiz.
+
+143
+00:23:41,683 --> 00:23:45,624
+Şimdi bir fail'ı nasıl oluştururum? Bunun örneğine bakalım.
+
+144
+00:23:47,344 --> 00:23:49,764
+Create File Sniper'ın main metodun içindeyim.
+
+145
+00:23:51,443 --> 00:24:00,844
+Öncelikle fail işlemlerinde biz bir dosyayı oluşturma noktasında, işte ileride yazma, okuma vesairelerde bunlar hep
+
+146
+00:24:00,844 --> 00:24:06,684
+Checked Exception kategorisine giren o IO Exception'ları gerektirdiği için
+
+147
+00:24:08,147 --> 00:24:27,287
+Bizi ne yapıyordu Java? Bunları diyordu bir try-catch içerisine yaz veya işte metodun kenarına trolls, blah blah, trolls, IOException gibi böyle belirt. Her ikisinden birini yap ya try-catch içine al bu metotları ya da hangi metotla çağırıyorsan onun kenarına bir trollsla hangi exception'leri fırlatacağını belirt.
+
+148
+00:24:28,747 --> 00:24:31,947
+Bunu try-catch biz sıklıkla kullanacağız dosya işlemlerinde.
+
+149
+00:24:33,299 --> 00:24:43,700
+Şimdi file sınıfından bir obje nasıl oluşturuyoruz? Sistemimiz basit. Şöyle daha bir güzellik görüntüsün. Bir satıra boş ver bakayım.
+
+150
+00:24:45,299 --> 00:24:57,900
+Klasik sınıf. Nesne adı, eşittir, new, sınıf adı ve ona constructor'ı hangi parametreleri alacaksa onu gönderme şeklinde.
+
+151
+00:24:58,612 --> 00:25:05,692
+Şimdi buradan biz dosya adını veriyoruz. Yapıcı metoda dosya adını gönderiyoruz. Şöyle iki tane işareti içinde.
+
+152
+00:25:07,352 --> 00:25:18,172
+Ben bu objeyi, bu file objesini bu şekilde oluşturduğumda şöyle dosya yolu herhangi bir şey belirtmezsem bunu nereye gidip oluşturacak?
+
+153
+00:25:18,172 --> 00:25:23,592
+Şu benim bulunduğum proje, benim projemin adı neymiş? Uygulamalar diye bir projeymiş.
+
+154
+00:25:24,372 --> 00:25:49,252
+bunun tutulduğu yerdeki classer'de ki orası şeyden görebilirsiniz. Properties de şuradan çıkar. Nerede oldu? Bu onun dosya yoludur. Buradaki classer, uygulamalar classer'in içindesinden. Workspace'den bir yerde benimkiler. Workspace'in içinde.
+
+155
+00:25:52,723 --> 00:26:16,503
+Workspace'in içinde uygulamalar class üzerinde. Benim birazdan oluşturacağım dosyam buraya gelecek. Bakalım yapalım, oluşturalım gelsin. Şimdi işlem adımlarına da bakalım nasıl oluşturuyor. Şöyle bir if controlüm var. Burada şunu bakmak istiyorum. Ben create new file diyeceğim.
+
+156
+00:26:19,028 --> 00:26:35,928
+Ve eğer böyle bir isimde bir dosya, o gösterdiğim lokasyonda bu isimde bir dosya yoksa burası true dönecek ve işlem gerçekleşecek. Şu satırı bana okuyacağım işte file oluşturuldu sonra o file'ın name'ini yazacak.
+
+157
+00:26:36,435 --> 00:26:49,476
+Ama eğer burası false dönerse bu ne demek? Check etti bu dosya adını, baktı. Böyle bir dosya zaten var. O zaman bana bu hata mesajını, yani else kısmında bana bunu yazacak. Böyle bir file zaten var diyecek.
+
+158
+00:26:49,476 --> 00:27:01,776
+O zaman bunu bir çalıştıralım, bakalım. Create file'ı bir oluştursun. File'ı create etti.
+
+159
+00:27:02,256 --> 00:27:11,816
+Geliyorum, o demin gösterdiğim klasörün içinde, bakın, dosyam isimleri txt'ye, istediğim uzantıda yazabilirim, illa txt'ye şart değil. Geldi buraya kaydetti.
+
+160
+00:27:13,456 --> 00:27:21,355
+Burada tabii istediğimiz yerleri kaydedebiliriz, edebiliriz. Mesela şuraya dosya yolunu belirtecek şekilde, şu mesela benim desktop'um.
+
+161
+00:27:22,836 --> 00:27:26,056
+Ben bunu alıp buraya koyduğum takdirde.
+
+162
+00:27:26,548 --> 00:27:35,548
+Benim artık nereye gider? Desktop'ımda. Masa üstüme gider. Bu da Windows 3.0 C.2.0'a koymak gerekiyor.
+
+163
+00:27:36,548 --> 00:27:48,347
+Bunu mesela oluşturduğu zaman, şöyle bir gelip bakalım. Masa üstüne de dosyam diye bir dosya getirdi, koydu.
+
+164
+00:27:58,324 --> 00:28:04,864
+Veya burada bir süre şimdi her zaman bu dosya yollarını bu şekilde yazmak istemeyebiliriz.
+
+165
+00:28:05,104 --> 00:28:08,384
+Pratik bir başka yöntemimiz de şöyle oluyor.
+
+166
+00:28:08,524 --> 00:28:11,944
+Bize şu şekilde de bir imkan tanıyor.
+
+167
+00:28:12,524 --> 00:28:14,024
+Buraya iki tane parametre alırız.
+
+168
+00:28:14,124 --> 00:28:15,544
+Bir tanesi path'tir.
+
+169
+00:28:15,864 --> 00:28:16,864
+Şöyle bir string değer.
+
+170
+00:28:17,903 --> 00:28:18,224
+Neyi?
+
+171
+00:28:18,744 --> 00:28:21,464
+O dosyanın yolunu, virgül dosyanın adını.
+
+172
+00:28:22,003 --> 00:28:31,903
+Şuraya o dosya yolu mesela ben burada direkt onu bir string değişkene atadım bu dosya yoluna. MyDesk.pet dediğimi şuraya gelip veririm, virgül koyarım.
+
+173
+00:28:33,163 --> 00:28:42,884
+Bu ya direkt tırnak işareti için tabi uzun uzun bu da yazılabilir ama dediğim gibi bir sürü file ile uğraştığınız zaman hani pet bir kenarda dursun, tık tık hep onu kullanayım şeklinde bakabilirsiniz olaya.
+
+174
+00:28:43,604 --> 00:28:49,903
+Böyle yaptığım takdirde de ne yapacak? Yine desktop'a verdiğim noktaya gidecek ve bu dosyayı oluşturacak.
+
+175
+00:28:51,764 --> 00:29:01,784
+Bu yöntemi de söylemiş olalım. Sonra biz yine devam edelim. O gitsi bizim klasik proje dosyamızı oluştursun basit şekilde.
+
+176
+00:29:02,004 --> 00:29:04,864
+Zaten ona az önce dosyamı burada oluşturmuştuk.
+
+177
+00:29:05,723 --> 00:29:09,384
+Şimdi oluşturma işlemimiz böyle basitçe.
+
+178
+00:29:09,940 --> 00:29:12,500
+Sıra geldi buna yazma işlemine.
+
+179
+00:29:16,500 --> 00:29:42,980
+File'a nasıl yazıyoruz? Burada da yine IO paketinden FileWriter'ı kullanacağız. FileWriter diyorum, sınıfın adını veriyorum. Nesne adını oluşturuyorum. New FileWriter hangi file? Buraya da file ismini verdim. Sonra basit bir metodum var, write metodu. Ne yapacağım? Bu nesne, .write neyi yaz? Şunu içindeki yazıyı yaz.
+
+180
+00:29:43,476 --> 00:29:54,276
+Farklısı string herhangi bir şey de yazılabilir. Bunu buraya yazdım. Daha sonra bu dosyayı kapatıyorum. Bu yazma işlemini kapatıyorum.
+
+181
+00:29:54,276 --> 00:30:00,596
+Ve konsolla şöyle bir bilgi yazdıracakmışım. Başarılı bir şekilde dosya yazma gerçekleşti diye.
+
+182
+00:30:00,596 --> 00:30:05,875
+Ve exception durumunda da bana zaten bunu fırlatacak. Bunu da bir çalıştıralım.
+
+183
+00:30:05,875 --> 00:30:09,476
+Write file.
+
+184
+00:30:10,228 --> 00:30:16,347
+çalıştırdığımız takdirde başarılı bir şekilde diyor. Buraya yazıldı. Hemen gidip bakalım yazmış mı.
+
+185
+00:30:26,804 --> 00:30:31,624
+Evet, demin yazdığımız satırı aynen almış ve dosyaya yazmış.
+
+186
+00:30:36,564 --> 00:30:47,324
+yazma işlemimiz dedik, file writer'a bir nesne oluşturup write dedik. Daha sonra işlemimiz bitince de close'la kapadık ve işlemi bitirdik.
+
+187
+00:30:48,903 --> 00:30:58,804
+Peki böyle evet dosyayı açıyoruz, tıklıyoruz, okuyoruz içini. Bir de kod üzerinden okumak istedik nasıl yapacağız, nasıl read edeceğiz bu file ile. Ona bakalım.
+
+188
+00:31:02,548 --> 00:31:03,407
+Buraya geleceğim.
+
+189
+00:31:05,467 --> 00:31:06,147
+Bu sefer,
+
+190
+00:31:08,247 --> 00:31:10,247
+Scanner sınıfını kullanarak,
+
+191
+00:31:11,807 --> 00:31:12,407
+oradan,
+
+192
+00:31:13,127 --> 00:31:15,008
+o oluşturduğum nesne üzerinden,
+
+193
+00:31:15,207 --> 00:31:17,587
+satır satır okumumu gerçekleştireceğim.
+
+194
+00:31:18,647 --> 00:31:19,327
+Önce hemen,
+
+195
+00:31:20,048 --> 00:31:23,028
+hangi dosyayı okuyacağımı ona bir söylüyorum,
+
+196
+00:31:23,028 --> 00:31:24,528
+faydını belirtiyorum.
+
+197
+00:31:25,428 --> 00:31:32,648
+İsmini verdim dosyanın. Daha sonra bir scanner nesnesi oluşturuyorum bu obje üzerinden. Bunu okuyacak çünkü.
+
+198
+00:31:33,548 --> 00:31:41,848
+Ve gidiyorum bir while döngüsünde diyorum ki bir sonraki satır var oldukça sen git bunu bana oku. Daha veri oldukça oku.
+
+199
+00:31:42,628 --> 00:31:46,968
+Onu bir string değişkenine attı çünkü en son konsola bunu yazdırmanı istiyorum.
+
+200
+00:31:48,108 --> 00:31:50,168
+String data isimli bir değişken de.
+
+201
+00:31:51,008 --> 00:31:51,908
+MyReader.
+
+202
+00:31:52,352 --> 00:32:02,091
+Evet, bizim scannerımızda wireader.nextline okuya okuya gelecek. En sonunda kapatacağız yine ve bu şekilde işlemi bitireceğiz.
+
+203
+00:32:02,872 --> 00:32:13,412
+Geç kısmı yine bir işte ne fırlatacağım? Mesela dosya olmaması durumunda, bir exception fırlatacak, böyle bir dosyanın olmaması, böyle bir dosya ismini bulamaması durumunda.
+
+204
+00:32:13,412 --> 00:32:17,132
+Bunun için de mutlaka bu terk etçi oluşturmam gerekecek.
+
+205
+00:32:19,284 --> 00:32:22,324
+Kali'da bir okuyalım. Bize konsola yazdırsın.
+
+206
+00:32:26,708 --> 00:32:32,928
+Dosyanın içinde yazan ilgi buydu. Bunu da bana konsola bu şekilde döndürmüş oldu.
+
+207
+00:32:34,748 --> 00:32:40,568
+Yazarken dedik, write ile yazdık. Okurken de böyle bir scanner ile alıp okuyabildik.
+
+208
+00:32:42,508 --> 00:32:49,028
+Peki bir de bu dosyayı create etmeye gördük, oluşturmaya gördük. Silme işlemi yapabilir miyiz? Yapabiliriz.
+
+209
+00:32:49,028 --> 00:32:51,508
+Onu da kod üzerinden şöyle yapıyoruz.
+
+210
+00:32:54,259 --> 00:33:21,600
+Hangi file olduğunu yine bir file nesnesi oluşturup belirtiyoruz. MyObject, o file'ın ismini veriyoruz. Daha sonra şurada Delayed'i çalıştırdığımızda bu True veya False dönecek bir şey. MyObject.Delayed dediğim zaman eğer bakacak böyle bir dosya var mı? Var. Gidecek, onu silecek. Oradan kaldıracak.
+
+211
+00:33:22,036 --> 00:33:24,675
+Ve bana da konsola şöyle bir bilgi döndürecekmiş.
+
+212
+00:33:25,475 --> 00:33:26,776
+Fahit silindi şeklinde.
+
+213
+00:33:27,675 --> 00:33:28,915
+Bunu konsoldan okuyacağım.
+
+214
+00:33:29,915 --> 00:33:33,056
+Şimdi bizim dosya kalan neredeydi? Burada yerinde duruyor.
+
+215
+00:33:33,935 --> 00:33:38,756
+Bu kodu çalıştırdığımda onun oradan kalkmış gitmiş olması, silinmiş olması gerekecek.
+
+216
+00:33:47,539 --> 00:34:00,299
+ekrana bilgi mesajını doğru çalışan kısmından getirdi. Delayed file dedi. Ben şimdi gelip bakıyorum ki, classörde artık o texte file'im kalmamış, silinmiş.
+
+217
+00:34:03,988 --> 00:34:19,387
+Şimdi dosyamız bu şekilde, işte stringleri yazıyoruz, integerleri vs. Bir de böyle bir nesneyi alıp, nesneleri hatta nasıl koyuyoruz ve daha sonra bu nesneleri nasıl okuyoruz dosyada.
+
+218
+00:34:28,436 --> 00:34:40,476
+dediğimiz bir byte dizisine dönüştürüp, byte'a dönüştürüp o şekilde dosyayı yazma ve daha sonra de serialize yaparak oradan nesneleri okuma.
+
+219
+00:34:40,655 --> 00:34:45,996
+Bu sefer de düzgün okuna bir hale getirme işlemi var. Serialize işlemi.
+
+220
+00:34:47,136 --> 00:34:52,136
+Bununla ilgili de örneklerini görelim. Nesneleri alalım, dosyaya yazalım.
+
+221
+00:34:53,172 --> 00:34:56,311
+Daha sonra da yazdığımız yerden bu mesneleri okuyalım.
+
+222
+00:35:02,324 --> 00:35:03,403
+Şimdi bunun için
+
+223
+00:35:08,211 --> 00:35:30,391
+Benim bu serialize işlemini yapabilmem için o hangi nesneleri bu şekilde serialize edip dosya yazacaksam onların, o sınıfın, o nesnenin ait olduğu sınıfın bir kere şu Java.io Serializable interface'ini ne yapması? İmplement etmesi lazım.
+
+224
+00:35:30,391 --> 00:35:35,311
+Ben şimdi mesela employee nesneleri çalışan nesnelerini yazacağım dosyaya.
+
+225
+00:35:36,052 --> 00:35:39,731
+Öncelikle bu sınıfa burayı implement ettirdim.
+
+226
+00:35:41,052 --> 00:35:47,412
+Şöyle genellikle bir ID kısmı ister işte, öğrenciyen ailesi bunu yazmazsak bize bir warning çıkarır.
+
+227
+00:35:47,412 --> 00:35:50,452
+Hata değildir warning, çalışmamız bir şekilde etkilemez.
+
+228
+00:35:51,231 --> 00:35:57,992
+Ya bunu şu ifadeyi ekleyerek, şu satırı ekleyerek şöyle bir ID'yi bu hatadan kurtuluruz.
+
+229
+00:35:58,712 --> 00:36:00,212
+Veya bu tarz hatalarda.
+
+230
+00:36:00,947 --> 00:36:17,347
+Yine Daire Ece'nin bize diğer bir önerisi de bu warningleri oradan kaldırmak için suppress warnings dediği şöyle bir ifade yazarsa, serileştirme ile ilgili uyarıları, kapatmış, baskılamış olursun manasında bir şey oluyor.
+
+231
+00:36:18,167 --> 00:36:19,327
+Böyle yazabiliyoruz.
+
+232
+00:36:21,068 --> 00:36:21,467
+Şimdi
+
+233
+00:36:22,099 --> 00:36:47,579
+Benim employee sınıfım var dedim. Hemen employee sınıfında kısaca tanıyalım. Bir employee nesnesinin hangi üye alanları varmış? Adı olacak, adresi olacak, SSN olacak. SSN işte çalışan kimlik numarası gibi bir şey oluyor çalışanlara, şirketteki numaraları. Bir de işte herhangi bir numara, bir telefon numarası belki o tarz bir şey.
+
+234
+00:36:49,588 --> 00:36:57,128
+Şimdi bir de sınıfta basitçe to string metodunu da yazmışız. İçeriğini bize string olarak basabilelim diye.
+
+235
+00:36:59,828 --> 00:37:09,828
+Şimdi ben şurada bu employee nesnelerini oluşturup dosyaya yazmaya bir bakayım nasıl yapıyoruz?
+
+236
+00:37:09,828 --> 00:37:13,488
+Bunu serialize demo isimli bir sınıfta yapacağız.
+
+237
+00:37:16,724 --> 00:37:19,403
+İki tane employee nesnesi oluşturayım diyorum.
+
+238
+00:37:20,784 --> 00:37:25,003
+Burada örnek gereği aslında bir şey yapılmış, biraz laf kalabalığı olmuş.
+
+239
+00:37:25,724 --> 00:37:28,984
+Tek tek böyle önce nesneyi boş bir şekilde oluşturuyoruz.
+
+240
+00:37:29,503 --> 00:37:30,764
+Çünkü constructor yok.
+
+241
+00:37:31,704 --> 00:37:33,923
+Yani tanımlanmış bir constructor yok.
+
+242
+00:37:33,923 --> 00:37:37,923
+Biz genelde hep yapıcı metodlarım içerisine şuraya yazardık, doldururduk.
+
+243
+00:37:38,931 --> 00:37:54,051
+başlangıçta da oluşturmak en pratiği oluyor. Ama bu şekilde de yapabiliyoruz. Sonuçta bu sınıfın şu üye alanları var. Tek tek nesneyi oluşturduktan sonra işte adı bu olsun, adresi bu olsun, SS'nin bu olsun, numarası bu olsun gibi.
+
+244
+00:37:55,431 --> 00:38:02,391
+Tek tek bu değerleri atadım. Şurası bir nesne. Bir nesneyi Ali Demir nesnesi bu şekilde belirttim.
+
+245
+00:38:04,211 --> 00:38:06,112
+Diğer bir nesneyi de oluştureyim.
+
+246
+00:38:06,572 --> 00:38:09,311
+Çünkü tek bir tane nesney değil.
+
+247
+00:38:09,412 --> 00:38:13,731
+Birkaç nesneyi de nasıl yazıyoruz bu dosyayı onu görmek adına da bir örneğimiz olacak bu.
+
+248
+00:38:14,271 --> 00:38:15,992
+İkinci bir nesnemiz daha olsun.
+
+249
+00:38:17,192 --> 00:38:21,931
+O da aynı şekilde üye alanları, adı, adresi, SS'nin numarası.
+
+250
+00:38:22,652 --> 00:38:24,052
+Bunları doldurup verdik.
+
+251
+00:38:24,192 --> 00:38:25,652
+İki tane nesneyi oluşturduk.
+
+252
+00:38:27,471 --> 00:38:30,391
+Şimdi bu nesneleri
+
+253
+00:38:31,380 --> 00:38:48,840
+Ben istiyorum ki bu dosyaya yazdığımda, bu dosyadan sıra sıra okuyabilmek için en pratik, en iyi yöntem bunları bir veri yapısına tutarak tek bir yapı halinde dosyaya göndermek benim okurken bunu daha kolay yapmamı sağlayacak.
+
+254
+00:38:48,960 --> 00:38:55,860
+Nesneleri okumak biraz daha sıkıntı olabilecektir tek tek. Ama bir listeyi okumak çok daha kolay olacak sıradakine geç, sıradakine geç diye.
+
+255
+00:38:57,012 --> 00:39:06,252
+O yüzden şöyle bir link list yapısını ben bu employee tipinde verileri, nesneleri tutacak bir link list oluşturuyorum.
+
+256
+00:39:06,891 --> 00:39:08,192
+İsmini listem diyorum.
+
+257
+00:39:08,692 --> 00:39:11,952
+Daha sonra şu iki tane employee'yi ekliyorum, iki çalışanı.
+
+258
+00:39:12,132 --> 00:39:13,672
+E ve E2'yi ekliyorum.
+
+259
+00:39:14,351 --> 00:39:15,552
+Artık listemi oluşturdum.
+
+260
+00:39:15,672 --> 00:39:17,412
+Nesnelerim tamam, listem tamam.
+
+261
+00:39:18,792 --> 00:39:19,811
+Şimdi sıra geliyor.
+
+262
+00:39:21,811 --> 00:39:27,811
+Serileştirme ve dosya yazma işleminde biz output stream'i kullanacağız.
+
+263
+00:39:28,831 --> 00:39:33,551
+Yazarken output, file output stream kullanacağız.
+
+264
+00:39:34,291 --> 00:39:38,291
+Okurken de input olanla, file input stream kullanacağız.
+
+265
+00:39:39,431 --> 00:39:41,491
+Bunu da şöyle yapacağız. İki aşamalı olacak.
+
+266
+00:39:41,491 --> 00:39:46,131
+Önce bir tane file output stream'den bir nesne oluşturacağız.
+
+267
+00:39:46,871 --> 00:39:48,591
+Burada file adını belirteceğiz.
+
+268
+00:39:49,715 --> 00:39:50,635
+Şu kısımda.
+
+269
+00:39:51,815 --> 00:39:52,935
+Nesne'in file out.
+
+270
+00:39:53,435 --> 00:39:55,496
+Şurası da oluşturacağım dosyanın adı.
+
+271
+00:39:56,775 --> 00:40:08,336
+Bu dosyanın adında işte nokta dot da denebiliyor datadan veya nokta hani serialize, serialize, bu olay konuşurken de tuhaf oluyorum bu kelimeyi.
+
+272
+00:40:09,139 --> 00:40:37,139
+Nokta ser koymak da hani daha bir böyle belirteç oluyor. Çünkü uzantının çok bir önemi yok bizim için. İsterseniz uzantının nokta kendi adınızı koyun hiç fark etmez. En nihayetinde ben bu dosyayı böyle bir byte dizisi halinde yazacağım bu nesneleri. Ben yine bu dosyadan de serialization yapacağım ki okuyabileyim içeriğini. Zaten ben şu haliyle kaydedilmiş bir dosyayı, şu uzantıyla kaydedilmiş bir dosyayı içeriğini ben düzgün bir şekilde okuyamayacağım bilgisayarımda açıp. Onu ben yine kod üzerinde.
+
+273
+00:40:37,139 --> 00:40:54,460
+ekranı serializable bir hale getirip okuyup o şekilde ekrana yazdıracağım. O yüzden bir notasyon olarak böyle nokta ser koymak mantıklı olabiliyor. Veya dediğim gibi nokta data kullanılıyor. Farklı farklı yöntemler de olabilir.
+
+274
+00:40:56,083 --> 00:41:03,304
+Şimdi file output streamden bunu oluşturdum. İkinci aşamada bir de object output stream yapmam lazım.
+
+275
+00:41:03,643 --> 00:41:12,243
+Hani bir file output bir de object output. Bunlar böyle ikisi. Biri biriyle zincirlenmiş gibi bir şey. Birinden sonra diğerini mutlaka yapmam gerekiyor.
+
+276
+00:41:12,243 --> 00:41:18,783
+Çünkü objeleri buraya göndereceğim. Onun dolayı şu object output stream'e
+
+277
+00:41:19,699 --> 00:41:26,979
+oluştururken New Output, Object Output Stream'de, ona da neyi gönderiyorum parametre olarak?
+
+278
+00:41:27,779 --> 00:41:32,340
+Şimdi yukarıda oluşturdum. File bilgisini, File Out'ı buraya gönderirim.
+
+279
+00:41:33,920 --> 00:41:37,960
+Buraya, bu basıya gidilecek ve objeler yazılacak.
+
+280
+00:41:39,603 --> 00:41:45,563
+Şimdi object output'un içerisindeki write object metodunu çağıracağım.
+
+281
+00:41:45,983 --> 00:41:48,003
+Out üzerinden şu nesnemde.
+
+282
+00:41:48,143 --> 00:41:49,523
+Out nesnesi nokta.
+
+283
+00:41:50,743 --> 00:41:52,364
+Write object diyeceğim.
+
+284
+00:41:53,163 --> 00:41:54,563
+Benim objem hangisi?
+
+285
+00:41:54,563 --> 00:41:58,123
+Artık şu listen tamamı benim için bir obje gibi okunacak.
+
+286
+00:41:58,663 --> 00:41:59,223
+Listem.
+
+287
+00:41:59,503 --> 00:42:00,603
+Şu listemi gönderirim.
+
+288
+00:42:01,012 --> 00:42:08,532
+İstesem dediğim gibi buraya sadece E'yi de verirdim, E2'yi de verirdim. İstediğim bir nesnenin adını, istediğim bir objenin adını verebiliyordum.
+
+289
+00:42:09,212 --> 00:42:14,612
+Ama biz dedik ki bu nesneler bir dizi halinde, bir sıra halinde olsun, bir listede olsun, okumamız kolay olsun.
+
+290
+00:42:16,832 --> 00:42:22,532
+Write object dedim, listenin adını verdim. Daha sonra bunu kapatıyorum.
+
+291
+00:42:23,532 --> 00:42:28,692
+Sıra sıra tabii kapatma işlemden önce object output'u kapattım. Sonra file output'u kapattım.
+
+292
+00:42:29,007 --> 00:42:32,207
+ve konsolda bir bilgilendirme mesajı döndüreyim.
+
+293
+00:42:32,707 --> 00:42:34,447
+sevele detayı set.
+
+294
+00:42:35,147 --> 00:42:35,727
+data ok.
+
+295
+00:42:37,367 --> 00:42:41,147
+Eğer olmazsa zaten oya exceptionlarını fırlatacak.
+
+296
+00:42:42,507 --> 00:42:51,587
+Şimdi bunu yine şurada dosya yolu olarak herhangi bir işte desktaptır, şudur budur bir şey belirtmediğim için yine gidecek ne yapacak?
+
+297
+00:42:51,687 --> 00:42:55,047
+Şu uygulamaları içine kaydedecek.
+
+298
+00:42:57,012 --> 00:42:58,612
+Bunu hemen çalıştıralım.
+
+299
+00:43:06,996 --> 00:43:14,036
+Ne dedi? Data is saved. İstediğimizi bakın, poly buraya getirdi.
+
+300
+00:43:15,476 --> 00:43:24,876
+Listenin içeriği olan, poly burada. Dediğimiz gibi bunu açıktığı için okumaya çalıştınız. Çünkü anlamsız bilgiler var içinde bizim için, anlamsız bilgisayar için anlamlı.
+
+301
+00:43:25,776 --> 00:43:32,936
+Biz bunları şimdi deserialize işlemi yaparak okumaya çalışacağız. Onun için ne yapıyorum?
+
+302
+00:43:33,876 --> 00:43:35,316
+Diğer bir sınıfımdan.
+
+303
+00:43:39,056 --> 00:43:40,135
+Geldim.
+
+304
+00:43:41,436 --> 00:43:42,115
+Şuradan.
+
+305
+00:43:43,115 --> 00:43:45,816
+Şimdi olayı tersten götürüyoruz.
+
+306
+00:43:45,936 --> 00:43:46,896
+Nasıl ters yani?
+
+307
+00:43:47,056 --> 00:43:48,436
+Hani outputtu.
+
+308
+00:43:49,135 --> 00:43:51,235
+Bu da karıştırılabilen bir şey oluyor.
+
+309
+00:43:52,715 --> 00:43:54,695
+Outputla biz yazıyoruz.
+
+310
+00:43:55,695 --> 00:43:57,755
+Inputla okuyoruz.
+
+311
+00:43:58,675 --> 00:44:08,215
+O noktaya bir oturtalım. Output'u yazmak için input'u da içeriye alır, okuyoruz gibi o şekilde düşünelim. Bazen bu da karıştırılabiliyor.
+
+312
+00:44:09,856 --> 00:44:23,175
+Şimdi benim demin nasıl yazmak için output stream oluşturduysam önce file output'tan sonra object output'tan aynı işlemleri file input stream için ve object input stream için yapacağım.
+
+313
+00:44:23,731 --> 00:44:35,692
+Önce file input stream sınıfından file'in neslemi oluşturuyorum ki bu ne anlama geliyor? Şu vereceğim dosyayı git artık bunu okuyacağız. Bunun içeriğini alacağız demek.
+
+314
+00:44:37,292 --> 00:44:50,652
+Ve daha sonra bir obje okuyacağım. Object input stream ile de bir nesne oluşturdum. Onunla da yine şu bilgilerini verdiğim file üzerinden, şurada tanımladığım file nesnesi üzerinden bunu yapacağız demek oluyor.
+
+315
+00:44:51,123 --> 00:44:53,423
+Tabi buradan şöyle de pratik düşünebilirsiniz.
+
+316
+00:44:53,603 --> 00:45:13,063
+Ya ben ayrı ayrı bu satırı yazmak istemiyorum deyip şuraya gelip aslında ne de şu minfile input stream şurayı kopyalayıp şuraya yazdığımız takdirde illa bir nesne oluştu buna bir isim vermekle uğraşmak istemezseniz direkt şu parantezler içinde minfile input stream deyip de ilerleyebilirsiniz.
+
+317
+00:45:13,244 --> 00:45:14,963
+Böyle tek satırda da bitebilir bu iş.
+
+318
+00:45:15,724 --> 00:45:17,184
+Hocam bu sefer nasıl kapatılacak?
+
+319
+00:45:25,780 --> 00:45:26,940
+Dur bakalım, deneyelim.
+
+320
+00:45:32,692 --> 00:45:36,552
+Onu o zaman kapatmamız istemeyecektir diye düşünüyorum ama yanlış mı düşünüyorum?
+
+321
+00:45:41,492 --> 00:45:42,292
+Mirakolmiçak.
+
+322
+00:45:47,059 --> 00:45:48,960
+Bakalım böyle çalıştırmayı deneyelim şimdi.
+
+323
+00:45:52,755 --> 00:45:53,595
+İşte se.
+
+324
+00:45:59,539 --> 00:46:17,519
+Aynen. O zaman bak ne oldu? Söylediğim ne oldu? Bunu da denemiş, görmüş olduk. Bize nesneyi oluşturmadığım için illa da onun üzerine bir kılaz işlerine gerek duyurmadı. Buradan ben şunu kapattığım anda onunla ilişkili olan hepsini de bu şekilde kapatmış oldum.
+
+325
+00:46:20,419 --> 00:46:21,539
+Anladım hocam.
+
+326
+00:46:22,159 --> 00:46:23,079
+Teşekkür ederim.
+
+327
+00:46:26,324 --> 00:46:36,384
+Evet, dedik böyle de kullanılabiliriz. Ben biraz da işte alt alta yazılınca daha bir okunurluğu iyi oluyor diye şunu kullanıyorum. O yüzden eski haline getiriyorum.
+
+328
+00:46:44,947 --> 00:47:01,427
+Evet, şimdi input streamlerinden oluşturdum ve geldim sırada listeyi okuma kısmına. Bunun için de demin nasıl write ettiysek şimdi de read edeceğiz. Okuma read objeyi kullanacağız metod olarak.
+
+329
+00:47:01,427 --> 00:47:07,567
+Burada yine bize bir warning veriyor. Bunları suppress edebiliriz, etme edebiliriz. Sıkıntı değil.
+
+330
+00:47:09,012 --> 00:47:17,372
+Şimdi okunacak liste, şu yukarıda ben hani başlangıcını yaptığım için burada tekrar uzun uzun link liste yazmadım.
+
+331
+00:47:19,492 --> 00:47:25,412
+Çünkü try'ın dışında da kullanacağım ben bu listeyi. Şurada mesela şey yapacağım.
+
+332
+00:47:25,972 --> 00:47:48,752
+Birazdan sistem alfı içeriğini okuyacağım bu listenin. Okunacak liste diye isimlendirdiğim o listenin. Okunan listenin. O yüzden şöyle bir try'ın dışında da bir başlangıcını yapayım ki bunu sadece bütün satırı şuraya link list, işte employee vesaire buraya yazarsam hepsini bu da tabii try'ın dışında belki tanımlı bir şey olmayacağı için bana şurada hata verecek. O yüzden.
+
+333
+00:47:49,652 --> 00:47:54,811
+Şimdi şurada böyle başlangıcını yaptım listem. Neydi? Link listi, employee tipinden nesneleri tutuyordu.
+
+334
+00:47:55,871 --> 00:48:05,612
+Bu liste şurada bakın in.read object yaparken şöyle bir ifade kullanıyoruz parantez içerisinde bir cast işlemi yine.
+
+335
+00:48:05,612 --> 00:48:14,371
+Şimdi biz oraya obje gönderdik ve bu objeleri bana getirirken diyorum ki
+
+336
+00:48:14,708 --> 00:48:34,847
+Benim istediğim biçimde bana bir employee nesnesi olarak getir ama link listeki bir employee listesi olarak getir. Mesela sadece employee nesnesi yazdırmış olsaydım bir tane, mesela şu satırı yazardım. Derdim ki sen bana işte paranteşinde employee derdim. Orada bir obje okuyacaksın. Bu tek bir obje. O da employee tipinde bir şey.
+
+337
+00:48:35,284 --> 00:48:51,903
+Bana onu bu şekilde getir. Neden bunu yazmak zorundayım? Çünkü Java'da bütün sınıflar, ne demiştik, object isimli bir class var. O sınıf hiyerarşisinin en tepesinde böyle bir class var. Aslında bütün sınıflar ondan kalıtımla oluşmuş gibi bir şey. Mantı bu Java'nın.
+
+338
+00:48:51,903 --> 00:48:57,963
+O yüzden şimdi oraya da bir object setimi gönderdim ya, ben geri döndürürken diyorum ki,
+
+339
+00:48:58,003 --> 00:49:13,683
+Employee tipinde gelsin veya benim şu an istediğim şey ne? Link list içindeki bir employee tipinde gelsin. Bana böyle oku bu objeleri, bu şekilde bana döndür bu listeye diyorum. Böyle bir cast yapıp ona belirtiyorum.
+
+340
+00:49:15,143 --> 00:49:24,403
+Şimdi listeyi okuyorum. Read object'li. Yani okudu bitti daha doğrusu. Artık kapama işlemlerimi yapıyorum. Kaynaklarımı serbest bırakıyorum.
+
+341
+00:49:25,268 --> 00:49:28,728
+Sonra, catch bloklarımız yine gerekli.
+
+342
+00:49:29,008 --> 00:49:32,108
+İşte, bizi zaten derleyici bunlara zorlayacaktır.
+
+343
+00:49:32,788 --> 00:49:40,228
+Çeşitli metotlarla ilgili şöyle metotların üstüne gelinliğinde de zaten hangi metot hangi exception'ı fırlatıyor belli oluyor.
+
+344
+00:49:42,208 --> 00:49:45,048
+Bunlar catchlerde belirttik, geçtik bunu.
+
+345
+00:49:46,268 --> 00:49:51,048
+Şimdi listeyi, bir kere ben okudum aldım ya artık liste elimde.
+
+346
+00:49:52,371 --> 00:50:13,331
+Okunacak liste artık okunan liste olmuş oldu. Bunun üzerine basitçe bir klasik for each yapımla ne yapıyorum listeyi okuyorum. Eleman eleman okuyorum. Nasıl okuyorduk? Şurası hangi tipte elemanları gezdiğim sınıfın tipi? Neyi veriyorum?
+
+347
+00:50:13,811 --> 00:50:15,672
+Oraya bir, ben hep itar kullanıyorum.
+
+348
+00:50:15,891 --> 00:50:20,451
+İşte bir imleç olacak, hep böyle hayal ediyorum onu böyle sıra sıra diziyi ver listeyi gezecek diye.
+
+349
+00:50:21,351 --> 00:50:22,011
+O gezecek.
+
+350
+00:50:22,471 --> 00:50:23,391
+Hangi listeyi gezecek?
+
+351
+00:50:23,491 --> 00:50:24,132
+Listenin o da.
+
+352
+00:50:24,891 --> 00:50:29,911
+Ve her defasında o gezdiği içerik neyse onu sistemat printelenle yazdır.
+
+353
+00:50:29,911 --> 00:50:34,791
+ToString metodunu gerçekleştirdiğimiz için içeriğini bakın nasıl yazdırmış oldu.
+
+354
+00:50:35,791 --> 00:50:39,231
+Şu şekilde ToString'de ne vardıysam onu gönderdi.
+
+355
+00:50:39,956 --> 00:50:53,436
+Şimdi burada dikkatinizi çeken bir şey var mı? Bizim verdiğimiz verilerde SSN'leri mesela normal ben oluştururken gayet güzel yazmıştım nesnelerde.
+
+356
+00:50:55,275 --> 00:51:05,596
+SSN'leri gayet vardı. Ama bakıyorum diğer verilere okey. SSN'ler bu şekilde gelmiş. Sıfır gelmiş. SSN'leri verdiğim gibi döndürmemiş.
+
+357
+00:51:06,387 --> 00:51:32,428
+Neden olabilir bunun sebebi? Bunun cevabı da Employee Class'ında aslında. Bakın biz SS'nin buraya nasıl yazmışız? Ek bir keyword kullanmışız şurada. Transient demişiz. Yani sen bu veriyi serialize eder, o dosya yazar gönderirken hani sanki onu bir
+
+358
+00:51:32,755 --> 00:51:36,895
+Görmezden gel, onu geride bırak, onu yazma gibi bir şey.
+
+359
+00:51:38,096 --> 00:51:44,255
+Bunu yazmadığı zaman doğal olarak ne yapacak? Böyle bir alan var mı? Var ama artık ne değerinde olacak o?
+
+360
+00:51:44,916 --> 00:51:48,715
+Default değeri neyse o. Bir değişkenin default değeri. Bu integer'mış.
+
+361
+00:51:49,076 --> 00:51:53,936
+Integer'in default değeri 0'dır. Siz ona bir değer atamazsanız o 0 yazar.
+
+362
+00:51:54,956 --> 00:51:59,635
+İşte hatırlayalım Boolean'ın default değeri ne oluyordu?
+
+363
+00:52:00,851 --> 00:52:02,632
+True mu oluyordu, false mu oluyordu?
+
+364
+00:52:04,731 --> 00:52:10,291
+Boolean mesela bir değer atamadım. Boolean bir değişken tanımladım. Ona hiçbir şey yazmadım. Ne true ne false.
+
+365
+00:52:10,912 --> 00:52:12,791
+Onun ilk başlangıç değeri ne oluyor?
+
+366
+00:52:16,371 --> 00:52:19,031
+Hiçbir şeye belirtmezsem false oluyor mesela.
+
+367
+00:52:20,251 --> 00:52:30,231
+İşte nesne, şeyler nesne diyorum sınıflarda bir nesnenin değeri, bir sınıfta oluşmuş bir nesnenin değeri mesela.
+
+368
+00:52:30,491 --> 00:52:37,891
+O da ilk default olarak herhangi bir değer atamazsak, ilk tanımlayıp bırakırsak o da mesela null oluyor.
+
+369
+00:52:44,371 --> 00:52:53,371
+Ne yapıyor dedik? O kısımları görmezden getiriyoruz. Okutmuyoruz, göndermiyoruz. Onlar direkt default değerleriyle gidiyorlar. Aynı şekilde okunuyorlar.
+
+370
+00:52:54,291 --> 00:53:04,771
+Hatta şurada, toString metodunda mesela ben bunu da sileyim bir daha oluşturayım bunu. Bizi o toString'de bile bunu vermek istemeyecek.
+
+371
+00:53:05,619 --> 00:53:13,239
+Mesela generated dediğimiz zaman şöyle bize üye alanları çıkarıyor ya otomatik olarak hangi alanlardan oluşturayım bu to string'i diye.
+
+372
+00:53:13,879 --> 00:53:15,819
+Mesela SSL'nin yanına T koymuş.
+
+373
+00:53:15,939 --> 00:53:19,980
+Yani bunu işte sana büyük ihtimalle gerek yok ki sen buraya bunu yazmışsın demek istiyor.
+
+374
+00:53:20,019 --> 00:53:25,199
+Ben hususi bunu seçip onu da istiyorum dediğim için bana bu şekilde SSL'ni de buraya koydu.
+
+375
+00:53:25,239 --> 00:53:29,679
+Ama normalde şunu gördüğü zaman belki onu to string'i bile yazmayan gerek duymuyor.
+
+376
+00:53:29,759 --> 00:53:32,379
+Çünkü o alan mantıklı bir değer olmayacak.
+
+377
+00:53:35,219 --> 00:53:42,179
+Evet, bu şekilde objelerimizi de ne yaptık? Dosyaya yazdık. Sonra da okuduk.
+
+378
+00:53:46,420 --> 00:53:50,579
+sıra sıra bu şekilde okuma işlemini de yapmış olduk.
+
+379
+00:53:51,000 --> 00:53:54,440
+En mantıklı yöntem burada Linklist kullanmak oluyor.
+
+380
+00:53:58,420 --> 00:54:03,920
+Dosyalarla ilgili başka örneğimiz kalmamış. Hepsinden bahsettik, konuştuk.
+
+381
+00:54:08,148 --> 00:54:15,847
+Bundan sonra konuşacağımız diğer konumuz inner class olacak. Bir de multi-tirede de biraz giriş yaparız.
+
+382
+00:54:16,248 --> 00:54:19,108
+Hocam yeni konuya geçmeden proje hakkında bir sor sorabilir miyim?
+
+383
+00:54:20,487 --> 00:54:25,648
+Sor. İnşallah bildiğim bir şeydir çünkü projeyi tam incelemedim ben. Ama sana sor bakalım.
+
+384
+00:54:26,387 --> 00:54:34,748
+Hocam projede bize bir UML diagram verilmiş. Üzerinde mesela consumer diye bir kısım var. Telefon numarası, e-mail gibi bilgiler var.
+
+385
+00:54:35,088 --> 00:54:38,548
+Sonra altına da bir örnek verilmiş ama örnekle bu bilgileri hiç istemiyor.
+
+386
+00:54:39,088 --> 00:54:50,947
+Yani biz onu diyagrama göre mi yapacağız yoksa biz bir sistem mi tasarlayacağız yoksa orada verilen verileri mi gireceğiz, örnekteki gibi bir bilgi alıp onu ekrana mı bastıracağız yoksa birden fazla müşterimi tutacağız?
+
+387
+00:54:51,068 --> 00:54:52,568
+Yani bu konular hakkında kafam karıştı da.
+
+388
+00:54:53,367 --> 00:55:02,947
+İşte ben tam incelemedim şeyi, projeyi. Sadece şey olayını konuşmuştuk hocayla işte framework kullanımında serbestsiniz.
+
+389
+00:55:03,088 --> 00:55:10,507
+İstediğiniz GUI stilini yapabilirsiniz ama projenin detaylarını ben incelemesini yapmadığım için şu an bilemiyorum.
+
+390
+00:55:11,628 --> 00:55:13,208
+Tamamdır hocam, teşekkür ederim.
+
+391
+00:55:13,528 --> 00:55:16,028
+Bilen arkadaş varsa şu an aydınlatabilir bizi.
+
+392
+00:55:16,327 --> 00:55:19,208
+Hani bilenler bilmeyenler anlatsın gibi bir olaya gideceğim.
+
+393
+00:55:22,548 --> 00:55:24,987
+Galiba süreniz de biraz azaldı değil mi?
+
+394
+00:55:25,447 --> 00:55:27,168
+Son testim, ayın sonu muydu?
+
+395
+00:55:27,827 --> 00:55:47,947
+7'si olması lazım. Aslında zaman var ama nasıl yapacağım konusunda biraz kararsız kaldım. Aşağıdaki örneği göre yapacağım. Yukarıdaki diagrama göre mi ya da verilen açıklamaya göre mi? Birazcık kafa karıştırıcı olmuş. O yüzden de böyle sorunlarda genelde ödevi yol aldıktan sonra ben böyle anlamıştımın bir anlamı olmuyor. O yüzden sorayım dedim laftayken.
+
+396
+00:55:49,708 --> 00:55:54,947
+Ben de keşke bakmış olsam. Cevaplayamadım. Kusura bakma. Rica ederim hocam. Teşekkür ederim.
+
+397
+00:55:55,795 --> 00:55:56,455
+Sağol.
+
+398
+00:56:00,851 --> 00:56:13,831
+Hocam, bu okuma işlemlerinde byte byte okurken de aynı şekilde okuyoruz değil mi? Mesela diyelim şifreleme işlemi yapmak istiyorum ya da fotoğraf üzerinde byte'ları alıp bir şeyler yapmak istiyorum. Bu şekilde okunuyor yine değil mi?
+
+399
+00:56:13,831 --> 00:56:22,831
+Aynen, bu stream olayı bizde byte dedik mi streamler de evreye giriyor. Bu şekilde input stream, output streamler de ilerleyebiliyoruz.
+
+400
+00:56:24,491 --> 00:56:25,271
+Anladım, sağ olun.
+
+401
+00:56:26,552 --> 00:56:27,231
+Rica ederim.
+
+402
+00:56:31,315 --> 00:56:38,915
+Evet, şimdi inner classlarımızdan bahsedelim mi? Burada da eklemek istediğiniz bir şey yoksa.
+
+403
+00:56:43,251 --> 00:56:43,872
+Kutatalı.
+
+404
+00:56:47,315 --> 00:56:50,476
+iç içe sınıflarımızdan da biraz bahsedelim.
+
+405
+00:56:57,556 --> 00:56:58,175
+Şimdi.
+
+406
+00:57:01,652 --> 00:57:06,731
+Şurası klasik main metodunun olduğu kısım.
+
+407
+00:57:08,952 --> 00:57:13,731
+Şu kısımda da iç içe sınıf gerçeklemesini yaptığımız olay.
+
+408
+00:57:13,872 --> 00:57:16,412
+Şimdi burada benim bir tane sınıfım var.
+
+409
+00:57:16,592 --> 00:57:18,132
+Sınıfın ismi alter class.
+
+410
+00:57:18,351 --> 00:57:19,192
+Bu benim dış sınıfım.
+
+411
+00:57:20,791 --> 00:57:21,211
+Bakın.
+
+412
+00:57:21,952 --> 00:57:24,492
+Sınıfı açmışım parantez, kapamışım parantez.
+
+413
+00:57:24,492 --> 00:57:27,072
+Bir de içinde başka bir sınıf daha var.
+
+414
+00:57:28,436 --> 00:57:30,216
+Bunu da yapabiliyoruz Java'da.
+
+415
+00:57:31,156 --> 00:57:32,756
+İçine bir sınıf daha koyabiliyoruz.
+
+416
+00:57:33,716 --> 00:57:47,736
+Burada bu sınıflara ulaşırken ama mesela outer class'a evet basit bir şekilde ulaşabileceğiz ama inner class'a, içerideki sınıfa ulaşırken outer'ın üstünden ulaşacağız.
+
+417
+00:57:47,956 --> 00:57:50,176
+Nasıl ulaşıyoruz? Hemen örneğine bakalım.
+
+418
+00:57:51,976 --> 00:57:52,476
+Önce
+
+419
+00:57:53,523 --> 00:58:03,463
+Outer class'dan bir tane nesne üretmem lazım. Mesela direkt gidip bir inner class'a, bir class'ın içindeki bir sınıfa, klasik o nesne oluşturma yöntemimle ulaşamam.
+
+420
+00:58:03,623 --> 00:58:13,824
+Bu nesne vermiyor. Bunun aşaması var. Önce bu sınıftan, o dış sınıf diyelim, Outer class'dan bir tane nesne oluştur.
+
+421
+00:58:14,824 --> 00:58:16,103
+Daha sonra
+
+422
+00:58:16,980 --> 00:58:20,340
+Bu oluşturduğun nesne üzerinden o inner class'a gideceksin.
+
+423
+00:58:20,620 --> 00:58:25,860
+Onun için de bir inner class nesnesine, mesela by inner diye bir isim verdim buna.
+
+424
+00:58:26,960 --> 00:58:30,340
+Başına hani sınıf adı yazardık ya, burada iki aşamalı sınıf adı yazıyoruz.
+
+425
+00:58:30,519 --> 00:58:32,560
+Outer class, nokta inner class.
+
+426
+00:58:33,920 --> 00:58:35,620
+Dış sınıf nokta o iç sınıf.
+
+427
+00:58:35,940 --> 00:58:37,360
+Nesnemin adını veriyorum.
+
+428
+00:58:37,360 --> 00:58:39,360
+Daha sonra...
+
+429
+00:58:39,860 --> 00:58:47,119
+My outer, burası o dış sınıfın nesnesiydi. Yine bunun üzerine her birçok nokta New Inner Class.
+
+430
+00:58:48,380 --> 00:58:54,460
+Ancak bir Inner Class nesnesine, iç sınıf nesnesine neymiş? Böyle ulaşabiliyormuş.
+
+431
+00:58:54,860 --> 00:59:05,360
+Şimdi göreceğiz statik olduğunda bu sınıf nasıl oluyor vs. ama temelde şu şekilde bir erişim belirtecinde Inner Class'a üst sınıfın nesnesi
+
+432
+00:59:05,695 --> 00:59:09,476
+ve o üç sınıfın adını belirterek ulaşıyorum.
+
+433
+00:59:10,476 --> 00:59:13,036
+Ve burada artık klasik bir şekilde yazdırabilirim.
+
+434
+00:59:13,876 --> 00:59:17,456
+Mesela inner sınıfın içinde bir x değeri var, altın içinde bir x değeri var.
+
+435
+00:59:18,576 --> 00:59:19,675
+Şimdi çalıştırayım.
+
+436
+00:59:25,876 --> 00:59:45,135
+inner'ın x'i dediğimde 5 gelecek, outer'ın x'i dediğimde 10 gelecek. Bunları bu şekilde yazdırıyorum. Temel tanımlamam bu şekilde oluyor. Mutlaka inner class'a ulaşırken önce bir outer class'ı yazacağım. Bir de onun bir nesnesi üzerinden bu çağrısını yapacağım.
+
+437
+00:59:47,275 --> 00:59:52,135
+Peki, bu inner class'ım statik olsaydı,
+
+438
+00:59:53,811 --> 00:59:59,652
+Statik metotlar vardı. Mesela statik metotları görmüştük. Bize nasıl bir kolaylık sağlıyorlardı?
+
+439
+01:00:00,632 --> 01:00:06,892
+Bir sınıftaki statik metot için ben Minesne oluşturmaya gerek duymuyordum. Direkt sınıfın adını yazıp çağırabiliyordum.
+
+440
+01:00:08,751 --> 01:00:13,331
+Burada bir inner class'ın statik olması da bana bir noktada aynı özgürlüğü verecek.
+
+441
+01:00:14,052 --> 01:00:21,032
+Demin mesela şu örnekte neydi? Outer class'ın bir nesnesini oluşturmam gerekiyordu. Şimdi ona gerek kalmayacak.
+
+442
+01:00:21,427 --> 01:00:26,748
+Direkt bir iç sınıfın nesne adını vereceğim. Sınıf isimlerini yine yazıyorum.
+
+443
+01:00:27,307 --> 01:00:28,987
+authorclass.enerclass.
+
+444
+01:00:29,887 --> 01:00:40,228
+Bu arada bunlara iki demek zorunda kaldım. Neden? Çünkü kalkıp da şöyle direkt şu tesbirdekiyle aynı ismi versem bana hata verir.
+
+445
+01:00:40,307 --> 01:00:47,167
+Çünkü bunlar aynı sınıfta erişimli nesneler, erişimli sınıflar. Aynı paket içinde erişimli sınıflar.
+
+446
+01:00:48,563 --> 01:00:52,244
+Aynı pakette oldukları için buradan direkt outer class'ı da eşleyebiliniyor.
+
+447
+01:00:52,644 --> 01:00:56,023
+Tamam, burada görelim diye bu şekilde yanlarına birer iki ekledim.
+
+448
+01:00:57,503 --> 01:00:59,844
+Dedik ki, nesnenin ismini verdik.
+
+449
+01:01:00,164 --> 01:01:04,103
+Sınıf adı belirteceğimiz her zaman üst nokta, iç sınıf.
+
+450
+01:01:04,264 --> 01:01:05,324
+İşte dış sınıf, iç sınıf.
+
+451
+01:01:05,403 --> 01:01:06,164
+Burada öyle diyelim.
+
+452
+01:01:06,483 --> 01:01:08,164
+Kalıtımla gelene de üst alt diyoruz.
+
+453
+01:01:08,284 --> 01:01:09,583
+Burada dış sınıf, iç sınıf.
+
+454
+01:01:11,443 --> 01:01:13,563
+Ve new deyip direkt...
+
+455
+01:01:15,219 --> 01:01:17,699
+sınıfın adını yine yazabiliyorum.
+
+456
+01:01:18,000 --> 01:01:20,260
+Dış sınıf nokta iç sınıf şeklinde belirtiyorum.
+
+457
+01:01:21,380 --> 01:01:29,840
+Burada da çağrılarımı nesneye bir kere oluşturduktan sonra içindeki değişkenine de, metoduna da rahatlıkla ulaşabiliyorum bu şekilde.
+
+458
+01:01:29,840 --> 01:01:38,059
+Bu şekilde nokta x deyip verdiğimde geliyor bu da yine basitçe bize 5'i döndürecek.
+
+459
+01:01:42,099 --> 01:01:48,259
+Sonra, son inner class örneğimizde de neye bakalım?
+
+460
+01:01:50,259 --> 01:02:00,820
+Inner class içinden, outer class'a nasıl bakış yapıyoruz, nasıl bakıyoruz oradan, nasıl verilerine, değişkenlerine, metotlarına ulaşabiliyor muyuz?
+
+461
+01:02:02,440 --> 01:02:07,019
+Burada, şimdi bu normal bir şey, static değil.
+
+462
+01:02:08,300 --> 01:02:08,759
+O yüzden,
+
+463
+01:02:09,652 --> 01:02:13,852
+İlk gördüğüm örnekteki gibi önce bir outer class nesnesi.
+
+464
+01:02:15,012 --> 01:02:28,172
+Daha sonra inner class nesnesi için, my inner simli nesne için sınıf adlarımı verip my outer, buradaki nesnem, nokta new inner class diyorum.
+
+465
+01:02:28,172 --> 01:02:31,212
+Ve bu nesnemi oluşturuyorum.
+
+466
+01:02:32,132 --> 01:02:34,572
+Daha sonra bakın bunun metodu.
+
+467
+01:02:36,052 --> 01:02:42,371
+Return X'de şimdi şu inner class içinde X diye bir değişken, X diye bir sınıf değişkeni yok.
+
+468
+01:02:43,072 --> 01:02:48,711
+Ama nerede var? Dış sınıfı var. Onun bağlı olduğu sınıfın içinde var.
+
+469
+01:02:49,271 --> 01:02:54,951
+O zaman ben Return X'deydiğim zaman o hemen gidiyor. Buradan bunu ala geliyor.
+
+470
+01:02:58,003 --> 01:03:16,443
+Bu noktada da gelip yine printelerin içinde işte nesnenin adı nokta myinner method dediğim zaman return olarak bana burada onu öldürecek. Basit olarak bu örneğimizde görmüş olalım bu şekilde.
+
+471
+01:03:19,263 --> 01:03:22,483
+Evet inner classlar temel olarak bu şekilde.
+
+472
+01:03:23,699 --> 01:03:28,819
+İç sınıftan dış sınıfın esnesinin değişkenine de ulaşabildik.
+
+473
+01:03:28,819 --> 01:03:34,699
+Veya statik tanımadığımız zaman daha basit bir şekilde, daha hızlı bir şekilde erişebildik.
+
+474
+01:03:35,959 --> 01:03:40,659
+En temel haliyle bu tarz işlemler yapabiliyoruz iç içe sınıflarımızda.
+
+475
+01:03:54,228 --> 01:03:58,788
+Bunlar derste daha işlenmediği için ders örneklerinizde de daha pek işecektir zaten.
+
+476
+01:04:02,420 --> 01:04:06,000
+Biraz da threadlerden bahsedelim.
+
+477
+01:04:12,244 --> 01:04:21,624
+Şimdi, thread konusu nedir? Java'da thread nesneleri nasıl çalışır? Nasıl işler, mantığı nedir? Bunun üzerine konuşalım biraz.
+
+478
+01:04:23,424 --> 01:04:32,244
+Biz şimdi bir sınıftan nesne oluşturduktan sonra onun metodunu, herhangi bir işte ayet oldu sınıfa hep bir metodu çağırıyoruz.
+
+479
+01:04:33,231 --> 01:04:51,131
+Burada işlemler nasıl ilerliyor? Satır satır ilerliyordu. Yani bir satırı okuyor, bir metodu çalıştırıyor, bir işlemi yapıyor. O bitiyor, diğer metoda geçiyor, diğer nesnene metot çalışırmışsa onu yapıyor. Böyle biz süre süre bunların bitmesini bekliyoruz.
+
+480
+01:04:51,131 --> 01:04:57,971
+Ama biz şunu isteyebiliriz, bizim yeterli gücümüz var bilgisayarımızda.
+
+481
+01:04:58,356 --> 01:05:13,416
+Neden aynı anda bunu gerçekleştirmesin bu nesneler? Aynı anda başlasınlar çalışmaya. Bir metodu mu çalıştıracaklar? Bir iş mi yapacaklar? Aynı anda hep başlasınlar ve götürsünler isteyebiliriz ve bunu da yapabiliriz.
+
+482
+01:05:13,760 --> 01:05:17,580
+Böyle olursa ne olur? Biz vakitten kazanmış oluruz.
+
+483
+01:05:18,080 --> 01:05:27,980
+Yani atıyorum bir metot, işte bir neslinin işlemi 5 saniye sürecek, öbürünün 10 saniye sürecek, toplu 15 saniye bekleyeceğim yerine her ikisi de aynı anda başlar.
+
+484
+01:05:28,980 --> 01:05:34,800
+Ve en çok işte sürede neyse 5 saniye 10 saniyede benim bütün işlemlerim bitmiş olabilir.
+
+485
+01:05:34,800 --> 01:05:38,920
+O yüzden bunu yapabilmek için işte bir stret.
+
+486
+01:05:39,572 --> 01:05:41,532
+Haline getiriyoruz nesnelere.
+
+487
+01:05:42,492 --> 01:05:52,211
+Tretler böyle işte küçük işilen parçalarımız bizim aynı anda böyle çalışabilen, eş zamanlı çalışabilen nesneler olarak çevirebiliriz.
+
+488
+01:05:52,952 --> 01:05:58,192
+Nesnelerimizi tret haline getirdiğimiz zaman ne yapıyoruz?
+
+489
+01:05:58,711 --> 01:06:01,132
+Aynı anda çalışma imkanı veriyoruz onlara.
+
+490
+01:06:01,132 --> 01:06:02,292
+Şimdi.
+
+491
+01:06:03,027 --> 01:06:21,287
+Bir nesne nasıl thread haline gelir? Thread nasıl olur? Normal bir sınıf oluşturmuşuz. Bunun iki tane yolu var. Nesneleri böyle thread haline getirmeni, eş zamanlı yapmanı. Bir tanesi şöyle bir sınıfım olsun mesela.
+
+492
+01:06:24,019 --> 01:06:38,959
+Şimdi aslında ikinci yol yalnız. Kullanılmayan yol olduğu için bunu 2 diye isimlendirdim. Threat oluşturma 2 o yüzden sınıfın adı. Direkt ikinciden anlatıyorum. En daha sık kullanılan yöntem şu. Direkt thread oluşturma sınıfında göstereceğim onu.
+
+493
+01:06:39,959 --> 01:06:50,219
+Bir yöntemimiz, bir tane thread sınıfı var. Şu arada tanımlıdır bu. Bunu extended edip kendi oluşturduğumuz sınıfı bu şekilde genişletme yöntemi.
+
+494
+01:06:51,572 --> 01:06:58,852
+Ben thread sınıfını ekstern ettiğim zaman artık bu thread sınıfına ait bir tane metot var.
+
+495
+01:07:00,812 --> 01:07:08,672
+Run metodu. Bunu override ediyorum. İçine istediğim gibi dolduruyorum. Benim için önemli olan metot şu run metodu.
+
+496
+01:07:10,072 --> 01:07:12,852
+Bu metodun içine yazacaklarım.
+
+497
+01:07:13,043 --> 01:07:19,344
+Birazdan şu sınıftan oluşturduğum nesneleri çalıştırdığım anda işte buralar çalışacak, bu metodun gövdesi çalışacak.
+
+498
+01:07:20,063 --> 01:07:23,684
+Ben bu sınıfta yine istediğim gibi değişken sınıf değişkenlerini tanımlıyorum.
+
+499
+01:07:24,423 --> 01:07:27,403
+İşte constructor var, metotlar yazıyorum.
+
+500
+01:07:27,903 --> 01:07:30,324
+Her şey sistem yine aynı, normal sınıf tanımı.
+
+501
+01:07:30,923 --> 01:07:32,724
+Sadece eksternel ettiğim için ne yapıyorum?
+
+502
+01:07:33,204 --> 01:07:34,764
+Bir run metodu alıyorum.
+
+503
+01:07:37,139 --> 01:07:40,859
+Bu run metodunun içinde de neyi çalıştırmak istemişim?
+
+504
+01:07:41,419 --> 01:07:44,399
+Yine şu sınıftaki add metodu çalışsın demişim.
+
+505
+01:07:44,979 --> 01:07:50,219
+Bu metodun olayı da kısaca statik bir değişken var, sayı değişkeni var.
+
+506
+01:07:50,879 --> 01:07:52,779
+Statik değişkenlerin olayı neydi?
+
+507
+01:07:53,659 --> 01:07:56,139
+O sınıfa ait böyle...
+
+508
+01:07:56,980 --> 01:08:21,079
+Tabiri caizse böyle kazık çakmış bir değer oraya. Yani o her defasında işte artacak mesela. Bir nesne geldiğinde bunun değeri 5'miş. O bir arttırdığında o 6 olacak. Başka bir nesne geldiğinde o nesne son değeri 6'dan itibaren okuyacak. O üstüne bir koyacak 7 yapacak gibi. Hani böyle diğer sınıf değişkenleri her nesneye özel olurdu, değer alırdı. Statikler böyle değildi.
+
+509
+01:08:21,971 --> 01:08:26,131
+Onların değeri hep aynı. Kim arttırırsa o arttırdığı yerde o şekilde kalıyor.
+
+510
+01:08:26,832 --> 01:08:30,771
+Buradaki metodun olayı da zaten bu statik değişkeni arttırmak üzerine.
+
+511
+01:08:31,371 --> 01:08:33,912
+Bu metod bir kere çalıştığı anda bu değişken 1 artacak.
+
+512
+01:08:34,332 --> 01:08:41,532
+Ekrana da işte şu çalıştı ve sayı değeri şu oldu deyip böyle bir bilgi yazdıracak.
+
+513
+01:08:43,851 --> 01:08:48,371
+Şimdi bundan nesneleri nasıl oluşturuyoruz? Burada Constructor'ını gördük.
+
+514
+01:08:48,819 --> 01:09:08,460
+isim vererek oluşturmuşuz. Bakalım. Şuraya kadar bizim bildiğimiz klasik yöntemimiz. Sınıfın adını ver, nesne adı ver, new sınıf adı. Constructor bizi neye zorluyorsa isim vermeye zorlamış. Nesne 1 diye isim vermişim. Nesnek diye isim vermişim.
+
+515
+01:09:13,619 --> 01:09:27,459
+Metot çalıştırıyoruz. Bu sınıfı işte start metodu var mı yok ama biz artık bunları bir thread nesnesi yaptığımız için nokta start diyoruz ve artık şu run metodunu çalıştırmış oluyoruz.
+
+516
+01:09:28,879 --> 01:09:36,939
+Run metodunun içinde ne vardı benim? Add metodu vardı. Yani gelecek aslında şu add metodunun içine okuyacak.
+
+517
+01:09:40,819 --> 01:09:45,760
+Bu nasıl start dedim, bu nasıl start dedim, araya bir uyku beklememe, herhangi bir şey koymadım.
+
+518
+01:09:46,399 --> 01:09:48,699
+Ve bu başlayacak, sonra bu da başlayacak.
+
+519
+01:09:49,059 --> 01:09:54,819
+İkisi beraber bunların çalıştığını, çalışmasını sağlamış olacağım bu şekilde.
+
+520
+01:10:00,627 --> 01:10:01,807
+çalıştıralım.
+
+521
+01:10:05,939 --> 01:10:09,680
+Bakın nesneleri çalıştırdım.
+
+522
+01:10:11,319 --> 01:10:14,760
+Ve run metodunda ne yaptı? Add metodu çalıştırdık.
+
+523
+01:10:16,699 --> 01:10:28,840
+Şimdi sıraya bakın. Önce aslında i1.start, i2.start. Evet, belki önce i1 başladı ama i2 hemen arkasından geldiği için burada şöyle bir işlem yaptı bunlar.
+
+524
+01:10:30,840 --> 01:10:33,039
+Şimdi add metodunu çalıştırıyorlar ya ikisi de.
+
+525
+01:10:33,684 --> 01:10:42,804
+Add metodu iki satırlı bir metot. Bunlar büyük ihtimalle sayı değeri eşittir ikisine de 7 olmuşsa eğer son konsola bunu yazıyorlar.
+
+526
+01:10:44,684 --> 01:10:55,444
+5'ten başlamıştık. Ne yaptı? Biri geldi buradan. O değeri 6 yaptı. Sonra diğeri geldi.
+
+527
+01:10:55,988 --> 01:11:18,388
+O da buraya çalıştırdı yine bu satıra. İki tredim var. İki nesna. O da geldi buraya, yedi yaptı. Sonra bunlar alt satıra geçtiler. Ama nesne iki hızlı çıktı. Ne yaptı? O gitti. Hemen önce o burayı yazdırdı. Ve ben o yüzden çıktı da nesne iki çalıştı diye görüyorum. Nesne iki çalıştı. O sayıları artık yedi diyorum.
+
+528
+01:11:20,243 --> 01:11:44,243
+Daha sonra yapacağım şey, olan şey, yapılan şey ne oldu bu sefer? Nesne birinde şu satırı ilk satırı okumuştu. İkinci satırı çalışacak. Sistem ad print alanı ile o da ne yazdırdı? Sayının artık o anki değeri. O okuduğunda evet 6 yapmıştı belki ama artık o son değerinde bu statikol için 7 olmuş. O da yine 7'yi yazdırıyor. Bunu böyle birkaç kere çalıştırdığımızda...
+
+529
+01:11:44,948 --> 01:11:59,248
+Bak önce nesne 1 çalıştı. Bunlar artık 6'da kalmış. İşte böyle olabiliyor. Orada neyi okurlarsa, en son neyi görürlerse onu yazdırabiliyorlar. Bu şekilde ilerliyor bunların değerleri.
+
+530
+01:12:01,328 --> 01:12:08,468
+Şimdi hemen özet geçelim. Nesneyi oluşturup start dediğim zaman bileceğim şey bu.
+
+531
+01:12:08,768 --> 01:12:13,507
+Bir run metodunu over real etmişimdir. Run'ın içeriği okunur. Yapacağımız bu.
+
+532
+01:12:15,688 --> 01:12:21,448
+Yoksa şuraya i1.run demek, böyle bir metod çalıştırırım.
+
+533
+01:12:21,648 --> 01:12:29,167
+Bu olayı normal, klasik bir metod haline getirir. Bunu istemeyiz. Biz start diyerek thread halinde olmalarını bekliyoruz.
+
+534
+01:12:30,208 --> 01:12:35,628
+Yani start'ın anlamı biraz da şey oluyor. Bu başlıyor. O zaman alt satırı da hemen okut. Bekleme bunun bitmesinin gibi.
+
+535
+01:12:36,948 --> 01:13:00,628
+Şimdi biz dedik ki bunu ikinci yöntem olarak kullanıyoruz. Daha sıklıkla thread oluşturmanın bir yolu bu. Evet, bir sınıfı thread sınıfından extend etmek. Diğer yolu da şöyle bir şey. Runable isimli bir tane interface var. Onu implement etmek.
+
+536
+01:13:01,939 --> 01:13:28,879
+Diğer yöntem de bu. Bakın sınıf tamamen aynı. Her şeyle aynı. Metodu içeriği her şeyi. Run metodu dahi aynı. O da override ediliyor. Ama runable'ı burada implement etmek daha avantajlı bir şey. Niye avantajlı? Çünkü bir sınıfın, bakın burada thread'i extend ediyordum. Bu thread konkret bir sınıf. Extend ile alınıyor. Şimdi normalde bizim bir sınıfımızın zaten bir tanecik extend hakkı var.
+
+537
+01:13:29,555 --> 01:13:37,015
+Yani onu da gidip thread üzerinden kullandığım zaman bu sınıfa artık başka bir sınıftan, extendli bir sınıftan kalıtım yapamaz.
+
+538
+01:13:37,895 --> 01:13:46,775
+Ama implement dediğimde, bir interface implement ettiğimde o extend hakkım, bir tanecik extend hakkım hala elimde duruyor.
+
+539
+01:13:47,536 --> 01:13:52,015
+Başka interface'leri implement etmek istersem şuraya da virgül atıp onları da alabiliyorum.
+
+540
+01:13:52,416 --> 01:13:58,076
+O yüzden şu ilk etapta burada Renable implement etmek daha bir mantıklı oluyor.
+
+541
+01:13:58,796 --> 01:14:01,175
+O yüzden bunu ikinci yol olarak göstermiştik.
+
+542
+01:14:01,916 --> 01:14:08,476
+Serexen etmeyi bizim daha sıklıkla tercih edeceğimiz dolayı Renable implement etmek olacak.
+
+543
+01:14:08,675 --> 01:14:14,996
+Sistem her şeyle aynı. Sınıf aynı, metot aynı, run metodu yine aynı.
+
+544
+01:14:20,404 --> 01:14:22,844
+Increaser deyip bırakmıyorum.
+
+545
+01:14:23,744 --> 01:14:26,684
+Yani Increaser iyi bir New Increaser deyip bırakmıyorum.
+
+546
+01:14:26,684 --> 01:14:36,344
+Şu nesne tanımlamalarını yaptıktan sonra bunları bir thread nesnesinin içine alıyorum.
+
+547
+01:14:36,484 --> 01:14:37,924
+O thread'i burada kullanıyorum aslında.
+
+548
+01:14:38,024 --> 01:14:39,404
+Yine thread'e gidiyorum bir miktar.
+
+549
+01:14:40,164 --> 01:14:42,944
+Thread nesnelerini bu şekilde oluşturuyorum.
+
+550
+01:14:44,664 --> 01:14:47,844
+Ve thread nesnesini burada oluşturduktan sonra
+
+551
+01:14:48,435 --> 01:15:06,615
+Çıktılar dediğim gibi yine aynı olacak. Önce hangisi hangisi satırı okuyorsa o şekilde ilerleyecek. Metodumuz da yine start. Bunda da bir değişiklik yok. Start ile ben gideceğim ve runable'ın içindeki ne yazmışsam bunu okuyacağım.
+
+552
+01:15:09,335 --> 01:15:10,675
+Şuradayız şu anda.
+
+553
+01:15:13,515 --> 01:15:13,855
+Aynen.
+
+554
+01:15:14,676 --> 01:15:19,576
+Yine bu şekilde okumalarımızı yapabiliyoruz çalıştırdıkça.
+
+555
+01:15:22,576 --> 01:15:27,336
+Böyle değişik değişik versiyonları çıkabiliyor.
+
+556
+01:15:28,156 --> 01:15:32,855
+Bununla alakalı geçerli yaptığımız şeyimiz vardı.
+
+557
+01:15:32,935 --> 01:15:33,896
+Youtube'da o video var.
+
+558
+01:15:33,976 --> 01:15:35,056
+Ona da bakabilirsiniz.
+
+559
+01:15:35,656 --> 01:15:38,656
+Youtube'da Elçin Bey yazınca o multitread videosu çıkar.
+
+560
+01:15:39,315 --> 01:15:42,956
+Orada da daha detaylı bir örnek üzerinden de anlatmıştık bu konuyu.
+
+561
+01:15:43,667 --> 01:15:53,688
+Biraz da işte pool oluşturma, threadleri böyle 3'er 5'er grup haline getirme veya işte önceliklerini nasıl belirliyoruz ediyoruz.
+
+562
+01:15:53,688 --> 01:16:00,047
+O kısımlarda o videoları izleyebilirsiniz. Bugün ona da girersek çünkü bir saatten önce çıkamayız oradan.
+
+563
+01:16:00,867 --> 01:16:07,627
+O yüzden sakin bir vaktinizde ona da bakarsınız. Derste de zaten bunlar hocalar anlatınca örnekler pekişecektir.
+
+564
+01:16:09,043 --> 01:16:11,583
+Elinize sağlık hocam. YouTube videoları çok güzel olmuş.
+
+565
+01:16:12,404 --> 01:16:19,703
+Teşekkür ederim. Faydalı oluyorsa ne mutlu. Geçen ay korona sebebiyle başladık o işe. Ama iyi oldu böyle.
+
+566
+01:16:23,604 --> 01:16:26,384
+Evet, benim anlatacaklarım bugünlük bu kadar.
+
+567
+01:16:30,515 --> 01:16:34,355
+Katıldığınız için teşekkür ediyorum. Mevcudumuz bayağı azaldı.
+
+568
+01:16:34,815 --> 01:16:36,455
+Teşekkürler hocam. İyi akşamlar.
+
+569
+01:16:36,935 --> 01:16:38,335
+İyi akşamlar [öğrenci].
+
+570
+01:16:38,335 --> 01:16:39,135
+İyi akşamlar hocam.
+
+571
+01:16:39,695 --> 01:16:41,115
+İyi akşamlar [öğrenci].
+
+572
+01:16:54,484 --> 01:16:58,304
+Arkadaşlar, görüşmek üzere. Projenizde de başarılar.

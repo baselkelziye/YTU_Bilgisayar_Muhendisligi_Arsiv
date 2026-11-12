@@ -1,0 +1,4251 @@
+1
+00:00:15,667 --> 00:00:29,707
+Evet, merhaba, günaydın arkadaşlar. Günaydın [öğrenci], merhaba. Bir sorun varsa buyurun. Şimdi bir beş dakika biraz bekliyoruz katılımınızı artsın diye malum. Sorunuz varsa buyurun bu arada arkadaşlarım.
+
+2
+00:00:40,020 --> 00:00:41,060
+En hensi, asas, chink.
+
+3
+00:00:46,228 --> 00:00:47,388
+Şimdi açalım.
+
+4
+00:01:31,060 --> 00:01:34,200
+Evet, daha henüz az. Ben daha ila on beş kişiyiz. Biraz bekleyelim.
+
+5
+00:03:41,395 --> 00:03:42,135
+Şu kan kodkog.
+
+6
+00:04:36,052 --> 00:04:45,072
+Sadece 95 kişiye tıkalım. Bu arada 1-2 kişinin kalıtı fazla ivme yok katılımda. Sipariş edeceğiz o zamanlarda.
+
+7
+00:04:46,004 --> 00:05:09,783
+Şimdi gerçi bir miktar bilgiyi dün laba katılan arkadaşlar elde ettiler. Çünkü şimdi labla dersten önce olunca, ders programında öyle denk gelince, bazı şeyleri daha önceden labda anlatılması da gerekir biliyor. O açıdan illaki yararı olmuştur. Ayrıca dersler online de izlenebiliyor.
+
+8
+00:05:10,196 --> 00:05:15,396
+O anlamda o hakkınızı kullanmak da tabii ki size kalmış tercih sizin.
+
+9
+00:05:15,816 --> 00:05:18,376
+Burada olan arkadaşların soru sorma avantajı oluyor.
+
+10
+00:05:18,536 --> 00:05:21,296
+Akıllarını takılan şey hemen sorma avantajı oluyor.
+
+11
+00:05:21,747 --> 00:05:46,687
+Pekala. Şimdi geçen hafta ilk işte main metodumuzu sequence diagramını çizmiştik. Tabii öncesinde bir sınıf tasarlamıştık. Onun metotlarını denemiştik, constructor'ın metotlarını denemiştik. Ondan sonra çeşitli ekstra denemeler de yapmıştık. Ondan sonra main metodun sequence diagramını çizerekten dersi bitirmiştik. Şimdi devam edelim kaldığımız yerden.
+
+12
+00:05:49,779 --> 00:06:07,299
+Bu örneği bir ek üye alanla genişleteceğim ve oradan yola çıkarak da Constructive Overloading konularını göstereceğim ve Constructive'a dikkat edilmesi gereken bir iki noktadan daha bahsedeceğim.
+
+13
+00:06:08,755 --> 00:06:15,155
+K sınıfımıza ek olarak şasi numarası alanı ekledik. O da private.
+
+14
+00:06:15,795 --> 00:06:19,175
+Şimdi böyle olunca normalde yaklaşımımız neydi?
+
+15
+00:06:19,795 --> 00:06:25,995
+Bir nesne için tekir tanımlayıcı niteliğinde olan üye alanları mutlaka constructorda tanımlamaktı.
+
+16
+00:06:25,995 --> 00:06:27,995
+O mantığımızı kullanarak...
+
+17
+00:06:29,235 --> 00:06:37,315
+İkinci parametreyi de constructora ekledik. Hem plate için hem şasi numarası için.
+
+18
+00:06:37,315 --> 00:06:42,055
+Şimdi burada şöyle bir ayrıntı var. Ben burada biraz kolaya kaçmışım diyelim.
+
+19
+00:06:42,435 --> 00:06:48,355
+K constructorına baktığımda iki tane string parametresi alıyor tamam. UML şemasına baktığımda.
+
+20
+00:06:48,735 --> 00:06:54,155
+Şimdi kodda görüyorum ki bu parametreden birincisi plaka numarası için, ikincisi şasi numarası için.
+
+21
+00:06:54,755 --> 00:06:56,735
+Bu kodda açık açık anlaşılıyor.
+
+22
+00:06:57,235 --> 00:06:59,415
+Fakat yüya nazi şamasında pek anlaşılmıyor.
+
+23
+00:06:59,791 --> 00:07:06,171
+K sınıfın iki üye alanı da string, constructor imzasında da iki parametre var.
+
+24
+00:07:06,351 --> 00:07:11,711
+Türleri string, şimdi hangi parametre hangi üye alanı ilklendirmek için kullanılıyor?
+
+25
+00:07:11,831 --> 00:07:16,692
+Constructor'ın UML şemasındaki çiziminde bu belli olmuyor.
+
+26
+00:07:16,932 --> 00:07:27,771
+Bu nedenle aslında bu şekli çizerken plate 2.3'de string, virgül, chasis number 2.3'de string şeklinde yazmak daha doğru.
+
+27
+00:07:27,791 --> 00:07:52,491
+olurdu. Sizler buna özen gösterin lütfen. Bunu bir öncelikle hatırlatmak istiyorum. Sonra ardından main metodunun bu sınıfta olmadığını görüyoruz. Bu nedenle başka bir sınıfa main metodu yazacağız ve o sınıfın main metodu içerisinde kar nesnelerini oluşturup deneyeceğiz. Bu iki şeyi göstermek istiyorum şimdi size.
+
+28
+00:07:55,795 --> 00:07:59,336
+Ama önce constructorla ilgili biraz daha konuşmak istiyorum.
+
+29
+00:08:02,644 --> 00:08:12,043
+Normal olan şey her iki üye alanı da önemli olduğu için ikisini de constructora iki parametre olarak verip öyle ilgilendirmek.
+
+30
+00:08:12,563 --> 00:08:17,384
+Yeni constructorımızın kodu bu oldu. Kodunun geri kalınca önceki yansı da gördüğünüz gibi.
+
+31
+00:08:18,423 --> 00:08:27,903
+Şimdi diyelim ki acaba bu iki parametre için, daha doğrusu iki üye alan için ayrı ayrı constructor tanımlasak olur muydu?
+
+32
+00:08:28,144 --> 00:08:30,644
+Kısa yanıt, öz yanıt olmadı.
+
+33
+00:08:30,644 --> 00:08:34,984
+Neden olmaz? Şimdi onun ayrıntıları üstünde konuşmak istiyorum.
+
+34
+00:08:34,984 --> 00:08:36,799
+Birincisi...
+
+35
+00:08:36,799 --> 00:08:49,879
+Şimdi ayrı ayrı yasladıkları sağdaki gibi oluyordu kod. İşte card constructor'ı ilk iki plak numarası da parametre olarak alıyor. İkincisi, ikinci constructor'ı şasin numarasını parametre olarak alıyor.
+
+36
+00:08:49,879 --> 00:09:04,799
+Şimdi bu sağdaki kod iki nedenle olmaz. Birinci neden, iç mantığı açısından düşünürsek bir aracın hem plak numarası hem şasin numarası tanımlı olmalı mutlaka. Bu ikisinin birden tanımlı olmadan bir araç üretilmesi.
+
+37
+00:09:04,799 --> 00:09:11,119
+Fakat bunu ancak sol taraftaki yapısı sağlıyor.
+
+38
+00:09:11,119 --> 00:09:16,659
+Sağ taraftaki yapıda bir tane plaka numaralı konstruktör, bir tane de şasi numaralı konstruktör var.
+
+39
+00:09:17,259 --> 00:09:20,940
+Şimdi siz bunlardan birini çağırmak durumundasınız.
+
+40
+00:09:22,179 --> 00:09:25,720
+Üsttekini çağırırsanız şasi numarası atamamış olursunuz.
+
+41
+00:09:26,139 --> 00:09:29,159
+Alttakini çağırırsanız plaka numarası atamamış olursunuz.
+
+42
+00:09:29,620 --> 00:09:35,180
+Hadi sonra atamadığınızı bir setter metotla atayacağım diyebilirsiniz belki.
+
+43
+00:09:35,819 --> 00:09:38,819
+Fakat burada da iki problem ortaya çıkıyor.
+
+44
+00:09:39,139 --> 00:09:43,059
+Birincisi bu atanmak unutulabilir veya kasıtlı yapılabilir.
+
+45
+00:09:43,639 --> 00:09:47,440
+Bu da iç mantığı açısından doğru sonuç oluşturmaz.
+
+46
+00:09:47,440 --> 00:09:49,419
+İkinci sorun ise...
+
+47
+00:09:50,772 --> 00:09:59,951
+Settin metotları olmadığı durumunda sadece constructor üzerinden ilklendirme yapılabilecek bir kodda diyelim ki öyle bir kısıtlamamız var.
+
+48
+00:10:00,052 --> 00:10:10,692
+O zaman bu iki konstraktörün birini çağırdığınızda, ikincisini çağırmak istediğinizde, ilkini çağırmış olduğunuz zamandaki nesne ortadan kaybolup, yepyeni bir nesne oluşmuş oluyor.
+
+49
+00:10:11,072 --> 00:10:13,772
+Önce birinci konstraktör, sonra ikinciyi mi çalıştırdınız?
+
+50
+00:10:14,211 --> 00:10:22,352
+Birinci konstraktör çağırdıktan sonra oluşan nesne, ikinci konstraktör çağırdıktan sonra yok oluyor, yerine yepyeni bir nesne atanmış oluyor.
+
+51
+00:10:23,072 --> 00:10:24,892
+O açıdan yine olmayacak.
+
+52
+00:10:25,268 --> 00:10:30,128
+Yani iş mantığı açısından her şekilde yanlış bir karar olmuş olur.
+
+53
+00:10:30,228 --> 00:10:33,288
+Sağdaki gibi bir tasarım yazıp kodu yazmak.
+
+54
+00:10:33,868 --> 00:10:38,708
+Öte yandan zaten bu sağdaki kod değerleme hatası verecektir tamamen.
+
+55
+00:10:38,708 --> 00:10:45,528
+Çünkü diyecektir ki siz iki tane kar konstraktörünü aynı kar konstraktörünü iki kere tanımlamışsınız diyecek.
+
+56
+00:10:45,968 --> 00:10:50,448
+Çünkü her ikisinde sadece hem konstraktör metodunlar adları aynı.
+
+57
+00:10:51,635 --> 00:11:04,195
+Hem de ikisinde birer string parametresi var. Parametre türleri farklı olsaydı hata almazdık derlem hatası. Ama şimdi her ikisinde de tek string parametreleri iki constructır.
+
+58
+00:11:05,940 --> 00:11:20,580
+Kodu içerisinde herhangi bir yerden bir constructor çağıracağımız zaman, bir de string parametre verdiğimiz zaman o constructor, bilgisayar anlayamayacak. Üsttekini mi çağıracağım, alttakini mi çağıracağım? Belirsizlik olacak. Zaten böyle bir şey derleme hatası verecektir.
+
+59
+00:11:21,331 --> 00:11:36,892
+Hadi diyelim ki şasi numarası string değil de int olsun diyelim ki. Eğer öyle olsaydı, şasi numarası int olsaydı, o zaman alttaki constructor da int parametre alacaktı. O zaman bir derleme hatasına yol açılmayacaktı.
+
+60
+00:11:36,892 --> 00:11:46,827
+Fakat daha önce söylediğim iç mantığına göre olan yanlışlık, aykırılık devam ediyor olacaktı. O yüzden...
+
+61
+00:11:46,836 --> 00:12:03,996
+Özetle tekrarlıyorum. Bir nesnenin mutlaka sahip olması, anlamlı değerlere sahip olması gereken üye alanların hepsinin yer aldığı bir konstruktör tanımlanmak gerekir. Eksiğinin de tanımlanması gerekir.
+
+62
+00:12:04,272 --> 00:12:20,032
+Bunu özellikle söylemek istiyorum. Sonra biraz da kod üzerinden de denemelerle bu işi yapacağız. Hatta yapalım hemen. Çünkü şimdi ilkelere bir geçmişim bu arada. Ondan önce bu örneği bir tamamlamak istiyorum size.
+
+63
+00:12:21,612 --> 00:12:26,292
+Şimdi bunları nerede yapıyoruz? Np01b tamam peki.
+
+64
+00:12:31,539 --> 00:12:33,319
+Ulan niye da burada kalmış?
+
+65
+00:12:39,124 --> 00:12:41,124
+Bunlar...
+
+66
+00:12:41,124 --> 00:12:44,223
+Bir dakika, bir şaşırdım şimdi.
+
+67
+00:12:46,324 --> 00:12:47,104
+Gidersin.
+
+68
+00:12:47,844 --> 00:12:48,423
+Kodlarım da.
+
+69
+00:12:49,443 --> 00:12:50,183
+SLC'de.
+
+70
+00:12:50,644 --> 00:12:51,163
+Ha, bir dakika.
+
+71
+00:12:51,344 --> 00:12:52,263
+Projeye şey bilinir.
+
+72
+00:12:52,403 --> 00:12:53,743
+Şimdi tekrar oluşum, oluşum.
+
+73
+00:12:54,804 --> 00:12:55,663
+Evet, neydi?
+
+74
+00:12:55,784 --> 00:12:56,604
+Yanlış yetişmiş.
+
+75
+00:12:56,604 --> 00:12:58,723
+Aaaa.
+
+76
+00:12:58,943 --> 00:12:59,584
+Dur, akınmıyız.
+
+77
+00:13:00,163 --> 00:13:01,503
+Tekrar yapalım şimdi şu an.
+
+78
+00:13:04,284 --> 00:13:04,844
+Ha, evet.
+
+79
+00:13:04,983 --> 00:13:05,223
+Tamam.
+
+80
+00:13:06,259 --> 00:13:08,160
+Her şey saçmalamışım.
+
+81
+00:13:10,220 --> 00:13:11,600
+Ondan sonra şu nedir?
+
+82
+00:13:17,011 --> 00:13:17,291
+Awesome.
+
+83
+00:13:20,788 --> 00:13:21,628
+Bu ne dedi bakayım.
+
+84
+00:13:24,348 --> 00:13:26,368
+Tamam, aslında bu. Evet, peki.
+
+85
+00:13:27,048 --> 00:13:32,927
+Ama bunu niye NLP şeklinde adlandırmamış? Onu da ilginç bir şey yapmışım.
+
+86
+00:13:32,988 --> 00:13:34,008
+Sonra düzenlemişim.
+
+87
+00:13:34,567 --> 00:13:36,288
+Tamam, pekala. Bu dost.
+
+88
+00:13:38,807 --> 00:13:39,748
+Deneyim diyelim.
+
+89
+00:13:42,508 --> 00:13:47,508
+Çünkü bir dersin eski versiyonu nesine de programlamaydı. Onların kodları ayrıydı.
+
+90
+00:13:50,004 --> 00:13:53,103
+Yanlış şeye bakıyorum diye düşünüyorum. Tamam, burada buradayız.
+
+91
+00:13:55,783 --> 00:13:56,463
+Evet.
+
+92
+00:13:57,384 --> 00:14:00,163
+Mp01d paketindeki karca var.
+
+93
+00:14:00,504 --> 00:14:03,024
+Şimdi bunun main metodunu da ayrıca yazacağız.
+
+94
+00:14:03,203 --> 00:14:03,563
+Yazalım.
+
+95
+00:14:04,163 --> 00:14:06,004
+Ki onu...
+
+96
+00:14:08,144 --> 00:14:11,043
+Bunu da yazalım. Yani bir fark olmadığını görelim.
+
+97
+00:14:15,124 --> 00:14:18,344
+Programcı mesela adına.
+
+98
+00:14:19,424 --> 00:14:20,464
+Mi metodum da olsun.
+
+99
+00:14:23,284 --> 00:14:27,264
+Ama önce şu karın yeni versiyonu üzerinden konuşmak istiyorum.
+
+100
+00:14:27,663 --> 00:14:34,403
+Şimdi dediğim gibi normalde kodumuz bu şekilde olmalı. Bir constructor'da iki üye alan birden tanımlanmalı.
+
+101
+00:14:34,723 --> 00:14:44,024
+Şimdi bunun işte tek tek constructor'larda tanımlanma olması durumunda aldığım derleme hatasını göstereyim size.
+
+102
+00:14:45,083 --> 00:14:47,443
+Onu da nasıl yapalım? Hadi buradan yapalım.
+
+103
+00:14:47,443 --> 00:14:54,443
+Şimdi bir tanesi plaka numarası alacak. Ondan sonucuma bir tanesi de...
+
+104
+00:14:55,091 --> 00:15:14,372
+Sadece şasi numarası alacak. Bu şasi değil de plakanın numarasını yüklendiriyor dedik. Bu da şasi numarasını yüklendiriyor dedik. Bakın şimdi derdeme hatasını alıyoruz. Diyor ki, işte duplicate method, class, construct, text string parametrisi alan class sınıfında.
+
+105
+00:15:24,467 --> 00:15:25,467
+O zaman
+
+106
+00:15:26,467 --> 00:15:29,467
+Şunu yapalım,
+
+107
+00:15:30,467 --> 00:15:31,467
+Şunu yapalım.
+
+108
+00:15:32,467 --> 00:15:34,467
+Evet. Böyle olsaydı
+
+109
+00:15:34,467 --> 00:15:36,331
+O zaman herhangi bir
+
+110
+00:15:36,403 --> 00:15:38,064
+Değerleme hatası yok.
+
+111
+00:15:38,903 --> 00:15:49,884
+Bu arada şey de ekleyeyim ya, yani introduce selfie de ekran yazdığı için de şundan, riski halinden alalım, buraya koyalım.
+
+112
+00:15:50,283 --> 00:15:52,324
+Ha, ayrı, düz, bir düz, büt de neyse.
+
+113
+00:15:53,344 --> 00:15:54,283
+Şimdi alalım.
+
+114
+00:15:55,624 --> 00:15:56,624
+Şuradaki kara koyalım.
+
+115
+00:15:59,504 --> 00:16:02,864
+Şimdi sadece plakasını değil de aynı zamanda şey de yazsın.
+
+116
+00:16:08,659 --> 00:16:24,899
+şey. Ve this işte. And my chassis number is. Ondan sonra attı. Get chassis number değilmiş de.
+
+117
+00:16:28,692 --> 00:16:30,491
+Şunu da şöyle yapalım.
+
+118
+00:16:33,491 --> 00:16:35,672
+Tamam, peki. Bunu da ekledik.
+
+119
+00:16:35,892 --> 00:16:44,131
+Bu arada bir şekilde Source Collect Indentation'ların bir türü onları bir şey demedi, ayarlayamadı.
+
+120
+00:16:44,392 --> 00:16:45,131
+Tamam, pekala.
+
+121
+00:16:45,871 --> 00:16:47,711
+Şimdi düzende güzel.
+
+122
+00:16:47,711 --> 00:16:50,971
+Şimdi bunu kaydettim.
+
+123
+00:16:51,412 --> 00:17:18,311
+Şimdi artık bir problem oluşturmadı constructora. Çünkü artık bunun ikisi de farklı constructor metod. Birisi string parametre alan, birisi int parametre alan. Bu yaptığım işe overloading, bu metotları ise overloaded metod deniliyor. Bu işler sadece constructor metodla değil, herhangi bir metotta yapılabilir. Yani normal bir metodu da overload edebilirsiniz.
+
+124
+00:17:19,188 --> 00:17:25,168
+Türkçe olarak söylersek bu iki metota adaş metotlar şeklinde tabir ediyoruz.
+
+125
+00:17:25,568 --> 00:17:31,648
+Yaptığımız işe ise nasıl diyorduk çoklu metod yok.
+
+126
+00:17:33,068 --> 00:17:35,028
+Adaş metot tanımlama diyelim.
+
+127
+00:17:36,248 --> 00:17:42,648
+Daha çok literatürk adı overloading işlem. Bunlar da overloaded constructlar olmuş oluyor.
+
+128
+00:17:42,996 --> 00:17:55,316
+Şimdi, az önce bahsettiğim iç mantığı probleminden bahsedelim. Hadi sizin için set şasis number şey de ekleyelim. Demki setin metodu olsun.
+
+129
+00:17:57,011 --> 00:17:59,551
+Onu da mesela şu an hızlıca şöyle ekleyeyim.
+
+130
+00:17:59,911 --> 00:18:08,891
+Bir alanın üstünde eklipsleyken sağ tıklayıp source, generate, getters and setters dediğinizde getters setterları seçip şeyde biliyorsunuz.
+
+131
+00:18:08,951 --> 00:18:10,931
+Otomatik oluşturmasını sağlayabiliyorsunuz.
+
+132
+00:18:10,931 --> 00:18:15,511
+Şu an en son eklemesinde ben hemen sesin arasını getirmek istiyorum.
+
+133
+00:18:18,132 --> 00:18:18,591
+Pekala.
+
+134
+00:18:19,391 --> 00:18:24,451
+Şimdi burada mesela diyelim ki bunun bir metodunda bir kar nesnesi oluşturuyorum.
+
+135
+00:18:25,364 --> 00:18:27,804
+Ekar, Ekar, Ekar, New, Kars.
+
+136
+00:18:28,163 --> 00:18:29,724
+Şimdi benim elimde
+
+137
+00:18:29,724 --> 00:18:32,104
+Özür dilerim.
+
+138
+00:18:34,084 --> 00:18:39,483
+Şimdi benim elimde bir şasi numarası için ve bir constructor için olan şey var.
+
+139
+00:18:39,827 --> 00:19:00,427
+plaka numarası için ve şas numarası için iki tane constructor var. Diğer öneriler diğer paketlerdeki class sonuçlarından öneriyor. Peki şimdi diyelim ki plaka numarası diyelim önce. Ondan sonra diyelim ki ek.introduce self.
+
+140
+00:19:04,084 --> 00:19:08,284
+Bu aracın plakası var, şasi numarası yok. Böyle bir şey oluşturdum.
+
+141
+00:19:08,523 --> 00:19:12,683
+Halbuki her aracın şasi numarası da olmalıdır. Bu yüzden böyle bir problemim var.
+
+142
+00:19:12,923 --> 00:19:18,284
+Peki, hadi diyelim ki setter metotları yoktu. Şasi numarasını da eklemek istiyorum.
+
+143
+00:19:18,624 --> 00:19:21,523
+Onun için şu anda şu an elimde ne var? İkinci constructor var.
+
+144
+00:19:21,523 --> 00:19:23,244
+O zaman bir de şöyle desem.
+
+145
+00:19:25,748 --> 00:19:26,107
+K.
+
+146
+00:19:26,628 --> 00:19:28,148
+Şafın orası tam sayıdı.
+
+147
+00:19:28,847 --> 00:19:30,948
+3-4-3-4 olsun mesela.
+
+148
+00:19:32,728 --> 00:19:37,748
+Ve bu main metodu çalıştırdığımda...
+
+149
+00:19:38,408 --> 00:19:39,268
+Bir dakika ne oldu?
+
+150
+00:19:39,347 --> 00:19:39,948
+Ne diyor şimdi ona?
+
+151
+00:19:40,548 --> 00:19:40,748
+K.
+
+152
+00:19:41,668 --> 00:19:42,307
+Tamam.
+
+153
+00:19:42,567 --> 00:19:43,748
+Ondan sonra...
+
+154
+00:19:52,723 --> 00:19:53,764
+Yanlış yemin ediyorum.
+
+155
+00:19:55,304 --> 00:19:55,663
+Tamam.
+
+156
+00:19:56,003 --> 00:19:57,423
+Bu var, bu var, bu var.
+
+157
+00:19:57,563 --> 00:19:59,083
+Peki bu da problem vermedin de.
+
+158
+00:19:59,624 --> 00:20:01,324
+Bundan sonra niye bu da verdin?
+
+159
+00:20:14,324 --> 00:20:40,324
+Allah Allah. Bir dakika. Kendi şeyinde, kendi paketinde, kendi main programında niçin bu K sınıfını şu an tanımıyorum diyor. Çok ilginç. Bir dakika. Zaten 0-1-B buradayım. Ve aynı paket içerisindeyim. Aynı paket içerisinde bir şey niye inkluder etmeye çalışıyor? Acaba yine şu şey problemi mi oldu? Bin dizinin deki bu şeyleri mi anlamamaya başladı?
+
+160
+00:20:44,435 --> 00:21:02,536
+Evet, yine bu mesele. Tamam, peki. Şöyle yapacağım şimdi madem öyle. Bütün bu kodlarımı şeye taşıyacağım. Çıkmak için bu ders boyunca sizi biraz bekletmiş olacağım. Bu arada yapmalıydım ben bütün bunları ama şöyle yapacağım şimdi madem öyle.
+
+161
+00:21:20,115 --> 00:21:20,556
+Aşk.
+
+162
+00:21:28,627 --> 00:21:29,807
+Evet.
+
+163
+00:21:38,675 --> 00:21:41,955
+şey dizime gideyim, şu dizime gideyim.
+
+164
+00:21:43,275 --> 00:21:46,016
+Eclipse, workspace, evet buradayız.
+
+165
+00:21:46,016 --> 00:21:46,935
+Ondan sonucuma.
+
+166
+00:21:47,615 --> 00:21:50,715
+Şimdi buraya bunu alacağım.
+
+167
+00:21:53,155 --> 00:21:55,695
+Kopyala şeklinde tabi, bu da kalsın orijinali de.
+
+168
+00:22:05,107 --> 00:22:06,008
+Şimdi off.
+
+169
+00:22:17,107 --> 00:22:17,728
+Danke da.
+
+170
+00:22:26,900 --> 00:22:29,539
+[öğrenci], Equips Workspace, gel bakalım.
+
+171
+00:22:30,860 --> 00:22:34,160
+Evet, buradaki MP kodlar seç.
+
+172
+00:22:39,251 --> 00:22:40,612
+Bu nevac spesce, tamam.
+
+173
+00:22:52,211 --> 00:22:52,875
+Arkadaşlar, class, object,
+
+174
+00:23:33,460 --> 00:23:39,099
+Bunu da farklılaştırmak için, anlamam için dinleyim edeceğim.
+
+175
+00:23:49,428 --> 00:23:51,228
+Evet, buradayız.
+
+176
+00:23:55,796 --> 00:24:03,135
+K sınıfı, iki üye alan, iki üye alan ayrı ayrı konstruktörleri tanımlanmış durumda. Şimdi gelin M programına.
+
+177
+00:24:03,635 --> 00:24:12,536
+O da şimdi tekrar EK'den devam etmek istiyorum ki size anlatmak istediğimi anlatabileyim. Bakın şimdi şu program yok.
+
+178
+00:24:16,596 --> 00:24:23,076
+İnderleme açısından. Eclipse'in bu Bucks'la iyi anlaşamaması, daha doğrusu aslında Bucks'ın hatası.
+
+179
+00:24:23,827 --> 00:24:27,107
+Anlaşaması problemini çözmüş olduk.
+
+180
+00:24:27,548 --> 00:24:31,867
+Şimdi 6. satırda ekarı plaka ile inşilans ediyorum.
+
+181
+00:24:32,187 --> 00:24:35,087
+7. satırda da şas numarasıyla inşilans ediyorum.
+
+182
+00:24:35,087 --> 00:24:48,627
+Şimdi ilk oluşturduğum kar, 6. satırda oluşturduğum kar, 7. satırda aslında yok olup yepyeni bir ekar nesnesi bellekte oluşturacağı için 8. satırda sadece şas numarasını verecek, plaka numarasını vermeyecek.
+
+183
+00:24:48,747 --> 00:24:50,567
+Böyle bir davranış söz konusu olacak.
+
+184
+00:24:56,564 --> 00:25:05,703
+Gördüğünüz gibi plaka numaranı NAL. İlklendirilmemiş nesnelerin NAL değerine sahip olduğunu söylemiştik. Şasi numarası ise onu doğru olarak verebilir.
+
+185
+00:25:06,203 --> 00:25:22,903
+Constructların yerini değiştirsem önce şasi numarası sonra plaka. Bu sefer de plaka kalacak ama daha yukarıda şasi numarasıyla çağırdığım için o silinmiş olacak. Tam tersi olmuş olacak. Bu nedenle bunların yapılmaması gerekmekte.
+
+186
+00:25:24,564 --> 00:25:32,824
+Bu şekilde bölmek güzel değil.
+
+187
+00:25:40,655 --> 00:25:51,675
+Peki, bu nedenle aslında yapılması gereken her iki üye alanında, tek constructorda tanımlanması olacak.
+
+188
+00:25:51,976 --> 00:26:05,776
+Hele ki şu iki üye alanı birden ister aynı türde olsun, ister farklı türde olsun last final yaparsam, o zaman bu kod yine değerleme hatası vermeye başlayacaktır.
+
+189
+00:26:05,996 --> 00:26:08,056
+Çünkü, hadi setter metotlarını silelim.
+
+190
+00:26:09,811 --> 00:26:11,331
+Saktır metotlarını silelim.
+
+191
+00:26:14,451 --> 00:26:19,372
+Final üye alanlara bir kere değer atanız, bir daha değer atanamazdı, hatırlıyorsunuz.
+
+192
+00:26:19,532 --> 00:26:27,532
+Şimdi böyle olunca iki constructor, ikisi de tek parametreleri, her iki arkada öbür parametre açıkta kalmış oluyor.
+
+193
+00:26:27,812 --> 00:26:34,012
+Bu da diyor ki, şimdi plaka numarasını tamam veriyorsun ama şasi numarası ilklendirilmemiş olacak diyor.
+
+194
+00:26:34,372 --> 00:26:39,612
+Aşağıda da şasi numarasını veriyorsun da bu sefer plaka numarası ilklendirilmemiş olacak diyor.
+
+195
+00:26:39,612 --> 00:26:42,012
+Bu nedenle evet.
+
+196
+00:26:42,451 --> 00:26:54,232
+Artık yapmamız gereken tek şey ve en doğrusu zaten işin en başında bunları aynı constructora iki ayrı parametre olarak tanımlamaktır.
+
+197
+00:26:54,232 --> 00:26:58,032
+Bu nedenle işte şimdi o işi hemen yapıyorum.
+
+198
+00:26:58,612 --> 00:27:02,352
+StratGrom generate constructor using fields diyorum bu seferde.
+
+199
+00:27:02,732 --> 00:27:10,052
+Her iki numarayı da seçtiğimde ve bunu oluşturduğumda super constructor kalıtımla ilgili daha sonra göreceğiz.
+
+200
+00:27:10,451 --> 00:27:14,512
+İşte size esas olması gereken kodun hali.
+
+201
+00:27:15,512 --> 00:27:22,832
+Bu arada tabii şunun da türünü stringe çektiğim için bunu da bu şekilde yapmam lazım.
+
+202
+00:27:22,832 --> 00:27:29,092
+Ve tabii ki artık bu durumda da main metodunu da düzeltmem lazım.
+
+203
+00:27:29,392 --> 00:27:31,772
+Aynı şekilde bunlar string olacak.
+
+204
+00:27:33,715 --> 00:27:34,755
+Şunun gibi işte.
+
+205
+00:27:35,215 --> 00:27:38,155
+Çocası numaralarında karakter de oluyor normalde.
+
+206
+00:27:38,495 --> 00:27:40,275
+Olması gereken budur arkadaşlar.
+
+207
+00:27:40,275 --> 00:27:51,755
+Ve bu şekilde main programı çağırdığımda da herhangi bir problem olmadan, yani main metodu başka sınıfta, class başka sınıf, fakat hiçbir problem yok.
+
+208
+00:27:52,075 --> 00:28:01,715
+Class sınıfının constructor ve public metodu üzerinden başka bir main programın içerisinde de bu nesneleri tanımladık, oluşturduk, iklendirdik, kullandık, yaptık.
+
+209
+00:28:01,715 --> 00:28:02,975
+yapmamız gerekenleri yaptık.
+
+210
+00:28:03,235 --> 00:28:04,355
+Şekrinde söyleyebilirim.
+
+211
+00:28:05,075 --> 00:28:08,495
+Şimdi buraya kadar soru soran arkadaşım varsa lütfen buyursun.
+
+212
+00:28:09,155 --> 00:28:10,735
+Hocam ben bir soru sorabilirim.
+
+213
+00:28:10,995 --> 00:28:11,955
+Tabii buyrunuz lütfen.
+
+214
+00:28:13,235 --> 00:28:17,095
+Zaten tek bir konstruktör yapmak daha kolay gibi.
+
+215
+00:28:17,955 --> 00:28:22,275
+Niye bazıları hani mesela iki tane konstruktör yapmak istesin ki?
+
+216
+00:28:22,355 --> 00:28:26,775
+Yani özel bir useful case var mı yani bir işe yarayan?
+
+217
+00:28:27,476 --> 00:28:38,336
+Şöyle hemen söyleyeyim. Şimdi diyelim ki şasinin ağısı mutlaka fabrikada yazılıyor ama plaka diyelim ki sonradan da atanabiliyor.
+
+218
+00:28:38,336 --> 00:28:47,415
+Diyelim olsun. O zaman ben şimdi ve de değiştirebiliyor olsun. Ama bu ve de önemli değil.
+
+219
+00:28:49,332 --> 00:28:55,551
+Ve de önemli değil. Bir dakika, önemli. Çünkü final'dan çekmek zorundayım bu durumda.
+
+220
+00:28:55,971 --> 00:29:03,291
+Şimdi, bu aracın şasi numarası mutlaka olmalı. Tamam, plaka da olmalı ama sonradan set edilebilir diyorsak eğer.
+
+221
+00:29:03,291 --> 00:29:12,011
+O zaman ben istersem bir aracı fabrikadan çıkarır çıkarmaz şasi numarası veriyorum ama plaka numarası vermiyorum.
+
+222
+00:29:12,251 --> 00:29:14,291
+Senaryosu da geçerlidir ve mantıklıdır.
+
+223
+00:29:16,884 --> 00:29:25,884
+Bu aracı şeyden çıkardığımda, fabrikadan çıkardığımda hem şas numarasını veriyorum hem plakasını da veriyorum. Senaryosu da mantıklıdır. Çünkü bazen...
+
+224
+00:29:26,291 --> 00:29:50,991
+Şu bayi, müşterinin siparişini alıyor. Araba henüz elinde yok. Fabrikadan çıkacak. Çıkıp direkt müşteriye satacak. O sırada plaka işlerini de hallettirmiştir belki. Fabrika çıkışında plakayı takıp da getireceklerdir. Aracı yükleyip. Her iki senaryoda mantıklı geliyor. O zaman her iki senaryoyu da destekleyecek, constructive, mantıklı olacaktır.
+
+225
+00:29:54,291 --> 00:30:05,392
+plaka numarası ve şasi numarası olan construct'ı ve sadece şasi numarası olan construct'ı ikisinin de birden tanımlanması mantıklı olacaktır.
+
+226
+00:30:05,751 --> 00:30:10,692
+Tabi burada şimdi plaka için setter metodunu da mutlaka eklemek gerek.
+
+227
+00:30:12,531 --> 00:30:16,412
+Plaka için setter metodunu buraya ekle.
+
+228
+00:30:17,412 --> 00:30:18,971
+Şöyle yukarı alayım.
+
+229
+00:30:19,231 --> 00:30:20,652
+Daha rahat konuşalım.
+
+230
+00:30:23,251 --> 00:30:29,892
+Evet, şimdi bu mantıklı oldu. Böyle bir senaryoyu önerebilirim. Mesela bu da sorunuza yanıt olacaktır.
+
+231
+00:30:30,652 --> 00:30:31,612
+Teşekkürler hocam.
+
+232
+00:30:31,912 --> 00:30:35,991
+Ben de teşekkür ederim. İyi akıllı ettiniz sordunuz. Başka sorusu olan arkadaşım var mı?
+
+233
+00:30:45,907 --> 00:30:49,167
+Daha evvel yaptığının aksine gayet mantıklı.
+
+234
+00:30:49,987 --> 00:30:50,907
+Ve olabilecek bir şey.
+
+235
+00:30:55,155 --> 00:30:56,236
+Peki o zaman devam edelim.
+
+236
+00:31:02,867 --> 00:31:06,027
+Şu on later demişim. Bugün işini yarına bırakma. Boş ver.
+
+237
+00:31:07,027 --> 00:31:12,487
+Ama int demek için belki de araya ilkelleri de bir şimdi artık anlatalım demişim.
+
+238
+00:31:12,487 --> 00:31:12,767
+Peki.
+
+239
+00:31:15,476 --> 00:31:37,336
+Java dilinde ilkel kodlarımız, ilkel dünya alanlarımız da var tabii ki. Primitif diyoruz bunlara. Primitif türler demek sadece tek bir bilgi içeren türlerdir. Bunlar sınıf olmayan türlerdir. Primitif diyoruz. Sınıflara da, sınıflara bir şey demiyoruz. Sınıftır. Ya da non-primitif de diyebiliriz.
+
+240
+00:31:39,443 --> 00:31:59,903
+Class diye ne kadar non-primitive demek pek de mantıklı değil. Primitive, non-primitive, primitifler, ilkeller, tek bir bilgi alan, tam sayılmış filan gibi değerler. Non-primitiveler ise class'la Java dinin kendisine gelen veya bizim tanımlayabileceğimiz herhangi bir tür class.
+
+241
+00:31:59,903 --> 00:32:07,384
+Şimdi bir de wrapper diye bir kavramımız da var Java'da. Sarmalayıcı diye şey edebilirim, tercüme.
+
+242
+00:32:07,443 --> 00:32:26,723
+edebilirim. Vrapper sınıflarında her bir ilkenin bir de bir Vrapper sınıfı vardır. Bir Vrapper sınıfı ilişkili olduğu ilkel türünden bir üye alan içerir ve o tür ilkelle ilgili yapılabilecek yararlı birçok metot da içermektedir.
+
+243
+00:32:27,071 --> 00:32:54,851
+Bu anlamda VRAP'a sınıflarına ihtiyacımız vardır. Bir de ilerleyen haftalarda bazı konular göreceğiz. Bazı noktalarda ilkeller kullanılamıyor olacak. Primitifler kullanılamıyor olacak. Ama bu durumda primitif yerine onun ilgili VRAP'a kullanarak çalışacağız. Örneğin bir tam sayı ile çalışmamız gerekiyor. Ama öyle bir ihtiyacımız olacak ki, öyle bir konuyu kullanmamız gerekecek ki.
+
+244
+00:32:55,071 --> 00:33:03,071
+Orada ilkel kullanılamıyor. O zaman biz de onun muadili olan, eşleniyor olan sarmalarıcısını kullanıyor olacağız.
+
+245
+00:33:04,711 --> 00:33:09,931
+Şimdi bu ilkeller neler en çok kullanacağımız onları görelim Java'da.
+
+246
+00:33:11,151 --> 00:33:18,791
+Tam sayılar, kesilir küsuratı olmayan tam sayılar. Java'da dörttür. Tam sayımız var.
+
+247
+00:33:19,491 --> 00:33:20,251
+Birincisi int.
+
+248
+00:33:20,756 --> 00:33:31,416
+Tam sayı anlamındadır. 4 byte ile simgelenir. Bu nedenle de artı eksi 2 milyar kadar bir aralıkta değer içerebilir.
+
+249
+00:33:32,155 --> 00:33:39,375
+Tabii bunun işaretsiz olmasını tercih ederseniz başına unsigned kelimesini koyarsınız.
+
+250
+00:33:39,375 --> 00:33:48,375
+Unsigned boşluk int. O zaman sıfır ile artı 4 milyar küsur kadar bir...
+
+251
+00:33:48,756 --> 00:34:06,456
+sayıyı destekleyecektir. Bu sayı her halükarda, örneğin TC kimlik numaralarını simgelemek için yeterli değildir. Çünkü daha fazla basmak vardır TC kimlik numarası sayısında. O zaman TC kimlik numaralarını nasıl modelleyeceğiz?
+
+252
+00:34:06,832 --> 00:34:34,832
+İki seçeneğimiz var. Birincisi long yani büyük tam sayı kullanırız. Burada da 8 byte ile simgeleniyor büyük tam sayılar. O da işte eksi artı 9.22 çarpı 10 üzeri 18'e kadar giden bir aralıkta. Yani şu 9'un sonuna 18 tane 0 koyun. Ama tabii ki şurada 22 de olduğu için 2 basamak oradan gidiyor. Yani 922'nin sonuna 16 tane.
+
+253
+00:34:34,831 --> 00:34:40,551
+Daha sıfır koyabilirsiniz. O sayı ne oluyorsa, nasıl hitap ediliyorsa. Öyle bir sayı.
+
+254
+00:34:42,192 --> 00:34:53,551
+Tabii burada yanlış dikkat edilmesi gereken bir şey var. Bir sayı long olarak tanımlayacağınız zaman bunun tam sayıyla karışmaması için sonuna büyük harfle L yazıyorsunuz.
+
+255
+00:34:54,431 --> 00:35:02,612
+Örneğin şuradaki sayının L ile yazacaksanız, diyelim ki karışmaması için sonuna bir de L harfi koymanız.
+
+256
+00:35:02,831 --> 00:35:30,711
+gerekiyor. Long'un L'si. Integer, long'un salma arayıcısı long. Şimdi hatırlarsanız sınıf adlarını büyük harfle başlıyorduk. O yüzden integer'ın I'sı da büyük, long'un L'sı da büyük. Eğer çok büyük sayılara ihtiyaçımız yoksa, bellekten de bu nedenle tasarruf etmek istiyorsak, short türümüz de var. Küçük tam sayılar içinde, 2 byte ile isim gelin.
+
+257
+00:35:30,831 --> 00:35:45,192
+O da, ekstra artı, 32 bin 700 küsur diye kadar gitmektedir. Bunu da isterseniz unsound yapabilirsiniz. O zaman sıfır ile 65 bin 535 filan kadar gidiyor.
+
+258
+00:35:45,940 --> 00:35:59,940
+Veya daha da küçük tam sıralarda da çalışabilirim diyorsanız, byte türümüz de var. Bir byte, sekiz bit biliyorsunuz. O da eksi yüz yirmi sekizi altı yüz yirmi yedi arasında gidiyor.
+
+259
+00:36:00,519 --> 00:36:11,579
+Veya unsigned derseniz sıfır ve iki yüz elli beş arasında sayılar saklayabilirsiniz. Short'un sanırıcısı büyük harfle short, byte'un sanırıcısı büyük harfle byte.
+
+260
+00:36:11,923 --> 00:36:21,963
+Bir tek bu adlandırma şeklinde bakarsanız eğer, yani ilk harfinin büyük yaparaktan wrapperını da elde ediyorsunuz.
+
+261
+00:36:22,064 --> 00:36:28,564
+Int iskisna, int kısaca int, sarmayıcısı uzunca integer şeklinde geçiyor.
+
+262
+00:36:36,659 --> 00:36:53,819
+Peki. Ondalıklı sayılarla uğraşacağımız zaman ise Java'da iki tane seçeneğimiz var. Birincisi double, ötekisi flow. Bunlar birbirinin tam olarak tam tersi avantaj ve dezavantajlara sahipler.
+
+263
+00:36:55,827 --> 00:37:02,788
+Double ondalıklı sayılar daha geniş aralıkta değere sahiplerdir.
+
+264
+00:37:03,908 --> 00:37:11,327
+Ve ondalıklı hesaplama işlemleri daha yüksek bilimsel hastasiyette yapılmaktadır.
+
+265
+00:37:12,788 --> 00:37:23,327
+Ama bu nedenle, bütün bu nedenle hem bellekte daha fazla alan kaplamaktadırlar, hem de bunlar yapılan işlemler...
+
+266
+00:37:23,827 --> 00:37:26,208
+biraz daha uzun sürmektedir.
+
+267
+00:37:27,108 --> 00:37:28,408
+Flow ise tam tersi.
+
+268
+00:37:28,768 --> 00:37:49,967
+Daha küçük 10'ları gerçek sayıları modellemekte kullanılır. Bu yüzden daha az byte ile bellekte resimlenir ve yer alır. Bu da eksi artı 3.4 10 üzeri 38'e kadar gider. Bakın biri 10 üzeri 308, ötekisi 10 üzeri 38. Arada çok büyük bir fark var.
+
+269
+00:37:56,768 --> 00:38:02,168
+Bu nedenle daha da hızlı yapılır.
+
+270
+00:38:02,612 --> 00:38:22,692
+Yani eğer sizin hassas hesaplamaya ihtiyacınız varsa, bilimsel yazılımı hazırlıyorsanız, double kullanacaksınız. Size getirisi daha büyük sayılarla çalışabilmek ve daha yüksek hassasiyet, götürüsü ise daha fazla belirli kullanımı ve daha yavaş işlemler anlamına gelmektedir.
+
+271
+00:38:30,612 --> 00:38:33,032
+Bunun genişliğinden feragat ediyorsunuz.
+
+272
+00:38:33,271 --> 00:38:37,931
+Ama bunun karşılığında işlemleriniz daha hızlı oluyor ve belli ki daha az yağ kapıyorlar.
+
+273
+00:38:39,292 --> 00:38:42,351
+Bu ders kapsamında hangisini kullanırsanız kullanın.
+
+274
+00:38:42,592 --> 00:38:43,231
+Önemli değil.
+
+275
+00:38:43,472 --> 00:38:47,832
+Yani o kadar hassas matematik hesaplar, bilimsel hesaplar yapmayacağız.
+
+276
+00:38:48,192 --> 00:38:49,252
+Hangisini isterseniz kullanın.
+
+277
+00:38:49,612 --> 00:38:52,672
+Ben ne derse double tercih ediyorum.
+
+278
+00:38:53,012 --> 00:38:54,112
+O kalmış aklımda.
+
+279
+00:38:54,112 --> 00:38:56,931
+Daha çok double diye yazı geçiyorum ama fark etmez.
+
+280
+00:38:57,092 --> 00:38:58,271
+Hangisini isterseniz kullanın.
+
+281
+00:38:58,612 --> 00:39:11,752
+Onun dışında, şu sözü çıkacak almış, char primitivim, bu arada bunların da wrapperları yine işte ilk harflerini büyük yaparak da wrapper sınıflarını da elde ediyorsunuz.
+
+282
+00:39:11,752 --> 00:39:17,372
+Onun dışında tek bir karakter simgelimi var.
+
+283
+00:39:17,780 --> 00:39:33,180
+İşte büyük A'dan büyük Z'ye veya küçük A'dan küçük Z'ye ve çeşitli diğer uluslararası simgelerde de destekliyor ve değişik bazı matematiksel karakterleri de destekliyor. Burada UTF-16 encoding kullanılıyor.
+
+284
+00:39:34,132 --> 00:39:40,372
+Yani ne bileyim, Çinci ve Japonca karakterleri filan dahi destekliyor bu UTFN-16 encoding.
+
+285
+00:39:40,932 --> 00:39:43,112
+Sammanicisi ise büyük C ile karakter.
+
+286
+00:39:43,771 --> 00:39:52,311
+True-false değeri için Boolean değerlerimiz, onun da Vipro Sammanicisi büyük B ile Boolean şeklinde geçmekte.
+
+287
+00:39:52,311 --> 00:39:58,811
+Şimdi ben burayla ilgili iki şey yapmak istiyorum.
+
+288
+00:40:01,972 --> 00:40:05,812
+One, character demek istiyorum şuraya.
+
+289
+00:40:07,552 --> 00:40:09,012
+İşte her demek istiyorum.
+
+290
+00:40:09,672 --> 00:40:11,892
+Ondan sonra şuraya da logical diyelim.
+
+291
+00:40:13,392 --> 00:40:14,592
+Demek istiyorum.
+
+292
+00:40:17,532 --> 00:40:18,472
+Peki tamam.
+
+293
+00:40:18,472 --> 00:40:23,992
+Bir de şunu demek istiyorum.
+
+294
+00:40:24,912 --> 00:40:25,972
+İsterseniz...
+
+295
+00:40:27,731 --> 00:40:32,051
+Bir dakika. Unsigned olarak işaretleyebilirsiniz. Ne diyebilirim?
+
+296
+00:40:34,992 --> 00:40:35,911
+Şöyle yapalım.
+
+297
+00:40:36,791 --> 00:40:37,911
+Buraya diyeceğim ki şimdi.
+
+298
+00:40:45,396 --> 00:40:58,476
+This numerical primitives can also be marked as unsigned.
+
+299
+00:40:58,476 --> 00:41:00,316
+Uncigned.
+
+300
+00:41:02,547 --> 00:41:13,787
+Bu da demek ki işte eksi artı gösterimini kaybiliyorsunuz. Bunun karşılığında artı tarafta daha büyük sayılar da kullanabiliyorsunuz.
+
+301
+00:41:14,148 --> 00:41:27,467
+Şimdi unsigned'da bir anahtar kelime kod olarak geçişinden bunu da Courier ya da Consolas gibi bir sabit genişlikli font ile göstermek istiyorum.
+
+302
+00:41:28,403 --> 00:41:32,724
+Biraz da söyleyeyim ama sonra da unutmuş olmayalım başka bir seferde diye.
+
+303
+00:41:33,344 --> 00:41:34,264
+Bunu da not alayım.
+
+304
+00:41:35,043 --> 00:41:35,443
+Pekala.
+
+305
+00:41:37,243 --> 00:41:37,564
+Şimdi.
+
+306
+00:41:38,483 --> 00:41:58,983
+Şeyde hatırlarsanız, BBG Bilgisayar Bilimli'nin giriş dersinde ikili sayı düzeninde biliyorsunuz bilgisayarlar çalışıyor ve ikili sayı düzeninden yola çıkarak onlu sayı düzeninde küsuraklı ondalıklı sayıları hesaplamanın ne kadar zor olduğunu anlatmıştık BBG dersinde.
+
+307
+00:41:58,983 --> 00:42:06,384
+O yüzden yani hassasiyet problemi ondalıklı sayılarda bilimsel hesaplamalar için önemli. Bunu bilmek gerekiyor.
+
+308
+00:42:06,483 --> 00:42:10,363
+Ders kapsamında ihtiyacımız olmayacağız ama bilmeniz lazım diyorum.
+
+309
+00:42:11,163 --> 00:42:16,423
+Onun dışında işte bu ilkellerle ne gibi işlemler yapabiliriz?
+
+310
+00:42:16,783 --> 00:42:17,763
+Şöyle söyleyebilirim.
+
+311
+00:42:18,003 --> 00:42:20,783
+İşte toplama, çıkarma, çarpma, bölme işlemlerimiz var.
+
+312
+00:42:21,163 --> 00:42:23,103
+Yüzde ise mod alma operatürü.
+
+313
+00:42:23,483 --> 00:42:25,683
+Bu nokta sadece aslında cümle sonu noktası.
+
+314
+00:42:25,963 --> 00:42:27,863
+Çok da olması gerekmiyor burada.
+
+315
+00:42:27,863 --> 00:42:29,043
+O noktanın.
+
+316
+00:42:29,203 --> 00:42:31,683
+O yüzden, ay pardon, şöyle söyleyeyim.
+
+317
+00:42:33,427 --> 00:42:38,367
+Şimdi bu da böyle yazılmıyor muymuş? Evet, böyle yazılmıyormuş. Şöyle yazılıyormuş.
+
+318
+00:42:39,208 --> 00:42:48,028
+Operatör önceliği olduğunu hatırlatırım size arkadaşlar. Çarpma, bölme ve modalma, toplam ve çıkarma işlemlerine göre önceliği vardır.
+
+319
+00:42:48,028 --> 00:42:55,188
+Eğer bu işlemler işte soldansa, yani çeşitli kalmaç bir işlem varsa bu operatörlerin hepsinin yer aldığı uzun bir işlem.
+
+320
+00:42:55,588 --> 00:43:01,427
+Parantez, herhangi parantez yoksa soldansa değerlendirilecek ama önce daha...
+
+321
+00:43:01,427 --> 00:43:13,503
+Sonlarda çatma, bölme, model başlamaları varsa önce onları yapacak. Sonra eşit önceliğe sahip operatörler kendi aralarında en solda hangisi geçiyorsa önce onun...
+
+322
+00:43:13,503 --> 00:43:33,644
+kullanılması, hesaplanması şeklinde operatör önceliği olduğunu artık 3 dönemdir biliyorsunuz. Bütün derslerinizde gördünüz. Onun dışında işte artı artı, eksi eksi operatörünün olduğu veya işte artı eşittir, eksi eşittir, çarpı eşittir, bölü eşittir gibi short end'lerin olduğunu hatırlayın.
+
+323
+00:43:34,880 --> 00:43:49,700
+i artı artı ile artı artı i arasındaki farkın ne olduğunu hatırlatırım. Mesela şimdi şöyle bir y çarpı artı artı z derse artı artının önceliği daha da yüksek. Şimdi böyle bir durumda.
+
+324
+00:43:50,547 --> 00:44:15,107
+Önce artı artı gördüğü için önce Z'nin değerini bir arttıracak ondan sonra Y ile çarpacak. Öte tarafta Y çarpsı Z artı artı dersem artı artı sağda olduğu için sonra geçtiği için öyle aklınızda kalsın. Önce Y ile Z'yi çarpıp ondan sonra Z'nin değerini arttıracak şeklinde farklılık olduğunu hatırlatırım.
+
+325
+00:44:18,547 --> 00:44:32,667
+alma, bir sayının mutlak değerini alma veya ondalıklı sayıyı en uygun, en yakın, işte buçuktan küçükse aşağıya, buçuktan büyükse, buçuk ve bir daha büyükse yukarıya yuvarlama için bunlar nerede, nasıl yapabiliriz?
+
+326
+00:44:33,248 --> 00:44:46,507
+Java Lang paketindeki, ki işte bu import etmeniz gerekmeyen paketiniz, burada MAT sınıfı var. Onun statik metotları var. Onlarla bütün bunlar yapılıyor. Üst almak için, mutlak değer almak için falan gibi birçok.
+
+327
+00:44:46,547 --> 00:44:53,827
+metodu var. Hemen dokumentasyondan açıp bakabilirsiniz. Bu işlemle hep MET sınıfında yer almaktadır.
+
+328
+00:44:54,208 --> 00:45:21,167
+Onun dışında bitwise ve mantıksal operatörlerimiz Nelas. Bitwise'den bahsedelim önce. İşte bu yıl cebri için and, ampersand ile, or, pipe ile, tilde not şeklinde geçiyor. Not işlemi almak için. XOR ise bu yukarı şapka şeklinde geçmektedir. Bunlar kullanılıyor.
+
+329
+00:45:22,208 --> 00:45:29,127
+Sola, shift, sağa, shift, bitwise, shifting işlemleri için iki küçüktür ve iki büyüktür işareti kullanılıyor.
+
+330
+00:45:29,127 --> 00:45:38,127
+Mesela diyelim ki bir örnek olarak da bir n sayısının tam sayısının sağdan dördüncü bitini bulmak için ne yapabiliriz?
+
+331
+00:45:39,827 --> 00:45:52,108
+Bunun dördüncü bit olduğu için 2 üzeri şöyle yapabilirim. Yanlış yapmış olmayayım. Bu arada bir Excel açıp hemen bir yapayım şunu.
+
+332
+00:45:52,108 --> 00:46:06,108
+Şimdi 2 üzeri sıfırs. Bakayım şimdi şöyle bakayım. Şöyle yapayım. 2 üzeri sıfırs. 2 üzeri bir. Ha evet 2 üzeri.
+
+333
+00:46:06,708 --> 00:46:26,068
+2 ve 2 üzeri 3 diyelim. Tamam. Sıtırdan saymaya başladığımız için 4. bit 2 üzeri 3 olmuş oluyor. Şunları da şöyle elhangi versem şöyle bir hızlıca üstel gösterimi böyle bir yapmış olabilirim gibi söyleyebilirim. Onun dışında diğer basamakları da yapalım bu arada.
+
+334
+00:46:26,068 --> 00:46:29,387
+Bir byte yapsak yeter.
+
+335
+00:46:32,244 --> 00:46:38,028
+Bardakilip kimden bir sütlüm. Bunları daha çeşitmeye devam etsin. Ama tabii şimdi...
+
+336
+00:46:38,195 --> 00:46:41,695
+Ha iyi tamam. Böyle yaptığımda otomatik doldurmayı argıladı.
+
+337
+00:46:41,895 --> 00:46:46,735
+Excel iyiymiş acaba. Hiç yapmamıştım. Şimdi ilk defa ihtiyacım oldu. Ama argılayabildi.
+
+338
+00:46:46,735 --> 00:46:58,255
+Tamam. Herhangi bir n sayısı olsun. Kaç olursa olsun. Bunun her bir bitine, diyelim ki bir sıfır bir bir sıfır bir sıfır bir sıfır bir diyelim mesela.
+
+339
+00:46:58,715 --> 00:47:06,195
+Şimdi hangi olursa olsun. Kaç çıktıysa şimdi bu artık. Bu n sayısının işte dördüncü biti neymiş?
+
+340
+00:47:06,195 --> 00:47:17,375
+Bir miymiş, sıfır mıymış? Bunu elde etmek istiyorum. Bunu elde etmek için ne yapabilirim? İlk başta aklıma gelen sekiz sayısıyla endlemektir bunu.
+
+341
+00:47:18,375 --> 00:47:20,975
+Sıfır, sıfır, sıfır, sıfır. Evet, pekata.
+
+342
+00:47:24,235 --> 00:47:30,795
+Ama tabii şuradan sence sıfırıncı, birinci, ikinci, toplam dördüncü biti. Şunu da ilgileniyoruz.
+
+343
+00:47:34,164 --> 00:47:45,504
+Bu bitle ilgileniyoruz. Sağdan dördüncü bitle ilgileniyoruz. Sağdan dördüncü biteye denk gelen 2-3 yani 8 sayısıdır. Bu nedenle, şöyle düzelteyim.
+
+344
+00:47:46,164 --> 00:47:58,164
+Herhangi bir sayıyı 8 sayısıyla bitwise end işlemine tabi tuttuğumda, end'de her iki değerinde bir olması gerektiği için, bir sonucunu almak için, bu bana otomatik olarak...
+
+345
+00:47:59,827 --> 00:48:09,827
+Şu sayıyı verecektir. Eğer bu ilgilendim bit 1 ise 8 değeri verecektir bana. 0 ise de 0 değeri verecektir.
+
+346
+00:48:10,427 --> 00:48:23,667
+Sonra da bu sayıyı 8'e bölersek eğer, eğer bu 8 ise 8 bölü 8 eşittir 1. 0 ise de 0 bölü 8 eşittir 0. Böylece bu bitin ne olduğunu öğrenmiş olabilirim.
+
+347
+00:48:23,967 --> 00:48:29,787
+Bu birinci yol. Veya şöyle de yapabilirim alternatif olarak da.
+
+348
+00:48:30,287 --> 00:48:36,467
+Diyebilirim ki şimdi bu sayıyı biraz daha şuraya basamak ekleyeyim.
+
+349
+00:48:36,467 --> 00:48:42,147
+Bu nedenle ekle. Sağdaki bilimler de sıtrayım.
+
+350
+00:48:43,767 --> 00:48:49,087
+Bu sayıyı önce 4 bit sola çift ederim.
+
+351
+00:48:50,804 --> 00:48:53,443
+Solay'da özledim, 3 bit. Tamam.
+
+352
+00:48:55,224 --> 00:49:00,543
+8'i elde etmek için tamam. Önce şey edip ondan sonra. Peki.
+
+353
+00:49:01,584 --> 00:49:09,364
+Şu maskeleme için kullandığım şu sayıyı 8 yazmasak da başka nasıl şeyde elde edebilirim?
+
+354
+00:49:09,364 --> 00:49:17,224
+Şöyle elde edebilirim. Öncelikle 0 sayısını, daha doğrusu pardon 1 sayısını şuradan yazayım.
+
+355
+00:49:20,211 --> 00:49:25,211
+Önce 3 bit sola shift edersen bu bir...
+
+356
+00:49:26,099 --> 00:49:50,059
+1, 2, 3 bit sola kift edilmiş olacak. Buraya gelecek. Yeni oluşturulan basamaklar sıfır ile doldurulurdu. Hatırlarsınız. Öncesinde de zaten sıfırlar vardı. Sayı bu hali aldı. Ondan sonra bu elde ettiğim maskeyi, bakın önceki maskeyiyle aynı oldu. İlgilendiğim sayı ile end işlemine tabi tutarım.
+
+357
+00:49:50,547 --> 00:49:57,867
+Sonuçta neye çıktı? Diyelim ki, şuradaki örneğimde olduğu için sonuçta hep sıfır çıktı diyelim ki.
+
+358
+00:49:59,728 --> 00:50:05,708
+Ama şimdi bu sefer şey yapmak isteyin, sayı oradaki basamak sıfır olmasın da bir olsun.
+
+359
+00:50:05,708 --> 00:50:08,288
+Buradaki örnekte daha iyi gösterir bilmem için.
+
+360
+00:50:14,547 --> 00:50:19,607
+Şimdi şu ilgilendiğim sayı, onu da şöyle bir renklendireyim.
+
+361
+00:50:20,427 --> 00:50:23,707
+Şu da yine ilgilendiğim sayı, onu da şöyle bir renklendireyim.
+
+362
+00:50:24,767 --> 00:50:28,047
+Şimdi, peki. Biri 3 bit.
+
+363
+00:50:28,467 --> 00:50:55,067
+Sola shift ettim. Ondan sonra bununla sayımı end işlemine tabi tuttum. Şu değeri verdi bana. Ondan sonra bunu da tekrar 3 bit sağa shift ederse şu bir, bir, iki, üç bit sağa kayacak. Buraya gelecek. Başta sıfır doldurulmuş olacak. Böylece yine o üçüncü bitin sıfır mı bir mi olduğunu elde edebildim.
+
+364
+00:50:56,500 --> 00:51:21,079
+Bunu tahtada anlatırken daha kolay anlatıyordum. Böyle anlatana kadar biraz vakit kaybetmiş oldum. Bir daha da anlatmayacağım öyle söyleyeyim. Çünkü bu ders Nesliye Yönelik Programlama. Bununla ilgili birçok şeyleri önceki derslerinizde yaptınız, ettiniz. O yüzden bu gibi işler bizim dersimizin aslında odak noktası değil ama ufak bir hatırlatma olması için söylemeden de geçemedik.
+
+365
+00:51:26,260 --> 00:51:38,660
+Esas şimdi bu sarmalacılar hakkında biraz daha ayrıntılı konuşalım diyeceğim ama isterseniz ara vaktimiz de gelmiş, ara verebiliriz ama önce sizlerin soruları varsa biraz onları konuşalım.
+
+366
+00:51:49,811 --> 00:51:51,371
+Şimdi o zaman
+
+367
+00:51:57,844 --> 00:52:00,604
+Bir giriş yapayım, ondan sonra kanalımıza vereceğiz.
+
+368
+00:52:03,668 --> 00:52:16,407
+Söylemiştik, salmanayışları, işte o salmaladığı ki bu arada box yani kutuladığı şeklinde de geçebiliyor bazı kaynaklarda.
+
+369
+00:52:16,907 --> 00:52:31,128
+Türden, ilke neyse o türden bir üye alan içeren ve ayrıca o tür ilke ile yapılabilecek yararlı işlemlere karşılık gelen statik metotları olan sınıflar olarak düşünürüz.
+
+370
+00:52:31,128 --> 00:52:31,628
+Öyle değil.
+
+371
+00:52:31,668 --> 00:52:59,668
+Bu konuda zaten. Şundan da bahsetmiştim. İşte bazı yerlerde kullanamıyoruz primitifler. Onlar da neymiş? Adı geçmiş. Serileştirme. Yani komple nesneleri, bütün durumlarıyla birlikte diske aktarma veya bir ağ kanalı üstünden göndermek gibi işlemlerde ilkellerle yapılmıyor bu işler. O zaman ilkel üye alanlar söz konusuysa ilkel de...
+
+372
+00:52:59,668 --> 00:53:04,487
+Değerler söz konusuysa, yok, ilkel değerler, iyi alanları geçin.
+
+373
+00:53:04,768 --> 00:53:09,248
+İlkel değerler söz konusuysa, onları da o zaman wrapperlarını kullanacağız.
+
+374
+00:53:09,248 --> 00:53:15,248
+Veya map yapılarını göreceğiz. Tablo yapıları diye de adlandırabiliriz.
+
+375
+00:53:16,347 --> 00:53:23,387
+Onlarda da ki anahtar alan olaraktan ilkel kullanılamıyor. Nesne kullanılması gerekiyor.
+
+376
+00:53:23,708 --> 00:53:27,668
+Bu durumlarda wrapperları kullanacağız. Geldiği zaman hep görüyoruz.
+
+377
+00:53:27,668 --> 00:53:48,168
+Bütün raporlarda Java lang paketinde yer alıyorduruz demiştik, hatırlatmıştık. Onun dışında işte mesela ne gibi yararlı metotlar olabilir? Interjet sınıfının çeşitli metotlarını göreceğiz ve inceleyeceğiz. Ama artık ara verme vaktimiz gelmiş. Saat 9.55 yaptık. O zaman 10 dakika aramızı verelim.
+
+378
+00:53:55,923 --> 00:53:59,003
+10.05 arasında 10 dakika kadar arkadaşlar.
+
+379
+01:05:55,507 --> 01:05:59,507
+Evet arkadaşlar, babamızı doldurduk.
+
+380
+01:06:00,628 --> 01:06:02,847
+Artık kaldığımız yerden derslere devam edelim.
+
+381
+01:06:04,148 --> 01:06:06,487
+Bunun için tekrar notlara geçelim.
+
+382
+01:06:08,887 --> 01:06:11,188
+Evet, sarmalacılardan bahsettik.
+
+383
+01:06:11,188 --> 01:06:16,228
+Şimdi onların neler yapabildiğini, örnekler görelim.
+
+384
+01:06:16,887 --> 01:06:21,648
+Kolayla başlayalım. Sonra devam ederiz.
+
+385
+01:06:23,380 --> 01:06:30,960
+Şimdi, int sınıfının sarmı aracısı integer'ın bazı yağlı metotlarından bahsedeyim.
+
+386
+01:06:31,599 --> 01:06:37,900
+Gerek alan ihtiyaç duyduğumuz metotlar için Java API'ya indirin diye önermiştim. Her zaman için bakabilirsiniz.
+
+387
+01:06:39,259 --> 01:06:43,320
+Şimdi compare to diye bir metodum var, mat sınıfında.
+
+388
+01:06:43,320 --> 01:06:45,320
+Bu parametre olarak...
+
+389
+01:06:45,936 --> 01:06:57,895
+Bir başka tam sayı alıyor ve metodu çağrılar, şimdi hatırlayın bu raplar aslında biraz sınıf ve o sınıflarda nesne de üretilebilir.
+
+390
+01:06:58,135 --> 01:07:09,395
+Ama şey olanlar için, statik metotları için nesne üretilmek zorunda kalmaz ama statik olmayan metotları için nesne üretilmek zorundadır.
+
+391
+01:07:09,395 --> 01:07:13,596
+Stik olanları statik anahtar kelimesiyle belirtiyorum.
+
+392
+01:07:13,936 --> 01:07:20,936
+zaten aşağıda. Şu yukarıdaki ilk metotun statik bir metot değil. Bu nedenle...
+
+393
+01:07:21,715 --> 01:07:29,556
+Bir başka, yani bir herhangi bir integer nesnesi oluşturup onun metodu çağrılmalıdır bu amaçla.
+
+394
+01:07:30,256 --> 01:07:31,655
+Compare to metodu var.
+
+395
+01:07:31,896 --> 01:07:42,816
+Compare to metodu, metodu çağrılan nesne ile metoda parametre olarak verilen nesnenin birbirine karşılaştırılmasını sağlar.
+
+396
+01:07:43,188 --> 01:08:00,967
+Aynı aslında şeydeki gibi, string'in compare to metodunda olduğu gibi. Ama onu görmüş müydük şu an? Notlardaki akış sarması aklımda değil de. Şöyle bir bakayım hızlıca. Siz de söyleyebilirsiniz bu arada.
+
+397
+01:08:05,023 --> 01:08:10,784
+İstanbul Yıldız o şekilde bir örneklerin vardı ama küçük harf büyük harf şeyi vardı.
+
+398
+01:08:10,963 --> 01:08:14,203
+Bakalım. Yok tam daha. Şimdi gezdik. Pekala.
+
+399
+01:08:15,423 --> 01:08:16,163
+Evet. Peki.
+
+400
+01:08:18,064 --> 01:08:22,404
+Chette de yanılmıyorsam galiba o zaman Gömrük Hocam diyeceksiniz.
+
+401
+01:08:23,043 --> 01:08:25,463
+Bir dakika. Şu chat ekme niye benim açılmıyor?
+
+402
+01:08:26,644 --> 01:08:43,564
+İndir her şeyi. Hatta stop share diyeyim. Ha, tamam. Nedense bu chat ekranını bu fullscreen de göremedim. Evet, labda hocamız bahsetmiştir diyor. Tamam, peki. Ben de hızlı bir tekrar yapmış olayım. O zaman tekrar share yapalım.
+
+403
+01:08:54,195 --> 01:09:19,135
+Şimdi, öncelikle bu metodu çağırmamız için bir integer nesnesine ihtiyacımız var. O nesnele bu metodunu çağırdığımızda parametre olarak ikinci integer nesnesine verdiğimizde bu ilk yani metodu çağırılan integer nesnesi önce bir kendi ilkelinin değerine bakıyor. Sonra parametre olarak gelen diğer sarmalayıcının ilkelinin değerine bakıyor.
+
+404
+01:09:21,395 --> 01:09:24,935
+Daha küçükse o zaman negatif bir sayı döndürüyor.
+
+405
+01:09:25,296 --> 01:09:29,575
+Kendisi daha büyükse o zaman pozitif bir sayı döndürüyor.
+
+406
+01:09:30,055 --> 01:09:34,675
+Eğer ikisinin de ilkeli eşitse o zaman sıfır değeri döndürüyor.
+
+407
+01:09:36,135 --> 01:09:40,515
+En başta yazdığım int ise geri dönüş değeridir.
+
+408
+01:09:40,995 --> 01:09:46,155
+Metod imzasına bakarken eğer statik gibi bir kelime görmüyorsak demek ki bunun olmalı metottur.
+
+409
+01:09:46,635 --> 01:09:48,895
+İlk başta verilen şey geri dönüş tipidir.
+
+410
+01:09:49,811 --> 01:10:14,492
+Eğer bir şekilde döndürmüyorsa void yazılır veyahut da belki bir şey yazılmaz. İkisini de yapan var ama void yazmak daha doğru. Sonra metodun adı, sonra işte parametreleri. Eğer final ve veya static gibi durumları söz konusuysa o zaman onu daha da başa yazaraktan bu şekilde metod imzasını geçirmiş oluyoruz metin içerisinde.
+
+411
+01:10:15,699 --> 01:10:20,180
+Peki, acaba bu ilk primitivin ilkeliğini nasıl elde edebiliriz?
+
+412
+01:10:20,639 --> 01:10:25,519
+IntValue metodu var. Onu çağırarak da elde ederiz. Sonra geri döndürürüz.
+
+413
+01:10:27,155 --> 01:10:48,095
+Acaba bir stringin içerisinde sayı sağ değer varsa bunu elde etmeye yönelik olarak da parseInt metodu var. Bu statik bir metot ve eğer bu s stringinde aslında bir tam sayı yer alıyorsa o zaman o sayıyı bize geri döndürür.
+
+414
+01:10:48,095 --> 01:10:54,636
+Ama tam sayı yer almıyorsa da o zaman bir exception döndürür. Onu şimdi unutturmayın lütfen.
+
+415
+01:10:55,155 --> 01:10:57,076
+Örneğimizde görelim.
+
+416
+01:10:59,576 --> 01:11:06,775
+Tam sayıyı string'e çevirmek istiyorsak, onu önce bir integer sarmalayıcısına oluştururuz.
+
+417
+01:11:06,835 --> 01:11:09,576
+Sonra da toString metodu var. Onu çağırırız.
+
+418
+01:11:09,655 --> 01:11:14,476
+Bize onun string haline çevrilmiş şeklini geri döndürürüz.
+
+419
+01:11:22,707 --> 01:11:34,907
+Herhangi bir ilkel tam sayının eğer bir string'e çevirmemiz gerekiyorsa o zaman işte mat sınıfı, özür dilerim, integer sınıfının statik bir metodu var, toString metodu.
+
+420
+01:11:34,907 --> 01:11:41,948
+Geriye işte bu parametre olarak aldığı ilkel tam sayının string halini geri döndürmüş oluyor.
+
+421
+01:11:42,487 --> 01:11:50,707
+Veya bir string'in acaba int değil de ilkel değil de sarmalayıcı olarak sayısal değil.
+
+422
+01:11:50,707 --> 01:12:04,327
+Yeni erde etmek istiyorsak da onun içinde bir stick metodumuz var. Value of. Parameter olarak veriyorsunuz stringi. Size onun sarmalayıcı olan integer nesnesini geri döndürüyor.
+
+423
+01:12:06,963 --> 01:12:24,823
+Aşağıda da hemen küçük bir örneğim var. Önce onun üstünden geçelim sonra diğerini yapalım. Şimdi integers olarak sarma 1, sarma 2 diye iki tane nesne tanımlamışım. Ve şimdi bunlara direkt sanki primitivemiş gibi değer atamışım.
+
+424
+01:12:34,963 --> 01:12:47,203
+Şurada arkadaşlar, hangi bir constructor veya normal metot deprecated olarak işaretlenmişse bu metodun artık kullanılmaması tavsiye edilmektedir.
+
+425
+01:12:47,203 --> 01:13:02,884
+Neden deprecated olmuştur? Bir mantık hatasına veya bazı özel durumlarda çeşitli buglara yol açan bazı önemli temel eksiklikleri olduğu için deprecated olarak.
+
+426
+01:13:02,963 --> 01:13:30,863
+işaretlenmiştir ve o metodun bu hatalarını veya eksikliğini düzeltilmemesine de karar verilmiştir. Onun yerine kullanılacak başka metotlar hatta belki başka sınıfların başka metotları önerilmektedir artık. Bu nedenle o eski olanlar deprecated olarak işaretlenir. Siz onları kullanmışsanız size warning verir derleyici. Yine de kullanmanıza izin.
+
+427
+01:13:30,963 --> 01:13:44,343
+Fakat CDK'nın bir sonraki versiyonunda bir önceki versiyonunda deplicated olarak ilan edilmiş üyelerin yer alacağının hiçbir garantisi de yoktur.
+
+428
+01:13:45,555 --> 01:13:59,275
+O yüzden JDK'nın bu versiyonuyla derlenen kodumuz, deprecated üyeler içeriyorsa, warninglere rağmen derlenen kodumuz, sonraki sürümünde hiç derlenmeyebilir bile artık.
+
+429
+01:13:59,795 --> 01:14:11,415
+O yüzden mümkün olduğu kadar deprecated olan, üye alan, üye metod, sınıf, her biri olabilir. Bunları kullanmamaya özen gösteriyoruz.
+
+430
+01:14:54,996 --> 01:15:05,015
+Peki. Şundan önce, şu çevirmede eğer sayı söz konusu değilse, o zaman exception aldığımızı bir göstermek istiyorum.
+
+431
+01:15:07,896 --> 01:15:09,675
+Şuna gelin bakalım mesela.
+
+432
+01:15:11,355 --> 01:15:13,756
+Şimdi, aslında bugün kaçıncı haftadaydık?
+
+433
+01:15:15,496 --> 01:15:16,935
+Üçüncü haftadayız.
+
+434
+01:15:17,363 --> 01:15:44,663
+Bu arada arkadaşlar, yani şurada görünce aklıma geldi. Herkes ve yüz sistem, miğin atarak da uygulama ve labların çalışmaya başladığını, artık yapımlarına başladığını söylemiştim. Epey katılım oldu ilk laba, teşekkür ederim. Ama yine de fark etmemiş olan arkadaşlarım varsa, fark etmeyip de bugünkü derse katılmış olan arkadaşlarım varsa artık uygulama ve çalışmalarının başladığını.
+
+435
+01:15:45,363 --> 01:15:49,003
+Hatırlatalım. Ve şimdi gelelim şuraya.
+
+436
+01:15:53,908 --> 01:15:55,108
+Paket oluşturayım.
+
+437
+01:15:56,228 --> 01:15:57,828
+Ah, da 0.3 diyeyim.
+
+438
+01:15:58,548 --> 01:15:59,568
+Bir tane.
+
+439
+01:16:00,435 --> 01:16:04,956
+Main Program oluşu. Bir dakika. Şimdi bakın burada ne yapmıştık? Burada bir şey yok.
+
+440
+01:16:04,956 --> 01:16:11,395
+Ha, şey, konu, evet tamam. Multiple Constructors konusunu göstermiştik.
+
+441
+01:16:11,675 --> 01:16:19,636
+Ama şimdi eski haline göre döndürmek istiyorum. Bu örneği, ayrıca ders noktalarında olduğu şekliyle kalması için.
+
+442
+01:16:20,175 --> 01:16:28,435
+Nitro Disciples kalabiliriz ama bu Constructors'la ilgili olduğu için, ha bu arada Final'ı da çekelim. Aynı ders noktalarında.
+
+443
+01:16:28,435 --> 01:16:48,315
+Kodlarındaki haline geri alsın bu örnek. Şimdi şuraya bir tane sınıf oluşturayım. Primitives test. Primitives wrappers aslında. Main metodu da olsun.
+
+444
+01:16:56,756 --> 01:17:07,716
+Yok, burada o çalışını da göstereyim. Bu arada sadece madem sözlü olmakla kalmasın. Hemen elinizi değmişken çalıştıralım.
+
+445
+01:17:11,764 --> 01:17:29,144
+Evet, gördüğünüz gibi eksi bir döndürdü. Eğer değişteseydik, artı bir döndürecekti. Save, çalıştınız. Gördüğünüz gibi biz veya hem parametre hem kendisi aynı olmuşadır. Sıfır döndüreceğini görelim.
+
+446
+01:17:39,891 --> 01:17:45,451
+Şimdi gördüğünüz gibi, ayrıca deplikated metod da böyle üstünde çizerekten gösteriyor.
+
+447
+01:17:45,751 --> 01:17:48,511
+Eclipse, o da IDE'nin yaptığı şey tabii ki.
+
+448
+01:17:49,011 --> 01:17:55,311
+Eşe bu, diyor ki, bu constructor, versiyon 9'dan itibaren deplikatedilmiştir, diyor.
+
+449
+01:17:55,311 --> 01:17:55,931
+Peki.
+
+450
+01:17:58,431 --> 01:17:59,211
+Dolama bu.
+
+451
+01:18:00,951 --> 01:18:05,451
+Onun dışında, hangisindekini diyecektim?
+
+452
+01:18:06,072 --> 01:18:06,291
+Şu.
+
+453
+01:18:07,039 --> 01:18:09,300
+parsint diye çektim.
+
+454
+01:18:09,440 --> 01:18:12,479
+Peki hala. O zaman şöyle yapalım.
+
+455
+01:18:18,452 --> 01:18:28,872
+Static Method, match.passInt, niye o metodu görmedi?
+
+456
+01:18:30,832 --> 01:18:32,712
+Çekme kartıları falan mı yoksa?
+
+457
+01:18:34,192 --> 01:18:37,632
+İnt, passInt, tamam peki, yanlış mı yazdım?
+
+458
+01:18:38,492 --> 01:18:43,212
+Match.passInt, bakalım şimdi şu Static Method'a bakalım.
+
+459
+01:18:48,275 --> 01:18:54,456
+Kaldırılmış mı? Çok ilginç. Dur bakalım. Şu dokumentation'a hemen bir bakalım, inceleyelim.
+
+460
+01:18:55,615 --> 01:18:58,995
+Şimdi ben bunu nereye kuruyordum? Şey kuruyordum.
+
+461
+01:19:01,216 --> 01:19:08,195
+JDK 11, Doge, API, index seçeneği. Bu arada bir şey var galiba.
+
+462
+01:19:08,195 --> 01:19:10,695
+Çette. Ama yine.
+
+463
+01:19:12,315 --> 01:19:13,975
+Bir tane çeşit. Şurada.
+
+464
+01:19:15,252 --> 01:19:18,712
+Evet, haklısınız. Doğru. Teşekkür ederim.
+
+465
+01:19:19,612 --> 01:19:21,412
+Intrature metodunun şey, doğru.
+
+466
+01:19:22,492 --> 01:19:23,332
+Demetliyorsam.
+
+467
+01:19:25,572 --> 01:19:26,192
+Passint.
+
+468
+01:19:26,731 --> 01:19:29,372
+Şimdi diyelim ki, o tabii şöyle yapmam gerekiyor.
+
+469
+01:19:29,891 --> 01:19:33,332
+Evet, şimdi static metodlar kendisini iterik olarak gösterdi.
+
+470
+01:19:33,952 --> 01:19:36,912
+Diyelim ki, string olarak 34 verdim.
+
+471
+01:19:37,332 --> 01:19:53,332
+Ama bunu sayı olarak da 34 yazabilecek. Hatta isterseniz yani tip doğruluğundan emin olmak için şöyle int sayı diyelim. Integer.parsint 34 bu şekilde yapalım.
+
+472
+01:19:54,332 --> 01:19:59,832
+Bundan sonra açıma. Buraya da şimdi sayıyı ekrana yazdım. Evet.
+
+473
+01:20:04,851 --> 01:20:15,572
+Evet, bir problem yok. Fakat diyelim ki buna A34 falan diyorum. Bütüncül olarak bir sayı değil bu artık.
+
+474
+01:20:16,115 --> 01:20:19,435
+Bakın bu noktada dedi ki bana bir exception verdi.
+
+475
+01:20:19,775 --> 01:20:20,595
+Aykırı durum.
+
+476
+01:20:21,355 --> 01:20:28,675
+Numara biçimi, aykırı durumu şu input string için, A34 için böyle bir şey yok.
+
+477
+01:20:29,675 --> 01:20:33,595
+Veyahut da şuralarda filan da geçse yine aynı şekilde.
+
+478
+01:20:34,880 --> 01:20:48,659
+Hata alacağız. Bunun gerçekten ve sadece sayı içermesi gerekiyor. Yoksa mesela hani şöyle bir şeyin içerisinden sayı çıkartla dönüştür dönüştür biliyorsan dönüştür şeklinde çalışan bir metot değil bu.
+
+479
+01:20:50,739 --> 01:20:55,960
+O yüzden böyle bir durumu var. Bir extra biçim örneği de görmüş olduk ayrıca.
+
+480
+01:20:59,380 --> 01:21:04,239
+Onun dışında başka bir söyleçemişi var buradan diye bakıyorum.
+
+481
+01:21:06,940 --> 01:21:08,920
+Yok. Tamam. Pekala.
+
+482
+01:21:10,623 --> 01:21:16,083
+İlkeli mesela string'e çevirebilirim. Bunların hepsini deneyebilirsiniz basit şeyler.
+
+483
+01:21:16,263 --> 01:21:21,224
+Şeyde değil, zor da değil. Ama şu exception olduğundan özellikle bahsetmek istedim.
+
+484
+01:21:22,423 --> 01:21:24,663
+Onu daha önemli olarak bulgulayayım.
+
+485
+01:21:25,103 --> 01:21:31,903
+Peki, artık diğer ilkellerin de sarmalayıcılarının böyle metotları var.
+
+486
+01:21:32,543 --> 01:21:37,203
+Şimdi artık string sınıfının bazı yararlı metotlarından bahsetmek istiyorum size.
+
+487
+01:21:38,963 --> 01:21:41,064
+Sanki şöyle düşünebilirsiniz.
+
+488
+01:21:41,283 --> 01:21:45,543
+Yani karakterin sarmalıcısı string ama aslında bu çok da doğru olmaz.
+
+489
+01:21:45,703 --> 01:21:51,304
+Çünkü yani aslında başlı başına karakter katarlarının simgeler bir sınıftır.
+
+490
+01:21:51,304 --> 01:21:52,384
+String sınıfı.
+
+491
+01:21:52,804 --> 01:21:54,384
+Vapor'da değildir aslında.
+
+492
+01:21:54,923 --> 01:21:55,984
+Belki öyle düşünebilirsiniz.
+
+493
+01:21:56,083 --> 01:21:59,564
+Bir benzetme kullanabilir ama bu çok da doğru bir benzetme olmaz.
+
+494
+01:22:00,243 --> 01:22:03,224
+Şimdi string sınıfının bazı metotlarından bahsedelim.
+
+495
+01:22:03,699 --> 01:22:12,399
+Örneğin, length metodu var. Ve stringde kaç karakter uzunluğunda bilgiyi yer alıyorsa onu geri döndürüyor.
+
+496
+01:22:14,195 --> 01:22:18,675
+integer'da benzer şekilde comparative metodu da var.
+
+497
+01:22:20,235 --> 01:22:25,515
+Metodu çağırılan nesne kendisini parametre olarak verilen nesne ile karşılaştırıyor.
+
+498
+01:22:25,836 --> 01:22:28,416
+Burada sözlük sıralaması geçerlidir arkadaşlar.
+
+499
+01:22:29,336 --> 01:22:33,896
+O iki stringten yani metodu çağırılan string mi yoksa parametre olarak gelen string mi?
+
+500
+01:22:33,896 --> 01:22:40,655
+Hangisi sözlükte daha evvel yer alacaksa o daha küçüktür şeklinde değerlendirilir.
+
+501
+01:22:42,195 --> 01:22:43,855
+Küçük harf, büyük harf farkı da vardır.
+
+502
+01:22:45,195 --> 01:22:51,515
+Kod tanım sırasında büyük harfler daha önce gelmekte, küçük harfler daha sonra gelmektedir.
+
+503
+01:22:51,695 --> 01:23:06,476
+Zaten o yüzden şu önceki yansılarda şu ilkellerden bahsederken, şurada karakterde önce büyük A'dan küçük Z'ye, sonra küçük A'dan küçük Z'ye şeklinde sıra yazdım.
+
+504
+01:23:06,855 --> 01:23:07,636
+Sebebi budur.
+
+505
+01:23:09,555 --> 01:23:10,835
+Aikin çok kittim.
+
+506
+01:23:12,115 --> 01:23:13,915
+Ah, şurada im.
+
+507
+01:23:18,579 --> 01:23:39,000
+Ve bunu yaparken de yalnız işte compare to metodu büyük harf küçük harf ayrımı yaparaktan bu işi halleder. Eğer büyük harf küçük harf ayrımı yapılmasını istiyorsanız o zaman compare to ignore case metodu var. Tamamen aynı şekilde, geri kalan kısımlar aynı şekilde. Sadece işte büyük harf küçük harf ayrımı yapmıyor.
+
+508
+01:23:46,579 --> 01:23:52,340
+Programlama dilinde yer alan printf metodu artık Java'ya da taşındı.
+
+509
+01:23:52,379 --> 01:23:56,219
+CDK'nın belli bir sürümünden sonra, unuttum kaçıncıdan itibaren.
+
+510
+01:23:56,760 --> 01:24:02,039
+Ama epey bir süredir yer alıyor. Galiba altından itibaren mi ne taşınmış oldu.
+
+511
+01:24:02,500 --> 01:24:12,219
+O printf metodun da işte formatta stringlerle ondan sonra bir bir dip diğer ek parametrelerle hep kullanar geldiğiniz şekil artık Java'da da destekleniyor.
+
+512
+01:24:14,579 --> 01:24:15,680
+ekleyelim.
+
+513
+01:24:27,180 --> 01:24:31,459
+PrintLen'de PrintLen farkından hatırlatırım.
+
+514
+01:24:31,840 --> 01:24:35,600
+Bir stringi yazdıktan sonra yeni satıra geçiyordu.
+
+515
+01:24:35,600 --> 01:24:38,159
+PrintLen ötekisi geçmiyordu.
+
+516
+01:24:38,420 --> 01:24:41,579
+Şeklinde farklarını zaten gördük.
+
+517
+01:24:42,131 --> 01:24:43,211
+Denmelerimizle.
+
+518
+01:24:45,211 --> 01:24:45,971
+Evet.
+
+519
+01:24:49,524 --> 01:24:53,664
+Şimdi, madem öyle, hemen bu komple atıyor, bir bakalım.
+
+520
+01:24:54,244 --> 01:25:11,123
+Çünkü nihayetin aslında basit bir metot olarak gibi gözükse de, aslında nesneler, metotlar, hangisi dis nesnesi, hangisi paramet olarak gelen nesne, durum bilgilerinin karşılaştırılması, aslında bir rolü şeyi bilmek gerekiyor net olarak anlayabilmek için olayı.
+
+521
+01:25:11,123 --> 01:25:17,504
+Bu nedenle, işte bir main metodu olan bir sınıf oluşturalım. İçerisinde iki tane string tanımlayalım.
+
+522
+01:25:17,524 --> 01:25:28,064
+STRA, STRAB. STRA'ya string dedim. STRAB'de this is another one dedim. Ondan sonra bakalım şimdi STRA nesnesine soruyorum.
+
+523
+01:25:29,804 --> 01:25:38,924
+Comparative metodunu çalıştırıyorum. Ve parametro olarak da STRAB'yi veriyorum. Diyorum ki STRA, sen kendini karşılaştır bakalım STRAB ile.
+
+524
+01:25:39,584 --> 01:25:42,364
+STRA önce kendi içeriğine bakıyor.
+
+525
+01:25:43,028 --> 01:25:45,868
+Sonra diğer stringin içeriğine bakıyor.
+
+526
+01:25:46,148 --> 01:25:47,968
+Aslında şu önceki kendi ilk karşına bakıyor.
+
+527
+01:25:48,087 --> 01:25:49,448
+Sonra ötekinin ilk karşına bakıyor.
+
+528
+01:25:49,868 --> 01:25:53,608
+Çünkü ilk harftan itibaren başlanıyor aslında karşılaştırmaya.
+
+529
+01:25:54,007 --> 01:25:57,968
+Kendi ilk hemen bir farklılık daha ilk karakterde gördüğü için
+
+530
+01:25:57,968 --> 01:26:03,188
+büyük T'den daha önce yer aldığı için sıralamada.
+
+531
+01:26:03,548 --> 01:26:04,507
+Kendisi daha küçüktür.
+
+532
+01:26:04,888 --> 01:26:07,288
+Bu nedenle de negatif bir sayı döndürecektir.
+
+533
+01:26:07,888 --> 01:26:11,028
+Çıktığı ise X 19 olacaktır.
+
+534
+01:26:11,028 --> 01:26:21,747
+Çünkü sözlükte A ile T arasında 19 harf var. Fakat bunu maalesef İngilizce harf alfabet sıralamasına göre yapmaktadır.
+
+535
+01:26:21,747 --> 01:26:33,747
+İşte A, B, C, D, E, F, G, H, A, C, K, L, M, N, O, P, Q, R, S, T. 19. İngilizce alfabet sıralamasına göre yapmaktadır.
+
+536
+01:26:33,988 --> 01:26:38,427
+Şimdi C'den sonra Ç demedim mesela maalesef. Olay bu.
+
+537
+01:26:39,252 --> 01:27:03,112
+O yüzden hani mesela abc, c, d, f, g. Şimdi ç ile başlayan bir string yazarsanız onun f ile başlayan bir harften daha büyük olduğunu iddia edecektir. Çünkü Unicode sıralamasına göre yaparız şimdi. Hemen yapalım. Zaten var. String root 0, 1, 0, 1, c paketinde.
+
+538
+01:27:03,112 --> 01:27:06,512
+0, 1, c paketinde.
+
+539
+01:27:07,060 --> 01:27:09,820
+String ops 0-10.
+
+540
+01:27:10,960 --> 01:27:11,960
+Çarştıralım.
+
+541
+01:27:15,412 --> 01:27:21,811
+Evet bakın, eksi on dokuz döndürdü.
+
+542
+01:27:22,471 --> 01:27:28,512
+Veya diyelim ki, şunu da mesela diyelim ki, ne yapalım?
+
+543
+01:27:30,452 --> 01:27:33,292
+A, küçük A diyelim mesela.
+
+544
+01:27:34,471 --> 01:27:35,332
+Şöyle yapalım.
+
+545
+01:27:36,432 --> 01:27:40,592
+Büyük ağız, küçük ağız farkı olduğunu göstermek için.
+
+546
+01:27:42,496 --> 01:27:46,876
+Yine aynı şeyi yapalım da ilk harfinde küçük yapmak istiyorum.
+
+547
+01:27:48,496 --> 01:27:49,716
+Şöyle yapalım.
+
+548
+01:27:50,515 --> 01:27:51,235
+Olmasın.
+
+549
+01:27:52,695 --> 01:27:52,915
+Evet.
+
+550
+01:27:54,415 --> 01:28:00,476
+Şimdi bu arada new source collect indentation da diyeyim.
+
+551
+01:28:00,476 --> 01:28:01,095
+Evet.
+
+552
+01:28:01,815 --> 01:28:03,180
+Şimdi baktığımda...
+
+553
+01:28:03,188 --> 01:28:09,587
+Bu sefer STRA, STRAB'den daha büyük olduğunu söyleyecektir.
+
+554
+01:28:09,667 --> 01:28:14,868
+Çünkü büyük harfler daha önce yer almaktadır sıralamada, Unicode sıralamasında.
+
+555
+01:28:15,228 --> 01:28:18,347
+Ve onun çok öncülü olan ASCII sıralamasında.
+
+556
+01:28:19,268 --> 01:28:20,368
+Hazayım çalıştırayım.
+
+557
+01:28:23,859 --> 01:28:26,340
+Evet, gördüğünüz gibi negatif.
+
+558
+01:28:26,931 --> 01:28:36,351
+Bir dakika. Kendisi daha küçük. Aha, büyük harfleri daha mı önde yer alıyordu? Peki, özür dilerim. Yanlış söylemişim o zaman.
+
+559
+01:28:36,851 --> 01:28:42,811
+STRA kendisinin STRA B'den daha küçük olduğunu söylüyor. Demek ki önce küçük harfler geliyormuş.
+
+560
+01:28:43,411 --> 01:28:51,871
+Tamam, bunu da bir düzelteyim o zaman. Bu arada, ya şimdi şurada da düzelteyim.
+
+561
+01:28:54,131 --> 01:28:54,652
+Evet.
+
+562
+01:28:56,652 --> 01:28:58,692
+Bunu düzelteyim.
+
+563
+01:28:59,652 --> 01:29:03,271
+Şöyle kesip, şöyle koyayım.
+
+564
+01:29:04,011 --> 01:29:10,391
+Hem de, şöyle bir hatırlatayım, ufak bir hatırlatma olmuş olsun.
+
+565
+01:29:10,391 --> 01:29:19,231
+Ve şey diyelim, diyelim ki, hatta,
+
+566
+01:29:19,891 --> 01:29:23,511
+Şuraya yazsam daha doğru olur ama
+
+567
+01:29:23,511 --> 01:29:26,771
+Şey, bu arada
+
+568
+01:29:26,771 --> 01:29:29,411
+Thank you
+
+569
+01:29:29,411 --> 01:29:34,291
+Lowercase letters are
+
+570
+01:29:34,291 --> 01:29:37,131
+Smallers
+
+571
+01:29:37,908 --> 01:29:46,008
+Lower case, smaller. Peki. Lower case daha küçük. Aynı zamanda değer olarak da küçük. Şeklinde.
+
+572
+01:29:46,528 --> 01:29:53,708
+Fakat anlatmamı vermiş olayım. Peki. Şimdi burada başka ne yapabilirim?
+
+573
+01:29:53,768 --> 01:30:01,807
+Compare to ignore case derim mesela. Diyelim ki şimdi şu ikisi aynı içerikte aslında. Sadece küçük haf, büyük haf farkı var.
+
+574
+01:30:03,859 --> 01:30:09,459
+ignore case dediğimde bu sefer de sıfır değeri alacağız.
+
+575
+01:30:11,259 --> 01:30:12,879
+Sıfır gördüğünüz gibi.
+
+576
+01:30:14,719 --> 01:30:27,859
+Ama bu arada eşitlik ile ilgileniyorsanız, eşitlik durumu ile ilgileniyorsanız, compare to yapıp da sıfır mı diye bakmak yerine equals ve equals equals ignore case metotları da var.
+
+577
+01:30:27,859 --> 01:30:28,539
+Şimdi geliyor.
+
+578
+01:30:29,971 --> 01:30:34,131
+Gelmiyormuş. Bir dakika. Bir yerde geliyordu bu ya.
+
+579
+01:30:37,752 --> 01:30:41,612
+Ha yok, content. Tamam, pekala. Onu da yazayım madem öyle.
+
+580
+01:30:42,112 --> 01:30:43,692
+Comperative, compere. Evet, pekala.
+
+581
+01:30:44,131 --> 01:30:47,671
+Equals metoda var. Hemen onu da göstereyim.
+
+582
+01:30:47,891 --> 01:30:49,171
+Demonstrate edeyim.
+
+583
+01:30:53,332 --> 01:31:17,792
+Equal Signore Case true döndürecek. Çünkü küçük A ile büyük A ile olan versiyonu da birbiriyle aynı. Evet, bakın true göndürüldü. Ama Ignore Case'i siz seydim, o zaman büyük A ile küçük A ayrımı yapacaktı ve işte sonuçta bize false şeklinde çıktığı veriyor.
+
+584
+01:31:21,171 --> 01:31:29,111
+Şu büyüklük-küçüklük olayındaki Türkçe karakter probleminden de bir bahsedelim.
+
+585
+01:31:29,111 --> 01:31:37,111
+Şimdi o zaman şimdi normalde Ç, D'den falan önce gelecektir.
+
+586
+01:31:38,051 --> 01:31:41,551
+O yüzden mesela şuraya çocuk diyelim.
+
+587
+01:31:42,231 --> 01:31:44,971
+Ondan sonra şuraya da...
+
+588
+01:31:45,779 --> 01:31:51,880
+Dede diyelim. Şimdi normalce ç bizim asremimize göre daha önce gelmektedir.
+
+589
+01:31:51,880 --> 01:32:03,079
+Ve ben stra.compale2 dediğimde normalde Türkçe olarak düşündüğümde negatif sayı dönmesini beklerim.
+
+590
+01:32:03,440 --> 01:32:06,180
+Ama şimdi maalesef pozitif sayı dönecek.
+
+591
+01:32:11,315 --> 01:32:21,115
+Gördüğünüz gibi 131 gibi. O kadar çok fazla da karakter tanımamış ki Z'den sonra diğer çeşitli Unicode karakterleri.
+
+592
+01:32:21,435 --> 01:32:30,675
+Arada normalde bir harf fark varken bizim sözcüğümüze göre Unicode sıralamasında arada 131 karakter varmış.
+
+593
+01:32:30,996 --> 01:32:31,515
+Burada gördük.
+
+594
+01:32:37,268 --> 01:32:40,947
+Peki. Bunu da söylemişim olduk. O zaman.
+
+595
+01:32:42,587 --> 01:32:47,007
+Şimdi. Şu şey, ilk elinde bir döndüğümde compare to var ama.
+
+596
+01:32:47,467 --> 01:32:53,127
+Şimdi burada compare to. İlk ustan bahsetmiyorum. Şimdi onu da şuraya hemen yazıvereyim bari.
+
+597
+01:32:54,148 --> 01:32:57,648
+Şey gibi. Şunun da aynı imzası var. Hemen hemen.
+
+598
+01:32:58,347 --> 01:33:02,247
+Ama int dilde bulayım. Pekala. O zaman diyeyim ki.
+
+599
+01:33:05,235 --> 01:33:22,436
+Boolean, bir kart ekleme şunu, equals string another string var, ve bir de equals ignore case olanı var.
+
+600
+01:33:23,436 --> 01:33:28,456
+Evet, şuraya gel, evet, şunu da sil, equals ignore case.
+
+601
+01:33:32,275 --> 01:33:34,595
+Evet. Tamam.
+
+602
+01:33:38,804 --> 01:33:55,623
+Başka mesele ne var? Contains metodu var. Metodu çağrılan nesne, string nesnesi, eğer içerisinde parametre olarak gelen string içeriyorsa o zaman true, aksi taktirde false döndürecek.
+
+603
+01:33:56,363 --> 01:34:04,663
+Bu da case sensitive bir metottur. O nedenle bunun acaba case insensitive versiyonu var mı? Hemen bakalım.
+
+604
+01:34:05,684 --> 01:34:11,824
+jdk api, açıkçası zaten. Kapatmışım ya. Ama şurada yer alıyor zaten.
+
+605
+01:34:12,564 --> 01:34:15,344
+api index açtı hemen. Hemen şuradan bakalım.
+
+606
+01:34:16,324 --> 01:34:20,704
+Ha, kapattım açtım. Arkadaşım hemen söylemişti ben orası sınıfta mat diye de integer olacaktı diye.
+
+607
+01:34:20,704 --> 01:34:28,624
+O yüzden açmaya da gerek duymamıştım. Hemen şimdi bakalım şimdi Java lang paketindeki string sınıfına bakalım.
+
+608
+01:34:30,584 --> 01:34:30,984
+İşte burada.
+
+609
+01:34:33,043 --> 01:34:37,444
+Önce constructorlar anlatılıyor. Biz metotlara bakalım.
+
+610
+01:34:38,344 --> 01:34:45,363
+Contains var ama bakın contains yani şey büyük af case sensitivity söz konusu.
+
+611
+01:34:45,604 --> 01:34:48,684
+O yüzden contains ignore case diye bir versiyonu yok bunun.
+
+612
+01:34:49,043 --> 01:34:52,823
+Peki yine de bunu yapabilir miyiz, yapamaz mıyız?
+
+613
+01:34:52,823 --> 01:34:58,243
+Şöyle bir şey düşünebilir. Hemen şimdi geliyor zaten ilgili diğer metotlar.
+
+614
+01:35:00,404 --> 01:35:01,404
+E...
+
+615
+01:35:02,228 --> 01:35:15,387
+to uppercase ve to lowercase metotları var. Yalnız bu metotların özelliği şu, metodu çağırılan nesneyi gerçekten büyük harfe çevirmiyor.
+
+616
+01:35:15,528 --> 01:35:20,288
+Veyahut da to lowercase metodu çağırılan string nesnesini gerçekten küçük harfe çevirmiyor.
+
+617
+01:35:20,648 --> 01:35:27,228
+Bu metotla sadece o stringin işte büyük harfe çevrilmiş halini geri döndürüyorlar.
+
+618
+01:35:30,228 --> 01:35:31,768
+Ne çıkardı ortaya?
+
+619
+01:35:32,108 --> 01:35:33,708
+Çevrilince sonuç ne oluyor?
+
+620
+01:35:33,828 --> 01:35:34,547
+Onu döndürüyor.
+
+621
+01:35:34,887 --> 01:35:37,368
+Nesne'nin kendisini çevirmiyor.
+
+622
+01:35:37,728 --> 01:35:39,028
+Daha teknik bir deyişle.
+
+623
+01:35:39,427 --> 01:35:44,488
+Tu uppercase ve tu lowercase metotları Nesne'nin durum bilgisini değiştirmiyorlar.
+
+624
+01:35:45,587 --> 01:36:02,587
+Neyse, o olarak kalmaya devam ediyor. Metodu çağırılan string sadece onun işte içeriye büyük harf olsaydı ne olacaktı olan hali geri döndürülüyor veya işte küçük harf olsaydı ne olacaktı olan hali geri döndürülmüş oluyor. Öyle bir durum var.
+
+625
+01:36:04,384 --> 01:36:32,384
+Şimdi göreceğiz bir sonraki örneğimizde. O zaman şeyi nasıl yapabiliriz? Contains, ignore case gibi bir şeyi nasıl kodlayabiliriz? Şöyle yaparız. Hem metodu çağırılacak stringi önce toUpperCase ile bir mesela hepsi büyük harf olan versiyonu elde ederiz. Bir de parametre olarak gelen toUpperCase olarak büyük harf versiyonunu elde ederiz.
+
+626
+01:36:32,384 --> 01:36:46,224
+ve onları birbiriyle acaba içeriyor mu diye bakarız. O zaman iş hallolmuş olur. Şimdi önce bir sonraki yansıtdaki konu inceleyelim. Ondan sonra bu dediğimizi de yaparız.
+
+627
+01:36:48,659 --> 01:36:51,299
+Şimdi bakıyorum şu main metoduna.
+
+628
+01:36:51,859 --> 01:36:55,960
+STRA İstanbul, STRA B'de Yıldız olaraktan tanımlanmış.
+
+629
+01:36:56,379 --> 01:36:56,799
+Pekala.
+
+630
+01:36:57,699 --> 01:37:02,039
+Şurada STRA, STRA B'yi içeriyor mu diye soruyoruz.
+
+631
+01:37:02,379 --> 01:37:06,219
+Bakıyoruz İstanbul stringi, Yıldız stringini içermiyor.
+
+632
+01:37:06,939 --> 01:37:10,159
+Coğrafya olarak içeriyor da stringsel olarak içermiyor.
+
+633
+01:37:10,159 --> 01:37:16,159
+O yüzden aslında bu satırda ben false çift tıfı almayı...
+
+634
+01:37:16,659 --> 01:37:43,960
+bekliyorum. Ne yapalım? Bir de notepad açayım. Orada karşılaştıralım. Ve bakalım. Doğru şekillerini analiz etmişiz kodu bir görelim. Şöyle küçülsene. Ondan sonra şuraya gel bakalım şimdi. Bunun için şunu biraz büyütsem mi? Ya da şeyden... Ha şöyle olsun bakalım.
+
+635
+01:37:44,948 --> 01:38:06,787
+Evet, şimdi ilk printaner, str, str, b içeriyor mu? İçermiyor. False demesini bekliyorum. İlk çıktımın false olmasını bekliyorum. Sonra str, b'ye tan demişiz. Hepsi küçük harf. Tekrar söylüyoruz str, a'ya. Str, b'yi içeriyor musun diye. Küçük harflerle tan içeriyor str, a. O yüzden true diyecek ikinciye çıktık olarak.
+
+636
+01:38:07,859 --> 01:38:12,279
+Ondan sonra strb.to uppercase diye metodu çağırmışım.
+
+637
+01:38:12,799 --> 01:38:17,819
+Ama hatırlatıyorum bu metodun sonunda strb'nin durum bilgisi değişmiyor.
+
+638
+01:38:18,359 --> 01:38:21,799
+O yüzden strb hala küçük harflerle tam olarak kalıyor.
+
+639
+01:38:21,799 --> 01:38:31,219
+Ve sonraki satırda strb'nin değerini ekrana yansıdığı dediğimde sonuç küçük harflerle tam olarak bir çıktı şeklinde kendini gösteriyor.
+
+640
+01:38:32,435 --> 01:38:34,536
+Ve sonra soruyorum.
+
+641
+01:38:34,916 --> 01:38:37,056
+STRA, STRAB içeriyor mu?
+
+642
+01:38:37,355 --> 01:38:38,395
+Evet, hala içeriyor.
+
+643
+01:38:38,516 --> 01:38:40,796
+Çünkü STRAB hala küçük harflerle tam.
+
+644
+01:38:41,115 --> 01:38:44,355
+O yüzden tekrar true demesini bekliyorum.
+
+645
+01:38:44,916 --> 01:38:55,996
+Sonra, işte bakın sıradaki satırda, STRB'nin to upper case metodunun geri döndürdüğü yanıtı, STRB'nin kendisine tekrar atamasını yapıyoruz.
+
+646
+01:38:56,436 --> 01:39:00,036
+İşte bu durumda artık STRB büyük harflerle tan oldu.
+
+647
+01:39:00,376 --> 01:39:06,836
+O yüzden bir alt satırda STRB'nin ekran yazılması istendiğinde, büyük harflerle tan şeklinde bize yazı yazacak.
+
+648
+01:39:06,836 --> 01:39:12,576
+Ve artık büyük harflerle tan, küçük harflerle olan İstanbul'daki tan da yer almadığında,
+
+649
+01:39:12,916 --> 01:39:23,676
+En son çıktığımızda da, stracontains ve strb-nin sonucu false olacağından, ekrana da false yazılacak şeklinde bir çıktı bekliyorum.
+
+650
+01:39:24,056 --> 01:39:27,636
+Bakalım, doğru düşünebilmiş miyiz, doğru yapabilmiş miyiz?
+
+651
+01:39:28,036 --> 01:39:28,596
+Hemen de bakalım.
+
+652
+01:39:30,736 --> 01:39:32,996
+Evet, bu arada, şunu kaybedeyim.
+
+653
+01:39:34,003 --> 01:39:35,384
+Evet, bakın.
+
+654
+01:39:36,623 --> 01:39:38,743
+Tamam, aynı şeyde olduğu gibi.
+
+655
+01:39:39,503 --> 01:39:40,823
+Yansıtılarda olduğu gibi.
+
+656
+01:39:43,003 --> 01:39:45,363
+Evet, şimdi şunu da bir koyayım kenara.
+
+657
+01:39:45,923 --> 01:39:46,703
+False bekliyorduk.
+
+658
+01:39:46,783 --> 01:39:50,743
+False, sonra true, sonra küçükten, sonra true, sonra büyükten, sonra false.
+
+659
+01:39:51,163 --> 01:39:52,543
+Tamam, doğru düşünmüşüz.
+
+660
+01:39:53,263 --> 01:39:54,403
+Şeklinde söyleyebilirim.
+
+661
+01:39:55,503 --> 01:39:59,403
+Şimdi, bunu anladıysak, ardından...
+
+662
+01:40:00,000 --> 01:40:07,379
+Şu acaba compare to ignore case nasıl yaparız bakalım. Bir onu düşünelim.
+
+663
+01:40:08,079 --> 01:40:14,239
+Hadi bunun için de bir şey yapalım. Compare to ignore case metodu hazırlayalım.
+
+664
+01:40:14,920 --> 01:40:16,859
+Bir static metot olabilir mesela bu.
+
+665
+01:40:17,759 --> 01:40:23,799
+Wrappers testte string diye ilgili metot eklemek istemiyorum. Çünkü string wrapper değil aslında.
+
+666
+01:40:23,799 --> 01:40:25,739
+O zaman şuraya.
+
+667
+01:40:28,372 --> 01:40:32,772
+string test diye bir metod sınıf oluşturalım.
+
+668
+01:40:33,892 --> 01:40:34,912
+Ondan sonra Cema.
+
+669
+01:40:34,912 --> 01:40:54,492
+Ve buraya şimdi yine bir static metod olaraktan public static boolean contains ignore case metodu koyalım.
+
+670
+01:40:54,832 --> 01:40:56,652
+String olarak da.
+
+671
+01:40:57,352 --> 01:41:02,852
+Ha, şimdi bu static metot olacağından, şimdi String sınıfının kaynak kodunu değiştiremeyiz.
+
+672
+01:41:03,172 --> 01:41:08,312
+Ha, String'den kalıtımla kendi sınıfımızı oluşturup onu da ekleyebilirdik ama daha kalıtım konusunu görmedik.
+
+673
+01:41:08,312 --> 01:41:11,112
+O yüzden bu şekilde ekleyelim.
+
+674
+01:41:11,652 --> 01:41:12,172
+String.
+
+675
+01:41:16,452 --> 01:41:17,172
+Stra.
+
+676
+01:41:17,972 --> 01:41:19,732
+Ya da bir String.
+
+677
+01:41:20,884 --> 01:41:22,824
+STT2 diyelim.
+
+678
+01:41:24,024 --> 01:41:25,503
+Evet. Böyle olsun.
+
+679
+01:41:26,224 --> 01:41:26,884
+Bundan sonraki ma.
+
+680
+01:41:27,083 --> 01:41:28,364
+Şu an değerleme hatası alıyorum.
+
+681
+01:41:28,624 --> 01:41:33,404
+Çünkü return ettirmesi gerekiyor herhangi bir türden.
+
+682
+01:41:33,704 --> 01:41:41,884
+Eğer bu sizin dikkatinizi dağıtıyorsa o zaman bir şimdilik return for falan diyerekten bir bu...
+
+683
+01:41:42,612 --> 01:41:48,251
+Hatay bir ortadan kaldırız. Yukarıya şimdi eşitliğimizi bir yapmaya çalışalım.
+
+684
+01:41:48,751 --> 01:41:51,811
+Şimdi isterseniz önce biraz adım adım gidelim.
+
+685
+01:41:51,811 --> 01:41:58,811
+Mesela string str1 caps diyelim.
+
+686
+01:41:59,507 --> 01:42:22,287
+str2 caps diyelim mesela. Bunların büyük harfleri çevrilmiş hallerini atacağım. Hatta şöyle de diyebilirim direkt şurada. str1 caps eşittir. str1 nokta işte to uppercase veya to lowercase fark etmez. Yeter ki ikisini de aynı case'e çevirelim mesela.
+
+687
+01:42:27,507 --> 01:42:29,287
+to upper case'i olsun.
+
+688
+01:42:29,707 --> 01:42:32,528
+Ve ondan sonra hatta return'ımı da şöyle değiştiriyorum.
+
+689
+01:42:32,528 --> 01:42:51,087
+return sstr1 caps'ın nokta contains str2 caps şeklinde o sonuç ne olacaksa bu metodumda onu döndürsün şeklinde yaptım mı iş biter.
+
+690
+01:42:52,148 --> 01:43:13,328
+Hatta hatta aslında benim şu şeylere de ihtiyacım yok. Şu geçiş değişkenlere de ihtiyacım yok aslında. Siz böyle anlıyorsunuz. Böyle kod değil ilk başta problem değil. Ama aslında dediğim gibi şunlara hiç ihtiyacım yok. STL-1 caps ve STL-2 caps'e hiç ihtiyacım yok. Onun yerine doğrudan mesela şöyle diyebilirim mesela.
+
+691
+01:43:16,659 --> 01:43:30,659
+V1 ve V2 diyelim. İkisini de ekranda görün. Çok fazla hızlı ilerleyelim isterseniz. İkisinde aynı sonuç olarak çıkartacağını da görelim. Burada da diyorum ki, şimdi...
+
+692
+01:43:34,963 --> 01:43:41,483
+Şimdi, str1 caps'e ne derdim? Aslında içeriğini str1.to uppercase dedim.
+
+693
+01:43:42,563 --> 01:43:50,403
+str1.to uppercase contains str2.to uppercase diyerekten bu işi.
+
+694
+01:43:51,444 --> 01:44:07,664
+Bir satırda da yapabilirim. Ama burada önemli olan anlaşılabilirlik ilk etapta. O yüzden bu şekilde anlayabiliyorsunuz. Varsın, üç satır olsun. Hiç önemli değil. Ama bu şekilde de birbirlerini zincirlemeye alışıksınız. O zaman böyle yazabilirsiniz.
+
+695
+01:44:12,372 --> 01:44:33,372
+En iç parantezdeki işlemler değerlendirilir. Önce STRE2'nin upper keyzine çevrilmiş halini oluşturur ve buraya o seçenek neyse orayı ekler Java Sinal makinesi. Sonra STRE diğer işlemler soldan sağa yürümektedir. STREB'nin upper keyzine çevrilmiş halini...
+
+696
+01:44:33,904 --> 01:44:54,203
+O da bir string geri döner. String de bir nesnedir. Hara bir nesnedir. Büyük harfe çevrilmiş hali olan nesnedir. O nesnenin contents metodunu çağırırız. Böylelikle STLB'nin büyük harfe çevrilmiş hali içerisinde STLB'nin büyük harfe çevrilmiş halini arar ve sonucu geri döndürürüz.
+
+697
+01:44:54,203 --> 01:44:59,404
+Şimdi bakalım doğru kodlayabilmiş miyiz bunu? Herkesinde de aynı numara çalışacak.
+
+698
+01:44:59,828 --> 01:45:14,948
+String tülü olduğumuzu söylemeyi unutmayalım.
+
+699
+01:45:27,283 --> 01:45:33,063
+Contents dediğimizde false döndürüyordu. Ama şimdi bu Contents Ignore Case'i deneyelim.
+
+700
+01:45:33,903 --> 01:45:39,443
+Ssout. Ne diyeyim ki? İşte Contents Ignore Case.
+
+701
+01:45:42,384 --> 01:45:52,043
+STLA virgül STLA B. Anlayışımı büyük harf yaptım. Küçük harflayacak. Tamam. Şimdi bakalım. Kaydettim ve çalıştırıyorum.
+
+702
+01:45:55,539 --> 01:45:58,539
+Evet, gördüğünüz gibi true dedi. İçerisinde var çünkü.
+
+703
+01:45:59,119 --> 01:46:05,420
+V2'yi de çalıştırdığımda yine aynı sonucu alacağım. Bir farklılık olmayacak.
+
+704
+01:46:06,800 --> 01:46:10,319
+Gördüğünüz gibi yine true olarak sonuç döndürdü. İşte bu kadar.
+
+705
+01:46:12,260 --> 01:46:16,779
+Peki, buraya kadar yaptıklarımdan soru soran arkadaşım var mı varsa buyursun lütfen.
+
+706
+01:46:26,452 --> 01:46:27,351
+Bu da devam edeceğim.
+
+707
+01:46:29,971 --> 01:46:31,532
+Şimdi bunu tekrar bir küçülteyim.
+
+708
+01:46:37,779 --> 01:46:40,000
+Peki. Evet, epey bir didikledik.
+
+709
+01:46:40,319 --> 01:46:40,799
+İyi.
+
+710
+01:46:41,139 --> 01:46:43,679
+Sınıfına, toprak. Evet, sınıflara baktık.
+
+711
+01:46:43,819 --> 01:46:43,879
+Tamam.
+
+712
+01:46:44,699 --> 01:46:46,919
+Şimdi MET sınıfına bir bakalım bakalım.
+
+713
+01:46:47,539 --> 01:47:07,960
+Maths'ın fınında çeşitli matematiksel fonksiyonlar için yararlı metotları var. İşte Paul gördük, ADS var dedik, Round var dedik. Onun dışında rastgele sayı üretmek için de Random metodu var. İmzasına bakalım. Public, static, double, Maths.random. İşte static metot, tabii ki public.
+
+714
+01:47:08,439 --> 01:47:15,380
+G'ye bir onları sayı döndürüyor, double türünden. Metodun adı Random, herhangi bir parametre almıyor.
+
+715
+01:47:15,539 --> 01:47:23,579
+bize pozitif olarak sıfır ile sıfır ile bir arasında bir sayı döndürüyor.
+
+716
+01:47:24,100 --> 01:47:27,779
+Sıfır dahil olmak üzere bir nokta sıfır hariç olmak üzere.
+
+717
+01:47:27,779 --> 01:47:35,619
+Yani aslında aralık olarak baktığımızda sıfır nokta sıfır ile sıfır nokta dokuz devreden arasında bir sayı döndürüyor.
+
+718
+01:47:36,692 --> 01:47:54,811
+Şimdi aslında rastgele sayılar üretmek için daha karmaşık işlemler de yapabiliyorsunuz. Belki hatırlarsanız aslında rastgele sayı üretmek için önce bir rastgele sayı üretme çekirdeğinin ilgilendirmesi ondan sonra sayı alınması gerekmektedir.
+
+719
+01:47:58,612 --> 01:48:21,011
+Rastgele sayılar da almak istiyor olabilirsiniz 0-1 aralarının dışında. Onun için hazır metotlar var. Daha sonra yeri gelince bakarız. Ama yine de 0 ile 1 arasındaki bir sayı, rastgele sayı sizin keyfi bir aralığa nasıl genişleteceğinizi biliyorsunuz. O aralık 0 ile n arasındaysa sonucu direkt n ile çarparız.
+
+720
+01:48:26,612 --> 01:48:32,971
+Yine bu 0-1 aralığını istediğimiz aralığa genişletebiliriz. Çok da zor bir şey değil.
+
+721
+01:48:35,152 --> 01:48:42,652
+En hızlı olarak bu mat random metodunu kullanarak 0 ve 1 arasında sayı alabiliyoruz.
+
+722
+01:48:47,412 --> 01:48:48,588
+Um...
+
+723
+01:48:49,363 --> 01:48:55,603
+Şimdi onun dışında işte mesela mutlak değer alabiliyoruz örneğin.
+
+724
+01:48:55,603 --> 01:49:07,843
+Şimdi Java kuvvetli tiplemeli bir dil. O yüzden metotların parametrelerinin farklı türlerde olması ile overloading işlemi yapabiliyorduk.
+
+725
+01:49:08,043 --> 01:49:11,403
+Az önce gördük. Aynı metotları da farklı parametre adları.
+
+726
+01:49:11,743 --> 01:49:17,143
+O yüzden ben ne tür ilke olursa olsun her birinin ABSS'ini almak için.
+
+727
+01:49:17,363 --> 01:49:21,363
+Mert sınıfının aslında farklı bir ADS metodunu çağırmış oluyorum.
+
+728
+01:49:22,683 --> 01:49:29,603
+Örneğin bu int olacaksa public static int, mert.abs, int a metodu var.
+
+729
+01:49:29,603 --> 01:49:36,263
+İşte benim burada küçük ve büyük içerisinde primitive yazdığım yere bütün sayısal primitiveleri koyabilirsiniz.
+
+730
+01:49:36,683 --> 01:49:40,123
+Int, double, float, hepsi destekleniyor.
+
+731
+01:49:40,843 --> 01:49:41,243
+Short.
+
+732
+01:49:41,908 --> 01:49:43,627
+Bunların hepsi destekleniyor.
+
+733
+01:49:46,368 --> 01:49:49,787
+Evet, mesela double için olanı yazmışım mesela.
+
+734
+01:49:51,287 --> 01:49:58,887
+İki ilkelden ama tabii aynı tür olmak şartıyla, ikisi de int ya da ikisi de float gibi, max metodu var.
+
+735
+01:49:59,247 --> 01:50:01,028
+Yine static metod.
+
+736
+01:50:01,707 --> 01:50:02,667
+Ondan sonra cema.
+
+737
+01:50:03,087 --> 01:50:03,827
+Başka ne var?
+
+738
+01:50:03,988 --> 01:50:06,148
+Max'un benzeri minimum metodu var.
+
+739
+01:50:06,327 --> 01:50:06,927
+O da tanımlı.
+
+740
+01:50:09,971 --> 01:50:21,851
+Başka nesi var? Şimdi normal round yuvarlama işlemimiz varsa onun o amaçlı statik olan double sonuçlardır.
+
+741
+01:50:21,851 --> 01:50:37,971
+Round metodumuz var. İşte A sayısı 3.5 ve yukarsı yani sayının 0.5 ve yukarsını üst tam sayıya ama daha aşağısını alt tam sayıya bildiğimiz normal matematiksel yuvarlama işlemini yapan round metodumuz var.
+
+742
+01:50:37,971 --> 01:50:49,931
+Ama bazen hani eğer ondalık değeri ne olursa olsun üst sayıya yuvarlamak da bazen işimize gelebiliyor. O zaman ceiling yani tavana yuvarlama.
+
+743
+01:50:50,355 --> 01:51:16,216
+Ne olursa olsun, hep tabana yuvarlama şeklinde çalışmak istiyorsak, jail yani ceilingin kısaltılmışı metodu var. Yine statik bir metodu ver sınıfının. Hep aşağı yuvarlamak istiyorsak da, yani tabana self-floor metodu var. Örneğin 3.9 bir de olsa bunu 3'e indiriyor her zaman. Ve onun dışında karakö kalmak için ise SQRT metodumuz var. Bunlara ihtiyacınız olabilir.
+
+744
+01:51:18,260 --> 01:51:24,120
+Daha başka bir dolu metodu var da. Dokümentasyondan bakarsanız.
+
+745
+01:51:25,200 --> 01:51:33,560
+Daha sonra randomluğumda diğer daha ayrıntılı metotları geldi. Bu arada ne var şimdi? Sonra randomlara bakacağız.
+
+746
+01:51:34,180 --> 01:51:38,360
+Şu randomlara da bakalım da hemen hızlıca ondan sonra ara verelim.
+
+747
+01:51:42,292 --> 01:51:42,771
+Evet.
+
+748
+01:51:43,220 --> 01:52:09,020
+Şimdi aslında Java Util paketinde random sınıfı var. Aslında bütün rastge sayı üretme metotları bunda tanımlı. Ama hızlı bir şekilde 0-1 arasında sayı ihtiyacınız varsa Mert.random sınıfını kullanabiliyorsunuz. Mert sınıfı da Java Lang paketinde hiç Util'i import etmenize falan gerek olmadan işinizi halledebiliyorsunuz.
+
+749
+01:52:11,220 --> 01:52:21,000
+Öteleme müteleme gibi işler üstünde ben düşünmeyeyim. Zaten hazırları var diyorsanız, Java yutur paketindeki random sınıfını import edip onları kullanabilirsiniz.
+
+750
+01:52:21,420 --> 01:52:33,439
+Şimdi aslında tam sayı üretilmesi için bir ilk çekirdek değerin üretilmesi, onun üstünden rastgele sayının üretilmesi konusu.
+
+751
+01:52:39,220 --> 01:52:43,939
+Yani rastgeç sayılar hep aslında aynı sırada yer almaktadır. Bunu hatırlayın.
+
+752
+01:52:45,119 --> 01:52:47,300
+Ve eğer siz...
+
+753
+01:52:47,347 --> 01:53:03,467
+Eğer bütün sayıların ilk aynı çekirdekten yola çıkarak üretilmesi sizin için bir sakınca ifade etmiyorsa, yine sayılar hep rastgele birbirinden farklı sırada gelecektir ama aynı çekirdekten yola çıkarak üretilecektirler.
+
+754
+01:53:03,467 --> 01:53:15,347
+Eğer siz MERT random'u kullanıyorsanız, bu durumda CRI otomatik olarak bir tane random nesnesi oluşturuyor aslında ve bu Java sanal makinesi aktif olduğu sürece hep aynı çekirdekten...
+
+755
+01:53:15,347 --> 01:53:17,488
+üretilmiş rastgele sayı
+
+756
+01:53:17,488 --> 01:53:19,728
+zincirinden sıradaki elemanı
+
+757
+01:53:19,728 --> 01:53:21,427
+oluşturup gönderiyor size.
+
+758
+01:53:21,967 --> 01:53:23,827
+Ama hani çeşitli
+
+759
+01:53:23,827 --> 01:53:25,387
+kripto programları
+
+760
+01:53:25,387 --> 01:53:27,528
+filan yazıyorsanız eğer o zaman
+
+761
+01:53:27,528 --> 01:53:29,387
+çekirdeğin tekrar
+
+762
+01:53:29,387 --> 01:53:31,007
+farklı bir değerle
+
+763
+01:53:31,007 --> 01:53:33,347
+ilgilenmesini istemeniz
+
+764
+01:53:33,347 --> 01:53:35,528
+isteyeceğiniz algoritmalar
+
+765
+01:53:35,528 --> 01:53:37,028
+kodlamak zorunda kalacaksanız
+
+766
+01:53:37,028 --> 01:53:39,448
+o zaman bu farklı
+
+767
+01:53:39,448 --> 01:53:41,408
+birden fazla random nesmesi
+
+768
+01:53:41,408 --> 01:53:43,108
+oluşturup o farklı
+
+769
+01:53:43,347 --> 01:53:54,007
+kondom nesnelerinden rastgele sayılar isteyebilirsiniz. Nasıl yapacaksınız? Aşağıda listelenmiş durumda. Dikkat ederseniz bunların hiçbiri statik değil.
+
+770
+01:53:54,431 --> 01:54:16,332
+Bunları kullanmak istiyorsanız önce bir random nesnesi tanımlayıp ilklendireceksiniz. Sonra ondan isteyeceksiniz bütün bu metotları, bütün bu metot çağrılarını o nesneye yönlendireceksiniz. İsterseniz dediğim gibi bizden fazla random nesnesi de tanımlayıp bu metotların kimini birinden, kimini ötekinden istediğiniz şekilde çağırabilirsiniz.
+
+771
+01:54:18,387 --> 01:54:31,828
+Mantıksal değere ihtiyacınız varsa, 0'a 1'i dönüştürmeye uğraşmak istemiyorum derseniz, çok kolaylıkla next boolean metodu var. Onu çağırabilirsiniz bir random nesnesini.
+
+772
+01:54:33,408 --> 01:54:46,328
+0'a 1 aralığında ondaklı sayıya ihtiyacınız varsa, double için next double, float için next float versiyonları var metodun. 0.0 dahil, 1.0 hariç olmak üzere.
+
+773
+01:54:46,387 --> 01:54:48,307
+O arka sayıları döndürüyor.
+
+774
+01:54:52,228 --> 01:54:56,688
+Herhangi bir tam sayıya ihtiyacımız varsa, nextint metodu var.
+
+775
+01:54:57,588 --> 01:55:03,268
+Int'de eksi artı iki milyar küsur aralığında sayı döndürüyordu ya.
+
+776
+01:55:03,268 --> 01:55:05,288
+İşte o, bir dakika bu.
+
+777
+01:55:05,811 --> 01:55:15,091
+Nextint, 2 üzeri 32, ha 32 bit, tamam, tamam. Yani işte 2 byte, tamam, güzel, 2 üzeri 32 oluyor.
+
+778
+01:55:15,452 --> 01:55:27,051
+Eksi 6, 2 milyar küsur aralığında, bana nasıl ki tam sürü et kardeşim demek istiyorsanız, JVM'ye, Nextint metodu var, London sınıfının.
+
+779
+01:55:27,452 --> 01:55:31,072
+Nesnesini istiyorsunuz, nesnesinden istiyorsunuz Nextint çağırı.
+
+780
+01:55:33,811 --> 01:55:49,431
+Sınır arasında bir rastgele tam sayıya ihtiyacımız varsa o zaman next intin bu sefer parametre olarak o üst sınırı alan overload versiyonu da var. O üst sınır hariç olmak üzere oluşturuyor bu sayıyı.
+
+781
+01:55:49,431 --> 01:56:00,692
+Bir rastgele long sayıya ihtiyacımız varsa da işte 0 ile 2 üzeri 48 şeklinde. Bir dakika. Long daha uzun olması gerekiyordu.
+
+782
+01:56:01,811 --> 01:56:03,011
+white ile ama
+
+783
+01:56:03,011 --> 01:56:06,091
+ha, eksi artı olduğu için
+
+784
+01:56:06,091 --> 01:56:08,731
+herhalde. E şimdi tekrar bakalım arada.
+
+785
+01:56:09,112 --> 01:56:13,192
+Next long'da. İsterseniz bir long sayı da istiyorsanız
+
+786
+01:56:13,192 --> 01:56:15,251
+random. Onu da elde edebiliyorsunuz.
+
+787
+01:56:15,251 --> 01:56:16,051
+Çok rahatlıkla.
+
+788
+01:56:19,283 --> 01:56:38,903
+Örnek mesela şimdi. Rastgele olarak şu kadar çakır taşım var demek istiyorsanız. O zaman bunun bir üst sınırı olmasına eğer de ihtiyacınız varsa o zaman şöyle bir kontrol edebiliyorsunuz. Öncelikle Java Retail paketini import ediyorum ki içinden random'u kullanabileyim.
+
+789
+01:56:47,283 --> 01:56:51,943
+Sistemin otomatik ettiği bir çekirdek ile artık bu generator eklendirilmiş oluyor.
+
+790
+01:56:51,943 --> 01:56:54,943
+Sonra şöyle diyelim ki...
+
+791
+01:56:55,731 --> 01:57:00,652
+Bir tane şey oluşturmak istiyorum.
+
+792
+01:57:00,811 --> 01:57:03,692
+Lastikeli bir sayı sıfıra kaç arasında olduğu önemidir.
+
+793
+01:57:03,851 --> 01:57:07,172
+Çünkü herhangi bir adet sayıda çakıl taşı toplamış olabilirim.
+
+794
+01:57:07,252 --> 01:57:08,172
+Sıfır da olabilir.
+
+795
+01:57:08,592 --> 01:57:09,912
+Herhangi bir n sayısı da olabilir.
+
+796
+01:57:10,332 --> 01:57:11,552
+O yüzden next int diyorum.
+
+797
+01:57:11,972 --> 01:57:14,572
+İşte bu tam sayı değerini almış oluyorum.
+
+798
+01:57:15,252 --> 01:57:20,872
+Daha sonra ama şimdi bu bana eksi sayı da gönderebiliyor, döndürebiliyor.
+
+799
+01:57:20,872 --> 01:57:23,152
+O zaman ben onu mutlak değerini alayım.
+
+800
+01:57:23,731 --> 01:57:27,072
+Negatif taşım var, çakıl taşım var demesin bari ki.
+
+801
+01:57:27,532 --> 01:57:34,652
+Veya şey de yapabilirdim, işte sıfır ile bound arasında sayı döndüren versiyonunu da kullanabilirdim.
+
+802
+01:57:35,771 --> 01:57:38,060
+Nextint derdim ve...
+
+803
+01:57:39,091 --> 01:57:43,491
+Ama burada bir sınır vermek istemiyorum şimdi diyelim ki. O yüzden bu versiyonu kullandım.
+
+804
+01:57:44,051 --> 01:57:48,891
+Ama bu sefer şimdi belirli bir üst sınır, mesela parmaklarımdan bahsedeceğim.
+
+805
+01:57:49,191 --> 01:57:51,771
+Şu kadar parmağımla ilgili bir şey yaptım gibisinden.
+
+806
+01:57:52,171 --> 01:57:57,151
+O zaman bunun 0 ile 10 arasında bir sayı döndürmesini mutlaka isterim.
+
+807
+01:57:57,151 --> 01:58:04,031
+O nedenle Nextint'in bu sefer üst sınırı parametri olarak alan ama üst sınırı hariç olduğunu hatırlatırım.
+
+808
+01:58:04,151 --> 01:58:07,091
+0 ile üst sınır arasında sayı döndüren versiyonu.
+
+809
+01:58:07,091 --> 01:58:18,591
+çağırdım. O zaman da işte şu kadar parmağını boyadım filan gibisinden bir mesaj elde edebiliyorum. Hemen çalıştırayım ve görelim.
+
+810
+01:58:18,591 --> 01:58:28,091
+NPS 01C, random ops peki. Gel bakalım ekle. Şu. Evet. Tamam. Şöyle gördüğünüz gibi.
+
+811
+01:58:32,916 --> 01:58:35,296
+Evet, epey bir çakırtaşım çıktı.
+
+812
+01:58:35,716 --> 01:58:38,196
+Şey demiyorum bile, onları ayıramayalım bile.
+
+813
+01:58:38,736 --> 01:58:46,876
+Şu, şu, o, yüzde altmış altı milyon yedi bin dört yüz sayım olmuş.
+
+814
+01:58:46,876 --> 01:58:48,036
+Bir dakika.
+
+815
+01:58:49,844 --> 01:58:57,864
+Milyon tamam, milyar, altı eksi iki milyar demiştim. Hala şey tamam, sınırın içerisinde. Ben şaşırdım acaba bir şey mi güzel de ettim diye.
+
+816
+01:58:58,364 --> 01:59:06,844
+Ve altı parmağımı da boyadım diyor. Birkaç kere çalıştırdım. Şöyle bir garip bir parmak sayısı göremeyeceğimizden emin olalım.
+
+817
+01:59:06,844 --> 01:59:12,484
+Ben on parmağımı boyadım. Sınırın üstünün kendisi doldu. İşte beş kısayla.
+
+818
+01:59:13,503 --> 01:59:17,764
+Tabii one fingers veya sıfır fingers da o es denmez biliyorsunuz.
+
+819
+01:59:17,844 --> 01:59:29,024
+Çoğu. Onu da yapmak istiyorsak o zaman şu bound to the if class içerisinde bakmam gerekirdi. Yoksa acaba bu random ops da onu mu yaptım?
+
+820
+01:59:29,024 --> 01:59:45,244
+Ha evet var. Random ops 2'de de onu yapmışım. Gramyara takmışım diyelim. Ama sadece takıntı olarak düşünmeyin de işte tamam önemli evet gramyara doğru uygun yazmak. Eğer bu bir şartsa o zaman biraz daha ayrıntılı yapabilirdim bu işi.
+
+821
+01:59:45,844 --> 01:59:54,664
+bounded, rastgele, literal sayıyı doğrudan kullanmadan önce bir if-else-if-else zincirine koyardım mesela.
+
+822
+01:59:55,644 --> 01:59:58,744
+Sıfır ise hiçbirini boyamadım, bir ise bir parmağımı boyadım.
+
+823
+02:00:00,000 --> 02:00:02,739
+Şu kadarını boyadım diyebileceğim gibi şey de derdim.
+
+824
+02:00:03,020 --> 02:00:10,360
+Eğer bounded 2'den büyük eşitse fingers aksi taktirde finger şeklinde yaz gibisinden de kod yazabilirdim.
+
+825
+02:00:10,600 --> 02:00:12,800
+Geçik varyasyonlar mümkün biliyorsunuz artık bunlar.
+
+826
+02:00:13,820 --> 02:00:14,720
+Zor bir şeyler değil.
+
+827
+02:00:15,440 --> 02:00:15,659
+Peki.
+
+828
+02:00:16,960 --> 02:00:17,940
+Saat 10 müdettik.
+
+829
+02:00:18,840 --> 02:00:19,940
+10 dakikalarımızı verelim.
+
+830
+02:00:20,180 --> 02:00:22,880
+Ondan sonra dersi devam etmek istiyorum.
+
+831
+02:00:23,923 --> 02:00:31,243
+Saat 11.00 ile 11.10 arasında 10 dakika.
+
+832
+02:13:13,427 --> 02:13:21,408
+Evet arkadaşlar, özür dilerim. Bir üç dakika geciktim. Evde bir durumlar çıktı da maalesef onları hallettim.
+
+833
+02:13:22,867 --> 02:13:30,847
+Peki ya da şimdi bakalım nerede kalmıştık. Önce arkadaşlar şimdi soru varsa soru alalım.
+
+834
+02:13:35,859 --> 02:13:39,339
+Evet, şurada zaten geliyormuş, sonra yazmışız. Tamam.
+
+835
+02:13:41,859 --> 02:13:51,419
+Peki, yukarıdan ilgilenmişizde print printen farkını hatırlatmak için SBA'da kalmasının bir sıkıcı yoktu aslında.
+
+836
+02:13:53,479 --> 02:13:54,739
+Şunları bir çıkarttıklar.
+
+837
+02:13:55,979 --> 02:13:57,019
+Evet, tamam. Pekala.
+
+838
+02:14:01,332 --> 02:14:13,872
+O zaman arkadaşlar, başka bir önemli konu, kullanıcıdan bilgi almak. Şu ana kadar hep biz çeşitli değerleri kendimiz elle yazdık.
+
+839
+02:14:14,239 --> 02:14:28,579
+Ama şimdi kullanıcıdan nasıl input alırız, bilgi alırız, komut satılımdan onu göreceğiz. Burada ufak bir bug da söz konusu. Onu da anlatacağım. Workaround'ı var çözmek için. Buna dikkat etmemiz gerekecek.
+
+840
+02:14:31,347 --> 02:14:38,467
+Ekrama yazdırmak için, output almak için system.out nesnesi vardı hatırlarsınız.
+
+841
+02:14:39,028 --> 02:14:46,387
+İşte system.out.println yazabilmek için aslında örneklerde sözde de söylediğimi hatırlıyorum.
+
+842
+02:14:47,068 --> 02:14:57,787
+System sınıfının out nesnesi üye alanı olacak ki ve bu da static, public ve static olacak ki biz bu şekilde system.out diyerekten buna ulaşabilelim.
+
+843
+02:14:59,347 --> 02:15:00,707
+replintelen metotları var.
+
+844
+02:15:01,028 --> 02:15:02,847
+Ve replinted metodu da geldi.
+
+845
+02:15:03,688 --> 02:15:09,448
+İşte programcılarını çok rahatlı bildiği şekilde onları kullanabiliyoruz.
+
+846
+02:15:09,448 --> 02:15:12,307
+Esas şimdi kullanıcından input nasıl alacağız?
+
+847
+02:15:12,467 --> 02:15:13,887
+Bir onu görelim.
+
+848
+02:15:14,587 --> 02:15:18,167
+Bu işler JDK 5 ile kolaylaştı.
+
+849
+02:15:18,568 --> 02:15:19,307
+Yoksa...
+
+850
+02:15:19,667 --> 02:15:24,087
+Biraz daha zor oluyordu bu işler. Sebebi de şuydu.
+
+851
+02:15:24,587 --> 02:15:34,607
+Şimdi Java ister konuk satırı olsun, ister bir disk dosyası olsun, ister bir network bağlantısı olsun.
+
+852
+02:15:34,607 --> 02:15:44,607
+Bunların hepsini birer input veya output kaynağı olarak ele alıp hepsini aynı şekilde kullandırıyordu.
+
+853
+02:15:45,547 --> 02:15:46,607
+Ama şimdi...
+
+854
+02:15:49,011 --> 02:15:51,611
+Streamler üzerinden kullandırıyordu.
+
+855
+02:15:51,971 --> 02:15:56,571
+Fakat streamleri kullanabilmek için işte stream mantığını anlatmak lazım.
+
+856
+02:15:57,191 --> 02:16:00,671
+Ondan sonra cemaat, exception handling yapılmasını öğretmek lazım.
+
+857
+02:16:00,671 --> 02:16:05,771
+Çünkü bir input out işlemini sırasında ters gidebilecek çok şey olabilir.
+
+858
+02:16:06,051 --> 02:16:07,251
+Ayrıntıları göreceğiz.
+
+859
+02:16:08,351 --> 02:16:10,251
+Bir de onu bir şey öğrenmek lazım.
+
+860
+02:16:10,551 --> 02:16:16,891
+Ama daha işe yeni başlamışken sadece bir satın bilgi kullanacağını istemek için.
+
+861
+02:16:17,011 --> 02:16:31,431
+Bütün bunları bilip kullanmak zorunda kalmak biraz garip oluyordu doğrusu ya da ezber oluyordu ilk başta. Bu iş böyle yapılır diye kalıp olarak ezberliyorduk. Çok daha sonra nedenini nasıl almıyorduk? Böyle bir durum söz konusuydu.
+
+862
+02:16:32,979 --> 02:16:36,340
+Ben de Java'ı aletirken de bu konudan biraz şikayetçiydim.
+
+863
+02:16:36,779 --> 02:16:44,719
+Fakat nihayet işte JDK 5.0'dan itibaren Java Util paketine Scanner diye bir sınıf eklediler.
+
+864
+02:16:44,719 --> 02:16:50,719
+Bunun üzerinden artık daha kolaylıkla kullanıcıdan bilgi girişi isteyebiliyoruz, elde edebiliyoruz.
+
+865
+02:16:52,759 --> 02:16:59,599
+Bunu ilklendirmek için System.ini parametre olarak alan bir constructor var, onu kullanıyoruz.
+
+866
+02:17:00,015 --> 02:17:12,935
+İşte buradan anlayabilirsiniz. System.in aslında Java.io paketinde yer alan input stream adlı sınıf türünden bir üye alandır. System sınıfının o türden statik bir...
+
+867
+02:17:13,108 --> 02:17:25,688
+Public, statik bir üye alanı vardır. Normalde system.in'den gitmek zorunda kalsak, input system kullanımını bilmek ve ona göre kullanmak zorunda kalacaktık.
+
+868
+02:17:26,007 --> 02:17:37,707
+Şimdi o karmaşıklığı bizden soyutuluyor bu scanner sınıfı. System'ini parametre olarak alıyor ve bunun karşılığında bize nextline, nextint, nextswald gibi metotlar sunuyor.
+
+869
+02:17:41,108 --> 02:17:58,727
+metodunu kullanıyoruz. Eğer herhangi bir ilkel elde etmek istiyorsak int için next int, float için next float, double için next double gibi sadece başına next koyup bir de camel casing'i uygulamak için harfi büyük harfi çevirerek de next'i bilmem ne metotlarını kullanıyoruz.
+
+870
+02:17:58,727 --> 02:18:06,587
+Rahatlık rahatlık bu işi yapabiliyoruz ama ufak bir problemimiz var. Onun da farkında olup ona göre hareket etmemiz gerekecek.
+
+871
+02:18:09,492 --> 02:18:10,072
+Örnek.
+
+872
+02:18:12,432 --> 02:18:13,531
+Şimdi bir dakika.
+
+873
+02:18:13,691 --> 02:18:14,551
+Şunu bulayım mı?
+
+874
+02:18:14,752 --> 02:18:15,072
+Bir dakika.
+
+875
+02:18:15,231 --> 02:18:16,292
+Önemli bir şey olduğu için.
+
+876
+02:18:16,752 --> 02:18:19,891
+Önce şu mutlaka yapın dediğin var mı?
+
+877
+02:18:20,072 --> 02:18:20,311
+Yok.
+
+878
+02:18:20,492 --> 02:18:20,731
+Tamam.
+
+879
+02:18:20,851 --> 02:18:21,351
+Pekala.
+
+880
+02:18:24,691 --> 02:18:27,792
+Onun dışında şuraya bir ekleme yapmak istiyorum.
+
+881
+02:18:27,992 --> 02:18:29,412
+Önce kodu anlatayım.
+
+882
+02:18:29,612 --> 02:18:31,711
+Ondan sonra devam edelim.
+
+883
+02:18:32,612 --> 02:18:34,412
+Şimdi bunu inceleyelim.
+
+884
+02:18:34,783 --> 02:18:41,504
+Kullanıcadan bilgi gelişi yapacağımız için, isteyeceğimiz için Java itiril paketindeki skerin sınıfını import ediyorum koduma.
+
+885
+02:18:42,304 --> 02:18:46,703
+Konsol input output version 11 demişim programının sınıfın adına.
+
+886
+02:18:47,164 --> 02:18:50,824
+Min metodum içerisinde önce skerin esmesini ilklendiriyorum.
+
+887
+02:18:51,363 --> 02:18:55,144
+Adına bunun adına da in demişim ama in demenin kesinlikle bir gereksinim yok.
+
+888
+02:18:56,603 --> 02:19:00,083
+Gir de diyebilirsiniz, input da diyebilirsiniz derseniz değilmiş.
+
+889
+02:19:00,083 --> 02:19:01,203
+Program değil.
+
+890
+02:19:02,100 --> 02:19:18,400
+Şimdi ekrana soru soruyorum yazlı olarak da. Adınız nedir diye. Şimdi println yerine print kullanmayı tercih ediyorum. Çünkü println deseydim, what is your name dedikten sonra adımızı bir satır aşağıdan itibaren girmeye başlayacaktık.
+
+891
+02:19:18,400 --> 02:19:30,100
+Halbuki bizim konsolumuzda ister ideden kullanalım ister komut satırından kullanalım. Satır sayımız daha kısıtlı, üstün sayımız daha geniş. Bu yüzden kullanıcıdan bir şey isteyeceğim zaman println.
+
+892
+02:19:30,100 --> 02:19:32,959
+ile soruyu sormayı tercih ediyorum ben her zaman.
+
+893
+02:19:33,779 --> 02:19:38,860
+Şimdi atizyon nemci ekrana yazdırdık ve kullanıcıdan bir satır bilgiye ihtiyacımız var.
+
+894
+02:19:38,860 --> 02:19:40,760
+String bilgiye ihtiyacımız var.
+
+895
+02:19:40,959 --> 02:19:41,900
+Name dedim ona.
+
+896
+02:19:42,639 --> 02:19:52,159
+String tümünden ve tanına tanılamaz da işte bu scanner olan in nesnesinin next time metodunu kullanarak da bu bilgiyi kullanıcıdan almış olacağım.
+
+897
+02:19:52,884 --> 02:20:07,123
+Sonra da bu sefer kaç yaşındasınız diye soracak. Bu sefer tam sayı bilgiye ihtiyacım olacağından int edge'le bir tam sayı değişken tanımladım ve bu scanner olan in'in next set metodunu kullanaraktan da o bilgiyi kullanacağım istemiş oldum.
+
+898
+02:20:07,123 --> 02:20:16,224
+Sonra da ekrana işte merhaba bilmem kim adınız neyse seneye şu yaşta olacaksınız şeklinde bir çıktı vermek istiyorum.
+
+899
+02:20:19,316 --> 02:20:25,855
+Bir sene sonraki yeşi hesaplamak için yeşin bir fazlasının ekrana yazdırılması gerekiyor.
+
+900
+02:20:26,236 --> 02:20:32,876
+Bunun için de şuradaki H61'in sonundaki sağındaki parantezla önemli.
+
+901
+02:20:32,876 --> 02:20:33,876
+Çünkü...
+
+902
+02:20:34,515 --> 02:20:37,716
+Şimdi bu artı operatörü overloaded.
+
+903
+02:20:38,015 --> 02:20:43,855
+Yani metotlarda overloading yapılabildiği gibi operatörlerde de overloading yapılabiliyor.
+
+904
+02:20:43,855 --> 02:20:46,855
+Artı da öyle bir operatör overloaded.
+
+905
+02:20:47,195 --> 02:20:50,855
+Eğer standaki veya solundaki...
+
+906
+02:20:51,540 --> 02:21:16,979
+Aldığı operantlardan birisi bile bir string ise o zaman bu artı işte iki stringi peş peşe yapıştırma şeklinde çalışıyor. Ama hem solunda hem sağında sayısal değer görüyorsa o zaman normal toplama işlemi olarak çalışıyor. Burada anahtar kelime bu. Hem solunda hem sağında sayısal değer var. O yüzden eğer ben bu parantezleri koymazsam
+
+907
+02:21:17,683 --> 02:21:45,683
+İşte next to you will be diyecek. Yaş neyse onu string'e çevirip yazacak. Sonra bir sayısını da string'e çevirip yazacak. Ve böylece toplama işlemini yapmamış olacak. Buna toplama işlemini yaptırabilmek için edge artı bir artı bu ifadeyi parantez içerisine almam gerekiyor. Ondan sonra da şeyin sonunda programın sonunda scanner nesnesini yukarıda tanımladığım scanner nesnesini en sonunda close ekleyeceğiz.
+
+908
+02:21:45,683 --> 02:22:08,563
+Kloz etmeyi unutmamalıyız arkadaşlar. Ben ki bu kloz etmeye bir iki üç puan değer ayırabiliyorum sınavlarda. O yüzden kloz etmeyi unutmamalıyız. Eskiden çok aldırmazdım buna. Fakat JDK'nın altı sürümüyle birlikte yanılmıyorsam artık kloz etmezsem warning veriyor. Göreceğiz şimdi. Bunu çalıştıracağız, koşturacağız.
+
+909
+02:22:13,683 --> 02:22:21,844
+SDK bu işi ben de önemsiyorum ve sizlere söylüyorum ve ufak bir puan değeri atıyorum bu close işlemini yapmaya.
+
+910
+02:22:23,563 --> 02:22:30,403
+Aslında close etmesek de yani Java saman makinesi kapandığında kaynakları güvenli bir şekilde veriyor yani.
+
+911
+02:22:30,403 --> 02:22:35,743
+Hiç close etmedim de blogla bilgisayar göçtüğü şeklinde bir şeyle karşılaşmadım şimdiye kadar.
+
+912
+02:22:36,164 --> 02:22:40,703
+Ama hani madem böyle bir kural getirmişler biz de ona göre davranacağız.
+
+913
+02:22:41,652 --> 02:22:47,092
+Şimdi görelim bunu. Np01c'deki konsol input output versiyon 1.
+
+914
+02:22:49,152 --> 02:22:51,832
+Evet, şu. Yani kapatalım.
+
+915
+02:22:53,652 --> 02:22:54,452
+Evet.
+
+916
+02:22:55,332 --> 02:22:57,672
+C'de gördüğünüz gibi, yansıda gördüğünüz gibi.
+
+917
+02:22:58,111 --> 02:23:17,011
+Eğer close etmeyi unutursam o zaman warning veriyor. Diyor ki, skenderi tanımladığım yerde öz kaynak sızıntısı in kapatılmamıştır diyor. Problem olmuyor aslında ama yine de madem önce istiyorsun ben de yaptım diyorum.
+
+918
+02:23:17,011 --> 02:23:18,111
+Bir şey bekleyen.
+
+919
+02:23:19,851 --> 02:23:21,011
+Çalıştırırım şimdi.
+
+920
+02:23:26,227 --> 02:23:31,807
+Aa, pardon, durdu. Bug'ı anlattığım hali bu. Önce bir durduruyorum şimdi bu işi.
+
+921
+02:23:33,147 --> 02:23:36,907
+Söyledim. Tamamen şuradaki halini tekrar geri koyacağım.
+
+922
+02:23:42,611 --> 02:23:49,431
+Sos, correct, inheritance, ışın, evet.
+
+923
+02:23:49,431 --> 02:23:50,631
+Yaşım ne oldu?
+
+924
+02:23:52,991 --> 02:23:53,691
+Çatış bakalım.
+
+925
+02:23:57,271 --> 02:23:58,011
+Adınız nedir?
+
+926
+02:24:00,072 --> 02:24:03,111
+Türkçe karakterlerin çatışını göstermek için uzun girdiğim.
+
+927
+02:24:03,691 --> 02:24:06,211
+İşte kaç yaşındasınız?
+
+928
+02:24:06,871 --> 02:24:07,391
+45.
+
+929
+02:24:08,051 --> 02:24:32,051
+İşte merhaba, işte Yunus'a mısır açıçlık. Seneye 46 olacaksınız şeklinde güzel bir çıktı, verdi. Eğer bu H plus 1'ı, H61'i parantez içerisinde almasaydım o zaman diyecekti ki, işte ismisi nedir Yunus demişim kısaca, kaç yaşındasınız? 45, seneye 451 yaşında olacaksınız. Vay be!
+
+930
+02:24:35,316 --> 02:24:45,316
+O yüzden bu artının gerçekten toplama operatörü şeklinde çalışmasını sağlamak için buradaki parantezlere ihtiyacım var.
+
+931
+02:24:52,308 --> 02:24:57,568
+Şimdi burada şu bugdan bahsedeyim. Söz konusu bugdan bahsedeyim.
+
+932
+02:24:58,048 --> 02:25:05,448
+Şimdi ufak bir sırama değiştireceğim. Önce yaşımız olsun, son adımız olsun. Var mı bunda bir belisi yok?
+
+933
+02:25:09,683 --> 02:25:11,763
+Peki, kaydettim.
+
+934
+02:25:12,503 --> 02:25:13,263
+Çalıştırıyorum.
+
+935
+02:25:13,971 --> 02:25:41,772
+Kaç yaşındasınız? 45. Enter'a bastım. Latiz yoğun elimde ekran yazdı ama benden bir input beklemeden sonraki komuta geçti. Adımı da boş aldı bu yüzden. Nal da değil bakın. Boş. Hiçbir şey yazmadı. Çünkü hello'dan sonra virgül, boşluk ve name geçecekti. Sonra nokta. Hello virgül, boşluk, nokta hiç. Nal filan da demedi. Böyle atlayıverdi. Seneye kakaat yaşında olacaksın dedi.
+
+936
+02:25:41,971 --> 02:25:58,332
+Benim string girişi yapmama izin vermedi. Bu, Scanner sınıfındaki bir bug arkadaşlar. Bug ne zaman ortaya çıkar? İlkel veriler istedikten sonra string isteyeceğimiz zaman ortaya çıkıyor.
+
+937
+02:25:59,796 --> 02:26:07,056
+O yüzden istediğimiz kadar ilkel veriyi istedikten sonra, girdikten sonra olaylarda bir problem yok.
+
+938
+02:26:07,695 --> 02:26:15,596
+String isteyeceğimiz zaman bir tane fazladan boş bir next line komutu vermemiz gerekiyor bu scanner nesnesine.
+
+939
+02:26:17,975 --> 02:26:20,256
+Böyle yaparsak düzgün çalışacak.
+
+940
+02:26:22,256 --> 02:26:22,975
+Çalıştırıyorum.
+
+941
+02:26:24,211 --> 02:26:33,412
+Karşı açınız mı? İsminiz nedir? Bakın bu sefer hem ismimi girmemi olarak sağladı hem de düzgün bir biçimde çalıştı. Bu bir bak.
+
+942
+02:26:34,484 --> 02:27:01,684
+JDK 5'ten beri gelen ve hala düzeltilmemiş bir bank. İlk başta ya ayıp ediyorlar ya aradan kaç sene geçmiş düzeltememiş yani bu kadar zor falan diye düşünmüştüm. Sonra var da bir nedeni dedim araştırayım dedim. Şu ortaya çıktı. Bu Scanner sınıfının kullandığı bir kod kitaplığı var. O kod kitaplığı da çok eski bir kod kitaplığı.
+
+943
+02:27:02,484 --> 02:27:07,324
+Başka bileşenin bir parçası olan kod kitabı.
+
+944
+02:27:07,744 --> 02:27:14,744
+Bu scannerdaki hataları düzeltseler başka taraflarda daha önemli hatalar ortaya çıkacak.
+
+945
+02:27:15,044 --> 02:27:16,564
+Bu nedenle düzeltmiyorlarmış.
+
+946
+02:27:17,024 --> 02:27:18,123
+Bunu öğrendim.
+
+947
+02:27:18,963 --> 02:27:29,484
+Peki dedim. Hem zaten herhalde şunun için de pek önem vermiyorlar. Artık normal yani bir sahada yazdığımız uygulamalarda kullanıcıdan bilgi istemeyi komut satınından yapmıyoruz.
+
+948
+02:27:29,703 --> 02:27:36,363
+Güyü bileşenleri üstünden yapıyoruz. Veyahut da bir servis üzerinden parametre aktarıyoruz filan filan.
+
+949
+02:27:46,963 --> 02:28:01,064
+implikasyonlar nedeniyle, aslında öyle olsun, bir tane next lang giriptiği yerlerde koyarız, deyip geçmeye karar vermişler. Biz öyle devam ediyoruz. Çok da sıkıntı değil yani. Sadece bilmemiz gerekiyor.
+
+950
+02:28:05,172 --> 02:28:18,391
+Ve bu lütfen tekrarlıyorum. Dersine giren arkadaşlarımın avantajı olsun. Close etmeyi unutmuyoruz. Çünkü bir puan değeri var.
+
+951
+02:28:20,011 --> 02:28:21,211
+Pekala.
+
+952
+02:28:23,452 --> 02:28:29,612
+Evet. Bu sonraki yansıda bundan bahsediyordum. Bunlardan bahsediyordum.
+
+953
+02:28:32,084 --> 02:28:33,924
+Şimdi artık nihayet.
+
+954
+02:28:34,255 --> 02:28:47,896
+Şu araba nesnemize artık kullanıcıdan bilgi isteyerekten oluşturma şeklinde kod yazabiliriz. Bunu gördük, öğrendik. Onun üstünden çalışalım şimdi.
+
+955
+02:28:48,615 --> 02:28:58,495
+UML sınıf şamasında şas numarası olmayacak şekilde olan K sınıfı üstünden çalışacağız. Main metodu da kendisinin içerisinde olacak.
+
+956
+02:29:02,255 --> 02:29:10,495
+İstam istenmesi gerektiği şeklinde sormuş olalım soruyu. Buna göre kodumuzu hazırlayalım.
+
+957
+02:29:10,995 --> 02:29:20,915
+Şimdi aslında çoğu kısmını zaten yaptık, biliyoruz. Aslında scanner kısmını kullanmayı da öğrendik. Onun için ne yapıyorduk hatırlayalım tekrar.
+
+958
+02:29:21,395 --> 02:29:31,515
+İşte util paketini import ediyorum ki içinden scanner'ı kullanayım. Ondan sonra main metodun içerisinde card nesnesini tanımladım ve ilklendireceğim.
+
+959
+02:29:31,515 --> 02:29:38,895
+Ama öncesinde gerekli bilgileri kullanıcılarını istemem gerekiyor, toparlamam gerekiyor. Ben scanner nesnesi oluşturdum bir tane.
+
+960
+02:29:38,995 --> 02:29:46,036
+Adını input deyip ilklendirdim de sistemini vererekten de. Sonra ekrana bir plaka numarası girin yastırdım.
+
+961
+02:29:46,515 --> 02:29:55,175
+Ve şimdi aslında bu plakayı bir geçiş değişkeni atamadan doğrudan kar konstraktörüne verdim alt satırda. Bunu yapabilirim.
+
+962
+02:29:55,216 --> 02:30:04,015
+Çünkü tek parametreyle bu işi kurtarıyorum. Ama eğer şasi numarası olan versiyonu da olsaydı kar konstraktörüne iki parametre vermem gerekecekti.
+
+963
+02:30:06,355 --> 02:30:31,355
+İşte plaka numarasını girin deyip bu plakayı bir string değişkeni atamam. Sonra şasi numarasını girin deyip ondan sonra onu da başka bir string değişkeni atamam. Ve sonra o iki string değişkeni bu kar konstantörüne vermem gerekecekti. Onu da ihmal etmeyelim. Ondan sonra işte aracın kendini tanıtmasını sağlıyoruz ve input.close'da yazmayı unutmuyoruz.
+
+964
+02:30:32,288 --> 02:30:37,247
+Bu şekilde çalıştığımızda bir problem olmadan işler yürüyecek.
+
+965
+02:30:37,788 --> 02:30:38,407
+Yapalım şimdi.
+
+966
+02:30:39,508 --> 02:30:40,587
+Sonra ne varmış?
+
+967
+02:30:41,168 --> 02:30:42,587
+Metot permitleri, denetim alışı falan.
+
+968
+02:30:42,768 --> 02:30:43,888
+Neyse, tamam, dur bakalım şimdi.
+
+969
+02:30:44,328 --> 02:30:45,008
+Önce şunu bir yapalım.
+
+970
+02:30:49,075 --> 02:30:56,595
+Şimdi bu hangisini de yer alıyor? 1D'de pekala. O zaman 1D paketini açalım.
+
+971
+02:30:57,635 --> 02:30:58,716
+Burada şunu unutmuşum.
+
+972
+02:30:58,716 --> 02:31:00,415
+Ramla, Ramla, Ramla.
+
+973
+02:31:00,415 --> 02:31:01,395
+Tamam pekala.
+
+974
+02:31:02,175 --> 02:31:03,915
+Varyasyonlar çok önemli değildir.
+
+975
+02:31:06,675 --> 02:31:08,556
+Sizlerde de var kefaatça.
+
+976
+02:31:10,056 --> 02:31:10,895
+Tamam pekala.
+
+977
+02:31:12,455 --> 02:31:13,475
+Şimdi bakın.
+
+978
+02:31:14,675 --> 02:31:32,455
+K sınıfında sadece plak adıması olan introduceler. Şimdi main metodu da var ama tamam aynı. Şey niye yapmışım bakalım. Özel bir şey var mı? Main testi. Orada doğru, orada doğru demek için yapmışım. Zaten yaptık aynı şeyleri.
+
+979
+02:31:33,139 --> 02:31:34,880
+Burada tekrarlamaya gerek yok.
+
+980
+02:31:35,340 --> 02:31:36,299
+Peki bakalım şimdi.
+
+981
+02:31:36,819 --> 02:31:39,979
+İşte kar sınıfı bildiğiniz gibi yutuyup import ediyorum.
+
+982
+02:31:40,459 --> 02:31:43,020
+Aynı yansıda gördüğünüz gibi kod yer alıyor.
+
+983
+02:31:43,899 --> 02:31:45,579
+Çalıştırım. Doğru çalıştırma bakalım.
+
+984
+02:31:45,920 --> 02:31:47,239
+Ondan sonra devam ederiz.
+
+985
+02:31:47,959 --> 02:31:48,899
+Burada şurada ne var?
+
+986
+02:31:49,059 --> 02:31:50,979
+Not permit sitesi daha var. Tamam pekala.
+
+987
+02:31:53,779 --> 02:31:55,200
+Çalıştırım madem öyle kara.
+
+988
+02:31:56,200 --> 02:31:57,559
+Yani cevaplik yaşı.
+
+989
+02:31:58,451 --> 02:32:06,831
+Peki, plakam olsun. Plakam bu durumun şekilde gayet güzel anlatabildi.
+
+990
+02:32:08,591 --> 02:32:13,291
+Onun dışında başka mesela şey de yapabilirim.
+
+991
+02:32:15,851 --> 02:32:19,031
+Sözle bahsettiğim şeyin kendisini de yapalım.
+
+992
+02:32:19,591 --> 02:32:23,751
+N, Y, B, D yanılmıyorsam iki parametre konstruktörü vardı.
+
+993
+02:32:23,751 --> 02:32:24,731
+Tamam, pekala.
+
+994
+02:32:26,388 --> 02:32:30,747
+main programında şu bilgileri kullanıcılar isteyelim.
+
+995
+02:32:31,208 --> 02:32:33,688
+Bunu da main, main 2 diyelim mesela.
+
+996
+02:32:35,427 --> 02:32:38,407
+Ay pardon, yanlış yerde şöyle tıklamadan oldu bu olay.
+
+997
+02:32:38,728 --> 02:32:40,728
+Control C, Control V, şimdi oldu.
+
+998
+02:32:45,728 --> 02:32:48,388
+Burada, hatta şöyle de yapabilirim.
+
+999
+02:32:51,448 --> 02:32:53,808
+Şundaki main metodunu alın, hiç problem yok.
+
+1000
+02:32:55,443 --> 02:33:05,703
+En azından bana temel oluştu olsun diye bu kısmını alırım. Şu main V2'ye ama, main V2'ye, şöyle yapıştırırım.
+
+1001
+02:33:07,572 --> 02:33:24,831
+Şimdi ben bu kaynak kodu başka paketten aldığımda yine o paketteki diğer sınıfları da otomatik import etmeye çalışıyor. Bakın 0.1 B'deki karı almaya çalışıyor. Ama ben 0.1 B'deki karı kullanmaya devam etmek istediğim için öncelikle şunu kesiyorum.
+
+1002
+02:33:25,711 --> 02:33:40,072
+İkincisi, bu paketteki kar, bende iki parametre gerektiriyor. Şasir numarasını da gerektiriyor. Bunu da yapalım şimdi, madem öyle. Şimdi iki ayrı parametre olduğu için mecbur ikisini ayrı ayrı almam gerekiyor.
+
+1003
+02:33:50,579 --> 02:33:55,220
+Ondan sonra benzer şekilde, bu sefer şasi numarasına girin diyelim.
+
+1004
+02:33:58,619 --> 02:34:01,619
+Chasis number diyelim.
+
+1005
+02:34:01,619 --> 02:34:11,260
+Ve bu sefer bu da chasis olsun stringin adı da new car plate, chasis.
+
+1006
+02:34:11,824 --> 02:34:17,664
+ve karın introduce self'in çağrılması sağlansın.
+
+1007
+02:34:18,123 --> 02:34:21,064
+Şimdi bu arada ufak bir şey göstermek istiyorum size.
+
+1008
+02:34:21,564 --> 02:34:30,184
+Acaba her ne kadar bu D paketini sildim ama buna rağmen acaba bir sorun olmasın diye biraz paranoyak dağılıyorum.
+
+1009
+02:34:30,423 --> 02:34:32,943
+Sorun olmayacak ama olsun. Şimdi göstermek istiyorum size.
+
+1010
+02:34:32,943 --> 02:34:39,824
+Şimdi bir yandan control tuşuna basılı tutarken bu introduce self metodun üstüne gelirsem, open...
+
+1011
+02:34:39,824 --> 02:34:47,103
+ediyor o kodu ve beni direkt o metot nerede tanımlandıysa oraya götürüyor.
+
+1012
+02:34:47,324 --> 02:34:55,724
+Götürdüğü yerde bakın yine NP01B paketindeki K sınıfı ve onun introduce self metodu buraya beni götürdü.
+
+1013
+02:34:57,103 --> 02:35:06,103
+Navigasyon için yararlı bir kısa yoldu bu kontrol tuşuna basılı tutarak da bir metodun üstüne geldiğinizde o metodun tanımlı olduğu yere götürür sizi.
+
+1014
+02:35:09,363 --> 02:35:11,164
+Ben Java application diyorum.
+
+1015
+02:35:11,783 --> 02:35:14,024
+Versus, hepsi var 06 plaka olsun.
+
+1016
+02:35:15,203 --> 02:35:16,484
+Ses numarası.
+
+1017
+02:35:17,943 --> 02:35:19,684
+Şöyle bir şeyler olsun.
+
+1018
+02:35:21,283 --> 02:35:22,363
+Evet, işte plaka şurada.
+
+1019
+02:35:22,504 --> 02:35:27,083
+Ses numaranı da budur şeklinde kendini düzgün bir şekilde tanıtabildi.
+
+1020
+02:35:29,324 --> 02:35:30,004
+Peki.
+
+1021
+02:35:30,664 --> 02:35:30,923
+Evet.
+
+1022
+02:35:31,484 --> 02:35:33,344
+Soru soran arkadaşım varsa buyursun lütfen.
+
+1023
+02:35:34,283 --> 02:35:36,384
+Sonra da ben ileride ne var ne yoktu ona bakayım.
+
+1024
+02:35:36,847 --> 02:35:38,407
+Ben soru da lütfen buyurun.
+
+1025
+02:35:46,772 --> 02:35:56,532
+Aslında biraz girebilirim buna soru gelmezse. Çünkü sonra bir hafta tatile girecek miydi? Şu uygulama planına tekrar bir bakalım bakalım.
+
+1026
+02:35:57,912 --> 02:36:02,192
+Şimdi 19 Mayıs, şurada bir tatil oluyor.
+
+1027
+02:36:04,932 --> 02:36:09,092
+Dersimiz kaynamıyor ama öbür grubun kaynıyor.
+
+1028
+02:36:10,512 --> 02:36:14,212
+Şimdi bu arada, şimdi bir dakika.
+
+1029
+02:36:14,739 --> 02:36:27,799
+24'te şu yapıldı, tamam. Sonra onu da bu olacak. Inheritance'a gelebilmem için şunu bir hafta kaydırmıştık. Son önceki döneme bir bakarsam.
+
+1030
+02:36:34,804 --> 02:36:45,484
+Bu dönemki ilerleme hızımı karşılaştırdığımda, şimdi şu control flow, onlara bir plan gelmiş miyim bakalım.
+
+1031
+02:36:46,844 --> 02:36:51,543
+Şu an hemen hemen 3. hafta konaklarına geçtik.
+
+1032
+02:36:52,144 --> 02:36:55,884
+Call by value, cover, reference, ondan sonra olarak geçiriliyor.
+
+1033
+02:36:55,884 --> 02:36:57,904
+Orada biraz yavaş ilerleyeceğiz.
+
+1034
+02:36:58,344 --> 02:37:01,984
+Tamam, çok fazla koşturmaya gerek yok.
+
+1035
+02:37:03,860 --> 02:37:04,300
+Peki.
+
+1036
+02:37:05,920 --> 02:37:06,900
+Olur mu olmaz?
+
+1037
+02:37:07,900 --> 02:37:08,159
+Peki.
+
+1038
+02:37:08,540 --> 02:37:12,380
+Bu arada gelmedi arkadaşlar ama bahsedeceğim lütfen buyurun.
+
+1039
+02:37:17,652 --> 02:37:19,672
+Kutla biraz ilerleyeceğim madem öyle.
+
+1040
+02:37:23,572 --> 02:37:25,371
+Gördün mü? Kendi içerisinde.
+
+1041
+02:37:27,031 --> 02:37:28,252
+35, 45, 45.
+
+1042
+02:37:28,432 --> 02:37:29,972
+Bir şey mi?
+
+1043
+02:37:30,152 --> 02:37:31,172
+Bakalım şimdi.
+
+1044
+02:37:32,692 --> 02:37:36,932
+Şurada acaba bir varyasyon nasıl düşünebilir miyim?
+
+1045
+02:37:37,731 --> 02:37:40,252
+Şu an kadar epey varyasyon yaptık bu kağıt üstünde.
+
+1046
+02:37:40,472 --> 02:37:42,211
+Her şeyi konuştuk, örneklerini yaptık.
+
+1047
+02:37:43,031 --> 02:37:44,292
+Çok da bir şey yok.
+
+1048
+02:37:45,891 --> 02:37:46,192
+Peki.
+
+1049
+02:37:51,540 --> 02:37:52,020
+Çevre.
+
+1050
+02:37:56,500 --> 02:38:05,299
+Tamam, peki, co-primitive. Ondan sonra şeyden başlıyoruz. Nesna sıfırsızlık ilişkiler falan filan filan. Peki, hala, şöyle bir tekrar bakalım.
+
+1051
+02:38:07,819 --> 02:38:21,600
+Tamam, peki, sonra to association filan filan. Peki, şu, esas mesle, inheritance, sakıltıma gelebilme meselesi. Ondan sonra inheritance, polymorphism. Tamam, peki, 6. haftada olabiliyor.
+
+1052
+02:38:22,600 --> 02:38:23,200
+Aaa!
+
+1053
+02:38:24,435 --> 02:38:29,036
+Tamam, peki 6. hafta sarkatsa bizim ön calıbımız var, ondan sonraki ha.
+
+1054
+02:38:29,315 --> 02:38:31,935
+Peki, biraz ilerlemek istiyorum arkadaşlar, madem öyle.
+
+1055
+02:38:33,795 --> 02:38:35,376
+Gerçekten şurada avantajım olacak.
+
+1056
+02:38:36,015 --> 02:38:39,835
+Ben daha çok ilerleyebileceğim geçen sene ki duruma göre ama neyse, tamam.
+
+1057
+02:38:40,275 --> 02:38:41,495
+İkilemde kaldım biraz.
+
+1058
+02:38:54,548 --> 02:38:58,488
+Peki, bugün bu kadar ailesin arkadaşlar ya. Hallederiz diye düşünüyorum.
+
+1059
+02:38:59,868 --> 02:39:05,427
+O zaman soru da gelmediği için herkese Allah'a ısmarladık. Sağlıcakla kalın diyorum.
+
+1060
+02:39:06,108 --> 02:39:11,628
+Haftaya inşallah görüşmek üzere. Tabii benden önce Nurbur Yolcan'ıza özür dilerim.
+
+1061
+02:39:16,819 --> 02:39:17,804
+Evet.
+
+1062
+02:39:20,852 --> 02:39:23,572
+Tamam, haftaya görüşmek üzere arkadaşlar. Ben de yorulmuşum.
+
+1063
+02:39:24,452 --> 02:39:27,551
+Sağlıcakla kalın. Allah'a ısmarladık. Görüşmek üzere inşallah.

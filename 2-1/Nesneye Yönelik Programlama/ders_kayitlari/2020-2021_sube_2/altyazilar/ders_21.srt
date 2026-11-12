@@ -1,0 +1,3595 @@
+1
+00:00:29,364 --> 00:00:34,364
+Evet.
+
+2
+00:02:18,292 --> 00:02:20,292
+Arkadaşlar hoş geldiniz.
+
+3
+00:02:20,292 --> 00:02:25,292
+Sadece 9-5 kişi yaptık. Pek katılımcılıklarımız az ama başlayacağız.
+
+4
+00:02:32,372 --> 00:02:36,232
+Uygulamamızı da hatırlayalım. Ne var ne yok, nemiz kaldı nemiz etti.
+
+5
+00:02:43,572 --> 00:02:54,692
+Evet, şimdi burada matı trading'e bakacağız. Ve yalnız tabii şu proje ödevinin son tarihine ilgilenip bakalım.
+
+6
+00:03:09,171 --> 00:03:11,211
+Yedest, tamo, peki evaklınız vlas.
+
+7
+00:03:15,027 --> 00:03:15,728
+Yok, bir dakika.
+
+8
+00:03:20,168 --> 00:03:22,108
+İkiye kadar gelebilecek miyiz?
+
+9
+00:03:22,347 --> 00:03:23,108
+Bir dakika, yedisi.
+
+10
+00:03:24,108 --> 00:03:25,367
+Olumlu, buna yetmiyor.
+
+11
+00:03:26,567 --> 00:03:27,288
+Peki.
+
+12
+00:03:36,627 --> 00:03:37,627
+Evet.
+
+13
+00:03:43,987 --> 00:03:44,828
+Pekala.
+
+14
+00:03:49,364 --> 00:03:57,484
+13. hafta biz haftasız. Ama acaba labında yürüt testing'e girebilir miyiz? Girebiliriz aslında.
+
+15
+00:03:58,283 --> 00:04:00,604
+Ve bakalım bugün ne kadar ilerleyeceğiz bir ona bakalım.
+
+16
+00:04:03,084 --> 00:04:07,364
+İkisi de önemli. Şimdi arkadaşlar bugün özellikle multi-trading'e gidiş yapmak istiyorum.
+
+17
+00:04:08,364 --> 00:04:14,563
+Multi-trading'i iki haftada bitiriyoruz genelde. Birken sene de öyle yapmışız diye hatırlıyorum. Bir bakayım kontrol edelim.
+
+18
+00:04:19,411 --> 00:04:20,235
+Evet.
+
+19
+00:04:25,459 --> 00:04:52,379
+Introduction to Marty Trading. Tamam, peki. İki haftada rahat bitiriyoruz. Peki. Şimdi Marty Trading'de iki haftada bitireceğimiz bir içerik var. Ondan sonra da unit testing konusunu işlemek istiyorum sizinle. Çünkü proje ödevinizdeki istenlerden biri de unit test hazırlanmanızıydı. Bu nedenle şimdi iki konuyu da proje testinden önce konuşmamız yararlı olacak. Çok yararlı olacak.
+
+20
+00:04:53,459 --> 00:05:08,519
+yapabiliriz diye düşünüyorum. Bugün multi-trading'i yarısına kadar işler. Ardından biraz ileri atlar. Unit testingden bahseder. Ardından da artık son özel saftasında multi-trading konusunu bitiririz diye düşünüyorum.
+
+21
+00:05:09,492 --> 00:05:11,232
+Yetişemeyecek bir şey değil.
+
+22
+00:05:11,232 --> 00:05:29,652
+Ama olur da bir ders aksaklığı olursa, belki çarşamba günü, yani iki azından çarşamba günü lab saatinde, belki bir yarım saat, 45 dakikalık bir, en azından bu unit testinin konusunda bir şeyler anlatmak isteyebilirim.
+
+23
+00:05:29,772 --> 00:05:35,851
+Yani ne kadar sınav haftası olsa da çok fazla vaktinizi almayacağım bir ders olur.
+
+24
+00:05:36,211 --> 00:05:37,412
+Belki gerek bile kalmaz.
+
+25
+00:05:37,492 --> 00:05:44,392
+Bakalım, GVS'delik etmeyeyim o zaman, dersle başlayayım. Belki gerek bile kalmaz, elki ders yapmamıza.
+
+26
+00:05:45,351 --> 00:05:45,752
+Pekala.
+
+27
+00:05:48,072 --> 00:06:00,052
+Şimdi, multi-trading demek, bir program akışında birden fazla perler akışı ile aynı anda birden fazla iş yapmak demektir.
+
+28
+00:06:00,468 --> 00:06:28,408
+Aslında şey olarak, İngilizce olarak baktığımızda multi-threading diyoruz. Ama bunun multi-tasking'den farkının ne olduğunu bilmek lazım. Ve proses nedir, thread nedir? Bunların farklılığını bilmek lazım. Aslında işletim sistemi düzeyinde tanınlanan kavramlar aslında. Programlama dilleri de işletim sistemlerinin bu yeteneklerini kullanabilecek türden oluyorlar.
+
+29
+00:06:28,468 --> 00:06:48,187
+Öncelikle multitasking nedir? Multitasking bir bilgisayar sisteminde aynı anda bizden fazla programın çalışması demektir. Fakat burada bu programların nasıl ve hangi sırada çalışacağına göre alt kılınlar ortaya çıkmaktadır.
+
+30
+00:06:49,043 --> 00:06:50,264
+Önce şunu söyleyelim.
+
+31
+00:06:50,603 --> 00:06:57,663
+Biliyorsunuz artık yıllardır bilgisayarlarınızdaki mikro işlemciler birden fazla çekirdek içeriyorlar.
+
+32
+00:06:58,004 --> 00:07:04,863
+Ya bırakın bilgisayarlarımızı, cep telefonlarımız bile 4 çekirdek, 6 çekirdek, 8 çekirdek falan içeriyor.
+
+33
+00:07:05,943 --> 00:07:15,083
+Bu da demek oluyor ki aslında her çekirdeğe bir görev versek aynı anda birden fazla işin yapılabileceği anlamdan geliyor.
+
+34
+00:07:15,540 --> 00:07:37,880
+Tabi burada bilgisayarınız veya cep telefonlarınız da artık bilgisayar. İşletim siteminin ihtiyacı olan, sürekli çalışmaya ihtiyacı olan bazı kısımları var. Bazı işletim şekerde bunları atanız, geri kalan bu şekerde olursa onlara da işler verilir. İşletim sistemin üzerinde çalışan, bizim çalıştıracağımız kullanıcı uygulamaları çalıştırılır.
+
+35
+00:07:39,124 --> 00:07:48,124
+Belki bir uygulama bu sırada birden fazla işi aynı anda yaptırarak daha yüksek başarım elde edilmesini sağlayabilir.
+
+36
+00:07:48,464 --> 00:07:49,924
+Örneğin bir web trajisi açıyoruz.
+
+37
+00:07:50,724 --> 00:07:57,064
+Bir yandan bazı skitler çalışıyor web sayfasında, bir yandan bazı resimler iniyor.
+
+38
+00:07:57,064 --> 00:08:07,064
+Şimdi eğer bu hem skit çalışma hem indirilen resmi ekrana çizmeye basma işlemleri aynı anda yapılırsa bu sayfanın yüklebilir...
+
+39
+00:08:07,124 --> 00:08:10,624
+Bizim önümüze tamamlanmış bir şekilde gelmesi daha kısa sürecek hali.
+
+40
+00:08:10,624 --> 00:08:25,304
+İşte böyle pratik uygulamalar olduğu için bir işletim sistemindeki donanımları eğer bizden fazla kaynak varsa bunları birlikte çalıştırarak işlerimizi hızlandırabiliyoruz.
+
+41
+00:08:25,939 --> 00:08:30,579
+Bunu yapmak için gerçi birden fazla çekirdeğe de pek ihtiyaç yok.
+
+42
+00:08:31,119 --> 00:08:40,740
+Eğer tek çekirdek bile olsa bilgisayarda, bütün bu yapılacak işlerin biraz birisini, sonra ötekini, sonra da ötekini yapmak şeklinde.
+
+43
+00:08:40,740 --> 00:08:45,740
+Yani sırayla her bir görevi biraz çalışma zamanı vererekten de...
+
+44
+00:08:46,272 --> 00:08:48,192
+multi-tasking yapılabilirsiniz.
+
+45
+00:08:48,572 --> 00:08:56,451
+Şimdi multi-tasking işte aynı anda birden fazla iş yapılması, multi-trading ise bunun gerçekten paralel olarak yürütülmesidir.
+
+46
+00:08:56,852 --> 00:09:03,692
+Çünkü biraz önce dediğim işte tek çekirdek varsa biraz şunu yap, biraz şunu yap, biraz şunu yap şekilde çalışmak da multi-tasking.
+
+47
+00:09:06,607 --> 00:09:15,947
+peki sıra yaptırılıyor ama sürekli birinden diğerini hızlı bir şekilde geçirdiği için sanki bunlar paralı olarak çalışıyormuş gibi gözüküyor bize.
+
+48
+00:09:16,267 --> 00:09:21,807
+Aslında bunlar sıra olarak çalışıyorlar. Ama yine de aynı anda çalışabilme yeteneğine sahipler.
+
+49
+00:09:22,927 --> 00:09:29,827
+Doğanımızda eğer işlemcimizde bizden fazla çekirdek varsa bu zaman bunlar gerçekten de aynı anda çalışabilirler.
+
+50
+00:09:29,827 --> 00:09:34,607
+Ama artık sevdiğim ki gerçekten paralı olarak görevlerimiz bizden paralı olarak...
+
+51
+00:09:34,607 --> 00:09:51,367
+Bu konuda çalışmasıdır. Onun dışında, process ve thread arasında fark var. Process, thread'den daha az bir süreçtir. Yapılması gereken bir iştir.
+
+52
+00:10:00,000 --> 00:10:14,799
+Java işlemcilerin ayrıntılarını gördüğünüzde aslında bir mikro işlemcinin sadece tek bir işlem yapan parçası yok. Aritmetik işlemleri yapan bir bileşeni var, nocuk işlemleri yapan bir bileşeni var, ondalıklı sayı işlemleri yapan bir bileşeni var.
+
+53
+00:10:14,799 --> 00:10:27,599
+Eğer çalıştırdığımız kod bu gibi farklı görevlere ihtiyacı duyuyorsa bu görevler bu bileşenlerde paralel olarak çalıştırılabilir alt bileşenlerde.
+
+54
+00:10:27,988 --> 00:10:43,008
+Ve hatta aslında sizin nihayetinde kolunuzun makine dilini çevriliyor ve bu makine dil komutlar arasında eğer bir bağımlılık söz konusu değilse, örneğin X eşittir X artı 2 gibi bir komut.
+
+55
+00:10:43,108 --> 00:10:55,988
+Yani X'in diğer iki artı ondan sonra tekrar X'e yaz. Bunların bu sırayla yapılması gerekir ama X eşittir X artı 2, Y eşittir Y bölü 3 gibi bir komut söz konusuysa, X tam sayıysa, Y onları kısa isa bu iş.
+
+56
+00:10:55,988 --> 00:11:17,948
+Herhangi bir sırada yapılabiliniz. Belki eğer daha sonra mesela X'e yayı atamıyorsanız. Derleyiciler bu gibi bağımlılıkları algılayıp, konutları aslında sizin verdiğiniz sıra dışında çalıştırabilecek, düzenleyebilecek mantığa sahip, derleyici sahipliği ise bile mikro işlemciler sahip.
+
+57
+00:11:18,899 --> 00:11:24,399
+Bu nedenle aslında bize hissettirmeden bazı şeyler paralel olarak da yürüyor olabilir.
+
+58
+00:11:24,839 --> 00:11:32,899
+Fakat siz bilinçli olarak çalıştıracağınız programın algoritmasını paralel olarak çalışabilecek görevlere ayırırsanız,
+
+59
+00:11:33,860 --> 00:11:41,279
+o zaman onun her halükarda daha hızlı çalışacağı ve bir performans kazanımı getireceği aşikar oluyor.
+
+60
+00:11:41,279 --> 00:11:46,899
+İşte bu gibi programlar yazmaya multi-traded programlar yazıyor.
+
+61
+00:11:46,899 --> 00:12:12,899
+program yazmak diyoruz. Şimdi buna bir bakış atacağız bu ders kapsamında. Aslında bu konu çok daha ayrıntılı bir konu. Çünkü bir kere seçim içerisinde en büyük bir temel problem olarak ortak paylaşılan kaynaklara eş zamanlı erişimde ortaya çıkan tutarlılık sorunları oluyor. Bu nedenle algoritmamızı bu tutarlılık sorunlarına
+
+62
+00:12:14,388 --> 00:12:17,327
+O açmayacak şekilleri tasarlamamız gerekmektedir.
+
+63
+00:12:17,548 --> 00:12:18,388
+Ki de bu çok zordu.
+
+64
+00:12:18,927 --> 00:12:26,707
+Bunun yerine bu tutarsızlıkları önleyecek çeşitli yapılar önerilmiştir bilgisayar bilimleri literatüründe.
+
+65
+00:12:28,327 --> 00:12:33,788
+Monitörler ve semaforlar adı verilen kalmışlık yapılar vardır bu konular için.
+
+66
+00:12:34,187 --> 00:12:35,408
+Biz o kadarına girmeyeceğiz.
+
+67
+00:12:35,408 --> 00:12:41,048
+Fakat temel senkronizasyon problemlerini çözmek için nesne kilidi mantığı var.
+
+68
+00:12:41,168 --> 00:12:42,388
+Daha basit bir mekanizma olarak.
+
+69
+00:12:42,388 --> 00:12:54,888
+Java bunu destekliyor. O konuya kadar ilerleyeceğiz. Daha fazlasını ilerleyeceğiz. Bu konuda meraklılar arkadaşlar. Herhangi bir kaynaktan kendilerine ilerletebilirler.
+
+70
+00:12:56,967 --> 00:13:09,648
+Şimdi yanlış şurada şöyle bir durumu da hatırlatmak istiyorum. Diyelim ki siz işinizi aynı anda yürütülebilecek dört parçaya ayırdınız diyelim ki. Sizin işiniz dört kat hızlanacak mı acaba?
+
+71
+00:13:10,131 --> 00:13:21,511
+genelde 4 kat hızlanmıyor. Bunun istediği de şu. Bir kere bu kodumuzu paralel olarak çalışmaya işletim sisteminin hazırlaması için
+
+72
+00:13:21,940 --> 00:13:47,000
+Belirli bir komutlar yürütmesi gerekiyor. Çeşitli threadler açması gerekiyor. Bu threadleri açmak, yürütmeye başlamak bir ek yükü getirilmektedir. Ondan sonra daha sonra bu threadler arasında büyük ihtimalle birbirini beklemesi gerekenler olabilir. Biri daha çabuk yapılmışsa daha yavaş olan, geriden gelen onu beklemek zorunda olacak. Bu nedenle hepsi aynı anda hızla gidebilecekler belki.
+
+73
+00:13:48,500 --> 00:14:02,419
+Bu gibi nedenlerle ne kadar thread, o kadar kat fazla performans şeklinde kurar söz konusu olmuyor. Daha düşük bir çarpan kat sayısı ile hızlanıyor programımız ama hızlanıyor nihayetinde.
+
+74
+00:14:03,892 --> 00:14:29,451
+Bunu da anlatırken aslında işi epey basitten aldım. Çok fazla, fazla ayrıntı var aslında altyapıda. Ama bu dersin an önce bütün bunlardan bahsetmek değil. Dediğim gibi işletim sistemleri konusunda. Bunu ayrıca göreceksiniz. Payla programlarında aslında bir buzdağ, biz sadece buzdağın ucunu keşfediyor olacağız. Aslında başlı başına derin bir konudur. Payla programlama işlemleri. Kolay da değiliz.
+
+75
+00:14:29,812 --> 00:14:33,132
+O kadar zor buna girmeyeceğiz biraz kapsamında.
+
+76
+00:14:35,672 --> 00:14:46,572
+Şimdi sizin oluşturacağınız bir thread, bir yaşam döngüsü var. Bu yansıda o yaşam döngüsünden bahsetmek istiyorum.
+
+77
+00:14:46,975 --> 00:14:58,836
+Bu yaşam dönüşü sırasında threadleriniz çeşitli durumlardan birinde yer alır ve bir durumdan diğerine geçişin çeşitli olayları ve kuralları vardır. Onlardan bahsetmek istiyorum.
+
+78
+00:14:59,892 --> 00:15:19,792
+Siz bir constructor kullanarak da yeni bir thread oluşturacağınız zaman, nasıl oluşturacağınızı göreceğiz biraz da, oluşturulmaz. Bir threadinizde bir nesne olacak aslında. Bir thread oluşturduğunuz zaman, constructor ile bu thread yeni oluşturulmuş durumunda olacaktır. Hemen koşmaya başlamayacaktır.
+
+79
+00:15:25,043 --> 00:15:42,943
+Çalışmaya hazır hale getirmiş oluyorsunuz ve thread'iniz runnable yani koşabilir, çalışabilir durumda oluyor. Hemen çalışmıyor. Koşabilir, çalışabilir durumda bekliyor. Kimi bekliyor? İşletim sisteminin skecülerini bekliyor, zamanlayıcısını bekliyor.
+
+80
+00:15:42,943 --> 00:15:51,763
+Az önce bahsetmiştim ya, işletim sisteminizin üstünde çalıştığı bilgisayarın kaynakları farklı farklı olabilir, tek çekirdekli, en çekirdekli olabilir.
+
+81
+00:15:53,011 --> 00:16:02,611
+Eski işletim sistemleri multi-trading'i desteklemiyordu. Sadece sırayla birinden ötekine geçmek zorunda çalışıyordu.
+
+82
+00:16:02,611 --> 00:16:13,691
+Ayrıca Java'nın da taşınabilirlerini, portabilitesini düşündüğünüzde illaki sizin kodunuzun bir bilgisayar üstünde çalıştığını varsayamazsınız.
+
+83
+00:16:14,091 --> 00:16:19,551
+Belki çok daha düşük sistem kaynaklarına sahip bir durumda çalışıyor belki bu programımız.
+
+84
+00:16:19,956 --> 00:16:30,576
+Bu nedenle, run-over konumuna geçen thread, deniz şu an bekliyor. İşletim sisteminin zamanlayıcısını, skecelerini, hatısa sen de demesini bekliyor.
+
+85
+00:16:31,176 --> 00:16:35,776
+Hatısa sen de dediği zaman, artık thread'iniz koşmaya başlamış oluyor, çalışmaya başlamış oluyor.
+
+86
+00:16:36,136 --> 00:16:42,916
+Ve işte ona verdiğiniz kodları yürütmeye başlıyor. Ama bu kodları baştan sonuna yürüyecek diye bir garanti yok.
+
+87
+00:16:42,916 --> 00:16:47,956
+Büyük ihtimalle de yürümeyecek zaten. Çünkü bu thread belli bir süre çalış...
+
+88
+00:16:47,956 --> 00:17:03,276
+Kaptıktan sonra tekrar scheduler tarafından belki de zanadolu konumuna geri dönecek. Çünkü time slash diye bir kavram var. Yani scheduler herhangi bir trede tüm hakkı, tüm yetkiyi vermiyor.
+
+89
+00:17:04,564 --> 00:17:14,684
+Aynı anda bizden fazla çekirdek olsa bile aynı anda yürütülmesi gereken başka başka süreçler ve uygulamalar da sırf konusudur bu durumda çalışan.
+
+90
+00:17:14,684 --> 00:17:22,963
+Bir noktada artık sizin trade'inize diyor kız skerücülü tamam senin artık yola çalışın yeter sen biraz kenara geç diğer trade'lar çalışsın ki gelsin diyor.
+
+91
+00:17:23,359 --> 00:17:48,679
+O time slice bu. Bu işletim sisteminin schedulerinin sizin trade'inize ayıldığı zaman sona eriyor. Tekrar bu konuda beklemeye başlıyor trade'imiz. Siz isterseniz yield komutunu vererekten de gönüllü olarak bir trade'in artık benim bu kadar çalışmam yeterli. Ben bir ders dinleneyim diye bir şekilde kodda yazabilirsiniz. Bu ders kapsamına yazmayacağız ama bu olasıdır.
+
+92
+00:17:49,268 --> 00:18:06,928
+Yani thread işini bitirene kadar running ve runable durumları arasında gidip geliyor. Fakat eğer thread çalışmaya devam etmek için bir şeyleri beklemek zorundaysa bu ne olabilir? Belki bir input output operation'ı beklemek olabilir bu.
+
+93
+00:18:08,596 --> 00:18:12,256
+Mesela kullanıcının komut satanından bir bilgi gelmesini beklemek.
+
+94
+00:18:12,776 --> 00:18:17,976
+Veyahut da bir ağ bağlantısını dinliyorsa bir stream üzerinden oradan byte gelmesini beklemek.
+
+95
+00:18:18,416 --> 00:18:23,675
+Veyahut da işte diske yazı yazılacak, bir şeyler yazılacak. Geçen hafta gördük.
+
+96
+00:18:24,056 --> 00:18:28,175
+Disk işlemleri yavaş işlemler, bellek işlemleriyle karşılaştırılır.
+
+97
+00:18:28,396 --> 00:18:35,556
+O yüzden scheduler bir input output operation yapacak olan trend ediyor ki, tamam ben senin örneğin output yapacak.
+
+98
+00:18:36,596 --> 00:18:56,816
+Ben bunu işleyeceğim. Ama disk uygun hale gelene kadar daha çok vakit var. Sende mutlaka bu ayo işlemini bitirmem gerekiyor demişim. Sen şu an bekle biraz dinlen. Danavuk oyununda bekle. Ben bu işi yapacağım. İş tamamlanınca da uygun zamana seni tekrar çağıracağım diyor mesela. Biraz senaryo yazıyorum.
+
+99
+00:18:58,240 --> 00:19:01,440
+Anlatımında ama durumun akışları gerçek tabii ki.
+
+100
+00:19:01,920 --> 00:19:05,400
+Bu arada şöyle bir yanlış ifade kullandım.
+
+101
+00:19:05,680 --> 00:19:08,660
+Renovul konumunda beklemiyor da, block kuyruğunda bekliyor.
+
+102
+00:19:09,180 --> 00:19:10,160
+Onların yeri ayrı.
+
+103
+00:19:10,340 --> 00:19:12,860
+Yani bir işlem, bu bir input alt işlemi olabilir.
+
+104
+00:19:13,380 --> 00:19:16,780
+Veya bir başka threadle senkronize olması gerekir.
+
+105
+00:19:17,180 --> 00:19:19,800
+Bir başka threadin işini bitirmesini beklemek isteyebilir.
+
+106
+00:19:19,920 --> 00:19:20,860
+Wait komutu var.
+
+107
+00:19:21,940 --> 00:19:22,820
+Join komutu.
+
+108
+00:19:23,539 --> 00:19:44,539
+Mesela wait ve join birliktedir. Bir thread ötekine join isteyebilir, biri ötekine wait der. Biri ötekine katılır, biri ötekini bekler. Böyle durumlar söz konusu. Onları da çok görmeyeceğiz gerçi bu ders kapısımda. Ama slip işlemini göreceğiz. Bir thread belli bir süre iş yapmadan...
+
+109
+00:19:45,491 --> 00:19:50,491
+Uykuda beklemeyi seçebilir. Bizi waiting yapmamalı göreceğiz şimdi birazdan örneklerde.
+
+110
+00:19:50,892 --> 00:19:55,612
+Benim bir süre beklemeyi tercih edebilir. Belki algoritmamız onunla ipi edilmesi var diyelim ki.
+
+111
+00:19:57,612 --> 00:19:59,451
+Bir network bağlantısı deniliyoruz.
+
+112
+00:20:00,051 --> 00:20:06,651
+sürekli paket geldim, paket geldim diye sürekli yoklamaktansa, diyelim ki 3 saniyede bir yükü yoklayacağız.
+
+113
+00:20:07,151 --> 00:20:09,991
+Böyle bir durum varsa 3 saniye bekleyeceğiz.
+
+114
+00:20:10,751 --> 00:20:12,291
+Uykuda bekleyeceğiz.
+
+115
+00:20:12,751 --> 00:20:15,591
+Meşgul beklemeyeceğiz şeklinde bir durumlar sözü olabilir.
+
+116
+00:20:16,071 --> 00:20:27,891
+Bu gibi durumlarda bir thread işte kendi IO işlemini beklemesi veyahut da bir zaman geçirmeyi beklemesi amacıyla blog konumuna alınabilir.
+
+117
+00:20:28,051 --> 00:20:39,051
+Bu IO işlemi gerçekleştikten veyahut da uyduracak süre tamamlandıktan sonra tekrar hemen running durumuna geçmiyor thread, runable konumuna geri düşüyor.
+
+118
+00:20:39,711 --> 00:20:44,311
+Yine orada skeçlerin kendini çalıştırmasını, sırayı kendisine vermesini bekliyor.
+
+119
+00:20:44,851 --> 00:20:55,071
+Yani bir thread bu runable ve running durumları arasında belki de arada blok durumundan geçerekten işlemi tene kadar bu döngü içerisinde yaşam döngüsünü süzdürüyor.
+
+120
+00:20:55,071 --> 00:20:55,951
+İşi bitti.
+
+121
+00:20:56,051 --> 00:21:08,071
+Zaman da thread sonlanıyor ve artık ölü bir thread. Yani işi bitmiş. Onunla ilgili sistem kaynakları temizlenmiş oluyor. Böylece thread'in yaşan bir döngüsü sona eriyor.
+
+122
+00:21:08,627 --> 00:21:20,387
+Block kurumundan anında durumuna işte IO işlemi bitince geçebilir, uyku süresi bitince geçebilir, joint katılma işlemi tamamlanınca geçebilir.
+
+123
+00:21:20,907 --> 00:21:29,167
+Veyahut da işte kendisini bekleyen tradeler varsa hepsini bir haber vermek, bilgilerlemek için notify ve notify all diye metotlar var.
+
+124
+00:21:29,447 --> 00:21:33,307
+Onlardan biri işte tamamlanınca da runable durumuna geçebilir.
+
+125
+00:21:33,827 --> 00:21:36,407
+Genelde trade'in yaşam döngüsü bu.
+
+126
+00:21:36,627 --> 00:21:38,967
+ekran üstünde yürüyor.
+
+127
+00:21:40,727 --> 00:21:42,547
+Burada önemli olan şeyler şunlar.
+
+128
+00:21:42,847 --> 00:21:44,107
+Ne soru çıkartacağız bunlarda?
+
+129
+00:21:44,567 --> 00:21:47,687
+Birincisi, sizin thread'iniz sürekli çalışmıyor.
+
+130
+00:21:48,267 --> 00:21:49,067
+Aralarda bekliyor.
+
+131
+00:21:49,967 --> 00:21:50,187
+İki.
+
+132
+00:21:51,412 --> 00:21:59,231
+Biri trade'in ne zaman çalışacağı üzerinde sizin hiçbir kontrolünüz yok. Esas kontrol scheduler'ın elinde.
+
+133
+00:21:59,892 --> 00:22:11,711
+Üçüncüsü, yine eğer sizin birden fazla trade'iniz varsa bunların hangi sırada çalışacağının ve hangisinin önce hangisinin sonra biteceğinin de hiçbir garantisi yok.
+
+134
+00:22:12,132 --> 00:22:17,572
+Bütün bunların denetimi scheduler'ın yerinde sizin de scheduler üzerinde hiçbir denetiminiz yok.
+
+135
+00:22:17,875 --> 00:22:33,496
+Bu nedenle kodumuzu da düşünürken, algoritmamızı da düşünürken bu paralel çalışacak olan görevlerin önce şu başlayacak ve sonra da şu başlayacak, önce şu bitecek, sonra şu bitecek diye bir garantisi kesinlikle yok.
+
+136
+00:22:33,875 --> 00:22:37,316
+Bütün bunları göz önünde bulunduranaktan düşünmeniz lazım.
+
+137
+00:22:41,364 --> 00:23:01,544
+Peki, evet. Sendenen bekler bahsettik. Ama işte beklerken mesela paket bekliyoruz veya bir art ateşleminin bitmesini bekliyoruz. Şöyle bir senaryo düşünün. Araba kullanıyorsunuz, bir yere gidiyorsunuz. Yanınızda da bir arkadaşınız veya çocuğunuz var.
+
+138
+00:23:01,544 --> 00:23:08,264
+İşte geldik mi, geldik mi, geldik mi, geldik mi diye sürekli size soruyor. Ya daha var bir otur, uyu, kitap okur bir şey.
+
+139
+00:23:08,503 --> 00:23:09,364
+Bak bir uyu bir şey.
+
+140
+00:23:09,364 --> 00:23:11,604
+Yok, geldik mi, geldik mi, geldik mi?
+
+141
+00:23:11,604 --> 00:23:12,483
+Biz can sıkı bir şart.
+
+142
+00:23:12,660 --> 00:23:32,420
+Değil mi? Hıbbın gibi. Sizin tredinizde sürekli işlem tamamlandı mı, tamamlandı mı, tamamlandı mı diye bakmak veyahut da sarın kendisinden alınmasını engellemek için belki bir döngü içerisinde sürekli bir şeylere arttırmak ama boş yere arttırmak falan gibi şeyler kodlayabilirsiniz gerçi.
+
+143
+00:23:32,420 --> 00:23:40,359
+Ama derde içinde sizin bu tuzaklarınıza düşme veya düşmeme orasılığı var. Arka planını bilemiyoruz.
+
+144
+00:23:40,660 --> 00:24:08,660
+Veya işletim sistemlerinin skeçleri farklı farklı arko etmelerinde çalışıyor. Bu bize waiting işe yarayabilir de yaramayabilir de. Ama yarasa da yaramasa da bilgisayara boş yere iş yaptırmak sistemin bütününün responsiveness özelliğini yani size hızlı ve akıcı yanıt verme özelliğini diğer bütün prosesleri düşündüğümüzde azaltan bir işlemdir. Sistem kaynaklarını verimsiz kullanmak demektir. Bu nedenle.
+
+145
+00:24:08,660 --> 00:24:31,960
+Bizi waiting yapmaktansa sleep üstünden gitmek çok daha doğru olacaksa. Ama şöyle bir riskimiz de var. Uyku durumuna geçen threadin uyanamaması söz konusu olabilir. Bu nedenle bir check exception olan interrupted exception'ını kontrol etmeniz gerekiyor eğer sleep komutu verdiyseniz.
+
+146
+00:24:34,163 --> 00:24:41,803
+Ben şu an kadar böyle çok ağır, multi-trading işlemler yapan bir kod uzun süredir yazmadım.
+
+147
+00:24:41,883 --> 00:24:44,943
+Yüksek transitesim süresinde yazmıştım böyle bir kodu.
+
+148
+00:24:45,463 --> 00:24:49,083
+Ama onun üstünden de yıl geç yani, 2000 yılda tamamladım.
+
+149
+00:24:49,543 --> 00:24:51,223
+Aradan 21 sene geçmiş.
+
+150
+00:24:52,503 --> 00:24:54,503
+Java birçok sürümden geçmiş.
+
+151
+00:24:54,503 --> 00:25:00,763
+Şu bu, bu gerçekten bir internet exception ile o sıralar karşılaştım, karşılaşmadım hatırlamıyorum.
+
+152
+00:25:01,203 --> 00:25:02,123
+Ama hani şöyle.
+
+153
+00:25:02,163 --> 00:25:20,043
+söyleyeyim. 2008'den beri Nesliye Programlama dersleri veriyorum. Yaptığım basit örnekler içerisinde veya içinde bulunduğum diğer çalışmalar içerisinde şu an kadar Interrupted Exception olduğunu görmedim ama dediğim gibi aşırı yoğun, ağır skret bir multi-telling işle yapmadım açıkçası.
+
+154
+00:25:21,623 --> 00:25:29,703
+Taten yine de bu bir Checked Exception olduğu için Sleep komutu verdiğinizde bu Interrupted Exception'da Try-Catch ile işlemeniz gerekecek.
+
+155
+00:25:33,683 --> 00:25:49,023
+Peki. Şimdi sizin bir görevinizi yeni bir, aynı bir trede üzerinde kodlamak ve koşturmak için ne yapmanız gerekiyor? Bunu konuşacağız. Dört ayrı işlem yapmamız gerekiyor bunun için. Birincisi.
+
+156
+00:25:49,460 --> 00:26:03,099
+Yazacağınız, parallel çalışması istediğiniz olan kodunuzu hazırlayacağınız sınıfınızın mutlaka runable arayüzünü gerçeklemesi gerekiyor. Bu Java Lang paketindedir. Ayrı bir şey import etmenize gerekiyor.
+
+157
+00:26:06,932 --> 00:26:24,632
+Çok paralel olarak çalışması gereken kodu, bu Run-Umbur arayüzünü gerçekleyen sınıfınızı Run metodunun içine kodlamanız lazım. Public, Void, Run ve parametre de almıyor. Böyle bir metot bu. Bu metot, Run-Umbur interfazında tanımlı olan bir metot. Kodunuzu bunun içine yazmanız gerekiyor.
+
+158
+00:26:25,951 --> 00:26:32,251
+İkinci adım, tabi işte New ile constructorınızı kullanarak tam bu sınıfınızdan bir nesne oluşturmanız gerekiyor.
+
+159
+00:26:32,692 --> 00:26:38,111
+Sonra yine Java long paketinde yaran thread sınıfından bir nesne oluşturuyorsunuz.
+
+160
+00:26:38,631 --> 00:26:46,291
+Onun constructorına parametre olarak bu sizin az önce oluşturduğunuz, ikinci adımda oluşturduğunuz nesnenizi veriyorsunuz.
+
+161
+00:26:46,291 --> 00:26:55,291
+Ve dördüncü adım olarak bu thread nesnesinin, bir önceki adımda oluşturduğunuz thread nesnesinin start metodunu kullanarak başlatıyorsunuz.
+
+162
+00:26:56,147 --> 00:27:08,267
+ZSINF'in ZAN metodu da var ama onu kullanmıyorsanız çünkü ZAN metodunu kullanırsanız bu paralel çalışmıyor, sıralı çalışıyor. Bu dört adımı uygulamanız gerekir.
+
+163
+00:27:11,251 --> 00:27:18,932
+Bu paralel çalışmasını, istediğiniz kodunuzu oluşturacağınız sınıfı, thread sınıfından kalıtımla da türetebilirsiniz.
+
+164
+00:27:18,932 --> 00:27:26,132
+Ama bunu tavsiye etmiyorum. Çünkü bu durumda olası tek kalıtım hakkınızı kullanmış oluyorsunuz.
+
+165
+00:27:26,531 --> 00:27:31,872
+İç mantığı nedeniyle kurulması gereken bir kalıtım ilişkisini bu nedenle kuramayabilirsiniz.
+
+166
+00:27:32,660 --> 00:27:37,080
+O yüzden threadden kalıtımla kendi sınıfınızı türetmeye hiç gerek yok.
+
+167
+00:27:37,400 --> 00:27:43,500
+Bunun için Learnable arayüzünü implement eden sınıfınızı yazmanız yeterli.
+
+168
+00:27:46,900 --> 00:28:06,960
+Ve biliyorsunuz, kalıtım daha ağır sıklet bir ilişki olduğu için sadece gerekli olduğu, çok gerekli olduğu zamanlarda kullanıyoruz. Bunu da bu hakkı da iş mantığına ayırıyoruz. Yoksa altyapı için bu master learning hakkımızı özür dilerim, inheritance hakkımızı harcamaya hiç mi hiç gerek yok?
+
+169
+00:28:09,960 --> 00:28:11,580
+Şimdi, durumlar bunlar.
+
+170
+00:28:13,268 --> 00:28:19,568
+Dikkatinizi çekme sistemi bir şey daha var. Şu run metodundan bahsettim ya, public void zone hiçbir parametrede yok.
+
+171
+00:28:20,708 --> 00:28:26,228
+Peki, o zaman bu paralel olarak çalışacak görevinize nasıl bilgi aktaracaksınız?
+
+172
+00:28:28,628 --> 00:28:36,528
+Bunun için önce o nesneyi oluştururken, constructor'ın çarpı oluştururken, işte constructor üzerinden bilgi aktaracaksınız.
+
+173
+00:28:37,140 --> 00:28:49,140
+Veya setter metotları üzerinden bilgi arttıracaksınız. Ama tabii bu durumda bunu dördüncü adımı gerçekleştirmeden önce yapmalısınız.
+
+174
+00:28:49,279 --> 00:28:54,240
+Settter metotlarını çalıştırmayı, dördüncü adımı çalıştırmadan önce yapmayı unutmalısınız.
+
+175
+00:28:54,640 --> 00:28:56,440
+Bunu da özellikle dikkat etmeniz gerekmekte.
+
+176
+00:28:57,160 --> 00:28:59,000
+Şimdi ilk örneğimizi yapalım.
+
+177
+00:28:59,508 --> 00:29:12,528
+Şöyle bir örnek yapacağız. Maç seyreden birkaç insan simülasyonu yapacağız. Şöyle örneğin, ben deyim dört kişi, siz deyim altı kişi fark etmez. Ve birkaç kişi maç seyrediyorlar.
+
+178
+00:29:12,948 --> 00:29:21,208
+Maç süre derken ara sıra bu insanlar rastgele bir sürede heyecanlı tezahürat yapıyorlar.
+
+179
+00:29:21,347 --> 00:29:25,327
+Haydi bastır falan diye kendi tuttukları takıma tezahürat yapıyorlar.
+
+180
+00:29:25,327 --> 00:29:34,208
+Bir taraftan da ise sıfır ile bin milisaniye arasında geçen bir rastgele sürede heyecanlı tezahüratını yapacak.
+
+181
+00:29:34,516 --> 00:29:43,316
+Ve on kere terserat yaptıktan sonra artık yolculuk maçımız sessiz olarak sevetmeye devam edecek. Böyle bir örnek yapacağız.
+
+182
+00:29:45,655 --> 00:29:54,115
+Şimdi işlerin biraz rast gereğini vurgulamak için bu 0-1000-1000minisaniye arasında bir süreden bahsettim.
+
+183
+00:30:00,000 --> 00:30:27,839
+Bu da çok güzel bir rastgelelik var. O da işte stage'ların hangi işi hangi sırada yapmaya karar vereceğinin kontrolü işte değil ya. Bu nedenle bir belirsizlik zaten var. Fakat matatrading'de özellikle bazı şeyleri rastgele aralıklarla yaparak bu belirsizliği de arttırmaya çalışmak istiyoruz özellikle. Ki bu daha sonraki ders veya haftada göreceğimiz senkronizasyon problemliğini daha da ciddiyle çıkan bir etken olarak kullanıyoruz.
+
+184
+00:30:28,000 --> 00:30:52,680
+O etken olmasa bile yeni de senkronizasyon problemi olabileceğini de göreceğiz. Bunları önermemiz gerekiyor. Ama şimdi bu örneğimizde herhangi bir senkronizasyon problemi yok. Sadece heyecanlanan tarafta ekran bir satır yazı yazacak. Burada birisinin okuyup ötekinin yazdığı bir ortak kaynak sözcüğünüzü değil. O yüzden en basit şekilde bir malted transit bir koda ilk adımımızı atmış olacağız.
+
+185
+00:30:55,539 --> 00:31:09,559
+Evet. Şimdi dört adımdan bahsetmiştim. Yazdığımız kod içerisinde bu dört adımı da vurgulayarak anlatacağım size. Bu rastgele işlemler için Java Yutuf paketinde random sınıf var. Onu kullanıyorum.
+
+186
+00:31:12,304 --> 00:31:17,044
+Taraftarlarımızın adını, sınıfını, Sucker Fan dedik.
+
+187
+00:31:17,384 --> 00:31:19,004
+Tipo on açı seyrediyorlarmış bunlar.
+
+188
+00:31:19,964 --> 00:31:21,544
+Birinci adımımız neydi?
+
+189
+00:31:21,924 --> 00:31:23,824
+Runable arayüzünün gerçeklemesi idi.
+
+190
+00:31:23,824 --> 00:31:30,104
+Bizim paralel olarak çalışacak kodumuzu içeren sınıfın bu runable arayüzünün gerçeklemesiydi.
+
+191
+00:31:30,384 --> 00:31:32,144
+O yüzden implement runable dedim.
+
+192
+00:31:32,596 --> 00:31:46,576
+Şimdi kişiler, taraftarlar 10 kere tesadüf edecek ve bekleme süresi de 0 ile 1000 Nisan yarısında olduğundan bu iki bilgiyi Public Finance Statik Int değişkenlerinde tuttu.
+
+193
+00:31:47,236 --> 00:31:54,556
+Sabit bunlar değişmeyecek. O yüzden sabit olarak tanımlamamda, Public Finance Statik olarak tanımlamamda hiçbir sakınca yok.
+
+194
+00:31:55,380 --> 00:32:03,400
+Fakat her bir taraftan tuttuğu takım ve nasıl tezahat edeceği fark edeceğinden bunları normal rüyalarlar olarak tanımladım.
+
+195
+00:32:04,600 --> 00:32:10,080
+İşte constructor'da bu takım adı ve nasıl tezahat edeceği bilgisini aktardım.
+
+196
+00:32:10,600 --> 00:32:14,260
+Burada bilgiyi constructor üzerinden aktarmış oldum. Genelde de bu yolunu tarz ediyorum.
+
+197
+00:32:15,180 --> 00:32:18,300
+Sonra işte bu public void run metodunu kodlamaya başladım.
+
+198
+00:32:19,604 --> 00:32:21,864
+Bu ikisi birlikte birinci adımımızı oluşturuyordu.
+
+199
+00:32:21,943 --> 00:32:29,483
+ArrayList'in gerçekleyen bir sınıfın bu arayüzüle tanımlı olan public world design metodunun içerisinde kodumuzu yazın.
+
+200
+00:32:29,483 --> 00:32:34,483
+Sıfır ile...
+
+201
+00:32:35,827 --> 00:32:48,428
+bin arasında, yani sıfırdan sabit bir sayı arasına kadar, yani sıfır ile en arasında bir rastgele sayı üretmek için, basitçe random türünden bir nesne oluşturuyorsunuz.
+
+202
+00:32:48,488 --> 00:32:54,147
+Default constant kullanarak da. Sonra da onun next int, next double falan gibi metotları var.
+
+203
+00:32:54,708 --> 00:32:58,087
+Onları kullanarak da rastgele sayınızı hale ediyorsunuz.
+
+204
+00:32:58,988 --> 00:33:00,127
+Ne yapmam gerekiyor?
+
+205
+00:33:00,827 --> 00:33:02,127
+Öncelikle işte...
+
+206
+00:33:02,644 --> 00:33:08,364
+En kadar kaç kare yapacaksa onu for dönmesi içerisinde tezahatını yaptırmak istiyorum.
+
+207
+00:33:08,724 --> 00:33:12,504
+O da tuttuğu takımı ve nasıl tezahat edeceğini ekrana yazdırarak yapacağım.
+
+208
+00:33:12,984 --> 00:33:18,804
+Ondan sonra 0 ile 1000 milisaniye arasında bir rastgele bir değer de beklemesini isteyeceğim.
+
+209
+00:33:19,264 --> 00:33:22,663
+Biz o waiting yapmayacağız dedik, slip metodunu kullanacağız dedik.
+
+210
+00:33:22,963 --> 00:33:26,324
+Bu slip metodu da thread sınıfının statik bir metodudur.
+
+211
+00:33:26,324 --> 00:33:30,463
+Bu nedenle thread sınıfının bu statik slip metodunu kullanıyoruz.
+
+212
+00:33:30,644 --> 00:33:33,824
+Parametro olarak da işte bunu rastgele sayımızı veriyoruz.
+
+213
+00:33:34,304 --> 00:33:37,384
+Bunu for derinç içerisinde step kadar yapıyoruz.
+
+214
+00:33:38,024 --> 00:33:52,104
+İşte az önce de bahsettiğim gibi bu zip metodu interrupted exception oluşturabileceği için, bu da bir check exception olduğu için, for derinçımızı try bunun içerisine alıp interrupted exception'i de catch ediyoruz.
+
+215
+00:33:52,104 --> 00:33:57,484
+Bunun içerisinde de eğer exception gerçekleşirse print stack trace yapıyoruz.
+
+216
+00:33:57,724 --> 00:34:02,104
+Hatırlarsınız geçen hafta bir exception'u ele alacağımız zaman en azından...
+
+217
+00:34:02,304 --> 00:34:04,744
+Bunu yapmaması gerektiğini söylemiştim.
+
+218
+00:34:11,507 --> 00:34:17,167
+İkinci adım, az önce oluşturduğum sınıftan bir nesne oluşturduğum.
+
+219
+00:34:17,507 --> 00:34:23,107
+Tabii bunun için bunu bir başka program içerisinde, main metod içerisinde yapmayı tercih ettim.
+
+220
+00:34:23,467 --> 00:34:26,667
+Aynı sınıfta da yapabilirdim ama ayırmayı tercih ettim.
+
+221
+00:34:26,768 --> 00:34:34,687
+Yani iç mantığını oluşturan sınıfım ile bunu multi-traded olarak çalıştıracak sınıfı ayırmayı tercih ettim.
+
+222
+00:34:37,619 --> 00:34:47,380
+Çalıştırma altyapısı. Bunlar özünde iki farklı görev. O yüzden bu ikisini iki ayrı sınıfta kodlamayı tercih ettim. Nesliye Yönelik'in de sizden bunu ister zaten aslında.
+
+223
+00:34:48,079 --> 00:34:54,559
+Sonunlukla da mümkün olduğu kadar kendi içerisinde en yüksek uyuma sahip parçalara atayım der.
+
+224
+00:34:55,059 --> 00:35:08,640
+Bu nedenle mark sınıfını ayrı yazdım. O mail metodu içerisinde. İleride bir thread nesnem gerekeceği için yukarıda tanımladım. Gerçi aşağıda yazabilirdim de neyse. Çok da fark etmiyor.
+
+225
+00:35:08,640 --> 00:35:22,340
+İşte bir thread nesnesini parametre olarak benim az önce oluşturduğum runnable'lığı gerçekleyen sınıfımda olan nesneyi oluşturdum.
+
+226
+00:35:23,155 --> 00:35:42,735
+Bunun için bir geçir değişken oluşturmak istemediğimden, işte Sakı, Fen, Se diye en başta bir geçir nesne tanımak istemedim. İsteseydim ikinci yılda bunu gösterirdi ve sıray da o olurdu. Ama hani buna hiç ihtiyacım olmadığından bu şekilde yazmayı tercih ettim.
+
+227
+00:35:43,956 --> 00:36:03,695
+Bu nesnemi oluşturup thread constructerine vererekten bir thread nesnesi elde ettim. Bu da üçüncü adımla hazır. Üçüncü adımım. İşte bu threadimi oluşturdum. Ve dördüncü adım olaraktan da işte bu threadin start metodunu kullanarak da threadi koşturmaya başladım.
+
+228
+00:36:04,532 --> 00:36:13,752
+Aynı işi 3 kere daha tekrarladım. Böylece toplamda 4 tane sakın fahni meselesini master tradit olarak çalıştırmaya başladım.
+
+229
+00:36:14,552 --> 00:36:21,351
+Ve bunların rastgele sıralarda tezahürat yaptıklarını göreceğiz. Herhangi bir problem olmadan.
+
+230
+00:36:22,492 --> 00:36:23,891
+Şimdi onu bir çalıştıralım görelim.
+
+231
+00:36:27,668 --> 00:36:29,248
+14 paketindeydi.
+
+232
+00:36:31,648 --> 00:36:32,908
+Alfa abi açmıştım ya.
+
+233
+00:36:38,643 --> 00:36:42,563
+NYP kodlar dökümselerde buradan bakacağız.
+
+234
+00:36:45,143 --> 00:36:46,663
+14A. Evet.
+
+235
+00:36:54,036 --> 00:36:58,136
+Evet, fucker fan sınıfım aynı yansıda gördüğünüz gibi.
+
+236
+00:36:59,136 --> 00:37:00,316
+Kodlanmış durumda.
+
+237
+00:37:02,195 --> 00:37:07,576
+Match sınıfım aynı yansıda gördüğünüz gibi.
+
+238
+00:37:08,936 --> 00:37:10,036
+Şimdi çalıştıralım.
+
+239
+00:37:17,268 --> 00:37:31,228
+Şimdi, önce şunu dediğimi hatırlatalım. Bu threadlerin hangi sırada çalışacağının hiçbir garantisi yok demiştik. Çünkü schedule'ı bunları herhangi bir sırada başlatmaya karar verebiliriz demiştik. Neden ne? Sanki.
+
+240
+00:37:31,731 --> 00:37:53,371
+Önce GS, sonra GS is the champ, sonra FB is number, sonra FB is the best olan nesneleri bu sırayla oluşturup start etmeme rağmen, yani start etmem, belki de bunların bu sırada en azından ilk tezahüratlarının yapma olasılığını arttırır diye düşünebilirsiniz.
+
+241
+00:37:53,371 --> 00:37:57,932
+Çünkü Sakrafenin koduna da baktığımızda önce bağırıyor, sonra bekliyor.
+
+242
+00:37:58,547 --> 00:38:16,607
+Önce bekle sonra bağırırsaydım zaten tamam hepsi rast gibi olacaktı ama önce hepsi bir bağırıyor. O yüzden bunları oluşturma sınavında da ilk başta şu birincisi, sonra ikiincisi, sonra üçüncü, sonra dördüncüsü. Bunlar en azından ilk tezahatlarını bu sırada yaparlar belki diye düşünebilirsiniz ama o bile olmuyor arkadaşlar.
+
+243
+00:38:17,268 --> 00:38:19,687
+Göstereyim, en dikkıra çıkartayım. Bakalım.
+
+244
+00:38:20,275 --> 00:38:48,275
+İkinci oluşturduğum ilk çıktığı verdi. Üçüncü oluşturduğum ikinci çıktığı verdi. Birinci oluşturduğum üçüncü çıktığı verdi. Dördüncü oluşturduğum dördüncü çıktığı verdi. Ha bir tek bu dördüncü aynı olan sırada çalıştı. Şimdi bir daha çalıştırsam bunların sırası farklı olacak. Şimdi bir kenara yazayım ben. Bir yana kağıdım var. Hangi sırada geçti? Önce ikincisi çalıştı. Ondan sonra üçüncüsü çalıştı. Sonra da birincisi. Sonra da...
+
+245
+00:38:48,275 --> 00:38:51,916
+Dördüncü çalıştık. İki, üç, bir, dört. Tekrar çalıştığım.
+
+246
+00:39:00,916 --> 00:39:14,916
+Evet. Bakalım. Bu sefer, ha, birinci olan birinci sırada çalıştı bu sefer. Öyle denk geldi. Sonra FB No. 1 dedi. Üçüncü olan ikinci sırada çalıştı. Sonra GSD Champ...
+
+247
+00:39:15,987 --> 00:39:38,427
+İkinci olan üçüncü sırada çalıştı. Sonra FB is the best. Dördüncü olan yine dördüncü sırada çalıştı. Bakalım dördüncü yine dörde denk geldi. Acaba her zaman öyle mi olacak? Bir iki kere daha dinleyelim bakalım. Şu an odaklanalım. FB is the best'e odaklanalım bakalım. Dördüncü olan ilk seferinde yine dördüncü mü çalışıyor? Bir bakalım.
+
+248
+00:39:43,284 --> 00:39:47,563
+Onk dediğim için 40 kere de toplamda tezvat edildiği için.
+
+249
+00:39:49,264 --> 00:39:54,284
+Evet. Bak, 3. kere tekrar, ne tekrar? 4. olan 4. sırada çalıştı gibi.
+
+250
+00:39:58,284 --> 00:40:00,000
+Evet. Yine 4.
+
+251
+00:40:00,000 --> 00:40:01,680
+Dördüncü olan dördüncü sıra çalıştı.
+
+252
+00:40:02,220 --> 00:40:09,180
+Ama benim bilgisayarımda, benim bilgisayarın doğanımı farklı, işletim sistemi farklı, JDK'sı farklı, İD'si farklı.
+
+253
+00:40:09,619 --> 00:40:12,039
+Sizler de belki daha farklı farklı olabilecektiniz.
+
+254
+00:40:12,780 --> 00:40:13,840
+Bakın bir daha çalıştım.
+
+255
+00:40:13,920 --> 00:40:16,940
+Yine dördüncüsü dördüncü sırada verdi tezvaratı.
+
+256
+00:40:19,519 --> 00:40:21,320
+Yine dördüncü dördüncü sırada verdi.
+
+257
+00:40:21,619 --> 00:40:22,400
+Tamam, pekala.
+
+258
+00:40:24,019 --> 00:40:27,280
+Böyle bir eğilim gördüm. Ama bunu önceden bilemezdim.
+
+259
+00:40:28,280 --> 00:40:36,519
+Ve sonki dönemde bu dersi, bu örneğini yaptığımda yine dördüncü öğren, dördüncü sırada gidecek mi bilmiyordum. Bakalım. Göreceğiz.
+
+260
+00:40:38,675 --> 00:40:42,795
+Evet, şimdi buraya kadar sorusu olan arkadaşım var.
+
+261
+00:40:43,395 --> 00:40:45,996
+Marty Trading'e temel bir işimizi yaptık.
+
+262
+00:40:47,556 --> 00:40:51,476
+Hocam, şurası şu nedenle kafama takılmadı, tekrar anlatılmadı.
+
+263
+00:40:51,815 --> 00:40:55,195
+Anlatır mısınız, dediğiniz yer varsa lütfen buyurun konuşalım.
+
+264
+00:40:55,615 --> 00:40:56,795
+Aradan önce bunları konuşalım.
+
+265
+00:41:09,844 --> 00:41:12,024
+Bu nasıl hafta bile geçebilirim şimdi?
+
+266
+00:41:13,304 --> 00:41:14,784
+One extraction, one scan.
+
+267
+00:41:14,784 --> 00:41:17,524
+Evet, şimdi
+
+268
+00:41:18,175 --> 00:41:44,955
+Sorumuz varsa sorumlu arkadaşlar. Çünkü büyük ihtimalle aradan sonra unit testing konusuna girmek istiyorum. Garantiye almak için. Bugün proje ödeminizin de son testin tarihi gelmeden bu unit testing konusunu anlatmış olmayı garantilemek istiyorum. Bu nedenle büyük olasılıkla aradan sonra o konuya atlayacağım. Sonra multi trading'e geri döneceğim.
+
+269
+00:41:47,059 --> 00:41:54,880
+Hocam, thread'i nasıl başlatıyoruz? Ben tam anlamadım da. Yani hangi metod olacağını falan nasıl çalışıyoruz?
+
+270
+00:41:55,619 --> 00:42:03,059
+Tamam. Hemen hatırlatayım. Dördüncü adımda thread'in start metodunu kullanarak da çalıştırıyoruz.
+
+271
+00:42:03,059 --> 00:42:07,460
+Tekrar göstereyim şimdi. Thread neslimizi tanımladım.
+
+272
+00:42:07,891 --> 00:42:32,011
+Bunu oluştururken Constructor'ına Sakırfen, yani aslında multi-threaded olarak çalışacak nesneyi bir thread ile ilişkilendirdim ve thread'i başlattım. Yapmam gereken şey bu. Sakırfen'i doğrudan başlatamam. Çünkü onun bakın bir start diye bir metodu yok. Göstereyim şimdi mesela. Şöyle bir şey yazayım diyelim ki.
+
+273
+00:42:33,748 --> 00:42:49,248
+Sakafen, Kartal, Eşit, New, Sakafen, D, J, K, Champion oldular, tebrik ederiz.
+
+274
+00:42:51,248 --> 00:42:57,647
+Is the real camp.
+
+275
+00:43:02,452 --> 00:43:15,232
+Şimdi, cartel'ın nesi var? Cartel'ın start metodu yok. Ondan sonra, cartel'ın run metodu var. Ama bu run metodunu doğrudan çağırmak, onun multi-traded olarak çalışması anlamına gelmiyor.
+
+276
+00:43:15,992 --> 00:43:22,032
+Yazalım. Böyle yaptığım için, hatta bir tane daha yapayım.
+
+277
+00:43:30,324 --> 00:43:32,503
+Biz buna da dır diyeyim.
+
+278
+00:43:32,583 --> 00:43:32,903
+Dır.
+
+279
+00:43:33,223 --> 00:43:34,583
+Allah'ım uygulasın.
+
+280
+00:43:35,283 --> 00:43:36,143
+Kartal 2'nin lan.
+
+281
+00:43:36,963 --> 00:43:39,583
+Gerisini şu an bir komand içerisine alayım.
+
+282
+00:43:41,183 --> 00:43:42,324
+Ya da almayayım.
+
+283
+00:43:42,923 --> 00:43:48,683
+Şimdi bu şekilde kodladığım için önce kartal nesnesi tamamen 10 tezahüratım yapacak.
+
+284
+00:43:49,103 --> 00:43:49,803
+O bitirecek.
+
+285
+00:43:50,423 --> 00:43:52,844
+Kartal 2 10'a da tezahüratım yapacak.
+
+286
+00:43:53,884 --> 00:43:56,344
+Daha sonra oluşturacağım 4 tane.
+
+287
+00:43:56,916 --> 00:44:02,396
+Taraftar, işte multi-stradit olarak, paralel olarak şeylerini yürütecekler.
+
+288
+00:44:03,276 --> 00:44:04,696
+Tezahüratlarını yürütecekler.
+
+289
+00:44:11,380 --> 00:44:13,420
+Önce ilk kart arttır zaharatını yapıyor.
+
+290
+00:44:13,920 --> 00:44:30,719
+O 10 tezahürtünü yaptıktan sonra, kaltar 2 ona da tezahürtünü yapıyor. Ondan sonra diğerleri işte multi-trading olarak paralel olarak tezahürtlerini yapıyorlar. Bu nedenle bir tradi ancak start metodu ile başlatırız.
+
+291
+00:44:41,920 --> 00:44:45,880
+nesnemiz olacak. Durum bundan ibaret.
+
+292
+00:44:46,460 --> 00:44:55,299
+Öte yandan bu threadlerin de yanlışlıkla start yerine run metotlarını çalıştırmayın.
+
+293
+00:44:56,139 --> 00:45:05,759
+O zaman az önceki kartalların örneğinde olduğu gibi bu işler multi-traded olarak yürümeyecek de sıralı olarak yürüyecek.
+
+294
+00:45:11,956 --> 00:45:27,076
+İlk oluşturduğum nesne 10 adet tezahatını yapacak. Sonra ikinci oluşturduğum nesne 10 adet tezahatını yapacak. Bu multi-tradit olsaydı şu an kadar çoktan bitecekti bu. Çünkü paralel olarak yapıyorlar işlerini. Evet bakın da hala devam ediyor.
+
+295
+00:45:27,699 --> 00:45:41,420
+Şimdi bitti. Yeni bitti. Bakın kırmızı düğme siyaha geldi. Çalışı bitti. Ama bunu işte start ile yaparsam esas o zaman martı ters olarak çalışıyorlar. Çok daha hızlı çalışacak, bitirecek işimiz.
+
+296
+00:45:45,588 --> 00:45:56,148
+Takı takı takı takı takı ve bitmek üzere bitti. Kırmızı düğme siyah oldu. Bitti. Olay bu.
+
+297
+00:45:59,008 --> 00:46:01,408
+Evet, başka soru varsa buyurun lütfen.
+
+298
+00:46:16,211 --> 00:46:39,692
+Peki. O zaman şimdi Marta Trading'e biraz ara vereceğiz. Dersimize de ara vereceğiz. 10 dakika ara arkadaşlar. 09.50 ile 10.00 arasında aramızı veriyoruz. Aradan dönünce bu projeniz kapsamında unit testi nasıl yapılır onu bir örnek üzerinden anlatıyor olacak. 10 dakika.
+
+299
+00:58:18,068 --> 00:58:42,468
+Evet arkadaşlar, ara sorun sonu aldı. Şimdi dersimizle devam edeceğiz. Notlar da ileriye atlıyorum arkadaşlar. Bu arada ben uykalım, burada işleyeyim. Yoksa sonra atlamayayım. Aynı anda birkaç kişi olunca. Benim multitasking pek multitasking yetenem peki değil. Onu söyleyeyim.
+
+300
+00:58:45,460 --> 00:58:57,220
+209 ile 214. Hatta 215. Evet, 215'e kadar yaptık önce.
+
+301
+00:58:59,960 --> 00:59:01,240
+215.
+
+302
+00:59:03,380 --> 00:59:04,660
+Intro.
+
+303
+00:59:06,660 --> 00:59:09,260
+En temin anlattık.
+
+304
+00:59:09,260 --> 00:59:10,500
+Ondan.
+
+305
+00:59:11,284 --> 00:59:32,543
+Uni testing konusuna gireceğim projeden önce. Çünkü projede bunu yapmanız gerekiyor. Yani 229. Son neydi? 236.
+
+306
+00:59:38,547 --> 00:59:40,107
+Proje
+
+307
+00:59:40,107 --> 00:59:43,307
+Ben önce
+
+308
+00:59:43,307 --> 00:59:46,268
+Bunu almak istedim.
+
+309
+00:59:46,768 --> 00:59:49,707
+Yani şu 13 Mayıs'ta ders yapmadığımız için
+
+310
+00:59:49,707 --> 00:59:52,027
+Böyle bir sırayı atlamam gerekti.
+
+311
+00:59:52,207 --> 00:59:55,627
+Proje tesliminden önce bu unit testing konusunu anlatmak.
+
+312
+00:59:58,367 --> 00:59:59,987
+Sonra ardından
+
+313
+00:59:59,987 --> 01:00:02,927
+Sonraki dersi hakkımız kalırsa
+
+314
+01:00:02,927 --> 01:00:04,627
+Marta Trading'e devam ederiz.
+
+315
+01:00:08,244 --> 01:00:22,956
+Evet. Şimdi konumuz birim sınavaları arkadaşlar. Unit testing demek en küçük programlama biriminin test edilmesi demek. Unit birim demek çünkü biliyorsunuz.
+
+316
+01:00:23,347 --> 01:00:42,728
+Enesne Yönelik Programlamada da bizim en küçük programlama birimimiz sınıflar. Aslında nesneler. Çünkü onlar işte New diye ilklendirip ondan sonra şeve tutturuyoruz, ediyoruz hep yapa geldik. En temel programlama birimimiz o. Tabi onu da kodlayabilmek için sınıf kodu yazmak zorundayız.
+
+317
+01:00:43,699 --> 01:00:49,139
+Bu nedenle unit dediğimizde aslında sınıflar ve nesneler üzerinden düşünüyoruz.
+
+318
+01:00:49,500 --> 01:00:51,039
+Nesne yönelik programlamada.
+
+319
+01:00:53,480 --> 01:01:03,199
+Şu ana kadar yazdığımız bir dolu kodda işi doğru mu yaptık, yanlış mı yaptık bunu anlayabilmek için çeşitli testlerimiz oldu.
+
+320
+01:01:03,956 --> 01:01:10,216
+Mesela işte parça bütün ilişkilerinde, bireçokluğu sahiplik ilişkilerinde filan.
+
+321
+01:01:10,336 --> 01:01:13,576
+Mesela işte otoparka da bekledik, dersi öğrenecek dedik.
+
+322
+01:01:14,096 --> 01:01:17,876
+İşte aynı öğrenci aynı derse iki kere eklenmemelidir dedik.
+
+323
+01:01:18,916 --> 01:01:23,956
+Dersin kapasitesi var dedik, kapasite aşılmışsa yeni öğrenci eklenmemelidir dedik.
+
+324
+01:01:24,336 --> 01:01:27,116
+Bütün bunlara yeni kod yazdık ve bütün bunlara sınadık da.
+
+325
+01:01:28,083 --> 01:01:30,123
+Fakat bunu yaparken neler yaptık?
+
+326
+01:01:30,543 --> 01:01:35,043
+İşte hep bu Boolean Terminal'e sahip metotları çağırdık.
+
+327
+01:01:35,123 --> 01:01:43,304
+O Boolean sonuçlarının true ya da false olmasına göre test doğru ya da yanlış, başarılı ya da değil şeklinde işler yaptık.
+
+328
+01:01:44,115 --> 01:02:01,255
+Ve eğer bir yerde takıldıysak da işte geriye doğru dönüp, ha şunu da geçmiş, şunu da takılmış, neden takılmış falan. Onun açıklamasını yazdık, ettik sonra gittik hatayı bulmaya çalıştık falan. Yani aslında bu arada fark ettirmeden epey bir iş yaptık.
+
+329
+01:02:02,099 --> 01:02:13,899
+Bu işlerin bir kısmının otomatize edilmesi bizim yararımızadır. Çünkü siz niye yazılım mühendisleri dersi aldığınızda ben veya o yaca size söylüyorum olacağız.
+
+330
+01:02:14,459 --> 01:02:20,000
+Yazılımın sınaması zor bir iştir, kolay bir iş değildir. Çünkü yazılım geliştirmenin kendisi kolay bir iş değildir.
+
+331
+01:02:20,439 --> 01:02:28,859
+Zaten doğrusu zor olan bir şeyin sınaması da zor olacaktır. Nedenle işimizi kolaylaştıracak gereçlere çok ihtiyacımız var.
+
+332
+01:02:30,099 --> 01:02:35,479
+Unit Testing Tool'ları da, aslında test bizden fazla sinir yapılıyor.
+
+333
+01:02:35,619 --> 01:02:38,299
+Bu durumun hepsini anlatacağız sizlere.
+
+334
+01:02:38,819 --> 01:02:41,079
+O unit testing ile başlamak istiyoruz.
+
+335
+01:02:41,079 --> 01:02:44,079
+Şimdi...
+
+336
+01:02:45,331 --> 01:03:00,411
+Daha önceki haftada yaptığımız test işlemlerinin belli bir kısmını otomatize edecek ve bu testleri rahatlıkla, hızla çalıştırıp sonuçlarını anlayabileceğimiz bir gereç olarak da X-Unit ailesi var.
+
+337
+01:03:00,891 --> 01:03:05,331
+Buradaki X yerine hangi programlama dilini kullanıyorsanız onu koyuyorsunuz.
+
+338
+01:03:05,331 --> 01:03:07,751
+Java için J-Unit ailesi var.
+
+339
+01:03:09,971 --> 01:03:12,371
+C-S-Unit.
+
+340
+01:03:13,331 --> 01:03:27,231
+Framework dedim bunlara. Java için C unit framework var. C-chart için CS unit framework var. Diğer diller için de örneğin C için C unit var mı? Vardır herhalde. O kadar bakmadım. Nesmiye Yönel'inle ilgilendiğim için.
+
+341
+01:03:28,692 --> 01:03:41,312
+Şimdi sizlere de bu ders kapsamında C yönetili nasıl bilim sınavları tasarlayacağınızı ve kodlayacağınızı ve sonuçlarını değerlendirip yorumlayacağınızı göreceğiz.
+
+342
+01:03:42,068 --> 01:04:07,928
+Çünkü şu an kadar iflaslarla, az önce bahsettiğim üzere bunları yaptık ettik. Bu işleri tekrar tekrar tekrar yapacağımıza, bu altyapıyı her sınama amaçlı kodumuzda tekrarlayacağımıza, bu işleri zaten bize hazır olarak sunan bir framework'ın üstünde biz esas testlerimizi tasarlamaya odaklansak bize yarar sağlayacaktır deyip bunu görmeye başlıyoruz şimdi.
+
+343
+01:04:11,284 --> 01:04:18,724
+Teşekkür ederim. Çalışma değişikliği ve çok önemli yetenekler getiren iki temel sürümü var.
+
+344
+01:04:19,668 --> 01:04:39,927
+Birincisi 3x sürümü, ikincisi 4x sürümü. Şu an 5. sürümü çıktı hatta 6. çıktı mı bilmiyorum bakmak lazım. Ama sistem olarak en gerekli birim sınavısı işlemlerini 3x sürümünü yapabiliyoruz. 4x sürümünde de işin içerisine exception diye gelecek.
+
+345
+01:04:40,400 --> 01:05:03,259
+Biz de bu derste exceptionler yazmayı da gördük. Bu nedenle bizim temel olarak 4x sürümünü öğrenmemiz gerekiyor. Geriye doğru uyumluluk da var. O yüzden adım adımda ilerlemek için önce 3x sürümünün kullanımını göstereceğim. Ardından 4x sürümünün kullanımını göstereceğim. Sizin kullanıcınızda 4x sürümünü kullanmanız daha yararlı olacaktır diye düşünüyorum.
+
+346
+01:05:07,827 --> 01:05:24,748
+Altyapımız JUnit Framework paketinde yapılıyor. Burada yaran testge sınıfını kullanacağız biz. Ve yine o pakette yaran assert sınıfının çeşitli statik metotları var. Public order'unu göstermişim sınıfçlamasını ama statik olduklarını göstermemişim.
+
+347
+01:05:24,748 --> 01:05:28,548
+Altta bir şey kusura bakmayın. Şimdi sözle söylüyorum. Bunları kullanıyor olacağız.
+
+348
+01:05:30,132 --> 01:05:37,211
+My Pickleç paketi bizim iş mantığımızı içeren sınıfların barındığı paket diyelim.
+
+349
+01:05:38,231 --> 01:05:42,371
+Ve bizim diyelim ki işte upclass 1, upclass 2 gibi sınıflarımız var.
+
+350
+01:05:43,032 --> 01:05:44,612
+Ve bunların test edeceğiz.
+
+351
+01:05:44,831 --> 01:05:49,572
+Çeşitli sorumluluklarını doğru yerine getirip getiremediğini test etmek istiyoruz.
+
+352
+01:05:49,572 --> 01:05:50,692
+Bunu yapmak için.
+
+353
+01:05:51,315 --> 01:05:58,576
+Örneğin, upclass 1'in test kezlerini, test upclass 1 adını verdiğimiz bir sınıfta kodlayacağız.
+
+354
+01:05:59,016 --> 01:06:05,096
+Upclass 2'nin test kezlerini, test upclass 2 adını verdiğimiz bir sınıfta kodlayacağız.
+
+355
+01:06:05,615 --> 01:06:08,295
+Bu şekilde test bilmem ne sınıflarımızı oluşturacağız.
+
+356
+01:06:08,835 --> 01:06:14,456
+Bu sınıfların adının test ile başlaması, J ünitin 3x sürümünde bir zorunluluktur.
+
+357
+01:06:17,492 --> 01:06:27,672
+Peki, bir test sınıfı içerisinde o iş mantığı sınıfıyla ilgili aslında birden fazla sınama işlemi yapacağız.
+
+358
+01:06:28,072 --> 01:06:30,771
+Çünkü bir sınıfın birden fazla sorumluluğu olabilecek.
+
+359
+01:06:31,012 --> 01:06:34,251
+Tabi bu sınıf bu sorumluluğun birbiriyle uyumlu olmasını da isteriz.
+
+360
+01:06:34,675 --> 01:06:48,496
+ise, şimdi bütün bu sorunluklarını test edeceğimiz, hani test xxx, test yy, test zzz gibi adlandırdığımız test ile başlayan, adı test ile başlayan metotlarımız olacak.
+
+361
+01:06:50,291 --> 01:06:58,612
+Bu adı test ile başlayan her bir metodumuz bizim birer test case'imiz, test vakamız, test senaryomuz olacak.
+
+362
+01:06:59,592 --> 01:07:04,851
+Aynı sınıfla ilgili test senaryolarını aynı test ile başlayan sınıfta biriktiriyoruz.
+
+363
+01:07:05,331 --> 01:07:14,331
+Daha sonra bu test sınıflarımızı da ayrı ayrı çalıştırabileceğimiz gibi bunlardan birkaç tanesini bir suite altında da birleştirebiliyoruz.
+
+364
+01:07:15,411 --> 01:07:26,351
+Böyle bir test ol veya test bilmem nelerden geleceğimiz bir suite içerisinde test up class ve test up class 2 bir araya getirip ikisini birden tek adımla başlatma gibi işlemle yapabiliriz.
+
+365
+01:07:26,351 --> 01:07:32,071
+Peki ama biz bu test sınıflarımızı oluştururken mutlaka işte
+
+366
+01:07:32,463 --> 01:07:39,044
+JUnit paketindeki, framework paketindeki test case sınıfında kalıtımla oluşturmamız gerekiyor.
+
+367
+01:07:39,684 --> 01:07:45,604
+Bunların birer birim sınaması olarak algılanıp yürütülebilmesi için bu kalıtım ilişkisini de kurmamız gerekiyor.
+
+368
+01:07:47,004 --> 01:07:51,084
+Bu test case sınıfının setup adlı protected bir metodu var.
+
+369
+01:07:51,744 --> 01:07:53,384
+Bunun özel bir görevi var.
+
+370
+01:07:53,384 --> 01:07:59,384
+Şimdi bir şeyi test etmeden önce onun ilgilendirilmesi,
+
+371
+01:07:59,539 --> 01:08:08,539
+İlişkide olduğu nesneler ve bu nesne arasında ilişkilerin kurulması bir bakıma sahnenin hazırlanması gerekmekte.
+
+372
+01:08:09,139 --> 01:08:25,380
+Evvelki örneklerimizde işlemi ders oluşturduk, öğrenciler oluşturduk ve öğrenci ders ekledik. Ondan sonra işte bu eklenebiliyor mu, bu eklenemiyor mu, bu kapasite dolmuşsa eklemeyememeliyiz, oldu mu bu, olmadı mı gibi işlemleri ondan sonra yapıyoruz.
+
+373
+01:08:25,479 --> 01:08:34,420
+Yani önce bir hazırlık yapıyoruz, test edeceğimiz varlıkları en azından oluşturup ve bunların arasındaki bazı ilişkileri kurup ondan sonra test işlemlerimize başlıyorduk.
+
+374
+01:08:34,547 --> 01:08:55,368
+İşte setup metodu buna yarıyor. Test edilecek varlıkları en azından ilklendirmeye ve bütün test bilmem ne metotlarında yürütülecek test kodlarının ön hazırlarının, ortak ön hazırlarının yapılması setup metodunun içerisinde yürütüyoruz. Oraya kodluyoruz.
+
+375
+01:08:55,731 --> 01:09:02,971
+Her bir test bilmem ne metodu çalışmadan önce setup metodunu Chained Framework'ı otomatik olarak çalıştırmış oluyor.
+
+376
+01:09:03,811 --> 01:09:06,391
+Bu nedenle setup metodu da önemli bizim için.
+
+377
+01:09:06,391 --> 01:09:19,631
+Ve son olarak bu test bilmem ne metodları içerisinde acaba testimiz başarılı mı başarısız mı onu ölçebilmek için bu assert metodlarından birini kullanacağız.
+
+378
+01:09:21,332 --> 01:09:38,432
+Şimdi normalde bilim sineması veya bizim daha evvel yaptığımız testlerimizde şöyle bildiğimiz söz konusu. Bir elde ettiğimiz sonuç var, bir de beklenen sonuç var. Elde ettiğimiz sonuçla beklenen sonuç birbirine eşlikse genelde testimiz başarılıdır diyoruz.
+
+379
+01:09:38,996 --> 01:09:52,336
+İşte o işi yapmak için assert equals diye bir metot var. Parametri olarak iki tane object nesnesi alıyor. Bunlar birbirine eşitse o zaman o test case başarılıdır anlamına geliyor. O şekilde yorumlanıyor.
+
+380
+01:09:53,175 --> 01:10:03,435
+Bazen de iki neslinin birbirine eşit olmaması durumunda test başarılı olabilir diye ihtiyacımız olabiliyor. Onun için de assert not equals metot var.
+
+381
+01:10:05,300 --> 01:10:18,180
+Sonra, işte belli bir boolean ifade true ise, önce işlem yaptık, sonucu başarılı, o zaman test de başarılı diyebilmemiz için, böyle bir senaryo kodlarımız için, abstract true metodunu kullanıyoruz.
+
+382
+01:10:19,100 --> 01:10:23,220
+Ters mantığı için ise, abstract false metodunu kullanıyoruz.
+
+383
+01:10:24,180 --> 01:10:35,300
+Bazen de bir metodun geri döndürdüğü bir nesnenin null olup olmadığını kontrol ederekten testimiz, test scenario'umuzu onun üzerine kurduğumuz haller de oldu.
+
+384
+01:10:35,920 --> 01:10:40,200
+Onları da assert null veya assert not null metodları üzerinden yapıyoruz.
+
+385
+01:10:41,000 --> 01:10:43,520
+Assert null metodu bir object alıyor parametri olarak.
+
+386
+01:10:43,520 --> 01:10:46,520
+Eğer o aldığı nesne eğer null ise...
+
+387
+01:10:46,739 --> 01:10:52,619
+O zaman test başarılıdır şeklinde bir senaryo kuracaksak bu assert null metodunu kullanıyoruz.
+
+388
+01:10:53,119 --> 01:10:56,819
+Ters mantığı içinse assert not null metodunu kullanıyoruz.
+
+389
+01:10:57,920 --> 01:10:58,300
+Yorum bu.
+
+390
+01:11:00,243 --> 01:11:17,804
+Şimdi ardından 4x sürümüne geçiyoruz. 4x sürümü 3x ile uyumlu. Fakat ek olarak sadece test sınıflarının adını test ile başlatmak, test metotlarının adını küçük tl test ile başlatmak zorunluluğlar bizi kurtarıyor.
+
+391
+01:11:17,804 --> 01:11:28,224
+Artık bize annotation üzerinden çalışma yeteneği sağlıyor ve exception oluşturulup oluşturulmamasını da sınama yeteneğini.
+
+392
+01:11:28,243 --> 01:11:31,943
+Bu iki önemli yeniliği getiriyor bize.
+
+393
+01:11:32,903 --> 01:11:41,224
+Şimdi artık işte, ha bir de artık test case sınıflarınızı, ya sizin test sınıflarınızı test case sınıfından kalıtımla türetmenize de gerek yok artık.
+
+394
+01:11:42,063 --> 01:11:48,563
+Ha geriye doğduğum bir kullanılıyor, kullanılıyor, sağlanıyor, isterseniz yine yapabilirsiniz ama gerek yok.
+
+395
+01:11:48,563 --> 01:11:55,063
+Dedik ya, tek bir kalıtım hakkımız var. Onu da test altyapısını oluşturmak için kullanmanızda bir sakınca var mı?
+
+396
+01:11:56,243 --> 01:12:10,923
+O yüzden kullanmanızda sakınca yok ama yine bir nedenle başka bir nedenle ihtiyacınız varsa o kalıtım hakkına test case sınıfından türetmek için harcamak zorunda değilsiniz artık o kalıtım hakkınızda.
+
+397
+01:12:11,963 --> 01:12:17,183
+Test case metotlarınızın da artık adı test ile başlaması gerekmiyor.
+
+398
+01:12:17,876 --> 01:12:24,935
+Fakat onun yerine her bir test metodunun başına addTestUnnotation'ı koyarsanız bu yeterli oluyor.
+
+399
+01:12:27,891 --> 01:12:50,692
+Fakat bence yani bir metodun ne işe yaradığını adından açıkça anlayabilmek bence önemli bir olgudur. Bu nedenle ben hala 4x kullansam bile test metotlarının adlarını, test senaryolarımı oluşturacak test metotlarının adını yine test kelimesiyle başlattığı severim. Tercih ederim.
+
+400
+01:12:51,359 --> 01:12:58,819
+Ama artık isterseniz böyle yapak zorunda değilsiniz. Başına add test annotation koymanız yeterli olacak.
+
+401
+01:12:59,796 --> 01:13:07,316
+Setup metodu yerine de, madem test gezden kraltımla türetmek zorunda değilsiniz, peki setup metodunu nasıl yapacağız?
+
+402
+01:13:07,316 --> 01:13:16,316
+O zaman setup amaçlı hazırladığınız metodun başına add before annotation'ını koyarsanız, o zaman da setup metodun altıyla çalışıyor.
+
+403
+01:13:17,096 --> 01:13:25,316
+Yani işte test öncesi hazırlıkların yapıldığı ve her bir test metodunu çalıştırmadan önce otomatik olarak tekrar çalıştırılan metoddu.
+
+404
+01:13:26,275 --> 01:13:27,796
+Bu şekilde add before annotation.
+
+405
+01:13:27,796 --> 01:13:30,256
+rotation'ı koyaraktan işaretleyebiliyorsunuz.
+
+406
+01:13:31,539 --> 01:13:36,860
+Ve son yenilik olarak, işte exception'lar nasıl destekleniyor, onu söyleyeyim.
+
+407
+01:13:37,380 --> 01:13:41,960
+Şimdi projelerinizde exception oluşturuluyordu diye hatırlıyorum.
+
+408
+01:13:42,079 --> 01:13:42,979
+Mesela bakar döneriz.
+
+409
+01:13:43,340 --> 01:13:50,219
+Eğer bir testten başlangıç olmak için exception oluşturulması gerekiyorsa, bunu hiç ikisi de yapamıyorsunuz.
+
+410
+01:13:50,260 --> 01:13:53,520
+Çünkü exception ister check de olsun, ister uncheck de olsun.
+
+411
+01:13:53,520 --> 01:13:57,239
+Bir kere ortaya çıkmışsa programın ölçü kalıyor, kesiliyor, bitiyor.
+
+412
+01:13:58,515 --> 01:14:07,136
+Ama siz test ediyorsunuz, bunu test amaçlı oluşturduğunuz, bu exception'i ondan sonra devam etsin istiyorsunuz. Bir sonraki test izleye devam etmek için istiyorsunuz.
+
+413
+01:14:07,675 --> 01:14:07,735
+Bir sonraki test izleye devam etmek için istiyorsunuz. Bir sonraki test izleye devam etmekted.
+
+414
+01:14:07,735 --> 01:14:12,815
+Bir sonraki test izleye devam etmekted. Bunu yapamıyordunuz. Dört siz de yapabiliyorsunuz. Yapmanızın koşulu da şu.
+
+415
+01:14:13,475 --> 01:14:23,296
+Add test annotation'ı bu sefer bir parametre veriyorsunuz. Expected eşittir deyip test edeceğiniz exception'in adı neyse onu yazıp nokta class diyorsunuz.
+
+416
+01:14:23,764 --> 01:14:33,224
+Böyle olunca, işte örneğin, bu exception'i test edeceğimiz metodu, herkese bu çektirse mutlaka o exception'i demeniz gerekiyor, gerekecektir.
+
+417
+01:14:33,804 --> 01:14:37,724
+İç yerin içinde de işte o exception'i oluşturabilecek metodlarınızı yazarsınız.
+
+418
+01:14:38,144 --> 01:14:41,363
+Burada bir assert metodu kullanmanıza gerek yoktur.
+
+419
+01:14:41,363 --> 01:14:47,164
+Sadece o metot içerisinde o exception'i fırlatılmışsa o zaman o birim sınaması başarılıdır.
+
+420
+01:14:47,484 --> 01:14:51,644
+Aksi taktirde başarısızdır şeklinde bir çalışma söz konusu.
+
+421
+01:14:51,764 --> 01:15:04,304
+Peki. Şimdi altyapıyı anladık. Altyapı bu kadar. Şimdi bir örnek üzerinde bu altyapıyı bir deneyelim. Yani test edecek bir şeye ihtiyacımız var.
+
+422
+01:15:04,304 --> 01:15:17,363
+Bir şeyimiz, sol taraftaki sınıfçamız üzerinden yaptığımız tasarımı test edeceğiz. Ben bu örneği Multifowler'ın Refactoring kitabından aldım.
+
+423
+01:15:17,619 --> 01:15:32,119
+Yüksek lisansta nesneleri tasarım ve modelleme dersi veriyorum. Bu ders kapsamında ilk 10 hafta kadar tasarımın nasıl doğru yapılacağını anlatan tasarım kalıpları üzerinden dersi anlatıyorum.
+
+424
+01:15:32,119 --> 01:15:42,119
+Son iki haftasında kadar da nesne yönelimin yanlış anlaşılması nedeniyle yapılabilecek.
+
+425
+01:15:42,479 --> 01:15:50,619
+Tasarım kusurlarının neler olduğunu, bunlara kod simal deniliyor, antipatran da denilebilir çapına göre.
+
+426
+01:15:51,028 --> 01:16:02,028
+Ve bu kusurların nasıl tanınacağının ve bu kusurların nasıl giderileceğinin anlatıldığı bir içeriğimde var.
+
+427
+01:16:02,247 --> 01:16:05,608
+O içeriği de işte Martin Fowler'ın bu kitabından almış durumdayım.
+
+428
+01:16:05,948 --> 01:16:14,247
+Oradan aldığım içeriğim bir kısmıyla hızlıca bu dersin notlarına birim sunaması içeriğini ekleyebilmiş oldum.
+
+429
+01:16:15,087 --> 01:16:17,868
+Sunayacağımız yapı sol taraftaki gibi bir yapı.
+
+430
+01:16:18,323 --> 01:16:28,203
+Örnek, bir video kaset kiralama örneği. Bizim müşterilerimiz çeşitli filmleri, mumileri belirli süreni kiralıyorlar.
+
+431
+01:16:29,076 --> 01:16:33,275
+Her bir kiralama işlemi bir rental nesnesi üzerinden tutuluyor.
+
+432
+01:16:33,656 --> 01:16:36,556
+Bir müşterinin en adet kira kaydı vardır.
+
+433
+01:16:36,956 --> 01:16:39,656
+Bir kira kaydı ise bir film ile ilişkilidir.
+
+434
+01:16:40,115 --> 01:16:41,456
+Şeklinde bir tasarım bu.
+
+435
+01:16:42,176 --> 01:16:43,435
+Farklı filmlerim var.
+
+436
+01:16:43,935 --> 01:16:46,015
+Sistemde üç tür film tanımlı olacak.
+
+437
+01:16:46,476 --> 01:16:48,056
+Birincisi normal filmler.
+
+438
+01:16:48,416 --> 01:16:51,636
+İkincisi New The Lease, yeni vizyona giren filmler.
+
+439
+01:16:51,956 --> 01:16:53,256
+Üçüncüsü çocuk filmleri.
+
+440
+01:16:53,648 --> 01:16:59,768
+Bunların farklı farklı sürelerde, farklı farklı kiralanmalarının farklı farklı bedelleri oluyor.
+
+441
+01:16:59,768 --> 01:17:07,908
+Ve yine aynı şekilde farklı türlü filmlerin farklı türlü sürelerde kiralanmalarından kazanacağınız bonus puanlar da oluyor.
+
+442
+01:17:08,468 --> 01:17:19,128
+Şimdi böyle bir programı tasarladığımda aslında farklı türlü filmler söz konusu olduğu için ben tasarımımı aslında bu kadar da bırakmazdım.
+
+443
+01:17:19,347 --> 01:17:32,327
+MUVİ sınıfını soyut bir sınıf olarak düşünüp, soyut bir üst sınıf olarak düşünüp, bunu somut alt sınıfları olarak bu New Release, Regular Release veya Children's sınıflarını o şekilde tasarlardı.
+
+444
+01:17:32,847 --> 01:17:38,628
+Ama bu örnekte bir fiyat kodu şeklinde tanımlanmış bu bilgi. Bu çok da doğru bir tasarım değil.
+
+445
+01:17:39,220 --> 01:17:50,800
+Ama buradaki tasarımın çok doğru olmaması da normal. Çünkü refactoring adı üstünde tasarım kusurlarına sahip bir kodun adım adım iyileştirme ve daha iyi bir tasarıma yönlendirilmesidir.
+
+446
+01:17:52,440 --> 01:17:59,220
+Bu aldığım tasarım için en başında çok daha kötü bir tasarım söz konusuydu.
+
+447
+01:18:01,779 --> 01:18:06,840
+12 adımdan falan geçirerekten daha iyileştiriyoruz o örnek kapsamında.
+
+448
+01:18:07,239 --> 01:18:09,199
+Bu aldığım aradaki 9. adım falan.
+
+449
+01:18:10,279 --> 01:18:12,159
+Yani öncesi daha da kötüydü.
+
+450
+01:18:12,159 --> 01:18:15,299
+Yine bu epey derli toplu ve iyi bir tasarım sayılır.
+
+451
+01:18:15,639 --> 01:18:20,379
+İşte tek kestisne orada bir kalıtı ve çok biçimliğini kullanmak daha doğru olacaktı.
+
+452
+01:18:21,100 --> 01:18:23,659
+Oraya kadar getirmenin buradaki halini aldım.
+
+453
+01:18:25,011 --> 01:18:27,611
+Ve bu metotları biraz inceleyelim.
+
+454
+01:18:28,251 --> 01:18:30,992
+Custom'ın, sınıfının statement diye bir metodu var.
+
+455
+01:18:31,431 --> 01:18:33,891
+Temel olarak kurucalayacağımız metot bu olacak.
+
+456
+01:18:34,711 --> 01:18:43,771
+İşte bu müşteri hangi filmini aldı, kaç günlük kiraladı, bunun için bu kiralama işleminden olan borcu ne?
+
+457
+01:18:44,212 --> 01:18:57,112
+Bu satır bilgilerini her yaptığı kiralama işlemi için yazdıktan sonra toplam bedel bu, toplam kazandığınız bonus da bu şeklinde bir makbuz oluşturacak bir metot bu. Statement metodu.
+
+458
+01:18:57,692 --> 01:19:04,811
+Aslında geriye işleri string döndürüyor olacak. Bu makbuzun içeriğini string'e biriktirip geri döndürüyor olacak.
+
+459
+01:19:05,300 --> 01:19:17,840
+Onun dışında işte burada çeşitli art görevler olarak işte toplam borç neymiş onun hesaplanması ve toplam kazanılan borç neymiş onun hesaplanması için de iki tane yardımcı metodum var.
+
+460
+01:19:19,119 --> 01:19:28,940
+Tabii ki işte bu bir çoklu sahiplik ilişkisi olduğu için elbette kurulun içerisinde işte customla kira kaydı ekleme metodum da olacak falan. Göreceğiz.
+
+461
+01:19:29,492 --> 01:19:31,632
+Rental sınıfından bahsedeyim.
+
+462
+01:19:31,952 --> 01:19:35,852
+İşte kaç gün filmin kaç gün kiralandığı bilgisi bu rental sınıfında tutuluyor.
+
+463
+01:19:35,852 --> 01:19:43,192
+Ve tabii ki rental'dan movieye bir de bir sahiplik olduğu için gizli bilgi olaraktan kodda göreceğiz.
+
+464
+01:19:43,532 --> 01:19:47,592
+Hangi movie ile ilişkili olduğu da tabii üye alan olarak yararlılacak kodu açtığımızda.
+
+465
+01:19:48,572 --> 01:19:54,852
+Bu kira işlemi için, bu ilişkili olan filmin o kadar gün kiralanması için
+
+466
+01:19:55,347 --> 01:20:03,207
+Kral anasından doğan borç neymiş? Bunun hesaplandığı get charge metodu var. Yine o işlemden ortaya çıkan bonusun hesaplandığı.
+
+467
+01:20:03,536 --> 01:20:05,355
+Get bonus metodun var.
+
+468
+01:20:05,736 --> 01:20:07,676
+Ve işte kiraranlar filmin adı neymiş?
+
+469
+01:20:08,036 --> 01:20:10,076
+Onun için de bir getter metodun var.
+
+470
+01:20:10,336 --> 01:20:11,515
+Nedenini birazdan açıklayacağım.
+
+471
+01:20:11,615 --> 01:20:13,376
+Neden öyle bir metoda ihtiyacım olduğunu.
+
+472
+01:20:13,376 --> 01:20:19,716
+Yani direkt movie için getter metodu koymadım da, movie'nin başlığı için bu metodu koydum.
+
+473
+01:20:20,096 --> 01:20:30,256
+Çünkü hani dedik ya, statement metodunda yazacağız şu filmi aldığın şu kadar bedelle, şu kadar gün kiraladığın bilgisini yazabilmek için o filmin adına ihtiyacımız var.
+
+474
+01:20:30,695 --> 01:20:31,376
+Adı yeterli.
+
+475
+01:20:31,536 --> 01:20:33,916
+O yüzden onun için bir Get Movie Title.
+
+476
+01:20:34,368 --> 01:20:39,448
+Metodlar ekledim. Bu bana neyi kazandı? Ayrıca birazdan göstereceğim.
+
+477
+01:20:39,927 --> 01:20:45,268
+Bu yasınıfında işte price kutu var ve get şarjı ve get bonus metotları da tanımlı.
+
+478
+01:20:45,688 --> 01:20:48,868
+Bir film kendisinin kaç gün boyunca kiralandığını bilmiyor.
+
+479
+01:20:49,087 --> 01:20:53,007
+Bunu bilebilmesi için movie'den rentra da dolu bir ok çizimimiz.
+
+480
+01:20:53,128 --> 01:20:56,768
+Yani çift yönlü sahip ilişkisi oluşturmamız gerekiyordu.
+
+481
+01:20:56,768 --> 01:21:02,368
+Ama daha ilk en baştaki araba insan örneğinden gördüğünüz üzere çift yönlü.
+
+482
+01:21:02,368 --> 01:21:12,587
+İlişkilerin tutarı kontrolünün sağlanması ve sürdürülmesi için yazmamız gereken kod, yapmanız gereken çalışmalar daha karmaşık nihayetinde doğasın geriye.
+
+483
+01:21:12,988 --> 01:21:17,528
+Bu nedenle o ters ürünle ilişkiye ihtiyacımız yoksa, şu kodlamıyorduk.
+
+484
+01:21:18,507 --> 01:21:20,028
+Burada da çok fazla ihtiyacımız yok.
+
+485
+01:21:20,548 --> 01:21:29,927
+O geriye doğru diğer, yani movieden rental olan ilişki kurmaktansa, movieye deriz ki, rental der ki movieye, kardeşim sen şu kadar gün kiralandın.
+
+486
+01:21:30,420 --> 01:21:36,960
+Bu bilgiyi get charge metoduna verir. Bu kadar gün kiralandığın için beden ne olacak? Bunu hesapla bana söyle der.
+
+487
+01:21:37,479 --> 01:21:46,079
+Onun için get charge metodunu kodudum. Aynı işin benzer işin bonus için yapılmasın amacıyla da get bonus metodun var. Böyle bir kodum var.
+
+488
+01:21:46,800 --> 01:21:57,760
+Sağ tarafta da bu statement metodunun sequence diagramını görüyorsunuz. Bu sequence diagramını çizdim çünkü şu get monetarının amacını da biraz anlatacağım.
+
+489
+01:21:58,579 --> 01:22:12,000
+Şimdi bu şemaya şöyle bir baktığınızda, daha hiç metotları falan filan okumadığınızda, customer'dan venture'a metot çağrıları, venture'dan da murya metot çağrıları olduğunu görüyorsunuz.
+
+490
+01:22:12,239 --> 01:22:15,579
+Hiç customer'dan murya doğrudan bir metot çağrısı yok.
+
+491
+01:22:17,039 --> 01:22:21,279
+Bu bize ne sağlamış oldu? Bu bize katmanlı bir yapı sağlamış oldu.
+
+492
+01:22:22,036 --> 01:22:25,056
+Customer ve Rental arasında ilişki var.
+
+493
+01:22:25,195 --> 01:22:28,956
+Hep Customer ve hep Customer da Rental'ın metotlarını çağırıyor.
+
+494
+01:22:29,316 --> 01:22:31,456
+Rental ile de Movie arasında sahip bir ilişkisi var.
+
+495
+01:22:31,695 --> 01:22:33,836
+Hep Rental da Movie'nin metotlarını çağırıyor.
+
+496
+01:22:34,615 --> 01:22:45,056
+Customer'ın Statement'ı içerisinde belli bir kira işlemi için şu film şu kadar gün kiralandı bilgisini yazarken Statement metodu doğrudan Movie nesmesine erişseydi,
+
+497
+01:22:45,615 --> 01:22:49,836
+o zaman aslında üyeme aşamasında gösterilmemiş olmakla...
+
+498
+01:22:50,036 --> 01:23:03,195
+Eğer ilişki öyle olsaydı, customer'dan UMLN'ye doğru bu kullanma ilişkisi sahiplik olmadan kullanma ilişkisi de olmak durumunda oluyordu.
+
+499
+01:23:03,731 --> 01:23:28,952
+Çünkü artık custom'ın kodunda movie sınıfında bir bağımlılık söz konusu oluyordu. Onun get name metodu çağırılacaktı. Ama zaten rental movie'e bağlı olduğu için custom'ı bunu doğrudan movie'e sormaktansa dolaylı olarak rental üzerinden bu string'i aldığı için custom'ı ile movie arasında hiçbir ilişki kurulmamış oluyor.
+
+500
+01:23:31,731 --> 01:23:35,912
+Azaltıyor olması gerektiği iyi bir etki şeklinde.
+
+501
+01:23:36,252 --> 01:23:40,931
+Bu bağlaşım uyum meselelerini daha sonra yazın mühendisliği konusunda falan konuşacağız.
+
+502
+01:23:40,931 --> 01:23:48,971
+Ama iyi bir nesneye yönelik tasarımda bağlaşımın düşük olması, yani gereksiz ilişkilerden kaçınılması demek oluyor bu.
+
+503
+01:23:49,412 --> 01:23:50,931
+Ve uyumun da yüksek olması.
+
+504
+01:23:51,131 --> 01:23:59,671
+Yani bir sınıfa atanan sorumlulukların birbiriyle mümkün olduğu kadar yakın veya aynı problem alanında.
+
+505
+01:23:59,731 --> 01:24:17,811
+olması gerektiği bu da uyum ilkesidir. Bu iki ilke çok önemli ilkelerdir. İyi bir tasarım yapmak için. Bu ders kapsamında yaptığımız bütün örnekler dediği genelde tasarımı size fark ettirmeden olması gerektiği gibi kuralaktan gittik.
+
+506
+01:24:20,692 --> 01:24:24,452
+Durum bu. Şimdi şunları bir temizleyelim.
+
+507
+01:24:25,391 --> 01:24:26,032
+Şuna kapatayım.
+
+508
+01:24:27,539 --> 01:24:32,840
+Yapımız bu. Şimdi bir de kaynak kod serisinde inceleyelim neler yapıldığını.
+
+509
+01:24:43,828 --> 01:24:44,748
+eklemedim mi acaba?
+
+510
+01:24:48,128 --> 01:24:48,808
+Evet.
+
+511
+01:24:49,828 --> 01:24:52,608
+Ya da belki test diye falan eklemiş olabilir miyim?
+
+512
+01:24:54,208 --> 01:24:54,888
+Eklememişim.
+
+513
+01:24:55,408 --> 01:24:57,728
+Ha ama aynı şeyi yazım mühendisliği dersinden verdim.
+
+514
+01:24:57,808 --> 01:24:59,348
+Proje için de istediğimden.
+
+515
+01:24:59,548 --> 01:25:01,308
+O yüzden şurada da yer alıyorlar.
+
+516
+01:25:01,728 --> 01:25:03,448
+Ama bunu ona da eklesem iyi olur.
+
+517
+01:25:03,448 --> 01:25:04,368
+Her ne kadar.
+
+518
+01:25:06,131 --> 01:25:16,891
+Bu altyapı yeterli olsa da belki kaynak kodu da tekrar görmek isteyebilirsiniz. O yüzden bunu da paylaştığım kodlar arasına ekleyip göndereyim.
+
+519
+01:25:18,391 --> 01:25:28,931
+N-Y-P-Gönü'nit örnek kodunu da paylaştığım kodlar arasında ekleyip göndereyim.
+
+520
+01:25:31,511 --> 01:25:32,731
+Oradan bakalım.
+
+521
+01:25:38,931 --> 01:25:45,091
+İşte custom sınıfında, müşterinin ismi var.
+
+522
+01:25:45,211 --> 01:25:46,711
+Bu arada şunu da açıklayayım.
+
+523
+01:25:47,471 --> 01:25:50,811
+Üye alanları underscore ile adlandırmaya başladım.
+
+524
+01:25:51,631 --> 01:25:52,471
+Adlandırılmış.
+
+525
+01:25:53,411 --> 01:25:56,871
+Bunun açıklaması ve anlamı, hikmeti, meali şudur.
+
+526
+01:25:58,036 --> 01:26:08,032
+Özellikle şeyle yapıstart programlama yaparken, abstractlardaki alanları...
+
+527
+01:26:08,032 --> 01:26:14,092
+Böyle underscore ile adlandırmak bir good programming practice olarak söylenilebilir.
+
+528
+01:26:14,532 --> 01:26:21,212
+Böylece işte geçiri değişkenliğe bir struct alanını birbirinden daha rahat ayırt edebilirsiniz.
+
+529
+01:26:22,452 --> 01:26:23,032
+Gerçi hoş.
+
+530
+01:26:23,512 --> 01:26:28,112
+Olduk, öyle de nokta, hani field şeklinde erişiyoruz.
+
+531
+01:26:28,231 --> 01:26:32,972
+Orası da ayrı ama buradaki underscore işte bir dikkat çekmek için gereklidir.
+
+532
+01:26:33,492 --> 01:26:42,632
+Nesli Yönelik'inden bahsedeyim. O da ne işe yaradığından bahsedeyim. Yine benzer amaçla. Şimdi biz kod yazarken bir IDE kullanıyorsak.
+
+533
+01:26:42,963 --> 01:26:49,704
+Renklendirme desteği sayesinde bir bakışta ne üye alanmış ne geçişi değişkenmiş bunu görebiliyor.
+
+534
+01:26:50,264 --> 01:26:57,944
+Örneğin şu AdLentals metoduna baktığınızda ARG metot parametresi, gövdesine baktığınızda meton gövdesine,
+
+535
+01:26:58,184 --> 01:27:04,284
+Dentals üye alan mavi olarak adlandırıldı, mavi olarak renklendirildiğinden hemen bunu bir bakışta anlayabiliyorum.
+
+536
+01:27:06,868 --> 01:27:15,508
+Siyah değil de koyu gri gibi fontla rengi plendirildiğinden onun da metod parametresi olduğunu bunu bir bakışta anlayabiliyor.
+
+537
+01:27:16,168 --> 01:27:20,108
+Ama belki her zaman ide kullanma lüksümüz olmuyor.
+
+538
+01:27:20,595 --> 01:27:43,956
+Ya da hadi onu geçtik. Kağıt üzerinde kod anlatırken, bahsederken bu renklendirme bilgisi elimizden alınmış oluyor. Buradaki PowerPoint'lerde yine koddaki renklendirmeyi görebiliyoruz. Orada yine hala görebiliyoruz. Ya da sınıfta yüz yüze konuşsaydık projeksiyon cihazımdan da yine renkleri görebilecektim.
+
+539
+01:27:45,203 --> 01:27:51,604
+Bununla bu notla bastırdığınızda veya kitap olarak yayınladığınızda bu renk bilgisi kayboluyor.
+
+540
+01:27:52,115 --> 01:28:03,275
+Fakat özellikle bu refactoring kitabında ve işlemlerinde genelde bir kod problemini tanımlayıp ondan sonra refactor ettikten sonra da oluşan kodu,
+
+541
+01:28:03,476 --> 01:28:09,916
+işte olayın öncesi ve sonrası şeklinde yayını koyaraktan, karşılaştıraraktan anlatılıyor.
+
+542
+01:28:11,016 --> 01:28:17,796
+Bir kitabın da renkli basımı çok daha pahalıya var olacağı için siyah-beyaz basılmış bir kitap oluyor bu genelde.
+
+543
+01:28:20,115 --> 01:28:22,936
+O para verdiğiniz zaman ojel kitabı para veremeyeceksiniz.
+
+544
+01:28:23,016 --> 01:28:23,676
+Fotokopi çektirin.
+
+545
+01:28:24,340 --> 01:28:30,340
+renkli futbolu ile pahalı. Neredeyse orijinal kitap arasına geliyor. Siyah beyaz yansladınız.
+
+546
+01:28:30,840 --> 01:28:35,460
+Veya işte ebook okuyucunuzun renkli ekranı yok. Tasarruf ettiniz. Siyah beyaz yansladınız.
+
+547
+01:28:35,800 --> 01:28:41,300
+Anlayamıyorsunuz. Renk bilgisine ulaşamıyorsunuz. Nedir üye alan? Nedir parametre? Nedir geçici değişken?
+
+548
+01:28:41,619 --> 01:28:48,940
+Bütün bundan önemli. Doğru refactoring yapıp bir kod simeli anlayıp nasıl refactoring yapmanız gerektiğini anlayabilmek için.
+
+549
+01:28:48,940 --> 01:28:52,300
+Bu nedenle bu renk kaybolan renk bilgisi yerine
+
+550
+01:28:52,340 --> 01:28:59,520
+üye alanları underscore ile adlandırmaya başlıyor. Bu nedenle işin hikmeti bu.
+
+551
+01:29:00,979 --> 01:29:23,019
+Peki, customer name üye alanı var. Kira kayıtlarını tutmak için Vector sınıfından bir liste oluşturmuşum. İçinde rental türünden nesine alınıracak. Müşterinin adı var. Constructor'ında bu ad set ediliyor. Bu müşteriye kira kaydı eklemek için bir metot var.
+
+552
+01:29:28,979 --> 01:29:32,479
+Aynı ki film bir daha eklenmemeli falan kontrolü yok.
+
+553
+01:29:32,799 --> 01:29:38,399
+Çünkü ya belki müşteri aynı videokasetten iki tane kiralamak isteyebilir.
+
+554
+01:29:38,399 --> 01:29:41,559
+Birini kendisi seyrederken birini arkadaşına verecek.
+
+555
+01:29:43,079 --> 01:29:43,659
+Mesela.
+
+556
+01:29:45,079 --> 01:29:45,499
+Neyse.
+
+557
+01:29:45,872 --> 01:30:04,692
+Öyle bir gereksin olmasa bile odaklamak için tarih kontrollerini zaten çok yaptık da. Belki bu bilim sınamasında bunların da sınanması yararlı olmaz mıydı? Olur da hem bu örnek daha çok refaktör üzerine bir örnek hem de zaten onu yapmayı da size bırakıyoruz.
+
+558
+01:30:04,692 --> 01:30:10,932
+Fak bir teksans olarak tanıdık. Zaten bahsetmişe nesneyi rektöre, listeye ekliyor. O kadar.
+
+559
+01:30:11,764 --> 01:30:18,083
+isim için getter metodum var. Ondan sonra işte o meşhur statement metodum var. Ne yapıyor?
+
+560
+01:30:20,404 --> 01:30:30,104
+Bu rektörün üstünde doğrudan dolaşmaktansa bir iterator alıp onun üstünden dolaşmayı tercih ediyor. Doğrudan da dolaşabiliriz. Hiç problem yok.
+
+561
+01:30:31,507 --> 01:30:37,367
+İşte statement için oluşturacağı stringi oluşturmaya ve içeriğini doğdurmaya, biriktirmeye başlıyor.
+
+562
+01:30:37,707 --> 01:30:41,527
+İşte şu müşteri için olan kira kaydı diye başlıyor.
+
+563
+01:30:42,807 --> 01:30:53,007
+Var döngüsü içerisinde, for kullanmamış var döngüsü içerisinde her bir elemanı dahası varsa listede onu sorgulayıp sonraki elemanı alıyor.
+
+564
+01:30:53,007 --> 01:30:58,847
+Ondan sonra bu kira kaydı için işte filmin adı bu.
+
+565
+01:30:59,188 --> 01:31:09,987
+Ondan sonra onun içinde harcanması gereken, yani oradan doğan, nasrafta bu şekilde tüm kiralamalar için bunları satır satır ekliyor.
+
+566
+01:31:10,387 --> 01:31:17,447
+En sonunda da işte toplam borcumuz bu kadar ve toplam bonusumuz da bu kadar şeklinde bu bilgileri ekleyip stringi geri döndürüyor.
+
+567
+01:31:17,807 --> 01:31:18,927
+Böyle bir statementım var.
+
+568
+01:31:19,891 --> 01:31:35,231
+getTotalCharge metodu işte bu burada for döngüsünü kullanmış. Direkt rentals üzerinde dolaşarak da. Her bir rental işlemi için onun getCharge metodunu çağırıyor, kümülatif toplamakla biriktirip en sonunda bunu geri döndürüyor.
+
+569
+01:31:35,791 --> 01:31:45,831
+getTotal bonusu da yine benzer şekilde her bir kira kaydının bonusunu kümülatif toplamda biriktirip onu geri döndürüyor. Böyle bir yapı var.
+
+570
+01:31:47,796 --> 01:32:07,356
+Ondan sonra, cema, customı rental ile ilişkiliydi. Rental'ı da burada görüyorsunuz. Hangi filmle ilişkili oldu ve kaç gün boyunca kiralandı. İki üye alan olarak kendini gösteriyor. Construct'a da bu iki bilgiyi de veriyoruz. Her iki bilgi içinde getter metotları var.
+
+571
+01:32:07,775 --> 01:32:13,575
+Sonra işte ekstradan getCharge metodu var, getBonus metodu var, getMovieTartil metodu var.
+
+572
+01:32:14,075 --> 01:32:15,455
+O şeyde söylediğim gibi.
+
+573
+01:32:15,855 --> 01:32:17,115
+Bir saniye, bir saniye.
+
+574
+01:32:29,108 --> 01:32:46,068
+Evet, charge, get bonus ve get movie tartışma metodları var. İşte YÖ merkezmesi üstünden de tartıştığım üzere, ya charge metodu ilişkili olduğu filme, kardeşim sen şu kadar gün kiralandın, hadi bana toplam kira bedeli ne olacaksa onu bana döndür diyor. Get bonus da benzer şekilde işlem yapıyor.
+
+575
+01:32:46,068 --> 01:32:56,168
+Ve bu işte customer ve movie arasında ek bir ilişki kurmamak için statement'a bildirilecek film adını da yine rental'dan öğrenebilmesi için.
+
+576
+01:32:57,108 --> 01:33:00,427
+Movie nesnesinin get title metodunu çağırarak da onu geri döndürüyor.
+
+577
+01:33:03,347 --> 01:33:05,568
+Ve gelelim Movie sınıfına.
+
+578
+01:33:06,967 --> 01:33:16,328
+İşte Movie'de bu price code için 3 tane public file'ı statik alan kod tanımlanmış.
+
+579
+01:33:16,328 --> 01:33:18,408
+Yani günün sonunda.
+
+580
+01:33:19,152 --> 01:33:31,532
+Normal üye olan class code içerisinde bunun değeri sıfır ise bu normal bir filmdir. Biri ise yeni çıkan filmdir. İki ise de çocuk filmidir anlamına geliyor.
+
+581
+01:33:32,083 --> 01:33:55,243
+Şimdi, ya hiçbir şey olmasa bile, hadi kalıtım kurmayı da vazgeçtim. Bu üç tane şey yerine, üç tane anahtar alan yerine Enum kullansam daha iyi olurdu. Yani hiçbir şey yapmasa bile bunu yapardım. Ama şöyle söyleyeyim, yani tekrarlıyorum, biraz kusurlu bir tasarımdan adım adım daha iyiye gidiyoruz diyelim.
+
+582
+01:33:59,028 --> 01:34:11,307
+Hep böyle filmin türü alanına, böyle uygun uzun değişik strenkler vermektense, her bir karakteri, heleki Unicode, Encoding'de Allah bilir kaç byte tutacak.
+
+583
+01:34:12,207 --> 01:34:22,528
+Bir tane short hint üye alan tanımlasam, işte 0, 1, 2, short hint 1 byte diyelim ki, 1 byte'da da 258 kadar çok sayıda farklı film türü tutulabilecek.
+
+584
+01:34:22,528 --> 01:34:25,287
+Epey bir bellekten tasavvuf edeceğim falan diye.
+
+585
+01:34:27,028 --> 01:34:38,587
+Düşünceyle düşünmüşümdür. Art yapımı ona göre oluşturmuşumdur. Art yapım olsa da kodum da ona göre olmak durumunda deyip o şekilde devam edebilirim kodlamaya.
+
+586
+01:34:38,587 --> 01:34:43,587
+Ama en azından şurada bunların yerine enum kullansaydım.
+
+587
+01:34:45,203 --> 01:34:54,264
+Primitif olmayan Yenim Hakkı da önceki haftalarda gördük. Daha iyi olurdu. Burada parantez içinde söyleyeyim. Neyse, böyle olmuş. İncelemeye devam edelim.
+
+588
+01:34:56,003 --> 01:34:59,783
+İşte filmin adı ve fiyat kodu Constructor'a veriliyor.
+
+589
+01:35:00,435 --> 01:35:26,095
+Fiyat kodu için hem getir hem settir metodu var. Bir filmin fiyat kodu değişebilmelidir. Çünkü tamam çocuk filmi çocuk filmi olarak kalır ama New Release olan bir film işte belli bir süre geçtikten sonra video kaset dükkanı sahibi artık bu New Release olmaktan çıktı diyebilir 6 ay sonra seçiyor veya 3 ay sonra seçiyor. Kendisinin bileceği bir iş. Onun göre bir filmin durumunu, türünü New Release'den regular'a çevirmek isteyebiliriz.
+
+590
+01:35:26,463 --> 01:35:29,403
+Veyahut da belki benzer şeyi çocuk filmleri içinde yapıyor olabilir.
+
+591
+01:35:29,663 --> 01:35:34,703
+Yani çok yeni çıkan çocuk filmi ise bunu bir ay, ben bundan biraz daha fazla taraf kazanıyorum bilerekten.
+
+592
+01:35:35,023 --> 01:35:37,203
+Belki onu da neymiş olarak işaretliyor olabilir.
+
+593
+01:35:37,903 --> 01:35:39,123
+Kendisi bilir. Neyse.
+
+594
+01:35:50,323 --> 01:35:56,724
+Tartil için getirme metodu da var.
+
+595
+01:36:05,716 --> 01:36:08,736
+Evet, tartışın gettirmek türü var.
+
+596
+01:36:09,096 --> 01:36:13,276
+Ve işte get charge metodu, işte parametro olarak kaç gün kiralandığını alıyor.
+
+597
+01:36:13,276 --> 01:36:30,996
+Şimdi bu kodu yazarken işte müşterim bana dedi ki, işte fiyat nasıl hesaplanacak anlattı, bana tarif etti, işte benden istedik ki normal enfililer için, her bir kiralama işlemi için en azından 2 lira masraf kesilecek.
+
+598
+01:36:33,332 --> 01:36:38,032
+Bu filmin kasetini iki gün boyunca tutabilir kendisinde.
+
+599
+01:36:38,472 --> 01:36:45,292
+Ama ikiyi aşan her gün içinde gün başına bir buçuk lira alırım kendisinden diye ben söylemiş.
+
+600
+01:36:46,092 --> 01:36:48,872
+İsteğini bu şekilde belirtmiş. Ben de bu şekilde kodlamarım.
+
+601
+01:36:50,412 --> 01:36:57,312
+Yeni çıkan filmler için ise gün yönü üç liradan kiralayacağım demiş. Tamam. Bunu da buraya kodlamışım.
+
+602
+01:36:57,716 --> 01:37:15,376
+Çocukları filmleri için ise her bir kiralama işlemi için bir buçuk lira ödenecek. Bu bir buçuk lira karşılığında bu filmi üç gün boyunca tutabilecekmişlerim. Ama üç günü geçen her gün için yine gün başına bir buçuk lirasını alırım ben bunu demiş. Ama ben de ona göre kodlamışım.
+
+603
+01:37:16,787 --> 01:37:44,787
+İşte yani bin biraz daha tüseten kısım da bu. Bir kodumuzu yazarken kendinizi if, ersif, ersif zinciri içerik kodluyorken görüyorsanız veya bir switch case yapısı içerisinde kendinizi kod yazıyorken görürseniz bu tasarımınızı iyileştirmeniz gerektiğinin ve bunu da kalıtım ilişkisi ve polymorphism kullanarak yapmanız gerektiğinin en önemli birinci.
+
+604
+01:37:44,787 --> 01:37:45,567
+bir göstergesi.
+
+605
+01:37:46,868 --> 01:37:53,948
+Zaten bu ders saatin başında da söylemiştim. Ben normalde Movis sınıfını daha iyi bir tasarım için soyut olarak tanımlamam.
+
+606
+01:37:53,948 --> 01:37:59,988
+Ve bu farklı Regulus, New Release ve Chilledness'ı alt somut sınıflar yapmam.
+
+607
+01:38:00,348 --> 01:38:11,188
+Ve her birinin Get Charge metodunu, yani buradaki bu sınıftaki uzun Get Charge metodu yerine, bunun her bir case'ini ilgili alt sınıfa taşımam gerekir.
+
+608
+01:38:11,488 --> 01:38:14,788
+Get Charge metodu da bu Soyut Movis sınıfında soyut.
+
+609
+01:38:14,868 --> 01:38:28,668
+Bu üst sınıfında yine soyut bir metot olarak kalmalıdır. En doğrusu, en doğru tasarım budur. Ama tekrarlıyorum, refactoring kötü bir tasarımı adım adım iyileştirmeye yönelik bir çalışma olduğu için bu durum şu an böyle.
+
+610
+01:38:30,668 --> 01:38:42,468
+Bonus için ise bana şöyle bir iç mantığından bahsetmiş müşterim. Hangi filmi kiralarsan kirala, her bir kiralama işlemi için bir puan kazanılsın.
+
+611
+01:38:43,028 --> 01:38:55,847
+Ama kiralanan film yeni bir filmse ve bunu da bir günden fazla kiralamışsa bir ek puan daha kazanılsın diye bana hiç mantığını söylemiş. Ben de onu bu şekilde kodlamışım.
+
+612
+01:38:56,372 --> 01:39:17,892
+Yine daha doğru tasarımımda bu get bonus metodunu da üst sınıfta soyut, üst sınıfta soyut bir metot olarak bırakıp, somut alt sınıflarda new release'de ise direkt şu konuya bakmadan, çünkü zaten new release sınıfının içerisinde yer alacak bu konu, dense rented büyüktür, birisi iki döndür, aksi takdirde bir döndür.
+
+613
+01:39:24,372 --> 01:39:41,252
+deyip geçerdi. Böylece daha doğru bir tasarım olurdu. Neyse. Şu anki tasarımı, şu anki hali bu. Bunun üstünden şimdi sınamalar yapmam gerekecek. Şimdi aslında bu metot kodlarının ayrıntılarını da çok anlatmak zorunda değildim.
+
+614
+01:39:42,036 --> 01:39:48,256
+Çünkü temel olarak işte bana iş mantığı olarak demiş ki işte 3 ayrı tür film mevcuttur.
+
+615
+01:39:48,615 --> 01:39:55,076
+Bunların da kiralanmaları için, şu sırada kiralanmaları için masraflarımız şudur, bonus mantığı da şudur şeklinde.
+
+616
+01:39:55,376 --> 01:39:57,036
+Gereksinimleri de bana o şekilde verdi.
+
+617
+01:39:57,036 --> 01:40:00,000
+Ben o gereksinimleri...
+
+618
+01:40:00,000 --> 01:40:06,740
+Doğru olarak kodlamış mıyım, kodlamamış mıyım diye bakmak için bu kaynak kodu bilmeden de test yapabilirim.
+
+619
+01:40:07,000 --> 01:40:10,020
+Bunlar black box testing denir. Kara kutu sınaması.
+
+620
+01:40:10,400 --> 01:40:24,060
+İç kod ayrı tanımını bilmeye gerek duymadan, kardeşim işte şu tür filmi şu kadar gün kodlarsam, bu kadar, pardon, şu tür filmi şu kadar gün kiralarsam, şu kadar da bilgileri üstünden ben bu bilgileri verip, acaba doğru hesap mı yapılıyor?
+
+621
+01:40:24,240 --> 01:40:26,300
+Bunu ölçebilirim. Bu benim için yeterli.
+
+622
+01:40:26,300 --> 01:40:28,000
+Ama ya kaynak kodu bilim.
+
+623
+01:40:28,000 --> 01:40:46,039
+Diyorsam, o zaman test kezlerini hazırlarken, bütün bu kaynak kod içerisindeki her metodun, her metodun içerisindeki her if, else, else dalının veyahut da kez dalının üzerinden geçecek şekilde, en az bir kere geçecek şekilde, bir kere geçmişte yeterli.
+
+624
+01:40:46,039 --> 01:40:55,880
+O şekilde senaryolarımı oluştururum. Böylece daha sağlam bir test yapmış olurum diye düşünüyorsam, bu arada white box.
+
+625
+01:40:56,000 --> 01:41:02,420
+testing deniliyor. Beyaz kutu testi. Test ettiğim bir işin iş yapısını biliyorsun. Bizim durumumuzda kaynak kodu görüyorsun.
+
+626
+01:41:02,420 --> 01:41:13,820
+Ve test kezlerinde ona göre ince ayar yapıyorsun. Şeklindeki yaklaşıma da white box testing denir. Bunu da ek bilgi olarak vermiş olayım.
+
+627
+01:41:14,539 --> 01:41:19,140
+Peki, şimdi şeyim bu, durumum bu. Ben de şimdi bunları test edeceğim.
+
+628
+01:41:20,212 --> 01:41:28,412
+Test etmek için test kezlerini oluşturayım. Bunun için JUnit Framework'nı kullanayım. Nasıl yapacağımızı görelim.
+
+629
+01:41:32,532 --> 01:41:56,231
+Şimdi aslında ara verme vaktimiz geldi ama hazır, aklımızda bu yapı taze iken ben testimizi de yapalım istiyorum. Sonra duruma göre işte belki biraz ara veririz, matı, denge devam ederiz ya da ara vermeyiz, ders bitiririz. Kalan kısmı 14. haftada rahat rahat yapabiliriz. Hiç problem olmaz.
+
+630
+01:41:57,876 --> 01:42:05,636
+Ders kapatmadan önce de ikinci vizeyi test usul yapacağız. Onun hakkında da konuşmayı bana hatırlatın.
+
+631
+01:42:07,636 --> 01:42:11,296
+Peki, şimdi yapımız bu. Bunu test etmek için.
+
+632
+01:42:12,836 --> 01:42:19,456
+İlk başta, şimdi burada exception oluşmadığı için ben 3x sürümüne göre test kodumu yazdım.
+
+633
+01:42:19,764 --> 01:42:24,583
+exception oluşturmayı artık daha sonraki dönemlere eklerim diyeyim.
+
+634
+01:42:24,863 --> 01:42:26,724
+Ama nasıl yapacağımızı gösterdim.
+
+635
+01:42:26,963 --> 01:42:28,384
+Biraz frontlarında yer alıyor.
+
+636
+01:42:29,184 --> 01:42:30,344
+Küçük üstünden gidelim.
+
+637
+01:42:32,923 --> 01:42:33,144
+Şimdi
+
+638
+01:42:33,144 --> 01:42:37,563
+Vental sınıfı için ayrıca
+
+639
+01:42:37,563 --> 01:42:40,323
+test sınıfı yazmayı gerek görmedim.
+
+640
+01:42:41,083 --> 01:42:44,884
+Custom'ın üzerinden ve movie üstünden bunları yapabilirim.
+
+641
+01:42:45,747 --> 01:42:50,699
+Şimdi aslında hani muvili sınıfı da böyle çok...
+
+642
+01:42:51,220 --> 01:43:09,340
+Karmaşık bir sınıf değil. Gerçi şu switch case yapısı bu gap charge metodunu uzatıyor ve burada bir temel karmaşıklık var ama işte hangi türlü filmin kaç gün boyunca kiralarının tüm bilgisi üstünden yapacağım testi aslında test custom'ın bu state mode metodu üzerinden yapabilirim aslında.
+
+643
+01:43:09,340 --> 01:43:19,180
+O yüzden test custom sınıfın daha fazla ve ayrıntılı test case işleyecek. Ben tabii şimdi test sınıfı yazmadım ama bunun için basit bir test.
+
+644
+01:43:19,220 --> 01:43:45,880
+sınıfı yazdım. Bakın, bu kadar basit bir sınıf. Öncelikle ne yapacaktık? Normal iş mantığı sınıfının adı movie olduğu için test movie diye bir sınıf oluşturdum. Ve bunu da test keresinden kalıtımla türettim. Şimdi bu olabilecek en basit test türü. Tek bir metod içerisinde birden fazla asirat kullanarak basit bir test oluşturdum.
+
+645
+01:43:46,323 --> 01:43:53,203
+Şimdi aslında normalde her bir test bilmem ne metodunda bir tek assert metodu bu.
+
+646
+01:43:54,195 --> 01:44:00,716
+Üstünden test yapmanız tercih edilir. Ki test kastımını sınıfında hep o şekilde yazacağız kodumuzu.
+
+647
+01:44:00,716 --> 01:44:06,956
+Ama burada yaptığım iş aslında üç farklı iş değil, tek bir iş yapıyorum.
+
+648
+01:44:07,275 --> 01:44:14,756
+Yaptığım şey de madem sistemde farklı tür filmler söz konusu, o zaman ben üç ayrı türden, üç ayrı film oluşturup,
+
+649
+01:44:15,076 --> 01:44:22,195
+bunların birbirinden farklı tür filmler olup olmadığını, gerçekten o şekilde algılanıp algılanmadığını test etsem, bu benim için yeterli.
+
+650
+01:44:22,195 --> 01:44:32,996
+Validir diye düşünüp ve temel olarak yaptığım şey 3 farklı nesneyi karşılaştırmak ama aynı amaçla karşılaştırmak olduğundan tek bir test metodu oluşturmuşum.
+
+651
+01:44:33,275 --> 01:44:35,976
+İçerisinde 3 tane assert metodu yazmışım.
+
+652
+01:44:35,976 --> 01:44:47,976
+Ve hem assertürü hem assert false gösterebilmek için hem eşit eşit hem ünlem eşit ifadeleri üzerinden örnek kodu yazmışım.
+
+653
+01:44:48,884 --> 01:45:10,844
+Şimdi ilk filmin üç tane filmi. Birincisi Matrix, normal film demişim. İkincisi Masters, çocuk filmi demişim. Düşüncüsü Sarga Gates, New Release demişim. Ben bu ilk kodu ulaştırırken Sarga Gates filmi New Release dedi. Kurallan yıllar geçti, bu da reglut oldu ama şimdi her sene tutulamını yeni filmlerde değiştirmeye gerek yok diye düşünüyorum.
+
+654
+01:45:16,884 --> 01:45:19,844
+Kurgay'a meraklı arkadaşlar bakabilirler bu filme.
+
+655
+01:45:21,103 --> 01:45:23,063
+İşte üç tane ayrı film oluşturdum.
+
+656
+01:45:23,243 --> 01:45:27,264
+Ha normalde bir de ne yapsaydım daha ağızlık bir test kez yazsaydım.
+
+657
+01:45:27,503 --> 01:45:30,163
+Bunları setup metodunda yapabilirdim bu işleri mesela.
+
+658
+01:45:30,163 --> 01:45:35,563
+Ama dediğim gibi ufak bir kez işaret için böyle hepsini bir araya tıkıştırmış olduk diyelim.
+
+659
+01:45:36,368 --> 01:45:58,668
+Assert True kullandım. Şimdi dikkatli arkadaşlarım fark edecekler. Ben bu şeyi anlatırken, JUnit yapısını anlatırken bu Assert metotlarını da, örneğin Assert True metodunu tek parametreli olarak verdim. Ama burada iki parametre olan versiyonunu çağırırım. Bütün Assert bilmem ne metotları aslında overloaded metotlar.
+
+660
+01:45:59,123 --> 01:46:17,063
+O verdiklerimi ek olarak, ilk parametre olarak string içeren versiyonları da var. Bu stringin kullanım yeri şudur. Eğer bu test case başarısız ise neden başarısız olduğunu bildiren bir string bu.
+
+661
+01:46:17,811 --> 01:46:25,811
+Normalde Matrix ile Master farklı tür firmler olduğu için bunların fiyat kodlarını aldığımda bunların birbirine eşit olmaması gerekmektedir.
+
+662
+01:46:25,891 --> 01:46:29,551
+O yüzden as well true deyip Matrix.getpress.co ünleme şiddetir.
+
+663
+01:46:29,612 --> 01:46:31,372
+Matrix.getpress.co dedim.
+
+664
+01:46:31,792 --> 01:46:44,492
+Ama eğer bir hata nedeniyle bunların fiyat kodları aynı çıkmışsa hem JUnit beni bir kırmızı çubukla uyaracak hem de bu hata açıklamasını yapacak.
+
+665
+01:46:46,068 --> 01:46:51,747
+Daha evvel yazdığımız kodlarda hata numara bilmem ne filan şeklinde bir hata olduğunu söylemiştik.
+
+666
+01:46:52,167 --> 01:46:59,547
+Nereden kaynaklanıyor, nereden kaynaklanıyor onu da anlamak için o test kodumuzu ayrıntılı ayrıntılı okumamız da gerekmekteydi.
+
+667
+01:46:59,547 --> 01:47:09,188
+Ama şimdi burada senin temel olarak hata neden kaynaklanıyor hakkında uyarmaya yarayan bir art yata üstünden işimizi kolaylaştırmış oluyoruz.
+
+668
+01:47:10,644 --> 01:47:35,044
+Matix'e, Sardegate'e karşılaştırdım. Bunların da ünlemişti olması lazım. Sonra illa ünleme eşitliği, eşit eşitliği karşılaştırdım. Bunu assert false olarak da test edebilirdim. Onu da burada yaptım. Bu şekilde ilk test sınıfımın içindeki ilk test kezimi oluşturmuş oldum. Her şey biraz iç içe ama şimdi daha ayrık olanlarını görelim. O da nedir? Test castımız.
+
+669
+01:47:36,212 --> 01:47:46,552
+Şimdi, evet, bu test customer sınıfını var. Yani, customer sınıfını test etmek için kullandığım sınıf olduğundan adını test customer sınıfını koydum. Yine test case'den kağıtımla.
+
+670
+01:47:47,452 --> 01:47:55,552
+Şimdi, burada temel olarak yapacağım şey şu olacak. Bir müşteri tanımlayacağım. Birkaç tane film tanımlayacağım. Farklı farklı türlerden.
+
+671
+01:47:56,172 --> 01:48:02,252
+Ki bunların farklı tür olmalarını da bir önce test ettim. Yani ona da güvenebilirim. Doğru çalıştığında.
+
+672
+01:48:04,243 --> 01:48:15,344
+Bu filmleri, bu müşteriye değişik sürelerle kiralayacağım. Ve bakalım, doğru bedel ve doğru bonus verilmiş mi? Bunları kontrol edeceğim.
+
+673
+01:48:17,564 --> 01:48:30,583
+E tabii şimdi her farklı filmi farklı sürelerde kiralayacağım ya, ve benim test kezlerim bundan üstüne kurulu olacak ya, bir kere bu müşterinin ve filmlerin bir oluşturulması lazım.
+
+674
+01:48:31,091 --> 01:48:42,271
+Ve bu oluşturma işlemleri de her bir test bilmem ne metodunda tekrar tekrar yapacağıma hazırlık için olan metodum, setup metodumu burada override ettim.
+
+675
+01:48:42,391 --> 01:48:46,091
+Protected, void, setup metodunda müşterimi ve filmlerimi oluşturduk.
+
+676
+01:48:46,931 --> 01:48:49,711
+Ama müşteriye bu filmleri kiralamadım.
+
+677
+01:48:50,131 --> 01:48:57,532
+Çünkü benim işte test kezden farklı filmlerin farklı sıraya da kiralanması üzerinde dayandığında bu işler farklılaştıracağında
+
+678
+01:48:59,028 --> 01:49:03,807
+olan kısımları setupta kodlayamam. Ortak olan kısımları setupta kodlarım.
+
+679
+01:49:04,028 --> 01:49:05,327
+Ki onu da burada kodladım.
+
+680
+01:49:06,427 --> 01:49:08,987
+Şimdi buradaki test keyfini görüyorsunuz.
+
+681
+01:49:09,287 --> 01:49:10,068
+Test get name.
+
+682
+01:49:11,827 --> 01:49:13,127
+Müşterinin adını alıyorum.
+
+683
+01:49:13,847 --> 01:49:15,167
+Sonuçları bir stringe yazıyorum.
+
+684
+01:49:15,887 --> 01:49:19,728
+Ve şu ayarttığı ettiğim sonuç, Yunus Emre Selçuk mu diye bakıyorum.
+
+685
+01:49:20,608 --> 01:49:23,967
+Eğer bu iki string birbirine eşitse, bu test keyfini geçti diyorum.
+
+686
+01:49:24,819 --> 01:49:45,060
+Belki dersiniz ki, ya hocam bu kadar basit, ya bunun test edilmesine gerek var mı? Ben de diyorum ki, evet var. Bakın neyi test etmiş oluyorum aslında? Benim anımda bu da Türkçe karakter geçiyor. Acaba benim üstümde çalıştığım platform Türkçe karakterleri düzgün olarak destekliyor mu? Onu test etmiş oldum en azından.
+
+687
+01:49:48,404 --> 01:49:54,123
+Başarıda olacaktır yani. Ama ben yazdım yazdım içim rahat.
+
+688
+01:49:56,163 --> 01:50:00,000
+Şimdi bir kere müşteri hiçbir filmde kiral...
+
+689
+01:50:00,000 --> 01:50:26,560
+bulamamışsa bunun 0 lira borcu olacak. Bonus da 0 olacak. Bunu bir test edeyim. Bunun için testStateModeRunEmpty diye adlandırdığım bir metot var. Burada ben dikkat ederseniz test2 falan diye adlandırmadım bu metotta. Neyi spesifik olarak, net olarak, belirgin olarak neyi test ettiğimi, Watson metodat uzun olsun, açıklayıcı bir şekilde yazdım.
+
+690
+01:50:27,475 --> 01:50:31,655
+Bu önemli. Kodun anlaşılabilirliğini iyileştirmek için.
+
+691
+01:50:32,555 --> 01:50:38,535
+Evet, neyi test ediyormuşum? Statementı, hiç film alınmamışken test ediyormuşum.
+
+692
+01:50:39,715 --> 01:50:44,095
+Şimdi, evet, setup içerisinde bu müşteriye herhangi bir film vermemiştim.
+
+693
+01:50:44,815 --> 01:50:45,995
+Dilek statementını aldım.
+
+694
+01:50:46,420 --> 01:50:51,680
+İşte sıfır borcumuz var, sıfır bonusumuz var diyecek şekilde bir makbuz basınmalı.
+
+695
+01:50:52,100 --> 01:50:58,740
+Bu durumda basılması gereken makbuzu da elle bu beklenen stilginin içerisine biriktirdi.
+
+696
+01:50:58,740 --> 01:51:03,820
+Sonra işte elde ettiğimiz sonuçta beklenen ifade birbirinin aynıysa.
+
+697
+01:51:03,887 --> 01:51:15,507
+O zaman bu test başarılıdır şeklinde sinaryumu kurduğumdan assert equals kullandım. Burada ek açıklama stringi yazmadım artık. Böyle bir şey yapabileceğinizi isterseniz biliyorsunuz. Gerek de yok.
+
+698
+01:51:17,347 --> 01:51:30,507
+Sonra farklı tür filmlerin uzun süreliğini kiraladım ve böylece elde ettiğim statement ile olması gereken statementı karşılaştırıyorum.
+
+699
+01:51:30,868 --> 01:51:42,788
+Tabii bir kenarda elli hesaplanan lazım. Benim işlem ne demişti? Neyli, New Religious olan bir filmi. Uzun süre kiralamışsak ki o uzun sürede neydi? İki günün üstüydü.
+
+700
+01:51:46,323 --> 01:52:00,523
+Ne bileyim? Ha, o gün başındaymış, tamam. Ama reguları film ise bunu iki günden fazla, üç ve üstü ve iki ve altı sürelerde kiralaman farklı farklı hesap sonuçları ortaya çıkarmış gerekiyor.
+
+701
+01:52:00,523 --> 01:52:14,003
+Buna göre, işte, üç farklı tür filmi farklı uzunca günlerde kiraladığımda, bakalım doğru masraf ve bonus, doğru borç ve bonus hesaplanıyor mu? Ona önerik.
+
+702
+01:52:14,323 --> 01:52:29,323
+Test case'in bu. Bir de kısa süreliğine kiralamak için yine o durumda acaba doğru şey yapılıyor mu, hesap yapılıyor mu? Onun için de oluşturduğum test case'in adı Test Statement with Moves Short Terms.
+
+703
+01:52:29,323 --> 01:52:40,323
+Yani biraz daha uzatabilirim de bu herhalde yaptığım işi anlatan yeterli uzunlukta bir isimdir diye düşünüyorum. Sonunda yine Assert Equals üzerinden yaptım.
+
+704
+01:52:40,787 --> 01:52:42,987
+Aná sona anil, anil, anil, anil, anil.
+
+705
+01:52:43,475 --> 01:53:07,155
+Bonus'un da bir farklı durum söz konusuydu. Bu nedenle bir tane normal film, bir tane New Reelist filmi, işte daha fazla New Reelist'ten daha fazla bonus kazanabileceği durumu da içerecek şekilde ilişkilerimi kuldum, statementımı bastım, olması gereken statement da budur diye onu da bir kenarda oluşturup daha sonra bu ikisini karşılaştırdım. Böylece test case'lerimi oluşturdu.
+
+706
+01:53:07,155 --> 01:53:11,475
+Şimdi ben istersen test movie'e ayrı, test custom'ı ayrı çalıştırdım.
+
+707
+01:53:11,475 --> 01:53:14,795
+Mesela şu test movie'yi bir ayrı çalıştırayım.
+
+708
+01:53:15,295 --> 01:53:16,335
+Bunu da sağ tıklıyorum.
+
+709
+01:53:16,755 --> 01:53:17,155
+Varnes.
+
+710
+01:53:17,655 --> 01:53:21,035
+Bakın otomatik olarak J-Unit Test seçeneği çıkıyor.
+
+711
+01:53:21,815 --> 01:53:22,455
+Çalıştırıyorum.
+
+712
+01:53:25,268 --> 01:53:39,028
+Ve bana, şunu da sol tarafta, JUnit perspektifi açıldı. İşte bir test case'im var, çalıştı ve sonun olmadan çalıştı. Yeşil çubuğu gördüm, içimde arttı.
+
+713
+01:53:39,507 --> 01:53:53,268
+Tabii aslında ben bunu yapmadan önce yapmam gereken bir tane daha iş vardı. Tamam JUnit Eclipse'le birlikte ve NetBeans'le birlikte falan otomatik geliyor ama Eclipse'de önceden bu JUnit framework'ünü projeme eklemek.
+
+714
+01:53:53,268 --> 01:54:17,207
+Onu elde yapmam gerekiyor. Bunun için eklemiş oldum ama eklemesin elimi şöyle ekliyordum. Projemin üstünde sağ tıklıyorum. Buildpad, configure buildpad diyorum. Burada libraries'in altında classpad'e tıklayıp add library tıklıyorum. Burada bakın, jenet kendinden geliyor. Next dip.
+
+715
+01:54:17,779 --> 01:54:36,199
+Next, Next tip işi tamamlıyor. Bu şekilde bunu yapmayı unutmamalıyım. Bunu yaptıktan sonra artık tüm altyapı hazır. Otomatik olarak eklendiyeceği benim projemi sadece ihtiyacım olasınıza da importine ekleyebiliyorum artık. Ondan sonra durumda. Peki.
+
+716
+01:54:36,948 --> 01:55:04,708
+İşte test customer da burada. Onu da bu şekilde yapabilirim. Ama ek olarak şu test all sınıfına bakalım. Hem test customer hem test movie'yi bir araya getirip hepsini birden yürüteceğim testim. Onu da oluşturmak için ders notumda tarif ettiğim üzere bir suite metodu kodluyorum. Public, static ve test türünden nesne döndüren bir metod olmak zorunda bu. Bu suite'ime bir isim veriyorum. Constructor'da ilk denirken bir isim veriyorum suite'ime.
+
+717
+01:55:04,948 --> 01:55:14,508
+Ve bu site'ime işte test custom'ı ve test movie'nin kodlarını eklemiş oluyorum. Böylece onların içerisindeki tüm test case'ler dahil edilmiş oluyor çalışmama.
+
+718
+01:55:14,508 --> 01:55:21,468
+İşte bunu return diyorum. Böylece artık bunu da üstümde sağ tıklayıp runes.junit test diyebilirim.
+
+719
+01:55:21,844 --> 01:55:28,304
+Şimdi test customer'da kaç tane? 1, 2, 3, 4, 5 tane test case'in var.
+
+720
+01:55:28,443 --> 01:55:29,644
+İşte adı test ile başlayan.
+
+721
+01:55:31,003 --> 01:55:35,623
+Şeyde de test movie'de de bir tane metodum var test ile başlayan.
+
+722
+01:55:36,083 --> 01:55:39,363
+Toplamda 6 tane test case'in var.
+
+723
+01:55:40,423 --> 01:55:46,443
+Bunu işte test dol altından çalıştırdığımda 6 tane test case'in ürütülüyor olacak.
+
+724
+01:55:47,347 --> 01:56:11,688
+Çalıştı ve yeşil çubuğu gördüm. İçim rahat. 6 tane test case'in var. Hepsi de başarılı oldu. Yeşil çubuk. İstersen şurada altına tıklayıp test custom'ın altında 5 tane, test custom'ın altında 1 tane test case'in var. Hepsi başarılı olarak tanımlandı. Demek ki konumu doğru yazmışım. İçim rahat diyebilirim. Evet, [öğrenci] buyurun.
+
+725
+01:56:12,884 --> 01:56:17,563
+Hocam, biz burada mesela ekran çiftçisi olarak bunlar farklı tür filmlerdir falan yazmıştık ya.
+
+726
+01:56:17,971 --> 01:56:21,371
+Bunları sana yazmayacaktım ben orayı kaçırdım yoksa.
+
+727
+01:56:22,491 --> 01:56:32,391
+Test fail ederse, başarısız olursa, işte başarısız oldu. Bunlar farklı tür filmlerdir ama işte sende aynı çıktığı gibisinden mesaj yazacak.
+
+728
+01:56:32,911 --> 01:56:36,351
+Şimdi diyelim ki şeyi karıştırdım, bir şeyi karıştırdım.
+
+729
+01:56:37,171 --> 01:56:44,031
+Mesela şurada Regular'a da sıfır dedim, Neuralize'de sıfır dedim yanlışlıkla diyelim ki.
+
+730
+01:56:45,031 --> 01:56:45,251
+Şimdi.
+
+731
+01:56:45,760 --> 01:57:07,000
+Burada sadece test movie çalıştıracağım. Bu arada bir derne man tersi de vardı bu idi ama. Bakayım ne dedi? Ha şurada ikisinde de case şey olduğu için. Peki diyelim ki hadi bunu kapattım diyelim. Ne dedim? Diyelim ki işte şurada bir komentleyin.
+
+732
+01:57:08,467 --> 01:57:12,327
+Aslında bu hatayı yapmam. Değerleme hatasının enineyle bana jeton düşürdü ama
+
+733
+01:57:12,327 --> 01:57:16,027
+diyelim ki o kez kodlamayı unutmuşum diyelim ki belki de.
+
+734
+01:57:16,647 --> 01:57:20,107
+Bu circuit switch resim, bunun kodlamayı unutmuşum diyelim ki.
+
+735
+01:57:20,907 --> 01:57:21,927
+Ondan sonra cemaat.
+
+736
+01:57:22,827 --> 01:57:23,387
+Devlettim.
+
+737
+01:57:23,627 --> 01:57:25,947
+Şimdi şeyimi çalıştıracağım.
+
+738
+01:57:26,187 --> 01:57:27,487
+Test mu iyi çalıştıracağım.
+
+739
+01:57:28,507 --> 01:57:30,267
+Bares, c, test.
+
+740
+01:57:32,067 --> 01:57:34,007
+Bakın test başarısız oldu.
+
+741
+01:57:34,771 --> 01:57:37,151
+test başarısız oldu, kırmızı olarak gösteriyor.
+
+742
+01:57:37,291 --> 01:57:42,611
+Şunun altında diyor ki, bak, abstraction hatalı oldu ortaya çıktı.
+
+743
+01:57:43,071 --> 01:57:46,771
+Bunlar farklı tür filmlerdi de benim o verdiğim açıklama oraya eklendi.
+
+744
+01:57:46,771 --> 01:57:55,771
+Ama ek olarak işte bu işin nereden kaynaklandığını içeren bir print stack trace gibi bir işlem de yaptı.
+
+745
+01:57:56,991 --> 01:57:57,531
+Durumu bu.
+
+746
+01:57:59,711 --> 01:58:01,351
+Şimdi şunu geri alıyorum.
+
+747
+01:58:01,939 --> 01:58:05,060
+Tekrar olması gerektiği şekle düzeltiyorum.
+
+748
+01:58:07,000 --> 01:58:08,899
+Ve hatamı düzelttim.
+
+749
+01:58:09,319 --> 01:58:11,380
+Şimdi tekrar testimi çalıştırayım.
+
+750
+01:58:12,279 --> 01:58:13,479
+Şuradan bir olması lazım.
+
+751
+01:58:13,699 --> 01:58:17,000
+Bakın, şuradaki şu yeşil düğme testi tekrar çalıştırıyor.
+
+752
+01:58:17,319 --> 01:58:17,979
+Çalıştırdım.
+
+753
+01:58:18,800 --> 01:58:21,119
+Bu sefer yeşil çubuk hatayı düzeltmişim.
+
+754
+01:58:21,279 --> 01:58:22,100
+İyi geçmiş olsun.
+
+755
+01:58:22,819 --> 01:58:24,340
+İçimi başardım diyebilirim.
+
+756
+01:58:26,676 --> 01:58:29,696
+Şimdi girelim biraz daha karmaşık bir hata yapmaya.
+
+757
+01:58:30,144 --> 01:58:57,043
+Bu yine test, özür dilerim, şey, movie sınıfının içerisinde. Diyelim ki bu sefer, işin en karmaşık kısmı şu kira bedellerini hesaplamaktı ya. Diyelim ki, işte bu regular filmlerde iki günü açan her gün başına bir buçuk lira charge etmem istendi benden. Ama ben yanlış anlamışım. Bunu bir lira olarak ele aldım. O şekilde kolladım.
+
+758
+01:58:58,515 --> 01:59:03,175
+Bu şekilde save edeyim. Ve şimdi şu test onu tekrar çalıştırayım.
+
+759
+01:59:08,020 --> 01:59:28,560
+Evet. Bir hata var. Kırmızı çubuk. Hay Allah. Şimdi bakalım neymiş. Hemen bakalım. Şuralar doğru da şu hatalı. Demiş ki hangi test kezimi fail etmiş? Uzun süre kiralanan filmlerinle ilgili olan test kezimde bir hata var. Şimdi ben açıklama stingi vermezsem.
+
+760
+01:59:28,927 --> 01:59:35,327
+Aslında az önce verdiğim açıklama stringi çok da anlatıcı bir şey değildi.
+
+761
+01:59:36,047 --> 01:59:39,287
+Ve ardından stack trace'den bir şeyleri anlamam gerekiyordu.
+
+762
+01:59:39,847 --> 01:59:45,967
+Aslında JUnit kendi açıklayıcı bilgisini kendisi vermekte epey başarılıdır.
+
+763
+01:59:46,427 --> 01:59:48,007
+Öyle olmasını da beklersiniz.
+
+764
+01:59:49,007 --> 01:59:50,747
+Bir şeyler de özellik bu.
+
+765
+01:59:51,467 --> 01:59:52,068
+Diyor ki bana.
+
+766
+01:59:53,367 --> 01:59:55,287
+Karşılaştırma başarısız oldu.
+
+767
+01:59:55,923 --> 02:00:17,523
+Şey hatırlarsanız assert equals diyordum ve iki tane stringi birbiriyle karşılaştırıyordum. Bu karşılaştırmayı o yaptı benim için şimdi. Ve şimdi beklediğiniz şey şu dedi, expected deyip, string uzun, en başından yazmıyor, o yüzden başına bir üç nokta koymuş, bunun daha da önü var ama ilk farklılaştığı yeri göstermeye başlıyor bana.
+
+768
+02:00:17,884 --> 02:00:23,443
+Şimdi şu beklenen stringim ama elde ettiğim string de şu oldu diyor bana.
+
+769
+02:00:24,020 --> 02:00:47,900
+İşte Matrix 3,5 olmalı. 3,5 lira çarşı edilmeli. Master'dan 3 lira çarşı edilmeli. Sargeç'ten de 6 lira çarşı edilmeli. Ya da işte o kadar borcumuz olmalı. Toplam borcumuz da bu kadar olmalı şeklinde çıktı. Bekleniyordu. Ama sinne elde ettiğin ne oldu? İşte Matrix'ten 3, Masters'tan 3, Sargeç'ten 6 elde ettin. Toplam puanı da 12.
+
+770
+02:00:48,435 --> 02:00:54,655
+Farklıların başladığı ve bittiği yerleri köşeli parantez içerisinde işaretlemiş oldu bana.
+
+771
+02:00:55,075 --> 02:01:01,655
+Ve bu sayede hatanın nerede kaynaklandığına yönelik bana çok önemli nokta atışı ve ipucu vardı.
+
+772
+02:01:02,255 --> 02:01:14,555
+Hatamı düzeltebilmem için, bu daha çabuk ve daha kolay düzeltebilmem için, hatanın nereden kaynaklandığını bu nokta buluşu işaretlenmesi benim çok işimi kolaylaştıran bir durumdur.
+
+773
+02:01:16,307 --> 02:01:31,608
+Gerçi biraz ben bu test kezinin adını da açıklayıcı bir şekilde verdiğim için uzun süre kiralamalarla ilgili bir problem mi olduğunu anlıyorum. Fakat 3 farklı tür filmim var. Hangisinin uzun süre kiralanması ile ilgili?
+
+774
+02:01:31,891 --> 02:01:56,872
+Ben oturup daha fazla tezkez yazsaydım, yani normal filmin uzun süre kirası, işte New Release filmin uzun süre kirası, çocuk filmin uzun süre kirası, sonra işte normal filmin kısa süre kirası, yeni filmin uzun süre kirası, çocuk filmin uzun süre kirası olmak üzere 6 ayrı tezkez yerine ben aslında 2 tezkez yazdım.
+
+775
+02:01:56,992 --> 02:01:59,692
+3 ayrı durumu tek bir tezkez içerisinde sınadım.
+
+776
+02:01:59,891 --> 02:02:11,072
+Belki bunu 6 metodla yapsaydım daha iyi olurdu belki. Ama o kadar dağıtmama gerek kalmadı. Bakın bana nokta atışı, farklaşmanın nerede olduğunu gösterdi.
+
+777
+02:02:11,711 --> 02:02:20,231
+Görüyorum ki Matrix nasıl film? Bakıyorum Matrix, Regula film. Onun uzun süre kiralanmasında bir problemim var.
+
+778
+02:02:20,231 --> 02:02:27,891
+Hemen gidiyorum Nuriye, bu Regula filmi görüyorum, onun uzun süre kiralanması kısmına geliyorum. Aha bir yazmışım.
+
+779
+02:02:27,891 --> 02:02:44,711
+Şimdi ben de neyse, şu bakıyorum, aa bir bütür demişti bana. Hemen düzeltiyorum, kaydediyorum ve bütün testlerini yeniden çalıştırdığımda, oh güzel yeşil çubur gördüm, içim rahat etti, görevimi yeterince layihine yerine getirdim diye biliyorum.
+
+780
+02:02:46,271 --> 02:02:47,112
+Durum bu arkadaşlar.
+
+781
+02:02:49,631 --> 02:02:54,231
+Evet, şimdi tekrar soru alabilirim sizlerle.
+
+782
+02:03:01,716 --> 02:03:02,996
+Bu sırada ders planlatır.
+
+783
+02:03:03,716 --> 02:03:04,476
+Tümme,
+
+784
+02:03:05,536 --> 02:03:07,115
+akan şişe yerli.
+
+785
+02:03:25,363 --> 02:03:27,423
+Evet, faça sorobusunak, daşlar.
+
+786
+02:03:48,148 --> 02:03:58,188
+Peki, soru yoksa, o sırada ben bakalım, belki bir sorunuz daha olur diye, ben şimdi ne yapayım, ne diyeyim, bir onu düşünelim.
+
+787
+02:03:59,188 --> 02:04:05,768
+Şimdi, şeyi tamamlamış olduk, unit testing konusunu tamamen anlatmış olduk.
+
+788
+02:04:05,768 --> 02:04:10,528
+Kanansör içerisine, şimdi bu 216. yansıya bir girebilir bakalım.
+
+789
+02:04:19,028 --> 02:04:36,247
+Şimdi iki şey yapabiliriz. Birincisi saat on bir de on geçiyor diye, hatta çeyrek geçiyor diyelim. Bir on dakika ara verip biraz daha bu konulardan bahsedip dersi bitirebiliriz, tüm ders içeriğini veya bitirmeyebiliriz.
+
+790
+02:04:36,247 --> 02:04:46,608
+Veyahut da iki martı trekingde bugünlük ders bu kadar deyip bundan sonraki ders saatimizi yapmayabiliriz de seçeneklerimiz bundan.
+
+791
+02:04:47,060 --> 02:04:51,000
+Dersi burada bırakırsak bir problem olmaz.
+
+792
+02:04:51,000 --> 02:04:54,892
+Çünkü bir kere zaten...
+
+793
+02:04:55,155 --> 02:05:15,176
+Bu ikinci vizemizi, test tuttuğunda yapacağımız ikinci vizemizi en fazla bu 215. sayfanın sonuna kadar olan içerikten yapacağız. Daha geriye de dönebiliriz. Yani belki multi trading geç eklemeyebiliriz belki. Onun için işte Ahmet Hoca nereye kadar gitti, ne kadar ek ders yapabiliriz ona bakmam gerekiyor.
+
+794
+02:05:23,155 --> 02:05:33,456
+Eşgüdüm içerisinde çalışmamız gerekiyor. Burada Ahmet Hoca'nın grubu daha şanslı oldu. Onların iki haftası gitti. Bizim bir haftamız gitti. Ahmet Hoca ile olan grubumuzda.
+
+795
+02:05:33,935 --> 02:05:50,576
+Şimdi bu nedenle bir bakacağız. Ahmet Hoca telafi derslerini tanımlayabildi mi, yapabildi mi falan filan bir konu edeceğiz. Ona göre en fazla maksimum bu 215. yansıya kadar olan, dahil olmak üzere içerikten sorumlu olacaksınız.
+
+796
+02:05:51,155 --> 02:06:01,635
+Ama işte dediğim gibi biraz daha geriye de çekebiliriz. Biraz daha az konuyu da dahil edebiliriz. Test kapsamında bakacağız.
+
+797
+02:06:01,835 --> 02:06:08,735
+Ve bu konuda sizlere haber vereceğiz. Yusis üzerinden. Toplumayı atarak da.
+
+798
+02:06:09,755 --> 02:06:15,515
+Peki, bu ikinci vizeyi nasıl yapacağız? Nasıl bir şeyler çıkacak? Biraz da ondan bahsedeyim.
+
+799
+02:06:15,515 --> 02:06:18,155
+Test tutuluyla olacağını söylemiştik.
+
+800
+02:06:18,528 --> 02:06:20,248
+Nasıl sorular çıkacak?
+
+801
+02:06:21,828 --> 02:06:27,708
+Şimdi bazı sorular kaynak kod üzerinden olacak.
+
+802
+02:06:28,428 --> 02:06:32,448
+Bazıları da teorik ezber gibi olacak.
+
+803
+02:06:33,268 --> 02:06:34,568
+Mesela örnek vereyim.
+
+804
+02:06:36,068 --> 02:06:41,048
+Şimdi burada kaldığım yazıyı değiştirmeyeyim de PDF üzerinden şey vereyim.
+
+805
+02:06:41,048 --> 02:06:42,668
+Örneki vereyim.
+
+806
+02:06:47,315 --> 02:06:47,735
+Sure.
+
+807
+02:07:04,756 --> 02:07:10,056
+Mesela, işte. Bir nesnenin, tabi, ingilizce olacak tabi.
+
+808
+02:07:11,615 --> 02:07:23,636
+What is the name of the method that is coded for changing a member field's value?
+
+809
+02:07:24,856 --> 02:07:29,896
+A, setter method. B, getter method. C,
+
+810
+02:07:30,399 --> 02:07:38,939
+Constructor method, D, initializer method, E, none of the above. Doğru cevap, E, set.
+
+811
+02:07:40,219 --> 02:07:40,939
+Arda işte,
+
+812
+02:07:42,899 --> 02:07:47,519
+the method that is used for
+
+813
+02:07:47,519 --> 02:07:53,419
+reading the value of a member field without changing is
+
+814
+02:07:54,612 --> 02:08:10,431
+Code as, nokta bakta nokta, a, setters, b, getters, c, construct, d, initializer, e, none of the book, the connector is b gibi sorularımız olabilecek.
+
+815
+02:08:11,931 --> 02:08:18,692
+Bu türden, bu kategoriden sorularımız olacak. Ondan sonra, kod üstünden de sorularımız olabilecek.
+
+816
+02:08:28,340 --> 02:08:33,980
+Mesela işte diyelim ki şu kod üzerinden her bir satırı numarada vereceğiz.
+
+817
+02:08:34,340 --> 02:08:40,320
+İşte 0.1. satır şu package.np01a dediği, 0.2 dediği, public class k dediği.
+
+818
+02:08:40,660 --> 02:08:48,380
+Yani şurada şu Eclipse'in yaptığı bu her satırı numaralı olarak göstermenin aynısını yapacağız.
+
+819
+02:08:57,779 --> 02:09:00,899
+Burada diyelim ki, ne diyoruz mesela?
+
+820
+02:09:01,619 --> 02:09:13,699
+Şu satırı boş bırakacağız. Construct'a da şu plate atadığımız satırı boş bırakacağız. Ondan sonra acaba şu getter metodunun içerisinde boş bırakacağız.
+
+821
+02:09:13,699 --> 02:09:19,319
+Diyelim ki setter metodunun içerisinde boş bırakacağız ve introduce self metodunun içerisinde boş bırakacağız.
+
+822
+02:09:20,020 --> 02:09:28,539
+Bunların artık satır numarası kaç olacaksa? 1, 2, 3, 4, 5, 6, 7, 8, 5, 8.
+
+823
+02:09:29,300 --> 02:09:30,840
+9-10-15
+
+824
+02:09:31,347 --> 02:09:35,927
+12, 13, 14, 11 ve 14. satırlar boş olacak.
+
+825
+02:09:35,927 --> 02:09:55,608
+Soru, işte aşağıdaki programındaki şu satırda kaçıncı satır oluyorsa, o satırın yazılabilmesi için, o satırın değerleme hatası vermemesi için, yukarıdaki ya da aşağıdaki kodda hangi numaralı satıra hangi komutun yazılması gerekmektedir?
+
+826
+02:09:55,608 --> 02:09:59,007
+İşte A, B, C, D, E ışıkları, doğrı ışık, işte şu.
+
+827
+02:09:59,347 --> 02:10:04,167
+5. satıra play taşıtı, thread, nr dememiz gerekmektedir.
+
+828
+02:10:04,688 --> 02:10:04,867
+7.
+
+829
+02:10:05,728 --> 02:10:15,068
+Veyahut da yine işte bir kaynak kod verip bu metodun, bu kodun main metodu çalıştığında işte aşağıdaki çıktılardan hangisi elde edilir?
+
+830
+02:10:17,076 --> 02:10:33,216
+plakan bilmem ne, işte B, hiçbir şeye çıkmaz, C, derleme hatası verir, E, exception verir. Doğru cevap işte, A, plakan bilmem ne bilmem ne der gibi sorularımız olacak.
+
+831
+02:10:33,876 --> 02:10:40,356
+Hem yana class diagram hem sequence diagram üstünden de sorularımız olabilir.
+
+832
+02:10:40,956 --> 02:10:43,196
+Mesela şu şamayı veriyorum.
+
+833
+02:10:44,056 --> 02:10:47,236
+Deriz ki işte ne bileyim.
+
+834
+02:10:50,036 --> 02:10:51,656
+Ya da şey bu çok basit ya.
+
+835
+02:10:51,656 --> 02:10:52,836
+Biraz daha gidelim.
+
+836
+02:10:58,003 --> 02:11:01,463
+Araba ve galeri örneğine gidelim mesela.
+
+837
+02:11:03,463 --> 02:11:04,184
+Mesela işte.
+
+838
+02:11:04,724 --> 02:11:05,923
+Daha gelmedi konuya.
+
+839
+02:11:09,363 --> 02:11:18,884
+Diyeceğiz ki mesela bir galeride araçlar satılmaktadır. Aracın da sahibi, galerinin de sahibinin saklanması gerekmektedir sistemde.
+
+840
+02:11:19,003 --> 02:11:24,423
+Tabii bunu İngilizce yazacağız. Buna göre bu ihtiyacı karşılayan tasarım aşağıdakilerden hangisidir?
+
+841
+02:11:24,724 --> 02:11:30,583
+A şıkkı bu, B şıkkı başka bir sınıf işlemesi, C şıkkı başka bir sınıf işlemesi, D şıkkı başka bir sınıf işlemesi.
+
+842
+02:11:30,583 --> 02:11:34,844
+Doğru cevap A şıkkı bu sınıf işlemesi diyelim mesela.
+
+843
+02:11:35,667 --> 02:11:41,747
+Veya işte gelin ki şuraya geleyim sonra.
+
+844
+02:11:42,887 --> 02:11:50,107
+Diyelim ki işte şöyle bir sequence diagramın destekleyecek olan
+
+845
+02:11:51,636 --> 02:11:56,956
+Statement metodunun kaynak kodu aşağıdaki şıklardan hangisinde verilmiştir?
+
+846
+02:11:57,316 --> 02:12:00,016
+İşte farklı farklı gövdeye sahip statement metodları.
+
+847
+02:12:00,016 --> 02:12:09,936
+Doğru cevap işte şurada gördüğümüz statement metodudur.
+
+848
+02:12:09,996 --> 02:12:15,116
+O hangi şıklar verildiyse o gibi gibisinden soru türlerimiz bunlar olacak arkadaşlar.
+
+849
+02:12:15,828 --> 02:12:37,127
+ana hatlarıyla bu şekilde diyelim ki ben diyeyim 25, siz diyeyim 50 soru içeren, yani 50 soru yaparız bu arada. 50 soru 50 dakika ya da işte 60 dakika vereceğimiz bir test sınavı tanımlayacağız ve yapacağız haftaya.
+
+850
+02:12:39,604 --> 02:12:55,963
+Eğer şimdi test sınavında sistemden kaynaklanan hatalar da olursa, mazeret sınavı ya da doğrusu bu mazeret olmuyor, telafi oluyor. Telafi sınavı başvurumuz olursa da onu tekrar test usulü yapmayacağız, onu artık klasik usulü yapacağız.
+
+851
+02:12:58,100 --> 02:13:06,600
+Yine vizenin sonuna kadar, yani multi-trading olmazsa lazım o telafi sınavında. Ama oraya kadar olurdu artık da diyelim.
+
+852
+02:13:07,960 --> 02:13:20,920
+Class, class, class, biz telafi ikinci vizesi yaparız. Test sırasında çeşitli stepsel aksaklıklarla karşılaşıp bölüme ve hocalara başvuran arkadaşlarımız için.
+
+853
+02:13:21,860 --> 02:13:23,540
+Bu da ikinci vizemiz olacak.
+
+854
+02:13:24,564 --> 02:13:31,844
+Sonra proje ödevi içinde en son şu şekilde konuştuk hocalarla ve asistan arkadaşlarla.
+
+855
+02:13:31,844 --> 02:13:52,564
+Her grubun asistanından onların sayfalarında duyuracağı bir gün ve saat aralığında onlardan landevi isteyip proje kapsamında yazdığınız kodu çalıştırıp hem nasıl çalıştığını gösterip hem de kaynak kodunu...
+
+856
+02:13:52,564 --> 02:14:20,524
+birlikte inceleyerekten, hocam şurada şunu yaptık, burada bunu yaptım, şurada şunu kodladım şeklinde hem kaynak kodunuzu anlatacağınız, hem çalıştırarak göstereceğiniz, hem test kezlerinizi de JNUT üstünden çalıştırarak göstereceğiniz, yani yaptığınız şeyin gösterimini de asistan hocalarınızdan randovu isteyerekten yapacağınız bir görüşmede olacak ve bu görüşmeyi yapıp yapmamakta projeden alacağınız.
+
+857
+02:14:20,564 --> 02:14:23,524
+Nota belli bir düzeyde katkıda bulunacak.
+
+858
+02:14:24,804 --> 02:14:27,104
+En son bunu da konuşmuştuk.
+
+859
+02:14:27,464 --> 02:14:30,764
+Siz de bu nedenle bilgilendirmek istiyorum bu durumda.
+
+860
+02:14:32,284 --> 02:14:34,564
+Evet, benim aklıma başka bir şey gelmiyor.
+
+861
+02:14:35,364 --> 02:14:40,804
+Bu ödevle, sınavla veyahut da anlattığım konuyla ilgili sorularınız olabiliriz.
+
+862
+02:14:40,984 --> 02:14:41,564
+Lütfen buyurun.
+
+863
+02:15:08,948 --> 02:15:09,468
+Hmm.
+
+864
+02:15:13,076 --> 02:15:14,195
+Bir kitab, gazabek.
+
+865
+02:15:20,595 --> 02:15:21,655
+Şarkı ile flar.
+
+866
+02:15:25,300 --> 02:15:27,619
+Kalka atlamalarına bir şey olur. Yok mu?
+
+867
+02:15:53,747 --> 02:15:54,067
+Yeter.
+
+868
+02:15:55,268 --> 02:15:57,907
+Yani onu hazırlayan haftamızı rahatlatır.
+
+869
+02:15:58,067 --> 02:15:59,447
+Ders yapacağımız bir hafta.
+
+870
+02:16:04,467 --> 02:16:15,547
+Peki, şimdi iyi yanım bu hem sınav olup da, işte diyelim ki bir saatlik bir sınav olup, bir saatte ek ders anlatma gibi bir tarifi yapma gibi bir durumumuz yok bizim grubumuz için.
+
+871
+02:16:15,807 --> 02:16:21,607
+Konuları yetiştiriyoruz, yetiştirdik yani. Belki Ahmet Hoca'nın grubunda belki böyle bir şey yapmak istedik.
+
+872
+02:16:21,607 --> 02:16:30,367
+Ama o da arkadaşlarıyla, yani öğrencilere herhalde dönüşleraktan ya belki öyle yapar, belki başka bir ek ders yapar aldık.
+
+873
+02:16:30,560 --> 02:16:34,580
+Kendisi veya nasıl tercih ederse öğrencilere iletelim.
+
+874
+02:16:36,700 --> 02:16:38,819
+O zaman bugün bu kadar yeter arkadaşlar.
+
+875
+02:16:40,340 --> 02:16:43,780
+Dinlediğiniz için ve sorularınızla katkıda bulunduğunuz için teşekkür ederim.
+
+876
+02:16:44,580 --> 02:16:48,639
+Haftaya bahsettiğim şekilde sınavımız olacak.
+
+877
+02:16:49,780 --> 02:16:54,080
+Başlangıç için 9'da mı başlatırız, 9-10 geçe mi başlatırız, selam da öyle başlatırız.
+
+878
+02:16:54,515 --> 02:17:01,536
+Ama işte dediğim gibi Ahmet Hoca'yla konuşup belki öncesinde ders anlatıp ondan sonra sınır yapmak isteyebiliriz.
+
+879
+02:17:01,955 --> 02:17:06,216
+Veya öncesinde sınav yapı sonrasında ders yapmak isteyebiliriz. Bakacağız.
+
+880
+02:17:06,855 --> 02:17:13,195
+Ona göre sınavın içeriğini hem sınav öncesinde size net olarak söyleyeceğiz.
+
+881
+02:17:13,195 --> 02:17:19,655
+İşte bu 215. sayfa dahil olmak üzere oraya kadar mı? Yoksa biraz daha geriye çekecek miyiz? diye.
+
+882
+02:17:23,700 --> 02:17:33,659
+Ama her hakkında Ahmet Hoca bu inner classları da anlatmayı yetiştirebileceği için büyük ihtimalle bu 280. yansı dahil olacak kadar bunu yaparız.
+
+883
+02:17:33,780 --> 02:17:41,520
+Ama bu en son bu bugün matirde konuştuğumuz üzerinde konuştuğumuz altı sayfayı da çalışmayı ihmal etmeyin.
+
+884
+02:17:43,987 --> 02:17:48,527
+Sınavdan önce, birkaç gün önce size söyleyeceğiz.
+
+885
+02:17:48,527 --> 02:17:54,148
+Bu maldi terimi girişle dahildir veya değildir şeklinde size de bilgi eldirmiş olacağız.
+
+886
+02:17:54,968 --> 02:17:55,167
+Peki.
+
+887
+02:17:57,012 --> 02:18:06,731
+Bu arada test usulü olduğu için bu klasik sınavda olduğu gibi bir yandan ders kaydını açıp soru almak pek fiziklül olmayacak.
+
+888
+02:18:06,852 --> 02:18:13,932
+Çünkü zaten test kendiniz verilen sürede ancak zaten yetiştirmeye çalışacaksınız.
+
+889
+02:18:14,391 --> 02:18:17,912
+Ekstradan soru sorumluluk bir durum olacağını zannetmiyorum.
+
+890
+02:18:19,731 --> 02:18:47,572
+Fakat şey olabilir, ne olabilir? Her şeyi söyleyeyim. Şimdi testte her bir soruma tek bir doğru cevabı olacak. Yanlış doğruyu götürmeyecek öyle düşünüyoruz. Şu an kadar öyle yazılar. Geçen dönemde öyle yaptık. Herhalde bir dönemde öyle yaparız ama yine de sınav başlamadan önce. Daha doğrusu sınavın açıklama kısmında bunu açıkça yazarız. Sınava girerken görürsünüz. Yanlışlar doğruyu götürecek mi, götürmeyecek mi? Onu bilerekten.
+
+891
+02:18:47,731 --> 02:18:49,172
+Ona göre hareket edersiniz.
+
+892
+02:18:50,792 --> 02:18:54,452
+Ama kesinlikle bir sorun sadece bir tane doğru yanıt olacak.
+
+893
+02:18:57,612 --> 02:19:02,072
+Bir sorunun iki tane doğru yanıtı var ve ikisinin işaretlenmesi gerekebilir bir şey.
+
+894
+02:19:02,412 --> 02:19:03,512
+Söz bulursa olmayacak.
+
+895
+02:19:03,871 --> 02:19:06,792
+Öyle bir şey varsa bile aşağıdakilerde hangi doğrusu doğrudur?
+
+896
+02:19:06,912 --> 02:19:09,051
+1 ve 2, 1 ve 3, 1, 2 ve 3.
+
+897
+02:19:10,015 --> 02:19:20,615
+Yani bir şu, iki şu, üç şu, ondan sonra şıkkı A şıkkı bir ve iki, B şıkkı iki ve üç, B şıkkı bir iki üç, D şıkkı sadece bir gibisinden o tarz sorusu olabiliriz.
+
+898
+02:19:20,615 --> 02:19:32,115
+Ama yine de A, B, C, D hatta belki E şıkkından sadece bir tanesinin işaretlenmesi doğru olacağı türden bir normal test sınavı yapacağız.
+
+899
+02:19:33,811 --> 02:19:39,072
+Peki. Bugün bu kadar. Haftaya görüşmek üzere. Sağolunla kalın, sağolunla kalın arkadaşlar.

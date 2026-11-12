@@ -1,0 +1,3435 @@
+1
+00:00:04,307 --> 00:00:05,267
+Evet, hadi bakalım.
+
+2
+00:04:11,283 --> 00:04:13,543
+Buon piaçukas ya.
+
+3
+00:04:21,204 --> 00:04:21,884
+Başlayacağız.
+
+4
+00:06:03,283 --> 00:06:09,983
+Arkadaşlar, yani saat 9'su 5'e de ettik. Katılımcı sayısı da çok az yani.
+
+5
+00:06:12,204 --> 00:06:17,444
+Şimdi bugün interfez konularını işleyeceğiz. Tamam, tamam ekran paylaşımdayım.
+
+6
+00:06:17,843 --> 00:06:25,084
+Bugün interfez konularını işleyeceğiz. Diğer grupların geldiği noktaları da aramızda bir konuştuk ettik.
+
+7
+00:06:25,603 --> 00:06:34,303
+Bu da gösteriyor ki bugün interfez konularını da işleyeceğiz ve sınavda interfez konusu dahil olmak üzere sınav sorusu düşüneceğiz.
+
+8
+00:06:35,183 --> 00:06:42,423
+Bugün biz belki biraz daha ilerleyebiliriz. Enum konusuna da geçebilirim. Bakalım gidişata göre bakacağız.
+
+9
+00:06:43,348 --> 00:06:53,468
+Bugün az olmasaydık iyiydi ama neyse artık gelmeyen arkadaşlar bu interface konularına kayıttan bakarlar.
+
+10
+00:06:54,008 --> 00:06:59,867
+Ekstra örnekler de yapmaya çalışarak bazı şeyleri size bırakıyorum zaten bu konuda.
+
+11
+00:07:00,528 --> 00:07:02,328
+Böyle terafi ederler diye düşünüyorum.
+
+12
+00:07:02,328 --> 00:07:08,088
+Şimdi, interface konusu.
+
+13
+00:07:10,259 --> 00:07:27,659
+Şimdi kalıtımdaki bazı sorunlardan bahsetmiştik geçen hafta. Bunlardan bir tanesi, aslında sorun değil bir tanesi, yani önemli bir sorun değil. Kalıtım güçlü bir araç fakat doğru kullanılması gerekiyor. Hatalı kullanılma riski var.
+
+14
+00:07:28,084 --> 00:07:40,683
+demiştik. Bu birinci dikkat edilmesi gereken nokta. İkinci dikkat edilmesi gereken nokta, çoklu kalıtımın desteklenmemesi, haklı nedenlere dayalı olarak desteklenmemesi idi.
+
+15
+00:07:40,683 --> 00:07:54,543
+Şimdi bu iki noktayı göz önünde bulundurduğumuzda, birincisi daha ağır bisiklet bir ilişki olan kalıtım ilişkisi yerine kullanılabilecek ne olabilir diye düşünülüyor.
+
+16
+00:07:55,348 --> 00:08:06,348
+İkincisi, çoklu kalıtımın sakıncası olmadan, çoklu kalıtımın sağlayabileceği bazı avantajları nasıl sağlayabiliriz diye düşünülüyor.
+
+17
+00:08:07,567 --> 00:08:09,687
+Akademide ve sektörde.
+
+18
+00:08:10,248 --> 00:08:13,848
+Ve interface kavramı ile ortaya çıkılıyor.
+
+19
+00:08:14,768 --> 00:08:21,588
+Modern nesneye yöntemlerinde bu interface kavramını desteklemeye başlıyor.
+
+20
+00:08:22,291 --> 00:08:42,052
+Bir interfezi tanımlamak için en iyi şu şekilde tanımlayayım. Aynı soyut sınıf gibi düşünün bir interfezi. Ama bir kısıtlaması ve bir serbestlisi var. Kısıtlaması şu, üye alan ekleyemiyor, özledim üye metot ekleyemiyor.
+
+21
+00:08:42,052 --> 00:08:49,052
+Daha doğrusu. Peki, interfezin kısıtlaması şu, interfeze üye alan ekleyemiyorsunuz.
+
+22
+00:08:50,067 --> 00:08:56,987
+Aslında ekleyebilirsiniz fakat bu eklediğiniz üye alan hem public hem final hem statik olmalı.
+
+23
+00:08:57,408 --> 00:09:05,408
+Onun dışında başka bir varyasyonda üye alan ekleyemiyorsunuz. Örneğin normal, private üye alan ekleyemiyorsunuz.
+
+24
+00:09:07,187 --> 00:09:14,227
+Çünkü interfazin, kullanım alanı aslında bir varlığın sorumluluklarını
+
+25
+00:09:14,707 --> 00:09:28,847
+Bir kısmını, sorumluluklarının bir alt kümesini içermek veya öte yandan başka bir deyişle bir varlık için bir rol tanımlamak şeklinde düşünebilirsiniz interface kavramını.
+
+26
+00:09:29,327 --> 00:09:42,407
+Çünkü bir interface'de metot tanımları yer alır ve bu metotları da yine soyut sınıf örneğinden yola çıkarak soyut metotlar topluluğu gibi düşünün.
+
+27
+00:09:43,827 --> 00:09:53,987
+Bu anlamda aslında bir interface, bir isimlendirilmiş metotlar kümesi ya da metot imzaları kümesi şeklinde ele alınız.
+
+28
+00:09:53,987 --> 00:10:03,867
+Ve bu metot imzaları bir arada bir rol tanımlar veya bir bakış açısı tanımlar bir varlığa.
+
+29
+00:10:04,727 --> 00:10:09,727
+Nasıl ki gerçek hayatta bir varlığın birden fazla rolü olabileceği gibi.
+
+30
+00:10:10,259 --> 00:10:20,120
+Bir sınıfta birden fazla arayüzü gerçekleyebilir. Bu da anahtar kelime bu. Gerçeklemek, bir arayüzü gerçeklemek. İngilizcesi implementation.
+
+31
+00:10:23,039 --> 00:10:33,940
+Ve interface sınıflara göre daha hafif bir yapı olduğu için bir varlık birden fazla arayüzü gerçekleyebilir.
+
+32
+00:10:35,283 --> 00:11:01,003
+Burada çoklu kalıtım sakıncaları ortaya çıkmıyor. Çünkü bu işte Diamond Inheritance gibi bahsettiğimiz problemler söz konusu değil. Çünkü interfezdeki tanımlı bütün metotlar sadece imza olarak tanımlanıyor. Bir nevi sweet metot gibi tanımlanıyor. Böyle olunca Diamond Inheritance'ın getirdiği bütün problemler ortadan kalkıyor.
+
+33
+00:11:03,508 --> 00:11:09,067
+Örneğin, şurada UML sınıf çemasında 3 tane interfez görüyorsunuz.
+
+34
+00:11:09,748 --> 00:11:17,008
+Interfezler, stereotip içerisinde interfez şeklinde işaretlenir ve interfezin adı yazılır.
+
+35
+00:11:17,620 --> 00:11:20,940
+İnterfeslerde üye alan tanımlanmayacağını söylemiştik.
+
+36
+00:11:21,720 --> 00:11:30,740
+Fakat buna rağmen kullandığımız UML tool'unun durumuna göre belki yine de 3 tane kompartman çizmeye devam ediliriz.
+
+37
+00:11:30,960 --> 00:11:32,940
+Ama üye alan kompartmanı boş bırakılır.
+
+38
+00:11:34,100 --> 00:11:42,240
+Vali UML'de zaten oraya tıklamıyorsunuz. Sadece 2 giriş alanlı birleşen çıkıyor, form çıkıyor.
+
+39
+00:11:43,283 --> 00:11:46,084
+Interfesin adını ve metotları girebiliyorsunuz.
+
+40
+00:11:48,624 --> 00:11:56,563
+Onun dışında metotları yazarken, UMLN sınır aşamasında interfesi, herhangi bir ekstra notasyonumuz yok.
+
+41
+00:11:56,563 --> 00:12:03,503
+Ama bilmeliyiz ki interfeste tanımlanan metotlar sadece imza olarak tanımlanız.
+
+42
+00:12:04,692 --> 00:12:29,731
+Şimdi burada bir customer interface'i görüyoruz. Customer interface'inde bir metot tanımlanmış. Satın alma metodu, buy. Good yani ürün, mal ve kaç adet alınacağı. Yani bir müşteri herhangi bir üründen birkaç adet alabilir anlamında bir metot tanımlanmış. Ama gövdesi değil, sadece imzası. Sonra bir de supplier, tedarikçi.
+
+43
+00:12:30,323 --> 00:12:33,763
+Ya da satıcı, ne de düşünebilirsiniz, arayüzü tanımlanmış.
+
+44
+00:12:34,803 --> 00:12:40,403
+Orada da işte belli bir adet sayıda ürünü satmaya yönelik bir metot tanımlı.
+
+45
+00:12:41,523 --> 00:12:44,263
+Bir de mesela arkadaş diye bir arayüzü tanımlanmış.
+
+46
+00:12:44,864 --> 00:12:47,124
+Arkadaşlar mesela sırlarınızı saklarlar.
+
+47
+00:12:47,124 --> 00:12:49,683
+Bunlar yönelik bir metot tanımlanmış.
+
+48
+00:12:49,783 --> 00:12:51,624
+Bir sır saklayacak gibi.
+
+49
+00:12:53,144 --> 00:12:56,803
+Şimdi bir insan hem bir müşteri olabilir.
+
+50
+00:12:57,875 --> 00:13:15,875
+Hem bir satıcı olabilir hem de bir arkadaş olabilir. Bütün bunları yapabilir. Bu nedenle sistemde tanımlı müşteri, satıcı ve arkadaş rollerini oynayabilir veya anal yüzlerini gerçekleyebilir.
+
+51
+00:13:16,532 --> 00:13:27,331
+Bir sınıf bir arayüzü gerçekliyorsa da onu da kesikli çizgili ucu ise kalıtımla benzeyen şekilde ok ile gösteriyoruz.
+
+52
+00:13:28,912 --> 00:13:33,532
+Bu interface gerçekleme bir tür...
+
+53
+00:13:34,772 --> 00:13:53,052
+Kalıtım ilişkisinden daha hafif bir ilişki. Bunu göstermek için kalıtımın kalın yani düz çizgisi yerine kesikli çizgiyle gösterilmiş. Güzel bir düşünce olmuş bu. Bu şekilde sınıf şamasında gösterilir. Peki kodda nasıl gösteririz bunu?
+
+54
+00:13:53,652 --> 00:13:58,852
+Örneğin bu custom'ın interfezlerini tanımlarken public interface custom'a diyoruz.
+
+55
+00:13:59,352 --> 00:14:03,092
+Sınıf tanımlarken class diyorduk ama şimdi interfez tanımlıyoruz.
+
+56
+00:14:03,192 --> 00:14:04,491
+Onun yerine interfez yazıyoruz.
+
+57
+00:14:05,395 --> 00:14:21,615
+Ve interface'imizde public tanımlıyoruz. Private tanımlamanın bir anlamı yok. Hatta hiç anlamı yok. Çünkü arayüz bir nesneye bir bakış açısı sağlıyor. O bakış açısı da niçin? O nesne farklı nesneleri o bakış açısından hizmet edebilsin diye.
+
+58
+00:14:22,235 --> 00:14:33,395
+Ya işte başka nesneler bu nesneye o arayüz üstünden, o bakış açısından bakabilsin, erişebilsin diye tanımlanmış. O yüzden private olarak interface tanımlamanın hiçbir anlamı yok.
+
+59
+00:14:33,395 --> 00:14:37,495
+yok. Hani belki çok ekstrem bir case
+
+60
+00:14:37,495 --> 00:14:40,775
+ile söz konusu olabilir ama yani pratikte bir anlamı yok. O yüzden
+
+61
+00:14:40,775 --> 00:14:43,955
+interfazlerimiz fark. İçerisinde şimdi
+
+62
+00:14:43,955 --> 00:14:48,555
+skr prantiz içerisinde interfazin gövdesinde tanımlanmış metodu da
+
+63
+00:14:48,555 --> 00:14:49,235
+görüyorsunuz.
+
+64
+00:14:49,600 --> 00:15:09,139
+Normal metot kodlar gibi kodluyoruz. Yani dikkat ederseniz abstract falan herhangi bir kelime yok hiçbir yerde. Metodu imzasını yazdıktan sonra noktaları koyup bırakıyoruz. Tanımımız bu şekilde oluyor. Benzer şekilde supplier ve friend arayüzleri de tanımlanmış.
+
+65
+00:15:09,875 --> 00:15:16,436
+Peki şimdi person sınıfını yazarken aradaki arayüz gerçeklerimiz ilişkisini nasıl yazacağız?
+
+66
+00:15:16,956 --> 00:15:18,235
+Şurada gördüğünüz gibi yazacağız.
+
+67
+00:15:18,775 --> 00:15:25,096
+İşte public class person, implement diyeceğiz ve gerçeklediği arayüzleri virgülere ayırarak yazacağız.
+
+68
+00:15:25,915 --> 00:15:32,655
+Bir arayüz gerçekliyorsa tabii ki hiç virgül yok ama bizden fazla arayüz gerçekliyorsa arada da virgülleri uygun sayıda koyuyoruz.
+
+69
+00:15:32,836 --> 00:15:37,015
+Ondan sonra sınıfın kodunu yazıyoruz, devam ediyoruz.
+
+70
+00:15:37,456 --> 00:15:51,175
+Burada şimdi bu person, sınıfı, customer, supply, referent arayüzlerini gerçeklediği için bu üç arayüzde de tanımlı metotları normal bir şekilde gövdesiyle birlikte kodlamak zorunda.
+
+71
+00:15:52,395 --> 00:16:00,775
+Eğer bir arayüzü gerçeklemesine rağmen bir sınıf o arayüzdeki tanımlı metodu gerçeklemiyorsa
+
+72
+00:16:01,299 --> 00:16:04,299
+O zaman o sınıf mutlaka soyuta çekilmelidir.
+
+73
+00:16:04,699 --> 00:16:05,480
+Bu da böyle bir kuran.
+
+74
+00:16:05,840 --> 00:16:08,340
+Aslında söyleyeceğiz öyle gerçeğe herhalde.
+
+75
+00:16:10,539 --> 00:16:13,500
+Temel olarak durum bu, interfazlerle ilgili.
+
+76
+00:16:17,364 --> 00:16:40,964
+Evet, interface'i niçin kullanıyoruz, niye ihtiyacımız var, ne işinize yarıyor? Az önce söylediğim gibi, varlıkların solumluluklarını gruplamaya yarıyor. Bu varlıklara birden fazla bakış açısı verebilmeyi sağlıyor. Bir sınıf kaç tane farklı arayüz gerçekliyorsa, onların her biri ona bir bakış açısı olarak düşünebilirsiniz.
+
+77
+00:16:41,875 --> 00:17:01,615
+Kılıtımın yerine kullanabiliyoruz. Çökül kalıtım ağız ve felişki açıklamaya çalıştım. Çökül kalıtımın yerine kullanabiliyoruz. Bu gibi anaçların bir veya birden fazlasına ihtiyaç duyuyorsak o zaman interfazler en uygun seçim olarak ortaya çıkıyor.
+
+78
+00:17:05,364 --> 00:17:09,104
+Şimdi kurallar nelerdir? Bakalım söylemeye atladığım bir şey olmasın.
+
+79
+00:17:10,784 --> 00:17:17,344
+Evet, bir sınıf gerçeklediği arayüzlerin ve tanımlı metotların hepsinin gövdelerini kodlamak zorunda.
+
+80
+00:17:18,708 --> 00:17:21,708
+Interfaslerde normal üye alanlar tanımlanamıyor.
+
+81
+00:17:22,568 --> 00:17:25,628
+Sadece public, final, static üçü birden olacak.
+
+82
+00:17:26,168 --> 00:17:35,307
+Bu tip üye alanlar tanımlarsanız, yani sabit, constant, sabit olarak bir üye tanımlanacaksa bunu isterseniz arayüzde tanımlayabilirsiniz.
+
+83
+00:17:36,988 --> 00:17:39,788
+Arayüzde sadece public metotlar eklenir.
+
+84
+00:17:41,248 --> 00:17:44,128
+Arayüzlerde constructor metot tanımlanmaz.
+
+85
+00:17:44,692 --> 00:17:46,391
+Ve olmaz da zaten.
+
+86
+00:17:47,851 --> 00:17:50,052
+Bir sınıf birden fazla arayüzü gerçekleyebilir.
+
+87
+00:17:50,572 --> 00:17:50,991
+Söyledik.
+
+88
+00:17:52,032 --> 00:17:59,731
+Bir de adlandırma alışkanlığı olarak genelde interface adlarını büyük ı ile başlıyorlar.
+
+89
+00:18:00,652 --> 00:18:05,731
+Örneğin aslında şuradaki bir önceki...
+
+90
+00:18:06,067 --> 00:18:17,648
+Customer interfazinin adını büyük I ve büyük C ile olmak üzere I-Customer şeklinde adlandırmak bir alışkanlık oldu sektörde.
+
+91
+00:18:18,927 --> 00:18:24,128
+Benim ders notlarımı da bu şekilde yapmadım ama aklınızda olsun.
+
+92
+00:18:25,248 --> 00:18:29,788
+İnterfazinin adını büyük I ile başlama alışkanlık olmuş.
+
+93
+00:18:32,819 --> 00:18:34,559
+Şimdi bir örnek görelim.
+
+94
+00:18:35,559 --> 00:18:43,019
+Bu örnekte, interface'lerin kullanımına yönelik ve kurallarına yönelik birçok şeyi de deneyimlemiş olacağız.
+
+95
+00:18:44,199 --> 00:18:48,340
+Şimdi bir motorlu araçlar, vergi sistemi düşünelim.
+
+96
+00:18:48,340 --> 00:18:52,019
+Ya da bilgi sistemi düşünelim. Orada vergilendirme yapılacak.
+
+97
+00:18:52,692 --> 00:19:05,331
+Düşündüğüm vergilendirme kuralları tamamen interface'leri, bütün avantajlarıyla ve özellikleri anlatabilmek için düşündüğüm bir kural seti. Yoksa gerçekte böyle olmuyor tabii ki.
+
+98
+00:19:07,471 --> 00:19:12,152
+Geçelim kurallara. Şöyle uygun görülmüş kurallar.
+
+99
+00:19:12,152 --> 00:19:19,912
+Şimdi bir kere elbette farklı araç türleri olacak. Otobüsler, arabalar, motosikletler.
+
+100
+00:19:20,288 --> 00:19:39,467
+gibi. Daha çeşitli olabilir de bu üçüne odaklanacağız. Bu araç türlerine ek olarak farklı bir kırılım daha geliyor. Bazı araçlar ticari araç, commercial vehicle olarak kullanılabilir.
+
+101
+00:19:40,147 --> 00:19:47,967
+Bazıları ise kişisel araçlar, şahsi araçlar olarak, personal vehicle olarak kullanılabiliriz.
+
+102
+00:19:49,887 --> 00:20:06,647
+Bir aracın birincisi varlık türüne göre, yani motosiklet, araba, otobüs ona göre ve ticari araç mı, şahsi araç mı olmasına göre farklı vergilendirme kuralları tanınılır.
+
+103
+00:20:07,827 --> 00:20:22,768
+Örneğin, burada üç cins ve iki, yani üç birinci kılımda üç, ikinci kılımda iki çeşit olduğundan maksimumda iki kere üç, altı farklı kural tanımlanabilir.
+
+104
+00:20:24,884 --> 00:20:31,324
+Fakat şöyle bir kural getirilmiş, denilmiş ki otobüsler şahsi araç olarak kullanılamaz.
+
+105
+00:20:31,724 --> 00:20:37,384
+Kural getirilmiş. Bu da demek oluyor ki olası beş farklı kural kullanabiliriz.
+
+106
+00:20:38,963 --> 00:20:50,384
+Bu anlamda şimdi acaba ve ayrıca işte bu farklı özellikteki araçların vergilendirmesi de çok farklı olacak.
+
+107
+00:20:51,412 --> 00:21:00,852
+Ticari araçların vergilendirilmesinde bir de amortisman diye bir kavram devreye giriyor. Amortizing.
+
+108
+00:21:01,992 --> 00:21:07,251
+Bu da şu anlama geliyor. Araçların bir yıplanma payı var haliyle.
+
+109
+00:21:08,472 --> 00:21:18,372
+Eğer ticari bir araçsa bu, onu vergilendireceğinizde her sene belli bir yıplanma payı oranında ödeyeceğiniz vergide düşüyor.
+
+110
+00:21:18,900 --> 00:21:25,960
+Bu durumda, acaba bütün bu gereksinimleri nasıl modelleriz?
+
+111
+00:21:26,660 --> 00:21:37,860
+Şimdi, tek kırılım olsaydı, o zaman belki bir vehicle soyut sınıfı ve onun altında somut alt sınıfları olan motor, seyret, araba, otobüs diyebilirdik.
+
+112
+00:21:38,300 --> 00:21:45,559
+Fakat burada iki farklı kırılım var. Birincisi bu aracın tüleri, ikincisi aracın ticari mi yoksa şahsi araç mı oldu.
+
+113
+00:21:46,228 --> 00:21:52,748
+Böyle bir durumda bu modellemeyi ancak arayüzler ile doğru düzgün biçimde yapabiliriz.
+
+114
+00:21:53,608 --> 00:21:56,268
+Commercial Vehicle Interface'i tanımlıyorum.
+
+115
+00:21:57,248 --> 00:22:01,708
+Bir de Personal Vehicle Interface'i tanımlıyorum.
+
+116
+00:22:02,528 --> 00:22:05,807
+Benim bilgi sistemimde iki çeşit dizi olur.
+
+117
+00:22:06,347 --> 00:22:10,128
+Birincisi Commercial Vehicle'ları içeren, ikincisi Personal Vehicle'ları içeren.
+
+118
+00:22:11,443 --> 00:22:21,344
+Ama tabii ki aslında bir interfezden tek bir nesne oluşturulamaz. Nasıl bir soyut sınıftan nesne oluşturulamaz? Interfez nesnesi oluşturulamaz.
+
+119
+00:22:21,543 --> 00:22:31,523
+Ama işte bu interfezi gerçekleyen sınıflardan bir tane nesne oluşturulup o interfez türünden eleman beklenen her yere gönderilebiliniz.
+
+120
+00:22:32,583 --> 00:22:35,723
+Bu anlamda modellemeyi bu şekilde yapıyorum.
+
+121
+00:22:36,500 --> 00:22:43,860
+Ayrıca her iki interfeste de get plate metodu da var. Aracın plakalı fının alınabilmesi için.
+
+122
+00:22:44,579 --> 00:22:51,559
+Ve commercial vehicle arayüzünde amortismanlı vergi hesaplama için calculate amortized tax metodu var.
+
+123
+00:22:52,420 --> 00:22:58,559
+Personal vehicle arayüzünde ise normal vergilendirme için calculate tax metodu var.
+
+124
+00:22:59,251 --> 00:23:02,851
+Calcrete Amortize Taxi metodunun iki parametresi var.
+
+125
+00:23:03,811 --> 00:23:07,432
+Şimdi birincisi temel olarak ödenmesi gereken vergi.
+
+126
+00:23:07,831 --> 00:23:09,311
+İkincisi ise mevcut yıl.
+
+127
+00:23:09,311 --> 00:23:22,451
+Çünkü aracın model yılından mevcut yıl çıkartılınıp, kaç yıl geçmişse, her yıl başından yüzde kaç amortizman uygulanmasının izini veriliyorsa, o kadar düşürülecek bir hesap yapılacak.
+
+128
+00:23:22,771 --> 00:23:26,771
+Ve sonuçta geriye o araç için ödenmesi gereken vergi miktarı.
+
+129
+00:23:27,251 --> 00:23:29,192
+Yazılacak, döndürülecek.
+
+130
+00:23:29,872 --> 00:23:38,291
+Şeyde ise, personal vehicle arayüzünde ise, calculated tax metodunda sadece bir temel bir vergi değeri verilecek.
+
+131
+00:23:38,291 --> 00:23:49,571
+Ondan sonra diyelim ki, aracın motor harcını veya başka farklı kriterlerine göre de amortizmansızı, normal vergi hesapların, o da geri döndürülecek şeklinde bir tasarım yaptık.
+
+132
+00:23:50,932 --> 00:23:54,551
+Bunu yani başka bir şekilde modellemenin pek bir yolu yok.
+
+133
+00:23:54,996 --> 00:23:58,196
+Çünkü iki farklı kılınım var.
+
+134
+00:23:58,855 --> 00:24:04,896
+Ama yine de belki aklınıza çok ilginç ve güzel bir çözüm gelirse onu da ayrıca tartışırız.
+
+135
+00:24:09,587 --> 00:24:11,587
+Evet. Şimdi...
+
+136
+00:24:12,915 --> 00:24:15,195
+Ufak bir ipucu daha vereyim.
+
+137
+00:24:15,715 --> 00:24:19,255
+Şimdi bu vergi hesaplaması çok çok farklı.
+
+138
+00:24:20,255 --> 00:24:27,275
+Birinde farklı parametre var, ötükesinde farklı parametre var ve metodların kendi içerisinde de farklı farklı kodlar göreceksiniz.
+
+139
+00:24:27,275 --> 00:24:40,915
+Eğer arada sadece ufak bir çarpan kadar fazla ya da az vergi ödeme gibi basit bir şekilde parametrize edilebilseydi bu vergiler...
+
+140
+00:24:40,915 --> 00:24:42,915
+Bu zaman belki de...
+
+141
+00:24:44,084 --> 00:24:54,023
+Bir tane soyut üst sınıf ve onun ardından işte motosiklet, araba, otobüs ve belki de bu soyut üst sınıfta bu araç ticari mi?
+
+142
+00:24:54,423 --> 00:24:59,243
+Bu bir Boolean Field ile belki öyle modellemek daha iyi olurdu.
+
+143
+00:24:59,783 --> 00:25:12,063
+Fakat bu farklı vergilerin türlerinin hesaplanmasının mantığı çok çok farklı olduğundan, bu şekilde basit bir çarpan ile parametrize edilemediğinden tek çözüm.
+
+144
+00:25:12,084 --> 00:25:27,864
+Bu şekilde interfaz kullanmaktan yapılacak bir tasarım olacak. Nasıl olacak? Şimdi commercial vehicle analizini kodluyoruz. Public interface commercial vehicle.
+
+145
+00:25:28,819 --> 00:25:34,419
+Getplate metodu tanımlı olacak ve calculate, amortize, stacks metodu tanımlı olacak.
+
+146
+00:25:34,939 --> 00:25:38,759
+Tekrarlıyorum, metodun imzasını yazıp, noktalı virgülü yazıp bırakıyoruz.
+
+147
+00:25:39,519 --> 00:25:42,459
+Aç, kıvırlık, bancaz, kapı, pırk, kıvırlık, bancaz gibi şeyler yapmıyoruz.
+
+148
+00:25:43,119 --> 00:25:47,579
+Söz dizme hatasına, bu da derleme hatasına yol açan.
+
+149
+00:25:48,243 --> 00:25:57,123
+Personal Vehicle arayüzünde de benzer şekilde Get Play metodu tanımlı ve Normal Cut Play Tax metodu tanımlı.
+
+150
+00:26:01,844 --> 00:26:20,284
+Şimdi araba sınıfını kodlarken önce bu PowerPoint üstünden geçmek istiyorum. Ondan sonra ekrançı açıp bunun çalıştırılması ve arayüz gerçeklemeyle ilgili bazı kuralların gösterilmesi için ondan sonra yapacağım. Önce şu konuyu bir görelim.
+
+151
+00:26:21,504 --> 00:26:25,203
+Peki, şimdi araba sınıfı public class K.
+
+152
+00:26:25,619 --> 00:26:37,059
+Fakat araba hem ticari araç hem şahsi araç olabileceği için implement deyip commercial maker ve personal maker o yüzlerini implement ettiğini beyan ediyoruz.
+
+153
+00:26:38,119 --> 00:26:44,199
+Peki, aracın plakası var, model yerli var ve motor hacmi var.
+
+154
+00:26:45,699 --> 00:26:48,959
+Constructor'da bu üç üyeyi de set ediyoruz.
+
+155
+00:26:50,675 --> 00:27:06,375
+Car-Crate-Tax metodu ise, şimdi temel olarak diyelim ki araçların vermesi gereken bir temel vergi var. Motor hacmiyle o vergiyi çarpıp geri döndürüyor. Böyle bir kural görülmüş.
+
+156
+00:27:07,859 --> 00:27:19,960
+Şimdi çünkü araç eğer personal vehicle olabilecekse ki olabileceğini söyledik implemented personal vehicle dediğimiz için mutlaka bu calculate tax metodunu kodlamak zorundayız.
+
+157
+00:27:19,960 --> 00:27:29,899
+Aynı zamanda commercial vehicle arayüzünde gerçeklediği için orada tanınılan calculate amortized tax metodunun da gövdesini kodlamalıyız.
+
+158
+00:27:31,419 --> 00:27:33,859
+Metodu yazıyorum, açıyorum kırmızı bahçesini.
+
+159
+00:27:34,420 --> 00:27:56,740
+Genel kural şuymuş, her yıl aracın bedelinin %10'u amortisman olarak kesilebiliriz. Ama 10 yıl sonra araç bedavaya mı gelecek? Hayır. 10 yıldan 10 yıl ve daha büyük seneler için sadece %10'u ödenecek aracın bedelinin. Daha da fazla aşağı düşmeyecek.
+
+160
+00:27:57,971 --> 00:28:04,412
+Bu yüzden önce aracın yaşını hesaplıyorum. Mevcut yıldan aracın modellerini çıkartıyorum.
+
+161
+00:28:05,291 --> 00:28:11,251
+Eğer yaş 10'dan küçükse, temel vergi çarpı motor harcımı çarpı.
+
+162
+00:28:11,251 --> 00:28:18,471
+Şimdi her sene için %10 indirim yapacağız ya, %100 indirim 1.0'dır.
+
+163
+00:28:18,847 --> 00:28:29,087
+Ama her sene için %10, edge çarpı %10. Bunu da bizden çıkartıp sonucu bestaxe çarpı engine bölümüyle çarptığımızda işte amortismanlı bedeli hesaplamış oluyoruz.
+
+164
+00:28:29,715 --> 00:28:36,715
+Yok eğer 10 yaş ve daha üstü ise de o zaman sabit olarak base tax şartlı engine veriyorum.
+
+165
+00:28:36,795 --> 00:28:45,155
+Yani esas ödenmesi gereken verginin, şahsi araç olsaydı ödülmesi gereken verginin sadece yüzde olup ödenmiş olacak.
+
+166
+00:28:45,375 --> 00:28:47,015
+O şekilde hesaplar geri döndürülüyor.
+
+167
+00:28:48,035 --> 00:28:53,015
+Onun için de LECA Modalya ve Motor Harçmet için Gettir metodları da tanımlanmış.
+
+168
+00:28:53,915 --> 00:28:54,576
+Kıdaf yani.
+
+169
+00:28:56,660 --> 00:28:59,039
+Çok bir zorlu yok aslında gördüğünüz gibi.
+
+170
+00:28:59,880 --> 00:29:01,360
+Ama işte problem karmaşık.
+
+171
+00:29:01,920 --> 00:29:05,019
+O karmaşık problemi nasıl modelleyeceğimizi bilmek lazım.
+
+172
+00:29:05,160 --> 00:29:06,920
+İnterfesler olmadan bunu yapamıyoruz.
+
+173
+00:29:09,799 --> 00:29:12,700
+Peki, otobüs sınıfına bir bakalım bakalım.
+
+174
+00:29:13,299 --> 00:29:18,200
+Otobüs sadece ticari araç olabilir, şahsi araç olamaz.
+
+175
+00:29:18,200 --> 00:29:23,400
+O yüzden public class bus, implement, commercial vehicle dedik.
+
+176
+00:29:24,339 --> 00:29:47,099
+Şunda plakası, nodalyalı ve şeyinde otobüslerin de tonajı var. Kaç ton? Ona göre vergisi hesaplanıyormuş onunla. Bu üç alanı alan constructors set ediyor bu alanı. Ondan sonra amortismallı vergiye bir bakıyoruz. Temel vergi ve şu anki yıl.
+
+177
+00:29:47,859 --> 00:30:07,079
+Şimdi burada iki farklı bu sefer kurallar. Burada motor hacmi değil de tonaja göre vergilendiriliyor ve bu sefer arada bir doğrudan orantı, bir lineer ilişki veya çarparak gitme ilişkisi yok da, belirli tonaj aralıkları için tonaj kat sayısı tanımlanmış kanunla.
+
+178
+00:30:08,400 --> 00:30:12,539
+Eğer işte tonajı bir tondan küçükse o zaman oran bir.
+
+179
+00:30:13,556 --> 00:30:19,036
+Eğer 1 ile 5 ton arasındaysa 5 hariç, oran 1.2.
+
+180
+00:30:20,036 --> 00:30:25,975
+Eğer 5 ile 10 ton arasındaysa oran 1.4.
+
+181
+00:30:26,695 --> 00:30:31,135
+Daha da ağırsa 1.6 şeklinde oran belirleniyor.
+
+182
+00:30:32,756 --> 00:30:34,556
+Onun dışında...
+
+183
+00:30:34,932 --> 00:30:48,712
+Burada da her senede %5 indirim amortisman tanımlanıyormuş otobüslerde. Kural oymuş. Bir farklılık daha koyduk.
+
+184
+00:30:48,712 --> 00:30:56,532
+O yüzden yaştan kaynaklanan oran mevcut yıl eksi model çarpı %5. Her geçen sene için %5.
+
+185
+00:31:01,332 --> 00:31:18,912
+İkiden daha fazla büyük olamaz. Yani bir noktadan sonra bedavaya gelmemeli. Çünkü 0.0-5-2, 1.00 ediyor. Yani tamamen vergiden muaf şeklinde olmuyor. Bu şekilde diyelim.
+
+186
+00:31:19,476 --> 00:31:46,135
+Bu hesabı da yaptıktan sonra işte temel vergi çarpı tonajdan gelen oran çarpı yaştan gelen oran. Tonajdan gelen oran bir yazı daha büyük bir sayı oluyor. İşte yaştan gelen oran birden daha küçük bir sayı oluyor. Tonaj arttıkça vergi artıyor, yaş arttıkça vergi azalıyor şeklinde. Böyle bir hesap yapılmış işte. Ondan sonra plakama daire ve motor hacmi içinde gettirme tozları var.
+
+187
+00:31:46,900 --> 00:31:48,060
+Olay bundan ibaret.
+
+188
+00:31:52,115 --> 00:32:05,555
+Tabii şimdi bu sınıflardan nesneler bizim araç kayıt sisteminde, tescil sisteminde iki ayrı dizinde tutulacaklar.
+
+189
+00:32:05,555 --> 00:32:10,855
+Yani ticari araçlar, commercial vehicles adını verdiğim bir dizide tutulacak.
+
+190
+00:32:11,535 --> 00:32:17,555
+Şahsi araçlar, personal vehicles adı verilen bir dizide tutulacaklar.
+
+191
+00:32:19,663 --> 00:32:23,523
+Ne gibi metotlar eklenilebiliriz bu sınıfa?
+
+192
+00:32:24,103 --> 00:32:32,103
+Örneğin bir aracı ticari araç olarak kaydettirmek için parametre olarak vereceğiz o ticari aracı.
+
+193
+00:32:32,843 --> 00:32:36,043
+Eğer ekleyebilmişsek bizi durur döndürecek.
+
+194
+00:32:37,083 --> 00:32:39,023
+Bizi neden eklenemeyebilir?
+
+195
+00:32:40,031 --> 00:32:52,231
+İki tane temel neden vardı biliyorsunuz. Birincisi dizide yer kalmamıştır. Gerçi arttırabilirsin o başka. İkincisi o araç zaten o dizide vardır. O zaman olmaz.
+
+196
+00:32:53,111 --> 00:32:57,791
+Ama şimdi burada ekstra bir şeye daha dikkat etmemiz lazım. Bir araç.
+
+197
+00:32:58,420 --> 00:33:05,580
+Hem ticari hem şahsi olarak kaydettirilemez halbette. Ya ticari olarak kaydettirilir ya şahsi olarak kaydettirilir.
+
+198
+00:33:06,080 --> 00:33:13,660
+Ticari olarak kullanımdan şahsi kullanımı geçirmek isteniyorsa ticari kullanımdan derece ettirilir, ticari kaydettirilir.
+
+199
+00:33:14,060 --> 00:33:18,940
+Onun yerine şahsi kayıdı açılır veya öteki durumda da tam tersi yapılır.
+
+200
+00:33:26,420 --> 00:33:28,980
+şeyde de aramam lazım.
+
+201
+00:33:29,980 --> 00:33:32,720
+Personal Vehicle'lar içerisinde de aramam lazım.
+
+202
+00:33:33,715 --> 00:33:55,715
+Bunu neye göre arayacağım? Commercial ve personal vehicle'larda ortak, tekil tanımlayıcı, identified plaka. Bu nedenle personal vehicle'larda search personal vehicle metodu tanımlamam, parametre olarak da plakayı vermem ve geriye de o aracı bir döndürmek gerekiyor.
+
+203
+00:34:01,715 --> 00:34:07,695
+Commercial Vehicle'ın içerisinde o plakalı aracı Search Personal Vehicle metodu sayesinde aradım.
+
+204
+00:34:08,195 --> 00:34:11,675
+Eğer geriye nal dışında bir değer dönmüşse demek ki o aracı kayıtlı.
+
+205
+00:34:12,055 --> 00:34:14,015
+O zaman false döndüreceğiz.
+
+206
+00:34:14,235 --> 00:34:17,655
+Zıcırıcılığında Commercial Vehicle'ın içerisinde ve kayıt ettirmeyeceğiz.
+
+207
+00:34:18,275 --> 00:34:21,115
+Önce sen onu bir düş kardeşim gibisinden.
+
+208
+00:34:21,115 --> 00:34:25,295
+O yüzden de Unregistered Personal Vehicle diye bir metodum var.
+
+209
+00:34:25,635 --> 00:34:29,496
+Verilen plakalı aracı Personal Vehicle olmaktan düşür artık.
+
+210
+00:34:29,715 --> 00:34:39,195
+Eğer aracı bulabilirse Boolean tool'u döndürecek ve diziden silecek ve tool'u döndürecek, abstract'e false döndürecek.
+
+211
+00:34:39,975 --> 00:34:53,255
+Bu senaryonun simetriği içinde Registr'de Personal Vehicle Metodu var, Search Commercial Vehicle Metodu var, parametre olarak plakalar ve Unregistered Commercial Vehicle Metodu var, parametre olarak plakayı alan.
+
+212
+00:34:53,895 --> 00:34:55,375
+Bunlara ihtiyacımız var.
+
+213
+00:34:59,315 --> 00:35:04,076
+Mantık nasıl olmalı? İşte bu şekilde olmalı. Kısa da söylemiş oldum.
+
+214
+00:35:04,935 --> 00:35:10,335
+Şimdi şu örneğe bir bakalım. Bir kaynak kodu olarak da bakalım.
+
+215
+00:35:10,956 --> 00:35:16,155
+Ama şimdi bakalım. Önce ne söylemişim bakalım. Şu parametrizden falan bahsetmiştim.
+
+216
+00:35:16,795 --> 00:35:20,815
+Tamam peki. Onları da söyleyeyim de ondan sonra geçeriz örneğe.
+
+217
+00:35:20,815 --> 00:35:24,695
+Bir yansı daha var bu interfezlerle ilgili.
+
+218
+00:35:26,739 --> 00:35:35,139
+Şimdi şu parametrizasyon olabilseydi ondan onu yaparız demiştik, konuşmuştuk.
+
+219
+00:35:37,300 --> 00:35:53,599
+Belki tek soyut üst sınıf yerine belki bir üst sınıf hiyerarçisi de belki düşünebilirler ama yani nihayetinde interfeze, ortaya konulanan çözüm daha hafif sıkıcı çözüm oluyor ve tercih ediliyor.
+
+220
+00:35:54,452 --> 00:36:04,212
+Bir tek şey söylemek istiyorum. Ek bilgi. İnterfazlar arasında kalıtım ilişkisi tanımlanabiliyor arkadaşlar.
+
+221
+00:36:04,212 --> 00:36:10,092
+Şimdi şu bir önceki tasarımımıza bakarsanız.
+
+222
+00:36:12,371 --> 00:36:25,011
+Şurada hem, tabii küçük oldu ama, hem commercial vehicle interfersinde getplate metodu tanımlı, hem de personal vehicle interfersinde getplate metodu tanımlı.
+
+223
+00:36:25,511 --> 00:36:33,511
+O zaman burada bu iki interfersde ortak tanımlı bir metot var. Ben tasarımımı şu şekilde de yapabilirdim.
+
+224
+00:36:33,511 --> 00:36:40,291
+Bir vehicle diye bir interfers tanımlayıp, getplate metodunu ona koyup,
+
+225
+00:36:40,371 --> 00:36:49,492
+Commercial Vehicle ve Personal Vehicle arayüzlerini bu vehicle interfazine extend edilmesini sağlayabilirdim.
+
+226
+00:36:49,492 --> 00:36:59,731
+Burada kalıtım nasıl işleyecek? Bu Getlate mezodunun tanımı Commercial ve Personal Vehicle interfazlerinde de aktarılmış olacak. Bu kadar basit.
+
+227
+00:37:02,996 --> 00:37:19,096
+Otobüs, bus sınıfında commercial vehicle interface gerçeklendiğinde hem artık o varlık bir vehicle interface üzerinden de erişilebiliniz hem de commercial vehicle interface üzerinden de erişilebiliniz.
+
+228
+00:37:20,176 --> 00:37:29,216
+Bu nedenle bus sınıfında yine hem getplate hem de calculate, amortize, tax metotlarını tanımlamak zorundayız.
+
+229
+00:37:30,547 --> 00:37:32,927
+Böyle bir şey.
+
+230
+00:37:32,927 --> 00:37:33,867
+Bir son sorun mu hocam?
+
+231
+00:37:34,607 --> 00:37:35,787
+Tabii buyurun [öğrenci].
+
+232
+00:37:38,127 --> 00:37:42,867
+Interfaislerde şey, bir kıvasın birden fazla interfejsi implement etmesine sonu yoktu.
+
+233
+00:37:43,327 --> 00:37:46,127
+Bir interfejs birden fazla interfejsi yerleştirebilir mi?
+
+234
+00:37:47,187 --> 00:37:51,087
+Bir interfejs birden fazla interfejsi extend edemez.
+
+235
+00:37:51,087 --> 00:37:54,147
+Yine çok kalıtım burada da geçerli değil.
+
+236
+00:37:54,527 --> 00:37:56,927
+Bir interfejsin bir üst interfejsi olabilir.
+
+237
+00:37:58,036 --> 00:37:59,815
+Anladım. Şükürlerim.
+
+238
+00:37:59,815 --> 00:38:19,815
+Ama isterseniz mesela commercial vehicle'ın da iki ayrı alt interfazini oluşturabilirsiniz. Yani interfaz ile arasında bir kalıtım hiyerarşisi kullanabilirsiniz. Ama bu bana çok çok da mantıklı gelmiyor doğrusu. Fakat şu örnekte mantıklı geliyor. Çünkü bu plakaları...
+
+239
+00:38:20,735 --> 00:38:30,735
+Tanımlama nedeniyle, yani çok derin tutmadıktan sonra interface arasında kalıtımda kurulabiliriz.
+
+240
+00:38:31,255 --> 00:38:38,315
+Şimdi tartışmayı biraz daha ilerleyeyim. Ondan sonra belki ara veririz veya biraz önleye bakarız.
+
+241
+00:38:38,315 --> 00:38:48,735
+Şimdi şu şeyi düşündüğümüzde, şu tasarımı düşündüğümüzde, şimdi zaten ister istemez bu ortak vehicle arasındaki...
+
+242
+00:38:48,735 --> 00:38:55,855
+Arayüzü tanımlıyken, ister istemez ticari araçları ve şahsi araçları iki ayrı dizide tutmak zorundaydık.
+
+243
+00:38:56,295 --> 00:39:10,895
+Şimdi eğer bir ortak vehicle arayüzü tanımlarsak, o vehicle türünden bir dizi tanımlayıp, onun içine hem commercial vehicle hem personal vehicle varlıklarını koyabilirim.
+
+244
+00:39:11,603 --> 00:39:20,943
+Fakat bu durumda o varlıkların sadece getplate metotlarını çalıştırabilirim. Bu vergilendirmeyle ilgili metotlarını çalıştıramam.
+
+245
+00:39:22,003 --> 00:39:34,003
+Typecasting diye bir konu göreceğiz. Onu yaparaktan yapabiliriz belki ama typecasting ya da pek fazla başvurmamamız gerektiğini söyleyeceğiz. Çok tercih edilen bir şey değil.
+
+246
+00:39:34,367 --> 00:39:44,728
+Bu nedenle bir ortak vehicle interfazı, üst interfazı olsaydı bile yine bu şekilde tutmaya devam ederdim.
+
+247
+00:39:45,027 --> 00:39:55,768
+Ha belki şurada artık search commercial vehicle, search personal vehicle değil de belki search vehicle diye bir metodum olurdu.
+
+248
+00:39:56,327 --> 00:39:59,427
+Parametre olarak da plate değil de vehicle.
+
+249
+00:40:00,000 --> 00:40:03,519
+Arayüzünü gerçekleyen nesne koyabilirdik belki.
+
+250
+00:40:03,519 --> 00:40:21,960
+O zaman da yani commercial vehicle ya da personal vehicle fark etmez hangisini register edeceksek orada işte öbür tür vehicle arama metodunu çağırmak yerine sadece search vehicle metodunu çağırsak da olabilirdi.
+
+251
+00:40:21,960 --> 00:40:27,220
+Ama bu bize çok çok da fazla bir kolaylık sağlamayacak.
+
+252
+00:40:28,000 --> 00:40:42,119
+Özellikle kanun istiyor. Ya kardeşim bir araç ya çiçeridir ya şahsidir. Bunun bu şekilde mantıksız olarak ayrılması gerekiyor. O zaman onların kaydını tuttuğun defterleri, dizileri de ayırmak en mantıklısı zaten.
+
+253
+00:40:42,119 --> 00:40:55,980
+Bu nedenle şeyin şurada gösterdiğimiz şekilde bir ortak üst interfez tanımlamanın tek şeyi yararı.
+
+254
+00:40:56,000 --> 00:41:04,019
+İşte public string, getplate satırını iki ayrı yerde tekrarlamamak.
+
+255
+00:41:04,139 --> 00:41:06,059
+Yahu tek bir satırı tekrarlamamak için.
+
+256
+00:41:06,452 --> 00:41:14,912
+Koskoca bir interface tanımlayıp orada o şeyi tanımlamak yani attın taş ürküttün kurbağaya değmiyor.
+
+257
+00:41:14,912 --> 00:41:24,432
+Ama aralarında bir metoddan daha fazla ortaklık olsaydı bu iki alt arayüz içerisinde o zaman belki düşünülebilirdi.
+
+258
+00:41:26,152 --> 00:41:29,392
+Bunları sizinle tartışmak, konuşmak isterim.
+
+259
+00:41:34,356 --> 00:41:36,596
+Bakalım, koda bakalım artık.
+
+260
+00:41:38,155 --> 00:41:38,496
+Biraz.
+
+261
+00:41:47,860 --> 00:41:49,079
+Nareydi bu da.
+
+262
+00:41:50,660 --> 00:41:52,180
+07 paketi.
+
+263
+00:41:52,460 --> 00:41:52,660
+Peki.
+
+264
+00:41:57,816 --> 00:42:11,884
+Nerede?
+
+265
+00:41:57,684 --> 00:41:59,764
+Doğru anlamına kodlar dökümesi de olan.
+
+266
+00:42:00,003 --> 00:42:00,624
+Tamam. Bu.
+
+267
+00:42:02,364 --> 00:42:03,903
+7. Buradayız.
+
+268
+00:42:04,144 --> 00:42:04,304
+Peki.
+
+269
+00:42:05,884 --> 00:42:06,164
+Şimdi.
+
+270
+00:42:07,443 --> 00:42:11,503
+Dikkat ederseniz burada ortak vehicle arayüzünü koymadım.
+
+271
+00:42:16,228 --> 00:42:23,228
+Nerede?
+
+272
+00:42:15,795 --> 00:42:19,155
+Personal Vehicle kodu yansıda gördüğünüz gibi.
+
+273
+00:42:20,016 --> 00:42:24,955
+Bundan sonra Commercial Vehicle arayüzü yansıda gördüğünüz gibi.
+
+274
+00:42:26,795 --> 00:42:33,655
+İşte motosikleti eklemedim. Kolayca eklediniz. Arabayı ve otobüs eklemek yeter.
+
+275
+00:42:34,495 --> 00:42:39,735
+Bas sınıfının kodu aynı yansıda gördüğünüz gibi.
+
+276
+00:42:40,467 --> 00:42:45,327
+K sınıfının kodu da aynı, yansıda gördüğünüz gibi.
+
+277
+00:42:48,007 --> 00:42:56,648
+Sonra mesela bir tane örnek vergi hesaplama bir işi yapalım.
+
+278
+00:42:59,648 --> 00:43:03,648
+Şimdi önce bir iki...
+
+279
+00:43:04,628 --> 00:43:18,067
+ticari araç, şahsi araç bir tanımlayalım. Belgesini hesaplattırın. Esas daha sonra işte interface tanımlamanın getirdiği zorunluluklar falan filan gibi şeyleri uygulamalı olarak göstermiş.
+
+280
+00:43:19,288 --> 00:43:30,327
+Mesela şimdi şu dokuzuncu satırda bir karnesnesi tanımlıyorum. İşte plakası, model yılı ve motor hacmi şeklinde.
+
+281
+00:43:30,996 --> 00:43:38,756
+Şimdi bu araç, araba, ticari araç da olabilir, şahsi araç da olabilir. İki arayüzde gerçekliyor.
+
+282
+00:43:39,356 --> 00:43:44,195
+Onun normal vergisini hesaplamak için calculate tax metodunu çağırıyorum.
+
+283
+00:43:44,936 --> 00:43:47,695
+Bin lira temel vergiymiş, onu veriyorum.
+
+284
+00:43:48,340 --> 00:43:53,580
+Ama ticari araç olarak düşündüğümde amortismanın vergisi nasıl olur?
+
+285
+00:43:54,160 --> 00:43:55,800
+O anda 1000 lira temel vergi.
+
+286
+00:43:56,140 --> 00:43:58,840
+Şu anda yılda 2017'ymiş diye düşünüyorum.
+
+287
+00:43:59,220 --> 00:44:04,960
+İşte 2 senelik amortismanın %20 daha az vermesini bekliyorum.
+
+288
+00:44:04,960 --> 00:44:05,880
+Diyelim.
+
+289
+00:44:06,940 --> 00:44:12,180
+Şimdi şunlar yine ekstra deneme kodları.
+
+290
+00:44:12,820 --> 00:44:14,360
+Şunları bir şimdi kapatıyorum.
+
+291
+00:44:14,900 --> 00:44:19,339
+Sonra sizlerle üstünde aç-kapağı şekilde oynarız, ederiz.
+
+292
+00:44:20,500 --> 00:44:22,259
+Tamam, pekala.
+
+293
+00:44:23,139 --> 00:44:24,039
+Dostalım bakalım.
+
+294
+00:44:29,172 --> 00:44:40,931
+Evet. Normal 1800 ama amortismanlığı olduğu zaman %20 azaltıyoruz. İşte iki sene nedeniyle. 1440'a denk geliyor.
+
+295
+00:44:40,931 --> 00:44:50,851
+Şimdi ticari vergisi diyelim de ne olduğunu daha net görelim.
+
+296
+00:44:55,411 --> 00:45:04,671
+Yani olay çalışıyor, onu söyleyeyim. Şimdi isterseniz bunun ayrıntısını didiklemeden önce verelim aramızı isterseniz.
+
+297
+00:45:05,891 --> 00:45:12,991
+Orada belki sorularınız da olur. Hem genel interface üzerine veya örnek üzerine.
+
+298
+00:45:12,991 --> 00:45:17,471
+Bu nedenle şimdi 09.45 diyorum.
+
+299
+00:45:18,691 --> 00:45:19,671
+09.45 ile.
+
+300
+00:45:20,179 --> 00:45:24,499
+09.55 arasına bir 10 dk olarak koyalım arkadaşlar.
+
+301
+00:56:22,387 --> 00:56:27,788
+Arkadaşlar, ara süremiz doldu. Kaldığımız yerden devam edeceğiz interface konusuna.
+
+302
+00:56:29,108 --> 00:56:36,988
+Şimdi, kod üstünden örnekleri yapacaktık, çalışacaktık diyordum.
+
+303
+00:56:37,728 --> 00:56:46,428
+Şimdi bu interface'lerin kurallarına yönelik bir iki şey söylemiştim. Onları bir uygulamalı olarak da göstereyim.
+
+304
+00:56:48,755 --> 00:57:06,735
+Şimdi, personal vehicle'da hem calculate tax hem get plate metodu var. O yüzden şimdi car sınıfı da bu personal vehicle arayüzünü de gerçeklediği için bunun mutlaka calculate tax metodu olmalı.
+
+305
+00:57:17,139 --> 00:57:26,539
+İşte diyor ki, bakın hatayı sınıfa getirdi. Diyor ki, işte bu K sınıfı ya inherited abstract method şeklinde söylüyor.
+
+306
+00:57:26,539 --> 00:57:37,519
+Yani aslında arka planda yani ne bir solid sınıf var ne de işte kalıtım var ama interface, hafif sanki bir interface'de bir solid sınıf gibi düşünebilirsiniz demiştim ya.
+
+307
+00:57:37,739 --> 00:57:45,139
+İşte o anlamda söylenebilecek bir hata mesajı. İşte mutlaka bu K-P-Tax metodu.
+
+308
+00:57:45,139 --> 00:58:07,199
+Bu konuda gerçeklemelidir diyor. Ve önerdiği quick fixler ise ya işte implement edilmeyen metotları ekle diyor veyahut da K sınıfını soyut yap diyor. Bu ikisinden birinin yapılması gerekiyor veyahut da işte esas yapılması gereken tabi bu calculate tax metodunu kodlamak. Birincisi bu.
+
+309
+00:58:12,211 --> 00:58:33,152
+Şimdi her ne kadar bu car sınıfı, car create text metodunu ve get plate metodunu gerçeklese de ben ona implement personal vehicle yazmadığım sürece bir carı bir personal vehicle arayüzü üzerinden kullanamam.
+
+310
+00:58:33,152 --> 00:58:35,411
+Şimdi onu göstermek istiyorum size.
+
+311
+00:58:38,291 --> 00:58:40,531
+Bunu şöyle söyleyeyim.
+
+312
+00:58:41,051 --> 00:58:47,851
+Şimdi mesela şurada dikkat ederseniz şöyle bir şeyler yapmışım.
+
+313
+00:58:48,731 --> 00:58:51,192
+Belki oradan bir şeyler çıkartmış. Şöyle bir şey söylemek istiyorum.
+
+314
+00:58:52,511 --> 00:58:53,631
+Bunu da yapabilirdim.
+
+315
+00:58:55,311 --> 00:59:02,692
+Şimdi tanımım nesne türünden olmayacak fakat interfez türünden olacak.
+
+316
+00:59:03,251 --> 00:59:04,811
+Böyle bir şey yapayım size.
+
+317
+00:59:05,684 --> 00:59:09,884
+Ne demiştik?
+
+318
+00:59:10,124 --> 00:59:14,584
+Personal Vehicle.
+
+319
+00:59:17,264 --> 00:59:18,983
+Other Cars.
+
+320
+00:59:19,864 --> 00:59:20,664
+Eşittir.
+
+321
+00:59:21,304 --> 00:59:22,884
+Ya da Other Vehicle mı diyeyim?
+
+322
+00:59:23,884 --> 00:59:25,084
+Vehicle.
+
+323
+00:59:27,084 --> 00:59:28,043
+PV.
+
+324
+00:59:28,604 --> 00:59:29,443
+Personal Vehicle.
+
+325
+00:59:30,195 --> 00:59:35,996
+Eşitir new car eşitir 34.
+
+326
+00:59:39,996 --> 00:59:43,976
+Ve hatta model yılını koyalım.
+
+327
+00:59:45,695 --> 00:59:47,916
+Ve motor hacmini koyalım.
+
+328
+00:59:48,275 --> 00:59:49,655
+1.6 renk.
+
+329
+00:59:50,291 --> 01:00:09,251
+Şimdi bakın dikkat ederseniz bir araba nesnesini oluşturur oluşturmaz bir personal vehicle türünden bir işaretçiye atadım. Bunu yapabilirim. Nasıl kalıtım ilişkisinde alt sınıftan bir nesneyi direkt ilklendirip üst sınıftan nesne türünden bir işaretçiye atayabiliyordum.
+
+330
+01:00:09,715 --> 01:00:12,955
+Benzer işlemi arayüzlerde yapabilirim.
+
+331
+01:00:13,295 --> 01:00:28,175
+Car sınıfı, personal vehicle arayüzünü gerçeklediği için, bunu işte car sınıfının içerisinde implement personal vehicle diyerekten deklar ettiğimiz, belirttiğimiz için, burada böyle bir şey yapabilirim.
+
+332
+01:00:29,172 --> 01:00:42,092
+Ve artık ben bu arabayı personal vehicle türünden bir işaretçiye atadığım için bu işaretçi üzerinden artık sadece calculate tax metodunu çağırabilirim.
+
+333
+01:00:42,492 --> 01:00:48,152
+Calculate amortized tax metodunu yani ticari araçlar için olan metodu çağıramam.
+
+334
+01:00:48,463 --> 01:00:52,224
+Çünkü bu arayüz personal vehicle arayüzü.
+
+335
+01:00:52,224 --> 01:01:02,224
+Her ne kadar içindeki kar olsa da ve o kar aslında commercial vehicle arayüzünü de gerçeklese de ben artık bu...
+
+336
+01:01:02,708 --> 01:01:26,487
+Araca, 34 PV ile akıllı araca, bir personal vehicle bakış açısı üzerinden bakıyorum. Sadece onun üzerinden erişebilirim. Burada onun örneğini görüyorsunuz. Ekrana yazdılarım diyelim ki. 2017'deki vergisini ekrana yazdıracağım. O yüzden seyitse rahatlatayım.
+
+337
+01:01:29,811 --> 01:01:32,932
+Diyeceğim ki, şurada yazdasın işte.
+
+338
+01:01:35,932 --> 01:01:37,092
+Desikim ki,
+
+339
+01:01:39,231 --> 01:01:41,972
+pv vergisi.
+
+340
+01:01:41,972 --> 01:01:44,952
+İşte, ekran yazsın orada.
+
+341
+01:01:52,851 --> 01:02:16,652
+Evet. Şimdi, tabii bunun motor hacmi daha büyük. Motor hacmi farklı, 1.6. Şimdi şu arabanın, bir de ayrıca normalde şey, 1800 o başka. Şimdi onu da işte gördüğünüz gibi Pivenin de vergisini hesapladı ve yolladı.
+
+342
+01:02:17,172 --> 01:02:25,271
+Ve sadece şey üzerinden, şahsi araç olaraktan eleşebildik. Bunu yapabildik.
+
+343
+01:02:26,192 --> 01:02:35,831
+Şimdi bir de söylemek istediğim şu, ben bütün bunları, bu kırı, implement personal vehicle diye beyan ettiğim için oldu.
+
+344
+01:02:44,659 --> 01:03:02,039
+Kaydettim. Her ne kadar bu araba sınıfında personal vehicle'da tanımlanmış olan calculate tax ve get plate metotları var. Özellikle calculate tax metodu var.
+
+345
+01:03:03,572 --> 01:03:22,952
+K sınıfı bu personal vehicle arayüzündeki tüm metotları gerçekleme şartını sağlamakla birlikte ben personal vehicle implement ediyorum diye beyan etmediği için artık bakın bu arabayı bir personal vehicle interface türünden işaretçiye atayamıyorum artık.
+
+346
+01:03:23,215 --> 01:03:49,316
+Aslında her türlü şart karşılanıyor, her türlü metodu gerçekliyor. Fakat bunu deklare etmiyor. Ben bu arayüze üzerinden erişilebilmeye açıyorum şeklinden bildirmesi de lazım. Bu nedenle sadece bu ilgili arayüzdeki metotları tanımlamak yetmiyor. Mutlaka bunu gerçeklediğini implement kelimesiyle belirtmek de gerekiyor. Mutlaka.
+
+347
+01:03:49,972 --> 01:03:51,612
+Bunu söylemek istiyorum.
+
+348
+01:03:52,211 --> 01:03:53,271
+Notlarda yardımıyor.
+
+349
+01:03:53,371 --> 01:03:56,251
+Bunu uygulama ile göstermeyi tercih ediyorum.
+
+350
+01:03:56,251 --> 01:03:57,251
+İşin bu kısmını.
+
+351
+01:04:00,291 --> 01:04:05,251
+Onun dışında başka ne yapabilirim?
+
+352
+01:04:07,791 --> 01:04:15,192
+Mesela, mesela bakın, koment dediğim noktalardan bir yola çıkıp, acaba önemli bir şey ne söyleyebilirim?
+
+353
+01:04:15,572 --> 01:04:16,472
+Diyelim, bakalım.
+
+354
+01:04:17,396 --> 01:04:27,896
+Mesela şu noktada, mesela 14. satırlardan, şimdi nereye kadar şey diyor?
+
+355
+01:04:27,896 --> 01:04:29,896
+Bir dakika.
+
+356
+01:04:36,896 --> 01:04:42,836
+Tekrar tanımlamaya çalışıyorum. Orada da bir pv demişim falan. O fazlalık konuştuğu ikiye tanımlamak lazım.
+
+357
+01:04:44,436 --> 01:04:49,916
+Peki. Şimdi mesela bakın, commercial vehicle türünden bir işaretçi.
+
+358
+01:04:51,027 --> 01:05:15,027
+nesne tanımladım ve bir araba oluşturup onu atladım mesela. Sonra bir başka bir ticari araç daha tanımladım. Bu da otobüs mesela. Ve işte commercial vehicle türünden bir işaretçi orayı. Bu daha yukarıda tanımlamış oldum. EK nesnesini ataya bildim. Çok da farklı bir şey değil. Yani şurada yaptığımdan...
+
+359
+01:05:15,572 --> 01:05:23,132
+Şu 11. satırda yaptığımdan daha kalmaşık bir şey değil, daha az kalmaşık bir şey. Ama tabii yapabiliyoruz. Öyle göstereyim.
+
+360
+01:05:23,751 --> 01:05:26,112
+Şimdi, yalnız şu özellik de var.
+
+361
+01:05:28,916 --> 01:05:47,615
+Personal Vehicle, şimdi bu EKAR, çünkü account nesnesi, car sınıfı hem Personal Vehicle hem Commercial Vehicle arayüzlerini gerçeklediğinden, ben istersem aynı EKAR nesnesini, ister Personal Vehicle türünden tanımladığım bir işaretçiye,
+
+362
+01:05:52,340 --> 01:05:59,539
+Ticari araç türünden tanımladığım bir işaretçi atayabiliyorum. Hiçbir şey fark etmeden.
+
+363
+01:06:00,980 --> 01:06:11,300
+Ve hatta şimdi CME'nin ve PME'nin ayrı ayrı vergilerini hesaplattırıp ekrana yansırabilirim mesela.
+
+364
+01:06:13,220 --> 01:06:15,139
+Şöyle yaptığım gibi yapayım mesela.
+
+365
+01:06:22,804 --> 01:06:40,224
+Şimdi, commercial vehicle vergisi, birisi personal vehicle vergisi, şunu commercial vehicle cm, öyküsü de personal vehicle tvv diyorum.
+
+366
+01:06:40,224 --> 01:06:41,483
+Burada şey,
+
+367
+01:06:42,291 --> 01:07:08,851
+Tabii şimdi bu base text yıl değil aslında. Buraya bir vergi bir şey vermek istiyorum. Base text'e gelince bin vermişiz. Ama commercial vehicle'da da işte base text ve yıl şeklinde parametreleri vereceğiz. Calculate amortized text diyeceğiz ama tabii ki. Bakın yani calcate text hata veriyor. GM commercial vehicle türünden. O yüzden onu da ancak calcate amortized.
+
+368
+01:07:09,907 --> 01:07:12,708
+TZTax'ı kağırabilirim.
+
+369
+01:07:13,987 --> 01:07:15,028
+Bu şekilde.
+
+370
+01:07:15,807 --> 01:07:19,927
+Şu an markalda normal bir commercial vehicle tanımlanmış ve atanmış.
+
+371
+01:07:20,108 --> 01:07:24,608
+Az önce şu personal vehicle'a 12. satırda yaptığına benzer numara.
+
+372
+01:07:24,947 --> 01:07:26,548
+İşte bunları da çalıştırabiliyorum.
+
+373
+01:07:26,907 --> 01:07:29,967
+Şu an şu en ağırlığın bir anlamı yok.
+
+374
+01:07:30,208 --> 01:07:31,708
+Yani tanımlamış ama kullanmamışım.
+
+375
+01:07:31,768 --> 01:07:33,248
+O yüzden oraya bir warning veriyor.
+
+376
+01:07:33,827 --> 01:07:34,528
+Bakmayın ona.
+
+377
+01:07:37,844 --> 01:07:43,304
+Karıştırabiliyorum da. Yani herhangi bir runtime hatası falan şunu bunu vermiyor.
+
+378
+01:07:45,364 --> 01:07:47,023
+Şey bu. Durum bu.
+
+379
+01:07:48,023 --> 01:07:53,284
+Şimdi buraya kadar olan konulardan sorularınız varsa onları alayım arkadaşlar.
+
+380
+01:07:54,744 --> 01:07:58,304
+Veya şu yaptığınızı anlamadım dediğiniz şeyler varsa açıklayalım.
+
+381
+01:08:20,083 --> 01:08:31,043
+Belki şu Vehicle Chain'i oynarız. Belki. Ama onun için şu Vehicle Registration'la da bir şeyler yapmak yararlı olabilir.
+
+382
+01:08:31,604 --> 01:08:38,104
+Sizlerin soru düşünürken ben bakalım neler yapmışım zamanında şu maker registration'a.
+
+383
+01:08:38,444 --> 01:08:40,564
+Bir şeyler yapmış mıyız, bir şeyler kodamış mıyız?
+
+384
+01:08:40,984 --> 01:08:44,104
+Tamam, bir şeyler kodamışız. Tamam, onun üstünden bir walkthrough yaparız.
+
+385
+01:08:44,543 --> 01:08:51,703
+Sözde söylediğim şeylerin nasıl aslında kodak dökeceğiminde bir örneğini vermiş oluruz.
+
+386
+01:08:51,703 --> 01:08:57,224
+Tamam, peki. Ama sizin sorularınız varsa bir onu alacağım şimdi.
+
+387
+01:09:17,268 --> 01:09:23,167
+Peki, o zaman nasıl bir Vehicle Registration Sistemi yapılabilir? Bir ona bakalım.
+
+388
+01:09:23,167 --> 01:09:30,747
+Şimdi bunun üstünde aşırı didiklemeyeceğim. Çünkü bir sonraki konumuz generic sınıflar.
+
+389
+01:09:31,327 --> 01:09:37,228
+Tabii bugün girmeyiz o konuya. Generic sınıflar ve generic veri yapıları, bunların kullanımı.
+
+390
+01:09:37,768 --> 01:09:45,167
+Bunlar bize çok rahatlık sağlayacak. Yani işte bu yıldız ilişkisini bizlerle tutmaktansa...
+
+391
+01:09:45,268 --> 01:09:49,427
+siteler ve tablolar şeklinde tutmak bizi çok açıdan rahatlatacak.
+
+392
+01:09:49,708 --> 01:09:51,628
+Onları uygulamalı olarak göreceğiz.
+
+393
+01:09:52,988 --> 01:09:58,888
+Önceki haftalarımızda da bu diziler üzerinden bu yıldız ilişkisini kodladık, yaptık.
+
+394
+01:10:00,000 --> 01:10:12,300
+Uygulamada da yaptınız. O yüzden onu daha fazla didiklemeyeceğim. Eğer siz isterseniz belki sınav hazırlığı açısından değişik şeyler yapmayı düşünebilirsiniz.
+
+395
+01:10:12,300 --> 01:10:22,000
+Veika Registration System üzerinden. Benim yazmış olduğum kodu direkt göz aradırıp kendine sıfırdan bir şeyler yazmaya çalışabilirsiniz.
+
+396
+01:10:23,091 --> 01:10:49,111
+Çünkü o yıldız ilişkisi de sınav içeriği dahilinde. Sorumluyuz, orası ayrı mesele ama hani çünkü labda yaptınız, ne yaptınız ama sorabiliriz de yani. O yüzden sınavda geldiğimiz ortak nokta diğer gruplarla bu interfaz konuları da dahil olmak üzere en baştan bu interfaze kadar interfaz dahil olmak üzere bir sınav içeriği olacak.
+
+397
+01:10:49,652 --> 01:10:55,292
+Sonraki ders saatimizde enumu işleriz ama onu dahil etmeyiz.
+
+398
+01:10:55,551 --> 01:10:59,372
+Yani dahil etmeyiz diğer grupların da ilerlemesini düşündüğümüzde.
+
+399
+01:11:01,532 --> 01:11:06,252
+Ahmet Hoca işlemiş ama Mehmet Hoca işleyemeyecek.
+
+400
+01:11:06,471 --> 01:11:10,792
+Bu nedenle interface dahil olacak şekilde sınavı yaparız.
+
+401
+01:11:12,051 --> 01:11:18,692
+Bu sırada biraz da oyalandım. Sizden soru gelir mi diye ama zaten az kişilse soru olmayabilir.
+
+402
+01:11:20,091 --> 01:11:23,152
+Şimdi bu arada tam sıkıntı şey geldi.
+
+403
+01:11:25,692 --> 01:11:28,811
+Peki bakalım şimdi nasıl bir şeyler yapmışım.
+
+404
+01:11:29,351 --> 01:11:33,951
+İşte sınıf işlemasında yer aldığı üzere ticari araçları ayrı.
+
+405
+01:11:34,355 --> 01:11:36,975
+kişisel araçları ayrı dizilerde tutuyorum.
+
+406
+01:11:37,635 --> 01:11:42,635
+Tabii yani dizi üstünden çalıştığımızda dizide kaç eleman var bunları tutmak lazım.
+
+407
+01:11:43,255 --> 01:11:46,095
+Bir de maksimum kapasite 30 diyerekten şey etmişim.
+
+408
+01:11:47,055 --> 01:11:55,255
+Yani gerekse kapasite evet genişlikle bilinir ama yani dediğim gibi çok fazla didiklemeyeceğiz artık bu yıldız ilişkisi olaylarını.
+
+409
+01:11:56,255 --> 01:12:00,376
+Sadece işte konstruktörde dizilere yer ayırmayı unutmayalım.
+
+410
+01:12:00,787 --> 01:12:05,387
+Ondan sonucuma. Bakalım. Search Commercial Vehicle bir özel durumu var mı?
+
+411
+01:12:05,987 --> 01:12:15,387
+Yok, hiçbir özel durumu yok. Plakayı alıyor parametre olarak. Commercial Vehicle stilisinde for each döngüsünü kullanaraktan arıyor.
+
+412
+01:12:16,427 --> 01:12:23,667
+Her bir elemanın plakasına bakıp verilen plakayla büyük af, küçük af fark etmeden eşitse o zaman aracı döndürüyor.
+
+413
+01:12:23,667 --> 01:12:28,487
+For döngüsü bitti, aracı döndüremedi, yani bulamadı. O zaman da null döndürüyor.
+
+414
+01:12:28,787 --> 01:12:53,787
+Metot. Zor değil artık sizin için bu. Peki, zilce start commercial vehicle'a bakalım. Parameter olarak bir commercial vehicle oluyor. Şimdi, ne yapmamız gerekiyordu? Bir, bu araç hem zaten daha önce bir commercial vehicle olarak tanımlanmış olmamalı, hem de aynı zamanda bir personal vehicle olarak tanımlanmış olmamalı.
+
+415
+01:12:54,676 --> 01:13:03,396
+Bu nedenle gelen aracın plakasını alıp onu Search Commercial Vehicle metoduna verdiğimizde
+
+416
+01:13:03,764 --> 01:13:17,203
+Eğer geriye naz dışında bir şey dönmüşse, demek ki bu araç, en azından bu plakalı araç, aynı plakalı bir araç, aynı plakadan iki tane olamayacağına göre bu araç diyebiliriz.
+
+417
+01:13:17,203 --> 01:13:26,203
+Bir sahtekarlık söz konusu değilse. Bu araç, commercial vehicle olarak şey dönemez, kalit edilemez. O yüzden...
+
+418
+01:13:26,224 --> 01:13:41,844
+nadir de başka bir şey olursa, nal olmayan bir şey, onun şu tarafta nal olmayan bir şey gelirse, nal olmayan bir şey, yani not nal, nala eşit değildir ifadesi true olarak değerlendirecek.
+
+419
+01:13:42,423 --> 01:13:53,923
+Öbür koşulda or olduğu için true ya da false olmasına fark etmeden şu bileşen true olduğu için ifin içerisine girecek ve return false deyip işte kalit etmeden, eklemeden, diziye eklemeden döndürecek.
+
+420
+01:13:54,224 --> 01:14:03,824
+Keza, tamam o araç belki işte ticari araçlar arasında kayıtlı değil ama belki kişisel araçlar arasında kayıtlı olabilir.
+
+421
+01:14:03,824 --> 01:14:14,824
+Benzer şekilde eklenmek isteyen aracın plakısını alıp ticari şahsi araç olarak da aradığımızda geri dönen nal olmayan bir şeyse o zaman yine ifin içerisine girip bir öncekinin...
+
+422
+01:14:15,231 --> 01:14:25,431
+İfadenin, true ya da false olmasına bakmaksızın, orada ikinci bileşen, yani sadece bir bileşen tut olsa yetiyor ya. O yüzden yine ifin içerisine gidip, return, false deyip geri dönecek.
+
+423
+01:14:26,791 --> 01:14:33,431
+Şey yapmamışım bu arada, yapsaymışım iyi olmuş. Yani sayıya bakmamışım. Yani dizide yer kalmamış olabilir.
+
+424
+01:14:34,652 --> 01:14:39,431
+Onu da bir yapmak lazım. Hazır elinizden yemişken yapalım diyeyim.
+
+425
+01:14:42,452 --> 01:14:46,612
+Or, şey, ne?
+
+426
+01:14:47,471 --> 01:14:51,872
+Konuşur ve ikir kant.
+
+427
+01:14:53,672 --> 01:14:55,852
+Eşit olmuşsa artık
+
+428
+01:14:57,076 --> 01:15:02,175
+Şimdi max kapasiti mi diyeyim yoksa length mi diyeyim?
+
+429
+01:15:02,456 --> 01:15:07,515
+Length desem daha iyi olur. Belki kapasiteyi arttırma durumu falan söz konusu olabilir.
+
+430
+01:15:08,056 --> 01:15:16,556
+Bu nedenle bu commercial vehicles nokta length demeyi tercih ediyorum.
+
+431
+01:15:16,556 --> 01:15:21,396
+Evet, bunu da eklesek iyi olur sanırım. Elimizdeymişken ekleyelim bari artık.
+
+432
+01:15:22,112 --> 01:15:43,532
+Atlamışız ama dediğim gibi çok fazla didiklemiyorum. Olay, interface ve bir neslinin bizden fazla interface'i gerçekleşmesinden olabilecek programlama kuralları ve iş mantığı kurallarının nasıl etkilenebileceğini göstermek olduğunda, kusura bakmayın, şimdi yapıyorum bunu.
+
+433
+01:15:46,452 --> 01:16:03,452
+Benzer şekilde Registered Commercial Vehicle ve Registered Commercial Vehicle metodlarının Personal Vehicle için olan muadillerini de baktığımda onlar da benzer şekilde kodlanıyor.
+
+434
+01:16:03,452 --> 01:16:12,452
+Tekrar didiklemeye gerek yok sanırım. Sadece şuraya da ekleyeyim şu aynı dizi kapasitesi olayını.
+
+435
+01:16:14,963 --> 01:16:26,904
+Personal Vehicle Count eşit ve eşit olmuşsa personal vehicles.
+
+436
+01:16:28,904 --> 01:16:31,083
+Şunun length'ını.
+
+437
+01:16:32,203 --> 01:16:35,123
+Evet, eşit olmuşsa o dönemde da force olacak.
+
+438
+01:16:35,583 --> 01:16:41,043
+Aksi takdirde elemanı ekliks gibi arttıracak işte bu şekilde söyleyebilirim.
+
+439
+01:16:42,131 --> 01:16:57,271
+Evet, sözle söylemiş olduğum şeyi. Şimdi koddaki durumunu da görmüş olduk. Ufak bir test edelim. Büyük ihtimalle şurada o da Valtas diye düşünüyorum. Evet. Evet.
+
+440
+01:16:57,747 --> 01:17:01,987
+Bir tane vehicle registration sistem nesnesi oluşturmuşum.
+
+441
+01:17:02,427 --> 01:17:07,307
+Ona mesela bir tane şimdi commercial vehicle register eklettim.
+
+442
+01:17:08,307 --> 01:17:11,967
+Bu sonucun, bakalım bu sonucun şimdi doğru olmasını bekliyorum.
+
+443
+01:17:11,967 --> 01:17:16,087
+Oraya start edeyim.
+
+444
+01:17:16,967 --> 01:17:17,967
+Bundan sonra...
+
+445
+01:17:18,771 --> 01:17:32,032
+result, effect, bs, and, vc, e, cast, tamam. Bunu verebiliyorum. Ondan sonra işte if result, bunun doğru olmasını bekliyorum.
+
+446
+01:17:48,435 --> 01:18:12,855
+Şöyle yapalım. Ya da yine şey yapalım. Sekme daha rahat ettirecek. Test one fail, aks taktirde test one fail diyelim mesela. Ondan son açıdan. Şimdi bu aracı aynı zamanda kişisel araç olarak da kayıt ettirememeliyiz. Bakalım şimdi onu deneyelim.
+
+447
+01:18:17,876 --> 01:18:26,855
+Bu sefer, RegisticePersonalVehicle.ekar. Bu sefer, sonucun false gelmesi lazım.
+
+448
+01:18:27,296 --> 01:18:38,796
+Not ReservedServeTest2 olacak. Okey. Aksi taktif de Test2. Bunchesiz şeklinde. Yazalım bakalım.
+
+449
+01:18:40,615 --> 01:18:41,716
+Kaydet çalıştız.
+
+450
+01:18:48,500 --> 01:19:04,440
+Ne oldu? Bir yerde biz, not point exception yedim. İlginç. Şu bakalım. E-cast. Personal vehicle, P-M-E-cast. Bakalım şimdi e-cast'ı nerede tanımıyorum? Şurada tanımıyorum. Evet, pekala.
+
+451
+01:19:05,076 --> 01:19:08,015
+Şey yaptık ya, tamam anladım.
+
+452
+01:19:09,095 --> 01:19:12,355
+Olay Search Commercial Vehicle'da şuradan kaynaklanıyor.
+
+453
+01:19:12,775 --> 01:19:18,095
+Şimdi bu search metoduna baktığında, şimdi for each döngüsü kullandım.
+
+454
+01:19:22,131 --> 01:19:50,131
+tüm uzunluğu boyunca bütün araçları arıyor. İlk aracı arıyor, şimdi ikinci araca bakacak. Orada nal olan bir, yani ikinci elemanı yok ki. Sadece tek elemanı var. Hatta commercial vehicle için, daha şimdi daha ilk başta, Bismillah dedik bunu, commercial vehicle olarak kaydettireceğiz. Daha hiç commercial vehicle yok bile sistemde kayıtlı. O yüzden ben burada bunu...
+
+455
+01:19:50,131 --> 01:20:16,752
+For iç döngüsüyle yapmamalıydım. Normal for döngüsüyle yapmalıydım. Hemen şimdi onu düzelteyim. Apps için düzelteyim. Diyeceğim ki o zaman o işte int i, çiftir, sıfır, i, küçüktür. Nedir? Commercial vehicle count. Evet, tamam. Commercial vehicle count.
+
+456
+01:20:17,587 --> 01:20:20,247
+nokta bölgü i artı artı.
+
+457
+01:20:20,907 --> 01:20:32,207
+Eğer şimdi bu sefer konu Vehicle değil de Commercial Vehicles dizisinin işte ince elemanı şeklinde yazmam gerekiyor.
+
+458
+01:20:32,207 --> 01:20:33,967
+Tabii o zaman.
+
+459
+01:20:34,387 --> 01:20:53,427
+Komorçlu Veya'yı kız, i'yi geri döndürürsem şu şekilde. Evet. Şimdi benzer düzeltmeyi diğerleri için de yapalım. Eğer bu arada dizi değil de, örneğin mesela Linked List kullansaydık, listenin sonu belli olacaktı, hiçbir şey bu şekilde iş yapmamıza gerek kalmayacaktı bile.
+
+460
+01:20:53,427 --> 01:21:01,288
+Orada başka bir avantaj ve dizi kullanımında da dikkat etmeniz gereken bir özellik olarak anlatmış olalım, vurgulamış olalım.
+
+461
+01:21:01,648 --> 01:21:02,888
+Öyle bir şey olsun.
+
+462
+01:21:04,507 --> 01:21:06,068
+Pekala, şimdi bakalım.
+
+463
+01:21:06,608 --> 01:21:10,167
+Tekrar yine şu for each döngüsünü yaptığımız yer şurası var.
+
+464
+01:21:10,388 --> 01:21:11,888
+Onu da yapalım, düzeltelim.
+
+465
+01:21:13,408 --> 01:21:16,228
+I eşittir, sıfırdan, I küçüktür.
+
+466
+01:21:18,568 --> 01:21:21,427
+Personal Vehicle Count takadas.
+
+467
+01:21:22,248 --> 01:21:24,927
+I artı artı. Ondan sonra.
+
+468
+01:21:25,468 --> 01:21:25,968
+Bu da ya.
+
+469
+01:21:26,547 --> 01:21:37,948
+personal vehicles'ın ilinci elemanının getplate, evet, plakası eşitse o zaman onu döndür.
+
+470
+01:21:38,587 --> 01:21:40,487
+Aksi taktirde de null döndür dedik.
+
+471
+01:21:40,987 --> 01:21:42,688
+Dergi kalan şeyler aynı.
+
+472
+01:21:43,407 --> 01:21:47,768
+Peki tamam. Herhalde artık bir problem olmayacaktır.
+
+473
+01:21:48,807 --> 01:21:50,788
+Task, crash, example burada.
+
+474
+01:21:51,688 --> 01:21:52,987
+Çalıştırdığımızı da görelim.
+
+475
+01:21:56,659 --> 01:22:13,440
+Evet. Test bir okey, test bir okey. Problemi çözdük. Diziyle, aramayla ilgili bir şeydi. Ama iç mantığımız doğruymuş. Yani at yapılara bir şey atlamışız, toparladık. İç mantığımız doğruymuş.
+
+476
+01:22:17,639 --> 01:22:19,779
+Çaprası da aynı şekilde çalışacak.
+
+477
+01:22:20,500 --> 01:22:29,800
+Evet, yani şimdi benim interfezler hakkında bahsedeceklerimin hepsi bu kadar. Sizlerin soruları varsa soru bekliyorum şimdi sizlerle arkadaşlar.
+
+478
+01:22:36,115 --> 01:22:37,296
+Bu kadar değil.
+
+479
+01:22:39,855 --> 01:22:41,496
+Alternatif herhalde.
+
+480
+01:22:42,195 --> 01:22:45,076
+Vehicle arayüzünü de yapsam neler olabilir?
+
+481
+01:22:45,235 --> 01:22:47,316
+Onu da demonstrasyon yapabilirim.
+
+482
+01:22:48,115 --> 01:22:50,336
+07b paketiyle de biraz oynarız.
+
+483
+01:22:51,175 --> 01:22:55,355
+Ama önce biraz bekleyin sorularınız varsa sorabilirim diye.
+
+484
+01:23:25,971 --> 01:23:26,271
+Peki.
+
+485
+01:23:29,271 --> 01:23:30,811
+Bakıyorum, chatte de bir şey yok.
+
+486
+01:23:31,811 --> 01:23:38,032
+O zaman şu 07b ile bir neler yapmışız, neler etmişiz ona bir bakalım.
+
+487
+01:23:43,252 --> 01:23:51,192
+Şimdi burada bir vehicle arayüzü tanımladım. Önceki ders teorisinde konuştuğumuz gibi.
+
+488
+01:23:51,192 --> 01:23:58,592
+Ve bu durumda anin commercial vehicle, public interface commercial vehicle, extends vehicle dedik.
+
+489
+01:23:59,231 --> 01:24:05,172
+Ve işte sadece calculate amortized text metodu geldi. Ondan sonra cema.
+
+490
+01:24:06,868 --> 01:24:16,248
+Personal Vehicle alayüzünde ise, Public Interface Personal Vehicle, abstract vehicle, onda sadece calculate tax metodu var.
+
+491
+01:24:17,248 --> 01:24:25,248
+Fakat mesela diyelim ki şu kar sınıfına baktığımda,
+
+492
+01:24:27,283 --> 01:24:30,843
+Commercial Vehicle, Personal Vehicle ikisini de implement ediyor.
+
+493
+01:24:31,483 --> 01:24:40,783
+Fakat aslında aynı zamanda bu interfazler arasındaki kalıtım ilişkisi nedeniyle aslında Vehicle arayüzünde gerçeklemiş oluyor K sınıfı.
+
+494
+01:24:40,983 --> 01:24:43,163
+Ve onun kuralına da uymak zorunda.
+
+495
+01:24:43,523 --> 01:24:49,523
+O yüzden ben eğer GetPlate metodunu komentlersen yine hata alacağım sınıf üzerinde.
+
+496
+01:24:52,275 --> 01:25:08,755
+Bakın, getrate metodunu mutlaka kodlaması gerekiyor, gerçekten size gerekiyor şeklinde söyledi bize. Bu da işte o getrate'in üst arayüzden silsileyle, kalıtım ile aktarıldığının ispatı budur.
+
+497
+01:25:13,939 --> 01:25:32,260
+Bir de şunu söyleyeyim. Şimdi bir sınıf hem bir sınıftan kalıtım alıp hem de bir arayüzde gerçekliyor olabilir. Bu açıdan o zaman nasıl söyleriz bazı şeyleri onu bir ifade edeyim.
+
+498
+01:25:40,212 --> 01:26:07,372
+Ne diyeyim? Şimdi vehicle'da bir oranlık ne olabilir? Hem kalıtım olsun. Tamam, şimdi vehicle'ı şey dedim, arayüz dedim. Aircraft'lar da bir vehicle'da. Peki. Ama ben şimdi buna şöyle bir şey diyeyim. ABC gibi isimler vereyim.
+
+499
+01:26:10,515 --> 01:26:18,715
+D diyeyim buna. Burada bir interface oluşturuyorum.
+
+500
+01:26:18,715 --> 01:26:22,595
+New interface.
+
+501
+01:26:24,235 --> 01:26:25,315
+Name.
+
+502
+01:26:27,155 --> 01:26:28,715
+Aninterface.
+
+503
+01:26:32,715 --> 01:26:34,435
+Bunun bir metodu olsun.
+
+504
+01:26:34,435 --> 01:26:37,115
+İşte public void.
+
+505
+01:26:37,908 --> 01:26:39,268
+mat.
+
+506
+01:26:40,128 --> 01:26:40,847
+O olsun.
+
+507
+01:26:41,988 --> 01:26:43,048
+Ondan sonra açıma.
+
+508
+01:26:44,228 --> 01:26:46,888
+Bir tane sınıf oluşturayım.
+
+509
+01:26:46,968 --> 01:26:47,828
+Bir üst sınıf.
+
+510
+01:26:48,087 --> 01:26:48,587
+Mesela.
+
+511
+01:26:52,548 --> 01:26:53,288
+E.
+
+512
+01:26:54,068 --> 01:26:55,408
+Base class.
+
+513
+01:26:56,167 --> 01:26:56,768
+Diyelim ki.
+
+514
+01:26:58,468 --> 01:26:59,028
+Olsun.
+
+515
+01:26:59,828 --> 01:27:02,108
+Ondan sonra bunun bir üye alanı.
+
+516
+01:27:02,108 --> 01:27:03,528
+ID olsun diyelim ki.
+
+517
+01:27:07,988 --> 01:27:09,247
+ID olsun.
+
+518
+01:27:11,927 --> 01:27:17,068
+Ve ID için getter ve constructor olsun diyelim ki.
+
+519
+01:27:22,195 --> 01:27:23,556
+Constructor, using, yes.
+
+520
+01:27:24,155 --> 01:27:26,556
+Evet. Ondan sonuçta.
+
+521
+01:27:27,095 --> 01:27:29,515
+Bir de id için getter metodu da olsun.
+
+522
+01:27:31,476 --> 01:27:33,675
+Generate getters and sitters.
+
+523
+01:27:34,216 --> 01:27:35,876
+Getter metodu olsun mesela.
+
+524
+01:27:36,636 --> 01:27:39,695
+Basit bir sınıf hazırladık diyelim.
+
+525
+01:27:40,976 --> 01:27:43,236
+Şimdi bir interface'ım var.
+
+526
+01:27:43,675 --> 01:27:44,595
+Metot içeren.
+
+527
+01:27:44,876 --> 01:27:46,275
+Bir üst sınıfım var.
+
+528
+01:27:46,275 --> 01:27:48,995
+Bir de şimdi bir alt sınıf oluşturalım.
+
+529
+01:27:50,420 --> 01:27:55,420
+New class and subclass.
+
+530
+01:27:57,060 --> 01:28:02,460
+Şimdi, bu subclass hem
+
+531
+01:28:02,460 --> 01:28:08,899
+extends a base class diyebilirim, hem de
+
+532
+01:28:08,899 --> 01:28:13,899
+implements an interface diyebilirim.
+
+533
+01:28:14,579 --> 01:28:24,340
+Tabii ki şu an bazı hatalar var. Çünkü birinci hata, üst sınıfın constructorını çağırmak gerekiyor. Alt sınıfta, super ile unutmamak lazım.
+
+534
+01:28:24,340 --> 01:28:42,579
+Bir de bu N-interface'de geçen N-metodu da içermesi de lazım. Şimdi bunun ikisini de yapmam gerekiyor. İki hatayı da burada yazıyor. Birincisi, base class'ın constructor çağırılmalı. İkincisi, bu N-metod da implement edilmeli şeklinde iki tane hatayı da yazıyor.
+
+535
+01:28:42,579 --> 01:28:43,380
+söylüyor.
+
+536
+01:28:44,380 --> 01:28:45,359
+Yapalım.
+
+537
+01:28:46,359 --> 01:28:47,439
+İşte,
+
+538
+01:28:48,420 --> 01:28:48,880
+Fabric,
+
+539
+01:28:49,420 --> 01:28:52,619
+f-class, constructor yazıyorum önce.
+
+540
+01:28:53,239 --> 01:28:54,420
+Int, id,
+
+541
+01:28:55,640 --> 01:28:56,560
+nedir işte,
+
+542
+01:28:56,979 --> 01:28:59,319
+super id, bunu koyalım.
+
+543
+01:28:59,939 --> 01:29:01,239
+Hatam bir azalsın.
+
+544
+01:29:01,819 --> 01:29:03,180
+Ondan sonra, şu,
+
+545
+01:29:03,180 --> 01:29:05,819
+e-metodu da, çalıştırsın.
+
+546
+01:29:06,539 --> 01:29:07,000
+Fabric.
+
+547
+01:29:07,503 --> 01:29:11,724
+Yani göldesinin tanınmasında olsa, emetot.
+
+548
+01:29:15,731 --> 01:29:19,632
+En boş bırakmak değerleme hatasını gidermek için yeter.
+
+549
+01:29:19,912 --> 01:29:22,011
+Ama tabii boş metodunda çok anlamı yok.
+
+550
+01:29:22,152 --> 01:29:28,792
+Ama zaten bu örnek ABC gibi örnek olduğu için çok da fazla takmamak lazım aslında.
+
+551
+01:29:32,792 --> 01:29:41,192
+Method of subclass falan gibi bir şey yaztırabilirim mesela.
+
+552
+01:29:42,036 --> 01:29:51,895
+Evet, şimdi bu durumda bu hesap class'ım hem Babes class'tan kalıtımla üretiliyor hem de N interfezi gerçekliyor.
+
+553
+01:29:51,895 --> 01:29:57,095
+Başka interfezi de most of it onları da bilgileriyle yazıp devam edebilecektim mesela.
+
+554
+01:29:57,836 --> 01:30:04,555
+Bu da demek oluyor ki işte mesela bu yazdığım kodu dünyama sınıf işlemesini çizmem gerekirse.
+
+555
+01:30:12,404 --> 01:30:16,923
+Şimdi işte bir tane interface seçtim koydum.
+
+556
+01:30:17,724 --> 01:30:20,923
+Interface and interface.
+
+557
+01:30:22,324 --> 01:30:24,604
+Ve bunun metodu neydi?
+
+558
+01:30:25,524 --> 01:30:26,904
+An interface show.
+
+559
+01:30:27,384 --> 01:30:29,163
+A method. Public void a method.
+
+560
+01:30:33,011 --> 01:30:43,191
+Gördüğünüz gibi sadece iki tane giriş alanı var. Ama çizerken üç bölgeni çiziyor. Ondan sonra bir de base class'ım vardı.
+
+561
+01:30:47,475 --> 01:30:49,015
+I will IDS var.
+
+562
+01:30:53,115 --> 01:30:55,155
+Construct, vegetal method var.
+
+563
+01:31:02,484 --> 01:31:03,484
+Ne, gettik.
+
+564
+01:31:03,484 --> 01:31:06,484
+Bir tane daha.
+
+565
+01:31:11,891 --> 01:31:35,631
+Bir de subclass mı demiştik. Evet, subclass. Bir de subclass vardı. Şimdi şöyle bir şey de göstermek istiyorum size arkadaşlar. Şimdi önce bu base class'tan kalıptım, en interfezden ise şey.
+
+566
+01:31:36,979 --> 01:31:39,519
+İşte arayüz gerçekleme söz konusu.
+
+567
+01:31:40,339 --> 01:31:50,859
+Şimdi birincisi, şimdi Vali Tüemel şurada, yani şu oku çizimde sanki implementation oku bir kısmı düz, bir kısmı keskli çizgi gibi oldu.
+
+568
+01:31:50,859 --> 01:31:54,579
+Böyle bir çizimden pek hoşlaşmıyorum arkadaşlar.
+
+569
+01:31:55,000 --> 01:31:57,779
+O yüzden mesela şöyle yaparaktan olabilir.
+
+570
+01:31:58,336 --> 01:32:06,956
+Ayrı bir uçtan çıkmasını sağlıyorum. Ayrı bir kenardan daha doğrusu çıkmasını sağlıyorum. Bu interface gerçekleme işini böyle yapmayı tercih ediyorum.
+
+571
+01:32:07,396 --> 01:32:17,876
+Ya da şöyle de yapabilirim tabii ki. Burada durmakla birlikte ben okun yönlenmesini önce horizontal yani yatar sonra vertical yap diyerekten bu da olabilir.
+
+572
+01:32:18,656 --> 01:32:26,336
+Şimdi sizlerden gerçi sınavda sınıf işleminizi istemeyeceğiz. Sınıf işlemini ana tasarımı biz vereceğiz ama...
+
+573
+01:32:26,336 --> 01:32:27,136
+Bilginiz olsun.
+
+574
+01:32:28,372 --> 01:32:34,472
+Şimdi tamam, peki bunu bu şekilde yaptık. Böyle gösterebiliyoruz.
+
+575
+01:32:34,472 --> 01:32:47,172
+Şimdi, şurada bu E-metodun, interface'deki E-metodun mutlaka bu set class'da, daha doğrusu onu implement eden sınıfta kodlanması mutlaka lazım.
+
+576
+01:32:47,332 --> 01:32:55,872
+Çünkü burada sadece gövde şeklinde tanımlanmış. O yüzden mutlaka bunu şurada bir göstermek istiyorum.
+
+577
+01:32:57,140 --> 01:33:10,120
+Zaten keza ayrıca kaldı ki bu esat class'ın constructor'ı da var. İşte int parametralar. Üst sinifin constructor'ını çalmak üzere. Onu da bir göstermemiz lazım.
+
+578
+01:33:13,280 --> 01:33:18,720
+Evet. B estilaz, esat class ve metodu var. Tamam yani.
+
+579
+01:33:19,155 --> 01:33:24,315
+Şey bu, şimdi bu yazdığımız kodu UML sınıf çamasına da dökebilmiş olduk.
+
+580
+01:33:24,435 --> 01:33:31,595
+Veya işte böyle bir UML sınıf çaması görürsek ortaya çıkması gereken kodun nasıl bir şey olduğunu gördük.
+
+581
+01:33:32,815 --> 01:33:38,435
+Onun dışında bir de şey söylemek istiyorum.
+
+582
+01:33:40,576 --> 01:33:42,375
+Aklıma gelmişken.
+
+583
+01:33:46,963 --> 01:34:04,643
+Bir soyut bir üst sınıfım ya da şey diyelim, normal bir kalıtım ilişkisi olsun. Bu anlamda ne diyebilirim? Mesela şey, person, hani şey örneğimiz vardı ya, person, employee örneğimiz vardı ya.
+
+584
+01:34:05,643 --> 01:34:11,023
+Şimdi kişiselmeyi tekrar çizmeye uğraşmaktansa onun geçtiği yansıya döneyim.
+
+585
+01:34:16,372 --> 01:34:18,372
+Evet.
+
+586
+01:34:23,507 --> 01:34:23,948
+Peki.
+
+587
+01:34:25,268 --> 01:34:49,008
+Şimdi şu örneğimizi hatırlarsanız, employee manager. Şimdi bu employee sınıfındaki get salary metodunu manager sınıfında override etmiştim. O yüzden şimdi normalde ben eğer manager sınıfında bu get salary metodunun olduğunu göstermeseydim eğer, göstermeseydim eğer, o zaman varsayın olarak şunu anlayabilirdiniz.
+
+588
+01:34:53,268 --> 01:35:17,688
+geçti ve aynı geçti. Yani inherited'dır. Bir override işlemi yapılmadı diye anlarsınız normalde. Ama bir alt sınıfta, üst sınıfta olan bir metodu tekrar özellikle açık açık yazdıysak bu o metodun override edilmesi gerektiği anlamına da gelmektedir. Böyle bir vurgulama aracıdır bu. Onu da söylemiş olayım.
+
+589
+01:35:19,220 --> 01:35:24,760
+Bunu yaptığımız hafta değinmeyi atlamışımdır herhalde diye düşünüyorum. O da aklımızda olsun.
+
+590
+01:35:30,484 --> 01:35:51,484
+Bunu bir daha mesela söylemeyi unutmamak için acaba şuraya yazsam mı? Ama şimdi orada da iş mantığını oturtuyoruz. Bunu mutlaka orada oturtulması gerekiyor. Mantığını söylüyoruz. Öte yandan acaba...
+
+591
+01:35:51,484 --> 01:35:54,144
+Tamam, biz çok şey değil.
+
+592
+01:35:56,564 --> 01:35:57,724
+Şu yüzü tutup geri dönelim.
+
+593
+01:35:58,836 --> 01:36:01,756
+Bak daha 131'e baktık. Tamam, pekala.
+
+594
+01:36:04,996 --> 01:36:08,156
+Evet, başka söyleyebileceğim bir şey var mı? Bir ona bakayım.
+
+595
+01:36:08,956 --> 01:36:11,036
+Şuradan çok karabatlaştık. Kapatayım bunları.
+
+596
+01:36:13,436 --> 01:36:19,216
+Ve göreceksiniz, evet. Tam başka bir şey yok. Hepsinin üzerinden geçtik.
+
+597
+01:36:23,699 --> 01:36:40,439
+Şimdi bu registration örneğinde soyut sınıflar bir tasarım yapılabilir de ama işte kodlamalar, metot gövdeleri çok farklı olduğu için mümkün olmuyor demiştik. O yüzden o mümkün olmayanı oldurmaya çalışmak zaten başarısız olacağız. Onun ayrıca bir denemesine gerek yoktur.
+
+598
+01:36:41,439 --> 01:36:42,239
+Peki.
+
+599
+01:36:45,300 --> 01:36:52,860
+Evet. Buraya kadar sorusu ya da kafasına takılan bir durum olan arkadaşım varsa buyursun lütfen.
+
+600
+01:37:23,315 --> 01:37:36,496
+Peki. O zaman arkadaşlar şöyle bir enum konusunu da görelim. Ondan sonra bugünlük dersi erken bitiriz. 3 saati yapmayız. Enum konusunu şöyle bir giriş yapmak istiyorum size.
+
+601
+01:37:40,627 --> 01:37:46,967
+Şimdi, enum, yani Türkçe enum diye gibi İngilizce okusak yani inam filan okunması lazım.
+
+602
+01:37:47,967 --> 01:37:54,568
+Şimdi inam dediğiniz kavramı aslında şeyleri gördünüz, yani yapıza programlama dersinde de gördünüz.
+
+603
+01:37:55,123 --> 01:38:06,623
+Bazen belirli bir değişkenin sadece belirli bir küme içerisinden bir değer almasını isteriz. Başka bir değer almasını istemeyiz.
+
+604
+01:38:06,623 --> 01:38:15,623
+Örneğin bizim dükkan dört boyda pizza satıyorsa, non, small, medium, large ve extra large başka bir...
+
+605
+01:38:16,404 --> 01:38:41,064
+Boyutumuz yok. Dört çeşitimiz var. Peki şimdi işte acaba bu pizzanın boyutlarını nasıl tutalım bellekte? Nasıl tutalım? Veya işte pizza sınıfının bir yalanı yapacağız bunu diyelim ki. Nasıl bir türü olsun? Yani isterseniz bir integer yalan koyarsınız ya da short de olur. Yani illa dört byte ayırma hareket yok ki. Çünkü sadece topu topu bir ile dört arası bir değerler var.
+
+606
+01:38:44,404 --> 01:38:52,924
+Tümden bir alan tanımlayıp işte bir ise small, iki ise medium, üç ise large, dört ise extra large değerine karşı gelebilir bu mesela.
+
+607
+01:38:53,504 --> 01:38:56,224
+Fakat şimdi hani böyle bir şey yaparsanız iki neydi?
+
+608
+01:38:56,756 --> 01:39:19,376
+Small, medium, large, medium, şöyle bir bakmak lazım olabilir mesela. Böyle sayılan yerine belki uluslararası kullanılan kısaltman olarak small için büyükse, medium için büyükse, large için büyükse, extra large için büyük, x konular bilinir mesela. O zaman da char tipinden şey olur, üye alan olur.
+
+609
+01:39:24,756 --> 01:39:28,216
+tam tasarımlar olacak. Çünkü
+
+610
+01:39:29,427 --> 01:39:57,407
+int dediysek eğer ben bir pizza'nın size'ına 5 de atayabilirim, eksi 3 de atayabilirim yani. Böyle bir terslik olabilir. Ha siz eğer setter metodunda gerekli kontrolü yaparsanız o başka. Yani bizden küçük 4'ten büyük olamaz. O durumda varsayılan peki ne atınacak? Diyelim ki yanlış bir değer girilmişse ya mevcut değer tutulacak veyahut da default olarak 1'e çekilecek onun değeri falan.
+
+611
+01:39:57,427 --> 01:40:00,000
+Yani ekstra mantık, iş mantık.
+
+612
+01:40:00,000 --> 01:40:13,260
+Hatır yazabilirsiniz ama işte adı üstünde ekstra kod yazmanız gerekiyor. Ekstra tutarlılık kontrolü yapmanız gerekiyor. Bunun yerine inam denilen yapılar mevcuttur.
+
+613
+01:40:13,979 --> 01:40:25,000
+Birçok dilde. Burada eğer işte bu şekilde bir ilkel yani bir birim değeri tutmak söz konusuysa primitive inam kullanıyorsunuz.
+
+614
+01:40:28,000 --> 01:40:29,779
+olduğu için Java'da primitive değildir.
+
+615
+01:40:30,119 --> 01:40:32,599
+Fakat birazdan göreceğiz onun ayrıntısını.
+
+616
+01:40:32,599 --> 01:40:42,599
+Ama sadece işte bu Pisa'nın boyu gibi basit bir bilgi, primitive, ilke tek bilim, tek bilim bilgi söz konusuysa o zaman inam türünü kullanıyorsunuz.
+
+617
+01:40:43,479 --> 01:40:46,619
+Public inam, inama bir isim veriyorsunuz, sağ istiyorsunuz mesela.
+
+618
+01:40:47,039 --> 01:40:51,739
+Sonra kıvrık parantezler içerisinde bunun alması gereken değerleri yazıyorsunuz.
+
+619
+01:40:52,279 --> 01:40:56,000
+Genelde alışkanlık olarak da inam değerleri büyük harfler veriyor.
+
+620
+01:40:56,000 --> 01:41:02,059
+yazılır. İşte bu şekilde small, medium, large ve extra large diye değerler tanımlamış oluyorsunuz.
+
+621
+01:41:02,059 --> 01:41:12,000
+Ve bu durumda herhangi bir size türünden bir değişken sadece bu dört değerden birini alabilir, başka bir şey alamaz anlamına gelmektedir.
+
+622
+01:41:12,340 --> 01:41:22,079
+Ve daha sonra da diyelim ki size türünden bir tanesi değişkeni tanımlayıp ona değer atacağınız zaman örneğin işte eşittir deyip inanan adı size nokta alması gereken değer.
+
+623
+01:41:22,380 --> 01:41:23,779
+Örneğin medium şeklinde.
+
+624
+01:41:24,000 --> 01:41:25,139
+yazabilirsiniz.
+
+625
+01:41:26,059 --> 01:41:30,939
+S eşittir 5 gibi bir şeyler atamaya çalıştığınızda bu tabi edecektir size.
+
+626
+01:41:31,260 --> 01:41:34,119
+Diyecektir ki sadece şuradaki 4 değerden biri olabilir.
+
+627
+01:41:34,260 --> 01:41:38,420
+O dediğiniz atmaya çalıştığınız 5 örneğin o değerler arasında yoktur.
+
+628
+01:41:39,796 --> 01:41:43,916
+Ayrıca buradaki değerler case sensitive'dir.
+
+629
+01:41:44,436 --> 01:41:48,296
+Yani hepsinin büyük harfıyla medium yazar hakkında zorundasınız.
+
+630
+01:41:48,796 --> 01:41:51,776
+Sadece ilk harf büyük değerle küçük medium yazamıyorsunuz.
+
+631
+01:41:51,776 --> 01:41:53,516
+Veya sadece medium yazamıyorsunuz.
+
+632
+01:41:53,556 --> 01:41:58,036
+Mutlaka enumadı nokta alan değer şeklinde yazmalısınız.
+
+633
+01:41:58,476 --> 01:42:00,676
+Veya işte sadece m yazamıyorsunuz gibi.
+
+634
+01:42:00,776 --> 01:42:06,096
+Çünkü tanımınız bu şekilde ise değerli tanımınız da bu şekilde.
+
+635
+01:42:06,296 --> 01:42:07,156
+Size nokta.
+
+636
+01:42:07,796 --> 01:42:27,396
+Dört seçenekten bir tanesi şeklinde olmak zorunda. Bu primitive inam. Ama aslında Java'da inamlar primitive olmak zorunda değil. Primitive olmayan inamlar destekleniyor. Aslında bir sınıf tanımadır inam. Özelliklerini görelim şimdi.
+
+637
+01:42:28,051 --> 01:42:41,951
+Nasıl ki bir önceki örnekte bir ilkel inam tanımlamış olduk ve bir değişken sadece o inamda tanımdığı değerlerden sadece birini alabilir, başkaca bir değer de alamaz şeklinde tanımlıydı.
+
+638
+01:42:41,951 --> 01:42:51,951
+Biz inam türünden nesneler de oluşturabiliriz ve sadece belirli tür nesneler ve...
+
+639
+01:42:52,948 --> 01:42:59,507
+Belli durum bilgisine sahip nesneler oluşturulmasını inan kullanarak da zorlayabiliriz.
+
+640
+01:43:00,083 --> 01:43:27,184
+Enum sınıflarında, İNAM sınıflarında, işte İNAM'ın her üyesi tanımlı değeri aslında o sınıftan bir nesne olacak. O şekilde düşünmemiz gerekecek. Bu tanımladıklarımızın dışında değer alamayacak o İNAM türünde olan nesneler. Nasıl ki herhangi bir sınıfta üye alanlar, üye metotta her şey olabiliyor.
+
+641
+01:43:28,083 --> 01:43:35,323
+Primitif olmayan normal inamlar da üye alanlar, üye metotlar ve hatta constructor içeri biliyor.
+
+642
+01:43:36,003 --> 01:43:42,524
+Yalnız tek fark normal sınıflardan inam sınıflarının inam constructori private.
+
+643
+01:43:44,180 --> 01:44:05,320
+Çünkü işin mantığını hatırlayın. İnam neydi? Sadece belirli bir değerler kümesinden bir değer seçebilmekti. O zaman farklı bir bu düşündüğümüz nesneler kümesinden farklı bir nesne atıyamamamız için konstruktörünün serbestçe çalıştırılabilinin olmaması gerekmektedir.
+
+644
+01:44:05,320 --> 01:44:12,180
+Ve tek bir kural da bu orası innam nesnesi değerlerini tanımlamak.
+
+645
+01:44:12,180 --> 01:44:14,620
+Bunların ilk satırda yapılması gerekmektedir.
+
+646
+01:44:14,992 --> 01:44:42,772
+Şöyle bir örnek vereceğim. Diyelim ki biz bir internet servis sağlayıcısının şubesiyiz. Çeşitli internet paketlerine satıyoruz. Abonelik yapıyoruz mesela. Peki, şimdi bizim sistemimizde tanımlı çeşitli paketlerimiz var. Örneğin, üç tane paketimiz var. Net Free, Net 4 ve Net 6. Başka da bir paketimiz yok.
+
+647
+01:44:42,992 --> 01:45:02,632
+O yüzden ben oluşturacağım bir tarife oluşturduğum zaman bu üç tarifiden birinden abone alabilirim. Başka bir tarifem olmadığında sisteme başka bir tarife girememeliyim. Bu anlamda tanımımızı nasıl yaparız bir görelim.
+
+648
+01:45:03,192 --> 01:45:08,632
+Şimdi class diyor da inam tanımlıyoruz. O yüzden public inam adını da tarife dedik tarif.
+
+649
+01:45:09,908 --> 01:45:24,048
+İnam gövdesi içerisinde ilk iş olarak basit inamda olduğu gibi bu sınıf olan inamda da nesnelerimin alması gereken değerleri yazıyorum. Neydi bunlar? Netfree, Net4 ve Net6.
+
+650
+01:45:24,916 --> 01:45:37,896
+Fakat bunlar birer nesne, üç nesne tanımladım bu ilan içerisinde. Bunların üye alanları, üye metodları ve constructorları olabilir demiştik. Onları tanımlıyoruz şimdi.
+
+651
+01:45:39,115 --> 01:45:46,195
+Bu ilk satırda parantez içerisinde yazdığımız parantezler aslında constructor çağrıları oluyor.
+
+652
+01:45:52,916 --> 01:46:13,376
+İlk parametresine 0 değerini ver, ikinci parametresine 4 değerini ver, üçüncü parametresine 60 değerini ver anlamına geliyor. Sonra virgül koyuyorum. İkinci tarife nesnem ne? Net 4. Onu oluştururken, constructor'ına birinci parametre 4, ikinci parametre 8, üçüncü parametre 30 ver.
+
+653
+01:46:13,971 --> 01:46:37,551
+Üçüncü nesne, tarif et türünden olabilecek üçüncü nesne net 6. Onu da oluştururken, constructına birinci parametre 6, ikinci parametre 8, üçüncü parametre 40 ver anlamına geliyor. Ve sonra da noktaya bölgü koyuyoruz. İşte bu satır mutlaka ilk satır olmalı. Enorm gövdesinin içinde. Bunu daha aşağıya falan alamıyoruz. Mutlaka ilk satır olmalı.
+
+654
+01:46:37,844 --> 01:46:43,884
+Ondan sonra işte normal bir sınıf tanımı yapar gibi üye alanlar tanımlamış. 3 tane üye alan tanımlamış.
+
+655
+01:46:44,344 --> 01:46:58,184
+Private int, kota, speed ve fill. Kota, eğer kota yoksa 0 düşünüyorum. Speed kaç megabitre kadar destekliyor ve fill ücret ayrı. Ne kadar ücrete tabi bu tarife.
+
+656
+01:46:59,384 --> 01:47:03,324
+Ve işte constructına da bakıyorum. Construct'ın tabi olmak zorunda.
+
+657
+01:47:04,051 --> 01:47:09,811
+Ama üç tane parametreyi alıyor ve normal bir constructor gibi parametreleri üye alanlara atıyorum.
+
+658
+01:47:10,532 --> 01:47:19,152
+Ondan sonra ek olarak üç tane de metot eklemişim. Normal bir sınıfta metot yazar gibi kod tasapit ve fi üye alanlarını getter metotlarını koymuş.
+
+659
+01:47:19,771 --> 01:47:26,811
+Böyle olduğu zaman bu demek oluyor ki artık benim tarif sınıfından sadece üç farklı nesnem olabilir.
+
+660
+01:47:30,163 --> 01:47:34,563
+Dünya alanları ve değerleri budur şeklinde bir tanım yapmış oluyor.
+
+661
+01:47:37,003 --> 01:47:40,123
+Bunu sınıf sımasından nasıl gösterelim?
+
+662
+01:47:41,623 --> 01:47:49,243
+İnam sınıfını tanımlarken sınıf adının bulunduğu kompartmanı önce işte stereoterapi içerisinde innam yazarız.
+
+663
+01:47:49,243 --> 01:47:51,884
+Ondan sonra şeyimizin adını yazarız.
+
+664
+01:47:53,203 --> 01:48:14,024
+Tariflerimizin adını yazarız. Ondan sonra şu kod içerisinde geçen ilk satırı. Burada da üye alanlarda üye alanları koyduğumuz kompartımanın ilk satırı olarak yazarız. Ondan sonra diğer tanımda üye alanları normal.
+
+665
+01:48:14,676 --> 01:48:19,155
+Nasıl UMLN'de gösteriyorsak sınıf işlemasında öyle göstermeye devam ederiz.
+
+666
+01:48:19,576 --> 01:48:27,856
+İşte constructor ve diğer metotlarını da normalde nasıl metot çiziyorsak UML sınıf işlemasında o şekilde çizeriz.
+
+667
+01:48:27,856 --> 01:48:37,896
+Yalnız tabii yine hatırlatıyorum, inam constructor'ı private olmak zorunda olduğundan constructor'ı private olarak UML sınıf işlemasında da gösterdim.
+
+668
+01:48:39,060 --> 01:48:50,920
+Şimdi bizim çeşitli kişileri abone edeceğiz demiştik. O yüzden bir kişi sınıfım olacak. Ama kişiyle tarifeyi doğrudan ilişkilendirmiyorum.
+
+669
+01:48:51,572 --> 01:48:58,212
+Çünkü belirli bir tarih aralığında abonelik olması söz konusu olabilir.
+
+670
+01:48:58,212 --> 01:49:03,392
+O yüzden bir person nesnesi, bir subscription nesnesiyle ilişkili olacak tasarımında.
+
+671
+01:49:03,692 --> 01:49:07,692
+Bir subscription da bir tarife ile ilişkili olacak.
+
+672
+01:49:08,292 --> 01:49:19,212
+Siz eğer belki olası aday müşterilerinizin de kaydını tutmak istiyorsanız, o zaman daha henüz bir tarife satmadığınız, henüz aboneli etmediğiniz müşteri...
+
+673
+01:49:19,572 --> 01:49:47,572
+Dolabilir. Veyahut da aboneliğin süresi dolmuştur. Daha henüz tazelememiştir. Aboneliği dolar dolmaz da kaydını silmek istemezsiniz tabii elbette. Belki borcunu ödememiştir bir şeydir. Veya borcunu ödemişse bile sonradan yeni tarifeler satmak için onu aramak istersiniz falan. Bu nedenle aslında şuraya yani person'dan subscription olan ilişkide subscription tarafına 0-2.1'e 1'de yazılabilirdi. Ama hani oradan bu tarifeyi anlatmak.
+
+674
+01:49:47,572 --> 01:49:51,452
+İnan, daha doğrusu inamı anlatmak olduğu için o kadar ayet'ye girmedim.
+
+675
+01:49:57,492 --> 01:50:18,112
+Şimdi nasıl bir şeyler yapalım o zaman? Kodumu da uzun uzun yazmamışım. Sadece enam kullanımını göstermek için. Ama tabii kod olarak paylaştığımda hepsi yazıyor. Sadece şeyler de yoktur, yansılarda yoktur. Önce bakalım kullanımını görelim. Ondan sonra eklif üzerinden de çalıştırırız.
+
+676
+01:50:18,644 --> 01:50:39,984
+Şimdi mesela main metodu içerisinde, şimdi bir tarife nesnesi tanımlayacağım. Adına tarif 4 demişim. Bu object pointer adı aslında. Ne koyarsanız koyabilirsiniz. Ama bunun alabileceği değer sadece o inam içerisinde tanınan değerlerden biri olabilir. Örneğin işte tarif nokta net 4 şeklinde söylemişiz.
+
+677
+01:50:45,716 --> 01:50:47,236
+Tarifeye abone etmişim.
+
+678
+01:50:48,496 --> 01:51:02,196
+Bu metotta büyük ihtimalle bir subscription nesnesi oluşturup, onun tarifesine, bu genel tarifi atamak şeklinde bir kod vardır arka planda. Gördünüz birazdan.
+
+679
+01:51:03,155 --> 01:51:26,496
+Bir kişi daha oluşturmuşum. Onu da abone edeceğim. Ama hani Yunus'u abonelik yaptığımda bir kullandığım geçici nesne olan tarif 4 aslında öyle bir geçici nesne ihtiyacım da yok. Bu ikinci kişinin belkini abone ederken direkt sen işte netfree'ni kullan tarifinin netfree nesnesini kullan şeklinde direkt vermişim.
+
+680
+01:51:31,155 --> 01:51:40,576
+Metotlarını override ettiğim için, prasıl sınıfında, adım şu ve şu tarifeye aboneyim falan gibisinden bir şeyler söyleyeceklerdir.
+
+681
+01:51:41,456 --> 01:51:47,315
+Bakalım herhalde bunu koda dökmüş olduğumu düşünüyorum. Dökmemişsem de, şimdi sizinle dökeriz. Vaktimiz var.
+
+682
+01:51:47,735 --> 01:51:53,036
+Üçüncü ders saatini yapmayacağımız için rahat rahat yapabiliriz bu işleri şimdi sizinle birlikte.
+
+683
+01:51:55,315 --> 01:52:00,916
+Haa, bakın, paket maket. Haa, tamam, yazmışım, şurada 08. Hiç mi koda dökmemişim bile çektim.
+
+684
+01:52:01,395 --> 01:52:02,376
+Vardır herhalde.
+
+685
+01:52:08,243 --> 01:52:08,803
+Bakın.
+
+686
+01:52:09,300 --> 01:52:13,800
+Eko olarak tutsatı eklemişim. Tamam, pekala tarifeye.
+
+687
+01:52:14,119 --> 01:52:15,560
+Şeride yansıları ne kadar var?
+
+688
+01:52:16,260 --> 01:52:18,060
+Getir metotları var, o kadar. Peki.
+
+689
+01:52:18,460 --> 01:52:19,860
+Biraz geliştirmişim.
+
+690
+01:52:20,260 --> 01:52:23,220
+Veya ücrete zam yapmak istersek filan gibi.
+
+691
+01:52:23,220 --> 01:52:28,119
+Peki. Şimdi şuraya kadar, 10. satıra kadar aynı yansıda gördüğünüz gibi.
+
+692
+01:52:28,659 --> 01:52:30,739
+Burada örnekle ek olarak bir şeyler eklemişim.
+
+693
+01:52:30,840 --> 01:52:32,739
+Mesela diyeyim ki tarifeye zam gelebiliriz.
+
+694
+01:52:33,000 --> 01:52:34,659
+Tabii ki. Ondan sonra.
+
+695
+01:52:35,280 --> 01:52:37,220
+O yüzden fi üyesine.
+
+696
+01:52:37,300 --> 01:52:57,239
+Settler metodu tanımlamışım. Bunu yapabilirim. Nihayetinde ben buraya yeni bir farklı nesne eklemiyorum. Sadece mevcut bir nesnenin fi üyalarını değiştirmek istiyorum. O yüzden basit bir Settler metodu koydum. Böyle yaparsam şuradaki istediğim bir tarifinin artık fiyatını zamla güncelleyebilirim.
+
+697
+01:52:58,452 --> 01:53:00,872
+Bir de toString metodu eklemişim.
+
+698
+01:53:01,952 --> 01:53:07,532
+Şimdi kota, speed ve fi üye alanlarının değerlerini ekran yazdırıyormuş.
+
+699
+01:53:08,952 --> 01:53:09,852
+Basit.
+
+700
+01:53:12,731 --> 01:53:14,252
+Subscription'a bakalım.
+
+701
+01:53:14,880 --> 01:53:17,680
+Subscription, işte bir tarife ile ilişkili.
+
+702
+01:53:18,420 --> 01:53:21,000
+Şimdi daha sonra göreceğiz kullanımını.
+
+703
+01:53:21,320 --> 01:53:23,760
+Java YouTube paketinde yaran bir date sınıfı var.
+
+704
+01:53:25,160 --> 01:53:29,520
+Hem tarih hem saati bir arada modelleyen bir sınıf.
+
+705
+01:53:31,123 --> 01:53:48,503
+Farklı takvim seçeneklerini destekleyen bir sınıf. Hicri, Miraci, Gregory, Maya takvimi falan bütün takvimleri destekliyor. Epey ayrıntılı bir sınıf. Zaman gelince ileride ayrıca konuşacağız bunun üstünde.
+
+706
+01:53:59,123 --> 01:54:06,123
+Bir saat, yani o an neyse onu simgeleyen bir date nesnesi oluşturuluyor. O kadar bilmeniz yeter bu aşamada.
+
+707
+01:54:07,484 --> 01:54:14,003
+İşte hangi tarifeden abone edilecek o parametre olarak geliyor ve atanıyor üye alana.
+
+708
+01:54:15,003 --> 01:54:18,884
+Başlangıç tarihi ise parametreun çağırladığı an olaraktan veriliyor.
+
+709
+01:54:18,884 --> 01:54:24,923
+3 gün sonra başlasın aboneli veya 2 gün önce geriye doğru yönelik işlem türünden her şeylere girmiyorum.
+
+710
+01:54:25,395 --> 01:54:29,735
+O şeyleri date'i görürken yapacağız. Şimdi inama odaklanalım.
+
+711
+01:54:30,355 --> 01:54:38,055
+ToString metodu ise subscription'ın önce tarifesinin toString'ini çağırıyor. Ondan sonra kendisinin ne zaman başladığını da söylüyor.
+
+712
+01:54:38,395 --> 01:54:45,155
+Bir update koymamışım yani. Dediğim gibi o kadar şeylerle uğraşmamışım. Önemli olan bu da inamı göstermek çünkü.
+
+713
+01:54:46,068 --> 01:54:54,448
+Person'a da baktığımda, person'un ismi var, aboneliği var, ismi constructor'la alıyor, get the metodu da var.
+
+714
+01:54:54,448 --> 01:55:09,927
+Onun toString metodu adını verip, subscription'ın toString'ini çağırmış olacak. Şimdi bak, mutluString olduğunda, şuradaki geriye dönen string, git subscription nesnesini string'e çevir anlamına geliyor sadece subscription yazmam.
+
+715
+01:55:10,188 --> 01:55:13,448
+Ben buraya nokta toString desem de, desemesem, demesem de.
+
+716
+01:55:14,068 --> 01:55:20,268
+Sağol makinesi o şekilde davranıyor. Subscription'ın da, to-sitcine, override ettiğim için ortada anlamlı bir şey gelecek.
+
+717
+01:55:20,268 --> 01:55:28,427
+Bu durumda kişinin adını yazacak ve tarifesini, aboneliğini yazacak. Aboneli de içerisinde tarifeyi yazacak.
+
+718
+01:55:29,007 --> 01:55:34,268
+Ondan sonra, evet, düşündüğüm gibi bir kodlamışım. Bir kişiyi bir tarifeye abone ettiğimizde,
+
+719
+01:55:34,528 --> 01:55:40,268
+ilgili subscription üye alanı ilklendiriyor. Parametro olarak kendisine gelen tarifeyi vererekten.
+
+720
+01:55:41,203 --> 01:55:42,884
+Böyle bir yapısılar.
+
+721
+01:55:47,347 --> 01:56:05,127
+Test de şeyde gördüğünüz gibi burada hani biraz daha fazla tarife koyup ücret değiştirdiğimde onun yansıdığını da göstermek istemişim. Önce şu yansıdakini koyayım, doğru çalıştığını görelim. Ondan sonra çeşitlemesine bakarız.
+
+722
+01:56:11,380 --> 01:56:12,699
+Test, cipostur.
+
+723
+01:56:22,387 --> 01:56:23,387
+Ve...
+
+724
+01:56:23,387 --> 01:56:26,627
+...şonları koyuyorum.
+
+725
+01:56:29,307 --> 01:56:30,147
+Kopyalım.
+
+726
+01:56:31,247 --> 01:56:31,947
+Buradan geçelim.
+
+727
+01:56:37,779 --> 01:56:38,800
+Evet, çalıştığım.
+
+728
+01:56:41,239 --> 01:56:42,039
+Evet.
+
+729
+01:56:42,819 --> 01:56:45,679
+Şimdi, UMLN'yi net dörde abone etmiştik.
+
+730
+01:56:46,099 --> 01:56:52,699
+Net dörde de kota 4 GB, sızı 8 megabit, ücreti 30 lira.
+
+731
+01:56:53,159 --> 01:57:00,939
+Başlangıç ise, bugün 22 Nisan saat 10.55, şimdi 10.56 oldu ben söyleyene kadar.
+
+732
+01:57:02,880 --> 01:57:03,179
+Şimdi.
+
+733
+01:57:04,756 --> 01:57:16,236
+Şurasını bilemeyeceğim. Yeni gelmeye başlamış. Yani TRT 2020, TRT ne? Türkiye'de televizyonu değil herhalde. Yani Turkish Time belki anlamında olmuş olabilir.
+
+734
+01:57:18,163 --> 01:57:27,223
+Yine eklenmiş, biraz daha ayrıntılandırılmış CDK'nın ilerleyen versiyonlarında, VT sınıfı. Peki, bunu da anlamış olduk diyelim.
+
+735
+01:57:28,183 --> 01:57:39,263
+Belki ise net free demiştik, kotası yok. Ama hızı biraz daha düşük, ücreti ise daha pahalı şeklinde. Gördüğünüz gibi problemsiz çalışabildi.
+
+736
+01:57:39,667 --> 01:57:42,147
+Peki, diyelim ki zam geldi. Ne olacak?
+
+737
+01:57:44,027 --> 01:57:52,387
+Sadece tarifi zamlandırdığımızda kişiler de artık yine zamlı fiyatlardan ödemelerini yapacak haliyle.
+
+738
+01:57:52,387 --> 01:57:54,027
+Onu da göstermek için.
+
+739
+01:57:56,692 --> 01:58:01,291
+Mesela bir kişi daha oluşturmuşum, Olcan. Onu tarife dörde koymuşum.
+
+740
+01:58:01,531 --> 01:58:07,731
+Ha, tarife dörde zam yapacağım. Hem Olcan'ın hem Yunus Emre'nin zam ücreti vereceğini görelim.
+
+741
+01:58:08,091 --> 01:58:10,771
+Yunus oluşturmuşum. Onu da tarife dörde seyretmişim.
+
+742
+01:58:10,771 --> 01:58:20,551
+Sonra bu tarife dördün ücretini otuz beşe çıkarmışım. Oturdu ya. Otuz beşe çıkarmışım.
+
+743
+01:58:20,884 --> 01:58:45,263
+Sonra şey yapmışım, beş ile daha zam yapmışım. Şimdi artış iki şekilde de yapabiliriz. Birincisi, şimdi bu tarif dört diye işaretçi tanımlamıştım ya, onun üstünden de yapabiliriz. Veya nihayetinde tarif inanının net dört değerinin üzerinden de ücreti arttırmak yapabiliriz.
+
+744
+01:58:47,699 --> 01:58:54,960
+Şimdi isterseniz birini koment deriz, 35 olduğunu görürüz. Ötekini koment deriz, 40 olduğunu da görürüz ve yapabiliriz.
+
+745
+01:58:55,412 --> 01:59:01,992
+Sonra bir de net free tarifesini ona tarif 5 devir işaret üzerinden oluşturmuşum.
+
+746
+01:59:02,472 --> 01:59:08,092
+Kişi oluşturmuşum. Bu 5'e abone etmişim. 5'in de zamlanmadığını göreceğiz.
+
+747
+01:59:08,352 --> 01:59:13,012
+Çünkü net free ile ilgili herhangi bir düzenleme işlemi yapmamıştık.
+
+748
+01:59:13,392 --> 01:59:15,032
+Sonra kişileri yazdılarım bakalım.
+
+749
+01:59:15,032 --> 01:59:17,032
+Sadece 12 komentlerim.
+
+750
+01:59:23,699 --> 01:59:29,920
+Evet, bakın, olacağı Yunusen'le 35 olarak ücreti gözüküyor, gözükecek.
+
+751
+01:59:31,579 --> 01:59:40,059
+Bunu kaldırıp, şunu koyarsam da, ama şeyde değişmedi, 60, Netflix'i belki onun 60'ı değişmedi.
+
+752
+01:59:40,059 --> 01:59:42,279
+Bu şekilde yaptığımda da.
+
+753
+01:59:47,060 --> 01:59:51,640
+40 lira olarak ücretlendiğini göreceğiz.
+
+754
+01:59:53,800 --> 01:59:54,060
+Evet.
+
+755
+01:59:55,220 --> 01:59:56,320
+Nihayetinde
+
+756
+01:59:56,320 --> 01:59:58,700
+inan da bir nesne
+
+757
+01:59:58,700 --> 01:59:59,840
+tanımı
+
+758
+02:00:00,083 --> 02:00:28,083
+Sınıf ve nesne tanımı. Enam içerisinde olası nesne değerlerini tanımlıyoruz. Bu nesne de, nesne yani işte, constructor oluyor, getter, setter metodu oluyor, istediğiniz gibi kullanabiliyoruz. Normal, her nesne bir bireydir sloganınız dahilinde davranmaya devam ediyorlar. Tek fark işte, tarif sınıfından sadece dört tür nesne olabilir. Siz bunları istediğiniz kadar farklı farklı işaret...
+
+759
+02:00:28,083 --> 02:00:35,243
+İletçilere de atayabilirsiniz ama nihayetinde bütün ufak bir işaretçiler bellek de aynı yeri gösteriyor olacaklardır.
+
+760
+02:00:37,843 --> 02:00:41,503
+Evet, bakalım başka bir şey kaldı mı? Başka bir şey kalmadı.
+
+761
+02:00:42,384 --> 02:00:45,503
+Evet, soru soru var arkadaşım varsa buyursun lütfen.
+
+762
+02:00:48,659 --> 02:00:51,119
+Hocam, bizim bir sorun var.
+
+763
+02:00:51,640 --> 02:00:52,280
+Buyurun [öğrenci].
+
+764
+02:00:52,400 --> 02:00:58,199
+Bizim bu en önemli sınıflarında, bizim mesela burada üç tane tanımlı tarifemiz var.
+
+765
+02:00:59,260 --> 02:01:04,180
+Bu tarife, kaç tane tarife olduğuna ulaşabilir miyiz program içinde? Öyle bir yol var mı?
+
+766
+02:01:06,760 --> 02:01:10,180
+Bilmiyorum. Yok. Var da şöyle var.
+
+767
+02:01:11,500 --> 02:01:15,760
+Şimdi şuraya chat ekranına yazacağım.
+
+768
+02:01:16,532 --> 02:01:24,411
+Java, Java, reflection, API.
+
+769
+02:01:24,916 --> 02:01:50,536
+Java'nın reflection yetenekleri dille birlikte geliyor. Reflection dediğimiz şey de bir nesnenin sadece byte kodundan yola çıkıp, yani nokta class dosyasından yola çıkıp, o nesnenin ne gibi üye alanları var, ne gibi üye metotları var, eğer bir kalıtım ilişkisi içerisinde mi, değil mi?
+
+770
+02:01:50,927 --> 02:02:03,108
+Metotlarının bir şeyde, Yeriksel Programlama dersinde görünen metot pointer yapısı vardı ya, metotlarına pointerlar al, o metotları şu parametreyle çalıştır gibisinden.
+
+771
+02:02:07,507 --> 02:02:17,387
+İncelenmesi ve çalıştırılmasına yönelik yetenekleri var. Bu işlemlere ana adıyla Reflection denilir. Java Reflection API var.
+
+772
+02:02:17,387 --> 02:02:34,927
+Ve buna ek olarak çeşitli bytecode analiz ve inceleme kütüphaneleri var. Third party olarak, açık kaynak olarak. Bunlar kullanılarak da illa ki bu Enum'un şu üyeleri varmış. Dıdık dıdık oluşturabilirsiniz.
+
+773
+02:02:35,507 --> 02:02:37,167
+Erde edebilirsiniz, öğrenebilirsiniz.
+
+774
+02:02:37,667 --> 02:02:53,447
+Ama onun dışında hani bir dizinin uzunluğu, eleman sayısını, daha doğrusu uzunluğunu, kapasitesini öğrenmek için nokta length dediğimiz gibi işte inanmı da kaç eleman tanımlı onun sayısını böyle doğrudan basit biçimde alabileceğimiz bir yol yok.
+
+775
+02:02:53,447 --> 02:02:56,568
+Ama reflection üzerinden yapabiliriz.
+
+776
+02:02:57,007 --> 02:02:57,648
+Böyle söyleyeyim.
+
+777
+02:03:00,051 --> 02:03:01,532
+Tamamdır hocam, teşekkürler.
+
+778
+02:03:01,891 --> 02:03:13,952
+Bir şey değil. Eğer bu Reflection konusu ilginizi çekmişse, Core Java'da volume birinde veya ikisinde yazıyordu. Ben onlardan birinden çalışmıştım bu konuyu. Başka kitaplarda da vardır elbette Reflection.
+
+779
+02:03:16,091 --> 02:03:17,652
+Evet, başka soru alayım.
+
+780
+02:03:57,395 --> 02:04:03,016
+Şimdi ben sonra beklerken kaldığım yeri işaret diyeyim.
+
+781
+02:04:26,612 --> 02:04:51,672
+Peki, [öğrenci] Hanım. Şimdi arkadaşlar, dersin başında söylediğim üzere bir tekrarlıyorum. Diğer hocalarla da koordinat içerisinde olacağız. Haftaya sınav var. Sınavda inama kadar, inam hariç, interface dahil olmak üzere tüm içerikten soru gelebilecek. Ona göre bütün içeriğe çalışacaksınız.
+
+782
+02:04:52,243 --> 02:04:56,103
+Sınavda soru tarzımız şu şekilde olacak.
+
+783
+02:04:58,283 --> 02:05:02,363
+Öncelikle size bir UML sınıf işlemesi vereceğiz.
+
+784
+02:05:02,543 --> 02:05:07,283
+Mesela diyelim ki işte şu örnekten yola çıkalım mesela.
+
+785
+02:05:07,803 --> 02:05:09,743
+Soyuz sınıf örneğinden yola çıkalım.
+
+786
+02:05:10,223 --> 02:05:12,483
+Size şöyle bir sınıf işlemesi vereceğiz.
+
+787
+02:05:12,927 --> 02:05:40,467
+Ondan sonra acaba. Yalnız işte bu sınıf şemasını verirken bazı redundant olan bilgilerin birini verip birini vermeme durumumuz olabilecek. Mesela örneğin işte bu Kindergarten'dan Çar'da Bire Yıldız şeklinde işaretlediysek aslında bu Kindergarten sınıfında Çar türünden bir dizi olması gerektiğini bilmeniz gerekmekte. Örneğin bunun gibi.
+
+788
+02:05:41,011 --> 02:05:56,271
+Veya işte Kindergarten'a bir constructor koymamışım ama constructor'a özel önem verdiğimizi hatırlayın. Bir constructor gerekmektedir. Bunu kodlamanız gerekmektedir. Bunu hatırlayın. Bu şekilde ana tasarımı vereceğiz.
+
+789
+02:05:56,756 --> 02:06:01,756
+Ondan sonra bir açıklama dahi yapabiliriz.
+
+790
+02:06:02,136 --> 02:06:18,816
+İşte bu senaryo anaokulundaki olan çocukların barındırılması ve çeşitli malzemelerin onlara kullandırılması ile ilgili bir anaokulu bilgi sisteminin ana tasarımıdır deriz.
+
+791
+02:06:18,816 --> 02:06:24,756
+İşte burada şeylerin her bir item'in çocukları...
+
+792
+02:06:24,756 --> 02:06:27,216
+Uygunluğu kontrol edilmek zorundadır.
+
+793
+02:06:27,856 --> 02:06:34,136
+Fakat farklı itemların farklı uygunluk kuralları olabilir gibisinden böyle değineceğiz.
+
+794
+02:06:34,476 --> 02:06:39,796
+Ondan sonra diyeceğiz ki mesela işte soru biz, kinderga atası sınıfının kaynak kodunu yazın.
+
+795
+02:06:40,316 --> 02:06:43,336
+Mesela hepsini yazmak durumundasınız.
+
+796
+02:06:43,536 --> 02:06:48,076
+O zaman yazarken de işte bu gizli bilgileri de açığa çıkarıp kodunuzu eklemek zorundasınız.
+
+797
+02:06:48,076 --> 02:06:51,116
+Konstruktörünü da anlayayım kodunuza yazmak durumundasınız.
+
+798
+02:06:51,503 --> 02:07:04,823
+Öyle sorabiliriz. Ondan sonra ikinci soru diyelim ki, örneğin item sınıfının sadece suitable metodunu kodlayın derim mesela.
+
+799
+02:07:05,623 --> 02:07:16,783
+Yani ya bir sınıfın kodunu tamamen yazın deriz bir soruda. Diğer bir soruda bir sınıfın sadece şu metod ya da şu 2-3 metodun kodunu yazın deriz mesela.
+
+800
+02:07:18,100 --> 02:07:21,620
+ana hatlarıyla böyle bir sınav olacak.
+
+801
+02:07:22,100 --> 02:07:29,280
+Yani aslında tek bir büyük soru ama bunu işte sor 1, sor 2, sor 3 diye alt parçalarla bölmüş durumda olacağız.
+
+802
+02:07:29,280 --> 02:07:38,460
+Her bir soruda ya bu tasarımdaki parçaların yani o sınıflardan birinin tamamı kodunu yazmak şeklinde soru olacak.
+
+803
+02:07:38,980 --> 02:07:44,880
+Veyahut da o sınıfın bir ya da birkaç metodunun kaynak kodunu yazmak şeklinde olacak.
+
+804
+02:07:45,344 --> 02:07:53,164
+Şöyle şeyler de çıkabilir belki. Şu sınıfın, şu metodunun sequence diagramını çizin diyebiliriz mesela.
+
+805
+02:07:54,195 --> 02:08:04,775
+Veyahut da işte bir sınıfın metotlarından bir ya da birkaç biraz karmaşıksa yapılması gereken önemli bir kaçış varsa o zaman onu sözle yazacağız mesela.
+
+806
+02:08:04,775 --> 02:08:16,619
+Diyeceğiz ki mesela ana okulun çocuk ekle metodunda aynı çocuğun iki kere eklenmemesi gerekmektedir ve eklenecek çocuğun yaşında işte…
+
+807
+02:08:16,627 --> 02:08:22,567
+6'dan büyük olmaması gerekmektedir gibi ek kurallar da söyleyebiliriz.
+
+808
+02:08:22,688 --> 02:08:27,607
+Yani bazı açıklamalarda da bulunabiliriz belli metotlarla ilgili soru içerisinde.
+
+809
+02:08:28,407 --> 02:08:33,467
+Veya belki bu açıklamaları sequence diagram şeklinde de diyebiliriz.
+
+810
+02:08:33,467 --> 02:08:36,947
+Mesela şu metodun sequence diagramı verilmiştir, siz onun kodunu yazın.
+
+811
+02:08:37,027 --> 02:08:38,728
+Hadi bakalım da diyebiliriz mesela.
+
+812
+02:08:39,307 --> 02:08:42,947
+Çünkü normalde sequence diagramlardan da sorumlusunuz sınavda.
+
+813
+02:08:43,307 --> 02:08:44,627
+Onlar da gelebilir.
+
+814
+02:08:44,627 --> 02:08:53,768
+İçerik bu şekilde olacak sınavın. Peki siz sınavı nasıl yanıtlayacaksınız, nasıl yapacaksınız?
+
+815
+02:08:53,768 --> 02:09:06,587
+Şimdi ben sizin yerinizde olsaydım şöyle yapardım. Sınavın açıklama kısmına bunları söyleyeceğiz gerçeği, yazacağız ama şimdi madem burada baş başayız bir sözlü olarak da anlatayım sizlere.
+
+816
+02:09:08,724 --> 02:09:12,604
+Bir kere ide kullanabilirsiniz ve kullanmanızı tavsiye ederim de.
+
+817
+02:09:12,992 --> 02:09:24,012
+Yani isteyen, kendine güvenen elle de yazar, bir kağıda elle yazar, yazdığının resimlerini çeker, sisteme yükler cevap kağıdı olarak.
+
+818
+02:09:24,392 --> 02:09:29,952
+Ayrı ayrı dosyalar olarak yükleyebiliriz veyahut da bir Word dosyasının sayfalarına yapıştırabilir bunları.
+
+819
+02:09:30,352 --> 02:09:34,192
+Ondan sonra Word dosyası yollar veyahut da onu PDF'e çevirip öyle yollar falan.
+
+820
+02:09:34,192 --> 02:09:38,992
+Öyle bir şeyler yapabilirsiniz tabii ki ama ben tavsiye etmiyorum bunu.
+
+821
+02:09:40,052 --> 02:09:40,992
+Bir şey kullanıyorum yani.
+
+822
+02:09:40,992 --> 02:09:59,992
+Yani Eclipse kullanın. İllaki kodu yazacaksınız. Eğer bir soruda bir sınıfın sadece şu metodunu kodlayayım dediysek bile siz bütüncül bir yanıt vermek açısından tüm sınıfı kodlayıp yanıtınızı tüm sınıfın kodu olan...
+
+823
+02:10:00,000 --> 02:10:12,620
+Rakda verebilirsiniz. O durumda sadece hangi metodu sorsak onun doğruluğuna, yanlışlığına bakacağız. Diğer taraflardaki doğruluğa puan vermeyeceğiz, yanlışlığından da puan kırmayacağız.
+
+824
+02:10:15,123 --> 02:10:29,943
+Ama tabii o sınıfın diğer taraflarındaki bir yanlışlık, o not vereceğimiz metoda olumsuz etki edebilecek bir hataysa tabii ki o metodun puanlandırması kapsamında o hatanın puanı kırılır elbette.
+
+825
+02:10:31,083 --> 02:10:34,283
+Onun dışında şimdi ide kullanın dedim.
+
+826
+02:10:34,923 --> 02:10:42,943
+Ide kullanıp da mesela bütün bu sınıfların kodunu yazdıktan sonra isterseniz bir dört dosyası oluşturup işte birinci soru...
+
+827
+02:10:43,123 --> 02:11:01,344
+Onun cevabı işte kindergarten sınıfının kodunun tamamını. Onu yapıştırın. İkinci soru item sınıfının istitulatı metodu mu? Onun sadece o kısmını kopyalayıp böyle yapıştırın. O şekilde bir dosya oluşturup gönderebilirsiniz. O da olabilir.
+
+828
+02:11:11,007 --> 02:11:18,167
+Kodların altında, src'nin altında, neydi bu? Hangi paketi? 06 paketi, tamam.
+
+829
+02:11:18,948 --> 02:11:26,867
+Ne? 06 paketi. Şöyle şu klasörü sağ tıklayıp zip dosyası yapıp yanıtınız olarak onu da yükleyebilirsiniz.
+
+830
+02:11:26,867 --> 02:11:27,867
+Mesela.
+
+831
+02:11:40,127 --> 02:11:58,247
+Ondan sonra işte file, save ettikten sonra export image file deyin. Resmini de PNG dosyasını oluşturun. Ondan sonra ya işte kodlar ve artı diagramın PNG dosyasını bir Word dosyasında biriktirebilirsiniz.
+
+832
+02:11:58,247 --> 02:12:08,127
+Veyahut da işte kodları sıkıştırdığınız zip dosyasını ve bu PNG resmini içeren bir klasörü yine bir zip dosyası.
+
+833
+02:12:08,127 --> 02:12:19,567
+Kodası altında toplayabilirsiniz. Onu da yükleyebilirsiniz. O da olabilir. Yani yeter ki yükleyin arkadaşlar. Yeter ki bir şeyler yükleyin. Onları değerlendireceğiz.
+
+834
+02:12:21,247 --> 02:12:34,107
+Büyük ihtimalle şey, PDF'e çevirmeden yükleyin diyeceğiz. Çünkü siz eğer kodu Word'e yapıştırdıysanız biz bunu diyelim ki eğer okurken
+
+835
+02:12:35,412 --> 02:12:49,912
+Kod karmaşıksa, bunu hemen anlayamayacaksak sizin o yazdığınız kod kısmını sizin cevap kağıdınızdan kopyalayıp, ideye yapıştırıp bakalım nereleri atlamış, nereleri atlamamış diye bakmanız da söz konusu olabilir.
+
+836
+02:12:50,391 --> 02:12:58,631
+PDF'de bu kopyalama düzgün olmuyor. O yüzden bir tek PDF yüklemeyin diyeceğim. Word dosyası yükleyebilirsiniz, zip dosyası yükleyebilirsiniz.
+
+837
+02:13:03,412 --> 02:13:09,171
+İsmi de olabilir veyahut da kaynak kodlarınız ve şekiller de olabilir filan şeklinde bir açıklama yazacağız.
+
+838
+02:13:09,831 --> 02:13:11,952
+Sınavın açıklama kısmına.
+
+839
+02:13:12,751 --> 02:13:18,751
+Tabii şimdi öyle bir şey var mıydı? Eski sistemde vardı açıklama kısmı ama bu da ödevinde açıklama kısmında vardır herhalde.
+
+840
+02:13:19,211 --> 02:13:21,391
+Yoksa da zaten şöyle de yapacağız.
+
+841
+02:13:25,011 --> 02:13:27,031
+Ders vaktinde değil o.
+
+842
+02:13:28,652 --> 02:13:31,891
+Bu arada neydi sınav programı? Ona da bir bakalım bu arada.
+
+843
+02:13:34,891 --> 02:13:43,391
+Ders programları filan, vize final filan ve bunun vize şu 2022 vizesi.
+
+844
+02:13:43,931 --> 02:13:45,331
+Şuradayız, evet.
+
+845
+02:13:51,891 --> 02:13:55,252
+Neredeyiz? Neredeyiz? Şuradayız.
+
+846
+02:13:55,731 --> 02:13:59,252
+Ha, yani dersin gün, doğru ya, dersin gün saatinde.
+
+847
+02:13:59,851 --> 02:14:08,072
+Tamam, şimdi 29 Nisan tarihindeki derste ben derse de oturum açacağım.
+
+848
+02:14:08,891 --> 02:14:12,792
+Sizler bir yandan sınavınızı yaparken bir yandan derse de girin arkadaşlar.
+
+849
+02:14:12,792 --> 02:14:22,792
+Nasıl ki eğer sınavı yüz yüze yapıyorken biz ders veren hocalar salonlarda zaman zaman dolaşıp sizlerin soruları varsa yanıtlıyorduk.
+
+850
+02:14:23,731 --> 02:14:24,712
+Benzer şekilde
+
+851
+02:14:25,844 --> 02:14:53,784
+Ders oturumuna da sorularınız varsa onları solmak için kullanın. Sorularınızı chatten gönderin arkadaşlar. Eğer sorularınızın içerisinde bir ipucu olabilecek, sınav içeriği ilgili ipucu olabilecek bir durum varsa private olarak chatten yollayın bana. Ben sizin yanıtınızı yine private olarak veririm. Ama bütün sınıfı da bir konuda bilgilendirmek istiyorsam da o zaman public chat'e yazarım.
+
+852
+02:14:53,844 --> 02:15:01,124
+O şekilde sınav esnasında bana soru sorabiliyor olacaksınız arkadaşlar.
+
+853
+02:15:02,864 --> 02:15:03,923
+Doğum bundan ibaret.
+
+854
+02:15:05,104 --> 02:15:08,923
+Açıklamayı atladığım veya kafanıza takılan bir şey varsa buyurun sorun.
+
+855
+02:15:26,547 --> 02:15:26,908
+Koppel.
+
+856
+02:15:31,315 --> 02:15:41,675
+Peki. Artık aslında tecrübelisiniz de bu sınav konularında. Pandemi ortamında yapılan online sınavlarda. Kodla içeren sınavlar konusunda tecrübelisiniz aslında.
+
+857
+02:15:41,675 --> 02:15:49,295
+Hepsi sınav programlamışlar falan hepsinin sınavlarına girdiniz, ettiniz. Aslında bu konularda deneyimlisiniz. O yüzden sonra olmayabiliriz. Eyvallah.
+
+858
+02:15:50,771 --> 02:16:00,791
+Peki arkadaşlar, o zaman bugünlük bu kadar diyorum. Bütün sınavlarınızda başarılar diliyorum. İyi çalışmalar, sağlıkla kalın, sağlıcakla kalın arkadaşlar inşallah.
+
+859
+02:16:03,011 --> 02:16:03,871
+Notumu kapatıyoruz.
