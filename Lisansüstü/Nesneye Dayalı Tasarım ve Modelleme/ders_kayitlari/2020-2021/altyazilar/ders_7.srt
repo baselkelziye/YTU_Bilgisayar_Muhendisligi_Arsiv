@@ -1,0 +1,523 @@
+1
+00:02:43,092 --> 00:03:10,772
+Evet arkadaşlar, doğru. Hatırlattığınız için teşekkür ederim. Önce konuşma kısmına geçelim. Bir yandan Halk Boy'ta hazırladığım şeylerle ilgili de. Aklısınız iyi oldu. Ben de şey olarak düşündüm. Öncesinde biraz konuşuruz. Nasıl olacak, nasıl bitecek sınav. Ondan sonra sınava girersiniz şeklinde konuştum. Ama şimdi aynı anda birçok şeyi başlatınca, edince falan kafam karışıyor yani.
+
+2
+00:03:11,092 --> 00:03:16,352
+Ne zaman başlattı, ne zaman yazmıştım, filan falan. Öyle durumda olabiliyor.
+
+3
+00:03:17,112 --> 00:03:26,512
+Şimdi öncelikle saat bir buçukta geleceksiniz. Soru dosyasına ulaşacaksınız. Ondan sonra cama soru dosyanızda.
+
+4
+00:03:26,512 --> 00:03:35,132
+Şimdi ben öncelikle şöyle bir genel şey paylaşayım. Önce ekmek paylaşayım. Ondan sonra şöyle söyleyeyim şimdi.
+
+5
+00:03:37,427 --> 00:03:56,427
+Dersimizde bu dönemde... Evet. Şimdi PDF olarak yükledim soru kağıdını. Siz yanıtlarınızı nasıl vereceksiniz? İsterseniz kendiniz istediğiniz kadar A4 kağıda elle çizin. Ondan sonra çizdiklerinizin fotoğrafını çekip...
+
+6
+00:03:57,204 --> 00:04:17,984
+Ondan sonra çöme birden fazla sayfayı tek bizlik dosyası altında toplamanızı rica ediyorum. Dosyanın adı da öğrenci numaranız olsun. O adla yükleyin ondan sonra çöme. İsteyen böyle yapabiliriz. Çünkü nihayetinde sınav kapsamında sizden URM'a sınıf çizmenizi istiyorum olacağım.
+
+7
+00:04:18,579 --> 00:04:29,240
+Veya isterseniz, ders notlarını hazırlamakta kullandım. Wireless.UML programını kullanabilirsiniz. Şöyle bir şey.
+
+8
+00:04:33,492 --> 00:04:35,492
+Kendisinin de aslında bir jav dosyası.
+
+9
+00:04:40,884 --> 00:04:49,884
+Bir tane sınıf diagramı oluşturduktan sonra, bir tek şeyi hatırlatalım. Mesela diyelim ki bir soyuç sınıfını göstermek istiyorsunuz.
+
+10
+00:04:49,884 --> 00:04:56,884
+Sterotype şartını kullanmak için bir tane interfez koyarsınız köşeye. Onu kopyalarsınız.
+
+11
+00:04:56,884 --> 00:05:01,884
+Diyelim ki soyuç insan sınıfı oluşturacaksa, şöyle yazıyorum.
+
+12
+00:05:05,620 --> 00:05:16,560
+Üyalarların üye metotlarını falan çiziyorum. Ondan sonra hem ki bundan kalıtımla öğretmen, öğrenci falan sınıflarını şey dedim.
+
+13
+00:05:20,307 --> 00:05:29,028
+Ondan sonra şamanızı save deyip isteğiniz yeri kaydettikten sonra.
+
+14
+00:05:33,827 --> 00:05:41,587
+Export to Image File diyorsunuz. Aynı isimli dosya, PNG dosyası olarak kaydetmiş oluyor.
+
+15
+00:05:42,836 --> 00:05:48,296
+Tabiki şu araya koyduğunuz geçici interfiz kapatmayı, silmeyi unutmazsınız.
+
+16
+00:05:49,496 --> 00:05:52,776
+Export etmeden önce.
+
+17
+00:05:53,076 --> 00:05:58,796
+Valla böyle koyduğumuz zaman sürekli bırakabiliyorsunuz. Cevap 1.
+
+18
+00:06:00,836 --> 00:06:04,596
+Cevap 1. Kağıda da numaranız olsun tamam mı?
+
+19
+00:06:04,596 --> 00:06:06,596
+Gelebiliriz.
+
+20
+00:06:09,908 --> 00:06:30,468
+Bu soruda Visitor ve onu görmemiştik. Bir de genelde fasad kalıbını kullanıldım şeklinde. Öncelikle hangi kalıf veya kalıpları kullanacağınızı yazacaksınız.
+
+21
+00:06:37,812 --> 00:06:43,732
+Şu amaçla, şu yüzden kullanalım dersiniz.
+
+22
+00:06:45,412 --> 00:06:51,172
+Sonra öteki sene de şu yüzden, şu amaçla kullanalım dersiniz.
+
+23
+00:06:57,172 --> 00:07:01,052
+Sınavı henüz başlamadı. Sınavı 13.30'da başlatıyoruz arkadaşlar.
+
+24
+00:07:02,172 --> 00:07:04,572
+Sınavı 13.30'da başlatacağız. Şuraya da olsun.
+
+25
+00:07:08,851 --> 00:07:14,851
+Bundan sonra sınav kağıdını göstermiş oluyorum. Şöyle bir şey olacak.
+
+26
+00:07:14,851 --> 00:07:17,851
+Önce bunları ihtimal arkadaşlar yapalım.
+
+27
+00:07:17,851 --> 00:07:21,851
+Visitor şamaçı kullanalım.
+
+28
+00:07:21,851 --> 00:07:27,851
+Ondan sonra yaptığım tasarım ise şudur.
+
+29
+00:07:27,851 --> 00:07:35,851
+Bundan sonra oluşturduğumuz yöme şemasını da bu şekilde bırakırsınız.
+
+30
+00:07:36,468 --> 00:07:57,388
+İki soru için de benzer türden yanıt istiyorum sizden. Genelde sorularımda tek bir kalıp kullanmak yeterli oluyor. Belki buraya yazdığınız kalıbı çok uygun bir kalıp değildir.
+
+31
+00:07:58,291 --> 00:08:17,391
+Bunu kafadan uygun değil veya az uygun diye değerlendirmemek için de bir anda ne amaçlar, hangi sebeple kullandığınızın da açıklamasını okuyorum. Eğer o açıklama da aklıma yatmamışsa o zaman o kalıbı az uygun diye değerlendirip oradan bir miktar puan kırıyorum.
+
+32
+00:08:18,132 --> 00:08:28,831
+Buradaki sizin bahsettiğiniz kalıp benim düşünmediğim bir kalıpsa ama açıklamasında gayet mantıklı bulursam o zaman onu da tam doğru bir kalıp olarak düşünüp değerlendiriyorum.
+
+33
+00:08:29,492 --> 00:08:35,491
+Genelde soru başına bir kalıp düşünmüş olurum ama bazı sorular iki kalıbın birlikteliğini bağırıyor resmen.
+
+34
+00:08:35,491 --> 00:08:44,672
+O zaman iki doğru kalıbı bulamayan ve tek doğru kalıbı bulanda az bir şey belki kırıyorum. Öyle bir durumlarım oluyor kağıtları okurken.
+
+35
+00:08:45,587 --> 00:09:09,607
+Yani bir, doğru kalıbını seçtiniz. İki, doğru biçimde açıkladınız mı? Üç, tasarımınıza bakıyorum. Tasarımınızda UYM'nin güncel kurallarına uydumlu mu? Ve dördüncüsü, acaba UYM sınıf şamanızdan kalıbın yapısını ne kadar rahat görüp anlayabiliyorum? Bu not verdiğim dört kriter var işte.
+
+36
+00:09:10,196 --> 00:09:32,156
+Bu dört kriterin ilk ikisi %60-70, diğer ikisi %40-30 gibi ağırlık veriyorum genelde. Böylelikle bir soruyu 50 üzerinden öbür soruyu da 50 üzerinden değerlendirip notumuzu veriyorum. Bu şekilde bir yöntemim var. Ders notlarına bakabilirsiniz. Problem değil.
+
+37
+00:09:32,692 --> 00:09:59,751
+Normalde zaten ben fiziksel olarak yaptığım zaman sınavı tahtaya bütün kalıplarının isimlerini yazıyordum. Oradan da çoğunu hatırlıyordunuz zaten. Kalıplarının bir amacı da o zaten. Kalıpları bir kere çalışınız mı bir iki kere? Adına da baktınız mı? Ha bu şudur diye hemen hatırlayabiliyorsunuz. Hatırlayabilmelisiniz. Kalıpları çalışmanın bir amacı da bu zaten. Onun dışında sınavda kesinlikle kod yazmanızı istemiyorum.
+
+38
+00:10:00,000 --> 00:10:18,879
+Kesinlikle gerek yok. Sınıf şemasından olan tasarımınız ve şu yüzden kullanırdım açıklamanız kendi kendine konuşmalı. Koda kesinlikle ihtiyaç yok. İsterseniz yazın. Siz bilirsiniz ama şimdi nihayetinde ide listeleriniz de olacak. Bilgisayarınızda isminiz programı açık. Kullanabilirsiniz nihayetinde. Bunu engelleyen bir şey yok.
+
+39
+00:10:20,740 --> 00:10:24,940
+Durumu bu. Soru soran arkadaşım varsa şimdi buyursunlar.
+
+40
+00:10:27,059 --> 00:10:29,339
+Sınav için 2 saat süre vereceğini söylemişsiniz.
+
+41
+00:10:29,759 --> 00:10:32,843
+Şimdi biz bir 90 dakika olarak düşünelim de...
+
+42
+00:10:33,427 --> 00:10:51,067
+Ben de derste olacağım. Ekranı kapatmayacağım. Sadece böyle bir sitap paylaşmam. Ben kendi içine bakalım da PowerPoint sunumu, şu yansıdı özetlemeye çalışacağım. Oradan açık kalır.
+
+43
+00:10:51,067 --> 00:11:01,427
+Sizin sorunuz olursa çekten yazarsınız, çekten yazdığınızda baktığınız benden tepki yok. Hocam sorun var diyeyim kendinizin sesinizi açıp falan. Bir anlamda sınavınızı yapın.
+
+44
+00:11:01,427 --> 00:11:27,028
+Normalde 90 dakika verdiğim zaman diyelim ki sınıfın 3'te x çok rahatlıkla yetiştirebiliyor. 3'te 1 yetiştiremeyebiliyor. 15 dakika daha süre verdim diyorum. Ondan sonra çimel. O biraz daha uzuyor. 20 dakika, 25 dakika oluyor. Fena falan derken 2 saat oluyor. Normal süre 90 dakika diyelim. Sınav başlıktan sonra hatta sınavın bitişini 2.5-3 dememe rağmen.
+
+45
+00:11:29,427 --> 00:11:33,087
+Sistemde öyle tanımlar, haklısınız. Böyle de [öğrenci].
+
+46
+00:11:33,971 --> 00:12:00,672
+Saat 15.30'da da hala sınırın bitiş saatini saat 5, akşam 5, akşam 6 falan desem bile İstanbul kabul edebiliyor ve siz de yanıtınızı yükleyebiliyorsunuz. Ama daha önceden yüklemediyseniz yükleyebiliyorsunuz. Öyle bir durum var. O yüzden iletişimde kalın chat ekranında. Problem olursa hocam bir şey ekstra verebilir misiniz? Ben de. Hay hay diyorum yani.
+
+47
+00:12:01,971 --> 00:12:06,652
+Ben de odamdayım, rahatım. Siz de evlerinizde rahatsınız. Bir yere erken çıkıp yetişme derdimiz yok.
+
+48
+00:12:06,652 --> 00:12:07,971
+Şu yok, bu yok.
+
+49
+00:12:07,971 --> 00:12:08,971
+Hadi...
+
+50
+00:12:09,587 --> 00:12:34,167
+Olumsuz olasılıkları söylemeyeyim de biliyorsunuz Murphy'yi tanıyanlarınız vardır. Oda çözmek için buradayız. Sizin tarafta da belki bir şeyler olabilir. Olmaz inşallah. O yüzden ne bileyim işte hızlı seri bir şekilde yaparsanız ama kendi yani oyalanmadan kendi rutin hızınızı yaparsanız herhalde yetişir diye düşünüyorum. Yetişmezse de süre tanımlayacağım.
+
+51
+00:12:34,772 --> 00:12:38,852
+Word dosyası olarak yükleyebiliyorsunuz. PDF olarak yükleyebiliyorsunuz.
+
+52
+00:12:39,764 --> 00:13:04,903
+Ben şimdi geçen sistemden kaynaklanan tecrübemden dolayı Word oluştursam da bunu PDF'e çevirip yüklüyorum. Çünkü PDF'e çevirirken bazı kaymalar falan şunlar bundan olabiliyor. Yani eğer Word'de oluşturduysanız, Word'un 2013 süremininden beri bunu PDF olarak kaydetme seçeneği var. PDF olarak kaydetip öyle yüklersiniz. En iyisi o bence.
+
+53
+00:13:05,408 --> 00:13:08,528
+Örtüsü yükseltik, anlaşılır diye düşünüyorum yani.
+
+54
+00:13:10,888 --> 00:13:11,227
+Tamam mı?
+
+55
+00:13:12,268 --> 00:13:13,307
+Hocam merhaba.
+
+56
+00:13:13,788 --> 00:13:14,307
+Merhaba, buyurun.
+
+57
+00:13:14,803 --> 00:13:27,783
+Ben bir de şeyi sormak istiyordum. Yöğmen şamaları için bir editör kullanmak, yani wireless yöğmeli falan kullanmak zorunda mıyız? Yoksa mesela elle çizip fotoğraf çekme şeklinde mesela kağıdı o olur mu?
+
+58
+00:13:28,243 --> 00:13:38,743
+Olur, olur. Tabii olur. Ben şahsen bir kağıdı ya da resmi cep telefonuna çekmeyi çok beğenmiyorum. Çünkü yamık çıkıyor. Yani tam bir yerden gölge çıkıyor. O oluyor, bu oluyor, bir şey oluyor.
+
+59
+00:13:38,743 --> 00:13:42,803
+Elimde skinner olan arkadaşlarım caddeye tarağı gönderir. O da ayrı mesele de.
+
+60
+00:13:42,803 --> 00:13:51,623
+O kolay. Herkesin hem de sıkıntı yok. Benim de yok mesela. Okuldakini kullanıyorum böyle şeyler gerektiğinde. Çok acilse ancak bir şeyin resmini çekip gönderiliyor.
+
+61
+00:13:51,923 --> 00:14:04,423
+Bir mutluluk oluyor. Düz değil de şöyle şu şekilde bir aşıyla tuttuğumdan da yani öyle şeyler olabiliyor. Ama olsa bile bence problem yok. Önemli olan gönderilen şeyi okuyup anlayabiliyor muyum? Mesele o yani.
+
+62
+00:14:05,556 --> 00:14:07,176
+Tamamdır hocam. Teşekkürler.
+
+63
+00:14:07,475 --> 00:14:20,876
+Onun dışında aşama çizmekte kullandığınız başka bir gereç varsa isterseniz kullanın ama ben mesela ne bileyim World'un ya ofisin şekil çizme özelliklerini çok beğenip kullanamadım açıkçası yöne aşamalar oluşturmak için.
+
+64
+00:14:21,296 --> 00:14:31,696
+Bir ara vizyo denedim. Vizyo da pek işe yaramıyor bence. Rahatlama valituya mer geldi. Siz bilirsiniz. İster böyle yapın, ister böyle yapın. Hiç problem değil her yol sabest.
+
+65
+00:14:37,076 --> 00:14:39,036
+Başka sorusu var ama lütfen buyurun.
+
+66
+00:14:46,868 --> 00:14:49,868
+Şunları gazete zetemeli çalışıyorum. Sorular lütfen buyurun.
+
+67
+00:14:55,764 --> 00:14:59,764
+Sonrasında ders yapacağız.
+
+68
+00:15:03,347 --> 00:15:14,687
+Sonucu mu? Hani sizler de artık deneyelim. İnsanlarsınız. Yani şunu da yazmama çok gerek yok. Bu alanı belki daha verimli kullanabilirim. Bundan sonucu mu?
+
+69
+00:15:17,687 --> 00:15:19,347
+Son daha başka ne diyebilirim?
+
+70
+00:15:23,379 --> 00:15:25,379
+Onlar Instagram'da, evet.
+
+71
+00:15:34,580 --> 00:15:35,580
+Kötü, yorum.
+
+72
+00:17:12,915 --> 00:17:13,755
+Hocam merhaba.
+
+73
+00:17:14,215 --> 00:17:15,315
+Merhaba, buyurun [öğrenci].
+
+74
+00:17:16,215 --> 00:17:20,775
+Şeyde peki Word dosyasında isminde herhangi bir istediğiniz format var mı?
+
+75
+00:17:21,415 --> 00:17:30,955
+Yok yok yok. Yeter ki okunsun, anlaşılsın. O kadar. Bir kolaylık için öğrenci numaranızı adınızı yazın. Kolaylık için ne olur ne olmaz.
+
+76
+00:17:31,508 --> 00:17:32,307
+Tamamdır hocam.
+
+77
+00:17:32,327 --> 00:17:38,728
+Kalışmaz ama kolaylık sağlıyor bazı çocuk olduğumda. Bu şekilde bir format istiyorum.
+
+78
+00:17:38,728 --> 00:17:39,967
+Şu an konuşuyor.
+
+79
+00:18:39,124 --> 00:18:39,923
+İçinde değil.
+
+80
+00:18:53,748 --> 00:18:55,403
+Şeklılığa altyazı Mühendisliği.
+
+81
+00:18:58,804 --> 00:19:06,324
+Herhalde bu yansıra yansıtkıların olayı anlatıyor diye düşünüyorum.
+
+82
+00:19:06,324 --> 00:19:13,523
+Şurada hazır kalsın. Genelde böyle bir şey yapacaksınız diyebilirim.
+
+83
+00:19:13,523 --> 00:19:20,564
+Şimdi sıra saatin gelmesini bekliyoruz. O kadar.
+
+84
+00:19:29,779 --> 00:19:54,559
+Bu arada ben kendimi şimdiden müte alayım. Ama soru sormak isteyen, sessiz olmak isteyen müte açsın kendini. Onun için açıdan da yazabilirsiniz dediğim gibi. Büyük ihtimalle görüyorum çünkü öyle böyle bilgisayarın başındayım yani görüyorum. Şimdi mutlaka bir şey çıkıyor. Dikkatimi çekiyor. Sen görün yani ama görememişsem de sessizli devreye girersiniz arkadaşlar.
+
+85
+01:19:38,100 --> 01:19:39,180
+Hocam merhabalar.
+
+86
+01:22:58,547 --> 01:23:00,547
+Hocam merhaba sesim geliyor mu acaba?
+
+87
+01:23:14,131 --> 01:23:23,152
+Sesim geliyor. Pardon, chat yazmışsınız. Dikkatimi çekmemiş. Şimdi bir şeyler geldi. Tamam. Şimdi yazışacağız.
+
+88
+01:23:23,791 --> 01:23:24,652
+Tamam hocam, sağ olun.
+
+89
+02:27:33,139 --> 02:27:35,539
+Hocam merhaba, acaba orada mısınız?
+
+90
+02:27:37,739 --> 02:27:38,500
+Buradayım.
+
+91
+02:27:39,459 --> 02:27:43,879
+Ben şu an dosyamı mesela yüklemeye çalışıyorum ama şey diyor.
+
+92
+02:27:44,639 --> 02:27:47,500
+Evet, doldu diyor. Ben de bir bakıyorum.
+
+93
+02:27:48,595 --> 02:28:00,075
+Hayır, yok öyle demedi bana. Bir dosya yükleyin ya da yükleme linki belirtin dedi. Halbuki dosyayı yüklemiştim. Yani burada da görünüyor zip dosya.
+
+94
+02:28:00,075 --> 02:28:05,075
+Olabilir. Şimdi ben öncelikle sizden şu adresini...
+
+95
+02:28:26,736 --> 02:28:30,736
+Onu da çok hızlıyorum. Şimdi düzenle diyorum.
+
+96
+02:28:31,540 --> 02:28:35,800
+Tamam, peki gelmiyor. Şimdi bunu 15.40 diyeyim.
+
+97
+02:28:36,404 --> 02:28:50,203
+Öyle kaydedeyim bakalım. Oldu gibi gözüküyor. Peki, şimdi tekrar bir deneyin bakalım. Hatta isterseniz yine olmazsa şöyle yapın. Ben şuradan herkes…
+
+98
+02:28:50,203 --> 02:28:56,604
+Drive linki falan da kabul ediyor sanırım. Orada Drive'ımı atıp Drive linki mi paylaşsam acaba bilemedim.
+
+99
+02:28:56,604 --> 02:29:04,184
+O da olabilir. Onu bir deneyeyim. Ben şimdi 15-40'a kadar süre uzattım. O yüzden şeydebilirsiniz.
+
+100
+02:29:04,404 --> 02:29:30,564
+Yani yapabilirsiniz her iki türlü herhalde. Ayrıca ben de merak ediyorum. Önce bir rahat rahat bir yüklemeye çalışın. Sonra dersten kopmayın lütfen. Ben herkes ekran paylaşımı yapabilir dedim. Olayı merak ettim. Eğer uygun görürseniz ekranınızı açıp neyle karşılaştığınızı ben de görürüm. Bunu da UZEM ekibine editirim ayrıca. Ama en kötü ihtimal siz bu chatten yazdığım cemainime gönderebilirsiniz yanıtımızı yani.
+
+101
+02:29:30,835 --> 02:29:35,635
+Tamamdır hocam. Tekrardan yapıştırıma göre ekran gösterebilirim.
+
+102
+02:31:14,675 --> 02:31:26,675
+Hocam merhaba. Tekrar. Bir saniye. Ekran. Siz paylaşırken ben de paylaşabilir miyim hocam? Ben izin verdim. Herkes ekran paylaşabilir diye bir bakın bakalım.
+
+103
+02:31:34,388 --> 02:31:35,888
+Ben yine stop share diyeyim.
+
+104
+02:32:49,139 --> 02:32:50,219
+Merhaba hocam.
+
+105
+02:32:50,579 --> 02:32:51,319
+Evet, buyurun.
+
+106
+02:32:51,539 --> 02:32:55,539
+Anlaşımım kapalı olduğu için ayarlarda zooma. O yüzden...
+
+107
+02:32:55,539 --> 02:32:58,139
+Tamam, boşverin. Ama bir şey geldi şimdi.
+
+108
+02:32:58,639 --> 02:33:00,299
+Geldi, geldi. Ben şu an görüyorum sizi.
+
+109
+02:33:00,299 --> 02:33:10,180
+Biri sıkış yapmak zorunda kaldım. Şimdi şöyle bir şey yapacağım. Bunu tekrar değiştirdiğim olmadı. Şuradan geçeyim.
+
+110
+02:33:12,211 --> 02:33:18,271
+Daha sonrasında kaydet dediğimde az önce hem güncellendi.
+
+111
+02:33:19,572 --> 02:33:26,231
+Toast mesajı çıktı. Hem de şuan okağa dedi ve şuan kaydettiğim hiçbir şey, yani şuan klik yapamıyorum.
+
+112
+02:33:26,231 --> 02:33:40,791
+Tamam. Peki siz şimdi en acil bu zik dosyasını bana Gmail'ime bir gönderin lütfen. Ondan sonra cama. Burası böyle kaydı geçmiş oldu. Öte yandan ben de mesela şimdi şey yapayım şimdi.
+
+113
+02:33:41,311 --> 02:33:58,832
+High Exit Full Screen deyip sınav yazılımına giriyorum bu arada ben şimdi. Orada [öğrenci]'ın bakalım şimdi. [öğrenci]'ın açı aldı değil mi? Hayır hocam [öğrenci]'ın açıcı. [öğrenci]'ın peki pardon.
+
+114
+02:34:01,683 --> 02:34:28,743
+Hocam şu çıktı. Şu an görebiliyor musunuz bilmiyorum. Evet. Ben görebiliyorum. Bende de gözüküyor. Ama sizin yerine de bir gönderin cemeyle. Örgü bidonlarda çift tıkış göndermekte hiç sakınca yok. Tamamdır hocam. Teşekkürler. Geçmiş olsun. Bir şey kapatabilirsiniz isterseniz paylaşımı. Ben kapatmış oldum şimdi. Only one şey. Böyle kapatmış oldum.
+
+115
+02:34:29,056 --> 02:34:30,435
+Tamam, geçmiş olsun.
+
+116
+02:34:31,115 --> 02:34:31,435
+Tamam.
+
+117
+02:34:46,100 --> 02:34:53,500
+Şimdi bakalım, ekleyemeyenler... Şimdi tam ekran paylaşabilirim benim için. Bir sıkınca yok şimdi.
+
+118
+02:34:53,500 --> 02:35:05,100
+Şimdi sıkın... Tam ekran paylaşalım bakalım. Şimdi sistemden bakalım, ha yüklenmemiş ama sistemde olan gözükenlerden bir bakalım.
+
+119
+02:35:05,100 --> 02:35:13,100
+Biraz daha [öğrenci] Hanım var. [öğrenci]'da da ki kendisi burada. Bir şey olursa benimle iletişime geçer zaten.
+
+120
+02:35:13,556 --> 02:35:15,556
+Başka.
+
+121
+02:35:22,100 --> 02:35:42,100
+Bir editör biraz uzunluktunu kullanmalı falan diyor kendim. Öngörülmeyen planlamasızlıkla olabiliriz. Bakalım şimdi izlettim, izlettim. Ha, orada gözüküyor. Tamam. Ha, şurası açıklama şeymiş.
+
+122
+02:35:49,587 --> 02:35:59,788
+Peki, o zaman sanki şu an hani sisteme girip de cevabını yükleyememiş gözüken bir tek asla [öğrenci] Hanım var.
+
+123
+02:36:01,448 --> 02:36:02,188
+Ona da bakarız.
+
+124
+02:36:05,128 --> 02:36:09,868
+Diğer arkadaşlar, isterlerse çıkabilirler. Yani özel bir ders yapmayacağız, etmeyeceğiz.
+
+125
+02:36:10,387 --> 02:36:12,827
+Herkesi kanamı toplamış olur, kapatacağım dersi.
+
+126
+02:36:13,811 --> 02:36:19,811
+Ama nihayetinde [öğrenci] Hanım'la olan olayı da bir görmek istedim.
+
+127
+02:36:19,811 --> 02:36:23,811
+Sanırım yükledim ben ama sizden yüklenmedin mi gözüküyor?
+
+128
+02:36:23,811 --> 02:36:28,811
+Sürekli lifleşe basmıyorum ya, ondan da belki. Hemen bakalım [öğrenci] Hanım size de.
+
+129
+02:36:28,811 --> 02:36:33,811
+Tamam, bakalım, bakalım. Tamam, gözüküyor. Geçmiş olsun.
+
+130
+02:36:33,811 --> 02:36:34,811
+Teşekkürler.
+
+131
+02:36:35,507 --> 02:36:42,288
+Peki arkadaşlar, o zaman herkese geçmiş olsun. Haftaki derste görüşürüz. Artık oturumu kapatıyorum.
