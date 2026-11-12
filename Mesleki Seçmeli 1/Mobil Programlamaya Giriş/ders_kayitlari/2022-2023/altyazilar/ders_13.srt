@@ -1,0 +1,2183 @@
+1
+00:06:38,612 --> 00:06:50,372
+Arkadaşlar, hoş geldiniz. Yeni bir haftada yine birlikteyiz. Birkaç dakika genel bir değerlendirme yapacağım. O sırada belki katılan başka arkadaşlarımız da olur.
+
+2
+00:06:51,372 --> 00:06:59,392
+Birinci ödevinizi, daha doğrusu tek ödevinizi teslim ettiniz. Ödevle ilgili bazı arkadaşlarınız mail yazmış.
+
+3
+00:07:01,875 --> 00:07:24,655
+Herkese tek tek cevap yazmamak adına burada bir açıltımı yapacağım. Özellikle bu ödevi son dakika yükleyemeyen arkadaşlarımın her sene olduğu gibi 4-5 kişi ya da 5-6 kişi var. Burada benim yapabileceğim bir şey yok maalesef. Çünkü çok önceden verdim ben bu ödevi.
+
+4
+00:07:25,363 --> 00:07:50,363
+Dökümanı 3 hafta önceden paylaştım. Ödevi vereceğimi bir ay önce ilan ettim. Derslerde de özellikle yaptıklarımızı sizden ödevde isteyeceğimi söylemiştim. Bu noktada son dakikaya bırakıp mutalihsizliği yaşayan arkadaşlar adına üzgünüm. Bir arkadaşınız bunun için beni ziyaret etti ve hani 3 dakikayı da bundan dolayı sıfır almasının...
+
+5
+00:07:51,315 --> 00:08:17,535
+Aslında haksızlık olduğunu söyledi. Ben de bunun üzerine bu sene veri yapılarında başladığımız bir uygulamayı dönem projesinde yapalım o zaman diye teklif götürdüm kendisine. O da şu, dönem projenizin testimi yanlış hatırlamıyorsam 29 Mayıs'tı. Gece 12'ye kadar süre. Yarım saatlik ekstra bir session açacağım.
+
+6
+00:08:18,163 --> 00:08:30,843
+Geç teslim etmek durumunda kalanlar o yarım saatlik session'da belirli bir puan kırılarak teslim edebilme şansına sahip olacaklar. Normalde bu kadar önce verilen ödevler için böyle bir şey yapmamıza aslında gerek yok.
+
+7
+00:08:31,252 --> 00:08:51,251
+Ama hani hem onun gönlü olması adına hem de sizlere iyi niyetimi göstermek adına dönem projesinde ek bir yarım saatlik session açıyor olacağım. Şanssızlık yaşayan, talihsizlik yaşayan olursa bu açtığım ikinci sekşona ödevlerini yükleyebilirler.
+
+8
+00:08:55,251 --> 00:08:55,340
+Şimdi...
+
+9
+00:08:55,443 --> 00:09:08,583
+Bir arkadaşınız özelden yazmış, onun zaten [öğrenci] durumunu takip ediyoruz, mail gönderdin. Şu anda buradan bir şey konuşmamızı gerektirecek bir durum yok. Mailler üzerinden haberleşmeye devam edeceğiz.
+
+10
+00:09:10,503 --> 00:09:21,763
+Ödevlerle ilgili son durum böyle. Mümkünse önümüzdeki iki haftalık süreç içerisinde ödevleriniz değerlendirilecek ve ilan edilecek bir aksilik olmazsa.
+
+11
+00:09:22,355 --> 00:09:29,415
+Zaten sınavlarla ilgili herhangi bir sorunu olan kimse yoktu. Evet, [öğrenci], seni dinliyorum.
+
+12
+00:09:30,015 --> 00:09:36,216
+Hocam, ben biraz önce zaten mail atmıştım da dersin olduğunu bir anlık unuttum. Dersse sormam daha doğru olurdu.
+
+13
+00:09:37,535 --> 00:09:51,375
+Ben ve birkaç arkadaş da public yapma olayını bir gün sonra olduğu için unutmuşuz. Şu an yaptım. Bugün sabah yaptım private public olayını. Sorun olur mu?
+
+14
+00:09:52,215 --> 00:09:56,695
+Şu an için bir sorun görmüyorum ama sonrasında eğer bir sorun oluşursa sizinle irtibata geçeriz.
+
+15
+00:09:57,355 --> 00:10:01,855
+Yani zamanda teslim ettim ama public olayını iki gün geç yaptım.
+
+16
+00:10:02,224 --> 00:10:03,724
+Bunu söylemek istedim.
+
+17
+00:10:03,944 --> 00:10:05,364
+Teşekkür ederim haber verdiğim için.
+
+18
+00:10:06,044 --> 00:10:06,544
+Rica ederim.
+
+19
+00:10:09,604 --> 00:10:12,244
+Bugün notifikasyon konusunu işleyeceğiz.
+
+20
+00:10:13,944 --> 00:10:16,424
+Geçtiğimiz hafta background taskları işlemiştik.
+
+21
+00:10:19,004 --> 00:10:21,944
+Geçtiğimiz hafta uygulama yapma şansımız olmamıştı.
+
+22
+00:10:21,944 --> 00:10:25,564
+Bugün uygulama yapma şansımız olacak.
+
+23
+00:10:26,264 --> 00:10:28,644
+Sorularınız olursa yanıtlamaya çalışacağım.
+
+24
+00:10:29,235 --> 00:10:33,015
+Notification konusu aslında önemli bir konu.
+
+25
+00:10:33,735 --> 00:10:39,155
+Çünkü aslında bugün günümüzde bildirimlerin sayısı çokça artmış durumda.
+
+26
+00:10:39,155 --> 00:10:45,615
+Daha önce bunu SMS'de yapıyorduk. Şimdi SMS'in yanına Notification'lar da eklenmiş durumda.
+
+27
+00:10:46,196 --> 00:10:48,796
+Hatta Push Notification Service olarak geçiyor.
+
+28
+00:10:56,307 --> 00:11:07,727
+Yaklaşık olarak 3 haftası kaldı. Sorularınız varsa bana mail ile iletebilirsiniz ya da buradan ders sırasında sorabilirsiniz.
+
+29
+00:11:07,727 --> 00:11:18,447
+Herhangi bir takıldığınız bir nokta varsa. Konuları işledikçe mümkün olan kısımları projenizin içine dahil etmenizi önereceğim.
+
+30
+00:11:18,899 --> 00:11:28,119
+Özellikle bu gün işleyeceğiniz notification konusunun dönem projemizin içerisinde olması önemli.
+
+31
+00:11:28,759 --> 00:11:34,980
+Farklı kullanıcı ile interakşın sağlayabileceğiniz mesajlaşma yöntemleri var.
+
+32
+00:11:35,539 --> 00:11:40,740
+Bugün onları sizlerle beraber konuşuyor olacağız.
+
+33
+00:11:42,439 --> 00:11:46,240
+Başka sorusu olan var mı? Dersle ilgili ya da herhangi bir sıkıntısı olan?
+
+34
+00:11:50,515 --> 00:11:55,155
+Peki, o zaman hemen soruma geçebiliriz.
+
+35
+00:12:01,971 --> 00:12:04,132
+Sanırım görebiliyorsunuz diye tahmin ediyorum.
+
+36
+00:12:05,132 --> 00:12:06,771
+Kendi ekranımda ayarlama yapayım.
+
+37
+00:12:10,484 --> 00:12:20,124
+Evet, şimdi bildirimler kendi özelinde aslında alt, çok başlığı olan bir konu.
+
+38
+00:12:20,124 --> 00:12:36,124
+Ama bugün sadece bildirimleri değil, kullanıcıyı programla ilgili ya da telefonla ilgili gelişmelerden haberdar edebileceğiniz, kullanıcıyla interakşına girebileceğiniz,
+
+39
+00:12:36,884 --> 00:12:48,364
+Neler var onları da göreceksiniz. Bunlara işte pop-up mesajlar, post mesajlar, işte action barlar gibi farklı alternatifler de dahil.
+
+40
+00:12:48,788 --> 00:13:13,107
+Öncelikle bildirimlerden, notification'lardan başlayacağız. Sonra diğer telefonunuzdaki herhangi bir gelişmeyi kullanıcıya aktarmak adına neler kullanılabiliyor ya da aktivitenizde yaptığınız bir şey sonrasında bilgilendirmeyi nasıl yapıyorsunuz bunları bugün ders kapsamında konuşuyor olacağız.
+
+41
+00:13:15,155 --> 00:13:39,255
+Söylediğimiz gibi Notification bugün uygulamaların kendi mesajlarını kullanıcılara gerek diğer kullanıcılardan gelen, gerek telefondan gelen, gerekse başka uygulamalardan gelen değişikliklere bağlı olarak ilettiği en önemli aslında kullandığı birim.
+
+42
+00:13:39,892 --> 00:13:42,971
+Burada çeşitli formlar var.
+
+43
+00:13:43,539 --> 00:13:54,899
+Örneğin, Notification Bar'da belirli bir ikon konumlandırabiliyorsunuz. Bu ikon bir mesaj geldiğinde orada gözüküyor. Bu bir SMS olabilir, bu e-mail olabilir.
+
+44
+00:13:56,899 --> 00:14:08,899
+Notification Bar'daki ikon yeterli değilse, mesajın daha fazla detayını paylaşmak istiyorsanız, o zaman Notification...
+
+45
+00:14:09,615 --> 00:14:17,475
+Drawer'da gözükecek daha uzun metinleri kurgulayabiliyorsunuz. Bu da yapılabilen yöntemlerden bir tanesi.
+
+46
+00:14:18,596 --> 00:14:22,316
+Dikkati çekmek için heads up notificationlar var.
+
+47
+00:14:23,235 --> 00:14:30,615
+Geldiğinde kullanıcının herhangi bir iş yaparken Drawer'a konumlanan ama...
+
+48
+00:14:30,912 --> 00:14:39,092
+Biraz daha geç fark edebileceğiniz mesajları ivedilikle tespit edebilmeniz için HeadSup Notification'dan kullanıyoruz.
+
+49
+00:14:39,231 --> 00:14:49,512
+Ki bu ilk mesaj geldiğinde yukarıdan aşağıya doğru bir pencere açılıyor ve siz burada mesajın içeriğini görüyorsunuz.
+
+50
+00:14:50,100 --> 00:14:57,579
+Mesajın üzerinde aksiyon alınabilecek butonlar varsa, o butonlar üzerinden o aksiyonları alabiliyorsunuz.
+
+51
+00:14:57,900 --> 00:15:07,740
+Eğer değilse yukarı swipe edip ya da belli bir süre bekleyip mesajın otomatik olarak kendini arka plana almasını yaptığınız işe devam edebiliyorsunuz.
+
+52
+00:15:08,740 --> 00:15:16,919
+Burada üç temel yaklaşımdan bahsettik. Bir tanesi status bar'daki ikonlar.
+
+53
+00:15:17,491 --> 00:15:36,491
+O anda yeni bir mesaj geldiğinde beliren ya da yeni bir state'e geçildiğinde beliren ya da ileride göreceksiniz foreground servisler olarak bir medya uygulaması çalıştırdığınızda ya da müzik dinlediğinizde bu bahsettiğimiz barda ikonlar görüyorsunuz.
+
+54
+00:15:45,139 --> 00:15:52,000
+Statüs bar'da yer almayan, HeadSup Motification olmayan mesajlar da olabiliyor. Onlar da Drawer'a konumlanıyorlar genelde.
+
+55
+00:15:53,019 --> 00:15:57,600
+Acil olanlar da, daha öncelikli olanlar da HeadSup Motification olarak kurgulanabiliyorlar.
+
+56
+00:15:59,539 --> 00:16:08,600
+Tabii, belirli bir sürümden itibaren ekranınızın locked olduğu, yani kilitli olduğu normalde...
+
+57
+00:16:09,460 --> 00:16:27,436
+Mesajların gözükmediği durum için işletim sistemleri özel case'ler yaratıp kullanıcının da o izni vermesiyle birlikte aslında kilidinizi açmadan mesajların geldiğini...
+
+58
+00:16:27,700 --> 00:16:39,700
+Ya da eğer siz izin verdiyseniz içeriğini kilit ekranda görebiliyorsunuz. Bunun için settingler var. İşte visibility public yaptığınızda notification'a ait tüm içeriği görebiliyorsunuz.
+
+59
+00:16:50,004 --> 00:17:10,344
+Özür diliyorum, Private ile karıştırdım. Mesajın hiçbir kısmını göremezken Secret'te, Private'te sadece o mesajın temel içeriğine ait bilgiyi görebiliyorsunuz ama alttaki full detayı göremiyorsunuz.
+
+60
+00:17:10,384 --> 00:17:13,884
+Bu üç seçenek arasında gidip gelebiliyorsunuz.
+
+61
+00:17:20,339 --> 00:17:26,339
+Ve bu üç seçenek kullanıcı tarafından aslında Locked Screen'de...
+
+62
+00:17:27,316 --> 00:17:32,956
+Biraz da privacy concern'ı olarak hangisinin tercih edilene bağlı olarak değişebiliyor.
+
+63
+00:17:33,096 --> 00:17:40,476
+Siz bunu böyle kurgulayabilirsiniz default settingleri ama kullanıcı bunu değiştirdiğinde sizin buna tekrar müdahil olma şansınız olmuyor.
+
+64
+00:17:40,476 --> 00:17:44,956
+O yüzden siz ancak bu konularda default settingleri belirleyebiliyorsunuz.
+
+65
+00:17:44,996 --> 00:17:53,376
+Kullanıcı kendi her uygulama özelinde notification'larla ilgili ayarını kendisi ayarlar yakınından yapabiliyor.
+
+66
+00:17:54,516 --> 00:17:56,516
+Android 8 sürümüyle birlikte...
+
+67
+00:17:57,683 --> 00:18:15,643
+Biraz da Apple'ın ortaya attığı bu aslında uygulamalara yeni bir mesaj geldiğinde işte kaç tane mesaj olduğunu bir badge ile uygulama ikonlarının köşesine konumlandırdığı sayı ile gösteriyor iOS tarafı.
+
+68
+00:18:15,643 --> 00:18:25,643
+Burada da Google tarafı bunu renklendirdiği bir notification dot ismini verdiği bir badge ile gösteriyor ve siz...
+
+69
+00:18:25,683 --> 00:18:31,824
+Bu badge'ı tıklayarak doğrudan notification'lara gidebiliyorsunuz.
+
+70
+00:18:31,824 --> 00:18:40,003
+Ya da notification'ları uzun süre tıklayarak kendi ekranınızda gösterebiliyorsunuz.
+
+71
+00:18:40,083 --> 00:18:45,824
+Bu da herhangi bir uygulamaya yeni bir mesaj geldiğini...
+
+72
+00:18:46,867 --> 00:18:54,607
+Ev ekranı üzerinde, home screen üzerinde gezerken bir badge belirmişse buradan anlamanızı sağlıyor ve işi biraz daha kolaylaştırıyor.
+
+73
+00:18:55,268 --> 00:19:00,248
+O yüzden User Experience, User Interface hep söylüyoruz. Bunlar çok çok önemli.
+
+74
+00:19:00,907 --> 00:19:08,867
+Kullanıcının bu kadar karmaşık bildirimler içerisinde aslında yolunu bulabilmesi için işletim sistemlerinin...
+
+75
+00:19:09,556 --> 00:19:23,355
+Her versiyonda bu özellikle Human-Computer Interaction konusu söz konusuysa buralara özel çözümler getirdiğini görüyoruz. En çok bu noktalarda değişiklik yapılıyor.
+
+76
+00:19:24,255 --> 00:19:32,195
+Eskiden notificationlarla ilgili yapılan ayarlar tüm uygulamaları kapsayacak şekilde gerçekleşirken
+
+77
+00:19:32,576 --> 00:19:37,496
+Bugün günümüzde uygulamalara spesifik ayarlar yapmanız mümkün olabiliyor.
+
+78
+00:19:38,395 --> 00:19:46,255
+Çünkü Gmail için farklı bir ayar, SMS için farklı bir ayar, WhatsApp için farklı bir ayar tercih ediyor olabilirsiniz.
+
+79
+00:19:47,076 --> 00:19:55,255
+Günün sonunda işletim sistemi bu seviyede, bu çözünürlükte bir ayar mekanizması size uzun yıllardır sunuyor.
+
+80
+00:20:00,000 --> 00:20:09,860
+Otomatik olarak herhangi bir giyilebilir cihazınızda saat başta olmak üzere gösterildiğini söylemekte fayda var.
+
+81
+00:20:09,860 --> 00:20:18,860
+Bunu sizin özel bir kodlama yapmanıza gerek yok. İşletim sistemleri, Wear OS ve işte...
+
+82
+00:20:19,251 --> 00:20:23,632
+Android tarafı kendi aralarındaki mekanizmayla hallediyorlar.
+
+83
+00:20:24,172 --> 00:20:29,192
+Ama siz yine ayarlarınızı değiştirerek bu mekanizmayı yönetebiliyorsunuz.
+
+84
+00:20:31,511 --> 00:20:34,771
+Gelelim bir bildirimin anatomisine.
+
+85
+00:20:35,451 --> 00:20:45,871
+Bir bildirimde gördüğünüz birçok bilgi aslında o bildirimin temel yapısını oluşturuyor.
+
+86
+00:20:46,355 --> 00:20:53,355
+İşte bir numaralı kısmına baktığınızda bir tane ikon görüyorsunuz, küçük bir ikon. Bunu siz belirleyebiliyorsunuz.
+
+87
+00:20:54,195 --> 00:20:58,355
+Ve burada set small icon ile bunu set edebiliyorsunuz.
+
+88
+00:20:59,655 --> 00:21:04,355
+Application name'i sistem tarafından sağlanan bir bilgi.
+
+89
+00:21:05,076 --> 00:21:10,396
+Gelen bildirimde bunu görebiliyorsunuz. Yani o andaki bildirimin hangi uygulamaya ait olduğunu.
+
+90
+00:21:14,132 --> 00:21:34,451
+Özellikle mesajın ne zaman geldiğini, kaç dakika önce geldiğini belirtmek için siz buraya set when, set show when, false diyerek bunun gözüküp gözükmemesi konusunda bir aslında setting ayarı yapabiliyorsunuz.
+
+91
+00:21:37,748 --> 00:22:04,307
+Daha büyük bir ikona sahip olmasını istiyorsanız ki bu opsiyonel bir özellik. Set Large icon'ı kullanıyorsunuz. İşte bir title yine opsiyonel olan bir özellik. Bir de text. Bu bildirimle ilgili temel yapıyı oluştururken bu metotlar üzerinden aslında Notification bu yıldır yardımıyla siz bildirimlerinizi
+
+92
+00:22:05,523 --> 00:22:08,364
+Nasıl gözükeceğini belirleyebiliyorsunuz.
+
+93
+00:22:12,180 --> 00:22:33,220
+Android 12 ile birlikte gelen yeni bir güvenlik seviyesi de şu. Siz telefonunuz kilitli bir vaziyetteyken bir mesaj geldiğinde onu gördüğünüzde tıklayıp açmak istediğinizde normalde bir mesaja tıkladığınızda uygulamaya gidersiniz.
+
+94
+00:22:37,044 --> 00:22:48,044
+Güvenlik kontrolü yoktur. Ama Android 12 ile birlikte eğer bunun bir notification action yapıldığında...
+
+95
+00:22:49,140 --> 00:23:06,920
+Kişiye şifre sorulmasını istiyorsanız o zaman Set Authentication Required True olarak belirlemeniz gerekiyor ki o zaman her zaman mutlaka Lock Screen'den giriş yapabilmek için bir şifre sorsun. Bu da 12 ile gelen yeni bir özellik.
+
+96
+00:23:10,420 --> 00:23:26,579
+Şimdi genelde bildirimler kısa olur mantığıyla hareket ediyoruz ama her zaman bu böyle olmuyor. Özellikle işte mail uygulamaları söz konusuysa mailin içeriğini de kullanıcıya göstereceksiniz. O zaman expandable notificationlar var.
+
+97
+00:23:38,387 --> 00:23:54,587
+Böyle bir formatta notification design ederek, bunun kullanıcıya daha net bir şekilde ve bütün içeriği gösterecek şekilde aktarılmasını sağlayabiliyorsunuz.
+
+98
+00:23:55,067 --> 00:23:59,067
+Ve bunun için tabii ekstra farklı bir template kullanmak gerekiyor.
+
+99
+00:24:02,483 --> 00:24:10,923
+Aynı uygulamadan bildirim geldiğini düşünecek olursak gelen bildirimlerin gruplanmasını mümkün hale getirebiliyorsunuz.
+
+100
+00:24:10,923 --> 00:24:23,143
+Bu sayede ekranınızda başka uygulamaların bildirimleri daha yeri optimum kullanarak konumlanabiliyor.
+
+101
+00:24:23,763 --> 00:24:29,923
+Örneğin işte 10 tane Gmail'den mail geldiyse bunları ayrı ayrı bildirim...
+
+102
+00:24:30,228 --> 00:24:38,428
+Formunda gösterip ekranı kaplamak yerine tek bir Gmail bildirimi formatında konumlandırıyorsunuz ekranda.
+
+103
+00:24:38,808 --> 00:24:53,008
+Bu sayede kullanıcı ona tıkladığında bütün o grup içerisinde yer alan bildirimler tek tek gözüküyor ve kullanıcı tercihine bağlı olarak uygulamalardan gelen bildirimler arasında gezme şansını sağlamış oluyorsunuz.
+
+104
+00:24:53,008 --> 00:24:56,688
+O yüzden Notification Group özelliğinden faydalanmakta.
+
+105
+00:24:58,228 --> 00:25:02,228
+memnuniyetini arttıran bir yaklaşım.
+
+106
+00:25:06,036 --> 00:25:29,456
+Şimdi bir başka önemli husus da notification'lara channel özelliği verilerek aslında notification'ların ne diyelim priority'lerini, öncelik durumlarını farklılaştırarak bir uygulamadan gelen acil ya da çok önemli olmayan mesajların
+
+107
+00:25:31,092 --> 00:25:36,292
+Daha farklı kurallarla kullanıcıya aktarılmasını sağlam aşamasına sahipsiniz.
+
+108
+00:25:36,292 --> 00:25:39,112
+İşte örnek veriyorum.
+
+109
+00:25:40,172 --> 00:25:48,712
+Urgent modundaki bir mesaj, ses çıkartırken ve heads up notification olarak yukarıdan aşağıya gözükürken.
+
+110
+00:25:50,099 --> 00:25:58,079
+High önceliğine sahip olan bir mesaj sadece ses çıkartıyor. Medium önceliğine sahip olan mesaj hiç ses çıkartmıyor.
+
+111
+00:25:59,099 --> 00:26:06,059
+İşte Low önceliğine sahip olan mesaj ise ses çıkartmıyor. Artı statüsler üzerinde bile gözükmüyor.
+
+112
+00:26:06,059 --> 00:26:12,399
+Bu şu demek, bir uygulamadan gün içerisinde en tane mesaj geliyor.
+
+113
+00:26:17,683 --> 00:26:40,624
+Priority bilgisini önemseyerek oluşturulan bildirimler sizin tarafınızdan konfigüre edildiğinde ve kullanıcı da buna uygun channel'lar üreterek mesajlar gönderdiğinde aslında sizin için kritik olanlar ses çıkartırken ve sizi bilgilendirme yönünde aksiyon alırken daha böyle arka planda kalabilecek.
+
+114
+00:26:41,039 --> 00:26:56,279
+Biraz daha ne diyelim, pazarlamaya yönelik mesajlar belki ya da kritik olmayan mesajlar arka planda sadece işte Drawer içerisinde yer alıyor. Hatta Status Para bile konumlanmıyorlar.
+
+115
+00:26:57,099 --> 00:27:03,039
+Bunun ayarlarını siz isterseniz uygulama içerisine girerek değiştirebiliyorsunuz.
+
+116
+00:27:06,195 --> 00:27:20,596
+Programla belirleyebiliyorsunuz ama kullanıcı bunu değiştirdikten sonra tekrar siz programla buna müdahale etme şansına sahip olmuyorsunuz ve kullanıcı bunun ayarını yaptıktan sonra notification'ları kullanmaya başlıyor.
+
+117
+00:27:24,723 --> 00:27:49,743
+Gelelim Do Not Disturb Mod'a. Bu da önemli son yıllarda kullandığımız özellikle sürekli toplantıdayken ses çıkması, titreşim olması, alarm çalması. Bunlar çok istediğimiz durumlar değil. Bu nedenle bu Do Not Disturb Mod'un 3 farklı aslında level'ı var.
+
+118
+00:27:50,291 --> 00:28:02,151
+Foto Silence dediğinizde alarmlar da dahil olmak üzere bütün ses ve titreşimler arka planda gerçekleşen değişikliklerde aslında ortadan kalkıyor.
+
+119
+00:28:02,871 --> 00:28:05,051
+Hiçbir şekilde rahatsız edilmiyorsunuz.
+
+120
+00:28:06,291 --> 00:28:13,371
+Alarms onluyu seçtiğiniz zaman sadece kurduğunuz alarmlar ötüyor ya da titreşime sebebiyet veriyor.
+
+121
+00:28:13,875 --> 00:28:34,716
+Priority Only'i seçtiğiniz zaman da yine kritik olan işte reminder, event, gelen arama, mesajlar gibi noktalarda kullanıcıyı bilgilendirecek düzeyde bir ses çıkmasını mümkün hale getirebiliyorsunuz.
+
+122
+00:28:34,716 --> 00:28:39,716
+Tabii bunu kişi özelinde de yapabiliyorsunuz. O noktaya kadar size sunulan bir...
+
+123
+00:28:40,192 --> 00:28:58,012
+Aslında seçenek havuzu var. Bunlar da yine uygulama geliştirirken dikkat edilmesi gereken noktalardan bir tanesi. Önemli birkaç noktaya da vurgulamak gerekirse bir tanesini dersin başında söylemiştim.
+
+124
+00:29:00,564 --> 00:29:16,683
+Uygulamanıza bağlı olarak çalışan bir foreground servisten bahsediyorsak, ki bu bir media player olabilir, bunun notification'ı aslında notification bar'da yer alıyor ve herhangi bir şekilde bunu kaldıramıyorsunuz.
+
+125
+00:29:28,079 --> 00:29:40,059
+Sınıf sonlandırmanız gerekiyor. O yüzden bazı notification'ların dismiss edilme özellikleri bulunmuyor.
+
+126
+00:29:41,099 --> 00:29:49,019
+Kullanıcının orada bir arka plan çalışan servis olduğunu unutmaması adına.
+
+127
+00:29:51,284 --> 00:30:04,164
+Bildirimlerin çok sık gelmesinden dolayı Android'in yine 8 ile birlikte getirdiği bir özellik var. Normalde her bildirim geldiğinde bir ses çıkartıyordu ama Android şöyle bir kural getirdi.
+
+128
+00:30:18,163 --> 00:30:20,923
+İnsanların rahatsız olmasını engelliyor.
+
+129
+00:30:28,435 --> 00:30:48,395
+Yalnız burada, ben de şöyle bir bakıyorum ama bunu siz de doğrulayabilirsiniz. Burada bir saniye diyor. Ben biraz önce bir dakika dedim. Bunu ben bir dakika olarak hatırlıyordum. Ama burada bir saniye söylüyor. Bunu check etmek istiyorum.
+
+130
+00:30:54,355 --> 00:31:00,715
+Aynı saniye içerisinde birden fazla kez mesaj geldiğinde olarak yazmış buraya ama bunu bir kontrol etmekte fayda var.
+
+131
+00:31:02,255 --> 00:31:13,076
+Çünkü bir saniye içerisinde evet birden fazla mesaj gelebilir ama genellikle bir saniye içerisinde birden fazla mesaj gelme olasılığı çok yüksek değildir.
+
+132
+00:31:14,195 --> 00:31:17,596
+O yüzden bu limite bir bakmak istiyorum ondan emin olamadım.
+
+133
+00:31:20,884 --> 00:31:30,884
+Zaman içerisinde yaşanan değişiklikler notifikasyonla ilgili arka arkaya gelecek. Android 5 ile birlikte burada görüyorsunuz.
+
+134
+00:31:30,884 --> 00:31:35,943
+Lock Screen ve Heads Up notifikasyonların tanıtıldığı versiyon bu.
+
+135
+00:31:37,064 --> 00:31:46,884
+Onun dışında işte burada Lock Screen'deki çeşitli Set Visibility metotlarının, Set Priority metotlarının
+
+136
+00:31:47,536 --> 00:31:56,316
+Konumlandırıldığı bir aslında önemli API level'lardan bir tanesi Android 5.0.
+
+137
+00:31:59,395 --> 00:32:13,975
+7 ile birlikte Notification Template'leri ile ilgili çeşitli resimler ve avatarlar ekleyebilme özelliği daha çok görsel anlamda dekorasyona yönelik yeni özellikler.
+
+138
+00:32:14,516 --> 00:32:16,276
+Android katılıyor.
+
+139
+00:32:17,116 --> 00:32:20,916
+Android tarafından 7 ile birlikte tanıtılıyor.
+
+140
+00:32:22,836 --> 00:32:27,656
+Notifikasyonlara cevap verebilme özelliği ekleniyor.
+
+141
+00:32:28,236 --> 00:32:29,816
+Yine Android 7 ile birlikte.
+
+142
+00:32:33,016 --> 00:32:41,436
+Channel özelliği yani bu her bir notifikasyonun kendine ait bir channel olması özelliği 8 ile birlikte.
+
+143
+00:32:41,951 --> 00:32:44,031
+karşımıza çıkıyor.
+
+144
+00:32:45,471 --> 00:32:49,412
+Ve bu channel'ların yönetimi de kullanıcıya bırakılıyor.
+
+145
+00:32:51,371 --> 00:32:54,672
+Ayrıca Notification'ların sunu uzatma özelliği de bu.
+
+146
+00:32:56,351 --> 00:32:57,912
+8 ile birlikte geliyor.
+
+147
+00:32:58,511 --> 00:33:04,011
+Notification Background'una bir Color ekleme özelliği de yine burada tanımlanıyor.
+
+148
+00:33:04,011 --> 00:33:08,851
+En son olarak Android 13 ile birlikte gelen Runtime Permission.
+
+149
+00:33:09,332 --> 00:33:32,491
+Bu da oldukça değerli ve önemli. Burada kullanıcıların bu ilgili bildirimlerle ilgili permission'ı mutlaka izni vermesi gerekiyor ki o bahsedilen uygulamaya ait.
+
+150
+00:33:32,912 --> 00:33:45,872
+Herhangi bir aksiyon alınacaksa, bir uygulamayla ilgili bir iş yapılacaksa, Notification'dan Activity'ye geçiyorsanız, o Permission'ı vermeden, Activity'nin herhangi bir özelliğini kullanamıyorsunuz.
+
+151
+00:33:47,812 --> 00:33:51,012
+Gelelim Notification yaratmaya.
+
+152
+00:33:57,299 --> 00:34:11,059
+Dependency'leriniz var ve bu Dependency'leri mutlaka eklemeniz gerekiyor. Bunlardan bir tanesi de AppCompat aktivite özelliğini buraya mutlaka eklemeniz gerekiyor.
+
+153
+00:34:12,539 --> 00:34:18,460
+Bir Basic Notification yaratırken Notification Compat Builder'dan faydalanıyorsunuz.
+
+154
+00:34:18,784 --> 00:34:37,604
+Bu yıldır üzerindeki set small icon daha önce gördüğünüz set content title, set content text, set priority gibi metotları çağırarak mutlaka o bildirimin içeriğini oluşturmanız sizden bekleniyor.
+
+155
+00:34:38,384 --> 00:34:41,923
+Tabii channel id'sini vermeniz kritik.
+
+156
+00:34:42,320 --> 00:34:51,320
+Çünkü 8 ve üzeri sürümlerde Channel ID zorundu. Channel ID'yi belirtmediğiniz zaman hata oluşuyor. Buna dikkat etmek gerekiyor.
+
+157
+00:34:53,320 --> 00:35:05,320
+Tabii daha farklı stiller yaratmak için Set Style gibi başka metotları çağırarak göstereceğiniz...
+
+158
+00:35:05,856 --> 00:35:12,016
+Tekstin daha büyük olmasını, koyu renkle yazılmasını vs. sağlayabiliyorsunuz.
+
+159
+00:35:12,776 --> 00:35:19,916
+Gelelim Pendek İntent'lere. Bunlar da çok önemli yapılardan bir tanesi.
+
+160
+00:35:21,676 --> 00:35:30,496
+Burada bizim için Pendek İntent ne görevini gerçekleştiriyor olabilir? Daha önce konuşmuştuk ama hatırlayan var mı bir sormuş olayım.
+
+161
+00:35:46,420 --> 00:35:49,460
+Nedir arkadaşlar? Pendekintent ne görevini görür?
+
+162
+00:36:02,099 --> 00:36:05,899
+Daha önce Pending Intent kullanan kimse var mı?
+
+163
+00:36:12,947 --> 00:36:15,167
+Pandic, Intent kullanmayanlar kimler?
+
+164
+00:36:43,155 --> 00:36:46,195
+Peki, teşekkür ederim cevapları arkadaşlara.
+
+165
+00:36:47,376 --> 00:37:10,536
+Handic Intent aslında sizin yaptırmak istediğiniz bir işin o anda yapılması yerine ilerideki bir zamanda yapılma durumu söz konusuysa kullanıcının aksiyonuna bağlı olarak görevi ona atıyorsunuz ve sizin için arka planda bu intent
+
+166
+00:37:11,123 --> 00:37:21,643
+Bekliyor ve kullanıcı aksiyon aldığında ilgili yapması gereken görevi gerçekleştirmek için aslında çalışmaya başlıyor.
+
+167
+00:37:22,443 --> 00:37:25,243
+Biz bu tür intentlere pending intent diyoruz.
+
+168
+00:37:25,243 --> 00:37:37,363
+Yani arka tarafta Suspend modunda bekliyor ve kullanıcı ilgili aksiyonu aldığında ya da sistemde bir değişiklik olduğunda bu pending intent devreye giriyor.
+
+169
+00:37:38,643 --> 00:37:48,643
+Manager'da da bunu konuşmuştuk. Bir alarm set ediyorsunuz. Zamanı geldiğinde bu pending intent vasıtasıyla yapılması gereken iş yapılıyor. Burada da...
+
+170
+00:37:49,940 --> 00:37:55,880
+Pending Intent'i Notification ile ilişkilendiriyorsunuz, Set Content Intent ile.
+
+171
+00:37:55,880 --> 00:38:10,880
+Bu sayede Notification'a tıklandığında ya da Notification üzerindeki herhangi bir aksiyon butonuna tıklandığında istediğiniz işin gerçekleşmesini mümkün hale getirebiliyorsunuz.
+
+172
+00:38:11,699 --> 00:38:15,380
+Buradaki örnekte olduğu gibi. Bunun için tabii bir intent.
+
+173
+00:38:16,916 --> 00:38:40,356
+Oluşturmanız gerekiyor. Burada işte Alert Details klasını çağıracak eksplisik bir intent oluşturulmuş ve bu intent daha sonra pending intent ile ilişkilendirilerek işlemin gelecek bir zamanda belirli bir aksiyona bağlı olarak gerçekleşmesi istenmiş bir şekilde kodlanmış.
+
+174
+00:38:45,811 --> 00:38:51,672
+Hocam bu şey gibi mi? Hani WhatsApp'ta şimdi şey özelliği var ya, bildirimden cevap yazabiliyoruz.
+
+175
+00:38:52,891 --> 00:39:01,072
+O da bu özel yani buradaki Pendek Intent ile yapılabilen özelliklerden bir tanesi olarak söylenebilir.
+
+176
+00:39:01,072 --> 00:39:10,331
+Ama hani sadece onu içermiyor. Başka herhangi bir o notification üzerinden bir aksiyon başlatacaksanız.
+
+177
+00:39:10,963 --> 00:39:18,503
+Burada tabii Notificationler için bahsettiğimiz için sadece söylüyoruz ama Pendling Intent Notificationler özel bir yapı değil.
+
+178
+00:39:19,583 --> 00:39:29,243
+Alarm Manager tarafında da kullanabiliyorsunuz ya da ileri dönük herhangi bir yapmak istediğiniz aksiyona bağlı her türlü işi Pendling Intent üzerinden konumlandırabiliyorsunuz.
+
+179
+00:39:35,923 --> 00:39:47,324
+Burada bir Channel nasıl yaratılıyor ve bu Importance seviyesi nasıl belirleniyor? Onu görüyorsunuz, Kot parçasını.
+
+180
+00:39:47,324 --> 00:39:59,943
+Burada bununla ilgili bir sonraki slide'da göreceksiniz belirlenen Importance Level'lar var. Burada Importance Default olarak belirlenmiş ve bu Channel.
+
+181
+00:40:00,000 --> 00:40:21,159
+Bu seviye parametre olarak hem Channel ID hem Name olarak aktarılıyor. Bu sayede de aslında siz oluşturduğunuz mesajın, bildirimin hangi önceliğe sahip olduğunu belirtmiş oluyorsunuz.
+
+182
+00:40:22,835 --> 00:40:33,456
+Buraya baktığımızda biraz önceki yapılarla eşleştirme yaparsak, urgent mesajlar için Importance High olarak özellik vermeniz gerekiyor.
+
+183
+00:40:34,915 --> 00:40:39,775
+High için Importance Default, Medium için Importance Low.
+
+184
+00:40:40,271 --> 00:40:56,492
+Low için Importance, Min ve herhangi bir şekilde hiçbir yerde gözükmesini istemiyorsanız, Status Bar da dahil olmak üzere, o zaman Importance, Non özelliğini set etmeniz gerekiyor.
+
+185
+00:40:56,492 --> 00:41:01,996
+Tabii, channel'larınızı...
+
+186
+00:41:02,739 --> 00:41:08,219
+Farklı şekillerde customize edebilme hakkına sahipsiniz.
+
+187
+00:41:08,219 --> 00:41:18,019
+Bu channel'ların mesaj gittiğinde ne tür yöntemlerle kullanıcıyı bildirmesini istiyorsanız.
+
+188
+00:41:18,483 --> 00:41:28,143
+Enable light, set light color, set vibration pattern gibi metotları çağırarak notification channel üzerinden ayarlama yapabiliyorsunuz.
+
+189
+00:41:28,224 --> 00:41:32,423
+Ama bunu siz ilk yarattığınızda bu ayarı yapıyorsunuz.
+
+190
+00:41:32,844 --> 00:41:40,427
+Ondan sonra kullanıcı bunu değiştirdiğinde artık teknik olarak kontrol ona geçiyor ve...
+
+191
+00:41:40,532 --> 00:41:42,072
+O yönetmeye başlıyor.
+
+192
+00:41:42,412 --> 00:41:47,712
+Değiştirmezse default ayarlarda sizin settingleriniz kullanılmaya devam ediyor.
+
+193
+00:41:49,692 --> 00:41:51,132
+Buraya kadar sorusu olan var mı?
+
+194
+00:41:55,795 --> 00:42:05,275
+Peki, saat 14.40, 14.55'e kadar bir ara verelim. 14.55'te kaldığımız yerden devam edelim.
+
+195
+00:56:37,652 --> 00:56:41,292
+Yeniden merhaba arkadaşlar. Dersin ikinci bölümüne geçiyoruz.
+
+196
+00:56:46,195 --> 00:56:47,376
+Ekranımın pareşi.
+
+197
+00:56:53,235 --> 00:57:03,295
+En son bildirimlerin öncelik seviyelerinden bahsetmiştik ve bunları nasıl set edebileceğinizi konuşmuştuk.
+
+198
+00:57:03,295 --> 00:57:15,916
+Bir sonraki slide'da da notification channel'ların settingleriyle ilgili bilgi almanız gerektiğinde bunun için get notification channel.
+
+199
+00:57:16,288 --> 00:57:25,568
+Metodu kullanılarak ya da Get Vibration Pattern, Get Sound metodu kullanılarak notification channel'larla ilgili bilgiyi alabiliyorsunuz.
+
+200
+00:57:26,168 --> 00:57:34,248
+Değişiklik yapamadığınızı söylemiştik ama kullanıcının yaptığı değişikliklerden haberdar olmak için böyle bir imkanınız mevcut.
+
+201
+00:57:35,847 --> 00:57:39,947
+Tabii önemli noktalardan bir tanesi eskiden bildirim...
+
+202
+00:57:40,436 --> 00:57:48,976
+Bize ulaştığında gerçekten tek yönlüydü ve o bildirim üzerinden bir bilgi alıyorduk, değişimden haberdar oluyorduk.
+
+203
+00:57:49,264 --> 00:57:56,904
+Bugün artık o bildirim sadece bize bir bilgi vermiyor, aynı zamanda aksiyona girmemizi de sağlıyor.
+
+204
+00:57:58,024 --> 00:58:11,884
+Bunun için biraz önce bahsettiğimiz Pendek, Intent burada da karşımıza çıkıyor ve aslında bu bildirime bir aksiyon ekleyebildiğimizi görüyorsunuz bu kod parçasında.
+
+205
+00:58:11,884 --> 00:58:14,404
+Bu da en aşağıda yer alan.
+
+206
+00:58:14,800 --> 00:58:21,800
+Builder'a eklediğiniz AddAction metoduyla ve özellikle burada işte bir...
+
+207
+00:58:23,027 --> 00:58:25,027
+İkon ekleyebiliyorsunuz.
+
+208
+00:58:25,407 --> 00:58:33,127
+Bu string, XML'den, işte sunuzla ilgili yazan yazıyı alıyorsunuz.
+
+209
+00:58:33,687 --> 00:58:41,427
+Ve bir de bu butona tıklandığı zaman hangi aksiyonun gerçekleşeceğini belirlediğiniz pending intenti ekliyorsunuz.
+
+210
+00:58:41,427 --> 00:58:46,427
+Burada da işte bu bahsettiğimiz...
+
+211
+00:58:47,603 --> 00:58:56,003
+Notification'ın sunuz özelliğini gerçekleştirebilmesi için bir My Broadcast Receiver kılasına yönlendirildiğini görüyorsunuz.
+
+212
+00:58:56,063 --> 00:59:03,803
+Sunuz intent üzerinden ve burada aksiyonunuzu takip edebilecek aslında bir tane buton.
+
+213
+00:59:04,192 --> 00:59:15,831
+Oluşturuyorsunuz bu kod parçasıyla. Bugün bunlar çok sık yaptığımız bildirimle kullanıcının etkileşimini sağlayan kod parçaları.
+
+214
+00:59:18,351 --> 00:59:28,631
+Yine burada başka bir özellik var. Mesela bir dosya indirmek istiyorsunuz. Bu dosyanın bildirim.
+
+215
+00:59:29,588 --> 00:59:45,008
+Download'den gelen butona tıklanmasıyla indirilmesini sağlamak istiyorsunuz. Download butonuna bastınız bildirimde yer alan. İşte orada dosyanın ne oranda indirildiğini Progress Bar üzerinden görüntüleyebiliyorsunuz.
+
+216
+00:59:54,387 --> 01:00:13,067
+Arka planda takibini yapabilmeniz için, çünkü siz o aktiviteden çıkıp başka bir aktiviteye geçebilirsiniz, bir notification oluşturup o notification'dan dosyanın ne oranda indirildiğini drawer'ı aşağıya çekerek takip etme şansına sahipsiniz.
+
+217
+01:00:19,280 --> 01:00:23,180
+Çok sık kullanılan özellikler. Burada bir bu yıldır oluşturuluyor.
+
+218
+01:00:23,660 --> 01:00:29,840
+İşte Picture Download yapan bir title veriliyor. Download in Progress olarak tekste yazılıyor.
+
+219
+01:00:29,840 --> 01:00:38,620
+Ve bundan sonraki kısımda ise işte Download'un ilerlemesine bağlı olarak arka planda.
+
+220
+01:00:40,500 --> 01:00:55,940
+Oradaki progress barın 0 ile 100 arasındaki uygun gelen birime konumlandırılması sağlanarak bildirim üzerinden indirilen dosyanın hangi oranda indirildiğini takip edebiliyorsunuz.
+
+221
+01:01:00,275 --> 01:01:26,215
+Burada tabii önemli noktalardan bir tanesi de genelde işte bir arama geldiğinde ya da işte WhatsApp üzerinden yine bir video call yaptığınızda bu noktada sizin gelen bilgiyi
+
+222
+01:01:27,092 --> 01:01:36,472
+Tüm ekrana yaymanız gerekebilir. Çünkü o anda işte kilitli olabilir telefonunuzun ekranı.
+
+223
+01:01:37,352 --> 01:01:45,472
+Ve bu kilitli olan ekranda size düşen mesajı belki görebilirsiniz, belki görmeyebilirsiniz.
+
+224
+01:01:46,132 --> 01:01:59,392
+Öte yandan, işte device'ınız kilitli olmadığı noktada bir önemli bir mesaj geldi. Bunun gözden kaçmasını istemiyorsunuz ve önde yaptığınız bir iş var.
+
+225
+01:02:01,192 --> 01:02:09,612
+Bütün ekran gösterilmesini istediğiniz bir mesaj söz konusuysa, o zaman set full screen intent.
+
+226
+01:02:10,356 --> 01:02:14,356
+Metodunu çağırarak aslında kişinin...
+
+227
+01:02:15,092 --> 01:02:19,752
+Burada herhangi bir şekilde notification'ı kaçırmaması mı sağlayabiliyorsunuz?
+
+228
+01:02:20,132 --> 01:02:29,032
+Bu urgent mesajlar için özellikle işte burada bahsetmiş gelen bir telefon görüşmesi olabilir.
+
+229
+01:02:29,032 --> 01:02:36,731
+Çünkü biliyorsunuz artık telefon görüşmeleri de heads up notification şeklinde gözüküyor ilk geldiğinde.
+
+230
+01:02:37,412 --> 01:02:43,032
+Ama siz bu kısmı yapacağınız bir ayar ile...
+
+231
+01:02:43,092 --> 01:02:49,731
+Büyük ekrana taşıyabiliyorsunuz. Bu sayede kullanıcının buna atlamasını engellemiş oluyorsunuz.
+
+232
+01:02:53,235 --> 01:02:59,895
+Şimdi gelelim Android işletim sistemindeki backtask yapısına.
+
+233
+01:03:00,915 --> 01:03:08,235
+Burada tasklar backstack'te konumlanıyorlar ve bir stack yapısı var.
+
+234
+01:03:08,355 --> 01:03:13,235
+İşte Activity 1'i çağırdınız, Activity A'dan Activity B'yi çağırdınız.
+
+235
+01:03:13,235 --> 01:03:19,235
+Bu noktada yeni bir aktiviteye geçtiğiniz zaman bir önceki aktivite durduruluyor.
+
+236
+01:03:20,047 --> 01:03:24,947
+Ve o anda bütün o aktiviteye ait stackler korunuyor.
+
+237
+01:03:24,947 --> 01:03:43,647
+Ve siz aktivite B'deyken Back butonuna basarsanız doğrudan stackten bir önceki aktivite A'ya ulaşarak onun kaldığı yerden restore edilmesini sistem sağlıyor ve onu kullanmaya devam ediyorsunuz.
+
+238
+01:03:43,956 --> 01:03:49,836
+O yüzden Home Screen'e basmakla Back tuşuna basmak arasında bir fark var.
+
+239
+01:03:49,836 --> 01:04:03,616
+Back tuşuna bastığınızda aslında o aktiviteden çıktığınızı ve bir önceki aktiviteye döndüğünüzü ve Stag'den bunu çektiğinizi söylerken,
+
+240
+01:04:03,983 --> 01:04:23,703
+Home tuşuna baktığınızda sadece o andaki çalıştırdığınız aktiviteyi geri plana alıyorsunuz ve tekrar siz o aktiviteye geri döndüğünüz zaman o aktivite kaldığınız yerde devam ediyor aslında, resüm ediyor.
+
+241
+01:04:24,244 --> 01:04:46,744
+Bu Home tuşuna bastığınızda o Activity aslında herhangi bir şekilde ortadan kalkmıyor. Arka plana alınmış oluyor. Back tuşunda ise Current Activity'yi Stack'ten alıyorsunuz ve Destroy ediyorsunuz. Önemli farklardan bir tanesi bu aralarındaki.
+
+242
+01:04:47,311 --> 01:04:52,911
+Zaman zaman da bir aktivitenin birden fazla instance'ını yarattığınız kısımlar olabiliyor.
+
+243
+01:04:53,011 --> 01:04:57,951
+Örneğin siz diyelim ki bir mail uygulaması kullanıyordunuz, bir mail yazıyordunuz.
+
+244
+01:04:58,751 --> 01:05:04,940
+Onu bıraktınız, o aktivite dururken başka bir uygulama üzerinden o mail uygulamasına geçip...
+
+245
+01:05:04,980 --> 01:05:15,579
+Mail yazma aktivitesini tekrar çalıştırırsanız ikinci bir instance olarak ondan yaratılıyor ve iki ayrı instance olarak lifecycle'larına devam ediyorlar.
+
+246
+01:05:19,251 --> 01:05:31,251
+Bir notification üzerinde aktivite başlatabiliyorsunuz. Bu önemli bir özellik. Bu sayede siz...
+
+247
+01:05:34,867 --> 01:05:41,228
+Notification'a tıkladığınızda aslında bir Entry Point olarak da gerçekleşiyor ve uygulamaya doğrudan erişiyorsunuz.
+
+248
+01:05:41,367 --> 01:05:48,407
+İşte WhatsApp'ta bir mesaj geldi diyelim, drawer'nıza düştü, ona tıkladığınızda doğrudan WhatsApp uygulaması açılıyor.
+
+249
+01:05:48,407 --> 01:06:00,407
+Bu örneklerden bir tanesi. Bir de o bildirimin geldiği uygulamanın default açılmasından öte sizin...
+
+250
+01:06:01,007 --> 01:06:25,688
+Notification'daki herhangi bir butona tıklandığında başka bir aktivitenin açılmasını sağlayabilme özelliğiniz de var. Bu sayede siz o Notification'dan başka bir aktiviteyi de tetikleyebiliyorsunuz. Kendi uygulamasını değil sadece, başka bir aktiviteye geçişi de yine o Notification üzerinden gerçekleştirebiliyorsunuz.
+
+251
+01:06:29,043 --> 01:06:41,483
+Burada bir regular aktivitenin pending intent üzerinden oluşturulmasını anlatan bir kod parçası var.
+
+252
+01:06:41,483 --> 01:06:50,344
+Burada yine bir intent yaratıyorsunuz. TaskStackBuilder üzerinden bir tane StackBuilder yaratıyorsunuz.
+
+253
+01:06:50,463 --> 01:06:56,644
+Oraya da ilgili intentlerinizi sırayla yerleştirebiliyorsunuz.
+
+254
+01:06:57,460 --> 01:07:03,220
+Gelelim Application Bar kısmına.
+
+255
+01:07:03,220 --> 01:07:17,820
+Şimdi Application Bar genelde telefonun üst noktasına yerleştirilen ve günümüzde de orada uygulamalarla ilgili bilginin ismin.
+
+256
+01:07:18,324 --> 01:07:44,043
+İkonun yer aldığı bir bar olarak aslında karşımıza çıkıyor. Ama bu eski bir kullanım. AppBardan sonra ActionBar çıkıyor ve yine ekranın üst tarafında konumlandırılan, üzerinde genelde uygulamayla ilgili bilgi olan ama zaman zaman
+
+257
+01:07:44,480 --> 01:07:59,839
+İşte bir action yapımasını sağlayan bir bar. Bugün onların yerini toolbar alıyor. Toolbar bir view group ve aktivitenizin herhangi bir bölgesine konumlandırabiliyorsunuz. Bu da şöyle bir artı sağlıyor.
+
+258
+01:08:10,771 --> 01:08:24,811
+Gezinmesini kolaylaştıracak, daha kullanıcı kullanımını basitleştiren ikonlar koyarak ekranlar arası geçişi kolaylaştırıyorsunuz.
+
+259
+01:08:24,852 --> 01:08:35,832
+Bu Toolbar'la bugün çok sık kullanılan yapı taşlarından bir tanesi. Bunları eczemen tarafında mutlaka sizden tanımlamanız bekleniyor.
+
+260
+01:08:38,420 --> 01:08:47,899
+Burada, işte bu bahsetmiş olduğumuz yapılar içerisinde item'ların nasıl select edildiğini anlatan kod parçaları var.
+
+261
+01:08:49,359 --> 01:08:56,340
+Bunları ek olarak önemli kullanılan bir diğer yapı da Swipe to Refresh layoutu.
+
+262
+01:08:56,340 --> 01:09:03,340
+Bu Swipe Refresh layoutunun şöyle bir güzelliği var. Örneğin bir mail uygulaması.
+
+263
+01:09:04,595 --> 01:09:21,775
+Düşünün, bu mail uygulamasında bir list view'unuz ya da grid view'unuz ya da recycler view'unuz var. Size mailleri gösteriyor. Siz bu uygulamanızın yeni bir mail gelip gelmediğini takip etmesi için
+
+264
+01:09:22,228 --> 01:09:25,388
+O ekrana gir çık yapmak istemiyorsunuz.
+
+265
+01:09:25,388 --> 01:09:33,448
+Ve bir aksiyon neticesinde sistemin yeni bir mail gelip gelmediğini kontrol etmesini bekliyorsunuz.
+
+266
+01:09:33,808 --> 01:09:36,228
+İşte burada Swipe Refresh Layout'ı kullanıyorsunuz.
+
+267
+01:09:36,448 --> 01:09:44,488
+Kişi bunu swipe ederek dikeyde yapmış olduğu hareketle aşağıya çekiyoruz genellikle.
+
+268
+01:09:47,220 --> 01:09:53,780
+Herhangi bir yeni mail server'a geldiyse sunucu tarafına, client tarafında da gözükmesini sağlıyorsunuz.
+
+269
+01:09:53,780 --> 01:10:00,000
+Bir nevi yaptığınız gesture ile sunucu tarafına bir...
+
+270
+01:10:00,000 --> 01:10:10,880
+Request yapmış oluyorsunuz ve yeni gelen bilgiler itemlar olarak RecyclerView'unuza, GridView'unuza ya da ListView'unuza eklenmiş oluyor.
+
+271
+01:10:12,000 --> 01:10:22,399
+Ama tabii sizin bu bahsettiğimiz ListView, GridView ya da RecyclerView'unuzun buradaki layout içerisine konumlandırılmış olması gerekiyor.
+
+272
+01:10:22,840 --> 01:10:24,940
+Bu özelliğe sahip olabilmeniz için.
+
+273
+01:10:29,971 --> 01:10:42,631
+Yine keza aynı şekilde bir Action Bar içerisine herhangi bir Refresh özelliği ekleyebilmeniz için bunu XML kodunun içerisinde gerçekleştirmeniz gerekiyor.
+
+274
+01:10:43,912 --> 01:10:53,971
+Refresh request'lerin nasıl takip edildiğine bakacak olursak, işte burada Swipe Refresh layout'u SetOnRefreshListener ile...
+
+275
+01:10:54,543 --> 01:11:05,443
+Bir takip yaptığını ve bunun onRefresh metodunda gerekli arka plan sorgularını tetikleyebileceğinizi görüyorsunuz.
+
+276
+01:11:05,724 --> 01:11:19,064
+Yine bu da özellikle çok sıklıkla değişen bir RecyclerView içerisinde listeniz, bilgileriniz varsa önemli bir kullanım şekli.
+
+277
+01:11:19,703 --> 01:11:20,923
+Bundan da bahsetmek lazım.
+
+278
+01:11:22,068 --> 01:11:41,068
+Yine Refresh Action'ına karşılık gelebilecek On Options Item Selected. Burada sizin itemlardan biri seçildiğinde yürütmenizi istenen metotlarınızı burada konumlandırıyorsunuz.
+
+279
+01:11:46,768 --> 01:11:51,167
+Yapıldıktan sonra itemlara tıklandığında takibi gerçekleştirebiliyorsunuz.
+
+280
+01:11:53,868 --> 01:12:00,987
+Gelelim bizim birçok kullanıcı ile interaction içerisinde olduğumuz yöntem var demiştik.
+
+281
+01:12:01,907 --> 01:12:06,667
+Bazıları pasif interactionlar, bazıları dinamik interactionlar.
+
+282
+01:12:07,448 --> 01:12:10,768
+Biraz önce işte swipe refresh layout'ı konuşurken o bir...
+
+283
+01:12:11,184 --> 01:12:17,404
+Dinamik Interaction içerisinde ve kullanıcının Gesture'ını takip eden bir interakşındı.
+
+284
+01:12:18,284 --> 01:12:21,644
+Burada ise pasif bir interakşından bahsediyoruz.
+
+285
+01:12:22,504 --> 01:12:31,115
+Pasif interakşın şu demek, kullanıcıyı bilgilendirmek amaçlı herhangi bir kullanıcının üzerinde bir...
+
+286
+01:12:32,467 --> 01:12:42,127
+Aksiyon alamadığı yapıdan bahsediyoruz. En kolayı ilk başta öğrendiğiniz mesaj bildirimlerinden bir tanesi Toast Mesajı.
+
+287
+01:12:42,847 --> 01:12:50,147
+Tekst oluşturuyorsunuz. Sonra da bu tekstin ekranda gözükmesini sağlıyorsunuz Show metoduyla.
+
+288
+01:12:50,147 --> 01:13:00,387
+İşte Duration'ını belirleyebiliyorsunuz ya da Set Gravity ile hangi konumda konumlanacağını. Genelde Default'u Alt.
+
+289
+01:13:00,467 --> 01:13:16,427
+As bölümde gözükecek şekildedir. Ama siz bunun hem formatını değiştirebiliyorsunuz hem de gözükeceği yer değiştirebiliyorsunuz. Burada bir Custom ToastView nasıl oluşturulur buna bakıyorsunuz. Yine bir layout inflator kullanıyoruz.
+
+290
+01:13:23,636 --> 01:13:48,396
+ToastView için nasıl olacaksa, burada bir XML dosyası görüyorsunuz. İşte bir tane image var, bir tane text view var. Oradan bir tane custom ToastView inflate ediyor. Sonra ilgili text bilgilerini bu XML'deki olması gereken yerlerle ilişkilendiriyorsunuz. Sonra Toast mesajını oluşturuyorsunuz.
+
+291
+01:13:48,787 --> 01:13:53,768
+Ve sonra da ilgili metotlarla, biraz önce Constructor'a parametre aktarıyordunuz.
+
+292
+01:13:53,867 --> 01:14:08,407
+Burada da ilgili metotlarla nerede konumlanacağını, ne kadar süre ekranda gözükeceğini ve hangi layout'u kullanacağını belirttikten sonra Show metoduyla da ekranda gözükmesini sağlıyorsunuz.
+
+293
+01:14:08,407 --> 01:14:16,407
+Default kullanım için uygun ama bunu daha profesyoneller yapanlar genelde bu Custom ToastView'u kendileri...
+
+294
+01:14:16,787 --> 01:14:19,787
+organize ediyorlar ve tasarımı kendileri yapıyorlar.
+
+295
+01:14:21,787 --> 01:14:24,787
+Pop-up mesajlar bunlar...
+
+296
+01:14:25,427 --> 01:14:44,427
+Önemli, şu yüzden önemli, Toast mesajların bir alternatifi aynı zamanda istenirse normalde Toast mesajlarda olmayan bir aksiyon almanızı sağlayacak olan yapıyı da Sinegbar mesajlarının içerisine koyabiliyorsunuz.
+
+297
+01:14:44,427 --> 01:14:53,367
+Sinegbar widgeti genellikle alt telefonun alt alanında gözüken bir mesaj.
+
+298
+01:14:53,427 --> 01:15:00,827
+Ve bu snack bar'da çıkan mesaj belli bir süre sonra kendi kendine kayboluyor.
+
+299
+01:15:01,407 --> 01:15:11,528
+Örneğin, bir mail listesinden, e-posta listenizden, bir e-posta sildiğiniz zaman, işte one item, remote şeklinde bir mesaj geliyor.
+
+300
+01:15:12,207 --> 01:15:14,667
+Yanında da bir undo genellikle oluyor.
+
+301
+01:15:14,667 --> 01:15:15,667
+Bu undo...
+
+302
+01:15:16,404 --> 01:15:36,024
+Arşive ya da silinendire gönderdiğiniz mesajın tekrar yeniden inbox'ınıza gelmenizi sağlıyor. Bu en sık Slackbar kullanılan Slackbar türlerinden bir tanesi. Siz bunu bir resim uygulaması için de yapabilirsiniz. Bir resmi sildiniz, tekrar resmi geri almak için yapabilirsiniz.
+
+303
+01:15:40,144 --> 01:15:58,084
+Resimleri silmek istediğinizden emin misiniz mesajını burada snackbar üzerinden çıkartıp yanına bir tik koyup, bir çarpı koyup ya da delete ya da cancel ya da OK koyup onay mekanizmasını böyle de sağlayabilirsiniz.
+
+304
+01:15:58,703 --> 01:16:01,524
+Bu da çok kullanılan yapı taşlarından bir tanesi.
+
+305
+01:16:05,524 --> 01:16:06,524
+Burada...
+
+306
+01:16:05,524 --> 01:16:11,324
+Bir snackbar'ın nasıl view'la ilişkilendirildiğini görüyorsunuz.
+
+307
+01:16:12,324 --> 01:16:30,324
+Snackbar üzerinden aynı tost mesajda olduğu gibi make metoduyla ilgili mesajların snackbar'a yüklenmesini ve daha sonra konumlandırılmasını sağlayabiliyorsunuz.
+
+308
+01:16:30,420 --> 01:16:42,539
+Bu da aynı zamanda aşağıda görmüş olduğunuz gibi çalınan bir medyanın da snackbar üzerinde konumlandırılabilmesini mümkün kılıyor.
+
+309
+01:16:43,180 --> 01:16:57,640
+Böylece snackbar üzerinde siz dinlediğiniz bir müziğin hangi aşamada olduğunu, durdurulmasını, tekrar başlatılmasını, ilerletilmesini sağlayabiliyorsunuz.
+
+310
+01:17:23,252 --> 01:17:34,632
+Burada bir Snakebar tarafına Action'ın nasıl eklendiğini gösteren yine küçük bir kod parçası var.
+
+311
+01:17:48,916 --> 01:18:10,556
+İfadesi yazan yere tıkladığınızda ne yapılması gerektiğini yukarıda gördüğünüz MyUndoListener sınıfının içerisine yazarak kullanıcının oraya tıkladığında oluşmasını istediğiniz aksiyonu çok basit bir şekilde sinek para ekleyebiliyorsunuz.
+
+312
+01:18:11,988 --> 01:18:23,888
+Bu da dönem projeniz içerisinde kullanılabilecek, yapılan aksiyonlara eşlik edebilecek güzel bir özellik. O yüzden Snakebar'ı da kullanmanızı öneririm.
+
+313
+01:18:26,888 --> 01:18:31,628
+Gelelim dialoglara. Bunlar da yine...
+
+314
+01:18:31,699 --> 01:18:45,459
+Ekranın, aktivitenin ön kısmında beliren, belirli bir aksiyon sonrasında ve çalıştırdığınız aktivitenin paus moduna geçmesini sağlayan aslında kutucuklar.
+
+315
+01:18:46,559 --> 01:18:52,699
+Bütün ekranı kaplamayan bir kutucuk ve belirli bir ön plana çıkıp...
+
+316
+01:18:52,703 --> 01:19:01,663
+Kullanıcıyı o anki yaptığı işle ilgili uyaran ya da emin misiniz sorusunu soran kutucuklardan bir tanesi.
+
+317
+01:19:01,943 --> 01:19:11,543
+Alert Dialog çok sık kullanılıyor. Bunların içerisinde Date Picker Dialog, Time Picker Dialog gibi başka dayalıklar da var.
+
+318
+01:19:18,387 --> 01:19:27,567
+Uçak bileti alacaksınız diyelim. Böyle seçebiliyorsunuz ama artık daha çok bu Date Picker'lar, Time Picker'lar bir dialog olarak karşımıza çıkmıyor.
+
+319
+01:19:27,567 --> 01:19:35,747
+Çünkü genelde aktivitenin içerisine artık oturtuluyorlar. Eskiden önce seçmeniz için bir dialog olarak geliyorlardı.
+
+320
+01:19:36,487 --> 01:19:43,028
+Şu anda aktivitenin içerisine bir komponent olarak ekleniyorlar. Dialoglar daha çok.
+
+321
+01:19:43,359 --> 01:19:55,819
+Emin misiniz, son kararınız mı sorularının yaptığı işin onayını son bir kez daha almak isteyen uygulamaların kullandığı yapılar.
+
+322
+01:19:56,619 --> 01:20:01,520
+Çünkü dikkat çekecek bir aksiyon ancak bu şekilde sağlanabiliyor.
+
+323
+01:20:02,228 --> 01:20:25,708
+O yüzden işte USB'nizi tamamıyla sileceksiniz, eminmişsiniz, dosyalarınızı kaybedeceksiniz ya da bu dosyayı silmek istediğinizden eminmişsiniz gibi bilgiler dialog box'lar üzerinden bize gösterilirken bahsettiğim diğer seçimler ise aktivitelerin içerisine gömülmüş durumda.
+
+324
+01:20:28,724 --> 01:20:33,783
+Aşağıda yazan dikkat bilgisinde Progress Dialog'dan bahsediyor.
+
+325
+01:20:33,783 --> 01:20:44,783
+Bunun artık kullanımda olmadığını ve bunun temel sebebinin de Progress Dialog'un...
+
+326
+01:20:45,203 --> 01:20:52,263
+Devam ettiği sürece kullanıcının arka plandaki aktiviteye ulaşamadığını söylüyor.
+
+327
+01:20:52,703 --> 01:21:02,443
+Bunun da bir kullanıcı memnuniyetsizliği yarattığı için genellikle bunun tercih edilmediğini ve artık bu yüzden kullanımdan kaldırıldığını belirten bir bilgi.
+
+328
+01:21:02,843 --> 01:21:04,823
+Bunu da paylaşmış olalım.
+
+329
+01:21:09,811 --> 01:21:11,811
+Bu da işte.
+
+330
+01:21:13,619 --> 01:21:18,539
+Bir alert dialog ile ışık ayarı yapabiliyorsunuz.
+
+331
+01:21:19,960 --> 01:21:29,079
+Bu daha çok belirli ayarlar yapılmasını mümkün kılan işlerde de bizim karşımıza çıkıyor bu alert dialoglar.
+
+332
+01:21:29,079 --> 01:21:31,220
+Bu da güzel bir kullanımlarından bir tanesi.
+
+333
+01:21:31,940 --> 01:21:37,260
+Yine notification bu yıldır da olduğu gibi burada da bir alert dialog bu yıldır var.
+
+334
+01:21:37,600 --> 01:21:41,380
+Bu bu yıldır üzerinden yine ilgili metotlarla.
+
+335
+01:21:41,619 --> 01:21:53,559
+Mesajın ne olduğunu, title'ın ne olduğunu belirttikten sonra bunun uygulamaya geçebilmesi için Create metodunu mutlaka çağırmanız gerekiyor.
+
+336
+01:21:54,139 --> 01:21:58,600
+Ve bu sayede dialog box'ınız da ekranda konumlanabiliyor.
+
+337
+01:22:01,340 --> 01:22:07,619
+Burada tabi bu dialog box'lara butonlar da ekleyebiliyorsunuz.
+
+338
+01:22:08,543 --> 01:22:23,104
+Genelde bunlar pozitif ve negatif olmak üzere iki karşılığı var. Bunlar daha çok okey ve cancel olmak üzere karşımıza çıkıyorlar ama ifadeler değişiklik gösterebiliyor.
+
+339
+01:22:23,923 --> 01:22:30,443
+Onun dışında herhangi bir onay mekanizması olmayan ya da red mekanizması olmayan nötral.
+
+340
+01:22:30,963 --> 01:22:46,824
+Bir yönlendirme yapabileceğiniz butonlarda kullanabiliyorsunuz ki bunlardan bir tanesi hiçbir aksiyon yapılmayacaksa, Remind Me Later diyorsunuz ve buton kendi kendine kapanıyor. Bu da butonun yönetilmesi açısından önemli bir nokta.
+
+341
+01:22:49,619 --> 01:23:15,139
+Utona, pardon, dialog box'a tabii burada başka şeyler de ekleyebiliyorsunuz. Bunlar bir liste olabilir. Biraz sonra göreceksiniz. Bu son iki slide'da. Bu listeyi oluştururken setItems metodu ile oluşturabiliyorsunuz ve bunlardan hangisinin tıklandığını onClick ile takip edebiliyorsunuz.
+
+342
+01:23:17,619 --> 01:23:31,059
+Excel'inden alıyor ve buradaki işte renk bilgisini almış ve herhangi bir tanesine tıklandığında aksiyonun ne olacağını onClean içerisine yazabiliyorsunuz.
+
+343
+01:23:31,119 --> 01:23:39,940
+Burada olduğu gibi işte pick your, tapping istediği şeyde tıklanan şeyleri okey dedikten sonra birden fazla nesneyi seçmenizi sağlayabiliyor.
+
+344
+01:23:42,387 --> 01:23:50,948
+Sign-in veya işte login dediğimiz mekanizmalar, dialog box'lar üzerinden konumlandırılabiliyordu.
+
+345
+01:23:50,948 --> 01:23:54,587
+Ama bugün bunları çok sık görmüyoruz. Dediğim gibi bütün bu.
+
+346
+01:23:55,283 --> 01:24:09,903
+Listeler de dahil olmak üzere seçimler ağırlıklı olarak aktivitelerin içerisine konumlandırılmış durumda. Çünkü mümkünse her şeyin aktivitenin içerisinde kullanıcı ile interakşın içerisinde olması sağlanıyor.
+
+347
+01:24:09,903 --> 01:24:23,224
+Sadece özel durumlarda kullanıcıyı biraz daha yaptığı şeyin farkında olabilmesini sağlamak için ya da gerçekten bir liste seçimi olacaksa, onun özellikli bir durum varsa o zaman bu alert daylakların
+
+348
+01:24:23,283 --> 01:24:42,603
+kullanılması öneriliyor. Evet, şimdilik notifikasyonlarla ilgili kullanıcı bilgilendirmesiyle ilgili Android tarafında bahsedeceğimiz konular bunlar. Buraya kadar sorusu olan var mı?
+
+349
+01:24:49,524 --> 01:25:15,524
+Peki, o zaman şöyle yapacağız. Saat 15.23, 15.35'e kadar ara vereceğiz. 15.35'te bir notification örnek kodu üzerinden ilerleyeceğiz. Nasıl çalıştığını görsel olarak göstereceğim. Ondan sonra kodu biraz inceleyeceğiz. Sonra da bugünkü görevinize odaklanacağız. O zaman...
+
+350
+01:25:15,568 --> 01:25:17,188
+15.35'de görüşmek üzere.
+
+351
+01:37:20,243 --> 01:37:23,844
+Evet arkadaşlar, yeniden merhaba. Son bölümüne giriyoruz dersin.
+
+352
+01:37:24,484 --> 01:37:27,963
+Şimdi sizinle bir uygulama örneği paylaşacağım. Basit bir örnek.
+
+353
+01:37:27,963 --> 01:37:38,783
+Sadece notification, example'ların nasıl yapılabileceği yine dair farklı case'leri içeriyor.
+
+354
+01:37:39,463 --> 01:37:41,943
+Kod parçasını da sizlerle paylaşıyor olacağım.
+
+355
+01:37:42,923 --> 01:37:46,984
+Şimdi öncelikle ekranı paylaşayım.
+
+356
+01:37:51,475 --> 01:37:59,095
+Şu an uygulama çalıştığında ekranda böyle bir butonlar göreceksiniz. Şunu biraz kaydırayım.
+
+357
+01:38:05,939 --> 01:38:22,260
+Mesela Simple Title'a bastığım zaman, yukarıdan aşağıya gösterdiğimde görüyorsunuz Simple Title, Simple Text olarak basit bir bize şu anda bir notification gösterdi.
+
+358
+01:38:33,587 --> 01:38:35,507
+Ekranda görüntülendi.
+
+359
+01:38:39,859 --> 01:38:48,559
+Big Picture Style'a bastığımda şu anda bu resmin daha da büyük bir halinin notification içerisine yerleştirdiğini görüyorsunuz.
+
+360
+01:38:53,300 --> 01:39:11,780
+Inbox style'a bastığımda ise buraya expanded bir notification şeklinde bir mail gelmiş. Başlığı var ve altında daha fazla içeriye bulunan bir yapı varmış gibi line line eklenmiş durumda notification'a.
+
+361
+01:39:13,620 --> 01:39:15,840
+Son olarak da Action Title var.
+
+362
+01:39:16,756 --> 01:39:27,556
+Action Title'a baktığınızda da burada iki tane aslında buton görevi gören aksiyonun konumlandırıldığını görüyorsunuz.
+
+363
+01:39:28,496 --> 01:39:29,636
+Tekrar basalım.
+
+364
+01:39:33,876 --> 01:39:40,355
+Delay'da bastığınız zaman, bunun ortadan kalktığını görüyorsunuz. Her birinin farklı bir notifikasyon üretme görevi var.
+
+365
+01:39:41,296 --> 01:39:45,316
+Şimdi bunu durduruyorum ve kod kısmına geçeceğim.
+
+366
+01:39:58,579 --> 01:40:09,840
+Evet, şu anda kodu paylaştım. Bu login ekranıydı. Login ekranından Notification Example Class'ını çağırıyorum. Notification Example Class'ına geçelim.
+
+367
+01:40:14,319 --> 01:40:19,340
+Burada biraz daha küçültebilir miyim diye bakalım.
+
+368
+01:40:39,572 --> 01:40:42,771
+Sanırım daha iyi olmuştur.
+
+369
+01:40:43,452 --> 01:40:46,612
+Burada bir tane Notification Example aktiviteniz var.
+
+370
+01:40:47,572 --> 01:40:51,551
+Bu aktivite View OnClickListener'ı implement ediyor.
+
+371
+01:40:51,771 --> 01:40:56,551
+Bu şekilde bir buton takibi de yapabiliyorsunuz.
+
+372
+01:40:56,551 --> 01:41:00,271
+Daha önce OnClickListener'ı implement etmiyorduk.
+
+373
+01:41:00,352 --> 01:41:04,551
+Bunu kodun içerisinde ilgili...
+
+374
+01:41:04,979 --> 01:41:12,219
+OnClickListener'ı Anonymous Class olarak yaratıyorduk. Burada ise bunu implement ederek gerçekleştiriyoruz.
+
+375
+01:41:12,859 --> 01:41:16,359
+OnCreate'in içerisine girmeden önce burada tanımlamalarımız var.
+
+376
+01:41:16,479 --> 01:41:20,379
+İşte önce butonları tanımlıyoruz. Bir tane de Notification Manager tanımlıyoruz.
+
+377
+01:41:20,479 --> 01:41:25,259
+Şurada görmüş olduğumuz. Arkasından SetContentView her zamanki gibi.
+
+378
+01:41:25,399 --> 01:41:27,559
+Sonra bir CreateNotification Channel'ımız var.
+
+379
+01:41:31,796 --> 01:41:37,576
+Burada ilgili channel'ları oluşturma işlemini gerçekleştiriyoruz.
+
+380
+01:41:39,876 --> 01:41:41,996
+Burada gördüğümüz gibi.
+
+381
+01:41:48,435 --> 01:41:50,315
+Sonra tanımlamalarımızı yapıyoruz.
+
+382
+01:41:51,635 --> 01:41:52,536
+Butonlarımızın.
+
+383
+01:41:53,895 --> 01:41:59,795
+Ve aksiyonlarını set onclickli sınırla belirliyoruz.
+
+384
+01:41:59,795 --> 01:42:06,795
+Sonra da Notification Manager Compat'ın artık takip etmesi gereken...
+
+385
+01:42:08,659 --> 01:42:36,639
+Sınıf bilgisini burada paylaşıyoruz. Şimdi onClick'lere gelelim. OnClick'lerde ilk buton Create Simple Notification, ikinci buton Create Big Text Notification'ı olmak üzere beş tane farklı metodu çağırıyor. Bizim için bu metotların içeriği önemli. Çünkü bugün bu konuyu işlediğimiz için öncelikle bunu söyleyelim. Buraya ait olan eski notification'ları temizliyor öncelikle.
+
+386
+01:42:36,659 --> 01:42:51,059
+Cancel all yaparak. Arkasından DrawBull'ın altına konumlandırdığımız image'ı decode ederek bitmap'e dönüştürüyor. Sonra burada bir aksiyon var.
+
+387
+01:42:51,471 --> 01:43:00,311
+Bu aksiyon intenti tıklandığında, ActionView yapıldığında aslında belirli bir adrese yönlendiriyor.
+
+388
+01:43:00,731 --> 01:43:04,912
+İşte burada şimdi C1 tek demeyelim de. İşte Yıldız Eviçer'e olsun.
+
+389
+01:43:07,471 --> 01:43:14,471
+Bu şu demek, bu ilgili ActionView'dan kastettiği işte...
+
+390
+01:43:16,180 --> 01:43:29,100
+Bahsettiğimiz bildirim görüntülendiğinde Yıldız Editöre adresine gönder ve oradaki bilgiyi görsel olarak göster anlamına geliyor.
+
+391
+01:43:30,440 --> 01:43:39,180
+Herhangi bir notification'a, biraz önceki notification'lardan birine tıkladığımızda bu bilginin olması gereken...
+
+392
+01:43:39,956 --> 01:43:46,396
+İşte bu herhangi bir browserda gösterilmesi oluyor. Biraz önce onu yapmayı unuttuk. Onu da yaparız birazdan.
+
+393
+01:43:47,275 --> 01:43:55,155
+Bu işlemi gerçekleştiriyoruz. Sonra Notification bu yıldırla Channel ID'yi pas ederek bu yıldırımızı oluşturmaya başlıyoruz.
+
+394
+01:43:55,155 --> 01:44:04,036
+Bir small icon veriyoruz. Title belirliyoruz. Text'i belirliyoruz. Priority default olarak verdik.
+
+395
+01:44:06,228 --> 01:44:14,548
+Sonra SetContentIntent'e yani tıklandığında yapmasını istediğimiz görevi buraya PendekIntent olarak pas ediyoruz.
+
+396
+01:44:15,388 --> 01:44:18,708
+AutoCancel türü olarak belirlendi ve Build diyoruz.
+
+397
+01:44:23,923 --> 01:44:35,363
+İle çağırarak Notification'ın bu buton tıklandığında, ilk buton tıklandığında yukarıda dura dura konumlanmasını sağlıyoruz.
+
+398
+01:44:37,263 --> 01:44:43,203
+Aslında şu kod parçasından ibaret.
+
+399
+01:44:44,004 --> 01:44:50,144
+Siz biraz sonra yapacağınız uygulamada buradaki çeşitli parçaları kullanıyor olacaksınız.
+
+400
+01:44:51,604 --> 01:44:54,304
+Gelelim bir sonrakine.
+
+401
+01:44:56,824 --> 01:44:58,704
+Yine Cancel All.
+
+402
+01:44:59,964 --> 01:45:02,224
+Yine Bitmap'ı aldık.
+
+403
+01:45:02,984 --> 01:45:12,084
+Bu sefer Notification Compact Big Text Style olarak oluşturuyoruz bizim Notification'ımızı.
+
+404
+01:45:12,984 --> 01:45:15,724
+Buraya ilgili bilgileri yerleştiriyoruz.
+
+405
+01:45:16,307 --> 01:45:19,387
+İşte Big Content Title ile Null diyoruz.
+
+406
+01:45:19,688 --> 01:45:31,467
+Summary Text ile Big Text Style diyoruz ve bunun özellikle simple formatta değil, büyük bir formatta görüntülenmesini sağlıyoruz ki,
+
+407
+01:45:31,467 --> 01:45:37,867
+biraz önce söylemiştik, ekranda notification'ın yanında bir resim konumlandırabiliyoruz.
+
+408
+01:45:38,847 --> 01:45:42,768
+Burada yine Small Icon'ı konumlandırdık.
+
+409
+01:45:42,832 --> 01:46:00,952
+Content Title'a Title dedik, Text'i verdik, Set Style'a yukarıda oluşturduğumuz Style'ı pastladık. Bunu biraz önce oluşturmuştuk hatırlarsanız. Notification artık bu Style'a göre oluşturulacak ve bu sayede stilini de değiştirebiliyoruz.
+
+410
+01:46:01,572 --> 01:46:06,432
+Set Large Icon diyerek biraz önceki resmi büyüttüğümüz yer burası, Bitmap.
+
+411
+01:46:06,868 --> 01:46:12,848
+Bilgisini buraya artık büyük bir resim olarak koyuyoruz ve Build diyerek Notification'ımızı oluşturuyoruz.
+
+412
+01:46:13,288 --> 01:46:20,028
+Sonra da Notify diyerek Notification Drawer'a düşmesini sağlıyoruz.
+
+413
+01:46:22,708 --> 01:46:30,028
+Gelelim bir sonraki daha da büyük resmi, daha resmin ön plana çıktığı kısmı.
+
+414
+01:46:31,667 --> 01:46:41,987
+Görmüştünüz. Burada tekstin ön plana çıktığı bir style'dan bahsediyoruz. Bu kısımda ise resmin ön plana çıktığı bir style'dan bahsediyoruz.
+
+415
+01:46:41,987 --> 01:46:50,847
+Bu Big Picture style'ı oluşturuyoruz. Yine buraya hangi resmi vereceğimizi, yukarıda tekst vermiştik, burada da hangi resmi vereceğimizi söylüyoruz.
+
+416
+01:46:54,192 --> 01:47:01,192
+Text bilgisi vereceksek onu konumlandırıyoruz. Herhangi bir title set etmiyoruz. Herhangi bir icon set etmiyoruz.
+
+417
+01:47:02,112 --> 01:47:09,711
+Bu yıldır oluşturuyoruz ve set style dediğimiz yere tekrar burada oluşturduğumuz style'ı parametre olarak pas ediyoruz.
+
+418
+01:47:19,231 --> 01:47:25,051
+Yani ekranın önemli bir kısmını kaplayacak şekilde konumlandırmasını gerçekleştirmiş oluyoruz.
+
+419
+01:47:25,192 --> 01:47:26,891
+Inbox style'dan bahsetmiştik.
+
+420
+01:47:27,451 --> 01:47:30,231
+Burada line'ları oluşturduk.
+
+421
+01:47:31,711 --> 01:47:36,351
+Notification Compact'ın inbox style şeklinde olacağını burada tanımladık.
+
+422
+01:47:37,351 --> 01:47:40,731
+Ve bu inbox style'a line'ları ekledik.
+
+423
+01:47:42,707 --> 01:47:49,447
+Summary Text kısmına Inbox Style yazdık. Content kısmına da herhangi bir parametre aktarmadık.
+
+424
+01:47:49,867 --> 01:48:00,707
+Yine Set Style ile Style'ımızı bu notification'a vermiş olduk. Notify ile de ekrana gözükmesini sağladık.
+
+425
+01:48:01,527 --> 01:48:07,047
+Son olarak biraz daha farklı olan diğerlerinden, diğerlerinin hepsinde stil farklılığı vardı.
+
+426
+01:48:07,047 --> 01:48:10,367
+Burada ise butonların eklendiği kısmı görüyorsunuz.
+
+427
+01:48:10,707 --> 01:48:12,507
+Öncelikle bir intent yaratıyoruz.
+
+428
+01:48:14,847 --> 01:48:19,027
+Bir Receiver class'ımız var. Bu takip edecek onu.
+
+429
+01:48:19,927 --> 01:48:21,987
+SetAction kısmına ActionCancel diyorum.
+
+430
+01:48:22,987 --> 01:48:26,047
+PutExtra kısmına NotificationID'yi pas ediyorum.
+
+431
+01:48:26,047 --> 01:48:35,707
+Ve Pendek intentimi buradaki yarattığım intent, şurada gördüğünüz ismini intent ile pas ediyorum.
+
+432
+01:48:38,355 --> 01:48:44,336
+Action, Action, Dismiss kısmına Notification Action Builder'ı yaratıyorum ve Dismiss yazıyorum.
+
+433
+01:48:44,775 --> 01:48:46,655
+Pending Intent'i pas ediyorum.
+
+434
+01:48:47,275 --> 01:48:49,516
+Yine Delete kısmına Pending Intent'i pas ediyorum.
+
+435
+01:48:49,676 --> 01:48:54,956
+Yani aslında iki butona da aynı aksiyonu atamış oldum.
+
+436
+01:48:55,516 --> 01:48:56,876
+Farklı bir aksiyon atayabilirdim.
+
+437
+01:48:57,136 --> 01:48:59,296
+Aslında olması gereken normalde bu.
+
+438
+01:49:01,587 --> 01:49:13,728
+Burada Action Cancel olarak set etmiştim ama onlara tıklandığında yukarıdaki gibi bir sayfaya yönlendirilmesini, o sayfayı görüntülenmesini sağlayabilirdim.
+
+439
+01:49:14,528 --> 01:49:28,047
+Bu aksiyonlarımı set ettikten sonra ve bu aksiyonlarımı build ettikten sonra her zaman yaptığım gibi bu yıldır üzerinden bildirimimi dizayn ediyorum.
+
+440
+01:49:30,484 --> 01:49:46,944
+Burada set style'a yukarıdan farklı olarak ayrı bir big text style yaratıp o style'ı parametre olarak aktarmadım. Doğrudan objeyi yaratıp constructor'ına onu pas etmeyi tercih ettik.
+
+441
+01:49:47,764 --> 01:49:51,824
+Bunu bir önceki örnekte yukarıda ayrı olarak yaratıyordum.
+
+442
+01:49:52,164 --> 01:49:58,923
+Sonra da unutmamam gereken en önemli nokta, yarattığım aksiyonları mutlaka bu notification'a eklemem gerekiyor.
+
+443
+01:49:59,984 --> 01:50:02,584
+Add Action ile önce Action Dismise'i ekledim.
+
+444
+01:50:03,204 --> 01:50:04,304
+Bunu da yaratmış olduğum.
+
+445
+01:50:05,423 --> 01:50:07,564
+Sonra da Action Delay'da ekledim.
+
+446
+01:50:08,684 --> 01:50:12,764
+Ve bunları eklediğim andan itibaren artık bahsetmiş olduğumuz...
+
+447
+01:50:13,587 --> 01:50:27,607
+Bildirim, o iki butonun aktif olarak tıklandığında ilgili pending intenti veya intentleri görevini yerine getireceği hazır hale gelmiş oluyor.
+
+448
+01:50:29,487 --> 01:50:35,728
+Sonra da Notify diyerek burayı da tamamlamış oluyorum. Zaten Create Notification Channel'da.
+
+449
+01:50:36,180 --> 01:50:45,420
+Daha önce görmüştük. Burada herhangi bir farklı bir özellik yok. Default bir not parçasını burada paylaşmış olduk.
+
+450
+01:50:47,700 --> 01:50:50,760
+Buraya kadar sorusu olan var mı notificationlarla ilgili olarak?
+
+451
+01:50:59,539 --> 01:50:59,839
+Peki.
+
+452
+01:51:06,612 --> 01:51:10,671
+Receiver sınıfını görebilir miyiz? Receiver sınıfı şurada neredeydi?
+
+453
+01:51:18,420 --> 01:51:18,720
+Şöyle.
+
+454
+01:51:44,372 --> 01:51:45,372
+Evet.
+
+455
+01:51:54,292 --> 01:51:55,612
+Görevli yoksa evineceğim.
+
+456
+01:52:05,203 --> 01:52:15,443
+Burada sadece bir, nasıl söyleyelim, mesajın ortadan kaldırılması söz konusu olduğu için özel bir kod parçası yok.
+
+457
+01:52:15,443 --> 01:52:23,763
+Ama zaten sizden yapmanızı isteyeceğim şey de bunun bir tık daha ileriki versiyonu olacak.
+
+458
+01:52:24,963 --> 01:52:32,423
+Bir de geçtiğimiz hafta notification'lar eklenirken birbirlerine override etme sorunu ile karşılaşılması muhtemel midir?
+
+459
+01:52:33,524 --> 01:52:38,504
+Bu soruyu biraz daha açabilir misin [öğrenci]? Tam anlayamadım sorunu.
+
+460
+01:52:39,984 --> 01:52:49,584
+Yani burada beş tane notification vardı ve hepsi belirli bir aksiyon sonucunda tetikleniyor ve hepsi birbirlerinden farklı.
+
+461
+01:52:51,644 --> 01:52:52,884
+Tekrar dönecek olursak.
+
+462
+01:52:55,024 --> 01:52:55,964
+Şöyle yapalım.
+
+463
+01:52:57,964 --> 01:52:59,164
+Şuraya çıkayım.
+
+464
+01:53:00,243 --> 01:53:14,763
+Burada Create Simple Notification var. Bu ayrı bir butonun tıklanması sonunda tetikleniyor. O yüzden her biri ayrı bir metot olduğu için, yani özel yazılmış şu gördüğünüz ilk notification'a aydın metot.
+
+465
+01:53:14,763 --> 01:53:17,763
+Şöyle göstereyim.
+
+466
+01:53:23,060 --> 01:53:30,940
+Şu bir metot, bir sonraki notification metodu ayrı ve doğal olarak channel da ayrı.
+
+467
+01:53:34,484 --> 01:53:39,184
+Bunlar birbirleriyle aynı noktada MEP etmiyorlar.
+
+468
+01:53:39,764 --> 01:54:06,004
+Çünkü notificationlar biliyorsunuz bir aksiyonun sonucunda bizlere gösteriliyor. Biz de bu aksiyonlar gerçekleştiğinde hangisinin yaratılacağını ayrı bir metot üzerinden burada kurguladık. Başka yerde illa bir metodu ayırmak zorunda değilsiniz. Koşula bağlı olarak da bunları yaratabilirsiniz. Her ikisi de yapılabilir ama metot yapmak daha.
+
+469
+01:54:06,644 --> 01:54:11,004
+İşi takip edilebilir hale getiriyor.
+
+470
+01:54:12,004 --> 01:54:26,764
+Şimdi geçen hafta itibariyle bir download işleminden bahsetmiştim.
+
+471
+01:54:26,764 --> 01:54:30,724
+Hemen şimdi onunla ilgili de bir küçük kod parçası göstereceğim.
+
+472
+01:54:33,044 --> 01:54:33,644
+Şuradan.
+
+473
+01:55:38,163 --> 01:55:50,663
+Evet, şimdi bir tane Download Manager var. Download diyorum. Yukarıda gördüğünüz gibi Download Complete diyor. Herhangi bir verilen adresteki.
+
+474
+01:55:52,212 --> 01:55:57,812
+Uzak bir noktadaki bilgiyi resim olabilir, bu PDF olabilir, intreview.
+
+475
+01:55:57,952 --> 01:56:04,912
+Çok küçük boyutlu bir şey olduğu için siz burada başlangıcını göremiyorsunuz.
+
+476
+01:56:04,952 --> 01:56:06,832
+Bir kez daha deneyelim, download diyelim.
+
+477
+01:56:07,892 --> 01:56:11,772
+Çok son anda, ben kendi adımı gördüm ama bir kez daha deneyeceğim.
+
+478
+01:56:14,052 --> 01:56:16,652
+O barın dolmasını göstermiyor.
+
+479
+01:56:16,652 --> 01:56:18,292
+Şimdi view all diyorum.
+
+480
+01:56:18,804 --> 01:56:24,164
+WeWall dediğim zaman buraya her seferinde ilgili indirilen resmi görüyorsunuz.
+
+481
+01:56:24,244 --> 01:56:31,084
+Bu resim bizim web sayfamızda yer alan bir haberdeki resmin web adresi verilerek alındı.
+
+482
+01:56:32,364 --> 01:56:38,684
+İsim de çok büyük bir değişiklik yapmadığımız için bütün resimler aynı isimle kaydedilmiş gözüküyor.
+
+483
+01:56:39,507 --> 01:56:44,908
+Download butonu bu resmin o ilgili URL'e gidip alınmasını sağlıyor.
+
+484
+01:56:44,908 --> 01:57:00,148
+View all butonu bizim bu resmi görüntülemek istediğimizde oluşturduğumuz intentin bize sistem tarafından resimleri gösterecek bir arayüzde gösterilmesini sağlıyor.
+
+485
+01:57:01,627 --> 01:57:03,167
+Ve Delete kısmı var.
+
+486
+01:57:03,667 --> 01:57:10,447
+Delete kısmında da View All dediğinizde resimleri tek tek en son indirilen resimleri siliyor.
+
+487
+01:57:15,859 --> 01:57:25,859
+Tabii burada şöyle bir şey var. Siz bu resimleri en son hangi ID ile indirdiyseniz o resimleri silmenizi sağlıyor.
+
+488
+01:57:25,859 --> 01:57:31,359
+Ben burada şöyle göstereyim bir kez daha.
+
+489
+01:57:37,108 --> 01:57:40,307
+Normalde şunu da silmeniz gerekiyor ama neden silmedi onu bilmiyorum.
+
+490
+01:57:43,307 --> 01:57:43,908
+İyi o.
+
+491
+01:57:45,668 --> 01:57:46,508
+Wait diyelim.
+
+492
+01:57:48,408 --> 01:57:52,268
+Şimdi kod içerisinde bakalım. Belki de ben yanlış hatırlıyorumdur.
+
+493
+01:57:53,088 --> 01:57:54,807
+Hemen kod parçasını açayım size.
+
+494
+01:58:11,252 --> 01:58:14,412
+Evet, burada DownloadActivity.
+
+495
+01:58:16,712 --> 01:58:18,392
+Şöyle büyütelim.
+
+496
+01:58:19,832 --> 01:58:21,052
+Şunu aşağıya indireyim.
+
+497
+01:58:23,072 --> 01:58:25,412
+Burada bir DownloadManager tanımlıyorsunuz.
+
+498
+01:58:26,532 --> 01:58:30,272
+Daha önce bahsetmiştik uzaktan bilgi indireceğiniz zaman.
+
+499
+01:58:31,652 --> 01:58:35,612
+OnCreate metodunu aşağıda konumlandırmışlar.
+
+500
+01:58:36,083 --> 01:59:00,063
+Burada işte ilgili eczemal file ile ilişkilendirme yapıldıktan sonra Initialize Download Manager isimli metot çağırılıyor. Burada Download Manager ilklendiriliyor. System servisi üzerinden, Download servisi üzerinden. Ve oluşturulacak file name'i statik olarak Voyager ismi verilmesi burada kodlanmış. Bunu siz kullanıcıdan sorarak alabilirsiniz.
+
+501
+01:59:00,916 --> 01:59:08,336
+Burada önemli olan yapının nasıl çalıştığını görmeniz. DownloadManager.Request üzerinden bir request oluşturuyorsunuz.
+
+502
+01:59:08,855 --> 01:59:20,496
+URI üzerinden parse ettiğiniz bir adres var ki bu size söylediğim gibi bizim üniversitenin bölümün web sayısındaki yer alan bir haberdeki resmin URL'i.
+
+503
+01:59:21,115 --> 01:59:24,115
+Bunu parse ediyor ve request'i buraya yapıyor.
+
+504
+01:59:25,395 --> 01:59:28,395
+İşte title'ını belirtiyor. Bu sırada...
+
+505
+01:59:28,819 --> 01:59:44,579
+Downloading yazısı belirlemesini söylüyor ve destination olarak nereye indirileceğini belirtiyorsunuz. Download klasörünün içerisine eklenmesini sağlıyorsunuz.
+
+506
+01:59:44,579 --> 01:59:55,619
+Ve sonra yaptığınız şeylerden bir tanesi de downloadmanager.enq metoduna bu request'i pas etmek. Bu da şunu sağlıyor.
+
+507
+01:59:56,051 --> 02:00:21,551
+Siz ilgili kuyruğa bir istek gönderiyorsunuz. O sırada başka bir download varsa, sizinki sıraya giriyor ve sizin sıraya girdiğiniz zaman aldığınız ID de sizin aslında Download Manager listesindeki ID'niz oluyor. Siz bu ID üzerinden takip ediyorsunuz.
+
+508
+02:00:22,036 --> 02:00:31,135
+Ve diğer sıradaki işler bittikten sonra Download Manager sizin request'inizi gerçekleştiriyor.
+
+509
+02:00:31,916 --> 02:00:34,275
+Burada diğer metotlar var.
+
+510
+02:00:35,095 --> 02:00:41,036
+Open dediğinizde Open Downloaded File üzerinden açabiliyorsunuz.
+
+511
+02:00:44,979 --> 02:01:04,059
+Yaptığı şey şu, bir intent oluşturuyor. Size biraz önce bahsetmiştim. ActionView Downloads, ne diyelim, isteğini, aksiyonunu oluşturarak bir implicit intent ile işletim sistemine şunu söylüyorsunuz.
+
+512
+02:01:11,636 --> 02:01:19,636
+Dosyaların olduğu klasörü görüntülemek istiyorum diyorsunuz. O da biraz önceki size resimleri gösteriyor.
+
+513
+02:01:20,396 --> 02:01:29,436
+Kendi default belirlemiş olduğu arayüz üzerinden. Üstüne tıklarsanız da resmin tam halini, büyük halini görüyorsunuz.
+
+514
+02:01:30,155 --> 02:01:36,115
+Aşağıda işte klik ettiğinizdeki çağrılacak olan fonksiyonlar var.
+
+515
+02:01:38,079 --> 02:01:43,960
+En son yüklediğiniz download ID'nin remove edilmesini sağlıyor.
+
+516
+02:01:44,060 --> 02:01:55,360
+Bu da şu demek, siz aksiyon olarak program çalışırken hangi dosyayı indirip klasörün içerisine yüklediyseniz,
+
+517
+02:01:55,840 --> 02:02:01,079
+onun ID'si sizde olduğu için siz sadece o ID'ye ait olan dosyayı silebiliyorsunuz.
+
+518
+02:02:02,036 --> 02:02:19,136
+Diğer, daha önceden oluşturulmuş dosyaları silemiyorsunuz. Burada bir önceki seferden oluşturulan dosyalar var. Onlar program yeniden sıfırdan telefonun üzerine yüklendiği için biraz önce silinemedi.
+
+519
+02:02:19,136 --> 02:02:28,336
+Onun sebebi de demek ki buymuş. Çünkü tek download ID'yi burada alıyoruz. Burada enqueue ettiğimiz.
+
+520
+02:02:28,752 --> 02:02:36,132
+Yani indirdiğimiz resmin IDC üzerinden bir takip yaptığımız için.
+
+521
+02:02:37,812 --> 02:02:44,572
+Evet, bu da Download Manager ile çok basit bir şekilde nasıl kullanabileceğinizi gösteren bir kod parçası.
+
+522
+02:02:45,872 --> 02:02:51,972
+Şimdi isterseniz sizin yapacaklarınızın tarafına geçelim yavaş yavaş.
+
+523
+02:02:53,972 --> 02:02:55,172
+Sorunuz var mı?
+
+524
+02:03:04,724 --> 02:03:06,564
+Peki, herhangi bir soru yok.
+
+525
+02:03:07,412 --> 02:03:33,832
+Tabii ben size isterseniz yapacağınızı söyleyip dersi sonlandırabiliriz. İsterseniz burada kalıp sorularınız olursa yapacağınızla ilgili devam da edebiliriz. Çünkü takip şu anda oldukça azaldığı için zaten çok sayıda kişi de yoktu. Ne yapmanız gerektiğini söyleyip dersi sonlandırabiliriz. Sizin tercihiniz. Ben sorularınızı yanıtlamak için burada olacağım yine de.
+
+526
+02:03:35,731 --> 02:03:37,192
+Herhangi bir yorum olan var mı?
+
+527
+02:03:40,851 --> 02:03:46,652
+Hocam, dediğiniz gibi katılım çok fazla yok zaten. Ders sonlandırabiliriz isterseniz. Yani bir şey olduğunda maille de ulaşabiliriz.
+
+528
+02:03:47,492 --> 02:03:51,251
+Tamam, siz gidirsiniz. Ben size hemen dosyayı paylaşayım o zaman.
+
+529
+02:04:00,851 --> 02:04:01,571
+Gönderiyorum.
+
+530
+02:04:10,323 --> 02:04:12,543
+Evet, yapmanızı istediğim şey şu.
+
+531
+02:04:15,483 --> 02:04:21,323
+Burada bizim daha önce yapmış olduğumuz işte...
+
+532
+02:04:21,747 --> 02:04:37,367
+Power statüsü değiştiğinde telefonun pil durumu değiştiğinde ya da telefon şarja takıldığında ya da Wi-Fi'ye bağlandığında yani state değişimi yaşadığında bu statelerin tespit edilmesini istemiştik.
+
+533
+02:04:48,659 --> 02:04:53,119
+Drawer üzerine Notification'la kullanıcıya bilgilendirmeniz.
+
+534
+02:04:56,019 --> 02:04:59,079
+Bu sizin seçeceğiniz herhangi bir statüs olabilir telefonla ilgili.
+
+535
+02:05:01,179 --> 02:05:02,019
+İkincisi de
+
+536
+02:05:02,019 --> 02:05:06,919
+yine uzaktan
+
+537
+02:05:11,347 --> 02:05:25,407
+Herhangi bir adres üzerinden bir JSON dosyası indirip bu JSON dosyasındaki bilgileri ekrana yazdırmanız.
+
+538
+02:05:33,460 --> 02:05:36,920
+İki tane farklı görev.
+
+539
+02:05:38,720 --> 02:05:45,120
+Bir tanesi telefonun state'i değiştiğinde bu state'in Notification Drawer üzerinden kullanıcıya bilgilendirilmesi.
+
+540
+02:05:45,120 --> 02:05:57,680
+İkincisi de uzaktan bir JSON dosyasının Download Manager ile indirilip bunun ekranda görüntülenmesi.
+
+541
+02:06:04,340 --> 02:06:09,100
+Başka sorusu olan var mı? Ya da bir yorum yapmak isteyen?
+
+542
+02:06:12,595 --> 02:06:26,855
+Peki, öyleyse önümüzdeki hafta Location Manager'larla ve lokasyon bilgileriyle devam edeceğiz. Sorunuz olursa maile de ulaşabilirsiniz. Teşekkür ediyorum katıldığınız için. Hepinize güzel bir hafta diliyorum.
+
+543
+02:06:29,296 --> 02:06:30,215
+İyi günler hocam.
+
+544
+02:06:46,739 --> 02:06:56,179
+Evet, [öğrenci] yapabilirsiniz. Aktivasyonla ilişkin bir şeyler yapmanız güzel olur. Böyle bir şey mümkün olabilir.
+
+545
+02:07:06,292 --> 02:07:17,952
+Bu zorunlu değil. Aktivasyon kodu link vs. ama yapılırsa bununla ilgili olumlu bir değerlendirme mutlaka size yansıyacaktır.
+
+546
+02:07:46,387 --> 02:07:48,328
+İyi günler, teşekkür ederim. Hoşçakalın.
