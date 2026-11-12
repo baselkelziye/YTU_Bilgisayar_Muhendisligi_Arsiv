@@ -1,0 +1,2355 @@
+1
+00:00:56,404 --> 00:00:57,764
+Günaydın arkadaşlar.
+
+2
+00:00:59,524 --> 00:01:04,024
+Günaydın hocam.
+
+3
+00:01:08,947 --> 00:01:14,067
+Gecikme için özür diliyorum. Hemen sebebini aktarayım. Neden geciktiğini?
+
+4
+00:01:15,947 --> 00:01:27,108
+Bugün evde temizlik var. Odayı değiştirdim. Farklı odaya geçtim. İnternette sorun yaşadım. Onu hallettim. O yüzden bir gecikme oldu. Çok özür dilerim.
+
+5
+00:01:27,700 --> 00:01:39,579
+Evet, şimdi öncelikle bir iki mail geldi bana. O maillere cevap vereyim. Verdiğim ödevle ilgili. Ödevlerimize başladık mı? Evet.
+
+6
+00:01:39,579 --> 00:01:39,939
+Hocam.
+
+7
+00:01:40,760 --> 00:01:41,519
+Evet hocam.
+
+8
+00:01:42,439 --> 00:01:47,700
+Ama hocam yani lütfen İngilizce konuşabilir misiniz?
+
+9
+00:01:48,680 --> 00:01:51,579
+İngilizce rahat konuşamıyorum ama anlıyorum.
+
+10
+00:01:52,760 --> 00:01:53,840
+Evet hocam.
+
+11
+00:01:54,292 --> 00:01:59,611
+Hocam, excuse me, can you speak more details about homework?
+
+12
+00:02:00,312 --> 00:02:16,572
+Tamam, okey, okey. Şimdi aslında bana gelen mailler de bu yöndeydi. Ödev hakkında bir detay istiyorsunuz. Şöyle adım adım anlatayım. Ben size üç tane resim gönderdim. Siyah, beyaz.
+
+13
+00:02:16,948 --> 00:02:39,087
+Grayscale ve Renkli. Bunlar Bitmap. Yani soyadı Bitmap olan, soyadı diyorum uzantısı Bitmap olan dosyalar. Siz hazır bir kod bulun. Hazır bir kod bularak o Bitmap dosyasının header kısmını bir de datasının olduğu ana kısmı ayırın.
+
+14
+00:02:39,604 --> 00:02:55,504
+Çünkü her sıkıştırılmış dosyanın, elime bakın, şu sıkıştırılmış veri ise mutlaka üzerinde bir header bilgisi bulunur. Bu header bilgisine bakarak şu aşağıdaki sıkıştırılmış olan veri açılır.
+
+15
+00:02:55,924 --> 00:03:20,864
+Şimdi benim elimde bir bitmap dosyası varsa, sıkıştırılmamış bir dosyadır. Bunun header'ında şu bilgiler vardır. Resmin eni boyu şudur. Resolution'ın işte budur. Nasıl diyeyim, şöyle bir formatla sıkıştırılmıştır. Şu olmuştur, bu olmuştur. Yani o header bilgisi oradaki data hakkında bilgi verir.
+
+16
+00:03:22,207 --> 00:03:32,728
+Herhangi bir bitmap okuyan bir kodu uygulamanızı kullanabilirsiniz. Yaptığınız şey header kısmını ayırıp data kısmını almak.
+
+17
+00:03:32,979 --> 00:03:54,459
+Elinizde artık data olan kısım var. Bu data olan kısma RLE algoritmasını uygulayacağız. RLE algoritmasının bir sürü birkaç tane versiyonundan bahsettim. Artık hangi versiyonu kullanırsanız kullanın elinizdeki veriye o RLE'yi uygulayacaksınız.
+
+18
+00:03:54,931 --> 00:04:02,931
+bu rl yi uygularken yine isterseniz şöyle yapayım ben size. Bir dakika.
+
+19
+00:04:02,931 --> 00:04:09,931
+çok ı dedim. Bir powerpoint açayım.
+
+20
+00:04:09,931 --> 00:04:10,283
+boş bir...
+
+21
+00:04:13,747 --> 00:04:30,427
+Şu an bir şey görmüyorsunuz, biliyorum. Evet, şimdi sizinle bunu paylaşayım. Share Screen diyelim. Şurada boş bir tane açtık. Şu an görüyor musunuz?
+
+22
+00:04:31,648 --> 00:04:36,067
+Evet hocam. Tamam. Okey, şimdi.
+
+23
+00:04:37,492 --> 00:04:52,612
+Ben sizlere şöyle bir şey gönderdim. Bir bitmap dosyası gönderdim. Bu bitmap dosyasının şu kısmı, bu niye şekil biçimlendir desem,
+
+24
+00:04:54,752 --> 00:05:02,992
+burada bu çıktığı için herhalde, şunu dolgu yok diyelim. Evet, şöyle bir dosyamız var. Dosyanın
+
+25
+00:05:03,156 --> 00:05:20,076
+Şu kısmı header bilgisidir, başlık bilgisidir. Bu kısmı da dosyanın verisi var. Yani data saklı burada da. Bu dosyanın da soyadı. Hep soyadı diyorum ama anlayın işte adı neyse bitmek.
+
+26
+00:05:21,331 --> 00:05:37,831
+Size böyle 3 tane resim verdim. Sizin yapacağınız şey bir bitmap dosyasını okuyan kodu bulmanız. Yani o kodu bulun. O kodlar ortada dolu. Hedder'ı size ayırır, data kısmını ayırır.
+
+27
+00:05:38,208 --> 00:05:54,028
+Şimdi elimizde sadece data kısmı olsun. Elimde sadece data kısmı var. Bu data kısmını ben RL'ye uygulayacağım. Buraya da RL algoritmasını uygulayacağız.
+
+28
+00:05:55,408 --> 00:06:05,408
+RL algoritmasını uygularken nasıl yapıyorduk? Bunun da kalemi var mı? Bunun kalemi var mıydı?
+
+29
+00:06:08,660 --> 00:06:18,660
+Neyse, kalem şeyini bulamadım. Bunu nasıl okuyabiliyorduk? Çok kötü bu. O kadar huzursuzum ki.
+
+30
+00:06:18,995 --> 00:06:32,615
+Hakim olamamaktan bir şeylere. Ya elimdeki datayı satır satır okuyacaktım. Elimdeki datayı satır satır okuyacaktım. Hatırlayın bunlardan bahsetmiştim. Böyle satır satır satır satır.
+
+31
+00:06:32,615 --> 00:06:38,615
+Ya da elimdeki datayı istersen kolon kolon okuyabilirdim. Bu şekilde.
+
+32
+00:06:40,115 --> 00:07:01,275
+Bu şekilde kolon kolon okuyabilirdim veya Rotate yaparak okuyabilirdim. Rotate yaparak okumak nasıldı? Öncelikle bana bir şey söyleseniz arkadaşlar. Burada boyama bir şey yok mu? Bu nasıl bir şey? Bu da değil. Böyle kalem gibi alıp yazabileceğim bir şey yok.
+
+33
+00:07:01,275 --> 00:07:02,055
+Neyse.
+
+34
+00:07:02,055 --> 00:07:05,075
+Leğinden yaptığımız orada bir dökken falan var ya.
+
+35
+00:07:05,175 --> 00:07:06,815
+Leğinden istedi.
+
+36
+00:07:08,468 --> 00:07:10,968
+Zaten pin. Anladım.
+
+37
+00:07:12,108 --> 00:07:12,927
+Ama...
+
+38
+00:07:17,172 --> 00:07:39,732
+Dur, bunun kendi şeyi niye gelmiyor? Şunu da yapayım, tamam. Bunu arıyordum, unuttum burada olduğunu. Kalemim bu. Kırmızıyı alalım. Ya bunu satır satır okuyorduk, aynen bu şekilde okuyabiliriz demiştik. Ya da kolon kolon okuyabilirdik elimizdeki veriye.
+
+39
+00:07:40,403 --> 00:07:58,923
+En ideali de demiştik ki, Rotate yaparak okuyalım. Rotate yaparak okumak da neydi? O da şuydu. Satırdan geldim, böyle veriyi aldım, böyle veriyi okudum. Elimdeki veri düz bir diziye yerleşti.
+
+40
+00:07:58,923 --> 00:08:07,883
+Veya kolon olarak okumak istiyorsam ben bunu, onu da istersen bu şekilde Rotate olarak okuyabilirdim.
+
+41
+00:08:09,908 --> 00:08:37,708
+Sonuçta elimdeki veriyi düz bir diziye aldım. İster satır satır, ister sütun sütun, ister satırı şeyle, rotate'li, ister sütunu rotate'li aldım okudum. Ne zaman hangisini okuyacağım? Aslında buna resmin içeriği karar verir. Ben bakarak bu resmi şöyle okursam daha iyi sıkıştırma yapabilirim diyeceğim.
+
+42
+00:08:37,908 --> 00:08:45,248
+Onu göremiyorsanız zaten önemli değil. Ben soruda hangi şekillerde okumanızı sizden istedim.
+
+43
+00:08:46,187 --> 00:08:53,908
+Okudunuz, elinizde düz bir dizi oldu. Artık bu diziye RLE algoritmasını uygulayacağım.
+
+44
+00:08:53,908 --> 00:08:58,908
+İstediğiniz versiyonu uygulayabilirsiniz. Çeşitli versiyonlar göstermiştim.
+
+45
+00:09:05,299 --> 00:09:32,700
+Pixel'in kodu. Bu siyah beyaz resim ise, ilki beyaz olmak üzere beyaz siyah, beyaz siyah bunların RAM değerleri demiştim. Ya da elimde bir takım data varsa, önce bir byte'lık veri yazıyorum. Bu bir byte'ın her bir biti, arkasından gelen 8 byte'ın hangisinin RAM, hangisinin data değeri olduğunu söylüyordu.
+
+46
+00:09:33,299 --> 00:09:50,299
+Mesela eğer burada 1 varsa diyordu ki bundan sonra okuyacağım ilk byte run değeri. 0 varsa arkasından okunan değer renk kodu. 0 varsa arkasından okunan renk kodu.
+
+47
+00:09:50,299 --> 00:09:58,299
+O dersin slide'larına giderseniz nasıl okumanız gerektiğini söylersiniz. O zaman ben bunu sıkıştırdım.
+
+48
+00:10:00,052 --> 00:10:13,912
+Sıkıştırılmış bir veri var. Başına da şuradaki header'ı aldım, yükledim. Elimde bu orijinal dosyanın sıkıştırılmış hali oldu.
+
+49
+00:10:13,912 --> 00:10:23,912
+Şimdi bunu geri açacağım. Geri açarken de nasıl açacağım? Şuradaki RL'yi nasıl sıkıştırmışsam, şuradaki RL'yi...
+
+50
+00:10:25,172 --> 00:10:36,372
+Bir de becerebilsem, şuradaki R'liği nasıl sıkıştırmışsam ters işlemini yaparak açacağım. Açtığım vekit şuradaki datanın aynısını elde edeceğim.
+
+51
+00:10:36,884 --> 00:10:48,384
+Bu baştaki header'ı da alacağım. Buraya hiç dokunmadan koyacağım. Ve bu bitmap'i ekrana yazdırdığımda orijinal resimle aynısının olması gerekiyor.
+
+52
+00:10:48,384 --> 00:10:56,464
+Bana diyebilirsiniz ki, hocam bu header'ı niye ayırıyorum? Bunu olduğu gibi alayım.
+
+53
+00:10:56,816 --> 00:11:05,016
+Olduğu gibi satır satır, kolon kolon okuyayım, bir dizi haline getireyim, rel'e elde edeyim diyebilirsiniz.
+
+54
+00:11:05,016 --> 00:11:13,056
+Ama header bilgisi çok karışık verilerden oluştuğu için sürekli renk kodları arka arkaya olmayacak.
+
+55
+00:11:13,196 --> 00:11:19,076
+Yani aynı byte'dan arka arkaya gelmeyeceği için birazcık sıkıştırma performansınızı yer.
+
+56
+00:11:19,556 --> 00:11:24,816
+Ama isterseniz ayırmadan bu dosyayı bütün olarak alıp işleyebilirsiniz.
+
+57
+00:11:24,816 --> 00:11:50,536
+Ama rapora yazın. Hedera ayırmadım diye. Bir de zikzak kodda yapmanızı istemiştim. Zikzak kodda da yapmanız gereken şey şu. Benim bu resmim diyelim ki 64'e 64'lük bir resim. Dizim ne oldu? 64 çarpı 64'lük bir tek boyutlu dizi oldu. Ben bu diziyim.
+
+58
+00:11:51,283 --> 00:12:09,183
+Bunu da diyelim ki küçük bloklara böldük. Bunun hepsi dörde dörtlük olsun. Her bu dizi içerisindeki dörde dörtlük bloğu alıyorum. Zikzak okuyarak diziye yerleştiriyorum.
+
+59
+00:12:09,587 --> 00:12:27,607
+İkinci dörtlük bloğu aldım. Zikzak okuyarak bu dörtlüye yerleştirdim. Sonra ötekini aldım. Bu dörtlüyü yerleştirdim. Bunların her birini RL ile kodluyorum. Aynı mantık yine.
+
+60
+00:12:28,692 --> 00:12:39,791
+Bilmem ne kadar anlatabildim ama yeniden şöyle bir özet geçecek olursam. Bu ödev size lütfen karışık gibi gelmesin.
+
+61
+00:12:54,772 --> 00:12:56,772
+Yine kilitlendik.
+
+62
+00:13:02,932 --> 00:13:07,412
+Buraya niye geçemiyorum ya? Allah Allah. İki tane slide var diyor.
+
+63
+00:13:09,032 --> 00:13:20,072
+Ha bunlar ekrana sildiğim için Allah kahretmesin. Ekrana yazdığım için bunların hepsini andu da yapamam.
+
+64
+00:13:22,515 --> 00:13:39,375
+Hocam pardon, ben de bir şey soracaktım. Yani şimdi biz bu gönderdiğiniz üç boyuttaki, üç şekildeki fotoğrafı da hem satır, hem sütün, hem bu zigzag olarak üç şekilde de RL algoritmasıyla okuyup palet palet.
+
+65
+00:13:39,892 --> 00:13:42,972
+Şey yapan bir kod hazırlayacağız gibi mi?
+
+66
+00:13:42,972 --> 00:14:04,632
+Palet palet değil. Palet palet olursa benim size true color resim vermem gerekirdi. Ben size true color resim vermedim. Yani bunu yine anlatmıştım. Bu niye çıkmıyor? Allah Allah. Gerçekten arkadaşlar çok özür diliyorum ama.
+
+67
+00:14:05,039 --> 00:14:11,499
+Zıvanadan çıktı. Bu niye silgiden çıkmıyor ya?
+
+68
+00:14:16,403 --> 00:14:21,084
+Silgiden çık. Hadi çıkmıyorsun. Buna gir. Kalemi al.
+
+69
+00:14:27,923 --> 00:14:47,803
+Tamam. Palet palet alırsanız anlamı şudur. Red, green, blue diye her biri 8 bitlik, 2 üzeri 24 bit renge sahip, true color bir resim vermiş olmam gerekirdi. Ben böyle bir resim vermedim size.
+
+70
+00:14:48,436 --> 00:15:01,696
+Böyle bir resim verirsem yaptığım işlemi üç kez farklı paletler için, her palet için uygulamanız ve bunları bir araya getirmeniz gerekir. Bunlarla uğraşmayın. Ben size bir Black and White verdim.
+
+71
+00:15:02,227 --> 00:15:23,247
+İçinde sadece 0 ve 1 olan renkler var. Grayscale verdim. Kaç bitlik verdiğimi hatırlamıyorum. 7 bitlik olabilir. Ya da 8 bitlik. 7 bitlikse 3 tane bit var her bir renk için. 8 bitlikse de 4 tane renk var her bir bit için.
+
+72
+00:15:30,227 --> 00:15:52,887
+255'e kadar renk var. O header bilgisinde bu Color Table'ın tutulduğu yer var. Orada bu renklerin neler olduğu yazıyor. Ama bu da sizi ilgilendirmiyor. Zaten datanın başladığı yerdeki bütün renk değerleri 0 ile 255 arasında değişiyor. Hiçbir şey yok.
+
+73
+00:15:53,235 --> 00:16:17,715
+Renk paleti yok. Tek bir renk. Tek bir boyutta çalışıyorsunuz bunları. O zaman header diye ayırmayın isterseniz. Size vermiş olduğum bütün bitweb dosyasını alın. Neleri verdiğimi hatırlayamıyorum size. Rotate'i verdiğime eminim. Rotate Rotate okumak. Yani bu şekilde elinizdeki veriyi okuyabilirsiniz.
+
+74
+00:16:18,611 --> 00:16:43,071
+Zikzak'ı verdim. Belki de iki tane verdim. Üç tane de vermedim. Çünkü ağırlaşmasın diye. Bu şekilde okuyup ya da zikzak okuyarak düz bir dizi haline getirip bunun üzerine RL'yi uyguluyorsun. Daha sonra RL'yi açtığında orijinal veriyi elde etmen lazım. RL'ye kayıpsız bir sıkıştırma yöntemi.
+
+75
+00:16:44,244 --> 00:17:00,244
+Tamam mı? O zaman ödevi biraz daha hafifleştireyim. Elinizdeki bitmap dosyasını alın. Hiç header kısmını ayırmayın. Bütün bir bütün olarak alın veriyi. Bu veriyi rotate yaparak satırda...
+
+76
+00:17:00,916 --> 00:17:16,816
+Okuyun, düz bir dizi haline gelsin. Bunu RL algoritmasına sokun. Sıkıştırılmış halini söyleyin. Sonra yaptığınız işlemin tam tersini yapın. Açın. Orjinal haliyle aynı olduğunu bana gösterin.
+
+77
+00:17:17,268 --> 00:17:36,488
+Zikzak yaparken arkadaşlar, şöyle yaparsanız, evet işiniz kolay olur ama hiçbir başarı elde edemezsiniz. Neden başarı elde edemezsiniz? Şu yüzden bunun her seferinde çıkmam gerekiyor. Ne kadar saçma bir şey.
+
+78
+00:17:39,892 --> 00:17:46,812
+Büyük bir dosyaya zikzak uygularsanız bunun tamamına çok başarılı bir sonuç alamazsınız.
+
+79
+00:17:46,812 --> 00:18:03,092
+Ama en azından elinizdeki bilgiyi yani şu dosyayı şöyle 16'yı 16'lık ya da ne bileyim 64'e 64 bitlik olacak şekilde kare kare alıp RL'yi uygula.
+
+80
+00:18:03,604 --> 00:18:24,684
+Al RL'yi uygula, al RL'yi uygula. Bunların hepsini de zaten arka arkaya koyacaksın. Açarken de buna ayrı ters işlemi, buna ayrı ters işlemi uygulayacaksınız. Ödevi daha da basitleştirdim ve bundan daha basit nasıl anlatabilirim bilmiyorum. Anlaşıldı mı acaba?
+
+81
+00:18:27,604 --> 00:18:37,603
+Bitmap formatını çözmekle de uğraşmıyorsunuz. Bitmap'i alacaksınız, dizi haline getireceksiniz bütün dosyayı, RL'yi uygulayacaksınız.
+
+82
+00:18:38,016 --> 00:18:42,696
+Hocam ben ödümü yapmıştım. Orijinal şeklinde teslim etsem olmaz mı?
+
+83
+00:18:43,436 --> 00:18:52,416
+Hayır hayır olur olur. Ben anlamayıp zorlanan arkadaşlar bu basit halini de verebilir dedim. Elbette olur.
+
+84
+00:18:52,816 --> 00:18:53,776
+Teşekkür ederim.
+
+85
+00:18:53,776 --> 00:18:59,976
+Hiç yani o kadar hain miyim ben? Tamam. O zaman bu konuyu artık kapatıyorum.
+
+86
+00:19:14,548 --> 00:19:24,407
+Okey, şimdi konumuza başlıyoruz. Zaten geçen hafta bir de görüyor musunuz?
+
+87
+00:19:26,887 --> 00:19:27,727
+Görüyoruz arkadaşlar.
+
+88
+00:20:06,996 --> 00:20:17,996
+Çok pardon, bölümden aradılar. Bugün müdek şeylerimiz var. İşte müdekçiler gelecek. Saati hatırlatıyorlar bana. Ekran gözüküyor mu şu an?
+
+89
+00:20:20,316 --> 00:20:20,556
+Evet.
+
+90
+00:20:20,556 --> 00:20:27,036
+Tamam. Şimdi entropi konusuna giriş yapacağız.
+
+91
+00:20:35,923 --> 00:20:47,183
+Aslında şöyle söyleyelim. Bu konuyu anlatırken gerçek hayatımızdan örnekler vererek anlatmaya çalışayım size.
+
+92
+00:20:47,943 --> 00:20:52,624
+Bu bilgi teorisi, information teori aslında bir dönemlik bir ders falan olabilir.
+
+93
+00:20:52,624 --> 00:21:00,703
+Çok geniş, çok fazla teorisi olan bir konu ama bizi en fazla ilgilendiren entropi olduğu için entropiden bahsedeceğim.
+
+94
+00:21:02,195 --> 00:21:16,635
+Tabiata baktığımızda bir olayın gerçekleşme ihtimali ne kadar düşük ise olayın taşıdığı bilgi o kadar fazladır.
+
+95
+00:21:16,635 --> 00:21:26,115
+Ya da tam tersini düşünelim. Bir şeyin gerçekleşme ihtimali ne kadar yüksekse onun taşıdığı bilgi de o kadar azdır.
+
+96
+00:21:26,915 --> 00:21:27,836
+Örnek verelim.
+
+97
+00:21:28,243 --> 00:21:41,804
+0 derecede ısı 0 derece ve kar yağıyor. Isınım 0 derece olduğunda kar yağma ihtimali nedir? Çok yüksektir.
+
+98
+00:21:42,483 --> 00:21:50,884
+Taşıdığı bir bilgi var mı bunun? Yok. Yani 0 derecede kar yağma ihtimali çok yüksek olduğunu o kadar önemli bir haberde değildir.
+
+99
+00:21:50,884 --> 00:21:53,264
+Tam tersini düşünelim.
+
+100
+00:21:53,652 --> 00:22:14,412
+Hava 25-28 derece. Diyorlar ki kar yağacak. İnanmayız 25 derecede kar yağar mı? Çünkü ihtimali çok düşük. Ama yağarsa, yani korkunç bir tabiat olayı gerçekleşiyor demektir. Bunun taşıdığı bilgi de çok yüksektir.
+
+101
+00:22:20,211 --> 00:22:39,731
+Ben aslında bu veri sıkıştırma dersini hep tek sabahına anlatıyorum. Çünkü benim çalıştığım alan hep bu alan oldu. Elinizde bir döküman düşünün. Bu dökümanın içerisinde bir sembol ne kadar fazla geçiyorsa o sembolün olasılığı yüksek olacak.
+
+102
+00:22:40,500 --> 00:22:50,920
+Olasılığı yüksek olan bir şeyinde taşıdığı bilgi az olacağı için ben onu daha az bit ile ifade edeceğim.
+
+103
+00:22:54,600 --> 00:23:03,240
+Şöyle bir, yine bu kalemi çıkarayım ben. Kalemi çıkardık. Elimdeki döküm anda düşünün.
+
+104
+00:23:03,571 --> 00:23:13,511
+A sayısından diyorum, A harfinden 100 tane var. J harfinden de 2 tane var.
+
+105
+00:23:15,091 --> 00:23:21,451
+A'nın olasılığı çok yüksek, J'nin de olasılığı çok düşük.
+
+106
+00:23:24,884 --> 00:23:37,103
+Taşıdığım bilgi azdır diyorum. Taşıdığım bilgi az olduğu için bunu daha az bitle kodlayacağım. Belki A'yı kodlamak için bir bit kullanacağım.
+
+107
+00:23:42,612 --> 00:23:48,132
+Olasılığı az olduğu için taşıdığı bilgi daha fazladır diyeceğim.
+
+108
+00:23:48,632 --> 00:23:52,632
+Ve eki j'yi kodlamak için de 10 bit kullanacağım.
+
+109
+00:23:53,572 --> 00:23:56,852
+Peki ben sıkıştırma yapmış olacak mıyım?
+
+110
+00:23:57,212 --> 00:24:07,932
+Evet, 100 kez geçen bir harfi kodlamak için 1 bit kullanıyorsam, 100 tane a'yı kodlamak için 100 bit kullanırım.
+
+111
+00:24:08,564 --> 00:24:16,784
+İki tane J'yi kodlamak için de her biri için 10 bit kullanıyorsa toplamda 20 bit kullanırım.
+
+112
+00:24:17,723 --> 00:24:24,084
+102 tane karakter için ben toplamda 120 bit kullanmış olacağım.
+
+113
+00:24:24,756 --> 00:24:36,316
+Orijinal halinde kalsaydım, her birini 8 bit olarak ASCII koduyla kodlasaydım, 102'yi çarp 8 ile ne olur?
+
+114
+00:24:36,316 --> 00:24:47,216
+2 8'in 16, 816 bit olurdu. Ben 816 bit olan bir şeyi 120 bite indirdim.
+
+115
+00:24:47,827 --> 00:25:03,627
+Bu indirme olayında bana yardımcı olan şey nedir? İşte bu bilgi teorisinde ortaya atılan bu teori. Bunu da biz entropiyle ilişkilendireceğiz.
+
+116
+00:25:03,627 --> 00:25:15,531
+Şimdi gelelim entropiye. Bir de şunu söyleyelim. Şunlar bir olay. Yani anın karşıma çıkma olasılığı bir olay. Buna anın...
+
+117
+00:25:16,307 --> 00:25:26,928
+Olasılığı diyelim. Bu da başka bir olay. Karşıma J'nin çıkma olasılığı. Buna da P'nin olasılığı diyelim.
+
+118
+00:25:28,048 --> 00:25:42,768
+Olaylar, olasılıkları. Peki A olayının olasılığı bu yüzde neydi? Adetti. Bu da A olayın bilgisini bana söyleyecek. Bu da A olayının bilgisi olacak.
+
+119
+00:25:43,220 --> 00:26:00,700
+Peki bilgiyi nasıl ölçeceğim? Olasılığı nasıl ölçtüğümü biliyorum. Bir bütün içerisinde kaç adet varsa o bölü toplamı oranladığımda olasılığı veriyorum. Ama bilgi ölçülebilir bir şey değil.
+
+120
+00:26:11,220 --> 00:26:27,660
+Bilgiyi ölçüyoruz. Yoksa bilgini benim numaralandırmama, sayısal bir hale getirmeme imkan yok. O zaman burada ben bilgiyi nasıl yapacağım? Bilgiyi de kullanırken, ölçerken şu metreyi kullanacağız. Yani şu denklemi kullanacağız.
+
+121
+00:26:39,220 --> 00:27:05,100
+1 bölü PA diyoruz. Neden 1 bölü PA dedim? Çünkü bilgiyle olasılık ters orantıydı. Olasılığı yüksekse taşıdığı bilgi neydi? Düşüktü. Olasılığı düşükse taşıdığı bilgi yüksekti. Olasılıkla bilgi ters orantılı olduğu için 1 bölü PA dedik.
+
+122
+00:27:06,259 --> 00:27:18,399
+Logaritmasına neden aldık. Her zaman logaritma eldeki bir veriyi daha küçültebilmek, daha ölçülebilir hale getirmek için kullanıyoruz.
+
+123
+00:27:22,996 --> 00:27:50,996
+Bu x tabanı 10 tabanı mı, 3 tabanı mı, 5 tabanı mı? Bu da 2 olacak arkadaşlar. Neden 2 olacak? Benim dünyam dijital bir dünya. 1 ve sıfırlardan oluşuyor. Bunun birimi entropi diyeceğiz. Bit olacak entropinin birimi. Bit de nedir? Ya sıfırdır ya birdir karşılığı. İki tane durum olduğu için iki tabanın da logaritmi alacak.
+
+124
+00:27:50,996 --> 00:28:03,655
+Şimdi bölülerle işlem yapmak zor olduğu için bunu paydaya çıkarıyorum. Yukarıya çıkıyorum. Yukarıya çıkardığımda ne olur burası?
+
+125
+00:28:05,200 --> 00:28:14,319
+Üzeri eksi 1 olur. Bu logaritmadan dolayı üst düştü. Eksi buraya geldi. Logaritma x, pa dedik.
+
+126
+00:28:14,319 --> 00:28:28,440
+Yani bir olayın olasılığını elimde 102 tane karakter varsa, bunun 100 tanesi a ise a'nın olasılığı ne olacak? 100 bölü 102.
+
+127
+00:28:29,019 --> 00:28:31,720
+Peki a'nın taşıdığı bilgi ne olacak?
+
+128
+00:28:33,200 --> 00:28:57,720
+Bu eksiği buraya koymasak ne olur diyebilirsiniz. Bu logaritma şey çıkar. Negatif çıkar. Bilgi negatif olamaz. Zaten bu önündeki eksi o negatif olan çarpım değerini pozitif yapıp bilgiyi bana pozitif olarak veriyor.
+
+129
+00:29:00,339 --> 00:29:09,339
+Benim sayfa değiştirememek için bir türlü anlayamıyorum. Bununkini kullanmak daha güzel.
+
+130
+00:29:14,067 --> 00:29:25,067
+bunu kullandığım için bunu bununla silmem gerekiyor. Bir daha onu değil de aşağıya kullanayım daha kolay olacak.
+
+131
+00:29:25,067 --> 00:29:33,067
+bunun hepsini sil diye bir şey yok. Böyle elinle siliyorsun. Kapatalım buraya geçelim.
+
+132
+00:29:33,067 --> 00:29:36,652
+kalemimizi alalım. Şimdi burada ne diyordu?
+
+133
+00:29:36,788 --> 00:29:51,168
+Sıkıştırma tekniklerinde performansı arttırmak için kullanılır. Sıkıştırılacak kaynakta bir sembol ne kadar fazla ise sıkıştırma sırasında kodlama yapılırken bu sembol daha az bitle ifade edilecek.
+
+134
+00:29:51,528 --> 00:30:01,948
+Sıkıştırılacak kaynakta bir sembol ne kadar nadir yer alıyorsa kodlamada bu sembol daha fazla bitle ifade edilecek. Bu dersin bütün amacı budur.
+
+135
+00:30:02,420 --> 00:30:11,440
+Eğer bir sembolün olasılığı yüksekse taşıdığı bilgi düşük demektir.
+
+136
+00:30:12,019 --> 00:30:17,820
+Bilginin düşük olması demek bunu daha az bitle, kotla demektir.
+
+137
+00:30:19,200 --> 00:30:25,059
+Olasılığım eğer düşükse taşıdığı bilgi yüksek demektir.
+
+138
+00:30:25,423 --> 00:30:35,364
+Bilginin yüksek olması bunu daha fazla bitle, kodla demektir. Tamam mı? Böyle bir ters orantımız var.
+
+139
+00:30:36,084 --> 00:30:55,463
+Şimdi formülümüzdeki log x'i log 2 alarak iki tabanında kullanıyoruz. Sebebini söyledik. Çünkü hesaplayacağım entropinin birimi bit. Bit olduğu için 1 ve 0, 2 farklı durum var. Laboritmamızı iki tabanında alıyoruz.
+
+140
+00:30:57,604 --> 00:31:00,384
+Peki, şimdi bir örnek yapalım.
+
+141
+00:31:00,948 --> 00:31:12,608
+Elinizde hatasız, hilesiz bir para var. Parayı attığımda yazı gelme olasılığı da tura gelme olasılığı da para hilesiz ise 1 bölü 2'dir.
+
+142
+00:31:13,628 --> 00:31:19,288
+Şimdi böyle bir olayı kodlamak için kaç bite ihtiyacın vardır?
+
+143
+00:31:19,288 --> 00:31:28,208
+Hiç bu konuları bilmesen ne dersin? Elimdeki şans nedir parayı attım? Ya tura gelecek ya da yazı.
+
+144
+00:31:28,756 --> 00:31:36,936
+Senin bir bite ihtiyacın var. Bir dersem bunu tura kabul ettin. Sıfır dersem yazı kabul ettin.
+
+145
+00:31:37,196 --> 00:31:44,216
+Şimdi ben bunu formülümle gösterim. Yazının da turanın da olasılığı nedir para hilesi ise?
+
+146
+00:31:44,216 --> 00:31:56,096
+1 bölü 2. Bu bana zaten verilmiş. Şimdi bilgiyi bulacağım. Bilgi neresiydi? Burasıydı. Bakayım onun hesaplanmış hali var mı? Yok.
+
+147
+00:31:57,140 --> 00:32:24,539
+Bilgi burasıysa, bunun bilgisini hesaplayalım. I diyelim. Turanın bilgisini hesaplıyorum. I tura. Log 2. 1 bölü PA. Turanın olasılığı neydi? 1 bölü 2 idi. Buraya 1 bölü 2 dedik. Bu ne olur? Yukarıya 2 olarak çıkar. Burası log 2. 2 olur.
+
+148
+00:32:24,943 --> 00:32:45,963
+Tabanı ile burası aynıysa logaritmik şeye göre burası ne olur? Bir olur. Öyleyse Turan'ın taşıdığı bilgi birdir. Bu bir buradan çıktı. Yazıda da aynı şekilde bir çıkar. Bunun anlamı budur. Böyle bir durumu kodlamak için ortalama bir bit gerekiyor.
+
+149
+00:32:45,963 --> 00:32:51,584
+Peki, başka bir örneğe geçelim.
+
+150
+00:32:54,804 --> 00:33:07,464
+Yine size para veriliyor fakat paranın sahte olduğu söyleniyor. Paranın yazı olma olasılığına 1 bölü 8, tur olma olasılığına da 7 bölü 8 deniyor.
+
+151
+00:33:08,435 --> 00:33:22,056
+Peki, şimdi yazıyı kodlamak için benim kaç bite ihtiyacım var? Turayı kodlamak için kaç bite ihtiyacım var? Neyi bulmam gerekiyor? Bilgiyi bulmam gerekiyor. Information'ı.
+
+152
+00:33:22,056 --> 00:33:34,295
+Peki, şu 7 bölü 8'i bulmak zor. Basitinden ben başlayayım. Yazının taşıdığı bilgiyi bulmak istiyorum. I yazı dedim. Ne oldu?
+
+153
+00:33:35,124 --> 00:33:50,704
+Eksi logaritma iki tabanına göre bir bölü olasılık gelecek. Olasılığı nedir? Olasılığı yazının bir bölü sekiz.
+
+154
+00:33:51,988 --> 00:34:03,728
+1 bölü 8, yukarıya 8'i çıkarırsam, nasıl yazarım? Logaritma 2, 8'i yukarıya çıkarırsam, 2'nin 3. kuvveti diye yazarım.
+
+155
+00:34:04,728 --> 00:34:10,068
+Şu ikiler birbirine götürür. Burada 3 kalır.
+
+156
+00:34:11,907 --> 00:34:18,288
+Burada 3 kalırsa da, işte yazının şey ne olur? Taşıdığı bilgi 3 olur.
+
+157
+00:34:20,307 --> 00:34:21,963
+Pisaniye.
+
+158
+00:34:23,764 --> 00:34:40,444
+Evet, taşıdığı bilgi 3 olur. Burada da 7 bölü 8'i buraya koyarsam, 7 bölü 8, 8 bölü 7, 8 bölü 7'nin işte değerini al, iki tabanın da olasılığını hesapla. Bunun için de şu kadar bit gerekir.
+
+159
+00:34:40,444 --> 00:34:51,644
+Şimdi bana soracaksınız, hocam tamam yazı için 3 biti anladık da, tura olan bir değer için kodlamak için 0,193 bit de ne demek?
+
+160
+00:34:51,764 --> 00:35:13,043
+Tabii ki böyle bir bit yok. Bir şey ya vardır ya da yoktur. Bu teoride yapılan hesaptır. Ben pratikte ne yapacağım? Yazıyı kodlamak için 3 bit kullanacaksam, turayı kodlamak için de 1 bit kullanacağım. Çünkü 0,193 diye 1 bit yok.
+
+161
+00:35:16,403 --> 00:35:39,623
+Bana %100 sıkıştırma yapamıyorum hiçbir zaman. Benim sıkıştırma performanslarımın %100 olmamasının sebebi bu. Çünkü teorideki hesaplara göre bu %100 çıkabilir fakat pratikte ben bunu %100 uygulayamayacağım. İşte bunun gibi sebeplerden dolayı.
+
+162
+00:35:42,516 --> 00:36:00,496
+Şimdi hep tek bir olaydan bahsettik. Nedir tek bir olaydan bahsetmek? İşte parayı attım, parayı bir kere attım. Ama hep istatistik derslerinde şöyle bir soru gelebilir ya da size geliyordu. Arka arkaya parayı on kez atınca.
+
+163
+00:36:01,172 --> 00:36:07,731
+O zaman 10 tane farklı olay, 10 tane farklı deney gerçekleştiriyor.
+
+164
+00:36:08,532 --> 00:36:16,532
+Şimdi tekste düşünün. Tekstenin içinde bir A harfleri var, B var, C var, D var, E var ya da resim olsun.
+
+165
+00:36:16,532 --> 00:36:29,172
+28. renk kodu var, 55. renk kodu var. Bunların her biri bir olay. Bir dokümanda A'nın karşıma çıkma olasılığı bir olay.
+
+166
+00:36:29,172 --> 00:36:50,351
+Bir tane olay. B'nin çıkması bir tane olay. O zaman ben bir tane olay değil de elimde birçok olay varsa bunu nasıl ifade etmeliyim? Her bir olaya ben A duyordum olaylara. İ tane olayım var. Bunun anlamı aslında buradaki İ birden.
+
+167
+00:36:50,719 --> 00:36:58,480
+N'e kadar gidiyor. N tane olayımın toplamlarından oluşan kümeye ben S kümesi diyorum.
+
+168
+00:36:59,599 --> 00:37:08,699
+Bu S de aslında Self Information'dan geliyor. Şurası çok önemli. Önce buradan okuyayım sonra üzerinde konuşalım.
+
+169
+00:37:08,699 --> 00:37:17,039
+S örnek seti içindeki ortalama bilgiyi Self Information'a elde etmeye çalışırsak,
+
+170
+00:37:17,235 --> 00:37:28,435
+Şu formülden yararlanırız. Her bir olayın gerçekleşme ihtimalinin, bir olayın, iyi diyorum en tane olay var.
+
+171
+00:37:43,411 --> 00:38:03,791
+Bize entropiyi verir. Aslında bunun önünde bir eksi işaretinin olması gerekir. Unutmuşum. Bunu eklerim slide'lara. Tamam mı? Entropi nedir? Entropi nedir diye sorduğumuzda bizim sözel olarak söyleyeceğimiz şey, yine masum gitti.
+
+172
+00:38:07,059 --> 00:38:30,100
+Ortalama binary sembol uzunluğu. Elimde bir set var. Bu set görüntü olabilir. Bu set bir tekst olabilir. Bu set ne ise ben onu sıkıştırdığım vakit, kodladığımda her bir sembolü ortalama kaç bitle kodlayacağımı bu entropi değeri bana veriyor.
+
+173
+00:38:31,059 --> 00:38:48,260
+Bu sayfayı aldım, bu sayfayı sıkıştıracağım. Bu sayfadaki her bir karakterin olasılığını çıkardım. Her bir karakterin taşıdığı bilgiyi çıkardım. Entropiye koydum, sayısal bir değer çıktı. O sayısal değer bana şunu söyler.
+
+174
+00:38:48,260 --> 00:38:57,900
+Buradaki her bir karakteri kodladığında ortalama olarak bir sembolü kodlamak için şu kadar bite ihtiyacım var.
+
+175
+00:38:58,356 --> 00:39:18,096
+Mesela buradaki h değeri 4,5 çıksın. Anlamı şudur. Benim bir bitle kodladığım sembol var. 2 bitle, 3 bitle, 6 bitle, 7 bitle ama hepsinin ortalamasını alırsam ortalama h'nin sonucu neyse o kadar bite ihtiyacım var.
+
+176
+00:39:18,867 --> 00:39:28,447
+Kısacası entropi herhangi bir olayın olasılığıyla o olayın taşıdığı bilginin çarpımıdır.
+
+177
+00:39:28,880 --> 00:39:51,900
+Elimde en tane olay varsa bunların toplamlarını alacağım. Bunun başında neden eksimiz olması gerekiyor demiştik. Ön sayfada vardı. Ne vardı eksi? Şuradaki logaritma çarpımı ı da eksi geliyordu. Bu eksiler burada da karşıma çıkacağı için bunun sonucu eksi olur.
+
+178
+00:39:56,880 --> 00:40:20,780
+Kartı yapmak için önüne eksi getirdik. Şimdi devam edelim. Bu entropiyi kesinlikle unutmayın. Şimdi şuraya yeniden bakalım. Kalemimizin rengini değiştirelim. Çünkü o kırmızıymış. Bu entropiydi. Şimdi ben bu I ile niye uğraşayım? I'nın...
+
+179
+00:40:20,884 --> 00:40:42,903
+Olasılıklar cinsinden değerini yazmayı gördüm. Olasılığımı aldım. Olasılığım bu. Bilginin yerine ne yazıyorduk? Bilgi neydi? Bir bölü olasılıktı. Logaritma bir bölü olasılıktı. Buradaki olasılığı da yukarıya çıkarmıştım. Eksi yaparak önünü.
+
+180
+00:40:43,699 --> 00:41:00,260
+Ve burası da ne geldi? Log 2 Pio. Artık ben bir entropiyi hesaplarken olayın olasılığı çarpı, olayın olasılığının logaritmasıyla çarparak bir tane olayın entropisini buldum.
+
+181
+00:41:00,260 --> 00:41:06,960
+En tane olayım varsa bunların toplamı bana olayın entropisini verecek.
+
+182
+00:41:07,507 --> 00:41:26,087
+Shannon, bu veri sıkıştırmada ilk çalışmaları yapan kişilerden biri, demiş ki, iyi bir kayıpsız sıkıştırma algoritmasında kodlanan sembollerin ortalama bit uzunluğu teoride bulduğumuz kaynağın entropisine eşit olmalıdır.
+
+183
+00:41:26,087 --> 00:41:31,407
+Ancak bu ideal bir sıkıştırmada mümkün olamamaktadır. Ne demek istiyor?
+
+184
+00:41:35,507 --> 00:41:49,527
+1,64 çıktı. Şimdi ben istediğim kadar çatlayayım, patlayayım. 1.64 bitle kodlayamam. Yani değerim 1 bitle saklayabilirim.
+
+185
+00:41:50,164 --> 00:42:03,564
+1.64'lük bir şeyi ben 2 bit de saklayabilirim en fazla. Yani saklayabildiğim yer burası. 1.64 gibi bir değerde saklayamadığım için bunlar teoride olur.
+
+186
+00:42:04,179 --> 00:42:18,679
+Gerçek dünyada olmaz. Yani hiçbir zaman şu entropide çıkan değeri gerçek dünyada da aynı şekilde saklayabilmen mümkün değil. Bunun tek bir şartı var saklayabilmen için.
+
+187
+00:42:29,652 --> 00:42:49,112
+Alfa ben dört tane sembolden oluşuyor. Bunların olasılıklarına da 0.49, 0.25, 0.25, 0.1 verilmiş. Bana deniyor ki şu olasılıklara sahip olan bir elinde doküman var. Bunları ortalama kaç bitle koplarsın?
+
+188
+00:42:49,492 --> 00:43:01,392
+Bu olasılıkları nasıl buldum? A1'den kaç adet var? Bölü toplam sayısı. A2'den kaç adet var? Bölü toplam sayısı.
+
+189
+00:43:01,892 --> 00:43:11,632
+Öyleyse şimdi bunun entropisini bir hesaplayalım. Entropisini hesapladığımda neydi entropi? Bunların başında hep eksi var.
+
+190
+00:43:17,492 --> 00:43:39,912
+Bunu 1 bölü PA dediğimde buradan eksi geldiği için bunun başında eksi var. Ben burada da o zaman yanlış söyledim. Bunun başında eksi yok. Çünkü burası I değeri. Bunu eğer log 2 PA olarak yazmış olsaydım bunun önüne eksi gelecekti. O yüzden eksi olan yer burası.
+
+191
+00:43:42,164 --> 00:44:03,184
+Burada unutmuşum. Şimdi bunu çözelim. Nasıl çözersiniz? Çözülmüşü bende var. Hemen bakalım. Birinci sembolü alalım. A1. Olasılığı neydi? 0.49. Log 2 0.49. Sigma'dan artı dedim. İkincinin olasılığını alacağım.
+
+192
+00:44:03,764 --> 00:44:23,384
+Entropi değerine 0.25 log 2 0.25. Sonra üçüncü sembolü alacağım. 0.25 log 2 0.25. Sonra burası demek ki birden 4'e kadar gidiyor. Çünkü elimde 4 tane olay var. Dördüncünün sembolünü aldım. 0.01 log 2 bu. 1.57.
+
+193
+00:44:31,764 --> 00:44:37,583
+Ortalama olarak 1.57 bitle bunu koklayabilirsin.
+
+194
+00:44:37,583 --> 00:44:46,403
+Yine bu 1.57 tam bir sayı olmadığı için bu teoride ben bunu pratikte daha farklı koklayacağım.
+
+195
+00:44:46,867 --> 00:45:14,187
+Örnek verelim. Mesela A2'yi 2 bitle kodladım. 0-0. A2-0-1 olsun. A3'ü 1-0. A4'ü de 1-1 dedim. Her birinin ortalama bit sayısı nedir? 2. O zaman bu s'de ortalama mesaj uzunluğu olsun. Bu 2'dir. Entropi neydi? 1.57 idi.
+
+196
+00:45:14,639 --> 00:45:28,099
+Buradan redundancy kavramına geçeceğiz. İlk hafta bazı terimleri görmüştüm. Redundancy nedir? Teori bana diyor ki şu kadar bit de kodlayacaksın 1.57 ile.
+
+197
+00:45:28,739 --> 00:45:39,899
+Pratikte kodluyorum her biri 2 bit çıkıyor. Pratikte de 2 bit çıktı. Bu ikisi arasındaki farkın mutlak değerini aldığımda 0.43 çıktı.
+
+198
+00:45:40,340 --> 00:46:01,980
+Redundancy 0.43. Eğer redundancy 0'a ne kadar yakınsa ben o kadar iyi bir sıkıştırma yöntemi kullandım demek. En ideal sıkıştırmayı kullandım demek. Bunun üzerine ikinci bir sıkıştırma yöntemi kullanmama gerek yok demek.
+
+199
+00:46:01,980 --> 00:46:08,340
+Buradaki redundancy atıyorum 4 çıkmış olsaydı bunun anlamı şu.
+
+200
+00:46:08,340 --> 00:46:16,780
+Bu sıfırdan çok uzak bir değer. Ben iyi bir yöntem seçmedim veriye göre. Yöntemimi değiştirmeliyim.
+
+201
+00:46:17,160 --> 00:46:25,180
+Ya da evet ben sıkıştırdım, bunun arkasından ikinci bir sıkıştırma yöntemi daha kullanıp buradan dılsıyı küçültmeliyim.
+
+202
+00:46:25,180 --> 00:46:31,440
+Ne kadar küçültürsem ben o kadar iyi bir sıkıştırma yapmışım demektir.
+
+203
+00:46:32,307 --> 00:46:54,788
+Öyleyse bu slide'da beni bundan sonraki işlemlerde götürecek üç tane şey öğrendim. Bir tanesi entropi. Entropi dediğim şey neydi? Teoride elimdeki veriyi ortalama kaç bitle kodlayacağımı bana söylüyor. Hadi hadi. Mouse'cuk gel.
+
+204
+00:46:55,380 --> 00:47:12,380
+Kodlayacağımı söylüyor. S nedir? Ortalama mesaj uzunluğu. Gerçekte, pratikte ne kadar bitle? Kodladım. İkisi arasındaki mutlak değerce fark da aradaki...
+
+205
+00:47:12,851 --> 00:47:39,172
+Büyük artıklık. Yani artıklık deyince ne kadar sıfıra yakınsa anlamı şu. Bunun içinde artık kodlanabilecek, sıkıştırılabilecek başka veri kalmadı. Eğer bu 4 ise çok büyük anlamı şu. Bu verinin içinde halen sıkıştırılacak bir şeyler var demektir. Bütün her şey bunun üzerine kurulu.
+
+206
+00:47:40,115 --> 00:47:55,576
+İnşallah entropiyi anlamışızdır. Başka da bir şey yok entropide. Şimdi gelelim hep biz iki tabanında logaritma alıyoruz. Şuralarda bunları biliyorsunuz ama yine bir hatırlatayım.
+
+207
+00:47:55,576 --> 00:48:06,996
+Hesap makinelerimizde bizim iki tabanında logaritma yok. İki tabanında logaritma almak için nasıl bir işlem yapmalıyım? Yapacağım işlem aslında şudur.
+
+208
+00:48:07,603 --> 00:48:12,523
+Ben iki tabanında x sayısının logaritmasını almak istiyorum.
+
+209
+00:48:13,043 --> 00:48:16,983
+Fakat hesap makinemde yok. 10 tabanında logaritma var.
+
+210
+00:48:17,583 --> 00:48:30,903
+Öyleyse bunu almak için yapacağım şey 10 tabanında logaritmasını almak istediğim değer bölü 10 tabanında bu hangi tabandaydı 2? 2'yi oranlıyorum.
+
+211
+00:48:31,423 --> 00:48:32,884
+Bunu nasıl elde ettim?
+
+212
+00:48:32,884 --> 00:48:35,304
+Log 2x'e q dedim.
+
+213
+00:48:36,019 --> 00:48:41,260
+Logoritmayı eşitliğin bu tarafına geçirirsem 2 üzeri Q olur.
+
+214
+00:48:41,780 --> 00:49:09,780
+x eşittir 2 üzeri q oldu. Her iki tarafın doğal logaritmasını aldım. ln x ln 2 üzeri q. Burası yine ln x üst düştü. q çarpı ln 2 oldu. Benim bulmak istediğim değer şu q ise q'yu eşittiğin sol tarafına aldım. ln x bölü ln 2 oldu. Burada ln dediğim şey doğal logaritması.
+
+215
+00:49:09,780 --> 00:49:23,160
+Logaritma, 10 tabanında logaritma. Demek ki hesap makinesinde iki tabanında bir sayının logaritmasını almak istiyorsan, 10 tabanında x bölü 10 tabanında 2'ye oranlamalıyım.
+
+216
+00:49:25,019 --> 00:49:29,980
+Şimdi şu örnekleri de yapıp ara vereceğim.
+
+217
+00:49:31,668 --> 00:49:33,708
+Elinizde şöyle bir sayı dizisi var.
+
+218
+00:49:50,483 --> 00:50:03,723
+Ortalama kaç bit gerekir diye soruluyorsa, teoride kaç bit gerekli diye soruluyor ve benim böyle bir diziyi kodlamak için gerekli olan entropi değerini bulmam lazım. Nasıl bulacağım?
+
+219
+00:50:03,723 --> 00:50:08,563
+Şimdi entropi formülüm neydi? H eşittir.
+
+220
+00:50:09,331 --> 00:50:35,512
+Entropi, eksi. Bazı kaynaklarda bunu E diye de yazar ama genelde H diye kullanılıyor. Kaç tane olayım varsa, I eşittir. Birden N'e kadar. Her olayın olasılığı Aİ çarpı her olayın taşıdığı bilgi. Log 2, Aİ'di. Benim buradaki olaylarım nedir?
+
+221
+00:50:36,019 --> 00:50:57,820
+Onlara bir karar verelim. Buradaki olay nedir? Nedir buradaki olaylar? Evet, size soruyorum. Bu bir tekse. Teksin içindeki olay nedir? Sembollerin kaç kez karşıma geldiği. Burada kaç tane olay var?
+
+222
+00:50:59,219 --> 00:51:16,199
+Bir olayı var. Karşıma birin çıkması. Demek ki ben bir birin olasılığını hesaplamam gerekiyor. Sonra iki var. İkinin olasılığını hesaplamam gerekiyor. Sonra üç var, dört var, beş var, altı, yedi, sekiz, dokuz ve on var.
+
+223
+00:51:27,284 --> 00:51:49,344
+4'ten 2 tane var. 5'ten 2 tane var. 6'dan 1 tane var. 7'den de 1 tane var. 8'den 2 tane var. 9'dan da 2 tane var. Bu sembollerden 2 adet var.
+
+224
+00:51:51,956 --> 00:51:56,176
+10'da bir tane var. Bu sembollerden ise bir adet var.
+
+225
+00:51:57,176 --> 00:52:00,336
+Şimdi bunların olasılıklarını yazarsak ne dersiniz?
+
+226
+00:52:00,956 --> 00:52:04,636
+P1'in olasılığı P6'nın olasılığına eşit.
+
+227
+00:52:05,676 --> 00:52:08,556
+Aynı zamanda P7'nin olasılığına da eşit.
+
+228
+00:52:09,676 --> 00:52:11,976
+Ve onun olasılığına da eşit.
+
+229
+00:52:11,976 --> 00:52:15,496
+Çünkü bunların hepsi bir adet gelmiş.
+
+230
+00:52:16,371 --> 00:52:30,192
+İki adet gelenlere bakalım. İkinin olasılığı, üçün olasılığı, ondan sonra dördün olasılığı, ne kadar kötü yazılıyor?
+
+231
+00:52:30,371 --> 00:52:34,811
+Beşin olasılığı, sekizin olasılığı ve dokuzun olasılığı da eşit.
+
+232
+00:52:35,731 --> 00:52:38,051
+Peki, şimdi bunların olasılıkları nedir?
+
+233
+00:52:38,447 --> 00:52:56,187
+Kaç tane elimde sembol var? 2, 4, 6, 8, 10, 12, 14 ve 16 tane sembol var. Birden bir adet var. Olasılığı nedir? 1 bölü 16'dır.
+
+234
+00:52:57,396 --> 00:53:19,436
+Şimdi 6'dan da bir tane var, onun da olasılığı 1 bölü 16. 7'den de bir tane, 10'dan da bir tane var. Bunların hepsinin olasılığı 1 bölü 16. Peki gelelim bunların olasılığına. Bunların her birinden 2 tane var. 2 bölü 16 ise ne eder? 1 bölü 8. Bunların olasılığı da 1 bölü 8'dir.
+
+235
+00:53:25,556 --> 00:53:33,955
+Bu sigma birden kaç tane sembolüm var, olayım var benim? 10 tane olayım var.
+
+236
+00:53:34,516 --> 00:53:38,496
+Değil mi? 2, 4, 6, 8, 10 tane olayım var.
+
+237
+00:53:39,375 --> 00:53:48,536
+Birinci olayımın olasılığı nedir? Birinci olayımın olasılığı 1 bölü 16, log 2, 1 bölü 16.
+
+238
+00:53:49,556 --> 00:53:55,836
+Böyle kaç tane sembolüm var elimde aslında? 4 tane. Bunu 4 ile çarparım.
+
+239
+00:53:59,251 --> 00:54:23,991
+Bunu buradan çıkarayım. Çünkü hepsini zaten buraya yazacağım. Bunun olasılığı 1 bölü 8'di. 1 bölü 8, log 2, 1 bölü 8. Kaç tane bu olasılığa sahip sembolüm vardı? 2, 4, 6 tane. Bunu da 6 ile çarparım. Bunların hepsinin sonucu bana h'yi verecek.
+
+240
+00:54:25,588 --> 00:54:28,528
+Ve yine buraya silelim.
+
+241
+00:54:30,348 --> 00:54:41,588
+İşte yazdıklarımız bunlar. Formülde yerine koyduğumda 3,25 bit. Yani ortalama 3,25 bit gerekecek.
+
+242
+00:54:41,588 --> 00:54:50,368
+Belki şu olacak. Şunların hepsini, şu yukarıları bir bitle kodlayacağım.
+
+243
+00:54:50,931 --> 00:55:04,691
+Aşağıdakileri 1 bitle kodlayamayacağım aslında da çünkü daha onları anlatabilecek yöntemleri göstermedim. Neyse 3.25 bit çıkacak.
+
+244
+00:55:04,691 --> 00:55:15,691
+Ben bunu kodladığımda göreceğim ki bunların bazılarını 1 bitle, bazılarını 3 bitle, bazılarını 4 bitle kodlamışım. Ama hepsinin ortalamasını aldığımda
+
+245
+00:55:16,596 --> 00:55:34,376
+3.25 bite gelecek. Ama gerçek dünyada bu böyle olmayacak tabi. S'si bunun belki de 4 çıkacak. Ve o aradaki fark belki de redundancy olacak. Ama şu an diyebileceğim şey ortalama 3.25 bit kullanabiliyoruz.
+
+246
+00:55:44,307 --> 00:56:01,168
+Aynı dizi mi bu? Bir bakalım. Aynı dizi mi? 12, 325, 454. Evet. Aynı dizi var. Ben farklı bunu başka nasıl işlemler yapabilirim de entropiyi düşürebilirim? Bakalım.
+
+247
+00:56:08,211 --> 00:56:25,432
+Demek fark almak demek. Ben bunları fark alarak yazayım. Yani benim başlangıçtaki şu birimi alıyorum buraya. Sonraki elemanı kendinden önceki elemandan çıkarıyorum.
+
+248
+00:56:34,867 --> 00:56:50,248
+Üçten ikiyi çıkardım, bir. Dörtten üçü çıkardık, bir. Beşten dördü çıkardım, bir. Dörtten beşi çıkardım, eksi bir. Geldi. Ondan dokuzu çıkardım, bir. Elimde böyle bir dizi oldu.
+
+249
+00:56:50,248 --> 00:56:59,188
+Bu diziyi sıkıştırayım. Bu diziyi sıkıştırırsam entropim düşecek mi?
+
+250
+00:56:59,827 --> 00:57:14,407
+Elbette düşecek. Bir öncekinde 10 tane farklı sembol vardı. 1'den 10'a kadar. Burada ise iki tane sembol var. Bir 1, bir de eksi 1. Yani iki tane olayım var.
+
+251
+00:57:14,931 --> 00:57:37,072
+1'in olasılığı nedir? Kaç tane 1 var? 2, 4, 6, 8, 10, 12, 13 tane 1 var. Toplamda 16 tane sembol var. 13 bölü 16. Kaç tane eksi 1 var? 1, 2, 3 tane var. 3 bölü 16. Olasılıkları bu.
+
+252
+00:57:42,931 --> 00:58:06,431
+3 bölü 16 artı 3 bölü 16 log 2 3 bölü 16 0.70 bit çıkacak. Bir önceki kaç bitti arkadaşlar? 3.25 bitti. Önünde bir işlem yaptım. Bunu 0.70 bit ile kodluyorum. Bu pratikte 1 bite karşılık gelecek. Teoride 0.70 bit.
+
+253
+00:58:10,996 --> 00:58:17,955
+Ve açtım. Bunun aynısını elde ettim. Fakat benim orijinal verim nedir? Budur.
+
+254
+00:58:18,579 --> 00:58:25,099
+Karşıki tarafın bunun orijinal bir veri olmadığı bilgisini de söylemem lazım.
+
+255
+00:58:25,099 --> 00:58:38,559
+Karşıki tarafa. Yani bunun orijinal verinin rezidüsü alınarak elde edilmiş bir dizi ve onun sıkıştırılmış hali olduğunu da söylemem lazım karşı tarafa.
+
+256
+00:58:39,119 --> 00:58:46,579
+Karşı tarafa söylemem gereken her şey benim sıkıştırılmış verinin üstünde yer alan header bilgisidir.
+
+257
+00:58:46,579 --> 00:59:06,219
+Bu bilgisinin içinde saklı olması lazım. Peki, alıcı yani bunu açtı, bu geldi. Alıcı bunun orijinal bir veri mi olduğunu yoksa başka bir şeyden mi dönüş olduğunu anlayamaz. Ona bu bilgiyi söylemem gerekir.
+
+258
+00:59:06,771 --> 00:59:14,972
+Ona söyleyeceğim şey nedir? Ya ben orijinal veriden bir takım işlemler yaptım, bunu elde ettim.
+
+259
+00:59:14,972 --> 00:59:28,271
+İşte sen de bundan orijinaline dönebilmen için sana bir model veriyorum. Bu modeli kullanarak bundan orijinaline dönersin.
+
+260
+00:59:28,563 --> 00:59:40,803
+Ben ne yaptım? Sadece şu orjinal diziyi aldım, rezüde işlemine soktum, eldeki şu veriyi sıkıştırdım, karşı tarafa gönderdim.
+
+261
+00:59:41,076 --> 00:59:59,976
+Karşı taraf aldı bunu açtı, bu halini elde etti. Karşı taraf bunun orijinal veri olduğunu sanabilir. Halbuki orijinal veri bu değil. Hangisi bu? Öyleyse bunun header kısmına da bunun bir rezidü verisi olduğunu söylemem lazım.
+
+262
+01:00:00,000 --> 01:00:20,719
+Ve bunun nasıl açılacağı bilgisini oraya yazmam lazım. Ya da öncesinden aramızda bir şifre var. Bu işte şifre diyelim. Her iki taraf bunu biliyor ve diyor ki karşı taraf bana gönderilen bilgi orjinalinden şöyle geçirilmiş rezidü hali.
+
+263
+01:00:21,168 --> 01:00:40,107
+O veri bana gönderilmiş. Ben bunu bu formülü kullanarak geri açacağım. Şimdi bu formüle bakalım. Nedir? Xn orijinal dizinin n. elemanı. n-1, n'in bir önceki durumu. rn'de n'in rezidüsü.
+
+264
+01:00:47,284 --> 01:01:12,423
+Zaten orijinal ilk değeri koyduğumuzu biliyoruz. X1'in zaten 1 olduğunu biliyorum. O zaman ben X2'yi hesaplayacağım. X2 nedir? N2 ise N-1, burası X1 oldu. Artı Resude dizisinin N nedir? İkincisi. Resude dizisinin ikincisini koyacağım.
+
+265
+01:01:15,572 --> 01:01:31,152
+Rezüdi dizisinin ikincisi nedir? İkinci elemanı şu, 1. 1'i ekledim. 1 artı 1, 2 etti. İşte x2'nin değeri 2'yi buldum.
+
+266
+01:01:31,152 --> 01:01:42,431
+Şimdi x3'ü hesaplayalım. x3 eşittir x2 artı Rezüdi dizisinin üçüncü elemanı yazacağım.
+
+267
+01:01:42,900 --> 01:02:05,660
+x2'yi buldum. 2 idi. Ve mezodunun üçüncüsünü yazacağım. Mezodunun üçüncüsü nedir? 3. Buraya 3 diyorum. 1. Üçüncüsü 1. Buraya 1'i yazdım. Burası ne oldu? 3. İşte 3'ü elde etti.
+
+268
+01:02:06,771 --> 01:02:29,172
+Son 4'e bakalım. 4 nedir? x3 artı r4. x3'ü buldum. 3. Rezidi dizisindeki dördüncü elemana baktım. Eksi 1. 3'den eksi 1'i çıkardım. 2. x4'ün 2 olması lazım. İşte x4'ün değeri de 2.
+
+269
+01:02:30,036 --> 01:02:43,115
+Şimdi burada niçin böyle bir şeyi yaptım arkadaşlar? Şu yüzden yaptım. Eğer ben bunu bu şekilde yapsaydım entropi 3.25 olacaktı.
+
+270
+01:02:43,635 --> 01:02:49,755
+Ve bunları kodlamak için ortalama bir mesaj uzunluğu hesaplayacaktım.
+
+271
+01:02:50,215 --> 01:02:53,675
+Kodlama yapmadığım için şu an bunun ne olduğunu bilmiyorum.
+
+272
+01:02:53,675 --> 01:02:58,775
+Sonra entropi ile senin arasındaki farka bakacaktım.
+
+273
+01:02:59,215 --> 01:03:05,976
+Bu farkın sıfıra çok yakın olması gerekirken sıfırdan büyük olduğunu görecektim.
+
+274
+01:03:06,115 --> 01:03:07,056
+Oldukça büyük.
+
+275
+01:03:07,456 --> 01:03:11,635
+Ha diyecektim, demek ki ben bu diziyi daha iyi sıkıştırabilir.
+
+276
+01:03:11,635 --> 01:03:36,615
+İşte o zaman arka planda ben bunu daha iyi nasıl sıkıştırabilirim, nasıl bir algoritma oluşturmalıyım diye düşünüyorum. Şuradaki dizilerin gidiş altından bakınca aralarındaki farkların artı bir, eksi bir veya artı iki, eksi iki gibi değerler olduğunu görüyorsan bunun rezidüsünü alıyorum ve bunu sıkıştırmaya kalkıyorum.
+
+277
+01:03:36,615 --> 01:03:39,615
+Bunu sıkıştırdığım vakit 0.71 çıkıyor.
+
+278
+01:03:39,635 --> 01:03:45,096
+Bunu orijinalde bir bitle sıkıştırabilirim. Çünkü iki tane farklı durum var.
+
+279
+01:03:45,096 --> 01:03:47,096
+1-0.70
+
+280
+01:03:47,764 --> 01:03:59,964
+Farkını aldığım vakit 0.3 olacak. 0.3 de aslında sıfıra yakın bir değer. Artık artıklık yok demektir. Daha ideal bir sıkıştırma buldum.
+
+281
+01:03:59,964 --> 01:04:08,824
+Buradaki tek problem, bunu açan kişinin bunun orijinal dizi olmadığı bilgisini bilmesi gerekir.
+
+282
+01:04:15,764 --> 01:04:27,624
+Karşılıklı veri iletişiminde bulunduğumuz iki nokta var. Bu formül her iki tarafta da var. Alan kişi buna bunu yapıyor, açıyor ve olayı elde ediyor.
+
+283
+01:04:29,624 --> 01:04:37,244
+Evet, şurada bir tane cümle yazmışım. Yine şunu silelim.
+
+284
+01:04:38,992 --> 01:04:56,612
+Statik model olarak adlandırılır. Neden statik model? Bunları da görmüştük. Çünkü parametreler n değeri değiştikçe değişmiyor. Verinin karakteristiğine bağlı olarak parametreler n ile değişiyorsa dinamik modeldir.
+
+285
+01:04:56,612 --> 01:05:06,412
+n değeri değiştikçe parametrenin değişmesi ne demek? Hep ben x ile r'yi topluyorum. Ekstra başka bir işlem yapmıyorum.
+
+286
+01:05:06,992 --> 01:05:08,211
+D değişiyor.
+
+287
+01:05:08,655 --> 01:05:14,815
+N1 oluyor, 2 oluyor, 3 oluyor ama yaptığım işlem değişmiyor. O yüzden bunlar statik modeller.
+
+288
+01:05:15,555 --> 01:05:21,415
+Dinamik modellerde N'in değerlerine göre yapılan işlemler değişebilir.
+
+289
+01:05:21,915 --> 01:05:27,835
+Mesela der ki N'in çift modellerinde şunu yap değerlerinde, tek değerlerinde şunu yap.
+
+290
+01:05:28,255 --> 01:05:36,395
+N şu aralıklar arasında ise şunu yap, şu aralıklar arasında ise bunu yap diyorsa bunlar da dinamik model oluyor.
+
+291
+01:05:36,655 --> 01:05:58,235
+Ara vereceğim dedim ama şu konunun bütünü bitmeden ara vermek istemiyorum. Şimdi bunda sizden yardım istiyorum. Lütfen bu iki tane örnek artık bir bakış açısı oluşturmanıza yeterli olduğunu inanıyorum. Elinizde böyle bir sayı dizisi olsun.
+
+292
+01:05:59,572 --> 01:06:08,152
+Bu sayı dizisine ortalama kaç bit dekod biliriz? Yani benden entropi soruluyor.
+
+293
+01:06:09,556 --> 01:06:32,775
+Bana dersin ki, hocam burada 3 tane sembol var. 1, 2 ve 3. Ben 1'in olasılığı, 2'nin olasılığını, 3'ün olasılığını bulurum. 3 tane olay var. Bunların entropisini hesaplayıp size sunabilirim. Evet, doğrudur. Ama öyle yaptığında redundancy'nin yüksek çıktığını göreceğiz.
+
+294
+01:06:33,235 --> 01:06:52,655
+Acaba ben bunun üzerinde nasıl bir önceki örnekte rezidü alarak olayı birazcık değiştirmiştim işin rengini, entropiyi düşünmek için. Burada da öyle bir işlem yapabilir miyim sizce? Bir bakın bakalım data'ya. Olabilir mi öyle bir şey?
+
+295
+01:06:58,739 --> 01:07:01,259
+Evet, bir cevap vermenizi istiyorum lütfen.
+
+296
+01:07:02,379 --> 01:07:12,859
+Hocam bence burada tekrar sayısı üzerinden gidebiliriz. Yani tekrar eden harfleri sayısını bir önceden belirterek tek tek yazmamıza gerek kalmaz.
+
+297
+01:07:14,239 --> 01:07:19,659
+Anlamadım, bir daha söyle. Yani atıyorum burada beş tane bir var mesela.
+
+298
+01:07:20,211 --> 01:07:30,132
+Mesela 3 arda arda 4 kere gelmiş ya, 4 kere 3'ü kodlamak yerine başına 4 yazıp 4 tane 3 geldiğini belirtebiliriz belki.
+
+299
+01:07:30,132 --> 01:07:47,572
+O zaman o RL'ye girer. Mesela sen bunu RL'ye de kodlamak istesen, tamam hadi bakalım bunu RL'ye uyduralım. Bir, bir tane bir var. Bir tane iki var. Bir tane bir var.
+
+300
+01:07:47,956 --> 01:08:09,195
+Bir tane 2 var, 4 tane 3 var, 1 tane 1 var, 1 tane 2 var, 4 tane 3 var, 1 tane 1 var, 1 tane 2 var, 2 tane 3 var, 1 tane 1 var, 1 tane 2 var.
+
+301
+01:08:09,635 --> 01:08:11,516
+Alın size R'le ile kotladım.
+
+302
+01:08:12,307 --> 01:08:35,627
+Peki sizce bir sıkıştırma olur mu? Bunun orijinali kaç bit? Kaç byte diyelim önce? 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 byte. Ben bunu RL ile sıkıştırdım. 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26.
+
+303
+01:08:36,372 --> 01:08:46,192
+Böyle bir datayı RL ile sıkıştırmak, onu sıkıştırmak değil, genişletmek oluyor. Demek ki bu dataya RL'ye uymuyor.
+
+304
+01:08:46,192 --> 01:09:03,892
+Bak otomatikman bu yöntemi eleyebiliyorum. Çünkü RL'ye de dedik ki en iyi başarılar sembollerin tekrar eden şeylerin fazla olması. Çok fazla arka arkaya değişik semboller geliyorsa yok.
+
+305
+01:09:04,340 --> 01:09:24,319
+Sonra başka bir versiyona geçtik. Dedik ki, böyle tekli tekliler varsa dedik, biz 2, 4, 6, 8, şöyle bir 8'lik yapalım. Bir tane byte hazırlayayım buraya. Ne yapayım? Şu run değeri yok.
+
+306
+01:09:24,948 --> 01:09:50,748
+İkinin run değeri yok, birin run değeri yok, ikinin run değeri olmayacak. Bunun run değeri olacak. Bir, arkasından geleni run değeri olarak okuyacak. Şimdi bu ne yapıyor? Sıfır görünce, bir, iki, dört, beş, altı, yedi, sekiz. Önüne şöyle bir byte koyduk.
+
+307
+01:09:50,800 --> 01:10:17,120
+Sıfır, biri bir olarak okuyacaksın. Sıfır, ikiyi iki olarak okuyacaksın. Bu sıfırsa bu gerçek değer demektir. Bu sıfırsa bu gerçek değer demektir. Bu birse okuyacağın değer ran demektir. Dördü koyacağım, arkasına sıfır koyacağım. Bu okuyacağın değer orijinal değeridir. Yani buraya üç koyacağım.
+
+308
+01:10:17,908 --> 01:10:28,748
+Bu bir, şuranı gösterdi. Burada bir byte olacaktı. 2, 4, 6. Buraya iki tane daha yazabilirim. Ne var? Sıfır koyacağım burayı. Biri.
+
+309
+01:10:30,131 --> 01:10:56,851
+Gerçek değer olarak alacak. Sıfır koyacağım burayı. İkiyi gerçek değer olacak. Sonra buraya ekstradan bir byte daha koyacağım. Sekiz tane biti olan. Burada ne olacak? Bir olacak. Bundan sonra geleni run olarak oku diyecek. Dört. Sonra burada sıfır olacak. Bundan sonraki üçe karşılık gelecek. Arkasından sıfır gelecek.
+
+310
+01:10:57,492 --> 01:11:15,492
+1'i okuyacak. Arkasından 0 gelecek 2'yi okuyacak. Arkasından 1 gelecek ram değeri olan 2'yi okuyacak. Arkasından 0 gelip 3'ü okuyacak. Arkasından 0 gelip 1'i okuyacak. Sonra...
+
+311
+01:11:16,112 --> 01:11:33,431
+Bir kontrol byte'ı daha koyacağım. Bu da bir rel'e versiyonu. Arka arkaya çok tekrarı onlayan sayılar varsa run değeri yazarak veriyi genişletmemek için. Ama yok, bu uzatır. Ben daha farklı bir şey görmenizi istiyorum.
+
+312
+01:11:33,431 --> 01:11:41,551
+Evet, bitti.
+
+313
+01:11:42,771 --> 01:11:54,412
+Bu diziye bakın. Belirli tekrar eden patternlar var mı? Mesela 12 bir pattern. Çok fazla kalemimizin rengini değiştirelim.
+
+314
+01:11:56,912 --> 01:12:07,632
+Kırmızıya geçeyim. 12 var. Hadi yine mouse itti. 12 var. 12 var. 12 var. 12 var.
+
+315
+01:12:08,180 --> 01:12:17,539
+12 var. Başka ne var? 33 var. 33 var. 33 var. 33 var. 33 var. İkili ikili aldım, 33.
+
+316
+01:12:17,539 --> 01:12:27,480
+Ha bana dersin ki 121 alayım, 233 alayım, 331. Bak üçlü üçlü aldığım vakit çok daha değişik sayılar çıkıyor.
+
+317
+01:12:27,980 --> 01:12:32,539
+Dörtte dörtlü alayım dersen mesela 12, 12 diye aldın.
+
+318
+01:12:33,235 --> 01:12:54,836
+33-33 diye aldın. Ama bir daha 12-12 yok. Ne var? 12-33 var. Başka 33-12 var. Dörtlü alırsan da dört tane farklı sembol çıktı. Ama benim ne kadar az olayım olursa o kadar daha iyi olur. Yani daha az bitti kodlarım.
+
+319
+01:13:01,235 --> 01:13:26,655
+Şimdi ben iki tane sembol alayım. Önce her birine bir tekli alayım. Yani elimdeki semboller 1 ve 2 olsun. 1 ve 2, 1'den 4 tane var, 2'den de 4 tane var. Olasılığı 1 bölü 4. 3'den kaç tane var? 2, 4, 6, 8.
+
+320
+01:13:27,423 --> 01:13:46,764
+10, burada 20 tane sembol var. 10 bölü 20, 1 bölü 2. Ben bunun entropisini hesaplarsam 1,5 çıktı. Entropiyi nasıl hesapladım? 1 bölü 4, log 2, 1 bölü 4. Bundan kaç tane var? 2 tane var. Çarptım 2.
+
+321
+01:13:47,391 --> 01:14:02,091
+Artı, bunun entropisini yazalım. 1 bölü 2, log 1 bölü 2. Bunların önünde de eksi var. Bunun sonucu 1,5 çıktı. Entropisi 1,5.
+
+322
+01:14:02,831 --> 01:14:14,711
+Orjinalde ben bunu kodlamış olsam 20 tane sembolüm var. 1, 2 ve 3. Ortalama kaç bite ihtiyacım var bunları kodlamak için?
+
+323
+01:14:15,347 --> 01:14:36,188
+1'i 00'la kodlasam. Başka ne vardı? 2'yi 01'le kodlasam. 3'ü de 01'le kodlasam. 2 bit'le kodluyorum. Ortalama mesaj uzunluğu da 2.
+
+324
+01:14:36,752 --> 01:14:55,252
+Entropi ile mesaj uzunluğu arasındaki farkı alırsam Redundancy 0.5. Acaba ben bu 0.5'i daha da aşağı indirebilir miyim? Arkadaşınızın dediği gibi ben 12'li ve 33'lü bloklar alayım. Kaç tane 12 vardı?
+
+325
+01:15:00,435 --> 01:15:24,096
+5 tane var. 5 tane 12 var. Kaç tane 33 var? 1, 2, 3, 4, 5 tane de. Zaten bunları eşitlediğime göre 5 tane var. Toplamda 20 tane sembol varsa olasılığı 5 bölü 20. Bunun da olasılığı 5 bölü 20. Yani 1 bölü 4'tür.
+
+326
+01:15:24,096 --> 01:15:26,596
+Hadi entropisini hesaplayalım.
+
+327
+01:15:27,667 --> 01:15:47,367
+Nedir? 5 tane bundan var. 5 tane de bundan var. 10 tane çarpı 1 bölü 4, log 2, 1 bölü 4. Bunun da önünde eksisi var. Ve bunun sonucu da 1 çıkacak.
+
+328
+01:15:47,367 --> 01:15:51,627
+Yukarıda tek tek kodladığımda entropi nedir?
+
+329
+01:15:51,988 --> 01:16:12,568
+1.5 Burada entropi nedir? 1. Peki ben bunu normal mesajla kodlasaydım derdim ki 1-2'lere 0 bitini ver. 33'leri de 1 ile kodla. Kaç bit harcadım? 1 bit. Bunun S'si de 1.
+
+330
+01:16:13,235 --> 01:16:29,956
+Entropi 1, S'si 1, aradaki redundancy ne olacak? Sıfır. Ben zaten redundancy'yi sıfıra yakın yapmak istiyorum. Öyleyse en ideal sıkıştırmayı bulmuş oldum. Bu şekilde yaparak.
+
+331
+01:16:30,916 --> 01:16:33,496
+Buraya kadar sorusu olan var mı?
+
+332
+01:16:34,644 --> 01:16:48,564
+Aslında bugün bu saate kadar entropiyi gördük. Entropi neydi? Entropi bir mesajı ya da bir veriyi kodlamak için gerekli ortalama bit uzunluğu. Ama teoride.
+
+333
+01:16:48,564 --> 01:16:59,364
+Ben herhangi bir sıkıştırma yöntemi yaparak sembollere bir takım kod değerleri bulduğumda ortalama mesaj uzunluğunu hesaplayacağım. S.
+
+334
+01:17:00,051 --> 01:17:12,532
+H ile S arasındaki farkı alacağım, buna arttıklık, redundansı diyeceğim, bunun sıfıra yakın olması lazım. Sıfıra yakın değilse ben ideal yöntemi seçemedim demektir.
+
+335
+01:17:12,532 --> 01:17:26,532
+Onun içerisinde hala sıkıştırılacak veri var demektir. Ya yöntemimi değiştireceğim, ya arka arkaya iki ya da üç yöntem uygulayabiliyorsam uygulayabileceğim.
+
+336
+01:17:28,051 --> 01:17:46,171
+Eğer ben sıkıştırmayı bırak, genişletme yapıyorsam, genişliyorsa, orijinalinden daha da büyüyorsa, hepten yanlış yoldayım demektir. Veriye bakış açımı değiştirmem. Ona göre uygun bir yöntem seçmem gerekecek.
+
+337
+01:17:46,171 --> 01:17:53,171
+Şimdi bir ara verelim. Daha sonra modellerden devam edelim. Oldukça uzun konuştum.
+
+338
+01:17:54,836 --> 01:18:08,215
+Oldukça uzun konuştum. Çeyrek kala. Tamam mı? İki arayı birleştirmiş oluyorum. 20 dakika ara veriyorum. Çeyrek kala görüşmek üzere diyoruz. Anlaştık?
+
+339
+01:18:08,615 --> 01:18:09,775
+Anlaştık hocam. Tamam.
+
+340
+01:18:09,876 --> 01:18:11,195
+Tamam. Haydi, hoşçakalın.
+
+341
+01:38:55,572 --> 01:39:15,891
+Merhabalar tekrardan. Bu sefer tam zamanında girdim. Şimdi gençler diyoruz. Neyse onu size mail ile göndereceğim. Bir takvim çıkardım size. Neyse onu biraz daha detaylandırıp sizinle paylaşacağım. Yerinizde misiniz?
+
+342
+01:39:18,195 --> 01:39:30,195
+Buradayız hocam. Tamamdır. Tamamdır. Görüyor musunuz? Hayır. Evet hocam. Evet hocam.
+
+343
+01:39:34,068 --> 01:39:51,448
+Sıkıştıracağız dedik elimizdeki veriyi. Bu elimizdeki veriyi sıkıştırırken de biraz verinin içeriğini tanımamız lazım. Bu verinin içeriğine göre benim seçtiğim yöntem fiziksel bir model uygulayabilirim, olasılıksal veya Markov model uygulayabilirim.
+
+344
+01:40:00,000 --> 01:40:06,000
+kısacası Veri'nin
+
+345
+01:40:06,484 --> 01:40:22,844
+Verinin modelini ne kadar iyi ve doğru bir şekilde oluşturursam kaynağın entropisini tahmin etmekte o kadar doğru ve gerçekçi olur. Bu da bana iyi bir sıkıştırma algoritması seçmemde yardımcı olacak.
+
+346
+01:40:30,163 --> 01:40:58,023
+Bu konuda bakarak modeli kurmam lazım. Ne demek? Ben bir yerden ses verisi elde ettim. Bu ses kayıdını nasıl bir ortamdan almış olduğum bilgisinin benim elimde olması gerekir ki bir ön işleme sokayım. Burası bir sessiz odada alınmış bir ses verisi mi? Kalabalık bir ortamda alınmış ses verisi mi? İki üç tane ses var da ben onun içinden istediğim kişinin sesini mi çekeceğim?
+
+347
+01:40:58,163 --> 01:41:10,623
+Bu bilgileri bilmem lazım ki öncesinde işlem yapayım. Ya da bir hanenin elektrik harcamasını, tüketimini modellemek istiyorsunuz.
+
+348
+01:41:10,623 --> 01:41:22,843
+İşte o hanede kaç kişi yaşıyor, bunların evde bulunma saatleri. Bu bilgileri eğer sahip olursak daha iyi bir modelleme yapabilirim.
+
+349
+01:41:23,252 --> 01:41:42,156
+Bunlar benim aslında dersimin çok içeriğiyle ilişkili değil. En fazla biz olasılık modeliyle Markov modelinden oluşuyoruz. Olasılık modeli nedir? Bir istatistiksel model. Aslında deminden beri bahsetmiş olduğum modellerin hepsi...
+
+350
+01:41:42,387 --> 01:41:53,887
+Olasılık bilgisini kullanan modeller. Zaten ben entropiden de bahsediyorsam mecburum olasılık bilgisine ihtiyacım var ve olasılık modelleri kullanmam gerekecek.
+
+351
+01:41:54,807 --> 01:42:06,648
+En basit istatistiksel model olup kaynak tarafından üretilen her sembolün birbirinden bağımsız ve eşit olasılıkla üretildiği durumdur.
+
+352
+01:42:10,387 --> 01:42:24,828
+Diğer bir olayla etkilenmiyor. Hemen kendi dünyamızdan örnek verelim. Bir dokümanda A harfinin gelme olasılığı nedir diye sorulduğunda bana bu bir bağımsız bir olay.
+
+353
+01:42:24,828 --> 01:42:31,708
+A'nın tek başına gelmesi soruluyor. Ama eğer bana şöyle sorulsa,
+
+354
+01:42:31,891 --> 01:42:43,251
+Bir A'nın gelme olasılığı A'dan önce B gelmişse nedir diye soruluyorsa burada bir bağımlı olasılık vardır.
+
+355
+01:42:43,471 --> 01:42:49,651
+Ben A'nın olasılığını söyleyeceğim ama A'dan önce mutlaka B'nin gelmiş olması lazım.
+
+356
+01:42:49,651 --> 01:42:56,571
+Ya da A'nın olasılığını söyleyeceğim ama A'dan önce C'nin gelmesi lazım. Birbirine bağımlı.
+
+357
+01:42:57,171 --> 01:43:03,912
+Olasılıklar kullanılacaksa onlar Marko modelde değerlendirilen bir tür oluyor.
+
+358
+01:43:04,751 --> 01:43:12,832
+Ve birbirinden bağımsız ve eşit olasılıkla üretildiği durumlara biz Ignorance model adını veriyoruz.
+
+359
+01:43:13,391 --> 01:43:21,551
+Bu modelde kaynak hakkında bir bilgi yok. Nedir? Her hepsi eşit olasılıkla karşıma gelebilir.
+
+360
+01:43:22,547 --> 01:43:31,340
+Bunun anlamı bir dokümanda 10 tane sembol varsa kaynak hakkında bilgim yoksa...
+
+361
+01:43:31,764 --> 01:43:54,004
+Kaynak hakkında bilgimin olması ne demek? O dökümanın içerisini ben göremiyorum. A'dan kaç tane var, B'den kaç tane var, C'den kaç tane var bilmiyorum. Hepsi eşit olasılıklı. Diyorum ki her bir sambalün olasılığı 1 bölü 26. İngilizce'de 26 karakter olduğu için. 1 bölü 29. Türkçe'de 29 karakter olduğu için.
+
+362
+01:43:54,739 --> 01:44:08,960
+Eğer eşit olasılık değil de eşit olasılık yerine her sembolün meydana gelme sıklığı göz önüne alınarak bir olasılık hesaplanıyorsa buna da probability model deniliyor.
+
+363
+01:44:09,395 --> 01:44:30,895
+Yani kaynağın içeriğini ben biliyorsam, yani kaynağa gireceğim, kaynak dediğim dökümen olsun gireceğim. Her bir sembolden kaç adet var? Bunları bulup çıkarıyorsam ama yine birbirinden bağımsız, bağımsızlık var. Yani A'nın gelmesi B'ye bağlı değil, B'nin gelmesi D'ye bağlı değil.
+
+364
+01:44:37,395 --> 01:44:45,376
+Olasılıklar birbirine eşit. Probability modelde elimde M tane sembolüm olsun. A1'den AM'ye kadar.
+
+365
+01:44:45,376 --> 01:44:55,055
+Ve elimde olasılıklar var. Her bir sembolünde elimde olasılıkları mevcut. Ve ben artık bunlar üzerinde işlemlerimi yapıyorum.
+
+366
+01:44:55,515 --> 01:45:05,195
+Entropimi hesaplıyorum. Herhangi bir sıkıştırma yöntemine sokuyorum. Ortalama mesaj uzunluğunu buluyorum. Redundancy'yi hesaplıyorum.
+
+367
+01:45:05,395 --> 01:45:09,615
+Aa diyorum bu iyi bir sıkıştırma olmuş ya da olmamış diyebiliyorum.
+
+368
+01:45:09,615 --> 01:45:18,315
+Yeniden üzerinde vurulması gereken şey probability modelde kaynak hakkında bilgim var.
+
+369
+01:45:18,536 --> 01:45:23,315
+İçeriği görüyorum. Fakat olasılıklar birbirinden bağımsız ve farklı.
+
+370
+01:45:23,956 --> 01:45:32,395
+Ignorance'da kaynak hakkında bilgim yok. Olasılıklar birbirinden bağımsız ama birbirinin aynı.
+
+371
+01:45:33,971 --> 01:45:45,451
+Gelelim Markov modele. Markov modelde ise olasılıkları, sembollerin olasılıkları bağımsız değil. Birbirine bağımlı olarak hesaplanıyor.
+
+372
+01:45:51,699 --> 01:46:02,699
+Diyecekler, ben Markov model kullanıyorum. A'yı hangi değişkene bağlı olarak hesaplamak istiyorsun? Ben de diyorum ki A'nın birlikte kullanıldığı...
+
+373
+01:46:03,539 --> 01:46:22,099
+Sembollere bağlı olarak bütün olasılıkları ayrı ayrı çıkar. Kaynağa giriyorum. A'dan önce gelen boşluk var. Boşluk ve A'nın birlikte olma olasılığı. A'dan önce bakıyorum ki K var. K A'nın birlikte olma olasılığı nedir diye bu olasılıkları çıkarıyorum.
+
+374
+01:46:22,099 --> 01:46:31,000
+Bu Rus bir matematikçinin ortaya attığı bir model. O yüzden adamın adı soyadı Markov olduğu için Markov model diye geçiyor.
+
+375
+01:46:31,539 --> 01:46:57,139
+Kayıpsız sıkıştırma yöntemlerinde kullanılıyor. Discrete Time Markov Chain olarak geçiyor. Burada aslında gözlemlenen bir sekansım var. XM sekansı. Bu sekansa da Kağancı sıradan Markov model diyorum. Yani Kağancı Order Markov Model. Şöyle bir örnek vereyim size. Elinizde şöyle bir şey olsun.
+
+376
+01:46:59,315 --> 01:47:09,695
+Ya da bağım olsun. Sonra elinizde aba olsun. Sonra elinizde kabak olsun. Böyle kelimeler.
+
+377
+01:47:11,444 --> 01:47:22,404
+Ben de diyorum ki A'nın eğer birinci Markov model, pek bir olmaz bu, ikiden fazla olsun, hesapla diyorsam A için.
+
+378
+01:47:23,003 --> 01:47:29,963
+A'dan öncelere bakıyorum. Bir bağ var. A'dan önceye bakıyorum. Burası boşluk olsun. Şu var.
+
+379
+01:47:39,475 --> 01:47:45,155
+Olasılıklarını çıkarmam gerekiyor. Eğer K üçlüyse...
+
+380
+01:47:45,460 --> 01:48:08,039
+A'nın olasılıkları dendiğinde, bunun önünde de boşluk var. Boşluk B, A'yı alıyorum. A'nın önünde şurada da boşluk olsun o zaman. İki tane boşluk A oldu. Başka ne var? Şurada A var. Önünde B, pardon A, A.
+
+381
+01:48:08,724 --> 01:48:13,904
+Önünde ap var. Şuradaki a'ya bakıyorum. Boşluk ka var.
+
+382
+01:48:14,515 --> 01:48:35,035
+Şuradaki A'ya bakıyorum. Önünde A, B, A var. Yani ben A'nın olasılığını ikinci order modele göre yapıyorsam A'nın önündeki iki karakter olan bütün durumları çıkarıyorum. Bunların her birinin olasılığını ayrı ayrı hesaplamam gerekiyor.
+
+383
+01:48:35,035 --> 01:48:41,035
+Bu modelde şöyle bir benzetim yapıyorum. Şudur.
+
+384
+01:48:41,876 --> 01:48:54,876
+Ben K'ncı model verdim. K diyelim ki 5 olsun. Tamam mı? K 5 olsun. Ben X'in...
+
+385
+01:48:58,676 --> 01:49:13,195
+5 ise x'in gerisindeki 4. gerisindeki 3. gerisindeki 2. gerisindeki 1. elemana kadar olasılıkları hesaplayacağım.
+
+386
+01:49:21,140 --> 01:49:34,700
+Geçmişindeki ne varsa hepsinin olasılığına eşittir. Bu ne demek istiyorum? Elinizde bir doküman düşünün. Bunun en son karakteri A var.
+
+387
+01:49:35,699 --> 01:49:44,980
+Eğer ben eni sonsuz bırakırsam bu anın olasılığını geçmişindeki bütün karakterlere göre hesaplayacağım.
+
+388
+01:49:45,980 --> 01:49:51,840
+Böyle bir ağ bir daha benim karşıma kim bilir ne zaman gelecek.
+
+389
+01:49:51,840 --> 01:49:55,079
+Ancak bu sayfanın kopyası çıktığında gelir.
+
+390
+01:49:55,680 --> 01:49:59,659
+Öyleyse bunun olasılığı çok çok küçüktür.
+
+391
+01:50:00,000 --> 01:50:20,600
+O yüzden bu geçmişe kadar giderse olasılıklar o kadar küçülüyor ki, çarpımı o kadar küçük küçük etkileri oluyor ki, o yüzden bir şeyin geçmişindeki k değeriyle bütün geçmişini yaklaşık olarak birbirine yakın olarak hesaplamak zorunda kalıyoruz.
+
+392
+01:50:21,087 --> 01:50:43,107
+Geçmişteki K sembol bilgisi, işlemin geçmişteki tüm bilgisine yaklaşık olarak eşittir. Şöyle yapalım. K, L, M, N, O, A, Z. Ben Z'nin olasılığına bakıyorum. Z'nin olasılığında bunlar var.
+
+393
+01:50:43,699 --> 01:50:50,572
+Bir döküman içerisinde bunun aynısına sahip bir başka...
+
+394
+01:50:51,123 --> 01:51:04,363
+Böyle bir pattern bulmak çok zor ve küçük. Ancak copy-paste'ler yapmam lazım. Bir cümleyi olduğu gibi, bir paragrafı olduğu gibi, bir sarfayı olduğu gibi koymam gerekiyor.
+
+395
+01:51:19,123 --> 01:51:41,843
+Bunlar daha yüksektir. Bunlar daha yüksek, bu kadar geçmiş, daha az olduğu için yaklaşık olarak eşittir diyorum. Çünkü bunların her biri çarpım olarak eklenecek. Nasıl eklenecek? NLP dersi almış olsaydınız görecektik. Bu şudur. Z'nin olasılığı çarpı.
+
+396
+01:51:42,836 --> 01:52:10,836
+Z'nin geçmişinde ne var? A var. A'la olan olasılığı çarpı. Z var. Z'nin geçmişinde ne var? A ve O var. Çarpı. Z'nin olasılığı geçmişinde ne var? A var, O var, N var. Çarpı. İşte geçmişinde ne var? Bunun dörtlüsü, bunun beşlüsü, bunun altlüsü, bunun kanlısı ekliyoruz.
+
+397
+01:52:10,836 --> 01:52:31,196
+Her eklediğimde bu değerler o kadar küçük ki şuradaki değeri, en soldaki değere yaklaşık olarak çok benziyor. O yüzden uğraşmıyoruz ve K modelini yaptığımız çalışmalarda ya 2 ya da 3 kadar gidebiliyoruz. Daha fazla gerisine gitmeye gerek yok.
+
+398
+01:52:38,836 --> 01:52:45,356
+Bir karakterin geçmişindeki bütün karakterlerle birlikte olasılıklarını hesaplıyorsunuz.
+
+399
+01:52:45,896 --> 01:52:53,236
+Olabilecek durum değil, hayal bile edemezsiniz. Ne işlem gücünüz yeter, ne makinenizin gücü yeter, hiçbir şey yetmez.
+
+400
+01:52:53,236 --> 01:53:00,796
+O yüzden K geçmiş bilgisini 2 ve 3 ile tutarız. Hem modelimiz daha basit olur.
+
+401
+01:53:02,100 --> 01:53:25,100
+Şimdi bunda bir örnekle size açıklayalım. Daha basit olsun diye black white bir görüntü aldım. Elinizde siyah beyaz bir resim var. Tamam mı? İşte şu üzeri böyle çizili olanları siyah kabul edin. Şu açık olanları beyaz piksel olsun. Bu beyaz piksel olsun.
+
+402
+01:53:25,684 --> 01:53:47,523
+yapamadım. Siyah piksel olsun o zaman bu. Sonra bunun arkasından bir beyaz piksel geldi. Bir beyaz piksel, bir beyaz piksel. Sonra siyah piksel koyamadım. Siyah piksel diye gidiyor. Elinizde böyle siyah beyaz resimlerden oluşan bir veri var. Bu görüntüyü Markov modele göre kodlamak istiyorum ve olasılıklarını belirleyeceğim.
+
+403
+01:53:48,243 --> 01:54:07,703
+ve Marko modelle Probability model arasındaki farkı göstermeye çalışacağım. Bu farkı şöyle gösterelim. Neyse örneğim olacak. Şimdi benim elimde kaç tane durum var? Bir Black durumu var, bir de White durumu var. Yani şuradaki pikselin...
+
+404
+01:54:08,051 --> 01:54:25,831
+Beyaz olmasını tahmin etmeye çalışacağım. Bu pikselin beyaz olması, geçmişindeki piksel beyaz mıydı? Bundan önce. Geçmişindeki piksel siyah mıydı? Bundan önce. Bu verileri kullanarak tahmin edeceğim. Şurada bir piksel var.
+
+405
+01:54:26,195 --> 01:54:36,576
+Bu pikselin geçmişi beyaz mıydı, siyah mıydı? Daha önceden bunların olasılıkları neydi? Bunlara bakarak tahminlemeye çalışacağım.
+
+406
+01:54:36,576 --> 01:54:43,676
+Öyleyse iki tane state'im var. Biri white state'im, bir tanesi de black state'im.
+
+407
+01:54:44,115 --> 01:54:55,876
+Şimdi benim bu bulunduğum state, white state'inde bekliyorum ve bundan sonra gelecek olan state'in beyaz mı, siyah mı olacağını tahmin etmeye çalışıyorum.
+
+408
+01:54:55,876 --> 01:55:05,975
+İki tane durum var. Ben şu an white'ım, bundan sonra gelecek olan white mi olacak?
+
+409
+01:55:07,188 --> 01:55:22,307
+Bunun olasılığı. Yani şu durum şunu gösteriyor. White, geçmişinde de white varmış. Çünkü ben white'dayım. White'dayım, geçmişimde ne olduğunu tahmin etmek istiyorum.
+
+410
+01:55:22,307 --> 01:55:31,307
+Tahmin ettiğim şeyin olasılığı iki tane şey olabilir. Ya white olacak ya black olacak. Eğer...
+
+411
+01:55:31,984 --> 01:55:56,924
+Bu pikselin geçmişi white ise white state'inde dönecek. Eğer bu pikselin geçmişi black ise black'e dönecek. Şimdi şunları sileyim. Şunun üzerinden size anlatmaya çalışayım. İki tane state'im var. White ve black.
+
+412
+01:56:01,011 --> 01:56:28,492
+İki tane var. Ben Black'teyim. Black'teyken Black geliyorsa bu state'e dönüyorum. Ben Black'teyim. Black'teyken White gelecekse White state'ine geçeceğim. Ben White'tayım. White'teyken White geliyorsa bu state'in içindeyim. Ben White'tayım. White'tan sonra Black gelecekse Black state'ine geçeceğim.
+
+413
+01:56:29,076 --> 01:56:48,375
+Dört tane farklı durum var. White'dayken ya White gelecek ya Black gelecek. White'dayken White gelirse White state'indeyim. White'dayken Black gelirse Black state'ine geçeceğim. Ben Black'teyim. Black'teyken Black gelirse bu state'teyim.
+
+414
+01:56:48,756 --> 01:57:16,756
+Black'teyken White gelirse bu siteye geçeceğim. İşte size Markov modeli kurdum. Şimdi bu kaçıncı dereceden Markov model? İkinci dereceden Markov model. Eğer bunu ben üçüncü derece, dördüncü derecede yaparsam şu olasılıkların ne kadar çok arttıracağını düşünün. Ben Black'teyim. Black'ten önce White White varsa.
+
+415
+01:57:16,756 --> 01:57:43,195
+Black'ten önce Black Black varsa, Black'ten önce White Black varsa, Black'ten önce Black White varsa durumlar oluşacak. Aynı şey White için geçerli olacak. Bunun üçüncü dereceden Marko model olduğunu düşünün. Her pikselin önünde 2 üzeri 3, 8 farklı durum olacak. Bu sefer 8 farklı geçişler olacak.
+
+416
+01:57:44,756 --> 01:58:12,756
+Biraz resim olmadığını düşünün. Grayscale bir resim olduğunu düşünün. 5 bitlik olsun. 5 tane state'im olacak. Bunun Color Table olduğunu düşünün. 255 tane state'im olacak. Bunun True Color olduğunu düşünün. Resimde kaç değişik renk varsa o kadar olacak. Bu yüzden Markov modeller çok daha iyi bir sıkıştırma bana sunar. Fakat kodlaması da daha zordur ve meşakkatli.
+
+417
+01:58:12,756 --> 01:58:31,896
+Daha kompleks bir yapıya sahiptir. Peki, siyah beyaz bir resmim var. İki adet state'im var. Bu state'lerin olasılıklarına da white state'in olasılıklarına PSB diyelim.
+
+418
+01:58:31,896 --> 01:58:39,816
+Black state'in olasılığına da PSB diyelim. Ve bunun entropisini hesaplayalım.
+
+419
+01:58:40,159 --> 01:58:54,840
+Olasılık modelinde, Probability modelinde olasılık neydi? Olayın olasılığı çarpı log2 olayın informationı, olayın probability'siydi.
+
+420
+01:58:54,840 --> 01:59:06,659
+Okey, Markov modelde entropi formülü biraz daha değişik. Yine birden m'ye kadar, buradaki m kaç tane state'in varsa o?
+
+421
+01:59:07,731 --> 01:59:16,751
+Her bir olayın olasılığıyla, state'in olasılığıyla o state'in entropisini çarpıyorum.
+
+422
+01:59:16,751 --> 01:59:26,692
+Bakın entropi hesaplarken alt seviyede o state'in entropisini hesaplıyorum.
+
+423
+01:59:27,475 --> 01:59:36,255
+Bütün steklerin entropi ile olasılıklarının çarpımları bana olasılıksal modelin entropisini veriyor.
+
+424
+01:59:36,255 --> 01:59:51,255
+Halbuki probability modelde olasılık neydi? Probability modeldeki olasılık eksi pi log 2 pi idi. Buradaki i de birden...
+
+425
+01:59:52,083 --> 02:00:15,423
+N'e kadar olay sayımı bana veriyordu. Markov modelde ise entropi, P'ler aynı ama bilginin yerine o state'in entropi değerini buluyoruz. O state'in entropi değerini de olasılık modeliyle hesaplıyorum. Sonra olasılığıyla state'in çarpıp modeli buluyoruz.
+
+426
+02:00:17,203 --> 02:00:30,623
+Bunların formüllerinden bahsedelim. State'lerimiz vardı. Benim nelere ihtiyacım olacak? Bu state'lerin entropilerine ihtiyacım olacak. Yani white state'inin entropisi nedir?
+
+427
+02:00:31,188 --> 02:00:42,747
+Black state'inin entropisi nedir? Dedik ki state'lerin entropisini hesaplarken de probability modelin entropisi nasıl hesaplanıyorsa öyle hesaplayacağız.
+
+428
+02:00:42,747 --> 02:00:52,188
+Şimdi black state'i burası. Black state'inde hangi olaylar var? Black gel, black gelme olasılığı var.
+
+429
+02:00:52,884 --> 02:01:02,524
+Bir de white gel, black gelme olasılığı var. İkisi de burayı gösteriyor. İki tane durum varsa entropi onlardan oluşacak.
+
+430
+02:01:04,764 --> 02:01:15,284
+Black gel, white'ı hesaplıyoruz. Bunları yanlış mı yazdım acaba? White'ı hesaplıyoruz. Ne var? White gel, white gelme olasılığı.
+
+431
+02:01:17,427 --> 02:01:28,187
+Çarpı Logaritma Watt gelme olasılığı yani bilgisi. Başka ne var buraya giden? Black-Gan Watt gelme olasılığı.
+
+432
+02:01:28,187 --> 02:01:41,607
+Black-Gan Watt gelme olasılığı. Log-2 Black-Gan Watt gelme olasılığı. Black state'ini hesaplayalım. Black-Gan Watt gelme olasılığı çarpı log-2 Black-Gan Watt gelme olasılığı.
+
+433
+02:01:42,095 --> 02:01:52,335
+Artı, buraya başka ne geliyor bu? White Campbell ekkelme olasılığı çarpı log2, White Campbell ekkelme olasılığını koyduk.
+
+434
+02:01:52,819 --> 02:02:10,239
+Bunlar nasıl bulunacak? White can white olasılığı nasıl bulunacak? Black can black olasılığı nasıl bulunacak? Bunlar bana zaten derinmiş. Ben diğerini bulmak istiyorsam olasılıkların toplamı bir olacağı için birden farkını alacağım.
+
+435
+02:02:18,003 --> 02:02:33,564
+Bir isim var, siyah beyaz bir isim. White state'in olasılığı 0.8. İşte bu nedir? Bu şudur. Elimde 10 tane piksel varsa bunun 8 tanesi white'mış.
+
+436
+02:02:35,507 --> 02:03:01,868
+Black'in state'i ne olur? Olasılık durumu. Olasılıklar birden farkını alacağım. Burası da 0.2'dir. Bana ne verilmiş? Black'ken white olma olasılığı verilmiş. Bu sayılmış resimlerde olasılık bu. Black'ken white olma olasılığı 0.3'dirken, Black'ken black olma olasılığı ne olur o zaman? Birden farkını alırım. 0.7 olur.
+
+437
+02:03:03,507 --> 02:03:29,268
+İstek olma olasılığı buyken, White-Gand White olma olasılığı nedir? 1-0.01 olur. Elimde bu kadar bilgiyle verilmiş bir sistemim var. Bunu hem Markov modelle hem de istatistiksel modelle demeyelim de buna olasılık modeliyle, buna olasılık diye değiştirelim. Olasılık modeliyle sistemin entropisine bakalım.
+
+438
+02:03:29,908 --> 02:03:35,128
+Hangisinin daha iyi sıkıştırma vereceğini bize söylesin?
+
+439
+02:03:35,928 --> 02:03:42,068
+Önce olasılık modeline bakalım. Yine bunun burasına olasılık modeli yazmam. Daha doğru olacak.
+
+440
+02:03:42,068 --> 02:03:49,847
+Olasılık modeli nasıl çalışıyordu? White'ın olasılığı, LOG2, White'ın olasılığı.
+
+441
+02:03:50,323 --> 02:04:09,623
+Yani bu information'ı artı. Öteki olayım ne? Beyaz olma olayı. 0.2 log 2, 0.2. Bu logaritmalar negatif çıkacağı için toplam negatif olur. Önüne negatif koyduğumda entropiyi artı yapıyordum. Entropi 0,722 bit.
+
+442
+02:04:10,068 --> 02:04:20,648
+Ben normal hayatta elimde siyah ve beyaz diye resim varsa birini sıfır, birini bir diye kodlarsam ortalama mesaj uzunluğum aslında ne olur? Bir olur.
+
+443
+02:04:21,148 --> 02:04:28,148
+Entropide ne olur? Entropide bir eksi sıfır yedi yüz yirmi iki olur.
+
+444
+02:04:36,032 --> 02:04:47,832
+Daha mı şey olacak? Adını söyleyin. Daha mı küçük olacak? Onun küçük olabilmesi için entropinin daha küçük çıkması gerekiyor.
+
+445
+02:04:47,832 --> 02:04:58,992
+Peki bakalım şimdi Markov modeline. Markov modelde formülüm neydi? Markov modeldeki formülüm? Şuradan bir bakalım.
+
+446
+02:04:59,604 --> 02:05:17,144
+Keşke, Psi, Hsi. Tamam mı? Markov modelde o zaman yapacağım şey neydi benim entropi için yapacağım şey? İki tane state'im vardı. White state'ini alıyorum ve white state'inin entropisiyle çarpıyorum.
+
+447
+02:05:18,484 --> 02:05:26,244
+Artı, black state'ini alıyorum ve black state'inin entropisiyle çarpıyorum.
+
+448
+02:05:26,996 --> 02:05:46,275
+Ve bunların da başına eksi koyuyorum. Bu entropiyi bulacağım. Hadi şimdi hesaplayalım. Benim neye ihtiyacım var? White'ın entropisini hesaplıyorum. White nelerden oluşuyordu? White gen white geliyordu.
+
+449
+02:05:48,079 --> 02:06:13,340
+Black geliyordu. Şimdi whiteken, black gelmesi bana verilmiş. 0.01, 0.01, log2, 0.01'i koyduk. Bunun yanına ne gelecek? Burası neydi? Whiteken, black gelme olasılığı. Burası da ne olacak o zaman? Whiteken, white gelme olasılığı. Elimde böyle bir şey var mı? Evet var.
+
+450
+02:06:14,452 --> 02:06:26,272
+Nedir? White Can Black bu kadarsa, White Can White gelme olasılığı da nedir? 1-0,01'dir. Onun da değeri 0,99'dur. Koyduk.
+
+451
+02:06:26,272 --> 02:06:35,832
+Şimdi Blaine Entropisi'ni hesaplayalım. Blaine Entropisi de nedir? Blaine Entropisi 0,2 idi olasılığı.
+
+452
+02:06:36,275 --> 02:07:03,995
+Bunun şey neydi durumları Black'in? Black gen Black gelebilirdi. Black gen White gelebilirdi. Black gen White gelme olasılığı 0.3, Log 2 0.3. Black gen Black gelme olasılığı da 1-0.3 olursa 0.7, Log 2 0.7 olur. Bunun değeri de bu. Yani HSB'yi bunu buldum.
+
+453
+02:07:04,275 --> 02:07:17,475
+HSV'yi de bunu buldum. Entropisi neydi benim? PSB çarpı HSB'di. PSB'm ne benim? 0.2.
+
+454
+02:07:18,579 --> 02:07:40,000
+HSBM'le 0.881 artı sonra White'ın olasılığını aldım. Staten 0.8 çarpı White'ın entropisini aldım bu. Ve çarptım 0.241 bit çıktı. Burası ne çıkmıştı? 0.722 bit çıkmıştı.
+
+455
+02:07:44,819 --> 02:08:11,819
+Daha ideal bir kodlama olacağını bana söylüyor. Elimdeki siyah beyaz bir modeli Markov modelle sıkıştırırsam daha iyi bir sıkıştırma olacak. Ama sonuçta ikisi de teorili pratikte bir bitle kodlanacak. 07, 024 diye bitler olmadığına göre bu modeli tercih etmemle bu modeli tercih etmem arasında hiçbir fark yok.
+
+456
+02:08:12,819 --> 02:08:32,819
+Ama çok daha fazla elimde renkler, daha gerisindeki bitleri kullanarak bir şeyler yapacaksam, Markov modeli kullandığımda daha fazla site eğitim olduğu durumlarda Markov model hissedilir derecede olasılıksal modelden...
+
+457
+02:08:33,171 --> 02:08:54,911
+Daha küçük olacak. Mesela bu 0.7 çıkarken bunlar belki 3 çıkacak. O zaman ben arasındaki farkı görüp tabii ki Marko modeli tercih edeceğim. Ama bu örnek için sadece işlemi yapması kolay olsun, çabuk yapalım diye böyle iki tane farklı durumunu verdim.
+
+458
+02:08:54,911 --> 02:09:00,551
+Dediğim gibi elinizdeki şeyin bir color table olduğunu düşünün.
+
+459
+02:09:01,171 --> 02:09:22,131
+256 tane renk var. 256 tane slide'ın olacak. Artı ve ben tek karakterin ya da rengin olasılığını değil de geçmişindeki renklerle olasılığını kullanarak bir sıkıştırma yapmak istiyorsam buradaki işlem yüklerim daha da artacak.
+
+460
+02:09:22,804 --> 02:09:43,304
+Ama her zaman Markov model, olasılık modelden daha iyi sonuç verir. Ama daha komplik edir. Kodlaması daha zordur. Bazı verilere göre, elimizdeki verilere göre olasılık modeli kullanmakla Markov modeli kullanmak arasında çok öyle abartılacak da bir durum yoktur.
+
+461
+02:09:50,804 --> 02:09:58,804
+İçinde belki Markov modeli kullanmıştır, belki istatistiksel modeli kullanmıştır. Fark etmez. Ben arkasından...
+
+462
+02:10:01,268 --> 02:10:19,628
+O sıkıştırma yöntemini kullanacağım. Yani olasılıksal modeli kullanıyorsam işte iki tane durum var. Siyah ve beyaz. Markov modeli kullanıyorsam dört tane durum var. Beyazdan önce beyaz, beyazdan önce siyah, siyahtan önce siyah, siyahtan önce beyaz gelme durumu gibi.
+
+463
+02:10:26,452 --> 02:10:37,912
+Mürekkep açıkçı çıkarmak istiyor musunuz? Evet çıkar. Bilgi teorisini bitirdim. Burada soracak bir sorunuz var mı? Yoksa yeni bir konuya geçeceğim.
+
+464
+02:10:40,592 --> 02:10:46,712
+Yani artık bu dersin sonunda size entropi nedir?
+
+465
+02:10:47,087 --> 02:10:54,187
+Ortalama mesaj uzunluğu nedir? Redundance nedir diye sorulsa ya da karşınıza gelse,
+
+466
+02:10:54,676 --> 02:11:22,636
+Bileceksiniz. Her şey zaten bunların üzerine kurulmuş. Gerisi teferruat olacak. Yöntem. O yöntem, bu yöntem. A kişisi bir başka yöntem çıkardı. B kişisi bir başka yöntem çıkardı. Benim amacım her zaman redundancy'yi minimize etmektir. Bunun için en uygun modeli seçmeliyim, algoritmayı. En iyi algoritmayı seçebilmem için de verinin içini tanımam.
+
+467
+02:11:22,676 --> 02:11:31,096
+Nasıl bir veri? Her şeyi ona göre yapacağım. Peki, yine Share Screen diyelim.
+
+468
+02:11:35,444 --> 02:11:43,304
+Neleri yaptık? İstatistiksel yöntemlerimize geçtik.
+
+469
+02:11:47,188 --> 02:11:55,387
+Buradan, tabii bunun hepsini bugün bitiremeyeceğim ama bir giriş yapayım. Şu an siz görüyor musunuz?
+
+470
+02:11:56,908 --> 02:11:57,467
+Yok hocam.
+
+471
+02:11:57,467 --> 02:12:08,427
+Yok hocam, okey. Ben yine stop share yapacağız. Her yerinde bunu yapmam gerekiyor herhalde. İstatistiksel yöntemler şimdi görüyor olmanız gerekiyor.
+
+472
+02:12:08,827 --> 02:12:09,408
+Tamam hocam.
+
+473
+02:12:09,648 --> 02:12:14,307
+Tamam. Şimdi gelelim istatistiksel yöntemlere.
+
+474
+02:12:14,836 --> 02:12:23,195
+Burada da yavaş yavaş ilerleyeceğiz. Aslında bizim burada en çok kullanacağımız yöntem ya da şöyle söyleyeyim günümüzde
+
+475
+02:12:23,216 --> 02:12:33,136
+Kullandığımız her yöntemin içerisinde karşımıza çıkan Huffman aritmatik kodlama ya da PPM dediğimiz yöntemler var.
+
+476
+02:12:33,136 --> 02:12:44,676
+İşte fakslarda MNP5 ve 7 algoritmaları var. Onlara tabii bugün giremeyeceğim ama yavaşça şimdi başlıyoruz.
+
+477
+02:12:45,423 --> 02:12:53,283
+Bu göstereceğim şeyler diğer yöntemlere geçmeden evvel önceden yapılması gereken ön işlemler olabilir.
+
+478
+02:12:53,283 --> 02:13:03,644
+Hani nasıl diyeyim size sesi işlemeden önce yapılan ön işlem nedir? Kulağımın duymadığı frekansları kaldırmak.
+
+479
+02:13:04,104 --> 02:13:10,783
+Ya da görüntüyle ilgili bir işlem yapacaksak önce ne yaparsın? Görüntünün üzerindeki parazitleri kaldırırsın.
+
+480
+02:13:13,423 --> 02:13:29,604
+Belki öncelikle format bilgilerini ya da çok tekrar eden boşluklar varsa onları teke indirmek olabilir. Ön işlem dediğim. Ya da bütün karakterleri küçük harfe çevirmek olabilir. Eğer kayıplı bir sıkıştırmadan bahsediyorsak.
+
+481
+02:13:29,604 --> 02:13:37,104
+Move the Front kodlama yöntemi de herhangi bir yönteme geçmeden yapılan bir ön yöntem.
+
+482
+02:13:38,163 --> 02:13:56,443
+Lokal Adaptif bir kodlama yöntemidir. Lokal Adaptif demesi bulunduğu bölge içerisinde hareket ediyor. Elde mevcut bir alfabemiz var. Bu alfabeyi kullanacağız. Alfabem dediğim benim dildeki kullandığım alfabem.
+
+483
+02:14:06,163 --> 02:14:27,523
+Ve ben bu input stream'den gelen karakterlerin kullanım frekanslarına bakarak onlara bir kod atanmasını isteyeceğim. Ama önceden bunları çıkarmam gerekecek. Yöntem gereği sıklıklar önceden hesaplanmıyor. Bu move to front yardımıyla bu sağlanacak.
+
+484
+02:14:34,163 --> 02:14:35,819
+Bu yöntemidir.
+
+485
+02:14:37,076 --> 02:15:05,076
+Şimdi örnekle anlatmaya çalışalım. Elimde şöyle bir input streamim var. Buraya gerçek datalar koymuyorum çünkü gerçek datalarla işlem yapmak çok uzun. O sonucu anlatabilmek için kendimce bir data uydurdum. Kendimce de değil, kullandığım kitaptaki data. Elimde de şöyle bir alfabe var. 2, 4, 6, 8 karakterden oluşan bir alfabe. İlla herkesin alfabeti.
+
+486
+02:15:05,076 --> 02:15:16,836
+Alfabesi 26 ya da 29 karakterden oluşmuyor. Herkesinki değişik. Peki, yöntem nasıl çalışıyor? Şimdi şu tablonun çıkarılmasını size anlatacağım.
+
+487
+02:15:18,135 --> 02:15:25,315
+Alfabe Move to Front yöntemi dedik. Bu da nedir? Burada bir inputum var. İşte inputum şu.
+
+488
+02:15:25,876 --> 02:15:36,195
+Burayı sırayla yazmışım. ABCDDD CBA CBA MNOPP MNOPP ONP
+
+489
+02:15:36,195 --> 02:15:44,016
+Şu da benim başlangıç alfabem. Alfabem de nedir? ABCD MNOP. Alfabem de bu.
+
+490
+02:15:44,016 --> 02:15:47,615
+Şimdi algoritmaya başlıyoruz.
+
+491
+02:15:51,583 --> 02:15:59,484
+Alfabenin kaçıncı sırasında? Bunun da indisi sıfırdan başlasın. A sıfırıncı sırada. Buraya sıfır yazdım.
+
+492
+02:16:00,564 --> 02:16:09,684
+Yöntemin adı nedir? Move to Front. İşlem görmüş olduğun karakter neyse onu al, alfabenin önüne taşı.
+
+493
+02:16:09,684 --> 02:16:14,944
+Zaten A'dı, zaten en ön sırada duruyor. Yapacak hiçbir şeyim yok.
+
+494
+02:16:15,475 --> 02:16:36,615
+İniyorum, B'yi seçiyorum. B'ye bakıyorum. Alfabede kaçıncı sırada B? Birinci sırada 0 ve 1. Buraya 1'i yazdım. Kalemi alayım. Buraya 1'i yazdım. Ve B'yi yöntem gereği aldım. En öne koydum.
+
+495
+02:16:38,004 --> 02:16:57,444
+B'yi aldım, en öne koydum. Sonra A, C, D, M, N, O, P diye gittim. Sonra C'ye geldi. C'nin yerine baktım. 0, 1, ikinci sırada. Sonra C'yi aldım. Alfabenin önüne move ettim. Ve alfabeyi kaydırdım. B, A, D, M, N diye gittim.
+
+496
+02:17:04,084 --> 02:17:19,064
+Bu aslında benim kodum. 3'ü yazdım. Sonra geldi D. Bakıyorum. D'yi öne aldım. Sonra geldi D. D burada kaçıncı sırada? Sıfırıncı sırada. Sıfırı yazdım.
+
+497
+02:17:19,424 --> 02:17:36,984
+D'yi öne getirdim. D zaten önde olduğu için öne geldi. Input stream'de C var. C'nin sırasına baktım 1. 1'i yazdım. C'yi aldım. Alfabenin önüne getirdim. Sırada ne var? B var. Şuna geldi.
+
+498
+02:17:45,523 --> 02:18:13,523
+Ne var? A. Geldik A'ya. A kaçıncı sırada? 0, 1, 2, 3. sırada. 3'ü yazdım. A'yı aldım. Alfabenin başına getirdim. Sırada ne var? M var. M'yi yazdım. Kaçıncı sırada? M, 0, 1, 2, 3, 4 var. 4'ü yazdım. M'yi öne getirdim. N'ye baktım. Kaçıncı sırada? 5. sırada yazdım. N'yi öne getirdim.
+
+499
+02:18:13,523 --> 02:18:39,184
+O'ya baktım. Kaçıncı sırada? Altıncı sırada yazdım. O'yu öne getirdim. M'ye baktım. Yedinci sırada P. P'yi öne getirdim. P'ye baktım. Sıfırıncı sırada yazdım. P'yi öne getirdim. O'ya baktım. Bir de O'yu öne getirdim. N'ye baktım. İki de N'yi getirdim. M'ye baktım. Üç de M'ye getirdim.
+
+500
+02:18:39,504 --> 02:18:49,963
+Şimdi ne olacak? Şu olacak. Ben karşı tarafa şuradaki sayı dizisini göndereceğim.
+
+501
+02:18:50,899 --> 02:19:15,200
+Buradaki sayı dizisini kodlayarak göndereceğim. Nasıl? İlk saatte örneklerimiz vardı, bir takım sayılar vardı, bunları kodlayarak gönderiyorduk. İşte entropisini hesaplıyorduk. Arkasından bir yöntem kullandık diyelim. Daha yöntemleri bilmediğimiz için söyleyemiyorum. X yöntemi, B yöntemi, C yöntemi. Bunu göndereceğim.
+
+502
+02:19:18,899 --> 02:19:34,239
+Karşı taraf bu kodladığım şu değerleri açacak ve alfabenin son halinden başlayarak orijinal şu inputu elde etmeye çalışacak.
+
+503
+02:19:36,399 --> 02:19:40,360
+Ve başladığı değere gelecek.
+
+504
+02:19:41,108 --> 02:19:51,468
+Yöntem yine nasıl çalışıyor? Bu yöntem herhangi bir sıkıştırma yönteminin başarısını arttırabilmek için önde yapılan bir kodlama yöntemi.
+
+505
+02:19:53,108 --> 02:20:02,308
+Bu move to front dedim ama bunun call to front olanları da var. İki önüne koy, üç önüne koy gibi.
+
+506
+02:20:04,404 --> 02:20:11,084
+Çok karışık ve gereksiz olduğu için tek bir tanesini anlatacağım. Öne taşımayı anlatıyorum burada da size.
+
+507
+02:20:12,704 --> 02:20:19,463
+Alfabeyi bulduktan sonra yerine onu alıp alfabenin önüne koyup alfabeyi kaydırıyorsun.
+
+508
+02:20:19,463 --> 02:20:29,963
+Ve bunu işlemin sonuna kadar geliyor. En sonunda şuradaki değerleri herhangi bir sıkıştırma yöntemini kullanarak sıkıştırıyorsun.
+
+509
+02:20:31,283 --> 02:20:41,644
+0, 1, 2, 3. Mesela bakın ben bunu sıkıştırırken 0, 1, 2, 3'ü bir pattern olarak alabilirim.
+
+510
+02:20:42,388 --> 02:21:10,368
+0, 1, 2, 3'ü bir pattern olarak alabilirim. 0, 1, 2, 3'ü bir pattern olarak alabilirim. Sonra da 45, 67'yi alayım. Yani benim aslında iki tane pattern'ım var. Bu iki tane pattern'ı kodlarım. Karşı taraf bu iki tane pattern'ı dekompres eder. Aynen bunların aynısını elde eder. Altında da bu alfabeyi de ekinde gönderirim. Bu alfabeyi de verirsem.
+
+511
+02:21:10,388 --> 02:21:31,008
+orijinalini geri açacak. Şimdi bakalım nasıl açacak? Önce bu sistemin entropisine bakalım. Burada böyle ikili ikili dörtlü dörtlü almadım. Burada her birini bir karakter olarak aldım. Yani burada üç tane sıfır, burada bir iki üç tane bir.
+
+512
+02:21:31,476 --> 02:21:44,256
+2, 3 tane 2, 3 tane 3, 1 tane 4, 1 tane 5, 1 tane 6, 1 tane 7 var. Bunların her birinin olasılıklarını hesapladım. Entropide yerine koydum. 2.8 bit çıktı.
+
+513
+02:21:44,884 --> 02:22:05,724
+Yani buradaki her bir biti kodlamak için 2.81 bite ihtiyacım var. Şimdi bakın aslında buradaki kodlarım benim nedir? 0 ile 7 arasında. Ben maksimum bunları kaç bitle yazabilirim? 7'ye 3 bitle yazabildiğime göre bunları kodlamak için 3 bit kullanırım.
+
+514
+02:22:06,227 --> 02:22:18,187
+Ortalama mesaj uzunluğum 3 bit. Entropi 2.81 çıktı. 3-2.81 0.81 redundancy oldu.
+
+515
+02:22:19,027 --> 02:22:27,227
+Şimdi onlara geçmeyelim. Ben bunu nasıl açacağım? İnsan aklı ermiyor. Karşı tarafta bir bu var.
+
+516
+02:22:27,667 --> 02:22:34,227
+Karşı tarafta bir de alfabenin aldığı en son durum var. Ve bunu açmaya kalkacağız.
+
+517
+02:22:34,227 --> 02:22:44,407
+Şimdi kod çözme işlemini yapalım. Kod çözme işleminde input tersten okunur ve alfabenin ilk hali oluşturulur.
+
+518
+02:22:44,808 --> 02:22:55,407
+Yani buradaki ben inputu tersten başlayacağım oluşturmaya. Çünkü alfabenin en son geldiği durumdayım. Tersten başlamam gerekecek.
+
+519
+02:22:55,667 --> 02:23:02,308
+Bu koddaki durumlarda bunları da kodlamak için herhangi bir algoritma kullanabilirim.
+
+520
+02:23:02,407 --> 02:23:07,188
+Hufman, Shannon, aritmatik ya da başka bir kodlama fark etmez.
+
+521
+02:23:07,768 --> 02:23:10,608
+Ve burada da açılmış halini görüyoruz.
+
+522
+02:23:10,948 --> 02:23:13,108
+Şimdi bir bakalım bu nasıl açılıyor?
+
+523
+02:23:13,747 --> 02:23:19,007
+Karşı taraf şunu aldı. En son alfabenin gelmiş olduğu bu değeri aldı.
+
+524
+02:23:19,407 --> 02:23:20,427
+Buraya yazdım.
+
+525
+02:23:21,528 --> 02:23:22,128
+Tamam mı?
+
+526
+02:23:22,451 --> 02:23:29,391
+Benim elimde de hangi kodlar var? Sıkıştırıp açtığımda da elimde de şu kodlar çıktı.
+
+527
+02:23:30,831 --> 02:23:44,231
+Şimdi ilk kod ne? Sıfır. Sıfırda ne var? M var. Gittim M'yi yazdım. Alfabenin önüne M'yi getirdim. Zaten önündeymiş.
+
+528
+02:23:44,551 --> 02:23:47,191
+Sonra ne var? Bir var.
+
+529
+02:23:47,567 --> 02:24:12,987
+Birincide ne var? 0, 1, N var. N'yi yazdım. N'yi aldım, alfabenin önüne getirdim. Sonra şunu farklı kaleme geçireyim. Sonra 2'ye geldi. Bakıyorum ikinci sırada ne var? 0, 1, 2, O var. O'yu yazdım. O'yu aldım, alfabenin başına koydum.
+
+530
+02:24:16,371 --> 02:24:31,611
+Mouse gitti. Haydi. Ya yapma be. 3 var. Gidiyorum. Üçüncü sırada ne var? 0, 1, pardon 0, 1, 2, 3, P var.
+
+531
+02:24:33,108 --> 02:24:55,067
+Koydum. Alfabenin önüne P'yi getirdim. Sonra 0 var. 0. indiste P var. P'yi koydum. Alfabenin önüne P'yi getirdim. Sonra 1 var. 1. indiste O var. O'yu koydum. Alfabenin önüne O'yu getirdim. Sonra 2 var. 2. indiste N var. N'yi koydum. Alfabenin önüne N'yi getirdim.
+
+532
+02:24:55,379 --> 02:25:19,199
+Şık şık şık yaptım. Buraya gelelim. Buradayım. Ne var? 2 var. 0, 1, 2. B'yi aldım. Alfabenin önüne B'yi getirdim. Kaydırdım. Sonra ne var? 3 var. 0, 1, 2, 3. gözde A var. Alfabenin önüne getirdim.
+
+533
+02:25:19,796 --> 02:25:23,495
+Bakın yeniden en baştaki alfabeyi elde ettim mi?
+
+534
+02:25:23,495 --> 02:25:25,056
+A, B, C, D.
+
+535
+02:25:26,451 --> 02:25:38,651
+ABC'de şu olmayacak. Bu yanlış. A bunun önüne geldiğinde şunun olmaması gerekir buradan. Bunu da silmeliyim. MNOP, MNOP geldi. Peki input streamim nerede?
+
+536
+02:25:54,451 --> 02:26:11,331
+N-O-P-P-O-N-P ve O-N-P de oluştu. Neden tersten oluştu? Çünkü ben alfabenin en son gelmiş olduğu halden başladığım için ister istemez tersten başlayacak açmaya.
+
+537
+02:26:11,331 --> 02:26:19,551
+Çünkü bu tamamıyla simetrik bir algoritma. Yaptığım işlemin tam tersini yapıyorum.
+
+538
+02:26:22,015 --> 02:26:40,236
+Herhangi bir yöntemle koklayabiliriz. Şu an sadece RL'yi gördünüz ama bu RL'ye uygun bir yöntem değil. Yani başarısız olur. Yani başarısız olması demek sıkıştırabilir ama sıkıştırma yapmaz. Genişleme yapabilir. Daha uygun bir yöntem seçmem gerekiyor.
+
+539
+02:26:40,236 --> 02:26:50,015
+Entropim 2.81 nasıl hesaplandığını biliyoruz ama burada maksimum 7 yazabildiğim için 7'de 3 bit de kodlandı.
+
+540
+02:26:50,015 --> 02:27:07,315
+Bu örneğe alındığı için maksimum 3 bit ile ben bunların hepsini standart kodlayabilirim. Aradaki fark benim redundancy oluyordu. Burada da çözme yöntemini gördük. Bunun daha farklı versiyonları da var.
+
+541
+02:27:09,683 --> 02:27:23,043
+Daha farklı versiyonu geçmeden ben bu işlemi Move to Front yapmadan yapayım. Yani nedir? Şöyle yapayım. Yine aynı input, yine aynı alfabe.
+
+542
+02:27:23,520 --> 02:27:33,100
+A geldi, A'nın yeri 0. 0 yazdım. Alfabem hiç değişmiyor. Move to front yapmıyorum. Sadece alfabenin yerini aldım.
+
+543
+02:27:33,100 --> 02:27:48,340
+İşte B kaçını sırada? 1. C kaçını sırada? 2. D kaçını sırada? Hep bir yukarıya bakıyorum. 4. Ay sıfırdan başlıyor. 3. D kaçta? 3. Ç kaçta? 2. Dık dık dık yazdım.
+
+544
+02:27:49,459 --> 02:28:06,059
+Buradaki kodu aldım, sıkıştırdım. Alfabe hiç değişmediği için zaten aynı alfabe. Karşıya gönderdim. Aynı alfabe karşıya gönderdim ve açacak.
+
+545
+02:28:06,059 --> 02:28:15,099
+Şimdi karşıya gönderdim. Sıfır var. Sıfır var. Sıfırda ne var?
+
+546
+02:28:18,100 --> 02:28:19,100
+Evet.
+
+547
+02:28:19,507 --> 02:28:43,188
+Burada hiç muftafront yapmadığı için aslında burada da bu sondan başlayacağım. 4 var. 4 burada kaçını sırada? 0, 1, 2, 3, 4, 4 M'dir. M'yi buraya yazdım. Alfabeyi aynı yazdım. 5 var. 5'in sırada ne var? 0, 1, 2, 3, 4, 5, N. N'yi buraya yazdım. Alfabeyi buraya yazdım.
+
+548
+02:28:47,507 --> 02:28:47,927
+Bu ne var?
+
+549
+02:28:56,659 --> 02:28:59,439
+Sustuğum vakit Bilinki Mouse'u arıyorum.
+
+550
+02:29:03,123 --> 02:29:03,623
+Tamam.
+
+551
+02:29:03,951 --> 02:29:29,031
+Şimdi sıfırı alalım en son. Sıfır var. Bakıyorum sıfırda ne var? A var. A'yı yazdım. Alfabenin aynısını aldım. Bunu yine tersten okuyalım. Inputumuz çıktı. Bir öncekinde yukarıdan başlamıştık kodu çözmeye. Bunda ise en sondan başladık. Sebep ne? Burada alfabede hiç yer değiştirme olmadığı için.
+
+552
+02:29:29,031 --> 02:29:31,831
+Şimdi bakın bunun entropisi ne oldu?
+
+553
+02:29:31,951 --> 02:29:48,591
+Bir öncekinin entropisi neydi? 2.81. Demek ki move the front yapmak entropiyi küçültüyor. Daha iyi bir sıkıştırma yapıyor. Eğer move the front yapmaz olduğu gibi kullanırsan 3 bit yapacak.
+
+554
+02:29:51,591 --> 02:29:57,511
+3 bit yapacak. Geri kalanların hepsi aynısı konuşuluyor.
+
+555
+02:30:01,556 --> 02:30:26,416
+Evet, son olarak bunu bitirelim. Bu Move the Front yönteminde karakterleri hep biz kullandık. İlla karakterleri kullanmam gerekmiyor. Ben kelimelere de aynı yöntemi uygulayabilirim. Örnek verelim. Elimizde şöyle bir metin var. Elimizde şöyle bir metin var. Bıla bıla bıla. Önce The kelimesini aldım.
+
+556
+02:30:26,995 --> 02:30:33,995
+Before Adding ve After Adding'de iki kolonum var. Henüz output'a hiçbir şey koymadım.
+
+557
+02:30:33,995 --> 02:30:46,995
+Output'a dığı koydum. Dığı ilk gelen sıfırıncı eleman ve output değil de burası benim neyim olsun, stack alanım olsun ve output'a sıfır dığı koydum.
+
+558
+02:30:46,995 --> 02:30:54,995
+Yani sıfırıncı sırada dığı var. Sonra ne geldi? Boy. Bu dığı buraya aldım.
+
+559
+02:30:54,995 --> 02:31:20,415
+Arkasına dının boyu ekledim. Kaçıncı sırada? 01'si birinci sırada bir boy dedim. Bunu move the front ile en son yaptığımı öne taşıdım. Buraya taşıdım. Yeni gelen 10'u buna ekledim. Boydığı 10 oldu. Kaçıncı sırada? 01. İkinci sırada? 2.10 yazdım.
+
+560
+02:31:20,819 --> 02:31:36,360
+Onu aldım. Move the front ile öne getirdim. Geldi. Burada gelen nedir? May. May'ı buraya ekledim. Yeri ne oldu? 0, 1, 2, 3. 3 May oldu. May'ı aldım.
+
+561
+02:31:37,940 --> 02:32:03,860
+Alfabenin önüne koydum. Arkasına ne gelecek? Right. Right'ı ekledim. Kaçıncı sırada? 0, 1, 2, 3, 4. Dördüncü sıraya right yazdım. Right'ı aldım. Alfabenin önüne getirdim. İzi sonuna ekledim. Kaçıncı sırada? Beşinci sırada. Beş iz dedim. İzi aldım. Alfabenin başına getirdim. Şimdi dikkat edin.
+
+562
+02:32:04,468 --> 02:32:20,608
+Başına getirdim. Dığ'yı sonuna ekleyeceğim. Dığ'yı sonuna eklemiyorum. Zaten bunun içinde dığ var. Sadece yerini yazıyorum. Beşinci sıra. Dığ'yı aldım. Öne getirdim.
+
+563
+02:32:21,396 --> 02:32:46,695
+Right'ı eklemiyorum. Zaten içinde right var. Kaçıncı sırada? 2. Right'ı alıp sadece öne koyuyorum. Sonra boy geldi. Boyu eklemiyorum çünkü zaten içinde boy var. Kaçıncı sırada? 5. 5'i yazıyorum. Boyu alıyorum. Alfabenin sonuna getiriyorum. Ve elimdeki her şey bitiyor.
+
+564
+02:32:49,396 --> 02:32:54,096
+Şunu ve en son şu bilgiyi gömdiriyorum.
+
+565
+02:32:55,379 --> 02:33:11,219
+Kodlama, şuraya kadar pek sıkıştırma elde edemiyorum. Fakat bütün kelimeler en az gözüktükten sonra tekrar ediyorsa döküman içerisindeki bu kelimeler sadece indeks bilgilerini yazıyorum.
+
+566
+02:33:11,219 --> 02:33:21,000
+Bu da bana sıkıştırmaya neden oluyor. Bunu geri açmak istediğimde ne yapıyorum? Elimde şunlar var.
+
+567
+02:33:23,540 --> 02:33:48,880
+Başlangıç boş. Dığ geldi. Dığ'yı ekliyorum. Sıfırıncı indisteki değeri dışarı çıkar diyor. Dığ var. Dığ'yı çıkardım. Dığ'yı multi front diyorum. Tek başına olduğu için zaten değişen bir şey yok. Arkasına boyu ekliyorum. Dığ boy. Birinci sıradaki değeri al diyor. Birinci sırada boy var. Boyu alıyorum.
+
+568
+02:33:49,427 --> 02:34:17,407
+Move the front yapıyorum. Boyu öne getiriyorum. Arkasına 10 eklenecek. 10'u ekliyorum. Yeri nedir? 2. 0, 1, 2'de ne var? 10 var. 10'u alıyorum. 10'u öne getirdim. Neyi ekleyecek? Mayı. Mayı ekledi. Üçüncü indis'te ne varsa onu al. 0, 1, 2, 3. indis'te May var. Mayı aldı, öne getirdi.
+
+569
+02:34:17,427 --> 02:34:37,188
+Right ekleyecek. Right'ı ekledik. Dördüncü indis'te ne var? Right. Right'ı yazdı. Right'ı aldı, öne getirdi. İzi ekleyecek. İzi ekledi. Beşinci sırada ne var? İz var. Şimdi dikkat. İzi aldı, en başa getirdi.
+
+570
+02:34:38,067 --> 02:34:55,608
+Aa, ekleyecek bir şey yok. Demek ki gelen kelime buradaki dizinin içerisinde var. İndisi ne? Beş. Beşinci sırada ne var? Sıfır, bir, iki, üç, dört, beş. Dığ'yı çıkardı. Dığ'yı aldı, alfabenin başına getirdi.
+
+571
+02:34:56,244 --> 02:35:08,283
+Kelime yok, indis var. Demek ki alfabenin içinde geçen bir şey. İkinci sıradaki 0, 1, 2, write. Write'ı aldı. Alfabenin başına write'ı getirdi.
+
+572
+02:35:08,884 --> 02:35:26,804
+5. Kelime yok. Demek ki burada var bu değer. 5. sırada ne var? 0, 1, 2, 3, 4, 5. Boyu aldı. Boyu getirdi buraya. Artık inputta hiçbir şey yok. Ve ben orijinal tekstimi elde ettim.
+
+573
+02:35:27,040 --> 02:35:55,040
+Ha, bana diyebilirsiniz ki hocam orijinal tekste bu kelimelerin arasında boşluklar var. Boşluklar varsa burada boşlukları da kotlarım. Ben burada boşlukları kotlamadığım için şey çıkmadı. Adını söyleyin. Boşluk yok. Sanki sıkışık açıyormuş gibi geldi. Ama ben kendim şunu da bilirim. İlla boşlukları kotlamam gerekmiyor. Her kelime arasına bir boşluk bırakılacağı için ben output...
+
+574
+02:35:55,040 --> 02:36:00,700
+Bunu yazarken her kelimeden sonra bir boşluk bırakarak yazabilirim.
+
+575
+02:36:00,700 --> 02:36:03,700
+Evet, bu hafta...
+
+576
+02:36:04,244 --> 02:36:32,244
+Bu kadar arkadaşlar. Haftaya prefix kodlardan bahsedeceğiz. Prefix kod çok önemli. Çünkü burada göreceğimiz bütün yöntemlerin hepsi prefix koddur. Burada diğer yöntemlerin içerisinde biz MNP5'i göreceğiz. Hatta PPM de buradaki yöntemlerin içerisinde. Bunların her birini görürken bunların prefix kod olduğunun farkına bakacağız.
+
+577
+02:36:32,244 --> 02:36:57,564
+Olması lazım. Bir kodu prefiks kodu olmazsa onu zaten sıkıştırabilirsin ama açamazsın. Açamadığım bir şeyi de sıkıştırdım diye ortada gezemeyiz. Haftaya bu yöntemlerden devam edeceğiz. Ve haftaya ödev teslimimiz var. Size galiba bir Drive linki vermiştim. Verdim değil mi? O Drive linkinin içerisine ödevlerinizi koyacaksınız. Sorunuz var mı?
+
+578
+02:36:59,572 --> 02:37:16,051
+Hocam bir soru var lütfen. Evet. Odet için ben ve bazı arkadaşlar, öngi fotoğraf için üç kanallar yaptım. Yani sıkıntı yok mu?
+
+579
+02:37:16,492 --> 02:37:24,851
+Ya üç kanalla niye yaptınız? Mesela size üç kanalla yapın denmediği halde neden üç kanalla yaptınız?
+
+580
+02:37:27,252 --> 02:37:54,512
+Bunun iki tane şey aklıma gelir. Bir, kodu bir yerden olduğu gibi buldunuz, onu kullandınız. İki, hep birlikte ödevi yaptınız. Üç, içinizden biri yaptı, hepiniz aldınız. Çünkü benim aklıma hep şu gelir. Yani istenmeyen bir şey yapılmazsa bunun altında bir şey aradın. Şimdi siz kendinizi benim yerime koyun.
+
+581
+02:37:54,835 --> 02:38:00,536
+Ben daha basit olan bir şeyi isterken neden zor bir şeyle karşıma geliyorsunuz?
+
+582
+02:38:03,219 --> 02:38:31,119
+Arkadaşlar, yeniden söylüyorum. Benim için önemli olan tek bir şey var. Bu derste bir şeyler öğrenmeniz. Yani derste geçebilmek için bir şeyler yapmayın. İnanın şöyle söyleyeyim. Ödevin verme. Ödevi eksik ver. Benim için çok daha kıymetli. Ya ben şunu görürüm. Ya uğraşmış ama bir yerde takıldı. Zamanı olsa bunu yapar.
+
+583
+02:38:31,219 --> 02:38:47,559
+Bu benim için inanın çok daha önemli. Bu ödev konularında o zaman böyle bir kimseyi suçlanıyorum ama olabilir. Kendinizi benim yerime koyun. Geçmişte de oldu, gelecekte de olacak. Yani bunu hepimiz biliyoruz.
+
+584
+02:38:48,048 --> 02:39:04,568
+Projede çok zorlanacaksınız. Proje seçeceksiniz ve hiçbirinizin projesi birbirinin aynı olmayacak. O zaman ne yapacağız? Yani bunları bu şekilde düşünerek hareket ederseniz kendiniz de rahat edersiniz.
+
+585
+02:39:15,603 --> 02:39:29,924
+Yapmam gerekir. Eğer sen üç kanallı bir şey bulduysan, otur o koda bak ben bunu bir kanalda gibi çözsem nasıl çözerim? Orada değişiklik yap. İnanın çok daha kıymetli.
+
+586
+02:39:30,399 --> 02:39:50,159
+Her şeye oturup günümüzde sizin yazmanız artık gerekmiyor. Açık kaynak kodlu bir dünyamız var. Al oradaki kodu kendine göre uyarla. Bunlar çok daha değerli ve kıymetli. O yüzden bir daha düşünün benim ne demek istediğimi ona göre teslim edin. Anlatabildim mi acaba?
+
+587
+02:39:51,620 --> 02:39:51,899
+Tamam.
+
+588
+02:39:52,500 --> 02:39:56,659
+Tamamdır. Peki. Haftaya görüşmek üzere o zaman. Hoşçakalın.
+
+589
+02:39:57,907 --> 02:39:58,888
+Görüşmek üzere.
