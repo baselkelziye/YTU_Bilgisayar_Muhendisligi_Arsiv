@@ -1,0 +1,1635 @@
+1
+00:00:14,003 --> 00:00:34,003
+Merhaba arkadaşlar, sesim giriyor mu? Geliyor hocam. Tamam, güzel. Sistemde bir sıkıntı vardı, şimdi açıldı herhalde de. Biraz bekleyelim. Saat 14.09. 14.15'de başlayalım.
+
+2
+00:00:41,939 --> 00:00:42,780
+Görürüz.
+
+3
+00:00:44,519 --> 00:00:46,259
+Tamam. Az sonra görüşmek üzere arkadaşlar.
+
+4
+00:05:55,028 --> 00:06:15,888
+Evet arkadaşlar, merhabalar. Şimdi bugünkü ilk önce bir... Ne vardı? Bir saniye bir ders planına bakalım da ilk önce bir şey atlamadığımızdan emin olayım. Sonra bir şey unutmuşum. Kalmasın.
+
+5
+00:06:32,531 --> 00:06:38,331
+Geçen hafta bu kümen ve devrasyonda Kollektif Öğrenmeyi bitirmiştik değil mi? Yanlış hatırlamıyorum.
+
+6
+00:06:52,244 --> 00:06:57,244
+Evet arkadaşlar. Sesim geliyor mu?
+
+7
+00:06:59,944 --> 00:07:04,604
+Hocam merhaba. Duyabiliyoruz ama yanıtlamak adına cevap vermedim. Emin değilim.
+
+8
+00:07:06,884 --> 00:07:07,764
+Bitirmiştik hocam.
+
+9
+00:07:13,235 --> 00:07:24,815
+Bir saniye bakalım. Bir daha bir kontrol edeyim de ben. Sonra eksik kalmasın. Ders notları kümlenme regresyonu açayım bir.
+
+10
+00:07:40,115 --> 00:07:45,775
+Kaçer kez beraber yer aldıkların üzerinden yapmıştık. Tamam, bunları konuşmuştuk.
+
+11
+00:07:48,055 --> 00:07:56,536
+Kümelemenin, yani regresyonda kollektif öğrenmeyi kullanmanın sınıflandırmadan çok farklı olmadığını ifade etmiştik hatırlarsanız.
+
+12
+00:07:56,536 --> 00:07:57,536
+O noktada...
+
+13
+00:07:59,252 --> 00:08:15,792
+Farklı olan kümelemeydi. Çünkü kümelemede her birinin küme etiketleri, her bir temel öğrencinin o şekilde söyleyelim, birbirinden farklı olabiliyordu. Yani aynı kümeler olsalar bile, aynı kümeleri oluşturmuş olsalar bile küme etiketleri birbirinden farklı olabiliyordu.
+
+14
+00:08:15,792 --> 00:08:24,912
+Dolayısıyla o noktada da bir çözüm önerisi olarak hatırlarsanız ne yapmıştık?
+
+15
+00:08:25,939 --> 00:08:44,460
+Birlikte geçmelerini, yani örneklerin birlikte bulundukları çözüm sayılarını bulmuştuk. Bu çözüm sayılarından da benzerlik matrisi oluşturmuştuk. Bu benzerlik matrisi üzerinden de hiyerarşik kümeleme ile sonuç kümelemeyi bulabiliriz demiştik.
+
+16
+00:08:50,419 --> 00:09:05,199
+Orası ile ilgilenmeyeceğiz. Bu hafta bambaşka bir konumuz var. Şimdi bu haftaki konumuz arkadaşlar. Dersin sayfasına indirdiniz mi?
+
+17
+00:09:06,559 --> 00:09:07,240
+Evet hocam.
+
+18
+00:09:08,199 --> 00:09:09,279
+Tamam, tamam. Peki.
+
+19
+00:09:10,035 --> 00:09:25,875
+Şimdi bugünkü konumuz AdaBoost algoritmasının analizi aslında. AdaBoost algoritmasının analizini yaparken, şimdi şu bir numaralı kaynak var. Bu bir numaralı kaynak zaten AdaBoost algoritmasının önerildiği paper.
+
+20
+00:09:27,875 --> 00:09:35,895
+Şurada Yaube Shapir'in önerdikleri 97 yılında çıkmış bir makale.
+
+21
+00:09:36,371 --> 00:10:00,291
+Bu makalenin bir miktar açıklaması da şu tezin içerisinde var. Bugün sizlerle bu birinci nolu kaynaktaki teorem altının ispatını beraber inceleyeceğiz. Daha sonra bu ne demek oluyor onlara birazcık bakacağız.
+
+22
+00:10:01,716 --> 00:10:20,716
+Şimdi, Adabust algoritmasının orijinal yayındaki formatı şu şekilde. Şurada gördüğünüz gibi. Yani bizim elimizde en tane etiketli örneğimiz var. X1'den başlıyor. X1, Y1. En son X, Y, N'e kadar en tane örneğimiz var. Sonra bir distribution tanımlanıyor. Bu distribution...
+
+23
+00:10:21,268 --> 00:10:36,028
+En tane örnek üzerindeki bir dağılım. Yani her bir örneğin seçilme olasılıkları olduğu bir dağılım. Bu dağılım temelde üniform bir dağılım olarak belirlenir ki…
+
+24
+00:10:37,620 --> 00:10:59,620
+Bütün örnekler üzerinden bir şey çıksın. Yani bütün örneklerin sisteme katkıları eşit olsunlar diye. Genelde üniform olarak kullanılır. Bunu zaten birazdan çok daha detaylı olarak konuşacağız. Daha sonra weak learning algoritm var. İşte weak learn. Sonra integer t, specifying the number of iterations. Burada da...
+
+25
+00:11:00,275 --> 00:11:21,195
+İtelasyon sayısı, yani bizim temel öğrenici sayımız aslında t dediğimiz şey. Initialize dediğimiz şey weight vektörler. Bir weight vektörümüz var. Bu weight vektörümüz ve i, yani her bir örnek için buradaki i'ler örneklerin indisleri üzerinden gidiyor. Bakalım for i eşittir birden n'e kadar.
+
+26
+00:11:22,419 --> 00:11:47,240
+İ, yani iyinci örneğin birinci iterasyonu, şu W'nun üstündekiler iterasyon sayısını gösteriyor. İyinci iterasyondaki hali. Çünkü bu W değişecek zaman içerisinde. En başta bu W'nun ilk hali olarak direkt D'ye atanıyor. Bu D'ye dediğim gibi zaten bir bölü n'lerden oluşuyorsa zaten üniform bir dağılımı ifade edecek.
+
+27
+00:11:47,700 --> 00:12:15,700
+Şimdi weight vektörümüzü bu şekilde ilk önce initialize ediyoruz. Adabust algoritmasını hatırlayalım. Adabust algoritmasında örneklerin içerisinden bir seçim yapılıyordu. Bu seçime göre örnek bir eğitim kümesi oluşturuluyordu. Bu eğitim kümesinin performansa hesaplanıyordu. Daha sonra bu temel öğrenicinin sınıflandırma başarısı bulunuyordu. Ve örneklerin de o sınıflandırıcı tarafından doğru ya da yanlış sınıflandırılıyordu.
+
+28
+00:12:15,700 --> 00:12:34,440
+Sınıflandırıldığı inceleniyordu, bulunuyordu. Daha sonra da yanlı sınıflandırılanların ağırlığı arttırılıyordu. Ve bu şekilde bir sonraki temel öğrenciye aslında o ana kadarki temel öğrencilerin daha çok yanlış yapmış oldukları aktarılıyordu.
+
+29
+00:12:35,187 --> 00:12:49,788
+En sona zorlar kalıyorlardı. Bunları hatırlıyorsunuzdur. Klasik yapımız bu şekilde ilerliyordu Adavus'ta. Şimdi bunun aynısını burada da görüyoruz zaten. Küçük t eşittir birden büyük t'ye kadar set demişiz. P-T.
+
+30
+00:12:51,155 --> 00:13:11,455
+Bir WT'miz var. WT'miz neyi ifade ediyor? T'ci adımdaki bu distribution, yani şey weight vektörleri, yani örneklerin ağırlık vektörleri, VT, bölü, birden ene kadar VIT'nin toplamı, yani bütün örneklerin olasılıkların toplamı, yani bütün VT'lerinin toplamına bölüyoruz.
+
+31
+00:13:19,155 --> 00:13:29,096
+İçindeki bütün değerlerin hepsinin toplamının bir olmasını sağlıyor değil mi bu işten? Yani VT'nin içerisinde nasıl değerler olurlarsa olsunlar, VT'nin toplamına böldüğünüzde bunların hepsini ne olacaktır?
+
+32
+00:13:29,096 --> 00:13:39,435
+VT dediğimiz şeyin içerisinde bütün örneklerin seçilme olasılıklarının toplamı bir olacaktır. Burası zaten klasik.
+
+33
+00:13:39,731 --> 00:14:03,872
+Daha sonra bir week learn çağırlıyor ve bunun içerisine bu distribution yani PT ile bir seçim yapıyoruz. Nereden? Eğitim örneklerimizin içerisinden, bu entane örneğin içerisinden. Daha sonra bir hipotez alıyoruz. Bu hipotez HT isim, yani TC adımdaki küçük T, buradaki HT adımdaki hipotezimiz. Hipotezimizin modelimiz aslında. Bu bir ağaç olabilir, başka bir şey olabilir ama sonuçta bir hipotez.
+
+34
+00:14:04,340 --> 00:14:21,900
+Bir kurallar kümesi, bir mapping işlemi. Mapping işlemini de ne yapıyor? X'den, yani bizim X inputlarımızdan sıfırla bir aralığındaki bir yere ne yapıyor? Değer veriyor. Yani sıfıra yakın bir şeyler söyleyebilir, bira yakın bir şeyler söyleyebilir, ortada bir şeyler söyleyebilir şeklinde. Bu hipotezimiz.
+
+35
+00:14:21,900 --> 00:14:31,580
+Daha sonra HT'nin hatası hesaplanır. HT'nin hatası hesaplanırken yapılan işlem HT'nin hatası epsilon T ile gösterilmiş.
+
+36
+00:14:32,563 --> 00:14:48,463
+Bütün örneklerin üzerinden bir hata hesabı. Fakat buradaki bütün örneklerin üzerinden bir hata hesabına bakarsanız, şuradaki HTXI ile YI'nin arasındaki farkın absolut değeri. Absolut değer ne yapacaktır?
+
+37
+00:14:52,500 --> 00:15:16,740
+Eksi ise dışarıya artı olarak çıkartacak. Orası çok çok kritik bir şey değil. Sonuçta hatalı olanlar. Yani bunların ikisi birden bir bir ise burası sıfır olacak. Sıfır sıfır da sıfır olacak. Ama birbirinden farklı varsa bunlar. Yani bu bir iken bu sıfır ya da bu sıfır iken bu bir ise burası dışarıya bir olarak çıkacak. Dolayısıyla hata yapılan örneklerin P, T'lerinin toplamı olacak değil mi?
+
+38
+00:15:17,331 --> 00:15:29,652
+Buradaki işlem. Yani hata yapılan örneklerin seçilme olasılıklarının toplamı aslında bizim buradaki EET dediğimiz şey. Kim tarafından o hata yapılıyor? O HT tarafından.
+
+39
+00:15:29,652 --> 00:15:41,652
+Tamam. HT'nin kararlarında hatalı olan örneklerin olasılıklarının toplamı bizim EET'miz. EET'den daha sonra beta T'yi, epsilon T'den beta T'yi elde ediyoruz. Daha sonra da...
+
+40
+00:15:42,004 --> 00:15:53,303
+New Vektörleri hesaplıyoruz. New Vektörleri hesaplarken de burada demin epsilon t'yi kullanarak elde etmiş olduğumuz beta t'yi kullanıyoruz.
+
+41
+00:15:53,303 --> 00:16:00,303
+Ve burada bir eksi, işte absolut değerin içerisinde mutlak değeri hatalıysa...
+
+42
+00:16:01,076 --> 00:16:23,896
+Burasını değiştirecek. Hatalı değilse, içerisi sıfırsa, hatalı değil demek, burası sıfırsa zaten 1-01. Dolayısıyla bt ile çarpılacak. Burası eğer birse, yani hata yapılmışsa, burası birse, o zaman 1-1, burası sıfır olacak. Dolayısıyla bt üzeri sıfır, bu bize biri verecek.
+
+43
+00:16:24,307 --> 00:16:33,307
+Ve burada da VT'nin değişmeyeceğini göreceğiz. Yani hata yapılanlarda değişmeyecek. Hata yapılmamışlarda değişecek.
+
+44
+00:16:34,927 --> 00:16:36,267
+Soru sorabilir miyim?
+
+45
+00:16:36,487 --> 00:16:37,087
+Tabii ki.
+
+46
+00:16:37,527 --> 00:16:42,207
+Y, İ. Buradaki H, T, Eksi, Eksi, Y, İ. Dedik ki Y, İ. Gerçek değer mi?
+
+47
+00:16:43,048 --> 00:16:44,407
+Evet, Y, İ. Gerçek değer.
+
+48
+00:16:44,767 --> 00:16:46,327
+Nerede buluyoruz Y, İ?
+
+49
+00:16:47,327 --> 00:16:47,827
+Ha tamam.
+
+50
+00:16:48,007 --> 00:16:51,187
+Onlar bize veriliyor. Şunlar veriliyor. Tamam.
+
+51
+00:16:51,923 --> 00:17:13,443
+Bunları biliyoruz. X, İleri ve Y, İleri biliyoruz. Daha sonra output hipotez. Yani bu işe mi bitirdik? Bu işe mi bitirdiğimizde aslında elimizde büyük T tane hipotez olacak. Bu büyük T tane hipotez içinde bu kurallara, bu kuralsa, buradaki kural geçerliyse bir, değilse de sıfır karşımıza çıkıyor.
+
+52
+00:17:13,875 --> 00:17:32,076
+Pt'lerin 1 bölü logaritma tl çarpımlarının daha işte logaritma 1 bölü bt'lerden büyük olması durumunda bir değilse de sıfır çıkıyor. Ojin algoritma da böyle. Zaten ispatta da bunu kullanacağız. Ne zaman bir ne zaman sıfır dediğini buna göre hesaplayacağız.
+
+53
+00:17:32,076 --> 00:17:35,796
+Şimdi Adaptive Boosling algoritması bu şekilde tanımlanmış.
+
+54
+00:17:36,852 --> 00:17:49,452
+Şimdi bir algoritma tanımlamışlar. Daha sonra bu algoritmayı tanımlamakta kalmamışlar yazarlar. Şöyle bir şey iddia etmişler. Şöyle diyorlar. Teorem 6, bahsettiğim yayındaki teorem 6.
+
+55
+00:18:04,403 --> 00:18:25,983
+Şu HF. Hatası Epsilon eşittir. Şurası. HF'nin hatası bu şekilde tanımlanmış. HF'nin hatası bakın nasıl tanımlanmış. Şu bir fonksiyonu, bu bir fonksiyonu, içerisi bir ise dışarıya bir döndürüyor, içerisi sıfır ise dışarıya sıfır döndürüyor.
+
+56
+00:18:30,324 --> 00:18:53,644
+Eşit değillerse, içerisi true ise 1 döndürüyor, içerisi false ise 0 döndürüyor. Buna göre HF'nin hatası ne olacak arkadaşlar? HF'nin yanlış yapmış olduğu örneklerin DI'lerinin toplamı olacak. Tamam. Yanlış yapmış olduğu örneklerin DI'lerinin toplamı olacak bizim.
+
+57
+00:18:54,099 --> 00:19:11,779
+H, F'nin hatası. D, I dediğimiz şey ne? En başta zaten tanımladığımız şey. Yani şurada ilk atama yaptığımız ki dediğim gibi genelde bu üniformal. Yani bütün örneklerin hepsinin ağırlıklarının eşit olduğu dağılım. Bunun üzerindeki hatası için şöyle bir şey söylüyor.
+
+58
+00:19:18,675 --> 00:19:24,455
+Şu değerden üstten sınırlıdır. Bir şeyin üstten sınırlı olması demek ne demek?
+
+59
+00:19:27,076 --> 00:19:29,056
+Bir değerin üstten sınırlı olması demek ne demek?
+
+60
+00:19:32,852 --> 00:19:36,172
+Epsilon sağdaki değerden daha fazla değer olamaz.
+
+61
+00:19:37,012 --> 00:19:40,791
+Daha fazla hata yapamayız. En fazla bu kadar hata yaparız.
+
+62
+00:19:42,692 --> 00:19:42,872
+Tamam.
+
+63
+00:19:44,751 --> 00:19:51,172
+Burada şu değer neyse, birazdan onu bulacağız zaten yavaş yavaş ilerleyen kısımlarda.
+
+64
+00:19:51,791 --> 00:19:54,731
+Bu değer neyse, bu değerden daha fazla hata yapamaz.
+
+65
+00:19:54,832 --> 00:19:58,352
+Yani algoritmanın yapacağı maksimum hata bu kadardır diyor.
+
+66
+00:20:00,000 --> 00:20:22,420
+Şimdi yavaş yavaş ispatına geleceğiz. Şimdi biraz ispattan önce tanım vermemiz gerekiyor. Tanımda aslında biraz bahsettim ama yavaş yavaş yine onların üzerinden geçelim. En dediğimiz şey örnek sayısı X, Y, Y, İ'yi ince örnek ve etiketi Y, İ'ler bir ya da sıfırlar. Aralığından bir şey değil yani. Ya bir ya sıfır. İki sınıflı bir problemden bahsediyoruz.
+
+67
+00:20:23,700 --> 00:20:40,299
+Epsilon hata bir fonksiyonu içi bir olunca bir değilse sıfır dönüyor. Yani içerisi doğruyu sayalı. İçi bir olunca, içi doğru olunca diyelim ona aslında. Bu buna eşit değilse. Bir başka bir şey, [öğrenci]'nin hatası hatalı olan örneklerin değerlerinin toplamı.
+
+68
+00:20:50,836 --> 00:20:58,456
+HF'nin hatası ne olacaktır? Yanlış yapılan örneklerin oranı olacaktır değil mi arkadaşlar?
+
+69
+00:21:00,536 --> 00:21:12,836
+Bakın DI bütün örnekleri için aynı ise, yani bir böyle N ise, biz burada hatalı olan örneklerin DI'lerini topluyor isek, bu durumda...
+
+70
+00:21:13,748 --> 00:21:33,208
+Bizim Epsilon'umuz yani HF hipotezimizin hatası ne olacaktır? Üst tarafta yanlış yapılanlar, aşağıda bütün hepsi yani N. Dolayısıyla hatalı sonuç bulunan örneklerin oranı olacaktır. Sıfırla bir arasında bir değer olacak.
+
+71
+00:21:36,819 --> 00:21:50,759
+Wt, n adet elemandan oluşan bir vektör. Örneklerin seçim olasılıklarının hesaplamada kullanılıyor. Ve sıfırda hepsi birbirlerine eşitler ve bir bölü n'e eşitler. İlk önce o şekilde alıyoruz diyoruz.
+
+72
+00:21:53,875 --> 00:22:09,375
+Eğer ki başka bir şey alırsak, o aldığımız şeyle çarpılarak örneklerin hataları yani Hefe'nin hipotezi o şekilde bulunuyor. Ama dediğim gibi bizim için önemli olan ne? Bütün örnekler üzerindeki hatası. Örneklerin bir kısmı üzerindeki hatası çok çok bizim için önemli değil.
+
+73
+00:22:09,775 --> 00:22:16,375
+Klasik manada. Belki bazen bazı örneklerin oranlarını farklı vermek istiyor olabilirsiniz. Bazı örnekleri...
+
+74
+00:22:17,715 --> 00:22:43,495
+Mesela şöyle bir durum olabilir. Veri hükümenizdeki bazı etiketlere çok güveniyorsunuzdur, bazı etiketlere çok güvenmiyorsunuzdur. Yani ne bileyim etiketleme işlemini o işi çok iyi bilen ve çok iyi bilmeyen insanlara yaptırmışsınızdır. Çok iyi bilenlerin vermiş olduğu etiketlerin örneklerinin ağırlıklarını daha fazla tutabilirsiniz. Ama çok güvenmediğiniz kişilerin vermiş olduğu etiketlerin ağırlıklarını düşük tutabilirsiniz.
+
+75
+00:22:44,115 --> 00:23:06,576
+Bu durumda da işte o D'yi hepsi bir bölüğe eşit olmaz, başka başka bir şeyler olur ama sonuçta yine teorem değişmez. Yani D'nin üzerinden hesaplandığı için yani bu başlangıçta şurada V, İ, T, V, İ, 1'e ne atıyorsak bizim en sonda elde edeceğimiz H, F'nin hatası bu en başta atadığımız D'ye bağlı olacak.
+
+76
+00:23:11,476 --> 00:23:25,036
+İyinci örneğin seçilme olasılığında kullanılıyor. VT, İ. P, T en adet elemanla oluşan bir vektör. Örneklerin seçilme olasılıklarını tutuyorlar. Bir vektör yani. Bizim asıl olasılık yani şuradaki P, T, şuradaki P, T işte.
+
+77
+00:23:25,036 --> 00:23:26,756
+Şu P, T.
+
+78
+00:23:29,455 --> 00:23:37,875
+HT, X, İ. T'inci adımda üretilen hipotezin, bakın HT, X, İ. T'inci adımda üretilen hipotezin, İyinci örnek için tahmini.
+
+79
+00:23:38,451 --> 00:24:01,572
+Yani bu tahminin bir ya da sıfır olmasını bekliyoruz. Ya bir olacak ya da sıfır olacak. Eğer ki bu htxi eşittir yi ise o zaman iyinci örneği, tinci adında üretilen hipotez yani bizim karar ağacımız ya da modelimiz artık her ne kullandıysak bir iki örneği olarak o zaman doğru yapmış olacak. Eğer birbirinden farklı varsa tahmin ne gerçek yanlış yapmış olacak.
+
+80
+00:24:02,387 --> 00:24:29,607
+İspat için bir Lema gerekiyor. Lema demek yardımcı teorem demek. Yani ana teoremin ispatında kullanılacak yardımcı teorem aslında. Leman ispatını burada göstermeyeceğim. Ama Leman şöyle basit bir Leman şunu diyor. Alfa sıfırdan büyükse ve R sıfırla bir kapalı aralığındaysa alfa üzeri R her zaman bir eksi bir çarpı alfa çarpı R'den daha küçük olur diyor. Tamam mı?
+
+81
+00:24:30,516 --> 00:24:58,096
+Bunun ispatını dediğim gibi anlatmayacağım ama bunu kullanacağız. Tamam. Şimdi önce derin bir nefes alalım. Biraz uzun bir ispatımız olacak. O yüzden ara sıra geri geri dönebiliriz. Yani tek seferde böyle bir seferde üstünden geçip devam edilebilecek gibi olmayabiliyor. Çünkü uzun bir ispat dediğim gibi genel hatlarını ortaya koymak gerekiyor.
+
+82
+00:24:59,412 --> 00:25:08,872
+Şimdi, peki. Önce bir derinlemez alalım, başlayalım. Tamam. Şimdi ne diyor? Algoritmanın beşinci adımına göre.
+
+83
+00:25:09,332 --> 00:25:27,432
+İlk önce bir ne yapmaya çalıştığımızdan bahsedelim. Bir algoritmamız var elimizde. Bu algoritmanın hatasını tanımlamışız. Bu hatanın da bir üst sınıra sahip olduğunu ispatlamaya çalışıyoruz. Şimdi biz bir algoritma için ne kadar küçük bir üst sınır tanımlar isek o algoritma o kadar başarılıdır değil mi?
+
+84
+00:25:27,988 --> 00:25:49,127
+Yani mesela bu algoritmanın üst sınırı şurada gördüğümüz ifadeyle yazı verilmiş. Yani Adobus algoritmasının üst sınırı bu, hatasının üst sınırı bu. Eğer siz başka bir algoritma çıkartırsanız ve üst sınırının bundan daha küçük olduğunu gösterirseniz, o durumda sizin algoritmanız buradaki algoritmadan daha başarılı olduğunu ispatlamış olursunuz.
+
+85
+00:25:50,355 --> 00:26:11,296
+Bu teorik olarak ispatlamaya denk düşer. Empirik olarak yani deneysel olarak veri kükümeleri üzerinde deneme yapmakla değil. Tamam mı? Şimdi tabii burada şunu unutmayalım. Buradaki hata neyin üzerindeki hata arkadaşlar? Buradaki hata neyin üzerindeki hata?
+
+86
+00:26:14,296 --> 00:26:15,016
+Efendim?
+
+87
+00:26:15,763 --> 00:26:23,403
+Yani birkaç tane yüklerle duyuyorsa, T tane yüklerle duyuyoruz. Bu ensemblin hatası.
+
+88
+00:26:23,403 --> 00:26:28,663
+Yok yok, yani ensemblin hatası da ensemblin neyin üstündeki hatası? Eğitim kümesi mi, test kümesi mi?
+
+89
+00:26:31,683 --> 00:26:32,564
+Eğitim kümesi.
+
+90
+00:26:34,023 --> 00:26:40,284
+Eğitim kümesi arkadaşlar. Buradaki hata neyin üstünde tanımlı? Eğitim kümesi üzerine tanımlı. Bakın şurada biz şunları verdik.
+
+91
+00:26:40,788 --> 00:26:59,988
+Input, seconds of enabled samples diyor değil mi? Examples diyor. Dolayısıyla şuradaki değerler bizim etiketleri biliyoruz. Dolayısıyla bunlar eğitim kümesi. Yani eğitim kümesi üzerindeki hatanın converge etmesini gösteriyor burada. Eğitim kümesindeki hata nasıl converge eder? Bunu gösteriyor.
+
+92
+00:27:00,339 --> 00:27:17,059
+Yani siz şunu söyleyebilirsiniz. Başka bir algoritma tasarladığınız bu algoritmayla buradaki üst sınırdan daha küçük bir üst sınıra sahip olduğunu gösterirseniz şunu ispatlamış olursunuz. Benim bu yeni önerdiğim algoritma bu algoritmadan daha hızlı konverj eder.
+
+93
+00:27:18,000 --> 00:27:22,319
+Konverj etmek demek ne demek? Hatasını indirme hızı demek.
+
+94
+00:27:22,996 --> 00:27:47,256
+Daha hızlı bir şekilde hatasını, yani daha hızlı bir algoritmadır ispatlamış olursunuz. Yoksa test kümesi üzerine daha başarılı ispatı değil bu. Tamam mı? Neyi söylediğimizi o noktada biliyor olalım. Burada aslında bir hızı gösteriyoruz. Yani eğitim kümesi üzerinde bu algoritma ne kadar hızlı bir şekilde hatasını düşürebiliyor. Bunu görmek istiyoruz.
+
+95
+00:27:49,140 --> 00:27:59,660
+Yoksa test kümesi üzerindeki başarıyla alakalı bir teorem bu değil. Tamam. Bu tarz teoremler de vardır. O tarz teoremler de var ama şu anda inceleyeceğimiz şey o değil.
+
+96
+00:28:01,540 --> 00:28:06,920
+Şimdi bu lemayı söylemiştik. Şimdi algoritmanın beşinci adımına dönelim.
+
+97
+00:28:07,040 --> 00:28:13,920
+Algoritmanın beşinci adımında şöyle bir işlem yapılıyordu hatırlarsanız. Nerede beşinci adım? İşte şurada. Şurası.
+
+98
+00:28:14,963 --> 00:28:16,183
+Bakalım ne demek bu?
+
+99
+00:28:16,683 --> 00:28:17,983
+Algorithmanın beşinci adımına göre.
+
+100
+00:28:19,144 --> 00:28:28,043
+Şimdi, ht x'i eksi yi değeri, eğer burası bunlar birbirine eşitse, yani ince örnek doğru tahmin edilmişse sıfır olacak.
+
+101
+00:28:28,043 --> 00:28:35,303
+Ve ne olacaktır? Burası sıfır olursa, şurası sıfır olursa bakın, burası bir olacak.
+
+102
+00:28:36,596 --> 00:28:49,676
+Vt'yi beta t ile çarpacağız. Beta t sıfırla bir arasında bir değer. Sıfırla bir arasında bir değerle bir şeyi çarptığınız zaman onun değeri ne yapmış olursunuz? Küçültmüş olursunuz.
+
+103
+00:28:51,056 --> 00:29:02,676
+Dolayısıyla yani vt dediğimiz şey neyden büyük olacak? Vt artı birden büyük olacak. Doğruysa ağırlığını ne yapıyoruz bakın.
+
+104
+00:29:04,627 --> 00:29:22,567
+Düşürüyoruz değil mi? Farklılarsa, yani hata yapılmışsa, burası 1 olacak ve şurası 0 olacağından dolayı ve iyiyince örneğin T artı birinci adımdaki V'si T'inci adımdakine eşit olacak.
+
+105
+00:29:23,228 --> 00:29:26,907
+Tamam mıyız arkadaşlar burada? Bir sorunuz var mı burada?
+
+106
+00:29:28,427 --> 00:29:29,107
+Tamam mı söylüyorum?
+
+107
+00:29:30,195 --> 00:29:52,735
+Başka var mı? Kafasında soru işareti olan kimse. Başka var mı derken var mı da? Peki. Peki, tamam. Şimdi bu eşitlik biri tüm örnekler için yazıp toplarsak neyi elde ederiz? Şuradakini i eşittir birden ne kadar gezdiriyorum? Şunu elde ederiz.
+
+108
+00:29:54,644 --> 00:30:14,163
+Yani bu buradan, bütün örnekler için bunu yaparsak böyle bir şey karşımıza çıkıyor. Şimdi Lemo 1'e bakalım. Lemo 1'deki alfa yerine, bakın alfa yerine, Lemo 1'deki alfa yerine BT. Şimdi BT'ler sıfırdan sıfırla bir arasındalar zaten. Dolayısıyla alfa yerine BT'ye koyabiliriz.
+
+109
+00:30:16,000 --> 00:30:42,880
+1-htxi-yi'nin mutlak değerini koyalım. Yani şuradaki r, 1 ile 0 arasında bir değer. Bu da 1 ile 0 arasında bir değer mi? Burası. Burası ya 1 ya 0 çıkıyor değil mi arkadaşlar? Dolayısıyla burası da, yani bunun tamamı da ne olacaktır? 0-1 aralığının içerisinde olacaktır. Bunları koyalım. Dolayısıyla burada yapacağımız işlem, şurada bunu yaparsak, eşit 2'den eşit 3'ü elde ediyoruz. Şimdi eşit 3'e bakalım nasıl bir şey oldu bu?
+
+110
+00:30:43,443 --> 00:30:54,443
+Şimdi bakın, şurası, yani burayı ne olarak düşünüyoruz? Bakın, şu kısma bakın sadece, şu çizdiğim yere. Buradaki...
+
+111
+00:30:55,316 --> 00:31:22,216
+Ve it'yi aynen bırakıyorum zaten ona dokunmuyorum. Beta t üstünde üstü, yani şurası bir üst değer. Bu üst değer şuradaki bizim r'ye karşılık gelecek. Beta t alfaya karşılık gelecek. Bu küçükmüş, neyden küçükmüş? Bir eksi bir eksi alfa çarpı r der. Yani şurası şundan küçüktür diye yazıyorum bakın. Şurası şundan küçüktür diye yazıyorum. Görüyor musunuz?
+
+112
+00:31:23,284 --> 00:31:39,744
+Şu kısım yerine, sadece şöyle gösterelim. Şu kısım yerine bakın, şu kısım yerine. Nereye yazdım ben? Şu kısmın tamamını yazdım. Bu nereden geldi? Bu da şuradan geldi. Tamam.
+
+113
+00:31:40,344 --> 00:31:50,443
+Alfa üstü R, bakın alfa üstü R, yani buradaki alfa dediğimiz şey beta'ya karşılık geliyor. R dediğimiz şey bir eksi, absolut değer kısmına karşılık geliyor.
+
+114
+00:31:51,028 --> 00:31:54,827
+1 eksi 1 eksi alfa çarpı R.
+
+115
+00:31:55,048 --> 00:31:56,528
+Şurada şunu görüyorsunuz.
+
+116
+00:31:56,587 --> 00:32:00,668
+1 eksi 1 eksi alfa çarpı 1 eksi pardon çarpı R.
+
+117
+00:32:02,067 --> 00:32:03,347
+Tamam mıyız arkadaşlar?
+
+118
+00:32:03,587 --> 00:32:03,928
+3'te.
+
+119
+00:32:09,044 --> 00:32:10,764
+Anlaşıldı mı bu 2'den 3'e geçişimiz?
+
+120
+00:32:12,964 --> 00:32:13,964
+Anlaşıldı hocam.
+
+121
+00:32:15,204 --> 00:32:22,064
+Tamam, güzel. Şimdi biz biliyoruz ki, şurası bakın.
+
+122
+00:32:28,627 --> 00:32:43,947
+H, T, X, Y, Y, Y'nin absolut değeri bizim neyi gösteriyor aslında? Hatayı gösteriyor değil mi? İyinci örnek için hatayı gösteriyor. Dolayısıyla ben burada bunun yerine epsilon T yazarsam, şurada gördüğünüz epsilon T yazarsam şunu elde ediyorum.
+
+123
+00:32:45,607 --> 00:32:54,947
+Bakın şunu elde ediyorum. Burada da zaten şuna eşit olduğunu biliyorum ben. Şunun eşit olduğunu biliyorum. Dolayısıyla bu da...
+
+124
+00:32:56,500 --> 00:33:04,840
+Yani şunun başında şunun olduğunu da düşünebilirsiniz eşittir diye. Dolayısıyla bu da bundan ne olacaktır? Büyük olacaktır şuradaki değer.
+
+125
+00:33:07,140 --> 00:33:08,660
+Bir soru vardı sanki.
+
+126
+00:33:11,340 --> 00:33:17,060
+Epsilon'un üstünde iyi olması gerekmiyor mu diye bir şey diyecektim ama şimdi yeniden bir bakmak ihtiyacı hissettim.
+
+127
+00:33:19,028 --> 00:33:26,908
+Epsilon T ya. Altında T var. Üstünde hani Epsilon üstü E. Altında T olması gerekiyor mu diye düşünüyordum ama.
+
+128
+00:33:27,708 --> 00:33:30,087
+Yok. Burada iyinci örnekteki hatası onun.
+
+129
+00:33:33,168 --> 00:33:38,028
+Tamam. Ama iyinci örnekteki hatası değil mi? Total hatası değil.
+
+130
+00:33:41,523 --> 00:33:42,563
+Şimdi...
+
+131
+00:33:46,259 --> 00:34:06,519
+4'e geldik. Şimdi bu eşitlik 4'ü son adım için yazalım. Yani şu eşitlik 4'ü düşünün. Bu eşitlik 4 neyi ifade ediyor? Bakın. Biraz bakalım üstüne. Wt artı 1 ile Wt arasındaki bir ilişkiyi söylüyor. Değil mi? Yani bir sonraki adım.
+
+132
+00:34:06,963 --> 00:34:25,684
+İle şu anki mevcut adım arasındaki ağırlıkları hesapladığımız şu W'ların arasındaki ilişkiyi söylüyor. Şimdi buna baktığımızda eşitlik dördün son adımı için bunu yazarsak, son adım dediğimiz şey ne? En son algoritmanın çalışmasından bahsediyoruz. T adımı için bunu yazarsak, şurada şunu elde ederiz.
+
+133
+00:34:28,692 --> 00:34:49,791
+İyeşitti ne kadar zaten olursa bu T'inci adım değil de T artı birinci yani büyük T artı birinci adım artık burası. Şurası T en sondaki. Şimdi bunu sondan bir önceki için yazalım. Yani şu sondu ya. Bundan bir önceki için yazalım. O zaman da şunu elde ederiz.
+
+134
+00:34:54,291 --> 00:35:01,391
+Bütün büyük t'lerin hepsi t eksi yani t eksi 1 ile dönüştü. Bütün t'lerin hepsi.
+
+135
+00:35:04,211 --> 00:35:21,072
+Şimdi şunu elde ettik. Eşitlik 5'teki, bakın eşitlik 5'teki, şunun yerine, şunun yerine, eşitlik altındaki ve ondan daha büyük olan, yani biz bakın şu,
+
+136
+00:35:21,556 --> 00:35:43,996
+Bu da küçüktür bundan dedik. O zaman ben bunun yerine şurayı yazsam eşitlik bozulur mu? Bozulmaz değil mi? Yani daha büyük bir şey onun yerine. Burası büyük ya. Bu parçadan daha büyük olan bir şeyi buraya yazarsam bu bozulmayacaktır.
+
+137
+00:35:46,164 --> 00:36:11,923
+Şunun yeni halini elde ediyorum. Bakın 5'in yeni halini elde ediyorum. Nasıl? Şu 5'in şu son kısmındaki şu parça yerine, şurada gördüğünüz şu parça yerine şu parçayı yazıyorum. Yaptığımız şey bu. Şunun yerine şu parçayı yazıyorum. Bunu yazdığınızda karşınıza böyle bir şey çıkıyor. Yani vt artı bir ile bu sefer vt eksi bir arasındaki ilişkiyi buldum.
+
+138
+00:36:12,224 --> 00:36:33,024
+T artı 1 ile T arasındaki ilişkiyi bulmuştum. Şimdi T artı 1 ile T eksi 1 arasındaki ilişkiyi bulundum. Bu işlem bir daha devam ettirelim. Yani burada şimdi bu VT eksi 1 yerine bunu VT eksi 1 için yazıp oradaki şunun karşılığını oraya koyalım. Bir sonraki adımda şunu buluruz.
+
+139
+00:36:40,179 --> 00:36:52,159
+Veytlerin arasındaki ilişkiyi tanımlamış olalım. Burada ben bu işlemi t-2, 1 olana kadar devam ettirirsem, en sonunda elde edeceğim şey şöyle bir şey olacaktır.
+
+140
+00:36:52,679 --> 00:37:01,159
+Bakın nasıl bir şey. Şimdi şu başlangıçta bakın şu parçalar hep, bakın t'li hali, t-1'li hali.
+
+141
+00:37:01,204 --> 00:37:24,444
+T-2'li hali şeklindeydi. T-2'ye kadar. Dolayısıyla burasını 1'e kadar devam ettirirsem ben, en sonunda şurası 1 olacak zaten. Burası ise bir çarpım olacak. Nelerin çarpımı? İşte 1-1-beta t çarpı 1-epsilon t. Buradaki t'de birden t'ye kadar değişecek.
+
+142
+00:37:25,043 --> 00:37:44,583
+Tamam, şurada görüyorsunuz. T'li hali, T-1'li hali. En sonunda 1. 1'e kadar orası da inecek. Dolayısıyla şunu elde ettik. Ama biz başlangıçta şunu da söyledik. Değil mi? Şöyle olduğunu söylemiştik. Bunların toplamının 1 olduğunu. Dolayısıyla şu anda şu 10. eşitliğe varmış durumdayız.
+
+143
+00:37:45,844 --> 00:38:07,304
+Bakın, t artı birinci adımdaki weightlerin toplamı için betalar ve epsilonlardan oluşan bir formül elde etmiş olduk. Bir üst sınır elde etmiş olduk ve t artı birinci adımdaki, en sondan bir sonraki adımdaki weightlerin ağırlıkları için. Tamam mıyız buraya kadar arkadaşlar?
+
+144
+00:38:21,268 --> 00:38:21,908
+Başka?
+
+145
+00:38:23,528 --> 00:38:24,307
+Tamamdır hocam.
+
+146
+00:38:25,587 --> 00:38:25,948
+Peki.
+
+147
+00:38:28,268 --> 00:38:33,788
+Şimdi bu adımdan sonra, bunu elde ettik, bu bir yerde dursun. Tamam, bunu kullanacağız.
+
+148
+00:38:35,307 --> 00:38:39,047
+Şimdi Adabust algoritmasının hata yapma durumunu ele alalım.
+
+149
+00:38:41,108 --> 00:38:44,768
+Şimdi biz, bir saniye.
+
+150
+00:38:58,900 --> 00:39:03,460
+Şu anda biz ne yaptık? Burada örneğe kalacak olacağız.
+
+151
+00:39:03,579 --> 00:39:04,780
+Yani farklılar sevmiyor.
+
+152
+00:39:04,780 --> 00:39:06,980
+Tamam.
+
+153
+00:39:09,840 --> 00:39:11,800
+Hatay yapma durumunu ele alalım.
+
+154
+00:39:13,480 --> 00:39:17,880
+Sonra ikinci hatay yapma durumunu.
+
+155
+00:39:24,052 --> 00:39:36,952
+Şimdi hata yapma durumunu ele alalım. Hata yapma durumu aslında iki türlü. Yani bunlardan birincisi Yİ sıfır olabilir ve biz tahminimiz bir olabilir. Ya da Yİ bir olabilir ve bizim tahminimiz sıfır olabilir.
+
+156
+00:39:36,952 --> 00:39:44,492
+Şimdi ilk önce şu durumu düşünelim. Yani Yİ eşittir sıfır, HFXİ eşittir bir durumunu düşünelim.
+
+157
+00:39:44,916 --> 00:40:06,976
+Şimdi eğer hf x i eşittir 1 ise algoritmaya göre şöyle bir şey yazıyorum. Şimdi bunu nereden yazdım ben? Bakın hf x i eşittir 1 ise algoritmaya göre böyle bir şey yazıyor. Şimdi bu nereden geldi? Bu şurada yazıyor. Şurada. Yani hf'miz 1 ise o zaman şurası doğrudur değil mi? Bakın. Şurası.
+
+158
+00:40:16,403 --> 00:40:40,104
+Burası doğru. Şimdi burada logaritma üstü b eşittir, b çarpı logaritma a olduğunda, bunları sizler bilirsiniz, bu beta t, bir bölü beta t'yi siz beta t üzeri eksi bir olarak yazabilirsiniz. Bu eksi bir de başa geçebilir. Eksi bir de bunun başına geçebilir. Dolayısıyla buradaki eksilerden bu şekilde kurtulabilir. Yani eksileri başa alabiliriz. Bir bölü betaları bu şekilde ifade edebiliriz.
+
+159
+00:40:40,943 --> 00:40:43,264
+Şimdi, yani bunu bu şekilde yazdık.
+
+160
+00:40:44,275 --> 00:40:55,555
+Bakın şu anda yi eşittir 0, hfx'i eşittir 1. Bunun olması için böyleyse eğer böyle olduğunu biliyoruz. Çünkü böyleyse böyle karar verdik ya.
+
+161
+00:41:09,844 --> 00:41:31,643
+T eksi ht x i eksi y1. Bunlar t eşittir birden t kadar çarpımları. Şunlar çarpımları. Bir saniye bir şeye bakacağım. Tamam. Şimdi şu değeri düşünelim bir. Bakın şu değeri düşünelim. Bu değer yi eğer sıfır ise sıfırsa bu bu hale gelecektir.
+
+162
+00:41:31,643 --> 00:41:36,043
+Bunu bu şekilde ifade edebiliriz.
+
+163
+00:41:36,724 --> 00:41:48,804
+Şurası sıfır olacak. Bu eksi şuna geldi. Şimdi ht x i sıfırdan büyük bir şey olduğu için, şurası sıfırdan büyük bir şey olduğu için, bu da dışarıya ne olarak çıkar zaten? Eksi ht olarak çıkar değil mi? Şurası.
+
+164
+00:41:50,364 --> 00:41:57,844
+Şu ifadeyi şu şekilde yazabiliriz. Eksi, pardon içerisi artı olduğu için. Eksi olsaydı burayı artı olarak yazardık zaten.
+
+165
+00:41:58,764 --> 00:42:02,824
+Peki bu ne demek? Şu, şunu düşünelim.
+
+166
+00:42:04,851 --> 00:42:31,631
+Bu aslında şu demek. Yani bunlar çarpılıyor var birbirlerde değil mi? Beta 1 üzeri eksi h1 x i çarpı beta 2 eksi h2 x i çarpı çarpı. Buna hemen k diyelim. Bu k olsun. Her iki tarafın log'unu alalım. Yani şurada şunu elde etmiş oldum. Bu log aldığımız işlem aslında şunu biz ne olarak da yazabiliriz? Bu şekilde de yazabiliriz bakın.
+
+167
+00:42:33,268 --> 00:42:35,367
+Çarpımları toplam şeklinde yazabiliyorduk.
+
+168
+00:42:39,635 --> 00:42:51,275
+Şimdi burada her iki tarafın x'ini alalım. Yani logaritma k eşittir şu ya. Logaritma k eşittir şu. Her iki tarafın x'ini alalım. Yani x dediğim e üstü halini almak demek.
+
+169
+00:42:51,875 --> 00:43:04,895
+x log k eşittir k olacaktır. Bir log birbirini götürürler hatırlarsanız. k eşittir. e üzeri logaritma bu artı işte bu artı bu bu bu. O da eşittir. e üzeri şu kısım.
+
+170
+00:43:08,628 --> 00:43:23,208
+Yani burada nereye varacağız? Şurada şu yazmış olduğumuz şu ifade. Neredeydi o? Şu. Neye eşit? Şuna eşit. Tamam.
+
+171
+00:43:25,467 --> 00:43:29,907
+Şimdi burada ben eşitlik 11'i kullandım. Eşitlik 11 dediğimiz şey neymiş? Eşitlik 11 şu.
+
+172
+00:43:32,947 --> 00:43:36,288
+Bu HD'yi alalım aşağıya. Daha rahat gözükür.
+
+173
+00:43:44,596 --> 00:44:11,875
+Şimdi bakın, şunu elde ettik. Şunu elde ettik. Bir de bir eşitlik 11'imiz var, yukarıda bulduğumuz. Bu eşitlik 11'e göre şöyle bir şey yazıyor burada. Ne demiş? E üstü, eksi kısım. Şu kısma bakın. Bir de şu kısma bakın. Buralar eşitler gördüğünüz gibi. O zaman ben şurası, büyüktür şu yazabilirim.
+
+174
+00:44:13,715 --> 00:44:40,715
+Tamam. Şimdi buradaki sağ tarafı, yani şu kısmı bir açalım. Bu kısmı açarsak, bunun şuna denk geleceğini göreceksiniz. Ve bunu da tekrardan bunun anlamını açarsak, üstlerde çarpım çarpım çarpımlar haline, bu üstler toplanmış ya, neden toplanan? Aslında çarpım onlar. Çarpım çarpım çarpım şeklinde bunu yazarsak. O zaman bu da aslında şuradaki gibi bir...
+
+175
+00:44:41,268 --> 00:45:01,407
+Sonuçtur. Bu da e ve log birbirini götüreceği için beta t eksi bir bölü iki halidir. Bu da dışarıya zaten çıkabilir çarpım olduklarından dolayı. O zaman şunu elde edebiliriz. Bakın şunun, şu ifadenin şuna eşit olduğunu aslında gösterdik.
+
+176
+00:45:07,103 --> 00:45:15,784
+Bakın şu ifadenin şuna eşit olduğunu gösterdik. Dolayısıyla buna eşit olan ifade şuydu bir yandan da. O zaman biz şunu söyleyebiliriz.
+
+177
+00:45:17,063 --> 00:45:17,244
+Tamam.
+
+178
+00:45:19,324 --> 00:45:21,784
+Şimdi o halde neyimiz elde ettik aslında?
+
+179
+00:45:23,184 --> 00:45:33,103
+Yi sıfırken ve Hfxi bir iken şu ifadeyi oluşturduk. Bakın 13. Yani bu hata yapılmışsa, bu şekilde bir hata yapılmışsa
+
+180
+00:45:33,652 --> 00:45:48,811
+Yani y'i sıfırken hf bir ise şu eşitliği bulduk. Şimdi diğer hata yapılma durumuna bakalım. Diğer hata yapılma durumumuz ise y'i eşittir bir iken hf iksinin sıfır olması demek.
+
+181
+00:45:49,192 --> 00:45:58,811
+Şimdi hf eğer sıfır ise algoritmaya göre, demin şöyleydi bir ise algoritmaya göre şunlar ters dönmüştü değil mi? Bu durumda şöyle olacaklar.
+
+182
+00:45:59,507 --> 00:46:05,267
+Nerede? Şu şekilde olacaklar. Buradaki eksileri yine şu bir bölülerden kurtardık. Bu hale getirdik.
+
+183
+00:46:05,427 --> 00:46:12,467
+H iki tarafı eksi bir ile çarpalım. H iki tarafı eksi bir ile çarptığımız zaman eşitliğin yönü değişirdi hatırlarsanız. Şunu elde ettik.
+
+184
+00:46:13,727 --> 00:46:21,747
+Şimdi şu ifadeye de yine y eşittir bir ve ht x'i elemandır bir bölü t olduğundan.
+
+185
+00:46:22,356 --> 00:46:39,456
+Ne olacaktır? Htxi eksi yt eşittir. Htxi bir. Çünkü yi dediğimiz şey ne? Sıfır. O zaman ben şunu görebilirim. Bunun da anlamı nedir? Htxi'nin birden küçük olmasıdır değil mi?
+
+186
+00:46:51,731 --> 00:47:11,991
+İçerisinin mutlak değerden çıkarılmış hali içerisinin eksili hali olacak. Eksili haline çarptım. Sonra kendisiyle bir de başına eksik gelecek. Yine aynı hale gelecek bu. Dolayısıyla bu hale geldi. Peki bu ne demek? Çarpı eksi bir. Dolayısıyla ben bunu şu şekilde yazabilirim. Şu halde.
+
+187
+00:47:13,715 --> 00:47:30,436
+Burada da yine aynı şeyi yazıyor aslında ama sadece çarpım şeklinde ifade edilmiş. Burada S kullanılmış karışmasın diye. Yoksa burasında da T'yi kullanabilirdik. Bunlar birbirinden bağımsızlar şu anda. Yani iç içe çarpımlar değiller. Bunlar birbirinden bağımsız iki tane çarpım.
+
+188
+00:47:31,815 --> 00:47:38,596
+Buradaki çarpımları birbirinden ayırdık sadece. Yani şu çarpımı aldık, bir de şu çarpımı aldık, onları birbirine çarpım şeklinde yazdık.
+
+189
+00:47:41,108 --> 00:47:45,108
+Şunun yerine şu olduğunu zaten daha önce göstermiştik.
+
+190
+00:47:52,724 --> 00:48:16,404
+Yukarıdaydı, bir öncekindeydi. Şunun yanış olduğunu göstermiş. Burası da zaten buraya yazılır. Şimdi eşitlik 14. Eşitlik 14 nerede? Eşitlik 14 şu. Eşitlik 14'ü kullanırsak, burada şu elde ettiğimiz şeyde, yani şuna eşit olduğunu söyledik.
+
+191
+00:48:19,764 --> 00:48:38,704
+Şöyle olduğunu yazabiliriz. Yani eşitlik 14'ü kullanırsak şu ifadeyi yazabiliriz. Şunu kullanıyoruz bakın. Şurası yani işin şu tarafı büyüktür burada. Niye? Çünkü şurasının şundan büyük olduğunu biz eşitlik 14'te gösterdik. Eşitlik 14 nerede? Şurada.
+
+192
+00:48:44,340 --> 00:49:04,204
+Eşitine bakalım. Yani burası zaten herhalükarda bu tarafın tamamından büyük. Burasını biz ne şekilde yazabiliriz? Çarpım E üzeri log beta t üzeri 1 bölü 2 şeklinde yazabiliriz. Buradaki E ve log birbirlerini götürürler. Dolayısıyla burası da yine şurası götüreceğinden dolayı bu sefer...
+
+193
+00:49:04,403 --> 00:49:18,324
+Bt üzeri eksi 1 bölü 2 oluyor. Burası zaten ne olacaktır? Beta t 1 bölü 2 olacaktır. Burada ise beta t ya da s fark etmez. Eksi 1. Bu ikisinin çarpımlarından ne olacaktır? Beta t üzeri eksi 1 bölü 2 çıkacaktır.
+
+194
+00:49:18,743 --> 00:49:31,483
+Şimdi o halde neyi elde ettik biz? Yi eşittir 1 iken ve hf x i eşittir 1 iken şunu yazabiliriz. Şu yazdığımız şey, şurada şu yazdığımız şey, şundan.
+
+195
+00:49:32,340 --> 00:49:44,579
+Küçüktür. Pardon bu bundan büyüktür. Yalnız söyledim. Çünkü zaten şurasıydı ama büyüktür. Şimdi eşitlik 13'e bakalım. Eşitlik 13 nerede? Eşitlik 13 şurada bakalım.
+
+196
+00:49:52,788 --> 00:49:56,427
+Ne görüyorsunuz? Eşitlik 13'e baktığımızda.
+
+197
+00:50:00,436 --> 00:50:01,276
+Aynalar.
+
+198
+00:50:01,836 --> 00:50:03,836
+Aynalar değil mi? Peki bunun anlamı ne demek?
+
+199
+00:50:04,176 --> 00:50:05,716
+Yani aynaların anlamı ne?
+
+200
+00:50:07,556 --> 00:50:22,736
+Algoritmanın yanlış yapması durumunda hatanın türünden bağımsız olarak yani Yİ eşittir 1, HTF0 ya da Yİ0, E, F1 den bağımsız olarak biz bunu gösterebildik.
+
+201
+00:50:22,736 --> 00:50:27,436
+Yani hata yapmışsa algoritma bu eşitliği kullanabiliriz.
+
+202
+00:50:27,796 --> 00:50:28,236
+Tamam mı?
+
+203
+00:50:30,387 --> 00:50:52,227
+Şimdi o zaman biz rahatlıkla şunu yazabiliyoruz. Ada Bulut algoritması iyinci örnek için hata yapmış ise o zaman budur. Tamam mıyız? Buraya kadar. Hata yapmışsa bakın. Tamam. Şimdi arkadaşlar bir ara verelim.
+
+204
+00:50:53,492 --> 00:51:05,192
+Biraz daha bir gözden geçirelim yaptıklarımızı. Bu noktadan itibaren devam edeceğiz. Saat şimdi 3'ü 10 geçe devam edelim. 10 dakika bir aramız olsun. Tamam mı?
+
+205
+00:51:06,532 --> 00:51:07,532
+[öğrenci] sonra görüşmek üzere.
+
+206
+01:02:44,052 --> 01:02:45,752
+Merhaba arkadaşlar, sesim geliyor mu?
+
+207
+01:02:47,572 --> 01:02:48,352
+Evet hocam.
+
+208
+01:02:48,932 --> 01:02:49,712
+Tamamdır.
+
+209
+01:02:53,331 --> 01:03:05,531
+Evet, şimdi en son şurada kalmıştık. Yani Adabust algoritması ince örnek için hata yapmışsak şu ifade doğrudur. Tamam.
+
+210
+01:03:06,612 --> 01:03:18,432
+Bu aslında algoritmanın birazdan göstereceğimiz asıl ispatı için, yani şurada ilerleyeceğiz o epsilon'un bir değerden küçük olduğunu göstermekte kullanacağız.
+
+211
+01:03:18,432 --> 01:03:28,692
+Onun ispatında kullanacağımız bir adım. Yani buraya kadarki işlemlerin hepsi aslında şunu elde etmek içindi. Tamam mı?
+
+212
+01:03:29,364 --> 01:03:42,144
+Şimdi gelelim algoritmanın beşinci adımına göre. Şimdi algoritmanın beşinci adımı şunu söylüyordu, hatırlıyorsunuz. Şu ifadeyi söylüyordu. Ben burada VİT yerine şunu yazabilir miyim?
+
+213
+01:03:42,144 --> 01:03:48,764
+Bakın, şuradaki VİT yerine şunu yazabilir miyim? Yazabilirim.
+
+214
+01:03:49,396 --> 01:04:14,115
+Peki buradaki VİT-1 yerine de yine bunun T-1'li hallerini yazabilir miyim? Yazabilirim. En sonunda ben bunu sona kadar devam ettirirsem şöyle bir şey elde edeceğim. Nasıl bir şey? Vİ üzeri 1, yani en son adım artık, çarpı küçük T'den büyük T'ye kadar beta T üzeri 1 eksi işte HTX'i eksi Yi.
+
+215
+01:04:17,619 --> 01:04:20,439
+Dİ eşit olduğunu söyledik en başta.
+
+216
+01:04:21,199 --> 01:04:21,679
+Bunun eşit.
+
+217
+01:04:22,279 --> 01:04:30,459
+Yani buradan VTI artı birin şu ifadeye eşit olduğunu göstermiş olduk.
+
+218
+01:04:31,899 --> 01:04:36,459
+Şimdi eşitlik 16'daki Dİ ifadesi ince örneğin en başlık seçilme olasını göstermekte.
+
+219
+01:04:37,099 --> 01:04:40,379
+VTI artı bir ifadesi ise algoritma bittiğinde ince örneğin ağırlığını gösteriyor.
+
+220
+01:04:40,379 --> 01:04:43,379
+Şimdi bütün ağırlıkların hepsinin hepsi...
+
+221
+01:04:44,052 --> 01:05:09,992
+Sıfıra büyük eşitler. O halde ben şunu yazabilir miyim? Bu ne demek? Ona bakalım. Ve ne kadar Vt artı bir büyüktür? Şundan. Bu ne? Hangi i'lerden bahsediyor? Bakın hangi i'ler? Bütün i'lerden bahsetmiyor. Bazı i'lerden bahsediyor. Hangi i'ler bunlar? Hfx'nin y'ye eşit olmadığı. Bu ne demek?
+
+222
+01:05:14,356 --> 01:05:38,476
+Fx'i y'ye eşit değilse bu ne demektir? Hatalar. Hatalı olan örneklerin ve t artı birlerinin toplamı ve t artı birinin hepsinden daha küçük değil mi? Çünkü zaten hepsi pozitif ya. Dolayısıyla bir de doğru yapılanlar var, onların da ağırlıkları var. Dolayısıyla bu ifade bundan daha büyüktür. Yazabiliriz.
+
+223
+01:05:40,019 --> 01:05:55,519
+Yani son adımda tüm örneklerin ağırlıklarının toplamı, HF'nin hata yaptığı örneklerin ağırlıklarının toplamından büyük. Şimdi eşitlik 16'yı kullanalım. Şimdi şuradaki için şu ifade bakın, şu ifade.
+
+224
+01:06:07,635 --> 01:06:13,835
+1 eksi halini, bunları çarpım halinde 2 tane parça haline ayıralım. Şunu kullan, şunu elde edelim.
+
+225
+01:06:14,715 --> 01:06:20,855
+Şimdi bunu elde ettikten sonra işte asıl burada eşitlik 13 ya da 15 zaten aynı şeyi ifade ederdi. Onu kullanacağız.
+
+226
+01:06:20,855 --> 01:06:29,855
+Yani şuradaki şu bulduğumuz şeyi kullanacağız. Ne o? Bakın şurası şuraya eşit değil mi? Bakın şurası şuraya eşit.
+
+227
+01:06:33,523 --> 01:06:56,103
+Ne yazabilirim? Şu ifade büyüktür şu ifade. Bakın şurası zaten burada duruyor. Bunun yerine, şurada gördünmüş olduğunuz şunun yerine, bakın burası, bunun daha büyük olduğunu gösteriyoruz şurada. Şunu yazabilirim.
+
+228
+01:06:56,532 --> 01:07:21,711
+Bu da, şurası beta, burası beta üzeri eksi 1 bölü 2, o zaman burası 1 bölü 2, değil mi? Şu. Şimdi biz teoremde HF'nin hatasını nasıl tanımladık? HF'nin hatasını. Ne dedik? Hata yapılan örneklerin D'leri toplama, değil mi?
+
+229
+01:07:22,228 --> 01:07:39,228
+Hata yapılan örneklerin değerlerinin toplamına epsilon dedik. O zaman bu şuradaki yazdığımız şey. Bakın burası da hiç şey yok zaten. Yani şurayı düşünürseniz burada herhangi bir şey var mı? İ var mı? Yok. Yani burası...
+
+230
+01:07:39,284 --> 01:07:53,284
+Dışarıda bir şekilde düşer. Yani bu ikisi birbirine çarpım halindeler. Ayrık ayrık çarpım halindeler. Dolayısıyla şunu dışarıya alabilirsiniz. Bunu dışarıya aldığınızda bu içerisi, şurası nedir arkadaşlar? İçerisi dedim sadece şu kısımdan bahsediyorum.
+
+231
+01:07:54,284 --> 01:08:04,164
+Seştiremedim türlü. Yazarken iç içe yazmışım. Neyse, şu kısım, şu di'lik kısım bizim asıl neyimizdi arkadaşlar? Hatamızdı değil mi?
+
+232
+01:08:05,172 --> 01:08:30,832
+Hatayı hatırlayalım. En başta şu anda kaldığımız yeri unutmayalım. 6. sayfadayız. Bakın hatayı ne olarak tanımladık biz? Hatalı olan örneklerin değillerinin toplamı. E buradaki ne? Şurada bulduğumuz şey. Pardon. Hatalı olan örneklerin değillerinin toplamı. O zaman burası hepsi.
+
+233
+01:08:33,363 --> 01:08:58,083
+O halde arkadaşlar, şunu yazıyoruz. Şu ifade. Şimdi bu nereden çıktı? Şimdi burasını bulduk. Burası aslında nereden geldi? Şuradan geldi. Bu da neye eşitti? Şuna eşitti. Bu da şundan küçüktü değil mi? O zaman ben şunu yazabilirim.
+
+234
+01:09:02,228 --> 01:09:12,667
+Çünkü şurası şu ifade, bakın şurası, şurası zaten. Burası da buradan küçük. Dolayısıyla ben gidip bunu ifade edebilirim.
+
+235
+01:09:12,747 --> 01:09:17,967
+Şimdi epsilon ile alakalı güzel bir şeyimiz var elimizde artık. İfademiz var.
+
+236
+01:09:18,927 --> 01:09:25,148
+Şimdi eşitlik 10'u kullanalım diyor. Şimdi eşitlik 10 nerede? Bakalım eşitlik 10'umuzu bulalım.
+
+237
+01:09:28,587 --> 01:09:29,648
+Eşitlik 10.
+
+238
+01:09:34,163 --> 01:09:35,819
+Atalım.
+
+239
+01:09:45,524 --> 01:10:11,024
+Eşitlik 10 bu. Eşitlik 10'u kullanalım demişiz. Eşitlik 10 şöyle bir şey diyor. V, i, t artı 1 küçüktür şundan diyor. O zaman ben şu eşitliğin içerisinde şu iki tane parça var birbiriyle çarpım halinde olan. Bu parçalardan bir tanesinin yerine ondan daha büyük olan şunu yazabilir miyim? Bakın şunun yerine şunu yazacağım.
+
+240
+01:10:13,747 --> 01:10:29,787
+Eşitlik bozulur mu? Bozulmaz değil mi? Bakın bundan daha büyük olan bir şeyi buraya koyarsam ben bu eşitliği aynen tutabilirim. Dolayısıyla epsilon küçüktür. Şu ifadeyi yazmışım. Sonra şurasını da buraya koymuşum.
+
+241
+01:10:31,828 --> 01:10:47,948
+Peki, bu ifadeyi düşünürsek, bu da çarpım durumunda olduklarından dolayı bu beta t adımdaki beta üzeri eksi 1 bölü 2. Ben bu eksi 1 bölü 2'yi içeriye alayım, aşağıya indireyim. Dolayısıyla şuna eşit olarak bunu yazabilirim.
+
+242
+01:10:48,688 --> 01:10:57,088
+Şimdi bu ne? Bakın bir epsilon değeri bulduk. Bu epsilon için bir üst sınır tanımladık şu anda arkadaşlar. Bu üst sınır iki şeye bağlı.
+
+243
+01:10:58,292 --> 01:11:14,891
+Şimdi algoritmanın hatasının üst sınırını bulmak isteriz. Üst sınırını minimum yapmak isteriz değil mi? Bir algoritmanın hatasının üst sınırını minimum yapmak isteriz. Yani üst sınırı yüksek yaparsanız algoritmanızın kötü bir şey olur. Üst sınırı ne yapmanız lazım? Mümkün olduğunca aşağı indirmeniz lazım.
+
+244
+01:11:15,283 --> 01:11:38,123
+Şimdi bir fonksiyonun minimumu bulmaya çalışıyoruz. Üst sınırın minimumunu bulmaya çalışıyoruz. Elimizde bir fonksiyon var. Bu fonksiyon bir algoritmanın üst sınırını ifade ediyor. Ve bizim amacımız ne? Bu üst sınırı minimum yapmak. Dolayısıyla o fonksiyonun minimumunu bulmak istiyoruz. Bir fonksiyonun minimumunu bulmak için ne yapıyorduk arkadaşlar? Temel olarak türevini alıp sıfıra eşitleriz değil mi?
+
+245
+01:11:38,739 --> 01:11:59,019
+Şimdi burada bizim üst sınır fonksiyonumuz şu ifade. Burada iki tane değişken var. Bunlardan bir tanesi beta t, bir tanesi epsilon t. Beta t'imiz ve epsilon t'imiz var. Şimdi et örneklerden gelen bir değer. Yani et'yi bizim belirlememiz mümkün değil. Fakat beta bizim kendimizin belirleyeceği bir şey. Beta'ya dair hiçbir şey biz daha tanımlamadık.
+
+246
+01:12:00,115 --> 01:12:21,296
+Beta'yı o zaman, beta'ya göre biz ne yapabiliriz? Türev alabiliriz. Tamam, şeye göre değil. Yani absur çünkü o zaten bilinen bir şey. Biz burada betanın değerinin ne olması gerektiğini bulmaya çalışıyoruz. Ne için? Bu şu anda işaretli olan üst sınır fonksiyonunun minimum olması için.
+
+247
+01:12:24,404 --> 01:12:30,404
+Büyük T tane çarpım var. Ve bu çarpımların hepsi pozitifler. Bunların hepsini...
+
+248
+01:12:32,148 --> 01:12:55,988
+Pozitif olduğundan dolayı sadece çarpımın içini düşünüp buradan hareket etsek olur mu? Olur. Neden? Çünkü zaten hepsi çarpım durumundalar. Herhangi bir tanesini minimum yapan bir şeyi tanımlasak zaten hep çarpımlarında minimum yapan bir şeyi tanımlamış oluruz. Dolayısıyla sadece içine odaklanalım. Yani şu çarpıma değil de sadece içine odaklanalım. Şimdi içinin beta t'ye göre türevinden bahsediyoruz. Şunun beta t'ye göre türevinden bahsediyoruz.
+
+249
+01:12:55,988 --> 01:12:58,087
+Şimdi bunu şu şekilde de yazabilirsiniz.
+
+250
+01:12:58,868 --> 01:13:24,548
+Bu da aslında beta'ya bağlı iki tane fonksiyon. Bir tanesi şu, bir tanesi de şu değil mi? İki tane fonksiyondan bahsediyoruz. Yani fx çarpı gx gibisinden düşünün. İki fonksiyonun çarpımının türevini hatırlarsanız nasıldı? Birincinin türevi çarpı ikincinin kendisi artı ikincinin türevi çarpı birincinin kendisiydi. O zaman ben bunu yaparsam, iki fonksiyonun çarpımının türevini alırsam şuradaki gibi şunu buluyorum.
+
+251
+01:13:25,332 --> 01:13:41,372
+Ve bunu alıp sıfıra eşitlersem, bakın şu ifadeyi bulup sıfıra eşitlersem, bunu elde ediyorum. Burada biraz işlem, biraz aritmetik yaparak en sonunda şöyle bir şey buluyoruz. Bakın, beta t eşittir, epsilon t bölü 1 eksi epsilon t.
+
+252
+01:13:52,564 --> 01:14:01,043
+Ne yazmalıyım? BTT'yi ne olarak seçmeliyim? Bu olarak seçer isem ben bir sınırı minimum yaparım.
+
+253
+01:14:03,203 --> 01:14:09,384
+Peki bu bilgiyi bulduk. Çok enteresan bir şekilde bu nerede de geçiyor arkadaşlar bakın.
+
+254
+01:14:13,235 --> 01:14:23,476
+Algoritmanın içerisinde bakın. Görüyor musunuz? Zaten algoritma, yani birazdan ona geliriz, yine konuşuruz yorumlar kısmında.
+
+255
+01:14:27,007 --> 01:14:46,247
+Sıfırdan oluşturulmuş bir şey değil. Deminki analizleri yapa yapa bu algoritma oluşturulmuş bir şey. Yani burada bu değer kafadan ben bunu şu şekilde atayım diye olan bir seçim değil. Bu demin gördüğümüz analizin sonucunda ortaya çıkan bir seçim.
+
+256
+01:14:53,779 --> 01:15:17,100
+Bunu yaptım. O zaman bunu ben alayım, kullanayım. Yani bizim eşitliğimiz üst sınırımız epsilon küçüktür. Şurası. Ben buradaki her bir beta t yerine epsilon t bölü bir eksi epsilon t yazarsam şöyle bir şey de ediyorum.
+
+257
+01:15:18,771 --> 01:15:42,352
+Bununla birazcık aritmetik yaparsak, burada adımlarını vermişim zaten. Şuna geliyoruz. Bunun üzerinde aritmetik yaparsanız şuna elde ediyorsunuz. Bu gördüğümüz şey ne arkadaşlar? Bizim en başta, pardon en başta değilim, teorem 6'da göstermek istediğimiz şey. Tamam.
+
+258
+01:15:45,043 --> 01:15:53,224
+En nihayetinde bu kadar işlem sonucunda şurada görmüş olduğumuz eşitliğe vardık.
+
+259
+01:15:53,224 --> 01:16:02,804
+Şimdi, nasıldı arkadaşlar? Biraz yoğunlaşmak gerekiyordu. Biraz yorucu bir süreçti belki ama.
+
+260
+01:16:03,152 --> 01:16:14,931
+Şimdi benim anlatım hızımla bunları tam olarak arka arkaya buradan bu çıktı, buradan bu çıktı, buradan bu çıktı şeklinde tam olarak idrak etmeniz mümkün değil tabii ki.
+
+261
+01:16:15,672 --> 01:16:20,771
+Bunu defalarca okuya okuya anca kavrayabilirsiniz zaman içerisinde.
+
+262
+01:16:20,771 --> 01:16:24,771
+Ama genel hatlara nasıl bir şey yaptığımızı...
+
+263
+01:16:24,800 --> 01:16:42,620
+Anlamışsınızdır. Yani genel hatlarımızda bir algoritmanın üst sınırını için, hatasının üst sınırı için bir fonksiyon tanımladık. Bu fonksiyonun değerinin şurada gördüğümüz değer olduğunu bulduk. Üst sınırımızın şu olduğunu gösterdik.
+
+264
+01:16:43,720 --> 01:16:46,100
+Algoritmaların üst sınırını göstermek.
+
+265
+01:16:47,283 --> 01:17:00,203
+Dediğim gibi bu algoritmaların aslında neyini ifade ediyor? Hızını ifade ediyor. Converge rate'ini ifade ediyor. Ne kadar hızla hatayı düşürebildiklerini, ne kadar hızla loss'u indirebildiklerini gösteriyorlar.
+
+266
+01:17:00,203 --> 01:17:11,203
+Bu analiz, bu paper oldukça ünlü bir paper'dır. Yani makine öğrenmesinin teorisi konusunda oldukça önemli bir...
+
+267
+01:17:12,340 --> 01:17:23,979
+Külometre taşı olmuştur. Dediğim gibi bu oldukça oyunu değiştiren bir şeydi o zaman 97 yılı için.
+
+268
+01:17:24,920 --> 01:17:28,059
+Şimdi algoritma tek seferde oluşturmamış. Bunu fark etmişsinizdir.
+
+269
+01:17:28,059 --> 01:17:34,020
+Yani algoritmanın hatasının minimum olması için teoriden ifade alınmış. Teori algoritmaya yol göstermiş.
+
+270
+01:17:35,475 --> 01:17:53,995
+Teori ve algoritma birlikte geliştirilmiş. Şimdilerde yaygın olan deneme yanılma yoluyla değil. Neyse, ne demek istediğimi anlamışsınızdır. Peki bu teorem bize ne söylüyor? En son hatanın, bakın en son hatanın, yani şuradaki epsilon en son hata çünkü.
+
+271
+01:17:55,796 --> 01:18:22,676
+Tüm tekil öğrencilerin hatalarına bağlı oldu. Çünkü bakın burada küçük t, 1'den t'ye kadar değişiyor ve epsilon t, yani burada epsilon 1 de var, epsilon 2 de var. Bunların hepsine bağlılar. Yeni bir temel öğrenci geldiğinde bakın, yeni bir temel öğrenci topluluğa eklendiğinde üst sınırın şu şekilde şununla çarpıldığını, yani yeni bir temel öğrenci mesela t artı 1'inci eklenirse eğer, o t artı 1'in hatası da şu şuradaki epsilon t olursa.
+
+272
+01:18:23,699 --> 01:18:26,819
+Üst sınırının bununla çarpıldığını gösteriyor.
+
+273
+01:18:26,819 --> 01:18:34,600
+Şimdi tabii bu eşitliğin içerisinde iki üstü T gibi bir kısım var ki bu oldukça büyük bir değer değil mi?
+
+274
+01:18:35,059 --> 01:18:41,959
+Yani yüz tane olsa mesela sizin T'niz, yüz tane temel öğrenciniz olsa iki üzeri yüz gibisinden bir şey söylüyor.
+
+275
+01:18:42,340 --> 01:18:43,079
+Bu çok büyük.
+
+276
+01:18:45,652 --> 01:18:53,412
+Ama tabii yandaki çarpan, şu çarpan oldukça küçük bir şey. O aslında bunu bu kadar korkunç bir hale getirmiyor.
+
+277
+01:18:54,752 --> 01:19:01,291
+Şimdi tüm hataların, yani ET'lerin 1 bölü 2 olduğunu düşünelim. Tamam.
+
+278
+01:19:02,451 --> 01:19:04,051
+Yani şuradakilerin hepsi 1 bölü 2 olsun.
+
+279
+01:19:05,731 --> 01:19:06,672
+Küçük T.
+
+280
+01:19:07,188 --> 01:19:14,887
+1'den büyük t'ye kadar bütün et'ler 1 bölü 2 olursa bu algoritmanın üst sınırı ne olur arkadaşlar?
+
+281
+01:19:15,587 --> 01:19:20,548
+Bakın şimdi 1 eksi 1 bölü 2. O zaman burası 1 bölü 2. Burası ne?
+
+282
+01:19:22,208 --> 01:19:29,247
+1 bölü 2 çarpı 1 bölü 2 1 bölü 4. 1 bölü 4'ün kara kökü ne? 1 bölü 2 değil mi? Burası 1 bölü 2.
+
+283
+01:19:29,868 --> 01:19:31,648
+1 bölü 2 üzeri t.
+
+284
+01:19:32,724 --> 01:19:57,404
+Burası da iki üzeri t. O zaman burası ne oluyor? Bir olur. Yani algoritmanın üst sınırı bir diye bir şey çıkar. Bir ne demek? Bütün her şeyi yanlış yapmak demek. Yani eğer sizin buradaki et'iniz 0.5 yani 1.2'ye eşit ise sizin algoritmanızın çok da bir şey yapamayacağını aslında bu teorem bize söylüyor. Değil mi?
+
+285
+01:20:00,000 --> 01:20:16,079
+E'nin 1 bölü 2'den küçük olması lazım ki ancak bu anlamlı bir şeyler yapabiliriz. Çünkü 1 bölü 2 ve üstlü değerler için hatta daha büyük değerler için burası fırlayacaktır. Zaten şöyle bir durum vardır. Yani E'nin 1 bölü 2'den büyük olmasının anlamı ne demek?
+
+286
+01:20:16,851 --> 01:20:43,171
+Mesela 0.6. 0.6 hata yapmış örnekler üzerinde. O zaman hepsini ne yapabilir? Örneklerin %60'ına hatalı yapmış, yarısından fazlasını. O zaman zaten bütün hepsinin işaretini tersine çevirin. İki sınıflı bir problemimiz var çünkü, öyle düşünün. İki sınıflı bir problemimiz var. %60'ına hata yapmışsa bu çok saçma. O zaman bütün örneklerde vermiş olduğu tahminleri tersine çevirin. %40 hataya indirirsiniz değil mi o hatayı?
+
+287
+01:20:44,851 --> 01:20:55,832
+Yani epsilontenin 1 bölü 2'den daha büyük olması gibisinden bir şey ama 1 bölü 2'ye yaklaştıkça, öyle ifade edelim, buradaki üst sınır giderek büyüyor.
+
+288
+01:20:56,531 --> 01:21:01,711
+1 bölü 2'den uzaklaştıkça, yani aşağı doğru sıfıra doğru yaklaştıkça üst sınırı da o derecede küçülüyor.
+
+289
+01:21:05,711 --> 01:21:06,059
+Zaten...
+
+290
+01:21:06,131 --> 01:21:25,051
+Pratikte ders noklarında şeyi hatırlarsanız, epsilon t'nin 1 bölü 2'ye erişmesi durumunda algoritma zaten sonlanıyordu. Ondan sonrası için hiçbir şey yapıyordu. O adım da zaten işin içine katılmıyordu. Direkt o ana kadar üretilmiş olan, diyelim ki [öğrenci]'cı adımda.
+
+291
+01:21:25,555 --> 01:21:38,675
+K-1 tane şey oluşmuş olur. Temel öğrenciyi oluşturdunuz. K-1 tane. Şimdi kanca adımdasınız. Kanca adımda bir şey oluşturdunuz. Onun hatası 1 bölü 2.
+
+292
+01:21:39,444 --> 01:21:58,064
+Ve büyük bir şeyler çıktı diyelim ki. 1 bölü 2'den büyük olduğu anda o adımda oluşturmuş olduğunuz temel öğreniciyi ensemblin içerisine eklemiyorsunuz zaten. O ana kadarkileri ekliyorsunuz. Çünkü 1 bölü 2 üstleri ne yapacak? Bu aşağı doğru inişi durduracak. Daha kötü hale getirecek.
+
+293
+01:21:58,863 --> 01:22:05,744
+Peki, tüm hatalar 1 bölü 2'den küçük olursa ne olur? Burada farklı durumlar için bunu çizdirmişim. Yani şu aslında.
+
+294
+01:22:06,484 --> 01:22:32,264
+Şu üst sınırın değerini çizdirmişim. Öyle söyleyeyim. Şu ifadeyi t'nin kaç tane temel öğrenci var? Temel öğrenci sayısı ve hatanın üst sınırı şeklinden çizdirmişim. Bireysel hataların hepsi 1 bölü 3 olursa arkadaşlar, 1 bölü 3 yani 0.33333 şeklinde devam ederse şöyle bir iniş var. 1 bölü 4 olursa şöyle bir iniş var. Hepsi 1 bölü 2'den küçük eşit olursa.
+
+295
+01:22:32,819 --> 01:22:55,399
+Şöyle bir iniş var. Oldukça hızlı inişler olduğunu görüyorsunuz. Hızlı olmasının anlamı zaten algoritmanın hızlı olması demek. Eksponansiyel bir şekilde iniyor gördüğünüz gibi. Linear değil. Oldukça hızlı bir şekilde aşağıya düşüyor. Temel öğrenci sayısı arttıkça bu da algoritmanın oldukça yüksek bir hızı olduğunu gösteriyor.
+
+296
+01:22:55,775 --> 01:23:00,775
+Şimdi burada birkaç tane soru var. Bunları size bırakıyorum. Bunları inceleyin.
+
+297
+01:23:01,255 --> 01:23:06,056
+Örneklerin ağırlıklarını güncellemeyi çarpımsal değil de toplamsal yapabilir miydik?
+
+298
+01:23:07,496 --> 01:23:09,175
+Şimdi şeyi hatırlayalım.
+
+299
+01:23:11,296 --> 01:23:13,376
+Gradient descent algoritmasını hatırlayalım.
+
+300
+01:23:13,376 --> 01:23:20,056
+Gradient descent algoritmasında parametrelerin mesela vt artı bir eşittir.
+
+301
+01:23:23,891 --> 01:23:29,191
+Delta ya da Trev diyelim.
+
+302
+01:23:29,191 --> 01:23:32,191
+İşte Trev diyelim.
+
+303
+01:23:35,371 --> 01:23:36,371
+Los.
+
+304
+01:23:37,711 --> 01:23:38,731
+Değil mi? Böyle bir şey.
+
+305
+01:23:39,611 --> 01:23:42,191
+Şimdi burada bakarsanız ve...
+
+306
+01:23:42,228 --> 01:23:55,148
+T artı bir, VT'den bir şey çıkartılmasıyla, bir şey çıkartılmasıyla, ya da işte toplanmasıyla, burası eksi falan da olabilir, çok önemli, artı ya da eksi ile elde ediliyor değil mi?
+
+307
+01:23:55,148 --> 01:24:01,768
+Bakın, VT artı bir, VT'nin üstüne bir şey eklenmesi, çıkartılmasıyla elde ediliyor.
+
+308
+01:24:09,268 --> 01:24:15,167
+T çarpı bir şeylerle elde ediliyor. O bir şeyler nerede? Nerede o bir şeyler?
+
+309
+01:24:21,971 --> 01:24:22,811
+Nereye yazık olabiliyoruz?
+
+310
+01:24:25,351 --> 01:24:26,751
+Algoritmanın beşinci adım vardı ya.
+
+311
+01:24:27,492 --> 01:24:28,072
+Şurası işte.
+
+312
+01:24:34,676 --> 01:24:36,336
+Şu şekilde ediliyor.
+
+313
+01:24:41,171 --> 01:25:02,711
+Yani burada çarpımsal bir şey. Çarpılarak elde ediyor. Burada ise bir toplama, toplamsal bir işlem var. Acaba böyle bir şey yapabilir miydik bu aygörtmanın içerisinde? Çarpa çarpa değil de toplaya toplaya şuradaki gibi bir mekanizma da kurulabilir miydi? Soru bu. Ve bunu yaparsak acaba bunun etkisi ne olurdu? Bunlar düşünülebilir.
+
+314
+01:25:03,859 --> 01:25:23,219
+Peki, ikinci soru. Belli bir hata değerine ulaşmak için sisteme eklememiz gereken temel öğrenci sayısını bulabilir miyiz? Üst sınırı biliyoruz zaten. Bunu yapmak mümkün gibi gözüküyor tahmin edebileceğiniz gibi. Yani ben şu kadar hata yapmak istiyorum. Bunun için bana kaç tane temel öğrenci lazım? Bunu bulabilirsiniz.
+
+315
+01:25:24,159 --> 01:25:31,159
+AdaBoost saygıcına başka boosting algoritmaları var mı? Bunu sormuşum. Bunları dediğim gibi bu üç soruyu size bırakıyorum.
+
+316
+01:25:32,435 --> 01:25:52,215
+Peki. Şimdi arkadaşlar, teori yol gösterir dedik. Algoritma tasarlarken, yöntem mimarı geliştirirken. Ne yaparız arkadaşlar? Algoritma tasarlarken yeni bir yöntem mimarı geliştirirken. Şunu şöyle yapsak nasıl olur diye sorarız değil mi? Şunu şöyle yapsak nasıl olur diye sorarız kafamıza.
+
+317
+01:25:58,292 --> 01:26:14,971
+Olasılığı genelde düşüktür. Varsa yapmadan da cevabı bulabiliriz. Matematikte. Yani teorisi varsa elinizde. Çünkü şimdi şuna bakarsanız, şunu söyleyebilirsiniz. Bu algoritmaya temel öğrenici eklendikçe bu algoritmanın eğitim kümesi üzerindeki başarısı artar.
+
+318
+01:26:17,112 --> 01:26:24,712
+Arttırdıkça, temel öğrenci sayısını arttırdıkça bu algoritma hiçbir zaman ne almaz? Kötüleşmeye doğru gitmez. Eğitim kümesinden bahsediyoruz ama.
+
+319
+01:26:25,076 --> 01:26:47,315
+Hiçbir zaman kötüleşmeye doğru gitmez. Bunu çok rahat bir şekilde söyleyebiliriz. Yani temel öğrenci sayısı eklersen buna ne olur sorusunun cevabını bulmak için deney yapmanız şart değil. Burada. Bu neden böyle? Çünkü matematik olarak, teorik olarak bu zaten belli. Tamam mı? O yüzden yapmadan da cevabı bulabiliriz dediğim şey bu.
+
+320
+01:26:47,699 --> 01:27:06,100
+Örneğin yukarıda mesela hatalar birbirikten büyük olursa ne olursa olursa kolaylıkla cevap verebiliriz. Ama elimizde çok sağlam bir teori genelde olmaz. Genelde. Ama arkadaşlar burası önemli bence. En azından bir beklenti ya da bir açıklamaya sahip olmalıyız.
+
+321
+01:27:13,684 --> 01:27:30,623
+Acaba şunu şöyle yapsam ne olur diye bir şey aklınıza geldi. Bunu yapmadan önce bir beklentiye sahip olmanız ve bu beklentinin sebebine dair de bir açıklamaya sahip olmanız iyi bir şey olur.
+
+322
+01:27:32,244 --> 01:27:34,664
+Yani ben şurasını şöyle değiştireceğim.
+
+323
+01:27:35,155 --> 01:27:56,015
+Ve bu muhtemelen algoritmayı iyi yönde şöyle etkileyecek. Çünkü bir şeyler, şimdi bu söylediğiniz şeyler, yani bu beklentiniz ve açıklamanız yanlış bile olabilir. Bunda herhangi bir sıkıntı yok. Ama bir beklentiye ve bir açıklamaya sahip olmak, yani bu beklentinin sebebine sahip olmak oldukça önemli. Neden?
+
+324
+01:28:00,180 --> 01:28:19,460
+Doğru yoldasınız demektir. Yani teorik manada doğru bir şeyler yapıyoruz. Kafanızda sezgisel manada yani sezginiz, bunu şuradaki beklenti ve açıklama dediğiniz şey sezgiyle oluşturduğunuz bir şey olmalı. Matematikte oluşturmuş olsanız zaten denemenize bile gerek yok dediğim gibi. Ama sezgisel olarak bir şey ortaya koymanızdan bahsediyorum.
+
+325
+01:28:19,823 --> 01:28:46,724
+Çünkü bu gerçekleşirse sizin doğru çıkması önemli. Doğru yoldasınız. Beklentiniz gerçekleşmezse de o zaman aslında neyi yanlış düşündüğünüzü öğrenmiş olursunuz. Bu da çok önemli. Yani benim nasıl bir beklentim vardı? O beklenti belli varsayımlarla siz eriştiniz. Yani çünkü diyorsunuz şöyle şöyle şöyledir. İşte bu böyle olur. Bunun sonucu böyle olur. Ve bunun da sebebi şudur.
+
+326
+01:28:47,667 --> 01:29:05,527
+Ama siz bunu deniyorsunuz bir şekilde, denediniz ama yanlış çıkıyor. Yani düşündüğünüz gibi olmuyor. O zaman neyi yanlış düşündüğünüzü bilirsiniz. Ve bir sonraki beklentinizde buna göre şekillendirip deneyinizi ya da ona göre tasarlarsınız.
+
+327
+01:29:13,300 --> 01:29:32,819
+Deneyinizin sonucu doğru da çıksa, yanlış da çıksa, beklentiniz doğrulansa da yanlışlansa da bir şey öğrenirsiniz. Elinizde bir beklentiniz var ise. Beklentiniz veya açıklamanız olmadan yaptığınız deneyin, deneme yanılmayla, kör arama, sonucundan hiçbir ipucu elde edemeyiz.
+
+328
+01:29:34,868 --> 01:29:59,868
+Yani bir şey deniyorsunuz, olmadı. Başka bir şey. Yani bir sonraki adıma dair bize hiçbir şey vermez elimizde beklentimizin olmayışı. Ama beklentimizin olması ne söyler bize? Yanlış yoldasın, doğru yoldasın. Sizi bir şekilde yönlendirir. Tamam? Çok önemli olan kısmı burası. Bir beklenti ve açıklaması. Yani kesin teorik olarak bir şey olmasa bile bir şeyleri kafanızda düşünüp ben şunu değiştirdiğim zaman böyle...
+
+329
+01:30:00,000 --> 01:30:05,439
+Olur diye bir beklentiye sahip olmak size müthiş bir yön kazandıracaktır.
+
+330
+01:30:05,760 --> 01:30:07,760
+Kör arama yapmak zorunda kalmayacaksınız.
+
+331
+01:30:07,760 --> 01:30:16,840
+Çünkü kör arama denilen şey, bilirsiniz yapay zekanın ilk zamanlarında anlatırım ben derse.
+
+332
+01:30:17,216 --> 01:30:36,096
+Çok yorucu ve çok az bilgilendirici bir süreçtir. Nereye yakın olduğunuzu bilmezsiniz, sonucu yaklaştığınızı yaklaşmadığınızı bilmezsiniz. Ama sezgisel arma algoritmaları, ki sezgisel arma buradaki o sezgiyi onu ifade ediyor belki de, bu süreci çok daha hızlandırır, çok daha az yorucu hale getirir.
+
+333
+01:30:37,747 --> 01:31:02,427
+Kör bir aramada aralardaki ilişkinin bilinmediği noktasal veriler elde edilir. Ve genelleştirme herhalde bir imkan vermez. Ama öngörü, tahmin, hipotez yanlış bile çıksalar, çok önemli değil, noktalar arasını ve sonrasını, yani sonra ne yapacağınızı, bir sonraki adımda ne yapacağınızı, yönü nasıl ilerleyeceğinizi, planınızı, bir plan yapmanızı sağlar. Sonraki değişiklikleri, deney tasarımlarınızı nasıl yapacağımıza dair bize yol gösterir.
+
+334
+01:31:03,028 --> 01:31:19,867
+Tabii fizikte bu beklentinin ön görünen yeri çok çok daha büyük. Neden? Çünkü deneyler çok çok pahalılar arkadaşlar. Yani biliyorsunuz bu işte teorik fizik ve uygulamalı fizik birbirini oldukça şey yapar.
+
+335
+01:31:20,287 --> 01:31:30,667
+Yani bazıları teorik fizikçidir, bazıları uygulamalı fizikçidir. Teorik fizikçiler uygulama fizikçilere yol gösterir, uygulama fizikçiler teorik fizikçilere yol gösterir. Bunun böyle olması şart. Neden?
+
+336
+01:31:31,604 --> 01:31:55,764
+Çünkü uygulamalı fizikte kör aramayla bir şeyler yapmanız mümkün değil. Neden? Mesela makine öğrenmesinde diyelim ki bir tane deney yapmanın maliyeti, algoritmanızı alıp bir tane verikümesi üzerine çalıştırmaktan bahsediyorum. Düşük. Ama teorik fizikte pek öyle değil. Fizikte öyle değil daha doğrusu. Yalnız söyledim. Fizikte öyle değil. Fizikte bir tane deney yapmak için belki milyonlar harcamanız gerekiyor.
+
+337
+01:31:58,100 --> 01:32:13,819
+Burada bu önemli. Fakat aynı şey makine öğrenmesinde de büyük veri hükümelerinde büyük mimarları çalıştırırken bunlar da çok ucuz şeyler değiller günümüzde. Yani böyle birkaç gün çalışan mimarlar falan çok nadir şeyler değiller artık.
+
+338
+01:32:25,136 --> 01:32:49,796
+İlerleme yaklaşımının ben oldukça efektif olduğunu düşünüyorum. Deney yapmadan önce bir önceki deneye göre neyi değiştirdiğinizi, çok emin olmasanız da ne beklediğinizi ve bunu neden beklediğinizi mutlaka yazın. Yazın derken şunu böyle kırmızıyla yazayım hatta. Çünkü yazmak bir şekilde insanın düşüncelerini düzenlemesine yardımcı olur.
+
+339
+01:32:50,176 --> 01:33:14,936
+Yanlış da çıkabilir ama yazın demişim. Tekrardan yazın. Nelerden geçtiğinizin kaydı gelecek için yol gösterici olacaktır diye de bunu tamamlamışım. Buradaki yazıyı tamamlamışım. Burası birazcık böyle size hani teoriyi anlattığım, teori bizim aslında ne işimize yarıyor? Onu birazcık göstermeye çalıştım burada. Peki arkadaşlar, sorularınız varsa alabilirim.
+
+340
+01:33:25,811 --> 01:33:36,752
+Hocam, Boosting algoritmasında Teknik Üniversitesi arttığı zaman zaman olarak daha mı uzun sürüyor yoksa daha mı kısa sürüyor?
+
+341
+01:33:38,752 --> 01:33:43,992
+Yani algoritma daha mı hızlı çalışıyor daha mı yavaş çalışıyor? Teknik Üniversitesi arttığı zaman.
+
+342
+01:33:45,716 --> 01:33:54,275
+Tekil öğrenci sayısı arttığı zaman, 10 tane tekil öğrenciniz var, bir de 100 tane tekil öğrenciniz var. Bu ikisinin arasındaki farkı mı soruyorsun?
+
+343
+01:33:54,796 --> 01:33:55,155
+Aynen.
+
+344
+01:33:56,155 --> 01:33:58,956
+100 tane tekil öğrencinin varsa tabii ki daha uzun sürüyor.
+
+345
+01:33:59,536 --> 01:34:03,636
+İlk başta şeyleri insanın da bu konverge etme daha hızlı falan.
+
+346
+01:34:03,956 --> 01:34:04,935
+Orada ben zaman olarak sordum.
+
+347
+01:34:04,935 --> 01:34:10,355
+Hayır, konverge etmenin hızlı olmasından kastım ne? Buradaki şu grafik.
+
+348
+01:34:11,235 --> 01:34:12,935
+Şimdi bu grafik mesela diyelim ki...
+
+349
+01:34:13,300 --> 01:34:29,220
+Şöyle bir şeyi düşünün. Yani mesela lineal bir inmeyi düşünün. Temel öğrenci sayısının artışıyla hatanın üst sınırının lineal bir şekilde düştüğünü düşünün. Böyle bir düşmeye göre bu eksponansiyel bir şekilde çok daha hızlı bir şekilde hatasını düşürür.
+
+350
+01:34:29,560 --> 01:34:29,920
+Anladım.
+
+351
+01:34:30,280 --> 01:34:35,360
+Anlatabildim. Buradaki hikaye yok. Yoksa temel öğrenci sayısı arttıkça algoritmanın çalışma zamanı tabii ki artacak.
+
+352
+01:34:36,467 --> 01:34:43,887
+Ama buradaki düşen şey algoritmanın en son yani ensemble'ın hatasının düşüşünün eksponansiyel olması.
+
+353
+01:34:45,887 --> 01:34:46,087
+Tamam.
+
+354
+01:34:47,667 --> 01:34:52,427
+Evet, başka arkadaşlar soru var mı?
+
+355
+01:34:53,707 --> 01:34:54,728
+Kapatayım.
+
+356
+01:35:03,252 --> 01:35:05,192
+Peki. Evet.
+
+357
+01:35:05,551 --> 01:35:08,171
+Hocam, konuyla ilgili değil de genel olarak bir soru sorabilir miyim?
+
+358
+01:35:08,551 --> 01:35:08,952
+Buyur.
+
+359
+01:35:09,231 --> 01:35:10,511
+Bugünkü konuyla ilgili değil ama.
+
+360
+01:35:11,372 --> 01:35:11,792
+Tamam.
+
+361
+01:35:12,412 --> 01:35:23,131
+Makine öğrenmesinde hocam, şimdi regresyon kullanış için bir şey yaparsak, model oluşturuyorsak normalizasyon yapmamız gerekiyor mu?
+
+362
+01:35:24,212 --> 01:35:24,891
+Başta bir iyi.
+
+363
+01:35:24,891 --> 01:35:27,891
+Şimdi regresyon...
+
+364
+01:35:28,756 --> 01:35:45,516
+Normalizasyon yapman gerekip gerekmediği kullanacağın algoritmaya bağlı. Eğer ki SVM ya da yapay sinir ağları gibisinden bir şeyler kullanıyorsan oralar da gerekir. Ama karar ağacı gibi bir algoritma kullanıyorsan mesela gerekmez. Ya da one nearest neighbor kullanıyorsan gerekmez. Anlatabildim mi?
+
+365
+01:35:45,696 --> 01:35:51,816
+Peki hocam, normalizasyon yaptığımız zaman Y'leri de yapıyor muyuz normalizasyon? Sadece özelliklere mi yapıyoruz?
+
+366
+01:35:51,816 --> 01:35:53,396
+Ben Y'den bahsettim.
+
+367
+01:35:54,260 --> 01:36:01,119
+Yapay sinir halinde normalizasyon yapmanız süreci hızlandırır.
+
+368
+01:36:02,460 --> 01:36:12,239
+Ama şeyi anlamıyorum. Normalizasyon yaptığımız zaman mesela biz Y'de 100 bekliyorken bu sefer bize 0.8 gelmez mi?
+
+369
+01:36:13,359 --> 01:36:18,859
+Tamam ama normalizasyon yapmış olduğun bir de denormalizasyonunu da sen bir yerde tutucu olacaksın.
+
+370
+01:36:21,167 --> 01:36:24,667
+Sunduğu şeyi, sana verdiği şeyi sen tekrardan denormalize edeceksin.
+
+371
+01:36:24,948 --> 01:36:25,387
+Anladım.
+
+372
+01:36:25,488 --> 01:36:26,228
+Orjinal uzaya.
+
+373
+01:36:26,948 --> 01:36:27,387
+Anladım.
+
+374
+01:36:28,068 --> 01:36:28,368
+Tamam.
+
+375
+01:36:32,564 --> 01:36:34,904
+Evet, başka var mı arkadaşlar sorusu olan?
+
+376
+01:36:37,624 --> 01:36:41,324
+Hocam, geçen haftanın dersiyle alakalı bir soru soracaktım.
+
+377
+01:36:42,344 --> 01:36:42,864
+Sor.
+
+378
+01:36:43,404 --> 01:36:50,464
+Boosting, Distributed Sistemle çalıştırabilir demiştik ya, yani Parlel çalıştırabilir diye.
+
+379
+01:36:51,264 --> 01:36:54,944
+Hayır, çalıştıramaz dedik. Boosting.
+
+380
+01:36:56,684 --> 01:36:57,384
+Öyle mi dedik?
+
+381
+01:36:57,811 --> 01:37:02,492
+Evet, diğerleri çalıştırılabilir. Boosting çalıştıralamaz dedi. Çünkü her biri diğerini bekliyor diye.
+
+382
+01:37:04,291 --> 01:37:06,372
+Tamam, o zaman ben yeneşim konuştum.
+
+383
+01:37:06,631 --> 01:37:12,811
+Ama ben bir soru olarak şöyle bir şey sormuştum orada. Boosting algoritmasının...
+
+384
+01:37:13,363 --> 01:37:31,243
+Bazı yerlerini acaba paralleleştirebilir miyiz diye sormuştum. Belki orası sana şey gelmiştir. Ama genel olarak düşünürsek, Begging algoritması ya da Random Forest, Random Subspace gibi algoritmalar genel olarak paralleleştirebilirler. Yani her bir ağacı tamamen farklı mıkanlarda üretebilirsiniz.
+
+385
+01:37:31,923 --> 01:37:53,604
+Fakat Boosting'de eş zamanlı olarak üretebilirsin şeyde, belginkleri. Ama Boosting'de eş zamanlı olarak karar ağacını üretmek mümkün değil. Çünkü her biri burada gördüğünüz gibi bir öncekinin kararını bekliyor. O yüzden direkt bunu paraylaştirmek mümkün değil. Ama karar ağacının kendisinin bazı iç parçalarını belki paraylaştırmak mümkün olabilir. Tamam mı?
+
+386
+01:37:54,644 --> 01:37:55,824
+Peki hocam. Teşekkür ederim.
+
+387
+01:38:00,659 --> 01:38:01,819
+Evet, başka arkadaşlar?
+
+388
+01:38:06,963 --> 01:38:30,484
+Hocam bir sorum daha var. Bu da genel bir soru. Regresyon problemlerini aynı şekilde yapay sinir ağlarıyla oluşturduğumuz bir modelde başarıyı nasıl ölçeceğiz? Yani sonuçta sıfır veya birden çıkardım hani kaç tanesi doğru kaç tanesi yanlış diye bir şey söyleyemiyoruz. Sadece gerçek değerle bizim elde ettiğimiz arasında bir fark var.
+
+389
+01:38:30,484 --> 01:38:34,484
+Evet, minimum yani min square error.
+
+390
+01:38:36,083 --> 01:38:45,724
+Oradan çıkan sayı bizim 0.1 neyi ifade ediyor? Min square error 0.15 çıktı diyelim. Bu %15 başarı mı demek?
+
+391
+01:38:46,604 --> 01:38:57,423
+Hayır, hayır. %15 değil. Şimdi y'lerin normalize edilmediğine bağlı olarak bu değişir. Yani min square error ortalama karesel hata.
+
+392
+01:38:57,423 --> 01:39:02,583
+Yani hatalarının karelerinin ortalaması. Yani sen 0.15'lik bir şey yaptıysan.
+
+393
+01:39:02,931 --> 01:39:12,271
+Bu bir şeyin karesi, mesela 0.4'ün karesi, 0.4'lük bir ortalama hata yapmışsın demek.
+
+394
+01:39:13,912 --> 01:39:14,351
+Anladım.
+
+395
+01:39:15,211 --> 01:39:19,211
+Tamam, 0.4 büyüklüğünde bir hata yapmışsın demek.
+
+396
+01:39:23,131 --> 01:39:25,351
+Oransal bir şey değil o, anlatabildim mi?
+
+397
+01:39:30,420 --> 01:39:35,640
+İşte bulduğunuz yerlerin grafini çizdirektü üstünse ne kadar yakın olduğunu bakmak daha mı kullanışlı peki?
+
+398
+01:39:37,539 --> 01:39:45,820
+Min square error ile bunu zaten şey yapabilirsin ama evet aralarındaki korrelasyonu ölçmek aslında ama tahminlerle gerçekten arasındaki ilişkiyi görmek.
+
+399
+01:39:47,020 --> 01:39:48,320
+Tamamdır hocam, teşekkür ederim.
+
+400
+01:39:55,891 --> 01:40:22,231
+Peki arkadaşlar, başka soru yok herhalde. Şimdi önümüzdeki hafta, bir emin olayım tabii, şimdi bir saniye bakayım da ezbere konuşmayayım. Önümüzdeki hafta yapay sinir ağlarıyla kollektif öğrenmeye başlayacağız. Üçüncü ödevinizi vereceğim. Bir de kollektif öğrenme projelerini size tanıtacağım. Yani önümüzdeki hafta yoğun bir haftamız olacak.
+
+401
+01:40:22,739 --> 01:40:41,820
+Bu hafta bu kadarla bırakacağız. Biraz sindirin diye. Önümüzdeki hafta dediğim gibi yapay sinir ağları. İki hafta o konu devam edecek çünkü yapay sinir ağları ile alakalı olan kısım iki hafta devam edecek. Ödevimiz de önümüzdeki hafta gelecek. Peki arkadaşlar.
+
+402
+01:40:42,180 --> 01:40:43,800
+Hocam ödev konusu neydi acaba?
+
+403
+01:40:45,460 --> 01:40:47,119
+Ödev konusu yapay sinir ağları.
+
+404
+01:40:48,051 --> 01:41:08,911
+Olacak. Biraz önceden araştırma yapmak benim için iyi olacak da teşekkür ederim. Rica ederim. Yapay siniraları olacak bir devimizin konusu. Onun parametre hata uzaylarını inceleyeceğiz. Uzaylarda biraz keşif yapacağız. Tamam hocam. Teşekkür ederim.
+
+405
+01:41:10,287 --> 01:41:20,607
+Peki arkadaşlar, hepinize katılınız için teşekkür ediyorum. Bu haftaki dersimiz bu kadar. Önümüzdeki hafta aynı gün aynı saatte görüşmek üzere diyorum. Sağlıcakla kalın. Hoşçakalın.
+
+406
+01:41:20,607 --> 01:41:25,747
+İyi akşamlar hocam.
+
+407
+01:41:26,187 --> 01:41:31,227
+İyi akşamlar.
+
+408
+01:41:32,507 --> 01:41:33,347
+İyi günler hocam.
+
+409
+01:41:33,987 --> 01:41:34,607
+İyi günler.

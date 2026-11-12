@@ -1,0 +1,3587 @@
+1
+00:03:02,099 --> 00:03:06,319
+Merhaba arkadaşlar, sesim geliyor mu? Merhaba hocam, geliyorum.
+
+2
+00:03:14,644 --> 00:03:25,444
+Şimdi bu hafta karar ağaçları. Şunlar size ek okumalar. Onlara bakarsınız zaten.
+
+3
+00:03:27,724 --> 00:03:30,324
+Zaten video olduğunuzu düşündüğümüz şeyler.
+
+4
+00:03:32,024 --> 00:03:35,764
+Bu hafta karar ağaçlarına alacağız. Bir de birinci ödev sunumlarına bakacağız.
+
+5
+00:03:35,764 --> 00:03:39,764
+İlk önce ben karar ağaçlarını anlatayım. O bittikten sonra...
+
+6
+00:03:40,496 --> 00:03:45,496
+Geri kalan zamanımızda ödev sunumlarına ayırırız. Bu şekilde ilerleriz.
+
+7
+00:03:46,915 --> 00:03:49,396
+Tamam. Şunu kapatalım.
+
+8
+00:03:55,635 --> 00:03:56,115
+Açalım.
+
+9
+00:04:15,443 --> 00:04:22,443
+Şimdi öncelikle nasılsınız, iyi misiniz? Bir soralım halinizi, hatırınızı.
+
+10
+00:04:25,103 --> 00:04:35,884
+Evet, ödevleri yaptınız mı arkadaşlar? Ben baktım, yapanlar vardı, gördüm ama çok da büyük bir oran değildi herhalde.
+
+11
+00:04:37,324 --> 00:04:38,863
+Hocam ben bazı kısmını yapamadım.
+
+12
+00:04:40,692 --> 00:04:45,312
+Bazı kısımlar ne yapamadın? Tamam. Başka? Aynı durumda olanlar mı bir kısmını yapabilir?
+
+13
+00:04:45,812 --> 00:04:49,992
+Hocam ben de yaptım ama çok anlamadım yani. Doğru mu yanlış mı yaptın?
+
+14
+00:04:51,091 --> 00:04:53,272
+Doğru mu yanlış mı yaptın? Anlamadım.
+
+15
+00:04:53,292 --> 00:05:04,471
+Ben de yapmak çok küçük bir kısmını yapabildim. Ama sıfırdan büyüktür her pozitif sayı diye düşünerek gönderdim yani sizin takdiriniz artık.
+
+16
+00:05:05,043 --> 00:05:07,443
+Doğru düşünmüşsün. Evet.
+
+17
+00:05:07,963 --> 00:05:11,644
+Hocam, PCI, TSN kısmını anlamamışım.
+
+18
+00:05:13,443 --> 00:05:16,264
+Niye sormadın Umarım?
+
+19
+00:05:17,264 --> 00:05:22,903
+Hocam, ders zamanında anlamadığım farkında değil ben. Bilmiyordum PCI'nin ne olduğunu. Sonra araştırdım.
+
+20
+00:05:24,372 --> 00:05:33,351
+Hayır, hayır. Ben onu demedim. Dersten sonra ödevi yapmaya başladığında anlamadığını fark ettiğinde niye sormadın? Onu soruyorum.
+
+21
+00:05:33,971 --> 00:05:36,112
+Hocam sizi neydatmak istemedi.
+
+22
+00:05:37,091 --> 00:05:37,271
+Niye?
+
+23
+00:05:38,271 --> 00:05:40,292
+Bilmiyorum hocam. Bir sebebi yok şu an.
+
+24
+00:05:43,532 --> 00:05:45,552
+Anlamadığınız bir şey olunca sorun arkadaşlar.
+
+25
+00:05:46,772 --> 00:05:48,451
+Hocam ben [öğrenci].
+
+26
+00:05:48,884 --> 00:05:55,104
+Hocam ben de yoğun bir hafta geçirdim. [kişisel bilgi]
+
+27
+00:05:56,484 --> 00:05:57,524
+Geçmiş olsun.
+
+28
+00:05:57,884 --> 00:06:04,104
+Ben yine hocam hafta sonu göndermeye çalışacağım size ödevi ama not kaygısıyla değil. Sadece hatam yanlışım varsa.
+
+29
+00:06:05,004 --> 00:06:08,384
+Onun için bilginiz olsun sadece o kadar.
+
+30
+00:06:08,704 --> 00:06:10,624
+Tamam, tamam. Teşekkürler [öğrenci].
+
+31
+00:06:11,963 --> 00:06:13,204
+Evet, başka?
+
+32
+00:06:14,324 --> 00:06:38,403
+Ben de birazcık denedim hocam. İş olmadığında biraz zor oldu ama biraz vakit ayırmaya çalıştım. Fonksiyon bulma olaylarında takıldım. Ondan sonra da bir daha kaldı. Önce bir gradient senti bir implement edeyim dedim. Sonra fonksiyon lazım dedim buna. Fonksiyon kısmında buna uygun fonksiyonu nasıl bulurum diye böyle aradım aradım. Ondan sonra kaldım.
+
+33
+00:06:40,596 --> 00:06:42,776
+Çok başlarda kalmışsın [öğrenci].
+
+34
+00:06:43,776 --> 00:06:51,836
+Diğer kısımlar o kadar ürkütmüyordu açıkçası beni. Çünkü az çok hayal edebiliyordum ne yapacağımı ama ilk başta öyle kalınca bir daha kaldı yani.
+
+35
+00:06:52,596 --> 00:06:55,716
+Hocam o kısım benim de iki günümü acadı. Fonksiyon bulma kısmı.
+
+36
+00:06:58,175 --> 00:07:05,276
+Yani sonuçta bir tane loss fonksiyonu bulmanızdan bahsediyorduk.
+
+37
+00:07:06,644 --> 00:07:29,283
+Ne bileyim, ben olsam şöyle bir şey yapabilirdim. İki boyuttakilerde çalışır hale getirdim ilk önce işi. İki boyutlu dost fonksiyonlarında. Ondan sonra giderek geliştirdim. İki boyuttakini zaten vardı elinizde. Onun üzerinde bir sürü fonksiyonu tanımadık zaten. Konveks konveks olmayan.
+
+38
+00:07:29,843 --> 00:07:34,183
+Daha sonra onu çok değişkenli hale getirmek korkunç zor bir şey olmaz diye düşünüyorum.
+
+39
+00:07:34,283 --> 00:07:37,803
+Yani ne bileyim, şimdi mesela biz konveks fonksiyon olarak neyi verdik?
+
+40
+00:07:37,864 --> 00:07:40,384
+Çok basit olarak düşünürseniz, y'e eşittir x kare.
+
+41
+00:07:40,564 --> 00:07:46,043
+Mesela bu çok en temel şey, nasıl söyleyeyim?
+
+42
+00:07:47,303 --> 00:07:48,423
+Konveks fonksiyon.
+
+43
+00:07:49,144 --> 00:07:54,004
+İşte yani iki değişkenlisi bunun düşünürseniz, x1'in karesi artı x2'nin karesi.
+
+44
+00:07:54,387 --> 00:07:59,387
+İşte bir kürenin yarısı gibisinden bir şey oluyor tam bu aslında düşünürseniz.
+
+45
+00:08:00,387 --> 00:08:06,387
+İşte üç boyutlu sürü düşünürseniz o zaman x1'in karesi artı x2'nin karesi artı x3'ün karesi.
+
+46
+00:08:06,387 --> 00:08:09,387
+Mesela bu da bir konveks fonksiyon olacaktır.
+
+47
+00:08:09,387 --> 00:08:14,387
+İşte ona kadar götürürseniz mesela bir tane konveks fonksiyon çıktı ortaya.
+
+48
+00:08:14,387 --> 00:08:19,387
+Yani her birinin karelerinin toplumu mesela çok basit bir konveks fonksiyonu değil mi?
+
+49
+00:08:19,891 --> 00:08:46,892
+Bununla alakalı ben de bir araştırma yaptım hocam. Baya bir şey yapınca chatten gönderdim. Şöyle bir site var. Bu sitede bir sürü yüze yakın fonksiyon var. Hepsi de çok boyutlu olanlar da var. Hatta yanında optimizasyon edilebilir mi veya ne kadar optimize edilebilir mi ama ait bir rank değeri de var. Hangi zonlukta diye. Rusty gibi mesela veya Rosenberg.
+
+50
+00:08:47,412 --> 00:08:49,652
+Onlar zorlar herhalde değil mi?
+
+51
+00:08:50,392 --> 00:09:10,032
+Özellikle Rosenbrock baya zor hocam. Ben de oradan faydalandım aslında. Chatten gönderdim. İsterse arkadaşlar da bakabilirler oradan. Yüze yakın yaklaşık fonksiyon var orada. Multidimensional olanlar da zaten yazıyor yanında. Veya konveks mi değil mi onu da yazıyor.
+
+52
+00:09:11,572 --> 00:09:36,711
+Hesiyan matrislerinin aygün velilerine bile baktım gerçekten doğru değil mi diye. Pozitif defini çıktığı için konveks oluyor veya çıkmadığı için non-konveks oluyor diye. Ben de yaklaşık dört gün falan araştırdım ama dört tam günümü aldım ödev yapmak ama benimki de tam olarak bitmedi ama bazı yerleri eksik kaldı. İstediğim gibi olmadı tam.
+
+53
+00:09:37,268 --> 00:09:42,448
+Peki, peki. Teşekkürler [öğrenci]. Paylaşım için de.
+
+54
+00:09:43,867 --> 00:09:45,008
+Hocam bir sorum olacaktı.
+
+55
+00:09:45,888 --> 00:09:46,208
+Tabii.
+
+56
+00:09:46,788 --> 00:09:54,208
+Bu konveks şeyin alfabeta değerleri falan kullanıyorduk. Fonksiyon konveks midir, değil midir diye.
+
+57
+00:09:56,307 --> 00:10:00,000
+Konveks midir, değil midir diye alfabeta değerleri mi kullanıyorduk?
+
+58
+00:10:00,000 --> 00:10:06,819
+Alfa çarpı fx bir artı beta çarpı fx iki falan büyük eşittir. Hatırın.
+
+59
+00:10:07,539 --> 00:10:11,440
+Onlar konveks ya da değil değil, lineer ya da değil onlar.
+
+60
+00:10:13,823 --> 00:10:19,223
+Ben o şekilde konveks bulmaya çalıştım da fonksiyonu. Umarım yanlış olmamış.
+
+61
+00:10:19,243 --> 00:10:22,503
+Orada yazmıyor mu linear olup olmadığı falan diye?
+
+62
+00:10:22,503 --> 00:10:29,203
+Sanki ben internetlerde baktım da bu tarz bir konveks durumu vardı. Böyle bir fonksiyon yazıp şey...
+
+63
+00:10:29,203 --> 00:10:39,443
+Yani şöyle, hani linear fonksiyonların o manada düşünürsen, parametreye göre linear bir şey yazarsan, onun loss fonksiyonu konveks olur, doğru.
+
+64
+00:10:39,956 --> 00:10:42,855
+Orada bir şey yok, anormal bir durum yok.
+
+65
+00:10:44,016 --> 00:10:44,395
+Peki.
+
+66
+00:10:51,028 --> 00:11:15,807
+Evet, [öğrenci] ne demiş? Bir de yeni konular için matematiksel altyapı gereksinimleri konusunda sorum olmuştu. Evet, bu ödevi yapmak için nelere ihtiyaç duydunuz benim derste anlatmadığım? Öyle soralım size. En azından belli bir seviyeye ilerleyenler bir şeyler söyleyebilirler ya da takılanlar nerelerde takıldıklarını söyleyebilirler.
+
+67
+00:11:17,620 --> 00:11:18,059
+Tabii.
+
+68
+00:11:18,480 --> 00:11:26,380
+Ücreti hocam, az önceki konuştuğumuz muhabbet, fonksiyon bulmadan en son ben de internetten hazır optimizasyon fonksiyonlarını gördüm.
+
+69
+00:11:26,940 --> 00:11:29,019
+Oradan ilerledim optimizasyon fonksiyonu olarak.
+
+70
+00:11:29,539 --> 00:11:33,940
+Bu kısım ben iki günüm falan almıştı.
+
+71
+00:11:33,940 --> 00:11:38,940
+Bu PCA, işte TSN'de de hep internetten başladığımız zaman...
+
+72
+00:11:39,251 --> 00:11:50,091
+Elimiz eğer bir ver hükümesi varsa onun üzerine Pseq'i uygulamışlar. Ben nasıl uygulayacağımı bulamadım. O kısım beni çok yordu. O kısmı yapamadım yani.
+
+73
+00:11:50,791 --> 00:11:58,652
+Yani temelde kafamızdaki şey şuydu. Sonuçta bir DOS fonksiyonu var. Bu DOS fonksiyonunda herhangi bir noktadan başlıyoruz değil mi?
+
+74
+00:11:59,152 --> 00:11:59,371
+Evet.
+
+75
+00:11:59,371 --> 00:12:06,731
+Bir noktadan başlıyoruz. Ondan sonra bir sonraki noktaya ilerliyoruz. Bir sonraki noktaya ilerliyoruz. Bir sonraki noktaya. En sonunda işte X Epoch mesela ilerlediğimizi düşünelim.
+
+76
+00:12:07,187 --> 00:12:25,827
+Bizim elimizde x tane ne olacak? Değer olacak değil mi? Evet. Ve bunların her biri kaç boyutlu olacak? 10 boyutlu. 10 boyutlu olacak. 10 boyutlu noktalar değil mi? Bunun üzerine işte TSN ya da PC uygulayacaksınız. Ben yanlış anlamışım bu olayı.
+
+77
+00:12:26,707 --> 00:12:43,927
+Anladım, anladım. Yani sonuçta 10 boyutlu 2 boyutluya indirgeyip oradan bir yörüngeyi görmek, yani nasıl bir yol izliyor, onu böyle çıkartmaya çalışmak, farklı optimizasyon algoritmaları nasıl hareket ediyorlar. Biz şimdi 2 boyutta onları gördük nasıl hareket ettiklerini kabaca değil mi?
+
+78
+00:12:43,927 --> 00:12:53,927
+Ama acaba bunlar 10 boyuta geçtiğimizde de yine böyle benzer bir şekilde mi hareket ediyorlar yoksa farklılaşıyorlar mı? Birazcık onları görmeniz, araştırmanız içindi.
+
+79
+00:12:54,707 --> 00:13:13,387
+Hocam şöyle, takılım nokta şurasıydı. Şimdi PDF'de şey yazıyordu. 4 tane fonksiyon olduğu için 4 tane PCI uygulayın diyordu. Ben toplamda 4 tane PCI olması için dedim. Çünkü her birbirine gradient descent, adam optimizer falan uyguluyoruz ya.
+
+80
+00:13:13,908 --> 00:13:37,836
+Bunlar da o zaman 4 piseyi değil, her bir uygulama için 4 tane olması lazım. Toplamda bir ayına 60 tane piseyi olması lazım diye düşünün. Öyle olsaydı orada 4x5 gibi bir değer yazardık. Öyle bir farklı matematiğe girince dedim herhalde hocam bunu istemiyor. Hani x1'ler, x2'ler çizilmek istemiyor. Biz kendimiz bir veri üzerinden falan oluşturacağız. O kısmı tam anlamadım şimdi, yapamadım.
+
+81
+00:13:38,004 --> 00:13:48,443
+Yani şimdi anlamadığınız şeyler, yani şimdi burada şunu bir netleştirelim. Geçen hafta da söylemiştim, bu ödevi çok kolay böyle taktiğe yapabileceğiniz bir ödev değil, bir an önce başlamanız lazım diye.
+
+82
+00:13:48,816 --> 00:14:09,716
+Çünkü bir an önce başlamazsanız takıldığınız noktaların farkına varmanız o kadar geç olur. Ne kadar geç farkına varırsanız onu anlamanız, çözmeniz o kadar geçleşir vs. vs. işler giderek sıkışır. O yüzden ödevler verildiği zaman hemen başlayıp anlamadığınız yerler varsa bana mutlaka sorun.
+
+83
+00:14:09,716 --> 00:14:16,336
+Yani bana sormaktan, bana mail atmaktan o noktada çekinmeyin. Ödevinizde herhangi bir yerde takıldığınız bir şey varsa.
+
+84
+00:14:16,816 --> 00:14:21,255
+Ama son geceye gelmiş de şurayı anlamadım diye bir şey göndermediğinde çok manası yok tabii ki.
+
+85
+00:14:22,275 --> 00:14:27,115
+Yani son gece ben bunu yaparım diye ödevlerin başına oturmayın.
+
+86
+00:14:27,415 --> 00:14:32,175
+Şimdiden söyleyeyim. Bundan sonraki ödevler de buna benzer olacaklar çünkü.
+
+87
+00:14:32,884 --> 00:14:52,584
+Yani zamanınızı alacaklar. Dediğim gibi doktora ya da yüksek lisansdaki dersler lisans dersleri gibi değiller. Bunun farkına varmış olmanız lazım artık. Her bir dersin oldukça ağır bir yükü olacak. O yüzden daha fazla vakit ayırmanız gerekecek.
+
+88
+00:15:00,884 --> 00:15:23,784
+Bu konudadır normalde. Dolayısıyla oradaki dersleri her birini ayırdığınız vakti belki üç dört katını ayırmanız gerekiyor. Kabaca bir tahminle öyle söyleyeyim. O yüzden bundan sonraki ödevler için de bir an önce ödeve başlamanız takıldığınız bir noktada dediğim gibi bana sormaktan çekinmemenizi tavsiye ederim bundan sonrası için.
+
+89
+00:15:26,644 --> 00:15:43,224
+Tamam, [öğrenci]. Optimizasyon konusunda daha yeni giriş yapan biri olarak ödev bana zor geldi ve yapamadım. Optimizasyon konusunda yeni giriş. Tamam, ben size ilk anlattığım, yani optimizasyon kısmıyla ilgili anlattığım kısımlar şeye kadar.
+
+90
+00:15:43,663 --> 00:15:58,163
+Geçen hafta en son şu Stochastic Gradient Descenti ve Adam vesaire onları anlattığım kısım vardı. Onun haricindeki kısımlar bizim zaten lisansta benim anlattığım konular, dersler.
+
+91
+00:16:00,083 --> 00:16:12,783
+Lisans seviyesinde kabaca oralar ama optimizasyonla alakalı hiçbir şey duymadıysanız daha önce o noktada zorlanabilirsiniz. Ama bu konudaki problemi de bir an önce halletmeniz lazım bence.
+
+92
+00:16:13,299 --> 00:16:30,679
+Yani anlamadığınız nedir, ne değildir, bunların farkına varıp, işte arkadaşlarınızla, buradaki arkadaşlarınızla konuşabilirsiniz fikir almak açısından. Ya da bana mail atabilirsiniz, şurasını anlamadığımı vesaire. O şekilde ilerlememiz lazım, başka türlü soru olur. Tamam.
+
+93
+00:16:33,331 --> 00:16:48,192
+Şimdi bir derse geçelim. Derse geçtikten, yani dersi karar açtığını bir inceleyelim. Ondan sonra zaten ödevleri sunarken sizler yine üzerinden konuşuruz bu konularda. Tamam mı arkadaşlar?
+
+94
+00:16:54,515 --> 00:16:55,403
+Evet.
+
+95
+00:16:59,860 --> 00:17:16,039
+Şimdi daha önce hiç karar açtığını duymamış olan var mı? Onu soralım. Ben daha önce hiç karar açtığı hiçbir şey duymadım diyen.
+
+96
+00:17:19,923 --> 00:17:29,403
+Yok, güzel. Kullanmamış olan var mı? Yani bir veri kümesi alıp, ona karar ağacı uygulayıp karar ağacının çıktılarını falan inceleyen, incelemeyen.
+
+97
+00:17:29,583 --> 00:17:32,043
+Ben de kullanmadım hocam.
+
+98
+00:17:32,844 --> 00:17:33,423
+İki kişi.
+
+99
+00:17:37,423 --> 00:17:39,083
+Üç. Evet.
+
+100
+00:17:43,155 --> 00:17:44,955
+En sondakinin nedenini anlayamadım.
+
+101
+00:17:48,788 --> 00:17:50,407
+Dört hocam ben de kullandım.
+
+102
+00:17:50,748 --> 00:17:52,027
+Tamam, dört oldu. Tamam.
+
+103
+00:17:53,867 --> 00:17:55,907
+Peki, şimdi on altı kişi var.
+
+104
+00:17:56,587 --> 00:18:02,647
+Ben de teoride kullandım hocam. Yani teoride, manuel olarak hesaplayarak kullandım işte. Programda değil mi?
+
+105
+00:18:02,647 --> 00:18:05,487
+Tamam, tamam. İyi. Yani o da yeterli.
+
+106
+00:18:06,587 --> 00:18:09,967
+Tamam. Hatta elle hesaplayabildiysem o daha da iyi.
+
+107
+00:18:11,307 --> 00:18:14,627
+Daha da detaylarını kavramışsındır.
+
+108
+00:18:15,008 --> 00:18:17,928
+Bilgisayarda fonksiyon çağırıp kullanmaya göre.
+
+109
+00:18:20,568 --> 00:18:25,468
+16'da güzel. Yani 12 kişi biliyor daha önce karar ağacı kullanmış.
+
+110
+00:18:26,128 --> 00:18:29,827
+Şimdi peki bu derste karar ağaçlarını kullanacağız.
+
+111
+00:18:31,108 --> 00:18:36,847
+Karar ağaçlarını kullanmamızın temel sebebini birazdan anlatacağım.
+
+112
+00:18:37,523 --> 00:18:54,523
+Ama karar araçları oldukça güzel algoritmalar. İlk önce ondan bahsediyoruz. Güzellikten kastım şu. Ona bir veri kümesi veriyorsunuz. Veri kümesinin sonucunda bir karar ağacı üretiliyor. Ve bu karar ağacına bakarak sizler...
+
+113
+00:18:55,039 --> 00:19:19,380
+Bu karar ağacını gözünüzle inceleyerek o karar sürecinin nasıl oluştuğunu gayet net bir şekilde görebiliyorsunuz. Ki bu da size o sürecin aslında arka tarafta nasıl işlediğine dair bir bilgi veriyor.
+
+114
+00:19:20,339 --> 00:19:38,659
+Bu özellikleri sebebiyle, çok güzel bir grafik arayı sunuyor. Grafik arayı sunmakta çıktıları oldukça anlaşılır, o şekilde ifade ederim. Bu özellikleri sebebiyle oldukça popüler olan makine öğrenmesi algoritmalarından biri.
+
+115
+00:19:42,659 --> 00:19:44,679
+Şöyle bir giriş yapalım.
+
+116
+00:19:48,915 --> 00:20:00,056
+Karar ağaçlarının varsayımı, elimizdeki veri uzayını M adet kesişmeyen bölgeye ayırmaktır.
+
+117
+00:20:01,275 --> 00:20:07,375
+Ve bu bölgenin her biri içinde tek bir çıkış üretmektir.
+
+118
+00:20:07,375 --> 00:20:14,155
+Yani uzayı M tane bölgeye ayıracaksınız ve bu bölgelerin her biri içinde bir tane çıkışınız olacak.
+
+119
+00:20:15,412 --> 00:20:20,351
+Şimdi bunu, bu bir varsayım.
+
+120
+00:20:20,688 --> 00:20:25,748
+Şimdi algoritmaların varsayımları aslında algoritmayı belirleyen şeylerdir.
+
+121
+00:20:25,988 --> 00:20:31,768
+Algoritmanın optimizasyon sürecini, parametre bulma sürecini belirleyen fikirlerdir.
+
+122
+00:20:32,307 --> 00:20:39,708
+Yani işte lineer regresyon için mesela düşünürsek o verilerin bir düzlem üzerinde yer aldığını varsayar.
+
+123
+00:20:39,708 --> 00:20:42,488
+Bir regresyon problemi için düşünürsek.
+
+124
+00:20:43,008 --> 00:20:48,688
+Ama işte yine lineer regresyonu eğer bir sınıflandırma için kullanıyorsak.
+
+125
+00:20:48,688 --> 00:21:06,648
+Bu durumda da verilerin birbirinden bir düzlem ya da hiperdüzlemle ayrılabildiğini varsayar. Dolayısıyla her bir algoritma aslında bir varsayımdır. Ve siz bir algoritmayı seçerken bir varsayım seçiyorsunuzdur.
+
+126
+00:21:14,771 --> 00:21:42,271
+Sonuçta gerçek veriye hiçbir zaman erişemezsiniz. Gerçek verinin içerisinden bir sample'a erişebilirsiniz. O sample'ın üretildiği asıl gerçek doğadan gelen bir şey artık neyse kullandığınız veri hükümesine bağlı olarak. O verinin gerçeğiyle sizin seçtiğiniz algoritmanın gerçeği yani varsayımı öyle söyleyelim birbirine uyumlu ise o zaman o algoritma oldukça iyi çalışacaktır o veri hükümesi üzerinde.
+
+127
+00:21:43,059 --> 00:22:00,619
+Şimdi bu kısaca girişten sonra karar ağaçlarının emadet kesişmeyen bölgeye bölmek ve her bir bölge içinde bir çıkış üretmek varsayımına sahip olduklarını tekrardan söylemiş olalım.
+
+128
+00:22:00,960 --> 00:22:13,500
+Bir ağacımız var. Bu ağacın nasıl oluştuğunu biraz yavaştan göreceğiz. Ama M adet kesişmeyen bölge, bunları RM diyelim ve her bir bölgenin de çıkışları, bunları da CM diyelim.
+
+129
+00:22:13,500 --> 00:22:22,316
+Şimdi T ağacı olsun elimizde bir tane ağaç. Bu ağacın her bir örneği için çıkışı... Bir saniye...
+
+130
+00:22:27,763 --> 00:22:30,683
+Burada ben karar ağacını hiç duymadım diyen var mıydı?
+
+131
+00:22:30,683 --> 00:22:31,364
+Bir dakika.
+
+132
+00:22:38,163 --> 00:23:04,384
+Yoktu değil mi? Kullanmayanlar falan vardı. Orası ayrı bir mevzu ama duymadım diyen yoktu. Tamam güzel. Bir kar ağacının nasıl bir şey olduğunu biliyorsunuz. Şimdi bir T ağacının bir X örneği için çıkışını şu şekilde yazabiliriz. Şimdi buna bakalım. Bu Y hat yani tahmini çıkış bir X örneğimiz var elimizde. Kaç boyutluysa artık onu bilmiyoruz. Datasetimizden bir örnek. Bu örneğin çıkışı buna karşı üretilen tahmin eşittir.
+
+133
+00:23:05,172 --> 00:23:17,231
+T bizim ağacımız ki bunu fonksiyon olarak düşünürse Tx eşittir neymiş? M eşittir birden, küçük M eşittir birden büyük M'ye kadar Cm çarpı Irmx.
+
+134
+00:23:17,552 --> 00:23:25,951
+Şimdi Irmx neymiş ona bakalım. Şimdi şu Rm dediğimiz şey A diye bir kümeden bahsediyoruz. Bir bölgeden bahsediyoruz.
+
+135
+00:23:25,951 --> 00:23:31,172
+Iax eğer ki x A'nın elemanıysa bir, D ise sıfır.
+
+136
+00:23:31,892 --> 00:23:51,732
+Şimdi o zaman buna baktığımızda yani X dediğimiz şey olası Rm'lerin içerisinden sadece bir tanesine ait olacak. Neden? Çünkü şunu varsaydık M adet kesişmeyen bölge. Yani herhangi bir X örneği elimizdeki M adet bölgelerden sadece bir tanesinin içerisinde olabilir.
+
+137
+00:23:52,884 --> 00:24:06,668
+Bir tanesi için burası sadece bir olacak, diğerleri için sıfır olacak. O bir olduğunun çıkışı da şuradaki CM'de yani M'ci bölgenin çıkışı neyse onu ifade edecek. Dolayısıyla burada M'den...
+
+138
+00:24:06,675 --> 00:24:31,335
+Küçük M'ye birden büyük M'ye kadar eleman şu çarpımları topluyoruz ama aslında buradakilerden sadece ve sadece X'in ait olduğu bölgenin çıkışı kalıyor elimizde. Diğerlerin hepsi çünkü sıfır olacak. Çünkü şurası sıfır ya. Diğer bütün bölgelerin çıkışlar sıfırla çarpılacağı için bizim aslında TX dediğimiz şey bir CM'ye eşit olacak. Ama o M hangi M?
+
+139
+00:24:31,859 --> 00:24:39,440
+x'in ait olduğu bölgenin m'si. Anlaşıldı mı arkadaşlar? Şu yapı.
+
+140
+00:24:48,403 --> 00:24:49,403
+Evet hocam.
+
+141
+00:24:51,743 --> 00:24:52,064
+Peki.
+
+142
+00:24:54,723 --> 00:25:03,263
+Şimdi T'yi bulmak. T dediğim gibi böyle bir şey bulmak istiyoruz. Yani T böyle çıkış verecek. Peki T'yi nasıl bulacağız?
+
+143
+00:25:05,392 --> 00:25:22,791
+D eşittir, X, Y, Y, Y eşittir birden N'e kadar bir veri kümesi tanımlamışız burada bakın. X'ler, input'lar, Y'ler, output'lar, iyinci örnekler var. Birinciden N'e kadar gidiyor. Yani en tane elemandan oluşan bir train data elinizde var.
+
+144
+00:25:28,784 --> 00:25:44,464
+i hat eşittir tx i, yani x'inci örneğe ait çıkış. Şimdi i diye ölçmemiz lazım. İ ölçmek için de bir loss fonksiyonuna ihtiyacımız var. Loss fonksiyonumuzda mesela şöyle bir şey olsun. Loss fonksiyonu yi virgül yi hat. Bu ne demek?
+
+145
+00:25:55,632 --> 00:26:07,211
+Bu ikisinin arasındaki farkın karesi olsun demişiz. Karesel bir hata atamamışız dost fonksiyonu için. Dolayısıyla LT yani T ağacının hatası ne olacaktır?
+
+146
+00:26:07,211 --> 00:26:22,091
+İ eşittir birden n'e kadar, bakın ki İ eşittir birden n'e kadar, Yi eksi TXI'nin farkının karelerinin toplamı olacaktır. Yani bütün örnekler üzerinde yapılan hataların karelerinin toplamı olacaktır.
+
+147
+00:26:23,604 --> 00:26:43,163
+Tx'i'nin ne olduğunu görmüştük şurada. Yani iyinci örnek için düşünürsek burasını. Şurasını Tx'i yazarsak, şurası x'i olur sadece. Dolayısıyla şunu da yazabiliriz. Bu da şuna eşittir. Yani y'i eksi Tx'i dediğimiz şey de burası. Şurayı görüyorsunuz.
+
+148
+00:26:43,163 --> 00:26:48,584
+Şimdi bu herhangi bir T ağacı için bir loss değeri.
+
+149
+00:26:49,779 --> 00:27:01,779
+Peki, bunu o zaman bir optimizasyona dönüştürmemiz lazım. Optimizasyona dönüştürmekten kastımız ne? Bu hatası, şurada bulduğumuz hatanın değerinin küçük olduğu.
+
+150
+00:27:06,163 --> 00:27:27,503
+Bir T bulmak istiyoruz. T dediğimiz şeyler nelerden oluşuyor? M adet bölge ve bölgeler ait çıkışlardan oluşuyor. O zaman bizim optimizasyon fonksiyonumuz şu. Bir karar ağacı için. Neymiş bu bakalım. Şimdi buna baktığımızda şurası zaten demin yazdığımız şey fark ettiyseniz. Şurasını görüyorsunuz.
+
+151
+00:27:27,759 --> 00:27:36,579
+Arkmin C, M, R, N, I, Eşitli, Birden M'e kadar bu ne anlatıyor acaba burası?
+
+152
+00:27:40,243 --> 00:27:45,283
+Arkmin neyi ifade eder? Min yazmıyor burada, arkmin yazıyor.
+
+153
+00:27:46,864 --> 00:27:53,003
+Hocam şöyle minimum olan m değeri için c, r argümanlarını alır.
+
+154
+00:27:54,663 --> 00:27:59,263
+Minimum olan ne değeri için? Neyin minimumu bulmaya çalışıyoruz biz burada? Neyin minimumu?
+
+155
+00:28:01,543 --> 00:28:02,463
+Şurasının değil mi?
+
+156
+00:28:02,463 --> 00:28:03,104
+Evet.
+
+157
+00:28:04,367 --> 00:28:12,127
+Şimdi burada arkadaşlar bizim elimizde neler var neler yok. İlk önce onu bir kavrayalım. Şimdi elimizde X'ler ve Y'ler var mı?
+
+158
+00:28:16,948 --> 00:28:29,208
+Bir veri kümesi bize verildiği zaman var. Biliyoruz bunları. Ne yok bizim elimizde? C, M ve I, R, M dediğimiz şey zaten içinde mi dinleyi gözlem. C, M ve R, M'leri bulmaya çalışıyoruz biz.
+
+159
+00:28:29,208 --> 00:28:43,488
+Yani elimizdeki X ve Y, yani elimizdeki datasete, dataset için en uygun olan, uygunluktan kasıt ne? Gerçeklerle ağacın tahminlerinin farkının, karelerinin toplamının minimumu olduğu.
+
+160
+00:28:44,307 --> 00:28:51,307
+Bir değerin minimum yapan, bunu minimum yapan CmRm.
+
+161
+00:28:51,807 --> 00:29:13,988
+Bunlar kaç taneler? M taneler. Yani tek bir değer bulmak istemiyoruz biz aslında. Mesela daha önceki haftalardaki optimizasyon fonksiyonlarını hatırlayın. Mesela minimum x diyorduk mesela. Minimum x yani buradaki fonksiyonu minimum yapan x değerini bulmak istiyorduk.
+
+162
+00:29:17,844 --> 00:29:32,983
+Neleri bulmak istiyoruz? Şurada gördüğümüz değerlerin hepsini bulmak istiyoruz. Yani CM, RM. Yani biz büyük M adet bölge bulmak istiyoruz. Büyük M adette her bir bölgenin çıkışını bulmak istiyoruz.
+
+163
+00:29:43,604 --> 00:30:00,000
+İkili var. İçinde. L değeri en küçük olanı bulalım. Şimdi bunu bulursak eğer, işte diyelim ki amacımız bunu bulduğumuzda da bunlar bizim işte hetli olanlar olacaklar. Ağacımızın kendisi bunlar olacaklar. Şimdi bu arkadaşlar birleşik bir optimiz...
+
+164
+00:30:00,000 --> 00:30:20,779
+Yani iki tane şeyin birbiriyle conditional olarak, yani tek bir tanesine göre çözüm yapamazsınız. Yani tek bir değişkene göre, yani tek bir tanesi sadece RME'leri optimize ederek bu problemi çözemezsiniz. CME'leri ve RME'leri birlikte düşünerek optimize etmeniz gerekiyor ki bu conditional bir optimizasyon problemi ki çözümleri oldukça zor.
+
+165
+00:30:20,779 --> 00:30:24,160
+Şimdi bunu kolaylaştırmak isteyelim.
+
+166
+00:30:24,531 --> 00:30:49,231
+Yani problemi bu şekilde tanımladık. Tabi burada adını bile anladığımız şöyle şeyler var. Şimdi bölge diye bir şeyden bahsettik. Şimdi bu bölge nasıl bir bölge olacak? Bu bölgelerin sadece neyi söyledik? Kesişmeyen olduklarını söyledik. Bölgenin sayısından bahsetmedik. Yani bölge sayısını bile söylemedik burada. Hadi onda verilmiş olsun. O da çok büyük bir problemdi. Ama bölge dediğimiz şey nasıl bir şey olacak? Bunu da konuşmadık.
+
+167
+00:30:55,412 --> 00:31:14,072
+Üçgen, prizma gibisinden bir bölge olabilir mi? Olabilir. Daresel bölgeler, eğik bölgeler olabilir mi? Olabilir. Bunlara daha hiçbir şey söylemedik şu ana kadar. Bölgeler dedik. Kesişmeyen bölgeler. O zaman burada bu bölgeleri birazcık kısıtlayalım.
+
+168
+00:31:16,531 --> 00:31:31,791
+Eğer ki bir optimizasyon probleminde arama uzayınız korkunç büyükse, çok fazla sayıda şeye göre arama yapmanız gerekiyorsa, bu durumda optimizasyon uzayını daraltmak için bazı değişkenleri ortadan kaldırırsınız.
+
+169
+00:31:31,791 --> 00:31:44,491
+Mesela burada bazı değişkenlerden bir tanesi bölgelerin şekli. Bölgelerin şeklini karar ağacı algoritmalarında bunların birer hiper küp olması.
+
+170
+00:31:44,531 --> 00:31:46,351
+Ama küp demeyelim ona. Hiper...
+
+171
+00:31:48,756 --> 00:32:16,596
+Ona nasıl isimlendirilir ki? Yani dikdörtgensel bölge öyle söyleyeyim ama hiper yani iki boyutlu, üç boyutlu, beş boyutlu artık orası çok önemli değil. Yani illa küp bütün kenarları birbirine eşit olmak zorunda değil. Farklı uzunlukta kenarları da olabilir ama hep dikdörtgensel bölgeler. Hiper küp şeklinde olsun. Şimdi bu işi birazcık daha kolaylaştırır. Yani bölgelerimizin işte dairesel falan gibisinden eğik falan olması gibisinden arama işlerini aslında atmış oluruz.
+
+172
+00:32:16,756 --> 00:32:41,476
+Daha biraz daha küçük bir arama uzayı tanımlamış oluruz. Ama hala bu yine zor. Yani her bir bölgeyi bulmak, bu bölgeyi tanımlayan, mesela şimdi bir hiber bölgeyi tanımlamak için sizin en azından herhalde D artı bir tane düzlem gibi bir yapıya ihtiyacınız var. Bütün hepsini ayrı ayrı birbirinden ayrı olarak tanımlamak için.
+
+173
+00:32:41,875 --> 00:33:01,135
+Her birini ayrık ayrık tanımlamak yerine burada çok daha basit bir çözüm önerilmiş. Öneri şu, en başta bir tane R olsun. Yani bütün hiperküptülerimizin sayısı bir olsun. O da bütün uzay.
+
+174
+00:33:01,619 --> 00:33:27,559
+Daha sonra biz bunu iteratif olarak bölelim, parçalara bölelim. Yani mesela bütün uzayı ikiye ayıralım bir yerden. Daha sonra bu bulduğumuz iki tane uzayın her birini de ikiye bölelim. Daha sonra bu bulduğumuz her bir ikiye bölünmüş uzaylarının her birini de ikiye bölelim. Bu şekilde devam etsin. Ve bu şekilde her bir adımda ilerleye ilerleye bölge sayısı böyle iki katına falan çıkacaktır her bir adımda o şekilde düşünürseniz. Bu çok daha basit bir çözüm tabii ki.
+
+175
+00:33:28,019 --> 00:33:48,659
+Ama bu çözüm optimum bir çözüm değil. Optimum çözümden kastım ne derseniz, optimum çözüm minimum, yani aynı başarıya sahip, minimum sayıda bölge içeren bir karar ağacının optimum olduğunu söyleyelim.
+
+176
+00:33:49,008 --> 00:33:57,008
+Yani o veri kümesi için yüksek başarıya sahip ve minimum sayıda bölge içeren...
+
+177
+00:33:57,375 --> 00:34:16,015
+Karar ağaçları optimum karar ağaçları olsunlar. Şuradaki bahsettiğimiz iteratif bir algoritma başta tek bir R olsun diyerek ilerlediğimiz algoritma bu optimum ağacı bulamayabilir.
+
+178
+00:34:16,015 --> 00:34:20,015
+Bu birazcık neye benziyor?
+
+179
+00:34:23,059 --> 00:34:48,800
+Lokal arama yapmaya benziyor. Yani global optimuma erişmek için çok fazla zaman harcamanız gerekiyor. Onun yerine yeterince iyi bir lokal minimuma razı oluyorsunuz diye ifade edebiliriz. Ama buna rağmen yani optimal karar ağaçları üretilmemiş olmasına rağmen karar ağaçları oldukça başarılı sonuçlar elde edebiliyorlar.
+
+180
+00:34:50,099 --> 00:35:03,619
+Peki, bu ağaçları nasıl oluşturacağız? Bu ağaçları oluşturmak için, demin bahsettiğimiz gibi, en başta bütün verilerimizin hepsi tek bir bölgenin içerisinde yer alacaklar diye varsayacağız.
+
+181
+00:35:05,079 --> 00:35:11,279
+Bir regresyon problemi çözelim. Yani çıkışlarımız sayı olsun.
+
+182
+00:35:12,340 --> 00:35:22,640
+Tek bir R çıkışı C içindeki K adet örneğin çıkışlarının ortalaması. Ne demek bu? Tek bir R var.
+
+183
+00:35:23,251 --> 00:35:45,051
+Peki bunun çıkışı ne olacak? Çıkışta şu, bir bölgenin output'u, içindeki örneklerin çıkışlarının ortalaması olacak. Eğer tek bir bölgeniz varsa, oradaki k adetten kastımızda n olacaktır. Örnek sayısı kadar olacaktır.
+
+184
+00:35:45,360 --> 00:36:10,199
+Dolayısıyla bir bölgenin çıkışı olarak biz neyi söylüyoruz? İçindeki örneklerin, outputların ortalaması. Regresyon problemleri için bunu vereceğiz. En sonunda da böyle dedi. Yani bölme işimiz bittiğinde de, uzayı bölme işimiz bittiğinde de her bir bölgenin çıkışı olarak şunu söyleyeceğiz. O bölgenin içerisindeki eğitim örneklerinin, outputların ortalanması o bölgeye düşen yeni bir test örneğinde çıkışı olacaktır diye söyleyeceğiz.
+
+185
+00:36:12,947 --> 00:36:33,047
+Bir R'nin losu ne olacaktır? Yani bir R bölgesinin hatası nasıl hesaplanır? R bölgesinin içerisindeki her bir X için, bakın her bir X için, Yİ-min Yİ1'den K'ya kadar bunların ortalaması.
+
+186
+00:36:33,047 --> 00:36:34,927
+Şimdi şurası aslında neyi gösteriyor?
+
+187
+00:36:36,275 --> 00:36:49,895
+Elimizdeki k adet, yani renin içerisinde k adet örnek var ya, yerin içindeki k adet örneğin çıkışlarının ortalaması. Peki yi eksi ortalama neyi ifade edecektir?
+
+188
+00:36:55,891 --> 00:37:18,551
+Kendi ortalamalarından ne kadar saptığını ifade edecektir değil mi? Ne kadar saptığını ifade edecektir. Bunların arasındaki farkları alıp toplarsak, karelerini alıp toplarsak ve k'ya da bölersek ortalama bir mean square error aslında elde etmiş oluruz.
+
+189
+00:37:23,315 --> 00:37:48,215
+Peki, yani bir bölgenin losunu bulduk. Bir bölgenin losunu bulduk. Şu an elimizde tek bir bölge vardı. Onun losunu bu şekilde bulacağımızı ifade ettik. Çıkışta nasıl bulacağımızı ifade ettik. Peki şimdi işimiz nereye geldi? İşimiz şuraya geldi. Bir bölgeyi böleceğiz. İkiye ayıracağız. Bu ikiye ayırmayı da belli bir özelliğin belli bir değerine göre yapacağız.
+
+190
+00:37:48,755 --> 00:38:09,536
+Yani işte diyelim ki elimizde dört tane özellik olsun, yani dört boyutlu bir datamız olsun ya da üç boyutlu datamız olsun fark etmez. Üç boyutlu bir datamız olsun. Bu her bir boyut için, her bir özellik için olası bütün bölmeleri deneyeceğiz.
+
+191
+00:38:09,536 --> 00:38:11,335
+Denedik.
+
+192
+00:38:12,724 --> 00:38:37,584
+Bu denemelerin iyiliklerini nasıl hesaplayacağız? Yani bir bölmenin, mesela bölme dediğimiz şey çok basit olarak mesela uzayımız şu slide'ın etrafı tamamıysa. Ben bunu mesela şuradan şöyle parçaya böldüm, ikiye böldüm. Şöyle bir bölgeyi böldüm. Şu anda bu tarafta bir bölge oluştu, bir de bu tarafta bir bölge oluştu değil mi? Hatta, yok mu? Onu da bir tane çizgi çekelim.
+
+193
+00:38:39,603 --> 00:39:00,863
+Mesela şöyle böldüm. Yeşili görüyorsunuz. Burada bir bölge oluştu, burada da başka bir bölge oluştu. Şimdi burada bir özelliğin bir değerine göre R'yi ikiye bölme durumunda bir R left bir de R right diye iki tane bölge elde etmiş oluyoruz. R'den R left ve R right diye iki tane bölge elde etmiş oluyoruz.
+
+194
+00:39:06,963 --> 00:39:31,583
+Imprumant diye geçer. Imprumant, j virgül esşi. Yani j'inci özelliğin es, j değerine göre bölelik. Mesela diyoruz ki, ver hükümesindeki üçüncü özellik üç buçuktan büyükse gibisinden bir şey bu. Böyle bir bölmenin iyiliği neymiş bakalım. L, R eksi, L, R left eksi, L, R right.
+
+195
+00:39:32,692 --> 00:39:57,891
+Bu değer ne ifade ediyor aslında? Bu değerlerin ne olmasını isteriz biz? Şu değerlerin. Bu değerden daha küçük olacaklardır muhtemelen değil mi? Şunun tamamının, yani bunların lossların ne olmasını isteriz biz hep? Küçük olmasını isteriz değil mi? O zaman bunlar ne kadar küçük olurlarsa bunun sonucu da o kadar ne olacaktır? Büyük olacaktır.
+
+196
+00:40:00,000 --> 00:40:09,099
+Bu JSJ ikilleri için İMP'leri hesaplayıp, yani İ'liği hesaplayıp, en iyisini ki burada en iyilik, büyüklük anlamına gelir, bunu seçebilirsin.
+
+197
+00:40:09,539 --> 00:40:21,759
+Tabii burada bütün hepsi için LR'nin sabit olduğunu düşünüp, LR left'in loss'uyla right'in loss'unun toplamının minimum olanını da seçebilirsiniz.
+
+198
+00:40:21,919 --> 00:40:23,139
+Yani sonuçta bir şey fark etmez.
+
+199
+00:40:24,275 --> 00:40:39,275
+Çünkü hepsindelerle aynı olacaktır ya bütün bölgenin için. Dolayısıyla bu işlemi yaptığımızda bizim elimizde bir bölgeyi bölünebilecek bütün olasılıkları buluyoruz. Bu olasılıkların her birinin...
+
+200
+00:40:41,139 --> 00:40:55,959
+Oradan bölersek bize faydası ne olur diye hesaplıyoruz. Daha sonra bu faydası olacak olanların içerisinden de en yüksek faydası olanı seçip onu karar düğümü olarak ağaca yerleştiriyoruz.
+
+201
+00:40:56,079 --> 00:41:06,459
+Yerleştirdiğimiz zaman aslında yerleştirmek demek ağacı iki parçaya bölmek demek. İki parçaya da böldükten sonra elimizde şu anda iki tane yeni bölge var. Peki bu bölgelerle ne yapacağız şimdi?
+
+202
+00:41:09,235 --> 00:41:12,495
+İki tane, bir tane bölgeyi aldık, ikiye böldük. Şimdi ne yapacağız?
+
+203
+00:41:14,375 --> 00:41:15,895
+Her bir bölgeyi yine ikiye böleceğiz.
+
+204
+00:41:16,596 --> 00:41:41,456
+Aynen öyle. Her bölgeyi bir daha ikiye böleceğiz. Nasıl böleceğiz? Aynı mantıkla. Buradaki yaptığımız işin aynısını yapacağız. Yine L, R'yi hesaplayacağız. Yine her bir olası bölmelere göre o bölmelerin iyiliklerini hesaplayacağız. Yine en fazla iyiliğe sahip olan, iyileşmeye sahip olanları seçip oraya da böleceğiz. O zaman ikiye böyle böyle böyle gideceğiz. Peki, ikiye böyle böyle giderken…
+
+205
+00:41:43,668 --> 00:41:44,668
+Evet.
+
+206
+00:41:48,947 --> 00:42:13,148
+Gitmeden önce şunu söyleyeyim. Şimdi bu bir regresyon problemi için bunu tanımladık. Yani şuradaki loss değerini bakın, loss değerini bir regresyon değeri için tanımladık. Çünkü o bölgenin içindeki bütün örneklerin çıkışlarının ortalamasının her bir çıkıştan farklarını alarak bunu yaptık. Peki bir sınıflandırma problemi için C'yi nasıl belirleyeceğiz?
+
+207
+00:42:14,260 --> 00:42:16,840
+Burada C'yi belirken bir bölgenin C'si şu.
+
+208
+00:42:18,040 --> 00:42:18,540
+Nerede o?
+
+209
+00:42:22,579 --> 00:42:38,379
+Şu, elimizde bir sınıflandırma problemi varsa bir bölgenin output'unu nasıl belirleriz? Output bir sınıf olacak. Bir sınıf söyleyeceğiz. Birinci sınıftan, üçüncü sınıftan, beşinci sınıftan diye. Nasıl söyleyebiliriz?
+
+210
+00:42:38,859 --> 00:42:44,379
+Hocam buna geçmeden önce bir şey sorabilir miyim? Bu SG'yi niye göre belirliyoruz?
+
+211
+00:42:46,708 --> 00:42:49,847
+Bu İMPJ, SJ var ya.
+
+212
+00:42:50,307 --> 00:43:01,407
+Şimdi şöyle bir şey söyleyeyim. Bir özelliği ele alalım. Sadece tek bir özelliği ele alalım. Şimdi bu özellik için bir sürü değer var bir hükümesinin içerisinde değil mi?
+
+213
+00:43:03,251 --> 00:43:03,911
+Evet hocam.
+
+214
+00:43:04,451 --> 00:43:19,891
+Bir sürü değer var. Bu değerlerin içerisinden olası bölmenin yapılabileceği yerleri bulmadığım birkaç tane yol var. Yani rastgele şunu yapabilirsiniz. Maksimino minimum arasında eşit aralıklı 10 tane çizgi çekersiniz. 10 tanesi eşitleriniz olur mesela.
+
+215
+00:43:24,307 --> 00:43:38,447
+Yani sıralarsanız o şeyleri, ne derler ondan, sayısal özellikler için bahsediyorum. Hepsini sıralarsınız. Sıraladıktan sonra her bir ardışın tam orta noktasından bölmeyi düşünebilirsiniz. Anlatabildim mi? Anladım hocam.
+
+216
+00:43:38,447 --> 00:43:51,027
+Bu şekilde yapılabilir. Kategorik içinse zaten bütün olası, yani o özelliğin alabildiği bütün kategorik değişkenleri, değerleri için bu ürünü yapmanız gerekecek. Kategorik için zaten bir mantık.
+
+217
+00:43:53,204 --> 00:44:01,184
+Sorumuzu tekrarlayalım. Sınıflandırma problemleri için C'nin hesabı nasıl yapılabilir?
+
+218
+00:44:08,532 --> 00:44:17,372
+Yani elinizde bir bölge var. O bölgenin içerisinde çeşitli örnekler var. O bölgenin output'u ne olsun diyebilirsiniz. O output'u nasıl hesaplayabilirsiniz?
+
+219
+00:44:24,179 --> 00:44:35,639
+Regresyon için içindeki örneklerin çıkışlarının ortalması. Yani şöyle bir şey söyleyelim. Mesela bunu buraya nasıl rahat çizebilirim? Düşünüyorum.
+
+220
+00:44:35,639 --> 00:44:39,220
+Burada o tarz bir şey var mı? Elimde diye bakıyorum ama.
+
+221
+00:44:49,523 --> 00:44:51,843
+Bu zaman herhalde yapabilirim. Umarım.
+
+222
+00:45:16,115 --> 00:45:18,755
+Şunlardan kurtulalım.
+
+223
+00:45:24,692 --> 00:45:25,791
+Şöyle bir şey çizdim.
+
+224
+00:45:33,396 --> 00:45:43,756
+Şöyle bir şey çizdim diyelim ki. Bizim tek boyutlu bir verimiz olsun. Tek bir x var ve buna karşı g'ler üretiyoruz.
+
+225
+00:45:43,756 --> 00:45:46,756
+Diyelim ki örneklerimiz de...
+
+226
+00:45:52,052 --> 00:45:55,672
+Örnekleri mesela yıldızlar şeklinde çizebiliriz herhalde.
+
+227
+00:46:09,523 --> 00:46:09,963
+Açık.
+
+228
+00:46:17,907 --> 00:46:35,067
+Mesela böyle bir şey. Şimdi tek boyutu düşünürsek eğer tek boyutta bütün örneklerini hepsini içine alan bölge zaten bütün hepsini alıyor. Dört tane örneğimiz olduğunu düşünüyorum sadece. Şuradan olacaktır. Şunların hepsini birden içine alan bir şeyden bahsediyoruz. Peki bu bölgenin çıkışını nasıl hesaplıyoruz diyorduk.
+
+229
+00:46:35,572 --> 00:46:42,652
+Her birinin outputlarının ortalaması, yani aslında şunların ortalaması, o da çok kabaca söylemek gerekirse,
+
+230
+00:46:42,652 --> 00:46:56,892
+eğer bütün verilerin hepsinin tek bir bölgenin içinde olduğunu varsayarsak, o zaman bizim fonksiyonumuz aşağı yukarı şöyle bir şey olur.
+
+231
+00:46:57,152 --> 00:46:58,992
+Hatta rengini birazcık şey yapalım, değiştirelim.
+
+232
+00:46:59,772 --> 00:47:01,952
+Niye ben bunu buradan çizdim de şuradan çizmedim?
+
+233
+00:47:03,507 --> 00:47:25,067
+Buradan çizim mesela, aşağı yukarı şöyle bir şey çizdim. Bu neyi ifade ediyor? Neyi gösterir? Ortalamaları. Ortalamaları değil mi? Tamam. Şimdi tek boyutlu uzayda bunu bu şekilde ifade ettik. Regresyon için bu şekilde ifade ettik. Peki sınıflandırma için nasıl yapabiliriz?
+
+234
+00:47:32,500 --> 00:47:41,679
+Onları nasıl renklendiririz? Belli olur mu? Eh, oldu. Tamam. Şunu kaldıralım mesela.
+
+235
+00:47:45,940 --> 00:48:11,980
+Diyelim ki iki sınıflı bir sınıflandırma problemimiz var. Yeşiller ve sarıları birine ayırmak istiyoruz. İki tane şöyle boyutumuz var. Bütün örneklerin hepsi aynı bölgedeyse ben output olarak ne vermem gerekir? Burada mesela. Nasıl output hesaplayacağım? Sınıfı söyleyeceğim. Ya sarı diyeceğim ya yeşil diyeceğim. Hangisini söylerseniz?
+
+236
+00:48:13,076 --> 00:48:13,915
+En çok olanı?
+
+237
+00:48:14,295 --> 00:48:23,096
+En çok olanı söylersiniz. Bu kadar basit. Yani o bölgenin içinde en fazla hangi sınıftan örnek var ise onu output olarak verirsiniz.
+
+238
+00:48:23,835 --> 00:48:27,615
+Yani şuradaki sorduğum sonun cevabı bu. Sınıflandırma problemi için C nedir?
+
+239
+00:48:27,615 --> 00:48:34,295
+C, o bölgenin içerisine düşmüş olan örneklerin sınıflarından frekansa en yüksek olan sınıf hangisi ise odur.
+
+240
+00:48:34,655 --> 00:48:34,815
+Tamam.
+
+241
+00:48:36,375 --> 00:48:36,735
+Şimdi.
+
+242
+00:48:37,748 --> 00:49:03,827
+Peki, bu bölme işlemine ne zamana kadar devam edeceğiz? Yani hani ikiye bölüyoruz dedik ya her bir bölgeyi. Burada yapabileceğimiz neler var? Birincisi bir maksimum derinlik tanımlanabilir. Yani denebilir ki en fazla yirmi derinliğe kadar inilsin, yirmi derinlik daha fazla inilmesin diye. Bunlar bir hiperparametre. Hiperparametre demek ne demek? Parametre ile hiperparametrenin farkından bahsetmiş miydik?
+
+243
+00:49:04,628 --> 00:49:09,467
+Evet hocam, sistemin kendine tespit edemediği bizim önceden tanımlamamız gereken parametre.
+
+244
+00:49:09,467 --> 00:49:15,527
+Çok güzel. Maksimum derinlikle verilen bir hiperparametre bağlı olarak bunu yapabilirsiniz.
+
+245
+00:49:15,728 --> 00:49:25,728
+Ya da bölgenin saflığı ya da düzgünlüğü üzerinden, buradaki saflık sınıflandırma problemleri için, düzgünlük ise regresyon problemleri için düşünülebilir.
+
+246
+00:49:30,356 --> 00:49:55,576
+Önce sınıflandırma için. Bölgenin saflığına göre bir durma kriteri belirlerseniz şöyle bir şey diyebilirsiniz. Ben bölmeye her bir bölge içerisinde sadece tek bir sınıftan örnek kalana kadar, yani tek bir örnek kalana kadar değil bakın, tek bir sınıftan örnek kalana kadar. Yani o bölgenin içindeki bütün örneklerin hepsi aynı sınıftan olana kadar bölmeye devam et.
+
+247
+00:49:56,371 --> 00:50:19,931
+Bu demek saflık değerinin 100 olması. Yani %100 saf olsun. Her bölge saf olsun demek. Ya da şunu diyebilirsiniz. Bu da bir ihbar parametre işte. Yani %100 değil de %90 saf olsun. Yani içindekilerin %90'ı bir sınıftansa daha da artık bunu bölmeye devam etme. Bunu diyebilirsiniz. Regresyon içinse bölmeye ne zamana kadar devam et diyebilirsiniz.
+
+248
+00:50:23,092 --> 00:50:32,492
+O bölgenin içerisindeki örneklerin outputlarının standart sapması belli bir eşik değerinden büyük olduğu sürece bölmeye devam et diyebilirsiniz.
+
+249
+00:50:33,372 --> 00:50:37,892
+Şunu sorayım. Bir bölgenin içerisindeki örneklerin, regresyon için söylüyorum.
+
+250
+00:50:39,012 --> 00:50:45,272
+Outputların yani çıkışlarının standart sapması, standart sapma nereden geldi şimdi birden diye düşünebilirsiniz.
+
+251
+00:50:45,272 --> 00:50:49,652
+Standart sapma nereden geldi? Aslında şuradan geldi. Burası standart sapma değil mi? Nerede orası?
+
+252
+00:50:53,619 --> 00:50:54,519
+Şurası değil mi bakalım?
+
+253
+00:50:56,880 --> 00:51:05,099
+yi eksi ortalama i'lerin farklarının karelerinin standart sapma olarak bunu düşünebilirsiniz.
+
+254
+00:51:08,319 --> 00:51:10,699
+Standart sapmanın sıfır olması ne anlama gelir?
+
+255
+00:51:10,699 --> 00:51:17,699
+Bir bölgenin içindeki örneklerin outputlarının standart sapmasının sıfır olması ne anlama gelir?
+
+256
+00:51:18,440 --> 00:51:20,779
+%100 saflık dediğimiz şey değil mi hocam?
+
+257
+00:51:21,811 --> 00:51:33,251
+Yok, regresyon probleminden bahsediyorum şu anda. Yani çıkışlar sayı. Sınıflandırma için evet, %100 saflık ayrı bir şey. Ama standart satmanın sıfır olması regresyon için ne anlamıyor?
+
+258
+00:51:33,251 --> 00:51:36,791
+O zaman bütün noktalar o şeyin, fonksiyonun üzerinde.
+
+259
+00:51:38,431 --> 00:51:41,891
+Yani bütün noktaların outputları aynı.
+
+260
+00:51:41,891 --> 00:51:48,251
+Aynı, aynı değil mi? Bütün noktaların outputları aynı. Yani mesela şöyle bir şey düşünebilirsiniz.
+
+261
+00:51:49,748 --> 00:51:51,168
+Bunların hepsini şey yapalım.
+
+262
+00:51:58,708 --> 00:52:00,947
+Mesela şöyle bir şey yapalım.
+
+263
+00:52:16,724 --> 00:52:38,904
+Bir tane input'unuz var, bir tane output'unuz var. Yani burası X, burası da Y. Şimdi ben burada bölmeye ne zamana kadar devam edeceğim? Bölmeye ne zamana kadar devam edeceğimin kararı da mesela output'ların standart sapması üzerinden verebilirim. Output'ların standart sapması sıfır olana kadar devam edeceğim dersem ne olur? Mesela bu örnekte onu düşünelim.
+
+264
+00:52:39,443 --> 00:53:05,043
+Burada hepsi birden tek bir R ile başlayacak. Tek bir R ile başladığında bizim output'umuz ne olacaktır? Hepsinin çıkışlarının şöyle bir şey olacaktır değil mi? Çok da şey yapamadım ama böyle bir şey olacaktır. Böyle bir şeyin hatası zaten belli. Standart satması 0 değil. O zaman bu bölgeyi bölmemiz lazım. Bu bölgeyi bölmek için de nerelerden bölebiliriz bu bölgeyi?
+
+265
+00:53:06,099 --> 00:53:20,199
+Şuradan bölebiliriz, şuradan bölebiliriz, buradan bölebiliriz, buradan bölebiliriz, buradan bölebiliriz. Yani olası bir, iki, üç, dört, beş tane bölme var. Tam şuraları düşünürseniz. Tamam mı?
+
+266
+00:53:21,119 --> 00:53:23,739
+Şimdi bu beş tane bölgemeden hangisi daha iyidir sizce?
+
+267
+00:53:24,467 --> 00:53:50,567
+Tahmin edeceksiniz ki şurası daha iyidir, şuradan bölmek daha iyidir. Yani buradan böldüğümüzde, çünkü geri kalanların bu tarafın çıkışları ne olacaktır? Şöyle düz bir çizgiye oturabilecekler, burası da düz bir çizgiye oturabilecekler. Yani bunu buradan böldükten sonra burasındaki bölge için düz bir çizgi, bu taraftaki bölge için de düz bir çizgi ki o düz çizgi aslında standart satmanın da sıfır olduğunu.
+
+268
+00:53:51,088 --> 00:54:09,867
+Yani standart satmanın sıfır olduğu bir düz çizgi. Zaten hep düz çizgi üretecekler de. Ve o andan itibaren daha da bölmeye gerek kalmaz. Yani tek bir sefer bunu bölebilirsiniz. Peki, şöyle bir şey olsa, böyle bir şey değiştirsem. Hatta şunu da birazcık şöyle kaydırayım yukarıya.
+
+269
+00:54:18,527 --> 00:54:26,148
+Nasıl bir en sonda regresyon çizgisi elde ederim? Bunu yapalım bakalım.
+
+270
+00:54:28,228 --> 00:54:31,967
+Bakın, X'ler bunlar, Y'ler bunlar. Bir regresyon problemi.
+
+271
+00:54:31,967 --> 00:54:44,748
+Ve karar ağacına diyorum ki, senin büyüme durma kriterin standart satmanın sıfır olması.
+
+272
+00:54:45,588 --> 00:54:49,668
+Bu durumda acaba nasıl bir karar sınırı elde edilir?
+
+273
+00:54:50,588 --> 00:54:51,908
+Deminki, evet.
+
+274
+00:54:52,668 --> 00:54:55,168
+Her bir nokta için bir tane karar sınırı mı olur?
+
+275
+00:54:56,468 --> 00:55:00,708
+Yani yıldızdan sonra bir karar sınırı, ikinci yıldızdan sonra karar sınırı.
+
+276
+00:55:01,368 --> 00:55:05,808
+Karar sınırları olmaz onlar. Karar sınırı değil. Bir tane fonksiyon çizeceğiz.
+
+277
+00:55:06,748 --> 00:55:08,448
+Yani şöyle yapayım ilk önce. Bir dakika.
+
+278
+00:55:10,448 --> 00:55:12,328
+Karar sınır dediğimiz şey.
+
+279
+00:55:13,235 --> 00:55:29,255
+Veri sınıflandırma terimi. Şu anda biz bir regresyon probleminden bahsediyoruz. Mesela bu veri kümesi için standart satma sıfır olana kadar bölmeye devam et dediğimde üretilecek olan fonksiyon şöyle bir şey olur.
+
+280
+00:55:55,315 --> 00:56:19,395
+Tam bunlar üstünde değil gibi gözüküyor da ondan dolayı şu anda şey yapamıyorum. Tam bunun üstünde oldukları var senin hepsinin. Ve şurada da bir atlama olur zaten. Karar ağacının üreteceği fonksiyon budur. Yani şuradaki değerden küçük olanlar için şunu söyler, buradaki değerden büyük olanlar için bunu söyler, şu değeri söyler. Tamam mı?
+
+281
+00:56:23,188 --> 00:56:38,468
+Şunları istemiyorum artık. Şunu soruyorum. Bu mesela burada, bu da mesela şurada olsa. Karar ağacı algoritması nasıl bir fonksiyon üretir?
+
+282
+00:56:43,188 --> 00:56:45,028
+Standart satmanın sıfır olması durumunda.
+
+283
+00:56:46,628 --> 00:56:48,128
+Yani durma kriteri sıfır olursa.
+
+284
+00:56:57,684 --> 00:57:20,464
+Şöyle bir şey olur arkadaşlar. Şöyle düz bir çizgi gelir. Şunun üstünden geçer. Sonra tam şu ikisinin orta noktasına kadar ilerler. Orada zıplar. Orada şöyle düz çizgi devam eder. Sonra buradan aşağı doğru zıplar. Şurada tam nerede zıplar ama tam ikisinin ortasında zıplar. Sonra burada düz çizgi devam eder. Sonra şu noktada aslında bunu çizsem çok da zor olmaz herhalde.
+
+285
+00:57:26,739 --> 00:57:30,739
+Anadolu Tate'de bunu yapmak daha kolay olabilir mi?
+
+286
+00:57:40,083 --> 00:57:41,083
+Şahitlik.
+
+287
+00:57:47,155 --> 00:58:11,016
+Şöyle bir şey, sonra şöyle bir şey, sonra şöyle bir şey, sonra şöyle bir şey, sonra şöyle bir şey, sonra da şöyle bu gider zaten. Tamam mı? Böyle bir şey üretir. Eğer sıfır dersem. Tamam mı? Anlaşıldı mı? Evet.
+
+288
+00:58:11,539 --> 00:58:15,599
+Bu her bir girdiği bir sınıf olarak kabul ettiği anlamına mı gelir?
+
+289
+00:58:17,340 --> 00:58:23,239
+Hayır. Bu sınıf değil ki. Bir regresyon probleminden bahsediyoruz.
+
+290
+00:58:24,880 --> 00:58:28,239
+Her bir girdiği için ayırdığı anlamına gelir yani.
+
+291
+00:58:29,239 --> 00:58:33,239
+Eğer ki mesela şöyle bir şey olursa...
+
+292
+00:58:33,239 --> 00:58:34,159
+Dur, dur, dur.
+
+293
+00:58:35,891 --> 00:58:43,592
+Mesela şöyle bir durum olabilir. Yani o durumda onun için ayrı bir şey üretmez. Yani tam şu çizginin üzerine geleceğim. Pardon.
+
+294
+00:58:47,251 --> 00:59:11,871
+Beceremedim daha doğrusu. Şurada mesela tam bunun üstünde olan bir çizgi daha varsa onun için ayrı bir şey yapmaz. Anlatabildim mi? Yani burada mesela noktalar olsun, bunlar için ayrı şeyler üretmez. Buradaki olay ne? Sandal satmanın sıfır olmasından bahsediyorum. Sandal satmanın sıfır olması için böyle böyle bir şeyler olması gerekir.
+
+295
+00:59:13,780 --> 00:59:24,559
+İçerisinde tek bir tane örnek olursa ya da o örneklerin çıkışları birbirine eşitse tamamen o bölgedeki, o zaman standart satma sıfır olacaktır.
+
+296
+00:59:25,420 --> 00:59:32,180
+Peki hocam bu fonksiyonun eğri şeklinde olmasının imkanı yok değil mi karar aracı kullandığımızdan dolayı? İkiye bölünerek...
+
+297
+00:59:34,003 --> 01:00:00,664
+Şimdi şöyle, klasik karar ağaçları için bu söylediğin şey doğru. Öyle bir şey üretemezler. Nasıl ifade edelim onu? Tek değişken içeren, öyle söyleyeyim. Mesela buradaki karar düğümlerimizde ne var sadece? Mesela X3 özelliği, yani üçüncü özellik 2.45'den büyük mü?
+
+298
+01:00:01,204 --> 01:00:16,204
+Gibi sorular var. Bölgeler bu şekilde ayrılıyorlar. Bölgeler hep nasıl ayrılıyorlar fark ettiyseniz. Özelliklere dik olarak ayrılıyorlar hep. Ama eğer ki...
+
+299
+01:00:16,592 --> 01:00:29,032
+Çok değişkenli bir karar ağacınız varsa, Multi-Variate Decision Tree kullandıysanız, o durumda karar düğümlerinde şöyle şeyler yazar. W1x1 artı W2x2 büyüktür 3.48 mi?
+
+300
+01:00:29,391 --> 01:00:46,211
+Bu durumda, bu sefer şöyle bölmelerde ne yapabilirsiniz? Garajın içerisinde oluşturabilirsiniz. Ama bunlar hiperküpler olmazlar artık. Bölgeleriniz hiperküplüğü varsayımını kaldırmış olursunuz. Orada başka tarz bölgelere geçmiş olursunuz. Anlatabildim mi?
+
+301
+01:00:47,552 --> 01:00:48,891
+Anladım hocam, teşekkür ederim.
+
+302
+01:00:54,387 --> 01:00:56,387
+Bunları silmek için bir dakika bakalım.
+
+303
+01:00:58,387 --> 01:01:00,387
+Clear all drawings.
+
+304
+01:01:03,387 --> 01:01:09,387
+Şimdi karar ağaçların özellikleri ne dermiş? Çıkışla ilgisi özelliklerle boşa çıkabilirler.
+
+305
+01:01:11,387 --> 01:01:16,387
+Şimdi bir karar ağacı kullandığınızda, karar ağacın düğümlerine baktığınızda...
+
+306
+01:01:16,884 --> 01:01:33,523
+İşte şu özellik şundan büyükse, şu özellik şundan küçükse gibisinden bir sürü şeyler görürsünüz. Bazı özellikler karar ağacının içerisinde yer alırken ya da çoklukla yer alırken bazı özellikler karar ağacının içerisinde hiç yer almaya bilirler. Yani o özelliğe göre hiçbir düğüm oluşturulmamış olabilir.
+
+307
+01:01:34,324 --> 01:01:53,423
+O zaman bu aslında otomatik olarak da ne yapıyor demektir? Karar harcı algoritmaları bir özellik seçimi işlemi de gerçekleştiriyor demektir. Yani sizin ayrıca gidip bir özellik seçimi yaptıktan sonra karar harcına vermeniz gerekmez. Karar harcı algoritmaları kendisi zaten otomatik olarak bu işi yapıyorlar. İşin güzel tarafı bu.
+
+308
+01:01:53,907 --> 01:02:16,407
+Her bir özellik için önemli skoro hesaplayabilirler. Sayısal ve kategorik özelliklerle çalışabilirler. Sayısallar için mesela nedir? X, J küçüktür, eşit. Küçük eşit ya da küçüktür, eşik değeri diye kıyaslamalar yapılır. Kategorik özellikler için ise X, J eşittir, şu mudur diye ne bileyim ben.
+
+309
+01:02:18,324 --> 01:02:21,423
+Mesela renk özelliği kırmızı mıdır diye sorabilirsiniz.
+
+310
+01:02:23,103 --> 01:02:25,923
+Dolayısıyla hem sayısına hem kategorik özellikler çalışabilirler.
+
+311
+01:02:26,543 --> 01:02:30,244
+Ölçek farklılığına etkilenmedikleri için normalizasyon gerektirmezler.
+
+312
+01:02:30,244 --> 01:02:35,244
+Her bir özellik kendi içinde ele aldığından dolayı aslında...
+
+313
+01:02:36,083 --> 01:02:52,603
+Normalizasyon işlemi yapmaya burada gerek yoktur. Ama eğer deminki gibi Multivariate Decision Tree üretecekseniz, yani işte W1 çarpı X1 artı W2 çarpı X2 artı vesaire vesaire bu şekilde özellikleri birlikte işin içine katacaksınız. O zaman bir normalizasyon yapmanız gerekecek.
+
+314
+01:02:52,603 --> 01:03:01,083
+Ama klasik yani Univariate Decision Tree'ler için ölçek farklılığının bir anlamı, bir problem oluşturmuyor.
+
+315
+01:03:01,440 --> 01:03:19,840
+Hızlı üretilirler. Yani algoritmaların karmaşıklığı çok yüksek değil. En tane, küçük en tane, özellik büyük en tane örnek sayısı olsun ağacın derinliği ne olacaktır? Kabacı düşünürsek, ortalama olarak düşünürsek her bir adımda ne yapıyoruz biz? Elimizdeki örnek sayısını ikiye bölüyoruz değil mi her adımda?
+
+316
+01:03:28,820 --> 01:03:43,619
+Ortalama olarak. Logo en tane derinlik var ortalama. Her seviyede ise en tane örneği küçük en kez işliyoruz. Her bir özellik için her bir örnek bir daha bakılıyor her bir seviyede. Dolayısıyla karmaşıklığı da bir karar ağacı üretmenin karmaşıklığı da.
+
+317
+01:03:43,936 --> 01:03:56,615
+Küçük n çarpı, büyük n çarpı logaritma büyük n olarak karşımıza çıkıyor. Çok yüksek bir şey olmaya bilir diğer popüler algoritmalara göre.
+
+318
+01:03:58,275 --> 01:04:00,275
+Eksik özelliklerle başa çıkabilirler.
+
+319
+01:04:03,251 --> 01:04:30,112
+Mesela veri hükümesinin içerisinde bazı örneklerin bazı özellikleri yoktur. Bu durumda da başa çıkabilirler. Bu çok problem değil. Surgut özellikler kullanılabiliyor. Bunu araştırabilirsiniz. Herhangi bir özellik yoksa onun yerine geçebilecek özellikleri koyup yapıyorsunuz. Yani şöyle bir şey diyorsunuz. Test durumunda eğer ki mesela bir düğümden bahsedelim. O düğüm diyor ki mesela 27. özellik 3.2'den büyüksediyor.
+
+320
+01:04:31,923 --> 01:04:57,903
+Bir test datası geldi. Tam da o düğme geldi. Ama o test datasının 27. özelliği yok. Bu durumda karar ağacının içerisinde şöyle bir mekanizma olabilir. Yani buna bu özellik eksik ise o zaman git şu özelliğin şu eşiklerine göre. Yani onun yerine geçebilecek her bir düğümün içerisine ne diyelim onlara yedek düğümler koyabilirsiniz. Bunlar oldukça güzel çalışıyorlar.
+
+321
+01:04:58,420 --> 01:05:15,000
+Az sayıda hiperparametreleri var. Böyle çok fazla ayrılanabilir bir şeyleri yok aslında. Deterministik bir algoritma bunlarda. Deterministik ne demekti? Aynı verilerle hep aynı sonucu var. Yani işin içinde rastgelelik burada yok. Ve yorumlanabilir bir model. Bu da güzel bir tarafı.
+
+322
+01:05:16,280 --> 01:05:23,040
+Hocam bir de ufak bir şey sorabilir miyim? Bu yeri madenciliğinde non değerler oluyordu datada.
+
+323
+01:05:23,539 --> 01:05:33,059
+Onunla ilgili hani şimdi biraz önce bahsettiğiniz o dummy değer diyeyim. O non değerler yerine kullanılabilir mi? Ya da o tarz bir yaklaşım mı var yoksa tamamen farklı şeyler mi?
+
+324
+01:05:34,759 --> 01:05:49,739
+Şimdi oradaki non dediğin şeyin anlamının ne olduğuna bağlı. Yani şimdi eksik olmak başka bir şey. Yani o verinin olmayışı. Mesela bir test örneğiniz var. O test örneğinizde o özellik yok.
+
+325
+01:05:55,860 --> 01:05:56,960
+İnternetim döndü.
+
+326
+01:06:00,371 --> 01:06:02,771
+Oca'nın kim dondu?
+
+327
+01:06:03,771 --> 01:06:04,211
+Aynen.
+
+328
+01:06:10,547 --> 01:06:12,007
+Sorun bayağı etkiliydi.
+
+329
+01:06:41,523 --> 01:06:45,083
+[öğrenci] kadrosuna atandı bir anda. Yeni [öğrenci] olarak.
+
+330
+01:06:46,043 --> 01:06:48,723
+Derse ben devam edeceğim şimdi. Hayırlı olsun.
+
+331
+01:06:50,203 --> 01:06:53,083
+Ama ekran paylaşımı yapmayacağım arkadaşlar. Sorunuz varsa alabilirim.
+
+332
+01:06:54,723 --> 01:06:55,543
+Bence dağılır.
+
+333
+01:06:55,923 --> 01:07:00,844
+Bu kadar hızlı yükseldiysen bence her şeyi anlatabilirsin bize bir şey göstermeden.
+
+334
+01:07:02,804 --> 01:07:05,183
+O zaman arkadaşlar bugün de bu kadar. Sorunuz yok madem.
+
+335
+01:07:06,284 --> 01:07:07,244
+Ve bu muci işte.
+
+336
+01:07:08,403 --> 01:07:12,003
+Koca geri döndüğünde hostluğu vermen gerekecek mi? Otomatik atanıyor mu?
+
+337
+01:07:12,304 --> 01:07:16,923
+Otomatik atanması lazım. Hani başıma gelmişti, otomatik atanmıştı.
+
+338
+01:07:25,652 --> 01:07:28,672
+Bu ödevleri falan konuşmak için bir WhatsApp grubu kurabiliriz.
+
+339
+01:07:30,952 --> 01:07:34,272
+Telegram daha iyi olabilir. Herkes numarasını vermek istemeyebilir.
+
+340
+01:07:35,452 --> 01:07:35,972
+Olabilir.
+
+341
+01:07:37,792 --> 01:07:40,952
+Grup atıyorum. Biraz bekleyin istiyorsanız.
+
+342
+01:07:50,931 --> 01:07:53,051
+Her türlü faydalı olur WhatsApp grubu.
+
+343
+01:07:57,012 --> 01:07:58,552
+Numarasını vermek istemeyen ben mi?
+
+344
+01:08:02,324 --> 01:08:09,063
+Invite linki chatten paylaşırsanız oraya direkt girmek isteyenler katılır bence.
+
+345
+01:09:36,340 --> 01:09:38,940
+Biz Telegram mı kullanacağız şimdi? Anlamadım ben az önce.
+
+346
+01:09:41,819 --> 01:09:46,159
+WhatsApp olsun işte ya. Her dersin grubu var zaten.
+
+347
+01:09:47,960 --> 01:09:50,500
+Tamam da o zaman herkes numarasını kim kuracak WhatsApp'ı?
+
+348
+01:09:51,600 --> 01:09:52,920
+Numara gönder, gönder.
+
+349
+01:09:52,920 --> 01:09:56,600
+Bir grup buraya invite şeyini atarsa olur edelim.
+
+350
+01:09:56,880 --> 01:09:57,420
+Tamam.
+
+351
+01:09:58,420 --> 01:09:59,260
+Tamam, kurayım mı?
+
+352
+01:09:59,520 --> 01:10:00,000
+Tamam, kur.
+
+353
+01:10:00,559 --> 01:10:01,659
+Tamam, ben kuruyorum.
+
+354
+01:10:49,747 --> 01:10:52,827
+Merhaba arkadaşlar. Koptum. Yine geldim.
+
+355
+01:10:53,007 --> 01:10:53,427
+Merhaba hocam.
+
+356
+01:10:54,787 --> 01:11:00,807
+Şimdi şeyde kalmıştık tabii bir saniye. Tam neyi anlatıyordum size?
+
+357
+01:11:00,807 --> 01:11:02,807
+Şundan olayına.
+
+358
+01:11:04,756 --> 01:11:13,496
+Hocam, normalde biz o dataset'inde non olanları elimine edip ondan sonra sistemi çalıştırmaya başlıyoruz algoritmayı.
+
+359
+01:11:14,275 --> 01:11:23,556
+Yani şöyle bir şey mi yapıyordunuz? Herhangi bir örneğin non özelliği varsa o örneği dataset'ten silmekten bahsediyorsun değil mi?
+
+360
+01:11:23,556 --> 01:11:32,176
+O da bir yaklaşım. Diğer bir yaklaşım da sadece o parametre için dataset'in ortalama değerini de oraya yazabilirsin.
+
+361
+01:11:32,756 --> 01:11:33,896
+Doğru. Tamam.
+
+362
+01:11:34,435 --> 01:11:42,476
+Böyle bu tarz yaklaşımlarla şey yapıyorduk. Siz anlattığınız diğer ek bir, nasıl diyeyim, yedek bir sayıdan.
+
+363
+01:11:42,636 --> 01:11:45,336
+Sörgüt, ha? Sörgüt karar var.
+
+364
+01:11:45,876 --> 01:11:49,435
+Aynen. Bununla onun bağlantısı var mı? Orada kullanılabilir mi?
+
+365
+01:11:50,515 --> 01:11:56,736
+Yani orasının o özelliğin non olması durumunda kullanılabilir. Evet, kullanılabilir.
+
+366
+01:11:57,876 --> 01:12:19,796
+Yani Missing yerine Nansa onu çağır diyebilirsin. Herhangi bir sıkıntı olmaz. Ama bazı şöyle durumlar olabilir. Missing aslında bir… Nasıl ifade edeyim onu?
+
+367
+01:12:22,003 --> 01:12:48,943
+Missing bir şey ifade ediyor olabilir. Öyle söyleyeyim. Missing'in kendisi, o veriye erişilemiyor olması da sınıfı belirleyen bir şey olabilir. Anlatabildim mi? O veriye erişilemiyorsa onun sınıfı belirleme üzerinde bir etkisi olabilir. O durumda bunu Sörgüt falan gibisinden bir şeyle ele almak doğru olmayabilir. Veri kümesinden veri kümesine bu değişebilir ama bazı durumlarda Missing bir anlam ifade ediyor olabilir.
+
+368
+01:12:50,003 --> 01:12:57,603
+Dolayısıyla o gibi durumlarda BISING'i ayrı bir kategori, ayrı bir değer olarak görüp işleme almak makul bir hareket olabilir.
+
+369
+01:12:58,343 --> 01:12:59,283
+Anladım hocam.
+
+370
+01:13:00,564 --> 01:13:01,724
+Rica ederim.
+
+371
+01:13:02,644 --> 01:13:15,263
+Şimdi karar ağaçlarının kısıtları var. Bir dakika. Onları şimdi şey yapmaya çalışıyorum. O zaman şöyle bir şey yapalım. Bir ara verelim arkadaşlar. Çünkü bir 15-20 dakika daha sürecek herhalde burası.
+
+372
+01:13:15,680 --> 01:13:19,600
+Bir ara verelim. Ondan sonra kaldığımız yerden devam edelim.
+
+373
+01:13:19,600 --> 01:13:32,760
+Şimdi, bakayım saatimiz 15 çeyrek 15 çeyrek 15.26 diyebiliriz.
+
+374
+01:13:32,760 --> 01:13:35,600
+Çok da 10 dakikalık bir.
+
+375
+01:13:38,180 --> 01:13:41,380
+Şuraya yazalım. 15.25'e.
+
+376
+01:13:42,515 --> 01:13:51,775
+Arkadaşlar, ara. Evet arkadaşlar. 9-10 dakikalık bir ara verelim. Sonra beraber olacağız tekrardan. Görüşmek üzere.
+
+377
+01:13:51,795 --> 01:13:59,055
+Hocam bir de bir şey diyecektim de arkadaşlar. Siz de gelebilirsiniz. WhatsApp grubu kurduk da topluca. Tabii isterseniz.
+
+378
+01:14:01,575 --> 01:14:03,575
+Tamam, peki. Teşekkürler.
+
+379
+01:24:25,619 --> 01:24:37,100
+Evet arkadaşlar, karar ağaçlarının özelliklerinden, iyi taraflarından bahsettik. Biraz da kısıtlarından bahsedelim.
+
+380
+01:24:39,979 --> 01:24:47,879
+Şimdi, sürekli olmayan çıkışlar. Yani şöyle bir şeyden bahsedelim. Şurada çizmiştik bir tane bir yer.
+
+381
+01:24:53,652 --> 01:24:55,652
+Düşünürsek...
+
+382
+01:24:56,971 --> 01:24:58,652
+Şuradan...
+
+383
+01:24:59,652 --> 01:25:00,652
+Şunun rengini...
+
+384
+01:25:20,819 --> 01:25:40,239
+Mesela şöyle bir sınıflandırma problemimiz olsun. İki boyutlu örneklerimiz var. Böyle bir sınıflandırma problemimiz var. Burada karar sınırının eğer bir karar ağacıyla üretirseniz, karar ağacının ürettiği karar sınırları nasıl olmak zorunda dedik. Eksenleri dik olmak zorunda. Yani şöyle bir verebilir bir şey üretemeyecek.
+
+385
+01:25:41,719 --> 01:25:45,399
+Dolayısıyla peki burada nasıl bir şey çıkacaktır? Yani kabaca şöyle bir şey olacak aslında.
+
+386
+01:25:46,963 --> 01:25:49,564
+Çok çok iyi çizemeyebilirim ama deneyelim.
+
+387
+01:25:52,756 --> 01:26:10,775
+Yani belki şöyle, sonra şöyle, sonra şöyle, sonra şöyle bir şey çizecektir. Yani bir merdiven gibi, bunu daha da fazla olduğundan düşünün böyle merdiven gibi bir şeyler oluşacaktır. Şuradan bölecek, buradan bölecek, buradan bölecek, buradan bölecek vesaire vesaire.
+
+388
+01:26:23,444 --> 01:26:45,304
+Sürekli olmayan çıkışları var. Merdiven etkisi bu aslında. Merdivenin küçük basamaklar olması için çok fazla sayıda örneğe ihtiyacınız var. Deminki örnekte bir sürü örneği çizerseniz oraya, oradaki merdivenin çok daha küçük küçük basamaklarla öyle sanki linere yakınmış gibi falan bir şey üretebileceğini düşünebilirsiniz. Ama onun olabilmesi için de çok fazla miktarda örneğe ihtiyaç olacaktır.
+
+389
+01:26:48,340 --> 01:27:05,340
+Derinlere gidildikçe düğümlerin belirlenmesinde kullanılan örnek sayısı azalıyor değil mi arkadaşlar? Her seferinde, her bir adımda hatırlarsanız işte bölüne bölüne gidiyorlar. Dolayısıyla en altlardaki, aşağı seviyelerdeki bölgelerin çıkışlarının ne olacağının belirlenmesinde...
+
+390
+01:27:06,163 --> 01:27:27,983
+Giderek az sayıda örnek kullanılıyor. Az sayıda örnek, özellikle çok sayıda özellik varsa çok güvenilir altlıklar vermeyebilir. Bu dediğim gibi özellikle büyük boyutlu veriler için bu bir problem oluşturabilir. Çok derin ağaçlar o yüzden çok çok istemeyebiliriz.
+
+391
+01:27:34,163 --> 01:27:46,043
+Önümüzde tam kollektif öğrenmeye giriş yapacağız zaten. Orada tek bir ağaç yerine birçok ağaç kullanarak bu tarz problemlerin önüne geçebileceğimizi göreceğiz.
+
+392
+01:27:47,823 --> 01:27:58,304
+Özellikler çıkışı birbirleriyle etkilişme girmeden etkiliyorsa, yani sizin gerçek fonksiyonunuz şöyle bir şey ise, bakın.
+
+393
+01:27:58,739 --> 01:28:05,279
+A, J çarpı X, J. Yani buradaki A'lar katsayılar. İkisiler de bizim inputlarımız.
+
+394
+01:28:05,747 --> 01:28:33,747
+Yani bu aslında tam tahmin ettiğiniz gibi işte bir linear fonksiyon gibisinden bir şey. Linear bir fonksiyon olduğunda ağacın çok iyi bir şey yapamadığını aslında söylemiş olduk. Birbirleriyle etkileşime girmeden etkiliyorlarsa bu iyi değil. Çünkü bölgeler etkileşimi ifade eder. Yani bölgelerimiz aslında yukarıdan aşağı doğru bölgeleri okuduğunuzda her bir bölge tek bir tane karar düğümüne bağlı değildir. Her bir bölge kendi karar düğümüne artı onun üstünde.
+
+395
+01:28:33,747 --> 01:28:44,247
+Ruta kadarki bütün kararların hepsine birden bağlıdır. Mesela x1'i 2'den küçüktür ve x3'ü 4'den küçüktür gibisinden durumlar var.
+
+396
+01:28:44,587 --> 01:28:49,927
+Dolayısıyla bunlar etkileşim anlamına geliyorlar. Bu durumlarda da iyi bir yaklaşım olmuyor.
+
+397
+01:28:50,667 --> 01:28:54,107
+Çıkış çok fazla özelliğe bağlı ise iyi değil.
+
+398
+01:28:54,511 --> 01:29:18,172
+Çünkü çok derin bir ağaç oluşuyor. Derinlerde de örnek sayısı az oluyor. Bu durumda da yine bahsettiğim gibi çok büyük boyutlu verilerle çalışıyorsanız, bu da mesela bir resmin piksellerini özellikler olarak kullanmaya kalkarsanız, bu durumda kararaçları çok iyi sonuçlar vermeyeceklerdir.
+
+399
+01:29:19,891 --> 01:29:29,231
+Özellikle ağacın derin bölgelerinde çok az sayıda örnek var ama binlerce boyut var. Burada çok sağlam güvenilir sonuçlar çıkmayabilir.
+
+400
+01:29:29,231 --> 01:29:33,851
+Eğitim kümesindeki küçük değişimler ağaçta büyük değişimlere sebep olabilir.
+
+401
+01:29:33,851 --> 01:29:40,731
+Aynı dağılımda, bunu nasıl ifade edelim?
+
+402
+01:29:41,524 --> 01:30:07,744
+Veri kümesindeki küçücük bir değişiklik, ağaçta büyük değişime sebep olabilir. Yani ağacın yapısını gerçekten çok fazla değiştirebilir. Bu karar ağaçların bir özelliği. Bu tek bir karar ağacı kullanılıyorsa kötü bir şey. Ama birden fazla karar ağacı kullanılıyor ise, yani kollektif öğrenmede ondan bahsediyorum, bu iyi bir özellik haline geliyor. Bunu göreceğiz daha sonra.
+
+403
+01:30:08,948 --> 01:30:32,788
+Açgözde algoritma sebebiyle yukarıda yapılan bir yanlış hiç düzeltilmez. Açgözde algoritma demek ne demek arkadaşlar? Greedy algoritm ne demek? Greedy algoritmalar. Greedy algoritmalar, açgözde algoritmalar. Bir karar verip bir daha arkasına bakmayan demek. Tamam. Bu şekilde bir analoji düşünebilirsiniz.
+
+404
+01:30:33,279 --> 01:30:55,159
+Buradaki kararacı algoritmasını düşündüğünüz zaman hakikaten mesela aşağılarda bir yerlerde ben yukarıda bir yeri yanlış yapmışım demek ki gibi bir mekanizma yok. Yani aşağıdan daha sonra tekrar yukarı güncelleme gibisinden bir mekanizma burada farkındaysanız yok. Dolayısıyla yukarıda yapılan bir yanlış bir şey varsa o hiçbir şekilde düzelmiyor.
+
+405
+01:30:55,600 --> 01:31:07,680
+Özellikler arası korrelasyon yüksek ise farklı görüntülere sahip ağaçların fonksiyonel uzayındaki, yani output uzayındaki görünümleri benzer olabilirler. Bu da bir başka özelliği yine.
+
+406
+01:31:10,260 --> 01:31:17,040
+Şimdi aç gözlü gridi bir yaklaşım, bir karar verilir ve bir daha geriye dönülmez. Optimal karar ağacını oluşturur mu? Hayır, oluşturmaz.
+
+407
+01:31:18,355 --> 01:31:36,475
+Ama optimal karar ağacını bulmak NP tarzında bir problem olduğu için, demin bahsetmiştik ya, birleşik optimizasyon probleminden bahsetmiştik. O problemin çözümü yerine grid bir yaklaşım tercih ediliyor. Peki, her türlü eğitim kümesine tam uyum sağlar mı bir karar ağacı?
+
+408
+01:31:36,475 --> 01:31:43,595
+Evet, yani eğitim kümesini ne kadar karmaşıklaştırırsanız, karmaşıklaştırılmış sınıf andırma problemi için düşünün mesela.
+
+409
+01:31:45,268 --> 01:31:59,268
+O eğitim kümesinde %100 sonuç veren bir karar ağacını üretebilirsiniz. Dolayısıyla oldukça esnek evrensel algoritmalardan karar ağaçları. Onun tek bir istisnası var ama çok da belki...
+
+410
+01:31:59,604 --> 01:32:17,024
+Ne bileyim karşınıza bir yerler çıkar mı? Aynı noktada hem A sınıfından hem B sınıfından birer örnek var ise mesela bu durumda %100 diye bir şey olmaz ki ama bu karar araştırmanın problemi değil. Bu durumda hiçbir algoritma %100 başarıya ulaşmaz. Eğitim kümesindeki başarıdan bahsediyorum tabii.
+
+411
+01:32:18,131 --> 01:32:35,511
+Peki alternatifleri neler? Birden fazla özelliğe bağlı ürünler. Yani multivariate decision trees kullanılabilir. İkiden fazla dal kullanılabilir. Yani şu anda biz hep ikiye böldük. Binary triler oluşturduk ama daha turner triler vs. bunlar kullanılabilir.
+
+412
+01:32:42,899 --> 01:33:03,299
+Ben şuradan bölsem ne olur biz şu anda sadece odaklandık. Ama daha ileri seviyede şunu yapabilirsiniz. Şuradan bölersem ve ondan sonra da şuradan da bölersem diye daha büyük bir uzayında arama yapıp daha doğru kararlar verebilirsiniz belki. Bunlar da çeşitli alternatifleri.
+
+413
+01:33:05,076 --> 01:33:11,556
+Şimdi son bir şeyden bahsedeceğim ama bunu çok fazla uzatmayacağım.
+
+414
+01:33:12,356 --> 01:33:21,076
+Şimdi ilk bahsetmek istediğim şey çevrim içi ya da artımlı algoritmalar.
+
+415
+01:33:21,856 --> 01:33:27,796
+Eğitim kümesine yeni örneklerin katılması durumunda baştan eğitime ihtiyaç duymayan algoritmalardır.
+
+416
+01:33:27,796 --> 01:33:29,696
+Çevrim içi online algoritmalar.
+
+417
+01:33:30,131 --> 01:33:44,931
+Bu özellikle çok büyük veri kümesine sahip ve dağılım değişimi olan problemler için oldukça uygundur. Çok büyük veri kümesine sahip problemler için uygun olması ne demek? Şöyle söyleyelim.
+
+418
+01:33:45,332 --> 01:34:11,292
+Bir algoritma bütün verilerini, mesela şimdi bu karar ağacı algoritmasını düşünelim. Karar ağacı algoritmanız herhangi bir düğümde, mesela işte root'u düşünün, root'ta bölme yapacaksınız. Bölme yaparken bütün örneklerin, bütün özelliklerinin hepsini birden kullanıyor değil mi? Hepsine birden bakıyor. Yani şuradan bölersem ne olur, şuradan bölersem ne olur hani iyiliklerini hesaplayacak ya. O iyilikleri hesaplarken bütün örneklerin, bütün özelliklerine ihtiyacı var.
+
+419
+01:34:12,051 --> 01:34:21,891
+Bazı durumlarda gerçekten çok büyük datasetlerle uğraşıyorsanız, bu bazen hafızaya yetmeyecek büyüklüklere de erişebilir.
+
+420
+01:34:23,691 --> 01:34:30,051
+Dolayısıyla bu tarz durumlar için kararacı algoritması o manada çok iyi değil.
+
+421
+01:34:30,832 --> 01:34:51,412
+Çevrim içi algoritmalar örnekleri teker teker ya da küçük boyutlu mini-batch'ler şeklinde alırlar içeriye. Ve ona göre algoritma kendini günceller. Ona göre parametreler bulunurlar. Dolayısıyla bu çevrim içi algoritmalar çok büyük bir hükümesine sahip.
+
+422
+01:34:58,228 --> 01:35:26,028
+Bir sentiment analiz için bir veri kümesi oluşturdunuz. Onunla ilgili bir model de kurdunuz. Bu modelinizi çalıştırmaya başladınız. Bu sentiment analizi tahmin yapan algoritmanız muhtemelen zaman geçtikçe performansı kötüleşecektir. Neden? Dil yaşayan bir şey. Dolayısıyla jargonlar yeni yeni jargonlar çıkabiliyor. Yeni kavramlar ortaya çıkabiliyor. Bunlara dair tweetler atılabiliyor. Yepyeni tweetler, yepyeni birleşimler.
+
+423
+01:35:26,228 --> 01:35:39,427
+Bu durumda sizin ne yapmanız gerekir? Yeni bir eğitim kümesi toplayıp bunun içerisine dahil etmeniz gerekir, güncellemeniz gerekir, öyle söyleyelim.
+
+424
+01:35:39,828 --> 01:35:54,188
+Bu durumda sıfırdan eğitim yapmak yerine yeni örnekler geldikçe algoritmanın içerisine verebilseniz bu çok daha esnek bir yapı sağlar. En baştan sıfırdan eğitim yapmak yerine bu tarz arttırılım şekli ilerletebilseniz bu çok daha iyi olur.
+
+425
+01:35:54,543 --> 01:36:13,764
+Bu tarz algoritmalar neler var? Mesela yapay siniralları böyle çalışıyor. Yani çevrim içi algoritmalardır. LVQ, Self Organizing Map, çevrim içi K-Means, online K-Means, bunlar hep bu tarz algoritmalardır. Ama karar araçları böyle değil. Demin bahsettiğimiz karar araçları böyle değil ama çevrim içi versiyonları da var. İşin güzel tarafı.
+
+426
+01:36:20,372 --> 01:36:28,771
+Size bırakalım. Öyle yapalım. Bu çevrim içi versiyonlar sizde dursunlar. Zaten çok uzun bir şey değil. Yani hofting ağaçları var.
+
+427
+01:36:30,804 --> 01:36:49,444
+Yani ağaç başlangıçta bir kere üretilip bitmiyor, öyle söyleyeyim. Ağacın üretimi, değişimi yeni örnekler geldikçe sürüyor. Ama en baştan yapılmıyor eğitim, öyle söyleyeyim. Yani bir karar ağacı oluşturuluyor, ondan sonra yeni örnekler geldikçe bu karar ağacı güncelleniyor. Öyle ifade edebilirim aslında.
+
+428
+01:36:51,188 --> 01:37:02,468
+Bunlar da dediğim gibi şu özellikleri sayesinde büyük veri hükümelerine sahip problemler için ya da dağılım değişimi olan problemler için oldukça uygun hale getiriyor karar açlarını.
+
+429
+01:37:06,131 --> 01:37:27,931
+Evet, tamam. Benim bugünlük anlatacaklarım bu kadar. Şimdi vaktimiz var aslında. Dersinin sonuna kadar bugün sizlerden yaptığınız ödevleri dinlemek isteriz. Birbirimizden faydalanmak için.
+
+430
+01:37:29,652 --> 01:37:54,692
+Konuyla alakalı konuyu geçmeden birkaç soru istiyorum. İlki şey, bu slide'ları sitenize yüklediniz mi? Karar ağacını mı? Varlar mı? Karar ağacını koymadım daha ama diğerleri var. Koyacaksınız değil mi hocam? Evet. Tamam. Bir de hocam şey, kısacık böyle şu Light GBM hakkında bilgilerinizi öğrenmek isterim.
+
+431
+01:37:56,148 --> 01:38:00,927
+Çok popüler ve çok güzel olduğu için sormak istedim.
+
+432
+01:38:01,087 --> 01:38:02,867
+Geleceğiz oraya, daha gelmedik.
+
+433
+01:38:03,347 --> 01:38:04,447
+İleride, tamam.
+
+434
+01:38:05,587 --> 01:38:06,367
+Tamam hocam.
+
+435
+01:38:06,787 --> 01:38:06,987
+Tamam.
+
+436
+01:38:09,127 --> 01:38:12,447
+Ama kabaca şunu söyleyebilirim rahatlıkla, bir ensemble yöntemi.
+
+437
+01:38:13,148 --> 01:38:15,667
+Yani bir kollektif öğrenme yöntemi. Tek bir ağaç değil o.
+
+438
+01:38:17,427 --> 01:38:19,648
+Evet, başka sorusu olan var mı?
+
+439
+01:38:23,699 --> 01:38:33,579
+Peki. Kimler ödev yaptı burada? Şu anda 17 kişi var. Kimler bana ödev gönderdi? Öyle söyleyelim.
+
+440
+01:38:35,879 --> 01:38:36,899
+Ben gönderdim hocam.
+
+441
+01:38:37,579 --> 01:38:40,019
+[öğrenci]'i? Evet, [öğrenci] gönderdi. Başka?
+
+442
+01:38:40,459 --> 01:38:41,599
+Ben gönderdim hocam.
+
+443
+01:38:42,679 --> 01:38:44,039
+Bir dakika, bir daha söyle.
+
+444
+01:38:44,139 --> 01:38:45,239
+Ben de gönderdim hocam.
+
+445
+01:38:45,999 --> 01:38:47,919
+[öğrenci], [öğrenci]. Başka?
+
+446
+01:38:48,199 --> 01:38:48,999
+[öğrenci].
+
+447
+01:38:50,515 --> 01:39:13,655
+[öğrenci], [öğrenci], [öğrenci], [öğrenci], neredesin [öğrenci]? [öğrenci] gördüm. [öğrenci]. Yok hocam [öğrenci]. Pardon, o alttaymış. Evet başka, gönderen?
+
+448
+01:39:14,676 --> 01:39:16,036
+Ben hocam [öğrenci].
+
+449
+01:39:16,476 --> 01:39:19,855
+[öğrenci] gönderdi. Evet, başka?
+
+450
+01:39:22,855 --> 01:39:25,895
+Peki, o zaman [öğrenci]le başlayalım.
+
+451
+01:39:27,855 --> 01:39:30,176
+Ekranı paylaşımı alabilirsiniz herhalde.
+
+452
+01:39:30,916 --> 01:39:31,256
+Tamam.
+
+453
+01:39:31,256 --> 01:39:35,136
+Bana gönderdiğiniz raporun üzerine anlatabilirsiniz. Sıkıntı değil.
+
+454
+01:39:36,956 --> 01:39:38,496
+Şu an geldi mi?
+
+455
+01:39:40,180 --> 01:39:42,480
+Geliyor galiba. Geldi.
+
+456
+01:39:43,760 --> 01:39:44,280
+Tamam.
+
+457
+01:39:46,060 --> 01:39:48,620
+Görünürlük akşamadan bir şey daha sorsam.
+
+458
+01:39:49,900 --> 01:39:50,680
+Evet.
+
+459
+01:39:51,180 --> 01:39:54,520
+Bu raporları Jüpiter notlukta yazabiliyor muyuz?
+
+460
+01:39:55,540 --> 01:40:03,980
+Çünkü aynı şeyi aslında rapora geçiriyoruz. Jüpiter'de de rapor mantığında olduğu için tek bir dosyada Jüpiter üzerinden verebiliyor muyuz size?
+
+461
+01:40:06,420 --> 01:40:27,420
+Yani grafikleri falan orada çizdirebilir misiniz? Çizdirebilirsiniz. Ama tablolar, şunlar bunlar falan istiyorum. Tabloda oca, Pandas DataFrame'de falan yapabiliyoruz. Yani yapıp bana PDF olarak gönderebilirsiniz. Herhangi bir sıkıntı yok. Yani Jupyter'i PDF'e çevirebilirsiniz değil mi? Evet. Olur, hiç sıkıntı değil. Hiç problem değil.
+
+462
+01:40:31,604 --> 01:40:33,604
+Evet, [öğrenci] sen değilsin.
+
+463
+01:40:33,604 --> 01:40:46,604
+Tamam, başlıyorum. Şimdi ben de fonksiyon seçerken öncelikle çok zorlandım. Hani tam nasıl olacağını anlayamamıştım. Sonra şey olarak karar verdim. Hani iki boyutlu kuadratif fonksiyonlar bulayım, konveks, onları birbiriyle toplayayım şeklinde.
+
+464
+01:40:46,604 --> 01:40:54,604
+Hep böyle oldu yani. Mesela x0'ın karesi, x1'in karesi, işte artı üç, şöyle bir de yanına linear fonksiyonu rekledim.
+
+465
+01:40:54,671 --> 01:40:59,971
+Ama onlar çok bağımsız oluyordu. O yüzden hoşuma gitmeden x1 kendi takılıyor, x2 kendi takılıyor gibi.
+
+466
+01:40:59,971 --> 01:41:07,471
+Şu fonksiyon biraz iyi oldu bence. İşte karesini alıyor, karesini alıyor. Şurada x6 ile x7 çarpılıyor, burada x7 ile x8 çarpılıyor.
+
+467
+01:41:07,471 --> 01:41:16,771
+Şu iki star da karesi anlamına geliyor. İkinci fonksiyonum da öyle. Onda da x üzeri 4'ler ekledim. Onlar da konveks oluyor diye.
+
+468
+01:41:19,731 --> 01:41:34,692
+Bir tane polinomlar oluyor ya, iki tane bir lokal minimum oluyor, bir global minimum oluyor. Öyle bir polinom fonksiyonu buldum. Onu konveks fonksiyonlarla toplayarak non-konveks fonksiyon elde ettim.
+
+469
+01:41:36,992 --> 01:41:43,652
+Başlangıç noktalarımda önce sıfırla bir arasında on tane rastgele nokta oluşturdum. O şu.
+
+470
+01:41:44,079 --> 01:41:56,880
+Diğeri, normal dağılımdan gelen normal nokta oluşturdum. Birinin tamamını 1 aldım. Birinin 0'a yakın bir şey aldım. Diğerini de 0.1, 0.2 böyle linear artan bir şey aldım. Farklı olsun diye.
+
+471
+01:41:57,399 --> 01:42:04,560
+Sonra bu learning rate'leri belirleyip çalıştırdım algoritmaları. Hepsi aynı noktaya indiler.
+
+472
+01:42:06,519 --> 01:42:08,416
+Gradient descent daha...
+
+473
+01:42:08,416 --> 01:42:13,916
+Az şeyle gitti. Normalde Adam'ı beklerdim ama o daha az güncelleme yollara ulaştı.
+
+474
+01:42:13,916 --> 01:42:22,416
+Koordinat Dissend'in genelde çok yüksek. Onu 10'da 1 olarak da düşünebiliriz. Belki adil karşılaştırmak için.
+
+475
+01:42:22,416 --> 01:42:28,416
+Çünkü bir boyuta göre türev alıyor, sonra ikinci boyuta göre alıyor. Ben onların hepsini ekleye ekleye yaptım.
+
+476
+01:42:28,416 --> 01:42:34,416
+Bu 10 boyutu birden güncelliyorken, Koordinat Dissend bir tanesini güncelliyor gibi.
+
+477
+01:42:35,667 --> 01:42:41,268
+İşte böyle, şurada non-commonistlerde farklı noktalara indiler.
+
+478
+01:42:42,068 --> 01:42:44,068
+Burada da farklı noktalara indiler.
+
+479
+01:42:44,467 --> 01:42:49,268
+Mesela şurada Adam daha iyi noktaya iniyorken burada Core-Diescent daha iyi noktaya iniyor.
+
+480
+01:42:49,268 --> 01:42:53,268
+Burada da diğerleri Core-Diescent ve Cray-Diescent daha iyi noktalara iniyor.
+
+481
+01:42:54,167 --> 01:43:01,268
+Yörüngeleri çizdirirken de, şimdi 10 boyutlu X'ler vardı. Böyle her iterasyonda bir tane 10 boyutlu X geliyordu.
+
+482
+01:43:01,268 --> 01:43:03,268
+Onları PCL iki boyuta indirdim.
+
+483
+01:43:03,828 --> 01:43:12,228
+Onları ve bir yandan da bizim olduğumuz fonksiyonun değerleri değişiyor. Sürekli düşen önce 10 sonra 9 sonra 8 minimum noktaya doğru.
+
+484
+01:43:12,228 --> 01:43:18,927
+O iki değeri ve fonksiyonun değeri z olacak şekilde böyle çizdirdim. Yazıyor hangisinin hangisi olduğu.
+
+485
+01:43:18,927 --> 01:43:29,927
+Edm'ın şekilleri hep daha güzel görünüyor. Daha böyle smooth görünüyor. Koordinat design de tırtıklı görünüyor. Boyutuna göre aldığı için olabilir.
+
+486
+01:43:31,220 --> 01:43:43,500
+Bu şekilde grafikler. Aynalarını TSN için de yaptım. Sonunda şöyle bir şey oldu. Onun anlamını bilmiyorum. Yani niye böyle ileri geri şeklinde bir şeyler oldu.
+
+487
+01:43:45,640 --> 01:43:56,204
+Ondan sonra Epoch Loss grafikleri. Bunlar da işte iterasyon sayısına göre şeyler, o fonksiyon değeri ne kadar yani...
+
+488
+01:43:56,756 --> 01:44:00,336
+Hangi iterasyon da hangi değerdeymiş algoritmalara göre?
+
+489
+01:44:00,855 --> 01:44:04,956
+Burada da koordinat descentleri kestim bir yerde.
+
+490
+01:44:04,956 --> 01:44:10,076
+İkisinin uzun olanına kadar kestim. Çünkü çok uzun olunca buralara hiç belli olmuyordu ne olduğu.
+
+491
+01:44:11,096 --> 01:44:13,916
+Yani aslında devam ediyor koordinat descentler.
+
+492
+01:44:13,916 --> 01:44:18,775
+Böyle buralarda da gradient descentin daha çabuk, yani bayağı daha çabuk indiğini görüyoruz.
+
+493
+01:44:20,056 --> 01:44:23,851
+Bunlar da zamana göre, zamana göre de genel olarak daha iyi iniyor.
+
+494
+01:44:25,587 --> 01:44:27,188
+Bu şekilde benim.
+
+495
+01:44:27,967 --> 01:44:30,927
+Burada da o konuştuklarımı yazdım zaten.
+
+496
+01:44:36,979 --> 01:44:51,979
+Teşekkürler [öğrenci]. Gayet güzel bir ödev olmuş. Evet. Belki arkadaşlar sana soru sorarlar daha sonra. [öğrenci], seni dinleyebilir miyiz?
+
+497
+01:44:51,979 --> 01:44:59,119
+Tabii hocam. İlk anlıyoruz paylaşayım. Bir saniye. Görüntü var mı hocam?
+
+498
+01:45:01,559 --> 01:45:02,399
+Evet.
+
+499
+01:45:03,123 --> 01:45:24,043
+Tamamdır. Şimdi burada 60 farklı kombinasyon vardı. Ben açıkçası deneyleri çalıştırırken biraz daha farklı bir yöntem izledim. Her bir deneyi çalıştırıp duruma göre değişkenleri de ayarlayarak buna göre yorumlar yaptım. Bu noktada iterasyon sayısından ipoş değerlerine kadar farklılıklar yaparak nasıl etkilediğini de aslında görmüş olduk.
+
+500
+01:45:31,123 --> 01:45:32,443
+Bir anlatım yapacağım.
+
+501
+01:45:33,663 --> 01:45:37,724
+Şimdi ilk baktığımızda isterseniz fonksiyonları bir gözden geçirelim.
+
+502
+01:45:38,243 --> 01:45:42,403
+İlk fonksiyonumuz aslında her değişkenin karesi şeklinde.
+
+503
+01:45:42,863 --> 01:45:51,423
+Diğeri de yine bir konveks fonksiyon bulmak zor olduğundan dolayı her değişkenden belli bir sabit çıkmış halini kullandım ki bu da bize aslında güzel bir karşılaştırma imkanı sundu.
+
+504
+01:45:51,423 --> 01:45:56,583
+Non-konveks fonksiyonlarda da aslında eksenler arasında farklılık oluşturduğumuzda.
+
+505
+01:45:56,979 --> 01:46:02,119
+Birer non-convex fonksiyon oluşturmuş oluyoruz. Bu noktada bazı...
+
+506
+01:46:02,484 --> 01:46:25,904
+Eksenlerin işaretini eksiye çevirerek aslında birer non-convex fonksiyon oluşturmuş oldum. Başlangıç değerlerini seçerken diziliğin bazı kriterler oldu. Hepsinin aynı olduğu durumlar aynı ancak farklı eksenlerde artı eksi şeklinde olacak şekilde iki tane random verdim. Bir tane de sıfır noktasına çok yakın sadece 1-1 olacak şekilde verdim ki bu beş tane değer aslında bizi çok daha karşılaştırma sonuçları verdi.
+
+507
+01:46:25,904 --> 01:46:30,484
+Hızlı şekilde gradyanik desenlikte ilk fonksiyonu da konvex.
+
+508
+01:46:30,484 --> 01:46:31,764
+X fonksiyondaki duruma bakalım.
+
+509
+01:46:32,307 --> 01:47:00,288
+Konveks fonksiyonda başlangıç noktası fark etmeksizin başarımlar sağlandı. Başlangıç noktaları yalnızca iterasyon sayılarını etkiledi aslında. Bu noktada, bu az önce vermiş olduğum örnekte çok yakın aslında olduğundan dolayı hedefe çok hızlı bir şekilde değer elde etmiş olduk. Konveks fonksiyonlarda genel olarak baktığımızda aslında hepsinde çok başarılı şekilde sonuçlar elde edildi. Bir tek durum var, hatırladığım kadarıyla sayfasını bulamayacağım için sözlü olarak.
+
+510
+01:47:00,307 --> 01:47:18,307
+Adam tarafında aslında çok daha fazla iterasyon olduğunu gördüm. Ben de o noktada belki precision değerleri ve YPS değerlerinde bir farklılık olacağından da bu sonuca varmış olabilirim. Ancak herhalde yani diskant fonksiyonunun aslında çok daha hızlı bir şekilde bize kullanılabilir sonuçlar verdiğini görmüş olduk.
+
+511
+01:47:19,708 --> 01:47:24,028
+Çok fazla zaman tüketmemek adına aslında birkaç tanesi atlayarak gideceğim.
+
+512
+01:47:27,380 --> 01:47:47,440
+Bir noktada non-convex fonksiyonda raksamanın olduğunu gördük. Diğer bütün eksenlerde yakınsama oldu. Ancak o yakınsama limite ulaştıktan sonra bir eksende sürekli olarak eksiğe gitmeye başladık ve bu eksiğe gitme durumu giderek arttı. Bundan dolayı bu şekilde bir grafiğimiz ortaya çıktı.
+
+513
+01:47:49,580 --> 01:47:50,580
+Bakıyorum.
+
+514
+01:47:53,844 --> 01:48:06,023
+Bir lokal minimum bulmuş olduk buradaki örnekte de. Aslında dediğim gibi non-convex fonksiyonunda bulacağımız minimum gerçek minimum olmuyordur. Bir lokal minimum örneğini de burada görmüş olduk.
+
+515
+01:48:07,252 --> 01:48:35,252
+Gradient Dissent ile alakalı gerekli bilgiyi verdim. İsterseniz diğer fonksiyonlara geçelim. Adam tarafında çok güzel deneyimlerim olmuştu. Burada daha iyi sonuçlar elde edebilmek için maksimum iterasyon sayısını 4000 olarak güncelledim. Default'ta aslında hepsinde doğru bir sonuç elde edebilmek için 300 iterasyon da sonuç almayı bekliyordum. Adam algoritmasında bu şekilde bir sonuç alamadım. Ben de maksimum iterasyon sayısını 4000 olarak güncelledim. Bu örnekte de başlangıç noktası iterasyon sayısını...
+
+516
+01:48:35,252 --> 01:48:44,032
+Ne kadar etkilediğini aslında görmüş olduk böylelikle. Çok fazla örnek var hocam. Ne kadar zamanım olduğunu bilmediğimden dolayı atlaya atlaya gidiyorum.
+
+517
+01:48:45,252 --> 01:48:46,231
+Tamam, devam edelim.
+
+518
+01:48:46,608 --> 01:49:14,608
+Bir diğer örnekte iterasyon sayısını kısıtlayıp öğrenme kat sayısını arttırdım. Öğrenme kat sayısını arttırmak aslında learning rate arttırmak bizim iterasyon sayımızı düşüren bir durum. Çok daha kısa iterasyonlarda çok daha kullanılabilir değerler elde etmiş olduk. Ancak hiçbir zaman Adam algoritması bize bir gradient işe kadar doğru sonuçlar vermedi. Sürekli olarak uzak kaldı ya da ulaşabilmek için çok daha fazla iterasyona ihtiyaç duydu. Bununla birlikte işlem süreleri de muazzam.
+
+519
+01:49:14,608 --> 01:49:15,688
+Siviyede yüksek oldu.
+
+520
+01:49:20,404 --> 01:49:45,324
+Bu zigzaglar çok önemli. Evet, buna gelmek istiyordum. Biliyorsunuz ki Edivar algoritmasında bir random taraf var. Yani belli bir miktar hedefe ulaştıktan sonra, R bölgesi içine girdikten sonra orada random olarak hedefe yaklaşmaya çalışıyor. Bu altta grafikte de görmüş olduğumuz bir zigzag var. Bu zigzaglar aslında bizim random olarak sayılar aldığımızı ve hedefin etrafında dolandığımızı gösteriyor. Bunu da görebilmiş olduk.
+
+521
+01:49:48,404 --> 01:49:50,464
+görebiliyoruz. Değerlerin bir
+
+522
+01:49:50,464 --> 01:49:52,344
+yaklaştığını, bir uzaklaştığını
+
+523
+01:49:52,344 --> 01:49:54,264
+PCI dağılımında bile görebiliyoruz.
+
+524
+01:49:57,564 --> 01:49:58,944
+Bazı işlemleri
+
+525
+01:49:58,944 --> 01:50:00,924
+sonsuza reaksiyar için non-convex
+
+526
+01:50:00,924 --> 01:50:01,864
+fonksiyonuna geçtik burada.
+
+527
+01:50:02,924 --> 01:50:05,044
+Belli bir iterasyonda kendim keserek bıraktım.
+
+528
+01:50:05,619 --> 01:50:21,759
+Şu gördüğünüz sondaki iki eksen aslında, dokuzuncu ve onuncu eksen sonsuza raksamaya devam ediyor. Ancak iterasyon sayısından dolayı döngüden çıkartarak işlemi tamamlamış oldum. İsterseniz birazcık da son fonksiyonumuz üzerinden yorumlara bakalım. Çok fazla vaktinizi almayayım.
+
+529
+01:50:23,559 --> 01:50:30,679
+Şimdi burada çok güzel bir grafik çıktı aslında. Bu arada Discent diye okuyorum ben sürekli ama doğru bir okunuş var mıdır acaba?
+
+530
+01:50:33,203 --> 01:50:51,563
+Koordinat Discent'ı okuyorum. Discent tamamdır. Koordinat Discent algoritması aslında bir nebze merdiven basamaklarına benzer şekilde sonuç üretiyor. Araştırdığıma göre bir eksenin üzerinde yapabileceği tüm iyileştirmeyi yaptıktan sonra diğer eksene geçmek bunun üzerinde iyileştirmeleri devam ediyor.
+
+531
+01:50:51,563 --> 01:51:01,123
+Bundan dolayı başlangıç noktamızın da hepsi eşit olduğu şu senaryoda basamak boyutları eşit olacak şekilde sürekli hedefe yaklaşan bir grafik.
+
+532
+01:51:01,203 --> 01:51:23,183
+Görmüş olduk. Bunun bir de basamak boyları farklı olan versiyonu var. Göreceğiniz üzere şurada başlangıç noktası 432 ve çok yüksek. Ona bir yakın değer de 102. Bu iki basamak çok belirgin şekilde ortaya çıkmış ve ikisi arasında, daha doğrusu ikisinin optimizasyonu grafiğe çok ciddi anlamda yansımış ve sanki iki basamak varmış gibi göründü.
+
+533
+01:51:24,724 --> 01:51:30,364
+Bu algoritmanın eksen bazında geliştirme yaparak bir sonraki eksene geçmesinin bir sonucu diyebiliriz.
+
+534
+01:51:32,764 --> 01:51:35,704
+Bunun dışında çok önemli dediğim bir şey var mı?
+
+535
+01:51:40,404 --> 01:51:49,684
+Non-convex fonksiyonlardan yine Coordinate descent algoritması da etkileniyor. Bunun da yine bir örneği var. Şu son eksende yine sonsuzluk aksadığını görmüşüz.
+
+536
+01:51:51,220 --> 01:52:15,520
+Yine lokal minimum burada da yaşanıyor. Benim yaşadığım en büyük sorunlardan bir tanesi, ben gördüğünüz üzere her deney için ayrı bir PCI grafiği oluşturdum. PCI grafiği oluşturmak için değerlerin not available ya da infinite olmaması gerekiyor. Bundan dolayı bu tür durumlar yaşandığında son iterasyonu kesip bununla çoğu zaman PCI grafiği oluşturdum.
+
+537
+01:52:19,220 --> 01:52:36,119
+dosyalarında çalıştırdığınızda eğer ki bir hata yaşanıyorsa bu büyük ihtimalle Infinite'e ulaşmasından dolayı PCA çizimi sırasında yaşanıyor olacaktır. Onu da iletmiş olayım. Çok daha fazla vaktinizi almadan ben burada bitireyim.
+
+538
+01:52:36,119 --> 01:52:41,399
+Peki, teşekkürler [öğrenci]. Rica ederim hocam.
+
+539
+01:52:43,500 --> 01:52:46,600
+Evet, [öğrenci] seni dinleyelim.
+
+540
+01:52:49,235 --> 01:52:50,235
+Merhaba hocam.
+
+541
+01:52:51,275 --> 01:52:51,675
+Merhaba.
+
+542
+01:52:57,939 --> 01:52:59,159
+Görünüyor mu hocam?
+
+543
+01:53:01,599 --> 01:53:02,839
+Evet, görünüyor.
+
+544
+01:53:08,020 --> 01:53:35,940
+Öncelikle hocam, arkadaşlar gibi benim de fonksiyon ararken bayağı bir uğraştım ama daha sonra literatür taraması yaptığım zaman bir siteye denk geldim. Siteyi de zaten paylaşmıştım arkadaşlarla ama yine de göstereyim. Şöyle bir site. Burada yüzden fazla belki de fonksiyon var. Bu fonksiyonlarda işte girdiğiniz zaman benim kullandıklarımdan biri mesela bu.
+
+545
+01:53:36,020 --> 01:53:41,020
+Bu Boğacevski fonksiyonu, Rastrikin fonksiyonu girdiğiniz zaman...
+
+546
+01:53:44,979 --> 01:53:45,539
+Pardon.
+
+547
+01:53:49,939 --> 01:53:50,859
+Hocam.
+
+548
+01:53:54,228 --> 01:53:55,948
+Tamam, geldi [öğrenci].
+
+549
+01:53:55,948 --> 01:53:57,288
+Geldi, geldi.
+
+550
+01:53:59,208 --> 01:54:03,328
+Girdiğiniz zaman şunu şuradan açsam.
+
+551
+01:54:04,372 --> 01:54:20,532
+Fonksiyonla alakalı bilgileri veriyor. Hatta iki boyutlu düzlende neye benzediğini ve multi-dimension olarak nasıl kullanılabileceğiyle alakalı bilgileri içeriyor burada. Ben bu siteyi kullandım fonksiyonlarımı seçerken.
+
+552
+01:54:20,992 --> 01:54:32,312
+İlk kullandığım non-convex olan rastrigin fonksiyonu iki boyutlu düzlemde şöyle gözüküyor. Çok fazla sayıda lokal minimum.
+
+553
+01:54:32,372 --> 01:54:51,312
+Global Minimum değerine sahip. Global Minimum değerine 0 değerinde. X'lerin 0 olduğu değerde ulaşıyor. Başarım oranı da %39.50. O sitede başarım oranı da gösteriyor bize şu ana kadar olan bu fonksiyonla alakalı.
+
+554
+01:54:52,340 --> 01:55:09,399
+Optimizasyon yaptığınız zaman. Bir diğer fonksiyon, konveks bir fonksiyona benziyor ama aslında değil. Buradan da görünüyordur umarım. Portakal kabuğu gibi böyle yerel minimumların olduğu bir fonksiyon.
+
+555
+01:55:20,340 --> 01:55:35,939
+Bu yerel minimum noktalarında, daha doğrusu bu eğer noktalarında gelip tıkanıyor olduğunu görmem. Gradient Dissent ise bunun tam tersine global minimum'a yaklaşmaya devam ediyor.
+
+556
+01:55:36,884 --> 01:55:54,304
+Bunun başarı moranı diğer fonksiyona göre biraz daha yüksek, %81. Nedeni de büyük ihtimalle biraz daha konveks bir fonksiyona benzediği için. Bunun da genel formülü bu şekilde. Bunu kullanarak fonksiyonlarımı elde ettim.
+
+557
+01:55:55,152 --> 01:56:16,051
+Konveks fonksiyonlarımdan ilki genellikle en basit fonksiyonlardan biri olan sürekli ve konveks olan sıper fonksiyonu. Sizin de en başta söylediğiniz gibi işte x1'in karesi artı x2'nin karesi şeklinde tanımlanan fonksiyon.
+
+558
+01:56:23,152 --> 01:56:28,011
+Çeşit yoktu. Yaklaşık üç tane buldum ben. Üç dört tane.
+
+559
+01:56:28,979 --> 01:56:34,180
+Bunlar da genelde zaten birbirlerine benziyordu. Hep çanak şeklinde olduğu için zaten.
+
+560
+01:56:34,180 --> 01:56:40,380
+Bu yüzden ilkini bunu aldım, sifer fonksiyonunu aldım. Bunun formülü burada.
+
+561
+01:56:40,380 --> 01:56:50,180
+Diğeri de bunun biraz daha döndürülmüş hiper ellipsoid olanı, rotated hiper ellipsoid fonksiyonunu aldım.
+
+562
+01:56:50,180 --> 01:56:56,979
+Burada da aslında yine fonksiyonlar mevcut fakat her birini bir sonraki adımda topluyorum.
+
+563
+01:56:56,979 --> 01:57:10,979
+Benim elimde 10 boyutlu bir şey için x1 karesi artı x1 artı x2'nin karesi artı x1 artı x1'in karesi artı x2'nin karesi artı x3'ün karesi şeklinde gidiyor.
+
+564
+01:57:11,859 --> 01:57:19,859
+Konveks olmasına rağmen bunun başarım oranı biraz daha düşük diğer konveks fonksiyonumuza göre.
+
+565
+01:57:20,532 --> 01:57:48,512
+Başlangıç noktaları olarak ben her bir fonksiyon için farklı farklı başlangıç noktaları seçtim. Aslında bunları biraz daha gelişigüzel seçtim. Bunları mesela ödevimin kendi açımdan söyleyeyim. Eksik yönlerinden biri bence. Bunları fonksiyonda yerlerine yazarak hangi değer vermiş o başlangıç noktalarını seçerek ona göre bir eğri çizdirme olayı.
+
+566
+01:57:48,532 --> 01:57:55,532
+Yapsaydım daha güzel olurdu. Daha güzel grafikler çıkardı bence. Ama bunu yapamadım. Biraz daha...
+
+567
+01:57:56,532 --> 01:58:23,871
+Zamanla alakalı kendi açımdan problem yaşadım. Rust-Diggin fonksiyonu için kullandığım ilk başlangıç noktalarım bunlar. Boğacevski için bunlar. Convex fonksiyonlarım için de bunlar. Hiperparametrelere gelince her fonksiyonda hiperparametre olarak Gradient Descent ve Coordinate Descent'de zaten bir Step Size var. Onun dışında bir de Precision değeri var hepsinde.
+
+568
+01:58:24,532 --> 01:58:28,831
+Step Size'ı 0.1 olarak aldım ilkin.
+
+569
+01:58:29,692 --> 01:58:39,532
+Fakat özellikle bulunan konveks fonksiyonlarda gradient descent ve koordinated descent yöntemleri çok fazla sanım yapmaya başladı.
+
+570
+01:58:40,391 --> 01:58:45,451
+Global minimum'a uğramadan yerel minimum noktaların birinde converge ediyorlardı.
+
+571
+01:58:45,451 --> 01:58:50,091
+Aslında kendileri global minimum'a geldiğini zannediyorlardı.
+
+572
+01:58:52,532 --> 01:58:56,532
+Bu tarzı 0.01 olarak ayarladım. Bunu da mesela...
+
+573
+01:58:57,587 --> 01:59:16,787
+Belki daha fazla örnekte bunları değiştirecek daha iyi yapabilirdim. Bu da bir eksiklik bence. İpoch değeri olarak 500 aldım. Adam'daki beta 1 ve beta 2 değerlerini default olarak beta 1'i 0.9, beta 2'yi de 0.99 olarak kullandım.
+
+574
+01:59:25,587 --> 01:59:37,268
+Ne kadar yakınlıkta olduğu ile alakalı bilgileri tablo olarak yapmaya çalıştım. Bunları belki daha anlaşılır bir şekilde, daha düzenli bir şekilde yapabilirdim.
+
+575
+01:59:37,507 --> 01:59:51,287
+Dediğim gibi ilk o temeli oluşturmak, yani o programları yazmak benim biraz daha fazla zamanımı aldığı için bu taraflara çok şey veremedim, yoğunlaşamadım.
+
+576
+01:59:53,587 --> 02:00:01,228
+Çalıştırdığım zaman şuradaki değerlere göre, yani rastriginin her 5 değeri için şurada.
+
+577
+02:00:02,131 --> 02:00:24,931
+Elde ettiğim Gradient Descent normalde sıfır noktasına gitmektense işte dörtlerde dolandı. Daha doğrusu hata oranım dörtlerde kaldı. Gidemedi. Bir yerel minimum noktanın etrafında dönmeye başladı diyebiliriz. Bunların şeyleri var aşağıda. Grafikleri var orada daha iyi anlaşılacaktır.
+
+578
+02:00:30,131 --> 02:00:51,951
+Bu konu an konveks olan fonksiyonlarda daha iyi çalıştı diyebiliriz. Boğaç Eski'ye geldiğim zaman o dediğim gibi yerel minimumların çok olduğu. Burada Gradient Descent daha iyi çalıştı. Zaten başarım oranı da daha yüksekti. Yüzde seksenlerde olması lazım.
+
+579
+02:00:52,948 --> 02:00:59,948
+Koordinat lisense, mesela şurada kırmızılarla gösterdiğim, bunlar kendisinin...
+
+580
+02:01:00,243 --> 02:01:22,103
+Global Minimuma yaklaştığını söylüyor ama grafikte yani bir düzlemde çizdirdiğim zaman Global Minimuma değil bir yerel minimumun orada durup kendisinin orada en son 140. adımlarda falan bitirip işlemini artık işlem yapmıyordu, gitmiyordu.
+
+581
+02:01:22,103 --> 02:01:27,983
+Burada sabitliyordu kendisini zaten şey olduğu için, kısıtı sağladığı için.
+
+582
+02:01:28,243 --> 02:01:34,844
+Adams'a daha iyi. Onlara göre global minimuma daha iyi yaklaştı.
+
+583
+02:01:34,844 --> 02:01:40,363
+Konveks fonksiyonlar zaten herhangi bir şey olmadığı için...
+
+584
+02:01:40,692 --> 02:01:56,512
+Yerel minimum noktası olmadığı için çok da beni şaşırtmadı. Gradient descent diğer yöntemlere göre biraz daha iyi çalıştı bu fonksiyonlarda. Rotated Hyperlipsoid de yine aynı şekilde.
+
+585
+02:01:57,912 --> 02:02:08,692
+Görselleştirme olarak bize dediğiniz gibi 10 boyutluydu bunlar. Bunları görselleştirmek çok da mümkün değildi. Bu yüzden Principal Component Analysis...
+
+586
+02:02:08,692 --> 02:02:10,671
+yapıp x1 ve x2
+
+587
+02:02:10,671 --> 02:02:12,192
+olarak iki tane
+
+588
+02:02:12,192 --> 02:02:14,292
+de iki boyuta indirip
+
+589
+02:02:14,292 --> 02:02:16,412
+bunları temsil eden yeni bir
+
+590
+02:02:16,412 --> 02:02:18,192
+vektör uzayı oluşturdum.
+
+591
+02:02:19,091 --> 02:02:20,192
+Bunu da şöyle
+
+592
+02:02:20,192 --> 02:02:22,832
+göstereyim. Aslında şuradaki
+
+593
+02:02:22,832 --> 02:02:24,332
+bizim
+
+594
+02:02:24,332 --> 02:02:26,051
+rastriginde yani şuradaki
+
+595
+02:02:26,576 --> 02:02:43,936
+Şu tepe değerlerin her birine denk gelen şey, şu kareleri görüyorsunuz. Burada görünüyor zaten bu Rastigin'deki gradient descent yöntemiyle yaptığım çizim.
+
+596
+02:02:44,500 --> 02:03:00,759
+Burada görünüyor zaten. İki tane yerel minimum noktası arasında gradient descent durmadan gidip gelmiş. Herhangi bir yere konverge olmadan bu işlemi tekrarlamış.
+
+597
+02:03:05,395 --> 02:03:16,715
+Koordinat Lisent'te de yine aynı şekilde belli bir nokta etrafında dönmeye başlıyor. Koordinat Lisent'i şöyle gösterebilirim aslında. Şu an görünüyor mu bilmiyorum hocam.
+
+598
+02:03:18,996 --> 02:03:19,836
+Görünüyor.
+
+599
+02:03:20,276 --> 02:03:34,656
+Görünüyor değil mi? Şurada görünüyor zaten. Mesela bu Rotated Hyperlip Soed için çizdirmiştim. Her bir adımda yalnızca bir boyutta işlem yaptığı için gide gide global minimuma yaklaşmaya çalışıyor.
+
+600
+02:03:34,656 --> 02:03:42,976
+Bu normalde aslında 10 boyutlu veriden 2 boyutlu veri elde ettiğimiz için şu çizgiler biraz daha keskin gibi.
+
+601
+02:03:45,203 --> 02:04:02,583
+Sumut gibi gözüküyor ama aslında iki boyutlu çalıştırdığımız zaman bunlar daha keskin bir şekilde tak tak tak diye böyle gitmeye çalışıyor. Bu aslında yakınlaştırılmış bir görsel. Bunu şuradan çalıştırabilirim aslında.
+
+602
+02:04:12,340 --> 02:04:38,040
+Aslında bize yukarıdaki görselin tam tepeden, yani iki boyutlu olarak çizilmiş halini veriyor. Orada çalışsın, en son çıktığa bakarız. Koordinat descent dedi bu şekilde. Ama edema geldiğimiz zaman, rastlugin yönteminde, şu global minimum noktasına gayet sumut bir şekilde, herhangi bir yere sapmadan, herhangi bir değişiklik yapmadan,
+
+603
+02:04:39,391 --> 02:05:01,011
+İlerlemeye çalışıyor ve en son bir yere geldiği zaman bu ipok sayısı tabii ki şu olduğu için bittiği için 500. ipokta bir yerde duruyor. Zaten yukarıdaki tabloda da gözüküyordu. Şöyle göstereyim. Şu bizim yukarıdan görünüş halimiz. Bunu ben yakınlaştırdım şöyle. Daha iyi anlaşılabilsin diye.
+
+604
+02:05:02,068 --> 02:05:20,528
+Burada başka bir değerler için Adam fonksiyonunu çalıştırdığım, Rustig'in fonksiyonunu üzerinde Adam algoritmasını çalıştırdığımda da sumit bir şekilde gelip daha sonra o global minimum noktası etrafında gezmeye başlıyor, dolaşmaya başlıyor.
+
+605
+02:05:21,971 --> 02:05:38,971
+Rastik'in yöntemi için bu şekildeydi bunlar. Boğoçeski yöntemine gelince burada Gradient Design yönteminin global minimuma yaklaştığını görüyoruz. Ancak çok da sumut bir şekilde değil. Biraz daha...
+
+606
+02:05:39,764 --> 02:06:03,264
+Salınımlı bir şekilde gidiyor. Şuradan da görünüyor. Bu PCA ile elde ettiğim iki boyutu görselleştirdiğimde ortaya çıkan görüntü. Koordinat sentte ise yukarıda da söylediğim gibi şurada mesela bir yerel minimum var. Şunu da şöyle göstereyim. Fonksiyonu görürsek daha iyi.
+
+607
+02:06:04,083 --> 02:06:07,923
+İki boyuttaki halini daha iyi anlaşılabilir.
+
+608
+02:06:09,723 --> 02:06:17,143
+Şurada mesela bir yerel minimum noktası var. Bu noktaya gelip kendisi...
+
+609
+02:06:24,884 --> 02:06:48,404
+Şu noktaya gelip kendisi burada konverç ediyor. O noktada büyük ihtimalle 10'du sanırım. Evet, eksi 10 değerlerinde. Yaklaşık 24. 25. epoch'ta buraya gelip konverç ediyor. Daha da ilerlemiyor zaten. Diyor ki ben artık buldum. Burası benim yerim. Normalde global minimum burada olmasına rağmen kendisi burada konverç ettikten sonra artık ilerleme.
+
+610
+02:06:48,884 --> 02:07:00,804
+Yapmıyor. Ama Adam'a baktığımız zaman, burada Adam'ın Step Size'ını 0.01 aldığım için aslında bu şekilde bir...
+
+611
+02:07:01,140 --> 02:07:22,860
+Bu 0.1 ile değiştirdiğim zaman, biraz daha büyük tuttuğum zaman, ilk yukarıdaki gibi daha sumut bir şekilde gidebiliyor. Bu dediğim gibi deneyleri farklı step size'larda yapıp karşılaştırma yapabilseydim daha iyi olabilirdi. Bu mesela kendi açımdan ödevin eksilerinden.
+
+612
+02:07:23,347 --> 02:07:42,807
+Bunları zaten az önce söylediğim şeyler yukarıda anlatırken. Sifer fonksiyonu zaten konveks bir fonksiyondu. Bunda Gradient Lisenti çalıştırdığım zaman zaten kendisi otomatik hemen direkt global minima zaten herhangi bir şey.
+
+613
+02:07:43,199 --> 02:07:50,739
+Herhangi bir yanıltıcı, yerel minimum noktası da olmadığı için otomatik olarak direkt aşağıya doğru geliyor.
+
+614
+02:07:50,739 --> 02:08:01,579
+Tabii bunların başlangıç noktası da önemli. Nereden seçtiğimiz de önemli. En başta da söylediğim gibi bunları biraz daha rastgele değil de bilinçli bir şekilde seçmiş olsaydım,
+
+615
+02:08:01,939 --> 02:08:10,399
+mesela şuralardan bir yerden seçmiş olsaydım bunun biraz daha direkt değil de smooth olarak geldiğini görmek mümkün olacaktı.
+
+616
+02:08:11,199 --> 02:08:25,579
+Yerlerde var diye hatırlıyorum. Koordinat Lisent'te ise yine aynı şekilde geliyor fakat şuradan da görünüyor zaten. Biraz daha dalgalı geliyor. Bilmiyorum gözüküyor mu şu anda ama.
+
+617
+02:08:27,412 --> 02:08:44,752
+Şurada mesela biraz daha dalgalı bir şekilde. Bunun nedeni de her bir şeyde yalnızca bir boyutta türev alma işlemini yapıp bir boyuta göre o bizim değerimizi değiştirdiği için, hesaplama yaptığı için gele gele gele gele.
+
+618
+02:08:44,752 --> 02:08:54,752
+Bunu tabii bu ekseni çizdirirken biraz zorlandım. Ona göre tam olmayabilir şu değerler ama baktığımız zaman global minima.
+
+619
+02:08:55,412 --> 02:09:13,992
+Yakın suyu bu da. Aydım yöntemine baktığımız zaman zaten gayet güzel, sumut bir şekilde geliyor ve global minimum etrafında yine konverge etmeye çalışıyor. O taraflarda geziyor.
+
+620
+02:09:16,243 --> 02:09:39,863
+Rotated Hyper Ellipsoid'de ise, mesela buradaki başlangıç noktasını iyi seçmişim biraz daha. Aslında yukarıdaki de kötü değil. O da iyi ama yani şuradaki görselleştirmeyi görme açısından. Burada Gradient Descent'i uyguladığımız zaman aynı adımda olduğu gibi şöyle sumut bir şekilde gelip Global Minion'un noktasına oturuyor.
+
+621
+02:09:41,460 --> 02:09:59,880
+Koordinat Lisette ise yine aynı şekilde yapıyorum ama yine atlamalar varmış gibi. Bu dediğim gibi aslında biraz daha bunlar keskin ama 10 boyutu biz 2 boyuta indirgediğimiz için bize bu şekilde biraz daha sanki yumuşatılmış.
+
+622
+02:10:00,000 --> 02:10:01,939
+gibi geliyor görüntü.
+
+623
+02:10:02,880 --> 02:10:03,819
+Adam Dice
+
+624
+02:10:03,819 --> 02:10:04,819
+zaten aynı
+
+625
+02:10:04,819 --> 02:10:07,199
+gradient descent'de olduğu gibi
+
+626
+02:10:07,199 --> 02:10:09,899
+yine global minimum'a
+
+627
+02:10:09,899 --> 02:10:11,279
+konverge ediyor.
+
+628
+02:10:12,500 --> 02:10:14,060
+Sonuç olarak
+
+629
+02:10:16,180 --> 02:10:27,600
+Optimizasyon problemlerinde kullanacak olan algoritmayı seçerken elimizdeki veri setinin veya loss fonksiyonuna göre seçmemiz gerektiğini anladım ben bu ödevi yapınca.
+
+630
+02:10:28,180 --> 02:10:37,380
+Özellikle şu siteyi bulduktan sonra, hatta bunların birbirleriyle karşılaştırılması falan da olduğu için bu konu benim daha çok hoşuma gitti.
+
+631
+02:10:38,180 --> 02:10:43,800
+Daha çok bu optimizasyonla uğraşmaya karar verdim.
+
+632
+02:10:44,180 --> 02:10:53,460
+Hatta bunları biraz daha ilerletip başka neler yapabilirim, oradaki şeyleri deneyebilir miyim diye bir fikir de oluştu.
+
+633
+02:10:53,460 --> 02:10:59,020
+Bunları yaparken sizin paylaşmış olduğunuz kodları kullandım.
+
+634
+02:11:00,020 --> 02:11:03,720
+Tabii oradakileri biraz daha değiştirerek.
+
+635
+02:11:04,640 --> 02:11:06,620
+Mesela koordinat sent hiç yoktu ama.
+
+636
+02:11:09,332 --> 02:11:26,332
+Üzerine vermiş olduğunuz kodu değiştirerek ve onu buradaki, şuradaki formülasyonuna göre yaparak, bunu da mesela ilk yaptığım zaman acaba doğru yaptım mı diye, şuradaki fonksiyonun aynısını çizdirdiğim zaman bana aynı bir şekilde değerleri...
+
+637
+02:11:26,431 --> 02:11:47,691
+Verdi iki boyutlu şeyde, fonksiyonlarda. Benim baya hoşuma gitti. Ödevim tam istediğim gibi olmadı. Eksiklikleri var ama bana baya bir şey kattığını düşünüyorum. Gayet yaparken eğlendim diyebilirim. Anlatacaklarım bu kadar hocam.
+
+638
+02:11:48,627 --> 02:11:58,807
+Hoşuna gittiyse ne güzel. Baya bir şey öğrenmişsin gördüğün gibi. Eğer optimizasyonla ilgilenmeye devam edersen konuşuruz yine bunun üzerine. Çünkü burası iyi bir alan.
+
+639
+02:11:58,807 --> 02:12:03,707
+Peki, şimdi [öğrenci]'ü dinlesek.
+
+640
+02:12:08,372 --> 02:12:31,652
+Merhabalar hocam. Arkadaşlar çok güzel ödevler yapmışlar. Hepsini tebrik ediyorum. Çıtayı Allah-u Ekber dağlarına diktiler. Ben anlatasım kalmadı aslında. Çünkü çok çok eksik bunlara göre. Sadece gradient descenti deneyebildim.
+
+641
+02:12:36,564 --> 02:12:51,532
+Herhalde görünüyordur diye düşünüyorum. Evet, görünüyor. Ben fonksiyonları şu siteden seçtim. Bir tanesi işte...
+
+642
+02:12:52,500 --> 02:13:20,500
+Yine kareleri toplama tarzı bir şeydi. Yalnız bir de başına şeyi koyuyorlar. Ondan sonra bu bir tane konveks fonksiyon. Aslında iki tane yaptım ama onların çizdirmelerinde sorun yaşadım. Octave kullanmıştım. Onu da arkadaşlara bir şey olarak bahsedeyim. Matlab'la aynı şey değilmiş. Bayağı bir bug'ı var yani. Çok iyi sorun.
+
+643
+02:13:20,500 --> 02:13:40,319
+Sonuçlar şey yapamadım. Neyse yapabildiğim kadarını anlatayım. Şimdi başlangıç noktasına eksi beş bu birinci fonksiyon. Şu bahsettiğim fonksiyon şu fonksiyon. Başlangıç noktasını eksi beş seçersem tamamına bütün x'ler için.
+
+644
+02:13:47,792 --> 02:14:05,072
+Konverge ediyor. Normal bir şekilde. Burada Step Size 0.05. Normalde bu konverge 0'a konverge etmesi gerektiği için Y'de.
+
+645
+02:14:06,739 --> 02:14:26,659
+Biraz daha yaklaştırırsam sıfıra doğru daha az epokta bunu elde edebiliyorum. Bir de değişken olsun diye şöyle bir şey denedim. Aralarında 0.2 fark var. Onda da 82 yine 82 epokta ulaştım.
+
+646
+02:14:28,819 --> 02:14:45,039
+Bir de 5'i denedim. Onda da farklı olmadı. Yani şunun tam tersi olsun diye. Ondan sonra adım sayısını büyüttüm. Hiçbir yerde konverge edemedi. Yani ben 200 epo şey yapmıştım. 200 epo'un hep üstüne çıktı.
+
+647
+02:14:53,876 --> 02:15:17,775
+Çok çok farklı yani sıfıra hiç yaklaşmıyor diyebilirim. Bir artı işte artı sonsuza doğru yaklaşırken bir eksilerde dolaşıyor. Çok şey yapıyor. Ama küçülttüğüm zaman yine normal bir şekilde konverge etmeye çalışıyor. Yalnız biraz uzun sürüyor.
+
+648
+02:15:18,579 --> 02:15:35,020
+Yani mesela şu 200 epo'un sonunda 0.00 bir şey bayağı sıfıra yakın bir sonuç elde etmişti. Sonra bir de non-conveks fonksiyon için denedim. O da şu.
+
+649
+02:15:46,036 --> 02:16:07,115
+Eksi 5'te başladığım zaman 17 Epoch sonrasında saçma bir yerde Converge etti. Ondan sonra yine aynı şekilde burada da çok benzer bir şekilde. Yalnız Step Size'ı böyle büyüttüğüm zaman hep Infinity'ye gitti bunlar. Ve bunlarla ilgili grafik de elde edemedim.
+
+650
+02:16:14,100 --> 02:16:28,579
+Biraz daha uğraşarak da olsa yine bir yerel minimumda kaldılar. Mesela şurada 0.001 yaptığım zaman Step Size'ı.
+
+651
+02:16:29,844 --> 02:16:50,463
+Farklı bir yerde konverj etti. Burada mesela eksi 300 civarında, burada eksi 400 civarında bir yere konverj ediyor. Yani ben farklı yerel minimumlara takıldığını düşündüm ama o da benim yorumum tabii. Şuraya da kodu ekledim. Başka da bir şey yapamadım.
+
+652
+02:16:52,463 --> 02:16:56,023
+Peki, teşekkür ediyoruz [öğrenci] sana da.
+
+653
+02:16:56,500 --> 02:16:57,779
+Teşekkür ederim.
+
+654
+02:16:57,779 --> 02:16:58,899
+[öğrenci].
+
+655
+02:17:00,659 --> 02:17:01,520
+Merhaba hocam.
+
+656
+02:17:01,959 --> 02:17:04,119
+Seni dinlerim.
+
+657
+02:17:11,603 --> 02:17:13,603
+Hocam, şu an ekranımı görüyor musunuz?
+
+658
+02:17:13,603 --> 02:17:15,603
+Evet, görüyoruz.
+
+659
+02:17:15,603 --> 02:17:21,603
+Öncelikle biraz koddan gideceğim sonra PDF'e atacağım. Sağdası gördüm.
+
+660
+02:17:21,603 --> 02:17:24,603
+Beş farklı başlangıç noktası belirledim.
+
+661
+02:17:24,603 --> 02:17:29,603
+Ve bu başlangıç noktalarında önce fonksiyon seçmiştim.
+
+662
+02:17:29,603 --> 02:17:32,603
+AdLay işte fonksiyonu. Şurada gördüğünüz.
+
+663
+02:17:32,603 --> 02:17:34,603
+Bu ikisi non-convex fonksiyon.
+
+664
+02:17:34,623 --> 02:17:56,623
+Sphere ve Blown'da konveks fonksiyonlardı. Bunların tanımlı olduğu aralıklar vardı. İşte A-5 ile 5 arasında. Diğeri-5.2 ile 5.12 arasında tanımlanmış. Bunlara göre de inputlarını bu aralıkta seçtim 5 tane. Daha sonra fonksiyonumu tanımladım.
+
+665
+02:17:57,108 --> 02:18:21,888
+Adam ve Gradient Descent Optimizer tanımladıktan sonra her bir olasılık için işte şeyler çizledim grafikleri. Bugün ilk beş grafiğimiz ugly fonksiyonuyla ugly fonksiyonuyla gradient descent'in karşılaştırılması, kullanım hali. Burada beş farklı input için grafikleri çizledim. Bunlar da kullanılan zaman 6.13'miş toplam geçen süre beş tane grafik oluşturmak için.
+
+666
+02:18:25,139 --> 02:18:42,979
+Ve 5 farklı input'a baktığımız zaman bir input mesela 6 noktasında minimum noktaya ulaşmışken diğer birisi 1.5'da minimum noktaya ulaşmış. Aynı şekilde hepsi farklı. Bu da non-convex fonksiyonlarda minimum noktaların farklı olduğunu gösteriyor. Bu şekilde diğer grafikleri de çizelim.
+
+667
+02:18:56,371 --> 02:19:08,491
+Bu şekilde hocam her birinin grafiğini çizdirdim ve işte non-convex noksiyonlarda lokal minimum noktalarına takıldığını, konvex noksiyonlarda ise her zaman sıfır noktasında optimize ettiğini gördüm.
+
+668
+02:19:08,491 --> 02:19:16,491
+Burada da grafikler var. Üçüncü bir hiper kaymetlerinin karşılaştırılması olarak da.
+
+669
+02:19:16,819 --> 02:19:38,819
+Öncelikle şeyi ayarladım. Learning Rate'in ne olması gerektiğini. Gradient Descent'te Learning Rate'i 0.02 aldığım zaman çok güzel bir minimum noktaya ulaşmışken, Rastrig'in fonksiyonunda Gradyat Descent'e Learning Rate'i 0.02 aldığım zaman aynı performansı göstermedi.
+
+670
+02:19:40,691 --> 02:19:49,491
+Zikzak çizerek gittir ve minimum noktaya ulaşamadı. Bunun için farklı fonksiyonlar için learning rate'leri farklı ayarlamak zorunda kaldım.
+
+671
+02:19:50,371 --> 02:19:55,551
+Ve bu şekilde 0.002 kabul ettiğim zaman ise minimum noktaya ulaştı.
+
+672
+02:20:00,000 --> 02:20:17,000
+Yalnız non-convex fonksiyonlar için geçerli. Convex fonksiyonlar da zaten her zaman sıfır noktasına ulaştığı için minimum noktaya ulaşıyor. Ama bu konvex fonksiyonlarda da örnek rate azaldıkça lokal minimum ulaşma süresi artıyor. Böyle bir çıkaranın var.
+
+673
+02:20:20,115 --> 02:20:45,615
+Aynı şekilde diğer Adam Optimizer için de Learning Rate'leri ayarladım ve Beta değerlerini ayarladım. Beta değeri azaldıkça, 0.3 işte azaldıkça, sistem önceki değerlerini kullanmadığı için daha geç bir optimizasyon süreci, daha dalgalı bir grafik oluştu. Ama Beta değerleri arttıkça, sistem önceki değerlerini de kullandığı için, yani bir nevi integral kullandığı için,
+
+674
+02:20:45,843 --> 02:20:54,283
+Daha kısa sürede optimize olduğu daha smooth bir grafik oluştu.
+
+675
+02:20:56,683 --> 02:21:03,324
+Bunu söylemiştim zaten. Başlangıç noktalar için farklı noktalarda lokal minimuma ulaştığını.
+
+676
+02:21:04,123 --> 02:21:10,324
+Ve karşılamışta adam optimizörde gradient design'i karşılaştırdığımız zaman adamın daha yavaş çalıştığını.
+
+677
+02:21:10,515 --> 02:21:21,355
+Gözlemledim. Adam 7.92 milisaniyede çalışırken 5 tane grafik çizlemek için, arktayı 5.59 milisaniyede çizdirmiş bu şeyi. 5.9 saniyede pardon.
+
+678
+02:21:23,556 --> 02:21:33,396
+Ve adam optimizle, gradient-out-gürel daha az iterasyon da optimiz ediyor sistemi. Learning rate arttıkça da o süreçten yapma ihtimali artıyor. Bunlar non-convex fonksiyonlar için geçerli.
+
+679
+02:21:35,731 --> 02:21:38,572
+Bir de hocam, bu karşılaştırma tablosu olarak da...
+
+680
+02:21:43,156 --> 02:21:45,156
+Şöyle bir tablo çizdim.
+
+681
+02:21:45,156 --> 02:21:50,156
+İmputlar için hangi fonksiyonu seçtik ve hangi optimizer kullandıysa,
+
+682
+02:21:50,156 --> 02:21:55,156
+bunlara göre hangi noktada minimum noktaya ulaştığını,
+
+683
+02:21:55,156 --> 02:22:01,156
+bunun tablosunu ve kaç saniyede bu işlemden sürdüğünü oluşturdu.
+
+684
+02:22:01,156 --> 02:22:06,156
+Az önce zaten bunların karşılaştırmasını bir önceki Word'te anlatmıştım. Bu şekilde hocam.
+
+685
+02:22:08,500 --> 02:22:09,340
+Sizin geliyor mu?
+
+686
+02:22:09,979 --> 02:22:13,819
+Geliyor, geliyor. Çok teşekkürler [öğrenci]. Benle sağlık.
+
+687
+02:22:15,399 --> 02:22:19,380
+Evet. Şimdi [öğrenci].
+
+688
+02:22:20,420 --> 02:22:21,079
+Merhaba [öğrenci].
+
+689
+02:22:21,579 --> 02:22:22,420
+Merhaba [öğrenci].
+
+690
+02:22:24,500 --> 02:22:26,920
+[öğrenci] sen ekranı bir şey yapsan.
+
+691
+02:22:27,439 --> 02:22:30,840
+Tamamdır. Tamamdır. Sağ ol. [öğrenci] sen. Evet.
+
+692
+02:22:31,507 --> 02:22:36,907
+Şimdi hocam ben loss fonksiyonlarını aslında çok zorlayıcı böyle loss fonksiyonları seçmedim.
+
+693
+02:22:37,028 --> 02:22:42,608
+Hesyan matrislerini aslında inceledim. 10x10'luk bir Hesyan matrisi oluşuyoruz üzerinde.
+
+694
+02:22:43,059 --> 02:23:06,819
+Onun üzerinde pozitif definite mi değil mi bunu baktım. Yani eğer tüm aygın ve yılları pozitifse bu durumda fonksiyonumun konveks olarak adlandırdım. Bunlar da zaten görüldüğü üzere şu çok basit anlamda bir non-konveks fonksiyon. Çünkü bütün aygın ve yıllar bir ve eksik. Dolayısıyla negatif olduğu için non-konveks olarak seçtim.
+
+695
+02:23:07,283 --> 02:23:12,523
+Yine bu F4 fonksiyonu da incelediğimde non-convex olduğuna karar verdim.
+
+696
+02:23:12,523 --> 02:23:16,963
+Daha sonra başlangıç değerlerini de random olarak ürettim.
+
+697
+02:23:16,963 --> 02:23:21,443
+Dolayısıyla 5 tane başlangıç değerini de bu şekilde ilklendirdim.
+
+698
+02:23:21,443 --> 02:23:27,684
+Bunun dışında iterasyon sayısını 200 olarak aldım.
+
+699
+02:23:27,987 --> 02:23:43,427
+Hassas değerimizi yani Precision'i de binde bir olarak seçtim. Daha sonra hiperparametre optimizasyonuna geçtiğimizde hiperparametre optimizasyonu için ilk başta bir defa elimde beta 1, beta 2'ler vardı.
+
+700
+02:23:45,683 --> 02:23:55,683
+Default olarak kullanmayı tercih ettim. Sadece bu Gravian Design, Add-on ve Coordinate Design'de adım uzunluklarına...
+
+701
+02:23:56,147 --> 02:24:12,567
+Baktım. Bu Koordinatlı Sank'te ben birkaç tane makaleyeyim gelirim ama orada her bir yön için, yani şimdi on boyutlu bir fonksiyonumuz var. Dolayısıyla aslında bir defa döndüğünde bir iterasyon yaptığımda on boyut.
+
+702
+02:24:14,036 --> 02:24:32,775
+Düzenli, yani 10 tane optimal nokta buluyor. Burada her bir yön için farklı farklı adım uzunlukları seçmişti. Ama onun neye göre seçtiğini çıkaramadığından ötürü ben her bir yön için, her bir direction için adım uzunluklarını aynı olarak seçtim.
+
+703
+02:24:32,775 --> 02:24:42,036
+Dolayısıyla F1'i F2 fonksiyonu için Gradient Descent'te 0.15-0.25 aldım. Bunları daha fazla küçülttüğümde iterasyon sayı...
+
+704
+02:24:42,036 --> 02:24:51,495
+Dolayısıyla yakın samanın yavaş olduğunu gördüğümden ötürü bu mertebelerde 0-15-0-25 mertebelerini de seçtim.
+
+705
+02:24:51,891 --> 02:25:07,912
+F3 ve F4 fonksiyonu için eğer adım uzunluklarının 0.1'den daha büyük seçildiğinde bu F3 ve F4 fonksiyonlarının bıraksadığını, yani optimum noktadan uzaklaştıklarını gördüm.
+
+706
+02:25:07,912 --> 02:25:18,231
+Dolayısıyla F3 ve F4'de olabildiğince küçük kaldım. Gradient Disag ve Edim'de. Koordinat Disag'de de yine Gradient Disag ve Edim'e paralel olarak adım uzunlukları seçtim.
+
+707
+02:25:18,708 --> 02:25:27,708
+Daha sonra burada 3x4x5'ten yani 60 tane modelin 60 tane optimum nokta şöyle,
+
+708
+02:25:27,708 --> 02:25:34,708
+İterasyon sayılarını, daha sonra hatalarını yani bu hata en son hangi adıma geldiğimde,
+
+709
+02:25:34,708 --> 02:25:40,708
+onun bir önceki adımdaki değerlerini bularak daha sonra bir sum ettiğimde,
+
+710
+02:25:40,992 --> 02:25:56,672
+Bulduğum değer olarak veriledim hata değerini. Zaten F1 ve F2 benim konveks fonksiyonlarım olduğu için mevcut iterasyon sayısının içerisine yakınsadığımdan ötürü hata değerleri precision değerinden küçük çıktı.
+
+711
+02:25:56,672 --> 02:26:03,492
+Burada binde bir buldum ama sanırım burada çok da incelemedim hata da olmuş olabilir. Hepsi.
+
+712
+02:26:04,979 --> 02:26:22,680
+Yani 10 üzeri eksi 4'lerde falan çıktığından ötürü. Daha sonra şunu gördüm burada. Gradient descent ve koordinat descentin. Tabii ben burada koordinat descent de 10 adım güncelleme yaptığından ötürü iterasyon sayısını 10'a böldüm. Aslında hani 190 olarak da düşünebiliriz.
+
+713
+02:26:27,987 --> 02:26:42,628
+Yaklaşık olarak aynı iterasyon sayılarında yakın sama yaptım. Fakat koordinat desen bir birimlik zamanda 10 türev hesaplaması yaptığından ötürü süre bakımından gradient desente göre daha uzun çalıştığını düşündüm.
+
+714
+02:26:42,628 --> 02:26:53,547
+Ki grafiklerime baktığımda da bu sonucu doğrulamış oldum. Edim'de ise iterasyon sayısı diğer iki algoritmaya göre daha fazla olduğunu söyleyebilirim.
+
+715
+02:26:54,260 --> 02:27:10,360
+Burada optimum noktalarını her bir add-im, coordinate descent ve gradient descent için koydum. Bunları hızlıca geçiyorum. F2 fonksiyonumda da yine konveksi olduğu için mevcut iterasyon sayımın içerisinde bir yakınsama gösterdi.
+
+716
+02:27:11,476 --> 02:27:28,675
+Convex olmayan fonksiyonlarım iterasyon sayısına ulaştı. Dolayısıyla aslında binde bir olarak seçmiştim prescicinin değerini. Hatam da oldukça küçüldü. Belki biraz daha iterasyon gitmiş olsaydım yine yakınsama olabilirdi diye düşünüyorum.
+
+717
+02:27:28,675 --> 02:27:34,536
+Ama ben tüm algoritmaları dürültüme bağladığım için hepsinin çalışması çok uzun.
+
+718
+02:27:36,308 --> 02:27:43,308
+Çok uzun sürdüğünden ötürü. İterasyon sayısını yeteri kadar küçük tuttum bu yüzden.
+
+719
+02:27:43,308 --> 02:27:58,308
+Burada bu PC ve TSN grafiklerine gelecek olursam, oralarda anlamadığım noktalar oldu. Ben iki boyutta bu şekilde PC ve TSN grafikleri çıkardım.
+
+720
+02:28:00,564 --> 02:28:08,724
+Bu F1 fonksiyonu için baktığımızda konveks fonksiyonu dolayısıyla her biri de sıfır noktasına yakınsıyordu.
+
+721
+02:28:08,844 --> 02:28:12,804
+Dolayısıyla yeteri kadar mertebelerde küçülüyordu x'i'ler.
+
+722
+02:28:13,424 --> 02:28:15,204
+Sıfıra yakınsama yapıyorlardı.
+
+723
+02:28:15,704 --> 02:28:21,244
+Dolayısıyla aslında şöyle bir noktaya, bu da sıfır sıfır noktasına denk geliyor.
+
+724
+02:28:21,244 --> 02:28:26,244
+Yani her bir gradient edin ve koordinatlı bir yakınsama yaptığını...
+
+725
+02:28:26,896 --> 02:28:41,936
+Söyleyebilirim. Aynı şekilde TSN için de bunu konuşabilirim. Ama burada kafama takılan non-convekslerde şu oldu. Gradien ve Edim belki grafikler de yanlış.
+
+726
+02:28:42,515 --> 02:28:59,435
+Çizdirmiş olabilir. Onun hakkında da çok, yani hani şurada mesela koordinat ve gradiyent tam üst üste çakışıyor. Fakat burada TSN'in yörüngelerinin farklı çıkması bu benim kafamı karıştırdı. Buna da çok anlam veremedim açıkçası.
+
+727
+02:29:01,043 --> 02:29:02,724
+Dediğim gibi süre...
+
+728
+02:29:02,724 --> 02:29:06,724
+[öğrenci], şey söyleyeyim orada, sen şey söylüyorsun değil mi yanlış anlamıyorsan?
+
+729
+02:29:06,904 --> 02:29:08,504
+Hocam ben mesela burada PCI'de...
+
+730
+02:29:08,504 --> 02:29:13,504
+PCI ve TSN'in birbirinden neden farklı sonuçlar ürettiğini...
+
+731
+02:29:14,164 --> 02:29:15,144
+Söylüyorsun aslında.
+
+732
+02:29:15,144 --> 02:29:24,304
+Evet, evet hocam. Burada mesela yeşil ve kırmızı aslında üst üste çakışmış durumda ama burada mesela yeşil ve kırmızı neden farklı?
+
+733
+02:29:24,764 --> 02:29:32,184
+Şimdi şöyle söyleyeyim, bunlar ikisi de boyut azaltma yöntemleri fakat farklı algoritmalar, farklı varsayımlar kullanarak bu işi yapıyorlar.
+
+734
+02:29:32,915 --> 02:29:56,295
+Bunun onun izdüşümüyle, onun yaptığı izdüşümle bunun yaptığı izdüşümü birebir aynı olmak zorunda değiller. Benzer olabilirler ki bence benzerler şu anda aslında. Tamamen ayrık şeyler değiller bunlar. Bir miktar dönme ve öteleme farkı var. Yoksa şeklen olarak bakarsan şeylere…
+
+735
+02:29:56,295 --> 02:29:57,876
+Aslında üst üste çakıştım, evet.
+
+736
+02:30:00,000 --> 02:30:12,319
+Yani PCI ve TSE'nin farklı şey öğretmesi olası. Tamam hocam, teşekkür ederim.
+
+737
+02:30:12,319 --> 02:30:26,159
+Daha sonra süre LOS ve Epoch LOS grafiklerini çıkardım. Burada her bir FI fonksiyonu için 5 başlangıç değerini aynı grafik üzerinde gösterdim.
+
+738
+02:30:28,000 --> 02:30:38,079
+Aslında benim karşılaştırdığım tek nokta, az önce de söylediğim gradient descent ve coordinate descent'in süre bakımından birbiriyle kıyaslamasını yapmıştım.
+
+739
+02:30:38,079 --> 02:30:50,279
+Dolayısıyla bu da benim beklentimi karşıladığı gibiydi. Gradient descent, coordinate descent süre olarak, gradient descent'e göre çalışma olarak daha uzun sürüyordu.
+
+740
+02:30:51,659 --> 02:30:54,340
+Bu şekilde hocam benim anlatacaklarımda.
+
+741
+02:30:55,283 --> 02:31:20,283
+Burada bir de takıldığım nokta şuydu aslında. Şimdi Adam'da konveks fonksiyonlarda ben hep bir azalma yani bir eksponansiyel azalma beklerken şurada mesela sıfırla yirmi aralığında şöyle bir dalgalanma meydana gelmiş. Aslında bu dalgalanmayı çok çözemedim. Yani neye bağlı olduğunu da düşünmüyorum ama çok çıkaramadım. Benim aslında beklediğim şöyle.
+
+742
+02:31:21,268 --> 02:31:23,608
+Hocam, İmle'cim görünüyor mu bu arada?
+
+743
+02:31:24,108 --> 02:31:25,227
+Evet, evet görünüyor.
+
+744
+02:31:25,648 --> 02:31:45,887
+Yani eksponansiyel bir azalma bekliyordum. Şuradaki dalgalanmanın sebebini çözemedim. Edim'deki F1 ve F2'de de aynı sıkıntı vardı. Normalde mesela koordinat ve gradientde sürekli bir azalma varken Edim'de bir dalgalanma meydana gelmişti. Yine bu da benim beklentilerimle uyuşmadı.
+
+745
+02:31:46,611 --> 02:31:57,551
+Yani şöyle bir şey, adım aslında birazcık önceki gradiyanları da işin içine katıyor ya. Yani biraz drift atıyor diyebiliriz aslında. Öyle ifade edebilirim.
+
+746
+02:31:57,991 --> 02:32:01,391
+Yani hocam, dalgalanmalar beklendik bir şey gibi.
+
+747
+02:32:01,391 --> 02:32:03,131
+Yani şöyle bir şey düşün.
+
+748
+02:32:05,043 --> 02:32:08,463
+Bir böyle Huni gibi bir şey düşün.
+
+749
+02:32:08,824 --> 02:32:10,283
+Konveks uzay düşün yani.
+
+750
+02:32:10,283 --> 02:32:16,144
+Ve orada sen bir kenardan şöyle bir tane topu şöyle ileriye doğru ittirdiğini düşün tamam mı?
+
+751
+02:32:16,644 --> 02:32:22,723
+Şimdi genel manada aşağıya doğru iner ama daha önceki hızından dolayı aralarda ne yapar?
+
+752
+02:32:22,943 --> 02:32:24,083
+Yukarılara doğru çıkar değil mi?
+
+753
+02:32:24,603 --> 02:32:24,824
+Evet.
+
+754
+02:32:25,363 --> 02:32:36,004
+Anlatabildim mi? Yani momentum etkisi. Daha önce gradiyentleri toplaya toplaya ilerliyor ya. Orada bir drift etkisi var.
+
+755
+02:32:37,004 --> 02:32:38,144
+Anladım hocam.
+
+756
+02:32:38,984 --> 02:32:40,363
+Tamam. Başka bir şey var [öğrenci]?
+
+757
+02:32:40,783 --> 02:32:43,543
+Başka yok hocam. En son zaten sonuçlarda da anlat.
+
+758
+02:32:43,664 --> 02:32:46,504
+Tamamdır. Peki. Çok teşekkürler. Sağol.
+
+759
+02:32:46,504 --> 02:32:46,943
+Teşekkür ederim.
+
+760
+02:32:47,684 --> 02:32:49,384
+Evet. Şimdi [öğrenci].
+
+761
+02:32:50,548 --> 02:32:51,468
+[öğrenci].
+
+762
+02:32:51,708 --> 02:32:52,407
+Buradayım hocam.
+
+763
+02:32:52,688 --> 02:32:54,288
+Heh, [öğrenci]. Seni dinleyelim şimdi.
+
+764
+02:32:54,968 --> 02:32:55,227
+Tamam.
+
+765
+02:32:56,907 --> 02:32:58,768
+Bakıyorum nasıl paylaşıldı.
+
+766
+02:33:00,808 --> 02:33:01,648
+Herhalde.
+
+767
+02:33:03,927 --> 02:33:04,968
+Oldu mu?
+
+768
+02:33:09,940 --> 02:33:10,780
+Hangi gördük?
+
+769
+02:33:10,780 --> 02:33:11,880
+Evet, evet. Görünüyor.
+
+770
+02:33:12,440 --> 02:33:15,280
+Bu şekilde Jüpiter notluktan anlatsam hocam sorun olur mu?
+
+771
+02:33:15,960 --> 02:33:16,700
+Hayır, olmaz.
+
+772
+02:33:16,940 --> 02:33:19,319
+Rapor da var. Aslında benzer şeyler var.
+
+773
+02:33:19,880 --> 02:33:21,680
+Tamam, Jüpiter'den anlat. Sıkıntı değil.
+
+774
+02:33:21,960 --> 02:33:22,220
+Tamam.
+
+775
+02:33:23,087 --> 02:33:44,087
+Burada koordinat disanti bulamadım. Fonksiyonel bazda bulamadım. Hep şey istiyordu. X input, Y output. Bu şekilde çalışan formlarını buldum. O yüzden gradient disant ve add'ım var bende. Başlangıçta bir ayarladım. Initial value'lar aldım. Bu fonksiyonlar ve...
+
+776
+02:33:44,799 --> 02:34:11,819
+Bu weight değerleri, yani başlangıç değerleri olarak aldım. Daha sonrasında benim hiperparametrem gradient descent learning rate. Öbür türlü çıktı olarak time loss aldım. Burada da PCI ve diğerini de göstermek için lossları aslında 10 boyutlu 10 boyutlu aldım ve 2 boyuta indirgemeye çalıştım daha sonrasında.
+
+777
+02:34:12,799 --> 02:34:39,559
+Bu şekilde Adam'da da bu şekilde yaptım. Bu TT dediği başlangıç değerleri, vergi fonksiyonlar. Burada farklı olarak örneğe beraber beta 1, beta 2 ve epsilon değerlerini de aldım. Bu şekilde içinde algoritması var. Burada konvekslik durumunu şu şekilde değerlendirdim. Bilmiyorum doğru mu değil mi? Ben bunu Wikipedia'dan baktım şu şekilde. Görünüyor mu burada?
+
+778
+02:34:42,355 --> 02:35:09,295
+Şuna baktım. Ben de Wikipedia'nın yalancısı oldum hocam. Onun aynısını aslında fonksiyona uyguladım. Konveks mi değil mi diye. Bu şekilde. Hani brute force dört tane yazdım. Deneye yanıla buradan true fosterlerini çıkarttım. Dört tane fonksiyonu aslında bu şekilde oluşturdum. Bilmiyorum artık doğru mu değil mi?
+
+779
+02:35:11,700 --> 02:35:25,799
+Yani aslında optimizasyon sonuçlarına bakarak da doğru seçim yapıp yapmadığını anlayabilirsin. Yani mesela nereden başlarsan başta aynı yere varıyorsan o fonksiyon büyük ihtimalle nedir?
+
+780
+02:35:27,299 --> 02:35:27,780
+Convext.
+
+781
+02:35:28,280 --> 02:35:36,060
+Convextir ama farklı farklı yerlere varabiliyorsan o zaman convext değildir. Hani oradan da sondan da kontrol edebilirsin.
+
+782
+02:35:37,236 --> 02:35:58,175
+Sonra weight değerlerini aldım. Bunu da kendim brute force yazdım. Arkadaşlar çok büyük, çok küçük değerler yapmış. Gerçekten güzel olmuş. Bir dahakine ben de o şekilde denerim. Böyle yaklaşık değerlerden ziyade büyük küçük değerler almayı deneyeceğim daha sonrasında.
+
+783
+02:36:05,043 --> 02:36:25,164
+Gradient descent için learning rate vardı sadece. Burada ben tabloları oluşturmak için işte learn rate, epoch, lost'lar, total timelar falan bu tarz şeyleri aldım. Aynısını add'ım için de uygundum. Onların da hiper parametrelerini aldım. Sonra işte model tuning kısmına geçtim.
+
+784
+02:36:27,636 --> 02:36:43,256
+Birkaç nükleit parametresi verdim. 0, 5, 0, 1 azala azala indim. Bunlarını vererek denedim. Burada gördüğüm yüksek nükleit değerlerine beni bilmiyorum sonsuza ulaştırdı büyük ihtimal.
+
+785
+02:36:43,256 --> 02:36:52,116
+Nanda değerler döndürdü ve 5. epochta ikisi de durdu. Daha düşük değerlerde, daha düşük nükleitlerde.
+
+786
+02:36:53,043 --> 02:37:05,283
+İşlem devam etti ve ortalama loss bunlar. Ama benim şurada bir minimum değer belirlemiştim.
+
+787
+02:37:07,283 --> 02:37:18,943
+Precision değerim bu. Bunu geçtiği zaman aslında algoritmalanıyor ya da maksimum iterasyon sayısını geçtiği zaman bunlar geçmiş sayılanlar. Bu losslar ortalamalar aslında.
+
+788
+02:37:19,504 --> 02:37:42,824
+Bunların hepsi çalışmış ama non olanlar çalışmamış duruyor. Bunlar da sayıları. Malum learning rate azaldıkça ipok sayısı da artmış. Buradan en iyi parametreleri buldum. Bu şekilde ilerledim daha sonrasında. Aynı şekilde add-me da aynısını yaptım. Modern link yaptım.
+
+789
+02:37:43,216 --> 02:38:07,316
+Buradan da BES parametreleri bu. Öbürünün rizaltını gösterdim. Bunlar rizaltaynı bu şekilde. Burada biraz fazla var. Nan değer çıkmadı. Hepsi de çalıştı. Burada işte beta 1, beta 2, epsilon. Bu değerlere göre, bütün kombinasyonlarına göre hipoplos ve tototaynılar var bu şekilde.
+
+790
+02:38:12,115 --> 02:38:14,476
+Tahto.
+
+791
+02:38:18,067 --> 02:38:19,307
+Burada ne yaptığıma bakıyorum.
+
+792
+02:38:20,268 --> 02:38:27,007
+Burada fonksiyonlar ve weight değerleriyle demin bulduğum aslında best parametreleri kullanarak,
+
+793
+02:38:27,507 --> 02:38:35,907
+best hiper parametreleri kullanarak farklı fonksiyonlar ve farklı weight değerlerinde nasıl ipoklar, nasıl losslar, nasıl total timeler aldığıma baktım.
+
+794
+02:38:35,907 --> 02:38:40,907
+Yukarıda tanımladığım fonksiyon ve weight değerleriyle burada görüyoruz.
+
+795
+02:38:46,067 --> 02:38:55,067
+Bu gradient descent için. Yani ya eksi sonsuza ya da artı sonsuza gitmiş. O yüzden non-değerler verdi bana.
+
+796
+02:38:55,067 --> 02:39:03,067
+Burada gradient descent f2, f3 dediğim, benim non-conveks...
+
+797
+02:39:03,136 --> 02:39:22,236
+Olarak belirttiğim fonksiyonlarda hepinden değerler verdi. Yani hiçbiri sonuca ulaşamadı. Ne lokal ne de global bir minimum değeri bulamadı. Büyük ihtimal bunlar da sonsuza gitti. Neden olduğunu bilmiyorum.
+
+798
+02:39:24,435 --> 02:39:45,256
+İşte burada fonksiyonlara göre loss'ları ve toplam sürelerine baktım. Dediğim gibi benim non-convex dediğim fonksiyonlar da hep non'a gitti. Aynı şekilde Adam'da da aynı şeyleri yaptım. İşte fonksiyonlar, fonksiyonların weight'leri, bunların ipop, loss ve total time'ları.
+
+799
+02:39:49,876 --> 02:40:11,176
+Bu toplam ikisini birleştirdim. İşte optimizasyon fonksiyonu, denediğim fonksiyonlar ve idler bu şekilde. Sonra PCI'de denedim. İki boyuta indirgemeye çalıştım. Burada lossları görüyoruz. PCI'de indirgediğim lossları ve ipok sayısını görüyoruz. Bu gradient set convex dediğim fonksiyon için.
+
+800
+02:40:17,747 --> 02:40:38,688
+Bana bir sonuç vermedi. Hepsinin andı. O yüzden bir grafik çizemedim. Adam'ın konveks fonksiyonunda bu şekilde bir grafik aldım. İniyor ve bir çıkış olduktan sonra tekrar devam ediyor. Artık bir global minimumdan mı daha sonra başka bir minimuma döndü bilmiyorum. Bu da Lost Hipography.
+
+801
+02:40:42,355 --> 02:40:50,716
+Bu da non-convex diye belirlediğim fonksiyonda Adam'ın nasıl bir sonuç verdiği.
+
+802
+02:40:51,835 --> 02:40:55,556
+Bunda da bir anlam çıkart ama biraz garip bir şekilde.
+
+803
+02:40:56,876 --> 02:41:00,076
+[öğrenci], şey soracağım sana. Burada PCI loss dediğin ne demek?
+
+804
+02:41:01,195 --> 02:41:03,576
+Hocam, loss'lar 10 boyutlu şekilde aldım.
+
+805
+02:41:04,255 --> 02:41:07,935
+Loss'lar 10 boyutlu demek ne demek?
+
+806
+02:41:08,755 --> 02:41:17,755
+Hocam, X0'ı verdim. Onun çıktısını aldım. X0'ın normal olması gereken çıktısıyla...
+
+807
+02:41:17,755 --> 02:41:18,915
+Bir dakika.
+
+808
+02:41:21,796 --> 02:41:23,155
+Göstereceğim Ömer Hocam.
+
+809
+02:41:25,108 --> 02:41:28,067
+Yani loss tek bir tane değer. Nasıl 10 tane değer aldın?
+
+810
+02:41:28,067 --> 02:41:42,347
+Hocam topluyoruz ya bütün hepsini. Mesela 10 tane değişken için 10 tane loss değeri geliyor buradan. Ben aslında onu tek tek aldım burada. Burada ise sumları var toplamları. Bu şekilde gittim.
+
+811
+02:41:46,675 --> 02:41:47,335
+Bir dakika.
+
+812
+02:41:47,396 --> 02:41:58,736
+Burada 10 boyutlu loss'un var ama her bir adımda 10 boyutlu loss'un var. Aslında loss dediğin şey de...
+
+813
+02:41:58,736 --> 02:42:02,956
+Aslında bu da kost oluyor. Loss'ların toplam çarpımının bölümü.
+
+814
+02:42:03,515 --> 02:42:07,695
+Evet, anladım. Tamam, peki. Tamam, devam edelim.
+
+815
+02:42:09,355 --> 02:42:10,595
+Neredeydim? Bir dakika.
+
+816
+02:42:15,763 --> 02:42:35,763
+Ben bunu iki boyuta indirgedim de. Dediğim gibi burada bir tavan yapıp tekrar normal düzenine dönmüş. Bu benim başta verdiğim loss değerinin 1 olmasından kaynaklanıyor olabilir. O yüzden çok yüksek bir lossa çıkıyor ve tekrardan iniyor.
+
+817
+02:42:36,763 --> 02:42:41,611
+Burada aynı şeyi T-CNA'da denedim. Burada çok garip grafikler aldım.
+
+818
+02:42:43,092 --> 02:42:52,492
+Dediğim gibi non-convex gradientizle çalışmadı. Adam'ın konveksinde de aynı şekilde çok garip şeyler aldım.
+
+819
+02:42:52,492 --> 02:43:00,492
+Burada bu çalışıyor. Adam non-convex bir fonksiyonda.
+
+820
+02:43:03,156 --> 02:43:21,156
+Sonsuz döngüye giriyor. Bana bir sonuç vermiyor. 10 boyutu 2 boyuta indirmiyor burada. Şurada takılıyordu. Ben de durdurmak zorunda kaldım. Bir 10-15 dakika bekledim herhalde. Burada da timelose grafikleri var. Gradient descent edinme göre...
+
+821
+02:43:21,811 --> 02:43:34,811
+Şey soracağım [öğrenci], mesela atıyorum işte 10 epok ilerliyorsun sen. 10 epok ilerlerken her bir epoktaki weightleri alıp…
+
+822
+02:43:34,811 --> 02:43:40,711
+Weightlerin farkını hocam. Bir öndeki weight ile şu anki benim tahmin ettiğimin farkını alıyorum.
+
+823
+02:43:41,492 --> 02:43:43,932
+Farkları alarak ilerliyorsun. Öyle mi?
+
+824
+02:43:44,451 --> 02:43:46,092
+Yani bu şekilde internetten böyle bakıyorsun.
+
+825
+02:43:46,092 --> 02:43:48,711
+Ama şöyle bir şey olmuyorum ben yanlış yapıyorum.
+
+826
+02:43:49,051 --> 02:43:51,252
+Yani bir az azaldı bir çok azaldı mesela.
+
+827
+02:43:51,471 --> 02:43:53,332
+Burada fark değişiyor.
+
+828
+02:43:53,332 --> 02:43:57,871
+Yani sürekli inen bir şey düşün.
+
+829
+02:43:58,391 --> 02:44:00,891
+Yani Lus'un sürekli indiğini düşün tamam mı normalde?
+
+830
+02:44:01,512 --> 02:44:02,791
+Ama sen burada şey yapıyorsun.
+
+831
+02:44:02,971 --> 02:44:04,512
+Hani ardışıklara bakıyorsun.
+
+832
+02:44:05,772 --> 02:44:08,611
+Bir tanesinde az iniyor bir tanesinde çok iniyor.
+
+833
+02:44:09,108 --> 02:44:14,167
+Hani oradan bir gereksiz bir görüntü elde eder misin diye düşündüm de bir an.
+
+834
+02:44:14,627 --> 02:44:26,867
+Aslında şurada hocam düzgün görüntülere bu oransal olarak aslında şey yapıyor. Mesela dediğinizde anladım. Birinde fark çok oluyor, birinde de haz oluyor. O da böyle bir oran gösteriyor işte.
+
+835
+02:44:31,156 --> 02:44:45,175
+Peki niye şey yapmadın? Onu merak ediyorum. Sonuçta 10 boyutlu bir nokta var elimizde ve sürekli her bir adımda 10 boyutlu noktayı güncelliyoruz. Öyle değil mi? Onları niye kullanmadın zaten bunları çizdirirken?
+
+836
+02:44:46,615 --> 02:44:52,615
+Onları kullandım hocam. 10 tane değer işte şurada.
+
+837
+02:44:52,615 --> 02:44:57,755
+Farklardan bahsetmiyorum ben. Şunlardan bahsediyorum. Farklardan bahsetmiyorum.
+
+838
+02:44:58,644 --> 02:45:10,084
+Önceki weight, siz neden bakın. Ben o şekilde ilerledim. Zaten o şekilde değiştirdim. Önceki weight değerleriyle anki benim bulduğum değerin arasındaki farkları toplayıp devam ettim.
+
+839
+02:45:10,764 --> 02:45:17,363
+Tamam, tamam. Doğru. Peki onların her bir anki değerlerini bir yere depolayıp ondan sonra onları yörünge olarak çizdirecektin işte.
+
+840
+02:45:18,291 --> 02:45:32,371
+Evet, işte farklarını depoladım. Ama hocam o şekilde depolanınca benim zaten bir boyut geliyor buradan samladığım zaman hepsini ve Dimension'a böldüğüm zaman burada bir bir loss var geliyor bende. Burada on tane farklı değer geliyor.
+
+841
+02:45:32,371 --> 02:45:40,911
+Hayır, tamam. Single loss var ya. Sonuçta orada ortalama almadan, lossı hesaplamadan evvelden bahsediyorum.
+
+842
+02:45:41,523 --> 02:45:43,223
+Bir dakika, Allah'a olsun. Sen nasıl hesapların?
+
+843
+02:45:43,223 --> 02:45:49,663
+Aynı şey hocam. Bir tek ortalamaya bölüyorum. Ortama alıyorum işte. Sayıya bölüyorum. Dimension'a bölüyorum. On.
+
+844
+02:45:52,683 --> 02:45:54,523
+Ama topluyorsun sen bunları.
+
+845
+02:45:54,523 --> 02:46:02,823
+Evet, topluyorum hepsini. Bu pozitifliyorum. Topluyorum ve dimension'a bölüyorum.
+
+846
+02:46:09,427 --> 02:46:21,847
+Peki, tamam. Garip mi olmuş hocam? Evet. O şekilde. Şekiller de garip geldi. O yüzden. Hocam TCNA evet birazcık garip ama.
+
+847
+02:46:22,995 --> 02:46:27,355
+Bu da şey hocam, loss'u birden aldığım için. Benim loss birden başlıyor.
+
+848
+02:46:27,355 --> 02:46:30,515
+Onu anladım. Oradaki çok şey değil de.
+
+849
+02:46:30,656 --> 02:46:36,656
+Aslında arkadaşlarla aynı bir anda iniyor ve sonradan devam ediyor. Gradient Cent'de daha düz bir şekilde inmiş.
+
+850
+02:46:36,935 --> 02:46:39,695
+Aşağıda vardı bir tane böyle inen çıkan.
+
+851
+02:46:39,835 --> 02:46:46,595
+Bu hocam TCNA'da bu şekilde veriyor ki diğer arkadaşlar da garip bir şekilde vermişti. Bunu çözemedim bilmiyorum.
+
+852
+02:46:48,628 --> 02:46:52,647
+Bir de bu tek boyut gösteriyorsun sen şu anda, Epoch ilerledikçe.
+
+853
+02:46:53,807 --> 02:46:56,587
+Epoch ve Lost grafiğini gösterdim.
+
+854
+02:46:57,587 --> 02:47:01,468
+Tamam, ama benim istediğim şey şey değil miydi?
+
+855
+02:47:01,468 --> 02:47:08,167
+Hani nokta ilerliyor, iki boyuttaki çizildiğimiz şeyler hatırlıyorsun değil mi derste?
+
+856
+02:47:10,004 --> 02:47:31,704
+Hani smooth bir şekilde yaklaşıyordu böyle optimum noktaya falan. Hani onları iki boyutta çizdiriyorduk biz. E orada loss falan yok ortada. Yani hani direkt yani arka planda tabii ki var da. Yani yörüngeyi görmek istiyoruz biz burada. Sen burada loss'u, epo'u, tcn'e ile çizdirmek ne demek? Orasını tam şey yapamadın, kavrayamadın.
+
+857
+02:47:31,704 --> 02:47:36,304
+Hocam ben 10 boyut anladık demek istediğiniz.
+
+858
+02:47:37,043 --> 02:48:01,824
+Sen anladın beni. Anladım hocam sizi de. İlk ödevin şeyi diyelim hocam. Peki, tamam. Tamam. Bu da time grafiklerim. Bunu devam edebilirdim ama iki tane yeter diye düşündüm. Adam'da da, Gradient Center'da. O şekilde. Bu best parametreleri olan iki fonksiyon. Bu şekilde.
+
+859
+02:48:02,611 --> 02:48:05,671
+Tamam, tamam. Teşekkürler [öğrenci].
+
+860
+02:48:05,731 --> 02:48:06,311
+Rica ederim.
+
+861
+02:48:12,308 --> 02:48:21,368
+Peki arkadaşlar, bugünlük dersimiz bu kadar. Saat 5'e 10 kalı olmuş zaten. Birbirinizin ödevlerini dinlemek faydalı oldu mu?
+
+862
+02:48:23,368 --> 02:48:23,908
+Evet.
+
+863
+02:48:26,835 --> 02:48:33,335
+Muhtemelen olur diye tahmin ediyorum. Kayıt altına da almış ol. İstediğiniz zaman dinleyebilirsiniz birbirinizi.
+
+864
+02:48:33,335 --> 02:48:47,335
+Fatih Hocam, benim bir tane sorum var ama başlardaki ödev sunumlarında yanlış anlamadıysam. Konveks fonksiyonlarda Adam, Gradient Descent'e göre daha fazla epohta...
+
+865
+02:48:47,667 --> 02:48:52,667
+Benim minimuma ulaştı gibi bir şey anladım ben. Yanlış mı anladım yoksa?
+
+866
+02:48:53,087 --> 02:48:58,587
+Şimdi bazı denemelerde arkadaşlarınız o tarz şeyler bulmuşlar. Gördüm onları.
+
+867
+02:48:58,587 --> 02:49:07,727
+Bunun nedeni bu. Hocam, nedenimde momentum olduğu için ben daha hızlı gelmesini beklerdim.
+
+868
+02:49:08,211 --> 02:49:31,092
+Ama konveks fonksiyonlarda özellikle. Fakat daha şeydeki durumu anlıyorum. O R bölgesi dediğimiz, zigzagların olduğu bölgedeki şeyi anlıyorum. Niye sıçradan o bölgeye etrafında dolaştığını. Ama sanki daha o bölgeye gelmeden de biraz yavaş gitmiş gibi bir durum var mı yoksa ben mi?
+
+869
+02:49:31,860 --> 02:49:54,280
+Denemelerin bazılarında öyle sonuçlar gelmiş gibi gördüm ben de. Yanlış anlamadıysam. Tabii şimdi bir daha bakacağız ödevlere falan ama tabii bu şaşırtıcı bir şey mi? Evet şaşırtıcı bir şey. Normalde beklentimiz her bir adımda daha fazla işlem yapıp ama adım sayısının daha az olması.
+
+870
+02:49:54,868 --> 02:50:09,368
+Gratian Dissent'e göre. Ama tabii şöyle bir gerçek var. Özellikle yapay sinraları derin öğrenme mimarların eğitiminde Adam oldukça yaygın olarak kullanılıyor.
+
+871
+02:50:09,843 --> 02:50:36,643
+Ama gradient descent de gözden düşmüş değil. Sadece Adam'ı kullanalım, devam edelim gibisinden bir durum da yok açıkçası. Adam her durumda gradient descent'i yener, ondan daha iyi çalışır diye bir şey söylememiz pek mümkün değil gibi gözüküyor. Empirik olarak yapılan deneyler onu gösteriyor. Burada da arkadaşlarınızın bazı deneyleri ona uygun olmuş açıkçası.
+
+872
+02:50:37,268 --> 02:50:41,108
+Dolayısıyla dediğin şey doğru [öğrenci]. Öyle bir şey gördük.
+
+873
+02:50:41,108 --> 02:50:43,948
+Anladım. Tamam. Teşekkür ederim.
+
+874
+02:50:44,388 --> 02:50:45,108
+Rica ederim.
+
+875
+02:50:45,551 --> 02:51:00,471
+Hocam, ben de bir şey sorabilir miyim? Yani benim matematik eksiklikten kastım özellikle mesela verdiğimiz başlangıç değerleri, işte diğer parametreler vesaire için bir öngörümüzün olması gerektiğini düşünüyorum.
+
+876
+02:51:00,471 --> 02:51:08,471
+Hani program hiç olmasa bile, hani elle de olsa yaklaşık bir şeyleri beklememiz gerektiğini düşünüyorum.
+
+877
+02:51:08,612 --> 02:51:13,471
+Dolayısıyla hani buna göre doğru olarak yorum yapabileceğim, özellikle benim kaygım...
+
+878
+02:51:13,551 --> 02:51:41,551
+Grafikleri doğru yorumlayamamaktı. Yani hangi sebepten dolayı grafiğin o şekilde olduğu, neyi değiştirmem gerektiği vesaire gibi konular için altyapımın eksik olduğunu düşünmüştüm. Zaten dersleri dinlerken de bu saddle point vesaire gibi noktaları nasıl hesapladığımız, o yani mesela konveks, non-konveks olması gerektiğinde ikinci türevin etkisi yani vesaire gibi konuları yani öğrenmek.
+
+879
+02:51:41,551 --> 02:52:09,551
+Hani bu normal mi? Yani ve mesela PCA'yı falan daha önce kullandığımı hatırlamıyorum. Yani belki az önce yanlış bilgi verdim. Decision Tree'leri kullanmıştım sanırım VK'da falan. [kişisel bilgi] O yüzden bu konuda bir...
+
+880
+02:52:09,551 --> 02:52:10,551
+Sorum yapabilir misiniz?
+
+881
+02:52:11,791 --> 02:52:24,332
+Ya derste bırakmasın diye bir şey ben söyleyemem. [kişisel bilgi]
+
+882
+02:52:24,811 --> 02:52:25,272
+Tabii ki.
+
+883
+02:52:25,912 --> 02:52:28,532
+[kişisel bilgi]
+
+884
+02:52:29,152 --> 02:52:30,332
+[kişisel bilgi]
+
+885
+02:52:30,656 --> 02:52:54,576
+Şimdi o noktada bence bu dersi bırakmak diye bir opsiyon düşünme hiç. Sonuçta bu dersin gerektirdiği belki, altyapı şudur budur noktalarında oturup çalışıp da halledemeyeceğim bir şey olacağını zannetmiyorum.
+
+886
+02:52:54,976 --> 02:53:19,476
+Şimdi bu mesela bugünkü benim ağzımdan dinlediklerinizin ötesinde bir de arkadaşlarınızın ağzından da baya bir şeyler dinlediniz. Bugünkü bu ödevleri de sizin hani işte kodlar var şudur budur herkes paylaşır birbiriyle zaten ödevin süresi geçti artık. Dolayısıyla kodlarınızı rahatlıkla paylaşabilirsiniz birbirinize o konuda bir sıkıntı yok anlamak için.
+
+887
+02:53:22,976 --> 02:53:33,636
+Dersin en başında kollektif öğrenme dersinde hem dersin konusunun kollektif öğrenme olduğunu hem de bir şekilde hep beraber de öğreneceğimizi ifade etmiştim.
+
+888
+02:53:33,968 --> 02:54:00,048
+O noktada bence eksiklerinizi tamamlayıp ilerlemeniz mümkündür diye düşünüyorum. Daha önce kod yazmaktır, şudur budur noktalarında zaten probleminiz yoktur. Dolayısıyla bence sadece altyapı ya da biraz geçmiş bilgilerdir. Üstünden zaman geçmiştir hatırlamıyor musunuz? O tarz problemler olabilir. Bunlar da çözülebilecek problemler bence.
+
+889
+02:54:01,968 --> 02:54:07,368
+Anıları biliyor olmam gerekiyor muydu? Bu derste birlikte öğrenmem normal bazı şeyle.
+
+890
+02:54:08,448 --> 02:54:13,327
+Normal, normal. Sonuçta bu derse herhangi bir koşulu tanımlamıyorum ben.
+
+891
+02:54:14,847 --> 02:54:24,148
+Ama temel olarak en azından bir yapay zeka dersi, bir veri modelleme dersi falan almış olmak.
+
+892
+02:54:25,647 --> 02:54:33,467
+D tam aldı. Gerekir. O tarz şeyler aldıysanız zaten bunlara da aşina olmanız beklenir. Tamam, teşekkür ederim.
+
+893
+02:54:33,467 --> 02:54:38,927
+Tamam, rica ederim. Arkadaşlar, hepinize başka sorusu olan var mı?
+
+894
+02:54:44,211 --> 02:54:56,731
+Peki. Arkadaşlar, hepinize çok teşekkür ediyorum bugünkü ders için. Ödev yapanlara da ayrıca bir kez daha teşekkür ediyorum. Görüşmek üzere haftaya kadar. Sağlıcakla kalın.
+
+895
+02:54:57,631 --> 02:54:58,251
+Görüşürüz hocam.
+
+896
+02:54:58,551 --> 02:54:59,951
+Görüşürüz hocam. Teşekkür ederim.
+
+897
+02:55:01,171 --> 02:55:02,492
+İyi akşamlar.
