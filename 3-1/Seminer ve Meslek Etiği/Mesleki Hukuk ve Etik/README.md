@@ -23,6 +23,7 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Mesleki Hukuk ve Etik Ders Kayıtları](./ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
