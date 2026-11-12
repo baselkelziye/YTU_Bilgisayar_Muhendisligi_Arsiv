@@ -1,0 +1,1139 @@
+1
+00:01:58,835 --> 00:02:00,835
+Merhabalar, [öğrenci].
+
+2
+00:02:02,835 --> 00:02:04,427
+Sesim geliyor mu acaba?
+
+3
+00:02:17,139 --> 00:02:18,891
+Şu an gelmiyor mu sesin?
+
+4
+00:02:24,116 --> 00:02:30,116
+Tamam. 2-3 dakikaya başlamış oluruz. Hemen geliyorum.
+
+5
+00:07:30,004 --> 00:07:31,504
+Şimdi başlayalım.
+
+6
+00:07:35,348 --> 00:07:40,848
+[öğrenci] herhalde mail geldi değil mi? Yani sende maille haberdar oldun.
+
+7
+00:07:43,747 --> 00:07:50,348
+[kişisel bilgi]
+
+8
+00:08:02,100 --> 00:08:08,460
+Şu an makine öğrenmesi 3 olarak bir slide paylaştım. Herhalde geldi görüntüde.
+
+9
+00:08:15,444 --> 00:08:18,043
+Neyse, ikimiz özel ders gibi yapalım bakalım.
+
+10
+00:08:19,864 --> 00:08:37,244
+Şimdi, eğiticili öğrenme olduğu durumda, veriye girdi olarak özelliklerimizi ve bu özelliklere denk düşen sayısal veya kategorik çıktılarımızı sunuyorduk.
+
+11
+00:08:37,244 --> 00:08:42,244
+İşte regresyon, sınıflandırma problemleri bu şekilde çözülmeye çalışılıyordu.
+
+12
+00:08:43,059 --> 00:08:50,659
+Eğiticisiz öğrenmede sadece verinin özellikleri vardı. Herhangi bir çıktı sunmuyorduk.
+
+13
+00:08:50,659 --> 00:08:58,659
+Pekiştirmeli öğrenme, reinforcement learning ise yine veriye girdi olarak bazı şeyler sunuyoruz.
+
+14
+00:08:58,659 --> 00:09:06,059
+Yönlendirme amacıyla yaptığı şeyin doğru veya yanlış olduğunu, yaptığı şeye...
+
+15
+00:09:06,355 --> 00:09:11,635
+Ödül veya ceza verilmesi gerektiği ile alakalı bilgi sunuluyor. Herhangi bir çıktı yok.
+
+16
+00:09:12,436 --> 00:09:16,836
+Ve eğitim bu şekilde gerçekleştiriliyor.
+
+17
+00:09:17,556 --> 00:09:23,475
+Ödül dediğimiz şey genel olarak uzaktaki bir hedeften bahsedebiliriz.
+
+18
+00:09:24,275 --> 00:09:29,395
+Şu sağdaki görselde bu özetlenmeye çalışıldı.
+
+19
+00:09:30,355 --> 00:09:31,956
+Şöyle kalem alayım.
+
+20
+00:09:32,659 --> 00:09:41,839
+Herhangi bir ortamda bir başlangıç noktasından, genellikle bu oyunlarda, işte labirent gibi oyunlarda karşımıza gelecek bir şey, birazdan örneği de var.
+
+21
+00:09:41,839 --> 00:09:56,339
+Bir makine öğrenmesi modeliyle, yapay zeka modeliyle, rasyonel davranan, insan gibi davranan ve mantıklı hareket eden bir ajan çalışıyor.
+
+22
+00:09:56,339 --> 00:10:00,000
+Bu ajanın farklı konumları var.
+
+23
+00:10:00,000 --> 00:10:06,319
+Farklı aslında state'ler var, geçişler oluyor. Her state'de de farklı aksiyonlarımız olacak.
+
+24
+00:10:06,319 --> 00:10:18,559
+İşte bu aksiyonları yaptığında, yaptığı aksiyonun doğru veya yanlış veya ödül veya ceza ile bir feedback'i veriliyor.
+
+25
+00:10:18,559 --> 00:10:27,519
+Ajanın hedefi de, öyle bir hareketler dizisi gerçekleştirsin ki,
+
+26
+00:10:27,988 --> 00:10:34,988
+Toplamaya çalıştığı veya elde etmeye çalıştığı ödüller maksimize olsun, en fazlalaşmaya çalışsın.
+
+27
+00:10:36,488 --> 00:10:40,988
+Ajanın hareketleri hangi verilere erişeceğini de belirliyor burada.
+
+28
+00:10:41,488 --> 00:10:46,988
+Birazdan bazı örnekleri gelecek. Ne yapması gerektiğini burada söylemiyoruz.
+
+29
+00:10:47,279 --> 00:11:13,600
+Herhangi bir şekilde. Normalde yapı makine öğrenmesi, supervised learning'te ne vardı? İşte x'i 3 girersen, y'i 5 girersen elde edeceğin şey 8'dir. Bu yapacağı şeyi söylediğimiz bir durumdu. Burada yok öyle bir şey. İşte şu işi yaparsan veya işte x'i şu değer girersen doğru yaptın veya şu kadar ödül aldın. İşte bunu yapmazsan şu kadar ceza aldın gibi bir durumlarla karşılaşacağız.
+
+30
+00:11:14,868 --> 00:11:19,868
+Pekiştirmeli öğrenme, destekleyicili, takviyeydi, reinforcement dediğimiz şey.
+
+31
+00:11:19,868 --> 00:11:29,868
+Tabii, reinforcement ifadesi burada bilinçli olarak kullanılıyor. Normalde bir eğitimsel arka planı var.
+
+32
+00:11:29,868 --> 00:11:39,868
+Şöyle düşünelim, eğitim bilimlerinde veya insan eğitim sisteminde yapılan bir hareketin
+
+33
+00:11:40,563 --> 00:11:47,683
+Doğru yapıldığının feedbacki verilirse, bu Reinforced Learning'in bir parçası oluyor.
+
+34
+00:11:47,683 --> 00:11:53,283
+İşte öğrenci bir konuda kendini öğrenmeye çalışıyor, bir şeyler yapmaya çalışıyor.
+
+35
+00:11:53,283 --> 00:12:02,483
+Buna, onu öğreten kişi, bir öğretmen tarafından yaptığının doğru olduğunun geri bildirimi veya yanlış yaptığı satarsına,
+
+36
+00:12:02,483 --> 00:12:06,563
+bunun yanlış yapıldığının geri bildirimi verilmesi lazım.
+
+37
+00:12:08,275 --> 00:12:17,275
+öğrenme, mükemmele doğru ilerlesin. Önceki öğrenme şekillerinden birazcık farklı bir mekanizma gerçekleşiyor.
+
+38
+00:12:17,275 --> 00:12:25,275
+Bir şeyi reinforce etmek, mesela bazı problemlerde, yani her probleme her türlü öğrenme çeşidi uygulanmıyor.
+
+39
+00:12:25,275 --> 00:12:32,063
+Öyle bilgi ve becerilerin öğrenilmesi veya edinilmesi gereken durumlar var ki,
+
+40
+00:12:32,063 --> 00:12:36,463
+reinforcement learning orada işe yarıyor diyebiliriz. Örneğin dil eğitimi.
+
+41
+00:12:36,463 --> 00:12:42,463
+Yani bir İngilizce veya ne bileyim herhangi bir yabancı dil eğitimi yapılırken, insanda da bu böyledir.
+
+42
+00:12:42,463 --> 00:12:55,663
+Şey yoktur, bir matematik eğitimi gibi değildir her zaman. Sürekli bol soru çözü değil. Bu sürekli kendini tekrar ede ede belli bir eşik değerini aşana kadar
+
+43
+00:12:55,923 --> 00:13:02,644
+öğrenilmesi gereken bilgi ve becerilerin edinilmesi alakalı bir süreçtir. Burada da ona benzer bir şeyle karşılaşacağız.
+
+44
+00:13:02,644 --> 00:13:11,604
+Tabii Reinforced Learning belli bir diskret alanda, sürekli alanda değil de bir ayrık alanda yapılacak bir şey.
+
+45
+00:13:11,604 --> 00:13:23,443
+Şuna dikkat etmemiz gerekiyor. Olası tüm durumların erişilebilir olduğu simülasyonlarda çalışılabiliyor.
+
+46
+00:13:24,436 --> 00:13:33,615
+Veya daha çok burada simülasyondan kastımız oyunlar diyebiliriz. Oyunlarda kendi kendine eğitim de mümkün oluyor.
+
+47
+00:13:33,615 --> 00:13:47,596
+Bu öğrenen sisteme oyunu kazandın, kaybettin, şu kadar bir şekilde simülasyon dünyası tarafından bir geri bildirim, bir feedback sunuluyor.
+
+48
+00:13:47,596 --> 00:13:50,283
+Diyelim.
+
+49
+00:13:51,668 --> 00:14:05,748
+Peki, burada aynı şekilde şeylerde düşüneceğimiz gibi, arama problemlerini modellerken bir veri yapısından bahsetmiştik. Bir saniye arkadaşlar.
+
+50
+00:14:22,995 --> 00:14:40,235
+Arama problemlerinde, search algoritmalarının olduğu durumlarda bir state space tree gibi bir şey konuşmuştuk. Sonra oyunlarda bu game tree oldu. Burada da kendine göre bunun veri yapılışı ve temel dayandığı şeyler var.
+
+51
+00:14:40,235 --> 00:14:47,836
+Bir ajandan bahsedeceğim için bu ajanın içinde bulunduğu ortam environment veya ortam olarak ifade ediliyor.
+
+52
+00:14:48,052 --> 00:15:09,652
+Aca'nın bulunduğu konum veya durum diyelim. Birazdan örneğe gelince belki daha rahat anlarsınız. Bir tane bulunduğumuz bir konumumuz var, durumumuz var. Buna state diyoruz. Bu state'lerden gidilecek belli, yapabileceğimiz belli aksiyonlar var. Şurada söylediğimiz üzere.
+
+53
+00:15:10,259 --> 00:15:17,759
+bulunduğumuz şeyde hangi state'e gidersek, hangi state'ten hangi aksiyonları yapabileceğimize alakalı bilgi var.
+
+54
+00:15:17,759 --> 00:15:25,759
+Ve bu aksiyonlara göre elde edeceğimiz bir ortamdan bize söylenen geri besleme var.
+
+55
+00:15:25,759 --> 00:15:33,059
+Bu hangi durumdan, hangi aksiyonu yaparsak,
+
+56
+00:15:33,620 --> 00:15:44,420
+elde edeceğimiz ödül bilgisi ne olur? Bunları toplu bir şekilde bizlere söyleyecek olan bir politika dediğimiz tablomuz var.
+
+57
+00:15:44,420 --> 00:16:00,860
+Ve gelecek ödülleri, value'ları tuttuğumuz şu durumda, şu hareketi yaparsan alınabilecek, gelecekteki ödül, yani muhtemel ödül şu olacak diye bunları tutacak bir
+
+58
+00:16:01,203 --> 00:16:19,203
+Yine bilgimiz oluyor. Ve bunlara göre şey oluşuyor. Evet, tabii bu reinforcement learning çok şemsiye bir kavram. Bu şemsiye kavramın altında farklı algoritmalar zaman içerisinde geliştirildi.
+
+59
+00:16:19,923 --> 00:16:46,364
+Bunlardan bir tanesi Q-Learning dediğimiz yaygın bilinen algoritmalardan bir tanesi. Burada birazcık örneğine bakacağız ama internette bununla alakalı hem kod olarak hem de basit örnekler üzerinde adım adım çalışması olarak bir sürü kaynak var. Aşağıda da zaten biz şurada bazı şeyler paylaşmışız.
+
+60
+00:16:47,059 --> 00:16:54,379
+Bulunduğumuz yer, bu örnekte şöyle, başlangıç noktamız var, sıfır noktasındayız, sekiz noktasına gideceğiz.
+
+61
+00:16:55,659 --> 00:17:05,059
+Bu noktaya giderken, her bulunduğumuz noktadan, sağa, sola, yukarıya, aşağıya hareket etme ihtimallerimiz söz konusu.
+
+62
+00:17:06,239 --> 00:17:08,119
+Bakın aslında bir arama problemi gibi bir şey.
+
+63
+00:17:09,559 --> 00:17:11,579
+Dört farklı olacak durum var.
+
+64
+00:17:12,115 --> 00:17:26,115
+Ödül olarak da sadece 8'e giden yerlerde ödül var. Yani başladığın noktadan bir şekilde bazı hareketler yapıyorsun. 8'e giden yerlerde bulunduğumuzda bu da 3 ve 6 noktaları oluyor.
+
+65
+00:17:26,115 --> 00:17:31,115
+Burada ödül kazandırıyor. İşte 11'im ödül kazandırmış.
+
+66
+00:17:32,180 --> 00:17:44,019
+Burada Q-Learning satırlarında durumların olduğu, yani 0. durum, 1. durum, 2. durum, 3. durum dediğimiz bir tablo, Q tablosu tutacağız burada.
+
+67
+00:17:45,480 --> 00:17:50,980
+Sütunlarında da hangi durumdan hangi noktaya geçiş yapacağız?
+
+68
+00:17:54,963 --> 00:18:07,764
+Bunları söyleyeceğim, bir matriz oluyor. Dolayısıyla bu örnek üzerinde bakacak olursak, 9 tane satırımız olan, 4 tane de sütunumuz olan bir matristen şey yapacağız.
+
+69
+00:18:07,764 --> 00:18:15,523
+Ve bu matriz üzerindeki, şuradaki bilgilerden yola çıkarsak, ödül durumlarımız söylenecek.
+
+70
+00:18:15,523 --> 00:18:21,284
+Yani aslında ödüller tutulacak, her harekete karşı yapılacak, kazanılacak o ödül.
+
+71
+00:18:23,059 --> 00:18:32,659
+Hangi durumda, hangi hamleyi yaparsak veya aksiyonu sergilersek daha mantıklı bir iş yapmış oluruz. Bunu tutan bir madris olacağım.
+
+72
+00:18:32,659 --> 00:18:41,059
+Tabii bu madrisin ilk başta bütün değerleri sıfır olarak sunuluyor.
+
+73
+00:18:41,203 --> 00:18:49,203
+Çünkü henüz bir hareket yapmadığımız için, hareket yapılmadığı durumda, yaptığımız şeyin ödülü, cezası herhangi bir şey yok.
+
+74
+00:18:49,203 --> 00:18:56,203
+İlk başta bütün değerleri sıfır olan bir matriz, daha sonra kendisini yavaş yavaş güncelleyecek.
+
+75
+00:18:56,203 --> 00:18:58,763
+Zaten şöyle oyunlar düşünün.
+
+76
+00:18:59,188 --> 00:19:10,588
+Bir oyun başladığında bazı bomberman falan o tarz şeyler vardır. Önce puslu bir alan vardır. Siz o oyunda ilerledikçe şey açılır. Bu da onun gibi düşünebilirsiniz.
+
+77
+00:19:10,588 --> 00:19:22,988
+Tabii bu örnek özelinde söyleyecek olursak 5 ve 4 noktalarında da bir çukur. Yani gidilmemesi gereken, yasaklanmış bir şekilde gittiğinizde yanlış olacağınız.
+
+78
+00:19:23,231 --> 00:19:32,411
+iki tane kısıt verilmiş. Dolayısıyla sıfırdan mecburen bu örnekte 1'e gitmek gerekecek. İşte 1'den 2'ye gitmek gerekecek.
+
+79
+00:19:32,411 --> 00:19:40,351
+2'den 3'e gidebilirim, 2'den 6'ya gidebilirim. İşte buna göre bir oyun sürekli kendini güncelleyecek.
+
+80
+00:19:40,351 --> 00:19:49,791
+Evet, işin sonunda aslında biz şöyle bir tablo elde edeceğiz. İlk başta t eşittir sıfır anında
+
+81
+00:19:50,228 --> 00:19:59,827
+Bütün durumlardan gidilebilecek olan, en makul olan şeyleri söyleyecek şey. Ama ilk başta hiçbir şey yapmadığım için sıfır değerinde.
+
+82
+00:19:59,827 --> 00:20:05,827
+T eşittir, K anına geldiğimizde bu tabloda bazı değerlerin doldurulmuş olduğunu görüyoruz.
+
+83
+00:20:15,316 --> 00:20:27,316
+en mantıklı olan durum oluyor. Mesela şöyle bakalım, 2'den aşağıya gitmek, 3 veya 6'ya gitmek, en kazançlı veya ödül alınası durumlar oluyor.
+
+84
+00:20:27,316 --> 00:20:42,316
+İşte 3 noktasındayken 5'e gitmek, 3'den sola doğru gitmek, yani bu da ne demek? 8'e gidersen kazanacağın ödül 10 olacaktır.
+
+85
+00:20:42,451 --> 00:20:56,211
+şeklinde bir şey var. Daha sonra 6'dan aşağıya doğru gitmek için aynı şekilde 5 birim ödül olacağı durum var. Bu bir mekanizmaya, bir formüle göre bu tablo devam edecek.
+
+86
+00:20:56,211 --> 00:21:04,291
+Bu işlem mesela tabii biz şu an ilk başlangıçta 0 noktasındayız. Mecburen 1'e gideceğiz.
+
+87
+00:21:08,852 --> 00:21:20,332
+belli bir süre sonra bu tablo doldukça şu noktaya gitmesi gerektiğini bize söylüyor. Yani bir anlamda bu ödül burada belirginleşiyor diyebiliriz.
+
+88
+00:21:20,332 --> 00:21:31,612
+Buna Q-Learning algoritması demişiz. Başka bunlara benzer, bunların modifiye edilmiş halleri de var. Şimdi Q-Learning özelinde birazcık bakalım.
+
+89
+00:21:34,355 --> 00:21:48,355
+Bölüm veya episod dediğimiz herhangi bir başlangıç noktasından başlayan, sonunda fail eden veya hedefe ulaşmakla tamamlanan hareketler dizisine episod diyoruz.
+
+90
+00:21:48,355 --> 00:22:02,124
+Yani aslında burada yapacağımız episodların, hareketlerin hangisinin mantıklı, hangisinin daha ödül kazanmaya değer, hangisinin daha mantıksız olduğunu söyleyen bir veri yapısı, bir bilgimiz var.
+
+91
+00:22:02,259 --> 00:22:29,059
+Bu hareketler dizisi episod oluyor. Politika, az önceki durumda söylediğim şeyler, mevcut durumda yapılacak hareketi yani action'ı mevcut da S-State'indeyiz. Bu S-State'inden acaba hangisine geçersek mantıklı bir şey yapmış oluruz, ödül kazanırız bunu söyleyeceğiz. Bu Q'ya göre seçiliyor. Ajan, tabii burada iyi bir politika arayan.
+
+92
+00:22:29,652 --> 00:22:42,652
+gerekirse deneme yanılma ile bu önce herhangi bir değerden başlayıp ki bir an önce sıfırın olduğu yerlerden başladık. Bunu oldukça iyileştirme noktasında giden bir şekilde.
+
+93
+00:22:42,652 --> 00:22:51,652
+Ama burada iyileştirme yaparken şöyle de bir durum var. Hatırlarsanız tepe tırmanma algoritmasında bunu kısmen konuşmuştuk.
+
+94
+00:22:51,652 --> 00:22:56,299
+Şimdi herhangi bir yerde şuradan başladığımızda
+
+95
+00:22:56,788 --> 00:23:03,987
+Bu başladığımız noktadan hep yukarıya doğru gidersek, işte hedeflediğimiz en iyiye ulaşırız, en maksima ulaşırız diye demiştik.
+
+96
+00:23:03,987 --> 00:23:11,788
+Ama bazı durumlarda işte bir algoritmamız vardı, hatta simulated annealing dediğimiz.
+
+97
+00:23:12,387 --> 00:23:24,467
+Bu bizi daha kötü duruma götürürsek, acaba belki lokallerden kaçıp daha iyi bir çözüm arama imkanına ulaşabilir miyiz? Bunu söylüyorum.
+
+98
+00:23:24,751 --> 00:23:31,751
+Örneğin ben mesela şuradan şuraya atlarsam ve aramayı buradan devam etsem daha maksimum noktaya gidebiliyordum.
+
+99
+00:23:31,751 --> 00:23:42,751
+İşte burada bize söylenen şu hareketi yaparsan şu kadar ödül alacaksın bilgisini acaba her zaman kullanalım mı?
+
+100
+00:23:42,751 --> 00:23:51,751
+Yoksa bu bilginin bazen birazcık dışına çıkıp başka ihtimalleri de hesaba katarak daha iyi bir çözüm bulabilir miyiz?
+
+101
+00:23:51,776 --> 00:24:06,776
+gibi bir ikilem, dilemma söz konusu. Bu dilemma şu, oradaki, şuradaki tabloda söylenen bilgiyi kullanmak, exploit etmek. Yani use, utilize dediğimiz oradaki beliyi doğrudan kullanmak.
+
+102
+00:24:06,776 --> 00:24:15,776
+Acaba bu bilgi doğrudan kullanılması gereken veya kullanılsa iyi olur mu? Yoksa bunu doğrudan kullanmadan...
+
+103
+00:24:16,435 --> 00:24:24,435
+Başka keşifler yapalım, belki daha iyisiyle karşılaşırız. Exploration yapalım dediğimiz bir ikilem söz konusu.
+
+104
+00:24:26,435 --> 00:24:42,435
+Bilmiyoruz mesela T eşittir, K anında, tabii şu örnekte 3'teyken left yapıp 5 puan kazanmak, şunu yapmak en mantıklı ama belki sağa gidip daha geniş bir problemde, burada ilk başta 0 görünüyor ama...
+
+105
+00:24:42,836 --> 00:24:54,036
+Onun üzerinden algoritma, bu tabloyu güncellersek, belki çok çok daha güzel değerler çıkabilir. Mantığını kullanmak gerekiyor.
+
+106
+00:24:54,036 --> 00:25:00,635
+Keşfetme, kullanma, Exploration, Exploitation, burada zaten söylediğim şeyin açıklaması aynen var.
+
+107
+00:25:00,635 --> 00:25:08,235
+Genelde hani bu keşfetme ve kullanmaya bazı örnekler olarak şunu söyleyebiliriz.
+
+108
+00:25:11,412 --> 00:25:28,892
+Yeni bir yeri denemek mi istersiniz, iyi bildiğiniz bir yere gitmek mi istersiniz? Hani bazı sözümüz vardı ya bizim atasözü olarak, hani en iyi yol bildiğin yoldur. En kestirme yol bildiğin yoldur. Bu işte şey aslında doğrudan onu kullanmak üzerine.
+
+109
+00:25:28,892 --> 00:25:36,012
+Ama bazen keşif yaparak veya yeni bir maceraya atılarak çok çok daha iyi şeylerle...
+
+110
+00:25:36,627 --> 00:26:03,228
+karşılaşabilme imkanımız olabiliyor. Veya petrol arıyorsun. Daha önce petrol çıkmış bir bölgede çalışmak mı, yoksa yeni bir bölgede çalışmak mı? Bu düşünebilir. Aynı simulated annealing gibi bir şey. Ne yapıyorduk bu simulated annealing'te? Rastgele bir hareket seçiyorduk. İşte tepe tırmanma algoritmasında yukarı doğru mu gideceğiz, aşağı doğru mu gideceğiz?
+
+111
+00:26:03,443 --> 00:26:18,443
+Eğer yukarı doğru gitmek bizim için doğru bir şeyse, iyi bir şeyse bunu uyguluyorduk zaten. Ama iyi bir şey değilse, yani bunu acaba uygulasak iyi olabilir mi diye bir deniyoruz. Bu deneme yanılmayı yaparken de ilk başlarda...
+
+112
+00:26:18,996 --> 00:26:23,396
+Yüksek bir olasılıkla daha sonraki süreçlerde azalan olasılıkla uyguluyoruz.
+
+113
+00:26:23,396 --> 00:26:32,396
+Daha kötü bir çözümü test etmek, acaba daha iyi bir adım var mıdır diye bu kararı vermek için kullandığımız bir yaklaşımdır.
+
+114
+00:26:32,396 --> 00:26:35,196
+Benzeri burada da söz konusu olacak.
+
+115
+00:26:35,196 --> 00:26:40,396
+Evet, Q-Learning algoritması temel olarak şu şekilde arkadaşlar.
+
+116
+00:26:40,980 --> 00:26:47,579
+Yani detaylı bir algoritma olarak burada var. İşte nümerik örneği de bundan sonraki sayfamızda yer alacak.
+
+117
+00:26:47,579 --> 00:26:52,579
+Her bölüm için tekrar edeceğimiz şöyle bir şey var. Başlangıç durumumuza gidiyoruz.
+
+118
+00:26:52,579 --> 00:26:59,779
+Eğer bölüm sonuna gelmediyse veya bölüm sonuna gelene kadar bir aksiyon seçiyoruz.
+
+119
+00:26:59,779 --> 00:27:08,180
+Bu aksiyona göre bir hareket gerçekleştirip, ödülü ve sonraki durumu S üssü olarak belirleyebiliriz.
+
+120
+00:27:08,788 --> 00:27:24,588
+Burada, biraz önceki tablodan, satırlarımız, state'lerimiz de, sütunlarımız da o state'lerden gidebileceğimiz action'lardı. QSA değeri, şu formüle göre oluyor.
+
+121
+00:27:24,588 --> 00:27:33,588
+Burada iki tane önceden seçilen sabit kat sayılarımız var. Alfa ve işte şu gamma gibi şey.
+
+122
+00:27:34,579 --> 00:27:44,259
+Mevcut ödül bilgimiz şu reward'un R'si, sonraki durumumuzda S üstü olarak çalışacak ve bu durumları güncelleyeceğiz.
+
+123
+00:27:44,259 --> 00:27:50,019
+Mevcut tablodaki değere şöyle bir şey yapıyoruz.
+
+124
+00:27:50,019 --> 00:27:57,860
+Bir sonraki durumdan gidilecek olan S üstü durumunda
+
+125
+00:27:58,579 --> 00:28:04,980
+Tüm hareketlerin ödülleri arasından en maksimum olanını bul, bunu bir katsayıla çarp.
+
+126
+00:28:04,980 --> 00:28:15,480
+Mevcut ödüle de bunu ekle, bunu da bir katsayıla çarp. Aradaki mevcut ödülle arasındaki farkı bulup şu ödül tablosunu güncelliyoruz.
+
+127
+00:28:15,480 --> 00:28:20,480
+Örneğin ben 3 noktasındayım. Sağa sola yukarı aşağıya gidebilirim.
+
+128
+00:28:23,092 --> 00:28:40,692
+ödülü var, sola gitmemin bir ödülü var, aşağı gitmemin bir ödülü var, yukarı gitmemin bir ödülü var. Bu ödüllerden en fazla olanı bulacağım. Ama bulunduğum yerden bir sonraki noktaya geçişteki şeye dikkat edelim. Bunlardan en maksimum alıp şey yapacağım.
+
+129
+00:28:42,291 --> 00:29:05,291
+Tabii burada politikaya göre hani keşfik mü yapalım, kullanalım mı, exploration mı, exploitation mı yapalım bu ikilemde QS'lerin en yükseğini seçmek. Yani bu aslında kullanmak oluyor. Maksim bunu almak doğrudan hani hani greedy algoritmalar vardır ya, algoritma analize dersinde gördünüz.
+
+130
+00:29:09,971 --> 00:29:26,771
+Bu bir yaklaşım. Bunlardan rastgele bir tanesini seçip sistemin acaba daha iyi şeyler bulabilir mi? Buna izin vermesi, önce hataya gider gibi yapıp bazı keşifler yapması iki durumumuz var.
+
+131
+00:29:26,771 --> 00:29:36,571
+Burada decay dediğimiz greedy rastgele hareket seçme olasılığı da giderek azaltılıyor. Aynısı simulated, en yılındaki sıcaklık gibi.
+
+132
+00:29:36,852 --> 00:29:47,012
+Örneğin, ilk başta rastgele seçimlerin sayısı 10 defaysa, sonra bunu belki 7-8'e indiriyorsun, sonra 3-5'e indiriyorsun, sonra iyice azaltıyorsun.
+
+133
+00:29:47,012 --> 00:30:00,000
+Alfa dediğim şey öğrenme kat sayısı, bunlar sabit değerler. Gamada 0-1 arasında özellikle 0'a yakın ödüllere, 1'e yakın gelecek ödüllere odaklanıyor.
+
+134
+00:30:00,000 --> 00:30:25,000
+Yani 0'a yakın seçersek yakındaki ödüllere, 1'e yakınsa gelecek ödüllere odaklandığımız bir parametre imiş. Şöyle bir güncelleme, bir bölüm örneği yapalım. QSA tablosunda 3 noktasından left'e gittiğimiz zaman, sola doğru gittiğimiz zaman,
+
+135
+00:30:25,652 --> 00:30:41,652
+elde edeceğimiz şey. Mevcut da 3'ten left'e gitmenin, işte matristeki değer 0 birimdi. Şu alfa ve gamma'yı da 05 ve 09 olmuşlar. Şimdi 3'ten 8'e gidebiliriz.
+
+136
+00:30:52,211 --> 00:31:06,811
+left yapabiliriz. Ve 3'ten lefte gitmemizin bir şeyi var. Tabi bu maddesin başlangıçtaki halini düşünelim. Şu durumdayız. İşte şu satırdayız arkadaşlar. Hepsi sıfır değerinde.
+
+137
+00:31:10,420 --> 00:31:31,059
+İşte mevcut değerimiz 0. Buradan 0.5 değeri geliyor. Şimdi 8'e gitme durumu, 3'den bir sonraki gideceğimiz yer 8. Up üzerinden gidersek, down yaparsak, right yaparsak, left yaparsak bunların tablodaki değerleri şu an için 0.0.0.
+
+138
+00:31:31,763 --> 00:31:56,747
+Bu değerler toplanınca ne oluyor? Mevcut değerimizde gittiğimizde alacağımız ödül değerimiz de 10. Bu da şurada bakın. Yani şu reward, şuradaki 10'a karşılık geliyor. Ondan sonra bunlar zaten matristen aldığımız değerler. Kat sayılarımız da belli. Ne oluyor? Bunun artık bir sonraki durumu...
+
+139
+00:31:56,852 --> 00:32:24,332
+Daki değeri 5 olarak güncelleniyor. Yani ben ne yapıyorum? Şu tablodaki bir sonraki işte birkaç adım sonraki değerimizi artık o 3'ten left yaparsam 5 prim ödül alacağımı hesaplamış oluyorum. Aynısı için mesela işte diğer işte 2'de de var. Hani left'i seçtiğimiz zaman elde edeceğimiz şey tablodaki durumumuz bu şekilde olacakmış diyoruz.
+
+140
+00:32:26,228 --> 00:32:38,708
+Tabii bu, işte çukur dediğimiz veya gidilmemesi gereken yerlerle alakalı bunlardan uzak durmak da aslında bir ödül gibi söylenebilir.
+
+141
+00:32:38,708 --> 00:32:50,347
+İşte mesela bunu da o şeye yani tablomuza yansıtmak isteyebiliriz. Bu tarz şeyler, bu tarz oyunsal ifadeler de artık şeyler de...
+
+142
+00:32:50,708 --> 00:33:14,708
+algoritma da kodlanabiliyor, güncellenebiliyor diyelim. Şimdi, burada olay biraz daha farklı. İşte labirentten çıkış gibi bir örnek var. Ödül her zaman olduğu gibi işe yaramıyor. Ödülü biraz da tersinden düşünmek bazı durumlarda işe yaramıyor, biliyor?
+
+143
+00:33:14,832 --> 00:33:19,832
+İşte burada da labrant'ten çıkış dediğimiz bir şey. Bu tarz oyunlarda dikkat alalım.
+
+144
+00:33:19,832 --> 00:33:32,832
+Tabi bunun özelliği şu, üzerinde çalıştığınız alan doğrudan sizin karşınıza açılan ve doğrudan aksiyonları yapabileceğiniz şekilde hazır bir durumda değil.
+
+145
+00:33:32,832 --> 00:33:40,832
+Açıldıkça sizler bir şeyler yapmaya çalışıyorsunuz. Başlangıç durumunuz var veya bir state'niz var, aksiyonlarınız var.
+
+146
+00:33:41,203 --> 00:33:51,203
+Burada ödül her adımda eksi bir kadar verilecek. Çünkü amaç, yani burada geldik, geldik, geldik, işte mesela şuraya kadar geldik.
+
+147
+00:33:51,203 --> 00:34:00,203
+Ama yaptığımız şeylerde şurada daha fazla bir ödül miktarı varsa belki bizi yanlışlıkla şuraya gönderecek bazı hareketler yapabiliriz.
+
+148
+00:34:00,203 --> 00:34:03,203
+Burada her adımda eksi bir miktarda.
+
+149
+00:34:03,316 --> 00:34:20,315
+bir ödül tablosu güncellenecek ve hedefimiz bu bitiş noktasına ulaşabilmek. Yine her durumda en fazla ödülü kazandıran harekete göre bir politika, polisi belirleyeceğiz. Valiomuz yine gerçek, gelecek ödül olacak.
+
+150
+00:34:20,315 --> 00:34:30,220
+Oklar, arkadaşlar, burada herhangi bir sev durumda en iyiye yakın, en iyiye sahip olan hareket nedir?
+
+151
+00:34:30,291 --> 00:34:52,491
+Bunu size söylüyor. İşte ben mesela buradaysam diyor, şuradaysam şuraya gidebilirim. Buradaysam kesinlikle mesela buraya gitmemi istemiyor. Çünkü yukarı gideceğim amacım buraya gitmek. Ondan sonra şuradaysam hiçbir şekilde benim yukarı gitmeme daha iyi bir şey yapmıyor. Hani yönlendirme yapmıyor.
+
+152
+00:34:52,655 --> 00:35:14,655
+Aşağıya gitmek, buradaysan buraya doğru, şuradaysan, belki buradaysan ödül bilgisi, biraz önceki mantıkla yaptığımız ödül bilgisi, şurada daha fazla. O seni buraya yönlendirecek ama bu istediğimiz bir şey değil. Çünkü hedefimiz şeyden çıkmak olacak. Gelecek ödül bilgileri de şu şekilde bulunduğumuz noktadan.
+
+153
+00:35:15,603 --> 00:35:24,844
+çıkış noktasına gitmek için ödüller işte eksi bir eksi bir kadar yani birazcık tersinden yapılarak bu şeye yerleştirilebiliyor.
+
+154
+00:35:26,643 --> 00:35:41,403
+Tabii şimdi oyunu şu şekilde düşünüyoruz işte sınırlı bir alan var bu sınırlı alanda da yapacağımız işte belli hamlelerimiz var aksiyonlarımız var yani bu bir aslında sınırlı bir küme gibi düşünürsek
+
+155
+00:35:41,619 --> 00:35:55,619
+Az önce bahsettiğimiz matriz, durumların sayısı çarpı durumlardan yapılabilecek, her bir durumdan yapılabilecek aksiyonların sayısı, S çarpı A'lık bir matriz kadar karşımıza geldi.
+
+156
+00:35:55,619 --> 00:36:04,619
+Şimdi bu sabit boyutlu Q matrizi dediğimiz bir yapı. Ama zaman içerisinde yeni durumlar ortaya çıkarsa.
+
+157
+00:36:05,940 --> 00:36:33,619
+Yani önce 10 tane durumumuz vardı, belki 20 durum olacağız. O zaman bu ne demektir? Şu matrisine yeni satırların eklenmesi demektir. Yeni satırlar eklenecek bu yapı birazcık değişecek. Hatta şu da var, hem yeni durumlar ekleniyor hem de yeni aksiyonlar ekleniyor. O zaman bu matrisin ne olması lazım? Baştan aşağı, hem büyümesi lazım bir de güncellenmesi söz konusu olabilir.
+
+158
+00:36:34,675 --> 00:36:45,675
+Rule-earn-lug, dolayısıyla arkadaşlar, daha önce görmediği bir durumun değerini bilemez. Dolayısıyla yeni durumlara adapte olma yeteneği olmayan bir algoritma.
+
+159
+00:36:45,675 --> 00:36:56,675
+Ve normal günümüzdeki, gerçek dünyadaki oyunlara bakarsanız, yeni durum sayısı çok çok fazla oluyor.
+
+160
+00:36:57,235 --> 00:37:07,235
+O zaman burada da bir çözüm olarak, çözüm önerisi olarak yeni durumu eldekilerden birine benzetecek şekilde bir şey yapılmış.
+
+161
+00:37:07,235 --> 00:37:21,235
+Bunun için de işte mesela Atari oyunları dediğimiz gerçek dünyadaki oyunlardan, hala oyunlarla benzer şekilde Deep Q Network dediğimiz bir şey var.
+
+162
+00:37:25,460 --> 00:37:42,140
+konvolüsyonel neural networkler de bir ara işlem yapıyor. Ara işlemin sonucunda Q, A ve S'ler tahmin ediliyor. Yani şu matrisi tahmin ettiriyoruz.
+
+163
+00:37:42,804 --> 00:37:55,104
+Bu tahmin ederken de tabii bir görüntü işleme şeyi var. Bunun makalesi Nature'da yıllar önce yayınlandı. Yıllar önce dediğim çok geçmiş olan bir şey değil. Belki 5-6 yıllık, en kötü 10 yıllık bir süreci olan bir şey.
+
+164
+00:37:55,104 --> 00:38:05,003
+Renkli bir ekranda olası durumları aslında, siz girdi olarak bunun bir görüntüsünü veriyorsunuz. Olası durumları tahmin ettiriyorsunuz.
+
+165
+00:38:05,940 --> 00:38:17,539
+Buradaki CNN'lerle işleme meselesi işte bir derin öğrenme ağıyla, sonuçta aslında bir supervised learning yaklaşımıyla olabilecek hareketler çıktı olarak belirleniyor.
+
+166
+00:38:18,740 --> 00:38:27,539
+Tabi burada tek bir ağına dair görüntü her zaman yeterli olmayabilir. Çeşitli zamanlardan görüntü almak ve bu hani olabilecek.
+
+167
+00:38:27,795 --> 00:38:53,795
+farklı aksiyonları, farklı durumları tespit edebilmek gerekiyor. Örneğin mesela şöyle diyelim, burada sağa sola, yukarı aşağıya işte veya işte sekiz yöne gitmenin iki, dört, altı, sekiz farklı sekiz tane çıktısı var. Bir de o joystikteki düğmeye basarak sekiz tane çıktı var. Bir de hiçbir şey yapmadan sadece düğmeye basma. Yani ne oluyor?
+
+168
+00:38:54,291 --> 00:39:13,851
+16-17 tane çıktıktan bir tanesini tahmin etmek üzerine dayalı bir aslında şey. Tabi bu ön işlem, bu ön işlemin sonrasında yapılacak olan şeyi belirleyip, hamleyi belirleyip ondan sonra oyunu devam ettiriyorsunuz veya işte Ray-Post-Törning'e devam ettiriyorsunuz.
+
+169
+00:39:15,851 --> 00:39:20,251
+Şöyle bakalım arkadaşlar, çok bir şey de kalmamış burada.
+
+170
+00:39:21,492 --> 00:39:38,492
+On-Off Policy veya Offline Reinforcement Learning dediğimiz bir şey var. Ajan mevcut durumunu, ST durumunu gözlüyor. Buna göre bir koşullu olasılık polisi değeri hesaplanıp bir hareket seçiliyor.
+
+171
+00:39:38,492 --> 00:39:48,492
+İşte S iken A olma ihtimalini burada seçiyor. Bunun sonucunda ödülü alıyor ve sonraki duruma geçiş yapıyor.
+
+172
+00:39:49,172 --> 00:39:57,172
+Polisi olarak da durumu harekete dönüştüren bir fonksiyon, yani optimizasyon yapacağımız bir fonksiyon kullanıyoruz.
+
+173
+00:39:57,172 --> 00:40:03,172
+Buna offline reinforcement learning demişler. Bakın 2005 yılının bir çalışmasıymış.
+
+174
+00:40:03,172 --> 00:40:13,172
+Toplanan deneyimlerin formatta bize şu şekilde biliniyor. S'den A'ya, S iken A hareketini yaparsam S üstü durumuna geçip
+
+175
+00:40:13,715 --> 00:40:30,215
+R kadar ödül alacağım bu ile alakalı bir şey. Aslında ne yapılıyor? Bir politika eğitimi yapılıyor. Yöntemlerin farkı buradaki deneyimlerin üretim süreçleri ile alakalı demişiz. Bu biraz daha detaylı bir şey.
+
+176
+00:40:39,731 --> 00:40:50,131
+bir pk kadar değerimiz var. Bir rollout data, yeni bir dataset karşımıza gelecek ve bunu sürekli update edeceğiz.
+
+177
+00:40:50,131 --> 00:40:59,532
+Off policy reinforcement learning de de yine şu kısım bakın benzer ama bir bufferlama şeyiyle bunu alıyoruz.
+
+178
+00:40:59,532 --> 00:41:06,131
+Daha sonra üzerine gerekli güncellemeler yapılacak şekilde. Bunlar tabii çok detay ve
+
+179
+00:41:06,175 --> 00:41:15,576
+Belli bir algoritma ile ilişkilendirmesi, aslında algoritmanın nasıl çalışacağının veya nasıl yönetileceğinin ilişkilendirmesi ile alakalı bazı detaylar.
+
+180
+00:41:17,975 --> 00:41:23,175
+Şurada bazı spekülatif veya yorum soruları var.
+
+181
+00:41:23,175 --> 00:41:31,175
+Hani doğrudan bunlara yönelik bir cevaplar yok. Hala tartışılıyor veya belli başlı şeyler var.
+
+182
+00:41:31,443 --> 00:41:37,103
+Mesela A-Star algoritması ortamdaki harici oyunlarla birleştirilebilir mi?
+
+183
+00:41:37,103 --> 00:41:47,103
+A-Star algoritması ne yapıyordu? Bir sezgisel bilgiye göre bize en kısa yol bulma işini daha kısa sürede yapmayı sağlayan bir algoritmaydı.
+
+184
+00:41:50,103 --> 00:41:56,284
+Action'ların, state'lerin diskret veya stokastik olması dikkate alınması lazım.
+
+185
+00:41:56,916 --> 00:42:15,315
+Çoklu ajanlar olabilir. Yani şu an biz sadece bir tane ajan üzerinde hareket ettiriyoruz. Ajanla hareket, yol bulmaya çalışıyoruz. Bu ajanların çoklu olması veya bu ajanların kendi içerisinde oyuncuların rekabetçi bir şekilde davranması durumunda bu oyunlar ne olacak?
+
+186
+00:42:16,307 --> 00:42:34,307
+Human Imitation dediğimiz sparse reward game'lerin olduğu durumlar farklı bir yaklaşım söylüyor. İşte Pseudo Rewards, yani Inverse Reinforcement Learning dediğimiz yapay oyunlarla farklı şekillerde yapılmış.
+
+187
+00:42:34,307 --> 00:42:40,204
+Bir oyun olarak Dialog dediğimiz aslında ChatGP'nin de temellerini oluşturan...
+
+188
+00:42:40,244 --> 00:42:46,903
+Burada zannediyorum, onun şeyi var da, bunu açıp okuyabilirsiniz. Ki şurada da bazı kaynaklar var.
+
+189
+00:42:46,903 --> 00:42:58,244
+ChatGPT kendisi nasıl çalışabilir? Bunun mantığı nedir? Bu daha önce bizim slide'larda var ama, vardı ama herhalde Fatio Hoca kaldırmış bunu. Çünkü güncelliyor.
+
+190
+00:42:58,244 --> 00:43:06,744
+Yani o andaki slide'daki şeyle şu andaki çok çok farklı. Hani ChatGPT böyle çalışıyor diyebilmek belki şu an için zor.
+
+191
+00:43:07,347 --> 00:43:17,347
+Yani arka planda, Check-GPT'nin eğitilmesi aşamasında insanların bir sürekli veri etiketleme, işte bu süreç yapıldı.
+
+192
+00:43:17,347 --> 00:43:31,347
+Yani burada bir supervised learning var. Ama bunun dışında hangi kelimeden sonra hangi kelime gelir, bunların aksiyonlarını ifade eden reinforcement learning ile alakalı şeyler de var, mekanizmalar da var.
+
+193
+00:43:31,668 --> 00:43:43,268
+Başlı başına kompleks bir şey ve bu hani CheckGPT çıktıktan sonra OpenAI'ın bir meşhur olma durumu var da onun çok öncesinde bu işlemler veya bu şeyler yapılıyordu.
+
+194
+00:43:44,407 --> 00:43:50,447
+Böyle söyleyebiliriz. Buradaki bazı kaynakları inceleyebilirsiniz arkadaşlar. Şimdi şöyle yapalım.
+
+195
+00:43:53,447 --> 00:43:56,728
+Bir sonraki slide'ımıza bakacağım.
+
+196
+00:44:03,987 --> 00:44:06,699
+ve
+
+197
+00:44:15,860 --> 00:44:24,860
+Bugün konumuz kısaymış. Ama bir saniye ben bunu niye böyle şuradan bir şey açacağım arkadaşlar.
+
+198
+00:45:13,619 --> 00:45:23,619
+adgpt ile alakalı olan kısmı şu an bulamadım da neyse o slide'ın o halini pati hocadan isterim. Sizlerle de paylaşırım.
+
+199
+00:45:24,619 --> 00:45:26,619
+3-4'e bakalım.
+
+200
+00:45:28,619 --> 00:45:33,619
+Şununla devam edeyim. Bu da biraz böyle değişik bir konu.
+
+201
+00:45:39,155 --> 00:45:41,155
+Şu an paylaşımım geldi herhalde.
+
+202
+00:46:04,820 --> 00:46:16,820
+Bir diğer öğrenme yaklaşımı, Self-supervised learning. Bu tabi belli problemlerde karşımıza geliyor.
+
+203
+00:46:16,820 --> 00:46:27,820
+Yani öğrenmenin farklı versiyonlarını görüyoruz. Bakın, supervised, self-supervised, semi-supervised var.
+
+204
+00:46:28,115 --> 00:46:49,115
+unsupervised var. Hani bir danışmanlı, kendi kendine şey, danışmanlık yapan, yarı danışmanlı, semi-supervised. O belki burada semi-supervised anlatmayacağız. Bir de danışmansız, yani böyle aradan derece derece gidiyor. Şimdi, otokodlayıcılar,
+
+205
+00:46:49,844 --> 00:46:59,644
+boşlukların tamamlanması diyelim veya eksik olan bir şeylerin tamamlanması, karşısal öğrenme dediğimiz bir yaklaşım.
+
+206
+00:47:01,744 --> 00:47:14,744
+Burada öğretim yaparken, eğitim yaparken arkadaşlar, insan emeğine ekstra bir ihtiyaç duymadan, eğitim kümesi üretmek, yani giriş ve çıkış ikillerini üretelim.
+
+207
+00:47:15,539 --> 00:47:35,140
+ve girişe karşılık hatayı da üretelim. Mantığı veya mekanizması çalışılmış. Bu kendi kendine öğrenen sistemler dediğimiz ki bu GPT'ler, MPT'ler bunların da en önemli bileşenlerinden bir tanesi.
+
+208
+00:47:43,668 --> 00:47:53,668
+Bu supervised learning için etiketlenmiş dataya ihtiyacımız olacak. Bu bazen çok kolay bir şey olmuyor arkadaşlar.
+
+209
+00:47:53,668 --> 00:48:04,668
+Tıbbi bir data toplayacaksınız. O alanda mesela çok yetersiz vaka var veya veriyi toplamak gerçekten riskli veya maliyetli bir şey.
+
+210
+00:48:04,668 --> 00:48:09,668
+Dolayısıyla bu bir durum. Buna dikkat etmek gerekiyor.
+
+211
+00:48:11,731 --> 00:48:33,291
+Büyük miktarlarda eğitim, örneği, üretimi zor. Bunun yerine daha ucuz ve daha hızlı olacak şekilde insan veya etiketleyicilerin davranışlarından, burada insandan kastığımız insanlar bazen veri etiketleme amacıyla kullanılabiliyor, istihdam edilebiliyor.
+
+212
+00:48:33,291 --> 00:48:38,092
+Davranışları hatalarından bağımsız şekilde değerlendirmemiz lazım.
+
+213
+00:48:38,643 --> 00:48:46,603
+Bunlardan bir tanesi Autoencoder dediğimiz AutoCode'layıcılar. Şöyle söyleyelim biraz yaklaşım.
+
+214
+00:48:56,659 --> 00:49:12,899
+Yok, yapay hata üretmiyor. Yapay veri üretiyor. Yapay hata üretmesi de aslında şey de, daha çok aradaki lazım olan şeyleri üretiyor sadece o değil.
+
+215
+00:49:23,123 --> 00:49:26,683
+Çıktığımızda buna çok çok benzeyecek miktarda,
+
+216
+00:49:29,963 --> 00:49:34,043
+öyle bir bu girdiği enkode edelim ki, kodlayalım ki,
+
+217
+00:49:34,884 --> 00:49:38,763
+bu girdiği olabilecek en az şeyle temsil etsin.
+
+218
+00:49:39,763 --> 00:49:46,963
+Ve aynı mantıkla çalıştık bir decoder ile girdiğindeki veriyi tekrar tahmin edelim.
+
+219
+00:49:46,963 --> 00:49:49,083
+Bu autoencoder yaklaşımı.
+
+220
+00:49:51,635 --> 00:49:59,315
+Tabi bunun varyasyonel olanı var, difizyon modelleri var. Şuradaki kaynaklarda detaylarına bakarsınız arkadaşlar.
+
+221
+00:49:59,315 --> 00:50:07,875
+Mesela görüntüyü sıkıştırma amaçlı veya başka sınıflandırma amaçlı bu tarz modellerden faydalanıyor.
+
+222
+00:50:07,875 --> 00:50:13,715
+Burada aslında bir neural network söz konusu. Bu neural network'ün ağırlıkları öyle bir ayarlanıyor ki,
+
+223
+00:50:13,715 --> 00:50:19,315
+siz bu şekilde girdi verdiğinizde yine aynı çıktığı kendiniz elde edecek şekilde bakın girdi'nin
+
+224
+00:50:19,572 --> 00:50:44,372
+kendisini tahmin edeceğiniz bir şey karşımıza geliyor. Bu otokodlayıcılar, tamamlayıcılar, verinin içindeki parçalara odaklanıp, bu parçaların bazılarının eksik olduğunu düşünüp, onun tahmin edilmesine çalışan bir şey.
+
+225
+00:50:44,820 --> 00:50:48,820
+Veya işte sonraki bir parçayı tahmin ettiğimiz bir şey.
+
+226
+00:50:48,820 --> 00:50:53,820
+Örneğin, şöyle bir prediction var.
+
+227
+00:50:56,820 --> 00:51:03,820
+Input'un herhangi bir parçasını bir diğer parçasından tahmin etmeye çalışıyoruz. Bunu bir cümle gibi düşünün.
+
+228
+00:51:03,820 --> 00:51:09,820
+Cümle içerisinde İngilizce sınavlarında karşınıza geliyor arkadaşlar.
+
+229
+00:51:09,820 --> 00:51:12,620
+Bir tane kelimeyi size boş veriyorlar.
+
+230
+00:51:12,851 --> 00:51:21,851
+Tabi bu çok basit bir örnek. O cümlenin içerisindeki mantığa göre o boş olan yeri tahmin etmeye çalışırsınız. Bu bir yaklaşım.
+
+231
+00:51:21,851 --> 00:51:27,851
+Ama bir tane değil de birden fazla boşluk olsun. Bu tahmin gittikçe zorlaşır.
+
+232
+00:51:27,851 --> 00:51:36,811
+İşte tamamlayıcılardan bir tanesinin görevi bir kısmını silip tahmin etmeye çalışmak. Bunun bir adım ötesi
+
+233
+00:51:37,652 --> 00:52:03,931
+Elimizde mesela bir cümle var veya bir işte görüntü var. Bunun bir sonraki adımda sonraki parçasının tahmin edilmesi, GPT, Vision Transformer'lar mesela bunu yapan şeyler, eksik parçaları tahmin, metindeki işte belki birden fazla eksik parçamız var, bunları tahmin etmek veya işte görüntüde belli işte birden fazla boşluklar var.
+
+234
+00:52:04,175 --> 00:52:20,856
+Bunları tahmin etmek veya bulunduğunuz yerdeki, bir metin içerisinde bulunduğunuz, beş adım önceki kelimeler, beş adım sonraki kelimeler, bulunduğunuz yerin etrafını tahmin. Word2Weck mesela bunları yapabilen bir tamamlayıcı şey.
+
+235
+00:52:20,856 --> 00:52:31,976
+Şöyle diyelim, farklı zaman ve uzay bilgisini dikkate alırsak.
+
+236
+00:52:34,356 --> 00:52:38,756
+Girdinin belli bir parçasını diğer parçasından tahmin etmek bu bir yaklaşım.
+
+237
+00:52:38,756 --> 00:52:42,756
+Geçmişten geleceği tahmin etmek.
+
+238
+00:52:42,756 --> 00:52:48,356
+Görünür olandan maskelenmiş, gizlenmiş olanları tahmin etmek.
+
+239
+00:52:48,356 --> 00:53:02,252
+Elimizdeki bütün mevcut olan parçalar içerisinde gizlenmiş olan parçaların tahmin edilmesi gibi işte şurada şey olarak tahmin edilmiş.
+
+240
+00:53:02,387 --> 00:53:17,387
+visible olanlar kırmızılar, maskelenmişler de yeşiller. Biz bu aradaki geçişlere bakarak yeşilleri şey yapıyoruz. Mesela şu an geçmişteyiz birincisinde kırmızı olan da veya pembe olan da.
+
+241
+00:53:17,387 --> 00:53:26,387
+Gelecekte yeşil olan kısım. Tabi bu an şu an benim ekran renklerim biraz şey arkadaşlar, şurada size nasıl görünüyor bilmiyorum. Ben bir şu...
+
+242
+00:53:28,179 --> 00:53:46,179
+çalışmayı bir şey yapayım, bir saniye. [kişisel bilgi] Sizde yanlış anlatmayayım. Pembeyle biraz böyle turkuaz şeklindeymiş. Ben yeşilliyorum ama size turkuaz görünüyor, bana yeşil görünüyor.
+
+243
+00:53:53,012 --> 00:54:01,212
+Mevcut olan bilinen parçalardan dolduruyoruz. Şurada küçük bir şeyimiz var, onun diğer etrafının doldurulması gibi şeyler.
+
+244
+00:54:01,212 --> 00:54:19,812
+Tabi bu parçalara odaklanan diğer yaklaşımlar demişiz. Bunlar tabi çok eskiden bağlı, günümüze kadar gelen mesela bakın, farklı farklı burada çalışmalar var. Bunları incelemenizi tavsiye ederim.
+
+245
+00:54:20,628 --> 00:54:29,628
+Bir parçayı değiştirip değişeni belirleme. Örneğin bir görüntünüz var. Görüntünün içerisinden bir parça alıyorsunuz, onu değiştiriyorsunuz.
+
+246
+00:54:29,628 --> 00:54:35,628
+Bir metin içerisinden parça değiştiriyorsunuz. Bunun belirlenmesi gibi bir şeyimiz var.
+
+247
+00:54:35,628 --> 00:54:47,628
+Şurada parçaların yerini karıştırıp düzeltme. Önce A, C, E varmış. Sonra D, E, A, B, C varmış. Bunların farklı permutasyonlarını alıp
+
+248
+00:54:48,115 --> 00:54:53,875
+A, B, C, D, E şeklinde bir şey yapıp, işte BART modeli bunu yapan bir şey.
+
+249
+00:54:53,875 --> 00:55:02,755
+BERT değil, bu BART bu arada. Bunları düzeltebiliyor, işte orijinaline sizi geri çevirmeye çalışıyor.
+
+250
+00:55:02,755 --> 00:55:09,076
+Sıranın tahmin edilmesi, BERT modeli bu konuda NSP ve SOP var.
+
+251
+00:55:09,556 --> 00:55:31,556
+İki şey aynı cümle mi? Veya işte belli bir şeylerin çözünürlüğünün arttırması. Çözünürlük arttırma mesela görüntü işlemede veya bir verinin tamamen görüntü üzerinde değil de bir verinin çözünürlüğünün arttırılması işte belli bir aralığa düşen veri boyutunun arttırılması ile alakalı şeyler.
+
+252
+00:55:33,204 --> 00:55:38,204
+Şimdi burada karşısal öğrenme var. Bunları duralım arkadaşlar şimdi.
+
+253
+00:55:40,204 --> 00:55:43,204
+Gerçi çok bir şey de kalmamış da.
+
+254
+00:55:44,204 --> 00:55:48,204
+Contrastive learning, bakın bu biraz daha iyi, bu da farklı bir learning yaklaşımı.
+
+255
+00:55:49,204 --> 00:55:57,196
+Zamanda ve vekanda birliktelik veya birlikte olmamaya göre yakınlaşma uzaklaşmayla alakalı bir şey.
+
+256
+00:55:57,780 --> 00:56:16,780
+Aynı bütünü ait parçaların temsilleri birbirine yakın olacak. Yani sonuçta düşünün bir veri grubu var. Bu veri grubuna ait temsil bir parçalar varsa bunların reprezentatif vektörlerinin birbiriyle yakın birbirine alakalı olmasını bekleriz.
+
+257
+00:56:22,911 --> 00:56:28,371
+olabildiğince tutarlı ama kümeler arası uzaklığında olabildiğince fazla olması durumu gibi düşünün.
+
+258
+00:56:28,371 --> 00:56:40,371
+İşte kelime tabanlı metinlerde düşündüğümüzde pozitif ve negatif örneklerin olduğu haller, cümle tabanlı biraz daha farklı eğiticili pozitif ve negatif örnekler,
+
+259
+00:56:40,371 --> 00:56:48,371
+bir de zor negatif örnekler var. Mesela şurada baktığımızda şu bir parçanın vektörü, şu bir parçanın vektörü,
+
+260
+00:56:50,016 --> 00:56:52,016
+Şöyle yaklaşalım.
+
+261
+00:56:55,016 --> 00:57:05,016
+Köpeğin ayak kısmı, köpeğin kendisi. Bunları augment edip, aslında veri arttırıp, bir tane girdi veriyorsunuz.
+
+262
+00:57:05,016 --> 00:57:08,016
+Bir kısımda buraya alıyorsunuz, bir kısımda buraya alıyorsunuz.
+
+263
+00:57:08,016 --> 00:57:14,016
+CNN ağlarıyla, multilayer perceptron bir sınıflandırma yapıyorsunuz.
+
+264
+00:57:17,652 --> 00:57:24,652
+Şöyle bir şey karşımıza geliyor. Elde ettiğimiz şuradaki çıktılar, mouse'un olduğu yerdeki çıktılar, birbirine benzer olacaktır.
+
+265
+00:57:24,652 --> 00:57:31,652
+Neye göre benzer? Kendi içlerinde benzer olacak. Bunlar birbiriyle atraksiyon, birbirini çekerler.
+
+266
+00:57:31,652 --> 00:57:41,356
+Aynı şekilde şimdi şuradaki koltuğun parçalarını augment ettiğimizde, işte burada görüntünün mesela gri seviye kısmını almışız.
+
+267
+00:57:41,460 --> 00:57:49,460
+Burada da belli bir parçasını almışız. Yine aynı şekilde CNN networkleriyle bunu eğittiğimizde eğiticili olarak şurada iki tane vektör elde ediyoruz.
+
+268
+00:57:49,460 --> 00:57:54,460
+Burada da bu iki vektör birbiriyle attraction, birbiriyle çekim halindedir.
+
+269
+00:57:54,460 --> 00:58:05,460
+Ama bunlar vektörler arası bakıldığında neyi göreceğiz? Bunların birbirinden uzak olduğunu, birbirlerine ittiklerini, birbirleriyle uyuşmadıklarını göreceğiz.
+
+270
+00:58:05,460 --> 00:58:09,291
+Böyle bir arada farklılık olacak.
+
+271
+00:58:09,652 --> 00:58:23,652
+Bu contrastive learning dediğimiz işte birbiriyle alakalı, samansal veya mekansal anlamda birbiriyle beraber olan, ya beraber olmayanların uzaklaşması, yakınlaşmasıyla alakalı şeyler.
+
+272
+00:58:23,652 --> 00:58:35,532
+Reinforcement learning de ödülü insandan almama dediğimiz, kendi kendine yarışın olduğu durumlar söz konusu.
+
+273
+00:58:35,860 --> 00:58:51,539
+AlphaZero burada işte bunun da aynı şekilde kaynakları var. Ortamdan ödül alma durumu var veya başka bir modelden ödülü, ödül bilgisini alıp eğitimi devam ettirmek.
+
+274
+00:58:51,539 --> 00:58:59,780
+Hah mesela bu işte şey, chat.gpt ile alakalı şey başka bir modelden şey alıyorsunuz.
+
+275
+00:59:01,876 --> 00:59:26,056
+Bilgi ödül alıyorsunuz. İnsandan ödül almıyorsunuz. Burada aşama aşama işte birinci aşama, ikinci aşama, üçüncü aşama bunlar okuyun arkadaşlar. Şurada da daha detaylı halleri var. Bunlardan hani şey yapmayacağız elbette hani böyle bunun temel mekanizmasını sormayacağız ama genel yaklaşımlara dair finalde soru gelebilir. Onun için bunları okumanızı tavsiye ediyorum. Buradaki kaynaklar sizlere boş boşuna verilmedi.
+
+276
+00:59:27,027 --> 00:59:39,507
+Mesela bir demonstrasyon datası toplanıp supervised politikaya göre bir eğitim gerçekleşiyor. Yani ne demek? Aslında bir supervised learning yapacağımız bir data toplanıyor.
+
+277
+00:59:39,507 --> 00:59:53,987
+E data toplamak demek burada bir etiketleyici olacak. Mesela diyor ki bir prompt datasetimizden bir tane prompt örneklemesi yapılıyor.
+
+278
+00:59:54,260 --> 01:00:10,060
+örneklemeyle, işte mesela bir sorunuz var, o sorunun karşısında cevabı var. Etiketleyici, istenen output'a dair bir başarım gösteriyor.
+
+279
+01:00:10,060 --> 01:00:20,660
+Ve bu data, GPT 3.5 modelini, Supervised Learning'te ince ayarlama, fine tune etmek için kullanılan bir şeymiş. Birinci aşamada bu yaptı.
+
+280
+01:00:21,204 --> 01:00:33,204
+Bakın bu demonstrasyon datası. Ondan sonra bir comparison datası var. OpenAI'ın çalışma mantığının belli bir parçasından bahsediyoruz. Sonra bu da, bu ayrıca...
+
+281
+01:00:33,715 --> 01:00:49,195
+Reinforcement Learning'de bir optimizasyon yapacak şekilde, yani elde edilecek çıktılar acaba daha iyi nasıl olabilir? Önce demonstrasyon datası, daha sonra karşılaştırma datası farklı modellerle karşılaştırma yapıyor. Ondan sonra bu da bundan sonraki aşamada optimizasyon oluyor.
+
+282
+01:00:49,195 --> 01:01:00,195
+Bu aşamayı söyleyebiliriz. Şurada bazı detaylar var, bunlara bakarsınız. Bu da bu kadar arkadaşlar. Ben bugün...
+
+283
+01:01:00,563 --> 01:01:22,563
+Burada keseceğim. [kişisel bilgi] Çok fazla da konumuz kalmadı. Haftaya da bir hafta, zannediyorum iki haftamız var değil mi? Bakayım şöyle takvime. Evet haftaya da dersimizi yaparız. Son hafta zaten olursa telafi sınavlarıyla alakalı bazı işler oluyor. Bugünlük burada duralım. Sizin bir sorunuz var mı?
+
+284
+01:01:29,172 --> 01:01:36,972
+Peki [öğrenci]. [öğrenci] sana bir mail at mesaj yazdım ama [öğrenci] ayrılmış herhalde.
+
+285
+01:01:39,851 --> 01:01:43,172
+Haftaya görüşmek üzere arkadaşlar. Kendinize iyi bakın, iyi günler dilerim.
