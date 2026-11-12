@@ -1,0 +1,4023 @@
+1
+00:03:56,627 --> 00:04:13,347
+Aynen arkadaşlar, hoş geldiniz. Çok vakit kaybetmeden isterseniz sunumlarımıza başlayalım. Şu an katılımcı sayımız 9. Var mı hazır olan, bu hafta yapacak olan, hemen başlamak isteyen?
+
+2
+00:04:15,207 --> 00:04:16,447
+Ben sunabilirim hocam.
+
+3
+00:04:17,067 --> 00:04:17,887
+Tamam [öğrenci].
+
+4
+00:04:19,887 --> 00:04:21,467
+Ben sunabilirim hocam.
+
+5
+00:04:22,467 --> 00:04:22,867
+Efendim?
+
+6
+00:04:23,603 --> 00:04:25,163
+Sonrasında da ben sunabilirim.
+
+7
+00:04:25,243 --> 00:04:26,003
+Sonrasında [öğrenci], tamam.
+
+8
+00:04:26,603 --> 00:04:28,463
+Hocam sonra da bir sunalım istiyorsanız.
+
+9
+00:04:28,723 --> 00:04:35,563
+Tamam. [öğrenci], [öğrenci], [öğrenci] sırasıyla alalım şimdilik.
+
+10
+00:04:38,863 --> 00:04:40,584
+Tamamdır [öğrenci].
+
+11
+00:04:41,704 --> 00:04:42,503
+Başlayayım mı hocam?
+
+12
+00:04:42,543 --> 00:04:43,663
+Evet, buyur.
+
+13
+00:04:47,252 --> 00:04:52,912
+Merhabalar herkese, ben [öğrenci]. Benim proje konum saldırı dirençlerine göre haş fonksiyonlarının karşılaştırılması.
+
+14
+00:04:54,836 --> 00:05:14,336
+Öncelikle genel bir giriş yapacağım haş fonksiyonlarını. Ayrından bir haş fonksiyonun güvenli sayılması için hangi kriterlere uyması gerektiğinden bahsedeceğim. Sonra standart haş fonksiyonlarından ve atak trençlerinden bahsedeceğim ve karşılaştıracağım bunları. Sonrasında standart olmayan geliştirilmiş yöntemlerden bahsederek sunumu bitireceğim.
+
+15
+00:05:22,483 --> 00:05:36,963
+Aslında matematiksel fonksiyonlar bunlar. Kredi kartı işlemleri olsun, check sum dediğimiz indirilen dosyalarda bütünlüğü kontrol etme olsun, dijital ortamda farklı işlemlerde kullandığımız fonksiyonlar.
+
+16
+00:05:36,963 --> 00:05:47,963
+Bir fonksiyon olarak incelediğimiz zaman aslında ekranda gördüğü gibi sol tarafta herhangi boyuttaki bir girdiği istediğimiz bir sabit boyuta çeviren fonksiyonlar.
+
+17
+00:05:50,483 --> 00:06:11,103
+olsun. Sonucunda bizim verdiğimiz bir boyutta çıktı üretebilen fonksiyonlar oluyor bunlar. Peki bu şartı sağlayan tüm fonksiyonları haş fonksiyonu diyebilir miyiz? Daha doğrusu güvenli bir haş fonksiyonu diyebilir miyiz? Hayır. Bu fonksiyonların belirli güvenlik kriterlerini sağlaması gerekiyor. Bunları bu haş fonksiyonların uğrayabileceği
+
+18
+00:06:11,668 --> 00:06:39,648
+Ataklar üzerinden anlatmak istiyorum. Çünkü saldırganlar bizim gizli bilgilerimiz, güvenlik için kullanıldığı için ataklarda bulunuyorlar. Bunlara karşı savunmaları olmaları gerekiyor. İlk türlü atığımız çakışma atakları, yani kollijon dediğimiz ataklarımız var. Bu aslında ne oluyor? İki farklı girdinin aynı hash değerini verdiği durumlarda çakışma gerçekleşiyor. Bunu mesela en basit bir örnek üzerinden anlatmak istersek.
+
+19
+00:06:39,668 --> 00:06:50,148
+Diyelim ki bizim 3 tabanına mod alan bir H fansiyonumuz olsun en basitinden. Böyle bir durumda 5 girdisini verdiğimizde 5 mod 3'ten 2 çıkıyor.
+
+20
+00:06:50,836 --> 00:07:09,855
+Aynı zamanda 8 girdisini verdiğimizde de 8.13'den 2 çıkıyor. Yani burada iki farklı girdimiz aynı haç değerini veriyor. Buna çakışma diyoruz ve de bunu sağlayan herhangi bir ikilinin ya da daha fazla olabilir bulunması çakışma ataklarına karşı direncinin az olduğunu gösteriyor bizim haç fonksiyonumuzun.
+
+21
+00:07:10,740 --> 00:07:22,740
+İkinci olarak ön görüntü ataklarına karşı bir direncimiz var. Ön görüntü dediğimiz şey aslında bize bir çıktı veriliyor. Yani bir değer veriliyor. Bu bizim haç değerimiz oluyor. Bu haç değerinden...
+
+22
+00:07:23,699 --> 00:07:51,639
+Girdi bulmamız. Yani buradaki o haş değerini veren girdiği ön görüntü diyoruz. Ön görüntü ataklarında da bize verilen çıktı değerinden geriye dönek olarak aslında fonksiyonun girdisini bulmak oluyor. Örneğin yine aynı haş fonksiyonumuzdan örnek vereceksek diyelim ki bize iki değer verildi. Bu bizim haş değerimiz. Bu ikiyi veren hangi sayı olabilir diye düşünüp bulduğumuzda tabii ki bizim şu anda ekrandaki örnek çok basit olduğu için birçok atar karşı direnci.
+
+23
+00:07:51,699 --> 00:08:00,139
+Düşük yani. O yüzden 5 mod 3'ü dediğimizde ön görüntü olarak buna 5 verebiliriz diyoruz ve de geriye dönük bir işlem yapmış olabiliyoruz.
+
+24
+00:08:02,000 --> 00:08:09,199
+Başka bir atığımız da ikinci ön görüntü atakları dediğimiz ataklar. İkinci ön görüntü değilse bir geride veriliyor.
+
+25
+00:08:09,779 --> 00:08:27,059
+O girdiyle aynı çıktığı sahip farklı bir girdi bulunması amaçlandı. Nasıl yani? Örneğin bize bir 8 değeri verildi. Bunu girdi olarak koyduğumuzda H değerimiz 2 çıkıyor. Bu sefer artık 2'den gidiyorum. 2'yi veren başka bir girdi arıyorum. Mesela 5 de aynı şekilde.
+
+26
+00:08:27,923 --> 00:08:54,543
+Beşin, üçten iki değerini veriyor. O zaman burada beşin benim ikinci ön görüntüm oluyor. Ve verilen bir girdiden ikinci girdiği, ikinci ön görüntüyü bulabilmiş oluyorum. Bu üçü genel olarak ataklarımız olarak sayabiliriz. Bu üçüne karşı dirençli olması gerekiyor haç fonksiyonlarımızın. Aynı zamanda da bunu sağlarken de makul bir kaynak kullanımı yapması gerekiyor. Çok uzun süredir mesela bir haç değeri üretmemesi gerekiyor.
+
+27
+00:08:55,923 --> 00:09:03,844
+Hayatta pek de kullanılabilir olmuyorlar. Şimdi standart H fonksiyonlarımızı ve atak dirençlerini inceleyeceğiz.
+
+28
+00:09:04,824 --> 00:09:12,963
+Öncelikle Message Digest MD5 dediğimiz algoritmamız var. Adından da anlaşılacağı üzere aslında bir mesajın özetini çıkarmaya amaçlıyor.
+
+29
+00:09:14,403 --> 00:09:20,043
+1, MD, 1, 2, 3, 4 diye giderip farklı versiyonları var aslında. En sonunda MD5 var.
+
+30
+00:09:21,172 --> 00:09:49,031
+Şimdi burada özelliklerim var. Özelliklerimden bahsetmeden önce H fonksiyonlar içerisinden bahsetmek istiyorum. Burada blok boyutu dediğimiz şey girdimiz. Aslında H fonksiyonlarında bir girdimiz oluyor belirli boyutlarda. Ve de içeride üzerlerinde bazı işlemler uygulanıyor. Ve iteratif olarak uygulanıyor bunlar. Yani bir iteratifin bir döngünün sonucunda çıktığı tekrar başka bir döngüye girerek sürekli döngüler oluyor burada. O yüzden döngü sayısı da.
+
+31
+00:09:49,172 --> 00:10:06,432
+Bir özelliğimiz. Sonucunda çıkan çıktı boyutumuz da aslında çok en önemli özelliklerinden bir tanesi. Çünkü sonunda ulaşan çıktı, oluşan çıktı, atak saldırganların eline geçen bir bilgi oluyor. O yüzden de çıktı boyutumuz önemli bir özellik.
+
+32
+00:10:07,187 --> 00:10:21,167
+H fonksiyonlarında. Bir de burada yapısı var. Genel olarak Merkle-Demgard yapısı çokça kullanılmıyor. Bu aslında şöyle bir şey. Girdiler belirli bir boyuta doğru.
+
+33
+00:10:22,644 --> 00:10:29,644
+Mesela daha az bilgi varsa, daha az mesaj varsa, padding ile belirli bir sabit boyuta çıkarılıyor.
+
+34
+00:10:29,644 --> 00:10:38,644
+Ardından iteratif bir şekilde üzerlerine bir sürü işlem uygulanıyor. Bu yapıya genel olarak Miracle Demgard deniliyor ve MessageLive Jest'te de bu kullanılıyor.
+
+35
+00:10:39,700 --> 00:10:55,060
+MD5'ın blok boyutu yani girdi blok boyutu 512 bit. Çıktığı boyutu 128 bit. Yani ne kadar uzunlukta girdi verirseniz verin. Çıkışlarınızda 128 bitiniz oluyor. Döngü sayısı da 18 diye.
+
+36
+00:10:56,467 --> 00:11:05,107
+Md5'ın uğradığı ataklar da çakışmada bahsettiğimiz çakışma atakları ve hızlı çakışma atakları.
+
+37
+00:11:05,107 --> 00:11:14,667
+Bu ikisi aslında şöyle, çakışmada gerçekleşmesi için gereken kompleks de 2 üzeri 56 gibi bir şeyken, hızlı çakışmada 2 üzeri 29 gibi bayağı düşüyor.
+
+38
+00:11:15,347 --> 00:11:20,187
+Bu da aslında günümüze çok daha aşırı güvenli sayılan bir algoritma değil o yüzden.
+
+39
+00:11:21,908 --> 00:11:44,668
+İkinci olarak Ripe MD-160 var. Bunda aslında iki paralel MD-4 algoritmasını çalışıp üzerinde işlemler uygulanıp sonucunda birleştirilmesiyle geliştirilmiş MD-4 algoritma. Burada blok boyutumuz 512 bit yine girdi. Çıktı da 160 bit oluşuyor.
+
+40
+00:11:45,620 --> 00:11:56,259
+MD5'a göre 128 bit daha fazla. Dönme sayısımız da aynı şekilde 80 bit daha fazla. Yapı olarak da yine Merkle Dengart kullanıyor burada.
+
+41
+00:11:57,700 --> 00:12:05,180
+Ripe MD160'ın maruz kaldığı ataklar ise, yani zayıf olduğu ataklar, çakışma ve ön görüntü atakları olarak söyleyebiliriz.
+
+42
+00:12:07,668 --> 00:12:26,587
+Ayrıca SecureH algoritmları dediğimiz Şah algoritması geliyor. Şah 1 ilk çıkan oluyor bu. Burada blok boyutu 512 bitim. Bu aslında yapı olarak bayağı şeye benziyor. RAPMD 160'a benziyor özellikler açısından. Çıktığı boyutunda 160 bitim var ve döngü sayımda 80 yine.
+
+43
+00:12:27,508 --> 00:12:36,948
+Yapı olarak Merkle Demgard kullanılıyor. Bunun maruz kaldığı ataklar ise çakışma ve freestart çakışma dediğimiz bir çakışma türü var.
+
+44
+00:12:37,288 --> 00:12:43,108
+Bu freestart çakışmada Merkle Demgard algoritmalarının genelde başlamak için bir başlangıç vektörüne ihtiyacı var.
+
+45
+00:12:43,108 --> 00:12:53,268
+Bu başlangıç vektörünün sağlayanlar tarafından belirlenerek bir şekilde algoritmalı zayıf hale getirmesine de freestart çakışma diyoruz.
+
+46
+00:12:54,964 --> 00:13:20,024
+Ardından Ş2 dediğimiz algoritmamız var. Bunun 256 ve 512 olmak üzere iki versiyonu var. Zaten bu versiyonlarda aslında çıktı boyutlarını gösteriyor. O yüzden 256'lık versiyonun 256 bit çıktısı ve 512'lik versiyonun 512 bit çıktısı var. Ama 512 bit versiyonu girişi 1024 bit ve döngü sayısı 80. 256'ın da 64'lük bir döngü sayısı var.
+
+47
+00:13:20,416 --> 00:13:42,876
+Ş2'de aslında Ş1'in üzerine geliştirilmiş bir algoritma. Linear olmayan fonksiyonlar eklenmiş burada. Daha kompleks yapmak için ama buna yanında bir kötülük olarak performans, hesaplanma performansını düşünmüş. O yüzden genelde kriptografi gibi alanlarda kullanıldığı gözlemlenmiş. Pardon, kripto körensü demek istedim.
+
+48
+00:13:47,508 --> 00:13:49,707
+Ön görüntü atakları olarak söylenilebilir.
+
+49
+00:13:52,587 --> 00:13:54,967
+Son olarak ŞA3 algoritmamız var.
+
+50
+00:13:55,447 --> 00:14:03,908
+Bu algoritma da aslında düzenlenen bir yarışmada normal kişiler tarafından geliştirilmiş bir algoritma.
+
+51
+00:14:04,668 --> 00:14:08,048
+Aslında önceki algoritmalara göre bayağı farklı çalışıyor.
+
+52
+00:14:08,447 --> 00:14:12,008
+Bunda 256 ve 512 olmak üzere iki farklı versiyonu var.
+
+53
+00:14:13,235 --> 00:14:34,735
+256'nin 1088 bitlik girdisi varken 512'nin 576 bitlik girdisi var. Ama ikisinin de çıktılar 1600 bit. Döngü sayıları 24. Döngü sayıları önceki algoritmalara göre düşük görünse de burada farklı bir yapı kullanılıyor aslında. Önceki algoritmaların hepsinde Merkle Döngü Artık kullanırken burada Sponj dediğimiz yeni bir yöntem var aslında.
+
+54
+00:14:37,648 --> 00:14:50,648
+Aslında çok fazla rastgele permütasyon ve de rastgele fonksiyonlar üretebilen çok değişken bir yapı aslında. O yüzden de...
+
+55
+00:14:51,124 --> 00:14:56,684
+İstenilen boyutta girdi ve istedilen boyutta çıktı, üretebildiği için bayağı işe yarayan bir algoritma olmuş.
+
+56
+00:14:57,084 --> 00:15:02,244
+Ve zaten şu anda Mühendis tarafından önerilen standart olarak görülüyor.
+
+57
+00:15:03,084 --> 00:15:09,104
+Bunların maruz kaldığı ataklara baktığımız zaman 256 bit olanında pratik çakışma dediğimiz,
+
+58
+00:15:10,104 --> 00:15:14,124
+yani mantıklı kaynaklarla bulunabilecek bir çakışma gözlemlenmiş.
+
+59
+00:15:14,124 --> 00:15:19,124
+Ve yakın çakışma dediğimiz iki farklı girdiği için çok benzer, yani tam anasılıyor.
+
+60
+00:15:19,124 --> 00:15:35,344
+Aynı değil de benzer çıktılar. Üretme gözlemlenmiş. 512 bit için ise ihtimalle ilk çakışma denemiz. Yani daha ilk çakışma. İlk çakışma iki tane farklı girdinin aynı sonucu verdiği ilk durum olarak söyleniyor.
+
+61
+00:15:36,052 --> 00:15:47,471
+Yani bir ihtimal bulunabilecek bir şey olarak gösterilmiş. Ama zaten dediğim gibi günümüzde bunun kullanılması önemli değil. Şunun için en güvenli algoritma diyebiliriz buna.
+
+62
+00:15:49,151 --> 00:15:59,391
+Şimdi standart herşe fonksiyonların dışında geliştirilmiş yöntemlerden bahsedeceğim. Birkaç tane kağıttan bahsedeceğim. Yani paper'dan bahsedeceğim daha doğrusu makaleden.
+
+63
+00:16:01,235 --> 00:16:07,995
+Mesela bir tanesi, yine Merkle Demgare temelli, hücresel otomat kullanan bir HOS fonksiyonu çalışması yapılmış.
+
+64
+00:16:10,644 --> 00:16:27,264
+Bu, basit kurallardan karmaşık davranışlar üretebilen sistemler aslında otomatolar diyebiliriz. Bunun bu basit kurallardan karmaşık şeyler üretebilme yeteneğini hash fonksiyonlarına uygulayarak bir yöntem geliştirilmiş.
+
+65
+00:16:27,264 --> 00:16:38,264
+Bunun olumsuz yanı ise istatiksel olarak iyi sonuçlar oluştursa da pratikte yeterince test edilmemiş olması olumsuz yanı olmuş bu çalışmanın.
+
+66
+00:16:38,644 --> 00:16:48,427
+Başka bir çalışmada değişen boyutlarda yapan bir hash fonksiyon geliştirilmiş. Burada aslında sizin istediğiniz güvenlik seviyesine göre...
+
+67
+00:16:48,724 --> 00:16:54,384
+Mesela 256 bit olsun, işte 1.24 bit olsun, kaç bit çıktı istediğinizi seçebiliyorsunuz.
+
+68
+00:16:54,764 --> 00:17:04,963
+Ayrıca yine istediğiniz güvenlik seviyesine göre içeride kaç döngüden geçsin girdiniz, bunun gibi şeyleri değişken olarak seçebildiğiniz bir algoritma beliriştirilmiş.
+
+69
+00:17:04,963 --> 00:17:12,104
+Ama yine MD5 tabanlı bir algoritma olduğundan MD5'in sahip olduğu sorunlara sahip bu algoritmada.
+
+70
+00:17:13,140 --> 00:17:33,240
+Başka bir çalışmada ise kaotik haritaların kullanımıyla hash fonksiyonları geliştirilmiş. Kaotik haritalar matematikte bir çekirdek üzerinden çok fazla çeşitli çıktı üretebilen fonksiyonlar aslında. Yani aslında hash fonksiyonlarına ihtiyacımız olan bir özellik diyebiliriz.
+
+71
+00:17:35,155 --> 00:17:45,135
+Bir H fonksiyonu geliştirilmiş, algoritması geliştirilmiş. Ama burada da çakışma ataklarına karşı genel olarak zayıf olduğu gözlemlenmiş bu algoritmanın da kötü yanı olarak.
+
+72
+00:17:47,195 --> 00:17:48,652
+Başka bir...
+
+73
+00:17:48,819 --> 00:17:53,679
+Yöntem geliştirilen sinir ağlarıyla yüz yirmi sekiz bitlikçikte oluşturan bir sistem olmuş.
+
+74
+00:17:54,380 --> 00:18:02,900
+Burada da aslında amaç sinir ağlarında, yapay sinir ağlarında eğitilirken oluşan ağırlıkların gizemi bir anahtar olarak kullanarak,
+
+75
+00:18:02,900 --> 00:18:07,139
+yani o ağırlıkların ne olduğunu kimse kolay kolay dışarıdan bakan birisi bulamıyor ya,
+
+76
+00:18:08,059 --> 00:18:12,339
+bundan yararlanarak bir hash algoritması geliştirilmesi amaçlanmış.
+
+77
+00:18:13,140 --> 00:18:21,200
+Ama tabii yapay sineraları girince işin içine genel olarak işlenmesi zor ve uzun sürdüğü gözlemleniyor.
+
+78
+00:18:21,340 --> 00:18:28,539
+Ve de en sonunda 128 bitlik bir çikte oluşturuyor. 128 bit günümüzde artık kısa kalıyor güvenlik açısından.
+
+79
+00:18:28,539 --> 00:18:32,220
+O yüzden bunlar da bu algoritmanın olumsuz yanları olmuş.
+
+80
+00:18:33,428 --> 00:18:44,568
+Genel olarak söyleyecek olursak, farklı yöntemlerin farklı zayıflıkları olduğunu görebiliyoruz. Hem standartlarda hem de gelişmiş H fonksiyonlarında. Bir de şöyle bir şey de var.
+
+81
+00:18:45,203 --> 00:19:01,764
+Yeni yöntemlerin büyük bir zayıflığı var. Yani yeterince test edilmemiş oluyorlar. Çünkü eski yöntemler çok uzun zamandır topluma açıklar. Bu yüzden çok farklı insanlara ulaşabilmiş duruyorlar ve insanlar üzerlerine bir sürü atak uygulayabiliyorlar. Ama yeni yöntemler yeni olmaları...
+
+82
+00:19:02,163 --> 00:19:18,604
+Yeterince süredir tecrübeleri yok gibi bir şey oluyor aslında. Yeterince süredir ataklara açık olmamaları henüz tam kendini ispatlayamadıkları anlamına geliyor. O yüzden bu yeni yöntemlerin genel olarak büyük bir zayıflığı olduğunu söyleyebiliriz. Benim sunumum bu kadardı. Ödendiğiniz için teşekkür ederim.
+
+83
+00:19:19,604 --> 00:19:41,604
+Teşekkür ederiz [öğrenci]. Özellikle bu paperlardan bahsettiğin kısım için teşekkür ederim sana. Güncel çalışmalara değinmenizi istemiştim. Raporundan bakacağım hangi çalışmalardan bahsettiğini. Sana bir feedback olsun diye sunum açısından söylüyorum. O çalışmaları yazdığın yerlerde çalışma isimlerini de yukarıya not etseydi biz de...
+
+84
+00:19:41,855 --> 00:19:45,895
+İsmine bakıp birazcık daha şey yapabilirdik. İşin içine daha rahat girebilirdik.
+
+85
+00:19:46,336 --> 00:19:48,796
+Makale isimleri de o yüzden şey yapabilir miyim?
+
+86
+00:19:48,836 --> 00:19:53,996
+Tamam. Bir feedback olarak söylemiş olayım. Eline sağlık. Çok teşekkürler. Sorusu olan var mı [öğrenci]'ya arkadaşlar?
+
+87
+00:19:57,275 --> 00:19:59,875
+Yok. Tamamdır. Teşekkür ediyoruz [öğrenci].
+
+88
+00:20:00,355 --> 00:20:01,036
+Teşekkürler.
+
+89
+00:20:11,059 --> 00:20:14,639
+Pardon, mikrofonu kapatmışım. [öğrenci] sen varsın sırada, hazır mısın?
+
+90
+00:20:18,099 --> 00:20:20,420
+Hazırım hocam. Hemen ekran paylaşım yapıyorum.
+
+91
+00:20:39,763 --> 00:21:04,384
+Paylaşım geldi mi hocam? Evet, görüyoruz. Merhaba hocam, öbirlikle. Merhaba, hoş geldin. Benim konum Collegian Resistance Ash Function. Öncelikle Ash Funksiyonlardan bahsetmek istiyorum. Ash Funksiyonları aldıkları gelirlerin boyutundan bağımsız olarak farklı belirli uzunluğa sahip çıktığı üretebilen.
+
+92
+00:21:05,076 --> 00:21:11,436
+Tek yönlü algoritmalardır. Üretilen çıktı, verilen girdiğe yani input'a bağlıdır.
+
+93
+00:21:11,436 --> 00:21:17,436
+Ve ona özeldir. Aynı hash fonksiyonundan aynı girdiği için her seferinde aynı çıktı oluşur.
+
+94
+00:21:17,436 --> 00:21:23,155
+İki farklı girdinin çıktıları hash'ları aynı olamaz. Yani çıktıları aynı olamaz.
+
+95
+00:21:23,155 --> 00:21:30,676
+Hash fonksiyonunun çıktıları message digest, hash, checksum, digital fingerprint olarak adlandırılabilir.
+
+96
+00:21:32,084 --> 00:21:42,703
+Hash fonksiyonların kullanımı, hash fonksiyonların veri bütünlüğünü doğrulama, parolaları saklama, sayısal imza, mesaj doğrulama konu gibi alanlarda yaygın olarak kullanılmaktadır.
+
+97
+00:21:43,304 --> 00:21:51,003
+Ben bilinen kullanım alanı olarak web uygulamalarında kullanıcı parolalarını tutmak yerine hash'lerinin alınıp veri tabanında saklanması olabilir.
+
+98
+00:21:51,743 --> 00:21:58,703
+Kullanıcıların siteye kaydısı sırasında verdiği parolaların hash'leri alınır ve kullanıcı adıyla birlikte veri tabanında saklanır.
+
+99
+00:21:59,155 --> 00:22:14,515
+Kullanıcının siteye girişi sırasında sağladığı parolanın yine hash'i alınır ve kaydedilen hash ile karşılaştırılır. Hash'lerin aynı olması durumunda kullanıcının kayıt sırasında verdiği parola ile giriş sırasında verdiği parolanın aynı olduğu durum ortaya çıkar ve girişine izin verilir.
+
+100
+00:22:15,875 --> 00:22:25,835
+Bu da bize kayıt esnasında şifrenin değil de hash'in tutulması ile veri tabanına karşı gerçekleştirilebilecek bir saldırı da şifrelerin korunaklı olmasını sağlayacaktır.
+
+101
+00:22:27,028 --> 00:22:46,847
+Bazı H fonksiyonları, özet fonksiyonları, yani H fonksiyonları olarak Message Digest, yani MDA ailesi, Hevel, sonra SecureHash, SHA algoritmaları ve YPool, RipeMD ve benzeri algoritmalar gösterilebilir.
+
+102
+00:22:46,847 --> 00:22:48,847
+MDS serisi algoritmalar.
+
+103
+00:22:49,587 --> 00:23:13,428
+MIT Profesörü Ron Rivas tarafından üretilmiştir. Çok sık kullanılan bir algoritmadır. 128 bit çıktı veriler. MD kısaltması Message Digest anlamına gelmektedir. 2004 yılında başlatılan bir proje ile en azından MD5 algoritmasının kollijinlere karşı güvende olmadığı ortaya çıkmıştır.
+
+104
+00:23:14,036 --> 00:23:23,036
+Havel Algoritmaları 15 farklı güvenlik seviyesi destekleyen tek yolu bir hash algoritmasıdır. 1992'de yayınlanmıştır.
+
+105
+00:23:23,816 --> 00:23:29,175
+SHA-1, NSA, Ulusal Güvenlik Ajansı tarafından geliştirilmiş.
+
+106
+00:23:30,276 --> 00:23:34,655
+NICT desteğiyle ABD'de standart bir kullanım haline gelmiş.
+
+107
+00:23:34,776 --> 00:23:39,076
+160 bitlik çıktı veren bir algoritmadır.
+
+108
+00:23:40,403 --> 00:23:52,084
+Collision nedir? Collision'dan bahsetmek gerekirse, hash fonksiyonlarında farklı girdilerin tam olarak aynı çıktığı yaratması olasılığı vardır. Bu durumda çakışma meydana gelebilir.
+
+109
+00:23:52,627 --> 00:24:07,528
+SH1 algoritmaları 2017'de, 6610 yıl işlemci zamanı kullanarak bir kollijin tespit edilmiş. MD5'te de 2005'ten beri, yani 2004'te başlatılan projeyle beraber 2005'ten beri kollijinlere açık olduğu tespit edilmiş.
+
+110
+00:24:08,127 --> 00:24:15,208
+Ve tespit edilen kollijinler dolayısıyla artık MD5 ve SH1 algoritmaları en azından günümüzde güvenli kabul edilmemektedir.
+
+111
+00:24:19,152 --> 00:24:28,491
+Kolizyonlara karşı korunaklı olup olmadığı, herhangi bir kolizyon bulunana kadar kolizyona karşı korunaklı olduğu kabul edilir.
+
+112
+00:24:31,451 --> 00:24:35,271
+Çakışma durumu, hash fonksiyonları için istenen bir durum değil.
+
+113
+00:24:36,692 --> 00:24:41,711
+Ve bir çakışma durumunda hash fonksiyonunu güvensiz hale gelir ve kullanılamaz.
+
+114
+00:24:42,152 --> 00:24:46,092
+İdeal bir hash fonksiyonun güvenliği kabul edilmesi için 3 özelliğe sahip olması gerekir.
+
+115
+00:24:46,483 --> 00:24:57,503
+Bunların ilki Collision Resistance, yani Collisionlara karşı direnç. Hatch fonksiyonlarının farklı iki girdiği için aynı hâşı çıktı olarak üretmesine karşı gösterdiği dirençtir.
+
+116
+00:24:59,843 --> 00:25:07,683
+Pre-Mitch Resistance, yani ters görüntüye dayanıklılık, hâş fonksiyonunu oluşturduğu bir hâş değerinden orijinal veriye,
+
+117
+00:25:08,180 --> 00:25:13,379
+Orijinal verinin, yani girdinin tekrar elde edilememesine karşı gösterilen bir dirençtir.
+
+118
+00:25:13,379 --> 00:25:20,879
+Second Pre-Mage Resistance'da iki ayrı girdinin aynı eşi oluşmasına karşı gösterdiği dirençtir.
+
+119
+00:25:20,879 --> 00:25:30,180
+Bunları görüntü üzerinde görmek gerekirse, iki farklı girdiği için
+
+120
+00:25:31,443 --> 00:25:36,323
+Üretilen hash fonksiyonlarının aynı olması burada bir çakışma olduğu anlamına geliyor.
+
+121
+00:25:36,543 --> 00:25:42,923
+Ve zaten bu çakışmanın gerçekleştiği bir hash fonksiyonu ya da hash algoritması güvensiz kabul ediliyor.
+
+122
+00:25:43,483 --> 00:25:48,523
+Primatch Resultans ise hash fonksiyonlarının tek yönlü fonksiyonları olmasıyla açıklanabilir.
+
+123
+00:25:49,263 --> 00:25:56,023
+Yani bu da bir girdiği için üretilen bir hash'in aynı hash'i kullanarak farklı bir girdiği veya tekrar o girdiği
+
+124
+00:25:56,596 --> 00:25:59,355
+Elde edememesine karşı gösterilen dirençtir.
+
+125
+00:25:59,956 --> 00:26:06,996
+Tekken Pre-Image Resistance ise ikinci ters görüntü saldırısı olarak adlandırılabilir.
+
+126
+00:26:07,355 --> 00:26:13,236
+Bir kullanıcının bilinen bir girdinin yarattığı çıktığıyla aynı çıktığı yaratan girdiyi bulmasıdır.
+
+127
+00:26:13,236 --> 00:26:17,756
+Çakışma ile aynı gibi gözükse de farklı olarak şu durumlar.
+
+128
+00:26:18,099 --> 00:26:31,739
+İki girdiği random bir şekilde aramak yerine, yani aynı hash'i veren iki girdiği random bir şekilde aramak yerine, bir girdi tarafından oluşturulan hash'in aynısını yaratan başka bir girdiği aramak olarak değerlendirilebilir.
+
+129
+00:26:35,347 --> 00:26:50,988
+Burada bir görüntü üzerinde elde edilmiş bir hash fonksiyonu, input olarak bir görüntü, 121 MB boyutunda bir görüntü ve elde edilmiş 32 MB bir hash fonksiyonu, hash değeri gözükmekte.
+
+130
+00:26:52,367 --> 00:27:01,768
+Devam edecek olursak, burada çok farklı bir girdi olmamasına rağmen, burada çok küçük bir farklılık var.
+
+131
+00:27:02,708 --> 00:27:11,028
+Görecek olursak bıyının birisi yok edilmiş kedi görüntüsünde ama oluşan hash yine çok farklı.
+
+132
+00:27:12,548 --> 00:27:17,588
+Bu özellikle benim şu açıdan dikkatimi çekti. Zaten görüntü işlem üzerine çalışıyorum.
+
+133
+00:27:19,028 --> 00:27:28,708
+Yani normalde bir görüntü sol üst köşeden alınarak incelenir. Görüntüden özellik elde ederek hash'in oluşturduğunu varsayarsak.
+
+134
+00:27:28,884 --> 00:27:49,843
+En azından belli bir kısmının aynı olması gibi bir şey söz konusu olabilirdi ama burada tabii ki hash algoritmasının tamamen farklı girdileri için tamamen farklı hash'ler oluşturması gerektiği göz önüne alınarak bu şekilde küçücük bir farkla bile farklı bir hash oluşturulmuş görebiliyoruz.
+
+135
+00:27:49,843 --> 00:27:54,063
+Burada eski hash'i ve yeni oluşan hash görülüyor.
+
+136
+00:27:54,675 --> 00:28:05,355
+Bu görüntüde ise aynı girdiler için, aynı eşin farklı bir girdiği için, küçücük bir farkla bile olsa farklı bir girdiği için de farklı bir eşin oluştuğu görülmekte.
+
+137
+00:28:08,175 --> 00:28:11,355
+Burada da bir kollijonu tespit etmek için...
+
+138
+00:28:11,796 --> 00:28:39,316
+Ne kadar çalışılması gerektiğine dair ya da ne kadar deneme yapılmasına gerektiğine dair bir örnek var. Burada Hello1, Hello2, Hello3 tarzında çok da farklı olmayan girdiler bile olsa farklı eşlerin oluştuğu görülmekte. Bu girdiğiyle farklı girdiler için aynı eşin oluşma olasılığını hesaplamak istersek normal bir üniversite zaten 60 milyon tane eş hesaplayabiliyor saniyede.
+
+139
+00:28:39,955 --> 00:28:44,875
+Böyle bir çözüm bulabilmek için 2 üzeri 55 adet deneme yapmamız gerekiyor.
+
+140
+00:28:45,756 --> 00:28:54,855
+2 üzeri 55 adet denemeyi de zaten yaklaşık olarak normal bir bilgisayarda 3 çarpı 10 üzeri 61 yıl sürecek kadar bir sürede gerçekleştirebileceğiz.
+
+141
+00:28:54,855 --> 00:29:04,695
+Bu zaten imkansız ve en azından tek bir bilgisayarda veya normal bir çözümde gerçekleşemeyecek bir durum.
+
+142
+00:29:06,163 --> 00:29:23,504
+Burada da bir e-posta örneği görülmekte. Burada bir mail gönderme esnasında gönderilecek bir olan görüntünün karşı tarafa iletilen görüntüyle aynı olup olmadığını incelemek için bir çalışma yapılmış.
+
+143
+00:29:23,504 --> 00:29:28,504
+Görüntü gönderilmeden önce alınan heşi görüntüyle beraber maile ekleyerek.
+
+144
+00:29:28,915 --> 00:29:37,276
+Karşı tarafı iletiyorlar ve aynı hash algoritmasıyla beraber karşı tarafta iletilen görüntünün hash'ı alınıyor ve hash'ler karşılaştırılıyor.
+
+145
+00:29:37,276 --> 00:29:50,855
+Hash'ler birbiriyle aynı ise görüntü bozulmaya uğramadan veya herhangi bir saldırı sonucunda farklı bir görüntü elde edilmeden karşıya ulaştırılmış ve tornaklı olduğunu yani güvenli olduğunu göstermekte.
+
+146
+00:29:52,375 --> 00:29:54,375
+Benim anlatacaklarım bu kadar.
+
+147
+00:29:55,604 --> 00:29:56,923
+Hocam, teşekkürler.
+
+148
+00:30:00,204 --> 00:30:01,624
+Teşekkürler [öğrenci].
+
+149
+00:30:02,984 --> 00:30:05,204
+Var mı arkadaşlar [öğrenci]'e sorumuz?
+
+150
+00:30:08,660 --> 00:30:15,640
+Yok, tamamdır. Teşekkür ediyorum. Ben teşekkür ederim hocam. [öğrenci] devam etmek istiyordu.
+
+151
+00:30:18,259 --> 00:30:27,519
+Hocam, [öğrenci]'la beraber sunacağız biz. Aynı PC'deyiz. Onun da sesini açmıyoruz. Sadece benimkinden gideceğiz.
+
+152
+00:30:28,200 --> 00:30:28,900
+Tamam, tamam.
+
+153
+00:30:38,099 --> 00:30:40,099
+Geldi mi ekran?
+
+154
+00:30:40,099 --> 00:30:42,099
+Evet, Hıhı.
+
+155
+00:30:42,099 --> 00:30:44,099
+[öğrenci] ve [öğrenci].
+
+156
+00:30:44,099 --> 00:30:47,099
+Buyurun arkadaşlar.
+
+157
+00:30:47,099 --> 00:30:52,099
+Sunumumuzu kurulmuşa Perception Lash ile birlikte hazırladık.
+
+158
+00:30:52,099 --> 00:31:01,099
+Şimdi sunum şu şekilde ileriyecek. Perception Lash ile ilgili biraz bilgi verdikten sonra incelediğimiz artıkılların özetlerini anlatıp...
+
+159
+00:31:01,652 --> 00:31:05,652
+Artikallarda farklı kullanım alanları var.
+
+160
+00:31:05,652 --> 00:31:17,652
+Perceptual Hashing, resim görsellerden hashing üretmek için olan bir algoritma.
+
+161
+00:31:17,652 --> 00:31:21,652
+Görsellerin hashini oluştururken,
+
+162
+00:31:24,756 --> 00:31:47,096
+Önemli olan şey, görselin içindeki kontent oluyor. Yani içeriğe göre bir hash oluşturmaya çalışıyoruz. İçerik biraz değiştiği zaman hash'in de biraz değişmesini istiyoruz kıyaslarken önceki haline göre. Bunu yaparken, Perseptal Hashling Algorithması oluştururken beş tane özellik üzerinden özellik arıyoruz diyebiliriz aslında.
+
+163
+00:31:48,180 --> 00:32:09,299
+Öncelikle hashlerin distinct olması. Yani azıcık benzer de olsa iki görüntünün hash'ı alındığı zaman farklı olması gerekiyor. Ama aynı zamanda resilient olması gerekiyor. Yani değişim az olduğu zaman, hashleri birbiriyle karşılaştırdığımız zaman hashler arasındaki değişimin de az olması gerekiyor.
+
+164
+00:32:10,067 --> 00:32:34,955
+Aynı zamanda deterministik olması gerekiyor. Aynı fotoğrafı iki kere hashlediğimiz zaman farklı hashler çıkmayacak tabii ki de. Efficient ve non-reversible olması gerekiyor. Efficient olması doğal olarak efficient olmasını bekleriz herhangi bir algı etmeden. Non-reversible olmasının nedeni de hash, sadece hashler elimize geçtiği zaman bunlardan biz işte atıyorum zararlı içeriğin bulunduğu görsellerin hash'ini...
+
+165
+00:32:35,188 --> 00:32:50,307
+Dağıttık sosyal medya, bu hash'e benzer olanları engelleyin dediğimiz zaman. Non-reversible olması gerekiyor bu yüzden. Bu hash ellerine geçtiği zaman zararlı içeriğe direkt erişemesinler. Şimdi birinci makaleden başlayalım. Birinci makale.
+
+166
+00:32:50,307 --> 00:33:01,868
+[öğrenci], hemen böyle bir şey sorayım. Arkadaşlarına da açıkla diye. Bir önceki slide'da özelliklerden bahsederken, Resolent özelliğinin hangi uygulamalar için önemli olduğundan bahsedebilir misiniz?
+
+167
+00:33:03,284 --> 00:33:14,284
+Nasıl bir uygulama? HASH'in iki farklı resim için farklı ama biraz da benzerlikte içeren bir HASH üretmesi gereksin.
+
+168
+00:33:14,284 --> 00:33:21,284
+Object tracking diyebiliriz hocam aslında. Obje sağa sola ilerlerken aslında sadece lokasyonu değişiyor.
+
+169
+00:33:21,284 --> 00:33:27,284
+Mesela bunun HASH değerleri birbirine birazcık da olsa yakın olmasını beklenir mesela örneğin.
+
+170
+00:33:27,776 --> 00:33:45,576
+Bununla ilgili makale mi okuyun? Böyle bir makalemiz var az sonra. Benim makalede de görsel blurlandığı veya birazcık değiştiği zaman içeriğine hala aynı olduğunda rezilent olduğunu görmüş oluyoruz aslında.
+
+171
+00:33:45,996 --> 00:33:51,036
+Evet, bu normal işlerden farklı bir özellik olduğu için açıklamak iyi olur diye düşünüyorum. Teşekkür ederim.
+
+172
+00:33:51,036 --> 00:33:52,236
+Teşekkürler hocam.
+
+173
+00:33:52,960 --> 00:34:19,140
+Birinci makaleyle başlayalım. Şimdi burada internette moderasyonluktan geçmeyen içeriklerin yayılmasıyla ilgili bir problem ele almışlar. Ama bunu işte insanlarla yaptırılamayacak kadar fazla içerik yüklendiği için her gün internete. Böyle bir sorun var. İşte AI ile yapılsa, bir modelle yapılsa da bunun yüksek maliyetleri çıkacak. Bu yüzden Polis Upcial Haching kullanılmış.
+
+174
+00:34:19,668 --> 00:34:45,668
+Şimdi az önce bahsettiğimiz 5 değer üzerinden diğer hash algoritmalarını ve perceptual hash algoritmasını değerlendirelim. İşte perceptual hash'ın kendi diğer hash algoritmalarını hard hash dersek eğer MD5 ve SSHI1 bu algoritmalar sınıf sınıfına giriyor. Bunlar resimdeki en ufak değişiklikte hash'i direkt rastgele başka bir değere...
+
+175
+00:34:47,123 --> 00:35:07,123
+Değerde hash çıkartıyor. Ve bu şekilde contentin variationlarında fan farklı hashler ortaya çıkmış oluyor. Yani rezilent olmayan bir hash algoritması oluyor. Perceptual hashings ise benzer görüntülerden benzer hashler çıkarttığı için
+
+176
+00:35:07,507 --> 00:35:30,027
+Bu beş değere de uyuyor ve yani çoğu algoritma uyuyor ve kontente göre hash ortaya çıkartmış oluyor. Yani aslında insanların görme sistemini birazcık kopyalamış oluyor diyebiliriz. İçeriye göre bakıyor çünkü. Örnek verecek olursak, şu üstünde sıfır yazan bir görsel.
+
+177
+00:35:32,052 --> 00:35:37,851
+Görsel'in gittikçe blurlandığını, değiştiğini görüyoruz burada.
+
+178
+00:35:37,851 --> 00:35:48,652
+Sıfır yazan, kendisiyle, orijinalle karşılayacak, hepsinin perceptual hashingi alınıyor bir algoritmayla. Ondan sonra orijinal olanın hashleri aynı çıkıyor.
+
+179
+00:35:48,652 --> 00:35:58,252
+Birazcık blurlananın benzerliği 0.08 oluyor. Benzerliği değil, fark, uzaklığı. Gittikçe blurlandıkça benzerliğinin de uzaklaştığını görüyoruz burada.
+
+180
+00:35:59,284 --> 00:36:09,224
+Kullanım alanlarını şu şekilde yapabiliriz. Sosyal medyadaki içeriklerin modere edilmesi, unfull olanların filtrlanması diyebiliriz.
+
+181
+00:36:09,224 --> 00:36:19,224
+Veya birbirine çok benzer olan resimleri tespit etmek de kullanılabilir. Veya copyright'ı olabilecek içeriklerin birazcık da olsa değiştirildiği zaman...
+
+182
+00:36:19,827 --> 00:36:43,827
+Diğer hash'lerden kaçabilir ama perceptive'l şehten kaçmaz. Yani corporate şeyin kullanıldığını tespit edebiliriz. Forensic Analizi'de evidence'ların, yani adli alanda evidence'ların compare edilmesinde kullanılabiliyor. Benzer şeyleri azaltıp daha az içeriye bakmak için. Gelecekte ise...
+
+183
+00:36:44,115 --> 00:37:07,036
+İşte algoritma geliştikçe daha fazla kontenti analiz edebilecek hale gelince, daha kendi kendine mesela harmfulları anlayabilecek hale gelirse eğer, yani kendi kendine gelemez de yapay zeka modelleriyle adapte edilirse, ekürüsü arttıkça, diğer teknolojilerle integrasyon sağlandıkça,
+
+184
+00:37:07,795 --> 00:37:23,255
+İleride hayatımızı daha fazla etkileyeceğini düşünüyor araştırmacılar. Sonuç olarak da dediğimiz gibi efektifiniz arttıkça ve daha fazla bu konuda araştırma yapılınca hayatımıza daha fazla girileceği düşünülüyor.
+
+185
+00:37:25,396 --> 00:37:36,876
+Az önce bahsettiğimiz Zim daha detaylı yapılmış bir hali. Sosyal network'te otomatik bir şekilde harmful imajların filtre edilmesiyle ilgili bir algoritma.
+
+186
+00:37:38,876 --> 00:37:45,956
+Burada bir pipeline oluşturmuşlar. Deep learning ve personal matching'i birlikte kullanmaya çalışmışlar.
+
+187
+00:37:51,987 --> 00:38:09,847
+Sosyal medyadan toplanan postlardan oluşan bir veri seti olduğunu düşünün. Buradaki duplicate'leri azaltılmaya çalışıyorlar. Ardından azaltılmış daha az olan veriyi insanlar da label atışıyorlar ve bu label'lara göre bir machine learning modeli oluşturuyorlar.
+
+188
+00:38:12,179 --> 00:38:17,679
+Böylece artık model, insanın yaptığı işi artık model yapabilir hale geliyor.
+
+189
+00:38:17,679 --> 00:38:25,679
+Ve insanın üstüne düşen yük daha azalmış oluyor. Şimdi birinci stepte mesela Persepolation kullanılıyor ve veri setinden şu iki resminden bir tanesi kaldırılıyor.
+
+190
+00:38:25,679 --> 00:38:31,980
+Bunlar aynı resmen blurlenmiş hali veya üzerinde yazı eklenmiş hali veya croplanmış, resize edilmiş halleri.
+
+191
+00:38:31,980 --> 00:38:36,980
+Bunlar veri setinden azalarak insanlara labellayacağı daha az veri gitmiş oluyor.
+
+192
+00:38:38,324 --> 00:38:51,444
+İnsanlar label aldıktan sonra oluşturulan modelde de, misal bir depremdeki olan işte damage'ın boyutunu modeli öğretiyorlar. Burada hiçbir damage yokken, burada işte görüldüğü gibi yıkılmış.
+
+193
+00:38:52,904 --> 00:39:00,444
+Modeli eğitiyorlar ve insanlardan daha az zaman almış oluyor bu. İnsanlar bu şekilde...
+
+194
+00:39:01,907 --> 00:39:18,248
+Daha az çalışıyor ve model daha iyi bir şekilde eğitilmiş oluyor. Bu şekilde insanların ekspertizini, uzmanlığını verimli bir şekilde kullanarak daha iyi bir model elde etmiş oluyoruz.
+
+195
+00:39:19,155 --> 00:39:41,875
+Şimdi [öğrenci] devam edecek. Ben de biraz Perception Lishing'in ön plan tanımı, nesne tanıma, objeye ayırt etme gibi özelliklerini kullanan iki adet makaleden bahsedeceğim. İlk makalemiz Visual Tracking Based on Improved Foreground Detection and Perception Lishing. Bu ön plan tanıma ile ilgili bir çalışma.
+
+196
+00:39:42,452 --> 00:40:06,392
+Dijital görüntü işlemeyi Perception-Lashing ile beraber kullanıyor buradaki araştırmacılar. Perception-Lashing metodları oluşturuyorlar. Bu metodları oluşturarak, kullanarak yeni bir yöntem geliştiriyorlar. Tree Frame Differencing diye aslında yeni değil, daha geliştiriyorlar. Perception-Lashing ile beraber. Hızlı ve yavaş hareket eden objelerin tespiti noktasında çalışmışlar.
+
+197
+00:40:06,804 --> 00:40:12,804
+Basit ve az maliyetli olduğunu öne sürüyorlar alternatiflerine göre.
+
+198
+00:40:12,804 --> 00:40:21,804
+Hızlıca hashleme yöntemlerinden bahsedelim. Bu solda gördüğümüz tüm a, h, h, h ve d, h, perceptual hash'ın yöntemi bunların üçü de.
+
+199
+00:40:22,036 --> 00:40:28,435
+Hızlıca bahsedeyim aH ve phdH'ten. AH ne yapıyor? Görsel üzerinde çalışıyoruz demiştik.
+
+200
+00:40:28,435 --> 00:40:34,315
+Görsele alıyoruz, grayscale yapıyoruz, boyut indiriyoruz, 8'e 8 hale getiriyoruz.
+
+201
+00:40:34,315 --> 00:40:43,036
+Ortalama bir piksel değer elde ediyoruz, yani average elde ediyoruz. Sonra bütün pikseller bu average değerle kıyaslanarak bir hash değer elde etmiş oluyor.
+
+202
+00:40:43,036 --> 00:40:46,988
+Kıyasa göre 0 veya 1 veriyoruz büyük veya küçük durumuna göre.
+
+203
+00:40:47,284 --> 00:40:54,284
+Burada sadece Average değerli kıyas var A-H'te. Yani piksellerin kendi arasında bir korelasyon kontrolü yok.
+
+204
+00:40:55,144 --> 00:41:01,324
+P-H'te ise daha robust A-H'e göre ne yapıyoruz? Discrete Cosine Transform kullanıyoruz.
+
+205
+00:41:01,844 --> 00:41:10,324
+Pikseller, komşu piksellerin ilişkisinde göz önünde bulundurularak ölçülüyor. Frekans metri aslında bu DCT.
+
+206
+00:41:11,064 --> 00:41:13,784
+Yalnızca birbirleriyle ilişkili olan pikseller sıfır değil.
+
+207
+00:41:14,175 --> 00:41:32,776
+İlişkiyle olanlar 1 olarak çıkıyor. Disco Cosine Transform'ı bu Average'den önce çalıştırıyoruz. D-hash'te de yine pi-hash'e benzer bir yöntem var. Birbirleriyle ilişkisini gözetmiş oluyorlar.
+
+208
+00:41:33,152 --> 00:41:59,312
+Nasıl yapıyor? Burada da her piksel bir sahandaki pikselle kıyaslanıyor. Büyük ve küçük durumuna göre yine 0 veya 1 binarization gerçekleştiriliyor. Bunların her biri birer Perseptional Yöntemi demiştik. Bunların tamamını kullanarak yandaki metodları entegre ediyorlar. Aslında Interframe Differencing klasik geleneksel bir yöntem. İki frame arasındaki piksel farkını bakarak ilerliyorlar.
+
+209
+00:41:59,699 --> 00:42:23,900
+Tree Frame Differencing, bu makalenin bahse konu özelliği ise Perceptionist'in yöntemlerini kullanarak yalnızca iki frame arasındaki farkı değil, birinci ve üçüncü frame arasındaki farkı da, yani frame fark window'unu biraz daha büyütüyor. Biraz daha geniş bir aralıktan bakıyor. Şurada örnekten hemen gösterelim. Mesela şurada bir yol görüntüsü var.
+
+210
+00:42:24,340 --> 00:42:48,780
+Yol üzerinde hareket eden araçlar var. Bu üstteki orijinal görüntü. Şu ikinci satır, Interframe Differencing, geleneksel yöntem yani. Makaleyi yazılma amacı olan Improptive Frame Differencing de alttaki. Mesela bu görselde, aslında bunun öncesi de var ancak bir önceki görselle kıyaslandığında, bir önceki frame ile kıyaslandığında yalnızca şu kadarlık bir değişim gözleniyor.
+
+211
+00:42:49,748 --> 00:43:03,608
+Ama Perception Session'in de kullanıldığı Improve Tree Frame Differencing ile, yani iki önceki frame ile kıyaslandığından ötürü doğrultu tahmini dahi yapabilecek duruma geliyoruz aslında. Böyle bir sistem var diyebilirim.
+
+212
+00:43:04,563 --> 00:43:29,284
+Bu makalede bundan bahsetmişler. Aslında bir de Object Tracking kısmı var. Object Tracking'de de mesela bu sol üstteki beyefendinin ilk görseliyle, ilk başta bir source image olarak düşünelim. Perception Haching kullanarak hareket ettiği zaman, Perception Haching kullandığımızda, Hatch'ler arası farkın ne kadar azsa oraya bir tane window çiziyor.
+
+213
+00:43:29,876 --> 00:43:48,476
+Demiştim, A-Hash biraz daha kendi içerisinde Average'larla arasındaki kıyasla buluyor ama PH ve DH biraz daha robust. O yüzden mesela burada biraz kayma gerçekleşiyor. PH ve DH'te ise daha tutarlı sonuçlar elde ediyor makale sahipleri.
+
+214
+00:43:50,076 --> 00:43:57,016
+Bir diğer makale de yine aynı ekip. İki yıl sonra iki farklı yeni Persexual Hash'in yöntemiyle geri geliyorlar.
+
+215
+00:43:57,427 --> 00:44:06,887
+Daha accurate ve robust olduklarını iddia ediyorlar ve daha az maliyetli olarak işlemi gerçekleştirdiklerini söylüyorlar. Yine visual tracking yapıyorlar.
+
+216
+00:44:08,947 --> 00:44:17,147
+Burada getirdikleri iki yeni yöntem LHash ve LDHash. Bunları şuradaki görsel üzerinden göstereyim, daha iyi açıklanabilir.
+
+217
+00:44:17,907 --> 00:44:21,627
+LHash, Laplace-based hash.
+
+218
+00:44:22,132 --> 00:44:33,572
+Burada bir tane input image var. Yine grayscale döndürüyoruz. Sonra input image boyutunu indirgeliyoruz. Ardından Laplace Transform kullanıyoruz.
+
+219
+00:44:34,356 --> 00:44:40,416
+Laplace Transform'ı ne? Aslında köşelere biraz daha information gain ediyor.
+
+220
+00:44:41,596 --> 00:44:51,576
+Mesela burada hanımefendinin üzerine muhtemelen bir gölge gibi bir şey var. Burada bir köşe oluşumu var. İlk hesapta Reduce olan image de böyle gözüküyor bu köşe.
+
+221
+00:44:52,136 --> 00:44:59,496
+Laplace Information gain'inde ise biraz daha buradaki information'ları yükseltmişler. Buradaki geçişi görebiliyoruz.
+
+222
+00:45:00,563 --> 00:45:09,963
+Yani LH burada bu şekilde kullanılıyor. Laplace information yayın yaparak. Yine binarization yapıp, Average'lerle kıyaslıyoruz. Bir hash değer elde ediyoruz.
+
+223
+00:45:11,163 --> 00:45:13,363
+LDH ise...
+
+224
+00:45:13,940 --> 00:45:31,820
+El Hash'ten farklı olarak ekstra bir Gradient Image oluşturma gerçekleştiriyor. Yani şu araya bir tane Gradient'i, bu imajın Gradient'ini yerleştiği, Gradient'ini alıyoruz. Yine aynı işlemlere burada devam ediyoruz. Laplace Transform yapıp, Binerization'i gerçekleştirip, Average'la kıyas edip, Sıza ve Billerden oluşan Hash değerimizi elde etmiş oluyoruz.
+
+225
+00:45:34,639 --> 00:45:40,260
+Burada Tracking Success Rate, işte farklı videolar üzerindeki Success Rate'leri bulmuş.
+
+226
+00:45:40,592 --> 00:46:02,851
+araştırmacılar. LDHash'in çoğunlukla diğer yöntemlere göre daha iyi çalıştığı, success rate'i daha yüksek olduğu açıkçası. Burada farklı bir yöntem var. Arkadaşların belirtmediği. O sadece bir tanesinde öne geliyor. Ama diğerlerinin çoğunda yeni propoz ettikleri LDHash ve LHash daha iyi çalışıyor.
+
+227
+00:46:06,195 --> 00:46:12,515
+Uygulamadaki performanslarını görebiliriz. İşte burada mesela object ilişkisinin, face tracking yapıyoruz.
+
+228
+00:46:12,515 --> 00:46:24,235
+Face tracking, aslında bu görsel, bu örnekler çok mükemmel olmuyor. Çünkü üst üste bindiği için ayırt etmemiz biraz zor. Fakat işte burada min çift isimli farklı bir yöntem var propoz edilmeyen.
+
+229
+00:46:24,235 --> 00:46:29,235
+İşte orada mesela farklı bir yeri gösterdiğini görebiliriz.
+
+230
+00:46:29,440 --> 00:46:38,379
+Bizim makaleyi oluşturan arkadaşların biraz daha başarılı olduğunu, bütün frame'lerin bir arada olduğunu görebiliyoruz.
+
+231
+00:46:39,731 --> 00:46:47,731
+Bu göster çok daha yaratıcı değil. Ancak sayısızlık anlamında Perception Lash'in kullanarak, Sorsi Match bir yüz görseli aslında,
+
+232
+00:46:47,731 --> 00:46:57,731
+işte akan video frame'leri arasında kıyas yapılan yüz görseliyle en fazla, en az farka sahip olan veriyi bulmuş oluyoruz Perception Lash'in sayesinde, diyebiliriz bir nevi.
+
+233
+00:46:59,443 --> 00:47:07,664
+Tüm bu çalışmaları özetleyecek olursak, tüm makaleler Perception Hashing'in birçok alanda kullanılabileceğini uygulama olarak gösteriyor.
+
+234
+00:47:08,764 --> 00:47:13,884
+Kıyaslama olsun, fark bulma olsun, değişiklik takibi olsun, hareket takibi olsun, nesne tespiti olsun.
+
+235
+00:47:15,804 --> 00:47:23,264
+Gelecek çalışmalarda ise Perception Hashing'in önemli bir rol oynayacağı. Özellikle sosyal medya, [öğrenci]'nın bahsettiği sosyal medya içerik tanımlaması.
+
+236
+00:47:23,360 --> 00:47:39,860
+İşte benim bahsettiğim yüz tanıma veya objet tanıma, nesne tanımada. Buralarda aktif olarak kullanabileceğini düşünüyor. Bütün makalelerin, overall future work'ünde. Bizim sunumumuz bu kadardı. Sorunuz varsa alabiliriz. Teşekkür ediyoruz.
+
+237
+00:47:40,700 --> 00:47:45,120
+Teşekkür ederiz arkadaşlar. Elinize sağlık. Var mı arkadaşlar soru?
+
+238
+00:47:45,844 --> 00:48:01,344
+[öğrenci]'e [öğrenci]'a güzel. Değişik bir konu gerçekten. Benim de ilgimi çeken bir konu. Makalelerden görüntü örnekleri koymanız da o açıda açıklayıcı oldu. Var mı arkadaşlar? Yok, tamamdır. Kim devam etmiş? Çok teşekkür ederim. Kim devam etmek istiyor?
+
+239
+00:48:07,476 --> 00:48:08,776
+Ben devam edebilirim hocam.
+
+240
+00:48:08,836 --> 00:48:09,576
+Olur. Tamam.
+
+241
+00:48:09,576 --> 00:48:10,756
+Buyurun.
+
+242
+00:48:25,331 --> 00:48:34,991
+Bu arada [öğrenci] hazırlanarken vize notlarınızı gördünüz değil mi arkadaşlar? Size mail olarak geliyor mu bilmiyorum sistemden. O yüzden girdiğimi söylemek istedim.
+
+243
+00:48:37,991 --> 00:48:40,911
+[öğrenci] ekran paylaşım yapıyorsam da göremedik herkese.
+
+244
+00:48:40,911 --> 00:48:46,091
+Hocam şu an izin istiyor ama.
+
+245
+00:48:46,511 --> 00:48:47,071
+İzin mi?
+
+246
+00:48:47,811 --> 00:48:49,551
+Şu an görebiliyor musunuz?
+
+247
+00:48:49,951 --> 00:48:50,831
+Yok göremiyoruz.
+
+248
+00:48:52,115 --> 00:48:56,615
+Başka bir hisse de geçtim bugün de. Bir daha paylaşmayı deneyeyim.
+
+249
+00:48:57,216 --> 00:48:58,316
+Şimdi oldu.
+
+250
+00:48:58,516 --> 00:48:59,276
+Şu an görebiliyor musun?
+
+251
+00:48:59,276 --> 00:48:59,676
+Evet.
+
+252
+00:49:04,724 --> 00:49:08,724
+Bugün benim konum, hash functions in blockchain.
+
+253
+00:49:14,164 --> 00:49:30,963
+Öncelikle hash function'lar nedir? Bundan bahsedeceğim. Karakteristik özelliklerinden bahsedeceğim. Daha sonra da blockchain tanım yapacağız. Blockchain nasıl işliyor, neler var, basic konseptleri nelerdir? Onlardan devam edeceğim.
+
+254
+00:49:31,884 --> 00:49:40,963
+Daha sonra bu ikisinin nasıl kullanıldığını, birbiri için nasıl kullanıldığını bakacağız. Daha sonra da genel...
+
+255
+00:49:41,588 --> 00:50:01,108
+Genel bazı hash fonksiyonlar var. Mesela en bilinenlerden bir tanesi, SHA-256. Bunun genel bir overview'unu yapacağım algoritmanın. Çok aşırı detaya gitmeden. Daha sonra da conclude edeceğiz.
+
+256
+00:50:01,748 --> 00:50:07,168
+Hash function, bildiğiniz üzere bir matematiksel bir algoritma ve elimizdeki bir inputu.
+
+257
+00:50:08,052 --> 00:50:13,052
+Any Arbitrary Length bir input'u belli bir fonksiyonundan geçiriyoruz.
+
+258
+00:50:13,332 --> 00:50:17,192
+Ve bunun sonucunda da Fixed Length bir output elde ediyoruz.
+
+259
+00:50:18,432 --> 00:50:21,032
+Birçok hash fonksiyonlar var.
+
+260
+00:50:21,832 --> 00:50:29,412
+Bizim bugün bir sonraki, ilerideki slidelarda bakacağımız, mesela şahane, 256.
+
+261
+00:50:30,472 --> 00:50:32,952
+Mesela kriptografik hash fonksiyon diye geçiyor.
+
+262
+00:50:35,635 --> 00:50:54,515
+Özelliklerinden bir tanesi, ya da genel olarak karakteristik, hash function'ların özellikleri mesela, bunlar her zaman aynı sonucu verirler. Yani herhangi bir input, aynı input, aynı input her zaman aynı output'u verir.
+
+263
+00:50:55,572 --> 00:51:10,572
+Onun dışında genellikle very efficient'dir bu algoritmalar. Yani gayet çok büyük bir dataset de olsa gayet hızlı çalışabilirler. Yani computational efficient algoritmalar. Tabii kendi aralarında bir farklılıkları var. Bazısı...
+
+264
+00:51:10,900 --> 00:51:33,860
+Diğerlerine göre çok daha hızlı çalışabilir. Bazısı biraz daha slow çalışabilir. Ama genel olarak computational feasible algoritmalar bunlar. Diğer bir özelliği premium resistance. Bunlar da verilen bir outputta, yani generated edilmiş bir hash'ten geri döndürme imkanı çok düşük olması ya da belki de imkansız olması.
+
+265
+00:51:34,547 --> 00:51:50,887
+En son özellikle Collision Free. Bu da iki input'un aynı sonucu output'u vermemesi. Bu en önemli özelliklerden bir tanesi de bu. Şimdi Bitcoin'e bakalım.
+
+266
+00:52:01,108 --> 00:52:27,487
+Özellikle Decentralized Public Ledger. Bu aslında en iyi tarif eden özellikle bir tanesi. Public Ledger dediğimiz şey şu. Aslında bir hesap defteri. Yani bu bildiğimiz bütün transakçıları tutan bir ledger. Hani şu şekilde mesela Oğuz Ahmet'e 50 Bitcoin ödedi. İşte Mehmet Aslı'ya 20 Bitcoin ödedi gibi alt aldı. Bütün transakçıları tutulan bir ledger gibi düşünebiliriz ve bu public.
+
+267
+00:52:28,019 --> 00:52:37,219
+Decentralize dediğimizde arada bir middleman yok ve herkes o network'taki her node bu ledger'e erişebilir.
+
+268
+00:52:38,659 --> 00:52:44,019
+Şimdi eğer böyle bir ledger'ınız varsa dolayısıyla bu bütün transakşonları...
+
+269
+00:52:44,980 --> 00:52:50,040
+Hesaplayıp, yani bir kişinin totalde en nihayetinde kaç parası olduğunu hesaplayabiliyoruz.
+
+270
+00:52:50,040 --> 00:52:59,040
+Yani eğer bütün transakçınları bir kişinin aldığımız zaman en nihayetinde mesela kaç parası kaldığını bulabiliyoruz.
+
+271
+00:53:00,700 --> 00:53:06,160
+Ve bu da coin dediğimiz şey ya da currency dediğimiz şey de tam olarak bu.
+
+272
+00:53:06,340 --> 00:53:09,040
+Yani public ledger'ın kendisi bitcoin'in kendisi demek.
+
+273
+00:53:09,140 --> 00:53:11,840
+Çünkü bütün paraların hesabı her şeyde buradan çıkarılabiliyor.
+
+274
+00:53:12,628 --> 00:53:34,268
+Chain of Blocks'lardan oluşuyor. Dediğimiz gibi bu bloklarda, şuradan da gösterebilirim. Mesela her transactionlar belli bloklara bölünüyor. Bunlar da birbirlerinin bir önceki bloklarında hash'lerini tuttukları için buna bu yüzden blockchain diyoruz.
+
+275
+00:53:39,188 --> 00:54:04,088
+Bloklara böldük ve her blok kendi içinde dediğimiz gibi transakçınları taşıyor. Başka information'lar da var ama genel mantığıyla asıl taşıdığı şey. Transakçın history. Her blok transakçın history taşıyor. Ve her blokta da bir proof of work dediğimiz özel bir special number var. Bu special number'ı da ileride birazdan anlatırım.
+
+276
+00:54:07,507 --> 00:54:33,147
+Bu da işte her blok dediğimiz gibi her blok immutable. Çünkü şundan dolayayım mesela her blok bir önceki bloğa bağlı, bir önceki bloğun hash'ini kullandığı için belli bir seri halinde herhangi bir aradaki bir transeksiyon değiştirdiğiniz zaman oradan devam eden bütün blokların hash'i değişeceği için sistemdeki değişiklik algılanabiliyor.
+
+277
+00:54:34,996 --> 00:54:56,516
+Ondan sonra şundan bahsedebilirim. Birkaç şey var. Aslında buraya koymak istedim ama koyamadım ama onlardan bahsedebilirim. Mesela birkaç problem var. Bu birkaç problemde de kullanıyoruz aslında bu hash fonksiyonları. Mesela dedik ya mesela bu bir public ledger. Yani herkes istediği şey ekleyebiliyor. Yani şu şekilde. Mesela ben 20 Bitcoin gönderdim birine mesela.
+
+278
+00:54:57,043 --> 00:55:09,843
+Ama ben bunu 5 kere de ekleyebilirim. Yani işte ben 20 dolar gönderdim diye mesela bir instruction olsa, ben bu transaction history eklemek istesem, ben bunu 20 kere de aplikate edebilirim ve bunu ekleyebilirim.
+
+279
+00:55:09,843 --> 00:55:21,503
+İşte bunun önüne geçmek için de mesela Digital Signature kullanıyoruz. Digital Signature da kendi içinde tabii, şurada gösterebilirim. Digital Signature da kendi içinde hash function ve encryption kullanıyor.
+
+280
+00:55:22,099 --> 00:55:39,519
+Bu da bir kişi kendi transakşonunu verify etmek için o transakşonu kendi private key ile sign ediyor. Ve bu sign ettiği hash'i de bu blokları ekliyor.
+
+281
+00:55:43,539 --> 00:55:47,719
+Şu şekilde.
+
+282
+00:55:48,820 --> 00:56:15,159
+Aynı şekilde de bu decrypt edip, bu verify edilip edilmediğini kontrol edebiliyoruz. Bu yüzden bir kişinin ve her bloktaki transaction'ın bir unique ID'si var. Her unique ID'de sign edilmiş oluyor. Bu yüzden her bir transaction'ın unique olduğunu kontrol edebiliyoruz.
+
+283
+00:56:16,659 --> 00:56:35,379
+Burada bazı algoritmalar var. Örnek algoritmalar. Genelde blockchain'de kullanılan. Bugün biz SHA-256'yı 250'ye bakacağız ama diğer algoritmalar da var. Ethereum'da kullanılan ve Litecoin'de kullanılan.
+
+284
+00:56:37,519 --> 00:56:39,639
+SHA-256
+
+285
+00:56:43,731 --> 00:57:01,632
+SHA-256'ya bakacağız bugün. Dediğimiz gibi 256 bit bir sonuç verdiği için buna bir SHA-256 adından oradan gelme ve Fixed Site Output 256 bit. NSA'de oluşturulmuş bir algoritma. Genel özellikleri var.
+
+286
+00:57:10,324 --> 00:57:34,403
+Datamız 512 bitlik parçalara bölünüyor. Eğer mesela 512 bitten kısa kalan parça varsa bu parçanın sonuna bir eklenip geri kalan eksik kalan bitlere sıfır ekleniliyor. Bu şekilde total uzunluk 512'de sahip tutuyor. Her parça 512 bit olmuş oluyor.
+
+287
+00:57:38,036 --> 00:58:01,375
+Bu prosesi var. Burada da her 5-12 n-block için n-block bölüyoruz. Yani bütün input'u. Daha sonra da set initial hash values dediğimiz bu 8 tane ilk 8 prime number'ın kare köklerini yani sıfırdan sonraki
+
+288
+00:58:01,972 --> 00:58:27,972
+Parçalarını aldığımız bit numaraları var. Bunları kullanıyoruz. Daha sonra da işte birkaç tekrardan bunlar hash'e bölünüyor ve main loop içinde hesaplanıyor. Birçok o arada hesaplama fonksiyonları var. En nihayetinde bunları birleştirip 256 bitlik bir output elde ediliyor. Burada da görsellerini eklemişim. Şunlar...
+
+289
+00:58:28,916 --> 00:58:48,096
+H1, H1, H1, H2 hesaplamış olması lazım. Evet. Şurada da mesela 512 bitlik parçalabiliyor. Daha sonra tekrardan onları 32 bitlik wordlere bölüp tekrardan o verilen 8 tane h-value ile işlemlere sokuyor.
+
+290
+00:58:48,820 --> 00:58:57,780
+Genel özellikleri aşağıya 256 bu şekilde. Özellikleri dediğimiz gibi Fixed Output ve her zaman Unicash veriyor.
+
+291
+00:59:07,284 --> 00:59:29,484
+Özelliklerinden de ilk başta bahsetmiştik zaten. Şafifti 256'da bu özellikleri sağlıyor tabii ve çok güçlü bir algoritma. O yüzden de çoğunlukla kullanılıyor ve hem güçlü hem de çok hızlı çalışan bir algoritma. Transaction'ın içinde kullanılıyor mesela Bitcoin'e. Bunun biraz daha detayına girebilirim.
+
+292
+00:59:31,155 --> 00:59:42,976
+Burada mesela demin bahsettiğim bir uygulama vardı. İlk başta Proof of Work, her transaction bir Proof of Work Value'de içeriyor demiştik.
+
+293
+00:59:44,436 --> 00:59:55,155
+Bunun kullanım amacı şu, dedik ya mesela bu bir public ledger, Bitcoin. Ve herkes elde edebiliyor bu public ledger'ı.
+
+294
+00:59:55,860 --> 01:00:15,199
+Dolayısıyla bir konsensus oluşması lazım. Yani doğru, en doğru ve bir tane doğru asıl transaction history var. Ve bu hangisi olduğu arasında, nodlar arasında bir konsensus olması lazım. Dolayısıyla bunun için proof of work mekanizması ortaya atılıyor.
+
+295
+01:00:15,820 --> 01:00:18,019
+Bunun da çalışma mekanizması şu şekilde.
+
+296
+01:00:20,820 --> 01:00:39,599
+Her bir transaction network'e broadcast edildiği zaman belli bir sıfır değeri var. Mesela bir hash fonksiyonu, herhangi bir değeri hash ettiğimiz zaman sonucunda ortaya çıkan bir değer.
+
+297
+01:00:40,340 --> 01:00:56,619
+Sonucunda ortaya çıkan hash değerinin mesela belli başlangıç, belli basamağının sıfır olmasını bekliyor. Bu network tarafından ya da algoritma tarafından belirleniyor. Daha sonra da diğer bütün nodlar ya da minor dediğimiz nodlar bunun üzerine çalışmaya başlıyor.
+
+298
+01:01:07,284 --> 01:01:31,644
+Ve ona bir özel bir ve sonuna özel bir sayı ekliyoruz. Özel bir sayı ekledikten sonra bu total bloğu hash ettiğim zaman bu hash sonucu belli bir değerde sıfırla başlaması lazım. Bunu ilk bulan bu bloğu verify etmiş oluyor ve bu bulduğu özel numberı da o transaction'a ekleyip tekrardan network'a broadcast ediyor.
+
+299
+01:01:33,300 --> 01:01:57,539
+Verify etmek kolay çünkü bulduğu number'u network'a broadcast ettikten sonra sadece herkes bunu kolayca verify edebilir. Çünkü hash function hızlı çalışıyor ve gelen değerleri hash function'a koyup bulup bulmadığını kontrol edebiliyorlar. Bu şekilde chain'in güvenliği sağlanmış oluyor.
+
+300
+01:01:58,003 --> 01:02:03,003
+Bir özellik daha var bu şeyin güvenliğini sağlamak için. Mesela...
+
+301
+01:02:03,251 --> 01:02:27,431
+Broadcast ya da decentralized bir network olduğu için, peer-to-peer network bu Bitcoin'in. Dolayısıyla birçok network ya da transaction history broadcast ediliyor network'e. Dolayısıyla bunlardan hangisinin doğru olduğunu algılamak için de ya da hangisinin seçilmesi, doğru olarak seçilmesi her node için şöyle bir şey yapılıyor.
+
+302
+01:02:30,324 --> 01:02:48,204
+Her zaman en uzun verifayet edilen blockchain'i alıyoruz. Dolayısıyla en nihayetinde bazı nodlar geri kalsa bile yeni verifayet edilmiş bloklar network'e gönderildikçe herkes bir yerde birbirine yetişmiş oluyor en nihayetinde.
+
+303
+01:02:49,268 --> 01:03:14,708
+Dolayısıyla bu şekilde burada da yani Proof of Work'te, transaction'ların verifi edilmesinde de ve daha sonra birkaç yerde var mesela Times Server var. Burada da mesela transaction zamanlarını kontrol etmesinde de birçok yerde de hash function kullanıyoruz. Bitcoin özellikle de SHA-256 kullanıyoruz. Diyeceklerim bu kadar açıkçası. Soru soraması var. Cevaplayabilirim.
+
+304
+01:03:17,780 --> 01:03:19,080
+Evet, geçmiş olsun.
+
+305
+01:03:19,520 --> 01:03:24,540
+Hocam çok teşekkür ederim. Biraz rahatsız ettim sizi muhtemelen.
+
+306
+01:03:24,540 --> 01:03:28,720
+Yok, estağfurullah. Ben de yapışmalardan atamadığım için benzer şekilde.
+
+307
+01:03:29,640 --> 01:03:31,460
+Evet, [öğrenci]'a sorusu olanlar mı arkadaşlar?
+
+308
+01:03:35,219 --> 01:03:45,059
+Tamam, teşekkür ediyoruz o zaman. Biraz hızlı bitirmeye çalışıyorum. O yüzden yeni arkadaşa geçelim. Kim hazır arkadaşlar yapmak ister?
+
+309
+01:03:45,799 --> 01:03:51,019
+Hocam ben devam edebilirim eğer uygun. Tamamdır, buyurur. [öğrenci] ve [öğrenci], [öğrenci] mu?
+
+310
+01:03:53,439 --> 01:03:55,399
+[öğrenci]. [öğrenci]. Buyur.
+
+311
+01:03:59,315 --> 01:04:01,215
+Sen tek başına mı yapıyordun?
+
+312
+01:04:02,096 --> 01:04:03,255
+Evet hocam, tek.
+
+313
+01:04:03,396 --> 01:04:04,255
+Tamamdır, okey.
+
+314
+01:04:05,795 --> 01:04:07,375
+Hocam, vizeleri nerede yayınladınız?
+
+315
+01:04:08,436 --> 01:04:14,516
+Online Yıldız'da giriş yaptım. Oradan bir kontrol edin isterseniz.
+
+316
+01:04:18,579 --> 01:04:21,119
+Şu an görebiliyor musunuz? Ekran paylaşımı yerden.
+
+317
+01:04:21,259 --> 01:04:21,840
+Görüyoruz.
+
+318
+01:04:22,599 --> 01:04:27,019
+Merhaba. Ben bugün size Universal Age Mart şimdiden bahsedeceğim.
+
+319
+01:04:27,539 --> 01:04:36,360
+Bu makale üzerinde yaptığım literatür araştırmaları üzerinde genellikle ben bu matematiksel denklemlerini, çöremlerini ve ispatları üzerinde kurdum.
+
+320
+01:04:36,360 --> 01:04:39,199
+Bugünkü sunumda da biraz onlardan bahsedeceğim.
+
+321
+01:04:39,668 --> 01:04:46,668
+Genel olarak bahsetmek gerekirse Yunan ortaklaşma akşamlardan. Burada şu yukarıdaki siyah çizgi size gelmiyor değil mi?
+
+322
+01:04:46,668 --> 01:04:48,668
+Bunun özel yoldan. Kapatmıyor sanırım.
+
+323
+01:04:49,268 --> 01:04:51,068
+Nerede ki siyah çizgiden var?
+
+324
+01:04:51,108 --> 01:04:52,628
+Tamam, görmüyorsunuz hocam.
+
+325
+01:04:54,628 --> 01:05:03,188
+Ben bir siyah çizgiyi görmüyorum ama şeyi göremiyorum. Son azaltıları yazıyor mesela. Onun altında bir şeyler varsa orayı göremiyorum şu anda.
+
+326
+01:05:03,188 --> 01:05:05,608
+Ama benimle alakalı bir şey, seninle alakalı bir şey değil.
+
+327
+01:05:05,608 --> 01:05:07,887
+Yok hocam, onun altında bir şey yazmıyor. Tamam.
+
+328
+01:05:08,648 --> 01:05:16,487
+Universal Hashingler, Beckman ve Carter adındaki iki bilim insanı tarafından 1978 yılında ortaya atılmış bir teorendi.
+
+329
+01:05:17,268 --> 01:05:29,268
+Bu algoritma'nın ortaya atılmasının en büyük nedeni geliştirilen bir algoritmanın hangi problemler veya uygulamalar özgürlüğü kullanılacağını bilinmediğinden dolayı o algoritma için en kötü olan problem karşısında performansı düşük olacaktır.
+
+330
+01:05:30,007 --> 01:05:39,148
+Bundan dolayı performansı iyileştirmek ve çatışmaları azaltmak amacıyla çalışma durumlarına bağlı olarak aralığında seçim yapılabilecek bir algoritma, bir eşsını oluşturmaya başladı.
+
+331
+01:05:39,603 --> 01:05:58,023
+İşte hash fonksiyonları ailesi arasında rastgele bir hash fonksiyonu seçilerek verim ilişkili kullanılmasını amaçlamakta. Genel olarak iki tane özelliğe sahip olması gerekiyor. Bunlardan biri rastgele seçim. Yani çok sayıda hash fonksiyonlar arasında seçilebilecek veri seçilmesi olması da bu setler üzerine rastgele seçim yapılabilmesi.
+
+332
+01:05:58,708 --> 01:06:13,708
+Bir değerli çeşitlilik, belirlenen hash fonksiyonlarına geride olarak verdiğimiz farklı key'lerin, farklı çıktığının oluşmasının sağlanması, aynı çıktığının verilmemesi yani collusion'un azaltılması. Bu özellikle beraber collusion'dan kaynatılan performansı azaldır.
+
+333
+01:06:13,708 --> 01:06:17,708
+Peki bunun matematiksel işlemi not oluyor. O da şu şekilde.
+
+334
+01:06:23,603 --> 01:06:44,463
+Benim U adında bir evrensel anahtar kümem olsun ve bunun 0'da m-1 aralığında olduğunu varsayayım. X ve Y anahtarlarımın bu 0'da m-1 aralığından çektiğim X ve Y anahtarımın hash fonksiyonuna girdiğinde aynı sonucu veriyorsa ikolojin oluşu ödemektir. Bunun değeri de 1 olarak gözük. Buradaki denklemleri ifade ediyorum.
+
+335
+01:06:45,331 --> 01:07:02,811
+Peki bunun evrensel olduğunu nasıl anlatıyorum? O da şu şekilde. Hash fonksiyonundan çıktısının birbirine eşit olma olasılığı bir böleğinden eşit veya küçükse hash evrensel diyor. Aslında buradaki bir benim sözüm durumum. Böyle M dediğimde slot sayı. Bana slot sayı.
+
+336
+01:07:04,092 --> 01:07:12,491
+Aynı zamanda bu çıktılardaki çapışma ne kadar az olursa hash fonksiyonumuz o kadar kullanış olduğunu söyleyebiliyor. Peki bunun ispatını nasıl yapıyoruz? O da şu şekilde.
+
+337
+01:07:13,588 --> 01:07:18,088
+Burada matematiksel denklem olarak e-terim kullanılmış.
+
+338
+01:07:18,088 --> 01:07:23,088
+Şu aşağıdaki sağ alt dakikasında bunun denklemini veriyor.
+
+339
+01:07:23,088 --> 01:07:27,088
+Hedge denklemi x için. x dediğim şey benim collusion terim veriyor.
+
+340
+01:07:27,088 --> 01:07:30,088
+x beklenen çatışma sayı çeşittir.
+
+341
+01:07:30,088 --> 01:07:34,796
+t yani collusion'un gelişme olasılığı çarpı, hash işlemine tabi tutulan eleman seri.
+
+342
+01:07:35,027 --> 01:07:42,027
+Buradaki denklemi, şu yukarıdaki ispat kısmındaki denklemi yerleştirdiğimiz zaman ortaya şu çıkıyor.
+
+343
+01:07:42,027 --> 01:07:52,027
+Colusion'un oluşma olasılığı, P, denklemin üzerinde Colusion'un oluşma olasılığı çarpı, en sayılı neydi benim? Yani çeşit noktum üzerinde bir çarpışma durumu bir oluyor da.
+
+344
+01:07:52,027 --> 01:07:59,727
+Artık Colusion'un oluşma olasılığı, yani o da şuna karşılık geliyor. 1-Colusion'un oluşma olasılığından 1-M.
+
+345
+01:07:59,728 --> 01:08:07,728
+1-1 bölgeme çarpı 0'da zaten kolocon oluşmayacağı için de bunun durumu 0 olacak.
+
+346
+01:08:07,728 --> 01:08:15,728
+Burada denklemlerden birbirini gösterme işlemi yaptığımızda 1 bölgeme karşı bir, yani alabileceği kolocon durumum benim 1 bölgeme olacak.
+
+347
+01:08:15,728 --> 01:08:26,728
+Bir diğer ifadesi de şu, x değerli denklemine baktığım zaman benim koloconun oluşma olasılığı, h dediğim şey
+
+348
+01:08:28,115 --> 01:08:35,115
+Hes fonksiyonunun sayısını veriyor. Hes fonksiyonuna tabir tutulan sayıyı veriyor. Böyle m-slo sayıma karşıtı.
+
+349
+01:08:36,416 --> 01:08:46,175
+Bununla beraber Hes kümesinde rastgele bir Hes seçilmiş olsun. Hes tablosundaki m-slo sayım ifa içerisinde en adet anahtarı Hes dediğimi varsayarsak.
+
+350
+01:08:46,536 --> 01:08:49,296
+Yani benim işte en adet anahtarımı Hes dedim.
+
+351
+01:08:50,228 --> 01:08:58,708
+O anahtarlardan bir tanesinin, X anahtarının, Collagen'ın beklenen durum ne olabilir diye soru sorduğunda şu denklem çıkıyor.
+
+352
+01:08:58,708 --> 01:09:04,228
+Orada diyor ki, en belirinden küçük olması gerekiyor. Çünkü ben zaten en adet sokuyorum.
+
+353
+01:09:04,228 --> 01:09:15,228
+Oluşabilecek en maksimum durum, adet sayım böyle slow sayım. Bunun peki ispatını ötüretiliyor. O da şu şekilde.
+
+354
+01:09:16,115 --> 01:09:36,496
+Bu yukarıdaki ispat, iki slide üstteki ispat herhangi bir farklılık yok. O da şunu söylüyor bana. Diyor ki benim X'in Collision Sayımı olduğunuz gibi diyor. Şu CX dediğim şey Collision Sayı. CXY dediğimde X ve Y'nin Collision Sayı Soyu Soyum. Bunların X ve Y birbirinden farklı olmak koşuluyla topladığım vakit CX'i vereceğini baktıyor.
+
+355
+01:09:37,332 --> 01:09:59,211
+Ben bunların beklenen durumlarıyla beraber işleme soktuğum vakit, burada zaten matemiksel işlem oluyor, E içeri gidiyor. Bu zaten E beklenen durum yani. Kolucunun oluşma olasılığı bir bölü M vermişti, önceki slide'ı bahsetmiştim. O da bir bölü M'i X ve Y birbirinden farklı olma koşuluyla en adet anahtarımı soktuysam teşvik fonksiyonu var.
+
+356
+01:10:00,000 --> 01:10:14,819
+En eksi bir çarkı bir böleğimi denklemin verecektir. Bu da benim alabileceğim maksimum değeri gösteriyor. En eksi bir böleğimi. Zaten burada da bir önceki slide'da da bahsettiğim gibi en böleğimden küçük olacağı için aslında bunun ispatını yapmış oluyor. Heş'in evrensel olduğunu söyleyebiliyorum.
+
+357
+01:10:16,307 --> 01:10:35,467
+Aynı zamanda şimdi Universal Eşit Fonksiyonu ailesinin prime metotlarından, matrixlerden, polinomlardan bahsedeceğim. Genel olarak bunların ne işe yaptığını bir tanım olarak geçireceksem, prime metot, keş fonksiyonlarında çıkışmaları azaltmak için anahtarların bir altal suya modüler olarak bölünerek keş değerlerinin elde edildiği bir yöntem.
+
+358
+01:10:35,859 --> 01:10:54,879
+Öncelikle anahtarı özgü bir hash deri elde etmek için anahtarın işlemlerden geçirmek gerekmektedir. Bu işlem genellikle anahtarın modeli olarak bir asasiyaya bölünmesini içerir. Bu asasiyaya genellikle hash tablosunun boyutuna yakın veya en yakın olan asasiyedir. Çoğunlukla açık adresine, o nazisinin tabanlı hash tablosunda kullanılan bir yöntendir.
+
+359
+01:10:55,539 --> 01:11:04,399
+Bu yöntem çakışma yöntemi için etkili bir çözüm sunabilir. Ancak eş fonksiyonun doğru seçilmesi ve asal sayının uygun bir şekilde belirlenmesi önemlidir.
+
+360
+01:11:04,959 --> 01:11:14,619
+Ayrıca prime metodunda bazı dezavantajlar olabilir. Özellikle prime sayılarının hesaplanmasının zaman alıcı olması ve yerel çakışmaların oluşma olasının artması örnek olarak verilir.
+
+361
+01:11:15,028 --> 01:11:23,587
+Peki bunun denklenimi, matematiksel ifadesini, o da şu şekilde. Benim u elemanlarım var. Bunlar 0 ile u-1 aralığında olsun negatif olmayan tam sayılarım.
+
+362
+01:11:23,587 --> 01:11:31,028
+Ben bu bir asal sayı belirliyorum. Bu asal sayımda u dediğim elemanlarımdan daha büyük veya eşit olması gerekmekte.
+
+363
+01:11:31,888 --> 01:11:40,308
+Daha sonrasında buradaki gördüğünüz denklem üzerinde a ve b kat sayılarım var. Bu kat sayılarında 0 ile p-1 aralığında olduğunu bahsediyorum.
+
+364
+01:11:40,819 --> 01:11:46,739
+Denklerin üzerine yerine yerleştirdiğim zaman şu konu çıkıyor. Benim x anahtarım var. 5 fonksiyonuna tabi tutuyor.
+
+365
+01:11:47,539 --> 01:11:52,159
+ax artı b mod f üzerinde en dışta mod m işlemine tabi tutacak.
+
+366
+01:11:53,199 --> 01:11:58,479
+Buradaki a dediğimiz durum, yani a kapsayı için 1 ve p-1 aralığında olması gerekiyor.
+
+367
+01:11:58,819 --> 01:12:04,059
+Bunun neden 0 olmadığını bir sonraki slide'da göstereceğim. Onun ispatını yapacağım.
+
+368
+01:12:04,519 --> 01:12:07,699
+b derimin elemanları da 0 ile p-1 aralığında olması gerekiyor.
+
+369
+01:12:08,307 --> 01:12:19,507
+Seçebileceğimiz maksimum heş konflonu a ve b değerleri üzerinde olacağı için alabileceğim maksimum değeri, yani benim heş konflonum alabileceğim maksimum değeri en yüksek değeri verelim a'ya, p-1 olduğunu varsayalım.
+
+370
+01:12:19,507 --> 01:12:31,108
+b değerimde 0 ile p-1 aralığında olacağı için bu da b'ye karşılık gelecek. 0'dan dolayı arttı bekleniyor. Bu da p olacaktır. Benim heş kümemin maksimum değer aralığı p çarpı p-1 olacak.
+
+371
+01:12:31,252 --> 01:12:37,252
+Bu bizim için önemli bir ifade. Daha sonra bunun eş konusunun evlensel olduğunu nasıl ispatlıyoruz?
+
+372
+01:12:37,252 --> 01:12:43,252
+Daha önce de kullandımış olduğumuz, yani kolocun olma odasının bir bölü M olan denklemi yerine yerleştirdiğimiz var.
+
+373
+01:12:43,252 --> 01:12:47,252
+Aynı zamanda şöyle bir denklemiz de vardı. H bölü M denklemiz de vardı.
+
+374
+01:12:47,252 --> 01:12:54,252
+Bunun yerine yerleştirdiğimiz var. Şu sonuç çıkıyor. P çarpı P-1 bölü M. Şöyle iki ifadeyi kullanıyoruz.
+
+375
+01:12:54,252 --> 01:12:58,252
+Yani slot demini de dahil ediyorum. Peki bunun denklemi nasıl oluyor şu şekilde?
+
+376
+01:12:58,739 --> 01:13:03,099
+Davrosu a değerinin sıfıra neden eşit olmadığını gösteriyorum.
+
+377
+01:13:03,099 --> 01:13:08,219
+Burada şunu söylüyorum. Benim x, i ve x, j adında iki tane anahtarım olsun.
+
+378
+01:13:08,219 --> 01:13:18,819
+Bunlar birbirine eşit olmaktan ve aşağıdaki şuradaki denklemleri yerine yerleştirdiğim vakit, eşit fonksiyonun içerisinde x, i ve x, j yerine yerleştirdiğim vakit şuradaki denklemleri vermiş olacak.
+
+379
+01:13:18,819 --> 01:13:21,019
+a, x, i artı, b eşit, y, y.
+
+380
+01:13:21,492 --> 01:13:29,492
+Buradaki A'lar ve B'ler birbirine eşit olduğu için sadeleştirme işlemi yapalım, yani yalnız bırakma işlemi yapalım. Şu aşağıdaki A ve B sonuçlarını vereceğiz.
+
+381
+01:13:29,492 --> 01:13:39,492
+Haliyle bu sonuçta A sıfır eşit olmaması gerekiyor ki, A sıfır denildiği vakti Yİ ve YJ B'ye eşit olur.
+
+382
+01:13:39,492 --> 01:13:49,292
+Haliyle ben hangi anahtarı verirsem biri eşit konuyu olma, hepsi B sonucunu çıkartıyor ve bu işlenme yanıtı. O yüzden A, B'ye nasıl yazar?
+
+383
+01:13:50,452 --> 01:13:58,452
+Bir diğer ispat yöntemidir şu. Benim X, Y ve X, J adımda iki tane değerim olsun. Bunlar birbirlerinden farklı olsunlar.
+
+384
+01:13:58,452 --> 01:14:10,452
+Bu prime metodun evrensel olduğunu nasıl gösterebilirim? Şu şekilde X, Y ve X, J'nin çakışan hash fonksiyon sayısı bölü A ve B çiftinin maksimum olabileceği değer aralığı.
+
+385
+01:14:10,452 --> 01:14:14,452
+Biz şu kısımda iki üstte şunu göstermiştik.
+
+386
+01:14:15,252 --> 01:14:22,811
+P çarpı P x'i bir bölü M değeri benim evrensel olduğum iletlerimdir.
+
+387
+01:14:22,811 --> 01:14:30,171
+Bunun yerine yazdığım vakit bölü A ve B diye çiftliğin maksimum olabileceği değeri de bu. O da P çarpı P x'i bir de.
+
+388
+01:14:30,171 --> 01:14:35,171
+Burada sadeleştirme yaptığım vakit bana bir bölü M sunucunu vermiş olacaktı.
+
+389
+01:14:35,171 --> 01:14:38,851
+Bunun evrensel olduğunu gösterebiliyorum.
+
+390
+01:14:39,828 --> 01:15:05,887
+Bir sonraki hash fonksiyonu ayrılışımdan matriz metodu var. Peki matriz metodu iş yapıyor. Verilerin hash değerlerini ispatlamak için bir matriz kullanılır. Matriz giriş verilerinin belli bir işleme tabi tutulması ile oluşturan bir hash değerini temsil eder. Genellikle matriz tablosunun boyutu ile ilişkilidir. Bu yöntem özellikle büyük bir veri kümleleri için etkiledir. Hash fonksiyonu tasarımı sunabilir. Ancak matriz seçim veri dağılımının önemlidir.
+
+391
+01:15:07,828 --> 01:15:13,828
+Bu faktörler önemlidir. Matris metod çeşitli algoritmalar matris operasyonunu kullanarak uygulanabilir.
+
+392
+01:15:14,628 --> 01:15:20,028
+Peki, denklemi nasıl oluyor? O da şu şekilde. Benim bir anahtarlarım. Bak, U bitimin ne olduğunu varsayalım.
+
+393
+01:15:20,528 --> 01:15:27,728
+Benim U evrensel kimat 2 üzeri U'ya eşit olacak. Yani benim U bitim 3 olduğu zaman 2 üzeri 3'e karşı bir siyaret etkiler.
+
+394
+01:15:28,212 --> 01:15:38,212
+Aynı zamanda tablo boyutu markt. Lotsey'in değil artık boyut oluyor çünkü marktiklerinden işlem yapıyoruz. Ona da M diyelim. M'in karşılığı 2'nin kuvvet olduğunu varsayıyoruz.
+
+395
+01:15:38,212 --> 01:15:51,084
+Haliyle index bitlerin B bit olduğunu varsayarsam, yani kaç bitse 0-1 aralığındaysa 2 oluyor, 0-1-2 aralığındaysa 3 oluyor. O da bana M değerini 2 üzeri B'ye karşılık gerçekleştirecek.
+
+396
+01:15:52,243 --> 01:16:02,243
+Bu denklem üzerinde eşit değerini elde etmek için h maddesini x'in vektör uzunluğuna çarkarak iki tabanına moduna alır. Aslında benim denklemim şuradaki ifade.
+
+397
+01:16:02,243 --> 01:16:06,243
+hx eşit h çarpı x modüleri 2.
+
+398
+01:16:06,644 --> 01:16:23,644
+Bunun kolocon olma olasılığında bir bölüm vardı. Bir bölüm evrensel olduğumu varsayalım. Eşittir. M değerinde burada iki üzeri B buldum. Bir bölüm iki üzeri B'den benim matriks metodumun evrensel olduğunu söyleyebiliyorum.
+
+399
+01:16:23,644 --> 01:16:34,476
+Bunun ispatını nasıl yapıyoruz? O da şu şekilde. X ve Y anahtarlarım var. Bunlar birbirlerinden farklı. Kolocon olma olasılığı bir bölüm iki üzeri B olduğunu gösterir diyor.
+
+400
+01:16:35,060 --> 01:16:38,659
+X ve Y anahtarların çiftliğinin birbirinden farklı olduğunu varsayıyoruz.
+
+401
+01:16:39,460 --> 01:16:43,260
+Matris üzerinde farklı olacağı şekilde ayarlıyoruz. O da nasıl yapıyoruz?
+
+402
+01:16:43,260 --> 01:16:49,460
+Şuradaki solda görselde gözüküyor. Bu arada burada Y anahtarını kullanmamışım.
+
+403
+01:16:49,460 --> 01:16:51,659
+Bir tane değeri farklı yapıyoruz.
+
+404
+01:16:51,828 --> 01:16:58,708
+İlla hepsini farklı yapmamız yok. Bir tane değeri farklı yaparsak zaten X ve Y'nin farklı olduğuna varsayabiliriz.
+
+405
+01:16:59,348 --> 01:17:04,408
+Değerlendirme için X, Y için 0, Y için de bir değeri verebiliriz.
+
+406
+01:17:04,828 --> 01:17:17,028
+Bu sayede X ve Y anahtarlarının farklı olmaktadır. X tutunu sabit tutup geri kalan H maddesini raf ver seçilerek ve ismine H, H'ın değil'i olarak isimlendirilebilir.
+
+407
+01:17:17,587 --> 01:17:37,967
+İki sıfır olduğundan dolayı ilk sıfır herhangi bir toplamın etkisi olmayacaktır. Haliyle denklem, h ilk eşittir, hın değili x'e eşit olacaktır. Yani aslında ben şu üzerinde x'i sıfır olarak belirlersem bir tane değeri, ben h ne olursa olsun neyle çarparsam çarpım, sıfır olacağı için x'i bu. Aynı sonuçlar.
+
+408
+01:17:39,764 --> 01:17:47,844
+Aynı zamanda x'i'den farklı olarak y'in bir olduğunu varsayarsan, h tablosunun toplamına etkisi olacaktır.
+
+409
+01:17:48,204 --> 01:17:55,844
+h şevrekleri değişecektir. Burada da y değerinin neden h'i değerinin var? O da şundan dolayı ben y değerine bir sonucunu veriyorum.
+
+410
+01:17:55,844 --> 01:18:03,503
+Haliyle ben h'a soktuğum herhangi bir işlem bir olduğundan dolayı renklemi değiştirecektir. O yüzden h'i değerinin var.
+
+411
+01:18:03,891 --> 01:18:25,191
+Bununla birlikte H1'in değil farklılık olmayacağı için aynı olarak gösteriyoruz. Bundan dolayı sadece bu durumda çalışma ihtimali vardır. H1 sıfır olduğundan dolayı 2 üzeri 5 tane eleman olduğuna göre çalışma ihtimali 1 tane olduğuna göre şu aşağıdaki denklemi sağlıyor.
+
+412
+01:18:27,028 --> 01:18:36,368
+Bununla birlikte son olarak da polinom üniversitelerden bahsediyorum. Bunun olayı da şu, birbirinden farklı X ve Y anahtarın polinomun iş değerlerini kullanarak eşitlemektedir.
+
+413
+01:18:36,708 --> 01:18:44,208
+Hatch tablosu boyutuna bakarak uygun polinom değerleri seçilir. Aşağıdaki denklemlerde B katsayı sabitleyen X'i input diye fark eder.
+
+414
+01:18:44,208 --> 01:18:53,668
+Aslında buradaki B katsayım benim. Polinom değerinin, aslında katsiyaların heştlendiği vakit tablo üzerinde uygun bir şekilde yayılmasını sağlıyor.
+
+415
+01:18:55,028 --> 01:19:09,028
+Bu yüzden bu denklemi için o kadar tablo üzerine yayılmış olacak. X anahtarının polim üzerinde yerine yazılarak Asya'da beraber bir denklem oluşturulur. Bunun sonucunda eşdeğerli elde edilir.
+
+416
+01:19:09,028 --> 01:19:15,692
+Peki bu denklemi iki anahtar için nasıl yapıyoruz? O da şu şekilde. X'liye değerli birinden farklı olsun.
+
+417
+01:19:15,796 --> 01:19:26,396
+Heş fonksiyonunu soktuğum vakit iki farklı işe, X ve Y'nin heş fonksiyon durumları birbirinden çıkarttığınız vakit mod M tabanında tam bölündüğünü yani sıfır eşli olduğunu görebiliyoruz.
+
+418
+01:19:26,956 --> 01:19:33,356
+Yani biz bu denklemizi bağladığınız vakit, iki tane birbirinden kolajin olduğundan dolayı değerler sıfır olacak.
+
+419
+01:19:33,476 --> 01:19:37,416
+Bunları birbirinden çıkarttığınız vakit de sıfır olacak ve bu şekilde problemleri çözüyor olacağız.
+
+420
+01:19:38,416 --> 01:19:42,036
+Benim sunumum bu kadar arkadaşlar. Dün izliği için teşekkür ederim.
+
+421
+01:19:44,020 --> 01:20:01,140
+[öğrenci], teşekkür ederiz. Kendini bir ara derste gibi hissettim. Teoristlerle anlatmak açısından güzel oldu. Evine sağlık. Biraz daha böyle güncel çalışmalardan bahsetmeni aslında bekliyordum. Onu belki bir geri bildirim olarak sana söyleyebilirim.
+
+422
+01:20:01,140 --> 01:20:08,920
+Evet hocam haklısınız. Ben biraz daha böyle leksiklere falan da girdim. Makale üzerinde. Oradan biraz çıkamadım açıkçası.
+
+423
+01:20:09,395 --> 01:20:33,796
+Ellerine sağlık. Çok teşekkür ediyorum. Var mı [öğrenci]'a sorumuz arkadaşlar? Tamamdır. Kim devam etmek ister? Biz devam edebiliriz hocam. Tamamdır. [öğrenci] ve biz derken kim var? [öğrenci]. Tamamdır. Biz rezerv edebilir miyiz hocam? Ne yapabilir miyiz? Ardından seni rezerv edebiliriz. Tamam.
+
+424
+01:20:35,060 --> 01:20:36,060
+Teşekkür ederim.
+
+425
+01:20:36,060 --> 01:20:38,060
+Ben bir şey sorabilir miyim?
+
+426
+01:20:38,060 --> 01:20:41,060
+Tabii, kim konuşuyor bilmiyorum ama buyur.
+
+427
+01:20:41,060 --> 01:20:42,060
+[öğrenci] ismi.
+
+428
+01:20:42,060 --> 01:20:43,060
+Buyurun [öğrenci].
+
+429
+01:20:43,060 --> 01:20:48,060
+Geçen haftaymış bizim sunumuz ama bu hafta sunabilme şansımız var mı acaba?
+
+430
+01:20:48,060 --> 01:20:50,060
+Geçen haftaymış derken?
+
+431
+01:20:50,060 --> 01:20:59,060
+Şöyle şimdi notları ararken online sistemde gördüm de, sırayı gördüm yani ismimiz.
+
+432
+01:20:59,060 --> 01:21:00,060
+Yeni gördüm.
+
+433
+01:21:00,060 --> 01:21:00,300
+Evet.
+
+434
+01:21:00,819 --> 01:21:06,619
+[öğrenci], şöyle yapalım. En sona bir kalın siz. Ondan sonra bakalım, tamam?
+
+435
+01:21:07,119 --> 01:21:07,899
+Teşekkürler.
+
+436
+01:21:07,899 --> 01:21:11,059
+Teşekkürler. Evet. Buyurun arkadaşlar.
+
+437
+01:21:12,979 --> 01:21:16,539
+Merhaba öncelikle. Bizim konumuz Collision Residence Hash Functions.
+
+438
+01:21:21,203 --> 01:21:40,603
+Collision tanımına geçmeden önce, Cryptographic Hedge fonksiyonlarını anlatmak gerekirse, Cryptographic Hedge fonksiyonu değişken size'daki bir inputu, Fixed Size'da yani sabit size'da bir çift diye mapleyen, eşleyen, öyle bir çifti üreten bir fonksiyon aslında.
+
+439
+01:21:41,555 --> 01:21:55,695
+Genellikle günümüzde 128 bit ile 512 bit boyutları arasında bir çıktı üretiyor kürtografik eş fonksiyonları. Bu örnekte de cat.jpg dosyasının işte eşini görüyoruz.
+
+440
+01:21:59,699 --> 01:22:05,699
+Hash fonksiyonları, parametrelerine göre, aldıkları parametrelere göre iki ayrılıyor.
+
+441
+01:22:05,699 --> 01:22:15,699
+Kade ve Unkade olarak. Kade hash fonksiyonlarında biz private key ile beraber çalışıyoruz.
+
+442
+01:22:15,699 --> 01:22:19,699
+Genel alt kategorisi de Message Authentication Codes.
+
+443
+01:22:22,003 --> 01:22:45,263
+Verici arasındaki mesaj doğruluğunu sağlamak için kullanıyor bu hash fonksiyonları. Anket hash fonksiyonları da kriptografik hash fonksiyonları olarak geçiyor. Modification Detection Codes ve Other Application olarak ayrılıyor. Bu Modification Detection Codes ise ikiye ayrılıyor. Bizim inceleyeceğimiz Collision Residence Hash Functions.
+
+444
+01:22:50,868 --> 01:23:12,828
+Devam edebiliriz. Collision açı tanımlamak gerekirse, bir hash fonksiyonu için, yani bir hash değer üreten hash fonksiyonu için, x ve x'i, x üzeri olmak üzere iki farklı girdi değerinin, iki farklı girdi değerinin aynı hash'i üretmesi, Collision olarak tanımlanıyor.
+
+445
+01:23:13,811 --> 01:23:24,492
+Herhangi bir olasınıksal konilom zaman algoritması için kullanılan hash fonksiyonu da bir kollijon bulmak ne kadar mümkün değilse o hash fonksiyonu kollijona o kadar dayanıklıdır diyoruz.
+
+446
+01:23:26,420 --> 01:23:44,640
+Diğer bir ifadeyle, H sonsuz girdi alanına ve sonlu çıktı aralması sahip bir sıkıştırma fonksiyonu. Yani bu nedenle de koloji mutlaka teoride var olmalı. Ama ne kadar kolojine uğrama olasılığı düşükse fonksiyonun o kadar sağlam yani güvenilir bir HH fonksiyonu oluyor.
+
+447
+01:23:48,340 --> 01:24:11,420
+Colingine'a dayanıklı bir hash fonksiyonunun aşağıdaki koşulları sağlaması gerekiyor. Sınırsız uzunluktaki bir hash fonksiyonunu sabit uzunluktaki bir hash output'a dönüştürmesi gerekiyor. Yani değişen input size'ına sabit output miktarına dönüştürmesi gerekiyor.
+
+448
+01:24:12,083 --> 01:24:22,083
+Hash fonksiyonu tek yönlü olmalı. Yanlı One Way olmalı. Bu da ön görüntü yani pre-image ve second pre-image özelliklerini taşımalı.
+
+449
+01:24:22,083 --> 01:24:31,083
+Bir de biraz önce bahsettiğimiz gibi iki farklı input için aynı hash değerini vermemesi gerekiyor.
+
+450
+01:24:37,076 --> 01:24:54,275
+Doğum günü saldırısına göre de bir hash fonksiyonunun 2 üzeri n bölü 2 miktarında collusion olmaması gerekiyor. Collusion olasılığının 2 üzeri n bölü 2'den az olması gerekiyor dayanıklı olması için.
+
+451
+01:24:58,612 --> 01:25:20,852
+Collegiate'nin dayanık değiş fonksiyonları, kriptografide çok önemli bir yer alınıyor. Digital Signature'larda, şifre depolamada, bütünün doğrulamada ve diğer birçok alanda kullanılıyor yaygın olarak. Bu aşağıdaki resimde de gördüğümüz üzere dosyanın yani bir e-mailin doğrulanması, bir attachment'ın doğrulanması gösterilmiş.
+
+452
+01:25:21,876 --> 01:25:34,076
+Yani gönderen kişi bunun eşini alıyor, arkadaşına söylüyor. Sonra da alan kişi de resmin eşini alıp karşılaştırırsa eşitse bu dosyada bir değişiklik olmadığını anlıyor.
+
+453
+01:25:38,131 --> 01:25:48,371
+Collegiate Resistence, Hash fonksiyonlarının özelliklerinden bahsetmiştik. Bunlar Pre-Image Resistence, Second Pre-Image Resistence, Bir de Collegiate Resistence.
+
+454
+01:25:48,371 --> 01:26:02,371
+Pre-Image Resistence'da aslında One-Way fonksiyonları tanımlayan şey bu. Bir hash değerinin inputuna erişememizi, yani x değerine erişememizi anlatalım.
+
+455
+01:26:02,707 --> 01:26:18,067
+Eğişemediğini gösteren bir özellik. Second Frameage Resistance ise, X1 inputu için alınan hash'ten tekrar farklı bir x2'yi bulamamamız.
+
+456
+01:26:18,067 --> 01:26:26,267
+Collision Resistance'da zaten biraz önce bahsetmiştik. Herhangi bir iki farklı inputun aynı hizlerine sahip olmamasını ifade ediyor.
+
+457
+01:26:26,267 --> 01:26:30,267
+Buradan sonra anlat arkadaşım devam edilir.
+
+458
+01:26:37,363 --> 01:26:57,195
+Collegiate Resist'in Hash Function'ların temel tasarım ilgileri. Burada genel olarak Collegiate Resist'in Hash Function'ların, yaygın olarak kullanılan Hash Function'ların iki yapıya sahip olduğu görülüyor. Bunlardan bir tanesi Merkle-Demga. Merkle-Demga yapısı...
+
+459
+01:26:57,332 --> 01:27:06,092
+Bu şekilde oluşuyor. Girdiğinin bloklara bölünmesini ve nihayet değerini oluşturmak için bir sıkıştırma fonksiyonunun iteratif şekilde uygulanmasını içeriyor.
+
+460
+01:27:06,932 --> 01:27:24,332
+Burada mesajlar, alınan mesajı yani girdiği bloklara bölünüyor. Daha sonra hash function'lardan geçirebilerek en son aşamada da istenilen uzunluğa uygun bir şekilde bir çıktı üretiyor.
+
+461
+01:27:27,828 --> 01:27:40,728
+İkincisi ise Sponge Yapısı. Sponge Yapısında da genel olarak hash fonksiyonu verilen bir gir diye
+
+462
+01:27:40,728 --> 01:27:55,328
+function ile geçirerek bir hash üretiyor. Ama bu hash uzunluğu sabit bir boyutta olmuyor. Daha sonra bu
+
+463
+01:27:55,636 --> 01:28:04,936
+İkinci aşamada istenilen boyuta geçirilmek için sıkıştırılıyor.
+
+464
+01:28:07,936 --> 01:28:12,436
+Pojuni yazısının, Hash Function'ların burada karşılaştırılması verilmiş.
+
+465
+01:28:12,436 --> 01:28:18,936
+Burada genel olarak en çok yaygın olarak kullanılan MDV...
+
+466
+01:28:20,627 --> 01:28:32,627
+Mesaj Digestlerimiz, MD4Web5 daha sonrasında SecureHash Algoritm 1, 2 ve 3. algoritma geliştiriliyor.
+
+467
+01:28:38,676 --> 01:28:50,275
+Şimdi, MD5 demiş Mesajcı Digest 5, 1992 yılında yayınlanıyor. 128 bitlik bir hash fonksiyonu algoritmasıdır.
+
+468
+01:28:50,275 --> 01:29:04,275
+Girdi olarak verilen veriyi, Merkle-Demgard yapısına uygun bir şekilde 128 bitlik bir hash'e dönüştürüyor.
+
+469
+01:29:04,564 --> 01:29:27,064
+Burada MD5 genel olarak güvenlik açısından zayıf olduğu kanıtlanmıştır. İnternette bazı örnekleri de mevcut. Farklı verilen ikiye girdiğinin aynı işi ürettiği görülmüştür.
+
+470
+01:29:29,043 --> 01:29:46,824
+Daha sonra MD5'dan sonra SecureHash 1 üretiliyor. Bu algoritma 160 bitki bir hash değeri üretiyor. Bu da yine aynı şekilde Merkle Denwert yapısında uygun bir şekilde hash üretiyor.
+
+471
+01:29:56,815 --> 01:30:22,315
+Aynı hack'i üreten farklı dosyalar ve farklı veriler olduğu görülüyor. Ve güvenlik açısından zayıf olduğu kabul ediliyor. Daha sonrasında SecureAge Algoritma Tool geliştiriliyor. Bu da Ulusal Güvenlik Açı tarafından geliştiriliyor ve daha sonrasında da Ulusal Sanat Enstitüsü tarafından da yayınlanıyor.
+
+472
+01:30:24,659 --> 01:30:39,659
+Burada ise iki farklı şekilde alınıyor. Bu 256 ve 512 çıktı üretebiliyor. Bu da yine diğer birinci algoritma gibi.
+
+473
+01:30:39,659 --> 01:30:50,659
+Merkle-Demgardt'in kapısını kullanıyor. Daha sonra tabii bu algoritmada henüz bir korijina rastlanmıyor.
+
+474
+01:30:51,231 --> 01:31:16,771
+Teorik olarak rastlanabileceği öngörülüyor. Ve daha sonra daha geliştirilmiş bir algoritma için Ulusal Sanat Ayet Üniversitesi tarafından bir yarışma yapılıyor. Bu yarışma sonucunda da belirlenece olan algoritma Secure-Altim Tree olarak geçecek.
+
+475
+01:31:17,587 --> 01:31:42,587
+Bu şekilde adlandırılıyor. Burada da en güvenli olan algoritma olarak Ketçak algoritması kabul ediliyor. Bu algoritma ise diğer önceki algoritmalara benzemiyor. Yani Merkle Demgard yerine Spongebus'unu kullanıyor. Burada da verilen mesaj...
+
+476
+01:31:44,979 --> 01:31:55,659
+Bir şey, Sponj yapısından geçirilip çeşitli diğer farklı bit sayılarına göre hash üretiliyor.
+
+477
+01:31:59,019 --> 01:32:08,499
+Yani genel olarak özetlemek gerekirse, tabi bu algoritmalar en temelinde Message Digest 4'dan geliyor.
+
+478
+01:32:09,332 --> 01:32:29,351
+Burada ilk iki algoritma, bahsettiğimiz algoritmalar Polygen'e rastlanıyor. Hatta Secure Edge Algoritma 1'da Google'ın bir araştırması da mevcut. İki farklı PDF'in aynı eş ürettiği kanıtlanıyor.
+
+479
+01:32:35,231 --> 01:32:51,711
+TREE deniştiriliyor. Burada genel olarak tarihsel bu şekilde. Bir de bu hash fun fonksiyonlarının hız karşılaştırması var burada da.
+
+480
+01:33:02,036 --> 01:33:04,036
+İki ve üçüncü alı.
+
+481
+01:33:09,203 --> 01:33:11,203
+Bu şekilde teşekkür ederim.
+
+482
+01:33:14,203 --> 01:33:16,203
+Teşekkür ederim.
+
+483
+01:33:16,203 --> 01:33:18,203
+Biz teşekkür ederiz hocam.
+
+484
+01:33:18,203 --> 01:33:22,203
+Merhaba [öğrenci] ve [öğrenci]. Var mı arkadaşlar sorunuz?
+
+485
+01:33:26,195 --> 01:33:52,576
+[kişisel bilgi]
+
+486
+01:33:53,427 --> 01:33:56,987
+Öncelikle ben başlayacağım. Sonrasında [öğrenci]'a sözü vereceğim.
+
+487
+01:33:57,287 --> 01:33:57,887
+Tamamdır.
+
+488
+01:34:02,676 --> 01:34:04,115
+Ekranı görebiliyor musunuz?
+
+489
+01:34:05,815 --> 01:34:06,895
+Evet, ekranı görebiliyorum.
+
+490
+01:34:08,355 --> 01:34:15,016
+Bizim konumuz, hash fonksiyonlarının ataklara karşı dayanıklıklarını karşılaştırmak idi.
+
+491
+01:34:15,859 --> 01:34:34,039
+Sunumunuzun işleyişi öncelikle hash fonksiyonu ne olduğundan, hash fonksiyonun özelliklerinden ve birkaç hash fonksiyonu örneklerinden daha sonrasında ise bu belirttiğimiz hash fonksiyonlarının saldırılara karşı okuduğumuz makalelerdeki dayanıklılık karşılaştırmalarını paylaşacağız.
+
+492
+01:34:35,572 --> 01:34:51,092
+Öncelikle olarak hash fonksiyonu nedir olarak gelirsek, birçok arkadaş bahsetti biliyorum, böyle sıkıcı da oluyor ama, hash fonksiyonu farklı uzunluktaki inputları alıp sabit bir çifti üreten bir takım matematiksel işlemleri içeren bir fonksiyondur.
+
+493
+01:34:51,092 --> 01:34:55,552
+Ve hash fonksiyonu günümüzde birçok uygulama alanı var.
+
+494
+01:34:58,036 --> 01:35:15,036
+En yaygın olarak mesela işte passwordlerimizin database'de kaydedilmesi ya da işte bir dosyanın uzun içerisinde bir değişiklik yapılıp yapılmadığını kontrol etmek ya da işte elektronik imza günümüzde ya da arkadaşların sunumunu yaptığı gibi blockchain teknolojisinde artık kullanılıyor.
+
+495
+01:35:15,036 --> 01:35:25,536
+Ve bu gibi kritik alanlarda kullanıldığı için bizim hash fonksiyonlarından beklediğimiz birkaç temel özellik ve iyi hash fonksiyonu da kötü hash fonksiyon olarak.
+
+496
+01:35:26,036 --> 01:35:40,515
+Bu konuda nitelendirdiğimiz bazı ayrımlar mevcut. Bunların birinci olarak kollijin geliyor. Kollijin nedir? Kollijin iki farklı değişken için aynı değeri üretmemesini bekliyoruz.
+
+497
+01:35:40,515 --> 01:35:51,475
+Ya da bu aslında bir önceki sunumda da arkadaşımızın bahsettiği gibi. Teorik olarak pek mümkün değil. Çünkü girdiğimiz sonsuz bir uzay, çıktığımız sonlu bir uzay.
+
+498
+01:35:54,100 --> 01:35:59,220
+Öyle olunca ister istemez bir kollijin oluyor ama olabildiğince bunu minimize etmek durumundayız.
+
+499
+01:35:59,680 --> 01:36:04,240
+Buna en çok örnek verilen de yine bir önceki arkadaşlarımız da bahsetti.
+
+500
+01:36:04,240 --> 01:36:07,240
+Doğum günü paradoksu. Mesela şu anda...
+
+501
+01:36:07,503 --> 01:36:35,503
+Yaklaşık 20 kişiyiz. 23 kişinin doğum günlerinin ortak olma olasılığı %50. Bu çok büyük bir rakam. 40-50 kişiyi bulunca 2 kişinin doğum gününün aynı olma olasılığı %90'ın üzerine çıkıyor. Bu da bize hash fonksiyonlarında da benzer bir durum. İki farklı girdinin aynı hash sonucunu üretmemesini bekliyoruz biz bir hash fonksiyonundan. Ya da olabildiğince bunun az olduğunu.
+
+502
+01:36:35,503 --> 01:36:48,063
+Pre-image ataklarda ise bizim ürettiğimiz bir hash değerinin tersine olarak asıl değeri.
+
+503
+01:36:48,463 --> 01:37:07,303
+Bu konuyu elde edemememiz gerekiyor ya da saldırganların bunu elde edememesi gerekiyor. Bir hash fonksiyondan beklediğimiz ikinci temel özellik olarak da bunu söyleyebiliriz. Ürettiğimiz bir hash değer var ama biz hangi değerin hash'in olduğunu bunu saldırganların bir şekilde elde edememesi ya da bunun zor olması gerekiyor.
+
+504
+01:37:07,303 --> 01:37:16,203
+Yani derste de sizin belirttiğiniz üzere bunun tek yönde, hash fonksiyonu tek yönde olması gerekiyor. Bizim bir kendi binary değerimizden.
+
+505
+01:37:16,463 --> 01:37:21,423
+Bir hash değerine dönüşümüz olabildiğince kolay, hızlı, optimize olması gerekiyor.
+
+506
+01:37:21,423 --> 01:37:28,283
+Ama tam tersine hash değerinden de bu asıl değerimizi elde etmemizden olabildiğince zor olması gerekiyor.
+
+507
+01:37:30,223 --> 01:37:37,203
+Second Premage Attack da yine Collision ile Premage Attack'ın aslında birleşimi gibi bir şey.
+
+508
+01:37:39,764 --> 01:37:47,084
+Aynı hash değerini veren iki farklı değişkenin bulunmamasının zor olması gerekiyor.
+
+509
+01:37:47,744 --> 01:37:58,164
+Bir değişkenin, iki farklı değişkenin aynı değişkenin vermesinin korelojin olduğunu söyledik ama o ikinci farklı değişkenin ne olduğunu da bulamamamızın zor olması gerekiyor.
+
+510
+01:37:58,164 --> 01:38:01,744
+Bir hash fonksiyonu, iyi bir hash fonksiyonundan beklediğimiz şeylerden bir tanesi de bu.
+
+511
+01:38:02,996 --> 01:38:13,296
+Sonrasında okuduğumuz makalelerde de sıklıkla kullanılan ki günümüzde de MD5, MD5, SHA1, SHA2 ve SHA3 fonksiyonlarından kısaca bahsetmek istiyorum.
+
+512
+01:38:16,560 --> 01:38:29,980
+93 yılında Ron Rivas tarafından, bir MIT profesörü tarafından MD4'un yerine geliştirilen ama şu anda günümüzde artık geçerliliği kalmayan, güvende olarak görülmeyen bir hash fonksiyonu.
+
+513
+01:38:29,980 --> 01:38:42,079
+Ama internetin ilk çıktığı zamanlarda o zamanın ihtiyaçlarını karşıladığı için sıklıkla kullanılmış, yaygın olarak kullanılan ama dediğim gibi günümüzde artık kullanılmayan bir hash fonksiyonu.
+
+514
+01:38:44,560 --> 01:39:01,860
+Çıktı olarak işliyor. 128 bit aslında az, yani araştırmalar sonucu bir hash fonksiyonu minimum 160 bit olarak, yani güvenli bir hash fonksiyonu üretmek istiyorsak, yani güvenli bir sonuç adetmek istiyorsak, bunun 160 bit ve daha fazla olması gerektiği söyleniyor.
+
+515
+01:39:01,860 --> 01:39:10,640
+O zaman ilk çıkan hash fonksiyonlarından bir tanesi olduğu için 128 bit artık günümüzde pek güvenli olarak sayılmıyor.
+
+516
+01:39:11,380 --> 01:39:26,460
+Giriş mesajı olarak 512 bitlik blok parçalarını ayırıyor. 16 tane 32 bitlik kelimeler halinde. Bu 512 bite eğer tamamlamıyorsa işte bir sonraki bite bir ekleyip sonrasını sıfırla dolduruyor.
+
+517
+01:39:29,427 --> 01:39:34,847
+Temel olarak bu 16 tur olarak, MD5'de 16 tur oluyor.
+
+518
+01:39:35,568 --> 01:39:46,868
+Turda da bu görselde gördüğünüz üzere ABC'de girdileri olarak, 32 bit girdilerin, işte DC, B'nin bir fonksiyona giriyor.
+
+519
+01:39:46,868 --> 01:39:51,028
+O fonksiyonlar da aşağıda, slide'ın aşağısında belirtildiği gibi.
+
+520
+01:39:51,648 --> 01:39:53,927
+Her seferinde farklı fonksiyonlar kullanılıyor.
+
+521
+01:39:54,307 --> 01:39:56,387
+Sonrasında A değeriyle egzorlanıyor.
+
+522
+01:39:57,427 --> 01:40:05,648
+Bir emi değerimiz var. Bu asıl datanın içerisindeki olan bir kısımla. Sonrasında bir kalsabit değeri var.
+
+523
+01:40:05,648 --> 01:40:13,648
+Bu şekilde 16 tur ilerliyor ve en sonunda 128 bittik bir sonuç üreten bir hash fonksiyonu.
+
+524
+01:40:15,315 --> 01:40:31,355
+Sonrasında MD5 ile beraber 95 yılında Secure Hash Algoritm 1 adıyla çıkan, aslında Secure Hash Algoritm 0 daha öncesinde çıkmış, onun üzerine ufak bir düzenleme yapılarak yaygın olarak kullanılan.
+
+525
+01:40:32,851 --> 01:40:57,091
+bir fonksiyon. National Security Agency tarafından geliştirilen bir hash fonksiyonu. Bu da artık günümüzde güvenliğini ya da geçerliliğini kaybetmiş hash fonksiyonlarından bir tanesi. MD5'dan farklı olarak MD5 128 bitlik bir geri dönüş değeri dönerken bu 160 bit bir özet değeri üretiyor.
+
+526
+01:41:00,212 --> 01:41:21,551
+Burada kısaca şekilde görüldüğü gibi ABC'de gibi 32 bittik 5 tane değişkenin bir fonksiyona girerek sola kaydırmayla, her işlem için bu VT ve KT değerlerini ekleyerek farklı farklı sonuçlar elde ediyor.
+
+527
+01:41:23,188 --> 01:41:35,728
+Toplamda kaç defa döndüğünü buraya yazmamışız. 40 basamaklı 16'lık bir sayı üretiyor. Az önce belirttiğim gibi ŞA1 artık güvenli bir algoritma olarak düşünülmüyor.
+
+528
+01:41:35,728 --> 01:41:49,407
+Kript analistlerinin 2005'te yaptığı bir saldırıyla ŞA1'in devam eden kullanım için yeterince güvenli olmadığı ispatlanıyor. Bu yüzden de 2010'dan beri ŞA1 yerine daha güvenli olan ŞA2 ve ŞA3 öneriliyor.
+
+529
+01:41:51,188 --> 01:42:00,027
+İlleyde Microsoft, Google, Apple ve Mozilla SSL sertifikalarında ŞA1 desteğini çekeceklerini açıkladığını burada belirtmek gerekiyor.
+
+530
+01:42:01,487 --> 01:42:10,427
+Günümüzde şu anda güvenli olarak kabul edilen ŞA2 hash fonksiyonundan aslında bu bir dizi hash fonksiyonu, bir set olarak söyleyebiliriz.
+
+531
+01:42:10,427 --> 01:42:18,447
+Çünkü bunda spesifik olarak ŞA1'de gördüğümüz gibi 160 bitlik ya da MD5'de gördüğümüz gibi 128 bitlik bir çıktı yok.
+
+532
+01:42:19,188 --> 01:42:35,688
+Şa 2 denildiğinde genellikle Şa 256 en yaygın olarak kullanılan o. Ama 256'nin yanı sıra 384 ve 512 bittik olan Şa 256, Şa 384, Şa 512 olarak da biliniyor bu.
+
+533
+01:42:40,756 --> 01:42:50,656
+Yeni sürümler zayıf yönlerini paylaşmadan Şabirinki ile aynı yapı modüler aritmetik ve mantıksal ikili işlemler benzerliğini taşıyor.
+
+534
+01:42:51,936 --> 01:42:57,536
+ŞA256 ve 512 algoritmaları 64 bit işlemcileri için tasarlanıyor.
+
+535
+01:42:58,068 --> 01:43:09,048
+ŞA256'nın 8 adet 32 bit kelime üzerinde, ŞA512'nin ise 8 adet 64 bit üzerinde çalışması farkıyla aynı temel tasarımı taşıyorlar.
+
+536
+01:43:11,748 --> 01:43:15,508
+384-512'nin küçük bir modifikasyonu olduğunu söyleyebiliriz.
+
+537
+01:43:17,971 --> 01:43:39,911
+ŞAH-2 hakkında benim ekleyeceğim başka bir şey yok. Şu anda günümüzde kullanılan, güvenli olarak kabul edilen algoritmalarından bir tanesi. Bunun sonrasında sözü [öğrenci]'a devredeceğim. Ben ŞAH-3 ve bu bahsettiğim algoritmaların dayanıkları ve okuduğumuz makalelerdeki sonuçları ve karşılaştırmaları hakkında bize bilgi verecek.
+
+538
+01:43:41,491 --> 01:43:42,751
+Tamamdır, teşekkürler.
+
+539
+01:43:44,948 --> 01:43:47,888
+Ben hemen PowerPoint'i açıyorum.
+
+540
+01:43:48,659 --> 01:43:50,960
+Ekranım geliyor mu? Evet, görüyoruz.
+
+541
+01:43:51,300 --> 01:44:01,500
+Tamam. Ben Şah 3'den devam edeyim. Şah 2'nin de belirli başlı problemleri olduğu gözlendikten sonra bir yarışma düzenleniyor daha fazla geliştirmek adına.
+
+542
+01:44:02,159 --> 01:44:14,579
+Yarışmada 5 tane finalist oluyor ve bu finalistler içerisinde her birinin farklı öne çıkan özellikleri oluyor ama literatür tarandığında Ketçak'ın daha fazla öne çıktığını görüyoruz.
+
+543
+01:44:16,659 --> 01:44:34,119
+Bu yüzden burada şarjda değinebileceğim önemli noktalar, Sponge ve Squeeze dediğimiz bu yapıların, verilerin bir kısmı rastgele bir şekilde.
+
+544
+01:44:34,996 --> 01:44:44,576
+Fonksiyonlardan geçiriliyor. Diğer kısmı aynı olduğu şekilde devam ediliyor. Bu şekilde rastgele sonuçlar elde edilebiliyor çıktılarda.
+
+545
+01:44:45,779 --> 01:45:06,939
+Şimdi saldırılara karşı algoritmaların sonuçlarına değineceğiz. Literatür taradığımız zaman aslında iki farklı durumu gözlemledik. Birincisi, matematiksel olarak hesaplandığında bu fonksiyonların ne kadar dayanabildiği, kaç bit değişiminden sonra koruyucunlar oluşmaya başladığını sunan makaller var.
+
+546
+01:45:08,787 --> 01:45:16,028
+Algoritmayı inceleyerek daha hızlı bir şekilde kollijin yaratabilmek için yapılan çalışmalar tespit ettik.
+
+547
+01:45:16,507 --> 01:45:24,228
+Şimdi ilk başta genel bir ifadeyle bu tabloda ben kollijinlara ne kadar dayanabildiklerini göstereceğim size.
+
+548
+01:45:24,807 --> 01:45:29,947
+Genel anlamda bilgileri output size, internal state size gibi bilgileri var burada.
+
+549
+01:45:29,947 --> 01:45:36,728
+Ama bizim ilgilendiğimiz kısım en sağdaki security strength in bits dediğimiz güvenli bit sayıları.
+
+550
+01:45:36,787 --> 01:45:43,188
+Burada güvenli bit sayısı, örneğin Şabir için 80'den daha küçük dediği kısım, 2 üzeri 80.
+
+551
+01:45:44,404 --> 01:46:02,104
+Adından sonra problemler başlamaya başlıyor. Yani çakışmalar oluşmaya başlıyor. 80 bit değişiminden sonrasında kollijenlara rastlanmaya başlanıyor. Burada genel anlamda bütün algoritmaların detaylarından değiniliyor. Tek tek bahsetmeyeceğim çünkü çok uzun sürer bu şekilde.
+
+552
+01:46:12,404 --> 01:46:14,044
+edildiği için çok fazla üstünde durmayacağım.
+
+553
+01:46:15,224 --> 01:46:20,044
+Genel olarak karşılaştırdığımızda da zaten biraz önce [öğrenci] bahsetti.
+
+554
+01:46:20,204 --> 01:46:27,564
+Algoritmaların isimleri RIPM160 dediğimizde MD5 ve MD4'un daha geliştirilmiş bir versiyon
+
+555
+01:46:27,564 --> 01:46:28,624
+olarak ortaya çıkıyor.
+
+556
+01:46:29,524 --> 01:46:36,804
+Yine bahsettiğim gibi burada bazı makalelerde daha hızlı bir şekilde karmaşıklık kullanılarak
+
+557
+01:46:36,804 --> 01:46:39,104
+ataklar yapılabildiği kanıtlanmış.
+
+558
+01:46:39,695 --> 01:46:49,836
+Daha sonrasında Şabir için detaylı olarak incelendiğinde az önce gördüğümüz gibi 2 üzeri 80'de bu...
+
+559
+01:46:49,876 --> 01:47:01,676
+Ataklar yapılabiliyordu ama 2005 yılında yayınlanan bir yayına göre 53 tur sonrasında saldırılar gerçekleşebiliyor ve korreşimler oluşmaya başlıyor.
+
+560
+01:47:02,315 --> 01:47:10,876
+Burada incelendiği zaman en hızlı, en az sayıda turdan sonrasında oluşan ilk paper 2005 yılında yayınlanan.
+
+561
+01:47:11,916 --> 01:47:16,811
+Daha sonrasında Şah 2 için yine aynı şekilde daha hızlı...
+
+562
+01:47:16,979 --> 01:47:22,519
+Turda kompleksitesini de azaltarak saldırılar yapılabildiği ortaya konuyor.
+
+563
+01:47:23,299 --> 01:47:31,500
+Burada farklı versiyonları için, yani girdi, çıktı boyutu farklı bitlerde olan versiyonları için farklı sonuçlar elde ediliyor.
+
+564
+01:47:32,579 --> 01:47:37,719
+Sağ tarafta gördüğünüz şekilde, çok daha kısa şekilde saldırılar gerçekleştirilebiliyor.
+
+565
+01:47:38,719 --> 01:47:39,719
+Şahiş için...
+
+566
+01:47:41,332 --> 01:47:53,792
+Bir pratik olarak, gerçekten incelenip de saldırı yapılan bir makale bulamadım ama teorik olarak yapılan saldırıların kaç güvenli bitten oluştuğunu burada sizlere sunuyorum.
+
+567
+01:47:53,792 --> 01:48:04,212
+Sağ tarafta pre-imaj, ikinci pre-imaj ve pseudo pre-imaj olarak saldırıların ne kadar tur sonrasında gerçekleşebileceğini gösteriyor tabloda.
+
+568
+01:48:05,268 --> 01:48:17,447
+İstatistiksel saldırılar diye geçiyor. Burada istatistiksel saldırı dediğimiz durum şu. Bir girdinin sadece bir bitini değiştirerek çıkta da kaç bit değişimi olduğu gözlemleniyor.
+
+569
+01:48:19,287 --> 01:48:33,268
+Literatürde bu da önemli bir saldırı ve güvenlik açığı oluşturabileceğinden bahsediliyor. Burada BC dediğimiz bitlerin değişim oranları. Yani bir bit, girdide bir bit değiştiğinde çıktı da...
+
+570
+01:48:33,268 --> 01:48:51,447
+Mesela Şabir Fiş için 72 ya da 90 bit aralığında bir değişim oluşuyor. Bunların yüzdeleri belirlendiği zaman baktığı olasılıkları da PC ile gösteriliyor. Burada önemli olan kısım dördüncü kolondaki RC yani standart sapmaları kontrol ediliyor bu değişimlerin.
+
+571
+01:48:51,891 --> 01:49:11,891
+Delta BC ve Delta RC'leri incelendiğinde SHA-1 ve SHA-256'in çok az değişimi olduğunu gösteriliyor. Burada değişimin az olması bize nasıl bir çıktı elde edilebildiğinin daha zorlaştırabildiğini gösteriyor. O yüzden Deltası daha önemli.
+
+572
+01:49:16,064 --> 01:49:29,884
+Mesaj boyutu ne kadar arttırılırsa güvenli bit sayısının değişimi gösteriliyor. Şağ 160, Şağ 256, Şağ 512 ve Şağ 224 için nasıl değişimler gözlemlendiği gösteriliyor.
+
+573
+01:49:30,204 --> 01:49:32,924
+Buradaki sol taraftaki sayılar güvenli bitleri gösteriyor.
+
+574
+01:49:34,304 --> 01:49:37,024
+En sonunda değinmek istediğim nokta...
+
+575
+01:49:38,015 --> 01:49:58,395
+Bu algoritmaların eksi yanlarına ve ataklara karşı dirençsiz olan kısımların ne zaman dirençsiz olduklarını anlattık ama 2022 yılında yapılan bir çalışmayla da bunlara alternatif olarak neler sunulmuş, güvenli olarak hangi algoritmalar kullanılabilir onları gösterdiğim bir görsel sunuyorum sizlere.
+
+576
+01:50:00,000 --> 01:50:08,300
+MD5'ın geliştirilmesi 2018'de yeniden bir makalede yayınlanmış ve bunun tercih edilmesinin daha faydalı olduğundan bahsediliyor.
+
+577
+01:50:08,819 --> 01:50:16,899
+Dediğim gibi burada algoritmalar ve çeşitli makalelerle hangilerinin kullanılabileceğinin daha güvenli olduğundan bahsediliyor.
+
+578
+01:50:17,979 --> 01:50:21,939
+Kaynakçımız bu şekilde. Bizi dinleyiniz için teşekkür ederiz.
+
+579
+01:50:24,179 --> 01:50:25,679
+Teşekkürler arkadaşlar.
+
+580
+01:50:27,220 --> 01:50:40,760
+Evet, var mıdır [öğrenci]'e? Soru sormak isteyen? Yok. Bunu da adeten soruyorum ama hiç cevap alamadım şimdiye kadar. Evet, kim devam etmek ister? Çok teşekkür ederim arkadaşlar ikinize de.
+
+581
+01:50:45,108 --> 01:50:47,108
+Kalmadı mı kimse yapmak isteyen? Kim devam ettiriyor?
+
+582
+01:50:47,108 --> 01:50:47,868
+Umarım hocam.
+
+583
+01:50:48,188 --> 01:50:51,328
+Evet. Tamam da [öğrenci]. Buyur.
+
+584
+01:50:53,608 --> 01:51:00,088
+Biz biraz bugün kollijin aldık ama Perceptualishing sunulmuştu. Umarım sıkmam kimseyi.
+
+585
+01:51:00,708 --> 01:51:05,228
+Senin kollijin çok büyük bir kollijin değil. Collijin resistant olanlar kollijin oldular.
+
+586
+01:51:06,427 --> 01:51:09,887
+Sen hala de kim uzunmasın. Evet, başlayabilirsin. Buyur.
+
+587
+01:51:10,836 --> 01:51:13,756
+Tamam hocam. Şu an görünüyor değil mi ekranı?
+
+588
+01:51:13,996 --> 01:51:15,235
+Aa, sana görüyoruz evet.
+
+589
+01:51:17,376 --> 01:51:27,016
+Merhabalar, benim konu Perception Hashing'ti. Ben biraz aslında diğer arkadaşlara göre giriş seviyesi gibi kalacağım ama umarım sıkılmazsınız.
+
+590
+01:51:27,988 --> 01:51:43,988
+Öncelikle genel olarak hash mantığını zaten birçok arkadaşımız anlatmıştı. Bir girdiği verimiz vardı ve bu mesaj veya plain text'i bir algoritma ile hash fonksiyonumuza veriyoruz ve sonucunda bir hash değeri elde ediyoruz.
+
+591
+01:51:45,779 --> 01:51:52,539
+Bu teknolojik gelişmelerin de dijital dünyaya yansımaları 90'lı yıllarda yaygınlaşmaya başlıyor.
+
+592
+01:51:52,999 --> 01:51:58,139
+Sonrasında bu hashleme işlemlerinin input image'lerini uygulamaya başlıyorlar.
+
+593
+01:51:58,779 --> 01:52:04,139
+Terimsel olarak baktığımızda o zamanlar perception, shink aslında çok bahsedilmiyor ama...
+
+594
+01:52:04,884 --> 01:52:10,963
+Bu yaklaşımın temelini oluşturan matematiksel ifadelerin o yıllarda ortaya çıktığına rastlıyoruz.
+
+595
+01:52:11,784 --> 01:52:22,484
+Sonrasında bu dijital dünyayla birlikte bu verilerin saklanması, korunması, telif hakkı ve dijital parmak izi gibi konulardan bahsedilmeye başlanıyor.
+
+596
+01:52:22,996 --> 01:52:33,976
+Temelde de en basit bir şekilde bu hash fonksiyonuna input image'i soktuğumuzda, burada bizim tabii bir matrisimiz var, inputtan elde ettiğimiz bir image eşini elde ediyoruz.
+
+597
+01:52:33,976 --> 01:52:48,476
+Ama aslında tabii ki perceptual eşing mantığı bu değil. Perceptual eşing mantığımızdaki hedef de, bir de olarak verilen farklı resimler, çıktığı olarak da benzer özet değerini oluşturması isteniyor.
+
+598
+01:52:50,996 --> 01:53:07,996
+Dalgasal olarak benzer resimler olmasını istiyoruz. Yani insan gözüyle bir resme baktığımızda mesela birinin renkli, birinin grey olmasını gördüğümüz zaman bir resminin içerisinde aynı objeler varsa biz oradaki objeleri algılıyoruz.
+
+599
+01:53:07,996 --> 01:53:15,176
+Aslında bizim buradaki önemli olmayan şeyimiz renkler oluyor. Bunu matematiksel bir modele dönüştürmeye çalışıyor.
+
+600
+01:53:16,787 --> 01:53:29,787
+Şurada resim üzerinden aslında göstertsem daha iyi olacak. Burada gördüğümüz bir resim var ve bu resmin yanında üç tane daha farklı ölçeklerde, kontrastlarda, farklı şeyde...
+
+601
+01:53:30,899 --> 01:53:56,699
+Renk olarak da farklılar. Bunların dördünü bir sisteme verdiğimizi düşünelim ve eş algoritmasından geçirelim. Aslında bunu kriptografik olarak düşündüğümüzde resimdeki en ufak bir değişim çıktığıya büyük bir şekilde yansıyacaktır. Ama burada Perception Eşing mantığında biz bu dördünü bir sisteme verdiğimiz zaman çıktı olarak bu eşlerin belli bir oranda benzer olmasını istiyoruz.
+
+602
+01:53:57,268 --> 01:54:05,268
+Bu resimlere baktığımızda da aslında insan algısıyla düşündüğümüzde bir algısal bütünlük söz konusu.
+
+603
+01:54:05,268 --> 01:54:10,268
+Yani resimdeki bu ufak detaylar bize ifade etmiyor.
+
+604
+01:54:10,268 --> 01:54:15,268
+Yani resimde Galata olduğunu mesela burada hepsinden anlayabiliyoruz gibi düşünebiliriz.
+
+605
+01:54:24,880 --> 01:54:52,720
+olduğu takdirde sabit bir özet elde etmeye çalışıyoruz. Buradaki örnekte de, aslında biraz görsel bir konu olduğu için daha çok örnekler üzerinden gidiyorum. Burada iki farklı renkte aynı resim var, aynı ölçekteler. Burada bazı pre-proses işlemleri yapıyoruz. Algoritmalarda bundan bahsedeceğim. Sonrasında bunların hash değerini hesaplıyoruz ve belli bir eşik değerlerini bağlama göre belirleyerek
+
+606
+01:54:52,880 --> 01:55:01,319
+Bunları bir benzerliğe sokuyoruz ve perceptual olarak similarities'in bir derecesini aslında elde ediyoruz.
+
+607
+01:55:01,699 --> 01:55:07,440
+En sonunda da algısı olarak benzer mi değil mi şeklinde bir özet elde ediyoruz.
+
+608
+01:55:09,140 --> 01:55:19,020
+Burada en basitinden biraz daha görselleştirirsek bir referans imajımız, bir de bizim burada rengi değiştirilmiş, eşitlenmiş test imajımız var.
+
+609
+01:55:19,020 --> 01:55:26,780
+Bunları belli bir proseslerden geçirdikten sonra bizim temelde bir 8x8'lik bir peşimiz var.
+
+610
+01:55:26,780 --> 01:55:33,900
+Tabii normalde biz plaintext ile alışık olduğumuz için bunu göstermek istedim. Bizim çıktığımızda da burada...
+
+611
+01:55:34,047 --> 01:55:41,767
+pi-hlerimizi elde ettiğimiz zaman bu ikisinin benzerliğini hesaplarken farklı distance metrikleri kullanıyoruz.
+
+612
+01:55:41,767 --> 01:55:53,767
+Mesela burada having distance kullanarak buradaki bitler arasındaki benzerlik kaç tane ise, mesela burada 9 demiş, bunun bir uzaklığını hesaplamış oluyoruz.
+
+613
+01:55:56,447 --> 01:55:57,767
+Burada genel olarak bir...
+
+614
+01:55:58,323 --> 01:56:18,643
+Az önceki olayı tanımlaman gerekirse karşılaştırmada. Şimdi bizim iki tane I1 ve I2 verimiz var. Bir de bir perceptual hash function'umuz var. Bu fonksiyonun içerisine iki image'in verisini veriyoruz ve hash'ini hesapladığımızda H1 ve H2 bizim hash değerlerimiz oluyor.
+
+615
+01:56:18,643 --> 01:56:24,983
+Bu distance fonksiyonunu, yani distance metriyeni kullanarak bu hash1 ve hash2'nin benzerliğini hesaplıyoruz.
+
+616
+01:56:26,323 --> 01:56:40,203
+Eğer ikisi aynıysa biz bunları algısal olarak aynı diyoruz. Eğer belli bir benzerlik eşiği belirlendiğinde bu benzerlik eşiğinin içerisinde kalma olasılığını hesaplıyoruz.
+
+617
+01:56:40,688 --> 01:57:07,347
+Bir de ondan büyük olma olasılığını hesaplıyoruz. Bunlar, buradaki de Sigma 1 ve Sigma 2 de imajların benzerliğiyle ilgili bir threshold'tu. Bunların belirlenmesiyle ilgili çok daha fazla çalışmalar vardı. Kontekste ama özet olarak kontekste bağlı olarak seçildiğini söyleyebilirim. Burada da algısı olarak benzer veya algısı olarak benzer değil şeklinde bir sonuca ulaşıyoruz.
+
+618
+01:57:08,148 --> 01:57:25,108
+Tabi burada perceptual hashingin özelliklerinden de kısaca bahsetmem gerekirse, bizim ilk olarak akla gelen özelliğimiz perceptual hashing fonksiyonlarımız düşük kollision ihtimaline sahip olmalıdır.
+
+619
+01:57:25,108 --> 01:57:32,228
+Yani her farklı algısal veri için farklı hashing üretebilmeli ama bunların çakışma olasılığı düşük olmalı.
+
+620
+01:57:32,500 --> 01:57:51,059
+Bir kompaktlıktan söz etmemiz gerekir. Input boyutu ne olursa olsun, biz çıktı olarak sabit uzunlukta bir hash değeri üretmek isteriz. Bu özellikle de işte büyük görüntü veri tabanlarında arama yaparken verimli bir indeksleme konusunda fayda sağlar.
+
+621
+01:57:52,528 --> 01:58:03,528
+Bir de gerçek zamanlı ve tabii ki büyük ölçekli veri tabanlarında çalışırken bu inputları da efektif bir şekilde, efektif bir zaman verimliliğinde hesaplayabilmemiz gerekir.
+
+622
+01:58:05,528 --> 01:58:16,427
+Ve de kriptografik hash fonksiyonlarındaki açığı etkisi olayına karşı bu Perception Hash'teki anlamsal değişikliklere duyarlılık.
+
+623
+01:58:16,851 --> 01:58:26,331
+Bu meselesi, yani burada anlamsal değişikliklere duyarlılığı aslında az olmalı bizim bu fonksiyonumuzun. Yani çığ etkisi olmamalı.
+
+624
+01:58:27,891 --> 01:58:34,751
+Ayrıca algısal olarak da farklı veriler için önemli derecede farklı hash değeri üretebilmeli.
+
+625
+01:58:35,731 --> 01:58:54,372
+Algısal bütünlüğü koruduğu sürece de bu varyasyonlara karşı dayanıklı olmalı. Yani hash değeri önemli derecede değişmemeli algısal bütünlük koruduğu sürece. Algısal bütünlük değişiyorsa da önemli derecede bu hash değerini ayırt edebilmesi, değiştirebilmesi gerekiyor.
+
+626
+01:58:58,931 --> 01:59:07,591
+Algısa özetlemenin kullanım alanlarına bakacak olursak, çok çok büyük oranda görüntü üzerinde ben çalışmalar gördüm.
+
+627
+01:59:07,951 --> 01:59:12,911
+Ve içerik tanınımı ve tehlif hakkı korunması olaylarında sıkça kullanılıyor.
+
+628
+01:59:13,011 --> 01:59:20,131
+Bu içeriklerin özgün olup olmadığı, içeriklerin kopyalanması veya değiştirilip değiştirilmemiş durumlarını tespit edilmesinde kullanılıyor.
+
+629
+01:59:20,131 --> 01:59:25,131
+Bu adli görüntü analizinde de, bu dijital adli incelemelerde görüntünün...
+
+630
+01:59:26,515 --> 01:59:43,315
+Oynama olup olmadığıyla ilgili konularda sıkça kullanılıyor. Büyük görüntü veritabanlarında da, bu yenilenen görüntüyü algılarken, bir görüntünün heşini verip büyük bir veritabanında ararken bunların benzerliği konularında da kullanılıyor.
+
+631
+01:59:46,771 --> 02:00:02,851
+Burada şöyle bir toparlamam gerekirse, ilk başta bizim bir image'lerimiz var ve bunları görüntü verisi olduğu için hepsini belli bir standarta sokmak için bazen resizing yapabiliyoruz veya daha kolay işlemler yapmak için farklı filtralar uygulayabiliyoruz.
+
+632
+02:00:06,463 --> 02:00:34,463
+Aslında özelliklerini çıkarmamız gerekiyor. Biz bu resimden neyi bulmayı amaçlıyorsak bir özellik çıkarma işlemimiz var. Buradan sonra da hash fonksiyonu, hash değerini üretmiş oluyor. Bizim bunu karşılaştırmak istediğimiz sorgu yaparken mesela referans eşimizle bunun bir karar mekanizmasında farklı distance metriklerini kullanarak perceptual olarak benziyor mu benzemiyor mu sonuçta.
+
+633
+02:00:34,463 --> 02:00:57,863
+Şimdi buna varıyoruz. Burada da şu preprocessing steplerini böyle ufaktan bir gözümüzde canlansın diye belirttim. İşte başta orijinal, sonra grayscale'e döndürüyoruz. İşte 32'ye 32'lik bir resize ediyoruz. Mesela burada bir 7-7'lik bir kernel uygulanmış. Buralar tabii biraz görüntü işleme kısmına kayıyor. Çok şey yapmadan burayı geçeyim.
+
+634
+02:00:58,931 --> 02:01:18,131
+Genel olarak da bu altı özet algoritmaları olarak literatüre baktığımızda da matematiksel yöntemler ve derin öğrenmeye dayalı yöntemler göze çarpıyor. Matematiksel yöntemler ve derin öğrenmeye dayalı yöntemlerin aslında temelde çalışma adımları ortak. Çünkü perceptileşince yaklaşım.
+
+635
+02:01:18,452 --> 02:01:46,452
+Burada da bu yaklaşımı işte dört adımda böyle bir temel çalışma adımlarını anlatmaya çalışayım. İlk olarak bizim bu girdi olarak verilen medya öğemizden bu anlamlı özellikleri çıkarmaya çalışıyoruz. Yani bu özellikler verinin algısı olarak benzersizliğini belirlemeli. Bir görüntüden mesela biz doku veya kenar da farklı bir objeye yakalamaya çalışıyoruzdur. Bunun gibi özellikleri yakalayan...
+
+636
+02:01:46,452 --> 02:01:53,271
+Özellik çıkarıma yapmamız gerekiyor. Sonrasında bu özelliklerin ne şekilde temsil edileceğini buluyoruz.
+
+637
+02:01:53,692 --> 02:02:01,771
+Mesela genelde az önce gördüğümüz gibi boyutunun indirgenmesi veya gri seviyeye dönüştürmesi gibi görüntü teknikleri uygulanıyor.
+
+638
+02:02:02,371 --> 02:02:10,952
+Sonrasında özet fonksiyonunu uyguluyoruz. Sonuçta biz bu temsili belirledikten sonra elimizde nümeriklerler var ve bunları bir özet fonksiyonundan geçiriyoruz.
+
+639
+02:02:11,380 --> 02:02:24,320
+Sonrasında da bu imeje özgü bir perceptual hash değerini elde ederek benzerlik ve farklılıkları ayırt etmeyi sağlıyoruz.
+
+640
+02:02:24,920 --> 02:02:31,740
+Bu karşılaştırmada da bu özet değerlerini farklı mesafelerle hesaplıyoruz.
+
+641
+02:02:32,060 --> 02:02:36,060
+Ve algısı olarak benzer mi, değil mi sonucuna buradan ulaşabiliyoruz.
+
+642
+02:02:37,908 --> 02:02:47,588
+Burada ufak bir görsel üzerinden de bakacak olursak, mesela burada basitleştirilmiş bir perceptileş fonksiyonundan geçirme işlemi mevcut.
+
+643
+02:02:47,588 --> 02:03:02,588
+Burada ilk başta orijinal input imajımızı alıyoruz ve bunu grayscale'e dönüştürüyoruz. Sonra burada beşe beşlik bir şey yapmış, bloklara bölmüş ve bunların...
+
+644
+02:03:03,572 --> 02:03:12,891
+Hepsinin ortalamasını almış. Sonrasında blok bazında ortalama alıyor ve resmin genel ortalamasıyla blok bazında bunları karşılaştırıyor.
+
+645
+02:03:14,868 --> 02:03:23,408
+blok bazıyla ortalamayı karşılaştırınca, eğer ortalamadan büyükse buraya bir yazıyor, değilse sıfır yazıyor.
+
+646
+02:03:23,788 --> 02:03:29,228
+Ve böylece bu piksel değerlerimiz artık bizim hash değerlerimizi oluşturmaya başlıyor.
+
+647
+02:03:29,788 --> 02:03:33,207
+Bunları da satır bazında concatenate ediyoruz.
+
+648
+02:03:33,207 --> 02:03:38,608
+Ve bizim resultumuzda bu şekilde bir hash value ortaya çıkmış oluyor.
+
+649
+02:03:41,876 --> 02:04:09,755
+Bu kullanılan yöntemlerden bahsetmiştik. Aslında matematiksel tabanlı yöntemlerde A-hash, P-hash, D-hash, V-hash gibi farklı algoritmalar var. Ben bu temel algoritmaları bu sunumunda ele alacağım. Ama derin öğrenmeye dayalı yöntemler de son yıllarda sıkça kullanılıyor. Bizim az önce arkadaşların anlattıkları daha güncel çalışmalar, object tracking gibi yerlerde kullanılabiliyor.
+
+650
+02:04:13,427 --> 02:04:34,068
+E-Hash algoritması, Average-Hash algoritması aslında. Temelde en kolay yöntem olarak terapide geçiyor. Bu fonksiyon girdi olarak görüntü verisini alıyor ve 64 bit uzunluğunda bir özet değeri üretiyor. İlk başta verinin boyutunu 8x8'lik bir boyuta indiriyor. Yani blok tabanlı bir aslında yöntem.
+
+651
+02:04:34,515 --> 02:04:44,595
+Ön işlem olarak da görüntüyü gri seviyeye dönüştürüyor. Sonra biz bu aslında 64 adet hücrenin ortalamasını alıyoruz.
+
+652
+02:04:44,595 --> 02:04:54,995
+Blok blok karşılaştırarak ortalamadan büyük mü küçük müye bakıyoruz. Büyük olanlara bir, küçük olanlara sıfır yazarak bir Unicash elde ediyoruz.
+
+653
+02:05:01,184 --> 02:05:24,684
+Veriyi alarak gri seviyeye çeviriyoruz. Bunu 8'e 8'lik bir gri de böldüğümüzde, genel resmin ortalama renk değeriyle bunları karşılaştırarak, bu şekilde büyük ve küçüklüğünü karşılaştırarak da bir çıktı heşi elde ediyoruz.
+
+654
+02:05:25,811 --> 02:05:47,572
+Buna çok benzer bir yöntem olarak da DH var. DH'de de burada genelde ortalama olarak almak daha, yani average filtrese uygulamak çok ortalama olarak, genel bir yaklaşım olarak bakıldığı için bunu biraz daha spesyal yaparak piksellerin arasındaki farklara bakmışlar.
+
+655
+02:05:47,572 --> 02:05:53,572
+Bu görüntü piksellerini yine alıyoruz, gri seviyeye dönüştürüyoruz.
+
+656
+02:05:53,971 --> 02:05:59,731
+Sonrasında yine piksel bazında bu sefer farklarını alarak...
+
+657
+02:05:59,872 --> 02:06:21,972
+Bunların yine ortalamaya göre aslında farklarına bakarak 1 ve 0'ları yazıyoruz. Burada da az önceki şeyden daha farklı bir hash değeri elde ediyoruz. A hash de oluşturduğumuzda. Bu yöntem genelde basitlik ve verimliliğinden ötürü çok benzerlik analizlerinde kullanıldığını söyleyebilirim.
+
+658
+02:06:24,467 --> 02:06:44,247
+Burada da e-h ve d-h'in uygulaması yapılmış. Hoşuma gittiği için koydum. Burada bir input image'imiz var. Bunlar da bozulma yapılan veya grayscale yapılan farklı şekillere dönüştürülen resimler. Bu da tamamen farklı bir resim.
+
+659
+02:06:44,756 --> 02:06:53,236
+Burada 1 ve 2'nin arasındaki 1 ve 2, 1 ve 3 gibi böyle karşılaştırmalarımız var.
+
+660
+02:06:53,736 --> 02:06:57,196
+Orijinal resmin aslında diğerlerinin ne kadar benzediğine bakmak istiyoruz.
+
+661
+02:06:57,196 --> 02:07:01,196
+Burada 1 ve 4'ün...
+
+662
+02:07:01,471 --> 02:07:12,471
+Aynı renklere sahip ama bambaşka resimler, aynı renk tonlarına sahip bambaşka resimler olduğunu görüyoruz. Aslında burada algısal olarak bir bütünlük yok. Bunların az benzer çıkması gerekir.
+
+663
+02:07:12,471 --> 02:07:21,471
+Ama burada ikisine baktığımız zaman D-H'in daha az benzer, E-H'in ise daha fazla bir benzer çıkardığını görüyoruz.
+
+664
+02:07:21,471 --> 02:07:26,471
+Buradan da E-H algoritmasının algısal...
+
+665
+02:07:27,252 --> 02:07:33,712
+Olarak baktığımızda ayırt edileceği gücünün aslında daha az olduğunu söyleyebilirim.
+
+666
+02:07:37,140 --> 02:07:52,140
+Bu arada bu average hash'in de 1 ve 3 ile çok benzer çıkmasını da ben ortalama filtreleri uygulandığımda, tabii bu biraz daha onun ortalamasının alınmış hali olduğu için %95 çıktığını görebiliriz burada.
+
+667
+02:07:53,140 --> 02:08:02,140
+Bunların üzerine de biraz daha geliştirmek istemişler. pH algoritması çıkıyor.
+
+668
+02:08:04,148 --> 02:08:12,908
+Bu sefer 32'ye 32'ye çeviriyoruz. Az önce 8'e 8'di iki yöntemde. Şimdi gri tonlamaya çeviriyoruz.
+
+669
+02:08:13,011 --> 02:08:38,912
+Ve sonrasında burada biraz daha matematiksel taban devreye giriyor. Basit matematiksel işlemlerdense ayrık kosinüs dönüşümü uygulanıyor. Bu dönüşüm uygulandığında da biz aslında kat sayılar matrisi elde ediyoruz. Bu kat sayılar matrisinde de düşük frekans sayılarını alıyoruz. Yani aslında resimden yüksek frekansları atıyoruz ve düşük frekansları işleme alıyoruz.
+
+670
+02:08:39,444 --> 02:08:54,144
+Sonrasında da yine büyük mü, küçük mü gibi bir piksellere 1 veya 0 gibi değerler yazıyoruz. Bunların sonucunda bir pH üretiliyor.
+
+671
+02:08:55,252 --> 02:09:19,931
+Şurada ufak bir brütese bakarsak, yine Grayscale ve şu Resize'a kadar aynı. Ama burada sadece 32'ye 32'lik yapmış oluyoruz. 32'ye 32'lik de tabii daha küçük bloklar ve daha dayanıklı sonuçlar demek bana göre. Sonrasında bu transformation'ı uyguluyoruz ve yüksek frekansta olan kat sayıları atıyoruz.
+
+672
+02:09:20,916 --> 02:09:43,055
+Sonrasında da bizim ph'in özet değeri. Burada yine satır satır, arda arda ekleyerek oluşturmuş oluyoruz. Bu yöntemde benzerlik, içerik tabanlı sistemlerde benzerlik karşılaştırmalarında sıkça kullanılıyor ve dayanıklı bir yöntem olduğundan bahsediliyor.
+
+673
+02:09:48,115 --> 02:09:54,355
+PiH'e göre aslında yine aynı mantıkta ama buradaki dönüşüm sadece farklı bir matematik.
+
+674
+02:09:54,355 --> 02:10:00,036
+Ayrık dağdacık dönüşümünü uyguluyoruz burada gri seviyeden sonra.
+
+675
+02:10:00,036 --> 02:10:12,836
+Bunun da avantajı, farklı ölçek ve farklı çözünürlükteki resimlere benzerlik yapılmak istendiğinde daha öne çıktığı söyleniyor.
+
+676
+02:10:13,939 --> 02:10:26,979
+Burada da yine bir görsel olarak bakarsak, burada yine bizim çıktığımızda satır satır olarak arda arda eklendiğini görüyoruz.
+
+677
+02:10:33,376 --> 02:10:46,796
+Aslında bir çalışmada da 800 farklı image almışlar veri tabanından ve 800 farklı image'e 10 farklı bir görsel manipülasyon uygulanmış.
+
+678
+02:10:47,396 --> 02:10:57,756
+Yani 800 çarpı 800'lük bir şey yapılmış, karşılaştırma yapılmış. Bunların hash'lendikten sonraki benzerlikleriyle ilgili bir analizden bahsediyorum.
+
+679
+02:10:59,636 --> 02:11:15,876
+Bunların Collision Probabilitelerine grafiğe dökmüşler. Grafiğe döküldüğünde ise bu Collision Probabiliteleri hesaplanıyor ve bir µ ve sigma değerine yakınsıyor mu ona bakıyoruz.
+
+680
+02:11:15,876 --> 02:11:25,235
+Burada 4 farklı tekniğin pH ve dh tekniklerinde daha çok yakın sandığı görülüyor çalışmada.
+
+681
+02:11:25,631 --> 02:11:45,551
+Burada ise E-hash ve V-hash'in bu dağılımdan daha farklı olduğu görülüyor. Buradaki çalışmanın sonucundaysa çakışma olasılığı açısından ayrım yeteneğinin daha az doğru olmasına yol açabileceğinden bahsediyorlar.
+
+682
+02:11:45,551 --> 02:11:51,551
+Ve ardından da sonuçları vermişler ki bunu destekleyen bir sonuç olduğunu görüyoruz.
+
+683
+02:11:52,224 --> 02:12:07,104
+Burada farklı threshold'larda, bu kollajın probability hesabı yaparken bir threshold belirleme işlemi vardı. Ama işte bu da yine farklı kontekstlerde kullanılabileceği için farklı değerlerde vermişler sonuçları.
+
+684
+02:12:10,095 --> 02:12:20,835
+Bu trash olduğundaki değerinin ve DH'in aynı trash olduğundaki değerlerine baktığımızda ben buradan şu sonucu çıkarabiliyorum.
+
+685
+02:12:36,500 --> 02:12:44,000
+konuşabilirim. İçerik tabanlı görüntü almalarda pH genelde yaygın ama
+
+686
+02:12:44,479 --> 02:12:48,759
+Biraz maliyetli transforma işin işlemlere girince matematiksel bir maliyet oluyor.
+
+687
+02:12:49,639 --> 02:12:54,119
+P-hash ve V-hash'in bu açıdan biraz maliyetli olduğunu söyleyebilirim.
+
+688
+02:12:54,719 --> 02:12:59,399
+Eğer ki az önceki bu adli görüntü analizleri falan aşırı hassas işlemler olduğu için
+
+689
+02:12:59,399 --> 02:13:03,619
+oralarda daha hassas şeyler, algoritmalar kullanılabilir.
+
+690
+02:13:03,619 --> 02:13:08,799
+Ama daha hassaslık veya daha hızlı bir parama gerektiği bir vakit.
+
+691
+02:13:09,219 --> 02:13:11,439
+D-hash kullanılabilir gibi.
+
+692
+02:13:11,792 --> 02:13:13,332
+Yorumladım ben buraya.
+
+693
+02:13:17,779 --> 02:13:21,999
+Benim için bu kadardı. Sorusu olan varsa alabilirim.
+
+694
+02:13:26,036 --> 02:13:32,935
+Teşekkür edeceğiz [öğrenci]. Peki, kim devam etmek ister arkadaşlar?
+
+695
+02:13:33,836 --> 02:13:35,296
+Ben devam edebilirim hocam.
+
+696
+02:13:36,115 --> 02:13:37,055
+Tamam, buyur.
+
+697
+02:13:40,655 --> 02:13:43,456
+Hemen ekranımı paylaşacağım. Sonuna başladım.
+
+698
+02:13:49,844 --> 02:13:51,844
+Bir saniye hocam, bekletiyorum ama.
+
+699
+02:13:52,944 --> 02:13:53,744
+Bekliyorsunuz.
+
+700
+02:14:11,636 --> 02:14:13,256
+Sen görebiliyor musunuz ekranımı?
+
+701
+02:14:13,516 --> 02:14:14,376
+Evet, görebiliyoruz.
+
+702
+02:14:15,596 --> 02:14:27,796
+Tamamdır. Ben de blockchain için hash fonksiyonlarından bahsedeceğim. Ben blockchain konusunu da çok bilmiyordum. Araştırmak istediğim için bu konuları seçmiştim. O yüzden biraz daha genel bir sunum oldu benimki arkadaşlarımkine göre.
+
+703
+02:14:28,655 --> 02:14:35,395
+Sunum içeriğim giriş, hash fonksiyonlarının temelleri, blockchain teknolojisi ve blockchain için kullanılan hash fonksiyonları olarak ilerliyor.
+
+704
+02:14:36,724 --> 02:14:42,984
+Hedefim, hash yapılarını, blockchain mimarisini ve blockchain mimarisinde kullanılan hash fonksiyonlarını anlamaktı.
+
+705
+02:14:43,604 --> 02:14:51,344
+Kaynaklar, ekranda gördüğünüz kaynakları kullandım ve bu kaynakların kullandığı kaynakları da araştırarak sunumumu hazırladım.
+
+706
+02:14:51,923 --> 02:14:56,604
+Özet olarak bu sunumda blockchain teknolojisinden, genel hash fonksiyonlarından bahsedeceğim.
+
+707
+02:14:57,104 --> 02:15:03,024
+Blockchain dağıtık ve düzenli bir defter olarak dünyada kabul görmeye başlamış bir inovasyon.
+
+708
+02:15:03,503 --> 02:15:08,264
+Bizim hayatımıza da daha çok kripto paralar olan Bitcoin, Ethereum ve benzeri şekillerde girdi.
+
+709
+02:15:08,264 --> 02:15:13,744
+Ama hash fonksiyonları özellikle veri bütünlüğünün korunması ve güvenliğinin sağlanması noktasında rol oynadığı için,
+
+710
+02:15:14,292 --> 02:15:22,992
+Çok daha geniş alanlarda kullanılmaktaymış. Finans, sağlık, türevi, hatta tedarik zincirlerinin kontrolünde falan kullanılıyormuş.
+
+711
+02:15:24,431 --> 02:15:26,792
+Genel olarak hash nedir olarak devam edeceğim.
+
+712
+02:15:27,511 --> 02:15:34,032
+Hash fonksiyonları verilerin benzersiz bir şekilde temsil edilmesini sağlayan kriptografik algoritmalar.
+
+713
+02:15:34,336 --> 02:15:39,436
+Herhangi bir boyuttaki giriş verisini alıyor ve belirli bir algoritma kullanarak sabit boyutta bir hash üretiyor.
+
+714
+02:15:39,976 --> 02:15:44,596
+Oluşan hash değerleri giriş verilerinin bir özeti şeklinde ve geriye dönüşü yok.
+
+715
+02:15:44,855 --> 02:15:48,596
+Sadece tek yönlü olarak oluşturabiliyoruz hashleri.
+
+716
+02:15:49,516 --> 02:15:52,436
+Bu yüzden hash değerinden giriş verisini tekrar elde edemiyoruz.
+
+717
+02:15:52,948 --> 02:16:02,108
+Veri bütünlüğünü doğruluyor. Verileri benzeri su olarak temsil ediyor. Paralo kontrolü, güvenli veri depolama ve kimlik doğrulama işlemlerinde büyük rol oynuyor.
+
+718
+02:16:03,488 --> 02:16:05,948
+Hatch fonksiyonlarının temel özelliklerinden de...
+
+719
+02:16:06,368 --> 02:16:15,667
+Hızlı hesaplama, sabit boyut, benzersizlik, kolay hesaplama, zor tersine çevrilebilirlik, küçük değişiklikleriyle büyük farklılıklar olarak bahsedebiliriz.
+
+720
+02:16:16,148 --> 02:16:26,167
+Hash fonksiyonları verilerin hızlı bir şekilde hash değerlerine dönüştürülmesini sağladığı için bu işlem süresini kısaltıyor ve blockchain gibi yorum veri işleme sistemlerinde performansı arttırıyor.
+
+721
+02:16:26,739 --> 02:16:35,979
+Hash fonksiyonları herhangi bir boyut giriş verisinin sabit bir boyutta bir hash değerine dönüştürülmesini sağladığı için depolama alanından tasarruf etmemize yardımcı oluyor.
+
+722
+02:16:36,979 --> 02:16:43,759
+Her hash fonksiyonu benzersiz. İdeal bir hash fonksiyonunda iki ayrı gir de aynı hash ile ifade edilemiyor.
+
+723
+02:16:44,352 --> 02:17:04,072
+Ve kolay hesaplanabiliyor. Tek yönlüler. Bu özellik hash fonksiyonlarının güvenliği için çok önemli. Tersine çeviremediğimiz için, hash'lerden gerçek giriş verisine ulaşmamız neredeyse imkansız olduğu için burada bir güvenlik durumu oluşuyor. Verimizi saklamış, daha güvenli bir hale getirmiş oluyor.
+
+724
+02:17:12,244 --> 02:17:16,603
+Yapılan değişiklikleri ya da saldırıları hızlı fark edebilmemizmiş.
+
+725
+02:17:18,100 --> 02:17:25,040
+Blockchain teknolojisinde blockchain nedir? Blockchain'in özellikleri, blockchain çeşitleri ve blockchain mimarisinden bahsedeceğim.
+
+726
+02:17:25,560 --> 02:17:31,119
+Blockchain merkeze olmayan bir veri tabanı teknolojisi. Ardışık bloklardan oluşan bir zincir yapısı aslında.
+
+727
+02:17:31,799 --> 02:17:37,399
+Her blok kendi içerisinde veriyi tutarak ve bir önceki blokun hash değerini tutarak bir zincir haline geliyor.
+
+728
+02:17:37,700 --> 02:17:41,440
+Dağıtık bir yapıya sahip. Merkezi otoritesi yok blockchain'lerin.
+
+729
+02:17:46,100 --> 02:17:59,880
+Sistemde bulunan her bir kullanıcı bir düğüm. Sisteme katılan her düğüm kendi başına bir blok zinciri kopyasına yani kayıt defterine sahip oluyormuş.
+
+730
+02:18:00,479 --> 02:18:04,200
+Dağıtık yapıya sahip olması merkezli otoriteyi ortadan kaldırıyor dediğim gibi.
+
+731
+02:18:04,200 --> 02:18:12,119
+Kripto para ile hayatımıza girmiş ama buna rağmen finans sağlık, güvenlik, tedarik zinciri gibi birçok alanda kullanılmakta.
+
+732
+02:18:12,468 --> 02:18:30,028
+Özelliklerinden bahsedersek, dağıtık yapıya sahipler. Blok zincirinin en temel özelliği bu aslında. Veriler ağdaki düğümler arasında paylaşıldığı için ve her düğüm ağdaki diğer düğümle etkileşimde bulunabildiği için dağıtık bir yapısı var. Buradaki örnekte de görüldüğü üzere.
+
+733
+02:18:31,028 --> 02:18:41,368
+Şeffaflık da bir başka özelliği. Blok zinciri sisteminde her düğümün ağdaki tüm işlemleri görme yeteneği var. Bu sayede herkes ağdaki işlemleri denetleyebiliyor ve güvenebiliyor.
+
+734
+02:18:42,948 --> 02:18:51,268
+Değiştirilemiyorlar. Blockchain'e veri bir kere kaydedildikten sonra geri alamıyoruz, güncelleyemiyoruz, değiştiremiyoruz ve silemiyoruz. Kayıdı kalıcı olarak saklıyor.
+
+735
+02:18:52,051 --> 02:19:00,252
+Bağımsızlık, mutabakat yapısı sayesinde sistemdeki her düğüm verileri güvenli bir şekilde aktarabiliyor. Merkezli bir sisteme gerek duymuyor.
+
+736
+02:19:00,992 --> 02:19:05,731
+Kimlik Gizliliği, bu sistemde düğümler kimlik belirtmeden veri aktarımını gerçekleştirebiliyor.
+
+737
+02:19:05,731 --> 02:19:10,952
+Blockchain adresi bilindiği sürece bu işlemi gerçekleştirebiliyoruz. Düğümün tümliğine ihtiyacımız yok.
+
+738
+02:19:11,540 --> 02:19:39,080
+Blockchain çeşitleri de 4 çeşitten oluşuyor. Açık blok zinciri, özel blok zinciri, hibrit blok zinciri ve konsorsiyum blok zinciri olarak. Açık blok zinciri en yaygın çeşidiymiş. Bu ağa herkes katılabiliyor. Herkes tarafından erişilebilir ve katkıda bulunabilir bir ortam sağlıyor. Tamamen bağımsız, özellikle kripto para birimlerinde kullanılıyormuş. Ve bunu herkes tarafından kullanılabildiği için internete bezletebiliriz diye düşündüm.
+
+739
+02:19:39,391 --> 02:19:46,772
+Özel blok zinciri ise daha sınırlı bir kullanıcı grubu tarafından ya da belirli bir kuruluş tarafından kullanılan bir özel ağ gibi.
+
+740
+02:19:47,711 --> 02:19:50,691
+Genel erişim yerine daha kısıtlı bir erişim ve katılım var.
+
+741
+02:19:51,171 --> 02:19:57,112
+Üçüncü şahıslar burada bazı bilgileri erişemiyor. Gizli tutabiliyoruz. Bunu da intranete benzetmiştim ben.
+
+742
+02:19:58,031 --> 02:20:04,152
+Hibrit blok zincirinde hem açık blok zinciri hem özel blok zincirinin özelliklerini barındırıyor gibi.
+
+743
+02:20:04,623 --> 02:20:10,563
+İşlemler gizlilik ve güvenlik durumu gerektiriyorsa, bu durumda özel blok zinciri özelliklerini kullanıyorlar.
+
+744
+02:20:10,783 --> 02:20:18,984
+Ama verileri sadece etkilendirilmiş katılımcıları açarak, izin veriler kişiler dışında erişime kapatarak da özelleştiriyorlar.
+
+745
+02:20:19,023 --> 02:20:22,344
+Ama bu verilere ulaşabiliyoruz. Genel ulaşabileceğimiz bir...
+
+746
+02:20:22,388 --> 02:20:44,448
+Yapıda kurabiliyorlar. Bu da hibrit blok zinciri oluyor. Konsorsiyum blok zincirinde ise bu da hibrit blok zincirine biraz benzerlik gösteriyormuş. Ama burada bir grup, kuruluş veya kurumun ortak bir blok zinciri oluşturduğu ve yönettiği bir çeşit. Konsorsiyum blok zincirinde katılımcılar arasında bir uzlaşım mekanizması kullanarak işlemlerin doğrulanması sağlanıyormuş.
+
+747
+02:20:45,747 --> 02:21:13,667
+Blockchain mimarisi, blok, dijital imzan, mukabakat mekanizması ve çatallaşmadan oluşuyor. Bloklar verilerin kaydedildiği temel yapı birimleri. Bloklar birbirine bağlı bir zincir oluşturarak blok zincir yapısını oluşturuyorlar ve her blok 5 ögüden oluşuyormuş. Bu örgülerden ilki veri, ikincisi hash, bir sonraki bir blokun hash'i, zaman damgası ve nonce. Veriler aslında bizim girdilerimiz. Her girdimizin bir hash değerini oluşturuyoruz.
+
+748
+02:21:13,747 --> 02:21:19,147
+Ve her blok bir önceki bloğun da hashini tutarak bir zincir yapısı haline getirmemizi sağlıyor.
+
+749
+02:21:19,147 --> 02:21:27,347
+Zaman damgasının kullanılıyor olması burada blockchain'in değiştirilemezliğini ve güvenilirliğini arttırıyor.
+
+750
+02:21:27,347 --> 02:21:35,347
+Her bloğun ne zaman oluşturulduğunu biliyoruz ve bu zamana göre zincirin akışını takip edebiliyoruz.
+
+751
+02:21:37,396 --> 02:21:43,076
+NONS'da hash oluşturulurken kullanılan bir kerelik oluşturulan bir sabit katsayıymış.
+
+752
+02:21:43,855 --> 02:21:51,976
+Dijital imza, dijital imzalar blockchain'in alanında yer alan kullanıcıların kimliklerini kanıtlamaları ve işlemleri güvence altına almalarını sağlayan bir sistem.
+
+753
+02:21:52,656 --> 02:22:02,316
+Dijital imzada herkesin iki özel anahtarı var. Biri özel anahtar, biri gönderen özel anahtarı, diğeri de ortak anahtar.
+
+754
+02:22:02,868 --> 02:22:14,868
+Burada gördüğünüz üzere gönderen özel anahtarıyla imzalanmış mesajı gönderiyor. İmzalanmış mesajı alıcı alıyor. O da ortak anahtarla açıyor ve bu şekilde imzalanmış mesaj ortaya çıkıyor.
+
+755
+02:22:14,868 --> 02:22:25,528
+Bu tabakat mekanizması ise blockchain teknolojisinin dağıtık bir ağ üzerinde çalışan ve birden fazla taraf arasında güvenilirlik ve fikir birliği sağlamayı hedefleyen bir mekanizma.
+
+756
+02:22:25,940 --> 02:22:32,400
+İşlemlerin doğrulandığı, onaylandığı ve blok zincirine eklenmesini sağlayan böyle bir süreç sağlıyor.
+
+757
+02:22:33,460 --> 02:22:37,300
+Çatallaşma ikiye ayrılıyor. Sert çatallaşma ve yumuşak çatallaşma.
+
+758
+02:22:37,400 --> 02:22:43,080
+Sert çatallaşmada blok zinciri sistemi üzerinde yapılan değişiklik eğer diğer bloklarla uyumlu değilse,
+
+759
+02:22:43,560 --> 02:22:48,700
+buradaki çatallaşmada bir önceki düğümlerin uyum sağlaması için yazılım düzenlemesi yapmamız gerekebiliyor.
+
+760
+02:22:48,840 --> 02:22:51,340
+Ya da eski blokların geçerliliği ortadan kalkıyor.
+
+761
+02:22:52,020 --> 02:23:03,920
+Ama yumuşak çatallaşmada öyle bir şey olmuyor. Sistem çatallaşacağında blok zincir sistemi üzerinde yapılan değişiklikler önceki bloklarla uyumluysa eğer, yeni kurallar ve özellikler eklenirken eski kuralları da koruyabiliyoruz.
+
+762
+02:23:04,500 --> 02:23:09,240
+Bu durumda eski düğümler ve yeni düğümler ağda birlikte çalışabiliyorlar.
+
+763
+02:23:11,156 --> 02:23:27,852
+Blockchain için hash fonksiyonlarından da ben 5 tane hash fonksiyonu ile ilgili araştırmalar yaptım. Bunlardan ilki, SIA256. Burada Bitcoin gibi popüler blockchain ağlarında yaygın olarak kullanılan bir hash fonksiyonuymuş. 256 bitlik bir...
+
+764
+02:23:27,860 --> 02:23:36,440
+Çıktığı üreten kriptografik bir algoritma. Bu fonksiyonu verilen bir girişim benzersiz ve tahmin edilemez bir özetini üretiyor.
+
+765
+02:23:36,920 --> 02:23:43,100
+Ve bu blokların özetini işlem verileri ve diğer blok verileriyle, şia 256 ile hesaplıyor.
+
+766
+02:23:43,659 --> 02:23:47,639
+Bu blok zinciri üzerinde işlem doğrulama ve bütünlük sağlamak için kullanılıyor.
+
+767
+02:23:49,459 --> 02:24:03,139
+Bir diğeri Kekak 256. Burada da yine 256 bit bir tiktir üretiliyor. Bu fonksiyon daha çok Ethereum Blockchain'i gibi zamanlarda çıkmış.
+
+768
+02:24:03,579 --> 02:24:11,100
+Kodlamayla birlikte olarak çıkmış. Ethereum'la birlikte Blockchain kodlama tarafı da aktifleşmiş ve o tarafta daha çok kullanılmaya başlamış.
+
+769
+02:24:11,760 --> 02:24:15,859
+Ethereum'un akıllı sözleşme platformunda ve hesap adreslerinde kullanılıyormuş.
+
+770
+02:24:16,852 --> 02:24:34,971
+Blake2 ve Blake3. Blake3, Blake2'nin üzerine güncellenmiş ve onun eksikliklerini tamamlamak için çıkmış. Blake2 genel amaçlı bir hash fonksiyonuymuş. Blockchain projelerinde de kullanılmakta. Blake2 yüksek hız ve güvenlik açısından avantajlar sunuyor.
+
+771
+02:24:35,391 --> 02:24:42,311
+Blok verilerinin ve işlemlerin özetlenmesi için kullanılıyor. Blake 2 daha düşük verlik kullanımı ile etkili bir şekilde çalışabiliyor.
+
+772
+02:24:42,932 --> 02:24:51,272
+Ve A'larda verimlilik sağlıyor. Blake 3, Blake 2'ye göre çok daha yüksek hızlı, güvenlikli, paralellik özellikleri ile ön plana çıkıyor.
+
+773
+02:24:51,272 --> 02:24:53,971
+Bu da verimli bir şekilde çalışabilen bir fonksiyon.
+
+774
+02:24:54,611 --> 02:24:58,511
+Blok zincir verilerinin özetlenmesi ve bütünlük kontrolü için tercih ediliyor.
+
+775
+02:24:59,471 --> 02:25:05,451
+Remapped, Bitcoin gibi bazı blockchain ağlarında adres oluşturma ve doğrulama için kullanılan bir fonksiyon.
+
+776
+02:25:05,551 --> 02:25:07,791
+Bu fonksiyon 160 bitlik bir çıktı üretiyor.
+
+777
+02:25:08,511 --> 02:25:17,271
+Özellikle Bitcoin adreslerinin oluşturulmasında kullanılırken, Bitcoin bloklarının özetlenmesi için de SHA-256 ve SHA-256'yı birlikte kullanıyor.
+
+778
+02:25:18,492 --> 02:25:20,152
+Teşekkür ederim. Beni dönerdüğünüz için.
+
+779
+02:25:22,227 --> 02:25:27,048
+Teşekkür ederiz. Soru var mı arkadaşlar?
+
+780
+02:25:29,907 --> 02:25:31,847
+Tamamdır. Kim devam etmek istiyor?
+
+781
+02:25:33,927 --> 02:25:36,167
+Hocam ben devam edebilirim.
+
+782
+02:25:36,608 --> 02:25:42,208
+Tamamdır. Sen tek başınaydın değil mi?
+
+783
+02:25:42,208 --> 02:25:43,048
+Evet.
+
+784
+02:25:43,387 --> 02:25:45,007
+Tamamdır. Peki buyur.
+
+785
+02:25:52,628 --> 02:25:55,568
+Ekranım görüyor mu? Evet görüyoruz. Tamam.
+
+786
+02:26:04,147 --> 02:26:20,608
+Merhaba, benim de konum Perceptual Hashing. Biraz ne olduğundan bahsedeceğim. Algısal hash. Algısal hash fonksiyonları benzer görüntüler veya sesler için aynı sonucu üretecek şekilde ayarlanan bir fonksiyon.
+
+787
+02:26:21,608 --> 02:26:30,967
+İnsanın görme ve duymasını sağlayan özellik türlerine, renklere ve frekanslara daha çok odaklanarak insan algısını taklit etmeye başlıyorlar.
+
+788
+02:26:32,211 --> 02:26:34,211
+Çok teşekkür ederim.
+
+789
+02:26:35,156 --> 02:26:41,316
+Algısal hash'lerin dışındaki hash işlevleri en küçük değişikliklere karşı çok hassaslar.
+
+790
+02:26:41,976 --> 02:26:52,136
+Basitçe bir biti çevirmek, örneğin bir pikseldeki mavi miktarını 200'den 199'u birime değiştirmek, hash fonksiyonlarındaki bitlerin yarısını değiştirebiliyor.
+
+791
+02:26:53,136 --> 02:27:00,796
+Algısal hash işlevleri bir insanın benzer hissedebileceği görüntüler veya sesler için yanıtlar döndürmek üzere tasarlanmıştır.
+
+792
+02:27:00,796 --> 02:27:02,796
+Yani ortamdaki küçük değişiklikler...
+
+793
+02:27:03,156 --> 02:27:04,356
+çıktığı etkilemiyor.
+
+794
+02:27:05,176 --> 02:27:07,296
+Yani ufak bir değişiklik hash'imizi
+
+795
+02:27:07,296 --> 02:27:09,016
+aşırı bir şekilde değiştirmiyor.
+
+796
+02:27:10,656 --> 02:27:11,336
+PH
+
+797
+02:27:11,336 --> 02:27:13,676
+olarak perceptual hash algoritması
+
+798
+02:27:13,676 --> 02:27:15,236
+verileri uzonsal
+
+799
+02:27:15,236 --> 02:27:17,236
+alanda frekans alanına dönüştüren
+
+800
+02:27:17,236 --> 02:27:19,356
+ayrı kosmüs dönüşümü üzerinde
+
+801
+02:27:19,356 --> 02:27:20,636
+hash işlemi hesaplıyor.
+
+802
+02:27:21,436 --> 02:27:23,115
+Bu daha çok görüntü işleme
+
+803
+02:27:23,115 --> 02:27:25,296
+üzerine yani daha çok
+
+804
+02:27:25,296 --> 02:27:27,756
+resimler için algısal hash algoritmalarında
+
+805
+02:27:27,756 --> 02:27:28,336
+kullanılıyor.
+
+806
+02:27:30,899 --> 02:27:43,599
+Bunlar için de ayrı kosinüs dönüşümü uygulanıyor bu resimler üzerinde. Görüntünün farklı öneme sahip parçalara ayrılmasına yardımcı oluyor.
+
+807
+02:27:45,332 --> 02:28:02,372
+P-H işlevleri giriş ile karşılaştırmakta, giriş değerimizle, giriş resmimizle karşılaştırmakta olan görüntü arasındaki farklı bitlerin sayısına bakarak iki görüntünün karşılaştırılmasına olanak tanıyor.
+
+808
+02:28:02,372 --> 02:28:13,332
+Bu farkı da hemik mesafesi olarak alıyoruz. Hemik mesafesi de aynı uzunluktaki iki string arasında birbirine dönüşmesi için gerekli.
+
+809
+02:28:13,332 --> 02:28:21,391
+Yer değiştirme sayısını veriyor bize. Yani basitçe bir diskinin diğer diskiden ne kadar farklı olduğunu gösteriyor.
+
+810
+02:28:23,311 --> 02:28:31,492
+Burada algısal hiç algoritması aşamalarımız var. Bu da dediğim gibi bir resim üzerinde yapılan bir aşamalar.
+
+811
+02:28:37,332 --> 02:28:54,592
+MN byte boyutunda verilmiş bir görüntü üzerinde renk dönüşümü, yumuşatma dönüşümleri gibi veya uzamsal dönüşümlerde ayrık kosinüs dönüşümü ya da ayrık dalgacık dönüşümü kullanılıyor.
+
+812
+02:28:55,540 --> 02:29:06,620
+Bu dönüşümlerin temel amacı öz nitelik çıkarma aşamasında çıkarılan tüm öz nitelikleri görüntü piksellerinin değerlerine veya frekans uzayındaki frekans katsayılarına bağlı hale getirmek.
+
+813
+02:29:07,739 --> 02:29:18,460
+Özellik çıkartma aşamamızda görüntü hash sistemi özellik vektöründe oluşturmak üzere dönüştürülmüş görüntüden görüntü özelliklerini çıkarıyor.
+
+814
+02:29:19,252 --> 02:29:26,932
+Bu iki adım da yapılıyor. Öncelikle tüm öz nitelikler çıkarılıyor. Ardından seçilen ilgili öz nitelikler tutuluyor.
+
+815
+02:29:28,391 --> 02:29:33,412
+Niceleme adımımızda nicelenmiş bir ara algısal hash vektörü elde ediyoruz.
+
+816
+02:29:34,211 --> 02:29:39,912
+Sürekli algısal hash vektörünün her bir bileşenini nicelemek için tek tip niceleme uygulanabiliyor.
+
+817
+02:29:40,948 --> 02:29:49,327
+Son adımımız olan sıkıştırma ve şifrelemede ise bir perceptual resim hashleme sistemi için son adım.
+
+818
+02:29:50,327 --> 02:29:57,388
+İkili ara algısal hash dize sıkıştırılıyor ve sabit boyutlu kısa bir algısal hash halinde şifreleniyor.
+
+819
+02:29:58,827 --> 02:30:03,388
+Bu şekilde dört aşamada ele alabiliyoruz.
+
+820
+02:30:04,827 --> 02:30:07,388
+Peki algısal hash oluşturma adımlarımız.
+
+821
+02:30:08,435 --> 02:30:15,215
+Renklerin azaltılması bir hesaplama sayısını daha da basitleştirmek için görüntü gri tonlama haline getiriliyor.
+
+822
+02:30:16,295 --> 02:30:22,415
+Boyutun azaltılması hesaplamayı kolaylaştırmak adına resmin boyutu 32-32 şeklinde küçültülüyor.
+
+823
+02:30:24,500 --> 02:30:39,960
+Ayrı kosinüs dönüşümünün hesaplanması, görüntüyü bir frekans ve skaler koleksiyonuna ayırıyoruz. 32-32'lik bir CT kullanılıyor mesela burada. 32-32 şeklinde küçülttüğümüz için.
+
+824
+02:30:49,716 --> 02:31:09,435
+8'e 8'lik kısmı tutmak yeterli. Bunları biraz daha resim olarak açıklayacağım. Bunlar görüntüdeki en düşük frekanslar sol üst köşede toplanıyor. Ortalama değerin hesaplanması. Ortalama DCT değeri hesaplanıyor. En sonunda da görüntünün 250 bitlik pH değeri oluşturuluyor.
+
+825
+02:31:10,835 --> 02:31:20,835
+Burada ilk adımımız pH algırtmasının griderli görüntüsü hesaplanıyor ve onu küçültüyoruz daha sonrasında 32-32 şekilde.
+
+826
+02:31:21,835 --> 02:31:27,835
+Bu resim daha büyüktü normalde. Küçültünce biraz preksayları daha da belirtilmişti.
+
+827
+02:31:28,628 --> 02:31:41,308
+Bu görüntüye her satırda ilk olmak üzere ayrı bir kutluşun dönüşümü uygulandı. Daha sonra sütunlarda uygulanınca sol üst füçede toplandı bu değerlerimiz.
+
+828
+02:31:41,308 --> 02:31:47,888
+Yüksek frekans değerlerimiz. Bu sol üst füçedeki 8'e 8'lik pikseli kırpıyoruz.
+
+829
+02:31:49,683 --> 02:31:54,043
+Daha sonra bu görüntüdeki gri değerlerinin ortalamasını alıyoruz.
+
+830
+02:31:54,283 --> 02:32:02,483
+Burada beyazlar yerine 1 kullanılmış, daha çok ağırlığı olan siyaha yakın olanlar 0 olarak kullanılmış.
+
+831
+02:32:03,003 --> 02:32:07,083
+Ve bu şekilde bir hash değeri elde edilmiş.
+
+832
+02:32:12,564 --> 02:32:26,444
+Perseptüel Hex'in bazı kullanım alanlarından bahsedeceğim. Tehlif hakkı ihlali, kırma veya ölçek küçültme yoluyla değiştirilmiş olsalar bile benzer heş değerleri, görüntüleri, sesleri veya videolar algılayabilir, eşleştirebilir.
+
+833
+02:32:28,224 --> 02:32:31,444
+Yazım hatası, metinsel ve algısal heş işleri.
+
+834
+02:32:32,275 --> 02:32:38,376
+Sözcükleri seslerine göre kategoriz ederek yanlış yazılmış sözcükleri yakalayıp düzeltmeyi mümkün kılıyor.
+
+835
+02:32:40,595 --> 02:32:47,156
+Bazı algoritmalar insanların ne giydiğini algılayabilir. Bu da şantiyeler ve hastaneler için yararlı bir şey.
+
+836
+02:32:47,296 --> 02:32:56,476
+Örneğin, koruyucu ekipman giymemiş kişilerin belirlenmesinde yardımcı olabilecek bir algoritma.
+
+837
+02:32:56,976 --> 02:32:59,355
+Hastalık belirtilerini tespit etmek.
+
+838
+02:33:00,275 --> 02:33:11,275
+Bu lekeler zamanında tespit edilmezse ciddi kayıplar neden olabiliyor.
+
+839
+02:33:11,275 --> 02:33:17,275
+Tespit etmek için çoğu perceptileşe dayalı görüntü işleme teknikleri kullanılıyormuş.
+
+840
+02:33:17,275 --> 02:33:27,275
+Ters resim arama motoru. Mesela burada e-ticarette birçok tüketicinin alışkanlığı önemli bir parçası haline gelen.
+
+841
+02:33:28,308 --> 02:33:51,648
+Bu nedenle birçok site kullanıcı denemi birleştirmek için filtreleme ve karşılaştırma araçlarına yeni özellik getirmeye çalışıyor. Böyle bir özellik müşterilerin başarılı olması durumunda tam eşleşme ve diğer durumlarda en benzer ürünleri önermek için bir fotoğrafla ürünleri bulmasına olanak kanıyor. Yani bir fotoğrafla benzer ürünleri de bulabilmenizi sağlıyor.
+
+842
+02:33:54,195 --> 02:34:04,495
+DNA diziliminde ise her niklootit heşi önemli frekans özelliklerinden hesaplanan sabit bir gri seviyeli yoğunluk pikseli olarak kodlanıyor.
+
+843
+02:34:05,495 --> 02:34:19,076
+Bu dizi ve algısal heş arasında ciddi bir veri azalmasıyla sonuçlanarak bilim insanlarının ve genetikçilerin büyük aramalar yapmasına ve düşük altyapı etkisiyle milyonlarca kombinasyonları karşılaştırmasına olanak tanıyor.
+
+844
+02:34:20,084 --> 02:34:40,244
+Bu akademik yazılarda resim intihar kontrol sistemi, telif hakkı ihlalinde de bahsettiğim gibi resimlerin mesela boyutunun küçültülmesi veya döndürülmesini tespit edebilen bir algoritma olduğu için intihallerde de kullanılıyor bu algoritma.
+
+845
+02:34:42,131 --> 02:34:49,931
+Algısal iş fonksiyonları genellikle oldukça doğru olsa da yanlış eşleşmeler üretme eğilimindeler.
+
+846
+02:34:50,752 --> 02:35:00,211
+Mesela Apple'ın bir iPhone'unun kilidini açmak için kullanılan yüz tanıma yazılımı bazen ebeveynleri çocuklarıyla karıştırabiliyor.
+
+847
+02:35:01,092 --> 02:35:07,891
+Ve çocukların ebeveynlerinin telefonlarının kilidi açmasına izin verebiliyor. Bununla ilgili bir haber de görmüştüm.
+
+848
+02:35:10,355 --> 02:35:25,355
+Burada da örneğe bir çalışma var. Mesela burada bir fotoğraf üzerine de yazı yazılmış. Burada ilk elde edilen hash ve ikinci resminin hash derleri var.
+
+849
+02:35:25,355 --> 02:35:31,355
+Burada yanılmıyorsam, şuradaki mesela, şuradaki bitti.
+
+850
+02:35:31,987 --> 02:35:39,927
+0-1 olmuş mesela. Burada bir bitim değişmiş. Daha sonra şuradaki bitte de bir değişim gözleniyor.
+
+851
+02:35:42,128 --> 02:35:55,667
+Sonrasında şurada da bir değişim var. Bu değişimler ele alarak 3 farklı bitte değişim var. Hemik mesafesini 3 olarak elde ediyoruz.
+
+852
+02:35:59,731 --> 02:36:04,332
+Korunmuş oluyor. Yani çok fazla bir farklılık olmadığı gözleniyor.
+
+853
+02:36:07,211 --> 02:36:11,992
+Benim anlayacaklarım bu kadardı. Teşekkür ederim. Sorusu varsa alabilirim.
+
+854
+02:36:13,211 --> 02:36:15,711
+Teşekkür ederiz. Aynen sağlık.
+
+855
+02:36:17,612 --> 02:36:20,252
+Ama arkadaşlar, eklemek istediğiniz bir şey sormak istediniz.
+
+856
+02:36:22,252 --> 02:36:24,891
+Peki, kim devam etmek ister? Sağ olasın.
+
+857
+02:36:24,891 --> 02:36:27,032
+Kim devam etmek ister?
+
+858
+02:36:33,172 --> 02:36:34,611
+Kimse devam etmek istemiyorum.
+
+859
+02:36:34,631 --> 02:36:37,811
+Kimse kalmadıysa ben sunum yapabilir miyim?
+
+860
+02:36:38,811 --> 02:36:45,432
+Evet. Bir dakika. Bir iki dakikasını bekletebilir miyim?
+
+861
+02:36:51,188 --> 02:36:57,368
+[öğrenci]'ı görüyorum ama sunumunu yapmayacak mıydım? Bulamadım seni.
+
+862
+02:37:03,283 --> 02:37:05,724
+Kimse yok anındı. [öğrenci] yapmayacak mısın?
+
+863
+02:37:10,324 --> 02:37:11,764
+[öğrenci] burada değil mi şu an?
+
+864
+02:37:14,524 --> 02:37:15,064
+Peki tamam.
+
+865
+02:37:16,404 --> 02:37:17,043
+Duymuyor bizi.
+
+866
+02:37:17,484 --> 02:37:21,344
+Tabi buyurun siz arkadaşlar. Siz [öğrenci]'le berabersiniz galiba değil mi?
+
+867
+02:37:24,504 --> 02:37:25,864
+Evet. Buyurun.
+
+868
+02:37:28,564 --> 02:37:30,364
+Hocam, [öğrenci] Bey'in [öğrenci] Bey'in...
+
+869
+02:37:30,364 --> 02:37:39,824
+[kişisel bilgi]
+
+870
+02:37:40,463 --> 02:37:45,424
+Şu an görünen... Kim konuşuyor şu an? Kim konuştun? [öğrenci] senle mi konuşuyoruz şu an?
+
+871
+02:37:45,543 --> 02:37:46,884
+Evet, evet. Hocam ben konuşuyorum.
+
+872
+02:37:46,904 --> 02:37:48,804
+Tamam, onlar yapsınlar. Sonra sen yap.
+
+873
+02:37:49,424 --> 02:37:50,484
+Tamam, çok teşekkür ederim.
+
+874
+02:37:50,504 --> 02:37:53,364
+Kusura bakmayın. Evet. Şimdi [öğrenci]'la [öğrenci]'i dinliyoruz.
+
+875
+02:37:53,876 --> 02:37:58,355
+Hocam, [öğrenci] Bey [kişisel bilgi]. Bir sunumu ben yapsam olur mu?
+
+876
+02:37:58,515 --> 02:37:59,755
+Tabii, nasıl isterseniz.
+
+877
+02:38:01,036 --> 02:38:08,136
+[kişisel bilgi]
+
+878
+02:38:08,476 --> 02:38:09,376
+[kişisel bilgi]
+
+879
+02:38:09,835 --> 02:38:10,716
+Çok teşekkürler.
+
+880
+02:38:27,156 --> 02:38:28,916
+Bir saniye, tam ekranı alamadım.
+
+881
+02:38:29,656 --> 02:38:32,636
+Tamam, ben şimdi anladım. Sen onun bilgisayarından bağlanıyorsun.
+
+882
+02:38:33,156 --> 02:38:33,695
+Evet, evet.
+
+883
+02:38:34,695 --> 02:38:39,836
+Seslerle sinin, o sebebini anladım şimdi. Buyurunuz.
+
+884
+02:38:44,020 --> 02:38:45,940
+Tamam, hemen ekran paylaşıyorum.
+
+885
+02:39:00,435 --> 02:39:04,515
+Tam ekran görünüyor mu sizde? Tam ekran görünmüyor şu an, şimdi geldi.
+
+886
+02:39:08,515 --> 02:39:16,835
+Biz de hash fonksiyonlarının saldırılara karşı karşılaştırmasını inceledik.
+
+887
+02:39:22,708 --> 02:39:28,567
+Dijital ve fiziksel dünyalar arasındaki çizgilerin hızla değiştiği bir zamanda yaşıyoruz.
+
+888
+02:39:28,688 --> 02:39:39,387
+Bu yüzden her kuruluşun hassas verilerini ve diğer bilgilerini siber saldırıları ve veri ihlallerine karşı koruması her zamankinden daha önemli bir hale gelmiştir.
+
+889
+02:39:40,628 --> 02:39:59,868
+2020'de kuruluşların %86'sı Siversit saldırıya maruz kalmıştır. Bunlardan %69'un güvenli fidye yazılımı tarafından ele geçirilmiştir. Güvenli algoritmalar ihlalleri ve kötü amaçlı yazılım buluşmalarına karşı güç ve pahadıklılmaz bileçenler olarak görülmektedir artık.
+
+890
+02:40:06,420 --> 02:40:32,780
+Peki hangi hash fonksiyonları daha güvenilir, daha efektif, daha verimli? Burada bizim makalemizde bunlara ayrıntılı bir genel bakış. Hash fonksiyonları, türleri ve güçlü ve zayıf yönleri karşılaştırılmış. Bu güçlü ve zayıf yönlerine karşı da diğer makalelerden ek yöntemler önerilerek makale tamamlanmış.
+
+891
+02:40:33,523 --> 02:40:41,924
+Şimdi, hash fonksiyonu bir girdiği bir kümenin okunamaz veri dizisi çıktısına dönüştüren tek yönlü matematiksel bir fonksiyondur.
+
+892
+02:40:41,924 --> 02:40:52,424
+1953 yılında ortaya atılmıştır. Şimdi hangi hash algoritmaları var? Öncelikle mesaj özetleme algoritması.
+
+893
+02:40:56,531 --> 02:41:09,071
+Burada işlem adımları yazıyor. Ben özetle orijinal girdi, sabit boyutlu bloklara bölünüyor. Ardından her biri bir önceki turun çıktısıyla birlikte sıkıştırma işlevi için işleniyor.
+
+894
+02:41:09,831 --> 02:41:13,631
+Nihayet çıktı da 128 bitlik bir mesaj özeti haline getiriliyor.
+
+895
+02:41:14,171 --> 02:41:22,631
+İlk çıktığı yıllarda güvenli kabul edilmiştir ancak sonrasında sonraki güvenlik...
+
+896
+02:41:23,156 --> 02:41:44,376
+alanlarında böyle kabul edilmemiştir. Zayıf yönlerinden dolayı. Avantajları ve dezavantajlarına bakacak olursak, daha küçük hash fonksiyonlarını karşılaştırmanın ve saklamanın kolay bir yoludur. Dosyaları ve kodları karşılaştırmamız gerektiğinde kullanışlıdır.
+
+897
+02:41:51,156 --> 02:41:57,796
+Daha yavaştır. Çok daha az güvenli ve saldırılara karşı savunmasız bir algoritmatörüdür.
+
+898
+02:41:59,656 --> 02:42:01,156
+Şamir Algoritmatı...
+
+899
+02:42:05,940 --> 02:42:28,500
+Herhangi bir uzunlukta mesajları dönüştüreme 160 bitlik bir değeri, 40 basamak uzunluğunda 16'lık bir sayı olarak döndüren tek yönlü şifreleme işlevi olarak tanımlanabilir. Yapısı mesaj özetleme algoritmasına benzer ancak mesaj özetini alma süreci burada görülen işlem adımlarında da özetlenmiştir.
+
+900
+02:42:30,067 --> 02:42:50,287
+Özetle dijital imzalar veya sertifikalar için kullanılmamalıdır. 2005'ten beri teorik olarak bozulmuştur. 2011'de resmi olarak kaldırılmıştır. 2017'de Şabir Aynı iki dosya üretmeye başlayan Google akademisyenleri tarafından resmi olarak kırılmıştır.
+
+901
+02:42:56,672 --> 02:43:09,992
+Yalnızca kasıtsız bozulmaları belirlemek için dosyaları veya kodları karşılaştırmak için kullanılabilir. Eski kodlarla birlikte çalışılabilirlik sorunları olması durumunda ŞA2'nin yerini alabilir. Avantajları bu şekilde.
+
+902
+02:43:13,172 --> 02:43:27,652
+Anahtar uzunluğu saldırılara karşı direnmek için çok kısadır. Dezavantaj. Diğer algoritmalara göre yavaştır. Mesaj özetleme algoritmasından da yavaştır. Bu nedenle paralo depolama dışındaki birçok amaç için uygun görülmemektedir.
+
+903
+02:43:29,212 --> 02:43:36,532
+Yıllar içinde bulunan birçok güvenlik açığı nedeniyle de çok daha az güvenilir ve çok daha az kullanılmaktadır.
+
+904
+02:43:42,291 --> 02:44:07,612
+ŞA2 algoritmasına gelecek olursak, ŞA1'e ek olarak önerilmişti. Farklı özet boyutlarına sahip 6 algoritmadan oluşan bir ailedir. ŞA2, 224, 256, 384, 512 ve 512'nin kısaltılmış 2 versiyonu bulunmaktadır.
+
+905
+02:44:09,236 --> 02:44:17,616
+ŞA256 özellikle ABD devlet kurumları tarafından hassas verilerini güvence altına almak için yaygın olarak kullanılmaktadır. ŞA256 çok daha güçlü.
+
+906
+02:44:17,616 --> 02:44:31,716
+Ve bu makale yazıldığı zamana kadar da mevcut en güvenli hash algoritması olarak belirtilmiştir. Bitcoin işlemlerinde de ŞA256 yaygın olarak kullanılmaktadır.
+
+907
+02:44:36,404 --> 02:44:40,004
+Burada adımları verilmiş.
+
+908
+02:44:40,724 --> 02:45:08,064
+Avantajları ve dezavantajlarına bakacak olursak, Şabir'in zayıf yönlerinin güçlendirilmiş halidir. En yeni tarayıcılar, işletim sistemi platformları, posta istemcileri ve mobil cihazlar tarafından desteklenmektedir avantaj yine. Daha uzun bir değeri üreterek daha yüksek bir güvenlik düzeyi sunarak dijital güvenlik sertifikalarını ve dosyalarını doğrulamak ve imzalamak için en efektif algoritma diyebiliriz.
+
+909
+02:45:08,659 --> 02:45:19,819
+ŞA256 öncekilerden yavaştır. Ancak ŞA2 şifrelemesini desteklemek için güncellenmesi gerekebilir. Bu da dezavantajı.
+
+910
+02:45:21,971 --> 02:45:36,291
+Şah 3 ailesine gelecek olursak, Şah 3 ailesinin en son üyesidir. Mesaj özetleme Şah 1 ve Şah 2'den tamamen farklı olmakla birlikte aynı standartın bir parçası olarak geliştirilmiştir.
+
+911
+02:45:38,451 --> 02:45:51,151
+Burada bir sünger yapısı yaklaşımından bahsedilmektedir. Temel olarak verilen sünger tarafından emilir. Ardından sonuç tıpkı bir süngerin suyu emip bırakması gibi sıkıştırılır.
+
+912
+02:45:54,131 --> 02:46:06,711
+Şah3 farklı sağlama işlevlerine sahip dört algoritmadan oluşan bir ailedir ve ayrıca etki alanı hash, rastgele hash, akış şifreleme ve MAC adresleri oluşturmak için kullanılabilen iki genişletilebilir çıktı işleği vardır.
+
+913
+02:46:07,252 --> 02:46:14,511
+Burada Şah3'ün işlem adımları veriliyor. Avantaj ve dezavantajlarına bakacak olursak.
+
+914
+02:46:16,048 --> 02:46:34,188
+Kriptografi donanım birleşenleri tarafından işlendiğinde öncekilerden çok daha hızlıdır. Saldırılara karşı yani büyük boyutlu ya da çok geniş kapsamlı saldırılara karşı en güçlü algoritmadır, savunmasız değildir yani.
+
+915
+02:46:35,379 --> 02:46:55,839
+Uygun kapasite oran çiftini seçerek performans güvenlik dengelerini mümkün kılmaktadır. Bulut sunucularını tüm güvenlik güçleri için tek bir permutasyon kullanarak uygulama maliyetlerini düşürmektedir. Girdi ve çıktığı için değişken uzunluklara izin verdiği için esnektir. Bu da onu ideal bir algoritma olarak kılmaktadır.
+
+916
+02:46:55,839 --> 02:46:58,079
+Dezavantajlarına gelecek olursak.
+
+917
+02:46:58,579 --> 02:47:05,960
+Çarpışma saldırılarına karşı hassastır. ŞA2'den çok daha yavaştır. Donanım ve yazılım desteği eksikliği vardır.
+
+918
+02:47:10,479 --> 02:47:20,899
+Dijital imzalardan parola depolamaya imzalama sertifikalarından SSL-TSL sertifikalarına kadar geniş kullanım alanları vardır.
+
+919
+02:47:22,451 --> 02:47:43,131
+Burada bu makalede algoritmaların geleceğinden bahsedilmiş. Dijital para birimlerinden arttırılmış ve sanal gerçekliğe, IoT'den genişletilmesi, IoT'den metaverse ve kuantum hesaplamanın yükselişine kadar bu yeni ekosistemler son derece güvenli algoritmalara ihtiyaçlarım var.
+
+920
+02:47:44,755 --> 02:47:49,975
+Bu şu anda sorunun hash algoritmalara hala ihtiyaç duyup duymayacağımız anlamına gelir.
+
+921
+02:47:50,715 --> 02:47:58,655
+Daha ziyade gerçek güvenli algoritmaların, örneğin şahı 256 gibi, gelecekteki zorluklara dayanıp dayanmayacağı ile de ilgilidir.
+
+922
+02:47:58,655 --> 02:48:09,655
+Özellikle kuantum hesaplamadan dolayı. Kuantum hesaplama şu an açıklanmış değil ama kuantum.
+
+923
+02:48:10,095 --> 02:48:17,935
+Hesaplama geldiği zaman bu algoritmalar hala kullanılabilir olacak mı ya da olmayacak mı? Burada kesin bir cevap verilemiyor.
+
+924
+02:48:24,755 --> 02:48:36,796
+Biz bu makale dışında bir de 2022 yılında yayınlanmış bir, gene hash function'u inceleyen bir makaleyi inceledik.
+
+925
+02:48:37,476 --> 02:48:47,716
+Orada aynı algoritmaları anlatmış, ek olarak üç tane yöntem önermiş.
+
+926
+02:48:52,755 --> 02:49:02,435
+Blake ve CurlP olarak üç yöntemi önermiş. Ancak çok detaylı bir inceleme verilmemiş.
+
+927
+02:49:04,475 --> 02:49:10,435
+Burada HESH algoritmalarının çarpışma oranları verilmiş.
+
+928
+02:49:10,435 --> 02:49:18,795
+Bu oranlardan dolayı ek makalelerdeki yöntemlerin karşılaştırılması yapılmış.
+
+929
+02:49:21,108 --> 02:49:27,207
+Birçok araştırmacı bu sorunların üstesinden gelmek için bu tabloda kendi algoritmalarını önermişler.
+
+930
+02:49:28,027 --> 02:49:36,768
+Bell, Fethel ve Faron'un 256 bitlik bir hash değeri üreten bir hash fonksiyonu algoritması sunmuş.
+
+931
+02:49:37,527 --> 02:49:41,747
+Merkel ve Demgard yapısının bir varyantını kullanmışlar.
+
+932
+02:49:49,108 --> 02:50:08,108
+LİV ve arkadaşlarının makalesinde nihai hash kodu olarak 128 bit hash değerleri üreten ve böylece uygulanabilirliğinden ödün veren karmaşık bir hash fonksiyonu tasarlamak için dinamik S kutusu yöntemini önermişler.
+
+933
+02:50:10,627 --> 02:50:16,547
+S kutusu aracılığıyla verilen esneklik, önerilen bu algoritmanın en büyük dezavantajı olarak.
+
+934
+02:50:17,108 --> 02:50:28,208
+Belirtilmiş. Heş kodunun uzunluğunun çarpışma veya ön görüntü saldırılarına karşı güvenliği garanti etmediğini belirtmişler.
+
+935
+02:50:28,691 --> 02:50:52,931
+Abdullah ve diğerlerinin makalesinde 224 bitlik bir özet değeri üreten yeni bir özet fonksiyonu geliştirilmiştir. Bu geliştirmede ancak bir dezavantaj var. Mesaj özetleme 5 algoritmasına kadar olan mesaj özetini üretmek için ciddi bir zaman gerektiriyor. Bu da verimliliği çok düşürdüğünü açıklamışlar.
+
+936
+02:50:53,843 --> 02:51:08,723
+Tur ve Jourec makalesinde 128 bitlik bir hash fonksiyonu geliştirmişler ve bir sinir ağ kullanmışlar burada.
+
+937
+02:51:08,723 --> 02:51:20,463
+Bu tür yaklaşımların kısa bir hash değerine sahip olmasının yanı sıra, yani kısa bir hash fonksiyonu var, avantaj ancak yürütülmesinde zorluklar olduğundan bahsetmişler.
+
+938
+02:51:21,139 --> 02:51:39,700
+Son makalede 2D ve 1D kartlık haritaları entegre etmişler. Burada rastgele uzunluktaki bir mesaj için 128 bit hash değer üretilmiş. Buradaki hash değerinin uzunluğu kısa. Bu yüzden çarpışmalara karşı dirençli olmadığı savunulmuş.
+
+939
+02:51:42,899 --> 02:51:44,860
+Benim sonumum bu kadar.
+
+940
+02:51:47,667 --> 02:51:51,067
+Tamamdır. Çok teşekkür ediyorum. Ben teşekkür ederim.
+
+941
+02:51:51,447 --> 02:51:57,747
+Geçmiş olsun tekrar [öğrenci]'a da. Şimdi [öğrenci] sen müsait misin şu an?
+
+942
+02:51:58,268 --> 02:52:01,887
+Evet hocam. Kusura bakmayın. Toplantıdan toplantıya atıyorum.
+
+943
+02:52:02,687 --> 02:52:08,947
+Şimdi başlayalım ama bir şekilde senin sunumun bitmeden kapanırsa diye bir korkun var.
+
+944
+02:52:08,947 --> 02:52:14,467
+Eğer öyle bir şey olursa hızlı bir şekilde size link atacağım. Oradan devam ederiz. Şimdi başlayalım. Vakit kaybetmeyelim.
+
+945
+02:52:15,028 --> 02:52:17,608
+Tamam hocam, ben ekran paylaşmamı yapayım.
+
+946
+02:52:17,608 --> 02:52:18,228
+Buyur.
+
+947
+02:52:20,128 --> 02:52:23,908
+Maillerinizi kontrol edin. Eğer şey olursa hemen atacağım.
+
+948
+02:52:23,908 --> 02:52:24,568
+Tamamdır hocam.
+
+949
+02:52:33,907 --> 02:52:49,368
+Hash Functions in Blockchain konusuna değineceğim ben bugün. Zaten birçok arkadaş Hash ile alakalı konulara değindi. İşin ne anlama gelgilerle alakalı. Burada örnek bir tekstimiz var. Burada Hash Functions ile birlikte.
+
+950
+02:52:50,131 --> 02:53:06,891
+Geri dönüşü demeyecek. Irreversible bir şekilde dönüşüm sağlanıyor. Ondan sonra burada bir örnek var. Mesela her bir...
+
+951
+02:53:07,092 --> 02:53:10,252
+kelime için, her bir cümle için
+
+952
+02:53:10,252 --> 02:53:13,311
+veya en ufak bir şey değiştiğinde
+
+953
+02:53:13,311 --> 02:53:17,172
+function değerimizde, diggist değerimizde
+
+954
+02:53:17,172 --> 02:53:18,332
+anında değişmiş oluyor.
+
+955
+02:53:18,772 --> 02:53:20,051
+Burada da bir mouse örneği var.
+
+956
+02:53:21,731 --> 02:53:24,532
+Burada kriptografik
+
+957
+02:53:24,532 --> 02:53:26,192
+hash function değiştikten sonra
+
+958
+02:53:26,192 --> 02:53:28,632
+böyle bir funksiyona girdikten sonra
+
+959
+02:53:28,632 --> 02:53:30,032
+gördüğünüz gibi
+
+960
+02:53:30,675 --> 02:53:48,675
+Bir output oluşuyor. En ufak bir değişiklikte tamamen farklı bir output oluşmuş oluyor. Burada da farklı bir örnek. Gördüğünüz gibi blockchain yazdığımız zaman...
+
+961
+02:53:49,152 --> 02:54:04,852
+Bir output çıkıyor. Ama Blockchain is the Future yazdığım zaman bambaşka bir output çıkıyor. Yani ilk outputun da devamlı şeklinde de oluyor aslında. Yani burada birebir aslında bir output oluşmuş oluyor.
+
+962
+02:54:17,139 --> 02:54:31,139
+Karma işlevi, sabit boyutlu bir çıktı olan mesaj özeti oluşturmak için kullanılıyor. Yani aslında bir hash değeri ortaya çıkıyor.
+
+963
+02:54:31,139 --> 02:54:42,139
+Burada input değerimiz mesaj oluyor, ortaya çıkan değerimiz hash oluyor. Yani biggest değerimiz çıkmış oluyor aslında.
+
+964
+02:54:44,371 --> 02:54:56,851
+Burada daha önce de bahsettiğim gibi geri alınamaz bir değer oluşuyor. Tek yönlü bir işler. Mesajın geri üretilemeyeceği anlamına geliyor aslında bu.
+
+965
+02:54:58,992 --> 02:55:01,391
+Diğer slide'ıma geçecek olursam.
+
+966
+02:55:04,531 --> 02:55:14,531
+Burada da farklı Outlook örneklerimiz var. Bu Outlook girdilerimiz numaralar olabilir, tekst olabilir, resim olabilir, video olabilir, ses dosyası olabilir.
+
+967
+02:55:14,531 --> 02:55:30,188
+Bunlar mesaja dönüştükten sonra bir cryptographic hash function yardımıyla bir digus değerimiz oluşuyor ve artık geri dönülemez bir değerimiz olmuş oluyor.
+
+968
+02:55:31,987 --> 02:55:54,007
+Bir de bu Hash Function'ların özellikleri var. Arkadaşlar da bahsetti. Deterministik olmalı. Yani aynı giriş verileri için her zaman aynı Hash üretir. Ancak tek harf bile değişse bile Hash önemli ölçüde değişiyor.
+
+969
+02:55:54,675 --> 02:56:09,355
+Burada da gördüğünüz gibi hello ve hello kelimesinde bir o harfini büyüttüğümüz zaman tamamen ilkinden farklı bir hash değeri, digis değeri olmuş oluyor.
+
+970
+02:56:11,827 --> 02:56:27,067
+Nearly Collision Free, yani neredeyse çarpışmanın olmadığı konu arkadaşlarına bahsettiği gibi, tek yönlü olduğu için geri döndürülemiyor.
+
+971
+02:56:28,907 --> 02:56:36,207
+Yani mesela X için bir HX'e değerini oluşturduk. Değerini kullanarak X'i bulamıyoruz.
+
+972
+02:56:39,156 --> 02:56:53,976
+Yani belki çok çok çok küçük bir olasılık vardır ama işin sonunda tamamen bağımsız bir output olmuş oluyor. Yani burada da bir örnek vermiş.
+
+973
+02:56:53,976 --> 02:57:06,096
+İşte bir atak olduğu zaman yani her bir derya saplaması için 2 üzeri n bölü 2 gibi bir hash operasyonu yapması gerekiyor.
+
+974
+02:57:06,548 --> 02:57:31,847
+Yani 256 hans fansiyonu için toplamda 2 üzeri 128 bir operasyon yapmış oluyor. Yani bir tane değer mikrosekund olsa bile her bir işlem. Bu da yaklaşık 10 üzeri 25 yıla tekabül ediyor bunun çözülmesi için.
+
+975
+02:57:33,843 --> 02:57:36,723
+Bayağı sürüyor. Bu kadar ömür olmayacak.
+
+976
+02:57:38,583 --> 02:57:50,663
+Information Hiding, bir mesajın özeti geride döndüremez olduğundan farklı mesajlar için aynı eşeği bulmak neredeyse imkansız oluyor aslında.
+
+977
+02:57:51,884 --> 02:57:56,903
+Bu nedenle mesajı doğrulamanın tek yolu olası mesajı özetlemektir.
+
+978
+02:57:57,620 --> 02:58:21,000
+Yani ardından orijinal mesajın özetiyle eşleşip eşleşmediğini kontrol ediyoruz. Gizleme bir mesajı işlemeye ve daha sonra kontrol etmeye yardımcı oluyor. Burada mesajın özetini karma hale getirmek ve depolamak anlamına geliyor. Buradaki örnekte görüyoruz.
+
+979
+02:58:25,332 --> 02:58:44,112
+ŞA256 Algoritmasından bahsedecek olursak, yani ŞA256 bir mesajın 256 bit özetini oluşturan güvenli iş algoritması, en güvenilir algoritmalardan biri arkadaşlarına bahsettiği gibi.
+
+980
+02:58:48,112 --> 02:58:50,612
+Burada belli adımlar var.
+
+981
+02:58:53,747 --> 02:59:06,347
+ŞA256 algoritmasını oluşturmasıyla alakalı. Birinci adımda mesaj boyutunun uzunluğu 512'nin katı olacak şekilde dolduruyoruz.
+
+982
+02:59:06,932 --> 02:59:22,472
+Burada mesajı doldurmak, orijinal mesajı fazladan bazı bitler eklemek anlamına geliyor. Bu nedenle toplam uzunluk 512'nin katından tam olarak 64 bir daha az oluyor.
+
+983
+02:59:23,392 --> 02:59:29,632
+Burada da M mesajının uzunluğu L'dir aslında. Yani L artı P 64 eşittir.
+
+984
+02:59:30,195 --> 02:59:39,115
+N çarpı 512 anlamına geliyor. Burada L mesajın uzunluğudur ve P'ye de doldurulan bitlerdir diyebiliriz.
+
+985
+02:59:41,935 --> 02:59:48,595
+Uzunluk bitlerini ekleme. Adım bir de orijinal mesaja bitleri doldurmuştuk.
+
+986
+02:59:49,035 --> 02:59:56,175
+Şimdi daha önce 64 bit olarak ifade edilen uzunluk bitlerini tam olarak 512'nin katına eşit hale getirmek için ekliyoruz.
+
+987
+02:59:57,012 --> 03:00:17,432
+64 biti hesaplamak için mod 32 üzeri kullanmış oluyoruz. Burada da böylece tüm mesaj bloğunu elde etmek için L artı P L mod 32 olduğunda eşittir. N çarpı 512'yi elde etmiş oluyoruz.
+
+988
+03:00:18,324 --> 03:00:31,324
+Zincirleme değişkenini başlatırsak, mesajın tamamı 512 bitlik M blok bölünmüş oluyor aslında M bloklarına M1, M2, M3 gibi.
+
+989
+03:00:31,324 --> 03:00:42,252
+Daha fazla kullanmak için birkaç ara bellek değere ihtiyacımız oluyor. Burada 0'dan 63'e hexadecimallık yani 16'lık değerler.
+
+990
+03:00:42,324 --> 03:00:47,324
+Anahtar olarak adlandırılıyor ve sonrasında K ile gösterilmiş oluyor.
+
+991
+03:00:49,324 --> 03:00:55,324
+Adım 4'te de mesajın tamamı aslında ne olmuş oluyor?
+
+992
+03:00:55,324 --> 03:01:06,324
+12 bitlik M bloğa bölünmüş oluyor. Her 512 bitlik bloğ, her biri 32 bitlik 16 alt bloğa dönüşmüş oluyor.
+
+993
+03:01:06,579 --> 03:01:15,039
+64 işlem turu olmuş oluyor ve üretilen çıktı. Bir sonraki işlem turuna input olarak giriyor.
+
+994
+03:01:16,799 --> 03:01:20,719
+Burada da olayın akış şemasını gösteriyor.
+
+995
+03:01:25,363 --> 03:01:47,343
+Onun dışında tüm turlardaki kayı, zaten başlatılmıştı, we işlenen iterasyon sayısına bağlı olarak her blok için ayrı ayrı hesaplıyor. Tüm döngü n'e ulaşana kadar, n'e ulaşana kadar.
+
+996
+03:01:47,343 --> 03:01:57,423
+Kendini tekrar ediyor 512 bit blok sayısıyla. Son sonuç ŞA 256 özeti olarak kabul edilecektir.
+
+997
+03:02:03,636 --> 03:02:15,916
+Hatch Function'ın kullanım alanlarını gösteriyor. Merkle Tree gibi, Proof of Work Consensus gibi, Digital Signatures gibi, The Chain of Works gibi.
+
+998
+03:02:18,855 --> 03:02:27,628
+Sonuç olarak aslında kriptografik karma oluşturmanın karma işleminin ve özelliklerinin temellerini...
+
+999
+03:02:27,700 --> 03:02:41,300
+Açıklamış olduk aslında burada. Daha sonra çeşitli uygulamalarda popüler kullanılan Ş256H algoritmasını açıklıyor gibi.
+
+1000
+03:02:42,520 --> 03:02:52,300
+Artık en popüler metotlardan birinden bahsetmiş olduk. Böylelikle de sunumu bitirmiş oldum.
+
+1001
+03:02:54,611 --> 03:02:56,471
+Tamamdır. Çok teşekkür ediyorum.
+
+1002
+03:02:56,572 --> 03:02:57,311
+Ben teşekkür ederim.
+
+1003
+03:02:58,272 --> 03:03:06,592
+Hepinize teşekkür ederim arkadaşlar. Bitti zannedersem. Herkesin sunumu. Var mı atladığım biri? Yok.
+
+1004
+03:03:07,592 --> 03:03:17,231
+O zaman haftaya normal ders bütünümüzde devam edeceğiz. Zaten son haftamız olacak. Sonra da final haftamız var. Online yapılacakmış finaller. Onunla alakalı senato kararını gördüm.
+
+1005
+03:03:18,912 --> 03:03:20,451
+Haftaya görüşüyoruz o zaman.
+
+1006
+03:03:22,548 --> 03:03:27,048
+Teşekkürler hocam. Görüşmek üzere. Kolay gelsin.
