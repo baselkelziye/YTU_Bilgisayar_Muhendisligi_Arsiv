@@ -32,6 +32,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Atatürk İlkeleri ve İnkılâp Tarihi 2 Ders Kayıtları](./Atat%C3%BCrk%20%C4%B0lkeleri%20ve%20%C4%B0nk%C4%B1l%C3%A2p%20Tarihi%202/ders_kayitlari/) ✨
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1AYcmjk-pa2CV7H6Olqt80vEavnGyQklI?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
