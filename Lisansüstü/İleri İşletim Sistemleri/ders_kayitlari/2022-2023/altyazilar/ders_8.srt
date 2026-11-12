@@ -1,0 +1,1827 @@
+1
+00:00:22,452 --> 00:03:03,628
+Sesim geliyor mu arkadaşlar?
+
+2
+00:03:12,563 --> 00:03:17,323
+[öğrenci] sesin çok derinde.
+
+3
+00:03:18,943 --> 00:03:21,063
+Şimdi daha iyidir hocam muhtemelen.
+
+4
+00:03:21,063 --> 00:03:22,024
+Şimdi daha iyi.
+
+5
+00:03:58,099 --> 00:04:02,680
+Biraz daha bekliyorum ki başka gelecek arkadaş varsa onlar da katılabilsin diye.
+
+6
+00:04:04,000 --> 00:04:05,019
+Tamamdır hocam.
+
+7
+00:09:09,620 --> 00:09:11,840
+Evet, zannedersem bu kadar olacağız.
+
+8
+00:09:16,259 --> 00:09:17,799
+Duyuyorsunuz değil mi beni arkadaşlar?
+
+9
+00:09:19,440 --> 00:09:20,500
+Evet hocam, sesiniz geliyor.
+
+10
+00:09:21,460 --> 00:09:24,200
+Tamam, [öğrenci] senin sesin yine çok derinden geliyor.
+
+11
+00:09:25,759 --> 00:09:28,879
+[öğrenci], sen bir şey söylediysen seni hiç duymadım, haberiniz ola.
+
+12
+00:09:32,879 --> 00:09:34,399
+Kim başlamak istiyor?
+
+13
+00:09:39,475 --> 00:09:40,796
+Ben başlayabilirim hocam.
+
+14
+00:09:41,456 --> 00:09:42,515
+Hadi başla bakalım.
+
+15
+00:09:46,451 --> 00:09:49,572
+Memory Resource Management Unutbiyen ve ESX Server değil mi hocam?
+
+16
+00:09:50,552 --> 00:09:58,672
+Evet, evet. Yani zaten bu işte. Bunu konuşmuştuk. Geçen hafta bayram olduğu için şey yapamadık.
+
+17
+00:09:59,772 --> 00:10:01,591
+Aynen bunu bırakmıştık bu haftaya.
+
+18
+00:10:03,231 --> 00:10:09,871
+Bu arada arkadaşlarınız bana sınavla ilgili mail yazmış. Size gönderdiğim mail geldi değil mi? Geçti evinize.
+
+19
+00:10:10,772 --> 00:10:15,052
+Geldi hocam, haftaya yapacağız dediniz. Anladığım kadarıyla.
+
+20
+00:10:15,812 --> 00:10:19,032
+Aynen. Aynen haftaya yapacağız. Evet.
+
+21
+00:10:20,711 --> 00:10:30,792
+Hocam burada VMware ESX Server diye abstracta, Team Software Layer diye bir yapıdan bahsedecek. Hardware'in multiplex çoğalttığını söylüyor.
+
+22
+00:10:32,072 --> 00:10:36,451
+Balloning Teknik diyor. Bunlar da ileride bahsedecek. Idle Text diyor.
+
+23
+00:10:37,011 --> 00:10:53,431
+Content-based page sharing, Hatay'ı, Page Re-Mapping diye birkaç şeyden bahsedeceğini söylüyorum. Bizim genel konumuz burada sanallaştırma işlemleri. Bununla girmeden önce bence bir sanallaştırmayı biraz anlatmamız lazım diye düşünüyorum.
+
+24
+00:10:54,251 --> 00:10:56,631
+Peki. Dinliyorum ben.
+
+25
+00:10:57,631 --> 00:10:59,251
+Sanallaştırmadan biraz bahsedeyim dedim.
+
+26
+00:11:02,451 --> 00:11:03,051
+Evet dinliyorum.
+
+27
+00:11:03,051 --> 00:11:04,031
+Biraz bakayım hocam.
+
+28
+00:11:08,596 --> 00:11:30,456
+Bu sanatlaştırma derken hocam benim aklıma bir şey geliyor. Bir abstraction yöntemi geliyor aslında. Ortada bir abstraction konsepti diye. Örneğin Java Virtual Machine. Siz bir kod yazacaksınız işte. Örneğin ARM üzerinde yazacaksınız. ARM'ın instructionları çalışacak. Ona göre yazmanız lazım. Intel'deyseniz Intel instructionları, PowerPC'deyseniz PowerPC'nin instructionları.
+
+29
+00:11:32,980 --> 00:11:58,500
+Diyelim ki şeyi yaptınız. Bu üçünde bir kod çalıştırmak istiyorsunuz. Bu üç mimaride. Üçünde instrakçınlarını yazmanız lazım. Ama Java Virtual Machine araya giriyor. Diyor ki en son SM'de kodunu ben çıkarayım. Sen karışma diyor. O ara üçüne de ayrı şey çıkarıyor. Yani burada bir nevi şey konseptini, CPU konseptini virtualize ediyor. Orada o donanımı sen ekstra bir işlem yapmadan kullanabiliyorsun.
+
+30
+00:11:59,059 --> 00:12:06,379
+Peki, Virtualization'dan kastımız bu mu yani burada? Bu VMware Memory Management?
+
+31
+00:12:06,379 --> 00:12:11,519
+Hayır, buradaki de bunun memori kısmından bahsedecek. CPU yaptınız çok güzel.
+
+32
+00:12:11,699 --> 00:12:20,319
+Hayır. Burada VMware ES6 Server'daki Virtualization, senin söylediğin bu şekilde anlattığın bir Virtualization var.
+
+33
+00:12:20,459 --> 00:12:24,479
+Hayır, hayır bu değil. Bu değil. Ben sadece Java 3.0'a görmek istiyorum.
+
+34
+00:12:26,868 --> 00:12:31,307
+Memory sanallaştırıdan bahsediyor. Bunun için de şey anlatmam lazım önce.
+
+35
+00:12:31,307 --> 00:12:40,608
+Memory sanallaştırmaya gelmeden önce sen az önce Java Virtual Machine örneği üzerinden bir virtualization anlattın.
+
+36
+00:12:41,008 --> 00:12:48,307
+CPU architecture'ını ben oluşturayım, öyle bir yaklaşım olsun dedim. Ama ben de sordum ki...
+
+37
+00:12:48,399 --> 00:13:04,639
+Bu paperda, memory resource management üzerine olan bu paperda bahsi geçen veyahut da temel alınan ESX serverdaki, VMware ESX serverdaki sanallaştırmada böyle bir şey mi? Ben onu önce soruyorum.
+
+38
+00:13:05,059 --> 00:13:12,000
+Yok hocam, böyle bir şey mi? Konsept olarak evet, buna yakın. Araya yine biri giriyor, bir yazılım.
+
+39
+00:13:12,436 --> 00:13:15,855
+ve asıl memori, fiziksel memori dediğimiz virtual memori.
+
+40
+00:13:15,855 --> 00:13:25,436
+Memori değil ama bak CPU'dan bahsediyoruz. Sen olayı hep memoriye taşıyorsun. Sen kendin söyledin CPU tarafını. Onunla ilgili soruyorum şu anda. Onunla ilgili düşünüyorsun.
+
+41
+00:13:25,976 --> 00:13:28,615
+Yok bu CPU'ya karışmıyor hocam.
+
+42
+00:13:30,696 --> 00:13:33,436
+ES6 Server'daki sanallaştırma...
+
+43
+00:13:34,756 --> 00:13:37,056
+Benim düşüncem böyle bir şey değil.
+
+44
+00:13:38,216 --> 00:13:39,036
+Nasıl bir şey değil?
+
+45
+00:13:39,535 --> 00:13:55,835
+Buradaki program içerisindeki işte guest operating sistemleri çalıştırıyor. Ama ben hem Intel'e çıkarayım demiyor, hem PowerPC'ye ayrı çıkarayım demiyor da, onlara ulaşmak istediğim memori, ben onlardan abstrakt edeyim, orayı yönetim diyor. Ben böyle anladım.
+
+46
+00:13:56,947 --> 00:14:22,907
+Bak şimdi VMware ESX Server hem CPU sanallaştırması yapıyor, hem memori sanallaştırması yapıyor, hem de peripheral, IO device sanallaştırması yapıyor. Ama sen ne sorarsam sorayım hep bu paperdaki şu an memori resource management'a doğru taşıyorsun. Fakat kendin dedin ki Java Virtual Machine de Java Virtual Machine araya girerek bir CPU oluşturuyor dedin.
+
+47
+00:14:23,316 --> 00:14:30,036
+Bir CPU mimarisi oluşturuyor dedin. Alt taraf ister Intel olsun, ister ARM olsun, ister PowerPC olsun.
+
+48
+00:14:30,456 --> 00:14:31,216
+Evet hocam, aynen.
+
+49
+00:14:31,716 --> 00:14:42,296
+Ben de diyorum ki daha bu paper'ın konusuna girmeden buradaki VMware ESX Server'daki CPU sanallaştırma da bu senin söylediğin gibi mi acaba?
+
+50
+00:14:42,716 --> 00:14:46,696
+Onunla alakalı soruyorum. Yoksa memori kısmıyla alakalı sormuyorum.
+
+51
+00:14:47,476 --> 00:14:50,456
+Anladım hocam. Yani burada şöyle bir yorum yapabilirim.
+
+52
+00:14:51,283 --> 00:15:15,223
+Yani benim anlattığım konsepte birden fazla mimariye, işte instruction seti, birden fazla instruction set oluşturmak aslında. Yani bu şey demek olur. Eğer CPU dediğim gibi sanırlaştırıyorsa şey yapması lazım. Bunun hem Linux'te de hem şeyde de çalışabiliyor olması lazım. Hem Intel'de hem ARM'da.
+
+53
+00:15:15,892 --> 00:15:22,172
+Hem de PowerPC'de diyelim çalışabiliyor olması lazım. Çalışabiliyor diye düşünüyorum. O yüzden yapıyordur. Evet aslında olabilir.
+
+54
+00:15:24,392 --> 00:15:24,832
+Diyorsun.
+
+55
+00:15:26,832 --> 00:15:34,512
+Şimdi farklı sanallaştırma teknikleri var CPU açısında. Senin söylediğin bir sanal CPU oluşturmak.
+
+56
+00:15:35,112 --> 00:15:36,672
+Evet, aynen sanal CPU oluşturmak.
+
+57
+00:15:36,672 --> 00:15:38,432
+Java Virtual Machine.
+
+58
+00:15:38,964 --> 00:15:57,764
+Aslında bir Java CPU üzerinde run ediyor. Java CPU'sunun kendi instructionları var. Generic instructionları var. Move olabilir, Add olabilir, Increment olabilir, Decrement olabilir, Compare olabilir. Bunlar var. Ama bunlar generic instructionlar.
+
+59
+00:15:58,144 --> 00:16:07,543
+Ve bunların, bu instrakşınların, Intel mimarisindeki karşılığı başka, PowerPC'deki başka, ARM işlemcisindeki başka.
+
+60
+00:16:07,543 --> 00:16:11,043
+Java bir kümleşim araya giriyor.
+
+61
+00:16:13,152 --> 00:16:26,172
+CPU'su diyelim, oradaki instruction'ı alt taraftaki gerçek donanımda yer alan işlemci neyse orada denk düşen instruction'a dönüştürüyor.
+
+62
+00:16:26,912 --> 00:16:27,432
+Evet hocam.
+
+63
+00:16:27,432 --> 00:16:40,332
+Böylece ben bu yazılmış olan kodu farklı bir mimariye taşıdığımda, farklı bir işlemci mimarisini taşıdığımda herhangi bir değişiklik yaşamıyorum.
+
+64
+00:16:40,947 --> 00:16:44,028
+Donanım seviyesinde yaşamıyorum. Öyle algılıyorum.
+
+65
+00:16:44,500 --> 00:17:04,880
+Çünkü C'de yazdığım bir kod portable olabilir. Hep öyle diyoruz. Ama onun portable olması için ilgili hedef donanım neyse, Intel mimarisi ise Intel için yeniden compile edilmesi lazım. İşte ARM ise ARM için yeniden, Power Piece ise Power Piece için yeniden compile edilmesi lazım.
+
+66
+00:17:12,500 --> 00:17:17,079
+Sağdan da başlar duruma bağlı olarak da değişiklikler bile yapılması gerekiyor.
+
+67
+00:17:17,079 --> 00:17:23,000
+Halbuki Java bunu arada elimine ediyor. Çünkü bir Java işlemcisi var, tanımlanmış.
+
+68
+00:17:23,160 --> 00:17:32,339
+Java işlemcisini bize gösteriyor. Bunu varmış gibi yapıyor. Ama alt taraftaki işlemciden yararlı.
+
+69
+00:17:32,339 --> 00:17:34,339
+Peki bu paperdaki...
+
+70
+00:17:34,708 --> 00:17:49,908
+Bu sanallaştırma mantığında, ESX Server'ın sanallaştırma mantığında işlemci sanallaştırması böyle mi gerçekleşiyor? Bunun üzerine mi kurulu? Sorun bu benim.
+
+71
+00:17:50,548 --> 00:18:03,548
+Ben de bir yorum yapayım. Yanlış olabilir. Yani benim anladığım kadarıyla bu direkt aslında en başında da bahsettiği gibi sanki birden fazla makinanın...
+
+72
+00:18:04,500 --> 00:18:27,340
+Sanal olarak ortaklaşa kullanılması olarak anlıyorum ben. Birden farzıza virtual machine'in CPU'su gereklik olduğu sürece hangi prosesi, hangi uygulamaya gerekliyse onu oradan alıyor, o amaçla kullanıyor, sonra geri bırakıyor gibi ben anladım.
+
+73
+00:18:27,340 --> 00:18:29,460
+Doğru.
+
+74
+00:18:31,539 --> 00:18:45,480
+Kavramsal olarak doğru. Buradaki Virtualization, burada ESX Server'da karşılaştığımız Virtualization, bir donanımın sanal kopyalarını oluşturmak.
+
+75
+00:18:46,079 --> 00:18:50,779
+Donanım mimarisinde veyahut da işlemci mimarisinde bir değişiklik yapmıyor.
+
+76
+00:18:50,920 --> 00:18:58,940
+Alt tarafta Intel varsa, onun üzerinde çalıştıracağınız her türlü işletim sistemi Intel mimarisi için olmalı.
+
+77
+00:18:59,508 --> 00:19:14,088
+ARM varsa ARM için olmalı, PowerPC varsa PowerPC için olmalı. Yani ARM işlemcisi için yazılmış bir işletim sistemini nerede çalıştırmıyorsunuz veya çalıştıramıyorsunuz mantık olarak?
+
+78
+00:19:14,088 --> 00:19:27,428
+Intel'de, Intel'i ARM'da çalıştıramıyorsunuz. Buradaki sanallaştırma alt taraftaki fiziksel mimari ile, işlemci mimarisi ile üst tarafta onun üzerinde çalışacak olan
+
+79
+00:19:27,508 --> 00:19:40,128
+İşletim Sistemlerinin, Hedef Mimarilerinin aynı olmasını gerektiriyor. İkisi de bakın, Virtualization ama iki farklı kategori Virtualization.
+
+80
+00:19:52,627 --> 00:20:09,279
+Aynı sistemin, aynı donanımın, bilgisayar sisteminin üzerinde birden fazla işletim sisteminin birbirlerinden haberi olmaksızın her biri sanki donanımı tek başına...
+
+81
+00:20:09,279 --> 00:20:28,259
+Kendisi çalışıyormuşçasına, sahiplenmişçasına, o donanım üzerinde sadece kendisi çalışıyormuşçasına bir algı, bir yapı oluşturulması. Buradaki sanallaştırma bu. Bunun üzerine kurulu. Farklı sanallaştırma kavramları var.
+
+82
+00:20:30,384 --> 00:20:48,903
+Bu tarz bir sanallaştırmada memori kaynağının yönetilmesi. Aslında bir işletim sistemi doğal olarak memori yönetmekle yükümlü. Ama memori neler arasında yönetiyor? Prosesler arasında yönetiyor.
+
+83
+00:20:50,355 --> 00:21:14,735
+Ortak bir memori var. İşte diyelim 1 GB, 2 GB, 10 GB neyse bunu ihtiyaca bağlı olarak prosesler arasında yönetiyor. Zaten bu işletim sisteminin temel görevlerinden bir tanesi. Ama burada daha öteye geçiyoruz. Proseslerin her birini sanki bir işletim sistemi gibi düşünün.
+
+84
+00:21:16,564 --> 00:21:44,204
+Uç noktada sankisini kaldırıyoruz. Evet bunlar bir işletim sistemi. Ama onu öyle yaptığım zaman CPU açısından da bunu izole etmem lazım. Çevre bilimleri açısından da disk erişimi olsun, network erişimi olsun, diğer olabilecek çevre bilimleri olsun. Bunlar açısından da her bir işletim sistemi sahip. Sanki sadece kendisi o donanıma sahip.
+
+85
+00:21:44,564 --> 00:21:52,364
+Anamın üzerinde çalışıyormuş şeklinde düşünmeli, böyle bunu görmeli, buna inanmalı. Mantık bu.
+
+86
+00:21:52,364 --> 00:22:08,963
+Şimdi burada da memorinin yönetilmesi üzerine kaç tarihli? 2002 tarihli ki onun öncesinde yaptıkları, 2002 arasında yaptıkları çalışmaların özeti orada elde ettikleri.
+
+87
+00:22:09,779 --> 00:22:14,900
+Deneyimlerin, tecrübelerin, bilgilerin özeti. Anlaştık mı?
+
+88
+00:22:16,200 --> 00:22:17,360
+Anladım hocam, şimdi anlayalım.
+
+89
+00:22:17,360 --> 00:22:30,579
+Yani farklı virtualization tipleri var. Tek bir tip virtualization yok. Bunu unutmamak lazım.
+
+90
+00:22:38,804 --> 00:22:50,824
+Bir Full Virtualization'dan bahsediyoruz. Bir Para Virtualization'dan bahsediyoruz. Bir de OS Level Virtualization'dan bahsediyoruz.
+
+91
+00:22:50,824 --> 00:23:00,903
+Yani 3 tane bunlar Type 1, Type 2 falan diye de geçiyorlar.
+
+92
+00:23:07,476 --> 00:23:28,816
+Başlangıçta belirtilen Type 1 ve Type 2. Yani birinde Full Virtualization var, diğerinde OS Level Virtualization var. Öyle düşünebilirsiniz. Bakın şurada diyor ki, Introduction'ın bir parçası nerede? İkinci sütunda.
+
+93
+00:23:32,692 --> 00:23:47,531
+The design of ESX Server differs significantly from VMware Workstation. Dikkat edin, VMware Workstation da aslında VMware'in bir ürünü. ESX de VMware'in bir ürünü.
+
+94
+00:23:47,531 --> 00:23:56,931
+Which uses hosted virtual machine architecture. Hosted, yani operating system üzerinde.
+
+95
+00:23:57,279 --> 00:24:11,779
+That takes advantage of a pre-existing operating system for portable I.O. device support. For example, a Linux-hosted virtual machine monitor, VMM virtual machine monitoring kısaltması.
+
+96
+00:24:13,940 --> 00:24:26,320
+Intercepts, attempts by a VM to read sectors from its virtual disk and issues a read system call to the underlying Linux host to retrieve the corresponding data.
+
+97
+00:24:26,320 --> 00:24:36,960
+Zaten işletim sistemi içerisinde read system çağrısı var. Üst taraftaki virtual machine de çalışan şeyde eğer siz söyleyin.
+
+98
+00:24:38,099 --> 00:24:49,099
+Bir diskten, kendisine verilmiş bir diskten erişim isteğinde bulunuyorsa o zaman bu alt tarafta neye dönüşüyor arkadaşlar?
+
+99
+00:24:50,099 --> 00:24:56,960
+Linux olduğunu varsaydık. Linux'un içerisindeki read sistem çağrısına dönüşüyor.
+
+100
+00:24:59,460 --> 00:25:05,000
+Ancak cümlenin devamını okuyacak olursak eğer ne diyor?
+
+101
+00:25:05,587 --> 00:25:19,427
+In contrast, ESX Server manages system hardware directly, providing significantly higher IO performance and complete control over resource management.
+
+102
+00:25:19,427 --> 00:25:26,447
+Yani aslında donanım seviyesine çok daha yakın.
+
+103
+00:25:26,687 --> 00:25:28,427
+Yani ESX Server'da bir...
+
+104
+00:25:29,107 --> 00:25:48,567
+Baktığımız zaman işletim sistemi ama amacı sanallaştırma için oluşturulmuş bir işletim sistemi. Ve bakın dikkat edin, bu paperın referanslarında ne var arkadaşlar? Disco var. Disco'yu okumuştuk değil mi? Hatırlıyorsunuz.
+
+105
+00:25:50,187 --> 00:25:51,587
+Yok hocam, biz disco'ya hiç bakmadık.
+
+106
+00:25:52,084 --> 00:26:12,364
+Bakmadık mı diskoya? Niye bakmadık? Haa, disco daha sonra gelecek. Pardon. Ben size tabii onu bir bütün olarak verecektim. Doğru. Tamam, güzel. Neyse, işin heyecanı kaçtı. Siz söyleyeceksiniz diye ben verdim diye düşünüyordum. Araya şey girdiğimden dolayı. Evet, şimdi bu paper'a yoğunlaşalım.
+
+107
+00:26:17,140 --> 00:26:18,720
+Kim anlatıyor, kim konuşuyor?
+
+108
+00:26:19,660 --> 00:26:20,640
+Ben devam edeyim mi hocam?
+
+109
+00:26:21,220 --> 00:26:21,740
+Evet, evet.
+
+110
+00:26:25,240 --> 00:26:29,140
+Bundan sonrasını anlamak için hocam şeyi bence bilmek lazım diye düşünüyorum. Virtual Memory.
+
+111
+00:26:29,920 --> 00:26:35,400
+SuperPage'de de bahsettik. Geçen haftalarda da bahsettik. Bir daha anlatabilirim istiyorsanız.
+
+112
+00:26:36,240 --> 00:26:43,400
+Bu Segmented Memory'den, Pageed Memory'e geçtikten sonra işte biz bu pageleri işte defragment olayından kurtuluyoruz.
+
+113
+00:26:44,019 --> 00:26:52,719
+Böyle bir imkanımız var. O zaman proseslerimizde, memorisini de page-page ayarlayıp, işte memorinin farklı yerlerine koyarsak, böyle bir kazancımız olur diyorlar.
+
+114
+00:26:53,359 --> 00:26:56,519
+Buradan da virtual memory konsepti doğuyor. İşte arada bir abstraction giriyor.
+
+115
+00:26:57,599 --> 00:27:03,939
+Proses haberdar değil asıl memordan. CPU'nun kendisi virtual adresler üretiyor.
+
+116
+00:27:04,372 --> 00:27:30,032
+Memory Management Unit de gidiyor onu işte bahsettik TLB'ye gidiyor, Page Table'a gidiyor falan filan çeviriyor asıl şeye. Buradan bir Virtual Adres, Virtual Memory'den bahsederken bir de Physical Adres diye bu makalede öyle bahsettiği için diyorum. Virtual Adres, proses ürettiği adres, fiziksel adres de gidip Memory Management Unit'in çevirdiği adres. İşte bu Memory'de nerede duruyor?
+
+117
+00:27:30,675 --> 00:27:53,435
+Böyle bir abstraction var arada. Şimdi buradaki konsept de bunu bir adım öteye götürüyor. Madem proses memory'in aslını bilmiyor, memory management unit de bilmesin. Yani işletim sistemi de bilmesin diyor. Orada da memory management unit'in gittiğini zannettiği yer bizim için oraya abstraction koyalım. İşte ondan sonrasını ESX Server halledecek.
+
+118
+00:27:53,940 --> 00:28:09,299
+Memory Management Unit yine nasıl işte Patch Table'la geçiyorsak şeye, Patch Table'dan Memory, Virtual Memory'de Patch Table'la şey gidiyoruz, işte Patch Table'a gidiyoruz, Memory'deki adresini buluyoruz, oradan gidip buluyoruz.
+
+119
+00:28:09,299 --> 00:28:20,759
+Bu sefer de yeni bir Patch Table gibisinden bir şey daha kullanacağız. Bu sefer Memory Management Unit geldiğinde ona asıl Memory'deki yeri değil de bizim Abstraction olarak koyduğumuz yerdeki adresi vereceğiz.
+
+120
+00:28:21,395 --> 00:28:33,796
+Buna da Physical Page Number dedik zaten. Bir Virtual Page var. Oradan Fiziksel'e geçiyoruz. Buradan da yeni bir Machine Page Number diye bir şey geldi. Bu asıl Memori'nin olduğu adresi.
+
+121
+00:28:47,647 --> 00:28:55,667
+Page Number'ı, fiziksel Number'ı, Machine Number'a map'lememiz lazım. Buradaki Abstraction'da böyle sağlanıyor.
+
+122
+00:28:57,667 --> 00:29:03,807
+Ben çok basit. Machine address ne demek? Physical address ne demek? Virtual address ne demek?
+
+123
+00:29:04,607 --> 00:29:09,667
+Virtual address, process'in CPU'nun ürettiği adres. Bu Virtual Memory'den dolayı.
+
+124
+00:29:10,036 --> 00:29:24,175
+Bu anlamlı olmayan page table'a gidip memori'deki gerçek anlamını bulduğumuz bir adres. Bu fiziksel gerçek anlamını bulduğumuz adres, fiziksel adres eskiden bu konseptten önce bizim için RAM'in o gözü.
+
+125
+00:29:24,531 --> 00:29:35,391
+Bu konseptten sonra artık orası da gerçek bir adres değil. Orası da sanki sanal bir adres gibi. Bunun karşılığı bizim için fiziksel adres. Artık burada.
+
+126
+00:29:35,731 --> 00:29:38,731
+Yani fiziksel adres nereden çıkıyor dışarıya?
+
+127
+00:29:39,591 --> 00:29:43,511
+Fiziksel adres, fiziksel page number'dan şeye gidecek.
+
+128
+00:29:44,631 --> 00:29:45,611
+Fizik bak.
+
+129
+00:29:46,132 --> 00:29:50,552
+Virtual Adress Process'den çıkıyor dedim. Fiziksel adres nereden çıkıyor?
+
+130
+00:29:50,612 --> 00:29:51,892
+Memory Management Unit'ten çıkıyor.
+
+131
+00:29:52,352 --> 00:29:52,711
+Hayır.
+
+132
+00:29:53,832 --> 00:29:55,872
+Artık şeyden mi çıkacak acaba? ESX'den mi çıkacak?
+
+133
+00:29:56,531 --> 00:30:00,092
+İşletim sisteminden, host'tan, işletim sisteminden çıkıyor.
+
+134
+00:30:00,152 --> 00:30:01,751
+Doğru doğru host onu ayarlıyor. Evet evet.
+
+135
+00:30:02,152 --> 00:30:03,912
+Host değil, işletim sistemi.
+
+136
+00:30:04,471 --> 00:30:10,572
+İşletim sistemi. O adres Memory Management Unit'e gidip, gerçi RAM'e mi gidiyor ondan sonra hocam?
+
+137
+00:30:10,932 --> 00:30:12,991
+O zaman da o machine adresi oluyor.
+
+138
+00:30:13,392 --> 00:30:14,892
+O zaman da machine adresi, anladım hocam.
+
+139
+00:30:14,892 --> 00:30:31,532
+Yani prosesten çıkan virtual adres, prosesin çalıştığı işletim sisteminden çıkan physical adres, o işletim sisteminden gidip buradaki gibi ESX neyse virtual machine monitörden dışarıya çıkan da machine adres.
+
+140
+00:30:33,352 --> 00:30:34,572
+Anlaştık mı?
+
+141
+00:30:35,572 --> 00:30:36,211
+Anladım hocam.
+
+142
+00:30:37,140 --> 00:30:38,640
+[öğrenci], sen anladın mı?
+
+143
+00:30:39,820 --> 00:30:47,620
+Ben not aldım hocam. Yani tam dediğiniz gibi ben açıkçası bu kavramları bilmiyordum.
+
+144
+00:30:48,820 --> 00:30:56,700
+Kanalaştırma olmadığı zaman, işletim sisteminden çıkan physical adres hakikaten nereye gidiyor?
+
+145
+00:30:58,700 --> 00:30:59,300
+Reme hocam.
+
+146
+00:30:59,300 --> 00:31:00,220
+Evet.
+
+147
+00:31:00,688 --> 00:31:13,228
+RAM'e yani RAM'in o adres data basına giden fiziksel sinyaller olarak giden şey. Ama sanallaştırma olduğu zaman arada bir katman daha var ki o katman nerede? Virtual Machine Monitor'da.
+
+148
+00:31:15,368 --> 00:31:21,228
+Virtual Machine Monitor'a giriyor. Virtual Machine Monitor'da bunu...
+
+149
+00:31:23,571 --> 00:31:30,431
+Bir kez daha translate ediyor ve nereye dönüşüyor bu? Machine adrese dönüşüyor.
+
+150
+00:31:31,751 --> 00:31:41,731
+Niçin? Yani neden buna ihtiyacımız var? İkinci bir dönüşüme daha neden ihtiyacımız var?
+
+151
+00:31:42,491 --> 00:31:44,811
+Hocam aslında her abstraction bunu gerektiriyor.
+
+152
+00:31:45,523 --> 00:32:00,863
+Çünkü işletim sistemini aslında burada kandırıyorsunuz. Senin ürettiğin adres, aslında senin beklediğin adres. Çünkü o bir fiziksel bir yer bekliyor, remin kendisini bekliyor. Siz remi alıp parçalıyorsunuz. Sanki pejlere ayırmış gibi işte parça parça veriyorsunuz.
+
+153
+00:32:01,483 --> 00:32:03,783
+Daha net cevap istiyorum [öğrenci], daha net.
+
+154
+00:32:04,596 --> 00:32:13,656
+Sen şu an çok detay anlatıyorsun. Evet, detayda doğru söylüyorsun ama ben net böyle nokta atışı cevap istiyorum. Çok basit bir sebebi var.
+
+155
+00:32:20,403 --> 00:32:22,203
+Benim aklıma gelmedi şu an ama.
+
+156
+00:32:23,104 --> 00:32:24,223
+Payfıra da bakmıyorum.
+
+157
+00:32:24,823 --> 00:32:29,364
+[öğrenci], sen bağlısın ve bizi duyuyor musun? Yoksa bağlısın ama bizi duymuyor musun?
+
+158
+00:32:29,903 --> 00:32:32,543
+İyi akşamlar hocam, duyuyorum. Sonradan katıldım derse.
+
+159
+00:32:32,543 --> 00:32:35,183
+Evet. Yok mu fikrim? Var mı?
+
+160
+00:32:35,203 --> 00:32:37,043
+Maalesef hocam, çok fikrim yok.
+
+161
+00:32:37,763 --> 00:32:43,543
+Fikrin yok. Şimdi her proses, şu anda baktığımızda her program...
+
+162
+00:32:44,211 --> 00:32:52,612
+Bizim açımızdan programcı mantığıyla baktığımızda bizim açımızdan işi kolaylaştırmak için hangi adresten başlarsa daha iyi olur?
+
+163
+00:32:53,292 --> 00:32:54,592
+Sıfırdan başlarsa hocam.
+
+164
+00:32:54,711 --> 00:33:02,132
+Sıfırdan başlarsa. O zaman demek ki her programa eşittir her prosese ne ilizyonunu oluşturmam lazım?
+
+165
+00:33:02,852 --> 00:33:03,792
+Bütün memori kullanıyor.
+
+166
+00:33:04,112 --> 00:33:09,772
+Hayır, adresi sıfırdan başlıyor. Bütün memori kullanıyor ayrı bir olay. Adresi sıfırdan başlıyor.
+
+167
+00:33:10,099 --> 00:33:22,359
+Peki, işletim sistemi de bir program değil mi sonuçta? Onun içinde ne ihtiyacımız var? Onun da adreslerinin sıfırdan başlamaya ihtiyacı var.
+
+168
+00:33:23,251 --> 00:33:35,711
+Çünkü normalde gerçek işlemci üzerinde çalışacaktı. Gerçek işlemcide de ben kalkıp memoriyi 10.000 adresinden başlatmam ki bir sistem kuruyorsam sıfır adresinden itibaren başlatırım.
+
+169
+00:33:36,151 --> 00:33:40,931
+Yukarıdaki maksimumun tamamını koymak zorunda değilim ama sıfırını bir yerden başlamam lazım.
+
+170
+00:33:40,931 --> 00:33:48,931
+O zaman demek ki işletim sistemi içinde adreslerin sıfırdan başladığını o imajı oluşturabilmem gerekiyor.
+
+171
+00:33:50,036 --> 00:34:02,736
+Bu yüzden ikinci bir seviye daha abstraction veyahut da böyle bir translation'a ihtiyaç var. Doğrudan donanımın üzerinde çalışan işletim sistemini zaten sıfır adresiyle karşılaşacağım.
+
+172
+00:34:03,059 --> 00:34:19,059
+Ama ben onu sanallaştırdığım zaman gerçekte sıfır adresini mi vereceğim ona? Hayır, veremem. Çünkü zaten sistemde bir tane sıfır adresi var. İki tane yok ki. O sıfır adresini de ne kullanıyor olacak, kim kullanıyor olacak?
+
+173
+00:34:29,076 --> 00:34:53,216
+Virtual Adres prosesten çıkıyor. Sıfırmış gibi çıkıyor. Physical Adres'e Translate oluyor. Physical Adres'lerde sıfırdan başlıyormuşçasına çıkıyor. Ama sanal ortamda olduğu için bir daha Translate oluyor. Bu sefer hakikaten gerçekten Machine Adres'e dönüşüyor. Bu üç kavram önemli bu açıdan.
+
+174
+00:34:57,139 --> 00:35:09,920
+Okey mi? Evet hocam. Efendim? Okeydir dedim ben de. Tamam. Şu balonlama kavramı nedir?
+
+175
+00:35:13,659 --> 00:35:24,239
+Hocam orada da şeyden bahsediyor. Şimdi bu hostların bazıları, hostlar dedim, guestlerin bazıları daha çok memori isteyecek zamanlar.
+
+176
+00:35:24,788 --> 00:35:50,408
+Bir şekilde bunları şey yapmanız lazım. Daha fazla memori vermeniz lazım. Ya da bazıları çok kullanmıyorsa, memorisini azaltmanız lazım. Şimdi bunun bir yöntemi, Virtual Machine Monitor, Patch Table'larını kontrol edecek. İşletim sisteminin en az kullandığını swap edecek. Burada bir tane teknikten bahsediyor da, orayı ben tam anlamadım ama orada öyle bir sıkıntı çıkıyor.
+
+177
+00:35:50,963 --> 00:36:17,083
+Double Paging Problem. Herhalde hem guest'in kendisi ve Virtual Machine Monitor'un bir şekilde bir çakışma meselesi bu. Bu bir ilk mesele. Burada da tabii şeyden bahsediyor. Guest'in kendisini biz hiçbir şekilde değiştirmek istemiyoruz. Zaten bunun diskodaki hisselesinden de herhalde öyle bir yerde okumuştum da. Hiçbir şekilde guest machine'e karışmak istemiyorlar.
+
+178
+00:36:18,068 --> 00:36:22,588
+GEST operating system diyelim istersen.
+
+179
+00:36:22,608 --> 00:36:45,208
+GEST operating system aynen. O yüzden bu seçeneği eliyoruz. Şimdilik bu olmaz. Hiçbir şekilde GEST operating sisteme karışmadan nasıl yapabiliriz? Diyorlar ki biz bir tane kernel modül yazalım ya da device driver. Bunu biz balon diye şeyin içerisine insert ediyoruz. Bu karışmak demek değil çünkü kernel size zaten bu yapıyı sağlıyor.
+
+180
+00:36:45,811 --> 00:37:05,091
+GES'te implement ediyorsunuz ve Virtual Machine Monitor bununla konuşabiliyor. Bir şey meselesi olacağı zaman herhangi bir işletim sisteminden işte kaynak bırak kaynak al gibi mesele olduğu zaman direkt orayla konuşup bazı fiziksel pinleri işte aloket etmesini sağlıyor.
+
+181
+00:37:06,172 --> 00:37:07,011
+Fiziksel neleri?
+
+182
+00:37:07,011 --> 00:37:08,412
+Pinleri.
+
+183
+00:37:11,039 --> 00:37:13,579
+Pint Physical Pages diye. Ben burayı tam anlamadım gerçi de.
+
+184
+00:37:16,599 --> 00:37:19,279
+Pin derken ppn'den mi bahsediyorsun?
+
+185
+00:37:20,739 --> 00:37:22,019
+Yok yok, o şey değil.
+
+186
+00:37:22,619 --> 00:37:26,960
+When the server wants to reclaim memory, it instructs the driver to inflate.
+
+187
+00:37:27,519 --> 00:37:30,139
+By allocating Pint Physical Pages.
+
+188
+00:37:30,619 --> 00:37:31,639
+Pint ne demek?
+
+189
+00:37:34,359 --> 00:37:36,159
+Pinlenmiş olmak, direkt bağlantısı olmak.
+
+190
+00:37:36,820 --> 00:37:41,960
+Ya mesela bir tahtaya bir şey asarsın ya, iğneyle tutturursun. İşte pinto demek.
+
+191
+00:37:44,539 --> 00:37:51,920
+Ha o zaman Virtual Machine direkt bazı fiziksel peygileri ilk başta kendisine aloket ediyor muhtemelen. Onları şey veriyor.
+
+192
+00:37:51,920 --> 00:37:56,260
+Onlar sabitleniyor. Onlar sanki hiç değişmeyecekmiş gibi oluyor. Evet.
+
+193
+00:37:57,012 --> 00:38:13,552
+Anladım hocam. Bu da işte guest'in kendi memory pressure altında kaldığı zaman çalıştırıcı algoritmasını çalıştırmasını sağlıyor. Diğer sıkıntısı varsa al diyor. Fazla idle pager varsa kullanmadı, onları da free ediyor.
+
+194
+00:38:14,692 --> 00:38:21,332
+Yani aslında ne yapıyoruz? Kandırıyoruz virtual machine'i. Ya daha doğrusu işletim sistemini kandırıyoruz.
+
+195
+00:38:22,003 --> 00:38:26,163
+[öğrenci] veya [öğrenci], [öğrenci]'ın anlattığından ne anladınız?
+
+196
+00:38:28,583 --> 00:38:43,083
+Açıkçası hocam, biraz karıştı kafam. Ama anladığım kadarıyla bazı VMware önce kendine bazı physical page'leri attach ediyor.
+
+197
+00:38:43,552 --> 00:38:47,712
+Ama bundan geriye kalan gereksiz kısımları da...
+
+198
+00:38:47,712 --> 00:38:50,351
+BNVR yapmıyor bunu. Hayır. BNVR yapmıyor.
+
+199
+00:38:51,851 --> 00:39:00,771
+Balaning tekniğini, işletim sistemini hangi uygulama yapıyor? İşletim sistemi kandıran uygulama...
+
+200
+00:39:00,771 --> 00:39:00,972
+BNVR.
+
+201
+00:39:02,931 --> 00:39:04,711
+Evet, şimdi bak.
+
+202
+00:39:05,152 --> 00:39:10,911
+VMware ile ASIC Server farkı ne hocam? Ben zaten VMware ile ASIC Server bir anlat diye düşündüm.
+
+203
+00:39:10,911 --> 00:39:26,192
+Ama baloning, VMware ASIC Server'ın üreticisi. Bu onun bir marka şeyi. VMware dediğimiz zaman hostu veya virtual machine monitörü konuştuğumuzu varsayalım.
+
+204
+00:39:30,996 --> 00:39:56,516
+Sanal makinenin içinde çalışan işletim sistemi. Şimdi VMware'in memoriye ihtiyacı var. Çünkü yeni bir VM çalıştırması gerekiyor ama o sırada o VM'i çalıştıracak boş memorisi yok. Ne yapması lazım? O anda çalışan diğer VM'lerden memori toplaması lazım. Nasıl toplayacak memoriyi?
+
+205
+00:40:01,043 --> 00:40:08,723
+Diğer VM'lerin gereksiz duyduğu, deflate ettiği, peşleri birleştirerek...
+
+206
+00:40:08,723 --> 00:40:13,203
+Deflate etmek o değil. Gereksiz duyduğu doğru söyledi ama deflate değil.
+
+207
+00:40:13,743 --> 00:40:24,983
+Şimdi, işletim sistemi tek başına bir donanım üzerinde çalışıyor olsaydı, arada hiç sanallaştırma olmasaydı, başka işletim sistemleri olmasaydı,
+
+208
+00:40:28,884 --> 00:40:50,384
+Kullanacaktı. Değil mi? Bitene kadar. Peki, böyle bir durumda bile memorinin bitmeye yaklaştığını, yani boş kullanabileceği memori kalmadığını varsayalım ve yeni bir program başlatmak istiyor. O zaman ne yapacaktı, ne yapması gerekecekti?
+
+209
+00:40:56,532 --> 00:41:11,052
+Bazı proseslerden kullanılmayan memori parçalarını evet, page out ederek çalacaktı. Page stealing yapacaktı. Ki yeni prosese yer açsın.
+
+210
+00:41:11,923 --> 00:41:24,344
+Şimdi, o zaman bakın, Page Stealing'i tetiklemenin yolu ne? İşletim sistemine memorinin bittiği izlenimini oluşturmak.
+
+211
+00:41:24,344 --> 00:41:34,264
+O zaman işte bu balon driver'ı, baloning'teki balon driver'ı büyüyerek veya küçülerek aslında yaptığı şey çok basit.
+
+212
+00:41:35,059 --> 00:41:54,759
+Inflate dediği büyümesi gereksiz yere memory request'inde bulunuyor. Yani memory ihtiyacını arttırıyor, arttırıyor, arttırıyor. Daha fazla memory istiyor işletim sisteminden. İşletim sistemi de bakıyor, elimde boş memory kalmadı. O zaman ne yapmam lazım? Boş memory çıkarmak için.
+
+213
+00:41:55,795 --> 00:42:14,036
+Proseslerde kullanılmayan memorileri çalmam lazım. Page'leri çalmam lazım. Yani otomatikman Page Out yaptırmaya başlıyor. O zaman Page Out yaptığında bunlar aslında nereye devredilmiş oluyorlar?
+
+214
+00:42:14,516 --> 00:42:15,716
+Virtual Machine Monitor.
+
+215
+00:42:16,235 --> 00:42:24,775
+Evet, VMM'e devredilmiş oluyorlar. Yani ESX Server kendi istediği memoriye sahip oluyor.
+
+216
+00:42:25,775 --> 00:42:32,775
+ESX'in memori ihtiyacı yok. O sırada yeni bir VM başlatılmıyor.
+
+217
+00:42:33,248 --> 00:42:58,887
+Diyor ki, sanal işletim sistemleri boşuna kıvranmasınlar. Çünkü böyle page stealing yaparak çalışmak aslında işletim sisteminin performansını düşüren bir şey. Threshing dediğimiz bir sıkıntı. Yani bir page'i dışarı çıkartıyorsun memoriyum azaldığı için ama bir sonraki aşamada o page'e ihtiyaç duyuyorsun, tekrar içeri alıyorsun. Dışarı çıkart, içeri al, dışarı çıkart, içeri al, git gel, ping pong gibi. E, diz kayosu.
+
+218
+00:42:59,248 --> 00:43:22,247
+Para, değil mi? Yani zaman açısından bir maliyet diyelim, para demeyelim de maliyet. Onu memoriye koydum, ettim falan ayrı bir maliyet. O zaman ne yapıyor? Bu balonu ufaltıyor. Balon ufalınca, yani aslında balonun ufalması demek, o balonun temsil ettiği prosesin kendi rızasıyla...
+
+219
+00:43:23,251 --> 00:43:47,172
+Page'leri serbest bırakması demek. İşletim sisteminde ne düşünmeye başlıyor? O diyor, yaşasın, memorim arttı. Şu an elimde daha fazla memori var. Ve bundan dolayı şey yapmama gerek yok. Page stealing yapmama, zorla proseslerden page'leri alıp diske yazmamama gerek yok.
+
+220
+00:43:47,699 --> 00:44:13,260
+Böylece bakın, işletim sisteminin iç yapısından bağımsız, ona karışmadan, ona müdahale etmeden veyahut da değişiklik yapmamıza gerek kalmadan, sadece dinamik olarak ihtiyaca bağlı daha fazla memori aloket isteği oluşturan veyahut da bu istekleri azaltan, elindeki memorileri serbest bırakan basit bir kernel seviyesindeki driverla bunu yapıyoruz.
+
+221
+00:44:13,260 --> 00:44:15,260
+Bu driver'ın yapması gereken yegane...
+
+222
+00:44:15,699 --> 00:44:18,500
+Doğrudan neyle haberleşmek arkadaşlar?
+
+223
+00:44:20,480 --> 00:44:23,099
+O insert ettiğimiz şeyle.
+
+224
+00:44:24,780 --> 00:44:31,559
+Virtual Machine Monitor'le, VMware'le bu örnekte, onunla haberleşmesi gerekiyor.
+
+225
+00:44:32,240 --> 00:44:33,480
+Baloning tekniği bu.
+
+226
+00:44:35,820 --> 00:44:36,860
+Anladın mı [öğrenci]?
+
+227
+00:44:38,380 --> 00:44:40,240
+Gayet net oldu hocam, teşekkürler.
+
+228
+00:44:41,019 --> 00:44:42,280
+[öğrenci], sendeki durum ne?
+
+229
+00:44:45,715 --> 00:44:47,715
+Ben de anladım hocam. Teşekkürler.
+
+230
+00:44:47,715 --> 00:44:51,715
+Güzel. Bakın hatta burada ne diyor?
+
+231
+00:44:51,715 --> 00:44:57,715
+Our balloon drivers for Linux, FreeBSD and Windows operating systems,
+
+232
+00:44:57,715 --> 00:45:03,199
+poll the server once per second to obtain the target balloon size.
+
+233
+00:45:03,199 --> 00:45:21,840
+Server dediği neresi? ESX Server. Yani ESX Server diyor ki, her bir dakikalık ne? One per second, pardon, saniyelik intervallerde bir sonraki saniyede senin balloon size'ının bu olmanı istiyorum. O tamamen ona bağlı olarak memori yönetecek.
+
+234
+00:45:22,516 --> 00:45:49,436
+And they limit their allocation rates adaptively to avoid stressing the guest operating system. Standard kernel interfaces are used to allocate physical pages, such as get free page in Linux and neymiş? NM allocate pages for MDL falan gibilerinden in Windows veya NM probe and lock pages şeklinde.
+
+235
+00:45:50,195 --> 00:46:02,615
+Future Guest Operating System for Hot Plugable Memory Cards would enable an additional form of course-gained ballooning.
+
+236
+00:46:02,615 --> 00:46:09,615
+Bunu şu anda VMware yapıyor. O dönemdeki, yani 2002 tarihindeki...
+
+237
+00:46:09,760 --> 00:46:37,240
+Linux olsun, FreeBSD olsun, Windows olsun bu işletim sistemlerinin hiçbiri hotplugable memori desteklemiyor. Çünkü neden? Serverlar çalışırken serverları kapatmadan, poweroff etmeden üzerine memori eklenemiyor. Bu kadar basit. Öyle bir donanım ortamı olmadığı için de işletim sisteminin çalışması sırasında memorisinin artması gibi bir şey söz konusu değil.
+
+238
+00:46:37,780 --> 00:46:59,099
+Ama sananlaştırma ortamı artı donanımdaki değişiklikler bir araya geldiğinde ben şu anda günümüzde server mimarisindeki, sunucu server mimarisindeki bilgisayar sistemlerine diyeyim, çalışırken elektriğini kapatmadan memori takabiliyorum.
+
+239
+00:46:59,099 --> 00:47:03,860
+O zaman bunu işletim sisteminin de algılaması lazım.
+
+240
+00:47:05,684 --> 00:47:16,944
+Aslında bu baloning tekniğine benzer bir şekilde işletim sisteminin memorisinin resize edilmesi, yani yeniden boyutunun belirlenmesi mümkün.
+
+241
+00:47:18,664 --> 00:47:20,344
+Burada onu da söylüyorlar.
+
+242
+00:47:32,532 --> 00:47:38,132
+Hocam bizim pratikte yaptığımız işler ama işte bilmeden yapıyorum.
+
+243
+00:47:38,592 --> 00:47:43,711
+Evet, aynen şu anda bilerek yapacaksın. Arkasında ne var diye düşüneceksin.
+
+244
+00:47:44,392 --> 00:47:44,711
+Evet.
+
+245
+00:47:51,795 --> 00:47:52,795
+Ok.
+
+246
+00:48:03,315 --> 00:48:05,535
+Peki, başka bir başlık ne var?
+
+247
+00:48:07,135 --> 00:48:08,435
+Hocam, Sharing Memory var.
+
+248
+00:48:08,635 --> 00:48:09,895
+Sharing Memory var.
+
+249
+00:48:12,335 --> 00:48:16,335
+Şimdi Sharing Memory'ye geçmeden bir iki dakika ara verelim arkadaşlar.
+
+250
+00:48:18,015 --> 00:48:21,895
+Saat kaç? 25.30'da devam ederiz. Tamam mı? 8.30'da devam edeceğiz.
+
+251
+00:48:22,555 --> 00:48:23,295
+Tamamdır hocam.
+
+252
+01:00:09,811 --> 01:00:17,851
+Selam arkadaşlar. Hocamız yokken size bir şey sorabilir miyim? Buradaysanız.
+
+253
+01:00:18,811 --> 01:00:19,231
+Tabii ki.
+
+254
+01:00:20,652 --> 01:00:28,711
+[öğrenci] Hocam, dersimiz şimdi 7.30'da ya. Hocamızı da uygun görürse biraz erkene almak size uygun mudur ya?
+
+255
+01:00:29,672 --> 01:00:31,911
+Bana da uygun olur. Kaç ders kaldı ki gerçeğim?
+
+256
+01:00:32,571 --> 01:00:34,531
+Bilmiyorum ne kadar ders kaldı da.
+
+257
+01:00:36,340 --> 01:00:39,760
+Ne bileyim, yedi veya altı buçukta falan hocamız uygun görürse.
+
+258
+01:00:40,900 --> 01:00:46,539
+Ben de buna karşılık bir soru sorayım müsaadenizle. Ders şu an kaçta başlıyor? Sekiz mi tam olarak?
+
+259
+01:00:46,639 --> 01:00:47,840
+Yedi buçuk sanırım.
+
+260
+01:00:48,260 --> 01:00:50,200
+O sekiz şey zamanıydı, Ramazan.
+
+261
+01:00:51,280 --> 01:00:52,760
+Yani şu an yedi buçukta mı başlıyor?
+
+262
+01:00:53,200 --> 01:00:53,680
+Evet, evet.
+
+263
+01:00:57,844 --> 01:01:07,463
+Bunun ilk olarak hoca gelmeden ben de bir şey sorayım. Sanki bu dersin vizesi olmayacak diye sene başında konuşulmuştu. Ben mi yanlış hatırlıyorum, siz de öyle mi hatırlıyorsunuz?
+
+264
+01:01:08,724 --> 01:01:26,404
+Şöyle demiştim [öğrenci], derse eğer anlamlı bir şekilde devam olur, düzgün bir şekilde katılım gerçekleşirse ve canlı etkileşimli olarak dersi yaparsak o zaman sadece dersler üzerinden ve bu verilecek olanlar ödevler üzerinden bunu yapabiliriz diye.
+
+265
+01:01:26,404 --> 01:01:36,504
+Ama takdir edersin ki 35 kişi mi 40 kişi mi ne var? En fazla 6 veya 7 kişiyle yapıyoruz dersi.
+
+266
+01:01:36,724 --> 01:01:48,736
+Evet hocam doğru diyorsunuz.
+
+267
+01:01:48,735 --> 01:02:05,295
+Bazı arkadaşlar doğal olarak sadece ödev submit ediyorlar. Ama yani o submit ettikleri ödevde yazdıkları şeyin ne yorumunu burada konuşabiliyoruz, ne şey yapabiliyoruz.
+
+268
+01:02:05,455 --> 01:02:15,695
+Hatta bana çok ilginç, bugüne kadar derse hiç gelmemiş arkadaşlardan, hocam bu haftanın ödevini ne zaman koyuyorsunuz, şimdi mi koyuyorsunuz, öyle mi koyuyorsunuz diye mailler yağıyor.
+
+269
+01:02:16,244 --> 01:02:24,003
+Ama onları hiçbir zaman derste görmüyorum. O yüzden açıkçası bir sınav yapmanın daha gerçekçi olacağını düşünüyorum.
+
+270
+01:02:25,564 --> 01:02:31,744
+Yaparız yani, bakarız duruma. Evet dediğinde haklısın en başta o şekilde ama bunu da söylemiştim.
+
+271
+01:02:31,744 --> 01:02:39,684
+Yani bu yöndeki hassasiyetimi dile getirmiştim. Bu sizleri kötü duruma düşürmek veya şey yapmak için değil.
+
+272
+01:02:40,083 --> 01:02:53,923
+Ama bilakis bir şekilde bu işin ciddiyetini arkadaşların anlamasını sağlayabilmek adına, bu yaşa gelmiş, bu statüdeki sizlere bunu anlatmak benim görevim mi onu da tam bilmiyorum. O da ayrı bir konu.
+
+273
+01:02:55,103 --> 01:03:03,463
+Ben aklımda şey diye kalmıştım hocam, yollayacağımız makale raporları dönem içi etkinlik olarak. Ondan bir sormak istedim.
+
+274
+01:03:07,411 --> 01:03:24,731
+En azından seninle, [öğrenci]'la, [öğrenci]'le bunu gönderdiğiniz şeyler üzerinden bir şeyler tartışabiliyoruz. Ne kadar gönderdiğinizde sonradan bakıyorum. Derse girmeden bakmıyorum. İşin gerçeği o. Bittikten sonra şey yapıyorum. Hafta sonları üzerinden geçiyorum.
+
+275
+01:03:32,532 --> 01:03:57,112
+Kavrayıp, anlayıp da mı yazıyor arkadaşlar? Yoksa oradan onu aldım, buradan bunu yaptım şeklinde mi? Şey olan bu. Sıkıntılı olan durum bu. Keşke sadece dördünüz, beşiniz olsa, hep de katılıyor olsanız böyle olduğu gibi. O zaman ne dönem içi ne de dönem sonu sınavına ihtiyaç var.
+
+276
+01:04:00,115 --> 01:04:12,715
+Bakarız yine de yani şey değil. Daha önümüzde zaman var duyurusunu yaparız ama normalde aklımdan geçen, içimden geçen haftaya bir sınav yapmak şeklinde.
+
+277
+01:04:13,956 --> 01:04:27,395
+Bazı arkadaşlar hiç gelmemişler, derse dahi gelmemişler. Gönderdikleri şey bile yok. Bana bugün onlardan mailler yağdı. İnanamadım yani. Hakikaten inanamadım.
+
+278
+01:04:30,643 --> 01:04:38,683
+Çok ilginç. Şimdi, Transparent Page Sharing ne demek?
+
+279
+01:04:42,228 --> 01:04:43,107
+Anlatayım mı hocam?
+
+280
+01:04:44,527 --> 01:04:47,487
+Hep sen anlatıyorsun. Başka anlatacak biri çıksın ya. Yok mu?
+
+281
+01:04:49,567 --> 01:04:50,567
+Transparency.
+
+282
+01:04:57,844 --> 01:05:01,884
+Hocam bir de bir şey sorabilir miyim bunu anlatmadan?
+
+283
+01:05:01,884 --> 01:05:02,884
+Tabii ki.
+
+284
+01:05:03,784 --> 01:05:14,544
+Bu transparent kavramı bayağı kullandık. Süper 5'te kullandık. Geçmiş yerlerde kullandık. Tam olarak neyi ifade ediyor işletim sistemleri için?
+
+285
+01:05:14,564 --> 01:05:15,584
+Transparent ne demek?
+
+286
+01:05:18,244 --> 01:05:21,104
+Transparent size açık bir şekilde yani net.
+
+287
+01:05:22,104 --> 01:05:22,904
+Transparent?
+
+288
+01:05:25,556 --> 01:05:27,435
+Kelime transparent'ın.
+
+289
+01:05:27,915 --> 01:05:29,556
+Yani transparan da işte yani.
+
+290
+01:05:30,215 --> 01:05:32,695
+Ülkesini söyle transparan'ın. Evet. Ne demek?
+
+291
+01:05:33,295 --> 01:05:36,395
+Şeffaf.
+
+292
+01:05:36,395 --> 01:05:43,675
+Tamam. O zaman transparent page sharing ne olabilir sizce?
+
+293
+01:05:45,876 --> 01:05:49,156
+Bir bunu hani şey düşündükten sonra bir...
+
+294
+01:05:49,156 --> 01:05:54,216
+Hocam farklı işletim sistemleri, farklı sanal makineler arasında bir geçirgenlik ifade ediyor olabilir mi?
+
+295
+01:05:57,596 --> 01:06:06,976
+Tamam, onu ifade ediyor da oraya gelecek olay da yani transparent orada bir önem taşıyor. Ne anlamda önem taşıyor?
+
+296
+01:06:08,016 --> 01:06:13,216
+Hatta hocam ilk şeyde kullandık bu ring meselesinde o dört şeyden bir tanesi transparentı.
+
+297
+01:06:23,764 --> 01:06:26,903
+Olan şeyi değiştirmeye ihtiyaç kalmadan diyebilir miyiz acaba?
+
+298
+01:06:28,644 --> 01:06:29,764
+Bir daha deneyin.
+
+299
+01:06:31,164 --> 01:06:32,104
+Efendim hocam?
+
+300
+01:06:32,624 --> 01:06:34,704
+Bir daha deneyin cevabınız anlamında suyu.
+
+301
+01:06:36,324 --> 01:06:39,903
+Olan şeyi değiştirmeye ihtiyaç kalmadan. Sanki bugüne kadar hep öyle kullandık.
+
+302
+01:06:45,588 --> 01:06:47,748
+Var mı başka yorum yapacak olan arkadaşlar?
+
+303
+01:06:58,739 --> 01:07:15,459
+Tüm işletim sistemlerine vereceği, share edeceği pejeleri en başta belirleyip paylaştırma gibi düşünebilir miyiz?
+
+304
+01:07:18,259 --> 01:07:20,499
+Şöyle arkadaşlar, bakın.
+
+305
+01:07:21,719 --> 01:07:23,739
+Farklı işletim sistemleri çalışıyor.
+
+306
+01:07:24,307 --> 01:07:49,128
+Bu işletim sistemleri birbirini bilmiyorlar bile. Farkında değiller. Zaten sanallaştırmanın birkaç saat öncesinde, bir saat, bir buçuk saat öncesinde de konuştuğumuz bu değil miydi? Öyle bir illüzyon oluşturuyoruz. Buna inandırıyoruz. Her işletim sistemi o donanımda tek başına inmiş gibi. Yani bir başka işletim sisteminin olduğunun farkında bile değil.
+
+307
+01:07:49,556 --> 01:08:10,556
+O zaman kendisi isteyerek ve bilerek bir takım içeriği aynı olan pejleri bir başka işletim sistemiyle paylaşamaz. Mümkün değil. Yani olayın mantığına aykırı. Çünkü bilmiyor ki öbür işletim sisteminin olduğunu.
+
+308
+01:08:11,315 --> 01:08:30,956
+İki tane biz işletim sistemi bir arada çalışıyoruz. Hadi ikimiz de Lipsy Shared Object'i yükledik. Aynı versiyonuz. Lipsy Shared Object'e hem A işletim sistemi hem B işletim sistemi yükledik. Ortak page tablosu zaten Lipsy Retonly. Yani Re-Entrant.
+
+309
+01:08:38,420 --> 01:08:57,840
+Birbirlerinden habersiz olduğu için yapma durumunda değiller. O zaman araya ne giriyor? Virtual Machine Monitor giriyor. Virtual Machine Monitor bir üst seviyeden baktığı için eğer bir takım page'ler aynıysa, bir takım page'lerin içerikleri aynıysa.
+
+310
+01:08:58,804 --> 01:09:09,304
+Önce değişmediğini varsayalım. Şeret objekt üzerinden, Windows'cası, Dynamic Link Library, DLL üzerinden düşünelim.
+
+311
+01:09:09,304 --> 01:09:16,804
+O zaman bunları iki defa memoriye bir A işletimi, bir B işletim sistemi için yüklemenin anlamı yok.
+
+312
+01:09:16,804 --> 01:09:19,804
+Bir kopya yüklenir, iki tarafa da aynı yerden servis edilir.
+
+313
+01:09:20,051 --> 01:09:44,171
+Şimdi A işletim sistemi de bu durumun farkında değil, B işletim sistemi de bu durumun farkında değil ama olan şey ne? Ortada bir takım bilgiler var ve bunlar iki işletim sistemi arasında paylaştırılıyor. Transparent bir şekilde, onlar farkında olmadan, onlara şeffaf bir şekilde, onlara sorulmadan, söylenmeden, çaktırılmadan, bilgi verilmeden.
+
+314
+01:09:44,576 --> 01:09:59,255
+Onların çalışmasında herhangi bir değişiklik var mı? Yok. Etkilenme, bozulma sıkıntı var mı? Yok. Ama sistem açısından genel olarak performansta artma var mı? Evet, memori performansında, memoriler kazanmış oluyorum.
+
+315
+01:10:00,051 --> 01:10:27,992
+Aynı işletim sisteminin 100 kopyasını çalıştıracağım. Aynı donanım üzerinde, aynı Virtual Machine Monitor üzerinde. Aynı kopya, aynı versiyon. 100 defa Lipsi'yi yükleyeceğime bir defa yükledim. 100 defa Lipsi'yi yükleyeceğime, bir defa Lipsi'yi yükleyeceğime, bir defa yükledim. En basitimden. Zaten bütün o işletim sistemlerinde çalışacak olan proseslerin mutlaka ve mutlaka ihtiyaç duyduğu kütüphane.
+
+316
+01:10:28,051 --> 01:10:36,332
+Bunlar olmadan zaten o proseslerin runtime'ı sağlanmayacak. İşte şey bu. Transparent Page Sharing'in arkasında yatan şey bu.
+
+317
+01:10:39,251 --> 01:10:40,771
+Anladım hocam, teşekkür ederim.
+
+318
+01:10:41,572 --> 01:10:42,251
+Anlaştık mı?
+
+319
+01:10:44,391 --> 01:10:47,131
+Evet hocam.
+
+320
+01:10:51,507 --> 01:10:53,307
+[öğrenci], sen de tamam mısın?
+
+321
+01:10:53,727 --> 01:10:54,707
+Evet hocam, aynen.
+
+322
+01:10:55,547 --> 01:11:04,007
+Peki, bunun üzerine bir adım sonrasında ne var? Content-Based Page Sharing var.
+
+323
+01:11:07,475 --> 01:11:08,415
+Anlatayım mı hocam?
+
+324
+01:11:10,415 --> 01:11:10,695
+Evet.
+
+325
+01:11:12,495 --> 01:11:18,595
+Bu Transparent'ı anlattınız ya, işletim sistemden haberi yok. VM kontrol ediyor.
+
+326
+01:11:19,456 --> 01:11:24,775
+VM'in bu ilk Transparent'taki sıkıntı da şey, bu adamları hiç karışmak istemiyorlar ya guest'in içerisine.
+
+327
+01:11:25,635 --> 01:11:30,755
+VM'in kim bir page yazdı çünkü yazdıktan sonra biri artık o şey olmayacak.
+
+328
+01:11:31,355 --> 01:11:34,655
+İkisi için aynı olmayacak ve ikisinde bundan haberi yok. VM'in bunu kontrol etmesi lazım.
+
+329
+01:11:35,380 --> 01:11:58,480
+Ve diyor ki biz guest'in yazdığı sistem çağrılarına bakıp şey yapmak istemiyoruz orayı. Hatta hooklama, bi-copy hooklama diye bir metot kullanmış, terim kullanmış. Bunu yapmak istemiyor diyor VM. Buradan da şeye çıkıyor. Hiçbir şekilde guest'e karışmayalım. Ben zaten bütün page'leri kontrol ediyorum. Elimde page'ler var. Hangileri birbirinin aynısı?
+
+330
+01:11:58,996 --> 01:12:25,996
+Ben bunları bulayım. Aynı olanları her türlü şey edeyim, paylaşayım. Burada da maliyetten bahsediyor işte. Elinizde bir dizi şey var. Aynı olan iki şey bulmak için en kareyle buluyorsunuz kompleksisi bunun. Bunu hashlersek, bir hash table kullanırsak, her page'in hash'ini bulursak maliyeti azaltırız diyor. Bu şekilde content-based, contentin içeriğine bakıp aynı olan şeyleri...
+
+331
+01:12:26,015 --> 01:12:41,956
+Burada da şeyi aradan çıkarıyor artık. Yani içeriğin bir önemi yok. Sadece aynı. İçeriğin bir önemi yok deme. İçeriğin önemi var işte. İçerik aynıysa tek kopya. Tek kopya evet. Yani içeriğin önemi derken okuyup bakmasına gerek yok. Gerçi...
+
+332
+01:12:42,100 --> 01:12:51,780
+Nasıl okuyor bakmasına? Hash oluştururken okumuyor mu? Okuyor tabii ki. Okuyor, okuyor, bakıyor. Evet, evet. Yanlış ifade ettim. İşletim sistemine karışmasına gerek yok. İşletim sistemine...
+
+333
+01:12:51,780 --> 01:13:01,659
+Sadece bak, orada bir kolaylık nerede? Bana onu söyler misiniz? Yani hash alıp da kontrol etmek niçin daha hızlı?
+
+334
+01:13:03,507 --> 01:13:11,387
+Hash işleminin kendisi hocam size bir özet veriyor. Özetli bir key olarak kullanırsanız bir HashTable'a sadece bir lookup yapmış olursunuz. Bir kere gitmiş olursunuz adrese.
+
+335
+01:13:11,887 --> 01:13:20,868
+[öğrenci] bak sen sonuçta bizden mezunsun. [kişisel bilgi] O yüzden daha teknik, daha böyle can alıcı bir cevap vermeni bekliyorum.
+
+336
+01:13:24,247 --> 01:13:27,427
+Hash kullanmasam ne yapmak zorundayım?
+
+337
+01:13:28,051 --> 01:13:33,591
+Bir page alırım, bütün page'lerle karşılaştırırım aynı mı diye. Sonra bir diğer page ile karşılaştırırım.
+
+338
+01:13:33,591 --> 01:13:54,591
+En tane, yani bir page'i en tane page ile compare edeceğim. Page'in içerisinde kaç word varsa, o word'u ister 32 bit kabul edin, ister 64 bit kabul edin mimara göre burada 32 bit, o kadar karşılaştırma yapacağım. Doğru mu?
+
+339
+01:13:55,315 --> 01:14:11,148
+O kadar karşılaştırma. 4.96 ise 4.096 compare işlemi yapacağım. 4.096 defa if'e gireceğim. Çok ciddi bir performans kaybı. Halbuki diğerinde o page'i bir eray gibi düşünüp...
+
+340
+01:14:11,220 --> 01:14:24,760
+Exor'lardan, toplama, or, exor işlemlerinden oluşan, baştan sona compare etmeden bir or döngüsü içerisinde ilerleyeceğim. Sonunda bir tane karşılaştırma yapacağım. Değil mi?
+
+341
+01:14:26,079 --> 01:14:26,680
+Evet hocam.
+
+342
+01:14:38,771 --> 01:15:00,211
+Page'in tamamı için bir karşılaştırma yapacağım. Müthiş bir performans kazancı ve heşe hesaplamak için kullanacağım yöntem de sonuçta genel olarak hani lojik yöntemlerden işte egzoruydu megzoruydu gibi böyle aşırı kompleks şey gerektirmeyen işlemlerden oluştuğu için çok daha fazla zaman kazanmış olacak.
+
+343
+01:15:03,731 --> 01:15:22,191
+Peki, bir page'i bir başka page ile karşılaştırdım. Aa baktım bunlar aynıymış. Öbüründe de aynıymış. Çok güzel. Bunu elimine ediyorum. Tek bir taneye indiriyorum. Share ediyorum. Ama bu page readonly değilmiş. O az önce söylediğim.
+
+344
+01:15:22,899 --> 01:15:34,500
+C Laborator'un da falan olduğu gibi meğerse yazılabilen bir page'miş ve işletim sistemlerinden biri bu page'e yazmaya karar verdi. Ne olacak?
+
+345
+01:15:40,916 --> 01:15:43,935
+Diğerleri de onu yeni haliyle mi kullanacaklar?
+
+346
+01:15:55,699 --> 01:16:22,100
+Duyuyor musunuz beni? Duyuyoruz hocam. Evet hocam. Ben bir düştüm geldim hocam. Ses edin içerisinde duyuyorsunuz. Evet. Sen gittin geldin gördün bağlantın koktu tekrar bağlandın farkındayım. Evet ne olacak arkadaşlar? Çok güzel yazdık kodu. Baktık aynı page'ler onunla onunla eşit bununla eşit elimine ettik. Tek kopya indirgedik işletim sistemlerinden biri yazmaya kalktı.
+
+347
+01:16:23,283 --> 01:16:26,843
+Diğerleri de tamam o yazdıysa biz de bunu kabul edelim mi diyecekler.
+
+348
+01:16:37,939 --> 01:16:40,659
+Yani kabul etmezler hocam.
+
+349
+01:16:41,100 --> 01:16:43,719
+Yanlış çalışır, kabul etmemesi lazım.
+
+350
+01:16:44,379 --> 01:16:45,119
+Zaten evet.
+
+351
+01:16:45,959 --> 01:16:52,875
+Hatch değişirse o zaman yeni hash üretip o...
+
+352
+01:16:53,043 --> 01:17:07,484
+O program için, o page ayrılır. Diğer programlar için. Ama o zaman da anlamı kalmıyor bizim bu content-based sharing yapmamızın. Aslında orada biraz ben anlamadım. Hepsine yeni yeni page'lerim.
+
+353
+01:17:11,443 --> 01:17:12,484
+Buna ne diyoruz?
+
+354
+01:17:12,484 --> 01:17:13,583
+Tekrar tekrar page'ler olur.
+
+355
+01:17:13,923 --> 01:17:19,843
+Content-based page sharing'e ne diyoruz biliyor musunuz? Aslında bunu storage'da da kullanıyoruz.
+
+356
+01:17:23,444 --> 01:17:44,384
+Tekilleştirme diyoruz. Bir verinin tek kopyasını yazıyoruz. Ama değiştiği zaman bir taraftan, biri bunu işte buradaki bir işletim sistemi değiştiği zaman hemen o verinin nesini oluşturuyoruz? Kopyasını önder.
+
+357
+01:17:44,948 --> 01:18:10,108
+Tamamdır. Bu kopyayı ne zaman oluşturuyorum? Değiştiği zaman oluşturuyorum. Değişmesi demek ne demek? Write işlemi yapılması demek. Terim de oradan geliyor. Copy, on, write. Yani write işlemi varsa kopyasını al, kov. Çok klasik bir yöntem. Ama diyelim ben yüzlerce işletim sistemi çalıştırıyorum.
+
+358
+01:18:11,220 --> 01:18:26,540
+Bunlardan 3 tanesi değişti. 97 tanesi tek kopya çalışıyor. 3 tanesinin kendisi için özelleşmiş kopyası var. Linekardayım.
+
+359
+01:18:26,540 --> 01:18:35,140
+100'ü de değişiklik yapıyorsa zaten onları muhtemelen content-page sharing mantığıyla share edemeyeceğim.
+
+360
+01:18:38,228 --> 01:18:41,487
+Hıh, anladım hocam. Ben de burayı anlamaya çalışıyorum.
+
+361
+01:18:53,268 --> 01:18:55,608
+Bakın Page Sharing Performance var.
+
+362
+01:18:59,636 --> 01:19:09,276
+Kaçıncı sayfasında bu? Üçüncü sayfa mı oluyor? Kaç oluyor bu? Dört üçten sonra implementation'da?
+
+363
+01:19:10,076 --> 01:19:13,316
+Figure 4 yazıyor hocam orası mı?
+
+364
+01:19:13,316 --> 01:19:25,416
+Figure 4 evet. O figure 4'ün son tarafına bakın. A fast high quality hash function is used to generate a 64 bit hash value for each scanned page.
+
+365
+01:19:26,195 --> 01:19:50,855
+Yani buradaki secure hash değil.
+
+366
+01:19:51,380 --> 01:20:03,360
+SecureHash ile burada kullanılan hash arasındaki fark ne? Onu bana söyleyebilir misiniz?
+
+367
+01:20:12,819 --> 01:20:15,639
+Ben SecureHash'i bilmiyorum açıkçası.
+
+368
+01:20:19,475 --> 01:20:21,015
+Secure Hash'i bilen var mı?
+
+369
+01:20:23,655 --> 01:20:25,056
+Hocam Collision...
+
+370
+01:20:25,056 --> 01:20:29,475
+Şah var mesela. Secure Hash Algorithm.
+
+371
+01:20:29,895 --> 01:20:31,195
+Şah'ı biliyormuşum hocam.
+
+372
+01:20:32,095 --> 01:20:34,815
+Şah var mı? Şah 256 var.
+
+373
+01:20:35,755 --> 01:20:37,355
+Evet, evet. Onları biliyorum.
+
+374
+01:20:37,355 --> 01:20:43,056
+Onunla buradaki High Quality Hash Function arasındaki fark ne?
+
+375
+01:20:44,851 --> 01:20:53,192
+Hocam, 1.64 bit'e sağlıyor. Daha hızlı. Ama şeyin oranı yüksek artık. Collision olma ihtimali daha yüksek. 1.256 bit orada çok daha azdır.
+
+376
+01:20:54,652 --> 01:21:10,091
+Secure hash'te az diye bir şey olamaz. Teorik olarak renk düşmemesi. Hiç bir bit bile değişse çıkacak olan hash değerinin değişmesini bekliyoruz. Secure hash böyle olmalı. O zaman onun kompleksitesi daha artıyor.
+
+377
+01:21:13,076 --> 01:21:18,816
+Başka bugün, ne zaman? Dün anlattığım bir dersten size söyleyebilirim.
+
+378
+01:21:24,564 --> 01:21:50,004
+ŞA256 günümüzün modern işlemcilerinde ne kadardı? Değeri hatırlamaya çalışıyorum. Yaklaşık 2000 milyon hash per second hesaplanabiliyor. Ama tabi bu kadar böyle page boyutunda değil. Yani 256 bitin hesaplanması için. 2000 milyon hash.
+
+379
+01:21:50,351 --> 01:21:53,531
+Öyle geçiyor. MH bölü saniye şeklinde geçiyor.
+
+380
+01:21:54,036 --> 01:22:10,076
+Ama diğer taraftan mesela başka bir hash fonksiyonu var. Bcrypt diye. Onlar Acrypt, Bcrypt diye geçer. O sadece 45 bin tane. Yani birinde milyon hızına erişebilirken diğerinde 45 bin tane.
+
+381
+01:22:10,076 --> 01:22:16,595
+O zaman burada bahsettiğimiz hash bu özelliğe sahip olan bir hash olmayacak.
+
+382
+01:22:19,283 --> 01:22:38,483
+Sekür anlamda değil de yine konuyucuna izin verecek ama çok düşük bir oranda izin verecek, hızlı olabilecek. Bu durumda da hani diğeriyle şu karşılaştırmayı yaptığımız zaman, aklınızda canlanması için söyledim o rakamları, o algoritma çok çok çok daha şey olacak, efektif olacak.
+
+383
+01:22:40,212 --> 01:22:42,552
+Hocam bu kollijini handle ediyorlar ama şey diyor.
+
+384
+01:22:42,832 --> 01:22:43,332
+Tabii ki.
+
+385
+01:22:43,752 --> 01:22:46,792
+Aynı çıktıktan sonra bir de o en kare olan şeyi yapıyorlar.
+
+386
+01:22:47,432 --> 01:22:47,872
+Aynen.
+
+387
+01:22:52,872 --> 01:23:01,112
+Yani en kareyi şey olduğunda eğer hani öyle bir kollijin olursa o zaman kullanıyor.
+
+388
+01:23:01,112 --> 01:23:02,811
+Bunun sayısında şeyinde.
+
+389
+01:23:06,644 --> 01:23:21,384
+Durum bu. Bakın, Page Sharing Performance, Number of VMs ve % Virtual Memory, yukarıda da şey kullanımına göre.
+
+390
+01:23:25,779 --> 01:23:31,559
+Yeni,
+
+391
+01:23:31,559 --> 01:23:47,559
+Yani,
+
+392
+01:23:47,807 --> 01:24:07,327
+Number of Concurrent VM'i, çalışan VM sayısını arttırdığımızda lineer şekilde, yani eğimi değişecek, değişiyor ama lineer bir şekilde kazanç sağladığı memori miktarı artıyor.
+
+393
+01:24:08,083 --> 01:24:30,503
+Bakın, yani nerelerden başlıyor? Şu 100, 200, 300, 400 MB şeyinde 50 MB'lardan başlayıp 400 MB'a kadar geliyor. 10 VM'de neredeyse 400 MB'lık bir memori kazancı sağlamış oluyorum.
+
+394
+01:24:33,395 --> 01:24:45,315
+Yani yüzdesel olarak agregate birleştirilmiş bir araya getirilmiş. Yani işte unikleştirilmiş.
+
+395
+01:25:01,395 --> 01:25:20,395
+VN'in %67 memorisini ben bu şekilde tekilleştirebiliyorum. Veyahut da Content Sharing'den geçirip rahatlayabiliyorum. Öbür türlü...
+
+396
+01:25:22,003 --> 01:25:39,543
+%100 memori aloke edeceğime bu türlü %33 yani 3'te 1 memoriyle bu VM'i run edebilir hale geliyor. Bu da aynı memoride 3 tane VM çalıştırmak demek. Bir tane çalıştırmak yerine 3 tane çalıştırmak demek.
+
+397
+01:25:39,923 --> 01:25:51,203
+Gördünüz mü? Sadece basit bir algoritmik yaklaşımla elinizdeki donanım kaynağını çok daha efektif bir şekilde kullanmış oluyorsunuz.
+
+398
+01:25:54,771 --> 01:25:55,631
+Evet hocam.
+
+399
+01:26:01,427 --> 01:26:17,387
+Bakın, figür 5'e bakacak olursak, Windows NT, Linux var, ABC değil mi? Sharing Matrix from Production Deployments of ESX Server, yani gerçek hayat.
+
+400
+01:26:20,564 --> 01:26:43,424
+VMs Serving Users at a Fortune 50 Company, Running a Variety of Database, Oracle SQL Server çalıştırıyormuş. Oracle veya SQL Server, yani Microsoft. Web sunucusu, IIS ve hatta WebSphere çalıştırıyormuş. Java veya Visual Basic Deployment'ı var.
+
+401
+01:26:43,988 --> 01:27:01,688
+İkincisinde, nine Linux VMs serving a large user community for a non-profit organization executing mix of web, Apache, Mail, Majordomo, PostFix, Popimap, MailArmor and other servers.
+
+402
+01:27:01,688 --> 01:27:05,248
+Bu hani community'de çok karşımıza çıkan.
+
+403
+01:27:06,323 --> 01:27:31,183
+5 Linux VMs Providing Web Proxy, Sequit, Mail, Postfix, RAV ve Remote Access, SSH Services to VMware Employees. Yani bu da bakın kendi içerisinde görüyor musunuz? VMware'in kendi içerisinde toplam memori, 10 tane VM için toplam memori 2 GB. A şıkkında, B şıkkında.
+
+404
+01:27:32,243 --> 01:27:53,304
+1846 MB, C şıkkında da 1658 MB. A senaryosunda %43 neredeyse bir sharing var. Görüyor musunuz? Diğerinde %29 var.
+
+405
+01:27:53,716 --> 01:28:14,436
+Şu C, en şey olanı, yani sharing açısından en düşük verimli olanı, çünkü web proksi demek ki çok farklı yerlere erişiyorlar veyahut da remote access'te farklı işler gerçekleştiriyorlar, farklı prosesler çalıştırıyorlar.
+
+406
+01:28:15,076 --> 01:28:19,816
+Orada da %10. Ama yine ne olursa olsun.
+
+407
+01:28:24,595 --> 01:28:30,175
+Normal kullanıma göre belirli bir miktar azaltmış oluyorsunuz.
+
+408
+01:28:34,868 --> 01:28:47,548
+İşte bakın burada açıklamış. VMware's finally workload's C yerini bulmaya çalışıyordum. Buldum şimdi şurada. VMware's on IT department and provides web proxy falan filan.
+
+409
+01:28:48,500 --> 01:29:07,120
+Page Sharing Reclaimed About 7% of VM Memory for a Saving of 120 MB, of which 25 MB was due to zero pages. Zero pages ne? Page'ler alokey edilmiş ama içleri boş. Hiç yazılmamış. Yani orada öyle boş boş duruyor.
+
+410
+01:29:11,979 --> 01:29:12,819
+Evet.
+
+411
+01:29:14,355 --> 01:29:16,195
+Başka neyimiz var arkadaşlar?
+
+412
+01:29:26,771 --> 01:29:29,051
+Hocam, geriye çok önemli bir şey kalmadı galiba.
+
+413
+01:29:29,592 --> 01:29:31,211
+Idle memory text var.
+
+414
+01:29:31,792 --> 01:29:35,211
+Idle page'leri geri şey yapmak.
+
+415
+01:29:35,932 --> 01:29:43,112
+Peki, reclaim etmek. Yani idle memory'yi reclaim etmek.
+
+416
+01:29:44,752 --> 01:29:50,192
+Idle memory text ne demek? Bunu da konuşalım. Zaten konu bitiyor.
+
+417
+01:29:50,432 --> 01:29:51,832
+Idle memory text ne demek?
+
+418
+01:29:56,435 --> 01:30:20,815
+Hocam, burada yanlış hatırlamıyorsam şeyden bahsediyordu. İşte şu anki mesela kiralama örneklerine bakarsak bu onun altını açan konsept. Daha fazla para verip daha fazla yer aloket edebiliyorum bir şirketten. Bu orayı açıyor, bir de şeyden bahsediyor. Örneğin biz aloket ettik. Ben idle, çok şey değil, memurinin her yerine erişmiyorum ama yine de aloket etmişim, parasını vermişim.
+
+419
+01:30:21,587 --> 01:30:25,247
+Bazı şeylerde idle memori çok az.
+
+420
+01:30:25,587 --> 01:30:27,867
+Para mı veriyorsun yoksa vergi mi veriyorsun?
+
+421
+01:30:29,127 --> 01:30:33,268
+Ben şirketten şey yaparken dedim. Böyle yaparsam vergi vermiş oluyorum.
+
+422
+01:30:34,367 --> 01:30:39,227
+Aynen. Vergi bağıtığı üzerine kurulu bu.
+
+423
+01:30:41,367 --> 01:30:45,907
+Evet hocam aynen. Idle Memori çok yüksek. Son vergisini veriyorum. Tekst veriyorum.
+
+424
+01:30:48,595 --> 01:31:06,835
+Aynen. Yani aslında bir, bunlara genelde penalty function deniyor. Bir cezalandırma fonksiyonu. O cezalandırma fonksiyonuna göre alokasyon veya de alokasyon yapılmış oluyor.
+
+425
+01:31:11,188 --> 01:31:24,548
+ESX Server, bakın, idle memory tax rate is a configurable parameter that defaults to 75%. Bu o zamanki ESX Server için. Bu şu ankine bakmamız lazım.
+
+426
+01:31:26,028 --> 01:31:30,028
+These allows most idle memory in the system to be reclaimed.
+
+427
+01:31:30,931 --> 01:31:40,971
+Eğer memori, yani sistemde boş duran, kullanılmayan şey varsa, while still providing a buffer against rapid working set increases.
+
+428
+01:31:42,547 --> 01:32:04,907
+Masking the latency of system reclamation activity such as ballooning and swapping. Zaten biz bunu başlangıçta neyle yapıyorduk arkadaşlar? Ballooning ile yapıyorduk değil mi? Balonun büyümesi, küçülmesi, inflation, deflation ile bununla yapıyorduk. Ama onun latency'si daha yüksek.
+
+429
+01:32:10,547 --> 01:32:16,787
+Arkına varıp şey yapması. Halbuki burada çok daha hızlı bir şekilde bu gerçekleşebiliyor.
+
+430
+01:32:33,332 --> 01:32:34,532
+Evet arkadaşlar.
+
+431
+01:32:38,515 --> 01:32:47,775
+Geri kalan kısmındaki şeylere de benim bu yaklaşımımla bakacağınıza inanıyorum. Onları da inceleyeceğinize inanıyorum.
+
+432
+01:32:51,380 --> 01:32:52,340
+Anlaştık mı?
+
+433
+01:32:52,779 --> 01:32:54,180
+Anlaştık hocam. Çok bir şey kalmadı zaten.
+
+434
+01:32:54,180 --> 01:32:54,819
+Anlaştık hocam.
+
+435
+01:32:55,460 --> 01:33:03,159
+Evet. Şimdi ben yine şey veririm. Çünkü şununla alakalı aslında çok güzel iki tane var.
+
+436
+01:33:04,380 --> 01:33:17,739
+Siz demiştiniz galiba. [öğrenci] sen mi demiştin? Hocam bir tane verin diye. Şu bir zen var, bir de disco var. O 10 ve 11'i vereceğim. O ikisi güzel.
+
+437
+01:33:18,195 --> 01:33:19,735
+Diğer Önder'di hocam da.
+
+438
+01:33:20,315 --> 01:33:33,055
+Diğer [öğrenci] miydi? Evet, isimler karıştı. Diğer [öğrenci] bu hafta bak yok. Aferin sen varsın ama. Güzel. Okidoki. O zaman hepinize iyi akşamlar diliyorum arkadaşlar.
+
+439
+01:33:33,376 --> 01:33:34,676
+Hocam, içimden...
+
+440
+01:33:34,676 --> 01:33:36,095
+Buyur [öğrenci].
+
+441
+01:33:37,115 --> 01:33:39,636
+Ders saatini şu an tam olarak kaç belirledik hocam?
+
+442
+01:33:40,115 --> 01:33:47,996
+Ramazan boyunca 8.30 demiştik ama daha öncesinde 7.30'da başlıyorduk. 7.30-7.40 arası başlıyorduk.
+
+443
+01:33:48,855 --> 01:33:54,435
+Tamam. Bir de haftaya şu an sınav net mi hocam yoksa hala muallakta mı?
+
+444
+01:33:54,836 --> 01:34:07,136
+Yani yazarım size. Şu an için kafamda geçen duyurduğum şekilde sınav yapılması yönünde, bir sınav olduğunuz yönünde. Bununla alakalı farklı bir düşüncem olursa sizinle paylaşırım.
+
+445
+01:34:07,456 --> 01:34:08,476
+Teşekkürler hocam.
+
+446
+01:34:08,615 --> 01:34:17,476
+Hocam, şey peki, 7.5 sizin uygunluğunuz 7.5 mu? Böyle 7 olabilir mi? Yaz gelince sizin o şey değişiyor mu?
+
+447
+01:34:19,756 --> 01:34:29,876
+Kontrol etmem lazım. Yani çok yaz, kıştan dolayı etkilenmiyor. Genel olarak 7.5 itibariyle rahata çıkmış oluyorum.
+
+448
+01:34:29,935 --> 01:34:31,944
+Tamamdır hocam.
+
+449
+01:34:32,604 --> 01:34:44,944
+Sorunsuz bölünmeden vakit ayırıyorum. Ondan dolayı şey olsun istemiyorum. Ama olursa 7'ye çekeriz de bu kadar az bir şey kalmışken dönemin bitmesine isterseniz öyle yapmayalım ya.
+
+450
+01:34:45,604 --> 01:34:46,904
+Tamam hocam. Nasıl istersen?
+
+451
+01:34:47,123 --> 01:34:48,384
+Böyle devam edelim bence.
+
+452
+01:34:48,384 --> 01:34:50,564
+Olur, uygunlar hocam. Teşekkür ederim.
+
+453
+01:34:50,703 --> 01:34:51,663
+Ben teşekkür ederim.
+
+454
+01:34:52,324 --> 01:34:52,904
+İyi akşamlar.
+
+455
+01:34:52,904 --> 01:34:54,543
+İyi akşamlar hocam.
+
+456
+01:34:54,543 --> 01:34:55,264
+Görüşmek üzere.
+
+457
+01:34:55,543 --> 01:34:55,984
+Sağ olun.

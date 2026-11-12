@@ -1,0 +1,539 @@
+1
+00:01:36,947 --> 00:01:54,847
+Sesim geliyor mu arkadaşlar? Geliyor hocam. Tamam. Şimdi 19 kişiyiz. Normal ders mevcudu. 42 kişi görünüyor sistemde. O yüzden 1-2 dakika daha bekleyelim.
+
+2
+00:05:47,156 --> 00:06:01,016
+22 kişi olduk. İsterseniz başlayalım. Diğer arkadaşlar da gelirse gelirler. Belki de bir kısmımız asenkron olarak kayıttan takip etmek istiyordur.
+
+3
+00:06:06,196 --> 00:06:16,936
+Son dönemki düzenlemeden bizim dersimiz zaten etkilenmiyor. Çünkü baştan bu dersi online olacak şekilde planlamıştık.
+
+4
+00:06:18,036 --> 00:06:31,696
+Bugün derse giriş yapacağım. Derse nasıl işleyeceğimizi, kurallarının ne olduğunu, nelere dikkat edeceğimizi ve dersin değerlendirmesinin ne şekilde gerçekleşeceğini sizlere anlatacağım.
+
+5
+00:06:33,536 --> 00:06:45,896
+Ondan sonrasında da önümüzdeki hafta için size nasıl bir ödev vereceğim, onu belirteceğim.
+
+6
+00:06:45,896 --> 00:06:55,735
+Şimdi arkadaşlar, bu aslında birkaç tane konunun üzerine kurulu bir ders.
+
+7
+00:06:56,435 --> 00:07:16,235
+İşletim Sistemleri Bilgisayar Mühendisliği'nin en temel konularından, tam böyle orta noktasında yer alan konulardan bir tanesi. Çünkü alt tarafta donanım var, üst tarafta uygulamalar var. Uygulamalar ister sistem uygulamaları olsun.
+
+8
+00:07:16,947 --> 00:07:31,687
+İster bizim uç kullanıcıya hitap eden uygulamalarımız olsun, işte sistem uygulaması derken mesela bir veri tabanı uygulamasını veyahut da bir web uygulama sunucusunu düşünebilirsiniz.
+
+9
+00:07:31,687 --> 00:07:41,267
+Bir de onun üzerinde gerçekte çalışan uygulamalar. Hangisi olursa olsun alt taraftaki donanımla üst taraftaki bu uygulamalar arasındaki
+
+10
+00:07:42,163 --> 00:08:06,183
+Etkileşimi, koordinasyonu, kaynak yönetimini ve efektif olarak çalışmayı sağlayan parça işletim sistemi. Bu açıdan da çok önemli. Bu bir sunucu için de geçerli, bir laptop, desktop için de geçerli veya elimizde taşıdığımız cep telefonumuz için de geçerli.
+
+11
+00:08:07,060 --> 00:08:13,319
+Ya da gömülü başka bir herhangi bir amaç için oluşturulmuş bir sistem için de geçerli.
+
+12
+00:08:14,720 --> 00:08:30,340
+Ama işletim sisteminin bilgisayar mühendisi açısından diğer bir önemi de bilgisayar mühendisliğindeki bir takım çok temel konuları doğrudan içeriyor ve bunların uygulamaları üzerine kurulu olması.
+
+13
+00:08:30,340 --> 00:08:33,019
+Örneğin veri yapıları.
+
+14
+00:08:33,524 --> 00:08:56,524
+Örneğin algoritmalar, programlama dilleri bunlarla çok çok iç içe geçmiş durumda. Çünkü şöyle düşünün, diyelim ki bir işletim sistemi altında çalışan programlar var, bunlara denk düşen prosesler var. Bunların listesini en efektif şekilde...
+
+15
+00:08:57,395 --> 00:09:10,495
+Yönetmeniz lazım. Orada bir veri yapısı kullanmanız gerekiyor. Bu liste içerisinde hızlıca hareket edebilmeniz lazım. Veya diğer taraftan donanım açısından baktığımızda,
+
+16
+00:09:23,604 --> 00:09:40,344
+Hangi kısmın, memorinin hangi kısmının hangi prosesi ait olduğunu tutuyor, biliyor olmanız lazım. Yine burada bir veri yapısı var. Veya diğer taraftan işte bir program parçasından bir başka program parçasına geçeceksiniz.
+
+17
+00:09:47,892 --> 00:10:10,332
+Kenara kaydedilmesi, yeni geçilecek olan programın bilgileriyle yüklenilmesi, işte stek alanının ilklendirilmesi gibi şeyler dediğimizde de o zaman doğrudan programlama dilinde uyguladığımız modeli biliyor ve bunu hakim oluyor olmamız lazım. Bunu yönetebiliyor olmamız lazım.
+
+18
+00:10:14,100 --> 00:10:29,019
+İşletim sistemini bir aracı olarak düşünmemiz lazım. Bir kaynak yöneticisi olarak düşünmemiz lazım. Kendisi de bir program olduğu için o da işlemci ihtiyacına sahip, o da memori ihtiyacına sahip.
+
+19
+00:10:38,227 --> 00:10:46,028
+Kullanılabilirliğini ve efektifliğini sağlayabilmek adına işlemci veya işte memori kaynağının diğer...
+
+20
+00:10:46,032 --> 00:11:10,511
+Programlar tarafından, onlara ait prosesler tarafından kullanılabilecek şekilde geride, geriye kalabiliyor olması lazım. Yoksa bütün işlemci gücünü, işletim sistemi kullanırsa veyahut da sistemdeki memori'nin tamamına işletim sisteminin ihtiyacı olursa o zaman program çalıştırmak için geriye çok fazla bir şey kalmayacak.
+
+21
+00:11:13,844 --> 00:11:35,964
+Aracı olacak dedik. Kendisini, varlığını çok hissettirmeyecek. Yani bu ne anlama geliyor? Bir donanım seviyesinde interrupt oluştu. Bunun sonucunda da aslında diyelim ki bir disk birimindeki okuma veya yazma işleminin bittiği.
+
+22
+00:11:36,303 --> 00:11:48,884
+Belirtiliyor. Bu işlemin bitmesini bekleyen gerçek programın en kısa zamanda hızlıca haberdar edilmesi ve kaldığı yerden devam ettirilebilmesi lazım.
+
+23
+00:11:50,159 --> 00:12:02,439
+Kendisi aslında yine bir kod parçası olarak işlemcide çalışacak olmasına rağmen minimum gecikmeyle bu çalışmayı gerçekleştirecek durumda olması lazım.
+
+24
+00:12:02,439 --> 00:12:12,179
+Bütün bunların hepsine baktığımız zaman hakikaten işletim sistemi çok böyle merkezi ve önemli bir pozisyonda.
+
+25
+00:12:12,659 --> 00:12:39,159
+Bu açıdan da işletim sistemleri üzerine çok uzun süreler farklı alanlarını kapsayacak. İşte işlemci yönetimini, memori yönetimini, çevre birimi yönetimini, üzerinde çalışan programların yönetimini, bunların eş zamanlı olarak çalışabilmesi, birbirleriyle etkileşebilmesi, birbirleriyle iletişim.
+
+26
+00:12:39,539 --> 00:13:06,819
+Kurabilmeleri, haberleşebilmeleri kapsamında çok derin çalışmalar yapılmış. Akademik bilimsel çalışmalar yapılmış. Bunların pratik uygulamaları yapılmış ve şu anda aslında kullandığımız, farkına vararak veya varmayarak kullandığımız bir takım modern işletim sistemi dediğimiz işletim sistemlerinin temelleri oluşturulmuş.
+
+27
+00:13:08,692 --> 00:13:36,132
+Bu ders kapsamında bu süreci sizle beraber en başından bugünkü zamana kadar bu konuya ait üretilmiş olan, konunun uzmanı olan, konunun hakimi olan işletim sisteminin o kısmıyla alakalı bazı defakto standartların
+
+28
+00:13:36,563 --> 00:13:51,203
+Oturmasına, yerleşmesine ön ayak olan kişilerin kaleminden yazılmış paperlar üzerinden inceleyeceğiz, değerlendireceğiz ve çıkarımlarda bulunacağız.
+
+29
+00:14:03,152 --> 00:14:30,452
+İşletim sistemleriyle alakalı bir takım temel kavramların, motomot benim tarafımdan anlatıldığı, sizlere aktarıldığı bir şey olmayacak. Zaten lisansüstü olup doktora seviyesinde bir, temel olarak doktora seviyesinde konumlandırmamız gereken bir ders. Ancak master olarak da bu ders alınabilir ve takip edilebilir ve gerekleri yerine getirilebilir.
+
+30
+00:14:31,152 --> 00:14:45,292
+Bu iki şeyin üzerine basa basa söylüyorum. Tekrar tekrar. Çünkü sizin çabanız aslında dersin şekillenmesini sağlayacak. Bunu nasıl gerçekleştireceğiz?
+
+31
+00:14:46,548 --> 00:14:59,368
+Ders kapsamında benim sizler için seçmiş olduğum, bu az önce işte memuri yönetimi olsun, işlemci yönetimi olsun, çevre birimi yönetimi olsun, birden fazla işlemcinin bir arada çalışması olsun,
+
+32
+00:15:00,808 --> 00:15:14,427
+proses dediğimiz programın çalışan, işletim sistemi altında çalışan hali olsun, bunların yönetimiyle alakalı konular olsun veya işte bir prosesin bir sistemden bir başka sisteme göç ettirilmesi, migration.
+
+33
+00:15:14,548 --> 00:15:24,288
+Çalışırken durdurulup tekrar çalışır hale getirilmesi efektif bir şekilde bunların çalıştırma sıralarının belirlenmesiyle alakalı.
+
+34
+00:15:25,235 --> 00:15:42,055
+Günümüzün çok sıcak kavramı olan sanallaştırma, sanallaştırmanın tipleri, normal virtualization, para virtualization ve diğer sanallaştırma teknikleri, container dediğimiz yapılar.
+
+35
+00:15:42,055 --> 00:15:53,195
+Bunların ortaya çıkışlarını, bunlarla alakalı yapılmış olan araştırmaları, elde edilen sonuçları, bu sonuçların tartışmalarını,
+
+36
+00:15:53,235 --> 00:16:05,535
+ve buna bağlı olarak tasarım kararlarını içeren, sizlerin incelemesi için seçmiş olduğum 40 küsurat yayın var. Bunlar makale.
+
+37
+00:16:07,395 --> 00:16:17,235
+İşte bu konunun uzmanları tarafından yazılmış olan makaleler. İlerleme formatımız şu şekilde olacak. Ben size...
+
+38
+00:16:18,035 --> 00:16:33,295
+Bu hafta işte o yüzden dersin tanıtımını yapıyorum, girişini yapıyorum. Ben size aslında derste üzerinden geçeceğiniz makaleleri duyuracağım sayfa üzerinden. Bu yeri geldiğinde iki tane olabilir veya üç tane olabilir.
+
+39
+00:16:43,059 --> 00:17:03,619
+Önemli yayın yapılmış olduğu ile alakalı bir şey. Siz bunları bir bilimsel yayın inceleme mantığıyla, değerlendirme mantığıyla okuyacaksınız. Yani bunun bir abstrakt kısmı var. Neyle alakalı olduğunu gösteriyor. Neyin tartışıldığını, neyin incelendiğini.
+
+40
+00:17:04,115 --> 00:17:13,935
+Sonuçta bu yayının yapılmasındaki hedefin neler olduğunu ve ne elde edilmeye çalışıldığını kısaca özetleyen oradaki şey.
+
+41
+00:17:13,935 --> 00:17:17,195
+Sonrasında tabii ki bir introduction kısmı var.
+
+42
+00:17:18,476 --> 00:17:22,935
+Introduction daha genel haliyle konuya...
+
+43
+00:17:23,571 --> 00:17:36,251
+Genel hatlarıyla giriş yapılmasını, problemin tarifinin yapılmasını, öneminin ortaya konulmasını sağlayan, onu üzerinde vurguladığımız kısım, onunla alakalı şeyleri yazdığımız kısım.
+
+44
+00:17:38,324 --> 00:17:56,204
+Related Work dediğimiz varsa ki çoğunda aslında Related Work ya az olacak ya hiç olmayacak. Çünkü neden? Konuyla alakalı öncül çalışmalar, bu konunun çözülmesi veyahut da ilk defa değerlendirilmesi yönüne yapılmış çalışmalar.
+
+45
+00:17:56,204 --> 00:18:06,204
+Ama yine de var olanlar çıkacaktır. Onlar sonra da bu konunun teorik ve pratik olarak incelenmesi, teorik olarak yapılan...
+
+46
+00:18:06,324 --> 00:18:25,724
+İncelemeye bağlı olarak pratikteki deneyler elde edilen sonuçlar ve hangi yaklaşımın daha iyi olduğu, hangi durum için daha geçerli olduğu yönünde yorumlar kısmı. Bir de tabii ki ucu açık problemler.
+
+47
+00:18:28,084 --> 00:18:56,084
+Bir seferde konuyla alakalı bütün soru işaretlerini giderebilmemiz, sorulmuş olan, ortaya atılmış olan soruların tamamını cevaplayabilmemiz mümkün değil. Önemli bir kısmı çoğu zaman cevaplanmış oluyor ama yine de işte future world dediğimiz bununla alakalı yapılması gereken çalışmalar da ele getiriliyor. Yani bu kadarı incelendi, bu sonuçlar elde edildi. Sonrasında da şunlara dikkat ediyoruz.
+
+48
+00:18:56,084 --> 00:19:14,244
+Bunları incelememiz gerekiyor. Bu size vereceğim, hafta hafta vereceğim bu makaleleri, bu paperları bu gözle, bu yaklaşımla okuyacaksınız, değerlendireceksiniz ve bunlardan bir özet çıkartacaksınız.
+
+49
+00:19:19,347 --> 00:19:33,899
+Amacı ne? Paper'ın yazılmasının. Kapsam ne? Nelere dokunmuş? Bu amaca ulaşırken yaptığı incelemede, yaptığı teorik...
+
+50
+00:19:33,971 --> 00:19:57,412
+Yorumlarda ve deneysel çalışmalarda nedere dokunmuş kapsam olarak ve ne elde etmiş, neyi sonuçta çözmüş, amaçla ne kadar çözmüş, çözülmesi gereken başka şeyler kalmış mı? Sorularının, cevaplarının olduğu bir yorum yazacaksınız.
+
+51
+00:20:00,147 --> 00:20:20,847
+Bireysel olarak yapması gerekiyor. Yani grup çalışması burada söz konusu olmayacak. İşte baktım az önce dersin başında söyledim. 42 kişi görünüyorsunuz. Demek ki her bir paperla alakalı her hafta 42 tane yorum olması lazım.
+
+52
+00:20:28,147 --> 00:20:55,051
+Başka paperlara da referans veriyor olabilir. Arka tarafta references kısmı oluyor biliyorsunuz bilimsel şeylerde. Yani şuradan, şusundan yararlandık. Bu çalışmanın bu kısmından yararlandık. Böyle olduğunda da nasıl diyebiliriz? Belki bir noktada top to bottom ama bazen artık konuya daha hakim olup da daha böyle şey...
+
+53
+00:20:55,604 --> 00:21:17,804
+İnceler hale geldiğinizde, kıvrak bir şekilde inceler hale geldiğinizde belki de bottom-up yapabilirsiniz. Yani referanslara bakıp o referanslarla önce bir başlayayım, orada neler varmış. Sonrasında paper'ı inceleyeyim de diyebilirsiniz. Onu sizin kendinizin ayarlaması gerekiyor. Böyle bir...
+
+54
+00:21:18,228 --> 00:21:35,387
+Değerlendirme kısmı olacak. Peki bu bize ne sağlayacak? İşte diyelim ki önümüzdeki hafta için ben şu girişten sonra sizlere bu mantığa göre değerlendirmeniz için iki veya üç tane paper vereceğim.
+
+55
+00:21:46,228 --> 00:21:50,228
+Sizlerle yorumunu yapacağız. Ben ortaya basit...
+
+56
+00:21:51,316 --> 00:22:03,255
+Sorular atacağım. Bu paperlardaki adreslenmiş, bu paperlarda çözülmeye çalışılmış, gündem yetmiş, üzerinde uymuş konularla alakalı.
+
+57
+00:22:03,255 --> 00:22:16,296
+Ve sizlerden yorum bekleyeceğim. Çünkü okumuş, incelemiş ve yorumlamış, özetlemiş olacaksınız ya. Böylece bir etkileşim içinde olacağız.
+
+58
+00:22:19,316 --> 00:22:46,115
+Çok rahat sağlayabiliriz diye düşünüyorum. Tabii ki az önce söylediğim şey burada çok çok önemli olacak, planda olacak. Yani sizin mutlaka o vereceğim duyurusunu yapacağım paperları okumanız, incelemeniz, anlamanız ve yorumlamanız lazım ki bir hafta sonrasında bu
+
+59
+00:22:46,771 --> 00:23:03,831
+Soru-cevap mı diyelim veyahut da ders kapsamında okunan paperların değerlendirmesi mi diyelim? Bununla alakalı ortaya atılacak, gündeme gelebilecek sorulara veyahut da o sorulara bağlı yorumlara cevap verebilirim.
+
+60
+00:23:06,256 --> 00:23:23,816
+Tabii ki ben orada bir moderatör gibi olacağım. Verilen cevaplarda eksik olduğunu düşündüğüm yerde müdahale edeceğim. Sıkıntılı olduğunu düşündüğüm yerde müdahale edeceğim. Ama en yapmak istemediğim kimse cevap vermediği için sorduğum sorunun cevabını benim vermem olacak.
+
+61
+00:23:24,056 --> 00:23:33,376
+Çünkü sizin öğrenmenizi teşvik eden bir lisans üstü dersi, hep onun üzerine basa basa söylüyorum, lisans dersinden farklı.
+
+62
+00:23:34,256 --> 00:23:40,576
+Lisans derslerinde daha çok bilgiyi sizlere aktarıyoruz, daha fazla yönlendiriyoruz.
+
+63
+00:23:40,576 --> 00:23:51,676
+Ama burada sizin bu bilimsel araştırma veya bilimsel yayın okuma ve onun üzerine araştırma yapıp bunu yorumlama yeteneğinizi de teşvik etmemiz,
+
+64
+00:23:51,776 --> 00:23:59,516
+onu da bir konu özelinde ortaya çıkartabilmenizi daha böyle iyileştirebilmenizi sağlamamız lazım.
+
+65
+00:24:00,296 --> 00:24:02,236
+Yani böyle bir amacı var.
+
+66
+00:24:02,256 --> 00:24:05,256
+Bu şekilde ilerleyeceğiz. Bu arada...
+
+67
+00:24:06,516 --> 00:24:28,836
+Dediğim gibi işlemci yönetimi var, memori yönetimi var, proses yönetimi var, proseslerin migrate edilmesi var, prosesler arası haberleşme var, senkronizasyon var, virtualization var, protection var, koruma var birbirlerinden, security var, bir sürü konu var, çok farklı konular var.
+
+68
+00:24:34,516 --> 00:24:58,296
+Cidden işletim sistemi kapsamında işletim sistemleri konusunun incelenmesini, tartışılmasını, konuşulmasını zevkli hale getiren ve az önce de söylediğim gibi veri yapısına, algoritmalara, programlama dillerine, hatta en alt seviye SME seviyesindeki programlamaya donanım şeylerine dokunan, onlardan beslenen çok güzel konular var.
+
+69
+00:25:02,516 --> 00:25:10,516
+Bu konulardan birini seçeceksiniz. Kendinize bir uygulama olarak ve bu uygulamayı...
+
+70
+00:25:11,412 --> 00:25:34,892
+Bir sanal makinede gerçekleştireceksiniz. Yani o bir diyelim ki sanal makine ortamında, virtualized bir ortamda bunu gerçekleştireceksiniz. Diyelim ki bir prosesin bir sistemden bir başka işletim sisteminden bir başka işletim sistemine, aynı tipteki tabii ki aynı millardaki diyelim, migrate edilmesi.
+
+71
+00:25:39,412 --> 00:26:04,412
+Linux'ta yapacağım ki böyle işler için genelde Linux'u kullanmamız çok daha kolaylık sağlıyor. Yani kernel sorsuna kadar her türlü sorsa hakim olabildiğimiz ve onlar kullanarak bu tarz şeyleri rahatlıkla yapabildiğimiz için işte orada A VM'indeki şeyi, prosesi B VM'ine...
+
+72
+00:26:05,428 --> 00:26:33,428
+Burada durdurup, A'da durdurup, B'ye mağdur edilip, B'de çalıştıracaksınız. Senaryolardan biri. Veya işte biriniz diyecek ki ben interhap mekanizmaları üzerine, interhap prioritisinin çözülmesi üzerine, oradaki latency'nin en aza indirilmesi üzerine. İşte bununla alakalı var. Paperların içerisinde buna yönelik paperlar var. Veyahut da bu konuyla alakalı ve bu konunun da adreslenmesi.
+
+73
+00:26:33,428 --> 00:26:45,788
+İndiği incelendiği paperlar var. Oradaki teknikleri implement edeceksiniz. Veya işte file sistem performansı var. Unix'daki file sistemleri.
+
+74
+00:26:47,220 --> 00:27:10,827
+Windows'daki file sistemleri diyelim. Bunların yazma, okuma performansları, büyük küçük dosya olması, sequential erişilmesi, random erişilmesi gibi bir sürü durum söz konusu. Bunlar da çünkü şeyi etkileyen, yani bir veri tabanında file sisteme gelen...
+
+75
+00:27:11,380 --> 00:27:22,320
+İstek modeli ile, istek karakteristiği ile bir web serverdaki uygulama veya web server üzerinde çalışan uygulamada gelen farklı olabiliyor.
+
+76
+00:27:22,840 --> 00:27:27,120
+Yait de bir kullanıcı profili, sıradan bir kullanıcı profili farklı olabiliyor.
+
+77
+00:27:27,120 --> 00:27:37,300
+Böyle bu konuları seçerek bunu bir uygulama halinde gerçekleştireceksiniz ve bunun içinde bir rapor.
+
+78
+00:27:37,683 --> 00:27:47,523
+Yine amacınız neydi, kapsamınız neydi, nelerden yararlandınız, neleri gerçekleştirdiniz ve sonuçta ne elde ettiniz?
+
+79
+00:27:47,523 --> 00:27:54,243
+Yani baktığınız zaman basit yapıda da olsa bir paper yazmış olacaksınız.
+
+80
+00:27:55,023 --> 00:28:04,268
+Buradaki şeyleri seçerek, konulardan birini seçerek, o konularla alakalı paperda kendinizi input olarak kabul ederek bir...
+
+81
+00:28:04,756 --> 00:28:24,756
+Paper yazmış, bir rapor hazırlamış olacaksınız ve tabii ki bununla da beraber bir sunumunuz olacak. Bunları deadline'a geldiğinde sizler şey yaptığımızda, diyelim ki herkes beşer dakikalık bir süreyle...
+
+82
+00:28:25,423 --> 00:28:41,324
+Hızlı bir şekilde hangi konuyu incelediğini, ne gerçekleştirdiğini, ortaya ne çıkardığını, sonuçta nasıl değerler, nasıl sonuçlar elde ettiğini ve buna bağlı olarak yorumunun ne olduğunu bize hızlıca anlatacak.
+
+83
+00:28:41,324 --> 00:28:53,324
+Böylece okuduklarımızın uygulamalı bir şekilde sonuçlarını da göreceğiz. Yani pekişmesi anlamında size fayda sağlayacak bir...
+
+84
+00:28:53,423 --> 00:29:12,923
+Aşamayı da gerçekleştirmiş olacağız. Tabii bunu kullanırken işte ortam olarak Unix tabanlı ilerlememiz, o kapsamda da Linux'u kullanmamız avantajlı. İhtiyaca bağlı olarak CC++ geri gelir.
+
+85
+00:29:16,051 --> 00:29:32,631
+Scripting dillerinden yararlanabilir. Shell Scripting'den tutun da Perl vari veyahut da Python vari bir şeyden yararlanabilir. Veya Java'sından, Goals'undan yararlanabilir. Bu tamamen sizin kararınız olacak. Orada sınırlar.
+
+86
+00:29:33,044 --> 00:29:58,024
+Genel sınırlar belirli ama iç kısımda ne yapacağınız, nasıl yapacağınız sizin bir tasarım şeyiniz olacak. Bu da size aslında işletim sistemiyle alakalı yine ana noktalara dokunma imkanı sağlayacağı için tecrübenizin ve bilginizin artmasını sağlayacak bir çalışma olmuş olacak.
+
+87
+00:30:01,268 --> 00:30:20,428
+Bu ilerleme sırasında da bunları böyle gerçekleştirdikten sonra dönem sonunda bir sınav yaparak bunların kavramsal olarak sorulduğu...
+
+88
+00:30:21,907 --> 00:30:34,747
+Veyahut da bir problem ortaya atılarak bu problem kapsamında o okuduğunuz kavramlara göre o senaryo üzerinden cevap vermenizi sağlayacak şekilde böyle bir sınavımız olacak.
+
+89
+00:30:35,183 --> 00:30:54,564
+Bu proje uygulaması ve diğer şeyi tamamen online gerçekleştirebiliriz. Orada en ufak bir sıkıntımız olacağını düşünmüyorum. Bir tek sene sonundaki sınavı bilmiyorum nasıl olacak, Gök ne şekilde karar verecek ama herhalde muhtemelen Nisan ayı itibariyle kibrit.
+
+90
+00:30:55,796 --> 00:31:19,256
+Bir şeyin önünü açacaklar. Zaten sınavlar, finallerin önüne geldiğimizde de daha bir netleşmiş ve rahatlamış olur. O ana geldiğimizde benim tercihim bunu bir take home şeklinde, final take home şeklinde değil de sınıf ortamında yapmak şeklinde. Onu da ayarlarız, onu da konuşuruz.
+
+91
+00:31:24,051 --> 00:31:26,051
+O açıdan bakıldığında...
+
+92
+00:31:26,163 --> 00:31:42,723
+Dersi sonradan asenkron olarak izleyecek arkadaşlar için söylemiş olayım. Sizler zaten şu ana kadar söylediklerimi takip ettiniz ama gelmeyen bir sizin kadar daha, henüz şu anda derse katılmamış bir sizin kadar daha arkadaşınız var.
+
+93
+00:31:42,723 --> 00:31:54,163
+Az önceki söylediğim şeyden ötürü aslında derse dersin işlendiği sırada senkron bir şekilde online katılmak benim açımdan bakıldığında sizin...
+
+94
+00:31:54,163 --> 00:31:55,624
+size çok daha fazla
+
+95
+00:31:55,624 --> 00:31:57,564
+avantaj sağlayacak bir şey.
+
+96
+00:31:58,124 --> 00:32:00,064
+O anda çünkü bir şeyin parçası olarak
+
+97
+00:32:00,064 --> 00:32:02,084
+o soruların parçası olarak
+
+98
+00:32:02,084 --> 00:32:04,163
+o yapılan konuşmanın tartışmanın
+
+99
+00:32:04,163 --> 00:32:06,263
+parçası olarak siz de aktif olarak
+
+100
+00:32:06,263 --> 00:32:07,544
+katılabileceksiniz. Ama
+
+101
+00:32:07,544 --> 00:32:10,163
+yok ben bunu asenkron dinlerim.
+
+102
+00:32:12,584 --> 00:32:14,124
+Gerekli yapılması
+
+103
+00:32:14,124 --> 00:32:15,584
+gereken diğer şeyleri de
+
+104
+00:32:15,584 --> 00:32:16,763
+gerçekleştiririm.
+
+105
+00:32:17,683 --> 00:32:37,724
+Ben dersi bu şekilde yürütebilirim diyorsanız o da sizin kararınızdır. Sonuçta dediğim gibi bir lisans üstü dersi. Hem yaş olarak hem de daha önceki eğitiminizi de lisans eğitiminizi de hesaba katacaksak bu konuda kendi başınıza karar verebilecek durumda olduğunuza inanıyorum.
+
+106
+00:32:45,587 --> 00:33:08,567
+İççeyle alakalı konuştuk. Materyalle alakalı konuştuk. İlerleyişiyle alakalı konuştuk. İşleniş formatıyla alakalı. Değerlendirmesiyle alakalı. Atladığım bir şey varsa veyahut da bunun haricinde aklınıza gelen sorular varsa onları da lütfen sorun. Şimdi cevap vereyim.
+
+107
+00:33:11,347 --> 00:33:13,048
+Merhaba hocam, sesim geliyor mu?
+
+108
+00:33:13,844 --> 00:33:24,263
+Evet, bir de mümkünse bulunduğunuz ortam buna izin veriyorsa, en azından soru sorarken kameranızı açarsanız isimlerle yüzleri bir şekilde eşleştirmeye çalışabiliyor.
+
+109
+00:33:24,283 --> 00:33:29,344
+Hocam, şimdi olmasa bir sonrakinde açsam olur mu? Şu an bilmiyorum arka planına ne kadar uygun.
+
+110
+00:33:29,864 --> 00:33:34,624
+Olur tabii ki dediğim gibi yani şu an uygunsanız, değilse de daha sonra. Evet [öğrenci], dinliyorum.
+
+111
+00:33:34,663 --> 00:33:39,803
+Hocam, bundan sonraki ders vakitleri her zaman 6-8.5 olarak mı düşünüyorsunuz?
+
+112
+00:33:40,948 --> 00:34:00,988
+Yani şöyle, İslam Trafiği var, sizi de etkiliyor. Ders programına 6 olarak yazılmış ama bence 7 gibi başlarsak daha iyi olur diye düşünüyorum. Zaten 2 saat içerisinde bu tartışma şeyini, o hafta için verilmiş olan şeyleri çok efektif bir şekilde bitirebiliriz.
+
+113
+00:34:04,660 --> 00:34:07,220
+Tamamdır hocam. Zaten gerekli mailleri atıyorsunuz.
+
+114
+00:34:07,560 --> 00:34:23,760
+Evet, aynen. Yani bilgilendirme ile alakalı sistemin o arayüzü var. Oradan şey yapıyorum. Bugün sadece bir ara bir patladı. Bazılarınıza iki defa gelmiş olabilir. Emin olamadığım için bir daha gönderdim. Çünkü hata verdim falan dedi ama tekrar gönderdim.
+
+115
+00:34:23,960 --> 00:34:24,920
+Tamamdır. Teşekkür ederim.
+
+116
+00:34:24,920 --> 00:34:26,340
+Ben teşekkür ederim.
+
+117
+00:34:31,476 --> 00:34:34,216
+Merhaba hocam. Benim bir sorum olacak. İsmim [öğrenci].
+
+118
+00:34:34,596 --> 00:34:35,956
+Evet [öğrenci]. Söyle.
+
+119
+00:34:36,155 --> 00:34:39,476
+Öncelikle memnun oldum tanıştığımıza. Daha önce hiç ders almamıştım size.
+
+120
+00:34:41,115 --> 00:34:46,536
+Blokna'dan baktığımda dersin içeriklerinde midterm sınavı görünüyor ama sanırım söylediğinize göre yapmayacağız.
+
+121
+00:34:47,027 --> 00:34:50,527
+Midterm? Sadece final olacak. Anladığım kadarıyla.
+
+122
+00:34:50,707 --> 00:35:01,507
+Aynen. Bu ödeviniz olacak ya, daha doğrusu her hafta paper şeyi yapıyorsunuz ya, onları midterm'in bir parçası olarak hafta hafta biriktirdiğinizi düşünün.
+
+123
+00:35:02,787 --> 00:35:05,507
+Burada şey görünüyor, 10 tane...
+
+124
+00:35:06,255 --> 00:35:20,175
+Kritik, yani bizim makale incelemelerimiz. Notlandırması da %2 olarak görünüyor. Midterm'de katarsak %4'den %40'lık toplam bir etkisi var anladığım kadarıyla.
+
+125
+00:35:20,955 --> 00:35:27,615
+Nerede ne görünüyor bilmiyorum. Yani % olarak etkilerini merak ettim de hocam.
+
+126
+00:35:28,536 --> 00:35:32,415
+%60 dönem içidir, %40 dönem sonudur, öyle düşünebilirsin.
+
+127
+00:35:33,172 --> 00:35:40,612
+Yani 100 puanın 60 puanını dönem içinden toparlayacaksın. 40 puanını da finalden toparlayacaksın.
+
+128
+00:35:40,612 --> 00:35:42,612
+Tamam hocam.
+
+129
+00:35:48,947 --> 00:35:50,587
+Var mı başka soru arkadaşlar?
+
+130
+00:35:53,507 --> 00:35:55,947
+O zaman hepinize...
+
+131
+00:35:56,692 --> 00:36:20,152
+Teşekkür ediyorum. Şimdilik iyi akşamlar diliyorum. Size önümüzdeki hafta için değerlendirmenizi istediğim paperların listesini sistemden duyuracağım. Paperların kendisiyle beraber indirmek zorunda kalmayacaksınız. Zaten bende hepsi var. Onları sisteme yüklerim. Duyurusunda yaparım. Haftaya görüşmek üzere diyorum.
+
+132
+00:36:20,916 --> 00:36:22,876
+Teşekkür ederim hocam.
+
+133
+00:36:23,756 --> 00:36:26,275
+Size teşekkür ederim. Sağlıcakla kalın.
+
+134
+00:36:26,676 --> 00:36:27,256
+Sağ olun hocam.
+
+135
+00:36:27,376 --> 00:36:28,916
+Çok sağ olun. İyi akşamlar.
