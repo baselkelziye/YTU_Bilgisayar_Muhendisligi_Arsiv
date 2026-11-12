@@ -1,0 +1,479 @@
+1
+00:05:43,860 --> 00:05:50,860
+Merhaba arkadaşlar, 10 geçe başlayacağız. Diğer grupla da
+
+2
+00:05:54,675 --> 00:05:57,675
+Benzerde saatlerde başlamak için.
+
+3
+00:06:03,187 --> 00:06:26,123
+Şimdi artık alıştığınız üzere ben burada biraz açıklayacağım soruyu. Ondan sonra sorularınız için bir miktar bekleyeceğim. Sorularınız bittiği zaman dersi kapatacağım. Aves isimde zaten paylaşmış olacağım. Chatte de linki veririm.
+
+4
+00:06:27,891 --> 00:06:35,572
+Ondan sonra oradan soruya ve formun linkine, yükleyeceğiniz formun linkine erişirsiniz.
+
+5
+00:07:20,915 --> 00:07:45,175
+Şimdi şurada teslim etme kurallarınız var. Bunlara da yine alıştınız. Dosyanın türü, şey, dosyanın türü nokta C olacak. Dosyanın ismi de önemli. Lütfen buna dikkat edin. Bütün dosyaları birlikte hareket ettirebilmemiz için bu çok önemli oluyor. Ondan sonra formun linki burada.
+
+6
+00:07:45,648 --> 00:07:58,927
+Buraya şey yapacaksınız. Evet, bir tane mail geliyor. Oradan kontrolü sağlayarak yanıtın iletildiğinden emin olun. Efendim, [öğrenci].
+
+7
+00:07:58,927 --> 00:08:04,688
+Lab 3 diye mi geçecek, Lab 4 mü hocam? Lab 3 ertelen sanki bu Lab 4. Lab 3.
+
+8
+00:08:04,687 --> 00:08:14,887
+Kaydırdık yani lap 4'ü önce yapmanın bir anlamı yoktu. Ondan sonra bu lap 3, lap 4'ü de bir sonraki 31'ini ertelemiş olduk.
+
+9
+00:08:14,887 --> 00:08:28,387
+Teşekkürler hocam. Rica ederim. Şimdi burada 80 dakika artı 5 dakikada yükleme şeyi verdik. Burada 14-10 diye söylüyor.
+
+10
+00:08:29,300 --> 00:08:39,299
+Yalnız bir, ben 14.10'da açıklamaya başlayacağım için bir 5 dakika sınav bitişini uzatıyorum. Tamam mı? 15.40'da yani.
+
+11
+00:08:39,299 --> 00:08:49,300
+Ya biz böyle şey yapmıştık ama bir diğer grup da bize yetişebilsin diye. Bunu 15.40 yapacağız.
+
+12
+00:08:52,300 --> 00:08:55,300
+Duyduk duymadık demeyin. Yani sonra...
+
+13
+00:08:56,467 --> 00:08:58,219
+Bakıyorum.
+
+14
+00:09:04,692 --> 00:09:12,312
+Ben açıklamayı yaptıktan sonra Avesis'e yüklerim. Zaten burada göreceksiniz soruyu. Son bir dakika.
+
+15
+00:09:17,011 --> 00:09:19,011
+Başka bir şey var ya.
+
+16
+00:09:20,011 --> 00:09:26,011
+İsmimi sorabilirsin tabii ki Fatih Amasyalı değil, Betül Türkkol, Betül Zeliha Türkkol.
+
+17
+00:09:27,511 --> 00:09:34,011
+Merhabalar, doğru ben adımı söylemedim. Ama geçen hafta uygulama yapmıştım da tabii böyle 70 kişi değildiniz o zaman.
+
+18
+00:09:36,511 --> 00:09:38,511
+Evet, soruya gelelim.
+
+19
+00:09:40,011 --> 00:09:40,843
+Şimdi...
+
+20
+00:09:43,827 --> 00:10:09,803
+Şöyle yapayım. Şimdi bir sitenin haritasını n-n bir inticer matrisi ile ifade ediyoruz. Tamam mı? Ben size göstereyim hemen. Şöyle bir şey. Bu bir siteymiş diye düşünün. Ondan sonra matrisin içindeki bu şeylerden, hücrelerden içinde sıfır yazılı olanların bulunduğu yerde ev var diye düşünün.
+
+21
+00:10:11,091 --> 00:10:22,091
+Ondan sonra o konumda ev bulunuyor. Bu evler arasında seyahat edeceksiniz. Diğer sayılar yolları ifade ediyor ve bunlar aslında ağırlık.
+
+22
+00:10:22,091 --> 00:10:35,755
+Yollardan sağa sola, yani burada sola gidemiyorsunuz ama şurada ifade edeyim. Sağa sola aşağıya ve işte yukarıya gidebiliyorsunuz.
+
+23
+00:10:35,764 --> 00:11:00,764
+Ondan sonra kullanıcının girdiği iki ev konumundan, iki ev konumunun arasındaki yolun tamamını şey yapacaksınız, skorlarını toplayacaksınız. Buradaki sayıların toplamı skorların toplamını verecek. Ondan sonra bu en az skora sahip yolu
+
+24
+00:11:00,895 --> 00:11:22,775
+Bulacaksınız. Ondan sonra diyeceksiniz ki, şuradan gidersen sana daha ucuza mal olur. Tamam mı? Şimdi burada önemli olan şeyler, programınız çalıştığında en iyi başlangıç noktasını ve hedef noktasını kullanıcıdan almanız gerekiyor. Başlangıç noktası nedir? Birinci ev.
+
+25
+00:11:23,155 --> 00:11:29,155
+Hedef noktası da ikinci ev diye düşünebilirsiniz. Bu ikisinin arasında gidecek.
+
+26
+00:11:29,716 --> 00:11:53,316
+Şimdi biz burada, siz bunu recursive yapmayacaksınız. Yani recursive yapma zorunluluğunuz yok diyeyim. O yüzden bunun brute force olarak yapılabilmesi de biraz uzun süreceği için 5'e 5'lik bir harita verdik. Ama siz bu enin sadece 5 olduğunu düşünmeyin, tamam mı?
+
+27
+00:11:56,115 --> 00:12:19,115
+Yani kodunuzu magic number denen böyle 5 ile falan ifade etmeyin. Ama burada bir tane board sizin için takdim edildi. Bunu direkt kodunuza yapıştırarak test etmeniz açısından bunun üzerinde şey yapabilirsiniz.
+
+28
+00:12:20,851 --> 00:12:28,172
+Yani kullanıcıdan hepsini tek tek şunu gir, bunu gir, şunu gir, bunu gir diye hepsini tek tek almayın.
+
+29
+00:12:28,172 --> 00:12:37,051
+Diye bunu yaptık. Hem bize okuma kolaylığı olacak hem sizin için kolaylık olacak. Bu örnek bordtur, tekrar ediyorum.
+
+30
+00:12:37,051 --> 00:12:47,051
+Böyle olmak zorunda değil. O yüzden neyi, başlangıç ve bitiş noktasını, hedef noktasını lütfen kullanıcıdan alın. Onları kontrol edin.
+
+31
+00:12:48,083 --> 00:12:53,783
+Şimdi şurada şey var.
+
+32
+00:13:00,692 --> 00:13:10,692
+Mesela örnek kodlamada, yukarıdaki haritada 1-1 noktasına, 4-4 noktasına gidilmek istenliğine oluşacak sonuç.
+
+33
+00:13:16,788 --> 00:13:39,908
+Burada hesaplamış. 3-2 ile 1-1 arasına gidildiğinde yine oluşacak sonuç. Bunları topluyorsunuz. Yani şuradan şuraya giderken, mesela şöyle gittim, böyle gittim, şöyle gittim, böyle gittim, buradaki sayıları toplayacaksınız. Bu bir integer matris. Soru.
+
+34
+00:13:40,467 --> 00:14:06,467
+Sorunuz var mı? Merhabalar, benim bir sorum var da. Lütfen elinizi kaldırın da böyle şey yapmaya, tamam mı? Ya da chatten yazabilirsiniz. Tamam. Önce kimin sesi geldi şu an ayırt edemiyorum. Dinliyorum. Şu en optimum yolu bulmayacağız sanırım. Herhangi bir yolun kostunu bulacağız. En optimum yolu bulacaksınız.
+
+35
+00:14:07,091 --> 00:14:09,091
+Tamamdır.
+
+36
+00:14:11,091 --> 00:14:23,091
+Yani kostları birbiriyle karşılaştırmanız manasına geliyor bu da ve bütün yani şuradan şuraya gidişteki bütün yolları denemeniz anlamına geliyor.
+
+37
+00:14:27,155 --> 00:14:31,975
+Ondan sonra başka, bir kişi daha şey yapmıştı, sorun var.
+
+38
+00:14:31,975 --> 00:14:42,475
+Hocam, ben soracaktım da, evden eve gideceğiz ya, sıfır noktalarından sıfır noktalarına gideceğiz ya, kullanıcıdan alıyoruz diyor, kullanıcı sıfırın olduğu noktalarına mı girmek zorunda?
+
+39
+00:14:42,475 --> 00:14:43,475
+Evet.
+
+40
+00:14:43,475 --> 00:14:45,475
+Kullanıcı ona göre gidecek yani.
+
+41
+00:14:45,475 --> 00:14:53,755
+Önce elinin olduğu yeri girecek diye düşünün. Daha doğrusu kullanıcının girdiği yer, iki yer arasında gidin siz yani. Tamam mı?
+
+42
+00:14:54,196 --> 00:15:09,556
+Yani ben burada haritanın şey yapılması için bu şekilde olduğunu söyledim. Kullanıcı bunların evleri biliyor diye düşüneceksiniz. Bu evlerin arasında gitmek isteyecek.
+
+43
+00:15:14,196 --> 00:15:15,196
+Bir dakika ya.
+
+44
+00:15:19,956 --> 00:15:26,556
+Yanlış anlamadıysam, bitiş ve başlangıç bitiş noktalarında ev mi olacak? Evet, ev olacak.
+
+45
+00:15:27,556 --> 00:15:44,355
+Soru dosyasını atabilir misiniz? Atacağım, yani bir sorularınız şey yapmadı, o yüzden bir saniyeliğine paylaşımı kapatıp soru dosyasını paylaşıyorum hemen.
+
+46
+00:15:45,256 --> 00:15:47,056
+Tamam, AVS'sim de...
+
+47
+00:15:48,307 --> 00:15:54,488
+Şuradan da linkine şey yapayım.
+
+48
+00:16:33,460 --> 00:16:36,460
+Şimdi chat'e şeyi paylaştım.
+
+49
+00:16:36,460 --> 00:16:43,460
+Bundan sonra tekrar şunu açalım.
+
+50
+00:16:46,460 --> 00:16:54,460
+Başlangıç ve bitiş noktası dahil mi hesaplamaya? Onlar sıfır zaten, öyle düşünebilirsiniz.
+
+51
+00:16:56,460 --> 00:17:00,172
+Yani dahil etseniz de etmeseniz de sıfır zaten onlar.
+
+52
+00:17:00,563 --> 00:17:20,563
+Edebilirsiniz. Soru dosyasını attım, attım. Kullanıcı yalnızca sıfır olanı mı seçiyor? Evet dedik. Örnek çıktıları biraz daha anlatabilir misiniz? Uzaklıkları da kullanıcıdan mı alacaksınız? Kullanıcıdan almamanız için. Şurada böyle bir tane örnek board verdik size.
+
+53
+00:17:20,819 --> 00:17:47,259
+Bu örnek bordu, matrisiniz bu yani tamam mı? Bunu kopyalayıp yapıştırabilirsiniz. Yalnız bu, benim tek çekincem burada sadece bu bordla çalışmayacak. Bir tane daha bordla bunu test edeceğiz. O yüzden lütfen sadece bu bord için bir şey yazmayın, program yazmayın tamam mı?
+
+54
+00:17:49,811 --> 00:17:51,811
+El kaldıramam.
+
+55
+00:17:51,811 --> 00:17:53,811
+Tamam.
+
+56
+00:18:02,036 --> 00:18:23,155
+Output olarak tüm ihtimalleri tek tek göstermiş gösterdiğiniz örnekle. Biz de böyle tek tek, bir dakika, ihtimalleri yazıp postu en az olanı seçeceğiz aralarından. Öyle yapabilirsiniz. Evet, evet böyle yapın. Çünkü yani okuması böyle olunca okuması daha kolay oluyor bizim için.
+
+57
+00:18:23,508 --> 00:18:31,508
+Denenecek olan board da 5-5. Evet, yani 5-5'ten üste çıkmayacak. Ama gidip de oraya şey yazmayın yani.
+
+58
+00:18:31,508 --> 00:18:42,508
+Ne yerine sadece 5 kullanılacak gibi düşünmeyin, tamam mı? Sıfırları kullanıcı, hayır. Sadece...
+
+59
+00:18:46,387 --> 00:18:59,387
+Kullanıcıdan alacağın şey ne? Yani haritanın boyutu kare olacak. Ondan sonra başlangıç noktası ile bitiş noktası.
+
+60
+00:19:11,796 --> 00:19:14,556
+Total adres ifadesi nerede?
+
+61
+00:19:17,135 --> 00:19:18,796
+Total adres nerede?
+
+62
+00:19:28,180 --> 00:19:34,180
+Terminler de bunlar. Ha, total adres, ha. Bu yolu izlemiş.
+
+63
+00:19:37,587 --> 00:19:43,587
+Arada kalan sayıları biz mi belirleyeceğiz derken ben bu soruyu hiç anlamadım.
+
+64
+00:19:43,587 --> 00:19:46,443
+Bir dakika.
+
+65
+00:20:02,579 --> 00:20:11,339
+Bakın gençler, siz board'u kullanıcıdan almayacaksınız, buradaki gibi tanımlayın.
+
+66
+00:20:11,339 --> 00:20:18,579
+Kullanıcıdan almayın. Biz bunun yerine bir tane daha farklı bir board sadece sizin kodunuza yapıştıracağız. Bu kadar.
+
+67
+00:20:18,579 --> 00:20:21,579
+Hocam, enderini neden alıyorsunuz? Zaten board belirdi ya.
+
+68
+00:20:21,579 --> 00:20:25,579
+Evet, doğru diyorsun ama siz alın gene de. Tamam mı?
+
+69
+00:20:29,299 --> 00:20:31,299
+ufak tefek şeyler olabilir.
+
+70
+00:20:31,299 --> 00:20:35,299
+Yani şimdi şurada da...
+
+71
+00:20:35,299 --> 00:20:44,299
+Evet, yani başlangıç ve bitişi kullanıcıdan alacağız. Evet, aynen böyle.
+
+72
+00:20:44,299 --> 00:20:48,299
+Var mı başka soru? 20 geçiyor. Ben 30 geçe kadar burada duracağım.
+
+73
+00:20:48,299 --> 00:20:53,299
+Şimdi normalde lap yaparken böyle hep başınızda duruyoruz.
+
+74
+00:20:53,299 --> 00:20:56,299
+O yüzden sorularınızın...
+
+75
+00:20:56,564 --> 00:21:00,963
+Hepsine cevap vermeye çalışmak istiyorum.
+
+76
+00:21:03,284 --> 00:21:06,644
+Online'da olsa normal lab yapıyormuşuz gibi hissedin diye.
+
+77
+00:21:32,211 --> 00:21:44,211
+Evet, yani aslında biz ilk önce şu, ben ilk önce şu şeyi çizdim, böyle aralarda ev yapmak için. Ondan sonra, ama başlangıç ve bitişinde birer ev olduğunu düşünün.
+
+78
+00:21:47,859 --> 00:21:56,859
+Ama yine de aradan bir şey de seçebilir kullanıcı. Bakın burada öyle yapmış gördünüz mü? 3'e 2 ile mesela 1'e 1 noktalar arasında seçebilir.
+
+79
+00:21:58,859 --> 00:22:11,859
+Ama şurada ev, birinci iki tanecik ev var burada. Bir tanesi şey de 0'a 0'da bir tanesi 4'e 4'de. Olmak zorunda mıydı? Değildi.
+
+80
+00:22:12,208 --> 00:22:17,964
+Örnekteki gibi current playsini falan hep yazdırmamız gerekiyor mu yok sadece yol yeterli mi?
+
+81
+00:22:21,203 --> 00:22:36,603
+Yani ne fark etmez. Yani bu örnektir. Aslında bizim istediğimiz şey yani şu toplamın ama işte nereyi topladığını da söylersen yani burada yazarsan daha güzel olabilir.
+
+82
+00:22:40,468 --> 00:22:50,468
+Burada 3 ev var. Şurada 3 ev var. Ama şurada 2 ev var. Sizin kullanacağınızda. Bir tanesi burada, bir tanesi de burada.
+
+83
+00:22:56,435 --> 00:23:02,035
+Yani şu örnek, bu haritayla şurada kullanacağınız board aynı değil yani.
+
+84
+00:23:09,428 --> 00:23:20,428
+Siz şöyle yapın, iki nokta arasında gideceğinizi düşünün, tamam mı? İki nokta arasında gideceksiniz.
+
+85
+00:23:23,955 --> 00:23:27,955
+Total adres nerede? Ha, şu. Total adres.
+
+86
+00:23:34,836 --> 00:23:38,155
+1, 1, 1, bunu bilmiyorum. Dur, 1 dakika bakayım.
+
+87
+00:24:05,268 --> 00:24:25,268
+Yapılması gereken Topram Hareket olarak yazmış onu arkadaş ama çok önemli bir şey değil yani. Önemli olan gittiğiniz yerdeki kostların toplamı olacak. Evet, evet, aynen öyle.
+
+88
+00:24:25,779 --> 00:24:32,779
+Şu [öğrenci]'in dediği gibi total adres minimum olmayan normal gidiş yolunu gösteriyormuş.
+
+89
+00:24:32,779 --> 00:24:35,779
+Ama rota en şeyi...
+
+90
+00:24:37,779 --> 00:24:40,779
+Önemlisi o yani. Bu...
+
+91
+00:24:41,779 --> 00:24:45,779
+En sonunda bulunmuş. Evet evet yeter.
+
+92
+00:24:45,779 --> 00:24:50,779
+Yani rotayı yazın yeterli. Yalnız bu şekilde mesela bir...
+
+93
+00:24:51,059 --> 00:25:12,971
+Yani şuradaki gibi böyle açıklarsanız güzel olur. Çünkü bu da sonuçta bizi bilgilendirmek için. O yüzden bizim için daha kolay oluyor yani bu tür şeyler. Yani gidiş yolunuzu gösterin, göstermeniz anlamına geldiği için.
+
+94
+00:25:38,483 --> 00:25:52,983
+Yok yok değil. Hayır. Hareket komutlarını kullanıcıdan almayacaksınız. Siz hesaplayacaksınız. Zaten amacımız sizin minimum kostulu yolunu bulmanız. Tamam mı?
+
+95
+00:25:54,099 --> 00:26:09,099
+Yapabiliyorsanız, recursive olarak yapabilirsiniz ama, yani sürem yetmeyecek anlayamadım falan derseniz diye, recursive olması şeyinin zorunluluğu yok.
+
+96
+00:26:11,099 --> 00:26:20,907
+Bunu normal brute force ile çözeceğinizi düşünerek sordum. Ama puan kırmam. Tamam? Recursive yaparsanız da.
+
+97
+00:26:35,124 --> 00:26:43,124
+Tamam herhalde. Soruların arkası kesildi. Bir an heyecan yapmıştım ama...
+
+98
+00:26:55,539 --> 00:27:08,659
+Ben formu 40 geçe kapatacağım. Tamam mı? Diğer grup için de aynı şeyi söyleyeceğim öbür arkadaşa da. 15-40.
+
+99
+00:27:24,500 --> 00:27:26,500
+O zaman şeyi kapatıyorum.
+
+100
+00:27:29,500 --> 00:27:31,500
+Ben de bir soru sorabilir miyim?
+
+101
+00:27:31,500 --> 00:27:32,500
+Tabii ki.
+
+102
+00:27:32,500 --> 00:27:42,476
+Bu boarddaki şeyleri tek tek kullanıcıdan istememize gerek yok değil mi? Farklı örneklerle denilecek. Hani el de değiştirebiliriz, değil mi? Kullanıcıdan tek tek istememize gerek yok herhalde.
+
+103
+00:27:42,579 --> 00:27:56,579
+Hayır, hayır. Kullanıcıdan tek tek istemeyin zaten. O bizim için de çok zor olur, sizin için de çok zor olur. Yani onunla yarım saatini harcarsın. Bu şekilde yapıştırın. Tamam mı?
+
+104
+00:27:56,579 --> 00:28:09,579
+Bir board olacak, sadece bir harita olacak. Ama içinde istediği yere gideceğini düşünebilirsiniz. Bir soru daha var herhalde. Formun linkini atabilir misiniz? Formun linki pdf'de var.
+
+105
+00:28:09,875 --> 00:28:14,875
+Avesis'in şeyini buradan linki koymuştum, yeniden koyuyorum.
+
+106
+00:28:16,875 --> 00:28:20,875
+Buradan formun linkine erişebilirsin.
+
+107
+00:28:25,523 --> 00:28:27,243
+Rica ederim.
+
+108
+00:28:55,827 --> 00:29:21,644
+Burada bir tane daha önemli bir... Evet. Yani olabilir, evet. Girilen koordinatlar sıfırda ise program durabilir. Burada önemli olan bir nokta daha var. Board'un başlangıç ve bitiş noktalarını kontrol edin, tamam mı?
+
+109
+00:29:22,612 --> 00:29:47,012
+Ayrıca da en sonunda bir tane şey bulacaksınız ya hani, ne denir ona? Bir yol bulacaksınız ya, minimum yol. İşte orada gereksiz hareket yapmayacaksınız. Yani sağa sola gidişleri falan mesela eğer zaten o şekilde bulacaksınız yolu da.
+
+110
+00:29:47,284 --> 00:30:05,284
+Mesela eğer sağ ve yukarı gidiyorsanız sola dönmeyin yani. Ya da mesela şuradayken bir de solu kontrol etmek için şey yapmayın. Anladınız mı? Yani gereksiz hareketleri de döngülerinizde eleyin.
+
+111
+00:30:07,892 --> 00:30:09,892
+Hocam, ben bir şey sorabilir miyim?
+
+112
+00:30:09,892 --> 00:30:10,892
+Tabi.
+
+113
+00:30:10,892 --> 00:30:20,892
+Buradaki negatif değerler, yol üzerindeki negatif değerleri topladığımız vakit, en küçük, en büyük negatif değerleri mesela, eksi 60 çıktı. En küçüğü oysa onu mu alacağız yani?
+
+114
+00:30:20,892 --> 00:30:22,892
+Ne çıktı anlamadım.
+
+115
+00:30:22,892 --> 00:30:34,892
+Hani yolların üzerinde negatif değerler var ya, topadık diyelim mesela, en küçük negatif değer çıktı. Diyelim ki mesela eksi 60, onu mu alacağız? O değeri mi alacağız? Yoksa sıfıra yakın olan değeri mi alacağız?
+
+116
+00:30:35,056 --> 00:30:43,596
+Yok, tabii ki en küçük değeri. Eksi altmış, eksi elliden daha küçük olduğu için onu mesela alacaksın. Ya da sıfırda yakın olmasını şey yapmayın.
+
+117
+00:30:43,596 --> 00:30:44,836
+Peki, tamam hocam.
+
+118
+00:30:44,836 --> 00:30:48,996
+Yani costlar önemli olan. Ne kadar çok kare gittiğiniz değil.
+
+119
+00:30:59,923 --> 00:31:02,624
+Kapatıyorum gençler. Başarılar diliyorum.
+
+120
+00:31:10,804 --> 00:31:12,588
+Görüşmek üzere yeniden.

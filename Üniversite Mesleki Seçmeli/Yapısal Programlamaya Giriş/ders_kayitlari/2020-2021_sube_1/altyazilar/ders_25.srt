@@ -1,0 +1,2043 @@
+1
+00:00:14,868 --> 00:00:15,868
+Bir dakika.
+
+2
+00:00:16,868 --> 00:00:18,868
+Merhaba arkadaşlar, sesim geliyor mu?
+
+3
+00:00:24,596 --> 00:00:26,596
+Merhaba hocam, geliyor.
+
+4
+00:00:26,596 --> 00:00:27,596
+Geliyor hocam.
+
+5
+00:00:28,596 --> 00:00:31,596
+Tamamdır, teşekkürler. Az sonra başlıyoruz.
+
+6
+00:05:47,315 --> 00:05:49,315
+Merhaba arkadaşlar, sesle.
+
+7
+00:05:51,315 --> 00:05:53,315
+Geliyor mu sesin?
+
+8
+00:05:53,315 --> 00:05:53,995
+Evet.
+
+9
+00:05:57,684 --> 00:06:02,684
+O zaman başlayalım. Şimdi ilk önce bir beyaz taklamızı paylaşalım.
+
+10
+00:06:02,684 --> 00:06:18,684
+Şimdi, bugünkü konumuz, bir dakika yazmaya geçeyim. Linkli listeler.
+
+11
+00:06:27,827 --> 00:06:51,327
+Diziler. Normal dizilerin bellekteki yerleşimlerini inceleyeceğiz. Bu bellekteki yerleşimlerine bakıp bazı bilgiler, bazı farkındalıklar kazanacağız. Ondan sonra bu yapının problemli olabileceği noktaların neler olduğunu görüp daha sonra linkli listelere odaklanacağız.
+
+12
+00:06:51,795 --> 00:06:56,795
+Birbirlerine göre avantaj ve dezavantajlarını göreceğiz.
+
+13
+00:06:56,795 --> 00:07:04,795
+Şimdi ilk önce, dizilere anlatmadan önce bir memory, işte RAM diye ifade ettiğimiz şey.
+
+14
+00:07:04,795 --> 00:07:08,795
+Aslında RAM'in açıklaması nedir?
+
+15
+00:07:08,795 --> 00:07:15,795
+Random Access Memory
+
+16
+00:07:16,500 --> 00:07:24,899
+Random Access Memory demek şu demek arkadaşlar. Memory dediğimiz şey şöyle bir şey aslında tanımlamaya kalkarsak.
+
+17
+00:07:24,899 --> 00:07:27,300
+Yukarıdan böyle geliyor.
+
+18
+00:07:27,300 --> 00:07:29,300
+Böyle.
+
+19
+00:07:29,300 --> 00:07:44,100
+Memory dediğimiz yapının içerisinde her bir bilgileri sakladığımız alanlar var ve bir de bu alanların adresleri var.
+
+20
+00:07:44,255 --> 00:08:04,255
+Yani mesela diyelim ki sizin, mesela şuranın büyüklüğünü bir düşünelim. Buranın büyüklüğü 8 bit olsun. Tamam? 8 bitlik bir şey olsun. Yani böyle 8 tane bit taşıyabiliyor burası. Biraz böyle komik istiyorum ama olsun.
+
+21
+00:08:10,067 --> 00:08:12,067
+8 bitlik olduğunu varsayalım.
+
+22
+00:08:12,067 --> 00:08:19,067
+Şimdi bu 8 bitlik alanın içerisine ne büyüklükte bir şeyler yazabilirsiniz.
+
+23
+00:08:19,067 --> 00:08:24,067
+Bu alanın içerisine sadece bunun içine 8 bitlikte ifade edilebilecek şeyler yazabilirsiniz değil mi?
+
+24
+00:08:24,067 --> 00:08:33,067
+Yani nasıl bir şeyler olabilir? Mesela işte 0 ile 255 arasında rakamlar yazabilirsiniz 8 bitlik bir alana.
+
+25
+00:08:34,611 --> 00:08:45,412
+Şimdi, tabii programlama dilleri size farklı büyüklüklerdeki değişkenler tanımlamanıza izin verir.
+
+26
+00:08:45,412 --> 00:08:52,851
+Yani mesela, integer diye bir şey tanımlıyorsunuz ya da float diye bir şey tanımlıyorsunuz. Bunlar tek bir değişken tipi.
+
+27
+00:08:52,851 --> 00:08:56,211
+Ya da işte small integer falan gibi bir şeyler de var.
+
+28
+00:08:56,467 --> 00:09:02,467
+Önemli değil, bunların her biri aslında memori'de belli bir büyüklüğü kaplıyorlar.
+
+29
+00:09:02,467 --> 00:09:06,467
+Mesela integer dediğimiz şey 32 bitlik bir alan kaplıyor.
+
+30
+00:09:06,467 --> 00:09:13,467
+Yani şöyle bir şey düşünürsek, siz bir tane int a diye bir şey tanımladığınızda,
+
+31
+00:09:19,412 --> 00:09:27,092
+Şöyle bir alanı ayırıyor ve burası A değişkeninin alanı oluyor ve bir de bunun adresi var.
+
+32
+00:09:27,092 --> 00:09:31,412
+Aslında buradaki memory bloktan her birinin, şuradaki gördüğünüz her birinin bir adresi var.
+
+33
+00:09:31,412 --> 00:09:41,412
+Random Access Memory demek şu demek, memorinin istenilen herhangi bir adresine tek bir adımda erişmek mümkün demek.
+
+34
+00:09:41,412 --> 00:09:42,412
+Tamam.
+
+35
+00:09:43,283 --> 00:09:55,604
+Yani, şuncu adrese gitmek istiyorum ben dediğinizde, bu adrese gitmek tek adımda mümkün. Bunun karşıda olan, karşı demin hem de sequential yapılar vardır.
+
+36
+00:10:01,524 --> 00:10:12,024
+İşte eninci adrese gitmek için başlangıçtan en adım atmak gerekir. En adım boyunca ilerlemek ve ondan sonra anca oraya erişebiliriz.
+
+37
+00:10:12,024 --> 00:10:26,024
+Ama Random Access Memory 2, bu, işte Von Neumann'ın mimarisi temelde bunu esas alır. Bugünkü bilgisayarların hepsi Von Neumann'ın mimarisine sahipler, G halde kullandıklarımız.
+
+38
+00:10:26,323 --> 00:10:32,583
+Bunlar da yani ilk yapılar, ilk bilgisayarlar ya da işte böyle…
+
+39
+00:10:32,788 --> 00:10:41,508
+Tape'ler üzerinde sequential yapılarda varlardı. İşte Turing makineleri diye ifade ettiğimiz şeyler çok temelde onlardı.
+
+40
+00:10:41,508 --> 00:10:48,908
+Bunun üstüne von Neumann, Neumann mimarisini öneriyor ve orada da memory aslında random access memory.
+
+41
+00:10:48,908 --> 00:10:55,587
+Yani random access memory anlamı şu, memorinin istedildiği adresine tek bir adımda erişilebiliyor.
+
+42
+00:10:55,587 --> 00:11:00,067
+Tamam. Sequential'da ise, sıralamasına herhangi bir avantaj var mı?
+
+43
+00:11:00,275 --> 00:11:03,775
+Sıralı olmasının herhangi bir avantajı var mı?
+
+44
+00:11:03,775 --> 00:11:06,775
+Sıralı olmasının bir avantajı var.
+
+45
+00:11:06,775 --> 00:11:10,275
+Yani bir noktadan, mesela şöyle bir şey düşünelim.
+
+46
+00:11:12,820 --> 00:11:20,120
+A değişkeninin 32 bitlik bir şey olsun, 32 bitlik bir şeyin 4 tane parçası olacak, değil mi?
+
+47
+00:11:20,120 --> 00:11:21,120
+Tutması gereken.
+
+48
+00:11:21,120 --> 00:11:29,920
+Şimdi 4 parça birbirine yakınlarsa, buradaki gibi, mesela şuradaki parçadaki gibi, bunun okunması çok daha hızlı bir şey.
+
+49
+00:11:29,920 --> 00:11:37,920
+Ama bir tanesi bir yerde, bir tanesi başka yerde, bir tanesi başka yerde böyle daha anık bir şekilde durularsa, bunların okunması ve A değişkeninin oluşturulması daha fazla zaman alıyor.
+
+50
+00:11:37,971 --> 00:11:48,371
+Dolayısıyla siz bir değişken tanımladığınızda, o değişken mimaride, bunlar ardış olarak diziliyorlar.
+
+51
+00:11:48,371 --> 00:11:54,371
+Şimdi, mesela buranın adresi diyelim ki 100.
+
+52
+00:11:54,707 --> 00:12:05,707
+Yani 107 en sonuncusu, şuranın adresi 108 olacak, sonra buranın adresi 116 olacak, sonra buranın adresi 124 olacak, böyle gidiyor.
+
+53
+00:12:05,707 --> 00:12:06,707
+Tamam mı?
+
+54
+00:12:06,707 --> 00:12:08,707
+Şimdi, bir...
+
+55
+00:12:09,524 --> 00:12:26,524
+Bunlar tekil değişkenlerimiz. Tek bir tane değişken olduğunda elimizde, bir integer'ı tanımladığınızda, memori'de yapılan işlem dediğim gibi, integer'ın büyüklüğü, ne tip bir değişken tanımlanmışsa, o büyüklükte bir alan o değişken için ayrılıyor memori'de.
+
+56
+00:12:26,524 --> 00:12:31,524
+Orasına başka birilerinin yazmasına izin verilmiyor. Orası o değişkene özel bir şey oluyor.
+
+57
+00:12:37,971 --> 00:12:58,291
+Aynı türden birden fazla değişken içeren yapılarımız var bizim. Bunlar diziler diye gördüğümüz şeyler. Dizilerde mesela, diyelim ki, bir integer işte A10 tanımladınız. O zaman burada şöyle bir şey yapmak gerekiyor bakın.
+
+58
+00:13:05,183 --> 00:13:10,183
+O zaman 40 byte'lık bir alan ayrılması gerekir. Şimdi 40 byte'lık alan ayrılacak.
+
+59
+00:13:10,183 --> 00:13:16,183
+40 byte'lık alan nasıl ayrılacak? Şimdi memori şöyle düşünelim. Şöyle şöyle parçalar olacaklar.
+
+60
+00:13:16,183 --> 00:13:22,183
+Şu en baştaki yine A değişkeni olsun bu. A0 değişkeninin
+
+61
+00:13:22,803 --> 00:13:32,803
+A9'ın başladığı yer, şurası A0 değişkenin bittiği yer, şurası en son A9 değişkeninin başladığı adres, burası da yine bittiği adres.
+
+62
+00:13:32,803 --> 00:13:42,803
+Şimdi bu diziler dediğimiz gibi biz mesela diyelim ki A3'e erişmek istiyoruz. A3'e erişmek istediğimizde yapılan işlem aslında şu.
+
+63
+00:13:43,283 --> 00:14:07,703
+Şimdi A0 burada, A0 adresini biliyoruz. A0 adresi aslında, daha sonra da göreceksiniz, aslında dizilerin isimleri, C'de öyle söyleyeyim, birer adrestir. Şu adresten başlayan değişken demek aslında. Bunun içerisinde A3'e erişmek için sizin gitmeniz gereken adresi hesaplamak oldukça basit. Neden?
+
+64
+00:14:08,159 --> 00:14:18,160
+Çünkü A0 var, A1 var, siz A2 var, ondan sonra A3 var. Dolayısıyla A0'dan itibaren, yani A0'ın üstüne ne koyacaksınız?
+
+65
+00:14:18,160 --> 00:14:32,160
+A3'ü erişmek istiyorsunuz. Bunun adresine erişmek istiyorsunuz. A0'ın üzerine ne ekleyeceksiniz? Kaç tane integer eklememiz gerekiyor?
+
+66
+00:14:33,235 --> 00:14:48,836
+0'ı geçecek, 1'i geçecek, 2'yi geçecek. 3 tane değil mi? 3 tane integer'lık büyüklük ekleyip, siz A0'ın üstüne bunu eklerseniz, burada elde ettiğiniz adres, tamam? Şuranın aslında başlangıç.
+
+67
+00:14:48,836 --> 00:14:58,028
+Tamam. İstediğimizde dediğim gibi tek adımda erişebiliyoruz. Dolayısıyla eğer ki mesela bu integer değil de float olsa mesela işte 8.
+
+68
+00:14:58,196 --> 00:15:02,196
+BITE bir alan tutuyor ya da daha da büyük alanlar tutan değişkenlerimiz olabilir.
+
+69
+00:15:02,196 --> 00:15:10,196
+Orada burası 3x integer değil ve 3x size of integer ya da size of block diyeceğimiz yapılara dönüşüyor.
+
+70
+00:15:10,196 --> 00:15:20,196
+Ama temel hesap hiçbir şekilde değişmeyecek. Bir şeyin içerisinde olduğumuz için, bir dizinin içinde olduğumuz için ve dizinin de bütün elemanları aynı tipte olduğu için ne yapabiliyoruz?
+
+71
+00:15:20,196 --> 00:15:25,196
+Biz istediğimiz yere çok hızlı bir şekilde erişiyoruz. Zaten buradan şöyle bir şey de ortaya çıkıyor.
+
+72
+00:15:26,035 --> 00:15:35,883
+Bu hızlı erişime olarak verilebilmesi için aslında dizinin içerisindeki elemanların her birinin aynı türde olmaları gerekli.
+
+73
+00:15:36,052 --> 00:15:45,652
+Eğer ki bir tanesi 4 byte, bir tanesi 32 byte, bir tanesi 8 byte gibisinden bir şeyler olursa, yani birinci eleman 4 bytelik bir şey, ikinci eleman 8 bytelik bir şey.
+
+74
+00:15:45,652 --> 00:15:52,252
+Şimdi böyle bir şey olursa siz ne yapamazsınız? A4 dediğinizde nereye gitmeniz gerektiğini anlamanız mümkün değil.
+
+75
+00:15:52,252 --> 00:15:57,451
+Ama hepsi aynı türden bir şeyler oldukları zaman, aynı tür demek memori'den aynı büyüklükte alan tutuyorlar demek.
+
+76
+00:15:57,748 --> 00:16:08,148
+Dolayısıyla siz ne yapabilirsiniz burada? Hepsi aynı türden oldukları için. Buradaki gibi basit aritmetik hesaplarla erişmek mümkün hale geliyor.
+
+77
+00:16:08,148 --> 00:16:19,508
+Yani siz A3 dediğinizde arka tarafta yapılan işlem A0 alınıyor, A0'un adresi alınıyor, daha sonra onun üstüne 3x integerlik bir şey ekleniyor ve o adrese gidip odaklanıp oradaki veri okunuyor.
+
+78
+00:16:21,172 --> 00:16:33,172
+Daha henüz görmediniz ama ileride onları da göreceksiniz. Bir de şeyler var, struct'lar var. Bunlar da aslında şöyle bir şeyler.
+
+79
+00:16:33,172 --> 00:16:46,172
+Mesela diyelim ki, verileri tutacaksınız. Mesela şöyle bir şeyler tutmak istediğimizi düşünelim. Bir kişinin bir TC kimlik numarası var. Adı var, soyadı var.
+
+80
+00:16:47,316 --> 00:17:11,816
+Bir de ne bileyim ben, işte borcu olsun mesela, borcu olsun mesela. Elektrik tanesi bunu tutuyor diyelim ki, böyle bir yapı tutmak istiyor. Yani kişilerin ID'leri var, TC kimlik aldıları, sonra adları var, sonra soyadları var, sonra da borçları var. Şimdi bunların her biri farklı türden şeyler. Mesela siz bunu belki bir integerle tutacaksınız, belki bunu bir stringle tutacaksınız, bunu da bir stringle tutacaksınız, bunu da belki yine bir integerle tutacaksınız, tamam mı?
+
+81
+00:17:13,268 --> 00:17:19,268
+Bunların hepsini birden, bunların hepsini birden bir tane struct'ın içerisinde tutabilirsiniz.
+
+82
+00:17:19,268 --> 00:17:28,268
+Struct dediğimiz şey, farklı türden değişkenlerin bir araya gelerek oluşturdukları veri yapısı demek.
+
+83
+00:17:28,268 --> 00:17:33,067
+Yani bir struct diye bir şey var, bu struct'ın içerisinde...
+
+84
+00:17:33,140 --> 00:17:43,740
+İşte tc kimlik muarası var, ad var, soyad var, borcu var ve aynı zamanda derken aslında şunu demek istiyorum, bu struct aslında bir tane integer, bir tane string, bir tane daha string, bir tane daha integer tanışıyor.
+
+85
+00:17:43,740 --> 00:17:57,539
+Şimdi peki şöyle bir şey sorsam, bu structların dizileri olabilir mi? Yani bir dizi düşüneceğiz, bu dizinin her bir elemanı bir tane struct olsun istiyorum ben.
+
+86
+00:17:58,516 --> 00:18:03,836
+Böyle bir şey yapmak mümkün mü? diye sorsam. Ne dersiniz?
+
+87
+00:18:07,316 --> 00:18:11,316
+Ya da böyle bir şey mümkün olması için ne olması gerekir? O şekilde de sorabilirim.
+
+88
+00:18:25,395 --> 00:18:31,155
+RAM'deki bölümleri gruplayabiliriz belki derken, ne demek o evren anlayamadım.
+
+89
+00:18:31,251 --> 00:18:41,251
+Hocam, normalde bir intijerleri açtığımızda hepsinin aynı türde olmasından yola çıkıp belli adımlarla ilerleyebiliyoruz ya,
+
+90
+00:18:41,251 --> 00:18:56,971
+eğer biz o bölümleri gruplandırırsak, ilk 3 byte, ilk 4 byte ya da intijer değerine ait, ondan sonra karakter koymak istiyorsak, karakter için ayrı bir bölüm açacağız, RAM'de.
+
+91
+00:18:57,556 --> 00:19:05,155
+İşte RAM'in içinde sıralı halde duracaklar ama RAM'in içindeki sıralı halde durduklarını da bir grup yaptığımızda da onu da struct diyeceğiz.
+
+92
+00:19:05,155 --> 00:19:09,556
+Şimdi grup yapmak derken şöyle bir şey, şimdi şöyle bir şey düşünüyorum.
+
+93
+00:19:09,556 --> 00:19:15,556
+Bizim aslında bir dizi olması için yani bir tane dizimiz var, tamam mı?
+
+94
+00:19:15,556 --> 00:19:21,556
+Dizinin sıfırıncı elemanı var, birinci elemanı var. Bunlar şeyler, indisteli olduklarını düşünüyorum.
+
+95
+00:19:21,556 --> 00:19:23,403
+Ve bunun içerisinde bir tane struct var.
+
+96
+00:19:23,731 --> 00:19:48,692
+Bunun içinde de bir tane strak var, bunun içinde de bir strak var. Straktımızın kendisi ise şuradaki bileşenlerden oluşuyor. Tamam mı? Yani işte T.C. Künük ne orası var? Adı var, soydu var, borcu var. Tamam. Böyle bileşenlerden oluşuyor. Her birinin içerisinde bunların hepsi birden varlar. Tamam. Böyle bir yapıyı kurabilmek için, bunu dizi olarak erişebilmek için burada neye ihtiyacımız var? Onu soruyorum.
+
+97
+00:19:55,988 --> 00:20:08,488
+Yok pointer'a falan girmeden direkt ne olması şart böyle bir şey oluşturabilmek için. Çok basit değil mi? Şunların hepsinin...
+
+98
+00:20:10,771 --> 00:20:18,771
+Büyüklüklerinin sabit olması lazım. Yani şunu demeye çalışıyorum. Mesela bu integer dedi ya. Mesela bu bir tane integer. Tamam mı?
+
+99
+00:20:18,771 --> 00:20:26,316
+Yani Ahmet'in TC kimlik numarasını bir tane integer ile Mehmet'in TC kimlik numarasını yine bir tane integer ile tutmanız lazım.
+
+100
+00:20:26,548 --> 00:20:53,728
+Ahmet'in adını tek bir tane ne bileyim on uzunluğunda bir işte karakter dizisiyle tutuyorsanız Mehmet'in adını da on uzunluğunda bir karakter dizisiyle tutmanız lazım. Soyadlara belki yirmi tane ayıracaksınız. Borcu içinde belki işte borçta bir tane yine integer olacak. Yani bunların büyüklükleri aynıysa tamam aynısı derken hani bununla bu birbirine eşli anlamında demiyorum. Herkesin yani her birinin şuradaki bilgilerinin büyüklükleri aynıysa biz aslında burada
+
+101
+00:20:54,228 --> 00:21:13,996
+Bunu yapmamız çok kolay. Neden? Şöyle bir tane memori düşünün yine. Biz burada, bu dizi, açtı S dizisi olsun mesela, S0 şurada olsun, tamam. S0 burada. Ben S0 ile S1 arasındaki büyüklüğü sabit yaparsam, aslında bütün istediğim şeyi yapabilirim. Doğru mu?
+
+102
+00:21:14,259 --> 00:21:23,539
+Yani S0 ile S1 arasındaki büyüklük, S1 ile S2 arasındaki büyüklük. Bunlar birbirlerine eşitse, şu ikisi birbirine eşitse büyüklük olarak.
+
+103
+00:21:23,539 --> 00:21:36,179
+O zaman ne yapabilirim ben? İşte S3 dendiğinde, tamam, S3 eşittir aslında ne olacak? S0'ın adresi artı 3 tane, şöyle yapalım, size of struct.
+
+104
+00:21:36,179 --> 00:21:41,460
+Tamam, struct neyse ona bir isim vereceğiz belki, kayıt diyeceğiz belki.
+
+105
+00:21:41,523 --> 00:21:54,523
+Sadece o struct. Yani deminki dizilerle yaptığımız şeyin aynısını burada da bu tarz structlarla gerçekleştirebiliriz. Peki bu struct'ın kendi içindeki, yani şunun kendi içindeki yapılanmanız olacak.
+
+106
+00:21:54,523 --> 00:22:06,523
+Mesela ilk önce bir tane integerlik alan belki dört byte'lik alan belki tc kimlik numaraya ayrılacak. Ondan sonra string ayrılacak bir tane. Belki adı için bir tane.
+
+107
+00:22:07,059 --> 00:22:16,559
+8 bitlik olmaz tabii de biraz daha büyük. Yine bu şekilde kendi içinde sıralı sıralı sıralı sıralı bunlara ne yapılacak tanımlanmış olmasını isteyeceğiz.
+
+108
+00:22:16,559 --> 00:22:19,559
+Ve burada da işte S0'ın mesela...
+
+109
+00:22:20,000 --> 00:22:33,200
+Soyadına erişmek için de bu sayede ne yapabileceğiz? Çok basit aritmetik işlemlerle erişebileceğiz. Çünkü S0'ın soyadına erişmek için neye ihtiyacımız var? Soyad dediğimiz şey, bir tane integer, bir tane de 10 uzunluğunda bir stringden sonra geliyor.
+
+110
+00:22:33,200 --> 00:22:46,700
+Bir tane integer'ın büyüklüğü işte 4 byte, 10 uzunluğunda bir stringin büyüklüğü de ne bileyim 2 byte desek, 6 byte sonra, yani 6 byte'ın memori'deki karşılığı neyse o kadar sonra
+
+111
+00:22:46,900 --> 00:22:51,400
+Buradan itibaren 6 baş sonra buraya ne yapabileceğiz? Erişebileceğiz.
+
+112
+00:22:51,400 --> 00:22:59,900
+Yani burada mesela A dizisinin sıfırıncı elemanının bir şey diye yapı normalde yoktur.
+
+113
+00:22:59,900 --> 00:23:06,400
+Ama straklarda eğer dizinizin elemanları her bir diziler straksa o zaman şöyle şeyler yazmanız mümkün olabilecek.
+
+114
+00:23:06,400 --> 00:23:09,900
+S0'ın mesela borcu. Tamam.
+
+115
+00:23:10,099 --> 00:23:21,099
+S0 nokta borçcu diye şeye erişebileceksiniz. Buna erişebiliyor olmanızı sağlayan yapı yine dediğim gibi şurada gördüğünüz memory mimarisi.
+
+116
+00:23:21,099 --> 00:23:34,099
+Tamamen S0 zaten var ya da işte S3'ü düşünelim. S3'ün borçlarında ilk önce S3'e gidecek. S3 aynen şurada gidecek. Sonra S3'ün bulunduğu yerden de borcuna gitmesi için de
+
+117
+00:23:34,195 --> 00:23:41,195
+Şuradaki büyüklük neyse artık o size of burası neyse o kadarlık bir şeyi ekleyecek ve oraya erişecek.
+
+118
+00:23:43,195 --> 00:23:47,195
+Anlaşıldı mı arkadaşlar bu yapı mimari?
+
+119
+00:23:50,900 --> 00:23:53,900
+Dizilerin bütün mimarisi bundan ibaret.
+
+120
+00:24:02,228 --> 00:24:05,548
+Hocam, peki bu aralarındaki uzaklık neye göre değişiyor?
+
+121
+00:24:06,587 --> 00:24:13,748
+Sizin tanımladığınıza göre, siz şurada değişkenler, mesela tc kimlik numarasına mesela diyorsunuz ki bir tane integer olsun.
+
+122
+00:24:13,748 --> 00:24:18,032
+Integer'ın zaten ne kadar yalan tuttuğu zaten belli, tamam mı?
+
+123
+00:24:18,031 --> 00:24:25,432
+Ya da mesela 10 karakterlik bir dizi olsun diyorsun, adı. Bunun ana kadarlık yer tuttuğu belli. Tamam mı? Onlar değişen şeyler değiller.
+
+124
+00:24:25,432 --> 00:24:30,231
+Ama sen bunların içlerinin işte büyüklüklerini ayarlayabilirsin. Burası mesela float ile tutacağım diyebilirsin.
+
+125
+00:24:30,231 --> 00:24:34,432
+Burada 10 değil de 50 ile tutacağım diyebilirsin ama bunlar senin tanımladığın şeyler.
+
+126
+00:24:34,432 --> 00:24:40,031
+Ama tanımladıktan sonra bunları tanımladıktan sonra bunlar için memorda ayrılan yapı zaten sabit hale geliyor.
+
+127
+00:24:40,031 --> 00:24:43,031
+Ve sen orada istediğin yere ne yapabiliyorsun, erişebiliyorsun.
+
+128
+00:24:48,147 --> 00:24:49,147
+Tamam mı?
+
+129
+00:24:51,147 --> 00:24:55,147
+Peki, şimdi bir başka noktaya daha değinelim.
+
+130
+00:24:55,147 --> 00:25:03,147
+Şimdi bir aslında gördüğünüz ama belki farkında siz, belki farkında değilsiniz.
+
+131
+00:25:03,147 --> 00:25:11,147
+Şimdi bir boyutlu dizilerimiz var. Yani A0, mesela Aİ diye eriştiğimiz değil mi?
+
+132
+00:25:11,147 --> 00:25:13,147
+Bir de iki boyutlu dizilerimiz var değil mi?
+
+133
+00:25:14,003 --> 00:25:21,323
+Şöyle işte, mesela şurasına erişmek istiyorsunuz. Bu da A, I, Y, J diyoruz değil mi buna? Şuraya erişmek için.
+
+134
+00:25:23,123 --> 00:25:28,923
+Aslında diziler dediğim gibi şu şekilde tutuluyor demiştim.
+
+135
+00:25:30,563 --> 00:25:36,683
+Aslında bütün matrisler de aynı şekilde tutuluyorlar. Yani bu da böyle tutuluyor, bu da böyle tutuluyor.
+
+136
+00:25:37,140 --> 00:25:46,519
+Peki bu nasıl bu halde tutulabilir? Aslında bu tamamen demin bahsettiğimiz mimarinden dolayı gerçekleştirebilen bir şey. Nasıl?
+
+137
+00:25:46,519 --> 00:26:04,600
+İlk önce memory'de şunu şey yapalım. Mesela şurasını şey yapalım. Buraya mesela şöyle bir şey yazayım. Bunların içlerine A, B, C, D, E diyeyim. Sonra F, E.
+
+138
+00:26:04,799 --> 00:26:18,000
+Bunlar aslında şu sırada duruyorlar. A, B, C, D, E, sonra F, sonra G, sonra bu böyle gidiyor.
+
+139
+00:26:18,000 --> 00:26:25,799
+Yani şurası geçiliyor, şurası geçiliyor, ondan sonra şuradan devam ediliyor.
+
+140
+00:26:25,799 --> 00:26:26,799
+Tamam mı? Şöyle şöyle.
+
+141
+00:26:28,564 --> 00:26:46,564
+Bu şekilde bir sırayla aslında bunlar memoride tutuyorlar. Peki ben A, i, j dediğim zaman mesela işte A3'e 7 buna nasıl erişecek program? Ne yapması lazım?
+
+142
+00:26:46,564 --> 00:26:55,564
+Deminki aritmetiği hatırlayın. A3 dediğimiz şey ne demek? Şimdi şurasını A3 diyeyim, A2 diyelim.
+
+143
+00:26:57,844 --> 00:27:03,984
+Şurası A0, şurası A1, şurası A2, ikinci satır daha doğrusu.
+
+144
+00:27:06,044 --> 00:27:11,664
+Sıfırıncı satır, birinci satır, ikinci satır. İkinci satırın başına gelmeyi hesaplayabilir mi program?
+
+145
+00:27:13,204 --> 00:27:16,284
+İkinci satırın başına gelmeyi hesaplayabilir mi? Nasıl hesaplayabilir?
+
+146
+00:27:17,304 --> 00:27:21,404
+Sıfırıncı satırdan itibaren ileriye doğru gidecek. Peki ne kadar ileriye doğru gidecek?
+
+147
+00:27:21,619 --> 00:27:31,619
+0. satırdan kaçın satıra geçecek? 2. satıra geçecek. Bunlarda 2 tane mi var? Peki, bu 2'nin her biri ne büyüklükte? Şurasının büyüklüğünü ne yapmanız lazım?
+
+148
+00:27:32,500 --> 00:28:00,500
+Biliyor olmanız lazım. Burasının, yani bu dizinin, şurasının büyüklüğünün mesela 20 elemanlı olduğunu biliyorsanız, 20 elemanlı bir şey olduğunu biliyorsanız, her birinin tipinin de ne olduğunu biliyorsanız, o zaman her bir satırın büyüklüğünde, yani memoriyle kaplayacağı alanında mesela burası sıfırıncı satırı kaplıyor, burası birinci satırı kaplıyor, burası ikinci satırı kaplıyor şeklinde. Mesela şu noktadan itibaren, bir satırın tuttuğu eleman diyelim ki işte 10 tane elemanlı olsun her...
+
+149
+00:28:00,500 --> 00:28:07,900
+Pardon, 20 tane eleman olsun, her bir de 10 bit tutuyor olsun, 200 bit sonrasında ne yapacaksınız?
+
+150
+00:28:08,276 --> 00:28:12,276
+Bir adım sonra erişeceksiniz. 200 bit sonrasına bir adım.
+
+151
+00:28:12,276 --> 00:28:19,776
+Dolayısıyla sizin gitmeniz gereken şey, 200 artı 200, 400 bitlik bir adım olacak ki siz şuraya erişebilirsiniz.
+
+152
+00:28:19,776 --> 00:28:23,276
+Peki buraya eriştikten sonra A7'ye nasıl erişeceksiniz?
+
+153
+00:28:23,276 --> 00:28:30,276
+O zaman burada da A0'dan A6'ya kadar olan kısmın her birinin de büyüklüklerin ne olduğunu biliyor musunuz şunların? Biliyorsunuz.
+
+154
+00:28:30,804 --> 00:28:40,204
+Şuraya erişmek için de, yapmanız gereken şey, şuraya erişmek için de, şu aradaki büyüklüken ne ise, onu şu bulduğunuz şuradaki büyüklüğe eklemek.
+
+155
+00:28:40,204 --> 00:28:51,084
+Yani ilk önce şu noktadan başlıyorsunuz, şuraya atlıyorsunuz, ne kadar atlamanız gerektiği, arada kaç satır olduğu ve her bir satırın ne büyüklükte alanda saklandığıyla alakalı.
+
+156
+00:28:51,584 --> 00:28:56,204
+Buraya atladıktan sonra da bu noktadan şu kırmızı noktaya yine atlamanız lazım.
+
+157
+00:28:56,852 --> 00:29:07,852
+Bu atlama içinde şuradaki değere bakıyorsunuz, bu da 7, o zaman 6 tane ne yapmanız lazım? Şuradan itibaren her birinin büyüklüğü neyse onu da 6 ile çarpıp buraya ilerlemeniz lazım.
+
+158
+00:29:07,852 --> 00:29:21,852
+Dolayısıyla bir matris aslında memoride bir dizi halinde duruyor ve bu matrisin şuradaki görüldüğünüz gibi sıralı bir şekilde dizili olmuş olması sebebiyle siz bunların her birine teker teker ne yapabiliyorsunuz? Erişebiliyorsunuz.
+
+159
+00:29:22,415 --> 00:29:33,415
+Bunun da yine sağlayan şey aslında, buradaki her bir madresin birer elemanının aynı büyüklükte olması. Farklı büyüklüklerde elemanlar ne yapamazsınız? Tanımlayamazsınız. Tamam mı?
+
+160
+00:29:33,415 --> 00:29:43,415
+Yani bir tanesi 4 byte tutsun, bir tanesi 2 byte tutsun falan gibisinden şeyler olamaz. Hepsi birden 4 byte olmalı ki bu şekilde random access ile bunlara erişebilirsiniz.
+
+161
+00:29:45,556 --> 00:29:55,556
+Tabi şimdi burada iki boyutlu dedim ama illa iki boyutta da kalmanıza da gerek yok. Yani siz de yapabiliyorsunuz zaten. Yani mesela siz şöyle bir şeyler tanımlayabilirsiniz.
+
+162
+00:29:55,556 --> 00:30:12,364
+A, I, J, K, M, Z gibi beş boyutlu diziler tanımlayabilirsiniz. Ne kadar boyutlu tanımlarsanız tanımlayın. Bunun memoriye duracağı şekil nasıldır arkadaşlar?
+
+163
+00:30:18,099 --> 00:30:22,099
+Evet, nasıldı arkadaşlar bunun memori'de bulunması?
+
+164
+00:30:24,099 --> 00:30:28,099
+Bir boyutla aynen öyle şöyle bir şey olacaktır.
+
+165
+00:30:29,099 --> 00:30:36,099
+Çizgi olacaktır. Şuradan başlayacak artık o neyse, bunun tamamı A değişkeni için ayrılmış bölge olacaktır.
+
+166
+00:30:36,099 --> 00:30:43,099
+Siz burada işte şunun şunun şunun şunun şunun dediğinizde, orada gerekli aratmetik işlemler yapılan istenilen noktaya ne yapılabiliyor?
+
+167
+00:30:43,099 --> 00:30:45,675
+Erişilebiliyor. Tamam.
+
+168
+00:30:47,539 --> 00:31:12,427
+Peki, şimdi buraya kadar bunları konuştuk. Şimdi bir dizi tanımladığımızda, programın başladığında siz dizinizin ne büyüklükte olacağını biliyorsanız,
+
+169
+00:31:12,692 --> 00:31:20,692
+Bu durumda, yani gerekli olan boyutu biliyorsanız, bu durumda bunu normal standart bir dizi olarak tanımlıyoruz.
+
+170
+00:31:20,692 --> 00:31:21,692
+Değil mi?
+
+171
+00:31:21,692 --> 00:31:31,564
+Ama eğer ki program başladıktan sonra, yani egzeyi çalıştırdıktan sonra, böyle söyleyelim, egzeyi çalıştırdıktan sonra...
+
+172
+00:31:32,211 --> 00:31:40,211
+Belli oluyorsa dizinin boyutu, yani mesela diyelim ki kullanıcıdan bir dizi alacaksınız ve onu sıralayacaksınız.
+
+173
+00:31:40,211 --> 00:31:45,211
+Ama kullanıcının verileceği dizinin büyüklüğünün ne olduğunu bilmiyoruz.
+
+174
+00:31:45,211 --> 00:31:52,211
+Yani şunu yapabilirsiniz, bir tane maksimum bir alan tanımlayıp öyle işlem yapabilirsiniz. Bu mümkün bir şey ama...
+
+175
+00:31:52,435 --> 00:32:09,435
+Bu her türlü durumda iyi bir çözüm değil. Bazen sizin maksınız kullanıcının maksıyla örtüşmeyebilir. O çok daha büyük diziler tanımlamak istiyordur. Ya da tersi, o çok daha küçük diziler tanımlamak istiyordur.
+
+176
+00:32:09,440 --> 00:32:23,760
+Yani siz mesela maksimum bir alan, atıyorum 1000 elemanlı bir dizi açıyorsunuz, tanımlıyorsunuz ve ondan sonra kullanıcı diyor ki size ben 10 elemanlı bir diziyi sıralamak istiyorum. Şimdi o açtığınız alan ne oldu? Boşa gitti. Değil mi?
+
+177
+00:32:23,760 --> 00:32:35,040
+Yani normalde 10 elemanlı bir alan açıp orada kullanıcının istediği işlemleri yapabilecekken siz başlangıçtan bol bir yer olsun diye kocaman bir alan açtınız ve orada
+
+178
+00:32:35,167 --> 00:32:46,567
+Orayı açtığınızda aslında RAM dediğiniz şey ya da bilgisayarın bütün kaynakları bir tek sizin programınız tarafından kullanılmıyor. İşlemcisi de öyle, RAM'i de öyle, harddisk'i de öyle.
+
+179
+00:32:46,567 --> 00:32:58,967
+Dolayısıyla burada iyi bir kaynak yönetimi yapmış olmazsınız. Ya da tersi olabilir. Yani siz diyelim ki işte binlik açtığınız zaman kullanıcının belki de 10 binliğe ihtiyacı var. 10 binlik birincisi var, onu sıralamak istiyorum.
+
+180
+00:32:59,347 --> 00:33:08,647
+Burada da sıkıntı, o zaman da programmer kullanamayacak. Yani hani öyle bir program. Şimdi bunu aşabilmek için eğer ne yapmanız gerekiyor? Dinamik bellek yönetimi diye bir mevzu var.
+
+181
+00:33:08,647 --> 00:33:23,647
+Ama burada onun içerisine girmeyeceğim. Dinamik bellek yönetimi işte malloc var, orada free var. Yani hani bana bu kadarlık bir alan ayır diyorsunuz ama bu ayırma işlemini şeyde değil, ne der ona? Program çalıştığında RAM'de bir alan ayrılıyor.
+
+182
+00:33:24,372 --> 00:33:31,372
+Büyüklüğü değişken bir alan ayrılıyor ve siz orada ne yapabiliyorsunuz? İşleminizi yapabiliyorsunuz. Bu şekilde yaparak ne yapabiliyorsunuz?
+
+183
+00:33:31,372 --> 00:33:39,372
+Kullanıcının gereksinimlerine çok daha adaptif, onun istekli gereksinimlerine çok daha uygun bir şey program çalıştırabiliyorsunuz.
+
+184
+00:33:39,372 --> 00:33:50,372
+Şimdi bu dinamik bellek yönetimi mevzusunu zaten yapısal programlama dersinde, kendisini de göreceksiniz. O yüzden şimdilik onun detayına gelmeyeceğiz.
+
+185
+00:33:51,508 --> 00:34:13,028
+Şimdi, demin şundan bahsettik, dizilerde A, İ dediğimizde biz oraya direkt erişebiliyoruz dedik. Şimdi bu erişebiliyoruz, yani tek bir adımda erişebiliyoruz. Bu hani daha önceden bizim konuştuğumuz O'lu bir notasyon vardı ya, karmaşıklığı gösteriyordu mesela. O, N kare falan diyorduk, hatırlıyorsunuz.
+
+186
+00:34:13,556 --> 00:34:32,056
+Şimdi Aİ'nce elemana bir adımda erişiyorsak, bir adım derken sabit sayıda işlemde öyle söyleyelim, bu O1'lik bir erişim oluyor. Yani Aİ'ye O1'de erişebilirsiniz. Bu Random Access Memory'de bu şekilde geçerli ve bir dizide bu geçerli.
+
+187
+00:34:32,947 --> 00:34:40,947
+Eğer ki sequential bir yapı varsa, sequential bir şekilde sıralandıysa, sequential bir şekilde erişilebiliyorsa daha doğrusu, tamam?
+
+188
+00:34:40,947 --> 00:34:52,947
+Erişilebiliyorsa, A'nın ince elemanına o i denmez, ona da o n denir.
+
+189
+00:34:57,684 --> 00:35:07,364
+O n'de erişiyor. Mesela bu dizinin büyüklüğü n olsun diyelim ki. O zaman işte mesela 72. elemanı erişmek için sıfırdan başlıyorsunuz, sonra 1'e gidiyorsunuz, sonra 2'ye gidiyorsunuz.
+
+190
+00:35:07,364 --> 00:35:16,364
+Şekilde de öyle şekilde 72'ye kadar ilerliyorsunuz. Birer birer birer birer. Bunun böyle birer birer ilerliyor olmasının sebebi bunların sıralı bir şekilde olmayışı. Tamam mı?
+
+191
+00:35:16,364 --> 00:35:20,484
+Şimdi sıralı bir şekilde olmadıkları zaman yani şöyle bir durum var aslında.
+
+192
+00:35:24,692 --> 00:35:45,931
+0 burada, A1 burada, A2 burada, aralarda boşluklar da var. A4 burada belki. Dolayısıyla arada boşluklar var ve boşlukların büyüklükleri de sabit değiller. Aralarda çünkü başka değişkenlere dair bir şeyler var.
+
+193
+00:35:46,260 --> 00:35:54,260
+Siz burada A0'dan A1'i atlayamıyorsunuz. Ne kadar atlayacağınızı bilemediğinizden dolayı atlayamıyorsunuz.
+
+194
+00:35:54,260 --> 00:36:00,260
+Peki, böyle bir yapıyı kullanabilmek için ama bize başka bir şey daha lazım.
+
+195
+00:36:00,260 --> 00:36:04,260
+Ben diyelim ki A3'ü istiyorum.
+
+196
+00:36:04,260 --> 00:36:12,260
+A3 nerede? A3'de şurada olsun. A3'ün içi de burada.
+
+197
+00:36:12,755 --> 00:36:20,515
+Ben A3'e erişmek istiyorum. Şimdi A3'e erişmem için benim bir kere neyi bilmem lazım? A0'ı bilmem lazım.
+
+198
+00:36:20,515 --> 00:36:26,635
+A0'ı bilmeden zaten hiçbir şey yapamam. Dizilerden başlıyor. Peki A0'a eriştim. A0'dan A1'e gideceğim.
+
+199
+00:36:26,635 --> 00:36:34,475
+Ama A1 bir yerde ama onun bana sabit bir uzaklığı yok. Bu uzaklığın ne olduğunu bilmiyorum.
+
+200
+00:36:34,516 --> 00:36:57,315
+Dolayısıyla sadece bu dizinin içerisindeki elemanları bilerek benim bu A0'dan A1'e gitmem mümkün değil. Bana başka bir bilgi daha lazım. Ne o bilgi aslında? A0'dan sonra gelen eleman hangi indiste, hangi adreste? Bunun bilgisi lazım.
+
+201
+00:37:00,628 --> 00:37:02,788
+İçinde bir şeyler yazıyor zaten.
+
+202
+00:37:03,307 --> 00:37:04,628
+Bana bir tane de şey lazım.
+
+203
+00:37:04,728 --> 00:37:06,488
+Bir dizi daha lazım. O şekilde düşünelim.
+
+204
+00:37:06,568 --> 00:37:08,908
+Buna da B dizisi diyelim.
+
+205
+00:37:09,968 --> 00:37:11,728
+B dizisinin içerisinde şu var.
+
+206
+00:37:12,168 --> 00:37:14,068
+Yani B'nin sıfırıncı elemanın içerisinde şu var.
+
+207
+00:37:14,948 --> 00:37:16,648
+A sıfırdan sonraki A bir nerede?
+
+208
+00:37:17,428 --> 00:37:18,888
+A bir mesela burada görüyor musunuz?
+
+209
+00:37:19,568 --> 00:37:21,827
+Bu A birin adresi neyse burada o yazıyor.
+
+210
+00:37:22,088 --> 00:37:22,508
+Adres.
+
+211
+00:37:23,428 --> 00:37:23,628
+Tamam.
+
+212
+00:37:24,748 --> 00:37:27,928
+Daha sonra A birin dizisi bir de B dizisi vardı.
+
+213
+00:37:28,532 --> 00:37:38,672
+Beledisinin birincisinin içerisinde de ne yazıyor? A1'den sonraki elemanın adresi yazıyor. Mesela A1'den sonraki elemanın adresi şurası. Tamam, yine burada bir adres var.
+
+214
+00:37:40,532 --> 00:37:45,292
+Dolayısıyla benim A dizisini sadece tutmam yetmiyor böyle bir yapıda.
+
+215
+00:37:45,844 --> 00:37:52,623
+İşte A1'e, A2'ye, A3, A4'e erişmek için. Bunun yanında bir de ekstradan bir bellek harcamam gerekiyor.
+
+216
+00:37:52,623 --> 00:38:00,184
+Ne belleği bu? Aslında her bir elemandan bir sonraki elemanın nerede olduğunun bilgisi.
+
+217
+00:38:00,184 --> 00:38:08,764
+Tamam. Bu bilgi olmadan yani şuradaki şu bilgiler olmadan sizin şuradaki A0, A1, A2, A3 şeklinde sırayla bunlara erişmeniz mümkün değil.
+
+218
+00:38:08,764 --> 00:38:11,443
+Tamam. Bu sequential access.
+
+219
+00:38:11,443 --> 00:38:12,268
+Tamam.
+
+220
+00:38:14,643 --> 00:38:30,643
+Şimdi sequential access, peki bu kötü değil mi? Yani hani deminki yapıyı düşünürsek, burada A ince elemanla erişimiz O1'de yani sabit sayıda 3-5 tane işlemle işte demin bahsettiğiniz aritmetik basit 3-5 tane çarpım toplamayla yapılabiliyor.
+
+221
+00:38:30,643 --> 00:38:40,139
+Yani i'nin büyüklüğü ile falan alakalı bir mevzu yok. i1'de olsa aynı sayıda işlemle yapılıyor, A 2 milyon da olsa aynı sayıda işlemle yapılıyor.
+
+222
+00:38:40,179 --> 00:38:49,779
+Ama sequential yapıda A'nın 1 olmasıyla A'nın 2 milyon olması arasında yapılması gereken işlem arasında bir fark var. Nasıl bir fark var?
+
+223
+00:38:50,440 --> 00:38:56,800
+A 2 milyonda siz A0'dan başlayıp A2 milyona kadar adım adım adım adım şuradaki mimariyle ilerlemeniz gerekiyor.
+
+224
+00:38:57,359 --> 00:39:01,099
+A0'a gideceksiniz, A0'dan bir sonraki elemanın…
+
+225
+00:39:01,099 --> 00:39:01,440
+Efendim?
+
+226
+00:39:02,220 --> 00:39:06,980
+Burada B'lerin içine adres yazdık da B'lerde de aynı durum olmayacak mı A'daki gibi?
+
+227
+00:39:08,532 --> 00:39:13,532
+B0'ın yerini biliyoruz, B1'in yerini.
+
+228
+00:39:15,532 --> 00:39:19,532
+Haa, orası şey değil, orasını öyle tutmamanız lazım.
+
+229
+00:39:21,532 --> 00:39:25,532
+Orasını öyle tutmamanız lazım. Yani orasını yine buradaki gibi tutabilirsiniz.
+
+230
+00:39:25,532 --> 00:39:29,532
+Eğer onu da böyle tutmak isterseniz, tamam mı?
+
+231
+00:39:29,532 --> 00:39:33,532
+Ya da bunun çözümü aslında henüz görmediğiniz pointerlar.
+
+232
+00:39:33,532 --> 00:39:35,532
+Yani aslında şurada şu B dizisi var ya.
+
+233
+00:39:36,019 --> 00:39:50,420
+O B dizisi bir pointer dizisi olarak tanımlanıyor. Tamam mı? Ama şu anda pointerlara girmeyeceğimiz için bunu harici bir dizi olarak tanımlayıp ilerleyeceğiz. Gerçekte yani gerçek implementasyon da buradaki bu B dizisi bir pointer dizisi olarak implement ediliyor.
+
+234
+00:39:50,420 --> 00:40:00,000
+Ve pointer dizisinin içerisindeki şeyler, işte birinci eleman, ikinci eleman, üçüncü eleman onları siz şeyle ne derler onlar? Şuradaki...
+
+235
+00:40:00,000 --> 00:40:09,000
+Akses yapısıyla yani A, İ, C adımda, bir adımda ne yapabiliyorsunuz? İstediğiniz elemanına erişebiliyorsunuz. Tamam.
+
+236
+00:40:11,000 --> 00:40:21,000
+Şimdi burada ama bir problem, yani problem derken yani böyle basit bir yapı varken böyle bir şey niye şey yapalım, isteyelim?
+
+237
+00:40:21,000 --> 00:40:26,000
+Tamam. Acaba neden olabilir böyle bir şey istememiz?
+
+238
+00:40:26,387 --> 00:40:29,987
+Bunun avantajlı olabileceği nasıl bir durum olabilir?
+
+239
+00:40:33,492 --> 00:40:34,923
+Biraz düşünün bakalım.
+
+240
+00:41:05,076 --> 00:41:10,076
+3 dakika verelim. 14.43
+
+241
+00:41:13,684 --> 00:41:19,684
+Evet, niye böyle bir yapıya ihtiyacımız olabilir? Sorumuz bu. Bekliyoruz.
+
+242
+00:43:58,036 --> 00:44:00,036
+Evet, tahmin yok mu arkadaşlar?
+
+243
+00:44:03,764 --> 00:44:13,264
+Böyle kötü görünen bir şey niye var olsun? Ne gibi durumlarda işimize yarayabilir?
+
+244
+00:44:13,264 --> 00:44:24,264
+Peki, şimdi... Sesim geliyor değil mi bu arada? Şu anda.
+
+245
+00:44:24,264 --> 00:44:25,264
+Geliyor hocam.
+
+246
+00:44:25,264 --> 00:44:29,264
+Tamam. Şimdi şöyle bir şey yapalım.
+
+247
+00:44:32,980 --> 00:44:35,779
+Aldığımız ertelerin datataypleri ve voidları farklıysa.
+
+248
+00:44:42,003 --> 00:44:57,244
+Olabilir, olabilir ama yani bu da olabilecek bir şey. Doğru diyorsun Beyduda. Yani her bir dizimizin elemanının burada sabit büyüklükte olma şartı yok.
+
+249
+00:44:57,244 --> 00:45:08,563
+Eğer böyle bir yapıyı kullanabilirsek çünkü adresleri biz vereceğiz. Dolayısıyla hani A0'da ne bileyim işte 4 bayitlik bir şey varken A1'de
+
+250
+00:45:08,724 --> 00:45:14,724
+Çok daha büyük bir şeyiniz olabilir, çok daha küçük bir şeyiniz olabilir. Doğru, bu bir olasılık.
+
+251
+00:45:14,724 --> 00:45:24,724
+Şimdi diğer biraz daha pratik açıdan faydalarına gelelim.
+
+252
+00:45:24,724 --> 00:45:27,724
+Şimdi şöyle bir şey düşünelim.
+
+253
+00:45:37,652 --> 00:45:57,652
+Şimdi diyelim ki biz bu diziyi sıralı tutmak istiyoruz. Yani dizi küçükten büyüye sıralı olsun. Tamam mı? Yani dizimizin içerisinde elemanlar var. Mesela işte 1 var, 7 var, 12 var, 34 var. Tamam mı? Böyle bir dizimiz var.
+
+254
+00:46:03,123 --> 00:46:15,123
+15'i ekleyeceğim bu diziye. 15'i eklemek için ne yapmam gerekiyor? Ya da 6'yı ekleyeyim.
+
+255
+00:46:15,123 --> 00:46:22,123
+6'yı ekleyeceğiz ve ben hala dizinin sıralı olmasını istiyorum.
+
+256
+00:46:22,123 --> 00:46:29,123
+Çünkü dizinin sıralı olması bana başka yerlerde avantaj sağlıyor.
+
+257
+00:46:30,708 --> 00:46:37,708
+Arama algoritması yapıyorsunuz, orada sıralı olması gerekiyor, dizinin maliyetlere göre sıralı olması gerekiyor vs.
+
+258
+00:46:37,708 --> 00:46:43,708
+Dolayısıyla dizinin sıralı olması gerektiğini düşünelim ve 6'yı eklemeye kalkalım diziye.
+
+259
+00:46:43,708 --> 00:46:47,708
+Şimdi bu diziyi 6'yı eklediğimizde bu dizinin yeni hali şöyle bir şey olacak değil mi?
+
+260
+00:46:47,708 --> 00:46:55,372
+1, 6, 7, 12, 34. Peki bu işlemi yapmak için neler yapmam gerekiyor? Bana söyleyebilir misiniz?
+
+261
+00:46:58,164 --> 00:46:59,164
+Tamam, lazım.
+
+262
+00:47:10,708 --> 00:47:13,648
+Altıdan sonraki değerlerin hepsini kaydırmamız gerekebilir.
+
+263
+00:47:13,648 --> 00:47:16,407
+Hepsini kaydırmamız gerekebilir, gerekiyor değil mi?
+
+264
+00:47:16,407 --> 00:47:17,407
+Gerekiyor, evet.
+
+265
+00:47:17,407 --> 00:47:18,708
+Gerekiyor, aynen öyle.
+
+266
+00:47:18,708 --> 00:47:23,907
+Yani oradakilerin hepsini birden, şimdi bu dizinin diyelim ki 100.000 elemanlı olduğunu düşünün, tamam mı?
+
+267
+00:47:23,907 --> 00:47:29,108
+100.000 elemanlı, siz işte ortalara bir yerlere bir şey ekliyorsunuz, 50.000 tane elemanı ne yapmanız gerekiyor?
+
+268
+00:47:29,108 --> 00:47:31,307
+Yan tarafa doğru kaydırmanız gerekiyor.
+
+269
+00:47:31,307 --> 00:47:34,508
+Ya da diyelim ki 7'yi sileceğiz.
+
+270
+00:47:34,508 --> 00:47:36,307
+Tamam mı?
+
+271
+00:47:36,307 --> 00:47:37,307
+Şurada.
+
+272
+00:47:37,972 --> 00:47:45,972
+Yine ne yapmanız gerekiyor bu sefer? Şunları yine birer kaydırmanız gerekiyor. Deminkinde şöyle şöyle kaydırma yapmanız gerekiyordu.
+
+273
+00:47:45,972 --> 00:48:01,516
+Silme değilse ters yönde kaydırma yapmanız gerekecek. Dolayısıyla eleman, ekleme ve silme işlemleri dizilerde o en karmaşıklıktadır. Doğru mu?
+
+274
+00:48:05,204 --> 00:48:10,204
+O kadar tane elemanı ne yapmanız gerekiyor? Kaydırmanız gerekiyor sağ ya da sola.
+
+275
+00:48:10,204 --> 00:48:26,204
+Peki, diyelim ki, ne yapmanız gerekiyor? Burada büyütmeniz gerekiyor ya da küçültmeniz de gerekiyor olabilir. Onlarla uğraşmanız gerekebilir.
+
+276
+00:48:26,204 --> 00:48:30,204
+Şimdi bunu biraz daha farklı bir yolla yapmaya kalkarsak.
+
+277
+00:48:30,835 --> 00:48:47,835
+Şöyle bir şey düşünsek, deminki yapıyı düşünelim. Bu arada deminki yapının adını vermeden, dersin en başında söylemiştim ama linkli liste. Demin bahsettiğimiz bu sequential yapı vardı ya.
+
+278
+00:48:52,436 --> 00:49:06,636
+Sequential Access dediğimiz şey linkli liste mimarisi. Şimdi linkli listede benim herhangi bir elemanı araya eklemem ya da herhangi bir elemanı çıkartmam için ne yapmam lazım?
+
+279
+00:49:14,996 --> 00:49:16,996
+Ne yapmam yeterli daha doğrusu.
+
+280
+00:49:24,211 --> 00:49:33,512
+Yeni eklenen elemanın adresini ekleriz de, bu sefer de şey olmaz mı hocam, diğer adresleri tutan listenin kaydırılması gerekir?
+
+281
+00:49:34,411 --> 00:49:37,811
+Acaba kaydırmak gerekir mi?
+
+282
+00:49:44,371 --> 00:49:56,771
+Şimdi şöyle bir şey düşünelim. Bir dizimiz olsun. O dizin üstünde bunu gerçekleştirelim aslında. Daha net anlaşılır.
+
+283
+00:50:04,467 --> 00:50:15,467
+Şimdi, bir A dizimiz olacak arkadaşlar, A dizimiz, bir de Po dizimiz olacak ki bu demin B dedim yani, bu pointer'ın Po'su aslında da.
+
+284
+00:50:17,467 --> 00:50:19,467
+Şimdilik böyle olsun.
+
+285
+00:50:21,467 --> 00:50:29,467
+Şimdi, ilk önce dizinin ilk halini yazacağım ben, tamam. Ondan sonra araya bir şeyler eklemeyi, çıkartmayı göreceğiz, tamam.
+
+286
+00:50:31,635 --> 00:50:51,635
+Şimdi burası bir de i'mizde olsun, i0 olsun, sonra a1, 2, 3, 4, 5 eleman olsun içerisinde dizimizin.
+
+287
+00:50:57,172 --> 00:50:59,172
+Sonra A'nın elemanlarını yazayım ben.
+
+288
+00:50:59,172 --> 00:51:06,172
+A, iki, beş, dört, sekiz, bir.
+
+289
+00:51:06,172 --> 00:51:11,172
+Şimdi pointer kısmını oluşturalım.
+
+290
+00:51:11,172 --> 00:51:18,172
+Şimdi bakın, sıfırda, yani dizinin nereden başlayacağını söyleyeyim.
+
+291
+00:51:18,172 --> 00:51:24,172
+Dizinin en küçükten büyüğe sıralı bu arada, onu söyleyeyim. Küçükten büyüğe.
+
+292
+00:51:25,364 --> 00:51:48,364
+A dizisine küçükten büyüğe erişmek için po'nun değerleri ne olmalı? Sorumuz bu. Tamam.
+
+293
+00:51:48,364 --> 00:51:52,704
+Şimdi A dizisinin içerisinde bu elemanlar var. A dizisi böyle duruyor.
+
+294
+00:51:52,704 --> 00:52:06,704
+Şimdi burada hani dediğim gibi bu memoride farklı farklı yerlere dallanmış falan gibisinden şeylerimiz yok şu anda. Çok basit bir yapıyı düşünüyoruz. Bir adizimiz var. Bu adiz sırasız bir şekilde duruyor memoride.
+
+295
+00:52:06,804 --> 00:52:18,204
+Ama ben bir linkli liste oluşturacağım ve bu linkli liste mimarisi sayesinde A dizisinin elemanlarına küçükten büyüye doğru erişebileceğim. Tamam.
+
+296
+00:52:18,204 --> 00:52:28,304
+Diziyi memoride sıralı halde tutmayacağım ama dizinin elemanlarına sıralı bir şekilde erişebileceğim. Tamam. Mantığımız bu şimdi.
+
+297
+00:52:28,304 --> 00:52:30,304
+Şimdi A dizisinin dediğim gibi...
+
+298
+00:52:31,635 --> 00:52:38,635
+İçinde 2, 5, 4, 8, 1 gibisinden şeyler var. Bunlara erişmeye kalksanız, AI'ye erişebiliyorsunuz tabi ki.
+
+299
+00:52:38,635 --> 00:52:41,635
+Ama AI'ye sırayla erişmeye kalksanız da bunlar sıralı bir şekilde değiller.
+
+300
+00:52:41,635 --> 00:52:46,635
+Ama ben öyle bir şey yapacağım ki, yeni bir dizi tanımlayacağım ki buna Poe dedim.
+
+301
+00:52:46,635 --> 00:52:54,635
+Bu dizinin içerisinde ne olacak? Her bir elemandan bir sonraki elemanın adresi yazı da olacak burada.
+
+302
+00:52:54,931 --> 00:53:18,431
+Bunun, fon'un sıfırıncı elemanı, fon'un sıfırıncı elemanı 5'i gösteriyor. 5'in anlamı şu, bu A dizisinin en küçük elemanının yeri 5. Yani ne diyor bakın 5. 5 ne? 1. Değil mi? Görüyorsun? 1. Peki, bundan sonraki en küçük eleman kaç arkadaşlar? 1'den sonraki en küçük eleman kaç?
+
+303
+00:53:23,476 --> 00:53:24,476
+2
+
+304
+00:53:27,195 --> 00:53:32,876
+2, değil mi? O zaman ben şu birin yanındaki alana ne yazacağım?
+
+305
+00:53:36,436 --> 00:53:39,236
+Yani poğanın beşinde ne olacak burada?
+
+306
+00:53:39,236 --> 00:53:41,236
+Bir hocam.
+
+307
+00:53:41,236 --> 00:53:44,236
+Bir olacak değil mi?
+
+308
+00:53:44,236 --> 00:53:50,236
+Bir gitti buraya, ikiye gitti. Peki bu ikinin yanında ne yazılı olacak?
+
+309
+00:53:50,236 --> 00:53:59,211
+İkiden sonraki en küçük eleman kaç? Dört değil mi? Dördün adresi burada yazılı olacak. O da üç.
+
+310
+00:53:59,764 --> 00:54:06,764
+Peki, 4'ten sonraki en küçük eleman ne? 5. O zaman 4'ün yanına 5'in adresini yazacağım. 2 olacak.
+
+311
+00:54:06,764 --> 00:54:13,764
+Peki, 5'in yanına ne yazacağım? 5'ten sonraki en küçük eleman? 8. 8'in adresi de şurada yazılı olacak. 4.
+
+312
+00:54:13,764 --> 00:54:20,764
+Peki, buraya gittim. 4. Peki, 8'den sonraki eleman ne? Yok. Değil mi? Yok.
+
+313
+00:54:20,764 --> 00:54:25,764
+O zaman buraya, yani C'de null da koyabilirsiniz ama eksi bir yazın.
+
+314
+00:54:26,159 --> 00:54:31,879
+Yani eksi 1'e eriştiğiniz anda o dizisinde aslında dizinin sonuna erişmişsiniz demektir.
+
+315
+00:54:31,879 --> 00:54:32,879
+Tamam mı?
+
+316
+00:54:34,239 --> 00:54:36,879
+Anlaşıldı mı buradaki bu poy nasıl oluşturduğumuz?
+
+317
+00:54:36,879 --> 00:54:42,879
+Her bir elemanın yanında ondan sonraki elemanın nerede olduğu yazılı.
+
+318
+00:54:42,879 --> 00:54:44,879
+Tamam mı?
+
+319
+00:54:46,319 --> 00:54:51,879
+Şimdi bu diziye ben 7'yi ekleyeceğim. Bakın 7'yi ekleyelim.
+
+320
+00:54:51,879 --> 00:54:53,420
+7'yi ekleyelim.
+
+321
+00:54:53,588 --> 00:55:03,588
+Burada acaba nasıl değişiklikler yapmamız gerekir? A dizisini kaydırmamız gerekir mi? Po dizisini kaydırmamız gerekir mi? Onu görmeye çalışalım.
+
+322
+00:55:03,588 --> 00:55:09,588
+Şimdi birincisi 7'yi eklediğimize göre bir kere ne yapmamız lazım bizim?
+
+323
+00:55:09,588 --> 00:55:11,588
+Şurayı, pardon.
+
+324
+00:55:11,588 --> 00:55:15,588
+Aa, bunu geçelim.
+
+325
+00:55:15,588 --> 00:55:18,588
+7, çok pardon.
+
+326
+00:55:20,947 --> 00:55:30,947
+7'yi ekleyeceğiz. Benim buraya bir tane 7'yi eklemem lazım bir kere. Bu kesin. Şuraya 6. eleman olarak benim 7'yi eklemem lazım.
+
+327
+00:55:32,947 --> 00:55:38,947
+A dizisinde hiçbir değişiklik yapmayacağım. Burası sabit duruyor. Hiçbir şeye dokunma inşallah.
+
+328
+00:55:46,483 --> 00:56:09,983
+Değişme ederken bir tek yerine elemanı ekledim tabii sonuna, onu yaptım. Peki, ne yapmam? 7'yi ekleyeceğim buraya ve ben po adresini öyle bir oluşturacağım ki yine hala ben adresinde bu po'ya göre eriştiğimde 1, 2, 4, 5, sonra 7, sonra 8. Ondan sonra da eksi 1 şeklinde olmadı.
+
+329
+00:56:10,387 --> 00:56:26,387
+Şimdi biraz düşünürsek, 1, 2, 5'te herhangi bir değişiklik var mı? 1, 2, 5'te? Yani en küçük eleman 1, ondan sonraki en küçük eleman 2, ondan sonraki en küçük eleman 5, pardon 4, ondan sonra 5. Buralarda herhangi bir değişikliğimiz yok.
+
+330
+00:56:26,387 --> 00:56:37,099
+Şimdi asıl değişiklik nerede olacak? 5'ten bir sonraki eleman. Şimdi 8'di değil mi? Ama değil. Ne olmasını istiyorum ben? 7 olmasını istiyorum. 5'ten bir sonraki elemanı.
+
+331
+00:56:37,396 --> 00:56:42,396
+5'in yanındaki eleman 4'ü gösterir, yani 8'i gösterir. Şimdi artık neyi gösterecek bu arkadaşlar?
+
+332
+00:56:46,739 --> 00:56:48,239
+Ne yazmam lazım buraya?
+
+333
+00:56:52,371 --> 00:56:57,371
+6 değil mi? 6. Başka bir şey yapmama gerek var mı?
+
+334
+00:56:59,371 --> 00:57:02,371
+7'nin yanında da 4 yazmak.
+
+335
+00:57:02,371 --> 00:57:11,371
+Heh, çok güzel. Şimdi 6'ya gittim, 7, 7'den sonra gelecek olan eleman hangisi? 8. 8'in adresine 4. O zaman bir de şuraya 4'ü yazacağım.
+
+336
+00:57:12,371 --> 00:57:18,347
+Başka, hiçbir şey değiştirmeme gerek yok. Kaydırmadır, şudur budur falan gibisinden hiçbir şey gerek yok. Görüyor musunuz?
+
+337
+00:57:20,340 --> 00:57:28,340
+Sadece iki tane değişiklik yaptım ve diziyi hala sıralı bir şekilde erişebiliyorum şu anda. Tamam mı?
+
+338
+00:57:28,340 --> 00:57:46,340
+Yani linkli listeler aslında dizilere yani elinizdeki diziye çok sayıda ekleme ve çıkartma yapılıyorsa ve sizin o diziyi sıralı tutmanız gerekiyorsa oldukça pratik şeyler sağlıyor bize, sonuçlar sağlıyor.
+
+339
+00:57:46,835 --> 00:57:51,835
+Tabi bir de şöyle bir durum var, daha sonra işletim sistemleri dersinde falan da göreceksiniz bu tarz şeyleri.
+
+340
+00:57:51,835 --> 00:57:58,835
+Şimdi hani dedik ya, bir diziyi en boyutunda, bir dizi siz tanımlamak istiyorsunuz.
+
+341
+00:57:58,835 --> 00:58:06,835
+Fakat diyelim ki en elemanlı bir dizi lazım size ama memory'de en elemanlı ardışık bir bölümü yok.
+
+342
+00:58:06,835 --> 00:58:13,823
+Yani memory'i düşünelim, memory böyle bir şey. Mesela işte memory'in bir kısmı, şurası dolu, işte şurası dolu.
+
+343
+00:58:13,824 --> 00:58:33,943
+Burası dolu. Size ayrılmış alan da bu alan diyelim ki. Programınıza bu alan ayrılmış. Ama size mesela şu boyutta bir şey lazım. Tamam mı? Yani sıralı bir şekilde istiyorsunuz bunu, böyle olsun. Ama sizin şu andaki reminizde, size ayrılmış bölgesinde remin, bu büyüklükte sıralı bir yer yok.
+
+344
+00:58:34,228 --> 00:58:49,228
+O zaman da yine arkadaşlar, yine linkli liste mimarileri kullanılıyor. Mesela bunu alıyorsunuz, işte burasını şuraya koyuyorsunuz, şu parçasını şuraya koyuyorsunuz, belki şu parçasını da şuraya koyuyorsunuz. Tamam.
+
+345
+00:58:50,228 --> 00:59:00,960
+Bir başka lazım olacağı kısım aslında. Yani gerekli olan alan bir sıralı bir halde sizin reminizde yoksa
+
+346
+00:59:00,960 --> 00:59:09,960
+Ama siz de işlem yapmak istiyorsunuz, program çalışsın hala istiyorsunuz. Bu durumda ne yaparsınız? Yapılan işlem ne oluyor? Bu tarz işlemler oluyor.
+
+347
+00:59:09,960 --> 00:59:15,960
+Dediğim gibi, bunları hep daha sonra derslerde göreceksiniz. Hard disklerin içerisinde yerleşirken de
+
+348
+00:59:16,032 --> 00:59:26,431
+ya da herhangi bir diskinin içerisine erişirken de, sequential yapılar, page'leri falan orada göreceksiniz. İşletim sistemleri dersinde daha da detaylı olarak bunları göreceksiniz.
+
+349
+00:59:26,431 --> 00:59:37,831
+Ama bunların hepsinin temeli, burada bahsettiğimiz büyük bir bütünü parçalara ayırıp hala bütünlüğü koruyacak şekilde ona erişebilir kılmak. Tamam mı?
+
+350
+00:59:37,840 --> 00:59:48,840
+Yani bütün var elinizde, bütünlüğe erişebiliyorsunuz ama hepsi aynı yerde değiller, yani sıralı bir şekilde değiller. Farklı farklı alanlardalar. Ama bu linkli listeler sayesinde ne yapabiliyorsunuz?
+
+351
+00:59:48,840 --> 00:59:56,840
+Buradaki her bir en baştan itibaren en sonuna kadar neresini istiyorsanız oraya erişmenize imkan sağlıyor bu tarz yapılar.
+
+352
+01:00:04,820 --> 01:00:13,820
+4'ü silelim. Ya da bir dakika ya, küçük bir ara verelim ve ondan sonra silelim. Tamam. Şimdi arkadaşlar, bir ara verelim. Bakayım bir dakika.
+
+353
+01:10:31,731 --> 01:10:34,131
+Merhaba arkadaşlar, tekrardan sesim geliyor mu?
+
+354
+01:10:39,956 --> 01:10:42,956
+Ses tm123 geliyor.
+
+355
+01:10:42,956 --> 01:10:44,956
+Peki.
+
+356
+01:10:45,956 --> 01:10:47,956
+Şimdi devam edelim.
+
+357
+01:10:48,956 --> 01:10:50,731
+Şu diziye...
+
+358
+01:10:58,868 --> 01:11:05,587
+Şu mevcut diziye, mevcut diziden dördü silelim.
+
+359
+01:11:09,619 --> 01:11:26,619
+Dördü silelim. Şimdi dizimiz bu halde, şu gördüğünüz halde duruyor. Dördü silmek istiyorum. Yani dördü sildiğim zaman nasıl bir şey olacak? Önce 1'e erişmesi lazım, sonra 2'ye. Sonra 4'ü silersem 5'e, sonra 7'ye, sonra 8'e erişmesi lazım. Tamam.
+
+360
+01:11:26,619 --> 01:11:32,619
+Şimdi 1 ve 2'de herhangi bir değişiklik olmayacak zaten. Onları tahmin edebiliyoruz.
+
+361
+01:11:33,524 --> 01:11:41,524
+Bir ve iki de bir şey olmayacak fakat ikiden sonra gelen eleman normalde nereyi gösteriyor arkadaşlar?
+
+362
+01:11:43,524 --> 01:11:46,524
+İkiden sonra gelen eleman neyi gösteriyor?
+
+363
+01:11:52,532 --> 01:12:04,532
+5 var. 5'den sonra 1'den sonra nasıl bir değişiklik yapmam gerekiyor burada bir düşünün bakalım. Nasıl bir değişiklik yapsam yeterli olur.
+
+364
+01:12:10,836 --> 01:12:16,195
+İkiden sonra neri görmem lazım benim? Beşi görmem lazım.
+
+365
+01:12:19,315 --> 01:12:41,815
+2 normalde şurada bakın. 2'den bir sonraki elemanın indisi kaç diyor? 3 diyor değil mi? Burası, 4'ü gösteriyor. Ben şimdi neyi göstermesini istiyorum? 5'i göstermesini istiyorum. O zaman ben ne yapmam yeterli olacak? Şurasını 2 yapsam başka bir şey yapmama gerek var mı?
+
+366
+01:12:45,427 --> 01:12:54,707
+Bakalım, işte birden başlayalım, birden 1'e gitti, 2, 2'den 2'ye gitti, ikinci adres, 5, 5'den 6'ya gitti, 7, sonra 8 değil mi?
+
+367
+01:12:54,707 --> 01:13:06,867
+Sadece ve sadece şuradaki 3'ü 2 yaptığımda aslında ne yapmış oldum? 4'ü, şuradaki 4'ü artık dizinin erişiminden çıkartmış oldum. Tamam.
+
+368
+01:13:08,435 --> 01:13:19,435
+Şimdi, tabi burada aklınıza bir soru gelebilir. Peki, şu 4'e ben bir daha erişebilir miyim?
+
+369
+01:13:20,435 --> 01:13:28,435
+4'e bir daha erişmeniz pek mümkün değil artık. Çünkü ne oldu? Onun referansını biz kaldırdık ortada.
+
+370
+01:13:28,435 --> 01:13:33,163
+Yani ben bir daha 4'e eklemeye kalksam bu diziye, bir daha eklemeye kalksam.
+
+371
+01:13:33,332 --> 01:13:47,332
+4'ü tekrardan bunun en sonuna, yani şuraya ekleyip, burada yeni durumda yine mesela bu sefer şöyle bir şey yapmam gerekir herhalde. Şurası 7 olacak değil mi?
+
+372
+01:13:47,332 --> 01:13:54,332
+2'den sonra 4'ü görmek istiyorum. 4'ün adresi 7.
+
+373
+01:13:54,963 --> 01:14:10,963
+Şurası 7, sonra 4'den sonra da 5'i görmek istiyorum. 5'in adresi 2. Böyle bir değişiklik yapmam gerekir. Tekrardan 4'ü eklemeye kalkarsam. Kaldığı yerden tekrardan ona erişip tekrardan orayı açmam falan mümkün değil.
+
+374
+01:14:10,975 --> 01:14:24,975
+Tabi burada şey de var, ne derli ona, hani aklınıza takılabilecek şeylerden bir tanesi. Ben burada böyle bazı elemanları sildiğim zaman aslında memoride hiç ona referans verilmeyen bölgeler oluşuyor. Değil mi?
+
+375
+01:14:24,975 --> 01:14:32,975
+Yani bir daha orayı hiç kullanamıyorum ben aslında, oraya hiçbir şekilde erişemiyorum. Bunlar da memori ne yapıyorlar? Sürekli şişiriyorlar.
+
+376
+01:14:33,332 --> 01:14:51,332
+İşte mesela C'de bu işi kendinizin bir şekilde halletmeniz gerekiyor ama mesela Java'da Garbage Collector vardır. Bu Garbage Collector'ın yaptığı şey, RAM'de programınızın referans verilmeyen bölgelerini bulup onları temizlemektir.
+
+377
+01:14:51,332 --> 01:14:57,136
+Ama C'de daha orta seviye, yani Java kadar üst seviye bir şey olmadığı için...
+
+378
+01:14:57,136 --> 01:15:04,336
+C mesela size çok daha fazla özgürlük verir ama çok daha fazla şeyi sizin üstünüze bırakır.
+
+379
+01:15:04,336 --> 01:15:14,736
+C ile çok daha fazla şey yapabilirsiniz, çok daha özgürsünüzdür ama dikkat etmeniz gereken çok daha fazla şey vardır.
+
+380
+01:15:14,736 --> 01:15:19,736
+Özellikle bu memorydeki mevzularda dediğim gibi…
+
+381
+01:15:19,859 --> 01:15:39,439
+Önümüzdeki dönem herhalde yanlış hatırlamıyorsam, yapısal programın dersinde göreceksiniz. Onları temizlemek vs. Bunlar hepsi sizin programcı olarak, mühendis olarak size bırakılmış durumdalar. Özgürlüğün bedeli şeklinde düşünebilirsiniz bunları. Peki.
+
+382
+01:15:40,051 --> 01:15:59,551
+Şimdi, dediğimiz gibi araya eleman eklemek, araya eleman silmek, hiç A dizisinin üzerinde doğru düzgün aralara bir şeyler sokmak, kaydırmak, herhangi bir şey gerek kalmadan ya da pointer dizisinin üzerinde herhangi bir şeyleri silmek, eklemek gerek kalmadan ufak tefek birkaç tane sabit sayıda işlemle mümkün hale geliyor.
+
+383
+01:15:59,551 --> 01:16:07,979
+Dizi hala sıralı bir şekilde ne yapabiliyoruz? Erişebiliyoruz. Bunlar dediğim gibi linkli listelerin faydaları.
+
+384
+01:16:08,212 --> 01:16:20,712
+Şimdi arkadaşlar, şurayı bir durdureyim. Bir dakika, buradan açtığım zaman nasıl bir şey olacak? Bir saniye. Ben buradan share screen desem. Evet, durdursun orayı.
+
+385
+01:16:20,712 --> 01:16:31,512
+Şundan başka bir şey yapacağım. Şu anda şeyi görüyor musunuz? Bir dakika. Kod görüyorsunuz herhalde değil mi?
+
+386
+01:16:31,512 --> 01:16:33,512
+Görüyoruz herhalde.
+
+387
+01:16:33,512 --> 01:16:35,052
+Tamam.
+
+388
+01:16:35,347 --> 01:16:49,347
+Şimdi burada bir program var. Bu program demin yaptığımız işlemleri içeriyor. Yani bir main programımız var. Main programımızın bitişi şurası, başlangıç bitiş.
+
+389
+01:16:49,347 --> 01:16:58,347
+İçerisinde eleman ekle, eleman sil listeleri yazdır, bir de sıralı yazdır diye dört tane fonksiyon var. Bunlar onların prototipleri.
+
+390
+01:17:02,804 --> 01:17:09,043
+Ama hani biz pointer mantığını çok kullanmayacağız ama içeride pointer gibi çalışıyor aslında bunlar öyle söyleyeyim.
+
+391
+01:17:09,043 --> 01:17:14,484
+Şimdi burada ne yapılıyor onu bahsedeyim. Bir A dizisi var, bir B dizisi var, bir de O dizisi var.
+
+392
+01:17:14,484 --> 01:17:23,363
+Şimdi buradaki ilk önce A dizisine eklenecek olan eleman sayısını soruyor, daha sonra elemanları okuyor.
+
+393
+01:17:24,851 --> 01:17:40,171
+Rastgele bir şekilde o. Yani rastgele derken siz elemanlar, bu B dizisine elemanları giriş yapıyorsunuz. Şurada en tane eleman B'ye giriliyor. Fakat B dizisine bu elemanları sıralı girmenize gerek yok. Rastgele bir şekilde giriyorsunuz. Tamam.
+
+394
+01:17:40,659 --> 01:17:47,659
+Daha sonra bu B'nin içindeki elemanların her biri teker teker A dizisine eklenecekler.
+
+395
+01:17:47,659 --> 01:17:55,659
+A dizisine eklenirken aslında aynı zamanda Po dizisine de eklenecekler. Yani bir linkli yapı oluşacak.
+
+396
+01:17:55,659 --> 01:18:06,659
+Deminki A ve Po yapısını burada birer birer oluşumunu göreceğiz.
+
+397
+01:18:07,283 --> 01:18:14,963
+Şimdi başlangıçta dediğim gibi dizinin her bir elemanı okunuyor. Daha sonra dizinin her bir elemanı arkadaşlar, şurada dizinin her bir elemanı.
+
+398
+01:18:15,315 --> 01:18:43,315
+Nasıl ekleniyor bakalım. İlk önce bir sıfırlama, yani sıfırlama demeyelim, ilk işlem var. Fonun sıfırının bir olduğu, A'nın birinin, B'nin biri olduğu, Fonun birinin de eksi bir olduğu tek elemanlı yani B'nin birinci elemanını A'ya eklemiş, sanki tek elemanlı bir dizi varmış gibi. Tek elemanlı dizi dediğim gibi A1'de duruyor. Bir sonraki elemanı da zaten Fon 1'de eksi bir gösteriyor.
+
+399
+01:18:43,315 --> 01:18:52,315
+Yani eksi birinin anlamı neydi? Dizi bitti demekti. Yani A dizisi tek bir elemanlı dizi. Zaten sıralı ya da sırasız olmasının bir anlamı yok tek elemanlı dizinin.
+
+400
+01:18:52,315 --> 01:19:03,315
+Şimdi bundan sonra for ile işte i eşittir 2'den n'e küçük eşit olduğu sürece bir ek diye bir şey tanımlanmış ki o b'yi yani buraya b'yi de yazabilirsiniz fark etmez.
+
+401
+01:19:09,011 --> 01:19:17,011
+Nereye ekleniyor? A dizisine ve PO dizisine eklenecek. Peki nasıl bir işlem yapılacak?
+
+402
+01:19:17,011 --> 01:19:24,011
+Burada bir sürü kez ekliyor, ondan sonra başka başka işlemler de yapılıyor ama çok önemli değil orası şu anda.
+
+403
+01:19:24,011 --> 01:19:27,011
+Biz şu eleman ekleye gidelim.
+
+404
+01:19:27,011 --> 01:19:29,011
+Eleman ekle...
+
+405
+01:19:29,268 --> 01:19:32,468
+Şu kadarcık bir şey, çok kompleks karmaşık bir şey değil.
+
+406
+01:19:32,468 --> 01:19:40,868
+İşte şey var, ne derler ona bir integer dizisi gelmiş, integer for dizisi gelmiş.
+
+407
+01:19:40,868 --> 01:19:46,667
+Şimdi burada önemli olan nokta ne? Yeni eleman A dizisinin inci indisini yazıyoruz.
+
+408
+01:19:46,667 --> 01:19:51,667
+Yani hani en sonunu ekliyoruz dedik ya, yeni bir tane eleman eklendiğinde A dizisinin en sonunu ekliyoruz.
+
+409
+01:19:51,667 --> 01:19:55,868
+En sonunu nereden biliyoruz? Ekten biliyoruz. Ek bize şurada geldi ya.
+
+410
+01:19:57,363 --> 01:20:04,863
+Ekleyeceğimiz şey şu, nereye ekleyeceğiz? i'ye ekleyeceğiz. Nereye? i'ye ekleyeceğiz. i'nin c elemanını ek yapacağız.
+
+411
+01:20:04,863 --> 01:20:11,839
+A'nın i'nin c elemanını ek yapacağız. Sonra j eşittir po sıfır demiş.
+
+412
+01:20:11,840 --> 01:20:20,840
+Liste başındaki elemanın indisini gösterestik. Yani en baş A0'ı nereden başlayacağını, en küçük elemanın nerede olduğunu aldık.
+
+413
+01:20:20,840 --> 01:20:25,840
+Po0'da o yazılı ki en başta ne olacak şurada görüyorsunuz. Po0'da ne var? 1 var.
+
+414
+01:20:25,840 --> 01:20:31,840
+A0'ın birinci elemanında 1 var. Şu anda ikinci elemanında da ne var? B'nin birinci elemanı var.
+
+415
+01:20:33,235 --> 01:20:47,876
+Şimdi, burada şu vaylan içerisinde yapacağımız işlem aslında dizinin elemanlarına teker teker erişmek, ne zamana kadar? A, J, ekten küçük olduğu sürece bunun içerisinde döneceğiz.
+
+416
+01:20:47,876 --> 01:20:54,796
+Niye böyle bir şey yapıyoruz? Nereye kadar gideceğimizi? Yani işte, atıyorum elimizde…
+
+417
+01:20:55,028 --> 01:21:08,228
+Yani onun nereye eklenmesi gerektiğini, nereye eklenmesi derken onun neresine eklenmesi gerektiğini bulmamız gerekiyor. Onun için burada elemanları teker teker geziyoruz. Küçük olduğu sürece ilerliyoruz. Burada küçükten büyüğe doğru sıralı zaten sistem.
+
+418
+01:21:08,228 --> 01:21:16,628
+Her birine erişiyoruz teker teker teker teker. Buradaki yaptığımız işlem her seferinde bir sonraki elemana bizim geçişimizi sağlıyor.
+
+419
+01:21:16,628 --> 01:21:22,228
+Bunu bulduktan sonra, ekleyeceğimiz yeri bulduktan sonra Po dizisinin üzerinde iki tane değişiklik yapıyoruz. Bir tanesi
+
+420
+01:21:22,399 --> 01:21:34,399
+Önceki elemandan yeni elemana, ötekisi de yeni eklenen elemandan, ondan bir sonraki elemana geçişi ifade ediyor. Aynen deminki yediye eklemede yaptığımız işlem.
+
+421
+01:21:34,399 --> 01:21:41,399
+Bu işlem dediğim gibi A dizisinin içerisinde ve dolayısıyla O dizisinin içerisinde
+
+422
+01:21:43,188 --> 01:22:05,188
+ek sayısını ekliyor. Birden fazla aynı sayı burada olursa bu çok çok büyük problem olabilir mi? Eşit, küçük olduğu sürece yazdırıyoruz. Birazcık problem olabilir. Onun için belki bir şey yapmak gerekebilir. Küçük düzenlemeler yapmak gerekir. Yani dizide var olan bir sayıyı...
+
+423
+01:22:05,492 --> 01:22:11,891
+Aynı sayıyı eklemeye kalkarsak, burada belki ufak tefek değişikler yapmak gerekebilir ama genel yapı değişmeyecek.
+
+424
+01:22:11,891 --> 01:22:15,992
+Dediğim gibi eleman eklemek. Eleman eklemede Po'da iki tane güncelleme yapıyorduk.
+
+425
+01:22:15,992 --> 01:22:24,492
+Eleman silmede ise, mesela burada elemanlar eklenmiş, eleman sil mesela, şurada silecek elemanı burada sormuş.
+
+426
+01:22:24,492 --> 01:22:32,492
+A, Po ve Sil demiş. Eleman sile bir gittelim. Eleman sil de Po'da tek bir tane güncelleme vardı hatırlıyorsanız.
+
+427
+01:22:34,036 --> 01:22:38,036
+Yine, silinecek elemanı erişmek için şu işlemi gerçekleştiriyor.
+
+428
+01:22:38,036 --> 01:22:46,036
+Silinecek eleman varsa hakikaten, o zaman onu şuradaki işlemle siliyor.
+
+429
+01:22:46,036 --> 01:22:50,036
+Yani silmiyor aslında, adesinde herhangi bir değişiklik yapılmadığını burada görüyorsunuz.
+
+430
+01:22:50,036 --> 01:22:56,036
+Tek değişen şey ne? Po'nun içerisinde bir tane yeri aslında boşa çıkartıyor.
+
+431
+01:22:56,036 --> 01:22:59,036
+Artık oraya ne yapamıyorsunuz? Bir daha erişemiyorsunuz.
+
+432
+01:22:59,220 --> 01:23:07,840
+Eğer dizinin içinde yoksa zaten J'yi eksi 1'e vardırmış olacaktır, sininecek eleman. Orada yoksa zaten dizinin sonuna kadar gelmişsiniz demektir.
+
+433
+01:23:07,840 --> 01:23:12,500
+Sonra dizinin içini sıralı bir şekilde sıralı derken...
+
+434
+01:23:14,547 --> 01:23:22,028
+A'yı ve P'yi sıralı olmayan bir şekilde yazmaya kalkarsanız, yazılmak isterseniz şunu kullanırsınız.
+
+435
+01:23:22,028 --> 01:23:28,948
+Ama eğer ki A'yı sıralı bir şekilde erişmek istiyorsanız, o zaman şurada gördüğünüz kodu çalıştırmanız yeterli.
+
+436
+01:23:28,948 --> 01:23:35,948
+Bu kodu inceler. Dediğim gibi, asıl işin mantığını anlatan oldukça basit bir kod.
+
+437
+01:23:36,064 --> 01:23:51,184
+parçası. Bunu dediğim gibi, istediğiniz gibi ne yapabilirsiniz? Modifiye edebilirsiniz. Bambaşka yapılarda da kullanmak için. Mutlaka dediğim gibi eleman eklemek, eleman çıkartmak bunların hepsi var. Zaten yapılacak da fazla bir şey yok. Link liste.
+
+438
+01:23:51,444 --> 01:24:00,043
+Dediğim gibi, gerçekte bunlar arkadaşlar pointerlarla gerçekleştiriyorlar. Şu anda dediğim gibi, burada tamamen dizilerle aynı implementasyonu gördünüz.
+
+439
+01:24:00,043 --> 01:24:10,844
+Yani normalde A dizi böyle sıralı bir şekilde, ne derler buna, sequential bir şekilde duruyor olması şart değil.
+
+440
+01:24:10,899 --> 01:24:17,899
+Ama sequential bir şekilde duruyor olsa da, siz o diziyi sıvı tutmak istiyorsanız sürekli,
+
+441
+01:24:17,899 --> 01:24:25,899
+işte bu kaydırma gibisinden, maniyetlerden kurtarmak için yine ne yapabilirsiniz? Bu şekilde bir linkli liste haline getirebilirsiniz.
+
+442
+01:24:25,899 --> 01:24:34,899
+Peki, şimdi burayı durdurayım. Bu kod da zaten sizlerle paylaşacağız.
+
+443
+01:24:36,851 --> 01:24:40,031
+Tekrardan öteki tarafa geçelim.
+
+444
+01:24:43,507 --> 01:24:45,507
+Şimdi kodumuz buydu.
+
+445
+01:25:00,916 --> 01:25:26,296
+Tamam. Şimdi biz linkli listelerde, linkli listelerde diyelim ki dizimizin eninci elemanına erişmek istiyoruz. Eninci eleman da son. Son eleman. Şimdi son elemanı erişmek için linkli listede ne yapmamız gerekiyor? İlk önce sıfıra gideceğiz.
+
+446
+01:25:28,724 --> 01:25:42,724
+Sıfırdan belki bu 1'e atlayacağız, bu 1'den burada 2'ye geçeceğiz, oradan belki 3'e geçeceğiz, oradan belki 4'e geçeceğiz. Böyle atlaya atlaya atlaya gitmemiz gerekiyor. Böyle en tane atlama yapmamız gerekiyor değil mi? Peki.
+
+447
+01:25:43,724 --> 01:25:53,632
+Şimdi acaba bu yapımız şöyleydi hatırlarsanız. Burada dizi var. Burada po var.
+
+448
+01:25:53,631 --> 01:26:02,091
+Bu ileriye doğru, yani bir sonraki elemanı gösteren, bir sonraki elemanın adresini gösteren dizi.
+
+449
+01:26:02,091 --> 01:26:08,091
+Şimdi ben bir de acaba Poe geri diye bir şey tutsam, bana bu ne kazandırabilir?
+
+450
+01:26:13,492 --> 01:26:20,492
+Yani bir sonraki elemanı değil de sadece bir önceki elemanı da tutsam, bu bana ne kazandırır?
+
+451
+01:26:30,387 --> 01:26:37,387
+Yarı yarıya zaman kazandırır, değil mi? Yani n. elemana erişebilmek için ben tek adımda ne yapabilirim bu sefer?
+
+452
+01:26:37,387 --> 01:26:45,387
+Oraya erişebilirim. Ya da mesela n-2. elemana erişmek için ilk önce n'e gideceğim, sonra n-1'e gideceğim, sonra n-2'ye gideceğim.
+
+453
+01:26:45,387 --> 01:26:58,304
+Yani 0, 1, 2, 3 şeklinde bize po ileriye yönünü sağlıyor. n'den n-1'e, n-2'ye.
+
+454
+01:26:58,304 --> 01:27:10,304
+n-3'e, bu da po geriye doğru sağlayalım. Şimdi bunu da kullanırsak, dediğim gibi, bu sefer n'lik karmaşıklığı o n bölü 2 şeklinde yazabiliriz.
+
+455
+01:27:10,304 --> 01:27:20,423
+Bu belli durumlar, yani yarı yarıya zaman fena da olmayabilir. Ama burada tabi bunun bedeli ne?
+
+456
+01:27:23,956 --> 01:27:36,956
+Bunun bedeli ne? Buna erişmek için ne fazladan harcadık? Memory harcadık değil mi? Aynen öyle. Hatırlarsanız dönemin en başlarında…
+
+457
+01:27:37,471 --> 01:27:44,831
+Hız ve memori arasında genelde böyle bir trade-off olduğundan bahsetmiştim.
+
+458
+01:27:44,831 --> 01:27:49,871
+Bir şeyleri ne kadar hızlı yapmak isterseniz o kadar fazla memori kullanmanız gerekir.
+
+459
+01:27:49,871 --> 01:27:54,671
+Ya da işte yavaş olsun, az memori olsun da diyebilirsiniz.
+
+460
+01:27:54,671 --> 01:28:00,271
+Ama işte hem hızlı olsun hem memoriye az kullanalım falan gibisinden bir şeyler pek mümkün olmuyor.
+
+461
+01:28:00,271 --> 01:28:05,072
+Ekk kaynaklar kullanarak başka kaynaklar kullanarak başka kaynaklar ne yapabiliyorsunuz?
+
+462
+01:28:05,119 --> 01:28:13,520
+Daha optimize hale getirebiliyorsunuz. Ama tüm sistemin hepsini birden optimize hale getirmek diye bir şey genelde olmuyor.
+
+463
+01:28:13,520 --> 01:28:22,039
+Burada bu trade-off'u aklımızın bir ucunda tutalım. Yani fazladan memori harcayarak ne yapabiliriz? İşlemleri hızlandırabiliriz.
+
+464
+01:28:22,039 --> 01:28:28,319
+Bunu şeyde hatırlarsanız, mesela bir diziyi sıralamakta şeyde de görmüştük.
+
+465
+01:28:28,884 --> 01:28:33,884
+Radix Sort gibisinden bir şey yazmıştık, hatırlıyor musunuz? Her bir eleman yani...
+
+466
+01:28:34,420 --> 01:28:42,819
+En karmaşıklığa sahip bir sıralama algoritması yazmamıştık. Ama o sıralama algoritması çok hızlıdır. Yani en karmaşıklığa sahip bir sıralama algoritması korkunç hızlı bir şeydir.
+
+467
+01:28:42,819 --> 01:28:51,220
+Ama onun da yine problemi neydi? Çok büyük memori gereksinimleri olabiliyordu. Çünkü her bir elemanı ne yapıyorduk? Gidiyorduk.
+
+468
+01:28:51,220 --> 01:29:02,420
+Bir milyar diye bir değer varsa dizinin bir milyarıncı elemanına, indisine koyuyorduk. Bunun anlamı bir milyar elemanlı bir boyut şey.
+
+469
+01:29:02,420 --> 01:29:22,420
+Büyüklüğünde bir dizi açmanız gerekiyordu. Dolayısıyla böyle hız ve memori hep birbiriyle çekişen kavramlar olarak karşımıza çıkıyor. Bu yapıyorda arkadaşlar double linked.
+
+470
+01:29:22,515 --> 01:29:43,015
+list deniyor. Yani hem ileriye hem geriye doğru şeyleriniz var elinizde, adresleriniz var. Bir elemandan hem bir sonrakine hem bir öncekine ne yapabiliyorsunuz? Tek bir adımda erişebiliyorsunuz. Dediğim gibi işi hızlandırıyor ama biraz daha fazla bellek harcayabilir.
+
+471
+01:29:50,515 --> 01:30:12,427
+Bu dizileri aynı var. Ama gerçekten olan şey şu, bu Po dizileri birer pointer dizileri olacakları için, yani içindeki her bir hemen birer pointer olacağı için, bunun arasında oldukça küçük, bellekli küçük yerler kaplıyorlar. Yani burada memory'i, hani sadece diziyi tutarken, bu dizinin büyüklüğü, diyelim ki, ne bileyim işte.
+
+472
+01:30:12,532 --> 01:30:24,532
+100 elemanlı bir şey ve integer'lar duruyorlar ya da daha büyük bir şeyler, struct falan duruyorlar. Ama poalar dediğim gibi oldukça küçükler büyüklükleri. Dolayısıyla...
+
+473
+01:30:25,332 --> 01:30:51,292
+Eleman sayısı açısından eşitler ama memoride tuttukları alan açısından şu po diye ifade ettiğimiz şeyler epey küçükler. Onu rahatlıkla söyleyebilirim. Yani böyle dizi memori üç katına falan çıkmadı gerekli olan memori. Burada üç katına çıktı tabii. Orası kesin de. Ama gerçek implementasyonlarda bu dediğim gibi böyle üç katına falan çıkan bir şey değil. Asıl önemli yani asıl büyük olan kısım şu dizinin kendisi.
+
+474
+01:30:51,891 --> 01:31:17,891
+Mesela işte her bir elemanın içerisinde bir sürü dünya kadar şey olabilir, mesela struct yapısı falan olduğunu düşünün. Çok büyük struct yapıları. Bunların her biri birer megabaytlık bir şeyler olabilir. Mesela her birisi, dizinin her bir elemanı birer megabayt falan tutmanızı gerektiriyor olabilir. Ama şuradaki şu polarınız işte en fazla işte iki byte falan gibi bir şeyler olabilir belki. Ya da neyse, 4 byte de olabilir.
+
+475
+01:31:18,612 --> 01:31:22,612
+işletim sisteminize göre.
+
+476
+01:31:24,612 --> 01:31:25,612
+Peki...
+
+477
+01:31:30,355 --> 01:31:34,355
+Neyimiz var? Çift yönlülünden bahsettik.
+
+478
+01:31:36,355 --> 01:31:41,355
+Peki, başka bir şey şimdilik yok gibi gözüküyor arkadaşlar.
+
+479
+01:31:41,355 --> 01:31:45,355
+Pintrları dediğim gibi beklemeyeceğiz.
+
+480
+01:31:46,355 --> 01:31:54,347
+Tamam, başka bir aklıma gelen şey yok. Sorunuz var mı arkadaşlar bugünkü dersimizle ilgili linkli listelerle genel olarak alakalı?
+
+481
+01:31:54,355 --> 01:32:15,475
+Hocam, ben sorabilir miyim bir tane? Tabii. Hocam, şu po, geri, po, ileri iki tane dizi tutuyoruz ya, bunları yarıya kadar doldursak, o zaman alandan hiçbir şekilde şey yapmış olmayız aslında, feragal etmiş olmayız. Yarıya kadar derken ne demek istiyorsun? Yani mesela po'yu nden, n bölü ikiye kadar, diğerini de birden, n bölü ikiye kadar. İleriye, geriye.
+
+482
+01:32:16,851 --> 01:32:41,971
+Olabilir, olabilir ama dediğim gibi yani genelde bu double linkli listlerde ikisi de full dolduruluyor dediğin şey doğru ama burada bazen şey olabiliyor neden? Hani bir elemanın bir öncekine bir sonrakine falan erişmek gerekebiliyor. Anlatabildim mi? Yani atıyorum erişilecek rakama bakıp ya sadece ileriye yönlüğü ya da sadece geriye yönlüğü kullanmak yerine tamam mı?
+
+483
+01:32:42,079 --> 01:32:50,079
+Bazen programların içerisinde bir elemanın kendisinden öncesine ve sonrasına aynı anda erişmek gerekebiliyor. Anlatabildim mi?
+
+484
+01:32:50,079 --> 01:32:51,079
+Anladım hocam.
+
+485
+01:32:51,079 --> 01:32:59,079
+Ama senin dediğin şey, benim anlattığım yani en başta söylediğim senaryo için doğru, iyi fikir.
+
+486
+01:32:59,079 --> 01:33:00,079
+Yani...
+
+487
+01:33:01,171 --> 01:33:19,979
+n'e yakın olanlar için sadece geri yönlüyü kullanmak, 1'e yakın olanlar için sadece ileri yönlüyü kullanmak. Dolayısıyla yarı yarıya bunların bir tanesini birden n bölü 2'ye, ötekisini ise n bölü 2'den n'e kadarki kısımlarını doldurarak kullanmak mümkün pekala. Ama dediğim gibi şey olduğunda…
+
+488
+01:33:20,851 --> 01:33:30,851
+Farklı programlarda farklı ihtiyaçlar olduğunda aynı elemanın bir öncesine ya da bir sonrasına git gibisinden ihtiyaçlar olabiliyor.
+
+489
+01:33:30,851 --> 01:33:37,851
+Bunun için genelde bu ikisi de dolduruyor. Zaten şey de hani, benim bahsettiğim gibi, polo dizilerinin şeyleri çok küçük.
+
+490
+01:33:38,100 --> 01:33:49,100
+Yani dizinin kendisine göre. Memoride kapladıkları alanlar çok çok küçükler. Dolayısıyla bu po dizilerinin harcadığı maliyet böyle korkunç büyük maliyetler falan değiller.
+
+491
+01:33:49,100 --> 01:33:50,100
+Tamam mı?
+
+492
+01:33:50,100 --> 01:33:52,876
+Evet, başka sorusu var mı?
+
+493
+01:33:59,155 --> 01:34:09,068
+Kodu nereden paylaşacaksınız hocam? Dersin sayfasında. Yok bir dakika dersin şeyinde olması lazım zaten bunun. Yanlış hatırlamıyorsam.
+
+494
+01:34:13,140 --> 01:34:26,420
+Yok mu? Bir inceleyin arkadaşlar. Dersin sayfasında şeyde hani kodlar falan vardı ya. Ben de bakayım aslında ama. Evet, o adreste yok mu Muhammed Kayra? Sen kontrol ettin mi?
+
+495
+01:34:29,555 --> 01:34:31,055
+Bakıyorum hocam ben de.
+
+496
+01:34:32,355 --> 01:34:34,355
+Oraya koydum diye hatırlıyorum ben ama.
+
+497
+01:34:39,731 --> 01:34:41,484
+[öğrenci] var demiş.
+
+498
+01:34:49,555 --> 01:35:03,955
+Tamam var, tamam. İki kişi birden var dediğine göre tamamdır. Tek kişi de dese yeter. Neyse, kod var arkadaşlar. Diğim gibi bir tek bu anlattıklarımı biraz ders notu halinde yine bugün içerisinde paylaşırım.
+
+499
+01:35:03,955 --> 01:35:06,555
+Peki arkadaşlar, başka sorusu olan var mı?
+
+500
+01:35:17,011 --> 01:35:32,011
+Peki, o zaman bu haftaki bir sonraki dersimiz, ki son dersimiz olacak. Pointer'ları konular olarak görecek miyiz bu dönem? Hayır, görmeyeceksiniz [öğrenci]. Önümüzdeki dönem göreceksiniz.
+
+501
+01:35:35,011 --> 01:35:40,844
+Orada bir sürü şey var, pointer'lar var, pointer pointer'ları var, fonksiyon pointer'ları var.
+
+502
+01:35:40,948 --> 01:35:45,708
+Mesela, işte bu OneName'in mimarisinin çok güzel özelliklerinden bir tanesi,
+
+503
+01:35:45,708 --> 01:35:52,708
+nasıl ki siz verileri memoriye saklıyorsunuz ve onları istediğiniz yere erişebiliyorsunuz,
+
+504
+01:35:52,708 --> 01:35:56,708
+aynı şekilde kodlar da...
+
+505
+01:35:57,363 --> 01:36:06,663
+Yani fonksiyonlarınızla, programlarınızla aynı memori bölgesinde, aynı memori, aynı yer demeyelim de hani yine memoride saklanıyorlar.
+
+506
+01:36:06,663 --> 01:36:12,963
+Fonksiyonların da işte istediğiniz fonksiyona da pointer'ları aracıyla falan erişmek mümkün oluyor.
+
+507
+01:36:12,963 --> 01:36:21,863
+Dedim ki oldukça güzel konular var orada ama bu dönemin konusu değil onlar. Önümüzdeki yapısal programlama dersinde göreceksiniz.
+
+508
+01:36:25,108 --> 01:36:39,108
+Peki, başka soru var mı arkadaşlar? Önümüzdeki, dediğim gibi, Cuma günü dersimiz var. Cuma günkü dersimizde güzel konular var, böyle biraz potpuri şeklinde.
+
+509
+01:36:39,108 --> 01:36:46,108
+Ama temelde NP tipinde problemlerden bahsediyoruz. Yani çözümü uzun zaman alan problemlerden bahsedeceğiz.
+
+510
+01:36:48,243 --> 01:36:58,743
+Yeteri kadar iyi çözmeye çalışacağız. Birkaç tane örneğini vereceğiz. Kumarbazımız olacak vs. vs. Güzel bir ders olacak diye tahmin ediyorum.
+
+511
+01:36:58,743 --> 01:37:09,243
+Peki arkadaşlar, bugünlük bu kadar. Herkese iyi günler diliyorum. Kısmetse, Cuma'ya görüşmek üzere.
