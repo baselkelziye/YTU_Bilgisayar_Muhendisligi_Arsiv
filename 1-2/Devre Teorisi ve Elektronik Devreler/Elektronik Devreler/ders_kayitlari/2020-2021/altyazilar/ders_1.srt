@@ -1,0 +1,1095 @@
+1
+00:00:54,195 --> 00:00:55,815
+Herkese merhabalar arkadaşlar.
+
+2
+00:01:00,115 --> 00:01:15,896
+Merhaba hocam. Ses iyi geliyor mu? Evet geliyor. Tamamdır. Şimdi biraz daha sınıfın kalabalıklaşmasını bekleyelim. Bir iki dakika sonra açıklamalara başlarız arkadaşlar.
+
+3
+00:01:39,763 --> 00:01:52,623
+Merhabalar, iyi günler. Biraz daha sınıfın kalabalıklaşmasını bekliyorum. Normalde 77 kişiyiz. Sınıfın şu anda yarısı girmiş gözüküyor.
+
+4
+00:01:54,263 --> 00:02:04,323
+Şimdi onları açıklayacağım. 16'ta laboratuvar saatimiz o. Daha o netleşmedi. Yani bu hafta yok. Bu haftaya girmeyeceksiniz arkadaşlar.
+
+5
+00:02:05,908 --> 00:02:22,668
+Laboratuvarlarla ilgili bir duyuru yapacağım. Laboratuvar asistanları netleşsin. Onlar gerekli ekipmanları aynı lojik devrelerde olduğu gibi grup 1, grup 2 diye onların sayfalarından takip edeceksiniz.
+
+6
+00:02:23,955 --> 00:02:33,815
+Onları bir netleştirelim. Zaten ilk haftalarda olmaz laboratuvar. Ondan sonra kaçıncı hafta başlayacaksak, önümüzdeki hafta veya ondan sonraki hafta ben duyuruyu yaparım tekrar size.
+
+7
+00:02:43,187 --> 00:02:49,527
+Evet. Şöyle peşkeçe falan başlayalım arkadaşlar. Kaç kişi gelmişti?
+
+8
+00:04:54,324 --> 00:05:01,783
+Evet, 51 kişi olmuşuz. Dersimize başlayalım artık arkadaşlar. Tekrar merhabalar arkadaşlar.
+
+9
+00:05:06,963 --> 00:05:09,843
+Şu anda bakıyorum. Herhangi bir...
+
+10
+00:05:09,843 --> 00:05:11,684
+Merhaba hocam. Nasılsınız hocam? İyi misiniz?
+
+11
+00:05:12,324 --> 00:05:13,884
+Teşekkür ediyorum. [öğrenci].
+
+12
+00:05:15,843 --> 00:05:29,444
+[öğrenci], şu anda bekleme odasına alacak bir durumumuz yok. Putin Waiting Room'da bekleyen herhangi bir... İlk başta ben yokken belki açmış.
+
+13
+00:05:31,764 --> 00:05:57,283
+Herhalde ben yokken belki girmiştir. Evet, hayırlısıyla artık ikinci döneme başlıyoruz. Aramız geniş oldu, Mart'ta başlıyoruz. Normalde Şubat ortalarına doğru başlıyorduk. İnşallah bu dönem güzel geçer. Sizler için de sağlıklı, sıhhatli geçer. İlk dönem yoğun geçmişti. 2-3 haftalık ara hepimize iyi geldi zannediyorum.
+
+14
+00:05:58,451 --> 00:06:02,012
+Bu dönem Elektronik Devreler dersini beraber işleyeceğiz arkadaşlar.
+
+15
+00:06:02,591 --> 00:06:08,451
+Bu hafta biraz daha temel kavramlara değindikten sonra önümüzdeki haftadan itibaren...
+
+16
+00:06:08,851 --> 00:06:30,192
+Tam zamanlı olarak artık başlıyoruz. Elektronik Devreler sizin seviyenizdeki öğrenciler için dikkatini, takibini verdikten sonra rahatlıkla yüksek notlarla geçebileceği derslerden biri. Donanımın temel kavramlarından bahsedeceğiz bu derste. Temel bir ders olacak. Umarım sizler için de yararlı olur.
+
+17
+00:06:33,459 --> 00:06:36,439
+Hangi alanlara hitap ettiğini biraz sonra tekrar açıklayacağım.
+
+18
+00:06:37,720 --> 00:06:42,000
+Şimdi ilk başta önce bir dersimizi bir tanıtalım.
+
+19
+00:06:42,899 --> 00:06:51,159
+Biliyorsunuz derslerle alakalı olarak ayrıntılı bilgiyi bizim Bolonya sitemimizden görebiliyorsunuz.
+
+20
+00:06:51,879 --> 00:06:54,519
+İki grup halinde açıldı bu dönem bu ders.
+
+21
+00:06:54,519 --> 00:06:58,019
+Birinci grupta ben varım Gökhan Bilgin olarak.
+
+22
+00:06:58,179 --> 00:07:00,120
+İkinci grupta ise Hamza Osman İlhan.
+
+23
+00:07:00,299 --> 00:07:01,419
+Aynı lojik devrelerde.
+
+24
+00:07:01,459 --> 00:07:09,459
+Şimdi burada bakıyoruz hangi konuları işleyeceğiz.
+
+25
+00:07:09,875 --> 00:07:33,336
+Elektronik temel kavramları dediğim gibi arkadaşlar. Temel elektronik elemanlar, diyot, transistörler, BJT ve FET transistörler. Bunların yapılarını anlatacağız. O pump yapılarını öğreneceğiz. Bunlarla alakalı devre analizinden bildiğiniz konuların üst katmanında gerçek zamanlı devrelerin kurulumuyla, analog devrelerin kurulumuyla uğraşacağız.
+
+26
+00:07:37,875 --> 00:07:57,275
+Bir şekilde görüldüğü gibi diyot uygulamalarından bahsedeceğiz. Bol bol soru çözeceğiz. Onun dışında transüstörlerle mesela diyotları işledik diyelim. Diyotlarla ilgili sorular çözeceğiz. Toplu halde soru çözme haftalarımız olacak. O ana kadar görmüş olduğumuz.
+
+27
+00:07:59,283 --> 00:08:24,663
+Dersimizi ben slide'lar üzerinden işleyeceğim arkadaşlar. Demin görmüşsünüzdür belki. Dersimizin slide'ları şu ilk başta gördüğünüz kitabın. Bolsted ve Nischelski'nin Electronic Device and Circuit Teorik kitabı. Şöyle göstereyim ben size. Bu kitap, işleyeceğimiz kitap bu. Slide'lar da bu kitaptan alındı arkadaşlar.
+
+28
+00:08:25,247 --> 00:08:34,867
+Bende PDF'i var ama sizlerin de rahatlıkla bulabileceğini düşünüyorum. İçerisinde bol bol soru çözümleri var. Takibimiz bu şekilde.
+
+29
+00:08:34,867 --> 00:08:52,867
+Bir de bu kitabın arkadaşlar zannedersem elektronik devreler ve elektronik elemanlar ve devre teorisi diye Türkçe bir hali de var. Yani bu kitap aynı zamanda Türkçe'ye de çevrilmiş halini PDF olarak herhalde internetten veya bizim...
+
+30
+00:08:53,248 --> 00:09:14,908
+Kütüphaneden bulabilirsiniz diye umuyorum. Temelde bu kitap. Ondan sonra temin gösterdiğim gibi bu kitabın PowerPoint sunumları var. Ben bunları sizlerle paylaşacağım. Her hafta işlediğimiz konunun PDF'ini sizlerle paylaşacağım. Sizler de rahatlıkla indirebileceksiniz.
+
+31
+00:09:15,860 --> 00:09:36,580
+Bizim geçen dönemden hatırladığınız gibi arkadaşlar, dersle alakalı olarak ödevlerimiz olacak, laboratuvarlarımız olacak. Ondan sonra ben ders duvarına o hafta işleyeceğim PowerPoint slide'larını, örneğin bu haftakini beraberce bir ekleyelim bakalım.
+
+32
+00:09:37,240 --> 00:09:40,580
+Data diyelim, biraz önce çevirmiştim.
+
+33
+00:09:41,556 --> 00:09:53,316
+Bu hafta işleyeceğim konuyun pdf'ini yüklemiş olayım. Böylece elektronik devrelerin birinci pdf'i yüklenmiş olduk. Ders duvarından bunları indirebilirsiniz arkadaşlar.
+
+34
+00:09:55,316 --> 00:10:06,456
+Şimdi dersimizin geçiş notunu nasıl belirleyeceğiz? Şöyle yıl içi yazalım.
+
+35
+00:10:06,864 --> 00:10:33,804
+Yıl sonu yazalım. Yıl içerisinde arkadaşlar, 1- Ödevler, 2- Lap, 3- Vize toplamı. Bunların hepsinin toplamının %60'ı.
+
+36
+00:10:34,292 --> 00:10:42,052
+Yıl sonu ise sadece bir tane finalimiz olacak. Bunun da %40'ı alınacak arkadaşlar.
+
+37
+00:10:42,052 --> 00:11:00,432
+Ödevlerin içerisinde 3-4 tane ödev vermeyi düşünüyorum. Bu ödevler olacak. Vizemiz %30 olacak. Ödevler ve lapsa ikisi beraber %30 olacak. Ağırlıklarını daha sonra belirleyeceğiz.
+
+38
+00:11:01,107 --> 00:11:27,048
+Laboratuvarlarımızın içerisinde artı bir projemiz de olacak. Bunlarla beraber dediğim gibi şu ikisi %30, şurası da %30, vize de %30 etti %60. Şöyle geldik. %60'ı tamamladık. Artı %40'ı da yaptıktan sonra yıl sonu notumuz belli olacak.
+
+39
+00:11:28,052 --> 00:11:44,991
+Ben özellikle sizlerden şunu rica ediyorum. Dersi derste dinlemeye, daha sonra kayıtlardan dinlerim demeyin arkadaşlar. Ders zamanı hiç böyle ertelemeden gelin dersinize çalışın burada. Gerektiği yerde sorularınızı sorarsınız.
+
+40
+00:11:45,524 --> 00:12:03,963
+Soru sorma stilimiz şu şekilde olabilir. Şuradan chatten bir sorun var yazarsanız hem böyle akışı bozmamış oluruz. Mikrofondan ben size sorduğum zaman online olur cevaplarsınız. Chatten de sorunuz olduğu zaman istediğiniz zaman yazabilirsiniz arkadaşlar.
+
+41
+00:12:09,460 --> 00:12:20,880
+Dersimizin tanıtımını aldık. Burada tabii ki 15 haftaya göre yapılmış ama bunun düzeltilmesi gerekiyor. Ama konular dediğim gibi yarı iletken fiziğinden başlayacağız.
+
+42
+00:12:20,880 --> 00:12:34,880
+Diyot modelleri, doğrultu üzerler, zener diyot, lojik diyotlar, hipolar jonksiyonlu transistörler, bunların DC analizleri, ondan sonra işlemsel yükselteşler.
+
+43
+00:12:36,148 --> 00:12:42,628
+İki tane dediğim gibi şurayı bir daha tekrar belirteyim. Bizim kaç tane vizemiz olacak arkadaşlar?
+
+44
+00:12:43,927 --> 00:12:49,108
+Vize bir tane olacak. O da ikinci vize haftası.
+
+45
+00:12:52,211 --> 00:13:12,231
+Yani 12. hafta, 12. hafta diye tahmin ediyorum eğer değiştirmezlerse. Bizim bir tane vizemiz olacak. O da 2. vize haftası olarak bilinen 12. haftadan. Bir de ayrıca 8. veya 9. haftalarda bir vize haftası yapılıyor.
+
+46
+00:13:13,940 --> 00:13:32,860
+Bu vize haftasında dersler olmuyor bildiğiniz gibi. Burada da bir tane, birinci vize normalde, birinci vize buralarda yapılıyor normalde. Fakat bu birinci vize daha önce dersi almış laboratuvar notundan memnun olmayan arkadaşların girebileceği bir vize olacak bu.
+
+47
+00:13:33,135 --> 00:13:56,375
+Dolayısıyla sınıfın çoğunu ilgilendirmiyor. Eğer geçmiş dönemlerde bu dersi almış ve laboratuvar notundan memnun olan arkadaşlar kesinlikle bu vizeye de girmek zorunda değiller. Bunlar lab notu geçmiş dönemlerde alıp da çok düşük olan. Onlar laboratuvara katılmıyorlar belki. İsterlerse katılabilirler de.
+
+48
+00:13:58,451 --> 00:14:09,711
+Onlara böyle bir opsiyon sunuyoruz. Dediğim gibi, asıl bizim tek vizemiz olacak. O da ikinci vize haftası, on ikinci haftada olacak. Evet, soru var mıydı?
+
+49
+00:14:10,992 --> 00:14:12,192
+Hocam, ben soru sorabilir miyim?
+
+50
+00:14:12,591 --> 00:14:12,792
+Tabii.
+
+51
+00:14:14,372 --> 00:14:25,392
+Lab'da proje olacak demiştiniz de, geçen seneki arkadaşlarım almıştı da, diğer gruptaki arkadaşımızla proje yapabiliyor muyuz acaba? Hamza Hoca'nın grubundakiyle. Yani projelere iki kişilik mi oluyor?
+
+52
+00:14:26,035 --> 00:14:52,555
+Şimdi onları belirleyeceğiz biz. Ama farklı gruplardan olmayacak. Çünkü gruplar kendi içerisinde farklı asistanlara atanıyor. Dolayısıyla sistemde online, mesela benim grubumdaki öğrenciler, grup birdeki öğrenciler anca benim sistemdeki dersimde online olabilecekler. Dolayısıyla onlara ben bağlanıp hak verdiğimde, dolayısıyla farklı gruplardan olmaz. Aynı gruptaki insanlar.
+
+53
+00:14:53,172 --> 00:14:55,392
+Birbirleriyle grup olabilecekler arkadaşlar.
+
+54
+00:14:55,912 --> 00:14:56,912
+Tamam, teşekkür ederim.
+
+55
+00:14:57,272 --> 00:14:57,572
+İzledi.
+
+56
+00:14:59,432 --> 00:15:02,072
+Şimdi başka sorusu olan var mı arkadaşlar?
+
+57
+00:15:02,591 --> 00:15:04,372
+Yetenince net açıklamak.
+
+58
+00:15:05,012 --> 00:15:09,711
+Bu vize katılmak için dersi daha önce almış olmak yeterli mi yoksa talepte bulunmamız lazım?
+
+59
+00:15:10,312 --> 00:15:15,892
+Bunu [öğrenci], daha önce almışsan dersi.
+
+60
+00:15:16,340 --> 00:15:27,320
+Ve de birinci vize haftasında yapıyorsan, birinci vize haftasında girmek istiyorsan bu senin seçimin. Tabii daha önceden haber vermen iyi olur arkadaşlar.
+
+61
+00:15:28,019 --> 00:15:45,939
+Bunu beraberce Hamza Hoca da ben de beraber yapacağız. Dediğim gibi bu birinci vize haftasında sadece geçmişte bu dersi alıp laboratuvar notundan memnun olmayanlar için bütün konuları kapsayan bir final kıvamında bir sınav olacak.
+
+62
+00:15:46,772 --> 00:15:58,772
+O yüzden Labnot'u 50-60-70 diyelim. Bu arkadaşların çoğu girmiyor zaten. Genellikle 2-3 kişi şu ana kadar girdi.
+
+63
+00:16:00,272 --> 00:16:04,272
+Şimdi laboratuvarlarla alakalı şöyle bir şey yapabiliriz.
+
+64
+00:16:04,755 --> 00:16:26,275
+Laboratuvarlar normalde beş tane artı bir de proje var ama yoğun geçiyor gerçekten. Lap sayısı dörde inip artı projeye çıkabilir. Ben projenin yapılmasından taraftarım. Bakalım arkadaşlar onu bir netleştirsinler. Onlarla bir müzakere edelim. Arkasından ben laplarda hangi asistan?
+
+65
+00:16:28,563 --> 00:16:32,983
+Hangi siteye bakacaksınız? Hangi hastanın sitesine bakacaksınız?
+
+66
+00:16:33,843 --> 00:16:42,963
+Gibi alınacak malzemeler veya kullanılacak simülasyon programlarıyla ilgili ayrıntılı bilgiyi zaten bizim bundan sonraki dersimiz olan...
+
+67
+00:16:42,963 --> 00:16:44,403
+Şuradan da göstereyim.
+
+68
+00:16:46,683 --> 00:16:47,963
+Şöyle göstereyim.
+
+69
+00:16:48,883 --> 00:16:49,723
+Derslerden.
+
+70
+00:16:50,723 --> 00:16:53,903
+Canlı derse baktığımızda, bakın şurada.
+
+71
+00:16:54,484 --> 00:17:15,784
+Daha başlamamış gözüküyor. Saat 16'da başlayacak bir laboratuvar saati var. Ona da bir asistan atanacak. Laboratuarla alakalı kısımları da tamamıyla ona bağlısınız arkadaşlar. Yani biz sadece laboratuvarlarla alakalı olarak onlara sadece sınıf listesini göndereceğiz. Not listesini geri alacağız.
+
+72
+00:17:19,188 --> 00:17:26,508
+İki hafta resmi tatillerden dolayı dersimiz olmayacaksa biraz daha hızlandırırız. Diğer haftalarda çok sorun değil.
+
+73
+00:17:29,971 --> 00:17:44,672
+Projenin içeriğinde daha çok böyle bir amaca yönelik basit devreler yapılıyor. Çok zor değil. Genellikle rahatlıkla bulunabilecek simülasyonunu yapıp temel çalışma mantığını açıklamanız bekleniyor.
+
+74
+00:17:45,652 --> 00:17:56,652
+Onunla alakalı da bu sene nasıl yapacağız, geçen sene nasıl yapılmıştı onları bir netleştirelim. Projeyle alakalı kısımları daha sonra açıklamamı bekleyin arkadaşlar.
+
+75
+00:17:58,932 --> 00:18:05,612
+Önemli ben. Sizin için şu anda. Evet. [öğrenci] sen sor musun hocam?
+
+76
+00:18:08,331 --> 00:18:10,552
+Hayır, pardon. Yanlışlıkla oldu hocam.
+
+77
+00:18:10,912 --> 00:18:26,032
+Tamamdır. Evet, şimdilik. Evet, evet. Farklı bütün uygulama karısı. Ama ben şöyle bir şey de gördüm. Bu da işimize evli. Eskiden çeşitli workbench gibi ondan sonra
+
+78
+00:18:26,675 --> 00:18:38,056
+Ve çeşitli simülasyon programları vardı. Şöyle CircuitLab diye online simülatörler de gördüm ben. En azından kaynakları mesela şuradan bir başlatalım bakalım.
+
+79
+00:18:39,815 --> 00:18:47,615
+Bu da işimizi görür. Bizim Sketch Simulate Shave diye bir şey var. Güzel. Bu da bizim işimizi rahatlıkla göreceğe benziyor.
+
+80
+00:18:48,615 --> 00:18:53,915
+Online olarak herhangi bir şey kurmadan da burada bakalım.
+
+81
+00:18:54,771 --> 00:19:15,771
+Bir şeyler indirebiliyor muyuz? Çok güzel. Her şeyin web tabanlı olması da güzel olmaya başladı. Herhangi program kurmadan online olarak çıktıkları şeylerin print opsiyonu var mıymış? Print Export PDF de varmış. Çok güzel. Simulate yapalım bakalım.
+
+82
+00:19:22,163 --> 00:19:22,663
+Çok güzel.
+
+83
+00:19:23,403 --> 00:19:24,943
+Şey bağlayabiliyor muyuz bakalım.
+
+84
+00:19:27,104 --> 00:19:27,584
+Burada.
+
+85
+00:19:34,099 --> 00:19:39,019
+Bakalım bir şey var mıymış? Osiloskop falan var mı?
+
+86
+00:19:42,279 --> 00:19:45,059
+Lojik devre kapıları da var. Çok güzel.
+
+87
+00:19:47,539 --> 00:19:50,319
+Osiloskop bakalım burada var mı?
+
+88
+00:19:54,548 --> 00:19:55,468
+Şap.
+
+89
+00:20:03,508 --> 00:20:08,387
+Daha önce bunu kullanmadım ama herhalde bir osloskop vardır diye düşünüyorum.
+
+90
+00:20:09,928 --> 00:20:13,907
+Veya bir yerden şuradan, bak şuradan ürettirebiliyormuşuz.
+
+91
+00:20:14,668 --> 00:20:18,208
+Out diye, yine Out diye prob bağlanan yerler varmış herhalde.
+
+92
+00:20:19,208 --> 00:20:20,228
+Başka şeyler de olur.
+
+93
+00:20:21,347 --> 00:20:22,528
+Evet, onu sen niye güldün?
+
+94
+00:20:29,556 --> 00:20:30,756
+Onun için niye güldü?
+
+95
+00:20:37,172 --> 00:20:51,251
+Proteus mu? Olabilir. Bunu da bir inceleyeyim bakalım. Bu da işe yarar. Proteus var. Elektronik devrelerle alakalı güzel program. Bu iyi gibi geldi bana da. İnşallah yararlı olur diyelim.
+
+96
+00:21:06,516 --> 00:21:20,175
+Elektronik Devre arkadaşlar, temel mühendisliğinde bizim için biraz daha elektronik mühendisliği bölümünden biraz daha çok derin analizlerine girmeden temel kavramları vermeye başlayacağımız bir ders.
+
+97
+00:21:20,175 --> 00:21:25,336
+Şimdi donanım derslerinden, donanım dersleri olarak biz neleri gördük arkadaşlar?
+
+98
+00:21:26,196 --> 00:21:30,175
+Donanım dersleri olarak bir öncelikli olarak...
+
+99
+00:21:31,028 --> 00:21:43,008
+Devre teorisini gördük. Devre teorisini almıştınız değil mi? Devre teorisini aldın mı buradaki arkadaşlar? Almış olması lazım. Tamam. Elektronik devreler var.
+
+100
+00:21:46,644 --> 00:22:11,064
+Lojik Devreler var. Bizim Lojik Devre genellikle birinci dönem dersi oluyor ama aslında bunların yer değiştirmesi çok daha mantıklı olur bence. Elektronik Devreleri önce alsak, Lojiyi sonra alsak çok daha iyi olacak ama böyle bir yanlışlık devam ediyor şu anda. Olsun. Elektronik Devreler dersinden başka bilgisayar donanımı.
+
+101
+00:22:16,468 --> 00:22:23,827
+Ondan sonra bilgisayar mimarisi, gömülü sistemler,
+
+102
+00:22:28,339 --> 00:22:51,779
+Donanmada beraber SM dersleri var. Tabii ki burada, evet. Yarı iletken fiziği de var. Doğru söylüyorsun, doğru söylüyorsun. Yarı iletken fiziği. Şunun biraz daha yarı iletken fiziği biraz daha buna elektronik devrelere bir girizgah yapıyor.
+
+103
+00:22:57,748 --> 00:23:08,587
+İşlemciler dedikten sonra. Artısında bu bize yazılım kısmıyla alakalı bir ara geçişi de neyle sağlıyoruz şurada arkadaşlar? İşletim sistemleri.
+
+104
+00:23:10,996 --> 00:23:28,216
+Değil mi? Artık donanımın kullanılması ilgili. Aslında bazen donanım şurası ile de kesişiyor. Mikro işlemciler şurayla da kesişiyor. Değil mi? Artık yavaş yavaş işletim sistemlerine geldiğimiz zaman artık bunun üzerine neyi inşa etmeye başlıyoruz? Düşük seviyeli diller. Değil mi?
+
+105
+00:23:29,428 --> 00:23:48,768
+Düşük seviye diller. Biraz daha makinenin, yani bilgisayarın donanımsal özelliklerini bilmemiz gereken C gibi, değil mi? Assembly gibi. Ondan sonra bir de bunun üstüne artık yavaş yavaş çıkarak Python gibi yüksek seviyeli diller.
+
+106
+00:23:52,723 --> 00:24:09,264
+Çaba da biraz ara geçiş formunda gibi dillere geçip artık bu kısmı tamamlıyoruz. Ama bu ders sizin için hani pratik olarak nerede yararlı olacak diyecek olursam bilgisayar mühendisliği için. Hepiniz tabii ki veri tabanı yapan bir bankada çalışmayacağınız için.
+
+107
+00:24:19,124 --> 00:24:42,204
+gibi alanlarda çalışacaklar için. Bence temelde devre, nasıl elektrik sinyalleri gelir gider gibi kısımlarda bence yararlı olacaktır sizler için de. Sonuçta biz bir devre kuruyoruz diyelim şöyle. Basit bir devre çiziyorum. Bunu daha sonra daha iyi anlayacaksınız.
+
+108
+00:24:42,996 --> 00:24:54,996
+Şimdi böyle verdim. Buradan da bir çıktısını aldım diyelim şuradan veya out aldım diyelim. Şuradan örneğin artı 5 volt verdiğinizde çıkışta diyelim ki tekrar...
+
+109
+00:24:56,019 --> 00:25:19,060
+Sıfır mı oluşacak, bir mi oluşacak gibi artık dijital bilgileri de bunların üzerinden iletiyor olacaksınız. Böyle dijital çıkışlar oluşturabileceksiniz. Tabii ki bunlar sizin bit dizileriniz olacak değil mi? Siz bu bit dizilerine hafızada artık 8 bite mi saklarsınız, 16 bite mi saklarsınız gibi kafanızda oluşturacaksınız artık yavaş yavaş bunları.
+
+110
+00:25:21,632 --> 00:25:49,312
+Bağlantıları bilmek sizi oldukça avantajlı kılacaktır. Dediğim gibi özellikle savunma sanayinin ondan sonra biyomedikal sanayinin de gelişmesiyle beraber web tabanlı işlerle çalışan arkadaşımız olacak. Database ile çalışan olacak. Kimi bunlar da network ile çalışan arkadaşımız olacak. Kimi de proje yönetisi olacak ama kimi de ne bileyim işte.
+
+111
+00:25:49,632 --> 00:25:58,432
+Biraz daha ASELSAN veya savunma sanayi veya sağlık alanındaki şirketlerde çalışacak diyelim.
+
+112
+00:25:58,432 --> 00:26:06,872
+Orada bu elektronik bilgisi, lojik bilgisi, sistem bilgisi ona oldukça avantajlı hale getirecek durumu.
+
+113
+00:26:07,192 --> 00:26:12,711
+Sonuçta bir programcı ile bilgisayar mühendisinin arasındaki fark nedir diye size sorduğumda,
+
+114
+00:26:13,352 --> 00:26:17,432
+bir programcının yapabildiğini yapabiliyor bilgisayar mühendisi ama...
+
+115
+00:26:17,632 --> 00:26:31,292
+Bilgisayar Mühendisliği bir üst seviye. Hani nasıl biz sistemi, sistem dizayn ederken üst sistemleri dizayn ediyoruz. Bilgisayar Mühendisliği biraz daha geniş kapsamlı olarak konusuna hakim olmasını bekliyoruz.
+
+116
+00:26:32,592 --> 00:26:39,352
+Şimdi buradan bir girizgah yapacağım ama şu ana kadar bir sorusu olan var mı? Önce bir onu almak istiyorum arkadaşlar.
+
+117
+00:26:44,211 --> 00:26:48,172
+Sorusu olan yoksa yavaş yavaş konumuza başlayalım.
+
+118
+00:26:51,112 --> 00:26:54,412
+Evet. [öğrenci] mikrofondan da söyleyebilirsin.
+
+119
+00:26:56,991 --> 00:26:59,552
+Hocam, merhaba.
+
+120
+00:27:00,072 --> 00:27:00,552
+Merhabalar.
+
+121
+00:27:01,011 --> 00:27:09,831
+Ben size slide kullanmanızdan hiç hoşlanmıyorum. Siz yazarak anlattığınız zaman çok daha verim alıyorum. Slide kullanmak zorunda mısınız acaba?
+
+122
+00:27:10,531 --> 00:27:15,211
+Ya benim slide'larım şöyle olacak. Hani göstereyim de biraz da.
+
+123
+00:27:15,991 --> 00:27:26,551
+Benim slide'larım daha çok böyle hani görsel zenginleştirme amaçlı. Bunlar da çok eskimiş. Çok eski mailler falan var. Eskiden Nizamettin Hoca ile beraber veriyorduk.
+
+124
+00:27:29,011 --> 00:27:53,351
+Hazırda olan şeyleri gösterebilmek amacıyla oluyor. Yoksa ben muhakkak şu Blackboard'umu muhakkak, Blackboard değil gel çağırdık değil mi bunlar? Yazı tahtamı da muhakkak açıyorum. Bunun üzerinde anlatmaya çalışıyorum. Hem böyle daha keyifli oluyor. Öğrenci de sıkılmıyor bence. Biraz daha sunumlar benim için görsel bir şeyi vermek için. Aynı burada çizdiğim gibi mesela.
+
+125
+00:27:53,711 --> 00:28:07,831
+Bazı yararlı şeyleri buradan yapmak. Bazı devreleri çizmek yerine devreleri çizip yan tarafını anlatmak şeklinde olacak. Birebir slide anlatımı olmayacak. Aynı lojikteki gibi düşünün. Tamam mı?
+
+126
+00:28:09,531 --> 00:28:10,211
+Tamamdır.
+
+127
+00:28:10,771 --> 00:28:14,391
+Tamamdır. Teşekkür ediyorum. Başka sorusu olan var mı?
+
+128
+00:28:18,451 --> 00:28:43,192
+Yoksa başlayalım dersimize. Bu anlattığım kısım elektronik devreler, lojikte de biraz anlatmıştım. Şimdi aslında burada buraya tam uyan bir konu. Sonuçta bizim bilgisayar mühendisliğinin doğuşu arkadaşlar aslında baktığımızda 1950'li yıllar diyelim. 1950'li yıllar.
+
+129
+00:28:43,571 --> 00:29:02,271
+Düşünebiliyor musunuz? 1950'li yıllardan önce bizim mesleğimizi hayal dahi edemezdiniz. 1950'li yıllarda neyin bulunuşu bizim bilgisayar mühendisliğinin doğuşuna veya hızlanmasına neden oldu? Neyin bulunuşu?
+
+130
+00:29:03,692 --> 00:29:04,871
+Transistörler.
+
+131
+00:29:04,871 --> 00:29:10,831
+Evet, transistör. Doğru söylediniz. Transistörler. Transistörler arkadaşlar.
+
+132
+00:29:13,107 --> 00:29:37,807
+İki amaçla kullanılıyor. Bir, gerilim yükseltici ve de şu binary bir sıfır mantığıyla çalışan binary elektrik devrelerinin çok daha ucuza yapılıp çok daha değişken iklim şartlarında çalışabilmesini sağlar.
+
+133
+00:29:38,259 --> 00:29:58,699
+Bu tarihten önce transistörler yok muydu? Vardı. Şöyle camdan yapılmış. Genellikle şurası camdan olan bir yapı vardı. Altında bir sürü bacağı vardı. Yine bunları yapabiliyordu ama camdan yapılan, hani hatırlar mısınız bazen tüplü radyolar, tüplü radyo denir.
+
+134
+00:30:00,000 --> 00:30:26,960
+Işıklı radyo deniyor. Eski zamanlarda önce bir açardım burası ısınırdı. Bu tüplü bir analog transistör. Önce eski televizyonlarda da mesela ne yapılıyor? Öncelikli olarak. Nükzeliden önce yok mu? Var tabii ki. Isınması bekleniyor. Radyonun ısınması bekleniyor. Tam anlamıyla stabil çalışacak çalışma sıcaklığına gelmesi gerekiyor.
+
+135
+00:30:28,403 --> 00:30:46,443
+Tabii ki var ama yarı iletkenlerle beraber yani silisyum, germanyum gibi basit devrelerinde transistörler artık kullanılabilir hale geldiğinde bir, bunların kullanışsızlığı ne arkadaşlar?
+
+136
+00:30:46,443 --> 00:30:52,763
+Bir, sıcak soğuk havadan çok etkiliyor. Sıcak hava, soğuk hava.
+
+137
+00:30:54,259 --> 00:31:04,100
+Anında camla şey olduğu için fiziksel etmenlerden çok etkileniyor ve çok stabil çalışmıyor. Aşırı sıcak çalıştığında transistör özelliğini kaybedebiliyor.
+
+138
+00:31:04,100 --> 00:31:19,900
+Bütün bunları bir de aslında bütün bu hızlı gelişmeleri tetikleyen de arkadaşlar 1939-1944. Ne bu?
+
+139
+00:31:24,500 --> 00:31:26,160
+Bu tarihler size niye hatırlatıyor?
+
+140
+00:31:31,028 --> 00:31:35,312
+Evet, İkinci Dünya Savaşı. İkinci Dünya Savaşı aslında...
+
+141
+00:31:35,311 --> 00:31:47,111
+Elektronik Devreler, haberleşme, istihbarat, signal processing, image processing, uydu teknolojileri hepsinin birden uçmasına neden oldu.
+
+142
+00:31:47,111 --> 00:32:00,131
+Neden? Çünkü değişik iklim şartlarında daha çok istihbaratla beraber çalışabilecek, taşınabilir elemanların yapılması, kriptografik cihazlarının yapılması.
+
+143
+00:32:00,627 --> 00:32:09,288
+Gibi bir sürü şeye neden oldu. İmkan ve de ekonomi bu yöne kaydı arkadaşlar.
+
+144
+00:32:09,288 --> 00:32:19,288
+Şimdi şurayı, bu neden geldi böyle? Arkasından...
+
+145
+00:32:19,923 --> 00:32:39,803
+Dediğim gibi bunun üzerine olan çalışmalar tetikliyor. 1950'lerde artık biz taşınabilir transistörlü sistemler. Transistör nerede kullanılıyor? Radyo haberleşmesinde, haberleşme, telsiz haberleşmesi. Yani koca bir sandığı taşımak mı önemli yoksa ufacık bir el aletinden konuşmak mı daha mantıklı?
+
+146
+00:32:40,144 --> 00:33:00,583
+Bir askeri lojistik manasında. Bir sürü şey var bunun üstünde. Uydu teknolojileri. Uydularla haberleşiyorsunuz. Siz bunu dağda kuruyorsunuz, sıcak yerlere koyuyorsunuz. Bunlar yan yana bir sürü cam kurduğunuzu düşünün. Bunların ısındığını ve etrafa böyle çılgınca ısı verdiğini düşünün.
+
+147
+00:33:01,364 --> 00:33:12,283
+En sonta bütün bunlar, olumsuzluklar diyelim. Artık silisyum, germanyumla beraber, yarı iletken teknolojisiyle beraber artık çok daha ucuz hale geldi.
+
+148
+00:33:12,283 --> 00:33:19,163
+Hatta ilk Japonlar yaptığında transistörler böyle Sony yapıyor zannedersen.
+
+149
+00:33:19,571 --> 00:33:43,451
+Elde taşınabilir radyolar yapılıyor. Büyük bir devrim oluyor arkadaşlar. Elde taşınan radyo. Belki eskiden babalarınızın falan vardır. Şimdi artık her şey network üzerinden veya şey gidiyor ama cep telefonlarınızda bile şöyle kocaman bir cep telefonunuzda şöyle ufacık bir çip bütün radyonun işini görüyor ama eskiden tabii bunları böyle alıyorlar.
+
+150
+00:33:43,451 --> 00:33:47,511
+Sehpaların üzerine koyuyorlar. Büyük kocaman böyle radyolar.
+
+151
+00:33:47,571 --> 00:34:09,192
+Şurada eski radyoları görmüşsünüzdür. Atina, Sofia, ne bileyim uzak yerlerin uzak dalga için üzerine de şöyle bir dantel de koyuyorlar muhakkak iyi çalışsın diye. Ondan sonra bunları hatırlıyorsunuz. Şimdi geldi ufacık bir çip haline gelmiş durumda. Ondan sonra yavaş yavaş.
+
+152
+00:34:11,539 --> 00:34:21,140
+Arkasından önemli olan bizim için bu transistörler nerede kullanılıyor? En önemlisi bizim mesleğimiz açısından bir dış dünya var.
+
+153
+00:34:22,360 --> 00:34:31,079
+Ondan sonra bu dış dünya, dünyamızı çizdim sözde. Bu dış dünyadaki bir yerinin işlenmesi gerekiyor. Nerede işlenecek arkadaşlar?
+
+154
+00:34:33,268 --> 00:34:50,828
+Bilgisayarda işlenecek. Ben burada bilgisayar diyorum ama şu an sizin elinizde tuttuğunuz cep telefonlarınız, laptoplarınız, tabletleriniz, işlem yapabilen adı üstünde. Biz bilgisayar diyoruz ya aslında bilgiyi saydığımız bir bilgi falan yok.
+
+155
+00:34:50,828 --> 00:34:59,328
+Compute ediyoruz yani hesaplama yapıyoruz. Bir hesaplayıcı aslında bizim kullandığımız şeyde. Compute yapabilen bir birime veriyoruz.
+
+156
+00:35:00,000 --> 00:35:05,000
+Dış dünyadan gelen bilgiler...
+
+157
+00:35:05,820 --> 00:35:07,539
+[öğrenci], soru mu soracaktın?
+
+158
+00:35:10,400 --> 00:35:12,539
+Evet [öğrenci], soru mu soracaktın?
+
+159
+00:35:18,963 --> 00:35:40,264
+Dış dünya verisi dediğimizde, şöyle düşünün, aslında burası analog dünya. Burası sayısal dünya. Analog dünyanın özelliğine sürekli bilgiler var. Sayısal dünyaya girdiğimizde ise ayrık bilgiler var.
+
+160
+00:35:41,644 --> 00:35:46,384
+Sürekli dünya bilgilerinden bahsedelim.
+
+161
+00:35:46,768 --> 00:35:55,588
+Örneğin, ben eğer şu anda sınıfta olsaydım, tabii ben konuşurken size bilgisayarınızın hoparlöründen çıkan ses tekrar analog.
+
+162
+00:35:55,728 --> 00:36:00,108
+Ama bir sınıf ortalama olduğunuz zaman, arada birçok dönüşüme uğruyor falan.
+
+163
+00:36:01,007 --> 00:36:06,048
+Bir sınıfta olsaydık, ben konuşsaydım benim ses sinyallerim şu şekilde olacaktı.
+
+164
+00:36:07,387 --> 00:36:11,347
+Yani zamanda süreklilik arz ediyor.
+
+165
+00:36:12,019 --> 00:36:37,920
+Herhangi bir, zamanın her anında tanımlı. Ufak ufak parçaları ayıramıyoruz. Zamanın her anında tanımlı. Veya bu benim ses sinyelim. Ses, T'ye bağlı bir fonksiyonu. Veya kendi gözlerinizi düşünün şöyle. Kendi gözlerinize baktığınızda, değil mi? Bir ağaç var diyelim. Siz baktığınızda bunu piksel piksel mi görüyorsunuz? Hayır.
+
+166
+00:36:38,643 --> 00:36:56,603
+Piksel kavramı yok gözümüzde. Yani her nokta, nokta demek bile yanlış. Uzamsal olarak her uzayın her alanı dolu gözümüzde. Boşluk yok. Piksel kavramı daha çok sayısal sistemlerde olan bir kavramdır.
+
+167
+00:36:58,612 --> 00:37:08,192
+Başka neyi örnek verebiliriz böyle görmeden bahsediyoruz. Buna en yakın olarak analog fotoğraf makinelerinden bahsedelim mesela.
+
+168
+00:37:08,972 --> 00:37:17,351
+Hatırlar mısınız? Onların filmleri falan vardır şöyle. O filmlere baktığınız mı mesela? O filmlere baktığınızda bunlar mesela bir kağıda tab edilir.
+
+169
+00:37:18,099 --> 00:37:37,439
+Burada da arkadaşlar, her böyle piksel kavramı yoktur klasik fotoğraf makinelerinde. Alırsın, onu büyütürsün. Kimyasal bir solüsyona sahip kağıdın üzerine basılır. O kağıdın üzerinde her alanda tanımlıdır. Her alanda var yani resim bilgisi.
+
+170
+00:37:44,403 --> 00:38:02,423
+Şimdi bizim sayısal sistemimizin bir özelliği var. Nesi var bu sayısal sistemin? Bir mikro kontrolörü veya mikro prosesörü var. Alıp bilgileri işliyor. O bilgileri nereden alıyor? RAM'den, ROM'dan alıyor. Öyle değil mi? Basitçe bahsedecek olursak.
+
+171
+00:38:09,235 --> 00:38:19,415
+Bu RAM bitlerden oluşuyor. Her bir gözü 8 bit olabilir, 16 bit olabilir, 64 bit olabilir.
+
+172
+00:38:19,415 --> 00:38:25,415
+Genişliği, yani buranın genişliği önemli. Bir de nesi önemli bunun? Bir de bunun boyu.
+
+173
+00:38:26,835 --> 00:38:36,415
+512 MB RAM, 1 GB RAM, 8 GB RAM gibi. Yani binanın...
+
+174
+00:38:37,331 --> 00:39:04,051
+Boyu bizim şeyimizi belirliyor. Kaç tane dairemizin olduğunu belirliyor. Değil mi? Mesela 1.24 daire varsa biz ne diyoruz buna? 1 kilo ne diyoruz? 1.24 çarpı artık kaç bitse? 8 bitse. Burası da bunun genişliğini.
+
+175
+00:39:04,628 --> 00:39:20,908
+Belirtiyor. Kaç odası olduğunu belirtiyor. 8 bitlik sistemleri kullandık. 16 bitlik. Şimdi ne var? Standart olarak bizde arkadaşlar ne kullanıyoruz şu anda? 64 bitlik değil mi? Yapılardayız şu anda. Evet.
+
+176
+00:39:22,516 --> 00:39:33,896
+Artık tabii ki bu bilgileri saklayacaksak şayet dış dünya bilgilerinin artık bunun ayrık olmasını bekliyoruz. Artık bu T yerine N geliyor. Yani indisler geliyor.
+
+177
+00:39:33,896 --> 00:39:46,216
+Tabii bunun içerisinde bir sıfır şeklinde saklanıyor ama bir sıfıra geçmeden önce yapılan işlemlerden geçenlerde bahsetmiştim sizlere hatırlarsanız.
+
+178
+00:39:49,715 --> 00:39:53,535
+Ben nasıl buradan buraya geçeceğim? Yani buradaki ilk soru şu.
+
+179
+00:39:54,695 --> 00:40:01,335
+Soru 1. Nasıl ayrıklaşacağım?
+
+180
+00:40:08,148 --> 00:40:23,028
+Ayrıklaşmadaki kriterlerim şunlar. En az bilgi kaybı ve de orijinal bilgiye sadakat.
+
+181
+00:40:30,804 --> 00:40:48,504
+Sonuçta şöyle bir yola çıkıyorum ben. Ben tabii ki şurası bir boyutlu sinyal, bir boyutlu işaret diyelim. Şurada görmüş olduğumuz şey baktığımda iki boyutlu işaret.
+
+182
+00:40:50,036 --> 00:40:59,816
+Ben bunu bir dizide saklayabilirim. Bunu ise bir matriz yapısında saklayabilirim. Bu dizi, array şeklinde saklanabilir.
+
+183
+00:41:01,476 --> 00:41:07,516
+Baktığımda herhangi bir ses işaretimi düşünüyorum. Daha kolay anlayacağınızı düşündüğüm için böyle diyorum.
+
+184
+00:41:08,456 --> 00:41:15,635
+Şimdi ben burada şuna dikkat ediyorum. Tamam ayrıklaştırayım. Ayrıklaştığımı yaparken ne yapacağım?
+
+185
+00:41:16,436 --> 00:41:37,315
+İlk yapacağım şey örnekler almaktır. Örnek alayım. Belli aralıklarla örnek aldım. Burada şuna dikkat etmem lazım. Bakın şu ara geçişlerdeki değişimler benim için eğer önemliyse ve ben bunları kaybediyorsam, değil mi?
+
+186
+00:41:37,844 --> 00:41:43,804
+Burası mesela kaç aralıklı? TS. Diyelim ki TS. Burası da TS.
+
+187
+00:41:45,083 --> 00:41:50,023
+Burası da TS. TS dediğim nedir arkadaşlar? Örnekleme periyodu.
+
+188
+00:41:51,083 --> 00:41:55,203
+TS örnekleme periyodu.
+
+189
+00:41:56,203 --> 00:42:03,063
+Yani belli TS aralıklarla işaretten örnekler alıyoruz. Amacımız da bu.
+
+190
+00:42:03,936 --> 00:42:20,875
+Hafızaya bunları atmak sırasıyla. Şuradaki reme bunları atabilmek, hafızaya onları atabilmek. Fakat işte burada bir dezavantajı var. Orjinal bilgiye sadakat demiştik ya şurada.
+
+191
+00:42:21,652 --> 00:42:44,772
+Onu tam anlamıyla sağlayamadığımızı gördük. Neden? Şuralardaki bilgiler belki çok önemli. Yani bu ses işareti olabileceği gibi biyomedikal bir işaret de olabilirdi arkadaşlar. Veya çok gizli istihbari askeri bir data da olabilirdi. Uydular vasıtasıyla edilmişti ama buradaki temel şey şu.
+
+192
+00:42:44,772 --> 00:42:48,912
+Hemen ikinci sorumuz geliyor. Burada hangi soruyu sormamız lazım?
+
+193
+00:42:49,844 --> 00:42:55,543
+Soru 2. Hangi soru geliyor aklınıza?
+
+194
+00:43:01,588 --> 00:43:15,388
+Evet, TS nasıl seçilmeli? Çok doğru söylenir [öğrenci]. TS'nin genişliği ne olmalı?
+
+195
+00:43:17,188 --> 00:43:24,048
+TS'nin genişliği ne olmalı? Bu önemli bir kavram. Şuradan bir daha çizecek olursam.
+
+196
+00:43:24,848 --> 00:43:28,508
+Bazen de çok sık alabilirim. Bu sefer hiç kaybetmem. Bakın.
+
+197
+00:43:29,139 --> 00:43:52,079
+Çok sık almaya başladım. Çok sık alıyorum. Şimdi çok sık aldığım zaman da bakın bunları kaçırmıyorum. Ama TS aralığım nereye inmiş oldu? Şu kadar olmuş oldu. Yani TS artık demin çizdiğim kırmızılarla çizdiğim kısmı çok daha düşüyor oldu.
+
+198
+00:43:56,563 --> 00:44:07,903
+Trade-off var. Yani hafıza açısından söyleyecek olursak. Şöyle soralım bakalım. [öğrenci] [öğrenci], mikrofonunu aç bakalım.
+
+199
+00:44:12,148 --> 00:44:13,428
+[öğrenci] [öğrenci].
+
+200
+00:44:16,128 --> 00:44:17,608
+Mikrofonunu açar mısın?
+
+201
+00:44:22,835 --> 00:44:33,675
+[öğrenci] [öğrenci] dinliyor musun bizi? [öğrenci] [öğrenci] bizi dinliyor musun? [öğrenci] bizi dinliyor musun?
+
+202
+00:44:39,155 --> 00:44:53,755
+[öğrenci]. Herkes anladığım kadarıyla bilgisayarını açmış, bilgisayarını öğrenmesi için dinletiyor. Bilgisayarlar da öğrensin tabii. [öğrenci].
+
+203
+00:44:58,195 --> 00:45:18,855
+Şimdi bir soru soracağım sana. Şu anlattığım kısımda, TSN'in çok geniş alınmasının avantajı ve dezavantajı nedir? REM'de bilgi sakladığımızı düşünerek söyle. Bir de çok sık aldığımızdaki avantajı ve dezavantajı nedir?
+
+204
+00:45:20,563 --> 00:45:25,483
+Çok seyrek alırsak eğer daha az yer kaplar remde.
+
+205
+00:45:26,043 --> 00:45:26,483
+Doğru.
+
+206
+00:45:27,663 --> 00:45:32,403
+Nasıl desem, kısıtlı bir alanımız varsa çok örnek alamayız.
+
+207
+00:45:32,963 --> 00:45:33,264
+Evet.
+
+208
+00:45:33,923 --> 00:45:40,683
+Yer sıkıntımız yoksa daha sık alıp daha orijinale yakın bir şey çıkarabiliriz.
+
+209
+00:45:40,683 --> 00:45:43,344
+Tamam, çok güzel söyledin. Teşekkür ediyorum.
+
+210
+00:45:44,103 --> 00:45:46,411
+Arkadaşımızın dediği gibi...
+
+211
+00:45:46,516 --> 00:46:00,496
+Sık alma, ben ne kadar bu TSI aralıklarını daraltırsam o kadar benim için avantajlı hale geliyor ama biliyorsunuz bunun ne kadar sık almanın bir altı da yok.
+
+212
+00:46:00,496 --> 00:46:13,616
+Yani daha da sık almak mümkün değil mi? Şu aralara da girebilirim yani. Şu aralara da girebilirim. Öyle değil mi? Yani bunun sonu ne? Yani sonsuza kadar limit.
+
+213
+00:46:14,356 --> 00:46:38,976
+Tse, limit tse, artık limi burada tse'nin ne yapabiliyoruz? Tse neredeyse sıfıra getirebiliriz bunu. Yani sıfır genişliğine, epsilon genişliğine getirebiliriz neredeyse. Demek ki çok sık almanın bir alt sınırı yok. Orijinale kadar gidiyoruz. Orada sınır yok. Tse'yi minimum epsilon kadar kısırtabiliyoruz.
+
+214
+00:46:39,476 --> 00:46:47,115
+Amaç demek ki bunu olabildiğince geniş almak ki sebebi şu. Bizim hafıza kaynağımız kısıtlı.
+
+215
+00:46:48,315 --> 00:46:55,496
+Evet, hafıza kaynağı kısıtlıysa şayet demek ki yapmamız gereken başka bir şey var.
+
+216
+00:46:55,496 --> 00:47:06,795
+Şimdi bunu da demek ki biz bunu olabildiğince geniş alacağız ama şuradaki değişimleri kaçırmayacağız.
+
+217
+00:47:07,284 --> 00:47:13,764
+Anlaştık mı? Bunun bir ölçüsünün olması lazım. Bunun ölçüsü ne acaba?
+
+218
+00:47:15,043 --> 00:47:22,744
+Şimdi burada arkadaşlar Fourier analizi devreye giriyor.
+
+219
+00:47:24,423 --> 00:47:31,711
+Fourier analizi işaretlerin frekansıyla ilgileniyor. Daha doğrusu Fourier analizi...
+
+220
+00:47:31,711 --> 00:47:49,172
+frekans denilen bir kavramdan bahsediyor bizim için. 1800'lerde yaşamış bir matematikçi bunu işaretler için düşünmemiş. Demiş ki herhangi bir matematiksel fonksiyon var demiş. X'te.
+
+221
+00:47:49,172 --> 00:47:57,552
+Şimdi matematiksel fonksiyonu ben bileşenlerine ayırabilir miyim? Bileşenleri nedir demiş.
+
+222
+00:47:58,068 --> 00:48:23,568
+1800'lerden çalışmış bunu. Yani herhangi bir keyfi işareti, keyfi arbitrary diye yazılıyor. Keyfi işaretin ben nasıl bileşenlerini ayırabilirim diyor. Basitçe anlatacak olursam arkadaşlar, şöyle söylüyor Furya'nın herhangi bir işaret.
+
+223
+00:48:25,876 --> 00:48:50,476
+Aslında diyor, eşittir. Farklı sonsuz sayıda, ideal olarak sonsuz sayıda sinizoidal işaretin birleşiminden oluşur. Aralarda nokta koyuyorum. Çünkü frekans da nedir arkadaşlar?
+
+224
+00:48:53,235 --> 00:49:04,996
+Sürekli bir kavram, öyle değil mi? Frekans da sürekli bir kavram. Şöyle basitçe çizdiğimde gidiyor. Yani şöyle çizdiğimde gidiyor.
+
+225
+00:49:06,375 --> 00:49:10,295
+Şimdi burada şuna bir bakacağım ben şimdi.
+
+226
+00:49:10,835 --> 00:49:19,015
+Belki bunu gelecek hafta biraz daha net anlatırım. Şurada öncelikle sinüzoidal işaret kavramından biraz bahsedeyim.
+
+227
+00:49:19,855 --> 00:49:25,895
+Kurya analizinde gelecek hafta itibaren devam edeceğiz ama önce sinüzoidal işareti bir açıklayalım şöyle.
+
+228
+00:49:26,556 --> 00:49:34,175
+Matematik derslerinden de biliyorsunuz. Şöyle XT, T diyelim.
+
+229
+00:49:38,400 --> 00:49:49,040
+Veya Kosünüs şeklinde ifade edilebilir. Sinüs ve Kosünüs aslında aynı fonksiyon. Birbirinin 90 derece kaydırılmış hali.
+
+230
+00:49:50,120 --> 00:49:54,980
+Şimdi bu çizmiş olduğum işaret, Sinüs veya Kosünüs ile ifade edeceğiz.
+
+231
+00:49:55,460 --> 00:50:03,820
+Şu işaretin nesi var arkadaşlar? 1 ve eksi 1 aralığında gidiyor. Öyle değil mi? Normalde.
+
+232
+00:50:04,340 --> 00:50:27,360
+Ama biz bunu belli bir genlikle de çarpabiliriz. Öyle değil mi? 3 sinüs dediğimizde aslında ne oluyor? Saf değil de buranın çarpanın başındaki başı 1 olsa 1 ile eksi 1 arasına giriyor. Ama 3 dediğimiz zaman, 3 kosünüs dediğimiz zaman aslında genel olarak ifade edersek şöyle bir ana genliğinin olması lazım. A ile eksi A arasında.
+
+233
+00:50:28,563 --> 00:50:55,563
+Artı 3 ile eksi 3 arasında, artı 5 ile eksi 5 arasında gibi. Bu özelliği işaretin hangi özelliği arkadaşlar? Genlik özelliği değil mi? A. Şimdi bu işaret sıfırdan geçtiği için buna ne diyelim arkadaşlar? Sinüs müdür, kosünüs müdür bu? Sinüs. Evet, sinüs. Devam edelim. Kosünüs çünkü nedir? Şöyle, şöyle gidiyor.
+
+234
+00:50:56,724 --> 00:51:17,084
+Sinüs, artık şunun içerisini dolduracağım. Bir de bunun nesi var arkadaşlar? Dalga boyu değil mi? Bu bir dalgaysa şayet şöyle. Dalgasının boyu var şöyle. Buna ne deniyor arkadaşlar? T eşittir periyot.
+
+235
+00:51:18,420 --> 00:51:25,519
+Yani dalganın başlayıp kendini tamamladığı ve tekrar devam edeceği kısım.
+
+236
+00:51:26,680 --> 00:51:30,039
+Bu T arkadaşlar aynı zamanda neyi belirtiyor bizim için?
+
+237
+00:51:30,039 --> 00:51:33,700
+T ile frekans arasında nasıl bir ilişki var?
+
+238
+00:51:34,780 --> 00:51:36,820
+Periyot ile frekans arasında.
+
+239
+00:51:40,371 --> 00:51:59,171
+Evet, 1 bölü F, 1 bölü F. Ters bir ilişki var dediğimiz gibi. Evet, 1 bölü F dediğimizde birbirinin tersi. Yani T periyodu, şuradaki T periyodu ne kadar yükselirse frekans o kadar düşer.
+
+240
+00:51:59,603 --> 00:52:05,364
+T ne kadar daralırsa, yani şöyle daraldı diyelim, daha sık kendini tekrar etti diyelim.
+
+241
+00:52:05,943 --> 00:52:08,784
+T düşmeye başladığında ise frekans artar.
+
+242
+00:52:10,003 --> 00:52:16,344
+Burada şu şekilde yazıyoruz. 2PF şeklinde yazılıyor.
+
+243
+00:52:17,724 --> 00:52:24,884
+Şimdi burası aslında şöyle de yazılabiliyor. 2PF T.
+
+244
+00:52:26,099 --> 00:52:50,179
+Şeklinde yazılıyor. Veya aslında burası WT şeklinde de yazılıyor. Yani şuraya W da denilebiliyor. Artı bir kısmı daha var. Biliyorsunuz arkadaşlar, bunun aslında şöyle de olabilirdi bu işaret. Öyle değil mi? Sağa sola kayma parametresi de var. Şöyle sağa sola da kayabiliyor.
+
+245
+00:52:51,443 --> 00:53:04,223
+Sağa sola kaydığı zaman, mesela şu yeşille çizdim şöyle. Merkezden de geçebilirdi. Artı fi diyelim. Yani fi kadar kaymış. Bu fi açıyla genellikle gösterdi.
+
+246
+00:53:05,303 --> 00:53:17,943
+Tamamını mesela bu işaret, şu şekilde olan işaret, şu gördüğünüz kırmızı işaret, şu şekilde geldiği zaman, şu şekilde de olabilir değil mi?
+
+247
+00:53:18,804 --> 00:53:32,623
+Kaçta kaç gitmiş diye düşünüyorsun. Normal periyodun kaçta kaçı kadar gitmiş? Full periyot 2P veya 360 derece diye şey yapılıyor.
+
+248
+00:53:32,623 --> 00:53:42,623
+Dörtte bir periyot gitmişse arkadaşlar, P bölü 2 gitmiştir veya 90 derece ileri veya geri gitmiştir.
+
+249
+00:53:45,664 --> 00:53:55,364
+Bu artı 90 derece gitmesi, pi bölü 2 gitmesi, ileriye doğru gitmesi aslında bir nevi eksisi kosünüs haline dönüşmesini sağlıyor.
+
+250
+00:53:56,004 --> 00:53:58,524
+Veya eğer ben bu fonksiyonu şöyle de yazabilirdim.
+
+251
+00:53:59,264 --> 00:54:10,684
+Kaymış fonksiyonu, eğer 90 derece kaymışsa, a kosünüs 2pi f t şeklinde de, merkezden geçiyoruz, şu yeşil şeklinde de gösterebiliyorum.
+
+252
+00:54:12,403 --> 00:54:37,584
+Basitçe herhangi bir sinizoidal fonksiyonu 3 tane bileşenle gösteriyorum. Genlik, frekans, zamana bağlı olacak tabi ki ve de fas. Yazalım. Sinizoidal fonksiyonlar genlik, frekans ve fas şeklinde 3 tane temel özelliği var bunun.
+
+253
+00:54:38,612 --> 00:55:00,832
+Bizim duvarlarımızda kullandığımız şehir şebekesinden elde ettiğimiz işaret analog bir işaretti ve sinüzoiden bir işaret miydi, DC bir işaret miydi? Onu bir soralım bakalım arkadaşlarımızdan birine. Söylemeyin, yazmayın. Çete de yazmayın. [öğrenci].
+
+254
+00:55:02,835 --> 00:55:09,035
+Sen buradaymışsın. Evet [öğrenci], bizim şehir şebeke frekansımız sürekli mi süreksiz mi?
+
+255
+00:55:09,295 --> 00:55:10,815
+Sürekli.
+
+256
+00:55:11,475 --> 00:55:13,915
+DC mi yoksa şey mi?
+
+257
+00:55:13,915 --> 00:55:14,175
+AC.
+
+258
+00:55:14,755 --> 00:55:18,995
+AC. DC deyince arkadaşlar şöyle bir işaret algılayın bu arada.
+
+259
+00:55:19,507 --> 00:55:43,447
+Herhangi bir sinizoidal işaret değil. Yani F'i sıfır olan işaret. Yani F demek bir şekilde salınım yapması demek. Mesela F eşittiği 1 olsa ne demek bu? Bir saniyede bir salınım tanımlıyor. Yani burada geçen süre T'si 1 demek. Eşittiği 1 bölü F'ten F ne oluyor? 1 oluyor. Yani salınımını, başlangıç ve bitişini...
+
+260
+00:55:43,679 --> 00:55:53,619
+Bir saniye de tamamlıyor. Peki 0.5 olsa bu ne olacaktı? 0.5 olsa ne olacaktı? T0.5 olsaydı frekans ne olacaktı?
+
+261
+00:55:53,619 --> 00:55:56,619
+Evet.
+
+262
+00:55:57,072 --> 00:56:14,811
+T0,5 olsaydı frekans ne olacaktı? 2. Frekans arttı gördünüz mü? Yani T'yi bir saniyede değil de bunun yarısı kadar sürede tamamlasaydı işaret tabii ki iki defa ne olacaktı salınacaktı bu süre boyunca. Frekansın iki kat arttığını söylüyor bizim için.
+
+263
+00:56:23,987 --> 00:56:38,987
+Yani frekansın olmadığını bize gösteriyor. Buna da DC bileşen deniyor arkadaşlar. Bunlar ise demin de size demin Fourier'den anlatmaya çalıştığım frekans önce sıfırdan başlar. Sonsuza kadar...
+
+264
+00:56:39,807 --> 00:56:49,087
+Frekansın sonsuz olduğu yere kadar diyor ki Fourier frekans sıfırdan sonsuza kadar bütün bileşenlerinin toplamından oluşuyor.
+
+265
+00:56:49,227 --> 00:56:57,127
+Tabi arada bazı bileşenler olmayacak, bazıları olacak. Sonsuza kadar da gitmeyecek frekanslar. Her işaret, mesela benim konuşma işaretim.
+
+266
+00:56:57,780 --> 00:57:05,019
+Sonuçta en fazla 4 kHz'lik ses çıkarıyor. 4 kHz'den sonraki frekanslar yok. İçerisinde barındırmıyor bileşen olarak.
+
+267
+00:57:05,820 --> 00:57:17,680
+Demek ki diyoruz benim herhangi bir işaretin bir üst frekans limiti var. Bunun altı ise band olarak kabul ediliyor. Sıfırla nereye kadar çalışıyorsa.
+
+268
+00:57:18,132 --> 00:57:34,112
+Örneğin, insan ses sistemi 0-4 kHz arasında ses çıkarıyoruz. Daha tiz sesler çıkaranlar 5 kHz'e çıkıyordur ama temel kabul 0-4 kHz'dir. Demek ki 0 ile 4 kHz'in arasında...
+
+269
+00:57:34,112 --> 00:57:49,112
+ki frekanslar var. Bunların her biri eşit miktarda yok. Bazıları, mesela bu sesin içerisinde, x, f diyelim frekans olarak, bazı alçak frekanslar daha çok, yüksek frekanslar az, 4 kiloersin.
+
+270
+00:57:49,112 --> 00:58:00,112
+Daha çok düşük frekanslar. Tabi sesimizin karakteristiğini belirleyen aslında bizim şuradaki oynamalar.
+
+271
+00:58:01,556 --> 00:58:06,856
+Sesin özelliği, ses telinin özelliğinden oluşan bileşenler arkadaşlar.
+
+272
+00:58:09,155 --> 00:58:20,275
+Evet, bu haftalık bu kadar diyelim arkadaşlar. Haftaya görüşmek üzere diyelim. Haftaya Furiye serisinden itibaren bu hafta bir girizgah yapmış olduk.
+
+273
+00:58:20,695 --> 00:58:24,956
+Önümüzdeki haftadan itibaren full başlayacağız arkadaşlar. Sizlerin sorusu yoksa...
+
+274
+00:58:25,844 --> 00:58:41,684
+Tekrar görüşmek üzere diyelim. Hepinize iyi hafta sonları diyelim. İyi günler hocam. İyi günler. Kolay gelsin. Önümüzdeki hafta 14.14 full dersimizi işleyeceğiz. İyi günler hocam. Sağ olasınız. Görüşmek üzere. İyi hafta sonları.
