@@ -1,0 +1,2347 @@
+1
+00:00:04,147 --> 00:00:06,147
+Evet, tamam, pekala.
+
+2
+00:00:07,907 --> 00:00:08,907
+Şimdi...
+
+3
+00:00:20,724 --> 00:00:24,044
+Evet, şimdi bakalım. Bakalım, işlemi tıklıyoruz.
+
+4
+00:00:25,323 --> 00:00:28,923
+Sadece tıklıyoruz. Daha hep balance yapıyoruz.
+
+5
+00:00:30,923 --> 00:00:32,811
+Ve haa, geliyorum.
+
+6
+00:00:36,084 --> 00:00:53,884
+Evet arkadaşlar, bu haftaki uygulama dersine hoş geldiniz. Bugünkü uygulama dersini Rukiye hocamız yürütecek. Ben 5 dakika geç kaldım bağlantıyı bulmakta. Özür dilerim. Rukiye hocamıza da gönderdim bağlantıyı. En sıkıntılı katılmaz. Derse başlarız.
+
+7
+00:00:54,771 --> 00:01:08,132
+Bu arada şunu da hatırlatmak isterim. Hafta sonu OBS üzerinden e-posta gönderdim yıldız adreslerinizi. Çarşamba günkü teorik dersi de online olarak yapacağız. Ben katılacağım.
+
+8
+00:01:09,212 --> 00:01:19,611
+Fakat online yaptığımız için dokuzda başlatırız. Böylece biraz daha verimli kullanılır saati. Biraz daha fazla bir şeyler anlatabilirim diye düşünüyorum.
+
+9
+00:01:21,780 --> 00:01:25,099
+Bilginizi tekrar buradaki arkadaşlar da hatırlatın.
+
+10
+00:01:25,879 --> 00:01:26,900
+Bakalım şimdi.
+
+11
+00:01:42,004 --> 00:01:47,404
+İlk daha şimdi kendimi sessize alıyorum arkadaşlar.
+
+12
+00:02:34,451 --> 00:02:43,612
+Evet, Rukiya Hocamız geldi. Şimdi ben onu oturum sahibi yap şeklinde atadım. Evet, öyle gözüküyor.
+
+13
+00:02:43,612 --> 00:02:47,012
+Tamam. Evet Rukiya Hocam, hoş geldin.
+
+14
+00:02:47,012 --> 00:02:51,948
+Evet, bir tek sesini açmayın lütfen. Tamam.
+
+15
+00:02:52,051 --> 00:02:53,791
+Sesim geliyor mu? Merhaba hocam.
+
+16
+00:02:54,391 --> 00:02:57,231
+Geliyor, geliyor. Bana geliyor. İnşallah diğer arkadaşlar da geliyordur.
+
+17
+00:02:57,771 --> 00:03:01,591
+Şimdi katılımcı sayımız daha arttı. Son bir hatırlatma yapıp ayrılayım.
+
+18
+00:03:02,611 --> 00:03:06,991
+Çarşamba günkü dersimizi online yapacağız. Size 9'da başlayacağız arkadaşlar.
+
+19
+00:03:07,451 --> 00:03:12,931
+Hafta sonu bir mesaj göndermiştim. Posta yıldız adreslerinizi buradan da hatırlatmak istiyorum. Teşekkür ederim.
+
+20
+00:03:13,572 --> 00:03:15,731
+Teşekkürler hocam. Size kolay gelsin. Zaman alın.
+
+21
+00:03:15,731 --> 00:03:18,391
+Teşekkürler hocam. Ben ekranımı paylaşayım.
+
+22
+00:03:25,524 --> 00:03:30,524
+Merhaba arkadaşlar. Ekranımı görebiliyor musunuz? Şu an paylaştım ekranı.
+
+23
+00:03:36,307 --> 00:03:48,667
+Tamam, şu an bir PowerPoint açtım. Onu görüyorsanız sıkıntı yok şimdilik. Birkaç dakika bekleyelim arkadaşlarınız gelsin.
+
+24
+00:04:09,300 --> 00:04:13,000
+32 kişiyse hala o zaman başlayabiliriz.
+
+25
+00:04:17,363 --> 00:04:21,524
+Bilgisayarım, şimdi dışarıza takayım bir dakika.
+
+26
+00:04:51,124 --> 00:05:09,163
+Evet arkadaşlar, bugünkü uygulamamızda dinamik memöyö alapasyonuyla alakalı 3 tane soru çözeceğiz. En sonunda lab sorusuna bakacağız. İlk başta ben birkaç tane bu konuyla ilişkili hatırlatma yapmak istiyorum.
+
+27
+00:05:10,516 --> 00:05:23,136
+Şimdi arkadaşlar, biz 5 boyutlu bir diziyi nasıl tanımlıyorduk? Şöyle ilk başta, dinamik memori allokasyonu görmeden önce bu şekilde tanımlıyorduk.
+
+28
+00:05:25,716 --> 00:05:35,235
+Fakat dinamik memori allokasyonuyla da bu şekilde tanımlıyoruz. Bu şekilde tanımlamamızın avantajını bilen var mı?
+
+29
+00:05:41,108 --> 00:05:44,367
+Bilen varsa yazabilir ya da söyleyebilir.
+
+30
+00:05:47,127 --> 00:05:49,827
+Neden dinamik memorallokasyonunu kullanıyoruz?
+
+31
+00:05:51,827 --> 00:05:54,908
+O zaman ben şöyle söyleyeyim arkadaşlar.
+
+32
+00:05:55,207 --> 00:06:03,447
+Şimdi biz bu şekilde, yani yukarıdaki gibi tanımladığımızda, bu yer, hafızada bu yer ayrılıyordu.
+
+33
+00:06:03,587 --> 00:06:07,648
+Biz bunu kullansak da kullanmasak da bu yer ayrılmış oluyordu.
+
+34
+00:06:08,596 --> 00:06:18,196
+Fakat dinamik memori allokasyonuyla biz yer ayırdığımız zaman biz bunu daha sonrasında boşaltabiliyoruz.
+
+35
+00:06:18,196 --> 00:06:28,355
+Bu da yani maliyetin önüne geçmek için veya programımız daha hızlı çalışsın diye, çünkü sınırlı bir belleğimiz var.
+
+36
+00:06:29,495 --> 00:06:36,295
+Yani burada herhangi bir belleksel bir hata olmaması için biz dinamik memori allokasyonu kullanıyoruz.
+
+37
+00:06:36,596 --> 00:06:48,696
+Burada sadece ihtiyacımız olan yeri ayırıyoruz. Daha sonra ihtiyacımız bittikten sonra bu yeri boşaltabiliyoruz. Yani daha verimli bir program oluşturmak için kullandığımız bir şey.
+
+38
+00:06:48,696 --> 00:06:56,735
+Şimdi burada mallocla yer ayırdık. Bu aşağıdaki kod da görebiliyorsanız eğer
+
+39
+00:06:57,331 --> 00:07:10,331
+Bu da bunun farklı bir gösterimi. Aslında bu daha kolay oluyor. Çünkü ben boyutu değiştirmek istediğimde
+
+40
+00:07:10,463 --> 00:07:20,743
+Bu şekilde, yani bu aşağıdaki gibi olan gösterimde daha kolay değiştirebiliyorum. Yani daha iyi bir kullanım oluyor. Bunu da söyleyeyim.
+
+41
+00:07:21,423 --> 00:07:33,704
+Şimdi bu dinamik bellek yönetimiyle alakalı dört tane özel fonksiyonumuz var. Bunun içinde kullandığımız kütüphane, eklememiz gereken kütüphanemiz var.
+
+42
+00:07:34,612 --> 00:07:39,612
+Şimdi bu dört tane özel fonksiyonun
+
+43
+00:07:40,915 --> 00:08:08,915
+Tek tek bir kısaca açıklayayım. Malloc arkadaşlar, hafızada belirttiğimiz kadar yer ayırıyor. Calloc da yine yer ayırıyor ama art olarak bir de sıfırlıyor. Free de ayırdığımız yeri boşaltıyor. Realloc fonksiyonu da malloc ya da callocla ayırmış olduğumuz, yani bellek bölgesini genişletmek ya da daraltmak için kullandığımız fonksiyon.
+
+44
+00:08:08,915 --> 00:08:23,175
+Ralloc fonksiyonu bilmiyorum, hocanız bahsetti mi? Ama bu şekilde dört tane özel fonksiyon var. Bunları kullanabilmemiz için de STD Cip Kütüphanesi'ne eklememiz gerekiyor kodu.
+
+45
+00:08:23,175 --> 00:08:34,096
+Evet, bu şekilde. Şimdi ilk sorumuzla başlayalım. Bu bu kadardı. Kısaca anlatmak istedim.
+
+46
+00:08:36,019 --> 00:08:38,019
+Ekranını paylaşayım.
+
+47
+00:08:39,620 --> 00:08:42,259
+Şöyle yine, şuna.
+
+48
+00:08:52,371 --> 00:08:54,371
+Önce sorumuzu açalım.
+
+49
+00:08:57,371 --> 00:08:59,371
+Soruyu görebiliyor musunuz?
+
+50
+00:09:07,091 --> 00:09:09,932
+Arkadaşlar, soruyu görebiliyor musunuz?
+
+51
+00:09:11,211 --> 00:09:23,971
+Tamam. Şimdi ilk olarak bu soruyu bence bir siz de okuyun. Bir iki dakika süre vereyim. Daha sonra bu soruyu açıklayıp sonra da kod kısmına geçelim.
+
+52
+00:09:48,403 --> 00:09:53,584
+Herkes soruyu okuduysa, şimdi soruyu açıklayalım.
+
+53
+00:09:54,163 --> 00:09:57,564
+Şimdi elimizde 3 tane zar var arkadaşlar.
+
+54
+00:09:58,443 --> 00:10:10,203
+Bu 3 zar beraber atılıyor ve bu 3 zarın üst yüzeyine gelen rakamların toplamını 1. sütuna, matrisin 1. sütununa yazan
+
+55
+00:10:10,203 --> 00:10:15,403
+ve toplamın gelme olasılıklarını da 2. sütuna yazan
+
+56
+00:10:15,711 --> 00:10:17,412
+Programı oluşturacağız.
+
+57
+00:10:18,331 --> 00:10:20,172
+Burada tabi belli kurallar var.
+
+58
+00:10:20,291 --> 00:10:24,892
+Matris ile dinamik bellek allokasyonu ile tanınmamız gerekiyor.
+
+59
+00:10:26,511 --> 00:10:36,251
+Zaten olması gerektiği gibi diyor ki toplam değeri, toplam değerleri, yani bu toplam sütünü unik olsun diyor.
+
+60
+00:10:36,251 --> 00:10:38,251
+Şimdi mesela...
+
+61
+00:10:38,687 --> 00:10:57,127
+3 tane zar attık. 4 gelme durumu nasıl oluyor? 3 farklı senaryoyla toplamı 4 gelebilir. Zarın üst yüzeyine gelen rakamların toplamının 4 gelmesi 3 farklı senaryoyla olabilir. Nasıl olabilir?
+
+62
+00:10:57,687 --> 00:11:06,567
+1-1-2 gelebilir, 1-2-1 gelebilir, 2-1-1 gelebilir. Bu şekilde 3 farklı senaryo olsa da toplamı 4 ise
+
+63
+00:11:06,687 --> 00:11:09,187
+Bunu sadece bir kere yazdır demek istiyor.
+
+64
+00:11:09,708 --> 00:11:11,307
+Yani aslında olması gereken.
+
+65
+00:11:11,307 --> 00:11:12,307
+Bir de...
+
+66
+00:11:12,755 --> 00:11:36,055
+Olasılık değerlerini, yani toplamı 3 tane zarı attı, üst yüzeyine 1, 1, 1 geldi. Bunların toplamı 3. 3 gelme olasılığı nedir? 1 bölü 6 çarpı, 1 bölü 6 çarpı, 1 bölü 6'dan biz toplamının 3 gelme olasılığını hesaplamış oluyoruz.
+
+67
+00:11:40,755 --> 00:12:00,875
+diye direkt bu sayıyı yaz demiyor da, bunu matematiksel olarak kod içerisinde hesaplatıp yap diyor. Bu şekilde olması gereken kurallar böyle. Soruyu anlamayan var mı? Ona göre uygulamaya geçeceğim.
+
+68
+00:12:07,796 --> 00:12:13,236
+Tamam, şimdi uygulama üzerinde de zaten yine anlaşılır eğer bir soru yoksa.
+
+69
+00:12:15,416 --> 00:12:27,976
+Şimdi arkadaşlar, önce kodu tasarlamamız lazım. Yapacağımız şeyleri bir düşünelim. Neler yapacağız? Ondan sonra ilerleyelim.
+
+70
+00:12:27,976 --> 00:12:31,456
+Şimdi ilk olarak matrisi oluşturacağız.
+
+71
+00:12:32,052 --> 00:12:43,512
+matrisin içinde toplamlarımız var, olasılık değerlerimiz var. Bunun için dinamik bellek yönetimiyle matrisi oluşturalım.
+
+72
+00:12:44,292 --> 00:12:50,192
+Sonrasında toplamı ve olasılık değerlerini hesaplayan fonksiyonu oluşturalım.
+
+73
+00:12:50,552 --> 00:12:59,552
+Arkadaşlar, bir de bu kodda şunu yapmak istiyorum ben. Her bir işlemi farklı bir fonksiyonda yazdırmak istiyorum.
+
+74
+00:13:00,659 --> 00:13:26,799
+Yani işte matrisi oluşturma işlemi farklı bir fonksiyonda, toplamı ve olasılık değerlerini hesaplayan işlemi de yine farklı bir fonksiyonda. Sonra matrisi yazdıralım. Bunu da ayrı bir fonksiyonda yazalım. Daha sonra main'de bunları çağıracağız. Ve en son matrisi boşaltalım. Bunu da yapalım.
+
+75
+00:13:27,251 --> 00:13:30,572
+Bu da ayrı bir fonksiyonun olsun.
+
+76
+00:13:32,411 --> 00:13:38,771
+Şimdi ilk olarak bu fonksiyonların isimlerini yazacağım. Daha sonra içlerini dolduracağım.
+
+77
+00:13:41,091 --> 00:13:46,171
+Şimdi başlıyorum o zaman. Önce matresi oluşturacağım fonksiyonu yazıyorum.
+
+78
+00:13:50,388 --> 00:14:15,068
+Flout olarak tanımlıyorum. Çünkü benim değerim ondalık sayılar olduğu için Flout olarak tanımladım. Ve burada dönüş tipim point to point dediğim bir ifade oluyor. Çünkü iki boyutlu bir dizi tanımlıyorum.
+
+79
+00:14:16,436 --> 00:14:28,576
+Şöyle yazayım. Daha sonra siz de eğer daha iyi anlamak istiyorsanız deyimle birlikte yazabilirsiniz. Ve anlamadığınız bir yer olduğunda da mutlaka sorun.
+
+80
+00:14:30,415 --> 00:14:35,576
+Şimdi fonksiyonumun ismi Initialize Maths fonksiyonu.
+
+81
+00:14:36,179 --> 00:14:45,519
+Ve benim parametrelerim nelerden oluşacak? Satır sayımdan ve sütun sayımdan oluşacak. Çünkü ben matris oluşturmak istiyorum.
+
+82
+00:14:58,836 --> 00:15:05,436
+markisi oluşturacağım fonksiyon. Bunun içini daha sonra dolduracağım. Önce şöyle bir ne yapacağımı yazmak istiyorum.
+
+83
+00:15:09,299 --> 00:15:19,079
+Şimdi hesaplama yapacağımız ve bu toplam değerini ve olasılık değerlerini hesaplayacağımız fonksiyonu yazalım.
+
+84
+00:15:19,079 --> 00:15:24,819
+O da, onu da void ile yazıyorum.
+
+85
+00:15:25,439 --> 00:15:27,951
+Çünkü değer...
+
+86
+00:15:27,951 --> 00:15:35,871
+değer döndürmeyecek void ile. Float ile bizim matrisimizi döndürecek de.
+
+87
+00:15:35,871 --> 00:15:46,671
+void yazıyorum çünkü değer döndürmeyecek o sebeple. Ve benim fonksiyonumun ismi de calculatePurve olsun.
+
+88
+00:15:50,035 --> 00:15:55,035
+Bu arada yanlış yazabilirim. Eğer görürseniz mutlaka beni uyarın.
+
+89
+00:15:58,035 --> 00:16:01,035
+Parametremde matrisim olacak.
+
+90
+00:16:04,628 --> 00:16:09,628
+Şimdi bu matrese yazdıracağım fonksiyonunu yazalım.
+
+91
+00:16:12,628 --> 00:16:15,628
+Bu da değer döndürmeyeceği için.
+
+92
+00:16:16,628 --> 00:16:20,628
+Bunun ismi de printprofs olsun.
+
+93
+00:16:21,628 --> 00:16:30,628
+Burada parametrelerim de matresim ve satır sayım olsun.
+
+94
+00:16:39,316 --> 00:16:59,316
+Kafamın sebebi ne yapacağımı bilip, ona göre kafamda her şeyi oturtmak istemem. Tamam. Daha sonra şimdi matrisi, havzada yer ayırmıştık ya mallocla.
+
+95
+00:16:59,796 --> 00:17:14,076
+boşaltacağımız fonksiyonu yazacağım. Yani yukarıda initialize matta ben hafızada yer ayıracağım. Şimdi de burada da matrisi boşaltacağım. Yani serbest bırakacağım.
+
+96
+00:17:16,356 --> 00:17:19,076
+Bunun ismi de frame mat olsun.
+
+97
+00:17:27,316 --> 00:17:29,716
+Keremetrelerinde bu şekilde oluşuyor.
+
+98
+00:17:38,804 --> 00:17:44,564
+Şimdi içlerini dolduralım. İlk olarak şurada matrisi tamamlıyorum.
+
+99
+00:17:48,980 --> 00:17:57,780
+Matrisimiz float tipinden olacağı için float ile yazıyorum ve iki boyutta olduğu için bu şekilde yazdım.
+
+100
+00:17:59,360 --> 00:18:03,940
+Şimdi matrisin satır sayısı kadar malloc ile yer ayıralım.
+
+101
+00:18:13,172 --> 00:18:18,572
+Bu şekilde malloc'un yazı formatı.
+
+102
+00:18:29,140 --> 00:18:33,140
+Şöyle yazayım. Daha sonra açıklayayım.
+
+103
+00:18:36,756 --> 00:18:43,635
+Şimdi flow tipinin büyüklüğü çarpı satır sayısı kadar hafızada yer ayırmak istedik.
+
+104
+00:18:44,816 --> 00:18:48,396
+Şimdi ne yapacağız? Bellek değer olup olmadığına bakacağız.
+
+105
+00:18:49,036 --> 00:18:54,076
+Eğer hafızada yer yoksa bize bir uyarı mesajı dönsün isteyelim.
+
+106
+00:19:12,819 --> 00:19:15,839
+Bellek ayrılamadı. Mesajı dönsün.
+
+107
+00:19:32,500 --> 00:19:33,500
+dan çiçin.
+
+108
+00:19:41,875 --> 00:19:44,596
+Şimdi satır sayısı kadar yer ayırdık.
+
+109
+00:19:46,415 --> 00:20:00,175
+Burada if kısmında bellekte yer varsa if bloğuna girmesin ve satırları dolaşarak kalım sayısı kadar yer ayırsın istiyoruz.
+
+110
+00:20:00,175 --> 00:20:02,175
+Bunun için de
+
+111
+00:20:03,859 --> 00:20:25,679
+Yine yazalım şöyle for döngümüzle satır sayısı, sütün sayısı kadar da yer ayır. Yani ilk başta satır sayısı kadar yer ayırdık mallocla. Bunu da isterseniz callocla ayıralım. Yani sütün sayısı kadar da callocla ayıralım.
+
+112
+00:20:34,771 --> 00:20:36,771
+Sonra şöyle alsamıyorum.
+
+113
+00:20:51,028 --> 00:20:55,028
+Biraz anlatırken yavaş yazıyorum, kusura bakmayın.
+
+114
+00:20:56,028 --> 00:21:01,028
+Çünkü bir hatam da etif olsun istemiyorum daha sonra uğraşmayalım diye.
+
+115
+00:21:04,028 --> 00:21:09,028
+Şimdi mat matrisini...
+
+116
+00:21:13,140 --> 00:21:22,539
+Calloc'la yer ayıracağım. Bunun yazılımı malloc'a göre biraz daha farklıydı. İki tane parametre alıyordu.
+
+117
+00:21:45,140 --> 00:22:03,660
+Şimdi toplam sütunumuz kaçtan başlıyordu? Soruda 3'den başlıyordu. Çünkü en fazla, yani en az toplam 3 olabilir. 3'den 18'e kadar. Ancak bizim kaç tane satınımız vardı? 15 satınımız vardı. Dolayısıyla onu da şu şekilde yazıyorum.
+
+118
+00:22:18,644 --> 00:22:24,644
+Bu şekilde ayarladık. Yani matrisin 0. sütününü i artı 3 yaptım.
+
+119
+00:22:26,644 --> 00:22:29,043
+Kısaca burada ne yapmış olduk?
+
+120
+00:22:29,443 --> 00:22:33,443
+Burada şey de yapalım. Return de döndürelim.
+
+121
+00:22:35,043 --> 00:22:38,028
+Şöyle matris döndürelim.
+
+122
+00:22:39,539 --> 00:22:46,539
+Kısaca şimdi ne yapmış olduk arkadaşlar? Matrisi oluşturduk. Matris için hafızada yer ayırmış olduk.
+
+123
+00:22:48,539 --> 00:23:00,899
+Şimdi de şu fonksiyonda toplamı ve gelme olasılıklarını hesaplayan fonksiyonun içini dolduralım.
+
+124
+00:23:02,420 --> 00:23:19,820
+Şimdi toplamı hesaplamak için 3 tane zarımız vardı. Bu zarı, yani 3 tane olduğu için 3 tane iç içe for kullanmamız gerekiyor. Çünkü her bir zar için 1'den 6'ya kadar rakamın gelme olasılığı var.
+
+125
+00:23:23,284 --> 00:23:27,284
+Burada yukarda şey de tanımlamışım arkadaşlar.
+
+126
+00:23:27,284 --> 00:23:34,284
+İyi, onu da tanımlayalım. For içinde kullandığım zaman. Bunu da söyleyeyim. Bakayım.
+
+127
+00:23:35,284 --> 00:23:42,284
+Ha, burada en column yazdım. Calloc en column.
+
+128
+00:23:43,284 --> 00:23:44,284
+Doğru.
+
+129
+00:23:47,859 --> 00:23:50,640
+Şurayı yanlış yazmışım.
+
+130
+00:23:50,640 --> 00:23:52,079
+Şimdi de rüzelttim.
+
+131
+00:23:52,759 --> 00:23:54,160
+Teşekkürler.
+
+132
+00:23:58,579 --> 00:24:06,259
+Evet, şimdi üç tane iç içe for kullanacağım için üç tane değişken tanımlıyorum.
+
+133
+00:24:07,939 --> 00:24:12,259
+Ve bir de toplamı tutacağım değişkeni tanımlıyım.
+
+134
+00:24:14,579 --> 00:24:15,243
+Şöyle.
+
+135
+00:24:18,740 --> 00:24:21,819
+Şimdi üç tane iç içe formumuzu oluşturalım.
+
+136
+00:24:24,379 --> 00:24:27,440
+Hatta şöyle yapayım ben direkt şuradan.
+
+137
+00:24:34,867 --> 00:24:40,867
+Burada Enroll değil de bu 6'ya kadar bitecek. Çünkü en fazla 6 gelebilir.
+
+138
+00:24:42,867 --> 00:24:46,867
+Ancak bu eşit de olacak. Çünkü 6 da gelebilir.
+
+139
+00:24:48,867 --> 00:24:52,867
+Daha sonra tekrardan bunu alayım.
+
+140
+00:24:59,380 --> 00:25:01,380
+Bu daşi, bunlar da genel olsun.
+
+141
+00:25:06,579 --> 00:25:10,539
+Evet, bir dakika, bilden başlatacağım.
+
+142
+00:25:16,115 --> 00:25:18,115
+Orayı düzelttim arkadaşlar.
+
+143
+00:25:20,115 --> 00:25:23,115
+Şunları da düzelttim iyice k.
+
+144
+00:25:42,804 --> 00:25:43,744
+Ne oldu herhalde?
+
+145
+00:25:46,364 --> 00:25:52,684
+Şimdi toplamını nasıl hesaplıyoruz? Direkt top eşittir.
+
+146
+00:25:53,224 --> 00:25:55,704
+I artı J artı K.
+
+147
+00:26:00,403 --> 00:26:15,403
+Gelme olasılığını da nasıl hesaplıyoruz onu da yazayım daha sonra tekrar üstünden geçeceğim. Top eksi 3 diyorum çünkü en fazla 18'de.
+
+148
+00:26:35,923 --> 00:26:38,324
+alt, turp, alt, turp, alt.
+
+149
+00:26:43,124 --> 00:26:58,804
+Şimdi, tekrar söylüyorum. Bizlerde 6 tane yürzey var. Hepimizin ilgili. Ve 6 tane rakamın gelme olasılığı da var. 1'den 6'ya kadar. Ancak bir tanesi gelebiliyor.
+
+150
+00:26:59,092 --> 00:27:05,412
+Her bir zar içinde gelme olasılığı 1 bölü 6.
+
+151
+00:27:08,132 --> 00:27:14,211
+3 zar için nasıl hesaplarız? 1 bölü 6 çarpı, 1 bölü 6 çarpı, 1 bölü 6 olarak hesaplıyoruz.
+
+152
+00:27:15,832 --> 00:27:20,912
+Bu şekilde gelme olasılığını da hesaplamış oluyorum.
+
+153
+00:27:21,231 --> 00:27:32,751
+Burada matrisimizin top sütunu 3'den başladığı için, yani 3'den 18'de gideceği için, çünkü toplam en az 3 olabilirdi.
+
+154
+00:27:32,751 --> 00:27:43,072
+En fazla da 18 olabilir. Ancak 15 satırımız var. Bu şekilde o sebepten buraya top eksi 3 yaptım. Burayı anlamışsınızdır.
+
+155
+00:27:44,756 --> 00:27:50,996
+Bu şekilde olasılığı hesaplayıp birinci sütuna atama yapmış olduk.
+
+156
+00:27:52,516 --> 00:28:00,696
+Şimdi en içteki for K eşittir 7 olana kadar en içteki forun içinde dönecek.
+
+157
+00:28:01,976 --> 00:28:07,596
+Daha sonra 7 olduktan sonra buradan çıkacak ikinci for döngüsüne girecek.
+
+158
+00:28:07,596 --> 00:28:09,036
+Yani J'ye girecek.
+
+159
+00:28:12,980 --> 00:28:16,180
+en dıştaki for'a, for'a dönecek.
+
+160
+00:28:16,799 --> 00:28:20,319
+E7 olana kadar toplamı hesaplayacak.
+
+161
+00:28:21,660 --> 00:28:25,120
+Sonra da bildim, olasılıkları hesaplamış olacak.
+
+162
+00:28:27,092 --> 00:28:44,432
+Tamam, bu şekilde. Şimdi toplamı ve olasılıkları da yazdırdık. Bakıyorum, burada anlaşılmayan bir şey var mı? Yok sanırım. Çünkü dinleysen yok. O zaman şimdi biz matrisi yazdıralım.
+
+163
+00:28:51,604 --> 00:29:00,724
+Buraya, en yukarıya bir tane printfable toplam ve olasılık değeri diye bir şey yazalım.
+
+164
+00:29:31,892 --> 00:29:33,892
+Şimdi matresi yazdıralım.
+
+165
+00:29:36,492 --> 00:29:39,312
+Yani toplamı ve olasılığı yazdıracağız.
+
+166
+00:29:40,092 --> 00:29:47,252
+Burada da satır sayısı kadar matresin 0. sütununu ve 1. sütununu yazdıracağız.
+
+167
+00:29:47,471 --> 00:30:00,591
+Onun için yine for döngüsüne ihtiyacım var ve iyi değişkenimi tanımlıyorum. Satır sayısı kadar dediğim için yani satırlarda dolaşacağım için şunu da yine yukarıdan şöyle anlayayım.
+
+168
+00:30:11,635 --> 00:30:18,635
+Burada matrisin birinci sütununu ve ikinci sütununu, yani sıfırıncı ve birinci sütununu yazdıralım.
+
+169
+00:30:23,347 --> 00:30:25,347
+Yüzdefeye omno.
+
+170
+00:30:29,971 --> 00:30:31,468
+Şimdi şöyle yapalım.
+
+171
+00:30:34,900 --> 00:30:37,620
+Ters sol, ön yapalım burayı da.
+
+172
+00:30:45,332 --> 00:30:48,152
+matrisin ilk sütunu
+
+173
+00:30:53,587 --> 00:30:56,388
+ve ikinci tutuğunu da yazdıralım.
+
+174
+00:31:07,220 --> 00:31:10,740
+Bu şekilde matresimizi de yazmış olduk.
+
+175
+00:31:15,284 --> 00:31:27,604
+Şimdi de bu fonksiyonda hani yukarıda malloc ve callocla satır sayısı kadar ve satır sayısı kadar yani matrizimizi kadar bir yer ayırmıştık.
+
+176
+00:31:27,964 --> 00:31:29,704
+Şimdi de onu boşaltacağız.
+
+177
+00:31:40,756 --> 00:32:01,776
+satır sayısı kadar dediğim için, satırlar da dolaşıyorum. Şurayı yine alayım. Önce satırları boşaltacağım. Kuşlu parantezlerde inşallah bir hatam olur. Ve önce matrisin satırlarını boşaltıyorum.
+
+178
+00:32:14,420 --> 00:32:18,420
+Sonra da kendisini boşaltalım yani serbest bırakalım.
+
+179
+00:32:26,003 --> 00:32:27,604
+Şu anlık bir sıkıntı yok.
+
+180
+00:32:37,491 --> 00:32:45,771
+Şimdi arkadaşlar, bunları main'de test edelim. Matrisimizi yazıyorum.
+
+181
+00:32:51,124 --> 00:32:57,484
+satır sayımı ve sütun sayımı giriyorum.
+
+182
+00:33:07,028 --> 00:33:09,707
+Tüm sayımını da 2
+
+183
+00:33:13,971 --> 00:33:22,852
+Şimdi ilk başta madresimi oluşturdum. Fonksiyonu yazarak madresimi oluşturmuş oluyorum.
+
+184
+00:33:27,988 --> 00:33:30,148
+parametreleri ile birlikte yazıyoruz.
+
+185
+00:33:40,756 --> 00:33:46,436
+yazdırma fonksiyonunu da, yani matisi yazdırma fonksiyonunu da yazıyorum.
+
+186
+00:33:56,692 --> 00:34:18,931
+Bunu ilk başta matresi yazdırıyorum. Sonra hesaplama yapıp tekrar yazdırmak istiyorum. Onun için tekrardan print edeceğim şimdi. Print fonksiyonunu yazacağım. Hesaplama işlemi yaptım. Fonksiyonu da yazdım. Tekrardan yapıp çağırabilirim bu print kuruvu.
+
+187
+00:34:24,467 --> 00:34:33,827
+ve hafızayı boşalttığım fonksiyonu da yazıyorum.
+
+188
+00:34:41,748 --> 00:34:48,748
+Son olarak return 034. Ha o vardı zaten.
+
+189
+00:34:52,532 --> 00:34:59,092
+Şimdi bir çalıştıralım. Umarım bir üstü parantez vesaire bir şeyim yoktur.
+
+190
+00:35:00,092 --> 00:35:02,932
+Şurada bir şey yapmışım. Ha şimdi.
+
+191
+00:35:04,132 --> 00:35:06,132
+Stringir yapacaktım.
+
+192
+00:35:08,132 --> 00:35:09,771
+Burada
+
+193
+00:35:10,572 --> 00:35:14,492
+Print Probe. Print Probe's değil mi?
+
+194
+00:35:16,892 --> 00:35:17,892
+Haa.
+
+195
+00:35:17,892 --> 00:35:18,892
+Şey.
+
+196
+00:35:19,219 --> 00:35:24,500
+parametriklemi eksik yapmışım. Matt ve Enroll olacaktı.
+
+197
+00:35:29,588 --> 00:35:31,268
+Birinde de duzanki.
+
+198
+00:35:41,268 --> 00:35:44,347
+0, free yaptığımız için mi?
+
+199
+00:35:46,068 --> 00:35:49,047
+Yok, 3 doğru, tamam, doğru sonuç.
+
+200
+00:35:49,188 --> 00:35:54,827
+Çünkü bu ilk sütunum, 3, 4, 5, 18'e kadar bu ilk sütunum.
+
+201
+00:35:54,827 --> 00:35:59,587
+Daha sonra olasılık değerlerini yazdırdık.
+
+202
+00:36:00,448 --> 00:36:03,148
+Sorudaki gibi, soruyu da açayım.
+
+203
+00:36:03,967 --> 00:36:06,827
+0.0046'ydı.
+
+204
+00:36:07,507 --> 00:36:18,947
+0.0046. Ondalık olarak yazdırdığımız için bu şekilde yazdırdık. Şurayı %f ile değil tam sayı olarak da yazdırabiliriz.
+
+205
+00:36:18,947 --> 00:36:32,707
+O da sizin yapabilirsiniz isterseniz. Evet arkadaşlar, bu soruda anlaşılmayan bir şey var mı? Ona göre eğer sorunuz varsa
+
+206
+00:36:34,963 --> 00:36:37,943
+Bakalım, yoksa da diğer soruya geçelim.
+
+207
+00:36:40,523 --> 00:36:42,523
+İsterseniz bir özetleye de bilirim.
+
+208
+00:36:46,324 --> 00:36:48,364
+Sanırım bir problem yok.
+
+209
+00:36:50,144 --> 00:36:54,123
+En azından bir kişi problem yok yazarsa diğer soruya geçeyim.
+
+210
+00:36:59,380 --> 00:37:26,200
+Özetleyebilir misiniz? Evet, özetlerim. Şimdi soruyu açarak, şimdi bizim bizden soruda bir matris oluşturmamız isteniyor. Tabi buna dinamik memorial lokasyonu ile oluşturmamız isteniyor. İlk sütun bizim üç tane zarı attığımızda üst yüzeyine gelen rakamların toplamını ifade ediyor.
+
+211
+00:37:27,380 --> 00:37:32,380
+Bu için her birine en az bir gelirse toplam en az bir olacak.
+
+212
+00:37:32,884 --> 00:37:44,104
+O yüzden toplam sütunumuzun ilk elemanı 3'tü ve 18'e kadar toplam oluşabilir. Yani 6-6-6 gelirse de en fazla 18 olabilir.
+
+213
+00:37:44,104 --> 00:37:56,463
+Diğer sütun da toplamının gelme olasılığını ifade ediyordu. Bunu da kod üzerinde fonksiyonları da kullanarak
+
+214
+00:37:57,748 --> 00:38:15,748
+İlk fonksiyonumuz Initialize Mat fonksiyonuydu. Bunun içinde biz matrisimizi oluşturduk. Oluştururken önce satır sayısı kadar mallocla yer ayırdık. Sonra da sütunlar için yer ayırmış olduk.
+
+215
+00:38:17,972 --> 00:38:45,592
+Daha sonra bu hesaplama işlemini yaptık. Hesaplamada da toplam değerini hesapladık ve toplamın gelme olasılığını da bu şekilde hesapladık. 3 tane zarımız olduğu için 3 tane iç içe for kullandık. Sonra biz matrisi yazdırma fonksiyonumuzu yazdık. Burada matrisin 0. sütununu ve 1. sütununu yazdırdık.
+
+216
+00:38:46,547 --> 00:39:03,907
+En son biz matrisimiz için ayırdığımız yere malloc ve calloc ile yer ayırmıştık ya onları en son boşalttık. İlk önce satırları boşalttık sonra matrisini tamamı boşaltmış olduk.
+
+217
+00:39:04,371 --> 00:39:15,131
+Bu şekilde main'de de bunları çağırmış olduk. İşlemlerimiz bu şekilde tamamlandı. Şimdi diğer soruya geçiyorum eğer başka soru yoksa.
+
+218
+00:39:19,188 --> 00:39:24,188
+Şimdi, diğer soruyu önce anlatayım.
+
+219
+00:39:26,188 --> 00:39:33,347
+Evet, üçüncü soruyu herkes görüyor mu? Görebiliyorsanız bir evet yazabilirseniz.
+
+220
+00:39:41,652 --> 00:39:51,652
+Tamam. Bunu da arkadaşlar şöyle bir iki dakika size süre vereyim. Bunu da bir okuyun. Daha sonra ben açıklayayım.
+
+221
+00:40:46,036 --> 00:40:50,355
+Şimdi ben açıklayayım isterseniz.
+
+222
+00:40:55,155 --> 00:41:01,435
+Şimdi ilk olarak kullanıcıdan pozitif bir n sayısı isteniyor.
+
+223
+00:41:02,755 --> 00:41:18,536
+Daha sonra calloc fonksiyonu kullanarak iki eleman için, yani boyutumuz ilk başta iki olacak, iki eleman için hafızada yer ayıran bir dizi oluşturacağız. Tek boyutlu bir dizi.
+
+224
+00:41:22,963 --> 00:41:36,804
+Şimdi kullanıcıdan okuduğumuz bu N tam sayısını bir değeri elde edilene kadar f fonksiyonla uygulayacağız.
+
+225
+00:41:40,467 --> 00:41:49,108
+elde edilen her değeri de biz dizimize ekleyeceğiz. Burada gördüğünüz gibi arkadaşlar.
+
+226
+00:41:49,108 --> 00:42:05,188
+Mesela N kullanıcıdan istediği sayı 13 olsun. Başlangıçta sayımız 13. Dizimizi oluşturduk. İlk eleman 13'tü.
+
+227
+00:42:06,260 --> 00:42:32,260
+Tek sayı olduğu için 3 katının bir fazlası oluyor fonksiyona soktuğumuzda yani 40 oluyor. Sonra 40'ı yazdık dizimize. Sonra 40 çift sayı olduğu için 2'ye böldük 20. Sonra çift de olduğu için 2'ye böldük 10. Sonra 5 tek olduğu için yerine koyduk 16. Böyle böyle.
+
+228
+00:42:32,307 --> 00:42:39,427
+Bir olana kadar bu tekrarlı funksiyona sokmuş olacağız biz bunu.
+
+229
+00:42:40,887 --> 00:42:43,788
+Fakat burada dikkat etmemiz gereken bir şey var.
+
+230
+00:42:44,208 --> 00:42:46,387
+Boyut en başta ikiydi.
+
+231
+00:42:46,387 --> 00:42:55,387
+Diyor ki soruda, burada dizinin eleman sayısı ikiyi geçtiğinde, yani boyutu...
+
+232
+00:42:55,539 --> 00:43:22,420
+Yani dizi dolduğunda boyutu diyor realloc fonksiyonunu kullanarak iki katına çıkar. Şimdi burada görüyoruz mesela ilk başta boyut 2 idi. İki tane eleman olduğunda dizide boyut 4'e çıktı. Böyle böyle dolduktan sonra yani hem dolduğu esnada boyutu hemen iki katına çıkarmış oluyor.
+
+233
+00:43:23,092 --> 00:43:36,731
+Yani mesela 8 iken direkt mesela 8 tane oldu şurada. Bakayım aynen şu 8. adımda 8 tane oldu. Boyutu direkt 2 katına çıkardık. Bu şekilde.
+
+234
+00:43:36,731 --> 00:43:48,432
+En sonunda bu diziyi ve hafızada kapladığı alanı eleman sayısını ekrana yazdıracağız. Bu şekilde.
+
+235
+00:43:49,652 --> 00:43:55,891
+Bunları ekrana yazdıracağız ve sepet dizimizi de en son boşaltacağız.
+
+236
+00:43:57,192 --> 00:44:01,672
+Soruyu anladınız mı? Anlamadıysanız yazabilirseniz eğer.
+
+237
+00:44:18,579 --> 00:44:27,699
+Tamam, o zaman ben uygulamaya geçiyorum. Anlamadıysanız tekrar anlatabilirim, soruyorum tekrar da.
+
+238
+00:44:31,123 --> 00:44:39,003
+Zaten dersin kaydı olacak. Daha sonra da izleyebilirsiniz. Ama şu anda sorabilirsiniz.
+
+239
+00:44:39,903 --> 00:44:46,543
+Ben yazarken siz de yazı yazarsanız eğer daha etkili olmuş olacak.
+
+240
+00:44:46,543 --> 00:44:49,603
+Şimdi bunları sileyin.
+
+241
+00:45:08,916 --> 00:45:21,916
+İlk olarak ne yapacağız arkadaşlar? Bu sefer ben fonksiyon değil de bu sefer main'in içinde yapmak istiyorum işlemlerini.
+
+242
+00:45:22,916 --> 00:45:27,916
+İlk olarak kullanıcıdan pozitif N tam sayısını isteyeceğiz.
+
+243
+00:45:28,916 --> 00:45:31,916
+Bunu da nasıl yapabiliriz?
+
+244
+00:45:33,108 --> 00:45:37,108
+Pozitif girene kadar sayı isteyebiliriz.
+
+245
+00:45:38,608 --> 00:45:41,108
+Bunu mesela dual ile yapabiliriz.
+
+246
+00:45:41,807 --> 00:45:47,307
+Bu şekilde deneyelim. Önce N sayısını tanımlayalım.
+
+247
+00:45:50,248 --> 00:45:59,288
+Daha sonra dual'dan, pozitif kullanıcıdan pozitif sayı girmesini isteyelim dual ile.
+
+248
+00:46:07,860 --> 00:46:09,860
+Evet.
+
+249
+00:46:46,228 --> 00:46:49,108
+Şimdi yazayım hemen şöyle bir tüm.
+
+250
+00:47:09,108 --> 00:47:14,148
+Pozitif sayı girene kadar kullanıcıda sayı istiyoruz bu şekilde.
+
+251
+00:47:15,348 --> 00:47:19,548
+Şimdi daha sonra ne yapalım?
+
+252
+00:47:20,348 --> 00:47:26,388
+Yani bu dizimiz için hafızada callocla yer ayıralım.
+
+253
+00:47:26,948 --> 00:47:28,668
+Bu zaten soruda da vardı.
+
+254
+00:47:31,488 --> 00:47:34,028
+Dizimizin ismi A olsun.
+
+255
+00:47:34,168 --> 00:47:36,428
+Yani sepet dizisinin ismi A olsun.
+
+256
+00:47:41,300 --> 00:47:45,699
+Şöyle şimdi dizi için hafızada yer ayırıyorum.
+
+257
+00:47:57,396 --> 00:48:03,396
+Bu hem yer ayırmış olacak hem de sıfırlanacak.
+
+258
+00:48:11,731 --> 00:48:32,731
+Şimdi bir de benim boyutum vardı. Boyutumda yani sepetin kapasitesi, dizinin kapasitesinin kaç eleman olduğunu tutan bir değişken tanımlayalım. Buna da current land diyelim.
+
+259
+00:48:45,588 --> 00:48:55,347
+kullanıcının girdiği ilk sayı olan N'yi diziye eklemek için önce yazdıralım. Prim tabla yazdıracağım.
+
+260
+00:49:07,092 --> 00:49:08,771
+Dış, bir daha da.
+
+261
+00:49:22,356 --> 00:49:26,356
+Şimdi diziye ekleyeceğim bunu. Dizimiz A dizisiyle.
+
+262
+00:49:39,251 --> 00:49:43,932
+Şimdi sayıyı bir olana kadar fonksiyona sokacağız.
+
+263
+00:49:43,932 --> 00:49:55,292
+Şu soruda diyordu ya arkadaşlar, N tam sayısını bir değeri 50 edilene kadar F fonksiyonuna sokacağız.
+
+264
+00:49:55,972 --> 00:49:57,731
+Bunu tekrarlı olarak yapacağız.
+
+265
+00:49:58,211 --> 00:50:01,972
+Bunun için de while kullanalım.
+
+266
+00:50:01,972 --> 00:50:04,972
+Bu zaman şöyle.
+
+267
+00:50:09,907 --> 00:50:13,767
+Sayı 1 olana kadar F'ni uygulayalım yani.
+
+268
+00:50:25,012 --> 00:50:26,371
+Çık yazmışım.
+
+269
+00:50:27,811 --> 00:50:28,851
+Şimdi, tüm yukarı.
+
+270
+00:50:34,324 --> 00:50:43,864
+Efe'ni uygulayacağız. Şöyle yazıyorum. Efe'ni bu şekilde yazacağım ama sonra onu tanımlayacağım.
+
+271
+00:50:49,715 --> 00:51:03,336
+Şimdi, yani funksiyon işlemini daha sonra yaptıracağım. Bu şekilde yazdım. Burada yeni N sonucunu A dizisine eklemem lazım.
+
+272
+00:51:03,336 --> 00:51:07,655
+Bunun için de şöyle yazayım.
+
+273
+00:51:07,655 --> 00:51:14,775
+A. Şöyle yazıyorum.
+
+274
+00:51:17,396 --> 00:51:20,516
+Ama iyi, yukarıda tanınamam gerekiyor.
+
+275
+00:51:31,027 --> 00:51:32,228
+bironç.
+
+276
+00:51:35,572 --> 00:51:47,512
+Şimdi, ne dedim? Yeni N sonucunu, A dizisine ekliyorum ve buradaki İ de dizideki dolu eleman sayısını tutsun.
+
+277
+00:51:52,947 --> 00:51:58,447
+Şimdi burada f fonksiyonunu hesabını daha sonra yapacağım.
+
+278
+00:51:58,447 --> 00:52:00,447
+Sıradaki işlemim ne?
+
+279
+00:52:00,447 --> 00:52:07,947
+Boyutum dolduğunda reallocla benim boyutumu iki katına çıkarmam gerekiyordu.
+
+280
+00:52:07,947 --> 00:52:10,947
+Bunun hesabını yapacağım şimdi.
+
+281
+00:52:10,947 --> 00:52:14,947
+Boyutum, bunun için if koşulu kullanıyorum.
+
+282
+00:52:14,947 --> 00:52:16,947
+Şuraya değil.
+
+283
+00:52:16,947 --> 00:52:19,467
+Şuraya yapacağım.
+
+284
+00:52:25,492 --> 00:52:28,492
+Bu ürünün dolduğunda
+
+285
+00:52:36,244 --> 00:52:42,804
+Bu boyutu iki katına çıkartıyorum. Direkt bu şekilde iki katına çıkartacağım.
+
+286
+00:52:51,987 --> 00:52:54,707
+Realloc kullanacağım burada da.
+
+287
+00:53:07,572 --> 00:53:18,851
+Realloc ile boyutu genişleteceğim. Daha yukarıda calloc ile ayırdığım yeri Realloc ile genişletmiş oluyorum. Bunu kullanmış olduk.
+
+288
+00:53:36,884 --> 00:53:39,384
+kullanımı da bu şekildeydi.
+
+289
+00:53:47,251 --> 00:54:06,251
+Tekrar söyleyecek olursam, eğer im sepetin kapasitesine yani current lane'ı eşitse yani dizi dolduysa sepetim iki katına çıkıyor. Yani dizim, acizim iki katına çıkarıyor. Real'le ne yaptık? Var olan belleğin boyutunu artırmış olduk.
+
+290
+00:54:07,251 --> 00:54:12,291
+Şimdi de print tab ile dizi elemanlarını yazdıralım.
+
+291
+00:54:14,452 --> 00:54:24,452
+Bunu da dizide yine tek tek dolaşmak için, for döngüsünde yazdıracağımız için yine bir değişken tanımlayalım.
+
+292
+00:54:24,452 --> 00:54:37,036
+J değişkenimiz olsun. Dizi elemanlarını tek tek yazdıracağız. Onun için şöyle bir metin yazalım printfle dizi elemanları diye.
+
+293
+00:54:45,619 --> 00:54:50,839
+Şimdi tek tek yazdırıcım için for döngüsü yazıyorum.
+
+294
+00:54:57,972 --> 00:54:59,331
+iğne kadar
+
+295
+00:55:01,072 --> 00:55:01,972
+iğne
+
+296
+00:55:09,043 --> 00:55:12,804
+Meddli Z'yi yazdıralım, pire nöfesine şöyle.
+
+297
+00:55:26,867 --> 00:55:33,588
+Şimdi dizinin elemanlarını ve hafızada kaplada alanda yazdıralım.
+
+298
+00:55:43,188 --> 00:55:45,188
+ters başarılı konularını
+
+299
+00:55:48,188 --> 00:55:49,188
+izinem
+
+300
+00:55:50,188 --> 00:55:51,188
+eleman sayısı
+
+301
+00:55:59,795 --> 00:56:03,115
+Yine ters başarın koyalım ki altı satıra iyisin.
+
+302
+00:56:03,115 --> 00:56:06,195
+Katladığı alanda yazalım.
+
+303
+00:56:13,204 --> 00:56:15,204
+Şurada işte böyle koyalım.
+
+304
+00:56:43,731 --> 00:56:57,032
+Dizimizin içindeki tüm sayıları, yani FN'den FN uyguluyoruz ya, şimdi o FN'i de yazdıracağım. O FN'den gelen nevi de yazdırmış oluyoruz.
+
+305
+00:56:57,791 --> 00:57:06,352
+Dizide kaç eleman var ve dizinin bellekte ne kadar tuttuğunu, yani hafızada kapladığı alanı da yazdırmış olduk.
+
+306
+00:57:08,352 --> 00:57:09,711
+Bu şekilde.
+
+307
+00:57:11,476 --> 00:57:18,476
+Şimdi fm fonksiyonumuzu yazalım.
+
+308
+00:57:22,931 --> 00:57:24,931
+Şöyle yukarıda
+
+309
+00:57:24,931 --> 00:57:27,931
+Efe'ni şöyle tanıyacağım
+
+310
+00:57:27,931 --> 00:57:30,931
+Eğmenin dışında
+
+311
+00:57:40,244 --> 00:57:44,603
+Fünktata, funkciona, jest ya.
+
+312
+00:57:59,123 --> 00:58:10,483
+ikiye bölümünden kalan sıfırsa yani sayı çiftse ikiye böl değilse üç katının bir fazlasını al yapacağız.
+
+313
+00:58:19,539 --> 00:58:24,259
+Bu şekilde yapabiliriz ilk koşulumuzu.
+
+314
+00:58:25,259 --> 00:58:27,259
+Neyi döndürsün?
+
+315
+00:58:28,780 --> 00:58:30,539
+N bölü 2.
+
+316
+00:58:35,188 --> 00:58:36,907
+Değilse de
+
+317
+00:58:41,684 --> 00:58:43,684
+üç katının bir fazlasını alsın.
+
+318
+00:58:54,771 --> 00:58:55,851
+Bu şekilde oldu.
+
+319
+00:58:57,511 --> 00:59:03,612
+Şimdi bir hata yaptım mı bilmiyorum ama bir deneyebiliriz.
+
+320
+00:59:12,275 --> 00:59:15,275
+Mesela 17 girelim.
+
+321
+00:59:16,436 --> 00:59:38,796
+Buraya şey koymadığım için 17, 52, ya 2'ye böldü 26, 2'ye böldü 13, 13 tek olduğu için 3 katının bir fazlası 40, 2'ye böldü 20, 10, 5, 3 katının bir fazlası 16, 8, 4, 2, 1. Bu şekilde doğru.
+
+322
+00:59:44,436 --> 00:59:45,436
+13 müydü?
+
+323
+00:59:45,436 --> 00:59:47,436
+Hatırlayamadım ama, heh.
+
+324
+00:59:47,436 --> 00:59:51,436
+13'tü. Eleman sayım 10, 16 diyor. Burada doğru mu?
+
+325
+00:59:51,436 --> 00:59:54,436
+Ha, burada eleman sayısını 13 dedi.
+
+326
+00:59:54,436 --> 00:59:56,436
+Muhtemelen...
+
+327
+01:00:01,043 --> 01:00:03,603
+Enlikedeir, damos finta ki.
+
+328
+01:00:05,523 --> 01:00:06,347
+Má...
+
+329
+01:00:09,748 --> 01:00:15,748
+üç katının bir fazlası olması gerekirken bu ilk başta
+
+330
+01:00:18,387 --> 01:00:22,148
+17'den sonra 52 mi oluyor?
+
+331
+01:00:24,148 --> 01:00:24,947
+Aynen.
+
+332
+01:00:30,579 --> 01:00:32,579
+Haba un yedir azmışlul.
+
+333
+01:00:35,860 --> 01:00:37,240
+Unitsle benyela.
+
+334
+01:00:42,867 --> 01:00:44,867
+Şuraya şey yapabiliriz.
+
+335
+01:00:46,867 --> 01:00:48,867
+Daha güzel yazmak için.
+
+336
+01:00:50,867 --> 01:00:52,867
+Terslaşan koyduk.
+
+337
+01:00:57,940 --> 01:00:59,940
+Bunlar değil de şuraya.
+
+338
+01:00:59,940 --> 01:01:01,940
+2 nokta boşluk konuları.
+
+339
+01:01:09,972 --> 01:01:25,731
+10, 16 soruya bakayım. 10, 16 tamam doğru çalıştı. Ama bunların arasındaki boşluk niye olmadı? Tekrar bakayım.
+
+340
+01:01:38,835 --> 01:01:41,835
+Heh şuraya mı boşluk bıraksam?
+
+341
+01:01:43,335 --> 01:01:44,779
+Şimdi bir yazayım.
+
+342
+01:01:48,275 --> 01:01:49,315
+Şimdi oldu.
+
+343
+01:01:51,455 --> 01:01:52,955
+Bu şekilde.
+
+344
+01:01:53,495 --> 01:01:56,355
+Burada anlaşılmayan bir şey var mı arkadaşlar?
+
+345
+01:02:01,715 --> 01:02:08,076
+Eğer anlamadıysanız, yazarsanız, birlikte anlamaya çalışırız.
+
+346
+01:02:15,891 --> 01:02:35,831
+Şimdi arkadaşlar, bir tane daha uygulama yapacağız. Bir de lab sorusunu çözeceğiz. İsterseniz 5 dakika ara verelim. Yani ben kapatmayayım uygulamayı ama 5 dakika ara verelim. Ya da hani direkt doğrudan devam edelim. Bir uygulama, bir de lab sorusuna bakacağız.
+
+347
+01:02:47,155 --> 01:03:08,155
+Devam edelim, bir verelim. Ya beş dakika ara verelim o zaman. On beş olsun hadi. On beş geçe kadar bir ara verelim. Tam on beş geçe başlayacağım arkadaşlar ama çıkmayın. Sonra geri döndük.
+
+348
+01:11:29,587 --> 01:11:31,807
+Evet arkadaşlar, sesim geliyor mu?
+
+349
+01:11:41,043 --> 01:11:43,043
+Ekranı görebiliyor musunuz peki?
+
+350
+01:11:53,844 --> 01:12:00,003
+Üçüncü sorumuz da bu arkadaşlar. Yine bu soruyu da siz bakın.
+
+351
+01:12:30,547 --> 01:12:35,347
+Bu soruda da arkadaşlar fatura oluşturma sistemi gibi düşünebilirsiniz bu soruyu.
+
+352
+01:12:36,647 --> 01:12:43,528
+Bu soruda da hem stringlerle işlemler yapıyoruz hem de yine Dynamic Memory kullanımıyla alakalı işlemler yapacağız.
+
+353
+01:12:44,827 --> 01:12:52,847
+İlk olarak kullanıcıdan 4 farklı ürün için soda, mevzu, suyu, kola ve su.
+
+354
+01:12:53,619 --> 01:12:59,539
+Bunun için miktar bilgisi yani kaç kilo alındığı bilgisi isteniyor.
+
+355
+01:13:01,059 --> 01:13:04,460
+Her ürünün sabit birim fiyatı var.
+
+356
+01:13:06,292 --> 01:13:13,052
+kullanıcının gireceği miktar ile birim fiyatı çarpılarak toplam tutar hesaplanıyor.
+
+357
+01:13:13,052 --> 01:13:19,932
+Her ürün için yani soda için ayrı tutar, meyve su için ayrı, kola için ve su için ayrı tutarlar.
+
+358
+01:13:20,052 --> 01:13:27,971
+Her bir satırda bunların çarpımı yer alıyor yazdırılmalı.
+
+359
+01:13:28,432 --> 01:13:33,052
+En sonda da toplam tutar hesaplanmalı.
+
+360
+01:13:35,283 --> 01:13:42,083
+Şimdi soru zaten açık. Bunun için de yine koda geçelim.
+
+361
+01:13:47,252 --> 01:13:48,252
+bir şeyle ilgili.
+
+362
+01:13:51,764 --> 01:13:54,644
+her şey süreyim yani. Şahit şu kaos.
+
+363
+01:14:03,028 --> 01:14:13,268
+Şimdi bu sefer ürün sayısını makro olarak tanımlayalım arkadaşlar. Bunu da göstermiş olayım.
+
+364
+01:14:17,235 --> 01:14:20,115
+Ürün sayımından product olsun.
+
+365
+01:14:24,115 --> 01:14:28,435
+Ve 4 tane olduğu için 4 yazıyorum.
+
+366
+01:14:28,435 --> 01:14:35,315
+Yani bu şekilde yapmamızın sebebi, hani diyelim ki ileride 5 ürünle çalışmak istiyoruz.
+
+367
+01:14:35,315 --> 01:14:39,556
+Sadece 4 yazdığımız yeri değiştirmemiz yeterli oluyor.
+
+368
+01:14:39,556 --> 01:14:44,556
+Hani bu şekilde tanınlamasaydık her yerde değiştirmemiz gerekecekti.
+
+369
+01:14:44,556 --> 01:14:49,476
+Bunun için bu işimizi kolaylaştırıyor.
+
+370
+01:14:50,676 --> 01:15:18,416
+Şimdi de maksimum satır uzunluğunu belirleyelim. Bunu da makro olarak belirleyelim. Maksimum satır uzunluğu da şimdi her bir fatura için bir string oluşturmamız gerekiyor. Yani şunu yazdırmak istiyoruz. İşte iki kole soda, işte 10 çarpı 2'den 20 TL gibi bir karakter dizimizi yazdırmamızı istiyoruz.
+
+371
+01:15:18,676 --> 01:15:24,916
+Bunun da boyutunu yine makro olarak tanımlayalım.
+
+372
+01:15:34,420 --> 01:15:39,539
+Bunun isminde Max Citring Plant also.
+
+373
+01:15:42,739 --> 01:15:50,739
+Ve bu da 100 olsun. Bu şekilde 100 karakter, maksimum 100 karakterlik 10.
+
+374
+01:15:52,739 --> 01:15:54,939
+X'i de birer sabit gibi davranıyor.
+
+375
+01:15:56,039 --> 01:16:04,260
+Şimdi, dediğim gibi bu makrolar kodun okunabilirdiğini ve bakımını kolaylaştırıyor.
+
+376
+01:16:04,260 --> 01:16:07,719
+Şimdi oluşturacağımız fonksiyonlara bakalım.
+
+377
+01:16:11,347 --> 01:16:14,648
+İlk olarak neyi oluşturacağız?
+
+378
+01:16:19,796 --> 01:16:33,796
+Faturayı oluşturacağımız fonksiyonu. Bunun için yazalım. String olduğu için char diyoruz. İsmi generate invoice olsun.
+
+379
+01:16:40,532 --> 01:16:51,172
+değişkenlerimiz de alınan miktarı, ürün ismini ve birim fiyatını parametrelerimiz de bunlardan olsun.
+
+380
+01:16:57,363 --> 01:17:12,424
+dili.
+
+381
+01:17:01,908 --> 01:17:05,748
+Ürün ismi char olacağı için.
+
+382
+01:17:06,308 --> 01:17:11,268
+Onun ismi o da product name olsun.
+
+383
+01:17:17,659 --> 01:17:18,828
+dili.
+
+384
+01:17:17,076 --> 01:17:18,755
+ve birim fiyata.
+
+385
+01:17:34,175 --> 01:17:44,175
+dili.
+
+386
+01:17:33,844 --> 01:17:42,804
+Bu dizi string dizisi olduğu için biz bunu char ve chip pointer olarak şuraya yazdık.
+
+387
+01:17:46,756 --> 01:17:51,756
+dili.
+
+388
+01:17:45,908 --> 01:17:55,028
+Şimdi bu fonksiyonda önce yer ayıracağız ürün sayısı kadar. Her ürün içinde fatura satır olmuşturacağız.
+
+389
+01:17:57,448 --> 01:18:01,188
+Şimdi önce değişkenliğimizi bir tanımlayalım.
+
+390
+01:18:01,188 --> 01:18:10,048
+Bir tane toplam değerimizi tutan total amount değişkeni olsun.
+
+391
+01:18:14,452 --> 01:18:22,792
+yer ayırırken kullanmak için, for dönüşünde kullanmak için bir tane i değişkeni kullanıyorum, tanınıyorum.
+
+392
+01:18:22,792 --> 01:18:34,912
+Şimdi mallocla yer ayıracağım. Ürün sayısı kadar satır için mallocla yer ayırıyorum.
+
+393
+01:18:40,916 --> 01:18:43,916
+Programın ismi Immuus Line olsun.
+
+394
+01:19:03,283 --> 01:19:12,643
+products, artı bir. Şimdi bunu anlatacağım size. Çarpı size of.
+
+395
+01:19:27,539 --> 01:19:36,380
+Son satıra da toplam tutarını ekleyeceğimiz için buraya ürün sayısı artı bir olarak yazdım.
+
+396
+01:19:37,799 --> 01:19:44,219
+Yani ürünleri ve ürünlere ait faturayı her satırda yazıyor.
+
+397
+01:19:44,440 --> 01:19:47,960
+En alttaki satıra da toplam tutarı yazacağız.
+
+398
+01:19:48,180 --> 01:19:53,199
+Onun için burada yer ayırırken bu şekilde artı bir olarak yazdım.
+
+399
+01:19:56,564 --> 01:20:09,844
+Evet, her ürün için şimdi tutarı hesaplayalım. Bunu for döngüsüyle yapacağım çünkü 4 ürün için hesaplayacağım. Tamam, for döngümü yazayım.
+
+400
+01:20:24,851 --> 01:20:29,031
+Her ürün için satır hazırlayacağım.
+
+401
+01:20:39,155 --> 01:20:46,836
+diğer ürün için ayrı ayrı tutarı hesaplamak için buraya amount
+
+402
+01:20:50,131 --> 01:20:52,131
+dilim miktarı çarpı
+
+403
+01:20:57,427 --> 01:21:00,108
+Birim miktarı çarpı alınan miktar.
+
+404
+01:21:01,087 --> 01:21:04,707
+Yani ürünün birim miktarı ile alınan miktar çarpacağım.
+
+405
+01:21:30,644 --> 01:21:37,204
+Ürün için ayra ay tutarı hesaplamak için miktarla birim fiyatını çarpıttım ve tutarı hesapladım.
+
+406
+01:21:38,084 --> 01:21:44,144
+Şimdi hesapladığımız tutarı toplam tutara ekleyelim.
+
+407
+01:21:48,851 --> 01:21:50,827
+Total amount
+
+408
+01:21:55,123 --> 01:21:57,836
+İç
+
+409
+01:22:05,555 --> 01:22:10,555
+Şimdi de her fatura satırı için bellekte yer ayıralım.
+
+410
+01:22:10,555 --> 01:22:22,555
+Şimdi en fazla maksimum string length'e kadar karakter alacağı için yani alacağı şekilde yani 100 karaktere kadar yer açacağız.
+
+411
+01:22:32,756 --> 01:22:34,060
+Zon
+
+412
+01:22:37,971 --> 01:22:43,211
+Her karakter satıra için, şey her fatura satıra için.
+
+413
+01:22:50,931 --> 01:22:53,611
+Genereli olan malloc ve inah.
+
+414
+01:22:57,460 --> 01:22:59,212
+Şimdi direkt şuradan alacağım.
+
+415
+01:23:06,739 --> 01:23:07,739
+Çar, pussay.
+
+416
+01:23:21,747 --> 01:23:24,188
+Her satır için bellek değer ayırmış oldum.
+
+417
+01:23:24,188 --> 01:23:27,667
+Şimdi farklı bir şey göstereceğim.
+
+418
+01:23:27,787 --> 01:23:38,327
+Formatlı string oluşturmaya yarayan bir fonksiyonla oluşturduğumuz yazıyı Çağ Karakter dizimize yazalım.
+
+419
+01:23:38,487 --> 01:23:39,907
+Sprintf kullanacağız.
+
+420
+01:23:59,315 --> 01:24:03,995
+program tutarı, esprintefle yazdırıyorum.
+
+421
+01:24:10,676 --> 01:24:12,515
+Total, en unki.
+
+422
+01:24:20,979 --> 01:24:26,479
+Ve en son ne dönecek? Bizim Immorse Line dizimiz dönecek.
+
+423
+01:24:43,283 --> 01:24:46,543
+Burayı anlamadıysanız sorabilirsiniz arkadaşlar.
+
+424
+01:24:50,644 --> 01:24:53,644
+Toplam tutarı sprintf ile yazdırdık.
+
+425
+01:24:55,644 --> 01:25:00,644
+Daha sonra fatura satırlarını ekrana yazdıran fonksiyonu oluşturalım.
+
+426
+01:25:00,644 --> 01:25:04,644
+Bu da void. Değer döndürmeyecek için.
+
+427
+01:25:04,644 --> 01:25:06,644
+Invul.
+
+428
+01:25:11,252 --> 01:25:14,372
+parametresi yine bizim dizimiz olsun.
+
+429
+01:25:23,891 --> 01:25:29,412
+Burada ürün sayısı kadar satırı yazdırıyoruz.
+
+430
+01:25:38,036 --> 01:25:43,595
+Bunun için for döngüsünde yazıyoruz. Ürün sayısı kadar dediğim zaman her zaman işin içine for.
+
+431
+01:25:43,595 --> 01:25:49,275
+For da geziyorum ürün içinde. Bunun için de for da kullanmak üzere bir i tanımlıyorum.
+
+432
+01:26:05,140 --> 01:26:06,140
+Ne yazdım.
+
+433
+01:26:07,040 --> 01:26:07,640
+Değil mi?
+
+434
+01:26:28,243 --> 01:26:32,203
+Şimdi açıklayacağım arkadaşlar.
+
+435
+01:26:40,435 --> 01:26:57,075
+Şimdi, bu print invoice fonksiyonunda yukarıda generic invoice fonksiyonu ile oluşturduğumuz metin satırlarını ekrana yazdırmış olduk. Burada
+
+436
+01:26:57,203 --> 01:27:06,203
+Her ürün için bir kez çalışıyor. Dört ürün içinde tek tek dönüyor ve stringi ekrana yazdırıyor.
+
+437
+01:27:06,203 --> 01:27:16,203
+Son printf'te de toplam tutar satırını yazdırıyor. Yani i dört olduğunda toplam tutarı en son yazılmış oluyor.
+
+438
+01:27:16,203 --> 01:27:24,203
+Şimdi en son ne yapacaktık? Ayırdığımız yeri yine boşaltacaktık. Bunu yapmayı zaten biliyoruz.
+
+439
+01:27:27,475 --> 01:27:46,795
+Bu işlem yani bu free işlemi her zaman programın sonunda yapılır. Bunu da belirteyim çünkü eğer daha öncesinde yapılırsa bellek leak hatası alabiliriz. Yani bellek temizliği düzgün yapılması için en sona genelde koymamız gerekiyor.
+
+440
+01:27:48,935 --> 01:27:55,275
+Bunun içinde yine fonksiyon yazdık. Free, invoice olsun.
+
+441
+01:28:10,739 --> 01:28:30,603
+i'yi tanımlıyorum çünkü form kullanacağım. Her zaman i'yi fark ettiyseniz dışarıda tanımlıyorum. Çünkü öbür türlü tanımlarsam hata alıyorum zaten desteği de siz de ödevlerinizde yani lablarınızda mutlaka
+
+442
+01:28:31,828 --> 01:28:43,507
+şeyi unutmayın, eyi dışarıda tanınamayı unutmayın. Oradan puanlarınız kırılıyor. Zaten lab kurallarını okumuşsunuzdur. Ona dikkat edersiniz.
+
+443
+01:29:00,115 --> 01:29:04,916
+Ayrıca böyle aynı şeyleri yapıyor gibi. Olduğum için biraz sıkıcı geçiyor olabilir şu an.
+
+444
+01:29:11,412 --> 01:29:19,412
+Malloc ile oluşturduğum Inward Live dizisini, ne yapıyorum bellekten?
+
+445
+01:29:21,268 --> 01:29:41,268
+Yani ayırıyorum, belleği boşaltıyorum. Satırların önce, satırların her birini tek tek serbest bırakmak için bu şekilde free fonksiyonunu kullanıyorum. Daha sonra dizinin kendisini temizlemek için de, bunu aslında şöyle yanlış yazdım, şöyle olmayacak.
+
+446
+01:29:43,315 --> 01:29:48,956
+Dizinin kendisini de bu şekilde boşaltıyoruz, temizliyoruz.
+
+447
+01:29:50,395 --> 01:29:56,775
+İlkinde satır satır boşalttık. İkincisinde de dizinin tamamını temizlemiş olduk.
+
+448
+01:29:57,695 --> 01:30:03,755
+Şimdi mail'e geçip fonksiyonları çağıralım.
+
+449
+01:30:07,475 --> 01:30:08,475
+Tamam.
+
+450
+01:30:18,355 --> 01:30:20,215
+Ürün isimlerimi yazıyorum.
+
+451
+01:30:24,724 --> 01:30:29,123
+Çete bir şey yazan oluyor mu? Yok şu an sıkıntı yok o zaman.
+
+452
+01:30:39,667 --> 01:30:40,667
+Soda,
+
+453
+01:30:43,147 --> 01:30:44,467
+meyve suyu,
+
+454
+01:30:45,268 --> 01:30:47,467
+bunları tuğma kullanır.
+
+455
+01:30:55,412 --> 01:30:56,231
+Teşekkürler.
+
+456
+01:31:03,923 --> 01:31:04,684
+konu
+
+457
+01:31:09,076 --> 01:31:10,076
+Neyse, tu.
+
+458
+01:31:17,811 --> 01:31:21,271
+Şimdi de birim fiyatlarını yazacağım.
+
+459
+01:31:44,851 --> 01:31:46,851
+Burada şeye dikkat etmek lazım.
+
+460
+01:31:46,851 --> 01:31:56,851
+Direkt, yani sodanın birim fiyat karşılığı 10, meyve suyunun birim fiyat karşılığı 15, kolanın 20, suyun 5.
+
+461
+01:31:56,851 --> 01:32:04,851
+Direkt buna karşı gelmesi lazım. Direkt karşılığında bu şekilde yazılması önemli.
+
+462
+01:32:36,851 --> 01:32:41,471
+Şimdi fatura satılırmıştan string dizimizi yazalım.
+
+463
+01:32:55,988 --> 01:33:12,988
+Ürün miktarlarını kullanıcıdan istemek için de ürün sayısı kadar kullanıcıdan istemek için de before döngüsüyle isteyeceğiz. Fakat bunun öncesinde yine i değişkenimizi tanımlayalım.
+
+464
+01:33:14,988 --> 01:33:21,932
+Before döngümüzde kullanıcıdan ürün miktarını isteyelim.
+
+465
+01:33:23,828 --> 01:33:25,768
+Şöyle, hapılaşık da modaya.
+
+466
+01:33:47,315 --> 01:33:48,315
+lütfen.
+
+467
+01:33:48,315 --> 01:33:55,315
+%s miktar neye girin.
+
+468
+01:34:02,707 --> 01:34:03,207
+Tak.
+
+469
+01:34:15,796 --> 01:34:25,796
+önceden istiyoruz. Ürünün miktarını, ne kadar istediğini. Ve burada her ürün için, istediğiniz için.
+
+470
+01:34:29,203 --> 01:34:33,763
+4 ürün içinde isteyecek. Onun için kordonun üstünde yazdık.
+
+471
+01:35:06,836 --> 01:35:07,976
+Şimdi ne yapacağız?
+
+472
+01:35:13,140 --> 01:35:26,780
+fonksiyonlarımızı yazalım. Inboss lines, yani faturayı oluşturduğumuz fonksiyonu yazdırdığımız ve boşalttığımız fonksiyonu main'inde çağıracağımız için şimdi bunları yazalım.
+
+473
+01:35:35,956 --> 01:35:40,355
+Generate bu Satura'yı oluşturduğu fonksiyon.
+
+474
+01:35:47,507 --> 01:35:50,068
+Product names
+
+475
+01:35:51,868 --> 01:35:54,028
+i firm fiyatları.
+
+476
+01:36:12,756 --> 01:36:20,716
+Burada sadece yukarıda yazdığımız fonksiyonları çağırmış olduk. Print, şimdi de free yazdırıyorum.
+
+477
+01:36:28,787 --> 01:36:38,787
+Yine fonksiyonlarla yapmış olduk. Yani eğer bir hatam yoksa program çalışacak.
+
+478
+01:36:42,163 --> 01:37:00,163
+Burada sanırım parantezlerle alakalı bir sıkıntı olabilir. Şu fazla olabilir belki. Neyse hata verirse bakarız. Şu da parantez olması gerekiyor.
+
+479
+01:37:10,100 --> 01:37:11,100
+Bunton ne mas.
+
+480
+01:37:18,996 --> 01:37:19,884
+Evet.
+
+481
+01:37:22,899 --> 01:37:25,719
+Kodla, say, par, komikom.
+
+482
+01:37:37,235 --> 01:37:51,435
+Product names, price, and more slides, generate, ah, şöyle bir hata alınlar.
+
+483
+01:37:59,220 --> 01:38:06,220
+Şimdi tek tek bizden miktarları istiyor. Mesela 3 olsun, diğerler istemiyor mu? 4.
+
+484
+01:38:12,020 --> 01:38:14,020
+Buradayım ya, öyle yaptık ya.
+
+485
+01:38:15,020 --> 01:38:17,020
+Bir yerde hata yaptım.
+
+486
+01:38:18,020 --> 01:38:20,020
+Toplam tutarı hesapladı.
+
+487
+01:38:30,963 --> 01:38:34,083
+Şurada da bir bakalım.
+
+488
+01:38:44,819 --> 01:38:48,199
+Boşluklar falan da önemli oluyor burada arkadaşlar.
+
+489
+01:38:55,220 --> 01:38:57,539
+izdesen miktar ünlenin.
+
+490
+01:39:07,123 --> 01:39:09,123
+Bu da yaz, nien da.
+
+491
+01:39:09,123 --> 01:39:11,123
+Işlinda yazın.
+
+492
+01:39:25,779 --> 01:39:26,779
+Deminelim.
+
+493
+01:39:43,123 --> 01:39:47,123
+Tamam, toplam tutarı, biz satılıyorum.
+
+494
+01:39:55,347 --> 01:39:59,347
+Doğru. Toplam tutarı doğru yazdırıyor.
+
+495
+01:40:02,347 --> 01:40:07,128
+Tamam arkadaşlar. Anlaşılmayan bir yer var mı bununla ilgili?
+
+496
+01:40:11,764 --> 01:40:15,564
+Anladınız mı bu soruyu? Anlamadıysanız bir özet geçebilirim.
+
+497
+01:40:20,948 --> 01:40:24,108
+Anladıysanız bir kişi de olsa evet yazabilir mi?
+
+498
+01:40:27,923 --> 01:40:30,224
+Ona göre lap sonrasına geçeceğiz.
+
+499
+01:40:34,131 --> 01:40:39,131
+Tamam o zaman. Şimdi laptopumuzu açalım.
+
+500
+01:40:47,956 --> 01:41:08,956
+Laf sorusunu zaten biliyorsunuz. İki tane matrisiniz vardı. Bunların her biri iki satırdan oluşuyordu. N ve M neğerleri de kullanıcıdan istiyorduk biz bunları. Fakat bir kurallarda.
+
+501
+01:41:12,595 --> 01:41:16,595
+İki madresinde ilk satırında farklı sayılar olacak.
+
+502
+01:41:17,915 --> 01:41:20,875
+Eğer aynı sayı giriliyorsa uyarı verecek.
+
+503
+01:41:21,655 --> 01:41:25,335
+Kurala uygun sayı girilmesi istenecek.
+
+504
+01:41:26,715 --> 01:41:35,536
+İkinci satırındaki sayılar da bu ilk satırındaki sayıların value yani değeri gibi düşünebiliriz.
+
+505
+01:41:35,635 --> 01:41:37,335
+Karşılık gelen değerleriyle.
+
+506
+01:41:37,908 --> 01:41:51,488
+Şimdi amacımız neydi? İki satırda ortak olan yani iki matrisin ilk satırında ortak olan sayıları bulup ikinci satırlarında karşılık gelen değerlerini toplamaktı.
+
+507
+01:41:52,708 --> 01:41:55,507
+Şimdi örneğe mesela bakalım.
+
+508
+01:41:57,939 --> 01:42:00,739
+Zaten soru biliyorsunuz ama yine de söyleyeyim.
+
+509
+01:42:01,799 --> 01:42:13,319
+Burada mesela ilk matris, sizin ilk satırı, 1, 5, bu 7 ile 2, bu 1 ve 5'e karşılık gelen değerler.
+
+510
+01:42:13,379 --> 01:42:17,239
+Yani 1'in karşılığı 7, 5'in karşılığı 2 gibi düşünebiliriz.
+
+511
+01:42:17,583 --> 01:42:34,304
+İkinci matresin ilk satırında da 2, 3 ve 5 var. Bu iki satırda ortak olan ne var? 5 var arkadaşlar. Dolayısıyla 5'in karşılığında 2 var. Burada da 1 var. Bu ikisinin toplamında 3 geliyor.
+
+512
+01:42:35,380 --> 01:42:46,059
+Bu şekilde program yazılması isteniyor. Ancak burada çok önemli olan ve çoğunuzun yapmadığı bir durum var.
+
+513
+01:42:46,484 --> 01:42:52,064
+Matris elemanlarına erişimde sadece pointer aritmetri kullanılmalıdır diyor.
+
+514
+01:42:52,744 --> 01:42:57,043
+Şimdi labınızı ben okumadım ama okuyan arkadaşlar şunu söyledi.
+
+515
+01:42:57,604 --> 01:43:01,944
+Birçok öğrenci pointer kullanmadan yapmış.
+
+516
+01:43:01,944 --> 01:43:06,384
+Yani bu kuralı önemsememiş.
+
+517
+01:43:06,564 --> 01:43:11,784
+Bunun için de puanları kırıldı bende ve bu çok önemli olduğu için de
+
+518
+01:43:11,923 --> 01:43:16,923
+Artık ne kadar kaldığını ben bilmiyorum ama bunu baştan söyleyin.
+
+519
+01:43:16,923 --> 01:43:20,923
+Şimdi soruyu açalım.
+
+520
+01:43:20,923 --> 01:43:21,923
+Kapatayım.
+
+521
+01:43:36,180 --> 01:43:40,180
+Kodla göreceğiz.
+
+522
+01:43:44,340 --> 01:44:04,340
+Evet arkadaşlar, çözümde ekstra yapmış olduğunuz birkaç bir şey daha var. Bunu hani sizden istemediğiniz için buradan zaten puanınız kırılmadı. Şimdi ilk baştan başlarsak, ilk önce kütüphanelerimizi ekledik. Burada...
+
+523
+01:44:06,292 --> 01:44:31,032
+sütun sayısını yani maktesin boyutunu makro olarak tanımladık. Şimdi main'de setlocal ile Türkçe karakter desteği sağladık. Hani bunu sadece göstermek için. Burada i harfi falan yazarsak bunlar ekranda düzgün görünsün diye bu şekilde yazabiliriz. Ancak sizin yazmanız şart değildi.
+
+524
+01:44:31,699 --> 01:44:44,479
+Onun için buradan falan kırılmayacak. Şimdi iki tane matrisi tanımlıyoruz. İlk başta bu şekilde matrisleri tanımladık. Her biri iki satırlı ve en fazla maksimum sütunlu olsun.
+
+525
+01:44:45,460 --> 01:44:56,520
+Diğer değişkenlerimizi de tanımlıyoruz. N, V, M, matrislerin sütun sayıları, I, J, K'da dönüş sayı açılarımız olsun. Bunları da tanımladık.
+
+526
+01:44:57,260 --> 01:45:04,520
+Toplam, ortak sayı, değer 1, değer 2 değişkenlerini de tanımladık. Bunları daha sonrasında kullanacağız.
+
+527
+01:45:04,520 --> 01:45:11,520
+Bir de benzersiz sayı kontrolü içinde bir bayrak değişkeni ekledik.
+
+528
+01:45:11,859 --> 01:45:27,339
+Şimdi ilk olarak kullanıcıdan ilk matriz için üstün sayısını isteyelim. Bu işlemi yapan pointer, fscanf bunu yazdık. Daha sonra şöyle bir metin yazdıralım.
+
+529
+01:45:27,339 --> 01:45:39,399
+Bu metin şart değil sanırım. Yani siz soruya göre olması gereken şekilde bakarsınız. Biz çözümü bu şekilde yaptık.
+
+530
+01:45:40,243 --> 01:46:00,763
+Şimdi ilk matrisin ilk satırının elemanlarını for ile kullanıcıda alalım. Bu döngüde Enker'e soracak. Kaç satırsa, kaç elemansa Enker'e soracak.
+
+531
+01:46:04,127 --> 01:46:05,647
+Burada şunu yapacak.
+
+532
+01:46:06,047 --> 01:46:10,547
+Kullanıcıdan alınan her sayıya daha önce girilmiş mi?
+
+533
+01:46:10,867 --> 01:46:14,108
+Diye bunun karşılaşma işlemini yapacağız arkadaşlar.
+
+534
+01:46:15,227 --> 01:46:22,268
+Burada da bayrağı ilk başta sıfır olarak yazıyoruz.
+
+535
+01:46:23,707 --> 01:46:26,608
+Başlangıçta sıfır olarak yazıyoruz.
+
+536
+01:46:26,747 --> 01:46:28,067
+Yani tekrar yok demek.
+
+537
+01:46:28,067 --> 01:46:31,067
+Eğer sayı daha önce girilmişse
+
+538
+01:46:31,572 --> 01:46:33,572
+Bayrağı 1 yapıyoruz.
+
+539
+01:46:34,572 --> 01:46:36,572
+Ve kullanıcı uyarılıyor.
+
+540
+01:46:37,572 --> 01:46:41,572
+Şimdi kullanıcıdan bir sayı alıyoruz.
+
+541
+01:46:42,572 --> 01:46:44,572
+Burada scannet ile
+
+542
+01:46:46,572 --> 01:46:48,572
+Şurada arkadaşlar
+
+543
+01:46:51,091 --> 01:47:02,691
+Matris'in aslında yani bu şekilde yazmanızı istemiştik ama aslında matris'in şu konumuna yazmış oluyoruz.
+
+544
+01:47:04,211 --> 01:47:08,611
+Pointer kullanmanızı istediğimiz için hani bu şekilde yazdık.
+
+545
+01:47:14,131 --> 01:47:25,131
+Şimdi for döngümüzde zaten söylemiştim. İlk maddesin ilk satırındaki en adet sayıyı kullanıcıdan almak için bu kısmı oluşturduk.
+
+546
+01:47:25,131 --> 01:47:32,131
+Burada işte örneğin N5 ise 5 kez çalışacak 0'dan 4'e kadar.
+
+547
+01:47:38,131 --> 01:47:45,851
+Şu bayrak sıfır ya, her yeni sayı girilmeden önce kontrol bayrağını sıfırlıyoruz.
+
+548
+01:47:45,851 --> 01:47:52,412
+Bayrak değişkeni girilen sayının daha önce girilip girmediğini kontrol ediyor. Bunu da söyledim.
+
+549
+01:47:52,412 --> 01:47:56,771
+Tamam, bunu söyledim zaten. Girildiyse bayrağı bir yapacak.
+
+550
+01:47:56,771 --> 01:48:03,412
+Bu skalefi de söyledim. O da kullanıcıdan bir sayı aldık.
+
+551
+01:48:03,923 --> 01:48:08,804
+ve birinci madresin ilk satırını inci sütununa yazdık.
+
+552
+01:48:13,587 --> 01:48:21,587
+Sonra şu ikinci for döngüsü de sayı daha önce girilmiş mi onun kontrolü için başlattık.
+
+553
+01:48:22,467 --> 01:48:25,827
+Burada şuraya bakacak olursak arkadaşlar.
+
+554
+01:48:26,448 --> 01:48:29,707
+Bunun sol tarafı yeni girilen sayıyı tutuyor.
+
+555
+01:48:30,467 --> 01:48:33,167
+Sağ tarafı da daha önce girilmiş sayıyı tutuyor.
+
+556
+01:48:33,167 --> 01:48:37,108
+Ve eğer aynıysa bunlar bayrağı bir yapıyoruz.
+
+557
+01:48:37,948 --> 01:48:40,667
+Yani bu sayı girilmiş uyarısı yapıyoruz.
+
+558
+01:48:42,547 --> 01:49:00,608
+Burada, döngü sonunda i art artı olacağı için bu i x x ifadesiyle aynı hücreye aslında geri dönmüş oldu. Böylece kullanıcı da tekrar geçerli ve benzer sayı istenmiş oluyor.
+
+559
+01:49:09,971 --> 01:49:15,971
+İkinci matris için de aynı işlemleri gerçekleştiriyoruz.
+
+560
+01:49:24,659 --> 01:49:25,300
+Bakayım.
+
+561
+01:49:28,699 --> 01:49:31,659
+Aynen aynı işlemleri gerçekleştirdik.
+
+562
+01:49:37,235 --> 01:49:42,895
+Daha sonra en son ortak sayıları ve toplamları yazdırıyoruz.
+
+563
+01:49:43,415 --> 01:49:50,636
+Matris 1'in satır sayısında dolaşıyoruz ve matris 2'nin de yine satır sayısında dolaşıyoruz.
+
+564
+01:49:50,735 --> 01:49:52,395
+Bu iki for onu ifade ediyor.
+
+565
+01:50:03,764 --> 01:50:10,764
+Yani ortak sayı varsa ortak sayı değişkenine ortak olan sayı atıyoruz.
+
+566
+01:50:10,764 --> 01:50:11,724
+Burada.
+
+567
+01:50:23,859 --> 01:50:48,199
+Bu ortak sayılar şu. Bakayım. Matris 1 artı i. Şu ortak sayılar. Yani matris 1'i bu ortak sayılar evet. Burada da değerler ifade ediliyor.
+
+568
+01:50:51,155 --> 01:51:03,036
+Ve sonra toplam yazdırılıyor. Yani ikisinin değerleri, yani ortak olanların karşılık gelen değerleri var diye onların toplamı yazdırılıyor.
+
+569
+01:51:03,036 --> 01:51:13,695
+Yani ortak sayıya karşılık gelen iki değeri topluyoruz. Ve printf ile de sonuçları ekrana yazdırıyoruz. Şöyle bir deneyelim.
+
+570
+01:51:17,908 --> 01:51:40,488
+İlk matris için en değerini girin. 3 gireyim mesela. 1 olsun. Hatta böyle aynı değeri gireyim ki uyarı veriyor mesela. Evet benzerse olmalı uyarısı verdi. O yüzden 2 girdim, 3 girdim. Şimdi ikinci satırı giriyorum. 4, 2, 1 olsun. İkinci matris için isteyecek. Bu da 2 olsun.
+
+571
+01:51:41,235 --> 01:52:08,815
+Emmy istedi. Burada da ortak bir şey olsun diye bir olsun, beş olsun. İkinci satırı istiyor. O da altı ve dört olsun. Şimdi ilk satırda hangi sayılar ortaktı? Birler ortaktı. Birin karşılığında ne vardı? İlk matriste dört vardı. İkinci matriste birin karşılığında altı vardı. Bunun ikisinin toplamı da on oldu.
+
+572
+01:52:09,167 --> 01:52:10,047
+Bu şekilde.
+
+573
+01:52:12,987 --> 01:52:13,967
+Evet.
+
+574
+01:52:14,707 --> 01:52:32,567
+Arkadaşlar, yani genel olarak hani lablarınızda, yani bu ilk labda, yani sonuçları doğru yapmış olsanız bile, hani istenilen kurallara uyulmadığı sürece hani puanınız gitmiş oluyor.
+
+575
+01:52:33,187 --> 01:52:35,167
+Burada da lab sorusundaki...
+
+576
+01:52:36,627 --> 01:52:45,947
+Bu pointer aritmetiği özellikle bunu kullanmayanlar için puanları kırılmış oldu.
+
+577
+01:52:46,627 --> 01:52:51,907
+Bundan sonraki lablarda kurallara dikkat edelim.
+
+578
+01:52:53,027 --> 01:52:54,687
+Benim anlatacaklarım bu kadar.
+
+579
+01:52:55,347 --> 01:52:59,587
+Zaten uygulamanın saati de geçti.
+
+580
+01:52:59,587 --> 01:53:02,507
+Sormak istediğiniz soru varsa...
+
+581
+01:53:04,787 --> 01:53:16,827
+Laf sonuçları açıklanır arkadaşlar. 1-2 haftaya açıklanır diye düşünüyorum. Yani onları sizinle paylaşacağız, duyuracağız.
+
+582
+01:53:19,067 --> 01:53:22,987
+Bu şekilde başka sormak istediğiniz bir soru var mı?
+
+583
+01:53:23,859 --> 01:53:38,859
+Hımm. Uygulamak zaten arkadaşlar uygulama kaydoluyor. Daha sonrasında izleyebilirsiniz. Onu da artık kendiniz yazarsanız bu şekilde daha iyi pratik yapmış olursunuz.
+
+584
+01:53:40,639 --> 01:53:48,279
+Başka soru soran var mı? Başka soru yoksa o zaman uygulamayı durduruyorum.
+
+585
+01:53:51,923 --> 01:53:54,923
+Herkese iyi akşamlar diliyorum arkadaşlar.
+
+586
+01:53:55,923 --> 01:53:57,923
+Umarım anlaşılır olmuştur.
+
+587
+01:53:58,923 --> 01:53:59,627
+İyi günler.
