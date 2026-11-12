@@ -1,0 +1,1955 @@
+1
+00:04:47,699 --> 00:04:48,800
+Arkadaşlar.
+
+2
+00:04:53,492 --> 00:04:55,492
+Merhaba.
+
+3
+00:05:18,932 --> 00:05:20,752
+9-10 geçe başlayalım arkadaşlar.
+
+4
+00:05:21,552 --> 00:05:22,652
+Tamamdır hocam.
+
+5
+00:16:13,940 --> 00:16:15,180
+Oh, delicious.
+
+6
+00:16:19,508 --> 00:16:22,348
+Günaydın hocam.
+
+7
+00:16:23,128 --> 00:16:23,508
+Merhaba.
+
+8
+00:16:24,948 --> 00:16:26,888
+Merhaba hocam.
+
+9
+00:16:28,187 --> 00:16:31,228
+Son haftamız, son dersimiz.
+
+10
+00:16:33,408 --> 00:16:36,988
+Tabii proje için bir kez daha bir araya geleceğiz.
+
+11
+00:16:36,988 --> 00:16:40,148
+Bir şeyler anlatacağım son dersimiz.
+
+12
+00:16:41,248 --> 00:16:42,028
+Peki.
+
+13
+00:16:46,163 --> 00:16:56,384
+Bugünkü piyanın şu. İlk önce ben bu büyük dil modelleriyle alakalı sunumu anlatacağım.
+
+14
+00:16:56,384 --> 00:17:07,683
+Onun arkasından da eğer sizlerin kendi projelerinizle alakalı takıldığınız yerler varsa onların üzerinden bir geçeriz, konuşuruz onları.
+
+15
+00:17:08,203 --> 00:17:12,483
+Ama dediğim gibi ilk önce ben anlatayım ondan sonra kısma geçeriz.
+
+16
+00:17:14,804 --> 00:17:16,804
+Şimdi bugün...
+
+17
+00:17:19,304 --> 00:17:21,304
+Zaten geldi mi şu anda?
+
+18
+00:17:22,804 --> 00:17:24,804
+Geldi hocam, geldi.
+
+19
+00:17:24,804 --> 00:17:25,804
+Tamam.
+
+20
+00:17:26,804 --> 00:17:31,304
+Şimdi, bugün konumuz büyük değil modellerin.
+
+21
+00:17:31,804 --> 00:17:40,804
+İşte malumunuz olduğu gibi üzere, popüler, elektrik, başarıları vesaire, şu anda gündemde.
+
+22
+00:17:41,172 --> 00:17:48,771
+Önümüzdeki belli bir süre içerisinde de pek azalacakmış gibi görünümün aksan ederek artıyor.
+
+23
+00:17:49,872 --> 00:17:56,652
+Bugün bunlar nelerdir? Bunlardan birazcık bahsedeceğiz.
+
+24
+00:17:56,652 --> 00:18:03,052
+İlk önce otoragresif modelleyeceğiz. Sonra uyarlanmış hallerinden bahsedeceğiz.
+
+25
+00:18:03,316 --> 00:18:18,316
+Sonra biraz yöntemlerden bahsedeceğiz. Bu işler yapılırken kullanılan yöntemlerden. Ondan sonra da küçük bir tartışma slaytımız var. Nereye gidiyoruz?
+
+26
+00:18:18,316 --> 00:18:30,316
+Şimdi, dil modelleri işte Large Language, Moses diye ifadeden öğrenenler, token tahminiyle eğitirler.
+
+27
+00:18:30,771 --> 00:18:51,751
+Daha önce bundan bahsettik ama çok küçük bir şey söyleyelim. Normalde supervised learning diye ifade ettiğimiz modelin şöyle bir inputa karşılık şöyle bir output vermesini bizim söylediğimiz yaklaşımlar.
+
+28
+00:18:51,751 --> 00:18:55,391
+Yani böyle bir input gelirse böyle bir output ver.
+
+29
+00:18:58,768 --> 00:19:20,607
+Supervised olması, dediğim gibi bir input ve output mappingi içeriği olması. Bu özellikle output kısmının hazırlanması, eğer insan gücüyle oluyorsa bu çok ucuza olan olabilen bir şey değil.
+
+30
+00:19:24,980 --> 00:19:48,420
+Eğitim kümesinin büyüklüğünü bir şekilde sınırlandıran bir şey. Fakat bunu çok daha ucuz yollu halledebilir miyiz? Üzerine düşünüldüğümde burada işte biz evimizde bir input var.
+
+31
+00:19:53,011 --> 00:20:00,711
+Zaten orijinalde olması gereken şeyi biliyoruz. Dolayısıyla onu olması gereken haline dönüştürelim.
+
+32
+00:20:02,551 --> 00:20:12,471
+Bu, bahsettiğim gibi birkaç farklı şekilde yapılabiliyor. Next token var, must token var, change token var.
+
+33
+00:20:12,632 --> 00:20:18,831
+Yani çok kabaca şunlardan sonra ne gelir diye soruyorsanız o next token prediction haline geliyor.
+
+34
+00:20:19,316 --> 00:20:35,956
+İşte bir sekansın içerisindeki bir şeyi maskeleyip onun ne olduğunu sorarsanız o maske oluyor. Bir şeyin içerisinde bir şeyi değiştirip neyin değiştirdiğini tahmin ettirmişseniz, şu cümle, şu kelime değişmiş.
+
+35
+00:20:37,036 --> 00:20:46,615
+Orijinal nübari elinizde bize bir başka bir modelde değişiklik yapıyorsunuz ya da kurallarla değişiklik yapıyorsunuz. Bu değişmiş olan şeyi tahmin ediyoruz.
+
+36
+00:20:47,155 --> 00:20:51,255
+Dolayısıyla en çok kullanılan Next, Mask ve Changed.
+
+37
+00:20:52,615 --> 00:20:59,275
+Şimdi günümüzde kabaca bu autoregressif modeller, yani bunlar Next, Think.
+
+38
+00:20:59,275 --> 00:21:03,955
+Think diye ifade ettiğim şey aslında buradaki Think'ten kastım.
+
+39
+00:21:04,496 --> 00:21:10,175
+Yani kelimede olabilir, token da olabilir, harf de olabilir, cümle de olabilir vs. vs.
+
+40
+00:21:10,316 --> 00:21:14,336
+Değişik ölçeklerde olabilecek şeyler. Yani bir sonrakini tahmin.
+
+41
+00:21:15,476 --> 00:21:20,676
+Bu şu anda en azından standart gibi görünüyor büyük dil modelleri için.
+
+42
+00:21:22,115 --> 00:21:41,615
+Yani daha önce ağırlıklı olarak Musk Token Prediction ile eğitilmiş modeller üreten firmalar bile günümüzde hep Next Token Prediction'a doğru geçmiş durumda şu anda.
+
+43
+00:21:42,740 --> 00:22:10,259
+Bunun çok temel bir sebebini şu olarak gösteriyorum. Yeni görevlere çok daha kolay bir uyum sağlamak istedik. Çünkü bu büyük dil modellerini eğitim, yani pre-trained modelleri eğitmekteki amacımız bizim bir problemimizi çözmeleri değil. Bunlar tek başlangıç bir problem çözmüyorlar. Başlangıçtaki amaç o. Ama bunları aslında elimizdeki başka problemleri çözmek için kullanacağız.
+
+44
+00:22:11,124 --> 00:22:37,864
+Burada da bu elimizdeki problemleri uyumlu hale getirmek aslında yeni görevler gibi bir şey o. Yeni görevlerden kastımız o. Bunlara bu tarz yapıların çok daha kolaylıkla uyum sağlayabildiği her türlü görevi bu Next Think Prediction kapsamında ifade edebildiğimiz için etmenin yolları bulunabildiği için ya da öyle söyleyelim.
+
+45
+00:22:38,420 --> 00:22:55,680
+Bu oldukça benim gibi istanlak bir hale gelmiş durumda. Dolayısıyla benim gibi başlangıçta belki hani mesela Bert'i falan düşünürüz. Bert temelde orada mask yapı.
+
+46
+00:22:56,915 --> 00:23:14,915
+Tabii bir taraftan Bert'in popülerliği vesaire maskelenmiş din modellerine olan ilgi epey bir arttırdı. Ondan sonra yine aşağı yukarı Bert'ten biraz daha önce belki çıkan...
+
+47
+00:23:16,596 --> 00:23:27,395
+Ya da yok, part'ten önce çıkan demelim. Yani GPT'nin orijinal hali aslında, orijinal dememedi, Transformer'lı hali tabii ki part'ten sonra çıktı.
+
+48
+00:23:27,395 --> 00:23:38,796
+Ama Next Token Prediction yaklaşımı hiç de yeni bir yaklaşım değil.
+
+49
+00:23:40,147 --> 00:24:02,268
+Yani epey uzun zamandır ortada olan bir yaklaşım. Yanlış hatırlamıyorsam, Shint'ın Back Propagation'ı önerdikleri paper'da bile eğittikleri tabii küçük bir şey. Knox Next World Predation var.
+
+50
+00:24:03,059 --> 00:24:27,559
+Dolayısıyla çok yeni bir mevzu değil. Ama popüler hale gelmesi özellikle Kasım ya da Aralık 2022'deki bu Çekçikliti ile bu Büyük Din modellerini yapabildiklerinin public olarak gösterilmesi üzerinden başladı.
+
+51
+00:24:27,559 --> 00:24:30,460
+Ve şu anda 6 ay geçmiş.
+
+52
+00:24:33,875 --> 00:24:35,996
+Bayağı sağlam bir hızla ilerliyor.
+
+53
+00:24:37,215 --> 00:24:57,096
+Peki, Next Token Prediction dediğimiz şey ya da işte bu Musk dediğimiz yapı da eğitim kümesinde sıfır hatayı erişilebilir mi?
+
+54
+00:24:57,096 --> 00:25:00,135
+Yani eğitim kümesini ezberleyebilir mi?
+
+55
+00:25:01,203 --> 00:25:20,203
+Eğitim kümisini ezberleyebilir mi? Elinizde büyük bir model varsa ve elinizde küçük bir dataset varsa normalde ezberleyebilir. Bunda herhangi bir şey yok. Teknik manada sıkıntı yok. Ama teknik manada…
+
+56
+00:25:23,892 --> 00:25:30,831
+Olmasa bile bunların ezberleyemiyor olmanın bir sebebi var. Ve bu ezberleyemiyor olmak bir şeye aslında yol açacak.
+
+57
+00:25:32,632 --> 00:25:44,851
+Şimdi şöyle bir şey düşünün. İnsan olarak bu görevi yerine getirdiğiniz için şu iki tane, şu üç tane kelimeden sonra aynı kelime gelir.
+
+58
+00:25:47,443 --> 00:26:10,243
+En son olarak düşündüğümüz şeyleri sonuçta kabaca birilerinin de bir yerlere yazdığı bir şeyler. Dolayısıyla o noktada çok büyük bir farklılık yok. O zaman hani şu üç kelimeden sonra gelecek olan kelimeyi tahmin et. E iyi tamam edelim, edebiliriz. Ama o bir tane olmaz değil mi? Yani ne bileyim ben işte.
+
+59
+00:26:10,708 --> 00:26:22,468
+Şunu düşün mesela, LLM'ler, eğitim kümesinde dedim ben mesela. Tamam mı? Şimdi burayı görmeseniz. Bundan sonra ne gelecek diye sorsak. Tamam mı?
+
+60
+00:26:24,867 --> 00:26:36,188
+Buraya bayağı bir şey yazabilirsiniz değil mi? Düşünebiliyorsunuz bunu. Bayağı çok farklı şeyler. Hakikaten yazılabilir. Ve yazılıyor da.
+
+61
+00:26:36,756 --> 00:26:44,876
+Yani LLM'ler eğitim kümesinde diye başlayan cümleleri mesela haratsanız elinizi giderliğimin içerisinde, sağlıyorum, epey bir cümle bulursunuz.
+
+62
+00:26:46,155 --> 00:26:49,336
+Ve bunların her biri farklı şekillerde devam ederler.
+
+63
+00:26:50,816 --> 00:26:57,316
+Dolayısıyla farklı şekillerde devam ediyorlarsa eğitim kümesinde sıfır hataya erişmek mümkün olur mu?
+
+64
+00:26:58,316 --> 00:26:59,236
+Soru sorsam.
+
+65
+00:27:05,587 --> 00:27:07,500
+Sıfır hatar demek ne demek?
+
+66
+00:27:11,571 --> 00:27:17,672
+Eğitim Üniversitesi'ne sıfır hata yarışması. Ne dersiniz? Mümkün müdür böyle bir şey?
+
+67
+00:27:25,460 --> 00:27:26,500
+Sesim geliyor mu bu arada?
+
+68
+00:27:29,059 --> 00:27:30,320
+Evet hocam geliyor.
+
+69
+00:27:32,179 --> 00:27:33,220
+Tamam, evet.
+
+70
+00:27:34,519 --> 00:27:37,480
+Ne diyorsunuz? Sıkı da tayya erişmek mümkün mü?
+
+71
+00:27:39,340 --> 00:27:41,179
+Yani bu hafta şöyle bir şey.
+
+72
+00:27:43,659 --> 00:27:49,259
+Klasik makine öğrenmesi açısından baktığınızda, aynı noktada farklı sınıflardan örnekler var.
+
+73
+00:27:50,679 --> 00:27:51,360
+Değil mi?
+
+74
+00:27:54,579 --> 00:28:04,779
+Aynı başlangıçla başlayan ve devamı farklı olan bir sürü cümle var elbizde derlerinin içerisinde. Bunların her biri için doğru cevabı üretmeniz mümkün mü?
+
+75
+00:28:07,000 --> 00:28:16,919
+Değil değil mi? Dolayısıyla bunların sıfır hataya erişmesi mümkün değil. Eğitim kümesinde. Tabii yeterince büyük bir eğitim kümesinde.
+
+76
+00:28:18,675 --> 00:28:46,175
+Peki, sıfır hataya erişim var. Yani hani o manada düşündüğümüzde bunlara eğitimleri için verdiğimiz dataset, pretring modelin eğitimi için verdiğimiz dataset, pretring hale gelmesi için verdiğimiz dataset, dil olduğundan ve çok büyük olduğundan bizim buna sıfır hataya erişmemiz mümkün değil. Peki, sıfır hataya erişemiyor. İyi güzel ama hatayı azaltmaya çalışıyor.
+
+77
+00:28:46,463 --> 00:29:03,163
+Hatayı azaltabilmesi için ne yapması gerekir? Hatayı azaltabilmesi için bu aynı inputtan sonra gelebilecek farklı outputları birbirine ne yapması lazım? Yaklaştırması lazım.
+
+78
+00:29:03,892 --> 00:29:29,112
+Bunların iç temsillerini, kendi içindeki temsillerini birbirine yaklaştırması lazım ki bazen onu bazen onu yapabilirsin. Tahmin edebilsin. Aralarında çok büyük şeyler oluşmayacak. Farklılıklar oluşmamasını sağlaması lazım. Çok alakasız temsillere bunları götürürse hatası çok çok daha şey olacak. Fazla olacak. Dolayısıyla dediğim gibi çok büyük bir hükümelerimde sıfır hataya erişmek falan.
+
+79
+00:29:29,523 --> 00:29:38,884
+Çok makul şereyler diller. Bu aynen dediğim gibi. Aynı noktada birden fazla sınıf. Örnek olması gibi bir şey.
+
+80
+00:29:38,884 --> 00:29:47,803
+Şimdi sınıf diyorum, sınıfla büyük dil modellerinin alakası var diyebilirsiniz ama geçen haftada ya da ondan önceki haftada konuşmuştuk konuda.
+
+81
+00:29:48,803 --> 00:29:53,603
+Aslında bu dil modellerinin yaptığı şey bir sınıflandırma.
+
+82
+00:29:54,867 --> 00:30:06,947
+Yani bir regresyon yapmıyorlar, bir sınıflandırma yapıyorlar. Nasıl bir sınıflandırma yapıyorlar? O anki mevcut duruma göre bir tane token seçiyorlar.
+
+83
+00:30:08,788 --> 00:30:21,607
+Token seçme işini aslında elinizdeki vocabulary size nasıl saldırıyorsunuz? 128 bin ise, 128 binlik bir vocabulary varsa, 128 bin tane sınıftan bir tanesini ne yapıyorsunuz? Seçiyorsunuz.
+
+84
+00:30:22,867 --> 00:30:27,907
+Softmax'te. Dolayısıyla bir sınıflandırma problemi çözüyorlar.
+
+85
+00:30:28,788 --> 00:30:56,307
+Bu açıdan baktığınızda, demin söylediğim şey daha düzgün oturuyor belki. Yani aynı noktada farklı sınıfta. Yani şöyle bir şeyden sonra, eğitim değerlemeler, eğitim kümesinden sonra buraya bir sürü farklı kelime gelebilir. Sizin eğitim kümenizde. Ve bunların her birini, kafaca birer kelimeliklerinin hallerini düşünse, bunların her birinin farklı sınıflar. O zaman aynı inputa karşılık farklı algıptanlar. Dolayısıyla böyle bir hükümesinde.
+
+86
+00:30:56,852 --> 00:31:08,192
+Ne yapması lazım? Bunların, şuradaki farklı farklı şeylerin hepsinin temsillerini birbirine yaklaştırması lazım. Onları benzer noktalara indirgemesi lazım.
+
+87
+00:31:08,192 --> 00:31:14,432
+Peki, şimdi tabaca yapılan işlem. Bu tarz bir işlem.
+
+88
+00:31:25,107 --> 00:31:39,547
+Böyle, nasıl söyleyelim, Türkçesini şu hale getirdim. Çok kısa olmadı ama daha kısa ve iyisini de bulamadım açıkçası.
+
+89
+00:31:40,768 --> 00:31:50,248
+Şey, mevzu şu, amaçlanmadan ortaya çıkan. Belki bir yan ürünü falan gibisinden de düşünebilirsiniz ama yan ürünün.
+
+90
+00:31:50,559 --> 00:32:00,239
+Amaçlanıp amaçlanmadığı da şey oluyor. Dolayısıyla asıl amaç, en başta böyle bir şey olsun diye uğraşmıyorsunuz.
+
+91
+00:32:00,239 --> 00:32:09,519
+Ama otoragresif elelemci ağır, işte, few shot learners, bu open-air'in paper'ı.
+
+92
+00:32:09,519 --> 00:32:16,239
+Şimdi yaptığınız iş bu temelde. Daha doğrusu şu.
+
+93
+00:32:16,596 --> 00:32:42,816
+Bir sonraki kelimeyi tahmin. Fakat bunların dediğim gibi en başta amaçlanmayan bazı kabiliyetlere sahip olduklarını görüyoruz. Nasıl bir şey bu yeni kabiliyet? Yani bu emerging properties. Yeni bir görev için modelde güncellemede fine tune'u yapmadan sonuç alabilmek için. Emerging properties dediğimiz şey bu.
+
+94
+00:32:43,135 --> 00:32:53,735
+Bizim hiç şeyle de alakamız yok. Neden bana? Bir problemi çözmek. Çünkü pretrain modelleri oluşmak dediğim gibi başlangıçtaki hikaye ne? Herhangi bir problemi çözmek değil.
+
+95
+00:32:53,735 --> 00:33:04,275
+Pretrain modellerde. Elimizdeki başka başka problemleri çözerken bize yardımcı olacak sağlam bir altyapı oluşturmak. En baştaki amaç bu.
+
+96
+00:33:10,195 --> 00:33:30,755
+Büyüklükleri, derlen büyüklükleri vs. vs. belli sınırları açtıktan sonra bunların hiç fine tune edilmeden de oldukları halleriyle, next thing prediction'da belli türden problemleri çözebildikleri ifade ediliyor.
+
+97
+00:33:31,412 --> 00:33:38,412
+Şimdi bu fine-tune yapmak ve fine-tune yapmamak ne demek? Ondan birazcık bahsedeceğim.
+
+98
+00:33:38,412 --> 00:33:53,991
+Şimdi normalde bu sol taraftaki şu kısım, bu GPT-3'ün paperı bu arada. GPT-4'ün, böyle teknik bir paperı yok o manada.
+
+99
+00:33:56,723 --> 00:34:20,123
+Bittiği işte çok çok teknik değil belki ama neyse önemli değil. Şimdi gelelim fine-tune etmek, etmemek demek ne demek. Şimdi fine-tune dediğimizde normalde mesela şöyle bir şeyden sonra şöyle bir şey tahmin etmen lazım diye bir şeyimiz var elimizde yapılar ve biz bunu veriyoruz. Yani böyle bir şey veriyoruz ve model bize bir şey söylüyor.
+
+100
+00:34:20,659 --> 00:34:31,299
+O söylediği şeyin olması gereken şeyden farkına göre biz gradyanları, mesela lotluğu hesaplıyoruz, dostluğumuz gradyanlarını hesaplıyoruz ve gradyanı güncel ediyoruz. Başka bir şekilde.
+
+101
+00:34:31,299 --> 00:34:36,299
+Dostum, elimizdeki yeni görev için, elimizdeki yeni görev için...
+
+102
+00:34:38,068 --> 00:35:03,288
+Elimizde bir ver hükümesi var. Yani şeyi yaptık, Pretrain Etic modeli duruyor bir tarafta. Ondan sonra fine tune ederken yaptığımız şey şu. Şöyle bir input'a karşı, şöyle bir output'a karşı, şöyle bir output'a karşı, şöyle bir output'a karşı, şöyle bir output'a karşı gibi bir ver hükümesi var elinizde. Bu yeni ver hükümesiyle modelin eğitimine devam ediyorsunuz. Yani gradden güncellemelerine devam ediyorsunuz. Eğitim sürüyor. Tamam mı?
+
+103
+00:35:03,635 --> 00:35:15,475
+Öncekine göre eğitim çok çok daha kısa sürüyor. Çok çok daha küçük bir veriki mesele yapılıyor. Ama gradiyan, yani şeyler, date'ler değişiyorlar. Modernin date'leri değişiyor.
+
+104
+00:35:15,996 --> 00:35:28,416
+Şimdi bu dediğim gibi standart fine tune süreci. Şimdi mesela çok basit bir görev düşünelim. Görev şu, cümlenin son kelimesini tahmin edip.
+
+105
+00:35:29,907 --> 00:35:49,967
+Şimdi böyle bir task var mı? Var. Cümlenin son kelimesini tahmin etmek dediğimiz şey için bizim Next Word ya da Next Token Prediction ile eğitmiş olduğumuz modeli bir daha fine tune etmenin çok da bir esprisi yok.
+
+106
+00:35:57,172 --> 00:36:21,511
+Elimizdeki pretreat modeli kullandığımızdaki eğitim mantığı birebir aynısı. Yani biz cümlenin son kelimesini silip, verip modele next token prediction nedir diye doğduğumuzda bize bir şey dikiyor. O da zaten bizim görevin bizden beklediği şey. Dolayısıyla burada ekstradan bir şey temelde yok.
+
+107
+00:36:22,996 --> 00:36:33,576
+Şimdi bu noktada X-Shot karşımıza çıkıyor.
+
+108
+00:36:33,695 --> 00:36:43,336
+Şimdi X-Shot dediğimiz şey de bir şekilde koşullandırma diye ifade edebileceğimiz bir parça var.
+
+109
+00:36:44,403 --> 00:37:05,844
+Ama bu parça aslında bir fine-tune süreci değil. Yani hani input yani şöyle bir şey söyleyemez. Şimdi modele verdiğimiz şey şöyle bir şey bakın. Zero shot diye ifade edelim. Translate English to French diyorsunuz. İki noktayı süre diyorsunuz. Sonra çiz diyorsunuz. Sonra işte şöyle bir işaret. Ki o işaretin de çok çok şeyi.
+
+110
+00:37:06,463 --> 00:37:26,163
+Öyle olması şart değil, öyle söyleyeyim. Böyle diyorsunuz. Ve diyorsunuz ki, next token prediction çalışır. Bundan sonra ne gelir? Şey bu. Hikaye bu. Yani bu cümleden sonra, yazmış olduğum cümle sekansından sonra ne gelecek? Burayı tahmin etmesin istiyorum.
+
+111
+00:37:26,771 --> 00:37:33,171
+Bu sizin sistemleriniz input kısmı ve next token neyse onu tahmin etmeye çalışıyor.
+
+112
+00:37:33,171 --> 00:37:39,731
+Şimdi bu zero shot kısmı. Zero shot'ın anlamı aslında yani modela biz şöyle bir şey yazabiliriz.
+
+113
+00:37:39,731 --> 00:37:42,572
+Yani şu translate English, French diye bir şey koymadınız direkt.
+
+114
+00:37:42,572 --> 00:37:44,572
+Cheese deyip bunu yazdığınızda...
+
+115
+00:37:44,820 --> 00:38:12,720
+Burada hani çizden sonra ne gelecek falan bu biraz şey, çok daha muğlak öyle söyleyeyim. Ama şöyle bir şey yazıp verdiğinize bu çok daha anlaşılır bir şey. Yani modern ne demek istediğinizi anlayabilmesi için bir miktar daha bilgi yok. Bu task description diye ifade ettiğimiz kısım o ama hani task description ile eğitilen bir şey yok aslında arka tarafta. Yani cümle next token prediction ile en azından bize söylenen kısım.
+
+116
+00:38:12,820 --> 00:38:18,619
+O. Şimdi bu zero shot kısmı, yani hiçbir örneğini vermediğimiz durum, yani cheese'e karşılık şunu de.
+
+117
+00:38:19,300 --> 00:38:28,240
+Şimdi one shot ve few shot'ta ise yapılan işlem şu karşılıklara karşı bir şeyler söylemek yani.
+
+118
+00:38:28,240 --> 00:38:30,420
+Şunu dedin, buna karşı bunu söyle.
+
+119
+00:38:31,188 --> 00:38:45,368
+Şunu dedim, burada bıraktım. Yani burada aslında bir tane one shot dediğim bir örneği vermiş bu konuda. Zero shot'ta sadece küçük bir description var, ondan sonra şey yok. Buna karşı şunu üretmelisin gibisinden bir şey. Yani burada buna karşı bunu üretmelisin.
+
+120
+00:38:45,368 --> 00:38:58,648
+Efe shot'ta da işte şurada gördüğünüz gibi şuna karşı, şunu, şunu, şunu, şunu, şunu diye İngilizce'den Fransızca'ya üç tane örnek verip mesela cheesy sorup artık buradan cevap almaya çalışıyorum.
+
+121
+00:38:58,739 --> 00:39:08,719
+Bunların hepsi bakın, dikkat ederseniz bunların üçü de Next Token Prediction ile eğitilmiş modele direkt veriliyorlar. Yani burada hiçbir eğitim bu noktada yok.
+
+122
+00:39:08,719 --> 00:39:23,435
+Şimdi şu üçlü yapının performans açısından şu lambada taskımındaki karşılaştırmasını görüyorsunuz. Şimdi bu lambada taskımın karşılaştırılmasında X ekseni, şu eksene baktığımızda...
+
+123
+00:39:23,891 --> 00:39:47,351
+Dilmoden'in parametre sayısı, burada milyar cinsinden yapılmış. Şu 175 milyar diye gördüğümüz şey, GPT'nin kendisi, GPT 3 daha doğrusu. Bunlar da onun daha az parametre sahip versiyonları. Aynı data üzerinde eğitilmişler.
+
+124
+00:39:48,532 --> 00:40:06,612
+Şimdi buraya en başa baktığımızda 0.1 billion ne oluyor? 100 milyon parametreli bir modellden bahsediyoruz. 100 milyon parametreli bir model. Şimdi bunun zero shot kabiliyeti, işte accuracy anlamında yüzde kırklar civarında falan.
+
+125
+00:40:07,188 --> 00:40:25,587
+Bu şeyden bahsedeceğim. Yani %40 başarı, %80'lere falan çıkan başarı birazcık sağlam başarılara benziyorlar. Ondan bahsedeceğiz sonra. Şimdi şurada bunların...
+
+126
+00:40:29,811 --> 00:40:52,751
+Modeldeki parametre sayısı arttıkça üçünün de giderek iyileştiğini görüyoruz. Bir gözümüze çarpan kısım o. İkinci gözümüze çarpan, çok kabaca belki biraz beklenen bir şey, işte F-Shot'ın bir miktar daha diğerlerinden daha başarılı olduğu. En başlarda öyle çok da şey olmasa bile belli bir zaman sonra, şurada özellikle şu noktadan itibaren.
+
+127
+00:40:53,204 --> 00:41:02,404
+Bunları aşabildiğini görüyoruz. Zero shot şöyle olmuş. One shot hala daha kötü.
+
+128
+00:41:02,404 --> 00:41:13,068
+Şimdi, tabii buna bir açıklama, yani buna karşı bu...
+
+129
+00:41:13,907 --> 00:41:24,768
+Bu niye daha kötü? Şuraya baktığımızda zero shot. One shot, yeşil aşağıda duruyor. Ve sarı da yukarıda duruyor.
+
+130
+00:41:24,768 --> 00:41:32,387
+Yani bir ne diyelim, sistematik bir şey yok. O noktada düşünceli.
+
+131
+00:41:34,547 --> 00:41:39,827
+Dediğim gibi bu tamamen hiçbir eğitim falan.
+
+132
+00:41:43,284 --> 00:41:47,963
+Buradaki modellerin hiçbiri fine tune edilmemiş modeller. İfade edebiliriz.
+
+133
+00:41:48,583 --> 00:41:56,284
+Peki, başka neler var? Yani böyle mesela Lambada diye bir dataset var. Bu Lambada dediğim gibi cümlenin son kelimesini tahmin etmek üzerine.
+
+134
+00:41:59,503 --> 00:42:07,423
+Burada mesela işte FIUŞAT örnekler, bunlarda şeyi hatırlamıyorsam bir 50-60 tane falan şeyin olması lazım.
+
+135
+00:42:07,923 --> 00:42:33,623
+Pronto naması lazım. Yani şurada mesela bunda on beşi, K on beşti. Bunlar da biraz daha yüksektir ya. Yani olduğu gibi direkt işte aritmetikte şununla şunun toplumu nedir falan diye direkt hemen şey yapmıyorsunuz ya birkaç tane daha bir şey var. Öncesinde gelen. Neyse orası çok çok önemli. Burada çeşitli görevler var. Burası aritmetik görevleri görebileceğiniz gibi.
+
+136
+00:42:38,771 --> 00:42:40,311
+İşte çeviri var.
+
+137
+00:42:44,083 --> 00:43:02,344
+Üretilen şeyin insanlar tarafından ayırt edilebilme taskı var. Yani belli bir konuda bir şey yaz diyorsunuz, o da yazıyor. O yazdığı şeyle insanların yazmış olduğu şeyi yine insanların karşısına koyuyorsunuz. İnsanlar bu ikisini şey diyebiliyorlar mı?
+
+138
+00:43:02,739 --> 00:43:06,960
+İşte bunu insan mı yazdı, makine mi yazdı, doğru tahmin edebiliyorlar mı?
+
+139
+00:43:07,960 --> 00:43:22,319
+Ekürisinin kabaca, işte başlangıçta model küçükken, insanlar %75'ler civarındayken model parametre yükseldikçe %50'ye kadar düştü.
+
+140
+00:43:22,420 --> 00:43:26,000
+%50'nin anlamı ayet edilemiyor olması zaten kabaca.
+
+141
+00:43:26,771 --> 00:43:31,131
+Yani bu metni bir insan mı yazmış yoksa işte CPT3 mü yazmış?
+
+142
+00:43:31,992 --> 00:43:39,091
+Bunu ayırt edilmesinin giderek model büyüklüğü arttıkça zorlaştı anlatılıyor.
+
+143
+00:43:39,091 --> 00:43:50,492
+İşte çeviri dediğimiz şey burada erişilen blues kolarına baktığınızda bunlar supervised yani fine tune edilmiş.
+
+144
+00:43:52,052 --> 00:43:59,952
+Fanyton edilmiş yöntemlerle kapışabilecek kabiliyetlere sahip şeyler yapılar, gördüğünüz sonuçlar.
+
+145
+00:43:59,952 --> 00:44:19,412
+Yani şey yapmadan, bir görev baştan vermeden, fanyton yapmadan, yani gradient şeylerle, herhangi bir değişiklik yapmadan sadece akıllı inputlar tasarlayarak.
+
+146
+00:44:22,068 --> 00:44:32,188
+Birçok veri kümesi için pantun edilmiş yapılarla başa çıkabilecek bir modelden bahsediyor.
+
+147
+00:44:35,827 --> 00:44:48,367
+Bir şey de oradan gittik. Task agnostik diye ifade ettiğimiz kısım, her türlü görev için çalışabilecek yapılar.
+
+148
+00:44:48,367 --> 00:44:55,788
+Şimdi tabi burada dikkat çekilebilecek birkaç tane şey var. Yani şurada ne bileyim, 4 digit edition mesela.
+
+149
+00:44:55,788 --> 00:45:02,788
+Yani mesela şurada şey dedim yani, bir sistematik yok.
+
+150
+00:45:03,891 --> 00:45:08,891
+Burada da bu sistematiğin olmadığını yine görüyoruz.
+
+151
+00:45:08,891 --> 00:45:13,891
+Nasıl söyleyeyim?
+
+152
+00:45:13,891 --> 00:45:20,891
+Bazı zor şeyler, bize göre çok daha zor.
+
+153
+00:45:20,891 --> 00:45:23,891
+Bunlar da iyi sonuçlar edildi.
+
+154
+00:45:23,891 --> 00:45:28,891
+Ama daha kolaylarında işler pek hale gitmeyebiliyor.
+
+155
+00:45:30,963 --> 00:45:49,344
+Bir kabiliyet seti mi diyeyim ben. Pek gözükmüyor. Şimdi burada hala o olacak kötü performans sergili birçok görev görebiliyorsunuz.
+
+156
+00:46:01,364 --> 00:46:10,364
+Bunlar GPT-3 için olan şeyler. Bir de onun 4 versiyonu var. Tabii 4 versiyonu için...
+
+157
+00:46:11,864 --> 00:46:18,364
+...mimarisinin büyüklüğünü falan onların hakkında çok da fazla bir şeyimiz yok ama orada da yine hala böyle tarz...
+
+158
+00:46:18,364 --> 00:46:25,364
+...sistematik olmayan hatalar, böyle ifade edeyim. Görüldüğünü, yani ne bileyim işte...
+
+159
+00:46:25,364 --> 00:46:29,195
+...kırk dijitli iki sayı toplayabiliyor mesela.
+
+160
+00:46:30,291 --> 00:46:55,291
+Ama o 40 dijitli sayıdan bir tanesini 35 dijitli sayıda çevirdiğiniz zaman toplayamayın. Bu en garip bir durum. Beklentimiz de öyle söyleyebilir belki. Beklentimiz de çok çok uyuşmayacak bir şey. Birisi size dese ki ben...
+
+161
+00:46:56,083 --> 00:47:22,523
+Mesela 6 basamaklı sayıları çarpabiliyorum ama 3 basamaklı sayıları birlikte çarpamıyorum dese, bir insan size bunu dese. Şey yapamazsınız, oturtamazsınız. Değil mi? Yani ben çok iyi çarpma yapıyorum da toplamayı beceremiyorum falan. Bu şey, bizim alışık olduğumuz bir şey değil, durum değil, öyle söyleyeyim.
+
+162
+00:47:24,307 --> 00:47:41,367
+Peki, çoktan seçmeniz sorulara bu sistemlere nasıl cevap verdireceğiz? Şimdi burada soruları biraz dönüştürüp sormak da mümkün. Mesela şöyle yapabilirsiniz.
+
+163
+00:47:43,699 --> 00:47:51,019
+Soruyu direkt sorabilirsiniz ya da soru şu cevabın şu olmasını istiyorum diye de yapabilirsiniz.
+
+164
+00:47:51,019 --> 00:48:03,979
+Tabii burada bundan sonra gelecek olan şey ne olacağını tahmin ederken, şurada gördüğünüz seçeneklerin her biri için, nasıl bu işlem yapılıyor burada?
+
+165
+00:48:04,896 --> 00:48:25,556
+Bu işte Common Sense QA diye bir dataset var. Bu dataset'in üzerinde GPT'nin performansını ölçmek istiyorsunuz. Şimdi bu Common Sense QA'da da şöyle bir şey var. Soru, şu cevap, şu soru, şu cevap, şu gibisinden yapılar var. Yani bu şeyler, cevap dediğim çoktan seçmeli bir yapıda var.
+
+166
+00:48:32,755 --> 00:48:59,635
+Bunun devamında bunun gelmesi mi? Daha yüksek olasılık. Bunun gelmesi mi? Daha yüksek olasılık. Bunun gelmesi mi? Bunun gelmesi mi? Bunun gelmesi mi? Yani bunu devam ettir. Söylediği şey, bak o bunlardan biri ise doğrudur ya da işte doğru olansa doğrudur şeklinde değil. Çünkü o zaman bayağı sağlam, zor bir işten bahsetmiş olursunuz. Çok da anlamlı da değil aslında. Bakar seçenekleri görmesi daha mantıklı.
+
+167
+00:49:00,532 --> 00:49:25,192
+Burada yapılan işlem dediğim gibi, şunun devamında, şu ifadenin devamında bunun gelmesi olasılığını, sonuçta bu modeller şeyde hesaplayabiliyorlar, bir cümlenin olasılığını hesaplayabiliyorlar, kullanabiliyorsunuz bunun içeride. Mesela işte, en sırf iki nokta üst üste, ondan sonra bir şey gelecek. Bir şey gelecek diye mesela, summer'ı koyarsan bir olasılığı var bu cümlenin.
+
+168
+00:49:25,652 --> 00:49:39,832
+Ya da parkı koyarsan başka bir olasılığı var. Destopu koyarsan başka bir olasılığı var. İşte bu 1, 2, 3, 4, 5 tane olasılıktan hangisi en yüksekse onu modelin cevap olarak vermesini sağlıyorlar. Kabul ediyorlar. Öyle söyleyeyim.
+
+169
+00:49:40,179 --> 00:49:53,420
+Dolayısıyla her bir cevabın öğretilme olsadığı bulup büyük olan seçilerek işlem yapılıyor. Çoktan seçmeni sorular içeren veri hükümelerinde birçok benchmark dataset'i bu şekilde hazırlandığı için.
+
+170
+00:49:54,800 --> 00:50:00,619
+Şimdi dediğim gibi burada da multiple choice question'larda da bu tarz bir yaklaşım kullanılıyor.
+
+171
+00:50:03,987 --> 00:50:16,087
+Mesela başka bir şey. Şu yukarıdaki kısma bakalım. Yine bu da şöyle bir ifade var. Buna pozitif diye devam etmişiz.
+
+172
+00:50:16,087 --> 00:50:29,387
+Şu sarı kısım bizim belli örneklerimiz. Yani şuradaki şu şeylere renk geliyor. Şuradaki few shots'lara renk geliyor.
+
+173
+00:50:29,920 --> 00:50:41,920
+Daha sonra şu yeşil kısmı yazıyoruz. Yani şunun tamamı, şuraya kadar şu en son uzun alt çizgiye kadarki kısmın tamamı bizim inputumuz aslında. Ve bir şey söyleyeceğim. Tamam.
+
+174
+00:50:42,920 --> 00:50:53,920
+Amacımız burada ne? Amacımız şu, ben yeni bir veri kümesi oluşturuyorum bakın ve bunu şeyle yapıyorum. Tren falan yok burada bakın dikkat edelim.
+
+175
+00:50:56,307 --> 00:51:13,327
+Kullanmıyorum. Şuradaki olay da oydu aslında. Böyle bir şeye karşı, böyle bir şeye karşı, böyle bir şeye karşı, böyle bir şeye karşı, böyle bir şeye karşı, böyle bir şeye karşı, böyle bir şey de diye söylemeye çalışıyorum. Fakat bunu şeyde değil, tren kısmında değil, input kısmında yapıyorum. Havada bir veri hükümesi oluşturuyorum, sallayarak.
+
+176
+00:51:14,291 --> 00:51:21,791
+Ve burada bunu tahmin et. İşte burada bunun ne olduğunu pozitif diye bize mesela söyleyebiliyor diyelim ki.
+
+177
+00:51:22,492 --> 00:51:30,132
+Buradaki cümlelerden iki hakikaten pozitif, ikincisi nötrüm, üçüncüsü negatif bir ifade.
+
+178
+00:51:31,052 --> 00:51:36,552
+Şimdi bunun çok enteresan bir durumu var.
+
+179
+00:51:37,396 --> 00:51:59,856
+Şuradaki pozitif, nötr, negatif diye verdiğimiz şeyleri karıştırsak, yani karıştırsaktan kastım şu, hani buraları rastgele yapsak. Şuradaki soruya cevap verme oranı o kadar fazla düşmüyor. Bu enteresan bir şey.
+
+180
+00:52:04,244 --> 00:52:27,384
+Bakayım. Sarılar ve kırmızılar. Yani sarılar doğru etiketlerin olduğu durumdaki performanslar. Kırmızılar ise etiketlerin yanlış olduğu durumdaki performanslar. Görününüz gibi normalde şey gibi gelir. Çok büyük bir düşüş olacak.
+
+181
+00:52:28,403 --> 00:52:54,503
+Öyle bir şey olmuyor. Bu enteresan bir durum. Bununla direkt alakası üzerinden bir şey yok aslında. Zaten veri gümlesi, ona söylediğimiz şeyde de öyle bir şey. Bunu dersen bunu deyi ben çok açık bir şekilde söylemiyorum zaten. Öyle söyleyeyim. Çok açık bir şekilde söylemiyorum.
+
+182
+00:52:55,572 --> 00:53:06,352
+Çok açık bir şekilde söylediğim neresi? Fine-tune kısmı. Fine-tune kısmı ya da işte o pre-treng kısmının haline gelene kadar ki kısmı. Bu oldukça enteresan bir şey.
+
+183
+00:53:06,931 --> 00:53:16,851
+Hiç görmediği kelimeler için bir şeyler yapabiliyor mu? Evet, bunlarla da alakalı şeyler var. Belli, kabili. Şu kelime diyor, şöyle bir şeydir diyor. Onu cümle içinde kullan.
+
+184
+00:53:16,851 --> 00:53:30,851
+Bu da mantıklı cümleler içerisinde. Onu kullanabildiğini görebiliyoruz. Şimdi bunun nasıl mümkün olduğuna dair, böyle çok sağlam bir açıklamıyorum. Şurada bir tane şey var. Bayez'in...
+
+185
+00:53:32,788 --> 00:53:46,688
+Bayezçi bir bakış açısıyla bir olasılık yani bunun nasıl olabildiğine dair. Özellikle şundan karıştığı zaman bile hala bunun buraya anlamlı bir şey yani bununkini üretebiliyor olması.
+
+186
+00:53:47,215 --> 00:54:09,496
+Üzerinden anlamlı şey. Ama tabii şey falan olunca gidiyor. Buradaki nötr pozitif falan bunları mesela bambaşka kelimelerle değiştirdiğiniz zaman, ahlaklısı kelimelerle değiştirdiğiniz zaman orası gidiyor. Yani böyle bu sefer anlamlı şey vermiyor. Yani şurası kendi içinde karıştığı zaman çok etkilenmiyor. Anlatabildim mi? Evet, Alena.
+
+187
+00:54:10,835 --> 00:54:25,515
+Hocam ben şey soracaktım. Burada mesela örnekleri yanlış veriyorlar ama aslında kombinasyon gibi veriyorlar yani. Hepsini negatif verseler, hepsini negatif pozitif verseler, tek bir şey gibi. Onu denemişler mi?
+
+188
+00:54:27,827 --> 00:54:33,547
+Bu şey benziyor. Aslında bambaşka kelimeler vermek gibi benziyor. Aslında burada tamam cevap verilir.
+
+189
+00:54:33,547 --> 00:54:38,627
+Ama bak bak bambaşka kelimeler vermek gibi şöyle bak. Şimdi bunun için verdiği şey şunu demek ki olsun bak.
+
+190
+00:54:39,907 --> 00:54:46,387
+Bambaşka kelimeler verse mesela şey de mesela ben pozitife bundan sonra bak şöyle bir şey olsa tamam diyeceğim bak.
+
+191
+00:54:46,887 --> 00:54:49,807
+Pozitife ben bundan sonra armut diyeceğim. Tamam mı?
+
+192
+00:54:50,947 --> 00:54:55,067
+Nötre çöp kutusu diyeceğim. Negatife de ne bilmem çerçeve diyeceğim.
+
+193
+00:54:56,019 --> 00:55:10,000
+Tamam mı? Onları bunlara değiştirdim. Burada bana, tamam mı? Mesela pozitif ve ben armut dedim ya. Bana armut vermesini bekliyor. Değil mi? Anlatabildim mi? Olay bu değil.
+
+194
+00:55:10,643 --> 00:55:38,163
+Bu da yapılabiliyor. Orası ayrı bir menü. Ama olay bunların kendi içlerine karıştığında, yani bunları nasıl söyleyeyim, burada pozitif, mesela bunun gerçekte olan şeyi pozitif. Tamam mı? Bunun gerçekte olan şeyi pozitif. Ve hepsinin birden pozitif olmasına bunun pozitif demesiyle bir şey yok. Ne derler ona? Direkt bir ilişkisi yok. Yani mesela, şuna mesela pozitif diyor ya.
+
+195
+00:55:38,480 --> 00:55:58,180
+Mesela bu negatif bir şey aslında. Buna pozitif demiş. O zaman şey demesi lazım. Buna da negatif demesi lazım normalde. Eğer yeni pozitif negatifse. Anlatabilir miyim? Yani bambaşka kelimelerle değiştirmek gibisinden değil olay sadece buradaki olay.
+
+196
+00:56:01,076 --> 00:56:13,235
+Öylesi de var. Onları da yapıldığı şeyler var. Mesela ben pozitiflerimden sonra elma diyeceğim. Negatifleri armut diyeceğim diyorsunuz. Pozitif bir şey verdiğinizde elma diyor. Yaşlı ya da armut diyor.
+
+197
+00:56:13,780 --> 00:56:22,079
+Ben şeyi merak etmişim, buradaki örneklerin hepsi pozitif dese yine bir şekilde aslında sentiment analizi yaptığını anlayıp,
+
+198
+00:56:22,699 --> 00:56:31,300
+işte pozitif olmasa da, doğru cevap negatif olsa da ama verdiğimiz fişat örneklerin hepsi pozitif olsa da doğru cevabı üretilir miydi acaba?
+
+199
+00:56:31,956 --> 00:56:55,795
+Ona dair bir şey görmedim. Demek istediğini anladım. Ama hepsi birden pozitif olarak versen, her şeyi pozitif diyeceksin diye versen orada buna hala negatif der mi? Mesela negatif olan bir şeye. Bana o pek mümkün gibi gelmiyor. Çünkü şunlarla bir ilişki kurması lazım. Çünkü oradan bir şey üretiliyor.
+
+200
+00:56:57,012 --> 00:57:06,912
+Yani şurada söylediğin şeylerden birisini söylüyor sana. Burada söylediğin şeylerin haricinde bir şey söylemiyor sana. Tamamdır, teşekkür ederim. Rica ederim.
+
+201
+00:57:08,352 --> 00:57:22,912
+Dediğim gibi birkaç tane bunun şeyi var. Olası durumlar var ama çok çok net bir şeyimiz yok. Burada OpenAign API var. Burada mesela işte…
+
+202
+00:57:23,987 --> 00:57:26,788
+Next Token, yani nerede o?
+
+203
+00:57:27,987 --> 00:57:30,228
+Compression, işte.
+
+204
+00:57:31,387 --> 00:57:35,587
+Tamamla. Devamını tamamla, sen tamamla. Bütün şey bu.
+
+205
+00:57:36,587 --> 00:57:44,467
+API'nin yapısı bu. Aynı API yapısıyla çok farklı görevleri, sanki çok farklı görevlermiş gibi.
+
+206
+00:57:44,467 --> 00:57:47,987
+Ne yapabiliyorsun? Prompt dediğiniz şey şöyle bir şey.
+
+207
+00:57:47,987 --> 00:57:50,987
+Mesela böyle bir şey veriyorsun. Şurası biraz kapanmış ama.
+
+208
+00:57:51,539 --> 00:58:10,239
+Bunun devamını getir diyorsun. Böyle bir şey diye. Burada birkaç tane küçük örneği daha var. Böyle bir şey dersem, bunun devamını getir. Böyle bir cevap size.
+
+209
+00:58:19,443 --> 00:58:28,003
+Bu kısımlar aslında şurada yazan şey bu GPT-Tree'nin paperındaki bir cümle.
+
+210
+00:58:31,203 --> 00:58:33,683
+2020 herhalde o zaman, sene.
+
+211
+00:58:35,683 --> 00:58:40,804
+Fine-tune etmediklerini söylüyorlar GPT-Tree'ye.
+
+212
+00:58:47,347 --> 00:58:49,467
+Tamamla, devamını getirir.
+
+213
+00:58:49,467 --> 00:58:51,467
+L, elde edilen cevaplar.
+
+214
+00:58:54,947 --> 00:59:00,288
+Ve bu enteresan bir şey, ne derler ona? Araştırma alanına dönüşüyor aslında.
+
+215
+00:59:01,208 --> 00:59:05,788
+Biz neler bu içinden çıkarttırabiliriz? Nasıl bir şeyler görebiliriz?
+
+216
+00:59:05,788 --> 00:59:12,668
+Çünkü çok enteresan sonuçları doğru ya da bazen yanlış bir sürü sonuçları elde edebiliyoruz.
+
+217
+00:59:13,619 --> 00:59:23,619
+Ama dediğim gibi burada hiçbir şekilde şey yok. Fine-tune'u yapmıyorlar. Bunu feature work olarak yapıyorlar.
+
+218
+00:59:25,619 --> 00:59:36,619
+İşte onun feature work'ü de ne olacak? Bizim bugünlerde görüyoruz. Fine-tune edilmiş dil modeldir.
+
+219
+00:59:40,820 --> 00:59:57,619
+Demin gördüğümüz yapılarda, belli belki bazı örnekleri göstere göstere, cevapları belli kaliteli alabildiğimiz yapılar. Daha sonra bu, dediğim gibi, Funtune kısmına girecek.
+
+220
+00:59:57,619 --> 01:00:07,403
+Şimdi bir ara verelim arkadaşlar. Onun arkasından devam edelim. Saat 9.55. 10 dakika bir ara versek yeter herhalde.
+
+221
+01:00:17,844 --> 01:00:21,864
+Aralıyorum. 10 dakika sonra görüşmek üzere arkadaşlar.
+
+222
+01:09:45,587 --> 01:09:47,127
+Merhaba arkadaşlar.
+
+223
+01:09:58,003 --> 01:10:02,003
+Slide geldi mi? Evet hocam.
+
+224
+01:10:04,243 --> 01:10:13,003
+Şimdi bundan sonra kısımda GPT-3'ün paperında yer alan Feature Work'ten aslında bahsedeceğiz.
+
+225
+01:10:13,003 --> 01:10:23,663
+Şimdi Feature Work nasıl iş iş? Task Agnostic bir yapı, tabii işi yapalım istiyorlar.
+
+226
+01:10:24,307 --> 01:10:39,068
+Tahtaki Arkadaşlar'ın dediğim veri kümelerin, farklı farklı taskların hepsini birden ortak bir kota da eğitelim. Hepsini aynı yapıda verebiliyor olalım.
+
+227
+01:10:40,448 --> 01:10:47,288
+Bambaşka makine çevirisini de aynı hale getirelim. Ne bileyim, özelliklemeyi de aynı hale getirelim vs. vs.
+
+228
+01:10:48,500 --> 01:11:00,639
+Ve bunu yaparken de dille, yani insan dilini kullanalım. İnsan dilinin zenginliği aslında sınırsız sayıda görev tanımlayabilmemiz.
+
+229
+01:11:00,639 --> 01:11:07,500
+Yani insan diliyle bir şeyler söyleyebiliyorsak sisteme her şeyi aşağıya doğru söyleyebiliriz.
+
+230
+01:11:08,479 --> 01:11:10,780
+Tabii model yeterliyse bunu yapabiliriz.
+
+231
+01:11:13,440 --> 01:11:16,139
+Onun üzerine çalışmalar başlıyor.
+
+232
+01:11:16,564 --> 01:11:23,564
+Burada eğitim sürecinde bir değişikliğe gidiyorlar.
+
+233
+01:11:23,564 --> 01:11:38,564
+Fine-tune edecekler modeli. Fakat bu fine-tune'u daha önce self-supervised yapıdan, yani next token yapıdan,
+
+234
+01:11:38,564 --> 01:11:44,076
+bu reinforcement learning, from human feedback denilen yapıya dönüştüyorlar.
+
+235
+01:11:45,171 --> 01:11:58,171
+Şimdi bunun ortaya çıktığı ilk şey, örnek chat GPT değil.
+
+236
+01:11:59,551 --> 01:12:03,471
+Instruct GPT, ondan bahsedeceğiz.
+
+237
+01:12:03,471 --> 01:12:11,179
+Şimdi burada derdimiz aslında...
+
+238
+01:12:12,212 --> 01:12:36,632
+Sistemin bizim istediğimiz gibi akut vermesi. İstediğimizi yapsın ama bizim kabul edebileceğimiz bir yolla yapsın. İstediğimizi ki burada çok kabaca belki tüm dünya bilgisayar bir insan gibi cevap ver ama zararlı olabilecek çıktılar uzatma.
+
+239
+01:12:37,939 --> 01:12:47,659
+Böyle bir objektif fonksiyonu yazmak, matematiksel olarak yazmak zor bir şey. Ama örneklerini vermek mümkün.
+
+240
+01:12:48,719 --> 01:13:00,760
+Tabi burada birkaç tane soru var. Biz şimdi zararlı dediğimiz şey kime göre zararlı? Burası soru işaretli bir şey. İnsanlığa mesela gibi bir.
+
+241
+01:13:01,300 --> 01:13:08,920
+Dediğinizde bile hangi insanlara falan gibisinden sorulara dönüşebiliyor.
+
+242
+01:13:12,884 --> 01:13:20,564
+Problem kolaylıkla ya da çok kolaylıkla dönüştürülebilir, böyle ifade edelim belki.
+
+243
+01:13:25,244 --> 01:13:29,164
+Bildiğiniz gibi bu konuda epey şu sıralar tartışmalar yürüyor.
+
+244
+01:13:29,984 --> 01:13:35,283
+Şimdi gelelim bu InstagGPT dediğimiz şey nasıl çalışıyor ona.
+
+245
+01:13:35,644 --> 01:13:39,244
+InstagGPT aslında birebir bir model, yani bir diyalog modeli değil.
+
+246
+01:13:39,988 --> 01:13:52,108
+Yani ben şey yapacağım, bir şey söyleyeceğim, onun karşılığında da o bana bir şey söyleyecek. Ondan sonrası yok. Yani bir diyalog sürecinden bahsetmiyor burada.
+
+247
+01:13:52,768 --> 01:14:07,756
+İnsan Akçipil'de dediğimiz gibi bu süreci, yani ben bir şey söyleyeceğim, onun karşılığında bana bir şey söyleyecek süreci var ya, bunu dediğimiz gibi pask-agnostik bir yapıya büründürmek ve mümkün olduğu kadar çok...
+
+248
+01:14:07,891 --> 01:14:21,191
+TASK'ta bunun başarılabiliyor olduğunu göstermek şeyimiz bu. Amaç bu. Şimdi burada bir algoritma var. 1, 2, 3, 4 diye.
+
+249
+01:14:21,876 --> 01:14:44,056
+Şimdi birinci kısım, birazdan bunun şekillerini de göstereceğim ama bir model birimiz var. Model bir bizim daha önce eğittiğimiz Supervised ya da hani şöyle, evimizde bir GPT-3 var.
+
+250
+01:14:46,644 --> 01:14:56,443
+Bu GPT-3'yi model 0 diye düşünebilirsiniz. Bu GPT-3'yi bir supervised bir şekilde fine-tune ediyorsunuz ilk önce.
+
+251
+01:14:56,443 --> 01:15:03,443
+Supervised bir şekilde fine-tune etmenin anlamı şu, şöyle bir input varsa şöyle bir output var şeklinde.
+
+252
+01:15:03,443 --> 01:15:12,943
+Bunu bu şekilde eritiyorsunuz. Fine-tune ediyorsunuz. Bu bizim model birimiz oluyor.
+
+253
+01:15:13,876 --> 01:15:33,996
+Sonra bir veri kümemiz var. Veri kümesi A. Bir input veriyorsunuz. Model 1'in farklı outputlarını insanlara gösteriyorsunuz. Yani böyle bir inputta karşı model 1'e, şu demin az önce eğitmiş olduğunuz model 1'e veriyorsunuz bu inputu.
+
+254
+01:15:40,884 --> 01:15:56,904
+İnsanlara gösteriyorsunuz ve insanlar da diyorlar ki, gerçek insanlar, insanlar diyorlar ki bu alkutlardan şu şundan daha iyi, bu bundan daha kötü, şurası kötü, şurası iyi gibisinden bir feedback veriyorlar.
+
+255
+01:15:58,384 --> 01:16:07,943
+Şimdi bu feedback'i verdikten sonra da yani elinize yeni bir veri kümesi oluyor ki aslında o veri kümesine biz veri kümesi A diyoruz.
+
+256
+01:16:09,395 --> 01:16:17,556
+Böyle bir input'a karşılık şöyle bir output üretirsen insanlar bu output'una iyi dediler ya da kötü dediler.
+
+257
+01:16:20,036 --> 01:16:30,475
+C1 model. Daha sonra bu veri kümesi A'yı kullanarak yeni bir model üretiyorsunuz. Bu modelin ismi reward model.
+
+258
+01:16:30,475 --> 01:16:32,195
+Model 2 demişiz burada.
+
+259
+01:16:36,692 --> 01:16:40,652
+Bu output'lar üzerinde söylediği şeyi taklit etmeye çalışan başka bir model.
+
+260
+01:16:41,131 --> 01:16:41,752
+Reward model.
+
+261
+01:16:42,811 --> 01:16:51,852
+Yani şu input'a karşı şöyle bir output üretirsen, iyi yaptığın ya da kötü yaptığını tahmin edecek bir model.
+
+262
+01:16:51,852 --> 01:16:53,832
+İnsanlar diyorlar ya iyi yaptığın, kötü yaptığın diye.
+
+263
+01:16:53,932 --> 01:17:02,352
+O değerlendirmeyi tahmin eden, onu modelleyen, reward'u modelleyen bir model.
+
+264
+01:17:03,380 --> 01:17:21,039
+Buna Reward Model diyoruz. Bu da Model 2. Daha sonra Model 1, yani şu en intabeli model 1. Model 2'nin ödül tahminlerini kullanarak Reinforcement Örneği ile eğitiliyor. Yeni bir eğitim kümesi üzerinde.
+
+265
+01:17:32,819 --> 01:17:53,399
+Şekil üzerinden konuştuğumuzda birazcık daha net ortaya çıkacak belki ama şimdi buradaki şu reward modelin amacı aslında şu reinforcement learning from human feedback diyor ya, insanlardan geri bir durum alalım. İnsanlar bize bir şeyler söylesin.
+
+266
+01:17:54,260 --> 01:18:02,860
+Tamam, insanlar bize bir şey söylesin diye güzel ama işin içerisine insanları kattığımızda süreç hiç de ölçeklenebilir olmuyordu değil mi?
+
+267
+01:18:03,260 --> 01:18:09,260
+Sabiyorsunuz. Yani süpervarsız yapıdan self-supervarsız yapıya geçişin aslında temel...
+
+268
+01:18:09,743 --> 01:18:23,123
+Bu şey nedenle, motivasyonu, insanlarla olan etkileşimi, insanlardan bir şeyler almayı azaltmak. Çünkü insanlardan bir şey aldığınızda süreç ölçeklenebilir olmuyor.
+
+269
+01:18:23,123 --> 01:18:27,123
+Şimdi burada bu insanlardan bir şey almayı...
+
+270
+01:18:27,344 --> 01:18:48,663
+Belli örneklerini oluşturup daha sonra buradaki bu insanların yaptığı işi modelleyen bir reward model acaba biz ortaya koyabilir miyiz? Çünkü reward modelinizi iyi bir şekilde ortaya koyabilirseniz bu sefer ne yapabileceksiniz yine? İnsanı aradan çıkarabileceksiniz. İnsan olmadan da eğitim yapabileceksiniz.
+
+271
+01:18:55,344 --> 01:19:05,583
+Uzun süren kısmı şu sondaki kısım, şu dördüncü adım uzun süren yani çok sayıda eğitimin olduğu, çok fazla sayıda örnek için eğitimin olduğu kısım.
+
+272
+01:19:06,224 --> 01:19:18,683
+Buradaki şu, bunu mümkün kılabilmek için aslında yani çok sayıda eğitim yapım diye mümkün kılabilmek için bir reward modele ihtiyacınız var.
+
+273
+01:19:22,452 --> 01:19:36,231
+Bu modelin tercihlerini yapabilen, öyle söyleyelim, yapması için oluşturan bir model. Şimdi birinci ve üçüncü adımlar da, burada birinci ve üçüncü adımlar. Ha burada tabii şey var, bunu yaptıktan sonra tekrar ikinci adıma gelebiliriz.
+
+274
+01:19:37,852 --> 01:19:47,592
+Yani ne demek istiyorum? Şimdi model biri, model ikinin ödül tahminlerini kullanarak eğittiniz, fine tune ettiniz model biri. Artık elinize yeni bir model biri var. Tamam mı?
+
+275
+01:19:47,859 --> 01:19:50,920
+Bu model 1'i kullanıp tekrar buraya dönüyorsunuz.
+
+276
+01:19:51,679 --> 01:19:55,699
+Ve burada model 1 bu sefer farklı inputlar için farklı outputlar üretmeye başlıyor.
+
+277
+01:19:55,699 --> 01:20:00,979
+O outputlar için tekrardan reward model oluşturuyorsunuz.
+
+278
+01:20:01,019 --> 01:20:03,119
+Yine insanlardan tercihler alarak.
+
+279
+01:20:03,639 --> 01:20:04,559
+Yine bunu, yine bunu.
+
+280
+01:20:05,000 --> 01:20:07,719
+Dolayısıyla bu 2 ve 4 arasındaki şey yapıyor. Böyle sürüyor.
+
+281
+01:20:08,559 --> 01:20:13,920
+InstraGPT için söylenilen rakam toplamda 20 bin saat insanlarla yetişme girmiş model.
+
+282
+01:20:15,028 --> 01:20:39,768
+Yani 20 bin kişiyle birer saat değildir muhtemelen. Etkileşimi günlük işleri dediğim, hani buradaki insanları çalıştırıyorlar ya, birkaç tane yardım, bakın burada bir insan var. Böyle bir input geldiğinde alt ne olsun, bunu insanlar yazıyorlar. Tamam mı? Şurada var. Sonra şurada da şey kısmı, insanların şeyleri, tercihlerini toplama kısmı.
+
+283
+01:20:40,115 --> 01:20:55,115
+Buna şurada bakarsak insanların şurada ve şurada işleyişin içine girdiklerini görüyorsunuz. Demin şurada özetlediğim yapılım biraz daha şekilli hali aslında. En başta bir modelimiz var. O model duruyor. O modelin...
+
+284
+01:20:58,100 --> 01:21:25,520
+İntroli eğiteceksiniz. Nasıl edeceğiniz? Supervised Fine Tuning dediğimiz şey aslında standart yapı. Yani belli inputlar var. Bu inputlara karşı insanlar bakıyorlar. Böyle bir inputa karşı böyle bir cevap yazmak gerekir diye yazıyorlar. Böyle bir inputa karşı böyle bir output üret. Ve bu yapı, şurada gördüğünüz yapı, bununla eğitiliyor.
+
+285
+01:21:26,228 --> 01:21:48,228
+Bu bizim, şurada gördüğünüz model birimlik. Daha sonra model birin, bu sefer belki farklı bir input, ama burada aynısını vermişler, aynı input için. Farklı outputları var. Bu outputları insanlar burada sıralıyorlar. Bu bambaşka yapılarla da yapılıyor. Sıralıyorlar. Sıralıktan sonra...
+
+286
+01:21:48,692 --> 01:21:59,311
+Şuradaki model 2 oluşturulmaya çalışıyor. Nasıl oluşturulmaya çalışılıyor? Reward model. Böyle bir input'a karşı, böyle bir output geldiğinde ben nasıl bir reward vereyim?
+
+287
+01:21:59,311 --> 01:22:10,672
+Ben şeyim, ne derli ona. Model böyle bir şey üretirse ben ne diyeceğim ona? İyi yaptın ya da kötü yaptın diyeceğim.
+
+288
+01:22:11,507 --> 01:22:32,395
+Bunu yaptıktan sonra üçüncü adımda da şurada gördüğümüz Reinforcement Örneğe eğitim gerçekleşiyor. Reinforcement Örneğe yeni bir tane şey geliyor. Prompt geliyor. Bu prompta karşı bizim model bir şey üretiyor. Bu ürettiği şey ve input...
+
+289
+01:22:32,724 --> 01:22:49,484
+Reward modeli veriliyor. Reward model, bu input'a karşı bu akutu ürettiysen sen iyi bir şey yaptın ya da kötü bir şey yaptın diye bir reward bize hesaplayıp veriyor. Bu reward'a göre de elimizdeki reinforcement learning ayırtmasıyla ki burada kullanılan...
+
+290
+01:22:51,123 --> 01:22:59,863
+PPO algoritması. Bununla modelin ağırlıkları güncellemiyor. Yani model yine fine-tune ediliyor. Burada da model fine-tune ediliyor.
+
+291
+01:23:01,923 --> 01:23:17,843
+Şimdi şuradaki prompt dataset diye ifade edilen kısım, hani demin şeyden bahsettim ya, şurada insanlar farklı işlerini yaptırmak için
+
+292
+01:23:20,659 --> 01:23:30,659
+Bir şeyler yazıyorlar. Bütün olay aslında Prompt Engineering gibisinden bir yapıya dönüyor. Bu Prompt Engineering problemi değil mi?
+
+293
+01:23:30,659 --> 01:23:43,659
+Şimdi Opener GPT-3'yi yayınladıktan sonra bunu ticari bir hale getirdi. Yani GPT-3'in API'ına erişmek için belli bir ücret karşılığında.
+
+294
+01:23:44,627 --> 01:23:58,547
+Ona erişip, burada görmüş olduğumuz gibi herhangi bir fine tune içermeden modelin içerisinden doğru bilgiyi almak için insanlar promptlar yazmaya başladılar.
+
+295
+01:24:00,227 --> 01:24:10,027
+Ve bu promptlar asıl oldukça kıymetli, değerli belki. Bu promptların kendileri şuradaki promptlar işte.
+
+296
+01:24:10,452 --> 01:24:23,792
+Chrome dataset'ler oralar. Yani input'un yapmasını istediğimiz şeyler. Modelin yapmasını istediğimiz şeyler. Bu dataset, Chrome dataset'le de şurada dataset diye ifade ettiği kısımlar onları gösteriyorlar.
+
+297
+01:24:24,891 --> 01:24:34,711
+Peki, şimdi şurada Reinforcement Learning'le bir laf ettim. Bu Reinforcement Learning'le alakalı bir iki bir şey söyleyeyim aslında. Reinforcement Learning'in bütün yapısına girmeyeceğim.
+
+298
+01:24:36,083 --> 01:24:54,724
+Şimdi reinforcement learning normal makine öğrenmesindeki süpervars ve anuspervars yapıdan bir tıp farklı. Süpervars yapıda şuna karşı şunu üret dersiniz. Anuspervars da şey yoktur. Ne derler ona? Bir output zaten yoktur.
+
+299
+01:24:54,724 --> 01:25:02,724
+Bu reinforcement learning'te de model bir şey yapar, bir şey söyler. O söylediği şeyin doğrusunun ne olduğunu söylemezsiniz ama…
+
+300
+01:25:03,507 --> 01:25:08,287
+Ne kadar iyi yaptığı ya da ne kadar kötü yaptığına dair bir geri bildirimde bulunursunuz.
+
+301
+01:25:09,467 --> 01:25:14,067
+Yani yaptığının ne kadar iyi ya da kötü olduğunu söylemek. Ne yapması gerektiğini değil.
+
+302
+01:25:14,427 --> 01:25:20,347
+Niye öyle bir şey peki? Burada iki durum var. Birincisi, biz de bilmiyor olabiliriz.
+
+303
+01:25:26,543 --> 01:25:27,543
+Yani...
+
+304
+01:25:26,515 --> 01:25:42,175
+Gerçekten o durumda yapılması gereken şeyin tam net olarak şu olmalıdır diye söylemeye olabilir. Bu bir olasılık. İkincisi tek bir doğrunun olmayışı mümkün olabilir. İlla tek bir şey söylemek zorunda da değiliz belki.
+
+305
+01:25:43,060 --> 01:25:57,260
+Dolayısıyla reinforcement learning ise şöyle bir input gördüysen şöyle bir output üret yaklaşımının haricinde bir üçüncü yol aslında söyleniyor. Belki farklı bir yol diyelim.
+
+306
+01:25:58,540 --> 01:26:05,980
+Şöyle bir şey üretirse model, yani sen üret diyorsun, üretiyor. Ürettiği şey iyi yarı kötü. Bir şey söyle olsun.
+
+307
+01:26:06,739 --> 01:26:11,739
+Renforcement Learning'in ilk yapısı...
+
+308
+01:26:13,739 --> 01:26:15,739
+Önceden...
+
+309
+01:26:19,412 --> 01:26:42,731
+Agent'ın, ki Agent burada reinforcement learning'de model olarak kullanılan kelime, onu jargon ile konuşuyorum. Agent'ın belli bir çevrenin içerisinde hareket ederken maksimum ödül toplaması. Temelde yaklaşım bu. Ve başlangıçta bilmiyor çevreyi.
+
+310
+01:26:43,123 --> 01:27:06,363
+Çevrenin içerisinde hareketler yapıyor. Bu çevrenin içerisinde hareketler yaptıktan sonra, her bir yaptığı hareketten sonra, siz ona diyorsunuz ki bu yaptığın şey iyi oldu ya da kötü oldu. Ya da bir şey demiyorsunuz yani. Ne nötr? Çok da şey değil. Yaptığın şey ne kar etti ne zarar etti gibisinden bir şeyler söyleyebiliyorsunuz.
+
+311
+01:27:06,612 --> 01:27:17,631
+Ve modelin burada, bu çevrenin içerisinde bir şekilde ortamdaki cezalardan kaçınık ödüleri toplaması yaklaşıma.
+
+312
+01:27:18,231 --> 01:27:21,872
+Şimdi reinforcement learning de karşımıza şöyle bir şey çıkar temelde.
+
+313
+01:27:24,471 --> 01:27:28,032
+Kullan ya da keşfet ikilemi karşımıza çıkar.
+
+314
+01:27:29,051 --> 01:27:33,572
+Kullan ya da keşfet ikilemi kullan aslında o ana kadar bildiğin şeyi al.
+
+315
+01:27:34,676 --> 01:28:00,456
+Onunla devam et gibisinden bir yaklaşımdır. O ana kadar bulabildiğin yollardan devam et. Çünkü şu ana kadar en iyi bildiğin yol bu. Bu kullan durumu, yani expedition durumu. Bir ikincisi, tamam şu ana kadar bu yolu kullandık da biraz farklı bir şeyler yapalım ki belki şu anda bulduğumuz yoldan dairesini bulacağız.
+
+316
+01:28:01,427 --> 01:28:03,427
+Çözümden daha iyisini bulacağız.
+
+317
+01:28:05,427 --> 01:28:16,427
+Bu kullan ya da keşfet ikileme aslında bir tek Enforcement Learning'in ikilemi değil.
+
+318
+01:28:16,427 --> 01:28:23,427
+Bizlerle gündeydik hayatta bu tarz problemlerle karşılaşırız. Problemlerin de durumlarla karşılaşırız.
+
+319
+01:28:24,180 --> 01:28:30,239
+Bir karardır bu. Mesela en basiten burada yazdık, öğlen yemeğe neydi? Öğlen yemeğe neydi?
+
+320
+01:28:30,659 --> 01:28:34,220
+Şimdi bildiğimiz en iyisine mi gidelim ya da yeni bir yere mi gidelim?
+
+321
+01:28:34,460 --> 01:28:41,000
+İşte bu tam olarak kullan ya da keşfet problemi. İkisi de kendine göre avantajları, dezavantajları mevcut.
+
+322
+01:28:41,319 --> 01:28:48,079
+Enforcement learning'in içerisinde. Burada genelde yapılan şey nedir? Genelde exploration yapması.
+
+323
+01:28:48,595 --> 01:29:08,595
+Exploration'ın olasılığı başlangıçta yüksektir. Zamanın içerisine yavaş yavaş azaltılıyor. Şimdi reinforcement learning'de kullanılan birkaç kavram var aslında. Oradan da birazcık bahsedelim. Polis diye bir kavram var. Polise dediğimiz şey aslında...
+
+324
+01:29:09,076 --> 01:29:26,175
+Durumu hareket et, yönüşler ve fonksiyon. Şimdi tabii robotlarda, şunla bunda ya da oyunlardaki karakterlerde, oyunlardaki agentlarda hareket diye ifade ettiğimizde gerçekten fiziksel bir hareket gibi olabileceği gibi bizim şey tarafına geçtiğimizde.
+
+325
+01:29:26,739 --> 01:29:44,099
+Büyük dil modellerinin kısmına geçtiğimize aslında ürettikleri şeyler biraz hareket. Yani bir şey üretiliyor, bir şey söylüyor. A değil de B diyor. Yani ne bileyim bir agent'ın belli bir durumda yapabileceği saldırı, dört tane hareket var. Ne onlar? Yukarı aşağı sağa sola gitmek.
+
+326
+01:29:47,091 --> 01:30:03,091
+Dil modelinin de belli bir durumda üretebileceği dört dil belki bu sefer otuz iki bin tane hareket var. Saat dolu yukarı aşağı gitmek gibi otuz iki bin tane farklı hareketten bir tanesini yapıyor. O şekilde hayal edebilirsiniz olayı.
+
+327
+01:30:03,091 --> 01:30:12,091
+Hani benzeştirmek açısından diyorum. Sınıflandırma da buna benze. Otuz iki binlerden çıktı. Bakabilir size anlamında söyledim onu.
+
+328
+01:30:13,939 --> 01:30:30,420
+Sonuçta buradaki hareketle ifade ettiğim şeyleri, büyük dil modellerinin token üretmesi, hangi token üreteci şeklinde eşleyebilirsiniz.
+
+329
+01:30:30,420 --> 01:30:35,420
+Şimdi agent bir durumu gözler. Buna göre…
+
+330
+01:30:35,572 --> 01:31:00,352
+Polisiyi kullanıp hareketi seçer. Bunun sonucunda bir ödül alır ve sonraki duruma geçer. Bütün reinforcement learning agentlarının yaptığı şey aslında bu. Belli bir SD durumunda, belli bir anda duruyor. Bunu belki siz doğal dil modellerinde o anki temsil vektörü diye düşünebilirsiniz.
+
+331
+01:31:00,847 --> 01:31:26,327
+Bir vektör olarak bunu hayal edebilirsiniz. Bu vektöre karşılık bir polisi olacak. Bu polisi de böyle bir durumda şu hareketi yap. Şu hareketlerden birini yapabilirsin gibisinden bir polisi var arka tarafta. Bunu pi ile ifade edeceğiz ki buradaki theta da bu polisinin parametreleri. Yani sizin şeyinizin, büyük dil modelinizin parametreleri aslında şu.
+
+332
+01:31:27,220 --> 01:31:42,420
+Buradan hareket ettiğimizde, düşündüğümüzde buradaki polisi bizim dil modeline karşılıyor. Bir hareket seçiyor, üretiyor. Bunun sonucunda da bir ödül alıyor ve sonraki duruma geçiyor.
+
+333
+01:31:48,243 --> 01:32:13,984
+Toplanan yapı şudur. Şöyle bir state'leyken şöyle bir hareket yaptım, şöyle bir state'e geçtim ve bunun sonucunda şöyle bir ödül aldım. Ve bu deneyimle aslında, şunlar bizim deneyimlerimiz öylece, polis eğitiliyor. Polislerin birkaç tane eğitim süreci var. Yani şunu yapabilirsiniz birincisi. O anki polisiye göre üretilmiş dataları toplayıp onlarla bir eğitim yapabilirsiniz.
+
+334
+01:32:15,315 --> 01:32:40,275
+Ya da bunları belli bir yerde biriktirip hareket edebilirsiniz. Yani şunu demeye çalışıyorum. Elinizde bir network var, bir model var öyle söyleyeyim. O modele göre hareket edersiniz ve o hareket ettiğiniz verilere göre deneyimler biriktirirsiniz. Ve bu biriktirdiğiniz şeyler aslında sizin direkt eğitiminize girerler.
+
+335
+01:32:42,003 --> 01:32:58,824
+Bu online reinforcement learning olarak geçer. Ki şeydeki, instruction cibitideki de bu şekilde online bir reinforcement learning. Bunun bir de off-policy olan tarzları var ki bunlar da şu anda yavaş yavaş eğitimlerde kullanılmaya başladı.
+
+336
+01:32:58,824 --> 01:33:07,824
+Off-policy yaklaşımdaysa sadece burada bir bufferlama işi var. Aslında tek farkı o. Yani şu bufferın içerisinde...
+
+337
+01:33:08,144 --> 01:33:24,844
+Daha önceki modelinizin daha önceki halleri için üretilmiş olan, ürettiği ya da modelin de çevrenin birlikte etkileşimine çıkıyor sonuçta bunlar. Yani model A'yı seçiyor, çevrede yeni S ve R'yi ona veriyor.
+
+338
+01:33:25,971 --> 01:33:35,011
+Daha önceki halleriyle eğitilmiş yapılar da bu bufferın içerisinde yer alabilirler ve bir sonraki update de bu şeyler de kullanabilirler.
+
+339
+01:33:35,612 --> 01:33:42,431
+Evveler kullanabilirler. Şimdi bu ikisinin avantajı az avantajı ne? Şu buffer mevzusu aslında olayı biraz daha stabil götürüyor.
+
+340
+01:33:42,431 --> 01:33:51,672
+Bir açıdan öyle bir durum var. Yani önceki şeyleri de hala uygun. Son anda yani son adımlarda çok çok iyi bir şey yapmadıysan.
+
+341
+01:33:52,372 --> 01:34:04,172
+Anlatabildim mi? O modeli bozabilir. O bozmayı birazcık engellemek için aslında bu tarz otpolis yaklaşımlarla kullanılıyor. Bu tamamen…
+
+342
+01:34:05,427 --> 01:34:33,368
+Off-polize haline gelebilir mi? Yani şöyle bir şey yapabilir misiniz? Yapabilirsiniz. O da mümkün. Yani modelinize farklı farklı versiyonlarını bir şekilde ürettiniz. Onlardan kocaman bir dataset ürettiniz. O dataset'in hepsiyle birlikte yeni bir tane modeli tamamen offline olarak eğitebilir misiniz? Evet, eğitebilirsiniz. Offline eğitim mümkün mü? Mümkün. Yani online eğitimle offline eğitimin farkı ne? Online eğitimde sizin mevcut modelinizle hareketler yapıyorsunuz, bir şeyler söylüyorsunuz, yeni bir şeyler.
+
+343
+01:34:33,427 --> 01:34:36,208
+Bunlara göre güncelleme yapılıyor.
+
+344
+01:34:37,235 --> 01:34:56,155
+Okline eğitiminde ise sizin burada yaptığınız hareketlerle falan alakalı bir durumunuz yok. Tamamen bu bir yerdeki, bir bufferdaki, bir datasetdeki şeylere göre, ne derler ona, şu durumda şunu yaparsan şunu görürsün falan gibisinden bir yapı var elinizde. Onun üzerinden hareket ediliyor.
+
+345
+01:35:04,591 --> 01:35:22,952
+Şurası. Bu işlem yapıldıktan sonra, şu işlem yapıldıktan sonra tekrardan buraya dönülüyor. Yani model yeni güncellenmiş haliyle yeni örnekler üretiyor. O ürettikleri şeylerden yeni bir reward model oluşturuyor. Bu reward model yeni halini üretmek için tekrardan tipik vermeye başlıyor.
+
+346
+01:35:24,332 --> 01:35:30,192
+Dolayısıyla buradaki reward modeli, şuradaki şu R'yi bize sağlayan, öyle söyleyelim.
+
+347
+01:35:30,644 --> 01:35:55,644
+reis alayan yapı olarak hayal edebilirsiniz. Bunlar en temelde tabii oyunlardan falan üretilmiş şeyler olduğu için buraya böyle uyarlamak noktasında belli düşünceler gerekiyor. Şimdi dil modelleri reinforcement learning ile fine tune ederken, PPO diye bir algoritma kullanılıyor. PPO algoritması bir reinforcement learning algoritması.
+
+348
+01:36:03,988 --> 01:36:25,148
+Şey kısmı çok gürültülü. Örnek kısmı. Yani daha önce kolektif öğrenme dersini alınan hatırlarlar. Yani mesela Stochastic Gradient Center düşünün. Stochastic Gradient Center'da biz ne yapıyorduk? Elimizde işte bin tane örnek vardı ama bin tane örnek içerisinde hepsi de biliyoruz.
+
+349
+01:36:26,148 --> 01:36:29,648
+Bir de ayrı ayrı güncelleme hesaplayıp hareket etmiyorduk.
+
+350
+01:36:31,572 --> 01:36:43,652
+Hepsinin birden tek bir güncelleme hesabı çok pahalı. Onun yerine içinden rastgele bir şey seçip onunla hareket ediyordum.
+
+351
+01:36:43,652 --> 01:36:57,652
+Ve şeyimiz ne derler ona mantığımız şuydu orada. Belli bir noktada farklı farklı örneklerin üretecekleri gradyanlar birbirlerinden çok çok da bağımsız değillerdir.
+
+352
+01:36:59,283 --> 01:37:11,344
+Yani genel olarak bunlar bir dereviyle ilişkidir. Özellikle sürecin başlarında, sürecin sonlarında o işler baya karışıyordu hatırlıyorsunuz. O sürecin başlarında oldukça ilişkidir.
+
+353
+01:37:11,344 --> 01:37:22,603
+Reinforcement learning de bu başlardaki ilişkiyle olma durumu birazcık zayıf. Yani zayıf derken hürültülü bir yapı var. Böyle ifade edeyim aslında en basitiyle.
+
+354
+01:37:23,091 --> 01:37:30,712
+Gürültülü bir yapı olduğu için biraz bunun üzerine düşünmek gerekiyor. Bunu bir şey gibi düşünebilirsiniz.
+
+355
+01:37:32,384 --> 01:37:55,604
+Gürültü engellemek için en temelde kullanılan yaklaşım ne? Momentum yaklaşımıdır. Önceki güncellemeyi de hala işin içine katar. Arkasında bir yığın bir şeyle geliyor gibi aslında. O anda gelen şeye göre direkt hareket etmiyorsunuz da önceden yapmış olup gelen hareket de sizin şimdiki hareketinizde bir etken. Öyle söyleyelim.
+
+356
+01:37:56,212 --> 01:37:59,712
+Pibiyola yapılan işlem de aslında birazcık buna benziyor.
+
+357
+01:37:59,712 --> 01:38:09,692
+Modeli güncellerken bir şekilde eski halinin outputlarından çok çok da uzaklaşmak istemiyor.
+
+358
+01:38:10,492 --> 01:38:12,852
+İki tane şey var. Ne derler ona?
+
+359
+01:38:16,252 --> 01:38:20,712
+Lost teriminin iki tane parçası var. Bir tanesi...
+
+360
+01:38:21,043 --> 01:38:33,683
+Şurada gördüğünüz KL Divergence dediğimiz kısım. KL Divergence kısmında iki tane polisinin ürettiği outputların.
+
+361
+01:38:34,292 --> 01:39:01,311
+Benzerliğine bakılıyor. Şimdi neyle neyin? Bizim elimizde bir model var. Initial model. Bir de fine-tuned ettiğimiz yeni bir model var. Eski modelden çok da fazla sapmak istenmiyor. Normalde reinforcement learning için bizim böyle bir yapıya ihtiyacımız yok. İki tane yapı olsun, bu iki yapıya göre hareket edelim gibisinden bir şeye ihtiyacımız temelde yok. Biz şunu yapabiliriz. Şöyle bir şey geldiğinde direkt reward'tu.
+
+362
+01:39:02,292 --> 01:39:10,292
+İngilizce Bilgisayar Mühendisliği, Uğurda İstediğimiz Şeyle Uyumlu Bir Şey Üretti Mi? Buna bakabiliriz.
+
+363
+01:39:10,292 --> 01:39:15,292
+Ya da insanlar şunu dediler, o zaman onu sadece yapalım, bunu diyebiliriz.
+
+364
+01:39:15,292 --> 01:39:23,292
+Ama öyle bir şey yapılmıyor. Bunun yerine, demin bahsettiğim gibi, Base modelle, yani aslında belki modelimizin bir önceki hali, bir önceki versiyonu.
+
+365
+01:39:23,292 --> 01:39:26,292
+Yani şöyle dedik ya...
+
+366
+01:39:30,287 --> 01:39:57,387
+Model 1'i eğittim ya, model 1'i eğittikten sonra aslında model 1'in artık yeni bir versiyonu oluştu. Şimdi o yeni versiyonu kullanırken, o yeni versiyonu ben ne yapacağım burada, artık onu kullanarak hareket edeceğim. Ve her bir versiyon bir ön, bir sonrakine ne olacak? Bir base olacak. Adım, adım, adım, adım ilerleyecekler. Burada başlangıçta belki kötü bir modelimiz var.
+
+367
+01:39:57,792 --> 01:40:16,231
+Bu, yani kötü bir modeliniz var derken şöyle, sizin istekleriniz açısından kötü bir modeliniz var. Elinizdeki prompt dataset açısından kötü bir modeliniz var, öyle söyleyeyim. Fakat bunun ürettiği şeylerinden çok çok da uzaklaşmak istemiyorsunuz.
+
+368
+01:40:25,171 --> 01:40:34,851
+Çok çok uzaklaşmak istemenizi seveyim. Sadece prompta özelleştiği zaman yapı, yani prompttaki şeyler şunu denildiği zaman şunu de.
+
+369
+01:40:34,851 --> 01:40:47,011
+Y özelleşirse yapı doğal, doğal demeyelim de ne diyelim, dualisini ya da öyle diyelim, büyük ölçüde kaybettiğini görmüşler.
+
+370
+01:40:47,011 --> 01:40:51,411
+Yani bu şurada gördüğünüz yapı tek seferde ortaya çıkmış bir şey değil.
+
+371
+01:40:51,439 --> 01:41:03,699
+Yani böyle gördüğünüz yaklaşımların hiçbiri, öyle söyleyelim, tek bir gecede birisi düşündü, aha şöyle yapalım falan, öyle bir şey yok. Adım adım adım adım ilerliyor.
+
+372
+01:41:05,328 --> 01:41:24,088
+Bir gecede oturup hiçbir şey çıkmıyorlar. Seneler boyunca uğraşıp çıkıyorlar. Dolayısıyla buradaki her bir seçimin arka tarafında çok fazla teori olmasa bile çok fazla deney olduğundan emin olabilirsiniz.
+
+373
+01:41:24,916 --> 01:41:47,716
+Belki yani yapay sınır ağları alanında böyle ifade etmek çok daha makul bir karşılayabilir. Yani buradaki her bir seneşimin arkasında dediğim gibi çok teori olmasa bile çok fazla deneyin olduğuna emin olabilirsiniz. Dolayısıyla model iki şey yapmaya çalışıyor. Reinforced learning ve eğitimde.
+
+374
+01:41:48,079 --> 01:42:03,640
+Bir kullanıcının isteklerine cevap vermeye çalışmasını istiyoruz eğitimken. Bir yandan da orijinal, yani orijinal demin benim de önceki, bir önceki versiyonla çok çok korkunç, farklı çıkışlar üretmemesini istiyoruz.
+
+375
+01:42:03,640 --> 01:42:13,640
+Şimdi bu konuda eğitim için kullanılan çeşitli şeyler var, veri hükümeleri var. Bunlara bakarsınız. Bunlar temelde...
+
+376
+01:42:13,904 --> 01:42:24,904
+Hani OpenAE bunu GPT-Tree'ye açtığı miktereleri üzerinden bunları yaptı dedik. Ama şu anda OpenSource Community'de epey bir sağlam çalışıyor bu konuda.
+
+377
+01:42:25,844 --> 01:42:40,264
+OpenSource'da da burada kolaylıkla bu tarz yapıları dönüştürülebilecek birçok hale hazır yapının olduğu görüldü. Bunlardan bir tanesini şey olarak vereyim. Mesela bu collective human preference.
+
+378
+01:42:40,768 --> 01:42:50,367
+İnsan geri bildirim veri hükümetlerini bu yüzden elde etmiyor. Forumlardan veri toplayalım. E tamam, forumlardan veri toplayalım da forumlarda şey yok ki.
+
+379
+01:42:50,367 --> 01:42:59,367
+Yani forumlarda ne var? Şuna karşı şöyle bir cevap var. Şuna karşı şöyle bir cevap var. Ama orada bir şey var değil mi? Voltlar var.
+
+380
+01:42:59,636 --> 01:43:13,615
+Sevdim sevmedim falan gibisinden. Dolayısıyla o da şey gibi, bir soruya verilmiş birçok cevap içerisinde hangisinin daha iyi olduğunu belirlemek için. Aslında reward modeli, yani ver hükümesi A dediğimiz şey o değil miydi? Bakın, bir input'a karşı bir output.
+
+381
+01:43:15,764 --> 01:43:42,684
+Şu Outlook'da, şu Outlook'u değerlendirmek istiyorduk. Şuna göre şu daha iyi. Bunu insanlarla toplamaya çalıştık orada. Burada da zaten insanlar ne yapmışlar? Bir soru var. O soruya karşı cevap yazmışlar insanlar. Ve onlara gitmişler, şey yapmışlar ki işte, işaretlemişler, puan vermişler vesaire vesaire. E bu bilgiyi biz otomatik olarak kullanabilir miyiz? Bunun için bayağı şey yapmışlar. Ne der ona? Çalışmalar var. Dediğim gibi.
+
+382
+01:43:43,119 --> 01:43:44,811
+Bu noktada...
+
+383
+01:43:46,579 --> 01:43:52,980
+Bunun güzel tarafı ne? Ekstradan para harcamıyorsunuz bile insanlardan.
+
+384
+01:43:52,980 --> 01:44:00,980
+Kötü tarafı ne? İnsanların verdiği oylar her zaman çok da daha iyiye dair. Demin bahsettik ya.
+
+385
+01:44:00,980 --> 01:44:11,779
+Kime göre iyi, kime göre zararlı vs. Oradaki iyi kötüye göre insanlar her zaman bir cevabın diğerine göre beğendikleri için olmayabiliyor.
+
+386
+01:44:12,115 --> 01:44:37,895
+Özellikle şeyde daha çok yaygındır bu belki. Temel bilimlerde değil de sosyal bilimler alnındaki olaylarda çok daha yaygın olarak görebiliriz. Dolayısıyla hazır veriklendirme kullanmak iyi fikir. Kesinlikle iyi fikir ama her zaman istediğimiz şeyleri ifade etmiyor olabilirler. Onu demeye çalışıyorum.
+
+387
+01:44:39,188 --> 01:44:49,287
+Tabii şimdi büyük firmalar bu tarz bir şeyleri yayınlamaya başladıktan sonra ve kapalı bir şekilde yayınlamaya başladıktan sonra bazı firma açık bir şekilde bazı şeyler yayınlamaya başladılar.
+
+388
+01:44:49,448 --> 01:44:54,007
+Ve bu açık olarak yayınlanmış gibi işte burada lemalardan falan bahsediyorum, Meta'nın yayınladığı.
+
+389
+01:44:54,007 --> 01:45:03,847
+Bu açık olarak yayınlanmış dil modellerinin bu tarz, sizin bahsettiğimiz işte çent kabiliyetlerine.
+
+390
+01:45:05,140 --> 01:45:28,920
+Task Agnostik yapılarak dönüştürebilmesi yönünde epeyli çalışmalar başlatıldı. Yani şu anda herhalde birkaç günde bir yeni yepyeni bir şeyler görüyorsunuz. Yani hem sonuçlar yeni, hem yöntemler yeni. Dolayısıyla şu anda bu konunun literatürünü takip etmek bile korkunç derece zor bir hale geldi. Şey nasıl ilerleyecek o konuda hiç bilmiyorum.
+
+391
+01:45:32,051 --> 01:45:55,992
+Bunlar sürekli yeni yeni yeni yeni bir şeyler çıkmaya devam ediyor. Ama tabii hani ürün manasında asıl kritik olacak belki o noktada ürünleştirme. Ama Open Source Community de bu noktada epey bir şey yapmış durumda gözüküyor. Efor sahip ediyor, öyle söyleyelim.
+
+392
+01:45:56,351 --> 01:46:13,471
+Refor sahip edilmesi mantıklı mı? Evet, mantıklı. Eğer ki böyle bir şeyler olacak, olabilecek vs. vs. ise bunun bir şekilde bir açıdan baktığınızda herkesin erişimine açık olabiliyor olması lazım.
+
+393
+01:46:13,971 --> 01:46:40,592
+Bir açıdan bu atom bombası gibi bir şey ise mesela, atom bombası yapmanın tarifini her yere koymamak lazım. Bu iki uç birazcık savaşıyor aslında bir açıdan baktığınız ama o noktada şey gitmiş durumda bence. Tamamen kontrol altına almak falan gibisinden bir şey olası gibi görünmüyor bana.
+
+394
+01:46:41,076 --> 01:47:05,576
+Neyse, şimdi buradaki yapılan şey, işte bu alpaga dediğimiz yapı şey de GPT-3'nin ya da GPT-3 demeyelim. Bunun fayntonlanmış halinde öyle söyleyelim. Self-Instruction'da Lama'yı eğitmek. Şimdi burada 600 dolara falan aşağı yukarı diyorlar, biz şeyi oluşturduk, bu alpagayı oluşturduk.
+
+395
+01:47:06,003 --> 01:47:28,403
+Bu Alpaga işte fena değil diye ifade ediyorlar. Diğer kapalı yapıdaki mimarlara göre işte fena değil diyorlar. Burada tabii şeyi oluşturmak için bunun ATC Prod Datasetini oluşturmak için, Instruction Following Datası oluşturmak için,
+
+396
+01:47:33,811 --> 01:47:45,612
+GPT-Tree kullanmak. GPT-Tree kullanmaktaki amaçları Instruction, Datasetini üretmek. Nasıl Instructionlar olsun?
+
+397
+01:47:45,615 --> 01:48:08,756
+Belli instrakşınlar hep ona karşı cevaplar almak. İşte C parçaları verip o C'de benzeyen başka örnekler bana bul diye sormak. Bu şekilde işte 175 tane kendilerinin oluşturduğu seti kullanıp bunu şey yapıyorlar. 175'in 52 bini çıkartmışlar.
+
+398
+01:48:09,300 --> 01:48:35,244
+Ben bu 52.000'i inceledim. Hiç de fena değil. Yani hiç de fena değil derken, hiç de fena değil. Oldukça divers bir şey. Yani hakikaten çok fazla şey var. Yani şey değil, nasıl diyeyim. Hani o 52.000, şöyle 52.000 değil. Hani 10 artı 10 eşittir 20 var mesela. Tahtaki tarafta 15 artı 15 eşittir 30 gibisinden. Hani sadece...
+
+399
+01:48:35,572 --> 01:49:01,632
+Şey olsun diye, sayı artsın diye oluşturulmuş bir şey değil. Hakikaten şey bayağı geniş kapsamı. Tabii ki iyileri var, kötüleri var soruların içerisinde. Orası ayrı bir mevzu ama çeşitliliği konusunda hakikaten şey yaptım. İncelerimde bayağı ikna oldum. Bayağı çeşitli bir dası toplamışlar.
+
+400
+01:49:02,292 --> 01:49:10,292
+Bu yapıyla da Avpaca gibisinden çok daha küçük bir yapı. Yani GPT'ye göre, ne bileyim o 175 milyar, bu 7 milyar.
+
+401
+01:49:12,292 --> 01:49:25,292
+Küçük dediğimiz yapılar bile artık ne büyük teklerdi ama neyse, bunlar da bunun üzerinde, Finitune edindiğinde, bu dataset üzerinde Finitune edindiğinde, bunun hiç de fena olmayan sonuçlar verebildiğini göstermişler.
+
+402
+01:49:26,292 --> 01:49:27,084
+Şimdi...
+
+403
+01:49:27,507 --> 01:49:45,307
+Çetçe Biti'nin yöntemini hakikaten çok bilmiyoruz ama en sağa çetçe Biti'nin versiyonu olduğunu bilir. Ve diyalog tamamlayan temel şeyi bu, yapısı bu. Yani yeni cevap önceki soru ve cevaplara bağlı. Bir önceki ne dediği ya da sizin ne dediğinizle alakalı bir şey. Daha büyük bir model, daha çok veriyle yetinmiş.
+
+404
+01:49:45,716 --> 01:50:09,596
+Bu konuda dediğim gibi bunun yöntem alanı gerçekçik bir teknik bir payfırı yok. Diyalog tabanlı olduğunu diyoruz. Ama bunun muadili olarak görülebilecek, yani muadili derken amaç olarak diyelim belki. Muadili olarak görecek Open Source tarafında birçok proje var. Onlardan bir tanesinden bahsedeceğim ki şey için bu sadece örnek vermek için Open Assistant var.
+
+405
+01:50:10,420 --> 01:50:27,680
+Bunun en önemli yapısı bence, burası tamamen o demin gördüğünüz şunun, şunun biraz daha business haline yazılmışı. Baktığınızda bir şey yok, çok çok büyük bir farklılık yok o deminkinden.
+
+406
+01:50:28,627 --> 01:50:49,247
+Bunlar hepsi open source ama toplanıyorlar. Şimdi olay burada instruction GPT'yi yani birebir olan yapıyı diyaloğa nasıl dönüştüreceğiz. Bunun için burada kullandıkları conversation tree diye bir şey var.
+
+407
+01:50:55,667 --> 01:51:09,447
+Kullanıcı bir şey dedi, sistem bir şey dedi. Onun karşılığında kullanıcı bir şey dedi, sistem bir şey dedi gibi bir ağaçtan bahsediliyor. Bu ağacın içerisine bir şeyler eklemek aslında bütün hikaye.
+
+408
+01:51:09,876 --> 01:51:31,996
+Bunu eklemek için de insanlara tasklar veriyorlar. Nasıl tasklar veriyorlar? Mesela şöyle bir chat var diyor, bunun devamını getirir misin diyor. Yani kullanıcı şöyle bir şey demiş, sonra modelimiz bizim model böyle bir şey demiş, sonra kullanıcı şöyle bir şey demiş, şimdi model ne desin mesela. Buraya mesela şey yapabiliyoruz, yani yeni bir şey ekleyebiliyorsunuz. Apply to conversation, öyle söyleyelim.
+
+409
+01:51:32,372 --> 01:51:42,352
+Ya da Rank Reply istiyorsunuz. Mesela kullanıcı böyle bir şey dedi, ondan sonra model şu üçünden birini diyebilir gibi gözüküyor şu anda. Bunların hangisini seçersiniz? Rank mevzusu.
+
+410
+01:51:42,899 --> 01:51:53,140
+Ya da şey yapabiliyorsunuz, işte modelin belli bir diyalog içerisinde ben söylemiş olduğu şeyi çeşitli etiketler verebiliyorsunuz.
+
+411
+01:51:53,180 --> 01:52:03,159
+Ki bu etikette zararlıdır, şiddet içerir ya da işe yarar bir şey ya da hiçbir işe yaramaz, çok uzun yazmış, çok kısa yazmış vesaire vesaire gibi etiketler veriyorsunuz.
+
+412
+01:52:03,159 --> 01:52:10,899
+Yani burada aslında şey kısmında şu formalizasyon tree yani chat gpt'nin yapısının da...
+
+413
+01:52:10,899 --> 01:52:21,899
+Böyle olduğunu tahmin ediliyor. Ediliyor diyorum sadece öyle olduğunu şey yapamayız. Direkt söyleyemeyiz. Ama yani sadece...
+
+414
+01:52:22,323 --> 01:52:43,163
+Yapının birebir yapıdan diyalog haline getirilmesi ve şuradaki şu insanların, bu demin göstermiş olduğum tarzdaki taslarla haşır neşir edilmesi gibisinden olduğu tahmin ediliyor.
+
+415
+01:52:49,043 --> 01:53:03,443
+Bu modeller bir sürü şeyler yapabiliyorlar. Yapamadıkları şeyler var ama en azından mesela, en azından bir gelin. Plan yapma konusunda sıkıntı var. Plan yapma.
+
+416
+01:53:03,443 --> 01:53:15,043
+Tabi hani her geçen gün dediğim gibi yepyeni bir şeyler çıkıyor. Ama hani...
+
+417
+01:53:15,347 --> 01:53:30,907
+İçin Microsoft'un yaptığı değerlendirmeyi buraya aldım. Bu oldukça fair işidir. Yani öyle düşünün. Plan yapma da iyi değil.
+
+418
+01:53:34,804 --> 01:53:45,804
+Benim bahsettiğim gibi Microsoft'un, GPT, Ford için yaptığı değerlendirmeden bahsediyorum. O yüzden güvenebilirsiniz. O demeye çalışıyorum. Bir açıdan.
+
+419
+01:53:45,804 --> 01:53:53,804
+Buradaki şey ne? Tüm işlerin tek bir çizgi üzerine yürümelsen.
+
+420
+01:53:55,475 --> 01:54:07,235
+İleri geri gitmemeye dinamik bir şekilde şeyin olmayışının asıl yapılamamasının önünde engel, en büyük engelin bu olduğunu söyleniyor.
+
+421
+01:54:08,935 --> 01:54:19,155
+Bunu aşmak için yaklaşımlar var. Yani bir yerden çıkmaz sokarsa girdin, o zaman tekrardan sokağın başına dön.
+
+422
+01:54:19,667 --> 01:54:21,667
+Gibisinden bir yapı.
+
+423
+01:54:21,667 --> 01:54:25,667
+İşte ne diyorlar ki onlara?
+
+424
+01:54:25,667 --> 01:54:28,667
+Chain of Tall diyorlar.
+
+425
+01:54:28,667 --> 01:54:34,667
+O tarz şeyler var. Tall trees falan gibisinden böyle yaklaşımlar falan çıkmaya başladılar.
+
+426
+01:54:34,667 --> 01:54:37,667
+Ama oradadır sanki biraz şey var.
+
+427
+01:54:37,667 --> 01:54:46,667
+Nasıl söyleyeyim? Hani modelin kendisi temelinde böyle hani sol taraftan sağa doğru sürekli den, derleyen bir yapı ya.
+
+428
+01:54:47,347 --> 01:55:14,887
+Bu şey kısmını, hani normalde insanın dinamik olduğunu düşündüğümüz yapıyı da aslında yine o yapının içine giydirmeye çalışıyorlar falan gibisinden bir şey var. Yani mimari olarak asıl büyük taraf şeyde duruyor ya, bu küritren edilmiş yapının içerisinde duruyor ya, bu fine-tune kısmı aslında hani bundan yukarıdaki kısmı belki.
+
+429
+01:55:15,347 --> 01:55:29,988
+Data falan açısından da düşündüğünüzde hakikaten öyle. Asıl büyük yapı bu Next Talked Prediction'la yapılmış kısımda duruyor.
+
+430
+01:55:29,988 --> 01:55:40,747
+O yüzden oraya dokunmadan, oradaki eğitim sürecini değiştirmeden bana üst taraflarla oynayıp bu resmink mevzusunu...
+
+431
+01:55:40,884 --> 01:56:01,804
+İstediği gibi yapabilen bir hale dönüştürmek bana çok kolay gelmiyor. Bilmiyorum belki de yanılıyor dur. Neyse bu böyle bir şeyler aşılabilir. Planlama yapma aşılabilir mi? Aşmalı mıyız? Bu da ayrı bir soru belki. Aşmalı mıyız? Aşılabiliyorsa durdurabilir miyiz? Burası ayrı bir hikaye. İşte orada en son slide'ımıza bu.
+
+432
+01:56:03,347 --> 01:56:09,568
+2023 için bunu yazdım. Burada birkaç bir şey var. İkincisi şu, Hinton'ın tezi.
+
+433
+01:56:11,307 --> 01:56:17,448
+İnsan beyni kadar, yani hayatı boyunca, ben anlıyor hayatım boyunca. İnsan beyni kadar iyi çalışmamışsam ne yapmaya çalıştım diyor.
+
+434
+01:56:20,028 --> 01:56:27,628
+Ama şimdi diyor bu bir trilyon parametreli bu modeller diyor. Bir trilyon parametre nereden çıktı bilmiyorum ama.
+
+435
+01:56:28,064 --> 01:56:48,444
+Yani dediği şey, o bir trilyon parametre. Bizim diyor işte 100 trilyon parametre de beynimiz. Onu da işte insan beyninde kabaca 100 milyar hücre olduğu düşünmüyor. Her birinde ortama 1000 tane balansı olduğu düşünmüyor. Oradan 100 trilyon yapıyor. 100 trilyon parametre beynimize göre beynimize çok yakın işler yapabiliyorlar diyor.
+
+436
+01:56:56,148 --> 01:57:22,308
+Ortalama insandan çok çok daha iyi sonuçlar olabiliyorlar diyor. Yani bilgiyi temsil etme kabiliyetleri bizim geçmiş durumda diyor. Öyle söyleyeyim aslında. Daha az parametreyle çok daha fazla bilgiyi tutabiliyorlar diyor. Ve bu diyor şeydir, ne derler ona, zekanın bir ölçülüdür diyor. Dolayısıyla bunlar zeka gelişimleri şey olacaklar.
+
+437
+01:57:23,155 --> 01:57:29,456
+Dizi belli bir noktadan sonra zaten aşacaklar, gidecekler. İşler iyiye gitmiyor diyor aslında.
+
+438
+01:57:29,456 --> 01:57:38,456
+İnton'un dediği şey kabaca o. Öyle bir şeyi kontrol etmeniz çok çok kabaca mümkün değildir diyor.
+
+439
+01:57:38,456 --> 01:57:43,456
+Yani neye benziyor bu hani... Ne derler ona?
+
+440
+01:57:47,456 --> 01:57:49,952
+Neyse spekülasyona girmeyin.
+
+441
+01:57:49,952 --> 01:58:10,952
+Peki, şimdi bu yaklaşım. Bu bir yaklaşım. Tamam böyle gidiyorlar diyor. Öteki tarafta şöyle bir şey var. Plan yapamıyorlar ama kod yazıyorlar diyoruz. Yani diğer taraftaki kişiler. Plan yapamıyorlar. E peki tamam yapamıyorlar. Plan yapamayan bir şey nasıl kod yazar? Yazıda kodun nasıl bir anlamı olabilir? Yani tamamen bu...
+
+442
+01:58:12,979 --> 01:58:36,519
+İşte high-tech plagiarism, Chomsky'nin bu tarz modeller için kullandığı şey bu, terim bu. Yani süper kopyalılar. Yani iyi kopyalıcı, hakikaten kopyalıcıları anlayamıyoruz ama sadece kopyalıcı. Yani yeni bir şey üretmek, yeni bir şey söylemek, falan gibisinden bir kabiliyetleri yok. Uyum sağlıyorlar belli belli bir şeylere, bir şeyleri bir şeylere benzetiyorlar. Bu benzetme menzili kısa.
+
+443
+01:58:37,908 --> 01:58:43,207
+Çok farklı iki şeyi birbirine benzetip onlardan yepyeni bir birleşim falan üretemiyorlar bize.
+
+444
+01:58:44,247 --> 01:58:46,408
+Şey bu. Yapı bu.
+
+445
+01:58:48,167 --> 01:58:55,467
+İnsanların böyle bir sisteme soracakları soruların kümesi çok çok da büyük değil.
+
+446
+01:58:56,768 --> 01:58:58,747
+Ve insanları tatmin edebiliyorlar.
+
+447
+01:58:59,667 --> 01:59:03,608
+Ama dediğim gibi yani yepyeni bir şeylerden ortaya çıkanları şu yapıda mümkün değil.
+
+448
+01:59:03,747 --> 01:59:04,728
+Oysa abartmayalım.
+
+449
+01:59:05,108 --> 01:59:21,387
+Buna benzeyen birçok şey, Adem'in Cepo'lu dediği bir sistemi de vardı. Onun için de söylenmiş bir şey vardı. Ama orada söylen şeyden hiçbiri tutmadılar. Belki hatırlamamız vardır ya da yoktur. Yoktur herhalde. Neyse.
+
+450
+01:59:25,108 --> 01:59:32,307
+Başka bir şey var burada. Burası da ayrı bir hikâye. İnsanlık tahmin edemiyorsan insanlık tahmin edilir hale getir.
+
+451
+01:59:33,619 --> 01:59:35,800
+Burada başka bir durum.
+
+452
+01:59:37,640 --> 01:59:37,980
+Peki.
+
+453
+01:59:39,180 --> 01:59:42,360
+Şimdi burada bırakacağım arkadaşlar dersimizi.
+
+454
+01:59:43,739 --> 01:59:44,460
+Sorularınız var mı?
+
+455
+01:59:49,043 --> 02:00:00,904
+Bu plan yapamamak kısmını biraz açabilir misiniz? Yani bir sorun, problemin çözüm aşamaları gibi mi? Plandan kasıt.
+
+456
+02:00:00,904 --> 02:00:12,503
+Evet, aynen öyle. Yani bir problem var. O problemi çözmek için o problemi alt parçada ayırman lazım. Her birini ayrı ayrı çözmen lazım. Birini de çözemesen başka bir yolu denemen lazım.
+
+457
+02:00:13,503 --> 02:00:16,244
+Dinamik programlama vardır ya, çok kabayır.
+
+458
+02:00:16,692 --> 02:00:37,752
+Dönem programları nedir? Dönem programlarındaki gibi bir yapı, öyle söyleyeyim, burada kurulamıyor. Kurulamıyor demeyelim. Orası da ayrı bir hikaye. Öyle bir belirtmesi oluştursak da bu onu, o süreci temsil edebilir mi? Yani edebilir belki de.
+
+459
+02:00:38,195 --> 02:00:59,775
+Bilmiyorum. Ama dediğim gibi yani bu plan yapamam ve en dosyum çok temelinde aslında şey geliyor. Soldan sağa doğru yürüyor işler. Tek düze yürüyor. Hiçbir şekilde geriye dönmek teren birisinden bir şey yok. Olamıyor. Ölümteki yapı dolayısıyla olamıyor. Yani ne demek istiyorum? Siz şimdi ilerletiriz. Yani bir input verdiniz. Bu layer layer ilerliyor değil mi?
+
+460
+02:01:00,404 --> 02:01:26,003
+Bir temsil oluşuyor en sonunda. Bir şeyler ilerletiyorsunuz. İşlerin yolunda gitmediğinin farkına vardınız. Peki gitmedi. Ne yapmanız gereği bir önceki versiyona dönmemize geçiyorsunuz. Bir önceki versiyona nasıl döneceksiniz? Bir önceki versiyon derken o kaldırır yere döneceksiniz. O kaldırır yer aslında şöyle bir şey. O modelle aynı büyüklükte başka bir yapı olması lazım bir yerde. Tamamen.
+
+461
+02:01:28,148 --> 02:01:47,467
+Ve bu geride dönmenizin muhtemel olduğu şeylerin sayısı ya burası şey oluyor, oturuyor birbirinin üstüne. Yani sanki şey falan gibisinden yapılar lazım böyle. Spars olarak bunu gerçekleştirebilecek falan yapılar lazım. Ama derim gibi şu anda çok şey değil.
+
+462
+02:01:49,555 --> 02:02:13,155
+Başarılı işler üretemiyorlar. Ama dediğim gibi şey kısmı bir muamma. Yani muamma derken, kod yazıyorlar mesela. Değil mi? Kod yazmak, planlama yapmadan nasıl mümkün olabilir? Ama tabii orada şey belki karşımıza çıkıyor. Hani başka bir türlü öğrenme diyor.
+
+463
+02:02:14,292 --> 02:02:36,892
+Öğrenme diyorsak buna. Bizimki gibi bir şey değil. Yani hani sistematik, hiyerarşik bir öğrenme değil. Anlatabildim mi? Yani bizden atıldığım işler biraz hiyerarşik bir yürür. Benim bahsettiğim gibi ben altı basamaktaki sayı çarpabiliyorum ama üç basamaktaki sayı çarpamıyorum diyen bir insanı biz ne yapamayız?
+
+464
+02:02:38,739 --> 02:02:53,179
+Algılayamayın. Böyle bir şey nasıl mümkün olabilir? Ne kadar saçma bir şey olur. Altı bazan bir sayı çarpabiliyor. Arkadaşlar, çarpabiliyor. Ama üç bazan bir sayı çarpamıyor. Ne kadar garip değil mi? Yorumlamakta zorlanıyoruz. Anlatabildim mi olayı?
+
+465
+02:02:53,179 --> 02:03:04,019
+Bakın ezberlemekten bahsetmiyorum. Altı bazan iki tane sayı çarpımının ezberlenmesi diye bir şey mümkündü. Ya da bunu ezberlenmeyecek sayıları arttırdığımızda söyleyelim.
+
+466
+02:03:04,500 --> 02:03:21,039
+Ezberlenemeyecek bir kitle bir yapı var. Onu yapabiliyor ama çok daha küçük bir yapı yapamıyor. Garip. Öğrenmelerimiz bizimle, öğrenme yöntemimizle pek alakadır olmadığını söyleyebiliriz bu tarz öğrenmek.
+
+467
+02:03:22,039 --> 02:03:23,299
+Peki, başka?
+
+468
+02:03:28,948 --> 02:03:34,507
+Peki arkadaşlar, teşekkürler o zaman. Projelerinizle alakalı sorusu olan var mı?
+
+469
+02:03:36,627 --> 02:03:38,528
+Ben bir şey sorabilir miyim hocam?
+
+470
+02:03:38,768 --> 02:03:39,007
+Evet.
+
+471
+02:03:40,228 --> 02:03:50,108
+Benimki forum sitelerinden soru cevaplama da, açıklamada türlerine ve büyüklüklerine göre veri kümelerini karşılaştırın demişsiniz. Türden kastınız nedir acaba?
+
+472
+02:03:52,207 --> 02:03:52,908
+Bir saniye.
+
+473
+02:04:27,060 --> 02:04:48,480
+Forum sitelerinden soru cevap ikirleri. Orada şey falan olabilir ya, ne bileyim ben. Bir soruya birden fazla cevap verilmiş mesela. O noktada onu nasıl kullandığın gibi bir şey oluyor.
+
+474
+02:04:50,836 --> 02:05:12,716
+Gülklük ayrı bir şey zaten. Ya da hani konu anlamında mesela şu konularda işler daha iyi gidiyorken şu konularda işler pek de gitmiyor falan gibisinden bir karşılaştırma olabilir. Anlatabildim mi? Konu anlamında da ayırabilirsin yani hani türü. Öyle söyleyeyim belki. Tamam. Tamam. Teşekkür ederim hocam. Rica ederim. Başka?
+
+475
+02:05:18,771 --> 02:05:28,632
+Peki. O zaman arkadaşlar, proje değildi. Acaba üçüncü ödev notlarımızı öğrenme şansımız var mı acaba?
+
+476
+02:05:29,832 --> 02:05:31,271
+Üçüncü ödev notlarımızı.
+
+477
+02:05:41,300 --> 02:05:42,739
+Bir saniye bekleteceğim.
+
+478
+02:06:05,779 --> 02:06:06,839
+Görüyor musunuz?
+
+479
+02:06:08,839 --> 02:06:09,799
+Evet hocam.
+
+480
+02:06:22,804 --> 02:06:24,064
+Teşekkürler hocam.
+
+481
+02:06:24,144 --> 02:06:24,944
+Teşekkür ederim.
+
+482
+02:06:26,044 --> 02:06:31,384
+Peki o zaman arkadaşlar ben teşekkür ediyorum dönem için. Umarım sizin için keyifli olmuştur bir şeyler.
+
+483
+02:06:33,164 --> 02:06:37,064
+Kafanızda uyanmıştır, ışıklar yanmıştır birkaç noktada.
+
+484
+02:06:38,824 --> 02:06:43,584
+Ya da daha sonra belki farkına varacaksınızdır. Öyle şeyler de olabiliyor.
+
+485
+02:06:43,964 --> 02:06:48,484
+Neyse, ben teşekkür ediyorum Dün Güyüket'in zahir-zahir tatlımlarınız için.
+
+486
+02:06:49,328 --> 02:06:57,328
+Keşke online olmasaydı ama, bizim gibi yaşanan felaket dolayısıyla çok da fazla bir yapacak şeyimiz yoktu.
+
+487
+02:06:57,328 --> 02:07:06,328
+O yüzden böyle devam ettik, böyle başladık. Önümüzdeki dönemlerde belki başka derslerde vesaire yine tekrardan görüşürüz sizlerle.
+
+488
+02:07:06,328 --> 02:07:14,316
+Hepinize hoşçakalın diyorum şimdilik ama dediğim gibi finalde yine beraber olacağız sınıf olarak. Görüşmek üzere diyorum.
+
+489
+02:07:15,315 --> 02:07:17,315
+Teşekkürler.
