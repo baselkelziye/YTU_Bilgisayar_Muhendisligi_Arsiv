@@ -1,0 +1,3091 @@
+1
+00:00:04,019 --> 00:00:04,971
+Köszönöm.
+
+2
+00:00:09,779 --> 00:00:13,839
+Evet arkadaşlar, özür dilerim. Biraz geciktim. Derste başlayacağız.
+
+3
+00:00:19,219 --> 00:00:20,059
+Şöyle kalalım.
+
+4
+00:00:47,188 --> 00:00:48,188
+Ekvita bir şey.
+
+5
+00:03:00,819 --> 00:03:02,500
+Arkadaşlar, artık başlayabiliriz.
+
+6
+00:03:03,939 --> 00:03:05,400
+Şimdi şunu silelim.
+
+7
+00:03:09,364 --> 00:03:11,304
+Kaldığımız yerden devam edelim.
+
+8
+00:03:26,068 --> 00:03:51,748
+Arkadaşlar, önce bu refactoring konusunu bitireceğiz. Konuyu bitirdikten sonra ikinci vizenin yanıtlarını şöyle bir inceleyebiliriz. Ama önce konuyu bitirmek istiyorum. Yani ya zaman kalırsa konularını inceleyeceğiz. Bu arada şıksan sonuçlarını da sayfada duyurdum. İsteyen arkadaşlarım bakabilirler. Son gece okuyup para sese koydum. İsteyenler inceleyebilirler.
+
+9
+00:03:52,500 --> 00:03:55,520
+Şimdi bakalım nerede kalmışız? 31. sayfa.
+
+10
+00:03:59,891 --> 00:04:01,891
+Mássak, bu.
+
+11
+00:04:06,996 --> 00:04:25,995
+Evet. Metot yerine Nesne kullanıma. Best method with method olacak demiştik. Long metotu falan çözemediğimiz yerlerde bütün bu karmaşıklığı...
+
+12
+00:04:26,192 --> 00:04:31,812
+En azından tek bir yere odaklayalım, tek bir yerde toplayalım. Daha sonra yavaş yavaş çözeriz.
+
+13
+00:04:31,812 --> 00:04:37,591
+Anlamında yaptığımız bir factoring eylemiydi. Şimdi kaldığımız yerden devam edeceğiz.
+
+14
+00:04:38,271 --> 00:04:42,292
+Code kusurlarına ve onlara yönelik factoring eylemlerine devam ediyoruz.
+
+15
+00:04:43,091 --> 00:04:47,852
+Large class, aşırı büyük sınıf. Sıradaki code kusuru.
+
+16
+00:04:48,339 --> 00:05:05,539
+Eğer bir sınıfın büyük olduğunu görürseniz, bu büyük olasılıkla o sınıfın uyumunun düşük olduğu başka bir değişle o sınıfa birbiriyle yakın olmayan, kimi zaman da ilgisiz birbiriyle ilgisiz sorumluluklar atandığının göstergesi.
+
+17
+00:05:07,156 --> 00:05:17,156
+Üye alan sayısı da fazla olmakta. Üye metotlarının sayısından ziyade metotlarının...
+
+18
+00:05:18,387 --> 00:05:42,487
+Çok sayıda konut içermesi. Gerçi büyük olasılıkla her üç açıdan baktığımızda, üç açıdan baktığımızda fazladır diye düşünüyorum. Ama iş işe girmişken, normal tavsiye edilen uzunluğun on katı büyüklükte dört beş tane metot bile aynı yere getirmektedir. Bir sınıfı aşırı büyük hale getirmektedir. Bunun için ne gibi çözümler yapalım?
+
+19
+00:05:49,620 --> 00:06:05,280
+Öncelikle Extra Class çözümümüz var. Bir araya geldiklerinde daha fazla anlam ifade eden üyeleri gruplayıp onlardan bir ya da daha fazla yeni sınıf oluştururuz.
+
+20
+00:06:05,716 --> 00:06:32,336
+Ama bazen bu oluşturduğumuz sınıfları mevcut sınıfla bir kalıtım yana açısı içerisine sokmamız daha uygun olabilecektir. Bu da genelde bir alt sınıf ya da bir daha fazla sınıf olacaksa kardeş alt sınıflar söz konusu olabilir. O zaman da ekstrak subclass diyoruz. Yani oluşturacağımız sınıfı mevcut sınıfla sahiplik gibi bir ilişkiye koymaktansa kalıtım ilişkisine koyuyorsak o zaman ekstrak subclass yapmış oluyoruz.
+
+21
+00:06:34,708 --> 00:06:53,648
+Bunda kendine hasbazı avantajları var. Bazı öv grupları kimi durumlarda birlikte kullanılıyor, kimi durumlarda kullanılmıyorsa açıkça bunu bir özelleşme-genelleşme ilişkisine tabi tutmak, kalıtım-alt sınıf ilişkisine tabi tutmak daha anlamlı hale getirecektir bu ilişki.
+
+22
+00:07:02,708 --> 00:07:13,664
+Antı ile ilgili üye alanlar ve üye metotlar ve sorumluluklar değildir. Bazen eğer bir sistemde verinin sunumu...
+
+23
+00:07:13,663 --> 00:07:36,723
+Veya başka bir şey kullanıcı arayüzünü oluşturan katman ile iş mantığı katmanı arasında bir ayrımlaştırma yapamazsak, bunları iki ayrı katman değil de tek bir katman gibi ele alırsak, o zaman iş mantığıyla ilgili her sınıf aynı zamanda kendisinin kullanıcıya aktarılması ve kullanıcıdan bilgi alınmasına ilişkili üyeleri ve metotları da içerir hale gelecektir.
+
+24
+00:07:37,204 --> 00:07:41,644
+Örneğin kendisiyle ilgili fonlar veya diyalog bakslar ve bir durum bir leşenler.
+
+25
+00:07:41,663 --> 00:08:02,663
+Böyle olunca eşittir. En azından çarpı iki. Bir tarafta iş matlarına ilişkin kod, bir tarafta sunum katmanına ilişkin kod. Eğer böyle bir durum varsa, refactöringinde özlü olan dış arayüzü bozmadan, işareler veren hizmetleri bozmadan iş yapıyı değiştirmek şeklinde ilerleyebilmek için genelde...
+
+26
+00:08:04,403 --> 00:08:28,144
+Bu kısmı güye açılmış olan kısmı sabit tutarız. İş mantığıyla ilgili kısmı çekip yeni bir uygulama sınıfı oluştururuz. Eski sınıf ile yani güye sınıf ile iş mantığı sınıf arasında Observer tasarım kalıbını kurarız. Tasarım kalıblarını gördüğümüz için bu cümleyi rahatlıkla kurabilirim. Birazdan şimdi ayrıntılarına giriyoruz.
+
+27
+00:08:32,115 --> 00:08:44,596
+Önce ne demiştik? Ekstra Class demiştik. Birbiriyle ilgisiz, daha fazla iş yapan bir sınıfı bu işlere göre ikiye, yadır üçe her neyse ayırmaktı.
+
+28
+00:08:46,216 --> 00:08:55,675
+Tabii bunun için bu iki işi tespit ettikten sonra birisine ikinci iş deyip, onunla ilgili üye alan üye metodları seçip yeni bir sınıfa alırız.
+
+29
+00:08:57,364 --> 00:09:19,564
+Aslında bu da sadece long-lasting, başka birçok kod kusuruna yönelik iletişim bilgilerini kişi sınıfı içerisinde saklamışız.
+
+30
+00:09:19,564 --> 00:09:24,744
+Ve telefon numarası için bir getter metodumuz var. İlk bakışta mantıklı gelebilir ama.
+
+31
+00:09:26,163 --> 00:09:45,584
+Bu kişinin iç telefonu varsa belki cep telefonu da olacak, belki ev telefonu olacak. Yani birden fazla telefon numarası olacak. O zaman ne olacak? Buraya yeni üye alanlar eklemek zorunda kalacağız. Peki, kim insanın iç telefonu var ama ev telefonu kullanmıyordur. Ama yine de o bir üye alan olarak orada duracak, kalacak.
+
+32
+00:09:48,019 --> 00:10:01,899
+Gibi bazı nesneler için gerekmelsiz yere tanımlı olan bir alanda söz konusu olacak. Hal böyle olunca bu ayrıca kişi sınıfını da, kodunu da ayrıca kalmışlıklar çıkılacak.
+
+33
+00:10:03,412 --> 00:10:30,072
+Bu telefonla ilgili bilgileri bir araya toplayıp yeni bir sınıf oluşturmamız bu nedenle en mantıklı çözüm olacaktır. Örneğin telefon namarı diye bir sınıf oluşturduk ve alan kodu ve numarayı oraya çektik. Çakarken de katılarsanız üye alanının isimlerini de değiştirdik. Çünkü bir kişinin ofis telefonu olabilir ya da olmayabilir, ev telefonu olabilir ya da olmayabilir, cep telefonu olabilir ya da olmayabilir.
+
+34
+00:10:31,412 --> 00:10:46,292
+Şurada bir yerine 0, 2.7, 1 deseydik belki daha iyi bile olabilirdi. Çünkü herkesin bir ofis telefonu baktığında değil. Ama bu bir iş yazılmışsa ve her kişinin aynı zamanda iş telefonu mutlaka olmalı ve kaydetmemiz gerekiyorsa tabii ki buraya biri yazabiliriz.
+
+35
+00:10:48,884 --> 00:11:01,724
+Ayrıca bu tasarım bize, işte farklı telefon numaraları, hani bir tane telefon numarından bunun nesnesi daha oluşturup, onu da iç telefonunun ötkünde ev telefonu verebilmemizi falan sağlayacaktır doğrusu.
+
+36
+00:11:02,104 --> 00:11:14,004
+Tabii ki aslında bu ilişkisini kurmak için bir tane üye alan gerekecek ve yine bir öncekine benzer şekilde belki üç tane üye alan bilgisi gerekecek ev, iç ve cep telefonları için.
+
+37
+00:11:14,004 --> 00:11:16,884
+Ama herkesin ev telefonu olmayabilir, herkesin cep telefonu olmayabilir.
+
+38
+00:11:16,884 --> 00:11:25,384
+O sakınca hala sömekle birlikte en azından her bir telefonlaması için iki alan tutmaktansa.
+
+39
+00:11:27,283 --> 00:11:49,864
+Her bir telefon numarası için tek bir üye alan tutmak daha doğru olacaktır. Ve ayrıca bir telefon numarasının geçersiz olduğunu, diyelim ki kişinin iç telefonu var ama ev telefonu yok. Ama üç üye alanda burada tanımlanmak zorunda. Hatta daha doğrusu altı, kol altı numara. Peki şimdi bir kişinin ev telefonu kayıtlı değilse mesela buna ne değer atacağız? Sıfır mı değer atacağız?
+
+40
+00:11:50,644 --> 00:12:02,903
+Bilemiyorum. Sıfır bazı yerlerde santral anlamına falan gelmektedir. Fakat bunların nesne olması halinde, telefonlanma türden nesne, bunların diğerinin narlı olup olmadığına bakaraktan o kişinin o türden telefonu var mı?
+
+41
+00:12:03,064 --> 00:12:12,503
+Şimdi daha anlamlı ve mantıklı biçimde kodlayabiliriz. Ek olarak söyleyeyim mesela. Durum bu.
+
+42
+00:12:13,076 --> 00:12:29,076
+Ayrıca bir de göreceğiz ki mesela bu kişinin sınıfı metotları içerisinde bu telefon numarası ile ilgili daha başka bir dolu metotlar da görebileceğimizi düşünüyorum. Mesela eğer bu bir telekom bilgi sistemi ise...
+
+43
+00:12:30,259 --> 00:12:38,840
+Bir kişi telefon görüşmelerinde şebeke içi daha düşük, şebeke dışı daha fazla ücretlendirmeye tabi tutuluyor ya.
+
+44
+00:12:38,840 --> 00:12:55,899
+Şimdi herhangi iki telefon numarasının aynı bölgede mi, farklı bölgede mi, aynı operatörde mi, farklı operatörde mi, bunun mesela sınanması için, belirlenmesi için, gerekecek olan kod gibi şeyler de bu person sınıfında yer alacak ve iyice bu sınıfı şişirecek.
+
+45
+00:12:58,259 --> 00:13:12,480
+Bu diğer ek metotların da bu yeni çıkarılacak olan telefon numarası sınıfına çekilmesi uyumu iyice yükseltecek. Burada her zaman için şöyle söylüyorum. Daha evvel çizmiştim ama yine yeri gelmişken çizmemek istiyorum kısaca şöyle.
+
+46
+00:13:12,480 --> 00:13:14,800
+Vay tuyemadan çizeyim bunu.
+
+47
+00:13:20,692 --> 00:13:40,611
+Mesela diyelim ki, şunlar üye alanlar olsun, şunlar da üye metotlar olsun. Mesela kişinin name bilgisi falan diyelim ki. Ondan sonra ID kimlik bilgisi olsun diyelim ki.
+
+48
+00:13:47,764 --> 00:13:58,244
+Fon kod, alan kodu ve ötküsü de Office Phone Number olsun diyelim ki.
+
+49
+00:13:59,004 --> 00:14:02,884
+Şimdi diyelim ki bu sınıfta da 6 tane diyelim ki.
+
+50
+00:14:03,796 --> 00:14:21,255
+3, 4, 5 tane diyelim. 6 tane metot var. Bunlar çeşitli metotlar. Kişinin iş mantığıyla ilgili metotlar diyelim ki şu üyeleri kullanıyorsun. Bu arada şunu çizersem daha bir çizgi çizecektir.
+
+51
+00:14:22,292 --> 00:14:29,491
+Bir metottan biz üye alana yapılan çizgi, o metotta o üye alan kullanılıyor anlamında söylemek istiyorum.
+
+52
+00:14:29,491 --> 00:14:47,831
+Yani kişinin işman kişiyle ilgili metotları daha yoğun bir biçimde şeyi kullanmakla birlikte, kişiyle ilgili üye alanlarla ilgili bilgiyi kullanmakla birlikte, telefon numarası ile ilgili işlem yapan çeşitli metotlar.
+
+53
+00:14:50,292 --> 00:14:57,491
+İle ilgili üye alanlarına erişmekte. Bunlar metot olduğunu şöyle bir M1, M2 diyerekten simgeleyeyim.
+
+54
+00:14:58,611 --> 00:15:01,971
+İşte M6. Hepsini yazınca.
+
+55
+00:15:02,803 --> 00:15:17,723
+Şimdi genelde uyumunu nasıl hesaplıyorduk? Üye alan erişim deseninden yola çıkan metrikler var. Şimdi bunu başlı başına bir person sınıf olarak baktığımızda, şimdi bakıyorum kaç tane ilişki var şu aşamada?
+
+56
+00:15:27,572 --> 00:15:48,271
+Her metottan üye alana giden ilişki 10 adet. Eğer bu graph fully connected olsaydı, yani bu arada şunu da yanlış yere yazmışım, her metot her üye alana erişseydi o zaman ortaya 6x4 24 erişim olacaktı.
+
+57
+00:15:48,271 --> 00:15:55,572
+Ama şu an sadece 10 erişim kullanılıyor. Bunun bağlaşımına yaklaşık 10 bölü 24 diyebiliriz.
+
+58
+00:15:55,572 --> 00:15:58,991
+O da ne olur? Her an yazalım.
+
+59
+00:16:08,659 --> 00:16:14,219
+10 bölü 24. 0, 42 diyelim.
+
+60
+00:16:17,079 --> 00:16:19,919
+%42 diyebiliriz bu haliyle olan bir yılda.
+
+61
+00:16:20,436 --> 00:16:38,396
+Ama şimdi diyelim ki biz bunu bir noktadan keseceğiz. İkiye ayıracağız. Ekstra Class ile ne yaptık? Office Form Code ve Office Form Member bilgilerini ayrı sınıfa taşıdık ve ona erişen diğer metotları da ayrı sınıfa taşıdık. Şimdi ben şuraya şöyle bir çizgi çekeyim.
+
+62
+00:16:38,899 --> 00:17:05,360
+Bu şekilde bölümlendirmiş oluyoruz refactoring yaparaktan. Şimdi iki ayrı sınıfın uyumlarını hesaplayalım. Şurada 4 metot, 2 üye alan, 4, 8, toplam 8 en fazla erişim olabilir. Olan erişimleri saydığımda da 1, 2, 3, 4, 5, 6, 6, 6, 8 eşittir.
+
+63
+00:17:06,420 --> 00:17:09,119
+0.75
+
+64
+00:17:09,119 --> 00:17:26,420
+İkinci sınıfın uyumunu hesaplamaya çalışırsak ile ise zaten bakın iki yüyalar, iki yüya metot, ikiye iki dört olası birleşim. Dördü de çizilmiş. Oldu size dört bölü dört, yüzde yüz.
+
+65
+00:17:33,279 --> 00:18:00,519
+Şimdi bir sınıfta 0,75 bir sınıfta da %100'e çıkmış oldu. Demek ki buradan yola çıkarak da iyi bir iş yaptığınızı söyleyebilirim. Hani bırakın bu metotların uzun uzun olmasını. Gerçi şu an ondan bahsetmiyoruz. Large Class'tan bahsediyoruz. Bu metotlar kendi içerisinde çok uzun olmasalar bile diğer sınıflarla hele ki karşılaştılar olduğunda bu personal sınıfımızın eski halini.
+
+66
+00:18:01,619 --> 00:18:08,719
+Daha line of code açısından daha uzun olduğunu görüyorduk. Ekran paylaşımını kapattım.
+
+67
+00:18:08,719 --> 00:18:19,639
+Kapatacağımı, pardon. Turgdım kapatacağımı. Onu tam kaydetmek istemiyorum. O yüzden böyle bir refactoring elimi yapmak gayet mantıklı geliyor.
+
+68
+00:18:22,708 --> 00:18:30,488
+Peki, ama bazı durumlarda da bu çıkarttığımız sınıfı bir alt sınıf haline getirmek de yararlı oluyor diyebiliyorduk.
+
+69
+00:18:35,988 --> 00:18:54,327
+Onu da şurada görelim. Job Item diye bir sınıfımız var. Bu bir iş yapılacak. Bir işin yapılması için toplam bedel nedir? İşin birim fiyatı nedir? Ve o işi yapan işçi kimmiş? Bunlarla ilgili get-in metotlarımız var.
+
+70
+00:19:00,564 --> 00:19:10,144
+Genel amaçlı yapılan işlerde o işi belli bir çalışanın yapıp yapmadığından bağımlı olarak işin yapılmış olmasına bakıyoruz.
+
+71
+00:19:10,144 --> 00:19:18,443
+Bu durumda toplam fiyat her zaman için geçerli. Birim fiyatına iş masrafı falan eklenmiyor.
+
+72
+00:19:18,784 --> 00:19:25,544
+Fakat bazı işlerde görüyoruz ki birim fiyat daha farklı şekilde hesaplanıyor bazı vakalarda.
+
+73
+00:19:28,564 --> 00:19:31,436
+Çalışanın da ek...
+
+74
+00:19:31,476 --> 00:19:53,276
+Emeğinin karşılanması gerekmekte olduğunu görüyorsak, şimdi burada bir şey yakaladık. Her durumda employee ile işlem yapılmıyor. Unit Price'ın hesaplanmasında bazen farklılıklar oluyor ve her o farklılık gerçekleştiğinde o işi yapan işçinin de çalışanın da bilgi eviyle uğraşılması gerekiyor.
+
+75
+00:19:59,476 --> 00:20:00,000
+Yüzü
+
+76
+00:20:00,000 --> 00:20:16,420
+Get Unit Prizesi standart biçimde hesaplanır ama bazı özelleşmiş vakalarda çalışan emeğiyle birlikte hesaplanır. O zaman bazı özel durumlarda dediğimizde genelleşme-özelleşme ilişkisi olarak adlandırdığımız kalıtım ilişkisi.
+
+77
+00:20:16,420 --> 00:20:27,420
+Ve Job Item sınıfından yeni bir labor item diye mesra bir sınıf oluştururuz. O sınıfa Gent Employee metodunu taşırız. Get Unit Prizesi de...
+
+78
+00:20:28,000 --> 00:20:51,740
+O'veride ederiz. Çünkü işte employee ile ilgili işler de bu sefer o unit price'ın hesaplanmasında işin içerisine giriyor. Ama öbür türlü normal job itemlarda bu iş öyle yapılmıyor. O yüzden genel hali mevcut sınıfta duruyor. Daha özelleşmiş hali extract ettiğimiz klas mevcut sınıfın alt sınıfı şeklinde tasarlanıyor. Bunu da anlatım şekli bu şekilde.
+
+79
+00:20:54,996 --> 00:21:22,656
+Ve son olarak bu Duplicate Observed Data'ya gelelim. Şimdi normalde uygulama alanıyla ilgili verinin GUI sınıfında saklanması doğru değil. Ama bazen yapıyoruz yani bu işi. Çok da güzel bir şey olmuyor ama sonuçta yaptığımız şey bizi nereye getiriyor? Uygulamanın sunum katmanı ile iş mantığı katmanını iki işe geçirmiş oluyoruz. Ayrımını bozmuş oluyoruz. Hepsi komple biz yumak, kod yumağı hali almış oluyoruz.
+
+80
+00:21:22,736 --> 00:21:38,176
+En baştan daha iyi tasarlamalıydık. Ama ne yapalım? Tasarlayamadık. Belki canlıya da çıktık kodun bu haliyle. Sonraki sürümler için ne yapacağız? Geriye doğru uyumluluğu da kurmak istiyoruz. Refaktörün en önemli motivasyonlarından birisi de buydu zaten.
+
+81
+00:21:42,324 --> 00:22:00,224
+O zaman deriz ki, daha önceki tasarımımızda, dedim ki interval window diye bir aralığımızla, belli bir zaman aralığı içerisinde belli bir fiyat hesaplaması, ücretlendirmesi, ortalama döviz kuru veyahut da sıcaklık değişimine baktığımız bir şeyler var.
+
+82
+00:22:00,224 --> 00:22:07,284
+Bunun bu şekilde hem veri girişi için üye alanları var.
+
+83
+00:22:07,892 --> 00:22:17,832
+Hem veri girişiyle ilgili odağı üstüne alma veya odağı kaybetmesi gibi noktalarda yürüttüğümüz GUI eventlarını hem de eden kodlarımız var.
+
+84
+00:22:18,212 --> 00:22:24,951
+Hem de uzunluğu sonu ve belki toplanma masrafı falan hesaplayan iş mantığına yönelik metotlarımız da var.
+
+85
+00:22:25,332 --> 00:22:29,451
+Burada hem iş mantığını yürütmeye çalışıyoruz hem GUI olaylarını yürütmeye çalışıyoruz.
+
+86
+00:22:29,451 --> 00:22:30,612
+Bunu ikiye bölelim.
+
+87
+00:22:31,923 --> 00:22:46,503
+İç mantığıyla ilgili kısmını yeni bir sınıf haline getirelim. Ama tabii ki bunun güey sunumunu tutan sınıfın eski halinden bunları çıkarttık ama tamamen ilişkiyi koparmayalım.
+
+88
+00:22:47,884 --> 00:22:50,364
+Bir dakika müsaade arkadaşlar, hemen geliyorum.
+
+89
+00:23:27,604 --> 00:23:35,723
+Devam edebiliriz. Ne yapıyorduk? Şahane getirmiştik tasarımımızı. Bu ile ilgili sınıf tabii ki kalıyor, silmiyoruz.
+
+90
+00:23:35,723 --> 00:23:44,723
+Fakat orada iş mantığı ile ilgili bütün üye alan ve metotları taşıyan bir sınıfı çıkartıp...
+
+91
+00:23:46,044 --> 00:23:47,423
+Bir dakika.
+
+92
+00:23:50,528 --> 00:23:57,528
+Bu sınıfı çıkartıyorum yine. Ama bu sefer...
+
+93
+00:23:58,112 --> 00:24:16,412
+GUI'yi simgeleyen sınıfta olan bütün bir olaylar gerçekleştiğinde, veri girişi falan gibi olaylar gerçekleştiğinde, iç mantığını içeren sınıfta olan nesnelerinde bu direkçlikten haberdar edilmeleri, güncellenmeleri gerekmektedir.
+
+94
+00:24:16,412 --> 00:24:26,112
+Belki bazı GUI olaylarında güncellenmeleri gerekmemektedir. Sadece farklı bir zaman araları içerisindeki bir durum bilgisini görebilirsiniz.
+
+95
+00:24:26,112 --> 00:24:27,592
+Göstermesi gerekiyor olabilir.
+
+96
+00:24:28,071 --> 00:24:38,152
+İşte bu gibi durumda her çağrıyı doğrudan, interval window'dan, interval'a hemen aktarmak yerine Observer Tasarım Kılıfı kurabiliriz.
+
+97
+00:24:38,152 --> 00:24:39,980
+Burada...
+
+98
+00:24:40,435 --> 00:25:07,575
+Gözleyecek olan şey GUI. Çünkü olaylar ona geliyor. Gözlenebilen bağlı ise iç mantığımızı işlenen sınıf. Herhangi bir olay olduğunda bu olay gözlemlenen tarafından değişikliklerin aktarılması gerekmekte. Bu yapı bu şekilde kurabiliriz.
+
+99
+00:25:08,307 --> 00:25:11,248
+Bir dakika bir düşüneyim bakalım. Yanlış bir şey söylemiş olmayayım bu arada.
+
+100
+00:25:18,132 --> 00:25:38,132
+Peki, bu arada şey de olabilir yani. Bu GUI pencremiz veri girişi için değil, raporlama amaçlı da olabilir. Yani gözlemlenen varlığın durumundaki değişiklikleri aktarma şeklinde olabilir. Örneğin bir borsa endeksi izleme falan gibi. Bu durumda...
+
+101
+00:25:38,511 --> 00:26:06,511
+Bizim GUI'miz veri girişiyle ilgili işlem yapmamaktadır da veride olan değişiklikleri göstermektedir. O zaman gözlemlenen bizim verimiz, iş mantığı sınıfımız, gözlemleyen ise bizim GUI bileşenimiz olacaktır. Buradaki şema daha çok bu ikinci dediğim senaryo ile ilgili. Ben daha çok örnekle bunu zıttı olarak düşündüm. GUI'den olaylar gerçekleşiyor ve bu şeye aktarılıyor, iş mantığı oluşturan sınıfı.
+
+102
+00:26:06,511 --> 00:26:32,871
+Aktarılıyor şeklinde örnekledim. Ama fark etmiyor. Öyle de desek, öbür türlü de desek, her durumda iş mantığıyla sunum mantığını bir araya yedirdiğimiz durumlar olabiliyor. Bunun bölümlenmesi gerekmektedir. Eğer alt taraftaki senaryo ikinci dediğim gibi ise observer kalıbını kurabiliriz. Eğer ilk dediğim gibi ise burada yine daha önce gösterdiğim normal extract method.
+
+103
+00:26:34,511 --> 00:26:41,291
+Refactoring Eylemini, özür dilerim, class refactoring eğilimi yaptık deriz. Öyle demek daha doğrudur.
+
+104
+00:26:41,291 --> 00:26:42,891
+Tekrar diyorum.
+
+105
+00:26:44,339 --> 00:26:57,699
+Eğer bir varlık değişince o değişimi göstermek gibi bir GUI sorunumuz söz konusuysa o zaman duplicate observed data factoring elemini yapmış oluyoruz.
+
+106
+00:26:57,699 --> 00:27:09,899
+Yaptığımız bölümleme eleminin sonunda. Ama öbür türlü bir durum söz konusuysa o zaman normal extra class refactoring elemini yapmış oluyoruz.
+
+107
+00:27:10,291 --> 00:27:16,251
+İkisi benziyor birbirine bu açıdan ama farkı az önce söylediğim gibi buna dikkat etmek lazım.
+
+108
+00:27:25,491 --> 00:27:51,531
+Yeni bir kod kusuru. Daha doğrusu birbirine benzen iki yeni kod kusuru göreceğiz. Birincisi Divergence Change. İkincisi Shotgun Surgery. Bunların her kısmenin de özü bir yazılım hatası veya gereksinimde değişiklik söz konusu olduğu zaman gerekli düzeltmelerin veya düzenlemelerin yapılması için birden fazla yere dokunmamız gerekiyorsa
+
+109
+00:27:52,084 --> 00:28:09,703
+Bu iki kod kusurundan birisi geçerlidir demek istiyoruz. Aradaki fark da şu. Eğer bir gereksin değişikliğini karşılamak için yapmamız gereken kod değişikliklerini aynı sınıfın farklı metotlarında yapıyorsak buna divergent change diyoruz.
+
+110
+00:28:10,163 --> 00:28:32,983
+Yani birden fazla sınıfın, birer, hadi en fazla ikişer, az sayıda metodunu yapıyorsak da o zaman shotgun surgery diyoruz. Şimdi shotgun surgery'nin benzetiminden gideyim. Derbe ölçü çenici de onun tersi. Bizim deyimimizde, atasözlerimizde deyim olarak pire için yorgan yapmak diyoruz ya.
+
+111
+00:28:38,163 --> 00:28:47,583
+Komple Holger'ı yapmak biraz zodikal bir çözüm ve aslında efektif bir çözüm değil. Bu şekilde de şimdi mesela yine bir şey açayım.
+
+112
+00:28:47,583 --> 00:28:50,803
+Violet Remedy'i bir açayım. Onun üstünden göstereyim mesela.
+
+113
+00:28:54,259 --> 00:29:04,380
+Diyelim ki mesela, şöyle bir şey diyelim mesela, tasarımımız bu olsun diyelim ki.
+
+114
+00:29:04,380 --> 00:29:13,099
+Ve bir değişiklik yapmak için, bir düzenleme yapmak için, bir işi düzeltmek için şu metotta bir değişiklik yapıyoruz.
+
+115
+00:29:13,971 --> 00:29:25,971
+Şu metotta bir değişiklik yapıyoruz. Şurada bir değişiklik yapıyoruz. Şurada bir değişiklik yapıyoruz. Bir de şurada bir değişiklik yapıyoruz diyelim ki. 1, 2, 3, 4, 5 arı yerde değişiklik yapmak zorunda kaldık.
+
+116
+00:29:25,971 --> 00:29:41,971
+Şimdi bir çifteyle ateş ettiğiniz zaman, şimdi çiftin kartuşun içerisinde küçük küçük mermi çipler, top çipler vardır. Mesela ateş ettiğinizde o parçalar yayılır ve şartına...
+
+117
+00:29:41,971 --> 00:29:43,011
+etkisi yaratır.
+
+118
+00:29:43,751 --> 00:29:45,571
+Böylece hani eğer
+
+119
+00:29:45,571 --> 00:29:47,971
+yakın mesafeden bir yer ateş
+
+120
+00:29:47,971 --> 00:29:49,971
+ettiyseniz bir kağıt veya metal
+
+121
+00:29:49,971 --> 00:29:51,652
+veya plastik o bir dolu top
+
+122
+00:29:51,652 --> 00:29:53,951
+bir delik deşik eder o malzemeyi.
+
+123
+00:29:54,311 --> 00:29:56,051
+Saçılır yani ki saçma deriz
+
+124
+00:29:56,051 --> 00:29:58,132
+zaten. Hani şey
+
+125
+00:29:58,132 --> 00:29:59,951
+nonsense anlamında saçmak
+
+126
+00:29:59,951 --> 00:30:01,791
+değil de saçılmış anlamında saçma deriz
+
+127
+00:30:01,791 --> 00:30:03,852
+zaten biz o memleği. İşte şimdi burada
+
+128
+00:30:03,852 --> 00:30:05,672
+baktığımızda değişiklikler
+
+129
+00:30:05,672 --> 00:30:07,392
+ana tasarımımızın üzerinde
+
+130
+00:30:07,392 --> 00:30:09,152
+bir doğru yere saçılmış oldu.
+
+131
+00:30:09,683 --> 00:30:26,644
+Bir şeyi düzeltmek için çok sayıda sınıfın az sayıda metodunda ama sınıf bazında baktığımızda işte bir sınıfın diyelim ki iki metodu, bir sınıfın bir metodu, bir sınıfın bir metodu, bir sınıfın hadi bilemediniz en fazla üç metodu falan gibi yerlerde değişiklik yaptım.
+
+132
+00:30:26,644 --> 00:30:32,403
+Değişiklikleri işaretlediğimde böyle yayılmış bir durum ortaya çıkıyor. Buna Shotgun Surgery diyoruz.
+
+133
+00:30:37,683 --> 00:30:43,803
+Bir sınıfın bir dolu metodunda düzeltmeler yapıyorsak buna da derve ölçü change diyoruz.
+
+134
+00:30:44,683 --> 00:30:47,423
+Bunu artık temizleyebilirim ve şunu kapatabilirim.
+
+135
+00:30:50,923 --> 00:30:57,543
+Evet, sözde de örneklerim var aslında. Peki biz bunları nasıl düzeltebiliriz?
+
+136
+00:30:59,203 --> 00:31:03,403
+Ekstra class yapabiliriz. Burada...
+
+137
+00:31:03,443 --> 00:31:20,103
+Haliki Shotgun Söğü ve Söğü konusu ise bu farklı farklı sınıflardaki çok sayıda farklı metot demek ki aslında bunlar bu metotlar şu an için ayrı ayrı sınıflarda bulunmakla birlikte bunlar bir arada bir anlam teşkil ediyor.
+
+138
+00:31:20,276 --> 00:31:38,436
+Ve daha fazla anlam teşkil ediyor. O zaman bu söz konusu metotlar ve onların arku ak eriştiği üyelerden yeni bir veya birden fazla sınıf çıkartırız. Ve işte sahip ilişkisiyle kodu sürdürürüz. Bu olabilir.
+
+139
+00:31:47,124 --> 00:32:00,663
+Mevcut sınıflardan birine çekebiliriz. Oraya toplayabiliriz. O zaman da eğer bu bir üye alan taşıdıysak, Moe Field, üye metot taşıdıysak da Moe Method diyoruz. O zaman yaptığınız refactoring eylemine.
+
+140
+00:32:03,644 --> 00:32:09,663
+Şu şeyi zaten gördük, ekstra klası gördük. Moe Method veya Moe Field, ona bir bakalım şimdi.
+
+141
+00:32:11,471 --> 00:32:25,231
+Eğer bir metodu kendi içinde tanımladığı sınıftan ziyade başka sınıflardan çağrıldığını görüyorsak, o zaman aslında biz o metodu yanlış bir yerlerde tanımlamışız.
+
+142
+00:32:25,231 --> 00:32:39,172
+Daha çok hangi sınıftan nesneler o metodun çağrılmasına ihtiyaç duyuyorsa onlara taşımamız, eğer bunlar farklı sınıflardan nesnelerse onlardan buna en çok ihtiyaç duyana taşımamız.
+
+143
+00:32:39,471 --> 00:33:00,412
+En doğrusu olacaktı. Peki bunu iki şekilde yapabiliriz. Birincisi ya o metodu eski sınıfından tamamen silen yeni sınıftaki haline taşırız. Ama bunu yapmayı tercih etmiyoruz. Çünkü o zaman mevcut sınıftan o metodu sildiğimizde o sınıfın ara yüzünü değiştirmiş oluyoruz. O yüzden bunu yapmıyoruz.
+
+144
+00:33:02,036 --> 00:33:21,196
+O yüzden eski sınıfından tamamen silmeyi tercih etmiyoruz. Eski sınıfında, eski yerinde sadece metot imzası olarak kalır ve o eski sınıfındaki metot sadece bu metodun taşındığı yeni sınıftan olan nesnedeki haline gelen.
+
+145
+00:33:21,748 --> 00:33:31,768
+Mesajı iletir şeklinde çalışmak. En doğrusu delegation diyoruz buna. Bir nevi proxy gibi de düşünebilirsiniz. Yaptığı şey o çünkü.
+
+146
+00:33:32,596 --> 00:33:51,716
+Yani bu düzenlemede başka koksimallerle de onları da düzeltmeye ilişkin bir refactoring eylemidir. Veyahut da bazı daha karmaşık refactoring eylemlerinin ilk adımları olarak da düşünülebilir.
+
+147
+00:33:51,716 --> 00:33:59,355
+Çünkü mesela extra class yaptık tamam ama extra class yaparken üye alanları ve üye metotları da taşıyacağız.
+
+148
+00:34:00,596 --> 00:34:12,655
+Taşırken, bu taşıma işlemini yaparken, belki de direkt kesmeden, sadece mu işlemiyle arada delegation kurarak o ilişki koparmadan da bu işi yapabiliriz.
+
+149
+00:34:13,315 --> 00:34:17,615
+Yani işte iki farklı sınıfımız var. Sınıf 1'de bir metot var.
+
+150
+00:34:17,615 --> 00:34:28,596
+Ama bakıyoruz ki bu metot sınıf 1'de sadece tek bir başka metot içerisinden çağırıyorken, sınıfın içinin içerisindeki 5-6 ayrı metot üzerinden, tarafından çağırıyor.
+
+151
+00:34:28,596 --> 00:34:35,036
+O zaman demek ki bu metodun yeri orası değilmiş kardeşim. Klasikiymiş diyebiliriz. Onu oraya taşırız.
+
+152
+00:34:36,148 --> 00:35:02,548
+Veya belki sadece taşımayız da, klasikimizde de e-metot kalır ama onun yaptığı şey basitçe klasikideki e-metotu çağırmak olacaktır. Ve tabii ki aslında bu iki sınıfta böyle birbirinden kopuk değildir haliyle. Eğer bir şekilde bu klasikiden çağrılabiliyorsa bu e-metot demek ki arada ya bir sahiplik ilişkisi ya bir parça bütün ilişkisi bir şeyler var illaki. O yüzden o ilişkiyi öbür yönde kullanırlaktan.
+
+153
+00:35:03,092 --> 00:35:09,292
+Klas 1'e gelen e-metot çağrısını klas 2'ye yönlendirmekle her zaman için tercih edilebiliriz.
+
+154
+00:35:14,195 --> 00:35:24,335
+Peki, bir kod kusurumuz daha. Primitive Obsession, bunun da adı biraz espri diyebilirim. İlk elleri olan takıntı.
+
+155
+00:35:25,268 --> 00:35:47,748
+Şimdi bunu da ya da aşırı kullanıma şeklinde de söyleyebiliriz. Eğer yapısal programlamada çok deneyimimiz varsa ve Nesneye'nin ismiden yeni öğreniyorsak o zaman ilkel tiplerin aşırı olarak yoğun kullanma eğilimimiz olabiliyor. Şimdi bunda farklı farklı yöntemleri var.
+
+156
+00:35:48,112 --> 00:36:04,851
+O yüzden bunları şimdi sözleri tek tek anlatmaya çalışmaktansa her bir farklı takıntılı kullanımı düzeltecek bir farklı eylemlerini görüp o yanlış kullanımın neden kaynakladığını o şekilde anlatmak daha doğru olacak.
+
+157
+00:36:07,092 --> 00:36:19,811
+Hepsi replace ile başlıyor. Replace data value with object. Yani bir veri değeri kullanıyormuşuz, oluşturmuşuz ilkenlerden. Onun yerine bir nesne kullan anlamına geliyor.
+
+158
+00:36:20,980 --> 00:36:48,980
+Bunun nesneyle değiştir anlamına geliyor. Sonra type code kullanabiliyormuşuz. Tür kodu ne olabilir bu? Mesela kan grupları olabilir, farklı çalışan türleri olabilir. Bu gibi tip kodlarından bahsediyorum. Bu tip kodlarını da değiştireceğiz ama bazen farklı sınıflarla değiştirmek, bazen alt sınıflarla değiştirmek, bazen de bütün bu olayın yerine state veya strateji tasarım kalıbını kullanmak.
+
+159
+00:36:48,980 --> 00:37:16,920
+Daha doğru oluyor. Bunu göreceğiz. Bir de Replace Array with Object. Array'leri de primitif, yani primitif değerler içeren diziler, dizisi üstünden de yaptığımız tasarımlar olabiliyor. Yapısı altı oradan mamada. Orada öyle yapıyoruz çünkü başka şansımız yok. Hoş, stak yapısı da onun yerini kullanılabilir ama neyse lafı çok fazla uzatmadan ben şimdi bunların tek tek örneklerine geçeyim. Ayrıca şunu da parçası için söyleyeyim.
+
+160
+00:37:16,980 --> 00:37:31,680
+Bugün gördüğünüz Extra Class ve daha önceki hafta gördüğünüz Introduce Parameter Object bunları da aslında kullansaydık belki işin başında bu noktaya gelmemiş de olabilirdik diyebiliyorum.
+
+161
+00:37:36,436 --> 00:37:41,376
+Şimdi, ilk, ilk yanlış kullanımı, replace data value with object.
+
+162
+00:37:42,804 --> 00:38:06,864
+Bir üye alanı aslında başlı başına bir sınıf haline getirmek daha doğru olabiliyor bazı durumlarda. İşin en başta bunu yanlış kullanmışsak o hali alıyor. Örnek. Şimdi bizim bir orda sınıfımız var. Bundan sonra bu siparişi hangi müşteri vermişse on beş şüphanın adını bir stink üye alan olarak orda sınıfında tutuyormuşuz.
+
+163
+00:38:08,659 --> 00:38:14,659
+Aslında sadece müşterin adı tamam da...
+
+164
+00:38:16,148 --> 00:38:44,148
+Bir kere bu miçlerinin adını büyük harfle girmek, küçük harfle girmek, ondan sonra ad bir teki tanımlayıcı değil. Mesela ben kendi adımı çocukken çok benzersiz sanırdım. Yunus Emre Sajko. İki ad var, bir de sor ad var. Tekrarlanması zor bir kombinasyon diye düşünürdüm. Sonra eskiden bizim zamanımızda ulusal bayramlar, stadlar da görkemli biçimde falan kutlanırdı. Bir 23 Nisan kutlamasını seyredebilirim.
+
+165
+00:38:44,148 --> 00:38:57,067
+Televizyondan anons edip, bilmem ne sınıfından Yunus Emre Selçuk şiirini okuyacak. Aynı çocuğun tamamen başka bir çocuk yani. Oluyormuş.
+
+166
+00:38:58,356 --> 00:39:15,776
+Bu durumda hangi üniversite mesela çık hangi müşteri? Bunlar aynı adlı, soraklı farklı müşteriler olabilir diyoruz. İşte evet böyle bir durumda bu orderda müşterinin sadece adını bir üye alan olarak tutmak doğru bir modelleme gelir.
+
+167
+00:39:26,356 --> 00:39:38,796
+Mutlaka bir customer sınıfı oluşturmalıyız. Onda üye alan olarak adı vermeliyiz ki siparişin müşteriye ilişkisini kurabilelim mesela.
+
+168
+00:39:38,796 --> 00:39:44,936
+Veya işte bunu öbür türlü de belki düşünebiliriz veya illa parça koymak da gerekmiyor.
+
+169
+00:39:45,416 --> 00:39:53,796
+Yani folder bu şekilde kurmuş ama yani siparişler bir sipariş birden fazla müşteri tarafından.
+
+170
+00:39:54,356 --> 00:40:00,000
+Bu sorumlulukta,
+
+171
+00:40:00,000 --> 00:40:14,240
+Neyse, ona da çok takılmayalım. Burada önemli olan müşterinin orada içerisinde bir üye alan olarak kalmaması, başlı başına bir varlık olarak temsil edilmesi gereğidir. Önemli olan bu.
+
+172
+00:40:28,000 --> 00:40:47,700
+Falan gibi işlemler yaptığımızı göreceğiz. Biz bu müşteri sınıfını ayırmadığımız takdirde bu sipariş sınıfı bütün bu işlemlerle de ayrı ayrı ayrı uzayacaktır. Large, çok large hatta huge class olacaktır. Bu nedenle iyisemiz işin başında bu sınıfları ayıralım ve öyle devam edelim.
+
+173
+00:40:51,603 --> 00:40:53,403
+Itless Data Vliwit Object bu.
+
+174
+00:40:55,703 --> 00:40:57,043
+Şimdi gelin Type Kodlara.
+
+175
+00:40:58,423 --> 00:41:05,523
+Type Kodlar genelde yapısal programlamada sabit değişken kullanma alışkanlığımızla ilgili bir şeydir.
+
+176
+00:41:06,483 --> 00:41:09,543
+Örneğin kişinin kan grupları saklanması istersin.
+
+177
+00:41:11,487 --> 00:41:23,767
+İşte kan grubu bu yalanını tam sayı cinsinden tuttuk diyelim ki. Ama bir kişinin kan grubu ne olabilir? Sıfır grubu olabilir. A grubu, B grubu veya AB grubu olabilir.
+
+178
+00:41:24,371 --> 00:41:51,031
+Bu dört, yani sistemde bu dört farklı kan grubundan birisine sahip kişiler olabilir. Zaten başka bir beşinci kan grubu da olamaz. O yüzden bu dört kan grubu türünü public, final, static olarak tanımlarız. Hepsi birden. Böylelikle bunlara değişmeyen sabitler olur. Ama tabii öte yandan bunlara değer de atarız. Örneğin O'ya sıfır, yani sıfıra sıfır, A'ya bir, B'ye iki, A, B'ye üç diyebiliriz mesela.
+
+179
+00:41:51,827 --> 00:42:15,967
+Ve bu kan grubundaki değer neyse, örneğin bir ise bu A grubudur anlamına gelmektedir. Böyle bir kod yazabiliriz. Ama hani böyle yapmamız doğru değil. En temel ilkelerimizden biri neydi? Neyin değişiklerini bu ve onu sarmalı. Şimdi kişilerin kan grupları değişebilir. Bu nedenle biz aslında kan grubu diye yeni bir sınıf oluşturmalıyız.
+
+180
+00:42:16,596 --> 00:42:36,275
+Bu kan grubunun çeşitli durumlarını buna taşımalıyız. Kişi sınıfında blood group üyesi kalır ama bu artık int olmaz. Türü blood group olur büyük harfi. Ve o üye alana hangi nesine atanmışsa o artık o kişinin kan grubudur deriz.
+
+181
+00:42:36,724 --> 00:43:02,484
+En temel bunu yaparız. Tabi birçok programlama dilinde enum yapısı da var. Bir enum kullansak aslında bu hataya düşmeyiz diye düşünüyorum. Enum kullanmanın hiçbir sakıncası yok. Enumu da bilmeyen yoktur diye düşünüyorum. O yüzden bunun nasıl kodlandığı açısından didiklemeye gerek yok diye düşünüyorum.
+
+182
+00:43:04,340 --> 00:43:27,599
+Hatta aslında parantez içinde Java'da enumlar da aslında biraz sınıf olarak argılanır. Enum'un her bir olası değeri o sınıf türünden bir instance, bir nesnedir. O şekilde enalanır ve konstruktörü, yalanları, yalanları bile olabilmektedir. Onu da bilmeyen arkadaşlarım kolaylıkla bilgi işaretliğinden bakabilirler.
+
+183
+00:43:29,972 --> 00:43:46,791
+Neyse, buna atlıyorum. Yani eğer bir type kodumuz varsa, type kodu olarak kullandığımız üye alanda ya bunu enum yapacağız veyahut da enum desteklemiyorsa kullandığımız değil, buna benzer şekilde kendi tip sınıfımızı oluşturacağız.
+
+184
+00:43:48,012 --> 00:43:53,512
+Sonra bir de replace type code with subclass refactoring eylemi var.
+
+185
+00:43:53,940 --> 00:44:02,139
+Bir sınıfın davranışını belirleyen bir tip kodu, ilkel tip kodu yerine kalıtı ve çok bir şimdilik kullanımını tercih edilmesini dayanmaktadır.
+
+186
+00:44:02,527 --> 00:44:30,327
+Örnek üstünden gidelim. Şimdi bizim çalışan sınıfımız var. Şirketimizde diyelim ki mühendisler, satış elemanları, yöneticiler falan farklı üyeler, farklı türler de olabilir. Farklı türden çalışanlarımız var. Bunu da yine benzer bir şekilde tarh kod, enum gibi düşünebilirsiniz. Bu tarh kod. Bunlar da public finance statik olarak tanımladık. Ve bir tür diye bir üye alanımız vardır çalışan sınıfında.
+
+187
+00:44:30,527 --> 00:44:49,947
+Eğer burada sıfır diyorsa bu mühendisidir, bir diyorsa satış yerine var, iki diyorsa müdürtür filan filan gibi değişik kodlar olduğunu görelim. Peki ama şimdi diyelim ki bu çalışanlara bir iş yaptıracağız. Ya da bu çalışanın maaş üniversiteyi yapacağız veyahut da özlük hakları ile ilgili hesaplar yapacağız filan filan.
+
+188
+00:44:49,983 --> 00:45:17,744
+Bütün o metotlarda göreceğiz ki, bir switch case göreceğiz. Switch type, bundan sonra case engineer şöyle şöyle yap. Case sayısını böyle böyle yap. İşte size uzun koda, long metoda ve oradan da yola çıkaraktan, çünkü bir dolu özlük hakkı için bir dolu farklı metot olacak. Bütün o long metotlarda bir araya gelip large class oluşturacaklar. O yan etkisi de olacak.
+
+189
+00:45:17,983 --> 00:45:30,744
+Yani sırf şu an kadar hep söyleye geldiğiniz, kendinizi bir switch case kullanıyorken görüyorsanız veya if else if else if zincir kuruyorken görüyorsanız büyük olasılıkla yanlış bir modelleme yapmışsınızdır.
+
+190
+00:45:31,364 --> 00:45:38,483
+Kalıtım kullanarak da çok biçimlilik yeteneği üzerinden o işi yapmamız en doğrusu olacaktır diyorduk.
+
+191
+00:45:38,483 --> 00:45:41,483
+Bu da yine onun başka bir...
+
+192
+00:45:42,099 --> 00:46:07,239
+Hali diyelim. İşte böyle bir şey yapmak yerine biz mevcut bir employee sınıfımız oluruz ve bundan engineer ve salesman alt sınıflarını oluştururuz ve her birinin özlük metotlarındaki case kısımlarını eski employee sınıfından çıkartıp yeni alt sınıflarımıza taşınız. Böylelikle çok daha derli toplu sınıflar elde etmiş oluruz.
+
+193
+00:46:08,659 --> 00:46:19,799
+İlk başta yaptığımız hataya yine type code kullanılıyor. Ama bunun en düzgün refactor etme yolu alt sınıflar oluşturmaktır diyoruz.
+
+194
+00:46:27,251 --> 00:46:27,932
+Ta-air.
+
+195
+00:46:28,083 --> 00:46:56,003
+O kadar sözde söyledim. Keşke bir kere daha tıklasaymışım da. Evet, o sözde söylediğim şey de burada öyle olduğunu görüyoruz. Tabii ki işte eğer herhangi bir sıfırta olmayan çalışanımız söz konusu olabiliyorsa, o zaman employee sınıfını abstark yapmamıza gerek yok. Ama hani çalışan, ya ne tür bir çalışan, her çalışan en azından belli bir türde olmalıdır diyorsak, o zaman employee sınıfını abstark yaparız. Ondan hiç nesne oluşturmayız. Sadece alt sınıflar sonuç.
+
+196
+00:46:56,083 --> 00:46:59,463
+şeklinde kodumuzu ilerleyeceğiz.
+
+197
+00:47:01,463 --> 00:47:03,023
+Böyle bir dönüm.
+
+198
+00:47:06,291 --> 00:47:19,431
+Gelelim en son versiyonuna. Type kodu set veya strateji ile de değiştirebiliriz. Şimdi diyelim ki kalıtım kullanmak istemiyoruz bu aşamada.
+
+199
+00:47:27,891 --> 00:47:39,551
+Ne desem şimdi? Employee de diyelim ki bir personal sınıfından türü olsun. Tamam da bunun yani engineer'ın durumunu bozmaz.
+
+200
+00:47:39,551 --> 00:47:43,291
+Peki, ya da şey mi yapalım?
+
+201
+00:47:46,260 --> 00:47:58,539
+Neyse, şu örnekten çıkartamadım ama eğer bir nedenle kalıtım kullanmak istemiyorsanız aynı işi State veya Strateji Tasarım kalıbını kurarak da yapabilirsiniz.
+
+202
+00:47:58,800 --> 00:48:07,380
+Employee sınıfının eski hali yerine Employee Type dediği diyeceğimiz bir interfej üzerinden.
+
+203
+00:48:08,052 --> 00:48:18,072
+İşte mühendismiş, satış edemememiş vesaire vesaire. Her birinin özlük haklarının hesaplanması için gerekli tüm metotlarının imzalarını ara yüzle tanımlarız.
+
+204
+00:48:18,384 --> 00:48:26,804
+O arayüzü gerçekleyen alt sınıflarda da o metotların gövdelerini tanımlarız. Veyahut da bu soyut sınıf olarak da düşünebilirsiniz.
+
+205
+00:48:28,844 --> 00:48:42,483
+Böyle bir tasarım da yine aynı etkiye yol açacaktır. Eski halindeki uzun uzun keyzlerin her biri ilgili stratejiye atanacaktır.
+
+206
+00:48:46,384 --> 00:48:58,983
+Kişi çalışıp mühendisken satış kadrosuna alınabilir. Veyahut da satış kadrosundayken yönetici kadrosuna alınabilir. Veya mühendis kadrosundayken yönetici kadrosuna alınabilir.
+
+207
+00:48:58,983 --> 00:49:14,304
+Bu önceki eski tasarımımız, her ne kadar kötü desek de eleştirsek de bu tarp değerinin değiştirilmesiyle birlikte hemen o anda o çalışan, farklı bir tür çalışan haline getirilebiliyor.
+
+208
+00:49:14,384 --> 00:49:35,364
+Bu açıdan bir esnekliği var. Gerçi önceki tasarımımızda bu esneklik yok mu? Şu halinde yok bakın. Çünkü şimdi engineer, şimdi bir alt sınıf, seyresim de diğer bir alt sınıf. Bir engineer'ı seyresim yapmak istiyorsak, o engineer'ın nesnesinin,
+
+209
+00:49:35,731 --> 00:49:52,512
+Artık sistemden silmeli ama silmeden önce onun üye alanlarıyla ilgili tüm verileri kopyalayıp oradan bir salesman nesnesi oluşturmalı ve eski engineer kayıdını silip yerine yeni salesman nesnesini oraya koymaksız zorunda kalırız.
+
+210
+00:49:52,512 --> 00:49:56,751
+Yani bu yaptığımız iş biraz daha masraflı hale gelmiş oluyor.
+
+211
+00:50:00,000 --> 00:50:16,000
+Evet, Code with Subclass yaparsak bu daha zor hale geliyor. Çünkü bildiğiniz üzere kalıtım sınıf düzeyinde tanımlanan bir ilişkidir. Biz bir nesnenin türünü değiştiremeyiz. Bir türden bir nesne tanımladığımızda her zaman o türdedir. Sadece...
+
+212
+00:50:17,235 --> 00:50:38,415
+Çok biçimlilik gereği üst sınıftan bir nesne beklenen yerde kullanılabilir. Bir tek o şey var ama kardeş sınıf haline getirilemez. Böyle bir şey olabilmesi için engineer sınıfına bir copy constructor koymalı. Hatta belki birden fazla koymalı. Değişik türleri çevirebilecek ki o da pek hoş olmayacak.
+
+213
+00:50:45,235 --> 00:50:58,435
+O zaman company sınıfına bir metot ekleyeceğiz. Promote ya da Change Type diye belirli bir türden nesneyi diğer tür nesneyi çevirmek için az önce bahsettiğim işlemleri yapacak.
+
+214
+00:50:59,215 --> 00:51:09,155
+Bunlardan bakarsanız bakın epey bir uzun iş. Halbuki bir önceki halinde basitçe şuradaki üye alanının değerini değiştirmekle işi çözebiliyorduk.
+
+215
+00:51:12,052 --> 00:51:30,852
+Çalışanlar farklı gruplar arasında değiştirilebilecekse, taşınabilecekse, göç ettirilebilecekse, terfi ettirilebilecekse falan. O zaman ilk aklımıza gelen polimorfik çözüm yerine strateji tasarım kalıbını veya state tasarım kalıbını kurmak daha doğru olacaktır.
+
+216
+00:51:33,076 --> 00:51:41,096
+Artık bir çalışanın mutlaka bir employee type strateji gerçekleşmesine sahip olması gerekmektedir bu tasarımda.
+
+217
+00:51:41,096 --> 00:51:54,635
+Eğer bir mühendisi örneğin çalışanını haline getirmek istiyorsak artık employee type üyesine salesman nesnesi atadığımızda bu iş anında faaliyete geçmiş olur.
+
+218
+00:51:55,115 --> 00:52:01,076
+Bu normal employee nesnesi sistemde nerelerde saklanmışsa hiç bozulmadan...
+
+219
+00:52:01,076 --> 00:52:08,615
+Kimliğini değiştirmek zorunda kalmadan, objekt adresini değiştirmek zorunda kalmadan yaşamaya devam edebiliriz.
+
+220
+00:52:08,947 --> 00:52:28,687
+Basitçe sadece değişen kısmı bulup, onu sarmalamış olup değişikliği aktarmış olduk, set etmiş olduk, güncellemiş olduk bu employee nesnesine. O yüzden böyle bir şey gerekir mi, gerek var mı derseniz evet var. Az önce bahsettiğim senaryo gibi durumlarda böyle bir şey de gerek var.
+
+221
+00:52:36,947 --> 00:52:42,347
+O zaman tamamen buna state tasarım kalıbı şeklinde isim vermemiz daha doğru olur.
+
+222
+00:52:42,347 --> 00:52:54,907
+Ama yok, sadece özlü kartlarının farklı farklı şekillerde hesaplanması söz konusuysa, hangi türden çalışan olduğuna göre o zaman da bu ortaya çıkan şey strateji tasarım kalıbı deriz.
+
+223
+00:52:55,267 --> 00:53:00,507
+Arada böyle bir ufak ama önemli nüans olduğunu tekrar hatırlatmış olayım bu resimliyle.
+
+224
+00:53:03,699 --> 00:53:20,000
+Evet, son olarak ara vermeden önce bir de şunu görelim. Ben bunu BBGB derslerinde de soruyordum yani. Bakın öğrenci akıllı biliyorum falan diye. Şimdi yapısal programlamasından baktığınızda doğru bir şey.
+
+225
+00:53:23,027 --> 00:53:30,327
+Futbol takımının ya da işte ligdeki takımların isimlerini, puanlarını ve avalajlarını tutmak istiyoruz.
+
+226
+00:53:31,167 --> 00:53:41,087
+Bunu nasıl yapacağız? Stark tepsi falan bilmiyoruz diyelim ki veya dil bunu desteklemiyor. O zaman ne yapacağız? Bizim takım isimlerimiz olacak.
+
+227
+00:53:41,747 --> 00:53:49,487
+Ondan sonra cümle şeylerimiz olacak, puanlarımız olacak ve avalajlarımız olacak. Bunları üç ayrı dizide de tutabiliriz.
+
+228
+00:53:51,027 --> 00:53:52,347
+boyutlu maddesi de tutmuşum ama
+
+229
+00:53:52,347 --> 00:53:54,687
+üç tane tek boyutlu
+
+230
+00:53:54,687 --> 00:53:56,087
+maddesi de tutabiliriz.
+
+231
+00:53:56,567 --> 00:53:58,647
+En azından takım isimli dizisi
+
+232
+00:53:58,647 --> 00:53:59,807
+bir string dizisi.
+
+233
+00:54:00,947 --> 00:54:02,627
+İşte puanlar
+
+234
+00:54:02,627 --> 00:54:04,507
+dizisi ayrı bir dizi ve
+
+235
+00:54:04,507 --> 00:54:06,547
+amelajlar dizisi ayrı bir
+
+236
+00:54:06,547 --> 00:54:07,987
+dizi olur ve
+
+237
+00:54:07,987 --> 00:54:09,327
+bunu şöyle aslında
+
+238
+00:54:09,327 --> 00:54:11,607
+kısaca göstereyim.
+
+239
+00:54:12,107 --> 00:54:13,167
+Açayım şimdi.
+
+240
+00:54:13,907 --> 00:54:20,907
+Java üstünden gidelim. Çünkü karakter dizisi iki boyutlu matris olacak. O ek kalmaşıklığa gitmeyelim.
+
+241
+00:54:20,907 --> 00:54:35,907
+String, çık çık, çık. Takım adları dizim olur mesela. Ondan sonra int puanlar dizim olur mesela.
+
+242
+00:54:41,139 --> 00:54:55,480
+Dizim olur mesela. Ve her dizideki aynı indisideki bilgiler aynı takımın bilgileridir şeklinde bir kodu yazabiliriz.
+
+243
+00:54:55,480 --> 00:55:07,800
+Nokta nokta gidiyor. İşte G, F, F, B, B, Ş, K filan diye yazarım. Ondan sonra diyelim ki 12, 15.
+
+244
+00:55:08,239 --> 00:55:21,159
+Şu anki durumları bilmiyorum ama... Ay pardon, yanlış şey ettim. Takım adları. Şöyle... Bakın burada bir de yanlış yazdım. Hataya açık bir şey bu.
+
+245
+00:55:33,076 --> 00:55:59,935
+25 filan gibisinden. Şimdi bu da demek oluyor ki ben eğer Galatasaray'la ilgili verilerle uğraşacaksam hep 3 aylık dizinin de 0 indisindeki değerlerle uğraşacağım. Yok eğer Fenerbahçe'yle ilgili verilerle uğraşacaksam hep bu işte şeyle ilgili bu çok kötü bir renk oldu ama neyse kusura bakmayın şöyle yapalım.
+
+246
+00:56:01,076 --> 00:56:18,036
+Kendisindeki verilerle ulaşılan üç farklı dizide gibi. Böyle bir şey yapmaktansa, eğer azından bir strakt yapımı olsaydı ve strakt dizimi olsaydı bu işi kurtaralım. Ama biz Nesneye Dayalı'dan bahsediyorsak, demek ki takım diye bir sınıf oluşturmamız gerekiyor aslında.
+
+247
+00:56:18,623 --> 00:56:41,043
+Ve onun üye alanlarını o şekilde tasarlamak ve ilgili değerleri atamak gerekecek. Daha evvel üç ayrı dizide oluşturduğum işlemleri tek bir dizide ve tek bir nesnenin üye alanları olaraktan erişmen en doğru olacak.
+
+248
+00:56:41,619 --> 00:57:09,380
+Şuradaki spesifik örneğe aslında ben şey bile yapmış olabilirim. Sayılarda string içerisinde string olarak yer alabilir ama daha sonra onları aritmetik işleme tabi tutmak istiyorsak integer'ın int value falan gibi metotları var. Onları kullanarak stringten tam sayı elde edebiliyoruz. Yani oralara kadar gelecek bu iş. Epey çetrefe, çaplaşık yerlere gidecek. İş öyle olmasın. Biz çok boyutlu dizilerde ayrı ayrı kayıtlar tutmak yerine.
+
+249
+00:57:09,619 --> 00:57:29,760
+Tek bir nesne kullanalım. Zaten en doğal, en doğrusu o. Şekilde söyleyebilirim. Evet, peki. Bu ara kadar soru gelmedi ama çok da aslında aşırı kalmışlık şeylerden bahsetmiyoruz. Ama yine de epey bir süre harcadık. Araba almaya vaktimiz geldi diyelim.
+
+250
+00:57:32,083 --> 00:57:37,663
+14-15'e kadar. Bana verin arkadaşlar. Sonra devam ederiz.
+
+251
+01:08:51,188 --> 01:09:03,768
+Evet arkadaşlar, bir dakika geçtikten bahsediyorum. Evde olunca, baktık şeyler çıkabiliyor. Kıslığa bakmayın lütfen. Kaldığımız yerden devam edebiliriz.
+
+252
+01:09:07,628 --> 01:09:16,708
+Yeni bir kod kısmıyla devam ediyoruz. Feature NY, yani nitelik kıskançlı, özellik kıskançlı.
+
+253
+01:09:17,300 --> 01:09:29,399
+O da şöyle tanımlanıyor. Bir metot ait olduğu sınıfın üyelerinden ziyade başka sınıfların üyelerine erişiyorsa buna özel kıskançlı adı veriyoruz.
+
+254
+01:09:34,228 --> 01:09:44,847
+Bir metot ait olduğu sınıfın üyeleri tarafından daha fazla başka sınıflardan erişiliyorsa bu sınıfa yine aynı durum söz konusu.
+
+255
+01:09:45,708 --> 01:09:55,288
+Burada çok derken çok göreceli bir kavram. Neye göre, kime göre? Burada bir ortalama eşikten fazla anlamında demek istiyoruz.
+
+256
+01:10:00,000 --> 01:10:10,579
+Yazım emeği olarak daha evvel yaptığınız projelerden belli bir kalitenin üstünde olduğunu bildiğiniz projelerdeki ortalama sayı üstünden gidebilirsiniz.
+
+257
+01:10:10,579 --> 01:10:23,000
+Veya da literatürde çeşitli farklı problem alanlarında, farklı dillerde yazılmış yazımlarda bu incelemenin yapılmış olduğu çalışmalar olabiliyor.
+
+258
+01:10:23,340 --> 01:10:25,619
+Onlardan bu deli ad edebilirsiniz.
+
+259
+01:10:28,000 --> 01:10:39,899
+Bu anda yazdığınız proje üstünde de bu hesaplamaları yapıp ortalamanın üstünde, mesela ortalamanın üçte bir üstüne çok diyebilirsiniz.
+
+260
+01:10:39,899 --> 01:10:42,119
+Mesela böyle işler kullanabilirsiniz.
+
+261
+01:10:50,131 --> 01:11:10,051
+Böyleyken bu durumun tek anlamı alabiliyor. Sorumluluklar doğru atarmamış. Veya belki de başka bir deyişle üye alan veya üye metod ait olduğu olması gereken geldi tanımlanmamış. O şekilde de yorumlanabilir.
+
+262
+01:11:12,180 --> 01:11:26,300
+Burada tabii ki elbette bir bağlaşım söz konusu olacak sınıflar arasında. Sıfır bağlaşım diye bir şey yok. O yüzden hiçbir metot sadece ve sadece kendi metotlarını kullanmaz.
+
+263
+01:11:27,579 --> 01:11:36,300
+Erişkide olduğu diğer sınıflardan da metot çağlarında bulunur elbette. Bu doğaldır. Fakat baktığımızda spesifik bir metot için...
+
+264
+01:11:36,756 --> 01:12:01,376
+Bir A sınıfının M1 metodu, A sınıfının diğer metotlarından ziyade bir B sınıfının ve C sınıfının diyelim ki çeşitli metotları tarafından daha çok kullanılıyorsa, o zaman biz bu M1 metodunun A sınıfını değil de çalma vakalarına bakarak da B veya C sınıfına koymamız daha doğru olabilirmiş diyeceğiz.
+
+265
+01:12:01,376 --> 01:12:04,756
+Bu nedenle strateji ve visitor gibi kalıplarımız...
+
+266
+01:12:04,756 --> 01:12:24,336
+Bunları bir fashion and one olarak yorumlamamak lazım. Peki, problemi nasıl çözebiliriz? Az önce sözü de söylemiş oldum. Bu metod yaparız büyük olasılıkla. Tabii ki o metodun ilk yerinden tamamen silmeyiz herhalde. Bir delegation çağrısı.
+
+267
+01:12:24,851 --> 01:12:40,931
+Tek bir satılık bir çağrı tutarız içerisinde. Veyahut da belki de ekstrak metot da söz konusu olabilir. Çünkü bu söz konusu kıskançlık diyelim bir metodun belirli bir kısmına odaklanmışsa sadece o kısmı ekstrakt ederiz.
+
+268
+01:12:42,163 --> 01:12:52,843
+O kıskanılan kısım hangi sınıflardan kıskanılıyorsa o sınıflardan en çok ihtiyaç duyulanına taşınmaz.
+
+269
+01:12:55,123 --> 01:13:02,323
+Şeyler bu arkadaşlar. Kod kusurlarının bu ders kapsamında planladığımız hepsini gördük.
+
+270
+01:13:02,739 --> 01:13:30,739
+Şimdi yapacağımız şey, bu incelediğimiz düzenlemenin bir kısmının birlikte kullanmak suretiyle bir kodu nasıl adım adım iyileştirme işlemlerine tabi tutarız. Bunu inceleyeceğiz. Bu vakayda ben yine bu notları aldım, bu notları hazırlamak da kullandım. Martin Fowler'ın Faktör'ün kitabının birinci bölümünden aldım. Orada da yer almaktadır.
+
+271
+01:13:30,739 --> 01:13:50,260
+Bu bölümün ilk başta kendisi ilk başta bu bölümü ele alıp ondan sonra Code Sima ve Refactoring eylemlerini tutmuş ama benim yaklaşığım bir yanda önce parçaları öğrenmek, oradan bütünü. O yüzden ben bu sırada anlatmayı tercih ettim.
+
+272
+01:13:50,260 --> 01:13:52,799
+Bir saniye müsaadenizle rica ediyorum.
+
+273
+01:14:16,307 --> 01:14:19,547
+Bu sırada Eclipse'i de açmış oldum.
+
+274
+01:14:22,047 --> 01:14:27,807
+Şimdi, bu şeyler, gerçi Unit Testing'i anlatırken şöyle bir değinmiştim.
+
+275
+01:14:27,807 --> 01:14:33,768
+Refactoring klasörünün altında, Fold'a bilmem kaç paketleri altında.
+
+276
+01:14:38,387 --> 01:14:41,868
+Kodun orijinal hali fonda 00 paketinde.
+
+277
+01:14:42,304 --> 01:15:04,524
+Ve onunla ilgili unit testlerimiz ise de testin klasörünün altında yine aynı paketi tanımlayıp onun altında test custom, test new ve ikisini bir ikiye topladığım test top. Bütün bunları önceki hafta incelemiştik. Unit testleri çalıştırıp hepsinin doğru yürüdüğünü göstermiştik.
+
+278
+01:15:10,304 --> 01:15:16,064
+Yani noktalara tek tek bakıp küçük küçük bir fark dönük eylemleri yapmaya başlayacağız.
+
+279
+01:15:17,203 --> 01:15:41,183
+Bu ilk hal 0-0 paketi. Şimdi indeki sınıf halleri. Buradaki kodları incelemiştik. Ve hatırlarsanız böyle en uzun kod custom sınıfıydı. Ve custom sınıfının içerisinde de statement metoduydu. Bu çok uzun ve karmaşık bir metod. İlk neşteri buradaktan ilerleyeceğiz.
+
+280
+01:15:45,203 --> 01:15:58,843
+Aynı olsa bile ben şimdi her bir adımda sürekli bunu en baştan yaparken hep aynı kararları veremeyebilirim. Bir gün şu tarafından başlarım, öbür gün şu tarafından başlarım falan.
+
+281
+01:15:59,923 --> 01:16:17,043
+O yüzden senaryoyu tutarlı bir şekilde sözdürebilmek için birazcık kopya çekeceğim. Şu an nereye bakacağım, sonra nereye neşe alacağım bunun sırasını biraz kopya çekeceğim müsaadenizle. Öbür türlü hep farklı farklı dolaşık dolaşık bir anlatım olabiliyor.
+
+282
+01:16:23,956 --> 01:16:31,255
+[kişisel bilgi] O yüzden biraz zaman sessiz alıp bir işin hikayesine bakmaya çalışıyorum.
+
+283
+01:16:40,212 --> 01:16:42,212
+Evet, şu yararlı olur herhalde diye düşünüyorum.
+
+284
+01:16:45,524 --> 01:17:12,244
+Ama yani işte dediğim gibi, şimdi aslına baktığımızda öncelikle bu Statement metodundan bakmaya başlayacağım. Ve genelde de ilk, şimdi öncelikle şöyle bir dikkatimi çeken noktaları söyleyeyim. Sonra bunu hangi sayıda yapacağımızı yansılardan, noktadan giderekten bakarız. Öncelikle evet bu Statement sınıfının, Customer sınıfının Statement metodu çok uzun. Bunu bölmemiz gerekiyor. Ve burada da uzunluğu epey arttıran Switch 2S görüyoruz. Bunu da çözeceğiz.
+
+285
+01:17:13,524 --> 01:17:19,623
+Aslında burada bir tür hem long metot ama bu long metot biraz da type code'dan kaynaklanıyor.
+
+286
+01:17:19,703 --> 01:17:21,623
+Bakalım filmin üç tür filmi var demişiz.
+
+287
+01:17:21,623 --> 01:17:28,444
+Bunların her biri biraz type code ve bütün bu type kodlar bir switch case içerisinde el alıyor.
+
+288
+01:17:28,884 --> 01:17:32,104
+Bu type kodları bir kere bir ortadan kaldıracağız.
+
+289
+01:17:32,104 --> 01:17:34,363
+Bir. İkincisi.
+
+290
+01:17:35,764 --> 01:17:51,904
+Geçiş değişkenler kullanımı da kodu uzatmaya meylettiriyordu. Bu geçiş değişkenleri de ortadan kaldıracağız. Mesela en azından şuradaki disamounta baktığımızda,
+
+291
+01:17:55,347 --> 01:18:13,347
+Mesela ortadan kaldırabileceğimizi görebileceğiz belki mesela. Kümülatif toplamı kaldıramayız ama en azından bir smount'u kaldırabiliriz diye düşünüyorum. Ondan sonra bir bakıyorum şu statement metodu şey içerisinde.
+
+292
+01:18:14,836 --> 01:18:34,076
+Her bir kira kaydına bakıyor. Bir kere şey içerisinde, custom içerisinde Mühendisliğinin türlerine bir ulaşım söz konusu. Hardbook'un sınıf şemasına baktığımızda, custom'a da Mühendisliğine aslında rental ilişkili içerisinde.
+
+293
+01:18:34,076 --> 01:18:41,376
+Buradan target Mühendisliğine bir şeylerle erişmeye çalışması dolaylı ilişkiyi aşırı kullanımı gibi erişe edilebilir, düşünmeyebiliriz.
+
+294
+01:18:42,836 --> 01:18:46,556
+Future Envy gibi olduğu ortaya çıkarabilir. İnceleyeceğiz bunları.
+
+295
+01:18:47,855 --> 01:18:48,796
+Ondan sonra Cema.
+
+296
+01:18:51,716 --> 01:18:53,216
+Başka, başka mesela.
+
+297
+01:18:57,256 --> 01:18:59,296
+En başta aklıma gelenler bunlar.
+
+298
+01:19:01,056 --> 01:19:08,136
+Şimdi bunları tek tek çıkardıkça, düzelttıkça yeni yeni vakalar da, yeni yeni simerler de görebileceğiz.
+
+299
+01:19:08,515 --> 01:19:10,355
+Onları da düzeltmek için yeni eylemler yapacağız.
+
+300
+01:19:20,020 --> 01:19:23,320
+Şimdi bunu yapmaya başlayacağız.
+
+301
+01:19:27,636 --> 01:19:52,676
+Statement metodunun parçalarına başlayacağız. Burada en uzun parçada Switch Blue olarak gözüküyor. Hep diyorduk aslında burada birçok bir çimdilik kullanmamız gerekiyordu. O yüzden bütün tasarımı komple, slip, yerin baştan, sıfırdan yapmayacağım. Refactor edeceğim küçük küçük adımlarla. Bunu da kısa adımlarla yapmak istiyorum. Bütün komple tasarımı hemen değiştirmek yerine.
+
+302
+01:19:56,372 --> 01:20:18,631
+Şimdi bu SwitchBlog içeren kısmı ilk yaptığım değişiklik yeni bir metoda çıkarmak olacak. Yani ilk başta bir Extract Method yapacağım. Şu SwitchCase kısmıyla ilgili içeriği alacağım. Yine aynı sınıfta kalmak şardıyla bir Extract Method işlemi yapmış olacağım. Bunu da yapabilmek için.
+
+303
+01:20:19,988 --> 01:20:47,988
+Şimdi şu kısım, şu switch case ne bilgisi istiyor bizden? Bir kere şu anki kira kaydının filmini bilmemizi istiyor. Ya şu anki kira kaydını bilmemizi istiyor. Oradan yola çıkarak da işte filmin ne olduğunu öğrenip onun fiyat kodunu öğrenmek, ondan sonra kaç gün kiralandığının bilgisini öğrenmek. Bu işlemleri yapıyor ve sonucu aslında yaptığı şey o film kiral...
+
+304
+01:20:47,988 --> 01:21:15,427
+Bu konuların karlamasından kaynaklanan bedeli hesaplayıp Disamount'un üzerine ekletiyor. O zaman ben bu switch'i keserim. Amount for diye bir metot oluşturur mesela. Onlara da bir paramet olarak bu iç nesnesini verelim, sarı iki kira kaydını. O alır, bütün bunları orada yapar. En azından o karmaşıkları bir yere taşımış olacağız ve böylece bu statement metodu biraz kısalacak.
+
+305
+01:21:15,988 --> 01:21:19,188
+Ve biraz daha odaklı hale gelmiş olacak.
+
+306
+01:21:20,448 --> 01:21:26,588
+Bu değişikliği yaptığında ortaya çıkan durum folder 01 paketinde.
+
+307
+01:21:26,588 --> 01:21:39,568
+Ve eski halini ve yeni halini karşılaştırırsam, bir kontrol ile seçip sağ tıklayıp compare with each other dediğimde yaptığım değişikliği göreceğiz.
+
+308
+01:21:41,171 --> 01:21:44,291
+Bakın, paket adı değişti. Ondan sonra açıma.
+
+309
+01:21:47,859 --> 01:22:10,559
+Süre tutmakla ilgili bir şeydi. 0-0'da duruyor. Şey için tartışmıştık. Demiştik ki yaptığımız bir faktöring eylemleri eğer olur da bir performans daha bazına sebep olur mu, olmaz mı? O yüzden acaba işler ne kadar saniyede yapılıyor? Onu bir tartışmıştık diye hatırlıyorum. Onunla ilgili şeylerdi. Onu da bir seviyorum şimdi.
+
+310
+01:22:17,076 --> 01:22:19,076
+Öyle karşılaştırıyorum.
+
+311
+01:22:21,076 --> 01:22:25,076
+Compare with, nerede ki? Şurada.
+
+312
+01:22:28,076 --> 01:22:32,076
+Şimdi bakıyorum, tabi ki sadece paket hızlı değişti, o normal.
+
+313
+01:22:32,076 --> 01:22:41,076
+Şimdi, Statement metodunda eski halinde, SwitchCase'in olduğu yerde artık sadece iki satır var.
+
+314
+01:22:44,340 --> 01:22:55,840
+Şimdi işte amount for diye bir metot çıkartmış oldum. Aşağı indiğimde bu amount for metodunun daha önce olmadığını şimdi eklenmiş olduğunu görüyoruz.
+
+315
+01:22:55,840 --> 01:23:06,920
+Bunu da private metot olarak tanımladım. Çünkü bu metodun özel olarak tek bir film kaydı ile ilgili bir hesabın doğrudan çağırılmasına hiç gerek yok.
+
+316
+01:23:08,083 --> 01:23:27,243
+Anlamı da yok doğrusu. Bir kişi neleri kiraladığını kendisi biliyor. Ona da dışarıdan bir iş, parametre verebilecek, şu kiralasaydı şöyle olurdu gibisinden senaryo hesaplamak için belki yararlı olabilir ama o da çok kısıtlı bir yarar.
+
+317
+01:23:27,243 --> 01:23:36,043
+Bu nedenle bunun, bu hesaplamanın, kira bedeli hesaplamanın onun ilk çalışma mantığıyla ilgili oldu.
+
+318
+01:23:36,083 --> 01:23:44,523
+Bunu düşünerekten de private olarak tanımladık. O içeri buraya aldık aslında. Yaptığımız şey o oldu.
+
+319
+01:23:45,904 --> 01:23:57,243
+Ve şey, şimdi şurada aslında typecasting'e ihtiracım var mıydı ki? Aslında çok yoktu ama neyse yapmışız, eklemişiz şey değil, dert diye.
+
+320
+01:23:57,716 --> 01:24:10,916
+Ondan sonra normalde eski halinde bu Disse Mount'u Switch Case içerisinde hesaplarken artık Disse Mount'un hesaplanması için bu Extract ettiği metodu kullanıyorum, çağırıyorum.
+
+321
+01:24:10,916 --> 01:24:21,756
+Geri kalan kısım aynı. Bakın renklerden de sağ tarafta olmadığı için sol tarafta, sağ tarafta birbirinin aynı olmaya devam ediyor.
+
+322
+01:24:22,536 --> 01:24:25,016
+Şimdi bu noktada ben şöyle bir şey yapacağım.
+
+323
+01:24:26,163 --> 01:24:51,804
+Bu değişikliği yaptım. Ama acaba doğru mu yaptım? Bu yaptığım değişikliğin sistemde yeni bir hata çıkarmamış olması gerekmektedir. O yüzden test kezlerini de tekrarlayacağım. Şimdi test kezlerini sıfırdan yazmayacağım. Şöyle olacak. Bunun bir demonstrasyonunu şu da yapayım. Nerede yapayım? Burada yapsam olur mu? Olur mesela şimdi. Şey yapacağım.
+
+324
+01:24:54,260 --> 01:25:14,439
+Şunu follow 0 paketini alıp şuraya yapıştıracağım. Ve tabii şuradakini de alacağım. Test kodlarını da alacağım. Ve yine yapıştıracağım.
+
+325
+01:25:19,988 --> 01:25:33,787
+Şöyle yaparsam, hiç yok. Hayır, şöyle yapacağım o zaman. Şimdi o projedeki farklı klasörlere yayılan paket mantığını geçiyorum. Sınıfları şuradan kopyalayacağım. Şuraya bir şey tutacağım.
+
+326
+01:25:36,547 --> 01:25:43,787
+Ve şimdi bakalım, şey ne? Ha, JNT beğenmediği için onu da projeye eklemem gerekiyor. Ben en iyisi...
+
+327
+01:25:43,956 --> 01:25:49,456
+Koskoca bulacağım tekrar şey diyeyim. Yok, şey yapabilirim. Ekleyelim. Ekleyelim. Ekleyelim.
+
+328
+01:25:49,456 --> 01:25:59,556
+Bitpad. Şurada. Bir dakika.
+
+329
+01:25:59,556 --> 01:26:08,524
+At library jenit. Bunu ekleyeceğim.
+
+330
+01:26:12,243 --> 01:26:27,363
+Evet, eklediğimde derleme hatalarım gitti. Şu işi isterseniz şu aşamada birlikte yapalım sizinle. Şu paketi bir kopyalıp yapıştırıyorum.
+
+331
+01:26:27,988 --> 01:26:53,328
+0.1 olacak. Zaten orijinalinde yaparken de aynı şekilde yapmıştım. Şimdi değişikliklerimi bu 0.1 paketinde yapacağım. Fakat test kodunu hiç değiştirmemiş olacağım. Böylelikle aslında refactoringi özüne uygun yapmış olduğumu da anlamış oluyorum. Benim iş mantığımla ilgili kodu değiştirdiğimde test kodunu değiştirmem gerekmiyorsa.
+
+332
+01:26:55,091 --> 01:27:06,691
+O zaman işte iç mantığı kodunun dışarıya verdiği hizmet ayar yüzünü değiştirmeden bir değişiklik yapmış olduğum anlamına gelmektedir bu. Ve doğru bir iş anlamına gelmektedir.
+
+333
+01:27:06,691 --> 01:27:18,191
+Şimdi geriye bu amount for şeydi, double'dı, kuruşlu şey olabileceğinden.
+
+334
+01:27:23,220 --> 01:27:38,279
+Rental iç diyeceğim mesela. Bunu bir hesaplayacak. Şimdi bunu yapabilmem için şunu şuradan kesmeye başlıyorum.
+
+335
+01:27:45,971 --> 01:27:47,231
+Şuraya koyuyorum.
+
+336
+01:27:48,811 --> 01:27:54,532
+Tabii şimdi şey, şu değişkeni bir tekrarlamam gerekiyor.
+
+337
+01:27:54,692 --> 01:27:56,891
+Ya da, hayır yok gerekmiyor ama şöyle yapacağım.
+
+338
+01:27:57,551 --> 01:28:01,511
+Diyeceğim ki, disaman demeyeceğim de.
+
+339
+01:28:02,032 --> 01:28:04,452
+En rahatı şu an demem.
+
+340
+01:28:04,452 --> 01:28:09,992
+Bu değişkeni saklamam en kolay olacak.
+
+341
+01:28:12,916 --> 01:28:17,515
+Evet ve en sonunda da return dili. Bunu döndüreceğim.
+
+342
+01:28:24,083 --> 01:28:29,083
+Bu fonksiyonu bu şekilde yaptıktan sonra, diyeceğim ki,
+
+343
+01:28:31,083 --> 01:28:38,083
+This amount, amount of each. Yaptığım şey bu.
+
+344
+01:28:39,083 --> 01:28:49,996
+Ve şimdi bu değişikliği yaptıktan sonra, şu 0.1 paketindeki test dolu çalıştırırsam, test custom'ı da çalıştırırsam aynı şey.
+
+345
+01:28:50,100 --> 01:29:03,360
+Diğerlerinde değişiklik yapmadım. Hem bir kere bu ana kadar değerleme hatası almadım test konuyla ilgili. Hem de bütün testlerim de düzgün olarak çalışıyor. Demek ki işimi doğru yaptım diyebilirim.
+
+346
+01:29:06,003 --> 01:29:32,183
+Örtme şeklim bu şekilde olacak. Bu şekilde çalışarak 0-1'den 11'e kadar olan paketleri oluşturdum. Şimdi süreyi daha verimli kullanmak amacıyla bu kopya yapıştırı işlemlerini tekrarlamayacağım. Ben yapacağım değişikliğin ne olduğunu söyleyip onunla ilgili ipuçları verip ondan sonra bir sonraki paketin içerisinde değişen kod kısmını göstererek gidiyor olacağım.
+
+347
+01:29:33,716 --> 01:29:34,976
+Bundan soluması için.
+
+348
+01:29:40,051 --> 01:29:57,031
+Şimdi kastımız sınıfımız, statement metodu bu haliyle biraz kısarmış oldu. Hala olması gerekenler daha uzun diye düşünüyorum. Ve hala aslında şurada switch case'ler duruyor. Ama sırayla hepsini el atacağız.
+
+349
+01:30:03,412 --> 01:30:17,051
+Evet. Şimdi aslında bu refactoring eylemlerinin bazılarını yapmak için ekli site size seçenek sunuyor. Ama bu her zaman için doğru gerçekleşmeyebiliyor.
+
+350
+01:30:18,688 --> 01:30:29,747
+Gerçi ben bu noktaları dolaştırırken de aradan epey zaman geçtirdim. Bu sıra içerisinde Eclipse'in versiyonlarında bazı refactoring eylemlerini daha doğru yapabiliyor hale gelmiş olabilir.
+
+351
+01:30:29,747 --> 01:30:40,648
+Ama bence yine işin en sağlamı kendi refactoring eylemlerinizi kendiniz yapmanız en rahatı diye düşünüyorum.
+
+352
+01:30:46,579 --> 01:31:07,500
+Gerçi bir kere paketi kopyaladıktan sonra arada yaptığınız değişiklikleri geri almak istiyorsanız basitçe yeni paketi silersiniz eski paketten dönüp tekrar yola devam edersiniz. O yüzden şey diyecektim, yaptığınız şeyi hangi adımda yaptığınızı siz biliyorsunuz. Otomatik kod olsa neyi nasıl tam olarak çıkarttığını anlamayabilirsiniz diyecektim ama çok da geçerli bir tartışma olmayacaktır. O yüzden...
+
+353
+01:31:08,692 --> 01:31:20,711
+Neyse, zaten konuyu da öğrenmemiz de gerekiyor. Bu nedenle adım adım bu düzenlemeleri yapmaya devam edelim. Eski zaten bunun değişmediğinden bahsettim.
+
+354
+01:31:21,555 --> 01:31:29,655
+Şimdi ne hale geldi tasarımımız? Hem sınıf şaması hem de Sequence Diagram üzerinden değişiklikleri göstereceğim.
+
+355
+01:31:29,655 --> 01:31:42,055
+Aslında Sequence Diagram'da göstermeye birçok aşamada çok da gerek olmayacak ama işin fark ettiği Sequence Diagram'da daha net gözüktüğü bir nokta olacak. O zaman özellikle söyleyeceğim bu işe. Ne yapmış olduk?
+
+356
+01:31:42,452 --> 01:31:57,471
+Statement metodunun içerisinden bir kısım kodu çıkarttık, ekstrakt ettik ve aynı sınıfa yerleştirdik. Adını amountful koyarak da. Tasarımımız şu an bu haldi. Buradan devam edeceğiz.
+
+357
+01:32:03,060 --> 01:32:18,220
+Şimdi bu emans for metodunu oluşturdum ama şimdi isimlerine baktığımda artık bu haliyle olduğu zaman biraz anlamsız gelen geçici değişken isimlerim var.
+
+358
+01:32:21,876 --> 01:32:42,376
+Rental EACH her biri. Tamam da şimdi buraya EACH demişim parametrenin adına ama bu metod aslında her bir kira kaydı için değil, kendisine parametre olarak gelen tek bir kira kaydı için işlem yapıyor. Ondan sonra acaba. O yüzden bunun adını değiştirsek iyi olur diye düşünüyorum.
+
+359
+01:32:49,876 --> 01:33:04,156
+Bu metod genel amaçlı bir bedel hesaplama metodu haline geldiği için result diye bir isim vermeyi de tercih etmişiz.
+
+360
+01:33:04,156 --> 01:33:17,876
+Burada üye alan isim değiştirmek, bunu ekip üstünden yapmak daha kolay ve verimli. İlk zamanlarından beri doğru çalışan bir şey. O yüzden değişkenin üstünde üye alan, üye metot her ne?
+
+361
+01:33:17,876 --> 01:33:24,736
+Neyse, paket sınıf adı bile bu şekilde yapılabiliyor. Üstüne girip sağ tıklayıp, krifaktör.
+
+362
+01:33:25,268 --> 01:33:47,207
+Rename dediğinizde, buraya yeni isim verdiğinizde her yerde bu düzenleme tekrarlanıyor. Hocam buna da refaktör ekme diyorsunuz diyebilirsiniz ama anlaşılabilirliğe arttırmak ya yönelik bir değişiklik olduğu için küçük bile olsa küçümsemeden bu bir refaktör ekmeyenleriz diyebilirim.
+
+363
+01:33:48,724 --> 01:33:54,783
+O yüzden bu adlandırmayı da adliyeye çıkınca yaptığımda ortaya çıkan durum.
+
+364
+01:33:54,783 --> 01:33:59,543
+Foller 1'deki ve Foller 2'deki customer'ları karşılaştırdığımda.
+
+365
+01:34:03,220 --> 01:34:09,220
+Paket adı doğal olarak değişti. Şurası aynen niye gri gösteriyor?
+
+366
+01:34:09,220 --> 01:34:15,020
+Rental, rental, rental's next amount, this amount, rental amount for each.
+
+367
+01:34:15,460 --> 01:34:19,060
+Niye renklendi de anlamadım şimdi ben bunu. Ha, şey, pardon, haklısınız.
+
+368
+01:34:22,804 --> 01:34:42,104
+Geçici nesne ismini de değiştirmek için statement metodunun içerisinde. İç değil de eventual demişim. Tamam, bu çok da fark etmez ama sadece işte o isim değişikliği. Bu isim değişikliğini hem ana metodlar yapmışım hem de bu amount for metodunu da yapmışım.
+
+369
+01:34:42,484 --> 01:35:10,484
+Burada da değişiklikler özellikle bu isimlerine, Lise, Rantel, Rizalat yapmak, İYİÇ'e, Elantel yapmaktan kaynaklanan değişiklikler. Yoksa onun dışında başka bir değişiklik yok. Tabii ki aslında sadece üye alan adı değiştirmek bizim test kezlerimizin bozuna az ama şöyle bir durum da olabilirdi. Belki getter metodlarını kullanmadık da doğrudan erişmeyi açtık falan öyle bir vaka olabilirdi. Yanlış bir iş yapmış olup.
+
+370
+01:35:10,484 --> 01:35:29,404
+O zaman test kodum geçersiz hale gelirdi. Derleme hatası yapmaya başlardı. O zaman bunu düzeltmek zorunda kalabilirdim. Ama tabii ben aslında bu veneymişini Eclipse'in kendi içerisinden yaptığım için o bütün önde yende paket davas hepsini o değişiklikleri yapacaktı. Gerçi o adası da ayrı ama neyse.
+
+371
+01:35:30,228 --> 01:35:41,248
+Adettendir. Basitçe kopya yapıştır yapıp boğulmadığımız test konuyu tekrar çalıştırıp yeşil çubuk göreyim de içim rahat etsin diyebiliriz.
+
+372
+01:35:47,123 --> 01:35:58,723
+Tamam, peki. Şimdi bunu biraz toparladık ama şimdi bir bakıyorum bu amount for metoduna.
+
+373
+01:35:58,723 --> 01:36:02,223
+Şuradayız.
+
+374
+01:36:08,307 --> 01:36:22,207
+Şimdi şu Amount for Metoduna bir bakıyorum da, para et olarak bir kira kaydı almış. Ondan sonuçta. O kira kaydının filmini almış, hangi filmle ilişkin olduğunu almış, kaç gün kiralanmış olduğunu almış.
+
+375
+01:36:24,347 --> 01:36:31,180
+Ve tamam yani arada bir bağlaşım var, bağlaşım üstünden metot çağırıyor ama yani şu metot...
+
+376
+01:36:31,220 --> 01:36:55,920
+Customer'la ilgili, bu metod Customer sınıfının bir metodu olmasına rağmen Customer'la ilgili hiçbir bilgiye erişmiyor arkadaşlar. Yani bakın, nizat geçişi değişken, rental metod parametresi, yani hiç burada üye alan olaraktan şöyle gözüken mavi renkli ya da kağıda basıyor olsak, underscore ile geçen, hiç bir şey yok.
+
+377
+01:36:59,220 --> 01:37:18,360
+Amount for metodu aslında burada biraz eğriti duruyor. Daha çok rental'ın üye alanlarına erişim ihtiyacı duyuyor. O zaman iyisi mi ben bu amount for metodunu buradan çıkartıp rental sınıfına taşıyayım. Böylesi daha doğru bir işlem olacak.
+
+378
+01:37:20,115 --> 01:37:33,655
+O hesaplamalığı direkt Renter'a sorayım. Custom'ı Renter'dan alsın o hesaplamalının sonucu. En doğrusu bu olacak. Yani varmak istediğim nokta şu olmuş olacak.
+
+379
+01:37:34,739 --> 01:37:58,340
+O işlemleri, bu amount for metodunu rental sınıfına taşıyacağım ve adını da değiştireceğim. Çünkü aslında o amount for metodunun yaptığı o kira işleminden doğan bedeli hesaplamaktır. Biz de o zaman kira işlemini simgeleyen Nesne'ye bedel öğrenme metodu şeklinde adlandırarak taşırsak daha da doğru bir iş yapmış oluruz.
+
+380
+01:38:01,108 --> 01:38:03,008
+Ya şu şeye de bütünlü.
+
+381
+01:38:07,764 --> 01:38:17,344
+Powerpoint'a tıklıyorum. Ondan sonra hızlı bir şekilde şu grev çubuğunu çıkartıp da zoom'un sesli almaya yetişemeyebiliyorum. Kusura bakmayın.
+
+382
+01:38:21,524 --> 01:38:26,524
+Tekrar bir alttaki çubuğa tıklamak, yüzünün çubuğa tıklamak sonra oraya yükselt çıkmak gerekiyor.
+
+383
+01:38:26,524 --> 01:38:28,524
+Onu da her zaman yapamayabiliyorum.
+
+384
+01:38:28,524 --> 01:38:31,524
+Hızlıca yapamayabiliyorum orası.
+
+385
+01:38:32,275 --> 01:38:44,756
+Peki, yaptığımız şey amount for metodunu rental sınıfına taşımak. Custom sınıfından alıp, yani extract yaptık ama şimdi de move ediyoruz bu metodu.
+
+386
+01:38:44,756 --> 01:38:54,976
+Yaptığım şey bu olacak. Orada da gösterilsem, 0x0x3 paketlerindeki önceki custom'ları karşılaştıralım.
+
+387
+01:39:02,323 --> 01:39:03,323
+Şimdi gidiyoruz.
+
+388
+01:39:06,484 --> 01:39:24,564
+Şimdi, daha evvel aynı sınıftaki amount for metodunu çağırıyordu. Parametro olarak da rental'ı veriyordu. Şimdi artık sıradaki kira kaydını listeden, enumeratiyenden aldıktan sonra direkt ona soruyor. Bedelin nedir? Kiralama bedelin nedir? diye.
+
+389
+01:39:24,564 --> 01:39:34,304
+Ve aşağı indiğimizde eski halinde yer alan private double amount for metodu artık bu sınıfta değil. Artık o metot.
+
+390
+01:39:34,484 --> 01:39:41,203
+Rental sınıfında. Rental'ları da karşılaştırdığımda, 2 ve 3 paketlerimdeki.
+
+391
+01:39:45,300 --> 01:40:00,300
+Bunlar işte Get Charge metodunun eklenmiş olduğunu görüyoruz. Ve bu metotta bu sınıfta biraz daha düzgün, daha sade bir hale gelmiş oldu bile diyebilirim. En azından...
+
+392
+01:40:01,203 --> 01:40:14,644
+Bu ekstradan kira al, get rented gibi metotlar çağrılmamış oluyor. Ve bu metot gövdesine de baktığımızda, mesela get desentered kendi metodu.
+
+393
+01:40:15,007 --> 01:40:38,448
+Ondan sonra açıma. Mühendisliği de gerçi iki ayrı şeylere de ulaşıyor. Birincisi fiyat koduna erişiyor. Ondan sonra başka bir şeyine de ulaşmıyor. Bu da nispeten dengeli. Hem kendi üye alanına erişiyor hem de bir de sahip olduğu nesnenin bir üye alanına erişiyor. Burada bir terslik göremiyorum doğrusu.
+
+394
+01:40:43,007 --> 01:41:00,788
+Yani metod doğru yerini buldu diyebilirim. Yani metodun yeri açısından gözüne bir şey batmıyor en azından. Üye alan erişimine baktığımda daha uniform, daha homojen bir dağılım görüyorum. İyi, fena değil.
+
+395
+01:41:02,788 --> 01:41:05,347
+Abates gezlerimizi koşturmayı unutmayalım.
+
+396
+01:41:09,844 --> 01:41:10,743
+Test tool.
+
+397
+01:41:14,996 --> 01:41:18,956
+Evet, testem doğru şi lalat.
+
+398
+01:41:26,292 --> 01:41:33,275
+Evet.
+
+399
+01:41:33,524 --> 01:41:58,744
+Şimdi şurada durup bir şey tartışmak istiyorum size kısaca. Yazılım sınaması aslında başlı başına bir konu ama yine de şurada bir kara kutu, beyaz kutu ayrımına girmek istiyorum sizinle. Yazılım sınaması yürütülüş şekline göre ikiye ayrılabilir. Birincisi kara kutu sınaması, black box testing. İkincisi beyaz kutu sınaması, white box testing.
+
+400
+01:42:01,524 --> 01:42:11,164
+Sınayacağımız şeyi, bu şey bir elektronik devre olabilir, bir makine olabilir veyahut da bizim mesleğimizde bir sınıf kodu olabilir.
+
+401
+01:42:11,164 --> 01:42:22,184
+Bunu sınayacağız diyelim ki eğer sınayacağımız şeyin ilk çalışma mantığını bilmiyorsak, erişemiyorsak, göremiyorsak buna black box diyoruz.
+
+402
+01:42:22,584 --> 01:42:29,204
+Bir şey test edeceğiz, bu bir kara kutu, içindekini bilmiyoruz, göremiyoruz, açamıyoruz, bakamıyoruz, kutu şeffaf da değil.
+
+403
+01:42:29,524 --> 01:42:47,944
+O zaman nasıl test edebiliriz? Yapması gereken işler üzerinden test edebiliriz. Yani verilen geçerli girdilere karşılık doğru hesap sonucu elde ediliyor mu? Buna bakarız. Buna Black Box testi yapabiliriz.
+
+404
+01:42:48,256 --> 01:43:03,976
+Ve nispeten biraz daha belki kolaydır. Çünkü tek yapmamız gereken budur. Yani aralığındaki zorluk şu olabilir. Şimdi kaç farklı girdi vereceğiz ki bu teste içimiz rahat etsin?
+
+405
+01:43:05,171 --> 01:43:21,051
+Şimdi, o yüzden burada çeşitli yöntemler var. O konuya fazladan girmek istemiyorum ama orası girdi gruplarını öngörebiliyorsak her gruptan bir girdiyle yaptığımız test en doyurucu testtir diyebiliriz.
+
+406
+01:43:26,036 --> 01:43:34,716
+Belirli yaş aralıklarına göre bir insanın sahip olması gereken kan basıncının hesaplanması.
+
+407
+01:43:34,716 --> 01:43:40,936
+Burada yaş grupları aralıkları bellidir tıklateratüründe. Ben şimdi tam kafadan sallayacağım.
+
+408
+01:43:54,036 --> 01:44:08,336
+45 yaş neyse, böyle gruplar varsa o her kategoriden bir tane örnek alıp onun hesaplamasını yaptırıp doğru çıktı alıyorsak tamam yeterli sınamayı yaptık diyebiliriz. Bu kara kutu testi.
+
+409
+01:44:12,595 --> 01:44:23,495
+Bir de beyaz kutu testi var. Bu sefer kısırlayacağımız bilimin iç işleyişini biliyoruz ve yazacağımız test kezleri ona göre ince ayar yapıyoruz.
+
+410
+01:44:23,956 --> 01:44:49,536
+Varacağımız nokta da mümkün olan en fazla kod katılsama, kod coverage oranı. Şöyle ki, kaynak kodu bildiğimizden, bu da iç yapı kaynak kod, bütün olası if dallanmalarının hangi durumlarda gerçekleşeceğini, döngülerin hangi değerlerden hangi değerlere kadar gerçekleşeceğini, bütün bunları biliyoruz.
+
+411
+01:44:50,735 --> 01:44:58,415
+Her paralar konumdan geçmeyi sağlayacak farklı farklı girdiler verip,
+
+412
+01:44:58,804 --> 01:45:12,503
+Daha da geniş kara kutuyla ulaşabileceğimizden daha kapsamlı bir sınama yapabiliriz. Burada avantaj budur. Ama dezavantaj da bu sefer yapmamız gereken daha fazla iş vardır.
+
+413
+01:45:12,503 --> 01:45:26,604
+Zaten yazılım sınama da maliyetli bir iş olduğu için genelde bir yazılım projesinde sınama etkinlikleri için belli bir oran ayrılır, zaman veya iş gücü. Onu sığacak şekilde yaparız.
+
+414
+01:45:26,804 --> 01:45:45,244
+O yüzden illaki beyaz kutu yapacağız diye bir durum yok ama sistemin kritik ve karnaşık parçaları için beyaz kutu testi yapsak, nespran daha basit kalan bölümler için Black Box Teknik yapsak yeter genelde bu bize şeklinde söyleyebiliriz.
+
+415
+01:45:45,244 --> 01:45:54,804
+Şimdi bunu niye söyledik? Şunun için söyledik. Az önce yaptığımız metot taşıması nedeniyle Rentals'ın fıra yeni bir metot eklemiş olduk.
+
+416
+01:45:54,804 --> 01:46:10,684
+Şimdi acaba bu rental sınıfının get charge metodu için yeni bir test kezisi oluştursak mı? Bu beyaz kutu yaklaşımıyla devam etmek anlamına gelmektedir. Veyahut da mevcut test kezisiyle devam etsek mi? Bu da kara kutu yaklaşımı anlamına gelmektedir.
+
+417
+01:46:11,188 --> 01:46:31,268
+Ders kutuyu seçmek test kalitemizi arttırıyor. Evet ama zaten sınırlı olan proje zamanımızın uzamasına, aksamasına sebep olabiliyor. Bu nedenle işleri daha risklerden basit tutmak için mevcut test keziler ile yani kara kutu yaklaşımıyla sınamaya devam etmek istedim. Doğrusu o şekilde bir paraya parantez açmış olalım.
+
+418
+01:46:37,363 --> 01:46:50,884
+Statement'ı bir yere getirdik. Yarı yarıya kısalttık. Ama orada geçici değişkenler de vardı. Onları da yavaş yavaş elimin etmek istiyoruz. Bakalım şimdi neyi elimin edebiliriz, neyi edemeyiz?
+
+419
+01:46:54,644 --> 01:46:56,644
+Eski versiyonları kapatalım.
+
+420
+01:47:00,692 --> 01:47:06,431
+Bu hale getirmiştik. Buradaki yetişli değişkenlerden neyi kaldırabilir? Şöyle biraz da büyüteyim.
+
+421
+01:47:07,152 --> 01:47:15,752
+Şimdi, şu Total Amount'u kaldıramam. Yani kümülatif toplam bu nihayetinde. O kümülatif toplamın biriktirebileceği bir yer olmalı.
+
+422
+01:47:15,752 --> 01:47:22,752
+Bunu dokunamam. Yani Total Amount'u dokunamam. Fakat, hani...
+
+423
+01:47:23,956 --> 01:47:39,275
+Şuradaki Disamount'a dokunabilirim. Çünkü bir kere bu Disamount'u üstüne tıklayıp Highlight ettiğimde görüyorum ki buna bir değer atamış yazıcım.
+
+424
+01:47:40,880 --> 01:48:05,159
+Herhangi bir değişiklik yapmadan bu değerde doğrudan kullanmışız bu geçiş değişkeni. Sonra yine bu geçiş değişkeni silemeyeceğimizi söylediğimiz total amount'a eklemişiz. Yani şu disamount'a bir kere bir değeri atama yaptıktan sonra hiç bu değeri değiştirmemişiz bile. Bu nedenle bunu ortadan kaldırmak çok daha kolay.
+
+425
+01:48:06,195 --> 01:48:17,536
+Disamount'u neye atadık? Arantanın Getşarjını hesaptatıp o diğeri atadık. O zaman ben Disamount gördüm. Her yere Arantan.getşarj yazsam, yani şuraya ve şuraya.
+
+426
+01:48:17,971 --> 01:48:34,291
+Değişimi görürüz. Böylelikle Nisan 6'u tamamen ortadan kaldırmış olurum. Ne olmuş olacak? Rental'ın Get Charge metodu iki kere çağırılmış olacak ama yani bir kişi kaç tane film kiralayabilir ki? 20 tane bile kiralabilir, 100 tane bile kiralarsa?
+
+427
+01:48:35,359 --> 01:48:50,139
+Nispeten basit bir metot. Bunun 100 kere çağırılması ile 200 kere çağırılması arasındaki şartı hafif hissetmeyiz bile yani. Bu nedenle o disamant değişkenliği, geçiş değişkenliği kaldırmayı öneriyorum. Yapalım.
+
+428
+01:48:54,771 --> 01:49:09,231
+Yani işlediğim gibi, liste ama gördüğüm yeri el atıl geç çarşı olacak, bitecek. Bu haline gelmiş olan Custom sınıfını da 04 paketindeki hali, bunları birbiriyle karşılaştırırsak.
+
+429
+01:49:16,051 --> 01:49:43,252
+Bakın, disamount silinmiş. Disamount'a bir şey atanması silinmiş. Onun yerine, şurada disamount yazılacağı yere evental.getcharge doğrudan çağırarak yazılmış ve toplam değeri disamount atanacak yere yine evental.getcharge çağrısı doğrudan yapılmış. Başka değişiklik yok.
+
+430
+01:49:44,051 --> 01:49:56,371
+Yağ sınıflarda zaten dokunmadım. Ama hani acaba diyelim ki bu geçiri değişkeni ortadan kaldırmakla bir kod hatasına yol açmış olmayalım. Hemen testleri tekrarlayayım.
+
+431
+01:50:00,404 --> 01:50:04,544
+Gördüğünüz gibi bir problem yok. Düzenlemeni doğru yapmışım.
+
+432
+01:50:08,004 --> 01:50:13,644
+Ve işte, kastımın sınıfının statement metodu bu hale gelmiş.
+
+433
+01:50:15,484 --> 01:50:20,144
+Bu hale geldi de, yeniden ispeten fazla, uzun.
+
+434
+01:50:20,724 --> 01:50:41,244
+Görüyorum, burada komentlerle de anlatmaya çalıştığımız farklı farklı işler var aslında. Her bir koment ayrı bir alt iş. Bunları da toparlasak etsek iyi olur diye düşünüyorum. Ama hangi sırada yapacağız bunları yine bir notlarımıza göz atalım.
+
+435
+01:50:46,228 --> 01:51:09,368
+Evet, tamam peki. Şimdi daha şeye gelmeden, bu öbür customer sınıfına falan gelmeden, şimdi bakıyorum da bu statement metodu içerisinde bedel hesaplanma işini, bedel hesaplama işini şey aldık, customer sınıfından çekip rental sınıfına aldık.
+
+436
+01:51:09,779 --> 01:51:32,539
+Şimdi bakıyorum, bonus hesaplama kısmına birkaç komentle dikkatimi de çekti. Bu yapılan ayrı bir iş olarak gözüküyor. Yine bakıyorum ki kira kaydını, filmini alıp onun fiyat koduna bakıp ve yine kaç gün kiralandığına bakıp ona göre bu puan hesaplama işini yapıyorum. Bunun şeyden farkı yok. Kira bedeli hesaplamaktan farkı yok.
+
+437
+01:51:37,779 --> 01:52:05,720
+Bu konus hesaplama işinin açısından baktığınızda bir farkı yok. Yine bu ilgili puanın kaç puan olacağının hesaplanmasında kullanılacak bilgilerin hiçbiri customer sınıfına ait değil. Rental sınıfına ve muli sınıfına ait. O zaman ben bu bonus hesaplama işini de nasıl ki amount for metodunu önce ekstrakt ettim sonra rental'a taşıdım. Bu sefer kendisini tutmadan
+
+438
+01:52:05,779 --> 01:52:13,099
+Direkt bu bonus hesaplama işini de ekstrak edip rental'a taşısa çok daha doğru olacak diyorum.
+
+439
+01:52:14,380 --> 01:52:25,260
+Onun için de işte ve bu arada ayrıca Frequent Rental Points diyor da bu benim için epey uzun.
+
+440
+01:52:25,260 --> 01:52:27,260
+Her ne kadar...
+
+441
+01:52:28,467 --> 01:52:46,467
+Bankanın terimi olarak kullanılırsa hani bonus ama çok daha eskisinde aslında video oyunlarından kaynaklanan bir terim. Hani ek puan kazanmak. Hatta ondan da önce ikramiye falan anlamında kullanılan bir terim. Bu o bonus.
+
+442
+01:52:46,467 --> 01:52:56,247
+O yüzden Frequent Learning Point istemekten size hem daha kolay söyleyebileceğim hem daha az tuşa basarak da yazabileceğim. Daha kolay anlaşılır.
+
+443
+01:52:56,467 --> 01:53:19,027
+Bonus'a çevirmek istiyorum bu Frequent Rental Point fililerini. O yüzden tutacağım. Rental sınıfına yeni bir metot ekleyeceğim. O da işte bonus hesaplama metodu olacak ve adını da GetBonus diyeceğim. Nasıl ki GetCharge metodum vardı Rental sınıfında. Şimdi de GetBonus metodum olacak yine Rental sınıfında.
+
+444
+01:53:23,604 --> 01:53:37,604
+Bunu da yapabilmek için, şu bonusun hesaplanması ile ilgili zaten komentinden gözüküyor. Şu kısımları ekstrakt edeceğim. Bu arada...
+
+445
+01:53:38,739 --> 01:53:44,159
+Bu filmden şu kadar bonus kazandığınız bilgisi yok burada. Yazmıyor.
+
+446
+01:53:44,159 --> 01:53:52,219
+Yazsaydı onu da geçişi değişkenden, ama bakın şurada Frequentive Antif Bonus Amidac.
+
+447
+01:53:52,339 --> 01:53:56,499
+Bu da kümülatif toplam olacak. O yüzden bu geçişi değişkeni kaldıramam.
+
+448
+01:53:56,799 --> 01:54:01,759
+Sadece bu hesaplamayla ilgili kısmı customers'ın kullanıcı.
+
+449
+01:54:01,819 --> 01:54:06,379
+Extract metot yapıp onu doğrudan move metot yapacağım.
+
+450
+01:54:06,739 --> 01:54:11,019
+Rental sınıfına taşıyacağım. Taşıdığımda durum şu hale gelecek.
+
+451
+01:54:12,639 --> 01:54:16,299
+İki kastımız sınıfının kodlarını karşılaştırırsam.
+
+452
+01:54:23,283 --> 01:54:34,703
+Bu arada adını da bonus dedim. Şuradaki satıda da artık kira kaydının get bonus metodunu çağırmak şeklinde oldu. Kümülatif toplam tabii ki.
+
+453
+01:54:35,703 --> 01:54:43,703
+Ve en sonunda da şu kadar bonus kazanması, DHK adını, DHK adını, CD ile ilgili.
+
+454
+01:54:44,363 --> 01:54:47,703
+Şeyde bakarsak, rental'ların da koduna bakarsak.
+
+455
+01:54:57,524 --> 01:55:08,804
+Bu arada nedense bir öncekinde geçer şeyde kalmış, package da kalmış. Niye package da kalmış ki? Public'te kalır yani. Gerek yok. Öyle yapmama gerek yok.
+
+456
+01:55:10,484 --> 01:55:19,684
+Evet, tamam. İşte yeni olarak bu get bonus eklendi. Get bonus da şu şekilde ufak bir düzenleme yapmış oldum.
+
+457
+01:55:24,467 --> 01:55:48,427
+Eski halinde şöyle geçiyordu. Orada da şu eski kastım oldu değil mi? Evet. Şimdi bir kere kafadan bir arttırıyor. Ondan sonra yeni filmi bir günden fazla almışsa da o zaman bir tane daha arttırıyor. Böyle demektense kasa süreliğini aldıysan, yani pardon, şuradaki yazdığım if koşulu tutuyorsa iki puan, tutmuyorsa bir puan.
+
+458
+01:55:48,819 --> 01:56:07,179
+Hesabım bu. Bu şekilde söylersen biraz daha basitleştirekten koda dökmüş olacağım. İşte o şekilde yaptım. Eğer yeni film uzun süre kiralamışsa iki puan kazanıyorum. Aksi takdirde bir puan kazanıyorum şeklinde. Burayı da biraz daha bence toparlamış oldum.
+
+459
+01:56:09,319 --> 01:56:10,799
+Bu hale geldi.
+
+460
+01:56:11,859 --> 01:56:20,699
+Bütün bunlar acaba bir hataya yol açmış mı? Açmamıştır ama yine de bizim sorumluluğumuz bu test kesilmesi çalıştırmak.
+
+461
+01:56:25,043 --> 01:56:37,963
+Evet, testlerden geçtik. Bir fırardan gözükmüyor. İyi gidiyoruz diyebilirim. Hatta bir arayı da hak ettik diyebilirim. Saat 3.05 geçiyor.
+
+462
+01:56:38,644 --> 01:56:58,503
+Evet, yani yatan bir saat kadar ders yapmışız. Bir on dakika daha ara verelim. Ondan sonra kalan sürede daha tamamlarız bu örneği de. Gerekirse şey yapmak için, önceki ikinci vize sorularının üstünden geçmek için biraz daha uzatabiliriz dersi. Bakacağız artık. On dakika.
+
+463
+02:11:01,587 --> 02:11:06,627
+Pardon, özür dilerim. Azıcık geçiktim. Kaldığımız yerden devam edelim.
+
+464
+02:11:11,796 --> 02:11:22,096
+Evet, peki. Beşinci müdahalemiz bonus hesabının da kira bedeli gibi ranta sınıfına taşınmasıydı. Tamam, pekala.
+
+465
+02:11:22,096 --> 02:11:28,256
+Şimdi, onun dışında statement metodunu biraz daha bir kurcalayalım.
+
+466
+02:11:29,036 --> 02:11:29,536
+Bakalım.
+
+467
+02:11:35,988 --> 02:11:36,788
+Evet, mutluluk.
+
+468
+02:11:36,868 --> 02:11:37,928
+Şimdi
+
+469
+02:11:38,868 --> 02:11:53,088
+Her ne kadar bu metod içerisinde total element geçir değişkenliği ve hatta bonus geçir değişkenliği şey demeyiz gibi gözüküyor.
+
+470
+02:11:53,648 --> 02:11:59,728
+Değişilemeyiz, yani ortadan kaldıramayız gibi gözüküyor ama evet kaldıramayız. Bunlar kümülatif toplam.
+
+471
+02:12:06,868 --> 02:12:08,068
+Değiliz aslında.
+
+472
+02:12:09,028 --> 02:12:10,248
+Hatırlarsınız eğer.
+
+473
+02:12:12,568 --> 02:12:14,788
+Replace temp with query.
+
+474
+02:12:15,764 --> 02:12:30,403
+Refactoring eğilimini hatırlarsanız, onları kullanabiliriz. Bu Total Amount ve Bonus işlemlerinin geçir değişkenlerinin kaldırılması için.
+
+475
+02:12:40,180 --> 02:12:59,039
+Hesaplanma işini, yani aslında hani statement içerisinde ne yapıyoruz? Statement'da yaptığımız art işlemler var ve toplam bedelin hesaplanmasını da bu statement'ın altında yapılan bir ek iş olarak da düşünebiliriz, değerlendirebiliriz.
+
+476
+02:13:07,123 --> 02:13:22,383
+Şey de yapacağız aslında şimdi. Her bir satımın içerisinde bu filmden şöyle biz bedel aldığımızı diyoruz.
+
+477
+02:13:22,383 --> 02:13:28,603
+Neyse dur toparlayamadım şimdi. İpucu şey diyeyim. Bakayım.
+
+478
+02:13:31,220 --> 02:13:55,340
+Tamam, evet. En azından yani şey, bu to, to ve mod ve bonusu tamamen kaldırmayacağız. Şeytim gibi, daha önce dediğim doğruydu. Bu işlemleri bu statement metodundan çıkartalım. Şimdi bu amaçla yeni metotlar oluşturalım. Bir toplam bedelin hesaplanması için.
+
+479
+02:13:57,108 --> 02:14:04,967
+Ve varmaya çalışacağımız nokta ise şu olacak. Customer sınıfına bir get total charge.
+
+480
+02:14:05,408 --> 02:14:15,488
+Ve bir de GetTotal Bonus metotları ekleyeceğiz. Bunların yapacağı şeyler yine her biri Rental sınıfındaki HDR metodunu çağıracak aslında.
+
+481
+02:14:15,488 --> 02:14:24,667
+Yani Custom sınıfının GetTotal Charge metodu aslında Rental'ın GetCharge metodunu kullanarak işlem yapacak.
+
+482
+02:14:25,127 --> 02:14:27,280
+Benzer şekilde Custom'un...
+
+483
+02:14:27,279 --> 02:14:43,399
+GetTotalBonus metodu da aslında rental'ın getBonus metodunu kullanarak da iş yapacak. Ve daha evvel statement metodunun içerisinde olan gelişi değişkenlerde bu ilgili metotlara taşınıyor olacak.
+
+484
+02:14:43,399 --> 02:14:46,119
+Bakalım ayrıca bir şey mi var mı ki?
+
+485
+02:14:49,524 --> 02:14:55,404
+Neyse, çok da şey değil, ufak bir adlandırma bir şey yakıncım. O kadar da dert değil.
+
+486
+02:14:55,864 --> 02:14:58,784
+Pekala, yani şimdi buradan toparlarsak.
+
+487
+02:15:01,203 --> 02:15:09,163
+Statement'ın içerisinde aslında bu sınıfa ekleyeceğimiz getTotalAmount metodunu çağıracağız.
+
+488
+02:15:09,163 --> 02:15:19,623
+Statement'ın içerisinden getTotalAmount da rental'daki ilgili getCharge metodunu çağırıyor olacak.
+
+489
+02:15:20,043 --> 02:15:22,844
+Ve geleceğimiz noktada şöyle bir şey olacak.
+
+490
+02:15:25,779 --> 02:15:30,019
+Beş'teki ve altındaki customları bir karşılaştıralım.
+
+491
+02:15:39,444 --> 02:16:04,564
+Bu Total Amount ve Bonus hesapları geçi değişkenler üstünden statementın içinde yapılıyordu. Artık o şekilde yapılmıyor. While döngüsünün içerisine baktığımda sıradaki kira kaydını aldıktan sonra eskiden ona soruyorduk bonus neydi diye. Artık onu söylemiyorum.
+
+492
+02:16:09,779 --> 02:16:29,439
+En sona toplam miktarı ve bonus yazarken bonus kısmından buraya atladım. Şu bonus kazandığımız şeklinde değil de artık bu bonus hesaplama metodunu çağırarak bu kadar bonus kazandığımız yazısı eklenmiş oluyor string'e.
+
+493
+02:16:37,780 --> 02:16:46,780
+Buradan kalkmış durumda. Fakat şöyle ileriye baktığınızda...
+
+494
+02:16:49,940 --> 02:17:06,299
+Bu şeyin en sonunda, makbuzun en sonunda şu kadar toplam bolcumuz kısmı da artık bu kümülatif toplamın tutulduğu geçtiği değişikenden yazdımaktan ziyade ilgili metodun çağırılması üzerinden gidiyor.
+
+495
+02:17:11,412 --> 02:17:13,772
+O metotların da kodlarına bakalım.
+
+496
+02:17:14,391 --> 02:17:18,551
+GetTotalCharge geçici değişken kendi içerisinde.
+
+497
+02:17:18,551 --> 02:17:35,132
+Ama artık bu geçici değişken, sonuç kümülatif toplam geçici değişkeni artık sadece ve sadece bu odaklanmış alt toplam bulma, kümülatif toplam bulma işine ait tek bir geçici değişken.
+
+498
+02:17:35,652 --> 02:17:39,412
+Bu nedenle bu GetTotalCharge metodu kendi içerisinde.
+
+499
+02:17:39,412 --> 02:17:59,492
+Şimdi gayet kısa, çekirdek odaklanmış bir metot olarak kendisini gösteriyor. Her bir kira kaydı için get charge metodumu çağırıyorum. Bonus hesabımda da her bir kira kaydı için bonus hesabının yapılmasını sağlıyorum. Her ikisini de rental nesnesinden çağırmış oluyorum.
+
+500
+02:18:07,412 --> 02:18:28,871
+Toplam bonusu hesaplamak için iki kere geçiliyor. Ama tekrarlıyorum. Bir kişi yüz tane bile film kirası, yani bir dizinin üstünden yüz kere sonraki eleman ilerlemek ile iki yüz kere sonraki eleman ilerlemek arasında bizim performans satışına hissedebileceğimiz bir değişiklik olmayacaktır.
+
+501
+02:18:28,871 --> 02:18:34,912
+Bu nedenle çekilmeden bu refaktörün eylemleri yapabilirim.
+
+502
+02:18:35,412 --> 02:18:45,311
+Bunların da bir programın yol açmadığını test kezleri tekrarlayaktan görelim.
+
+503
+02:18:52,211 --> 02:19:02,211
+Altının test olunu çalıştırırsam bir problem olmadığını göreceğim.
+
+504
+02:19:11,123 --> 02:19:35,943
+Bu hale geldi. Biraz daha sınıflarım ve toplanmaya ve anlamlanmaya başladılar. Artık şimdi suiklus diagramı tek tek çizmeyeceğim. Çok fark etmiyor. İleride bir yerde fark edecek, fark edeceği yerde göstereceğim. Şimdilik sadece kaynak kut karşılaştırmasıyla devam etmek istiyorum.
+
+505
+02:19:45,299 --> 02:20:03,719
+Peki, şimdi acaba ne yapabiliriz? Şimdi sırada hani genelere baktığımızda şu statement biraz toparlandı. Hangi paketteki? Beş paketindeki? Biz altıyı yaptık. Tamam.
+
+506
+02:20:12,948 --> 02:20:38,628
+Neredeyse yarı yarıya azaldı. Artık biraz daha farklı yerlere bakabiliriz belki. Bu arada işte rental sınıfına epey bir şeyler doldurduk. Get Charge metodu ekledik, Get Bonus metodu ekledik. Şimdi artık biraz buradaki Get Charge metodu da gözüme batmaya başladı diyebilirim. Ona bir.
+
+507
+02:20:39,540 --> 02:20:59,540
+İnceleyelim şimdi. Şimdi bu geç şarj metodunu buraya taştık. Tamam, çok da problem değil ama bakıyorum işte kendim metotlarına ulaşıyor. Ek olarak ilişkide olduğu filmin de metotlarına ulaşıyor. Normalde bunda bir sakınca yok ama...
+
+508
+02:21:02,067 --> 02:21:12,207
+Bu işi yani Mühendisliği'nin metotlarına erişme işini Keyes'in işaresinde yapması işi biraz riskli hale getiriyor bence.
+
+509
+02:21:12,207 --> 02:21:13,207
+Çünkü...
+
+510
+02:21:17,396 --> 02:21:31,015
+Yeni bir film türü eklenmeye çalışılsa, o zaman hem movie'nin kodunda şuraya yeni bir tür adı eklemem gerekecek.
+
+511
+02:21:31,015 --> 02:21:38,076
+Hem de rental sınıfında da şuraya yeni bir case eklemem gerekecek.
+
+512
+02:21:43,476 --> 02:22:05,195
+Movie türüyle ilgili bir değişikliğin, Rentra'da yansıması çok güzel bir şey değil. Bu nedenle bu Switch Case'i aslında Movie'e taşısak daha az yan etkisi olacak. Bunu yapabiliriz. Şöyle yapabiliriz.
+
+513
+02:22:06,739 --> 02:22:32,119
+Buget Çarşı'nın içindir. Bir filmin kiralanması. Belirli bir sürede kiralanmasından doğan masraf idi, bedel idi. Şimdi bu bedelin hesaplanması için hem kiralama süresine ihtiyacımız var hem de filmin türüne ihtiyacımız var. İki bilgiyle de ihtiyacımız var. Bu bilginin bir kısmı işte renta sınıfında, bir kısmı movie sınıfında.
+
+514
+02:22:34,995 --> 02:23:02,135
+Amacımız da işi Movie'ye taşımak daha çok. Bu çünkü Movie'nin, Movie'den kaynaklanan bir switch case'in Rental'da olması, farklı kısımda olması beni rahatsız ediyor. Bunu yapabilirim. Şöyle ki, switch case'in Movie'ye taşırım, Movie'e de Movie'nin bilmediği kira süresini aktarın. Şimdi Rental ne yapıyor? Kaç gün kiralandığına bakıyor, filmin ne türüne bakıyor, ona göre hesap yapıyor.
+
+515
+02:23:02,708 --> 02:23:27,468
+Bunu şuna evirebilirim. Rantel, Nuriye der ki, kardeşim seni şu kadar gün kiraladılar, bana bundan doğacak bedelini söyle. Bu gün bilgisini Nuriye verir. Nuriye de, ben şu tür bir Nuriyeyim, Switch case içerisinde bakar. Trenelmiş, ona da bakar ve ilgili sonuç geri döndürür.
+
+516
+02:23:28,051 --> 02:23:34,051
+Böyle yaparsam, Switch Case'i en az dezavantajlı hale getirmiş olurum.
+
+517
+02:23:35,851 --> 02:23:43,351
+Switch Case, Get Charge'dan kalkar, Rental sınıfından kalkar, bu lisan sınıfına taşınmış olur.
+
+518
+02:23:43,351 --> 02:23:44,592
+Nedenle?
+
+519
+02:23:46,195 --> 02:24:05,195
+Hem de şu MUI sınıfı da basit bir set-terget-ter sınıfı olmaktan da kurtulmuş olunur. Kendi iş mantığıyla ilgili kısmı içeren bir sınıf haline gelmiş olur. O zaman ben tasarımımı şöyle bir hale evireceğim.
+
+520
+02:24:05,195 --> 02:24:12,536
+Biraz büyütelim. MUI sınıfına get-charge bir metot ekleyeceğim.
+
+521
+02:24:13,043 --> 02:24:23,244
+Renta sınıfının Get Charge metodundan ekstrakt ettiğim Switch Case kısmını bu Mühendisliği'nin Get Charge metodu şeklinde haliyle getireceğim.
+
+522
+02:24:24,364 --> 02:24:26,043
+Renta'daki Get Charge...
+
+523
+02:24:26,164 --> 02:24:44,884
+Kendisinin kaç gün kirarlılık oluşturduğunu, kira içerdiğini Mühie'ye söyleyecek. Mühie'nin bu days rental parametresi üstünden geç çağrıcana söyleyecek. Mühie de ona göre Watson's switch case loss'un hesaplamasını yapıp rental'a bu bilgiyi geri döndürecek.
+
+524
+02:24:44,884 --> 02:24:53,044
+O da customer statement metodu içerisinde çağrıldığı yere toplam bedeli gönderecek.
+
+525
+02:24:54,708 --> 02:25:12,308
+Kendi bedelini gönderecek. Customer toplam bedeli içerisinde bunlar biriktirilecek. Hal bu şekle gelmiş olacak. Bunu da yapabilmek için, şu paylaşımını doldurup yine egresi üzerinden yaptığım düzenlemeleri göstereyim.
+
+526
+02:25:14,448 --> 02:25:21,268
+Şimdi, Customer sınıfı değişmedi de birincisi rental değişmiş oluyor.
+
+527
+02:25:23,219 --> 02:25:23,899
+Ahem.
+
+528
+02:25:30,004 --> 02:25:49,324
+Bakın şimdi, geç şarj metodu daha var. Böyle upuzun bir şeydi. Şimdi bakın, tek satır haline döndü. Delegate ediyor. Ne yapıyor? Bu üye alanının geç şarj metodunu çağırıyor. Ona da parametre olarak kaç gün kiralandığını veriyor.
+
+529
+02:25:49,724 --> 02:25:56,463
+Şu kısmı, sol taraftaki yeşil kısmı ekstrakt etmiş olduk.
+
+530
+02:25:56,915 --> 02:26:15,235
+Ve Move etmiş olduk Rental sınıfına. Rental sınıfı şimdi ne hale geldi? Ona da bakalım. Bu arada çok özür dilerim. Faremin pili bitmiş. Ben de kontrol ediyorum. Evet bitmiş.
+
+531
+02:26:25,683 --> 02:26:34,503
+Evet, biraz bekleyeceğim size. Kusuma bakmayın. Yeni pillerimi alayım.
+
+532
+02:26:35,163 --> 02:26:36,343
+Daha ne olacak?
+
+533
+02:27:20,595 --> 02:27:26,775
+Evet, şimdi şeye bakalım, movie'e bakalım. O ne hale geldi? Şu eklediğim metotla birlikte.
+
+534
+02:27:34,835 --> 02:28:00,536
+Bakın şimdi Get Charge metodu eklermiş oldu. Paymet olarak kaç gün kiralandığının bilgisini alıyor. Geçli değişken burada ve Switch Case de burada. Switch fiyat kodu, kendisinin fiyat kodu ve Case anahtarları da yine kendisinin üye alanları üstünden erişiliyor.
+
+535
+02:28:01,075 --> 02:28:22,935
+Kod ötekisininkiyle hemen hemen aynı. Hiçbir diye çıkık yok. Yine bir ilk sonuç ekleniyor. Ondan sonra şu kadar günden fazlaysa bu kadar günde olan ek masraf ekleniyor. Orada bir farklılık yok. Şöyle göstereyim. Bunu şimdi direkt kompire edemeyeceğim ama şöyle göstereyim. Daha evvel.
+
+536
+02:28:24,147 --> 02:28:38,147
+Bu olay geldi artık Mühendisliği.
+
+537
+02:28:40,340 --> 02:29:05,639
+Rizat 2, Days of 2'den büyükse, Rizat Days of 2 çıkar, 1.5. Daha evvel Getter metodu üstündendi haliyle. Tabii ki çünkü Rental Mühendisliği alanlar Getter metodu serinelerini geçecek. Ama Mühendisliği kendi içerisinde Getter metodu ile doğrudan müe alanı yazarak da yapabiliyoruz. Getter metodu üstünden de yazsaydıkça bir şey olmazdı da gerek yok. Bu şekilde yapmış olduk.
+
+538
+02:29:07,827 --> 02:29:35,827
+Bak, böylelikle en azından yeni bir film türü ekleneceği zaman daha doğrusu bütün bu değişiklikler sadece movie sınıfıyla sınırlı kalacak. Şuraya yeni bir tür numarası, adı ve numarası ekleyeceğim. Şuraya yeni bir kez ekleyeceğim. Ekleyeceğim kezde yine bu sınıfın o yeni eklediğim tür bilgisiyle ilgili olacak. Yani değişikliğim yeni bir tür film eklemek ise bunu sadece...
+
+539
+02:29:35,827 --> 02:29:51,827
+Film sınıfını yapacağım. Diğer sınıflarıma hiçbir yem etkisi olmayacak. Bu açıdan Switch Case'in zararını, sakıncasını minimuma indirdim diyebilirim.
+
+540
+02:29:51,827 --> 02:29:58,827
+Bu geçer için yaptığım işin aynısını bonus için de yapabilirim.
+
+541
+02:30:04,755 --> 02:30:25,655
+Bir sonraki refactoring eyleminde o olacak. Bu get-charge için yaptığım işlemi bonus için de yapmak olacak. Öyle hatırlıyorum. Hemen bakalım. Evet, bu get-bonus metodunun da önceki gibi rental ile movie arasında bölünmesi şeklinde olacak. Ama öncelikle test kezlerimi çalıştayım.
+
+542
+02:30:34,484 --> 02:30:37,004
+Yeşil çubuk testler düzgün çalıştı.
+
+543
+02:30:39,963 --> 02:30:50,004
+8 için olana da baktığımda, 10'daki 7'deki rental ile 8'deki rental ile karşılaştığımda...
+
+544
+02:30:56,115 --> 02:31:06,476
+Benzer şekilde GetBonus metodunun Runtlede sadeleşikliğini görüyorum. Onu da filme soruyor. Şu kadar kiralandım. Ne kadar bonus kazandıracaksın?
+
+545
+02:31:08,476 --> 02:31:10,136
+Onun yanıtı da Movesim aslında.
+
+546
+02:31:18,515 --> 02:31:23,815
+İşte GetBomus'un da beklendi. Yine ötikisiyle aynı mantık.
+
+547
+02:31:24,244 --> 02:31:26,344
+Fiyat kodu nüresisi veya
+
+548
+02:31:26,344 --> 02:31:28,703
+2'den 1'den daha fazla
+
+549
+02:31:28,703 --> 02:31:30,484
+uzun süre kira olması 2 puan aksi taktirde
+
+550
+02:31:30,484 --> 02:31:32,804
+1 puan şeklinde kira bilgisinde
+
+551
+02:31:32,804 --> 02:31:34,244
+işte metot parametresi olarak
+
+552
+02:31:34,244 --> 02:31:35,724
+alarak bu metot
+
+553
+02:31:35,724 --> 02:31:38,104
+MUVI'ye taşınmış oldu. Tamamen
+
+554
+02:31:38,104 --> 02:31:38,724
+kesilmedi.
+
+555
+02:31:40,203 --> 02:31:42,203
+Rental'dan MUVI'ye
+
+556
+02:31:42,203 --> 02:31:44,123
+metot iletilmiş
+
+557
+02:31:44,123 --> 02:31:46,524
+oldu. Basit bir iletim değil ama
+
+558
+02:31:46,524 --> 02:31:48,484
+sonucunu da
+
+559
+02:31:48,484 --> 02:31:50,444
+alıp kullanmak şeklinde bir iletim
+
+560
+02:31:50,444 --> 02:31:51,024
+söz konusu.
+
+561
+02:31:52,404 --> 02:31:57,684
+Peki, şimdi bunda testlerini çalıştıralım.
+
+562
+02:32:05,971 --> 02:32:08,791
+Tamam, lüzgar çalışıyorlar, yeşil çubuk bir problem yok.
+
+563
+02:32:13,716 --> 02:32:17,276
+Yine kazanıp paylaşımı durdura basmış oldum.
+
+564
+02:32:18,656 --> 02:32:27,056
+Tam şu karşılaştırma şeyini kapatacağım ama o sırada Zoom paneli aşağıdan çekmecesi kayıyor yukarıdan.
+
+565
+02:32:27,216 --> 02:32:29,416
+Onun paylaşımı durdurun şeyine denk geliyor.
+
+566
+02:32:29,976 --> 02:32:31,136
+Onu kapatmış oldum.
+
+567
+02:32:40,340 --> 02:33:00,439
+Peki, şimdiye kadar bunları yaptık yaptık. Şimdi şu sequence diagrama dikkatinizi bir çekmek istiyorum. Bu değişiklikleri de yaptıktan sonra sequence diagramına baktığımda custom'ı rental'la konuşuyor.
+
+568
+02:33:01,172 --> 02:33:11,172
+Şurada bir Customer Movie ile konuşuyor. Doğrudan mesajımı çağırıyorsun. Sonra hep Customer Rental ile konuşuyor. Rental Movie ile konuşuyor.
+
+569
+02:33:11,172 --> 02:33:23,172
+Hep bu şekilde. Sadece bir tanesi şurada Customer Doğrudan Movie'ye erişmiş. Bu çok gerekli bir erişim mi? Bakın filmin başlığını yani filmin adını soruyor.
+
+570
+02:33:23,827 --> 02:33:42,187
+Ben bu doğrudan customer'la movie'yi konuşturmak zorunda değilim ki. Customer'la ilişkili, rental'la movie'la ilişkili. Customer'la da sorabilir. Senin ilişkili olduğun filmin adı ne? Çünkü artık o filmin üstünden işlem yapmıyor ki.
+
+571
+02:33:42,804 --> 02:34:07,724
+Eski halinde yapıyordunuz. Statement içerisinde o filmi alıyordu falan belki. Ve onun case'ine, türenine case'e koyup yapıyordu falan. Artık yapmayalım ama falan. Değiştirdik, daha iyi bir hale getirdik. E şimdi ne kaldı bir tek? Statement'ın içerisinde işte bu masraf şu adlı filmden kaynaklanıyor demek için customer movie'e doğrudan erişiyor. Hiç gerek yok.
+
+572
+02:34:08,147 --> 02:34:21,967
+Custom'ın Zental Adışı'nın Zental Movie'nin adını döndürsün. Böylece katmanlama yapmış oluyoruz. Doğrudan ilişkileri sadece dolaylı ilişkilere çevirmiş oluyoruz.
+
+573
+02:34:21,967 --> 02:34:26,967
+Ve ortaya çıkan sonuç ise...
+
+574
+02:34:29,332 --> 02:34:55,832
+Rental sınıfına Get Movie Title diye bir metot eklemek. O da basitçe ilişkili olduğu filmin title'ını return edecek. Öylelikle bakın Customer Statement metodu içerisinde Rental'a Get Movie Title metodu çağrılıyor. O filme soruyor senin başlığın adın neydi? O aldığı bilgiyi de Get Charge metoduna geri döndürüyor.
+
+575
+02:34:57,332 --> 02:35:11,852
+Baktığımızda tam bir katmanlama görmüş oluyoruz. Customer Runtler ile ilişkili, Runtler ile ilişkili. Dolaylı bağlaşımları kaldırıp sadece doğrudan bağlaşımlar üzerinden metot çağrımları yapıyor hale geldik.
+
+576
+02:35:14,708 --> 02:35:34,067
+Bu da bize bir katmanlama sağladı. Katmanlı tasarım her zaman için avantaja sahiptir. Bir katman yapılan değişikliğin sadece ilişkili olduğu katmanı etkilemesi, diğer katmanları etkilememesi gibi bir genel avantaj söz konusudur. Bu avantaja da ulaşmış olduk.
+
+577
+02:35:34,067 --> 02:35:38,208
+Karşılaştırmalarımızı yaparsam, kod karşılaştırmalarını.
+
+578
+02:35:43,412 --> 02:35:44,672
+Ekiden 9'a geçiş.
+
+579
+02:35:49,672 --> 02:35:51,492
+Kastımın değişmedi.
+
+580
+02:35:52,211 --> 02:35:52,992
+Hayır, o değişti.
+
+581
+02:36:00,788 --> 02:36:20,508
+Sadece şu kadar değişti. Daha sonra eventl.getmuy.gettitle diyordu. Yani önce muy nesnesine ulaşıp onun metodunu çağırıyordu. Şimdi sadece rental'a soruyor. Neydi? Mühendisliğin başlığı neydi? String'i alıyor, ekliyor sonuç string'ini. Başka bir değişiklik de yok.
+
+582
+02:36:32,819 --> 02:36:52,020
+İşte şu getMovieTitle eklendi. Başka bir değişiklik yok. Her şey aynı. Kastımları değişmedi. Zaten onun getTitle metodu eskiden biri vardı diye hatırladım ama. Demin olalım.
+
+583
+02:36:55,252 --> 02:37:08,452
+Evet, değişmedi. GetTitle metodu çünkü zaten eskiden vardı. Ki kaskımız zaten çağrıyor. Testlerime de bakalım.
+
+584
+02:37:13,268 --> 02:37:16,727
+Testlerimiz de iyi gidiyor. Bir bu adam yok. Peki.
+
+585
+02:37:22,451 --> 02:37:47,651
+Şimdi aslında beni de bir yere getirdik tasarımımızı. Bu noktadan sonra artık işler biraz çatallaşıyor diyelim. Şöyle ki şu son hali bir bakalım kodun şimdi sizinle birlikte. Hızlı bir bakalım üstünden. Şimdi kastama sınıfına bakıyorum.
+
+586
+02:37:51,700 --> 02:37:53,900
+Aslında bir tek şimdi şurada.
+
+587
+02:37:54,324 --> 02:38:21,024
+Şu hala statement metodunda şu footer eklemek işi ayrı başına bir iş. Bunu add footer diye bir ayrı bir metoda çıkartsam iyi olacak diye düşünüyorum. Ki bunu sonra ileride bir yapmayacağım. Hiçbir yerde yapmamışım. Neyse en son bunu yapalım. Tamam mı? Bir bu kalmış olsun diyelim ki. Ondan sonra acaba. Sonra şurayı ekleyeyim de.
+
+588
+02:38:22,324 --> 02:38:22,763
+Konuşulayım.
+
+589
+02:38:53,043 --> 02:39:01,664
+Ekstrakt olsun. Sonrası için tartışırız. O borcumuz olsun şimdilik.
+
+590
+02:39:03,724 --> 02:39:06,664
+Onu böldüğümü düşünürsem...
+
+591
+02:39:06,868 --> 02:39:26,087
+Onun dışında Customer sınıfı, öyle çok uzun uzun olmayan metotlar içeriyor. Hep kendi üye alanları üstünden işlem yapıyor. En fazla bir adım ilişkili olduğu, bağlaşımda olduğu o nesneye bir şeyler sorup yanıtını alıyor. Bu baştan güzel.
+
+592
+02:39:29,328 --> 02:39:31,068
+9'a bakıyorduk, pardon.
+
+593
+02:39:31,700 --> 02:39:40,588
+Ondan sonra Rental'a bakıyorum. Rental da kendi içerisinde şey...
+
+594
+02:39:41,971 --> 02:39:57,811
+Epey yine lightweight bir hale geldi. Aralarda biraz boyu uzadı ama yine de hiçbir zaman aşırı şişman, aşırı uzun, aşırı kalmış hale gelmedi. Sonunda geldiği nokta yine epey lightweight oldu.
+
+595
+02:40:04,628 --> 02:40:11,568
+Ve bu uzunluk içerisinde sadece ve sadece switch case'e... Pardon, afılarsınız.
+
+596
+02:40:51,603 --> 02:41:08,183
+Evet arkadaşlar, özür dilerim. [kişisel bilgi] Bir dakika şu kapıyı da kapatayım ben.
+
+597
+02:41:22,515 --> 02:41:47,916
+Tamam. Şimdi artık hani o şeyi bölecektik tamam. Print, fotoğraf yapacağız. Ama onun dışında artık beni tekrar isteden şu Switch Case. Bu Switch Case'i düzeltmek isteyebilirim. Gerçi şu an yan etkisi minimal olsa da ben kafama koyduğunu düzelteceğim diyorsak yapmam gereken şey şu olacak şimdi. Madem üç farklı film türü var.
+
+598
+02:41:48,435 --> 02:42:06,536
+O zaman ben 3 farklı film sınıfı oluşturabilirim. Bir soyut bir movie sınıfı ve onun somut, çıldırın, regular, new release olmak üzere somut alt sınıflarını yaparım. Böylelikle Price Code üyesine hiç ihtiyaç olmaz.
+
+599
+02:42:07,572 --> 02:42:21,172
+Ondan sonra bu Get Charge metodunun her bir case'inin içerisinde de ilgili alt sınıfının içerisinde Get Charge metodunun gövdesine almak şeklinde bir yere varabilirim.
+
+600
+02:42:21,172 --> 02:42:23,672
+Ortaya çıkan sonuç şu olacak.
+
+601
+02:42:25,792 --> 02:42:28,172
+Ortaya çıkan sonuç...
+
+602
+02:42:28,371 --> 02:42:54,471
+Şöyle bir sonuç olacak bahsettiğim üzere. Bir rental, bir movie nesnesiyle ilişkili ama movie sınıfı aslında soyut. Doğrudan movie nesnesi diye bir şey söz konusu olmayacak. New Orleans, Regular ve Children's olmak üzere üç farklı movie nesnesi aslında sınıfı söz konusu olacak. O üç farklı bir sınıfıdan birinden bir nesneyle ilişkili olacak rental sınıfı.
+
+603
+02:42:56,371 --> 02:43:05,011
+Onu yapabilirim. Tamam, çok güzel. Ama bu sonuç olarak 3 yeni sınıf ortaya çıkartacak.
+
+604
+02:43:05,011 --> 02:43:15,011
+Ve Movi sınıfı abstrakt olduğu için daha evvel olduğu gibi, test kodlarında falan yaptığım gibi Movi sınıflarından nesneler oluşturamayacağım.
+
+605
+02:43:16,180 --> 02:43:36,380
+Neuriz'den ayrı, Regulur'dan ayrı, Çadınız'dan ayrı nesneler oluşturmak zorunda kalacağım. Bunların türleri ayrı olacak. Uzun lafın kısası dışarıya verdiğim arayüz değişecek. Ve sonuç olarak test kodum da değişecek. Bu düzenlemeyi yaparsam geriye doğru uyumluluğu kaybetmiş olacağım.
+
+606
+02:43:36,639 --> 02:44:02,439
+Refactoring'i tam olması, tam tanımıyla yapmamış olacağım. Dışarıya verdiğim hizmeti, arayıp değiştirmiş olacağım. Bu benim için önemli bir problemse, o zaman hiç yapmayalım. Ama bu geriye doğru uyumluluğu kurmamız gerekmiyorsa veya işte bu projeyi daha henüz müşterilerimize dağıtmadıysak.
+
+607
+02:44:03,252 --> 02:44:14,352
+Bir başka deyim ile canlıyı almadıysak pek hoşuma giden bir terim değil ama kullanılıyor sektörde. Ya da belki daha net değişiklikle bakım aşamasına geçmemişsek daha.
+
+608
+02:44:17,683 --> 02:44:40,563
+Bir çevrimsel süreçte, increment değil de, iteration, düzeltme, refactoring iterasyonu yapıyorsak o zaman olabiliriz. Bu işlemi yapalım, bu değişiklikle yapalım. Öbür türlü yapmasak da olur. Yapmamayı da çok rahatlıkla sorunabiliriz. Hele ki yazılım müşterilere dağıtılmışsa.
+
+609
+02:44:42,804 --> 02:45:10,043
+Bu tartışmayı şimdi sizinle bu şekilde yapmış olmak istedim. Bu bir şart. Belki buraya varmadan şey de yapabilirdik belki aslında. Replace Type Code with Subclass değil de Replace Type Code with Strategy de yapabilirdik. Onu burada göstermemişim ama.
+
+610
+02:45:10,579 --> 02:45:12,260
+Şöyle yapabiliriz.
+
+611
+02:45:15,920 --> 02:45:18,200
+Nasıl yapalım? Şöyle yapalım.
+
+612
+02:45:20,979 --> 02:45:24,239
+Aslında şu an olabilir bile, şişem olarak.
+
+613
+02:45:24,659 --> 02:45:25,932
+Açın bakalım.
+
+614
+02:45:33,427 --> 02:45:43,927
+Ders malzemesi, yunama, factoring ve cluster yapman faz. Onun alternatifi.
+
+615
+02:45:46,347 --> 02:45:47,427
+Evet.
+
+616
+02:45:48,488 --> 02:45:49,567
+Önce şu yapabiliriz.
+
+617
+02:45:49,747 --> 02:45:56,647
+Şöyle bir tasarına gidebiliriz. O zaman Replace Type Code with Strateji olmuş olacak.
+
+618
+02:45:57,147 --> 02:46:02,788
+Şimdi bu filmlerde değişen şey ne? Değişen şey fiyat kodu ve daha doğrusu fiyat türü.
+
+619
+02:46:02,788 --> 02:46:10,927
+Ve bundan kaynaklanan kira bedeli ve bonus kazanımı hesapları değişen şey.
+
+620
+02:46:11,467 --> 02:46:16,727
+O zaman ben fiyat diye bir soyut sınıf oluşturuyorum.
+
+621
+02:46:17,780 --> 02:46:33,720
+Ve bunun içerisinde GetCharge ve GetBonus metotlarını tanımlarım. Yine soyut metotlar olarak da. Bunun somut alt sınıfları olarak PriceNearly's, PriceRegular ve PriceChildren's sınıfları oluştururum.
+
+622
+02:46:38,772 --> 02:46:52,192
+MUVİ sınıfının eski halindeki switchlerdeki kezleri ilgili sınıfların altına taşın. Bu refactoring eylemi en doğrusu olmuş olacak.
+
+623
+02:47:02,100 --> 02:47:09,479
+Şuradaki bence daha sade ve kavramsal modellim açısından baktığımızda en doğrusu bu.
+
+624
+02:47:10,100 --> 02:47:32,860
+Çünkü bu tip filmler var. Problem alanı da bu şekilde anlatılıyor. Biz bu şekilde yaptığımızda biraz daha farklı veya alt bir kılın yaptık ama bence bir problem değil. Çünkü iyi bir tasarım, problem hangi düzeyde parçalar ayrılıyorsa o düzeyde parçalar ayrılan bir tasarımdır.
+
+625
+02:47:32,860 --> 02:47:38,100
+Ama daha da alt parçalar ayrılabiliyorsa bu aşırı gereksiz karmaşıklık oluşturur.
+
+626
+02:47:38,100 --> 02:47:49,360
+Bu da kabul edilebilir. Şu, bir hafta fazla alt kırılma olmuş oldu belki ama geliksiz karmaşıklar sebebi olmuyor diye düşünüyorum. Tam tersine.
+
+627
+02:47:51,347 --> 02:48:10,828
+Daha az kod kusuruna yönelik bir tasarım olmuş oluyor. O yüzden kodumu bu şekilde değiştirirsem test kezlerimi de değiştirmiş olmayacağım. O yüzden bunu tercih ediyorum diyebilirim.
+
+628
+02:48:13,108 --> 02:48:27,328
+Son olarak, refactoring bütüncül örneğini de bitirdik. Kısaca bir antipatern konusuna da değinmek istiyorum. Dersin müfidratını almadım ama varlığını bilin.
+
+629
+02:48:27,328 --> 02:48:36,968
+Şimdi bu kod kusurlarına baktığınızda, kod simerlere baktığınızda bu kusurlar ya tek bir sınıfta,
+
+630
+02:48:37,459 --> 02:48:48,039
+Bu konuda kaynaklanıyordu. Ya da en fazla ilişkili olduğu bir adım ya da iki adım öteki sınıfa da uzanabiliyordu.
+
+631
+02:48:48,500 --> 02:49:00,439
+Bu da tamamen ekstrakt veya move yaptığımızda aynı sınıf değil de ilişkide olan veya kalıtımda olan diğer bir sınıflara da taşıma yapabilmemizden kaynaklanıyordu.
+
+632
+02:49:00,819 --> 02:49:07,899
+Yani kod kursluları genelde metot, sınıf, hadi en fazla bilmediğiniz bir iki sınıf düzeyindedir.
+
+633
+02:49:08,308 --> 02:49:23,328
+Fakat bir de karşıt kalıplar diye bir kusur da söz konusudur. Antipatterns. Antipatterns, karşıt kalıp aslında bir çok güzel bir isim verilmiş. Bunlar biraz tasarım kalıpları gibi görünür ama öyle değillerdir.
+
+634
+02:49:33,600 --> 02:50:00,340
+Sakıncalı modellemeyi anlatır. Aslında sadece bu şekilde tasarım anlamında ve modelleme anlamında değil, proje yönetimi düzeyinde de tanımlanmış karşıt kalıplar söz konusudur. Bu konunun klasik kitabı var, bir web sitesi de var. Buradan bunları inceleyebilirsiniz. Antipatörn eğer kodla ilgiliyse birden fazla sınıf.
+
+635
+02:50:00,788 --> 02:50:24,128
+Sınıfa yayılmış bir olgudur. Yani bizi iyi yere götürmeyen tasarım kalıplardır. Onları da antipatör denilir. Farklı budur işte. Karşı kalıplar daha çok tasarım düzeyindedir. Bizden fazla sınıfa yayılmışlardır.
+
+636
+02:50:28,788 --> 02:50:33,228
+Daha çok gerçekleme implementation düzeyine daha yakındır diyoruz.
+
+637
+02:50:33,228 --> 02:50:42,508
+Karşılık kalıpları da üç gruba ayırıyorlar. Yazılım geliştirme karşı kalıpları, yazılım mimarası karşı kalıpları ve yazılım proje yönetimi karşı kalıpları.
+
+638
+02:50:43,128 --> 02:50:44,668
+Bunlar şuradan bakabilirsiniz.
+
+639
+02:50:55,311 --> 02:50:56,611
+Buradan bakabilirsiniz.
+
+640
+02:50:58,548 --> 02:51:24,048
+Bakın, burada şey de var. Refactoring'e de şey var. Refactoring'e de şey var. Burada biraz farklı bir gruplama yapmışlar mesela. Şişiriciler, long metodu gördük, large glass'ı gördük, primitive obsession'ı gördük. Bunları bloater, yani bir şeyi hantallaştırmak, aşırı şişirmek anlamına geçen kelimedir. Öyle bir gruplama yapmışlar mesela.
+
+641
+02:51:26,548 --> 02:51:44,548
+Switch Statement, yani işte bahsettiğimiz şeyler gibi bir grup olmuşlar. Neyse, antipatansa geçelim. Antipatans da üç gruba ayırmışlar. Daha çok işte yazılım mimarisi antipatanslar şeklinde baktığımızda birden fazla sınıfla ilgili...
+
+642
+02:51:47,059 --> 02:52:03,259
+Bilgisayar Mühendisliği, Nesneye Dayalı Tasarımlar söz konusudur. Onlarla ilgili bilgileri de merak edin. Arkadaşlar bakabilirler. Bunun için aynı zamanda şu kitaptan alınmıştır bunlar.
+
+643
+02:52:07,924 --> 02:52:09,484
+Yanlış yazdım.
+
+644
+02:52:16,364 --> 02:52:21,064
+Görsellerden çıkarsam herhalde şu anda kitabın başlığı göre bir.
+
+645
+02:52:21,064 --> 02:52:23,844
+Bu değil de.
+
+646
+02:52:31,843 --> 02:52:32,603
+Ah, yok.
+
+647
+02:52:33,403 --> 02:52:34,463
+Peki neyse.
+
+648
+02:52:38,772 --> 02:52:57,632
+Evet, şu kitabın sayesiymiş. Şu sauce making gibi içerik anlatmamış. Peki neyse. Yani kitap bu, web sitesi daha sonra gösterdiğim. Tablet isimleri yok şöyle. Hemen bakabilirsiniz, yararlı olabilir diye düşünüyorum.
+
+649
+02:52:59,219 --> 02:53:16,520
+Peki, şimdi normalde dersin sonuna geldik ama eğer sizin bu şuraya anlattıklarından bir sorunuz yok, bu önceki sınavla ilgili bir konuşalım isterseniz söz verdiğim üzere.
+
+650
+02:53:17,520 --> 02:53:19,719
+Burada şöyle yapalım şimdi. Nasıl yapalım?
+
+651
+02:53:26,100 --> 02:53:28,039
+Hocam, başlamadan önce bir şey sorabilir miyim?
+
+652
+02:53:28,404 --> 02:53:40,404
+Bu gelecek hafta olacak terapi vizesi olduğumuzda toplam üç vizemiz oluyor ya, bunlardan en yüksek ikisi mi seçilecek yoksa nasıl yani planlıyorsunuz?
+
+653
+02:53:40,564 --> 02:53:44,564
+Ben en yüksek ikisini almayı düşünüyorum.
+
+654
+02:53:44,624 --> 02:53:45,884
+Tamamdır hocam, çok sağ olun.
+
+655
+02:53:45,884 --> 02:53:56,404
+Böylelikle kaybınız olmayacak. Hiçbir kayıbınız olmayacak. Diyelim ki üçüncüye girdiğiniz, diğer ilk ikisinden bile daha düşük not aldığınız bir kaybınız olmayacak.
+
+656
+02:53:56,404 --> 02:54:00,164
+Ama daha yüksek not alırsanız o zaman kazancımız olacak.
+
+657
+02:54:00,424 --> 02:54:01,304
+Teşekkür ederim.
+
+658
+02:54:01,624 --> 02:54:03,043
+Çok teşekkür ederim.
+
+659
+02:54:04,404 --> 02:54:06,404
+Şimdi şu...
+
+660
+02:54:14,291 --> 02:54:16,091
+Kağıdın dağı, kağıdın dağı.
+
+661
+02:54:17,671 --> 02:54:19,271
+Koltan, kışkılar, sürdürüyorum.
+
+662
+02:54:38,227 --> 02:55:01,127
+Birinci soru da bu chat programıyla ilgili. Uçtan uca güvenli haberleşme isteniyor. Burada birden fazla kripto algoritması kullanılabilmesi isteniyor. Şimdi burada bizim iki tane konuşan çiftimiz var. Bir A ile bir B arasında bir haberleşme söz konusu. Hatta şey değil mi?
+
+663
+02:55:02,388 --> 02:55:14,087
+100 kez diagram çizelim mesela. Bir kişi, iki kişi arasında bir konuşma söz konusu diyelim ki. Bir güvenli yetişim kanalı kurulacak.
+
+664
+02:55:17,620 --> 02:55:45,500
+Gidecek paketler, yani oluşan trafik şifrelenecek ve kriptolanacak. Çeşitli kripto algoritmaları var literatürde. Daha eski DES falan gibi blok tabanlı şeylerimiz var. Substitution tabanlı kriptolama yöntemleri var. Daha yeni güncel yöntemle olan elliptik kör falan gibi ya da asimetrik anahtara sahip çeşitli kriptolama algoritmaları var.
+
+665
+02:55:45,620 --> 02:55:51,940
+Ama bir haberleşme, bir şifreleme yöntemiyle şey denir, kodlanır.
+
+666
+02:55:51,940 --> 02:56:00,739
+Bir kısmı bir pakette, bir kısmı bir yöntemle, bir kısmı diğer yöntemle kullanılır diye bir şey yok.
+
+667
+02:56:00,940 --> 02:56:07,079
+Yani biz sistemimizde birden fazla kriptoyu, yöntemini kodlayabiliriz.
+
+668
+02:56:07,200 --> 02:56:12,940
+Ama belirli bir anda bunlardan sadece bir tanesiyle şey deriz, konuşuruz.
+
+669
+02:56:13,620 --> 02:56:18,979
+Böyle düşündüğünüzde de o zaman seçmeniz gereken şey strateji tasarım kalıbı olacak.
+
+670
+02:56:18,979 --> 02:56:29,920
+Bir enkript metodu olacak veya bu enkript metodu hangi sayfa üstünden şifreleme yapılması istemiyorsa onun üstünden olacak.
+
+671
+02:56:30,399 --> 02:56:38,020
+Mesela diğer bir keşke de bir mesaj gönderecek. Mesajın içeriği olacak. Plain Text.
+
+672
+02:56:40,884 --> 02:56:45,763
+Ondan sonra, fakat bunun şifrelenmesi gerekecek.
+
+673
+02:56:45,763 --> 02:56:56,123
+Send Message. Ama gidecek mesaj doğrudan plain text olmayacak. Şifrelenmesi gerekecek.
+
+674
+02:56:56,123 --> 02:57:03,064
+Sayfı Plain Text.
+
+675
+02:57:03,572 --> 02:57:05,752
+Şeklinde gönderebilecek aslında.
+
+676
+02:57:06,311 --> 02:57:08,912
+Burada kod yazmak gibi oldu da neyse.
+
+677
+02:57:10,691 --> 02:57:13,492
+Şifreleme metodu ise diyelim ki.
+
+678
+02:57:14,931 --> 02:57:16,391
+Şifreleme metodu ise.
+
+679
+02:57:17,252 --> 02:57:20,011
+Şimdi bu da.
+
+680
+02:57:20,788 --> 02:57:41,948
+İşte stringi alacak, şifreleyecek ve şifre vermiş halini geri döndürecek. Ama diyelim ki benim elimde DES şifreleme algoritması var. Ondan sonra diyelim ki neydi? RSA algoritması var. Ondan sonra artık başka neyse. ABC.
+
+681
+02:57:42,548 --> 02:57:50,548
+Algorithması var. Bundan sonra açıdan. Bunların hepsinin bir cycle metodu var. Ama...
+
+682
+02:57:53,139 --> 02:58:04,139
+Bunlar tamamen farklı şekillerde çifreleyecek. Bazıları iki anahtar isteyecek, bazı tek anahtar isteyecek falan her neyse önemli değil.
+
+683
+02:58:04,139 --> 02:58:19,139
+Ama benim mesajlarımın çifreleyici şeklinde bir film olsa, hatta interfez olsa bu daha doğru olacak.
+
+684
+02:58:20,531 --> 02:58:22,172
+Madem strateji yapıyoruz.
+
+685
+02:58:26,835 --> 02:58:37,475
+Ondan sonra show cipher metodu onda da tabii ki tanımlı olması gerekiyor. Ondan sonra olay şu olacak.
+
+686
+02:58:40,659 --> 02:59:01,679
+Mesajlarımızın ya da sistemimizi de diye düşünebiliriz. Bu mutlaka bir cipher ile ilişkili olacak. Ve onun aslında cipher metodunu kullanmaktan, biz eğer DES verdiysek, DES cipher verdiysek, DES ileride çıkacak. Yok daha fazla güvenli ihtiyacım var, RSA gerekiyor diyeceğim, RSA vereceğim.
+
+687
+02:59:08,340 --> 02:59:31,239
+Şifrelemeyi vereceğim gibi aslında belirli bir anda bu şifreleme yöntemlerine sadece bir tanesinin seçilmesi mantıklıdır. Eğer işin bu doğasını biliyorsanız veyahut da rahatlıkla aklınızda getirebilirsiniz, o zaman seçmeniz gereken şey strateji olacak, başkası olmayacak. State demek de doğru değil.
+
+688
+02:59:33,523 --> 03:00:00,000
+Şöyle bir şey açıklarsanız belki olur da, haberleşme band genişliğinin azalması veya çoğalması gibi bir durumda daha hızlı veya daha yavaş çalışan şifreleme algoritmalarından birine geçiş yapmak isteyebilirim gibisinden bir şey yazarsanız, o zaman belki statele de, yani şu yapıya statele diyebilirsiniz biliyorsunuz.
+
+689
+03:00:00,000 --> 03:00:09,699
+State'de stratejinin sınıf işleması ikisi de bu şekilde. Yani değişmiyor, ortak aynı. Fakat işte State'de bir durumdan başkasına geçiş söz konusuyken,
+
+690
+03:00:10,119 --> 03:00:18,979
+stratejide genelde sen şu an şöyle çalışacaksın deyip bütün olay boyunca hep onun o strateji üstünden çalışmak söz konusudur.
+
+691
+03:00:18,979 --> 03:00:27,959
+Bu nüansı iyi açıklayabilmek lazım. Ama State diyen birkaç arkadaşım olmuş ama bunu bu şekilde açıklayamam.
+
+692
+03:00:28,000 --> 03:00:41,759
+Oradan biraz kırdım. Strateji veya site dışında kalıplananlardan biraz daha fazla kırdım. Mesela dekorator diyenler olmuştu ama. Şimdi burada şöyle bir şey demedik ki.
+
+693
+03:00:42,579 --> 03:01:01,700
+Bu trafiğin bir kısmı şu yetenekle, istediğiniz zaman şu yetenekle eklenebilir. Şimdi burada böyle bir şey yok. Decorator'un amacı yeni yeni yetenekler ekleyebilmek bir varlığa. Bunu da işte sarmalayarak da yapıyor, dekore ederek da yapıyor.
+
+694
+03:01:01,700 --> 03:01:06,159
+Burada o yüzden Decorator'a yönelik bir şey de göremiyorum.
+
+695
+03:01:08,564 --> 03:01:16,824
+Daha başka bir şeyler yazan var diye pek bir şey not etmemişim. Olay bu. Buradan sonunuz varsa konuşalım.
+
+696
+03:01:26,484 --> 03:01:31,444
+İkinci soru, yani straightforward. Kalıplar belli. Bunları karşılaştırılıyor.
+
+697
+03:01:32,275 --> 03:01:51,176
+Her ikisinde de birbiriyle iletişimde olan varlıklar var. Fakat Mediator'da bir ortak ara bulucu üzerinden nesneler haberleşiyorlar. Doğrudan değil, Mediator üzerinden dolaylı haberleşiyorlar.
+
+698
+03:01:51,176 --> 03:02:00,275
+Observer'da ise izleyen ve izleyiciler, bir izleyici izledikleriyle veya bir izlenen izleyici.
+
+699
+03:02:00,275 --> 03:02:28,156
+Mediyatör'da ise bir nesnenin diğer bir nesneyi etkilemesi söz konusu olabiliyor veya mediyatör üzerinden iş yaptırması.
+
+700
+03:02:28,275 --> 03:02:49,775
+Söz konusu olabiliyor. Ama dediğim gibi durum değişikliklerinin gözlenmesi ve işlenmesi şeklinde bir çalışma söz konusu. Birinci soru da C-O-R ile o kısaltmanın anlamını çıkartamadım. Uzunluğunu yazarsanız konuşalım.
+
+701
+03:02:51,123 --> 03:03:11,084
+Chain of Responsibility. Tamam, peki. Güzel. Şimdi Chain of Responsibility'de zaten birbiriyle ilişkili bir varlıklar silsilesi var ve bir işin yapılması isteniyor. O silsledeki varlıklardan biri ne diyoruz ki? Bu iş yapılacak. Lütfen yap.
+
+702
+03:03:11,636 --> 03:03:27,456
+Kendisinde bu işi yapabilecek bilgi, beceri, veri, yetenek varsa yapıyor ve tamam yaptım diyor sonucu geri dönüyor. Ama kendisinde bu yetenek yoksa ilişkide olduğu diğer bir nesneye soruyor.
+
+703
+03:03:35,891 --> 03:03:57,992
+Bankada, diyelim ki biz gişe çalışan bankacı, ondan sonra belirli bir sigorta operasyonları uzmanı ve bir de şube müdürü olduğunu düşünüyorum. Ben sigorta yaptırmak istedim bir konuda. Kasadan fiş aldım, gittim gişeye. Böyle böyle olacak ama ben daha önce şey yaptırmadım bilmiyorum.
+
+704
+03:03:57,992 --> 03:04:02,672
+Şimdi kasa, gişedeki eleman da bu konuda yeterli bilgiye sahip değil.
+
+705
+03:04:03,891 --> 03:04:31,891
+Sigorta yaptırma yeteneği var o bankada. Kendisi de bankanın parçası, bir bileşeni olarak, üyesi olarak bizi kabul etti. Ama kendisi yapamıyor. Sigorta işlemleri uzmanına yönlendiriyor beni. Ben oraya gidiyorum mesela. Veyahut da o soru, bilmem kim hanım, bilmem kim bey, şu nasıl olacak? Ondan öğreniyor ve benim işlerimi yapıyor. İki şekilde düşünebilirsiniz. Ama diyelim ki o sigorta uzmanını da belki...
+
+706
+03:04:31,891 --> 03:04:50,592
+Biraz acemidiz veya çok enteresan bir durum söz konusu. O zaman o da banka müdürüne, şube müdürüne soruyor. Böyle böyle bir şey geldi. Nasıl olacak? O diyor ki şöyle olacak. Ona göre bana yanıt geliyor. Benim işlerimi yapıyorlar. Chain of Responsibility böyle bir durumda söz konusu.
+
+707
+03:04:59,891 --> 03:05:27,872
+İnisiyatifinde olan bir şey değildir. Bölüm başkanını iletiyor. Bölüm başkanının da yetkisi yoktur bu konuda. Dekanın da yetkisi vardır. Dekanlığa iletiyor. Ve diyelim ki sadece ilgili bir problemmiş ve yönetmelik ile ilgili bir problemmiş. Dekanlıkta çözülüyor. Chain of Responsibility böyle bir süreçte kullanılabilecek bir şey. Arkadaşlar, programında iki tane kişi var.
+
+708
+03:05:27,891 --> 03:05:55,512
+Bunların arasında ikrar adres var. Bunların arasında mesajlar iletilecek, yetilecek. Yani şifre edeceksin, şifreleyecek. Yani şifrelemeyi de o anda hangi şifreleme algoritmasının kullanılması en uygunsu o karar verilip strateji üstünden verilecek ona. Yani birbiriyle ilişkili sayfa nesneleri yok ki. Sen bunu sayfa edebiliyor musun? Edemiyorsan senet yok. Edemiyorsan senet. Böyle bir senaryo olmadığı için.
+
+709
+03:05:55,891 --> 03:06:11,292
+Chain of Responsibility böyle bir senaryoya uymuyor yani. Bilmiyorum yeterli oldu mu anlatma tarzı. Tamam olmuş. Ben de teşekkür ederim. Başka sorunuz varsa buyurun. Sese sorabilirsiniz, çekten yazabilirsiniz.
+
+710
+03:06:22,004 --> 03:06:40,124
+Peki, o zaman ikide de sorun yok herhalde. Çekirelim. Zaten hep diyorduk ki, low coupling, high cohesion, low coupling istiyoruz. Low coupling bize ne sağlar veyahut da high coupling ne götürür onu söyleyelim.
+
+711
+03:06:50,004 --> 03:07:11,304
+Ek yan etkilere ve hatalara yol açabilir. Böyle bir durum söz konusu olabilir. Aynı zamanda kaplı ilgisi konunca yazılım yeniden kullanım oranı da düşmektedir. Bunları tartışmıştık. İlk yansıtlarında ilk bölümlerinde de geçiyor. Orada aklınızda kaldığı kadarıyla birkaç tanesini yazsanız yeterli oluyor.
+
+712
+03:07:11,304 --> 03:07:17,984
+Ha ondan sonra bakalım. Acaba bağlaşımı azaltmaya yönelik bir tasarım kalıbı doğru.
+
+713
+03:07:18,004 --> 03:07:45,964
+Şimdi burada her tasarım kalıbı bağlaşımı düşürmüyor arkadaşlar. Hatta ben zaman içerisinde birkaç lisans öğrencime ara veya bitirme projesi olarak şöyle bir çalışma yaptırdım. Ders noktalarında nasıl bir kalıbın örneğini verirken öncelikle ilk kafamıza esen bir şekilde tasarım yapıyoruz. Ondan sonra biraz Nesne yönelimi doğru kullanmaya çalışarak bir tasarım yapıyoruz.
+
+714
+03:07:46,004 --> 03:08:03,424
+En sonunda üçüncü tasarım kalıbını kullanarak tasarım yapıyoruz. Bu şekilde her öğrenci 2-3 tane problemi farklı tasarım kalıpları üstünden çözdürdüm. Benim ders notlarında yazdığım gibi iskelet kod yazdırdım.
+
+715
+03:08:14,004 --> 03:08:18,944
+Geleştirmiyor, düşünmüyor. Bazen biraz yükselttiği de söz konusu olabiliyor.
+
+716
+03:08:19,188 --> 03:08:37,208
+Öte yandan bakarsanız, ders notlarında yer alan basit çözümden normal çözüm ve kalıplı çözümü yeni yeni sınıflar ortaya çıkıyor, yeni yeni ilişkiler kuruluyor. Buradan da anlaşılabilir aslında her kalıbın couplingi düşürmediğini, bir noktaya kadar yükselttiğini.
+
+717
+03:08:47,188 --> 03:09:14,688
+İyiymiş gibi gözüküyor ama olması gereken o değil. Minimalin daha da altına istemezsiniz. Karnımızı doyuracağız, tamam. Belki peynir ekmekle de karnımızı doyururuz ama sadece ekmekle de doyulmayız gibisinden. Veyahut da ekmeğin taze olması lazım, küşme olmaması lazım gibisinden. Benzetme, teşvikli hata olmaz daha da. Böyle bir durum da söz konusunda olabilir.
+
+718
+03:09:15,188 --> 03:09:25,247
+Ama özellikle tasım kalıplarını incelediğinizde bağlaşımı azaltır dediğiniz kalıplar da çok.
+
+719
+03:09:25,620 --> 03:09:45,920
+Ondan sonra açıma. Bunların içerisinde özellikle bu FASAD var, Chain of Responsibility var, Command, Observer ve Mediator var. Bunlar özellikle 4. Chat'in kitabında bağlaşım, azaltı şeklinde geçiyor.
+
+720
+03:09:45,920 --> 03:09:53,620
+Ama öte yandan mesela diyelim ki Abstract Factory diyelim ki. Abstract Factory yeni sınıflar ortaya çıkıyor.
+
+721
+03:09:53,620 --> 03:10:00,620
+Yeni yeni bağlaşımlar ortaya çıkartıyor. Fakat şey açısından baktığınızda...
+
+722
+03:10:02,004 --> 03:10:26,684
+Problem alanını oluşturan varlıklar açısından baktığınızda kısmi bir bağlaşım iyileştirilmesi de sağlayabiliyor. O yüzden seçtiğiniz kalıp az önce bahsettiklerimin arasında olmasa bile açıklamanıza bakaraktan ve çizdiğiniz düğmen sınıf şamasına bakaraktan bu dediklerinin dışına kalıp seçip de tam puan alanlarda oldu veya tama yakın puan alanlarda oldu yani.
+
+723
+03:10:26,684 --> 03:10:30,004
+O yüzden sadece şeyimin ya hocam siz bu ders...
+
+724
+03:10:30,004 --> 03:10:53,024
+Bu kitapta var, kitabı da okumak zorunda diyerek falan demeyin diye. Sadece problem alanını oluşturan varlıkların ilişkilerindeki kalmaşıklığı da toparlayan her kalıb bunu yapıyor zaten. Onu düzgün bir şekilde anlatırsanız oradan puan aldınız diyebilirim.
+
+725
+03:10:54,036 --> 03:11:14,076
+Dördüncü soru ise, az önce görüştüğümüz bu SwitchCase olayları. SwitchCase ile ilgili birçok kalıp aslında bu kalıtım ve çok biçimliliği içeren herhangi bir kalıbı seçip yazdıysanız ve güzel de anlatıyorsanız buradan tam puan almanız.
+
+726
+03:11:16,435 --> 03:11:36,775
+Hani tamamen yanlış olanlar içerisinde veyahut da çok ilgili olmayanlar içerisinde şey var mesela. Burada Builder var. Builder saçın arkadaşlara. Ben biraz puan kırdım. Sebebi de şu. Builder'ın kendi içerisinde hiç kaçınamayacağımız switch case var.
+
+727
+03:11:44,435 --> 03:12:12,435
+Karaz zincirinden bir ürün ortaya çıkartmaktı. Her bir parçayı ayrı ayrı işleyip bütüne monte etmekti. Ve her aldığımız parçanın da hangi parça olduğunu işlemek için switchgez üzerinde kontrol ediyorduk. Ve bu switchgezden kurtulmamız da kalıp boyunca mümkün değildi. Daha iyi bir yerlere de atabiliyorduk ama illa ki switchgez geçiyor. Ders notlarında ilgili kısmına açıp bakarsanız hem kalıbın...
+
+728
+03:12:12,435 --> 03:12:28,055
+Bu tanımında hem örneklerde mutlaka Switch Case var ve Switch Case'i taşıyabileceğimiz bir yerde yok. O yüzden Builders bunun için doğru bir yanıt değil. Builders diyenler tam puan alamadılar.
+
+729
+03:12:29,335 --> 03:12:36,975
+Onun dışında başka mesela MVC. Burada da pek Switch Case olayı yok.
+
+730
+03:12:37,376 --> 03:13:04,416
+Yani switchgeyesden kurtarma olayı yok. Bu daha çok bağlaşımı düşünmeye yönelik bir kalıptır. Üçüncü soru için uygun bir yanıt olacak mesela MBC. Dördüncü için uygun değil. Ya da yine dördüncü için uygun olmayan, pek uygun olmayan prototype var. Prototype'da da hani bir ister istemez orada bir switchgeyesli oluyordu. Örnekte veyahut da kalıbın tanımına bakarsanız bir rejistri gerekiyordu.
+
+731
+03:13:05,376 --> 03:13:29,436
+Prototark'tan oluşturduğum yeni türleri bir registry'e eklemem gerekiyordu. Şu anki kullandığım varlık, zaten aslında o problemin tanımında switch case yoktu ki onu bir düzelteyim şeklindeydi. Prototark'ta hiç zaten switch case ile ilgili bir durum yok.
+
+732
+03:13:32,659 --> 03:13:41,659
+Pek alakası yok. Yani bir sınıftan tek bir nesne olması ile ilgili. Bunun yine Sıvıçketsle ilgili bir şey geçmiyor. Bunun problem tırmında.
+
+733
+03:13:43,183 --> 03:14:02,783
+Adapter keza öyle. Farklı bir metot adını değiştirmek şeklinde. O da uymuyor. Fasad olmuyor. Kalmaç bir sistemi az bir footprint ile dışarıya açmak şeklinde bir kalıptı o. O üçe yönelik bir çözüm.
+
+734
+03:14:03,744 --> 03:14:29,763
+Ondan sonucuma. Flyweight de pek uymuyor. Switchcase'de. Sonra Proxy, Memento ve Mediator. Bunların pek Switchcase ile alakası yok. Ama yine de bir yerden yakalamaya çalışmışsanız oradan kısmi puan verdiğim vakalar olabiliyor. Durum bundan ibaret arkadaşlar.
+
+735
+03:14:30,835 --> 03:14:46,415
+Hal öyle olunca ve bu şeyde de sınav notlarının seçiminde de, şuradan gidelim, şey olacağı için en yüksek alacağınız iki not gelişen olacağı için,
+
+736
+03:14:46,415 --> 03:14:58,415
+ben şöyle bir analiz yapıp, gilsinse çok iyi olur dediğim arkadaşları sarı ile işaretledim. Bunlardan bazılarında zaten bir nedenle bir sınava giremeyip, öbür sınava girenler zaten...
+
+737
+03:14:58,835 --> 03:15:10,475
+Girmek zorunda. Ama mesela şöyle bir durumlar da var. Mesela iki sınırından birisi çok iyi, birisi daha kötü. Belki onu telafi etmek için girmesi yarar olabilir.
+
+738
+03:15:11,015 --> 03:15:21,716
+Diğer arkadaşlarım oldu. Yani iki vakadan biri genelde. Tabii diğer arkadaşlarım da girebilir. Neden girmedi demeyeceğim. İki sınırla birden girmeyenler tabii onlar zaten girmezler.
+
+739
+03:15:26,835 --> 03:15:54,755
+Bu arkadaşlar. Haftaya yine yüz yüze bir şekilde sadece tasarım kalıpları üzerinden üçüncü vize olacak. Birinci vizeye girmeyenlerin tabii seçme hakkı olmayacak. Üç vizeden ikisine girmiş olacaklar. O iki vizenin aldığı iki not söz konusu olacak. Direkt ikinci vizeye telafi sınavının ortalaması söz konusu olacak. [öğrenci]'ın tespiti doğrudur. Ondan sonucuma telafi sınavında sorulan ikinci vize gibi mi olacak?
+
+740
+03:15:54,835 --> 03:16:19,275
+Ondan tam emin değilim. Yani birinci vize gibi iki tasa, iki solunluk da olabilir. Veya bu ikinci vize tarzında da olabilir. Onu şu an emin diyelim. Ona bakacağım. Çok yardımcı olamadım bu sorunun. İkinci parça üzerinden ama dediğim gibi. Henüz şu an karar verebilmiş değilim. Yoğun zamanlar onda kesin kararımı vermedim.
+
+741
+03:16:26,548 --> 03:16:34,908
+Peki, başka soru varsa konuşalım. Değerlendirmeye çalışalım.
+
+742
+03:16:39,476 --> 03:16:41,195
+Barda notunu alayım.
+
+743
+03:16:47,283 --> 03:17:00,384
+Hocam, ben bir soru sordum ama biraz erken mi sordum bilmiyorum. Final sınavıyla ilgili refaktör konusundan sorumlu olacağımızı söylemiştiniz. Ne gibi sorular olabilir? Onunla ilgili bilgi verirseniz çok sevinirim. Teşekkür ederim.
+
+744
+03:17:00,384 --> 03:17:12,584
+Tamam, çok iyi sordunuz. İyi hatırlattınız. Şimdi olay şöyle bir şey olacak. Ben size nasıl ki şu kodu var ya, custom kodu var.
+
+745
+03:17:15,283 --> 03:17:30,283
+Sınıfın kodunu peş peşe listeleyeceğim. Ama tabii ki bu kod mümkünse bir A4 kağıdın bir yüzüne sığacak uzunlukta bir kod olacak. Belki puntoyu 8 punto falan yapabilirim belki ama...
+
+746
+03:17:31,956 --> 03:17:56,155
+Yani 12 puntu, 14 puntu olmayacak kod. 10 ya da belki en az 8'e düşerim. Yani yaklaşık işte bir A4 belki birazcık arkasına da taşabilecek uzun bir kod olacak burada. Ve o uzun kod içerisinde, bir kere adı üstünde uzun kod genelde tek bir sınıf olabilir veyahut da belki iki sınıfla falan da olabilir.
+
+747
+03:17:59,956 --> 03:18:06,835
+Bir dolu kod simer içeren bir kaynak kodu vereceğim size.
+
+748
+03:18:06,835 --> 03:18:16,435
+Ve diyeceğim ki bu kod içerisinde geçen kod kusurlarını orijinal adlarıyla belirtiniz.
+
+749
+03:18:16,815 --> 03:18:20,376
+Hangi kod kusuru, nerede geçiyor bunu işaretleyiniz.
+
+750
+03:18:20,855 --> 03:18:27,415
+Ve bu kod kusurlarını düzeltmek için hangi refactoring eylemleri yürültürür bunları yazınız.
+
+751
+03:18:27,871 --> 03:18:46,691
+Son olarak, böyle bu şekilde adım adım yürümek mümkün değil sınavda. Bu yazmış olduğunuz bütün refactoring eylemlerinin hepsini gerçekleştirdikten sonra sistemin içinde bulunacağı halde yürürürler sınıf şamasıyla çiziniz. Şekil bir soru olacak.
+
+752
+03:18:46,691 --> 03:18:55,072
+Burada şeyleri belirtirken, nerede hangi kod kusurunun olduğunu ve çözümünü belirtirken sınav kağıdını kullanabilirsiniz.
+
+753
+03:18:55,871 --> 03:19:09,871
+Sınav kağıdı olarak düşünün. Sınav kağıdının üstüne geçen kod olarak düşünün. Ben şimdi kalemimi aldım. Mesela diyeceksiniz ki, kalemimi aldım şu an. Şu statement metoduna geleyim mesela. Diyeceğim ki, mesela...
+
+754
+03:19:10,708 --> 03:19:30,108
+Kağıdın üstünü işaretleyebileceksiniz. Şu şekilde Steader Method'unu işaretlersiniz. İsterseniz bunun yanına numara bir long method, refactoring extract method diyeceksiniz.
+
+755
+03:19:31,219 --> 03:19:51,299
+Ondan sonra çöme. Veya bunu isterseniz sadece buraya numara bir yazın. Sonra kağıdın arkasına veya cevap kağıdına numara bir long metot, çözümü extract metot ve decomposed conditional mesela diye yazacaksınız yanına.
+
+756
+03:19:51,299 --> 03:19:59,059
+Bütün bunları işaret ettikten sonra en son olması gereken hali işte biz diyelim ki neye karar verdik?
+
+757
+03:19:59,219 --> 03:20:12,199
+Şuna karar verdik, diyelim ki şu haline karar verdik. Bu çemeyi metotlarıyla birlikte düzgün bir biçimde çizerek göstereceksiniz. Bu şekilde olacak sınav.
+
+758
+03:20:14,992 --> 03:20:21,551
+Bir dolu kusur içeren kodun içerisinde ben önceden hangi kod kusurlarının olduğunu belirlemiş olacağım.
+
+759
+03:20:21,672 --> 03:20:28,912
+Kenara sayısını yazmış olacağım bunun. Siz bunların ne kadarını doğru bulabilirsiniz, o kadar çok puan alacaksınız.
+
+760
+03:20:28,912 --> 03:20:36,271
+Ama tabii ki doğru kod kusuru için doğru refactoring eylemini de yazmış olmanız gerekmekte.
+
+761
+03:20:36,931 --> 03:20:41,912
+Bütün bunların hepsini orijinal İngilizce adlarıyla yazmış olmanız gerekmekte.
+
+762
+03:20:42,992 --> 03:21:10,412
+Ya ben ya sınav gözetmeni asistan hocamıza Codesmart isimlerini ve refactoring eylemlerini yazdıracağım. İki ston şeklinde. Ama tabii ki burada şu Codesmart için şu refactoring eylemi olacak diye bir ok çizme veya aynı hizayı, aynı sıra yazmak gibi bir şey söz konusu olmayacak. Sadece isteyeceğim herkisini de iki ston şeklinde. Siz oradan isimleri hatırlayabileceksiniz.
+
+763
+03:21:10,992 --> 03:21:20,871
+Ama tabii ki hangi kod simenin hangi refaktörlük eylemi tarafından çözüleceğine ancak o refaktörlük eyleminin adından ve yaptığı işten hatırlayabileceksiniz.
+
+764
+03:21:20,971 --> 03:21:27,291
+Kod küsuruyla ilişkilendirebileceksiniz. Zaten ders ve kazanmanız gereken şey de bu. Böyle tamam olacak.
+
+765
+03:21:29,711 --> 03:21:33,691
+Bilmiyorum yeterli oldu mu? Ya da kafanıza takılan başka bir yandan da söyleyin.
+
+766
+03:21:34,051 --> 03:21:36,412
+Benim için yeterli oldu. Teşekkür ederim hocam.
+
+767
+03:21:37,907 --> 03:21:45,847
+Bir şey değil. Başka arkadaşımdan da varsa buyurun. Hocam peki şu asıl şöyle yapabilir miyiz? Şu ne diyor diyeceğiniz varsa burada konuşalım.
+
+768
+03:21:54,772 --> 03:21:56,612
+Peki o zaman bu kadar.
+
+769
+03:21:57,332 --> 03:22:22,051
+Haftaya sadece tasarım kalıpları üzerinden olacak. Üçüncü vize. Daha sonra final haftasında az önce bahsettiğim üzere sadece şekilde yapacağınız sadece kod sınavı ve refactoring üzerinden olacak. Final sınavı olacak. Bütünleme sınavı da finalin yerine geçeceğinden sadece refactoring içerikli olacak. Aynı final sınavı gibi olacak.
+
+770
+03:22:25,332 --> 03:22:43,152
+Kul tarımı. Eğer bu düşük not vizeden kaynaklanıyorsa onun telafisi ancak üçüncü yüzeye girmekle yapılabilecek bir şey. Üç yüzeye de girdi. Bütün notlar düşük. Finalden yüz bile alınsa bu sizi not ortalamamızı C, B'ye veyahut da işte.
+
+771
+03:22:43,796 --> 03:23:00,775
+C, C, B, B. C, B veya B, B'ye taşımayan yetmiyorsa, bütün ömede de yüz almanız yine değiştirmeyecek. O yüzden vize notlarında düşük olan arkadaşlar mutlaka bu üçüncü telafi vizesine girsinler.
+
+772
+03:23:03,416 --> 03:23:08,435
+Evet, peki. O zaman artık bu kadar arkadaşlar.
+
+773
+03:23:09,108 --> 03:23:13,388
+Hepinize başarılar dilerim. Görüşmek üzere. Sağolun kalın. Sağolun kalın.
