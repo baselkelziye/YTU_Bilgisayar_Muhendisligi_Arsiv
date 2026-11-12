@@ -1,0 +1,2631 @@
+1
+00:00:07,091 --> 00:00:08,352
+Sesim geliyor mu arkadaşlar?
+
+2
+00:00:28,916 --> 00:00:31,816
+Sesim geliyor mu?
+
+3
+00:00:34,816 --> 00:00:36,195
+Geliyor hocam.
+
+4
+00:00:37,195 --> 00:00:38,316
+Teşekkürler [öğrenci].
+
+5
+00:00:48,212 --> 00:00:49,652
+Birazdan başlıyoruz arkadaşlar.
+
+6
+00:05:59,891 --> 00:06:02,372
+Evet arkadaşlar, herkese günaydın. Nasılsınız?
+
+7
+00:06:09,812 --> 00:06:10,651
+Günaydın hocam.
+
+8
+00:06:16,947 --> 00:06:25,007
+Bu hafta ne yapacakmışız? Bugün 8. Nisan. Lokal arama algotmaları gözükmüşüz. Önceki hafta genetik algotmalar var.
+
+9
+00:06:30,803 --> 00:06:32,803
+Ödeviniz geliyor haftaya.
+
+10
+00:06:47,572 --> 00:06:59,831
+Peki. Şimdi arkadaşlar, bugüne kadar iki tür arama ayırtması gördük. Neydi onlar?
+
+11
+00:07:11,028 --> 00:07:18,628
+Nereye gördük arkadaşlar? Bir kör aramayı gördük. Bir de sezgisel arama değil mi?
+
+12
+00:07:32,180 --> 00:07:55,100
+Bizim neler bilmemiz gerekiyordu ve bir de bunlar en sonunda neler buluyordu, neyi buluyorlardı onu tekrardan bir düşünelim. Bir problemimiz var. Bu probleme kör ya da seyirci arama algoritmanı uygulayabilmek için neler lazım? İlk önce kördeden başlayalım. Kör arama için neler gerekiyor? Daha doğrusu ortak kısımdan başlayalım. İkisinde de bilmemiz gereken şeyler neler var?
+
+13
+00:07:57,204 --> 00:08:19,104
+Bir şey, şart zaten. Durumları nasıl temsil edeceğimizi bir kararlaştırmamız gerekiyor. Bu tamamen hepsinde zaten ortak olacağı için, şimdi onu yazmayalım. Durumları, temsil yöntemini belirlemiş olmamız gerekiyor. Peki, ondan sonra neler lazım bize? Bir algoritmayı çalıştırmak için. Neleri bilmemiz lazım?
+
+14
+00:08:22,104 --> 00:08:23,324
+Evet, soru sordum.
+
+15
+00:08:33,011 --> 00:08:43,931
+Neyi bilmemiz gerekiyor arkadaşlar? Bir tanesini yazayım. Başlangıç durumunu bilmeniz lazım değil mi? Başka?
+
+16
+00:08:48,851 --> 00:08:49,951
+Başka bir ilgimiz lazım.
+
+17
+00:08:53,620 --> 00:08:57,579
+Birbirine bağlı nodların arasındaki kostları bilmemiz gerekiyor.
+
+18
+00:08:58,620 --> 00:09:09,240
+Bir kere kimin kime bağlı olduğunu, kimin kime bağlı olduğu derken hani geçişler, durumlar arası değil mi? Durumlar arası, geçişleri bilmemiz lazım. Başka?
+
+19
+00:09:10,819 --> 00:09:12,079
+Bir de onların arasındaki kostları.
+
+20
+00:09:12,079 --> 00:09:16,379
+Geçişlerin maliyetlerini bilmemiz lazım. Geçişlerin maliyetleri. Evet, başka?
+
+21
+00:09:25,812 --> 00:09:26,652
+Başka var mı?
+
+22
+00:09:32,115 --> 00:09:35,556
+Ulaşılmak istenen durum, son durumu bilinmesi gerekiyor.
+
+23
+00:09:35,816 --> 00:09:36,775
+Değil mi? Değil mi?
+
+24
+00:09:41,172 --> 00:09:42,312
+Başka bir şey lazım mı?
+
+25
+00:09:47,124 --> 00:10:01,804
+Şimdi aslında şöyle yapalım. Şurayı kopyalayalım. Şuraya sezgisel diyelim. Şuraya da kör diyelim. Tamam.
+
+26
+00:10:03,064 --> 00:10:07,423
+Şimdi sezgiselde fazladan bir şey diye ihtiyacımız var mıydı?
+
+27
+00:10:11,316 --> 00:10:15,916
+Durumların kuş uçuşu mesafelerinin bilinmesi lazım.
+
+28
+00:10:16,696 --> 00:10:19,475
+Kuş uçuşu mesafe demeyelim ona, genel olarak düşünelim.
+
+29
+00:10:26,067 --> 00:10:38,048
+Durumların hedefe olan uzaklıklarını bilmemiz gerekiyor mu?
+
+30
+00:10:43,604 --> 00:11:03,144
+Uzaklıklarının tahmin fonksiyon olmalı. Bir durumun hedefi olan uzaklığını bilemeyiz demiştik zaten. Ancak tahmin edebiliriz. Zaten biliyor olsak çözmüş olalım. Çözmüş olmamız gerek.
+
+31
+00:11:04,596 --> 00:11:21,316
+Dolayısıyla durumlarına hedef olan uzaklığı tahmin eden fonksiyonlara ihtiyacımız var. Şimdi kör arama ve serisi arama algoritmalarının istedikleri şeyler bunlardı. Peki, her ikisinin de çıkışı neydi? Pardon. Her ikisi de neyi buluyordu bize?
+
+32
+00:11:27,187 --> 00:11:31,788
+Çıkış.
+
+33
+00:11:34,107 --> 00:11:37,827
+Evet, neyi bize söylerler? Neyi bulurlar?
+
+34
+00:11:45,620 --> 00:11:48,980
+Ve tarmacı, örgütler bize altlık olarak ne verirler arkadaşlar?
+
+35
+00:11:51,400 --> 00:11:55,019
+Başlangıç durumundan bitiş durumuna gitmek için gereken yolu.
+
+36
+00:11:55,579 --> 00:11:56,960
+Giden yolu verirler değil mi?
+
+37
+00:11:57,019 --> 00:11:57,240
+Evet.
+
+38
+00:12:12,019 --> 00:12:21,599
+Sonuçta burada ikisinin de ortak olan kısmı çıkış açısından düşünürsek, başlangıç içerisindeki yol ve maliyetini bize dönüş yaparlar.
+
+39
+00:12:22,899 --> 00:12:33,000
+Şimdi bugün işleyeceğimiz arama algoritmaları ise kör ve serisi aramadan çok temel bir şekilde ayrılıyor.
+
+40
+00:12:34,259 --> 00:12:37,480
+Şöyle bir şey, buna da lokal arama diyeceğiz.
+
+41
+00:12:41,652 --> 00:12:44,872
+O kadar ama algoritmalarında bir başlangıç durumu lazım.
+
+42
+00:12:48,692 --> 00:12:59,192
+Durum arası geçişler ve geçişlerin maliyetlerini biliyor olmamız lazım. Durumdan helal olsak da biliyor olmamız lazım. Bunlar yine bize lazımlar.
+
+43
+00:12:59,192 --> 00:13:14,192
+Fakat, burada ne yazmadım? Fark ettiniz mi? Ne yok burada?
+
+44
+00:13:15,443 --> 00:13:18,364
+Bitiş durumu yok. Bitiş durumu yok işte.
+
+45
+00:13:22,484 --> 00:13:23,203
+Bakma gönlüm.
+
+46
+00:13:25,604 --> 00:13:26,304
+Çıkışı.
+
+47
+00:13:30,676 --> 00:13:31,256
+İşte bu.
+
+48
+00:13:33,256 --> 00:13:33,816
+Evet.
+
+49
+00:13:40,179 --> 00:13:44,659
+Şimdi bunların çıkışı gördüğünüz gibi.
+
+50
+00:13:51,539 --> 00:13:57,000
+Aradaki farkı görüyor musunuz? Bir tanesi başlangıç evliliği arasındaki yolu söylüyor, bir tanesi ise sadece bir kişi söylüyor.
+
+51
+00:13:58,940 --> 00:14:05,099
+Burada aslında problemler şu şekilde bize veriliyor lokal arama algoritmalarında.
+
+52
+00:14:06,759 --> 00:14:16,720
+Bir başlangıç durumu bize söylenebilir ya da başlanabilecek yerlere dair bir kriter verilebilir ya da biz tasarlayabiliriz bu kritere göre.
+
+53
+00:14:17,748 --> 00:14:35,008
+Bize hedefe dair belli özellikler söylerler. Yani aslında bir durumun hedefi uzaklığını tahmin etmek için bir dizi, kural söylerler, bir fonksiyon söylerler. Fakat hedefin ne olduğunu bize söylemezler.
+
+54
+00:14:42,000 --> 00:14:45,759
+En uygun olan bir hedefe erişmeye çalışmak.
+
+55
+00:14:46,720 --> 00:14:46,980
+Tamam.
+
+56
+00:14:47,720 --> 00:14:50,359
+Yani biz burada kullanıcı bizden şey falan istemiyor.
+
+57
+00:14:50,539 --> 00:14:53,500
+Buyuruya başlangıçtan itibaren nasıl geldim falan onu istemiyor.
+
+58
+00:14:53,619 --> 00:15:00,359
+Kullanıcı bize diyor ki, bana öyle bir durum söyle ki o durum şu şu şu özellikleri sağlasın.
+
+59
+00:15:01,099 --> 00:15:01,259
+Tamam.
+
+60
+00:15:02,480 --> 00:15:03,159
+Kendisi de bilmiyor.
+
+61
+00:15:03,980 --> 00:15:06,099
+Kendisi biliyorsa zaten problem olmaz.
+
+62
+00:15:06,868 --> 00:15:18,668
+Kendisi de bilmiyor. Algoritmadan istediğimiz şey bu. Belli özelliklere sahip, belli kısıtlara sahip bir durumu, ki onu bitiş durumu bir, onu bulmak istiyoruz.
+
+63
+00:15:20,668 --> 00:15:33,668
+Şimdi burada, şuraya bakalım. Birçok optimizasyon probleminde hedefe giden yol, uygulanan hareketler önemsizdir. Hedef durumun kendisi zaten istenen çözümdür.
+
+64
+00:15:34,676 --> 00:15:41,976
+Amaç, arama uzayında istenen kısıtlara, özelliklere sahip ya da işte fayda fonksiyonunu aksımımı yapan durumu bulmaktır.
+
+65
+00:15:42,656 --> 00:15:44,016
+Şimdi burada bir örneğimiz var.
+
+66
+00:15:44,816 --> 00:15:48,855
+N vezir diye ifade edilmiş. Buradaki N yerine farklı sayılar koyabilirsiniz.
+
+67
+00:15:49,476 --> 00:15:50,836
+Mesela 4 vezir diyelim ki.
+
+68
+00:15:52,296 --> 00:15:57,036
+Problem şu, bir satranç tahtasında, 8 vezir diyelim.
+
+69
+00:15:57,496 --> 00:16:00,516
+8'lik olduğu için satranç tahtasında klasik hali.
+
+70
+00:16:01,364 --> 00:16:09,744
+Bir satranç tahtasına sekiz tane veziri öyle bir yerleştirin ki hiçbir vezir diğer vezirleri tehdit etmesin.
+
+71
+00:16:10,963 --> 00:16:20,284
+Tamam. Şimdi bakın burada şey yok. Bir başlangıç söylenmiyor bize. Hedefin kendisi söylenmiyor. Zaten hedefin kendisini bulmamızı isteniyor.
+
+72
+00:16:20,851 --> 00:16:34,552
+Ve biz diyoruz ki kullanıcı, işte en sonda yani Lokal Arman'ın en sonda altı olarak diyeceğiz ki, işte buyur, bu senin söylediğin, demin söylediğin özelliğe, yani hiçbir vezirin ikilisinin birbirini tehdit etmediği bir tahtadır.
+
+73
+00:16:36,340 --> 00:16:56,759
+Ve buraya ben şu yolu bularak geldim falan diye bir şey de yok. Hani onunla da ilgilenmiyor zaten kullanıcı. Kullanıcının istediği şey sadece ve sadece bitiş durumu. Yani o bitiş durumunun belli özelliklerini biliyor ve bizden o durumu bulmamızı istiyor. Bu durumlarda arkadaşlar lokal arama algoritmaları kullanılıyor. Peki algoritmaları nasıl?
+
+74
+00:16:58,292 --> 00:17:22,152
+Çok basit bir algoritmalar var. Hafızada sadece mevcut durumu tutup onu düzeltmeye çalışıyor. Yani bir durumdan gidilebilecek durumların yine kuralları elimizde var. Geçişler nasıl yapılabiliyor onları biliyoruz. Bir durumdan gidilebilecek durumlara bakacağız. O durumlardan bir tanesini seçeceğiz ya da diyeceğiz ki biz tamam en iyi yerdeyiz.
+
+75
+00:17:26,355 --> 00:17:38,976
+Bir başlangıçtan başlayıp onu adım adım iyileştirme süreci var aslında. Output olarak sürece dair herhangi bir şey söylememize gerek yok. Söyleyebiliriz tabii ki de. Ama söylememize gerek yok zaten.
+
+76
+00:17:39,392 --> 00:17:56,972
+Ve bu özelliği dolayısıyla, yani algoritmanın bu kadar basit olması dolayısıyla çok az hafıza gereksinim var. Yani hafızada sadece aslında mevcut durumdan gidilebilecek durumları belki tutarsınız ki onu da zaten sileceksiniz. Yani onlara hiçbir ihtiyacınız zaten olmayacak. Bu kadar basit bir yapısı var.
+
+77
+00:18:06,451 --> 00:18:33,152
+Hiçbir satır ve diyagonalde birden fazla vezir olmamalı. İstenen şey bu. O zaman rastgele bir başlangıçla başlayalım. Başlangıcımızın da kuralı şöyle bir şey olsun. Her bir sütuna rastgele bir yere vezir koyalım. Yani birinci sütunda mesela rastgele bu dördünden bir tanesi mesela buraya koymuşuz. Rastgele buraya gelmiş, rastgele buraya gelmiş, rastgele buraya gelmiş. Mesela şu duruma geldik.
+
+78
+00:18:34,836 --> 00:18:59,355
+Burada tabii bize bir de ne lazım? Geçiş kuralı lazım. Yani ben bu durumdan yeni durumları nasıl üreteceğim? Ve onların içerisinden en iyisini nasıl seçeceğim? Bunun için de şöyle bir şey düşünelim. Bir vezir kendi sütununda istediği yere hareket edebilsin. Mesela her bir adımda sadece tek bir tane veziri hareket ettirelim. Her bir adımda tek bir vezir hareket etsin.
+
+79
+00:19:03,059 --> 00:19:12,299
+Ki istediği yere gidebiliyor. Tamam. Şimdi mesela böyle bir geçiş kuralı için şu durumdan kaç tane yeni durum çıkar arkadaşlar? Şurada gördüğünüz durumdan.
+
+80
+00:19:20,403 --> 00:19:21,144
+Dört tane.
+
+81
+00:19:22,784 --> 00:19:24,563
+Yok. Değil.
+
+82
+00:19:25,943 --> 00:19:31,304
+Şimdi en baştaki birinci sütun için düşünelim. Birinci sütundaki vezir için kaç tane olası bir durum var?
+
+83
+00:19:32,683 --> 00:19:32,824
+Yeni.
+
+84
+00:19:32,824 --> 00:19:33,304
+Üç tane.
+
+85
+00:19:33,543 --> 00:19:35,163
+Üç tane. İkincisi için?
+
+86
+00:19:36,063 --> 00:19:36,463
+Üç.
+
+87
+00:19:37,044 --> 00:20:02,344
+3, 4 yani bu durumdan kaç tane durum çıkacak? Toplam 12 tane. 12 tane. Bu durumdan 12 tane durum çıkacak. Şimdi bu 12 tane durumun içerisinden biz bir tanesini seçeceğiz. Ki burada seçmişiz, buraya gelmişiz. Mesela bunu buraya getirmiş. Şimdi ne yapacağız peki? Bu durumdan ne yapacağız? Yine aynı şey. Bu durumdan giderecek kaç tane durum var şu anda?
+
+88
+00:20:04,980 --> 00:20:05,759
+Yine 12.
+
+89
+00:20:06,000 --> 00:20:22,000
+Yine 12. O 12 tanesini üreteceğiz. 12 tanesinin iyiliğini ölçeceğiz bir şekilde. O iyiliğin içerisinden en iyisini seçeceğiz. Ve mesela buraya geleceğiz. Ve bu şekilde süreç devam edecek. Ne zamana kadar devam edecek? Artık iyileşme sağlayamayıncaya kadar.
+
+90
+00:20:22,000 --> 00:20:30,220
+Bu durumda kullanılan temel algoritma arkadaşlar ismi tepe tırmanma algoritması.
+
+91
+00:20:31,059 --> 00:20:39,059
+Tepe tırmanma algoritmasını çok kabaca şöyle aslında çizebiliriz.
+
+92
+00:20:39,059 --> 00:20:44,059
+Mesela diyelim ki...
+
+93
+00:20:49,556 --> 00:21:07,076
+Şöyle bir tepemiz var, iki boyutlu. Ve biz bir yerden başlıyoruz. Ben şuradayım. Şurası ve şurasının da ne olduğunu ifade edelim.
+
+94
+00:21:14,259 --> 00:21:16,319
+Durum. Durumlar.
+
+95
+00:21:20,339 --> 00:21:24,940
+Peki, yani x eksenimiz durumu gösteriyor. Y eksenimiz neyi gösteriyor olacaktı sizce?
+
+96
+00:21:26,099 --> 00:21:26,799
+Tahmini olan.
+
+97
+00:21:30,355 --> 00:21:32,355
+Y ekseni neyi gösteriyor olabilir?
+
+98
+00:21:37,203 --> 00:21:39,203
+Daha önceden bildiğimiz bir şey aslında.
+
+99
+00:21:42,403 --> 00:21:43,403
+Fonksiyon.
+
+100
+00:21:44,703 --> 00:21:46,203
+Ne fonksiyon olabilir?
+
+101
+00:21:52,147 --> 00:21:54,147
+Aç neydi?
+
+102
+00:21:59,635 --> 00:22:01,115
+H'ı hatırlıyor musunuz? Neydi H?
+
+103
+00:22:01,735 --> 00:22:02,695
+Derinlik değil miydi?
+
+104
+00:22:04,875 --> 00:22:09,775
+Yok, değil. Hani Fn eşittir, Gn artı Hn diye bir şey vardı.
+
+105
+00:22:16,627 --> 00:22:27,387
+Nottan hedefe olan uzaklığı mı? Olan uzaklığı değil, kesinlikle yanlış.
+
+106
+00:22:32,243 --> 00:22:34,263
+Bir noktanın hedeflerden uzaklığını bilebilir miyiz?
+
+107
+00:22:41,044 --> 00:22:43,284
+Bilemeyiz. Anca neyini biliriz?
+
+108
+00:22:46,084 --> 00:22:51,864
+Bu rotayı takip ederek gidebileceğimiz uzaklık artı kuş uçuşu uzaklık değil miydi?
+
+109
+00:22:52,104 --> 00:22:53,284
+Rota falan yok burada.
+
+110
+00:22:55,423 --> 00:22:58,423
+Bir durum var. O duruma dair bir haç değeri var.
+
+111
+00:23:02,132 --> 00:23:13,331
+Evet. Arkadaşlar, H neydi? Şimdi ne olduğunu hatırlamıyor musunuz? Fn eşittir, Gehenat, Hn'deki Hn neydi?
+
+112
+00:23:19,796 --> 00:23:21,396
+Değerlendirme fonksiyonu olacak.
+
+113
+00:23:22,476 --> 00:23:23,556
+Evet, neydi o?
+
+114
+00:23:32,819 --> 00:23:36,799
+Çetten yazmayın arkadaşlar. Söyleyin lütfen. Çete bakamıyorum.
+
+115
+00:23:38,839 --> 00:23:39,619
+Evet.
+
+116
+00:23:50,355 --> 00:23:52,996
+Hedefe olan uzaklığın neyi arkadaşlar?
+
+117
+00:23:55,115 --> 00:23:57,735
+Baskınlık olabilir mi?
+
+118
+00:23:59,516 --> 00:24:03,615
+Hedefe olan uzaklığın tahmini arkadaşlar, tahmini.
+
+119
+00:24:04,996 --> 00:24:07,375
+Değil mi? Uzaklığın kendisini bilemiyoruz.
+
+120
+00:24:08,295 --> 00:24:09,016
+Neyi biliyoruz?
+
+121
+00:24:10,016 --> 00:24:11,455
+Tahmini biliyoruz, tamam mı?
+
+122
+00:24:13,036 --> 00:24:13,315
+Peki.
+
+123
+00:24:15,059 --> 00:24:24,740
+Şimdi devam edelim. Diyelim ki biz bir durumdayız ve iki boyutlu bir uzayda, iki boyutlu bir dağda olduğumuzu düşünelim.
+
+124
+00:24:25,659 --> 00:24:31,240
+Ve bizi bir yere bırakıyorlar. Öyle söyleyeyim. Bizi bir yere bırakıyorlar. Dağın eteklerinden bir tanesini bırakıyorlar.
+
+125
+00:24:31,980 --> 00:24:40,659
+Algoritma adı üstünde tepe tırmanma algoritması. Bizim istenen şey şu, senin bulunduğun yerdeki tepeye çık.
+
+126
+00:24:42,708 --> 00:25:00,728
+Bu durumda yapabileceğimiz, mesela bu durumu hareket ettirebileceğimiz iki tane yön olsun. Sağa ve sol diye. Sağa gitmek ya da sola gitmek. Adımlarımız da zaten belli, büyüklükte adımlar olabilir. Bu durumda bizim yapabileceğimiz aslında iki tane durum var. Geçebileceğimiz mevcut durumdan farklı olarak.
+
+127
+00:25:09,332 --> 00:25:23,992
+Bir tanesi buraya gidebiliriz, bir tanesi de buraya gidebiliriz. Başka yapabileceğimiz üç yahu var mı? Sağda sola gidebiliriz değil mi? Bu durumdan kaç tane durum çıkıyor demek bu? İki tane durum çıkıyor. Peki bunlardan hangisini seçersiniz?
+
+128
+00:25:30,099 --> 00:25:52,235
+Bu da bu
+
+129
+00:25:54,708 --> 00:26:12,448
+Yani şöyle söyleyeyim, tepe tırmanmayı, çukur inme problemine dönüştürmek çok çok zor bir şey değil aslında düşünürseniz. Yani haşı bir böyle hale getirirseniz mesela örnek vererek her türlü minimizasyonu maksimizasyona dönüştürmeniz mümkün bu açıdan düşündüğünüzde.
+
+130
+00:26:13,076 --> 00:26:24,576
+Dolayısıyla arkadaşınız doğru söyledi. Uzaklık değil de burada haç yakınlık diye bunu düzeltmek, yakınlığın tahmini diye düzeltmek daha doğru olacaktır. Hatta onu yazalım.
+
+131
+00:26:29,299 --> 00:26:31,299
+Tamam.
+
+132
+00:26:42,036 --> 00:26:45,356
+Şimdi devam edelim. Evet, şimdi bu ikisinden hangisini seçecek?
+
+133
+00:26:47,936 --> 00:26:49,456
+Sağdakini, yukarı çıkanı.
+
+134
+00:26:49,616 --> 00:26:52,216
+Sağdakini seçecektim, onu seçti. Şimdi ne yapacak peki?
+
+135
+00:26:57,364 --> 00:27:24,744
+Oraya ilerledi. Yani şuraya geldi. Yeni bir tahmin yapması lazım. Yeni bir tahmin. Gidebileceği yine noktaları belirleyecek. Hangileri gidebileceği? İki tane yer var değil mi? Yine sağa da sola gidebilir. Sonra onların içerisinden bir tanesini seçecek.
+
+136
+00:27:25,556 --> 00:27:27,336
+Sonuçta bu nasıl ilerleyecek arkadaşlar?
+
+137
+00:27:34,579 --> 00:27:39,960
+Haş azalana kadar bu işlemi yapmaya devam edecek olabilir mi hocam?
+
+138
+00:27:40,920 --> 00:27:49,100
+Olabilir. Yani adım adım adım değil mi? Şöyle şöyle girecek değil mi bu? Bu da tepeye doğru tırmanacak. Çünkü burada her seferinde kendisini iyileştiren bir durum var.
+
+139
+00:27:49,100 --> 00:27:57,480
+Tabi ki öyle bir yere gelecek ki, şurası olsun mesela orası, o durumda yapacağı hiçbir hareket onu daha da iyileştiremiyor.
+
+140
+00:27:58,195 --> 00:28:09,756
+Yani bu tarafa gitse mesela aynı kalıyor. Bu tarafa gitse düşüyor. Mesela böyle düşünelim. Değil mi? Şurada. Dolayısıyla öyle bir noktaya geldi ki artık ne diyebilir bu? Ben ne yaptım?
+
+141
+00:28:13,748 --> 00:28:15,748
+Buldum. Bu hedefini bulmuştum.
+
+142
+00:28:15,748 --> 00:28:31,768
+Buldum değil mi? Hedefimize bu en yakın olan, hedefe tahmini olarak en yakın olan duruma erişmiş olduğunu söyleyecektir. Yani burada aslında biz şöyle bir şey yaptık. Değil mi? Ama çizmeye kalkarsak.
+
+143
+00:28:33,332 --> 00:28:48,332
+Şöyle bir başlangıç noktasından başladık. Şöyle bir yerden başladık. Ve buradan şu tarafa doğru ilerledik. Ve burada da durduk. Peki şöyle diyeyim. Şuradan başlasaydım.
+
+144
+00:28:59,731 --> 00:29:04,672
+Mesela bu noktadan başlasaydım ben. Ne olurdu?
+
+145
+00:29:08,756 --> 00:29:09,996
+Sola gidecekti bu zaman.
+
+146
+00:29:10,615 --> 00:29:25,296
+Bu sefer sola doğru gidecekti değil mi? Yani bu tarafa doğru ilerleyecekti. Yine burada da aynı yerde muhtemelen şurada bitecekti. Yani burada adım adım adım adım şöyle şöyle adım adım ilerleyecekti. Ve burada yine bitecekti işi.
+
+147
+00:29:26,516 --> 00:29:29,735
+Şimdi tepe tırmanma agotmasının mantığı bu.
+
+148
+00:29:30,259 --> 00:29:40,240
+Bir yerdesiniz ve o yere dair yüksekliğinizi ölçebilen bir fonksiyonunuz var ve en yüksek yere doğru gitmek istiyorsunuz.
+
+149
+00:29:40,280 --> 00:29:44,500
+Mesela bunu şey olarak düşünün. Everest'tan bir kenarında sizi bırakmışlar.
+
+150
+00:29:45,500 --> 00:29:50,440
+Ve elinizde de bir şey de var. Bulunduğunuz noktanın yüksekliğini ölçen bir cihaz da var.
+
+151
+00:29:51,440 --> 00:29:55,300
+Nasıl bir taktik izleyebilirsiniz? Bir yerde duruyorsunuz. Ne yapacaksınız?
+
+152
+00:30:01,044 --> 00:30:14,483
+Şimdi eğer ki, şunu söyleyelim aslında, Everest Dağı'nın tepesine tırmanmak, daha doğrusu Everest Dağı'nın yüksek olan tepesini bulmak.
+
+153
+00:30:14,483 --> 00:30:18,264
+Şimdi mesela Ardağ'ını düşünün. Ardağ'ın zirvesi belli mi arkadaşlar?
+
+154
+00:30:23,796 --> 00:30:45,136
+Belli bir tane zirve var. Böyle bir sürü zirve falan yok. Aşağıdan baktığınızda zirvenin nerede olduğunu zaten görebiliyorsunuz kabaca. Ve zirveye çıkmak istiyorsanız, eğer zirve sizin gözünüzün görebildiği bir yerdeyse oraya doğru ne yaparsanız ilerlersiniz. Zirvenin nerede olduğunu, ne tarafta olduğuna dair bir fikriniz var direkt.
+
+155
+00:30:45,715 --> 00:31:06,155
+Ama gerçekte de yukarıya doğru çıktıkça hava hakikaten ne olabiliyor? Oldukça soğuyabiliyor. Soğuması önemli değil, sisleniyor. Kar, fırtına vs. Dolayısıyla siz aslında bütün algılama alanınız bulunduğunuz yerin etrafıyla sınırlı sadece.
+
+156
+00:31:12,692 --> 00:31:27,192
+Elinizde bir tane şey var, alet var demiştik. Bu aletin yapabildiği şey size yüksek denizden seviyenizi gösteriyor olsun. Ne yapabilirsiniz? Nasıl bir yöntem izlersiniz dağın zirvesine çıkabilmek için? Böyle bir durumda.
+
+157
+00:31:29,152 --> 00:31:37,192
+Hava da sisli. Yani böyle bakayım şurada en yüksek zirve şurası. Ben oraya doğru gideyim.
+
+158
+00:31:37,652 --> 00:31:41,172
+Öyle bir şey deme şansınız yok. Göremiyorsunuz o kadar uzağa.
+
+159
+00:31:45,844 --> 00:31:49,124
+Ne yaparsınız zirveye ulaşmak için?
+
+160
+00:31:52,384 --> 00:31:54,384
+Etrafımızdaki en yüksek yere gideriz.
+
+161
+00:31:56,284 --> 00:32:06,664
+Etrafımıza bakarız. Etrafımıza bakmak yetmiyor. Bakarak ölçmek zor olabilir. Bir de alet var demiştim ya. O aletle ne yaparsınız? Mesela her tarafa birer adım atarsınız.
+
+162
+00:32:07,152 --> 00:32:33,252
+O adımların içerisinde, her bir attığınız adımda bir ölçüm yaparsınız. Ve o ölçümlerin içerisinden en yüksek olanı hangisi ise onu bulursunuz. O da eğer sizin bulunduğunuz yerden daha yüksek bir şeyse oraya gidersiniz. Değilse, yani sizin bulunduğunuz yer etrafınızdaki her şeyden yüksek ya da eşit ise ne yaparsınız artık algoritmayı durdurursunuz. Değil mi? Temel mantığı bu tepe tırmanma algoritması.
+
+163
+00:32:34,675 --> 00:32:35,395
+Şimdilik.
+
+164
+00:32:55,380 --> 00:33:07,319
+Ne diyor? Yoğun bir siste evvelestana tırmanmaya benzer. Sadece etkin durum bilgisini tutar. Ana düşünce her zaman şimdiki durumu en fazla geliştiren yönde adım at. Bu Best First Search'e benziyor aşıdan.
+
+165
+00:33:07,319 --> 00:33:11,319
+Tabii burada öğrenme algoritmalarında...
+
+166
+00:33:11,923 --> 00:33:24,443
+Yapay sinir ağları, onların derin hallerinin hepsinde temel olarak kullanılan algoritma arkadaşlar tepe tırmanma ya da yokuş inme algoritmalarıdır.
+
+167
+00:33:24,443 --> 00:33:34,484
+Bir şeyi maksimize etmek istiyorsanız tepe tırmanma, minimize etmek istiyorsanız bir fonksiyonu o zaman da yokuş inme şeklinde ne yapacaksınız?
+
+168
+00:33:34,584 --> 00:33:36,443
+Yokuş inme dediğimiz şey ne olacak?
+
+169
+00:33:39,188 --> 00:33:51,307
+Tahmin edebileceğiniz gibi bu sefer fonksiyonun en minimum olduğu yeri bulmaya çalışacaksınız. Bir yerden başlayacaksınız, oradan minimala doğru gitmeye çalışacaksınız. En derin yeri bulmaya çalışacaksınız.
+
+170
+00:33:52,647 --> 00:33:55,688
+Şimdi, peki, şöyle bir şey yapalım.
+
+171
+00:33:59,688 --> 00:34:01,587
+Aslında burada işe açabiliyor.
+
+172
+00:34:07,155 --> 00:34:27,716
+Diyelim ki biz şu noktadan başladık. Şu noktadan başladık. Varacağımız neresi olur arkadaşlar? Yukarıya doğru gidiyoruz. Tepe tırmanıyoruz. Nereye varırız?
+
+173
+00:34:30,963 --> 00:34:33,684
+Zirveye. Yani o orta noktadaki.
+
+174
+00:34:34,123 --> 00:34:39,724
+Buraya varız değil mi? Peki. Şuradan mı açılsam?
+
+175
+00:34:42,123 --> 00:34:43,844
+Yine aynı şekilde, aynı noktaya var.
+
+176
+00:34:43,844 --> 00:34:53,123
+Yine aynı yere var. Şimdi buraya vardım ben. Ve burada ne yapıyorum? Zirvedeyim diyorum. Peki. Gerçek bir durum.
+
+177
+00:34:57,460 --> 00:35:11,579
+Şöyle olsa, yani ben bir zirveye vardım. Tamam, yani o bulunduğum yer bir zirve. Bunda bir sıkıntı yok. Ama acaba en iyi zirve mi? En iyi yüksek zirve mi? Bunu bilebilir miyim?
+
+178
+00:35:18,835 --> 00:35:23,595
+Bu yöntemle biraz zor olur galiba hocam. Yani hepsini bir dolaşması lazım belki.
+
+179
+00:35:23,595 --> 00:35:27,315
+Her yeri gezmesi lazım ki en yükseğini bulabilsin değil mi?
+
+180
+00:35:27,635 --> 00:35:33,915
+Öyle bir şeye ihtiyacımız var. Ama arama algoritmalarını neden geliştiriyorduk biz?
+
+181
+00:35:35,515 --> 00:35:44,036
+Arama uzayı çok büyük. Bütün durumları ne yapamıyorduk? Gezemiyorduk. O yüzden arama algoritmalarını oluşturuyorduk değil mi?
+
+182
+00:35:44,659 --> 00:36:10,199
+Şimdi burada da her yeri gezmek çok pahalı. Onun yerine neler yapabiliriz diye düşünüyoruz aslında. Tepe tırmanma algoritması ne kullanabiliriz? Bu bir yaklaşım. Fakat bu tepe tırmanma algoritması bize global olarak maksimumu ya da global olarak minimumu ne yapmaz? Bulmayı garantilemez. Neden bunu garantilemez?
+
+183
+00:36:11,059 --> 00:36:20,619
+Çünkü şuradan başladığımda burayı bulur. Buradan başladığımda burayı bulur. Peki, güzel. Mesela şuradan başlasam nereyi bulur?
+
+184
+00:36:24,211 --> 00:36:26,211
+Orta'daki tepeyi bulur.
+
+185
+00:36:26,211 --> 00:36:33,211
+Ya da şuradan başlasam, bunlar da hep ortadaki tepeyi bulacak.
+
+186
+00:36:41,844 --> 00:36:52,244
+Bir de şurada var aslında bir tane daha AKP. Onda da mesela şuradan başlasam ya da şuradan başlasam.
+
+187
+00:36:57,748 --> 00:37:02,288
+Dolayısıyla nereye varacağım neye bağlı arkadaşlar?
+
+188
+00:37:09,652 --> 00:37:10,791
+Başlangıç noktasına.
+
+189
+00:37:11,351 --> 00:37:27,912
+Başlangıç noktasına bağlı, çok doğru. Başlangıç noktasını değiştirdiğiniz zaman varacağınız yerde ne olabilir? Değişebilir. Yani burası için düşünürsek, şuradaki örnek için düşünürsek, şu olası bütün hepsini şöyle bir şey düşünelim.
+
+190
+00:37:33,840 --> 00:37:38,800
+Başlangıçla başlarsak, biraz daha şöyle uzatabilirim hatta. Buraya varacağız değil mi?
+
+191
+00:37:39,579 --> 00:37:42,400
+Hatta onu kendi rengine çizsek daha iyi olmaz.
+
+192
+00:37:46,516 --> 00:37:51,516
+İlalatalım.
+
+193
+00:38:11,443 --> 00:38:38,844
+Yani eğer ben şu yeşil bölgenin içerisinde bir yerden başlarsam şu yeşil tepeye, şu pembe bölgenin içinde bir yerden başlarsam şu pembe tepeye, turuncu bölgenin içerisinden başlarsam da şuradaki turuncu tepeye çıkacağım. Ama algoritmlar hiçbir zaman neyi bilemeyecekler? Kendilerinin lokal bir maksimumda mı ya da global bir maksimumda mı olduklarını bilmeyecekler. Çünkü biz bir yerden başlıyoruz ve bir sonuca varıyoruz. O sonuçtan daha iyisi olup olmadığını bilmiyoruz.
+
+194
+00:38:39,188 --> 00:38:51,367
+Ancak şöyle bir şey olabilir. Ne zaman bilebiliriz? Diyelim ki 8 vezir problemi size verildi. 8 vezir problemini çözmeye başladınız. Bir noktadan, bir durumdan başladınız. İlerliyorsunuz.
+
+195
+00:39:06,228 --> 00:39:28,228
+Tehdit etmeyenleri maksimize edelim. En fazla 28 oluyor herhalde. Yanlış katılamıyorsam. Vezir çifti sayısı olarak düşünürsün. En başta diyelim ki 25 tane, pardon, çift olmak zorunda değil. 5 tane vezir birbirini tehdit etmiyor. Başlangıçta.
+
+196
+00:39:28,659 --> 00:39:48,500
+Siz buradan ilerlediniz. Artık 6 tane tehdit etmeyen durumu buldunuz. Oradan ilerlediniz 7, 8, 9 bu şekilde gidiyorsunuz. En fazla 28'e kadar çıkılabiliyor dedim. 26'ya geldiniz. 26'dasınız. Fakat hiçbir durum sizi daha da iyileştiremiyor. Daha yukarıya giremiyorsunuz.
+
+197
+00:39:54,416 --> 00:40:03,576
+Yani 28'e gitmenin mümkün olduğunu biliyorsanız, öyle söyleyeyim. O durumda neyden emin olabilirsiniz 26'da takıldığınızda?
+
+198
+00:40:07,956 --> 00:40:14,076
+26'ya gittiğinizde, yani sonuç olarak 26'yı verdiğinizde. Neden emin olabilirsiniz?
+
+199
+00:40:16,216 --> 00:40:17,376
+Yanlış olduğunuz.
+
+200
+00:40:19,076 --> 00:40:29,176
+Yanlış değil de aslında lokal bir yere takıldık değil mi? Lokal bir maksimuma takıldık. Bizim bulunduğumuz yerden daha iyisi var. Bunu biliyoruz. Bize söylenmiş bu.
+
+201
+00:40:29,876 --> 00:40:45,916
+Ama biz onu bulamadık. O durumda diyebilirsiniz ki ben evet lokale takıldım. Ama maksimum 28 olduğuna dair bir bilgi elinizde yok ise bu bilgi olmadan şeyden emin olamazsınız.
+
+202
+00:40:45,916 --> 00:40:52,636
+Yani hakikaten takıldım mı yoksa hakikaten de en yüksek nokta burası mı? Bundan emin olma şansınız yok değil mi?
+
+203
+00:40:58,675 --> 00:41:09,876
+Hocam, elimizde böyle bir grafik varsa, hani türev integral, türevden falan faydalanaraktan lokal minimum maksimumlar bulmuyorduk.
+
+204
+00:41:10,695 --> 00:41:15,295
+Geleceğiz onlara. Geleceğiz. Onların çok temel bir farkı var.
+
+205
+00:41:18,435 --> 00:41:21,576
+Öğrenmen, Gortman'ı popüler. Yaylada ve Sıralı Tepeler'de şaşabilir.
+
+206
+00:41:22,576 --> 00:41:25,416
+Sıralı Tepeler'i gördük aslında. Yaylada şaşması da şu.
+
+207
+00:41:26,003 --> 00:41:44,623
+Evet, onu da çok çizelim. Mesela şöyle bir durum düşünün. Mesela bu, şurası düz böyle gidiyor, tamam. Burada mesela şu noktadan başladığımızı bahsettim. Bu noktadan tık tık tık tık tık ilerleyelim. Öyle bir yere geleceğiz ki.
+
+208
+00:41:45,684 --> 00:42:10,744
+Burada artık algoritma olacak, duracak. Niye? Sol tarafında düşürüyor. Sağ tarafında ise aynen kendisiyle aynı değerli bir şey var. O zaman hiçbir durum, kendisinden çıkan hiçbir durum ne değil? Kendisinden daha iyi değil. Dolayısıyla algoritma burada duracak. Halbuki buradan devam etse, böyle dümdü gitse belki daha böyle ileriye gidecek ama hani bu tarafa doğru gittiğinde daha iyi gideceğine dair bir bilgi elinde olamaz zaten. Belki de gitmiyor. Değil mi? Yani şöyle de olabilir.
+
+209
+00:42:14,036 --> 00:42:14,695
+Pakt on.
+
+210
+00:42:20,659 --> 00:42:42,199
+Şöyle doğruyuz. Bilmiyorsunuz. Neden? Çünkü bulunduğunuz noktadan sadece belli bir bölgenin erişebiliyorsunuz. Görüş alanınız o kadar. Sonsuz görüş alanınız olsa zaten problem kalmaz ortada. Sonsuz görüş alanı dediğiniz şey olsa problem ortada kalmaz.
+
+211
+00:42:45,844 --> 00:42:56,283
+Dediğimiz gibi yayla dediğimiz şey düz yerler. Bu düz yerlerde de bu algoritma ne yapamayacaktır? Hangi bir tarafa doğru ilerleyemeyecektir, takılacaktır. Bunu da aklımızda tutalım.
+
+212
+00:43:01,523 --> 00:43:18,104
+İşte genelde olan şey ve nadiren olan şey anlıyorsunuz burada. Görüş anına açık böyle çok güzel falan. İşte şuraya doğru gideceğim. Yüksek olan yer burası falan. Birazcık güç güçü. Asıl gerçekte olan şey birazcık böyle.
+
+213
+00:43:18,771 --> 00:43:45,631
+O yüzden mesela hava koşulunun çok kötü olduğu sıralı tepelerde hangi zirvenin diğer zirveden daha yüksek olduğunu böyle gözler falan görmek zaten mümkün olmuyor. O yüzden işte Everest'in falan en tepe bilinen noktası herhalde 1950-60'larda falan keşfedilebiliyor ancak. O ana kadar bilinen bir tane başka tepe var. Ondan sonra başka bir tepenin ondan işte 100 metre falan daha yüksek olduğu bulunuyor.
+
+214
+00:43:46,771 --> 00:44:08,171
+Yani sanki böyle şeymiş gibi düşünüyor insan. Ya bu niye bu kadar geç kalın? Helikopterle git üstünde. Bak işte hangisi falan. Helikopter falan var mı? Var. Ama oralarda ne yapıyor mu helikopterler? Pek uçamıyorlar vesaire vesaire. Neyse. Fikri anladınız. Şimdi algoritmayı bir görelim. Algoritmanın çok basit olduğundan bahsetmiştik.
+
+215
+00:44:08,496 --> 00:44:33,315
+Hill Climbing algoritmasına bir problem veriyoruz ve o bize bir tane durum dönüyor ki o durum mutlaka ve mutlaka lokal bir maksimum. Mutlaka lokal maksimum ama bütün lokal maksimumlar lokal maksimumdur ama onlardan bir tanesi nasıldır arkadaşlar? Lokal maksimum demek şu demek, kendi dar alanında maksimum olan bir şey demek. Kendi dar alanında. Global maksimum demek ne demek?
+
+216
+00:44:36,884 --> 00:44:55,923
+Bütün durumlar. Yani aynen öyle. Global maksimum aynı zamanda bir lokal maksimumdur. Kendisi de. Ama aynı zamanda lokal global maksimumdur. Dolayısıyla bu algoritmamız her zaman bir lokal maksimum göner. Ama onun global maksimum olup olmadığını bilmeyiz. Yani temel olarak.
+
+217
+00:44:56,436 --> 00:45:06,556
+Bilemeyiz. Eğer ki bize söylemişse problemin şöyle bir hali çözümü var. O zaman evet ben lokale takılmışım diyebiliriz. Ama onu da bilmiyorsak mümkün değil.
+
+218
+00:45:07,756 --> 00:45:16,275
+Input problem. Local variables. Bir current'ımız var. Bir de neighbor'ımız var. Şimdi current'ı bir not yaptı. Sonra loop'tu. Bir loop'un içerisine dönüp duracak. Neymiş bakalım.
+
+219
+00:45:17,136 --> 00:45:22,756
+Neighbor diye bir değişken var. Ona neyi atıyor? A highest value successor of current.
+
+220
+00:45:23,411 --> 00:45:40,091
+Current'ın mevcut durumun bütün successor'larını hesaplıyor. Bütün successor'larını buluyor, onların değerlerini hesaplıyor. Değer dediğimiz şey onların haşları. Yani hedefe olan yakınlıkları.
+
+221
+00:45:45,652 --> 00:45:58,192
+Hedefe olan yakınlıklı değerlerinin içerisinden en yüksek değere sahip olana neighbor adını vermişiz. Yani successor'ların en iyisine neighbor demişiz. Sonra bir soru var.
+
+222
+00:46:08,563 --> 00:46:24,343
+Neyber, neyber artıramıyorsa zaten diğerleri hiçbir şekilde artıramaz. Mevcut durumu iyileştiremiyorsa yani current'ın değeri, neyber'ın değerinden daha büyük eşitse bu durumda return state current yani mevcut durumu artık dön diyoruz.
+
+223
+00:46:33,492 --> 00:46:50,912
+Neighbor'ı atıyoruz ve loop'un içerisine dönmeye devam ediyoruz. Algorithma oldukça basit gördüğünüz gibi. Bir şey falan yok. Bir kuyruktür, stektir, işte başa atalım, sona atalım falan gibisinde hiçbir şey yok ortada. Oldukça basit bir algoritması var.
+
+224
+00:46:53,412 --> 00:46:54,332
+Peki.
+
+225
+00:46:56,500 --> 00:47:04,359
+Tırmanma problemi ilk duruma bağlı lokal maksimum plato ve sırtlarda takılabilir. Bunlardan bahsettik.
+
+226
+00:47:10,675 --> 00:47:10,996
+Tende.
+
+227
+00:47:15,059 --> 00:47:37,519
+Bir ara verelim arkadaşlar. 12 dakika. Bir kalkın, bir yüzünüzü yıkayın, bir çay kahve bir şeyler için. Biraz daha kendinize gelin. Biraz daha canlanın. Biraz daha katılım bekliyorum derse. Saat 10'da devam edelim. Bir 12 dakika verelim size. Az sonra devam edeceğiz.
+
+228
+00:59:46,996 --> 00:59:49,076
+Evet arkadaşlar, tekrardan merhaba.
+
+229
+00:59:53,523 --> 00:59:55,663
+Sesim geliyor değil mi? Bir sıkıntı yok.
+
+230
+00:59:58,263 --> 00:59:59,003
+Geliyor hocam.
+
+231
+00:59:59,463 --> 01:00:05,423
+Tamam. Peki. Şimdi 8 vezir problemini tepe tırmanmayla çözeceğiz.
+
+232
+01:00:07,188 --> 01:00:22,248
+Bunun için tasarımı yapacağız. Şimdi bir başlangıç noktası lazım. Başlangıç için şöyle bir şey tanımlamışız. Her bir sütunlar rastgele bir vezirle başlayalım. Yani şuradaki sütunlarımız var. Bu sütunlara rastgele birer tane vezir atıyoruz. Bu bir başlangıç durum. Tamam mı?
+
+233
+01:00:23,027 --> 01:00:30,927
+Her adımda sadece bir veziri, her bir adımda sadece bir veziri sadece aşağıya ya da yukarıya x adım hareket ettirerek çözümü arayalım.
+
+234
+01:00:32,307 --> 01:00:41,748
+Şimdi böyle bir durumda ilk önce şunu sorayım. Bu tahtayı nasıl temsil ederiz? İlk önce onu düşünelim. Bu tahtayı nasıl temsil edeceğiz?
+
+235
+01:00:43,188 --> 01:00:45,768
+Matris olaraktan temsil edebiliriz.
+
+236
+01:00:46,567 --> 01:00:51,567
+Matris pahalı, matristen daha ucuz bir şey. Ne var?
+
+237
+01:00:54,067 --> 01:00:55,367
+Matristen daha ucuz.
+
+238
+01:00:59,315 --> 01:01:19,975
+Ne olabilir? Matrisin bir küçüğü ne? Dizi. Tamam, diziyle temsil edelim. Şöyle bir şey düşünelim. Mesela buradaki şu tahtayı ben şöyle temsil edebilir miyim?
+
+239
+01:01:27,764 --> 01:01:35,948
+3, 2, 1
+
+240
+01:01:40,179 --> 01:01:40,679
+3.
+
+241
+01:01:41,859 --> 01:01:43,239
+8 mi? 3.
+
+242
+01:01:45,459 --> 01:01:46,639
+Ne yaptım ben burada?
+
+243
+01:01:52,467 --> 01:01:55,148
+Zeminde olan mesafeleri en altında.
+
+244
+01:01:55,148 --> 01:02:17,068
+Mesafeleri yani sonuçta her bir vezirin o sutunda kaçıncı hücrede bulunduğunu, hücreleri de aşağıdan saydım. Birinci vezir dördüde duruyor, ikinci vezir üçte duruyor, üçüncü vezir ikide duruyor, dördüncü vezir beşte duruyor şeklinde. Bu şekilde temsil edebilir miyim? Olur mu? Yeter mi bu? Başka bir şey bilmeme gerek var mı?
+
+245
+01:02:19,347 --> 01:02:34,228
+Yok değil mi? Bu bir durum. Şu mevcut durum. Peki, bana şimdi bu mevcut durumdan gidilebilecek durumları söyleyin bakalım. Neler yapabilirim? Mesela hangi duruma gidebilirim? Bir tane örnek verin.
+
+246
+01:02:35,688 --> 01:02:42,188
+Bakın, her bir adımda sadece bir tane veziri hareket ettirebiliyoruz ve o da aşağı yukarı istediği yere gidebiliyor. Neler olabilir?
+
+247
+01:02:44,820 --> 01:02:51,480
+İlk veziri hareket ettireceğimizi düşünelim. O durumda zaten sonraki vezirlerin hepsi aynı yerde kalacaklar. Değil mi?
+
+248
+01:02:53,239 --> 01:02:54,219
+Yedi olabilir hocam.
+
+249
+01:02:56,019 --> 01:02:56,360
+Yedi.
+
+250
+01:02:57,239 --> 01:03:00,400
+Yani ne olabilir? Bir olabilir.
+
+251
+01:03:01,331 --> 01:03:23,952
+Efendim? Vezirlerin birbirini tehdit etmemesi için hani L halinde bir konumlarının olması gerekiyor her birinin birbirine. Şu anda öyle bir şey yapmadık zaten. Şimdi daha oraya gelmedik. Şu anda daha şey yapmıyoruz. Bu durumdan gidebilecek durumları üretmeye çalışıyoruz.
+
+252
+01:03:27,791 --> 01:03:42,811
+Ya da işte bu üreteceğimiz şeylerin iyiliğini, kötülüğünü zaten hesaplayacağız. Vezirleri ilk dizerken iyi bir başlangıç yapmak için senin dediğin gibi bir şeyler yapılabilir. Yani en başta ben bunları böyle dizmeyeyim de, rastgele dizmeyeyim de.
+
+253
+01:03:43,135 --> 01:03:57,576
+İşte birincisini koyduktan sonra onun yanındakini L'ye uygun bir şekilde koyayım. Sonra üçüncüsünü koyarken bu ikisine de uygun bir şekilde koyayım falan gibisinden iyi bir başlangıç değeri üretmek için bu dediğin gibi bir yaklaşım kullanılabilir. Anlatabildim mi?
+
+254
+01:03:58,476 --> 01:03:59,155
+Anladım hocam.
+
+255
+01:03:59,155 --> 01:04:05,155
+Ama hani bir başlangıcımız var. Onu iyi ya da kötü rastgele seçtik ya da senin dediğin gibi biraz daha akıllıca bir şekilde seçtik.
+
+256
+01:04:06,483 --> 01:04:15,583
+Ama bir durum oluştu ve oradan itibaren biz aramayız. Sonuçta o şekilde çözümü bulamayız herhalde değil mi? LL diye çizsek bile en başta.
+
+257
+01:04:16,916 --> 01:04:31,796
+Birazcık düşündüm hocam. Bulunabilir gibi geliyor. Yani en azından birbirini tehdit etmiyorlar bir yere kadar. 8'den sonra belki tahtta 8'e 8 olduğu için tehdit etmeye başlayabilir. Emin olmayaraktan söyleyeyim dedim.
+
+258
+01:04:44,500 --> 01:04:52,740
+Neyi ifade ediyor arkadaşlar? Burada yazmış olduğum şu yedi tane arkadaş neyi söylüyor? Neyi ifade ediyorlar?
+
+259
+01:04:59,155 --> 01:05:01,536
+Oluşabilecek yeni durumları ifade ediyorlar.
+
+260
+01:05:02,255 --> 01:05:03,775
+Neyi? Biraz söyle.
+
+261
+01:05:04,155 --> 01:05:05,735
+Oluşabilecek yeni durumlar hocam.
+
+262
+01:05:06,335 --> 01:05:08,615
+Oluşabilecek yeni durumlar ama hangi vezir için?
+
+263
+01:05:09,635 --> 01:05:10,355
+İlk vezir için.
+
+264
+01:05:10,615 --> 01:05:13,576
+İlk vezir için böyle. Peki ikinci vezir için nasıl?
+
+265
+01:05:18,228 --> 01:05:34,088
+İkinci vezir için nasıl bir şey olacak? Bu ilk vezir içindi. İkinci vezir, yani şuradaki arkadaş için. İlk veziri bir yere sabitledikten sonra ikinci vezir için de aynı şeyi yapacağız herhalde.
+
+266
+01:05:34,088 --> 01:05:42,228
+Şimdi birinci vezir için oluşabilecek bütün durumlar bunlar. Sonra ikinci vezir için oluşabilecek bütün durumlar altı.
+
+267
+01:05:42,228 --> 01:05:43,788
+Yedisi yedi tane olacak.
+
+268
+01:05:44,115 --> 01:05:56,796
+Burası da 7 tane olacak. Ondan sonra 3. vezir için oluşabilecek durumlar. O da şöyle bunları yazabiliriz herhalde. Biraz şöyle kenara çekeyim.
+
+269
+01:06:11,219 --> 01:06:19,199
+X, şurası da X, şurası da X. Şunların her birinde kaç tane elem anlıyor arkadaşlar?
+
+270
+01:06:23,507 --> 01:06:34,367
+X'lerin her birinde kaç tane eleman var? Yedişare tane. Peki, mevcut durumdan kaç tane yeni duruma geçebiliyoruz o zaman?
+
+271
+01:06:39,248 --> 01:06:45,087
+Hayır. 56 tane yeni duruma geçebiliriz.
+
+272
+01:06:45,492 --> 01:06:57,692
+Şimdi peki, mevcut durumun arkadaşlar haşı, bakın birbirini tehdit eden vezir çifti sayısı haş. Bu mevcut durumun haşı, şurada yazalım, bunun haşı eşittir 17'ymiş.
+
+273
+01:06:59,251 --> 01:07:06,932
+Şimdi burada şu tahta için bakın, şu tahta için birbirini tehdit eden vezir çifti sayısı 17'ymiş. 17 nasıl çıkıyor? Bakın sayalım.
+
+274
+01:07:07,443 --> 01:07:29,103
+Umarım sayabilirim. Şu ikisi bir çift. Sonra şu ikisi bir ve üçü düşünürsek iki. Şurada üç tane var birbirinin tekliden. Sonra buraya bakalım. Bir, iki, üç, dört, beş, altı. Altı tane burada var değil mi? Sonra şu ikisi var. Yedi.
+
+275
+01:07:29,715 --> 01:07:53,195
+Sonra şu ikisi var 8, şu ikisi var 9, 10, 11 bu ikisi. 12, 12'yi bulduk. Sonra şununla şu var 13, şununla şu var 14. Bir şeyler daha var şu anda. Onları kaçırdım herhalde. Ama sonuçta bunun durumu 17. Şimdi aynı şeyi bunun için de yapacağım.
+
+276
+01:07:53,876 --> 01:08:00,936
+Bunun haşı kaç arkadaşlar biliyor musunuz? Söyleyeyim ben size. 14. Peki bunun haşı kaç? Onu söyleyeyim bana.
+
+277
+01:08:09,907 --> 01:08:16,448
+18. Çok hızlı hesaplıyorum gördüğünüz gibi. Bir yerden kopya mı çekiyorum acaba? Bunun acı kaç?
+
+278
+01:08:24,307 --> 01:08:31,747
+Bunun haşı kaç? Bunu siz söyleyin artık. Yakalamış olmanız lazım.
+
+279
+01:08:40,532 --> 01:08:42,072
+15 mi?
+
+280
+01:08:43,032 --> 01:08:44,072
+Kaç? Bir daha.
+
+281
+01:08:44,551 --> 01:08:45,012
+15.
+
+282
+01:08:45,372 --> 01:08:47,551
+15. Evet. Bunun açı kaç?
+
+283
+01:08:49,152 --> 01:08:49,832
+14.
+
+284
+01:08:55,028 --> 01:09:18,087
+Onunki de on dört. Bununki de kaç? On sekiz hocam. On sekiz. Evet. Şimdi buradaki değerlerin neler olduklarını gördünüz mü? Anladınız mı? Diğer bütün vezirler aynı yerine kalsınlar. Sadece o sütundaki vezir o noktaya gelirse oluşacak durumun haşı. Tamam mı?
+
+285
+01:09:19,028 --> 01:09:32,628
+Burada da yine bu değerlerin hepsi için, şurada gördüklerinizin hepsi için, şunların her birinde iyi bir işaret tane var biliyorsunuz. Bunlar için de bu haçları hesaplamışız ve şu tahtada yazan değerler bunlar arkadaşlar. Tamam mı? Tamam mıyız buraya kadar?
+
+286
+01:09:37,939 --> 01:10:04,559
+Peki. Şimdi bir durumdayım ben. Bu durumdan gidilebilecek 56 tane yeni durum var. Ve ben bunların iyiliklerini benim açımdan hesapladım. Burada birbirini tehdit eden vezir çifti sayısını ne yapmak isteyeceğim ben? Haşı. Ne yapmak isteyeceğim? Haş değerini. Küçütmek mi istiyorum, büyütmek mi istiyorum?
+
+287
+01:10:05,811 --> 01:10:24,191
+Küçük bir. Değil mi? Haş birbirini tehdit eden. Bunu nereye kadar indirmek istiyorum ben? Sıfıra kadar indirmek istiyorum. Sıfıra erişirsem zaten global bir çözüm bulduğumdan emin olabileceğim. Çünkü zaten istenen şey sıfırdı. Daha da aşağısının olamayacağını, eksi bir vezir birbirini tehdit ediyor falan diye bir şey olmaz.
+
+288
+01:10:25,111 --> 01:10:30,191
+Tabi tek bir çözüm olmayabilir. Birden fazla çözüm de olabilir. O da mümkün ama...
+
+289
+01:10:31,188 --> 01:10:55,847
+En azından bulmuş olduğum çözümün global çözümlerden bir tanesi olduğundan emin olabilirim. Eğer haşı sıfıra indirebilirsem. Ama haşı sıfıra indiremezsem o durumda emin olamam. Çözümü biliyorsam, çözümün olduğunu biliyorsam lokal bir yere takıldığımdan emin olabilirim. Ama çözümün de olduğundan haberim yoksa bu durumda ne yapamam? Gerçekten global demeyim yoksa lokal demeyim bundan haberim olmaz.
+
+290
+01:10:56,595 --> 01:11:06,495
+Peki ne yapacağız? Şu anda haş 17 ve diğer 56 tanesinin de haşını hesapladık. Burada görüyorsunuz. Ne yapacağım? Bir sonraki adımda ne olacak?
+
+291
+01:11:14,100 --> 01:11:16,220
+En küçük haş ile ilerleyebiliriz hocam.
+
+292
+01:11:16,659 --> 01:11:18,800
+En küçük haş ile. En küçük haş kaç?
+
+293
+01:11:20,579 --> 01:11:21,140
+14.
+
+294
+01:11:25,235 --> 01:11:47,915
+On dört mü? On iki var galiba. On iki var ya bir sürü. Görmüyor musunuz? Ben ilki üzerinden düşünmüştüm hocam. İlki üzerinden niye düşünüyorsun? Doğru söylüyorsunuz. Değil mi? Çünkü elli altı tane var ya, o elli altı tanesinden bir tanesine gireceğiz ya. Dolayısıyla buradaki on ikilerden bir tanesini seçeceğiz. Nasıl seçebilirim on ikilerden bir tanesini?
+
+295
+01:11:55,699 --> 01:12:13,180
+Rastgele. Rastgele aynen öyle. Çünkü herhangi bir tanesinin diğerine göre daha iyi ya da daha kötü olduğuna dair bir bilgim yok. Dolayısıyla bu 12'lerden bir tanesini rastgele seçeceğim. Diyelim ki, şimdilik şu kenarda dursun. Şunu da birazcık küçültelim.
+
+296
+01:12:17,716 --> 01:12:24,716
+Yapacağımız iş ne olacak bu noktadan sonra? Diyelim ki mesela ben şu 12'yi seçtim.
+
+297
+01:12:24,716 --> 01:12:33,476
+Yani şuradaki 12'yi seçtim. Bu durumda nasıl bir şey olacak onu çizelim.
+
+298
+01:12:38,131 --> 01:12:58,131
+Şurası ve gelecek buraya. Buraya bir rakam yazacağız. Mesela işte burası burada durduğu halde 17 yazıldı olsun. Çok önemli değil şu anda.
+
+299
+01:13:06,963 --> 01:13:07,963
+17
+
+300
+01:13:09,963 --> 01:13:11,963
+Bu küçültülebiliyor mu ya?
+
+301
+01:13:14,963 --> 01:13:15,963
+Alalım.
+
+302
+01:13:19,188 --> 01:13:23,568
+Neyse, küçültülemedi. Çok iyi olmadı.
+
+303
+01:13:25,388 --> 01:13:28,827
+Hocam, yazı boyutunu küçültürseniz küçülür herhalde o da.
+
+304
+01:13:29,327 --> 01:13:32,327
+Nasıl yapacağım? Onun yazı boyutunu nasıl küçüteceğim? Neden küçüteceğim?
+
+305
+01:13:32,327 --> 01:13:42,568
+Ben göremiyorum da üst tarafta o sizin bir şeyiniz olması lazım. Yazıyı, çizme aracını filan kontrol ettiğiniz bir yer olması lazım.
+
+306
+01:13:43,667 --> 01:13:46,747
+Çizme aracının orada öyle bir şey göremiyorum. Ona bakıyorum da.
+
+307
+01:13:47,796 --> 01:14:06,996
+Yine yok. Annotate'in altında başka bir ayar yok. [öğrenci] var mı arkadaşlar? Annotate'in orada formattan sonra font var galiba. Formattan sonra font mu? Text var.
+
+308
+01:14:08,996 --> 01:14:10,275
+Format içinde.
+
+309
+01:14:15,956 --> 01:14:16,956
+Allah Allah.
+
+310
+01:14:16,956 --> 01:14:19,956
+Hocam D4K'ni büyütürseniz de olabilir herhalde.
+
+311
+01:14:20,216 --> 01:14:20,636
+Efendim?
+
+312
+01:14:22,456 --> 01:14:27,496
+Buradaki köşeyi yukarı çekerseniz de olabilir. Biraz büyütün. Yukarı doğru.
+
+313
+01:14:28,175 --> 01:14:29,716
+Yok ya, olmuyor ya.
+
+314
+01:14:32,056 --> 01:14:34,695
+Üstüne çift tıklayın bir de hocam. Şeyin.
+
+315
+01:14:36,036 --> 01:14:38,036
+Şey geliyor normalde Excel'de de.
+
+316
+01:14:39,076 --> 01:14:39,675
+Excel mi?
+
+317
+01:14:40,127 --> 01:14:44,087
+Bunun da gelmedi. Rengi değiştirdim.
+
+318
+01:14:44,567 --> 01:14:46,387
+Bir saat iş deneybilir miyiz acaba?
+
+319
+01:14:46,987 --> 01:14:47,667
+Efendim?
+
+320
+01:14:49,667 --> 01:14:52,188
+Ekranı yazabiliyoruz sanırım. Bir deneyin mi?
+
+321
+01:14:52,608 --> 01:14:53,327
+Bir deneyin.
+
+322
+01:15:06,100 --> 01:15:08,460
+Evet. Yazın bakalım.
+
+323
+01:15:16,884 --> 01:15:20,404
+Tamam. Şimdi nasıl kürüzücüz onu? Orada kaldı işte. Ben bunu yürütemeyeceğim.
+
+324
+01:15:22,463 --> 01:15:38,003
+Evet. Peki. Tamam. Neyse. Çok uğraşmayalım. Çok kısa bir çözüm bulamadım. Peki. Sonuçta şimdi V'yi buraya aldık. Tamam mı? Yani artık yeni şeyimiz, tahtamız bu halde. Şimdi ne yapacağım peki?
+
+325
+01:15:40,804 --> 01:15:42,583
+Yeni duruma geçtim. Şimdi ne olacak?
+
+326
+01:15:44,020 --> 01:15:45,659
+Tekrar ağaçları hesaplayacağım.
+
+327
+01:15:46,239 --> 01:16:02,600
+Tekrar buradaki bütün ağaçları tekrardan hesaplayacağım. Şurası artık bir sayı olacak. Şurası da. Bütün ağaçların hepsini tekrardan hesaplayacağım. Yine 56 tane hesaplayacağım. O 56 tane içerisinden yine en düşük olan hangisi ise oraya doğru gitmeye devam edeceğim. Anlaşıldı mı süreç arkadaşlar yapacağımız iş?
+
+328
+01:16:05,800 --> 01:16:06,060
+Evet.
+
+329
+01:16:06,780 --> 01:16:07,760
+Tamam, güzel.
+
+330
+01:16:16,948 --> 01:16:17,228
+Amen.
+
+331
+01:16:20,787 --> 01:16:41,028
+Mesela ben o deminki yolla ilerlersem, 12'lerden işte rastgele birilerini seçmişim, buraya kadar gelmişim. H eşittir 1. Bunun H'ı 1. Birbirini tehdit eden kim arkadaşlar görüyor musunuz? Şu iki arkadaş. Başka da hiçbir şey kalmadı. Her şey, diğerleri için her şey yoğundu ama bu ikisi sadece birbirini tehdit ediyor. H'ı 1.
+
+332
+01:16:52,724 --> 01:16:53,283
+56.
+
+333
+01:16:53,684 --> 01:17:05,203
+56 değil mi? 56 tane bu durumdan hiçbiri aşı birden daha küçük değil. Ya bir ya da daha büyük bir şeyler. Tamam mı? Bu durumda da algoritma ne olacak?
+
+334
+01:17:08,180 --> 01:17:09,560
+Lokal minimum olacak.
+
+335
+01:17:10,319 --> 01:17:34,960
+Bitecek. Bitecek değil mi? Algortma duracak artık. Bunu bana çözüm olarak söyleyecek. Ben bunu buldum diye söyleyecek. Bulabildiğim en iyisi bu. Sen benden işte sıfırı istedin ama ben sıfırı bulamadım. H eşittir biri buldum. Sıfırı istemeye de olabilir. Yani şöyle bir şey de olabilir. Sekiz veziri birbirine en az tehlike edecek şekilde dizin. Mesela böyle de söylenebilir size değil mi soru?
+
+336
+01:17:36,275 --> 01:17:57,915
+Ya da mesela atıyorum, 32 tane atı birbirini en az tehdit edecek şekilde dizin. 32 biraz fazla oldu herhalde de. 16 olsun mesela. 16 atı birbirini en az tehdit edecek şekilde dizin. Gibisinden bir şeyler söylenebilir. Yani hani şey de söylenmez, söylenmeyebilir. Hani sıfıra ineceksin. En iyisi bunun sıfırdır.
+
+337
+01:17:58,644 --> 01:18:14,123
+Mümkün olan en iyisi nedir? Siz de burada mümkün olan en iyisini buldunuz. H eşittir 1 diye buldunuz. Ve burada doğal olarak eğer haşın sıfıra inebildiğini biliyorsanız lokale takıldığınızı bilirsiniz. Ama bilmiyorsanız bu durumda emin olamazsınız. Belki de en iyi çözüm budur.
+
+338
+01:18:14,996 --> 01:18:33,296
+Yani sekiz vezir gerçekten bir tahtanın üzerine yerleşebilir miyiz bilmiyorsanız hakikaten de en iyi çözüm bu da olabilir. Tabii bir tane çözüm olmaz. Bu tahtayı dört taraftan bakış açısına göre en azından dört tane farklı durumun haçlarının birbirine eşit olacağını söyleyebiliriz.
+
+339
+01:18:42,228 --> 01:18:56,368
+Şöyle çevirsem, bu da aynı haşa sahip değil mi? Ya da şöyle çevirsem, bir de şöylesi de var. Neyse o dört durumun hepsi de aynı şeylere sahip.
+
+340
+01:18:58,888 --> 01:19:04,167
+Peki. Şimdi 8 vezir ile tepe tırmanın performansı nasıl acaba?
+
+341
+01:19:04,724 --> 01:19:17,504
+Bu çözümü var olan bir soru. Yani 8 vezir hakikaten yerleştirebiliyor. Rastgele başlangıç değerleriyle denemelerin %14'ünü de çözebiliyor arkadaşlar. %14'ü. Tabi demin bahsettiğimiz şekildeki yapıyla yani şöyle.
+
+342
+01:19:17,904 --> 01:19:38,244
+Her bir sütunla rastgele bir tane vezirle başlayıp her bir adımda sadece tek bir veziri kendi sütununda istediği yere taşıyabilerek, yani geçişleri bu şekilde tanımladığımızda, başlangıcı bu şekilde tanımladığımızda olan performansdan bahsediyoruz. Denimlerini %14'ünü çözüyor. Bunun diğer anlamı %86'ında lokal bir maksimuma takılıyor.
+
+343
+01:19:39,636 --> 01:19:47,896
+Bütün durumları incelemek burada ne kadar zaman alır diye düşünürsek, 8 veziri bir tahtaya kaç farklı şekilde yerleştirebiliriz?
+
+344
+01:19:47,996 --> 01:19:51,216
+Aynı hücrede 2 tane veziri olmaması şartıyla tabii.
+
+345
+01:19:52,316 --> 01:19:54,115
+Düşünürsek aslında kaç durum var?
+
+346
+01:19:56,156 --> 01:20:02,536
+Birinci sütunadaki veziri 8 farklı yere koyabiliyoruz. İkinci sütundakini de 8, 8, 8. 8 tane 8'in çarpımı.
+
+347
+01:20:02,996 --> 01:20:23,615
+O da işte yaklaşık 17 milyon civarında bir duruma karşılık geliyor. Tamam mı? Peki. Tepe tırmanmanın bu problemdeki performansı %14. Bunu dediğim gibi böyle olduğunu söylüyorum.
+
+348
+01:20:25,876 --> 01:20:38,136
+Siz tepe tırmanma algoritması elinizde olsa, 8 veziri çözebilen, en azından %14 performansı çözebilen bir algoritmanız elinizde olsa ne yaparsınız?
+
+349
+01:20:39,976 --> 01:20:44,676
+Çözümü bulabilmek için. En basitinden ne yaparsınız?
+
+350
+01:20:54,387 --> 01:21:01,968
+Nasıl yani hocam? Ben anlamadım soruyu. Algortmayı çalıştırdınız. Tamam. Çözemedi. Ne yaparsınız?
+
+351
+01:21:03,968 --> 01:21:07,988
+Bir daha çalıştırırız. Bir daha çalıştırırız. Yine çözemedi.
+
+352
+01:21:10,515 --> 01:21:14,296
+10 kere çalıştırdığımızda aşağı yukarı bir kere şey yapacak.
+
+353
+01:21:14,796 --> 01:21:23,355
+8 kere de mesela değil mi? 8 kere de bu çözecek gibi. Ama burada birer çalıştırırız da bir şey de değiştirir misin?
+
+354
+01:21:26,931 --> 01:21:36,311
+Eğer rastgele başlangıç değerleri her denemede rastgele denk kastı değişiyorsa değiştirmeye gerek yok. Ama onun dışında rastgele olması lazım.
+
+355
+01:21:36,311 --> 01:21:46,971
+Yani aslında olay ne? Bir algoritma, bir tepe tırmanma algoritmasının sonucunu ne belirliyor en temelde? Başlangıç noktası değil mi?
+
+356
+01:21:47,444 --> 01:22:11,004
+Başlangıç noktasına bağlı olarak aslında nereye gideceği belli oluyor. Şimdi bu algoritmanın içerisinde iki tane durum var. Sonucu etkileyebilecek. Bunlardan birincisi başlangıç yeri. İkincisi ne? Bir şey daha etkiliyor burada. Yani şunu demek ki aynı başlangıç yerlere başlarsanız bile farklı yerlere varabilirsiniz. Neden?
+
+357
+01:22:13,684 --> 01:22:15,623
+Eşit olduğunu da rastgele seçiyorduk.
+
+358
+01:22:15,804 --> 01:22:29,203
+Aynen öyle. Eşit olduğunu da rastgele seçiyoruz ya oradan dolayı. Dolayısıyla eğer öyle bir rastgele yoksa farklı başlangıç değerleriyle başlayarak ne yaparsınız? Tekrarlarsınız. Yani bir çözüm alternatifimiz arkadaşlar.
+
+359
+01:22:31,091 --> 01:22:53,572
+Tepe tırmanmaya. Tepe tırmanmayı farklı başlangıçlarla tekrarlamak. Randomly Star Field Climbing algoritması. Yani çözüme ulaşmadığımız sürece farklı başlangıçlarla tekrarlayacağız. Farklı başlangıç kritik. Çünkü başlangıç oldukça büyük bir etken. Nereye varılacağını o dağları, tepeleri hatırlayın. Nereden başladığınız, nereye varacağınızı bayağı bir belirliyor.
+
+360
+01:22:55,315 --> 01:23:20,015
+Şimdi gelelim ikinci çözüm alternatifine. Benzetimli tavlama. Simulated annealing. Simulated annealing biraz şey, bir hedefe varmak için sürekli ona doğru koşmak yerine bazen hedeften uzaklaşmanın da bir miktar iyi olabileceğini ifade ediyor aslında simulated annealing. Bu tavlama, çeliğe su verme diye bir mevzu var.
+
+361
+01:23:20,532 --> 01:23:38,332
+Çeliği mesela ısıttınız, bayağı bir demir aslında. Demiri ısıttınız, ısıttıktan sonra soğumaya bırakıyorsunuz. Daha sonra tekrardan ısıtıyorsunuz. Soğumayı bırakmak, suya sokmak falan gibisinden bir şeyler.
+
+362
+01:23:38,963 --> 01:23:51,863
+Dolayısıyla böyle bir kerelik bir şey değil de, mesela sürekli soğutmak değil de, soğutup biraz daha ısıtıp yaparsanız, yani şöyle bir şey aslında yine çizmeye kalkarsam onu.
+
+363
+01:23:53,083 --> 01:23:56,064
+Sıcaklık mesela şöyle düşürüyoruz.
+
+364
+01:23:58,823 --> 01:24:00,263
+Şöyle düşürmek yerine.
+
+365
+01:24:01,644 --> 01:24:02,323
+Anlatabildim mi?
+
+366
+01:24:03,443 --> 01:24:04,304
+Burası zaman.
+
+367
+01:24:05,043 --> 01:24:12,804
+Burası sıcaktır. Burası zamanı gösteriyor. Tamam. Sercan ne yapıyorsun?
+
+368
+01:24:15,804 --> 01:24:17,283
+Pardon, pardon.
+
+369
+01:24:20,467 --> 01:24:44,827
+Rica ederim. Takılıyorum arkadaşlar. Burası zaman, burası sıcaklık. Sıcaklığı sürekli böyle düşürmek yerine sıcaklık biraz düşürüyor, sonra biraz daha ısılıyor. Biraz düşürüyor, biraz daha ısılıyor. Bu şekilde yapıldığında en sonunda elde edilen çeliğin serpliğinin daha iyi olduğu, daha kaliteli, içinde daha az boşluk barındıran vs. vs. o artık dünyasal süreçlerle alakalı bir şey olduğu ortada.
+
+370
+01:24:48,467 --> 01:25:01,108
+Yani ara sıra o yapmaya çalıştığımız şeyin tersine bir şey yapmak iyi olabilir gibisinden bir yaklaşım bu. Şimdi bu tabii algoritmada bunu nasıl uygulayacağımız kısmı var.
+
+371
+01:25:15,444 --> 01:25:17,444
+Yer açalım.
+
+372
+01:25:17,444 --> 01:25:18,444
+Vah!
+
+373
+01:25:18,444 --> 01:25:20,444
+Haa, olur aslında bir dakika.
+
+374
+01:25:22,444 --> 01:25:24,444
+Whiteboard.
+
+375
+01:25:26,444 --> 01:25:28,444
+Whiteboard'ları yapabiliriz.
+
+376
+01:25:29,444 --> 01:25:31,444
+Şimdi şöyle bir şey düşünelim.
+
+377
+01:25:33,444 --> 01:25:35,444
+Haa, bu daha küçük bir şey.
+
+378
+01:25:38,444 --> 01:25:41,420
+Hımm, burada biraz daha enteresan bir şey olabilir.
+
+379
+01:25:43,731 --> 01:25:48,551
+Neyse, önemli bir ekran çizimle geçelim.
+
+380
+01:25:53,652 --> 01:26:00,492
+Mesela, şöyle bir...
+
+381
+01:26:04,595 --> 01:26:13,995
+Durum olsun. Ve biz de şu noktada olalım. Çok iyi gözükmedi. Şu noktada olalım. Tamam.
+
+382
+01:26:15,855 --> 01:26:19,115
+Burada ben tepe tırmanma uygularsam nereye varırım?
+
+383
+01:26:24,851 --> 01:26:43,192
+Soldaki tepeye. Varacağım yer, şurası olacaktı. Peki ben bir miktar kötüleşmeye izin versem bu adımda. Mesela bu, işte bir adım attım, mesela buraya geliyor, bir adım attım, buraya geliyor. Tamam. Şimdi bu mesela kötü bir şey mevcuttan değil mi?
+
+384
+01:26:43,731 --> 01:26:58,471
+Parz bir şekilde kötü bir şey. Bu iyi bir şey. İyi olanı değil de kötü olanı da seçebilsem, seçsem mesela. Bu hareket mesela şuradan şuraya gitmek beni belki daha da iyi bir noktaya doğru ilerletme şansı olabilir mi?
+
+385
+01:27:00,051 --> 01:27:00,351
+Evet.
+
+386
+01:27:01,171 --> 01:27:25,571
+Olabilir değil mi? Yani bazen kötüye gitmek bizi uzun vadede, kısa vadede değil, uzun vadede ne yapacaktır? İyileştirebilecektir. Yani temennimiz şu ki aslında, onu şöyle çizeyim. Ben haşı sürekli arttırdığım zaman şöyle gidebiliyorum, tamam mı? Sürekli artıyor bakın, sürekli artıyor.
+
+387
+01:27:27,167 --> 01:27:44,788
+Şöyle bir şey yaparsam mesela, biraz artıyor. Bazen düşmesine de izin verip, mesela, belki sürekli artışından daha da iyi bir yerlere gidebilirim. Anlatabildim mi?
+
+388
+01:27:53,011 --> 01:28:19,351
+Bu. Şuradaki arkadaş ise benzetimli tavlamamak. Evet. Anlaşıldı mı arkadaşlar? İstediğimiz, ümit ettiğimiz şey bu. Yani sürekli iyileşmek değil de bazen kötüleşmeye de izin verirsek biz acaba sürekli iyileşmeden daha iyi bir noktaya varabilir miyiz?
+
+389
+01:28:20,083 --> 01:28:27,163
+Şimdi bu bir olasılık dahilinde kesin olan bir şey yok. Neden? Şöyle bir şey düşünelim.
+
+390
+01:28:32,979 --> 01:28:37,159
+Şöyle bir şey olsun.
+
+391
+01:28:39,219 --> 01:28:39,420
+Mesela
+
+392
+01:28:45,619 --> 01:28:49,619
+Burasının, böyle değil de şöyle olduğunu düşünelim.
+
+393
+01:28:52,979 --> 01:29:18,139
+Tamam. Mesela ben şu noktadayım yine. Bu noktada mesela tepe tırmanma yapsam buraya varacağım. Şu noktadayım. Bu noktada tepe tırmanma yapsam buraya varacağım. Simuletle link yapsam belki işte bu tarafa doğru atlayacağım ve belki buraya varacağım. Tamam. Dolayısıyla hani bu kötü yöne gittiğim şey beni illa ki iyileştirecek diye bir durum da yok. Anlatabildim mi?
+
+394
+01:29:18,771 --> 01:29:25,211
+Bir ihtimal dahilindir bu sadece. Anlaşıldı mı mantık arkadaşlar? Kısmet.
+
+395
+01:29:28,211 --> 01:29:29,172
+Anlatıcım anladık.
+
+396
+01:29:29,731 --> 01:29:32,172
+Peki. Şimdi o zaman devam edelim.
+
+397
+01:29:36,212 --> 01:29:37,292
+Ayrı boyutun atısından.
+
+398
+01:29:49,203 --> 01:30:07,003
+Anafikir yaralma eksondan kaçmak için istenmeyen hareketlere de izin ver. Şimdi burada şöyle bir şey yapacak. Bakın, rastgele bir hareket üretecek. Yani bütün hareketlerin hepsini üretip onların içerisinden en iyisini seçmiyoruz. Tamam. Demin mesela o şekilde yaptık. Tepe tırmanmanın algoritmasında ne diyordu?
+
+399
+01:30:10,963 --> 01:30:37,603
+Saksa sınırların en yüksek değerlisini al Mabor diye bir değişkeni atıyordu değil mi? Burada ise rastgele bir hareket üretiyor. Rastgele bir hareket derken o durumdan gidebilecek durumların içerisinden rastgele bir tanesi. İyileşme varsa kabul ediyor. Tamam. Yoksa, yani iyileşme yoksa, zamanla ve kötüleşme miktarıyla azalan bir olasılıkla kabul ediyor. Yani kabul ediyor ama bir olasılıkla kabul ediyor. Bu olasılık da iki şeye bağlı. Bir tanesi zamana.
+
+400
+01:30:38,484 --> 01:30:51,744
+Yani algoritmanın başlangıcından bu zamana kadar ne kadar süre geçti ona bağlı. Diğeri ise kötüleşme miktarı. Zaman içinde rastgele hareketin boyutu vs. bunların kabul olası da azaltı.
+
+401
+01:30:51,744 --> 01:31:03,644
+Şimdi algoritmasını bir görelim formal olarak. Simulated Ending bir çözüm bize veriyor. Tabii bu çözüm yine bir lokal bir çözüm. Lokal bir maksimum ya da lokal bir minimum problem.
+
+402
+01:31:04,307 --> 01:31:23,628
+Bir tane problemimiz var elimizde. Problemi çözmeye çalışacağız zaten. O problemin çözümü bulacağız. Şimdi Schedule dediğimiz şey bir zamandan Temperature. Temperature diye bir değişkeniz var. T. Bu Temperature'a bir mapleme yapan bir fonksiyon. Mesela buradaki Schedule şu şekilde ayarlanmış. T eşittir.
+
+403
+01:31:24,015 --> 01:31:48,015
+Kullanacağımız t, şu t, eşittir t0 çarpı 0.95 üzeri küçük t. Küçük t zamanı gösteriyor arkadaşlar. Tamam mı? Şimdi bu küçük t1 iken t0 çarpı 0.95 eşittir t. T küçük t eşittir 2 iken bu 0.95 çarpı 0.95. Dolayısıyla zaman ilerledikçe...
+
+404
+01:31:48,851 --> 01:31:51,752
+T ne oluyor arkadaşlar? T0'dan.
+
+405
+01:32:00,916 --> 01:32:23,976
+Azalıyor değil mi sürekli T? T sürekli azalıyor. Başlangıçta T sıfır oldukça yakın ama zaman geçtikçe ne olacak? O epey bir ondan uzaklaşacak. Başlangıçta dediğim gibi T sıfıra işte bir verdiniz diyelim ki ama T atıyorum işte yüze, bine falan geldiğinde buradaki T bayağı bir sıfıra yakın bir değer haline gelecek.
+
+406
+01:32:24,756 --> 01:32:30,756
+Şimdi peki, for ile başlıyoruz. For t eşitli 1'den sonsuza kadar dön içeride ne yapacakmışız?
+
+407
+01:32:30,756 --> 01:32:41,756
+t'ye schedule t ile bir değer ata. Sonra t eşitli 0 ise, yani artık sıcaklık 0'a döndüyse burada ne yapıyoruz? Görüntü veriyoruz.
+
+408
+01:32:41,756 --> 01:32:43,660
+Sonra...
+
+409
+01:32:44,148 --> 01:33:10,708
+Bu olmadığı durumda devam edelim. Next'te bir şey atacağız. Neymiş bu Next'te? Randomly Seated Successor of Current. Yani Current'ın successor'lardan bir tanesini rastgele seç diyor. Yani deminki 8 vezir için düşünürsek, o 56 tanesinden bir tanesini rastgele seçiyor. Tamam mı? 56'ını da üretmiyor. Bir tane üretiyor rastgele. Onu alıyor, ona Next diyor.
+
+410
+01:33:11,444 --> 01:33:26,124
+Sonra next'in values'u ile current'in values'u arasındaki farkı buluyor. Buna delta e diyelim. Bakın next'in values'u ile current'in values'u arasındaki farkı buluyor. Next'in values'u ile current'in values'u arasındaki fark. Pozitifse bu ne demek?
+
+411
+01:33:30,804 --> 01:33:33,443
+Tırmanma yapıyoruz. Yükseğe doğru çıkmaya çalışıyoruz.
+
+412
+01:33:37,587 --> 01:33:39,827
+Yani valiyi yükseltmeye çalışıyoruz sürekli.
+
+413
+01:33:40,307 --> 01:33:44,188
+Hedefe yaklaşıyor olabiliriz en azından lokal şeye maksimum.
+
+414
+01:33:44,307 --> 01:33:46,068
+Yani iyileşme var demek değil mi bu?
+
+415
+01:33:46,148 --> 01:33:46,368
+Evet.
+
+416
+01:33:47,268 --> 01:33:54,487
+Yani next'in values'u, current'in values'u pozitif bir şey ise o zaman next'in values'u current'in values'u daha büyük bir şeydir.
+
+417
+01:33:54,887 --> 01:34:01,667
+Ve dolayısıyla o seçtiğimiz şu next bizi mevcut current'dan daha iyi bir yere getiriyordur.
+
+418
+01:34:01,667 --> 01:34:07,768
+O zaman if delta e büyüktür sıfırsa o zaman current'ı yani next current'a ata.
+
+419
+01:34:08,404 --> 01:34:30,064
+Yani iyileşme varsa kesinlikle kabul ediyoruz. Tamam mı? Bu zaten tahmin yani tepe tırmanmalı olan bir şey. Else diyorum. Else. Bu ne demek? Else geldiğimiz zaman delta t, delta e pardon, delta e negatif. Delta e negatifse bu ne demek? Kötüleşme var.
+
+420
+01:34:31,220 --> 01:34:52,140
+Şimdi ne diyor? As current next'te atanır. Only with the probability. Yani bir olasılıkla atanıyor. Kesinlikle atanmıyor. Probabilitinin değerine bağlı bu da. Probabilitin 1 dersek zaten kesinlikle atanır. Probabilitin 0 dersek atanmaz. Next only with the probability ne diyor? E üzeri delta E bölü T diyor.
+
+421
+01:34:53,811 --> 01:35:10,311
+Delta E'nin büyük olmasının anlamı ne? Büyük derken şöyle diyeyim. Aradan iki mutlak farkın büyük olduğunu düşünün. Ve eksi gizliyiz. Kötüleştiriyor bu. Aşırı derecede kötüleştiren bir şey kabul etmeye olasılığımız ne olmalı arkadaşlar?
+
+422
+01:35:13,111 --> 01:35:14,152
+Düşük olmalı.
+
+423
+01:35:14,152 --> 01:35:19,979
+Düşük olmalı değil mi? Çok kötüleştiriyorsa düşük olmalı. Ama az bir şey kötüleştiriyorsa...
+
+424
+01:35:20,692 --> 01:35:34,832
+Onu daha yüksek olasılıkla seçebiliriz değil mi? Peki bir de bölü T var. Bölü T dediğimizde neye bağlı demiştim? Zamana bağlı. Zaman içerisinde bu kötüleri kabul etme olasılığımızla giderek ne oluyor arkadaşlar?
+
+425
+01:35:35,359 --> 01:36:00,460
+Azalıyor. Başlangıçta kötüleri daha yüksek ihtimalle kabul ediyoruz. Ama zaman ilerledikçe kötüleri daha düşük bir ihtimalle kabul etmeye başlıyoruz. Aslında t'nin çok çok küçük değerlere geldiği anda burası with the probability neye doğru gidecektir? Burası şey olduğunu unutmayın. Şu delta e'nin başında zaten yani delta'nin kendisi eksi yer.
+
+426
+01:36:01,011 --> 01:36:10,251
+Onu unutmayın. T çok çok küçük bir hale geldiğinde ne olacak arkadaşlar? T çok çok küçük bir hale geldiğinde with the probability neye yaklaşacak?
+
+427
+01:36:10,271 --> 01:36:11,911
+Seçmeyecek hocam sıfıra yaklaşacak.
+
+428
+01:36:12,032 --> 01:36:18,011
+Sıfıra yaklaşacak değil mi? With the probability sıfıra yakın bir şey olacak. Sıfıra yakın bir şey olduğunda algoritma neye dönüşür?
+
+429
+01:36:21,192 --> 01:36:22,612
+Hill Climbing'e dönüşür.
+
+430
+01:36:22,612 --> 01:36:24,791
+Değil mi? Hill Climbing'e dönüşür.
+
+431
+01:36:26,351 --> 01:36:27,072
+Peki.
+
+432
+01:36:30,739 --> 01:36:41,799
+O zaman tamam, iyileşme yoksa belki diye yazmışım buraya. İyileşme yoksa belki. Bu belki dediğimiz gibi neye bağlı? İki şeye bağlı. Bir tanesi kötüleşme miktarına, bir tanesi geçen zamana bağlı.
+
+433
+01:36:46,068 --> 01:36:58,488
+O zaman haç değerini sürekli yükseltmek yerine bazen düşmesine de ama küçük miktarlar düşmesine izinlere belki daha iyi bir yerlere gidebiliriz gibisinden bir durum var.
+
+434
+01:36:58,488 --> 01:37:08,688
+Tabii burada başlangıçta aslında haç miktarı yani şunu şöyle yapabiliriz, ifade edebilirim belki.
+
+435
+01:37:11,148 --> 01:37:12,108
+Çizelim.
+
+436
+01:37:13,011 --> 01:37:26,571
+Başlangıçta H belki böyle daha büyük salınımlar yaparken zaman içerisinde bu aslında çok daha küçük küçük salınımlar yapıp giderek sonlarda artık neye dönüşecektir arkadaşlar?
+
+437
+01:37:29,151 --> 01:37:30,971
+Hill Climbing'e dönüşecektir buradaki gibi.
+
+438
+01:37:32,651 --> 01:37:33,951
+Aslında burasını çok doğru çizmeli.
+
+439
+01:37:33,951 --> 01:37:35,831
+Böyle düşünelim.
+
+440
+01:37:43,636 --> 01:38:05,676
+Başlangıçta böyle daha büyük salınımlar yaparken, daha sonra işte arada bir iyileşen ama kötüleşmesine pek fazla izin vermediğimiz bir yapıya dönüşecek.
+
+441
+01:38:05,796 --> 01:38:10,676
+Şöyle bir yapıya dönüşecek. Bu da tepe tırmanmaya oldukça benzeyen işi olacak.
+
+442
+01:38:12,243 --> 01:38:25,844
+Peki, başlangıçta büyük salınımlar. Çünkü kötüleşmesine daha fazla izin veriyorduk. Değil mi başlarda? Ama sonlara doğru geldiğimiz ayvurtmada ne olacaktır? Burası ne? Bir kere onu yine söyleyelim.
+
+443
+01:38:25,844 --> 01:38:37,023
+Ama tabii şöyle güzel araçlar. Ne kadar güzel. Şimdi burası X80'i neyi gösteriyor burada?
+
+444
+01:38:43,923 --> 01:38:54,123
+Durumları göstermiyor. Zamanı gösteriyor arkadaşlar. Y-x'ini niye gösteriyor?
+
+445
+01:38:58,579 --> 01:38:59,860
+Hedefi olan yakınlığı.
+
+446
+01:39:01,199 --> 01:39:05,539
+O anki mevcut durumun hedefi olan yakınlığı uzaktı artık her neyse.
+
+447
+01:39:05,920 --> 01:39:09,180
+Değil mi? Burada yakınlığı giderek artıyor olduğuna göre yakınlığı.
+
+448
+01:39:11,180 --> 01:39:11,940
+Peki.
+
+449
+01:39:28,467 --> 01:39:37,167
+Şimdi arkadaşlar, bir küçük ara verelim. 10 dakikalık ya da 9 dakikalık. Bundan sonra devam edelim.
+
+450
+01:39:55,699 --> 01:40:00,560
+10.50'ye kadar ara. Neyse, anladınız. Az sonra görüşmek üzere arkadaşlar.
+
+451
+01:49:58,771 --> 01:49:59,752
+Arkadaşlar, tekrardan.
+
+452
+01:50:03,123 --> 01:50:04,123
+Bu ne?
+
+453
+01:50:08,948 --> 01:50:09,748
+Slide geldi.
+
+454
+01:50:12,167 --> 01:50:12,768
+Evet hocam.
+
+455
+01:50:13,208 --> 01:50:22,488
+Tamam. Şimdi diğer alternatif çözümümüz ise tepe tırmanmaya. Paralel tepe tırmanmanın mantığı şu aslında.
+
+456
+01:50:23,507 --> 01:50:26,728
+Daha bir tane dağcı yollamak yerine birden fazla dağcı yollamak.
+
+457
+01:50:28,087 --> 01:50:31,568
+Yani tek bir durumu izlemek yana K'tan'ı izle diye yazmışız biz de onu.
+
+458
+01:50:32,467 --> 01:50:35,208
+K adet rastgele üretilmiş durumla başlayacağız.
+
+459
+01:50:35,859 --> 01:51:01,439
+Tek bir durumu takip etmeyeceğiz. Aynı anda K tane durumu takip edeceğiz. O şekilde düşünün. KD etkastör üretilmiş durumla başla. Her bir iterasyona K durumunun hepsinden gidilebilecek tüm durumları üret. Bu durumlardan biri hedefse dur. Değilse en iyi K tanesini mevcut durumlar olarak ata ve bir önceki adıma dön. Değilse en iyi K tanesini mevcut durumlar olarak ata. Aslında bu birden fazla dağcı için düşünürsek mesela beş tane dağcımız olsun.
+
+460
+01:51:01,855 --> 01:51:08,855
+5 tane dağcı her biri bulunduğu yerde ölçümler yapıyorlar ve bu dağcılarımız birbirleriyle konuşabiliyorlar, haberleşebiliyorlar.
+
+461
+01:51:11,176 --> 01:51:23,416
+Ve şey yapıyorlar, hepsi birden işte ben bunları ölçtüm, şunları ölçtüm falan. Ondan sonra hepsinin ölçümlerinin içerisinden en iyi K tanesini bulup bu K tane noktaya dağcıları ışınlıyoruz.
+
+462
+01:51:23,416 --> 01:51:26,876
+Tamam mı? Bu şekilde düşünebiliriz.
+
+463
+01:51:30,707 --> 01:51:51,367
+Paralel olarak gitmenin güzel tarafı var tabii. Herkes farklı bir yerde gittiği için birbirinden farklı çözümlere doğru gitmek iyi bir şey. Ama bu ışınlanma olayında en iyi kağıt tanesini seçmek çok çok iyi bir şey olmayabilir belki. Şimdi şöyle bir şey yapalım aslında. Çizelim yine bir durum çizelim.
+
+464
+01:52:03,923 --> 01:52:07,863
+Dağmış olsun. Şöyle bir dağmış olsun.
+
+465
+01:52:11,523 --> 01:52:13,304
+Şöyle bir dağmış olsun.
+
+466
+01:52:15,224 --> 01:52:27,224
+Ve bizim başlangıç durumlarımızda bir tanesi şurada olsun, bir tanesi burada olsun, bir tanesi de burada olsun.
+
+467
+01:52:28,123 --> 01:52:30,283
+Yani üç tane dağcımız var. Tamam.
+
+468
+01:52:30,963 --> 01:52:55,264
+Üç tane dağcımız burada harekete başlayacaklar. Ne yapacaklar? Her biri iki tane durum üretecek. Sağ ve sola gittiğinde neler olduğunu. Mesela bu işte şu iki durumu üretecek. Mesela şurayı üretecek ve şurayı üretecek. Bu arkadaş şurayı üretecek ve şurayı üretecek. Bu arkadaş şurayı üretecek ve şurayı üretecek. Değil mi?
+
+469
+01:52:56,020 --> 01:53:07,159
+Dolayısıyla 6 tane yeni durum, mevcut da 3 tane durum, 9 tane durum var. Bu 9 tane durumun en iyi 3 tanesi hangisi arkadaşlar? 9 durumun en iyi 3 tanesini seçeceğiz ya. Hangileri?
+
+470
+01:53:16,148 --> 01:53:17,547
+Hepsinin üstünde olmalı.
+
+471
+01:53:17,547 --> 01:53:36,148
+Yani, burası değil mi? Şu kısım değil mi? Yani dağcılarımızı alacağız. Şuradaki dağcılarımızı. Bir tanesini alacağız.
+
+472
+01:53:42,484 --> 01:53:45,024
+Diğer iki daha şunu da şuralara kopyalayacağız.
+
+473
+01:53:47,444 --> 01:53:49,764
+Şimdi problem ne olacak kısmı gördünüz mü?
+
+474
+01:53:54,464 --> 01:53:56,204
+Bu noktadan sonra ne olur?
+
+475
+01:53:58,964 --> 01:54:03,304
+Her biri de kendisinden üretilecek ikişer taneyi seçecek. Yine üç tanesine gidecekler.
+
+476
+01:54:04,224 --> 01:54:09,264
+En iyi üç tanesine ışınlanacaklar. Dolayısıyla aynı şeyin üzerinde kaldılar hepsi.
+
+477
+01:54:09,908 --> 01:54:26,327
+Şimdi bu en iyi K tanesine direkt atamak aslında bir şekilde paralelliğin anlamı şu, bir şekilde divers, yani ayrı çözümleri takip edebilmek iyi bir şey paralel tepe tırmanmada.
+
+478
+01:54:26,327 --> 01:54:37,047
+Ama eğer ki siz çözümlerinizin hepsini aynı yere odaklarsanız, o zaman zaten bu dağda üç tane dağcı olması ve bir tane dağcı olması arasında bir fark var mı şu dağ için?
+
+479
+01:54:38,387 --> 01:54:48,047
+Yok değil mi? Hepsi birden bu dağın üstünde olsalar bize bir katkısı sağlar mı? Sağlamak. Farklı yerlerde olmalılar ki bize katkı sağlasınlar. Dolayısıyla bu ışınlanma mevzusunu.
+
+480
+01:54:48,787 --> 01:55:08,527
+Yani hepsini birden en iyi yerlere ışınlamak yerine bir kısmını oraları ışınlayıp bir kısmını daha kötü yerlerde bırakmak. Yani aslında birazcık simülatif en iyi dengeli denk geliyor. Hepsini en iyi yerlere ışınlamak yerine bir kısmını iyi yerlere ışınlamak yerine bir kısmını da olduğu yerlerde bırakmak. Belki daha kötü yerlerde bırakmak daha mantıklı bir hareket.
+
+481
+01:55:09,300 --> 01:55:21,819
+Dediğimiz gibi belki de hepsini ışınladığınız yer sizi çok iyi bir yere götürmüyor olabilir. Mümkün olduğu kadar çözümlerin birbirlerinden ayrık olmasını bir yandan sağlamaya devam ettirmek lazım.
+
+482
+01:55:24,199 --> 01:55:32,399
+Anlaştık mı arkadaşlar? Buradaki bu diversity problemiyle diversity olmazsa hiçbir şey olmaz aslında parader tepe tırmanmada.
+
+483
+01:55:33,587 --> 01:55:52,347
+Paralel tepe tırmanma önümüzdeki hafta göreceğimiz genetik algoritmanın da temeli. Genetik algoritmanın da aynı problem olabilir. Yani bütün çözümlerin hepsi aynı yerdelerse, birbirlerine çok yakınlarsa bu genetik algoritma kullanmayı çok da fazla bir şey yapmıyor. İyileştirmiyor, güzel olmuyor.
+
+484
+01:55:52,347 --> 01:55:53,868
+Peki.
+
+485
+01:56:06,452 --> 01:56:23,912
+Bir problemimiz var. Problemimiz şu. Sizler hatırlamazsınız ama eskiden televizyonların düğmeleri vardı. Tamam. Ve bu düğmeler, televizyonun görüntü eskiden antenler vardı. Gerçi antenler şimdi var herhalde de.
+
+486
+01:56:24,372 --> 01:56:48,811
+Anternden gelen görüntünün üzerinde bu düğmeler değişiklikler yapabiliyordu. Yani işte kaydırıyor, gürültüsünü azaltıyor, renklerini ayarlıyor, parlaklığını ayarlıyor vs. vs. Bu tarz görüntü ayarları vardı. Diyelim ki bu görüntü ayarı içinde dört tane kontrol düğmesi var elinizde. Tamam. Ve her bir düğmenin de tık tık tık tık tık çevirebiliyorsunuz, sağa sola çevirebiliyorsunuz. Yüz tane farklı pozisyonu olsun. Tamam.
+
+487
+01:56:49,587 --> 01:57:16,207
+Televizyonu açtınız, televizyonun görüntüsü bozuk. Başka yerde gidemiyorsunuz. İnternet falan da yok o zamanlarda. Uzaktan kumanda bile yok. Neyse, eski zamanlar yani. Ve maç başlayacak. Maç seyretmek istiyorsunuz, maç başlayacak. Ya da çok sevdiğiniz bir dizi var, dizi seyredeceksiniz. Dizi daha sonradan seyretme imkanınız falan da yok. Kaydedilmiyor herhangi bir yere. Daha sonradan seyrederim de yok.
+
+488
+01:57:16,543 --> 01:57:34,064
+Tekrarları da yok. Vesaire vesaire. Dolayısıyla bir an önce ne yapmanız lazım? Çözüm bulmanız lazım. Bozuk televizyonunuzu, bu görüntü ayarı için olan dört tane kontrol düğmesiyle oynayarak düzeltmeniz lazım. Tamam mı? Peki.
+
+489
+01:57:36,659 --> 01:57:50,079
+Televizyonda sizin televizyon değil. Yani daha önceden bu el nasıl gösteriyordu falan bilmiyorsunuz ama bozuk. Yani kötü gözüküyor şu anda. Onu iyileştirmek istiyorsunuz. Nasıl bir yol izlersiniz? Evet. Cevaplarımızı alalım.
+
+490
+01:58:00,083 --> 01:58:00,904
+Ne yaparsınız?
+
+491
+01:58:02,184 --> 01:58:05,724
+Görüntü kalitesine göre çeviririz çanağı.
+
+492
+01:58:06,744 --> 01:58:08,043
+Çanak falan yok ya.
+
+493
+01:58:08,664 --> 01:58:09,463
+Yok mu çanak?
+
+494
+01:58:09,984 --> 01:58:19,244
+Çanak yok. Hayır. Dört tane kontrol düğmesi var diyorum televizyonun üstünde. Onları değiştirebiliyorsun sadece. Çanak çatıda. Fırtına var dışarıda da. Çıkanmıyorsun.
+
+495
+01:58:21,604 --> 01:58:23,724
+Hocam, brute force deneyebiliriz direkt.
+
+496
+01:58:24,003 --> 01:58:24,583
+Nasıl yani?
+
+497
+01:58:25,203 --> 01:58:30,684
+Birinciyi birinci pozisyonda, ikinciyi birinci pozisyonda, üçüncüyi birinci pozisyondayken hepsini...
+
+498
+01:58:30,684 --> 01:58:33,564
+Kaç tane olası durum var?
+
+499
+01:58:34,024 --> 01:58:35,423
+Bir milyon kadar var galiba.
+
+500
+01:58:35,963 --> 01:58:36,804
+Biraz sayf.
+
+501
+01:58:46,612 --> 01:58:48,612
+100 çarpı, 100 çarpı, 100 çarpı, 100 değil mi?
+
+502
+01:58:48,631 --> 01:58:49,711
+Evet, 10 üzeri 8 hocam.
+
+503
+01:58:49,791 --> 01:58:50,051
+Yani?
+
+504
+01:58:53,311 --> 01:58:54,071
+10 milyon.
+
+505
+01:58:55,931 --> 01:58:58,192
+100 milyon.
+
+506
+01:58:58,591 --> 01:59:00,831
+100 milyon olsa denersen ne olur biliyor musun?
+
+507
+01:59:01,311 --> 01:59:02,391
+Televizyonun başında ölürsün.
+
+508
+01:59:03,911 --> 01:59:04,471
+Değil mi?
+
+509
+01:59:05,692 --> 01:59:06,391
+Evet hocam.
+
+510
+01:59:06,771 --> 01:59:09,152
+Eh, ölürsün. Brute Force iyi bir teknik değil o zaman.
+
+511
+01:59:12,851 --> 01:59:15,751
+Yani uyganabilir bir teknik değil. Ne yaparsın?
+
+512
+01:59:17,363 --> 01:59:23,243
+Gerçekten böyle problemle karşılarsınız, ne yaparsınız? Hepsini teker teker denemezsiniz arkadaşlar, yapmayın yani.
+
+513
+01:59:23,463 --> 01:59:27,344
+Hocam, her birinden birer tane denerim, iyileşme olanan üstüme.
+
+514
+01:59:27,403 --> 01:59:29,023
+Nasıl yani? Nasıl yani? Bir daha söyle.
+
+515
+01:59:29,443 --> 01:59:32,423
+Yani mesela önce birinden başlarım, bir tane çevirdim.
+
+516
+01:59:32,423 --> 01:59:35,143
+Tamam, ne yapayım? Bir tanesini bir sağa çevirdim. Sonra?
+
+517
+01:59:35,684 --> 01:59:37,983
+Tamam, sonra bakarım iyileşme var mı, yok mu?
+
+518
+01:59:38,023 --> 01:59:39,203
+Var, var. Sonra?
+
+519
+01:59:39,583 --> 01:59:41,583
+Tamam, iyileşme varsa bir daha çeviririm onu.
+
+520
+01:59:41,684 --> 01:59:42,463
+Tamam, çevirdim.
+
+521
+01:59:43,123 --> 01:59:44,283
+Ondan sonra bir daha var.
+
+522
+01:59:44,655 --> 01:59:46,935
+Biraz daha iyiye gidiyorsa sürekli.
+
+523
+01:59:46,956 --> 01:59:57,675
+Daha iyiye doğru gidiyor. Bir noktadan sonra artık kötüleşmeye başladı. Geri alırım diyorsun. Birinci düğmeye göre en iyi noktayı bulurum. Doğru mu? Sonra?
+
+524
+01:59:58,095 --> 02:00:03,496
+Sonra kötüleşmeye gittiğini fark edersem bir önceki pozisyonu alıp diğer düğmeye çevirmeye başlarım.
+
+525
+02:00:03,515 --> 02:00:11,255
+Şimdi diğer düğmeye geçtin. Diğer düğmede de aynı işlemi yaparsın. Sonraki düğmede de sonraki düğme. Dört tane düğme var zaten. Ve en sonunda bir sonuç elde ettin.
+
+526
+02:00:12,627 --> 02:00:29,807
+Tamam. Şimdi bu elde ettiğin sonucun en iyi sonuç olduğundan emin olabilir misin? Olamazsın. Brute force yapmadığımız için bilemeyiz. Brute force yapamadığımız için daha doğrusu bilemeyiz. Yani global bir yere değil de lokal bir yere vardın. Aslında burada yaptığın arama nasıl bir arama?
+
+527
+02:00:31,988 --> 02:00:47,128
+Lokal bir arama değil mi? Lokal bir arama alıbı olması kullanıyoruz. Bunu biz hayatımızda da böyle bir problemle karşılaştığımız zaman kullandığımız yöntem aslında lokal aramadır. Global bir şeyi yapma imkanımız temelde genelde öyle söyleyeyim olmadı. Varsa imkan yani.
+
+528
+02:00:47,667 --> 02:01:13,248
+Her birinin iki tane farklı pozisyonu varsa on altı tane durum var zaten. Onların hepsini dene. Tamam. Onunla eyvallah. Ama yüz farklı pozisyonu varsa her bir şeyi ne yapamayacaksınız? Deneyemeyeceksiniz. Dolayısıyla da bir algoritmik yapıya geçmeniz lazım arama uzayı. Çok büyük olduğu zaman. Burada da dediğiniz gibi bir tane düğmeyle mesela o düğmen için en iyi noktayı buluruz. Sonra ikinci düğme için, üçüncü, dördüncü düğme için. Bu durumda kaç tane şey denemiş oluruz en fazla?
+
+529
+02:01:19,667 --> 02:01:21,847
+Kaç durum denemiş oluruz en fazla?
+
+530
+02:01:26,387 --> 02:01:32,108
+Yani iyileşmeye bağlı aslında yine. En fazla diyorum. Yine yüz mü?
+
+531
+02:01:32,108 --> 02:01:49,568
+Kurutu fosu olmaz mı hocam? Hayır. Dört yüz. Dört yüz. Dört yüz. Birincisi için en fazla kaç durum deneyebilirsin? Yüz. İkinci düğme için yüz. Üç, üçüncü, yüz, yüz, dört yüz. Doğal olarak dört yüz değil mi? En fazla dört yüz tane pozisyonu denersin.
+
+532
+02:01:49,971 --> 02:02:12,192
+Bu da çok fazla vakit almaz. Maç başlayana kadar ya da belki 2-3 dakikasını kaçırırsın. Ama 400 tane farklı bir pozisyonu maksimum deniyor. Ama gerçekten 400 pozisyonu deniyorsunuz. Onların 400 pozisyonun içerisinden en iyisini buluyorsunuz. Ama gerçekte kaç durum var? Yani 400 durum mu kaç durumun içinden denediniz?
+
+533
+02:02:13,076 --> 02:02:34,836
+100 milyon durumun içinden denediniz. Bakın, 100 milyon durumun içerisinden sadece 400 tanesini denediniz. Değil mi? Dolayısıyla zaten çok çok büyük bir ihtimalle nereye takıldınız? Lokal bir maksimal, ya da işte minimum takıldınız. Şimdi burada anlaştık mı? Bozuk televizyonda yapabileceğimiz şey konusunda.
+
+534
+02:02:34,836 --> 02:02:36,916
+Evet hocam.
+
+535
+02:02:36,956 --> 02:02:39,996
+Yapacağımız şey bu, olur. Peki.
+
+536
+02:02:40,692 --> 02:03:05,532
+Peki ya kasa açsanız ne olur? Yani şunu demek istiyorum. Hırsızsınız, bir eve girdiniz, evin içinde bir tane kasa var. Kasanın üzerinde şifre var, dört tane düğme var. Her biri yine yüz tane farklı pozisyonu var. Şifrede buradaki yine yüz milyon olasılıktan bir tanesi. Değil mi? Ne yaparsınız?
+
+537
+02:03:07,828 --> 02:03:23,368
+Bir yandan da siren seslerini duymaya başladığınızda polisler de geliyorlar. 15 dakikanız falan var. Kabaca hesaplıyorsunuz. 15 dakikada ne yapabilirim diye. Ne yaparsınız? Kas açtınız. Kasayı alıp gidelim demeyin. Kasa çok ağır.
+
+538
+02:03:29,332 --> 02:03:30,792
+Açamayız o zaman hocam.
+
+539
+02:03:31,952 --> 02:03:34,472
+Çok çok güzel. Ne yapman lazım o zaman?
+
+540
+02:03:35,732 --> 02:03:37,012
+Kaçmamız gerekiyor.
+
+541
+02:03:37,012 --> 02:03:42,012
+Evet, çok güzel. Kaçmamız gerekiyor. Peki niye? Niye şimdi kaçıyorsun?
+
+542
+02:03:43,332 --> 02:03:48,392
+Bozuk televizyonda televizyon olduğu gibi bırakmadın. Bir şeyler yapmaya çalıştın değil mi?
+
+543
+02:03:49,552 --> 02:03:50,912
+Burada değişen ne oldu?
+
+544
+02:03:52,532 --> 02:03:55,272
+Yaklaşıp yaklaşmadığımızı bilmiyoruz burada.
+
+545
+02:03:55,992 --> 02:04:00,232
+Çok güzel. Yaklaşıp yaklaşmadığımızı burada bilmiyoruz. Yani ne yok elimizde?
+
+546
+02:04:02,992 --> 02:04:03,492
+Hedef.
+
+547
+02:04:04,612 --> 02:04:09,292
+Hayır. Hedef zaten ötekinde de yoktu.
+
+548
+02:04:09,812 --> 02:04:10,552
+Haş yok hocam.
+
+549
+02:04:11,512 --> 02:04:14,932
+Haş yok. Yani sezgisel fonksiyon bizim elimizde yok.
+
+550
+02:04:15,328 --> 02:04:39,248
+Bu durumda yapabileceğiniz tek şey ne arkadaşlar? Kör arama algoritması kullanmak değil mi? Sezgisel arama algoritması kullanamıyorsunuz. O yüzden kaçmaya karar veriyorsunuz. Öteki durumda ama kaçmaya gerek yok. Çünkü zaten en iyisinde bir sezgi var değil mi? O sezgiye göre, yani şöyle bir şansınız olmadığı için düğmeleri çeviriyorum, kasa açılmaya yaklaşıyor, kasa açılmadan uzaklaşıyor falan gibisinden bir bilgi yok elinizde.
+
+551
+02:04:39,667 --> 02:04:57,287
+O yüzden ne yapmanız gerekiyor bu durumda? Brute Force'ta uygulanabilir bir çözüm değil bu durumda. Dolayısıyla kaçmanız çok daha mantıklı bir hareket olur. Tabii 15 dakikada deneyebileceğiniz kadarını deneyip kaçmak da yine mantıklı bir hareket. 15 dakikada kaçtığında durum deneyebilirseniz.
+
+552
+02:04:57,908 --> 02:05:23,668
+Zamanınız yettiğince çok çok şanslı bir seyiriniz belki tutturursunuz. Ama temelde bu iki problemin arasındaki fark, işte Sezginin elinizde olması ve olmamasını çok rahat gösteriyor. Etkisinin büyüklüğünü gösteriyor. Sezgi elinizde olmadığında yapacak çok fazla bir şey olmuyor. Arama, büyük arama uzaylarında.
+
+553
+02:05:23,668 --> 02:05:24,828
+Peki.
+
+554
+02:05:25,684 --> 02:05:43,943
+Sezgin'in... Eskiden filmlerde şöyle sahneler olurdu, bilmiyorum, kasa açma sahnelerinde. Hırsız kulağına bir tane steteskop takar ve onu kasaya dayar. Niye böyle bir şey yapar?
+
+555
+02:05:49,395 --> 02:05:50,916
+Sezgi eklemiş oluyor aslında.
+
+556
+02:05:51,636 --> 02:06:17,195
+Aynen öyle. Sezgi elde etmeye çalışmış oluyor. Ne yapmaya çalışıyor? İçerideki kasanın kilidinden gelen seslere göre işte orada bir klik sesi geldi mi? Şu oldu mu? Bu oldu mu? Buradan ne anlamaya çalışıyor? Hedefe yaklaştın mı? Uzaklaştın mı? Buna dair bir bilgi edinmeye çalışıyor. Aynen öyle. Sezgi edinmeye çalışıyor. Sezgi elimizde olduğu zaman problemleri daha iyi çözemeyiz ama çok daha hızlı çözebiliriz. Bunun bariz bir örneği bu da.
+
+557
+02:06:17,395 --> 02:06:34,435
+Lokal aramada da bunu daha bir şekilde görebiliyoruz. Yine mesela başka bir örnek, ne bileyim bir teröristin main şifresini mesela kırmak gerekiyor diyelim ki. Main şifresini kırmaya kalkarken brute force teknikler mantıklı mı?
+
+558
+02:06:39,764 --> 02:06:42,724
+Mail şifresini bulmaya çalışırken birisinin.
+
+559
+02:06:43,884 --> 02:06:44,444
+Brutforce.
+
+560
+02:06:44,904 --> 02:06:47,304
+Değil hocam. Milyarlarca belki de.
+
+561
+02:06:47,584 --> 02:06:51,904
+Değil değil mi? Brutforce'da bunu denemenin çok da fazla değil. Onun yerine ne yapmaya çalışırsınız?
+
+562
+02:06:53,264 --> 02:06:58,124
+İnsanların şifrelerinde genelde ne yaparlar? Genelde yaptıkları bazı şeyler vardır. Belli patternlar vardır.
+
+563
+02:06:58,644 --> 02:07:02,164
+Neler vardır mesela? Neleri kullanıyorsunuz sizler şifrenizde? Demeyeyim.
+
+564
+02:07:02,164 --> 02:07:06,804
+Yani insanlar genelde neleri kullanırlar? Çok bilinçli olmayanlar.
+
+565
+02:07:07,475 --> 02:07:09,136
+Bilimişte olanından bahsediyoruz.
+
+566
+02:07:09,256 --> 02:07:14,536
+Sıralı sayılar, doğum tarihi, isim vesaire.
+
+567
+02:07:14,536 --> 02:07:24,036
+Evlilik, yıl dönemi vesaire. Bir sürü böyle hayatlarında önemli olan, unutmayacaklarını düşündükleri çok temel olayları mesela ne yapabilirler?
+
+568
+02:07:24,176 --> 02:07:27,096
+İşte okul numarası falan filan.
+
+569
+02:07:27,096 --> 02:07:31,815
+Şimdi dolayısıyla bu tarz patternları ne yaparsınız öncelikle?
+
+570
+02:07:32,467 --> 02:07:50,667
+Denersiniz. İlk önce onlara erişmeye çalışırsınız zaten o kişiye ait bu tarz bilgileri. Ondan sonra onlarla ilgili kombinasyonları öncelikle denersiniz ki bir miktar sezgi aslında elde etmiş olasınız diye. Ama dediğim gibi yine de iş bulut borsa çözülebilecek bir şey değil.
+
+571
+02:07:50,667 --> 02:07:59,927
+Peki. Şimdi başka bir konuya gelelim. Konu derken bir ayrıma.
+
+572
+02:08:00,851 --> 02:08:27,192
+Ayrık ve sürekli uzaylar kavramından bahsediyoruz. Şu ana kadar arkadaşlar konuştuğumuz, en baştan beri konuştuğumuz bütün arama uzaylarının hepsi ayrık uzay, yani diskret uzaylardı. Ne demek bu? Bir noktadan gidebilecek noktaların sayısının sınırlı olduğundan hep bahsettik. Yani B dediğimiz şey, B, branching faktördü hatırlarsanız, bu sonlu bir sayıdaydı. 3, 5, 10, 100 artık neyse.
+
+573
+02:08:27,828 --> 02:08:40,508
+Bunların hepsi denenebilir. Yani gittirebilecek noktalar belli. 100 tane var mesela. Bu 100 taneye erişebilirsiniz. Erişirsiniz, erişmezsiniz. Orası ayrılır. Ama erişebileceğiniz bir sayı yani sınırlı bir sayı.
+
+574
+02:08:42,195 --> 02:08:57,556
+Sürekli uzay ne demek? Bir noktadan sonsuz noktaya gidilebilir. Mesela işte bir fonksiyon var elinizde. Şurada görüyorsunuz işte f x1 virgül x2 fonksiyonu eşitir. x1'in karesi artı x2'nin karesi. Şimdi şunu birazcık büyütelim.
+
+575
+02:09:01,108 --> 02:09:10,308
+Fonksiyon bu. Yukarıya doğru çıkıyor bu. Yani şu yuvarlaklar neyi temsil ediyor arkadaşlar? Bu yuvarlakların üzerindeki noktaların ne özelliği var?
+
+576
+02:09:15,155 --> 02:09:20,996
+Yuvarlak dedim, çizgiden oluşan. Mesela şu yuvarlağın üstündeki noktaların bir özelliği var. Ne olabilir acaba o?
+
+577
+02:09:23,115 --> 02:09:24,315
+Çizgisi sağlıyor mu hocam?
+
+578
+02:09:25,135 --> 02:09:27,135
+Sağlıyor değil, ne demek? Neyi sağlıyor?
+
+579
+02:09:29,295 --> 02:09:30,275
+Fonksiyonu sağlıyor.
+
+580
+02:09:31,536 --> 02:09:33,015
+Fonksiyonu sağlamak demek ne demek?
+
+581
+02:09:33,355 --> 02:09:36,135
+Yani X1, X1, X2 için.
+
+582
+02:09:39,255 --> 02:09:42,115
+Fonksiyonu sağlamak demek ne demek? Yani sonucu bu bir değer.
+
+583
+02:09:43,252 --> 02:09:52,752
+Yani x1 ve x2'nin her bir değeri için fonksiyonu bir değeri var. Fonksiyonu zaten belli. Şuradaki çizginin üzerindeki noktaların nasıl bir özelliği olabilir?
+
+584
+02:09:58,036 --> 02:10:07,435
+Sayısal analiz falan dersi almışsınızdır. Orada böyle minimum maksimum falan bulma problemi hiç çözmediniz mi? Çözmüşsünüzdür diye hatırlıyorum.
+
+585
+02:10:18,355 --> 02:10:29,291
+Buradaki noktaların özelliği arkadaşlar, F değerlerinin aynı olması. Yani fonksiyon değerlerinin aynı olması. Şuradaki, şunun üzerindeki...
+
+586
+02:10:35,123 --> 02:10:58,844
+Mesela şu noktayla şu noktanın F değerleri aynı. Tamam. Mesela şu noktayla şu noktanın da F değerleri aynı ama bunlar birbirinden farklı artık. Tamam. Yani bu çizginin üzerindekilerin F değerleri aynı. Bu çizginin üzerindekilerin F değerleri aynı. Dolayısıyla bunlar hani coğrafyada izohips eğrileri vardı hatırlar mısınız? Yükseklik eğrileri.
+
+587
+02:11:01,076 --> 02:11:01,876
+Evet hocam.
+
+588
+02:11:02,315 --> 02:11:10,376
+İşte onlar buradaki gördüğünüz yer. Dolayısıyla yukarıya doğru yükselen bir dağ var burada. Tamam. Anlaşıldı mı?
+
+589
+02:11:11,935 --> 02:11:20,155
+Yukarıya doğru yükselen bir dağ var. Ve bizden istenen şey bu fonksiyonun maksimum olduğu yerlerisi.
+
+590
+02:11:20,627 --> 02:11:43,187
+Onu bulmamız istemiyor. Tamam mı? Burada rastgele bir başlangıçta başlayacağız ve onu iyileştireceğiz. Lokal arama yapacağız. Ama bir noktadan gidilebilecek, hangi durumlara gidebilirim ben? Sürekli bir uzaydayım ben şu anda. Sınırlı bir şey yok. Hani beş tane yön var falan gibisinden bir şey yok. Burada milyon demin sonsuz sayıda yön var değil mi? Gidilebilecek. Hepsini alıp denemek mümkün mü?
+
+591
+02:11:46,292 --> 02:12:03,211
+Değil hocam. Değil. İçlerinden rastgele bir parçasını seçip hareket edebilirsin. Yani dört tane yön belirleyip o dört tane yönde hareket edebileceğim ben sadece diyebilirsiniz. Ama burada çok da makul bir hareket değil. Çünkü neden? Fonksiyon elinizde ise eğer fonksiyonun neyi size yol gösterir burada?
+
+592
+02:12:10,036 --> 02:12:13,055
+Fonsiyon sizin elinizde ise bu fonksiyon neyi size yol gösterir?
+
+593
+02:12:18,899 --> 02:12:29,899
+Türev'in hocam. Aynen öyle fonksiyonun. Türev'i bize yol gösterir. Türev bize burada nasıl bir şey söyler?
+
+594
+02:12:31,779 --> 02:12:44,159
+Yukarı mı çıkıyor, aşağı mı yedin? Yol gösterir. Bu noktadaki türev nasıl bir şeydir? Şöyle bir şeydir işte değil mi? Şöyle bir şeydir. Şu yöndedir aslında.
+
+595
+02:12:49,108 --> 02:12:59,508
+Şu yönde bir şeydir. Biz burada TÜREV'in tersi yönüne doğru hareket etmek isteriz. Etmemiz mantıklı bir hareket olur.
+
+596
+02:12:59,508 --> 02:13:05,268
+Ve orada mesela biz gideriz. Bunun devamında ikiye varırız.
+
+597
+02:13:14,963 --> 02:13:15,463
+Aynen.
+
+598
+02:13:20,340 --> 02:13:36,260
+Buradaki türev aşağı yukarı, işte, oradaki türev aşağı yukarı şunun ters yönleri, buradaki türev aşağı yukarı şöyle yönleri. En sona buraya yaklaştığınızda türev ne olur? En tepeye vardığınızda.
+
+599
+02:13:40,180 --> 02:13:40,860
+Sıfır olur.
+
+600
+02:13:41,620 --> 02:13:46,500
+Sıfır olur değil mi? O zaman artık hareket etmenize gerek olmadığının farkına varırsınız.
+
+601
+02:13:47,860 --> 02:13:55,740
+Şimdi bu süreç aslında rastgele bir başlangıç noktası ile başta bir fonksiyonun üzerinde. Sonra o fonksiyonun türevine göre hareket et.
+
+602
+02:13:56,440 --> 02:14:00,280
+Aslında bunun adı ne arkadaşlar? Bu sürecin adı ne?
+
+603
+02:14:06,868 --> 02:14:08,388
+Gradiyan Desen mi hocam?
+
+604
+02:14:08,768 --> 02:14:20,940
+Evet, Gradiyan Desen. Eğim Düşme Algoritması, Gradiyan Desen. Mesela bugün adını sıklıkla duyduğunuz bütün derin öğrenme yaparsınız. Mimarileri vs. Bunların hepsinin...
+
+605
+02:14:21,427 --> 02:14:47,867
+Eğitim süreçleri burada gördüğünüz şey aslında. Rastgele bir başlangıç ağırlıkların başlangıç noktasından başlanıyor ve o iyileştirilmeye çalışıyor. Burada ayrık uzay olmadığı için o deminki yöntemlerle bir şey yapamıyoruz. Ama sürekli uzayda bize yön gösteren bir şey var. Çünkü ayrık uzaydaki gibi hareket etmeye kalkarsak burada çok iyi bir şey çıkmaz. Ne derler ona.
+
+606
+02:14:48,287 --> 02:15:06,608
+Ayrık uzayda nasıl hareket edebilirsiniz? Ayrık uzaydaymış gibi nasıl hareket edebilirsiniz? Kendinize yönler belirlersiniz. 5-10 sınırlı sayıda. O yönlerden sizi en iyileştiren hangisi ise o yöne gidersiniz. Orada da gidersiniz, orada da gidersiniz ama o size her zaman çok iyi bir çözüm sunmaz.
+
+607
+02:15:07,091 --> 02:15:30,872
+Çünkü ayrık uzay nasıldır? Kesiklidir. Ve çok minnacık farklılıkların büyük sonuçlara yol açabildiği sürekli uzaylarda çok işimize rotaz bir yöntem yaramaz. O yüzden ne yapılıyor temelde? Gradient Lisan tabanlı, ADAM'dır, RMS Probe falan gibisinden.
+
+608
+02:15:31,347 --> 02:15:47,387
+Adagrax, bunlar Adam'ın öncüleri. Bu tarz algoritmalarla dediğimiz gibi sürekli uzaylarda optimizasyon yapılıyor. Tabii o uzaylar büyük uzaylar. Yani buradaki şu anda üzerine çalıştığımızda iki boyutlu bir uzay.
+
+609
+02:15:47,764 --> 02:16:10,984
+Ne bileyim işte bir dense net mimarisi mesela geçen dün akşam baktım. 20 milyon tane falan parametresi var. Daha fazla büyük olanları bile var biliyorsunuz. Yani 20 milyon boyutlu bir uzayda optimizasyon yapıyorsunuz orada mesela. Ama algoritma aynı algoritma. Matematiğin güzelliği burası işte. Yani iki boyutta çalışan 20 milyon boyutta da çalışıyor. Öyle söyleyeyim. Tamam.
+
+610
+02:16:15,412 --> 02:16:17,412
+Şimdi buraya kapatalım.
+
+611
+02:16:23,859 --> 02:16:47,880
+Şimdi bir uygulamadan bahsedeceğim. Şimdi bir problemimiz var. Problemimiz şu. En çarperlik bir alan var. Bir ev olsun bu mesela. Sekiz yönde hareket edebilen. Yani diskret bir uzaydayız. Sekiz yönde hareket edebilen bir süpürgemiz olsun. Robot süpürge.
+
+612
+02:16:49,043 --> 02:17:09,443
+Minimum açı da maksimum alan gezmesini istiyoruz. Bakın minimum açı olsun, yani minimum dönüşte maksimum alan gezmesini istiyoruz. Ve hareketlerini optimize etmesini istiyoruz. Yani n çarpenlik bir alanı her bir adımda bir tane kare gidebiliyor gibi düşünelim.
+
+613
+02:17:10,344 --> 02:17:14,943
+n çarpı n-1, yani n kare eksi 1. n çarpı n-1 şu şekilde yani.
+
+614
+02:17:17,683 --> 02:17:40,723
+Yazmasak da fark etmezdi. Enkara eksi bir adet hareket edecek ki bütün alanı gezebilmesinin mümkün olsun. Minimum açıda dönüşte bu işi yapsın istiyorum ve maksimum alanı geçsin istiyorum. Minimum açıda dönüşten kastım ne demek? Sürekli dönerse mesela dönmek ne yapmamızı gerektirir arkadaşlar?
+
+615
+02:17:41,523 --> 02:18:08,743
+Yavaşlamamızı gerektirir değil mi? Dönmek sayı açılarına mümkün olduğu kadar smooth yapabilirsek bu daha hızlı hareket edebilmemizi sağlar. Çok ani dik dönüşler içeren bir rota bulmaya kalkarsak bu çok hızlı tamamlanabilen bir şey olmaz. Ve bir yandan da maksimum olun. Evin her yerini geçsin istiyoruz. Her yeri tarasın istiyoruz. Temizlesin istiyoruz. Yani burada aslında deminki problemlerden biraz farklı olarak şöyle bir şey var bakın dikkat edin.
+
+616
+02:18:09,556 --> 02:18:21,636
+İki tane amacınız var. Yani bir tanesi minimum açı, bir tanesi maksimum alan. İyilik fonksiyonumuz iki tane bileşene sahip.
+
+617
+02:18:21,636 --> 02:18:23,995
+Peki.
+
+618
+02:18:25,620 --> 02:18:42,100
+Yani bu tepe tırmanma ya da işte göreceğiz genetik algoritmalar falan gibisinden lokal arama problemlerinde illa tek birleşik yani iyilik fonksiyonu, objektif fonksiyonu, loss fonksiyonu bunların hepsi farklı uzmanlık alanlarındaki aynı şeyi ifade etmenin değişik yolları.
+
+619
+02:18:42,720 --> 02:18:46,819
+Yani fitness fonksiyonu, objektif fonksiyonu, loss fonksiyonu bunların hepsi aynı şeyi söylerler.
+
+620
+02:18:48,060 --> 02:18:52,520
+Bir minimum, bir maksimum falan olabilir ama ifade ettikleri şey, kavram aynı şey.
+
+621
+02:18:53,203 --> 02:19:07,203
+Bu kavramın tek bir birleşene sahip olması gerekmiyor. Birden fazla birleşene olabilir. Mesela bu problemde iki tane tanımlamışız. Bir tanesi açıyı minimum yapsın, diğeri ise alanı maksimum yapsın. Buraya tekrardan döndürürüm.
+
+622
+02:19:07,636 --> 02:19:31,595
+Şimdi temsili nasıl gerçekleştireceğiz? Yani bir çözümü nasıl ifade edeceğiz? Dediğim gibi çözümümüz m²-1 adet hareket olacak. Bu hareketleri de biz 0 ile 8 arası yönleri belirten sayıları olarak gösteririz. Mesela 0 olduğu yerde kalma olsun, diğer 8 yöne de hareket edebileceğimizi gösterelim. Yani bizim çözümümüz...
+
+623
+02:19:31,924 --> 02:19:47,064
+N8 ise mesela diyelim ki N8 ise 63 tane sayı olacak. Bu 63 tane sayının her biri 0 ile 8 arasında bir sayı. Tam sayılar. Ama hareketleri bu şekilde tepsi edeceğiz.
+
+624
+02:19:50,195 --> 02:20:15,195
+Bunun bir şeyi var, kodu var. Onu zaten inceleyebilirsiniz. Buraya yazdım dersin sayfasına erişebilirsiniz. Nasıl bir çözüm yapmışız tepe tırmanmayla bunu gerçekleştirirken? Küçük bir değişiklik var, onu birazdan söyleyeceğim. Standarda göre. Bir iki değişiklik var. Rastgele bir çözümle başlayalım. Rastgele bir çözüm demek ne demek? 63 tane sayı üreteceksiniz 0 ile 8 arasında. Rastgele bir çözüm bu.
+
+625
+02:20:16,244 --> 02:20:39,164
+G kez, yani işte maksimum bu G neyse, döneceğiz. Çözümden, yani elinizdeki mevcut çözümden, yüzde mu kadar rastgele değişikliklerle P adet yeni çözümler. Şimdi bütün P, bütün çözümleri üretmek, yani o durumdan gidilebilecek bütün durumları üretmek korkunç zor, korkunç fazla şey. O yüzden onların mesela bir kısmına P adet, işte 100 tane üret, 200 tane üret. Tamam.
+
+626
+02:20:40,020 --> 02:20:54,959
+Yeni çözüm üret. Peki, % muğun kadar değiştir. Yani % şu kadarını değiştirelim. Mesela 10 dediysek muğun'ya, %10'unu değiştir diyoruz. Bir tane üretiyoruz. %10'unu başka değiştiriyoruz, o da bir tane üretiyor. Her an şeklinde böyle ürettik.
+
+627
+02:20:55,860 --> 02:21:01,380
+Üretilen çözümlerin iyilik değerlerini hesapla ne onlar? Dönüş aşılarını topla, gidilen farklı nokta sayısını topla.
+
+628
+02:21:01,940 --> 02:21:25,500
+Ve buradan toplam bir iyilik elde etmeniz lazım. Tamam mı? Toplam bir iyilik elde etmeniz lazım her bir çözüm için. Üretilenlerden en iyisi mevcuttan iyiyse çözümü hata ve mu'yu azalt. Kötüyse mu oranını arttırır. Şimdi burada simulated en yanık yok. Çünkü hani köküyse kabul et diye bir şey yok. Ama köküyse ne demiştim? Bakın mu oranını arttırır. Mu oranı neydi?
+
+629
+02:21:25,907 --> 02:21:42,788
+Yeni bir şeyler üretilmedeki değişiklik oranıydı. İyi bir çözüm bulduysam azaltıyorum. Bu yüzdelikle değişiklik yaptığında iyi şeyler bulabiliyorsun. O yüzden onu bir miktar azaltalım.
+
+630
+02:21:43,152 --> 02:22:09,291
+Daha küçük küçük bir şeyler olsun. Çünkü değişiklikler ileriye doğru giderek azalsın istiyorum ben. Kötüyse de mu oranını arttırayım. Bu kadar değişiklikte iyi bir şey çıkmadı. Daha büyük bir değişiklikle yapalım. Bu şey aslında yani mu oranını azaltmak ve arttırmak tamamen opsiyonel bir şey. Yani öyle bir şey yapmasanız da olur. Üretilenlerin en iyisi mevcut iyiyse çözümü atarsınız. Burada bitirebilirsiniz ama buradaki kod da o şekilde değil bu anlattığım şekilde.
+
+631
+02:22:09,876 --> 02:22:32,216
+Başka bir şey var ne o? TK Max Kes. Daha iyisi üretilmediyse çözümü rastgele başlatalım. Yani belli bir adım boyunca mevcut çözümü iyileştiremiyorsan, bir kere çözümü iyileştiremediysen direkt çıkmıyor da, TK Max Kes daha iyi çözüm üretemediysen o zaman rastgele başlatabilir çözümle başlıyoruz.
+
+632
+02:22:32,655 --> 02:22:34,896
+Şimdi bunu görelim nasıl bir şey.
+
+633
+02:22:35,507 --> 02:23:00,828
+Şimdi temsil demiştik ya hani altmış tane rakam. Altmış tane rakam burada şurada görüyorsunuz. Şurada altmış tane rakam var. Bu bir çözüm. Bu çözümü temsil ediyor ama her çözüm aslında bu şekilde. Yani içinde birden sekize kadar rakamlar olan ve şey altmış uzunluğunda bir dizi. Mesela rastgele bir başlangıç. Peki buradaki rakamlar ne ifade ediyorlar onu söyleyeyim.
+
+634
+02:23:01,523 --> 02:23:25,804
+Şu yukarıda gördüğünüz şeyi ifade ediyorum. Mesela buraya kontrol edersek, bu şeyden başlıyor. Bir saniye. Bire birden başlıyoruz. Bire birdeyiz biz. Bire birde biri uyguladıyor. Biri uygula demek ne demek? Yukarıya doğru hareket. Peki, gittim yukarıya doğru. Sonra altı uyguladıyor. Altı ne tarafaymış? Bu tarafaymış. İşte altı şöyle. Pardon.
+
+635
+02:23:26,324 --> 02:23:51,123
+Şöyle gittim. Sonra 7 uygula diyor. 7 ne? Bu tarafa doğru git diyor. Sonra 2, 2 diyor. 2 şöyle yukarıya doğru iki kez gitmek. Gittim, gittim. Sonra 1 diyor. Bir yukarıya çıkmak. Sonra 6 diyor. 3 kez 6 uyguluyor. Şöyle 1, 2, 3 kez 6 uyguluyor. Çekme. Anladınız buradaki mevzuyu. Nasıl bir şey o neyi temsil ettiğini vuranın. Tamam.
+
+636
+02:23:51,700 --> 02:24:09,600
+Burada ben rastgele bir başlangıçla başlamıştım ve rastgele başlangıçla şu sonucu vermiş bana. Şurayı görüyorsunuz. Karman karışık bir şey. İstediğim şeyler iki taneydi. Neydi bakın arkadaşlar? Bir tanesi maksimum alan geçsin, diğeri ise minimum açıyla geçsin istiyorduk değil mi? Bu ikisiydi. Burada ne yapıyoruz?
+
+637
+02:24:12,275 --> 02:24:37,415
+Buna göre işte çözümden, rastgele çözümler üretiyoruz ve mesela P'yi 200 seçmişiz. Şurada görüyorsunuz, 200 tane çözüm üretmişiz buradan. O 200 tanenin içerisinden en iyisiyle zaten iyisi varsa ondan geçmişiz. Bu şekilde hareketmişiz. Şimdi peki şurası ne arkadaşlar? Şu sürecin ilerleyişi yazıyor burada. Buradaki x ekseni nedir, y ekseni nedir sizce? x ekseni ve y ekseni. Şunu birazcık büyüteyim hatta.
+
+638
+02:24:49,236 --> 02:24:54,236
+Evet. Ne olabilir buradaki x ekseni ve y ekseni?
+
+639
+02:25:11,636 --> 02:25:16,335
+X ekseni zaman arkadaşlar. Y ekseni ise bizim neyimiz olabilir peki?
+
+640
+02:25:20,115 --> 02:25:21,475
+Kızımız olabilir mi hocam?
+
+641
+02:25:22,435 --> 02:25:22,675
+Hayır.
+
+642
+02:25:27,059 --> 02:25:45,419
+O anki mevcut durumu iyiliği arkadaşlar. Şimdi böyle aşağı doğru biraz iniyor sonra biraz zıplıyor. Aşağı doğru biraz iniyor sonra zıplıyor. Ama o aşağı indikten sonra zıplamasının öncesinde bakın dikkat edin nasıl yerler var. Görüyor musunuz? Düz yerler var, alanlar var.
+
+643
+02:25:46,131 --> 02:26:09,851
+Bu TK Max 50 mesela. TK Max 50 neydi? TK Max kez aynı kaldıysa restart ediyoruz. Yani bir başlangıçtan başlıyor, aşağı doğru iyileşme başlıyor, devam ediyor, devam ediyor. Mesela işte şu olsun için, devam ediyor, devam ediyor, devam ediyor. Buraya kadar geldi. Sonra bir noktadan sonra 50 kez değişim uygulamışım ama hiçbirinde mevcuttan daha iyi bir şey elde edememişim. O zaman restart. Tekrardan en başa dönüyor.
+
+644
+02:26:10,260 --> 02:26:31,580
+Böyle gidiyoruz tekrardan. Dolayısıyla restart ediyorum sürekli tepeye tırmanmayı. Anlatabildim mi? O yüzden bu bir yukarı bir aşağı. Bunların en iyi çözüm burada şurası. Şurada görüyorsunuz. H değeri en düşük olan yer burası. Bu noktaya dair de çözüm şurada gördüğünüz şey. Tamam mı? Şimdi burada belirtmek istedim. İki nokta, bir nokta daha kaldı.
+
+645
+02:26:39,283 --> 02:26:56,524
+Bileşenler, iki tane demiştim. Bir tanesi min açı, diğeriyse max alan. Şimdi burada iki bileşen var. İki bileşenin range'leri birbirinden çok farklı olursa bunları toplamak problem oluşturur mu?
+
+646
+02:26:56,524 --> 02:27:00,064
+Birleştirirken.
+
+647
+02:27:02,004 --> 02:27:13,104
+İki tane şeye birden optimizasyon yapmaya çalışıyoruz. Burada mesela bir tanesi sıfırla bin arasında değişiyor, bir tanesi birle sıfır arasında değişiyor sadece. Bu ikisini toplarsanız ne olur?
+
+648
+02:27:16,724 --> 02:27:19,164
+İki bileşene göre de optimizasyon yapmış olur musunuz?
+
+649
+02:27:24,115 --> 02:27:41,256
+Olmaz değil mi? Bir tanesi 1 ile 1 arasında düşüyor, bir tanesi 1 ile 0. Yani o büyük olan rakam her zaman ötekisini ne yapacaktır? Ezecektir. Dolayısıyla bunların rençlerinin birbirlerine ne yapması lazım? Eş hale getirmeniz lazım birleşenlerin. Artı ikinci nokta ne? Bir tanesi minimum, bir tanesi maksimum dikkat ettiyseniz.
+
+650
+02:27:41,876 --> 02:27:58,736
+Yani açıların toplamının minimum olmasını istiyorum. Gezilen alanının da maksimum olmasını istiyorum. Min ile max'ı toplamanız mantıklı mı? Değil. Ne yapmanız lazım? Ya ikisini de min'e çevireceksiniz ya da ikisini de max'a çevireceksiniz. Bir bölgesiyle falan çevirmek zaten oldukça kolay olabilecektir.
+
+651
+02:27:59,396 --> 02:28:09,396
+Burada mesela başka en son söyleyeceğim şey de yeni bir bileşen de ekleyebilirsiniz. İstediğiniz kadar bileşen ekleyebilirsiniz. Yani mesela diyebilirsiniz ki burada öyle bir şey yok tabii.
+
+652
+02:28:09,843 --> 02:28:21,043
+Ona dikkat etmiyor. Mesela son nokta, varış noktasına gelsin. Yani hani gelsin gelsin aynı yere gelsin. Anlatabildim mi? Böyle bir şey de isteyebilirsiniz. O durumda ne yapmanız gerekecektir?
+
+653
+02:28:21,556 --> 02:28:47,355
+Bu hareketin son noktası neresiyse o noktanın hedefe, hedef değil başlangıca olan uzaklığını da nereye katmanız gerekecektir? Şuradaki şeyin içerisine, bu bileşen içerisinde mesela üç bileşen olacak orada. Tamam mı? Üç bileşenle bunu gerçekleştirmeniz gerek. Anlaşıldı mı arkadaşlar? Yapı. Tamam, güzel. Peki arkadaşlar, bu haftalık bu kadar.
+
+654
+02:28:48,371 --> 02:29:10,491
+Soru soran var mı? Önümüzdeki hafta zaten ödeviniz gelecek. Ödeviniz buradaki gibi bir tarz bir şeyler olabilecek muhtemelen. Daha kesin karar vermedim ama bu tarz bir optimizasyon yapmanızı isteyeceğim herhalde. Önümüzdeki haftaki ödevinizde. Tabii onu genetik algoritma anlattıktan sonra. Peki.
+
+655
+02:29:10,879 --> 02:29:16,639
+Hepinize iyi günler diliyorum arkadaşlar. Haftaya aynı gün aynı saatte kısmetse görüşmek üzere.
+
+656
+02:29:17,219 --> 02:29:17,779
+Görüşmek üzere.
+
+657
+02:29:17,860 --> 02:29:18,479
+Görüşürüz hocam.
+
+658
+02:29:18,599 --> 02:29:19,399
+İyi günler hocam.

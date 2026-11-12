@@ -1,0 +1,2527 @@
+1
+00:03:36,211 --> 00:03:37,911
+Günaydın arkadaşlar. Nasılsınız?
+
+2
+00:03:56,436 --> 00:04:00,436
+Günaydın.
+
+3
+00:04:02,436 --> 00:04:03,836
+Günaydın hocam.
+
+4
+00:04:04,536 --> 00:04:05,096
+Günaydın.
+
+5
+00:04:06,436 --> 00:04:09,695
+Şimdi arkadaşlar, günaydın [öğrenci].
+
+6
+00:04:11,536 --> 00:04:13,936
+Bakalım bu hafta ne yapacakmışız?
+
+7
+00:04:47,987 --> 00:04:56,887
+18.6. Evet, bugün yapay zeka giriş ve peyceye yapacağız.
+
+8
+00:05:03,252 --> 00:05:05,252
+Geçen hafta...
+
+9
+00:05:35,732 --> 00:05:46,292
+Geçen hafta bu slide'ın başlamıştık, hatırlıyorsunuz. Peki, neler konuştuk geçen hafta? Biraz sonra hatırlatın bakalım.
+
+10
+00:05:50,100 --> 00:06:05,600
+Hocam, genel olarak sizce yapay zeka zeki midir gibi? Bir de mesela yapay zeka ile terapist arasındaki konuşmalarda hangisinin yapay zeka olduğunu anlayabiliyor muyuz?
+
+11
+00:06:06,980 --> 00:06:08,580
+Evet, bir elbize vardı.
+
+12
+00:06:10,020 --> 00:06:13,040
+Evet, genel olarak bunlar üzerinde bize yorum yaptırmıştınız.
+
+13
+00:06:14,259 --> 00:06:15,020
+Başka?
+
+14
+00:06:18,420 --> 00:06:19,560
+...arkılatlamak isteyen.
+
+15
+00:06:22,780 --> 00:06:27,000
+Android olduğunuzu ve Android olduğumuza dair örnekler vermiştiniz hocam.
+
+16
+00:06:27,400 --> 00:06:28,580
+Daha iyi anlayabilmemiz için.
+
+17
+00:06:29,699 --> 00:06:30,759
+Tamam.
+
+18
+00:06:31,759 --> 00:06:34,759
+Şimdi burada...
+
+19
+00:06:34,759 --> 00:06:41,700
+...bir sisteme zeki dememenin ölçütünü birazcık tartışmıştık.
+
+20
+00:06:43,280 --> 00:06:44,492
+Buradaki...
+
+21
+00:06:44,531 --> 00:07:06,471
+Çok temel aslında iki tane ölçüden bahsettik. Birincisi dışarıdan ölçülebilen şeylerle bakarak bir davranış. Yani sonuçlar üzerinden aslında bir değerlendirme yapmaktan bahsetmiştik.
+
+22
+00:07:09,043 --> 00:07:22,163
+Dışarıdan gözlemliyorsunuz bir sistemin hareketlerini, davranışlarını, tepkilerini. Bunlar sonuçlar aslında. Bu sonuçlara bakarak bu sistem zekimdir diye buna bir karar veriyorsunuz. Bu çok temel olarak hangi testti?
+
+23
+00:07:27,923 --> 00:07:31,003
+Hangi test buna öneriyordu? Bu şekilde yapılması gerektiğini.
+
+24
+00:07:43,540 --> 00:08:10,879
+Turing testi aynen öyle. Turing testinde siz diğer taraftaki, diğer odadaki bir sistemle chat üzerinden bağlantı kuruyorsunuz. Chat olarak işte siz bir şeyler yazın, o işler yazıyor. O üniversite yaptığı, verdiği cevaplara bakarak bir tahmininde bulunuyorsunuz. Yani altlıklar üzerinden bir tahmininde bulunuyorsunuz. Diyorsunuz ki bu karşımdaki sistem zekilir ya da değildir.
+
+25
+00:08:11,540 --> 00:08:23,740
+Bu bir yaklaşımdı. Buna fonksiyonelite deniyor. Yani dışarıdan ölçülebilen fonksiyonlarının tepkilerinin ne göre bir sisteme zeki ya da değil demek.
+
+26
+00:08:23,740 --> 00:08:31,480
+Peki, diğer, hayır buna bakmamalıyız biz diyenler neyi ifade ediyorlardı, neye bakmamalıyız diyorlardı?
+
+27
+00:08:51,539 --> 00:09:00,139
+Turing testi zekayı ölçmez diyenler yani, neye bakmalıyız diyorlardı. Zeka neyin sıfatıdır diyorlardı.
+
+28
+00:09:00,139 --> 00:09:05,339
+Hocam, süreçlere bakmamız gerekiyor. Yani onu nasıl yaptığına bakmamız gerekiyor.
+
+29
+00:09:05,339 --> 00:09:15,339
+Aynen öyle. Yani bir davranışın sonucuna değil de o davranışın nasıl üretildiğine bakmalıyız. Nasıl üretildiği aslında zekaya dair bir şeydir.
+
+30
+00:09:15,572 --> 00:09:38,351
+Burada işte Serlin'in için odası deneyi vardı. Ya da Galatasaray'ın sınıf arkadaşı diye bir şey vermiştir hatırlıyorsunuz. Ya da Netblock'un soru cevap ağacı vardı. Burada aslında ne diyorlardı? Dışarıdan baktığımızda çok bilgi gözükebilir bir sistem. İnsandan ayırt edilemeyebilir. Ama arka tarafta bu çok çok basit bir mekanizma ne gerçekleniyor olabilir?
+
+31
+00:09:39,316 --> 00:10:00,000
+Bir programla yapılan bir şey. Hiçbir şekilde zeki olamaz aslında diye bir görüş vardı. Tabii bunu ama ölçmenin bir yolu var mı? Çok kolay değil belki. Aslında şöyle bir gerçek var. Bizler diğer insan...
+
+32
+00:10:00,000 --> 00:10:10,400
+İnsanları, mesela bir arkadaşımızın ya da bir haylanın, herhangi bir sistem öyle söyleyelim. Zeki olup olmadığını nasıl ölçüyoruz? İnsanlar olarak.
+
+33
+00:10:18,580 --> 00:10:22,380
+Probleme bakış şekli, çözüm üretme şekli.
+
+34
+00:10:23,779 --> 00:10:25,960
+Çözüm üretme şeklini nasıl görüyorsun?
+
+35
+00:10:27,900 --> 00:10:32,000
+Ya pratik olması, az maliyetli olması gibi mesela.
+
+36
+00:10:33,820 --> 00:10:45,420
+Tamam, doğru. Ama bunların hepsi nasıl şeyler? Dışarıdan gözlemleyebildiğin şeyler değil mi? Dışarıdan gözlemleyerek. Bunlar aslında yine sen de altlıklara bakıyorsun.
+
+37
+00:10:46,067 --> 00:10:52,748
+Dışarıdan, yoksa beyninin içerisindeki mesela insanın zekli olmasından bahsediyorum.
+
+38
+00:10:52,748 --> 00:10:56,867
+Beynin içerisindeki mekanizmalar, streçlere dair bir şey ne yapamıyorsun sen de?
+
+39
+00:10:58,867 --> 00:11:02,467
+Öyle bir bilgi kullanamıyorsun sen de outputlara bakmak yolundasın, öyle değil mi?
+
+40
+00:11:04,067 --> 00:11:04,867
+Evet.
+
+41
+00:11:04,980 --> 00:11:13,539
+Başka elinde bir şey yok. Yoksa bir insanın beynindeki süreçler, aa şuradaki şu sinirden şu sinire atladı, şöyle oldu böyle oldu gibisinden süreçlere bizden erişemiyoruz.
+
+42
+00:11:13,539 --> 00:11:21,200
+Ne kendimizinkine ne de başkasınınkine. Dolayısıyla bu süreçlere dair zeki ya da değil diye bir şey talepemiz mümkün değil. Biz de ne yapıyoruz insanlar olarak?
+
+43
+00:11:21,740 --> 00:11:25,940
+Turing testindeki bir şey yapıyoruz aslında. Karşımızdaki sistemin.
+
+44
+00:11:26,707 --> 00:11:38,367
+Zeki olup olmadığını sorgulamıyoruz tabii ki ama bir davranışı gördüğümüz zaman, adotlarına bakarak o davranışın zeki ya da değil diye karar veriyoruz. Sürece dair çünkü çok fazla bir bilgimiz olmayabiliyor genelde.
+
+45
+00:11:39,167 --> 00:11:49,067
+Yani şöyle bir şey düşünün, işte Kasparov dünyada zaten şampiyonuydu mesela bir zamanlar. Hala da iyi bir oyundu da.
+
+46
+00:11:50,772 --> 00:12:07,172
+Onun mesela zeki bir insan olduğunu düşünebilirsiniz değil mi? Muhtemelen zeki birisidir. Peki bu ona zeki diyor olmamızın sebebi ne? Dünya satranç şampiyonu olması. Dünya satranç şampiyonu olmak dışarıdan gözlemlenebilir bir şey mi?
+
+47
+00:12:09,912 --> 00:12:10,751
+Evet.
+
+48
+00:12:10,751 --> 00:12:17,471
+Dışarıdan gözlemleyebiliyoruz. Çok iyi satranç oynuyor mu mesela?
+
+49
+00:12:17,855 --> 00:12:21,415
+Ama tabi burada işte oradaki soru şu geliyor aklına.
+
+50
+00:12:22,836 --> 00:12:50,096
+Kasparov'u yer alan bir sisteme zeki demeli miyiz dememeli miyiz? Kasparov'u yeniyor mesela. Hani eğer satranç bazındaki iyiliği, iyi oynamayı, iyi performansı zekanın bir ölçütlü bir kriteri olarak kabul edersek o zaman Deep Blue Kasparov'dan daha zeki falan gibisinden bir şey. Hatta şu anki programlar çok çok daha zekiler falan gibisinden bir şey denk geliyor. Ama oradaki sıkıntı ne? Yine aynı şey. Bunlar birer program.
+
+51
+00:12:51,091 --> 00:13:16,091
+Çok ne derler ona? Bildiğimiz, yani sizler de çok kolaylıkla yapabilirsiniz. Çok kolaylıkla demeyelim ama yapabileceğiniz programlar, yazabileceğiniz programlar. Bu dersin işte oyunlar kısmında göreceğiz olmalı. Algoritmalarınız, algoritmalarınız kullanalım. Bunlar da algoritma. Programı takip ediyorlar. Yani bunlara zeki demek falan çok mantıklı mı değil mi? Tartışlar, mevzular bu ikisi arasında gidip geliyor.
+
+52
+00:13:16,495 --> 00:13:21,836
+Siz gibi geçen hafta bunlar üzerinde konuştuk. Fikirlerinizi alın, yorumladık.
+
+53
+00:13:22,576 --> 00:13:29,155
+Vesaire vesaire. Şimdi daha sonra yapay zekanın tarihçesinden de bahsetmiştik değil mi?
+
+54
+00:13:29,195 --> 00:13:34,036
+Buraları görmüştük şu tarihçeleri. En son şuraya kadar da gelmiştik herhalde.
+
+55
+00:13:34,296 --> 00:13:37,836
+Şu kime kolay, kime zor slide'larına da bakmıştık değil mi? Yanlış hatırlamıyorum.
+
+56
+00:13:39,775 --> 00:13:41,655
+Bunları işlemiş miyiz? Evet hocam işlemiştik.
+
+57
+00:13:41,655 --> 00:13:44,015
+Değil mi? Buraları bitirmiştik zaten.
+
+58
+00:13:45,556 --> 00:13:49,556
+Tamam, şimdi o zaman bunu kapatalım.
+
+59
+00:13:57,107 --> 00:13:57,667
+Teşekkür ederim.
+
+60
+00:14:08,083 --> 00:14:32,283
+Şimdi etmen, ajan aynı şey. Şu kutuyu hatırlıyorsunuz. İnsan gibi ve rasyonel olan fark vardır. Düşmek, hareket etmek vardır. Burada rasyonel hareket etme merkeze aldığımızı söylemiştik. Burada rasyonel hareket etmek yani rasyonel ajandan bahsediyoruz. Ajan dediğimiz bir sistem işte. Kendi başına bir şeyler yapabilir, o şekilde düşünebilirsiniz.
+
+61
+00:14:33,748 --> 00:14:45,268
+Çok temel olarak bir ajan nasıl bir şeydir? Fiziksel olması ya da yazılımsal olması, yani donanım ya da yazılım olması, değerli bir şey değil aslında.
+
+62
+00:14:45,268 --> 00:14:53,107
+Sistemlerin sensörleri ve actuatorları var. Sensör dediğimiz şey, dış ortamı, çevreyi algılamak için kullandığı şeyler.
+
+63
+00:14:53,120 --> 00:15:00,600
+Bilgisayarınızın klavyesi, mikrofonu ya da kamerası da olabilir. Ya da dokunmatik bir arayüz olabilir.
+
+64
+00:15:00,600 --> 00:15:05,200
+Bir sürü bir şeyler olabilir. Sensör dediğimiz şeyler ya da lider ve mesafe ölçücüler falan.
+
+65
+00:15:06,799 --> 00:15:14,840
+Üç boyutlu vidarlar, üç boyutlu kameralar, GPS sensörleri gibi bir sürü sensörü kullanabilirsiniz.
+
+66
+00:15:14,939 --> 00:15:18,100
+Çevreyi algılamak için sistemin kullandığı şeyler bizim sensörlerimiz.
+
+67
+00:15:19,347 --> 00:15:33,748
+Bunun yanında bir de actuatorlar var. Actuatorlar ise ortamı, çevreye verdikleri cevapları vermek için kullandıkları manipülatörler. Kolu bacağı falan olabilir, tekerlekleri olabilir. Ya da hiç öyle bir şeye gerek yok, ekranı olabilir.
+
+68
+00:15:33,971 --> 00:15:54,971
+Ekranda sonuçta bir ekçe ortadan çıktı üretiyordur. Dolayısıyla mikrofonu vardı, konuşuyordur, ses veriyordur, kornası vardır. Otonom bir araç gibi düşünürseniz. Dolayısıyla bu ekçe tırlar da dış ortama verilen cevapları yansıtmak için kullanılan arayüzler.
+
+69
+00:15:56,563 --> 00:16:13,163
+Bir environmentımız var, çevrenin içerisinde hareket ediyor bu ajan. Şimdi bizim buradaki amacımız ne? Burada sensörlerden gelen bilgilere göre biz actuatorlarda bir şeyler yaptıracağız. Yani sensörlerden gelen veriler girdiler. Bunlara göre biz outputlar üreteceğiz.
+
+70
+00:16:23,347 --> 00:16:30,347
+Bir şeyler üreteceğiz. Nasıl bir şeyler üreteceğiz? Bir mapping mekanizması kuracağız. Bütün rasyonel aracının çok...
+
+71
+00:16:30,611 --> 00:16:52,552
+Kabaca düşünürseniz, insanı da bu şeklinin içerisine dair edebilirsiniz ya da herhangi bir canlıyı. Sonuçta dışarıdan bir şeyler görüyor ve sistemde dışarıya bir şeyler yapıyor, bir şeyler veriyor. Ama bu ikisinin arasındaki yani sensörlerden bu actuatorlara olan geçişin nasıl yapılacağı asıl dediğimiz gibi bu soru işareti kısmı burası.
+
+72
+00:16:53,011 --> 00:17:02,171
+Bu soru işaretinin nasıl yapılacağına dair bir sürü tabii fikirler, yürüyüşler, yöntemler, algoritmalar vesaire var. Şimdi bunları birazcık incelemeye başlayacağız.
+
+73
+00:17:04,948 --> 00:17:21,908
+Şimdi bu soru işaretinin içini nasıl yapabilirsiniz? Farklı farklı yapabilirsiniz tabii ki. Burada çeşitli kriterlere göre türler var. Bunlar bir ajant sadece buradakilerin bir tanesine girer demeyelim. Birden fazlasına girebilir. Zaten konuştukça birazcık bunlar yavaş yavaş açılacaklar.
+
+74
+00:17:22,908 --> 00:17:28,648
+Şimdi birincisi refleksif tam eşleme, ikincisi refleksif yaklaşık eşleme. Ne demek bu?
+
+75
+00:17:29,203 --> 00:17:51,824
+O ana kadar, şimdi tam eşitlerine bakalım. O ana kadar ki tüm girdi sekansına ya da mevcut girdiye. Yani sadece anlık girdilere karşı bir şeyler üretebiliyor olabilir bir sistem ya da o ana kadar ki bir sürü bir şeylere karşı bir output üretiyor olabilir, üretmesi gerekiyor olabilir. Yani o anlık veriyi kullanması yetmiyordur. Daha önceki sensör verilerinde kullanması gerekiyor olabilir.
+
+76
+00:17:52,435 --> 00:17:58,355
+Dolayısıyla o ana kadar tüm girdi sekanslarda mevcut girdiye karşılık gelen hareketi uygula.
+
+77
+00:17:59,355 --> 00:18:04,035
+Yani elinizde bir tablo olduğunu düşünün. Bu tabloda durum ve hareket ikilleri var.
+
+78
+00:18:04,515 --> 00:18:08,375
+Durumlar işte bizim bu girdilerimiz. Bu durumların tam uyması durumunda.
+
+79
+00:18:08,375 --> 00:18:13,495
+Yani şöyle bir input varsa şöyle bir output uygula. Şöyle bir input varsa şöyle bir output uygula.
+
+80
+00:18:13,995 --> 00:18:18,175
+Gibisinden bir yapıyı düşünelim. Bu bizim tam eşlemeli refleksif ajanımız.
+
+81
+00:18:18,875 --> 00:18:19,155
+Şimdi.
+
+82
+00:18:20,051 --> 00:18:38,411
+Durum hareket ikillerinin olduğunu söylüyoruz. Buradaki durumlar dediğim gibi şuradaki sekanslar ya da o anki girdiği ifade ediyor. Ona karşı uygulanması gereken hareketler de bir yerde yazılmış. Biz de bu tabloyu kullanarak hareket ediyoruz. Böyle bir sistemde problem nerede olabilmiş?
+
+83
+00:18:43,796 --> 00:18:45,076
+Ya da problemler varsa.
+
+84
+00:18:46,875 --> 00:18:49,875
+Girdi sekansı çok uzun olabilir mi hocam?
+
+85
+00:18:50,896 --> 00:18:52,316
+Olabilir mi? Çok sıkıntılı değil.
+
+86
+00:18:54,956 --> 00:18:57,276
+Yani çok uzun bir şey olması...
+
+87
+00:18:57,276 --> 00:18:59,695
+Sonuçta depolayabiliriz herhalde bir şekilde.
+
+88
+00:19:00,875 --> 00:19:02,875
+Uzun olması sıkıntı değil. Başka bir sıkıntı var burada.
+
+89
+00:19:04,715 --> 00:19:06,076
+Tam eşleme diye bir şey yazıyor.
+
+90
+00:19:06,076 --> 00:19:08,215
+Sanki sıkıntı olası.
+
+91
+00:19:18,516 --> 00:19:28,856
+Evet arkadaşlar, uyanın biraz. Hadi bakalım. Böyle bir sistemin problemi ne olur? Input'a tam uyan bir şeylere cevap veriyor. Evet [öğrenci].
+
+92
+00:19:30,316 --> 00:19:33,736
+Hocam, tam eşleyebilecek bir şey bulamayabilir her zaman.
+
+93
+00:19:34,836 --> 00:19:46,016
+Güzel, tam eşleyebilecek bir şey bulamayabilir. Öyle bir sensör bilgisi geldi ki ona dair tabloda bir şey yok. O durumda ne yapacak? Bu bir sıkıntı. Güzel. Bunu çözmek için ne yapmak lazım [öğrenci]?
+
+94
+00:19:47,316 --> 00:19:48,135
+O tabloyu?
+
+95
+00:19:48,675 --> 00:19:53,016
+Çok fazla eşleyebileceği şey olması lazım ama o bile yeterli olmayabilir.
+
+96
+00:19:53,915 --> 00:19:55,596
+Yani o tabloyu büyütmemiz lazım değil mi?
+
+97
+00:19:55,635 --> 00:19:55,895
+Evet.
+
+98
+00:19:56,956 --> 00:20:01,456
+O tablonun bütün olası durumların hepsini kapsaması lazım.
+
+99
+00:20:02,395 --> 00:20:02,615
+Değil mi?
+
+100
+00:20:03,536 --> 00:20:04,235
+Evet hocam.
+
+101
+00:20:04,235 --> 00:20:12,135
+Bütün olası durumlar eğer çok çok korkunç büyük bir şey değilse bu yapılabilir değil mi?
+
+102
+00:20:12,915 --> 00:20:40,335
+Ama çok fazlaysa olası durumlar, bu durumda yapabileceğimiz çok da fazla bir şey kalmıyor. Sadece belli başlı bir şeyler için, belki en yüksek, en fazla karşılaşılan durumlar için oraya bir şey yapıp, diğerleri için de hepsine birden tek bir şey yapma yoluna gidebiliriz mesela. Tamam. Şimdi tam eşleme böyle. Bunun karşılığında ne var? Yaklaşık eşleme. Yani girdiğe en benzeyen durumu belirli, bu duruma karşılık gelen hareketi uygulamak.
+
+103
+00:20:41,652 --> 00:20:48,951
+Tam uygun olmadığı durumda en yakınına bir şekilde ölçüp biçim maplemek diye düşünebilirsin.
+
+104
+00:20:49,652 --> 00:20:52,451
+İkinci türe bakalım. Hafızalı, hafızasız.
+
+105
+00:20:53,011 --> 00:20:58,632
+Zamanla değişebilen iç durumunun var ya da yok olması, aynı girdiği için hep aynı çıkışın üretip üretmemesi.
+
+106
+00:20:59,371 --> 00:21:02,491
+Yani aynı input için aynı çıkışın üretilip üretilmemesi.
+
+107
+00:21:02,491 --> 00:21:04,731
+Şimdi mesela şöyle bir şey düşünün. Satrancı düşünelim.
+
+108
+00:21:06,996 --> 00:21:16,836
+Herhangi bir tahtanın o anki anı sizin en iyi hareketi yapmanız için yeterli midir? Yoksa o tahtanın daha önceki halleri de size gerekir mi?
+
+109
+00:21:20,915 --> 00:21:24,155
+Hocam, sadece son konum yeterlidir.
+
+110
+00:21:25,215 --> 00:21:40,935
+Değil mi? Daha önceki bir şeylere bakmadım. Bir bilgisayar olarak düşünelim bunu. Bilgisayar olarak siz sadece son tahta elinizde olsa o durumda ne yapılabileceğine dair yeterli çıkarımızı oradan ne yapabiliriz? Daha önceki bir şeylere ihtiyacınız yok.
+
+111
+00:21:47,092 --> 00:22:14,472
+Borsada alsat yapan bir sistem düşünelim. Otomatik olarak bunu yapıyor. Bir tane hisse sendir var, o hisse sendir alıyor, satıyor. Öyle bir şey düşünün. Orada bu hisse sendirin değeri çıkacak ya da düşecek kimisinden tahminlerde bulunması lazım. Orada mesela tek bir anlık değer size yeterli midir? Daha önceki değerlere de ihtiyaç var mıdır? Eğitim sürecinden bahsetmiyorum. Çalışırken bahsediyorum. Eğitim süreci değil, çalışırken.
+
+112
+00:22:15,316 --> 00:22:23,615
+O anki değer mesela herhangi bir şekilde yeter mi? En son değer size yeterli mi? Yoksa sizin bir trendi mi görmeniz gerekir?
+
+113
+00:22:24,135 --> 00:22:27,396
+Yetmez hocam. Son hareketlere bakmamız lazım.
+
+114
+00:22:27,396 --> 00:22:35,496
+Bir trend lazım değil mi? Pencerenin içerisinde bir şeylere bakabilmek lazım. Dolayısıyla orada birazcık tarihçi bilgisine ihtiyacınız var.
+
+115
+00:22:36,019 --> 00:22:55,019
+Ya da mesela kişiselleştirilmiş aromotor. Şöyle bir şey düşünün. Siz aynı kelimeyi aromotoruna bir tane aromotoruna yazıyorsunuz bir şeyler çıkıyor. Başka birisi aynı kelimeyi aromotoruna yazıyor başka bir şeyler çıkıyor. Size göre özelleşmiş bir şeyler, mekanizmalar var mesela. Bunlar da yine içerisinde hafıza tutmak zorunda olan sistemler.
+
+116
+00:22:55,508 --> 00:23:19,847
+Başka ne var? Başka ayrım. Kendi öğrenen, öğretilen. Şimdi karar mekanizmasını çevreyle etkileyecek, optimize eden ya da karar mekanizması insanlar tarafından oluşturulmuş, içerisine verilmiş. Yani ilkine örnek olarak ne bileyim, biraz daha örnekleri zaten bulacaksınız da, karar mekanizması insanlar tarafından oluşturulmuş bir sürü şeyler, yani kodlanmış, işte uzman sistem, kural tabanlı uzman sistemleri mesela buraya örnek verebiliriz.
+
+117
+00:23:23,731 --> 00:23:34,271
+Mesela hesap makinesine buraya örnek verebiliriz. Hesap makineleri, yani standart hesap makinelerinden bahsediyorum. Sadece hesap makinesi olan hesap makinelerinden bahsediyorum.
+
+118
+00:23:36,915 --> 00:23:59,695
+Orada mesela nasıl input-output üretileceğine dair arka tarafta zaten neler var? Programlar var. Burada direkt ne yapılıyor? İnsanlar zaten onu donanımsal seviyede oluşturmuşlar o işin programını ve oradan da sistem çalışıyor. Tam eşlemeye sahip bir sistem aynı zamanda değil mi? Hesap makinesi. Böyle yaklaşık eşleme falan gibisinden bir şey yok orada.
+
+119
+00:24:01,695 --> 00:24:03,695
+Başka da öğrenimi hep süren ya da sürmeyen.
+
+120
+00:24:04,819 --> 00:24:06,819
+Şimdi, mesela...
+
+121
+00:24:09,140 --> 00:24:34,140
+Şöyle bir şey düşünelim. Bir tane insan yüzü algılayan bir sistem yaptınız. Resimlerde insan yüzü algılayabiliyor. Zoom'u falan kullanıyoruz. Arka planı tanık. Size ön plan arka plan ayrımı yapıyor değil mi sürekli? Ön plan arka plan ayrımı yapması için bu bayağı bir eğitilmiş. Eğitildikten sonra sistem sabit duruyor. Daha sonra çalışıyor. Çalışırken sistem...
+
+122
+00:24:35,220 --> 00:24:48,620
+Kendisini güncelliyor mu? Güncellemiyor. Buradaki ayrımın sebebi bu. Ayrımın kriteri bu. Çalışırken sistem kendini güncelliyor mu? Güncellemiyor. Şu olabilir bakın.
+
+123
+00:24:50,067 --> 00:25:09,748
+Çalışırken gelen inputlar bir yere kaydedilip daha sonra bunların üzerine geri bildirimlerle sistemin eğitim kümesi tekrardan güncellenip modelde güncellenebilir daha sonra. Ama bu yine şeye denk gelmez. Test zamanında yani sistem çalışırken sistem parametrenin güncellenip güncellenmediğine karşı gelmez.
+
+124
+00:25:09,748 --> 00:25:16,087
+Sistem çalışırken test zamanında sistem öğreniyor mu öğrenmiyor mu? Buradaki öğrenimi hep sürenden kastımız bu.
+
+125
+00:25:17,203 --> 00:25:20,563
+Lifelong Learning diye ifade ettiğimiz şey bu.
+
+126
+00:25:21,563 --> 00:25:22,463
+Makineler için tabii.
+
+127
+00:25:23,063 --> 00:25:27,604
+Biz insanların öğrenimi hep süren, sürmeyen diye düşünürsek insanların öğrenimi hep sürüyor.
+
+128
+00:25:28,043 --> 00:25:32,763
+Biz istemesek de otomatik olarak sürekli bir şeyler öğreniyoruz.
+
+129
+00:25:33,063 --> 00:25:35,763
+Öğrenmediğimiz herhalde hiçbir an yok.
+
+130
+00:25:36,023 --> 00:25:37,003
+Durmadan değişiyoruz.
+
+131
+00:25:38,443 --> 00:25:39,163
+Peki.
+
+132
+00:25:40,564 --> 00:25:58,764
+Şimdi arkadaşlar, şöyle bir şey yapacağız. Şu anda 66 kişiyiz. İyi, güzel. 12 o da yeterli olur. Şimdi breakout room'lara ayıracağım sizi. Ve sizden istediğim şey, şuradaki ajanlara örnekler bulmanız.
+
+133
+00:25:59,443 --> 00:26:23,104
+İşte şöyle bir ajan tam eşlemedir, şöyle bir ajanın hafızası vardır, şöyle bir ajan öğretilendir ya da kendi öğreniyordur, şöyle bir ajanın öğrenimi hep sürüyordu. Ben birkaç tane örnek verdim. Sizlerin örnekler bulmanızı istiyorum. Şimdi 12 tane grup oluşturacağım. Bu 12 tane grup herkes kendi ID'sini mutlaka hatırlasın. Rum numarasını mutlaka hatırlayın. Ve bir de kendinize sözcü seçin.
+
+134
+00:26:24,211 --> 00:26:34,671
+Daha sonra bu sözcüler o grubun bulduğu ajanları bizlere anlatacaklar. Bunların üzerinde hep beraber konuşacağız. Tamam mı? Anlaşıldı mı arkadaşlar göreviniz?
+
+135
+00:26:37,391 --> 00:26:44,791
+Evet hocam. Anlaşıldı hocam. Peki, güzel. O zaman sizi şimdi odalara gönderiyorum.
+
+136
+00:26:53,236 --> 00:26:57,236
+15 dakika yeterli olur bunun için.
+
+137
+00:26:57,236 --> 00:26:58,696
+15 dakika.
+
+138
+00:27:02,804 --> 00:27:22,804
+Tamam. 15. dakika bittikten sonra bir dakikada geri sayım olacak. 16 dakikanız olacak. Yani 16 dakika sonra tekrar bu seşne döneceksiniz. Peki arkadaşlar, 16 dakika sonra görüşmek üzere. Bir room ID'lerinizi hatırlıyorsunuz, yazıyor zaten. İkincisi...
+
+139
+00:27:23,092 --> 00:27:27,252
+Kendinize bir tane sözcüğü seçiyorsunuz. O konuşacak sizin grubunuzun yerine.
+
+140
+00:27:27,692 --> 00:27:34,192
+Gruplarda 5-6 kişi var. Kendi aranızda konuştukların gibi 15 dakika boyunca ajan örnekleri bulacaksınız.
+
+141
+00:27:34,292 --> 00:27:36,212
+Bu deminki kriterlere uygun olarak.
+
+142
+00:27:38,492 --> 00:27:39,352
+Görüşmek üzere.
+
+143
+00:43:51,827 --> 00:43:54,708
+Evet arkadaşlar, hepiniz hoş geldiniz tekniklerden.
+
+144
+00:43:57,248 --> 00:43:58,047
+Hoş bulduk hocam.
+
+145
+00:44:02,579 --> 00:44:05,319
+12 tane gururumuz var. Herkes sözcük seçti mi kendine?
+
+146
+00:44:08,719 --> 00:44:14,039
+Hocam seçemedik ama ben konuşabilirim. Ben konuşacağım galiba.
+
+147
+00:44:16,739 --> 00:44:20,539
+Neyse. Herkes oda numaralarını biliyor değil mi?
+
+148
+00:44:21,719 --> 00:44:22,799
+Evet hocam biliyoruz.
+
+149
+00:44:22,979 --> 00:44:23,340
+Evet.
+
+150
+00:44:23,979 --> 00:44:25,219
+Tamam, tamam. Peki.
+
+151
+00:44:25,748 --> 00:44:31,788
+Şimdi grup 1 ile başlayacağız. Evet, ilk önce ben şeyde bir paylaşayım bir saniye.
+
+152
+00:44:35,827 --> 00:44:41,488
+Evet, grup 1. Sözcü, kimdir?
+
+153
+00:44:41,827 --> 00:44:43,307
+Merhaba hocam, benim grup için.
+
+154
+00:44:45,427 --> 00:44:46,608
+İzmin neydi?
+
+155
+00:44:47,028 --> 00:44:47,788
+[öğrenci].
+
+156
+00:44:48,367 --> 00:44:49,488
+Evet, [öğrenci]. Dinliyorum.
+
+157
+00:44:51,167 --> 00:44:55,748
+Refleksif için otonomlu araçlar ve robot süpürgeleri düşündük.
+
+158
+00:44:56,788 --> 00:45:01,447
+Çünkü etrafındaki şeylere göre tepki vermek zorundalar.
+
+159
+00:45:02,003 --> 00:45:20,543
+Bir dakika, otonom ne için düşündünüz? Refleksif için. Refleksif için, tamam. Peki tam eşleme, yaklaşık eşleme nasıl bir şey? O kadar devin konuşmadık ya. Otonom süpürgeler. Otonom süpürgeler tam eşleme olur.
+
+160
+00:45:28,755 --> 00:45:31,515
+Otomobil araçları her zaman aynı durumu oluşmak zorunda değil.
+
+161
+00:45:32,295 --> 00:45:34,515
+Otomobil süpürgelerde her zaman aynı durumu oluşuyor mu?
+
+162
+00:45:35,395 --> 00:45:39,615
+Yani otomobil süpürgelerde yine oluşmayabilir ama en azından...
+
+163
+00:45:39,615 --> 00:45:41,615
+Değil mi? Oluşmaması çok muhtemel bir şey değil.
+
+164
+00:45:41,615 --> 00:45:42,855
+Aynen çok da önemli bir şey değil.
+
+165
+00:45:43,036 --> 00:45:44,315
+En azından şöyle bir durum var.
+
+166
+00:45:44,775 --> 00:45:52,315
+Şimdi gerçek dünyada çalışan ve sensörleriyle bunu algılayan bir şey de tam eşleme...
+
+167
+00:45:52,927 --> 00:46:01,648
+Birazcık düşük bir ihtimal değil mi? Yani gerçek dünyada sürekli durmadan aynı şeyler karşınıza gelecek olması oldukça düşük bir ihtimaldir.
+
+168
+00:46:02,188 --> 00:46:07,947
+Dünyada çünkü bir şeyler durmadan değişir. Dolayısıyla bu tarz durumlarda yaklaşık eşleme olması gerekir.
+
+169
+00:46:08,487 --> 00:46:10,407
+Otonom süpürgeler için şöyle bir durum var.
+
+170
+00:46:12,927 --> 00:46:17,127
+Mesela evin planını ona verdiğinizi düşünelim.
+
+171
+00:46:17,748 --> 00:46:37,748
+Ve gitmesi gereken yolu bir şekilde hesapladığını düşünelim. Bu bir yaklaşım. Burada bir hafıza yapar, hani şöyle bir şey var, nereyi süpürdüğünü biliyor olması şart değil. Yani gidici efekte önceden siz çizmişsiniz. Ama mesela bilinmeyen bir eve bıraktığınızda kendisi haritasını çıkartıyorsa...
+
+172
+00:46:38,387 --> 00:46:59,027
+Ve nereyi süpürdüm, nereyi süpürmedim diye bu zaman ne yapması lazım? Aklında bunları tutması lazım. Aynı yerden geçerken farklı yerlere doğru gidebilir. Yani bir tarafı daha önce süpürmüştü o odadan çıktı, şimdi başka bir odaya geçecek. Aynen aynı odaya tekrardan geri dönmemesi lazım vs. vs. Dolayısıyla bir hafızaya da ihtiyacı olacak o durumda. Peki devam edelim.
+
+173
+00:47:20,324 --> 00:47:24,644
+Tamam, kişiselleştirilmiş bir şeyler. Hafızaya ihtiyacı var. Doğru, evet.
+
+174
+00:47:30,420 --> 00:47:36,900
+Kendi öğrenen ajanlar için yine robot süpürgeleri düşündük. Kendi haritalarını oluşturanları.
+
+175
+00:47:37,500 --> 00:47:38,500
+Tamam.
+
+176
+00:47:40,340 --> 00:47:48,140
+Öğrenimi sürekli süren sistemler için de yine öneri sistemlerini düşündük. Çünkü her yeni video izlendiğinde başka şeyler önerebiliriz.
+
+177
+00:47:49,340 --> 00:47:52,180
+Önemli bir sistem o şekilde tasarlanabilir. Evet.
+
+178
+00:47:52,579 --> 00:47:55,579
+Peki, teşekkürler grup 1. Grup 2'ye geçelim.
+
+179
+00:47:56,460 --> 00:47:58,300
+Merhaba hocam, ben [öğrenci].
+
+180
+00:47:58,579 --> 00:47:59,559
+Merhaba [öğrenci].
+
+181
+00:48:00,640 --> 00:48:06,260
+Hocam, biz refleksif tam işleme için bu parmak izi işlemeyi düşündük.
+
+182
+00:48:07,739 --> 00:48:10,960
+Hani tamamen aynı olmak zorunda çünkü giriş sekansları.
+
+183
+00:48:14,539 --> 00:48:22,359
+Ama doğru diyorsun bir yandan. Ama orada tam olarak aynı şeyi algılama ihtimali çok düşük herhalde.
+
+184
+00:48:22,579 --> 00:48:25,220
+Birebir aynısı olmaz herhalde hiçbir zaman parmak izi.
+
+185
+00:48:27,059 --> 00:48:32,359
+Yani sistemde kayıtlı olan parmak izleriyle o anda okumuş olan parmak izi birebir aynı olur mu?
+
+186
+00:48:33,579 --> 00:48:39,099
+Hocam ama yani her insanın farklı olduğu için yani çok büyük bir oranda yine eşleme yapması gerekiyor.
+
+187
+00:48:39,099 --> 00:48:46,139
+O yüzden tam eşleme yapmak zaten eşleme yapacak. Orasında bir sıkıntı yok da tam mı yaklaşık mı?
+
+188
+00:48:47,359 --> 00:48:53,099
+Soru bu. Yine yaklaşık bir şey yapmak zorunda orada. Sonuçta tamamen birebir aynısını...
+
+189
+00:48:53,780 --> 00:48:56,280
+Bulması pek mümkün değil herhalde değil mi?
+
+190
+00:48:58,159 --> 00:49:03,480
+Yani, oradaki sensörlerin ne kadar doğrulukta çalıştı da bilmiyorum ama evet, haklısınız.
+
+191
+00:49:04,380 --> 00:49:09,600
+Yani hiçbir sensör o doğrulukta çalışamaz.
+
+192
+00:49:10,220 --> 00:49:11,840
+Peki, devam edelim.
+
+193
+00:49:12,460 --> 00:49:15,280
+Yaklaşık için bir tane uygulama vardı hocam.
+
+194
+00:49:15,280 --> 00:49:20,400
+Kendi resmini yüklüyorsun, sana en çok benzeyen insanı getiriyor böyle bir şey düşünmek.
+
+195
+00:49:21,780 --> 00:49:22,780
+Kullandın mı?
+
+196
+00:49:23,460 --> 00:49:29,100
+Hocam, kullandım diyebilirim. Ben farklı bir versiyonunu kullandım. Kendi resmini biliyorsun.
+
+197
+00:49:29,199 --> 00:49:29,900
+Kim çıktın?
+
+198
+00:49:32,400 --> 00:49:35,900
+Hocam, ünlü ve çok alakasız biri çıktı ama...
+
+199
+00:49:36,579 --> 00:49:37,880
+Çok iyi çalışmıyor diyorsun yani.
+
+200
+00:49:37,940 --> 00:49:38,280
+Evet.
+
+201
+00:49:39,060 --> 00:49:41,760
+Peki, tamam. Evet, yaklaşık eşlemi örnek tamam.
+
+202
+00:49:42,420 --> 00:49:49,119
+Hafızalı için hocam, bu sitelerdeki çerezlere bakılarak reklam önerisini düşündük.
+
+203
+00:49:49,487 --> 00:49:53,987
+Çünkü senin geçmiş bilgilerini kullanıyor ve onlara yönelik öneri yapıyor.
+
+204
+00:49:55,188 --> 00:49:58,627
+Hafızasız olarak chatbotları düşündük hocam.
+
+205
+00:49:59,387 --> 00:50:04,667
+Sadece en son girdiğin şeyle ilgilenerek sana cevaplar veriyor.
+
+206
+00:50:05,364 --> 00:50:30,744
+Orada şimdi chatbotun tipine bağlı. Şimdi demin bahsettiğin gibi mesela o Eliza'yı hatırlayalım. Eliza'nın mantığı tamamen hafızasız bir şey. Yani son senin girdiğin şeye bakarak cevap veriyor. Ama mesela şöyle bir chatbot düşünelim. Bir diyaloğun içerisinde verileri kullanarak yani daha önce kullanıcının söylemiş olduğu şeyler ya da kendi söylemiş olduğu şeyleri kullanarak.
+
+207
+00:50:31,103 --> 00:50:49,463
+Ta bir sonraki söyleyeceği şeyi ne yapabilir? Üretebilir, oluşturabilir değil mi? Bu durumda hafızalı bir yapıya sahip olur. Ama son söylediği şeye bağlı olarak hareket edersen, mesela Elisa'yı düşünürsek o hafızasız bir şeydir ve yaklaşık eşlemeyle çalışıyor diye düşünebiliriz. Peki, devam edelim.
+
+208
+00:50:50,003 --> 00:51:14,143
+Kendi öğrenen sistemler için otopilota düşündük hocam. Normalden dışarıda kendi gezdiğinde sensörlerini kullanarak neye çarpmamız gerektiğini falan kendi öğreniyor. Öğretilen sistem olarak yüz tanıma sistemlerini düşündük. Çünkü bunun büyük bir eğitimden geçiyor öncesinde. Ondan sonrasında yüz tanımayı gerçekleştirebiliyor.
+
+209
+00:51:14,612 --> 00:51:30,252
+Ama yok, orası şöyle. Mekanizmayı insanlar kurdularsa, yüz tanımanın, o zaman tamam. Ama etiketli bir eğitim setinin verilip kendisinin öğrenmesine bırakıldıysa o kendi öğrenime girer.
+
+210
+00:51:30,572 --> 00:51:30,972
+Öyle mi?
+
+211
+00:51:31,012 --> 00:51:31,632
+Anlatabildim mi?
+
+212
+00:51:31,632 --> 00:51:32,212
+Anladım.
+
+213
+00:51:32,212 --> 00:51:39,731
+Yani karar mekanizmasının insanlar tarafından oluşturulması, buradaki mappingin, yani inputlar şöyle olduğunda altın, şöyle olsun.
+
+214
+00:51:40,847 --> 00:51:51,568
+Yapısının insanlar tarafından konulmasından bahsediyorum. Öğretilenden kastımız o. Kendisinin öğrenmesi ise bu mekanizmayı kendisinin örneklerden, etkileşimlerden öğrenmesi.
+
+215
+00:51:52,052 --> 00:51:57,112
+Hocam o zaman bu hani biz normalde de model eğitiyoruz ya, bunlar da kendi öğrenenlere mi giriyor?
+
+216
+00:51:57,632 --> 00:52:03,692
+Evet, bir model eğitiyorsanız eğer etiketli verileri ya da etiketsiz verileri kullanarak onlar kendinde öğrenene giriyorlar.
+
+217
+00:52:03,931 --> 00:52:04,811
+Anladım hocam, tamam.
+
+218
+00:52:04,811 --> 00:52:19,552
+Ama kural tabanlı olarak biz insanlar onun yerine o işi yapıyorlarsa, mesela işte şu durumda şunu yap, şu durumda şunu yap gibisinden yapıyı herhangi bir şekilde kodlayıp içeriye veriyorlarsa ve o sistemi çalıştırıyorsa o da öğretilen olarak.
+
+219
+00:52:20,052 --> 00:52:24,752
+Yani bizim bu daha önceden prologda yaptığımız şeyler o zaman kendi öğretilen oluyor değil mi?
+
+220
+00:52:26,152 --> 00:52:30,931
+Prologda evet nasıl bir şey geldiğinde nasıl? Çünkü tamamen kural tabanlı olarak yazıyoruz. Aynen öyle.
+
+221
+00:52:32,332 --> 00:52:42,912
+Hocam, öğrenimi hep süren olarak robot süpürgeleri düşündük. Çünkü yeni ortama ne zaman gitse kendi ortamı çıkartıp ondan sonra işleme devam ediyor.
+
+222
+00:52:45,731 --> 00:52:47,271
+Öğrenimi hep süren.
+
+223
+00:52:49,523 --> 00:52:58,083
+Çalışma esnasında da öğrenimi... Tabii ki karar mekanizmasını değiştiriyor mu? Tamam, peki. Olabilir.
+
+224
+00:52:59,304 --> 00:53:07,323
+Öğrenimi sürmeyen olarak da görüntü sınıflandırma modellerini düşündük. Model bir defa itiliyor, ondan sonra...
+
+225
+00:53:07,323 --> 00:53:10,163
+Ondan sonra test zamanında hiçbir şekilde güncellenmiyor zaten.
+
+226
+00:53:10,183 --> 00:53:10,743
+Aynen hocam.
+
+227
+00:53:10,783 --> 00:53:15,443
+Test sürecinde. Daha sonra tekrardan güncellenilebilir ama o hep süren...
+
+228
+00:53:16,019 --> 00:53:22,460
+Peki, teşekkürler [öğrenci]. Grup 2'yi dinleyelim.
+
+229
+00:53:23,619 --> 00:53:30,340
+Merhaba hocam. Grup 3'in [öğrenci] ben. Ben anlatayım neler bulduğumuzu. Diğer arkadaşlarım da eklemek istedikleri varsa.
+
+230
+00:53:31,027 --> 00:53:49,768
+Tekrar söylesinler. Refleksif tam eşleme için biz çeviri sistemlerini düşündük. Yani bu Google Translate gibi çeviri sistemleri. Yani bizim genel anlamda o anda verdiğimiz tüm girdilere karşılık bir çeviri üretiyor. Yani çok küçük değişiklikler oluyor ama genel anlamda.
+
+231
+00:53:49,787 --> 00:53:52,167
+Ama bir dakika şimdi o tam eşleme olabilir mi sence?
+
+232
+00:53:54,324 --> 00:53:58,744
+Yani hani bir kelime verdiğinde direkt onun karşılığını veriyor ya. O şekilde düşündük.
+
+233
+00:53:59,384 --> 00:54:00,524
+Ama cümleler de veriyorsun.
+
+234
+00:54:03,164 --> 00:54:08,124
+Evet, cümle de verince. Yine küçük değişiklikler oluyor ama yine de tam yakın.
+
+235
+00:54:08,923 --> 00:54:10,503
+Tam eşleme olabilir mi o sence?
+
+236
+00:54:11,304 --> 00:54:13,543
+Yani tam eşleme olması için şöyle bir şey olması lazım.
+
+237
+00:54:13,764 --> 00:54:17,344
+Çevirebileceği bütün cümlelerin bir şekilde kodlanması lazım içeride.
+
+238
+00:54:17,907 --> 00:54:27,027
+Yani şöyle bir cümleye karşılık şöyle bir şey üreteceksin, şöyle bir cümleye karşılık şöyle bir şey üreteceksin. Hani oradaki input space'inin ne kadar büyük olması gerektiğini hayal edebiliyor musun?
+
+239
+00:54:27,447 --> 00:54:28,027
+Evet, evet.
+
+240
+00:54:28,547 --> 00:54:31,648
+O tam eşleme olabilecek bir şey değil. Değil mi?
+
+241
+00:54:31,648 --> 00:54:40,567
+Tamam. Yaklaşık eşlemeyi o zaman şey biz de öneri sistemleri dedik. İşte YouTube, Netflix gibi.
+
+242
+00:54:42,132 --> 00:54:58,412
+Hafızalı sisteme bu bir tane Twitter'da bir bot vardı. Orada insanların yazdıklarına göre kendi durumunu ayarlıyordu. Fakat bir süre sonra aynı şeyleri yazsa da farklı cevaplar veriyordu.
+
+243
+00:54:59,315 --> 00:55:14,435
+Hafıza sistemleri de herhangi bir oyundaki NPC'ler, orada belli bir görev için kodlanmış hafızası olmayan ama o görevi sürekli yerine getiren şeyler.
+
+244
+00:55:14,435 --> 00:55:17,295
+Yani oyundaki NPC'ler dedik.
+
+245
+00:55:18,387 --> 00:55:42,087
+Kendi öğrenen buna Alphago ve robot süpürgeler dedik. Robot süpürgelerin şeyinden bahsettik. Bir ortama girdiğinde o ortamın kalitesini çıkartıp kendine göre hareket eden şeklinde konuştuk. Bir de Alphago zaten o sıfırdan öğrenmişti. Öğretilen ise buna konuşma...
+
+246
+00:55:43,956 --> 00:55:52,155
+Öğretiliyor Siri ya da Google Asitant gibi. Öğrenim hep süren…
+
+247
+00:55:52,155 --> 00:55:56,635
+Bir dakika, öğretilende Siri nasıl öğretilende nasıl orasını anlayamadın?
+
+248
+00:55:57,155 --> 00:56:01,195
+Yani insanlar ilk başta karar mekanizmalarını oluşturuyor ya.
+
+249
+00:56:01,695 --> 00:56:03,655
+Nasıl yani? Nasıl oluşturuyorlar?
+
+250
+00:56:03,655 --> 00:56:08,655
+Yani öğrenmesi için bir model geliştiriliyor ya önce hocam. Daha sonra bunu…
+
+251
+00:56:09,588 --> 00:56:27,528
+Burada karar mekanizması insanlar tarafından oluşturuluyor diyor ya, biz de konuşma asistanlarının ilk başta insanlar tarafından bir model verilerek ya da bu karar mekanizması oluşturulduktan sonra o mekanizmaya göre hareket ettiğinden bahsettik. O şekilde düşünüyorum.
+
+252
+00:56:28,307 --> 00:56:37,048
+Bir dakika ya, onlar tam olarak öyle mi çalışıyorlar? Yani insanlar mı oluşturuyor onların karar mekanizması? Şöyle bir şey gelirse şöyle bir şey diyeceksini insanlar mı yazıyorlar?
+
+253
+00:56:37,972 --> 00:56:39,412
+Yok, onu yazmıyorlar ama.
+
+254
+00:56:39,851 --> 00:56:59,252
+Şimdi şöyle bir durum var. Orada aslında yazdıkları yerler de var. Yani insanların genelde ne bileyim, işte Siri'ye, Alexa'ya falan, hani evli misin, kaç yaşındasın falan, bilmem ne, seni kim yarattı falan gibi böyle standart herkesin merak edip sorduğu sorulara karşı enteresan olarak iterendirebilecek cevapları yazan insanlar var.
+
+255
+00:56:59,923 --> 00:57:23,124
+Ve siz öyle bir şey sorduğunuzda onların içerisinden bir tanesini rastgele seçip size karşınıza veriyor. Orası tam eşlenen mekanizması aslında bir yandan da. Hani orası öğretilen kısım. Ama onun haricindeki kısımlar da hani şöyle bir şey derse şöyle bir şey yapmalısın falan gibisinden böyle bir tam bir şey yok. Hani kural tabanlı bir yapı yok insanlar tarafından oluşturulmuş. Yani arka tarafta şeyler de var.
+
+256
+00:57:23,476 --> 00:57:44,335
+Hani bir eğitim kümeleri var. Şöyle bir şey olduğunda şöyle bir şey deniyor falan gibisinden böyle arka tarafta dediğim gibi bir eğitim kümeleri var. O eğitim kümeleri üzerinden modeller eğitiliyorlar. Onlar da var. Yani tek bir parçası yok o tarz sistemlerin aslında. Bazen işte duruma göre, bazen işte tam eşleme, duruma göre bu tarz öğretilen kısımlarla yaklaşık eşleme yapabiliyorlar.
+
+257
+00:57:45,331 --> 00:58:05,471
+Anladım. Bu öğretilenlere iki tane daha ek yazdık. Onları zaten söyledi asap. Face ID ve parmak izi. Bizim ilk başta bunları öğretip telefon açmaktaki kullandığımız sistemler. Direkt parmak izimizi önce üç beş tane yapıp daha sonra onun çalışmasını sağlıyoruz.
+
+258
+00:58:06,164 --> 00:58:18,804
+Ama bir dakika, onlar da değiller. Evet, aynen. Onlar da zivarsitler zaten. Face ID ve parmak izi öğretilen sistemler değiller. Peki, devam.
+
+259
+00:58:18,804 --> 00:58:33,104
+Tamam. Öğrenim hepsi öğretilen sistemlere de arama motorlarının, sürekli yeni gelen sitelerin içeriklerini kontrol edip, bu içerikleri anlamlandırıp, gerekirse bir sıralama uygulaması sistemlerini örnek verdik.
+
+260
+00:58:35,251 --> 00:58:46,632
+Öğrenimi sürmeyen sistemleri de fabrikalardaki üretim aşamasında kullanılan direkt o iş için özelleşmiş sistemleri ya da robotik kolları vs. bunları örnek verdik.
+
+261
+00:58:47,032 --> 00:58:48,951
+Hiç değişmiyor, sürekli aynı şeyleri yapıyor.
+
+262
+00:58:50,891 --> 00:58:56,552
+Peki, teşekkürlerdir. Ali'nin Teşekkürler Grup 3. Evet, Grup 4'e gelelim.
+
+263
+00:58:58,391 --> 00:59:00,791
+Merhaba hocam, ben [öğrenci], Grup 4'ten.
+
+264
+00:59:02,132 --> 00:59:03,652
+Bir daha alabilir miyim ismini?
+
+265
+00:59:04,351 --> 00:59:06,091
+[öğrenci] Hocam, ben grup dörtten.
+
+266
+00:59:08,231 --> 00:59:14,251
+Biz refleksif tam işleme için şey dedik hocam, aslında biraz başta bulamadık tam işleme ile ilgili bir şey.
+
+267
+00:59:14,251 --> 00:59:21,971
+Sonra dedik mesela spesifik bir maden arayan, yer altı kaynağı arayan bir robot dedik tam işleme için.
+
+268
+00:59:22,192 --> 00:59:24,751
+Yani o etrafı tararken tam bulduğu şeyi.
+
+269
+00:59:25,300 --> 00:59:30,520
+Tam istediği şeyi bulunca uyarı veriyor tarzı bir şey düşündük refleksif tam işleme için.
+
+270
+00:59:30,540 --> 00:59:31,260
+Nasıl olacak ki o?
+
+271
+00:59:31,635 --> 00:59:39,875
+Yani işte hocam, bir şeyler yola çıktık. Aslında Mars keşif aracının çevre kaynaklarından yola çıktık oraları taramasından.
+
+272
+00:59:40,115 --> 00:59:45,195
+Orada tam eşleme yapmak mümkün değil herhalde ya. Değil mi?
+
+273
+00:59:45,615 --> 00:59:49,695
+Evet hocam ama başka örnek o an tam eşlemek gibi aklımıza gelmedi.
+
+274
+00:59:49,956 --> 00:59:54,775
+Örnek bulamadık diyebilirsiniz. Onda bir sıkıntı yok. Bu dediğin işlere yaklaşık eşleme yapılabilecek şeyler değil mi?
+
+275
+00:59:55,380 --> 01:00:12,100
+Yani evet, biz biraz daha tam eşlemeye yakın gibi düşünmüştük. Ama tabii yine yaklaşık eşleme oluyor haklısınız. Yaklaşık eşleme ile ilgili de Siri ve chatbotlar demiştik. Yani yazdığımız şeye göre tam olması bile yaklaşık olarak bir cevap verdiği için.
+
+276
+01:00:12,692 --> 01:00:28,852
+Evet. Hafızalı ve hafızasılarda, hafızalılarda biz robot süpürgeyle o tanım keşif aracı demiştik yani. Hafızaları var. Evet. Hafızasılarda ise yüz tanıma sistemleri demiştik ama bu hafızasızları…
+
+277
+01:00:28,852 --> 01:00:37,271
+Doğru, yok. Yüz tanıma sistemleri hafızasızdır. Yani bir inputu değerlendirmek için daha önceki inputları ne yapmazlar hiçbir şekilde?
+
+278
+01:00:37,760 --> 01:00:42,760
+Evet, daha önceki inputları kullanmıyoruz. Elimizdeki o antarada yüzü kullanıyor.
+
+279
+01:00:43,300 --> 01:00:46,240
+O anki girişe göre karar veriyorsunuz sadece. Doğru.
+
+280
+01:00:46,240 --> 01:00:56,600
+Evet, kendi öğrenen için ise bu self-driving karlar ya otonom kullanılan şeyler söylemiştik. Ayrıca şey de söyledik.
+
+281
+01:00:56,720 --> 01:01:04,960
+Youtube video önerileri ve online alışverişteki mesela sonraki yine malzeme önerileri için de kendi öğrenimlemiştik.
+
+282
+01:01:05,715 --> 01:01:32,355
+Anladım. Şöyle bir şey söyleyeyim. Şimdi otonom bir sistem, bir sistem otonom çalışıyor diye o illa kendisi öğrenmiş olmak zorunda değil. Yani nasıl eğitim sürecinin nasıl olduğu buradaki kritik olan şey. Test sürecinde nasıl ilerlediği önemli değil otonom olabilir. Yani otonom bir aracın karar mekanizmaları insanlar tarafından kurallarla yazılmış, içerisine konmuş olabilir.
+
+283
+01:01:33,139 --> 01:01:54,799
+Ama bu şekilde değil de ne bileyim etiketli örnekler de falan eğitiliyorsa, bu karar mekanizması bu şekilde oluşturuyorsa o zaman kendi öğrenme olur. Yani otomot sistemler illa ki şu şekilde kendisi öğrenen ya da öğretilen olmak zorundadır diye öyle bir şey yok. Ayrım yok. Anlatabildim mi? Öyle bir genel şey yok. Tamamen oradaki bu eğitim sürecinin nasıl yapıldığına bağlı.
+
+284
+01:01:55,380 --> 01:02:03,900
+Anladım hocam. Bu kendi örneğe, bu spam mail detekt etmede kullanılan şeyleri de düşünmüştük kendi öğrenenler için.
+
+285
+01:02:04,659 --> 01:02:21,240
+Orada da yine spam mail detektini eğer ki insanlar kurallar yazarak içine koydursa, yani içinde şu şu kelimeler varken şöyle de şu şu kelimeler yokken şöyle dekdülisinden buna benzeyen kuralları yazıp koydursa içerisine, o zaman yine öğretilene girer.
+
+286
+01:02:21,811 --> 01:02:27,811
+Ben biraz şey olarak düşünmüştük hocam Spanbey'i. As for us learning mantığıyla.
+
+287
+01:02:28,731 --> 01:02:42,971
+O tarz işiyle eğitilmişse, uygulamanın adını söylediğiniz zaman o şeye girmiyor. Kendisini öğrenen, öğretilenle o çok olmuyor. Ama şu şekilde eğitilen diye bir şey söylerseniz o zaman çok daha net olur. Anlatabildim mi?
+
+288
+01:02:43,431 --> 01:02:44,291
+Anladım hocam.
+
+289
+01:02:44,291 --> 01:02:45,151
+Tamam.
+
+290
+01:02:45,583 --> 01:02:55,743
+Öğrenimi hep süren şeyler için bu stock price'ları takip eden, onunla ilgili yorum yapan AI'lar düşünmüştük.
+
+291
+01:02:56,783 --> 01:02:58,623
+Sürmeyen ise ben şey düşündüm.
+
+292
+01:02:58,643 --> 01:02:59,923
+Nasıl sürüyor onların öğrenimi?
+
+293
+01:03:01,603 --> 01:03:10,623
+Daha sonraki süreçlerde takip ettiği bir kağıt var. Onun sonraki süreçlerine göre de yorum yapıyor. İlk başta bir halini görüyor.
+
+294
+01:03:11,824 --> 01:03:26,064
+Bir iki ay sonraki haline göre de o kağıtla ilgili tahminini değiştiriyor. Yani tahminini değiştiriyor. Yanlış olduğunu veya doğru olduğunu değil de mesela daha iyiye gidecek, daha kötüye gidecek.
+
+295
+01:03:26,064 --> 01:03:38,464
+Ama yine tam şey aslında orada, bir tahminde bulunuyorsun. Daha sonra o tahminin gerçekleşmediğini görüyorsun. Ona göre tahminin yanlış olduğunu ve dolayısıyla onu üreten mekanizmayı güncellemen gerektiğinin farkına varıyorsun.
+
+296
+01:03:39,347 --> 01:03:42,447
+Yani aslında bu öğrenimi sürdürmüş olmuyor mu?
+
+297
+01:03:42,807 --> 01:03:44,507
+Evet, evet, aynen öyle.
+
+298
+01:03:44,967 --> 01:03:46,967
+Evet, biz de öyle düşünmüştük hocam.
+
+299
+01:03:47,788 --> 01:03:52,347
+Sürmeyen ise şey, bu doğal dil işlemede mesela...
+
+300
+01:03:52,724 --> 01:04:02,524
+Varlık ismi tanıma için sürmeyen dedik. Bir kere eğitiyoruz. Sonra zaten her metni verdiğimizde her zaman dedektediyor.
+
+301
+01:04:03,524 --> 01:04:07,864
+Teşekkürler grup 4. Grup 5'i dinleyelim.
+
+302
+01:04:08,544 --> 01:04:10,204
+Merhaba hocam. [öğrenci] ben.
+
+303
+01:04:12,104 --> 01:04:16,164
+Biz tam işleme için hesap makinesinden başka bir şey aklımıza gelmedi.
+
+304
+01:04:16,164 --> 01:04:17,044
+Tamam, devam.
+
+305
+01:04:17,619 --> 01:04:35,059
+Yaklaşık eşlemeye de chatbot düşünmüştük. Yani elindeki verilere en benzer şekilde yeni bir yanıt verecek. Hafızalı öğrenme için hava durumu tahmini dedik. Önceki verilere göre yeni yani gelecekteki havayı tahmin ediyor diye düşündük.
+
+306
+01:04:36,563 --> 01:04:48,443
+Ana göre değil de, tabii şimdi şöyle bir şey düşünelim. Hani kışınki bir 19 derecelik bir ölçümle, yıldınki 19 derecelik bir ölçümün farkının olması lazım, değil mi?
+
+307
+01:04:48,963 --> 01:04:49,303
+Evet.
+
+308
+01:04:49,563 --> 01:04:54,863
+Yani orada bir tercesinde havalı ısınmış, bir tercesinde hava çok soğumuş gibisinden bir durum var. İkisi de aynı ama.
+
+309
+01:04:55,343 --> 01:04:55,563
+Evet.
+
+310
+01:04:55,563 --> 01:05:02,303
+Yani normal zamana göre. Orada bir miktar bir pencereyi falan kullanması gerekiyor, geçmişi kullanması gerekiyor. Peki, devam.
+
+311
+01:05:02,835 --> 01:05:08,395
+Hafsız öğrenme için dama oyunu dedik hocam. Yani satranç gibi başka bir tahta oyunu.
+
+312
+01:05:09,495 --> 01:05:10,255
+Doğru, tamam.
+
+313
+01:05:12,175 --> 01:05:20,275
+Kendi öğrenen için yine hareket eden robotlar demiştik. Yani harita çıkaran, süpürge olur, başka bir şey olur.
+
+314
+01:05:21,955 --> 01:05:24,595
+Öğrenim hep süren için de aynı örneği düşünmüştük.
+
+315
+01:05:26,675 --> 01:05:30,055
+Peki, teşekkürler grup 5. Grup 6.
+
+316
+01:05:31,987 --> 01:05:33,427
+Hocam, merhaba [öğrenci] ben.
+
+317
+01:05:34,168 --> 01:05:34,967
+Merhaba [öğrenci].
+
+318
+01:05:35,608 --> 01:05:38,628
+Biz tam işleme için hesap makinesi düşündük.
+
+319
+01:05:39,628 --> 01:05:42,867
+Yaklaşık işleme için robot süpürge dedik hocam.
+
+320
+01:05:44,367 --> 01:05:47,467
+Hafızalı için Spotify şarkı öneri sistemi düşündük.
+
+321
+01:05:49,128 --> 01:05:52,088
+Kendi öğrenen için otonom araç.
+
+322
+01:05:53,548 --> 01:05:57,987
+Örünme hep süren için de yüz tanıma dedik ama şu şekilde hani...
+
+323
+01:05:58,003 --> 01:06:06,923
+Bir tanıma işlemi yaptıktan sonra bunu doğru ya da yanlış bildiğiyle ilgili feedback veriyorsak öğrenim sürmeye devam ediyordur.
+
+324
+01:06:06,923 --> 01:06:14,864
+Ve onun ardından o feedback'e göre kendini güncelliyor.
+
+325
+01:06:15,103 --> 01:06:16,743
+O anda güncellemesi lazım.
+
+326
+01:06:17,427 --> 01:06:32,307
+Yani bir insan müdahalesi, kendini güncelle falan gibisinden bir insan müdahalesi modelini değil. Şimdi orada dediğim gibi modeller güncellenirler zaten her zaman. Yani bir şeyi eğitirsin, belli bir zaman kullanırsın, eskir ve ondan sonra modeli güncellemen gerekir.
+
+327
+01:06:35,443 --> 01:06:49,503
+Önümün hep sürdüğünü ya da sürmelileri göstermiyor. Modernin güncellemesi. Modernin güncellemesinin test zamanında yapılıyor olması bunu gösteriyor. Çalışırken model kendi kendine güncelleniyor mu? Tamam mı? Hikaye orası.
+
+328
+01:06:51,463 --> 01:06:52,203
+Anladım hocam.
+
+329
+01:06:52,663 --> 01:06:56,123
+Peki, teşekkürler grup 6. Grup 7'yi dinleyelim.
+
+330
+01:06:58,103 --> 01:06:59,483
+Merhaba hocam, ben [öğrenci].
+
+331
+01:07:00,603 --> 01:07:01,723
+Evet, [öğrenci] merhaba.
+
+332
+01:07:02,579 --> 01:07:15,079
+Hocam, Rezektif için aslında biz klavyeleri düşündük. Yani belli bir alfabeye göre belli bir çıktı üretiyoruz ama sallıyorum Çin alfabesi geldiğinde aynı klavyeyi kullanarak belli bir çıktı üretemiyoruz.
+
+333
+01:07:15,079 --> 01:07:18,079
+Ben anlamadım. Bir daha söyleyebilir misin yani? Neyi düşündün?
+
+334
+01:07:19,079 --> 01:07:19,879
+Klavyeleri.
+
+335
+01:07:20,579 --> 01:07:21,079
+Klavye.
+
+336
+01:07:22,751 --> 01:07:26,791
+Klavyede sen bir şeye basıyorsun, o bastığın şeye göre bir şey çıkıyor.
+
+337
+01:07:26,791 --> 01:07:32,791
+Evet. Ama mesela Çin alfabesi geldiğinde aynı klavyeyi kullanarak çıktı üretemiyoruz.
+
+338
+01:07:36,211 --> 01:07:38,211
+diye düşündüm.
+
+339
+01:07:38,211 --> 01:07:43,211
+Ama şimdi alfabesi geldiğinde demek ne demek?
+
+340
+01:07:43,211 --> 01:07:50,211
+Yani farklı bir alfabeyi aynı klavye kullanarak cevap üretemiyoruz. Hani şu anki standart klavyeleri bir sündüğümüzde.
+
+341
+01:07:52,628 --> 01:07:54,888
+Çince için hazırlanmış bir klavye olması lazım.
+
+342
+01:07:55,008 --> 01:07:55,348
+Aynen.
+
+343
+01:07:56,268 --> 01:07:58,168
+Orada da yine tam eşleme çalışacak.
+
+344
+01:07:58,408 --> 01:07:58,748
+Aynen.
+
+345
+01:07:59,548 --> 01:08:04,168
+Yine şey de olabilir hocam. Oda sıcaklık sensörleri var ya.
+
+346
+01:08:04,508 --> 01:08:09,028
+22 dereceye sabitliyor. Sıcaklığı ona göre arttırıyor ya da azaltıyor.
+
+347
+01:08:09,028 --> 01:08:09,228
+Tamam.
+
+348
+01:08:13,844 --> 01:08:36,804
+Yaklaşık eşleme için bu Eliza tarzındaki botları düşündük. Hani belli bir sekansa göre belli bir şey ürettiği için. Hafızalı için soru cevap botlarını düşündük. Hani sürekli o konversasyon, işte sohbeti aklımda tutması gerekiyor ve ona göre size cevap üretiyor olması gerekiyor.
+
+349
+01:08:37,619 --> 01:08:50,399
+Halk ızasız için en kısa yol problemleri tarzındaki problemleri düşündük. Çünkü ondan önce ne yaptığı önemli değil. Şu anki mevcut olduğu konuma göre bir en kısa yol üretmesi gerekiyor.
+
+350
+01:08:51,379 --> 01:08:52,859
+Bir daha söyleyebilir misin? Anlayamadım.
+
+351
+01:08:53,539 --> 01:08:55,260
+En kısa yol problemleri.
+
+352
+01:08:56,159 --> 01:08:56,600
+Nasıl söylüyorsun?
+
+353
+01:08:56,600 --> 01:09:04,879
+Yani ondan önceki bilgi bizim için önemli değil. Mevcut olduğu konuma göre en kısa yolu bulmaya çalışıyor.
+
+354
+01:09:07,283 --> 01:09:13,683
+Bir ortamda gezen bir şey var. O bir anda diyorsan ona şu noktaya en kısa yolu bulmayacaksın. Öyle mi?
+
+355
+01:09:13,683 --> 01:09:27,243
+Ya şey bile düşünebiliriz hocam. Trafiksiz yollarda, tabii ki trafikte bir öğrenme durumunda olmanızı ama trafiksiz bir yolda mesela en kısa yol problemi bir hafızlı sistem haline geliyor.
+
+356
+01:09:27,243 --> 01:09:28,243
+Tamam.
+
+357
+01:09:28,243 --> 01:09:32,723
+Kendi öğrenim için bu labirent tarzı oyunları düşündük.
+
+358
+01:09:32,979 --> 01:09:53,920
+Çarpa çarpa oradan artık geçmemesi gerektiğini öğreniyor. Ama öğretilen sistemler için de şöyle bir şey düşündük. Yapay zeka oyunları var ya, başta test tarafında öğretiliyor. Sonrasında canlıya alındıktan sonra artık öğrenmenin bir insan olması gerekiyor.
+
+359
+01:09:53,920 --> 01:09:58,920
+Çünkü oyun süresince öğrenmesi...
+
+360
+01:10:00,000 --> 01:10:01,840
+Neyi rahatsız eder diye düşündü.
+
+361
+01:10:02,620 --> 01:10:06,700
+Orası öğrenimiz sürmeyene bir örnek olur. Öğretilene örnek olmaz.
+
+362
+01:10:06,700 --> 01:10:14,979
+Şimdi bak, kendi öğrenen ve öğretilen arasındaki fark şu. Karar mekanizmasını, yani mesela labirenti çözen problemi düşünelim.
+
+363
+01:10:15,300 --> 01:10:21,700
+Labirenti çözen problem de eğer ki mekanizmayı insanlar kurallar aracılığıyla sisteme verdilerse...
+
+364
+01:10:23,315 --> 01:10:39,695
+O durumda bu öğretilene girer. Ama reinforcement learning gibisinden bir mekanizma ile bu çalışırsa, o durumda bu kendi öğrenene girer. Eğitimini sürüp sürmemesi ayrı bir boyut, kendisinin öğrenip başkasının öğretmesi başka bir boyut.
+
+365
+01:10:41,575 --> 01:10:42,995
+Evet, doğru efendim. Aynen.
+
+366
+01:10:43,344 --> 01:10:44,344
+Tamam.
+
+367
+01:10:44,344 --> 01:10:49,344
+Öğrenimi hep süren için de ticaret tabanlı uygulamalar olarak düşündük.
+
+368
+01:10:49,344 --> 01:10:52,344
+Sonraki alımlarına göre farklı öneriler sunuyor.
+
+369
+01:10:52,344 --> 01:10:57,344
+Hani o an ikini kullanmıyor ama bir sonraki uygulamalarını da kullanıyor.
+
+370
+01:10:58,344 --> 01:11:02,344
+Öğrenimi sürmeyen için de ev robotlarını düşündük.
+
+371
+01:11:02,344 --> 01:11:06,344
+Çünkü başta bir haritalama yapıyor ve sonrasında onu kullanıyor.
+
+372
+01:11:08,344 --> 01:11:10,188
+O yüzden böyle düşünüyorum.
+
+373
+01:11:11,507 --> 01:11:15,467
+Peki, teşekkür ediyoruz grup 7. Grup 8'e gelelim.
+
+374
+01:11:18,227 --> 01:11:20,627
+Hocam ben galiba grup 8 değilim, oyun alamadım ama.
+
+375
+01:11:23,268 --> 01:11:26,028
+İtiraz olmadığına göre konuşabilirsin.
+
+376
+01:11:27,188 --> 01:11:40,368
+Hocam, şimdi biz sorumuzu biraz yanlış anlamıştık da, bir örnek bulup hangi koçları uyuyor diye biraz bakmıştık. Ben size hepsine de örnek buldum birazdan.
+
+377
+01:11:41,268 --> 01:11:47,587
+Şimdi bir örnek vereyim hocam. Şimdi mikro mouse'lar var hocam labirentlerde, labirent yarışmalarında.
+
+378
+01:11:48,756 --> 01:12:04,756
+Bu rektosife uyuyor hocam. Önce bir hep sağa git diye bir hareket var hocam. Sağa gide gide. Son nokta, sarı nokta yani bir sarı nokta var hocam. Oraya kadar gidiyor hocam. Bir mapping yapıyor hocam.
+
+379
+01:12:05,171 --> 01:12:19,711
+Bu Micro Mouse hem de yaklaşık işlemeye de uyuyor hocam. Çünkü bundan sonra hocam yolu bulduktan sonra bununla ilgili hocam bu girdiğinin en kısa yolunu buluyor hocam.
+
+380
+01:12:22,591 --> 01:12:29,051
+Bu aslında hocam şey var hocam, hafızası da uyuyor hocam bu şey. Hep aynı girdiği için.
+
+381
+01:12:30,036 --> 01:12:57,056
+Mikro Mouse hep aynı sonucu verir hocam. Hafızalı olarak da hocam örnek vereyim hocam. Taksi şoförlüğü mesela hocam bu araç yapay zekaları var hocam. Durma zamanla değişiyor hocam. Bu taksi şoförlüğünü kendi öğrenen de örnek verebilirim hocam. Öğretilen de bu mikro mouse'a yine geri döneceğim.
+
+382
+01:12:57,555 --> 01:13:16,315
+Orada program yazılıyor. Karar mekanizması. Belman'ın taşıma algoritmasını kullanıyorlar. Öğrenimi hep süren sürmeyende hocam.
+
+383
+01:13:20,404 --> 01:13:27,744
+Sıren diyebilir miyiz? Emin olamadım ama sürmeyen galiba bu mikromağızlar. Galiba yani bir kere öğretiyorsun. Değişmiyor yani. Aynen.
+
+384
+01:13:27,824 --> 01:13:33,864
+Programı yazıyorsun, kara mekanizması içine koyuyorsun ve çalışıyor. Aynen. Değişiyor mu çalışırken? Değişmiyor hocam.
+
+385
+01:13:33,864 --> 01:13:41,404
+Mekanizması. Hep aynı kalıyor. Tamam. Ama araç şoförlüğünde hocam değişebilir ya da...
+
+386
+01:13:42,355 --> 01:13:53,595
+Bir oyunlarda olur hocam. Santraç örneğini vereceğim ama tam tersini vermiştim. Havazası da vermiştim. Mesela havazalı bir santraç algoritması kasarsa yani şey olur hocam mesela.
+
+387
+01:13:53,595 --> 01:14:05,975
+Şimdi hocam santraçta hocam puanlar olayı var ya hocam. Aynı durumda sonuçların bu hareketin kaç puan artıda olduğunu gösteriyor hocam.
+
+388
+01:14:06,387 --> 01:14:23,127
+Şimdi eğer karşıdaki bir hafızayı hep oyundaki girdileri database'e kaydedersek hocam, şey olur hocam yani bu hafızalı bir satranç olur ve buna göre de şey olur hocam, hep öğrenimi sürer.
+
+389
+01:14:23,427 --> 01:14:29,247
+Yani nasıl diyeyim, o puan durumuna göre en yüksek puanı hareketi seçer yani.
+
+390
+01:14:30,003 --> 01:14:33,923
+Zaten böyle yapmıyor mu? Son takta durumuna göre en iyi hareket seçilmiyor mu?
+
+391
+01:14:34,103 --> 01:14:44,684
+Evet hocam bu şöyle var hocam. Bir önceden hazırlanmış hazır bir database'i olan vardır. Bir de durmadan dinamik olarak değişen database'i olan Santranç.
+
+392
+01:14:47,123 --> 01:14:49,484
+Olabilir diyorsun. Öyle bir şey yapılabilir diyorsun.
+
+393
+01:14:49,783 --> 01:14:51,283
+Biz yap yapsalar yaparlar yani.
+
+394
+01:14:51,684 --> 01:14:54,123
+İşe yarar mı yaramaz mı? Orası ayrı bir şey de.
+
+395
+01:14:54,707 --> 01:15:19,567
+Çok anlamlı olmadı herhalde. Peki, teşekkürler grup 8. Teşekkürler hocam ben de. Grup 9. Merhaba hocam. Merhaba. İstediğin neydi? [öğrenci] hocam. Evet [öğrenci] buyur. Tam işleme için biz alarm düşündük. Telefondaki alarmları. Saat kaç ayarlarsak o saatte çalıyor. Doğru.
+
+396
+01:15:20,000 --> 01:15:28,800
+Başka bir şey yok. Yarı eşlemede de gelen bir hayvan resminin hangi hayvan olduğunu tespit ediyor.
+
+397
+01:15:31,780 --> 01:15:40,180
+Hafızalı'da tavsiye sistemleri dedik biz. Biraz daha genel oldu. İşte bu reklam olabilir, video olabilir, müzik olabilir gibi.
+
+398
+01:15:41,332 --> 01:15:47,872
+Yani hafızasızda maske tespiti dedik hocam. Bu kişinin maskesinin olup olmadığını tespit ediyor.
+
+399
+01:15:48,752 --> 01:15:50,912
+Önceki girişlerin herhangi bir anlamı yok.
+
+400
+01:15:51,032 --> 01:16:05,852
+Evet, bir anlamı yok. Kendi öğrenende otonom araç dedik ama işte eğitilen anlamdaki otonom araç ya da işte görme engelliler için asistan gibi bir şey vardı. Ortamı tasvir ediyordu.
+
+401
+01:16:08,115 --> 01:16:09,155
+Sözlü olarak.
+
+402
+01:16:10,655 --> 01:16:13,255
+Öğretilene navigasyon dedik.
+
+403
+01:16:16,948 --> 01:16:35,908
+Öğretime navigasyon dediniz. Evet. Mekanizması insanlar tarafından oluşturulmuş. En kısa yorumması bulacağınız zaten biz kodluyorum içerisine. Evet. Evet, tamam. Öğrenimi sürene de satranç dedik ama biz de şöyle düşündük. Her mesela kişi her oynadığında eğitiliyor tekrar.
+
+404
+01:16:39,956 --> 01:16:42,576
+Her maçtan sonra tekrar eğitiyor kendini.
+
+405
+01:16:44,595 --> 01:16:46,655
+O maçtaki yaptığı şeylere göre.
+
+406
+01:16:46,916 --> 01:16:47,315
+Evet.
+
+407
+01:16:48,396 --> 01:16:51,315
+Ya da karşı tarafın yaptığı şeylere göre maçın sonucuna göre.
+
+408
+01:16:51,855 --> 01:16:52,175
+Evet.
+
+409
+01:16:52,396 --> 01:16:53,536
+Tamam, tamam. Peki.
+
+410
+01:16:53,695 --> 01:16:55,355
+Sürmeyene de chatbot dedik.
+
+411
+01:16:57,775 --> 01:17:01,115
+Evet, sürmeyebilirsin. Tamam. Sürmeyebilirsin.
+
+412
+01:17:01,615 --> 01:17:06,216
+Peki, teşekkür ediyoruz. Grup 9, grup 10'a gelelim.
+
+413
+01:17:20,564 --> 01:17:22,004
+Grup 10 yok mu arkadaşlar?
+
+414
+01:17:27,636 --> 01:17:28,516
+Sesim geliyor mu?
+
+415
+01:17:32,435 --> 01:17:35,295
+Evet hocam sesiniz geliyor da grup 10 yok sanırım.
+
+416
+01:17:35,915 --> 01:17:43,495
+Grup 10 nasıl yok yani? Aşağı 4-5 kişi vardı orada. Peki grup 11?
+
+417
+01:17:45,375 --> 01:17:48,315
+Grup 11 biziz hocam. Adım [öğrenci].
+
+418
+01:17:51,375 --> 01:17:56,315
+Refleksif tam eşleme için telefon araması ya da komut konsollarını düşündük.
+
+419
+01:17:56,315 --> 01:17:57,555
+Doğru.
+
+420
+01:17:58,323 --> 01:18:16,023
+Refleksif yaklaşık eşleme içinde hava durumu tahminlerini düşündük. Hafızalı, hafızasızlar için. Hafızalı da herhangi bir öneri sistemi, Netflix, YouTube ya da Spotify gibi öneri sistemleri bunun içine erebilir bunu düşündük.
+
+421
+01:18:23,220 --> 01:18:37,220
+Hukuk konusunda yardıma ihtiyacı varsa, hukuk konusunda sorularını sorduğu bir chatbot olarak düşündük. Burada sadece kendi içerisinde bulunan şeylere cevap veriyor. Kendi öğrenende...
+
+422
+01:18:37,220 --> 01:18:47,220
+Bir dakika, kendi içinde bulunan şeylere cevap veriyor demek olmaz. Şöyle bir şey olması lazım. Hafızasız olması için. Yani sadece kullanıcının son söylemiş olduğu cümleye bakarak...
+
+423
+01:18:47,648 --> 01:18:49,127
+Bir şey söylemesi lazım.
+
+424
+01:18:49,507 --> 01:18:51,108
+Evet, evet öyle. Öyle zaten.
+
+425
+01:18:51,268 --> 01:18:53,967
+Yani daha önceki cümlede dikkate almaması lazım.
+
+426
+01:18:54,567 --> 01:18:54,887
+Evet.
+
+427
+01:18:55,288 --> 01:18:56,228
+Peki, devam.
+
+428
+01:19:02,771 --> 01:19:16,671
+Kendi öğrenene herhangi bir sınıflandırma algoritmasını örnek verebileceğimiz için, örneğin bir resminin içinde elma olup olmadığını sınıflandıran bir algoritma, burada bir veri seti vererek kendi öğrenmesini sağlıyoruz.
+
+429
+01:19:16,671 --> 01:19:26,671
+Aslında bu sınıflandırma algoritmalarını kendi öğrenen için verdik. Öğretilenler için de basit bilgisayar oyunu yapay zekalarına örnek verdik.
+
+430
+01:19:26,791 --> 01:19:30,671
+Örneğin oyuncu bir hareket yaptığında buna karşı...
+
+431
+01:19:30,771 --> 01:19:38,372
+bir hareketin nasıl yapılacağı hard kodada olarak yapay zekaya işleniyorsa bu öğretilen oluyor.
+
+432
+01:19:41,332 --> 01:20:00,971
+Öğrenime Hepstüren'e aslında Transfer Market gibi sistemleri örnek verdik. Burada yeni oyuncular geldikçe, oyuncuların sistem puanları, yetenekleri değiştikçe, yaşları değiştikçe, oyuncuların değerleri de değişiyor ve buraya sürekli kaydediliyor. O yüzden bu sistemin öğrenimi sürekli...
+
+433
+01:20:00,971 --> 01:20:06,391
+Ama o değişikliklerin nasıl yapılacak kurallarla falan kodlanmış da olabilir.
+
+434
+01:20:07,091 --> 01:20:12,412
+Ama kurallara göre kendini yine güncelliyordur. Peki, tamam.
+
+435
+01:20:13,412 --> 01:20:19,371
+Öğrenimi sürmeyene de yine basit chatbotları örnek vermiştik bizden.
+
+436
+01:20:20,231 --> 01:20:25,131
+Tamam, teşekkürler grup 11. Evet, grup 12'yi dinleyelim.
+
+437
+01:20:32,372 --> 01:20:33,672
+Grup 12'yi dinleyemeyeceğiz.
+
+438
+01:20:42,012 --> 01:20:46,372
+Peki arkadaşlar, şimdi saat...
+
+439
+01:20:49,112 --> 01:20:51,051
+...20.30.
+
+440
+01:20:57,395 --> 01:20:59,695
+Bir on dakika sonra görüşelim arkadaşlar.
+
+441
+01:21:05,043 --> 01:21:06,224
+Teneffüse çıkabilirsiniz.
+
+442
+01:31:44,884 --> 01:31:46,503
+Tekrardan merhabalar arkadaşlar.
+
+443
+01:31:48,203 --> 01:31:49,664
+68 kişi olmuşuz.
+
+444
+01:31:49,664 --> 01:31:50,664
+Peki.
+
+445
+01:32:08,372 --> 01:32:09,512
+Geldim arkadaşlar.
+
+446
+01:32:11,051 --> 01:32:12,072
+Geldi hocam.
+
+447
+01:32:12,792 --> 01:32:13,112
+Aman.
+
+448
+01:32:16,180 --> 01:32:26,979
+Şimdi bir admini dizayn ederken ilk önce karar vermemiz gereken bir de parametreler var. Bu parametreler ilk harfleriyle bir PAS diye bir kelime oluşturuyorlar.
+
+449
+01:32:26,979 --> 01:32:41,579
+PAS dediğimiz şey ne? Birincisi performance measure. Yani bu ajanın performansını biz nasıl ölçeceğiz? Buna karar vermemiz gerektiğini. İkincisi bu ajan nasıl bir ortamda çalışacak?
+
+450
+01:32:41,872 --> 01:32:45,452
+Ortama dair nasıl özellikler var? Bunları konuşacağız daha sonra.
+
+451
+01:32:46,252 --> 01:32:51,791
+Ekişitörlerimiz neler olacak? Sensörlerimiz neler olacak? Ortamı nasıl algılayacağız? Ortamı nasıl değiştireceğiz?
+
+452
+01:32:54,172 --> 01:32:59,992
+Bunlar bizim zannetmeye başlamadan önce bilmemiz gereken şeyler. Tabii ki zaman içinde güncellenebilirler.
+
+453
+01:33:00,131 --> 01:33:02,811
+Şimdi burada birkaç tane örnekten bahsedeceğiz.
+
+454
+01:33:03,391 --> 01:33:06,912
+Şimdi ajanımız mesela harita çıkaran bir robot da olsun. Yani şöyle bir şey, ne bileyim.
+
+455
+01:33:10,068 --> 01:33:30,048
+Tek katlı bir yer olsun. Hadi işi kompleks bir hale getirmedim. Tek yerlikli falan bir şey olabilir mesela. Tek katlı bir binanın içerisinin haritasını çıkartsın. Mesela böyle bir şey olsun, hedefi olsun, amacı olsun. P dediğimiz şey neydi? Performans Minion. Ne olabilir? Haritanın doğruluğu.
+
+456
+01:33:30,547 --> 01:33:51,847
+Yani nasıl bir harita çıkarttı, harita ne kadar doğru o bir ölçüm. Başka işlem hızı, yani ne kadar hızlı bu işi yaptığı kritik olabilir mi? Yani bir günde çıkartması bir şey, ne bileyim ben, bir saatte çıkartması başka bir şey. Başka, mesela yine başka bir performans özgürtü, statik ve dinamik ortamlarda çalışabilmesi.
+
+457
+01:33:52,692 --> 01:34:10,631
+Şimdi statik ortam ve dinamik ortam ne demek? Statik ortamın anlamı ortamda agent'ın haricinde başka bir ortamı değiştiren nesnenin bulunmaması demek. Yani mesela boş bir binanın haritasının çıkartılması statik bir ortam olacaktır.
+
+458
+01:34:10,996 --> 01:34:34,155
+Ama içinde insanların gezdiği, mesela bir AVM'nin bir katının, çalışan bir zamandaki bir AVM'nin bir katının haritasının çıkartılması ise dinamik bir ortam olacaktır. Ya da içeride başka robotlar da varsa mesela yine dinamik bir ortam olacaktır. Birden fazla agent aynı katın haritasını çıkartmaya çalışıyorlarsa, işbirliği içerisinde orada da yine ortam dinamik hale gelecektir.
+
+459
+01:34:34,771 --> 01:34:59,811
+Environment nasıl bir şey? Duvarlar, binanın içi olabilir. Bir AVM falan gibisinden düşünseniz öyle. Ama ne bileyim mesela bir kampüsün haritasını çıkartan bir şey tasarlıyorsunuz, bir robot tasarlıyorsunuz. O durumda buradakiler biraz daha değişir. Bina içi dış ortam olabilir. Statik ya da dinamik olabilir dedik zaten ortam. Engeller ortamda yer alabilir. Geçebileceği, geçemeyeceği bir sürü bir şeyler karşısına çıkacaktır. Bomboş bir yer.
+
+460
+01:35:01,587 --> 01:35:08,971
+Accuator'dan tekerler ve yön ve hız vermek. İşte kamerası falan varsa ya da...
+
+461
+01:35:10,579 --> 01:35:32,219
+Kamerayı hareket ettirmesi gerekiyorsak, kamerayı sabit durmaya iptal hareket ettirmesini istiyorsak eğer, bu durumda kameranın motorlarını da bir şekilde, kamerayı hareket ettiren motorları da kontrol etmeniz gerekecek. Sensörler, lazer, sonlar gibi uzaklık algılayıcılar olabilir, kamera olabilir. Bunlardan bilgileri çıkartmak mümkün.
+
+462
+01:35:35,060 --> 01:35:54,420
+Mesela otonom bir taksi sürücüsü olsa ajanımız, P dediğimiz şey neler olur? Birimiz mesela güvenilir bir şey olmalı, hızlı gidebiliyor olmalı. Çok yavaş yavaş gitmesi çok iyi bir şey değil ama bir yandan da yasal olması lazım. Konforlu olması lazım. Yani çok ani ivmelenmeler, çok ani dönmeler yapmıyor olması lazım sistemin belki.
+
+463
+01:35:55,283 --> 01:36:17,036
+Bütün araçlar...
+
+464
+01:36:17,140 --> 01:36:25,739
+O tanım olularsa korna falan gibisinden bir şeylere ihtiyaç kalmayacaktır tabii ki. Orada kendi içlerinde konuşabilecekleri için en azından.
+
+465
+01:36:28,307 --> 01:36:54,688
+Çok daha sessiz bir iletişim yolu bulabilirler kendilerine. Sensörler, kameralar, uzaklık ölçücüler, hız ölçücüler, geziden yol ölçü, motor sensörleri, klavye fare ya da işte mikrofonla falan da tabii ki bunların hepsi yapılabilir. Çünkü müşteri bindiği zaman sonuçta gitmek istediği yerin bir şekilde tarif etmesi lazım. Konuşarak yapabilir, cep telefonunda bir yerde tıklayarak yapabilir, klavye fare kullanarak yapabilir vesaire vesaire.
+
+466
+01:36:55,572 --> 01:37:00,152
+Bunlar da ortamdan bilgileri almak için kullanılacağı sensörler.
+
+467
+01:37:01,592 --> 01:37:03,551
+Tıbbi teşhis uzmanı demişiz.
+
+468
+01:37:04,452 --> 01:37:07,211
+Panta ilerleyen balıkları türlerine göre ayırıcı.
+
+469
+01:37:07,351 --> 01:37:09,811
+Burada çeşitli böyle birkaç tane şeyler var.
+
+470
+01:37:10,172 --> 01:37:11,692
+Ajan türleri var. Bunları incelersiniz.
+
+471
+01:37:12,652 --> 01:37:21,672
+Şimdi burada bakacağımız bu slide'lara son bakacağımız kısımsa ortam dediğimiz şeyin farklılıklarını birazcık algılayacağız.
+
+472
+01:37:23,636 --> 01:37:25,876
+Nasıl bir şeyler olabilir, nasıl türleri var?
+
+473
+01:37:26,956 --> 01:37:43,676
+Şimdi birinci kriter, Full Observable ve Partially Observable diye ifade ettiğimiz, yani ajanın sensörleri ortamın tamamını algılayabiliyorsa, bu durumda bu ortam tam olarak gözlemlenebilen, yani Full Observable diye ifade ettiğimiz şeye denk geliyor.
+
+474
+01:37:43,676 --> 01:37:49,436
+Mesela buna bir örnek verelim bakalım. Tüm ortamı bir ajanın algılaması ve algılayamaması.
+
+475
+01:37:50,163 --> 01:38:02,344
+Nasıl bir şey verebilirsiniz? Ortamın içinde çalıştığı, pardon, ajanın içinde çalıştığı ortamın tamamını sensörler aracılığıyla algılayabildiği bir örnek. Ne olabilir?
+
+476
+01:38:13,652 --> 01:38:22,951
+Evet. Hocam mesela bir labirente tepeden bakan bir drone olabilir labirenti gözetlemek için. Yani çıkış yolunu bulmak için.
+
+477
+01:38:22,951 --> 01:38:39,451
+Yani üstünde çalıştığı ortamı sadece şey olarak tanımlarsak. Nasıl söyleyeyim? Labirentin içi. Ama drone nerede görev yapıyor? Yani drone ne yapıyor? Amacı ne?
+
+478
+01:38:39,840 --> 01:38:42,880
+Yani drone'un amacı labirentin girişinden çıkışını bulmak.
+
+479
+01:38:45,680 --> 01:38:47,440
+Kendisi gezmeyecek ama içinde öyle mi?
+
+480
+01:38:47,980 --> 01:38:55,899
+Yok, üst tepeden bakıyor. Ondan aslında tamamını algılayabiliyor dedim. Tepeden bakıyor drone. Altta mesela araba falan var ona yolu göstermek için.
+
+481
+01:38:59,380 --> 01:39:02,699
+diye düşündük söylemiştim. Olabilir. Peki, tamam. Başka?
+
+482
+01:39:06,739 --> 01:39:08,739
+Çok daha basit örneklerle düşünüyorsunuz.
+
+483
+01:39:19,604 --> 01:39:25,724
+Mesela bir satranç motorunu düşünün. Satranç motoru için ortam tamamen algılanabilir, bile algılanamazdır.
+
+484
+01:39:34,355 --> 01:39:36,355
+Algılanabilir hocam.
+
+485
+01:39:40,355 --> 01:39:52,355
+Peki, okey oyunu düşünün. Okey oynayan bir acanınız olsun. O tamamen algılanabilir mi? Algılanamaz mı?
+
+486
+01:39:55,988 --> 01:39:57,988
+Yani rakiplerin elini göremez.
+
+487
+01:39:57,988 --> 01:40:02,988
+Evet, yani o zaman parçalı o zor buldu. Yani tamamını algılayamayacak.
+
+488
+01:40:02,988 --> 01:40:09,988
+Peki, deterministik stokastik. Ortamın bir sonraki durumu sadece şu anki durumda hocanın yaptığı hareketler belirleniyorsa,
+
+489
+01:40:09,988 --> 01:40:17,988
+bu deterministik bir yapım, stokastik karşılığı için içerisinde şansın olması denk geliyor.
+
+490
+01:40:18,899 --> 01:40:29,920
+Epizodik ve sequential yapılan bir hareket ileriye doğru etkimiyorsa, mesela burada bu parmak izi tanıma vs. bunlar, prezizik armatörü bunlar, epizodik.
+
+491
+01:40:29,920 --> 01:40:38,000
+Sequential ise böyle arka arkaya bir şeylerin yapılması süreci etkiliyorsa bu ayrım var.
+
+492
+01:40:38,452 --> 01:40:52,231
+Static Dinamic bunu söylemiştik. Discrete Continuous sınırlı sayıda açıkça belirtilmiş algı ve hareketler varsa bu durumda discrete olacak. Sonsuz sayıda varsa Continuous. Single Agent, Multi Agent ortamda bir ya da çok ajan varsa.
+
+493
+01:40:52,231 --> 01:40:58,912
+Şimdi burada çeşitli süreli sahtan, süreli sahtan ve taksi şoförü için bunların neler oldu? Tekrardan burada.
+
+494
+01:40:59,347 --> 01:41:23,987
+Özetlenmiş. Önemli olan nokta şu arkadaşlar. Gerçek dünya dediğimiz şey parçalı observabaldır, stokastiktir, sequential'dır, dynamiktir, continuous'dır ve multi-agent'dir. Yani gerçek dünya buradaki bütün kriterlerin hepsinin en zor olanlarından. Yani full observabaldır, parçal observabaldır daha zor. Determin liste göre stokastik ortamlar daha zor. Episodiye göre sequential ortamlar daha zor.
+
+495
+01:41:24,595 --> 01:41:42,855
+Dinamik daha zor, kontinu daha zor, multijent daha zor. Gerçek dünya ise bu kriterlerin hepsinde en zor olan kısım. Yani gerçek dünya üzerinde çalışılacak en berbat ortam diye düşünebilirsiniz. Simülasyon dünyaları harikadır. Oyun dünyaları onlar harikadır bu açıdan düşünürsek.
+
+496
+01:41:53,235 --> 01:41:56,556
+Tıpkı belirlemeden aramaya geçebiliriz.
+
+497
+01:42:28,627 --> 01:42:55,867
+Şimdi bu arama dediğimiz mevzuyu konuşacağız zaten. Efe bir konuşacağız işte. Beş hafta falan sürecek demiştim. Bunun içerisinde çeşitli türler var. Her hafta bir parçasıyla ilgileneceğiz. Bu hafta aslında aramanın temelinden bahsedeceğiz ilk önce. Problemleri bir arama problemi olarak nasıl ifade edeceğiz? Problemleri nasıl çözmek için bunları formüle edeceğiz? Bunların üzerinde çalışacağız.
+
+498
+01:42:56,404 --> 01:43:11,024
+Şimdi, planlama diye bir örneğimiz var burada. Mesela bir problem var elimizde. Problem şu, masadaki küpleri mevcut pozisyona, istenilen pozisyona getirmek. Yani şöyle bir durum var. Bakın, ABC'de küplerimiz var. Bu durumda duruyor bunlar. Amacımız ise bu duruma getirmek.
+
+499
+01:43:12,564 --> 01:43:34,804
+Olası hareketlerimiz ne? Küpü tutabiliyoruz, küpü yere koyabiliyoruz, küpü bir başka küpün üzerine koyabiliyoruz. Böyle yapabildiğimiz kabiliyetlerimiz var. Burada çözüm dediğimiz şey ne olacaktır arkadaşlar? Bir hareket sırası olacak. Yani ilk önce mesela buraya düşünürsek B'yi al, A'nın üstüne koy. Sonra da C'yi al, B'nin üstüne koy gibisinden böyle sıralı bir hareketler dizisi bulmak isteyeceğiz. Tamam mı?
+
+500
+01:43:36,212 --> 01:44:01,552
+Problemimiz dediğim gibi böyle bir problem için, böyle olası hareketler için çözümümüzde böyle hareketler sırası olacaktır. Mesela robotları yol planlama yapmaya kalksak bir başlangıç noktasından bir hedef noktasının mesajı. Şu B'den H'a gidelim, şu kırmızılar geçilemeyen yerler olsun. Olası hareketlerimiz sağa sola yukarı aşağı hareket etmek olsun. Olası hareketlerin maniyetleri birbirinden farklı olabilirler. Yani mesela şöyle bir şey düşünelim.
+
+501
+01:44:04,564 --> 01:44:11,324
+Nasıl diyelim? Mesela bu labirentin yatay düzen, yatayda değil de dikeyde bir şey olduğunu düşünün.
+
+502
+01:44:12,479 --> 01:44:39,559
+Diklemesine bir ortam olduğunu düşünün. Diklemesine bir ortamda yukarıya doğru gitmek daha fazla enerji harcatır. Aşağı doğru gitmek daha az enerji harcatır. Sağa sola gitmek birbirlerine eşitir muhtemelen. Ama en az enerji harcatan aşağı doğru gitmek, sonra sağa sola gitmek en çok da enerji harcatan yukarıya doğru gitmek olabilir. Dolayısıyla olası hareketlerin maliyetleri birbirinden farklı da olabilirler.
+
+503
+01:44:39,988 --> 01:45:07,768
+Mesela burada problem ne olabilir? Diyelim ki en az maniyetli hareketler birisini bulmak gibisinden bir şey. Burada hani olası hareketleri zaten görüyoruz. Çözüm de yine ne olacaktır? Bu olası hareketlerin bir dizisini oluşturmak olacaktır. İşte sağa git, sağa git, sola git, sola git, sağa git, aşağı git, yukarı git vesaire. Ve en sonunda bir yol bulacağız. Ve bu yol da bizim şurada problemlerimizin çözümü olacak. Mesela burası için belki şöyle gidecek.
+
+504
+01:45:07,988 --> 01:45:34,968
+Sonra şöyle gidecek, sonra böyle gidecek, şöyle gidecek, şöyle gidecek, şöyle gidecek, sonra da aşağıya gidecek. Mesela örnek. Bunun gibi bir sürü çözüm bulabilirsiniz. Bir sürü çözüm bulmak mümkün. O çözümlerin içerisinden de en iyisini bulmak da mümkün. Bunu zaman içerisinde biraz göreceğiz. Yani çözüm bulmakla en iyi çözüm bulmak aynı şey değiller.
+
+505
+01:45:36,051 --> 01:46:03,451
+Başka, mesela Cinev'lere de demişiz. Bu problemi biliyorsunuzdur. Ali diye birisi var, küçük bir sandalı var. Kurtunun, keçisinin kabağını Nehri'nin karşısına geçirmek istiyor. Kısıtlar var. Sandal Ali'yle birlikte en fazla bir adet nesliği taşıyabiliyor. Sandal tek başına gidemiyor. Ali içinde olmak zorunda. Keçiyle kaba, kurt ve keçi ikileri. Ali yanlarında değilken Nehri'nin aynı tarafında olmamalı. Yoksa işte keçi kabağı yiyor ya da kurt keçiyi yiyor.
+
+506
+01:46:04,020 --> 01:46:26,020
+Yani Ali yanlarındaysa kızıyor onları durduruyor efendim ama yanlarında yoksa yiyorlar. Amacımız işte bu yenme olaylarının hiçbiri gerçekleşmeden bu taraftan diğer tarafa gitmek. Şimdi böyle bir problemimiz var. Şimdi bu problemde bunu bir formüle edeceğiz. Problemi göstereceğiz. Nasıl göstereceğiz? Mesela ifade edilmesi gerekenler. Şimdi dört tane nesnemiz var burada aslında. Keçi, Kabak, Kurt ve [öğrenci].
+
+507
+01:46:26,739 --> 01:46:50,819
+Sandal da var ama sandalın aslında olmasına gerek yok. Sandal ifade etmemize gerek yok. Neden? Çünkü Ali her zaman sandalla birlikte olmak zorunda. Yani sandal, hadi sen karşıya geçmeyen gibisinden bir şey söyleyemiyoruz sandala. Ya da buraya gel falan olmuyor. O yüzden biz burada sandalı işin içinden çıkartıyoruz. Sadece Ali. Ali artı sandal birlikte hareket ediyorlar her zaman. O yüzden dört tane şey var.
+
+508
+01:46:51,731 --> 01:47:03,512
+Şimdi nesneleri nehrin kuzeyinde ya da güneyinde diye kodlayabiliriz. Yani şurasını düşünürsek, burası güney, burası da kuzey olsun. Nesneler hepsi nehrin güneyindeler başlangıçta.
+
+509
+01:47:05,811 --> 01:47:14,512
+Mesela burada dört tane nesnemiz var. Bu dört nesnenin her birinin nehrin kuzeyinde mi, güneyinde mi olduğunu ifade edersek, mesela çift alimiz burada mesela...
+
+510
+01:47:14,931 --> 01:47:20,271
+Kuzeyde ya da güneyde, kurt kuzeyde ya da güneyde vs. Burada kaç tane olası durum oluşur arkadaşlar?
+
+511
+01:47:23,011 --> 01:47:23,652
+Sekiz.
+
+512
+01:47:29,363 --> 01:47:29,983
+Excuse me.
+
+513
+01:47:36,659 --> 01:48:06,264
+16.
+
+514
+01:48:02,292 --> 01:48:13,152
+Ve en sonunda da hedefte de durum şu olmalı. Yani ben şu durumdan başlayacağım. Arada başka başka durumlardan geçeceğim, geçeceğim, geçeceğim, geçeceğim. En sonunda varacağım hedef durumda şu olacak.
+
+515
+01:48:16,148 --> 01:48:34,887
+Şimdi burada yasak durumlar var. Ne demek o yasak durum? Bizim geçmememiz gereken durumlar. Şimdi o geçmememiz gereken durumlara baktığımızda şurada görüyoruz aslında 1, 2, 3, 4, 5, 6, 7, 8 tane ne var? Yasak durumlar. Burada tabii şurası önemsiz demek. Yani burasının N ya da S olmasının bir önemi yok.
+
+516
+01:48:35,572 --> 01:48:54,671
+Şu üçü böyleyken burasının ne olduğunun önemi yok. Bu üçü böyleyken biz buradan geçmemeliyiz. Kurt keçi yer Ali olay yerine değilse. Şimdi Ali şuydu en baştakiydi. Kurt ve keçi şunlar. Kurt ve keçi ikisi de güneydeyken Ali'nin kuzeyde olmaması lazım. İkisi de kuzeydeyken Ali'nin güneyde olmaması lazım. Keçinin kabakla alakalı problemi var.
+
+517
+01:48:57,716 --> 01:49:16,416
+Dolayısıyla bunlardan da geçirmemiz lazım. Yani o zaman şurası aslında iki durumu ifade ediyor. Bu da iki durumu ifade ediyor. 8 tane durum var elimizde. Bir başlangıç durumumuz var. Geçmememiz gereken 8 tane durum var. Bir de hedef durumumuz var. Zaten toplam durum sayımız da 16 idi. Şimdi bu durumlardan geçe geçe bir şekilde ilerleyeceğiz. Bakalım.
+
+518
+01:49:23,731 --> 01:49:46,891
+Mesela birbirine dönüştüren aksiyon, hareket ya da işte operatörler hepsi aynı anlama geliyorlar. Kavramlar. Mesela keçiyi kuzeye taşımak. Keçiyi kuzeye taşımak demek ne demek? Başlangıç durumunda keçinin güneyde olması gerekiyor. Bitiş durumunun keçinin kuzeyde olması gerekiyor. Diğer nesilinde yerinin bir önemi yok. Mesela gösterim, mesela bunu nasıl gösterebiliriz? Çok basit bir şeydi. Mesela Mu God North demiş.
+
+519
+01:49:48,212 --> 01:49:56,332
+Keçi'yi kuzeye taşı. Bu keçi'yi kuzeye taşı hareketini uyguladığımızda şu durumu, bakın şu durumu şu duruma dönüştürüyor.
+
+520
+01:49:56,332 --> 01:50:02,072
+Şu durumu şu duruma dönüştürüyor.
+
+521
+01:50:02,416 --> 01:50:28,436
+Wolf kurdu yerini gösteren bir değişken. Ama anlamı gerek yok aslında bunlara. Bir şey etki etmiyor. Wolf'un yeri neyse burada da aynen kalıyor. Kaban yeri neyse o da aynen kalıyor. Burada sadece keçinin taşındığını gösteriyor. Değişken kullanımı bize kural yazmaktan şey yapıyor, kural sayılarını bayağı azalttırabiliyor.
+
+522
+01:50:30,387 --> 01:50:44,127
+Mesela burada örnek bir çözüm var. Burada S1 State'i bir durum, işte SSSS, hepsi birden aynı yerdeler. Hepsi de nehrin yüreğindeler. Buraya Move God North'u uygularsak işte bu şekle geliyor.
+
+523
+01:50:44,511 --> 01:51:06,511
+Şurada işte nehrin bu sefer kuzeyine geçti keçi. Daha sonra Mu Farmer Solt diyor. Yani çiftçi geriye dönsün. Çiftçi burada ne yapıyor bakın. Bunu uyguladığımızda geriye dönüyor. Sonra kurdu al kuzeye taşıyor. Çiftçiyle beraber kurt kuzeye gidiyor. Ondan sonra buradayken tek başına dönerse Wolf ve...
+
+524
+01:51:06,752 --> 01:51:27,992
+Keçi aynı yerde kalır. O zaman ne yapacak? Farmer gidecek, bu sefer keçiyi tekrardan geriye getirecek. Demin götürmüştü, şimdi geri getiriyor. Geriye getirecek. Daha sonra kabağa götürecek vs. vs. Bu sırayı uyguladığımız zaman, şu hareketleri görüyorsunuz, şu hareketleri uyguladığımız zaman en sona şuraya varabiliyoruz.
+
+525
+01:51:28,992 --> 01:51:34,132
+Şimdi bu mesela bir tane problemi formülleştirilmiş, formülasyon hali.
+
+526
+01:51:35,060 --> 01:52:01,520
+Şimdi başka bir problem. Bu aslında bir filmde de vardı. Videosu da buradan izleyebilirsiniz. Yani bu problemin olduğu kısmı mı videosu yoksa bir şeyin tamamı değil. Şimdi şöyle elinde 3 ve 4 galon hacimlere sahip iki tane bidon var. Şurada üçlük ve dörtlük. İki tane boş bunlar. Bir tane de pompa var su kaynağı. İstenen burada 4 galonluk bidona tam 2 galon su koymak.
+
+527
+01:52:01,823 --> 01:52:26,303
+Hedef şu ama az ile eksik kaynağı olmadığı zorunda değil, göz hesabı falan yapamıyorsun. Burada şekli bozuk olduğu için bunun tam olarak neresinin ikiye denk geldiğine dair bir şeyin yok. Tam bir bilgin yok ama çok da net bir şey elde etmen gerekiyor. Sonuç elde etmen gerekiyor. Bunu çözmek gerekiyor. Bir tartı falan da yok ortalıkta. Elindekiler sadece bunlar.
+
+528
+01:52:27,444 --> 01:52:47,804
+Bu problemi çözmek için ne yapabiliriz? Bu tarz problemleri çözmek için ne yapmamız gerekiyor? İlk önce durumları ifade etmemiz gerekiyor. Durumu ifade ederken burada iki tane bidonumuz var. İki tane bidon içerisinde su miktarı bizim için aslında yeterli. Pompadaki su miktarı çünkü sınırsız o. Orasına bir şey yapmamıza gerek yok.
+
+529
+01:52:48,159 --> 01:53:09,840
+Dolayısıyla bir durumu aslında iki tane sayı ile, yani ilki mesela dörtlüğün içindeki su miktarını, ikincisi ise üçlüğün içerisindeki su miktarını gösterebilir. Başlangıç durumumuz var, sıfıra sıfır ikisi de boşta. Bitiş durumumuz ise ikiye en, şu enin ne olduğu önemsiz. Yani şurada iki olsun da, çünkü ne diyordu hedefte, dörtlüğün içerisinde ikilikçisi olsun istiyor.
+
+530
+01:53:11,891 --> 01:53:33,712
+Hedef durumumuz bu. Şimdi durumu tanımladık. Mesela şöyle durumlarımız var. 2'ye 4. Mesela bu bir durum. 3'e 4. Başka bir durum. Başka ne olabilir? 0'a 4. Bu başka bir durum. 1'e 0. Bu da başka bir durum. Böyle böyle durumlarımız var.
+
+531
+01:53:39,604 --> 01:53:53,543
+Dört mesela bir durum değil. Çünkü şu bizim için üçünün içindeki su miktarda. Üçünün içerisinde dört litre su olamaz. Bunlar bizim durumları ifade etmek için kullandığımız yapı bu olsun.
+
+532
+01:53:53,543 --> 01:54:06,944
+Devam edelim. Durumlardan sonra bizim neleri tanımlamamız gerekiyor? Başlangıç ve bitiş durumu tanımlamamız gerekiyor. Onu da tanımladı. Şimdi neyi tanımlayacağız? Durumlar arası geçiş yapacak olan operatörleri tanımlayacağız.
+
+533
+01:54:07,572 --> 01:54:24,011
+Durumlar arasında geçişi nasıl yaparız? Ne var burada? Bakın, x, y değeri 4y'ye dönüşür diyor. Bu bir numaralı operatör. Operatörün adı şu, 4 kalonluk bidonu pompayla doldur. Açıklaması diyelim.
+
+534
+01:54:31,155 --> 01:54:51,776
+Altında şöyle bir ifade var. If x dörtten küçük. Yani bu operatörü uygulamak için şu şart olması gerekiyor. Yani x zaten dörtten büyükse ya da eşitse bunu yapmanın bir anlamı yok. Dörtlük doluysa bunu doldurmanın bir anlamı yok. Orada bunu uygulamaya hiç gerek yok. Zaten hiçbir şey değiştirmeyecek.
+
+535
+01:54:55,184 --> 01:55:20,544
+Bu birinci oper. İkinci operda 3 kalonluk bidonu pompayla doldur. Tamam. 4 kalonluk bidonu yere boşalt. Mesela X, Y'yi bu neye dönüştürecek? 0, Y'ye dönüştürecek. 3 kalonluğu boşalt. Tamam. Sonra ne var? 4 kalonluk bidon dolanak kadar 3 kalonluk bidondan su doldurduyor. Bakın. 4 kalonluk bidon dolanak kadar. Yani 3'lüğü alıyorsunuz. 3'lükten 4'e boşaltmaya başlıyorsunuz. 4 dolduğunda duruyorsunuz.
+
+536
+01:55:21,076 --> 01:55:37,855
+Böyle bir şeyin uygulanabilmesi için ilk önce şartlarımız var. Ne o şartlar? X artı Y'nin 4'ten büyük eşit olması lazım. Dolana kadar olması için zaten X artı Y'nin 4'ten büyük eşit olması lazım. Ve Y'nin de 3'ün içerisinde de su olması lazım.
+
+537
+01:55:39,091 --> 01:55:56,631
+Bu neyi dönüştürüyor? X'i Y'ye neye dönüştürecek? X neye dönüşecek? 4'e dönüşecek. Peki Y'ye neye dönüşecek? 4-X kadar su gitti. Değil mi? 3'ten. Dolayısıyla Y-4-X'e dönüşecek. Aynı şekilde 3 kalanlık bidonu dolana kadar 4'luktan su doldur. Bu da başka bir operatörümüz.
+
+538
+01:55:57,203 --> 01:56:08,923
+İki tane daha operatörümüz var. Üç kolonluk bidondaki suyun tamamını dörde boşalt ya da dörtlüğün içerisindekinin hepsini üçe boşalt. Burada da yine şartlarımız var. X artı Y dörten küçük olacak bu durumda ya da ikincisinde de bu.
+
+539
+01:56:08,923 --> 01:56:24,003
+Şimdi ne yaptık? Biz durumları tanımladık. Durumları başlangıcı sonu belirttik. Daha sonra durumları birbirine dönüştüren operatörleri tanımladık. Şimdiki amacımız ise aynen şurada olduğu gibi operatör dizisini bulmak.
+
+540
+01:56:25,108 --> 01:56:44,087
+Operator dizisi, mesela burada bir çözüm. En iyi çözümdür değildir, orası ayrı bir nezdür. Mesela şu durumda diyor, sıfıra sıfır durumundan başlıyoruz. Sıfıra sıfır durumunda iki numaralı kuralı uygulayalım diyor. Yani şuradaki iki numaralı operatör. İki numaralı operatör neydi? Üç kalanlık bidonu pompayla doldur.
+
+541
+01:56:45,203 --> 01:56:54,203
+3'lüyü pompayla doldurduğumuzda ne olacak? 2'yi uygularsak 0'a 3'e denk gelecek bu. 0'a 3'e neyi uyguluyor? 7'yi uyguluyor. 0'a 3'e 7'yi uyguluyor. 7'de ne var?
+
+542
+01:56:56,643 --> 01:57:10,123
+3'ün tamamını 4'e boşalt. 3'ün tamamını 4'e boşaltırsak 0'a 3'e 0'a dönüşür. Buna 2'yi uyguluyor. 2'yi tekrardan doldurduk 3'lüyü. O zaman 3'e 3 oldu. 3'e 3'e 5'i uyguladıyor. Burada 5'i uyguladığımızda 5 neydi?
+
+543
+01:57:12,083 --> 01:57:28,063
+Dört dolana kadar üçten boşaltıyor. O zaman şu üçün içerisinden buraya boşaltıyoruz. Dört olduğu anda burada iki kalıyor değil mi? Dört iki var elimizde. Dört ikiye tek üçü uyguladıyor. Dördü yere boşalt.
+
+544
+01:57:29,587 --> 01:57:51,427
+4-2, o zaman 0-2 oldu. 7'yi uygula. 7'de zaten bunu 2'yi alıp bunun üzerine boşaltmak. Şimdi buraya gördüğünüz gibi 0-0 durumundan başladık ve istediğimiz hedef duruma ne yaptık? Eriştik. Problemimizin çözümü neymiş o zaman? Şu sıraymış. Bu sırada bütün operatörler var mı? Yok. 1'den 8'e kadar bir şeyler tanımladık biz. Bunlar yoklar. Hepsi olmak zorunda da değiller zaten. Bu bir çözüm.
+
+545
+01:57:51,988 --> 01:58:01,988
+Bu çözüm optimal midir? Yani en kısası bu mudur değil midir? Orası ayrı bir mevzu. Onları tartışacağız. Ama bu bir çözüm mü giden bir yol bizim için. Tamam mı?
+
+546
+01:58:04,768 --> 01:58:12,288
+Peki, buraya kadar soru var mı arkadaşlar? İki tane problemin formulasyonunu yaptık. Aklınıza takılan bir şey var mı?
+
+547
+01:58:18,996 --> 01:58:19,996
+Yok hocam.
+
+548
+01:58:23,996 --> 01:58:33,996
+Şimdi burada tabii merak edebileceğiniz şey şu olabilir. İyi güzel operatörleri falan uyguladık da bu sırayı nereden buluyoruz?
+
+549
+01:58:33,996 --> 01:58:42,996
+Şimdi burada operatörleri tanımladık, iyi güzel bunların hepsi varlar. Bu sıra nereden çıkacak? İş zaten bu değil mi?
+
+550
+01:58:43,636 --> 01:59:06,636
+Bunları üreten algoritmaları göreceğiz hep beraber. Bu sıralar nasıl bulunabilirler? Onları yavaş yavaş göreceğiz. Ondan önce başka bir problemi yine formüle edelim. Sekizlik puzzle. Sekizlik puzzle aslında bu genelde on beşlik puzzle olur da bir resim var böyle. Resmi ne yapıyorsunuz?
+
+551
+01:59:07,636 --> 01:59:12,756
+Küçük küçük yani dört çapı dörtlük şeylere bölünmüş parçalara, dört çapı dörtlük parçalar demeyeyim.
+
+552
+01:59:13,376 --> 01:59:20,036
+On altı parçaya bölünmüş resim. Bir tane parçası çıkartılmış ve oraya bir tane şey koymuş. Boş bir kare.
+
+553
+01:59:21,695 --> 01:59:28,416
+Siz daha sonra bu resim karıştırılmış. Bu karıştırılmış resmi daha sonra siz orijinal haline getirmeye çalışıyorsunuz.
+
+554
+01:59:28,496 --> 01:59:32,436
+Arkadaşınız onu karıştırıyor, size veriyor. Siz de onu orijinal haline getirmeye çalışıyorsunuz.
+
+555
+01:59:33,011 --> 01:59:38,031
+Bir de hatırlarsınız, şeylerde eskiden vardı, şimdi de vardı muhtemelen de.
+
+556
+01:59:38,771 --> 01:59:41,051
+Karmışık da, şimdi burada duruma bakalım.
+
+557
+01:59:41,591 --> 01:59:43,031
+Bu bir durum, bakın bu bir durum.
+
+558
+01:59:43,171 --> 01:59:46,631
+Dört numaralı parça burada, üç numaralı parça burada, alt numaralı parça burada.
+
+559
+01:59:46,871 --> 01:59:48,591
+İşte boş parça burada.
+
+560
+01:59:49,671 --> 01:59:50,191
+Hedefse bu.
+
+561
+01:59:50,811 --> 01:59:54,331
+Bir, iki, üç, dört, beş, altı, yirmi, sekiz, işte bu hedefe ulaşmak istiyorsunuz.
+
+562
+01:59:54,991 --> 01:59:58,711
+Şimdi burada tabii yapılabilecek hamleler var.
+
+563
+01:59:58,711 --> 01:59:59,931
+Yapılabilecek hamleleri şöyle.
+
+564
+02:00:00,000 --> 02:00:22,160
+Düşünün mesela burada yapılabilecek nasıl hamleleri tanımlayabiliriz? Operatörleri nasıl tanımlayabiliriz? Mesela biri aşağı çek. Mesela bu bir hamle. Yediği sağa çek, yediği sola çek. Yani her bir hamle için, yani her bir taş için kaç tane olasılık var? Bir taşı kaç farklı şekilde hareket ettirebiliyorsunuz burada? Herhangi bir taşı.
+
+565
+02:00:23,475 --> 02:00:24,315
+Dört hocam.
+
+566
+02:00:24,556 --> 02:00:33,056
+Dört değil mi? Dolayısıyla taşlar üzerinden bir tanımlama yaparsak, yani bir sağa solu yukarı aşağı, iki sağa solu yukarı aşağı diyersek, otuz iki tane operatörümüz olur değil mi?
+
+567
+02:00:36,176 --> 02:00:44,475
+Otuz iki operatörümüz olur. Şimdi otuz iki operatörle uğraşmak yerine, işi birazcık daha basitleştirmek için bu operatörleri...
+
+568
+02:00:44,948 --> 02:01:04,747
+Taçları sanki hareket ettiriyormuş gibi değil de boş kareyi hareket ettiriyormuş gibi düşünelim. Herhangi bir durumda boş kareyi hareket ettirdiğimizde aslında aynı şeyi tanımlayabiliriz. Yani boş kareyi sağa sola yukarıya aşağıya hareket ettir diyeceğiz sadece. Yani bizim dört tane operatörümüz olacak.
+
+569
+02:01:04,747 --> 02:01:11,568
+Dört tane operatörle biz acaba bu S0'dan G'ye varabilir miyiz?
+
+570
+02:01:12,243 --> 02:01:26,884
+Varamıyor da olabiliriz. Orası da ayrı bir mevzu. Yani şimdi mesela problem size verildi. Hadi bunu çöz dendi. Gerçekten acaba çözülüyor mu? Çözülmüyor da olabilir. Bu da bir olasılık. Yani labirenti düşünelim. Yani şuradan şuraya git dedik ya.
+
+571
+02:01:29,043 --> 02:01:42,423
+Mesela burası tamamen kırmızılarla dolu da olabilir. Buradan buraya git diye size problem verildi diye onu illa çözeceksiniz diye bir durum yok. Daha doğrusu o problem çözülebilir olduğu bilgisini bilmiyorsunuz. O dair bir mevzu.
+
+572
+02:01:46,739 --> 02:02:10,340
+Burada operatörlerimiz L-R-U-D işte Left-Right Updown mevzusu. Bütün operatörler uzalarının maliyeti aynı. Şuradaki C denilince Cost'u ifade ediyor. Hepsi aynı. Şimdi burada 8 puzzle'lı da arama yapacağız. Mesela arama dediğimiz şey dedi. Daha sonra yine göreceğiz de. Bakalım şurada şu bir durum. Başlangıç durumu bu.
+
+573
+02:02:11,188 --> 02:02:37,188
+Bu durumda yapabileceğimiz kaç tane hareket var? Dört tane. Eğer up operatörünü uygularsam ben şu duruma, up operatörünü uygularsam buraya gelirim. Left operatörünü uygularsam buraya gelirim. Down uygularsam buraya gelirim. Rahat uygularsam buraya gelirim. Peki bu duruma up uygularsam, pardon bu duruma left uygularsam bu duruma gelirim. Rahat uygularsam bu duruma gelirim. Bu durumda yapabileceğim üç tane var. Yine up, down ve...
+
+574
+02:02:37,652 --> 02:03:02,931
+Zorayt ama o beni zaten yukarıya çıkaracağı için tekrarlı durum oluşturmamışız. Burada yapabileceğim üç tane hamle var ama zaten davranımlı apı uyguladığımızda tekrardan gerisi geriye dönecek tekrarlı durum oluşmaması için burada iki tanesini vermiş sadece. Aynı şey burada da geçerli. Peki buradan daha da devam edebilir miyiz? Edebiliriz. Bu durumdan yine bu dört tane hamleden hangileri uygulanabilir olduğunu bulup ona göre adım adım ilerleyebiliriz.
+
+575
+02:03:03,667 --> 02:03:09,127
+Şimdi burada ortalama adım sayısı arkadaşlar, bu tarz 8'lik puzzle için konuşuyorum.
+
+576
+02:03:09,267 --> 02:03:11,967
+16'tan, pardon 15'tan bahsettiğim 8'lik puzzle için.
+
+577
+02:03:12,327 --> 02:03:18,087
+Ortalama adım sayısı, yani bir problemin çözümü için, ortalama adım sayısı 22 civarında.
+
+578
+02:03:19,007 --> 02:03:22,087
+22 civarı demek ne demek? Yani 22 adım böyle gidiyorsun.
+
+579
+02:03:22,087 --> 02:03:24,127
+Tık tık tık tık tık şeklinde.
+
+580
+02:03:24,532 --> 02:03:38,032
+Ortalama dallanma sayısı ise 2.67. Yani bir durumdan ortalama olarak 2.67 tane çıkıyor. Mesela burada 4 tane çıktı bundan. Burada mesela bundan 2 tane çıktı değil mi? Şunlardan 2 tane çıktı. Belki bunlardan çıkacak. Burada ortalaması bu 2.67.
+
+581
+02:03:50,963 --> 02:04:18,104
+Nasıl bir şey olacak? 2.67 üzeri 22 tane, o da yaklaşık 2.7 milyarmış durum oluşacak. Bu durumlar birbirlerine tamamen farklı değiller tabii ki. Aynı duruma başka bir yoldan gidilebilirken, yani aynı duruma farklı şeylerle gidebilirsiniz. Ama 22 adım bunu ilerlettiğimiz zaman epey büyük bir ağaçla karşı karşıya olacağımızı tahmin edebilirsiniz.
+
+582
+02:04:19,604 --> 02:04:40,663
+Şimdi birkaç tane tanımdan bahsedelim. Bunları biraz aralarda söylemeye çalıştık ama yine hepsi bir arada da göreyim. Durum uzayı, arama uzayı, arama ağacı, state's durumlar, İngilizce'de durumları, aralarındaki geçişleri, geçiş parametreni ve kısıtlarını gösteren graf ya da ağaç. Şimdi şurada mesela bu bir arama ağacını görüyorsunuz.
+
+583
+02:04:41,108 --> 02:05:00,948
+Şurada bu durumdan, bu duruma neyle geçilebileceğini gösteriyor. Bakın şurada görüyorsunuz. En sonunda mesela bu ilerleip ilerleip en sonunda bir yerlerde ne var? Çözüm var. O çözümünü biz ne yapmaya çalışacağız? Burada acaba biz hangi yoldan gideceğiz de o çözüme erişeceğiz? Onu bulmaya çalışacağız.
+
+584
+02:05:02,003 --> 02:05:27,803
+Operatörler durumlar arası geçişleri sağlayıyorlar. Başlangıç durumu S0, hedef durumu G. Maliyet, kost, operatörü uygulamanın maliyeti. Çözüm yolu, başlangıç durumdan hedef duruma giden yol. Optimum yol ise, çözüm yolu başka bir şey, optimum yol başka bir şey. Optimum yol, en düşük maliyetli çözüm yolu. Çözüm yollarının içerisindeki en düşük maliyetli çözüm. Birden fazla da olabilir en düşük maliyetli yol.
+
+585
+02:05:28,243 --> 02:05:36,243
+İlla bir tane olmak zorunda da, birbirinden fazla da olabilir. Ama çözüm yoluyla optimum çözüm arasında bir fark var.
+
+586
+02:05:41,684 --> 02:06:04,324
+Şimdi arama neden zor olabilir? Varsayıp şöyle bir şey düşünelim. Bir durumdan giderecek durum sayısı 10 olsun. Dallanma sayısı. Sahnede işlenen durum sayısında da 1000 diyelim. Bir durumu nodu tutmak için hafıza gereksinimle de 100 byte dersek. Eğer çözümünüz 0 derinlikte ise, yani başlangıç hedef ise.
+
+587
+02:06:06,260 --> 02:06:33,079
+Bu durumda işlenen durum sayısı 1 olacak, zaman 1 milisaniye olacak, bellek 100 bayt olacak. Çözüm derinli 2 olduğunda işlenen durum sayısı ne olacak? 1, 10, 100 var. 111 tane var burada. Zaman 0.1 saniye çıkıyor, bellek 11 kilobayta çıkıyor. Çözüm derinli 12 olduğunda işlenen durum sayısı 10 üzeri 12, zaman 35 lira, bellek gerekli bellek miktarı, o ağacı tutmak için gerekli olan bellek miktarı ise 111 kilobayta çıkıyor.
+
+588
+02:06:34,260 --> 02:06:57,260
+12 olduğu durumdan bahsediyorum. Bunu arttırdığınızda ki burada eksponansiyel 10 üstü şeklinde artıyor değil mi? Burada sıkıntı onu görüyorsunuz. Yani her bir seviye bir öncekinden 10 kat daha fazla işlenmesi gereken bir durum var. Çünkü 10 ile çarpıda çarpıda. Bu durum pek Umut Vadettin'i...
+
+589
+02:06:57,363 --> 02:07:20,443
+Söyleyemeyiz değil mi? Şu tabloya baktığımızda hakikaten arama dediğimiz şey. Yani böyle bir ağacımız var. Bu ağacın içerisinde bir yerde bir çözüm var. Bu ağacı oluşturalım. Daha sonra o çözüme giden yolu bulalım. Mesela böyle bir şey yapmaya çalışıyoruz. İlk önce buradan başlayacağız. Bunları tarayacağız belki. Orada algoritmaları göreceğiz zaten. Sonra bunlara bakacağız. Sonra alttakilere bakacağız. En sonunda bir yerde bulacağız.
+
+590
+02:07:25,363 --> 02:07:36,363
+Arkadaşlar, bugünkü derinlik 12 olduğunda bile bu iş çok önemli. Burası sahnede değişen durum sayısını...
+
+591
+02:07:36,787 --> 02:07:54,587
+Bin değil de bir milyar yapsanız, bir trilyon yapsanız, bir katrilyon yapsanız, süper bilgisayarlar kullansanız bile çözümün derinliği biraz biraz artmaya başladığında, işte 20'ye falan geldiğinde burası yine 35 yıllar, 350 yıllara falan böyle artar.
+
+592
+02:07:54,587 --> 02:07:57,707
+İleride göreceği çok daha büyük değerlere erişebiliyor.
+
+593
+02:07:58,292 --> 02:08:23,292
+Dolayısıyla derinlik ne kadar fazlaysa o problemi çözmek o kadar güçleşiyor. Dallanma sayısı ne kadar fazla ise o problemi çözmek o kadar güçleşiyor. Problemi çözmek derken, problem çözümünü bulmak için harcımız gereken kaynak miktarı o kadar artıyor. Öyle söyleyelim. Yani çözmek güçleşiyonun anlamı o. Daha uzun süre istiyor, daha fazla miktarda bellek kaynak istiyor.
+
+594
+02:08:27,283 --> 02:08:50,623
+Şimdi arama algoritmalarına geçeceğiz. Arama stratejileri, arama algoritmaları bir durumdan diğer bir duruma giderken gidilecek durumun olası gidilebilecek durumlar arasında nasıl seçildiğini belirliyor. Arama stratejinin, arama algoritmalarının yapacağı şey bu. Bir durumdan diğer duruma giderken olasılıkların içerisinde hangisinin seçileceğini belirliyor.
+
+595
+02:08:51,252 --> 02:09:12,372
+Bu arama algoritmanın stratejini birkaç tane boyuta değerlendireceğiz. Bunlardan bir tanesi tamlık. Yani bir çözüm varsa onu mutlaka bulacak mı? Bulmayacak mı? Yani bir çözüm var bir yerde, onu bulabilir, bulmayabilir. Yani bazı algoritmanlar bulabiliyor, bazı algoritmanlar bulamıyor. Çözüm varsa bile. Yoksa zaten yapacak bir şey yok. Buradaki olay bir çözüm varsa.
+
+596
+02:09:13,108 --> 02:09:33,788
+İkincisi zaman karmaşıklığı, aramanın algoritmada alacağı süre. İkincisi hafıza karmaşıklığı, arama için gerekli hafıza miktarı. Dördüncüsü ise optimum. Optimum, bir algoritmanın optimum olması şu demek. O algoritmanın bulduğu ilk çözümün, bakın, dilerim söylüyorum, ilk çözümün en düşük maliyetli çözüm olması demek. Optimum çözüm olması demek.
+
+597
+02:09:34,015 --> 02:09:40,835
+Yani bir algoritmanın optim olduğunu söylüyorsanız, o algoritmanın ilk bulduğu çözümün optim olduğunu söylüyorsunuz demektir.
+
+598
+02:09:41,835 --> 02:09:54,255
+Zaman veya hafıza karmaşıkları ölçümlerinde kullanılan kavramlar, B dediğimiz şey dallanma sayısı, D dediğimiz şey en az maliyetli çözümün derinliği, M dediğimiz şey ise arama uzayının maksimum derinliği.
+
+599
+02:09:54,975 --> 02:09:57,915
+Yani arama uzayı aşağı doğru ilerliyor, şurada gördünüz mesela.
+
+600
+02:10:00,000 --> 02:10:09,480
+Bunun maksimum derinliği buradaki meyli ifade ediyor. D ise en az maliyetli çözümün derinliğini ifade ediyor.
+
+601
+02:10:09,480 --> 02:10:23,480
+Şimdi, ilk arama algoritması türü olan kör aramadan bahsedeceğiz. Kör aramanın kendi içinde...
+
+602
+02:10:24,595 --> 02:10:46,215
+Farklı şeyleri var, yöntemleri var. Kör, mekanik, bilgisiz ve İngilizceleri burada yazıyor. Bunun altında, kör arama algoritmalarının altında enlemesine arama, düşük maliyetli arama, derinlemesine, sınırlı derinlikli arama, artan derinlikli arama ve çift yönlü arama olmak üzere 6 tane farklı kör arama algoritması var.
+
+603
+02:10:50,484 --> 02:11:11,884
+Neye körler vesaire onları biraz göreceğiz. Şimdi enlemesini aramaya bakalım. Enlemesini aramada yapılan şey, ağaç ya da durumlar, yani durumları birbirine birleştiren bu ağaç dediğimiz şey başta elimizde yok. Zaman içinde oluşuyor.
+
+604
+02:11:13,140 --> 02:11:34,480
+Çünkü ağacı ilk önce oluşturalım, ondan sonra burada onun üzerinde arama yapalım çok efektif bir strateji değil. Çünkü ne büyük bir ağaç oluşturacağınızı en baştan bilmiyorsunuz. Yani derinlik ne kadar fazla olacak bilmiyorsunuz. Dolayısıyla ağacı dinamik olarak zaman içerisinde arama algoritmasının oluşturması çok daha mantıklı bir çözüm. Dolayısıyla zaman içinde oluşturalar.
+
+605
+02:11:34,768 --> 02:11:43,508
+Şimdi çözüm bir durumun sırasının durumu açma sırası da, pardon, çözüm bir durumun sırası, durum açma sırası da bir çözüm sırası ama bunlar bilinen farklı şeyler.
+
+606
+02:11:43,508 --> 02:11:51,988
+Ne demek olduğunu daha sonra göreceğiz. Endemesini aramayı gerçekleştirmek için bir kuyruk kullanacağız ve kuyrukta da ilk giden ilk çıkar olacak.
+
+607
+02:11:53,368 --> 02:11:55,148
+Şimdi burada başlangıçta...
+
+608
+02:11:55,220 --> 02:12:21,420
+En azı bir durum var. Bakalım. Bu durum var. Bu durumdan gidilebilecek yerler neler var? Mesela diyelim ki bu iki tane durum var. Yeni durum. Bunları oluşturduğunuz. Buna gitmiştiniz zaten. Dolayısıyla bunların içerisinden köke en yakın, enlemesini aramıyor çünkü köke en yakını açmak üzerine çalışır. Kuyrukla ilk giren ilk çıkan mekanizması da yaparsanız, bunu ileride zaten göreceğiz. İlk önce buna erişir. Buna eriştiği zaman buradan gidebilecek olan şeyleri üretir.
+
+609
+02:12:21,939 --> 02:12:42,100
+Üretti. Ondan sonra bir sonraki de neye geçecek? Buna geçecek. Buna baktı. Buradan gidebilecek şeyler üretti. Sonra bunları gittikten sonra buna bakacak. Bundan gidebilecek şeyler üretecek. Sonra buna bakacak. Bundan gidebilecek şeyler üretecek. Şu anda mesela şu duruma bakarsak. Biz şu buna, şuna, şuna, şuna, şuna, şuna baktık. Ama şu alttaki beyaz olanlara daha bakmadık.
+
+610
+02:12:42,319 --> 02:13:10,239
+Bir sonraki nereye bakacağız? Şuraya bakacağız. Enlemesini aramada. Yani enlemesini aslında gördüğünüz gibi tarıyor. 1, 2, 3, 4, 5 sıra bu şekilde gidiyor. Burası 6 olacak, burası 7 olacak. Yani şuradaki bir şeyi buradan daha önce açma ihtimali yok. Her zaman ne olmak zorunda? Kuyruğa, pardon köke daha yakın olanı açmak zorunda. Enlemesini aramak bu tarz, bu şekilde çalışıyor. Yani bütün ağacı en baştan oluşturmuyor. Zaten bütün algoritmalar öyle ver. Yani ağacı en baştan üreten bir algoritma yok.
+
+611
+02:13:10,319 --> 02:13:21,640
+Hepsi zaten bir ağaç yapısı tutmanıza da gerek yok. İlla o manada düşünürseniz, veri yapıları anlamında düşünürseniz bir stekle de bunu gerçekleştirebiliyorsunuz kolaylıkla.
+
+612
+02:13:23,420 --> 02:13:29,539
+Şimdi emlemesini aramanın bir analizine bakalım. Ondan sonra da aslında bir dakika analizinden önce bir algoritmasına bakalım.
+
+613
+02:13:36,404 --> 02:14:02,184
+Enliversitesi normal algoritması aslında şu kadar basit bir algoritma. Ne yapıyor? Kök durum var elinizde. İlk kök durum var. Kuyruğunuz var. Kuyruğa bunu atıyorsunuz. Sonra bulunduğu false yapıyorsunuz. Sonra while'a başlıyorsunuz. Kuyruk boş olduğu sürece, boş değilse, kuyruk boş değilse ve bulunduğu false ise kuyruktan ilk durumu çekiyoruz. Çektik. Eğer en hedef durumsa,
+
+614
+02:14:02,931 --> 02:14:22,711
+Yani o çektiğimiz şey çözümse, çözümü çünkü tanıyabiliyoruz. Çünkü başlangıç ve bitiş durumları bizim elimizde var. Arasını bilmiyoruz ya. Çözüm durumu biliyoruz. Eğer bu çektiğimiz şey hedef durumsa bulunduğu true yapıyoruz. Zaten buradan çıkacak. Değilse o zaman enden gidilebilecek tüm durumları kuyruğun sonuna ekliyoruz.
+
+615
+02:14:22,711 --> 02:14:26,652
+Bakın, enden gidilebilecek tüm durumları kuyruğun sonuna ekliyoruz.
+
+616
+02:14:27,060 --> 02:14:31,200
+Çektiğimiz enden gidebilecekler hepsi kuyruğunun sonuna eklenir. Yani şöyle düşünelim.
+
+617
+02:14:37,076 --> 02:15:02,396
+Mesela ben burada 1'i başlangıçta attım, sonra çektim. 1'den gidebilecekleri 2'yi, 3'ü attım, sonra 2'yi çektim. Sonra 3'den, şurada, bu 3'den gidilebilecekleri ürettim. Sonra burada 4'ü çektim. 4'den gidebilecekleri ürettim. Sonra burada şu 5'i çektim. Sonra 5'den gidebilecekleri ürettim. Sonra 6'yı çektim. Şeklinde bu ilerleyecek. Mantığı anladığınız herhalde bir tahmin ediyorum.
+
+618
+02:15:04,724 --> 02:15:31,104
+Şimdi, complete mi? Complete dediğimizde tam mı? Tam demek ne demek ki? Bir çözüm var ise bunu bulması. Eğer B dediğimiz şey, dallanma sayısı sonsuzsa zaten burada complete bir algoritma olması mümkün değil. B sonlu ise, yani dallanma sayısı sonlu ise evet. Ne demek bu? Yani enlemesin armağı algoritması bu ağacın içerisinde bir yerde bir çözüm varsa ona mutlaka yeterince zaman verirsek onu mutlaka yaşayır.
+
+619
+02:15:31,471 --> 02:15:55,891
+İlk önce buraya bakar, sonra buraya bakar, sonra buraya bakar, sonra buraya. En sonunda o çözümü ne yapacak? Mutlaka erişecek. Peki zaman karmaşıklığı nasıl? 1 artı B artı B kare artı B üstü 3 artı herhangi bir B üstü 3 D. D dediğimiz şey dalanmak, D dediğimiz şey derinlikti. D dediğimiz şey neydi? D dediğimiz. Hatırlayalım.
+
+620
+02:15:56,819 --> 02:16:16,779
+En az maliyetli çözümün derinliğiydi. Space, B üstü de, yani sonuçta bunların ilk o notasyonu da B üstü D'dir. Şurası bunun öncesinin hiçbir anlamı yoktur. Etki etmezdi hatası. En sondaki zaten diğerlerin hepsinin toplamından daha büyük oluyor. Buraya bakarsak...
+
+621
+02:16:18,292 --> 02:16:42,792
+O, B, D demişiz. Yani her not hafızalı space olarak o kuyruğun büyüklüğünden bahsediyoruz. Buradaki space'imiz memori gereksizliği. Optimal mi? Şimdi optimal demek ne demekti? İlk bulduğu çözüm optimal çözüm mü? Burada bir şartımız var. Eğer her adımın maliyeti eşitse evet. Yani her bir adımın maliyeti eşitse...
+
+622
+02:16:43,347 --> 02:17:01,927
+Endemesini Arama Algoatmasının bulacağı ilk çözüm en düşük maliyetli çözümdür. Yani mesela şurada bir çözüm varken, bu algoritma gidip ondan daha fazla maliyeti olan şunlardan bir tanesini seçmez. Her zaman köke daha yakın olanları daha öncelikli seçecektir.
+
+623
+02:17:02,388 --> 02:17:28,728
+Bu algoritması gereği. Dolayısıyla bir çözüm mesela buradayken gidip buradaki çözümü hiçbir zaman bulmayacak. Dolayısıyla enlemesinden algoritması eğer ki ama bakın ne diyorum? Maliyetler eşitse yani şu operatörleri uygulamanın burada her biri birer operatör işte sağ gitme sola gitmesinden düşünebilirsiniz bunları. Bu operatörlerin maliyetleri birbirlerine eşitler ise o durumda bu algoritma bize her zaman ne yapacaktır? Optimal çözümü sunacaktır.
+
+624
+02:17:29,492 --> 02:17:33,011
+Hafıza zamandan daha büyük problem genelde.
+
+625
+02:17:34,971 --> 02:17:39,292
+Diyelim ve bugünkü dersimizi buraya kadar yapmış olalım arkadaşlar.
+
+626
+02:17:39,592 --> 02:17:41,612
+Önümüzdeki hafta buradan devam ederiz.
+
+627
+02:17:42,351 --> 02:17:47,051
+Enlemesini alma algoritmasından sonra şurada gördüğümüz bütün algoritmaları göreceğiz.
+
+628
+02:17:47,452 --> 02:17:52,351
+Bunlarla yavaş yavaş önümüzdeki haftayı bunlarla muhtemelen tamamlarız diye düşünüyorum.
+
+629
+02:17:53,452 --> 02:17:56,171
+Sorusu olan var mı şu ana kadar anlattıklarımdan?
+
+630
+02:18:21,268 --> 02:18:28,988
+Peki arkadaşlar, kimsenin ses çıkmadığına göre görüşmek üzere diyorum arkadaşlar haftaya. İyi günler hocam.
+
+631
+02:18:29,387 --> 02:18:30,548
+Teşekkürler hocam, iyi günler.
+
+632
+02:18:30,567 --> 02:18:34,608
+Teşekkürler hocam. İyi günler hocam.
