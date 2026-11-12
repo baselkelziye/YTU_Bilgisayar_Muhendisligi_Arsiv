@@ -1,0 +1,2223 @@
+1
+00:05:16,723 --> 00:05:19,824
+Günaydın arkadaşlar. Nasılsınız?
+
+2
+00:05:21,563 --> 00:05:24,163
+Günaydın hocam.
+
+3
+00:05:24,644 --> 00:05:25,324
+Günaydın.
+
+4
+00:05:25,651 --> 00:05:47,231
+Günaydın hocam. Günaydın. Günaydın. Günaydın. Evet biraz bekliyorum ki gelen falan olsun diye. Çünkü bazılarını halen konnektim diye görüyorum. Ama artık yavaş yavaş başlayabiliriz. Bir hafta çok hızlı geçti. Nasıl geçtiğini anlayamadım. Siz anladınız mı?
+
+5
+00:05:49,331 --> 00:05:50,391
+Hayır.
+
+6
+00:05:51,028 --> 00:05:58,427
+Tık yok. Tamam peki. Çok yoğun olduğu vakit anlamıyorsunuz hafta nasıl başlıyor ve nasıl bitiyor.
+
+7
+00:06:00,788 --> 00:06:22,708
+Excel'e de hiç bakmadım. Size bir Excel vermiştim, göndermiştim ya da paylaşmıştım ya mail adreslerinizi giriniz diye. Ama zaten gönderecek bir şeyim olmadığı için bir gruba da ihtiyacım olmadı. Halen içinizde o Excel'e bilgilerini yazmayan varsa lütfen yazsın.
+
+8
+00:06:26,975 --> 00:06:32,615
+Bugünkü konularımıza geçmeden evvel, geçen haftayı şöyle bir hatırlayalım.
+
+9
+00:06:32,816 --> 00:06:37,016
+Bakalım ne tip keywordler sizin aklınızda kalmış.
+
+10
+00:06:38,216 --> 00:06:44,316
+Mesela veri sıkıştırma nedir dersem, iç notlarınıza lütfen bakmayın.
+
+11
+00:06:44,536 --> 00:06:46,415
+Ya da herhangi bir yere bakmayın.
+
+12
+00:06:46,415 --> 00:06:50,836
+Sadece aklımızda neler kalmış? Bunlara bir bakalım.
+
+13
+00:06:53,043 --> 00:07:05,963
+Bu noktaların üzerine biraz daha vurgulayayım. Demek ki tam iyi verememişim. Kısaca ama kısa tabiriyle beni sıkıştırma neydi? Bir gönüllü yok mu?
+
+14
+00:07:05,963 --> 00:07:18,443
+Hocam. Hocam. Evet. Ama Engilizce konuşabilir miyim? İyi hadi konuş.
+
+15
+00:07:20,403 --> 00:07:36,723
+Hocam, bu da data ekleyebiliriz ve kumplarını kumplarınıza, zaman ve size.
+
+16
+00:07:37,923 --> 00:07:41,264
+Okey. Şimdi biraz da kendini Türkçe'ye zorla bakayım.
+
+17
+00:07:46,228 --> 00:07:46,868
+[öğrenci].
+
+18
+00:07:53,939 --> 00:07:58,740
+Söylemem bile yeterli. Merhaba hocam. Merhaba.
+
+19
+00:08:01,939 --> 00:08:06,939
+Fizik ve zaman kazanmak için...
+
+20
+00:08:07,220 --> 00:08:10,259
+Veri sıkıştırılıyor.
+
+21
+00:08:10,259 --> 00:08:24,680
+Evet, tamam. Kısaca demeniz gereken şuydu, yerden ve zamandan, fiziksel dediğimiz şey burada yer diyelim, yerden ve zamandan kazanmak amacıyla yapılan işleme veri sıkıştırma diyoruz.
+
+22
+00:08:25,108 --> 00:08:44,148
+Tabi veri sıkıştırmada önünde ya da arkasında yapacağımız ön işlemlerimiz olacak. Bazen tek bir yöntemle sıkıştırma yapmayacağız. Gerisinde ya da arkasında dediğim gibi mesela bir görüntü işlemi yapıyorsam mutlaka önünde bir quantization işlemi yapacağım.
+
+23
+00:08:44,148 --> 00:08:52,827
+Ya da bir doküman sıkıştırma yapıyorsam mutlaka öncesinde verinin duruma göre istatistiğini çıkarmam gerekecek.
+
+24
+00:08:53,107 --> 00:08:57,027
+Bunları zaman içerisinde göreceğiz.
+
+25
+00:08:57,767 --> 00:09:06,107
+Peki, bugün redundancy kavramından bahsedeceğim size. Onu sormayacağım ama...
+
+26
+00:09:06,159 --> 00:09:22,379
+Bir veriyi kodlarken dedik ki değişken uzunluklu kodlar kullanılır, bir de sabit uzunluklu kodlar kullanılır. Nedir bu değişken ya da sabit uzunluklu kod? Ne demek istiyorum acaba?
+
+27
+00:09:27,635 --> 00:09:30,935
+Evet, ben sustum. Ne demek istiyorum acaba?
+
+28
+00:09:33,440 --> 00:09:34,440
+Evet.
+
+29
+00:09:34,440 --> 00:09:48,060
+Hocam, sabit uzunluklu kodda her bir karakter için fix belli bir kodumuz belli bir karakterle bir iş ile uçtururken kodu değişken uzunlukta frekanslarına göre, sıklıklarına göre kod atıyorduk. Ona ters almış.
+
+30
+00:09:48,060 --> 00:09:56,400
+Evet, doğru. Sabit uzunluktaki kodlama şudur. Bütün sembollere aynı bit uzunluğunda kod veriyorum.
+
+31
+00:10:00,000 --> 00:10:04,059
+Sıklıklarına göre sembollere değişik kodlar veriyorum.
+
+32
+00:10:04,659 --> 00:10:13,720
+Yine Information Theory'den bahsedeceğiz bu hafta. Eğer ona sıra gelirse. Onda da bunları daha detaylı bir şekilde anlatacağım.
+
+33
+00:10:13,720 --> 00:10:23,720
+Notlara bakarak ilerliyorum. Peki, daha sonra adaptif ve non-adaptif sıkıştırma yöntemleri olduğunu söyledik.
+
+34
+00:10:24,628 --> 00:10:39,368
+Bir sıkıştırma yönteminin non-adaptif olması nedir? Adaptif olması nedir? Adaptif, dinamik demek. Non-adaptif, dinamik değil. Hatırlıyor musunuz?
+
+35
+00:10:42,368 --> 00:10:43,408
+Hocam.
+
+36
+00:10:43,748 --> 00:10:44,028
+Evet.
+
+37
+00:10:44,659 --> 00:10:52,500
+Non-adaptive compression method, parameters and operation are valid for certain type of data.
+
+38
+00:10:53,460 --> 00:10:53,759
+Ok.
+
+39
+00:10:54,240 --> 00:11:03,480
+Ama adaptive compression process all kinds of unprocessed data, yani parameters and action can be changed.
+
+40
+00:11:04,279 --> 00:11:04,519
+Evet.
+
+41
+00:11:05,203 --> 00:11:28,343
+Non-adaptif yöntemlerde sadece belli tip bir datayı sıkıştırıyorsun. Her dataya uymayan bir yöntem. Adaptif yöntemlerde ise her türlü dataya ben bu yöntemleri uygulayabilirim. Değişkenlerim ve parametrelerimde değişkenlikler olabilir.
+
+42
+00:11:29,268 --> 00:11:46,148
+Sonra, o zaten çok basit. Kayıplı ve kayıpsız algoritmalarımız vardı. Loosey ve looseless demiştik. Bu neydi? Bir algoritmanın kayıplı olmasıyla bir algoritmanın kayıpsız olması ne demekti?
+
+43
+00:11:46,148 --> 00:11:47,668
+Evet hocam.
+
+44
+00:11:48,208 --> 00:11:49,408
+Hocam, ben.
+
+45
+00:11:49,988 --> 00:11:50,807
+Sen söyle.
+
+46
+00:11:53,971 --> 00:12:02,052
+Luzi'in actual data, while luzi'in actual data, no data are lost.
+
+47
+00:12:02,511 --> 00:12:08,631
+Original data can be recreated exactly from the compressed data.
+
+48
+00:12:09,172 --> 00:12:09,511
+Okay.
+
+49
+00:12:10,131 --> 00:12:24,432
+Kayıpla sıkıştırma yönteminde encoded etmiş olduğum veriyi yeniden decode ettiğimde orijinal haline dönemiyorum. Bir takım bilgiler kayboluyor.
+
+50
+00:12:24,884 --> 00:12:45,303
+Özellikle kayıplı yöntemler görüntü sıkıştırma ve ses sıkıştırmada kullanılır dedik. Çünkü gözümüzün de kulağımızın da görebildiği ve duyabildiği sınırlar var. Bunun üzerindeki bilgiler yok edilebilecek tipte bilgiler. Ben zaten bunu algılamıyorum.
+
+51
+00:12:45,875 --> 00:12:51,415
+Fakat kayıpsız yöntemler genelde tekstlere uygulanan yöntemlerdir.
+
+52
+00:12:52,015 --> 00:13:03,675
+Tekstteki bir karakterin bile kaybı benim için önemliyse, birçok şeyi değiştiriyor, içindeki bilgiyi kaybetmesine neden oluyorsa,
+
+53
+00:13:03,675 --> 00:13:08,855
+ben tekstlerde de kayıpsız yöntemleri tercih etmem gerekir.
+
+54
+00:13:09,855 --> 00:13:10,155
+Peki.
+
+55
+00:13:10,932 --> 00:13:21,052
+Simetrik ve asimetrik yöntemlerimiz vardı. Bazen yöntemlerimiz simetrik olabiliyordu, bazen de asimetrik oluyordu.
+
+56
+00:13:22,251 --> 00:13:30,352
+Simetrik ve asimetrik deyince, bir algoritmanın simetrik olması ile asimetrik olması nedir?
+
+57
+00:13:33,192 --> 00:13:34,971
+Ben hocam.
+
+58
+00:13:35,451 --> 00:13:35,711
+Evet.
+
+59
+00:13:38,836 --> 00:13:50,836
+Evet, [öğrenci]. Evet, Hacam. Yani, symmetrik kompresör, genellikle kompresör ve dekompresör kullanılır aynı algoritma.
+
+60
+00:13:50,836 --> 00:14:02,836
+Örneğin, asymetrik kompresör ve dekompresör kullanılır farklı algoritma.
+
+61
+00:14:02,836 --> 00:14:03,836
+Doğru.
+
+62
+00:14:04,179 --> 00:14:17,659
+Arkadaşınızın dediği gibi simetrik algoritmalarda ben bir algoritmayı kodluyorum. Açarken de o kodlama algoritmasını tam tersten çalıştırıyorum.
+
+63
+00:14:19,583 --> 00:14:44,364
+Asimetrik algoritmalarda ise kompresle dekompres aynı algoritmalar olmuyor. Hızları da farklı olabiliyor. Hatta şöyle örnekler vermiştik. Bazen öyle algoritmalarım olabilir ki kompres ederken, çok hızlı kompres ederken dekompresi yavaş olabilir ya da bunun tam tersi olabilir.
+
+64
+00:14:47,583 --> 00:15:03,943
+Sonra şöyle bakıyorum. Bazıları o kadar olmazsa olmaz şeyler değil. Bir de sıkıştırma yaparken elimdeki inputu bir streamden alıyorum demiştik.
+
+65
+00:15:09,235 --> 00:15:24,915
+Onlara ne isim vermişim? Blog mu? Tamam. Bazen bu input'u alırken kaynaktan byte byte ya da word word alabilir bunu işlerim. Bazen de blog blog verileri alabilirim.
+
+66
+00:15:25,268 --> 00:15:33,707
+Verileri blok blok aldığım yöntemlerde her bir blok için farklı bir algoritma kullanabilirim.
+
+67
+00:15:34,187 --> 00:15:42,327
+Tabii açarken de her bloğu hangi algoritma ile kodladığım bilgisini header kısmına vermem gerekir.
+
+68
+00:15:42,327 --> 00:15:45,327
+Daha sonra...
+
+69
+00:15:47,220 --> 00:16:04,240
+İki tane şeyden bahsetmiştik son olarak. Bir korpus kavramından bahsetmiştik. Türkçesine derlem demiştik. Ben bir sıkıştırma algoritması ortaya attım diye çıkıyorum. Çok güzel bir sıkıştırma algoritması buldum. Başarılar çok iyi.
+
+70
+00:16:08,687 --> 00:16:19,768
+Ortak bir veri seti üzerinde benim o algoritmayı çalıştırmam gerekir. Görüntü işleme ile çalışanların kullandığı bir veri seti vardır.
+
+71
+00:16:26,740 --> 00:16:40,960
+SES'e çalışanların da vardır. Biz bunlara Base diyoruz. Baseline'da bunun sonucu nedir? Herkes aynı veri setini, aynı korpusu kullanarak algoritmasını çalıştırır ki,
+
+72
+00:16:41,491 --> 00:16:49,271
+Kime göre daha ilerideyim, kime göre daha gerideyim, benim performansım nedir bunları görebileyim.
+
+73
+00:16:49,271 --> 00:17:02,331
+Ve bu veri seti çok değişik datalardan oluşturulmuş veriler olduğu için algoritmımı her aşamada, her farklı input verisinde test etmiş oluruz.
+
+74
+00:17:02,803 --> 00:17:22,903
+Peki algoritmalarımı test ettim. Daha sonra bunların başarısını ölçmem gerekir. Başarı nasıl ölçülür? İki tane birimimiz vardı. Eğer ben dokümanlar üzerinde çalışıyorsam kullanılan birim bit, pör,
+
+75
+00:17:23,443 --> 00:17:50,263
+Karakter. Yani bir karakteri ortalama kaç bitle kodladığım bilgisidir. Bit per karakter. Diğeri ise, görüntüde ise bit per pikseldir. O da bir pikseli kodlamak için ortalama kaç bit kullanırım? Birimlerimiz bu. Öyle santimetre inç gibi değil.
+
+76
+00:17:50,867 --> 00:18:13,667
+Peki, performansı nasıl ölçüyorum? Text'te performansı nasıl ölçüyorduk? Compression ratio diyorduk. Output stream'in input stream'e oranıydı. Yani output'un boyu nedir? Bölü, input'un boyu neydi? Bana 30 gibi bir değer çıktı.
+
+77
+00:18:14,324 --> 00:18:30,864
+Bunun anlamı şudur. 100 olan bir birimi 30 birime indirmişim. Kazancım nedir? 1-Compression Ratio 70 olur. Demek ki %70 başarım var demektir.
+
+78
+00:18:30,864 --> 00:18:40,744
+Yeniden söylüyorum. Elimdeki orijinal verim 100 birim olsun. Ben sıkıştırdım. Bunu 30 birime düşürdüm.
+
+79
+00:18:41,779 --> 00:19:02,019
+Compression Ratio'yu ölçeceğim. Nedir bu? 30 bölü 100. 30'u 100'e düşürdüm. 0.3. 100'e bölersem nedir? Birden farkını alacağım. Yani %70 başarım var demektir.
+
+80
+00:19:02,740 --> 00:19:26,119
+Görüntü sıkıştırmada ise daha çetrefilli formüllerim vardı. Burada da ne yapıyordum? Bir orijinal imicim var benim. Rove ve kolon, satır ve sütunlardan oluşan bir resmim var. Sıkıştırma algoritması uyguladım. Resim sıkıştı. Buna da I şapka diye göstermiştim.
+
+81
+00:19:26,548 --> 00:19:44,427
+Boyutları resim aynı. Boyutlarında hiçbir şey yok. Sadece resmin içerisinde taşınan renk sayısı azalıyor. Renk sayısı azaldığı için daha rahat kodlama yapıyorum ve resmin boyutu küçülüyor.
+
+82
+00:19:44,915 --> 00:20:02,496
+Burada görüntüde çıktının boyutu, inputun boyutuna oranlanarak hesaplanmıyor. Resimdeki bozulmaya bakarak bir başarı veriyorum. Yani ben bir resmi sıkıştırdım, resmi açtım.
+
+83
+00:20:02,496 --> 00:20:10,576
+Orjinalinden çok uzaksa, benzemiyorsa orjinal haline iyi bir sıkıştırma yapmadım demektir.
+
+84
+00:20:11,508 --> 00:20:20,628
+Sıkıştırılmış hale açtığımda orijinal resmime benziyorsa ne diyordun? İyidir sıkıştırma yaptım demektir.
+
+85
+00:20:21,128 --> 00:20:24,208
+O yüzden metriklerde yaptığım şey neydi?
+
+86
+00:20:24,208 --> 00:20:34,208
+Orijinal piksel değeriyle sıkıştırıldıktan sonra açılan piksel değerlerinin farklarının karelerinin kare kökünü alıyorduk.
+
+87
+00:20:34,996 --> 00:20:47,576
+Bu minimum square error diye geçen bir kavramdı. Aslında sayısal analiz, nümerik analizde de gördüğünüz gibi en küçük kareler yöntemi vardır.
+
+88
+00:20:48,084 --> 00:21:01,523
+İki nokta arasındaki farkın karesini alırız. Neden kare alırız? Ben 5'den 2'yi çıkarırsam 3'tür. 2'den 5'i çıkarırsam eksi 3'tür.
+
+89
+00:21:01,523 --> 00:21:11,043
+3 ayrı bir kavram, eksi 3 ayrı bir kavram ama aslında değişim 3 birimdir. Biri artı yönde, biri eksi yönde.
+
+90
+00:21:16,084 --> 00:21:30,084
+Karesi alınır. Sonra bu karelerin toplamlarının kare kökünü alıyorduk. İçinde de formülün şey vardı, resmin boyutlarına da oranlıyorduk.
+
+91
+00:21:30,836 --> 00:21:48,655
+Root mean square error diyorduk. Bir de signal noise ratio vardı. Bu biraz daha değişik bir formüldür. İkisi de kullanılır. Ama sonuçları birbirinin tersidir. Biri küçük çıkarsa biri büyük çıkar. Biri büyük çıkarsa diğeri küçük çıkardı.
+
+92
+00:21:56,468 --> 00:22:04,908
+Sorunuzda yoksa şimdi ikinci bölümümüze geçelim. İkinci bölümümüze geçelim.
+
+93
+00:22:04,908 --> 00:22:06,908
+Screen share diyelim.
+
+94
+00:22:10,148 --> 00:22:11,807
+Bölüm 2.
+
+95
+00:22:19,220 --> 00:22:20,840
+Görüyor musunuz arkadaşlar?
+
+96
+00:22:23,300 --> 00:22:23,920
+Evet hocam.
+
+97
+00:22:24,059 --> 00:22:25,200
+Evet hocam veriyoruz.
+
+98
+00:22:25,680 --> 00:22:27,180
+Evet hocam.
+
+99
+00:22:27,519 --> 00:22:31,960
+Birinizin evet demesi yeterli olur. Herkes görüyor demektir.
+
+100
+00:22:31,960 --> 00:22:36,280
+Şimdi yöntemlere birazcık ara vereceğim.
+
+101
+00:22:37,044 --> 00:22:47,844
+Hata bulma ve düzeltme konusuna geçeceğim. Bu hata bulma ve düzeltme aslında bir sinyal işleme konusudur.
+
+102
+00:22:48,284 --> 00:22:58,104
+Sinyal işleme konusu tabii bir haberleşme, komünikasyon derslerinde çok çok daha derin ve ağırlıklı olarak verilir.
+
+103
+00:22:58,744 --> 00:23:04,564
+Burada beni çok ilgilendiren bazı önemli kavramlardan yine bahsedeceğiz.
+
+104
+00:23:05,044 --> 00:23:14,144
+Ve bunun anlamı nedir? Aslında bu hata bulma yine başladık. Bu bir şekilde sayfayı değiştiremiyor. Evet.
+
+105
+00:23:16,147 --> 00:23:25,667
+Şöyle düşünelim, veri sıkıştırmayla bu hatayı bulma ve düzeltme için yapılan işlemler aslında…
+
+106
+00:23:25,667 --> 00:23:34,567
+Hocam, pardon bölüyorum da sanırım belki sadece bende olmuştur. Slide açtıysanız henüz bende slide gelmedi. Sadece klasör bölümü gözüküyor.
+
+107
+00:23:34,567 --> 00:23:41,827
+Tamam, tamam. Ben ne yaptım ki farklı acaba?
+
+108
+00:23:44,147 --> 00:23:51,048
+Şehirin screen dedim şu an. Şu an görüyor musunuz?
+
+109
+00:23:51,048 --> 00:23:51,528
+Ne oldu.
+
+110
+00:23:51,887 --> 00:23:54,607
+Evet mi?
+
+111
+00:23:55,188 --> 00:23:55,847
+Evet hocam.
+
+112
+00:23:55,847 --> 00:24:10,567
+Tamam peki. Şimdi bu veri sıkıştırmayla hatayı bulma ve düzeltme kavramları aslında birbiriyle zıtlık içeren bir durum. Şimdi ben veriyi neden sıkıştırıyorum?
+
+113
+00:24:11,251 --> 00:24:38,091
+Verinin boyutunu küçültmek için sıkıştırıyorum. Peki hata bulma ve sezme işlemi nedir? Daha sonra detayını vereceğim. Onu da şöyle düşünün. Ben bir noktadan bir noktaya veriyi gönderiyorum. Bu veriyi gönderirken bir takım bozulmalar olabilir. Bu bozulmaların olup olmadığını kontrol etmem için veriye bir takım bitler.
+
+114
+00:24:38,496 --> 00:24:55,336
+İlave bir şeyler eklemem lazım ki bozulduğunu anlayayım. Ben hem veriyi sıkıştırmak istiyorum boyutunu azaltmak için hem de hatalı gitmişse bu hataları bulun diye buna ekstra bitler ekliyorum.
+
+115
+00:25:04,596 --> 00:25:25,135
+Veriyi sıkıştırmak mı istiyorsun? Boyutunu azaltmak mı istiyorsun? Yoksa verinin güvenli bir şekilde karşı tarafa gidip gitmediğini mi öğrenmek istiyorsun? Bu arada kalan bir dilenma dediğimiz bir ikilem var. Şimdi yeniden hatayı sezme ve bulmaya gelelim.
+
+116
+00:25:25,683 --> 00:25:53,343
+Ben verimi sıkıştırırken, diskimin üzerinde verimi sıkıştırırım. Verimi herhangi bir yerden bir yere, iletim hatlarından göndermiyorum. Hiçbir problem yok. Ama verimi iletim hatları üzerinden gönderirken, mesela faks çekiyorum. A noktasından B noktasına faksımı gönderirken yolda bir takım bozulmalar olabilir. Bazı bitler bozulabilir.
+
+117
+00:25:53,683 --> 00:26:08,143
+İşte biz bu bitlerdeki bozulmalara hata diyoruz. Bazen gönderilen verinin çok küçük bir bölümünde bozulma olurken bazen hiç olmayabilir. Bazen de verinin tamamında bozulmalar olabilir.
+
+118
+00:26:18,548 --> 00:26:36,948
+Düşmesi, bir şeyin o an çakmış olması, ne bileyim o an atmosferde kum fırtınasının olması gibi gibi bazı olaylar ister veri telli, ister telsiz ortamlarda gönderelim. Mutlaka bir hataya sebep olabilir.
+
+119
+00:26:37,715 --> 00:26:54,775
+Meydana gelen bu bozulmalarda birçok uygulama tarafından kabul edilmez. Yani bazen öyle bozulmalar olabilir ki bir sayfa gönderiyorum faxta, beyaz bir sayfa, sayfanın ortasında 3-4 satır bir şey yazılı.
+
+120
+00:26:55,508 --> 00:27:16,828
+O yazıların dışında beyaz olan zeminle ilgili bilgi, onun renkler gidiyor orada. Orada bir bozulma olmuş. Orası birazcık siyah çıkmış, kara çıkmış. Hiçbir önemli değil. Bu kabul edilebilen bir bozulmadır. Ama verinin bilgi içeren kısmında bir bozulma varsa bu kabul edilemez bir durumdur.
+
+121
+00:27:17,652 --> 00:27:38,632
+Ben veri içerisindeki bir bitlik bozulma bazen tüm verinin yanlış anlaşılmasına neden olabilir. Ne demek istiyorum? İleride göreceğiz. Elimdeki veriyi bir ve sıfırlardan oluşan, baktığımda hiç anlamadığım bir forma dönüştüreceğim.
+
+122
+00:27:39,028 --> 00:27:48,788
+Oradaki bir bitin değeri birken sıfır olmuş ya da sıfırken bir olmuşsa birçok kodun hatalı açılmasına neden olur.
+
+123
+00:27:49,347 --> 00:27:55,847
+Ve evet kompres ettiğimde karşıma bir metin gelir ama hiçbir şey anlamam.
+
+124
+00:27:56,408 --> 00:28:02,607
+Bir tane biti kaybederek birçok karakteri farklı kodlarla açabilirim.
+
+125
+00:28:02,900 --> 00:28:17,480
+Bu sebeple bozulmanın olup olmadığını anlaşılması gerekiyor ve öncelikle benim o bir hatanın olup olmadığını sezmem lazım. Bu veride bir hata var.
+
+126
+00:28:17,940 --> 00:28:31,480
+İşte bu sezme işlemini bana sağlayan veriye eklediğim ekstra bitler. Ben o bitler üzerinden bu veride bir hata olup olmadığını bulabilirim.
+
+127
+00:28:31,480 --> 00:28:37,960
+Hatayı sezmem demek o hatayı düzeltebileceğim anlamına gelmez.
+
+128
+00:28:38,355 --> 00:28:55,956
+Her hata olduğunu bulurum fakat hatayı düzeltemeyebilirim. Hatayı bulma maliyeti çok ucuzdur fakat hatayı düzeltme çok maliyetlidir. Bunun yerine veriyi tekrardan bana gönder diyebilirim.
+
+129
+00:28:56,276 --> 00:29:17,355
+Bazen hatalarım, işte bir bitlik olabilir, iki bitlik, üç bitlik olabilir. Hatayı bulurum ama düzeltemem. Bir bitlik hatayı bulduğumda düzeltme olasılığım çok çok daha yüksektir. Bazen bir bitliği bile düzeltmeyebilirim.
+
+130
+00:29:20,660 --> 00:29:46,519
+Devam edelim. Veri iletiminde iki çeşit hata söz konusu. Bunlardan bir tanesi burst error dediğimiz patlama hatası. Demin de bahsettiğim gibi çevre koşulları sebebiyle bazen gönderilen verilerde bozulmalar olabilir. Bunlar milisaniyeler içerisindeki bir atraksiyon, obitin bozulmasına neden olabilir.
+
+131
+00:29:48,660 --> 00:30:09,400
+Error dediğim rastgele hatalar. Bu da elektriksel gürültü nedeniyle bir blok içerisinde rastgele bitlerin bozulması olabilir. Mesela bazen CD'lerimizde okuyamayız, bozulmalar oldu deriz. Onlar mesela rastgele bozulmaya girer.
+
+132
+00:30:10,099 --> 00:30:24,079
+İletim hatalarının veriye olan etkisi nedir? Dedik işte bazen veride bir hata olduğunda gönderilen veride açarken büyük problemler çıkar karşımıza. Verimi kaybetmiş olabilirim.
+
+133
+00:30:24,079 --> 00:30:37,679
+Bu veriye olan hatayı da şöyle söyleyelim. Tek bitlik bir hata söz konusuysa biz buna spike diyoruz. Çok kısa süren bir anlık bir olay var.
+
+134
+00:30:38,099 --> 00:30:53,679
+Uzun süren bir süreç değil, bozulmayı yapan. Çok anlık bu tip hataları, spike hataları deniliyor. Uzun süren girişim veya bozulmalara da, burst demiştim, birden fazla bitlik hatalara neden oluyor.
+
+135
+00:30:54,195 --> 00:31:20,415
+Yani orada sinyal açık olarak sıfır mı bir mi karar veremiyorsun ne olabileceğini. Böyle belirsiz bir alana düşen hatalar varsa bunlara da razor hatası deniyor. Yani bir blok böyle komple silinmiş. Blok dediğimde öyle 2-3 bitten oluşan bir şey. Binlerce bitten bahsetmiyoruz. Hatalar olabilir.
+
+136
+00:31:21,172 --> 00:31:33,192
+Şimdi çok kullanılan hataları kontrol eden metotlar var. Ben bunların hepsini size göstermeyeceğim. Çok daha popüler olanlarından bahsedeceğim.
+
+137
+00:31:33,572 --> 00:31:48,451
+Birinci denetim metotları Error Correction Code dediğimiz Forward Error Correction, işte F, E, C oradan geliyor F, E, C, Yeri Yönlü Hata Denetimi Türkçesi.
+
+138
+00:31:49,011 --> 00:32:02,551
+Hata denetimi için gönderilen veri kümesine mutlaka ekbitler eklemeliyim ki o bitlerin sayesinde ben orijinal veride bir bozulma olup olmadığını anlayacağım.
+
+139
+00:32:02,551 --> 00:32:11,031
+Peki gönderdiğim bu ekbitlerde bir bozulma olmuşsa ne olacak? O zaman iş işten geçti demektir.
+
+140
+00:32:11,632 --> 00:32:12,711
+Hatayı bulur.
+
+141
+00:32:13,395 --> 00:32:28,135
+Gerekirse alıcıda düzeltmeye çalışır. Yani kendisi hatayı bulduğunda düzeltebiliyorsa düzeltiyor. Düzeltemezse kullanıcıdan yeniden bana verini gönder diyor. Hız kaybı yaşanmaz.
+
+142
+00:32:28,596 --> 00:32:44,276
+Çok gürültülü ortamlarda da kullanılamaz bu yöntemler. Fech metodu yeniden iletimin zor veya imkansız olduğu bağlantılarda ve veri kümesinin küçük olduğu uygulamalarda kullanılır.
+
+143
+00:32:44,723 --> 00:33:01,023
+Demek ki büyük veri gönderiyorsam bu fetch yöntemlerini seçmemem gerekir. Buradaki en popüler olanları Heming Code'tur. Ben de size Heming Code'u göstereceğim. O yüzden yeşille çizdim.
+
+144
+00:33:08,084 --> 00:33:16,784
+Burada da hatayı bulma ve bozulan verinin yeniden iletilmesi için alıcı taraftan istekte bulunulması işlemidir.
+
+145
+00:33:16,784 --> 00:33:30,424
+Bakın yukarıda istekte bulunmuyor. Kendisi düzeltebilirse düzeltiyor. İkinci yöntemde bir bozulma varsa karşı taraftan istekte bulunuyor.
+
+146
+00:33:30,963 --> 00:33:40,963
+Uygulamalarda bu teknik kullanılıyor. Çünkü aynı hatayı tespit için gerekli bit sayısını düzeltmek için kullanılan bit sayısından...
+
+147
+00:33:41,203 --> 00:34:05,223
+Çok daha azdır. Şimdi bu uygulamalarda bu teknik kullanılıyor dedik. Bir düzeltmekle uğraşmıyor. Karşıdan orijinalini tekrar bana gönder diyor. Çünkü düzeltmeye uğraşırken kullanacağı bit sayısı yeniden istediğinde gelecek olan bit sayısından daha fazla. O yüzden tercih etmiyor.
+
+148
+00:34:09,204 --> 00:34:26,804
+Perity, Perity'den de size bahsedeceğim aslında ve başka kodlamalar mevcut. O zaman bugün demek ki ben Heming kodları, CRC, Perity, Çift Perity, Tekli Perity bunlardan bahsedeceğim.
+
+149
+00:34:28,804 --> 00:34:32,364
+Şimdi birlikte bir örnek yapalım.
+
+150
+00:34:33,300 --> 00:34:45,320
+Geşi benim karşı tarafa gönderdiğim bilgi olsun. Bir bit katarı gönderiyorum. Mavi de alınan veri de karşı taraf benim gönderdiğim bilgiyi alıyor.
+
+151
+00:34:46,900 --> 00:34:55,980
+Kırmızıyla çizdiğim şurası bir olan orijinal veri bozuluyor ve karşı tarafa sıfır olarak gidiyor.
+
+152
+00:34:56,659 --> 00:35:03,460
+Karşı taraf bu veriyi aldığında bu veride bir bozulma olup olduğunu anlayabilir mi?
+
+153
+00:35:06,840 --> 00:35:11,819
+Anlayamaz. Nereden bilirsin buranın orijinalinin bir olduğunu?
+
+154
+00:35:12,679 --> 00:35:17,119
+Sıfır geldi, o burayı sıfır olarak alır ve açar.
+
+155
+00:35:17,811 --> 00:35:29,671
+Bunu açarken işte eğer bunlar bir takım sembollerin kodlarıysa burada sıfırdan dolayı araya farklı bir sembolün kodunu açacak.
+
+156
+00:35:30,751 --> 00:35:38,072
+Mesela bağımlıyken bağımlıyı belki bana diye açacak.
+
+157
+00:35:39,219 --> 00:35:58,059
+U değişmiş, U'nun kodundaki bir bit değişmiş. O değişim U'nun yerine A'nın kodunun gelmesine neden olmuş. Böyle açmış. Bunlar belki okurken kullanıcı bu olur diye değiştirebileceği şeyler ama alıcı bunu kesinlikle anlayamaz.
+
+158
+00:35:58,059 --> 00:36:07,059
+Peki demiş, bir bitlik bir bozulma olmasına rağmen ben bu bozulmayı sezemedim bile. Burada bir hata olduğunu...
+
+159
+00:36:07,219 --> 00:36:16,779
+Bunu anlayamadım bile. Bunu anlayabilmek için ne yapmalıyım? diye soruyor ve karşısına şöyle bir şey geliyor.
+
+160
+00:36:16,779 --> 00:36:33,059
+Ben diyor gönderdiğim her biti çift alarak gönderim. Birin yerine iki tane bir, sıfır yerine iki sıfır, bir yerine iki bir, bir yerine iki bir. Her birini çift gönderim diyor.
+
+161
+00:36:33,715 --> 00:36:47,675
+Ve bu da karşı tarafın alınan verisi. Karşı tarafta bir bitte bozulma olmuştu ya, şu bir sıfıra dönülmüştü. Bir bitte bozulma oldu, bu bir sıfıra döndü.
+
+162
+00:36:47,675 --> 00:36:58,076
+Şimdi karşı taraf bu gelen veriyi gördüğünde bir hata olduğunu anlar mı? Anlar. Neden anlar?
+
+163
+00:37:00,576 --> 00:37:27,675
+Kopyası alınarak hep gönderilmiş. Ama adam geliyor şuraya bakıyor. Burada bir bozulma var. Hatayı sezdi. Fakat hatayı düzeltemiyor. Neden düzeltemiyor? Bu acaba sıfırdı da, sıfır sıfırdı da bir mi oldu? Yoksa bu acaba bir birdi de sıfır bir mi oldu? Bunu bilmiyor.
+
+164
+00:37:28,148 --> 00:37:32,288
+Şimdi ben aynı veriyi, bir de kalemimi açayım şuradan.
+
+165
+00:37:33,768 --> 00:37:40,307
+Aynı veriyi bir bit olarak gönderdiğimde hatayı sezemiyordu.
+
+166
+00:37:40,307 --> 00:37:51,588
+Burada ne yaptım? Biri bir biti yani bir bitlik veriyi iki bitle gönderdim. İkiye katladım.
+
+167
+00:37:53,448 --> 00:37:55,608
+Hatayı sadece sezdim.
+
+168
+00:37:56,307 --> 00:38:07,528
+Ama hatayı düzeltemedim. Bunu biraz daha ileriye taşıyalım. Her biti gönderirken iki kopyasını ekleyelim.
+
+169
+00:38:08,748 --> 00:38:18,327
+İşte bir de iki kopya daha ekledim. Üç tane bir oldu. Sıfırdır. Üç tane sıfır oldu. Üç tane bir. Dıdıdıdıdı gitti.
+
+170
+00:38:19,219 --> 00:38:36,659
+Alınan veriye geçiyorum. Orijinali 3 tane birdi. Bir bitti, bir bozulma oldu. Burası 0 oldu. Ne yapar adam? Buradaki hatayı sezer. Burada bir hata var. Üçünün de aynı olması gerekir.
+
+171
+00:38:41,519 --> 00:39:00,440
+Buradaki hatayı düzeltebilir. Burada ters olan nedir? Sıfır. Bunun orijinalinin bir olması gerekir. Ama eğer birden fazla bitte bozulma olmuşsa bunu düzeltemez. Hangisinin bozulduğunu bilemez.
+
+172
+00:39:08,659 --> 00:39:28,579
+O zaman bunun orijinali 1-1 olur. Ama tek bitlik bozulmayı bulabilir. Burada da bir şeyleri en azından bir hata olduğunu anlayabilmek için 1'e 3 verdim. 1 biti 3 bit olarak kodladım.
+
+173
+00:39:29,139 --> 00:39:47,839
+Dersin en başında şöyle bir şey demiştim. Verinin güvenliği mi yoksa verideki sıkıştırma performansı mı? Şimdi ben gönderilen verinin bozulup bozulmadığını anlamak için biri iki yaptım. İki katına çıkardım. Biri üç yaptım.
+
+174
+00:39:48,175 --> 00:40:04,015
+En azından bir bitti bozulma varsa bunu kendim de düzeltebileyim diye. Nerede kaldı benim sıkıştırma? Gittikçe arttırıyorum. Hep karşıma bu ikilem çıkar. Sıkıştırma mı?
+
+175
+00:40:04,563 --> 00:40:21,503
+Güvenlik mi? Sıkıştırma mı? Güvenlik mi? Arasını bulmaya çalışacağız. Eğer dinamik olarak bir verimi bir noktadan bir noktaya aktarıyorsam mutlaka güvenliğe de dikkat etmem lazım.
+
+176
+00:40:22,384 --> 00:40:46,643
+İçinde bulunduğun fiziksel ortamda veriyi sıkıştırıyorsan, hiç bunlarla uğraşmama gerek yok. O yüzden sinyal işlemenin konusudur dedik. Olayı biraz daha yukarıya taşıyalım. Elimdeki input verisini 2 bit olarak kabul edelim. Yani elimde bir inputum var mı? Varmış.
+
+177
+00:40:46,976 --> 00:40:56,816
+Elimdeki verilerimi, inputlarımı 2-2 alacağım ve aldığım her ikiye de 5 bit değerini vereceğim.
+
+178
+00:40:57,456 --> 00:41:03,736
+Diyeceğim ki, iki tane bit olarak kodlayacaksam kaç farklı değişik durumum olabilir 2 bit için?
+
+179
+00:41:04,256 --> 00:41:09,056
+2 üzeri 2'den 4 farklı durum olabilir. Bunlar da nedir?
+
+180
+00:41:09,472 --> 00:41:26,532
+İşte 00, 01, 10, 11. İki bit de yazılabilecek bütün durumlar. Şimdi bunlara da bir kod veriyorum. Buraya verilen kodlarda da bir şeye dikkat etmem gerekiyor. Öyle kodlar vereceğim ki buraya.
+
+181
+00:41:27,155 --> 00:41:33,796
+Bir kodla diğer koda geçerken en az 3 bitinin değişmesi lazım.
+
+182
+00:41:34,356 --> 00:41:40,596
+Şimdi bakın, birinciden ikinciye geçerken kaç bitte değişmiş? Şu bit değişmiş, bir.
+
+183
+00:41:40,596 --> 00:41:48,175
+Bir şu değişmiş, iki şu değişmiş, üç de bu değişmiş. Üç bitte değişim var.
+
+184
+00:41:48,820 --> 00:42:13,840
+Bundan buna geçerken kaç bitte değişim var? Birinci bitler değişmiş, ikinci bit değişmiş, üçüncü bit değişmiş, dördüncü bit değişmiş. Bunda dört bit değişim var. Bundan buna geçerken iki değişmiş, dört değişmiş, beş değişmiş, üç bit. En az üç bit de değişiklik olacak şekilde kod word vermişim. Neden?
+
+185
+00:42:14,771 --> 00:42:20,171
+Bir bozulma olduğunda ben bu bozulmayı da düzeltebileyim diye.
+
+186
+00:42:21,251 --> 00:42:23,731
+Şimdi orijinal mesajım bu.
+
+187
+00:42:25,271 --> 00:42:28,191
+Şöyle bir input verim var. Şu benim input verim.
+
+188
+00:42:28,191 --> 00:42:34,371
+Bu input verisini karşıya göndereceğim ama güvenli de gitmesini istiyorum.
+
+189
+00:42:34,931 --> 00:43:01,271
+Her iki iki alıyordum inputlarımı. Bir sıfırın yerine ne koyuyormuşum? On yüz. Şunu bir sıfırın yerine koydum. Birbirinin yerine neyi koydum? Beş tane bir. Evet koydum. Sıfır birinin yerine ne koydum? Nerede? Sıfır bir sıfır on. Pardon. Dört tane sıfır bir. Dört tane sıfır.
+
+190
+00:43:02,164 --> 00:43:28,424
+Ben burada bir şey atlamışım arkadaşlar. Şu veriyi atlamışım koymayı. Tamam mı? Şunun arasında ne var 0 1'de? 0 1 0 10 var. Bunu düzeltirim sayfaya koyarken. İki tane 0 yerine bunu koyduk. Bir bir yerine de bunu koyduk. Ve karşıya bunu gönderiyorum. Karşıya bunu gönderdiğimde
+
+191
+00:43:30,324 --> 00:43:48,344
+Bir bitti bir bozulma olsun. Ne gibi bozulmalar olsun mesela? Şöyle bozulmalar olsun. Benim kodlarım hangileriydi? Şu aldım buraya ikinci kodum, üçüncü kodum ve dördüncü kodum.
+
+192
+00:43:55,572 --> 00:44:07,072
+Veya şuradaki 0 1 olursa veya 3. bit bozulursa veya 4. bit bozulursa veya 5. bit bozulursa.
+
+193
+00:44:07,072 --> 00:44:20,752
+Yani şu tablo nedir? Şuradaki değerler bozulmamış kod kelimeleri. Yani şunlar. Şuradakilerde mümkün olan bir bitteki bozulma.
+
+194
+00:44:23,603 --> 00:44:39,324
+Şimdi hangisini koymamıştım ben? Şunun olmadığını düşünün tamam mı? Çünkü o aşağıda yok. Şimdi ben bunu karşı tarafa gönderiyorum. Bir bit de bozulma olsun. Şurasının bir olarak gittiğini düşünelim.
+
+195
+00:44:39,563 --> 00:44:49,143
+Şimdi karşı tarafa bu gitti. 10-100. 10-100 nedir? 10-100, 1-0. Bunu 1-0 diye açtı. Problem yok.
+
+196
+00:44:49,460 --> 00:45:15,580
+5 tane 1. 5 tane 1 neydi? 1-1. Bunu da açtı, problem yok. Sonra 1-3-0-1. Bakıyor buraya 1-3-0-1 diye bir kod yok. Acaba bu 1-3-0-1 hangi kodun bozulmuş halleridir? 1-3 tane 0-1 kimde var? Bakalım.
+
+197
+00:45:21,972 --> 00:45:23,564
+diye görmüyorum.
+
+198
+00:45:26,900 --> 00:45:39,800
+Şurada var. Bir bozulma. Bu bozulmadan önceki orijinal hal nedir? Bu. O zaman gidiyor, bunun yerine o orijinal halini alıyor.
+
+199
+00:45:40,371 --> 00:45:55,672
+Bu da neye karşılık geliyordu? Bu da nedir? 0-0'a. Bunu 0-0 olarak açıyor. Bu 1 olduğunda bakın 3 tane 0, başka hiçbirinin bozulma bitlerinde yok.
+
+200
+00:45:56,032 --> 00:46:11,732
+Bunun sebebi en az 3 bitte değişim vererek bu kotları oluşturduğum için burada şu kotların herhangi birinin bir bitlik bozulması diğerlerinin içerisinde de yer almıyor.
+
+201
+00:46:11,732 --> 00:46:22,772
+O zaman ben bir bitlik bütün bozulmaları yapabiliyorum. Ama iki bit bozulsaydı, mesela şurası da bir olsaydı.
+
+202
+00:46:24,211 --> 00:46:50,811
+1-1-0-0-1 Hiç buralarda iki tane 1, iki tane 1, sıfır sıfır 1 yok. Bunu düzeltemeyecekti. Çünkü bozulmuş olan hallerde böyle bir kod yok. Onun o yüzden orijinalini de bulamazdı.
+
+203
+00:46:51,795 --> 00:47:13,275
+Demek istediğim, eğer bir bitlik bozulma varsa hem buluyorum hem de kendim düzeltebiliyorum. Ama burada da ne yaptım? Ön sayfalara bakalım. Ön sayfalarda bir biti iki katıyla, bir biti üç katıyla kodladım.
+
+204
+00:47:19,731 --> 00:47:42,291
+2 biti 5 bit ile kodladım. Bu da ne olur? 2 bölü 5'ten %40 kadar arttırdım. Yani %40
+
+205
+00:47:44,692 --> 00:48:07,271
+Bilgi ekledim üzerine. Biri iki yaparken yüzde yüz. Yani bir verdim, konuşamadım. Biri iki yaptım, yüzde yüz arttırdım. Bir biti iki bitle gönderdiğimde yüzde elli fazladan bilgi kattım. İki bit yerine beş bit koyduğumda da yüzde kırk.
+
+206
+00:48:07,583 --> 00:48:24,123
+Fazla koydum. Yani fazla eklediğim bilgiler yüzde kırka kadar düştü. Ama bulduğum bir bittik bozulmayı da rahatlıkla karşı taraftan istemeden çözebildim.
+
+207
+00:48:34,675 --> 00:48:52,675
+Yine şuraya yazayım ben. Biri iki bitle ifade ettim. Sadece hatayı buluyordum ama düzeltemiyordum. Pardon. Biri iki yaptım. Sonra ne yaptım? Bir bitlik bozulmayı düzelttemiyorum.
+
+208
+00:48:52,675 --> 00:48:55,435
+Ben hatalı konuşmayayım.
+
+209
+00:48:56,083 --> 00:49:09,403
+1'i 2 yapınca hatayı buluyorum ama düzeltemiyorum. Bir bitlik hatayı. Bir yerine 3 bit kullandığımda hatayı buluyorum. Bir bitlik bozulmaları düzeltebiliyorum.
+
+210
+00:49:14,452 --> 00:49:42,452
+Hatayı buluyorum. Bir bitleri düzeltebiliyorum. Şimdi geldik hemin kodlamaya. Ben bir şey sorabilir miyim? Evet. Şimdi iki biti beş bitle kodladık ya. Bunun mesela üç bit olsaydı kaç bitle kodlayacaktık? Bunun bir formalizasyonu var mı? Hayır öyle bir formalizasyonu yok. Yani aslında o kod kelimeleri senin çıkarmana bağlı. Sen o kodları acaba çıkarabilecek misin? Yani şöyle söylüyorum. Mesela burada iki bit.
+
+211
+00:49:42,452 --> 00:49:59,992
+3 biti 5 bitle yaptın ve bunun 1 bitlik bozulmaları diğerlerinin 1 bitlik bozulmalarıyla örtüşmemesi lazım ki sen o bozulmayı bulabil. Ama sen buraya 3 bit dersen oturup bunları senin hesaplayın.
+
+212
+00:50:00,000 --> 00:50:21,480
+İlk bulup çıkartman lazım. Hiç çıkışma olmayacak şekilde olabiliyor mu? Literatürde böyle bir şey yok. Yapılmamış. Çok da mantıklı olmamış demek ki. Çünkü 3'ü belki 5 yetmeyecek. Ne bileyim, bunu şöyle bir oran versek. 2'yi 5 yaptık.
+
+213
+00:50:23,219 --> 00:50:41,759
+Üstelme aldı acaba? İki katının bir fazlası, üçü yaparsam iki katının bir fazlası on olur. Üçü on bit de kodluyorsun. Bunlar pek şey gelmedi. Bir de şunu çıkarabilmen lazım.
+
+214
+00:50:42,675 --> 00:50:46,595
+Kullanılan bir yöntem olmadığı şeylerde üzerinde çok durulmamış gibi anladım o zaman.
+
+215
+00:50:46,595 --> 00:51:09,035
+Yani zaten bunlardan daha iyileri olduğu için üzerinde geliştirmeler yapılmamış. Geliştirme yapılarak işte şeye gelmişler, hemin kodlamaya. Hemin kodlama çok daha iyi. Bak 3 bit almıyor, 4 bite 7 bitlik bir kodlama veriyor. Ama daha farklı olduğunu göreceğiz şimdi.
+
+216
+00:51:09,972 --> 00:51:27,672
+Şimdi 4 bitlik verideki 4 biti 7 bite çeviriyor. Yani 7 bitlik bir kod kelimeyle ifade ediyor. Acaba bu 4 biti 7 bite nasıl çeviriyor? Burada hani nasıl olduğunu...
+
+217
+00:51:28,563 --> 00:51:47,384
+3 bitlik diye karar verdik değişimlere. Burada ise çok daha farklı bir yol izleyeceğiz. Diner bir kodlama kullanacağız. Burada da ne oluyor? 4,7 ise ortalama bölüsünü alırsak 4 bölü 7. 1 bit yerine 1.75 bit kullanıyor.
+
+218
+00:51:50,324 --> 00:52:12,083
+4'e 7, 4 bite 7 bit. Bu da ne oldu? 1.75 bit geldi. Aşağıya doğru indiğimizde neyi görüyoruz? Daha az bit kullanarak hatayı bulup bir bittik hatalarımı da düzeltebiliyorum.
+
+219
+00:52:12,755 --> 00:52:29,855
+Şimdi nasıl oluyor? Benim inputum 4 bit dedik. İşte burası benim inputum. Bu inputtan 7 bitlik bir kod kelimesi çıkardık. Bu 7 bitlik kod kelimesinin ilk 4 biti orijinal veri.
+
+220
+00:52:29,855 --> 00:52:37,976
+4 biti şöyle indirirsek 4 bitini indiremedik.
+
+221
+00:52:38,612 --> 00:53:02,932
+Şöyle indirdik. Orjinal mesajın aynısı. Bunun arkasına üç tane bit eklenmiş. Bu üç tane bit kafadan uydurulmamış. Nasıl oluşturulmuş? Bu ilk dördü benim orjinalim. Şurası benim beşinci bitim. Şurası benim altıncı bitim. Şurası da benim yedinci bitim.
+
+222
+00:53:03,199 --> 00:53:17,779
+Bu 5, 6 ve 7. bitleri şu son 3 biti ben hesaplıyorum. Hesaplarken de diyor ki B1, B2 ve B3. bitleri parity edition yap.
+
+223
+00:53:29,043 --> 00:53:48,323
+Bunun anlamı şudur. Exor gibi çalışır. Girişler 0, 1, 1, 0 ise yani girişler birbirinden farklıysa çıkış 1. Girişler aynıysa yani 0, 0, 1, 1 ise çıkışta 0 olacak.
+
+224
+00:53:48,723 --> 00:53:56,083
+Bakalım. B1, B2 ve B3. Şu satırı yapalım isterseniz. Bu satır nedir?
+
+225
+00:53:57,012 --> 00:54:14,512
+10 Bunlar 10 olmuş. Bakıyorum 10-10. Şimdi 5. biti hesaplayalım. B1 ile B2'yi egzorladım. 1-0 daha 1. 3 ile yaptım. 1-1 daha 0. Buraya geldi 0.
+
+226
+00:54:23,856 --> 00:54:49,356
+B4'de 0, 0, 0 ise çıkış yine 0. Buraya 0 yazdım. B2 ve B3'ü, B2 ve B3 0 ve 1, 0 ve 1 farklıysa 1. B4 ile egzorladım. 1, 0 daha farklıysa 1. Benim koduma ne ekleniyor? Hemin kod olarak 0, 0, 1. İşte 0, 0, 1 geldi.
+
+227
+00:54:49,811 --> 00:55:06,351
+Bir tane daha yapalım. Şunu yapalım. Orijinalim 0, 1, 1 ve 1. B5 kaç olacak? B1, B2 ve B3'ü egzorladım. 0, 1 daha 1, 1, 1 daha 0.
+
+228
+00:55:07,539 --> 00:55:27,719
+Sonra 1, 3 ve 4'ü egzorlayacağım. 1 ve 3, 0, 1 daha 1, 1, 1 daha 0. Buraya da geldi 0. Sonra 2, 3 ve 4'ü. 1, 1 daha 0, 0, 1 daha 1. İşte bakın 0, 0, 1'i elde ettim.
+
+229
+00:55:32,244 --> 00:55:39,043
+B5, B6 ve B7'yi de hesaplayarak Heming kodumu hesaplamış oldum.
+
+230
+00:55:41,043 --> 00:55:45,104
+Ve 4 bite karşılık bu kodları vereceğim diyorum.
+
+231
+00:55:46,144 --> 00:55:48,104
+3 tane şart geçerlidir.
+
+232
+00:55:48,104 --> 00:55:50,443
+İşte buradaki şartlar şu.
+
+233
+00:55:51,284 --> 00:55:59,604
+B1, B2, B3 ve B5 peritlerini egzorladığımda sonucun sıfır olması lazım.
+
+234
+00:56:00,211 --> 00:56:19,012
+Exor'ladığımda sonucun 0, exor'ladığımda sonucun 0 olması lazım. Karşı tarafa bu bilgiyi gönderdiğimde bir bozulma yoksa bu şartların sağlanması lazım. Eğer bir bozulma olmuşsa bu şartları sağlayamam. Bunu da biliyoruz.
+
+235
+00:56:28,403 --> 00:56:53,224
+Şuradaki B1, B2, B3, B4, B5 demiştik. B4, şurasına B5 dedik. Şurasına B6 dedik. Şurasına da B7 dedik. Eğer bir bozulma varsa, bozulmuş kod kelimesini şu üzerine tilda işaretiyle gösteriyorum. Yani ben karşıya şunu gönderirken,
+
+236
+00:56:54,099 --> 00:57:03,979
+Bunu şöyle göndermişsem, 4 tane 1, 0, 0, 1 diye göndermişsem bu kod kelimesini böyle süslü tildalı gönderiyorum.
+
+237
+00:57:04,959 --> 00:57:13,479
+3 tane perit içeki kontrol edeceğiz. Bu 3 tane perit içek işte şunlar. Bunların sıfıra eşit olması gerekiyor.
+
+238
+00:57:14,299 --> 00:57:15,219
+Yine gitti kalem.
+
+239
+00:57:16,148 --> 00:57:33,768
+Şunların sıfıra eşit olması gerekiyor. Bunları da peritinin p'lerini yazmışız. 1, 2 ve 3. Ben oturup bunları kontrol edeceğim. Bunların hepsi sıfıra eşit olması gerekiyor.
+
+240
+00:57:35,155 --> 00:57:47,995
+Hesaplanan P1, P2, P3'ler eğer farklı değerler alınmıyorsa ben o farklı değerin durumuna göre hangi bitti bozulma olduğunu anlayacağım ve onu düzeltebileceğim.
+
+241
+00:57:48,175 --> 00:57:50,535
+Yine çok konuştum sesim böyle olmaya başladım.
+
+242
+00:57:54,739 --> 00:58:16,599
+Bir şey yapmamışım. Olmadı. Şimdi karşı tarafa bir bit gitti. Bu üç tane periti çekip kontrol ettim. Üçü de sıfır çıktı. Bunun anlamı şudur. Hiçbir bozulma yok. Kod kelimesi doğru gitmiştir. Dördüncü bitten sonra 5, 6 ve 7'yi at. Orjinal verini elde et.
+
+243
+00:58:19,603 --> 00:58:29,983
+P, J'lerden yani bu 1, 2, 3'lerden bir tanesi 1 ise diğer ikisi 0 ise bir bozulma var demektir.
+
+244
+00:58:29,983 --> 00:58:37,835
+Şimdi şu örneğe bakalım. P, J'lerden bir tanesi 1, diğer ikisi 0 ise...
+
+245
+00:58:38,164 --> 00:58:55,084
+B, L, bu bozulan bitin, B, L'nin ne olduğunu şu an bilmiyorum. Bozulan bitin hangi P, J'den geldiğini bulacağım. Ve ilgili P, J'de olup diğerlerinde olmayan bu biti bulup bunun tersini alacağım.
+
+246
+00:59:04,032 --> 00:59:16,732
+P1 ve P3 sıfır. Bozulma olmasaydı bu üçünün de sıfır çıkması gerekiyordu. Ama bir bozulma olmuş ki P2 ne çıkmış? Bir çıkmış.
+
+247
+00:59:16,732 --> 00:59:23,132
+Şimdi bakacağım. P2'nde bozulma var. Bana öyle bir bit bulun ki.
+
+248
+00:59:23,572 --> 00:59:49,132
+P1'de, P3'de olsun, P2'de olmasın. Ya da P2'de olsun ama P1 ve P3'de olmasın. Ne olabilir? Şimdi bakıyorum. P1 ve P3, P2. Bu 1 ve 3'de olacak, P2'de olmayacak ya da P2'de olup P1, P3'de olmayan nedir?
+
+249
+00:59:50,195 --> 01:00:02,976
+Hangi bitmiş? 6 numaralı bit. 6 numaralı bite bakarsak, sadece P2'de var 6 numaralı bit. P1'de var mı? Yok. P3'de var mı? Yok.
+
+250
+01:00:02,976 --> 01:00:15,115
+P2 sıfır çıkacakken 1 çıktığına göre, sadece P6 biti P2'de olduğuna göre, demek ki bu 6. bitte bozulma olmuş ki,
+
+251
+01:00:15,476 --> 01:00:29,295
+Bu şey sıfır değil. O zaman altıncı bitin tersini alıyorum. Bu sıfırsa bir, birse sıfır olarak alıyorum ve doğru kod kelimesini elde ediyorum.
+
+252
+01:00:30,715 --> 01:00:37,655
+Veya şöyle olsun. PJ'lerden bir tanesi sıfır, diğer ikisi bir olsun.
+
+253
+01:00:38,835 --> 01:01:04,576
+Örnek verelim. P3 sıfır çıkmış. Yani bu doğru. P2 bir çıkmış. P1, P2 de bir çıkmış. Şimdi benim neye ihtiyacım var? Bu P1 ve P2'yi bozan bir bit var. O bit P3'ün içerisinde değil ki P3 bozulmamış. Acaba hangi bit? Bakalım.
+
+254
+01:01:06,708 --> 01:01:32,868
+Bir numaralı bit. Bir numaralı bit P3'de yok. 2, 3, 4, 5 hepsi var. 6 diyemem. 6'da P1'de yok. Bir bitte bozulma olacaksa P1 ve P2'de olup P3'de olmayan bitin olması lazım. O da nedir? B1'dir. O zaman B1 bitini tersine alacağım ve kod kelimesini elde edeceğim.
+
+255
+01:01:33,523 --> 01:02:00,683
+Veya ne olabilir? Üçü de bir olabilir. Yani bunların üçü de bir. Üçü de kontrolden geçemedi. Öyleyse üçünü de bozan bir bit bulmalıyım. Üçünde de olan ne var? Üç numaralı bit. Üç var, bunda da var, bunda da var, bunda da var. Demek ki bozulan üçüncü bittir. Üçüncü bitin.
+
+256
+01:02:01,364 --> 01:02:22,903
+Tersini alacağım. Ve doğru kod kelimesini elde edeceğim. Bir tane örnek alalım. Bir tane örnek alalım. Bunu nasıl bir kağıda yazıp oraya geçirirken. Mesela neyi alalım? Şunu alalım.
+
+257
+01:02:25,715 --> 01:02:51,815
+0, 1, 0, 3 tane 1 ve 0. Evet şimdi şurada bir yere de yine kalemimiz yok oldu. Hadi yavrum çıkar. Benim orjinal verim 0, 1, 0, 1. Buna hemen kodları da ekledim arkasına. 1, 1, 0.
+
+258
+01:02:52,755 --> 01:02:57,435
+Ben bunu gönderiyorum. Gönderirken şöyle bir bozulma oldu.
+
+259
+01:03:04,115 --> 01:03:22,795
+Bozulma var mı yok mu kontrol edeceğim. Önce P1'e bakayım. 1, 2, 3 ve 5'i egzorlayacağım. 1, 1 daha 0. 0, 0 daha 0. 5'te de nedir? 0, 1 daha 1'dir. 1 çıkar.
+
+260
+01:03:31,380 --> 01:03:53,140
+1 ile 1, 0. 0 ile 0, 0. Eğer doğru yapıyorsam, burası 0 çıktı. P3'e bakalım. 2 ile 3, burası 1 oldu. 1 ile 1, 0 oldu. 0 ile 1, doğru mu yaptım? Bir daha yapıyorum.
+
+261
+01:03:59,092 --> 01:04:17,652
+Sonra 4 ile yapacağım. Şunu da şunu aldım. 0. Sonra 5'i yapacağım. 5 bu mu? 1, 2, 3, 4, 5. 1 ile 0 da 1. Bu da 1. O zaman ne var? P1 ve P3 hatalı.
+
+262
+01:04:18,228 --> 01:04:27,788
+P2, 0. Doğru. Peki ne yapmalıyım? P1 ve P3 de olup P2 de olmayan nedir?
+
+263
+01:04:29,668 --> 01:04:43,367
+B5'tir. B5 hem P1'de var hem de P3'de var. P2'de yok. Öyleyse bir şeyi yanlış yaptım.
+
+264
+01:04:45,364 --> 01:04:52,963
+Öyleyse bir şey yanlış yaptım. Çünkü doğru çıkmadı. Şurayı bir daha siliyorum.
+
+265
+01:04:52,963 --> 01:05:11,963
+Bunları bir gözüm kayıyor çünkü. Kalemi alalım. Şurası 1, 2, 3, 4, 5,
+
+266
+01:05:12,403 --> 01:05:13,423
+Altı
+
+267
+01:05:17,331 --> 01:05:33,011
+6, 7 mi? 7. Bir dakika arkadaşlar. Burada B4 7. Bu hatalı.
+
+268
+01:05:33,556 --> 01:05:52,175
+Bunların hepsini akşam yaptım. 1-2-3-5. 1-2-3-5. 13-46. Aşağısı 23-47. Şurası 7 olacakmış. İki tane hatam vardı. Öteki hata hangisiydi?
+
+269
+01:05:53,012 --> 01:06:06,012
+Bana bir hatırlatın, onu da düzeltin. Burası 7. Şimdi yeniden bakıyorum. Benim hangisinde bozulma oldu? Bozulmada kalemimi değiştireyim. Bozulmada şu biti bozuk yazdım.
+
+270
+01:06:18,900 --> 01:06:45,960
+3 ve 5. 1, 1 daha 0. 0, 0 daha 0. 0, 1 daha 1. P1, 1 çıktı. P2 nedir? P2, 1, 3, 4, 6. 1, 3, 4 ve 6. E zorlayalım. 1, 0 daha 1. 1, 1 daha 0. 0, 1 daha 1.
+
+271
+01:06:46,547 --> 01:07:13,967
+Bakın burada hata yaptım ortaya çıktı. P3'ü alalım. P3 nedir? 2, 3, 4, 7, 2, 1, 3, 0, 4, 1, 7, 0. Egzorlayalım. 1, 0 daha 1, 1, 1 daha 0, 0 daha 0.
+
+272
+01:07:14,452 --> 01:07:29,452
+Şimdi doğru olan pelitimiz P3. P1 ve P2 hatalı. P1 ve P2 de olup P3 de olmayan bit hangisidir? P1 ve P2 de olup.
+
+273
+01:07:29,780 --> 01:07:54,360
+P3'de olmayan bit B1'dir. Bana diyor ki B1. bitinde hata var ve bunu düzelt. Birken bunu sıfır yaptım ve orijinalimi elde ettim. Şimdi ben bir burada hata yaptım. Bir yerde daha hatam vardı. Hatırlıyor musunuz neresiydi? Bir yerde daha hata vardı arkadaşlar.
+
+274
+01:07:56,532 --> 01:07:59,012
+Ha şuraya yazmayı unutmuştum. Tamam.
+
+275
+01:08:04,467 --> 01:08:14,167
+Evet, bir saatimize bakalım. Neyse, şu eşlik sınamasını da bitirip öyle bir ara verelim. Bu konuda bitsin.
+
+276
+01:08:16,167 --> 01:08:24,007
+Çünkü aynı kategorinin sınıflamalarından değil, bu ötekinin.
+
+277
+01:08:28,083 --> 01:08:46,783
+Bir saniye. Çok özür dilerim. Ben şimdi size neyi gösterdim? Heminki gösterdim. Eşlik ve CRC şu ikinci yöntemin şey olduğu için bunu bütün anlatmam lazım. Bir ara verelim arkadaşlar o zaman.
+
+278
+01:08:48,467 --> 01:08:59,667
+İki blok yaptığım için iki arayı ben birleştirerek kullanmak istiyorum. 10-10 iki ara vermeyip tek ara veriyoruz. 10.30'da gelelim. Tamam mı?
+
+279
+01:09:02,067 --> 01:09:03,487
+Tamam hocam.
+
+280
+01:09:03,487 --> 01:09:04,868
+Tamamdır. Hadi görüşürüz.
+
+281
+01:09:04,868 --> 01:09:06,788
+Tamam hocam. Görüşürüz hocam.
+
+282
+01:33:03,283 --> 01:33:04,823
+Evet, tekrardan merhaba.
+
+283
+01:33:08,243 --> 01:33:11,484
+Şimdiki arkadaşlar kaldığımız yerden devam edelim.
+
+284
+01:33:20,275 --> 01:33:23,036
+Hocam bir şey sorabilir miyim? Dersi devam etmekmeden önce.
+
+285
+01:33:23,956 --> 01:33:24,395
+Efendim?
+
+286
+01:33:24,855 --> 01:33:25,716
+Bir şey sorabilir miyim?
+
+287
+01:33:25,895 --> 01:33:26,235
+Evet.
+
+288
+01:33:27,296 --> 01:33:31,876
+Şimdi sizin AVS sayfanıza bakıyorum ama burada ders notunu eklemişsiniz geçen hafta için.
+
+289
+01:33:31,876 --> 01:33:35,475
+Bir şifre var ama şifreyi nereden paylaşacaksınız?
+
+290
+01:33:36,155 --> 01:33:46,115
+Evet. Ben şifreyi... Arkadaşlar çok kötü bir durum oldu. Şifreyi ben SGSİS'ten göndermiştim. Neydi? Unuttum.
+
+291
+01:33:47,859 --> 01:33:50,019
+Çete yazıyorum hocam. [şifre].
+
+292
+01:33:50,579 --> 01:34:08,739
+[şifre] buydu. Tamam. İlk defa böyle bir şey yaptım. Çünkü bu slide'ları yeni hazırlıyorum ya, arada bir hatalar yapıyorum. Onlara dönüp dönüp bakıyorum. Öyle hatasız nette dolaşmasın diye.
+
+293
+01:34:10,003 --> 01:34:17,484
+Anladım hocam. Bir de hocam ben geçen hafta dersin son yarım saatinde çıkmak durumunda kalmıştım da mail adresimi iletemedim size. Chatten yazayım mı?
+
+294
+01:34:18,083 --> 01:34:32,724
+Hayır. Yine o mailin içinde bir adres sizinle paylaştım. Drive'de bir dosya. O Excel'e girip oraya yazıyorsunuz bilgilerinizi. Arkadaşınızı onu da yazar mısınız chatten rica etsem?
+
+295
+01:34:35,183 --> 01:34:36,003
+Tamam hocam, tamam.
+
+296
+01:34:36,627 --> 01:34:38,627
+tamamdır teşekkür ediyoruz
+
+297
+01:34:43,155 --> 01:35:01,396
+Şimdi ben bazı şeyleri sizden öğrenim. İyi. [kişisel bilgi] Evet, şimdi ne dedik?
+
+298
+01:35:01,887 --> 01:35:16,028
+Otomatik Repeat Request dedik. İkinci hata denetim metodumuz budur. Bu neydi? Hatanın düzeltilmesi için karşı taraftan istekte bulunuyorduk. Şu an ekranı görüyorsunuz değil mi?
+
+299
+01:35:18,768 --> 01:35:20,827
+Evet hocam.
+
+300
+01:35:20,927 --> 01:35:29,108
+Tamam. Ama ben yine sayfamı çeviremiyorum. Aha bunlar kaldı. Şunları da silelim.
+
+301
+01:35:31,412 --> 01:35:43,692
+Slide'daki tüm mürekkebi sildiğince bütün geneli silmiyormuş. Ne kadar saçma bir şey. Neyse, şurayı da silelim.
+
+302
+01:35:50,420 --> 01:35:53,300
+Ne yapıyorsun bana ya? Ne yapıyorsun kızım?
+
+303
+01:35:55,559 --> 01:35:56,059
+Şimdi
+
+304
+01:35:56,059 --> 01:36:05,059
+bir başka yönteme geçtik. Eşlik sınama yöntemi. Bu da yine
+
+305
+01:36:05,684 --> 01:36:20,623
+Belki birçoğunuz duydunuz bunu. Bu anlattıklarımı elektronik kökenli olanlarınız varsa zaten duymuştur. Ya da lisansda datacom derslerinde de almışsınızdır, duymuşluğunuz vardır ya da ilk kez duyuyorsunuz. Önemli değil.
+
+306
+01:36:21,235 --> 01:36:28,695
+Gönderilen veride yine oluşan tek sayıdaki hatayı sezmek için kullanılır.
+
+307
+01:36:28,695 --> 01:36:42,396
+Bakın buradaki tek sayı dediğim şey bir bitlik hatayı değil. Bir tane hata varsa, üç bitti hata varsa, beş bitti hata varsa, yedi bitti hata varsa.
+
+308
+01:36:43,636 --> 01:36:59,176
+Tek sayıdaki hataları sezmek için kullanılıyor. Çift sayıysa yapacak bir şey yok. Verideki birilerin sayısını tek veya çift olarak düzenlemektedir. Yöntemde bunu anlatacağım.
+
+309
+01:36:59,396 --> 01:37:11,496
+Eşlik biti diye benim bir kontrol biti olacak. Adına eşlik biti diyoruz. Bu niye silgide kaldı? Bu eşlik biti bir veya sıfır yapılacak. Neye göre?
+
+310
+01:37:11,636 --> 01:37:21,775
+Bir veya sıfır yapılacak. Elimdeki veri grubunun içerisindeki birilerin sayısının çift veya tek olmasına bakıyor.
+
+311
+01:37:22,676 --> 01:37:30,176
+Bu eşlik sınaması yönteminde iki tane metodu var. Bir tek eşlik, ikincisi çift eşlik.
+
+312
+01:37:30,176 --> 01:37:38,095
+Bana algoritma diyor ki ben tek eşliği kullandım ya da algoritma diyor ki bana ben çift eşliği kullandım.
+
+313
+01:37:39,636 --> 01:37:53,855
+burada çift eşlik olması ne demek? Şu en alttakilere bakın. Şurası tek eşliği anlatıyor. Burası da çift eşliği anlatıyor. Elimde şöyle bir veri var. Elimdeki veri bu. Aynı veri.
+
+314
+01:37:54,192 --> 01:38:17,931
+İçinde kaç tane 1 var? Bakıyorum. Tek sayıda 1 var. Bakıyorum. Tek sayıda 1 var. 3 tane 1 var. Eğer kullandığım algoritma tek eşlik yöntemini kullanıyorsa bunun anlamı şudur. Tek eşlik yönteminde verinin sonuna eklenen eşlik biti 0 olmalıdır.
+
+315
+01:38:18,644 --> 01:38:25,824
+Çift eşlik yönteminde de verinin sonuna eklenen eşlik biti 1 olmalıdır. Başka da bir şey yok.
+
+316
+01:38:26,444 --> 01:38:34,463
+Tek eşlik kullanıyorum diyorsa 0, çift eşlik kullanıyorum diyorsa eşlik bitinin 1 olması lazım.
+
+317
+01:38:34,463 --> 01:38:41,704
+Peki ne demek bu? Eğer tek eşlik algoritmasını kullanıyorsam,
+
+318
+01:38:41,844 --> 01:38:51,964
+Verinin içerisindeki birilerin sayısı tekse, tek eşlik yönteminde eşlik bitine sıfır veriyor.
+
+319
+01:38:53,104 --> 01:39:04,784
+Verinin içerisindeki birilerin sayısı yine tek ise, bak hep birilerin sayısı tek ama yöntem çift eşlikse eşlik bitine bir koyuyor.
+
+320
+01:39:05,404 --> 01:39:07,264
+Başka da bir şeyi yok.
+
+321
+01:39:07,264 --> 01:39:09,364
+Şimdi bu ne demek?
+
+322
+01:39:10,036 --> 01:39:25,036
+Benim elimdeki orijinal bitim bu üç tane tek sayı var. Tek eşlikte çalışıyorsam, tek sayıda bir varsa buraya sıfır yazdım.
+
+323
+01:39:26,036 --> 01:39:32,036
+Peki, şimdi ben bir bozumu olsun burada. Şurası bir değil ve sıfır olsun.
+
+324
+01:39:32,659 --> 01:39:44,779
+Bu algoritma nasıl çalışıyordu? Eğer elindeki veriler, verinin içerisindeki birilerin sayısı tekse eşlik biti sıfır olacak.
+
+325
+01:39:44,779 --> 01:39:59,439
+Adam eşlik bitine sıfır koymuş. Ama ben bakıyorum birilerin sayısı çift değil. Tek değil, çift. O zaman bu tek sayıda burası sıfır olması gerekiyordu. Ama niye sıfır?
+
+326
+01:40:00,000 --> 01:40:05,439
+Peki bitlerin birinde bir bozulma var. Ama bozulmayı düzeltemiyorum.
+
+327
+01:40:08,039 --> 01:40:16,720
+İki bitte bozulma olsaydı, şurayı da bozalım. Burası sıfır olsaydı, bozulmayı bulamayacaktı.
+
+328
+01:40:16,720 --> 01:40:24,579
+Çünkü bakıyorum tek sayıda bir var. Eşlik bitinin de tek eşlilikte sıfır olması lazım. Bulamazdı.
+
+329
+01:40:25,479 --> 01:40:26,699
+Şunu da bozalım.
+
+330
+01:40:27,283 --> 01:40:28,443
+Bir yapalım.
+
+331
+01:40:29,743 --> 01:40:31,583
+Üç bitlik bozulma oldu.
+
+332
+01:40:32,423 --> 01:40:34,283
+Birilerin sayısı...
+
+333
+01:40:37,300 --> 01:40:55,479
+Birilerin sayısı 1, 2. Yine çift sayıda oldu. Tek sayıdayken buraya 0 koyacaktı. Bunu da bozamaz. Ancak tek sayıdaki bozulmalar da bunu sağlıyor. Aynı yöntem burada da geçerli.
+
+334
+01:41:05,300 --> 01:41:27,639
+İçindeki birilerin sayısı tek ise burası 1. Tek eşliği kullanıyorsa, içlerindeki birilerin sayısı tek ise burası 0. Karşı taraf veriyi aldığında buraya bakıyor. Birilerin sayısının çift olup olmadığına, tek eşlik ise buranın 0 ya da 1 olmasını kontrol ediyor.
+
+335
+01:41:33,300 --> 01:41:46,519
+Beş bit değişimlerde hatayı seziniyor fakat hatayı düzeltemiyor. Zaten bu yöntemler neydi? Karşı taraftan hatanın düzeltilmesini isteyeceklerdi.
+
+336
+01:41:46,519 --> 01:41:57,619
+Bu başlık altında ikinci yöntemimiz, onu buraya koymamışım. Aslında şöyle yapayım, bunları atlıyorum.
+
+337
+01:41:59,315 --> 01:42:22,915
+Yerlerini yanlış koymuşum. CRC yöntemi. Cyclic Redundancy Check. Bu yöntemi size örnekle anlatacağım. Tabi bunları tahtada anlattığım vakit teker teker yazıyordum ve üzerinde anlatıyordum. Şimdi o kadar kolay olmayacak. CRC yöntemi nasıl çalışıyor?
+
+338
+01:42:23,380 --> 01:42:48,020
+Benim gönderilecek bir mesajım var. Gönderilecek mesajım bu. Bu algoritmayı kullanırken de bir tane üreteç fonksiyonuna ihtiyacım var. Bu üreteç fonksiyonuna da gx diyorum. Ve bu gx üreteç fonksiyonum da bir polinom. Üçüncü, dördüncü, beşinci dereceden bir polinom olabilir.
+
+339
+01:42:49,104 --> 01:43:06,604
+Verimin boyutuna göre bu üreteç fonksiyonumun yani polinomumun derecesini de ayarlamam lazım. Eğer verim çok büyükse, öyle ikinci dereceden, üçüncü dereceden üreteç fonksiyonları yeterli olmayabilir.
+
+340
+01:43:08,148 --> 01:43:17,728
+Bunun daha detaylarını literatürden okuyup öğrenebilirsiniz. Üretici fonksiyonun x küp x kare artı 1 olsun.
+
+341
+01:43:17,728 --> 01:43:30,068
+Şimdi ben buradan şunu çıkaracağım önce. Üretici fonksiyonumun derecesine bakıyorum. 3. Öyleyse diyorum fonksiyonun derecesi 3 ise
+
+342
+01:43:30,463 --> 01:43:37,504
+Sen bu orijinal veriye 3 bitlik CRC kodu ekleyeceksin diyorum.
+
+343
+01:43:38,744 --> 01:43:43,404
+Buraya hesaplamalar sonucunda 3 bitlik CRC kodu geliyor.
+
+344
+01:43:44,004 --> 01:43:47,484
+Başlangıçta bunların ilk değerleri sıfır.
+
+345
+01:43:47,484 --> 01:43:56,684
+Bir takım işlemler yapacağım. İşlemler sonucunda burada bir kod oluşacak ki bu kodun CRC kodu diyeceğiz.
+
+346
+01:43:57,619 --> 01:44:08,420
+Peki, şunlar nedir? Şuradaki değerler nedir? Buradaki değerlerde şu üreteç fonksiyonunun her bir teriminin kas sayısı.
+
+347
+01:44:08,420 --> 01:44:21,420
+x kübün kas sayısı 1, x karenin kas sayısı 1, x üzeri 1'in kendisi yok, kas sayısı 0, x üzeri 0'ın da kas sayısı 1.
+
+348
+01:44:22,195 --> 01:44:50,195
+Burada önemli olan üreteç fonksiyonumun derecesi kadar CRC kodu oluşturmam. CRC kodun başlangıç değeri sıfır. Bir takım işlemler yapacağım. Bu işlemler sonrasında da CRC kodum elde edilecek. Orjinal veri ve CRC kodu karşı tarafa göndereceğim. Bu değer de CRC üreteç kodunun kas sayılarından oluşturur.
+
+349
+01:44:50,195 --> 01:45:13,355
+Bu işlemi nasıl yapıyoruz? Şimdi ben teker teker anlatayım. Şu başlangıçtaki verimi buraya aldım. Şunun aynısı burası var. CRC kodum 0 ile başladı. 3 tane bit var. Ve benim şu üreteçten çıkardığım 1101 vardı. 1101'i koydum.
+
+350
+01:45:14,003 --> 01:45:30,963
+Ve bu mesajla şu üreteç fonksiyonunu egzorluyorum. 0, 1 daha 1, 1, 1 daha 0, 1, 0 daha 1, 1, 1 daha 0, 1 indi, 0 indi, 1 indi, 3 tane 0 indi.
+
+351
+01:45:30,963 --> 01:45:41,503
+En soldaki bit iptal ediliyor. Sonra şuradaki bite bakıyorum. Eğer buradaki bit 0 ise,
+
+352
+01:45:42,036 --> 01:45:54,876
+üreteç fonksiyonu yerine 0 yazıyorum. Buradaki bit 1 ise üreteç fonksiyonu yerine şuradaki kas sayıları yazıyorum. Şimdi baktım burası 0.
+
+353
+01:45:55,412 --> 01:46:23,391
+4 tane 0 koydum çünkü 4 bitlik. Ve yeniden egzorluyorum. 0, 1, 0 daha 1, 0, 1, 0 daha 1, 0, 1, 0, 0, 0 gitti. İlk biti attım. Bakıyorum buradaki 1, 1 ise breteç fonksiyonunu alıp buraya yazdım. Yeniden egzorluyorum. 0, 1, 1, 1, 1, 3 tanesi.
+
+354
+01:46:23,412 --> 01:46:23,832
+Kısır.
+
+355
+01:46:24,212 --> 01:46:50,631
+Üreteç bu solu attım. Bakıyorum burası 1. Üreteç fonksiyonunu yazdım. Egzorladım. 0, 0, 1, 0, 3 tane 0. 0'ı attım. 0 olduğu için 0'ı yazdım. Egzorladım. 0, 1, 0, 0, 0, 0. 0'ı attım. 1 ise üreteç fonksiyonunu yazdım.
+
+356
+01:46:52,212 --> 01:47:17,391
+0, 1, 0, 1, 0. 0'ı attım. Baktım burası 1. Üreteç fonksiyonunu yazdım. Yeniden egzorladım. 0, 1, 1, 1. Buraya attım. 3 tane bit kaldı. İşte bu 3 tane bit benim CRC kodum. Gidiyorum buralara. Artık yazacağım değer nedir?
+
+357
+01:47:19,539 --> 01:47:30,019
+Buraları artık. Biri yazıyorum. Yazabilirsem. Biri yazıyorum. Karşı tarafa bunu gönderiyorum.
+
+358
+01:47:31,019 --> 01:47:45,159
+Eğer bu bitte bir bozulma olmuşsa, karşı taraf CRC kontrolünü yaparak bu bozulmanın olup olmadığını tespit edecek.
+
+359
+01:47:45,587 --> 01:48:06,467
+Yeniden söylüyorum, burada önemli olan bazı kaynaklarda bunu bu şekilde anlatmıyor. Bu egzorlama işlemini yaparken en soldaki biti atıp şuradaki biti kontrol ediyorsunuz. Bu sıfırsa CRC kodum kadar değer koyacağım.
+
+360
+01:48:08,020 --> 01:48:14,160
+Mesela ben burada da hata yapmışım arkadaşlar ama değişen bir şey olmaz. Merak etmeyin.
+
+361
+01:48:20,404 --> 01:48:26,724
+Yok hata yapmama şimdi pardon 3 var burada 3 bitlik koyacağım ve 3 bitlik çıktı tamam.
+
+362
+01:48:27,423 --> 01:48:34,463
+Burası 0 ise orijinal şey yerine 0'ları koyuyorum bir ise orijinal üretici yazıyorum.
+
+363
+01:48:34,463 --> 01:48:38,344
+Şimdi karşı taraf bu mesajı aldı. Ne yapacak?
+
+364
+01:48:39,444 --> 01:48:57,464
+Karşı tarafa bunu gönderiyorum şimdi. Karşı taraf bunu aldı. Bu hatalı mı gitti yoksa doğru mu gitti? Şimdi benim bir kontrol yapmam gerekiyor. Yapalım dikot işlemini. Bu benim orijinal verim.
+
+365
+01:48:57,939 --> 01:49:22,699
+Üreteç fonksiyonumu buraya yazdım. Aynı işlemleri yapıyorum. Yine egzorladım. 1, 0, 1, 0, 1, yazdık. Soldakini sildik. 0 ise 0'ları yazdık. Egzorladık. 0, 1, çift 0, burası 1, 0, 1, 1, sildim.
+
+366
+01:49:23,283 --> 01:49:50,863
+1 geldi. Üreteç kodumu yazdım. Egzorladım. 1 1 0. Burası 1 1 1. Bunlar aynı geldi. 0'a attık. Burada 1 var. Üretici yazdık. Egzorladık. 1 1 daha 0. 1 1 daha 0. Şurası 1. 0 1 1. İşte sildik. Üretici yazdık. Egzorladık. Çarptık. Yine egzorladık. Gitti 1.
+
+367
+01:49:51,283 --> 01:50:00,863
+Üretici yaptık, egzorladık, sola attık, bir kaldı üretici yazdık, egzorladık ve sıfır sıfır.
+
+368
+01:50:01,223 --> 01:50:06,983
+Orjinal CRC'ye döndüysem bozulma yok demektir. İyi.
+
+369
+01:50:08,523 --> 01:50:13,783
+Bozulma varsa eğer bitte, burası sıfıra dönmeyecek.
+
+370
+01:50:14,644 --> 01:50:31,304
+Bir tane de onun için yapalım. Benim elimdeki bitim neydi? 0, 4 tane 1. Burada 4 tane 1 değil de şurayı gördüğünüz gibi bir bozulma olmuş. Yani 3. bit bir yerine 0 gelmiş.
+
+371
+01:50:31,304 --> 01:50:42,524
+Karşı taraf bu işlemi yeniden decode için yapacak. Hızlı bir şekilde yapalım. Üretici koyduk, egzorladık.
+
+372
+01:50:43,155 --> 01:51:08,956
+Solu sildik sıfır var sıfırları koyduk egzorladık Solu sildik sıfır var sıfırla egzorladık Solu sildik sıfır var sıfırla egzorladık Solu sildik bir var üreteç fonksiyonumu yazdım egzorladım soldakini sildim bir var üreteç fonksiyonumu yazdım egzorladım soldakini sildim
+
+373
+01:51:09,619 --> 01:51:11,619
+mouse yine gitti.
+
+374
+01:51:11,619 --> 01:51:14,619
+ooooh
+
+375
+01:51:14,619 --> 01:51:17,619
+bir dakika çık bakayım
+
+376
+01:51:17,619 --> 01:51:20,619
+sıfır
+
+377
+01:51:20,619 --> 01:51:22,619
+burası sıfır
+
+378
+01:51:22,619 --> 01:51:24,619
+sıfır yazdık
+
+379
+01:51:24,619 --> 01:51:26,619
+egzorladık
+
+380
+01:51:26,619 --> 01:51:27,619
+ve ne gördük?
+
+381
+01:51:27,619 --> 01:51:30,539
+sıfır sıfır sıfır bir
+
+382
+01:51:30,707 --> 01:51:49,887
+Bozulma yoksa sıfır çıkacaktı. Başlangıç bununla başladı. Sıfırdan farklı bir değer çıktığına göre bozulma var demektir. Karşı tarafa diyeceğim ki gönderdiğin veride bozulma var. Sen bunu bana yeniden gönder.
+
+383
+01:51:55,283 --> 01:51:58,083
+Bir başka, burada sorusu olan var mı?
+
+384
+01:52:01,619 --> 01:52:03,420
+Peki, tamam.
+
+385
+01:52:03,699 --> 01:52:04,960
+Ben bir şey sorabilir miyim?
+
+386
+01:52:05,179 --> 01:52:05,500
+Evet.
+
+387
+01:52:05,500 --> 01:52:11,960
+Bu üreteç fonksiyonu yine hirdistik mi? Yani biz kendimiz mi belirliyoruz onu? Bir formülizasyonu var mıdır yine?
+
+388
+01:52:12,659 --> 01:52:26,759
+Yok, onun formülizasyonu yok. Sadece kaynaklar şunu yazar. Üreteç fonksiyonunun derecesini verinin büyüklüğüne bağlı olarak ayarlamalısın der. Öyle şey yok.
+
+389
+01:52:27,091 --> 01:52:52,931
+Çok fazla detay yok. Kullandığım kitaplarda, yayınlarda onu göremedim. Yani eğer küçük bir verim varsa 3'e kadar, 4'e kadar sana yetiyor da eğer çok daha uzun bir bloğa CRC koyacaksan o zaman peynci kuvvet diye geçer. Mesela bunların formüllerini hep verince peynci kuvvet diye veriyor. Ona göre bir fonksiyon seçiyorsun.
+
+390
+01:52:55,091 --> 01:53:13,831
+Bazı şeyler, mesela bu veri sıkıştırmada durum odur. Bir sürü algoritmamız var diyoruz. Hangi algoritmayı seçip kullanmalıyım? Ben elimdeki datayı, veriyi tanıdıkça hangi algoritmanın daha iyi sonuç verdiğini de anlıyorum.
+
+391
+01:53:13,831 --> 01:53:22,831
+Yani tabii bir iki deneme yapıyorum. Şu yöntemler daha iyi, şunlar vermiyor diyorum ve en sonunda bir şeyde kalıyorum. Burada da...
+
+392
+01:53:23,315 --> 01:53:51,296
+Çalışmamda da yani ben bir siyasi kod üretiyorsam elimdeki dosyalarımın büyüklüğüne bağlı olarak en ideali seçebiliyorum bir iki denemeden sonra. Ondan sonra da zaten hep aynı üreteç fonksiyonunu kullanıyorsunuz. Çünkü karşı tarafında bu üreteç fonksiyonunu bilmesi lazım. Bunu dikkat edebilmesi için. Bilmezse edemez. Ben bunları sürekli kafama göre değiştiremem. Bir tane iki taraf.
+
+393
+01:53:51,315 --> 01:54:15,956
+Karşılıklı bir üreteç fonksiyonu belirleriz ve deriz ki biz ikimiz de bunu kullanacağız ve onu kullanacağız. Ben sabah ayrı öğleden sonra ayrı akşam kullanacaksam bunları bir şekilde karşı tarafa da iletmem lazım. Bunların hepsi bir maliyet. O yüzden anlaşılır. Belirli bir üreteç fonksiyonu belirlenir.
+
+394
+01:54:18,676 --> 01:54:24,456
+Şimdi bir başka yöntem. Bu aslında günlük hayatımızda çok kullandığımız bir yöntem.
+
+395
+01:54:25,235 --> 01:54:48,935
+MD5 algoritması, Message Digest. Bu algoritmayı da mesela sözlü olarak anlatacağım. Çünkü güvenlikte kullanılan bir algoritma öyle açık açık bu algoritmanın nasıl çalıştığını, hash fonksiyonunun nasıl türetildiğini sana anlatmıyor. O zaman algoritmanın güvenliği kalmaz. Herkes bunu çözer.
+
+396
+01:54:49,587 --> 01:55:13,188
+Bir internet standartı ve veri güvenliğinde kullanılır. Şöyle düşünün, biz birçok kuruma girerken kullanıcı ID ve password'ümüzü veriyoruz. Bazen password'ümüzü unutuyoruz ve password'ünü hatırlat diyorum. Bazı vasat sistemler bana mail ile password'ümü gönderiyor.
+
+397
+01:55:13,779 --> 01:55:26,339
+Bu güvenli olmayan bir sistem demek. Benim password'ümü veri tabanında tutmuş, ben password'ümü unuttum deyince veri tabanından çekip bana gönderiyor.
+
+398
+01:55:26,339 --> 01:55:31,819
+Hiçbir güvenlik yok. Halen bunu kullanan bazı yerler var.
+
+399
+01:55:37,716 --> 01:55:42,576
+Bir izin verin. Telefon çaldı, kapatayım. Sessiz almamışım. Özür dilerim.
+
+400
+01:55:43,376 --> 01:55:44,256
+Problem değil hocam.
+
+401
+01:55:57,908 --> 01:55:58,408
+Teşekkürler.
+
+402
+01:56:02,131 --> 01:56:19,871
+Aynı zamanda şarjdaydı. Yerinden kalkmak zorunda kaldım. Ama mesela alışveriş sitelerine de üye oluyoruz. Password'ümü unuttuğum vakit bana resetle diyor Password'ünü. Hiç Password'ümü bana mail'e göndermiyor.
+
+403
+01:56:30,228 --> 01:56:38,847
+Şifreleyerek veri tabanında öyle çalışıyor. Ben şifremi girdiğimde hemen algoritma o algoritmaya sokuyor.
+
+404
+01:56:39,380 --> 01:56:45,359
+Benim girdiğim password'üm şifreliyor ve veri tabanındakiyle karşılaştırıyor.
+
+405
+01:56:45,739 --> 01:56:48,180
+Ha, aynısı ise bu doğru kişidir diyor.
+
+406
+01:56:48,180 --> 01:57:03,059
+Ben password'ümü unuttuğumda bir password'ü MD5 algoritmasıyla kodlayarak sakladığı için onu açacak bir veriyi ben ona veremediğimden dolayı benim kim olduğumu bilmiyor.
+
+407
+01:57:03,500 --> 01:57:06,420
+Ona ne diyor? İşte resetleme sayfasını açıyor.
+
+408
+01:57:07,380 --> 01:57:16,760
+yönünü yeniden resette ve yeniden gir diyor. Onun sebebi oradaki passwordlerimizin MD5 ile saklanmış olması.
+
+409
+01:57:17,480 --> 01:57:26,440
+Bu MD5 algoritması aslında nedir? Bir hash fonksiyonu üretiyor. Küçük bir veriden bir özet oluşturuyor.
+
+410
+01:57:26,920 --> 01:57:32,600
+Bu özet bilgiden de orijinal veriye dönülüyor. Bu özet demekle kastedilen şey
+
+411
+01:57:33,203 --> 01:57:58,523
+Veri yapıları dersinde falan görmüşsünüzdür. Disans'da hash fonksiyonları vardı. Bir sayıyı, bir dizide, bir yerde saklarken bir veriyi bir hash fonksiyonundan geçiriyorduk. Onun gibi düşünün. Benim elimdeki stringi de bir hash fonksiyonuna sokuyor ve o şifreleniyor. Daha sonra da aynı şekilde geri açılıyor.
+
+412
+01:58:01,203 --> 01:58:21,203
+Algoritma değildir diyorlar. Yani bazen farklı inputlara aynı hash fonksiyonunu üretebiliyor. Çok nadir ve seyrek olsa da. Yani belki milyarda bir ya da milyonda bir farklı inputlara aynı hash'i uygulayabiliyor.
+
+413
+01:58:21,203 --> 01:58:27,483
+Fakat bunu göz ardı ediyor internet standartlarında. Çünkü çok hızlı çalışan bir algoritma.
+
+414
+01:58:29,203 --> 01:58:30,423
+edebiliyorlar.
+
+415
+01:58:30,899 --> 01:58:49,419
+Her 128 bitlik veriye bir özet elde ediyor. 128'in katı değilse onlara da padding ekliyor. Bu 128 bitlik özette 32 bitlik 4 eşit parçaya bölerek bu bilgiyi tutuyor.
+
+416
+01:58:49,659 --> 01:58:58,899
+Bu MD5'in tam güvenli olmadığını söylemiştik. Bazen farklı inputlara aynı eş fonksiyonunu verdi.
+
+417
+01:58:58,899 --> 01:59:12,819
+verdiği için güvenli değil denmiş ve bunun üzerine de sekür heşin algoritması önerilmiş bu bu fakat
+
+418
+01:59:13,300 --> 01:59:41,300
+Nasıl söyleyeyim? MD5'e göre daha yavaş çalıştığı için hala MD5 kullanılıyor. Çünkü MD5'in kırılabildiği ispat edilememiş. Yani MD5'i bugüne kadar kıran olmamış. Sadece farklı inputlara aynı hash verildiği görülmüş. Yani rastlanmış. Peki bu SecureHash'in algoritması nedir? Bu da yine bir özet bilgi oluşturuyor. Bir hash fonksiyonu.
+
+419
+01:59:41,300 --> 02:00:06,639
+Fakat input olarak 2 üzeri 64 eksi 1 bitlik mesajdan 160 bitlik bir özetleme değeri oluşturuyor. MD5 inputun boyutu ne olursa olsun 128 bitlik bir özet oluşturuyor. Burada mesajım 2 üzeri 64 bit uzunluğunda olacak.
+
+420
+02:00:07,444 --> 02:00:15,084
+O yüzden MD5 daha kuvvetli bir algoritma ve daha hızlı. Tek yönlü bir algoritma dediğimiz gibi.
+
+421
+02:00:18,644 --> 02:00:41,944
+MD5 dediğimizde 512 bitlik bir şeyin varsa bunu bloklara ayırıyor. 128'in katlarını ayırıyor ve bunu 128'i heşliyor. Bunu da kendi içinde 4 eşit parçaya ayırarak kullanabiliyor. Katı değilse de padding işlemi yapıyor. Padding işlemi nedir? O sayı oluşuncaya kadar arkasına 0 bitini ekliyor.
+
+422
+02:00:46,996 --> 02:01:09,815
+şeyler vardı. Birazcık şunlardan bahsetmek istiyorum. Aslında bir takım kodlama yöntemleri, evet var. Çok fazla var. Yani kitapları açıp ıkarsanız o kadar fazla kodlama yöntemleri var ki aklınız durur. Ben genelde günlük hayatımızda olanları seçtim. Bunlardan bir tanesi de UPC.
+
+423
+02:01:10,644 --> 02:01:38,623
+Universal Product Code. Hepimizin bildiği gibi ürünlerin arkasındaki bu bar kodlar. Burada kalın, ince, siyah çizgilerle boşluklar var. İşte burada görüyorsunuz ince siyah, biraz daha kalın, kalın, çok kalın siyahlar var buralarda. Her ne kadar gözümüz çok rahat ayırt edemese de aynı şekilde de blankler var.
+
+424
+02:01:38,644 --> 02:01:46,644
+Bunların kodları var. İnce, biraz daha kalın, daha kalın, çok daha kalın. Bunların da kodları var. Bu kodlar önceden çıkarılmış.
+
+425
+02:01:46,644 --> 02:01:49,644
+Bu bar kodda da...
+
+426
+02:01:52,644 --> 02:01:58,604
+Bu şey geldi. Bunu şuradan nasıl... Siz bunu görmüyorsunuz tabii.
+
+427
+02:02:00,275 --> 02:02:19,255
+Kod üzerinde de, şu kodun üzerinde de bir bar kodun kendisi var, bir de dijitler var. Buradaki her bir dijit, 7 tane baneri dijite karşılık geliyor. Yani 7 tane bit bir araya geliyor, bir desimal dijiti oluşturuyor.
+
+428
+02:02:28,083 --> 02:02:45,423
+Üçüncüsü de soldaki separatör. Bu separatörün sol tarafının kodları şunlar. 0 ile 9 arasındaki dijitler için ayrılmış bitler. Sağ tarafı içinde ayrılmış olan bitler bunlar. Standart.
+
+429
+02:02:54,931 --> 02:03:16,591
+Bunlar nasıl oluştu bu left-right bitleri? Onları da şurada yazdım. Şuraya da kopyasını aldım. Sol taraftaki her yedili gruba bakarsanız hepsi sıfırla başlıyor ve birle bitiyor. Sağ taraftakilere de bakarsanız hepsi birle başlayıp sıfırla bitiyor.
+
+430
+02:03:17,716 --> 02:03:27,376
+Sol taraftaki her yedili grubun içerisindeki birilerin sayısı tek, sağ tarafta ise birilerin sayısı çift.
+
+431
+02:03:27,615 --> 02:03:37,996
+Demek ki bu bar kodda şuradaki kodlar oluştururken ortayadan ayrılıyor sol ve sağ diye.
+
+432
+02:03:44,212 --> 02:04:03,912
+Kılınlıklarına göre ve boşluk genişliklerine göre bit değerleri alıyor. Ve bu bit değerleri 7 tane bir bir decimal dijite gelecek şekilde buraya kodlanıyor. Bu bitler oluşturulurken de soldakiler sıfırla başlayıp birle bitip birle başlayıp sıfırla bitiyor.
+
+433
+02:04:03,912 --> 02:04:11,612
+Sol taraftan içindekilerin birilerinin sayısı tekken, sağ taraftakilerin de birilerinin sayısı çift.
+
+434
+02:04:12,212 --> 02:04:16,472
+Peki bu nedir? Bu bar kodu okuduğumuzda
+
+435
+02:04:16,800 --> 02:04:44,800
+Bakayım, öndekinin aynısını mı almışım? Şu 48, 500, 7, 0 ve 139 diye bir barcode var. Şuraya da bakın yalnız arkadaşlar. Çok özür dilerim. Şurada olmayan bir sayı görüyorsunuz. Burası check biti. Bunu genelde barcode'lara yazmazlar. Yani dijital olarak, resmal olarak yazmazlar. Ama barcode'un içinde o kontrol...
+
+436
+02:04:44,800 --> 02:04:54,779
+Bu dijiti yer alır. Barkot o bitleri okuduğum vakit en soldaki bir bit ürünün ne olduğunu gösterir.
+
+437
+02:04:55,315 --> 02:05:18,576
+Sonraki 5 bit üreticinin kodunu, sonraki 5 bit ürünün kodunu, sonraki 1 bit de kontrol dijiti gösterir. Ben bu kontrol dijiti ile o bar kod okunurken hatalı mı okundu, hatasız mı okundu bunu kontrol ediyorum. Peki nasıl kontrol ediliyor bu kontrol dijit?
+
+438
+02:05:19,731 --> 02:05:38,832
+Şöyle kontrol ediliyor. Benim elimde 11 tane dijitim var. İşte bunlar neydi? Şunlar. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Bir de burada olmayan kontrol dijit dedik. 11.
+
+439
+02:05:39,572 --> 02:05:54,811
+11 tane dijitim var benim. Şöyle bir polinom oluyor. Ben diyor bu tip şeylerde, algoritma bunlar standart, okurken hatalı olup olmadığını kontrol dijitini bu şekilde kontrol ediyor.
+
+440
+02:05:54,811 --> 02:05:59,811
+Ve bunların toplamının ona göre modunu alıyor. Bu çıkan değer...
+
+441
+02:06:00,404 --> 02:06:12,463
+Ondan da çıkardığında kontrol dijiti vermesi gerekiyor. Benim bu örneğimdeki kontrol dijitim aslında 4. Ama barkodun üzerine bu yazılmıyor.
+
+442
+02:06:13,364 --> 02:06:21,684
+Şimdi 3, A1, A2, 3, A3, A4, 3, A5, 1, 3, 1, 1, 1, 3, 1 diye çarpan olarak geliyor.
+
+443
+02:06:22,195 --> 02:06:48,575
+Şimdi bakalım benim A1'imdeki değer neydi? Bakın A1'imdeki değeri. Şunu da bir yere yazsam ben. 4850000139. Aslında diyorum bunu yazmadan ben bunu aklımda tutamıyorum. Neydi? Hatırlayan var mı? Yok.
+
+444
+02:06:49,076 --> 02:06:52,055
+Kırk defa da dönsem yine o aklımda kalmaz.
+
+445
+02:06:52,155 --> 02:06:52,695
+Kırk sekiz, beş yüz.
+
+446
+02:06:52,695 --> 02:06:53,996
+Yukarıda yazıyor aslında.
+
+447
+02:06:54,335 --> 02:06:55,155
+Nerede yazıyor?
+
+448
+02:06:56,235 --> 02:06:57,055
+En yukarıda yazıyor.
+
+449
+02:06:57,076 --> 02:07:03,916
+Siz görüyorsunuz. Benim oraya şey geliyor. Bu zoom'un kalkmayan panosu geliyor.
+
+450
+02:07:04,015 --> 02:07:06,715
+Şunu bari aşağıya indireyim. Tamam. Okey.
+
+451
+02:07:07,475 --> 02:07:10,956
+Şimdi bakıyorum. A1'in kat sayısı nedir? Sıfır.
+
+452
+02:07:12,627 --> 02:07:36,768
+3A1, burası 0 oldu. A2'nin kas sayısı nedir? 4. 4'ü aldım. A3 nedir? 8. 3 ile çarptım. 24. A4 nedir? 5. 5'i koydum. A5 nedir? 0. Yok. Burası da 0. Yok. A7, A8, 0. A9 nedir? 1.
+
+453
+02:07:37,268 --> 02:07:46,307
+3 ile çarptım. 1 oldu. A10 nedir? 3. 3'ü buraya ekledim. Ve nedir?
+
+454
+02:07:46,739 --> 02:08:09,420
+3.9'un 27 ekledim. 66 çıktı. 66'nın ona göre modunu aldım. 6 ve 10'dan çıkardım. 4. 10'dan da 6'yı çıkardım. 4. Kontrol dijitim 4'tür diyor. Benim buradaki kontrol dijitim 4'tür.
+
+455
+02:08:14,739 --> 02:08:34,299
+İlahlar ve boşluklar okunurken hatalı okursa, orada farklı değerler gelirse okumada buradaki dijitler farklı algılanacak. Buradaki dijitler farklı algılandığında buraya çarpan olarak farklı gelecek ve burada kontrol dijiti farklı bir değer çıkacak.
+
+456
+02:08:34,612 --> 02:09:00,012
+Çıktığında da ben o barcode'un hatalı okunduğunu anlayacağım. Bana diyebilirsiniz ki kontrol dijit bozulmaz mı? Kontrol dijit de bozulur. Onu kontrol etmek için de bir başka kontrol dijit, onu kontrol etmek için bir başka kontrol dijit de koyamayacağıma göre ben orijinal veride bir bozulma olup olmadığını kontrol edebiliyorum.
+
+457
+02:09:00,916 --> 02:09:20,556
+Veya Amerika'da kullanılan, posta sistemlerinde kullanılan bir başka kodlama var. Böyle bir kodlama. Bu da 0 ile 9 arasındaki şeyleri, resma dijitleri kodluyor. Her biri için 5 tane.
+
+458
+02:09:21,203 --> 02:09:44,323
+Bit ayırıyor ve bu kodlar, posta kodları kısa ve uzun çizgilerden oluşuyor. Her bir kod 5 tane dijitten meydana geliyor ama içinde mutlaka 3 tane kısanın olması gerekiyor. 3 kısa, 2 tane de uzun olacak şekilde. Burada her kısa yerine 0, uzun yerine de 1 koyuyor.
+
+459
+02:09:49,203 --> 02:10:13,743
+Şöyle bir sayı. Bu sayıyı nasıl bölmüş? 277 ve sonrasında 5576 diye bölmüş. Şuradaki bir de bunun kontrol dijiti. Bu algoritmada da kontrol dijiti kontrol etmek için farklı bir yol uyguluyor. Ne yapmış? Ona bakalım.
+
+460
+02:10:14,996 --> 02:10:29,176
+Şimdi elimdeki kod şuydu. Şu örnekte olduğu gibi ben şu ikinci yediyi yanlış okuduğumu düşünüyorum.
+
+461
+02:10:30,216 --> 02:10:36,836
+Yani bu yedi yedi değil de altı beş gibi farklı bir sayı. Ne olduğunun önemi yok. Okuyamamışım.
+
+462
+02:10:40,307 --> 02:10:53,007
+Burada belli kontrol etik bir. Şimdi bunların hepsini topladım. 10, 14 daha 24, 30, 31, 32, 33.
+
+463
+02:10:54,131 --> 02:11:01,191
+Şuranın değiştiğini bilmiyorum, ne olduğunu bilmiyorum. Soru işareti koydum. Ona göre mod alacağım.
+
+464
+02:11:01,191 --> 02:11:14,651
+Şimdi ona göre mod alması için buranın kaç olması lazım ki ona tam olarak bölünebilsin? 7 olması gerekir. Zaten burada okuyamadığım dijitte ne olacak o zaman? 7 olacak.
+
+465
+02:11:15,796 --> 02:11:29,216
+Bu şekilde bulabilirim. Algoritma yine kontrol dijit de dahil bütün dijitlerin toplamının ona göre modunu aldığımda bana sıfırı veriyorsa
+
+466
+02:11:30,195 --> 02:11:41,836
+Evet, bu doğru demektir. Şu bitlerden bir tanesinde bir bozulma olsa, mesela şuradaki bitten bir tanesi bozulma olsa bu neye karşılık gelecek?
+
+467
+02:11:41,836 --> 02:11:50,655
+Mesela şurası 1 olsa 100 ve 11 diye bir kod burada yok. Bunun yerine hiçbir sayı koyamayacak.
+
+468
+02:11:58,195 --> 02:12:01,876
+Buradaki sayının ne olacağını tahmin edecek.
+
+469
+02:12:02,776 --> 02:12:06,256
+Dediğim gibi onlarca örnek bulabilirsiniz.
+
+470
+02:12:06,496 --> 02:12:10,536
+Çok farklı farklı uygulamalarda kullanılan farklı kodlar.
+
+471
+02:12:11,056 --> 02:12:13,496
+Her birinin bir algoritması var.
+
+472
+02:12:13,496 --> 02:12:25,836
+İşte kontrol biti nasıl hesaplanır, formülleri bu kodlar nasıl türetilir, ters işlemleri nasıl yapılır, algoritmaların enkodarı da dekodarı da bu şekilde.
+
+473
+02:12:26,195 --> 02:12:49,576
+Evet, bu hatalarla ilgili size söyleyeceklerim bunlar. Çok farklı hata modları, yöntemleri var ama dediğim gibi bu dersin içeriği ne? Onlara gerek yok.
+
+474
+02:12:56,659 --> 02:13:01,460
+Üçüncü bölüm. Ekranı görüyor musunuz?
+
+475
+02:13:04,159 --> 02:13:05,480
+Görüyoruz hocam.
+
+476
+02:13:05,579 --> 02:13:05,779
+Tamam.
+
+477
+02:13:06,680 --> 02:13:07,359
+Evet hocam.
+
+478
+02:13:07,779 --> 02:13:11,300
+Tamamdır. Şimdi yavaş yavaş artık...
+
+479
+02:13:11,923 --> 02:13:37,323
+Terminolojimizi gördük. Veri güvenliği ile veri sıkıştırma arasındaki ikilemi gördük. Verilerde bir bozulma oluyorsa biz onları nasıl sezebiliriz? Sezmek için ne kadar vermemiz gerekiyor? Yani bir bit karşılığına kaç bit koymalıyım ki ben hatayı sezebileyim? Bir bitlik hatalarda düzeltmeler yapabildiğimi gördük.
+
+480
+02:13:39,923 --> 02:13:48,024
+Sadece hatayı buluyorum. Karşı taraftan veriyi istiyorum. Farklı günlük hayatta ilgili kodlama örneklerinden bahsettik.
+
+481
+02:13:48,524 --> 02:13:52,243
+Şimdi temel teknikler bunlar veri sıkıştırma.
+
+482
+02:13:56,243 --> 02:13:58,864
+PowerPoint dosyayı görmüyoruz.
+
+483
+02:14:00,083 --> 02:14:01,623
+Görmüyorsunuz. Okey.
+
+484
+02:14:03,104 --> 02:14:03,884
+Yok hocam.
+
+485
+02:14:05,460 --> 02:14:08,159
+Demin sorduğumda görüyoruz dediniz.
+
+486
+02:14:09,980 --> 02:14:12,039
+O ilk taşıdığımdaki durum oldu.
+
+487
+02:14:13,300 --> 02:14:15,720
+Slide gelmedi. Ekran vardı, slide yok.
+
+488
+02:14:15,739 --> 02:14:16,900
+Evet hocam, şimdi tamam.
+
+489
+02:14:17,199 --> 02:14:18,220
+Şimdi tamam hocam.
+
+490
+02:14:19,220 --> 02:14:22,619
+Şimdi bu temel tekniklerde de şunlardan bahsedeceğim.
+
+491
+02:14:24,239 --> 02:14:41,960
+Ortada Data Compression diye bir kavram yokken bile insanlar bir şeyleri kodlamak istemişler. Ama bu kodlama aslında eldeki veriyi sıkıştırma amaçlı. Ben o koda baktığımda hiçbir şey anlamıyorum.
+
+492
+02:14:41,960 --> 02:14:52,079
+Bunlar da ilk hayatımıza giren kodlamalar, duyduğunuz ve bildiğiniz kodlamalar olan Braille kodlaması ve Morse kodlamalar.
+
+493
+02:14:52,239 --> 02:15:06,480
+Braille kodlaması görme engellilerin kullandığı bir alfabe. 6 nokta diye de geçiyor. Diğerisi de Morse alfabesini kullanan Morse kodlama.
+
+494
+02:15:06,480 --> 02:15:12,579
+Şimdi bu, şununla da ilgili notlarımı bir alayım. Çünkü söyleyecek şeylerim var.
+
+495
+02:15:19,091 --> 02:15:35,751
+6 tane noktam varsa 2 üzeri 6'dan ben 64 farklı sembol yazabilirim. Değil mi? Benim elimde A'dan Z'ye kadar 26 tane harf var.
+
+496
+02:15:37,491 --> 02:15:42,011
+0 ile 9 arasında da 10 tane sayı var.
+
+497
+02:15:42,579 --> 02:15:47,019
+Nokta, virgül, soru işareti. Hadi onları da koyduk.
+
+498
+02:15:47,619 --> 02:15:53,880
+10 tane de bunlardan gelse 36, 46 etsin yaklaşık olarak.
+
+499
+02:15:53,880 --> 02:15:58,880
+Ama halen 64 tane farklı sembol kodlayabilirim.
+
+500
+02:15:59,743 --> 02:16:11,283
+O zaman ben o dilde çok fazla kullanılan bazı kelimeleri ya da bazı kelime gruplarına da kodlar verebilirim.
+
+501
+02:16:11,644 --> 02:16:13,823
+Bu örnekte İngilizce için verilmiş.
+
+502
+02:16:13,823 --> 02:16:22,523
+Mesela İngilizce'de kullanılan and, for, of, the, with, g, ch, s, h, t, h ikilileri çok fazla geçer.
+
+503
+02:16:23,003 --> 02:16:27,743
+Bunları tek harf olarak kodlayacağıma iki harfi altı tarz.
+
+504
+02:16:27,743 --> 02:16:36,144
+tane bitle ifade edebileyim diyorlar. Yani bu aslında ne demek? Şuradaki noktaları 1, 2,
+
+505
+02:16:37,043 --> 02:16:54,943
+3, 4, 5 ve 6 diye gösterecek olursak A'nın kodu ne olur? Sadece 1'de nokta var, diğerleri 0. Öyleyse 1, 2, 3, 4, 5, 6. Bu A'nın kodudur.
+
+506
+02:16:54,943 --> 02:17:05,043
+Burada küçük harf büyük harf ayırımına niye girmedi diyebilirsiniz. Hiç lüzumsuz yere kodları harcamaya gelmiyor.
+
+507
+02:17:05,043 --> 02:17:21,324
+Ben bir tane de şöyle bir sembol kullanırım. İşte kullanılmayan bir sembol kullanırım. Bu da derim ki büyük harf sembolü. Ben şu sembolü görünce derim ki arkasından gelen bütün karakterler büyük harf okunacak.
+
+508
+02:17:22,324 --> 02:17:32,644
+Bir tane küçük harf sembolü yaparım. Ha o sembolü gördüğümde artık büyük harf değil, küçük harf okurum ağları, beyleri diye yorumlayabilirim.
+
+509
+02:17:33,463 --> 02:17:36,324
+Braille kodlamada işte gördüğünüz gibi bunlar...
+
+510
+02:17:37,236 --> 02:17:53,316
+Görme engellilerin okuması için kabartılı olarak yazılmış. Fakat ben bunu bilgisayara aktarmak istiyorsam ben o kabartılı veriyi, diyelim ki elinizdeki bir döküman, görüntü olarak aldım ben bu dökümanı.
+
+511
+02:17:53,736 --> 02:18:05,116
+Kabartılar mutlaka resimde daha farklı, koyu, gri olarak çıkacaktır. Resim üzerinde analiz yaptım. Kabartırın olduğu yerlere bir, olmayan yerlere.
+
+512
+02:18:05,236 --> 02:18:14,076
+Sıfır yaptım ve elimdeki veriyi işlenebilir bir yazı haline getirir ve onun üzerinde de işlemleri yapabilirdik.
+
+513
+02:18:14,076 --> 02:18:23,436
+Braille kodlamanın çok fazla şekilleri var. Eğer diyor edebiyatta kullanacaksan diyor, yani edebiye yazılarında değil de,
+
+514
+02:18:23,515 --> 02:18:30,335
+günlük hayatta bizim kullandığımız türde yazılarda kullanılan Braille alfabesi farklıdır diyor.
+
+515
+02:18:33,236 --> 02:18:34,604
+denilen şey de
+
+516
+02:18:35,219 --> 02:19:03,219
+Matematik ve fen bilimleriyle ilgili dokümanlar. Mesela biz fen bilimleri olsa işte delta, beta, gamma gibi şeylerimiz var. Sembollerimiz var. Bunların içerdiği bir braille kod var. Ya da CBC dediğimiz kompütür braille kod var. Siz program yazacaksınız. Genelde görme engellilerin kullandığı şey bu oluyor. Bu alfabet.
+
+517
+02:19:03,219 --> 02:19:31,219
+Kodlarını yazarken CBC Braille kodunu kullanıyorlar. Ya da müzik için geliştirilmiş Braille kod var. Görme engelli birinin notaları okuması gerekiyor. Eliyle notaları okuyacak ama bir sol işareti, işte Do, Re ya da neyse müzikteki şeyler, semboller onların karşılığı olan Braille kodları geliştirilmiştir. Oldukça zengin.
+
+518
+02:19:33,219 --> 02:19:42,680
+Bunun dışında bir de Morse alfabesi var dedik. Morse kodu. Morse kodu da nedir? Morse kodunun da bir hikayesi var.
+
+519
+02:19:43,316 --> 02:19:59,316
+Önce 1838 yılında Samuel Morse tarafından geliştirilmiş bir telgraf kodu aslında. Amerikan filmlerinde görürsünüz. Best Time filmlerinde özellikle tıkı tık tık diye telgraf çekerlerdim.
+
+520
+02:20:00,000 --> 02:20:13,000
+Bunlar da ilk başta uzun ve kısa çizgilerden oluşmuş. Uzun ve kısa çizgiler olduğu için birazcık kodlar karışıkmış. Bir iki sene sonra...
+
+521
+02:20:13,183 --> 02:20:28,683
+Bir başkası Alfred Fail diye birisi bu kodlama üzerinde daha okunaklı ve kullanışlı olması için sadece çizgilerden ve noktalardan oluşan yeni Morse alfabesini ortaya atmış.
+
+522
+02:20:28,683 --> 02:20:39,683
+Bu da bu, bu noktalar. Bunlar da yalnız nasıl okuyacağın, yani ben bir şeyleri evet vurup gönderiyorum ama...
+
+523
+02:20:39,987 --> 02:20:49,727
+Bir noktanın ya da çizginin hangi karaktere ait olduğunu, bir kelimenin ne zaman bittiğini nasıl anlayacağım?
+
+524
+02:20:49,727 --> 02:20:58,108
+Her nokta bir birim. Yani bir tık bir noktaya karşılık geliyor. Arka arkaya üç nokta.
+
+525
+02:20:58,708 --> 02:21:16,948
+Bir çizgiye karşılık geliyor. Yani üç kere şöyle vuruş diyelim. Nokta ve çizgiler arasında da bir birimlik boşluk var. Karakterler arasında üç birim. Bir karakterden bir karaktere geçmek için. Kelimeler arasında altı birim.
+
+526
+02:21:26,708 --> 02:21:45,708
+Nokta gönderiyorum. Ve böylece Morse alfabesi oluşuyor. Ben bu Morse alfabesini kulakla, sesle dinleyerek de anlayabildiğim gibi o sesi işleyerek bu alfabeyi, bu alfabeden de...
+
+527
+02:21:46,036 --> 02:22:01,236
+Bunun karşılıklarından da Latin olarak anlayabileceğimiz dile değiştirebilirim. Sadece harflerin değil, gördüğünüz gibi sayıların ve özel bir takım noktalama işaretlerinin de kodları var.
+
+528
+02:22:01,876 --> 02:22:14,876
+Bunun dışında günlük hayatımızda kullandığımız mesela akronimler var. Yıldız Teknik Üniversitesi diyoruz. YTÜ diye yazıyoruz. Aslında burada da ben bir sıkıştırma yapıyorum.
+
+529
+02:22:15,283 --> 02:22:31,844
+Yıldız Teknik Üniversitesi'nde kaç tane karakter var? Yıldız 6, Teknik 6, 12, Üniversite 10 olsun 22 tane karakteri, 3 karakteri indiriyorum.
+
+530
+02:22:31,844 --> 02:22:40,043
+Farkında değilim ama ben orada da bir sıkıştırma aslında yapıyorum. Bunları da unutmayalım.
+
+531
+02:22:43,283 --> 02:23:02,203
+Sadece aklınıza sıkıştırma algoritmaları gelmesin. Günlük hayatta kullandığımız kısaltmalar, akronimler, akronim ayrıdır, kısaltma ayrıdır. Doktor, DR diye yazarız bir kısaltmadır. Akronim değildir. Akronimde her karakter bir kelimeye karşılık gelir.
+
+532
+02:23:02,203 --> 02:23:09,164
+İşte bu tık kodlamalar bir sıkıştırmadır aslında.
+
+533
+02:23:10,195 --> 02:23:34,296
+Ben ASCII'de A'yı 8 bit ile ifade ediyorken, bakın şurada 6 bit ile ifade ediyorum. Burada bir karakteri 3, 4, bu çizgi, çizgi neydi? 3 birim geliyor. Aslında bu da çizgide 3 birimse nokta gibi düşünsem 6 birimle ifade ediyorum.
+
+534
+02:23:39,987 --> 02:24:04,347
+Bundan sonra bir neler var bir bakayım. Bir başka sıkıştırma yöntemi, Spar String Sıkıştırma Yöntemi. Bu da aslında çok enteresan gelen bir sıkıştırma yöntemi bana. Çok ilgimi çekmişti ve bunu yazarken de çok renkli renkli yazmaya çalıştım ki rahat anlatabileyim diye.
+
+535
+02:24:05,012 --> 02:24:12,031
+Şöyle bir elinizde inputunuz olduğunu düşünün. Bu dersin adı Veri Sıkıştırma ve Pazartesi günü yapılıyormuş.
+
+536
+02:24:12,672 --> 02:24:20,312
+Rastgele böyle boşluklar var metnin farklı farklı yerlerinde. Zaten sparse string nedir?
+
+537
+02:24:21,031 --> 02:24:27,152
+Boşluklarla dolu bir metin. Boşlukların çok daha fazla olduğu bir yöntem.
+
+538
+02:24:33,012 --> 02:24:39,352
+Ama ben orijinal haline dönmek istiyorsam doğru olmaz.
+
+539
+02:24:39,352 --> 02:24:45,292
+Ne yapıyoruz? Bu spell string sıkıştırma algoritması şöyle çalışıyor.
+
+540
+02:24:46,172 --> 02:24:54,792
+Bir metin içerisinde bir karakterin geçtiği yere sıfır, boşluğun geçtiği yere de bir vereceğiz.
+
+541
+02:24:55,763 --> 02:25:02,763
+Ve işlemlerin sonuna da sıkıştırılmış olarak teksti atacağız.
+
+542
+02:25:02,763 --> 02:25:08,623
+Ve her bir adım şu level seviyeler.
+
+543
+02:25:09,043 --> 02:25:12,484
+Her bir seviye 4 bitli gruplardan oluşacak.
+
+544
+02:25:12,884 --> 02:25:15,203
+Şimdi L1 seviyesini oluşturalım.
+
+545
+02:25:15,703 --> 02:25:20,824
+Bu karakter 0 koydum.
+
+546
+02:25:20,824 --> 02:25:26,123
+Şurada iki tane boşluk var. Farklı renklerle çizdim. Biri kırmızı, biri mavi.
+
+547
+02:25:26,603 --> 02:25:28,644
+Boşluklar yerine de 1 koydum.
+
+548
+02:25:29,724 --> 02:25:31,224
+Dörtlüğü ayırdım.
+
+549
+02:25:31,507 --> 02:25:52,608
+D var, karakter boşluk. E karakter, R karakter, S karakter. Bu dörtlü de bitti. Sonra İ geldi. İ karakter olduğu için sıfır. N karakter olduğu için sıfır. İki tane boşluk var. İki boşluk yerine bir koydum.
+
+550
+02:25:52,992 --> 02:26:11,412
+Adı 3 karakter var. 3 tane 0 var. Arkasından bir tane boşluk buraya geldi. Burada da mı hata var ya? Hata mı var ben mi yanlış görüyorum?
+
+551
+02:26:20,180 --> 02:26:44,860
+3 tane 3 karakter takıldım şimdi. I yazdım. Şurası I. 3 tane karakter boşluk var. Tamam. 3 tane boşluğumu yazdım. V'yi aldım. 1. E, R, I. 4 tane karakter var. 4 tane 0.
+
+552
+02:26:48,180 --> 02:27:07,959
+Ben bunu size kendim yapayım. Burada hata yapmıştım herhalde. Ya da şöyle yapayım. İsterseniz bugün dersi burada bitireyim. Bu biraz uzun bir konu. Ya da bunu düzeltmem de biraz zaman alacak. Haftaya devam edelim.
+
+553
+02:27:08,979 --> 02:27:10,500
+Tamam hocam.
+
+554
+02:27:10,760 --> 02:27:29,279
+Tamam mı? Bana yalnız hatırlatın. Hem şuradaki hatayı hemen bakayım. Sıpar string sıkıştırmadan başlayacağız. Üç tane yöntem var burada. Onları görüp, information, teoriye geçip ondan sonra da RL ile devam edeceğiz haftaya. Tamam mı?
+
+555
+02:27:29,843 --> 02:27:44,103
+Tamam. Ekser'e numarasını mail adresini yazmayanlar da yaparsa ben de oradan kontrol edeyim. Hadi şimdilik hoşçakalın. İyi haftalar size. Ben de hemen hatalarımı düzelttim. Hoşçakalın.
+
+556
+02:28:04,340 --> 02:28:05,131
+Evet.
