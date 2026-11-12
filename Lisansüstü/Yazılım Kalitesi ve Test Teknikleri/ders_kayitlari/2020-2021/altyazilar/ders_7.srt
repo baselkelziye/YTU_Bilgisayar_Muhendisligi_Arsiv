@@ -1,0 +1,1887 @@
+1
+00:00:36,787 --> 00:00:37,667
+Günaydın.
+
+2
+00:00:43,731 --> 00:00:44,771
+Günaydın Hocam.
+
+3
+00:00:45,192 --> 00:00:45,731
+Günaydın.
+
+4
+00:00:51,828 --> 00:01:01,516
+Bugün öncelikle bu ölçüm değerlendirme konusunda...
+
+5
+00:01:05,459 --> 00:01:07,459
+Slide daha kullanacağım.
+
+6
+00:01:10,459 --> 00:01:11,459
+Bir de
+
+7
+00:01:13,459 --> 00:01:15,459
+üzerinde duracağız.
+
+8
+00:04:58,387 --> 00:05:25,387
+Evet, şimdi slide'ları yükleyeceğim. Ölçüm değerlendirme ile ilgili yazılım mühendisliğinde kullandım. Başka bir slide üzerinde daha. Ölçüm değerlendirme sistemini tekrarlayacağız. Daha önce konuda konuşmuştuk. Geçen hafta konuşmuştuk.
+
+9
+00:05:25,728 --> 00:05:47,728
+Bir de test yönetimi yine daha önce üzerinde durmuştuk. Bir de şimdi sizinle biz 9. hafta diye planlamıştık sınav haftamızı.
+
+10
+00:05:50,708 --> 00:06:04,968
+Lisans sınavlarını 8. hafta yapıyoruz. Bu konuda diğer derslerinizde sınavla ilişkili bir belirleme oldu mu acaba?
+
+11
+00:06:11,891 --> 00:06:18,012
+Net bir şey gelmedi hocam. Mesela bir hocamız haftaya planlıyor ama değişirse haber vereceğim size dedi.
+
+12
+00:06:18,891 --> 00:06:19,572
+Evet.
+
+13
+00:06:20,711 --> 00:06:24,471
+Ama tam sanırım net bir şey yokmuş. Yeni bir sistem gelmiş galiba.
+
+14
+00:06:24,471 --> 00:06:36,591
+Evet. Ben de onun için bu lisansta kullanacağız zorunlu olarak. 8. hafta olduğu için 8. hafta yapmamız şart sınavları.
+
+15
+00:06:37,139 --> 00:06:52,899
+Ama sizinle daha önceden dokuzuncu hafta diye konuştuğumuzu hatırlıyorum. Bir değişiklik olursa konuşuruz tekrar diye bıraktığımızı hatırlıyorum.
+
+16
+00:07:09,908 --> 00:07:25,748
+17 Aralık, belki farklı bir şekilde sınav yapacak. 17 Aralık çok geç. Bir ara sınav şeklinde. Mutlaka yapacağız bir ara sınav bu arada da.
+
+17
+00:07:27,956 --> 00:07:40,436
+Sekize çekmeyelim, o zaman dokuzda kalsın. Bir şekilde bu sınav ortamı, kısa sınav hizmeti vererek de devam edecektir diye düşünüyorum.
+
+18
+00:07:42,436 --> 00:07:51,436
+Sizler de hepiniz çalışan kişiler olduğunuz için böyle çok hızlı bir tarih vermek istemedim.
+
+19
+00:07:55,028 --> 00:08:04,128
+Son dakikada kesinleşti lisansta. Sınav takvimi de yapıldı ama sizde öyle bir sınav takvimi yok.
+
+20
+00:08:06,355 --> 00:08:24,355
+İnsanslar için böyle bir vize sınav takvimi geldi. O yüzden orada da 9. hafta derken 8'e çektik. O sınav takvimine uyarak yapacağız. Sizde öyle bir şey olmadığı için yine...
+
+21
+00:08:31,411 --> 00:08:34,951
+Bunu dokuzuncu haftada bırakalım.
+
+22
+00:08:54,964 --> 00:08:59,284
+İşlemede Banu Hanım 17 Aralık diye verdi.
+
+23
+00:09:00,664 --> 00:09:05,664
+Şeyde de Nizami İttim Bey de ölüm...
+
+24
+00:09:31,539 --> 00:09:32,480
+Tınav yapacağım.
+
+25
+00:09:42,484 --> 00:09:45,484
+Lisanslarda ona göre...
+
+26
+00:09:51,412 --> 00:09:53,272
+Karar vereceğim sizin için de.
+
+27
+00:10:01,971 --> 00:10:05,152
+Bugün dersten önce de gelenler oldu.
+
+28
+00:10:11,764 --> 00:10:16,748
+Mailler olduğu için hani o konuda...
+
+29
+00:10:41,331 --> 00:10:41,831
+Hmm.
+
+30
+00:10:45,043 --> 00:10:47,043
+Ah, ben...
+
+31
+00:11:24,275 --> 00:11:25,836
+Sesim geliyor mu şu anda?
+
+32
+00:11:28,596 --> 00:11:34,596
+Hocam gelip gidiyor da ses ve görüntü problemi var. İki dakika gibi öyledir.
+
+33
+00:11:36,535 --> 00:11:49,596
+Evet, internet sisteminde bir problem oluşuyor galiba. Bende de yazılı bir şey, stabil olmayan durum var diye.
+
+34
+00:11:51,827 --> 00:11:54,227
+Ama şu anda düzeldi sanıyorum.
+
+35
+00:11:58,100 --> 00:12:00,600
+Evet, şu an sesi geliyor hocam ve görüntü.
+
+36
+00:12:00,600 --> 00:12:15,120
+Evet, evet. Tamam, o zaman daha da kötü olacağım. Ben görüntü de belki etkiliyor. Görüntüyü kapatıp slide'ları açayım ve derste başlayalım.
+
+37
+00:12:16,360 --> 00:12:20,940
+Hocam iki dakika önce söylediklerden biraz gelmedi. Tekrarlarsınız iyi olur.
+
+38
+00:12:21,360 --> 00:12:34,200
+Tamam. Görüntüyü kapatınca belki daha iyileşebilir. Bir de slide'ları yükleyeceğim şimdi. O zaman yine kontrol ederiz slide'ların.
+
+39
+00:15:00,083 --> 00:15:09,384
+Kalite, ölçüm ve değerlendirmeleri slide'ını herkes izleyin.
+
+40
+00:15:31,796 --> 00:15:33,836
+Hocam sesiniz gelmiyor sanırım.
+
+41
+00:15:54,355 --> 00:15:55,179
+Yüzün
+
+42
+00:18:55,988 --> 00:18:59,468
+Evet, şu anda slide'ı tekrar paylaştım.
+
+43
+00:19:04,692 --> 00:19:05,532
+Evet, tutam geliyor.
+
+44
+00:20:44,723 --> 00:21:08,364
+Evet, şu anda tekrar paylaştım slide'ı. Özür dilerim, sürekli bir internet problemi yaşıyorum. Şu anda yazılım ölçümü için üçüncü slide'a geldim. Şu anda herkes aynı durumda izleyebiliyor mu?
+
+45
+00:21:11,347 --> 00:21:20,248
+Yazılım mühendisleri için de farklı anlamlar ifade ediyordu.
+
+46
+00:21:20,248 --> 00:21:38,367
+Yani yaptıkları işi kalitesini izlemelerine ve bir sonraki adımda hem maliyet için hem çaba için yani iş gücü için yeni belirlemeler gerçekleştirmelerini sağlıyordu.
+
+47
+00:21:38,836 --> 00:21:48,996
+Yazılım, ölçüm için tanımlamalar üzerinde duracağız bugün.
+
+48
+00:21:48,996 --> 00:21:53,996
+İşte ölçme nedir, ölçüm sistemi nedir, ölçütler nedir?
+
+49
+00:21:54,367 --> 00:22:10,987
+Bunların tanımını birazdan paylaşacağım. Daha önceki haftalarda gördüğümüz metrik tipleri, yazılım ölçümünde kullandığımız metriklerden örnekler vermiştim.
+
+50
+00:22:10,987 --> 00:22:14,748
+Bunlardan bir tanesi haşlat metriğiydi.
+
+51
+00:22:19,059 --> 00:22:37,400
+Bu hesaplama gücünü, program gücünü bulabilmek için kaç tane işlemci var, kaç tane işlenen var ve bunlar döngü içinde mi? Buna dayanarak bir program gücü hesaplaması gerçekleştirebiliyorduk.
+
+52
+00:22:47,059 --> 00:23:13,779
+Ölçüt, bir metrik, sayklomatik kompleksiti, döngüsel karmaşıklık. Döngüsel karmaşıklık, sayklomatik kompleksiti içinde akış grafını kullanıyorduk. Akış grafında düğümler ve kenarlar üzerinden akış grafını oluştururken de her bir kontrol deyimini bir düğüm olarak görüyoruz.
+
+53
+00:23:15,059 --> 00:23:34,500
+Bunları birleştiren akışlarda bir kenar oluyor. Bunlardan yola çıkarak, düğümler ve kenarlardan yola çıkarak ya da grafı çizdikten sonra kapalı bölgeleri sayarak biz neyi hesaplıyorduk burada mahkep ölçüsünde?
+
+54
+00:23:36,339 --> 00:24:04,339
+Bizim programımız içinde ya da işte modülümüz içinde, alt programımız içinde kaç tane yol var, temel yol var? Yani programın akacağı kaç farklı yol var? Bu yolların her birinin anlamı da şu, her bir yol test edilmesi için, her bir yolun test edilmesi için.
+
+55
+00:24:04,339 --> 00:24:12,839
+Test edilmesi için bir veri grubuna ihtiyaç var. Bu veri grubu da test case olarak karşımıza çıkıyor.
+
+56
+00:24:12,839 --> 00:24:23,719
+Eğer biz bunu dışarıdan bakıyorsak, dışarıdan baktığımızda da bu yolların her birine sapacağı farklı senaryolar var.
+
+57
+00:24:24,119 --> 00:24:30,199
+Bu senaryoları kurup kara kutu testinde değer veriyoruz.
+
+58
+00:24:32,339 --> 00:24:48,420
+Buradaki makkep ölçütünden faydalanıp bu algoritmada kaç tane temel yol var onu bulup işlem yapmamız gerekiyor.
+
+59
+00:24:58,548 --> 00:25:07,307
+Bu arada yazılım güvenirliğinden söz etmiştik ama bundan önce...
+
+60
+00:25:07,412 --> 00:25:17,632
+Şu anda slide'da olmayan büyüklük ölçütünden söz etmiştik yine geçen haftalarda.
+
+61
+00:25:17,632 --> 00:25:27,892
+Büyüklük ölçütü de, yani yazılım ne kadar büyüklükte bir yazılım? Bunu sayacağımız en basit yol.
+
+62
+00:25:29,872 --> 00:25:40,012
+Kaç tane satırı var, kaç tane komutu var bu yazılımın? Onu sayarak yazılımın büyüklüğü hakkında bilgi verebiliyorduk.
+
+63
+00:25:49,875 --> 00:26:15,715
+İçin bazı korkular var. Yani bu çok objektif değil. Program etkinliğine göre daha az komut sayısıyla yazabiliriz ama daha çok düşünce gücü kullanmış olabiliriz gibi şeyler var. Haklı olan gerekçeler var bu ölçütü benimsememekte.
+
+64
+00:26:17,748 --> 00:26:30,608
+Bir başka şey de programlama dilleri arasındaki farklılıktı. Ama programlama dilleri arasındaki farklılığı dönüşüm tablosu oluşturarak önüne geçilmiş oldu.
+
+65
+00:26:30,608 --> 00:26:45,608
+Bunun yanında dolaylı ölçüm yapabiliyoruz. Farklı ölçümler yaparak bu ölçümlerin birleşimi olan bir...
+
+66
+00:26:45,748 --> 00:26:50,248
+Sayısal değer bulma yoluna gidebiliriz.
+
+67
+00:26:50,248 --> 00:26:56,248
+Bu da bizim yazılım...
+
+68
+00:26:57,172 --> 00:27:19,892
+Function Point ölçütünden faydalanmamız söz konusu olabilir. Function Point'de, daha önce yine derslerde konuşmuştuk, dosya sayısı, girdi sayısı, çıktı sayısı, sorgu sayısı gibi
+
+69
+00:27:21,824 --> 00:27:32,244
+Daha çok hepiniz çalışma hayatından da bildiğiniz gibi ticari yazılımlarda girdi çıktı ve bilgi saklama.
+
+70
+00:27:32,703 --> 00:27:49,304
+Mümkün olduğu kadar çok bilgi saklama, sonra bu saklanan bilginin raporlanması gibi işlemler daha fazla yapılır. İlk çıkış noktası da bu Function Point'in ticari yazılımlar olmuştur.
+
+71
+00:28:00,703 --> 00:28:15,703
+Function Point Users Group tarafından da yazılım teknolojisindeki gelişmelere bu Function Point'in ayak uydurması için çalışmalar yapılmakta.
+
+72
+00:28:28,703 --> 00:28:41,703
+Sonuçları sonucunda, Faction Point'te neleri değiştirebiliriz gibi çalışmalar yapılmıştır. Hatta ne kadar ticari yazılımlar için uygun olsa da...
+
+73
+00:28:42,291 --> 00:29:09,991
+Gerçek zamanlı uygulamalar için daha iyi çalışır hale getirilmesi de yine çaba sarf edilmiştir. Bunun dışında ölçüm için güvenirlikten bahsetmiştik. Kalite özelliklerinden bir tanesi de doğru sonucun ne kadar güvenilir olduğuysa o zaman ne kadar güvenilir olduğu da
+
+74
+00:29:10,291 --> 00:29:26,571
+Bir takım istatistiksel modeller oluşturup başarı oranı için ne kadar süredir başarılı, hatasız çalışıyor ve diğer bir…
+
+75
+00:29:26,740 --> 00:29:40,800
+Toplam hata sayısı ne kadar güvenirlik düzeyiyle çalışıyor gibi ölçümler yapılmaktadır. Değerler elde edilmektedir.
+
+76
+00:29:42,460 --> 00:29:51,460
+Güvenirlik modelleri de istatistiksel verilere dayanarak yapılan analizler şeklinde görülmektedir.
+
+77
+00:29:53,715 --> 00:30:21,036
+Modelleri de bunlara göre değerlendirebilmekteyiz. Şimdi bu yazılım ölçümü üzerinde başka bir slide üzerinde paylaşım yapacağım. Bu da ölçüm sistemlerini farklı bir açıdan çalışabilmeyi bize sağlayacak.
+
+78
+00:30:40,180 --> 00:30:54,880
+Evet, yazılım kalite ölçütlerini sayısal olarak kalite metriklerini şöyle söyleyebiliriz.
+
+79
+00:30:54,880 --> 00:31:07,059
+Farklı kalite özelliklerini farklı şekillerde ölçmeye çaba sarf etmek.
+
+80
+00:31:07,488 --> 00:31:26,827
+Bunun için kimler çaba sarf etmiş? Geçen hafta bir de farklı bir slide üzerinde, CK metrikleri üzerinde de durmuştuk. Çitember-Kemerer metrikleri biliyorsunuz daha önceki haftalardan da.
+
+81
+00:31:28,723 --> 00:31:44,923
+Nesneye yönelik uygulamalarda bize yazılım kalitesiyle ilişkili bazı bilgiler verebiliyordu.
+
+82
+00:31:44,923 --> 00:31:52,203
+Şimdi biz kalite ölçütleri için sadece Makkol'u görmüştük.
+
+83
+00:31:55,028 --> 00:32:04,028
+Bir üçgen yaratıp, buna göre kullanıcı bakış açısıyla...
+
+84
+00:32:05,587 --> 00:32:25,248
+Bakım yapan bakış açısıyla, çalıştıran bakış açısıyla hangi özellikler var ve bu özellikler nasıl sayılıyor, nasıl hesaplanıyor bunların üzerinde durmuştuk. Metriklerle kalite faktörleri arasında ilişki kurmuştuk biliyorsunuz McCall modelini görürken.
+
+85
+00:32:33,587 --> 00:32:54,587
+Ve buna göre yazılım kalitesi, işlevsellik, uygunluk, güvenlik, güvenirlik, olgunluk, hata bilgisi, kullanılabilirlik ve...
+
+86
+00:32:57,556 --> 00:33:14,556
+Bir sistemden başka bir sisteme taşınabilirliği, yeniden kullanılabilirliği, bakım yapılabilirliği gibi bilgiler vermektedir.
+
+87
+00:33:15,508 --> 00:33:32,087
+Şimdi, yani Makkol ile ISO 9126 arasında kaliteyi ölçebileceğimiz metrikler açısından çok yakın ilişki var.
+
+88
+00:33:37,107 --> 00:33:48,887
+Sınıflara ayırarak bakmış olaya ve her bir sınıftaki kalite faktörünü farklı metriklerle ilişkilendirmiş.
+
+89
+00:33:52,976 --> 00:34:06,615
+Kaliteyi belirleyebilecek özellikleri genel olarak sıralamış. Bunların hangisini nasıl ölçebileceğimiz konusunda farklı yaklaşımlarda bulunmuştur.
+
+90
+00:34:06,615 --> 00:34:15,756
+Mac Canal'da kalite ölçütleri üzerine çalışma yapmış. Bu da iç kalite ölçütleri, dış kalite ölçütleri.
+
+91
+00:34:20,976 --> 00:34:35,235
+Bakım yapılabilen, bakım yaparken önemli olan, çalıştırırken önemli olan, kullanırken önemli olan diye. Kullanırken önemli olanlar, kullanıcının dışarıdan baktığı dış kalite ölçütleridir.
+
+92
+00:34:46,356 --> 00:35:00,155
+Veri yapısıyla ilişkili değerler, Reusability'si çalıştıranlar için de önemli olacak. Birlikte çalışabilirlik özelliği. Bunlar da iç kalite ölçütleri olarak gruplandırılabilir.
+
+93
+00:35:00,155 --> 00:35:13,115
+Yani ISO 9126'ya, MacCola, MacCanal'a baktığımızda aslında çok farklı şeyleri ölçmüyorlar. Sadece sınıflamaları farklı.
+
+94
+00:35:14,356 --> 00:35:21,676
+Çok sınıflama yapmadan hepsi bunların kalite özellikleridir yazılım için diyor.
+
+95
+00:35:21,676 --> 00:35:33,556
+Maccol 3 bakış açısıyla sınıflama yaparak ve bunları da metriklerle ilişkilendirerek daha karmaşık, daha kapsamlı bir model oluşturuyor.
+
+96
+00:35:42,356 --> 00:35:46,836
+Metrikler üzerinde nasıl bir modelleme yaptığını söylüyor.
+
+97
+00:35:47,016 --> 00:35:54,356
+Farklı ağ katsayılarıyla metrik değerlerini...
+
+98
+00:35:56,179 --> 00:36:01,579
+Çarparak ve bunların toplamını alarak bir formül veriyor.
+
+99
+00:36:01,579 --> 00:36:08,839
+MacDonald ise yine Maccol kadar ayrıntılı bir sınıflama yapmıyor.
+
+100
+00:36:09,759 --> 00:36:23,699
+Kalite ölçütlerini, yazılımı geliştirenler için önemli olanlar ve onların müdahale edebilecekleri, bir de dış kullanıcıların, yazılıma dışarıdan bakanların.
+
+101
+00:36:24,179 --> 00:36:30,119
+İstek yapacağı değerler olarak iki gruba ayırıyor.
+
+102
+00:36:30,119 --> 00:36:43,059
+Şimdi baktığımızda bu dış kalite ölçütleri az önce de sözlü olarak ifade ettiğim gibi.
+
+103
+00:36:43,507 --> 00:36:59,447
+Yazılımı kullanılanları ilgilendiriyor. Yani doğruluk, correctness, etkinlik, efficiency, güvenirlik, reliability. Bunların tanımlarına baktığımızda zaten bunları McCall'da da gördük.
+
+104
+00:37:11,507 --> 00:37:26,847
+Sistem kaynaklarına en az oranda kullanımı, güvenirlik reliability, sistemin her koşulda istenildiği gibi çalışması, hatalar arasında ortalama zaman aralığının yüksek olması.
+
+105
+00:37:32,755 --> 00:37:41,615
+Hatta sınıflamasına göre kritik hata boyutunda olmayan, büyük hata boyutunda olmayan hatalar çıkıyorsa iyi.
+
+106
+00:37:43,956 --> 00:37:53,755
+MTBF'de bu hatalar arasındaki ortalama zaman aralığı kavramı, reliability konusunda önemli bir kavram bu.
+
+107
+00:37:54,804 --> 00:38:17,364
+Güvenlik, security, yetkisiz kişiler erişemeli, bütünlük, integrity, veriler ve işlemler arasında tutarlılık olması. Yani integrity özelliği mesela veri tabanında çok en önemli özelliklerden bir tanesi. Bu tutarlılığın olması.
+
+108
+00:38:17,972 --> 00:38:44,192
+Adaptability, uygun uyarlanabilirlik, sistemin değişik uygulamalar ve ortamlarda kullanılabilmesi için, daha az değişiklikle her koşulda kullanılabilmesi, sağlamlık, aykırı girişlere ve güç çalışma ortamlarına karşılık çalışmayı sürdürebilmesi, kullanılabilirlik, kolay kullanılması.
+
+109
+00:38:45,972 --> 00:39:03,992
+Yani bazı, burada da anlatılan bazı metrikler birbirini tamamlar nitelikte. Yani bir kısmı örtüşebilir nitelikte. Kalite ölçütlerini tekrarlamış olduk.
+
+110
+00:39:06,387 --> 00:39:19,587
+İç kalite ölçütlerine baktığımızda bizim daha önce MacCol'da çalışabilirlik sınıfında yer alan Reusability, yeniden kullanılabilirlik.
+
+111
+00:39:19,987 --> 00:39:39,087
+Bakım kolaylığı, maintenance, esneklik, taşınabilirlik, okunabilirlik. Okunabilirlikten kastımız kaynak kodun programlama dili standartlarına uygun hazırlanmış olması ve takip edilebilir olması anlamında.
+
+112
+00:39:44,244 --> 00:39:53,524
+Anlaşılabilirlik, yazılımın sistem, bileşen ve kod düzeylerinde anlaşılabilirliğinin kolay olması.
+
+113
+00:39:59,572 --> 00:40:01,172
+Test edilebilirlikte
+
+114
+00:40:03,731 --> 00:40:19,652
+Test işlemi yaparken aslında izleyebilirlikle ilişkili, test edilebilirlik, anlaşılabilirlikle, okunabilirlikle de ilişkili bir kısmı örtüşüyor demiştik.
+
+115
+00:40:19,771 --> 00:40:25,851
+Buradan da test edilebilirlik, bakım yapılabilirlik birbiriyle örtüşüyor.
+
+116
+00:40:31,731 --> 00:40:59,403
+Öniversite konuyu örneklerle anlatacağız.
+
+117
+00:40:59,603 --> 00:41:07,923
+Bu arada bir ekleme yapacağım.
+
+118
+00:41:14,708 --> 00:41:27,532
+Ölçme, Measuring, Ölçüt, Metrik ve Ölçüm. Bu kavramları da...
+
+119
+00:41:29,780 --> 00:41:49,280
+Bildiğiniz şeyler ama burada tekrar etmekte fayda var. Somut veya soyut bir varlığın sahip olduğu bir özelliğini sayısal veya derecelendirilmiş bir ifade haline getirmek, bir veri haline getirmek, ölçme.
+
+120
+00:41:53,460 --> 00:42:05,340
+Varlığın sahip olduğu bir özelliğe bir sayısal değer vermek. Mesela işte ara sınav çok zordu. Burada bir derecelenmiş değer var.
+
+121
+00:42:05,728 --> 00:42:22,728
+Peki ölçüt metrik nedir? Ölçüt metrik de varlığın ölçülebilecek özelliğini ölçme şekli, mesela sıcaklığı nasıl santigratla ya da Fahrenheit ile ölçüyorsak,
+
+122
+00:42:32,755 --> 00:42:59,576
+Yazılımın, kaliteli yazılımın bir özelliğini de farklı birimlerle ölçüyoruz. Mesela yazılımın büyüklüğü. Yazılımın büyüklüğünü ölçtüğümüzde bir sayı veriyoruz mesela. Bir ölçüm sonucu veriyoruz. Bir büyüklük ölçme işlemi yapıyoruz.
+
+123
+00:43:00,148 --> 00:43:03,148
+Büyüklük ölçme işleminde...
+
+124
+00:43:04,596 --> 00:43:32,336
+Ölçüt olarak K-Log kullanıyoruz. Diyelim ki bin kod satır ölçütünü. Ölçüm de sizin gereksinim analizi yapacağınız proje ödeviniz. Diyelim ki K-Log biriminden K-Log ölçütüyle bir ölçme işlemi yaptınız.
+
+125
+00:43:32,596 --> 00:43:59,536
+Yani saydığınız satırları, komutları. 8000 kod satırı çıktı. 8K log büyüklüğünde bir yazılım seçtim. Onun testini gerçekleştireceğim dediğinizde sizin metreniz K log.
+
+126
+00:44:00,628 --> 00:44:16,188
+Veya biz 3.2 Function Point büyüklüğünde bir yazılım hazırladık veritabanı projenizde.
+
+127
+00:44:16,188 --> 00:44:25,807
+Projemizde dediğinizde veritabanı projenizde 3.2 Function Point.
+
+128
+00:44:26,387 --> 00:44:38,448
+Bu bir ölçüm sonucu. Biriminiz, ölçütünüz, metriniz, function point.
+
+129
+00:44:38,448 --> 00:44:43,448
+Bunun üzerinden farklı...
+
+130
+00:44:45,076 --> 00:45:03,456
+Metrikleri, farklı değerleri sayıp daha sonra bunun üzerinde bir hesaplama yaptınız. Bu da bir ölçme işlemi. Buradaki kavramları biraz daha ayrıntılı gözden geçirmiş olduk.
+
+131
+00:45:12,052 --> 00:45:33,172
+Zor. Yazılımın karmaşık olması, ölçütlerin de sayısal yapısı çok kolay değil. Yazılımı neden ölçeriz? Ne kadar iyi bir ürün ortaya çıkardığımızı anlamak için.
+
+132
+00:45:35,795 --> 00:45:50,555
+Ne kadar zaman ve para harcayacağımızı veya şimdiye kadar harcadığımızı anlamak için ne büyüklükte bir iş yaptığımız ortaya çıksın diye, ne kadar karmaşık bir yazılım hazırladık diye.
+
+133
+00:45:50,555 --> 00:46:00,895
+Yani ölçemediğimiz her bir ilerlemeyi daha sonrası için yönetmemiz zor olacaktır.
+
+134
+00:46:08,115 --> 00:46:18,115
+Ölçme işlemini nasıl yapıyoruz?
+
+135
+00:46:22,420 --> 00:46:31,039
+Bir yazılım üzerinde ölçme işi yapmaya karar verdiğimizde öncelikle biz şunu ortaya koyuyoruz.
+
+136
+00:46:31,039 --> 00:46:41,739
+Bizim yazılımımıza uygun olarak hangi ölçütleri kullanacağız?
+
+137
+00:46:42,228 --> 00:46:53,288
+Hangi ölçütlerle nasıl bir ölçüm yapacağız? Önce tanımlama yapmamız gerekiyor. Önce bir ölçüt sistemine karar verip,
+
+138
+00:46:53,588 --> 00:47:13,148
+Bunun için de yazılımımızın türü ne? Uygulama alanımız ne? Kullanılan yaklaşımımız ne? Mesela gerçek zamanlı bir yazılım ya da bir uygulama yazılımı, kullanılan yaklaşım yapısal programlama ya da nesneye yönelik programlama gibi.
+
+139
+00:47:15,092 --> 00:47:26,472
+Önce tanımlama yapıyoruz. Hangi ölçütü kullanmam gerekiyor? Neyi ölçmek için? Neyi ölçmek istiyorum? Bunu ölçmek için hangi ölçütü kullanacağım?
+
+140
+00:47:26,472 --> 00:47:37,811
+Daha sonra toplama işlemi. Yani tarif edilen, belirlenen, tanımlanan ölçütleri kullanmak için.
+
+141
+00:47:40,148 --> 00:48:07,627
+Gerekli veriyi elde etme. Yani eğer ben Function Point kullanmaya karar vermişsem, girdi sayısını, çıktı sayısını, sorgu sayısını, dosya sayısını elde etmem gerekiyor. Bunları gidip saymam gerekiyor. Bunları bulduktan sonra da hesaplama gerçekleştireceğim bir sonraki adım.
+
+142
+00:48:08,000 --> 00:48:25,000
+Matematiksel işlemlerle ham veri olarak topladığım ölçme sonucunu bu ölçütleri...
+
+143
+00:48:25,364 --> 00:48:35,844
+Yani her ölçüt doğrudan ölçüt değildir. Eğer doğrudan ölçme yapmışsam hesaplama aşamasını bertaraf edebilirim.
+
+144
+00:48:36,307 --> 00:48:56,447
+Ama mesela Function Point kullanıyorsam, veri toplama, girdi sayısını, çıktı sayısını, hepsini sayma aşaması, hesaplama aşaması, bunlardan ölçütü hesaplama aşaması, yorumlama aşaması da elde edilen ölçüm değerinden bir anlam çıkartmak.
+
+145
+00:48:56,447 --> 00:49:04,307
+Yani 3.2 dediğim zaman Function Point değeri, işte gidip bakacağım bu 3.2 ne tür bir...
+
+146
+00:49:04,307 --> 00:49:19,427
+Hangi büyüklükteki function pointler küçük yazılım olarak tanımlanmış, hangisi orta, hangisi büyük? Bu bilgiyi edineceğim.
+
+147
+00:49:21,556 --> 00:49:44,056
+Daha çok şimdiye kadar ben hangi türde, hangi aralıkta ki function point'lere düşen yazılımlar hazırlamışım? Bu her zaman geliştirdiğim yazılımdan büyük mü, daha küçük mü? Ortalama değerin içine mi düşüyor? Bunlara bakmam gerekiyor yorumlamada.
+
+148
+00:49:47,731 --> 00:50:00,692
+Bundan sonra da geri besleme, kullanma, feedback çıkarma, çıkarılan sonuçların yazılım ekibine bildirilmesi, ekibin sonucu kullanarak yazılımı iyileştirmesi.
+
+149
+00:50:02,692 --> 00:50:06,072
+Mesela bir algoritma karmaşıklığı değeri buldunuz.
+
+150
+00:50:09,811 --> 00:50:37,331
+Bir Maccape hesaplaması yaptınız. Taklomatik kompleksite değeri 11 çıktı, 12 çıktı. Ondan sonra geri beslemede gidip kullanıcılara, yazılım geliştiricilere, yazılım ekibine birçok modülünüz 11'in üzerinde, 10'un üzerinde. Siz burada biraz modüller...
+
+151
+00:50:37,811 --> 00:50:52,271
+Ayrımlama yaparak değiştirirseniz, modül karmaşıklığını biraz daha basitleştirirseniz daha iyi olacaktır gibi yorumlar yapabilirsiniz.
+
+152
+00:50:54,032 --> 00:51:01,172
+Şimdi biraz da nesneye yönelik yaklaşım üzerinde duralım.
+
+153
+00:51:03,539 --> 00:51:22,200
+Evet, ben ilk karmaşadan sonra devam ettim, gidiyorum ama herkes takip edebiliyor mu? Görüntü ve ses konusunda bir problem var mı? Tamam, teşekkürler. Başta bir korku yaşadık. Teşekkür ederim.
+
+154
+00:51:25,200 --> 00:51:27,340
+Evet, şimdi...
+
+155
+00:51:27,603 --> 00:51:36,603
+Ölçme ilkeleri konusunda sorunuz var mı? Yani burada ölçme işleminde zaten her bir...
+
+156
+00:51:36,655 --> 00:52:01,655
+Ölçütü metreyi tanımlamıştık, birkaç metrik örneğini daha doğrusu. Bunların her birinde de tanımlama, veri toplama, hesaplama, yorumlama ve geri besleme diye adımlar halinde ilerleyebildiğimiz, yani bu ölçme eyleminin alt...
+
+157
+00:52:02,228 --> 00:52:05,507
+İşlem sıralarını görmüş olduk.
+
+158
+00:52:27,155 --> 00:52:40,556
+Programlamada, nesneye yönelik yaklaşımda, analiz ve tasarım arasında zaten çok böyle ardışık bir geçiş var.
+
+159
+00:52:44,447 --> 00:52:52,147
+Daha analizle tasarımı devam edip giden bir süreç gibi yaşıyoruz.
+
+160
+00:52:52,147 --> 00:52:59,147
+Mesela yapısal yaklaşımda sistem analizini, gereksinim analizini gerçekleştiririz.
+
+161
+00:52:59,827 --> 00:53:09,067
+Veri akış diagramlarını çizeriz. Ondan sonra tasarıma geçtiğimizde bu veri akış diagramlarını yapı diagramına aktarırız.
+
+162
+00:53:10,007 --> 00:53:12,427
+Oysa ki neyse ne yönelik programla?
+
+163
+00:53:12,447 --> 00:53:39,387
+Sınıfları oluşturuyoruz, sınıflar arasında ilişkileri belirliyoruz. Bunları biraz geliştiriyoruz. Mesela ardışıl diagramları, sekunz diagramlarını analizle daha çizmeye başlıyoruz. Böyle bir süreklilik söz konusu. Aynı ölçütleri dolayısıyla hem çözümlemede hem kodlama aşamasında.
+
+164
+00:53:39,856 --> 00:54:03,820
+Bu örneğe bakalım.
+
+165
+00:54:04,019 --> 00:54:29,619
+Uyum eksikliği, Lack of Cohesion gibi değerler üzerinde durmuştuk. Yine nesneye yönelik yaklaşımda en fazla kullanılan olduğu için önce CK Metric Suite ile, CK Metric grubuyla başlangıç yaptım yine.
+
+166
+00:54:32,500 --> 00:54:40,500
+Bu 6 özellik üzerinde durduk.
+
+167
+00:54:58,420 --> 00:55:18,600
+Zayıf yönü, bu ölçüt neye rehberlik ediyor? Bir sınıfın karmaşıklığını belirliyor. Çok sayıda metodu olan bir sınıf çok fazla sorumluluk yüklenmiştir. Dağıtılması uygun olabilir gibi bir yorum getirilebilir.
+
+168
+00:55:25,108 --> 00:55:29,708
+Geniden kullanılabilirliği de düşürdüğünü görüyoruz.
+
+169
+00:55:41,523 --> 00:55:52,423
+Uygulamalarda. Başka metrikler de var. İşte moon metriği falan gibi. Başka metriklerden de söz edebiliyoruz.
+
+170
+00:55:52,423 --> 00:56:03,423
+Burada metrikler konusunu...
+
+171
+00:56:03,476 --> 00:56:22,476
+Bir kez daha gözden geçirmiş olduk. Özellikle ölçüm, ölçüt, ölçme sonucu, ölçme işlemi, metrik, ölçüt ve ölçüm sonucu.
+
+172
+00:56:25,076 --> 00:56:37,436
+diye farklılıkları bir kez daha belirlemiş olduk. Bu konuda sorunuz var mı? Ölçme konusunda, Software Matrix konusunda?
+
+173
+00:56:46,420 --> 00:56:50,380
+Software Matrix konusunda sorunuz var mı?
+
+174
+00:57:17,172 --> 00:57:18,711
+Bu zaman bir ara verelim.
+
+175
+00:57:59,251 --> 00:58:20,532
+Evet, [öğrenci]'tan geri besleme alınca duyuluyor mu diye soracaktım. Tekrar ara verelim dedim ama. Evet, teşekkürler. Bir 10 dakika ara verelim. Ondan sonra tekrar bu test yönetimi konusuna geri döneceğiz.
+
+176
+00:58:26,036 --> 00:58:26,755
+Tamam hocam.
+
+177
+00:58:27,275 --> 00:58:28,436
+Tamam, teşekkürler.
+
+178
+00:58:28,916 --> 00:58:29,576
+Tamamdır hocam.
+
+179
+01:09:58,003 --> 01:10:13,724
+Evet, şimdi yazılım kalite ölçütleri konusunu tamamlamış olduk. Daha doğrusu yazılım kalite ölçütleri üzerinde daha önce durduk ama bugün de eklemeler yaptım.
+
+180
+01:10:13,724 --> 01:10:24,884
+Ve bu konuda önemli olduğu için, niye daha fazla önemli? İlk akademik araştırmalar yazılım mühendisliği üzerine.
+
+181
+01:10:26,068 --> 01:10:39,648
+Bu ölçütler konusunda yapıldı. Çünkü sayma işlemi olduğu, hesaplama işlemi olduğu için mühendislik çalışmalarıyla ilişkili…
+
+182
+01:10:41,587 --> 01:11:05,188
+İlk bu konu üzerinde durulmuş oldu. Daha sonra da mesela yazılım ölçüm sonuçlarını maliyet tahmininde kullanmak, maliyet analizleri yapmak için yapay zeka tekniklerinden, neural network'ten faydalanarak bazı araştırmalar yapıldı.
+
+183
+01:11:11,636 --> 01:11:15,836
+Akademik çalışmalarda da öne çıkan bir konu.
+
+184
+01:11:17,363 --> 01:11:40,823
+Ayrıca yine metriklerle ilişkili test sayısı, testteki hata sayısı gibi reliability ile ilişkili konular. Bunlar da yine akademik ortamda fazla işlenen konular içinde.
+
+185
+01:11:41,619 --> 01:11:57,760
+Evet, şimdi ben tekrar şeyi değiştiriyorum, slide'ı ve yazılım yönetimi konusu üzerinde biraz daha duracağız.
+
+186
+01:13:01,332 --> 01:13:11,271
+Dersin başında çok şey yaşadığımız için ses ve görüntü konusunda problem var mı? Tekrar sorayım size.
+
+187
+01:13:12,051 --> 01:13:12,532
+Yok hocam.
+
+188
+01:13:12,532 --> 01:13:17,532
+O zaman biraz bu...
+
+189
+01:13:18,159 --> 01:13:34,319
+Makale konusunda konuşabiliriz madem ki iletişimde bir problem yok. Makale konularınızı bana gönderdiniz ve birçoğunuza geri dönüş yaptım.
+
+190
+01:13:39,315 --> 01:13:50,956
+Diğer lisans derslerimden de projelerle ilişkili mailler aldığım için makale konusunda geri dönüş yapmadığım var mı?
+
+191
+01:13:51,475 --> 01:13:56,315
+Şeylerde geri dönüş yapmıyorum uygulama konularında.
+
+192
+01:13:56,876 --> 01:14:00,975
+Gereksinin belgelerinizi çoğunuzdan aldım ama geri dönüş yapmadım.
+
+193
+01:14:00,975 --> 01:14:04,095
+Onların içine bakamadım çünkü henüz.
+
+194
+01:14:07,315 --> 01:14:18,036
+Bana makale konusu teklifi gönderip benden cevap alamayan varsa veya göndermeyen varsa onu bilmem gerekiyor. Var mı?
+
+195
+01:14:23,315 --> 01:14:28,876
+Şu anda 17 kişi var derse katılan.
+
+196
+01:14:33,779 --> 01:14:56,860
+Bir makale konusu belirlediniz mi? Bazılarınıza ardışık konuları seçebilirsiniz, biraz daha genişletebilirsiniz. Dolayısıyla iki kişi yapabilirsiniz dedim. Bazı arkadaşlarınız da ben fark ettim birbirine yakın konular seçtiklerini ve birlikte çalışabileceklerini önerdim.
+
+197
+01:15:03,315 --> 01:15:16,055
+Bu şekilde başka teklif gönderen, benden kesin sonuç alamayan var mı ya da göndermeyen var mı?
+
+198
+01:15:46,739 --> 01:16:02,659
+Teklif göndermeyen [öğrenci], [öğrenci], [öğrenci], [öğrenci]. Siz ikiniz birlikte yapacaktınız. [öğrenci] gönderdi. [öğrenci] sen göndermiş miydin?
+
+199
+01:16:08,532 --> 01:16:33,652
+Başka ismi [öğrenci] gönderdi. [öğrenci] [öğrenci]. Gönderdim hocam. Gönderdi. [öğrenci] [öğrenci]'tan geldi. Değil mi? [öğrenci] [öğrenci] da gönderdi. Gönderdim hocam hepsini. Tamam.
+
+200
+01:16:34,387 --> 01:16:39,128
+Tek tek isimden bakıyorum, hala göndermeyen var mı diye.
+
+201
+01:16:44,659 --> 01:16:55,760
+Hocam bir de mail ile şey sormuştum. Biz bu makale çalışmasıyla ilgili nasıl bir çift üretmemiz bekleniyor? Slide mi atlayacağız yoksa bu çalışmayı projemizde mi kullanacağız?
+
+202
+01:16:55,760 --> 01:17:08,059
+Yok. Ben şöyle belirttim. Belki de tam ayrıntılı olarak da açıklamadım.
+
+203
+01:17:11,775 --> 01:17:38,056
+Şimdi önümüzdeki haftada ders yapacağız. Dokuzunda da sınav yapacağız. Bundan sonraki haftalarda, ondan sonra da bir ders yapabiliriz. Ondan sonraki haftalarda bu makalenizi, çalışma konunuzu slide halinde arkadaşlarınızla anlatacaksınız derste.
+
+204
+01:17:38,612 --> 01:17:58,572
+Ve bana da göndereceksiniz bu slide'ı. Bir de şimdi onun için aslında bir takvim belirleyeceğiz. Şimdi daha konularınızı yeni seçtiniz. Önümüzdeki hafta bu takvim belirleme işini yapalım.
+
+205
+01:18:04,467 --> 01:18:15,448
+İlk haftalarda, yani 11. haftadan itibaren anlatabilirim diyen varsa iyi olur.
+
+206
+01:18:18,271 --> 01:18:25,871
+Sizden teklif gelmiş olur. 11. haftadan itibaren sunumlarınız başlayacak.
+
+207
+01:18:25,871 --> 01:18:37,211
+Ama incelediğiniz konuyla ilişkili arkadaşlarınızla bilgi verecek şekilde 15 dakikalık sunumlar şeklinde olacak.
+
+208
+01:18:37,451 --> 01:18:44,412
+Yani 10 dakika, 15 dakikalık o konuyla ilişkili genel bir fikir vermek üzere.
+
+209
+01:18:44,832 --> 01:19:09,072
+Bir de bu derleme makalesini bana dönem sonunda ITPLI formatına uygun olarak bir derleme makalesi haline getirip, review şeklinde bana mail atacaksınız.
+
+210
+01:19:09,427 --> 01:19:35,207
+Yani bu makale ödevinin iki şeyi var. Bir sunum, hiç bu konuyla ilgili çalışmamış kişilere o konuyu anlatacak şekilde yaklaşık 10 slide ile ifade edecek, özetleyecek şekilde.
+
+211
+01:19:37,908 --> 01:19:51,648
+Bir taraftan da bir yayın hazırlama, bir formata göre yayın hazırlama şeklinde bana makale şeklinde Türkçe olarak göndereceksiniz.
+
+212
+01:19:51,648 --> 01:20:05,048
+Bu referansı verme, özetini yazma, anahtar kelimesini yazma şeklinde bir hazırlık yapmış olacaksınız bilimsel bir yazı oluşturarak.
+
+213
+01:20:06,228 --> 01:20:07,228
+Oh.
+
+214
+01:20:07,636 --> 01:20:26,136
+Burada şimdi konularınız farklı farklı. Yani bazılarınızın mesela işte Transaction Software Engineering gibi, Software Quality gibi daha böyle kapsamlı bir makale seçmişsiniz.
+
+215
+01:20:26,136 --> 01:20:35,636
+15 sayfalık önce konuyla ilgili biraz teorik bilgi verip ondan sonra bir uygulama, araştırma yapıp onun sonuçlarını alıp.
+
+216
+01:20:35,636 --> 01:20:48,216
+Anlatan makaleler. Bazılarınızınki öyle. Öyle bir makale seçen, konuyu anlamak üzere başka kaynaklardan da, temel kaynaklardan da bir giriş yapabilir.
+
+217
+01:20:48,216 --> 01:20:54,216
+Ama onların yaptığı çalışmayı da özetleyerek, yani daha çok o makaleyi...
+
+218
+01:20:56,528 --> 01:21:02,068
+Nasıl anladığını belirten bir özet çıkararak kendi makalesini oluşturacak.
+
+219
+01:21:02,768 --> 01:21:10,587
+Ama bazılarınız başlangıç olarak seçtiğiniz yazı bildiriler.
+
+220
+01:21:11,475 --> 01:21:37,420
+Bazı konferanslarda çıkan yayınlardan 5 sayfalık, 6 sayfalık yayınlar. Böyle bir şeyse, yani daha giriş mahiyetindeyse, o zaman başka kaynaklardan da konuyu genişletip, sadece onunla bırakmayıp, başka kaynaklarda da tam...
+
+221
+01:21:37,684 --> 01:21:44,543
+Sizin okuyup anladığınız bir review yazısı hazırlayacaksınız.
+
+222
+01:21:46,244 --> 01:21:51,724
+Hazırlayacağınız makalede bu çeşit farklılıklar olabilir.
+
+223
+01:21:53,984 --> 01:21:54,724
+Anlaşıldı mı?
+
+224
+01:21:57,463 --> 01:21:59,443
+Evet hocam, anlaşıldı hocam.
+
+225
+01:22:04,443 --> 01:22:05,387
+Yalnız...
+
+226
+01:22:05,524 --> 01:22:27,664
+Yabancı uyruklu olan üç kişi varsınız. Sizler şey yapabilirsiniz, İngilizce yazabilirsiniz. Hani IEEE makalesi, IEEE formatında makale yazacaksınız diyorum ya bana göndereceğiniz. Onlar İngilizce olabilir.
+
+227
+01:22:29,344 --> 01:22:30,504
+Tamam hocam, teşekkür ederim.
+
+228
+01:22:31,347 --> 01:22:53,967
+Yani burada iki hedefim var. Bir tanesi bu sunumlarla derste bu ders konusundaki yeni yaklaşımları, işte hepinizden 2015 sonrası makaleler seçmenizi istemiştim. Yeni yaklaşımları birbirinize haberdar etmek.
+
+229
+01:22:57,235 --> 01:23:10,235
+Bir diğeri de, bana göndereceğiniz yazılı makalede de yüksek lisans dersi olduğu için akademik eğitime başlamış oluyorsunuz.
+
+230
+01:23:10,235 --> 01:23:14,235
+Bu çerçevede...
+
+231
+01:23:14,836 --> 01:23:27,876
+Bu dersin konusuyla ilişkili bir bilimsel yayın hazırlığını gerçekleştirmiş olmanız. İlk baştaki hedefim de zaten.
+
+232
+01:23:28,287 --> 01:23:46,167
+Dersin konusuyla ilişkili dergi ve konferansları araştırmanız olmuştu. Aslında bu sizin sınıfta bazı senelerdeki şeylerden daha iyi gitti. Yani çok genel araştırmalar yapmadınız. Konuyla ilgili dergilerden.
+
+233
+01:23:46,739 --> 01:24:06,559
+Yola çıkarak konu seçimi yaptınız. Umarım bundan sonraki adımlarınızda bu makale ödeviyle ilişkili iyi gidecektir. Yani seçim konusunda şimdiye kadar memnunum birçok seçimden.
+
+234
+01:24:12,180 --> 01:24:21,860
+Bu makale projesiyle ilişkili başka aklınıza takılan bir şey var mı? Başka bir şey var mı?
+
+235
+01:24:30,195 --> 01:24:46,136
+O zaman devam ediyorum derse. Bir de sizden istediğim, önümüzdeki haftaya kadar bu makale projenizde, şimdi bu hafta gereksinin belgesi hazırlıyordunuz. O yüzden makaleyle ilgili çalışma yapamamış olabilirsiniz.
+
+236
+01:24:58,195 --> 01:25:08,675
+İsteyen sunabilecek duruma gelecek olan var mı? Onu bana bildirin. Ona göre programımızı yapacağız.
+
+237
+01:25:36,307 --> 01:26:03,728
+Sayfa konusunda, IEEE formatında bana vereceğiniz için sayfa sayısında, IEEE formatı biraz sıkışık olduğu için 3,5-4 sayfa olsa iyi olur.
+
+238
+01:26:05,460 --> 01:26:08,539
+Yani o kadar tutar incelediğiniz makaleler.
+
+239
+01:26:15,220 --> 01:26:35,460
+Tabii konu hoşuna gidip de daha ileri bir çalışmaya götürmek isteyen varsa o zaman onu ayrıca değerlendirebiliriz. Bir de iki kişi yapanlar var. Onlar biraz daha kapsamlı bir çalışma oluşturursa daha iyi olur.
+
+240
+01:26:41,203 --> 01:26:47,523
+Evet, devam edebiliriz o zaman.
+
+241
+01:26:53,587 --> 01:26:59,587
+Evet, test yönetimi konusu üzerinde durmuştuk. Test yönetiminde...
+
+242
+01:27:07,315 --> 01:27:26,355
+Şu adımları tekrar hatırlayalım. Test metodolojisini ortaya çıkarıyoruz. Test planını gerçekleştiriyoruz. Test tasarımını yapıyoruz ve testin gerçekleştirilmesini sağlıyoruz.
+
+243
+01:27:31,283 --> 01:27:47,283
+Şu aynı dönemde test raporu oluşturuluyor. Test sonuç raporu, testin gerçekleşme raporu ve sonuç raporu. Test yönetimi sırasında...
+
+244
+01:27:49,492 --> 01:27:59,311
+Test spesifikasyonu oluşturma, test spesifikasyonu dediğimiz zaman testle ilişkili ayrıntılı belgeleri kastetmiş oluyoruz.
+
+245
+01:27:59,311 --> 01:28:11,452
+Testle ilişkili ayrıntılı belgelerde neler var? Test planları, test senaryoları, test işlemleri, gerçek test sonuçları ve referanslar.
+
+246
+01:28:16,115 --> 01:28:28,396
+Test planıydı. Önce bir plan oluşturuyoruz. Hangi tür testler yapacağız? Zaman planımız nedir? Giderimiz ne olacak? Nasıl bir ortam kaynaklar kullanacağız?
+
+247
+01:28:31,347 --> 01:28:45,347
+Daha sonra test senaryolarını oluşturuyoruz. Aslında bu test tasarımında yaptığımız şey, nasıl bir test tasarlıyoruz, test verisini nasıl hazırlayacağız? Test işlemlerimize baktığımızda...
+
+248
+01:28:47,699 --> 01:28:58,859
+Testin hedefi, nasıl bir bütünlük testi oluşturduk, hangi modüller test edildi, hangi teknikleri kullandık?
+
+249
+01:29:01,268 --> 01:29:29,268
+Test verisi olarak kullandığımız ve bütün bunlardan beklenen sonuçlar, yani testten beklenen sonuçlar neydi? Gerçek test sonuçlarımız nelerdir? Ve kullandığımız referanslar gibi bir test spesifikasyonu, işte sizin de projenizde bir test spesifikasyonu yaratmanız gerekiyor, uygulama projenizde.
+
+250
+01:29:29,268 --> 01:29:42,768
+Test yönetimi içinde IEEE standardı var. Test dokümanı nasıl hazırlanır şeklinde.
+
+251
+01:29:46,996 --> 01:29:58,976
+Test spesifikasyonu da bizim konfigürasyon, yazılım konfigürasyonumuz içinde yer alacak belgelerden bir tanesi.
+
+252
+01:29:58,976 --> 01:30:06,976
+Ve test spesifikasyonu yazılır, incelenir, incelemeye dayalı düzeltme olabilir ve bu tekrar...
+
+253
+01:30:09,203 --> 01:30:13,443
+Hangi aşamada yapıldıysa bu baseline olarak tanımlanır.
+
+254
+01:30:14,543 --> 01:30:24,564
+Konfigürasyon yönetiminde üzerinde duracağımız bir yapı ile karşı karşıya oluyoruz.
+
+255
+01:30:24,564 --> 01:30:28,564
+Test planımızda...
+
+256
+01:30:31,283 --> 01:30:43,823
+Neler vardı? Test planımız üzerinde geçen haftada durmuştuk. Test stratejisi ve test edilecek öğeler, doğrulama yöntemleri,
+
+257
+01:30:44,435 --> 01:31:12,435
+Testlerin tamamlanma kriterleri, hata ve test sonuç raporlama. Yani testi tamamladığımızı nereden anlayacağız? Test sorumlulukları kimler sorumlu testten? Testi kim gerçekleştirdi? Test ortamımız nedir? Eleman ve eğitim ihtiyacımız nedir?
+
+258
+01:31:12,435 --> 01:31:27,095
+Test takvimimiz nedir? Test takvimi bizim proje takvimimiz gibi bir GAT diagramıyla belirteceğimiz bir şey. Risk yönetimimiz. Biraz risk yönetimi üzerinde de bugün duralım aslında.
+
+259
+01:31:27,796 --> 01:31:48,496
+Proje yönetimi dersi alanlar için bu daha nettir. Risk yönetimi nedir diye. Biz nasıl ki yazılım geliştirme projesinde projenin riskleri nedir diye bir risk belirliyorsak,
+
+260
+01:31:51,923 --> 01:32:15,103
+Test planı oluşturuyoruz ama testi normal koşullar çerçevesinde gidecek şekilde oluşturuyoruz test planımızı. Ama bu test işlemi sırasında riskler olabilir. Bu riskleri tarif etmemiz gerekecek ve testin çıktıları neler olabilir?
+
+261
+01:32:19,923 --> 01:32:44,603
+Bu, test planını biraz daha daraltabilirsiniz. Her birisi için çok ayrıntı vermeyebilirsiniz. Ama böyle bir plan yapısını yaklaşık olarak oluşturacaksınız. Test senaryosu dediğimizde test senaryosu için de bir belge oluşturacağız. Yani kullandığımız, bizim kullanmayı tasarladığımız ilk başta.
+
+262
+01:32:46,260 --> 01:33:04,260
+Gerçekleştireceğimiz her bir test için test verisi nasıl hazırlanıyor? Test verisini hangi senaryoya göre hazırlıyoruz? Test senaryosu, adı kimliği. Mesela bir öğrenci sistemi...
+
+263
+01:33:06,079 --> 01:33:23,819
+Uygulaması ise test senaryosunun adı, kimliği, ilk üniversiteye gelen öğrencilerin giriş bilgilerinin alındığı uygulamanın kullanıcı testi mesela, test senaryosu.
+
+264
+01:33:23,819 --> 01:33:33,299
+Senaryo bu, gereksinim analizindeki yüz kezlerden bir tanesinin test edilmesi.
+
+265
+01:33:34,355 --> 01:33:51,175
+Bu senaryonun yazarı ve tarihi nasıl test edilecek? Hangi gereksinime ilgili? Ya da doğrudan doğruya iç test şeklinde ise testin amacı nedir?
+
+266
+01:33:51,175 --> 01:34:00,435
+İşte algoritmadaki hangi yolu denemek üzere mesela test gerçekleştirecek? Ön koşul ve varsayımlar nelerdir?
+
+267
+01:34:01,876 --> 01:34:27,836
+Testin girdileri nelerdir? Test senaryosu adımları nelerdir? Beklenen sonuçlar nelerdir? Bu bir belge olarak kaydedilecek ki sonra konfigürasyon belgesi içine, yazılım konfigürasyonu içine bu test senaryo belgesi de yerleştirilecek şeylerden birisi, spesifikasyonun içindeki elemanlardan birisi.
+
+268
+01:34:29,011 --> 01:34:38,211
+Bu da test spesifikasyonu içindeki iki belgeye örnek vermiş olduk.
+
+269
+01:34:38,528 --> 01:34:57,648
+Test çalışma ekibi yapısı, testçi bağımsız olsa daha iyi olur. Eğer böyle bir imkan var da ayrı bir grup kurabiliyorsak daha iyi. Testin hazırlıklarını yapmak, yürütmek. Baktığımızda sektörde birçok kurumda ayrı bir test ekibi var.
+
+270
+01:35:03,188 --> 01:35:11,347
+İlk derslerimizde de dediğim gibi sektörde de böyle bir ihtiyaç var yaklaşık 10 sene önce.
+
+271
+01:35:17,492 --> 01:35:32,492
+Dersi olarak çok uzun yıllardır bizim üniversitede veriliyor ama lisans dersi olarak 10 sene önce sektörden gelen bir istekle de lisans dersi olarak bunu koyduk.
+
+272
+01:35:34,072 --> 01:35:36,492
+Birçok kurumda test ekibi...
+
+273
+01:35:37,631 --> 01:35:51,911
+Ayrı bir ekibin yapması daha uygun. Testlerin yürütülmesi, hataların yazılımcıya bildirilmesi, izlenmesi ve test sonuçlarının raporlanması bu test grubunun görevi.
+
+274
+01:35:52,340 --> 01:36:14,340
+Testçi ne zamana kadar optimum test miktarı? Az önce demiştim, mesela test sayısıyla ilişkili de çok araştırma yapılır. Araştırma alanlarından bir tanesi. Çünkü sayısal işlere dayanıyor. Kaçırılan bug sayısı mutlaka kaçırılan olacak ama bunu en aza indirmek hedefleniyor.
+
+275
+01:36:14,340 --> 01:36:20,340
+Test maliyetinin de çok yükseğe çıkmaması isteniyor. Bu ikisinin kesişim noktası.
+
+276
+01:36:20,340 --> 01:36:34,700
+Bu noktasını bulabilmek hedefleniyor. Bunun için de yine bizim bu uygun test sayısını tahmin etmek, karar vermek için yaptığımız araştırmalarda.
+
+277
+01:36:35,220 --> 01:36:51,220
+Yine burada da yapay zeka yöntemleriyle birleştirerek, yapay zeka yöntemlerinden faydalanarak yine bu optimum test sayısını bulabilme için araştırma çalışmalarımız var.
+
+278
+01:36:56,627 --> 01:37:16,627
+Yazılım-Yaşam Döngüsü içindeki yerine bakmıştık. Burada da planlama sırasında, gereksinim analizi sırasında daha başlayarak sistem test planı için daha yukarıdan bakarak...
+
+279
+01:37:17,460 --> 01:37:45,100
+Bir planlama gerçekleştiriliyor. Kalite planı oluşturuluyor. Gereksinim analizi sırasında alt sistemin test planları gerçekleştiriliyor. Yani gereksinim analizi sırasında 100 geç senaryoları belirlerken bir taraftan da onların test senaryolarını oluşturmaya başlıyoruz. Tasarım sırasında modüllerin test planı, test tanımları yapılıyor.
+
+280
+01:37:45,460 --> 01:38:03,940
+Gerçekleme sırasında artık birim testi o zaman yapıyoruz. Bütünlük testini de. Bunlara tek tek de sistem testi uygulayabiliyoruz. Yani yaşam döngüsü boyunca sınava etkinlikleri sadece en sonunda değil.
+
+281
+01:38:07,252 --> 01:38:17,652
+Yazılım, teslim sonrasında kalitenin sağlanması üzerinde, bakım üzerinde durmuştuk daha önceki haftalarda.
+
+282
+01:38:17,652 --> 01:38:24,112
+Şimdi biraz test planı içinde de geçiyor.
+
+283
+01:38:25,592 --> 01:38:30,652
+Şimdi bu bakımla ilişkili şeylerde...
+
+284
+01:38:31,731 --> 01:38:54,451
+Konfigürasyon üzerinde duruyoruz. Konfigürasyonu önümüzdeki haftalarda geliştireceğiz. Şimdi risk yönetimi geçti. Yani risk şu test planı içinde, testle ilişkili risk yönetimi de geldi burada.
+
+285
+01:38:58,448 --> 01:39:08,748
+İçinde de geçen risk yönetimi vasıtasıyla biraz risk yönetimi üzerinde duralım.
+
+286
+01:39:43,604 --> 01:40:05,104
+Yazılım risk yönetimi üzerinde duralım. Riskle ilgili çalışmalarımız. Bir, risk gerçekleşti. Gerçekleşince buna nasıl çözüm bulacağız?
+
+287
+01:40:06,260 --> 01:40:25,519
+Bir de risk gerçekleşmeden önce nasıl önlemeye çalışacağız şeklinde iki farklı çalışma alanı var riskle ilgili.
+
+288
+01:40:26,163 --> 01:40:51,063
+Yani risk meydana geldikten sonra baştan bir plan yaparız. Bu risk ortaya çıkarsa bunu şöyle, yani B planı dediğimiz şekilde, işte bununla karşılaştık, o zaman B planını uygulayacağız. Bu değil bizim uğraşacağımız risk yönetiminde. Risk maddelerini belirliyoruz.
+
+289
+01:40:52,243 --> 01:41:03,963
+Şu konularda problem çıkabilir diye o problemlerin ortaya çıkmaması için hep onları izliyoruz.
+
+290
+01:41:04,756 --> 01:41:28,576
+Bununla ilgili ortam yaratıldı mı, ortam yaratıldı mı, problem çıkabilir mi diye. Bu riskin gerçekleşmemesini sağlıyoruz. Gerçekleşmesini önlemeye çalışıyoruz. Bu proaktif yaklaşımlar. O zaman önce risk tanımını yapalım.
+
+291
+01:41:29,043 --> 01:41:44,143
+Riskte bir defa olasılıklar çok önemli. Bu arada yazılım risk yönetimi slide'ı izleyebiliyor musunuz?
+
+292
+01:41:44,143 --> 01:41:47,683
+Evet hocam.
+
+293
+01:41:49,823 --> 01:41:51,663
+Olasılık önemli.
+
+294
+01:41:52,435 --> 01:42:02,215
+Bu riskin ortaya çıkma olasılığı nedir?
+
+295
+01:42:02,676 --> 01:42:26,916
+Ama %100 değil tabii ki. %100 olsa şu anda böyle bir problemle karşı karşıyayız. İşte reaktif duruma geçeriz. İlk başta riski tanımlarken bunun ortaya çıkma olasılığı nedir? Sonra kayıp, risk ortaya çıktığında istenmeyen sonuçlar ve kayıplar doğurur.
+
+296
+01:42:29,971 --> 01:42:48,652
+Bu da bir kayıp ortaya çıktığında bizim projemize, işte burada test mesela planladığımız, testle ilgili planlarımızı ne kadar kayba uğratır?
+
+297
+01:42:49,555 --> 01:42:54,515
+Ne kadar kayıp doğurur bu ortaya çıktığında?
+
+298
+01:42:55,416 --> 01:42:58,795
+Buraya yazmadığım üçüncü bir şey daha var. O da gelecek.
+
+299
+01:42:59,115 --> 01:43:03,615
+Yani gelecekle ilişkili tahminler yapmamız gerekiyor.
+
+300
+01:43:03,735 --> 01:43:05,355
+Yine problem şu anda yok.
+
+301
+01:43:05,355 --> 01:43:14,095
+Ama daha sonra, ne kadar sonra bunun ortaya çıkma olasılığı var?
+
+302
+01:43:14,560 --> 01:43:31,620
+Yani gelecekle ilişkili de bir takım tahminler yapmamız gerekiyor. Bu risk ortaya çıkar mı, çıkmaz mı tanımlayabilmek için. Yani riskin tanımında olasılık, kayıp ve gelecek kavramları.
+
+303
+01:43:32,032 --> 01:43:54,971
+Üzerinde duruyoruz. Proje riskleri, teknik riskler, iş riskleri gibi risk çeşitleri olabiliyor. Farklı risk sınıflandırmaları var. Risklerle ilişkili Presma'nın eski baskılarında
+
+304
+01:43:55,391 --> 01:44:14,871
+Roger Pressman'ın Software Engineering kitabının eski baskılarında çok ayrıntılı bir risk sınıflaması vardı. Proje yönetimiyle ilişkili risklerde bir projeye başlıyoruz ama hangi tür risklerle karşılaşabiliriz?
+
+305
+01:44:22,195 --> 01:44:39,416
+Müşteriyle ilişkili riskler, personelle ilişkili riskler, yazılım ortamı riskleri gibi süreç riskleri.
+
+306
+01:44:39,823 --> 01:45:00,283
+Bunların hepsi yazılım geliştirme ile ilişkili. Yani seçtiğimiz süreç modeli ilk defa kullandığımız model mi? Bizim uygulamamıza uygun mu? Yine işletmecilik riskleri, bu yazılım şimdiye kadar geliştirdiğimiz yazılımlardan farklı mı?
+
+307
+01:45:02,515 --> 01:45:20,615
+Bu yazılım şirket için, şirketin hayatta kalma nedeni mi olacak? O zaman daha fazla risk olabilir bu yazılım için gibi.
+
+308
+01:45:26,384 --> 01:45:45,663
+Sınıflar Organizasyonu gibi birçok yerde risklerle ilişkili sınıflama örnekleri de var. Ben şimdi söylediklerimi Roger Presman'ın eski kitabındaki sınıflamayı belirterek sayıyorum.
+
+309
+01:45:49,775 --> 01:45:55,676
+Yazılım geliştirme ile ilişkili riskler. Müşteri tarafı var.
+
+310
+01:45:57,427 --> 01:46:25,427
+Ne kadar risk oluşturuyor? Birlikte çalışma yapıyor mu, yapmıyor mu? Verdiklerimizi kontrol ediyor mu? Ekibin içinde yer alıyor mu? Süreçle ilişkili riskler. Sürecimiz Ecail ise Ecail'e göre bazı riskler olabilir. Ecail'in özelliğinden kaynaklanan. Waterfalls'da başka riskler olabilir. Süreçle ilişkili riskler. Yazılım geliştirme ortamıyla ilişkili riskler.
+
+311
+01:46:25,427 --> 01:46:35,587
+İlişkili riskler, teknik riskler, donanımla, altyapıyla ilişkili riskler.
+
+312
+01:46:38,260 --> 01:47:05,599
+İnsan bizim çalışma alanımızın en önemli şeyi, tek önemli kaynağımız insan. Çalışanlarla ilişkili riskler var mı? İşte test için mesela, test ekibinin en önemli üyesinin işten ayrılması, test ekibiyle yazılım geliştirme ekibinin belli bir koordinasyonda çalışamaması gibi.
+
+313
+01:47:06,260 --> 01:47:27,380
+Riskler. Bir de bütün bu yazılım geliştirme ile ilişkili risklerin dışında bütün işlerle ilişkili olabilecek olağanüstü durumlar riski.
+
+314
+01:47:27,891 --> 01:47:47,992
+Bu da mesela yangın, sel, deprem gibi şeylerin olması. Bu da olasılık kayıp nezdinde, olma olasılığı düşük olan.
+
+315
+01:47:48,532 --> 01:48:13,292
+İş hayatında diğer riskler daha fazla karşılaşılabilir ama bunlar daha azdır ki son dönem için biraz zor. Olasılığı düşük ama olduğunda kaybı yüksek olan riskler gibi risk yönetiminde önce riskleri belirliyoruz.
+
+316
+01:48:16,180 --> 01:48:33,320
+Bu konuda gerçekleştirirken, proje riskleri, proje planını, mali, personel riskleri, bütçe riskleri, bunları ben Presman'a göre söylediğim için zaten ayrı ayrı söyledim.
+
+317
+01:48:33,684 --> 01:48:59,684
+Teknik riskler, mesela son teknolojide bir geliştirme ortamının, bir case aracının kullanılmış olması bazen risk olur. Çünkü daha önce bunu kullanmadık, problem yaratabilir. İşletme riski bu ürüne talep olur mu? Pazarlama ekibi satış taktiğini biliyor mu bu konuda?
+
+318
+01:49:00,148 --> 01:49:16,148
+Şimdiye kadar değişik, şimdiye kadarkinden değişik bir ürün olabilir. Risk tablosu oluştururuz riskleri belirledikten sonra. Risk tablosunda da...
+
+319
+01:49:20,564 --> 01:49:24,544
+Risklerin çeşitleri.
+
+320
+01:49:26,739 --> 01:49:38,420
+Herkes riskleri alt ürünlere ayırarak bunların olasılıkları düşük, orta, yüksek diye tanımlanabilir ya da sayı olabilir.
+
+321
+01:49:38,420 --> 01:49:52,759
+Bu riskin gerçekleşme olasılığı %10, %30 gibi sayı da verebilir ya da düşük, orta, yüksek gibi kategoriler de oluşturulabilir.
+
+322
+01:49:53,259 --> 01:49:54,739
+Riskin etkisi ne olur?
+
+323
+01:49:54,739 --> 01:50:18,411
+Bu örneğe bakalım.
+
+324
+01:50:18,452 --> 01:50:44,332
+Ve şimdi bütün riskleri sıraladık. Riskleri sıraladıktan sonra olasılık ve etki çarpımı riskin önemini belirtiyor. Olasılığı düşük, etkisi yüksek. İkisini çarparak belirliyoruz. Riskin önemi.
+
+325
+01:50:44,819 --> 01:51:04,819
+O zaman bunu da yine sınıflayarak oluştururuz. Riskin önemi yüksek, orta, düşük diye. Burada da düşük olanları çıkarıp…
+
+326
+01:51:05,460 --> 01:51:18,260
+Bunları takip edeceğimiz riskler olasılık ve etkisi yüksek olacak. İkisinin çarpımı yüksek ve orta olacakları takibe alıyoruz.
+
+327
+01:51:27,507 --> 01:51:46,847
+Ayrı sayfa oluşturuyoruz. Bunların takibe alınması, hangi tarihte belli milestone'lar var projelerde, aynı şekilde test adımları içinde, önemli alt başlıklarımızda.
+
+328
+01:51:46,847 --> 01:51:54,967
+Bu riskin ne durumda, önem derecesi?
+
+329
+01:51:55,155 --> 01:52:21,076
+Ve bunları takibe alacağız. Bir de bu risk her bir risk için önlem tablosu oluşturacağız. A riske diyelim ki, A riske için önlemimiz ne olacak? Mesela test ekibindeki personelin işten ayrılması.
+
+330
+01:52:21,524 --> 01:52:45,944
+Peki bu işten ayrılma işi MyStone'larda bakılacak. Nasıl? Bir takvime göre, MyStone takvimine göre hangi zaman diliminde bu riskin olasılığı ve etkisi değişti mi?
+
+331
+01:52:46,836 --> 01:53:14,716
+Bir de önlemi nedir? Yani bunun olmaması için nasıl bir önlem alınır? Test ekibindeki diğer kişilerden bunun yanına bir yardımcı yetiştirmek ya da test ekibi yönetimindeki önemli kişinin işten ayrılmaması için belli anlaşmalar yapmak gibi.
+
+332
+01:53:14,836 --> 01:53:19,788
+Ücretini arttırmak gibi önlem...
+
+333
+01:53:19,923 --> 01:53:34,843
+Her bir riskin önlemi nedir? Bunu belirliyoruz. Bu önlemde bir maliyeti olacak tabii. Önlemin maliyeti nedir? Bir de yanına onu yazıyoruz.
+
+334
+01:53:45,203 --> 01:53:59,115
+Ne olacak? Onu da belirlemek gerekiyor. Böylece test planındaki risk yönetimi proje...
+
+335
+01:53:59,507 --> 01:54:12,427
+Planındaki risk yönetimi gibi test sürecine bu risk yönetimini yayarak gerçekleştirmek gibi düşünebiliriz.
+
+336
+01:54:13,847 --> 01:54:18,587
+Proje yönetiminde bu risk yönetimi çok önem kazandı.
+
+337
+01:54:27,507 --> 01:54:32,627
+Oluşturulabiliyor. Buraya kadar sorunuz var mı bu konuyla ilişkili?
+
+338
+01:54:41,844 --> 01:54:42,344
+Tamam.
+
+339
+01:54:56,148 --> 01:55:04,407
+Evet, konfigürasyon yönetiminden daha sonra söz edeceğim.
+
+340
+01:55:04,407 --> 01:55:17,407
+Ama konfigürasyon yönetimi için geçen haftalarda bakım üzerinde de durduk.
+
+341
+01:55:25,108 --> 01:55:42,948
+Yazılım nedir sorusunu önce cevaplayalım. Yazılım sadece program değil. Yazılım mühendisliği dersindeki önceki bilgilerinizi kullandığınızda.
+
+342
+01:55:43,507 --> 01:56:02,667
+Yazılım Mühendisliği ürünü olan yazılımlar programlar, belgeler ve veri yapılarından oluşuyor. Yani bir uygulamadaki veri tabanı, uygulamada geliştiren gereksinim belgesi, tasarım ve...
+
+343
+01:56:04,692 --> 01:56:10,112
+Kodlar, hepsi yazılım içine giriyor.
+
+344
+01:56:11,699 --> 01:56:20,079
+Ve bu yazılıma ait bütün maddelere topluca yazılım konfigürasyonu diyoruz.
+
+345
+01:56:20,079 --> 01:56:39,419
+Yani konfigürasyon kelimesini de aslında düzen olarak Türkçeleştirirsek, yazılımın düzeni içinde, yazılımın yapısı içinde hangi elemanlar var dediğimizde, işte bu elemanlar programlar, belgeler ve veri yapıları.
+
+346
+01:56:39,699 --> 01:56:48,339
+Veri tabanı içindeki tablolar, bunların hepsi her birinin tanımı, yazılım konfigürasyonu içinde yer alır.
+
+347
+01:56:48,339 --> 01:56:54,279
+Belgeler dediğimizde test belgesi, gereksinim belgesi.
+
+348
+01:56:54,996 --> 01:57:19,396
+Test spesifikasyonu, tasarım belgesi bunların hepsi yazılımın içinde yer alır. Başka, kullanıcı belgeleri, kullanıcı el kitapları, program kodu, konfigürasyon maddesi, software configuration item, yazılım konfigürasyon yönetimi işlerinin uygulandığı.
+
+349
+01:57:23,028 --> 01:57:27,028
+Yazılım Maddesi.
+
+350
+01:57:29,028 --> 01:57:34,028
+Şimdi her bir Software Configuration Item'ı
+
+351
+01:57:34,515 --> 01:57:52,716
+Yazılım maddesinin Software Configuration, Identification, konfigürasyon tanımında bir veri tabanı uygulaması gibi önce konfigürasyon uygulamasında bu elemanların hepsiyle ilişkili tanımlar kaydediliyor.
+
+352
+01:57:53,655 --> 01:58:00,195
+Tabii ki yani veri tabanı girişi gibi biz bunların hepsini tek tek bir programa elle girmiyoruz.
+
+353
+01:58:02,515 --> 01:58:08,855
+Uygulamaları, yazılım platformlarında.
+
+354
+01:58:09,395 --> 01:58:21,595
+Bunlar yazılım geliştirme ortamında her bir yazılım ürünü geliştirildiğinde, her bir versiyonda bunların tanımını da kaydediyor.
+
+355
+01:58:21,595 --> 01:58:34,175
+Yani ayrıca gidip şu veri tabanındaki şu tabloyu bu uygulamada kullanıyoruz diye sizin sonradan kayıt girişi yapmanıza gerek kalmıyor.
+
+356
+01:58:34,355 --> 01:58:37,395
+Ama konfigürasyon etkinliği olarak...
+
+357
+01:58:37,395 --> 01:58:55,155
+Bu platform ya da proje yönetim tool'u konfigürasyon tanım adımını gerçekleştiriyor.
+
+358
+01:58:55,155 --> 01:59:01,735
+Bu tanımladıkları nedir dediğimde mesela veri tabanındaki bir tablo.
+
+359
+01:59:02,068 --> 01:59:18,967
+Tablo hangi tarihte yaratıldı? En son hangi tarihte bilgi girildi? Aslında genel yapı olarak tanımınla zaman yapıldı. Hangi kolonlar bununla ilişkili, hangi özellikler ilişkili?
+
+360
+01:59:21,395 --> 01:59:35,595
+Daha sonra da hangi uygulamalar bu tabloyu kullanıyor, uygulamalardan buraya referans verildiğinde bu tanımlama gerçekleştiriliyor.
+
+361
+01:59:35,595 --> 01:59:43,375
+Yine bir program modülü için bu modülle ilişkili gereksinim.
+
+362
+01:59:43,891 --> 01:59:58,992
+Ayrıntısı, tasarım bilgisi, hangi tabloları kullanıyor bu modül gibi hem tanım hem ilişkilendirme gerçekleştiriliyor.
+
+363
+01:59:58,992 --> 02:00:07,992
+Konfigürasyon değişiklik kontrolünde da, yazılım konfigürasyonunda her dönemde...
+
+364
+02:00:11,060 --> 02:00:29,940
+Değişiklikler her dönemde derken her yeni versiyonda bazı elemanlarda değişiklik olabilir. Modüllerde, veritabanında. Bu değişiklik işlemini gerçekleştiriyor.
+
+365
+02:00:39,060 --> 02:00:47,860
+Hangi aşamada meydana geldiğini, kaçıncı versiyonu olduğu ile ilişkili ve nerelerde değişiklik yapıldı.
+
+366
+02:00:49,180 --> 02:01:02,840
+Konfigürasyon denetimi ve konfigürasyon raporlama işlemini yazılım konfigürasyonu içinde gerçekleştirebiliyoruz.
+
+367
+02:01:13,524 --> 02:01:39,664
+Bu yazılım konfigürasyonu içinde planlar var. Bu planlarda Software Configuration Management planları standardı ve Software Configuration Management planları rehberi gibi 828 ve 1042 numaralı IEEE standardı.
+
+368
+02:01:40,083 --> 02:02:02,904
+Yazılım Konfigürasyon Yönetimini anlatmaktadır. Kalite Yönetimi ve Kalite Sistem Elemanları 6. kısımda ISO 9004 tarafından belirtilen bir şey, yazılım konfigürasyon yönetimi için.
+
+369
+02:02:04,083 --> 02:02:08,743
+Yazılım Konfigürasyon Yönetimi ve
+
+370
+02:02:20,659 --> 02:02:33,519
+Release Management arasında bir ilişkilendirme var. Release, ürünün çıkışı, ürünün kullanıma alınması, yeni bir release'e geçilmesi.
+
+371
+02:02:49,171 --> 02:02:57,811
+Kullanıma alınması, yeni bir release geçilmesi aşaması, sürüm diyebiliriz biz buna.
+
+372
+02:02:57,911 --> 02:03:07,671
+Sürüm yönetimi, yeni bir sürüme geçme aşaması nasıl olacak?
+
+373
+02:03:07,671 --> 02:03:14,771
+Bunun kuralları nedir? Bu da yine yazılım konfigürasyonuyla.
+
+374
+02:03:15,380 --> 02:03:24,520
+İlişkili her ikisi birlikte kullanılıyor.
+
+375
+02:03:34,771 --> 02:03:56,052
+Klasik süreçlerle ecel süreçler arasında da farklılıklar söz konusu. Ecel yaklaşımda, çevik yaklaşımlarda daha farklı bir sürüm yönetimi gerçekleşebiliyor.
+
+376
+02:04:01,427 --> 02:04:13,288
+Evet, Release Management ile ilişkili yeni bir konu başlığına daha sonra gireceğim.
+
+377
+02:04:13,288 --> 02:04:23,068
+Bu arada bakım işlemleri üzerinde geçen hafta durmuştuk. Yazılım bakımı.
+
+378
+02:04:23,568 --> 02:04:48,268
+Ne kadar, hangi işlemler gerçekleşiyor bakım sırasında. Bakım maliyetini azaltabilmek için Mentibility özelliğini kullanıyoruz. Bakım yapılabilir olması, anlaşılabilir bir sistem yapısında olması.
+
+379
+02:04:49,076 --> 02:05:15,695
+Belgeleri standartlara uygun olarak geliştirilmesi, standart programlama dilleri yapısının kullanılması, test programlarından faydalanılması ve tasarım aşamasında hata bulma ve düzeltme işlemlerinin gerçekleştirilmesi.
+
+380
+02:05:16,224 --> 02:05:36,024
+Bunu sağlamaktadır. Yazılımın bakım ve onarıma elverişliliği de test edilebilirlik, basitlik, değiştirilebilirlik, taşınabilirlik özellikleriyle ölçülüyor.
+
+381
+02:05:36,024 --> 02:05:43,824
+Yani bunları belirten metriklerle yazılımın bakım yapılabilirliği ortaya çıkıyor.
+
+382
+02:06:03,155 --> 02:06:13,115
+O zaman bir iki tane soru sorayım bugünle ilişkili. [öğrenci] duyabiliyor musun? [öğrenci].
+
+383
+02:06:15,455 --> 02:06:16,715
+Evet hocam.
+
+384
+02:06:16,715 --> 02:06:21,855
+Tamam. Risklerden bahsettik az önce.
+
+385
+02:06:22,416 --> 02:06:38,776
+Bir riskin önemini uygulama için ya da test uygulaması için bir riskin önemini nasıl anlarız? Neye bakarak? Nasıl buluruz?
+
+386
+02:06:40,896 --> 02:06:44,416
+O projeye olan etkisiyle...
+
+387
+02:06:45,011 --> 02:06:50,011
+Orantılı değil mi hocam sanki işte birinin ayrılması filan, nasıl etkilen filan?
+
+388
+02:06:50,032 --> 02:06:53,372
+Evet, etki. Sadece etki mi?
+
+389
+02:06:57,460 --> 02:07:08,779
+Projenin gidişatını olan tabii etkisi. Mesela birisinin işten ayrılması ne kadar etkilidir?
+
+390
+02:07:09,599 --> 02:07:14,279
+Tabii, evet hocam. Testlerden bahsetmiştim. Mesela projenin yöneticisi olur.
+
+391
+02:07:14,279 --> 02:07:17,939
+Başka bir üyesi.
+
+392
+02:07:22,260 --> 02:07:29,019
+Doğrudan mı kullanırız önem sıralaması için yoksa bir faktör daha var mı?
+
+393
+02:07:32,260 --> 02:07:36,960
+Yani hocam bu faktörlerden biri olarak kabul edilebilir.
+
+394
+02:07:38,039 --> 02:07:42,079
+Tabii diğer faktörleri tamamen sevmedim hocam.
+
+395
+02:07:42,180 --> 02:07:48,420
+Tabii bir proje sadece bu bir etkenden etkilenir ama tamamen bitecek diye yemeyiz.
+
+396
+02:07:50,036 --> 02:07:56,635
+Bir faktör daha var zaten. [öğrenci] sen söyleyebilirsin herhalde.
+
+397
+02:08:00,500 --> 02:08:04,159
+Bir daha alamadım. Ben mi? Evet, evet.
+
+398
+02:08:05,979 --> 02:08:07,239
+Soruyu bir daha alayım mı?
+
+399
+02:08:07,239 --> 02:08:26,979
+Şimdi risk tablosu oluşturduğumuzda riskin etkisi, projeye etkisi önemini belirtiyor. Sadece bu belirtir mi, başka bir şey daha etkili mi?
+
+400
+02:08:28,404 --> 02:08:48,324
+Yani riskin önemini nasıl anlarız? Bir risk tablosu oluşturuyoruz. Riski yazdık, riskleri sıraladık. Riskin etkisini yazdık. Bir de bir şey daha yazdık. Önemini ortaya koyacağız.
+
+401
+02:08:49,264 --> 02:08:55,663
+Yani sırf riskin etkisinden ziyade nereyi etkilediği de önemli. Hangi alanda bir risk olduğu da önemli.
+
+402
+02:08:56,275 --> 02:09:03,775
+Tamam. Mesela performans olabilir, cost olabilir, skatucu olabilir. Kategorisi mi?
+
+403
+02:09:03,775 --> 02:09:10,576
+Kategorisi, tamam. Kategorisi var. Başka?
+
+404
+02:09:11,188 --> 02:09:25,128
+Hocam ben cevaplayabilirim. Bir de bu riskin olasılığı da önemli etkilerden biri. Çünkü birçok olasılıklı bir riskin etkisi ne kadar büyük olursa da bunu göz ardı edebiliriz.
+
+405
+02:09:25,128 --> 02:09:37,847
+Evet, her bir riskin önem sıralamasını yaparken bu ne kadar olasılıklı olur, etkisi ne olur?
+
+406
+02:09:39,188 --> 02:09:43,868
+İkisini çarparak riskin önemini belirtiyoruz.
+
+407
+02:09:44,927 --> 02:09:52,547
+Ve bu önem sıralamasına göre sıralayıp hepsini takip etmemiz mümkün değil.
+
+408
+02:09:54,007 --> 02:09:56,587
+En önemli olanları takibe alıyoruz.
+
+409
+02:09:56,587 --> 02:10:04,427
+Takip dediğimiz işlemde her birisinin her riske bir şey açıp,
+
+410
+02:10:04,511 --> 02:10:13,572
+O riskin önlemi nedir? Yani nasıl önlem alırsak bu risk ortaya çıkmaz.
+
+411
+02:10:13,952 --> 02:10:35,872
+Belki bazen birkaç önlem maddesi yazabiliriz. Belki aynı önlem maddesini farklı riskler için de kullanabiliriz. Ama bu önlemin de hemen şu önlem alırsak çok güzel bu risk hiç olmaz diye hemen kullanamayız.
+
+412
+02:10:36,692 --> 02:10:47,627
+Onun da maliyetini hesaplayıp ona göre o önlemi almamız gerekir. Mesela işte testerda...
+
+413
+02:10:52,724 --> 02:11:05,724
+İşten ayrılabilir galiba diyoruz. Olasılığı da yüksek. Bunun yerine birisini işe almak ne kadar maliyetli? İkisini birlikte çalıştırmak.
+
+414
+02:11:08,083 --> 02:11:27,804
+Duruma göre, [öğrenci]'ın da dediği gibi bu ne kadar, nereye etkiliyor? Ona göre o maliyete katlanabilir miyiz? Katlanabilir miyiz? Katlanamaz mıyız? Başka önlemler var mı? Bunları belirlememiz gerekiyor.
+
+415
+02:11:35,891 --> 02:11:36,371
+Evet.
+
+416
+02:11:44,692 --> 02:11:46,152
+Sana bir soru sorayım.
+
+417
+02:11:48,152 --> 02:11:49,311
+Tamam hocam.
+
+418
+02:11:49,771 --> 02:11:54,252
+[öğrenci], yazılım konfigürasyonu nedir?
+
+419
+02:11:57,716 --> 02:11:58,836
+Ya da ne konfet.
+
+420
+02:12:02,996 --> 02:12:04,876
+Software Configuration
+
+421
+02:12:08,884 --> 02:12:09,523
+Kanayı?
+
+422
+02:12:20,180 --> 02:12:27,180
+Evet, evet.
+
+423
+02:12:27,180 --> 02:12:43,180
+Yazılım konfigürasyonu, to track the control changing in software.
+
+424
+02:12:58,547 --> 02:13:00,847
+Yazılımın elemanları nelerdir?
+
+425
+02:13:06,452 --> 02:13:08,671
+Yani yazılım nelerden oluşur?
+
+426
+02:13:12,916 --> 02:13:15,315
+Ölçeme demek istiyorsunuz hocam.
+
+427
+02:13:16,235 --> 02:13:23,076
+Yok, yazılım ölçümü değil. Yazılım diyoruz ya, sadece program kodu mudur? Başka neler vardır yazılımda?
+
+428
+02:13:29,811 --> 02:13:41,751
+Program kodundan başka neler söylüyoruz yazılım dediğimizde?
+
+429
+02:13:44,911 --> 02:13:48,391
+Planleme, tasarım, gerçekleme.
+
+430
+02:13:48,391 --> 02:13:53,131
+Onlar yazılımı gerçekleştirme adımlarımız.
+
+431
+02:13:58,355 --> 02:14:11,355
+Yazılımı gerçekleştirme adımımız. Ama yazılım elemanları dediğimizde, yani yazılım sadece program kodu değil, yazılım elemanları dediğimizde,
+
+432
+02:14:13,684 --> 02:14:27,923
+Program kodu, veri tabanı, belgeler, yani gereksinim belgesi, tasarım belgesi, kullanıcı, el kitabı, bunların hepsi yazılımla ilişkili belgeler.
+
+433
+02:14:27,923 --> 02:14:41,644
+Test spesifikasyonu, yani test spesifikasyonu diyoruz sadece, bunun içinde test planı, test tasarımı, senaryoları, test sonuç raporu.
+
+434
+02:14:41,684 --> 02:14:47,284
+Bu gibi belgeler var. Bunların hepsi birlikte yazılımı oluşturuyor.
+
+435
+02:14:50,996 --> 02:14:59,935
+[öğrenci] tekrar sesle problem mi oldu?
+
+436
+02:15:04,051 --> 02:15:11,551
+Ses konusunda yine bir problem mi var? Gerçi ben bu ara konuşmadım. Arkadaşlarınızdan cevap bekliyordum.
+
+437
+02:15:13,051 --> 02:15:14,271
+Benim için iyi geliyor hocam.
+
+438
+02:15:14,271 --> 02:15:17,271
+Tamam, teşekkürler.
+
+439
+02:15:23,507 --> 02:15:48,807
+O zaman ben sizden şey bekliyorum. Makalenizle ilişkili geri bilgi bu hafta içinde. Makale çalışmalarınızı, bulduğunuz bütün şeyleri.
+
+440
+02:15:53,140 --> 02:16:04,580
+Çıkış noktanızın dışındaki literatürü de inceleyip bu iş için bir zaman kestirimi yapmanızı istiyorum.
+
+441
+02:16:04,580 --> 02:16:17,580
+Ve 11. haftada sunum yapabilecek konusunu daha önceden alıp çalışmaya başlamış olanlar varsa...
+
+442
+02:16:19,283 --> 02:16:26,003
+Bunu biraz bu hafta ilerletmenizi ve önümüzdeki haftaya plan yapacağız.
+
+443
+02:16:27,523 --> 02:16:31,783
+Takvim oluşturacağız. Kim hangi gün sunumunu yapacak.
+
+444
+02:16:32,703 --> 02:16:36,283
+Bir de projelerinizle ilişkili...
+
+445
+02:16:37,840 --> 02:16:51,700
+Belki birkaç tane örnek sunum yapabiliriz. Proje teslimleriniz de bu arada sondan üçüncü hafta uygulama projenizin teslimi.
+
+446
+02:16:56,884 --> 02:17:06,203
+Evet. Sorunuz var mı dersle ilişkili? Ya da genel? Yani şu anda...
+
+447
+02:17:06,203 --> 02:17:07,344
+Hocam ben bir soru sorabilir miyim?
+
+448
+02:17:07,743 --> 02:17:08,363
+Tabii.
+
+449
+02:17:09,524 --> 02:17:11,984
+Risk tablosu örneği paylaşacak mısınız acaba?
+
+450
+02:17:13,043 --> 02:17:38,203
+Ha, paylaşabilirim. Çünkü onu evet tanım olarak şurada gösterdim, bir önceki slide'da. Ama tabloyu oluşturmamıştık. Yazılım mühendisliği dersinde de tablo veriyorduk ama gerçek hayattan bir örnek, tablo örneği önümüzdeki haftaya hazırlarım size.
+
+451
+02:17:40,531 --> 02:17:41,511
+Teşekkürler hocam.
+
+452
+02:17:42,412 --> 02:17:42,711
+Tamam.
+
+453
+02:17:44,771 --> 02:17:46,592
+Başka sorusu olan var mı?
+
+454
+02:17:51,059 --> 02:17:56,959
+Ben hocam şey sormak istiyorum. Ders slide'ları bizimle berışebilir mi?
+
+455
+02:17:56,959 --> 02:18:02,899
+Evet, onu ben size aslında söz vermiştim bu haftaya yapacaktım.
+
+456
+02:18:02,919 --> 02:18:03,599
+Evet, lütfen.
+
+457
+02:18:04,399 --> 02:18:16,759
+Evet, çünkü dokuzuncu haftada da sınav diyoruz. Onu en azından biraz özetleyerek de olsa, iki slide da özetleyerek belki,
+
+458
+02:18:19,059 --> 02:18:28,219
+Bu sistemi kullanarak buradaki ders araç gereçlerine yükleyen hocanız var mı?
+
+459
+02:18:28,219 --> 02:18:44,539
+Bizim Mustafa Hoca bize Google Drive oluşturdu. Oradan bize sayılar koydu.
+
+460
+02:18:44,979 --> 02:18:50,779
+Evet, evet. Tamam, ben bu sisteme koyan var mı hiç?
+
+461
+02:18:51,680 --> 02:18:54,579
+Hocam, Songül Hoca direkt bu sistemden paylaşıyor.
+
+462
+02:18:55,100 --> 02:19:05,619
+Tamam, o zaman ben bir Songül'le konuşayım. Tamam, teşekkür ederim. Buradan paylaşmak istiyorum çünkü. Onunla bir konuşayım, ona göre bugün paylaşmaya çalışacağım.
+
+463
+02:19:06,619 --> 02:19:07,880
+Tamam hocam, teşekkür ederim.
+
+464
+02:19:08,340 --> 02:19:11,239
+Teşekkürler. Başka sorunuz var mı?
+
+465
+02:19:21,396 --> 02:19:23,936
+O zaman bugünkü dersi tamamlayabiliriz.
+
+466
+02:19:27,076 --> 02:19:31,416
+İlk başta bir korktuk internet sorunu yaşadık ama neyse sonunda iyi gitti.
+
+467
+02:19:34,236 --> 02:19:36,195
+Sorunuz var mı? Bir düşünün.
+
+468
+02:19:37,576 --> 02:19:38,636
+Teşekkür ederim hocam.
+
+469
+02:19:43,252 --> 02:20:09,992
+Sınav nasıl olacak? Şimdi ben dersin başında da söyledim [öğrenci]. Lisans dersinde deneyeceğim. Hangi tür, test mi, klasik mi, nasıl daha iyi gidiyor bu sistemde? Ona göre size uygulayacağım. Şu anda bilmiyorum. Önümüzdeki hafta deneyeceğim. Ona göre bir sonraki hafta size uygulayacağım.
+
+470
+02:20:14,611 --> 02:20:22,912
+Teşekkür ederim. Bir daha düşünün. Sorunuz varsa sorun. Yoksa dersi bitireceğim.
+
+471
+02:20:35,827 --> 02:20:37,027
+Yok hocam, teşekkür ederim.
+
+472
+02:20:37,027 --> 02:20:39,027
+Tamam, teşekkür ederim.

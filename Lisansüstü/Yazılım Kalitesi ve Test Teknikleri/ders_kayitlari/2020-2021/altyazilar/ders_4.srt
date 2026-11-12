@@ -1,0 +1,1819 @@
+1
+00:00:36,884 --> 00:00:56,603
+Günaydın. Bugün dördüncü ders yapacağız. Merhabalar. Öncelikle bir tekrar yapacağız ama projelerinizle ilişkili çok teklifleriniz geldi. Özellikle dün çok geldi.
+
+2
+00:01:01,584 --> 00:01:27,264
+Tek tek dönüş yapacağım. Şimdi bununla vakit almak istemiyorum. Hem konferans makaleleri hem de dergi makalelerinden seçtikleriniz var. Özellikle bunlara bir an önce cevap vermek istiyorum ki başka eğer uygun değilse başka şeyler arayın.
+
+3
+00:01:27,731 --> 00:01:50,751
+Bir de doğrudan sadece konu yazmış olan arkadaşlarınız var. Bir makaleyle eşleştirmenizi istiyorum onları. O hale dönüştürüp gönderirseniz iyi olur. Bir de diğer projemiz var. Onunla ilgili de daha çok geri dönüşü oldu zaten.
+
+4
+00:01:51,956 --> 00:02:11,435
+Diğerine çünkü bir hafta daha zaman var. O konu için bu hafta sondu. Onu da bu haftanın sonuna kadar gönderebilin eğer göndermeyenler varsa.
+
+5
+00:02:12,051 --> 00:02:36,051
+Bununla ilişkili bir gereksinim dökümanı hazırlamanızı istemiştim. Bugün biraz ondan bahsetmek istiyorum. Yazılım mühendisliği dersinde hepiniz görmüşsünüzdür. SRS dökümanı nasıl yazılır. Ama farklı üniversitelerden geldiniz. Onun için...
+
+6
+00:02:36,883 --> 00:03:03,283
+Bir üzerinden geçeceğiz. Bir SRS standardı IEEE 830'u göstereceğim size. Bir de örnek hazırlanmış bir basit bir yazılımın SRS belgesini örnek olarak göstereceğim.
+
+7
+00:03:03,764 --> 00:03:09,264
+Şimdi slaytlara geçiyorum.
+
+8
+00:05:37,108 --> 00:05:45,548
+Bu IEEE 830 Software Requirement Specification ekranda şu anda görebiliyor musunuz?
+
+9
+00:05:47,947 --> 00:05:49,668
+Hayır hocam.
+
+10
+00:05:50,008 --> 00:05:52,927
+Tamam. Bir dakika.
+
+11
+00:07:54,579 --> 00:07:56,819
+Şimdi bunu görebiliyorsunuz herhalde değil mi?
+
+12
+00:07:59,699 --> 00:08:00,259
+Evet canım.
+
+13
+00:08:00,259 --> 00:08:01,060
+Tamam.
+
+14
+00:08:02,139 --> 00:08:04,220
+Bu bir örnek.
+
+15
+00:08:08,947 --> 00:08:10,507
+SRS örneği.
+
+16
+00:08:35,347 --> 00:08:46,387
+Evet, IEEE 830 formatı. Tekrar tekrar soruyorum ama görüntü geliyor mu?
+
+17
+00:08:48,788 --> 00:08:50,447
+Evet hocam.
+
+18
+00:08:51,667 --> 00:08:59,667
+Bu formatta, yani daha doğrusu bütün IEEE standartlarında,
+
+19
+00:09:00,063 --> 00:09:18,343
+Aynı zamanda bir standart konusunu da işledik. Biz standart örneğini de takip etmiş olacağız burada. Onun için seçtim. İçindekiler listesi gibi bir şey. Bu döküman örneğin gereksinim analizi.
+
+20
+00:09:20,083 --> 00:09:39,363
+Gerçekleştirdiğimizde sonuçta oluşturduğumuz spesifikasyon, ayrıntılı rapor hangi içerikte olmalı ve nasıl verilmeli? Bunu görmüş oluyoruz.
+
+21
+00:09:39,696 --> 00:09:59,395
+Şimdi bunun içindekiler listesine baktığımızda önce bir giriş. İşte bu dokümanın amacı nedir? Bundan önce neleri bakmanız gerekir? Ürünün alanı nedir? Yani geliştirilen yazılımın...
+
+22
+00:10:00,000 --> 00:10:04,980
+Hangi alanda olduğu tanımlanmıştır?
+
+23
+00:10:05,839 --> 00:10:26,000
+Bunu hazırlarken verilen referanslar, bir de şurada ilk sayfası içindekiler listesinden sonra hangi revizyonu, yani kaçıncı değişiklik, önemli değişiklik yapılmış, kaçıncı versiyonu?
+
+24
+00:10:27,892 --> 00:10:32,772
+Bu dökümanın, bu da ilk başta belirtiliyor.
+
+25
+00:10:33,772 --> 00:10:53,832
+Daha sonra tam tanımı yazılımın, ürün fonksiyonları nelerdir, kullanıcı sınıfları ve karakteristikleri hangi kullanıcılar için hazırlanmıştır, nasıl bir ortamda çalıştırılması,
+
+26
+00:10:55,379 --> 00:11:13,379
+Bu yazılımın tasarım ve gerçekleştirme için kısıtlar var mı? Yani gereksinim analizinde bu çalışma için tasarım yapacağımızdan.
+
+27
+00:11:14,580 --> 00:11:33,900
+Gerçekleştirme yapacağımızda kısıtlarımız var mı yazılım ve donanım açısından? Kullanıcı dokümentasyonu nasıl olacak? Hangi elemanları olacak kullanıcı dokümentasyonunun?
+
+28
+00:11:42,580 --> 00:12:02,660
+2.7'de de bazı kabuller olacak mı? Bunları belirtiyoruz. Ondan sonra dış arabirim gereksinimleri, kullanıcı arabirimi, donanım arabirimi, yazılım arabirimi gibi.
+
+29
+00:12:08,628 --> 00:12:11,508
+Daha sonra sistem özellikleri nasıl olmalı?
+
+30
+00:12:11,508 --> 00:12:21,327
+Fonksiyonel gereksinimleri tanımlamak?
+
+31
+00:12:22,995 --> 00:12:33,175
+Bu sistemin hangi özellikleri var? Bunu modüllere parçalayarak da verebiliriz.
+
+32
+00:12:33,175 --> 00:12:45,975
+Ve fonksiyonel gereksinimleri, gereksinim requirement 1, requirement 2 gibi sıralamamız gerekiyor.
+
+33
+00:12:46,836 --> 00:12:50,995
+Sistem özelliği 1, sistem özelliği 2 diye ayırmamız gerekiyor.
+
+34
+00:12:50,995 --> 00:13:16,475
+Şöyle, mesela bir öğrenci bilgi sistemi, büyük bir yazılım. Bunun farklı modülleri olacaktır. İlk gelen öğrenci kayıtlarının aktarılması, birinci modül. İkinci modül var olan öğrencinin derse kayıt yaptırması.
+
+35
+00:13:18,995 --> 00:13:44,175
+Soscript ve diğer belgelerin verilmesi gibi farklı alt sistemler için fonksiyonel gereksinim tanımları burada verilir. Ve beşinci maddede de diğer non-functional requirement'lar yani performans gereksinimi, güvenlik gereksinimleri, kalite özellikleri.
+
+36
+00:13:44,692 --> 00:13:54,731
+gibi gereksinimlerde, işlemsel olmayan gereksinimlerin altında sıralanır.
+
+37
+00:14:03,700 --> 00:14:20,460
+Belgeleri ile tanımlayabiliriz bu sistem gereksinimlerini. Analiz modeli için yüz kez diagramı gibi açıklamalarda konulacaksa bunlar da eklerde belirtilebilir.
+
+38
+00:14:22,460 --> 00:14:26,460
+Şimdi örnek üzerinde duralım.
+
+39
+00:16:06,836 --> 00:16:10,096
+Bu da bir yazılım gereksinim spesifikasyonu.
+
+40
+00:16:15,827 --> 00:16:39,387
+Örnek aslında ödev, SRS ödevi. Kaçıncı versiyonu olduğu belirtilmiş. İçindekiler listesi. Az önce ben size ideal bir formatını gösterdim. IEEE 830'un kendisine içindekiler listesi ve tanımlarını gösterdim.
+
+41
+00:16:39,727 --> 00:16:56,387
+Bu da daha basit anlamda, basitleştirerek bir öğrenci ödevinde SRS belgesinin nasıl hazırlanmış ve sizden de beklentim bu şekilde olacak.
+
+42
+00:17:05,776 --> 00:17:24,076
+Azaltarak, öncelikle bu belgenin amacı, neyi içeriyor, ürünün genel tanımı, ürünün kullanım alanı ne olacaktır?
+
+43
+00:17:30,067 --> 00:17:38,307
+Ve burada fonksiyonel gereksinimleri use case diagramlarıyla belirtmiş.
+
+44
+00:17:38,307 --> 00:17:52,528
+Yani ikisi de geçerli olabilir. Hangisini isterseniz o şekilde hazırlayabilirsiniz SRS diagramınızı, SRS belgenizi.
+
+45
+00:17:54,324 --> 00:18:02,503
+İster gereksinimleri madde madde sıralarsınız, isterseniz böyle bir yüz kez diagramı ile belirtirsiniz.
+
+46
+00:18:23,731 --> 00:18:37,471
+Yüz kez diagramında genel olarak verilen uygulama tanımını yüz kez belgeleriyle belirtmiş.
+
+47
+00:18:39,211 --> 00:18:47,271
+Her bir yüz kez belgesi başka bir modülün gerçekleştirdiği işlemleri gösteriyor.
+
+48
+00:18:50,708 --> 00:19:08,927
+Yeni bilgi girişi modülü, gerçekleşen temel akış ve 8 tane alt gereksinim var, gerçekleştirilecek işlem var.
+
+49
+00:19:17,364 --> 00:19:23,604
+Altta listelenmiş. Bir girdinin güncellenmesi.
+
+50
+00:19:29,652 --> 00:19:39,812
+Uygulamanın alt modüllerini her birine ayrı bir use case belgesi hazırlayarak vermiş.
+
+51
+00:19:56,180 --> 00:20:06,400
+İşlevsel gereksinimleri sıralayarak da verebilirsiniz, numaralandırarak sadece. Her biri için ayrı bir use case belgesi oluşturarak da verebilirsiniz.
+
+52
+00:20:08,400 --> 00:20:20,599
+Dördüncü madde, functional, işlevsel gereksinimlerde. Beşinci madde de non-functional decrementler.
+
+53
+00:20:22,324 --> 00:20:27,923
+Burada da kullanıcı ara birim gereksinimleri, performans gereksinimleri.
+
+54
+00:20:30,644 --> 00:20:49,583
+Reliability, güvenirlik gereksinimleri ve kullanılabilirlik gereksinimleri, güvenlik gereksinimleri gibi bunları da maddeleyerek değil, açıklayarak bir iki cümleyle açıklayarak vermiş.
+
+55
+00:20:49,583 --> 00:20:57,724
+Her türlü şey geçerlidir. Yani burada da maddeleyerek yazabilirsiniz, böyle açıklayabilirsiniz de.
+
+56
+00:20:58,228 --> 00:21:06,528
+Bu şekilde uygulamanızı tanıtan bir belge oluşturmanızı istiyorum.
+
+57
+00:21:08,884 --> 00:21:20,684
+Yani seçtiğiniz yazılımların, bazı arkadaşlarınız, evet bunu soruyla da sormuştunuz, büyük yazılımlar seçmişsiniz.
+
+58
+00:21:21,344 --> 00:21:31,164
+Gereksinim analizini oluşturup üzerinde test yapacağınız parçalarının bu büyük yazılımın hangisi olduğunu belirtmeniz gerekir.
+
+59
+00:21:31,164 --> 00:21:36,884
+Çünkü bu büyük yazılımın hepsini ele alıp gereksinim belgesi hazırlanır.
+
+60
+00:21:36,884 --> 00:22:00,064
+Çok verimli olmayacaktır sizin için. Bu nedenle ben sizden teklifler gelince uygulama konunuzla ilişkili öncelikle sizden ne beklediğimi, bir gereksinim belgesi hazırlayacaksınız dedim ama bunun üzerinden geçerek size bildirmek istedim.
+
+61
+00:22:04,884 --> 00:22:30,724
+Bana ek açıklama gönderin. Benim uygulamam çok büyük bir uygulama ama bunun şu bölümüyle ilişkili, şu modülüyle ilişkili çalışmada test yer alacak. O yüzden ben sadece şu bölümünün gereksinim analizini gönderdim diyebilirsiniz.
+
+62
+00:22:31,571 --> 00:22:59,011
+Şimdi bu çerçevede hem gereksinim belgelerinin formatını, REEE 830'u hem de bir tane örnek vermiş oldum size. Bunlara dikkate alarak projenizle ilişkili sorunuz var mı?
+
+63
+00:22:59,476 --> 00:23:01,896
+Konularınızla ilişkili sorularınız.
+
+64
+00:23:27,731 --> 00:23:31,731
+Evet. Görüntü ve sesle bir problem var mı?
+
+65
+00:23:34,331 --> 00:23:43,692
+Hocam bir şey söyleyeceğim. Bu belge kaç sayfa limiti var mı? Ne kadar üst veya alt limiti var mı?
+
+66
+00:23:45,572 --> 00:23:51,032
+Yani işte bu örnek kaç sayfa?
+
+67
+00:23:51,903 --> 00:23:58,571
+Bu kadar olmalı ama üst limiti sizin en az...
+
+68
+00:24:04,788 --> 00:24:23,788
+Bu 9 sayfa. Yani siz her birine fonksiyonel gereksinimlerini sadece listeleseniz, o zaman 5 sayfa kadar tutar. Yani daha az da bunu toparlayamazsınız.
+
+69
+00:24:25,491 --> 00:24:42,112
+Ama eğer uygulamanız çok büyükse o zaman gereksinim listeniz de artacaktır. Ben size bir sınır vermiştim. 50 ile 75 arasında olsun fonksiyonel ve non-functional requirementlarınız.
+
+70
+00:24:50,867 --> 00:25:08,687
+Bunu kastediyorum. Yani şuradaki maddeler modül modül gittiği için işte burada 15 tane. Şuradaki sayıları dikkate alırsanız işlevsel olmayan gereksinimleri de.
+
+71
+00:25:17,875 --> 00:25:38,075
+Söylemek istedim. Gerçekleştirilen işlemler, hangi aktörler var, hangi aktörler hangi işi gerçekleştiriyor gibi alt başlıklara da bölebilirsiniz.
+
+72
+00:25:46,132 --> 00:25:58,872
+Üniversite mezunlar sayfası, yeni giriş, güncelleme, herhangi bir arama gibi işlemler var.
+
+73
+00:26:02,867 --> 00:26:18,507
+Sizin uygulamanız için de böyle bir liste oluşturmanızı istiyorum ki kullanıcı testi gerçekleştireceğimiz zaman, yani kullanıcı kabul testi oluşturacağımız zaman,
+
+74
+00:26:20,723 --> 00:26:36,384
+Karşımızda bir şey olsun. Neyle karşılaştıracağız? Neye bakarak kullanıcı testini yapacağız? İşte bakacağımız şey gereksinin belgesi olacak. Gereksinin belgesinin de formatı bu şekilde olmalı.
+
+75
+00:26:48,723 --> 00:26:53,163
+Şimdi bu çerçevede sorunuz var mı?
+
+76
+00:26:55,723 --> 00:27:04,323
+Hocam merhabalar. En azından IEEE 830'u AVS sayfanızda falan paylaşacak mısınız?
+
+77
+00:27:04,323 --> 00:27:11,384
+Bu uygulamada bir bölüm var.
+
+78
+00:27:13,599 --> 00:27:14,799
+Oraya koyacağım.
+
+79
+00:27:15,139 --> 00:27:16,779
+Tamam hocam, teşekkürler. Çok sağ olun.
+
+80
+00:27:19,259 --> 00:27:22,339
+Şimdi bugün dersten sonra deneyeceğim bunları koymayı.
+
+81
+00:27:25,339 --> 00:27:30,039
+Evet, genel olarak yapacaklarınız anlaşıldı mı?
+
+82
+00:27:34,163 --> 00:27:41,003
+Tamamdır. O zaman bu bölüme geçiyorum.
+
+83
+00:29:48,531 --> 00:30:05,611
+Evet, şimdi geçen hafta gözden geçirme ve inceleme üzerinde durmuştuk. Geçen haftanın şöyle bir tekrarını yapalım. Yazılım incelemesi temel kavramları slide'ını takip edebiliyor musunuz?
+
+84
+00:30:07,371 --> 00:30:08,432
+Evet hocam.
+
+85
+00:30:08,432 --> 00:30:15,692
+Tamamdır. Öncelikle şuradan başlayayım.
+
+86
+00:30:16,016 --> 00:30:17,776
+Ayy...
+
+87
+00:30:17,791 --> 00:30:24,731
+Daha ilk derslerden yazılım kalitesi özellikleri nelerdir onu gördük.
+
+88
+00:30:26,411 --> 00:30:33,291
+Maccol'un yazılım kalite özellikleri üçgeni üzerinde durduk.
+
+89
+00:30:33,291 --> 00:30:45,672
+Özellikleri sınıfladık. Bu özelliklerin, kalite özelliklerinin, kalite faktörlerinin metriklerle ilişkisini modelledi Maccol. Onu gördük.
+
+90
+00:30:45,791 --> 00:31:09,672
+Nasıl bir model oluşturulduğunu ve daha sonra bu kalite özelliklerine sahip yazılımı geliştirmek için, yani kaliteli yazılımı elde etmek için hangi aktiviteleri, hangi işlemleri gerçekleştirmemiz gerekir? Bunun üzerinde durduk.
+
+91
+00:31:09,935 --> 00:31:35,435
+Bu aktivitelerden bir tanesi standartları kullanmaktı. Bugün bir standart örneği de vermiş olduk REEE830'da. Biraz canlandıramamış olabilirsiniz bu standartlar dersini görürken. Ben şöyle bir cümle kurmuştum. Bizim gerçekleştirdiğimiz, kullandığımız standartlar.
+
+92
+00:31:37,652 --> 00:31:47,912
+Yazılım ürününü nasıl elde edeceğimizi, hangi süreçle elde ettiğimizi gösteren standartlardır diye.
+
+93
+00:31:47,912 --> 00:32:04,272
+Bu şekilde daha çok bu süreçte gerçekleştirdiğimiz işlemler ve bunların sonunda hazırladığımız belgeleri tanımlayan standartlar bizim yazılım standartlarımız.
+
+94
+00:32:04,788 --> 00:32:22,448
+Bizim standartları kullanmamız fayda sağlayacaktır. Yazılımın belli bir formal yapı çerçevesinde olması için.
+
+95
+00:32:28,480 --> 00:32:47,620
+Formal bir yazılım geliştirme süreç modelini kullanmak da önemliydi. Bunlar yazılımı hazırlamaya başlamadan önce vereceğimiz kararlarla gerçekleştirmemiz gereken aktivitelerdi.
+
+96
+00:32:47,620 --> 00:32:54,640
+Hangi yazılım modelini seçeceğiz, hangi standarda göre yazılımı geliştireceğiz şeklinde.
+
+97
+00:32:55,039 --> 00:33:16,039
+Bir sonraki yazılımı geliştirme sürecinde yapmamız gereken şey de gözden geçirme yapmak ve inceleme yapmaktı. Gözden geçirme yolları üzerinde durduk daha önceki haftada ve gözden geçirme yolları içinde...
+
+98
+00:33:18,740 --> 00:33:33,759
+Formal olmayan gözden geçirme nasıl yapılıyor? Bunun için de yazılımın her evresinde gözden geçirme yapmamız gerekiyor demiştik.
+
+99
+00:33:45,556 --> 00:33:47,556
+Tasarımla ilişkili.
+
+100
+00:33:47,556 --> 00:33:49,451
+İşte tasarımda
+
+101
+00:33:50,003 --> 00:34:14,623
+Gözden geçirme yaptığımızda neleri gözden geçiriyoruz? Gereksinim analizi sonunda, plan sonunda neleri gözden geçiriyoruz? Bu kodlamada neleri gözden geçiriyoruz? Yazılım hatalarını, kodlama standartlarına uygunluğu, açıklamaların tutarlı ve uygun olduğunu gözden geçiriyoruz.
+
+102
+00:34:18,003 --> 00:34:22,184
+Geçirme standartları içinde.
+
+103
+00:34:26,675 --> 00:34:41,596
+Tasarımın gözden geçirilmesi nasıl olacak? Yazılım spesifikasyonunun gözden geçirmesi nasıl olacak? Test işlemini hazırlık nasıl değerlendirecek gibi gözden geçirme standartları da var.
+
+104
+00:34:54,675 --> 00:35:04,135
+Bu, gözden geçirme, yazılım test raporunun değerlendirme standardı olan bir checklist var. Onu kullanıyorum.
+
+105
+00:35:05,139 --> 00:35:25,019
+Evet, yani gözden geçirme her evrenin sonunda ki bizim yazılım proje yönetiminde milestone olarak belirlediğimiz kilometre taşlarında, yani yazılımın önemli evrelerinin sonunda bir gözden geçirme gerçekleştiriyoruz.
+
+106
+00:35:27,860 --> 00:35:37,239
+Gözden geçirmenin daha kurallı olanı inceleme. Onun bir çeşidi de diyebiliriz.
+
+107
+00:35:37,239 --> 00:35:44,239
+İnceleme, inspection. Yine geçen hafta bunun üzerinde durduk.
+
+108
+00:35:51,507 --> 00:36:08,507
+Önce bir planlama, sonra birlikte inceleme, gerçekleştirme ve bunu tamamlanması gibi hareket edebiliyoruz. Bir de bunun üzerinde durduk. Geçen hafta sizlere de sorular sormuştum. Yazılım incelemesi gerçekleştirirken.
+
+109
+00:36:10,036 --> 00:36:23,715
+Yazılım incelemesi gerçekleştirirken, gereksinim spesifikasyonu üzerinde, tasarım üzerinde, formal spesifikasyon üzerinde, ayrıntılı tasarım üzerinde, program üzerinde hep inceleme yapabiliyoruz.
+
+110
+00:36:25,475 --> 00:36:31,675
+İnceleme nasıl geçerlemeydi?
+
+111
+00:36:36,179 --> 00:36:44,299
+İnceleme için nasıl bir doğrulama diyebiliriz?
+
+112
+00:36:45,599 --> 00:36:46,519
+Statik mi hocam?
+
+113
+00:36:47,420 --> 00:36:51,359
+Evet, statik verifikasyon diyoruz.
+
+114
+00:36:51,359 --> 00:36:58,079
+Dinamik verifikasyonda test oluyor.
+
+115
+00:36:58,259 --> 00:37:03,139
+Çünkü test yaparken çalıştırarak devam etmemiz gerekiyordu.
+
+116
+00:37:04,083 --> 00:37:09,384
+Burada şöyle bir süreç.
+
+117
+00:37:10,195 --> 00:37:28,515
+İnceleme, genel basit süreç tanımı yaptığımızda planlama ve hazırlık, inceleme ve toplanma süreci, düzeltme ve tamamlama süreci, yeniden inceleme, dönüş ya da bitirme şeklinde süreç devam eder.
+
+118
+00:37:38,195 --> 00:38:02,295
+İnceleme sürecinde Fagan tarafından daha detaylı bir inceleme süreci tarif edilmiş. Önce planlama yapalım. Sonra bu plana göre bir gözden geçirelim neler incelenecek. Onu genel hatlarıyla bakalım.
+
+119
+00:38:02,867 --> 00:38:13,507
+Ondan sonra kişilere, plan çerçevesinde kişilere bölelim bu yapılacak inceleme işini.
+
+120
+00:38:14,788 --> 00:38:19,568
+Ve herkes kişisel kod incelemesini yapsın.
+
+121
+00:38:19,568 --> 00:38:29,108
+Daha sonra herkes incelemiş olarak toplantıya gelsin ve her incelediği bölüm için fikir bildirsin.
+
+122
+00:38:30,867 --> 00:38:46,528
+Karar verilsin şeklinde. Bundan sonra da yazılım geliştiricilere gönderip düzeltme istenilen aşama var. Daha sonra da bunların tamamlanması ve raporlanması.
+
+123
+00:38:47,059 --> 00:39:00,640
+Buradan da gördüğünüz gibi Fagan bunu çok önce teklif etmiş ve oldukça da fazla kullanılmış olan bir inceleme süreç yapısı.
+
+124
+00:39:03,411 --> 00:39:11,411
+Daha çok kod okuma, kod inceleme kısmında bu detaylı incelemenin yapıldığını görüyoruz.
+
+125
+00:39:13,031 --> 00:39:24,471
+Etkili bir kod okumanın hem yukarıdan aşağıya hem de aşağıdan yukarıya incelemeyle gerçekleştirilmesi gerektiği tanımlanmış.
+
+126
+00:39:24,471 --> 00:39:30,751
+Burada program mümkün olan en küçük parçalara bölünecek.
+
+127
+00:39:31,411 --> 00:39:33,771
+işte fonksiyonları, alt programları.
+
+128
+00:39:34,195 --> 00:39:53,336
+Bu parçaların kendi içindeki bütünlük ve doğruluk incelenecek. Sonra da programın bütünüyle uyumu gözden geçirilecek. Yani burada hem aşağıdan yukarıya hem de yukarıdan aşağıya inceleme gerçekleştirilmiş oluyor.
+
+129
+00:40:02,739 --> 00:40:20,719
+Kişi veya grubu temsil eden bir kişi, kod okuyucu kayıtçıdan oluşmaktadır. Ama duruma göre tabii ki bu görevleri birden bir kişi de birkaç görev üstlenebilir daha küçük projelerde.
+
+130
+00:40:21,235 --> 00:40:40,675
+Veya daha büyük projeler için daha çok kişi olabilir. Ve teknik bir inceleme raporunda neyin gözden geçirildiği, kimin gözden geçirdiği, hangi hata eksikleri bulunduğu ve ne yapılması gerektiği konuları açıklanmaktadır.
+
+131
+00:40:40,675 --> 00:40:47,715
+Sonuç olarak ne önerilir? Değişiklik yapılmadan kabul edilebilir.
+
+132
+00:40:48,159 --> 00:41:01,779
+Belirtilen önemsiz hatalar düzeltilme koşuluyla kabul edilir veya reddedilerek düzeltme sonunda yeniden inceleme gerekecektir diye bir karar verilebilir.
+
+133
+00:41:08,692 --> 00:41:22,192
+V model yaklaşımı üzerinde de durmuştuk. V model yaklaşımında verification validation kelimelerinden yola çıkarak
+
+134
+00:41:26,228 --> 00:41:38,568
+Çünkü bu yazılım geliştirme süreci ile yazılım test süreci arasındaki ilişkilendirmeyi gösteriyoruz bu modelde biz.
+
+135
+00:41:38,568 --> 00:41:53,568
+Aynı zamanda yazılım test sürecinin adımlarını gösteriyoruz. Süreç adımlarını. Yani nasıl bir sırada bu test işlemleri gerçekleştirilecek.
+
+136
+00:41:54,228 --> 00:42:11,927
+Ayrıca her bir yazılım geliştirme süreciyle yazılım test süreci arasındaki ilişkide validasyon mu gerçekleştiriliyor yoksa verifikasyon mu? Bunu da belirtiyoruz.
+
+137
+00:42:22,228 --> 00:42:25,528
+B model denilmiş bu model yaklaşımına.
+
+138
+00:42:35,795 --> 00:42:57,175
+Buna baktığımızda biraz daha detaylı görürsek, yazılım geliştirme sürecinde biz müşteri gereksinimlerini alıyoruz, ürün spesifikasyonu oluşturuyoruz, yani gereksinim analizi. Sonra genel tasarım yapıyoruz, yüksek düzey tasarım.
+
+139
+00:42:59,027 --> 00:43:12,787
+Alçak düzey tasarım, yani ayrıntılı tasarım yapıyoruz ve daha sonra kodluyoruz. Kodlama aşamasında yazılım geliştiriciler çalışıyor.
+
+140
+00:43:12,787 --> 00:43:25,847
+Ve aynı zamanda aynı grup geliştirdikleri kodun bilim testini de oluşturuyorlar. Yani ünite testi, bilim testi.
+
+141
+00:43:26,324 --> 00:43:46,284
+Yazılım geliştiriciler tarafından gerçekleştiriliyor. Eğer bileşen mantığı kullanılmışsa bileşen testi yapılıyor. Daha sonra da bütünlük testi oluşturuluyor. Bütünlük testinden sonra da regresyon testi var.
+
+142
+00:43:46,739 --> 00:44:09,199
+Sistem testini tamamladıktan sonra kabul testinin biraz daha yukarıda olması gerekiyor. Yanına çizmişim ama şu yukarıda olacak. Çünkü alfa testi ve beta testi ile kabul testi şu noktada gerçekleşecek.
+
+143
+00:44:09,568 --> 00:44:37,048
+İşlemsel kullanıma geçiş söz konusu. Burada aslında bizim gördüğümüz bir yazılım geliştirildi. Yazılım geliştirildikten sonra test için hazırlandı. Test aşamasında neler yapıyoruz? Hangi test?
+
+144
+00:44:37,588 --> 00:44:50,468
+Test adımlarını gerçekleştiriyoruz. Bu önem taşıyor. Hangi test adımlarımız nelerdir şeklinde.
+
+145
+00:44:55,764 --> 00:45:10,924
+Birim test üzerinde durduk. Birinci test adımı olarak. Birim testte yazılım tasarının en küçük birimi olan modül üzerinde uygulanır.
+
+146
+00:45:11,327 --> 00:45:28,907
+Ayrıntılı tasarımdaki tanımlamalara dayanılarak yapılır. Modül içindeki hataları bulmak üzere önemli kontrol yolları test edilir. Saydam kutu testi olarak uygulanır genellikle birim testi.
+
+147
+00:45:33,396 --> 00:45:39,056
+Bütün modüllerin bitip de öyle bir birim test yapılması beklenmez.
+
+148
+00:45:40,628 --> 00:45:48,148
+Her modül geliştirildikçe bunun testi yapılır. Yani paralel olarak bütün modüller test edilir.
+
+149
+00:45:48,148 --> 00:46:00,188
+Birim testinde modülün ara birim, yerel veri yapısı, kontrol yapıları arasındaki ana yolları ve modül sınırları test edilmektedir.
+
+150
+00:46:00,847 --> 00:46:06,648
+Bir de şu şekil üzerinde durmuştuk.
+
+151
+00:46:08,980 --> 00:46:14,219
+Test edilen birim, yani birim testinin nasıl yapıldığını anlatan bir şekilde.
+
+152
+00:46:14,219 --> 00:46:16,280
+Test edilen birim.
+
+153
+00:46:17,907 --> 00:46:23,327
+Doğrudan kendisi test programıyla veriyi alıp sonuçları değerlendirebilir.
+
+154
+00:46:23,327 --> 00:46:41,208
+Ama her zaman test edilen birinden çağrılan modüller test edilmemişse onların yerine bir yapay modül konur.
+
+155
+00:46:41,588 --> 00:46:44,068
+İşte buna stop ya da koçan diyoruz.
+
+156
+00:46:45,907 --> 00:47:09,108
+Test Driver'da her zaman bu modül bağımsız olarak çalışmaz. Başka bir modül tarafından çağrılır. İşte o modülü temsil eden bir driver tarafından da parametre geçişi sağlanır. Modüle veri girişi bu driver tarafından sağlanacaktır.
+
+157
+00:47:10,900 --> 00:47:20,820
+Böylece birim testi ve sonuçlar da buradan aktarılacaktır. Birim testin şekli de bu şekilde görüyoruz.
+
+158
+00:47:27,347 --> 00:47:30,668
+Şimdi bir ara verelim.
+
+159
+00:47:47,219 --> 00:47:49,539
+Yaklaşık 10 dakika.
+
+160
+00:47:54,483 --> 00:47:55,363
+Ara veriyorum.
+
+161
+00:47:58,183 --> 00:48:00,263
+Tamam hocam.
+
+162
+01:04:10,228 --> 01:04:28,887
+Evet, şimdi kaldığımız yerden devam edelim. Geçen hafta bu test süreci içinde birim testle başlamıştık. Birim test ile ilgili şekil şu anda.
+
+163
+01:04:49,492 --> 01:05:09,952
+Verim test kavramında bir test senaryosu kavramı var. Test case, belirli bir program yolunu işletmek ya da özel bir gereksinme uygunluğu onaylamak amacıyla düzenlenen bir dizi test verisi.
+
+164
+01:05:14,931 --> 01:05:26,911
+Test senaryosu ya da test case uygun seçilmeli ki test sayısı arttıkça maliyet artacaktır.
+
+165
+01:05:26,911 --> 01:05:38,271
+Bu nedenle gerçekleştirdiğimiz testlerin uygun dağılmasına özen göstermemiz gerekir.
+
+166
+01:05:38,739 --> 01:05:53,459
+Test programlarının geliştirilmesi de yazılımlar gibi test gerçekleştirmek için destek olan tool'lar kullanılır burada.
+
+167
+01:05:56,244 --> 01:06:18,144
+Birim testte bir de test driver ve test stop kavramını gördük. Burada da birim testinde modül bağımsız değilse ki değildir genellikle, modüle veri aktaran modülün yerini test driver dolduracaktır.
+
+168
+01:06:18,447 --> 01:06:23,287
+Çağrılığa modülün yerini de TestTap dolduracaktır.
+
+169
+01:06:31,380 --> 01:06:53,320
+V modeli gözümüzün önüne getirerek bilim test üzerinde durduk. Şimdi bütünlük testi, sistem testi ve kullanıcı testlerini göreceğiz. Bunları geçen hafta görmemiştik. Geçen hafta bu kadar sadece bilim testi tanımlamıştık. Şimdi diğer test süreci adımlarını görelim.
+
+170
+01:07:37,139 --> 01:07:41,420
+Diğer test süreci adımları, birim testten sonraki adımları göreceğiz.
+
+171
+01:07:41,420 --> 01:07:50,639
+Yalnız bu arada V modelde Verification ve Validation kavramı üzerinde de bir hatırlatma yapalım.
+
+172
+01:07:51,639 --> 01:07:55,180
+Verification, Geçerleme.
+
+173
+01:08:01,076 --> 01:08:09,276
+Verifikasyon doğrulama, Validation geçerleme.
+
+174
+01:08:09,276 --> 01:08:17,275
+Bu Validation kavramı...
+
+175
+01:08:19,347 --> 01:08:32,927
+Doğru ürünü ürettik mi sorusuna cevap veriyor. Verification doğrulama ise, ürünü doğru yolla hazırladık mı, ürettik mi sorusuna cevap veriyor.
+
+176
+01:08:33,847 --> 01:08:41,347
+Dolayısıyla ürünümüzü doğrudan test etmek için geçerleme, validation yapıyoruz.
+
+177
+01:08:44,500 --> 01:08:52,579
+Geliştirilme yolu üzerinde inceleme yapma da doğrulama, verification oluyor.
+
+178
+01:08:54,199 --> 01:09:01,399
+İnceleme, inspection aşamasında static verification gerçekleştirdiğimizi söylemiştik.
+
+179
+01:09:01,399 --> 01:09:08,420
+Şimdi bilim testten sonraki bütünlük testi üzerinde duracağız.
+
+180
+01:09:15,252 --> 01:09:34,252
+Bütünlük testinde ne yapıyoruz? Modüller bağımsız değil, birbirine bağlıdır. Bu bağlantı yazılım ara birimiyle sağlanır. Bu nedenle yazılımda ara birim testi gerçekleştiririz ve bütünlük testi gerçekleştiririz.
+
+181
+01:09:34,252 --> 01:09:42,252
+Ara birim, şöyle gösterebiliriz ara birim interfej testi.
+
+182
+01:09:43,091 --> 01:09:59,971
+Yine bir test case bunu değerlendirmek için uygun test verisi göndereceğiz. A modülü, B modülü, C modülü diyelim ki bunlar arasındaki veri gönderimi, veri alımı veya kontrol işlemleri.
+
+183
+01:10:00,000 --> 01:10:14,639
+Bu örneğe geçişleri test edebilmek için uygun veri göndererek bunu çalıştırıp sonuçlarının geri alınması aşaması ara birim testi olarak da gösterilir.
+
+184
+01:10:14,639 --> 01:10:16,639
+Şimdi bütünlük testinde...
+
+185
+01:10:16,992 --> 01:10:38,231
+Neye bakıyoruz? Modüllerin birleştirilmesi sırasında veri kaybı oluyor mu? Dikkatsizlik nedeniyle modüllerin birbirini ters etkilemesi söz konusu oluyor mu? Ana fonksiyonun gerçekleştirilmesinde problem çıkıyor mu?
+
+186
+01:10:38,739 --> 01:10:59,279
+Bir de mesela her bir modülde bir hata toleransı vardır ama bütünlük testi yaptığımızda bu hata toleransları birleşerek büyük hatalara neden olabilir. Dolayısıyla bu hata toleranslarının yeniden gözden geçirilmesi gerekebilir.
+
+187
+01:11:06,739 --> 01:11:21,139
+İşte bu hata ve sorunları gidermek üzere tek tek çalışan modüller birleştirildiğinde nasıl çalışıyor bunu bütünlük testinde görüyoruz.
+
+188
+01:11:22,068 --> 01:11:47,268
+Önce bütünleme işlemini yapıp test etmemiz gerekiyor. Bütün olarak test edebiliriz. Tabii bu daha zor. Bing Bang testi olabilir. Rastgele modülleri seçip birleştirip test etmek. Ama burada bir hiyerarşi içinde, bir düzen içinde test etmek en güzeli.
+
+189
+01:11:47,743 --> 01:11:49,743
+Burada...
+
+190
+01:11:51,604 --> 01:12:12,304
+Bütünlük testini arttırmalı test olarak gerçekleştiririz. Bu arttırmada modüller tek tek birbirine bağlanır. Ama nasıl bağlanır arttırmalı testte? Yukarıdan aşağıda olabilir, aşağıdan yukarıya da olabilir. İki ayrı şekilde olabilir bu test düzeni.
+
+191
+01:12:18,195 --> 01:12:39,076
+Bunu biraz daha görelim. Yukarıdan aşağıya bütünleme testinde en tepedeki modülü yukarıdan aşağıya test etmek üzere.
+
+192
+01:12:45,140 --> 01:13:03,860
+Bir arkadakine geçtim. Yukarıdan aşağıya test ederken, önce Test Driver 1 ile 7, 8 ve 9 numaralı modüller,
+
+193
+01:13:09,140 --> 01:13:26,579
+Modül 7, 8 ve 9 yerine konur yapay modüllerle. Daha sonra Test Driver 2, Test Driver 3, Test Driver 4 çalıştırılır.
+
+194
+01:13:37,076 --> 01:13:45,835
+cluster yaratarak, modül 1, modül 7'ye eklenerek,
+
+195
+01:13:46,207 --> 01:14:07,487
+Modül 1 önce test edilip 7'ye eklenerek 2, 3, 4 test edilmiş haldedir. 8'de yerine konularak. 5 ve 6 test edilip 9'da yerine konularak çalıştırılır ve böyle yukarıya doğru gidecek şekilde uygulanır.
+
+196
+01:14:08,627 --> 01:14:14,207
+Burada aslında okları aşağı doğru hatalı çizmişim.
+
+197
+01:14:14,207 --> 01:14:31,567
+Aşağıya doğru olması lazım. Bütünlük testinde yani hedef bir arada birleştirerek bütünü test etmek. Evet, aşağıdan yukarıya bütünleme testi daha uygun aslında.
+
+198
+01:14:40,243 --> 01:14:58,083
+Aşağıdan yukarıya birleştirirken büyük resmi de kaçırmamak için yukarıdaki büyük modül içinde de neredeyse bakarak gidilir. Bu testte de sandviç testing denir. Her ikisi karma uygulandığı için.
+
+199
+01:15:00,243 --> 01:15:15,643
+Bütünlük testi ile ilişkili regresyon testi var. Test edilmiş bir program ya da program parçası üzerinde değişiklik veya ekleme yapılması halinde tümünün bir kez daha test edilmesine biz regresyon test ediyoruz.
+
+200
+01:15:16,683 --> 01:15:27,083
+Uygulama ortamlarında gerekli değişiklikler ve sabitlemeler yapıldıktan sonra yeniden yapılan testlere regresyon testi denir.
+
+201
+01:15:28,243 --> 01:15:44,843
+Tanımla regresyon testi önceden test edilmiş bir yazılımın çeşitli değişikliklerden geçtikten sonra hatasız bir şekilde çalışmasını sağlamak amacıyla yeniden test edilmesi işlemidir.
+
+202
+01:15:44,843 --> 01:15:54,163
+Bu yüzden regresyon testi bütünlük testinin tamamlayıcısı şeklinde onun hemen üzerinde çizilir.
+
+203
+01:15:56,243 --> 01:16:03,243
+Bu şekilde örneğe bakalım.
+
+204
+01:16:03,243 --> 01:16:05,195
+Şimdi geri dönelim.
+
+205
+01:16:08,787 --> 01:16:24,887
+V modelde bütünlük testi, regresyon testi ve bundan sonra da sistem testi. Sistem testine baktığımızda sistem testinde ne yapıyoruz? Önce onu konuşalım.
+
+206
+01:16:32,787 --> 01:16:45,967
+Bilgisayar sistemi, yazılımın kendi başına çalıştığı bir yer değil. Altta işletim sistemleri var, uygulama yazılımının altında. Onun altında donanım var.
+
+207
+01:16:51,636 --> 01:17:02,456
+Hem dolanıma hem de işletim sistemine bağlı. Sistem testinin amacı sistemin bütün öğeleri uygun bir araya getiriliyor mu?
+
+208
+01:17:02,996 --> 01:17:30,615
+Her birinin işlevi tam olarak gerçekleşebiliyor mu? Onu onaylamak. Yani bütünlük testinden sonra bizim uygulama yazılımımız düzgün çalışıyor ama sistem içindeki yeri nedir? Sistem içinde uyumlu çalışıyor mu? İşletim sistemiyle, veri tabanı yönetim sistemiyle uyumlu mu? Donanımla uyumlu mu?
+
+209
+01:17:30,996 --> 01:17:40,775
+Bunun için sistem testi, güvenlik testi, dayanıklık testi, yetenek testi şeklinde uygulanır.
+
+210
+01:17:42,636 --> 01:17:46,996
+Sistem testinde hangi testleri görüyoruz?
+
+211
+01:17:47,096 --> 01:17:58,376
+Güvenlik testi, dayanıklık testi, yetenek performans testi, güvenlik testi dediğimiz zaman dış ortamdaki engellerden koruyabiliyor mu?
+
+212
+01:17:58,868 --> 01:18:14,167
+Sistem yazılımı bizim ve sistem yazılımının bu konudaki servisleriyle uyumlu çalışıyor mu bizim uygulama yazılımımız?
+
+213
+01:18:14,888 --> 01:18:23,908
+Dayanıklık stres testi ise sistem miktar frekans ya da hacim bakımında anormal şekilde yüklendiğinde
+
+214
+01:18:24,564 --> 01:18:49,664
+Bunlara dayanıklı mı? Yani 140 kullanıcılığı bir sistem dendiğinde gerçekten 139-140 kullanıcıyla çalıştırdığınızda hepsi istek gönderdiğinde yazılıma buna cevap verebiliyor mu yoksa patlıyor mu?
+
+215
+01:18:50,931 --> 01:19:10,152
+Ya da veri tabanındaki veri kayıt sayısı arttığında yine aynı şekilde hizmet verebiliyor mu? Bunu ölçmek için düzenlenir dayanıklılık stres testleri.
+
+216
+01:19:14,036 --> 01:19:19,456
+Her bir kullanıcıdan işlem geldiğinde bunlara cevap verebiliyor mu?
+
+217
+01:19:20,355 --> 01:19:31,415
+Yetenek Performans Testi de yazılım işlem süresinin uygunluğunu test eder.
+
+218
+01:19:32,212 --> 01:19:53,532
+Bellek Performansı, İşlemci Performansı bunları test eder. Birim testte de o birim için uygulayabiliriz. Sistem testi genelinde de biz bunu bütünlük testinden sonra bütün uygulama yazılımımız için kullanabiliriz.
+
+219
+01:20:01,363 --> 01:20:15,863
+Bir de onaylama testi var. Onaylama testi aslında bütünlük testinden ve sistem testinden sonra
+
+220
+01:20:18,579 --> 01:20:45,547
+Onaylama testi gerçekleştirilir. Müşteri ve kullanıcı. Şimdi müşteri ve kullanıcı diyoruz. Genellikle ikisi aynı şey olabilir. Ama şöyle bir farklılık var. Müşteri grup dediğimizde, bu uygulamayı finanse eden, bu uygulamayı kullanacak olan şirket yöneticileri, müşteri...
+
+221
+01:20:45,716 --> 01:20:57,296
+User, End User ya da User'da doğrudan o kurum içinde uygulamayı kullanacak olan vardır.
+
+222
+01:20:57,855 --> 01:21:13,415
+O yüzden bu kullanıcılara benzer bir grup oluşturulur. Bu kullanıcı testi önce onlara gerçekleştirilir. Onlar tarafından gerçekleştirmesi istenir.
+
+223
+01:21:13,415 --> 01:21:22,415
+Biz buna alfa testi diyoruz. Alfa testi kullanıcıya benzer bir grup oluşturup yazılım ekibi içinde...
+
+224
+01:21:25,395 --> 01:21:39,775
+Onlara test işlemini gerçekleştirmek ve bu amaçla onaylama testi kabul muayenesi içinde yürütülür.
+
+225
+01:21:39,775 --> 01:21:46,675
+Şöyle tekrar bakalım.
+
+226
+01:21:48,115 --> 01:21:59,876
+Kabul muayenesi yani Acceptance Test müşterinin kabul işlemini gerçekleştirmesi ve bunun sonucunda da yazılımı teslim alması.
+
+227
+01:21:59,876 --> 01:22:16,056
+Şu en son aşama. Teslim almadan önce neye bakacaktır? Onaylama testi. Bütünleşmiş yazılım, gereksinimler ve kullanıcı belgeleri üzerinde onaylama testi yapacak. Bir de konfigürasyon incelemesi yapacak.
+
+228
+01:22:16,115 --> 01:22:29,376
+Konfigürasyon incelemesinde de, yani düzen incelemesi, neler var yazılımı oluşturan, kullanıcı belgeleri, tasarım belgeleri, program.
+
+229
+01:22:32,243 --> 01:22:58,823
+Test belgeleri, bunların hepsi konfigürasyon elemanları. Bu konfigürasyon elemanlarının hepsi tamam mı? Teslim edilecek denilenler teslim edilmiş mi? Bunlar incelenir. Bir de bütünleşmiş yazılım, gereksinimler ve kullanıcı belgeleri üzerinde değerlendirme yapılır. Gereksinim analizinde istenilenler oluşturuluyor mu?
+
+230
+01:23:00,243 --> 01:23:18,304
+Kabul muayenesini oluşturacaktır. Kabul muayenesinde yani Acceptance Test'te her iki tarafta var. Hem konfigürasyonun tam olması, teslim sırasında teslim edileceklerin incelenmesi.
+
+231
+01:23:19,380 --> 01:23:31,440
+Hem de yazılımı çalıştırıp gereksinimde belirtilen her şeyi gerçekleştirdiğinin belirtilmesi.
+
+232
+01:23:31,440 --> 01:23:46,860
+Böylece biz şimdi şeyi tamamlamış olduk. Bu arada onaylama testi Acceptance Test'te.
+
+233
+01:23:47,252 --> 01:24:00,832
+Kullanıcı testinde iki aşama var demiştim. Kullanıcıya bunu göndermeden önce kendi içimizde kullanıcıya benzer gruplar oluşturup ve
+
+234
+01:24:02,707 --> 01:24:19,707
+Help menüyü ya da kullanıcı el kitaplarını kendilerine yönlendirip onlar uyarınca çalıştırdıklarında doğru sonuç alabiliyorlar mı? Bunu kendi içimizde önce test ediyoruz. Daha sonra da...
+
+235
+01:24:21,171 --> 01:24:30,811
+Potansiyel kullanıcılara açıyoruz sistemi. Bunlar kullanıyorlar ve onaylıyorlar. Onaylama testi bu şekilde gerçekleşiyor.
+
+236
+01:24:30,811 --> 01:24:40,811
+Şimdi biz bu dersin başından beri yazılım geliştirme sürecindeki adımlara...
+
+237
+01:24:41,684 --> 01:24:47,064
+Karşılık olarak test sürecinde neler yapıyoruz?
+
+238
+01:24:57,811 --> 01:25:09,371
+Adımlarla test edilmemiz gerekiyor. Bunları gördük. Test stratejisi ya da test süreci adımları diyeceğimiz adımlar.
+
+239
+01:26:26,579 --> 01:26:45,579
+Evet, şimdi test süreci adımlarında biz sistem testini de gördük. Sistem testinde, performans testinde yapılanları biraz daha geniş açıklarsam.
+
+240
+01:26:45,904 --> 01:27:03,463
+Performans seviyelerinin belirlenmesi, belirli bir yük altında sistem çalışma zamanı performansının ölçülmesi, sistem ayarlarının tuningin değerlendirilmesi gibi işlemler gerçekleştirilir.
+
+241
+01:27:09,939 --> 01:27:26,599
+Performans Testinde fonksiyonel olmayan gereksinimler karşılanıyor mu? Normal şartlar altında sistem nasıl davranıyor? Sistem trafiğindeki artışlar işlem süresini nasıl etkiliyor?
+
+242
+01:27:26,599 --> 01:27:37,059
+Şimdi tuning olaylarını da denetlemesi söz konusu olduğu için hangi kullanıcı seviyesinde performans problemleri yaşanıyor?
+
+243
+01:27:37,939 --> 01:27:50,279
+Performans seviyelerindeki düşüş sistemin hangi birleşeninden kaynaklanıyor? Bütün bunların cevabını biz performans testiyle görüyoruz.
+
+244
+01:28:02,676 --> 01:28:10,775
+Test süreci adımlarını tamamlayıp test tipleri üzerinde duracağız.
+
+245
+01:28:20,212 --> 01:28:31,872
+Yeni konuya geçmeden önce bir arkadaşınızı seçeyim soru sormak için.
+
+246
+01:28:39,667 --> 01:28:41,667
+[öğrenci]
+
+247
+01:28:46,420 --> 01:28:47,980
+[öğrenci] burada mı?
+
+248
+01:29:04,212 --> 01:29:27,832
+[öğrenci] bir yazılım bitti. Diyelim ki kodlama aşamasından da geçti. Veya her bir kullanıcısı, her bir yazılım geliştirici tamamlıyor kendine verilmiş olan kodu.
+
+249
+01:29:28,659 --> 01:29:39,840
+Bu yazılım üzerinde, elimizde olan bu yazılım üzerinde hangi adımlarla test yaparız? Test sürecindeki adımlarımız nelerdir?
+
+250
+01:29:49,235 --> 01:29:51,796
+Test süreci adımlarımız nelerdir?
+
+251
+01:30:09,555 --> 01:30:11,555
+Test süreci adımları.
+
+252
+01:30:18,804 --> 01:30:20,084
+[öğrenci] [öğrenci].
+
+253
+01:30:22,264 --> 01:30:23,484
+Buradayım hocam.
+
+254
+01:30:24,364 --> 01:30:37,484
+Bir yazılım var, kodlanmış olan. Bunun üzerinde hangi test adımlarını gerçekleştiririz?
+
+255
+01:30:40,203 --> 01:30:41,984
+Önce birim testi yaparız.
+
+256
+01:30:42,203 --> 01:30:42,463
+Evet.
+
+257
+01:30:43,463 --> 01:30:45,463
+Sonra İntek, yani...
+
+258
+01:30:45,971 --> 01:30:47,091
+Künleme Testi.
+
+259
+01:30:47,351 --> 01:30:47,591
+Evet.
+
+260
+01:30:49,671 --> 01:30:50,851
+İntegration Test.
+
+261
+01:30:55,731 --> 01:31:01,731
+Sonra validasyonları, geçerlemeleri yaparız. Sonra da kullanıcı testinde yaparız.
+
+262
+01:31:01,731 --> 01:31:11,731
+Yani validasyonlar zaten sistem testi yapıyoruz. Kullanıcı testi de zaten bir validasyon.
+
+263
+01:31:11,731 --> 01:31:16,731
+Sistem testinde de validasyon da var, verification da var.
+
+264
+01:31:20,787 --> 01:31:46,108
+Validasyon veya Verification diyemiyoruz test adımları olarak. Arkadaşınızın dediği [öğrenci] da sonradan yazdı. Birim test, bütünleme testi, sistem testi, kullanıcı testi bunlar test sürecinde yaptığımız adımlar, yaptığımız sırayla hangi işlemleri yapıyoruz.
+
+265
+01:31:48,595 --> 01:31:58,275
+Hangi test tiplerini uyguluyoruz denildiğinde test tipleri bölümüne geçiyoruz.
+
+266
+01:32:08,948 --> 01:32:15,528
+Bu test sürecinde çalışırken, Karakutu testi.
+
+267
+01:32:16,051 --> 01:32:36,231
+Veya saydam kutu testi yapıyoruz. Ağırlıklı olarak mesela burada da yazdığımız gibi fonksiyonel performans veya dayanıklık testi gibi kullanıcı testi ve sistem testlerinde kara kutu testini daha fazla yapıyoruz.
+
+268
+01:32:37,511 --> 01:32:43,572
+Ağırlıklı olarak zaten bu kara kutu testini uyguluyoruz. Yani bunun anlamı nedir kara kutu testinin?
+
+269
+01:32:44,051 --> 01:33:09,652
+Biz sistemin iç yapısıyla ilgilenmiyoruz. Verdiğimiz gereksinimlere göre bunları sağlıyor mu? Gerçekleştirdiği iş bizim istediğimiz iş mi? Ve istediğimiz performansta bir iş mi? Buna bakıyoruz.
+
+270
+01:33:10,131 --> 01:33:30,252
+O yüzden Black Box Testing adı veriliyor. Buna karşılık yapısal denetimde, modül düzeyinde ve bütünlük çalışmalarında da bazen modül düzeyinde ya da modüller arası gerekliliklerde
+
+271
+01:33:30,868 --> 01:33:43,568
+Program deyimleri, veri akış yolları, kontrol akış yolları test edilerek iç yapısı incelenmesi gerekir.
+
+272
+01:33:45,948 --> 01:33:51,927
+Ve buna da saydam kutu testi diyoruz. White Box Testing, Glass Box Testing.
+
+273
+01:33:52,724 --> 01:34:09,443
+Bu örneğe uyguluyoruz. Saydam kutu testi gerçekleştirdiğimizde. Ya da her ikisinden de bazı özellikleri barındıran Greybox Testing, Grey Kutu Testi yapıyoruz.
+
+274
+01:34:12,271 --> 01:34:26,751
+Bazı özellikleri açısından kara kutu testi, bazı özellikleri açısından da saydam kutu testi olan testtir gri kutu testi.
+
+275
+01:34:33,971 --> 01:34:58,231
+İşlemsel tasarımın kontrol yapısı kullanılır. Bu testle bir modüldeki bütün bağımsız yollar en az bir kez çalışacak şekilde uygulama yapılır. Bütün mantıksal kararlar, doğru ve yanlış durumları denenmiş olur saydam kutu testiyle.
+
+276
+01:34:59,507 --> 01:35:09,788
+Bütün döngüler kendi içinde ve çevresinde işlerle sağlanmaktadır. İç veri yapıları denenerek geçerli güvence altına alınmaktadır.
+
+277
+01:35:09,788 --> 01:35:14,788
+Saydam kutu testi çerçevesinde...
+
+278
+01:35:15,136 --> 01:35:21,896
+Bir temel yol testi ve döngü testi tekniği kullanılmaktadır.
+
+279
+01:35:21,896 --> 01:35:35,956
+Saydam kutu testi uygulaması olan temel yol ve döngü testleri üzerinde duracağız şimdi.
+
+280
+01:35:36,692 --> 01:35:49,311
+Yani burada saydam kutu testi noktasında yaptıklarımızın hepsi iç yapıyla ilişkili olan testler.
+
+281
+01:35:50,032 --> 01:35:53,592
+Temel yollar testi Basic Pet Test.
+
+282
+01:35:57,811 --> 01:36:01,291
+Basic Pet Test bir saydam kutu test türü.
+
+283
+01:36:01,971 --> 01:36:16,431
+Temel Yollar Testi eşittir saydam kutu demeyelim de, temel yol testi bir tür saydam kutu testidir.
+
+284
+01:36:17,171 --> 01:36:27,171
+Aynı zamanda döngü testi de saydam kutu testidir. Çünkü her ikisi de iç yapıyı değerlendirmek üzere hazırlanır.
+
+285
+01:36:39,859 --> 01:36:41,139
+Uygulamayı...
+
+286
+01:36:42,515 --> 01:36:50,655
+Uygulama yolları için bir temel grup oluşturmak temel yollar testinde hedeflenir.
+
+287
+01:36:51,655 --> 01:36:59,635
+Test programları test sırasında programdaki her deyimi en az bir kez uygulayarak denerler.
+
+288
+01:36:59,635 --> 01:37:10,515
+Bu yüzden de kaç tane yol var kontrol akışını düşündüğümüzde bunu öncelikle...
+
+289
+01:37:10,515 --> 01:37:32,255
+Bulmamız gerekir. Uygulaması nasıl olur temel yol testinin? Ayrıntılı tasarım veya kaynak programı dayanarak bir akış grafı çizilir. Akış grafı üzerinde döngüsel karmaşıklık, saiklomatik kompleksli MacGabe'in ölçüsü saptanır.
+
+290
+01:37:32,724 --> 01:37:41,603
+Ki bunu bir sonraki derste göreceğiz. Ölçüm sistemleri dersinde haftaya.
+
+291
+01:37:43,824 --> 01:37:57,163
+Makkayep ölçüsü saptanır. Doğrusal bağımsız yolların temel grubunu, grup sayısını belirlenir.
+
+292
+01:37:57,876 --> 01:38:01,836
+Düğümlerden ve kenarlardan yola çıkarak.
+
+293
+01:38:02,676 --> 01:38:29,096
+Her yolun denenmesi için de birer test programı düzenlemek. Tabi ki bu test programın düzenlemenin altında test verisi hazırlamak yatıyor. Test case 1, test case 2, test case 3 şeklinde. Kaç tane temel yolumuz varsa o kadar test verisi hazırlanır.
+
+294
+01:38:30,676 --> 01:38:47,516
+En az bir tane her yol için olmalıdır. Ama daha fazla da çıkılabilir. Bu da tabii maliyetle değerlendirilerek karar verilecek bir şeydir.
+
+295
+01:38:49,355 --> 01:38:53,976
+Yani test sayısını mümkün olduğunca arttırırız.
+
+296
+01:38:54,579 --> 01:39:06,460
+Ama test sayısını ne kadar arttırabileceğimiz test maliyetiyle ilişkili. O yüzden sonsuz yapmamız mümkün değil.
+
+297
+01:39:07,899 --> 01:39:16,224
+Doğrusal bağımsız yolların temel grubunu ve düğümlerini belirleyip test verisini ona göre...
+
+298
+01:39:16,224 --> 01:39:26,224
+Buna göre her test programını uygulayıp beklenen sonuçla karşılaştırarak temel yol testini...
+
+299
+01:39:26,707 --> 01:39:31,007
+Temel yol testini bu şekilde yürütüyoruz.
+
+300
+01:39:31,608 --> 01:39:48,447
+Temel yol testindeki hedef bir programın iç yapısında kontrol deyimlerini takip ederek kaç tane program akışı var onu hesaplamak.
+
+301
+01:39:51,220 --> 01:40:09,020
+Program akış diagramından takip ederek de bulabiliriz. Bir zaman daha fazla karmaşık olduğu durumlarda kaç tane kontrol akışı var, hepsini takip edip bulabildik mi? Bunun testini yapmak üzere.
+
+302
+01:40:16,000 --> 01:40:44,000
+Bize kaç tane kontrol akışı olduğunu verecektir. Yani saklomatik kompleksli değeri eşittir. Programdaki kontrol akışı, program akış sayısı eşittir. O kadar test case, yani en az program akışını belirten sayısı.
+
+303
+01:40:44,000 --> 01:40:54,600
+Diklomatik kompleksli değeri kadar her bir kontrol akışı için bir test case oluşturmamız gerekecektir.
+
+304
+01:41:03,859 --> 01:41:05,579
+Evet.
+
+305
+01:41:06,579 --> 01:41:13,479
+Eğer program birisi çok kontrol fonksiyonları olabilir.
+
+306
+01:41:14,019 --> 01:41:18,819
+Bir yüzden fazla şey olmaz mı? Maliyet çok yüksek olmaz mı?
+
+307
+01:41:20,039 --> 01:41:23,779
+Yani bütün kontrol yollarının denenmesi mi?
+
+308
+01:41:23,779 --> 01:41:28,779
+Evet. Mesela diyelim ki küçük program bile birkaç tane...
+
+309
+01:41:30,260 --> 01:41:36,320
+For, while veya if şey varsa yollar çok fazla olabilir.
+
+310
+01:41:37,380 --> 01:41:44,400
+Evet. Ama denenmemiş her yol bizim için bir risk olacaktır.
+
+311
+01:41:47,444 --> 01:41:55,444
+O yüzden tam test yaptık diyebilmek için her yolu denememiz gerekir.
+
+312
+01:41:55,444 --> 01:42:06,444
+Mesela ikinci dereceden denklemin kökleri, Delta'ya göre üç farklı yoldan gidecek.
+
+313
+01:42:08,564 --> 01:42:26,144
+İki tanesini çalıştırdık doğru ama üçüncüyü çalıştırmadan teslim edersek, o noktada bir işlem hatası varsa, iki tane veri grubuyla çalıştırdığımızda bu yeterli olmayacaktır.
+
+314
+01:42:27,984 --> 01:42:29,504
+Yani hata riski artacak.
+
+315
+01:42:31,684 --> 01:42:33,044
+Baya bir iş gerektiriyor.
+
+316
+01:42:33,044 --> 01:42:34,404
+Efendim?
+
+317
+01:42:35,188 --> 01:42:41,047
+Veya bir iş gerektirecek o zaman. Test verisini hazırlamak her yol için.
+
+318
+01:42:41,047 --> 01:42:51,047
+Evet, evet. Yani test verisi veya bunu şöyle de ele alabiliriz.
+
+319
+01:43:01,108 --> 01:43:26,587
+Dört tane test yapmamız gerekli. Dört tane test yapabiliyoruz. Üç tane temel yolumuz var. Ama biz rastgele veri kullanırsak, böyle bir temel yol belirlemeden, üç tane test verisini hep aynı yolda kullanmış oluruz.
+
+320
+01:43:27,539 --> 01:43:42,520
+Diğer yolları denemeyiz. O yüzden önce böyle bir çalışma yapmak bize daha fazla şey sağlayacak. Yani hata oranımızı azaltacak.
+
+321
+01:43:52,051 --> 01:43:58,791
+Test etmeden programı teslim edersek, teslimden sonra daha büyük güçlükler yaşayabiliriz.
+
+322
+01:44:04,631 --> 01:44:11,671
+Evet, şimdi bir ara verelim o zaman. 10 dakika. Ondan sonra devam edelim.
+
+323
+01:44:14,051 --> 01:44:17,271
+Veya ara vermeden devam edelim.
+
+324
+01:44:22,484 --> 01:44:24,783
+Daha uygun olur mu sizin için de?
+
+325
+01:44:29,779 --> 01:44:33,199
+Herkes için uygun mu?
+
+326
+01:44:33,879 --> 01:44:34,719
+Benim için uygun.
+
+327
+01:44:35,139 --> 01:44:35,899
+Uygun hocam.
+
+328
+01:44:36,359 --> 01:44:36,939
+Tamamdır.
+
+329
+01:44:51,699 --> 01:45:16,500
+Saydam Kutu Testinden başka döngü testi gerçekleştiriyoruz. Saydam Kutu Testi olarak başka bir testimizde, Temel Yollar Testinden başka döngü testi oluşturmak. Yani ya onu ya onu seçmiyoruz. Her ikisi de.
+
+330
+01:45:17,203 --> 01:45:41,324
+Bizim temel yol testi olarak yapmamız gereken testler, döngüleri değerlendirmek, döngü girdisi, başlangıç değeri, döngüden çıkış koşulları, bunların hepsi sınanmalıdır.
+
+331
+01:45:44,627 --> 01:45:58,847
+Döngü testinin amacı döngü içindeki başlama hatalarının, indeks hatalarının, arttırma hatalarının, döngüyü sınırlama hatalarının bulunmasıdır.
+
+332
+01:45:59,216 --> 01:46:14,416
+Bu test sonunda buradaki döngü yapıları onaylanmış olacaktır. Bunu bir şekilde de görebiliriz. Program döngüleri basit döngüler olabilir.
+
+333
+01:46:27,216 --> 01:46:46,296
+Tekrarlar sırasındaki artışlar, sonsuz döngü olasılığının bakılması. Bunlar araştırılır basit döngülerde. İç içe döngüler, yuvalanmış döngülerde ise.
+
+334
+01:46:47,444 --> 01:47:11,504
+İçteki döngü ile dıştaki döngünün kıyaslanması gerekir. Birbirine bağlı döngülerde bir döngüden diğer döngünün içine kontrol akışı var mı ona bakılır. Bunların hepsi döngü testinde bakılacak şeyler.
+
+335
+01:47:12,079 --> 01:47:39,539
+Demek ki böyle döngü yapıları gibi, döngü testinde ve temel yollardaki her bir yolun test edilmesi gibi işlemler bizim kodu görerek yapacağımız, kod elimizdeyken yapacağımız testler.
+
+336
+01:47:39,952 --> 01:47:47,672
+Bilim testte ağırlıklı olarak saydam kutu testi uyguluyoruz test tipi olarak.
+
+337
+01:47:49,503 --> 01:48:09,263
+Bunun dışında, birim testinden başka, bütünlük testinde de birimler arasındaki ara birimleri test ederken, genel veri yapılarını test ederken, yine saydam kutu testi gerçekleştirebiliyoruz.
+
+338
+01:48:11,103 --> 01:48:15,363
+Diğer test tipi, kara kutu testi demiştik.
+
+339
+01:48:17,391 --> 01:48:36,171
+Yazılımı görmeden, yani yazılımın iç yapısını görmeden yapılan testlerde, bu testlerde, Karakutu testinde,
+
+340
+01:48:38,899 --> 01:48:49,239
+Yazılımın içinde algoritmanın nasıl olduğu, döngüleri nasıl yaptığınız bu testlerde önemli değil. Bunu görmek istemiyoruz.
+
+341
+01:48:49,239 --> 01:49:06,880
+Kullanıcı bakış açısıyla, dışarıdan programı kullanacak kişilerin bakış açısıyla bu yazılım bizim başta verdiğimiz gereksinimlere uygun mu onu kontrol etmek istiyoruz biz.
+
+342
+01:49:06,899 --> 01:49:10,800
+Bunun için kara kutu testi yapıyoruz.
+
+343
+01:49:20,884 --> 01:49:30,184
+Yazılımın bütünlemesi sırasında uygulanan, yazılım ara birimi üzerinde yapılan sınamadır.
+
+344
+01:49:30,184 --> 01:49:35,184
+Yazılım bütünlemesi çerçevesinde...
+
+345
+01:49:38,676 --> 01:49:57,376
+Saydam Kutu Testi de uygulanabilir ama bu da uygulanır. Bu testle yazılım işlevlerinin yerine getirildiği, girdilerin kabul edildiği, çıktıların doğru olarak sağlandığı gösterilmesi hedeflenir.
+
+346
+01:50:00,000 --> 01:50:20,000
+Mantıksal iç yapısından çok temel sistem modelini denemiş olmak önemlidir. Bu nedenle kara ve saydam kutu testleri birlikte kullanılır. Yazılımın iç yapısını da...
+
+347
+01:50:21,011 --> 01:50:34,051
+Dışarıdan gelen sorulara girdilere doğru cevap vereceği de yine Karakutu Testi'nde ortaya konur.
+
+348
+01:50:34,051 --> 01:50:39,951
+Karakutu Test modeli şu şekilde.
+
+349
+01:50:46,515 --> 01:51:03,515
+Karakutu test modelinde girdiler veriyoruz test verisi. Bu genellikle uygulamanın senaryolarına göre verilen testler, veri.
+
+350
+01:51:08,595 --> 01:51:35,735
+Girdiler değil, anormal davranışlara sebep olacak girdiler de verilir. Buna karşı sistemin davranışı ne olacaktır? Bunu da ölçmek istenir kara kutu testinde. Girdi sınava verisi ve çıktı verisi gibi. Bu kara kutu testinin yapısı bu şekilde.
+
+351
+01:51:36,564 --> 01:51:49,444
+Karakutu testinde bu şekilde genel olarak çalışıyoruz. Karakutu testinin alt çeşitleri üzerinde de duralım.
+
+352
+01:52:04,787 --> 01:52:08,363
+Karakutu Test yöntemlerini görelim.
+
+353
+01:52:15,507 --> 01:52:33,707
+Öncelikle kara kutu test yöntemleri, eşdeğerli bölümleme, sınır değer analizi, neden sonuç graf çizimi ve veri onaylama testi gibi testler kara kutu testidir.
+
+354
+01:52:41,587 --> 01:53:00,148
+Karakutu testleriyle işlevsel gereksinimleri deniyoruz. Yani kullanıcı ve dışarıdan bakanların gerçekleştirdiği testler bunlar.
+
+355
+01:53:00,627 --> 01:53:07,287
+Programın bütün işlevsel gereksinimlerini denemek üzere bir dizi girdi ve durumlar oluşturulur.
+
+356
+01:53:07,287 --> 01:53:18,408
+Yani burada iç yapıdaki bütün kontrol deyimlerini deneyim endişesi yok dışarıdan bakan kullanıcılar olarak.
+
+357
+01:53:19,328 --> 01:53:24,547
+Ben farklı gereksinimlerimi söylemiştim.
+
+358
+01:53:26,323 --> 01:53:46,323
+Her bir çeşidine girdiğimde, ona uygun veri girdiğimde doğru cevabı alabiliyor muyum? Bunu test ederiz. Bu test yine saydam kutunun alternatifi değil. Buna tamamlayıcı nitelikte.
+
+359
+01:53:51,764 --> 01:54:03,543
+Ara birim hataları, veri yapılarında ve veri tabanındaki erişim hataları, performans hataları gibi hatalar bulunur.
+
+360
+01:54:13,524 --> 01:54:14,724
+Farklı
+
+361
+01:54:15,636 --> 01:54:35,596
+Karakutu testi olarak isimlendirilen farklı yöntemler vardır demiştik. Eş değerli bölümleme, Ekeolans Partitioning ve sınır değer analizi, Boundary Value analizini biz bunların içinden çekip onları daha ayrıntılı olarak göreceğiz şimdi.
+
+362
+01:54:43,636 --> 01:55:09,116
+Bu programın bir akış grafını oluşturabiliyoruz. Kaç tane akış yolu var? Bunu seçip her birisi için test yapıyoruz. İdeali.
+
+363
+01:55:11,199 --> 01:55:21,139
+Karakutu Testinde ise bizim bazı senaryolarımız var. Bu senaryolara göre girdiler oluşturuyoruz.
+
+364
+01:55:21,139 --> 01:55:32,920
+Ama burada programın girdi alanını, veri girişi diyelim ki bir yaş verisi girilecek. 0'dan 99'a kadar.
+
+365
+01:55:36,724 --> 01:55:59,623
+Biz sınıflama yapıyoruz önce. Belli aralıklar oluşturuyoruz. Bu aralıklara göre her aralıktan değer giriyoruz. Rastgele veri girdiğimizde hep aynı yere düşebilir. Bu yüzden bu aralıklardan seçiyoruz.
+
+366
+01:56:02,579 --> 01:56:11,260
+Daha az sayıda testle daha iyi bir sonuca varabilmek için bu bölümleme.
+
+367
+01:56:13,652 --> 01:56:31,492
+Yolunu izliyoruz. Mesela, az önce verdiğim örnek 0.99 arasındaki yaş bilgisi için 20'ye kadar, 21 ile 40 arasında, 41 ile 60 arasında.
+
+368
+01:56:32,000 --> 01:56:53,460
+Bu, 60 ve daha üstü içinde başka bir sınıf oluşturduk diyelim ki, başka bir aralık. Her birinden bir tane değer alıp çalıştırdığımızda bu uzayı, veri uzayını daha iyi değerlendirmiş oluruz.
+
+369
+01:56:58,707 --> 01:57:06,567
+Şekil olarak baktığımızda eş değerli bölümlemede yine geçersiz girdi giriyoruz sonucu test etmek için.
+
+370
+01:57:06,688 --> 01:57:10,207
+Geçerli girdiği de sınıflara bölerek veriyoruz.
+
+371
+01:57:10,207 --> 01:57:15,707
+Ve çıktılarımızda belli sınıfların karşılığı olarak alınıyor.
+
+372
+01:57:15,847 --> 01:57:18,807
+Sistem de bizim hazırladığımız yazılım sistemi.
+
+373
+01:57:19,887 --> 01:57:24,367
+Başka bir kara kutu testi örneği.
+
+374
+01:57:24,884 --> 01:57:44,963
+Sınır değer analizi. Sınır değer analizi test verisinin girdi alanı ya da çıktı serisi sınıflarının, veri yapılarının sınırlarından veya uç değerlerinden seçilmesi tekniğidir.
+
+375
+01:57:45,376 --> 01:58:09,815
+Yani en büyük, en küçük veya en az beklenen değerler ve parametreler seçilir. Hataların genel olarak merkezden çok kenarlarda, yani hata varsa genellikle sınırlardadır mantığıyla sınır değerleri üzerinde test gerçekleştirilir.
+
+376
+01:58:12,851 --> 01:58:30,792
+Ve girdi alanları özellikle test edilir. Sınır değer boundary value analizi de bu şekilde sınır değerleri içeriyor.
+
+377
+01:58:33,492 --> 01:58:37,011
+Buraya kadar anlaşıldı mı? Sorunuz var mı?
+
+378
+01:58:39,091 --> 01:58:45,532
+Test tipi ve test süreci adımlarını tamamlamış olduk.
+
+379
+01:59:13,908 --> 01:59:23,708
+[öğrenci], test tipi ve test süreci adımı nedir?
+
+380
+01:59:25,568 --> 01:59:37,408
+Test süreci adımları birim testi ile başlıyor. Ardından bütünlük testi, sistem testi, kullanıcı kabul testlerinden bahsettik.
+
+381
+01:59:37,779 --> 01:59:46,099
+Sonrasında Test Teknikleri başlıkları var. Karakutu Testi, Saydam Kutu Testi, Garik Kutu Testi.
+
+382
+01:59:48,679 --> 01:59:58,699
+Saydam Kutu Testinde HEDEP yazılımda, yazılımın içeriğiyle ilgili, yazılımda doğru algoritma belirledik mi? Amaç o.
+
+383
+01:59:58,699 --> 02:00:00,000
+Önce Karakutu Testi.
+
+384
+02:00:00,000 --> 02:00:06,880
+O da daha çok kullanıcı tarafıyla ilgili. Yani yazılım işlevlerini yerine getiriyor mu o soru?
+
+385
+02:00:06,880 --> 02:00:07,180
+Evet.
+
+386
+02:00:07,180 --> 02:00:08,480
+Temel sorumuz.
+
+387
+02:00:09,260 --> 02:00:25,060
+Evet. Bir de saydam kutu testinde, özellikle temel yol testinde bütün program akışındaki değerleri, bütün program akışını test edebiliyor muyuz?
+
+388
+02:00:27,600 --> 02:00:35,119
+Onu yapmaya çalışıyoruz daha doğrusu. Evet, teşekkürler.
+
+389
+02:00:47,923 --> 02:01:10,184
+Bir de keşif testi var. Keşif testi ürün spesifikasyonu veya gereksin belgesi olmadan yazılımı genel olarak bir çalıştırıp nasıl olduğuna bakmak, çalışıp çalışmadığına, çok hatalar verip vermediğine genel olarak bir değerlendirme yapmak.
+
+390
+02:01:15,060 --> 02:01:20,000
+Hata arama ve hata bulma işlemi.
+
+391
+02:01:26,163 --> 02:01:42,703
+Test işlemiyle hataları bulduk. Hataları giderme, debug aşamasında da test sonucunda, sınama sonucunda saptanan hata ve eksiklerin nedenini bulup düzeltmektir.
+
+392
+02:01:42,703 --> 02:01:50,844
+Hataları giderme, debug işlemi, sonra nedenlerini araştırma.
+
+393
+02:01:52,467 --> 02:01:59,047
+Bug nedenleri genellikle gereksinim analizinden kaynaklanıyor.
+
+394
+02:02:01,047 --> 02:02:14,547
+Gereksinim analizi hataları en fazla bug nedeni oluşturuyormuş.
+
+395
+02:02:15,007 --> 02:02:39,987
+Ondan sonra tasarım hatası, sonra kod hatası geliyor gibi bir şey var. Bu aslında tabii daha eski bir değerlendirme. Günümüzde bu biraz daha azaldı. Yani gereksinim hataları biraz daha azaldı. Bunun nedeni nedir acaba?
+
+396
+02:02:43,123 --> 02:03:03,663
+Aslında baktığımızda ecal yazılımlar, çevik yazılımlar, yazılım geliştirme süreç modelleri yazılım geliştirmede kullanıldığından beri biraz daha bu gereksinim hatalarının azaldığı söyleniyor.
+
+397
+02:03:05,224 --> 02:03:08,684
+Acaba bunu yorumlayabilir mi [öğrenci]?
+
+398
+02:03:08,684 --> 02:03:10,123
+[öğrenci] Ömü.
+
+399
+02:03:13,363 --> 02:03:16,323
+Soruyu tekrarlayayım.
+
+400
+02:03:18,643 --> 02:03:24,264
+Şimdi bizim şöyle bir diagramımız var ama daha eski.
+
+401
+02:03:24,724 --> 02:03:42,044
+Gereksinim hataları en fazla hatalardır. Evet, ecel yöntemlerle bu hatalar azaldı. Ecel yöntemin hangi özelliği bu hataların azalmasına neden olmuştur acaba?
+
+402
+02:03:45,004 --> 02:03:49,004
+Gereksinimlerin ufak parçalara bölünmesi olabilir mi hocam?
+
+403
+02:03:49,332 --> 02:03:50,732
+Olabilir, o da bir neden.
+
+404
+02:03:50,732 --> 02:03:55,132
+Yani ilk başta waterfall'da bütün bir gereksinim dosyası hazırlanıyor.
+
+405
+02:03:55,812 --> 02:04:01,032
+Ve tabii zamanla git gel ve artı testler ve geliştirme sırasında bu gereksinimler değişiyor.
+
+406
+02:04:03,032 --> 02:04:06,072
+Ha evet, ben [öğrenci] olmuştum.
+
+407
+02:04:06,612 --> 02:04:10,132
+Ben seslerinizi karıştırıp seslerinizi takip edemedim.
+
+408
+02:04:10,852 --> 02:04:13,972
+Pardon, o zaman [öğrenci] devam etsin, ben sesliyorum.
+
+409
+02:04:20,724 --> 02:04:28,884
+Evet, müşteriler de devreye giriyor.
+
+410
+02:04:40,948 --> 02:05:03,828
+Evet, proje geliştirme sürecinin bir parçası kullanıcılarda. Ecail yöntemleri anlatırken birkaç özelliklerini saymıştık. Bir artımlı süreç var az önce. Diğer arkadaşınız kimdi konuşan?
+
+411
+02:05:05,619 --> 02:05:07,619
+Benim [öğrenci] Hocam.
+
+412
+02:05:07,619 --> 02:05:17,619
+Tamam. Bir artımlı süreç var. İnkremental süreç. Özellikle XP'de. Diğerlerinde de var bu çevre.
+
+413
+02:05:17,619 --> 02:05:30,619
+Gereksinimler gerçekleştirildikçe küçük küçük parçalarla daha dinamik bir yapı oluşturuluyor. Bu da doğru.
+
+414
+02:05:33,619 --> 02:05:50,619
+Açıdan baktığımızda o da doğru. Müşteriler de ekibin bir parçası olduğu için bu çalışma sürecinde müşteri...
+
+415
+02:05:51,828 --> 02:06:11,828
+Daha dinamik bir şekilde isteklerini bildiriyor, kontrol ediyor. Ekip içinde çalıştığı için Waterfall'dakine göre daha hızlı sorun gideriyor. O yüzden her ikisi de...
+
+416
+02:06:13,395 --> 02:06:36,595
+Ecel süreçlerin kullanıldığında, bu modeller kullanıldığında gereksinimlerden oluşan bugları daha azaldığını görüyoruz bu bakımdan. Daha faydalı olduğunu görüyoruz.
+
+417
+02:06:37,076 --> 02:06:59,775
+Evet, teşekkürler. Şimdi bu hata düzeylerine baktığımızda, hata düzeyleri farklı olabilir. Ölümcül hatalar, kritik hatalar, büyük hatalar, orta hatalar, küçük hatalar, görünüm hataları gibi.
+
+418
+02:07:00,287 --> 02:07:23,867
+Hata düzeyleri olabilir. Bu hata düzeyleri, yani mutlaka böyle sıralanacak bir şey değil. Yazılım ekibi hata sınıflaması isimlendirmesi için baştan kendi standartlarını oluşturup ona göre bütün programlardaki hata sınıflamasını yapabilir.
+
+419
+02:07:27,028 --> 02:07:46,028
+Burada altı başlık hata düzeyi görüyoruz. Bunu dört aşamada hata düzeylemesi yapıldığı da olabilir.
+
+420
+02:07:54,515 --> 02:08:09,315
+Testin devamını engelleyecektir. Yani testin durdurulması gerekir. Bu hata düzeltilmeden teste devam edilmemesi gerekir.
+
+421
+02:08:13,779 --> 02:08:30,800
+Kritik hata, yine ekibin baştan kalite kararlarını vermesine göre kritik hatalarda testin durdurulmasına yol açmaz.
+
+422
+02:08:32,688 --> 02:08:48,867
+Ama test devam edebilir. Ama bu mutlaka düzeltilmesi gerekir. Ondan sonra yazılım teslim edilir. Yine büyük hatalarda da yazılım teslim edilmemesi öğütlenir.
+
+423
+02:08:48,867 --> 02:08:54,568
+Büyük hatalar varken orta hatalarda test devam edebilir.
+
+424
+02:08:56,756 --> 02:09:20,115
+Ürün hatayla teslim edilirse telafisi daha zor olabilir. Ama çok kritik, yani çok acil durumlar varsa teslim edip bir yandan da çözüm bulunmaya çalışılabilir gibi, yani hata sınıflarına göre nasıl davranacağımızı belirten.
+
+425
+02:09:21,747 --> 02:09:41,287
+Durum açıklamaları vardır. Küçük hatalar varsa test devam edebilir. Ürün bu hatayla da teslim edilebilir. Görünüm hataları sadece renk, font, büyüklükle ilişkili hatalar. Bunlarla teslim işlemi gerçekleştirilebilir.
+
+426
+02:09:48,532 --> 02:10:03,352
+Diğer konuya geçmeyeceğim. Önümüzdeki hafta işleyeceğimiz konu yazılım ölçümü, ölçütler üzerinde olacak.
+
+427
+02:10:04,132 --> 02:10:09,692
+Maccape ölçütünün saklamatik kompleksinin bulunmasını da burada inceleyeceğiz.
+
+428
+02:10:09,692 --> 02:10:14,732
+Bu saydam kutu temel yol testinde geçen bölümü de.
+
+429
+02:10:16,083 --> 02:10:21,643
+Genel olarak dersle ilişkili sorunuz var mı?
+
+430
+02:10:38,899 --> 02:10:44,179
+Bugün anlattıklarım veya ödevle ilişkili bir sorunuz var mı?
+
+431
+02:10:45,639 --> 02:10:47,899
+Hocam ben ödevle ilgili bir şey sorabilir miyim?
+
+432
+02:10:48,159 --> 02:10:48,439
+Tabii.
+
+433
+02:10:49,399 --> 02:10:54,579
+Bu SRS dökümanını önümüzdeki haftaya kadar teslim etmemiz mi gerekiyor yoksa…
+
+434
+02:10:54,579 --> 02:11:03,579
+Hayır. Hangi şeyi kullanacağınız, hangi…
+
+435
+02:11:03,807 --> 02:11:28,807
+Yazılımı seçtiğiniz önemli. Hangi yazılımı seçtiğinizi göstereceksiniz. Bu hafta sonuna kadar. Önümüzdeki hafta beşinci hafta oluyor. Ondan sonraki hafta, altıncı haftada gereksinim dokümanını...
+
+436
+02:11:29,359 --> 02:11:32,519
+Teslim etmenizi istiyorum.
+
+437
+02:11:37,587 --> 02:11:50,387
+Bayağı bana gönderen oldu ama hala göndermeyen var mı? İçinizde hangi konuda proje yapacağını belirten?
+
+438
+02:11:57,747 --> 02:11:59,339
+Bu arada...
+
+439
+02:12:02,355 --> 02:12:29,615
+Makaleyle ilişkili daha az cevap geldi. Makale üzerine de hangi makaleden yola çıkarak hangisini kullanacağınız, hangi konuyu hangi makaleyle başlangıç yaparak
+
+440
+02:12:30,068 --> 02:12:48,408
+Kullanacaksınız. Bunun için bir şey vermiştim. 2015 sonrasında çıkan, bu uluslararası dergilerde çıkan bir makale sizin yola çıkış makaleniz olmalı.
+
+441
+02:12:48,948 --> 02:13:10,388
+Bu makaleyle birlikte göndermeniz gerekiyor konunuzu diye. Yani sadece ben şu konuda çalışacağım demeniz yeterli değil. Önümüzdeki hafta yapacağımız derse kadar bunu hazırlamanız gerekiyor demiştim. Altıncı hafta.
+
+442
+02:13:10,771 --> 02:13:22,171
+Bu gereksinim analizi belgesi için beşinci haftada makalenizin bildirilmesi için son hafta.
+
+443
+02:13:25,511 --> 02:13:26,572
+Bu çalışmalarınız nasıl?
+
+444
+02:13:26,572 --> 02:13:28,211
+Hocam ben bir şey sorabilir miyim?
+
+445
+02:13:28,211 --> 02:13:28,452
+Evet.
+
+446
+02:13:29,844 --> 02:13:43,163
+Bu proje konusuyla ilgili ben size mail atmıştım. Olumlu ya da olumsuz bir geri dönüş yapacak mısınız? Ya da maili aldınız mı?
+
+447
+02:13:43,163 --> 02:13:54,824
+Aldım, maili aldım ama arka arkaya hepinizden geldiği için. Şimdi derste buna ayırmadım. Geri dönüş yapacağım.
+
+448
+02:13:55,667 --> 02:13:57,807
+Tamam hocam, teşekkürler.
+
+449
+02:13:58,187 --> 02:14:15,167
+Hatta bu arada siz de kendiniz kontrol edin. Şimdi size bir gereksinim analiz belgesi gösterdim. Buradan yola çıkarak, yani yazılımınız çok büyük olabilir. Ben bunun şu modülünü yapacağım diye bana bir ek yazı gönderebilirsiniz.
+
+450
+02:14:23,283 --> 02:14:33,363
+Benim yazılımımda böyle bir gereksinim çıkarabilirim dediğiniz bir yazılımsa hiçbir değişiklik yapmayın.
+
+451
+02:14:38,163 --> 02:14:40,064
+Bu konuda başka soru var mı?
+
+452
+02:14:51,060 --> 02:15:01,779
+Evet, önümüzdeki hafta herkesin makale için öneri de göndermesini bekliyorum.
+
+453
+02:15:05,739 --> 02:15:15,100
+Bu önümüzdeki haftada ayrıca ölçümler üzerinde duracağız, yazılım ölçümleri üzerinde duracağız.
+
+454
+02:15:18,323 --> 02:15:31,203
+Evet, o zaman bugünkü dersi tamamlayabiliriz. Son olarak yine sorayım. Dersle ya da projelerle ilişkili sorunuz var mı?
+
+455
+02:15:45,619 --> 02:15:56,839
+Tamam. O zaman dersi tamamlıyorum, bitiriyorum. İyi haftalar diliyorum. İyi günler hocam. İyi haftalar hocam. İyi günler hocam.

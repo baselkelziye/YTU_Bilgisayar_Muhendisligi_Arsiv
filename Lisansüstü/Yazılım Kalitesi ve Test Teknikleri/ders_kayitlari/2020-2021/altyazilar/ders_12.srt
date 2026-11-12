@@ -1,0 +1,3787 @@
+1
+00:00:17,140 --> 00:00:17,900
+Günaydın.
+
+2
+00:00:19,320 --> 00:00:20,500
+Günaydın hocam.
+
+3
+00:00:21,460 --> 00:00:33,600
+Evet, ben de önümüzdeki geçen hafta yaptığımız sıralamaya baktım şu anda. İlk önce [öğrenci] anlatacakmış. Hazır olduğuna sevindim [öğrenci].
+
+4
+00:00:35,980 --> 00:00:42,920
+Evet, diğer arkadaşlarınız da bayağı tamamlandı. 13 kişi şu anda var.
+
+5
+00:00:43,667 --> 00:01:02,147
+Evet, geçen haftaki sıralamamıza göre [öğrenci] önce anlatacak. Sonra [öğrenci]. [öğrenci] burada mı? Burada. [öğrenci]. [öğrenci]. Sonra [öğrenci] ve [öğrenci] anlatacak.
+
+6
+00:01:05,748 --> 00:01:22,188
+Sonra [öğrenci]'le [öğrenci] anlatacak. Geçen hafta da konuşmuştuk. Geçen hafta anlatan daha az arkadaşınız vardı. Beş kişi anlattı. Bu hafta daha çok kişi anlatacağı için süremizi biraz daha planlı kullanacağız.
+
+7
+00:01:30,900 --> 00:01:35,500
+9'a kadar yükleyen arkadaşlarınızın sayısına tekrar bakacağım.
+
+8
+00:01:42,260 --> 00:02:06,060
+Evet, ben şey yapmadan, sen yükleyebilirsin slide'ını. Herhangi bir izin vermeme gerek olmuyor. Hemen başla, 15 dakikayı geçmesin. Yani yaklaşık planladığım 12-13 dakika ama ilk bir 15 dakikayla başlayalım bakalım.
+
+9
+00:02:06,195 --> 00:02:10,536
+Hocam, bir çıkıp tekrar girmem gerekiyor. Zoom'a ben ekran paylaşıma izni vermemişim de.
+
+10
+00:02:11,036 --> 00:02:16,055
+Tamam, tamam. Tamam. İstersen önce [öğrenci] başlasın.
+
+11
+00:02:36,596 --> 00:02:37,756
+Hocam sesim nasıl geliyor?
+
+12
+00:02:39,016 --> 00:02:40,475
+Evet, evet duyuluyor.
+
+13
+00:02:40,855 --> 00:02:41,975
+Görüntü açayım mı?
+
+14
+00:02:43,376 --> 00:02:52,635
+Senin görüntünü açmana gerek yok. Ben de kapatacağım şimdi. O düşürebiliyor bazen hızı. Ekran paylaşımı yap. Tamam, çok güzel görünüyor.
+
+15
+00:02:53,756 --> 00:02:59,096
+Tamam. Hocam bir de ben bunu sisteme yüklemeyi unutmuşum ama gerekli miydi sisteme yüklememiz?
+
+16
+00:02:59,520 --> 00:03:09,460
+Evet, yükleyecektik. Ona göre şey yapıyorduk. Tamam, sen dediğin şeyde hazırsın. Sonra gönderirsin bana.
+
+17
+00:03:09,460 --> 00:03:25,900
+Mail atayım o zaman. Merhaba arkadaşlar. Benim konum GitHub ripolarının benzerliğini değerlendirmek için otomatize bir yaklaşım. Bu aslında açık kaynak dünyasındaki bizim projemize benzer ripoları bulmamızı sağlıyor.
+
+18
+00:03:26,484 --> 00:03:37,924
+Açık kaynak ripolarının mevcut işçil ekserliklerini uyarlayarak yeni yazılım sistemleri geliştirilebilir. Hepimiz bunu yapıyoruz, kullanıyoruz. Bu tarz bir yazılım geliştirme sürecinde bu ripolar...
+
+19
+00:03:37,924 --> 00:03:40,644
+Tekrar konunun başlığına dönebilir misin [öğrenci]?
+
+20
+00:03:41,063 --> 00:03:41,604
+Tabii hocam.
+
+21
+00:03:56,819 --> 00:03:59,359
+Biz bu konuyu seninle konuşmuş muyduk?
+
+22
+00:04:00,039 --> 00:04:01,819
+Evet hocam, size yollamıştım.
+
+23
+00:04:04,599 --> 00:04:10,300
+Atlamıştım. Çünkü biraz bu dersle çok ilişkili değil aslında.
+
+24
+00:04:13,060 --> 00:04:17,740
+Biraz aslında yazılım kalitesiyle alakalı test işlevlerinden çok.
+
+25
+00:04:19,199 --> 00:04:20,300
+Evet, evet.
+
+26
+00:04:24,339 --> 00:04:28,339
+Tamam, belki kaliteye biraz daha ağırlık vererek işlediysen konuyu.
+
+27
+00:04:29,699 --> 00:04:32,839
+Aslında biraz yöntemlerden bahsediyorum daha çok ama.
+
+28
+00:04:33,899 --> 00:04:38,839
+O zaman mümkün olduğunca özetleyerek anlat. 10 dakikayı geçmesin seninki.
+
+29
+00:04:38,839 --> 00:04:51,740
+Tamam hocam. Bu ripolarda bir sürü değerli bilgi bulunuyor ve bu değerli bilgileri mine etmemiz, yani çıkarmamız gerekiyor ki kendi projemize benzer ripoları bulabilelim.
+
+30
+00:04:52,115 --> 00:05:03,535
+Ayrıca bu benzer projelerin tekrar tekrar kullanılması, bizim mevcut projemizin de başka projelerde kullanılabilecek göz önüne bulunduğunda yazılım gelişimi maliyet açısından pek çok fayda sağlıyor.
+
+31
+00:05:04,375 --> 00:05:11,895
+Ayrıca burada bir söz var. Mevcut bir projenin tekrar kullanılmasıyla yazılan kodun kalitesi sıfırdan oluşturulmuş bir kodun ilk versiyonlarından daha iyidir diyor.
+
+32
+00:05:13,204 --> 00:05:25,584
+Şimdi bu ripoların mine edilmesi, işlenmesi. Buradaki amaç geliştiricilere yazılım geliştirme aşamasında anlamlı öneriler sunarak onları desteklemektir. Bu öneriler mevcut sistemlere ve geçmiş deneyimlere dayanarak oluşturulur.
+
+33
+00:05:26,291 --> 00:05:41,331
+Örneğin bir geliştirici yeni bir proje üzerinde çalışırken diğer benzer projelerle karşılaştırmaya dayalı olarak hangi kütüphaneleri kullanması gerektiğini görebilir. Aynı zamanda geliştiriciyi izleyerek daha anlamlı önerilerde bulunan idelerde geliştirebiliriz.
+
+34
+00:05:42,512 --> 00:05:45,812
+Burada yazılım benzerliği kavramı var. Bu hesaplamayı yapacağız.
+
+35
+00:05:46,192 --> 00:06:11,051
+Kopyala yapıştır hepimizin kullandığı bir işlev. Ama burada kodun kopyalanması, çalınması gibi bir olayın önünü açıyor bu fonksiyonelite. Burada kesin bir benzerlik tanımı, yani bir kod şu koşulları sağlıyorsa kesin kopyalanmıştır, çalınmıştır demek zordur. Çünkü öyleri karşılaştırmak için kullanılan yönteme bağlı olarak çeşitli benzerlik türleri tanımlanabilir.
+
+36
+00:06:12,819 --> 00:06:22,399
+Açık kaynaklı yazılımlar, iki proje farklı alanlar için çeşitli işlevler içerse bile aynı soyutlamayla açıklanan bazı özellikleri uyguluyorsa benzer kabul edilir.
+
+37
+00:06:28,180 --> 00:06:49,260
+Yazılım kalitesinin arttırılması için geliştiriciler projelerini karşılaştırabilir işlelere sahip, olgun, açık kaynak projelerinden öğrenerek oluşurlar. Bu hepimizin yaptığı bir olay. Hepimiz benzer projelere bakıp oradan bir ders anlam çıkarmaya çalışıyoruz. Bu yüzden bu geliştiricilerin benzer projeleri bulmasını kolaylaştıracak uygun araçlar kullanması gerekiyor.
+
+38
+00:06:49,939 --> 00:06:58,620
+Burada benzerlik kavramı kullanıcı için uygun öğeleri seçmek için kullanılan içerik ve işbirlikçi filtreleme tabanlı öneri sistemlerinin temelini oluşturuyor.
+
+39
+00:06:59,199 --> 00:07:07,959
+Burada içerik tabanlı filtreleme, mesela yemek sepetinde olun, bir yemek öneri sistemi yapıyorsunuz.
+
+40
+00:07:07,959 --> 00:07:16,720
+Birbirine benzeyen yemekleri daha önceden belirtmişsek, mesela yemeklerin içeriğini, içinde bulunan şeyler, ne bileyim kalorisi gibi şeyleri daha önceden biliyorsak.
+
+41
+00:07:16,848 --> 00:07:31,028
+Bu senaryoda kullanıcıya benzer yemekleri önerebilir. Bir de sistemin yemekler hakkında hiçbir fikri olmadığı bir senaryo vardır. Bu senaryoda kullanıcının verdiği siparişe yakın siparişler veren benzer kullanıcıları bulabiliriz.
+
+42
+00:07:31,028 --> 00:07:39,288
+Veya benzer yaşta konumda olan kullanıcıları bulabiliriz. Onların verdiği siparişler üzerinden öneride bulunabiliriz. Buna da işbirlikçi fikreleme deniyor.
+
+43
+00:07:40,403 --> 00:07:47,283
+Yazılım sistemleri arasındaki benzerliklerin ölçülmesi göz korkutucu bir görev olarak kabul edilmiştir. Bu da bir makalede bulunan bir sözdü.
+
+44
+00:07:48,804 --> 00:07:55,524
+Şimdi yazılım benzerliğinde düşük seviyeli benzerlik ve yüksek seviyeli benzerlik olmak üzere iki temel benzerlik kavram var.
+
+45
+00:07:55,524 --> 00:08:00,463
+Düşük seviyeli benzerlik, yani kod bazındaki benzerlik diyebiliriz. İki kodun birbirine benzemesi.
+
+46
+00:08:01,012 --> 00:08:18,531
+Yüksek seviyeli benzerlik de projenin kodundan bağımsız meta verilerine dayanır. Mesela ritmi dosyaları veya koment satırları, projeler kitapta bulunduğu için yıldızlama etkinlikleri, aynı kullanıcılar tarafından yıldızlanmıştır gibi benzerlik şeylerini dikkate alıyor.
+
+47
+00:08:20,531 --> 00:08:28,800
+Bu sınıflandırma slide boyunca kullanılmıştır. Benim ele aldığım makaleden önce benzerlik hesaplamak için 3 tane...
+
+48
+00:08:28,800 --> 00:08:48,659
+Daha makale yazılmış, benim makalemin referans gösterdiği. Burada ilki Muda Blue, 2004 yılında çıkmış. Buradaki benzerliği hesaplamak için kaynak kodunu kullanan bir yaklaşım gösteriyor. Değişken adları, fonksiyon adları gibi tanımlamaları çıkartıyor ve yorum satırı gibi etkisiz faktörleri siliyor bir ön işleme aşamasında.
+
+49
+00:08:49,107 --> 00:09:12,887
+Burada Latent Semanting Analiz, bundan daha sonra LSA olarak bahsedeceğim. Teknikin uygulanmasıyla yazılım bir belge olarak değerlendirilir ve her tanımlayıcı bir kelime olarak kabul edilir. Bu işlem geniş bir metin topluluğuna uygulanan istatiksel hesaplamalar yoluyla kelimelerin bağlamsal kullanım anlamlarını çıkarmak ve temsil etmek için kullanılır. Aslında doğal durum işlemeye benzer bir yöntem sağlıyor diyebiliriz.
+
+50
+00:09:12,887 --> 00:09:16,887
+Burada Muda Blue'nun uygulama adımları var. Ocak bunu geçebilirim.
+
+51
+00:09:17,235 --> 00:09:34,056
+Daha sonra 2012 yılında Klan diye bir algoritma çıkmış Macmillan'ın makalesinde. Burada Java üzerinden gidilmiş. Benzer Java uygulamalarını otomatik olarak algılamak için paket sınıf şerarşilerine karşılık gelen anlamsal katmanları kullanan bir yaklaşım içerir.
+
+52
+00:09:35,175 --> 00:09:41,076
+Klan, benzerliği ve anlamsal bağlantıları hesaplamak için framework'a dayalı çalışır. Yani Java'ya dayalı demiştik.
+
+53
+00:09:41,423 --> 00:09:57,403
+İki uygulamanın aynı soyutlamayla açıklanan gereksinimlerini uygulayan API çağrılarına sahip olması durumunda iki uygulamanın benzer olacağı varsayımına dayanır. Yani iki uygulama ortak API kullanıyorsa başka bir uygulamaya göre daha benzerdir denilmektedir.
+
+54
+00:09:57,403 --> 00:10:06,564
+Bu da bir uygulamanın benzerliğini sağlamak için API çağrılarını yine semantik answer metoduyla az önce bahsettiğim metodda
+
+55
+00:10:06,895 --> 00:10:32,055
+Girde olarak yazılım uygulamasının tamamını kullanan klan kaynak kod dosylarını bir terim belge matrisi yani term document matris olarak temsil eder. TDM belge setinin özelliklerini saklamak için kullanılır ve her sütünün bir belgeye her satırın bir terime karşılık geldiği matristir. Matristeki her üzere de karşılık gelen terimin görünümü frekansıdır. Burada bir TDM örneği var.
+
+56
+00:10:34,740 --> 00:10:48,539
+Muda Blue ve Klan'ı karşılaştırırsak, ikisi de aynı TDM matrizinde değişkenler, işlev atları veya API çarları gibi yazılım kaynak kodu bileşenlerini temsil etme ve daha sonra benzerliği bulmak ve yazılımları kategorili ayırmak için LSA işlemi uygular.
+
+57
+00:10:48,912 --> 00:11:10,932
+Bununla birlikte kılan yazılım sistemlerini temsil etmek için yalnızca API çağrılarını dikkate aldığı için Muda Blue'dan daha yüksek bir hassasiyet elde etmeye yardımcı olduğu iddia edilmiştir. Bu aslında makalenin ilerleyen kısımlarında karşılaştırmaları da vardı ama slide'a koymadım bu kısmı. Daha sonra görülebileceği gibi kılan çok sürede öneriler ürettiği için Muda Blue'dan daha etkili, daha çok kullanılan bir alhırıtma.
+
+58
+00:11:11,475 --> 00:11:38,056
+Daha sonra 2017 yılında Ripopal çıkmış. Bunun farkı diğer iki yöntemin aksine daha yüksek seviyeli bir benzerlik yaklaşımında bulunması. Girdiği olarak yalnızca ripoların metadatalarını alıyor. Bu yaklaşıma göre iki kitap riposu benzer DNA kodosyaları varsa, benzer ilgi alanına sahip kullanıcılar tarafından yıldızlanmışlarsa, kısa süre içinde aynı kullanıcılar tarafından yıldızlanmışlarsa benzer kabul ediliyor.
+
+59
+00:11:39,635 --> 00:11:44,895
+Burada Ripopal'ın matematiksel tanımlamaları var. Ama buraları isterseniz hızlı geçeyim.
+
+60
+00:11:45,995 --> 00:12:00,755
+İşte iki beni oku dosyasını nasıl karşılaştırdığı, yıldız tabanlı benzerlik, yani iki kullanıcı arasındaki benzerlik, UK ve U, yani kullanıcı 1 ve kullanıcı 2'nin yıldızladığı riposetlerinin Jaccard indeksi olarak tanımlanır.
+
+61
+00:12:02,235 --> 00:12:04,595
+Bunlar formüler de var, isterseniz izleyebilirsiniz.
+
+62
+00:12:05,491 --> 00:12:19,931
+Zaman tabanını, işte benzer kullanıcılar kısa süre içerisinde aynı kullanıcı iki ripoyu yıldızladıysa, hani bir araştırma yapıyordur mesela, kısa sürede ikisini de yıldızladıysa iki ripo benzerdir, kabul edilebilir.
+
+63
+00:12:21,411 --> 00:12:27,331
+Toplam benzerlik de az önce bahsettiğim benzerliklerin çarpımıyla hesaplanır.
+
+64
+00:12:28,911 --> 00:12:31,991
+Daha sonra benim makalemin konusu olan Cross Rim diye bir şey var.
+
+65
+00:12:32,980 --> 00:12:38,539
+Bu graflardan yararlanan bir yaklaşım içeriyor.
+
+66
+00:12:39,539 --> 00:12:43,039
+[öğrenci] nerede yayınlanmıştı bu makale?
+
+67
+00:12:43,820 --> 00:12:48,259
+Hocam, bir saniye bakabilir miyim hemen?
+
+68
+00:12:48,519 --> 00:12:48,960
+Tabii tabii.
+
+69
+00:12:48,960 --> 00:12:52,220
+Sıfırdan bulmuştum ama makalenin adını bilmiyorum.
+
+70
+00:12:53,519 --> 00:12:55,860
+Software Quality sanırsam %90.
+
+71
+00:12:56,860 --> 00:12:57,560
+Tamam.
+
+72
+00:12:59,187 --> 00:13:17,327
+Tamam, devam edeyim. Graflardan yararlanıyor demiştik. Graflar esnek veri entegrasyonuna izin verdiği ve çok sayıda benzerlik ölçümünü kolaylaştırdığı için seçilmiştir. Bu aslında hibrit bir yaklaşım içeriyor. Hem düşük seviyeli benzerliği hem yüksek seviyeli benzerliği bir modelde kullanmamızı sağlıyor.
+
+73
+00:13:18,964 --> 00:13:35,543
+Graflar sayesinde açık kaynak ekosistemindeki çeşitli yapılar arasındaki ilişki matematiksel olarak hesaplanabilir bir formata dönüştürülür. Bir sonraki slide'da verilecek olan ilişkiler açık kaynak ekosistemlerini temsil eden graflar oluşturmak ve daha sonra paylaşılacak olan algoritmayı kullanarak benzerliği hesaplamak için kullanılır.
+
+74
+00:13:46,895 --> 00:14:04,455
+Kütüphaneleri yani. Bir sınıfın bir sınıfı ekstend etmesi gibi çeşitli ilişki türleri var. Daha sonra hibrit bir yaklaşım olduğundan bahsetmiştim. Performansı arttırmak için yüksek seviyeli benzerliği de kullanıyor. Bir kütüphane bir projede kullanılıyor mu?
+
+75
+00:14:04,847 --> 00:14:13,047
+Bir geliştirici bir sınıfı geliştiriyor mu ya da bir kullanıcı bir projeyi yıldızlamış mı gibi ilişkileri de ifade ediyoruz.
+
+76
+00:14:13,707 --> 00:14:19,647
+Bu kursrimin aslında temsil ettiği bir graf örneği. Gitaptaki ripoları bu şekilde temsil ediyor.
+
+77
+00:14:21,887 --> 00:14:29,407
+Graf benzerliğinin hesaplanması. Graf benzerliği bilgisayar bölümlerinde oldukça aktif bir alan ve araştırma camiasından büyük bir ilgi görüyor.
+
+78
+00:14:29,908 --> 00:14:37,048
+Çeşitli benzerlik hesaplamaları yapılabiliyor. Mesela burada sosyal ağ düğümleri arasındaki benzerlikleri ölçmek.
+
+79
+00:14:37,728 --> 00:14:41,048
+Bunu biraz hızlı anlatabilirsin burayı. Çabuk geç.
+
+80
+00:14:41,048 --> 00:14:46,088
+Tamam. Daha sonra burada hesaplama yöntemlerinden bahsediyor.
+
+81
+00:14:46,468 --> 00:14:51,808
+Burada da çalışması var. Mesela burada düğüm 1, düğüm 2'ye benzer.
+
+82
+00:14:51,948 --> 00:14:55,168
+Çünkü her ikisi de düğüm 5 tarafından işaret ediliyor.
+
+83
+00:14:55,796 --> 00:15:00,255
+Gibi sezgisel olarak bir benzerlik tanımı yapabiliriz.
+
+84
+00:15:01,056 --> 00:15:02,196
+Hocam bu kadardı aslında.
+
+85
+00:15:03,316 --> 00:15:03,615
+Evet.
+
+86
+00:15:03,896 --> 00:15:05,375
+Dinlediğiniz için teşekkür ederim.
+
+87
+00:15:06,216 --> 00:15:08,776
+Software Quality dergisinden değil mi?
+
+88
+00:15:08,975 --> 00:15:09,676
+Evet, tamam.
+
+89
+00:15:09,735 --> 00:15:10,956
+Evet, evet.
+
+90
+00:15:11,615 --> 00:15:11,956
+Tamam.
+
+91
+00:15:13,656 --> 00:15:15,776
+Baştaki sözümü geri alıyorum.
+
+92
+00:15:17,096 --> 00:15:20,416
+Software Quality'den şey yapabilirsiniz demiştim.
+
+93
+00:15:20,416 --> 00:15:22,416
+Bu da benzerlikleri...
+
+94
+00:15:24,019 --> 00:15:26,359
+İnceliyor. Tamam, teşekkürler.
+
+95
+00:15:27,259 --> 00:15:30,019
+Sıraya göre [öğrenci]...
+
+96
+00:15:31,799 --> 00:15:33,719
+Evet hocam, sesim geliyor mu?
+
+97
+00:15:34,279 --> 00:15:38,199
+Geliyor [öğrenci]. Hemen yükleyebilirsin slide'ını.
+
+98
+00:15:38,979 --> 00:15:40,339
+Yüklemiş miydin sistemi?
+
+99
+00:15:41,039 --> 00:15:42,539
+Evet hocam, yüklemiştim.
+
+100
+00:15:42,559 --> 00:15:44,939
+Tamam, şimdi ben bu arada bakacağım onlara.
+
+101
+00:15:45,799 --> 00:15:46,879
+Görünüyor hocam, değil mi ekran?
+
+102
+00:15:47,639 --> 00:15:48,279
+Görünüyor.
+
+103
+00:15:48,959 --> 00:15:49,799
+Başlıyorum o zaman.
+
+104
+00:15:51,251 --> 00:16:03,091
+Merhaba arkadaşlar. Bugün incelediğim makaleden yola çıkarak, çevik yaklaşımlarla giderek karmaşıklaşan kritik sistemlerin geliştirilmesinde güvenlik ve kalite güvencesinin sağlanması üzerine bir sunum hazırladım.
+
+105
+00:16:03,668 --> 00:16:25,648
+Sunumunun içerisine bakacak olursak, ilk olarak konuyla ilgili genel bilgilerden, ardından karmaşık sistemlerin nasıl oluştuğu ve bunların öz kaynağının ne olduğundan, bu sistemlerde kalite güvencesi ve güvenliğin sağlanmasında bize yöntemler sunan Kenal'ın çerçevesinden ve çevik yazılım geliştirme de kalite yönetiminden bahsedeceğim. Son olarak da çıkarılan sonuçlara değineceğim.
+
+106
+00:16:26,836 --> 00:16:54,836
+Güvenlik açısından kritik sistemler, bileşenlerin sayısı, bileşenler arasındaki etkileşimler ve gömüldükleri daha geniş sistemlerle etkileşimlerin artması nedeniyle giderek daha karmaşık bir hale gelmektedir. Böyle bir ortamda güvenlik, bileşenlerin kendisinden ve sistemin farklı bölümleri arasındaki etkileşimlerinden ortaya çıkan bir özelliktir. Güvenlik açısından kritik sistemler bu nedenlerle öngörülemeyecek şekilde başarısız olabiliyor. Çelik yöntemler çeşitli faydalarına rağmen henüz güvenlik açısından kritik sistemlerden bir hale gelmektedir.
+
+107
+00:16:54,836 --> 00:17:09,615
+Bu tür sistemlerin güvenliğini ve güvenliğini arttırmak için bazı kalite güvenliği uygulamalarının kritik sistemlerin çevik yazılım geliştirilmesine dahil edilmesi gerekmektedir.
+
+108
+00:17:11,347 --> 00:17:39,307
+Karmaşık sistemlere bakacak olursak, güvenlik açısından kritik sistemler karmaşıklık içinde büyümekte ve daha yenilikçi bir hale gelmektedir. Bu karmaşıklıkların ve yeniliklerin ana kaynağı aslında yazılımdır. Teknolojik olarak gelişmiş cihazlar da genellikle karmaşıklığa sahiptir ve faydalarının yanında dezavantajları da olabilmekte. Örneğin günümüzde tıbbi cihazlardaki yeniliklerin çoğu yazılım bileşeninde yapılıyor. Bu yenilikler tüm karmaşık sistemlerde olduğu gibi bazı koşullar altında beklenmedik sonuçlar.
+
+109
+00:17:39,347 --> 00:17:47,127
+Örneğin 2011 yılında Amerika'daki tüm tıbbi cihaz hatalarının %24'ü yalnızca yazılım hatalarına aktif edilmiş.
+
+110
+00:17:47,551 --> 00:18:10,371
+Bu tür başarısızlık oranlarında anında açık ve bir yanıt ise inovasyon süreçlerindeki denetim miktarını arttırmak olacaktır. Aslında sorun karmaşık sistemlerdeki yeniliklerden kaynaklanan zarar risklerinin nasıl tespit edilip kontrol edileceğini belirlemektir. Bu sorunu da keşfetmek için Kenevin çerçevesinin karmaşık durumlarıyla başa çıkmak için nasıl strateji sağladığını inceleyeceğiz burada.
+
+111
+00:18:11,571 --> 00:18:17,731
+Bu çerçevede hem semptomlar hem de uygun yanıtlar sağlayarak farklı sistem ve durum türlerini anlamanın bir yolunu bize sunuyor.
+
+112
+00:18:18,671 --> 00:18:24,631
+Beş ayırt edilebilir durum var bu framework'ta. Biz konumuzla ilgili olan ikisi üzerinde duracağız.
+
+113
+00:18:24,791 --> 00:18:31,271
+Bunlardan ilki komplike, diğeri karmaşık durumdur. Bu kavramlar birbirine yakın olarak gözükse de aradaki farka şimdi değineceğim.
+
+114
+00:18:32,091 --> 00:18:36,631
+Diğer durumlarda basit, kaotik durum ve bir düzensizlik alanından oluşuyor.
+
+115
+00:18:37,587 --> 00:18:59,707
+İlk olarak komplike durumu, komplike sistemler neden-sonuç arasında sabit bir ilişkiye sahiptir. Ancak bunlar açık değildir ve bunları algılayabilmek için özel bilgi veya analiz gereklidir. Burada durum bilinebilir ancak durumun nasıl algılayacağını belirlemek ve daha sonra en iyi nasıl yanıt verileceğini bilmek için bu bilgiyi analiz etmek birkaç uzmanın bilgisini gerektirebilir.
+
+116
+00:19:03,124 --> 00:19:15,364
+Kullanılması ve süreçler oluşturmak pratik yaklaşımlar olarak karşımıza çıkar. Durum bu şekilde olduğunda Kenevi'nin bize sunduğu en uygun yöntem algılı, analiz et, yanıtlı eylem modeli olarak söyleniyor.
+
+117
+00:19:16,403 --> 00:19:33,344
+Yazılım geliştirmede komplike sürece bir örnek verecek olursak buna konfigürasyon yönetimi denilebilir. Çünkü bu süreçte konfigüre edilebilir öyeler arasında çok sayıda ilişki olabilmekte. Bu yaklaşım gereksinimlerinin ortaya çıkarılması, analizi ve kalite yönetimi yöntemlerine vurgu yaparak yazılım geliştirmede tercih edilmektedir.
+
+118
+00:19:33,971 --> 00:20:00,432
+Şimdi karmaşık sistemlere bakacak olursak, noktaki sistem yerine. Bu durumda karmaşık sistemlerle karşılaştığımızda bir düzensizlik söz konusudur. Bu sistemlerde neden sonuç arasındaki ilişkiyi önceden açıklamak mümkün değildir. Problem karmaşık olduğunda doğru cevabı tahmin etmek veya neyin doğru cevabı üreteceğini tahmin etmek de zor bir durumdur. Örneğin yazılım geliştirme planlaması. Genellikle bir görevin ne kadar süreceği konusunda bir tahmin gerektirir ama bu tahmini yapmak zordur.
+
+119
+00:20:01,332 --> 00:20:13,112
+Bu durum hem problem hem de olası çözümler hakkında daha fazla bilgi edinmek için kullanılabilecek, kenevinin de önerdiği farklı bir yaklaşım olan dene, algıla, yanıtla öğrenme yaklaşımına ya da modeline uygundur.
+
+120
+00:20:14,003 --> 00:20:34,983
+Bu karmaşık durumlardaki pratik yaklaşımlarda ise soruna adım adım yaklaşmak ya da kısa tekrarlar üzerinde çalışmak yer alır. Aradaki farkın anlaşılması için bir ayrım yapmak bize fayda sağlayacak. Bu ayrım yazılım tasarımıyla yazılım üretimi arasındaki ayrımdır. Bu ayrımdaki amaç her birinin farklı bir yaklaşım ve farklı kalite kontrol biçimleri gerektirmesidir.
+
+121
+00:20:42,003 --> 00:21:00,144
+Bakıldığında bunlar mantıklı olacaktır. Yazılım tasarımı için uygun bir strateji, çevik yazılım geliştirme yöntemlerinde de çok tipik olan, arttırımını geliştirme yoluyla oldukça iyi bir şekilde elde edilen bir araştırmadır. Bu nedenlerle az önce bahsettiğimiz dene, algıla, yanıtla öğrenme yaklaşımı yazılım tasarımı için uygun bir modeldir.
+
+122
+00:21:01,172 --> 00:21:20,672
+Yazılım üretimine bakacak olursak, yazılım üretimi tamamlanmış bir yazılım tasarımını çalıştırabilir. Yazılıma dönüştürmek komplike olabilir ancak karmaşık değildir. Çünkü yürütülebilecek bir yazılımın nihai durumu, üretim araçları zor olsa veya birkaç uzmanın birleşik çabalarını ve uzmanlığını gerektirse bile tahmin edilebilirdir.
+
+123
+00:21:21,056 --> 00:21:31,516
+Yazılım üretimi, geçmiş üretimin algılandığı, elde edilen verilerin analiz edildiği ve üretim metodolojisini değiştirmek ve iyileştirmek için kullanılan algılı analiz et, yanıtla modeline uygundur.
+
+124
+00:21:33,683 --> 00:22:01,683
+Çevik yazılım geliştirme tüm çeşitli biçimlerinde sistemin küçük bir bölümünü üreterek ve değerlendirerek tasarım yaklaşımını kullanır. Daha sonra sistemin daha fazla geliştirilmesi için problem hakkında öğrenilenleri kullanıyor. Çevik yaklaşım olası çözümleri üreterek ve test ederek sorun araştırır. Sürekli bir test mantığı ve artan müşteri taleplerine hızlı yanıt verme mantığı vardır. Böyle bir yaklaşım aslında görünüşte uygulanabilir bir çözümün daha sonra yalnızca olası durumlar için uygulanabilir olduğunun ortaya çıkması riski.
+
+125
+00:22:01,683 --> 00:22:16,023
+Çevik yazılım geliştirmenin çeşitli biçimlerin temel özelliklerinde sorun hakkında daha fazla şey keşfetmek için potansiyel çözümler üreterek ve bu çözümleri değerlendirerek bir sorunun keşfedilmesini sağlayan özellikler vardır.
+
+126
+00:22:17,683 --> 00:22:28,663
+Çevik ekipler genellikle küçüktür, kendi kendini yönetir ve deneyimli geliştiricilerin çoğunluğundan oluşur. Bu sayede de çevik yaklaşım birçok proje için kabul edilebilir, kalite sağlamış gibi görünmektedir.
+
+127
+00:22:29,044 --> 00:22:42,244
+Çevik Yazılım Geliştirme konusundaki tartışmalarda büyük ölçüde eksik olan şey ise plan tabanlı geliştirmenin titizliğine karşı çevik geliştirmede hızı ve yanıt verebilirliği sağlamak için yapılan ödün vermelerin kabul edilmesidir.
+
+128
+00:22:42,836 --> 00:23:06,276
+Çevik geliştirme uygulaması doğrulama önyargısına karşı da savunmasızdır. Yani bir geliştirme veya bir geliştirme ekibi yazılımın neyi amaçladığını bilir. Bu nedenle testler yapma ve yazılımın amaçlanan şeyi yaptığını doğrulamak için bir kanıt arama eğiliminde olacaktır. Bu geliştirme ekibinin aslında ihmali veya yetersizliği değildir. Basitçe kanıt aramak veya kanıtları yerleşik bir düşünceye göre yorumlamaktır.
+
+129
+00:23:07,155 --> 00:23:24,415
+Bunun önüne geçmek için geliştirilen yazılımın gerçekten bağımsız bir denetimini gerçekleştirmek için daha doğrusu, geliştiricinin gereksinimlerinin ne olduğunu, bu gereksinimlerin uygulama konusunda hangi kararları verdiklerini ve bunu yapmanın gerekçesini belgelemesi ve muhtemel kodun kendini belgelemesi gerekir.
+
+130
+00:23:25,395 --> 00:23:36,556
+Sonuç olarak bakıldığında kritik öneme sahip sistemler geliştirirken karmaşık problemler ve durumlarla başa çıkmak için kaçınılmaz olarak çevik bir yaklaşım benimsenecektir. Bunun nedenini...
+
+131
+00:23:36,788 --> 00:23:53,468
+Çevik Yazılım Geliştirme Yöntemleri, problem çözmeyi ve tasarımı geleneksel plana dayalı yöntemlerden çok daha iyi destekler. Çevik Yazılım Geliştirme Güvenlik açısından kritik öneme sahip geliştiricilere sorun keşfi sırasında kendi kendini yönetme ve yanıt vermenin avantajlarından daha fazlasını sunar.
+
+132
+00:23:54,036 --> 00:24:10,516
+Kenia ve Framework tarafından önerilen bir dene algıla yanıtla yaklaşımı, az önce de bahsettiğimiz, karmaşık sistemleri tasarlamak için ne kadar uygun olduğu, tasarımı belirlenmiş karmaşık bir sistem geliştirmek ya da üretmek için ise algılı analiz et, yanıtla ilan modelinin uygunluğu görülmüştür bu çalışmada.
+
+133
+00:24:11,604 --> 00:24:19,824
+Kaynaklarım burada. Benim anlatacaklarım bugün bu kadardı. Bir soru varsa alabilirim. Dinlediğiniz için teşekkür ederim.
+
+134
+00:24:19,824 --> 00:24:34,903
+Evet, teşekkürler. Sorusu olan var mı? Özellikle iş yerinde de karmaşık sistemlerle çalışanlardan. Evet.
+
+135
+00:24:38,132 --> 00:24:39,852
+Ekran paylaşımı sonlandırdım hocam.
+
+136
+00:24:40,572 --> 00:24:41,092
+Efendim?
+
+137
+00:24:41,732 --> 00:24:43,792
+Paylaşımı sonlandırdım ekran paylaşımına.
+
+138
+00:24:44,332 --> 00:24:45,312
+Evet, tamam.
+
+139
+00:24:46,212 --> 00:24:47,512
+Merhaba hocam.
+
+140
+00:24:49,972 --> 00:24:51,752
+Evet, barattı şimdi sırada.
+
+141
+00:24:52,172 --> 00:24:52,472
+Evet.
+
+142
+00:24:52,692 --> 00:24:57,032
+[öğrenci], şeyi yükleyebilirsin.
+
+143
+00:24:57,619 --> 00:25:06,359
+Şimdi kontrol ettim. Evet, görünüyor. Sisteme de yüklemişsin zamanında.
+
+144
+00:25:06,359 --> 00:25:07,919
+Evet, evet hocam.
+
+145
+00:25:08,059 --> 00:25:22,879
+Evet, zamanında sisteme yüklemek de bir puan tabii. Belli bir puan şey. Birçoğunuz yüklemişsiniz zaten. Saati kaçıran 2-3 arkadaşınız vardı.
+
+146
+00:25:26,420 --> 00:25:33,819
+Evet, [öğrenci], otomatik yazılım. Güzel. Efendim?
+
+147
+00:25:34,819 --> 00:25:37,420
+Otomatik software repair. Anlatıyoruz.
+
+148
+00:25:37,420 --> 00:25:38,799
+Tamam.
+
+149
+00:25:41,539 --> 00:25:46,900
+Bugün this presentation about automatic software repair.
+
+150
+00:25:48,100 --> 00:25:50,759
+Merhaba benim adım [öğrenci]'ı.
+
+151
+00:26:15,059 --> 00:26:41,579
+Öncelikle, bu konuda bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde de bir sistemde
+
+152
+00:26:41,844 --> 00:27:07,724
+Bu nedenle bu? Bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu neden
+
+153
+00:27:09,299 --> 00:27:30,319
+Bu, bu
+
+154
+00:27:30,319 --> 00:27:51,051
+ve
+
+155
+00:27:51,892 --> 00:28:08,491
+Bu önergelerde kullanılan birçok
+
+156
+00:28:08,627 --> 00:28:34,539
+Bu, bu
+
+157
+00:28:42,963 --> 00:29:01,803
+The healing consists of two step, healing and verification. The healing steps consist of executing the healing operation that can prevent or mitigate the failure that has been detected by
+
+158
+00:29:01,803 --> 00:29:06,884
+that has been detected
+
+159
+00:29:07,571 --> 00:29:18,571
+Bu verifikasyonla çalışmalı kullanmak için bir şekilde verifikasyonla çalışmalı.
+
+160
+00:29:18,571 --> 00:29:24,571
+Bu, bu verifikasyonla çalışmalı,
+
+161
+00:29:24,571 --> 00:29:32,571
+ilk defa bir şey yapmak için,
+
+162
+00:29:33,044 --> 00:29:37,544
+Localization, batch verification.
+
+163
+00:29:38,064 --> 00:29:44,124
+Localization is to locate or address where the fault is happened.
+
+164
+00:29:44,944 --> 00:29:59,864
+Then it's first to fix, to batch and fix step, generate fixes that modify the software in quad location return to by
+
+165
+00:30:00,000 --> 00:30:07,000
+ve
+
+166
+00:30:07,000 --> 00:30:08,000
+verifikasyon
+
+167
+00:30:08,000 --> 00:30:11,000
+ve
+
+168
+00:30:11,000 --> 00:30:12,000
+verifikasyon
+
+169
+00:30:12,000 --> 00:30:13,000
+ve
+
+170
+00:30:13,000 --> 00:30:15,000
+verifiyat
+
+171
+00:30:15,000 --> 00:30:17,000
+ve
+
+172
+00:30:17,000 --> 00:30:19,000
+verifiyat
+
+173
+00:30:19,000 --> 00:30:19,468
+ve
+
+174
+00:30:19,987 --> 00:30:29,967
+verifiyat
+
+175
+00:30:19,955 --> 00:30:26,435
+Bu teknik use has two outputs.
+
+176
+00:30:27,576 --> 00:30:32,415
+It can be successful execution or faulty program
+
+177
+00:30:32,415 --> 00:30:35,576
+or it's failed execution faulty program.
+
+178
+00:30:35,576 --> 00:30:38,535
+The failed execution faulty program
+
+179
+00:30:38,535 --> 00:30:45,515
+does mean it doesn't have a solution
+
+180
+00:30:47,824 --> 00:30:49,824
+Error that happened.
+
+181
+00:30:49,824 --> 00:30:57,824
+The successful execution and faulty program for the healing technique used.
+
+182
+00:30:57,824 --> 00:31:03,824
+That means if the execution has been healed but the program is still faulty.
+
+183
+00:31:03,824 --> 00:31:13,804
+So it can be, it can be, it has damaged, it can be fault again.
+
+184
+00:31:14,003 --> 00:31:18,003
+Bu programın bir programı yaptırken,
+
+185
+00:31:18,003 --> 00:31:22,003
+bu programın bir programı yaptırken,
+
+186
+00:31:22,003 --> 00:31:26,003
+ama bu programın bir programı yaptırken.
+
+187
+00:31:26,003 --> 00:31:28,651
+Bu, bu approach...
+
+188
+00:31:28,756 --> 00:32:21,227
+Bu, bu
+
+189
+00:32:21,587 --> 00:32:27,807
+ve bu
+
+190
+00:32:27,807 --> 00:32:41,087
+bu
+
+191
+00:32:49,183 --> 00:32:56,183
+ve
+
+192
+00:32:56,183 --> 00:32:57,183
+SOSCOS'a
+
+193
+00:32:57,183 --> 00:32:58,183
+ve
+
+194
+00:32:58,183 --> 00:33:10,183
+SOSCOS'a
+
+195
+00:33:08,960 --> 00:33:36,000
+Bu noktada özetlersek, healing işlemleri çalışma sırasında hatayı özümseyerek ve hataya rağmen
+
+196
+00:33:36,372 --> 00:33:45,492
+Çalışmayı sürdürecek ve o anda düzeltecek işlemler diyebilir miyiz?
+
+197
+00:33:45,492 --> 00:33:56,532
+Evet hocam, şey, look like bandage, just covering the fault.
+
+198
+00:34:04,775 --> 00:34:12,775
+SOSCOS'a
+
+199
+00:34:04,051 --> 00:34:07,371
+Bu da başka bir soru yok.
+
+200
+00:34:07,371 --> 00:34:10,172
+Ama bu soru yok.
+
+201
+00:34:10,172 --> 00:34:22,051
+Bu soru yok.
+
+202
+00:34:22,051 --> 00:34:24,692
+Ama bu soru yok.
+
+203
+00:34:27,956 --> 00:34:28,956
+Tamam, tamam.
+
+204
+00:34:34,675 --> 00:34:54,380
+Teknik Üniversitesi Bilgisayar Mühendisliğe ve
+
+205
+00:34:55,059 --> 00:35:00,860
+General techniques used are not designed to target a specific class or fault.
+
+206
+00:35:00,860 --> 00:35:09,559
+That means it's in general to try to solve the fault of the program.
+
+207
+00:35:10,480 --> 00:35:15,920
+But the fault specific techniques used are designed to address some classes of fault.
+
+208
+00:35:17,039 --> 00:35:23,059
+This technique used has a narrow scope with a higher efficiency of the...
+
+209
+00:35:23,059 --> 00:35:47,788
+Bu da bu da kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmalı kullanılmal
+
+210
+00:35:47,860 --> 00:35:55,940
+Java,
+
+211
+00:36:08,115 --> 00:36:32,115
+Bu konuda bilgi verilmiştir.
+
+212
+00:36:33,556 --> 00:36:44,416
+Noble, Java language program, which is used to fix the consist of a single condition opening in a conditional or loop statement.
+
+213
+00:36:46,096 --> 00:36:57,136
+Bacica, which is a Java program that is used to, that is consists of observing and comparing the behavior of software during the execution.
+
+214
+00:36:57,780 --> 00:37:18,444
+ve bu testiyle birçok
+
+215
+00:37:19,188 --> 00:37:45,356
+Bu, bu
+
+216
+00:37:46,003 --> 00:38:09,771
+Bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın, bu programın
+
+217
+00:38:33,235 --> 00:38:39,475
+Bu yapma, bu yapma, iki yöntem.
+
+218
+00:38:39,475 --> 00:38:41,435
+Genere ve validir.
+
+219
+00:38:41,435 --> 00:38:45,435
+Öncelerim programı ve bu yapma,
+
+220
+00:38:45,435 --> 00:38:48,315
+bir faalde bir şey var.
+
+221
+00:38:48,315 --> 00:38:52,315
+Bu, ilk yöntem,
+
+222
+00:38:52,315 --> 00:38:56,795
+bu,
+
+223
+00:38:57,172 --> 00:39:01,532
+...solumlu bir problem, bir solution var.
+
+224
+00:39:01,532 --> 00:39:18,172
+...solumlu bir problem var.
+
+225
+00:39:54,324 --> 00:39:56,324
+Bu teknik kullanımları kullanıyor.
+
+226
+00:39:57,284 --> 00:40:00,324
+Bu teknik kullanımları,
+
+227
+00:40:00,324 --> 00:40:17,264
+bu teknik kullanımları,
+
+228
+00:40:17,264 --> 00:40:21,203
+Zamanın az kaldı. Biraz daha özetleyerek anlat.
+
+229
+00:40:21,623 --> 00:40:22,643
+Tamam hocam.
+
+230
+00:40:23,284 --> 00:40:30,403
+It has three steps. Behavioral analysis to analyze the problem.
+
+231
+00:40:31,440 --> 00:40:35,440
+bu teknik kullanımları,
+
+232
+00:40:30,880 --> 00:40:51,596
+ve bu konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda
+
+233
+00:40:52,659 --> 00:41:13,899
+Bu teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler kullanılan teknik üsler
+
+234
+00:41:14,003 --> 00:41:16,003
+...on the software to repair.
+
+235
+00:41:16,003 --> 00:41:20,804
+In other words, it's a technique that repair the software from fault
+
+236
+00:41:20,804 --> 00:41:26,003
+by suggesting ways to program and to fix the problem.
+
+237
+00:41:27,284 --> 00:41:34,284
+Bu
+
+238
+00:41:46,260 --> 00:42:08,748
+Bu, bu, 5.0% kullanılan FİXLİFONDER, genel teknik kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üretimlerle kullanılan üret
+
+239
+00:42:08,947 --> 00:42:33,711
+...
+
+240
+00:42:33,711 --> 00:42:40,711
+ve
+
+241
+00:42:40,711 --> 00:43:00,711
+bu
+
+242
+00:42:59,572 --> 00:43:14,771
+Bu iki main approach to deal with program failures, which are software repairing and software healing, explaining the algorithm used for the automation.
+
+243
+00:43:15,640 --> 00:43:17,640
+bu
+
+244
+00:43:14,992 --> 00:43:36,460
+Bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu
+
+245
+00:43:37,139 --> 00:43:45,079
+Bu tepkide de kullanıyorum. Teşekkür ederim.
+
+246
+00:43:59,264 --> 00:44:20,264
+Evet, özetlemek zordu bunu. Bir de Transaction on Software Engineering'den almışsın konuyu da. Bu dergi, daha önce de söylemiştim konuları çok...
+
+247
+00:44:21,492 --> 00:44:24,412
+Karmaşık konuları derinlemesine inceliklenmişler.
+
+248
+00:44:24,412 --> 00:44:28,312
+Evet, detaylı bir konu var.
+
+249
+00:44:28,832 --> 00:44:34,072
+Evet, onun için güzel özetlemişsin. Teşekkür ederiz.
+
+250
+00:44:34,112 --> 00:44:35,072
+Ben size teşekkür ederim.
+
+251
+00:44:36,012 --> 00:44:42,932
+Şimdi, geçen haftanın sıralamasına göre [öğrenci] ve [öğrenci] anlatacak.
+
+252
+00:44:44,019 --> 00:44:47,740
+Yüklemişsiniz sunumlarınızı da.
+
+253
+00:44:49,120 --> 00:44:50,500
+Ekranı paylaşıyorum.
+
+254
+00:44:50,519 --> 00:44:52,600
+O zaman tamam.
+
+255
+00:44:57,492 --> 00:45:02,072
+Evet, başlayabilirsiniz.
+
+256
+00:45:04,052 --> 00:45:19,592
+Hocam, öncelikle biz size gönderdiğimiz makaleleri ek olarak farklı makaleler de ekledik sunumumu. Size özellikle gönderdiğim bir sorumluydu. Deney sonuçları yoktu. Deney sonuçları olan makaleler de eklemeye çalıştık.
+
+257
+00:45:32,052 --> 00:45:48,252
+Ama bu makaleyi anlayabilmek için girişte ya da daha sonra başka örnekler vermek için farklı makalelerle de destekleyebilirsiniz demiştim. Evet, başlayabilirsiniz.
+
+258
+00:45:48,788 --> 00:46:16,607
+Teşekkürler hocam. Konumuzu yazılım kalite tahminini, makine öğrenmesi teknikleri kullanarak nasıl yapılıyor bu tür makalleri inceledik. İçeriye şöyle genel baktığımız zaman öncelikle yazılım kalite tahmininin önleminden daha sonra ISO standartlarına bağlı olarak yazılım kalite tahmini akış diagramını inceledikten sonra yazılım kalite faktörleri, yazılım kalite metrikleri,
+
+259
+00:46:16,788 --> 00:46:27,147
+Makine öğrenmesi, model akışı ve tekniklerinden biraz bahsettikten sonra performans ölçümlerini kullanarak yöntem karşılaştırmaları gerçekleştireceğiz.
+
+260
+00:46:27,547 --> 00:46:33,207
+Ve literatürden ve bizim incelediğimiz makalelerden elde ettiğimiz sonuçları sizlerle paylaşacağız.
+
+261
+00:46:33,207 --> 00:46:44,788
+Tamam. Şimdi bu ilk baştaki kalite, metrikleri, özellikleri, faktörleri onlardan bahsederken, derste gördüklerimizin tekrarı olanlar.
+
+262
+00:46:44,788 --> 00:46:48,187
+Evet, dinliyoruz.
+
+263
+00:46:49,523 --> 00:47:02,983
+Yazılım kalite tahmini önleminden bahsedeyim öncelikle. Günümüzde küçük çapla işletmelerden büyüklerine, eğitimden ticarete, neredeyse her türlü alanda yazılım çalışmaları geliştirilmekte.
+
+264
+00:47:03,804 --> 00:47:13,324
+Kullanıma bu derece yaygın olan yazılımların kalitesinin güvence altına alınması çok önemlidir. Fakat bu yazılımlar basit bir yapıya sahip değillerdir.
+
+265
+00:47:13,324 --> 00:47:17,503
+Kaliteyi sağlamak için doğru zamanda doğru işlemlerin yapılması.
+
+266
+00:47:17,523 --> 00:47:35,503
+Eğer özverili davranılmazsa maliyeti ciddi boyutlara ulaşabilir. Ki bunun için de Ulusal Teknoloji Enstitüsü, yazılım sistemlerinin bu tür arızalarının ve hatalarının ortalama maliyetinin yıllık 59 milyar dolar civarına kadar çıktığı tahmininde bulunmuştur.
+
+267
+00:47:36,851 --> 00:47:56,331
+Güvence altına alma işimi ne kadar geç olursa maliyet de aslında o kadar büyük olur. Erken aşamalarda yazılımın kalitesini tahmin etmek hem geliştirici açısından bir kolaylık sağlar hem de kullanıcıya bir güven verir ve kaynakların daha verimli bir şekilde kullanılmasını sağlamış olur.
+
+268
+00:47:57,235 --> 00:48:17,275
+Şimdi öncelikle ISO standartına bağlı olarak yazılım kalite tahmininin akış diagramını göstermek istiyorum. Öncelikle bir yazılımın kalitesini belirleyen ölçüm yöntemleri belirlenir. Bu ölçüm yöntemleri bir fonksiyon veya algoritma kullanılarak birleştirilir ve işlenir.
+
+269
+00:48:25,235 --> 00:48:36,355
+Veya tahmin yapılır. Burada bizim analiz adımındaki ekleyeceğimiz fonksiyon ve modeller Machine Learning modeller olacaklar.
+
+270
+00:48:38,099 --> 00:49:00,360
+Öncelikle bir ölçüm yöntemi belirlememiz gerekiyor demiştik. Yazılım kalitesini belirleyen faktörler nelerdir? Nasıl bir yazılım kalite tahmini yapabiliriz? Bunun için bizim de derste gördüğümüz işlevsel olmayan birçok faktör mevcut. Güvenilirlik, sürdürülebilirlik, fonksiyonelik, taşınabilirlik gibi bir liste mevcut.
+
+271
+00:49:06,099 --> 00:49:11,360
+Önümlü olan faktörler güvenirliği ve sürdürülebilirliği olarak ele alınmış.
+
+272
+00:49:12,980 --> 00:49:27,500
+Peki güvenilirlik ve sürdürülebilirlik nasıl tahmin edilir? Yani nelerdir aslında? Güvenilirlik bir yazılımın belirtilen kaynaklarla ve belirtilen ortamda çalışabilmesine ilişkin güven ölçüsüdür.
+
+273
+00:49:27,500 --> 00:49:39,880
+Ve aslında hata tahmini yapılarak güvenilirlik ölçülebilir. Sürdürülebilirlik daha çok yazılım teslim edildikten sonra yapılan değişiklikler harcanan efor şeklinde görülebilir.
+
+274
+00:49:40,980 --> 00:49:47,300
+Hata tahmini ve sürdürülebilirlik tahmini yapmak için kalite metriklerinden faydalanırız.
+
+275
+00:49:48,779 --> 00:49:54,619
+Bizim de hocam sizin de dediğiniz gibi derste birçok yazılım kalite metriği gördük.
+
+276
+00:49:54,619 --> 00:50:00,000
+Bu yazılım kalite metriklerinden bizim amacımız burada hata tahmini.
+
+277
+00:50:00,000 --> 00:50:13,739
+ve sürdürülebilirlik tahmini yapmak. Bunun için tüm metrikleri ele almak yerine incelediğimiz makalede yapılan literatür çalışmasına dayanarak 13 tane metrik seçilmiş.
+
+278
+00:50:13,920 --> 00:50:25,500
+Yani bir nevi feature selection yapılır gibi metrikler elenmiş. Ve burada gördüğünüz 13 metrik ele alınmış. Bunlardan çok kısa size hatırlatacak olursam.
+
+279
+00:50:28,000 --> 00:50:36,340
+Daha çok CK metrikleri çerçevesindekiler gördüğüm kadarıyla.
+
+280
+00:50:36,340 --> 00:50:42,639
+Evet hocam, object-oriented olanlar ele alınmış çoğunluğunda.
+
+281
+00:50:43,340 --> 00:50:52,900
+Lines of Code programın yorumlanmamış kaynak kod satırlarının sırasıyla ölçmek için kullanılan bir metrik.
+
+282
+00:50:56,000 --> 00:50:56,960
+Geçebiliriz.
+
+283
+00:50:57,059 --> 00:50:57,779
+Peki hocam.
+
+284
+00:51:01,579 --> 00:51:06,420
+Yalnız burada en sondaki size 1, size 2'den kastımız ne?
+
+285
+00:51:07,000 --> 00:51:19,219
+Size 1 hocam, bir sınıftaki çalıştırılabilir dosya sayısının ölçüsü. Size 2 sınıftaki öz nitelik sayısının ve yerel yöntem sayısının toplamı olarak hesaplanan bir meclis.
+
+286
+00:51:19,900 --> 00:51:21,340
+Tamam, teşekkürler.
+
+287
+00:51:23,956 --> 00:51:33,255
+Plan çalışmalardan bir tanesi [öğrenci]'nin bahsettiği maintenance ve reliability modellerini, database setlerini kullanarak modellemeye çalışmış.
+
+288
+00:51:33,255 --> 00:51:40,175
+Burada bu çalışmada ortada gördüğünüz hiyerarşiğe yakın bir yol izlenmiş.
+
+289
+00:51:40,956 --> 00:51:46,255
+Kullanan veri kümesi Promise'dan alınan Defect Prediction ve...
+
+290
+00:51:46,900 --> 00:51:50,559
+Maintains'i prediction amacıyla kullanan ver hükümelerinden oluşmakta.
+
+291
+00:51:51,039 --> 00:51:53,900
+Defect prediction için yapılan işlem adımlarını kabaca...
+
+292
+00:51:54,255 --> 00:52:02,755
+Normal akışa göre uyarlanmak gerekirse preprocessing ve transformation adımına denk gelen imputation ve normalizasyon işlemlerinin yapıldığını görüyoruz.
+
+293
+00:52:02,755 --> 00:52:08,076
+Imputation işlemi daha çok veri kümesindeki boş değerleri doldurmak için yapılan bir işlem.
+
+294
+00:52:08,496 --> 00:52:15,735
+Ve bu çalışmada da, benim incelediğim çalışmada da yapılan imputation işlemi genelde manuel olarak, feature engineering yapılarak yapılmış.
+
+295
+00:52:17,684 --> 00:52:43,023
+Bu çalışmayı yapan kişiler doğrudan boş derleri herhangi bir yöntem kullanmak yerine kendileri elle doldurmuşlar. Bu çok zahmetli bir iş. Bu şekilde devam etmişler. Normalizasyon işlemi için bildiğimiz nümerik değerlerin, nümerik öz niteliklerin 0-1 veya eksi 1-1 aralarına scale edilmesiyle yapılan bir işlem. Genelde eğitim hızlandırmak ve başarı yartırmak için yapılan bir işlem. Bunlar preprocessing ve transformation adımında yaptıkları işlemler.
+
+296
+00:52:45,684 --> 00:52:48,284
+Trey'in test kümesini seçme işlemi yapmışlar.
+
+297
+00:52:48,904 --> 00:52:49,204
+Burada
+
+298
+00:52:49,204 --> 00:52:51,784
+promis veri kümeleri içerisinden
+
+299
+00:52:51,784 --> 00:52:53,764
+POI veri kümesini kullanmışlar. Çünkü bu eğitim
+
+300
+00:52:53,764 --> 00:52:55,504
+kümesinde defek sınıfına ait,
+
+301
+00:52:55,604 --> 00:52:57,904
+defek edilmiş sınıfı ait çok fazla örnek var.
+
+302
+00:52:58,364 --> 00:52:59,844
+Ve diğer veri kümelerindeki
+
+303
+00:53:00,463 --> 00:53:01,744
+defek sınıfına ait
+
+304
+00:53:01,744 --> 00:53:03,844
+örneksi esas olduğu için kullanmamışlar.
+
+305
+00:53:03,923 --> 00:53:05,744
+Yani eğitimde tamamen POI'yı kullanmışlar.
+
+306
+00:53:06,084 --> 00:53:07,904
+Diğer veri kümelerinde test amaçlı
+
+307
+00:53:07,904 --> 00:53:08,404
+kullanmışlar.
+
+308
+00:53:08,947 --> 00:53:31,788
+Model seçimi için birçok farklı yöntem kullanmışlar. Bunların bir çoğunu geleneksel yöntemle olan karar ağacı, random forest, kauni yarısına yer bulut gibi yöntemlerden oluşmakta. Bunlarla ilgili bir benchmark hazırlayıp başarıları test etmişler. Metrikleri belirlemek için de model sınıfta modellerdeki defekt ve defekt olmayan sınıf dağılımları düzensiz ve dengesiz olduğu için, yani defekt sınıfına ait örnek sayısı çok az olduğu için.
+
+309
+00:53:32,211 --> 00:53:49,571
+Precision Recall kullanmak durumunda kalmışlar. Çünkü ek kürisinin doğru bir metrik olmadığını söyleyebiliriz. Değerlendirme için ise örnek sayısı genel olarak çok az olduğu için cross-fold validation yaparak çalışmayı tamamlamışlar. Değerlendirme genel olarak 10-fold cross-fold validation yaparak tamamlamışlar.
+
+310
+00:53:50,739 --> 00:54:14,539
+Sonra kısa adı geçebilir miyiz? Burada kullanılan iki tane dataset var. Bir tanesi demiştim Defect Prediction için. Bu Reliability alanında yapılan çalışmalar düşünülebilirsiniz. Diğeri de MainTability Prediction dataset'leri. İki farklı açıdan çalışma yapmışlar. İlk çalışmada, az önce de bahsettiğim POI'nın Defect oranının daha fazla olduğunu görüyorsunuz. Bu eğitimde kullanılan bir hükümesi.
+
+311
+00:54:16,288 --> 00:54:33,668
+Projelerin sınavı bakınca birçoğunun web uygulamalarında kullanılan veya objekt oryant modellerde kullanılan debugger projeleri olduğunu görüyoruz. Bu projelerden gelen defekti projeleri instance olarak verip hangilerinin defekti olduğunu veren bir veri kümesi var.
+
+312
+00:54:44,467 --> 00:54:59,467
+Örneğin olduğu diğer çalışmaya göre iki tane veri kümesi mevcut. Bunlarda da sınıf dağılımları yine diğerine göre ortalama olarak daha fazla ve bundaki örnekler genelde değişen kod sayısını gösteren örnekler. Yani öz internetler olarak değişen kod sayısını gösteriyor.
+
+313
+00:55:01,139 --> 00:55:25,940
+Bir sonraki sene geçebilir miyse? Evet. Burada farklı farklı yöntemler var çalışmada kullanılan. Biz birkaç çalışmada olanları bir araya getirip inceledik. Bunlardan ilki decision tree, karar ağacı. İkincisi, tamam, bir şey devam edelim. Birincisi karar ağacı, karar ağacı denetimli bir öğrenme yöntemi. Bir veri hükümetin olabildiğince o homojen gruplara ayrılmasının amaçlar. Burada da entropik kullanılır bunu yapmak için de.
+
+314
+00:55:26,576 --> 00:55:32,655
+Her bir düğün bir öz niteliği ve öz niteliği kararı oluştan bir threshold'dan oluşur.
+
+315
+00:55:32,715 --> 00:55:33,655
+Yoyak karardan oluşur.
+
+316
+00:55:34,235 --> 00:55:36,976
+Ve bunlar bir hiyerarşi içerisinde bir ağaç yapısında dururlar.
+
+317
+00:55:36,976 --> 00:55:38,896
+O adı da buradan gelir zaten.
+
+318
+00:55:40,876 --> 00:55:44,195
+Information teoriden yer alınarak ağacı optimize etmeye çalışırlar.
+
+319
+00:55:44,856 --> 00:55:46,675
+Burada da genelde entropi değerleri kullanılır.
+
+320
+00:55:49,172 --> 00:56:08,552
+Karar ağacı ise birden fazla, Rando Forest ise birden fazla karar ağacını kullanan bir yöntem. Burada her bir karar ağacının farklı versiyonlarını, varyantlarını üretip, burada farklı özellikleri seçerek veya bagging veya bootstrapping tarzı örnek seçme yöntemlerini kullanarak farklı karar ağaçları üretir.
+
+321
+00:56:13,748 --> 00:56:29,748
+Modelin çıktısı olarak kullanır. Rundle Force'un temel bir mihiraşı budur ve bunu yaparken karar ağaçlarının kararlarını tek bir yere birleştirmek için de Majority Voting kullanır. Majority Voting bildiğimiz demokrasi usulüyle bütün karar ağaçlarının...
+
+322
+00:56:30,288 --> 00:56:44,248
+Kararlarının eşit değerlendirildiği bir oylama sistemi ve karar açılarının çıktığı mevcut valutuna girerek final kararı oluşur. Bu da modelin çıktısını verir. Karar random force bu tarz bir yöntemdir.
+
+323
+00:56:45,076 --> 00:57:08,336
+Bir ensayet yöntemidir yani. Basin Network ise naive Bayez yönteminden faydalanarak geliştirmiş bir yöntemdir. Normalde naive Bayez bütün öz niteliklerin, olasılıklarının birbirinden bağımsız olduğunu varsayar. Ama basin Network ise network alanında birbiriyle ilintili olan, ilişkiyle olan özelliklerin birbirlerine conditional olarak bağımlı olduğu varsayım yapılarak bir hesaplama yapılır.
+
+324
+00:57:13,076 --> 00:57:17,916
+Bu modeldir ve çalışmada da kullanan yöntemlerden bir tanesidir.
+
+325
+00:57:20,716 --> 00:57:22,076
+Burada usability...
+
+326
+00:57:23,476 --> 00:57:51,476
+Ve reliability ile ilgili, Bayes Network için kullanılan çalışmalardan bir başkası var. Burada hangi kondisyonla birbirine bağlı olduğunu görebiliyoruz. Buna göre, effectiveness ile persons of accomplished'in birbirine kondisyon olarak bağımlı olduğunu görebiliyoruz. Aynı şekilde, requirement effectiveness'in, requirement process quality ile ilişki olduğunu görüyoruz. Bunlar kondisyon olarak birbirine bağlı olan parametreler ve Bayes Network bunları bu şekilde görüntülerek bir...
+
+327
+00:57:51,476 --> 00:57:52,715
+Model of Sumedik amaçlar.
+
+328
+00:57:55,443 --> 00:58:08,423
+Rule-based classification dediğimiz yöntem ise iftan kalıbı kullanılarak geliştirilen bir sınıflandırıcı. Tüm eğitim verilerini kapsayacak şekilde kurallar oluşturur.
+
+329
+00:58:08,423 --> 00:58:19,423
+Aslında karar ağaçlarına benzerler. Robot sistemler, satranç oyunu gibi kural tabanlı algoritmalar için bu yöntem kullanılabilir.
+
+330
+00:58:23,443 --> 00:58:43,304
+Bir if kalıbı oluşturulur. Diyelim ki bir hayvanlarla ilgili bir virüs kullanıyoruz. Uçabiliyor mu şeklinde bir sorunun den kısmında bunun bir kuş olduğu ortaya çıkabilir veya yüzebiliyor mu bu bir balıktır şeklinde çok basit bir örnek verebilirim bu sınıflandırmaya.
+
+331
+00:58:44,403 --> 00:58:58,104
+Diğer bir yöntem ise Canary Snail War yöntemi. Bu bir deterministik yöntemdir. Test kümesinin sınıflarına karar verirken eğitim verileri kullanılır.
+
+332
+00:58:58,104 --> 00:59:12,403
+ÖGLIT ve MENETS'ın gibi mesafe ölçüm yöntemlerine göre komşu örnekler belirlenir ve bu örneklerin hangi sınıfa, Majority Void'in kullanılarak en çok hangi sınıfa aitler?
+
+333
+00:59:12,403 --> 00:59:16,012
+Bu konuda,
+
+334
+00:59:17,268 --> 00:59:41,027
+Genetik programlama, hiristik bir yöntem olan genetik algoritmadan oluşturulan bir yöntemdir aslında. Genetik algoritmada yapılan şey bir popülasyon oluşturuluyordu. Bu popülasyondan seçilen diyelim ki iki birey bir crossover'a uğruyordu ve çeşitliliği arttırmak için de mutasyona tabi tutuluyordu.
+
+335
+00:59:45,268 --> 00:59:59,567
+Bu mantık bilgisayar programlarına aktarılmış genetik programlamada. Akış diagramında gördüğünüz gibi bir popülasyon şeklinde birden fazla bilgisayar programı oluşturulmuş.
+
+336
+01:00:00,115 --> 01:00:06,556
+Her bir bilgisayar programı için bir kalite, yani bir fitness değeri hesaplanmış.
+
+337
+01:00:06,556 --> 01:00:22,976
+Ve daha sonra bu var olan bilgisayar programlarından bir fonksiyonu değiştirerek, bir parametresini değiştirerek, çeşitli mutasyon ve crossover uygulanmaya çalışılarak farklı bilgisayar programları ortaya çıkarılmış.
+
+338
+01:00:23,275 --> 01:00:28,115
+Ve bu tekrarlanarak en kaliteli bilgisayar programı en sonunda elde edilmiş.
+
+339
+01:00:28,115 --> 01:00:43,175
+Karar destek vektör makineleri daha doğrusu iki sınıfı birbirinden ayıran, en optimal karar sınırını oluşturmayan bir discriminantil yöntem.
+
+340
+01:00:43,603 --> 01:00:59,663
+Makine öğrenmesi yöntemi. Burada bir amaç, iki sınıfı ayıran en düzgün çizgi bulmak ve bu çizgileri yaparken de sınıfların en uç noktalarını belirlemek. Bu en uç noktaların belirlediği vektöre de Destek Vektör Makineleri, Destek Vektörleri deniyor ve bu yöntem adını buradan alıyor.
+
+341
+01:01:09,492 --> 01:01:19,711
+Eşit ayıran çizgi bizim karar sınırımız oluyor. Ve sınıfları ayırmada kullanılan karar sınırı da bu karar sınırı olmuş oluyor. Spor vektör meşri bu şekilde çalışıyor.
+
+342
+01:01:22,751 --> 01:01:35,891
+Artık fışır yapay sinir ağları ise girdi ve çıktılar. Girdi olarak herhangi bir input alan ve bunları birer düğümlerde saklayan.
+
+343
+01:01:36,244 --> 01:01:50,844
+Ve bu düğümleri de birbirine bir örümcek ağa gibi adeta saran bir model yolu izler. Burada her ara düğümde modellerin gizli katmanlarında oluşan ağırlıklar güncellenerek model eğitim sağlanır.
+
+344
+01:01:55,059 --> 01:02:09,759
+Bu eğitimi hesaplanır ve bir hata oranı ortaya çıkar. Buna loss denir. Bu loss minimize eden parametreler geriye doğru bütün ağırlıklar güncellenerek eğitimi gerçekleştirir. Yapay sinir ağları bu şekilde çalışır temel olarak.
+
+345
+01:02:09,759 --> 01:02:20,840
+Ada Boost ise bir boosting yöntemidir. Aslında kendi başına bir makine öğrenmesi yöntemi değil, bir öğrenme algoritmasıdır. Buradaki temel amaç minorite sınıfa ait olan örneklerin.
+
+346
+01:02:21,295 --> 01:02:42,755
+Daha fazla öğrenilmesinin amaçı dayan bir yaklaşımdır. İteratif bir yöntemdir. Birkaç aşamada gerçekleşir. İlk aşamada az öğrenilen sınıflar hesap tespit edilir. İkinci aşamada ise az olan sınıfların ağırlıkları, daha fazla öğrenmeye olan katkıları daha fazla ön plana atılarak bu minörite sınıfı ait örnekler öğrenilmeye çalışır.
+
+347
+01:02:45,715 --> 01:02:54,895
+Yol izleyerek az olan sınıfların öğrenilmesine amaçlar. Böylece eğitim setindeki zor örnekle odaklanması sağlanır.
+
+348
+01:03:02,132 --> 01:03:19,192
+Bediye yöntemi ise, biz sınıf dağılımında veri kümesindeki örneklerin rastgele seçilimine dayalı tekrarlı öğrenme yöntemidir. Burada birden fazla model oluşur ve kararların birleştirilmesi için ise majority voting uygulanır.
+
+349
+01:03:26,228 --> 01:03:43,807
+Performans ölçümleri için daha önce de bahsettiğim gibi modeldeki sınıfta alınır dengesiz. Dolayısıyla accuracy gibi bir metriği kullanmak çok mantıklı olmadığı için daha gelişmiş, değerlendirmesi daha uygun olan yöntem başarılı metriklerine ihtiyaç duyulmuştur. Burada da precision recall'lar kullanılmıştır.
+
+350
+01:03:44,028 --> 01:03:52,128
+Precision genel olarak olması gereken sonuçlardan kaç tanesinin doğru olduğunu veren bir metriktir.
+
+351
+01:03:54,228 --> 01:04:07,307
+True positive artı false positive şeklinde bir formülü vardır. Recall ise tahmin ettiğimiz sonuçlardan, değerlerden kaç tanesi gerçekten doğru bunu test etmeye yarar?
+
+352
+01:04:07,307 --> 01:04:15,428
+Bu yöntemlerin yazılım kalitesindeki uygulama örnekleri de var herhalde sunumumuzda.
+
+353
+01:04:15,488 --> 01:04:16,908
+Evet var, o yüzden buraya koyduk.
+
+354
+01:04:17,008 --> 01:04:18,708
+Çünkü zamanımız azaldı.
+
+355
+01:04:19,048 --> 01:04:20,588
+Tamam, tamam. Geçelim burayı.
+
+356
+01:04:21,523 --> 01:04:42,763
+Şimdi yöntemimiz için incelediğimiz ikili çalışmadan bir tanesi Redewire'nin yazdığı çalışma. Burada az önce bastığımız yöntemlerden bir çoğunun olduğunu görüyoruz. Burada precisionlik olarak true positive rate ve false positive rate'in eğrisi olan rock curve'ün altında kalan alanı da başarı metri olarak kullanmışlar. Burada AUX score'larını görüyoruz.
+
+357
+01:04:46,516 --> 01:04:56,335
+Burada eğer soldaki hata tahmini sonuçlarına bakarsanız SVM'in çok düşük bir başarıya sahip olduğunu görebiliyoruz.
+
+358
+01:04:57,775 --> 01:05:08,695
+Random Forest'ın ise %80 ile 0.80 ile diğer yöntemlere göre yüksek bir başarıya sahip olduğunu görüyoruz.
+
+359
+01:05:09,955 --> 01:05:14,516
+Fakat hata tahmini sonuçlarında 0.84 ile en yüksek bayat.
+
+360
+01:05:16,628 --> 01:05:30,507
+Başarılı olduğunu görebiliyoruz. Sürdürülebilirlik tahminlerine bakıldığında ise hata tahminin sonuçlarının tam tarihsi olarak Naive Bias ve Bias Network başarılarının en düşük olduğunu görüyoruz.
+
+361
+01:05:44,628 --> 01:05:50,768
+Büyük yüzdeleri bütün yöntemler için %60 ile %68 arasında değişkenlik gösteriyor.
+
+362
+01:05:50,768 --> 01:05:59,987
+Ve yine az önceki tabloya benzer olarak, Nav Bias ve Bias Network yöntemlerinin en düşük başarıya sahip olduğunu,
+
+363
+01:06:00,427 --> 01:06:12,628
+Random Force'un %67 ile istikrarını koruduğunu, bir Decision Tree yöntemi olan J48, Rule Based Classification yöntemi olan Part ve Artificial Network.
+
+364
+01:06:12,628 --> 01:06:18,047
+General Network yöntemlerinin %68 başarıyla en yüksek başarıda olduğunu görüyoruz.
+
+365
+01:06:18,047 --> 01:06:30,128
+Bu üç tabloya baktığımız zaman hem hata tahmini hem de sürdürülebilirlik tahminine baktığımızda en iyi yöntemin Random Force olduğunu söyleyebiliriz.
+
+366
+01:06:33,487 --> 01:06:38,467
+Bu da diğer bir makalenin sonuçları.
+
+367
+01:06:39,219 --> 01:07:00,159
+Burada ise, tam okunuşum bilmiyorum, Malhotra ve arkadaşlarının yaptığı çalışmaya göre yine benzer sonuçlar elde edilmiş. Burada da Random Forest ve Decision Tree tabanlı olarak geliştirilen begging algoritmalarının en yüksek başarıya sahip olduğunu görüyoruz.
+
+368
+01:07:02,675 --> 01:07:11,556
+Burada da aynı çalışmanın işte o körleri bulunmakta. Solda True Positive Rate, altta ise False Positive Rate yani Specific Rate ve Sensitifte bulunmakta.
+
+369
+01:07:12,096 --> 01:07:33,315
+Burada en iyi modeli belirlen şey buradaki errorin altındaki alanın en yüksek olduğu model. Buradaki çalışmaya göre de Adobus ve Random Forest'ın altında kalan alanın genel olarak değerlerine göre daha fazla olduğunu ancak BG'in de bunlara yakın bir sonuç verdiğini ROG erroriyle de rahat bir şey görebiliyoruz. Bu da zaten önceki slide'daki tabloyu destekler nitelikli bir sonuç. Bu şekilde.
+
+370
+01:07:34,547 --> 01:07:42,467
+Şimdi özetleyici sonuçlarımızda kaliteyi belirlemede en çok katkısı olan metrikler belirlenmiştir.
+
+371
+01:07:42,467 --> 01:07:54,947
+Ve farklı makaleleri değerlendirme sonuçlarımıza göre hata tahmini ve sürdürülebilirlik tahmini için en güvenilir yöntemler Random Force ve Begging yöntemleri olarak belirlenmiştir.
+
+372
+01:08:02,547 --> 01:08:20,007
+Biz Bayasağının başarılı olduğunu zannedebilirdik. Bunun için de bir yazılımın kalitesini belirlemede hangi faktörlere dikkat edeceğimizin önemini de vurgulamış olduk. Çünkü sürdürülebilirlik tahmininde Bayasağı en düşük başarıya sahipti.
+
+373
+01:08:21,792 --> 01:08:30,311
+Ve genel olarak da karar ağacı temelli tahmin tekniklerinin kalite performansı için en etkili yöntemler olduğunu söyleyebiliriz.
+
+374
+01:08:31,060 --> 01:08:34,260
+Referanslarınız mevcut burada da. Teşekkür ederiz.
+
+375
+01:08:34,360 --> 01:08:35,260
+Teşekkürler.
+
+376
+01:08:35,300 --> 01:08:58,560
+Evet, teşekkürler. Bu konuda çok fazla çalışma yapılıyor. Hatta yazılım kalitesi ile ilişkili, genel olarak yazılım mühendisliğinde akıllı sistemler, yazılım mühendisliğinde yapay zeka uygulamaları,
+
+377
+01:08:59,060 --> 01:09:17,600
+Makine öğrenmesi ve yazılım mühendisliği şeklinde spesifik isimde konferanslar da yapılıyor. O yüzden buna genel bir bakış açısı katmış oldunuz. Teşekkürler. Sorunuz var mı arkadaşlarınıza?
+
+378
+01:09:21,555 --> 01:09:48,395
+O zaman bizim sıralamamızda şimdi [öğrenci] ve [öğrenci] var. Bu araya iki kişilik grupları koymuştum. Geçen hafta zaman planına eklemediğimiz arkadaşlarınız da var. [öğrenci] ve [öğrenci]'dan sonra [öğrenci] anlatacak. Geçen hafta en son sıralamamız böyleydi.
+
+379
+01:09:49,555 --> 01:10:15,216
+Yalnızca örneğe bakalım. [öğrenci] yükledi sunumunu. Sonra [öğrenci] yapabilir herhalde. Şimdi [öğrenci] ve [öğrenci], sonra [öğrenci] çağırır, sonra da [öğrenci] anlatır.
+
+380
+01:10:17,652 --> 01:10:19,711
+Duyu herhalde değil mi? Tamam.
+
+381
+01:10:19,931 --> 01:10:20,872
+Buradayım hocam, duyuyorum.
+
+382
+01:10:22,072 --> 01:10:37,231
+[öğrenci] daha sonra, [öğrenci] ve [öğrenci]'da yüklediler. Daha doğrusu yükleme zamanını kaçırdığınız için mail attınız.
+
+383
+01:10:38,068 --> 01:10:42,148
+Sizler de varsınız. O yüzden...
+
+384
+01:10:42,148 --> 01:10:47,068
+Hocam, biz kaçırmadık yükleme zamanını da [öğrenci]'la ortak yapıyoruz. O yükledi.
+
+385
+01:10:48,588 --> 01:10:49,528
+Tamam.
+
+386
+01:10:49,528 --> 01:10:51,328
+Siz beraber sorumu yapacağız o şekilde.
+
+387
+01:10:54,668 --> 01:11:03,448
+[öğrenci] zamanında yükledi mi? Neyse, baktım zaten.
+
+388
+01:11:03,468 --> 01:11:04,568
+Evet hocam, ben yükledim.
+
+389
+01:11:04,788 --> 01:11:05,088
+Tamam.
+
+390
+01:11:05,811 --> 01:11:18,851
+Tamam. O zaman şimdi hemen [öğrenci]'le [öğrenci] sunumuna başlasın. Çünkü daha kısa zaman kullanarak bundan sonra sunmamız gerekecek.
+
+391
+01:11:21,871 --> 01:11:23,711
+Hocam merhabalar. Ekranım görünüyor mu acaba?
+
+392
+01:11:23,711 --> 01:11:25,991
+Görünüyor. Teşekkürler.
+
+393
+01:11:27,091 --> 01:11:32,531
+Tamam. Sunumum gözüküyor mu acaba hocam?
+
+394
+01:11:37,043 --> 01:12:00,783
+Tamam, görünüyor herhalde. Merhabalar, yazılım kalitesinde kötü koku yeniden düzenleme ve kullanıcı yorumlarının etkileri üzerine bir çalışma gerçekleştirdik. Ben ve proje arkadaşım [öğrenci] [öğrenci]'le beraber. Bu çalışmada neler yaptık? Kısaca anlatmak gerekirse aslında ajanda özetliyor olacaktır. Neler anlatacağız? Yazılım kalitesi nedir? Neden önemlidir? Yazılım kalitesinin sağlama aktivitelerimiz nelerdir?
+
+395
+01:12:01,203 --> 01:12:07,103
+Yazılım kalitesine etkileyebilecek faktörler nelerdir? Bunlardan kısaca bahsediyor olacağım ki derste de biz bunları görmüştük.
+
+396
+01:12:07,684 --> 01:12:15,503
+Sonrasında ise bizim araştırma konularımız olan kötü koku nedir? Yazılım kalitesi ile ilişkisi nedir? Yeniden düzenleme nedir? Yazılım kalitesine katkısı nedir?
+
+397
+01:12:15,503 --> 01:12:24,203
+Kulayınca incelemeleri nedir? Yazılım kalitesine katkılar vardır gibi konu başlıklarıyla araştırmış olduğumuz makaleleri sizlere anlatmaya çalışacağız.
+
+398
+01:12:24,819 --> 01:12:32,179
+Kısaca başlayalım isterseniz. Yazılım kalitesindedir. Yazılım kalitesi en basit haliyle yazılımın çözmeye çalıştığı probleme karşı başarı derecesidir.
+
+399
+01:12:32,779 --> 01:12:34,300
+Yazılım kalitesi üzerinde...
+
+400
+01:12:34,300 --> 01:12:36,539
+[öğrenci] bir ekleme yapabilir miyim?
+
+401
+01:12:37,539 --> 01:12:42,639
+Doğrudan bu ilk baştakileri atlayarak kötü kokudan başlayabilirsiniz.
+
+402
+01:12:43,340 --> 01:12:44,779
+Tabii ki de. Nasıl isterseniz hocam.
+
+403
+01:12:46,420 --> 01:12:48,340
+Tamam. Evet, teşekkürler.
+
+404
+01:12:49,268 --> 01:13:14,868
+Ben teşekkür ederim hocam. Kötü koku nedir? Kötü koku programın kaynak konumundaki bir sorunu işaret eder. Kötü koku temel tasarım ülkelerinin ihlal edildiğini gösteren ve yazılım kalitesini olumsuz etkileyen kod yapıları olarak tanımlanmakta. Kötü koku tespiti yazılım kalitesini bakımına iyileştirmek amacıyla gerçekleştirilen önemli bir aktivite. Birbirinden farklı kötü koku yaklaşımları bulunmakta. Farklı sonuçlar nedeniyle Russell ve Arşad dediği arkadaşları.
+
+405
+01:13:15,475 --> 01:13:39,255
+Mevcut algılama için kategorizasyon belirlemişler. Bunlar kısaca bahsetmek gerekirse geliştiriciler kod kokularını öznel olarak yorumlayabilir ve dolayısıyla farklı şekillerde tespit edebilir. Bu farklı oluşmasının bir diğer sebebi de dedektör denilen programların uyumları düşüktür. Yani birkaç araç veya kural farklı kod öğeleri için farklı sonuçlar çıkartabilir.
+
+406
+01:13:39,667 --> 01:13:53,467
+Mesela sonar ile sonar küp aslında farklı sonuçlar çıkartabiliyor çoğu zaman kod simerleri. Bir kokuyu tanımlamak için eşik değeri bir dedektörden farklı bir dedektöre değişebilir. Mesela bir tane if sor...
+
+407
+01:13:54,899 --> 01:14:02,259
+İF sorgusunun olduğunu düşünürsek bir kod, körlü bir reis açtığım bir kod, körlü bir reis açmadığım şeklinde farklı sonuçlar bizlere gösterebilir.
+
+408
+01:14:02,659 --> 01:14:12,899
+Hemen hızlıca referans aldığımız makaleler hakkında kısaca bilgi vermem gerekirse de, yukarıda bahsettiğimiz fontana ve arkadaşlar aslında...
+
+409
+01:14:14,707 --> 01:14:20,007
+32 farklı makine öğrenmesi algoritması kullanarak ayrıntılarına değinmeyeceğim bir sürü kısıtımız olduğu için.
+
+410
+01:14:20,007 --> 01:14:28,427
+32 farklı makine öğrenmesi algoritması kullanarak %95'in üzerinde başarı ve %95'in üzerinde F-score değerleri elde ettiler.
+
+411
+01:14:29,228 --> 01:14:35,627
+Sonuçlar gözlemlendikten sonra aslında yazarlar sınıflandırıcıların en uygun olduğunu söylediler.
+
+412
+01:14:41,939 --> 01:15:02,679
+Doğru olmadığını, bazı sınırlamalar yüzünden gerçek dünya kümelerine temsil etmediğini ifade ettiler. Burada makine öğrenmesi sınıflandırıcıların iki sınıfı ayırt ettiğini ve aslında bu iki sınıfın sonuca çok fazla etki olmadığını, birden fazla sonucun aslında oluşabileceğinden bahsettiler.
+
+413
+01:15:03,380 --> 01:15:16,099
+Din Uç'u, Fontana ve arkadaşlarının veri setlerini sırasıyla sınıf düzeyi ve yöntem düzeyi olmak üzere birleştirerek yeniden yapılandırdı ve bunun üzerine makine öğrenmesi algoritmalarını koşturdu.
+
+414
+01:15:16,431 --> 01:15:32,831
+Bunun sonucunda da %76'ya varan doğruluk oranı elde ettiler. Burada din uçlu ve arkadaşlar, yani yazarlar, makine öğrenmesi performansının veri hükümesi gerçek zamanlı senaryoya temsil ettiği zaman başarını azaldığını gösterdiler.
+
+415
+01:15:42,931 --> 01:15:50,711
+Eşitsizlik kurumuna yani gerçek yaşama yaklaşan verisleti durumuna göre aslında şöyle bir durumdan bahsettiler.
+
+416
+01:15:52,435 --> 01:16:17,355
+Yöntem düzeninde birleştirilen ver hükümesinde sınıflandırma yapılıyorken aslında future envy dediğimiz özellik kıskançlığındaki bir tane değişkene bakarak farklı sınıflandırılmalar yapıldığını gösterdiler. Dinitçinin veri setinde. Sonrasında ise bu veri setinin gerçek yaşama yaklaştırıldığı zaman daha yüksek başarı oranı elde edilebileceğini makine öğrenmesi algoritmalarıyla gösterdiler.
+
+417
+01:16:17,779 --> 01:16:39,579
+Kısaca böyle bahsedebiliriz. Yazılım kalitesi ile kötü kokunun ilişkisi nedir? Buna beraber bakalım isterseniz. Kötü kokular yazılım sisteminin sürdürülebilirlik, anlaşılabilirlik gibi kalite yönlerini düşürebilir. Kodun anlaşılmasını ve dolayısıyla bakımını zorlaştırarak yazılım geliştirme sürecini engelleyebilir.
+
+418
+01:16:39,988 --> 01:16:46,168
+Literatüre baktığımız zaman çeşitli teknikler ve araçlar aslında farklı kötü kukulları tespit etmek için kullanılır demiştik.
+
+419
+01:16:47,347 --> 01:17:00,707
+Her teknik ve araç farklı sonuçlar üretebildiği için aslında kesen iti ve arkadaşları kötü kokuları algılama tekniği olarak 7 farklı kategori üzerinde bunların incelenebileceğini söylemiştir.
+
+420
+01:17:00,707 --> 01:17:10,148
+Bu ayrımlar kısaca bahsetmek gerekirse kooperatif tabanlı, görselleştirme tabanlı, arama tabanlı, olasılık tabanlı, metrik tabanlı, semptomlara dayalı ve manuel teknikler olarak söylenebilir.
+
+421
+01:17:12,692 --> 01:17:22,372
+Yeniden düzenleme ise bir yazılım sistemini, kodun dış davranışını değiştirmeyecek, ancak iç yapısını iyileştirecek şekilde değiştirme sürecidir olarak tanımlanabilir.
+
+422
+01:17:22,792 --> 01:17:27,832
+Yeniden düzenlemenin gerekliliğinden bahsetmek gerekirse, kod kokularının varlığıyla belirtiliyor.
+
+423
+01:17:28,412 --> 01:17:34,292
+Bunu da aslında Fowler ve arkadaşları 1999'da yer alan bir makalede bahsetmiştir.
+
+424
+01:17:34,292 --> 01:17:40,091
+Benim şu ana kadar anlatacaklarım bu şekilde. Yeniden düzenleme kısmını [öğrenci] [öğrenci] arkadaşıma anlatacak.
+
+425
+01:17:48,692 --> 01:17:53,692
+Merhaba, ben [öğrenci] [öğrenci]. Sesim geliyor ve ekranım görünüyor mu?
+
+426
+01:17:53,692 --> 01:17:55,692
+Evet, görünüyor [öğrenci].
+
+427
+01:17:55,692 --> 01:18:05,692
+Tamam. İlk yeniden düzenlemeden bahsedeceğim. Yeniden düzenleme ve Refactoring'i ikisini de kullanabilirim.
+
+428
+01:18:06,100 --> 01:18:25,539
+Yenilen düzenleme, refactoring nedir? Dış davranışın değiştirilmeden iç yapının değiştirilmesi demektir. Genellikle kod seviyesinde uygulanır. Peki dış davranış değişmiyorsa niye böyle bir şey yapıyoruz? Daha iyi kod okunabilirliği ve daha az karmaşıklığı söyleyebiliriz. Bu bize hataları daha kolay bulmamızı ve daha çok düzeltmemizi sağlayacaktır.
+
+429
+01:18:26,068 --> 01:18:46,908
+Bizim bu konuda incelediğimiz makale bir review makalesi. Literatürde refactoring zamanı ve eformu azaltmak için çeşitli araçlar öneriliyor ve makale bunları inceliyor. Burada belli kalite standartlarına göre örneğin makalelere sorular sorarak bu sorulardan puanlar vererek makaleleri bir filtreden geçiriyorlar ve gerekli puan şartlarını sağlayan 41 adet makale belirliyorlar.
+
+430
+01:18:53,939 --> 01:19:09,919
+Yalnızca kod değil, dizayn ve gereksinim seviyesinde de olabileceğinden bahsediyorlar. Hatta son dönemlerde dizayn ve gereksinim seviyesindeki yeniden düzenleme yayınlarının sayısının arttığından bahsediyorlar. Bu Refactoring test güdümlü ve çevik yazılım geliştirmede de önemli bir yer tutuyor.
+
+431
+01:19:10,179 --> 01:19:17,919
+Bu Refactoring uygulamaları değerlendirirken iki farklı metrik var. Bunlar metrik tabanlı ve uzman tabanlı değerlendirme.
+
+432
+01:19:18,579 --> 01:19:42,219
+Metrik tabanlı değerlendirmede önceden belirlenmiş kat sayıda metrikler var. Araç tarafından önerilen refactoring uygulandığında bu metrikler yazılım kalitesini arttırmışsa refactoring başarılı sayılıyor. Uzman tabanlı değerlendirmede ise uzmana soruluyor bu aracın değerlendirdiği şey. Uzman doğru olarak değerlendirmesi doğru yanlış olarak değerlendirme de yanlış oluyor.
+
+433
+01:19:45,524 --> 01:20:12,704
+Bu değerlendirmeler sonucunda literatürde en çok kullanılan ve en başarılı algoritmanın arama tabanlı algoritmaları olduğu görülmüş. Arama tabanlı algoritmaların kolaylığı, esnekliği ve çeşitliliği sebebiyle başarılı olduğunu söylemişler. Son olarak da Refactoring'in teknik strateji borgulama açısından zengin bir alan olduğundan bahsetmişler. Yeniden düzenlemenin sonuç olarak kaynak kodun sürdürülebilirliğini, bakım yapılabilirliğini ve test edilebilirliğini arttırdığını söyleyebiliriz. Hataları bulmayı kolaylaştırır ve verimliliği arttırır. Bu şekilde yazılım kalitesine katkıda bulunmuş olur.
+
+434
+01:20:13,268 --> 01:20:22,268
+Diğer bir konu kullanıcı incelemeleri. Kullanıcı incelemeleri kullanıcıların ürün veya yazılım hakkındaki deneyimlerine ve yorumlarına aktarılır.
+
+435
+01:20:23,807 --> 01:20:30,827
+Genelde gönüllü olarak yazılıyorlar. Bazı kullanıcı incelemeleri diğer kullanıcılara ve yazılım geliştiricilerine önemli bilgiler sağlıyor.
+
+436
+01:20:31,568 --> 01:20:34,608
+Bizim incelediğimiz makale spesifik olarak mobil uygulama incelemelerine odaklanıyor.
+
+437
+01:20:34,608 --> 01:20:40,408
+Burada incelemelerin temel faydası kullanıcı gereksinimlerini anlamak ve hatal kısımlarının bulunmasını sağlamak.
+
+438
+01:20:41,716 --> 01:20:59,595
+Tabi uygulamalar binlerce yorum alıyor ve bunların okunup incelenmesi uzun zaman ve efor alabiliyor. Bu yüzden bu yorumlardan gerekli bilgilerin otomatik çıkarılması için çeşitli algoritmalar öneriliyor. Bu makale önceki bir review makalesi değil, kendileri bir algoritma önermişler ve bunun performansını diğer algoritmalarla karşılaştırıyorlar.
+
+439
+01:21:00,564 --> 01:21:21,423
+Tabii kullanıcı incelemeleri çok zengin bir bilgi kaynağı olsa da, yani çok iyi bir uygulama, hiç sevmedim tarzı yorumlar da olabiliyor. Bunların yazılım kalitesine faydası olmuyor. Ve bu incelemeler aynı zamanda kısa ve resmi olmayan bir dilde yazılmış durumdalar. Bu yüzden bu yorumlara ve incelemelere verim adancılığı ve doğal değişleme tekniklerinin uygulanması gerekiyor.
+
+440
+01:21:21,971 --> 01:21:45,011
+Bu teknikler uygulandıktan sonra bu probleme sınıflandırma problemi olarak yaklaşılıyor. Örneğin çeşitli sınıflar var. Hata bildirimi, özellik isteği, bilgi verme, bilgi arama gibi. Algoritmalar bir incelemenin hangi sınıfa ait olduğunu bulmaya çalışıyor. Algoritmalar denenirken özellik seçimi için bilgi kazancı ve iki kareler yöntemi kullanılıyor. Bu özellik seçimleri de sınıflandırıcıların performansını önemli bir ölçüde arttırıyor.
+
+441
+01:21:45,971 --> 01:22:02,071
+Kendi önerdikleri ICRM algoritması temel algoritmalar olarak naive bias, kararacı ve logistik regresyon gibi algoritmalarla karşılaştırıyorlar. Sonuç olarak önerdikleri ICRM algoritması bütün değerlerde Prestige'in, Recall, F-score ve doğruluk değerinde en başarılı sonuca ulaşıyor.
+
+442
+01:22:02,591 --> 01:22:06,731
+Yeniden düzenleme incelemelerinin yazılım katkısına bahsedecek olursak.
+
+443
+01:22:07,220 --> 01:22:20,620
+Modeller kullanılarak incelemeler sınıflandırılıyor, yorumlanıyor, gerekli bilgiler çıkarılabiliyor, yeni kullanım senaryoları belirlenebiliyor. Bu bilgiler kullanılarak da daha kaliteli yazılımlar üretilebiliyor. Bizim anlatacaklarımız bu kadar. Dinlediğiniz için teşekkür ederiz.
+
+444
+01:22:21,480 --> 01:22:22,240
+Teşekkürler.
+
+445
+01:22:48,083 --> 01:22:49,043
+Hocam, burada mısınız?
+
+446
+01:23:28,020 --> 01:23:29,520
+Evet, evet.
+
+447
+01:23:36,243 --> 01:23:38,224
+Hocam, sunumumuz bitmişti ama.
+
+448
+01:23:40,184 --> 01:23:48,064
+Evet, ben şimdi bir sonraki arkadaşınızın sırasına bakıyorum. [öğrenci].
+
+449
+01:23:49,344 --> 01:23:50,163
+Evet, buradayız.
+
+450
+01:23:51,123 --> 01:23:56,764
+Tamam, o zaman siz anlatın. Bir dakika, benim bir problem oldu da burada.
+
+451
+01:23:58,484 --> 01:24:02,243
+Tamam hocam. Soru sorulan arkadaşlar varsa dinlemeye hazırız hocam.
+
+452
+01:24:02,243 --> 01:24:10,184
+Tamam. [öğrenci] çağırsan başlamadan soru varsa alalım bir önceki için.
+
+453
+01:24:16,532 --> 01:24:18,212
+Tamam, yok gibi hocam. Teşekkür ederiz.
+
+454
+01:24:18,592 --> 01:24:21,372
+Bir hata yaptım galiba ben de onu düzeltmeye çalışıyorum.
+
+455
+01:24:22,152 --> 01:24:23,232
+O yüzden sizin...
+
+456
+01:24:23,232 --> 01:24:24,112
+Ha, tamam. Evet.
+
+457
+01:24:25,112 --> 01:24:28,292
+Evet, şimdi siz sunumunuzu yükleyebilirsiniz tekrar.
+
+458
+01:24:28,612 --> 01:24:30,992
+Az önce bir problem oldu galiba.
+
+459
+01:24:31,712 --> 01:24:33,532
+Siz yüklemişken ben bir şey yaptım.
+
+460
+01:24:35,472 --> 01:24:38,512
+Tekrar sunumunuzu yükleyebilirsiniz [öğrenci].
+
+461
+01:24:42,931 --> 01:24:47,931
+Paylaşımı veremedim galiba. İki ekran olduğu için sıkıntı yaşıyorum şu an.
+
+462
+01:24:55,764 --> 01:24:56,203
+Evet.
+
+463
+01:25:00,115 --> 01:25:00,956
+Tamam, geliyor değil mi?
+
+464
+01:25:02,956 --> 01:25:03,515
+Evet.
+
+465
+01:25:05,895 --> 01:25:10,715
+Bu sonuda test edilen... Bu arada ben [öğrenci] [kişisel bilgi]
+
+466
+01:25:11,675 --> 01:25:15,296
+Test edemeyen sistemlerin test edilmesine ilişkin bir harika olma çalışmasını inceleyeceğiz.
+
+467
+01:25:18,003 --> 01:25:42,623
+İçerik olarak öncelikle bir giriş yapılacak. Daha sonra test edilen sistem nedir? Test Oracle nedir? Oracle problem nedir? Kullanan teknikler nelerdir? Bunların karşılaştırılması ve sonuç şeklinde dönüş yapılacak. Biraz uzun bir sonu olduğu için bazı kısımları geçeceğim. Çünkü brenniz kısıtla anlaşıldı. Test edilemeyen sistemlerdeki işlevsel yazılım hatanı test edilen...
+
+468
+01:25:42,623 --> 01:25:45,244
+Hangi kaynak, başlangıç kaynağınız?
+
+469
+01:25:45,648 --> 01:26:08,688
+Efendim? Başlangıç kaynağınız hangi dergiden de? Software Quality Journal'dan. Sadece oradan bir makale bu. Tekniklerin karşılaştırılmasını içeren bir makale. Bu çalışmada bu tekniklerin etkinliği kullanabilirdiği, maliyeti gibi kriterler incelenmiştir.
+
+470
+01:26:09,492 --> 01:26:22,612
+Öncelikle test edilen sistem nedir? Bundan bahsedelim. Test edilen sistem için bir test girdisi oluşturulur. Bu test girdisi için beklenen bir test çıktısı belirlenir ve bir çıktı evletmek için test edilen sistem bu test girdisiyle yürütülür.
+
+471
+01:26:22,612 --> 01:26:36,632
+Bu çıktı son olarak beklenen test çıktısıyla karşılaştırılır. Bu karşılaştırma sonucunda herhangi bir tutarsızlık varsa test hatalı olarak kabul edilir. Beklenen test çıktısını tahmin etmekten ve bu karşılaştırma yönünü yapmaktan sorumlu olan mekanizmaya da kain denir.
+
+472
+01:26:36,912 --> 01:26:39,931
+Yazılım testi bir kain her zaman mevcut olduğu varsayımına dayanır.
+
+473
+01:26:40,532 --> 01:26:45,012
+Geneliksel test tekniklerinde kainin etkisiz kaldığı durumlarda test edilemeyen sistem durumu oluşur.
+
+474
+01:26:45,012 --> 01:26:52,012
+Bu test edilemeyen sistemlerdeki işlevsel yazılım hatalarını tespit edebilen birçok otomatik test örneği öğrenilmiştir.
+
+475
+01:26:53,492 --> 01:26:56,012
+Test Oracle'da kain testi bir testin başarılı...
+
+476
+01:26:57,119 --> 01:27:20,820
+Olup olmadığını belirlemek için kullanılan bir mekanizmadır. Test kainleri doğru ve yanlış sistem davranışlarını ayırt ederler. Sisteme girdi verip referans çıktığını alıp alınmadığını incelerler. Oracle problem ise kain sonu burada test edilemeyen sistemle birbirinin yerine geçen terimlerdir. Test kainlerinin uygulanmasının mümkün olmadığı proje programları ifade eder. Geneliksel test teknikleri burada işe yaramazlar.
+
+477
+01:27:22,452 --> 01:27:31,452
+Bu tekniklere bakacak olursak ilk sırada M-Version Testi var. M-Version Testi için şöyle bir tanıma yapabiliriz. S bir test edilen sistem olsun.
+
+478
+01:27:31,452 --> 01:27:39,452
+S ile birlikte senin herhangi bir işlerini uygulayan bir sistem olsun. S, S'nin referans implementasyonu yani referans uygulayısı denir.
+
+479
+01:27:39,452 --> 01:27:47,452
+M-Version Testinde S ve S ile aynı test sonucu S'nayir ücretilir. Yapılan işlemler sonucunda S ve S'nayir çıkılır, karşılaşılır.
+
+480
+01:27:47,956 --> 01:27:52,956
+M-versiyon testi bu çıktığı da değerlendirip hata olup olmadığını bildirir.
+
+481
+01:27:53,695 --> 01:27:59,395
+Bir referans uygulayıcısı kendi çeşitlisini oluşturmak için testi taklit ettiğinden M-versiyon testini uygulayan testtir.
+
+482
+01:28:00,215 --> 01:28:04,496
+Bu test hakkında, testlediğiniz sistem hakkında bilgi sahibi olmasını gerektirmez testere.
+
+483
+01:28:05,615 --> 01:28:10,536
+M-versiyon testinin etkinliğine bakacak olursak, M-versiyon testi temelde bir kara kutu testidir.
+
+484
+01:28:11,456 --> 01:28:15,536
+Bu nedenle M-versiyon testi olayların akışını test edemez. Daha işlevsel ve yüzeyseldir.
+
+485
+01:28:16,051 --> 01:28:38,871
+İtivari ve arkadaşlarının verdiği çıktılar yerine program spektrumlarının karşılaştırıldığı M-versiyon testinin tersten gelinmeni sağlayan değiştirilmiş bir çeşidinde, yani CLN test olarak kullanıldığı yöntemde, o ayakışları temsil edildiğinden M-versiyon testi beyaz kutu testi gibi davranıp etkinliğini arttırabilir. Sistemiyet çapısı inceleyebilir. Şöyle bir örnek verirsek.
+
+486
+01:28:39,283 --> 01:28:52,683
+S yine test edilen bir sistem olsun. S'e de bunun referans uygulayıcısı. O da başarısız bir çıktı olsun. M-Mersian testi için. M-Mersian testi SO eşit değildir. SO ağır kontrolünü yapıp bir hata görür.
+
+487
+01:28:53,483 --> 01:29:00,003
+Bu yüzden dolayı bu çıktıların başarısızlığını tespit edemez. Burada da ilişkili başarısızlık ortaya çıkar.
+
+488
+01:29:01,268 --> 01:29:21,347
+Bu ilişkili başarısızlığı azaltmak için bazı yönergeler bulunmaktadır. İlk olarak bağımsız geliştirme ekipleri kullanmak. Burada S ve SR için aynı ekip her iki sistemi de geliştirirse bir hatanın hem S'de hem de SR'de tekrarlanma olasılığı yüksektir. O nedenle her sistem için bağımsız ekipler kullanmak bu olasılığı azaltır.
+
+489
+01:29:22,228 --> 01:29:34,827
+Sistemleri çeşitlendirmek durumunda ise, her sistem için farklı platformlar, algoritmalar, tasarım yöntemleri, yazılım mimarileri veya programlama dilleri kullanılarak bu ilişkili başarısızlık onasını azaltılabilir.
+
+490
+01:29:35,747 --> 01:29:49,707
+Üçüncü olarak, test grubunun manipülasyonu. Bazı test girdileri ilişkili başarısızlıklara neden olurken bazıları neden olmaz. Bu nedenle bir hatayı tespit etme şansı ilişkili bir başarısızlığa yol açan girdilerin bunu yapmayan girdilerin oranına bağlıdır.
+
+491
+01:29:51,699 --> 01:30:12,399
+M-Version Testi'nin kullanabilirliği. M-Version Testi'ndeki tek manuel görev referans uygulayıcılarını temin etmek ve hata eklemek. Kullanılabilirlik bu açıdan değerlendirilir. Bu uygulayıcıların geliştirilmesi önemli ölçüde zaman ve çaba gerektirmektedir. Bu durumda iş yoğunluğu artar. Bu yoğunluğu azaltmak için de bazı çözüm önerileri sunulmuştur.
+
+492
+01:30:13,555 --> 01:30:29,655
+Bu çözüm önerileri ilk olarak bir uygulayıcının performansının önemliliği olmadığı belirtilmektedir. Burada üst düzey formlama dillerinde yazılan bir uygulayıcının daha zayıf çalışma zamanı derinliğine sahip olduğu ancak daha hızlı olduklarından tercih sebebi olduğu belirtilmiştir.
+
+493
+01:30:30,176 --> 01:30:31,655
+İkinci öneride de...
+
+494
+01:30:32,148 --> 01:30:43,627
+Referans uygulayıcılarını geliştirme çabasını tamamen ortadan kaldırmak, aynı sistemin önceki sürümlerinin veya aynı işlevselliği uygulayan diğer sistemlerin referans uygulayıcısı olarak kullanılması önerilmiştir.
+
+495
+01:30:43,728 --> 01:30:49,927
+Üçüncü öneride de, ilişen hasadıyla alternatif bir temin stratejisi oluşturmaktır.
+
+496
+01:30:50,787 --> 01:30:57,027
+Aranan istenen uygulayıcının sintaksı ve semantik tanımlamalarından bazılarıyla online kod havuzlarının aranmasını içerir.
+
+497
+01:30:57,492 --> 01:31:04,811
+Bu durum sistemin referans uygulayıcısı temin çabasını önemliliğinde azaltır. Referans uygulayıcısı ararken titiz davranmalıdır.
+
+498
+01:31:06,711 --> 01:31:12,091
+Anversiyon testinin maliyetine bakacak olursak, Anversiyon testinin maliyeti ihtilaf yaratan bir konudur.
+
+499
+01:31:12,091 --> 01:31:21,091
+Birçok testtir, referans uygulayıcısının tedarik sürecinin yeniden test uygulaması gerektirdiği için pahalı olduğunu belirtmektedir.
+
+500
+01:31:22,452 --> 01:31:32,931
+Fakat bazı test uzmanları ise... Biraz daha özetleyerek anlatın. Yani hızlı hızlı okumak gerekli yerleri arkadaşlarınızın anlaması gereken.
+
+501
+01:31:33,731 --> 01:31:43,032
+Evet, tamamdır. Manuel testte senaryo açıkçası manuel olarak dolanırken, en versiyon testinde otomatik olarak yapılır. Bu da süreci hızlandırır.
+
+502
+01:31:44,595 --> 01:31:55,895
+Bakım sonrası ilk test sanayi olası durumunda bunların güncellenmesi gerekmektedir uygulayıcıların. Bu durumda da diğer ucuz testlerin maliyet yetkinlik oranına bakarak en uygun kazanç seçilir.
+
+503
+01:31:57,475 --> 01:32:04,615
+Metamorfik teste bakarsak, ikinci yöntemimiz. Metamorfik teste metamorfik test grubu adı verilen bir dizi test durumu oluşturulur.
+
+504
+01:32:04,992 --> 01:32:27,712
+Bu metamorfik test grubunun iki tür test durumu vardır. Birincisi isteğe bağlı olarak oluşturulan kaynak test senaryolarıdır ve bunlar herhangi bir test senaryosu oluşturma stratejisiyle oluşturulabilir. İkincisi ise takip test senaryolarıdır. Bu ise belirli kaynak test senaryolarına ve bir metamorfik metayoride olarak oluşturulur. Metamorfik nitelik kaynak ve takip test senaryoları arasında beklenen bir ilişkidir.
+
+505
+01:32:28,627 --> 01:32:34,267
+Metamorfik Test Grubu ile birlikte metamorfik nitelik, metamorfik ilişki olarak adlandırılır.
+
+506
+01:32:35,267 --> 01:32:43,487
+M-R'ler yani metamorfik ilişkiler, metamorfik test grubunun yürütülmesi ve bu yürütümler arasında metamorfik niteliğin devam edip etmediğini kontrol ederek değerlendirilir.
+
+507
+01:32:44,767 --> 01:32:50,707
+Bu testin etkinliğine bakacak olursak, bu da M-Version testi gibi kâhın problemini azaltmak için oluşturulmuştur.
+
+508
+01:32:51,631 --> 01:33:07,831
+Özellikle ön bilgi eksikliğinden dolayı test sonucunun tahmin edilemediği durumlarda kain problemini çözmeye çalışır. Etkinliği yapılan deneylerde %5-100 mutasyon puanlarına kadar çeşitli sonuçlar vermiştir. Bunu etkileyen bazı faktörler vardır. Bunlar kapsam özellikler, sorun alınır ve hatalardır.
+
+509
+01:33:16,884 --> 01:33:26,363
+Bunun seçimini yaparken bir test grubunun kapsamını kısıtlayabilir. Bu tür mrelerin kullanımı sınırlayarak kapsam maksimize edilebilir.
+
+510
+01:33:26,363 --> 01:33:38,363
+Özelliklere bakacak olursak, birkaç tane özellik vardır etkinliğine etkileyen faktörlerden. Bunlar soyutlama düzeyi, öge boyu, semantik, güç, sıkılık ve sağlamlıktır.
+
+511
+01:33:38,363 --> 01:33:43,884
+Soyutlama düzeyi ne kadar düşükse, tauranın testi o kadar yüksektir. Öge boyuna bakacak olursak,
+
+512
+01:33:44,275 --> 01:33:52,015
+Uygulama düzeyinde tanımlanan metamorifik ilişkiler, işler düzeyinde tanımlanan metamorifik ilişkilere göre daha fazla hata tespit edebilirler.
+
+513
+01:33:53,076 --> 01:34:00,336
+Semantikte test edilen sistemin de anlaşılarını daha doğru yansıtan bir metamorifik ilişkinin oldukça etkili olabileceği bir eğitim iştir.
+
+514
+01:34:01,275 --> 01:34:07,076
+Güç kısmında ise etki alanında gücü daha yüksek olan metamorifik ilişkiler daha etkin olarak çalışırlar.
+
+515
+01:34:07,891 --> 01:34:20,051
+Sıkılıkta da daha sıkı metamorfik ilişkiler daha kesin bir doğruluğu tanımına sahiptir. Örneğin sıkı bir metamorfik ilişki, şöyle x eşittir öyle ki y çarpı 2 şeklinde bir denetim yapsın.
+
+516
+01:34:20,051 --> 01:34:30,572
+Burada sadece bir cevap gereklidir ama x büyüktür 2 derkenki bir durumda da daha gevşek bir durumda sistem metamorfik ilişki daha etkin olmayabilir.
+
+517
+01:34:31,347 --> 01:34:39,968
+Sağlamlık kısmında da tüm girdi değerleri için tutması beklenen, verileri tutması beklenen bir metamorfik ilişki daha sağlam diyebiliriz.
+
+518
+01:34:41,748 --> 01:34:48,847
+Problem alanı etkisine bakınca, metamorfik testi birden çok metamorfik ilişki kullanınca daha etkili bir sonuç alınıyor.
+
+519
+01:34:49,608 --> 01:34:57,307
+Bu ilişkiler alana özgü olduğundan, X problem alanındaki toplam potansiyel metamorfik ilişki sayısı Y problem alanından fazla olabilir.
+
+520
+01:34:59,296 --> 01:35:01,396
+Metamorfik Test daha etkili olur.
+
+521
+01:35:02,636 --> 01:35:08,195
+Hatalar kısmına bakacak olursak, Metamorfik Test ve varyantları çok çeşitli hataları tespit edebilirler.
+
+522
+01:35:08,396 --> 01:35:11,655
+Örneğin, Metamorfik Test konfigürasyon parametreindeki hataları bulabilir.
+
+523
+01:35:12,336 --> 01:35:17,416
+Metamorfik ilişkiler spesifikasyona göre tasarlanmışsa, aynı spesifikasyon hataları testede yayılmış olabilir.
+
+524
+01:35:18,456 --> 01:35:24,436
+Böylece Metamorfik Test ilişkili başarısızlıklar sebebiyle bazı spesifikasyon hatalarını bulamayabilir, etkinliği azalır.
+
+525
+01:35:26,452 --> 01:35:37,211
+Bu metamorifik testin kullanılabildiğine bakalım. Metamorifik testin kavraması diğer test tekniklerinden daha zordur. Bunun nedeni metamorifik testin çalışması için geniş bir beceri seti gerektirmesidir.
+
+526
+01:35:38,011 --> 01:35:45,131
+Alan uzmanları, alan uzmanı olmayan uzmanlara göre daha etkili ve daha verimli metamorifik ilişkiler belirleyebilir. Bu da etkinliği artırır.
+
+527
+01:35:47,220 --> 01:35:48,220
+Bunlar Birliği, pardon.
+
+528
+01:35:49,680 --> 01:35:57,980
+Cannavela ve Bayman, belirli bir metamorfik ilişkilerle ilişkili işlem dizisi moralini tanımak için makine öğrenilme sınıflandırıcılarını eğitmeyi önermiştir.
+
+529
+01:35:58,740 --> 01:36:04,200
+Böyle bir sınıflandırıcı görünmeyen kodun belirli bir metamorfik ilişkiyi sergileyip sergilemediğini tahmin edebilir.
+
+530
+01:36:04,200 --> 01:36:09,520
+Bu yöntemde sonuçlar şu ana kadar umut verilir. Bu tekniğin yanlış pozitif oranı düşüktür.
+
+531
+01:36:09,908 --> 01:36:14,868
+Test edilen sistemde hatalar mevcut olduğunda bile metanografik ilişkileri belirleyebilir.
+
+532
+01:36:17,228 --> 01:36:23,728
+Verimliliğine bakacak olursak, burada test senaryosu oluşturma ve yürütme ile ilgili bir zaman maliyeti vardır.
+
+533
+01:36:24,368 --> 01:36:28,307
+Farklı metanografik ilişkilerin bir boyutlarına sartır.
+
+534
+01:36:28,807 --> 01:36:33,807
+Bu yüzden bazı metanografik ilişkilerin diğerinden daha fazla zaman maliyeti olduğunu görmekteyiz.
+
+535
+01:36:33,807 --> 01:36:37,048
+Bu kısmı biraz hızlı geçeceğim çünkü bayağı karışık.
+
+536
+01:36:37,492 --> 01:36:49,492
+Emersiyon testi tabanlı kainlerde daha hızlı ve daha kolay geliştirilirler metamorfik testler. Bu yüzden onların yerine tercih edilebilirler. Sezgisel test kainleri yüksek yeniden kullanım potansiyeline sahiplerdir.
+
+537
+01:36:51,912 --> 01:37:01,692
+Diğer bir teknik assertions yerine bildirimler. Bunlar doğrudan testin kaynak koduna yerleştirilmiş bu grubun ifadelerdir. Bu grubun ifadeler testin durum değişkenlerine dayanır.
+
+538
+01:37:02,771 --> 01:37:11,591
+Bildirimler testilden sistemin yürütülmesi sırasında kontrol edilir ve doğru veya yanlış olarak değerlendirilir. Yanlış ise bu testin hatalı olduğunu gösterir.
+
+539
+01:37:12,971 --> 01:37:19,612
+M-versiyon testi ve metomorifik testin aksine bildirimler orijinal olarak kain problemini hafifletmek için tasarlanmamışlardır.
+
+540
+01:37:20,211 --> 01:37:28,551
+Ancak bir bildirimi değerlendirmek için kişinin test sonucunu tahmin etmesine gerek olmadığı görüntüdür. Test sonucu tahmin etmeme mümkün olma durumlar için oldukça uygun yöntemdir.
+
+541
+01:37:29,779 --> 01:37:44,760
+Etkiliğine bakacak olursak, bildirimler testin etkinliğine direkt tesir etmektedir. Çünkü kaynak kodun içerisine eklenirler. Bu durumda yanlış pozitif görünme durumu oluşur. Bu durumda da böyle overhead ve olası programatüre timeout'lara neden olabilir.
+
+542
+01:37:45,960 --> 01:37:50,880
+Bildirimler bağımsız programlama dillerinde yazılırlar. Bazı diller belli görevler için uygundur.
+
+543
+01:37:51,507 --> 01:38:02,488
+Okunabilikte oluşacak sorunlarda polimorfizm kullanılabilir. Bu da üst sınıf, bildirimlerin üst sınıfta belirtilip A sınıflarda da tekrar kullanılmasını sağlar. Böylece okunabilik sorunları azaltabilir.
+
+544
+01:38:04,568 --> 01:38:18,108
+Bildirimler yalnızca programın belli noktalarını tutması gereken sınır sayıda özelliği denetleyebilir. Bu da etkinliğini azaltır. Bu durumda bildirimlerin tanımlanmasının daha etkinliğin arttırılması amacıyla çeşitli yardımcı değişkenler sisteme eklenebilir.
+
+545
+01:38:19,764 --> 01:38:24,083
+Bildirimler değişkenlere atanan, verinin bütünlüğünü tehlikeye atan hataların testinde kullanılır.
+
+546
+01:38:25,703 --> 01:38:27,324
+Kullanılabildiğine bakacak olursak yine.
+
+547
+01:38:28,904 --> 01:38:33,644
+Değiştiriciler programı inceleyip, anlayıp, projenin kaynak konumuna bildirim ekleyip bunları değiştirebilirler.
+
+548
+01:38:33,804 --> 01:38:36,024
+Bu açıdan kullanılabilir olarak görünmektedirler.
+
+549
+01:38:37,623 --> 01:38:42,203
+Bildirimler çoklu yürütmelerine uygun değildir. Sadece tek bir test yürütümünü kontrol edebilirler.
+
+550
+01:38:43,252 --> 01:38:50,652
+Bir bildirim oluşturmak için gereken çabada etkilenen faktörlerden biri de bildirimin belirtilen ayrıntı düzeyi ve programlama dilinin açıklayıcılığıdır.
+
+551
+01:38:51,532 --> 01:39:00,271
+Bazı araçlar bildirimlerin geliştirmesini destekler. Bazı programlama dillerinde asert anahtar sözcüğü ve sabit invariant algılama araçları bulunur.
+
+552
+01:39:01,811 --> 01:39:05,171
+Bu sabit algılama araçları otomatik olarak bildirimler oluşturmaya yararlar.
+
+553
+01:39:09,108 --> 01:39:31,847
+Dördüncü teknik, makine öğrenmesi kainleri. Burada makine öğrenimi, kain yaklaşımlarında makine öğrenimi algoritmalarını yazılım testi için farklı şekillerde kullanır. Burada sistem başarısızlıkla ilişkili kalıpları belirlemek için bir eğitim veri setinde, data set içerisinde makine öğrenimi algoritmasını öğrenmeyi içerir. Bir test senaryosuyla yürütülür.
+
+554
+01:39:32,207 --> 01:39:39,207
+Ve bu eğitilmiş makine öğrenimi algoritması daha sonra bu test senaryosunun yürütümünden bu tür kalıpları kontrol etmek için kullanılır.
+
+555
+01:39:41,307 --> 01:39:48,927
+Burayı geçecek olursak, diğer bir yöntemde de makine öğrenimi algoritmasının bir test modeli olacak şekilde eğitilmesini içerir.
+
+556
+01:39:48,927 --> 01:39:56,687
+Böylece bu makine öğrenimi algoritması M-Version testindeki referans uygulayıcısına benzer. İlişkili başarısızlığa da neden olabilir bu yöntem.
+
+557
+01:39:58,707 --> 01:39:59,927
+Etkinliğe bakacak olursak...
+
+558
+01:40:00,000 --> 01:40:11,700
+Test etkinliği etkileyen iki faktör vardır. İlk grup eğitim veri sesinin yapısıyla ilgilidir. Başarılı ve başarısız test senaryolarının dengesinin test etkinliğini satmasına etkilebileceği bildirilmiştir yapılan aşılımlarda.
+
+559
+01:40:12,740 --> 01:40:19,600
+Veri setleri boyut açısından da değişiklik gösterebilir. Daha büyük veri setleri daha az satmaya sahiptir ve gürültünün olumsuz etkilenen daha az uyandırırlar.
+
+560
+01:40:21,171 --> 01:40:32,891
+Bir eğitim veri seti çoğu zaman onu karakterize eden bir dizi özelliğe indirgenmelidir. Çünkü eğitim ve veri setinin biçimi nadiren makine öğrenmesi için uygundur. Bu genellikle bir veya daha fazla özellik çıkarıcı kullanarak elde edilebilir.
+
+561
+01:40:33,691 --> 01:40:45,891
+İkinci faktör grubu ise kullanılan özellik çıkarıcı sayısı ve çeşitliliği ile ilgilidir. Makine öğrenmesi kainleri temelde kara kutu testinde kullanılır. Bu kapsamda...
+
+562
+01:40:46,292 --> 01:40:57,731
+Makine öğrenmesi kainleri olayın akışını test edemezler. Fakat bazı araştırmalarda bunun beyaz kutu testinde kullanabileceği ve bu durumda iç yapısında inceleyebileceği bildirilmiştir.
+
+563
+01:40:59,731 --> 01:41:01,051
+Buraları geçersek.
+
+564
+01:41:02,292 --> 01:41:13,132
+Bir kişinin makine öğrenmesi hikayenini eğitmek için denetimli bir makine öğrenilini algoritması kullanılması durumunda uzmanların veri setindeki her eğitim örneğini manuel olarak etiketlemesi gerekebilir.
+
+565
+01:41:13,232 --> 01:41:16,692
+Bu gibi durumlarda daha büyük veri setlerini hazırlamak için önemli öcede çaba gerekir.
+
+566
+01:41:17,272 --> 01:41:22,632
+Buradan fazla, birden fazla uzman kullanılırsa daha anlaşmazlıkların ortaya çıkma ihtimali vardır.
+
+567
+01:41:22,632 --> 01:41:27,272
+Bu anlaşmazlıkların çözüm ise teknik uygulamak için gereken genel çabayı da artacaktır.
+
+568
+01:41:29,076 --> 01:41:49,536
+Beşinci test tekniği ise istatistiksel hipotez testidir. Bu istatistiksel hipotez testinde test edilen sistem, özet istatistikler kullanarak bir araya getirilen çok sayıda çıktı elde etmek için birçok kez yürütülür. Örnek olarak ortamda bir varyans verilebilir.
+
+569
+01:41:50,100 --> 01:42:05,180
+Bu kümelenmiş değerler, bu çıktı setin dağılımını karakterize eder ve beklenen dağılımı tanımlayan değerlerle karşılaştırırlar. Önemli farklar, vermeyen karşılaştırmalar testin doğru davrandığının kanıtı olarak yorumlanabilir. Ve önemli farklılıklar bunun tersinin kanıtıdır.
+
+570
+01:42:07,680 --> 01:42:16,660
+Nane terminizm nedeniyle bir sistemin test sonucunu tahmin edilemez olabilir. Bu da bu tür sistemlerin kain probleminin örnekleri olduğu anlamına gelir.
+
+571
+01:42:18,163 --> 01:42:37,083
+İstatistiksel hipotez bu spesifik kain problemi türünü çözmek için geliştirilmiştir. İstatistiksel hipotez bu tür sistemlerin tipik bir çıktı dağılımına sahip olabileceğini ve bu tipik çıktı dağılımı hakkında bilgilerin tek bir yürütüm testinin sonucuyla ilgili bilgi olmasa bile yürütmeden önce mevcut olabileceğini kabul etmektedir.
+
+572
+01:42:45,264 --> 01:42:47,964
+Bu tahmin etmenin mümkün olmadığı durumlarda uygulanabilirler.
+
+573
+01:42:50,824 --> 01:42:57,004
+Etkinliğine bakacak olursak. İstatistikler hipotezin etkinliği istatistiksel test seçimine bağlıdır.
+
+574
+01:42:58,104 --> 01:43:04,564
+Bu da testlerin her zaman en etkili ve uygulanabilir istatistiksel test verilerini kullanmayı tercih etmesini gerektirmektedir.
+
+575
+01:43:06,144 --> 01:43:11,024
+Dağılımları karakterize eden özel istatistikler de etkinliğin önemli bir belirleyicisidir.
+
+576
+01:43:11,439 --> 01:43:27,379
+Örnek vermek gerekirse, bu derleyi ve arkadaşları varyansın ortalamadan daha etkili olduğunu bulmuştur. İlginç bir şekilde varyansın ve ortalamanın bir diğerinin tespit edilmeyi değişkenleri, mutantları tespit ettiği gözlemlenmiştir. Bu, birden çok özet bir istatistiğin kullanılması gerektiğini gösterir.
+
+577
+01:43:29,379 --> 01:43:38,859
+Etkinliği artırmak için testlerin dikkate aldığı veri miktarını maksimize etmesi gerekir. İstatistiksel hipotez gerekir ancak yeterli değildir. Yanlış pozitif ve negatifleri yüksektir.
+
+578
+01:43:39,539 --> 01:43:54,599
+Kişi, istatistiksel hipotezde önem seviyesi üzerinde kontrole sahiptir. Daha yüksek önem seviyeleri daha fazla yanlış pozitif ancak daha az yanlış negatif ve bunun tersiyle sonuçlanır. Hangi test şenaryoların yanlış olduğu belirsizdir? Bunun yanında her birini manuel olarak incelememesi gerekir.
+
+579
+01:43:56,599 --> 01:43:59,019
+Testin karşılaştırılmasına bakılacak olursak.
+
+580
+01:43:59,796 --> 01:44:20,836
+İlk olarak tekniğin ilişkili başarısızlık yaşayıp yaşayamadığı durumudur. Enversiyon testi yaşar, metamorfik testi de yaşar. Assertions'da bu durum bilinmemektedir. Makine öğrenimi kainelerinde de yaşanmaktadır ilişkili başarısızlık. İstatistiksel hipotezde de böyle bir çıkarımla karşı karşıyayız.
+
+581
+01:44:21,811 --> 01:44:38,271
+Tesadüfi doğruluk için etkili midir bu durumdan? Ona bakmışız. M-Mersion testinde bu başarısız tesadüfi doğruluk bulunmamaktadır. Metamorifik testte de bulunmamaktadır. Bildirimlerde yine bilinmiyor. Makine adını mükainelerinde de ve istatistik fosesinde de böyle bir durum yaşanmamaktadır.
+
+582
+01:44:39,971 --> 01:44:45,851
+Bu tekniğe dahil olarak bir kainin tasarımı ve uygulaması ile ilgili olarak yapılabilecek seçimlere örnek verecek olursak,
+
+583
+01:44:46,323 --> 01:44:54,243
+M-Version testinde bir referans uygulayıcısının yazıldığı programlama dilinin test edilen sistem programlama diliyle aynı olup olmadığı seçilebilir.
+
+584
+01:44:55,543 --> 01:45:03,184
+Metamorifik testte bir metamorifik ilişkinin sıkılığı seçilebilir. Bildirimlerde yardımcı değişkenler kullanılabilir.
+
+585
+01:45:04,243 --> 01:45:10,623
+Makine öğrenimi kainelerinde kişi teknik tarafından hangi özellik çıkarıcılarının kullanacağına dair bir seçeneğe sahiptir. Bunun seçimi yapabilir.
+
+586
+01:45:11,412 --> 01:45:16,412
+İstatistiksel hipotezde de kişi teknik tarafından hangi istatistiksel testlerini yürütüleceğine karar verebilir.
+
+587
+01:45:18,812 --> 01:45:23,472
+Bu tabloda her teknik için verimlilik verilerin özeti görünmektedir.
+
+588
+01:45:25,112 --> 01:45:32,372
+Bu tekniğin etkinliğinin farklı bağlamlarda neden değişebileceğini açıklayabilecek nedenlere örnekler verilmektedir burada.
+
+589
+01:45:33,712 --> 01:45:35,731
+Bunu da geçeyim bayağı uzun sürdü çünkü.
+
+590
+01:45:36,851 --> 01:45:40,311
+Her Teknik için kullanılabilirlik özetini burada görmekteyiz.
+
+591
+01:45:40,971 --> 01:45:47,152
+Burada tekniğin kullanılabilirliğinin farklı bağlamlarda neden değişebileceğini açıklayabilecek nedenlere örnekler verilmektedir.
+
+592
+01:45:47,811 --> 01:45:56,431
+M-versiyon testinde bazı durumlarda sıfırdan bir referans uygulayışı uygulamak gerekli olabilir. Ancak bazı durumlarda bu gerekli olmayabilir.
+
+593
+01:45:56,884 --> 01:46:20,703
+Metamorifik testte test uzmanı bir alan uzmanının bulunmadığı durumlarda alan bilgisi edilmek için alanı incelemek amacıyla ek zaman ve çaba harcamak zorunda kalabilir. Assertions'ta verilen bir bağlamda bildirimleri yazmak için gereken çaba miktarı o bağlamda kullanılan programlama diline bağlı olacaktır. Makine öğreniminde bazı durumlarda belirli makine öğrenimi görevleri gereklidir ancak bazı durumlarda gereksizdir.
+
+594
+01:46:22,163 --> 01:46:30,724
+İstatistiksel Hipotez'de, pardon biraz ağzım kurudum. Veri dönüşümü gibi görevler bazı durumlarda gerekli olabilir ancak bazılarında gerekli olmayabilir.
+
+595
+01:46:32,443 --> 01:46:44,123
+Sonuç olarak bu çalışmada test edilemeyen sistemlerin işlevsel fonksiyonel yazılım hatanı tespit edebilen otomatik test teknikleri üzerinde bir haritalama çalışması şeklinde tasarlanmıştır.
+
+596
+01:46:44,943 --> 01:46:46,283
+Beş teknik üzerinde durulmuştur.
+
+597
+01:46:46,671 --> 01:46:51,872
+Bunların etkinliği, verimliliği ve kullanabilirliği hakkında bazı bilgiler verilmiştir.
+
+598
+01:46:52,692 --> 01:47:09,692
+Son olarak materyalının uygulayıcılara bağlamları için en uygun tekniği seçmelerinde yardımcı olabileceği gibi seçilen tekniği kendi özel durumlar için uygulamanın en faydalı yöntemiyle ilgili olarak bilinçli bir karar vermelerine de yardımcı olabileceği açıkça anlatılmıştır.
+
+599
+01:47:10,211 --> 01:47:12,351
+Teşekkür ederim. Soru soran varsa sorabilir.
+
+600
+01:47:13,460 --> 01:47:26,960
+Sorusu olan var mı? Test edilemeyen sistemlerin test edilme yolları konusunda.
+
+601
+01:47:34,676 --> 01:47:41,315
+Evet, bayağı zamanımızı biraz aştık.
+
+602
+01:47:41,796 --> 01:47:42,895
+Evet, 22 saat oldu.
+
+603
+01:47:42,895 --> 01:47:50,735
+Evet, o zaman bir sonraki sunuma geçebiliriz.
+
+604
+01:47:51,435 --> 01:47:58,036
+[öğrenci], seninle devam etmiştik.
+
+605
+01:47:58,655 --> 01:48:00,496
+Ondan sonra [öğrenci].
+
+606
+01:48:01,492 --> 01:48:02,692
+Sonra [öğrenci].
+
+607
+01:48:05,192 --> 01:48:06,552
+Ekran geldi mi?
+
+608
+01:48:06,892 --> 01:48:07,692
+Evet, geldi.
+
+609
+01:48:08,832 --> 01:48:11,832
+Tamam, o zaman şeyden bunu slideş olarak bahsedip başlatayım.
+
+610
+01:48:12,532 --> 01:48:22,171
+Benim akadem IEEE'den geliyor. Modern yazım sistemlerine test kesin önceliklendirmelerinin incelenmesi. Aslında daha uzun bir ismi vardı. Ben bunu özet olarak böyle yaptım.
+
+611
+01:48:23,251 --> 01:48:29,671
+Buradan ben genel olarak test kesin önceliklendirme nedir, algoritmalar nasıl çalışır gibi bir araştırma yaptım.
+
+612
+01:48:30,100 --> 01:48:41,840
+Evet. Şöyle geçersem, kısa bir bilgi vereyim. Regresyon yazılımdan yapılan değişikliklerle varlığa çıkan hatalar. Regresyon testi de bunları tespit etme ve kontrol etmek için yapılan testler bütünü. Kısa bilgi olarak da.
+
+613
+01:48:42,323 --> 01:49:03,583
+Test Keyes'i zaten hepimiz biliyoruz. Dersede gördük. İçerisindeki belirli adımlar, test etmesi ön koşul, sonradan koşul gibi. Test Keyes önceliklendirme ise test keyeslerinin verimliliğini ve nesnel işlevliğini arttırmak için belirli bir yöntemle sıralaması. Yani aslında şeye bakıyorum. Ben hangi testi önce yapayım ki bana en çok faydayı sağlasın?
+
+614
+01:49:05,460 --> 01:49:21,880
+İki türlü yapılabiliyor bu. Bir, genel önceliklendirme veya versiyon spesifik önceliklendirme. Önlendeki farklar şu. Genel önceliklendirme genel olarak bakıyor. Bu test keyselerin bütününe bakıyor ve çoğunlukla kullanılabilecek modifikasyonlar daha öncelikli oluyor.
+
+615
+01:49:21,880 --> 01:49:29,119
+Pardon, test keyseler öncelikli oluyor. Versiyon spesifik değilse o versiyonu özel test keyseler öncelik alıyor.
+
+616
+01:49:29,460 --> 01:49:39,359
+Yani aslında birinde versiyon bilgisi var, birinde versiyon bilgisi yok diyebiliriz. Genel önceliklendirme programın totaline bakıyor. Versiyonsa o versiyon özel önceliklendirme yapıyor.
+
+617
+01:49:40,260 --> 01:49:51,859
+Farklı teknikler var. Statik teknik ve dinamik teknik olarak farklı teknikler var. Statik tekniklerden call graph, string based, topic based ve diğer var. Makalenin özellikle bahsettiği.
+
+618
+01:49:52,275 --> 01:50:00,675
+Dinamiklerde ise greedy algoritmalar var, Adaptive Random Testing, Search Based ve tabi diğer şeyler ekstra bazı değişik algoritmalarda bulunuyor.
+
+619
+01:50:01,475 --> 01:50:07,996
+Kısaca bahsedersek Call Graph Based şöyle çalışıyor. Her test case'in çağırdığı metotları içeren bir call graph oluşturuyor.
+
+620
+01:50:08,515 --> 01:50:14,235
+Ve diyor ki bu test case çok fazla metot çalıştırıyorsa bu benim için önceliktedir diye önceliklendiriyor.
+
+621
+01:50:17,971 --> 01:50:30,211
+Bu şekilde farklılıklarına bakıyor. Bunun için a string and a distance baz alıyor. Bunu Beden'ı hesaplayan da var, Manhattan'ı hesaplayan da var. Buradaki distance'ı baz alarak benzerlik hesabı yapıyor.
+
+622
+01:50:30,211 --> 01:50:41,572
+Ve farklı olan, birbirinden en çok fark gösteren ve kümeden fark gösteren test keyifleri öncelikliyor. Böylece bütün test keyifinin içerisinden geçiyor, bütün test senaryosundan geçiyor ve bütün testleri sıralıyor.
+
+623
+01:50:42,003 --> 01:51:04,304
+Topic Basis'i semantik olarak konu modelleri yaratıyor ve şey daha önceden yapılmış, hali hazırda yapılmış testler var, farklı bir test varsa onu önceyi alıyor. Yani örnek veriyorum testlerin genelde işte datayı kontrol ediyorsa ve bir tanesi data değil de UI kontrol ediyorsa, hatta çok absürt bir örnek oldu, UI kontrol ediyorsa onu önceyi alıyor.
+
+624
+01:51:04,304 --> 01:51:09,923
+Tabii bunun dışında hani Information Retrieval'lar var, Requirement Based Teknikler, değişik teknikler.
+
+625
+01:51:10,003 --> 01:51:35,783
+Dinamikler ise Greedy algoritmalar. Greedy algoritmaları ikiye bölüyorlar. Bir, total strateji olaraktan iki, ek yani additional strateji. Aslında onu tam nasıl çevireceğimi bilemedim ama ek strateji diye çevirdim onu. Total strateji yöntemlerinde toplam kodun kavrucuna bakıyor. Bütün koda bakıyor. Additional'da ise her bir case'in kavrucu etkisiyle önceliklendirme yapılıyor.
+
+626
+01:51:36,467 --> 01:51:59,467
+Adapter Random Testing şöyle çalışıyor. Bir random candle set bulunuyor. Rastgele test keyselerden seçiliyor. Daha önceden elinizde önceliklendirilmiş bir set var. Buna bu önceliklendirilmiş seti, en uzak olan test keyseleri önceliklendirip o sete, önceliklendirilmiş seti ekliyor. Böylece bütün test keyselerden geçip bir liste oluşturuyor.
+
+627
+01:52:00,404 --> 01:52:26,484
+Search base ise search algoritmalarıyla test case tırmaması yapıyor. Hill Climbing Teknik var. Ben buna tepe tırmanma tekniği derim. Eğer bir test case'in test fiti en fazla arttırıyorsa test case, bunu önceliklendiriyor. Genetik teknik ise daha önceden tanımlanan bir koşullar. O koşulu karşılayan test case'leri arayıp onlardan arasından seçiyor.
+
+628
+01:52:27,604 --> 01:52:45,764
+Çalışma namacı aslında bu biraz şeydi. Empirical Study olarak yapmışlar bu çalışmayı. Modern Software Sistemleri üzerinde GitHub'tan 58 tane sanırım projeyi toparlamışlar. Bu ölçümlerin etkisi ve dinamik statik yöntemlerin farkı.
+
+629
+01:52:46,112 --> 01:53:02,452
+Gibi incelemeler yapmışlar. Tabi bu konuda bir sürü çalışmalar, daha önce yapılan çalışmalar da var. Makalede daha önceki çalışmanın boşluklarını doldurmaya çalıştıklarını söylüyorlar ama en sonunda daha çok araştırmaya gerek olduğu ortaya çıkıyor.
+
+630
+01:53:03,699 --> 01:53:20,800
+Kullandıkları ölçüm metrikleri var. Birisi Average Percentage of False Detected. Bulan hataların ortalama oranı. Hesaplama yöntemi de şu şekilde buradaki formüle. TFI'de bir hatanın test case'in içerisinde bulunduğu pozisyon. Bunların summation'ını alıyor şurada.
+
+631
+01:53:21,427 --> 01:53:46,047
+Bir de Cost Colonism diye bir versiyonu var. Bu da işin içine, yani aslında APFD'nin içine Test Case Execution Costu ve False Severity koyuyor. Yani hata ciddiyeti ve yürüme maliyetini katıyor. Böylece hatanın maliyetini de hesaplıyor bu şeyi, metri hesaplarken. Bir de mutasyon analizi yapılmış. Mutasyon analizini şöyle yapıyorlar.
+
+632
+01:53:46,720 --> 01:53:59,220
+Bildiğimiz üzere mutantlar dediğimiz şey, küçük mutasyon operatörleri var. Bunlar programda fault, programa fault seed ediyorlar. Test case'lerin bu değişiklikleri, bu faultları test edilmesi bekleniyor.
+
+633
+01:53:59,859 --> 01:54:09,799
+TCP kapsamına bakarsak, şuna bakıyorlar. Bu mutantlar, bu test case'leri, bizim prioritized ettiğimiz test case'leri, test case'lerde performans değişikliği gösteriyor mu?
+
+634
+01:54:10,319 --> 01:54:17,899
+Yani algoritmalarda bir farklar yaratıyor mu? Yani bir mutasyon olduğu zaman algoritmanın çalışması değişiyor mu? gibi gibi incelemeler yapıyorlar.
+
+635
+01:54:19,059 --> 01:54:25,099
+Belirli teknikleri incelemişler, hepsini incelememişler. 5 tane statik teknik var, 4 tane dinamik teknik var.
+
+636
+01:54:25,779 --> 01:54:34,779
+Total Call Base var, Additional Call Base, String Distance. İki tane Topic Distance var. Burada iki farklı implementasyon yöntemi ve Tool var.
+
+637
+01:54:34,779 --> 01:54:44,779
+Yani aynı aslında alt şey, teknik ama kullanılan Tool farklı. Bir de dinamik, hani Grady Additional Adaptive Random Search Base de incelemişler.
+
+638
+01:54:45,300 --> 01:55:08,140
+Tabii farklı farklı level'larda inceliyorlar. Bunlar farklı farklı seviyelerde inceliyorlar. Örnek olarak mesela Test Granularity dediğimiz test ayrıntı düzenindeki etkisine bakıyorlar. Buradaki gördüğünüz şey grafik 58 tane programın her bir algoritma için değişen APFD değerleri ve metod level'ında. Burada da APF-CV değerleri var.
+
+639
+01:55:08,884 --> 01:55:33,364
+Bir de bunu Class Level'da inceliyorlar. Yani her seferinde her gram Class ve Method Level olarak incelemeyi yapıyorlar. 58 program için. Test Class seriyesine baktığımız zaman bu algoritmaların verdiği ortalama değerler var APFT ve APFDC için. Bunların sonuçlarını bir sonraki slide'da inceleyeceğiz. Ortalama değerler şöyle. Her birinin APFDC değerini bulup 58'e bölüyorlar. Düz ortalama hesaplamışlar.
+
+640
+01:55:34,131 --> 01:55:48,271
+Buradan şunu görüyoruz. Test Class serisinde call graph olan teknikler diğerlerinden daha iyi performans gösteriyor. Hatta dinamik tekniklerden de daha iyi performans gösteriyor. Statik tekniklerin dinamik teknikler oranla performansla daha iyi olduğu ortaya çıkıyor.
+
+641
+01:55:48,851 --> 01:56:00,572
+Şöyle bir şey ortaya çıkıyor. Bu biraz ilginçti. APF TV metrinin, yani posta içeren metrinin, değer aralığının, range'inin diğer normal APF TV'ye göre daha fazla olduğunu görüyorlar.
+
+642
+01:56:00,572 --> 01:56:06,231
+Tabi bu da şöyle bir sebep var. Programların boyutu ve çalışma şeklinden dolayı execution time değiştiği için.
+
+643
+01:56:07,444 --> 01:56:15,444
+Ve şunu da görüyorlar. İncelenen bazı kodların içerisindeki gereksiz parametre ve değişken isimlerinin performans etkisini gözlemliyorlar.
+
+644
+01:56:15,444 --> 01:56:25,444
+String-based çalışan algoritmalarda, özellikle test-case'lerin yazılımında, test-latörlerinin yazılımında, o string-based çalışan algoritmaların daha kötü performans gösterdiğini görüyorlar.
+
+645
+01:56:26,444 --> 01:56:29,444
+Metod seviyesleri genel olarak aslı, uyumlu.
+
+646
+01:56:30,003 --> 01:56:47,043
+Demin bahsetmiştim, iki farklı tool kullanıyorlar. Burada şunu görüyorlar, metot serisine bakıldığı zaman eğer topic-based bir teknik kullanıyorsanız, kullandığınız tool, tool'a göre performans değişiklik gösteriyor. Bu da hani tekniğin tool dependent olduğunu gösteriyor topic-based'lerin.
+
+647
+01:56:49,684 --> 01:57:09,564
+Aynı, klas seviyesi ve metot seviyesinde teknikler aynı. Fakat şunu görüyoruz, metot seviyesine indiğiniz zaman klas seviyesine göre bütün teknikler daha iyi performans gösteriyor. Bu da şunu belirtiyor, daha derin bir granulariteye indiğiniz zaman hedeflemeyi ve önceliklendirmeyi daha net yapabiliyorsunuz. Çünkü elinizdeki detay daha fazla.
+
+648
+01:57:10,836 --> 01:57:33,615
+Programın boyutuna genel bir etkisi olmadığını görüyorlar. Sadece şunu görüyorlar. Larger Scale programlarda eğer program ne kadar büyükse teknikler ve algoritmalar daha başarılı sonuç veriyor. Çünkü bunun bir açıklama sebebi de elinize daha da test case oluyor. Ve bu sebeple optimizasyon erişiklerine daha çok ulaşabiliyorsunuz ve programlar daha çok optimal edilmiş oluyor.
+
+649
+01:57:34,868 --> 01:57:47,847
+Ama ölçekten bağımsız olarak, genel olarak da çok düşük bir etkisi var. Bahsettiğiniz scale ilk başta büyük ölçek dışında net bir etkisi olduğunu görün. Programın large scale ya da small scale olmasının çok fazla bir etkisi yok.
+
+650
+01:57:49,300 --> 01:58:03,460
+Yazılım evriminin etkisi var. Şöyle bir şey var. Yazılım evrimde bir versiyonlama. Versiyonlamda versiyon 1, 2, versiyon 3 de evrimleşen bir yazılım ise bu evrimin versiyonlamanın herhangi bir performans etkisi yok aslında önceliklendirmede.
+
+651
+01:58:03,460 --> 01:58:16,079
+Bunu da şöyle açıklıyorlar. Grafiklere baktığınızda aslında APFT, APFT, bir de bir iki tane daha örnek var. Yani hepsi ilerliyor. Bunu da sayın tanımak halde anlatayım.
+
+652
+01:58:16,435 --> 01:58:27,435
+Net bir etki görünmüyor. Belirli bir şekilde ilerliyor bütün performans değişiklikleri. Mutasyonların etkisi var.
+
+653
+01:58:27,435 --> 01:58:44,331
+Daha önceden bahsettiğimizde şurada... Geride bir şeyler... Mutasyon operatörleri göstermiştim. Burada kullandıkları operatörler bunlardı. Onları aslında atladık ama hemen...
+
+654
+01:58:44,404 --> 01:58:46,404
+Çok önce gezin miyim?
+
+655
+01:58:46,404 --> 01:58:49,404
+Çok pardon. Şuradan.
+
+656
+01:58:49,404 --> 01:58:51,404
+Burada belirli mutasyon operatörleri var.
+
+657
+01:58:51,404 --> 01:58:54,404
+Ayrıntıları makalende vereceksin [öğrenci].
+
+658
+01:58:54,404 --> 01:58:57,404
+Özetleyerek git. Zamanımız çok az kaldı.
+
+659
+01:58:57,404 --> 01:59:00,404
+Yok şöyle hemen anlatayım. Şu mutasyon operatörleri kullanıyor.
+
+660
+01:59:00,404 --> 01:59:05,068
+Yani oradaki şeyler ne diye, datada şaşırmasın diye ne diyeyim arkadaşlar.
+
+661
+01:59:05,300 --> 01:59:19,399
+Yani belirli fold-generateden mutasyon operatörleri var. Bunların performanslarını karşılaştırıyorlar. Ben sonra anlatayım. Bunların performanslarını şöyle karşılaştırıyorlar. Yani test test ve test metodlarında farklı farklı karşılaştırma yapıyorlar.
+
+662
+01:59:20,115 --> 01:59:23,315
+Aynı şekilde de APFCD için de karşılaştırıyorlar.
+
+663
+01:59:24,115 --> 01:59:26,655
+Yani bazı mutant türlerinde daha iyi çalıştığını görüyorlar.
+
+664
+01:59:27,295 --> 01:59:29,935
+Ve bazılarını daha az performans farkı olduğunu görüyorlar.
+
+665
+01:59:30,015 --> 01:59:36,655
+Örnek veriyorum, negatif mutator kullandıkları zaman sadece negatif sayılarda ve negatif case arayışı oluştuğu için çok yetişme atmıyor.
+
+666
+01:59:37,555 --> 01:59:41,835
+Mutant operatörlerinin aslında TCP tekniklerinin çok bir etkisinde olmanı gözlemliyorlar.
+
+667
+01:59:42,496 --> 01:59:45,415
+Burada da bir de statik TCP'lerin performansına bakıyorlar.
+
+668
+01:59:47,539 --> 01:59:58,039
+Klas seviyesine benzerken metod seviyesinde farklılaşıyor bu tekniklerin performansı.
+
+669
+01:59:58,039 --> 02:00:00,000
+Call-based teknikler diğerlerine...
+
+670
+02:00:00,000 --> 02:00:15,000
+Bu da aslında mantıklı. Çünkü bir topic model, semantik bir model var. Bir de string var. O yüzden onun execution costları da değişecektir.
+
+671
+02:00:15,000 --> 02:00:20,811
+Yok ama şurada baktığınız zaman aslında preprocessing'de execution costları sadece prioritizer erken değişiyor.
+
+672
+02:00:21,235 --> 02:00:46,235
+Çalışmanın tabi geçerli bir dönem bazı tehditler var. Yani bunu aslında kabul etmişler. Örnek veriyorum çok basit mutasyonların bu APFT değerlerini şişirmesi, çalışmanın aslında hiç bulunmayan mutantların oluşturduğu hataları dikkate almaması ve çalışmaların belli caseler üzerine yapılması, yeteri kadar test case olmaması. Artı şöyle bir şey var, aldıkları kodları aynı şekilde implement...
+
+673
+02:00:47,060 --> 02:00:53,220
+Edememelerinin, implementasyonların farklı olmasının algoritmalara belki de etkisi olabileceğini söylemişler.
+
+674
+02:00:53,220 --> 02:00:54,619
+Özet olarak geçersek.
+
+675
+02:00:54,960 --> 02:01:15,039
+Ayrıntı düzeyi test önceliklerle tekniğinin verimlilik ve performansını etkiliyor. Yani ne kadar ayrıntı o kadar verimlilik oluyor. Önceliklendirme tekniğinin performansı programın özelliklerine göre değişiyor. Şu şekilde kompleks eti, kütüphaneler, kodun yazım şeklinde kod çok kötü yazılıyorsa önceliklendirme hapa, tıp performansı sergiliyor.
+
+676
+02:01:15,475 --> 02:01:24,095
+Büyük ölçekli programlarla daha iyi çalışıyorlar fakat genel olarak baktığınızda yoğun derecede bir etkileri yok. Mutasyon türü ve sayısı, performans önemli ölçüde etkileniyor.
+
+677
+02:01:24,795 --> 02:01:33,455
+Stadik tekniklerin performansı klas ve metod sebeplerine farklılık gösteriyor ve overall olarak da Stadik teknikler dinamiklere göre bir tık daha iyi performans veriyor.
+
+678
+02:01:34,655 --> 02:01:38,695
+Teşekkür ederim. Sorusu olan varsa hızlı hızlı geçtim ama.
+
+679
+02:01:40,595 --> 02:01:49,055
+Konuyla ilgili sorunuz var mı? Ya da daha sonra bu konuyla ilgilendiğinizde [öğrenci]'dan yardım alabilirsiniz.
+
+680
+02:01:49,315 --> 02:01:50,015
+Tabii, her zaman.
+
+681
+02:01:51,495 --> 02:01:59,175
+Teşekkürler. Şimdi sıralama yaptığımızda [öğrenci]'nin sunum yapacağını söylemiştik.
+
+682
+02:01:59,175 --> 02:02:00,195
+Evet hocam.
+
+683
+02:02:00,995 --> 02:02:06,115
+[öğrenci] sen hemen sunumunu paylaş.
+
+684
+02:02:08,083 --> 02:02:26,724
+Daha sonra [öğrenci]'la [öğrenci] sunum yapacak. Daha sonra da diğer arkadaşlarınız.
+
+685
+02:02:35,347 --> 02:02:37,288
+Zamanını iyi kullanarak.
+
+686
+02:02:38,087 --> 02:02:39,127
+Görünüyor mu acaba?
+
+687
+02:02:39,488 --> 02:02:40,047
+Görünüyor.
+
+688
+02:02:41,368 --> 02:02:42,168
+Okay.
+
+689
+02:02:45,507 --> 02:02:49,387
+Hello friends, good morning. My name is [öğrenci] [öğrenci].
+
+690
+02:02:50,248 --> 02:02:57,887
+And today my presentation will be on communication between developers and testers in distributed continuous agile testing.
+
+691
+02:02:58,612 --> 02:03:18,796
+Bu bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açıklamalardan bir açık
+
+692
+02:03:19,060 --> 02:03:26,140
+Açıklarımızın arasındaki örneğe, Daniella ve Hafens, ve her şeyde konuşmalar.
+
+693
+02:03:26,140 --> 02:03:30,140
+Ve her şeyden bir şeyden bahsettim.
+
+694
+02:03:30,140 --> 02:03:35,420
+Bu bir şeyden bahsettim.
+
+695
+02:03:35,420 --> 02:03:39,140
+Öncelikle Agyar Software Development.
+
+696
+02:03:39,475 --> 02:03:51,855
+Bu, bu, as we know, popularized by manifesto of agile software development. Agile methods, of course, continuous development and enable complex business and self-critical softwares to be developed.
+
+697
+02:03:52,555 --> 02:03:56,955
+They are the four main development values of agile software.
+
+698
+02:03:58,315 --> 02:04:02,975
+The first one is about individuals and interaction of our project.
+
+699
+02:04:02,975 --> 02:04:04,695
+Bunları geçebilirsin [öğrenci].
+
+700
+02:04:04,795 --> 02:04:05,755
+Okay, okay.
+
+701
+02:04:07,252 --> 02:04:29,036
+Öncelikle Agile Software Development'in
+
+702
+02:04:29,140 --> 02:04:57,140
+Bu, bu
+
+703
+02:05:07,380 --> 02:05:14,380
+Fakat, çalışmaların çalışmaların çalışmaların, çalışmaların çalışmaların, çalışmaların ve
+
+704
+02:05:14,380 --> 02:05:23,380
+ilişkilerin çalışmaların. Tümlerle alakalı bir şekilde çalışmaların.
+
+705
+02:05:23,380 --> 02:05:29,380
+Bu, işin başlığı ve çalışmaların çalışmaların.
+
+706
+02:05:29,663 --> 02:05:55,435
+Bu da
+
+707
+02:05:55,507 --> 02:06:01,507
+Bu konuda bir sorumluluk.
+
+708
+02:06:01,507 --> 02:06:04,507
+Öncelikle, uçurlar için bir sorumluluk.
+
+709
+02:06:04,507 --> 02:06:19,507
+Bu konuda, uçurlar için bir sorumluluk.
+
+710
+02:06:20,064 --> 02:06:23,844
+Bu programlar için bir program var.
+
+711
+02:06:23,844 --> 02:06:27,444
+Bu programlar için bir problem var.
+
+712
+02:06:27,444 --> 02:06:29,444
+Bu programlar için bir çalışma.
+
+713
+02:06:29,444 --> 02:06:33,064
+Bu programlar için daha fazla çalışma.
+
+714
+02:06:33,064 --> 02:06:36,844
+Bu programlar için çok daha fazla çalışma.
+
+715
+02:06:38,484 --> 02:06:40,484
+Bir soru var. Bir soru var.
+
+716
+02:06:40,484 --> 02:06:44,484
+Öncelikle öğretmeni ve testiyle çalışan ve çalışan bir soru var.
+
+717
+02:06:44,484 --> 02:06:46,484
+Öncelikle çalışan bir soru var.
+
+718
+02:07:06,836 --> 02:07:32,043
+Bu bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir fotoğraf, bir foto
+
+719
+02:07:32,884 --> 02:07:36,203
+Öğrençler, birçok önemli bir şey,
+
+720
+02:07:36,203 --> 02:07:40,203
+birçok yaratıcı birçok yaratıcı birçok yaratıcı birçok yaratıcı birçok yaratıcı.
+
+721
+02:07:40,203 --> 02:07:42,203
+Bu, iletişimde de,
+
+722
+02:07:42,203 --> 02:07:44,283
+ve, iletişimde de,
+
+723
+02:07:44,283 --> 02:07:46,923
+ve,
+
+724
+02:07:47,247 --> 02:07:57,108
+Bu tarzıları e-mail, audio ve video kompression, software ve hibrit tarzıları var.
+
+725
+02:08:54,100 --> 02:09:04,540
+Bu, if I came to the research work from the researchers which they published on IEEE software transactions,
+
+726
+02:09:33,011 --> 02:10:00,000
+Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de de Türkiye'de
+
+727
+02:10:00,724 --> 02:10:28,724
+Çeknik Üniversitesi'nin
+
+728
+02:10:56,724 --> 02:10:57,003
+Bu da iki-onun aylıklar ve
+
+729
+02:10:57,003 --> 02:10:59,644
+bu da iki-onun aylıklar ve
+
+730
+02:10:59,644 --> 02:11:01,144
+ve Kampany P'in
+
+731
+02:11:01,144 --> 02:11:25,244
+adı
+
+732
+02:12:31,283 --> 02:12:59,283
+Bu çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmaların, çalışmal
+
+733
+02:13:23,796 --> 02:13:41,076
+Finally, regarding the distribution or collocation between testers and developers, it is reasonable to conclude that distribution does not affect the work of testing by creating more asynchronous communication and consequently less informal communication between developers and testers.
+
+734
+02:13:41,423 --> 02:14:09,292
+Bu, bu
+
+735
+02:14:11,764 --> 02:14:20,864
+Evet, daha sonra sorarsınız. Çünkü [öğrenci] ile [öğrenci] şimdi sunacak.
+
+736
+02:14:21,524 --> 02:14:22,084
+Evet hocam.
+
+737
+02:14:22,924 --> 02:14:28,924
+Ondan sonra [öğrenci], sonra [öğrenci] zamanımıza göre.
+
+738
+02:14:29,784 --> 02:14:30,824
+Okey, teşekkürler.
+
+739
+02:14:32,724 --> 02:14:34,124
+Sesini geliyor değil mi hocam?
+
+740
+02:14:35,155 --> 02:14:39,535
+[öğrenci] sen mi sunacaksın, [öğrenci] mi?
+
+741
+02:14:40,355 --> 02:14:41,295
+Beraber sunacağız.
+
+742
+02:14:41,295 --> 02:14:45,895
+Tamam, tamam. Evet, başlayabilirsiniz.
+
+743
+02:14:48,735 --> 02:14:50,215
+Ekran geldi mi acaba?
+
+744
+02:14:50,415 --> 02:14:50,875
+Geldi.
+
+745
+02:14:51,495 --> 02:14:52,255
+Tamamdır.
+
+746
+02:15:00,532 --> 02:15:24,452
+Merhabalar, ben [öğrenci]. [öğrenci] arkadaşımla birlikte açık kaynaklı yazılım kalite güvencesi hakkında bir derleme makalesi üzerine çalıştık. İçindekiler bölümünde giriş, açık kaynaklı yazılım kavramı, açık kaynaklı yazılımda uygulama alanları ve büyüklüğü, açık kaynaklı yazılım geliştirmede kalite güvencesi.
+
+747
+02:15:25,043 --> 02:15:32,043
+Ve açık kaynaklı yazılım geliştirme çerçevesi ve süreçleri hakkında bilgi verip sonuçlanıracağız.
+
+748
+02:15:32,543 --> 02:15:36,844
+[öğrenci], burada da yine açık kaynaklı yazılımı herkes biliyordur.
+
+749
+02:15:37,143 --> 02:15:37,363
+Evet.
+
+750
+02:15:37,623 --> 02:15:38,403
+Bu sonuçta ki.
+
+751
+02:15:38,703 --> 02:15:39,423
+Onun için geçelim.
+
+752
+02:15:39,423 --> 02:15:41,443
+Özet olarak kısa açıklayayım.
+
+753
+02:15:42,163 --> 02:15:53,023
+Bu açık kaynaklı yazılım geliştirmede kaliteyi etkileyen sorunlar, kapalı kaynak yazılımlara kıyasla avantajları, dezavantajları ve kalite kontrolü nasıl?
+
+754
+02:15:53,043 --> 02:15:56,043
+Nasıl başarabileceğimiz hakkında bilgiler vereceğiz.
+
+755
+02:15:56,043 --> 02:15:58,043
+Tamamdır.
+
+756
+02:15:58,043 --> 02:16:07,916
+Açık kaynaklı yazılımlar bilindiği üzere kapalı yazılımlara alternatif olarak...
+
+757
+02:16:08,115 --> 02:16:29,115
+Ürün sağlamaktadır. Örnek olarak Apache, PHP, Nginx, MySQL gibi birçok açık kaynaklı yazılımlar vardır. Bunların genel olarak peer review tekniği kullanılır ve dünyanın her bir yerinde yazılıma katkıda bulunacak kişiler bulunabilmektedir.
+
+758
+02:16:30,836 --> 02:16:49,015
+Açık kaynaklı yazılım geliştirmede belirsiz gereksinimlerin ortaya çıkmasından kaynaklı, dokümentasyona daha az önem verilmesi, zayıf proje ve kalite yönetimi yüzünden kalite güvencesinin elde edilmesi zorluğu fazladır.
+
+759
+02:16:58,835 --> 02:17:06,835
+ve hata çözme hızını daha fazla sağlanır. Açık kaynaklı
+
+760
+02:17:07,412 --> 02:17:21,371
+Yazılım kavramı, internette birçok tanımı bulunmaktadır. Genel olarak özgürce yazılımı paylaşılması, kodun özgürce değiştirilebilmesi, bağımsız kişiler tarafından yazılması açık kaynaklı olan bir yazılım türüdür.
+
+761
+02:17:22,652 --> 02:17:35,292
+Genel karakteristiği dağıtılmış yazılım, ücretsiz yazılım, uygulayabilir kaynak kodu, geliştiricilerin internet üzerinden iletişim kurması, geliştiricilerin kullanıcı olması.
+
+762
+02:17:35,412 --> 02:17:41,772
+Ve herhangi bir ücreti olmayan yüksek sayıda gönüllü tarafından yazılan yazılımlardır.
+
+763
+02:17:43,572 --> 02:17:48,832
+Açık kaynaklı yazılım geliştiricileri dört grupta incelenmektedir.
+
+764
+02:17:49,352 --> 02:18:01,272
+Dört katmanda. En alt katmanda çekirdek geliştiriciler, bir üstünde ortak geliştiriciler, hata raportörleri ve kullanıcılardan oluşmaktadır.
+
+765
+02:18:01,664 --> 02:18:29,384
+Çekirdek geliştiriciler yüksek kalitede kod yazarak sistemin temel işlevlerinden sorumlu olan küçük bir uzman geliştirici grubu olarak tanımlanır. Sistemi yönetmek ve kontrol etmek, ürün için planlar, hedefler ve yol haritası tanımlamalarını yapmaktadır. Katkıda bulunan ortak geliştiriciler, yazılım geliştirmeyi doğrudan etkileyen daha büyük bir geliştirici grubudur. Yeni özellikler ekleme.
+
+766
+02:18:29,664 --> 02:18:36,304
+Hataları düzeltme, peer review gibi diğer bazı özellikler yapma becerisine sahiptirler.
+
+767
+02:18:37,664 --> 02:18:47,664
+Hata röportörleri sistemin test edilmesinden sorumludur. Bu görevin bir kısmı çekirdek geliştiriciler ve katkıda bulunan geliştiriciler tarafından ve ayrıca sistemin...
+
+768
+02:18:47,711 --> 02:19:09,831
+Kullanıcılar, sistemin kullanıcıları tarafından yapılabilir. Bu grubun ana görevlerinden biri, daha fazla kişinin sistemi birçok farklı platformda test etmesini sağlamaktır. Kullanıcılar sistemi kullanılan kişilerdir. Aynı zamanda geliştirici de olabilir bu kişiler.
+
+769
+02:19:14,932 --> 02:19:31,392
+Onion modeli de aşağıda görülmektedir. Dört katman olarak. En işte dediğim gibi çekirdek geliştiriciler, bir üst katmanında ortak geliştiriciler, bir üstünde hata raportörleri ve kullanıcılardan oluşmaktadır.
+
+770
+02:19:41,523 --> 02:19:59,903
+Güçlü kod değiştirme imkanı fazla. Topluluk aracıyla bilgi paylaşımı ve motivasyon yüksek seviyededir. Geliştiriciler için profesyoneller arasından özelleştirilebilir çözümler yaratma yeteneği mevcut.
+
+771
+02:20:00,000 --> 02:20:08,200
+Birçok parçayı ve işlevi yeniden kullanma potansiyeli, azaltılmış üretim süresi ve artan motivasyon yer almaktadır.
+
+772
+02:20:08,200 --> 02:20:23,120
+Sistem için faydaları ise daha hızlı hata algılama ve düzeltme, daha fazla güvenirlik, özelleştirme özgürlüğü, maliyet etkinliği, yeniden kullanılabilirlik, hızlı gelişim, taşınabilirlik ve çok sayıda lisanslaması vardır.
+
+773
+02:20:24,628 --> 02:20:41,628
+Kullanıcılar için eksiler arasında eksik veya kötü dokumentasyon yapılandırılmamış geliştirme metodolojileri ve sorumsuz kişilerin bulunması, geliştiriciler için dezavantajları ise araçların...
+
+774
+02:20:41,876 --> 02:21:09,376
+Yeni geliştiricilerle işbirliği yapmak ve büyük projeleri gözden geçirmek. Sistemin eksistileri ise resmi süreç merkezileştirilmiş yönetim sürümünün ve dokümentasyonun olmaması, zayıf tasarım, sorunlar için tek bir sorumluluk olmaması, sürüm çoğalması ve insan gücü gereksinimlerinin zor tahmini, karmaşık lisanslar ve kısa vadeli maliyet.
+
+775
+02:21:09,791 --> 02:21:22,791
+Uygulama alanı ve büyüklüğü internette de birçok açık kaynak yazılım olduğu için.
+
+776
+02:21:25,747 --> 02:21:44,407
+Birçok sitede dünyanın her yerinden geliştirilen kod depolarına erişmesi ve kodu push, pull ve fork etmesine olanak sağlamaktadır. Örneğin açık kaynak yazılım uygulamı etki alanlarında SourceFort'da 18 kategori vardır.
+
+777
+02:21:53,747 --> 02:21:58,027
+Yüzde 10 ve Oyun ve Eğlenciler grubu da yüzde 9.3.
+
+778
+02:21:59,092 --> 02:22:21,892
+Yüzdeliğindedir. Bu projelerin %70'inden fazlası hala erken aşamalarda veya geliştirme yaşam döngüsünün sonlarındadır. Birçok çalışmaya göre de Source Force'da listelenen projelerden %86.2'sinin altında az geliştiriciye sahip olduğu bulunmuş. Projelerin %1'inden %16'dan fazla geliştiricisi.
+
+779
+02:22:22,420 --> 02:22:28,420
+%1'in 16'dan fazla geliştirisi var ve bunların çoğu da büyük projelerdir.
+
+780
+02:22:30,420 --> 02:22:33,420
+Kalan kısmı [öğrenci] arkadaşım anlatacak.
+
+781
+02:22:35,420 --> 02:22:44,420
+AKY'de Kalite Güvencesi. Yazılım Kalite Güvencesi, yazılım sürecinin kullanıma uygun bir yazılım ürünü üretme yeteneğinin kanıtını sağlayan bir dizi sistematik faaliyet olarak tanımlanır.
+
+782
+02:22:45,363 --> 02:23:08,743
+Kalite güvencesi aslında herhangi bir yazılım geliştirme faaliyetinin veya yaşam döngüsünün her aşamasının bir parçası olmalıdır. Açık kaynaklı yazılım geliştirmede kalite güvencesi sürdürülebilir topluluğu kod modülerliğini, proje yönetiminin, dokümentasyonu ve test süreci yönetimini anlaması gerekir. Yüksek kaliteli yazılım elde etmek için AK'ye kullanıcıları bu alanlara ve bunların birbirine nasıl ilişkili olduklarını tam olarak anlamalıdır.
+
+783
+02:23:09,396 --> 02:23:16,176
+Kalite yönetimi açısından açık kaynaklı yazılım geliştirme ile kapalı kaynak yazılım geliştirme arasında şunlar gibi birçok temel fark vardır.
+
+784
+02:23:18,656 --> 02:23:25,336
+Temel olarak baktığımızda açık kaynaklı yazılım geliştirmede tanımlanmış veya belgelenmiş bir geliştirme metodologisi yoktur.
+
+785
+02:23:26,056 --> 02:23:31,996
+Proje dokümentasyonu zayıftır, yapılandırılmamış ve gayri resmi testlere ve kalite güvenci metodolojilerine sahiptir.
+
+786
+02:23:32,435 --> 02:23:38,835
+Resmi bir risk değerlendirme sürecine sahip değildir ve çok az doküment edilmiş veya ölçüde bir hedefi vardır.
+
+787
+02:23:39,755 --> 02:23:59,595
+Diğer yandan kapalı kaynak geliştirmeye baktığımızda ise genel olarak iyi belgelenmiş ve tanımlanmış gelişme metodolojilerine, eksiksiz proje dokümentasyonuna, resmi ve yapılandırılmış test ve kalite güvence metodolojilerine, analiz tanımlı gereksinlere ve tasarımlara ve resmi risk değerlendirme süreçlerine ve izlemeye sahiptir.
+
+788
+02:24:01,556 --> 02:24:12,556
+Açık kaynaklı yazılım gelişme çerçevesine, yani framework'üne baktığımızda sağ tarafta küçük bir resim var. Orada görebiliriz. Bu çerçeveye göre üç bölge bulunmaktadır.
+
+789
+02:24:12,556 --> 02:24:20,460
+Üç süreçten oluşan bir çerçeve bu. Birincisi hata tespiti, ikincisi hata doğrulaması ve üçüncüsü çözüm doğrulaması şeklinde.
+
+790
+02:24:22,675 --> 02:24:33,715
+Hata testi sürecine baktığımızda bu test ve raporlama süreci kullanıcılar ve hatta geliştiriler tarafından sistemi kullanarak hatalar veya arızalarla yüzleşerek bulunan hatalar hakkında bilgi sağlar.
+
+791
+02:24:33,875 --> 02:24:49,015
+Bu nedenle açık kaynaklı yazılımdaki hataları bulma süreci kara kutu testi gibidir. Kullanıcı bir hata bulduğunda şu üç eylemden birini gerçekleştirir. Birincisi bu hata veya hatayı görmezden gelir ve yazılımı bildirmeden kullanmaya devam eder.
+
+792
+02:24:49,396 --> 02:25:15,036
+İkincisi, bir hata izleme sisteminde sorunu bildirmek için bir form doldurur ve ne olduğunu açıklar bu hatanın. Üçüncüsü ise bir e-posta listesi veya tartışma form aracılığıyla diğer kullanıcıları veya geliştiricileri hata hakkında bilgilendirir. Bunun ardından daha değinimli geliştiriciler hatanın basit analizini gerçekleştirir. Doğrular ve ardından hata izleyiciye ekler. Doğrulamamış hatalar bir sonraki sürece kadar listeye eklenir.
+
+793
+02:25:16,147 --> 02:25:32,867
+İkinci süreçte hata doğrulaması. Bu doğrulama süreci hata toplama ve hata düzeltmeden oluşur. Bir hata lisesi toplandıktan sonra bunlar gerçek mi ya da yanlış mı olduğuna dair doğrulanır. Bir veya daha fazla geliştirici sorun raporunu okur, kodu gözden geçirir, ardından yorum yapar.
+
+794
+02:25:33,332 --> 02:25:43,811
+Gerekirse ekstra bilgi ister ve hatayı dört durumdan biri olarak işaretler. Bunlar nedir? Açık, devam ediyor. Duplike yani yinenilen bir hata ya da geçersiz.
+
+795
+02:25:44,340 --> 02:26:05,180
+Bundan sonra doğrulan hatalar bir listeye alınır, doğrulanmış hatalar sitesine. Bir sonraki geliştirici bu liste üzerinde tek tek çalışmaya başlar ve her hata için bir hata düzeltmesi tanımlar. Bu sorunun çözülmek için kısa vadeli bir plan tabii ki. Bu planı yapan geliştirici hatanın sahipliğini üstlenen geliştiricidir. Daha sonra sorunu gidermek için kollama yapılır, yani geliştirme yapılır.
+
+796
+02:26:11,219 --> 02:26:31,039
+Çözüm doğrulaması var. Bu süreç ise çözüm doğrulama veya çözüm kodu incelemesine odaklanır. Hata için bir çözüm geliştirirken, geliştirici kendi kendine kodun incelemesi adı verilen kodun işlevselliğini sürekli olarak gözden geçirir ve bunu test eder. Bu incelemeden sonra geliştirici hatanın giderildiği açıksa, değişiklikleri topluluğa aktarmaya ve göndermeye karar verir.
+
+797
+02:26:31,924 --> 02:26:42,724
+Hala bir hata varsa veya yeni çözüm yeni bir hata oluşturuyorsa geliştirici bunu hata izleyici aracılığıyla rapor eder ve bir önceki sürece yeniden döner hata doğrulaması sürecine.
+
+798
+02:26:43,704 --> 02:26:53,464
+Ardından geliştirici topluluğa yeni bir çözüm sunmayı seçerse diğer geliştiriciler veya uygulayıcılar kodu peer review yani eş inceleme adı verilen şekilde gözden geçirir.
+
+799
+02:26:53,464 --> 02:26:56,864
+Ve bu yeni kodun kusuru ele almadığını kontrol eder.
+
+800
+02:26:57,427 --> 02:27:10,927
+Spesifikasyonlara uygunsa bu yeni kodu onaylar. Eğer bunları karşılamıyorsa, yeni kusura oluşuyorsa reddederler. İkinci durumda ise hatayı hata izleyicere geri gönderirler. Durumu yeniden aç veya yeni gibi bir şeyle değiştirirler.
+
+801
+02:27:10,927 --> 02:27:16,828
+Ve ardından ikinci işlemle başlayarak hata doğrulanmış bir şekilde kapatılıncaya kadar işleme devam ederler.
+
+802
+02:27:18,195 --> 02:27:42,855
+Sonuç olarak baktığımızda açık kaynaklı yazılım birçok organizasyonda, hükümette, birçok kritik uykulamada kullanılmaktadır. Bu yüzden bu açık kaynaklı yazılım geliştirmede kalite güvencesi olması çok önemlidir. Bu makalede bu konuyla ilgili araştırmayı inceledik. Daha önce de tarihsındığı gibi açık kaynaklı yazılım geliştirmede net bir yol haritasının planlanması ve geliştirmesinden konfigürasyon yönetimi ve proje yönetimine kadar birçok iş vardır.
+
+803
+02:27:43,311 --> 02:27:52,752
+Ancak yazılımların kalitesini kara kutu testi gibi temel görevleri gerçekleştirmeyi veya kullanıcıların geri bildirimini almayı unutamayan birçok açık kaynaklı yazılım geliştirisi de vardır.
+
+804
+02:27:54,111 --> 02:27:58,351
+Bu yüzden bu konuda kalite güvenliği konusu daha fazla araştırma gerektirir.
+
+805
+02:27:59,031 --> 02:28:03,191
+Çünkü bu yazılım her geçen gün daha kritik ve daha büyük uygulamalarda kullanılabilir.
+
+806
+02:28:03,832 --> 02:28:07,412
+Bu nedenle bu yazılımın yüksek kalitede olmasını sağlamak çok önemlidir.
+
+807
+02:28:09,396 --> 02:28:12,436
+Dinlediğiniz için teşekkürler. Sorunuz varsa alabiliriz arkadaşlar.
+
+808
+02:28:27,891 --> 02:28:38,131
+Pardon. [öğrenci], sen de dersdesin. Herhalde yüklemişsin sunumunu. [öğrenci] [öğrenci].
+
+809
+02:28:44,659 --> 02:28:45,780
+[öğrenci] [öğrenci]
+
+810
+02:28:52,819 --> 02:29:05,819
+Evet, o zaman izlet ve [öğrenci] sisteme yüklememişsiniz ama mail atmışsınız.
+
+811
+02:29:08,319 --> 02:29:09,780
+Evet hocam, merhabalar.
+
+812
+02:29:10,219 --> 02:29:10,700
+Evet.
+
+813
+02:29:11,959 --> 02:29:16,299
+Hocam, öncelikle [öğrenci] arkadaşımız giriş yapacak. Ardından ben de var edeceğim anlatmak.
+
+814
+02:29:18,399 --> 02:29:20,219
+Merhaba hocam, sesim geliyor mu benim?
+
+815
+02:29:20,608 --> 02:29:21,108
+Evet.
+
+816
+02:29:22,868 --> 02:29:23,847
+Tamam hocam.
+
+817
+02:29:25,227 --> 02:29:28,007
+Hocam, biz başlıyoruz o zaman.
+
+818
+02:29:31,407 --> 02:29:38,688
+2017 yılında yayınlanan E-Comparative Software Techniques adlı makaleyi inceledik hocam.
+
+819
+02:29:38,768 --> 02:29:40,888
+Test Tekniks adlı makaleyi.
+
+820
+02:29:41,368 --> 02:29:42,827
+Makalede temel olarak...
+
+821
+02:29:42,827 --> 02:29:46,768
+Ne açıdan inceliyorsunuz?
+
+822
+02:29:47,891 --> 02:30:07,832
+Test Tekniklerini inceledir hocam. Burada model tabanlı testler ve list tabanlı testlerin teknik karşılaştırması yapılıyor hocam. Temel olarak makale bunun üzerinde. Bu iki yaklaşımın karşılaştırması yapılıyor. Bu karşılaştırmayı da bu gördüğünüz başkalar altında sunacağız.
+
+823
+02:30:07,832 --> 02:30:08,672
+Tamam.
+
+824
+02:30:10,352 --> 02:30:11,832
+Giriş olarak...
+
+825
+02:30:12,468 --> 02:30:18,228
+Zaten günümüzde yazılımlar hemen hemen her yerde. Bir daha ki sayede geçebilir miyiz?
+
+826
+02:30:20,747 --> 02:30:23,628
+Giriş olarak kısa bir giriş yapayım hocam. Vakit de çok yok.
+
+827
+02:30:23,628 --> 02:30:25,579
+Günümüzde zaten yazılım...
+
+828
+02:30:25,587 --> 02:30:52,188
+İstemler her yerde kullanılıyor. Bu yazılımların da bir yazılım yaşam döngüsü var. Bu yazılım yaşam döngüsünde bu testlerin öneminin fazla olmasından dolayı testler artık öncelikli hale geldi. Hatta bu tidal yaklaşımında önce testi yazıyoruz, daha sonra kodunu yazıyoruz. Hani kodun önüne geçmiş gibi oldu. Bu testlerin önemini gösteriyor. Test edilmeden kullanıcılara yazılımları gönderdiğimiz zaman bunların işte maddi manevi bir takım sonuçları oluyor tabii ki.
+
+829
+02:30:52,595 --> 02:31:16,695
+Bu yazdığımız kodun da çalışıp çalışmadan, sorunsuz olup olmadığının içinde test yapmamız gerekiyor. Test işlemine bakacak olursak, test işlemi bir dahaki sınavı geçebiliriz. Yazılım test etme işlemi, yazılan yazılımın beklenen sonuçla gerçek sonucunu karşılaştırması ve tutarlı olmasıdır.
+
+830
+02:31:17,363 --> 02:31:37,843
+Ama çoğu zaman baktığım zaman bu yazılım testlerinde sorunlar çıkar. O şey olmaz, beklendiği gibi yazılım çalışmaz ilk aşamalarda. Bunun da örnek verecek olursak dünyada 2-3 tane hocam ciddi örneklerini topladık burada. Makalede de vardı. Bir tane bu kanser, bir dahaki slide'a geçebilir miyiz?
+
+831
+02:31:41,520 --> 02:31:56,860
+Kullanmak üzere bir yazılım geliştirilmiş. Burada bir yanlış çalışması sonuncu ölümlere sebebi olmuş. Yine bu uçak arzası ile ilgili bir maddi kayıp var. Bir de bu banka kartları ile ilgili bir sistemdeki hatadan dolayı yazılımın yanlış çalışmasından dolayı bir maddi kayıp var.
+
+832
+02:31:58,440 --> 02:32:04,340
+Yazılımın yanlış çalışması, beklenildi gibi çalışmasının maddi manevi sonuçları olabiliyor.
+
+833
+02:32:04,788 --> 02:32:32,488
+Bu incelediğiniz makalede de hocam model tabanlı test ve üst tabanlı testler inceleniyor. Model tabanlı testte model bir sisteme ait işlev yapı ve davranışların bitimsel belirtimi. Modeller karmaşık sistemleri soyutlayarak daha esnek bir biçimde göstermesini sağlayan yapılar ve temeli yömelere dayanıyor modellerin. Model tabanlı geliştirme yönteminde yazılım kodları üretilmeden önce modelleme yapılıyor ve her şey model olarak tanımlanıyor.
+
+834
+02:32:32,788 --> 02:32:40,928
+Burada amaç yazılım ihtiyaçlarının belirtilecek doğru çözümlerin üretilmesini sağlamak ve ortak bir dilde yapıyı anlatabilmek hocam.
+
+835
+02:32:41,668 --> 02:32:48,408
+Riskse de, aslında riske gelecekte olumsuz yollara yol açacak bir olayın gerçekleşme olasılığını içeriyoruz.
+
+836
+02:32:49,208 --> 02:32:52,888
+Risk seviyesi olayın olasılığı ve etkisi zararıyla bilin.
+
+837
+02:32:52,888 --> 02:32:59,608
+Yani bu riskin olma olasılığı nedir? Olursa bize ne gibi bir zararı olabilir?
+
+838
+02:33:00,115 --> 02:33:08,275
+Hep bundan yola çıkar. Risk bir projenin başarısız olmasını ya da gecikmesini etki edenlerdir.
+
+839
+02:33:08,691 --> 02:33:21,091
+Uygulama çıkabilecek bir hatanın kullanacağı etkisi yüksek ve olma olasılığı yüksek ise bu durumda res yüksek demektir ve testlerde de ya da hata çözümlerinde öncelik bu alana verilmelidir.
+
+840
+02:33:21,091 --> 02:33:29,531
+Aynı şekilde eğer test etkisi düşük ve olma olasılığı düşük ya da orta seviyeli ise bu sorunu hemen çözülmesi genellikle gerekmez.
+
+841
+02:33:29,904 --> 02:33:48,644
+Model tabanlı yaklaşım var, risk tabanlı yaklaşım var. Modelde her şeyi hocam önce modelliyoruz, cemel tabanlı. Risk dedi, yazılımın risklerini oluşma olasılığıyla etkisi üzerinden bir değerlendirme yapıp ona göre testler uygulanıyor.
+
+842
+02:33:48,644 --> 02:33:56,804
+Şimdi bu gördüğünüz şema model tabanlı modelin akış teması. Bunun ayrıntıdan girecek olursak bir dahaki slide'larda.
+
+843
+02:33:57,332 --> 02:34:24,611
+Bu ilk olarak model tabanlı test requirement management'tan başlıyor hocam. Burada model tabanlı testleri ilk adama müşteri ihtiyaçlarının isteklerini ve kısıklarını toplamak, bunları yönetme ve gereksinler olarak sınıflandırmaktır. Model tabanlı test gibi yazılımı test etme sürecinde potansiyel olarak en önemli adım bu. Model tabanlı testi gereksinim yönetimi adımı tüm müşteri işlerinin toplanması, analize önceliklendirilmesi, doğrulanması, tanımlanması ve kontrolünü içeriyor.
+
+844
+02:34:25,108 --> 02:34:50,747
+MWT'de bu model tabanlı testi gereksinim yönetimi adımı tüm müşteri iş gereksinimi toplanması analizde önceliklendirmesinin onaylanması, tanımlanmasını ve kontrol etmesini içeriyor. Bu adımdan sonra hocam bu ihtiyaçları toplayıp bu gereksinimleri belirledikten sonra modellemeye geçiyoruz zaten adı model tabanlı. Modelde de model tabanlı testi modelleme adımının temel amacı sistem gereksinimlerini modellemektir.
+
+845
+02:34:51,123 --> 02:35:06,043
+Test edilen sistemin beklenen davranışını tanımlayan ve test amaçlarına uygun bir davranış modeli oluşturuluyor. Bu model bir önceki adım olan gereksizlik yönetimi adımından kaynaklanan gereksizlikler kullanılarak bir test uzmanı tarafından oluşturuluyor.
+
+846
+02:35:06,043 --> 02:35:18,043
+Ve bu modeller diagramlar, tablolar, metin veya diğer türden gösterenler kullanarak tanımlanabilir, matematiksel bir ritimde ifade edilebiliyor. Bu modellemeden sonra üretim aşamasında
+
+847
+02:35:18,548 --> 02:35:45,748
+Modelleme aşamasına tasarlanan modeli ve test analizi tarafından seçilen test seçim kriterlerini girdiği olarak alan ve modelden soyut test sonaryoları ve ihtiyaç izlenebilirlik metrisi. Bu Requirement Transment Matrisi hocam. Bu da yazılım gereksinimlerine ait bilgilerin olduğu ve bu süreçleri takip edilmesini kolaylaştıran sağlayan bir matris.
+
+848
+02:35:48,147 --> 02:36:11,087
+Tamam, nerede kalmıştım? Bir saniye hocam. Üretim. Bir önceki slide'a gelebilir misin? Tamam. Bu requirement test, treatment management, metrisi üreten bir test üretici temelinde gerçekleştiriliyor. Testler ile kapsanan model unsurlar arasındaki bağlantıyı gösteriyor.
+
+849
+02:36:11,636 --> 02:36:28,355
+Somutlaştırma, bu oluşturduğumuz soyut test adımlarının, software under test, yani test aşamasındaki testi gerçekleştiren uygulama demek. Üzerinde çalıştırması için test söneryolarını oluşturuyor. Modeli oluşturduk, soyutlamıştık.
+
+850
+02:36:28,639 --> 02:36:47,819
+Daha sonra üretim aşamasından sonra bu oluşturulan modeller daha somut hale geliyor. Nasıl test senaryodur uygulanacağı kısmına geliyor. Daha sonra da yürütmede bu somutlaştırdığımız şeyler, testler yürütme adımında da çalıştırılıyor. Bu şekilde bir akış teması var.
+
+851
+02:36:50,611 --> 02:37:09,351
+Risk temelli yapıda da, kapsamlı bir şekilde test edebildiğiniz durumlarda, yazılımı kapsamlı bir şekilde test edemediğiniz durumlarda, seçici bir şekilde test etmeyi ve daha az zaman ve kaynak ile ürün kalitesini etkilemeden daha iyisini başarmalıyız. Dediğim gibi risk tabanlı testte de bir önceliklendirme yapıyoruz.
+
+852
+02:37:10,772 --> 02:37:38,132
+Riski test planlaması için temel olarak kullanan bir yazılım ve test teklifi veya yöntemidir. Test yürütmeyen, testlerin çalıştırması sırasında uygun testleri seçilmek, öncelik sırasına koymak, yönetmek ve sonuç olarak en önemli şeyleri test etmek için, sınırlı zaman ve kaynakların kullanıldığından emin olmak için riski kullanılır. Basit ifadeleri, risk görünüşü kesin olmayan. Bir önceki slide'a gelebilir misin?
+
+853
+02:37:39,347 --> 02:38:02,548
+Modellden önceki, şimdi de kalmıştım. Bundan önceki. Burayı gösteriyordum hocam da. Proje, teletirizme tanımlama tarihini, hani riskin projedeki tarihine, maliyetine, şirkete olan etkileri gibi şeyler göz önünde bulunarak testlerin bir önceliklendirilmesi, risk temelli bir önceliklendirilmesi oluyor. Ve hangisi daha ciddi test dersi, daha fazla öneme sahipse.
+
+854
+02:38:03,123 --> 02:38:19,723
+O şekilde bir önceliklendirme olacağım. Bunun modeline baktığımız zaman, bir sonraki slide'da, bunun da olması, takip ettiği şema bu şekilde, bunun ayrıntılarına bakacak olursak, bir sonraki slide'da adımları var.
+
+855
+02:38:20,147 --> 02:38:45,147
+Risk tabanlı testi, Gereksinim Yönetimi. Model tabanlı test sürecinde olduğu gibi de hocam, bu risk tabanlı testi, sistem özelliklerinden gereksinimleri çıkarmak ve tanınamak için gereksinim yönetimi adımıyla başlıyor. Burada da bir gereksinimler çıkıyor. Riskin belirlenmesi, az önce dediğim gibi, hangi riskler var, oluşma olasılığı ve onun...
+
+856
+02:38:45,343 --> 02:39:10,343
+Vereceği zarara göre riskler belirleniyor. Bir sonraki aşamada riskleri belirledikten sonra analiz ve değerlendirme, riskleri belirlendirme ediyoruz. Bunları sınıflandırıyoruz. Riskin olma olasılığı, etkisi. Bunları değerlendirdikten sonra bir önceki slide'da...
+
+857
+02:39:11,379 --> 02:39:33,039
+İki aşama daha vardı. Hafif bir azaltma var. Riskleri değerlendirildikten sonra risk yetkisini veya risk olasılığını azaltmak amaç. Riske azaltmak için testlerin yapıldığı risk azaltmayı araştırmaktan ibarettir. Ürütmede de bu risk tabanlı testlerden oluşturduğumuz o test yapısını çalıştırıyoruz hocam.
+
+858
+02:39:33,940 --> 02:40:00,000
+Bu testleri uyguluyoruz. Yürütme testleri yapmak. Şimdi bunları hocam, model tabanının yaklaşım sınıflandırması daha önce söylediğim gibi genelde UML diagramları temelli. Bunu da işte incelediğimiz makalede bu model tabanının yaklaşımları dörde ayırmışlar. Yazılım gereksinimlerini temsil eden model UML diagramları kullanarak tanımıyor. Ya da yazılım gereksinimlerini temsil eden model UML olmayan diagramları kullanıyor.
+
+859
+02:40:00,659 --> 02:40:14,699
+Kullanılması durum var. Bir de yazılım iç yapısını temsil eden modellerin yömel diagramları kullanması ya da yine yazılım iç yapısını temsil eden modellerin yömel-ömen gösterimleri kullanması şeklinde dörde ayrılmış bu makalede.
+
+860
+02:40:14,699 --> 02:40:19,319
+Risk temelli bu.
+
+861
+02:40:20,819 --> 02:40:48,119
+Risk-Bezli Tensik Yaklaşımı sınıflandırmasında da genel düzeyde risk analizi ve testi birleştiren yaklaşımlar mevcut. Model tabanlar risk tahminine odaklanan yaklaşımlar var. Test senaryosu oluşturmaya odaklanan yaklaşım. Test vaka analizine odaklanan yaklaşımlar var. Otomatik kaynak kodu analizine dayalı yaklaşımlar. Belirli bir programa paradigma'ya hedefleyen yaklaşımlar ve yaklaşımların ölçümü hedeflemesi anlamındaki temel konu şeklinde bir sınıflandırma mevcut hocam.
+
+862
+02:40:49,299 --> 02:40:56,020
+Bundan sonra bunların araçları var. Ona da izlet arkadaşım devam edecek. Kullanan araçları.
+
+863
+02:40:56,020 --> 02:41:12,159
+Tamam hocam, teşekkür ederim. Şimdi model tabanlı test ve risk tabanlı test gibi herhangi bir teknik veya yaklaşımdan tam olarak yararlanabilmek için otomasyon destekleri mümkün olduğunca otomotifleştirilmesi ve yazılım test rejimi güvenliğinin artılması gerekir.
+
+864
+02:41:12,404 --> 02:41:17,944
+Model tabanlı testte karşılaşan zorun insan müdahalesi olmadan test senaryoları oluşturmaktır.
+
+865
+02:41:18,304 --> 02:41:25,464
+Riks tabanlı yaklaştığında ise test ve testin nasıl yönlendirileceği, seçileceği ve değerlendirileceği ile ilgili durumlar belirtilir.
+
+866
+02:41:25,864 --> 02:41:27,764
+Bu yüzden test araçlarının ihtiyaç duyulur.
+
+867
+02:41:29,064 --> 02:41:36,904
+Bu araştırma kapsamında model tabanlı testler için model tabanlı test araçları önerilmiştir.
+
+868
+02:41:37,264 --> 02:41:37,784
+Nedir bunlar?
+
+869
+02:41:38,579 --> 02:41:59,140
+Araç kategorisine göre, model türüne göre, test tipine göre sınıflandırılmıştır bunlar. Yani üç tipe göre sınıflandırılmıştır. Bu yansıda ise verilen tablada bir takım destek araçlarının bir önceki yansıda belirten araç kategorilerine göre model tabanlı sınıflandırıldığını görüyoruz.
+
+870
+02:42:00,084 --> 02:42:27,564
+Spec Explorer Microsoft'un tam anlı bir test aracıdır. Visual Studio Enteger geliştirme ortamında bir yazılım sistemin beklenme davranışını açıklayan bir model tanımlama yeteneği ile sunulur. Bu araç Visual Studio kendi test terçevesi veya diğer birçok bilim testi terçevesi içinde yürütme için odomatik olarak testler oluşturulabilir. Ve bu test aracının test teknik fonksiyonel test olduğunu görüyoruz.
+
+871
+02:42:27,987 --> 02:42:37,487
+Yani testini gerçekleştirdiğimiz uygulamanın her bir konusunun verilen gereksinimleri uygun olarak çalışıp çalışmadığını doğrulan bir test gerçekleştiriyoruz.
+
+872
+02:42:37,487 --> 02:42:43,687
+Konusional test, kara kutu testi altında kullanıldığı için uygulama kaynak kodu ile ilgilenmiyoruz bu noktada.
+
+873
+02:42:43,687 --> 02:42:54,387
+Bu araçta model tipi olarak da SM ve FISM dediğimiz algoritmik durum makinesi veya sonlu durum makinesi olarak ifade edilmiştir.
+
+874
+02:42:54,415 --> 02:43:01,915
+PCM diğer bir diagramı, bir durum diagramını ifade ediyor. PCM ise matematiksel bir hesaplama modelini ifade ediyor.
+
+875
+02:43:01,915 --> 02:43:12,915
+PCM bazı gibiler yanık olarak bir durumun diğerine değişebilir. Yine tabloda verilen test-case aracının model tipinin yumel durum diagramı ile ifade edildiğini görüyoruz.
+
+876
+02:43:19,476 --> 02:43:35,396
+Burada da aynı şekilde devam ediyor destek araçlarındaki sınıflandırma işlemi. Risk tabanlı ise destek araçlarının sınıflandırılması bu tabloda verilmiştir. Örneğin bu tabloda yer alan Right Tape Tool'u.
+
+877
+02:43:36,595 --> 02:43:45,895
+Faaliyet diagramlardan otomatik olarak sistem test senaryoları oluşturan ve bu test senaryoları risk'e göre önceliklendiren risk tamamlı bir test tekniği olarak karşısında çıkıyor.
+
+878
+02:43:45,895 --> 02:43:53,895
+Bu turun kategorik olarak akademik model tipinin Activity diagram dediğimiz gümlelerin bir alt sınıfını gösterdiğini görüyoruz.
+
+879
+02:43:53,895 --> 02:43:59,595
+Ve bir aktiviteden diğerine akışı modeli bir akış şeması versiyonunun seçildiğini görüyoruz.
+
+880
+02:43:59,827 --> 02:44:17,288
+Test tipi olarak da profesyonel test tipinin seçildiğini görüyoruz. Yine HP'nin ticari bir test yönetimi aracı olan HP Kalite Merkezi, uygulama okanları için gereksinim yönetimi, test yönetimi ve iç süreci testi dahil olmak üzere yazılım kalite güvencesini sunmaktan.
+
+881
+02:44:19,156 --> 02:44:34,716
+Model tabanlı ve risk tabanlı test teknikleri yazılım, geliştirme ve yönetim için etkili olabilecek test teknikleridir. Ancak her çözümün farklı faydaları ve bildirilmişleri dediğimiz sınırları da vardır. Örneğin, model tabanlı testin faydaları şu şekilde sıralanabilir.
+
+882
+02:44:35,316 --> 02:44:49,776
+Sistem Under Test denilen suit hata tespiti, azaltılmış test maliyeti ve süresi, iyileştirilmiş test kalitesi, gereksinim adaların tespiti, izlenebilirlik yönetimi ve gereksinim gelişimi olarak katabülülendiriliyor.
+
+883
+02:44:52,180 --> 02:45:19,180
+Bu yansımda da model tabanlı testin avantaj ve sınavları sunulmuştur. Örneğin, model tabanlı test yapışma sınavları olarak yazılım-geçişim sürecinde güncel olmayan bazı gerekselimlerin yönetilememesi, testlerden herhangi birinin başarısız olması durumunda testlerin analizin zor olması ve test edilen sistemin bazı kısımlarının zor modellenmesi gibi limitler dediğimiz sınavlar karşımıza çıkıyor. Model tabanlı testin avantajlarına bakacak olursak.
+
+884
+02:45:20,659 --> 02:45:30,780
+Test süresi ve maliyetin düşük olması, gelişiminin kolay olması, test edilen sistemli hatalarını iyileştirmeye izin vermesi gibi avantajlar karşımıza çıkıyor ilk etapta.
+
+885
+02:45:33,108 --> 02:45:48,948
+Risk tabanlı testin avantaj ve sınırlıklarına değinecek olursak, gereksinlik ve test arasındaki izlenebilirlik yönetmek zordur. Risk değerlendirmesi için doğru paylaştırılmanın zorluğu gibi durumlar sınırlıklarına ifade ediyor. Avantajlar olarak da şunlar söylenebilir.
+
+886
+02:45:50,484 --> 02:46:02,324
+Risk sırasına göre test ve hataların bulunma olasılığı yüksektir ve risk azaltmadan kolaylık sağlaması, yüksek riski hataların testi etmektedir, riskleri azaltmadan kolaylık sağlaması gibi durumlar karşımıza çıkıyor.
+
+887
+02:46:04,115 --> 02:46:08,115
+Bu iki tekniğin de avantajlar, yanında dezavantajlar olduğunu ifade ettik.
+
+888
+02:46:08,115 --> 02:46:21,115
+Risk tabanlı test, neyi test edileceğini önceliklendirmesini sağlıyorum. Risk tabanlı test, yazılan testinde bir uygulamanın iç yapısını kontrol etmeden incelen bir yöntem olarak, yani kara kutu testi olarak karşılığında çıkıyor.
+
+889
+02:46:25,043 --> 02:46:41,004
+Test tepki nesipinin beklenen davranışı doğrulamak için test senaryoları üretiliyor. Bu çalışma kapsamında model tabanlı test yaklaşmaların farklı kriterlere göre de sınıflandırılmıştır. Nedir bunlar? Kullanma testin türü, test seviyesi, test aynatları ve gösterim türü.
+
+890
+02:46:43,144 --> 02:46:51,244
+Test tipine göre fonksiyonel ve fonksiyonel olmayan ve yapısal testlere eylemlik olarak kategorilendirilmiş yansıda.
+
+891
+02:46:52,020 --> 02:47:19,080
+Test seviyesi olarak da sistem, entegrasyon, birim ve regresyon testi olarak da kategorilendirilmiş. Test kaynağı kriterine göre de yazılım iç yapısını ve yazılımın gereksinimlerini test kaynağı olarak kullanan şekilde kategorilendirilmiş. Notasyon türüne göre de grafik gösterimi, komut dosyası veya sembolik gösterim olarak kategorilendirilmiş. Bu yansıda da model tabanlı yaklaşımlarının belirliğinin test türüne göre sınıflandırılması verilmiş.
+
+892
+02:47:21,652 --> 02:47:26,692
+Test seviyesi açısından model tabanlı yaklaşımını sınıflandırılması tabloda gördüğü gibi verilmiş.
+
+893
+02:47:29,872 --> 02:47:34,452
+Test kayna ve test notasyonuna göre sınıflandırmayı görüyoruz mevcut tablolarda.
+
+894
+02:47:36,672 --> 02:47:39,192
+Bu çalışmanın sonuçları olarak da şundan söylenebilir.
+
+895
+02:47:39,615 --> 02:48:02,195
+Yazılım testi model tabanlı ve risk tabanlı olmak üzere iki tekniği üzerinde durulmuş. Model tabanlı testte sistemin soyutlamaları ve ortamını otomatik olarak test senaryoları oluşturmak için kullanmakta. İkincisi risk tabanlı test tekniğidir. Yazılım riskleri ve test sorunlarını en azından indirmeye amaçlı bir teknik olarak karşısında çıkıyor. Riskler olasılığına göre.
+
+896
+02:48:02,639 --> 02:48:13,139
+ve etkisine göre önceliklendiriliyor risk tabanlılığı ve test senaryoları verilen risk kaptörülerin çözümü verilen stratejilere göre projelendiriliyor.
+
+897
+02:48:13,739 --> 02:48:21,279
+Bu çalışmanın sonucunda model ve risk tabanlı meta isminde bir model önerisi de bulunmuş.
+
+898
+02:48:21,279 --> 02:48:30,079
+Ve bazı test sınavlarının üstesine gelmek için de model ve risk tabanlı tekniklere dayanıp ampirik bir çalışma önerisinin yapılması gerektiği hususunda bir öneride bulunmuş.
+
+899
+02:48:32,211 --> 02:48:42,951
+Yarın aldığımız referans kaynak bu şekilde. Sabına dinlediğiniz için teşekkür ediyorum. Sorularınız varsa alabilirim. Anlatacaklarımız bu kadar.
+
+900
+02:48:47,796 --> 02:49:05,836
+Teşekkürler [öğrenci]. Şimdi en son [öğrenci] kaldı. O sunumunu göndermiş. Önümüzdeki hafta o sunumunu yapar. Önümüzdeki hafta projelerinizin sunumu var.
+
+901
+02:49:12,404 --> 02:49:19,404
+Test raporlarınızı, test planlarınızı, daha önce gereksinim requirement...
+
+902
+02:49:20,531 --> 02:49:30,331
+Spesifikasyonları gönderdiğiniz konularla ilişkili test raporlarını oluşturacaksınız.
+
+903
+02:49:30,331 --> 02:49:40,291
+Derste de sunumlarınızda özellikle yaptığınız testler hakkında açıklama vermenizi istiyorum.
+
+904
+02:49:41,771 --> 02:49:43,751
+Yani raporlarınız kısa olabilir.
+
+905
+02:49:47,700 --> 02:50:06,860
+Sunumlarda nasıl bu testleri yaptığınızı anlatmanızı istiyorum. O zaman önümüzdeki hafta önce [öğrenci] bu makalesini sunacak. Ondan sonra raporlarınızı yüklediğiniz uygulamalar için
+
+906
+02:50:09,332 --> 02:50:13,951
+Kim önümüzdeki hafta sunum yapabilir?
+
+907
+02:50:14,611 --> 02:50:18,111
+Hocam biz yapabiliriz. [öğrenci] [öğrenci], [öğrenci] ve [öğrenci].
+
+908
+02:50:18,111 --> 02:50:28,652
+Tamam. Bir uygulama sunumu için [öğrenci] ve [öğrenci]. [öğrenci] siz yapabilir misiniz?
+
+909
+02:50:33,427 --> 02:50:33,927
+[öğrenci]
+
+910
+02:50:39,347 --> 02:50:42,268
+Başka kim? [öğrenci] sen yapabilir misin?
+
+911
+02:50:43,847 --> 02:50:48,228
+Hocam önümüzdeki hafta için tam hazır olamayabilirim de.
+
+912
+02:50:48,228 --> 02:50:49,648
+6 Ocak tarihinde.
+
+913
+02:50:50,228 --> 02:50:53,168
+Tamam. Başka?
+
+914
+02:50:54,128 --> 02:50:55,968
+Biz yapabiliriz hocam. [öğrenci]'le beraber.
+
+915
+02:50:56,548 --> 02:50:57,228
+[öğrenci]'le?
+
+916
+02:50:58,927 --> 02:51:00,268
+[öğrenci] [öğrenci].
+
+917
+02:51:00,708 --> 02:51:04,728
+Anladım. Tamam. İkinci sırada.
+
+918
+02:51:08,755 --> 02:51:10,435
+[öğrenci].
+
+919
+02:51:16,884 --> 02:51:18,884
+Siz yapabilecek misiniz?
+
+920
+02:51:24,915 --> 02:51:26,915
+[öğrenci] senin durumun nedir?
+
+921
+02:51:30,484 --> 02:51:32,744
+Hocam haftaya benim bir sunumum daha var.
+
+922
+02:51:33,104 --> 02:51:33,324
+Tamam.
+
+923
+02:51:33,964 --> 02:51:34,484
+Proje var.
+
+924
+02:51:34,924 --> 02:51:36,384
+O olsa daha iyi olur.
+
+925
+02:51:36,744 --> 02:51:37,044
+Tamam.
+
+926
+02:51:37,664 --> 02:51:38,804
+[öğrenci] senin.
+
+927
+02:51:49,907 --> 02:51:52,307
+[öğrenci] senin durumun nedir?
+
+928
+02:51:57,620 --> 02:52:00,160
+[öğrenci], siz yapabilecek misiniz sununuzu?
+
+929
+02:52:01,240 --> 02:52:11,500
+Hocam, ben yetiştirmeye çalışacağım. Eğer yetiştirsem hafta yapmak benim için de daha iyi olacak ama yetiştiremezsem diye söylemek istemedim.
+
+930
+02:52:11,500 --> 02:52:15,340
+Tamam. O zaman raporlarınız için sanıyorum...
+
+931
+02:52:16,244 --> 02:52:25,284
+Önümüzdeki hafta, yine dersten bir gün öncesini yazdığımı hatırlıyorum son süre olarak.
+
+932
+02:52:25,284 --> 02:52:32,284
+Sisteme bakın, raporlarınızı o son tarihe uygun olarak yükleyin.
+
+933
+02:52:35,304 --> 02:52:40,124
+Sunum yapabilecek olanlar da bana mail atabilir.
+
+934
+02:52:41,844 --> 02:52:42,344
+Şu anda.
+
+935
+02:52:42,868 --> 02:52:50,768
+İki grubumuz var. Diğer arkadaşlarınızdan da yanınızı bekliyorum.
+
+936
+02:52:51,888 --> 02:52:58,488
+Evet, [öğrenci] [öğrenci] da önümüzdeki hafta sunumunu yapacak. Makale sunumunu.
+
+937
+02:53:00,768 --> 02:53:04,608
+Evet, o zaman dersi bitirebiliriz. Sorunuz var mı?
+
+938
+02:53:09,492 --> 02:53:10,812
+Teşekkür ederim hocam.
+
+939
+02:53:11,752 --> 02:53:12,452
+Teşekkür ederim.
+
+940
+02:53:13,012 --> 02:53:13,692
+İyi günler hocam.
+
+941
+02:53:13,812 --> 02:53:14,832
+Ben teşekkür ederim.
+
+942
+02:53:14,892 --> 02:53:15,352
+İyi günler.
+
+943
+02:53:15,372 --> 02:53:17,032
+Herkes güzel hazırlanmıştı.
+
+944
+02:53:17,712 --> 02:53:18,492
+Teşekkürler.
+
+945
+02:53:18,832 --> 02:53:20,012
+İyi haftalar diliyorum.
+
+946
+02:53:20,372 --> 02:53:21,372
+İyi haftalar.
+
+947
+02:53:21,372 --> 02:53:22,792
+İyi haftalar hocam.
