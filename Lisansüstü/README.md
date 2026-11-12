@@ -829,6 +829,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular](https://drive.google.com/drive/folders/1rAzRhhkAbRF8jPhqrNIb7Y2QZy-kkiNd?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Veri Sıkıştırma Ders Kayıtları](./Veri%20S%C4%B1k%C4%B1%C5%9Ft%C4%B1rma/ders_kayitlari/) ✨
 - 📄 **Not:** [Önder'in markdown notları](./Veri%20S%C4%B1k%C4%B1%C5%9Ft%C4%B1rma/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
