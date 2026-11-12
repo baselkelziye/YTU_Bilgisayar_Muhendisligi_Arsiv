@@ -1,0 +1,2247 @@
+1
+00:00:12,596 --> 00:00:13,516
+Merhaba arkadaşlar.
+
+2
+00:00:19,955 --> 00:00:20,536
+Merhaba.
+
+3
+00:00:25,620 --> 00:00:28,060
+2-3 dakika bekleyelim, ondan sonra başlayalım ders. Tamam.
+
+4
+00:03:23,891 --> 00:03:34,391
+Arkadaşlar, 12 kişi olmuşuz. Peki, şimdi başlayabiliriz. Önce bir planı açalım.
+
+5
+00:03:36,951 --> 00:03:49,271
+Bugün 27 Kasım değil mi? Evet, 27 Kasım. Geçen haftadan kalan iki tane konumuz vardı. Bir de bu haftanın konuları olacak.
+
+6
+00:03:50,548 --> 00:03:58,548
+Geçen hafta ödev sunumlarını yapmıştık. Hatalını zaten kodlamalar ve tolara bakmıştık. Buradan da kalanlar vardı, onlara da bakmıştık.
+
+7
+00:03:58,548 --> 00:04:09,548
+Şimdi burada bir semi-random subspace bildirisi diye bir bildiri yazıyor. Bundan kısaca bahsedeyim aslında.
+
+8
+00:04:09,548 --> 00:04:17,548
+Yine okursunuz, yani aratırsanız bulursunuz zaten. Şimdi bir şeyi hatırlayarım.
+
+9
+00:04:18,740 --> 00:04:32,980
+Rassal alt uzayları hatırlayalım. Rassal alt uzaylarda şöyle bir işlem gerçekleştiriliyordu. Elimizde N tane örnek var. Bir de D tane de özellik var.
+
+10
+00:04:34,920 --> 00:04:37,920
+Aslında bunu birazcık yaza yaza anlatsam daha iyi olur.
+
+11
+00:04:43,283 --> 00:04:45,283
+Yeni bir tane açsam.
+
+12
+00:04:47,283 --> 00:04:49,283
+Görmüyorsunuz tabi.
+
+13
+00:04:49,283 --> 00:04:50,635
+Bir dakika.
+
+14
+00:04:57,139 --> 00:04:59,099
+Şimdi boş word belgesi gözüküyor mu arkadaşlar?
+
+15
+00:05:01,199 --> 00:05:01,879
+Evet hocam.
+
+16
+00:05:03,079 --> 00:05:03,779
+Tamam, tamam.
+
+17
+00:05:05,799 --> 00:05:13,519
+Diyelim ki şöyle bir şey yapacağız. N tane örnek var elimizde. D tane de özellik var.
+
+18
+00:05:13,519 --> 00:05:23,939
+Şimdi random subspace'in yaptığı şey şuydu. Her bir tekil öğrenici için mesela D bölü 2.
+
+19
+00:05:24,692 --> 00:05:34,591
+Tane özelliği az kere seçiyor. Dolayısıyla eğitim kümesi şöyle bir şey oluyordu.
+
+20
+00:05:34,591 --> 00:05:39,932
+Buna şurasına şöyle yazalım aslında.
+
+21
+00:05:45,108 --> 00:05:58,067
+N tane örnek çarpı D tane özellik. RandomStore of Space'de ise her bir tekil öğrencinin hükümesi o zaman şöyle bir şey oluyor. N tane örnek çarpı D bölü 2.
+
+22
+00:06:00,268 --> 00:06:09,388
+Bir veri hükümesi olacak değil mi? Dolayısıyla burada her bir tekil öğrenci için bu işi yapıyorduk. Mesela örnek olarak şöyle bir şey düşünelim.
+
+23
+00:06:09,939 --> 00:06:33,939
+Dört tane özellik olsa ki bunları da diyelim ki bir, iki, üç, dört diyelim ve d bölü iki eşittir iki olacak. O zaman her bir mesela diyelim ki yani d bölü iki mesela diyorum. Genel olarak empirik olarak iyi çalıştığı ifade ediliyor. Yani benim de kendi kişisel gözlemlerim o yönde.
+
+24
+00:06:34,932 --> 00:07:02,912
+D bölü 2 burada şart olan bir şey değil. Siz burada D bölü 4 de yapabilirsiniz, D bölü 5 de yapabilirsiniz. Yani orası tamamen size bağlı. Fakat onun neyi değiştirdiğinden birazcık bahsedeceğiz. Ama ilk önce iki özellik seçimine neyi ifade ediyoruz? Mesela tekil öğrencilerden bir tanesi birinci ve üçüncü özelliklerle çalışacak. Başka bir tanesi mesela dördüncü ve üçüncüyle çalışacak. Başka bir tanesi birinci ve ikinciyle çalışacak. Başka bir tanesi üçüncü ve ikinciyle çalışacak. Rastgele ikililer üretiyor.
+
+25
+00:07:02,932 --> 00:07:22,491
+Aslında bu dört tanesinin içerisinden rastgele ikililer üretiyorsunuz. Mesela bunları ürettiniz. Birinci ve üçüncü özellik kullanılan bir eğitim kümesi var elinizde. Onunla bir sınıflandırıcı eğitiyorsunuz ya da regresörü. Daha sonra sonuçları birleştiriyorsunuz. Şimdi bu klasik olarak yapılan işlem.
+
+26
+00:07:29,588 --> 00:07:44,208
+Tekil X'in değişimi, tekil öğrenci başarısını ve diversity'yi nasıl etkiler? Sorun bu.
+
+27
+00:07:45,668 --> 00:07:54,427
+Evet. Yani X büyükse ve X küçükse neler olur?
+
+28
+00:07:56,884 --> 00:07:58,043
+Neler diyebilirsiniz?
+
+29
+00:08:00,184 --> 00:08:03,884
+X büyükse tekil öğrenci başarısı...
+
+30
+00:08:07,540 --> 00:08:19,939
+Aşırıcısı, işte ne olur? Diversity ne demekti? Teknik öğrencilerin kararlarının birbirlerinden ayrıklığı. Diversity ne olur?
+
+31
+00:08:27,795 --> 00:08:35,375
+Hocam, X büyüyünce yani aldığımız örnek sayısı azalır. Dolayısıyla tekil öğrenci başarısını...
+
+32
+00:08:35,375 --> 00:08:37,456
+Şimdi dur, örnek sayısı değil.
+
+33
+00:08:38,036 --> 00:08:42,276
+Yani şey, evet. Örneğin için tam ne dedi? Özellik sayısı herhalde değil mi?
+
+34
+00:08:42,355 --> 00:08:48,355
+Özellik sayısı, tamam. Yani örnek sayıları aynı çünkü. Bütün örneklerin hepsini alıyoruz. Özellik sayısını seçiyoruz burada.
+
+35
+00:08:48,355 --> 00:08:55,276
+Özellik sayısı azalacak. Dolayısıyla tekil öğrencinin başarısı düşecek. Diversite artacak diye düşünüyorum.
+
+36
+00:08:56,436 --> 00:09:05,376
+Evet, doğru düşünüyorsun. Yani x'imiz büyük olursa, mesela 10 gibi bir şey olursa, yani 100 tane özelliklerle 10 tanesini seçiyorsun sadece.
+
+37
+00:09:05,376 --> 00:09:15,136
+Şimdi 100 tane özen içinde sadece 10 tanesini seçip onlarla işlem yaptığında tekil öğrencisi başarısında düşecektir, değil mi? Burası düşecektir.
+
+38
+00:09:16,276 --> 00:09:17,376
+Fakat...
+
+39
+00:09:17,491 --> 00:09:38,491
+Aynı zamanda diğer tarafta, diversity ne olacaktır? Artacaktır. Çünkü her biri farklı 10 taneyle eğitiliyorlar. Ve mesela herhangi iki tane tekil öğrencinin ortak özelliklerini, yani sonuçta birbirine benzer özellikler kullandığımız zaman tekil öğrencilerin başarıları ne olacaktır? Birbirlerine yaklaşacaktır.
+
+40
+00:09:40,115 --> 00:10:05,875
+Kararları birbirlerine yaklaşacaktır. Diversiteleri düşük olacaktır. Benzer özellikler kullanıyorlarsa. Dolayısıyla diversity bu durumda ne olacaktır? Bu artacaktır. Diğer şekilde işte x küçük dediğimizde de tam bunun tersi olacak. Başarısı artar. Neye göre artar? Küçük, büyük olana göre artar. Diversity ise azalır.
+
+41
+00:10:08,340 --> 00:10:09,360
+Tamam mıyız arkadaşlar?
+
+42
+00:10:15,028 --> 00:10:16,028
+Hiç sesiniz gelmiyor.
+
+43
+00:10:18,028 --> 00:10:18,528
+Evet hocam.
+
+44
+00:10:20,248 --> 00:10:20,668
+Peki.
+
+45
+00:10:22,908 --> 00:10:31,028
+Şimdi, burada dolayısıyla şöyle bir şey düşünebiliriz, varsayabiliriz.
+
+46
+00:10:32,028 --> 00:10:36,208
+Mesela amacımız ne olacak burada?
+
+47
+00:10:36,755 --> 00:10:43,956
+Biz tekil öğrencilerin başarısını değiştirmeden acaba diversity'yi arttırabilir miyiz? Fikir bu.
+
+48
+00:10:45,115 --> 00:10:52,956
+Bakın, tekil öğrencilerin başarısını değiştirmeden, yani x'i değiştirmeden, aynı x için, acaba biz diversity'yi arttırabilir miyiz?
+
+49
+00:10:52,956 --> 00:11:00,375
+Eğer diversity'yi arttırabilirsek, aynı x için bakın, yani bir x'imiz var elimizde, mesela 2, 5, neyse.
+
+50
+00:11:03,827 --> 00:11:15,668
+Bu durumda tekil öğrenci başarısı değiştirmeyeceğiz ya. Yani sonuçta d bölü x'i değiştirmediğimiz zaman seçilen özellik sayısı aynı kalacak. Seçilen özellik sayısı aynı kaldığı zaman da tekil öğrenci başarısı da aynen kalacağını varsayabiliriz.
+
+51
+00:11:15,668 --> 00:11:28,087
+Sorumuz şu. X'i değiştirmeden biz diversity'yi arttırabilir miyiz? Tamam. Şimdi bunun için bu semi-random subspace dediğimiz yöntemde yapılan işlem şu.
+
+52
+00:11:28,596 --> 00:11:42,456
+Aslında oldukça mantıklı geliyor kulağa. Şimdi diyelim ki biz x'i 2 aldık. x'i 2 olsun.
+
+53
+00:11:56,224 --> 00:12:05,708
+Askele seçti mi bunu? Her seferinde bu yapılıyor. Yani buradakilerin her birinde şurada...
+
+54
+00:12:12,659 --> 00:12:26,240
+Şimdi yine dört özelliklerinden iki tanesini seçeceğiz yine. Bunu istiyoruz. Ama istediğimiz şey şu, diversity'yi de arttıralım. Bunu nasıl gerçekleştirebiliriz? Aslında şöyle basit bir yolu olabilir.
+
+55
+00:12:26,240 --> 00:12:40,219
+Diyelim ki biz birinci seçimde mesela bir üçü seçtik. İkinci seçimde ne yapabiliriz? Şimdi burada kararların şöyle ifade edelim.
+
+56
+00:12:40,851 --> 00:12:51,951
+Kararların aynı olma ihtimali, benzer olma ihtimali farklı özellik alt hükümelerinde ortak özelliklerin sayısının çok olmasıyla alakalı.
+
+57
+00:12:52,871 --> 00:12:56,951
+Yani mesela bununla bunun arasında bir tane benzerlik var.
+
+58
+00:12:56,951 --> 00:12:59,251
+Bakın görüyor musunuz? Üçte üç gelmiş.
+
+59
+00:13:01,203 --> 00:13:22,563
+Birle dört farklı ama. Yani özelliklerin yarısı aynı. Bundaki özelliklerle bundaki özelliklerin yarısı aynı. İçinden iki tanesini seçelim. Mesela bununla, şununla, şunun arasında nasıl bir ilişki var? Mesela bu bir, bir. Yine yarı yarıya aynı var. Diğer taraftan farklı. Mesela bununla bunun arasında bir, üç, üç, iki yine bir tane ortak var.
+
+60
+00:13:26,292 --> 00:13:38,352
+Ki genel olarak bütün sistemin diversity'sinin ne olarak düşünebiliriz biz? Her bir özellik alt kümesinin diğer tüm özellik alt kümede benzerliklerinin ortalaması.
+
+61
+00:13:38,352 --> 00:13:53,092
+Tamam. Şimdi burada şöyle bir şey yaparsak, mesela yine aynı durumda, yani şunun için bu Random Subspaced'i. Şimdi şöyle bir şey yapacağım.
+
+62
+00:13:56,275 --> 00:14:07,875
+Orası semi-random subspace diyelim. Yine aynı şey olsun. Dört ezer üçünün iki tanesini rastgele seçsin bu. Tamam seçsin. Burada ise geri kalanları al diyelim.
+
+63
+00:14:11,923 --> 00:14:19,463
+Yani mesela bu 1-3 mü seçti? O zaman burası 2'ye 4 olsun. Mesela bu 1-2 mi seçti? O zaman burası 3'e 4 olsun. Şöyle.
+
+64
+00:14:27,251 --> 00:14:50,211
+Anlaşıldı mı? Ne yaptı? Olca basit bir şey. Peki bu bize bir kazanım sağlar mı? Şimdi şöyle bir şey düşünün. Her seferinde iki tane özellik seçiliyor. Dolayısıyla hepsinde iki tane var değil mi? Hepsinde iki tane var. Dolayısıyla her bir tekil öğrencinin başarısı yukarıdakiyle aynı. Kabaca düşünürsek. Hiçbir şey yok.
+
+65
+00:14:50,868 --> 00:15:09,148
+Fakat neleri farklı olacaktır bu sefer? Diversiteleri farklı olacak. Neden diversit farklı olacak? Çünkü ben burada bile isteğe bu birinciyi ve ikinciyi birbirinden tamamen bağımsız yaptım. Üçüncü ve dördüncüyi de birbirinden tamamen bağımsız yaptım. Eğer olsaydı beşinciyi ve altıncıyı da birbirinden bağımsız yapacaktım.
+
+66
+00:15:09,708 --> 00:15:14,892
+Dolayısıyla aslında diversity'yi ne yapmış olacağım ben? Arttırmış olacağım. Hem de...
+
+67
+00:15:15,316 --> 00:15:37,176
+Neyi arttırarak, neyi sabit bırakarak? Tekil öğrenci başarısını sabit bırakarak. O zaman şimdi ensemblların başarısı neye bağlıydı? İki şeye bağlıydı. Bir tanesi tekil öğrenci başarısı, bir tanesi diversity. Tekil öğrenci sayısını şimdi x'in büyük ve küçük değerlerinde x'i arttırarak daha başarılı bir ensemble ya da x'i azaltarak daha başarılı bir ensemble elde edemezsiniz. Niye? Çünkü...
+
+68
+00:15:37,427 --> 00:15:54,348
+Genel mana diyorum. Çünkü bir tanesinden kazanırken ötekisinden ne yapıyorsunuz? Kaybediyorsunuz. Hep genel yapı bu şekilde. Fakat burada şöyle bir şey oluyor. Siz tekil öğrenci başarısını aynen bırakıyorsunuz. Yine hep ikişer tane seçiyorsunuz. Dolayısıyla tekil öğrenci başarısı aynı kalıyor.
+
+69
+00:15:55,668 --> 00:16:14,187
+Şurada bununla bunun arasındaki ilişkisizlikten dolayı bununla bunun arasında ve bununla bunun arasında ilişki var hala. Onda bir sıkıntı yok. Ama bununla bunun arasında ilişkisiz. Bununla bunun arasında ilişkisiz. Yani ilişkisi birbirinden ayrıklar. Ortak eleman içermiyorlar. Ortak eleman içermedikleri zaman kararları ne olacak? Farklılaşacak ve diversi arttırmış olacağız.
+
+70
+00:16:14,187 --> 00:16:22,987
+Dolayısıyla Teknik Üniversitesi başarısı aynen kalıp diversi arttırdığınız zaman Ensemble'ın da başarısı ne olacak arkadaşlar? Artacak. Tamam. Anlaşıldı mı mantık?
+
+71
+00:16:24,980 --> 00:16:35,060
+Burada d bölü 3 olsaydı ya da d, yani içiye bölmeseydi diyeyim kısaca. Nasıl yaklaşıyordu durumu? Yine aynı şekilde mi?
+
+72
+00:16:36,060 --> 00:16:39,460
+Tabii. Yani mesela sen burada d bölü 3'lü yaptığımızı düşünelim.
+
+73
+00:16:40,340 --> 00:17:06,440
+Böyle üçlü olsun. Burada yani dokuz tane özellik. Mesela burada şey yapacağız. Geri kalanları al derken şöyle bir şey yapabiliriz. Yani bir tanesini şöyle yaparız o zaman. Yani daha mantıklı olur. Yani üçerli üçerli seçeceğiz yine. Şimdi dokuz özellik içinden üç tanesini rastgele seç. Yapacağız.
+
+74
+00:17:07,827 --> 00:17:17,487
+Mesela burada bu gitti. 1 dedi, 4 dedi, 6 dedi. Şimdi geriye kalanları nasıl seçelim?
+
+75
+00:17:18,208 --> 00:17:21,647
+Yine 6'dan da 3 tanesini rastgele seçeriz.
+
+76
+00:17:21,647 --> 00:17:33,548
+Şimdi 1, 6, 3. Aynen öyle. 1, 6, 3'ün haricindekilerden 3 tanesini rastgele seçelim. Mesela 2, 7, 8'i seçtik. Ondan sonra da ne bileyim işte 3.
+
+77
+00:17:34,228 --> 00:17:57,387
+Beş, dokuzu seçeriz. Anlatabildim mi? Dolayısıyla burada en azından şunların kendi aralarındaki diversity'yi ne yapmış oluruz? Arttırmış oluruz. Bunların diğerleriyle olan diversity'inde bir değişiklik olmuyor bakın. Yani bunun mesela dördüncüyle diyelim arasında bir değişiklik olmuyor. Fakat bunlar kendi içlerinde farklılaştıkları için ne olacaklar? Daha başarılı bir hale gelecekler.
+
+78
+00:17:57,867 --> 00:18:01,288
+Hocam, beş yüz ellik olsaydı üç tanesini seç.
+
+79
+00:18:02,163 --> 00:18:02,963
+Bir daha söyle.
+
+80
+00:18:03,483 --> 00:18:07,284
+Beş özellik olsaydı üç tanesini seçseydik, nasıl yapardık?
+
+81
+00:18:09,324 --> 00:18:14,344
+Geri kalan iki tanesini koyabiliriz ya da yine beşin içerisinden ortakinde.
+
+82
+00:18:15,104 --> 00:18:19,104
+Yani orada bir şekilde bir ayarlama yapılabilir.
+
+83
+00:18:19,104 --> 00:18:23,244
+Yani hani beş tane özellik içerisinde üç tanesini rastgele bir şekilde seçtin.
+
+84
+00:18:23,764 --> 00:18:27,244
+Geri kalan iki tanesini illaki oraya koyarsın.
+
+85
+00:18:27,443 --> 00:18:39,163
+Son üçüncü eksik kalınıysa rastgele seçersin. Ama yine en azından iki tanesini önceki satırda olmayan iki tanesi olarak koyduğun için yine diversity'yi arttırmış olursun rastgele seçmeye göre. Anlatabildim mi?
+
+86
+00:18:39,983 --> 00:18:40,744
+Anladım hocam.
+
+87
+00:18:40,744 --> 00:18:42,063
+Tamam.
+
+88
+00:18:44,531 --> 00:19:02,511
+Peki bu yöntemin başarılı olacağı bariz gözüküyor. Fakat bu başarı ne kadar etkili bir şey olur. Daha doğrusu bir şeyle bu başarı azalır mı? Onu düşünelim.
+
+89
+00:19:02,511 --> 00:19:09,692
+Şimdi şöyle bir şey nasıl çizerim ben onu? Tablo yapalım.
+
+90
+00:19:11,955 --> 00:19:13,335
+Dörde dörklük olsun.
+
+91
+00:19:13,335 --> 00:19:14,576
+Tamam.
+
+92
+00:19:16,395 --> 00:19:18,335
+Dörde dört.
+
+93
+00:19:19,076 --> 00:19:19,335
+Birinciyle.
+
+94
+00:19:21,975 --> 00:19:23,655
+Tamam. Şunlara.
+
+95
+00:19:26,056 --> 00:19:27,335
+X'ler koyayım.
+
+96
+00:19:27,576 --> 00:19:28,556
+Şimdi pek.
+
+97
+00:19:33,140 --> 00:19:34,092
+Evet.
+
+98
+00:19:49,619 --> 00:20:09,199
+Diyelim ki bizim dört tane base örneğe var. Şurası için düşünün. Normalde bu dört tane base örneğe birinci ve ikincisi, bizi ilgilendiren şey aslında şuralar. Zaten simetrik bir şey olacak. Şurası bir de şurası değil mi?
+
+99
+00:20:09,907 --> 00:20:18,527
+Bu değerler. Bunlar aslında neyi gösteriyor? Her bir tekil öğrencinin, her bir tekil öğrencinin kararlarının benzerliğini gösteriyor. Bu matriz öyle bir matriz.
+
+100
+00:20:18,527 --> 00:20:26,927
+Yani karar benzerliği matrizi.
+
+101
+00:20:27,476 --> 00:20:52,956
+Yani Ensembl'ın Diversitesi aslında, şurada gördüğünüz şu sarı etiketlilerin, ki şuralar zaten birdir, herkesin kendisiyle kararları tamamen birebir aynıdır. Geri kalan burası simetriktir. Dolayısıyla onlara da bakmanın bir anlamı yok. Sadece buraya baksak yeterli. Yani birinciyle ikincinin, birinciyle üçüncünün, birinciyle dördüncünün, ikinciyle üçüncünün, ikinciyle dördüncünün, ikinciyle dördüncünün kararlarının benzerliğine bakmaktan bahsediyoruz.
+
+102
+00:20:53,587 --> 00:21:15,487
+Şimdi bu karar benzerliği matrisinde bizim odaklanacağımız yer şuradaki sarı olan kısım. Şimdi bu sarı olan kısmı düşünelim. Şimdi şurada yaptığımız işlem aslında neyi sağlıyor? Birinci ve ikincinin azalmasını sağlıyor.
+
+103
+00:21:17,203 --> 00:21:21,523
+Bir de üçüncü ile dördüncünün azalmasını sağlıyor değil mi?
+
+104
+00:21:23,763 --> 00:21:44,863
+Üçüncü ve dördüncü günü zaman. Diğerlerinde bir değişiklik yapmıyor. Çünkü şuralarda bir şey söyleyemezsiniz. Bununla bunun benzerliğini değiştirmeyecek. Çünkü bu da rastgele bir seçim, bu da rastgele bir seçim. Ondan kalanlar da rastgele olacaklar. Dolayısıyla bununla bunun arasındaki ilişkiyle bununla bunun arasındaki ilişki aynı olacak. Zaten bunun arasındaki ilişki rastgele seçim olduğu için bir değişiklik olmayacak.
+
+105
+00:21:45,491 --> 00:21:56,871
+Birin üçüncü ve dördüncüyle olan ilişkisinde biz herhangi bir değişiklik yapmadık. Sadece birin ikiyle yaptık. Bir de üçün dörtle yaptık. Yani şurada biz şu noktada ve şu noktada değişiklik yaptık.
+
+106
+00:22:12,884 --> 00:22:18,284
+Azalttık. Değil mi? Ben fikir miyiz buraya kadar? Birlikte miyiz?
+
+107
+00:22:23,412 --> 00:22:31,471
+Şimdi, 4 tekil öğrencimiz değil de 8 tane temel öğrencimiz olsaydı ne olurdu? Ya da 6 tane olsun.
+
+108
+00:22:47,859 --> 00:22:50,259
+Şimdi, şurada silelim.
+
+109
+00:22:56,243 --> 00:22:59,323
+Şimdi altı tane olsaydı nasıl bir şeyimiz olacaktı onu düşünelim.
+
+110
+00:23:00,263 --> 00:23:01,243
+Buralar yine...
+
+111
+00:23:21,460 --> 00:23:31,599
+Yendiren kısım yine bu sarılar. Yani rastgele seçim yaptığımızda bu sarı x'lerdeki değerlerin ortalaması bizim neyimiz olacak? Ensel anlamımızın diversity'si olacak.
+
+112
+00:23:32,940 --> 00:23:42,159
+6 değerin ikisini azalttık. Şimdi kaç tane değer var burada? Bakalım. 5, 4, 3, 2, 1, 5, 6, 4, 10 tane var burada. 10 değer değil mi? 10 değer var.
+
+113
+00:23:42,819 --> 00:23:48,220
+Peki, şimdi şunları da aslında neleri değiştirdiğimizi göstermek için onları sarıyla gösterelim.
+
+114
+00:23:49,395 --> 00:24:14,536
+Tamam. Şimdi burada on tane, yok pardon, kaç tane şeyimiz olacak bizim burada? Altı tane değil mi? Altı tekil öğrencimiz var. Altı tekil öğrenci için bu işi yaparsak nasıl bir şey olacak? Düşünelim. Mesela bununla bunu seçtik, geri kanları buraya koyduk, bununla bunu seçtik, geri kanları buraya koyduk, bununla bunu seçtik, geri kanları buraya koyduk şeklinde olacak. Dolayısıyla bir ile ikininkini ne yapmış olacağız? Azaltılmış olacağız.
+
+115
+00:24:15,188 --> 00:24:29,188
+Bir de beşinciyle altıncıyı azaltacağız.
+
+116
+00:24:34,003 --> 00:24:43,663
+Kaç tanesini azalttık? 1, 2, 6 değerin 1 ile 2'yi yaptık, 3 ile 4'ü yaptık, 5 ile 6'yı yaptık.
+
+117
+00:24:43,663 --> 00:24:47,943
+Yani yakın 10 tane değil bu ya. 20 tane değil mi?
+
+118
+00:24:47,943 --> 00:24:49,903
+5 çabuk, yakın.
+
+119
+00:24:51,503 --> 00:24:55,163
+9, 12, 13, 14, 15. Hiçbiri değil.
+
+120
+00:24:55,643 --> 00:24:56,843
+15, tamam.
+
+121
+00:24:57,783 --> 00:24:58,103
+Evet.
+
+122
+00:24:59,380 --> 00:25:01,640
+15 değeri 3'ünü azalttık değil mi?
+
+123
+00:25:05,556 --> 00:25:18,056
+Yani dört tane tekli örneğe için bakın altı derin ikisini azalttık. Buradaysa on beş tane derin üçünü azalttık. Yani sadece yüzde yirmisini azalttık. Burada yüzde otuz üçünü yapabilmiştik. Burada yüzde yirmisini azalttık.
+
+124
+00:25:18,056 --> 00:25:21,956
+Şimdi bu altı değil de mesela bu yüz tane olsa ne olur?
+
+125
+00:25:30,132 --> 00:25:36,232
+Ne kadarını azaltırız? Büyük bir kısmı mı, küçük bir kısmı mı? Çok çok küçük bir kısmı mı?
+
+126
+00:25:39,635 --> 00:25:41,036
+Çok çok küçük bir kısmı var.
+
+127
+00:25:41,332 --> 00:26:04,092
+Çok çok küçük bir kısmı. Dolayısıyla bu yöntem Ensemble Size'ı küçükken çok daha etkili bir yöntem. Ama Ensemble Size'ı arttıkça, böyle söyleyelim, etkisini ne yapacak? Oldukça yitirecek. Yani Diversite'yi arttırıyor ama Teknik Üniversitesi sayısı arttıkça bu çok daha fazla etkili olmuyor.
+
+128
+00:26:09,332 --> 00:26:26,832
+Yine etkileriniz olabilir ama yine şey değişmez, sonuç değişmez. Yani ensemble size büyüdükçe yine ne olacaktır? Bu başarıdaki artış azalacaktır. Öyle ifade edelim.
+
+129
+00:26:34,256 --> 00:26:55,496
+Şu ana kadar söylediğimiz şeylerle alakalı şöyle yorumlar yapabiliyoruz. Bu yöntem başarıyı arttırır. Başarıyı arttırmasının sebebi belli. Yani tekil öğrenci başarılarına dokunmadan diversity arttırıyor olmasıdır.
+
+130
+00:26:59,796 --> 00:27:21,496
+Ensemble Size da ters orantıdır. Yani Ensemble Size arttıkça, yani tekil öğrencileriniz arttıkça bu Diversitedeki artışın oranı azalıyor. Yani illaki yine artıyor ama çok çok yüksek değerlere eriştiğimizde artık çok küçük artışlar olacağı için Ensemble'ın ekürüsini çok fazla ne yapamayacak? Yükseltemeyecek.
+
+131
+00:27:21,496 --> 00:27:27,076
+Şimdi bunların hepsi tamamen burada yazdığımız, çizdiğimiz şeylerle alakalı. Değil mi?
+
+132
+00:27:27,604 --> 00:27:49,444
+Yani tamamen mantık kullandık burada hiçbir deneme falan yapmadık. Şimdi işin güzel tarımı şu. Bu tarz bir yaklaşım geliştirdiğinizde deneme yapmanız şart değil. Ama deneme yaparsanız en azından ne olmasını beklersiniz?
+
+133
+00:27:53,332 --> 00:28:05,312
+Elde ettiğiniz bulguları orada da gözlemlemeyi beklersiniz değil mi? Çünkü oldukça düz bir mantık kullandık. Çok da fazla bir varsayımımız da yok işin içerisinde.
+
+134
+00:28:05,779 --> 00:28:30,480
+Dolayısıyla deneyleri yapmadan bile böyle bir şeyin, yani şu ana kadar yaptığımız için teorik bir işti, öyle ifade edelim. Yani deneysel bir şey yapmadık, empirik bir şey yapmadık. Yani bir dataset alıp onun üzerinde herhangi bir işle random subspace'i uygulamadık ya da random subspace'i, semi-random subspace'i birbirine karşılaştırmadık. Empirik bir hareket, yani deneysel empirikten kastımız bu.
+
+135
+00:28:31,092 --> 00:28:44,472
+Fakat teorik bir şey yaptık ve bu teorik bir şeyden beklentimiz deneyle karşılanırsa bu ne ala bunda herhangi bir sıkıntı yok. Zaten beklentimiz o yönde olacaktır. Eğer ki deneyle karşılanmazsa buradaki sıkıntı o olabilir.
+
+136
+00:28:44,472 --> 00:28:53,196
+Tabii bu çok basit bir işlem olduğu için burada bu ihtimal oldukça düşük ki…
+
+137
+00:28:53,844 --> 00:29:08,244
+Deneylerinde yaptığımda herhangi bir sıkıntı oluşmamıştı. Teoride beklediğimiz şey neyse. Daha başarılı ensembler ama ensemble size büyüdükçe başarının farkı azalıyor.
+
+138
+00:29:08,692 --> 00:29:34,511
+Onlar ortaya çıkmıştı. Fakat tabii sizler de ileride teorik çalışmalar yaparsanız ümit ediyorum. Çünkü en değerli çalışmalar bir yandan onlar. İşin seyrini değiştiren, öyle söyleyeyim. Yani deneysel çalışmalar da mühendislik çalışmaları anlamında söylüyorum. Onlar da tabii ki çok çok önemlidir. Ama asıl işin seyrini değiştiren şeyler teorik çalışmalar.
+
+139
+00:29:35,923 --> 00:30:02,763
+Türkiye'de o noktada bir eksiklik, tek Türkiye'de demeyelim yani bütün dünyada aslında teorik manada çalışan insanların sayısı çok daha az oluyorlar. Deneysel çalışan insanlar daha fazla oluyor. Çünkü deneyi yapmak daha kolay. Öyle söyleyeyim. Teorik bir şeyler geliştirmeye göre. Ama eğer bu yönünüzü de geliştirmek isterseniz bu sizin için çok çok büyük bir avantaj olacaktır.
+
+140
+00:30:03,347 --> 00:30:23,087
+Tabii şöyle bir durum oluşabilir. Bir teoriyi geliştirdiniz. Teoriye göre bir şeylerin bir şekilde olması gerekiyor. Deneylere bakıyorsunuz. Deneylerde aynı şeyi göremiyorsunuz. Olabilecek bir şey midir? Veya olduysa bunun anlamı nedir? Neler olabilir? Neler olmuş olabilir?
+
+141
+00:30:29,395 --> 00:30:38,955
+Evet, teoriden de beklerimizi deneylerde öğrenmezsek.
+
+142
+00:30:39,855 --> 00:30:40,155
+Evet.
+
+143
+00:30:43,096 --> 00:30:45,056
+Deneyi yanlış yapmışızdır.
+
+144
+00:30:45,056 --> 00:30:55,455
+Evet, olabilir. Deneyi yanlış yapmış olabiliriz. Evet, bu mümkün.
+
+145
+00:30:55,988 --> 00:31:09,708
+Çünkü deneyleri çok sefer yanlış yapabilirsiniz. O durumda ne yapacaksınız? Deneyi tekrarlayacaksınız. Tekrarlıyorsunuz, tekrarlıyorsunuz. Hala aynı şeyleri, beklediğiniz şeyleri göremiyorsunuz. Peki bu durumda ne olacak? Devam edelim.
+
+146
+00:31:12,208 --> 00:31:14,107
+Teoriyi yanlış kurmuş olabilir miyiz?
+
+147
+00:31:15,988 --> 00:31:22,927
+Olabilir. Teoriyi yanlış kurmuş olabilirsiniz. Yani teoride bir şeyleri yanlış düşünmüşsünüzdür. Teoriniz yanlıştır değil mi?
+
+148
+00:31:27,155 --> 00:31:28,115
+Evet, başka?
+
+149
+00:31:28,915 --> 00:31:34,415
+O veri setiyle çok da uyumlu olmayabilir bizim kurduğumuz teori.
+
+150
+00:31:38,395 --> 00:31:41,315
+Kurduğun teoriyle veri setin uyumlu olup olmaması ne demek?
+
+151
+00:31:43,335 --> 00:31:54,195
+Mesela geçen şeyde de yapmıştık ya hocam, mesela Ada Boosting veya Begging algoritmalarını karşılaştırdığımızda veri setlerine göre başarı durumları artık azalabiliyordu.
+
+152
+00:31:54,932 --> 00:31:58,251
+Bununla alakalı bir şey olmuş olabilir mi?
+
+153
+00:31:58,251 --> 00:32:07,251
+Biraz yaklaştın ama tam şey değil. Oradaki algoritmaları ne olarak ben size söyledim? Bütün algoritmaları aslında birer...
+
+154
+00:32:09,251 --> 00:32:15,052
+Neydi? Enception. Hayır, Enception. Bir varsayımdır. Bütün algoritmalar.
+
+155
+00:32:15,471 --> 00:32:15,772
+Evet.
+
+156
+00:32:22,612 --> 00:32:48,092
+İçin gerçekte olmayan fakat bizim varsaydığımız ek şeyler. Tamam, varsayımdan kasıt bu. Varsayımsız bir şey yapmak pek mümkün değil. O bariz. Ama varsayımlarınızla, yani teorinizin içerisinde kullandığınız varsayımlarla sizin deneyinizde kullandığınız veri hükümelerinin artık neyse, onların yapısı birbirini tutmuyor olabilir.
+
+157
+00:32:49,107 --> 00:33:08,447
+Tamam. Yani ya da nasıl ifade edelim? Yani siz çok büyük varsayımlar yapmışsınız. Varsayımlar da kısıt demek aslında bir şekilde. Yani kısıtlıyorsunuz, diyorsunuz ki şöyle şöyledir. Yani başka türlü değildir. Şöyle şöyledir diyorsunuz.
+
+158
+00:33:08,884 --> 00:33:26,884
+Mesela teorilerde şöyle şeyler olurlar. Şu varsayım altında şu şöyledir falan gibisinden. Şimdi önümüzdeki ders teorik bir dersimiz olacak. Orada biraz daha onların örneklerini görebiliriz belki. Teorilerin içerisinde hep varsayımlar yer alır. Bu varsayımlar…
+
+159
+00:33:27,375 --> 00:33:42,135
+Bazen çok büyük olurlar. Yani çok büyük olmasının anlamı şu. Öyle datasetler, mesela şöyle bir şey düşün. X algoritması, Y algoritmasından daha iyidir. Ondan sonra bir şeyler sığılıyorsunuz siz. Şurası şöyleyse, burası böyleyse, burası böyleyse.
+
+160
+00:33:42,996 --> 00:33:57,636
+Dolayısıyla sizin o varsayımlarınız sizin elinizdeki deneme yaptığınız şeyleri tutmuyor olabilir. Bu tabii teorinin yanlışlığı değildir. Teorinin çok kısıtlı olmasıdır ama elinizdeki verinin o teorideki varsayımlara uymayıştır.
+
+161
+00:33:57,636 --> 00:34:06,236
+Yani varsayımlarınız uşmuyor.
+
+162
+00:34:08,916 --> 00:34:19,596
+Olabilir. Ama zaten uyuşmuyor. Varsayımlarımız uyuşmuyor. Bunu keşfetmek de iştir. Orası daha ayrı bir mevzu.
+
+163
+00:34:19,596 --> 00:34:35,596
+Yani mesela siz teoriyi yazarken o varsayımları direkt söylemeden varsaymış bile olabilirsiniz. Yani yazmadan bile varsaymış olabilirsiniz. Öyle şeyler de vardır bilim tarihinde çok fazla. O varsayımları ortaya çıkartıp...
+
+164
+00:34:36,079 --> 00:34:55,639
+Onlardan kurtulmaya çalışmak. Bu durumda teoriyi nasıl geliştirebilirsiniz? Buraya gelmeye çalışıyorum. Bir tane teorik bir şey yaptınız. Bunun sonraki bir üst versiyonunu daha iyisini, daha güzel bir alt tepeyi nasıl tanımlayabilirsiniz? Varsayımlarınızı ne yapabilirsiniz? Değiştirebilirsiniz. Varsayımlarınızı...
+
+165
+00:34:57,427 --> 00:35:12,028
+Genelleştirebilirseniz, eğer daha genel hale getirebilirseniz, yani bazı kısıtları kaldırabilirsiniz, o zaman bunun anlamı ne demektir? Kısıtları kaldırdığınız zaman teoriniz daha fazla duruma uygulanabilir anlamına gelir.
+
+166
+00:35:12,028 --> 00:35:21,207
+Tamam mı? Varsayımları mümkün olduğu kadar genişletmek aslında teorinin genel olarak uygulanabilirdiğini arttırmak demek.
+
+167
+00:35:21,695 --> 00:35:26,515
+Dolayısıyla varsayımlarınızı ne yapabilirsiniz? Genelleştirebilirseniz bu iyi bir iş.
+
+168
+00:35:28,036 --> 00:35:29,895
+Ya da tabii...
+
+169
+00:35:30,324 --> 00:35:57,704
+Hangi durumlarda sizin algoritmanız daha iyi çalışıyor ya da işte yönteminiz daha iyi çalışıyor? Bunun tarifini çok açık vermek isteyebilirsiniz. Bu durumlarda da varsayımlarınızı ne yapabilirsiniz? Daraltabilirsiniz. Derseniz ki bu algoritmayı şu durumda, şu durumda, şu durumda kullanırsanız eğer şu algoritmalardan daha başarılı oluyor şeklinde bir şey söyleyebilirsiniz. Yani varsayımlarınızı daraltmak da anlamlı bir şey olabilir.
+
+170
+00:35:58,324 --> 00:36:03,180
+Bu ne gibi bir durumda mantıklı? Yani diyelim ki...
+
+171
+00:36:05,940 --> 00:36:33,579
+Bu aslında sizin o algoritmayı kullanacak olan kişilere bir şey gibi, bir manuel gibi bir hizmet görüyor aslında. Yani bu algoritma şöyle şöyle şöyle durumlarda iyi çalışır gibi bir şey söylemiş oluyorsunuz. Dolayısıyla varsayımları daraltmak ya da genişletmek yapabileceğiniz önemli katkılar olabilirler. Ama tabii ki daha iyisi, öyle düşünüyorum. Hani daha geniş bir şeyler.
+
+172
+00:36:33,940 --> 00:36:34,880
+Evalu edilmek tabii ki.
+
+173
+00:36:36,079 --> 00:36:38,180
+Şimdi konuda epey konuştum herhalde.
+
+174
+00:36:39,500 --> 00:36:41,300
+Yine belki ileride konuşuruz.
+
+175
+00:36:42,020 --> 00:36:45,960
+Şimdi bu, dursun, bununla bir işimiz yok.
+
+176
+00:36:45,960 --> 00:36:49,539
+Bunu yazdığım şeyde bir yere dursun şimdilik.
+
+177
+00:36:56,724 --> 00:36:57,423
+Testim.
+
+178
+00:37:01,940 --> 00:37:14,260
+Peki, şimdi gelelim bugünkü konularımıza. Ha, yöntemlerde kalmıştık. Oradan devam edeceğiz.
+
+179
+00:37:17,000 --> 00:37:27,680
+Hocam, bu arada bir şey sorabilir miyim? Bu projelerle ilgili hiç konuşmadık ama bir ay kalmış.
+
+180
+00:37:28,275 --> 00:37:34,455
+Ben anca yetiştirdim diye düşünüyorum da. Acaba konu belirlense mi? Nasıl yapacağız?
+
+181
+00:37:36,975 --> 00:37:46,455
+Şimdi şöyle bir şey, bir saniye. Şu şeye bir bakayım da, plana bir bakayım da. Sizler de görüyorsunuz herhalde şimdi planı.
+
+182
+00:37:46,455 --> 00:37:52,015
+Şimdi ben proje konularını tanıtımına dağıtım. Şimdi 18 Aralık diye vermişim bunu.
+
+183
+00:37:52,447 --> 00:38:16,887
+Yani 18 Aralık'ta başlayabileceksiniz projelerinize. O anlama geliyor bu. Önümüzdeki hafta olmuyor. Önümüzdeki hafta 4 Aralık. Şimdi önümüzdeki hafta 4 Aralık. Ondan sonraki hafta proje konularının tanıtımı var. Ondan sonraki hafta dağıtım var zaten. Yani size en azından şurada yaparsak bile ki belki finale de bunu taşıma şansımız olabilir.
+
+184
+00:38:17,940 --> 00:38:20,199
+Yani vaktiniz kalıyor.
+
+185
+00:38:21,380 --> 00:38:23,539
+Öyle üç haftalık bir proje olacak.
+
+186
+00:38:24,519 --> 00:38:28,579
+Zaten ödeviniz var yine. Üçüncü ödeviniz var gelen.
+
+187
+00:38:29,480 --> 00:38:30,260
+Anladım hocam.
+
+188
+00:38:30,260 --> 00:38:30,400
+Tamam.
+
+189
+00:38:33,140 --> 00:38:35,760
+Daha geriye çekmenin bir anlamı yok çok fazla.
+
+190
+00:38:38,619 --> 00:38:42,380
+Şimdi açayım bir saniye.
+
+191
+00:39:00,179 --> 00:39:01,239
+Buradan devam edelim.
+
+192
+00:39:01,899 --> 00:39:08,119
+Şimdi en son bunları geçtik.
+
+193
+00:39:13,076 --> 00:39:17,576
+Buna bakmamıştık değil mi?
+
+194
+00:39:17,735 --> 00:39:20,235
+Hatta zaten kodlara bakmış mıyorduk buna?
+
+195
+00:39:23,235 --> 00:39:23,956
+Arkadaşlar.
+
+196
+00:39:28,563 --> 00:39:29,503
+Sesim geliyor mu?
+
+197
+00:39:32,463 --> 00:39:33,603
+Sesiniz geliyor hocam.
+
+198
+00:39:34,764 --> 00:39:36,543
+Tamam. Ama cevabınız gelmiyor.
+
+199
+00:39:40,916 --> 00:39:43,036
+Galiba hatırlayamadık, ondan cevap yapıyoruz.
+
+200
+00:39:44,856 --> 00:39:52,296
+Hocam acaba işledik de biz mi hatırlamıyoruz diye bir şey yaptık da ben hatırlamıyorum hiç.
+
+201
+00:39:53,576 --> 00:39:54,216
+Allah Allah.
+
+202
+00:39:57,655 --> 00:39:58,216
+Başka?
+
+203
+00:40:00,576 --> 00:40:07,315
+Yok. Peki neyse. Buradan devam edelim o zaman. Ben niye işledik diye hatırlıyorum o zaman. Allah Allah.
+
+204
+00:40:10,099 --> 00:40:18,119
+Şimdi, bunu işledik biz ya. Nasıl işlemedik ya? Yani birkaç sene öncesini hatırlıyor olamam ya.
+
+205
+00:40:18,719 --> 00:40:22,960
+Öyle bir şey yapıyorduk ama, iki aile sınıfla bölüyorduk gibisinden.
+
+206
+00:40:23,880 --> 00:40:28,960
+Evet, işte iki sınıflı problemleri, yani iki sınıflı...
+
+207
+00:40:29,844 --> 00:40:38,224
+Problemleri çözebilen sınıflandırıcıları, işte L sınıflı problemleri çözebilen hale getirmek için kullanılan yöntemlerdi.
+
+208
+00:40:39,123 --> 00:40:41,143
+SVM'den falan bahsetmiştik.
+
+209
+00:40:43,003 --> 00:40:46,023
+Evet hocam, işlediniz. Ben de anımsadım.
+
+210
+00:40:48,324 --> 00:40:49,523
+Başka anımsayan oldu mu?
+
+211
+00:40:52,523 --> 00:40:54,155
+Yani hani...
+
+212
+00:40:57,427 --> 00:40:59,627
+Son konuşanın ne dediğini anlayamadım.
+
+213
+00:41:00,907 --> 00:41:01,527
+İşledik.
+
+214
+00:41:02,687 --> 00:41:04,827
+İşledik. Tamam, peki.
+
+215
+00:41:10,900 --> 00:41:29,740
+O zaman yerel modellerin birleştirmesinden devam ediyoruz. Peki, şimdi daha önce farklı eğitim küpeleri oluşturmak için çeşitli yöntemler denilir. Yani farklı özellikleri kullanmak, farklı örnekleri kullanmak gibisinden ya da farklı sınıfları kullanmak gibisinden yöntemler denilir.
+
+216
+00:41:34,420 --> 00:41:58,279
+Yerel modellerin birleştirilmesi. Yani yerel modellerden kastımız şu, lokal modeller. Buradan da anlayacağımız şey şu, veri uzayını belli parçalara ayıracağız. Yani işte şu, mesela ne bileyim bir sınıfı düşünün, yani sınıfı diyebilirsiniz. Bulunduğunuz odayı düşünün. Odanın içerisindeki noktalar olduğunu düşünün. Dolayısıyla bu üç boyutlu bir uzay olacaktır.
+
+217
+00:41:58,643 --> 00:42:13,003
+Diyeceksiniz ki mesela şu köşeyi şu tekil öğrenci öğrensin, şu köşeyi şu tekil öğrenci öğrensin, şurayı şu tekil öğrenci öğrensin. Yani belli bölgeler oluşturmaktan bahsediyoruz ve bu belli bölgelerin her birine de bir tane tekil öğrenci atıyoruz.
+
+218
+00:42:13,003 --> 00:42:22,743
+Yani senin uzmanlığın şurası diyeceğiz. Yani sen datanın, uzayın şu alanında iyisin. Sen orada cevap ver ve her biri bize ne yapacak?
+
+219
+00:42:24,500 --> 00:42:41,380
+Bir sonuç dönecek. Ama tabii ne olması gerekir burada? Nasıl bir işte yapmanız gerekecek aynı zamanda? Böyle bir şey eğittiniz diyelim ki temel öğrenciler eğittiniz. Mesela bir test örneği geldi. O test örneğini ne yapacaksınız?
+
+220
+00:42:45,380 --> 00:42:46,100
+Efendim?
+
+221
+00:42:47,320 --> 00:42:48,680
+Ortalama alacaksınız.
+
+222
+00:42:51,219 --> 00:42:59,119
+Kararların ortalaması alacağız da, kararların ortalaması alırken kimin kararına daha fazla önem vereceğimiz farklı olabilir mi?
+
+223
+00:43:01,119 --> 00:43:02,659
+Ben akaratif düşünüyorum hocam.
+
+224
+00:43:02,759 --> 00:43:04,559
+Belki şey, en fazla araya.
+
+225
+00:43:04,959 --> 00:43:06,999
+Ama şöyle bir şey düşün [öğrenci].
+
+226
+00:43:08,239 --> 00:43:12,699
+Yani şu anda slide'ı benim mağsutu görüyorsunuz değil mi?
+
+227
+00:43:13,439 --> 00:43:13,939
+Evet, evet.
+
+228
+00:43:14,739 --> 00:43:18,279
+Mesela hani iki boyutlu bir uzay olduğunu düşün bu ekranın, tamam mı?
+
+229
+00:43:18,675 --> 00:43:43,195
+Mesela şu bölge için bir sınıflandırıcın var senin. Bu bölgeyi çok iyi yapıyor. Başka bir tanesi var. Mesela bu orta kısımları çok iyi yapıyor. Bir tanesi var. Bu sağ tarafı çok iyi yapıyor gibi gibi. Bir tane örnek geldi. Mesela diyelim ki bu örnek buradan geldi. Şu bölgeden geldi. Bu bölgeden gelen örnek için bu bölgenin uzmanı olan tekil öğrenicinin kararı daha iyi olması gerekmez mi? Daha etkili olması gerekmez mi?
+
+230
+00:43:43,572 --> 00:43:47,252
+Demokrasi usulü yaparsak iyi bir hareket olur mu?
+
+231
+00:43:47,732 --> 00:43:50,172
+İyi yapmamız. Şimdi düşündüm doğru diye sanırım.
+
+232
+00:43:51,452 --> 00:43:54,812
+Olmaz değil mi? Demokrasi burada çok manalı bir hareket olmaz.
+
+233
+00:43:54,812 --> 00:44:02,892
+Çünkü zaten burayı öğrenen, bu bölgeyi öğrenenin buradaki bir örnek için kararının çok fazla bir anlamı olmamalı.
+
+234
+00:44:03,352 --> 00:44:03,612
+Değil mi?
+
+235
+00:44:04,192 --> 00:44:07,332
+Bir kodum test verimli.
+
+236
+00:44:08,179 --> 00:44:17,619
+O bölgeden geldiğini biliyorsak neden diğer modelleri veriyoruz? Sadece o bölgede ekspert olan modelleri vermek daha iyi olmaz.
+
+237
+00:44:19,019 --> 00:44:23,419
+Olur, tabii ki olur. Zaten buradaki anlatılan şey de o.
+
+238
+00:44:35,956 --> 00:45:00,956
+Şimdi aslında buradaki bir gating fonksiyonu var. Bu gating fonksiyonundan kastımız W'ları üretmesi. W'lardan kastımız da her bir X örneğini, yani bir X test örneğinin elimizdeki bu uzmanlar var ya, işte ekspertler dediğimiz, bu uzmanların kararlarının o X için ne olması gerektiğini gösteriyor.
+
+239
+00:45:01,427 --> 00:45:29,248
+Yani şöyle bir şey düşünelim. Bir uzman, yani bir tane test örneği, bir uzmanın alanına girebilir sadece ve belki biz şunu da isteyebiliriz. O uzmanın alanına girsin ama ona yakın olan diğer uzmanların kararların da bir etkisi olsun. Yani mesela işte şu noktada bir şeyimiz var. Burada bir tane uzmanımızın olduğunu düşünelim. Burada bir uzman var, burada bir uzman var. Bir de buralarda uzmanlar var. Bu bölgelerde uzmanlar var. Tamam mı?
+
+240
+00:45:29,811 --> 00:45:47,431
+Bu durumda aslında buradaki W'lar bizim ağırlıklarımızı gösteriyor. Bu ağırlıklardan kastımız ne? Her bir uzmanın kararına vereceğimiz ağırlığı gösteriyor. Eğer buradaki W birden L'ye kadar bunların hepsi bir bölü L olursa bu zaten demokrasi anlamına gelir.
+
+241
+00:45:53,396 --> 00:45:59,076
+Her bir uzmanımızın kararının ne kadar etkisi olacağını göstermek.
+
+242
+00:45:59,295 --> 00:46:22,675
+Yani elinizdeki bölgeler kesişmiyor değil de kesişiyor olabilirler. İçlerinde bir şekilde birbirleriyle örtüşüyor olabilir örnekleriniz. Pardon bölgeleriniz. Dolayısıyla bu bölgeleri tanımlamak böyle birbirinden tamamen hani burası tam kesin şu bölgedir onun bir nokta yanı hemen şu bölgedir demek yerine biraz daha sumut geçişler ve birbirine kesişime izin vermek de mantıklı bir hareket olabilir.
+
+243
+00:46:27,295 --> 00:46:40,875
+Birkaç tanesinin söylediğine bakmak gibisinden bir şeyler yapılabilir. Ama eğer ki herhangi bir anda sadece tek bir W, 1, diğerlerinin hepsi 0 oluyorsa zaten bunun anlamı ne demektir? Herhangi bir anda tek bir şey olacak.
+
+244
+00:46:42,643 --> 00:46:59,623
+Yerel uzmanın dediğine uyulacak. O zaman zaten ilk önce o hangi uzmanın uyuması gerektiğini bulursun ve ondan sonra onun kararını kullanırsın. Yani ikisi dediğin gibi buradaki bütün L tane klasifier ya da regüster vermenin hiçbir anlamı kalmaz.
+
+245
+00:46:59,623 --> 00:47:07,744
+Eğer bölgelerde kesişme olmasaydı, GAT'in evlenmesi olur muydu?
+
+246
+00:47:09,811 --> 00:47:28,092
+Yine olabilir. Bir test örneğinin sadece onun içindeki yerelle değil de o bölgeye yakın diğer öğrenicilerin kararlarının da etkisi olmasını isteyebilirdik. Çok uzak olanlarınkini istemeyiz ama yakın olanlarınkini isteyebilirdik.
+
+247
+00:47:31,123 --> 00:47:37,743
+Yani bu birazcık şuna benziyor, öyle düşün. One-Niris-Niris-Niris-Algortmasını biliyorsun, yani bir en yakın komşu.
+
+248
+00:47:38,443 --> 00:47:38,703
+Evet.
+
+249
+00:47:39,804 --> 00:47:55,083
+Bir en yakın komşuyu kullanmak, mesela buradaki şey denk geliyor birazcık. Sadece bir tane W, bir diğerlerinin hepsi sıfır. Ama mesela en yakın üç komşuyu kullanırsan, o ne demek olur?
+
+250
+00:47:56,851 --> 00:48:05,211
+Daha veriseti olacak. Farklı hükümelerden karşılaştırıyorsunuz.
+
+251
+00:48:06,592 --> 00:48:22,912
+Yani ona en yakın tek bir tane, buradaki en yakınlığı uzmanın seçimi gibi düşün. Öyle de varsayabilirsin. Tek bir tane uzmana göre değil de mesela üç tane uzmana göre karar vermek gibisinden düşünebilirsin. En yakın üç komşu algoritmasını.
+
+252
+00:48:24,244 --> 00:48:29,244
+Yani mesela en yakın bir komşu algoritmasını kabaca Verona'yı...
+
+253
+00:48:29,856 --> 00:48:57,856
+Bölgeleri vardır. Verona'yı bölgelerini çizdirirseniz, mesela One Nearest algoritması için, bu durumda aslında tam bir mixture of experts gibi davranır. Yani siz bir örnek seçersiniz, o örnek bu Verona'yı regionlardan hangisinin içerisine giriyorsa oranın kararı ki orada bulunan eğitim örneğinin kararını size dönüş yapar. Ama eğer ki en yakın üç komşu algoritmasını kullanırsanız,
+
+254
+00:48:57,856 --> 00:49:17,156
+O noktaya en yakın üç tane uzmanın ya da en yakın komşar kurutmasının eğitim örneklerinin kararlarını kullanırsınız. Yani illa kesişiyorlar ya da kesişmiyorlar. O yüzden bir tane kullanırım, üç tane kullanırım diye bir şart yok.
+
+255
+00:49:26,132 --> 00:49:45,891
+Peki, şimdi bu yöntem kararların birleştirilmesinin linear yapıldığını gösteriyor değil mi? Yani linear'den kastım şey, W'ların toplamı bir mesela burada.
+
+256
+00:49:46,483 --> 00:50:08,804
+Yani birden L'ye kadar herhangi bir örnek geldiğinde her birinin dediğine bakıyoruz. Bir de o diyenin ağırlığına bakıyoruz. Onları toplaya toplaya ilerliyoruz. Dolayısıyla bu W'ların toplamları bir tane olasılık bir toplamları, bir olan bir olasılığı gösteriyorlar.
+
+257
+00:50:14,867 --> 00:50:26,268
+D1, D2, işte DL tane karar geldiğinde sonuç kararı açıklamak için yani şu L tane sayı var elinizde öyle düşünün.
+
+258
+00:50:26,268 --> 00:50:36,807
+Tabii bunlar farklı şekillerde de ifade edebilirler. Yani her birinde tek bir tane sayı yani sınıf A sınıfı B sınıfı falan diye de bu olabilir ya da şöyle de olabilir.
+
+259
+00:50:37,268 --> 00:50:58,668
+A sınıfında olasılığı şu kadar, B sınıfında olasılığı şu kadar gibisinden şeyleri de söylüyor olabilir size bu değerler. Fakat olay yine en nihayetinde şuna denk düşüyor. Şuradaki uzaydan, yani burada L boyutlu var, sayılar biraz sayı olduğunu varsayalım bunların. L boyutlu uzaydan bu Y'ye bizim ne yapmamız gerekiyor? Tahmin etmemiz gerekiyor. Ve bunun için burada böyle bir şey kullanılmış.
+
+260
+00:50:59,315 --> 00:51:25,675
+Yaklaşım kullanılmış. Yani bunların kararlarını ağırlıklanır. Weighted voting diye ifade ettiğimiz yaklaşım kullanılmış. Şimdi bunu birazcık genelleştireceğiz. Genelleştirmek demek şu. Öğrencilerin çıktılarının yeni bir veri kümesi olarak görüldüğü yöntem. Bu ne demek? Şimdi siz X'ten yani yeni bir test örneği geldi. Bu test örneğini D'lerinize verdiniz. Tekili öğrencilerinize verdiniz. Bunların her biri birer bir şeyler ürettiler.
+
+261
+00:51:26,420 --> 00:51:42,800
+Bunları alıp bunlardan şu y'ye geçişi öğrenmek için yeni bir fonksiyon bulacağız. Yeni bir fonksiyon bulacağız derken yeni bir mapping bulacağız. Yeni bir mappingden de kastımız ne demek aslında? Yeni bir veri kümesi oluşturacağız.
+
+262
+00:51:49,172 --> 00:52:07,731
+Örneklerimizi sınıflandırmaya öğreniyoruz. İkinci aşamada ise tekil öğrencilerin kararlarını nasıl birleştireceğimizi öğreniyoruz. Bunun kendisi de aynen buradaki gibi bir problemdir. Buradan mesela siz Random Forest kullanabilirsiniz.
+
+263
+00:52:08,467 --> 00:52:29,787
+Ama Random Forest'un sonuçlarını birleştirmek için mesela yine başka bir Random Forest kullanabilirsiniz. Yani aynı algoritma değil, aynı input ve outputlara sahip değiller. Ama yapısal olarak aynı şey. Yapısaldan kastım ne? Yine bir matrisimiz var. Satırlarında, örnekler, sütunlarında özellikler olan.
+
+264
+00:52:36,467 --> 00:52:50,587
+Ne olacak? Outputları nasıl birleştireceğim? Yani Ensemble kararını tekil öğrencilerin kararlarından nasıl üreteceğimi öğrenmek olan bir problem.
+
+265
+00:52:50,587 --> 00:53:03,547
+Şimdi bunun için, bu stakingin yapısı için birkaç tane yaklaşım var. Yani şuradaki D'lerin çıkışının ne tür olacağıyla alakalı. Öyle söyleyeyim.
+
+266
+00:53:03,936 --> 00:53:17,256
+Şimdi orijinal veri kümeniz şöyle bir şeydir. Yani ettörü birlikleriniz vardır, özellikleriniz vardır her bir satırda. Buradaki her bir satır bir örneği gösteriyor. En tane örneğiniz var. Bir de sınıfları var bunların. Orijinal eğitim kümesi bu zaten.
+
+267
+00:53:18,396 --> 00:53:30,436
+Şimdi bakın meta training set diyor. Yani üst düzey training kümesini oluşturmaktan bahsediyor. Şimdi classifier biriniz var. Mesela siz elinizdeki orijinal veri kümesiyle gittiniz.
+
+268
+00:53:31,795 --> 00:53:55,195
+Burada kaç tane var? En tane, büyük en. Tabii buradaki küçük en tane örnek. Büyük en tane klasifier eğittiğinizde ve bunları test ettiniz. Şimdi şöyle bir şey olacak bakın. Her bir klasifier'ınız, yani şuradaki her bir D'iniz, elinizdeki yeni gelen bir örneğin her bir sınıfa ait olma olasılıklarını verir.
+
+269
+00:53:59,168 --> 00:54:06,168
+P1'ler klasifierleri görebiliyoruz.
+
+270
+00:54:06,168 --> 00:54:11,168
+Ekran büyütebilir misiniz?
+
+271
+00:54:15,168 --> 00:54:17,168
+Daha iyi mi şimdi?
+
+272
+00:54:26,452 --> 00:54:52,672
+Şimdi şuradaki her birisi aslında her bir örnek için Classifier 1'in her bir sınıfa ait olma olasılıktır. Yani şuradaki şu üç tanesini toplandığınızda bu bir ediyor. Şurası ne? Classifier 2'nin şunları. İşte böyle gidiyor bu. Classifier büyük n'in sonuçları bunlar. Peki output'umuz ne? Şimdi yeni bir verik ücretiyle bahsederim bakın şu anda. Output'umuz ne? Şuradaki şeyle aynı. CLA ile aynı. Bakın.
+
+273
+00:54:53,300 --> 00:55:09,260
+CL'yle aynı. Bu CL'yle aynısını da yapabilirsiniz. A sınıfından mı değil mi diye üç tane problem de tanımlayabilirsiniz. Yani çok çok önemli değil orası. Ama bunun yeni bir veri kümesi olduğunu görmeniz önemli burada. Yeni bir veri kümesi nasıl? Kaç tane örneği var bu yeni veri kümesinin?
+
+274
+00:55:09,940 --> 00:55:27,920
+Yine orijinal eğitim hükümesiyle aynı sayıda örneği var. Fakat özellik sayısı, bunun bilmiyoruz. Yani bu mesela her biri yüz boyutta olabilir. Bilmiyorum, on tane de olabilir, iki tane de olabilir. Ama bunun yenisinin özellik sayısı büyük en çarpı sınıf sayısı kadar.
+
+275
+00:55:28,788 --> 00:55:53,148
+Neden çünkü bu? Her birinin her bir sınıfa ait olmalısılıklarını verdiği için. Yani üç tane sınıf varsa üç tane olacak burada her bir klasifier için. Dolayısıyla sınıf sayısı çarpı, klasifier sayısı tane özelliği olan, yine orijinal veri kümesiyle aynı büyüklükte olan bir örnek sayısına sahip bir veri kümesinden bahsediyoruz. Bu meta training set diye geçiyor. Yani training set buydu. Biz buradan böyle bir şey eğittik.
+
+276
+00:55:53,588 --> 00:56:08,688
+Sonra bunu dediğim gibi siz isterseniz işte sınıf A mıdır değil midir diye çözün. İsterseniz orijinal veri kümelerini yani şunları verip bunları onun output olarak verin. Hiç fark etmez. Bunların hepsi yine benzer şekillerde gerçekleştirilecek şeyler.
+
+277
+00:56:20,692 --> 00:56:25,251
+Burada bir tanesinin örneğini vermiş. Her bir satırın toplamının biri olduğunu göstermek için.
+
+278
+00:56:28,371 --> 00:56:29,963
+Başka burada...
+
+279
+00:56:31,572 --> 00:56:56,371
+Bu da yine ona benzeyen bir şey. Her birinin A sınıfına ait olma olasılıklarını alıp A sınıfından mı değil mi diye tahmin etmek için bir tane klasifier kuruyor. Yine aynı şekilde aynı sınıf. Şuradaki A'ların B yazarak başka bir şey yapacak, sonra onları birleştirecek vs. Ama fikir dediğim gibi orijinal ver hükümesinden yeni bir tane eğitim hükümesi üretmek. Ama bunun amacı şey değil yani gelen bir X'e sınıflandırmak değil.
+
+280
+00:56:56,916 --> 00:57:10,936
+Temel öğrenicilerin, tekil öğrenicilerin kararlarını nasıl birleştireceğimizi öğrenmek. Ve dolayısıyla yine bunun kendisi için bile bir ensembl yöntemi kullanabilirsiniz. Bu da sonuçta ene-tağlık bir hükümesi.
+
+281
+00:57:12,516 --> 00:57:20,155
+Tabii onun da sonuçları birleştirmek için başka bir ensembl kullanabilirsiniz. Böyle sonsuza kadar rekörsif olarak giden bir yapı kurulabilir.
+
+282
+00:57:21,300 --> 00:57:37,440
+Öyle bir yapı kurmamı kimseye bir anlamı olmaz herhalde. Peki, şimdi birkaç tane soru var burada. Onları kızılacağı cevaplayalım. Belki konuşmuşuzdur yine. Eğitim dasını bölgeye bölüp kollektif arama uygularsak temel öğrenci kurarlarını demokrasiye birleştirmek mantıklı olur mu? Demin zaten buna cevap verdik.
+
+283
+00:57:38,940 --> 00:57:45,420
+Boosting, begging, random subspace, random forest, rotation forest hangileri parallelleştirilebilir arkadaşlar? Sorumuz bu.
+
+284
+00:57:50,291 --> 00:57:56,872
+Boosting olmaz. Boosting, paralleştirme.
+
+285
+00:57:56,872 --> 00:58:01,372
+Tamam. Boosting, paralleştirme. Peki. Boosting olmaz dedi.
+
+286
+00:58:03,211 --> 00:58:08,872
+Begging olur. Nasıl begging olacak? Ne yapacaksın begging'i? Nasıl paralleştireceksin?
+
+287
+00:58:09,972 --> 00:58:16,711
+Zaten farklı kararlar verildi sonra oynamak.
+
+288
+00:58:16,711 --> 00:58:17,711
+Evet.
+
+289
+00:58:18,420 --> 00:58:25,420
+Evet, bu modeliyle kullanılan bir süreçte.
+
+290
+00:58:26,547 --> 00:58:34,507
+Dolayısıyla tekil öğrencilerin her biri birbirinden bağımsız aynı eş zamanlı farklı makinelerde ya da aynı makinelerde farklı threadlerinde eğitilebilir değil mi?
+
+291
+00:58:34,607 --> 00:58:35,387
+Tekil öğrencileri.
+
+292
+00:58:36,527 --> 00:58:41,447
+Ve bu söylediğimiz şey aslında buradaki diğer dördü içinde yani diğer üçü içinde geçerli.
+
+293
+00:58:41,947 --> 00:58:49,067
+Yani random subspace, random force ve rotation force hepsinin tekil öğrencileri tamamen paralel olarak eğitilebilirler.
+
+294
+00:58:49,067 --> 00:58:51,167
+Bu singing eğitilemez. Niye eğitilemez?
+
+295
+00:58:53,940 --> 00:59:09,840
+Zaten her bir öğrenicinin iyileştirilmesi için meta model olarak. Mesela bir modeli eğitiniz, o modeli yanlış düzeltmek için tekrar bakıyor.
+
+296
+00:59:10,759 --> 00:59:15,259
+Dolayısıyla öncekini eğitmeden bir sonrakini eğitemiyor.
+
+297
+00:59:15,259 --> 00:59:16,300
+Evet, kesinlikle soruyor.
+
+298
+00:59:16,300 --> 00:59:20,239
+Değil mi? Daha kestirme yolu.
+
+299
+00:59:21,172 --> 00:59:28,672
+Dolayısıyla onu o manada paylaştiremeyiz. Peki, başka bir soru. Rotasyon ormanlarında temel öğrenci olarak kaynan kullanımı işe yarar mı?
+
+300
+00:59:31,492 --> 00:59:33,112
+Bunu geçen hafta konuşmuştuk herhalde.
+
+301
+00:59:34,792 --> 00:59:35,092
+Evet.
+
+302
+00:59:37,352 --> 00:59:43,292
+Ne diyorsunuz arkadaşlar? Rotasyon ormanlarında temel öğrenci olarak kaynan kullanımı işe yarar mı?
+
+303
+00:59:43,712 --> 00:59:45,872
+Rotasyon ormanları ne yapıyordu? Onu hatırlayalım.
+
+304
+00:59:47,476 --> 00:59:51,855
+İksi koordinat düzleminde böyle rotate ediyordu Tata.
+
+305
+00:59:52,115 --> 00:59:55,215
+Tamam, evet.
+
+306
+00:59:55,496 --> 00:59:59,936
+O yüzden K'nin bir işe yaramaz çünkü birbirleriyle olan uzaklıkları değişmiyor.
+
+307
+01:00:00,000 --> 01:00:01,900
+Birbirlerine göre olan pozisyonları.
+
+308
+01:00:01,980 --> 01:00:10,259
+Dolayısıyla uzayı döndürsek de kainanın cevapları değişmeyecek. Cevaplar değişmediği zaman da zaten ensemblin bir anlam olmayacak değil mi?
+
+309
+01:00:10,259 --> 01:00:19,099
+Ama karar ağacı öyle mi? Karar ağacı öyle değil. Karar ağacını da uzayı birazcık değiştirsin. Yani döndürseniz. Çünkü karar ağaçları ne yapmak zorundalar?
+
+310
+01:00:19,840 --> 01:00:27,900
+Özellikle de dik karar sınırları çekiyorlar ya mecburen. Yani yapısal olarak. Üniformları en azından. Pardon. Üniversitleri, tek değişkenleri.
+
+311
+01:00:28,000 --> 01:00:36,420
+Dolayısıyla onlar oldukça döndürmeye karşı hassaslar. Döndürme olduğu zaman kararları oluşan araçlar direkt değişiyorlar.
+
+312
+01:00:37,739 --> 01:00:41,659
+Bootsing Algoritması'nın neresi paralleleştirebilir? Bunu sonra konuşuruz yine. Siz de düşünebilirsiniz.
+
+313
+01:00:41,659 --> 01:00:48,579
+Yani Bootsing Algoritması'nda evet, tek el öğrencileri paralleleştiremiyoruz. Farklı farklı makinelerde belki çalıştıramıyoruz.
+
+314
+01:00:48,980 --> 01:00:54,860
+Ama acaba kendi içindeki herhangi bir adımını paralleleştirmek mümkün olabilir mi? Düşünülebiliriz şimdi. Peki.
+
+315
+01:00:55,507 --> 01:01:05,007
+Şimdi bu kısmı tamamladık aslında. Yani şurayı tamamlamış olduk. İlk katmanını Teknik. Tamam.
+
+316
+01:01:05,987 --> 01:01:10,687
+Şimdi bir ara vereyim arkadaşlar. Zaten bir saat olmuş. Sonra şuradaki kısımdan devam edeceğiz.
+
+317
+01:01:11,287 --> 01:01:16,987
+Peki. Az sonra görüşmek üzere. Az sonra demeyelim tabii. 15.15'te diyelim. Yazayım onu da.
+
+318
+01:01:22,003 --> 01:01:26,204
+Görüşmek üzere arkadaşlar.
+
+319
+01:20:09,011 --> 01:20:11,291
+Evet arkadaşlar, kusura bakmayın birazcık geciktim.
+
+320
+01:20:11,291 --> 01:20:35,832
+Şimdi bu daha önce kararların birleştirmesiyle ilgili iki tane yaklaşımdan bahsetmiştik. Bir tanesi demokrasi usulüydü.
+
+321
+01:20:36,207 --> 01:20:52,688
+Bir tanesi ağırlıklandırma usulü diyebiliriz. Bir de şeyde düşünebiliriz. Demin bahsettiğimiz Teknik'i. Yani birleştirmeyi öğrenmek ki de bir yandan düşünebiliriz.
+
+322
+01:20:53,247 --> 01:20:57,987
+Şimdi bu noktada birkaç tane örnek vereceğim. Ondan sonra bir deneyimi paylaşacağım sizlerle.
+
+323
+01:20:58,612 --> 01:21:15,891
+Yapacağımız şeyler ne? L tane modelin kararını nasıl birleştirelim bu soruya cevap arıyoruz. Üretilen L adet modelin kararlarının hepsini kullanmak mı mantıklı ve bir kısmını kullanmak mı mantıklı? Herkesin kararı eşit mi olsun olmasın mı? Şeklinde sorulara cevap arayacağız.
+
+324
+01:21:17,395 --> 01:21:37,415
+Şimdi modelin karlarını birleştirmek için çeşitli literatürde yöntemler denenmiş. Çok standart. Mesela burada şunları söyleyelim. Beş tane sınıflandırıcı olduğunu varsayalım. Beş tane sınıflandırıcının her birinin her bir sınıfa bir örneğin, her bir sınıfa ait olmalısızlıkları verilmiş olsun. Mesela işte Classifier.
+
+325
+01:21:38,228 --> 01:22:03,148
+İki diyelim ki test örneğini veriyoruz ona. O da bize diyor ki bu örnek yüzde otuz olasılıkla C1'dendir, yüzde elli olasılıkla C2'dendir, yüzde yirmi olasılıkla C3'dendir. Bir de bu klasifier'ın başarısı var. Tekil öğrenci başarısı gibisinden düşünebilirsiniz bunu. Şu yukarıdakiler de onları gösteriyorlar olsun. Onlar da yine bir şekilde normalize edilmişler. Yani toplamları biri olacak şekilde.
+
+326
+01:22:03,631 --> 01:22:14,059
+Burada çeşitli kurallar var. Bu kuralların hepsi birleştirme kuralları. Mesela bir tanesi Product Rule. Product Rule'un anlamı şu. Yeni bir test örneğinin...
+
+327
+01:22:14,676 --> 01:22:30,656
+Her bir sınıfa ait olasılığını bulurken, her bir klasifierın o sınıfa ait olma olasılıklarını çarparız. Yani burada C1'e 0.0179 diyor ya, o aslında şu. 0.85 çarpı 0.3 çarpı 0.2 çarpı 0.1 çarpı 0.1.
+
+328
+01:22:32,115 --> 01:22:38,656
+İşte buradaki C2'de, yine buradaki C2'lerin çarpı, yani product'ı biliyorsunuz işte. Sum'ı biliyorsunuz, mean'i de biliyorsunuz.
+
+329
+01:22:39,060 --> 01:23:05,880
+Ortalamaları. Max Rule ise şu. C1'e ait olma olasılığı, elimizdeki bütün C1'e ait olma olasılıklarının maksimumi olsun. Tamam mı? Yani burada bakarsak C1'e ait olma olasılığı ne olacak? 85 var, 3 var, 2 var, 1 var. O zaman C1, 85. C2'ye bakalım. En yüksek ne gelmiş C2 için? %1 gelmiş, %50 gelmiş, %60 gelmiş, %70 gelmiş, %10 gelmiş.
+
+330
+01:23:06,260 --> 01:23:33,260
+%70 o zaman. C3'e ait olmalısıyla en yüksek neresi varmış? %80 varmış. Şurası C3 varmış. Medyanın minimumu deminki maksimum minimumunu almak. VTT'e her birinin kararlarının şunlarla çarpılarak toplanması. Yani 0.85 çarpı 0.30 artı 0.30 çarpı 0.25 artı işte şunla şunla şunla şunla şunla şunla şunla çarpa çarpa gidiyorsunuz.
+
+331
+01:23:33,844 --> 01:23:51,564
+Majority votingi biliyoruz. Yani çünkü Majority voting ne olacak? Bu durumda bizim klasifier birimiz hangi sınıftan olduğunu söyleyecek? C1 sınıfından. Klasifier 2 diyecek ki C2'dir. Klasifier 3 C2'dir diyecek. Klasifier 4 C2'dir diyecek.
+
+332
+01:23:53,140 --> 01:24:17,900
+Klasifier 5, C3'tür diyecek. Dolayısıyla C1 diyen bir kişi var, C2 diyen üç kişi var ve C3 diyen de bir kişi var. Oylarına bakıyorsunuz işte en fazla oy alan bu. Oyları weighted yapabilirsiniz. Yani her birinin oyunu mesela burada bunun söylediği şeyi 0.30'a çarpıp bunun söylediği şeyi 0.25'e çarparak bu işi gerçekleştirebilirsiniz. Bu arada kalıta şimdilik takılmıyor.
+
+333
+01:24:19,667 --> 01:24:34,947
+Dolayısıyla bunlar çeşitli yöntemler. Fakat hani aralarında bir tanesi diğerlerinden çok çok daha iyidir gibisinden bir şey söylemek pek kolay değil. Birbirlerine göre uygulanabilirlik anlamında konuşursak.
+
+334
+01:24:41,011 --> 01:24:54,672
+Ya da yukarıdakilerin herhangi bir tanesini uygulayabilmek için bize ne gerekiyor arkadaşlar? En azından şunu veriyor olması lazım, klasif ayrın. Bir test örneğinin her bir sınıfa ait olma olasılıklarını verebiliyor olması lazım.
+
+335
+01:24:56,811 --> 01:25:02,672
+Birçok sınıflandırıcı da vardır ama mesela neyde yoktur diye düşünelim.
+
+336
+01:25:03,060 --> 01:25:13,700
+Mesela One Virus Neighbor algoritmasını düşünelim. Mesela One Virus Neighbor algoritmasında gelen bir test örneğinin her bir sınıfa ait olma olasılığını verir mi bize?
+
+337
+01:25:19,060 --> 01:25:21,036
+Bu an neresi neyi bırakıp mesela?
+
+338
+01:25:24,372 --> 01:25:26,372
+Evet, ne diyorsunuz?
+
+339
+01:25:36,948 --> 01:25:37,768
+Sesim geliyor mu?
+
+340
+01:25:39,388 --> 01:25:41,528
+Sesiniz geliyor hocam. Bence vermez.
+
+341
+01:25:45,011 --> 01:25:52,831
+Peki, one nearest neighbor algoritması vermez ama mesela on nearest neighbor algoritması verir mi? En yakın on komşu algoritması verebilir mi?
+
+342
+01:25:55,251 --> 01:25:55,811
+Verebilir.
+
+343
+01:25:56,652 --> 01:26:09,351
+O verebilir değil mi? Orada her bir sınıfa ait olan örnek sayısına bakarsınız. En yakın on tane örnek var. On tane örneğin sınıf dağılımlarına bakarak neyi verebilirsiniz? Her bir sınıfa ait olmalısını verebilirsiniz. Peki, bir decision tree bunu verebilir mi?
+
+344
+01:26:11,539 --> 01:26:13,539
+Nasıl bir şey yapmak gerekir?
+
+345
+01:26:15,539 --> 01:26:21,539
+Decision Tree'nin bunu vermesi için nasıl bir yapıda olmasını isteriz?
+
+346
+01:26:27,859 --> 01:26:33,119
+Hocam, ağacın belli bir derinliğe kadar ineriz. Onun altında kalan sınıflara bakarız.
+
+347
+01:26:34,539 --> 01:26:39,920
+Yani o örneğin düşmüş olduğu şeyin, yaprağı buluruz ilk önce değil mi?
+
+348
+01:26:41,439 --> 01:26:46,859
+Önce bu. Sonra o yaprağın içerisinde safsa eğer o yaprak...
+
+349
+01:26:47,391 --> 01:27:05,391
+Eğitim kümeleri açısından. Orada bir şey söylememiz mümkün değil. O durumda ne yapmamız lazım? Bir üste gitmek lazım. Yeterince üste artık orası ne olacaksa. Biraz yukarıya çıkıp orada ona en yakın. Dolayısıyla aslında orada yukarıya gitmek demek, hani o bölge...
+
+350
+01:27:06,452 --> 01:27:16,532
+Yani o örneğe yine yakın örnekleri içeren bölgelerin içindeki eğitim örneklerinin sınıf dağılımlarına bakmak anlamına gelecektir.
+
+351
+01:27:16,916 --> 01:27:38,123
+Bu şekilde yapabiliriz.
+
+352
+01:27:38,452 --> 01:27:50,792
+İlk yakınladığımız sınıf. Diğer kalan 3 sınıfın olasılık olarak nasıl bir sayısını üreteceğiz onu tam anlayamadım. Yani 1,4 şeklinde mi yorumluyuz direkt?
+
+353
+01:27:50,792 --> 01:28:06,391
+Yok yok hayır hayır. Şöyle bir şey şimdi atıyorum işte bir adım yukarıya çıktık ya da iki adım yukarıya çıktık. O iki adım yukarıya çıktığımızda aslında şöyle bir soru var orada. X diyelim ki 5. özellik 2.73'den büyük mü diye bir soru soruyor değil mi?
+
+354
+01:28:06,452 --> 01:28:09,352
+Büyükse bir tarafa, değilse diğer tarafa aktarıyor.
+
+355
+01:28:09,971 --> 01:28:15,811
+Şimdi bu düğme gelmiş olan bütün eğitim örnekleri bunun altına dağılıyorlar değil mi?
+
+356
+01:28:16,292 --> 01:28:21,872
+O düğme gelmiş olan bütün eğitim örneklerinin sınıf dağılımlarına bakıyoruz.
+
+357
+01:28:22,631 --> 01:28:23,432
+Anladım.
+
+358
+01:28:23,912 --> 01:28:24,391
+Tamam mı?
+
+359
+01:28:24,572 --> 01:28:25,612
+Tamam, teşekkürler.
+
+360
+01:28:26,051 --> 01:28:26,592
+Rica ederim.
+
+361
+01:28:27,592 --> 01:28:28,932
+Başka sorusu olan?
+
+362
+01:28:32,724 --> 01:28:40,104
+Peki, ben sorayım yine. Bir yapay sinir ağaç için bunu nasıl yaparız? Yapay sinir ağaç, hybrid sınıf altı olmalısızlıkları nasıl verir?
+
+363
+01:28:49,652 --> 01:28:52,252
+Sigmoid fonksiyonunu kullanabiliriz. Çıkışta.
+
+364
+01:28:53,872 --> 01:28:57,032
+Sigmoid bize bir tane bir şey söyler. Yani tek bir tane değer söyler.
+
+365
+01:29:01,716 --> 01:29:10,736
+Sigmoid fonksiyonu kullanman sana her bir sınıfa ait olma olasını söylemez. Orada mimari olarak bir şey yapman lazım. Çıkışın nasıl bir şey olması gerekir?
+
+366
+01:29:11,736 --> 01:29:14,756
+N tane çıkış vermemiz gerekir. Bir çıkış yerine.
+
+367
+01:29:15,423 --> 01:29:37,083
+Aynen. Sınıf sayısı kadar sizin output'un örneğinizin olması ve her bir o output'ların da bir sınıfı temsil ediyor olması lazım. Onların çıkışları da her bir sınıfa ait olma olasılıklarıdır. Onları isterseniz normalize edip yani toplamlarına bölüp toplamları bir olacak hale getirebilirsiniz. O şekilde sınıf olasılıklarını verilebilirsiniz bir yapay sinir anada.
+
+368
+01:29:37,523 --> 01:29:42,564
+Hocam, orada kullanılan algoritmanın adı neydi? Böyle dilimin ucunda ama unuttum.
+
+369
+01:29:43,091 --> 01:29:48,391
+Evet, Softmax. Tamam, teşekkür ederim.
+
+370
+01:29:50,391 --> 01:29:54,491
+Şimdi bu şeyden sonra devam edelim yine.
+
+371
+01:29:58,072 --> 01:30:04,091
+Voting'ten bahsetmiştik zaten daha önce. Şimdi burada bir tane bir deneyim var. Şöyle bir şey yapmışız.
+
+372
+01:30:05,211 --> 01:30:07,211
+Üç tane sınıflandırıcı topluluğu.
+
+373
+01:32:10,355 --> 01:32:17,815
+Geldim. Koptum, geldim arkadaşlar. Kusura bakmayın. Şimdi kaldığım üzerinden devam edelim.
+
+374
+01:32:22,899 --> 01:32:24,379
+Pardon, karşılaştırma dinle. Yanlış.
+
+375
+01:32:28,148 --> 01:32:28,971
+Birleştirme.
+
+376
+01:32:35,315 --> 01:32:42,315
+Başarı tabanlı budama ile alakalı aslında ben size bir tane sunumda bir şey göstermiştim.
+
+377
+01:32:45,315 --> 01:32:54,315
+Sunumda bu Random Subspace'i anlatırken ağaçları sıralayıp başarılarına göre onların bir kısmını almak şeklindeydi.
+
+378
+01:32:54,612 --> 01:33:19,652
+Tabi orada birisinin öyle söylemiş olması, o şeyi doğru kabul etmeniz için her zaman yeterli olmasın. Birinci elden gözlem yapmak, yani birinci elden deneyimlemek, öyle söyleyeyim, öğrenmenin en iyi yollarından bir tanesi. Dolayısıyla bunu kendiniz yapıp görürseniz bu çok çok daha iyi bir şey olur.
+
+379
+01:33:19,652 --> 01:33:20,832
+Neyse.
+
+380
+01:33:21,231 --> 01:33:32,572
+Bu yine tavsiyeden sonra devam edelim. UCI'de 26 tane ver hükümesi üzerinde bu çalışma yapıldı. 5x2, random force vs. vs. burada 100 tane aşı örtmüşüz her binden.
+
+381
+01:33:33,791 --> 01:33:47,092
+Kullanılan ver hükümeleri bunlar. 26 ver hükümesi üzerinde çalışılmış. Ve sonuçlar. Şimdi bu sonuçlar, burada çeşitli algoritmaların çeşitli versiyonları var. Bir de ortadan başarı sıralamaları var. Ortadan başarı sırası demek ne demek?
+
+382
+01:33:47,667 --> 01:34:02,367
+Şimdi bir deney yaptınız diyelim ki, yani burada şimdi bakın 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 tane algoritma var.
+
+383
+01:34:03,367 --> 01:34:13,507
+Şimdi bir tane veriklimesini alıyorsunuz. Mesela abolonu aldığımızı düşünelim. Bu abolonun üzerinde 16 tane algoritmayı çalıştırıyorsunuz ve bunların bir başarıları oluyor. Bunları sıralıyorsunuz.
+
+384
+01:34:13,876 --> 01:34:38,115
+Satıdıktan sonra en başarılı olan bir oluyor, bir numara oluyor. O bir puan alıyor demeyelim ona. Birinci oluyor. En başarılı ikinci, ikinci oluyor vesaire vesaire. Daha sonra bu işlemi 26 kez tekrar ettiğinizde, yani her bir veri kümesi için tekrar ettiğinizde elinizde her bir algoritmanın her bir veri kümesinde kaçıncı olduğu bilgisi yer alıyor.
+
+385
+01:34:38,612 --> 01:34:41,952
+Kaçıncı olduğu bilgilerin de ortalaması, işte burada gördüğünüz değerler.
+
+386
+01:34:43,172 --> 01:34:43,372
+Tamam.
+
+387
+01:34:43,859 --> 01:35:09,639
+Yani tek ağaç mesela 14.9. olmuş yani 15. olmuş 16. tane sıralım içerisinde ortalama olarak. Diğerleri de buradalar diğer algoritmalarda. Şimdi o algoritmalara nerede teker teker bakacağız. Ama buradaki önemli olan şey ne? Buradaki değer ne kadar küçükse o kadar başarılı bir şeyi ifade ediyor. Çünkü o kadar yukarılarda yer almış. Burada bir diye bir şey görmüyoruz. Yani bütün ver hükümelerinde en başarılı algoritma bir şey olsaydı, tek bir şey olsaydı zaten onu gördük.
+
+388
+01:35:10,195 --> 01:35:15,716
+Ama öyle bir şey yok. İki falan bile yok hatta. Beşler, altılar var en iyi diyebileceğimiz.
+
+389
+01:35:26,963 --> 01:35:41,163
+T-test'i yaptınız sizler ödevinizde. İki tane algoritmanın birbirinden daha başarılı ya da değil olduğunu bulmak için kullanılan bir yöntemdi. Burada da bu sıralamalar için kullanılan yöntem ise,
+
+390
+01:35:46,676 --> 01:35:59,436
+T-test aslında iki tanesini birbiriyle karşılaştırmak için direkt kullanılıyor. Bu ise Nemanyi test diye geçer. Bu ise bir sürü algoritmayı tek bir seferde sıralamak için kullanılan bir yöntemdir.
+
+391
+01:36:00,716 --> 01:36:09,316
+Burada şey var, anlamlı farkın ne olduğu yani istatistiksel manada anlamlı farkın ne olduğunun hesabı var. Onun detaylarını isterseniz daha sonra sorarsınız.
+
+392
+01:36:09,779 --> 01:36:30,800
+Çünkü veri kümesi ve algoritma sayısı da bağlı olarak şurada birkaç tane şu değerler falan geliyorlar. Neyse, aradaki fark yani anlamlı fark dört buçukmuş. Yani dört buçukluk bir fark varsa arada anlamlı bir fark oluşuyormuş. Herhangi iki tanesinin arasında öyle söyleyelim.
+
+393
+01:36:31,923 --> 01:36:48,804
+Şimdi, tüm algoritmalar, yani kabaca bakarsak bütün algoritmalar tek bir ağaca göre daha başarılır. Bu zaten tartışılacak pek fazla bir şey değil belki. İyiden kötüye doğru, şimdi orijinal algoritmalara bakalım. Buradaki değerler ne ifade ediyorlar?
+
+394
+01:36:48,804 --> 01:36:57,524
+Şimdi 100-100 orijinal algoritma. Yani 100 tane ağaç üretmişiz, 100'ünü de kullanmışız demokrasi usulüyle.
+
+395
+01:36:57,971 --> 01:37:17,971
+Burada 100 tane üretmişiz, 100'ünü de kullanmışız ama ağırlıklandırarak. Neye göre ağırlıklandırmışız? Tekkil öğrencilerin başarılarına göre ağırlıklandırmışız. Burada 100 tane ağaç üretmişiz, onların en başarılı 75 tanesini almışız ve onları demokrasi usulüyle birleştirmişiz. Yine aynı şekilde burada 100 taneden 25 tanesini almışız vs.
+
+396
+01:37:18,579 --> 01:37:28,439
+Buradaki değerleri anladınız. Her biri farklı şeyleri gösteriyorlar. İyiden kötüye Random Forest en iyi çıkmış. Rastgele uzay ondan biraz daha kötü. Begink ondan birazcık daha kötü.
+
+397
+01:37:35,764 --> 01:37:36,764
+Evet.
+
+398
+01:37:40,340 --> 01:37:50,800
+Temel öğrenicilerin kullandıkları bilgiler üzerine birazcık burada yorum yapmışım öyle söyleyeyim. Yapılan karşılaştırmadan belki bağımsız olarak.
+
+399
+01:37:50,800 --> 01:38:03,800
+Şimdi Begging algoritmasının temel öğrenicilerinin, kararaçların her düğümü aslında nelere erişebiliyor? Elimizdeki bütün örneklere...
+
+400
+01:38:06,355 --> 01:38:17,676
+Olmasa bile örneklerin %66.6'sında diyelim ama bütün özellikleri erişebiliyor değil mi? Tüm özellikleri erişebiliyor. Onların içerisinden bir seçim yapıyor. Yani bütün özelliklerin içerisinden bir seçim yapıyor.
+
+401
+01:38:18,515 --> 01:38:34,715
+Dolayısıyla baya büyük bir bilginin içerisinden seçim yapıyor. En fazla bilgiye onlar sahipler. Random Forest'teyse nasıldı hatırlarsanız, her düğümde rastgele küçük bir özellik sayısına bakıyordu. Yani her bir düğüm küçük bir parçaya bakıyor.
+
+402
+01:38:34,715 --> 01:38:45,715
+Ama ağacın tamamına düşünürseniz, her bir düğümde farklı farklı seçimler yapıldığı için bütün ağacın içerisinde bütün özellikleri yer alma ihtimali var mı? Olabilir mi?
+
+403
+01:38:47,796 --> 01:38:51,796
+Her birinde farklı seçimler yapılıyor ama bütün ağacı düşünürseniz...
+
+404
+01:38:57,908 --> 01:39:16,948
+Olabilir ama neydi olamaz? Rastgele alt uzaylar da olamaz. Çünkü rastgele alt uzaylar ne dedik biz? Klasik anlamındaki kullanımında. Örneklerin içerisinde işte D tane örnek var. D taneden D bölü iki tanesini seçiyorsunuz. Seçtikten sonra sadece o özelliklerle o ağacı oluşturuyorsunuz.
+
+405
+01:39:21,199 --> 01:39:40,299
+En fazla özelliğe erişebilen bagging, random forest bir miktar ondan az ama orta diyeceğiz. En az özelliğe erişen de rastgele alt uzaylar. Buna göre üyelerinin kararları arasında en çok farklılık olan algoritma rastgele alt uzaylar.
+
+406
+01:39:40,851 --> 01:40:05,271
+Üyelerin kararlarının arasında en çok farklılık, yani diversity en yüksek olan anlamında rastgele alt uzaylar demişiz. Peki bu neye yol açacak? Bu şuna yol açacak. Orijinal algoritma ve ağırlıklandırılmışlara bakalım. Şimdi begging de orijinal ve ağırlıklandırılmışının arasında çok küçük bir fark var bakın.
+
+407
+01:40:05,271 --> 01:40:07,031
+Değil mi?
+
+408
+01:40:08,372 --> 01:40:22,552
+Random Forest'ta arada bir fark var ama orijinal de daha iyi. Birlik bir fark var. Ama burada bakın, orijinal ve ağırlıklandırılmış ağırlıklandırılmış daha iyi bunda.
+
+409
+01:40:22,912 --> 01:40:48,212
+Yani ağırlıklandırımın daha iyi olduğu tek yer rastgele alt uzaylar. Şimdi kararların birbirlerine yakın olduğu durumlarda, zaten ağırlıklandırımın çok da fazla bir anlamı yok. Dolayısıyla orijinal algoritma, yani begging de kararlar birbirlerine oldukça yakınlar. O yüzden o kadar demokrasi yapmak ya da ağırlık, çünkü bütün ağırlıklar birbirlerine eşitse zaten bunun anlamı ne demek arkadaşlar? Demokrasi demek değil mi?
+
+410
+01:40:48,851 --> 01:41:16,231
+Bütün ağırlıklar. Bütün ağırlıklar birbirinden eşit olduğunda ağırlıklandırma ile orijinal bir farkı olmuyor. Burada Begging'in oldukça birbirine yakın olmasından bunu zaten görebilirsiniz. Ama Random Forest'ta farklılıklar var. Rastgele alt uzayda da farklılıklar var. Gördüğünüz gibi bunlarda fark oluşmuş. Yani burada birlik bir fark oluşmuş. Kötü yönde. Burada yarılarlık bir fark oluşmuş. İyi yönde olmakla da düşünebilirsiniz. Başka gözümüze çağırpan şey ne? Budama işlemi.
+
+411
+01:41:16,851 --> 01:41:24,451
+Yani bu dama işlemi işte yüzden yüzünü kullanmak ya da yüzden yetmiş, yüzden elli. Şimdi bakalım. Altı, altı buçuk, yedi, dokuz. Kötüleştirmiş hep görüyor musunuz?
+
+412
+01:41:25,231 --> 01:41:36,991
+Buraya bakalım. Dokuz, on, on nokta, dokuz, iki nokta, on iki nokta iki. Kötüleştirmiş, hep kötüleştirmiş. Beş, altı, yedi, altı, yedi, altı, sekiz, sekiz, üç. Bu da hep kötüleştirmiş.
+
+413
+01:41:44,435 --> 01:42:01,595
+Teknik Slides'lerden da hatırlayacağınız gibi işe yaramıyor. Çünkü siz burada ağacın, evet topluluktaki tekil öğrencilerinin ortalama başarısını arttırıyorsunuz ama bu arttırmanın diğer taraftan sebep olduğu şey ne oluyor arkadaşlar?
+
+414
+01:42:04,340 --> 01:42:20,399
+Diversiteyi azaltmış oluyorsunuz. Herkes birbirine aynı şeyler, herkes aynı şeyleri söylediği zaman çok daha anlamlı bir sonuç elde edemiyorsunuz. Anlamlı derken işe yarar. Çünkü herkesin aynı şeyi söylediği ortamda sadece bir kişi vardır aslında.
+
+415
+01:42:26,612 --> 01:42:36,992
+Evet. Şimdi burada zaten bunları anlatıyor. Tamam. Şimdi bunu da kapatabiliriz.
+
+416
+01:42:39,471 --> 01:42:40,752
+Bu arada bir kişi azalmışız.
+
+417
+01:42:45,011 --> 01:42:53,152
+Peki, programda ondan sonra karşılaştırma var. Karşılaştırmayı yapalım hemen.
+
+418
+01:42:56,171 --> 01:43:02,531
+Aslında bu karşılaştırmada anlatacağım çok da fazla bir şey yok ya. Bir dakika ben size burada vekayı zaten artık vermiyorum.
+
+419
+01:43:02,711 --> 01:43:10,711
+Yani vekayla bir şey yapmanıza gerek yok. Hani burada en işe yarar diye söyleyebileceğim neresi var? Bir dakika.
+
+420
+01:43:12,435 --> 01:43:19,435
+Aslında bu slide'lar...
+
+421
+01:43:19,435 --> 01:43:31,315
+Veka'da istatistiksel analiz, istatistiksel anlamlılık analizi nasıl yapılır? Onları gösteriyor. Eğer Veka'da böyle bir şeyler yapmaya kalkarsanız nasıl yapılacağını buradan kontrol edebilirsiniz.
+
+422
+01:43:33,815 --> 01:43:35,015
+Burada bakayım.
+
+423
+01:43:35,695 --> 01:43:37,259
+Tabii hani burada...
+
+424
+01:43:37,300 --> 01:43:48,980
+Sadece başarılar açısından değil de istediğiniz herhangi bir şeye göre, eğitim süreleri, test süreleri herhangi bir şeye göre de karşılaştırma yapabiliyorsunuz.
+
+425
+01:43:49,684 --> 01:44:11,863
+Burada aslında sonuçları göstereyim size. Yoksa VK'nın yapısı çok çok önemli değil. Bakayım. 36 tane UCI Data Set'te 11 tane tekil, 12 tane Ensemble algoritması çalıştırılmış. Ensembl'larda 100 tane bezdornik kullanılmış hep. 36, bu sefer 36 tane da set var burada.
+
+426
+01:44:17,587 --> 01:44:39,027
+Bayağı çeşitli çeşitli SVM'dir. Tekil ağaçlar var. C45, Bestverse Tree, Cart, Random Tree vs. 1-nearist-nearist-nearist-support-vector-machine-nive-wise. Bunlar var. Ensam bu algoritmaları var.
+
+427
+01:44:39,027 --> 01:44:41,027
+İşte hep görmediklerimiz.
+
+428
+01:44:43,764 --> 01:44:56,764
+Bakalım burada deminki average rank dediğimiz şey deminki sıralama sayısı, ortalama sıralaması.
+
+429
+01:44:58,195 --> 01:45:23,416
+Burada en düşük olan baktığımızda mesela Random Forest 5.33 bir de Rotation Forest 4.13 çıkmış mesela. Rotation Forest oldukça iyiymiş bu noktada baktığımızda. Ranking Test Count'ta şu demek. Hani bir tane matris yapıyorduk. O matrisde her bir algoritma her bir algoritmayı kaç kez yendi, kaç kez yenildi diye hatırlıyorsunuz değil mi istatistiksel olarak? Burada şöyle bir şey yapılıyor.
+
+430
+01:45:23,792 --> 01:45:43,112
+Bir algoritma diğer bütün algoritmaları istatistiksel manada kaç kez yenilmiş, o eksi, kaç kez yenilmiş. Yani yenme sayısı eksi, yenilme sayısı şeklinde. Bu değerlerin yüksek olması iyi bir şey. Mesela burada 289 zaten en yüksek. Sonra Random Forest var, sonra Random Comities var.
+
+431
+01:45:47,507 --> 01:46:09,188
+Temel olarak Rotation Forest daha başarılı gözüküyor. Random Forest'a göre. Tekil algoritmalar içerisinde SVM iyi diğerlerine göre baktığımızda. Bir de Tree algoritması ki bu da Model Tree. Model Triler de... Neyse onun detayına girmeyeyim şimdi uzun iş.
+
+432
+01:46:09,587 --> 01:46:20,587
+Svn burada mesela tekil algoritmaların içerisinde de bunlar iyi ama genel olarak baktığınızda tekil algoritmalara göre ensemblların daha başarılı olduklarını zaten görebiliyorsunuz.
+
+433
+01:46:22,828 --> 01:46:29,408
+Nemen nitresine göre de anlamlı fark mesela burada 5 civarındaymış. 5.8 fark olması gerekiyormuş.
+
+434
+01:46:32,819 --> 01:46:58,940
+Best algoritmalar göstermişim. Tekillerin içerisinde zaten Support Vector Machine ve Alternative Decision Tweets'ler var. Yenme, yenilmeleri. O deminki 6 tane algoritmanın birbirlerine göre karşılanma, kaybetme şeyleri. Önemli olan noktalar. Şurasından bakalım. Tabii hız başka bir önemli kriter olabilir.
+
+435
+01:46:59,391 --> 01:47:17,712
+Burada mesela algoritmaların hızları var. Zaman şey açısından, training ve testing süreleri saniye açısından. Üç tane büyük dataset üzerinde. Yani çok çok büyük değiller tabii ki de ama diğerlerinden daha büyükler. 36'ın içerisinden büyük olan üç tane söyleyelim.
+
+436
+01:47:17,712 --> 01:47:26,971
+Şimdi bunlardaki zamanlar. Rotation Forest'ın zaman olarak epey bir zaman aldığını görüyorsunuz. Random Forest'a karşılaştırırsanız şuraya da.
+
+437
+01:47:27,391 --> 01:47:32,832
+Özellikle hem treningde hem teste oldukça büyük farklılıklar var aralarında.
+
+438
+01:47:33,511 --> 01:47:37,091
+E tabii Random Forest'tan çok daha hızlı çalışan algoritmalar var mı? Var.
+
+439
+01:47:37,572 --> 01:47:40,832
+Ne bileyim ben, işte Nae Bayes daha hızlı çalışıyor tabii ki.
+
+440
+01:47:40,832 --> 01:47:47,011
+Zero Rule zaten ona zamanla koymuş ama neyse yani çok çok o zaten çalışmıyor biliyorsunuz.
+
+441
+01:47:47,091 --> 01:47:50,431
+Çalışmıyor derken bir şey öğrenmediği için direkt tahmin basıyor.
+
+442
+01:47:51,231 --> 01:47:52,992
+Tekil ağaçlar işte böyle bir şeyler.
+
+443
+01:47:56,595 --> 01:48:13,375
+12, C48'lerle. Mesela Random Forest'ın hızlılığı şöyle belli oluyor. Yani şu manada belli oluyor. Her bir tekil öğrenici bakın 100 tane ağaçtan oluşuyor ötetik.
+
+444
+01:48:13,375 --> 01:48:17,695
+Şimdi 100 tane C48'den oluşuyor.
+
+445
+01:48:18,292 --> 01:48:44,492
+diye düşünelim. J48'in bir tanesi 1.84'te eğitiliyor. Random Forest'ta ise 25.94. Yani bundan 100 taneyi bakın bu 25.9'da üretmiş. Yani oldukça şey var. İyi bir verim var. Begging'te ise mesela 40'a kadar çıkmış o görüyor musunuz? Ya da mesela şuraya baksanız burada birazcık daha arada fark bariz bir şekilde belli oluyor. Daha da fazlalaşmış.
+
+446
+01:48:46,292 --> 01:49:00,072
+Yani burada mesela bu 1.84 ise bunun belki 100 ağaç üretiliyorsa, yani diner bir ilişki olsa 184 saniye sürmesi lazım burasında ama öyle değil. Niye acaba?
+
+447
+01:49:01,011 --> 01:49:07,192
+Feature'ları seçerken hocam, Logaritma kitabının da n olarak seçtiği için hepsini almış.
+
+448
+01:49:07,192 --> 01:49:16,931
+Çok az sayıda kontrol yapıyor değil mi? Çok az sayıda. Çok büyük bir ağaç oluyor ama çok az sayıda kontrol yaptığı için çok hızlı çalışıyor.
+
+449
+01:49:16,931 --> 01:49:20,212
+Aslında onun muadili şurada.
+
+450
+01:49:24,180 --> 01:49:35,659
+Pardon, Random Forest'ın ağacı gibi ağaç üreten Random Trees var. O çok çok daha hızlı zaten. O zaten yüz katına falan aşağı yukarı denk gelir herhalde o.
+
+451
+01:49:36,000 --> 01:49:58,560
+Ama tabii onda tekil olduğu için başarıları çok çıkan burada yüzünü birden birleştirdiğimizde başarılar oldukça yüksek hale geliyor. Neyse, Rotation Forest en iyi algoritma. En azından bu elimizdeki datasetler için öyle söyleyelim. İstatistiksel manada Roundup Forest'a çok büyük farkları yok. Ama zaman açısından baktığınızda Rotation Forest çok fazla zam alıyor. Ama burada şunu da söyleyeyim.
+
+452
+01:50:00,000 --> 01:50:28,000
+Ben burada tabii Rotation Forest şeyde, VEKA'daki Rotation Forest'tan bahsediyorum. VEKA'daki Rotation Forest çok iyi yazılmamış. Yani Random Forest kadar falan hani çok iyi yazılmamış. Ben onu MATLAB'te yazmıştım, implemente etmiştim. Tabii yine Random Forest'tan daha yavaş çalışıyor ama hani iki kat, üç kat daha yavaş çalışıyor. Buradaki gibi on kat, yirmi kat, kırk kat falan daha yavaş çalışıyor olması birazcık garip.
+
+453
+01:50:28,000 --> 01:50:50,039
+Öyle söyleyeyim. Yani buradaki değer bunun on katı ama bu Rotation Forest'ın algoritmik manada bundan çok çok daha bu kadar daha kötü olduğu için değil. Bu Rotation Forest'ın implementasyonunun çok çok iyi olmadığı için. Öyle söyleyeyim. Yani o da bir şekilde düzeltilmiş değil herhalde günümüze kadar.
+
+454
+01:50:50,039 --> 01:50:51,439
+Peki.
+
+455
+01:50:52,756 --> 01:51:13,956
+Dolayısıyla buraya bakarsak, doğruluk açısına, birinci kriter doğruluksa mesela Rotation Force'ı seçmek iyi. Bu tarz datasetler de, buradaki Yüce gibisinden datasetler de genel manada öyle söyleyelim. Ama hız da önemliyse aynı şekilde, hem doğruluk hem hız birlikte önemliyse o zaman Random Force daha mantıklı gözüküyor.
+
+456
+01:51:13,956 --> 01:51:19,896
+Şimdi algoritmaların benzerlikleri. Şimdi burada başka bir bakış açacağız olaya.
+
+457
+01:51:20,756 --> 01:51:45,615
+Şimdi her bir algoritmayı 36 boyutlu uzaylı bir nokta olarak düşünelim. Performanslar açısından düşünün. Yani birinci boyut mesela, satırlarda algoritmaları düşünün. Bir dataset kafamızda tasarlayalım. Satırlarında algoritmalar var, sütunlarında ise datasetler var.
+
+458
+01:51:46,032 --> 01:52:12,752
+Ve bu madresin i.e.c. elemanının anlamı şu. İ.e.c. algoritmanın j.e.c. dataset üzerindeki performansı. Tamam mı? Şimdi bu dataset'i ne yapacağız? Kümeniyeceğiz. Nasıl, neyle kümeniyeceğiz? Hiyerarşik gruplara oluşuyor. Hiyerarşik clustering yapacağız. Ve aslında algoritmaların birbirlerine benzerliklerini bulmaya çalışacağız.
+
+459
+01:52:13,300 --> 01:52:29,880
+Hangi algoritma, hangi algoritmaya benzer? Ne açısından? Performans açısından. Tamam mı? Şimdi burada şöyle bir şey çıkıyor karşımıza. Algoritmaların burada birbirine yakın olanlar, yani birleştirmede yakın olanlar birbirine yakın demek. Öyle söyleyelim.
+
+460
+01:52:30,355 --> 01:52:58,188
+Şimdi yakınlıklara baktığımızda, mesela şuraya baktığımızda, mesela şuradaki algoritmaların tamamı Ensemble algoritmaları. Bakın, şunların hepsi Ensemble algoritmaları. Şunlar tekil ağaç algoritmaları. Bunlar daha farklı algoritmalar. Ne kadar yakın birleştilerse iki şey, birbirlerine o kadar yakınlar demek. O şekilde düşünebilirsiniz. Dolayısıyla benzer fikirler, benzer performanslara sebep olabilirler gibisinden bir...
+
+461
+01:52:58,195 --> 01:53:26,195
+Bu şey var burada. Tabii bütün her yeri mesela burada ne bileyim Random Tree'de Karnes'in Yabur yakın çıkmışlar ama belli bir zaman sonra yakın çıkmışlar. Buna şimdi çok büyük yani bu tamamen başka bir şey bu tamamen başka bir şey. Ya da Degging ile mesela Naive Bayes alakası şeyler. Ama Multibus'ta Ada Boost yakın çıkmış birbirine. Hadi o zaten aynı algoritmanın versiyonu olduğu için ama burada çeşitli farklı Ensemble algoritmalarının birlikte çıkması, farklı tekiyle...
+
+462
+01:53:26,195 --> 01:53:42,755
+Ağaç algoritmalarının birlikte çıkmıyor. Birilerine yakın sonuçlar vermiş olmaları aslında şu söylediğiniz şeyi birazcık doğruluyor. Yani benzer fikirlerin benzer sonuçlara yol açabileceği. Şimdi tersini yapacağız. Şöyle bir şey.
+
+463
+01:53:44,467 --> 01:54:01,568
+Deminki mantrisimiz nasıldı? Satırlarda algoritmalar, sütunlarda datasetler. Şimdi tersini yapacağız. Yani satırlara datasetleri koyacağız, sütunlara algoritmaları koyacağız. Ve bu durumda bu sefer neleri kümeleyeceğiz arkadaşlar? Böyle bir şey yaparsak?
+
+464
+01:54:03,007 --> 01:54:04,488
+Veri setlerinin benzerliği.
+
+465
+01:54:06,728 --> 01:54:10,847
+Aynen öyle. Veri setlerinin birbirlerine benzerlikleri nasıl bir şeyler?
+
+466
+01:54:11,699 --> 01:54:25,519
+Olabilir, ona bakmaya çalışacağız. Şimdi burada formatı şu, şurada da setlerim. Datasetten sonra gelen ilk rakam feature sayısı. Ondan sonra gelen rakam sınıf sayısı, ondan sonra gelen ise örnek sayısı.
+
+467
+01:54:36,275 --> 01:54:59,195
+Ortadaki rakamın büyük olduğu bir grup. Ortadaki rakam dediğimiz şey ne? Sınıf sayısı. Mesela sınıf sayısı büyük olanlar belli bir grup oluşturmuşlar. Mesela burada hep 2, 3, 2, 3 görüyor musunuz şeyleri sınıf sayılarını genel olarak? Yani iki sınıflı veri kümeleri bir küme olmuş, üç sınıflar başka bir, yani pardon.
+
+468
+01:54:59,568 --> 01:55:23,068
+Fazla sınıflar başka bir küme olmuş. Kabaca öyle bir şey söyleyebiliriz belki. Bu primary tumor ve abolon tek başlarına takılıyorlar aslında. Onlar oldukça zor problemler diğerlerine göre öyle söyleyeyim. Yani işte sizler deneme yaptınız değil mi? Deneme yapmıştınız değil mi? Bunların üzerinde. Abolon'ı falan görmüşsünüzdür. Başarılı falan oldukça düşüktür. Diğerlerine çok çok benzemez.
+
+469
+01:55:23,731 --> 01:55:44,932
+Başka ne var? Hani benzerlik, mesela kırmızıyla neyi işaretlemişim ben burada? Similar example, Feature and Class Number. Mesela bir şekilde yakın olanların yakın rakamlara sahip olduğunu söylüyorlar. Ama çok, yani örneğin ne bileyim 32-32-3700.
+
+470
+01:55:45,524 --> 01:56:07,944
+Var, 40, 43, 2, 2, 3 bine 7 bin gibi böyle yakın olanlarda belli bir şeylik var ama büyük şey anlamında düşünürsek, şurasının bir böyle bir grup, şurasının böyle kocaman bir grup olarak iki sınıflar ve daha fazla sınıflar diye ayrıldığını kabaca söyleyebilirsiniz. Ötekiler için bir şeyler söylemek çok çok kolay değil.
+
+471
+01:56:10,131 --> 01:56:24,131
+Feature sayısı ve örnek sayısına göre bir şeyler söylemek çok kolay değil ama kabaca birkaç tane birbirine benzeyen özellikler ve örnek sayılarına sahipler yakın çıkmışlar.
+
+472
+01:56:30,131 --> 01:56:34,311
+Hangi metrik kullanıyorsunuz hocam? Simularity hesabım için.
+
+473
+01:56:37,140 --> 01:56:40,380
+Algoritmaların performansları üzerinden.
+
+474
+01:56:40,380 --> 01:56:50,380
+Şimdi bizim 23 tane algoritmamız var ya, 23 tane algoritmadaki performansları her bir dataset'in.
+
+475
+01:56:53,380 --> 01:56:56,439
+Bunlar bizim boyutlarımız oluyorlar.
+
+476
+01:56:57,680 --> 01:56:58,279
+Öktit.
+
+477
+01:57:04,787 --> 01:57:05,787
+Tamam.
+
+478
+01:57:10,068 --> 01:57:14,388
+Tamam, şimdi bunu da yaptık. Şimdi tek bir şeyimiz kaldı galiba.
+
+479
+01:57:17,968 --> 01:57:23,168
+Karşılaştırma. Ha, kümeler regresyon. Tamam, o da zaten çok çok uzun bir şey olmaz.
+
+480
+01:57:23,368 --> 01:57:26,508
+Onu da yapıp öyle tamamlayalım bugünkü dersimizi.
+
+481
+01:57:27,628 --> 01:57:30,468
+Zaten biraz bahsettik onlardan.
+
+482
+01:57:34,836 --> 01:57:46,115
+Regresyon dersi, dönemin en başında bunlardan bahsetmiştik. Regresyon ne olduğunu, bunu da tekrardan bir anlatmışım ama şu anda bizim için çok çok önemli değil.
+
+483
+01:57:46,115 --> 01:57:58,115
+Şimdi bizim için kritik olan kısım neresi? Şurası. Görmediğimiz kısım, kritik olan demeyeyim mi? Görmediğimiz kısım. Regresyon ağaçları. Regresyon ağaçlarından karar ağaçlarını anlatırken birazcık bahsetmiştim ama…
+
+484
+01:57:58,576 --> 01:58:07,556
+Hiç böyle görsel olarak belki çok fazla görmedik. Ya da gördüysek de çok önemli bir daha görürüz.
+
+485
+01:58:08,336 --> 01:58:16,296
+Şimdi solda ve sağda iki tane regresyon ağacının sonucu var. Tek bir input'a karşılık tek bir output üretiyor.
+
+486
+01:58:16,836 --> 01:58:21,496
+Output dediğim tek bir rakam. Çünkü regresyon burada.
+
+487
+01:58:23,923 --> 01:58:26,923
+Bir sayı üretecek. Sol tarafta
+
+488
+01:58:26,923 --> 01:58:35,184
+Eşit bir ve iki tane bölge. Sağ tarafta ise
+
+489
+01:58:35,184 --> 01:58:41,863
+siyahla gösterilen prediction'lar. Kırmızı ile gösterilenler ise eğitim kümeleri.
+
+490
+01:58:41,863 --> 01:58:48,123
+Burada depth'i giderek arttırarak siz çok daha prediction'lara
+
+491
+01:58:48,532 --> 01:59:04,192
+Birebir uyan bir şeyler yapabilirsiniz. Biraz daha ona benzeyen başka bir örnek. Yukarıdaki üstten başlayıp aşağı doğru gittiğimizde ne olduğunu görüyoruz. Ağacın büyüdüğünü görüyoruz.
+
+492
+01:59:04,192 --> 01:59:14,732
+Yani şu, şununla eş, şununla şu eş, bununla da bu eş. Ağaç ne kadar büyük bir şey olursa o kadar örneklerin her birinin üzerinde.
+
+493
+01:59:15,859 --> 01:59:42,879
+ÇKÇ, hatta bunu daha da büyüttüğümüzde bütün örneklerin üzerinden geçen bir hale getirebiliriz. Buradaki şu mor kutuların içerisinde rakamlar yazıyor. Sınıflandırmada biliyorsunuz orada sınıflar yazıyordu. Burada ise rakamlar yazacak. Yani ona karşılık gelen değer yazacak. En kolay manada buradaki değeri nasıl buluyorduk? Şuradaki değeri regresyonda nasıl bulabiliriz bu şeyi? Oraya düşen örneğin ortalaması.
+
+494
+01:59:43,539 --> 01:59:46,579
+Bununla minimize edeceğimizden bahsetmiştik.
+
+495
+01:59:53,420 --> 01:59:58,060
+Mesela şu siyah şeyler olsun bizim, ne derler ona, örneklerimiz olsun.
+
+496
+01:59:58,840 --> 02:00:00,000
+Sadece bir tane...
+
+497
+02:00:00,000 --> 02:00:05,119
+Ağacınız varsa şöyle bir yeşille oluşan bir şey elde ediyorsunuz.
+
+498
+02:00:06,659 --> 02:00:20,740
+Output elde edebiliyorsunuz ama yine Ensemble kullanarak, yani 300 tane mesela kullanırsanız şu kırmızı gördüğünüz daha sumut şeyi.
+
+499
+02:00:20,740 --> 02:00:25,420
+Sınıflandırmadaki yapının aynısı burada.
+
+500
+02:00:26,163 --> 02:00:52,724
+Geçerli, daha başarılı şeyler üretebiliyorsunuz. Regresyon içinde, sınıflandırmada olduğu gibi. Şimdi, regresyon için ensembulları yapmak kolay. Neden? Zaten sınıflandırmadan bile kolay. Hatta direkt ortalamasını alıyorsunuz belki. Çıkışlarını direkt toplayıp ortalamasını alıyorsunuz. Sınıf olasılıklarına falan bile bakmanıza gerek yok. Fakat kümelemede işler birazcık değişecek.
+
+501
+02:00:53,427 --> 02:01:15,108
+Yani bir sınıflandırma problemini Ensemble'da çözmek ve regresyonla çözmenin arasında mimari açısından bir fark yok. Tekil öğrenci. Kararları var, kararları birleştiriyorsunuz. Ama regresyon, kümenimde işler birazcık değişecek. Bakalım nasıl değişecekmiş.
+
+502
+02:01:21,460 --> 02:01:34,059
+En böyle reprezentatif olan bence şu ikisidir. Bir tanesi Kamis, bir tanesi DBSCAN. Bu DBSCAN algoritmasını biliyor musunuz arkadaşlar? Hiç duydunuz mu?
+
+503
+02:01:37,684 --> 02:01:39,684
+Ben duymadım hocam.
+
+504
+02:01:39,684 --> 02:01:41,684
+Duyan var mı?
+
+505
+02:01:50,804 --> 02:02:12,263
+Yok, Allah Allah. Enteresan. Neyse, güzel bir algoritmadır. Güzel bir algoritmadırın anlamı şu, yolluk tabanlı bir algoritmadır. Yani mesela şöyle bir şey düşünün. Kambins algoritmasında şöyle bir tane veri kümesi olsa elinizde. Burada ve deseniz ki bana iki tane küme bul. Bu iki tane küme için Kambins algoritması nezleyen bir şey bulacaktır. Bakın.
+
+506
+02:02:13,203 --> 02:02:30,804
+Ya da mesela böyle bir ver hükümesi için buna benzeyen bir şey bulacaktır. Böyle bir ver hükümesi için buna benzeyen bir şey bulacaktır. İki tane hüküme bul derseniz bunları bulur değil mi? Yani işte merkez noktalar şuradaki kalın noktaları görüyorsunuz. Şunlar olarak mesela tariflemiş. Bunları bulacaktır.
+
+507
+02:02:31,220 --> 02:02:51,279
+Ama burada biraz farklı bir durum var. Şöyle bir şey istiyor olabilirsiniz. İçteki yuvarlak bir küm olsun, dıştaki yuvarlak başka bir küm olsun. Manifoldlar olabilir elinizde. Aslında manifoldları öğreniyor bir şekilde. Yoğun bölgeleri birleştiriyor, öyle söyleyeyim.
+
+508
+02:02:51,604 --> 02:03:08,604
+Mesela şuradaki mavilere bakın, bir de yeşillere bakın. DBSK'nin bu ikisini birbirinden ayırt edebilir ya da işte şurasını ve şurasını ayırt edebilir. Burası çok çok önemli. Burası üçlü olmasına takılmayın. Yani bunu ya da daha doğrusu şöyle söyleyeyim.
+
+509
+02:03:17,855 --> 02:03:37,895
+Kümeye ayırmasını istediğinizi söyleyemiyorsunuz, direkt veremiyorsunuz. Dolayısıyla başka parametre üzerinden oluşan küme sayısını arttırmak ya da azaltmak mümkün ama bana buradan beş tane küme üret veya buradan on tane küme üret diye bir şey söyleyemiyorsunuz. Başka para onlarla üret edebiliyorsunuz o küme değerlerini.
+
+510
+02:03:40,692 --> 02:03:47,271
+Bunlar çok şey, birbirinden yeterince ayrık duran şeyler ayrı ayrı kümeler haline geliyorlar.
+
+511
+02:03:49,271 --> 02:03:52,231
+Burada mesela bir tane de şöyle bir şey olsaydı o da başka bir küm olacak.
+
+512
+02:03:53,511 --> 02:04:01,992
+Yani bu birleşik birbirine yeterince yakın olan şeyler, işte o birbirine yeterince yakınlılığın falan veriyorsunuz aslında algoritmaya, parametre, hiperparametre olarak.
+
+513
+02:04:05,460 --> 02:04:20,880
+Bu toleransınız çok çok büyükse bütün her şey tek bir tane küme haline geliyor ama toleransınız çok çok küçükse bu sefer bunun kendi içinde de daha da parçalar veriyor. Mesela ne bileyim şurası bir tane parça oluyor belki. Burası başka bir parça oluyor. O şekilde yapılarda oluşturulabiliyor. Merak edenler yine araştırabilirler.
+
+514
+02:04:20,880 --> 02:04:28,880
+Şimdi peki önemli olan burası değil bizim açımızdan. Önemli olan bizim açımızdan kolektif olarak kümelemeyi nasıl yapabiliriz?
+
+515
+02:04:29,747 --> 02:04:48,547
+Her bir temel kümeleyici farklı kümeleme algoritması olabilir. Bunu yapabiliriz. Yani nasıl ki Ensemble'da mesela farklı algoritmaların karlarını birleştiriyorduk. Bunları sıkıntı olarak aynı şekilde yapabiliriz. Aynı kümeleme algoritmasını kullanıp farklı özellik alt kümeleri kullanabiliriz.
+
+516
+02:04:49,407 --> 02:04:55,268
+Örnek alt kümeleri kullanamayız burada. Çünkü örnekler zaten sabit kalmak zorundalar. Çünkü her bir örneğin nereye düşeceğini bulacağız ya.
+
+517
+02:04:55,604 --> 02:05:00,144
+Hani örneğe seçim yapmak pek mümkün değil ama özellikler üzerinden yapılabilir.
+
+518
+02:05:01,184 --> 02:05:02,484
+Önemli değil orası.
+
+519
+02:05:05,244 --> 02:05:06,444
+Buradaki şu.
+
+520
+02:05:08,064 --> 02:05:09,944
+Kararları nasıl birleştireceğiz?
+
+521
+02:05:11,104 --> 02:05:20,423
+Sınıflandırma da A sınıfı ya da B sınıf ya da birinci sınıf dediğimizde bütün tekil öğrenciler için birinci sınıf dediğimizde aynı şey.
+
+522
+02:05:20,423 --> 02:05:21,304
+Değil mi?
+
+523
+02:05:21,844 --> 02:05:36,684
+Ama burada kararları birleştirirken şöyle şeyler olabilir. Küme sayıları farklı olabilir. İki tane algoritmanız var elinizde. Ya da aynı algoritmanın farklı versiyonları. Mesela demin bahsettim. DB Scan için düşünürsek. DB Scan'de her birinin farklı sayıda olabilir.
+
+524
+02:05:39,423 --> 02:05:48,923
+Buradaki sıkıntı ve küme etiketlerinin farklı olması. Yani mesela bir algoritmayı aldınız. Şöyle düşünelim.
+
+525
+02:05:50,068 --> 02:06:05,387
+Şimdi D-Biscan algoritma buradan başladı. Buna ilk birinci küme dedi. Mavileri küme dedi. Yeşilter ilk küme dedi. Yine D-Biscan gibi başka bir algoritmayı aldınız. O da mesela bu içerideki rastgele bir şey seçti. İçeriden denk geldi. İkinci küme dedi. İkinci küme dedi.
+
+526
+02:06:06,068 --> 02:06:13,127
+Şimdi aslında ikisi de tamamen aynı şeyi yapıyorlar ama etiketler birbirine. Yani etiket tutarlılığı yok araların arasında. Anlatabildim mi problemi?
+
+527
+02:06:15,444 --> 02:06:28,644
+A demesi ya da bir demesinin bir anlamı yok. Çünkü farklı şeyler olabilirler birbirlerinden bunlar. Yani neyin neye karşılık geldiğini bilmiyoruz. Sınıflandırma derelifesi sonunda bu problem zaten yoktu.
+
+528
+02:06:28,884 --> 02:06:39,532
+Şimdi çözüm ne olabilir? Örneklerin birlikte bulundukları sonuç sayısı. Bakın örneklerin birlikte bulundukları sonuç sayısı. Ne demek bu? Şimdi diyelim ki...
+
+529
+02:06:39,572 --> 02:06:58,092
+A, B, C, 7 örneğin 3 tane algoritma sonucu olsun. Şimdi şuradaki A, B, 3 tane algoritmanız var. 3 tane kümeleme algoritmanız var. 3 tane kümeleme algoritması var. Bu 3 tane kümeleme algoritmasının birinci algoritma demiş ki, birinci, ikinci, üçüncü örnekler aynı kümededir.
+
+530
+02:07:00,595 --> 02:07:16,775
+Dördüncü, beşinciler aynı hükümededir. Altıncı, yedinciler aynı hükümededir. B'ye alüretmesi demiş ki, birinci ile ikinci aynı hükümede, üçüncü, dördüncü aynı hükümede, beş, altı, yedi aynı hükümede. C'de bir ile iki aynı demiş, üç, dört, beş aynı demiş, altı, yedi aynı demiş. İkisinde de üçer tane hükümede ama çok çok önemli değil.
+
+531
+02:07:16,915 --> 02:07:25,775
+D dediğimiz şey ise, her bir örneklerin kaç kez aynı hükümede yer aldıkları. Yani bir ve iki mesela, birinci ve ikinci örnekler bu.
+
+532
+02:07:26,176 --> 02:07:49,956
+Kümeleme sonucuna göre aynı kümedeler mi? Evet. Buna göre evet. Buna göre evet. Birinci ve ikinci örneklerin aynı kümede yer almak için denemenin de sonuç. Peki, örgü düşünelim. 3 ve 4. Burada mesela farklı kümedeler. Burada aynı kümedeler 3 ve 4. Burada da aynı kümedeler.
+
+533
+02:07:52,692 --> 02:08:07,592
+Mesela iki kez yer almış, aynı kümede yer almış, bir kez yer almışlar, farklı kümede olmuşlar. Ya da 6 ve 7'ye baksak onlar da üçer kez aynı yerlerde kalmış. Yani 1 ve 2'nin aynı kümede olma olsadığı yüksek, 6 ve 7'nin de çok yüksek ama 3'te 4 farklı, mesela birazcık daha az.
+
+534
+02:08:09,532 --> 02:08:17,692
+Şimdi örnekler arası bir benzerlik madresi aslında, bakın örnekler arasında bir benzerlik madresini oluşturabiliriz biz buradan. Yani ne demek bu?
+
+535
+02:08:20,916 --> 02:08:47,496
+Kaç kez aynı kümede birlikte bulundularsa, iki tane örnek, kaç kez birlikte beraber bulundularsa o kadar birbirlerine benzerdir. Değil mi bunlar? Bu benzerlik olarak biz bir benzerlik matrisi tanımlayabiliriz. Bu benzerlik matrisiyle de bir hiyerarşi küme ile M ile ne yapabiliriz? Sonuçları bulabiliriz. Şuradaki gibi bir yaklaşımla. Yani burada istediğimiz sayıda kümeye ne yapabiliriz? Dönüştürebiliriz. Fikir dediğim gibi burada.
+
+536
+02:08:48,115 --> 02:08:50,195
+Şu nokta.
+
+537
+02:08:53,395 --> 02:09:19,756
+Bir de bulundukları sonuç sayısı. Bunu kullanarak benzerlik maddesini oluşturuyoruz farklı şeylerden. Bir tane benzerlik maddesi oluşuyoruz. Bu benzerlik maddesini kullanarak da hiyerarşik kümeleme yapıp benzerlikler çünkü elimizde varsa yani distanslar elinizde varsa siz kümeleme yapabilirsiniz. Örneklerin gerçek koordinatlarının ne olduklarını bilmenize gerek kalmaz değil mi? Yani şöyle bir şey düşünün. Bir de veri kümesi var. Bunu kümelemek istiyorsunuz.
+
+538
+02:09:21,395 --> 02:09:25,256
+Örneklerin kendileri lazım değil aslında. Ne lazım size?
+
+539
+02:09:26,963 --> 02:09:51,123
+Örneğin her bir örneğe olan uzaklıkları lazım hiyerarşik kümeleme için. Çünkü en yakınlarını birbirine birleştirebilir gidiyor. Dolayısıyla önerin koordinatlarını bilmeseniz bile o örneklerin birbirlerine benzerliklerini ya da uzaklıklarını bilmeniz gerçekleştirebilirsiniz. Burada da yapılan işlem bu. Bunu yaparak siz ne yapabilirsiniz? Bir kümeleme yapıp burada istediğiniz sayıda kümeyi etmeniz.
+
+540
+02:09:52,756 --> 02:09:58,856
+Aslında kümeleme algoritmalarının sonuçlarını birleştirmeniz mümkün hale geliyor.
+
+541
+02:09:59,576 --> 02:10:02,316
+Niye bunları yapıyoruz? Dediğim gibi şu sebepten dolayı.
+
+542
+02:10:03,636 --> 02:10:09,936
+Kümelerin etiketleri dediğim gibi birbiriyle tamamen aynı kümelemeyi yapmış şeyler, birbirinden tamamen farklı etiketler bunlara vermiş olabilirler.
+
+543
+02:10:09,936 --> 02:10:11,716
+Sınıflandırma gibi olmadığından dolayı.
+
+544
+02:10:13,876 --> 02:10:18,155
+Güzel, evet. Burası da bitti. Peki sorusu olan var mı arkadaşlar?
+
+545
+02:10:29,235 --> 02:10:45,216
+Peki arkadaşlar, o zaman hepiniz için teşekkür ediyorum. Önümüzdeki hafta boosting ile devam edeceğiz. Boosting'i tamamladıktan sonra arada cızırdıyor.
+
+546
+02:10:52,307 --> 02:10:54,252
+Şu anda nasıl arkadaşlar?
+
+547
+02:11:00,180 --> 02:11:00,820
+Son konu.
+
+548
+02:11:01,820 --> 02:11:02,960
+Hala kötü mü?
+
+549
+02:11:05,960 --> 02:11:08,540
+Son konuştuğunuz kısım iyi geliyor hocam.
+
+550
+02:11:13,268 --> 02:11:14,907
+Son konuştuğum kısım iyi geliyor.
+
+551
+02:11:17,247 --> 02:11:20,047
+Neyse, tamam şöyle söyleyeyim.
+
+552
+02:11:20,047 --> 02:11:22,047
+Şimdi önümüzdeki...
+
+553
+02:11:31,828 --> 02:11:57,968
+Burayı bitirdik. Sonra da yapay sinir ağlarında Kollektif Öğrenme kısmına geçeceğiz. Sesim yine mi kötü şu anda? Bir dakika, videoyu durdursam belki birazcık daha şey olur mu? Şu anda nasıl arkadaşlar sesim?
+
+554
+02:12:00,115 --> 02:12:01,516
+Geliyor hocam, şimdi geliyor.
+
+555
+02:12:02,475 --> 02:12:03,716
+Geliyor, peki tamam.
+
+556
+02:12:07,572 --> 02:12:31,652
+Ondan sonraki hafta zaten şeye başlayacağız artık. Yapay sinir ağlarında kollektif öğrenmeden bahsedeceğiz. Karara açılarında bahsettik. Şimdi yapay sinir ağlarında bunun eski ve yeni nesil kullanımından bahsedeceğiz. Sonra makine öğrenmesinde yeni problemlerle aslında benim anlatacağım konular bitmiş olacak. Yani benim size daha anlatacağım. Dört haftalık bir ders kaldı aslında.
+
+557
+02:12:32,340 --> 02:12:57,340
+Bir tanesi zaten yılbaşı tatiline gidiyor derslerimizin. Ama bence dolu dolu ders yaptık yani. Orada çok fazla tatile gitmedi herhalde değil mi? Noktada bir sıkıntı olacak diye düşünmüyorum. Sonra bir tane üçüncü ödevimiz var. Ondan sonra zaten projeleriniz var. Projelerinizle alakalı dediğim gibi daha şey yapmadık, belirlemedik. Onu belirleyeceğiz. Şu öğrenci proje sunumlarının...
+
+558
+02:12:58,996 --> 02:13:17,275
+...belki kaydırabiliriz. Yani final haftasında belki kayma ihtimali olabilir ama kesin değil. Burada da kalabilir. Ama burada kalsa bile en azından 18 Aralık'tan 8 Ocağı kadar vaktiniz olacak. O noktada bir sıkıntı yaşamayacaksınız diye ümit ediyorum.
+
+559
+02:13:18,100 --> 02:13:27,440
+Bilgi arkadaşlar, hepinize geleni için tekrar teşekkür ediyorum. Haftaya aynı gün aynı saatte görüşmek üzere diyorum. Hepiniz sağlıcakla kalın.
+
+560
+02:13:27,820 --> 02:13:28,720
+Teşekkürler hocam.
+
+561
+02:13:29,220 --> 02:13:30,680
+İyi akşamlar hocam.
+
+562
+02:13:31,420 --> 02:13:32,320
+İyi akşamlar.

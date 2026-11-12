@@ -1,0 +1,2275 @@
+1
+00:02:24,243 --> 00:02:25,104
+Selamlar hocam.
+
+2
+00:06:44,211 --> 00:06:49,072
+Geliyor Hocam. Evet Hocam geliyor. Merhabalar hepiniz hoş geldiniz.
+
+3
+00:06:49,072 --> 00:06:57,291
+Bugünki dersimize. 2-3 dakika bekleyelim. 2-5 geçe başlayalım arkadaşlar.
+
+4
+00:10:32,563 --> 00:10:46,624
+Evet, merhaba arkadaşlar. 14 kişiye olmuşuz. Daha fazla gelen olmaz herhalde. Peki, şimdi önce bir bünkü planımıza bir bakalım.
+
+5
+00:10:51,028 --> 00:11:13,008
+Bugünkü planımızda 30 Ekim. Geçen haftadan şu regresyonun bir kısmı kalmıştı. Ona bakarız. Sonra Stochastic Gradient Descent ve onun sürelerini göreceğiz.
+
+6
+00:11:16,240 --> 00:11:24,840
+Aslında optimizasyon kısmını tamamlamış olacağız. Ödeviniz optimizasyonla ilgili olacak zaten. O dersin en sonunda sizlerle paylaşacağım.
+
+7
+00:11:26,840 --> 00:11:33,539
+Şimdi kapatalım. Regresyonda kaldığımız yerden devam edelim.
+
+8
+00:11:35,480 --> 00:11:43,240
+Şimdi geçen hafta hatırlarsanız regresyon diye bir konuya başlamıştık. Bu regresyon konusunda...
+
+9
+00:11:43,796 --> 00:11:59,556
+Elimizde belli data point'ler vardı. Bu data point'ler için belli bir input'larımız vardı. Bir de output'umuz vardı. Bu input'a karşılık output'u üreten bir model bulmaya çalışıyorduk. Burada bu model tanımlamamız da…
+
+10
+00:12:00,083 --> 00:12:08,723
+Modelin lineer olması ve lineer olmaması üzerinden konuşmuştuk. Lineer olmasının şartlarından bahsetmiştik.
+
+11
+00:12:08,723 --> 00:12:27,423
+İşte bulacağımız kat sayılara göre türevi aldığımızda hala bu türevi alınmış fonksiyon içerisinde hala bizim weightler varsa o durumda bunun non-lineer olduğunu ama yoksa bu durumda lineer olduğundan bahsetmiştik.
+
+12
+00:12:28,083 --> 00:12:38,763
+Bir örneğini görüyorsunuz. Şurayı düşünürsek bunun beta 1 bizim burada bulmaya çalışacağımız şeyler, ağırlık hat sayılar. Şunların ikisi beta 1 ve beta 2.
+
+13
+00:12:41,063 --> 00:12:49,644
+Biz burada beta 1'e göre türev aldığımızda sinis x burada herhangi bir beta yok. Beta 2'ye göre türev aldığımızda yine bu da beta 2'den bağımsız.
+
+14
+00:12:50,144 --> 00:12:53,723
+Dolayısıyla modern diner oldur. Ama mesela şurada beta 1 artı kosmos beta.
+
+15
+00:12:54,419 --> 00:13:05,179
+2 çarpı x de burada türev aldığımızda hala beta 1'e göre independent fakat beta 2'ye göre hala beta 2'nin olduğu. B2 yanlış yazılmış. Beta 2 olması lazım bunun.
+
+16
+00:13:11,019 --> 00:13:18,159
+Dolayısıyla model non-linear'di. Şimdi modelin linear olduğu durumda yapabileceğimiz şeyden bahsetmiştik aslında.
+
+17
+00:13:18,687 --> 00:13:27,168
+Neredeydi? O istediğimiz kadar fazla boyutu olsun noktaların vesaire vesaire. Ya da karelerini falan da alabiliyorduk hatırlarsanız.
+
+18
+00:13:27,888 --> 00:13:37,488
+Ama temelde o şeyi bulmaya çalışıyorum. Yaptığımız işe şurasıydı. Beta aslında bu kadar basitti.
+
+19
+00:13:37,488 --> 00:13:44,248
+Yani basit derken gösterini basit bulmak her zaman basit değildi.
+
+20
+00:13:44,563 --> 00:13:54,364
+Sonuçta şöyle bir modelden bahsediyorduk. Linear olduğu durumda her zaman. Burada amacımız beta yalnız bırakmak.
+
+21
+00:13:54,364 --> 00:14:06,364
+Tahmin edebileceğiniz gibi beta yalnız bırakabilmek için de her iki tarafı x'in tersine bölelim diye konuşmuş. Pardon, x'e bölmek her iki tarafı da.
+
+22
+00:14:06,364 --> 00:14:12,163
+Ama matrislerde bölme yoktu. Dolayısıyla x'in bir matris olduğunu hatırlayın.
+
+23
+00:14:12,211 --> 00:14:25,152
+X'in transpozunu bulmamız ve onunla tersini bulmamız ve X ile çarptığımız zaman da bu durumda bir matris elde etmiş olacağız ve sanki burası birmiş gibi olacak.
+
+24
+00:14:25,152 --> 00:14:27,892
+Çünkü bir matris ile betaya çarptığımız zaman zaten betayı bulacağız.
+
+25
+00:14:28,272 --> 00:14:55,272
+Her iki tarafı x üzeri eksi bir ile çarptığımızda dolayısıyla bu işi yapabildik. Fakat x üzeri eksi bir her zaman olabilen bir şey değildi. Neden? Çünkü bir madresin tersine alabilmek için o madresin kara bir madres olması gerekiyordu. Kara bir madres olması için de yaptığımız şey aslında ilk önce buradaki kısmın bir kara madres olmasını sağlamaktı. Bunun için de x'in transpoz ile çarptığımızda, yani şurada gördüğünüz gibi her iki tarafı x'in transpoz ile çarptığımızda şu kısım...
+
+26
+00:14:55,827 --> 00:15:19,307
+Her zaman kare bir matristi. Bu kare matrisin de tersini her iki tarafla çarparsak dolayısıyla burada tersi ve kendisini çarpıp burası yine birim matris olacak. Dolayısıyla beta, şurası birim matris kalacağından beta eşittir. Burası olacaktı. Şimdi bunu lineer olan bütün her şey için yapabileceğimizden bahsetmiştik. Fakat burada bir sıkıntı vardı. Neydi o sıkıntı arkadaşlar?
+
+27
+00:15:25,172 --> 00:15:27,432
+Konuşabilirsiniz ya da chatten yazabilirsiniz.
+
+28
+00:15:31,155 --> 00:15:39,295
+Boyutları çok fazla olduğu zaman hocam, 1 milyona 1 milyon olduğu zaman da bu mantıklı gaz pozunu almak çok da mümkün olmuyor.
+
+29
+00:15:39,764 --> 00:15:41,244
+Transpoz değil de tersini.
+
+30
+00:15:41,403 --> 00:15:42,364
+Tersini almak.
+
+31
+00:15:43,943 --> 00:15:49,124
+Mümkün olmuyor derken hem memori problemi olabilir hem de hız açısından problemliydi bu.
+
+32
+00:15:49,683 --> 00:15:51,703
+Geçen hafta göstermiştik onu.
+
+33
+00:15:52,144 --> 00:15:59,244
+Mühendis'in boyutuyla bir mühendis'in tersini almanın gerektirdiği zaman eksponansiyel bir şekilde artıyordu.
+
+34
+00:15:59,803 --> 00:16:03,543
+Yani iki katına çıktığı zaman o da iki katına çıkmıyor. Daha da yüksek bir şey çıkıyordu.
+
+35
+00:16:03,543 --> 00:16:07,543
+Dolayısıyla çok büyük miktarda datanız varsa elinizde.
+
+36
+00:16:07,700 --> 00:16:23,259
+Örnek sayınız çok fazlaysa bunu tek bir adımda yapmamız tehlike olarak mümkün ama pratikte zorlayan bir süreçti. Şimdi bunun dediğim gibi lineer olması durumunda bu tarz yöntemler uygulayabiliyorduk.
+
+37
+00:16:23,259 --> 00:16:32,519
+Fakat matrisin yani veri boyutumuzun büyük olduğu durumlarda örnek sayısı anlamında diyorum bu dertli olabiliyordu.
+
+38
+00:16:34,131 --> 00:16:47,807
+Bu noktada ikinci kısma gelirsek, bir de bunlar lineer olmayan modeller olabilirdi. Bundan da bahsetmiştik. Lineer olmayan durumlarda yapabileceğimiz şeyler iki tane...
+
+39
+00:16:47,807 --> 00:17:08,488
+Durumdan bahsetmiştik. Bir tanesi transformasyonlar. Yani elimizdeki modeli lineal bir modele dönüştürmek. Bu her zaman uygulanabilir bir şey değil. Uygulanabileceği zaman uygulanır. Onda bir sıkıntı yok ama her zaman uygulanabilecek bir şey değildi. Diğer durum ise iteratif estimation. Yani tek bir adımda, tek bir seferde analitik bir çözümle sonuca ulaşmak yerine.
+
+40
+00:17:09,011 --> 00:17:23,412
+Başlangıçta rastgele bir şey tahmin edelim. Daha sonra da bu tahminimizi adım adım iyileştirelim. Ki bunu da aslında daha önce görmüştük bizim standart gradient descent algoritmamızda. Literative estimation dediğimiz şey de buydu.
+
+41
+00:17:25,556 --> 00:17:41,296
+Aynı zamanda model liner bile olsa yine de demin bahsettiğimiz büyük boyutlarda maddesini tersine alma işlemleri bağlı olduğundan dolayı o durumda yine bu iteratif estimation'a ne yapabiliriz kullanılması mümkün olabilecektir.
+
+42
+00:17:41,296 --> 00:17:46,496
+Hatta gerekli de olabilecektir belki. Dediğim gibi bu oyta modele hıza bağlı olarak.
+
+43
+00:17:47,276 --> 00:17:50,715
+Şimdi buraları geçelim çift şeye. Ne derler ona?
+
+44
+00:17:51,380 --> 00:17:56,320
+Diner hale getirmek kısmına onlar zaten standart yaklaşımlar.
+
+45
+00:17:56,819 --> 00:18:22,779
+Şimdi gelelim, biz elimizde bir veri kümesi var. X'lerimiz var, Y'lerimiz var. Şimdi X, Y, Y dediğimiz inci örnek aslında. X, Y bir vektör. D tane boyutu var. Yani şu D tane boyutu var. Y dediğimiz ise bir vektör. Y, Y dediğimizde pardon bir sayı. O tek bir ifade.
+
+46
+00:18:24,819 --> 00:18:47,179
+Burada namur of data points. Böyle bir datamız var. Y eşittir f beta x. Yani şurada bir x'imiz var. Bu x'imiz bizim input'umuz. Bir beta'mız var ki bu beta bizim işte modelimizin öğreneceği parametreleri ifade ediyor. Daha sonra da buna göre bir sonuç çıkıyor ve bir y'yi biz tahmin etmeye çalışıyoruz. Böyle bir modelimizin olduğunu varsayıyoruz.
+
+47
+00:18:47,604 --> 00:19:15,084
+Burada y eşittir n çarpı delik bir matriz. Yani n tane satırımız var, d tane sütunumuz var. x eşittir n çarpı d. y eşittir n çarpı birlik bir matriz ya da vektör çok önemli değil. Şimdi re i dediğimiz şey rezidüyü gösteriyor. Rezidü dediğimiz şey neymiş? Bakın yi eksi f beta çarpı x i. Yani elimizdeki mevcut b'ye göre, hani b'yi atım adım ilerleteceğiz ya.
+
+48
+00:19:15,604 --> 00:19:37,124
+Elimizdeki mevcut B'ye göre bizim tahminimiz. Yani şurası aslında YI hati ifade ediyor. Şuradaki şu F'den sonraki kısım şöyle yapayım. Burası bizim tahminimiz. Gerçekle tahmin arasındaki fark rezidü yani bizim hatamız. Bu da en çarpı birlik bir matriz olacaktır. Betalar zaten optimize edeceğimiz parametreler.
+
+49
+00:19:39,763 --> 00:19:58,743
+Beta'nın hatası, bunu şu şekilde ifade edelim. Rezi, yani rezi, inci örneğin hatası, inci örnekte yapılan hatanın karelerinin toplamı. Bu bizim şeyimiz. Amacımız da şuradaki fonksiyonu, pardon, şuradaki şu fonksiyonu minimize etmek.
+
+50
+00:20:00,051 --> 00:20:16,152
+Şu fonksiyonun, yani şu fonksiyon neye eşit? Rezidülerin, karelerinin toplamını eşit. Bu fonksiyonu minimum yapan beta değerini bulmaya çalışıyoruz. Tamam mı? Buraya kadar takip edebildik mi? Buraya kadar herhangi bir sıkıntı var mı?
+
+51
+00:20:20,276 --> 00:20:23,236
+Yani bir hata fonksiyonumuz, dos fonksiyonumuz aslında şurası.
+
+52
+00:20:24,695 --> 00:20:27,316
+Dos fonksiyonumuzu minimize edeceğiz.
+
+53
+00:20:27,316 --> 00:20:27,776
+Evet.
+
+54
+00:20:30,596 --> 00:20:32,236
+Bakıldığınız bir yer var mı arkadaşlar?
+
+55
+00:20:37,172 --> 00:20:37,771
+Yok hocam.
+
+56
+00:20:39,311 --> 00:20:44,711
+Tamam, peki. Şimdi bunu yapmanın da çok kabaca yolu neydi?
+
+57
+00:20:45,512 --> 00:20:55,392
+Türevin sıfır olduğu yer aslında eğer ki konveks bir fonksiyonumuz var ise, konveks bir fonksiyonda türevin sıfır olduğu yer mutlaka nedir arkadaşlar?
+
+58
+00:20:56,552 --> 00:20:59,351
+Konveks bir fonksiyonda türevin sıfır olduğu yer mutlaka nedir arkadaşlar?
+
+59
+00:20:59,351 --> 00:21:03,432
+Kureval minimumdur değil mi? Peki, konveks değilse?
+
+60
+00:21:06,195 --> 00:21:08,275
+Türev 0 olduğu yer neler olabilir?
+
+61
+00:21:10,036 --> 00:21:11,435
+Lokal minimum olabilir.
+
+62
+00:21:12,056 --> 00:21:13,455
+Lokal minimum olabilir. Başka?
+
+63
+00:21:13,475 --> 00:21:14,755
+Lokal maksimum da olabilir.
+
+64
+00:21:15,435 --> 00:21:22,295
+Evet, maksimumda da türev 0'dır çünkü. Başka nasıl bir şey olabilirdi? Bir olasılık daha vardır.
+
+65
+00:21:22,315 --> 00:21:23,835
+Spesifik bir şey olmayabilir belki de hocam.
+
+66
+00:21:24,403 --> 00:21:27,043
+Türev 0 olduğu bir nokta.
+
+67
+00:21:27,463 --> 00:21:28,584
+Saddle point.
+
+68
+00:21:28,684 --> 00:21:33,963
+Saddle point'ler de türev 0'dır.
+
+69
+00:21:34,420 --> 00:21:45,960
+Dolayısıyla şimdi burada bizim amacımız türevin sıfır olduğu yeri bulmaktı. Geçen hafta görmüştük. Gradiat Descent her zaman ne yapıyordu? Çok iyi bir şekilde türevin sıfır olduğu yere doğru gidiyordu.
+
+70
+00:21:45,960 --> 00:21:54,019
+Ve hani minimuma doğru gidiyordu. Ama Newton'da falan böyle bazen problemler olabiliyordu onları geçen haftadan. Hatırlarsınız. Ama onları düzeltmek mümkün.
+
+71
+00:21:54,139 --> 00:22:01,960
+Düzeltmek derken şu şekilde, yani kontrol ederek o iterasyonlara devam etmek mümkün. Yani doğruya doğru yani...
+
+72
+00:22:02,420 --> 00:22:23,039
+Sonuçta bizim amacımız ne? Sürekli bu loss fonksiyonun azalması. Eğer mesela Newton'da, second order bir şey kullandığımızda, Newton'da loss fonksiyonu azalmaya devam etmek yerine bir noktada artıyorsa, o noktada ne yapmak gerekecektir? Aslında o güncellemeyi kabul etmemek gerekecektir.
+
+73
+00:22:23,039 --> 00:22:29,360
+Dolayısıyla ön kontrollerle ya da post ya da pre kontrollerle hala Newton'u kullanabiliriz.
+
+74
+00:22:30,420 --> 00:22:38,860
+Bunun iyi tarafı neydi? İlk önce onu bir hatırlayalım. Newton'un. Yani second order information'ı kullanmanın iyi yolu neydi? İyi tarafı.
+
+75
+00:22:39,900 --> 00:22:49,860
+Adım sayısı çok düşüktü hocam. Eğer fonksiyon ikinci derecedense tek adımda buluyordu zaten. Çünkü zaten Newton ne yapıyordu?
+
+76
+00:22:51,476 --> 00:23:18,476
+Gradient descent ya da benzer algoritma o fonksiyonun o noktada lineermiş gibi hareket etmemizi sağlıyordu. Fakat second order bilgiyi kullandığınızda aslında o noktaya lineer bir şey değil de kuadratik bir şey oturtuyordu. Ve o kuadratik bir şeyin minimumunu bize bir sonraki adımda veriyordu. Dolayısıyla fonksiyonun kendisi de kuadratikse zaten otomatik olarak tek adımda erişiyordu. Ama kuadratik değilse...
+
+77
+00:23:18,736 --> 00:23:31,716
+Bu durumda tek adımda gitmesi mümkün değil ama yine de Gradient Ascent gibi first order yöntemlere göre çok daha hızlı konverj ediyordu bizim istediğimiz noktaya.
+
+78
+00:23:32,256 --> 00:23:37,776
+Peki kötü tarafı neydi? Stabil olmayan bir kısmı vardı, ondan bahsetmiştik. Başka kötü olan tarafı neydi?
+
+79
+00:23:39,056 --> 00:23:39,816
+Çok yavaş.
+
+80
+00:23:41,172 --> 00:24:04,112
+İkinci dereceden türe alındığı için hocam çok yavaş çalışıyordum. Mesela dün ben denedim hocam o kodlarda. Gradient descent hemen 10 saniyede orayı verdi bana. Ama Newton Rapson Second Order'ı denediğim zaman bilgisayar baya bir kastı, baya bir çalıştı, çalıştı, çalıştı. Daha sonra baya bir bekledikten sonra bana sonucu verdi.
+
+81
+00:24:04,531 --> 00:24:18,551
+Anladım. Yani adım sayısı anlamında daha az adımda sonuca varıyor. Ama her bir adımda yapılan hesap, bu düşündüğünüzde o çok da, yani süre açısından bakarsanız çok da belki faydası olmayabiliyordu. Tamam mı?
+
+82
+00:24:18,867 --> 00:24:31,027
+Çünkü orada esyan matrisinin tersini almak gerekiyordu. Esyan matrisinin tersini almak da yine de bahsettiğimiz gibi matrisin tersini almaktı. Matrisin tersi de boyutuyla ne oluyordu? Üstel olarak gidiyordu.
+
+83
+00:24:31,547 --> 00:24:38,847
+Tabii oradaki matris D çarpı D'lik bir matris. Yani boyut sayısı çarpı boyut sayısı. Örnek sayısına bağımlı bir şey değil.
+
+84
+00:24:39,228 --> 00:24:46,367
+Boyut sayısı çarpı boyut sayısılık bir matris ama yine de oldukça büyük boyutlarla çalışıyor olabilirsiniz. Bu da işi oldukça yavaşlatabilir.
+
+85
+00:24:46,867 --> 00:24:54,667
+Şimdi, bu noktada biz yine standart olarak türevin sıfır olduğu noktayı bulmaya çalışacağız. GrandTent descent ile bunu yapmaya çalışacağız ilk önce.
+
+86
+00:24:55,268 --> 00:25:07,367
+Şimdi, non-negative, iterative estimation, non-negative, şimdi buraya bakarsak, şurasına bakalım. Elimizde şu fonksiyon var. Bu fonksiyonun, şu fonksiyonun bizim neye göre türevini alacağız?
+
+87
+00:25:08,268 --> 00:25:14,027
+Bt'ye göre türevini alacağız. Şuradaki ri dediğimiz şeyin içerisi de şurası aslında bakın. Şurası, değil mi?
+
+88
+00:25:16,339 --> 00:25:34,139
+Şimdi burada R kareydi fonksiyon kendisi. 2 çarpı R çarpı, D, R bölü, D, B. D, R bölü, D, B dediğimiz şey yani R'nin B'ye göre türevi. Bu da N çarpı delik bir matriz. Şuradaki R1'den R, N'e kadar olanlar her bir örnek için olan rezitüler.
+
+89
+00:25:34,740 --> 00:25:44,319
+Dolayısıyla buraya bakarsanız N'e, şurada N tane örnek var ve her bir boyutu var. Şu N çarpı delik matriz şuna, şurada gördüğünüz matrize.
+
+90
+00:25:44,339 --> 00:25:46,339
+Jacobian matris deniyor. Tamam mı?
+
+91
+00:25:46,940 --> 00:25:54,299
+Ve Jacobian matrisi, yani şu DR çarpı DB dediğimiz şey aslında standart gradient descent ile kullanacağımız iş.
+
+92
+00:25:54,360 --> 00:25:59,380
+Yani şuraya bakarsak, işte epsilon çarpı o noktadaki türevdi.
+
+93
+00:25:59,900 --> 00:26:02,539
+Gradient descent'in yaptığı şey bu aslında.
+
+94
+00:26:04,259 --> 00:26:08,860
+Burada işte Jacobian'i düşünürseniz, burada Jacobian'ın transpozuna denk geliyor bu.
+
+95
+00:26:08,980 --> 00:26:11,740
+Jacobian'ın transpozu cevabı R'ye denk geliyor, öyle söyleyeyim.
+
+96
+00:26:12,064 --> 00:26:36,624
+Bunun türevi. Şu matrise şey dersek, ne derler ona? Şu matrise Jacobian matris dersek, yani şurasına Jacobian matris dersek, Jacobian matris çarpı R çarpı 2. İki çok çok önemli değil çünkü epsilon ile alakalı bir mevzu. Yani Jacobian matrisin transpozu çarpı R'ye denk geliyor bizim standart gradyen disentimiz.
+
+97
+00:26:37,107 --> 00:26:45,387
+Ve bunu yaptığımızda D çarpı birlik bir vektör öde etmiş oluyor. Burası çünkü D çarpı. Burası da N çarpı D. Dolayısıyla D çarpı birlik bir şey oluyor burası.
+
+98
+00:26:45,387 --> 00:26:58,387
+Şimdi, eğer ki gradient descent yerine Newton-Rabson'u kullanmaya kalkarsak yapacağımız iş...
+
+99
+00:26:58,579 --> 00:27:06,779
+Şu hale geliyor. Yani Epsilon çarpı bu sefer neydi? Newton Rapson'un Second Order'ının hali.
+
+100
+00:27:08,051 --> 00:27:26,131
+Buraları W diye de düşünebilirdim. Bulacağımız şey artık beta K artı bir, yani K artı birinci adımdaki beta eşittir. K'ncı adımdaki beta eksi, şurası F bölü, F'in ikinci türeviydi hatırlıyorsunuz değil mi? Bu ikisinin bölümüydü.
+
+101
+00:27:34,740 --> 00:27:43,519
+Jacobian Matris'in transposuyla Jacobian Matris'in kendisinin, yani buna author product diye ifade ediliyor.
+
+102
+00:27:45,379 --> 00:27:50,259
+Buna yaklaşık bir değer, yani yaklaşık bir değer derken bunun yerine kullanılabilecek bir değer.
+
+103
+00:27:50,259 --> 00:27:59,000
+Direkt birebir aynısı değil. Şu eşit değil bakın. Çünkü Jacobian Matris'i düşünürseniz, Jacobian Matris'e bakarsanız Jacobian Matris birinci dereceden bir şey.
+
+104
+00:28:02,420 --> 00:28:16,340
+İki dereceye, transposuyla kendisini çarptığınızda aslında birinci dereceden türevlerin birbirleriyle çarpımı oluşuyor. Yani ikinci dereceden türev falan değil bu. Yani birinci dereceden iki tane türevi birbirine çarparsanız ikinci dereceden türev elde etmezsiniz.
+
+105
+00:28:17,044 --> 00:28:43,403
+Dolayısıyla bu tamamen direkt birebir aynısı değil fakat yerine kullanılabilecek bir şey. Yani bu approximate bir yöntem. Bu neyi sağlıyor? Size ikinci dereceden türev hesaplamak yerine bu tarz bir approximate yöntemle daha hızlı bir şekilde yine Newton kadar olmasa da gradient descenten daha hızlı bir yöntem.
+
+106
+00:28:43,988 --> 00:28:58,887
+Konverge hızı sağlıyor. Şimdi eğer ki şuna, şu gördüğümüz şurasına, Jacobian'ın Transposed'u çarpı Jacobian'la yazarsanız, burası da zaten şunu da görmüştük bir önceki slide'ımızda.
+
+107
+00:29:02,132 --> 00:29:22,192
+Şurası da Jacobian'ın transposu çarpı R'ydi hatırlarsanız. Dolayısıyla şurasını gördüğünüzde Jacobian transposu çarpı R bölü Jacobian haline geliyor. Burada bölme işlemi yerine ne yapmamız gerekiyor bizim? Tersiyle çarpma işlemi yapıyor. Yani inversiyle çarpmamız gerekiyor.
+
+108
+00:29:24,915 --> 00:29:34,915
+Şu inverse Jacobian'ın transpozu çarpı Jacobian'ın inversi çarpı Jacobian'ın transpozuna arkadaşlar posedev inverse deniyor. Yani şu gördüğünüz kısım.
+
+109
+00:29:35,700 --> 00:30:00,860
+Şuradaki şu gördüğünüz kısmı tamam mı? Posada Inverse olarak ifade ediliyor. Posada Inverse olarak bunu yazarsanız, yani jenip Posada Inverse olarak ifade ediyor, bunu da yazarsanız o zaman, şurada gördüğünüz Newton-Rabson oldukça basitleştirilmiş bir halde gözüküyor sadece. Yani basit değil. Çünkü şu PV aslında şundan oluşuyor. Dolayısıyla şu şekilde siz Newton-Rabson'u ne yapabiliyorsunuz? Gerçekleştirebiliyorsunuz. Tamam mı?
+
+110
+00:30:01,940 --> 00:30:24,440
+Gradient Descent böyleydi. Bakın, Newton'un apsonsu ise bu hale geliyor. Dediğim gibi bizim elimizde burada N tane nokta var. N tane nokta var. Her biri D boyutlu ve bir de Y'lerimiz var. Bunların üzerinden, rezidüler üzerinden, rezidüler neydi işte o anki tahminle gerçeklerin arasındaki farklar. Bunların üzerinden bu işlemini gerçekleştirebiliyoruz.
+
+111
+00:30:24,440 --> 00:30:27,799
+Şimdi bununla ilgili bir örnek görelim.
+
+112
+00:30:28,435 --> 00:30:54,575
+Fonksiyonumuz şu olsun. Fonksiyonumuz y eşittir sinüs beta 1 çarpı x. Yani bu beta 1 bizim bulmaya çalışacağımız şey. Tamam. Beta'nın farklı farklı değerleri olabilir. Biz bu değerlerin içerisinden bize ne veriliyor ilk önce onu söyleyelim. Bize bir sürü x veriliyor ve bu her bir x'e karşılık istenen y'ler veriliyor. x şudur, y şudur, x şudur, y şudur. Ve biz de modelin şöyle bir şey olduğunu varsayıyoruz.
+
+113
+00:30:55,028 --> 00:31:17,348
+Diyelim ki diyoruz böyledir model. Ve model böyle ise bu model için elimizdeki datalara en uygun beta 1'i bulmaya çalışacağız. Buradaki beta 1 işte 0.2 olabilir, 5 olabilir, 6 olabilir vesaire vesaire bir sürü bir şeyler olabilirler. Şimdi burada bizim yapmamız gereken şey şu beta 1'i bir yerden başlayıp adım adım adım adım ilerletmek.
+
+114
+00:31:18,516 --> 00:31:44,236
+Şimdi burada bakalım neler var elimizde. Blue Points dediği datalar. Yani şuradaki şu nokta nokta olanlar bizim datalar. Bize verilmiş olan datalar. Green Line, yani şuradaki yeşil çizgi, şu yeşil çizgi görüyorsunuz. Bu yeşil çizgi bizim initial gesimiz. Yani başlangıçta beta için mesela initial beta eşittir, eksi bir demişiz. Yani başlangıçta model şöyleymiş. Y eşittir, sinüs, eksi x.
+
+115
+00:31:45,011 --> 00:32:10,271
+Bunun için çizilecek olan fonksiyonun şöyle bir fonksiyon, şu yeşil olan fonksiyon. Şurada gördüğünüz yeşil olan bir fonksiyon. Sonra blue lens, yani yeşilden başlayıp biz adım adım adım adım ne yapacağız? Bunu iyileştireceğiz. Yani beta 1'i değiştireceğiz. Beta 1'i değiştire, değiştire, değiştire en sonunda bir yere kadar getiriyoruz. Ve orada en sonunda da diyoruz ki bizim tahminimiz budur. Mesela o en son tahmin de şuradaki kırmızı olan.
+
+116
+00:32:10,771 --> 00:32:18,471
+Kırmızı olanı görüyorsunuz. Şöyle üstünden mavi noktada oldukça oturmuş bir halde görüyorsunuz.
+
+117
+00:32:19,371 --> 00:32:31,891
+Şimdi gerçek olan B değeri eksi 0.5'miş. Biz eksi 1'den başlamışız. Yani eksi 1'den eksi 0.5'e doğru bir hareket bekliyoruz normalde olması gereken şey bu.
+
+118
+00:32:37,395 --> 00:32:44,215
+Gradient descent ile bunu gerçekleştirdiğimizde, şu gradient descent ile bunu gerçekleştirdiğimizde, kod zaten burada incelersiniz.
+
+119
+00:32:45,556 --> 00:33:06,376
+Bakalım neler görüyoruz. Şimdi burada adım adım min square error'un değişimini gösteriyor. Birinci epsilonda hatta şu kadarmış. İkinci iterasyonunda pardon. Birinci iterasyon, ikinci iterasyon bu şekilde ilerliyorlar. En sonunda oldukça küçük bir değere yaklaşıyor zaten. Sıfıra çok yakın bir şey oluyor. Tamamen sıfır olabilir mi bu arkadaşlar? Min square error.
+
+120
+00:33:08,980 --> 00:33:13,480
+Ne zaman olabilir daha doğrusu? MinSquareError 0 ne zaman olabilir?
+
+121
+00:33:13,480 --> 00:33:15,480
+Sistem ezberlediği zaman?
+
+122
+00:33:15,480 --> 00:33:18,480
+Sistem ezberlediği zaman burada ezberleyemez.
+
+123
+00:33:18,480 --> 00:33:23,480
+Yani sonuçta şurada betanın yerine ne koyarsak koyalım burada ezberlemesi mümkün değil.
+
+124
+00:33:23,480 --> 00:33:27,435
+Ne gibi bir durumda 0 hata alabiliriz?
+
+125
+00:33:33,268 --> 00:33:34,028
+Hiçbir zaman o zaman.
+
+126
+00:33:36,147 --> 00:33:43,387
+Evet, hiçbir zaman doğru. Yani şu data pointler için alamayız. Peki öyle bir data pointler var mıdır ki sıfır hata alabilelim?
+
+127
+00:33:44,447 --> 00:33:47,347
+Yani o çizginin üzerindeki noktaları seçmişsek alabiliriz.
+
+128
+00:33:48,756 --> 00:34:07,956
+Eğer ki data pointlerin hepsi bizim tam bu işte y eşittir sinüs beta 1 çarpı x'te yani y eşittir sinüs eksi 0.5 çarpı x halin doğrusunun, doğrusu derse eğrisinin üzerinde ise, çünkü ben burada ne yapmışım? Gürültü eklemişim bakım dataları görüyor musunuz?
+
+129
+00:34:09,748 --> 00:34:33,347
+Şurada gözüküyor zaten gürültüler. Tam o çizginin üzerindelerse o zaman sıfıra inme ihtimali var. Sizin iteratif olarak bunu ilerlettiğiniz ama sıfıra tam olarak şu an gürültülü bir data için böyle bir modelle ne yapamazsınız? Sıfıra da erişemezsiniz. Sıfıra yakın bir yerde kalırsınız. Burada da zaten daha fazla iterasyonlar yapılmış ama hiçbir şey değişmemiş. Görüyorsunuz altıncı iterasyondan sonra daha da fazla bir şey yok.
+
+130
+00:34:33,347 --> 00:34:37,648
+Yani şu yeşilden başlamış, bir sonraki şu yandaki, bir sonraki burası, bir sonraki burası.
+
+131
+00:34:37,748 --> 00:34:42,488
+Bir sonraki burası, bir sonraki burası. Burada zaten oturmuş. Devamında da hep üzerinde kalmış.
+
+132
+00:34:43,587 --> 00:34:52,627
+Anlaşıldı mı arkadaşlar? Buradaki yaptığımız iş, yani şuradaki beta 1'i bulmak için yine gradient descent. Böyle bir model için bile bunu kullanabiliyoruz.
+
+133
+00:34:52,627 --> 00:34:59,596
+Şimdi, eğer ki ben...
+
+134
+00:35:00,947 --> 00:35:27,108
+Pardon, burada ben demin Gradiat Lisan'te dedim ya, pardon, Newton-Raphson'muş bu. Yanlış söylemiştim. Newton-Raphson'da bunu gerçekleştirmişiz. Eğer ki initial değerim, yani b'yi ben demin b'ye eşittir, eksi birden başlatmıştım. Eksi birden başlayarak ilerletmiştim. Eksi birden başlattığımda şu yeşil çizgi oluyor demiştim, fonksiyon. Fakat adım adım adım ilerlettiğimde şu kırmızıya oldukça verilere oturan bir yere erişebiliyorum.
+
+135
+00:35:28,052 --> 00:35:31,072
+Eğer ben eksi ikiden başlatırsam ne oluyor bakalım?
+
+136
+00:35:31,672 --> 00:35:33,252
+O zaman 50. sr. tatlılık.
+
+137
+00:35:36,980 --> 00:35:40,980
+Nasıl atladım ben onu araya arada? Tamam. Doğru diyorsun. Tamam tamam.
+
+138
+00:35:42,119 --> 00:35:46,159
+Tamam tamam. Newton Raphson mevzusunu o yüzden karıştırmışım ben. Teşekkür ederim.
+
+139
+00:35:46,699 --> 00:36:03,019
+Şimdi burada da Gradient Descent ile bunu yaptık. Daha doğrusu initial der B-1 iken, pardon, B-1 iken, epsilon şöyle iken bunu bu şekilde gerçekleştirmişiz.
+
+140
+00:36:04,340 --> 00:36:09,720
+Bu, [öğrenci] ve [öğrenci]'nın bir şey yapacağım.
+
+141
+00:36:18,387 --> 00:36:24,568
+Daha küçük adımlarla işi ilerletmeye çalışırsam ne olur diye bakmışız burada.
+
+142
+00:36:26,827 --> 00:36:28,527
+Tabii bir saniye burada bir şey.
+
+143
+00:36:28,967 --> 00:36:30,268
+Daha büyük değil mi hocam?
+
+144
+00:36:32,287 --> 00:36:37,827
+Pardon, yanlış söyledim. Daha büyük. Yanlış söyledim. Daha büyük adımlarla bu işi yapmaya çalışırsak ne olur diye bakmışız.
+
+145
+00:36:38,347 --> 00:36:43,447
+Burada min square error'un sıfıra inemediğini görüyorsunuz. Şurada.
+
+146
+00:36:44,052 --> 00:37:04,891
+Yani sıfıra yakın bir yere bile gelemiyor. Şurada gördüğünüz gibi oldukça iyiydi. Şurada daha çok küçük küçük adımlar atıyorduk. Buradaysa büyük adımlar atmışız. Büyük adımlar attığımızda [öğrenci]'yla ne yapamamışız? İstediğimiz sonuca varamamışız. Çünkü en sonda vardığımız yer şu kırmızı çizgi. Yani kırmızı çizgi bakın şöyle şöyle salınıyor görüyor musunuz?
+
+147
+00:37:06,099 --> 00:37:16,039
+Tam istediğimiz gibisinden dataya uygun bir şey elde edememişiz. Bazı yerlerde tabi ki dataya uygun ama genel olarak dataya uygun bir şey elde edememişiz.
+
+148
+00:37:16,960 --> 00:37:26,279
+Bunu Newton Raphson'la yaparsak, burada 7 adımda mesela sıfıra yakın bir yere varmış. B'yi eksi birden başlattığımızda.
+
+149
+00:37:27,987 --> 00:37:51,207
+B-2'den başlattığımızda yine istediğimiz sonucu alamamışız. İstediğimiz sonuç çünkü tam şuradaki gibi bir şeydi. Ama burada öyle bir şey göremiyoruz. Bu yine gidiyor işte şu yeşil çizgiyi görüyor musunuz salından? Görüyorsunuzdur. Oradan başlattığımızda yine istediğimiz şu kırmızı çizgiye erişmişiz. Bunun sebebi ne olabilir?
+
+150
+00:37:53,619 --> 00:38:15,960
+Newton-Raphson, herhangi bir step size falan yok bunu hatırlarsanız. Step size değil yani sonuçta buradaki problem. Buradaki problem ne olabilir? Bir tanesinde eksi birden başladığımızda istediğimiz yere varıyoruz. Bir tanesinde eksi ikiden başladığımızda istediğimiz yere varamıyoruz. Bunu görebilmek için aslında bakalım neymiş derdimiz.
+
+151
+00:38:16,467 --> 00:38:21,688
+Şimdi burada B1'in farklı değerleri için min square error'un değerleri var.
+
+152
+00:38:24,275 --> 00:38:51,496
+Şimdi b'nin sıfır olduğu yerde şöyle bir şeymiş, şöyleymiş, böyleymiş. Biz şimdi nerede başladık demin? Mesela şuraya bakalım. Burada eksi birden başladık. Eksi birde başladık. Eksi birde dediğimiz yer neresi? Şurası falan. Buradan başladığımızda işte aşağı doğru ne yapıyor? Şuraya kadar düşüyor değil mi? Burada oldukça iyi bir yere düşüyor. Fakat burada nereden başladık? Eksi ikiden başladık. Şimdi eksi ikiden başlayalım burada. Eksi iki nerede? Şurası. Eksi ikiden başladığımızda bu nereye düşecek? Şuraya düşecek.
+
+153
+00:38:52,019 --> 00:38:58,731
+Şuradaki tam şu noktaya da çektim. Oraya doğru ilerleyecek. Hani azala azala gittiğimde. Dolayısıyla...
+
+154
+00:38:59,956 --> 00:39:24,296
+Bu konveks olmayan bir fonksiyon şu anda gördüğünüz şey. Konveks olmayan bir fonksiyon üzerindeki optimizasyonda da vardığımız yer ne olmayabiliyordu arkadaşlar? Lokal minimum olmuyordu. Yani başladığımız yer aslında varacağımız yeri epey bir belirliyordu. Burada da bunların çok canlı bir örneğini görüyorsunuz. Yani işte şu araların içerisinde bir yerden başladıysak.
+
+155
+00:39:24,755 --> 00:39:42,655
+Nereden var? Mesela işte eksi 1'e yakın bir şey, eksi 1 ile işte 0 nokta belki, eksi 0 nokta 5, eksi 0 nokta 3, 4 falan civarında falan bir yerse, bu aralığın içerisinde bir yerden başladıysanız, buradan başlarsanız buraya düşersiniz, buradan başlarsanız buraya düşersiniz. Bu iyi durumlar.
+
+156
+00:39:42,655 --> 00:39:48,515
+M10'un haricindeki bütün ilk değerler için ne olacaktı arkadaşlar? İyi bir sonuç alamayacaksınız.
+
+157
+00:39:48,947 --> 00:39:56,728
+Daha doğrusu aldığınız yerin, aldığınız yerin minimum, yani lokal bir şey olacak, lokal bir minimum olacak, global olmayacak.
+
+158
+00:39:58,587 --> 00:40:06,487
+Şimdi başka bir örnek. Burada bu sefer tek boyutlu bu, şu tek boyutlu non-linear bir yapıdan bahsettik bakın burada.
+
+159
+00:40:06,807 --> 00:40:09,207
+Tek bir tane beta bir parametresini tahmin etmeye çalıştık.
+
+160
+00:40:09,619 --> 00:40:26,960
+Tek boyutlu bir beta bir parametresini tahmin ederken bile hala non-linear bir şeyiniz, fonksiyon varsa böyle problemler görebiliyorsunuz. Şimdi yine non-linear fakat iki boyutlu yani iki tane değişkeni birden optimize etmeye çalışacağız. Optimize etmeye çalışacağımız şey Gaussian eğrisi.
+
+161
+00:40:27,315 --> 00:40:44,195
+Elimizde yine demin bahsettiğimiz gibi bu sefer hatası birazcık daha az yani gürültüsü birazcık daha az bir şeyler var görüyorsunuz. Şu mavi noktalar var. Bu mavi noktalara uygun olan bir fonksiyon bulmaya çalışıyoruz. Daha doğrusu fonksiyon belli, fonksiyon şu. Zaten iki boyutta.
+
+162
+00:40:44,916 --> 00:41:00,655
+Gauss'un dağılımını gösteriyor. Probability değerlerini. İşte E üzeri x-b1'in karesi bölü 2 çarpı b2'nin karesi. Burada iki tane değişken var. Bir tanesi b1, bir tanesi b2. Biz bunları bulmaya çalışıyoruz.
+
+163
+00:41:00,655 --> 00:41:09,275
+Yani elimize bir sürü x'ler ve bunlara karşılık gelen y'ler var. Elimizde bu model var. Bu modeli biliyoruz. Bu modeli olduğunu, uyduğunu düşünüyoruz verilerin.
+
+164
+00:41:09,652 --> 00:41:33,492
+Ve biz buradaki bu modelin parametrelerini yani beta 1 ve beta 2'yi optimize etmeye çalışıyoruz. Bunu yine aynı yöntemle yapmaya kalktığımızda mesela şu başlangıçta initial b'lerimiz eksi 2'ye eksi 0.2'ymiş initial b'lerimiz. Ve onun karşılık geldiği fonksiyon şuradaki yeşilmiş. Bakın şurada yeşil çizgiyi görüyorsunuz.
+
+165
+00:41:33,748 --> 00:41:51,427
+Bu yeşil çizgi, Prat-Gent Lisent'de, işte epsilon'ı 0.1 almışız. Burada işte bir adım sonra buraya varmış, sonra bir adım sonra buraya varmış. İşte 3-4 tane adım sonra oldukça iyi bir yere oturmuş. En sonunda şu kırmızı çizgiyi görüyorsunuz. Kırmızı çizgi bizim en son tahminimiz. Tamam mı?
+
+166
+00:41:59,476 --> 00:42:22,276
+Epsilon'u küçük tutarsak, şuraya bakalım. Yine aynı yerden başlamışız yanlış hatırlamıyorsam. Evet, aynı yerden başlamışız. Yani şu yeşil çizgiden başlamışız. Epsilon bu sefer burada yani adım büyüklüğü. Epsilon dediğimiz şey, adım büyüklüğü 0.1'de burada daha küçük bir adımlar atıyoruz. Bakın daha minik minik adımlar. Burada ilerletmişiz ama işte maksimum iterasyon sayısına 10 yaptığım için ben.
+
+167
+00:42:22,639 --> 00:42:27,359
+Burada adım adım 10. adıma kadar gelmiş. Bunu daha devam ettirirsem sonuca varır mı sizce?
+
+168
+00:42:29,300 --> 00:42:29,720
+Varır.
+
+169
+00:42:30,579 --> 00:42:44,779
+Değil mi? Varır. Bu zaten oldukça umut vadeden gözüküyor. Bu tık tık tık tık buraya doğru ilerlerse sonuca varacaktır. Önünde herhangi bir sıkıntı yok. Şurası şöyle başlangıçta şöyle yavaş yavaş aşağı doğru kıvrıla kıvrıla inecek. Yavaş ilerliyor ama sonuca varacağı belli.
+
+170
+00:42:48,851 --> 00:43:05,331
+Newton-Raphson'la bu işi yapmaya kalkarsak, Newton-Raphson adım sayısı da vermiyoruz ona. O zaten burada bakalım 8. 9. iterasyonda tak diye oturmuş. İstediğimiz hale gelmiş. Burada herhangi bir sıkıntı yok.
+
+171
+00:43:07,795 --> 00:43:22,376
+Şimdi şurada şu model için B1'in farklı değerlerine karşılık üretilen, elimizdeki X ve Y'ler için üretilmiş olan hataları çizdirdim.
+
+172
+00:43:22,376 --> 00:43:24,364
+Burada ise...
+
+173
+00:43:28,115 --> 00:43:46,895
+B'ler bu sefer iki tane değil mi? Yani B1 ve B2 var bakın. İki tane B'miz var. B1 ve B2'nin her olası değeri için, yani her olası derken, eksi 4 de artı 4 arasındaki her olası değeri için fonksiyonun yine hatasını çizdirdim. Fonksiyon dediğimiz yine şuradaki bunun rezidüleri.
+
+174
+00:43:47,215 --> 00:44:03,635
+Yani beta 1'in değeri şuyken, beta 2'nin değeri şuyken bunun her bir x için ürettiği y'leri buldum ve o üretilen y'lerle gerçek o x için olan değeri çıkarttım birbirinden.
+
+175
+00:44:03,635 --> 00:44:13,155
+Onların işte karelerinin toplamıyla bütün elimizdeki 200 tane veri için bunu gerçekleştirmişim şurada. 200 veri için bu şekil çizilmiş. Böyle bir fonksiyon çıkmış.
+
+176
+00:44:13,487 --> 00:44:19,487
+Şimdi bu fonksiyona baktığımızda, bu fonksiyon konveks mi?
+
+177
+00:44:22,579 --> 00:44:23,180
+Değil.
+
+178
+00:44:26,559 --> 00:44:40,159
+Peki, konveks değil. Ama işte biraz tepeden şöyle bakmışım. Şöyle simetrik bir şey olduğunu görebiliyoruz. Şunu böyle çevirdiğimiz zaman. Simetrik bir şey olduğunu görebiliyoruz yukarıdan baktığımızda. Niye simetrik bu? Beta 2 var, beta 1 var.
+
+179
+00:44:41,420 --> 00:44:47,039
+Şimdi şöyle bir şey de söyleyeyim en baştan. Burada minimum nokta 2 tane değil mi gözüküyor?
+
+180
+00:44:48,244 --> 00:44:53,003
+Bunların minimumluklarının değerleri aynı mı?
+
+181
+00:44:56,024 --> 00:44:56,644
+Evet.
+
+182
+00:44:57,403 --> 00:45:07,563
+Aynı değil mi? İkisi de aşağı yukarı aynı değere var. Aynı miktarda bir hata değeri üretiyorlar.
+
+183
+00:45:08,923 --> 00:45:15,003
+Peki bunlar niye simetrikler? Şurası niye simetrik?
+
+184
+00:45:16,371 --> 00:45:19,791
+B1 ve B2 aslında birbirinin aynısı.
+
+185
+00:45:21,091 --> 00:45:22,831
+B1 ve B2 birbirinin aynısı değil.
+
+186
+00:45:27,443 --> 00:45:33,583
+Şimdi simetrik, şöyle simetrik. Şuraya göre simetrik değil herhalde bu. Onu zannetmiyorum.
+
+187
+00:45:37,331 --> 00:45:43,912
+Hocam, B2'ye göre çip fonksiyon olduğu için olabilir mi?
+
+188
+00:45:44,372 --> 00:45:45,592
+Şurada ne yazıyor arkadaşlar?
+
+189
+00:45:48,092 --> 00:45:48,711
+Kale.
+
+190
+00:45:49,460 --> 00:46:09,480
+Kare ezre değil mi? B2'nin eksi değeriyle artı değeri için burası ne üretecektir? Aynı şeyi üretecektir. Dolayısıyla B2'nin B2 boyutuna baktığımızda sıfırın sağında ve solundaki her türlü aynı değer için. Yani 3 için ve eksi 3 için, eksi 5 için ve artı 5 için hep aynı değerler üretecektir burası. Dolayısıyla bu şu anda simetri.
+
+191
+00:46:13,811 --> 00:46:35,771
+Bu fonksiyonu düşündüğümüzde bu fonksiyonun problemli tarafları var mı? Şimdi problemli taraftan kastımız ne demek? Şimdi ben şuralarda bir yerden başlasam mesela, tamam şuralardan bir yerden başlasam, bu ne olacaktır? Şuraya düşecektir değil mi? Aşağı yukarı düşünürseniz, bu buralarda bir yere düşecektir. Buralardan bir yerden başlasam bu da yine buraya doğru düşecektir. Şuralardan bir yerden başlasam şuraya düşecektir. Buralardan bir yerden başlasam şuraya düşecektir.
+
+192
+00:46:36,148 --> 00:47:01,908
+Bir tek problem ne olabilecek yerler? Belki şu aralar değil mi? Bakın şu araları görebiliyor musunuz? Şimdi buraya ya da buraya düşmesi bu fonksiyon için çok büyük bir problem değil. Ondan bahsettik. Çünkü her ikisinin de minimumları zaten aynılar. Buraya düşmesine göre daha iyi diye bir şey söyleyemeyiz. Şuradaki gibi bir durum yok yani burada. Şuraya düşmesi ve şuraya düşmesi arasında epey bir fark var görüyorsunuz. Ama burada öyle bir durum yok.
+
+193
+00:47:02,675 --> 00:47:17,675
+Dolayısıyla şu bölgelerin içerisindeyken fonksiyon istediğimiz yere doğru düşecektir. Kötü olabilecek yerden neyse arkadaşlar? Şu bölgeler değil mi? O bölgelerde mesela şuradan başlarsa bu aşağı doğru gidip belki öteki tarafa doğru gidecektir. Bunun içerisinde tekrardan düşmesi falan oldukça güç gözüküyor.
+
+194
+00:47:18,164 --> 00:47:30,684
+Yani genel olarak iyi bir fonksiyon bu. Hani optimize etmesi açısından düşünürsek. Yani non-linear ama yine de fena bir, yani çok problemli bir fonksiyon değil.
+
+195
+00:47:33,184 --> 00:47:44,304
+Şimdi biraz daha uzaylı gibi bir şey çıkmışım. Neyse. Şimdi burada şöyle bir farklılık var. Şu fonksiyonla şu fonksiyon aynı fonksiyon. Bakın.
+
+196
+00:47:46,387 --> 00:47:48,387
+Ne fark var burada ikisinin arasında?
+
+197
+00:47:52,019 --> 00:47:58,259
+Şekiller birbirinden benziyorlar ama aynı değiller. Ne fark var bu ikisinin arasında?
+
+198
+00:48:07,347 --> 00:48:18,047
+Görebildiniz mi? Şekil açısından farklı sormuyorum. Bu da o aynı fonksiyon, bu da aynı fonksiyon. Niye birbirlerinden farklı şekilleri var?
+
+199
+00:48:18,047 --> 00:48:23,047
+Ne birbirlerine ne demek?
+
+200
+00:48:23,047 --> 00:48:25,771
+Population değil mi?
+
+201
+00:48:26,675 --> 00:48:49,575
+Örnek sayısı. Elimizdeki örnek sayısı değil mi? Popülasyon sayısı. Sample sayısımız. Aynen öyle. Şimdi en eşittir 200 iken böyle bir şey. En eşittir 12 iken sadece 10 tane örnek ile bunu yaparsam. Yani şurası için mesela ben şurada 200 tane nokta var mesela burada. Ben burada 200 nokta değil de 10 tane nokta kullanırsam sadece. Bu durumda ortaya çıkan.
+
+202
+00:48:50,003 --> 00:48:56,483
+Parametre Loss uzayı şu hale geliyor. Nasıl bir yorum yaparsınız?
+
+203
+00:49:03,155 --> 00:49:11,155
+Mesela o fonksiyonla bu fonksiyonun nasıl bir fark dolar? O fonksiyonla mı uğraşmak daha kolay, bu fonksiyonla mı uğraşmak daha kolay?
+
+204
+00:49:15,188 --> 00:49:20,027
+Neler görüyorsunuz burada? Dikkatinizi bir yerler çekti mi?
+
+205
+00:49:22,164 --> 00:49:46,344
+Bununla uğraşmak daha zor hocam. Çünkü ikisinin birbirinden ayırt etmek çok zor. Bunda sarı noktadan başlattığımız zaman orta noktaya düşmesi daha kolay. Ama diğerinde daha zordu. Mesela onda sarı noktanın herhangi bir yerinden başlattığımız zaman global minimuma düşebiliyordu. Ama buradaki düzlük yere inme ihtimali daha fazla.
+
+206
+00:49:47,144 --> 00:49:49,904
+Şurada düz bir alan var. Görüyor musunuz?
+
+207
+00:49:50,164 --> 00:49:59,824
+Evet. Görüyor musunuz şu bölgeyi? O bölge aslında oraya indiğimizi, yani oranın düz olmasının anlamı ne arkadaşlar? Düz olan yerin türevi nedir?
+
+208
+00:50:00,184 --> 00:50:04,544
+Sıfır. Sıfırdır. Ve dolayısıyla bizim optimizasyon rutinimiz ne olacaktır orada?
+
+209
+00:50:05,664 --> 00:50:12,144
+Sonlanacak. Sonlanacak, duracak. Daha da ileriye gitmeyecek. Daha ileriye gitmesi için bir sebep yok çünkü. Türevi sıfır. Bitti.
+
+210
+00:50:13,043 --> 00:50:38,603
+Türe sıfır olduğu için yani bu fonksiyon mesela şu, pardon, şu fonksiyonun düz olduğu yer hani mesela düşünürseniz belki şuralar falan. Şuralarda böyle küçük küçük bölge var. Buralarda sonlanabilir. Ya da belki şunun ilerisinde de kötü yerler olabilir ama şimdilik gözükmüyor onlar. Ama bu fonksiyonun sonlanabileceği yerler hem şurası var hem de şu kocaman bölge var görüyor musunuz?
+
+211
+00:50:39,731 --> 00:50:48,872
+Dolayısıyla sample size büyükse ve küçükse, burada nasıl bir yorum yapabilirsiniz? Sample size'ın büyük ya da küçük olması nasıl bir etki oluşuyor gibi gözüküyor.
+
+212
+00:50:52,275 --> 00:50:55,815
+Eğer büyükse bizim modellememiz daha kolay olur.
+
+213
+00:50:56,655 --> 00:51:11,795
+Daha kolaylaşıyor. Aslında şöyle bir şey de diyebilirsiniz. Küçük bir sample size varken ona uydurulabilecek ve benzer performansa sahip model sayısı çok daha fazladır aslında. Doğru mu?
+
+214
+00:51:12,575 --> 00:51:12,895
+Evet.
+
+215
+00:51:13,280 --> 00:51:23,280
+Az sayıda örnek varken ama çok sayıda örnek varken çok daha fazla constraint aslında tanımamış oluyorsunuz. Şuna da uyusun, şuna da uyusun, şuna da uyusun diye değil mi? Dolayısıyla o durumda...
+
+216
+00:51:24,659 --> 00:51:48,880
+Uygun model sayısı, yani uygun parametre ikileri, üçleri, beşleri artık iki tane var burada, iki tane parametremiz var. Uygun parametre ikilerinin sayısı çok daha az oluyorlar eğer elinize çok sayıda örneğiniz varsa. Dolayısıyla az örnek sayısı varken modelinizin varyansının çok yüksek olması, yani varyansı derken geçen haftalardan hatırlarsanız varyansının ne olduğunu hatırlıyorsunuz değil mi?
+
+217
+00:51:50,099 --> 00:52:10,079
+Bu tezisinin varyansı ne olacaktır? Daha yüksek olacaktır. Ama burada gördüğünüz gibi burada varyans daha düşük olacaktır. Yani çok farklı yerlere ulaşmayacaktır sonuçlar. Burada ise çok farklı yerlerde sonlanabilir. Şuradan başlarsanız şurada sonlanır. Şuradan başlarsanız şurada sonlanır. Buradan başlarsanız burada sonlanır. Buradan başlarsanız burada bir sürü yerde sonlanabilir.
+
+218
+00:52:12,148 --> 00:52:34,028
+Ama buradaysa sonlanacağı yerler, şu kötü yerleri saymazsak şu bölgelerde sonlanacaktır. Daha az varyans oluşacaktır. Burada lineer bir elinize şey varsa bu durumda da bu kötü bir durum değil. Görüyorsunuz. Nereden başlarsanız başlayın. Çünkü bu lineer.
+
+219
+00:52:35,123 --> 00:52:45,123
+Burada beta 1 ve beta 2'yi bulmaya çalışıyoruz. Beta 1 çarpı x artı beta 2 çarpı x üzeri 3 diye bir fonksiyonu minimize etmeye çalışmışız.
+
+220
+00:52:45,123 --> 00:52:54,543
+10 tane sample ile. Burada yine konveks bir fonksiyon oluşuyor zaten der olduğu için. Bunu optimize etmek hiç de zor bir şey değil.
+
+221
+00:52:55,824 --> 00:53:02,043
+Şimdi burada aslında bu slide'ımız bitiyor. Tamam. Saatimizi kaç yaptık?
+
+222
+00:53:02,643 --> 00:53:22,223
+Şimdi şöyle bir şey yapalım dilerseniz. Bir ara verelim. Şimdi anlatacağım bir tane daha slide'ımız var. Şu SGD ile alakalı. O da birazcık uzunca sürebilir. Ama hani araya, onunla başlayıp ara vermek yerine şimdi ara vermek bence daha mantıklı olacaktır.
+
+223
+00:53:29,876 --> 00:53:43,636
+Yemek yediniz mi arkadaşlar? Süreyi birazcık fazla alabiliriz ya da yani 3'den mi başlayalım, 3'ü 10 geçe mi başlayalım? Öyle sorayım. 3 mü dersiniz, 3'ü 10 geçe mi dersiniz?
+
+224
+00:53:44,616 --> 00:53:45,736
+10 geçe daha iyi olur sanki.
+
+225
+00:53:46,936 --> 00:53:48,576
+Tamam, [öğrenci] öyle diyor. Başka?
+
+226
+00:53:49,396 --> 00:53:50,456
+10 geçe olsun hocam.
+
+227
+00:53:51,296 --> 00:53:52,036
+10, 2.
+
+228
+00:53:54,896 --> 00:53:56,616
+Benim için fark etmez hocam.
+
+229
+00:53:57,364 --> 00:53:59,483
+Fark etmez hocam. Arkadaşların dediği gibi olsun.
+
+230
+00:54:00,563 --> 00:54:04,423
+Tamam, tamam. Peki o zaman arkadaşlar buraya yazayım.
+
+231
+00:54:05,423 --> 00:54:14,644
+15-15 kadar para diyorum. Peki arkadaşlar o zaman biraz 20 dakika sonra görüşmek üzere.
+
+232
+00:54:15,923 --> 00:54:22,463
+Bu arada dersin web sayfasına eriştiniz değil mi? Onlarda herhangi bir sorun yok. Kodlara falan eriştiniz.
+
+233
+00:54:23,184 --> 00:54:25,563
+Evet hocam, bir problem yok. Ben çalıştırdım da.
+
+234
+00:54:26,103 --> 00:54:28,364
+Tamam, tamam. Teşekkürler.
+
+235
+00:54:29,463 --> 00:54:33,184
+Peki arkadaşlar, saat 3.10 geçe görüşmek üzere. Kolay gelsin.
+
+236
+01:15:27,028 --> 01:15:28,048
+Arkadaşlar, sesim geliyor mu?
+
+237
+01:15:34,484 --> 01:15:35,703
+Geliyor hocam sesiniz.
+
+238
+01:15:36,764 --> 01:15:37,844
+Hissettiniz mi depremi?
+
+239
+01:15:39,844 --> 01:15:44,864
+Ben hissetmedim de. [kişisel bilgi]
+
+240
+01:15:46,484 --> 01:15:51,504
+Şu an İzmir'i gösteriyor da. Binalarda bayağı çatlaklar oluşmuş. Bayağı büyük bir deprem herhalde.
+
+241
+01:15:51,504 --> 01:15:52,224
+Hadi ya.
+
+242
+01:15:53,043 --> 01:15:53,963
+[kişisel bilgi]
+
+243
+01:15:53,963 --> 01:15:54,924
+İzmir'de.
+
+244
+01:15:58,963 --> 01:16:00,003
+Aşağı indiniz.
+
+245
+01:16:00,344 --> 01:16:11,844
+[kişisel bilgi]
+
+246
+01:16:14,644 --> 01:16:19,703
+Hissetmedim de hissedenden var İstanbul'da. Başka? Sesi çıkmayanlar?
+
+247
+01:16:21,104 --> 01:16:22,184
+Ben de hissetmedim hocam.
+
+248
+01:16:24,123 --> 01:16:25,224
+Ben de hissetmedim.
+
+249
+01:16:25,619 --> 01:16:27,139
+Ben de hissetmedim hocam.
+
+250
+01:16:27,779 --> 01:16:28,039
+Tamam.
+
+251
+01:16:30,039 --> 01:16:31,639
+Peki arkadaşlar.
+
+252
+01:16:32,719 --> 01:16:35,420
+Şimdi devam edelim.
+
+253
+01:16:47,347 --> 01:16:49,347
+Sırak geldi herhalde değil mi? Sırakı görebiliyorsunuz.
+
+254
+01:16:52,347 --> 01:16:52,868
+Evet.
+
+255
+01:16:52,868 --> 01:16:55,028
+Radyatli senetle alakalı olan. Tamam.
+
+256
+01:16:57,347 --> 01:16:57,948
+Şimdi
+
+257
+01:17:00,948 --> 01:17:17,288
+Final Sum of Functions diye bir şey başka. Şimdi makine öğrenmesindeki çözdüğümüz optimizasyon problemleri demin de gördük. Bir objektif fonksiyonumuz var ve bu objektif fonksiyonu aslında bir sürü F-İ'lerin toplamından oluşuyor.
+
+258
+01:17:27,315 --> 01:17:46,755
+Bizim şeyimiz ne derdi ona? Buradaki x bizim optimize edeceğimiz parametre. Yani deminki betalar o şekilde düşünün. Yani buradaki x dediğimiz şey bizim bulmak istediğimiz, yani optimize etmek istediğimiz değişken.
+
+259
+01:17:51,220 --> 01:17:58,739
+Herhangi bir X için yani mevcut konumdaki X için inci trenin noktasının hatası.
+
+260
+01:17:59,891 --> 01:18:19,512
+Ya da LOSU. Deminki gibi tahminle aradaki farkın karesini düşünebilirsiniz. Ve bir de N'imiz var. İşte Training Set Size'ımız bir eğitim örneğimiz oldu hatırlarsanız. Dolayısıyla bunların hepsinin toplamı aslında bize neyi veriyor?
+
+261
+01:18:27,891 --> 01:18:28,391
+İyi.
+
+262
+01:18:30,644 --> 01:18:45,744
+Oluşturulmuş olan loss değerini elde ediyoruz. Yani loss değeri aslında individual training noktalardan oluşuyor. Bu training noktaların her biri için bulunan loss değerlerinin toplamıyla bunu hesaplıyoruz.
+
+263
+01:18:45,744 --> 01:18:58,644
+Bunu daha önce zaten bahsetmiştim. O çizdirdiğim şeyleri anlatırken orada her bir beta 1, beta 2 için mesela demiştim. Bütün noktaların her birindeki rezidüleri...
+
+264
+01:18:58,644 --> 01:19:26,644
+Buldum. Onlara göre bir fonksiyonları çizdirdim diye hatırlarsanız anlatmıştım. Aslında burada onu açık bir şekilde ifade ediyor. Yani herhangi bir andaki, herhangi bir optimize edeceğimiz parametremiz X burada. Herhangi bir andaki, herhangi bir parametre değeri için elimizdeki loss değeri aslında n tane ki buradaki n dediğimiz check training size'ımız n tane f-e fonksiyonunun birleşiminden oluşuyor. Birleşimden derken toplamından oluşuyor.
+
+265
+01:19:26,644 --> 01:19:51,404
+Şimdi, Finalsum için makine öğrenmesinde kullanılan, yani Finalsum'ın oldukça yaygın olduğunu görüyoruz. Birincisi, Liz Squares. Liz Squares'in demin bahsetmiştik. Demin derken, daha önceki dersimizde de bahsetmiştik. Burada hep x'imiz bizim şey, deminki slide'lerdeki beta'yı ifade ediyorlar. O şekilde düşünün.
+
+266
+01:19:51,775 --> 01:20:01,015
+Buradaki ilk kısım, elimizde n tane input var ve n tane de output var.
+
+267
+01:20:01,755 --> 01:20:07,695
+a, i dediğimiz şey inci input'u gösteriyor. b, i dediğimiz şey ise inci output'u gösteriyor.
+
+268
+01:20:08,175 --> 01:20:13,556
+Biz yukarısı da bu fonksiyon ne halde? Yani objektif fonksiyonumuz ne?
+
+269
+01:20:19,155 --> 01:20:35,175
+A, İ ile X'i çarptığımızda aslında bir tahmin elde ediyoruz. Bu tahminden B, İ çıkarttığımızda B, İ dediğimiz şeyle gerçek artlık aslında ardaki fark oluyor. Rezidüünün karesi burada. Dolayısıyla bu şekilde yazabiliriz.
+
+270
+01:20:35,175 --> 01:20:43,235
+Aynı şekilde Lasso vardır mesela. Regularizasyon için kullanılan yani şuraya artı bir şey eklenir.
+
+271
+01:20:46,003 --> 01:20:54,943
+Bir fonksiyon daha eklenir. Şurası normal standart objektif fonksiyon. Bir de onun yanına şöyle bir şey eklenir. Bu ne demek? Buna bir bakalım.
+
+272
+01:20:55,376 --> 01:21:21,156
+Şimdi minimize etmeye çalışıyoruz burada görüyorsunuz. Bu aradaki revizyleri minimize etmeye çalışıyor. Aynı zamanda bir de neyin minimize etmeye çalışıyor? Buraya bakarsanız. X, Y'lerin işte J eşittir birden D'ye kadar yani elimizdeki X parametresinin her bir boyuttaki mutlak değerini aslında buna norm 1 deniyor. Birinci dereceler norm diye ifade edilir. Norm 1 deniyor. Bunu da minimize etmeye çalışıyor.
+
+273
+01:21:22,292 --> 01:21:39,432
+Yani öyle parametreler bulalım ki o parametrelerin büyüklüğü mümkün olduğu kadar küçük olsunlar. Lasson'un yapmaya çalıştığı şey bu. Şu beta ile işte bu iki tarafın birbiriyle şeyini ayartmıyor. Etkisini yani şurasının tamamı minize ediliyor.
+
+274
+01:21:39,432 --> 01:21:49,132
+Yani şu min şurada parantez başlıyor, şurada bitiyor. Yani şurası artı burası değil. Minimize etmeye çalıştığımız şey şuradaki yazının tamamı.
+
+275
+01:21:49,716 --> 01:22:06,076
+Yine mesela yapay sinir alanında bunu düşünürsek, loss ANN dediğimiz şey, artık işin veren network'te X verdiğimizde, şuradaki AI'ler bizim elimizdeki modelin weightlerini ifade ediyorlar.
+
+276
+01:22:06,296 --> 01:22:11,016
+Pardon, X'ler modelin weightlerini ifade ediyorlar, AI'ler yine inputları ifade ediyorlar.
+
+277
+01:22:15,503 --> 01:22:36,484
+İNC input için tahminimiz oluyor. Bu tahmin de BI'yi vereceğimiz bir loss fonksiyonu, ki bu loss fonksiyonu softmax yapıyorlar, bir sürü çeşitli yapay sınır alanında kullanılan loss fonksiyonları var. Bunların minimumu.
+
+278
+01:22:36,800 --> 01:22:53,239
+Bu değerler bulunuyor. Bunlar bütün örnekler için hesapladık. Daha sonra yine burası elde ediyor. Dolayısıyla bunlar makine öğrenmesinde kullanılan çoğu loss fonksiyonunun aslında bir sürü fonksiyonun toplamından oluştuğunu göstermenin örnekleri.
+
+279
+01:22:55,315 --> 01:23:13,536
+Şimdi gelelim. Biz daha önce gradientli senti görmüştük. Gradientli senti işte şurada. Şunu görebilirsiniz. Yine bir loss fonksiyonunu yazmışım. X1'in karesi artı X2'nin karesi. X2'nin karesi. Çekil bir loss fonksiyonu var burada.
+
+280
+01:23:14,000 --> 01:23:27,399
+Burada herhangi bir eğitim örneği, test örneği falan yok diyor. Direkt loss fonksiyonu verilmiş size. Bu loss fonksiyonuna göre Learning Rate 1.1 için şu bir noktasından başlamış, adım adım adım adım adım en sonunda gitmiş.
+
+281
+01:23:27,399 --> 01:23:38,819
+Kırkıncı adımda konverge etmiş. Konverge etmekten kastımız neydi bu Graphic Anticent gibi? Yani konveks fonksiyonlarda konverge etmenin kıstası.
+
+282
+01:23:41,844 --> 01:23:54,024
+Hedef olan uzaklığın belli bir epsilon derinden küçük hale gelmesi ya da ardışık gradiyenlerin arasındaki farkın belli bir epsilon derinden küçük hale gelmesi.
+
+283
+01:23:54,864 --> 01:24:03,184
+Şimdi bu kullanılabilir. Bunda herhangi bir sıkıntı yok. Fakat burada mesela şöyle bir durum var.
+
+284
+01:24:05,587 --> 01:24:27,427
+Delta fxt diye ifade ettiğimiz şey, xt bizim t'inci adımdaki parametre değerimiz. Bu xt artı bir ise bir sonraki adımdaki parametre değerimiz. Şunu hesaplamak için ne yapmamız gerekiyor? Şunu hesaplamak için aslında n tane f fonksiyonunun değerini hesaplamamız gerekiyor değil mi?
+
+285
+01:24:28,595 --> 01:24:53,235
+Yani her birindeki türevler ve bu en an Jakobian maddesini hesap hatırlayın. Jakobian maddesini düşünün. Jakobian maddesinin aslında n'e değelik bir şeydi. Yani oradaki n tane, orası n değeri çok büyük olursa sizin buradaki bu hesabınız da oldukça güçleşebiliyor. Bütün her bir elinizdeki işte bir milyon tane nokta varsa bir milyon tane fonksiyonunu evolate etmeniz gerekiyor.
+
+286
+01:24:54,707 --> 01:25:13,847
+Yani şurası aslında şu. Şu şekilde yazılmış hali bu anlattığımın. Yani her bir f'inci data point için bunların her birini yapıyorsunuz. Yeştir birden n'e kadar. Ve çalışıyor. Herhangi bir sıkıntı yok. Fakat problem ne olabilir burada? Burası çok büyükse n çok büyükse bu yavaş olabilir.
+
+287
+01:25:14,644 --> 01:25:32,164
+Zaten burada anlatılan şey kısım ne bu? Zillions of parameters, zillions of data points. Yani D'nin çok büyük olması ve E'nin çok büyük olması durumu aslında large scale problemleri bize karşımıza çıkartıyor ki günümüzdeki çoğu problem de artık bu hale gelmiş durumda.
+
+288
+01:25:32,164 --> 01:25:39,644
+Birçok yapayısının A'nın input, yani data setleri incelediğinizde ne göreceksiniz?
+
+289
+01:25:40,979 --> 01:25:42,319
+Orada ben videoyu da açmamışım.
+
+290
+01:25:48,119 --> 01:25:57,379
+Sonuçta her bir adım, yani şurada gördüğünüz birden mesela şuraya bakalım. Şuradan birden ikiye gitmek, öyle söyleyeyim.
+
+291
+01:25:57,379 --> 01:26:02,639
+Şu birden ikiye gitmek, çünkü birden başladık. Birden ikiye gitmek için bizim ne yapmamız gerekiyor?
+
+292
+01:26:03,072 --> 01:26:18,652
+N çarpı D tane hesaba ihtiyacımız var. Her boyut için N tane. Tamam. Bu kadar hesaba ihtiyacımız var. Ve bu N ve D büyüdükçe, ikisi de büyüdükçe bizim her bir iterasyonumuzun maliyeti de giderek ne oluyor arkadaşlar? Artıyor.
+
+293
+01:26:18,652 --> 01:26:24,092
+Şimdi gelelim basit bir modele.
+
+294
+01:26:24,756 --> 01:26:52,435
+Şimdi, bazit bir modelimiz, sistem 2, list squares modelimiz. Bakarsak, işte minimize edeceğiz. Neyi? X'in minimumunu bulacağız. Yani, X'in hangi değeri için buradaki fonksiyonun değeri minimumdur? Bunu bulmaya çalışacağız. Şuradaki 1 bölü 2 karenin işte türevinin alınmasıyla alakalı olan bir kısım. Sonuçta temelde n bölümü, ortalama alınarak. İşte a'yı t çarpı x eksi, b'yi standart list squares yapısı.
+
+295
+01:26:52,756 --> 01:26:59,216
+Burada zaten şu gördüğümüz şey, FVX olarak ifade edebileceğini söylemiştik.
+
+296
+01:27:00,136 --> 01:27:05,855
+Şimdi bu kodu açıp incelediğinizde şöyle bir şey göreceksiniz. Orada Aİ'ler ve Bİ'ler verilmiş.
+
+297
+01:27:07,828 --> 01:27:22,548
+Yani inci input ve inci ona karşıdık inci output verilmiş. En eşittir 8. Yani 8 tane nokta için, şurada gördüğünüz 8 tane nokta var bakın. Bunları buraya çizlemişim. 8 tane inputumuz var bizim.
+
+298
+01:27:22,832 --> 01:27:37,592
+Bunlar için ben bir model bulmaya çalışıyorum. O model de şuradaki ne gözüküyor zaten? İşte x'in tek bir tane x bulmaya çalışacağım. Tamam mı? Tek bir x bulmaya çalışacağım. Bu x'i bir yerden başlatacağım. Bir yere dön, adım adım adım ilerletmeye çalışacağım.
+
+299
+01:27:38,163 --> 01:28:01,163
+Tek boyutlu bir yapıdan bahsediyoruz çünkü. Oldukça basit o manada. Şimdi başlangıçta mesela bir yerden başladık. Gerçek model burada. Gerçek model B eşittir 1A. Yani X eşittir 1 aslında. Tamam mı? Yani X'in gerçek değeri 1. Burası 1 olduğunda zaten ne olacaktır? A eşittir 1A. Yani...
+
+300
+01:28:02,195 --> 01:28:20,756
+Modelimiz şu hale gelecektir. Yani input ile output birbirine eşitler. Tamam. Gerçek modelimiz bu. Ve ben birazcık gürültü eklemişim. Tabii üzerlerini şu anda görüyorsunuz. Kırmızıyla çizdiğimiz şey o gerçek model. Current model, bir yerden başlamışım. Başladığım yerde mesela eksi o.
+
+301
+01:28:21,087 --> 01:28:37,247
+Yani x'in gerçek değeri 1 ama ben x'in optimizasyonu eksi 10'dan başlıyorum. Eksi 10'dan başlayarak ilerleyeceğim. Şimdi bunu çizdirdiğimizde, eksi 10'na kadar ki kısmı şurada çizdirmişim. Şuraya bakalım ilk önce.
+
+302
+01:28:38,247 --> 01:28:45,807
+F'i x'leri göstermişim burada her birisi için. Burada arkadaşlar 8 tane fonksiyon var.
+
+303
+01:28:46,323 --> 01:29:00,123
+Sekiz fonksiyon nereden geliyor? Şu n'den geliyor. Tamam mı? Yani her bir fonksiyonu ayrı ayrı çizdirmişim. Bunların hepsinin ortalaması olan şuradaki şunu da çizdirmişim. O da şu kesikli olan. Bakın şöyle kesikli olanı görüyorsunuz.
+
+304
+01:29:01,064 --> 01:29:08,564
+Tabii bu fonksiyon oldukça basit bir fonksiyon. Linear bir fonksiyon. Dolayısıyla optimizasyon yaptığımız fonksiyon da konveks bir fonksiyon. Zaten burada gözüküyor.
+
+305
+01:29:08,564 --> 01:29:13,783
+Zaten bunların her biri konveks olduğu için konveks olan fonksiyonların toplamı da konvekstir.
+
+306
+01:29:14,228 --> 01:29:36,907
+Öyle bir güzel tarafı var konksiyonların. Dolayısıyla burada eksi ondan artı ona kadar x'in her bir değeri için her bir örneğin sahip olduğu lossları çizilmişim. Şu bölgeyi biraz büyütmüşüm bakın. Şu bölgeyi birazcık büyütmüşüm. Şurada görüyorsunuz. Yani eksi iki buçukta.
+
+307
+01:29:37,296 --> 01:30:00,000
+Beş arasını almışım. Şöyle birazcık daha yukarıya doğru, biraz daha yüksekmiş gibi gözüküyor burada. Yoksa aynı şeyler. Burada ne görüyoruz? Bizim gerçek olan, bakın gerçek olan değer neydi? Birdi değil mi? Bire bakalım. Birini orada, bakın gerçekten şu tık tık tık tık tık tık tıkla çizdirdiğimiz şey neydi bizim? Hepsinin ortalamasıydı değil mi? Bütün hataların hepsinin ortalamasıydı.
+
+308
+01:30:00,000 --> 01:30:22,159
+Tüm bu fonksiyonların hepsinin ortalamasıydı. O hakikaten şurada bir. Fakat diğerleri görüyorsunuz farklı yerlerde minimumlar değil mi? Görüntülüler çünkü bunların hepsi. Yani şunların hepsi bunun üzerinde olsalardı, tam bunun üzerinde olsalardı, bütün bu fonksiyonların hepsi nerede birleşecekti? Şu nokta nokta nokta üzerinde olacaklardı.
+
+309
+01:30:25,728 --> 01:30:52,868
+Bizim şuradaki tırtık yani tire tire olanın minimumu sıfır değil arkadaşlar. Fark ettiniz mi? Minimum sıfır değil. Niye sıfır değil? Çünkü bunların hepsinin üzerinden geçen tek bir çizgi olamaz. Çünkü bunlar tek bir çizgi üzerinde değiller. Ama her bir individualın yani her bir individual örnek için, her bir iyinci örnek için çizdirdiğimiz fonksiyonlar nasıllar bakın? Sıfıran geçiyorlar değil mi? Çünkü her bir noktadan geçen sonsuz tane ne olabilecektir?
+
+310
+01:30:53,279 --> 01:31:05,619
+Tam üzerinden geçen diyelim fonksiyon olabilecek. Dolayısıyla individual için sıfırdan geçiyor fakat bunların ortalaması tamamen sıfır olmayacaklar.
+
+311
+01:31:06,539 --> 01:31:10,199
+Şimdi burada önemli olan kısım neresi?
+
+312
+01:31:11,199 --> 01:31:16,959
+Şimdi bu resme bakalım tekrardan. Yani şunu tekrardan buraya almışım. Şu resme.
+
+313
+01:31:18,676 --> 01:31:41,336
+Şimdi şu bölgeye bir odaklanalım. Şimdi şurada bir bölge var. Bakın şurada şöyle bir bölge var. R bölgesi. Tamam mı? Şimdi bu R bölgesi aslında bunu birazcık incelerseniz yani bu basit fonksiyon için BI bölü AI'lerin minimumuyla BI bölü AI'lerin maksimumu arasında bir yerde şu R bölgesi. Tamam mı?
+
+314
+01:31:41,811 --> 01:31:52,532
+Şimdi buradaki çizdirdiğimiz şeylerin her biri, dediğim gibi inci F'ler, yani her bir individual point için çizilen loss fonksiyonları ve şuradaki tırtıklı olanın hepsi için ortalaması.
+
+315
+01:31:53,532 --> 01:32:08,532
+Şimdi bir region R var ve bizim, şunu rahatlıkla söyleyebiliriz ki bizim optimum fonksiyon, yani optimum değerimiz, ki burada optimum değerimiz işte şuralarda bir yerlerde olacaklar, o nerenin içerisindedir? Bu R'nin içerisindedir.
+
+316
+01:32:09,844 --> 01:32:34,844
+Yani şu R bölgesinin içerisindedir bizim minimumda bulacağımız fonksiyon. Burada çok enteresan bir şey var. Bakalım neymiş? R bölgesinin dışına bakalım. R bölgesinin dışı. Bu tarafta bir dışı var, bir de bu tarafta dışı var. R bölgesinin dışını incelediğimizde, şimdi şu bölgelere bakalım.
+
+317
+01:32:35,507 --> 01:32:46,028
+Burada şu nokta nokta noktada olan fonksiyonla bizim individual'larımızın işaretleri nasıl arkadaşlar?
+
+318
+01:32:53,395 --> 01:32:54,895
+İşaret eden türevlerin işaretleri.
+
+319
+01:33:00,756 --> 01:33:01,436
+Aynı mı?
+
+320
+01:33:03,396 --> 01:33:23,796
+Aynı değil mi? Bakın yani şu bölgeye bakın. Şu bölgeye bakın. Şunun üzerinde Gradient Descent yapmakla yaptığımızda gideceğimiz yön ne taraftır? Bu tarafa doğru gideriz değil mi? Şu bütün hepsinin ikini kullansak bu tarafa doğru gideriz. Peki herhangi bir tanesini seçip kullansak ne tarafa gideriz?
+
+321
+01:33:28,148 --> 01:33:55,268
+Sola. Yine aynı tarafa gelir. Peki bu tarafa bakalım. Burada hepsinin ortalamasını kullansak ne tarafa gideriz? Herhangi bir tanesini seçip kullansak ne tarafa gideriz? Sağa gideriz. Aynı tarafa doğru. Yani buralara bakarsak, yani R'nin dışında aslında bütün noktaları kullanmak yerine içlerinden bir kısmını kullanmak da mümkün. Ya da herhangi bir tanesini kullanmak mümkün. Doğru tarafa doğru gidebilmek için.
+
+322
+01:33:56,212 --> 01:34:16,231
+Bu çok güzel bir şey. Neden bu? Çünkü benim şunu kullanmak için her bir adımda en çarpı d tane hesap yapmam gerekiyor değil mi? Fakat bunlardan herhangi bir tanesini kullanabilmek için benim kaç tane hesap yapmam yeterli? Herhangi bir tanesini kullanmak istesem.
+
+323
+01:34:19,231 --> 01:34:20,512
+Bir tane değil mi?
+
+324
+01:34:20,632 --> 01:34:21,132
+D tane.
+
+325
+01:34:21,536 --> 01:34:46,315
+D boyutlu, şimdi burasını düşünürsek bir tane tabii. Burada bir boyutlu olduğu için buradakiler bir şey ama en boyutlu bir yapıyı düşünürseniz bu türler D boyutlu olacaklardır. Yani herhangi bir örnek için olan loss fonksiyonunu ne yapabiliriz miyim? Ben kullanabilirim. Peki, R'nin dışı bu anlamda çok güzel. Peki, R'nin içine bakalım.
+
+326
+01:34:49,652 --> 01:35:04,652
+Mesela, şurayı düşünelim, mesela bu noktayı düşünelim. Mesela şu örneği kullanmamla şunu kullanmam arasında bir fark yok. Bakın ikisi de beni bu tarafa doğru itecekler şu noktadayken.
+
+327
+01:35:12,083 --> 01:35:39,663
+Yani bütün hepsini kullanan, full gradiyan diyelim ona. Full gradiyan. Full gradiyan benim bu tarafa doğru itecekken, şuradaki ikisine bakın. Bunlar mesela benim bu tarafa doğru itecekler değil mi? Şuradaki bir noktada. Görüyor musunuz? Yani R'nin dışında full gradiyanı kullanmakla herhangi bir tekil örnek için olan gradiyanı kullanmak arasında bir fark yokken, yön açısından görüyorsunuz.
+
+328
+01:35:40,564 --> 01:35:53,144
+İçeride var. Yani re'nin içerisinde ne alacağız biz? Bir kaos oluşacak. Şimdi bunu görelim. Bunu görelim nasıl yapacağız? Bakalım.
+
+329
+01:35:55,543 --> 01:36:05,144
+Şimdi herhangi bir noktadan başlıyorum bakın. Şurada şu loss fonksiyonu için. Bu loss fonksiyonunu da ben learning rate'im 0.1 almışım.
+
+330
+01:36:07,283 --> 01:36:30,283
+Şuradan başlıyorum. Bu ikinci adım, üçüncü adım, dördüm. Burada böyle düz bir şey görmüyorsun. Böyle biraz böyle çarpışık bir şeyler görüyorsun. O çarpışık bir şeyler görüyor olmamızın sebebi ne? Onu söyleyeyim. Ben burada şeyleri, ne derler? Gerçek gradiyan, yani full gradiyanı hesaplayıp full gradiyanın üstüne belli bir gürültü ekledim.
+
+331
+01:36:30,644 --> 01:36:45,199
+Yani ne demek bu? Şimdi benim mesela şu izoipsleri hatırlıyorsunuz değil mi bunların anlamını? Şu izoipsin, şu level set diye de geçer bunlar. Şu level setin türevin arasıdır, full grad yanı şuradaki delta f'tir. Fakat bunun...
+
+332
+01:36:45,199 --> 01:37:04,199
+Delta F i'leri şu şekilde olacaktır bakın. Şöyle olabilir, böyle olabilir, böyle olabilir, böyle olabilir. Fakat ama hepsi R'nin dışındayken, öyle söyleyeyim, R'nin dışındayken hepsi şuradaki şu çizdiğim çizginin yani şunun normalinin, normal vektörünün dışında olacaklardır.
+
+333
+01:37:04,199 --> 01:37:13,199
+Ve hepsi aslında bana ne sağlayacaklar? Belli bir azalma sağlayacaklar. Yani bunlardan şu Delta F'e yani şu tarafa doğru gitmem gerekirken tam şu.
+
+334
+01:37:13,199 --> 01:37:18,299
+Şu tarafa doğru gitmem gerektirken bunlar bana şu tarafa, şu tarafa, şu tarafa, şu tarafa falan doğru götürecekler.
+
+335
+01:37:18,299 --> 01:37:18,799
+Tamam mı?
+
+336
+01:37:19,600 --> 01:37:24,959
+Ve bunların hepsinin beklenen değeri de aslında ortalaması ya şey.
+
+337
+01:37:25,376 --> 01:37:50,515
+Full Gradient. Delta FB'lerin ortalaması oluşuyor ya. Dolayısıyla Expectation anlamında bununla aynı olacaktır. Fakat dediğim gibi belli neler olacak? Sanki Full Gradient'in üstüne gürültü eklemişim gibi ben bunu simüle edebilirim. Anlatabildim. Yoksa gerçekten de bunu yaptığınız yine aynı şeyi bulacaksınız. Full Gradient'e benzeyen ama onunla aynı olmayan vektörler elde edeceksiniz. Tamam.
+
+338
+01:37:51,091 --> 01:38:13,551
+Burada bunu gerçekleştirdiğimiz zaman, bakın şu noktadan itibaren başlıyor, tık tık tık geliyor, şuraya kadar. Burada konverge etmiyor herhangi bir yere. Niye konverge etmiyor şu anda? Buralarda böyle düzgün düzgün, yani düzgün derken, tam istediğimiz yere doğru giderken, şunun içerisinde bakın ne oluşmuş arkadaşlar? Bir kaos oluşmuş. Kaosun sebebi ne?
+
+339
+01:38:13,971 --> 01:38:40,731
+Buralardayken ben neredeydim? Aslında R bölgesinin dışındaydım. Fakat bunun içine girdiğimde, tam şu bölgeye girdiğimde artık R'nin içindeyim ben. R'nin içerisinde de neyi görmüştük biz? Bazıları bana şu tarafa doğru gidiyor, bazıları bu tarafa doğru gidiyor. Bir tanesini seçiyorum, bu tarafa gidiyorum. Başka bir tanesi seçiyorum, bir teki tarafa gidiyorum. Bir tanesi seçiyorum, bu tarafa gidiyorum. Başka bir tanesi seçiyorum, bu tarafa gidiyorum. Anlatabildim mi? Dolayısıyla burada konverge ne yapmayacak bu? Etmeyecek.
+
+340
+01:38:41,971 --> 01:39:08,731
+Kullanmayacak. Ama eğer full gradient'ı kullansaydım ki demin gördükken bu stokastik gradient ismini alıyor. Yani olasılık içeren, olasılık sal gradient tuşu algoritması. Burada bakın fonksiyonunu nasıl optimize ediyorum? Full f'e göre değil bakın. Full f'e göre değil. Sadece ve sadece tek bir inci örneğe göre. Tek bir örnek alıyorum.
+
+341
+01:39:09,235 --> 01:39:14,636
+Ama tek bir örnek alarak ben optimize etmeye kalktığımda şöyle bir şey görüyorum.
+
+342
+01:39:15,536 --> 01:39:20,416
+Optimize ediyor ama son noktayı koymakta oldukça problem yaşıyor.
+
+343
+01:39:20,916 --> 01:39:24,235
+Bunun içerisinde oldukça salınmaya başlıyor. Converge etmiyor.
+
+344
+01:39:25,363 --> 01:39:49,943
+Zaten burada da yazan şey o ne diyor? R'nin dışında G'de ve SG'de oldukça birbirine benzerler. Fakat R'nin içerisinde yani optimal X'e yakınlaştığımız zaman ki zaten R'nin ortası kabaca bizim X'imiz olacak. Burada SG'de işte zıplamaya başlıyor. Bir bu tarafa, bir bu tarafa, bir bu tarafa. Yani çok random hareket etmeye başlıyor. Tamam.
+
+345
+01:39:51,347 --> 01:40:06,327
+Dolayısıyla şurada XT'lerin minini almak ya da en son K tane XT'nin minini almak son XT'yi kullanmaya göre daha mantıklı.
+
+346
+01:40:07,444 --> 01:40:17,644
+Ne demek bu? Yani biz normalde şimdi gradient descent'i kullanırken en son da output olarak neyi veriyorduk? En son işte 10 iterasyon gittiysek X 10'u veriyorduk.
+
+347
+01:40:17,644 --> 01:40:27,584
+Değil mi? Burada ise şöyle bir şey diyor bakın. 10. X'i verme dışarıya SGD'de. 10. X'i verme. Bunun yerine şunları yapabilirsin.
+
+348
+01:40:28,144 --> 01:40:35,436
+Ya en baştan itibaren ortalamasını alırsın ya da en son X tanesinin ortalamasını alırsın. Çünkü orası...
+
+349
+01:40:35,475 --> 01:40:51,115
+Rastgele hareket ediyor ya. Ama o rastgele hareketin orta noktası, yani neyin etrafında aslında rastgele hareket ediyorlar? Optimum'un etrafında rastgele hareket ediyorlar. Dolayısıyla orada bir ortalama almak oldukça mantıklı bir hareket oluyor.
+
+350
+01:40:51,115 --> 01:40:56,015
+Şimdi buraya bakarsak, son X'de mesela şuymuş.
+
+351
+01:41:00,307 --> 01:41:25,488
+Son XT şuymuş. Min XT ise şuymuş. Bakın ortalama aldığımda şu. Bu daha iyi. Yani bu sıfıra sıfır çünkü herhalde minimumu değil mi? Sıfıra sıfır. Mesela burada son eriştiğimiz, yani işte kaç kas, yüz iterasyon gitmişiz burada herhalde. Şurada görüyorum. Yüz iterasyon gitmişiz. Bu en son da şuraya varmış. Ama bunların ortalamasını alırsam şunu görüyorum. Yani ortalama almak burada daha iyi bir hareket olabiliyor.
+
+352
+01:41:26,260 --> 01:41:36,235
+Tabii burada learning rate'i azaltmıyorum fark ettiyseniz. Yani learning rate, yani konverge etmiyor dediğimiz şey, şimdi mesela siz standart...
+
+353
+01:41:36,787 --> 01:42:04,047
+SGD algoritmasını çalıştığınız zaman görürsünüz ki Learning Rate bir yerden başlar ve adım adım en sona doğru azalır. Bu azalmanın sebebi onun Converge etmesini sağlamak, bir noktaya odaklanmasını sağlamak. Eğer Learning Rate'i Converge ettirmezseniz, yani giderek azalmazsanız, mesela Full Grant'ı yattık da Learning Rate'i azaltmasanız da kendisi Türev'in sıfırlanmasından dolayı ne olacaktır? Kendisi Converge edecektir. Demin gördük onları. Ya da Newton-Raphson.
+
+354
+01:42:04,659 --> 01:42:32,659
+Fakat stokastik yapılarda demin bahsettiğimiz R bölgesinin içerisine belli bir adım sonra girilecek. Başlangıçta orada olmayabilirsiniz ama belli bir adım sonra illa ki oraya varacaksınız. Oraya vardıktan sonraki iterasyonlarda artık sizin çok stabil bir şeyiniz yok, yörüngeniz yok. Dolayısıyla burada ne yapmanız gerekiyor? İşte bir oraya bir oraya zıplamalardan gelmek için learning rate ne yapmalısını? Adıp adıp adıp düşürüp en sonunda sıfıra çok yakın bir hal.
+
+355
+01:42:32,659 --> 01:42:56,480
+Bir değeri getiriyorsunuz ki bir yere konverge etsin. Ya o learning rate'i azalta azalta dediğim gibi bir yere konverge edip o değeri kullanabilirsiniz ya da buradaki gibi daha önceki değerlerin ortalamasını alarak kullanabilirsiniz. Fakat önceki değerlerin ortalamasını alıp kullanmakın bir sıkıntısı var. Ne olabilir? Önceki değerlerin ortalamasını alıp kullanmanın. Yani diyelim ki işte.
+
+356
+01:42:57,076 --> 01:43:17,536
+10 milyon parametreli bir yapay sinir ağınız var. Onu eğitiyorsunuz. Mesela burada ortalama almanın ne gibi bir sıkıntısı olabilir? Ortalama almak yerine böyle learning rate'i azaltmak sıfıra doğru daha iyi bir hareket oluyor. Niye ortalama almak problemli olsun?
+
+357
+01:43:20,340 --> 01:43:47,279
+Şey olabilir mi hocam? Gradient descent ile Newton Rapsan'da olan problemin aynısı. Gradient descent de mesela bir learning rate olduğu için ister istemez en sonunda oraya doğru gidiyor. Ama bunda ortalamalarını aldığımız için oradan uzaklaşma ihtimali de olabilir. Özellikle daha fazla olduğu için boyut. Yakınlaşmak yerine biraz daha belki uzaklaşma olabilir mi?
+
+358
+01:43:48,435 --> 01:44:05,595
+Yani ortalama aldığımız zaman daha iyi bir sonuç elde edebiliriz. Yani mesela buradaki örnekte görüyorsun. Ortalama aldığımız zaman gerçeğe daha yakın bir sonuç elde edilmiş son değeri almaya göre. Burada dediğim gibi learning rate azaltılmıyor ama. Learning rate sabit 0.1 hep.
+
+359
+01:44:06,131 --> 01:44:29,211
+Learning Rate'i azaltarak ilerlersek bu da konverj eder. Yani Learning Rate'e her bir iterasyonda mesela 0.99'a çarparsanız mesela hani o tarz şeyler vardır, rutinler vardır. İncelediyseniz görürsünüz. Genelde öyle yapılır. O durumda adım adım adım adım en sonunda Learning Rate'e sıfıra yakın bir değere eriştiği zaman zaten ne olacaktır? Xt artı ile Xt'nin arasındaki fark da azalacaktır.
+
+360
+01:44:32,368 --> 01:44:57,728
+Bu adımdaki learning rate, şu NT dediğimiz şey. Bu sıfıra yakın bir hale geldiği zaman zaten burası ne olursa olsun artık. Türel büyük de olsa burası zaten birbirlerine eşit hale gelecek. Dolayısıyla konverj bir şekilde edecek. İyi bir yere eder, kötü bir yere eder. Orası apayrı bir mevzu ama learning rate azaltarak bunu yapmak mümkün ya da ortalamarak bunu yapmak mümkün. Neyse, bunu dediğim gibi biraz düşünebilirsiniz üstünde.
+
+361
+01:44:58,931 --> 01:45:11,551
+Şimdi bakalım. Each Gradient Descent iterasyonu requires n çarpı d calculation gerektiriyor. Fakat her bir SGD iterasyonu requires d calculation. Görüyor musunuz?
+
+362
+01:45:16,979 --> 01:45:35,419
+Gerektirdikleri adım sayısı bakımından, yani nasıl Newton-Raphson'la Gradient Descent'de, mesela Newton-Raphson çok daha az adımda gidiyordu. Gradient Descent'de daha fazla adım, iterasyon gerektiriyordu fakat her bir iterasyon çok daha az mahalleti sahipti.
+
+363
+01:45:35,419 --> 01:45:43,719
+Burada da SGD ile GD arasında aynı ilişki var. Yani SGD'nin her bir adımında çok daha az işlem gerekiyor.
+
+364
+01:45:44,095 --> 01:45:57,915
+Fakat daha fazla adıma ihtiyaç duyuyor. Daha fazla adım atarak ancak şeye varabiliyorsunuz. Optimum noktaya yakına ya da işte epsilon yakınına varabiliyorsunuz.
+
+365
+01:46:00,855 --> 01:46:07,723
+Dolayısıyla Stochastic Gradient Descent bizim günümüzde şu anda...
+
+366
+01:46:07,891 --> 01:46:26,791
+Herhalde paper 1951 olması lazım. 1951'de yayınlanmış bir yöntem. Stokastik gradient descent. Tabii gradient descent'e göre oldukça yeni. Gradient descent herhalde Newton'ların zamanından kalan bir 17. 18. yüzyıl civarı olması lazım. 17.
+
+367
+01:46:30,195 --> 01:46:47,936
+Stokastik gradient descent oldukça yeni. Ama demin bahsettiğim özelliğinden dolayı, yani her bir adımda çok fazla hesaplama gerektirmediğinden, çok az sayıda hesaplama gerektirdiğinden dolayı en çok kullanılan algoritma.
+
+368
+01:46:47,936 --> 01:46:58,195
+Yani stokastik algoritmalar. Stokastik algoritmaların temel özelliği şu, herhangi bir adımda bütün örnekleri kullanmak yerine her bir iterasyonla bütün örnekler...
+
+369
+01:46:58,195 --> 01:47:07,916
+Örnekleri kullanıp full grad yerine kullanmak yerine örneklerin birini ya da örneklerin bir kısmını ki o bir kısmı da aslında mini-batch diye geçer.
+
+370
+01:47:08,436 --> 01:47:15,756
+Şeylerde algoritmanın içerisinde. Bad size diye verirsiniz ya. Deep learning de algoritmanın içerisinde. Oradaki bad size o işte.
+
+371
+01:47:16,876 --> 01:47:22,416
+Yani tek bir örnek yerine işte iki tane örneği kullanarak hesaplamayıp her bir iterasyonda demek oluyor.
+
+372
+01:47:22,931 --> 01:47:32,872
+Bunu vererek noisy gradiyanlar üzerinden işlem yaparsınız. Yani full gradiyana benzeyen ama onun kadar doğru olmayan.
+
+373
+01:47:33,555 --> 01:47:57,555
+Çünkü doğru yön, şuradaki şu delta F'e doğru gitmeniz lazım. Fakat noise gradyanlarla doğruya yakın ama doğrudan belli bir gürültülü yöne doğru hareket edersiniz. Bu gürültüler de ne yapabilir? Sizi burada gördüğünüz gibi gereksiz yere yanlış taraflara saptırır. Mesela şurada görüyorsunuz. Şöyle hacapa hacap hareketler de yapabiliyor. Daha fazla adıma ihtiyaç var ama her bir adım...
+
+374
+01:47:58,228 --> 01:48:12,288
+Ful gradiyana göre çok çok daha ucuz olduğu için şu anda günümüzde en popüler olarak kullanılan özellikle large scale algoritmalar problemler için algoritma stokastik gradienti sen ve onun türevleri.
+
+375
+01:48:13,948 --> 01:48:16,768
+Anlaşıldı mı arkadaşlar stokastik gradient algoritması?
+
+376
+01:48:18,188 --> 01:48:19,168
+Evet hocam.
+
+377
+01:48:22,899 --> 01:48:39,840
+Tabii bu SGD'yi daha stabile hale getirmek için çok fazla oynamasın diye çeşitli yaklaşımlar var. Bunlardan bir tanesi mesela işte Gradient Clipping bir tanesi. Mini-Batch algoritması demin bahsettiğim gibi tek bir tane örnek yerine K-TAN'ın örneği.
+
+378
+01:48:40,688 --> 01:49:02,587
+Batch Size'ınızı bir kullanmak tam stokastik oluyor. Ama işte K olarak kullanırsanız, bu sefer de mini batch ile bunu yapmış oluyorsunuz. O oynamaları engellemeye çalışıyorsunuz. Ya da Gradient Clipping ile çok acayip kötü yerlere doğru gitmesini engellemek için aslında Gradient'ın büyüklüğü üzerine bir sınır belirliyorsunuz.
+
+379
+01:49:08,688 --> 01:49:20,652
+Bu da sizi çok fazla uzaklara, çok fazla sapmalara. Yani sapsa bile az sapsın. Yani şöyle bir şey düşünün. Mesela şurada belli sapmalar var. Mesela burada...
+
+380
+01:49:20,724 --> 01:49:44,863
+F mesela. Böyle çok kötü bir örneğe denk geldiniz ki oradaki türev çok yüksek dolayısıyla çok büyük bir adım atıyorsunuz. Mesela burayı çok fazla şey yapıyor, sapıttırıyor, saptırıyor öyle söyleyelim. Burada ne yapabilirsiniz? Gradient Clipping'de de bu sapma miktarını C'nin üstüne çıkarsa onu kırpabilirsiniz. Gradient Clipping zaten kırpma diye geçer.
+
+381
+01:49:48,724 --> 01:50:02,323
+Yani en fazla C büyüklüğünde gradyanlarınız olabilir. Daha büyüğü varsa o gradyanı değiştirir. Yani şuradaki gibi. Şöyle bir tek satırlık bir komut aslında.
+
+382
+01:50:04,051 --> 01:50:24,231
+Bunlar dediğimiz gibi hem çok fazla sapmayı engelliyorlar ve mini 5'te de daha fazla salınmayı engellemeyen tek bir örneği kullanmak yerine mini 5'te işte K tane örneği kullanıyoruz. Ama tabii burada K tane örneği kullandığınız zaman her bir iterasyonda K çarpı D tane işlem gerektiriyor.
+
+383
+01:50:24,231 --> 01:50:32,051
+Yani full gradyanda N çarpı D idi ve burada ise K çarpı D tane işlem gerektiriyor. K'na kadar büyük olursa full gradyanda.
+
+384
+01:50:32,051 --> 01:50:57,891
+Doğru gradyana, o kadar yakın bir şey elde ediyorsunuz ama o kadar fazla hesap yükü gerekiyor. O kadar fazla memori de tutmanız gerekiyor. Dolayısıyla batch size'ı çok büyük tutamıyorsunuz. Memorinizde yer kapladığı, algoritmanızla denerken muhtemelen karşılaşmışsınızdır da. Bilmiyorum karşılaştınız mı? Batch size'ı küçülttüğünüz zaman hala çalışabilir hale gelebilirler çok büyük mimariler.
+
+385
+01:51:01,876 --> 01:51:19,516
+Şimdi Gradient Cent'in orijinal algoritmasının Newton-Raphson kadar hızlı olmadığını daha geçen haftada görmüştük. Burada bir örneği var basit olarak.
+
+386
+01:51:20,083 --> 01:51:35,064
+Mesela Leone Rating 0.1 almışız ve 1'den 2'ye, 2'den 3'e, 4'e, 5'e, 6'ya zikzaklar çize çize. Mesela buradaki fonksiyon için x1'in karesi artı 8, x2'nin karesi fonksiyon için bu şekilde zikzaklar çizerek ilerlemiş.
+
+387
+01:51:38,163 --> 01:51:54,764
+Second Order Information'ı kullanırsam ben, yani HESIAN'ı kullanırsam, HESIAN'ı kullandığım zaman çok daha hızlı bir şekilde bu gereksiz hareketler yerine çok daha smooth, çok daha hızlı bir şekilde ilerleyebiliyordum.
+
+388
+01:51:54,764 --> 01:52:04,492
+Şimdi göreceğimiz algoritmalar ise bu HESIAN'ı kullanmayalım, yani Second Order Information'ı kullanmayalım fakat...
+
+389
+01:52:04,595 --> 01:52:28,055
+Onun, ona yaklaşık hareketler üretebilen, işi hızlandırabilen çeşitli yöntemler geliştirilmiş. Bunlardan bir tanesini az önce gördük aslında. Neydi? Hesse'ni kullanmak yerine Jacobian'leri kullanmıştı. Hatırlıyor musunuz? Orada bir tane eşit değil de yaklaşıktır diye bir şey söylemiştim. O mesela bunun için kullanılan yöntemlerden bir tanesi.
+
+390
+01:52:29,140 --> 01:52:43,960
+Şimdi ne yapacağız? Bunlara quasi Newton metotlar deneyen. Newton işte second order yöntem. Quasiler ise sanki öyleymiş gibi. Posado gibi bunu değerlendirilirsiniz. Hes yanı ne yapacaklar?
+
+391
+01:52:46,068 --> 01:53:01,668
+Simüle edecekler. Tamamen aynısı değil ama ona benzeyen bir şekilde. Bunu yapmaktaki amaç ne arkadaşlar? Daha az adımda ilerleyebilmek. Yani burada mesela işte bu böyle sapmalardan engelleyip daha böyle smooth bir şekilde oraya doğru ilerlemeyi sağlamak.
+
+392
+01:53:03,108 --> 01:53:11,068
+Şimdi bunlardan ilki Adagrad algoritması. Adagrad algoritması oldukça önemli bir algoritma.
+
+393
+01:53:11,699 --> 01:53:26,699
+Acaba nasıl bir yapısı var? İlk önce şeye bakalım. İki tane versiyonu var AdaGrad'ın ve iki versiyonu da GT diye bir matriz kullanıyor. GT matrizi neymiş bakalım? Şimdi şurada bir yazı vardı. Observe all previous gradients. Yani...
+
+394
+01:53:27,347 --> 01:53:41,887
+Sadece bu algoritmalar, yani bu quasi Newton algoritmaları, sadece mevcut gradiyen değerine bakmıyor da, algoritmanın en başından beri hesaplanan bütün gradiyen değerlerini kullanarak hareket ediyor.
+
+395
+01:53:41,887 --> 01:53:42,948
+Tamam mı?
+
+396
+01:53:44,408 --> 01:53:49,068
+Şimdi mesela buradaki şu gt'ye bakalım. Bu gt neymiş?
+
+397
+01:53:49,988 --> 01:53:54,007
+j eşittir birden t'ye kadar. Yani t'ci adımdaki g matrisi.
+
+398
+01:53:54,323 --> 01:54:19,783
+J'ye eşittir, birden T'ye kadar. Yani birinci adımdaki, birinci adımdan T'ye adıma kadar ki, bakın ne yapıyor? Delta F, X, J, yani J'ye adımda, işte birden T'ye kadar gidecek. J'ye adımdaki çarpı bunun transpos. Yani şu türev, herhangi, yani J'ye adımdaki türev bu. J'ye adımdaki türevin boyutu nasıl bir şey arkadaşlar? D'ye birlik bir şey. D çarpı birlik bir şey.
+
+399
+01:54:22,355 --> 01:54:37,716
+Bunun transposunu çarparsanız, D çarpı bir şey, bir çarpı delik bir şey. Dolayısıyla D çarpı bir şey ile bir çarpı delik bir şey çarparsanız, bunu size D çarpı delik bir matriz elde edersiniz. D çarpı delik bir matriz. Bu matrizleri, burada kaç tane böyle matriz oluşacak?
+
+400
+01:54:38,292 --> 01:55:01,232
+Bunları çarparsanız, yani bu şuradaki, şurasıyla, şurasını çarptığınızda bir matris olacak. Burası ile burası ile burası ile çarptığınızda başka bir matris. Burası ile burası ile burası ile yani J'nin her bir değeri için. Önceki T'ci A'na kadarki bütün J değerleri için matrisler elde edeceksiniz. Ve bunların hepsini toplarsanız eğer, sizin elinize D çarpı D'lik bir matris gelecek. Herhangi bir T anı için.
+
+401
+01:55:04,724 --> 01:55:18,864
+Sum of Outer Product dediği şey şu, kendisiyle transpozunu çarpmak Outer Product oluyor. Of all previous gradients. Minimik esyan. Buradaki bu GT'nin, GT matrisinin esyanı tepsir edebileceğini bulmuşlar.
+
+402
+01:55:19,380 --> 01:55:42,560
+Yani Heslihan'ın direkt birebir değil tabii ki. Demin bahsettiğim gibi o Jacobian'ların transposil çarpımı ortada çok benzeyen bir şey vardı. Hatırlıyorsunuz. Transpozil çarpımı var. Burada da yine onu görüyorsunuz aslında. Heslihan'ı birebir aynısı değil fakat onun gibi süreci hızlandıran bir şey olduğunu bulmuşlar, göstermişler.
+
+403
+01:55:43,060 --> 01:56:04,199
+Şimdi buradaki GTD çarpı denik bir maddektir. Peki ben bu GT'yi ne yapacağım? Şimdi normalde iki tane versiyonu var Adagrad'ın. Bunlardan bir tanesi, şurada bakın, şurası benim o anki türevim zaten. Yani şurayı kaldırın, bu zaten gradient descent değil mi? Yani şurası düşünürseniz, burası, şurayı kaldırırsanız.
+
+404
+01:56:04,787 --> 01:56:31,028
+Seçil olan yer kalırsa burası bir kadar. Ben onun yerine buraya GT'nin eksi bir bölü ikisini koyayım. Şurası aslında kare olduğundan dolayı, öyle söyleyelim, şurası F'nin karesi gibisinden bir şey oluyor aslında. F'nin karesi o yüzden kara kökü geliyor burada bir bölüsünden dolayı. Bunu koyabilirim. Şimdi bu full matris versiyonu, yani GT'nin tamamını kullanalım.
+
+405
+01:56:32,115 --> 01:56:58,195
+Full matrisinin tersini almak ya da karakökünü almak ne gerektiriyor? D çarpı delik bir kalkülasyon, hesaplama yükü gerektiriyor. Bu birazcık daha pahalı bir iş. D çarpı D pahalı bir iş. Onun yerine bu GT'nin diagonalini sadece diagonalini kullanıyorlar. Sadece diagonalini kullanırsanız o matrisin diagonalini nedir arkadaşlar? Şurayı bir hatırlayın bakalım. O matrisin diagonalini nedir?
+
+406
+01:56:58,931 --> 01:57:00,071
+GTM atısını.
+
+407
+01:57:09,971 --> 01:57:12,051
+GTM adresinin Diagoninde neyi görürsünüz?
+
+408
+01:57:22,036 --> 01:57:25,931
+Yani kareleri...
+
+409
+01:57:30,899 --> 01:57:33,179
+Birbirine göre değişimi değil ama.
+
+410
+01:57:35,259 --> 01:57:36,239
+Birbirine göre değil.
+
+411
+01:57:36,960 --> 01:57:39,439
+İkinci dereceden şey gibi oluyor.
+
+412
+01:57:41,395 --> 01:58:09,395
+Karesi oluyor. Evet, karesi. Karesi değil mi? Karelerini toplam oluyor arkadaşlar. Buraya bakın. Şurada, sizin şu matrisi, şu vektörü düşünün, bir de şu vektörü düşünün. Bu vektör işte bir tanesi şöyle bir vektör, bir tanesi şöyle bir vektör. Bununla yani oluşan matrisin diagonali her birinin kendisiyle çarpımı olacaktır. Dolayısıyla karesi olacaktır her birinin. Dolayısıyla bunun hesabı, yani diagonali kullandığında bunun hesabı ne olacak?
+
+413
+01:58:09,395 --> 01:58:10,079
+olacaktır.
+
+414
+01:58:10,079 --> 01:58:38,079
+D olacaktır. D kalkülasyonası, yani D tane hesap yapmanız yeterli olacaktır. D çarpı D'lik bir maddese de gitmenize gerek kalmayacak. Ve bunun diagonal versiyonunun da oldukça iyi çalıştığını göstermişler. Şimdi onu bir bakalım. Şimdi Edegrad'ın kod falan zaten hepsi burada bakarsınız. Gradient desen mesela işte buradan başlayıp böyle böyle gidiyordu. Diagonal GT mesela şuradan başlayıp aynı yerden başlıyor bunlar bakın. Aynı fonksiyonun üzerine görüyorsunuz. Oldukça sumut bir şekilde.
+
+415
+01:58:38,079 --> 01:59:04,340
+Bu şekilde bakın ne yapıyor? Gidiyor. Full gradient'e yani full GT'yi kullanırsanız da yine oldukça hızlı bir şekilde ilerletebiliyor süreci. Bunlardan çok çok daha hızlı bir şeye sahipler. Converge Rate'e yani gradient descent'e göre sahipler. Şu anda bakın stokastikten bahsetmiyorum. Sadece gradient hallerinden bahsetmiyorum. Yani stokastik olmayan versiyonlardan bahsetmiyorum.
+
+416
+01:59:07,572 --> 01:59:23,252
+Peki bunların stokastik olan versiyonları nasıl? Bu da yapılabilir ki zaten hani kodları açarsanız orada göreceksiniz. İşte gradient descent'in stokastik hali şurada görüyorsunuz yine en sonunda baya bir girilme var. Burada da mesela yine bu tarafa doğru şurada yine ne yapmaya başlayacak?
+
+417
+01:59:23,699 --> 01:59:36,699
+Bu da yine rastgele salınmaya başladı. Dolayısıyla bunların yaptığı, yani şu Adagrad'ın her iki versiyonundaki asıl önemli olanı…
+
+418
+01:59:37,395 --> 01:59:52,675
+Diagonal olanı, yani diagonal'ın önemli olmasına sebeple hesaplama maliyetinin oldukça düşük olması o manada. Diagonal olanı aslında hiç çok da fazla işlem yapmadan bize çok daha hızlı bir şekilde konverge etmemizi sağlıyor.
+
+419
+01:59:52,675 --> 02:00:03,915
+Gradient descent'e göre. Tabii ki şey kadar hızlı değil. Second order'a kadar hızlı değil. Fakat gradient descent'den oldukça hızlı bir algoritma. Adagrad algoritması.
+
+420
+02:00:04,724 --> 02:00:27,243
+Şimdi bu türevlerin karelerini toplama fikri ve bunun da Hesyan matrisini simüle ediyor, ona benzer davranıyor fikri bizim şu anda günümüzde en çok kullanılan, yapay sinyalarında en çok kullanılan algoritma olan Adam algoritmasını doğurmuş.
+
+421
+02:00:27,796 --> 02:00:43,536
+Yani Adagrad algoritması Adam'ın esin kaynağı diyebiliriz o şekilde. Bir tanesi RMS Prop, bir tanesi de Adagrad. Adam algoritmasını da incelerseniz oldukça güzel bir makale.
+
+422
+02:00:45,016 --> 02:00:53,376
+Şimdi Adam algoritmasında ise şuradaki yapılan işten birazcık daha farklı bir iş yapılıyor ama çok çok korkunç bir şey değil, farklılık.
+
+423
+02:00:54,003 --> 02:01:01,244
+Şimdi bakarsak, aslında buradan değil de, bir saniye, şuradan ilerlesek daha iyi olur.
+
+424
+02:01:02,623 --> 02:01:10,844
+Evet, şuraya bakalım ilk önce. Burası zaten şey, standart. İki tane parametresi var, hiper parametresi var, pardon.
+
+425
+02:01:11,344 --> 02:01:16,684
+Hiper parametre demek ne demekti? Algortmanın kendisinin bulamadığı ama bizim onu söylememiz gereken.
+
+426
+02:01:17,203 --> 02:01:42,443
+İki tane hiper parametresi var. Bunları siz söyleyeceksiniz. Bunlar bir şeyleri kontrol ediyorlar. Neleri kontrol ettiklerini göreceğiz. Şimdi bir tane buradaki şeyi optimize edecek parametreleri teta ile göstermişler. Yani şu en sona bakarsanız t eşittir, t eksi bir eksi bir şey der. Yani standart şurası update kısmı şu en son. Bu update de şuradaki alfa zaten bizim şeyimiz ne derler? Step size'mız.
+
+427
+02:01:42,996 --> 02:01:55,216
+Ve burada mt hat ve wt hat diye iki tane değişken var. Burada türev falan gözükmüyor sanki ama onların içlerine baktığımızda göreceğiz zaten onları.
+
+428
+02:01:55,936 --> 02:02:04,676
+Şimdi bakalım neymiş oldu ki mt hat ve wt hat. Şimdi bir gt var ki gt bizim zaten standart şeyimiz.
+
+429
+02:02:08,851 --> 02:02:26,851
+Şimdi elimizdeki stokastik yani t-ci adımda stokastik bir objektif. Stokastik objektiften kastığımız ne? Yani ya tek bir tane örnekle alırız bed size'a göre ya da işte k tane örnekle alırız. Gradient. Yani şuradaki gt dediğimiz şey gradient. O anki gradiyanımız. Tamam mı? O anki gradiyan.
+
+430
+02:02:37,363 --> 02:02:58,563
+M-T'de neleri biriktiriyor? M-T-1'i alıyor. Şunu mesela 0.5 diye düşünün. M-T-1'in yarısı artı G-T. Yani G-T'leri topluyor aslında. G-T'leri biriktiriyor değil mi? Bakın G-T'leri biriktiriyor.
+
+431
+02:02:58,563 --> 02:03:00,943
+M-T'nin içerisinde.
+
+432
+02:03:01,779 --> 02:03:12,159
+Beta 1 ne kadar büyük bir şey olursa, bakın beta 1 ne kadar büyük bir şey olursa, önceki değerlerin, yani önceki gradiyanların etkisi de o kadar büyük olur değil mi?
+
+433
+02:03:13,600 --> 02:03:23,060
+Ne kadar beta 1 küçük bir şey olursa, şimdiki gradiyanın etkisi, mt üzerindeki gradiyanın etkisi o kadar büyük olacaktır.
+
+434
+02:03:23,060 --> 02:03:26,260
+Tamam. Şimdi bu m'dir.
+
+435
+02:03:26,707 --> 02:03:40,507
+Yani bizim gradiyanların kendilerini topladığı yer. Bir de VT var. VT ise gradiyanların karelerini topladığı yer. Ki gradiyanların karelerini demin görmüştük Adagrad'da. Değil mi? O diagonalini hatırlarsanız.
+
+436
+02:03:42,868 --> 02:04:06,548
+Gradiyanların karelerini topluyor burası da. Bakın, gradiyanların karelerini topluyor. Yani MT'de gradiyanların kendisini topluyor, VT'de ise gradiyanların karelerini topluyor. Yine burada beta 2'de aynı şekilde büyükse önceki kareler önemli, küçükse şimdiki kareler önemli. Yani son anlara önem vermesi ya da önceki anlara önem vermesi şeklinde bunu düşünebilirsiniz.
+
+437
+02:04:10,547 --> 02:04:30,427
+mtht ve vtht'i buluyor. Bu mtht ve vtht'in aslında bulunması, şuradaki işlemlere bakarsanız bir tanesi beta1'in üzeri t ile bir eksi bunu çarparak mt'ye bölmesi, ötekisi de aynı şekilde. Bu aslında bir correction. Yani bir düzeltme.
+
+438
+02:04:35,539 --> 02:04:51,420
+O ana kadarki gradyanlarımızın ortalaması. Buna first moment denir, değil mi? Yani ortalama first momenttir. Karelerin ortalaması ise de second momenttir. Bir statistikten hatırlayın.
+
+439
+02:04:51,956 --> 02:05:16,176
+Şimdi buradaki başlangıçta toplamların, yani first nomant de en başta sıfır olacaktır. Hiçbir şey yokken içerisinde. Şurada görüyorsunuz. Initializer'ın M0, 0 ve 0, 0. İlk adımdaki initializer'ın 0 olduğundan dolayı başlangıçta bunlar var olduğundan daha küçük gözükeceklerdir.
+
+440
+02:05:16,576 --> 02:05:41,836
+Ve bu küçük gözükmeyi düzeltmek için aslında şuradaki yapılan işlem. Yani şöyle bir şey düşünün. Beta 1 üzeri t, yani beta 1'in t'nin de giderek arttığını düşünün. T giderek arttıkça t'yi mesela işte 10. epokta, 100. iterasyonda falan düşünün. Şuradaki beta 1 değerinin üstü bir şey alıyorsunuz. İşte yüzlü üstü bir şey alıyorsunuz. Beta 1 zaten 0 ile 1 arasında bir şeyler.
+
+441
+02:05:42,256 --> 02:06:03,096
+Dolayısıyla bunun yüzüncü üstüne alırsanız bu giderek ne olacak? Sıfıra yaklaşacak. Yani bir eksi sıfır gibi bir şey olacaktır. Yani başlangıçta mt'yi birden küçük bir şeye bölerken ilerleyen adımlarda bire çok çok yakın bir şeye bölüyorsunuz. Dolayısıyla ilerleyen adımlarda aslında şu adımların, ilerleyen iterasyonlarda bu adımların etkisi çok azalıyor.
+
+442
+02:06:11,220 --> 02:06:32,260
+Etkisini azaltmak için yapılan bir correction işlemi. Yoksa ileriki adımlarda çok da fazla bir etkileri yoklar. Ama çok hızlı bir şekilde en başta da yanlışlık olmasın diye bu correction işlemi gerçekleştirilmiş. Ondan sonraki adımda da zaten mt bölü, vt'nin kaç? Şimdi vt'nin kare kökü. Vt neydi arkadaşlar? Karelerde değil mi? Bakın karelerde.
+
+443
+02:06:32,948 --> 02:06:53,167
+Yani Vt'ler karelerde onların kare kökünü aldığı zaman yine gradiyant gibi bir şey oluyor. Gradiyantların ortalaması gradiyantların ortalamasını da böldüğünüz zaman aslında tahminen oldukça birbirine yakın bir şey çıkacaktır değil mi? Yani şu ikisi aşağısı ve yukarısı birbirine oldukça yakın bir şey çıkacaktır.
+
+444
+02:06:53,811 --> 02:07:12,731
+Bakalım, yakın bir şey çıkması demek ne demek? Şuradaki step size'e bağlı bir güncelleme olacak gibi. Sanki gradiyatların kendi içlerine bağlı, büyük gradiyat için büyük güncelleme, küçük gradiyat için küçük güncelleme gibisinden bir şey olmayacak gibi gözüküyor.
+
+445
+02:07:13,136 --> 02:07:31,696
+Yani farklı büyüklüklerde gradiyanlar için benzer büyüklükte güncellemeler gerçekleştirilecek gibi bir şey var burada. Çünkü bu ortalamasıydı. Bu da Karaderin ortalamasıydı. Karaderin karakökünü az zaman yine kendisi oluyor. Dolayısıyla bir görelim bakalım neler olacak.
+
+446
+02:07:32,948 --> 02:07:53,188
+Şimdi, VT'yi bu şekilde yazmıştık, MT'yi bu şekilde yazmıştık. Onların Adagrad versiyonları böyle olacaklardır. Çok çok önemli değil. Burada kodda yine Moving Average kodunda bunu gerçekleştirmişim. Gradiyeni ben ortalaması 2 ve standart satması 1 olan bir stokastik değişken olarak modellemişim.
+
+447
+02:07:53,779 --> 02:08:17,119
+Gradiyanlar değişiyorlar görüyorsunuz. Maviler gradiyanları gösteriyorlar. Böyle gradiyanlar üretmişim yani. Böyle gradiyanlar için GT'nin değeri zaten bu gradiyanlar. M'yi ve Tm'yi çizdirmişim. M dediğimiz şey bizim şuradaki şu M bakın. Tm ise şuradaki şu MT yani Tm hat.
+
+448
+02:08:21,203 --> 02:08:31,243
+Şu kırmızının zaman içerisinde neye yaklaştığını görüyorsunuz. GT'lerin ortalamasına yaklaştığını görüyorsunuz. MT zaten neydi? GT'lerin ortalamasıydı zaman içerisinde.
+
+449
+02:08:32,115 --> 02:08:50,936
+Fakat Tm'nin çok daha hızlı bir şekilde buna yaklaştığını görüyoruz. Bir correction demiştim ya aslında şuradaki yapılan, şu MTH'den bahsederken bu bir correction. Bu çok daha hızlı bir şekilde ortalamaya, yani gradyanların ortalamasını bulmaya çok daha hızlı bir şekilde yaklaşıyor. Daha az adımda bunları bulabiliyor.
+
+450
+02:08:51,636 --> 02:09:14,536
+Eğer betayı 0.9 ile 0.7 alırsanız çok daha da hızlanabilir. Fakat hızlanmasının yanında neyi görüyorsunuz? Daha fazla hareket ettiğini görüyorsunuz. Yani farklı gradyanlar için, farklı gürültülü gradyanlar için daha gürültülü altlıklar, daha gürültülü ortalamalar çıkartıyor.
+
+451
+02:09:15,060 --> 02:09:36,939
+Şimdi hatırlayalım. Adam'ın temel amacı arkadaşlar, Adam algoritmasının temel amacı large scale optimizasyon yani büyük ölçekli optimizasyon problemlerini kullanmak. Büyük ölçekli optimizasyon algoritmalarında da ne vardı biz? Neyi görmüştük? Neyi kullanabiliyorduk sadece? Stokastik gradient descent kullanabiliyorduk. Stokastik gradient descent kötü tarafı neydi? Gürültülü gradientlar vardı.
+
+452
+02:09:37,344 --> 02:09:59,184
+Gürültülü gradyanlar, bir o tarafa bir bu tarafa sapmalar üretiyorlardı. Fakat burada neyi görüyoruz? Gürültülü gradyanlar ürettim şu anda. O mavi gördüğünüz sapmalar var ya, hareketleri görüyorsunuz. Bir o tarafa bir bu tarafa hareket ettirebilecek şeyler belki. Ya da büyük küçük hareket ettirebilecek şeyler. Burada bakın çok daha smooth bir hareket üretiyor.
+
+453
+02:10:00,000 --> 02:10:13,199
+Bakın çok daha sumut. Yani MT çok daha sumut bir şey. Neye göre? Gradyanların kendilerine göre. E tabii ki ortalama zaten nedir? Yani değerlerin ortalamasını alırsanız daha sumut bir şey elde edersiniz. Gayet beklenen bir şey.
+
+454
+02:10:13,747 --> 02:10:36,847
+Aynı şekilde işte beta'yı 0.9 değil de, beta 1'i 0.9 değil de 0.7 aldığınızda daha hızlı şeye yaklaşıyor, ne derler ona. Ortalama değeri yakalıyor ama daha fazla hareket ediyor. Çünkü beta'yı 0.7'ye çektiğiniz zaman, şuraya bakarsın beta 1'i 0.7'ye çektiğiniz zaman ne olacaktır? Son değerlerin etkisi daha fazla olacaktır.
+
+455
+02:10:37,395 --> 02:10:48,855
+Ama 0.9'a çektiğiniz zaman son değerlerim ilgisi daha az olacaktır. Daha fazla öncekilere bakacaktır. Bu standart, işte moving average almanın çeşitli yöntemleri.
+
+456
+02:10:50,676 --> 02:11:09,416
+Buraya kadar beraber miyiz arkadaşlar? Şu şey olayını kavradık mı? MT'nin daha az salındığı mevzusunu. Yani gürültülü gradiyanları, yani stokastik gradiyan dissentinin sebep olduğu gürültülü gradiyanların kötü etkisini gereksiz yere sağa sola gitmeleri engellemek için oluşturulmuş bir algoritma.
+
+457
+02:11:10,996 --> 02:11:36,715
+Ve bunu da sadece o anki gradiyana göre değil, geçmiş gradiyanları da kullanarak yapılıyor. Aynen Adagrad gibi. Ama Adagrad sadece first order momentleri yani ortalamaları, pardon, kareleri kullanırken Adam iki tane şeyi birden kullanıyor. Bir tanesi ortalamalar, bir tanesi ise yani row ortalamalar, ötekisi ise second moment yani karelerin ortalamaları.
+
+458
+02:11:38,355 --> 02:11:55,496
+Şimdi burada Adam'ın update'ini görüyorsunuz. Yani kodu açarsınız zaten. Yine orada da göreceksinizdir. Şu maviler bu sefer bakın şöyle bir şey yaptım. Gradiyan değerlerini 9'dan başlattığım 3'e kadar kademeli olarak düşürdüm. Yani şöyle smooth bir şekilde düşürdüm.
+
+459
+02:12:03,572 --> 02:12:29,811
+Ne derler ona? Hem M hem Tm. Tm'yi gösteriyor. Tv'yi de bakabiliriz. O da çok çok krali. Önemli olan şey şuradaki Adam'ın update'i. Adam'ın update'i yani bizim şuradaki şu update'imiz. Şu kısım bakın. M, T'nin hat'i bölü ve T hat'in şeyi ne derler ona? Karakökü'nün bölümü. Adam update'i. Adam update'e bakın. Ne görüyorsunuz burada Adam update?
+
+460
+02:12:31,252 --> 02:12:34,992
+Bire çok yakın bakın. Ve neyden etkilenmiyor arkadaşlar?
+
+461
+02:12:38,068 --> 02:12:56,488
+Bu gradyanların büyüklüğünden etkilenmiyor. Bakın, gradyan dokuzken de birre yakın bir şey de üretmiş, gradyan üçken de yine bire yakın bir şey de üretmiş. Yani gradyanın büyüklüğünden, küçüklüğünden, yani multitude of gradyanttan bağımsız bir güncellemeden bahsediyor.
+
+462
+02:13:06,068 --> 02:13:32,548
+Yönlerinizde ne olacak arkadaşlar? Sapacaklar. Ama Adam'da sapmaların olmadığını görüyorsunuz. Yani çok küçük küçük, minik minik sapmalar var. Bu oldukça önemli. Şurada görüyorsunuz. Bir diğer önemli özelliği ise spars gradyenleri de işin içeri. Spars gradyen demek ne demek? Elinizdeki gradyen vektörlerin bir kısmı sıfır olabilir. Yani vektörlerin içerisinde sıfırlar olabilir.
+
+463
+02:13:33,684 --> 02:13:49,403
+Sıfır gradiyan demek ne demek? Güncellemenin olmaması demek. O yönde herhangi bir güncelleme yapılmayacak demek. Fakat şey, Adam algoritması Spars durumda da hala güncellemeye devam edebiliyor.
+
+464
+02:13:50,452 --> 02:14:06,112
+Bunun da avantaj sağlayabileceği nokta neresi olabilir? Demin neyi görmüştük? Bir önceki slide'da düz bir piloto vardı. Düz bir piloto da türevler sıfırlandığı anda herhangi bir yönde ne olacaktı?
+
+465
+02:14:06,515 --> 02:14:34,475
+Orada takılıp kalacaktı. Ama Adam algoritması aynen aslında Moment'in kullanımı gibi. Daha önceki gradiyanları da hala güncellemede kullandığı için mesela bir dik bir yerden geldiniz ve düz bir vadiye vardınız öyle söyleyelim. O düz vadide türeviniz mesela standart gradient descent'i kullandığınız türeviniz sıfırlandı. O zaman zaten daha update etmeye devam etmeyecek. Ama Adam algoritması ne yapacaktır? O önceki o dik inişten.
+
+466
+02:14:34,515 --> 02:14:54,155
+Kalan gradiyanları hala kullanmaya devam edecek ve sizin o yönde ilerlemenize sebep olacaktır. Burada mesela şey görüyorsunuz, gradiyanların yarısını sıfırlamışım ben. Şurada sıfır olanları da görüyorsunuz bir sürü. Mesela ortalaması bunun da herhalde iki civarında falan tam şeyini hatırlayamıyorum ortalamasını da. Yani sıfırların haricindeki ortalamasını.
+
+467
+02:14:54,591 --> 02:15:14,551
+Adam'ın update'ine bakın. Adam'ın update'i hala şurada oldukça bir seviyesinden çok da buradakine göre biraz sapmış ama burada oldukça yüksek bir değerde duruyor. Yani güncelleme devam edebiliyor. Gradiyanların sıfır olduğu durumda. Gradiyanların sıfır olması durumu şeyde çok fazla rastlanır.
+
+468
+02:15:17,876 --> 02:15:33,696
+Mesela NLP'de temsil ederseniz, NTTK'nın içerisinde Vectorize falan temsil ettiğinizde o termdokument matrisinin çok büyük bir kısmının sıfır olduğunu görürsünüz.
+
+469
+02:15:34,195 --> 02:15:51,416
+Onların türevleri de çok büyük bir kısmı sıfır olacaktır. O durumda çok fazla sıfır olan durumlarda Gradient Descent algoritması çok fazla bir güncelleme yapamayacaktır. Ama Adam algoritması oldukça güncelleme devam ederek ilerleyebilecektir.
+
+470
+02:16:10,068 --> 02:16:11,808
+Ses kesildi mi?
+
+471
+02:16:13,868 --> 02:16:15,208
+Bağlantı koptu galiba.
+
+472
+02:16:58,611 --> 02:17:00,611
+[öğrenci], sen no devam edelim.
+
+473
+02:17:01,611 --> 02:17:03,611
+Şuan dağız, ben onu.
+
+474
+02:19:47,188 --> 02:19:51,128
+Koptum arkadaşlar. Şu anda geliyor ses merhaba değil mi? Sıkıntı yok.
+
+475
+02:19:52,727 --> 02:19:53,448
+Geliyor hocam.
+
+476
+02:19:58,260 --> 02:20:14,500
+Şimdi şu slide'da kalmıştık herhalde. Şimdi Adam'ı iki boyutta inceleyelim. Şu fonksiyon üzerinde, SGD'yi çalıştığımızda böyle böyle sapmalar olduğunu görüyorduk. Adam'ı çalıştırdığımızda ise sanki böyle tak diye.
+
+477
+02:20:15,156 --> 02:20:27,656
+Oraya gidiyormuş gibi değil mi? Sanki optimum noktayı biliyormuş da oraya doğru gidiyormuş gibi bir şey var. Aslında öyle bir şey yok tabii tahmin edebileceğiniz gibi. Mesela şuradan başlatırsanız şöyle smooth bir şekilde gidiyor aslında.
+
+478
+02:20:28,436 --> 02:20:35,576
+Onun sebebi her boyutta eşit büyüklükte temelde güncellemeler yapıyor olması. Burada da işte başladığımız nokta.
+
+479
+02:20:36,147 --> 02:20:47,167
+Eksi iki buçuğa, eksi iki buçuk civarında falan bir şey olduğu için sanki tak diye gidiyormuş gibi gözüküyor. Fakat burada işte biraz daha farklı bir yerden başlattığımızda daha sumut bir güncelleme yapabildiğini görüyoruz.
+
+480
+02:20:52,084 --> 02:21:06,744
+Adam'ın kötü tarafı var mı? Var. Herhangi bir şey sıfırsa bile, o boyutta güncelleme yapmamız gerekmiyorsa bile hala güncelleme yapmaya devam ediyor. Ama yine de konverj ediyor. Onda da çok büyük bir sıkıntısı yok aslında.
+
+481
+02:21:08,788 --> 02:21:20,227
+Şimdi burası kalsın. Şimdi arkadaşlar bir beş dakika ara verelim. Ondan sonra da ödevinize kaldığımız yerde devam edeceğiz. Beş dakika ara vereceğiz.
+
+482
+02:25:53,012 --> 02:25:53,932
+Evet arkadaşlar.
+
+483
+02:26:33,523 --> 02:26:35,523
+Kusura bakmayın arkadaşlar, ev halleri.
+
+484
+02:26:37,023 --> 02:26:41,863
+Peki, evet şimdi ödevimiz nerede bizim?
+
+485
+02:26:49,236 --> 02:26:50,816
+Herkes sesini duyuyor mu?
+
+486
+02:26:53,596 --> 02:26:54,276
+Duyabiliyor muydur?
+
+487
+02:26:54,456 --> 02:26:55,995
+Tamam, güzel.
+
+488
+02:26:56,956 --> 02:27:02,236
+Şimdi arkadaşlar, bu online Yıldız Edit L'ye ödevi koydum, gördünüz mü?
+
+489
+02:27:04,096 --> 02:27:04,816
+Önce onu sorayım.
+
+490
+02:27:10,355 --> 02:27:16,155
+Hocam ödevin süresi 5 Ekim sanırım, 5 Kasım yani süre doğmuş olarak.
+
+491
+02:27:16,175 --> 02:27:29,575
+Yanlış yazmışım, yanlış girmişimdir o zaman. Onu düzeltirim ben. Hatırlattın, iyi oldu. Nasıl ben öyle bir hata ya? Neyse birazdan düzeltirim onu. Şu anda ödevi o zaman teslim edemiyorsunuz değil mi?
+
+492
+02:27:30,795 --> 02:27:33,255
+Hatta göremiyoruz hocam ödevi bittiği için.
+
+493
+02:27:33,747 --> 02:27:43,247
+Tamam, bir saniye. Onu halledelim hemen ya. Bir dakika. Hazır zaten buradayız. Bir saniye.
+
+494
+02:27:46,899 --> 02:27:48,139
+Şekerelim.
+
+495
+02:28:02,611 --> 02:28:04,171
+Düzeltme.
+
+496
+02:28:07,572 --> 02:28:15,231
+Enteresan işte. Mesela onu niye öyle yapmışlar? Neyse bakalım şimdi dosya değiştir. Dosya değiştirmeyeceğim.
+
+497
+02:28:21,876 --> 02:28:24,596
+Şimdi görebiliyor musunuz arkadaşlar? Güncelledim.
+
+498
+02:28:28,468 --> 02:28:29,587
+Evet, o zaman şimdi gelmiş.
+
+499
+02:28:30,368 --> 02:28:31,868
+Ah, tamam. Güzel, tamam.
+
+500
+02:28:51,956 --> 02:28:56,916
+Şu anda ödev pdf'i görünüyor mu karşınızda ekranda?
+
+501
+02:29:02,067 --> 02:29:02,827
+Görünüyoruz.
+
+502
+02:29:04,007 --> 02:29:05,367
+Tamam, tamam. Peki.
+
+503
+02:29:06,195 --> 02:29:34,195
+Şimdi arkadaşlar, sizden istediğim optimizasyon algoritmanı karşılaştırmanız. Optimizasyon algoritmanı ne var? Gradient Descent, Adam ve Koordinate Descent. Koordinate Descent'i anlatmadım. Onu bile araştırdım ama zaten çok basit bir algoritma. Varlanan kodları modifiye ederek ya da kodları bularak yapabilirsiniz. Bunların kodlarını dediğim gibi hepsininkini paylaşmayan Koordinate Descent'inki yok ama modifiye edebilirsiniz ya da bir yerlerden bulabilirsiniz.
+
+504
+02:29:34,195 --> 02:29:58,716
+Yani bunların kodlarını sizin direkt birebir yazmanız şart değil ama kendiniz yazarsanız daha iyi olur. Şimdi ne üzerinde bunları karşılaştıracaksınız? Kendi tanımladığınızda dört tane loss fonksiyonu tanımlayacaksınız. Yani iki tanesi konveks, iki tanesi non-konveks olacak bu fonksiyonları. Bakın loss fonksiyonu tanımlayın diyorum. Yani bir eğitim kümesi, test kümesi falan diye bir şey olmayacak burada. Loss fonksiyonu tanımlayacaksınız.
+
+505
+02:30:00,000 --> 02:30:05,639
+10 boyutta olsunlar istiyorum. Yani bizim yaptıklarımız hep 2 boyuttaydı ama en az 10 boyutta olsunlar istiyorum.
+
+506
+02:30:06,439 --> 02:30:18,000
+5 tane farklı başlangıç noktası belirleyeceksiniz. Yani V0 diyelim onlara ya da işte X0, beta0 artık bizim optimiz edeceğimiz parametreyi neyle gösteriyorsak.
+
+507
+02:30:18,260 --> 02:30:23,619
+Mesela W olsun burada, W0 belirleyip tüm algoritmaları buralardan başlatacaksınız.
+
+508
+02:30:25,172 --> 02:30:44,211
+Hiperparametrenin etkisini araştırıp, optimize edeceksiniz ilk önce. Yani hiperparametreler neler var? İşte Gradient Descent'de adım büyüklüğü var. Adam'da da beta 1, beta 2'yi optimize etmenize gerek yok. Default halde de kullanabilirsiniz. Onun da yine Adam Step Size, yani adım büyüklüğünü optimize edebilirsiniz. O optimize ettikten sonra da ne yapacaksınız?
+
+509
+02:30:44,724 --> 02:31:06,024
+Hiperparametre optimiz edildikten sonra 3 yani algoritma sayısı, 3 çarpı 4, 4 tane de loss fonksiyonu var, çarpı 5, 5 tane farklı başlangıç noktası var. Yani 60 tane optimizasyon sürecini çalıştıracaksınız ve sonuç tablosu oluşturacaksınız. Şuraya vardı şeklinde, şu minimum eriştiği nokta burası, işte iterasyon sayılarını falan onları ayarlarsınız kendiniz.
+
+510
+02:31:06,708 --> 02:31:19,887
+Ve burada istediğim şey, tabloyu oluşturduktan sonra sürecin yörüngesini çizdirmeniz. Ne demek bu? Şimdi herhangi bir loss fonksiyonu düşünelim. O loss fonksiyon üzerinde sadece gradient descent bir noktadan başlıyor.
+
+511
+02:31:20,371 --> 02:31:36,771
+Ondan sonra başka bir noktaya gidiyor. Her biri 10 boyutlu. Bunlar 10 boyutlu. İki boyutlu da yörüngeleri kendimiz gösterebildik. Çünkü iki boyutlu uzayda bunları çizdirmek kolay. 10 boyutlu uzayda çizdiremezsiniz. Direkt çizdiremezsiniz.
+
+512
+02:31:37,216 --> 02:31:54,495
+Onun yerine istediğim şey ne? TCNA ve PCA ile bunları iki boyuta indirgeyip bu boyutlarda gösterim yapmanız. Yani iki boyutta gösterimini yapmanız. 10 boyuttaki süreci iki boyuta indirgemeniz. Bunun için dediğim gibi TCNA ve PCA'yi kullanmanızı istiyorum.
+
+513
+02:31:54,932 --> 02:32:20,632
+Burada 4 tane loss'un her biri için 4 tane sene, 4 tane pise grafik olacak. 5'er tane farklı noktalardan başlayacaklar, farklı yerlere varacaklar belki ya da aynı yerlere varacaklar. Dolayısıyla yörüngeleri de görselleştirmenizi istiyorum. Onun haricinde süre vs loss ve epoch vs loss grafiklerini çizdirmenizi istiyorum. Bir de yorumlamanızı istiyorum elde ettiğiniz şeyler, işte beklentilerinize uyuşanlar, uyuşmayanlar vs. vs.
+
+514
+02:32:21,747 --> 02:32:27,747
+Bonus olarak da isterseniz ne yapabilirsiniz? Stokastik versiyonlarını yapabilirsiniz. Stokastik versiyonlarda da...
+
+515
+02:32:28,371 --> 02:32:40,072
+Şimdi gerçek stokastik bir şey yapabilmek için eğitim ve test hükmelerini oluşturup oradan işte bütün örnekler üzerinde de bazı bir tane örnek işte K tane örnek veren gibisinden seçip yapmanız gerekebilir.
+
+516
+02:32:40,231 --> 02:32:46,171
+Ya da demin sizinle paylaştığım kodlarda benim yaptığım gibi şey yapabilirsiniz.
+
+517
+02:32:46,952 --> 02:32:53,551
+Full gradienti üretip, o noktadaki full gradienti üretip onun üzerine yürüte ekleyebilirsiniz rastgele bir şekilde.
+
+518
+02:32:53,551 --> 02:32:55,952
+Dolayısıyla yürüte gradyanlar elinizde.
+
+519
+02:32:56,371 --> 02:33:17,871
+Stokastik versiyonları bu şekilde yapabilirsiniz. Stokastik versiyonların süresini de gradyanların x'de 1 olarak düşünebilirsiniz. Benim verikimde aslında 100 tane örnek vardı ve ben de gittim bir tane örneği aldığımı varsaydım. O durumda da %1'ine iniyor mesela stokastik süresi diyebilirsiniz. Orası size kalmış.
+
+520
+02:33:19,092 --> 02:33:27,512
+Dolayısıyla asıl istediğim şey full gradyanlarla bu işlemleri gerçekleştirmeniz. Bonusu da stokastik halleri.
+
+521
+02:33:28,051 --> 02:33:53,671
+Ödeviniz işte burada. Teslim zaten online yıldızı editleri yapacaksınız. Herkes bireysel çalışacak burada. Birlikte bir şey yok. 6 Kasım'daki derste rastgele seçilen X kişiden kendi hazırladığınız bir rapor hazırlayacaksınız. Ödevi anlatacaksınız. Ödevde teslim edeceğiniz bir kodlarınızı teslim edeceksiniz tabii ki açıklama içeren. Bir de ödevinizin raporu olacak. Grafikleri, tabloları, süreci ve yorumları içeren öyle söyleyeyim.
+
+522
+02:33:54,195 --> 02:34:01,995
+Böyle bir ödeviniz var arkadaşlar. Anlaşıldı mı? Var mı anlaşılmayan kafanıza takılan bir nokta?
+
+523
+02:34:07,827 --> 02:34:20,027
+Hocam, bu konveks non-konveksi fonksiyonlarını nasıl oluşturacağız? Yani tek boyutlu mesela bir konveks fonksiyon bulsak, onu 10 boyutlu yapsak yine konveks olur mu?
+
+524
+02:34:22,847 --> 02:34:24,527
+O fonksiyon nasıl elde edecek?
+
+525
+02:34:24,527 --> 02:34:29,087
+Şimdi tek boyutlu bir konveks fonksiyon bulup onu 10 boyutlu yapmak demek ne demek?
+
+526
+02:34:29,780 --> 02:34:39,000
+Şöyle mesela, ax kare diyelim, konveks bir fonksiyon. O zaman ax kare artı işte a1x kare, a2x kare gibi yazsak bu on boyutu...
+
+527
+02:34:39,000 --> 02:34:51,780
+Evet, o bir konveks fonksiyon olur ama o durumda şey olmayacağı için, ne derler ona, o tam bir dünya, yani dünyanın da tam bir küre şeklinde olacaktır.
+
+528
+02:34:56,244 --> 02:34:59,244
+En basit konveks fonksiyon olur, öyle söyleyeyim.
+
+529
+02:35:03,244 --> 02:35:11,244
+Yani kolaylar olabilir, konvekslardan bir tanesi öyle bir şey olabilir. O şekilde tanımlayabilirsiniz.
+
+530
+02:35:12,128 --> 02:35:26,648
+Orayı ben size bırakıyorum. Yani konveks fonksiyonları oluşturmayı, non-konveks fonksiyonları oluşturmayı sizin seçiminize bırakıyorum. Önemli olan nokta burada. Algoritman arasında farkların görülebileceği fonksiyonlar seçmeniz.
+
+531
+02:35:33,299 --> 02:35:53,299
+Ya da GD'nin mesela böyle gereksiz yere hareketler yaptığı durumu göstermiştim ama Adam mesela oraya çok daha smooth bir şekilde gidiyordu, hatırlıyor musunuz? Mesela o deminki senin verdiğin örnekteki bir fonksiyon da GD de zaten direkt sonuca otomatik olarak gider, hiçbir şekilde sapmaz. Anlatabildim mi?
+
+532
+02:35:53,940 --> 02:36:18,040
+Yani çok gerçekçi bir şey, biraz daha kompleks bir şeyler olması, biraz daha aralarda korrelasyon olması falan lazım. Çünkü o senin verdiğinde hiçbir korrelasyon olmaz şeylerin arasında, değişkenlerin arasında. Biraz daha korrelasyonu olan, hani biraz eğik, bükük konveks fonksiyonlar olursa daha iyi olur. Non-konveksler zaten onların zaten hali zor olabilirler.
+
+533
+02:36:22,579 --> 02:36:33,319
+Yani fonksiyon seçimleriniz önemli o noktada. Yorum yapabileceğiniz, her şeyi çalıştığınız hiçbir algoritman arasında fark çıkmadı. Böyle bir şeye dönmeyin, anlatabildim mi demek istediğimi.
+
+534
+02:36:36,099 --> 02:36:37,299
+Peki, başka sorusu olan?
+
+535
+02:36:38,840 --> 02:36:47,099
+Hocam, optimizasyon süreçleri çalıştırılarak sonuçlar sadece rapora mı konulacak yoksa kodda hepsi arka arkaya çalışsın istiyor musunuz?
+
+536
+02:36:49,075 --> 02:37:07,315
+Yani işi sistematik yürütmek için arka arkaya çalıştırabilirsiniz. Ya da parametre değişterek çalıştırabilirsiniz. Orası size kalmış ama daha güvenir sonuçları elde etmek istiyorsanız aslında hepsini bir tane rutine bağlayıp çalıştırsanız daha iyi olur. Ama ben öyle bir şart koşmuyorum.
+
+537
+02:37:07,956 --> 02:37:13,476
+Ben çalıştığım around time aşamasında sizin için hepsini bir arada görmek ister misiniz diye sordum.
+
+538
+02:37:13,916 --> 02:37:18,936
+Yok yok, orası şart değil. Ama siz yaparsınız. Kendiniz için de iyi olur.
+
+539
+02:37:21,971 --> 02:37:23,231
+Başka sorusu olan?
+
+540
+02:37:23,511 --> 02:37:25,832
+Hocam ben kişisel bir şey söyleyebilir miyim?
+
+541
+02:37:26,211 --> 02:37:26,432
+Tabii.
+
+542
+02:37:27,272 --> 02:37:33,191
+Cuma gününe çekmemiz mümkün mü acaba? Ben çarşamba, perşembe, cuma çalışabiliyorum da sadece ders.
+
+543
+02:37:33,811 --> 02:37:36,011
+Bu yüzden benim için biraz zor olacak bu öbür.
+
+544
+02:37:37,351 --> 02:37:39,932
+Altı gününüz var, yani yedi gününüz var.
+
+545
+02:37:40,755 --> 02:37:52,495
+İşte o üç günde benim bakıcım o zaman geliyor da ben ders çalışamıyorum çok fazla. Onun için eğer çarşamba, perşembe, cumayı kapsayacak bir altı günümüz olursa daha iyi olabilir diye.
+
+546
+02:37:53,396 --> 02:37:56,595
+Daha iyi olur da sonuçta cuma günü de anlatacaksınız.
+
+547
+02:37:58,995 --> 02:38:09,995
+Yani iki gününüz kalıyor o zaman hani öyle söyleyeyim. Yani kişisel olarak anlıyorum durumu ama hani onu da yapabileceğim çok bir şey yok maalesef.
+
+548
+02:38:15,636 --> 02:38:16,416
+Başka arkadaşlar?
+
+549
+02:38:22,131 --> 02:38:25,912
+Hocam ben ödevi şu an bulamadım sayfanızda ama dosyayı nerede buluyoruz?
+
+550
+02:38:27,731 --> 02:38:28,871
+Online Yıldız Editare.
+
+551
+02:38:30,391 --> 02:38:31,951
+Direkt şeydekin de, okey.
+
+552
+02:38:32,691 --> 02:38:38,851
+Dersin sayfasına koymadım, ödevi teslimini de zaten Online Yıldız Editare'nin üzerinden yapacaksınız. Bana mail ile falan değil.
+
+553
+02:38:39,511 --> 02:38:40,131
+Tamam, tamam.
+
+554
+02:38:40,631 --> 02:38:42,252
+Direkt oraya göndereceksiniz dosyadan.
+
+555
+02:38:43,951 --> 02:38:44,971
+Tamamdır, gel güzel.
+
+556
+02:38:45,716 --> 02:38:50,636
+Bir de bu algoritmalar için kendimiz mi yazacaktık? Kazı ekütmanları kullanabiliyor muydun?
+
+557
+02:38:51,355 --> 02:38:52,156
+Kullanabilirsiniz.
+
+558
+02:38:53,156 --> 02:38:53,695
+Tamam.
+
+559
+02:38:58,324 --> 02:38:59,264
+Evet, başka.
+
+560
+02:39:05,236 --> 02:39:09,556
+Hocam sadece Matlab'deyiz değil mi? Bir Python kullanımı söz konusu değil bu durumda.
+
+561
+02:39:10,316 --> 02:39:24,596
+Kullanabilirsiniz yok. İstediğiniz gibi kullanabilirsiniz. O konuda bir şeyim yok. Tabii tabii. Benim yazdığım kodları kullanmak isterseniz Matlab'de ilerlersiniz ama Python'da da yazabilirsiniz. Hiç o konuda bir kısıt yok. İstediğiniz gibi kullanabilirsiniz.
+
+562
+02:39:33,075 --> 02:39:34,376
+Evet, başka var mı arkadaşlar?
+
+563
+02:39:42,772 --> 02:39:43,872
+Herhalde başka.
+
+564
+02:39:48,819 --> 02:40:14,560
+Peki arkadaşlar, o zaman başka sorusu olan yoksa ödevimizi de verdim. Bir hafta, yaklaşık 6 gün kadar süreniz var. Şimdiden başlamanızı öneririm. Bu hafta sonunu boş geçmeyin. Çok hızlı sonuçlanmayabilir. O yüzden söylüyorum. Problemler çıkabilir ödevi yaparken. Biraz vakit almanızı tavsiye ederim şimdiden.
+
+565
+02:40:15,412 --> 02:40:28,412
+Peki o zaman arkadaşlar, bugünkü dersimiz bu kadar. Önümüzdeki hafta sizin ödev sunumlarınızda ve karar ağaçları algoritmalarına geçeceğiz. Bundan sonra yavaş yavaş kollektif öğrenmenin...
+
+566
+02:40:30,675 --> 02:40:51,056
+Klasik tarafına birazcık geçiş yapacağız. Yani kararlaştırıyla bu kollektif öğrenme algoritmaları nasıl gerçekleştiriyorlar onları göreceğiz. Ondan sonra tekrardan yine yapay sinir ağlarına yani optimizasyon süreçleriyle alakalı kısımlar işte Deep Learning'teki ensemble yöntemlerine doğru ilerleyeceğiz dönemin sonlarına doğru.
+
+567
+02:40:52,020 --> 02:41:10,619
+Peki arkadaşlar, hepinize teşekkür ediyorum geldiğiniz için. Önümüzdeki hafta aynı gün aynı saatte görüşmek üzere. Bu arada farkındasınızdır muhtemelen. Salgın epey bir pik yapmış durumda. Kendinize çok çok dikkat etmeye çalışın. Ne kadar edebilirsiniz, o kadar iyi. Görüşmek üzere.
+
+568
+02:41:11,380 --> 02:41:12,779
+Görüşmek üzere hocam, teşekkürler.
+
+569
+02:41:12,779 --> 02:41:13,959
+İyi akşamlar hocam.

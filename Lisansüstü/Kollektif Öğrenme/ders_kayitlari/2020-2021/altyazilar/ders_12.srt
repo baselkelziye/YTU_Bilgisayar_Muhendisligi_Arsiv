@@ -1,0 +1,2215 @@
+1
+00:00:10,451 --> 00:00:13,711
+Merhaba arkadaşlar. Merhaba hocam.
+
+2
+00:00:39,444 --> 00:00:45,124
+Arkadaşlar, ikiye on geçe başlayalım. Biraz sonra görüşmek üzere.
+
+3
+00:08:56,436 --> 00:08:58,556
+Merhaba arkadaşlar, nasılsınız?
+
+4
+00:09:03,796 --> 00:09:05,796
+Teşekkürler hocam, nasılsınız?
+
+5
+00:09:05,796 --> 00:09:07,796
+İyiyim ben de.
+
+6
+00:09:07,796 --> 00:09:11,796
+Şimdi, bugün neler yapacağız?
+
+7
+00:09:11,796 --> 00:09:13,796
+Aftalık plana...
+
+8
+00:09:13,796 --> 00:09:16,796
+İki...
+
+9
+00:09:22,484 --> 00:09:27,484
+Bugün 25 Aralık seneyi bitiriyoruz.
+
+10
+00:09:27,484 --> 00:09:28,484
+2020'yi.
+
+11
+00:09:32,484 --> 00:09:40,484
+Peki, şimdi bugünkü konumuz makine öğrenmesinde yeni problemler.
+
+12
+00:09:40,484 --> 00:09:43,484
+Bundan birazdan bahsederiz.
+
+13
+00:09:43,484 --> 00:09:48,484
+Önümüzdeki hafta dersimiz yok, ondan sonraki haftada proje ilerleme görüşmelerini yapacağız zaten.
+
+14
+00:09:48,884 --> 00:10:05,884
+Küçük bir rapor hazırlamanızı istiyordum sizden hatırlarsanız. Sunumlarda final günü yapacağız demiştik. Proje konularınız zaten belli oldu. Bugünkü dersimizin sonunda da vaktimiz kalırsa...
+
+15
+00:10:06,484 --> 00:10:32,084
+Yine projelerde neler yaptınız? Çünkü şu anda üçüncü ödefen yani ödevleriniz de bitti. Bir şeyler yapmaya başlamışsınızdır diye tahmin ediyorum. O konuda bir şeyler sormak isterseniz o konuda da yine görüşürüz. Yani bugünün sonunda da yine bir proje görüşmesi yaparız sizlerle. Ortak olarak yani öyle herkese kişisel ayrı ayrı yapmamıza gerek yok. Hep beraber burada konuşuruz.
+
+16
+00:10:32,563 --> 00:10:53,644
+8 Ocak'ta da yine projelerin herkesi derste görmek istiyorum. Dolayısıyla konu anlatacağım aslında, benim bir şeyler anlatacağım son dersimiz olacak bugün. Neyse, dersin sonunda bir dönemi belki birazcık değerlendiririz. Peki, şimdi burasını durduralım.
+
+17
+00:10:58,740 --> 00:11:06,860
+Bu arada proje noktasında bir şey yok herhalde. Buradaki herkesin konusu vardır diye tahmin ediyorum.
+
+18
+00:11:08,559 --> 00:11:11,440
+Proje konusu alamayan var mı arkadaşlar sizin aranızda?
+
+19
+00:11:16,179 --> 00:11:37,979
+Herhalde yok. Burada zaten bütün herkes yazılı. İki kişilik bir proje olmadı. Zaten herkes tek tek yapın. İki kişilik değil. Herkes tek başına çalışacak. Aynı projede birden fazla kişi olabilir. Zaten proje sayısı ve kişi sayısı. Bir tek bir tane projemiz kalmış. Eksik. Neyse o da artık.
+
+20
+00:11:39,443 --> 00:11:57,443
+Kalsın. Projelerle alakalı dediğim gibi, projeleri zaten sizlere fark ettiyseniz yayın formatında yazdırıyorum. Projelerinizde güzel sonuçlar elde edebilirseniz eğer, o noktada belki bir yayın yapma noktasına da ilerleyebiliriz hep beraber. Yani biraz daha ek çalışmayla tabii.
+
+21
+00:12:00,443 --> 00:12:02,223
+Çünkü en azından...
+
+22
+00:12:02,224 --> 00:12:26,984
+Bir yayın yapmaya kalktığım zaman şu anda muhtemelen literatür tarihimiz veren kısmı muhtemelen boş kalacaktır. Eğer iyi sonuçlar elde etsek bile ya da farklı farklı yöntemler karşılaştırmalıyız. Biraz daha ek çalışmayla yayın yapmak isteyenler olursa bu noktada konuşuruz. Devam ediyoruz sizlerle yine dönem bittikten sonra da. Öyle söyleyeyim.
+
+23
+00:12:28,275 --> 00:12:55,355
+Şimdi bunu da kapatabiliriz. Gelelim bugünkü konumuza. Bugünkü konumuz makine öğrenmesi. Version 2. Makine öğrenmesinde yeni problemler aslında. Bunlardan bahsedeceğim. Geçen dönem açılmadı zaten. Ondan önceki dönemde hesaplamadan bir ders alanlarınızda yoktur herhalde.
+
+24
+00:12:56,148 --> 00:13:20,528
+Orada da bir hafta boyunca bunu anlatıyorum. Çünkü bence önemli. Yani makine öğrenmesinde son dönemde çıkan, bazıları birazcık daha eski olabilir ama oldukça önemli araştırma alanları buradaki konular. Bunlar hakkında bir bilginizin olması sizin için önemli olacaktır diye düşünüyorum. Hem yüksek lisans tezlerinizde hem doktora tezlerinizde.
+
+25
+00:13:20,912 --> 00:13:25,912
+Bu konular üzerinde bunlardan faydalanmak da mümkün olabilir.
+
+26
+00:13:25,912 --> 00:13:34,912
+Yani sadece o konuyu, ne bileyim işte aktif öğrenme mesela, direkt aktif öğrenme çalışmayabilirsiniz ama kendi...
+
+27
+00:13:35,731 --> 00:13:56,192
+Test konunuzda aktif öğrenmeyi kullanabilirsiniz. Bu tarz şeyler olabilirler. O yüzden bunları dediğim gibi bir bilginizin olması faydalı olur diye düşünüyorum. Bunların da kodları var. Yani hani kodu olanlar tabii hepsinin, hepsi için kod yazmadım ama bazıları için kodlar var. Onlar da yine dersin sayfasından erişebilirsiniz.
+
+28
+00:13:56,192 --> 00:13:57,672
+Şimdi.
+
+29
+00:13:58,964 --> 00:14:07,464
+İçeriye baktığımızda oldukça yoğun bir içerik. Baya bir başlık var. O yüzden hızlı hızlı başlayalım artık.
+
+30
+00:14:08,784 --> 00:14:13,024
+Peki, şimdi birinci konumuz aktif öğrenme. Aktif öğrenme ne demek?
+
+31
+00:14:13,024 --> 00:14:22,544
+Şimdi bizim klasik bildiğiniz bir eğitim kümesi var, test kümesi var. Eğitim kümesinde örneklerimizin hem özellikleri var hem de etiketleri var.
+
+32
+00:14:23,163 --> 00:14:25,703
+Şimdi aktif öğrenme değilse şöyle bir süreç var.
+
+33
+00:14:27,059 --> 00:14:53,459
+Eğitim örneklerinin etiketleri en başta belli değil. Özellikler belli, noktalar belli, öyle söyleyelim. Ama etiketlerini bilmiyoruz. Burada algoritma etiketini istediği örnekleri seçiyor. Yani ben şu şu örnekleri istiyorum diyor, onları veriyor kullanıcı. Daha sonra şu örnekleri de istiyorum diyor, bunları da veriyor kullanıcı. Şunları da istiyorum diyor, bunları da veriyor kullanıcı.
+
+34
+00:14:54,035 --> 00:15:18,715
+Ondan sonra belli bir noktadan sonra belki yeter diyor. Tamam, bu kadar. Şimdi buradaki amaç ne olabilir? Tahmin edebileceğiniz gibi veri etiketleme maliyetini azaltmak. Yani en başta işte sağlıyorum bir milyon tane örneğiniz var. Bir milyon tane örneğin hepsini etiketlemek yerine bunların içerisinden bir kısmını etiketlemek isteyebilirsiniz. Etiketlemeye gücünüz yetiyordur daha doğrusu. Ama hangi kısmını etiketleyeceksiniz? Bu bir soru.
+
+35
+00:15:19,187 --> 00:15:46,087
+Burada rastgele bir seçim yapabilirsiniz ya da bu daha az etiketlenecek örnekleri belirlerken aktif öğrenmeyi kullanabilirsiniz. O zaman yöntemle peki tüm eğitim seti yerine bir kısmını kullanacağız burada. Yani bütün örnekleri etiketlemek değil de bir kısmını etiketlediğimizde acaba belli bir test üzerinde tüm eğitim setini kullanmış olmamıza benzer ya da kabul edilebilir derecede düşük.
+
+36
+00:15:46,464 --> 00:16:01,943
+Ya da daha yüksek, bu daha mümkün, gürültülü bir şeyler falan varsa olabilecek bir şey bu, daha yüksek başarılı edip. Yani eğitim setinin tamamını değil de bir kısmını kullanmak ama bu bir kısmını rastgele seçmek değil de bunu bir şekilde akıllıca seçmek. Buradaki fikir bu.
+
+37
+00:16:03,155 --> 00:16:12,515
+Aktif Öğrenme'de adımlar nasıl? Küçük bir eğitim setiyle başlıyoruz. Eğitim kümesinin az bir kısmı. Bu başlangıçları rastgele olabilir ya da bir ilklendirme yapabilirsiniz.
+
+38
+00:16:12,515 --> 00:16:28,875
+Ne bileyim işte bir klastring falan gibisinden bir şey yapıp her bir kümenin içerisinden bir tane örnek seçmek gibisinden bir şey de olabilir. Ama küçük bir eğitim setiyle başlıyoruz. Mesela sağlıyorum bütün örneklerin %5'i. %5'ini aldık. Bunların etiketini ne istiyoruz? Etiketleri istedikten sonra
+
+39
+00:16:29,587 --> 00:16:50,288
+Bu elimizdeki verilerle, etiketi olan verilerle bir model üretiyoruz. Bu modele göre etiketsiz eğitim örneklerini tahmin ediyoruz bunları. Bunlar tabii gerçeklerinin ne olduğunu bilmiyoruz. Bakın dikkat ederseniz. Yani elimizde veriler var. Bir kısmını biliyoruz, bir kısmını bilmiyoruz.
+
+40
+00:16:52,467 --> 00:17:03,768
+Bu bildiklerimizi kullanarak bir model oluşturuyoruz. Daha sonra bu oluşturduğumuz modelle elimizde etiketi olmayan eğitim örneklerinin etiketlerini tahmin ediyoruz.
+
+41
+00:17:04,847 --> 00:17:11,008
+Şimdi bu tahminlere göre de örneklerden bir kısmını seçiyoruz. Şimdi burada peki tahmine göre seçmek nasıl?
+
+42
+00:17:11,087 --> 00:17:14,887
+Yani çünkü tahmin varımızda gerçeği yok, bilmiyoruz etiketi. Nasıl seçeceğiz?
+
+43
+00:17:14,887 --> 00:17:18,788
+Bu noktada şöyle bir şey olabilir. Yani fikir şu.
+
+44
+00:17:19,104 --> 00:17:37,443
+Tahminlerin varyasyonuna göre, tahminlerin varyasyonu ne demek? Yani mesela diyelim ki bir örnek var, ona dair bir tahmininiz var. Tahmininiz diyor ki mesela bu A sınıfından olma ihtimali %90, B sınıfından olma ihtimali %10 diyor mesela. İki sınıfımız olduğunu düşünelim, öyle bir problemimiz olduğunu düşünelim.
+
+45
+00:17:37,963 --> 00:17:44,564
+Şimdi burada %90 A sınıfından diyor, %10 B sınıfından diyor. Tamam, başka bir örneği düşünelim. Başka bir örnekte de.
+
+46
+00:17:44,692 --> 00:17:52,731
+A sınıfında olma ihtimali %51 diyor, B sınıfında olma ihtimali %49 diyor. Bizim modelimiz. Yani şurada ürettiğimiz şu model.
+
+47
+00:17:55,251 --> 00:18:05,032
+Böyle diyor. Şimdi burada ilk örneğin mi etiketini merak ederiz, ikinci örneğin etiketini merak ederiz. Yani hangisi bize daha fazla katkı sağlar sizce?
+
+48
+00:18:10,228 --> 00:18:30,468
+İlk örneğin etiketleri, diyor ki mesela ilk örnek %90 A sınıfından diyor, %10 B sınıfından diyor. İkinci örnek ise %49, %51 A sınıfından diyor, %49 B sınıfından diyor. Hangisinin etiketini öğrenmek istersiniz? Soru bu.
+
+49
+00:18:35,635 --> 00:18:44,155
+Bir tanesinde kararınızdan epey bir eminsiniz gibi, değil mi? Bir tanesindeyse kararınız pek böyle şey, ortada.
+
+50
+00:18:47,796 --> 00:18:52,396
+Bir iyileştirme yapacaksak ikinci örneği etiketine bakmak lazım.
+
+51
+00:18:53,115 --> 00:18:57,796
+Yani bir iyileştirme yapmak tabii ki buradaki amacı geldi. Şimdi biz modeli değiştireceğiz.
+
+52
+00:18:57,796 --> 00:18:59,135
+Tamam mı?
+
+53
+00:18:59,347 --> 00:19:17,487
+Şimdi modeli değiştireceğiz. Modeli iyileştirmeye doğru değiştirmek istiyoruz tabii ki. Modeli değiştireceğiz. Modeli değiştirirken aslında o modele göre en belirsiz olan etiket dağılımına sahip olan örnekleri seçmek makul bir hareket olarak düşünebilir. Tersini de yapabilirsiniz.
+
+54
+00:19:26,003 --> 00:19:34,083
+Örneğin kolay bir örnek olduğunu düşünün o model için. Ama 49'a 51 gibi böyle sınırda olan bir şey de birazcık zor bir şey. Değil mi?
+
+55
+00:19:34,644 --> 00:20:00,000
+O zaman burada kolay örnekleri önce seçmek ya da zor örnekleri önce seçmek gibisinden bir şey düşünebilirsiniz. Diyelim ki elinizde bu eğitim etiketsizler vardı elinizde. Bu E'nin içerisinden bir kısmını seçtiniz ve bu seçtiklerinizi artık E'den çıkartıyorsunuz, E'yi ekliyorsunuz. Yani onların etiketini de öğreniyorsunuz. Daha sonra tekrardan yeni artık etiketlenmiş ve büyümüş oluyorsunuz.
+
+56
+00:20:00,000 --> 00:20:21,619
+Bu E'ye göre tekrardan model üretiyoruz. Tekrardan bu modelle göre geri kalan E'yi tahmin ediyoruz. Daha sonra tekrardan burada bir seçim yapıyoruz. Bu şekilde seviye seviye adım adım adım adım aslında süreci nereye kadar ilerletebiliriz en sonunda? Bütün elimizdeki örneklerin hepsinin etiketini alana kadar devam edebiliriz.
+
+57
+00:20:23,092 --> 00:20:35,972
+Aslında ki amacımız ne? Daha az bir miktarını kullansak acaba işimize yarar mı? Şimdi burada bir örneğimiz var. Şunu bir saniye tam ekran yapayım.
+
+58
+00:20:46,420 --> 00:21:11,900
+Şimdi burada üç tane sınıf var. Görüyorsunuz bu iris sataseti herhalde yanlış hatırlamıyorsam. Çok önemli değil ne olduğu da. Şimdi tüm eğitim kümesi var. Bir yıldızlar var bir de oğlar var. Seçilen örnekler gösteriyor. Şimdi mevcut eğitim kümesi üçgenler. Üçgenlere bakalım. Mesela şu varmış bir, şu varmış, şu varmış. Üçü bakım varmış. Sonra şuradaki şu kırmızılar varmış ve şuradaki şu sarılar varmış.
+
+59
+00:21:12,403 --> 00:21:15,403
+Bunlara göre, mesela bunlara göre...
+
+60
+00:21:16,435 --> 00:21:26,255
+Bir model oluşturulmuş. Daha sonra o modelin içerisinden de örnekler seçmiş. Örnekleri nereden seçmiş? Bakın, yuvarlakları seçmiş. Şu yuvarlakları seçmiş. Görüyor musunuz?
+
+61
+00:21:26,255 --> 00:21:41,855
+Bu yuvarlaklara bakarsanız, şunlarla, şunlarla, eğitim kümesindeki mevcut etiketli olan kırmızılarla etiketli olan sarıların arasındaki bölgede yer alıyorlar. Görüyor musunuz?
+
+62
+00:21:42,612 --> 00:22:09,052
+Buradan bir şey seçilmemiş. Buradan bir şey seçilmemişin sebebi zaten bunlara muhtemelen nasıl değerler veriyor şuradaki diğerlerine? Bunlar çok büyük olasılıklar zaten mavidendir diyor ama kırmızı ve mavi olasılıkları düşük diyor. Çünkü bunlar epey bir uzaklar diğerlerine. Bu iki sınıf birbirine çok karışmış görüyor musunuz? Bu iki sınıf birbirine çok yakınlar öyle söyleyeyim. Yakın oldukları için onların arasındaki bölgeden örnekleri seçmek daha makul bir hareket.
+
+63
+00:22:11,667 --> 00:22:31,727
+Burada da mesela şunlar birbirlerine yakın oldukları için muhtemelen şunu da seçmişim. Mantık kavradık mı arkadaşlar aktif öğrenmenin? Ve bu adım, işte bununla etiketten alıyorsunuz. Sonra bunları da eğitim kümesine dahil ediyorsunuz. Bu şekilde eğitim kümeniz giderek büyüyor. Başlangıçta küçük bir eğitim kümesinden başlayıp adım adım adım adım büyütüyorsunuz. Mantık kavradık mı?
+
+64
+00:22:36,819 --> 00:22:37,579
+Evet hocam.
+
+65
+00:22:39,319 --> 00:22:39,599
+Peki.
+
+66
+00:22:41,339 --> 00:22:46,659
+Şimdi tabii birkaç tane soru var burada. İlk eğitim seti nasıl seçilebilir? Önemi var mı?
+
+67
+00:22:46,799 --> 00:22:50,379
+Şimdi önemi var. Yani ilk eğitim seçimi rastgele seçebilirsiniz tabii ki.
+
+68
+00:22:50,379 --> 00:22:53,379
+Ama yine bir şekilde...
+
+69
+00:22:54,099 --> 00:23:15,359
+Global bir optimizasyon problemi olmadığı için bu. Burada başlangıç yeri aslında varacağımız yeri bayağı bir etkiler. Dolayısıyla burada rastgele seçim bir yaklaşım ama demin dediğim gibi işte ilk önce bir kümeneme yapalım. Kümeneme yaptıktan sonra her kümenin içerisinden birer tane örnek alalım gibisinden yaklaşımlar da geçerli olabilir. Dolayısıyla önemi var mı? Var.
+
+70
+00:23:16,179 --> 00:23:20,399
+E'deki örneklerin sınıflandırma problemlerinin tahmin varyasyonu nasıl hesaplanır?
+
+71
+00:23:21,715 --> 00:23:42,975
+Sınıflandırma problemi için mesela demin örnekte sınıflandırma problemi verdim aslında. Ne dedim? İşte A sınıfından 3 sınıfınız olduğunu varsayalım. Her bir sınıfa ait olma olasılıkları var elinizde. Bunlar ne kadar birbirlerine yakınlarsa o zaman bu örneğe dair verilen tahmin o kadar tutarsızdır. Sınırlara yakın bir şey bu.
+
+72
+00:23:43,443 --> 00:24:11,443
+A sınıfına mesela her birine yüzde otuz dört diyor, birine yüzde otuz üç diyor, birine yüzde otuz üç diyor. Tam bir karar verememiş. O zaman bu sınırlara yakın, mevcut modelin oluşurduğu sınırlara yakın ve bu sınırı aslında bizim belirgin hale getirmemiz gerekiyor. Belirgin hale getirmek için o sınıra yakın bölgeden bir etiket almak, o bölgedeki örneklerden bir etiketini almak o sınırını ne yapacaktır? Etkilecektir, değiştirecektir. Dolayısıyla sınıflandırmada sınıflara ait olma olasılıklarını, confidence değerleri de...
+
+73
+00:24:11,443 --> 00:24:26,923
+Algorithmalarda hep verilir, bunlardan bahsettik. Bunları kullanmak mümkün. Regresyon problemlerinde bunu nasıl ölçebilirsiniz? Regresyon probleminde de direkt varyans üzerinden belki bir düşünce yapılabilir ama bunu birazcık açık bırakıyorum şimdilik. Bunu düşünün.
+
+74
+00:24:27,804 --> 00:24:31,723
+Tahmin varyasyonu çok mu, az mı olan örnekleri seçmeli?
+
+75
+00:24:32,435 --> 00:24:46,875
+Birazdan göreceğiz. Bununla alakalı koddan çıkan sonuçları göreceğiz. B ve C adımların tekrar ne zaman durmalı? C adımında ne kadar örnek eklemen için? Kaç kez sürecin içerisine döneceğiz? B ve C adımların tekrar ne zaman durmalı?
+
+76
+00:24:49,395 --> 00:25:11,175
+Kabaca şöyle bir şey olabilir. Bütçe sınırınız olabilir. Yani diyelim ki her bir etiketleme bir dolar sallıyorum. Dersin denizlere yüz bin dolarınız var örneğin. Yüz bin örneğe erişince durabilirsiniz. Mesela böyle sabit bir şeyiniz olabilir. Peki C adımında ne kadar örnek eklenmeli? Yani her bir adımda mesela şurada dedik ya.
+
+77
+00:25:11,892 --> 00:25:28,692
+Bu tahminlere göre bir kısmını seçiyoruz. Bu kısımda mesela çok az miktarda örnekler ekle. Küçük küçük mü arttırmalı bu veri hükümesini? Yoksa daha büyük miktarda veriler mi işin içerisine katmalı? Bu da başka bir soru. Bunların her biri hiperparametre aslında aktif öğrenme için öyle söyleyelim.
+
+78
+00:25:29,251 --> 00:25:38,731
+Şimdi burada şey var. Önce kolay örnekler alırsak. Şimdi şurada gördüğünüz maviler önce kolay örnekler alındığındaki performansları gösteriyor.
+
+79
+00:25:39,380 --> 00:25:55,740
+Sarılar ise ya da turuncular ise rastgele örnekler seçildiğindeki performansları gösteriyor. X ekseni zamanı gösteriyor. Zaman içerisinde yani örnek eğitim kümesi büyüyor giderek. Etiketli eğitim kümesi büyüyor. En son şu noktayı düşünürsek bu nokta.
+
+80
+00:25:56,276 --> 00:26:18,996
+Çünkü elimizdeki bütün örneklerin hepsinin etiketli hale geldiği nokta. Dolayısıyla o son noktada bir farklılık olmayacaktır. Yani son nokta çünkü ne demek? Bütün eğitim kümelerinin hepsi etiketli. Dolayısıyla oraya gidene kadar orada fark oluşabilir ama en son noktada zaten ikisi de aynı eğitim kümesine sahip. İki tane modelimiz de olacak. Burada da performans farklılığı görmeyeceğiz. Ama onun öncesinde eğitim kümeleri farklıdır bunların.
+
+81
+00:26:19,667 --> 00:26:43,447
+Mesela burada mavilerde, önce kolaylar eklediğimizde, başlangıçları da aynı. Tabii rastgele bir yerden başladıkları için burada da mesela aynı çıkmış ama farklı başlangıçlar da mümkün olabilir rastgele seçtiğimiz için. Bunları ekleye ekleye ekleye ekleye. İkisinde de ileriye doğru bir artış görüyorsunuz. Yani eğitim kümesi büyüdükçe mesela buraya bakarsak, test kümesi üzerindeki performanslar artıyor bunlar.
+
+82
+00:26:45,428 --> 00:27:09,008
+Şimdi mesela buraya bakarsak, sarı daha yukarıda. Sarı daha yukarıda demek ki rastgele eklemek daha iyi. Şuraya bakarsak. Yani önce kolayları eklemek yerine rastgele eklemek daha iyi gözüküyor. Burada da mesela aynı şey çıkmış. Burada sarı yine genel olarak en yüksek başarılara ulaşmış. Sarı burada da fena değil. Burada da yine tepelerde genelde. Arada birkaç tane yeri var ama daha yukarıda genel olarak gözüküyor. Bu birazcık karışık odatı sette.
+
+83
+00:27:10,003 --> 00:27:28,763
+Yine kolaylar burada, mesela sarı yine epey şey. Genel olarak baktığımızda burada sarıların mavilerden daha yukarıda olduğunu görebiliyoruz genel olarak. Dolayısıyla sarı dediğimiz şey rastgele eklemek yani örnekler içerisinde rastgele bir parça alıp ekleyerek ilerlemekti. Önce kolayları koymak.
+
+84
+00:27:29,268 --> 00:27:51,307
+Yani zaten etki mesela %90'ı %10 gibi olan etiketleri düşünün. O tarz örnek de tahminden bahsediyorum. Onları eklemek, onların etiketlerini öğrenmek bize o kadar fayda sağlamıyor. O kadar hızlı fayda sağlamıyor. En sonunda zaten aynı yere varıyoruz dediğim gibi. Mesela bu da fayda sağladığını görüyorsunuz. Yelere doğru artıyor. Ama burada bakın ne oluyor? Rastgele ekleseniz daha büyük fayda sağlayan.
+
+85
+00:27:52,500 --> 00:28:16,700
+Zorlara geçelim. Zorlarda maviler, yani burada mavi dediğimiz şey, active learning önce zorlara eklenmiş hali. Mesela sınırda olanlar, sınıfların olasılıkları birilerine eşit, yakın, yakın olan örnekler ekleniyor öncelikle. Yine en son da aynı yere varacaklar. Ama burada görüyorsunuz işte, mesela daha yukarıdan, daha hızlı bir şekilde süreci ilerletiyor.
+
+86
+00:28:17,683 --> 00:28:33,003
+Burada mesela sarı birazcık daha iyi. Burada mesela mavinin daha yukarıya çıktığı durumlar var. Burada mesela yine mavi daha yukarıda. Burada mavi daha yukarıda. Burada yine mavi daha yukarıda. Yine burada da mavi daha yukarıda diyebiliriz genel olarak.
+
+87
+00:28:33,003 --> 00:28:39,283
+Tabii burada da yine mavi daha yukarıda şu kolda.
+
+88
+00:28:40,115 --> 00:28:56,195
+Dolayısıyla buradaki bu veri kümeleri için bunlar bizim UCI datasetleri. Bunlarda görüyorsunuz ki Active Learning'in daha iyi bir şeyler yapması için önce zor örneklerin eklenmesi daha makul gözüküyor.
+
+89
+00:28:56,195 --> 00:29:01,355
+Öteki türlü rastgele ekleseniz bile zaten daha başarılı oluyor ama rastgeleyi geçebilmek için.
+
+90
+00:29:01,748 --> 00:29:21,228
+Önce zor örnekleri ekleyip ilerlemek. Daha hızlı. Daha hızlı derken bu ne demek? Daha az miktarda etiketle aslında o sonuca varıyorsunuz. Yani buradaki x eksenini etiketli eğitim kümesinin büyüklüğü olarak düşünebilirsiniz.
+
+91
+00:29:28,084 --> 00:29:52,964
+Şurasını yeterli diye düşünürseniz, dörtte birinde erişebilmiş. Ya da mesela burayı düşünürseniz, yarısıyla görüyor musunuz? 20'ye göre düşünürseniz. Mesela buralarda eğitim kümesinin sadece yarısının etiketleriyle bu başarıya erişebilmiş. Rastgele de ise bu birazcık daha az.
+
+92
+00:29:56,756 --> 00:30:20,476
+Önce kolayları eklemek iyileştirmiyor. Önce zor örneklere eklemenin yararlı olduğu veri kümeleri var. Her yerde tabii böyle bir şey diyemeyiz. Bazı veri kümelerinde tüm eğitim örnekleri yerine daha az örnekle daha yüksek test başarılığına erişilebiliyor. Bu daha yüksek test başarılığına erişilebiliyor. Daha az örnek. Dolayısıyla burada muhtemelen bunun anlamı. Elimizde gürültülü veriler var. Gürültülü verileri eklemek.
+
+93
+00:30:21,556 --> 00:30:45,176
+Süreci iyileştirmiyor olabilir. Bu durumda bazı veri kümelerinde böyle sonuçlar da çıkabiliyor. Bütün eğitim kümelerini kullanmak yerine bir kısmını kullanmakta daha iyi bir sonuç yol açabiliyor. Anlaşıldı mı arkadaşlar? Active Learning dediğimiz mevzu. Var mı kafanıza soru işareti?
+
+94
+00:31:05,268 --> 00:31:07,348
+Şimdi yine de eğitici öğrenmeye geçeceğiz.
+
+95
+00:31:35,827 --> 00:31:42,927
+Yarı eğiticili öğrenme nedir? Yarı eğiticili öğrenme, bu da semi-supervised learning diye geçer.
+
+96
+00:31:43,528 --> 00:31:48,367
+Modelin oluşturulmasında etiketli verilerin yanında etiketsiz verilerin kullanıldığı problemlerdir.
+
+97
+00:31:48,447 --> 00:31:55,008
+Yani burada da hem etiketli hem de etiketsiz verileriniz var. Fakat burada etiketsiz verilerin etiketlerini kullanıcıdan falan almıyorsunuz.
+
+98
+00:31:55,008 --> 00:32:02,008
+Yani etiketi olmayan verilerin etiketini bir yerden almıyorsunuz. Fakat bunları da sürecin içerisine dahil edelim istiyorsunuz.
+
+99
+00:32:02,804 --> 00:32:15,804
+Temel fikir ne? Evde hem etiketli hem de etiketsiz verilerin olduğunu düşünün. Belirli bir test seti üzerinde sadece etiketli verileri kullanmak yerine etiketsiz verileri de kullanmak daha iyi olur. Böyle bir fikir üzerine gelişmiş. Mesela örnek verelim.
+
+100
+00:32:16,144 --> 00:32:29,963
+Bu çok klasik, Semisquare Vars'ın klasik örneklerinden bir tanesi ama tabii bunu her zaman tutacağı diye bir durum yok. Şöyle bir şey düşünün ama fikir vermesi açısından en güzel. Elimizde etiketli iki tane örneğimizin olduğunu düşünün. Bir tanesi işte şu, bir tanesi de bu.
+
+101
+00:32:30,996 --> 00:32:54,336
+Şimdi sadece etiketli verilere baktığımızda bu ikisinin arasında böyle bir model olduğunu düşünebiliriz. Ama bir de yanında etiketsiz verilerimizin olduğunu düşünelim. Ve bu etiketsiz verilerimizin şuradaki griler bakımından etiketini bilmiyoruz. Beyazlar mı siyahlar mı bilmiyoruz ama sadece böyle griler bunlar. Tamam mı? Ve bunlar bu şekildeler. Biz acaba böyle bir model üretmek yerine şöyle bir model üretmemiz daha mantıklı olur mu bu dağılıma göre?
+
+102
+00:32:54,932 --> 00:33:02,752
+Bu dağılımın böyle olduğunu görüp, o zaman ben böyle değil de bunu, şöyle bölmek yerine mesela, ben bunu böyle bölsem daha iyi olurum.
+
+103
+00:33:04,072 --> 00:33:15,872
+Peki böyle böyle bilmek için nasıl bir şey yapmanız lazım? Şuradaki şu etiketsizlerin etiketini, etiketsizler için neler tahmin etmeniz gerekiyor? Etiketler tahmin etmeniz gerekiyor.
+
+104
+00:33:15,872 --> 00:33:18,592
+Tamam mı? Bunları etiketler tahmin edeceğiz.
+
+105
+00:33:19,443 --> 00:33:37,084
+Peki nasıl yapılıyor bu işlem? Etiketsiz örneklerin tahmini sınıfları nasıl hesaplanır? Sorumuz bu. Yani şimdi bir model üreteceğiz ya, bu modelin böyle bir sınırı olmasını istiyoruz. Böyle bir sınırı olabilmesi için şunların hepsini siyah, şunların hepsini de beyazla etiketlerseniz ancak böyle bir sınır üretebilirsiniz. O zaman ben etiketsiz örneklerin sınıflarını nasıl tahmin edeceğim?
+
+106
+00:33:37,715 --> 00:34:04,595
+Bir yerden almayacağım burada. Arkadaşlar, örneğe bir şey arayabileceği durumlar var mı? Var. Neden? Çünkü etiketli verilere ulaşmak, bir şekilde etiketlemek pahalı ama etiketsiz verilere ulaşmak oldukça ucuz olabiliyor bazı senaryolarda. Bazı senaryolarda o da pahalı olabilir. Ama genelde etiketli veriler pahalıdır.
+
+107
+00:34:09,780 --> 00:34:30,000
+Mesela çok klasik bir örnek verelim. Benim doktor tezde de böyle bir mevzu vardı. İlaç geliştirme biliyorsunuz şu anda oldukça kritik bir konu. İlaç geliştirmede çeşitli molekülleriniz var. O moleküllerin etkinliklerini ölçmeniz gerekiyor.
+
+108
+00:34:34,963 --> 00:35:02,103
+Daha sonra bunlar bir şekilde eleniyorlar. Elendikten sonra hayvanlı deneylere geçiyor. Hayvanlı deneyler bittikten sonra insanlı deneylere geçiyor. Elene elene gidiyor moleküller. Dolayısıyla bir tane molekülün işe yarayıp yaramadığına, hayvanlı deneyde işe yaradı ya da insanlı deneyde işe yaradı diye artı atacaksınız. İşe yaradı, yaramadı. Toksik etkin gösterdi, göstermedi. Bu ilaç olmanın çeşitli şartları var.
+
+109
+00:35:02,463 --> 00:35:27,863
+Her bir molekülün o etiketini bulmak için milyonlarca dolar harcanıyor aşağı yukarı. Bir tane ilaç geliştirmenin maledeki, şu andakinden bahsetmiyorum, klasik manada ilaç geliştirme, aşıların üretiminden bahsetmiyorum.
+
+110
+00:35:28,371 --> 00:35:45,551
+Yani bir ilacın piyasaya sürülmesine kadarki harcamalar 800 milyon dolar civarında falan. Tek bir ilaçtan bahsediyorum. Ve bunun çok büyük bir kısmı da bu etiketler aslında. Yani bu etiketleri elde etmek.
+
+111
+00:35:46,036 --> 00:36:04,956
+Başlangıçta işte belli şeyleriniz var, molekülleriniz var. Bu molekülleri her birine alıp bunlara dair bir şeyler tahmin etmeye çalışıyorsunuz. Şöyle yapar mı, böyle yapar mı, böyle yapar mı, böyle yapar mı? Başlangıçta belki bin tane molekülle başlıyorsunuz ama zaman içerisinde bunlar elene elene. Bu elenmeler değişti. Hep dediğim gibi.
+
+112
+00:36:06,420 --> 00:36:33,920
+Bu simülasyonlar da en basitinden başlıyor. Ondan sonra biraz gerçek gerçek. Ondan sonra gidip hayvanlı dener. En son insanlı dener. Bu şekilde elenme süreci. Bu eleme sürecine aslında harcanan paralar dediğim gibi bu büyüklükte paralar oluyorlar. İlaçların temelde pahalı olmasının sebebi, daha doğrusu pahalı ilaçların pahalı olmasının sebebi içindeki etken maddelerin pahalı olmasından falan dolayı değil. Bu araştırma süreçlerinin maniyetleri dolayısıyla bunların pahalı.
+
+113
+00:36:34,420 --> 00:36:53,480
+olduğunu söyleyebiliriz. Yani ilaç şirketi de sonuçta o şeyi, nedenle o araştırmaya harcadığı parayı ilaçların fiyatına yansıtarak bir şekilde ayakta duruyorlar. Ayakta duruyorlar, delimliyim, hani ticari varlıkları o şekilde sürdürüyorlar, büyütüyorlar.
+
+114
+00:36:53,480 --> 00:36:58,600
+Dolayısıyla etiketleme pahalı bir şey. Özellikle bazı sektörlerde.
+
+115
+00:37:00,820 --> 00:37:11,119
+Dolayısıyla etiketsiz verilerden faydalanabiliyorsanız bu çok müthiş bir şey olur. Burada da dediğim gibi fikir etiketli verilerin etiketlerini kullanarak etiketsizleri tahmin edeceğiz.
+
+116
+00:37:12,360 --> 00:37:19,180
+Şimdi sorular neler? Etiketsiz örneklerin tahmini sınıfları nasıl hesaplanır? Etiketsiz örneklerin tahmini sınıfları.
+
+117
+00:37:20,240 --> 00:37:21,820
+Şimdi elinizde şöyle bir şey var bakın.
+
+118
+00:37:22,996 --> 00:37:41,775
+Siyah nokta var, bir de beyaz bir nokta var. Şimdi bir de böyle gri gri noktalar var. Şimdi mesela bu gri noktanın etiketini nasıl hesaplayacaksınız? Mesela şöyle bir şey olabilir. Örneğin, bu siyah noktaya en yakın nokta hangisi? Mesela bu. O zaman işte bunun etiketini biz de bir siyah yapalım. Yani etikette olan noktaları en yakın noktaları.
+
+119
+00:37:42,356 --> 00:38:02,856
+Ama mesela ben burada öyle bir şey yaparsam, bu örnekleri siyaha mı daha yakınlar, beyaza mı daha yakınlar gibisinden bir etiketle bir şeye tabi tutarsam, kümelemeye tabi tutarsam, şöyle bir parça çıkar karşınıza değil mi? Şöyle ikisinin arasından düz bir çizgi. Bu çizginin bu tarafındakiler beyaza daha yakındır, bu tarafındakiler ise siyaha daha yakındır değil mi?
+
+120
+00:38:03,347 --> 00:38:23,547
+Dolayısıyla öyle bir şey yaptığımızda hiçbir işimize yaramaz. Yani şuradakiler siyah olur, buradakilerin hepsi ise beyaz olur. Üretilen model de şimdiki modelden çok çok farklı olur mu bilmiyorum. Olur da çok işimize yaramayabilir. Dolayısıyla burada arkadaşlar genelde iteratif yaklaşımlar kullanılıyor.
+
+121
+00:38:31,668 --> 00:38:53,208
+Ondan sonra o yeni etiketlenmişlere de en yakınlar, yeni etiketlenmişlere de en yakınlar. Bu şekilde iteratif olarak bu süreci ilerletirseniz göreceksiniz ki şunların hepsini siyah, şunların hepsini beyaz yapabilirsiniz. Anlatabildim mi? Yani en başta mesela şu beyaz oluyor, bir sonraki iterasyon da şu da beyaz oluyor, bir sonraki iterasyon da şu da beyaz oluyor. Bunlar ilerleye ilerleye ilerleye ilerleye.
+
+122
+00:38:53,907 --> 00:39:09,827
+Bunların hepsi beyaz haline gelebilirler. Tabii bu çok spesifik, buraya özel bir örnek ama iteratif olarak bu iş ilerletilmesi, Active Learning'deki gibi çok daha mantıklı. Tek seferde bunu yapmak o kadar şey değil. Efektif olmadığı görülmüş.
+
+123
+00:39:09,827 --> 00:39:16,228
+Şimdi regresyon problemlerinde nasıl hesaplarız sonuçları onu da size bırakalım.
+
+124
+00:39:17,139 --> 00:39:40,579
+Etiket tahminlerini tek seferde mi iteratif mi yapalım? Konuşuk. İteratifte etiketlerin toplamda ne kadarını tahmin edelim? Yani iteratif olarak ilerleyeceğiz ama her bir adımda kaç tane örneğini tahmin edeceğiz? Her bir iterasyon etiketlerin, iteratifte her bir iterasyonda etiketlerin ne kadarını tahmin edelim? Toplamda ne kadarını tahmin edelim? Etiketlerin ne kadarını tahmin edelim? Böyle iki tane soru yazmışım.
+
+125
+00:39:41,300 --> 00:39:52,380
+Şimdi burada mesela örnek var. Orijinal etiketliler şunlar. Etiketli eğitim örnekleri, etiketi tahmin edilen eğitim örneklerini burada göstermişim.
+
+126
+00:39:52,380 --> 00:40:00,000
+Burada adım adım işte bir tanesinde batch semi-supervised learning ve iterative semi-supervised learning de ikisinin farklı sonuçları var.
+
+127
+00:40:00,000 --> 00:40:21,819
+Vardığını görebiliyorsunuz. Yani 5 dediğimiz şey tek seferde tahmin etmekten bahsediyorum. Burada ise iteratif olarak adım adım. Şurada mesela bunlar sarı yapılmışken 5'te. Burada bunların da kırmızı yapıldığını görebiliyorsunuz. Şuradaki örneklerin. Şurada işte orijinaller ve tahmin edilenler şeklinde burada gözüküyorlar. Dediğim gibi bunların kodlarını inceleyebilirsiniz.
+
+128
+00:40:22,547 --> 00:40:36,387
+Yarı eğiticiyle öğrenmede denemeler var burada. Bunu birazcık şöyle yine tam ekran yaparsam daha iyi olur. Mavi dediğimiz şey Superwise. Zaten Superwise dediğimiz şey, bütün örneklerin hepsinin etiketleri elimizde varmış gibi burası.
+
+129
+00:40:36,887 --> 00:40:44,667
+BetSemi Superwise ve iterative Semi Superwise'ın karşılaştırmasını burada gerçekleştirelim. BetSemi Superwise yine tek bir çizgi olacak zaten.
+
+130
+00:40:46,036 --> 00:41:05,796
+Şimdi süpervazitin başarısından daha yüksek bir başarıyı elde etmek pek kolay bir şey değil zaten. Ama arada sırada bu tarz şeyler olabilir mi? Olabilir. Dediğim gibi örneklerin bazılarını almak, orijinal etiketleri yerine bu şekilde etiketlenmişleri kullanmak da işe yarayabileceği durumlar var.
+
+131
+00:41:11,635 --> 00:41:30,216
+Batch olan hali, sarı ise iteratif olan hali. İteratif ise misupervised örneğinde nasıl sonuçları elde edebiliyoruz diye. Burada görüyorsunuz, şuralar falan birazcık sıkıntılı gözüküyorlar ama batch'e göre iteratif daha iyi olmuş. Burada ise hiç öyle değil. Mesela segmentte tek seferde yapmamız daha iyi çıkmış.
+
+132
+00:41:33,936 --> 00:41:54,356
+Kırmızı oldukça yakınlar. Burada mavi yukarıda, kırmızı aşağıda. İteratif işte birazcık daha iyi olduğu yerler var. Burada mesela iteratif çok daha iyi çıkmış. Bu şekilde burada çeşitli veri kümelerinde Supervised'e karşı Semisupervised Learning'de elde edilebilen sonuçlar var.
+
+133
+00:41:54,996 --> 00:42:14,216
+Tahmini etiketleri hiç kullanmamanın da tek seferde tahmin etmenin de iteratif tahminin de diğerlerinden daha iyi olduğu sonuçlar var. İteratif tahminin kritik olan noktası nerede durulacağı çok kritik. Yani en sona kadar gitmek yerine bir yerde kestiğinizde daha yüksek başarılara erişebiliyorsunuz. Bir yerlerde daha maksimum şeyler olabiliyor en sona göre.
+
+134
+00:42:18,516 --> 00:42:46,516
+Şimdi, transfer learning bu zaten hepinizin adını duyduğunuz hatta muhtemelen kullandığınızda şeydir. Bir problemi çözdükten sonra benzer başka bir problemi sıfırdan çözmek yerine önceki verileri, modelleri, parametreleri gerekirse dönüştürerek kullanmak. Yeni bir problemi sıfırdan çözmeye göre daha az maliyetli, daha iyi ya da yani ya daha az maliyet, daha az süre anlamında düşünebilirsiniz bunu. Daha az hesaplama ya da daha iyi bir çözüm mevcuttan daha yüksek bir çözüm. Yani transfer öğrenme yapmasanız elde edeceğiniz.
+
+135
+00:42:46,516 --> 00:43:08,516
+Çözülmek göre daha başarılı bir çözüm elde etmeniz mümkün olabilir. Bu biliyorsunuz işte görüntü işlemede ilk kullanımda yaygın olarak kullanımında görüntü işlemede bu yapıldı. Neler transfer edilebilir? Birincisi...
+
+136
+00:43:08,527 --> 00:43:26,307
+Verileri de transfer edebilirsiniz. Aynen değişir. Tüm modeli transfer edebilirsiniz. Mesela metinler için kelime vektörlerini ya da resimler için CNN filtrelerini, işte burada ResNet outputları, VGG outputları vs. vs. bunları ne yapabilirsiniz? Resimlerin çıkışlarını bu şekilde temsil edebilirsiniz.
+
+137
+00:43:29,684 --> 00:43:42,084
+Başka bir modeli eğitirken oradaki öğrenilmiş olan weightleri kendi modeliniz içerisine koyup oradan devam edebilirsiniz eğitime. Bu tarz birçok veriyi transfer etmek mümkün.
+
+138
+00:43:57,684 --> 00:44:08,264
+Ve daha az miktarda etiketli veri olan veri hükümelerinde daha hızlı öğrenmeye sebep olması ve bu şekilde kullanımlı şeklinde gözüküyor.
+
+139
+00:44:09,024 --> 00:44:10,644
+Öğrenmenin transferi ne zaman işe yarıyor?
+
+140
+00:44:10,744 --> 00:44:13,444
+Tabii bir alandan başka bir alana geçmek.
+
+141
+00:44:14,384 --> 00:44:17,484
+Eldeki yeni problem için yeterli veri yoksa işe yarayacaktır.
+
+142
+00:44:17,564 --> 00:44:19,964
+Zaten yeterli veriniz varsa öyle bir şey yapmanıza gerekir.
+
+143
+00:44:20,024 --> 00:44:21,264
+Transfer yapmanıza gerek kalmaz.
+
+144
+00:44:21,632 --> 00:44:40,372
+Eski ve yeni problem ilgili ise, eski ve yeni problem tamamen bağımsızsa, uzaksa öyle söyleyelim ya da burada öğrenmenin transferinden çok fazla bir şey fayda anamazsınız. Ama tabii şöyle bir gerçek var. Hani mesela görüntü işlemleri bu daha çok ortaya çıkar.
+
+145
+00:44:48,320 --> 00:45:05,620
+Genelde çok domenle alakalı olmayan feature'ları üretirler. Yani nasıl feature'lar? Çizgiler var mı? Köşeler var mı? Gibi gibi. Domene bazlı bir şey üretmezler. Dolayısıyla domene bazlı üretilmeyen o layer'lardaki öğrenilmiş bilgiler.
+
+146
+00:45:08,211 --> 00:45:29,231
+Dolayısıyla bağlı olmadan başka domenlere de transfer edilmesi oldukça mümkün. Ama son seviyelere geldikçe mesela elinizde ImageNet'i düşünelim. ImageNet'in son katmanının, sınıflara dair olasılıkları ifade eden katmanın alıp bir yerde kullanmanın bir anlamı yok. Ama ondan bir öncesi, sınıflara SoftMax'den bir önceki layer.
+
+147
+00:45:29,811 --> 00:45:50,491
+Yine şey hani fena olmayan bir şey çünkü epey kullanılan bir yaklaşımdır oradaki layer'ları almak ama hiçbir anlamı yok. Sınıflara dair olan kısmını almak bir anlamı yok. Çünkü o sadece ImageNet datası için öğrenilmiş bir katman oluyor. Ama onun öncesindekiler daha genel yapılar için kullanılabilecek katmanlar.
+
+148
+00:45:57,711 --> 00:46:11,031
+Birden fazla şey öğrenmek. Şimdi transfer örnek bakın bir source taskınız var. Yani bir problemi çözmek için bir model oluşturdu. Sonra o modeldeki bir şeyleri başka bir problem için kullanıyorsunuz. Transfer örnek bu.
+
+149
+00:46:11,539 --> 00:46:28,800
+Ama multitask örnek dediğimiz şey ise elimizde birden fazla task var. Bu taskları eş zamanlı olarak öğreniyorsunuz. Yani aynı yapı içerisinde öğreniyorsunuz. Mesela hem statranç hem dama oynamayı öğrenen bir sistem yapıyorsunuz. Anlatabildim mi? Multitask dediğimiz şey bu. Yani hem o hem o. Hepsini birden yapmamış.
+
+150
+00:46:37,172 --> 00:46:47,652
+Bir segmentasyon yapan, bizden uzaklıklarını hesaplayan, objeleri ayrı ayrı bulan, resmin derinlik bilgisini çıkartan.
+
+151
+00:46:48,403 --> 00:47:02,764
+Farklı farklı görevlerimiz var burada, görüyor musunuz? Mesela bunlar her biri ayrı bir iştir. Mesela segmentasyon yapmak bir iştir. Bu segmentasyonun içerisindeki parçaları ayrı ayrı bulmak başka bir iştir. Resmin derinlik bilgisini bulmak ayrı bir iştir.
+
+152
+00:47:11,572 --> 00:47:20,711
+Bunların hepsini birden yaparsak biz, hepsini birden tek bir mimarın içerisinde aynı anda çalıştırıp öğrenirsek, bunlar birbirlerinin öğrenmelerine yardımcı olurlar.
+
+153
+00:47:21,300 --> 00:47:43,320
+Buradaki temel fikir bu. Bunun öğrendiği bir şeyler buna yardımcı olur. Bunun öğrendiği bir şeyler buna, bununla ilgili buna gibi gibi. Tamam. O yüzden multitask loss yani tek bir lossunuz olmuyor. Farklı tasla farklı görevler için tanımlanmış lossların hepsinin topluluğun üzerinden bir loss hesaplanıyor ve hepsi tekrardan geriye dağıtılarak öğreniliyor. Dediğim gibi çok görevli eğitim bu.
+
+154
+00:47:45,619 --> 00:48:05,019
+Aynı şekilde mesela NLP alanında bununla alakalı NLP dekatlon vardır. Orada da mesela NLP'nin bir sürü problem türü var. Yani mesela makine çevirisi var, NER var, metin sınıflandırma var gibi gibi işte soru cevaplama bir sürü şey.
+
+155
+00:48:11,219 --> 00:48:28,719
+Ortak bir formata getirip bütün görevlerin hepsini aynı anda çözdürmeye çalışmak. Yani aynı bir hükümesinin içerisinde hem soru cevaplanan var, hem makine çevirisi var, hem ner var, hem post tagging var, hem word sense disembligation var gibi gibi anlatabiliyor. Bir sürü problem.
+
+156
+00:48:29,460 --> 00:48:47,460
+Tek bir tane formata indiriyorlar. O da soru cevap şeklinde formatlar aslında. Burada onların nasıl dönüştürüldüğünü görüyorsunuz. Farklı farklı şeylerin, görev tiplerinin öyle söyleyeyim. Aynı forma nasıl dönüştürüldüğünü. Bu formu dönüştürdükten sonra da...
+
+157
+00:48:48,724 --> 00:49:14,284
+Bunların hepsi birden, yani tek başına mesela sadece makine çevirisi yapmayı öğrenen bir model eğitmiyorsunuz da, aynı zamanda işte nerede yapabilen, post-tagging'de yapabilen, onda yapabilen, bir sürü şeyi birlikte yapabilen bir yapı ortaya çıkartmaya çalışıyorsunuz. Burada da yine amaç, varsayım ne? Şuradaki olay. Yani birbirlerinden bir şeyler öğrensinler, öğrenebilirler. Mesela herhangi bir task için örnek sayınız azdır.
+
+158
+00:49:16,143 --> 00:49:31,864
+Ama başka taslar için fazladır. O başka taslar için fazla olan örnekler acaba bu az miktarda olan tas içinde, az miktarda örneği olan, eğitim örneği olan tas içinde faydalı olur mu? Bunu yapmak asıl buradaki amaç.
+
+159
+00:49:41,235 --> 00:49:59,576
+Bir yapay sinir anı, tek bir tane yapay sinir anı. Aynı anda beş tane verikümesi için eğitmeyi gerçekleştirmişim o zaman. Ne yapmışım? İki boyutta iki sınıflı beş tane verikümesi almışım. On tane yıdın nöron var. Bir tane yapay sinir anı. Eşit eğitim süresi hepsinde üç tane.
+
+160
+00:50:08,980 --> 00:50:32,659
+Şimdi veri kümelerini tek başlarına eğittiğimizde aynı modelde mesela tren de işte böyleymiş, test de böyleymiş. Multi olarak bunu gerçekleştirdiğimizde yani aynı anda bu veri kümesine şey de veriyoruz. Beş tane veri kümesinin örneklerini hepsini birden veriyoruz. Beş veri kümesinden bir tane veri kümesi oluşturuyoruz. Peki şeyi nasıl belirliyoruz? Hangi veri kümesini?
+
+161
+00:50:33,235 --> 00:50:57,596
+Hangi veri kümesinin olduğunu belirlemek için bir tane kodunuz olması lazım. Hem eğitime hem teste ekleyeceksiniz. Bu birinci veri kümesinin örneği, bu ikinci veri kümesinin örneği şeklinde bunları kodlamanız lazım. O takdirde hepsi birbirinin içerisine girecektir. Dolayısıyla böyle yaptığımızda fena olmayan sonuçlar var. Bakalım. Mesela test için bakalım.
+
+162
+00:50:58,016 --> 00:51:23,396
+Burada üç kez çalıştığımız, mesela 90'dan 86'ya düşmüş, multi de kötü. 94'dan 72'ye düşmüş, bu da kötü. Burada mesela 92'den 96'ya çıkmış, burada bir tık bir iyileşme var. 50'den 47, 50'den 49, 45'den 48, burada da bir tık iyileşme var. 79, 73, 70, 74, 67, 72. Burada hepsinde mesela üç döneminin üçünde de bu ver hükümesinde, bu üçüncü ver hükümesinde ise artık onda iyileşme var.
+
+163
+00:51:23,764 --> 00:51:40,064
+97-96, 96-96, 96-95. Çok manalı bir farklar yok. 75-79, 72-74, 77-77. Burada da bir tık iyileşme görülmüş görüyorsunuz. Şimdi buradaki enteresan mevzu şu, burada hiçbir şekilde görevlerin birbiriyle alakası bile yok.
+
+164
+00:51:45,108 --> 00:52:11,408
+Bu problemler birbirleriyle bir şekilde alakalar. Aynı resmin mesela şu halini, şu halini, şu halini elde etmeye çalışıyorsunuz. Problemler birbirleriyle ilişkiler. Ya da burada da belki bu şekilde bir ilişki olabilirsin. Ama burası aslında hiç alakası olmayan şeyler. 5 tane UCI'den 5 tane ver hükümetini almışım. Bu 5 tane ver hükümetini her biri için ayrı bir yapı paysına eğitmek yerine hepsi için bir tane yapı paysına aitmişim. Burada bu tarz iyileşmelerin olması enteresan.
+
+165
+00:52:13,268 --> 00:52:39,408
+Düşünülecek bence şey var. Tabii bu genel bir şeyler söylemek için az. 5-2-3 tane deneme. Ama mesela bir ağ kaç problemi kapsayabilir acaba? Bir ağ kaç tane problemi ekleyebilirsiniz? Bu tarz böyle oldukça enteresan sorular var bu konu üzerinde düşünülebilecek. Ağın karmaşıklığını arttırarak acaba fazladan kaç tane içeriye bir şeyler alabiliyoruz?
+
+166
+00:52:40,500 --> 00:53:05,739
+Tabii burada şöyle bir şey de var. Problem demeyelim de yine soru. Hani şurada çünkü gördüğünüz gibi iki boyutlu ve iki sınıflı beş veri kümesi. Şimdi sınıf sayıları eşit olan bir sürü farklı veri kümesi ama boyut sayıları bayağı bir farklılaşabilir. Yani bir veri kümesinin inputlarının işte üç boyutu vardır. Başka bir tanesi üç yüz tane boyutu vardır.
+
+167
+00:53:06,224 --> 00:53:16,844
+Burada ikisini de aynı ağın içerisine nasıl koyacağız, nasıl bunları birlikte eğittireceğiz falan gibisinden böyle soru işaretleri ama oldukça bence araştırması zevkli olabilecek bir alan.
+
+168
+00:53:19,784 --> 00:53:25,844
+Şimdi arkadaşlar bir ara verelim. Ondan sonra devam edelim. Şimdi saat 3'e 5 var.
+
+169
+00:53:25,844 --> 00:53:28,543
+Bir saniye.
+
+170
+00:53:47,284 --> 00:53:50,784
+Yağın dakikalar verin arkadaşlar. Az sonra görüşmek üzere.
+
+171
+01:10:07,412 --> 01:10:17,012
+Evet arkadaşlar, merhaba tekrardan. Kusura bakmayın, birazcık geciktim. Şimdi kaldığımız yerden devam edelim. Vakti kaybetmeden.
+
+172
+01:10:26,899 --> 01:10:38,219
+Şimdi tabi bu hiperparametre optimizasyonu mevzusu. Sesim geliyor mu arkadaşlar şu anda? Sesim geliyor mu?
+
+173
+01:10:38,219 --> 01:10:48,939
+Evet. Tamam, tamam. Hiperparametre optimizasyonu özellikle derin öğrenme mimarilerinin oldukça belalı bir alanı.
+
+174
+01:10:51,188 --> 01:10:54,927
+Çok fazla parametre, hiperparametre var. Hiperparametre demek ne demek?
+
+175
+01:10:55,708 --> 01:11:01,667
+Algorithmanın kendisini bulamadığı, kullanıcıdan beklediği parametreleri hiperparametreler deniyor.
+
+176
+01:11:01,667 --> 01:11:13,128
+Ve burada hiperparametrelerin değerleri bir dataset'teki performansı da epey etkileyebiliyor.
+
+177
+01:11:14,128 --> 01:11:15,564
+Dolayısıyla hani...
+
+178
+01:11:16,595 --> 01:11:32,875
+Herhangi bir denemiş olduğunuz hiperparametre konfigürasyonuyla iyi çalışmadığı bu dataset'te, bu mimari, bu yapı demek mümkün değil. Orada bir hiperparametre araması yapmanız, bir hiperparametre optimizasyonu yapmanız gerekiyor.
+
+179
+01:11:35,060 --> 01:11:58,979
+Birkaç tane yaklaşım var. Bunlardan bir tanesi ızgara grid arama. Izgara yaklaşımı sistematik arama. Her bir hiperparametre için kaç tane farklı değer deneyecekseniz onları belirliyorsunuz. Daha sonra da bu aslında bir ızgara ya da 3 boyutlu da ızgara olabilir. 4 boyutlu da ızgara olabilir. Bunun üzerindeki noktaları teker teker tarıyorsunuz.
+
+180
+01:12:03,060 --> 01:12:04,460
+İyi değil, efektif.
+
+181
+01:12:05,060 --> 01:12:06,340
+Efektif değil demeyelim de.
+
+182
+01:12:08,148 --> 01:12:32,288
+Pratikte mümkün değil. Kontinyüs bir arama yapmak. Dolayısıyla böyle ızgara şeklinde belli noktaları seçelim. Mesela learning rate'i atıyorum işte binde beş yapalım, yüzde beş yapalım gibi gibi bir şeyler deneyebilirsiniz. Bunun gibi bir sürü farklı farklı durumlarla sayısal olanlar için söylüyorum. Belli değerleri seçip onları kullanabilirsiniz.
+
+183
+01:12:36,148 --> 01:12:50,368
+Bu konuda yerine rastgele bir arama yapalım. Burada rastgele bir şekilde konfigürasyonları oluşturalım ve bunlarla arama yapalım. Bir üçüncüsü ki genelde yapılmaya çalışılan Bayezin optimizasyonu.
+
+184
+01:12:51,091 --> 01:13:10,011
+Şimdi eldeki deneme sonuçlarına göre en fazla iyileşmeyi sağlayabilecek değeri tahmin ediyorum. Mesela şöyle bir şey düşünelim. Hiperparametrenin değerleri. Elinizde şu denemeleri yaptığınızı varsayalım. Bakın şu hiperparametrenin şu değeri için deneme yapmışsınız, şöyle bir sonucu elde etmişsiniz. Şu değeri için bir deneme yapmışsınız, şu sonucu elde etmişsiniz. Bu değeri için bir deneme yapmışsınız, bu sonucu elde etmişsiniz.
+
+185
+01:13:13,908 --> 01:13:29,708
+Tahmin edebilirsiniz. Yani buradan bir arama yapayım diyebilirsiniz. Yani şunların ikisinin arasında arama yapmak yerine şurada arama yapmak daha makul bir şey. Bir yerden sonra belki bu yükselip azalacak. Yani bu ikisinin arasında bir şey bulduğunuzda böyle bir şey yoktur burada da.
+
+186
+01:13:30,032 --> 01:13:42,352
+Burada düz bir çizgi vardırı aslında varsayıyor bu yaklaşım. Bu da buradan buraya doğru giderken direkt böyle aşağı doğru tek bir seferde inmez ya bu işte bir miktar yukarı doğru çıkar iner gibisinden bir düşünce.
+
+187
+01:13:42,931 --> 01:14:04,492
+Dolayısıyla bu ezin optimizasyonda da bu tarz elinizdeki eldeki deneme sonuçlarına bakarak bir sonraki denemeyi hangi noktada yapması gerektiğini her bir boyutta tabii bunu gerçekleştiriyor. Bu sadece tek bir hiperparametre için gözüken boyutu bunun. Ama siz denizde 10 tane hiperparametre varsa 10 boyutlu uzayda bir optimizasyon yapıyorsunuz demektir.
+
+188
+01:14:04,832 --> 01:14:32,811
+Dolayısıyla burada sizin için en iyi iyileşmeyi sağlayacağını tahmin ettiği, siz orada bir değer buluyorsunuz. O değerde de mesela gerçekten böyle olduğunu varsayalım. Şu değeri de tahmin ediyor, bu değerde bir deneme yap diyor. Bu deneme yaptığınızda mesela böyle bir şey çıkarsa bu iyi. Bir sonraki denemeyi belki o zaman, burası belki daha yükselere doğru gidiyor, şöyle bir şey, belki yine şu ikisinin arasında bir yerde yapmak makul bir harekettir gibisinden eldeki denemeler üzerinden ilerliyor. Yani sistematik bir şekilde değil ya da rastgele bir şekilde.
+
+189
+01:14:32,832 --> 01:14:39,352
+Ama bu ezine optimizasyon bu eldeki verileri kullanarak en fazla iyileşmeyi sağlayacağı yeri tahmin etmeye çalışıyor.
+
+190
+01:14:41,532 --> 01:14:54,832
+Gelelim aktif örneklemeye. Aktif örnekleme ise aktif öğrenmeden farklı bir şey. Aktif öğrenmede nasıldı? Elimizde...
+
+191
+01:14:56,851 --> 01:15:22,271
+Örnekler vardı. Etiketlerinde bilmediğimiz örnekler vardı. Örneklerin özelliklerini biliyorduk ve biz o özelliklere bakarak kullanıcıdan o örneğin etiketini isteyip istemeyeceğimize karar veriyorduk. Aktif örnekleme ise aslında, deminki Boaz'in optimizasyondan esinlenen bir şey, kullanıcıdan input uzayı için yeni örnekler isteyebilir miyiz? Yani bana şurada bir örnek üret.
+
+192
+01:15:22,868 --> 01:15:32,968
+Şurada bir örnek üret ve onun etiketini bana söyle. Yani örnekleri üretmek, veri toplama sürecini aslında optimize etmeye çalışıyor aktif örnekleme.
+
+193
+01:15:33,427 --> 01:15:53,528
+Anlatabildim. Yani aktif öğrenme etiketleme sürecini optimize etmeye çalışıyordu. Aktif örnekleme ise veri toplama sürecini optimize etmeye çalışıyor. Aynen bu bazen optimizasyon çalışıyor orada da. Elimizde bizim tahminlerimizin mevcut verilerle tahminlerimizin en fazla varyansa sahip olduğu bölge.
+
+194
+01:15:57,555 --> 01:16:20,235
+Şöyle sonuçlarınız var. Bu sonuçlarda işte üst sınırlar, alt sınırlar tahminleri, regresyon problemi olarak düşünebiliriz bunu. Bu regresyon probleminde böyle tahmini üretebiliyoruz belli boyutlar için. Mesela şu bölge için varyansın yüksek olduğunu görüyoruz. O zaman diyoruz ki bu bölge için varyans yüksek. O zaman ben buradan gideyim bir tane şey örneğin. Örnek alayım.
+
+195
+01:16:21,268 --> 01:16:48,448
+O örneği ve çıktısını aldığımızda artık o bölgedeki varyasyon azalıyor. Çünkü o bölgeye uygun bir tahminler üretmeye başlıyor. Algoritmanız artık ne kullanıyorsanız. Daha sonra burada şu anda ne var en yüksek? Mesela şurası yüksek gözüküyor. O zaman ben bir de şuradan öğreneyim. Giderek olasılığı azalta azalta azalta değişkenliği azaltarak bunu gerçekleştirmeye çalışıyoruz. Dediğimiz gibi buradaki olay veri toplama sürecini optimize etmeye.
+
+196
+01:16:48,847 --> 01:16:50,987
+Odaklanmış bir yaklaşım.
+
+197
+01:16:51,847 --> 01:16:55,448
+Active Sampling için burada mesela örnek verilmiş.
+
+198
+01:16:56,207 --> 01:17:00,127
+Modelin varyansının en yüksek olduğu yerler tahminlerde en az güvenebileceğimiz yerler.
+
+199
+01:17:00,127 --> 01:17:03,688
+Bakın yer diyor. Örnekten bahsetmiyoruz. Yerden bahsediyoruz.
+
+200
+01:17:04,907 --> 01:17:05,727
+Bir koordinat.
+
+201
+01:17:06,188 --> 01:17:10,347
+Modelin bu noktadaki varyansı farklı eğitim kimeler için o noktadaki tahminlerin STD'si.
+
+202
+01:17:10,627 --> 01:17:11,948
+Bunlardan yeni örnek istemeliyiz.
+
+203
+01:17:12,028 --> 01:17:13,948
+Mesela burada şöyle bir veri kümesi var.
+
+204
+01:17:14,507 --> 01:17:16,188
+Bu veri kümesi üzerine bir sürü ağaç eğitmişim.
+
+205
+01:17:16,532 --> 01:17:42,612
+Bu ağaçların içerisinde, şurada şey görüyorsunuz, bakın şu bölgede, mesela şu bölgeyi düşünün, bu bölgedeki ağaçların tahminleri birbirlerine yakınlar, görüyor musunuz? Böyle, ya da işte bu bölgedekilerin yakınlar, bu bölgedekilerin yakınlar. Burakiler birazcık fazla. Ama şu bölgeye bakın, şu bölgede çok yüksek bir şey var, fark var. Farklı ağaçların tahminleri arasında. O zaman bu bölgeden biz yeni örnekler, orası da şuraya denk geliyor, bakın.
+
+206
+01:17:44,916 --> 01:17:55,316
+O bölgeden biz yeni örnekler istemeliyiz diye aslında ifade ediyor. Bu çıkışlardaki varyansın büyüklüğü. Yani tahminlerdeki varyansın büyüklüğü.
+
+207
+01:17:59,256 --> 01:18:07,756
+İnsan-makine işbirliği bu da son zamanların aktif alanlarından bir tanesi. İşte Human Loop ya da Wix Perversion diye de geçiyor.
+
+208
+01:18:08,372 --> 01:18:17,012
+İnsanların iyi olduğu ve makinelerin iyi olduğu yerleri birlikte kullanalım. Şimdi insanların yapabileceği şeyler neler, makinelerin yapabileceği şeyler neler?
+
+209
+01:18:18,072 --> 01:18:31,072
+Makineler hızlılar, çok sayıda bilgiyle başa çıkabiliyorlar ama daha az doğru tahminleri oluyor. Ama biz insanların söylediği şeyi daha doğru kabul ediyoruz, etiketleme süreci için düşünürsek.
+
+210
+01:18:31,604 --> 01:18:55,864
+İnsanlar verileri etiketleyebilir. Bu zaten bildiğimiz, yaptığımız bir şey. Başka ne yapabilir? Tahminleri düzeltebilir. Yani bir makine bir tahminde olduğunuz zaman ona burası doğru değil, şurası doğru falan gibisinden sürecin içerisinde katılabilir. Tahminler arasında seçim yapabilir. Yani mesela şöyle diyelim, bir kullanıcıya şu 100 sınıftan bir tanesine ata, yani bir etiketleme probleminiz var. Orada da 100 tane sınıf olduğunu düşünün.
+
+211
+01:18:56,243 --> 01:19:07,003
+Kullanıcıya şu yüz sınıftan bir tanesini seç, ata demeyeceksiniz de, şunu diyebilirsiniz, kullanıcıya şu en yüksek olasılıklı beşlerden bir tanesinin arasından seçim yap.
+
+212
+01:19:07,083 --> 01:19:14,984
+Yani o etiketleme sürecini ne yapabilirsiniz makineleri kullanarak? Basitleştirebilirsiniz. Örneklerin ortak bir özelliği için kural verebilir.
+
+213
+01:19:14,984 --> 01:19:23,823
+Yani mesela şöyle şeyler olabilir. İçinde şu ifadeler geçenler negatif. Yani örnek bazında etiketler vermek değil de,
+
+214
+01:19:24,340 --> 01:19:46,739
+Genel olarak örnekler üzerinden, örnekler üstü öyle söyleyeyim, genel probleme özgü, probleme has tanımlamalar, etiketleme kuralları tanımlayabilir. Mesela kedilerin kuyruğu vardır. Yani şu resimdeki kedidir, şu resimdeki kedidir, şu resimdeki kedidir gibisinde etiketler vermiyor da kedilerin kuyruğu vardır diye bir ifade söylüyor. Bunu acaba biz sistemin içerisinde nasıl kullanabiliriz?
+
+215
+01:19:47,796 --> 01:19:58,816
+Tek bir sözde burada aslında bir sürü veriyi etiketleyebilir. Kuyruğu olanlar ve olmayanları sizin tabii bir şekilde yakalayabiliyor, algılayabiliyor olmanız lazım. Orası ayrı bir mevzu.
+
+216
+01:19:58,816 --> 01:20:13,236
+Ama buradaki olay dediğim gibi, şurası özellikle çok kritik. Tek bir örneklere has etiketler vermek yerine dediğim gibi belli kurallar, genel ifadeler.
+
+217
+01:20:14,868 --> 01:20:32,048
+Kullanarak bir şekilde VX Perversion dediğimiz şeydi aslında. Yani tam böyle her bir örneğe motomot oturacak şeyler değil ama genel olarak doğru kabul edilen ifadeleri insanlardan alıp kullanmak mümkün olabiliyor.
+
+218
+01:20:32,847 --> 01:20:41,048
+İnsan makineye iş bilinen örnekler burada çeşitli video etiketleme için mesela şeyler var. Yani videoları açarsanız ederseniz mesela bir tanesinde...
+
+219
+01:20:41,332 --> 01:21:04,672
+İnsan, mesela şey yapacaksınız, bir video etiketleme işi. Video etiketleminin sıkıcı, bezdirici kısmı şu, sahnede 30 tane frame var. 30 tane frame'in her birinde nesneleri kutuplar içerisinde işaretle falan oldukça güç olabiliyor. Onun yerine mesela şöyle bir şey yapılmış burada. Videonun başında mesela bir arabanın gidişini düşünelim. Bir araba bir sahnede ilerliyor.
+
+220
+01:21:05,363 --> 01:21:11,983
+Otoparkı çektiğinizi düşündüm. Otoparkın sabit bir kamerası var. Bu kamerada bir araba bir yerden başlıyor, bir tarafa doğru gidiyor.
+
+221
+01:21:12,500 --> 01:21:38,139
+Başlangıç noktasını insan etiketliyor ve en son frame'i etiketliyor. En son frame'deki arabanın bulunduğu noktayı etiketliyor. Arasını makine tahmin ediyor ve daha sonra insan da o tahminlerin üzerinden düzeltmeler yapıyor. Yani saniyede atıyorum işte 5 saniyelik bir video olduğunu düşünelim. 5 saniyelik videoda 150 tane her birini teker teker işaretlemek yerine başını ve sonunu etiketliyor. Makine tahmin ediyor aradaki geçişleri.
+
+222
+01:21:38,836 --> 01:21:44,515
+Ondan sonra da insan da o geçişlerin üzerinden tekrardan geçerek ne yapabiliyor? Etiketlemeyi düzeltebiliyor.
+
+223
+01:21:45,256 --> 01:21:51,836
+Günümüzde çeviri kabaca otomatik çeviri artı insanlarla düzeltme olarak yapılabiliyor. Bunu da biliyoruz.
+
+224
+01:21:52,796 --> 01:21:56,716
+Wixper Vision için o demin bahsettiğim kurallar vermek noktasında.
+
+225
+01:21:56,716 --> 01:22:02,896
+İşte Snorkel diye bir altyapı var. Stanford Üniversitesi'nin geliştirdiği.
+
+226
+01:22:03,444 --> 01:22:23,224
+Python kütüphanesi olması lazım. Onu da mesela kullanabiliyorsunuz. Çeşitli metin sınıflandırma için ne bileyim mesela işte haber verilerini etiketleyeceksiniz. Orada mesela diyorsunuz ki içerisinde dolar geçen mesela tabii bu etiketler tamamen full doğru olacak şeyler değiller.
+
+227
+01:22:23,648 --> 01:22:49,868
+Ama genel olarak da, mesela içinde dolar geçen ifadeler büyük ihtimalle ekonomi sınıfındandır diyorsunuz. Ya da içerisinde ne bileyim Fatih Terim geçen ifadeler büyük ihtimalle spor haberi sınıfındandır diyorsunuz. Anlatabildim. Dolayısıyla bu yöntemle tek bir anda, tek bir haberi etiketlemek yerine tek bir seferde bir sürü örnek için fakat tam değil ama olası etiketler ürettirebiliyorsunuz.
+
+228
+01:22:53,300 --> 01:23:03,399
+Aslayı da örnekle eğittim. Şimdi burada Fransız Şolet. Tanıyor musunuz Fransız Şolet'i?
+
+229
+01:23:07,347 --> 01:23:08,108
+Yok hocam.
+
+230
+01:23:09,147 --> 01:23:10,227
+Hiç tanıyınız yok mu?
+
+231
+01:23:20,372 --> 01:23:37,192
+Allah Allah ya, hakikaten kimse mi tanımıyor? Enteresan geldi şimdi. Herkes duyuyor değil mi beni? Evet hocam duyuyoruz. Allah Allah, kimse tanımıyor.
+
+232
+01:23:42,771 --> 01:24:04,252
+Tanımıyor. Tamam. Peki. Evet, kerası yazan adam. Hani hepinizin kullandığı keras var ya. Hepinizin demeyin yani. Büyük bir kısmınızın belki. O kerası yazan adam. Neyse. Peki. Burada değişik bir şey oldu. Onun bir ifadesi var burada.
+
+233
+01:24:08,500 --> 01:24:20,220
+Uzayı yeterince sample ederseniz orasını zaten yani dense olarak, yoğun olarak örnek alabileceğiniz her problemi zaten şeyle çözebilirsiniz.
+
+234
+01:24:20,700 --> 01:24:22,940
+Klasik makine öğrenmesi teknikleriyle.
+
+235
+01:24:22,940 --> 01:24:30,280
+Ama extrapolate yani o bölgenin haricinde ya da işte seyrek bölgelerde.
+
+236
+01:24:30,463 --> 01:24:53,244
+Bir şey yapmak için sizin zekaya ihtiyacınız vardır diyor. Yani az sayıda örnekle eğitim buradaki kritik olan şey. Az sayıda örnekle çalışabilen sistemler asıl daha mantıklı. Mantık demeyelim de zeki deme daha hak kazanırlar. Öyle söyleyelim. Yoksa çok fazla örnekle çalışan yöntemler.
+
+237
+01:24:53,619 --> 01:25:13,779
+Çok fazla örneğe ihtiyaç olan yöntemler tamamen bir mapping işlemi yapıyorlardır'a getiriyor. Neyse, buradan linkinden de orijinal şeylerini okuyabilirsiniz zaten. Şimdi burada az sayıda örnekle ilk karşımıza çıkan türü az sayıda örneğin, one shot learning.
+
+238
+01:25:13,779 --> 01:25:20,279
+Şimdi one shot learning'in özelliği şu, eğitim kümesinde her sınıf için tek bir örnek var.
+
+239
+01:25:21,524 --> 01:25:43,084
+Yani böyle bir tane bir sınıf için böyle yüzlerce örnek yok. Mesela şimdi buraya bakalım. Şimdi bu bir tane zürafa resmi. Burada ise zürafaların bir sürü resmi var. Eğitim kümenizde zürafa sınıfı için tek bir örneğiniz varsa, çok tane örneğin olmasına göre bu problem çok çok daha zor bir problemdir değil mi? Çünkü mesela bu zürafanın farklı açılardan görünen hiçbir şeyini görmüyorsunuz.
+
+240
+01:25:43,891 --> 01:26:06,551
+Ya da buradaki örnek epey iyi bir örnek. Zürafanın mesela sadece başını içeren bir şey olsa, onun boynunun uzun olduğunu bilemeyebilirsiniz değil mi? Mesela şuradaki şu örneğe bakalım. Bir tane zürafa resmi var. Gerçi orada boynunun uzun olduğu belli olmuş ama. Mesela şurada falan şu zürafalara bakarsak, bu zürafaların boynunun uzun olduğunu çıkaramazsınız. Tek örneğiniz şu olursa, bu değil de, tek örneğiniz şu olursa işiniz çok daha zor.
+
+241
+01:26:06,996 --> 01:26:26,515
+Neyse ama problem şu yani tanımı bu. Dediğim gibi eğitim kümesinde her sınıfın hiç tek bir örneğin olduğu problem. Oldukça zor bir problem. Daha da zoru var mı? Daha da zoru var. Zero shot var. Zero shot dediğimiz şey ise test örneklerinin eğitim kümesinde hiç örneği bulunmayan sınıflara atama yapabilmek.
+
+242
+01:26:27,091 --> 01:26:43,231
+Bu birazcık garip. Eğitim kümesindeki sınıflarla test kümesindeki sınıflar ayrılar. Yani eğitim kümesinde ABC sınıfları var, test kümesinde başka sınıflar da var. Ama tabii burada multimodal yaklaşımlar kullanılıyor. Yani multimodal ile çok modlu yaklaşımlar.
+
+243
+01:26:46,579 --> 01:27:05,959
+Eğitim Örneğin tanımları, sınıfı ve resmi var. Çıkarım süresince ise tanım, yeni sınıflar maddesi ve test örneğinin tanımları var. Yani çıkarıma dair test kümesindeki örneklerin tanımları var ama resimleri yok, öyle söyleyeyim. Öteki tarafta eğitim sürecinde ise hem resimleri hem de tanımları var.
+
+244
+01:27:14,452 --> 01:27:37,432
+Eğitim kümesini sınıflar ayrı, test kümesini sınıflar ayrı. O zaman buradan burayı nasıl tahmin edemezsiniz zaten. Olmayan bir şeyi nasıl tahmin edeceksiniz. Ama arada geçiş yapabilmenizi sağlayan multimodal yapılar var. Bir de Zero Shot Learning'in daha yaygın olarak kullanım tarzı burada klasik yaklaşımı var. Bir de şurada da Zero Shot Machine Translation diye geçiyor bu konu.
+
+245
+01:27:42,387 --> 01:28:09,768
+Türkçeden İngilizce'ye paralel derlemler olduğunu düşünelim. Her olası dil ikilisi için elinizde mesela şeyler var. Böyle A'dan B'ye, oradaki A ve B diller olarak düşünün. A'dan B'ye, B'den C'ye, C'den D'ye, D'den A'ya gibi böyle bir sürü paralel korpuslar olsun. Bu paralel korpusların her birini kullanarak siz ne yapabilirsiniz? Modelleri öğretebilirsiniz. Ayrı ayrı modelleri öğretebilirsiniz. Yüz dilden yüz dile.
+
+246
+01:28:10,579 --> 01:28:36,359
+Eğitim yapabilirsiniz. Yani 100 dilden 100 dile demek şu demek, 10 bin tane modeliniz olacak demek. Bunun yerine Google'ın yapısında şöyle bir şey var. Bütün dillerden bütün dillere çevir yapan tek bir yapı. Yani şurada gördüğünüz yapı. İngilizce, Japonca işte buraya her dil buraya giriyor ve her dil buradan çıkıyor. Ama işin güzel tarafı şu. Paralel değerlemde yani 100 dilden 100 dilde yani 10 bin tane paralel değerlem yok.
+
+247
+01:28:36,851 --> 01:28:48,572
+Yani A'dan B'ye var, B'den C'ye var mesela. Ama A'dan C'ye yok paralel derler. Ama olmasa da bu ikisinin varlığından A'dan C'ye çevrim yapabiliyorlar. Anlatabildim mi demek istediğimi?
+
+248
+01:29:04,787 --> 01:29:30,507
+Mesela Portekizce'de ne demek? İspanyolca. İspanyolca olsun, Portekizce'de olabilir. İspanyolca olsun. Mesela İngilizce'den, pardon Türkçeden İngilizce var, İngilizce'den İspanyolca'ya var. Ama Türkçeden İspanyolca'ya bir şey yok elimizde. O zaman bu işi yapamaz mıyız? Yapabiliyoruz. Bu Zero Shot Machine Translation'da yapılan işlem tam olarak bu oluyor aslında. Bütün diller, öyle söyleyeyim, ortak bir şeye dönüştürüyorlar.
+
+249
+01:29:30,912 --> 01:29:36,652
+Daha sonra o ortak bir şeyden dönüşüm yapılıp tekrardan bütün dillere dönüşüm gerçekleştiriliyor.
+
+250
+01:29:38,212 --> 01:29:42,092
+Bunun dediğim gibi detaylarını buradaki yapıdan öğrenebilirsiniz.
+
+251
+01:29:42,212 --> 01:29:46,032
+Burada işte multilingual embeddingleri görüyorsunuz.
+
+252
+01:29:47,092 --> 01:29:51,731
+Aynı anlamdaki farklı kaynak dillerdeki cümlelerin temsilleri burada birbirlerine yakın olarak çıkmışlar.
+
+253
+01:29:55,155 --> 01:30:20,095
+Bunlar cümleler, cümlelerin koordinatları öyle söyleyeyim. Cümleleri göstermiş bir de farklı diller. Mesela şunlar bir dil, şunlar maviler bir dil, şunlar başka bir dil. Ama hepsi aynı anlama sahip cümleler bunlar. Aynı anlama sahip farklı dillerdeki cümleler benzer koordinatlarda yer alıyorlar. Bu şekilde bu Zura Şart Learning'i bu yapıyla tabii gerçeklik demek mümkün olabiliyor.
+
+254
+01:30:43,252 --> 01:30:57,852
+Yatay eksende eğmektir, döndürmektir. Bunları zaten işte deformasyonlar var. Çeşitli elastik deformasyonlar var. Şunlar orijinal örnekler meskler. Böyle el yazıları. Bunlar ise onlardan üretilmiş yapay görüntüler. Bunların her biri yapaylar. Şuradaki alttaki dört tanesi.
+
+255
+01:30:58,452 --> 01:31:07,551
+Ver hükümesini bu gibi dönüşümlerle ekstend ettiğinizde sadece orijinal verileri kullanmaya göre daha başarılı sonuçlar almak ümit ediliyor.
+
+256
+01:31:08,212 --> 01:31:31,492
+Buradaki amaç bu. Yani atıyorum işte elinizde yüz tane altı varken bunların her birinden işte dörder tane daha falan üretseniz mesela beş yüz tane altı olacak elinizde. O beş yüz tane altıyı kullandığınızda eğitim kümesinin içerisinde bu sadece yüz tane altıyı kullanmaya göre daha başarılı bir altıyı tanıyan, genel olarak söyleyelim bir sistem oluşturabilirsiniz. Varsayı diyorum.
+
+257
+01:31:32,340 --> 01:31:47,780
+Görüntüler için rastgele kırpma var, ayna yansıması var. Renk bilgilerindeki değişim bunları zaten görmüşsünüzdür. İşte ImageNet'in ilk halinde bile bu CNN'lerin ünlü olduğu paper'ın içerisinde.
+
+258
+01:31:48,243 --> 01:31:55,823
+Zaten geçen hafta, geçen hafta, yıl önceki hafta anlatmıştık bu paperla alakalı bir işte ensambol içeriyor falan onlardan bahsetmiştik.
+
+259
+01:31:56,144 --> 01:32:01,443
+Krop yani resmin içerisinden rastgele parçalar seçip tek bir resimden bir sürü resim üretmek.
+
+260
+01:32:02,023 --> 01:32:09,203
+Resmin hangi bölgesinin o resimdeki nesneyi belirlediğini tam olarak bilmediğimiz için, öyle söyleyelim, tamam mı?
+
+261
+01:32:09,203 --> 01:32:14,203
+Aslında olay bu. Yani bu resmin içerisindeki hangi bölge tam olarak o şeyi ifade ediyor?
+
+262
+01:32:14,836 --> 01:32:35,096
+Sınıfı ifade ediyor. Onu bilmediğimiz için bu şekilde rastgele parçalar alınıp ilerletiliyor. Aynı yansıması yapılabiliyor. Renk bilgilerindeki değişim, bunun üzerine çeşitli şeyler uygulayarak, nedarlarına, filtreler uygulayarak, kırpmalar, döndürmeler falan oldukça yaygın olarak kullanılan yaklaşımlar.
+
+263
+01:32:37,524 --> 01:32:44,844
+Yine üretmek için, yani yeni veri zenginleştirme, üretmek için biliyorsunuz işte ganlar var. Geçen hafta onlardan bahsetmiştik.
+
+264
+01:32:48,124 --> 01:32:55,004
+Metin verileri için yeni verileri nasıl üretebiliriz? Eş anlamlı kelime değişlerle dönüşümler yapmak.
+
+265
+01:32:55,104 --> 01:33:00,424
+Mesela bizim oğlan komşu kızına abayı yakmış, bizim oğlan komşu kızına aşık olmuş.
+
+266
+01:33:00,424 --> 01:33:03,024
+Mesela işte böyle bir şeye, böyle bir şeye dönüştürmek.
+
+267
+01:33:03,923 --> 01:33:22,324
+Bir gün bana yaptıkları sınıf senden çıkaracağım, senden intikamımı alacağım elbet. Bunu buna çevirebilirseniz eğer, bunu yapmanın kendisi de ayrı bir iştir de, buraya bir tane ok koymuşum, buradan bunu üretirsiniz falan demişim de, buradan bunu üretmek çok kolay bir şey değil, öyle söyleyeyim. Bunun için de çok kolay değil.
+
+268
+01:33:29,171 --> 01:33:37,811
+Çeviri var. Orijinal örneği başka bir dile çevirip daha sonra o çevirdiğimiz dilden tekrardan geri çevirir. Buna Back Translation da deniyor.
+
+269
+01:33:38,452 --> 01:33:58,752
+Mesela Google'ın Translate'ine bir cümle yazıyorsunuz. O cümleyi İngilizce'ye çevirtiyorsunuz. Türkçe'ye bir cümle yazıyorsunuz. İngilizce'ye çeviriyorsunuz. Sonra o İngilizce cümleyi alıyorsunuz. Türkçe'ye çeviriyorsunuz. Baştaki Türkçe'ye benzeyen anlama sahip ama ondan farklı bir cümle çıkıyor. Tamam mı? Buna Back Translation deniyor. Bu dediğim gibi metin veriler için uygulanan veri zenginleştirme yöntemlerinden bir tanesi.
+
+270
+01:34:03,891 --> 01:34:20,891
+Tabular data diye ifade ettiğimiz UCI veritabanındaki bizim kullandığımız veri hükümeleri için kullanılan yöntemler ise, mesela yapılabildiği şeyler neler? Üretici model kullanıp, yani sınıfların her birinin geldikleri dağılımları...
+
+271
+01:34:21,300 --> 01:34:26,040
+Tahmin edip o tahminlerden, o dağılımlardan yeni örnekler ürettirebilirsiniz.
+
+272
+01:34:26,620 --> 01:34:31,300
+Ya da az örnekle sınıftan, mesela smoothie yaklaşım var ki smoothie yaklaşımı...
+
+273
+01:34:32,532 --> 01:34:50,371
+Genelde class imbalance olan yani sınıflar arasındaki dağılımın farklı olduğu bir tane sınıftan örnekler %10'unu oluşturuyor veri hükümesinin, bir tanesi %90'unu oluşturuyor. Burada %10'luktaki verileri birazcık arttırmak için öyle söyleyeyim, smoothie tarzında teknikler kullanılıyor.
+
+274
+01:34:51,028 --> 01:35:12,108
+Az örnekte olan sınıftan bir örneğe en yakın K komşusunu buluyor. Bunlardan onunla aynı sınıfta olanlardan birini seçiyor. İki tane örnek. Daha sonra bu iki tane örneği birleştiren çizginin üzerinde yeni örnekler üretiyor. Örnekleri birleştiren çizginin üzerinde yeni örnekler üretiyor. Burada düşünebilirsiniz. Mesela burada işte örnek verilmiş buna alakalı.
+
+275
+01:35:12,756 --> 01:35:26,155
+Smoothie ve F onu birazcık daha iyileştiriyor ama temel olarak mesela şu X1 ve X3'ün arasında şu A'nın üretildiğini görebilirsiniz. A üretiliyor, o şekilde düşünebilirsiniz. X1 ile X4 arasında mesela B üretiliyor gibi bunları düşünebilirsiniz.
+
+276
+01:35:29,043 --> 01:35:45,523
+Bir başka problem, bu ana kadar hep, bu ana kadar demeyelim de, genel olarak bizler makine öğrenmesiyle işte bir modeli tahmin edebilen, bir şeyi tahmin edebilen, sınıflandırabilen yapılar, mimariler kurmak amaç.
+
+277
+01:35:46,523 --> 01:35:51,603
+Son zamanlardaki önemli alanlardan bir tanesi ise bu makine öğrenmeleri kandırmak.
+
+278
+01:35:52,115 --> 01:36:09,975
+Makine öğrenmeyi kandırmak için makine öğrenmesini kullanmak. O şekilde de ifade edebiliriz. Ya da bunu sadece makine öğrenmesini kullanmak. Evet, evet. Orada da makine öğrenmesi var da. Yani kandırmak için de makine öğrenme istekliklerini kullanıyoruz.
+
+279
+01:36:11,195 --> 01:36:18,076
+Şimdi buradaki olay nereden çıktı? Buradaki olay, derin öğrenme mimarilerinin böyle çok iyi çalışmaları falan var.
+
+280
+01:36:18,676 --> 01:36:42,556
+Ama karar makinelere bırakılmaya başlandığı anda onları kandırma çalışmaları da başlıyor. İşte istenmeyen e-postalar bunlarla ilgili bir örnektir. Ama ileride başka kararlarımızı da makinelere bıraktıkça onları kandırmaya çalışan yapılarda olacaktır. Nasıl ki insanları kandırmaya çalışan yapılar var. Aynen makineleri kandırmaya çalışan yapılar da ortaya çıkacaktır.
+
+281
+01:36:43,155 --> 01:37:00,815
+Şimdi derin öğrenme mimarilerin başarılığın ardından şöyle bir sıkıntı ortaya çıktı arkadaşlar. Bu çok klasik bir resim paper'dan. En solda orijinal bir papağan var görüyorsunuz. Bu papağan Inception Version 3 mimarisine göre %97 olsa da bir papağan.
+
+282
+01:37:07,956 --> 01:37:15,256
+Bu resmin üzerine özel olarak hazırlanmış sağdaki görüntü, şu görüntü, bunun üzerine ağırlıkları çok yükseltilmiş, o yüzden çok yüksek gözüküyor.
+
+283
+01:37:15,856 --> 01:37:18,236
+Bunun çok daha smooth bir hali buraya ekleniyor, öyle söyleyeyim.
+
+284
+01:37:19,016 --> 01:37:23,856
+Bunu ekleyerek bu resim oluşturuluyor. Bakın, şu resim, orijinal resim, bu ise yeni resim.
+
+285
+01:37:24,176 --> 01:37:29,056
+Bu resmi, Inception'a verdiğimizde %99 olsak da buna kitaplık diyor arkadaşlar.
+
+286
+01:37:29,916 --> 01:37:32,996
+Şimdi bu çok kötü bir şey. Neden bu çok kötü bir şey?
+
+287
+01:37:36,275 --> 01:37:38,376
+Ya da çok kötü bir şey mi? İlk önce onu soralım.
+
+288
+01:37:42,836 --> 01:37:44,836
+Hocam tamamen yanlış tahmin ediyor.
+
+289
+01:37:44,836 --> 01:37:46,836
+Evet.
+
+290
+01:37:46,836 --> 01:37:57,836
+Yani mesela bir güvenlik duvarı oluşturmuş olalım yapay zekayla. Güvenlik duvarında aslında biz oraya erişimiz olmadı. Erişebiliriz yani.
+
+291
+01:37:57,836 --> 01:38:06,836
+Papağanı kitaplık dediği gibi, hani girişimiz kitaplık olsaydı ya, biz papağan göstererek iliş yapabiliriz.
+
+292
+01:38:08,275 --> 01:38:28,296
+Buradaki sıkıntı şu, eğitim ve test kümenizi oluşturduğunuz, eğitimi küçük bir verikümesiyle ya da testi çok zor verikümeleriyle ya da çok kolay verikümeleriyle oluşturmuş olmanızla alakalı bir problem değil bu.
+
+293
+01:38:29,268 --> 01:38:50,127
+Yani mesela bu atağı engellemek için, yani böyle bir atağı engellemek için eğitim kümenizi arttırsanız, hatta bu şekilde üretilmiş adversarial sampler deniyor bunlara, düşmanca üretilmiş örnekler. Bunları işin içine katsanız bile hala yine de sisteme karşı adversarial samplerin üretilebildiği görülüyor.
+
+294
+01:38:56,435 --> 01:39:21,215
+İşin çok kötü olmayan tarafı şu. Bu gibi örnekler, böyle bir resim, normal bir kamera tarafından çekilebilecek bir resim değil. Ne demek bu? Bu resim, şu kamera tarafından çekilmiş resmin üzerine özenle yerleştirilmiş. Bu rastgele üretilen bir şey değil. Buradaki gördüğünüz şey, buna kitaplık demesi için üretilmiş bir resim.
+
+295
+01:39:21,536 --> 01:39:27,356
+Hocam o resmi nasıl üretiliyor? O gürültü resmi onunla ilgili bir bilginiz var mı?
+
+296
+01:39:28,636 --> 01:39:29,716
+Tamam, teşekkür ederim.
+
+297
+01:39:29,716 --> 01:39:37,376
+Oraya bakabilirsiniz. Ama şöyle bir şey söyleyeyim. En kabaca ifade etmek gerekirse.
+
+298
+01:39:38,356 --> 01:39:41,676
+Yapay sinir ağlarının karar sınırları çok sumut değiller ya.
+
+299
+01:39:42,956 --> 01:39:44,256
+Yani çok sumut değiller derken.
+
+300
+01:39:46,256 --> 01:39:46,976
+Çok...
+
+301
+01:39:49,844 --> 01:40:12,344
+Nasıl ifade edeyim onu? Liner yapılar yok, non-liner yapılar var. Bu non-liner yapılar da verilerin içerisinde boşluklar oluşturmamıza seyip oluyor. Yani hiç alakası olmayan bir yerde bir sınıfa dair bir bölge oluşuyor. O bölgede aslında hiç eğitim kümesinden, mesela öyle bir bölge buluyor ki burada, öyle söyleyeyim.
+
+302
+01:40:12,916 --> 01:40:20,135
+O bölgede kitaplık verisine dair hiçbir bilgi yok ama o bölgeyi yapay sinira kitaplık olarak işaretliyor. Anlatabildim mi?
+
+303
+01:40:20,935 --> 01:40:25,376
+O işte ağırlık uzayında hani öyle bir hale geliyor ki o noktaya düşüyor.
+
+304
+01:40:25,376 --> 01:40:40,916
+Öyle bir yer var ki o yer ve diyor ki burası kitaplık bölgesidir diyor. Elindeki nan niner yapıdan dolayı. Ama halbuki orada herhangi bir kitaplığa dair eğitim örneği falan da yok. Sadece o nan niner yapıdan dolayı o tarz bölgeler oluşuyor. O bölgeleri de dediğim gibi...
+
+305
+01:40:40,916 --> 01:40:52,775
+Siz o bölgeye doğru ilerletirseniz bu orijinal resmi ne yapıyor? İşte ona kitaplık haline getiriyor. Yoksa buna biz kitaplık demiyoruz.
+
+306
+01:40:54,355 --> 01:41:04,555
+Bu atakları engellemek için bu atakların nasıl oluşturulduğunu kavrayabilirsek ona daha çok çözüm üretebiliriz gibi bir mantıktan soruyu sordum.
+
+307
+01:41:04,555 --> 01:41:10,555
+Eğer tam bir işlem adamını biliyorsak nispeten...
+
+308
+01:41:11,028 --> 01:41:12,988
+Ona bir çözüm üretebilir miyiz?
+
+309
+01:41:14,148 --> 01:41:17,768
+Yok. O manada bir çözümü yok.
+
+310
+01:41:17,768 --> 01:41:29,908
+Çünkü dediğim gibi mevcut saldırı yöntemlerine karşı bir şeyler yapsan da başka bir saldırı yöntemi geliştirilip bu yine aşılabiliyor kolaylıkla.
+
+311
+01:41:30,728 --> 01:41:36,668
+Yani bu makine öğrenmesi algoritmalarını kandırmak insanları kandırmaktan daha kolay.
+
+312
+01:41:36,847 --> 01:41:37,608
+Şurayı görüyor musunuz?
+
+313
+01:41:39,220 --> 01:41:50,820
+Yani insanlar buna kitaplık demezler değil mi? Ortadakine. Bu büyük bir problem. Bu dediğim gibi sertli bir iş.
+
+314
+01:41:51,731 --> 01:42:07,711
+Sadece derin öğrenme mimarları tehdit altında değil. Bu sadece yapay sinir ağlarının problemi demeyelim. Nanliner olan birçok yapı bu problemden uzdarip.
+
+315
+01:42:09,587 --> 01:42:24,887
+Mesela Kaggle yarışması, hatta bununla alakalı yarışma vardı. Mesela hedefi belli ataklar yapmak. Mesela şu resme şunu delirtmek. Ya da belirsiz atakla kandır. Yani gerçekten hariç bir şey yap. Ya da savun. Mesela bu savunda çok fazla bir şey yok maalesef.
+
+316
+01:42:27,283 --> 01:42:40,743
+Hatta şöyle şeyler bile var. Bunlara da bakabilirsiniz. Sadece tek bir tane piksel değişimiyle bile bu şeyi kandırmak mümkün olabiliyor. Bu kadar korkunç, bu kadar büyük değişimler yapmadan bile öyle söyleyeyim. Ama tabii rastgele değil bunlar.
+
+317
+01:42:41,779 --> 01:42:59,900
+Her bir resim için ayrı ayrı uğraşmanız gerekiyor. Ama tabii bu şu demek yani benim yüzümü ne bileyim ben işte X kişisinin yüzü olarak tanısın diye benim yüzümün üzerinde uğraşmaya değer mi diyebilir. Anlatabildim mi? Yani hani güvenlik dediğimiz mevzuda bu gerçekten büyük bir açık oluşturuyor.
+
+318
+01:43:01,460 --> 01:43:25,239
+Ama doğal resimlerde öyle bir sıkıntı yok. Yani eğitim kümesinin bulunduğu yerlerde böyle bir sıkıntı yok. Eğitim kümesinin olduğu yerlere dair şeyler düzgün. Oralarda böyle bir problemler oluşmuyor. Bu örneğin etrafında böyle bir problem oluşmuyor. Ama bu örneğin, işte o demin bahsettiğim gibi hiç örneklerin olmadığı bölgelerde doğru gidişlerinde orada problemler var.
+
+319
+01:43:28,243 --> 01:43:32,863
+Bir başka araştırma alanı, Curriculum Learning.
+
+320
+01:43:33,863 --> 01:43:44,183
+Curriculum Learning, planlı öğrenme, yeni örnekler geldiğinde eğitime baştan başlaması gerekmeyen öğrenciler için, yani online algoritmalar için bir problem.
+
+321
+01:43:46,183 --> 01:43:50,223
+Şimdi Curriculum aslında müfredat demek.
+
+322
+01:43:56,020 --> 01:44:22,239
+İlk önce birinci haftada şu konuları anlatacak, ikinci haftada şu konuları anlatacak bir sıra aslında. Yani öğrenciler için mesela bir dersin müfredatını düşünün. Haftalık içerikler, işte önce şu konu, sonra şu konu, sonra şu konu falan böyle adım adım adım adım ilerliyoruz. Şimdi burada aslında örnekleri bir sıraya diziyoruz değil mi? Yani örneklerin hepsini tek seferde vermiyoruz. Konuların hepsini tek seferde vermiyoruz. Burada da şöyle bir şey. Örneklerin öğrencilere, yani buradaki öğrencilerimiz tabii makineler.
+
+323
+01:44:23,060 --> 01:44:39,040
+Öğrenciler veri sırası önemli mi? Evet, sanasıl. Yani eldeki tüm verileri müfredata dahil etmeli mi? Aktif öğrenme sırasında karışmadan müfredatı kısıtlar demişiz. Orası çok çok önemli değil. Şimdi insanlar için müfredatta mesela ilk önce insanları nasıl yetiştiriyoruz?
+
+324
+01:44:39,040 --> 01:44:47,820
+Önce insanlar işte belki öncesinde anaokuluna gidiyorlar. Sonra ilk öğretim, sonra lise, sonra üniversite bu şekilde ilerliyor. Bu kolaydan zora.
+
+325
+01:44:48,256 --> 01:45:12,296
+Orası tartışılır belki ama kabaca öğrenilen konular açısından düşünürseniz, kavramlar açısından düşünürseniz ileriye doğru giderek zorlaştığını varsayabiliriz. Peki, insanlara örnekleri, kavramları bir sırayla veriyoruz. İnsanların eğitimini bu şekilde gerçekleştiriyoruz. Acaba makinenin de eğitimini bu şekilde gerçekleştirsek iyi olur mu?
+
+326
+01:45:13,011 --> 01:45:30,052
+Yani elimizdeki örnekleri rastgele sıralarla vermeyelim online learning'te. Onun yerine örnekleri bir sıraya dizelim. Ve bu sırayla örnekleri sisteme verdiğimizde acaba rastgele verdiğimize göre daha başarılı bir öğrenme gerçekleştirebilir miyiz?
+
+327
+01:45:30,712 --> 01:45:36,043
+Burada bir sürü yaklaşım var tabii. Yani 2009...
+
+328
+01:45:36,340 --> 01:46:02,160
+civarında falan ilk körük kılım makalesi yayınlandı. Geniş anlamda ilgi gören. Hala sürüyor çalışmaları. Özellikle Reinforcement Learning'de çok fazla kullanılıyor. Oradaki kullanım da şu tarz. Gerçek dünyada deneme, Reinforcement Learning için konuşuyorum. Mesela şey hatırlıyorsunuz değil mi? Şu elinde Rubik küpü çözen robot kolu hatırlıyorsunuz değil mi? Robot eli.
+
+329
+01:46:03,060 --> 01:46:29,940
+Görmüşsünüzdür hepiniz. Mesela onu gerçek zamanlı, gerçek dünyada çok fazla deneme yapmak gerekiyor. O çok fazla denemenin çok çok büyük bir kısmını simülasyon ortamında yaptırıyorlar. Daha sonra simülasyon ortamında iyice öğrendikten sonra gerçek dünyaya geçiyorlar. Gerçek dünyaya geçerken de simülasyon ortamında öğrendiklerini bu tarafa aktarıyorlar. Yani ilk önce kolay bir şey. Her şey çok daha belirli bir alanda çalışıyor. Simülasyon olduğu için simülasyon kısıt demek.
+
+330
+01:46:31,188 --> 01:46:49,028
+Ama gerçek dünyada işler daha karmaşık, daha kısıtsız öyle söyleyeyim aslında. Dolayısıyla ya da kısıtlarını tam bilmiyoruz. Reinforcement Learning'de, oyunlarda falan oldukça sık kullanılan bir yaklaşım bu planlı öğrenme.
+
+331
+01:46:49,028 --> 01:46:57,408
+Geleneksel şeyde ise sınıflandırma, regresyon gibi, nesne tanıma gibi sınavlar daha kısıtlı kullanılıyor. Oradaki başarıları birazcık daha.
+
+332
+01:46:58,228 --> 01:47:04,628
+Reinforcement Learning'e göre öyle söyleyeyim. O kadar fazla değil ama belli başarılar elde ediliyor orada da.
+
+333
+01:47:06,188 --> 01:47:17,188
+Örneklerin zorlukları mesela şekilleri öğrendirmeye çalıştığımızı varsayalım. İlk satırlara mesela basit, ikinci satıra zor demiş. Niye? Burada mesela üçgenler var. Burada yuvarlaklar var, bir de kareler var.
+
+334
+01:47:17,188 --> 01:47:21,108
+Yani hepsi şey ama mesela burası birazcık daha zor. Niye? Üçgenleri almış.
+
+335
+01:47:21,587 --> 01:47:31,608
+Biraz daha farklı çeşitkenler, üçgenler oluşmuş. Daireler mesela elipse de denk gelmişler. Karelerin yine bu sefer dikdörtgenlere falan dönüşmüşler gibi.
+
+336
+01:47:34,108 --> 01:47:46,327
+Burada dediğim gibi örneklerin zorluklarını belirlemek bir problem. İnsanlar belirleyebilir bunu. Makinenin kendisinin belirlediği yaklaşımlar var. Birçok yaklaşım var. Bunlar kullanılabiliyor.
+
+337
+01:47:46,804 --> 01:48:05,264
+Burada birkaç tane örnek var. Sıraladığımız zaman işler nasıl gidiyorlar, sıralamazsak nasıl gidiyorlar. Burada belli başarılar elde edilebiliyor. Klasik körüklüm ve antikörüklüm. Örnekleri zordan kolaya da sıralamanın da başarılı sonuçlar elde ettiği görülüyor. Orası da var.
+
+338
+01:48:05,864 --> 01:48:11,584
+En son konumuz ise herhalde bu şey, hayat boyu öğrenme. Öğrenme sürecinin hiç bitmediği.
+
+339
+01:48:14,323 --> 01:48:27,323
+Normalde bir veri kümesini bir problem için tasarlayıp bir modele eğittiniz ve bunu kullanıma aldınız. Gerçek kullanıma aldınız. Bu durumda sistem...
+
+340
+01:48:27,967 --> 01:48:34,807
+O an için, kurulumun aldığı an için çalışmaya başlar.
+
+341
+01:48:34,807 --> 01:48:47,427
+Ve zaten zaman da, gelen veriler de o an için olan veriler olduğu için eğer ki çok değişen bir dünyada değilsek, zamana bağımlı bir dünyada değilsek bu bir sıkıntı oluşturmaz.
+
+342
+01:48:48,987 --> 01:48:51,447
+Ne demek istiyorum? Hiçbir şey değişmiyorsa.
+
+343
+01:48:53,619 --> 01:49:18,100
+Yani inputların yapısı hiçbir şekilde değişmiyor. Sınıfların dağılımları hiçbir şekilde oynamıyor, değişmiyor. Ama gerçek dünyadaki bizim ilgilendiğimiz geneldeki problemler öyle değiller. Ne bileyim, dil dediğimiz şey durmadan değişiyor, gelişiyor. Yeni kavramlar ekleniyor, kavramlar bölünüyor, birleşiyor. Anlamlar başka anlamlara kayıyor gibi gibi bir sürü şeyler olabiliyor dil için konuşursak.
+
+344
+01:49:18,899 --> 01:49:38,019
+Mesela yeni markalar çıkıyor, yeni trendler çıkıyor, hiç duymadığınız kavramlar, bundan beş sene önce hiç adını bile duymadığınız şeyler bugün hayatınızın baya önemli parçaları haline gelebiliyor. Öyle durumlar var. Dolayısıyla yaşayan bir şey. Bu tarz durumlar için, böyle bir kere aldım eğittim, bu da senerji kullanılsın gibisinden bir şey olmuyor.
+
+345
+01:49:38,452 --> 01:49:52,932
+Bütün verilerin elde olmadığı zaman içinde erişildiği durumlar aslında çok daha gerçekçi şey. Bu lifelong learning dediğimiz şey, bu hayat boyu öğrenme dediğimiz şey bu. Mesela bir robotunuz var. Buna en başta bütün verileri vermiyorsunuz da robot etrafta geziniyor. Gezindikçe öğrenmeye başlıyor.
+
+346
+01:50:00,051 --> 01:50:18,171
+Öğrenilerden nelerin nasıl öğreneceğine etken, önceki öğrendiğiniz şeyler daha sonraki öğreneceğiniz şeyleri belirleyen yapılar. Bunlar işte lifelong learning diye geçiyor. Endüstri de gerçek kullanımda çok daha yaygın bir yaklaşım.
+
+347
+01:50:27,935 --> 01:50:34,515
+Bu şekilde devam edebilirsiniz. Daha fazla iyi gelenler için bunu da söylemiş oldum.
+
+348
+01:50:35,575 --> 01:50:38,915
+Peki, şimdi burda sı ile alakalı bir sorunuz var mı arkadaşlar?
+
+349
+01:50:46,579 --> 01:51:01,800
+Yok gibi gözüküyor. Peki. Şimdi, evet arkadaşlar, başladınız mı projelere? Birazcık konuşalım. Vaktimiz var nasıl olsa. Eğer isterseniz. Projelerle ilgili soru sormak isteyen var mı?
+
+350
+01:51:04,320 --> 01:51:05,740
+Hocam ben konuşabilir miyim?
+
+351
+01:51:05,740 --> 01:51:06,380
+Tabii.
+
+352
+01:51:07,859 --> 01:51:20,859
+Hocam, şimdi benim konum yapay örnek üretimiydi. Ben başladım sayılır. İlerlemezsem de yine başladım. Şöyle hocam, böyle balans olmayan yani ambalans datalar üzerinde...
+
+353
+01:51:21,684 --> 01:51:36,584
+Sadece yapay örnek üretimi değil de örnek azaltımı da yapsak olur mu? Ama şey yani örnek üretimi yapacağım okey ama örnek azaltımı da hani yapsak, ona ilişkin sonuçlar da çıkarsam nasıl olur?
+
+354
+01:51:38,404 --> 01:51:48,524
+Şimdi örnek azaltımından kastığın şu mu? Yani eğitim kümlesinin ben tamamını kullanmayayım da bir parçasını kullanayım ama bu parçasını nasıl belirleyeceğini falan da araştırmaktan bahsediyorsun, öyle mi?
+
+355
+01:51:49,587 --> 01:52:01,627
+Yani şey olacağım şöyle. Örnek azaltımını rastgele. Unbalance bir veri kümesi bulamıyorsun. Onun için yani balans bir veri kümesinin içerisinden bir şey silsem, unbalance hale getirsem onu mu soruyorsun?
+
+356
+01:52:03,507 --> 01:52:19,188
+Yani ona yaklaşık. Ama hem ekleme de olacak, silme de olacak. Ekleme yapay örnek üretimi olacak. Mesela atıyorum 900'e 100 örneğim var. İşte 100'e 100 ekledim. 900'den de 700 sildim. 200'e 200'lük balans hale getirildi. Hani bu sadece bir afaki bir örnek yani.
+
+357
+01:52:20,027 --> 01:52:20,427
+Gibisinin içerisinde.
+
+358
+01:52:20,427 --> 01:52:22,707
+Olabilir, olabilir. Yani burada...
+
+359
+01:52:22,707 --> 01:52:25,007
+Dinliyorum hocam.
+
+360
+01:52:26,292 --> 01:52:44,072
+Olabilir [öğrenci], onun da bir sıkıntı yok. Yani burada benim yazdığım şeyler zaten bu smoothie ve smoothie IPF var ve benzer yöntemlerle şeyleri üretmek. Yani yeni yapay veriler üretmek. Yapay veri kümesinin sayısının, üretim türünün etkilerini kabaca görmeye çalışmak.
+
+361
+01:52:49,140 --> 01:53:03,060
+Artı şeyler yaparsan, analizler yaparsan bir sıkıntı olmaz bunda. Ama benim istediğim temel şeyleri ilk önce gerçekleştirip ondan sonra artı bonuslara geçsen daha iyi olur bence. Anlatabildim mi?
+
+362
+01:53:03,580 --> 01:53:05,680
+Tamam. Tamam hocam anladım. Teşekkür ederim.
+
+363
+01:53:06,520 --> 01:53:07,200
+Rica ederim.
+
+364
+01:53:09,900 --> 01:53:12,020
+Evet, başka sorusu olan var mı arkadaşlar?
+
+365
+01:53:12,760 --> 01:53:15,520
+Hocam benim de sorum olacak tabii. Beş dakika sonra sorarsam olur mu?
+
+366
+01:53:17,268 --> 01:53:24,427
+Peki, tamam. Evet, başka sorusu olan? [öğrenci] gelene kadar.
+
+367
+01:53:30,931 --> 01:53:45,492
+Yok mu? Peki bu projesine başlamış olanlar kimler? Bir miktar [öğrenci] başlamış herhalde. [öğrenci] de herhalde bir şeyler soracağına göre başlamış. Hiç daha bakamayanlarınız da vardır belki. İnşallah çok fazla yoktur.
+
+368
+01:53:47,252 --> 01:53:54,391
+Ben daha hiç başlamadım hocam. Seminer dersini de alıyorum. Onun sunumu vardı geçen hafta. Onunla sunum.
+
+369
+01:53:55,692 --> 01:53:56,452
+Anladım.
+
+370
+01:53:57,171 --> 01:53:58,871
+Bir an önce başlayın.
+
+371
+01:54:01,871 --> 01:54:08,371
+Sınavdan dolayı pek bir sunum da vardı. Aslında planım da vardı ama bir hafta ertelemek zorunda kaldım.
+
+372
+01:54:09,611 --> 01:54:13,911
+Anladım, anladım. Peki, şimdi iki hafta sonra görüşeceğiz sizlerle.
+
+373
+01:54:14,387 --> 01:54:40,648
+İki hafta sonraki derste projenizde epey bir ilerleme kaydetmiş olursanız iyi olur. Orada size bir şeyler de söylerim ki final zamanına hazırlanmış olursunuz. Önümüzdeki bu iki haftayı proje anlamında iyi kullanırsanız sizin açınızdan iyi. Çünkü final zamanı da çok uzak bir zaman değil biliyorsunuz. Dersler bittikten sonra başlıyor zaten.
+
+374
+01:54:41,332 --> 01:54:59,332
+Birinci haftam olur, ikinci haftam olur falan. Onu da bilmiyorum şu anda. Bölüm belirliyor biliyorsunuz şeyleri. En azından bir hafta daha olacaktır. Onu söyleyebiliriz en az. Ama dediğim gibi iki hafta içerisinde, bu önümüzdeki iki hafta içerisinde projede epey bir ilerleme kaydederseniz sizin açınızdan iyi olur.
+
+375
+01:55:01,171 --> 01:55:05,152
+Tabii bir tek bu dersi almıyorsunuz, onu da biliyorum. Evet [öğrenci] buyur.
+
+376
+01:55:05,572 --> 01:55:23,211
+Ben de hocam tam başlamadım ama bu benim problemimle alakalı olan özellikle sizin de slide'larda belirtmiş olduğunuz yayınları okumaya başladım. Orada ne yapmışlar diye. Anlamadığım birkaç yer var. Ekran paylaşıp göstersem olur mu acaba?
+
+377
+01:55:24,612 --> 01:55:26,492
+Olur, olur yani.
+
+378
+01:55:27,283 --> 01:55:29,443
+Olur. Şu anda sen paylaşabiliyor musun?
+
+379
+01:55:29,884 --> 01:55:31,263
+He, paylaşabiliyorum hocam.
+
+380
+01:55:31,563 --> 01:55:31,884
+Tamam.
+
+381
+01:55:34,884 --> 01:55:36,763
+Şu an görünüyor mu hocam?
+
+382
+01:55:37,323 --> 01:55:37,683
+Evet.
+
+383
+01:55:39,023 --> 01:55:43,683
+Hocam, benim problemim şuydu. YSA çözümlerini birleştirmek.
+
+384
+01:55:43,984 --> 01:56:06,984
+Farklı ikide değerleriyle üretilen yensel çözümler arasındaki test başarısını düşürmeden yol bulmak. Aslında şu yayındakiyle aynı şeyi yapmam isteniyor. Burada mesela iki tane farklı başlangıç değerleriyle ulaşılmış bir Q1, bir de Q2 noktaları var. Bu noktalar arasındaki yol bulunmuş. Ona göre de mesela...
+
+385
+01:56:07,796 --> 01:56:35,176
+Çizdirildiği zaman, şu yoldan gidildiğinde herhangi bir değişiklik yok ama normal lineer bir yaklaşım yapıldığı zaman bir değişim görünüyor. Benden en az 5 tane model, 5 tane son değer oluşturmamı bu değerler arasındaki test başarısını düşürmeden bir yol bulmak, bu yollar üzerindeki noktaları kullanarak ensembri oluşturmak. Şurayı tam olarak aslında anlayamadım hocam yani.
+
+386
+01:56:35,796 --> 01:56:39,236
+Tamam. Şöyle söyleyeyim [öğrenci]. Bu yolu bulduğunu düşünelim.
+
+387
+01:56:40,696 --> 01:56:47,416
+Hocam bu mesela Q1 ile Q2 demiş. Benim 5 tane olacak değil mi bundan? Q1, Q2, Q3, Q4, Q5 diye.
+
+388
+01:56:49,216 --> 01:56:51,516
+Evet, evet. Yani 5.
+
+389
+01:56:52,319 --> 01:56:55,319
+Bu 5 değer arasından mı yapılacak?
+
+390
+01:56:55,659 --> 01:57:05,979
+Yok yok şöyle. Mesela Sifar 10 için Q1 ve Q2'yi bulacak.
+
+391
+01:57:06,336 --> 01:57:17,716
+Mesela Sifar 100 için başka iki tane nokta bulacaksın. Yoksa aynı şey için beş tane üreteceksin anlamında demiyorum. Anlatabildim mi?
+
+392
+01:57:17,716 --> 01:57:20,376
+Tamam. Sifar 1 için Q1, Q2 bulacaksın.
+
+393
+01:57:20,376 --> 01:57:33,716
+Q2'yi bulacaksın. Aynen öyle. Orada da bu noktaları birleştirmek, PET var ya, o PET'in üzerinde noktalar var ya, görüyorsun. O noktalar da aslında birer model.
+
+394
+01:57:34,336 --> 01:57:35,576
+Son model aslında.
+
+395
+01:57:36,276 --> 01:57:37,636
+Son oluşmuş bir şey.
+
+396
+01:57:38,316 --> 01:57:42,336
+Yani tam bir model onu. O modelleri kullanarak da tahmin üretebiliyorsun aslında.
+
+397
+01:57:42,736 --> 01:57:44,616
+O ağırlıkları daha doğrusu.
+
+398
+01:57:44,676 --> 01:57:47,136
+Aynen öyle. O ağırlıkları kullanarak tahmin üretebiliyorsun.
+
+399
+01:57:47,256 --> 01:57:49,216
+Dolayısıyla benim demek istediğim şey burada ne?
+
+400
+01:57:50,856 --> 01:57:54,296
+Bu aradaki noktaları kullanarak bir ensemble yapsak.
+
+401
+01:57:54,836 --> 01:57:57,656
+Mesela işte 3-5 tanesini alıp ensemble yapsak.
+
+402
+01:57:58,032 --> 01:58:03,032
+Onun performansı Q1 ve Q2'nin üstüne çıkabilir mi acaba?
+
+403
+01:58:03,032 --> 01:58:11,032
+Yani ben mesela 10 tane var. Bunların 5'ini alırken sen bu model oluşturacağım.
+
+404
+01:58:11,032 --> 01:58:18,032
+O model Q1 ve Q2'yi geçiriyor. Q1 %80 yapıyor, Q2 de %82 yapıyor.
+
+405
+01:58:18,032 --> 01:58:25,032
+Ama mesela aralarındaki 5 tane noktayı seçip bir şeyler yaptığında Q1, Q2'yi de katabilirsin tabii oraya.
+
+406
+01:58:25,971 --> 01:58:30,692
+Onları seçip yapsan ne bileyim işte %83 falan bulabiliyor musun acaba?
+
+407
+01:58:31,152 --> 01:58:32,631
+Anladım hocam. Tamam.
+
+408
+01:58:33,587 --> 01:59:00,868
+Ben bunun şeyi de izledim. Hocam, bir videoda paylaşmışlar. Hatta bu yayının yapıldığı video. Orada sunum yapıyor. O da biraz oturdu aslında. Orada da biraz kafama oturdu. Hatta bu paperboard code diye bir site var. Orada da bir kodunu paylaşmışlar ama bayağı karışık. Anlayamadım onu. Bythorce kullanmışlar biraz daha. Ben daha önce hiç kullanmadım onu.
+
+409
+01:59:00,868 --> 01:59:01,587
+Anladım.
+
+410
+01:59:01,587 --> 01:59:06,728
+Birazcık uğraştıracaksın ama mantığı kavradın herhalde. Ne beklediğimi anladın değil mi?
+
+411
+01:59:07,627 --> 01:59:08,228
+Tamam, süper.
+
+412
+01:59:08,747 --> 01:59:10,108
+Tamam hocam, teşekkür ederim.
+
+413
+01:59:10,368 --> 01:59:10,927
+Rica ederim.
+
+414
+01:59:14,484 --> 01:59:17,104
+Evet, başka? [öğrenci], geldin mi?
+
+415
+01:59:17,543 --> 01:59:18,184
+Geldim hocam.
+
+416
+01:59:18,564 --> 01:59:19,344
+Tamam, evet.
+
+417
+01:59:24,083 --> 01:59:25,423
+Ekranımı görüyor musunuz hocam?
+
+418
+01:59:25,963 --> 01:59:26,184
+Evet.
+
+419
+01:59:27,163 --> 01:59:32,704
+Hocam, benim ödelde projede MCMC ile yapay sinir alan hata parametre 150'liydi.
+
+420
+01:59:33,324 --> 01:59:33,684
+Evet.
+
+421
+01:59:34,003 --> 01:59:37,423
+Bunun için şöyle bir şey yaptım. Doğru yolda mıyım diye aslında sormak istiyorum.
+
+422
+01:59:37,984 --> 01:59:38,844
+Tabii, buyur.
+
+423
+01:59:39,844 --> 01:59:40,831
+Öncelikle...
+
+424
+01:59:40,832 --> 02:00:04,311
+Bu sayı modeli eğittim. Sonundaki ağırlıkları alıp bu ağırlıklar etrafında işte 0.5 ile artı 0.5 arasında random bir sayı ürettim. Bu sayıyı ağırlıklara ekledim. Bu şekilde başarıya oluştum ve başarı bir önceki başarıdan 0.3 daha arasında fark varsa.
+
+425
+02:00:05,076 --> 02:00:32,076
+Bu şekilde o noktayı seç, o noktada aynı işlemi tekrar yaptım. Bu şekilde uzayı oluşturdum. Yapmamız gereken bu muydu? Mesela ilk başarımız %95'ti. Pardon, burada %98'miş. %98'den sonra bu şekilde Pse ile çizdirdiğim zaman şöyle bir uzay çizmiş. Aynı şekilde TSN ile çizdirdiğim zaman da böyle farklı bir uzay çizdi. Burada mesela %90'dan sonra hocam iki farklı...
+
+426
+02:00:32,448 --> 02:00:35,768
+Yol varmış uzaylı devam eden.
+
+427
+02:00:35,768 --> 02:00:45,768
+Şimdi burada sen etrafında bir gürültü oluşturuyorsun ve o gürültü üzerinden o noktaya bir sonraki adıma geç ya da geçme diyorsun değil mi?
+
+428
+02:00:45,768 --> 02:00:46,768
+Evet hocam.
+
+429
+02:00:46,768 --> 02:00:50,368
+Orada mesela benim paylaştığım koda baktın mı?
+
+430
+02:00:50,368 --> 02:00:59,208
+Hocam kodunuzu biraz inceledim ama tam anlayamadım. Orada gazetenin yapıldı. Ben sadece random attım. Onu anladım. Normal dizisi bir şey değil de.
+
+431
+02:01:00,083 --> 02:01:05,963
+Yani orada hatanın bir miktar... Şimdi burada mesela hata sürekli düşüyor sende.
+
+432
+02:01:06,183 --> 02:01:06,723
+Evet hocam.
+
+433
+02:01:08,123 --> 02:01:09,463
+Düşmesini engelle mesela.
+
+434
+02:01:10,883 --> 02:01:12,883
+Hatanın sıfır mı olsun hocam?
+
+435
+02:01:13,583 --> 02:01:16,163
+Sıfır değil, yani sıfıra yakın bir şey olsun belki.
+
+436
+02:01:16,363 --> 02:01:17,343
+Hani burada şimdi...
+
+437
+02:01:17,343 --> 02:01:18,163
+Sürekli daha sıfır.
+
+438
+02:01:18,283 --> 02:01:24,143
+Mesela burada mesela 90'dan sonra iki tane yol çıktı demişsin ama o iki tane yol nasıl çıktı ben onu anlayamadım.
+
+439
+02:01:24,627 --> 02:01:32,367
+Şöyle hocam, şimdi hata almanın 0.96. İlk aldıklardı. Tamam, düşmeye başladı.
+
+440
+02:01:32,787 --> 02:01:42,467
+Ve bir de vaskeli bir sayı attığım zaman burada 0.95 çıkmış. Aradaki farkla 0.01'den küçük olduğu için kabul ediyorum.
+
+441
+02:01:42,467 --> 02:01:50,067
+Bir sonraki adımda üstü de çıkabiliyor ama sonra yine 6'a inmiş. Hatay hiçbir zaman olduğumuzu aşağıdan daha yukarı çıkmıyor.
+
+442
+02:01:50,484 --> 02:02:08,164
+[öğrenci]'ın %90'lardan sonra buraya gelmiş, sonra geri gitmiş, buraya gitmiş, buraya gitmiş, geri gelmiş böyle. Şu alanda dolaşmış. 2000 tane iterasyon yaptım. 2000 iterasyon da böyle bir alan çizmiş. Bunun etrafını dolaşıyor. %89'a kadar inmiş. Minimumda başarı.
+
+443
+02:02:09,108 --> 02:02:16,268
+Ama böyle farklı iki yoldan gitmek gibisinden bir şey değil. Bir yerlerde geziniyor gibisinden bir şey. Yanlış anlamıyorum değil mi?
+
+444
+02:02:16,268 --> 02:02:35,627
+Şöyle hocam, mesela burada diyelim. V 30. iterasyonda başarımız %90'mış. 31. iterasyonda işte ağırlık, 31. ağırlığı bulduğu zaman şu noktaya gelmiş. 32. de buraya gelmiş. 33. de yine buraya gelmiş. 34. de buraya gitmiş böyle mesela bu uzayı gezmiş.
+
+445
+02:02:36,243 --> 02:02:39,823
+Peki şu yukarıya doğru çıkıp yana doğru giden şey ne?
+
+446
+02:02:40,103 --> 02:02:40,703
+Şurası mı hocam?
+
+447
+02:02:40,724 --> 02:02:42,943
+Ortada. Yok, hayır. Hayır, hayır. Orası değil.
+
+448
+02:02:43,743 --> 02:02:44,224
+Şurası mı?
+
+449
+02:02:44,743 --> 02:02:45,123
+Evet.
+
+450
+02:02:46,823 --> 02:02:49,863
+İşte hocam, anladığım kadarıyla bu noktadan sonra...
+
+451
+02:02:49,863 --> 02:02:52,783
+Yani nereden başlıyor, nerede bitiyor bu görüntü?
+
+452
+02:02:52,783 --> 02:02:59,603
+Şöyle hocam, onu da şimdi şuradan biraz bakabiliriz. İlk başlangıç başarısı %0.97'ymiş.
+
+453
+02:03:00,115 --> 02:03:06,416
+Sonra 93'lere inmiş. Bir yerde 94'lere tekrar çıkıyoruz.
+
+454
+02:03:06,416 --> 02:03:13,716
+91'larda biraz geziniyor. Son 91'lere çıkmış. Yine 90 bu şekilde hocam. 89.
+
+455
+02:03:16,216 --> 02:03:18,216
+Vatağımızı böyle indirirsek.
+
+456
+02:03:18,216 --> 02:03:21,716
+Yok ben şimdi onu sormayayım. Ben şunu sormaya çalışıyorum.
+
+457
+02:03:21,716 --> 02:03:25,716
+Orada mesela bir yere kadar gitmiş, oradan geri dönmüş gibisinden bir şey gözüküyor orada.
+
+458
+02:03:25,716 --> 02:03:27,716
+Evet hocam, şöyle.
+
+459
+02:03:28,340 --> 02:03:43,100
+Burası niye böyle çıktın? Aslında üç boyutlu gibi düşündüm. Üç boyutlu çizildiğimiz için bu noktadan sonra uzaylar sağa ve sola gittiğiniz zaman başarı da aynı. Yüzde doksan etrafının başarı olduğunu düşünemez. Buradaki başarı bir miktar artmış aslında.
+
+460
+02:03:43,764 --> 02:03:49,423
+Hayır, şunu demek istiyorum. Burada aslında bir sıra var. Yani örnekler bir sırayla üretiliyorlar. Öyle değil mi?
+
+461
+02:03:49,844 --> 02:03:50,184
+Evet.
+
+462
+02:03:50,363 --> 02:03:50,984
+Ya noktalar.
+
+463
+02:03:51,403 --> 02:03:51,663
+Evet.
+
+464
+02:03:51,884 --> 02:04:02,043
+Şimdi burada en tepede %97'nin oradan başlıyor. Aşağı doğru ilmeye başlıyor. Ondan sonra bu yan tarafa böyle iki tane yola birden orada iki tane yol nasıl oluşabiliyor? Onu demeye çalışıyorum.
+
+465
+02:04:02,043 --> 02:04:08,604
+Şöyle hocam, anladım. Şimdi rastgele sayı eksiyle artı arasına attığım için bazen geriye de gidebiliyor.
+
+466
+02:04:09,427 --> 02:04:13,268
+Ama nasıl olduğu yoldan aynen birebir geriye gider mi ya?
+
+467
+02:04:15,887 --> 02:04:24,728
+Çünkü orada başka bir yol var. Bir tane bir yol var. Tek bir tane ucu olması lazım. Burada iki tane uç çıkmış gibi de o bana garip geldi. Anlatabildim mi demek istediğimi?
+
+468
+02:04:24,747 --> 02:04:28,907
+Anladım hocam. Mesela bir yukarıdakinde öyle bir sıkıntı yok bak. Ona hiç takılmadım.
+
+469
+02:04:28,907 --> 02:04:34,027
+Yani bu olmadı. İkisi aynı şey grafik aslında. Bu PC ile çizimi, diğer TSN ile çizimi.
+
+470
+02:04:36,212 --> 02:04:54,372
+Niye öyle farklı geldiğini tam anlayamadım ama anladığım kadarıyla, TSN ile çizdirdiğimiz zaman, işte biraz gittikten sonra geri gelmiş. Şimdi bu noktadan sonra yol ikiye ayrılmış. Uzaydan iki farklı yol varmış. Ağızlıktan eşit oldu veya işte belli bir treşorttan daha az oldu. İki farklı yol olduğunu anlayalım ben.
+
+471
+02:04:55,412 --> 02:05:07,532
+Anladım. Peki tamam. Burası biraz garip geldi bana da. Neyse şey yaparsın. Şimdi burada benim merak ettiğimi araştıracağımız şey şöyle bir şey. Şimdi burada düşürüyorsun ağırlığı tamam mı? Bir yerde.
+
+472
+02:05:07,832 --> 02:05:08,091
+Evet.
+
+473
+02:05:08,171 --> 02:05:09,551
+Yani ağırlık sürekli düşüyor.
+
+474
+02:05:09,731 --> 02:05:10,631
+Aslında düşürüyor.
+
+475
+02:05:11,311 --> 02:05:12,591
+Rastgele de düşüyor yani.
+
+476
+02:05:13,671 --> 02:05:21,032
+Yok rastgele bir şey üretiyorsun ve o ürettiğin şey bir şeyden yani aralarındaki fark bir şeyden daha küçükse kabul ediyorsun ya onu.
+
+477
+02:05:21,332 --> 02:05:21,631
+Evet.
+
+478
+02:05:22,100 --> 02:05:27,320
+Orayı çok daha sıkı yapman lazım. Böyle lang diye düşmemeli bu. Anlatabildim mi?
+
+479
+02:05:29,400 --> 02:05:36,240
+Mesela hocam %1 yaptığım zaman da aslında çok da bir 2000 iterasyon yaptığım için hocam yine yaklaşık aynı sonuç geliyor.
+
+480
+02:05:37,560 --> 02:05:38,460
+O zaman düşürme.
+
+481
+02:05:40,400 --> 02:05:42,720
+Hocam şöyle yapacağım. Mesela 0.01 desem.
+
+482
+02:05:45,720 --> 02:05:47,840
+Burayı da 100 yapalım.
+
+483
+02:05:49,300 --> 02:06:02,840
+Ama burada adımlarını çok daha küçük atman gerekir bence. Çünkü sen şimdi ağırlıkların üstüne bir şey ekliyorsun ya, o eklediğin miktarını daha küçük bir hale getirmek lazım.
+
+484
+02:06:02,840 --> 02:06:10,800
+Evet, şimdi aslında biraz onunla uğraşacağım. Şu ana kadar izlediğim adım doğruysa, yaptığım yöntem doğruysa şunu planlıyordum.
+
+485
+02:06:11,252 --> 02:06:31,032
+Şimdi son diyelim modeli eğitmiştim ya, eğittiğim modelde son 10 ağırlıklar alıp bunlardan işte zaten mü'yü biliyoruz. Mü son adımdaki değer oluyor. Standart satmasında son 10 ağırlıklar hesaplayıp sisteme o şekilde o standart satma arasında bir rastgelelik atmayı düşünüyorum.
+
+486
+02:06:32,432 --> 02:06:37,512
+Olabilir yani hani son zamanlardaki değişimleri kullanarak şey yapmak istiyorsun.
+
+487
+02:06:37,952 --> 02:06:39,232
+Devletmek istiyorsun.
+
+488
+02:06:39,752 --> 02:06:45,532
+Evet hocam. Şu an yüz adım attığım için çok bir şey belli olmuyor ama. Mesela hocam bu uzayda şöyle düşmüş.
+
+489
+02:06:46,100 --> 02:06:48,100
+Şu an görebiliyor musunuz kırmızı noktaları bilmiyorum.
+
+490
+02:06:48,180 --> 02:06:49,100
+Evet, görüyorum.
+
+491
+02:06:49,539 --> 02:06:59,760
+Mesela hocam %96'dan başlamış, %95'lere kadar düşük. Bazı yerleri yine artmış, %96'lar çıkmış. Adım düşüttüğüm zaman da yine bu şekilde benzer bir grafik oluşuyor.
+
+492
+02:06:59,760 --> 02:07:09,119
+Yani şimdi burada bu mantıkla yaparsan bunu böyle hepsi bir yani sıfır yapsan hepsi aynı olan bir şeyleri bulmaya çalışıyorsun. Tamam mı?
+
+493
+02:07:09,140 --> 02:07:09,320
+Evet.
+
+494
+02:07:09,740 --> 02:07:13,840
+Şimdi biraz düşürürsen ki burada sürekli düşecek gibi gözüküyor.
+
+495
+02:07:14,100 --> 02:07:28,400
+En sonunu alıp, benim yapmış olduğum kod var ya, o kodu bir incele. O kodu boşuna vermedim. O kod dağılımı çok daha iyi şey yapabiliyor, kontrol edebiliyor. Öyle söyleyeyim. Tamam.
+
+496
+02:07:28,920 --> 02:07:41,340
+Hocam, buradaki problem şu olabilir mi? Sürekli düşmesinin sebebi. Biz modeli eğittik ya, model çok güzel bir noktada bitirdik. Ondan daha aşağı noktada bir şey bulamadığı için.
+
+497
+02:07:43,252 --> 02:07:47,072
+Ağzı bulamadığı için sürekli tüene. Üstünde bir şey çıkmıyor.
+
+498
+02:07:48,192 --> 02:07:50,731
+Çok sivri bir yerdeyiz mesela diyorsun.
+
+499
+02:07:51,072 --> 02:07:51,391
+Evet.
+
+500
+02:07:51,952 --> 02:07:53,891
+Çok sivri bir yerde olabiliriz.
+
+501
+02:07:54,332 --> 02:07:57,051
+Şimdi orada şeyleri küçültmek gerekiyor o noktada.
+
+502
+02:07:57,851 --> 02:07:59,032
+Ne derler onu? Adımlarını.
+
+503
+02:07:59,612 --> 02:08:02,412
+Daha küçük adımlar ata ata ilerlemek belki mümkün olabilir.
+
+504
+02:08:02,851 --> 02:08:06,851
+Dediğim gibi yani korkunç derecede sivri bir noktaysa mesela onu da ortaya koyabilirsin.
+
+505
+02:08:06,851 --> 02:08:09,971
+Şimdi farklı başlangıç değerleriyle farklı sonuçlara varıyoruz ya.
+
+506
+02:08:10,292 --> 02:08:34,972
+Mesela bir sonuçta çok sivri bir yere varıyorsundur ve orada hakikaten hiçbir şekilde aynı yerde bir şeyleri üretemiyorsun. Sürekli düşüyor. Ama öyle bir nokta var ki, mesela geçen haftaki slide'larda vardı o tarz örnekler. Mesela Digit Data Set'inde farklı sonları birleştirinde korkunç şeyler oluşmuyordu. Farklılıklar oluşmuyordu. Onlar oldukça smooth son noktalardı aslında Digit Data Set'i için.
+
+507
+02:08:35,828 --> 02:08:47,568
+Orada mesela şeyleri görebilirsin. Bazı son noktalar daha geniş yüzeyler, bazıları ise çok sivrilerin uçları. Anlatabildim mi? O tarz değerlendirmeler yapman da mümkün.
+
+508
+02:08:48,648 --> 02:08:52,548
+Anladım hocam. Peki hocam genel olarak izlediğim adım dolayı mı?
+
+509
+02:08:52,548 --> 02:09:02,512
+Evet, evet. İstediğim şey bu. Son bir eğitime kadar götüreceğim. Daha sonra bu eğitim noktasının etrafından örnekler üreterek...
+
+510
+02:09:02,511 --> 02:09:16,751
+Bu noktadan sonra rastgele bir nokta üretiyoruz değil mi?
+
+511
+02:09:18,228 --> 02:09:42,288
+O noktadan sonra başka bir nokta üretiyorsun. Bir noktayı kabul etmek ve reddetmek diye seçenekler var. Dediğim gibi, benim yazdığım kodda birazcık incelersen. Tamamdır hocam. O kod ne yapıyor, ne ediyor birazcık anlamaya çalış. Tamamdır hocam. Ama yolun doğru mu var? Bir sıkıntı yok yani. Tamamdır hocam. Teşekkürler.
+
+512
+02:09:46,163 --> 02:09:48,724
+Hocam, ben de soru sorabilir miyim?
+
+513
+02:09:48,724 --> 02:09:50,003
+Tabii ki.
+
+514
+02:09:50,003 --> 02:09:57,163
+Benim Ensemble yörüngeleri idi projem. Hocam şey yazıyor, mesela bir boyut kappa, ikincisi tekil öğrenci hatası.
+
+515
+02:09:57,163 --> 02:10:05,163
+Burada ben kappayı biraz araştırdım. İki model arasında ne kadar benzerlik var tahminlerinin. Onunla ilgili bir skor veriyor bize.
+
+516
+02:10:07,859 --> 02:10:20,579
+Tekil Öğrencilik bir ensemble olsun. Burada kapba skonu alırken, birinci ile ikinci, birinci ile üçüncü, onun ikili kombinasyonlarının kapbalarını alıp onların ortalamasını mı bir boyut olarak alacağım?
+
+517
+02:10:20,579 --> 02:10:31,059
+Şimdi öyle yaparsan 10 çarpı 9 bölü 2 oldu mesela. 45 tane kapba çıkar değil mi? 10 taneden.
+
+518
+02:10:31,412 --> 02:10:41,952
+Şimdi bir onu yapabilirsin, bir yaklaşım. O 45 tanesinde ortalamasını alabilirsin ya da onların hepsini birden gösterebilirsin. O da olası. Hani bir bulut şeklinde. Anlatabildim mi? Tek bir nokta değil de.
+
+519
+02:10:44,051 --> 02:10:58,631
+Çünkü mesela şeyde de öyle gösteriyordu. Rotation Forest'ın slide'larında ben şeyi göstermiştim. Böyle kırmızı-siyah bulutlar vardı hatırlıyor musun?
+
+520
+02:11:02,579 --> 02:11:03,460
+Sesim geliyor mu?
+
+521
+02:11:03,480 --> 02:11:03,600
+Evet.
+
+522
+02:11:04,900 --> 02:11:22,220
+O kırmızı-siyah bulutlar aslında o dediğimiz yolla oluşturulmuş her. Yani her bir ikilinin kapması vardı bir tarafta. Bir tarafta da o ikilinin tekil başarılarının ortalaması vardı diğer boyutta. Anlatabildim mi? Yani Ensemble'ı tek bir noktada temsil etmiyor da Ensemble'ı bir bulutla temsil ediyor.
+
+523
+02:11:23,347 --> 02:11:25,087
+Nokta bulutuyla. Tamam.
+
+524
+02:11:25,568 --> 02:11:32,068
+10 öğrencili bir ensemble atıyorum 45 noktayla temsil edilecek. 11 öğrencil işte kaç onla temsil edecek. Tamam.
+
+525
+02:11:32,587 --> 02:11:41,867
+Evet ama işte şimdi ama hani ensemble sayısını arttırdığımız zaman bu dağılımlar nasıl bozuluyorlar, değişiyorlar, hani nokta bulutlarının yapısı ne kadar farklılaşıyor.
+
+526
+02:11:42,247 --> 02:11:50,747
+Onların üzerine şey yapılabilir ya da dediğin gibi ortalamaları alınarak ensembulları tek bir nokta olarak da ifade edip de çizdirebilirsin. O da mümkün. İkisi de mümkün.
+
+527
+02:11:51,380 --> 02:12:07,180
+Ama hani bulutlar sana çok daha fazla şey sağlar diye tahmin ediyorum. Veri. Yani ortalama indirdiğin zaman çok fazla bir şey görünmeyebilir. Tamam hocam, teşekkür ederim. Rica ederim. Evet arkadaşlar, başka sorusu olan?
+
+528
+02:12:09,560 --> 02:12:16,480
+Hocam, ben geçen haftaki ödevle alakalı bir şey sorabilirim. Herhangi bir kimseye sor sormayacaksa. Sor bakalım.
+
+529
+02:12:16,948 --> 02:12:31,008
+Ben sonradan size bir göndermiştim hocam bir tane daha rapor. 2P şıkkını yapmamıştım. Sonradan ekledim, gönderdim. Bulduğum sonuç sizce tutarlı mı değil mi diye bir sorabilir miyim ekran paylaşıp?
+
+530
+02:12:32,448 --> 02:12:32,847
+Olur.
+
+531
+02:12:34,612 --> 02:12:54,032
+Ben Sifar 10 verseti için 22 katmanlı bir ağ kullanmıştım. Ama çok fazla katman olduğu için alamadım ağırlıkların. İlk giriş katmanının ağırlıklarını bir de son çıkış katmanının ağırlıklarını alıp aslında bu yörüngeyi elde ettim.
+
+532
+02:12:59,328 --> 02:13:05,008
+Veriler bir boyuta indirgenmiş gibi gözüküyorlar. Niye öyle gözüküyor?
+
+533
+02:13:06,148 --> 02:13:07,008
+Bir boyuta mı?
+
+534
+02:13:07,608 --> 02:13:14,208
+İki boyut diyorsun ya, başlangıçta şurası diyorsun. Buraya bakıyorum ben. Bunlar başlangıç.
+
+535
+02:13:14,208 --> 02:13:21,108
+Böyle ileriye doğru, bu tarafa doğru sanki bir, bitişler de bu tarafta hepsi. Diğer tarafta sanki.
+
+536
+02:13:22,028 --> 02:13:23,688
+Bu taraftan bu tarafa doğru.
+
+537
+02:13:24,115 --> 02:13:41,136
+Çok düzenlemiyorum de, düzgün bir hareket var gibi. Tek boyutlu bir sinyalmış gibi bunları algıladım. Sanki burası zamanmış gibi. Kaç epok ilerliyor burası?
+
+538
+02:13:41,136 --> 02:13:42,556
+200 hocam.
+
+539
+02:13:42,963 --> 02:13:58,144
+Dolayısıyla burada dediğim şey galiba o. 200 epok boyunca tek birer nokta aslında var. Tek bir boyut var. Dolayısıyla sen burada iki boyuta indirgememişsin bunları. Tek boyuta indirgemişsin.
+
+540
+02:13:58,584 --> 02:14:00,584
+Anladım hocam. Anlatabildim mi?
+
+541
+02:14:06,003 --> 02:14:09,684
+Yani bana biraz şey geldi de, değişik geldi de.
+
+542
+02:14:09,684 --> 02:14:16,264
+Sen anladın mı olayı bak? Yani x ekseni senin epoklarını gösteriyor ama öyle bir şey olmayacak.
+
+543
+02:14:16,344 --> 02:14:19,863
+x ekseni de başka bir boyutu gösteriyor. Yani iki tane boyutumuz olması gerekiyor.
+
+544
+02:14:20,403 --> 02:14:22,384
+İki boyuta indirgemen gerekiyor. Tek boyuta değil.
+
+545
+02:14:22,943 --> 02:14:24,724
+Bana da biraz garip geldi hocam.
+
+546
+02:14:26,724 --> 02:14:27,243
+Tamam.
+
+547
+02:14:27,844 --> 02:14:29,123
+Tamam hocam, teşekkürler.
+
+548
+02:14:29,203 --> 02:14:30,043
+Rica ederim.
+
+549
+02:14:33,747 --> 02:14:35,707
+Evet arkadaşlar, başka var mı sorusu olan?
+
+550
+02:14:40,083 --> 02:14:50,904
+Peki. O zaman arkadaşlar, hepinize geldiniz için teşekkür ediyorum. Önümüzdeki hafta dersimiz yok. Değil mi? Yanlış hatırlamıyorum.
+
+551
+02:14:56,212 --> 02:15:14,112
+Önümüzdeki hafta 1 Ocak. Hepinizi şimdiden yeni yanını tebrik ederim. Umarım güzel bir sene olur. En azından çok üzmeden bir sene olur. İki hafta sonra görüşmek üzere diyorum. Hepiniz hoşçakalın, sağlıcakla kalın.
+
+552
+02:15:14,412 --> 02:15:16,032
+Görüşmek üzere hocam, teşekkürler.
+
+553
+02:15:16,212 --> 02:15:17,032
+Görüşmek üzere hocam.
+
+554
+02:15:17,372 --> 02:15:19,452
+İyi akşamlar.

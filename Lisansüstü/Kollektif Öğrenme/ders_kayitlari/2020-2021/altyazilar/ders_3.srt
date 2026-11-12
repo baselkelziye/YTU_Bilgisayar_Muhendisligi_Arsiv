@@ -1,0 +1,2215 @@
+1
+00:01:31,379 --> 00:01:33,379
+Sesim şu anda geliyor mu?
+
+2
+00:01:34,379 --> 00:01:35,379
+Şu an geliyor hocam.
+
+3
+00:01:35,379 --> 00:01:37,379
+Tamam süper. Tamamdır.
+
+4
+00:01:43,379 --> 00:01:45,379
+Bulayım niye hızız böyle ya?
+
+5
+00:01:45,379 --> 00:01:46,699
+14 kütü var.
+
+6
+00:01:53,171 --> 00:02:07,852
+Peki, gelenler daha sonra da bağlanırlar. Şimdi, geçen haftadan tekrar alalım. Oradan ilerleyelim. Daha iyi olacaktır.
+
+7
+00:02:32,596 --> 00:02:40,456
+Evet arkadaşlar, şey geldi mi? Bu linear approximation şeklinde gözüken slide geldi. Tamam, güzel.
+
+8
+00:02:41,915 --> 00:02:48,415
+Peki şimdi geçen hafta buradan da daha ilerlere gitmiştik ama tekrardan buraya bir geri dönelim istedim.
+
+9
+00:02:48,415 --> 00:02:58,656
+Önemli bir konu çünkü tekrardan bir ele alalım. Bu arada derste alakalı verdiğim kodlara erişenler kimler oldu?
+
+10
+00:03:04,883 --> 00:03:06,183
+Kollara bakabildiniz mi?
+
+11
+00:03:22,931 --> 00:03:34,911
+Kodlar bir nebze daha iyi anlamını sağlayabilirler diye düşünüyorum. O yüzden bunun lafı olsun diye söylemiyorum. Bakmanızı istiyorum daha iyi kavramınız açısından.
+
+12
+00:03:34,911 --> 00:03:36,311
+Peki.
+
+13
+00:03:39,412 --> 00:04:06,572
+Şimdi yüksek lisans dersleri sizler daha önce de yüksek lisans dersleri aldınız, almadınız ilk bu döneminiz olabilir vs. Normal lisans derslerinden daha fazla bir iş yükü talep ederler. Dolayısıyla sadece derslere girip sadece öğretmenin söylediklerini dinleyerek ilerlemeniz oldukça güç olabilir. O yüzden kendinizin de çaba sarf etmesi önemli.
+
+14
+00:04:07,056 --> 00:04:30,855
+Diye düşünüyorum bu noktada. O yüzden dersin dinlediğinizin yeteceğini sadece çok fazla düşünmeyin. Bu sebeple deminki soruyu da sordum aslında. Kodlara baktınız mı, onlarla biraz değiştirip oynadınız mı o manada soracaktım. Söyledim daha doğrusu.
+
+15
+00:04:31,411 --> 00:04:38,172
+Peki, bu hatırlatmayı, uyarıyı tekrardan yapmış olayım. Biz tekrardan dersimize dönelim.
+
+16
+00:04:39,871 --> 00:04:46,331
+Şimdi, 3 hafta optimizasyondan bahsedeceğimizi söylemiştik. Geçen hafta optimizasyona bir giriş yaptık.
+
+17
+00:04:46,331 --> 00:04:51,031
+Bu haftada ilerleyeceğiz. Önümüzdeki haftada aynı şekilde ilerleyeceğiz.
+
+18
+00:04:53,843 --> 00:05:16,783
+Yani optimizasyon 1, 2, 3, 4 var. 4'te çok fazla bir şey yok zaten. Onu hızlıca atlayabiliriz belki de. Bir de en sonunda çok kritik olan regresyon kısmı var ki bizim asıl dersimizin içerisinde temel öğrenci olarak kullanacağımız en popüler ikinci temel öğrenciler olan yapay sinir ağlarının optimizasyonu noktasında bu regresyon.
+
+19
+00:05:17,204 --> 00:05:34,864
+Sılaette oldukça önemli. İlerilerde çünkü yapay sinir ağlarının hata parametre yüzeylerinde, uzaylarında optimizasyon, ensembl yöntemlerinin nasıl çalıştığını anlatacağız. O noktada oraları kavramış olmanız önemli olacaktır.
+
+20
+00:05:36,204 --> 00:05:42,244
+Peki, şimdi o zaman geçen haftadan birazcık böyle bir geriye dönüş yaparak dersimize başlayalım.
+
+21
+00:05:42,771 --> 00:05:59,591
+Şimdi bir linear approximation'dan bahsetmiştik. Yani linear yakını öyle de ifade edebiliriz belki. Şimdi bir fonksiyon var elinizde. Bu fonksiyonun bir noktada linear olduğunu varsaymaktan bahsediyoruz.
+
+22
+00:06:05,172 --> 00:06:21,352
+Fonksiyonun kendisiyle uğraşmaktansa bu lineal yakınlığıyla yani lineal olan bir fonksiyonla uğraşmak her zaman çok daha kolaydır. Bir fonksiyonu lineal kabul ederseniz bu size oldukça büyük hesaplama anlamında kazanç sağlar.
+
+23
+00:06:21,352 --> 00:06:29,892
+Onun ötesinde fonksiyonun minimumunu bulmak, sıfıra eşit olduğu noktayı bulmak gibisinden kısımlarda da çok büyük kolaylıklar sağlıyor.
+
+24
+00:06:31,379 --> 00:06:56,379
+Bir fonksiyonu lineer kabul etmek başka bir şey, bir fonksiyonu bir noktada lineer kabul etmek başka bir şey. Yani fonksiyonu lineer varsaydığınız zaman lineer bir model oturtuyorsunuzdur oraya ki onu regresyon kısmında göreceğiz. Bir fonksiyonu lineer varsaymak başka bir şey. Yani girişle çıkış arasındaki ilişkinin lineer olduğunu varsayarak hareket etmek başka bir şey. Ama burada yaptığımız şey o değil. Burada yaptığımız şey...
+
+25
+00:06:56,848 --> 00:07:17,768
+Bir fonksiyonun bir noktada lineer olduğunu varsaymak. Bu daha az bir varsayım. Neye göre? Bütün fonksiyonun hepsinin lineer olduğunu varsaymaya göre. Yani her noktada lineer varsaymak fonksiyonu oldukça bozulabilir. Yani gerçekten çok uzaklaştırabilir. Fakat bir noktada lineer saymak yine bozacaktır. Ama o kadar değil.
+
+26
+00:07:18,068 --> 00:07:20,268
+Şimdi burada bunun bir örneği var şu anda.
+
+27
+00:07:20,819 --> 00:07:39,639
+Burada bir fonksiyonumuz var, şu mavi olan. Bir de onun şuradaki x noktasında lineer olduğunu varsaydığımızda o fonksiyonun alacağı şekil var. O da şuradaki l olan. Şurayı görüyorsunuz. Şu çizgi. Pembe gibi olan çizgi.
+
+28
+00:07:39,899 --> 00:07:46,939
+Şimdi bu ikisinin arasında fark var mı? Bir tanesi şöyle gidiyor, bir tanesi böyle bir şey gidiyor değil mi? Oldukça farklılar birbirlerinden.
+
+29
+00:07:47,411 --> 00:08:01,072
+Ama x'e yakın yerlerde, bunlar birbirlerine yakınlar. Bakın şuraya x'in etrafına bakın. Birbirlerine oldukça yakınlar. x'den ne kadar uzaklaşırsak o kadar birbirlerinden uzaklaşıyorlar.
+
+30
+00:08:01,072 --> 00:08:11,171
+Şimdi burada bir örnek var mesela. x noktasında lineer olduğunu kabul edersek ve delta x kadar uzaklaşırsak şu noktaya varırız.
+
+31
+00:08:11,636 --> 00:08:30,476
+Bu noktada fonksiyonu orijinali şuradaki şu B noktasıdır. Yani F X artı delta X eşittir B'dir. Ama bizim yeni fonksiyonumuz yani X noktasına linear kabul ettiğimizdeki erişeceğimiz fonksiyonumuz ise bu X artı delta X için şuradaki C noktasıdır.
+
+32
+00:08:30,936 --> 00:08:37,696
+Yani onu da işte L X artı delta X diye işaretlemişiz. Yani C noktasıdır.
+
+33
+00:08:39,668 --> 00:08:57,788
+Şimdi burada temel olarak ikisinin arasında bir fark var. Bu zaten belli. Bir hata yapıyoruz tabii ki. Ama hatanın dediğim gibi delta x'in küçük olduğu yerlerde ki aslında şuradaki ifade bunu iyi gösteriyor. Yani delta x sıfıra giderken bu ikisinin arasındaki fark sıfırdır.
+
+34
+00:09:07,251 --> 00:09:32,831
+Eğer bu durumda x artı delta x noktasındaki değeri nedir? Bunu bulmak istiyorum. Yani f fonksiyonunun gerçekteki değerini bilmiyorum. Hesaplamak pahalı diyelim ki. Onun yerine ben herhangi bir x noktasında linear olduğunu kabul ediyorum. Ve ondan delta x kadar uzağa gidersem ne kadar hata yapacağım ya da hangi değere ilişeceğim onu görmek istiyorum.
+
+35
+00:09:33,364 --> 00:10:00,000
+Şimdi buraya baktığımızda, şuradaki eşitliklere baktığımızda, L delta X artı delta X yani şuradaki elde edeceğimiz şu C değeri, iki şeyin toplamına eşit. Neye eşit? Birincisi şu kısım. Değil mi? Şuraya eşit. Artı bir de şu kısım. Değil mi? Şurası nedir? FX'dir zaten. Şurasını düşünürseniz, şu A şuraya denk geliyor, şurası X, şurası FX. Dolayısıyla FX'e eşit. Artı bir de...
+
+36
+00:10:00,000 --> 00:10:20,460
+D y eşittir. Peki, D y ne eşittir? D y de delta x çarpı f'in türevi x'e eşittir. Neden? Çünkü f'in türevi x demek ne demektir aslında? D y bölü d x demektir değil mi? Şu noktadaki türevini düşünürseniz.
+
+37
+00:10:20,768 --> 00:10:28,168
+Şurası, bölü, şurasıdır. Dolayısıyla biz oradaki dy yerine ne yazabiliriz? Delta x çarpı f'in türevi x yazabiliriz.
+
+38
+00:10:29,688 --> 00:10:44,468
+O zaman ben herhangi bir delta x değeri için bu l fonksiyonunun, ki o bizim f'in türevi olan l fonksiyonunun, değerine erişebilirim burada yazdığımız eşitlikle.
+
+39
+00:10:45,364 --> 00:11:01,364
+Tabi burada bir hata yapıyoruz. Yaptığımız hatanın büyüklüğü de şuradaki C ile B'nin arasındaki fark kadar bir hata. Bunu daha iyi hale getirmek için, bir fonksiyon linear kabul ederek yapılması için iki tane örnek var burada.
+
+40
+00:11:10,067 --> 00:11:35,628
+Bu yaklaşımlar için daha iyi fonksiyona daha yakın değerler elde etmek için. Yani şurada belli bir hata yaptık bakın. Değil mi? Şurada bir hata. Daha az hata yapmak için ne yapabiliriz? Soru bu. Burada karşımıza Tyler serileri çıkıyor. Tyler'la yaklaştırma çıkıyor. Aslında demin yaptığımız şey First Order Tyler diye geçiyor. First Order Tyler dediğimiz şey şu işte. Yani fx artı delta x.
+
+41
+00:11:35,984 --> 00:11:58,204
+Yaklaşık olarak eşittir diyor. fx artı delta x çarpı f'in türevi x. Bu first order bir yaklaşım. Bunu ikinci second order'a çevirirsek buradaki second order yaklaşım ise şu. Şuradaki. Yani ilki, bakın şurası, şuraya görüyorsunuz. Artı bir de ikinci dereceden türevi ile alakalı bir terim gidiyor işin içerisine.
+
+42
+00:11:58,995 --> 00:12:09,395
+Bunların çıkarı alışını internetten bulabilirsiniz. Yani hani First Order, Second Order nasıl üretiliyor? Daha doğrusu Second Order nasıl üretiliyor falan. Yani First Order'dan üretiliyor öyle söyleyeyim.
+
+43
+00:12:13,344 --> 00:12:34,024
+İkinci dereceyi, ininci dereceye çevirebiliriz. Bu durumda da bizim bütün yeni fonksiyonumuz ne olacaktır? Şuradaki gibi olacaktır. Bütün, işte şurada bakarsanız, f'in ininci dereceden üstü, pardon, türevi var burada. Delta x'in ininci dereceden üstü var. İşte i'nin faktöriyeli var vesaire.
+
+44
+00:12:37,648 --> 00:12:51,227
+F türevlenebilen, n kez türevlenebilen, sonsuz kez türevlenebilen bir fonksiyon ise bu durumda n sonsuza giderken bizim bulacağımız fonksiyonla gerçek fonksiyon birbiriyle aynı olacaklar.
+
+45
+00:12:52,179 --> 00:13:15,579
+Tabii burada çok fazla sayıda türev almak alan bunlar işleri ne yapıyor? Kompleksleştiriyor. Bizim amacımız ne? EF'in kendisinin hesabıyla uğraşmak yerine bir şeyler yapmak, daha basit bir hale getirmek. Çok yüksek dereceden türevleri kullanmak da çok işimize gelmiyor açıkçası hesaplama açısından. Ama bunun gerçekten ne kadar başarılı olabileceğine dair bir örnek var şurada.
+
+46
+00:13:16,659 --> 00:13:23,779
+Burada bir fonksiyonumuz var. Fonksiyonumuz fx eşittir xx. Yani e üzeri eksi x diye geçen fonksiyon.
+
+47
+00:13:25,399 --> 00:13:30,720
+Pardon, e üzeri x diye geçen fonksiyon. Şimdi burada x eşittir...
+
+48
+00:13:30,720 --> 00:13:35,159
+Aleyküm selam. Aynen.
+
+49
+00:13:37,419 --> 00:13:39,079
+[öğrenci], senin mi sesin geliyor?
+
+50
+00:13:43,220 --> 00:13:45,660
+Kusura bakmayın hocam. Benimken açık kalmış. Çok özür dilerim.
+
+51
+00:13:46,040 --> 00:13:47,220
+Tamam, rica ederim.
+
+52
+00:13:47,960 --> 00:13:57,500
+Şimdi burada mesela şu kırmızı olan, şu kırmızı şöyle yukarıya doğru çıkan bizim gerçek fonksiyonumuz.
+
+53
+00:13:57,500 --> 00:13:58,820
+Şu gerçek fonksiyon.
+
+54
+00:13:59,316 --> 00:14:16,556
+Bu fonksiyona ben çeşitli yaklaşımlar kullanmışım. Şimdi burada first order'dan öncesi de var aslında. First order'ın p öncesi ne olabilir? Zero order. Zero order'ın anlamı ne olabilir? Bütün fonksiyonun kendisini tamamen zero yani o noktadaki fx'lerini eşit kabul etmek.
+
+55
+00:14:23,827 --> 00:14:37,707
+Sıfırıncı seviyeden bir yaklaşım yapmak anlamı şu olacaktır. Tam şu A noktasından geçen şöyle düz bir çizgi aslında. Yani nerede olursa olsun o A değerini veriyor.
+
+56
+00:14:38,644 --> 00:14:42,684
+Yani x'in değerine bağlı değil. Ne olursa olsun a değerine.
+
+57
+00:14:42,944 --> 00:14:44,464
+Tabi burada unutmadan başka bir şey de söyleyeyim.
+
+58
+00:14:44,824 --> 00:14:50,244
+Bir noktadaki lineer kabul edişle başka bir noktadaki lineer kabul ediş birbirinden ne olacaktır arkadaşlar?
+
+59
+00:14:50,444 --> 00:14:51,484
+Farklı olacaklardır.
+
+60
+00:14:51,484 --> 00:15:01,444
+Yani ben şu noktada mesela bu fonksiyonun x noktasında lineer kabul ettiğimde şuradaki şu l'yi elde ederken ben bu x değil de mesela diyelim ki şu x artı delta x noktası.
+
+61
+00:15:01,875 --> 00:15:15,375
+Şu nokta. Bu noktada denilen kabul edersen şöyle başka bir L göreceğim değil mi? Başka bir türev var çünkü orada. Yoksa farklı farklı yani herhangi bir noktadaki bütün noktalardakine eşit değil.
+
+62
+00:15:17,375 --> 00:15:20,375
+Şimdi daha yüksek dereceden...
+
+63
+00:15:21,556 --> 00:15:38,136
+Bu yaklaşımlarla da şurada gördüğünüz ilk önce sıfırıncı Zero Order var. Şurada şu mavi çizgi o Zero Order. Onun bir tam linear yani onun tam şöyle dik keşögen halinde olan bir tane linear approximation var birinci dereceden.
+
+64
+00:15:39,764 --> 00:16:02,463
+Daha sonra bu gidiyor, gidiyor, gidiyor. Nereye kadar? Beşinci dereceye kadar bu gerçekleştirilmiş burada bakın. Beşinci derece, şuradaki en son yeşil olan, şurası, şu gördüğünüz en alttaki düz çizgi sıfır hani onun bir üstündeki lineer olan şu birinci derece. Sonra şurada kuadratik yani ikinci dereceden var. Sonra üçüncü dereceden, dördüncü dereceden, beşinci dereceden halinde şurada yeşilde görüyorsunuz.
+
+65
+00:16:07,764 --> 00:16:21,283
+Bu kadar yaklaşacaktır. Burada uzağa gittikçe, ne kadar uzağa gidersek o kadar aralarındaki fark ne oluyor? Açılıyor. Ama dereceyi arttırarak hala uzaklarda da ona yakın değerler almasını sağlayabiliyoruz. Tamam.
+
+66
+00:16:22,227 --> 00:16:48,687
+Burada işte başka bir noktada aynı fonksiyonu dinler kabul edersek mesela 0.25'teydi demek ki dinler kabul edişimiz. Burada ise 0.25'te dinler kabul edişimiz. Burada da yine giderek kırmızıya yaklaştığını görüyorsunuz. Tabii şuralarda falan baya bir farklılıklar oluşabiliyor. Ama dediğim gibi önemli olan nokta burada zaten x'in yakınlarında bu işi doğru yapabilmek.
+
+67
+00:16:50,292 --> 00:17:10,852
+Sinüs için mesela aynı şey burada görülmüş. Sinüs fonksiyonu burada kırmızı ama gözükmüyor şu anda. Altta kalmış. Epey bir ilerleymiş. 15. dereceye kadar ilerletmiş. O yüzden epey bir oturmuş fonksiyonu kendisiyle onu yaklaştırdığımız 15. dereceden tayları açılımını görüyorsunuz burada şu yeşille.
+
+68
+00:17:11,380 --> 00:17:22,640
+Tabi bu ekseni birazcık daha uzatırsak, yani şurada bu sinüs x, şuradaki işte pi'leri daha da ilerleye doğru götürürsek, orada ne yapacağını göreceksiniz. Yine ayrıklaştığını göreceksiniz.
+
+69
+00:17:24,220 --> 00:17:34,860
+Şimdi bir fonksiyonu lineer saymanın kullanıldığı bir alan, bir fonksiyonun kendisinin sıfır olduğu yeri bulmak.
+
+70
+00:17:36,500 --> 00:17:41,059
+Yani bir fx eşittir sıfır problemini çözmek aslında.
+
+71
+00:17:41,519 --> 00:17:49,960
+Şimdi fx eşittir sıfır problemini çözmek için kullanılan temel yaklaşım Newton Rapson'un önerdiği herhangi rastgele bir noktadan başlayın.
+
+72
+00:17:50,359 --> 00:17:53,960
+Ondan sonra iteratif olarak ilerleyin. Peki nasıl iteratif olarak ilerleyeceğiz?
+
+73
+00:17:53,960 --> 00:17:58,279
+O başladığınız noktada fonksiyonu lineer kabul edin diyor.
+
+74
+00:18:02,708 --> 00:18:27,768
+Şunu biraz daha büyüteyim. X0'da bunu lineer kabul edin. X0'da bunu lineer kabul edersem, şurada şöyle düz bir çizgiymiş gibi ben bunu varsayacağım değil mi? Yani şunun şöyle devam ettiğini düşünün. Bu gerçek fonksiyonumuz şuradaki mavi olan. Şurada. Bulmak istediğimiz yer şurası. Yani fx eşittir sıfırı bulmak istiyoruz biz. Bu fonksiyonu sıfır noktasında lineer kabul edersem, şu çizginin şöyle uzamış halini göreceksiniz. Bu fonksiyondur diye varsayıyorum.
+
+75
+00:18:28,096 --> 00:18:44,635
+Eğer bu fonksiyonsa, bu fonksiyonun sıfırı kestiği yer neresi olacaktır? Şu x1 noktası olacaktır. O zaman peki ben bu x0'dan x1'e nasıl geçerim? Yani x1'i kullanarak, x1'deyim ben şu anda, pardon x0'dayım, x1'e nasıl gideceğim?
+
+76
+00:18:53,076 --> 00:19:08,816
+fx'in xn'deki türevi, yani herhangi bir noktadaki türevi, mesela işte şu x1'deki türevi düşünelim, pardon şu x0'daki türevi düşünelim, şu türevi ne olacaktır? Şurası bölü şurası olacaktır değil mi? Bakın şu kısım bölü bu kısım.
+
+77
+00:19:08,816 --> 00:19:18,416
+Şimdi bu kısım neresi aslında? Şu kısım fxn değil mi? Bakın şu yükseklikten bahsediyorum. Burası fxn.
+
+78
+00:19:18,768 --> 00:19:32,148
+Bölü neresi olacaktı? Burası. Şimdi burası ne? Bölü xn-xn artı 1. Yani bununla bunun arasındaki fark değil mi? Şunların ikisinin arasındaki fark.
+
+79
+00:19:32,967 --> 00:19:38,048
+Peki ben burada işte birazcık bunu düzenlersem, işte aşağı yukarı aldığım zaman şöyle bir şey elde ediyorum. Bakın.
+
+80
+00:19:38,740 --> 00:20:00,680
+Bu neyi gösteriyor? Xn artı bir eşittir xn eksi fxn bölü f'in türevi xn diye bir şey gösteriyor. Burada ne var? Elimde sadece eninci derecedeki yani eninci adımdaki değerleri kullanarak n artı birinci ikisi ne yapabiliyorum? Elde edebiliyorum. Dolayısıyla sıfırdan başlayacağım rastgele bir yerden adım adım adım adım ilerleyeceğim. Burada o adım adım ilerleyişi görüyorsunuz.
+
+81
+00:20:01,332 --> 00:20:06,672
+Ve burada istediğimiz işte kök ne ise ona doğru giderek ne yapacağız? Yaklaşacağız.
+
+82
+00:20:09,112 --> 00:20:11,372
+Buradan animasyonu vardı. Çok çok önemli değil.
+
+83
+00:20:13,252 --> 00:20:17,452
+Karakök 2'nin değerini bulun. Karakök 2 rasyonel bir sayım arkadaşlar.
+
+84
+00:20:18,232 --> 00:20:20,032
+Bulabilir miyiz gerçekten bunun kökünü?
+
+85
+00:20:28,051 --> 00:20:30,612
+Mesela x kare eksi 4'ün kökünü buluruz.
+
+86
+00:20:32,652 --> 00:20:33,471
+Ya da köklerini.
+
+87
+00:20:34,271 --> 00:20:39,491
+x kare eksi 2 eşittir 0'ın çözümünü bulabilir miyiz?
+
+88
+00:20:42,491 --> 00:20:43,251
+Bilgisayarla.
+
+89
+00:20:45,991 --> 00:20:47,451
+Bence bulamayız hocam.
+
+90
+00:20:48,051 --> 00:20:48,251
+Niye?
+
+91
+00:20:52,339 --> 00:20:55,480
+Yani Taylor sayısı falan uygularsak bulunur da.
+
+92
+00:20:56,240 --> 00:21:02,140
+Yok, Taylor sayısı falan. Herhangi bir şey uygulayarak diyorum. Taylor sayısı uygulamanın şeyi yok. Espirisi yok burada.
+
+93
+00:21:04,140 --> 00:21:08,900
+Bu denklemin çözümü nedir arkadaşlar? X kare eksi iki eşittir sıfırın çözümü nedir?
+
+94
+00:21:13,428 --> 00:21:19,228
+X kare eşittir 2'dir. X kare eşittir 2 ise X eşittir. Artı eksi nedir?
+
+95
+00:21:20,848 --> 00:21:21,268
+Kök 2.
+
+96
+00:21:22,128 --> 00:21:25,608
+Kök 2 değil mi? Evet, kök 2'yi bilgisayarda tutabilir misiniz?
+
+97
+00:21:28,668 --> 00:21:32,448
+Kök 2 değerini. Bilgisayarda tutmanız mümkün mü?
+
+98
+00:21:35,728 --> 00:21:38,588
+Yakınlama yapabilir hocam. Biraz hata payıyla tutabiliriz.
+
+99
+00:21:39,347 --> 00:22:05,207
+Kendisini tutabilir misiniz kök ikinin? Sembal olarak belki. O olmaz. Değerinden bahsediyorum tabii ki. Tutamazsınız. Yani ne kadar geniş bir hafızanız olursa olsun, ne kadar sağlam bir renminiz olursa olsun, ne olursa olsun yani kök ikiyi bilgisayarda tam değerde tutamazsınız. Çünkü bu hesaplanabilir bir şey değil. Neden hesaplanabilir bir şey değil? Çünkü bu sayı nasıl bir sayı arkadaşlar?
+
+100
+00:22:05,844 --> 00:22:18,984
+Rasyonel bir sayı değil. Rasyonel demek ne demek? Rasyonel. İsminden aslında birazcık çağrıştırabilir. Rasyonel sayı diye.
+
+101
+00:22:20,124 --> 00:22:23,984
+İki tam sayının birbirine bölün mü şeklinde ifade edilebilen sayılar diyorduk hocam.
+
+102
+00:22:23,984 --> 00:22:29,764
+Evet. Ratio. Ratio ne demek? Ratio.
+
+103
+00:22:31,412 --> 00:22:46,232
+Oran demek değil mi? Reşi oran demek. Yani rasyonel oransal oran olarak bir sayının başka bir sayını bölümü şeklinde yazılabilen sayılar rasyonel sayılar arkadaşlar. Kök 2 böyle bir sayı değil.
+
+104
+00:22:47,852 --> 00:22:56,312
+Neyse bu küçük chatte bir şeyler geziyor. Evet buraları yazmışlar.
+
+105
+00:23:00,243 --> 00:23:08,364
+Gerçek değer, evet gerçek değer. Gerçek değer, buraya [öğrenci] yazmıştın ama gerçek değer bu da değil. Değil mi?
+
+106
+00:23:12,915 --> 00:23:16,036
+Gerçekten daha da devam ediyor. Böyle bitmiyor değil mi?
+
+107
+00:23:16,955 --> 00:23:22,516
+Bunun için yazmamıştım hocam ben. Daha önceki serisindeki örnek için yazmamıştım.
+
+108
+00:23:22,516 --> 00:23:26,016
+Hadi ya, tüh ben de karıştırdım ya. Kusura bakma.
+
+109
+00:23:26,016 --> 00:23:27,195
+Ben de diyorum.
+
+110
+00:23:27,875 --> 00:23:28,355
+Evet.
+
+111
+00:23:28,915 --> 00:23:31,675
+Onun için yazmıştım hocam. Ben kendim yapmıştım da.
+
+112
+00:23:32,796 --> 00:23:37,036
+Öyle yazayım demiştim ama önceden hocam baya geçtim.
+
+113
+00:23:37,036 --> 00:23:39,796
+Tamam, tamam. Peki. Teşekkürler.
+
+114
+00:23:40,339 --> 00:23:40,959
+Sağol.
+
+115
+00:23:40,959 --> 00:23:41,819
+İyi geldin.
+
+116
+00:23:43,899 --> 00:24:04,579
+Şimdi Tyler serisi. Şimdi gelelim. Biz o zaman bu birinci dereceden first order Tyler'ı kullanarak bir fonksiyonun kökünü yaklaşık olarak, iteratif olarak daha doğrusu, iteratif olarak erişebiliyoruz.
+
+117
+00:24:04,679 --> 00:24:06,399
+İteratif olarak gidebiliyoruz onun yanına.
+
+118
+00:24:07,380 --> 00:24:32,039
+Peki, bizim konveks, daha doğrusu optimizasyon problemlerini bulmak istediğimiz şey neydi? Bir fonksiyonun minimum değerini bulmak. Fonksiyonun minimum değerini bulmak için de minimum noktanın da çok kabaca türenin sıfır olduğunu söylemiştik. Dolayısıyla biz fonksiyonun kendisinin değil de türevinin sıfır olduğu noktayı bulmak istiyorduk, değil mi?
+
+119
+00:24:33,011 --> 00:24:57,771
+O zaman yapmamız gereken tek şey, şurasını görüyorsunuz. Şu mavi bir fx fonksiyonu. Eğer benim elimde bu mavi fx değil de f'in türevi x ise, o zaman şuradaki fx'lerin yerine ne yapacağım? Bunların bir altı tane daha türevini alacağım değil mi? Yani burası ne olacak? xn artı bir eşittir, xn eksi, f'in türevi xn, böyle f'in ikinci dereceden türevi xn.
+
+120
+00:24:58,387 --> 00:25:13,268
+Bu kadar basit. Second Order diye ifade edeceğimiz Newton Rapsan'ın Second Order'ı şuradaki fonksiyonlar yerine, yani elimizde sanki fx fonksiyonu değil de f'in türevi x fonksiyonu varmış gibi düşünün.
+
+121
+00:25:13,468 --> 00:25:20,748
+f'in türevi x fonksiyonunun sıfır olduğu yeri bulmak içinse yapmanız gereken şey şuradaki fx'lerin yerine onların türevlerini koymak. Bu kadar basit.
+
+122
+00:25:25,268 --> 00:25:40,207
+Şuradaki Second Order yapı karşımıza çıkıyor. Şimdi First Order yapı fx eşitir 0'ı buluyor. Şuradaki gördüğümüz. Second Order yapı ise şurada. F'in türevinin 0 olduğu yeri buluyor. Bizim daha önce gördüğümüz gradient descent algoritması ne yapıyordu? Şunu yapıyordu.
+
+123
+00:25:49,683 --> 00:26:13,183
+Pardon, yani Newton Rapson'un Second Order ile Gradient'in amacı aynı aslında. İkisi de neyi bulmaya çalışıyorlar? F'in türevinin sıfır olduğu yeri bulmaya çalışıyorlar. Tamam mı? Bunun yerine bunu kullanabiliriz aynı amaçla. Peki bunu yaparsak ne olur? E burada işin güzel tarafı bir de EPS diye bir şey de yok. Yani bir adım büyüklüğü de yok değil mi? Bakın.
+
+124
+00:26:14,291 --> 00:26:32,331
+Gerçek implementasyonlar da gerekebilecektir de. Şimdi buraya baktığımız zaman Gradient Descent mesela Step Size'ı şöyle bir şey vermişiz. Starting Point x1.9'dan başladığımızda, şuradan başladığımızda işte buraya varmış. Newton Rapson Second Order 20 iterasyonda varmış. Bu 200 iterasyonda oraya varmış. Bu 20 iterasyonda varmış. Daha hızlı gözüküyor en azından bu Step Size için.
+
+125
+00:26:33,951 --> 00:26:35,331
+Burada yine...
+
+126
+00:26:36,339 --> 00:26:44,879
+İşte şuradan başlatmışız. Şuraya varmış. Oldukça hızlı bir şekilde. Burada kaç iterasyon var ki? 6-7 tane iterasyon var sadece. Oldukça hızlı çalışmış.
+
+127
+00:26:48,220 --> 00:26:54,680
+Burada fx'in sıfır olduğu yeri bulmaya çalışmışız. Newton Rapson'un bir first iteratiğinde. Şu mavi için.
+
+128
+00:26:55,827 --> 00:27:08,648
+Sıfır olduğu nokta tam şurasıymış. Deminkinden farklı bakın o nokta. Şuraya falan geliyordu. Buradaysa şuraya. Çünkü sıfır olduğu noktaya bulmaya çalışıyoruz. Tam şunu kestiği nokta. İki tane var gerçi burada da onlardan en yakınına gidecek tabii ki.
+
+129
+00:27:12,468 --> 00:27:20,488
+Şimdi burada bir örnek var. Newton Rapsa'nın first order'ında bir cycle problemi var. Cycle problemi demek ne demek görelim.
+
+130
+00:27:20,488 --> 00:27:29,488
+Şimdi diyelim ki şu siyah çizgi bakın şöyle giden şu siyah çizgi x3-2x artı 2 fonksiyonu.
+
+131
+00:27:35,028 --> 00:27:44,567
+noktalarında bakın sıfır ve bir değerlerinde birbirleri de şöyle kesiyor. Bir noktasındaki lineer yaklaşımı şöyle bir şey.
+
+132
+00:27:46,368 --> 00:28:00,088
+Sıfır noktasındaki lineer yaklaşımı ise şu mavi çizgi. Bu fonksiyonun bir noktasındaki lineer yaklaşı şu kırmızı. Aynı fonksiyonun sıfır noktasındaki lineer yaklaşı şu mavi.
+
+133
+00:28:00,788 --> 00:28:19,427
+Şimdi ben eğer ki gidip 0 ile 1 arasındaki bir değerden başlarsam, 0 ile 1 arasındaki bir değer mesela 0.5 gibisinden bir değerden başlarsam. Şimdi 0.5'in içerisinde bu bizi ne yapacak? Pardon, mesela diyelim ki 0'da başladım.
+
+134
+00:28:19,923 --> 00:28:31,584
+Sıfırda başladım. Şimdi sıfır noktasında ben bunu linear yaklaşığını kullanacağım. Şu mavinin sıfırı kestiği yeri bulacağım değil mi? Mavinin sıfırı kestiği yeri bulacağım. Tam sıfırda başladığımız yer. Şurasını yanlış çağırmışım.
+
+135
+00:28:44,627 --> 00:29:08,967
+İterval değil orası. Ya sıfır ya da bir de başlarsa. Şimdi sıfırla başlarsa ne olur? Mavinin sıfır yani x ekseni kestiği yer neresi? Şurası değil mi? Tam şu bire gider. Yani x sıfır eşittir sıfırsa x bir ne olacaktır? Bir olacaktır. Peki ben bir noktasında devam edeceğim iterasyona. Bir noktasında bunu şey yaparsam, linear kabul edersem şu kırmızı çizgi. Bu kırmızı çizginin sıfır olduğu yer neresi? O da sıfır noktası.
+
+136
+00:29:09,779 --> 00:29:36,240
+O zaman sıfırdan bire, birden sıfıra, sıfırdan bire, birden sıfıra gibi ne göreceksiniz? Bir iterasyon göreceksiniz değil mi? Bu çok kötü. Hiçbir zaman ne yapamayacaksınız? Buradaki şu minimum olan noktaya, gerçi burada tam sıfırı kestiği noktayı bulmaya çalışıyoruz. Şurayı bulmaya çalışıyoruz da bir taraf bu tarafta, bir taraf bu tarafta ne yapacaklar? Bunları birbirlerine doğru götürüp getirecekler. Bu yine bir cycle problemi oluşturacak.
+
+137
+00:29:38,804 --> 00:29:42,264
+Bunu daha önce dediğim gibi bakmıştık zaten.
+
+138
+00:29:44,484 --> 00:29:50,004
+Üçe de başlamıştık. Oradan devam edelim. Belki yine biraz tekrar olur ama.
+
+139
+00:29:50,744 --> 00:29:52,244
+Slide geldi mi arkadaşlar yine?
+
+140
+00:29:54,764 --> 00:29:55,584
+Geldi hocam.
+
+141
+00:29:55,584 --> 00:29:56,304
+Tamam.
+
+142
+00:29:59,484 --> 00:30:04,044
+Türevleri hesaplamak her zaman çok kolay olmayabilir.
+
+143
+00:30:04,432 --> 00:30:22,112
+Bu durumda türevleri dümerik olarak da hesaplayabiliriz. Bu tarz yaklaşımlar da var. Bunun detaylarına girmeyeceğim. Ama oldukça düz bir yolu var zaten. Üç tane çok kabaca yolu var. En sonunda central difference en makul olanı.
+
+144
+00:30:27,316 --> 00:30:35,716
+Kötü şeyler başımıza, yani kötü şeyler demeyelim de kullanamamak yerine biraz büyük hatalarla belki bunu hala kullanmaya devam etmek isteyebiliriz.
+
+145
+00:30:36,296 --> 00:30:45,696
+Dolayısıyla çünkü bir fonksiyonu türü bir noktada alınamıyor ise sizin herhangi bir şekilde iterasyonu ilerletme şansınız olmayacaktır değil mi?
+
+146
+00:30:46,579 --> 00:31:14,200
+Yani deminki yapıyı düşünün, hepsinde türev var. Yani bir noktadan başka bir noktaya gitmek için illaki o noktada fonksiyonun türevlenebilir olması gerekiyor. Türevlenemiyor ise o durumda siz ne yapamazsınız? İterasyonu devam ettiremezsiniz. Bu durumda türevlenemiyorsa da hala devam ettirmenin bir yolu işte nümerik olarak hesaplamak bunu. Tabii büyük hatalar çıkacaktır o şey olduğunda. Türevlenemeyen noktalarda işte kesikliklerin olduğu. Mesela işte şurasını düşünün.
+
+147
+00:31:14,579 --> 00:31:36,579
+Bu işte y eştir bir bölü x fonksiyonu mesela. Buraların her yerde türevlenebilir ama işte x'in sıfırın çok yakını olduğu yerlerde bu türevlenebilir bir şey değil. Ya da işte y eştir x üzeri bir bölü 3 mesela. Şu tam sıfır noktasında bu yine türevlenebilir değil. Yani türevlenebilir değil de türevi var da sonsuza varıyor. Dolayısıyla hani bu gibi durumlar için bu...
+
+148
+00:31:37,652 --> 00:31:42,871
+Türevlerin yaklaşık değerlerini kullanmak, nümeralik türevi kullanmak makul bir hareket olabilir.
+
+149
+00:31:44,511 --> 00:31:49,251
+Şimdi şuraları geçelim. Bunlar zaten daha üst seviyor vs. vs.
+
+150
+00:31:51,172 --> 00:31:54,932
+Bu örneği görmüştük aslında ama tekrardan yine söylemekte fayda var.
+
+151
+00:31:56,211 --> 00:32:14,211
+Bugünkü dersimizde hep gördüğümüz örnekler birinci tek değişken örneklerdi. Yani fx diyorduk sadece. Bu x birden fazla boyutta olabilir mi? Olabilir. Buradaki bir örneğimiz bu aslında. Şurada gördüğünüz şu fonksiyon aslında x1 ve x2, x ve y yazılmış.
+
+152
+00:32:16,372 --> 00:32:38,352
+Yanlış diyelim. Burası x1, burası x2. Sonuçta da bu fx1, x2 de şu eksen olacak. Şimdi buradaki şöyle bir yüzeyin türevi dediğimiz şey, yani bir yüzeyin herhangi bir noktadaki türevi dediğimiz şey aslında her iki boyuta göre de ayrı ayrı türevler demek.
+
+153
+00:32:38,996 --> 00:32:52,375
+Yani şu noktadaki türev aslında şöyle bir vektör ve şöyle bir vektör. Görüyor musunuz? İki vektör. Yani türev dediğimiz şey bir yüzey tanımlıyor anlamında.
+
+154
+00:32:58,675 --> 00:33:11,135
+Birbirinden alakasız olan diyelim, birbirinden alakasız olarak ifade edilebilen, tamam belki öyle daha doğru, birbirinden farklı, bağımsız olarak ifade edilebilen kaç tane boyut var ise?
+
+155
+00:33:12,367 --> 00:33:36,048
+O kadar tane elemanı olan bir vektör aslında türev dediğimiz şey. Yani fonksiyonumuz bir boyutluysa türev de bir boyutludur. Fonksiyonumuz on beş boyutluysa türevimiz de on beş boyutludur. Tamam mı? Ve bunları bir vektör olarak yazabiliriz. Ve bunun vektörlerin her biri aslında nasıldır mesela şimdi şurayı düşünürsek y'dik yani şurası özelliği y demişiz. X2 dememişiz de y demişiz.
+
+156
+00:33:40,367 --> 00:33:59,167
+Y'ye göre türevin alınmasıdır. X'e göre türevi ise fx y fonksiyonu x'e göre türevidir. Burada bakarsanız şu y'nin hareketine şöyle gidiyor bakın değil mi? Şöyle yukarıdan aşağıdan başlıyor yukarıya doğru gidiyor sonra aşağıya doğru iniyor. Tam biz burada bir tepe noktasındayız bakın şurada.
+
+157
+00:34:03,124 --> 00:34:21,743
+X'e bakarsak, sadece X boyutuna bakarsak, bakın böyle aşağıdan başlıyor, yukarıya doğru gidiyor. Sonra tekrardan aşağıya doğru iniyor. Sonra tekrardan yukarıya doğru gidiyor. Onun da biz şu noktasındayız bakın. Yani bu ikisinin gösterimleri, yani sadece Y tarafından bakarsak nasıl bir şey olur, sadece X tarafından bakarsak nasıl bir şey olur, onları gösteriyor.
+
+158
+00:34:22,063 --> 00:34:26,163
+Dolayısıyla türev dediğimiz şey bir gradiyant vektörü diye tanımlayacağız.
+
+159
+00:34:26,163 --> 00:34:31,344
+Bu gradiyant vektöründe genelde bir sütun halinde yazılır vektörelde.
+
+160
+00:34:31,743 --> 00:34:35,703
+Burada sütunu satır halinde yazıp transpozuyla ifade etmiş.
+
+161
+00:34:36,103 --> 00:34:40,864
+f'in x1'e, x2'e, xn'e göre türevleri burada yer alıyorlar.
+
+162
+00:34:44,103 --> 00:34:46,663
+Burada herhangi bir noktadaki türev...
+
+163
+00:34:46,663 --> 00:34:49,603
+Çetten bir şey sormuş ama galiba konuşalım.
+
+164
+00:34:51,347 --> 00:34:54,007
+Bir arkadaş chatten bir şey sormuş. Bakalım.
+
+165
+00:34:57,487 --> 00:34:59,967
+Hocam, türev en eksi bir boyutlu olması gerekmiyor mu?
+
+166
+00:35:00,947 --> 00:35:02,148
+Yok. Niye öyle bir şey olsun?
+
+167
+00:35:04,347 --> 00:35:10,207
+Hocam mesela x karenin türevi 2x, x kare 2 boyutluyken 2x'in tek boyutlu değil mi?
+
+168
+00:35:11,207 --> 00:35:12,527
+Ben o şekilde düşünmüştüm ama.
+
+169
+00:35:13,247 --> 00:35:15,327
+Yanlış düşünmüştün. O boyut değil ki.
+
+170
+00:35:16,447 --> 00:35:38,007
+O üst demek. Yani x'in üstü. Yani buradaki boyuttan kavramız değişken sayısı içerideki. x kare de, 2x de, x üzeri 79 da tek değişkenli. Tamam. Boyut dediğimiz şey o değil. Tamamdır hocam. Anladım. Değişken sayısı yani. Tamam mı? Boyut dediğimiz.
+
+171
+00:35:45,588 --> 00:35:47,007
+Geçelim peki.
+
+172
+00:35:48,568 --> 00:35:57,368
+Kualitik fonksiyonlardan bahsetmiştik herhalde. Kualitik fonksiyon adı çaf çaflı ama kendisi aslında ikinci dereceden fonksiyon demek.
+
+173
+00:35:57,368 --> 00:36:04,307
+İkinci dereceden fonksiyonların yazıda bütün olası ikinci dereceden fonksiyonlar şu formatta yazılabilirler.
+
+174
+00:36:05,300 --> 00:36:15,640
+Bu format, buradaki x'in herhangi bir eninci derecede, yani en boyutta olabilir. Buradaki x dediğimiz şey tek bir sayıdan bahsetmiyoruz, bir vektörden bahsediyoruz.
+
+175
+00:36:16,420 --> 00:36:25,400
+x'in transposu çarpı q çarpı x artı b'nin transposu çarpı x artı c başında bir bölü 2 var. Bu bir bölü 2 bunun karesinden dolayı bunu azaltmak için konmuş bir şey.
+
+176
+00:36:25,400 --> 00:36:31,619
+Şimdi bu bütün olası kuadratik fonksiyonların ortak yazılım şekli.
+
+177
+00:36:32,083 --> 00:36:35,583
+Yani bütün kvadratik fonksiyonları bu formda yazabilirsiniz.
+
+178
+00:36:35,583 --> 00:36:43,583
+Şimdi bu formun özelliği ne? Bu formda biz bir konveks fonksiyonun...
+
+179
+00:36:45,396 --> 00:37:05,956
+Mesela bu konveks fonksiyonların olabileceği üç tane durum var. Yani bir tanesi, pardon konveks durum, koditik fonksiyonların olabileceği üç tane durum var. Bir tanesi şöyle bir konveks durum. Yani yukarıya doğru işte bir minimum noktası olan, yukarılara doğru da maksimumlaşan bir kase şeklinde, öyle düşünebilirsiniz, bir fonksiyon türü.
+
+180
+00:37:06,739 --> 00:37:28,419
+Ki biz bunları seviyoruz. Niye bunları seviyoruz? Çünkü konveks fonksiyonların minimumunu bulduğumuzda, fonksiyonun global minimumunu bulduğumuzda emin oluyorduk. Başka ne olabilir? Şöyle bir şey olabilir. Ters olabilir. Bunları da seviyoruz. Çünkü bunları ters çevirmek, yani şöyle yapmak kolay. Değil mi?
+
+181
+00:37:29,268 --> 00:37:42,387
+Bunda da bir sıkıntı yok. Fakat şunlar, şu gördüğümüz yapılar ki quadrik fonksiyonların olabileceği son form da bu. Bu ise bir eğer fonksiyonu, subtle deniyor bunlara.
+
+182
+00:37:42,387 --> 00:37:48,387
+Bu eğer zaten. Bu fonksiyona baktığımızda herhangi bir mesela...
+
+183
+00:37:49,619 --> 00:37:59,559
+Bir noktada minimum, mesela türevin sıfır olduğu bir yer var burada. Tam şu noktayı düşünün. Tam şu nokta. Türevin sıfır olduğu bir yer. Fakat türevin sıfır olduğu yer minimum yer mi?
+
+184
+00:38:03,315 --> 00:38:25,295
+Yani türemin sıfır olduğu noktayı arayan fonksiyonlar ne yapabilirler? Burada takılabilirler. Daha aşağılara inmeleri pek mümkün olmayabilir. Ama bunlar çok istediğimiz tarz fonksiyonlar değiller. Ama karşımıza çıkıyorlar mı? Çıkıyorlar. Özellikle non-linear yapılarda içerisinde.
+
+185
+00:38:26,068 --> 00:38:49,628
+Şimdi bu gösterimi dediğim gibi ortak, bütün kuadratik fonksiyonların hepsini ifade etmek için kullanılan ortak bir şey. Bunun içerisindeki şu Q'ya bakarak, bu Q bir matriz. Matrizin boyutları n-n. Yani bizim x'lerimiz kaç boyutluysa, mesela işte 3 boyutlu bir, yani 3 değişkenli bir fonksiyonumuz olsun, o zaman buradaki Q 3'e 3'lük bir matriz oluyor.
+
+186
+00:38:54,099 --> 00:39:11,740
+Bu birleşimlerin katsayılarını ifade ediyor aslında buradaki Q. Bu Q eğer pozitif definite ise, pozitif definite dediğimiz şey ne demek? Duydunuz mu pozitif definite tanımı daha önce? Geçen hafta konuşmuştuk biraz belki ama. Bütün eigenvalue'larının pozitif olduğu durum.
+
+187
+00:39:20,148 --> 00:39:41,168
+Pozitif semidefinit var ya da semipozitif definit var. O da sıfırdan büyük eşitse, yine onu da seviyoruz, onda da çok büyük sıkıntılar yok. Bu tarz durumlarda en azından pozitif definitlerde şu şekilde olduğunu garanti ederiz. Bu şekilde olması zaten bizim istediğimiz bir şey.
+
+188
+00:39:41,668 --> 00:39:47,548
+Eğer ki negatif definitse şöyle bir şey olacaktır. Indefinit ise, yani negatif olması bütün aygın value'ların ne olması demek.
+
+189
+00:39:47,956 --> 00:39:54,215
+Negatif olması demek. Indefinit dediğimiz şey ise, aygın veri olanın bir kısmının, pozitif bir kısmının negatif olması demek.
+
+190
+00:39:55,536 --> 00:40:05,135
+Bu da şu subtle fonksiyonlarını gösteriyorlar. Dolayısıyla biz şu formatın şu Q'suna bakarak, ne yapabiliriz sadece?
+
+191
+00:40:05,255 --> 00:40:12,615
+Bu Q'sunun definitlik durumuna bakarak bu fonksiyonun nasıl bir şekli olduğunu iki boyutta olmasa bile
+
+192
+00:40:13,492 --> 00:40:16,331
+Nasıl bir şekli olduğunu çok rahatlıkla anlayabiliriz.
+
+193
+00:40:16,431 --> 00:40:18,911
+Kulatifonksiyonlarına anakalı birkaç bir şeyler yazmışım buraya.
+
+194
+00:40:20,192 --> 00:40:22,592
+Şurada izoips ehrilerinden benziyor demiştik buna.
+
+195
+00:40:22,711 --> 00:40:25,492
+Bu çizgilerin kendi üzerindeki bütün f değerleri eşitler.
+
+196
+00:40:25,952 --> 00:40:27,931
+Yukarıdan aşağı doğru azalıyor burada.
+
+197
+00:40:28,112 --> 00:40:29,831
+Yani giderek derinleşiyor o şekilde.
+
+198
+00:40:30,371 --> 00:40:31,211
+Bunu söyleyebiliriz.
+
+199
+00:40:31,512 --> 00:40:38,271
+İşte Q'nun şu, B'nin şu ve C'nin şu olan değerler için çizilen, çizildiğim fonksiyon bu şekildeymiş.
+
+200
+00:40:40,115 --> 00:40:56,175
+Kiyonun şu değeri için ki burada bu semini bir sadıl fonksiyon görüyorsunuz. Burada şu fonksiyon definite bir fonksiyon değil. Pozitif ya da negative definite bir fonksiyon değil. Fonksiyon değil, matriz değil.
+
+201
+00:40:57,043 --> 00:41:19,303
+Burada mesela bizim klasik manada gördüğümüz fonksiyonlar, mesela iki tane boyut var burada, iki tane değişken var. Bu iki değişkenle oluşturmuş bir fonksiyon, ikinci dereceden bir fonksiyon. En yüksek derece 2 çünkü onu görebiliyorsunuz. Şurası yine ikinci dereceden bir şey çünkü x1 çarpı x2. Burada mesela Q'yu şu şekilde ne yapabilirsiniz, çıkartabilirsiniz.
+
+202
+00:41:19,668 --> 00:41:24,748
+Çıkartabilirsiniz. Yani normal yazabildiğiniz her şeyi bu formatta da yazabiliyorsunuz. Onu gösteriyor.
+
+203
+00:41:26,288 --> 00:41:37,028
+Şimdi bir de şunu görmüştük biz. Newton Rapsa'nın Second Order'ında bir fonksiyonun ikinci dereceden türevinden bahsediyordu.
+
+204
+00:41:37,028 --> 00:41:43,887
+Şimdi tek değişkenli bir fonksiyon ikinci dereceden türevi de yine tek bir tane sayı olacaktır. Çok şey değil.
+
+205
+00:41:49,619 --> 00:41:59,319
+En boyutlu bir fonksiyonun, yani en tane değişkençilen bir fonksiyonun türevi bir gradiyan vektöründen bahsetmiştik.
+
+206
+00:41:59,479 --> 00:42:09,259
+Yani işte n'e birlik bir vektör oluyor. İkinci türev ise n çarpı n'lik bir matris oluyor. Yani aynen demin gördüğümüz Q gibi.
+
+207
+00:42:10,739 --> 00:42:18,979
+Şuradaki Q'yu hatırlayın. Bakın mesela şurada 2x2'lik bir matris bu. İki tane değişken var çünkü burada. O yüzden bunu x1 ve x2 onlar.
+
+208
+00:42:19,923 --> 00:42:21,664
+Aynen onun gibiler.
+
+209
+00:42:21,963 --> 00:42:25,644
+Şimdi buraya baktığımızda her bir bileşenin neler olduğunu görüyoruz.
+
+210
+00:42:25,724 --> 00:42:29,604
+Şimdi şurası işte f'in x1'e göre iki kez türevinin alınmış hali.
+
+211
+00:42:29,704 --> 00:42:33,423
+Burası önce x1'e sonra x2'ye göre türevinin alınmış hali fx fonksiyonunun.
+
+212
+00:42:33,884 --> 00:42:40,044
+Şurası önce x2'ye sonra x1'e göre türevinin alınmış hali ki türevlerin sırası ne yapmaz sonucu etkilemez.
+
+213
+00:42:40,124 --> 00:42:41,903
+Dolayısıyla bu matris nasıl bir matristir arkadaşlar?
+
+214
+00:42:42,463 --> 00:42:43,764
+Simetrik bir matristir.
+
+215
+00:42:43,764 --> 00:42:45,144
+Yani şurası ile şurası aynıdır.
+
+216
+00:42:45,224 --> 00:42:46,724
+Şurası ile şurası aynıdır.
+
+217
+00:42:47,123 --> 00:42:52,804
+Sonuçta transpozunu alsanız da aynı şeyi bulursunuz. Simetrik bir madresin anlamı bu.
+
+218
+00:42:52,804 --> 00:43:02,003
+Bunu birazcık incelediğinizde aslında demin gördüğümüz Q'nun bu Hesyan madresi olduğu ortaya çıkıyor.
+
+219
+00:43:03,264 --> 00:43:05,983
+Burada zaten onun açıklaması verilmiş.
+
+220
+00:43:06,543 --> 00:43:13,704
+D, D, X ne oluyor? Q nelerden oluşuyor? Bunu çizdirdiğiniz zaman Hesyan madresinin de oluştuğunu görebiliyoruz.
+
+221
+00:43:15,347 --> 00:43:24,347
+İki boyuttakiler... Evet, şimdi şuraya bakalım. Bizim standart gradientli centimiz...
+
+222
+00:43:25,076 --> 00:43:47,695
+En boyutta optimizasyon yapıyor isek, x dediğimiz şey neydi? x1, x2, xn kadar bu transpoz yani şöyle düz bir sütundan bahsediyoruz. n'e birlik bir matristen bahsediyoruz diyebiliriz. n'e birlik bir vektör. xn, n'e birlik bir şey olacak. xs, n'e birlik bir şey olacak. xs, n'e birlik bir şey olacak. x'i bir birlik ki EPS dediğimiz şey tek bir tanesi kadar sayıydı.
+
+223
+00:43:48,128 --> 00:43:53,868
+Df neydi arkadaşlar? Türevimizdi. O türev de zaten bununla eş boyutluydu hatırlarsanız.
+
+224
+00:43:53,868 --> 00:43:58,828
+N1'lik bir şey. Dolayısıyla N1'lik bir şeyden yine N1'lik bir şey çıkartıp yine N1'lik bir şey elde ediyoruz.
+
+225
+00:43:59,388 --> 00:44:00,868
+Newton'un lapsonunda ise...
+
+226
+00:44:01,331 --> 00:44:29,251
+X new yine n'e birlik bir şey. X old n'e birlik bir şey. Df dediğimiz şey ki işte df bölü ddf'yi matrizlerde bölme işlemi yok. O yüzden ne yapmamız gerekiyor demiştik. Tersini alıp çarpmamız gerekiyor demiştik. Yani inverse ddf çarpı df. Matrizin tersini aldığımız zaman boyutu değişmez. Inverse ddf de ddf gibi n çarpı n'lik bir şeydir. Df dediğimizde n çarpı birlik bir şeydir. Dolayısıyla burası ne olacaktır? Yine n çarpı birlik bir şey olacak. Bunun ikisinin çarpımı. Dolayısıyla n çarpı birlik bir şeyden.
+
+227
+00:44:29,331 --> 00:44:33,251
+En çağrı birlik bir şey çıkarttığımızda yine en çağrı birlik bir şey elde etmiş olacağız.
+
+228
+00:44:34,991 --> 00:44:40,451
+Bu noktadan sonra işte matris inmersion'ın biraz pahalı olabileceğinden falan bahsetmiştim.
+
+229
+00:44:40,451 --> 00:44:45,032
+Determinantın tanımı falan vardı burada. Bunları çok size bırakıyorum.
+
+230
+00:44:45,532 --> 00:44:55,112
+Matris almanın maliyetinin boyutla lineer değil de eksponansiyel bir şekilde ilerlediğini burada görmüştük.
+
+231
+00:44:57,619 --> 00:45:01,179
+Kolay değil. Yani yüksek boyutlarda öyle söyleyeyim. Kolay değil.
+
+232
+00:45:05,588 --> 00:45:17,867
+Şimdi mesela Gradient Descent algoritmasını şöyle bir fonksiyon üzerinde şu noktadan başlarak Stepsize 0.1 ile çalıştırdığımızda 1, 2, 3, tık tık tık tık tık.
+
+233
+00:45:17,947 --> 00:45:21,807
+İşte buraya atıyorum işte 50 adımda falan erişiyor diyelim ki minimum noktaya.
+
+234
+00:45:22,307 --> 00:45:28,987
+Newton-Raphson'un buradaki bu fonksiyon üzerindeki, kuadratik bir fonksiyon bu, onun üzerine çalıştırdığınız zaman tek bir adımda erişiyor.
+
+235
+00:45:29,907 --> 00:45:55,667
+Şimdi Newton-Raphson korkunç hızlı o manada düşünürseniz. Yani hani gradientli centrin 50 adımda gideceği yere Newton-Raphson bir adımda gidiyor. Daha üstsel, yani daha kuadritik olmayan fonksiyonlar içinde bu. Yani kuadritik fonksiyonlar zaten tek adımda giden Newton-Raphson. Çünkü o noktaya kuadritik bir fonksiyon oturtuyor ve o fonksiyonun o kuadritiği eşitse zaten direkt onun minimumuna gidiyor. Tek adımda iniyor aşağıya.
+
+236
+00:45:56,052 --> 00:46:12,871
+Kuvadretik olmayan daha üst derecelen, ikinci derece değil de üçüncü, dördüncü, beşinci derecelen fonksiyonlar içinde yine Newton-Raphson'un Gradient-Ecent'den çok çok daha hızlı bir algoritma. Ne anlamında? Attığım sayısı anlamında çok çok daha hızlı. Fakat demin gördüğümüz gibi şöyle bir sıkıntı var. Bunu çalıştırabilmemiz için...
+
+237
+00:46:16,980 --> 00:46:36,320
+Yani Gratant Discent, Newton-Rabson'u çalıştırabilmemiz için şurada iki tane işlem var. Birincisi DDF'yi bulmamız gerekiyor. Ki o işte her bir nokta için değişecek tabii ki. Bulunduğunuz noktadaki DDF'yi bulmanız gerekiyor sonuç olarak. Bir de o bulduktan sonra bunun bir de tersine almanız gerekiyor.
+
+238
+00:46:43,731 --> 00:46:57,452
+Ki olabiliyor. İleride göreceğiz. Daha önce de sizlerde rastlamışsınızdır belki. 100 bin boyutu bir fonksiyonunuz varsa bu durumda DDF 100 bine 100 binlik bir şey olacak. Bu çok büyük bir matriz tutmak için.
+
+239
+00:46:57,972 --> 00:47:18,912
+Aynı zamanda 100.000'e 100.000'lik bir maddesin tersini almak da epey bir zaman tutacak. Hem memori anlamında çok büyük sıkıntılar var hem de computation anlamında çok büyük sıkıntılar var. Evet çok daha az adımda bulabiliyor ama her bir adımı çok çok pahalı. Dolayısıyla uygulanabilir değiller. Çok yüksek boyutlar için second order modeller bu yüzden uygulanamıyorlar.
+
+240
+00:47:22,324 --> 00:47:48,584
+Önümüzdeki hafta muhtemelen göreceğiz. First order olup second order'lar kadar hızlı çalışan algoritmalarda varlar. Yani tam onlar kadar hızlı değil, tam o kadar hızlı değiller. Çünkü ötekilerini yüksek boyutlu uzaylarda, az sayıda boyutunuz varsa second order yöntemler makuller ama yüksek boyutta bunları ne yapamıyoruz, uygulaya atmıyoruz.
+
+241
+00:47:49,619 --> 00:47:54,619
+Ama dediğim gibi, first order modellerinin hızlı olanlarını göreceğiz.
+
+242
+00:47:54,619 --> 00:48:00,619
+İşte, Adagrad'dır, Adam'dır vs. onlar önümüzdeki haftada yer alacaklar.
+
+243
+00:48:02,619 --> 00:48:06,619
+Şimdi çok hızlı dedik, minimumunu bulmak.
+
+244
+00:48:06,619 --> 00:48:12,619
+Steepest Descent'i görmüşüz burada. Bu da mesela biraz zor bir fonksiyondan bahsetmiştik, geçen haftada bunu konuşmuştuk.
+
+245
+00:48:13,139 --> 00:48:28,260
+Burada tuhaf bir durumdan bahsetmiştik değil mi? Gradient descent şu noktadan başladığımızda buraya varıyor. Newton Rapson mesela Gradient descent'in 118 adımda konverge ettiği yere Newton Rapson ne yapıyor? 4 adımda konverge ediyor. Şimdi burada bir şeyden bahsedeyim yine.
+
+246
+00:48:30,003 --> 00:48:52,903
+Bir noktaya konverj etmek, bir noktayı bulmak denilen şey, mesela tam olarak o noktayı bulmak diye ne yapmayacağız? Biz optimizasyonla düşünmeyeceğiz. O noktaya epsilon yakın bulmak diye bir şey düşüneceğiz. Yani tam o noktaya çünkü bilgisayarlar bildiğiniz gibi analog değiller. Yani kullandıklarımız analog değiller. Discretler illaki bir şeyleri var, çözünürlükleri var.
+
+247
+00:48:53,364 --> 00:49:15,624
+Tam iki gibisinden bir şey bulmam. Mesela diyelim ki bulmaya çalıştığımız yer iki. Ama mesela biz iterasyonlarımızı 2.2'ye 0.000001 kadar yaklaştığımızda ne yapabiliriz? Durdurabiliriz. Dolayısıyla bir epsilon yakınlık aslında buradaki temel kavram diyebilirim.
+
+248
+00:49:19,795 --> 00:49:36,255
+Tabii gerçeğe ne kadar yaklaştığını hesaplayamayacağımıza göre gerçekte değil mi? Çünkü gerçeği bilmiyoruz biz. Bilsek zaten hiç öyle bir işlemimiz olmaz. Gerçeğe ne kadar yaklaştığımızı hesaplayamayız ama neyi hesaplayabiliriz? Bir önceki adımla şimdiki adım arasında ne kadarlık bir adım attım?
+
+249
+00:49:36,659 --> 00:49:59,079
+Bir önceki noktada şimdi iki adım arasında ne kadar küçük bir adım attım, ne kadar küçük bir adım attım. Adımlar çok çok korkunç derecede küçüldükleri zaman aslında bir yere ne yapıyorsunuzdur artık? Converge ediyorsunuzdur. Dolayısıyla ardaşık adımlar arasındaki büyüklüğe bakılarak bir epsilon yakınlık tanımlanır. Ona göre iterasyon işlemlerine devam edilir ya da artık tamam denir.
+
+250
+00:50:00,000 --> 00:50:19,980
+Dediğimiz gibi bu çok hızlı bir şekilde konverj et diyordu. Bunu görmüştük. Daha sonra şu noktadan başlayalım dediğimizde bu yine 142 adımda buraya konverj etmişti. Bu da 5. adımda konverj etmiş ama nereye konverj etmiş? İstediğimiz yere ne yapmamış gitmemiş. Şimdi bunun neden olduğunu kısmında geçen hafta kalmıştık diye hatırlıyorum.
+
+251
+00:50:19,980 --> 00:50:22,720
+Şimdi şuraya bakalım.
+
+252
+00:50:24,052 --> 00:50:45,492
+Aynı işlem burada da söz konusu. Şunadan başladığımızda Newton Rapson'da işte bu 1, 2, 3, 4, 5 buraya çok hızlı bir şekilde konverj ediyor zaten. Buradan başladığımızda gidip 2, 3, 4, 5 şu tepeye konverj ediyor. Ama aslında bizim istediğimiz şeyin minimum nokta değil mi? Türevinin sıfır. Minimum noktayı istiyoruz. Ama türevinin sıfır olduğu noktaya denk geliyor aslında bu.
+
+253
+00:50:45,952 --> 00:51:00,852
+Türevinin sıfır olduğu başka bir nokta daha var şurada. O noktada türevinin sıfır olduğu bir nokta. Peki, buradaki kritik olan mevzu ne? Mevzu şu. F'in türeviyle F'in ikinci dereceden türevinin işaretlerine bakın diyorum.
+
+254
+00:51:00,852 --> 00:51:09,672
+Çünkü mavi olan F'in kendisi. Kırmızı olan F'in türevi şu. Bakın.
+
+255
+00:51:10,132 --> 00:51:20,112
+Yeşil olan ise f'in ikinci dereceden türevi. Bu sinüs fonksiyonu. Buradan başladığınızda buraya varıyor, buradan başladığınızda buraya varıyor.
+
+256
+00:51:22,952 --> 00:51:33,612
+Bunu çok ince dediğinizde görebilirsiniz. Çünkü burada işaretler aynılar ikisinin de. Burada ise farklar. Dolayısıyla gitmesi gereken yönün tersine gidiyor.
+
+257
+00:51:35,347 --> 00:51:47,528
+Peki o zaman bu ne demek? Peki ben bunu nasıl anlayacağım? Nilton Rampson'un bozulduğunu anlayabilir miyim?
+
+258
+00:51:48,088 --> 00:51:59,367
+Birinci türev var. Birinci türev ve ikinci türevin işaretleri değişik sadece. O durumda mesela ne yapıyor bu? Kötü oluyor. Bunu anlamak nasıl mümkün olabilir?
+
+259
+00:52:01,780 --> 00:52:21,800
+Bakarsınız, yani ardışık adımların ne olmasını bekleriz biz? Şimdi f fonksiyonunun biz neyini istiyoruz? Minimum olduğu yeri istiyoruz değil mi? Mesela x0'da bir yerden başladınız. Sonra bir yere gittiniz. O noktanın da bir f'i var. Sonra bir yere gittiniz. O noktanın da bir f'i var. Bu f'lerin değerlerinin sürekli ne olmasını isteriz biz?
+
+260
+00:52:22,643 --> 00:52:29,903
+Düşmesini isteriz değil mi? Sürekli düşmeli bunlar. Fakat burada ne olacaktır? Şimdi birinci buradan başladığınız bu ne yapacak?
+
+261
+00:52:30,643 --> 00:52:55,643
+Bakın, birden ikiye gidiyor. İkinin F'i daha büyük değil mi? Bire göre. Bir noktasının F'i şuralarda bir şey, ikinin iki buralarda bir şey, üçün iki buralarda bir şey. Dolayısıyla F ne olmuş? Artmaya başlamış. Dolayısıyla bu tarz kontroller Newton-Rabson içerisinde gerekler. Çünkü böyle bir şeyler oluşabiliyorlar. Bunları engellemek o manada mümkün değiller. Anca oluşmada önce ya da oluştuktan sonra ne yapabilirsiniz? Kabule bitip etmeme diyebiliyorsunuz.
+
+262
+00:52:58,643 --> 00:53:15,403
+F'e bakarak çok rahat bir şekilde yapabilirsiniz. F'de azalma olduğu müddetçe. Gradient descent'te ise öyle bir şey yapmanıza gerek yok. Kontrol yapmanıza gerek yok. Descent bir algoritma. Her adımda ne yapar? Giderek azalır konveks bir fonksiyonun içerisindeyken.
+
+263
+00:53:19,284 --> 00:53:31,284
+Tabii, konveks fonksiyon içerisindeki her zaman azalık, şöyle diyelim, step size'a bağlı. Yani hani, step size'ınız küçükse zaten giderek azalık. Büyük step size'ı atıyorsanız, bu durumda mesela şöyle bir şey düşünün.
+
+264
+00:53:31,284 --> 00:53:39,264
+Burada mesela gitmesi gereken yol bu taraf, sizin adım büktüğünüz kocaman bir şeyse gidip bu tarafa doğru ne yapalım, buralarda bir yere varabilir.
+
+265
+00:53:39,264 --> 00:53:57,484
+Step Size'ın birden büyük olmaması lazım diye geçen hafta konuşmuştuk, görmüştük. Hatta bir değil de yani 9.99'dan daha küçük olması lazım. Onun üstüne çıkarsanız zaten ne olacaktır? F'in mevcut halini daha da kötü hale getireceksiniz. Converge etmeyecek o zaman.
+
+266
+00:54:02,260 --> 00:54:06,760
+Burada değişik konveks olmayan nanniler, bir sürü fonksiyon var.
+
+267
+00:54:06,760 --> 00:54:09,760
+Bu Section 3'de böyle tamamlamış olalım.
+
+268
+00:54:10,260 --> 00:54:13,260
+İnşallah çok kötü bir şey yapmamıştır. Neyse.
+
+269
+00:54:14,260 --> 00:54:18,760
+Şimdi bir saatimizi geçirmişiz. Şimdi bir ara verelim arkadaşlar.
+
+270
+00:54:19,260 --> 00:54:22,760
+Ondan sonra kaldığımız yerden devam edeceğiz.
+
+271
+00:54:23,260 --> 00:54:26,760
+Şimdi saat bakıyorum.
+
+272
+00:54:27,260 --> 00:54:28,760
+3'e 3 var.
+
+273
+00:54:28,884 --> 00:54:51,503
+3-10 geçe diyelim. Şöyle yazalım. Hocam bu şöyle arası olsa 5 dakikadan yemek falan yiyebiliriz. 5 dakikadan mı koyalım? Peki. O zaman 3-15 değil. Olur mu? Zaten bir tane daha ders yaparız. Yani uzun bir tane daha ders yapmayız. Uzun bir ders daha yaparız. O zaman 3-15'e kadar arkadaşlar. Görüşmek üzere.
+
+274
+00:54:54,000 --> 00:54:58,079
+Bir önceki slide'da bir tane grafiğin yönünü değiştirmiştiniz diye hatırlıyorum da.
+
+275
+00:54:58,599 --> 00:54:58,940
+Evet.
+
+276
+00:54:59,380 --> 00:55:01,119
+Olabilir. İsterseniz düzeltme.
+
+277
+00:55:01,660 --> 00:55:04,480
+Tamam. Teşekkür ederim hatırlatma için. Sağ olun.
+
+278
+01:14:12,724 --> 01:14:15,504
+Sesim geliyor mu arkadaşlar?
+
+279
+01:14:17,904 --> 01:14:18,784
+Evet hocam geliyor.
+
+280
+01:14:27,475 --> 01:14:37,635
+Regresyon 4'ü atladım. Orada Converge türleri var aslında. Şimdilik onları geçelim.
+
+281
+01:14:37,635 --> 01:14:45,216
+Şimdi bugünkü dersimizin devamında bu slide ile ilerleyeceğiz. Data Modeling and Regression Techniques isimli.
+
+282
+01:14:46,055 --> 01:14:50,355
+Bunları geçebiliriz. Bilimsel metot nedir onlardan bahsediyor.
+
+283
+01:14:51,775 --> 01:14:54,635
+Mesela şöyle çok basit bir...
+
+284
+01:14:55,859 --> 01:15:23,219
+Şimdi bakalım ne diyor? X buymuş yani sınavdan bir gece önce kaç saat çalıştınız. Y ise sınavdaki notunuz. O sınavdan aldığınız not. Sadece X'e bağlı olarak bu Y'yi değerlendirmeye kalkarsak buradaki dört durumdan hangisi geçerli oluyor sizde? Öyle söyleyelim.
+
+285
+01:15:25,363 --> 01:15:26,363
+İyi yeşil de.
+
+286
+01:15:26,484 --> 01:15:27,543
+Yeşil daha mantıklı.
+
+287
+01:15:28,683 --> 01:15:38,923
+Yeşil daha mantıklı. Ne kadar çok çalışırsam o kadar yüksek not alırım. Demek o değil mi? İkisinin arasında direkt bir ilişki var. Mesela şunu düşünürsek bu ne demek? Ne kadar çalışırsam o kadar kötü.
+
+288
+01:15:38,923 --> 01:15:42,304
+Evet başka?
+
+289
+01:15:43,060 --> 01:15:53,260
+Bu kadar topumuz karışıyor hocam. Ben bu slide'ı hatırlıyorum hocam bu arada. İkin üzerinde baya bir durmuştuk. Zaten biliyorum çalıştıkça unutuyorum grep'i.
+
+290
+01:15:55,540 --> 01:15:58,840
+Mesela uykuyu seven birisi hocam turkaz olabilir.
+
+291
+01:16:00,340 --> 01:16:08,740
+Uykuyu seven birisi. Ama burada çalıştıkça notu hiç değişmiyor. Değil mi? Şurada. Sonra giderek düşmeye başlıyor.
+
+292
+01:16:11,572 --> 01:16:13,631
+Hocam sarı mantık değil mi geldi bana?
+
+293
+01:16:14,112 --> 01:16:14,551
+Hangisi?
+
+294
+01:16:15,012 --> 01:16:15,412
+Sarı.
+
+295
+01:16:16,152 --> 01:16:20,652
+Sarı. Yani bir yere kadar yükseliyor ondan sonra giderek yavaşlamaya, düşmeye başlıyor.
+
+296
+01:16:21,264 --> 01:16:26,844
+Bir ay kadar sürekli bir şey öğrenirsin. Daha sonrasında abartırsan artık aklın karışmaya başlar.
+
+297
+01:16:27,404 --> 01:16:29,764
+Aslında öğrendiklerinden yavaş yavaş yavaş yavaş yavaş yavaş.
+
+298
+01:16:29,984 --> 01:16:35,344
+Ama başlangıç noktası da önemli hocam. Hangi bilgiyle başlıyorsunuz? O da önemli.
+
+299
+01:16:35,584 --> 01:16:41,504
+Tabii ki. Daha öncesini zaten hiç göz önüne almadan bunu söylüyorum.
+
+300
+01:16:42,923 --> 01:16:48,984
+Burada sadece bir gece önceki çalışma saati sınav notunun üzerinde etken değildir kesinlikle.
+
+301
+01:16:49,264 --> 01:17:06,664
+Başka şeyler de vardır. Ama genel olarak sadece bu X'e baksak, bir gece önceki çalışma saatinize bakarak hareket etsek nasıl bir şey çıkar diye konuşuyoruz.
+
+302
+01:17:06,664 --> 01:17:15,524
+Yoksa dediğiniz gibi burada dahil olan bütün değişkenler yoklar sınav notu için.
+
+303
+01:17:17,555 --> 01:17:39,735
+Şimdi buraya baktığımızda şu ikisinin lineer ilişkiye sahip olduklarını görürüz. Lineer ilişki demek şu demek. Aralarındaki ilişki zaman içerisinde değişmiyor. Zamanın herhangi bir bölgesinde değişmiyor demek.
+
+304
+01:17:40,467 --> 01:17:57,067
+Yani, herhangi iki an alın, herhangi iki an arasındaki fark başka taraftaki herhangi iki an arasındaki farka eşittir. Burada da eşittir, burada da eşittir. Fakat burada bulunan bölgeye göre ne yapabilir? Bu değişebilir.
+
+305
+01:17:57,067 --> 01:18:07,047
+Dolayısıyla bunlar linear bir ilişkiye sahipler. İlişkinin değişmediği diyelim, daha belki doğru bir ifade olur.
+
+306
+01:18:07,475 --> 01:18:29,615
+Burada ise bunlar zaman içerisinde farklı zamanlarda farklı ilişkiler gösterebiliyorlar birbirleriyle. Bu ise non-linear bir ilişki. Bunu zaman açısından düşünebilirsiniz, mekan açısından düşünebilirsiniz vs. vs. Ama yani ikisi diyorum, yani zaman ya da mekan olabilir. Ama buradaki ikisi, şu ikisi linear, bu ikisi ise non-linear ilişkiler.
+
+307
+01:18:30,836 --> 01:18:57,216
+Şimdi regresyon modellerine bakacağız. Regresyon demek bu arada tahmin olarak bir sayı üretmek demek. Model dediğimiz şey ise, daha sonra yine datalar üzerinde konuşurken duracağız ama yine böyle damdan düşer gibi olmasın. Elinizde bir veri kümesi var ve bu veri kümesinin bir modele uyduğunu varsayıyorsunuz.
+
+308
+01:18:58,131 --> 01:19:07,771
+Bir modele uyduğunu varsaydıktan sonra da aslında elinizdeki verileri kullanarak o modelin parametrelerini buluyorsunuz.
+
+309
+01:19:08,891 --> 01:19:13,591
+Yani mesela linear bir modele uyduğunu varsayıp linear modelin parametrelerini buluyorsunuz.
+
+310
+01:19:13,591 --> 01:19:17,051
+Nasıl buluyorsunuz o parametri? O dataya en uygun olan.
+
+311
+01:19:17,692 --> 01:19:22,912
+Peki, model dediğimiz şey burada ne anlama geliyor?
+
+312
+01:19:23,456 --> 01:19:41,615
+Model sizin varsayımınız demek. Yani her bir model bir varsayımdır arkadaşlar. Modelin doğru olması ya da yanlış olması mümkün. Sonuçta bir varsayım. Linear bir model varsayabilirsiniz, non-linear bir model varsayabilirsiniz. Bir sürü değişik değişik.
+
+313
+01:19:42,739 --> 01:19:53,199
+Çok kompleks, çok fazla parametre içeren ya da çok az parametre içeren vs. vs. bir sürü model varsayabilirsiniz. Bunların performansını ise neyin üzerinden ölçeceğiz biz?
+
+314
+01:19:53,199 --> 01:20:04,799
+İşte bizim bir klasik olarak düşünürseniz bir eğitim kümemiz oluyor. Bu eğitim kümesiyle elimizdeki varsaydığımız modelin parametredeni buluyoruz. Daha sonra test kümesiyle de performansını ölçüyoruz.
+
+315
+01:20:11,764 --> 01:20:30,384
+Şimdi model tipi var. Linear First Order model, Linear Second Order model, Linear End Order model. Şimdi buraya bakalım. Linear First Order model, şurada gördüğünüz x'imiz bizim tek boyutta olmak zorunda değil. Bir sürü boyutu da olabilir.
+
+316
+01:20:31,347 --> 01:20:57,368
+Fakat y'imiz tek boyutlu. Yani tek bir sayı tahmin ediyoruz. Bu x ise birçok şeyden oluşuyor olabilir. Tek boyutlu olmak zorunda değil. Şuradaki beta ve betalar ise bizim modelimizin parametrelerini gösteriyorlar. Linear second order model ise şuradaki order ifadesi x'lerin üstünü gösteriyor.
+
+317
+01:20:57,743 --> 01:21:09,884
+Yani first order dediğimiz burada sadece x var. x'in üstünde bir şey yok. Yani x üzeri bir. Second order ise x kare gibisinden şeyler olabilir. Ama bu hala linear second order model.
+
+318
+01:21:11,796 --> 01:21:17,855
+Ya da işte eninci dereceden düşünürseniz, linear end order modelde işte x üzere n'e kadar çıkmış.
+
+319
+01:21:18,376 --> 01:21:22,596
+Buradaki linear ifadesi, yani burada x kare var, bu nasıl linear oluyor?
+
+320
+01:21:22,676 --> 01:21:27,336
+Buradaki linear ifadesi aslında şu betaların birbirleriyle ilişkisini göstermek için.
+
+321
+01:21:28,396 --> 01:21:30,956
+Mesela şurada başka bir örnek. Şimdi şuna bakalım.
+
+322
+01:21:31,539 --> 01:21:58,579
+Burada mesela X'lere bakarsak, order açısından düşünürseniz bu first order bir model. Yani X var sadece, X kare f. Bu da bir model. Yani yeşilir, böyle bir şeydir diye varsayıyorum. Daha sonra da ne yapacağım? Buradaki yaptığım gibi. Yani burada yapacağım iş ne olacak? İlk önce onu da bir söyleyelim. Ben böyle bir model varsayacağım. Daha sonra da elimdeki dataları kullanarak buradaki beta 1, beta 2, beta 3, beta 0 bunların değerlerini bulacağım. Elimdeki dataya en uygun betaları bulacağım.
+
+323
+01:21:59,315 --> 01:22:21,015
+Burada da yine aynı şeyi yapacağım. Yine böyle bir model varsayıyorum bu sefer. Beta ile bu x sayısı çarpılıyor. Bölü, beta 1 diye başka bir sayı var. Artı x diye bir yapımımız var. Buradaki şu random gürültü bizim hiçbir zaman kaçamayacağımız bir şey. Ölçümden gelir, şuradan gelir, rastgelelikten gelir vesaire vesaire.
+
+324
+01:22:22,127 --> 01:22:38,688
+Bu tahmin edilemeyen bir şey aslında. O yüzden onu modellerin içerisine direkt katmıyoruz. Yani bir parametre değil o, öyle söyleyeyim. Ona dair hiçbir şey, yani sanki sadece şurası varmış gibi düşünüyoruz, o şekilde hareket ediyoruz. Yapacak başka bir şey yok çünkü.
+
+325
+01:22:39,252 --> 01:22:57,632
+Şimdi burada ise baktığımızda beta 0 çarpı x bölü beta 1 artı x var. x'ler birinci derecede ama bu non-linear bir şey. Çünkü beta 1 ve beta 2 birbiriyle ne halindeler görüyorsunuz? Bölüm halindeler. Yani burada linear bir yapıda değiller. Böyle bir toplanan, çıkarılan bir şeyler değiller.
+
+326
+01:23:00,032 --> 01:23:06,231
+Mesela bu bölü değil de artı olsaydı bu, mesela bu yine linear bir şey olacaktır.
+
+327
+01:23:09,460 --> 01:23:16,579
+Şimdi linear first order model yaptığımız şey ne demiştim? Beta 1 ve beta 0'ı tahmin etmeye çalışmak.
+
+328
+01:23:16,579 --> 01:23:22,020
+Şimdi gerçekte böyle bir verinin, gerçekte böyle bir modelden geldiğini tahmin ediyoruz.
+
+329
+01:23:22,700 --> 01:23:27,840
+Yani X ile Y'nin arasındaki ilişkinin aslında şu tarz bir ilişki olduğunu varsayıyoruz.
+
+330
+01:23:29,876 --> 01:23:50,816
+Bu dediğim gibi bizim bir varsayımımız. Bu doğru da olabilir, yanlış da olabilir. Bizim amacımız ne? Bu varsayımın üstüne, böyle bir varsayımı sahipse, bu varsayımın bu modeli en iyi nasıl modelleyebileceğini, yani bu modeldeki beta 0 ve beta 1 kat sayılarının, parametrelerimizin ne olacağını bulmaya çalışıyoruz.
+
+331
+01:23:51,556 --> 01:23:57,095
+Dolayısıyla bu beta 1 ve beta 2'yi, pardon beta 0 ve beta 1'i tahmin ediyoruz.
+
+332
+01:23:57,971 --> 01:24:15,112
+Tahmin ettiğimizde aslında ne olacak? Beta sıfır üstü hat bu, beta bir hat. Bunların gerçeklerini tahmin edilmiş halleri. Ve bunları koyduğumuzda da yine x de bunları koyacağız. Burada da y hati elde edeceğiz. Şimdi o zaman bizim amacımız ne?
+
+333
+01:24:15,539 --> 01:24:25,880
+Biz öyle beta hatler bulmalıyız ki y ile y hatin arasındaki fark ne olsun isteriz? Minimum olsun isteriz.
+
+334
+01:24:26,960 --> 01:24:34,600
+Ve bunu da yapmak için bir eğitim kümesi kullanacağız. Bu eğitim kümesine göre ne yapmak istiyoruz? Bunu elde etmek istiyoruz.
+
+335
+01:24:35,520 --> 01:24:37,659
+Zaten biliyorum, geçelim.
+
+336
+01:24:44,307 --> 01:25:01,708
+Burada şunu söylüyor aslında. Biz herhangi iki kavram, bir kavram etkilen bir sürü kavram olduğunu düşünelim. Bu durumda biz bir model varsayıyoruz ve ondan sonra bizim ne almamız gerekiyor bu modeli?
+
+337
+01:25:02,112 --> 01:25:22,152
+Parametreni bulmak için sampullara ihtiyacımız var. Örneklere ihtiyacımız var. Sample genel manada tek bir örnek yerine kullanılmaz. Sample bir örnek kümesi olarak kullanılır. Yani bir eğitim kümesini iki tane örnekten oluşan bir sample olarak düşünebilirsiniz.
+
+338
+01:25:25,747 --> 01:25:45,028
+O problemle ilgili bütün popülasyona hiçbir zaman ulaşamayız. Yani işte deney yaparız, anket yaparız, ölçüm yaparız vs. vs. bir sürü bir şeyler yaparız. Ama tam olarak bütün popülasyonu kapsayacak bir sample'a erişmemiz mümkün olmaz.
+
+339
+01:25:45,684 --> 01:25:53,703
+Çok, yani çok çok çok zaman. Bütün popülasyonelere ilişebiliyorsanız zaten ortada zaten problem yoktur. Modelleme yapmanı da belki ihtiyaç yoktur.
+
+340
+01:25:54,547 --> 01:26:17,987
+Ama bir kısmına erişebiliyorsunuz. Mesela işte bir sürü örnek varken bunların bir kısmıyla erişip ne yapacağız? İşte burada X, Y ile ifade edilenler bizim neyi ifade ediyorlar? Bizim inci eğitim örneklerimizi ifade ediyorlar. X, Y inputlar olacak, Y, Y ise output olacak. Ve biz burada şu beta 0, beta 1, hat bunları tahmin etmeye çalışacağız. Bunu tahmin etmeyeceğiz zaten.
+
+341
+01:26:20,340 --> 01:26:33,860
+Diyelim ki siz işte böyle noktalarınız vardı. Bu noktalar için şöyle bir model varsaydınız. Bu model linear bir model. Linear model için bunu saydığınızda ne olacaktır?
+
+342
+01:26:34,228 --> 01:26:59,368
+Şimdi parametrelerinizde bulmuşsunuz. Çizgiyi çizdiğimize göre artık parametreleri bellidir. Şurada bunlar ne yani? Hata miktarlarıdır. Şuradaki gördüğünüz. Yani mavinin şu kırmızı çizgiye olan uzaklıkları bizim hatalarımızdır. Bunun için mesela bu çizgi yerine başka bir çizgiyi kullanırsak başka hatalara erişiriz. En düşük hataya sahip olan çizgiyi, modeli bulmaya çalışırız.
+
+343
+01:27:00,916 --> 01:27:26,076
+Mesela şimdi düşünün, şuna göre şu belki, mesela bunun gerçek olduğunu düşünün, bunun ise tahmin ettiğimiz olduğunu düşünün. Değişik bir sonuç elde edebiliriz. Yani her bir çizgi farklı bir hataya temelde sebep olacaktır. Bizim amacımız ne? Öyle bir çizgi çizeyim ki ben diyorum, tabii lineer bir modelden bahsediyorsak, tek değişken ise bir çizgi, iki tane değişken varsa bir yüzey olacaktır bu, değil mi?
+
+344
+01:27:26,996 --> 01:27:36,816
+Tek bir tane değişkeniz varsa, X'e karşıdaki yayı üretirken, birinci first orada bir şey yapıyorsanız, şöyle dümdü bir tane çizgi çekersiniz. Bu düz çizgi her yerden geçebilir.
+
+345
+01:27:37,587 --> 01:27:52,188
+O her yerden geçmesini sağlayan şeyler şu farklı beta 0 ve beta 1'ler. Beta 0 ve beta 1'i değiştirerek bu çizgiyi siz burada sonsuz yerden geçirebilirsiniz. Acaba ben nereden geçirmeliyim ki minimum hataya sebep olan çizgiyi bulayım?
+
+346
+01:27:58,868 --> 01:28:07,368
+Giderek artıyorsa iki boyutu bu bir düzleme dönüşür. Üç boyut ve sonrasında hiperdüzleme dönüşür. Ama hep bir lineer modenden bahsetmiş oluruz.
+
+347
+01:28:09,460 --> 01:28:13,579
+Bu parametre de tahmin etmek için nasıl yöntemler kullanılırlar?
+
+348
+01:28:14,100 --> 01:28:20,579
+Yani liste kral metodu en yaygın olarak kullanılan yöntem hatalarını minimize etmeye çalışacağız.
+
+349
+01:28:20,880 --> 01:28:24,100
+Elimizden evvel liste kral metodu uygulamak için neye sahip olmamız gerekiyor?
+
+350
+01:28:24,100 --> 01:28:27,760
+Bir modele sahip olmamız gerekiyor. Yani model dediğimiz şeyde bir varsayım.
+
+351
+01:28:28,212 --> 01:28:48,132
+Bu modele sahip olacağız. Onun haricinde neye ihtiyacımız var? Bir de bir eğitim datasına ihtiyacımız var. Ki o data üzerinde hatası minimum olan model parametrelerini bulmak için bu Least Square metodu kullanacağız. Yoksa Least Square metodu bize modeli falan vermez. Yani modeli veren hiçbir şey yoktur bu manada düşünürsek.
+
+352
+01:28:48,543 --> 01:29:11,144
+Model bize birisi söyler, bir yerden duyarsınız, aklınıza gelir. Daha önceki yapılmış çalışmaları görürsünüz, onlardan esinlener yeni modeller kurabilirsiniz ya da var olanları kullanırsınız. Modeli kurmanın bir algoritması yok o manada, onu ifade etmeye çalışıyorum. Model dışarıdan sizin verdiğiniz bir şey her zaman.
+
+353
+01:29:12,916 --> 01:29:30,695
+Liskors'un yaptığı şey aslında şuradaki y ile y hat'in arasındaki hata. Şuradaki epsilonları şeyle karıştırmayın. Deminki hata, deminki pardon şu random error ile karıştırmayın. Random error değil bunlar. Aradaki farklar. Yani tahmin edilenle gerçeğin arasındaki fark.
+
+354
+01:29:31,444 --> 01:29:43,304
+Kareleri toplanıyor. Bu bizim mean square errorumuz oluyor. Şimdi mean square error, pardon, square errorumuz oluyor. Mean square error de bunun bir bölü n'e bölünmüş hali. Niye kare var burada? Niye kareleri alıyoruz?
+
+355
+01:29:46,504 --> 01:29:47,524
+Pozitif gelsin mi?
+
+356
+01:29:47,524 --> 01:29:48,924
+Negatif değer çıkmasın diye.
+
+357
+01:29:50,804 --> 01:29:54,304
+Negatif değer çıkmasın diye değil, negatif de pozitif değer birbirini götürmesin diye.
+
+358
+01:29:56,764 --> 01:29:57,444
+Değil mi?
+
+359
+01:29:57,908 --> 01:30:15,188
+Yani şöyle bir şey düşünün. Yi eksi y hat i'nin bir örnek için artı 3 olduğunu düşünün. Bir sonraki örnek için de mesela başka bir örnek için de eksi 3 olduğunu düşünün. Direkt burada siz bunların kararları değil de aradaki farkları direkt toplarsanız bu durumda iki tane büyük hatayı birbirine götürmesini sağlarsınız.
+
+360
+01:30:25,011 --> 01:30:35,111
+Şöyle kare içerisine almak yerine bir absolüt değer alacaksınız ki o da sıkıntılı. Neden? Çünkü absolüt fonksiyon nasıl bir fonksiyon değil arkadaşlar?
+
+361
+01:30:38,868 --> 01:30:41,868
+Nasıl bir fonksiyon değil? Absolut.
+
+362
+01:30:44,468 --> 01:30:47,868
+Türevi alınabilen bir fonksiyon değil. Sıfır noktasında sıkıntılıdır.
+
+363
+01:30:47,868 --> 01:30:53,868
+Değil mi? İki tane şöyle, şöyle, şöyle, yukarı doğru aşağıya, üçgen.
+
+364
+01:30:53,868 --> 01:30:59,868
+Doğru yüzden tam sıfır noktasında türevi sıkıntılı. O yüzden türevi alınabilen fonksiyonları kullanacağız ya.
+
+365
+01:30:59,868 --> 01:31:04,868
+Hani demin ondan bahsettik, optimizasyon yaparken. Dolayısıyla burada kare...
+
+366
+01:31:05,716 --> 01:31:12,716
+Bu fonksiyonu, yani x kare herhangi bir şekilde, karesi, türevi alınabilen bir fonksiyon.
+
+367
+01:31:13,971 --> 01:31:37,771
+Burada her bir dört tane örneğimiz var. Bu dört tane örnek için şu maviyi uydurduğumuzu varsayalım. Bu maviyi uydurduğumuzda bu noktalar için aslında biz şu mavi noktaları tahmin etmiş oluruz. Ve tahmin etmiş olduğumuz noktalarla gerçek noktalar arasındaki farklar da işte şuradaki epsilon 1, epsilon 2, epsilon 3 diye ifade ettiğimiz şeyler ise bizim nelerimiz olacak?
+
+368
+01:31:38,292 --> 01:31:48,432
+Bu hatamız olacak. Şimdi Liskars ne yapmaya çalışıyor arkadaşlar? Bu hataların toplamını minimize etmeye çalışıyor. En küçük kareler zaten buradan geliyor.
+
+369
+01:31:52,432 --> 01:31:54,852
+Burasını biliyorsunuz zaten.
+
+370
+01:31:58,804 --> 01:32:21,824
+Şimdi buraya bir bakalım. Diyelim ki modelimiz y eşittir beta olsun. Beta dediğimiz şey neydi? Tek bir sayıdan bahsediyoruz. Model eşittir 2. Yani y eşittir 2. Yani output 2'ye eşit. Bu nasıl bir model? Kaçıncı dereceden bir model?
+
+371
+01:32:24,115 --> 01:32:37,375
+Sıfırıncı dereceden değil mi? Sıfırıncı dereceden bir model. Yani ne olursa olsun, x ne olursa olsun, x'ler ne olursa olsun pek bir boyut da olması gerekmiyor. Ne olacaktır bu? Beta eşit olacaktır.
+
+372
+01:32:38,775 --> 01:32:50,996
+Peki benim modelim buysa, elimde de en tane datam var. Ben burada bu model için, bu varsayım için en uygun betayı nasıl bulurum? Soru bu. Anlatabildim mi?
+
+373
+01:32:51,423 --> 01:33:09,063
+Yani modelim bu, y eşittir beta. Fakat betanın ne olduğunu bilmiyorum ben. Ama elimde datalar var. Bu model için en uygun beta, yani en uygun demek ne demek? Elimdeki verileri kullandığımda en az hataya sebep olacak. En az karesel hataya sebep olacak. Betayı bulmak istiyorum.
+
+374
+01:33:09,063 --> 01:33:10,163
+Ortalaması mı olacak?
+
+375
+01:33:11,444 --> 01:33:38,404
+Bakalım işte ne çıkacak? Mantıken ortalaması, yani y'lerin ortalaması çıkması lazım. Acaba öyle mi olacak? Şimdi buraya bakarsak hata neydi? Şuydu hataların toplamı. Bu aslında her bir epsilon i diye ifade ettiğimiz şey ne? yi eksi beta değil mi? Çünkü biz y'ler neler? Gerçek olan değerler. Peki beta ne burada? Modelin çıkışı değil mi? Yani ne olursa olsun model ne çıkışı verecek bize? Bu betayı verecek.
+
+376
+01:33:39,444 --> 01:34:06,404
+Şimdi şunu düşünürsek, bunun beta'ya göre türevini alıp sıfıra eşitlersek şunu elde edeceğiz. Bunu elde edersek buradan bu çıkıyor, buradan bu çıkıyor, buradan da en sonunda bu çıkıyor. Bakarsak beta eşittir bir böyle en toplam y. Bu ne demek? Bütün y'lerin işte şurada y'i olacak bu. y'i birden n'e kadar topla, bütün y'leri topla, onu da n'e ben, bu da beta. Yani y'lerin ortalamasını beta olarak buraya koymak.
+
+377
+01:34:08,212 --> 01:34:14,172
+En optimal, elimizdeki dataya göre en optimal beta değerini elde etmenin yolu.
+
+378
+01:34:14,232 --> 01:34:22,852
+Tamam mı? Yani loss fonksiyonumuz var. Bu loss fonksiyonunun betaya göre türevini aldık ve onu sıfır eşitledik.
+
+379
+01:34:23,292 --> 01:34:24,772
+Tamam mı? Yaptığımız şey bu.
+
+380
+01:34:25,532 --> 01:34:32,052
+Burada işte iki parçalı bir şey vardı. Buradaki zaten betanın içerisinde i'ye dair bir şey olmadığından dolayı onu ayrıca değerlendirebiliriz.
+
+381
+01:34:32,884 --> 01:34:43,764
+dedik. Burası eksi n çarpı beta. Burada i'ye bağlı hiçbir şey yok. O zaman n çarpı betadır bu. Burası toplam g'lerdir zaten. Bu bunu eşit. Buradan da bunu elde edebiliriz.
+
+382
+01:34:46,184 --> 01:34:56,524
+Şimdi tabii her zaman modelimiz bu kadar basit olmayacak değil mi? Aşırı derecede basit bir modeldi. Ama mantığı aslında hepsinde aynı olacak. Türev alacağız, sıfıra eşit diyeceğiz.
+
+383
+01:34:57,108 --> 01:35:17,108
+Şimdi first order modelimiz, biz şu şekilde ifade ettik. Bunu aslında şu şekilde de yazabiliriz. Aynı şeyi farklı şekilde yazıyorum sadece. Bakalım ne diyor burada. Şurasını inceleyelim. Beta 1 var. Pardon beta 0 var. A artı beta 1 çarpı x1 var. Buradaki beta 1 aslında...
+
+384
+01:35:18,420 --> 01:35:40,760
+Beta 1 olmazsa elinizde, öyle söyleyelim. Beta 1 olmazsa elinizde modelinizin orjinden geçmesi zorunludur. Değil mi? Yani y eşittir mx diye eski dost da hatırlayıp y eşittir mx'te artı n diye bir şey koymazsanız oraya, bütün m için ne yazarsanız yazın bu model nereden geçecektir?
+
+385
+01:35:40,760 --> 01:35:46,420
+Orjinden geçecektir. Ama gerçekte modeliniz öyle olmasını istemezsiniz. Daha esnek bir yapıda sahip olacaksınız.
+
+386
+01:35:46,420 --> 01:36:05,320
+İsterseniz, dolayısıyla beta 0 dediği şey de her zaman modellerin içerisine eklenir. Ben bunu matriz formunda şu şekilde yazabilirim. Elimde eğer en tane data var ise, en eşittir sample size, y n çarpı 1 eşittir x n çarpı d artı birlik bir matriz yazıyorum buraya. Bakın.
+
+387
+01:36:05,747 --> 01:36:22,847
+X dediğim şey bir matriz burada. Ve o matriz elimdeki X'lerden oluşuyor. N çarpı yani N tane satır var. D artı bir tane üstüma. D dediğimiz şey neydi? X'in boyutuydu. Oradaki bir ne olacak arkadaşlar? Neyi ifade ediyor aslında? Şu beta sıfırla alakalı mevzu.
+
+388
+01:36:33,555 --> 01:36:48,655
+X'imizin boyutu yani X'e Y'ye var karşılıklı. X eşittir 3.5, Y eşittir 7. X eşittir 2.49, Y eşittir 4.98 gibi bir şekilde tek boyutlu bir yapıdan bahsediyoruz.
+
+389
+01:36:49,140 --> 01:37:09,920
+x1, x2, x3, x4 bunları bu şekilde dizebilirsiniz. Eşittir sonra birlerden oluşan bir sütun sonra x'leri yazıyorsunuz. Eşittir beta 0, beta 1 vektörü artı şu zaten bizim hatalar. Hatalar yanlış söylüyorum.
+
+390
+01:37:10,836 --> 01:37:13,275
+İşin içine katamadığımız değişkenler.
+
+391
+01:37:13,796 --> 01:37:17,576
+Şimdi burasını şu şekilde ifade edebilirsiniz. Bakın bu.
+
+392
+01:37:17,895 --> 01:37:22,555
+Y'ye eşittir beta 0 yani şunun aslında bu hali.
+
+393
+01:37:22,996 --> 01:37:25,796
+1 çarpı beta 0 artı beta 1 çarpı x'i.
+
+394
+01:37:25,796 --> 01:37:34,055
+Şimdi şuraya bakın. Y1 eşittir 1 çarpı beta 0 artı x.
+
+395
+01:37:36,083 --> 01:37:43,823
+Çarpı beta 1, x1 çarpı beta 1 artı işte bu. Şurada niye görüyorsunuz zaten? Modelin kendisini görüyorsunuz. Bakın.
+
+396
+01:37:45,903 --> 01:38:00,463
+Şu bizim işimize epey yarayacak bir gösterim. Yani y'yi bir sütun halinde yazdık. Sonra x'lerimizi işte başına bir birleri koyduk ki o birler aslında şuradaki beta 0'ı ifade etsinler diye. Sonra x'imizi koyduk.
+
+397
+01:38:01,076 --> 01:38:27,016
+Mesela bunu birazcık daha geliştirirsek, mesela yine n eşittir 4 olsun, yine 4 tane örneğimiz olsun ama d eşittir 2 olsun, bu sefer x1 ve x2 olsun elimizde. Bu durumda matriz formunda bu işi yazdığımızda şunu elde edeceğiz, bu şekilde yazacağız. Yani birilerden oluşan bir sütun yine var, sonra her bir satırda işte iyinci örneğin birinci boyutu ikinci boyutu, ikinci örneğin birinci boyutu ikinci boyutu, üçüncü örneğin birinci boyutu ikinci boyutu şeklinde bu şekilde yazabiliriz.
+
+398
+01:38:29,300 --> 01:38:49,819
+Order 2 yaparsak, yani X'in şöyle bir model varsayarsak, yani beta 0 artı beta 1 çarpı X artı beta 2 çarpı X kare gibisinden bir şey varsayarsak, o zaman elimizde X'ler ve Y'ler var ya, 1 yazdık, X'i yazdık, sonra onların karelerini alıp buraya yazdık.
+
+399
+01:38:49,819 --> 01:38:56,420
+Bu sefer yine beta 0, beta 1, beta 2. Buradaki beta 2 de X'in second order'ının katsayısı olacak.
+
+400
+01:38:58,996 --> 01:39:15,956
+Şimdi, peki bu noktada ne yapabiliriz? Elimizde şurada y eşittir x çarpı beta diye, ki burasını yok sayıyoruz demiştik, y eşittir x çarpı beta diye bir form var.
+
+401
+01:39:15,956 --> 01:39:21,756
+Ve bu formda biz neleri biliyoruz? y'yi biliyoruz, x'i biliyoruz.
+
+402
+01:39:22,068 --> 01:39:48,368
+B'yi bilmiyoruz. Betayı bilmiyoruz. Bu betayı bulmak için ne yapabiliriz? Sorumuz bu. Y eşittir x çarpı beta. Bizim amacımız ne burada? Betayı bulmak. Beta dediğimiz şey neyden oluşuyor? Şurada gördüğümüz 3 tane değer mesela. Artık elimizdeki modele bağlı olarak. Y eşittir x çarpı b. Burada mesela betayı, bu betayı ne yapmak isteriz biz? Yalnız bırakmak isteriz değil mi?
+
+403
+01:39:50,420 --> 01:40:08,819
+Yalnız bırakmak istesek o zaman ne yapmamız gerekir? Her iki tarafı x'e bölmek isteriz. Her iki tarafı x'e bölersek mesela, şurada düşünürseniz, y bölü x eşittir, beta çıkar. Tamam, güzel ama matrislerde ne yok? Bölme yok.
+
+404
+01:40:10,547 --> 01:40:27,148
+X'in tersiyle çarpıp ne yapabiliriz her iki tarafı? Mesela burayı da X'in tersiyle çarparsak, o zaman X'in tersi ve X'in kendisinin çarpımı birim matrisi olacaktır. Yani diagonali bir, diğerlerinin hepsi sıfır olan bir şey olacaktır.
+
+405
+01:40:27,148 --> 01:40:35,368
+Onu da beta ile çarptığınızda zaten beta'yı elde etmiş olursunuz. Dolayısıyla X üzeri eksi bir çarpı Y eşittir beta'yı bulabilirsiniz. Bunda da bir sıkıntı yok.
+
+406
+01:40:35,796 --> 01:40:45,476
+Fakat burada bir sorun var. Ne var arkadaşlar? X'in tersini almaktan bahsediyoruz değil mi? X üzeri eksi birden bahsediyoruz. X üzeri eksi bir.
+
+407
+01:40:49,363 --> 01:40:54,443
+Bir matrisin tersini almak için onun nasıl bir matris olması gerekiyor?
+
+408
+01:40:55,943 --> 01:40:59,683
+Kare bir matris olması gerekiyor. Matrislerin böyle bir sıkıntısı var.
+
+409
+01:41:03,643 --> 01:41:08,863
+Kare matris değilse o zaman ne yapacağız? Bildiğimiz başka bir şey var.
+
+410
+01:41:09,683 --> 01:41:12,903
+X'in transpozu ve X'in çarpımı her zaman nedir arkadaşlar?
+
+411
+01:41:14,612 --> 01:41:34,811
+Kare bir matristir. Yani herhangi bir matriz alın. Çünkü şimdi X'e bakalım. X burada mesela kare bir matriz mi? Şu X'e bakın. 4'e 3. Hiç de kare bir matriz değil. Ya da buraya bakalım. 4'e 2. Hiç kare matriz değiller. Kara matriz olmadığı zaman da ne yapabiliriz?
+
+412
+01:41:35,220 --> 01:42:01,939
+X'in transpuzu çarpı X her zaman kare bir matristir. Yani 4'e 2 düşünün mesela. X'in 4'e 2 olduğunu düşünün. Onun transpuzu ne olacaktır? 2'ye 4 olacaktır. 2'ye 4 ile 4'e 2'yi çarptığınızda 2'ye 2'lik bir matris elde edersiniz değil mi? O zaman karesel bir matris. O zaman ben ilk önce her iki tarafı X'in transpuzu ile çarpayım. Yani şurada bakın şurada. Her iki tarafı X'in transpuzu ile çarpayım. X'in transpuzu çarpı Y eşittir. X'in transpuzu çarpı X çarpı beta olsun. Yani şu hale getireyim.
+
+413
+01:42:02,836 --> 01:42:20,195
+Sonra ben neyi biliyorum? Şurası kare bir matriz. O zaman ben betayı yalnız bırakmak için ne yapmam lazım? Her iki tarafı x'in transpozu çarpı x'in tersi ile çarpmam lazım. Artık ben ters alabilirim çünkü neyi biliyorum? Burasının simetrik olduğunu, pardon, kare bir matriz olduğunu biliyorum.
+
+414
+01:42:29,876 --> 01:42:49,416
+Ne olacaktır? Bu hale gelecektir. Ama ben bir de şunu biliyorum. Zaten bunu o amaçla yaptım. Bu da zaten ne eşittir? Bir şeyin tersiyle kendisini çarptığı zaman işte bir matriz elde ediyoruz. Dolayısıyla burası tamamen yok olacak. Yani beta'ya eşit olacak burası. O zaman beta eşittir bu. O zaman bulduk.
+
+415
+01:42:50,515 --> 01:43:13,435
+Değil mi? Şurada görüyorsunuz beta eşittir. Matriz çarpım var, tersini almak var. O birazcık dertli olabilecek bir şey. Ama teorik olarak biz şu formda verilmiş olan ki o formda lineal form burada düşünürseniz bu formda verilmiş olan ne yapabiliriz? Her datayı, her modelin.
+
+416
+01:43:13,971 --> 01:43:18,291
+Bu betalarını şuradaki yazdığımız şeyi yaparak bulabiliriz.
+
+417
+01:43:19,931 --> 01:43:26,631
+Şimdi burada bir örneği var bunun. Mesela burada datalar var. Şu maviler bizim datalarımız. X'lerimiz var, Y'lerimiz var.
+
+418
+01:43:26,711 --> 01:43:31,492
+Bunların işte şu kodu açarsanız orada da göreceksiniz. Şu maviler bizim noktalarımız.
+
+419
+01:43:32,152 --> 01:43:36,851
+Gerçek model var bir tane elimizde. Yani ilk önce şöyle bir şey yaptık. Kodu açarsanız görürsünüz.
+
+420
+01:43:37,427 --> 01:44:02,768
+İlk önce gerçek bir model oluşturuyor. Yani y eşittir, x'ler betanın gerçek değerlerini veriyoruz modelle. Ki vermişim ben mesela burada. 5'e 0.8 diye. 5'e 0.8 diye vermişim. Daha sonra da bu modele uygun örnekler üretmişim. Fakat örnek üretirken bir miktar gürültü de eklemişim. Ki bütün hepsi bu kırmızı çizginin üstünde çıkmasınlar diye.
+
+421
+01:44:04,319 --> 01:44:30,579
+Kırmızı çizginin üstünde değiller büyük bir çoğunu ama kırmızı çizgiyle uyumlular gördüğünüz gibi. Daha sonra şimdi şurada yaptığımız işte ne olacak? Elimde şuradaki mavi noktalar var. Bu mavi noktanın x'lerini ve y'lerini ben biliyorum. Buradaki x'ler ve matrislerini oluşturuyorum. Daha sonra buradan betayı elde ediyorum. Betaya göre ben bunu çizdirdiğim zaman şuradaki yeşili görüyorsunuz. Bakın. Bu da estimated model. Gerçek modelle oldukça birbirlerine yakınlar.
+
+422
+01:44:31,188 --> 01:44:47,387
+Ben burada ne kadar çok örnek alırsam o kadar daha iyi bir şey yapmış olurum değil mi? Tahmin edebilirsiniz bunu. Yani mavi noktaların sayısının ne kadar fazla olursa benim için o kadar iyi bir şey olacaktır. Yani gerçek model o kadar yaklaşır. Burada zaten onu görüyorsunuz.
+
+423
+01:44:49,427 --> 01:45:01,648
+En eşittir 6 iken gerçek model ve tahmin edilen model arasında şöyle bir farklılık oluşuyor görüyorsunuz. Ama en eşittir 600 iken gerçek model ve tahmin edilen model arasındaki farklılığı görüyorsunuz. Kırmızının üstüne binmiş yeşil.
+
+424
+01:45:01,648 --> 01:45:08,987
+Tamam. Sample size'ın etkisi temel olarak bu. Bu da gözüküyor.
+
+425
+01:45:09,939 --> 01:45:36,259
+Sample Size'ın haricinde başka neyin etkisi olabilir? Ben ne dedim az önce? Dataları üretirken ne yaptım? Şu gerçekten ürettiğimde üstüne gürültü ekledim. O gürültünün büyüklüğü bizim için yine önemli. Gürültüyü bu şekilde üretirseniz, burada küçük bir gürültü var. Ona bölüyorsunuz çıkan rastgele bir sayı. Küçük bir hata var. Burada ise büyük bir hata var.
+
+426
+01:45:37,171 --> 01:45:43,711
+İkiye böldüğünüz için daha büyük bir şeyler ekleniyorlar. Artı, eksi olmak üzere. Ve aradaki hata ne oluyor? Artıyor.
+
+427
+01:45:46,411 --> 01:45:54,351
+Peki, benim elimde şöyle mavi noktalar olsa ben buraya second order bir model de oturtabilir miyim aynı yaklaşımla? Evet.
+
+428
+01:45:54,931 --> 01:46:11,431
+Yapmam gereken tek şey şu. Y eşittir beta 0 artı beta 1 çarpı x artı beta 2 çarpı x kare. Şurada gördüğünüz modeli kuracağım. Ve ondan sonra yine betaları tahmin edeceğim. Şurada zaten gerçek betalar ve tahmin edilen betaları görüyorsunuz.
+
+429
+01:46:16,819 --> 01:46:36,279
+2, 0.2, 0.3'müş. Beta, 0, beta, 1, beta, 2 değerleri. Estimated değerlere de bakarsınız. 2'yi mesela 1.89 olarak tahmin etmiş. 0.2, 0.167 olarak tahmin etmiş. 0.3'ü de 0.349.
+
+430
+01:46:40,979 --> 01:46:52,839
+24, 325 diye ifade etmiş. Bir de min square error de yazdırmışım. Min square error ne olacak? Gerçeklerin arasındaki hata miktarı olacak. Tahminlerle gerçeğin arasındaki hata miktarı.
+
+431
+01:46:57,971 --> 01:47:20,791
+Şimdi şöyle bir şeyden bahsetmiştik. Modeli önceden bilemeyiz dedik. Dolayısıyla aynı data için farklı farklı modeller uygulanabilir mi? Tabii ki uygulanabilir. Yani aynı datayı siz first order ve second order modeller uygulayabilirsiniz. Burada onun bir örneğini görüyorsunuz.
+
+432
+01:47:21,951 --> 01:47:23,691
+Modelin gerçeği kırmızı olan.
+
+433
+01:47:24,148 --> 01:47:30,547
+Ve bu kırmızıdan siz datalar üretmişsiniz. Şu mavilerde bizim datalarımız. Yani modellerin parametrelerini kullanacak olan datalar.
+
+434
+01:47:31,828 --> 01:47:33,376
+Yeşil olan...
+
+435
+01:47:33,376 --> 01:48:00,895
+First Order bir model. Oturttuğumuzda elde ettiğimiz model. İşte o yeşil First Order model. Mavi olan ise Second Order bir model. Tabi burada gördüğünüz gibi hangisi daha başarılı gözüküyor? Mavi olan daha başarılı gözüküyor. Çünkü tahmin edilen modelle gerçek model birbiriyle oldukça uyumlular. First Order bir şey yok. Yani Second Order bir gerçeğe siz gidip Second Order bir model oturtursanız tabi ki daha başarılı olacaktır. Neye göre? First Order'a göre.
+
+436
+01:48:01,231 --> 01:48:27,792
+Tamam. Gerçeğin birinci dereceden olduğu fakat tahmin edilen modellerin birinci ve ikinci dereceden olduğu durumlar. Mesela gerçek data şeymiş, first order'mış. Burada enteresan bir durum var. Second order'da fena gözükmüyor değil mi? Yani second order bir estimate de, daha üst seviyeden bir estimate de oldukça iyi gözüküyor. Şimdi şuraya bakarsanız, gerçek data şu kırmızı.
+
+437
+01:48:28,595 --> 01:48:42,135
+Şimdi Estimated Data şu gördüğünüz yeşil. First Order Estimated model yeşil. Second Order Estimated model ise şu mavi. Görüyor musunuz? Şöyle bir şey oturmuş.
+
+438
+01:48:43,515 --> 01:48:55,355
+Şimdi buraya baktığımızda MinScore Error'larına baktığımızda hatta MinScore Error'lerde First Order 21, Second Order 18. Yani First Order'un hatası daha büyük. Neye göre?
+
+439
+01:48:55,923 --> 01:49:21,644
+Second Order'a göre, bunlar hata olduğu için küçük olması iyi bir şey. Burada bir enteresan bir durum var. Yani dataya, şuraya bakın, gerçek First Order. First Order bir dataya ben gidip birinci dereceden bir şey oturtmuşum, bir de ikinci dereceden bir şey oturtmuşum. İkinci dereceden, yani yanlış olanın hatası daha düşük birinciye göre. Değil mi? Bu oldukça enteresan. Hani düşündüğünüzde, hani şurada böyle bir durum yoktu.
+
+440
+01:49:22,292 --> 01:49:45,292
+Yani burada gerçekte tahmin edilen modeller birbirlerine uyumlu iken hata çok daha düşüktü. Mesela burada bir tanesi de 49, bir tanesine 3. Bakın, First Order'da 44, Second Order'da 3 hata. Yani gerçeği buydu çünkü Second Order'da. Burada ise gerçeğinden daha düşük bir hatası var. Bu ne demek?
+
+441
+01:49:46,612 --> 01:49:50,612
+Bir soru sorsam size. Bu niye böyle bir şey? Bu biraz garip değil mi?
+
+442
+01:49:52,612 --> 01:49:56,612
+Burada İlyam'a hocam, şeyi arttırırsak...
+
+443
+01:49:57,612 --> 01:49:59,612
+Neyi?
+
+444
+01:50:04,612 --> 01:50:07,612
+Senin ses çok şey geliyor ama...
+
+445
+01:50:07,612 --> 01:50:13,612
+Yani gördüğümüz trafikte iyi. Daha büyük bir şey verdiğim zaman...
+
+446
+01:50:15,444 --> 01:50:22,124
+Daha büyükten kastım şu anlamda mı? Bu tarafa ve bu taraftan örnekler verirsek anlamında mı diyorsunuz?
+
+447
+01:50:22,124 --> 01:50:22,804
+Evet hocam.
+
+448
+01:50:24,004 --> 01:50:33,864
+Bu taraftaki örnekler için, yani elimizdeki eğitim kümesinin domenini birazcık arttırırsak, kapsadalıklayıncı arttırırsak.
+
+449
+01:50:35,155 --> 01:50:45,856
+Hata çok daha büyüyecektir. Ama yine oraya da siz second order bir şey yaparsanız orada da yine biraz daha küçük bir hata elde edebilirsiniz belki ama neyse.
+
+450
+01:50:46,216 --> 01:50:57,096
+Dediğim şey doğru. İşin bir yol tarafı var. Yani mesela linear modelin hatası buralarda hala sabit kalacaktır, küçük kalacaktır ama second order mesela burada linearlikten giderek uzaklaşacak.
+
+451
+01:50:57,096 --> 01:51:02,716
+Bu tarafta da yine böyle linearlikten uzaklaşacak. Şöyle bu tarafa doğru bir şey gidecek. Asıl gerçekler bu tarafa doğru giderken.
+
+452
+01:51:03,155 --> 01:51:18,676
+Peki, buradaki ile buradakinin farkı ne peki? Bunun farkı ne? Burada gerçekten daha düşük seviyeli bir model tahmin ettik.
+
+453
+01:51:18,676 --> 01:51:25,256
+Bakın, gerçekten daha düşük seviyeli bir model tahmin ettiğimizde, gerçekten aynı olan daha iyi çıkıyordu.
+
+454
+01:51:27,028 --> 01:51:40,068
+Gerçekten daha üst seviyeli bir model tahmin ettik. Bu durumda gerçek modelden daha da başarılı gözüktü. Ama neyin üstünde o arkadaşlar?
+
+455
+01:51:43,699 --> 01:52:00,339
+Eğitimin üstünde, eğitim datasının üstünde. İşin aslı şu ki, siz eğitim datası üzerinde modelinizin parametre sayısını ne kadar arttırırsanız, eğitim kümesine o kadar yapışırsınız.
+
+456
+01:52:01,739 --> 01:52:03,559
+Eğitim kümesine yapışmak demek ne demek?
+
+457
+01:52:04,180 --> 01:52:26,460
+Belki bu kavramı daha önce duymuşsunuzdur. Overfit olmak demek. Yani gerçeğinden çok daha kompleks modeller oturtarak ne yapabilirsiniz siz bir datayı eğitim niyatasına yapışabilirsiniz. Buradaki yapışma tabirini tam üstüne gelme, ezberleme anlamında kullanıyorum.
+
+458
+01:52:27,315 --> 01:52:45,496
+Overfit'in tersi demeyelim de underfit mevzusu. Underfit de nedir? Gerçek modelden daha düşük seviyede, daha az kompleks bir şey oturtursanız oluşur. Underfit. Overfit ise gerçekten daha üst seviye bir şey oturtursanız.
+
+459
+01:52:47,796 --> 01:52:52,115
+Underfit de burada gördüğünüz gibi ne oluşur? Çok büyük bir fark oluşur şeylerin arasında.
+
+460
+01:52:52,627 --> 01:53:11,408
+Tahmin edenle gerçeklerin arasında. Fakat şeyde, overfit durumunda eğitim kümesi üzerinde fark zaten anlaşılmaz. Zaten şey olur, nedenle ona sizin daha yüksek dereceli modelleriniz daha iyi, daha düşük hataya sahip olurlar.
+
+461
+01:53:11,891 --> 01:53:27,731
+Bu modelinizin karmaşıklığı ne kadar yüksek olursa sizin eğitim kümeninizdeki hatanız da o derece düşük olur. Ne kadar karmaşık modeller o kadar düşük eğitim hatasıdır bunun karşılığı.
+
+462
+01:53:27,731 --> 01:53:31,991
+Anlaşıldı mı bu kavramlar? Underfit, Overfit.
+
+463
+01:53:31,991 --> 01:53:32,611
+Evet.
+
+464
+01:53:33,511 --> 01:53:33,771
+Tamam.
+
+465
+01:53:36,431 --> 01:53:38,956
+Burada mesela...
+
+466
+01:53:39,252 --> 01:53:52,752
+Üçüncü dereceden bir data üretmişiz. Daha sonra birinci dereceden, ikinci dereceden, üçüncü dereceden modeller oturtmuşuz. Bakarsanız bunların hataları gözüküyor burada. Bunları incelersiniz yine.
+
+467
+01:53:55,252 --> 01:54:03,752
+Şimdi bu X error grafı, X error grafı input'a karşılık hataların grafı.
+
+468
+01:54:04,756 --> 01:54:21,336
+Tabi bunu tek boyutta hata yüzeyi aslında bu, öyle söyleyebilirim. Tek boyutta olduğu için yüzey gibi gözükmüyor ama tek bir boyutunuz x değil de, x1, x2 falan gibisinden bir şeyleriniz olsa o zaman bir yüzeyden bahsediyor olacağız.
+
+469
+01:54:21,336 --> 01:54:25,616
+Şimdi bu yüzeye baktığımızda ne diyor?
+
+470
+01:54:26,076 --> 01:54:31,516
+If there is a pattern in x error graph, there is something unmodeled. Unmodeled demek?
+
+471
+01:54:31,956 --> 01:54:46,056
+Yani işin içine katılmayan bir şey var burada. İşin içine katılmayan bir değişkenden bahsetmiyorum. Bir order var. Şimdi buraya bakarsak, şimdi şurası mavi, burada da yazıyor herhalde, pardon.
+
+472
+01:54:46,056 --> 01:54:57,916
+Evet, mesela kırmızı olan first order modelin hataları. X'in farklı değerleri için. Yeşile bakarsak yeşil second order'ın hataları.
+
+473
+01:54:59,828 --> 01:55:27,368
+Maviye bakarsak bu da Third Order'ın hataları. Third Order gerçeğiydi. Tamam. Dolayısıyla gerçeğinde herhangi bir pattern gözükmüyor. Bakın, tamamen random bir sinyal gibi gözüküyor. Ama kendisinden daha düşük olanlar, yani gerçekten daha düşük, underfit çünkü bunlar. Overfit değiller. Kırmızı da yeşil de underfitler. Burada overfit yok. Yani overfit ne zaman olurdu? Bu datanın üzerine üçün üstünde bir dereceden model oturtursam.
+
+474
+01:55:27,828 --> 01:55:30,468
+Burada örneğe yapılmış değil.
+
+475
+01:55:32,028 --> 01:55:34,748
+Burada underfit'i anlamak oldukça kolay.
+
+476
+01:55:34,748 --> 01:55:39,048
+Eğer burada bir pattern varsa, şöyle olduğunda böyle oluyor, böyle olduğunda böyle oluyor.
+
+477
+01:55:39,088 --> 01:55:42,488
+Görebilirsiniz çok rahatlıkla. O zaman burada bir underfit var diyebilirsiniz.
+
+478
+01:55:42,648 --> 01:55:51,488
+Ama overfit'te, yani bunun dördüncüsünü de yapsam, mesela bu maviye oldukça maviden daha küçük sıçrayışlara sahip.
+
+479
+01:55:51,788 --> 01:55:52,368
+Öyle söyleyeyim.
+
+480
+01:55:52,819 --> 01:56:17,960
+Başka bir çizgi göreceksiniz. Böyle şeyler görmeyeceksiniz. Modeller görmeyeceksiniz. Patternlar oluşmayacak ondan. Overfit, underfit evet bunları söylemişiz. Model validation. Training set min square error reliable değil. Çünkü model karmaşıklığı arttıkça ne diyoruz? Training errorunda hatası giderek artacak. Ama testin hatası bir noktaya kadar azalıp daha sonra artmaya başlayacak.
+
+481
+01:56:20,627 --> 01:56:34,887
+Şu noktayı düşünürseniz, bu aslında gerçek data'nın belki de order'ı. Yani eğer elinizdeki modeli iyi tutturabildiyseniz, order'ın da bir problem varsa, order'ı bulmak için ne yapabilirsiniz? Bunu kullanabilirsiniz.
+
+482
+01:56:37,387 --> 01:56:40,887
+Model Validation için burada...
+
+483
+01:56:41,039 --> 01:56:46,000
+Tren ve test örnekleri var. First Order, Second Order yaptıkları hatalar var. Çok çok önemli değil.
+
+484
+01:56:46,659 --> 01:56:49,399
+Binal System Construction elinizde.
+
+485
+01:56:57,652 --> 01:57:25,231
+Şunların hepsi aslında linear sistem yapıları içerisinde kosünüs falan olması bir şey ifade etmiyor. Onu söylemeye çalışıyorum. Şuraya baktığınızda linearliği neyden ifade etmiştim? Şu betaların birbirleriyle, ilişkileriyle söylemiştim. Beta çarpı x1 artı beta 2 çarpı kosünüs x kare. Mesela şimdi böyle bir model linear bir model mi? Evet, linear bir model. Çünkü linear bir model ve de aynı zamanda neyle çözülebilir? Şurada yaptığımız şeyle çözülebilir.
+
+486
+01:57:25,652 --> 01:57:37,891
+Şu. Şuradaki bütün yaptığımız şeylerin hepsi sadece şu denklemi çalıştırmakla gerçekleştirdiğimiz şey, yani beta dediğimiz şey bu şekilde bulunuyor.
+
+487
+01:57:38,911 --> 01:57:42,611
+Şunlar bulunuyor. Kodlar da zaten rahatlıkla inceleyebilirsiniz.
+
+488
+01:57:43,711 --> 01:57:51,331
+Bunlar da yine dediğim gibi linear yapılar, hepsi, bunların hepsi ve buradakilerin hepsi o demin gördüğünüz şeyle çözülebilirler.
+
+489
+01:57:54,163 --> 01:58:08,623
+Multivariate bir şey yaptığınız zaman, şu ana kadar hep tek boyuttaydı. İşte x1 var, x2 var. Bunun karşılığında da fx1, x2 var. Burada gerçek maviler bizim datamız.
+
+490
+01:58:09,939 --> 01:58:32,759
+Yüzey, bizim estimated surface'ımız ve tam o yüzeyin üstüne düşmüş, tam çok iyi çizilmemiş burada da. Kırmızılar aslında mavilerin yüzey üzerine iz düşmüş halleri. Böyle bir modeliniz olduğunu varsayalım. Burada da yine demin bahsettiğimiz yapıyı kullanarak multivariate içinde bu.
+
+491
+01:58:34,260 --> 01:58:41,719
+Aynı şekilde beta değerlerini bulabiliriz. Gerçekleri böyleymiş. Tahmin edilen değerler böyleymiş.
+
+492
+01:58:47,028 --> 01:59:04,828
+Şimdi burada biraz daha farklı bir fonksiyon. Multi-Variate Second Order, yani x1 ve x2 var. Bir de x1 ve x2'nin kareleri var. Şuradaki Second Order karelerden geliyor. Multi-Variate ise x1 ve x2'nin olmasından geliyor.
+
+493
+01:59:15,923 --> 01:59:17,243
+Bir saniye arkadaşlar.
+
+494
+01:59:21,427 --> 01:59:38,807
+Tamam. Bu hala linear ve demin bahsettiğimiz yöntemle çözülüyor. Tabi buradaki betanın sayısı arttı artık. Beta 0, beta 1, beta 2, beta 3, beta 4. Ama işte şuradaki şu yüzeyyi yine biz ne yapabiliyoruz? Bu yapıyla, aynı yapıyla tahmin edebiliyoruz.
+
+495
+01:59:46,036 --> 02:00:01,115
+Şimdi B'ye göre linear bunlardan bahsetmiştik. Bunların hepsi linear diye geçebiliyorlar. Bunda bir sıkıntımız yoktu. Aynı şeyi kullanıyoruz. Fakat mesela şurada aşağıdakiler B'ye göre linear değiller.
+
+496
+02:00:12,372 --> 02:00:34,912
+Tersi çarpı y şeklinde ne yapamıyorsunuz? Tahmin edemiyorsunuz bunlarda. Çünkü bunlarda y ile b'nin ilişkisi lineer değil. Burada b başka bir şeyden içerisine geliyor. Burada sinüs mesela b1 çarpı x diyor. B'deki küçücük bir değişiklik y de büyük değişikliklere sebep olabilir burada.
+
+497
+02:00:40,500 --> 02:00:43,400
+Nasıl söyleyeyim?
+
+498
+02:00:52,659 --> 02:01:03,840
+Dönüşümler yapılabilir. Orası ayrı bir mevzu ama şuradaki mevzudaki linear according to b ve non-linear according to b'yi anlamak için ne yapmanız lazım?
+
+499
+02:01:05,619 --> 02:01:12,579
+Şimdi, a parameter beta of function f appears non-linearly if derivative is a function of beta.
+
+500
+02:01:17,844 --> 02:01:36,543
+Mesela şuna bakalım. İşte fx eşittir beta çarpı sinüs x. Burada bunun türevini aldığınız zaman, beta'ya göre türevini alırsanız bunun, şunu beta'ya göre türevini alırsanız burada sinüs x'i bulursunuz. Bu bulduğunuz şey betadan bağımsız mı? Bağımsız. Yani bulduğunuz şey türev, betadan bağımsız. Dolayısıyla model lineerdir.
+
+501
+02:01:39,872 --> 02:02:01,891
+Burada bunun türevini alırsak, burada x çarpı kosünüs beta x çıkar. Bu beta'dan bağımsız mı? Değil. Ya da mesela şu deminki örneklerde, beta'lara göre türev alırsanız burada, beta 1'e göre türev alırsanız burada, neyi görmezsiniz hiçbir zaman? Beta 1'i görmezsiniz hiçbir yerde yoktur.
+
+502
+02:02:04,692 --> 02:02:29,372
+Sadece mesela kosünüs x2'nin karesini görsünüz. Beta 2'ye göre türev aldığınızda burada. Dolayısıyla türev aldığınızda, o değişken betaya göre mesela türev aldığınızda elde ettiğiniz şeyin içerisinde beta var ise bu betanın bir fonksiyonudur hala demek. Dolayısıyla linear değildir demek. Peki, bu ayrımı bu şekilde yapabiliyoruz.
+
+503
+02:02:31,155 --> 02:02:42,555
+Burada çeşitli örnekleri var. Linear Equation yazamazsak ne yapabiliriz? Transformation to achieve linearity.
+
+504
+02:02:42,555 --> 02:02:48,555
+Linearity'ye erişmek için çeşitli transformasyonlar var. Yani daha önce de rastlamışsınızdır.
+
+505
+02:02:48,555 --> 02:02:54,859
+İşte ln x üzeri r mesela, r çarpı ln x'tir. Yani klasik matematik.
+
+506
+02:02:54,931 --> 02:03:13,171
+Tahtadaki dönüşüm kurallarını kullanarak siz non-linear bir modeli, linear bir modele dönüştürebilirsiniz. Mümkünse. Mümkün değilse non-linear regression yapacağız. Non-linear regression yapmamızın tek sebebi bu değil ama.
+
+507
+02:03:19,923 --> 02:03:37,344
+Şurada gördüğümüz şu çok kritik olan çözüm yöntemi. Analitik bir çözüm arkadaşlar. Analitik bir çözüm ne demek? Tek adımda buluyorsunuz bunu. Burada hani bir iteratif bir adım, adım ilerlemek falan gibisinden bir şey var mı? Orada yok.
+
+508
+02:03:45,684 --> 02:03:59,024
+Matiz çarpımı sadece, bir de tersini almalar. Ama temel olarak tek bir adımda bu işlem gerçekleşiyor. İteratif bir süreç yok. Fakat bunun uygun olmadığı durumlar olabilir mi? Olabilir.
+
+509
+02:04:01,011 --> 02:04:25,572
+Özellikle nerede bu karşımıza çıkıyor? Büyük boyutlu large scale problemlerde karşımıza çıkıyor. Yani X matrisi, Y matrisinin çok büyük olduğu, Y vektörünün, örnek sayısının çok büyük olduğu, boyut sayısının yani her bir örneğin içeride boyut sayısının çok fazla olduğu, değişken sayımızın yani çok fazla olduğu durumlarda bunu tek bir adımda çözmek mümkün değil.
+
+510
+02:04:26,260 --> 02:04:33,980
+Yani bir milyona bir milyonun bir matrisi tutup onun inversini almak mümkün değil.
+
+511
+02:04:34,780 --> 02:04:47,780
+O yüzden bu tarz çözülebilen problemler bile, öyle söyleyelim, yani linear bir şekilde yazılabilen large scale problemler bile yine iteratif bir çözümle çözümleniyorlar günümüzde.
+
+512
+02:04:48,440 --> 02:04:52,420
+Çok daha hızlı bir şekilde çözümleniyor. Zaten öteki türlü çözümlenemiyor, öyle söyleyelim.
+
+513
+02:04:53,268 --> 02:05:10,527
+Tek bir adımda çözemeyelim. Yani yolu var ama pratikte mümkün değil. Teorik olarak mümkün. Dolayısıyla iteratif optimizasyonu hem linear modellerin large scale hallerinde hem de non-linear modellerde kullanıyoruz.
+
+514
+02:05:10,527 --> 02:05:15,907
+Tamam mı? İkisi kullanma tarzlarımız.
+
+515
+02:05:19,731 --> 02:05:26,591
+Bunlara zaten bakarsınız. Evet arkadaşlar, yoruldunuz mu?
+
+516
+02:05:31,060 --> 02:05:51,040
+Eh, biraz yoruldunuz. Peki, o zaman şöyle bir şey yapalım. Şimdi önümüzdeki hafta, buradan nerede kaldık? Buradan devam edeceğiz. Daha birazcık işimiz var. Bu asıl iteratif optimizasyona gireceğiz. Asıl buradaki menzumuz önemli.
+
+517
+02:05:59,923 --> 02:06:17,923
+Bir saniye. Şöyle kapatayım artık. Şu kodları inceleyip üzerlerinde oynamalar yapmanızı bekliyorum. Tamam mı? Kodları erişebildiniz mi peki? Açıp içine bakan olduğuma, değiştirmediniz falan da erişebildiniz mi?
+
+518
+02:06:18,463 --> 02:06:23,683
+Hocam bir şey soracağım. Kodunun pdf'i veya farklı bir formatı var mı sizden?
+
+519
+02:06:23,683 --> 02:06:24,643
+Efendim?
+
+520
+02:06:25,555 --> 02:06:30,956
+Farklı bir formatta var mı bu kodlar? Mesela okumak istiyorum ama şu an bilgisayarda MATLAB yok.
+
+521
+02:06:33,536 --> 02:06:35,496
+Notepad'le açabilirsin mfile'leri.
+
+522
+02:06:35,796 --> 02:06:36,796
+Biliyor muyuz, tamamdır hocam.
+
+523
+02:06:37,715 --> 02:06:44,515
+Onlar text file çünkü. MATLAB bir interpreter. O yüzden Python gibi, yani Notepad'de de açabilirsin kodlarını.
+
+524
+02:06:47,615 --> 02:06:52,975
+Tamam, başka soru soru olan var mı kodlarla alakalı? MATLAB'i kurdunuz mu peki? Kimlerden MATLAB var?
+
+525
+02:07:01,268 --> 02:07:02,367
+Bir kişi kurmuş.
+
+526
+02:07:02,967 --> 02:07:10,747
+Lisans döneminde Metlab için lisans aldığımı hatırlıyorum ama şu an tekrar lisans almam gerekiyor. O süreç nasıl işliyor bilginiz var mı?
+
+527
+02:07:12,167 --> 02:07:14,047
+Şu anda hala lisans devam ediyor.
+
+528
+02:07:15,367 --> 02:07:17,807
+Yani ben lisans devamı almıştım.
+
+529
+02:07:19,187 --> 02:07:20,927
+Ama şeyin değişti mi?
+
+530
+02:07:22,167 --> 02:07:22,827
+E-posta değişti.
+
+531
+02:07:22,827 --> 02:07:27,007
+E-posta. Yeni e-postanda tekrardan alman gerekiyor. Aynen.
+
+532
+02:07:27,667 --> 02:07:28,427
+Tamamdır.
+
+533
+02:07:28,787 --> 02:07:39,268
+Tamam, yeni e-postanla, yani lisans üstü öğrenciliğinizin de size verilen e-posta adresiyle ne yapabiliyorsunuz? Lisans alabiliyorsunuz.
+
+534
+02:07:40,947 --> 02:07:46,268
+DreamSpark benzeri bir sistem vardı Microsoft için. MATLAB'te de o şekilde mi işliyordu hocam? Yoksa doğrudan...
+
+535
+02:07:47,123 --> 02:07:50,143
+E-Posta gelip de mi işliyor? O noktada takıldım açıkçası.
+
+536
+02:07:50,743 --> 02:08:05,283
+E-Posta gelmiyor galiba ya. E-Postadan çok şimdi emin olun. Ben de E-Posta'da uzun zaman oldu da direkt hatırlamıyorum. Bilgi işlemin içerisinde şey vardı. Bilgi işlemin sayfasında bir örnek vardı. Hatta burada kuran arkadaşlar birazcık uğraşırsanız kurarsınız. Çok sıkıntılı bir şey değil.
+
+537
+02:08:06,103 --> 02:08:06,563
+Tamamdır.
+
+538
+02:08:07,891 --> 02:08:33,431
+Mutlaka kurun arkadaşlar. Bu kodları denemeden iyi olmaz. Bunları bakmış, indirip çalıştırmıştım. Güzel, [öğrenci] denemiş. Tamam. Peki. Peki arkadaşlar. O zaman haftaya bu soruyu sorduğumda büyük bir miktar sizlerden evet cevabını bekliyorum. Hangi soruyu? Kodları çalıştırdınız mı? Tamam.
+
+539
+02:08:33,971 --> 02:09:01,912
+Metleri kurarken full kurmanız da gerekmiyor. Çünkü çok fazla şu en son yani 2020'deki versiyonlarda artık her şey için toolbox var. Full kurmaya kalkarsanız gigabaytlerce yerinizi boşu boşuna alıyor. Minimum miktarda kurun. İçerisinde işte deep learning vesaire gibisinden birkaç tane şeyi ekleyin. Onlarla kurun. Daha sonra bir şeyler gerektirirince daha sonra tekrardan tekrardan kurabiliyorsunuz zaten. Yani ekleyebiliyorsunuz.
+
+540
+02:09:01,971 --> 02:09:21,011
+Sistem en baştan kurmanıza gerek kalmıyor. Başta tam kurayım falan gibisinden bir şey yapmanıza gerek yok. Minimum gereksinimlerle kurun. Gerektikçe onları kurabilirsiniz. Simbolik toolbox var. Aklıma gelen onlar lazım. Kodları çalıştırmak için düşünüyorum.
+
+541
+02:09:21,684 --> 02:09:39,083
+Şu anki kodlar için herhalde simbolik toolbox yeterli olur. Şu anda öyle deep learning ile falan alakalı herhangi bir şey daha zaten yapmadık. Ama deep learning, machine learning, statistical learning onlarla alakalı toolboxları baştan kursanız iyi olur. Tamam mı? Peki arkadaşlar.
+
+542
+02:09:39,083 --> 02:09:41,903
+Ödevi ne zaman vereceksiniz?
+
+543
+02:09:42,243 --> 02:09:43,703
+Haftaya. Yazmıyor mu?
+
+544
+02:09:44,659 --> 02:10:12,199
+Bilmiyorum da. Yazıyor. Yazıyor değil mi? Ne üzerine oluyor? Nasıl oluyor hocam? Haftaya. Kod olacak. Kod yazacaksınız. Metlab mı? Yok, size kalmış. Metlab'de de yazabilirsiniz. Başka bir şey de yazabilirsiniz. Yani benim istediğim şeyi yapın. Programlama diline ben karışmıyorum. Hocam haftaya mı vereceksiniz yoksa haftaya kadar mı? Anlamadım. Haftaya vereceğim.
+
+545
+02:10:12,692 --> 02:10:18,172
+Tamam. Bir an dersi kaçırdım mı diye düşündüm de ödev verdiğinizi de duymadım mı diye.
+
+546
+02:10:18,231 --> 02:10:22,391
+Yok, yok, yok. Hayır, hayır. Haftaya vereceğim ödevi. Ondan sonraki haftaya kadar olacak.
+
+547
+02:10:23,132 --> 02:10:23,832
+Tamamdır hocam.
+
+548
+02:10:25,971 --> 02:10:27,992
+Peki arkadaşlar, başka soru var mı?
+
+549
+02:10:33,300 --> 02:10:47,840
+Peki, yine son söz olarak söylüyorum. Kodları çalıştırın. Tamam mı? Çok daha iyi kavrarsınız ne oluyor, ne bittiğini. Özellikle şimdi bu önümüzdeki hafta yapacağımız iteratif optimizasyon kısmı için özellikle çok çok kritik orası.
+
+550
+02:10:49,060 --> 02:10:59,579
+Peki arkadaşlar, haftaya görüşmek üzere. Aynı gün, aynı saatte diyorum. Hepiniz sağlıcakla kalın. Hepinizin Cumhuriyet Bayramı şimdiden kutlu olsun. Görüşmek üzere.
+
+551
+02:11:04,115 --> 02:11:05,015
+Görüşürüz hocam.
+
+552
+02:11:05,615 --> 02:11:07,515
+Görüşmek üzere. İyi akşamlar.
+
+553
+02:11:07,875 --> 02:11:09,375
+Teşekkürler hocam. İyi akşamlar.
+
+554
+02:11:09,655 --> 02:11:11,155
+Rica ederim. İyi akşamlar.
