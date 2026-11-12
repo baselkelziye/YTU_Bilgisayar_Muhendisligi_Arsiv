@@ -1,0 +1,1631 @@
+1
+00:05:56,180 --> 00:06:02,680
+Evet arkadaşlar, yazdımdan bir dakika geçiktim galiba. Bir iki dakika. Özür dilerim. Başlıyorum.
+
+2
+00:06:05,079 --> 00:06:11,379
+Şimdi, her şeyi daha evvelerden açamamış oldum. Kusura bakmayın. Açalım şimdi.
+
+3
+00:06:22,324 --> 00:06:37,884
+İfak örneği kullanılacak uygulamayı incelemiştik. Unit testing'e bakmıştıkları hatırlıyorum. Ondan sonra, şimdi artık bugünden itibaren kodsmall ve ifak örnekleri tanımaya başlayabiliriz.
+
+4
+00:06:41,884 --> 00:06:42,884
+Şimdi...
+
+5
+00:06:42,884 --> 00:06:44,884
+Şuradan ders malzemesi...
+
+6
+00:06:56,403 --> 00:07:00,683
+Evet, şimdi kestikten sonraki kutum, şartı olma şirketi asfett.
+
+7
+00:07:01,843 --> 00:07:03,144
+Şimdi peki tamamen.
+
+8
+00:07:03,923 --> 00:07:04,363
+Evet.
+
+9
+00:07:05,683 --> 00:07:06,144
+Ağır.
+
+10
+00:07:17,588 --> 00:07:22,487
+Evet arkadaşlar, şimdi şu şekilde ilerleyeceğiz.
+
+11
+00:07:25,427 --> 00:07:36,307
+Önce bir kod kusurunu göreceğiz. O kod kusurunun tanımını, nasıl neden ortaya çıktığını, ne gibi problemlere yol açabileceğini söyleyeceğiz.
+
+12
+00:07:36,307 --> 00:07:46,307
+Ardından o kod kusurunu giderebilecek refactoring eylemi üzerinden onun ne olduğunu anlatıp konuşacağız.
+
+13
+00:07:53,427 --> 00:08:20,768
+Bu konuda olabiliyor. Bunları en uygun olan eşleştirmeler üzerinden anlatıyor olacağız. Bu içerik Martin Folder'ın Factor'ın kitabından alınmıştır. Oradaki bütün kod kusurlarını dahil etmedik misle data. Üçte biri kadarını dahil ettik. Geri kalan kısmı için bu işi sizlere bırakıyor.
+
+14
+00:08:21,427 --> 00:08:26,108
+Tabii ki sınavlarda bu ders kapsamında gördüğümüz kadarı geçerli olacak.
+
+15
+00:08:26,108 --> 00:08:33,048
+Onun dışında bu dönemden itibaren aslında bir haftamız daha oldu. 15 haftaya çıktı dönem.
+
+16
+00:08:33,467 --> 00:08:41,347
+Ama buna rağmen yine de içeriği biraz daha genişletmeye çalışsam diye düşünüyorum.
+
+17
+00:08:52,947 --> 00:09:03,347
+Mesela, çiçe kıhlamur denileceksiniz diyelim ki poşetin içerisinde bir tutamlı kıhlamur çekersiniz ama onun darları falan daha çok kıhlamur çıkmasına sebep olur.
+
+18
+00:09:03,347 --> 00:09:15,147
+Ben de şimdi bir haftalık malzeme daha anlatayım diyeceğim, bir çekeceğim, üç haftalık malzeme çıkacak falan olmayacak. O yüzden bu kısmı bir introduction şeklinde düşünün lütfen.
+
+19
+00:09:15,147 --> 00:09:20,947
+Bu konular sizi ilgilendiriyorsa bundan sonrasının çalışması da size kalmış oluyor.
+
+20
+00:09:20,947 --> 00:09:29,967
+Demek istiyorum. Evet, şimdi ilk kut kusurumuz ki bunun hata olmadığını hatırlatırım. Sadece kullanılan programlama yaklaşımının.
+
+21
+00:09:30,676 --> 00:09:55,536
+Önerdiği şeklin dışında kullanımlar, kullanım örnekleridir genelde. Ve yazılımın esnekliğini düşünen olgulardır. Başka bir deyişle bağlaşımını yükselten ki düşük olması gerekirdi. Ve uyumunu düşüren ki yüksek olması gerekirdi. Olan olgulardır. Kod kusurları.
+
+22
+00:09:55,892 --> 00:10:10,892
+Şimdi ilk kod kusurumuz Duplicate Code. Ben sınavda yine bu kod kusurlarının ve refactoring eylemlerinin literatürdeki İngilizce isimlerini vererek anlatmanızı isteyeceğim.
+
+23
+00:10:18,004 --> 00:10:25,504
+İngilizcesini istiyoruz sizden. İngilizce ad siyasının başlığında yer alıyor.
+
+24
+00:10:27,443 --> 00:10:32,723
+Altında da uygun görüntü için karşılık yer alıyor.
+
+25
+00:10:33,343 --> 00:10:43,743
+Şimdi yinelenen kod, Duplicate Kod adı üstünde aynı kodun veyahut da çok benzer bir kod yapısının birden fazla yerde tekrarlanması durumudur.
+
+26
+00:10:43,743 --> 00:10:47,384
+Kopya ve yapışlık programlama yaptığımızda genelde bu olgu.
+
+27
+00:10:48,436 --> 00:11:05,436
+Mutlaka bu olgu çıkar. Kopyeri yapıştır yaptığımızda. Ufak düzenlenen yaparsınız. Yapıştırdığınız yer de ki durumla ilgili. Ama bu tarama çok benzer kod yapısı da dahil olduğu için ortaya çıkan durum duplicate code kusurdur.
+
+28
+00:11:16,436 --> 00:11:42,676
+Bu da bir bakım kabusu oluyor arkadaşlar. Bakım çalışmalarını çok zorlaştırıyor. Peki, bu problemin çözüm için ne gibi bir faktör eylemleri kullanabiliriz?
+
+29
+00:11:43,539 --> 00:11:48,500
+Öncesi, ilk önce Extract Method konusunu düşüneceğiz.
+
+30
+00:11:50,119 --> 00:11:56,379
+İğnilerinde bu tekrardanan kodu, tekrardanan yerlerden çıkartıp Extract.
+
+31
+00:11:57,107 --> 00:12:11,307
+Ekstrakt edip yeni bir metot haline getirmektir. Başka düzenlemelerde var dupliket kodu toparlamaya yönelik. Onları da ısrarla söyleyeceğiz.
+
+32
+00:12:11,956 --> 00:12:37,556
+Üye alanları adlandırırken de bu defactoring'den öncesi ve sonrası kodun gösterildiğinde o siyah beyaz tek renk kod içerisinde ne üye alanmış ne parametreymiş onları daha güzel farkına varabilmek için birbirinden ayırt edebilmek için kullanılan bir alışkanlıktı demiştik. Yoksa IDE kullanıyorken böyle bir şey gerek yok biliyorsunuz. IDE'de renklendirmesi var, vurgulaması var vesaire.
+
+33
+00:12:39,475 --> 00:13:06,716
+Gelelim Extract Method işlemine. Şimdi zaten belirli bir kod kursunu gideren belirli bir refactoring eylemi şeklinde ilerlediği için de kod kursunun örneklenmesine çok gerek yok. İlgili refactoring anlatırken o kod kursunu görebilmektedir. Her zamanda öyle olmuyor ama eğer tanımları birazcık kalma şaksa mutlaka kod kursunu da kod üzerinde gösterdiğimiz olacaktır.
+
+34
+00:13:07,475 --> 00:13:12,675
+Şimdi peki, Ex-Refactoring Eylemi olarak Extract Method nedir? Metot çıkartma.
+
+35
+00:13:12,675 --> 00:13:27,716
+Bir metot, bu ister duplicate kodu için olsun, ister çok uzun olarak yapılmış metotları değerli toparlamak için olsun, bir metot içerisindeki kodun bir kısmını yepyeni bir metot olarak verilmeye dayanıyor.
+
+36
+00:13:28,196 --> 00:13:32,895
+Ve Extract Method sadece bu duplicate kodu çıkarmıyor, kaldırmıyor.
+
+37
+00:13:35,475 --> 00:14:02,735
+Bu problemini de azaltan bir faktörlük eylemiz. Tamam, metodu ekstrakt ettik ama bunu da adlandırırken güzel bir adlandırmalıyız. O yeni metodun amacını açıkça belirsin. O yüzden isaretli bir seçim yapmaya özen göstermeliyiz ki bu bize alt düzey ayrıntılarla uğraşmadan kodun geleneğinin anlaşılabilirdiğini iyileştiren bir yaklaşımdır. Örneğimizi görelim.
+
+38
+00:14:03,091 --> 00:14:14,771
+Geçen hafta da söylemiştim. Defactoring'den öncesi ve sonrası şeklinde gösteriyor. Önceki kısım, konun önceki hali, konun önceki hali solda. Sonraki hali sağda.
+
+39
+00:14:14,771 --> 00:14:15,771
+Şimdi...
+
+40
+00:14:16,340 --> 00:14:37,039
+Bu tarafta PrintOring diye bir metot görüyorsunuz. Şu kadar borcumuz var türünden. Bunu ekrana yazdıracak. Önce ne yapılmış? PrintBanners metodu çağırılmış. Sonra Command koymuş programcı. Ayrıntılar yazılacak demiş. Ondan sonra ismi ve miktarı yazmış diyelim ki.
+
+41
+00:14:43,635 --> 00:15:03,756
+Öncelikle bir dönem yazılıyor. Ne denildi? Ön not, son not. Ya da başlık ve kapanışlar. Önce bir başlık yazılıyor. Ondan sonra cümlen. Sonra da ayrıntıları yazılıyor. Aslında bu print on mektudunda iki ayrı iş yapıldığından bahsedebiliriz.
+
+42
+00:15:04,179 --> 00:15:25,979
+Bu durumda yapılan ikinci işin yani NM ve Amount'ların yazılmasını, aylıntılar yazılması, borcunun aylıntıların yazılmasıyla ilgili olduğunu görüyoruz. O kısmı kesip çıkartıp ekstrak edip sağ tarafta sonraki halinde PrintDatares diye yeni bir metoda aktarıldığını görüyoruz.
+
+43
+00:15:28,699 --> 00:15:30,759
+Ama tabi bu yapılırken
+
+44
+00:15:31,412 --> 00:15:59,272
+Önceki halinde bakın amount parametresi var. Metot parametresi olarak geliyor. Bu parametre ekranı yaptırılacak ve bu parametre aslında ayrıntılar kısmında kullanılmak üzere print-on-link metoduna verilmiş. Ama biz şimdi oradan metot extract ediyoruz. O zaman şimdi oraya ne yapmamız gerekiyor? O amount'u yine parametre olarak tanımlamamız gerekiyor bu yeni metotta da. O zaman
+
+45
+00:15:59,412 --> 00:16:10,351
+Önceki halindeki orijinal metodun içinden sonraki halinde bu yeni extract ettiğimiz metodu da çağıracak şekilde sağ tarafta değişikliğimizi yapıyoruz.
+
+46
+00:16:10,351 --> 00:16:19,032
+Bunun aynı zamanda dikkat ederseniz sağ tarafa geçtiğimizde herhangi bir koment yazmak zorunda da hissetmedik kendimizi.
+
+47
+00:16:19,451 --> 00:16:26,351
+Çünkü bu Print Onig metoduna baktığınızda isimleri de güzel seçildiği için hemen anlıyoruz ki önce
+
+48
+00:16:27,572 --> 00:16:36,172
+İşte giriş kısmı yazılıyor. Sonra da AYOTAR yazılıyor. Bitti. Şimdi ben artık bu metodun ne yaptığını çok iyi anlayabilirim. Hızlıca, kolayca anlayabilirim.
+
+49
+00:16:36,500 --> 00:16:44,620
+Ama diyelim ki gerek Banner basında bir problem oldu diyelim veya bir şeylerin değiştirmesi, inenmesi gerekiyor diyelim.
+
+50
+00:16:44,620 --> 00:16:57,659
+Veyahut da Print Literary kısmında bir hata var veya yeni geliştirme isteği var. O zaman gidip sadece o ilgili iki alt metottan hangisinde işlem yapmam gerekiyorsa gidip o metotla işlem yapıyorum.
+
+51
+00:16:58,035 --> 00:17:12,195
+Ana hatlarıyla öncelikle PrintOring metodunu bir bakışta anlayabiliyorum. Ama yapıların için ayrıntılarını öğrenmem gerekiyorsa da o zaman bunun içlerinde çağırılan metodların oldukları yere gidip bunun ayrıntılarını inceleyebilirim.
+
+52
+00:17:13,236 --> 00:17:22,496
+Ama mesela diyelim ki önceki halinde çok daha uzun bir metod içerisinde ben şimdi acaba nereyi değiştirmeliyim, nerede hata var kısmını aramak yerine.
+
+53
+00:17:22,496 --> 00:17:37,916
+Şimdi en azından buradaki örnekte problem uzunluğu ikiye böldük. Problem ya Printman ya da Print details da. Ona göre artık daha kolay yutulabilir lokmalar şeklinde yemeği yemek gibi düşünebilirsiniz.
+
+54
+00:17:38,476 --> 00:17:41,196
+Büyük bir lokma yutmak daha zor ama küçük bir yutmayalım.
+
+55
+00:17:41,236 --> 00:17:50,316
+Daha kolay, hızlı. Yani bir seferde her şeyi birden yapayım yaklaşımı her zaman için doğru bir karar olmayabiliyor. Buradaki durumumuzda da durum bu.
+
+56
+00:17:51,188 --> 00:18:18,867
+Tabiki, aslında bakarsanız hocam burada zaten topu topu önceki halinde 1, 2, 3 sat, 3 komutu var diyelim. Printlerler 2 satıra geçmiş ama tek sayıyorum. 3'tü. Şimdi iki ayrı metot toplamda biraz uzadı gibi derseniz bu kadar basit kısmında haklısınız. Evet ama bu iş daha çok daha uzun metotlarda yapılan bir şey. Bu sadece bu refactoring eyleminin nasıl yapıldığını.
+
+57
+00:18:19,188 --> 00:18:34,827
+Sizlere gösterebilmek için. Örnekleyerek gösterebilmek içindir. Tabii ki daha kanlı çıkı metotlar da bu işlemin yapılması daha çok şey kazandıracaktır bize. Bir de komentin de ortadan kaybolduğuna dikkatimizi çekelim.
+
+58
+00:18:34,827 --> 00:18:44,827
+Sonra taraftaki koment ortadan kayboldu. Sağ tarafta print. Oyunki metodun içerisinde öyle güzel yazdık ki metodun adını ne yapılacağı zaten belli oluyor.
+
+59
+00:18:45,523 --> 00:18:57,303
+Şimdi genelde programlar yeni başlarken her yere command coin denir. Yaptığınız şeyler değiştirdiler. Hep command de yazın yazın. Şimdi biraz daha farklı çalışmaya çalışıyorum.
+
+60
+00:18:57,303 --> 00:19:09,183
+Önce yapalım ki hiçbir command satırı yazmaya gerek kalmadan programa bakan, inceleyen, anlayabilsin programı şeklinde bir hedefimiz var.
+
+61
+00:19:12,339 --> 00:19:13,920
+Bir dakika nasıl işaret ediyorum?
+
+62
+00:19:39,412 --> 00:19:51,452
+Evet, şey buydu. Long Method, Toplu Zerim Duplicate Code ve bunu düzeltecek Refactoring Eğlenmesi olan Exact Method buydu.
+
+63
+00:19:51,452 --> 00:19:59,972
+Şimdi girelim ikinci kod kutupumuza. Long Method. Bunu aşırı uzun kod diye çeşitlemek istiyorum.
+
+64
+00:20:00,000 --> 00:20:08,000
+Açıklı bulmak, vurgulamak için. Çünkü bir metodun uzunluğu attıkça bunu anlamak...
+
+65
+00:20:08,175 --> 00:20:20,175
+Daha zor oluyor ve o metot daha büyük bir hedef haline geliyor. Gerek hatalar için gerekse gereksinlik değişikliklerinde etkilenecek bir parça olması açısından.
+
+66
+00:20:21,775 --> 00:20:36,175
+Üçüncü olarak da bir metot ne kadar uzunsa o kadar çok iş yapılıyor anlamına gelmektedir. Ve o işlerin birbiriyle yakınlığının, ilgisinin azalma riskinin düşündüğü.
+
+67
+00:20:36,175 --> 00:20:56,715
+Bu da uyumu düşüren bir etken olarak değerlendiriyoruz. Bağlaşım boyum en temel iki iç kalite kriteriydi. O yüzden dediğim gibi yanlış çalışma değil fakat kodun kalitesini düşüren olgular bunlar.
+
+68
+00:20:57,332 --> 00:21:22,432
+Peki nasıl düzenleyebiliriz kutku sorunu ortadan kaldırmak için? Bir kere ekstrak metot yapabiliriz elbette. O metotlar ne kadar yapılan alt farklı işler olduğunu bulup belirleyip o kısımları kendi ayrı metotlara çıkartabiliriz. Ama başka şeyler de var. Onlara da değineceğiz sırayla.
+
+69
+00:21:25,140 --> 00:21:41,100
+Örneğe bakalım. Evet, bu örnek biraz daha anlaşılıyor. Önceki haline bir bakalım. İşte borç makbuz yazılacak diyelim ki. İçerisinde işte iki tane geçici.
+
+70
+00:21:41,536 --> 00:22:00,356
+Birisi nesne, birisi ilke. Ondan sonra Command koymuş. Öncelikle banner bastırıyormuş. Tamam peki. Ondan sonra yine Command koymuş. Toplam borç hesaplanacak diyor. Yapmış işlemli var döngüsü içerisinde her bir order için.
+
+71
+00:22:01,875 --> 00:22:25,855
+Video örneğindeki Rental gibi de düşünebilirsiniz. Rental için. Rental alıyor ve onundan kaynaklanan borcu geri almak üzere getirme tutundan alıp kümülatif toplamda bu outstanding'i üstüne yazıp biriktiriyor. Sonra da yine bir command koymuş. Ne oluyor şimdi? Aynı tırağı basılıyormuş. İşte isim şu, borç şu şeklinde bir iş yapılıyor.
+
+72
+00:22:29,875 --> 00:22:42,795
+Bu anlamındadır. Ve burada komandları saymazsak, 2 yukarıda, geçiş tanımları, 3, 6, 9 da orada toplamda 11 kod satılık.
+
+73
+00:22:42,795 --> 00:22:46,056
+Bir şey, ha gel şu aşağı.
+
+74
+00:22:49,044 --> 00:23:17,044
+Kaymış sadece. O rap olmuş. O zaman neyde? Şimdi 2, 5, 8, 10. 10 satılmış. Tamam peki. 10 satılık bir metot. Şimdi bakıyorum. Madem bunun içerisinde 3 aile iş yaptığı gözüküyor. Commandlerden de gözüküyor. O zaman şimdi nasıl yapacağız? Bir kere şu IronTurum yazılma işini PrintLitres diye bir metodu extract edelim. Bir önceki örnekte olduğu gibi Outstanding Borcu buna verilmiş.
+
+75
+00:23:17,044 --> 00:23:20,504
+Önmek durumunda ekran yansıtılacak. Bunu ekstrakt ettik.
+
+76
+00:23:20,832 --> 00:23:48,652
+Ondan sonra şu var döngüsü içerisinde yapılan kümülatif toplam hesaplamın da başlı başına bir iş. Onu da get out of turning diye adlandırdığımız bir metot içerisinde geçici değişkeni burada ihtiyacım var artık. Yukarıda yok. Bunun için de kümülatif toplam için de out of turning değişkeni. Ondan sonra bir de bu işi işte eteriyeti elemanısıyla falan almaktansa hızlıca for each döngüsüne.
+
+77
+00:23:48,832 --> 00:24:02,992
+Koymak, daha kısaltmak ya da daha fazla geliyor diye düşünüp değerlendir. ForEach göndersinde bunu yapıyorum. While değil de ForEach içerisinde. Ondan sonucuma ve hesaplamada döndürüyor. Tamam.
+
+78
+00:24:03,392 --> 00:24:16,192
+Banner'ın yazılması başlı başına iş. Onu da ayrı metodlar. Şimdi gelelim şeye. Bütün bunları kullanarak da PrintOring metodunu neye benzeteceğiz? Bir kere PrintBanner çağrılacak. Tamam.
+
+79
+00:24:16,832 --> 00:24:25,912
+Sonra ayrıntılar yazılacak. Ama ayrıntılar yazılırken de bu outstanding yani toplam borcunun hesaplanıp ona verilmesi lazım.
+
+80
+00:24:25,912 --> 00:24:43,052
+Tamam güzel. O da zaten metot olarak elimizde var. Get outstanding'in içerisi toplam borcu hesaplanmış olur. Zaten yapılması gereken bir iş yapılmış olur. Ondan sonra bu bilgiyi kullanarak da ayrıntılar yazılır şeklinde. Daha odaklanmış metotlar içeren hale getirdik kodu.
+
+81
+00:24:44,832 --> 00:25:08,752
+Baktığımızda daha fazla olabilir veya aynı olabilir. Ama bu sefer metotlar çoğaldı diyebilirsiniz. Fakat burada önemli olan artık metotlar kısaldı. Sayısı artmakla birlikte bunlar artık küçük lokmalar hale geldi. Gerekirse her birini hızlıca okuyup, anlayıp, hadasını düzeltip ne yapacaksak yaparız.
+
+82
+00:25:10,544 --> 00:25:22,544
+Bütün bunların tek bir metotla toplanmış olduğu halde, şimdi acaba ben nerede bir oraya gideceğim de, ineceğim de, bulacağım da, gerçekten onu da mıymış da onu düzelteceğim de böyle işler yapacağım.
+
+83
+00:25:22,544 --> 00:25:31,544
+Ayrıca kaldı ki biliyorsunuz bu tip metotlar içerisinde kodu biriktirme zaten yazının modellerliğinde arttıran bir şeydir.
+
+84
+00:25:31,544 --> 00:25:38,544
+Ben ekstrak ederek ortaya çıkarttığım metotlar başka yerlerde de işime yarayabilecektir. Direkt artık orada onu çağıralım.
+
+85
+00:25:38,544 --> 00:25:50,184
+Daha dupliket kod ortaya çıkmadan o dupliket kodu engellemişti olduk. Bu işle ilgili metod yazarak da ihtiyacımız olan yararından o metodu çalacağız. Olacak bitecek.
+
+86
+00:25:52,019 --> 00:26:01,019
+Evet, o yüzden print details yapabilmek için ona artistlerinin hesaplaması verilmesi lazım. Hesaplaması verilmesi gerekiyor.
+
+87
+00:26:01,019 --> 00:26:14,019
+Hepsini de görüyorum. Benim yine artık komandilere ihtiyacım kalmadı. Çünkü hepsinin ne yaptığı anlamlı isimlendirilmiş metotlar sayesinde anlaşılabiliyor.
+
+88
+00:26:19,059 --> 00:26:21,880
+Peki. Evet.
+
+89
+00:26:22,779 --> 00:26:28,660
+Hoşbulduk. Hepsi sözse söylemiş olduk. Ayrıca da biriktirmişim ama sözse söylemiş olduk hepsine.
+
+90
+00:26:29,460 --> 00:26:34,320
+Bir tek şu üçüncü parçadan bahsedelim. Üçüncü ana madde elinden.
+
+91
+00:26:34,860 --> 00:26:44,700
+Şimdi şunu diyebilirsiniz. Bu arada isterseniz sesinizi açın, kafanıza yatmayan bir şey olursa söyleyin, tartışalım.
+
+92
+00:26:44,700 --> 00:26:51,660
+Şimdi şu aklınıza gelebilir belki. Daha evvel tek bir metottu, şimdi dört metot oldu.
+
+93
+00:26:51,955 --> 00:27:19,535
+Evvelten bir metot çağırılıyordu. Şimdi yine bir metot çağırıyor ama onun içinden başka metotlar da çağırılıyor. Toplamda 4 metot çağırmış olunuyor diyelim. Bu sefer yönetilmesi gereken parça sayısı artıyor diyebilirsiniz. Evet, bu bir dezavantajdı. Ama bu dezavantaj elde ettiğimiz kazanımlar karşısında çok daha küçük kalmaktadır. Bu yüzden tencif ediyoruz bu parçalmayı.
+
+94
+00:27:19,955 --> 00:27:28,335
+Ayrıca, hocam, metot içerisinde, metot onun içerisinde yine metot çağırıyoruz. Her bir yeni metot çağırımında context switching yapılıyor.
+
+95
+00:27:28,335 --> 00:27:41,735
+İşte çağıran metodun durum bilgisi, heap'te bir siteye, yığını atılıyor. Ondan sonra yeni çağıran için yığının üstüne yeni bir alan ekleniyor.
+
+96
+00:27:42,075 --> 00:27:47,955
+Her bir metottan geri dönüldüğünde pop ederekten bir önceki metodun...
+
+97
+00:27:47,955 --> 00:27:55,335
+Bu durumda nerede kalmış olaylar, değişkenler, sayıçlar, şunlar bunlar tekrar kaldığı yerden devam etmesini sağlıyor.
+
+98
+00:27:55,795 --> 00:28:01,875
+Sağlıyor değerleyici. Ama işte bunları yapabilmek için arkasında kendisi çeşitli işler çalıştırıyor.
+
+99
+00:28:01,875 --> 00:28:05,875
+Buna da Context Switching Overhead diyoruz.
+
+100
+00:28:07,635 --> 00:28:28,135
+Evet, böyle bir şey var ama çoğunlukla eskide kaldı arkadaşlar. Modern derleyiciler ve yorumlayıcılar bu kontekst switching'in yükünü önemli oranda azaltmaktadırlar. Burada genelde eminimli bir şeyler yapabiliyorlar bunu. Her şeyden önce şey yapıyorlar.
+
+101
+00:28:34,675 --> 00:28:43,659
+Yorumlanan diller, Just-in-time compiler'lar şeklinde. Direkt derlenen diller ise...
+
+102
+00:28:43,923 --> 00:29:02,464
+Şöyle söyleyeyim, kodu inceleyip gerekirse out of order execution yaparaktan birbirine bağımlı olmayan kod bloklarını ayrı ayrı çalıştıraraktan vakit bulduğu zaman önceden çalıştırıp yoğun olduğu zaman beklemekten sonra şimdi çalıştırım diye karar verebiliriz.
+
+103
+00:29:02,464 --> 00:29:11,923
+Böyle bir optimizasyon yapılıyor arkadaşlar. Yani artık context switching'in ek yükü yok denilecek kadar azaldı.
+
+104
+00:29:11,923 --> 00:29:17,584
+Modern deri cilave. O yüzden işini zahat etsin demek istiyorum.
+
+105
+00:29:27,251 --> 00:29:54,231
+Şimdi, bu Duplicate Kodu görmüştük bu arada. O bir hatırlatalım. Başka düzenlemeler de var. Örneğin, Plot Metot var. Şimdi, Plot ya da Push Down gibi isimler görürseniz, Up Down dediği kalıtım hiyerarşisinde yukarı çıkmak, üst sınıflara doğru çıkmak veya alt sınıflara doğru inmek şeklinde algılanmalıdır.
+
+106
+00:29:55,251 --> 00:30:14,852
+Plot metotta tamam bir metot ekstrakt ediyorum. Fakat bu ekstrakt ettim metot aynı sınıfta kalıyorsa işte o ekstrakt metottur. Ama bu sınıf bir kalıtım yerleşmesi içerisindeyse ekstrakt ettim metodu bir ya da daha yukarı ki bir üst sınıfa yerleştiriyorsan o zaman buna plot metot deniliyor.
+
+107
+00:30:16,692 --> 00:30:18,852
+Şey bu anlamı bu.
+
+108
+00:30:21,076 --> 00:30:35,715
+Code'un aynı olmadığı fakat benzer olduğu durumlarda ufak tefek varyasyonları modellemek için belki de şey kullanabiliriz. Template metot tasarım kalıbını kullanabiliriz.
+
+109
+00:30:44,339 --> 00:31:12,339
+Design Pet'e çalıştık. Aksi olsaydı bir de şimdi bu template metotu neymiş onu anlatmak gerekecekti. Ama zaten anlatmış, anlamış olduk. O yüzden böyle söylememiz yeterli. İşte bu benzer kodun template metot kurmak suretiyle değişmeyen kısımlarını üst sınıfta ve evet değişecek kısımlarını ise alt sınıflarda kodlamak.
+
+110
+00:31:12,339 --> 00:31:29,319
+Üst sınıftaki template metodunun içerisinde alt sınıfta o işi yapılacak metod da isimlerinin verilmesi. Template metodunda o olarak edilememesi gerektiğini hatırlatalım. Final olarak tanımlanması gerekmektedir. Yoksa kalınlığını bozuyordu.
+
+111
+00:31:29,971 --> 00:31:44,531
+Bu da izlenebilecek bir yol. Ama bazen de bu yenilen ya da benzer konu birbiriyle ilişkili olmayan sınıflarda da yer alıyor olabilir. Bir şekilde. O zaman ne yapacağız?
+
+112
+00:31:46,451 --> 00:32:10,932
+Bu belki şunun bir göstergesidir. Sorumlulukları en başta doğru dağıtabildiğimiz bir tasarım yapılmamış olabiliriz. Bu bunun işareti olabilir. O yüzden küçük refaktörün eylemleriyle iyileştirmeler yapmak yerine daha bir complete overhaul derler, daha bir komple bakım yapmamız, yeni tasarım tasarımın o kısmını tamamen değiştirmemiz gerekebilecektir.
+
+113
+00:32:14,451 --> 00:32:32,451
+F1 ne kadar da mağlılacak değer mi, değmez mi karar verip öyle yapmaya devam edebilirsiniz. Ya da hiçbir şey yapamazsanız bile, bu kopyaların geçtiği sınıflardan herhangi birine koyduğumuz metodu,
+
+114
+00:32:33,460 --> 00:32:46,339
+Diğerleri de bunu çağırır belki. Bu olabilir. Hatta aslında yepyeni bir sınıf da ekleyebiliriz tasarımımıza. Bu metodu o sınıfa ekstrak ederiz. O da olabilir.
+
+115
+00:32:46,339 --> 00:33:01,400
+O durumda ona ihtiyacı olan diğer kestiğimiz, o kısmı koparttığımız sınıfların konumunda da bu yeni taşınan yere doğru metot çağrısının yönlendirilmesi konumunu yazıyoruz.
+
+116
+00:33:01,460 --> 00:33:13,460
+Sadece o kadar olacak diyelim. Yani nihayetinde ekstrakt ettiğimiz metod en uygun nereye yakışır, nereye koyacağız, orayı arıyoruz bu çalışmamızla.
+
+117
+00:33:17,460 --> 00:33:24,460
+Peki ama biraz sonra bu mantık duplicate code içinde geçerli. O yüzden...
+
+118
+00:33:24,852 --> 00:33:46,592
+Biraz bu şekilde. Yani Ford'un anlatımında dediğim gibi, bunlar böyle birbiriyle ilişkili yumaklar şeklinde genelde bazı kod simallar ve rif aktörünleri. Bunu tek bir düzgün akış ip akışı şeklinde, konu akışı şeklinde pek yapamıyoruz. O yüzden bazen geçmişe referans vermelerimiz gerekebilecek.
+
+119
+00:33:50,548 --> 00:33:56,807
+Peki. Yalnız bir geçmiş yansına bir şöyle bakmak istiyorum bir saniye.
+
+120
+00:34:05,587 --> 00:34:06,827
+Evet, bu.
+
+121
+00:34:16,628 --> 00:34:26,184
+Evet.
+
+122
+00:34:26,708 --> 00:34:48,188
+Plan Method Refactoring Eylemi ve Metodu Yukarı Çekme. Dediğim gibi kalıtımda üst sınıfa taşıma anlamına gelmektedir. Eğer kardeş sınıflarda tekrarlanan metotlar varsa bunları üst sınıfa çekip tekrar yerleştik. Kodlarımız alt sınıflarda bu konunun kalıtımına geçmesi en mantıklıdır.
+
+123
+00:34:55,188 --> 00:35:13,467
+İki sınıfı ayrı sınıfta da aynı şekilde kodlandırmış. Niye böyle bir iş yapıyoruz ki? Bu metot aynı olan metot aslında üst sınıfta tanımlarsa alt sınıfa da kalıtımla geçmiş olacak zaten.
+
+124
+00:35:13,856 --> 00:35:33,756
+Bu şekilde en rahat şekilde bunu kullanırız. Bu arada bu refactoring eylemiyle ilgili birçok şekli de ben folder'ın kitabında, hoş bendeki elektronik versiyonuydu, print script yaparak aldım. Bazı şeyleri göstermemiş de olabiliyor folder.
+
+125
+00:35:41,856 --> 00:35:57,956
+Yaranlarını yazmamış, tamam yazarız her neyse. Ama üye metotların her zaman public olarak tanımlanmasını, böyle çok iç işle işle alakalı olanlar hariç, onları tabii ki ayrı tanımlarsınız ama normalde bir sınıfın bir iş yapabilmesi için.
+
+126
+00:35:58,436 --> 00:36:09,496
+Metotlarının public metotlarının olması lazım. Şurada bir işte get name metodu olacak olması gerek. Bunlar normal parantezlerdir arkadaşlar. Pek bir şey benzemiyor belki ama tekst alımdan gidelim.
+
+127
+00:36:09,856 --> 00:36:24,736
+GetName. Geriye de isim string olduğu için string döndüren bir şekilde ben normalde bu GetName'i böyle tanımlamam gerekiyor arkadaşlar.
+
+128
+00:36:25,235 --> 00:36:40,635
+Gezayam Dikçe içinde öyle. Ama işte bu KC sınıflarındaki ortak kodu üst evren sınıfa taşırsak basitçe alt sınıfların onu kalıtımla alıp ondan sonra rahat rahat kullanması söz konusu olacak. Tamam mı?
+
+129
+00:36:40,788 --> 00:36:57,587
+Bu şekilde reform kitabından direkt aldım. Böyle ufak tefek yöner hata da olabilir. Onlara lütfen dikkat edin. Siz sınavlarınızda mümkün olduğu kadar düzgün şekilde bunları uygulamaya çalışın. Bu arada özür dilerim hala okuyamadım kağıtları.
+
+130
+00:36:59,219 --> 00:37:09,399
+Kusura bakmayın. Birkaç başka şeyler de olduğu arada. İnşallah bir dakika dersi kadar öğrenmiş olursunuz diye ümit ediyorum.
+
+131
+00:37:09,399 --> 00:37:22,960
+İnşallah. Çizimleri bir temizleyin. Ve devam edelim. Pardon ya. Şunu kapatmadan olmuyor bu iş.
+
+132
+00:37:26,356 --> 00:37:36,356
+Bazı özel durumlar söz konusu olabilir. Örneğin, Template Method Tasarım kalıbını kurmak.
+
+133
+00:37:36,563 --> 00:37:40,344
+Önceki tasarımın hali ne?
+
+134
+00:37:40,344 --> 00:37:42,063
+Custom'ın sınıfımız var.
+
+135
+00:37:42,063 --> 00:37:48,344
+Bu arada, bakın burada metotlar ortada, uyanlar altta gösteriliyor.
+
+136
+00:37:48,344 --> 00:37:51,923
+Java kodunu da hangi sırada yazarsanız yazın, problem olmuyor.
+
+137
+00:37:51,923 --> 00:37:58,203
+Uyanlar sınıfında önce uyanların sonra metotların gösterilmesini tercih ederim.
+
+138
+00:37:58,203 --> 00:38:01,963
+Ama şöyle görünce de olabiliriz derim.
+
+139
+00:38:01,963 --> 00:38:04,283
+Ama lütfen siz alışkanlık haline getirin.
+
+140
+00:38:04,563 --> 00:38:30,063
+Onun dışında, şimdi şöyle bir yakından bakayım şöyle şuraya. Evet, gözlerimi aldatmıyorsa bu Customer sınıfı. Adı italik yazılmış. Yani soyut bir sınıf bu. Öyle italiklemek yerine Customer'ın adının üstünde işte YMR Store etrafik içerisinde abstract diye yazsa çok daha iyi olurdu. Onun dışında yine işte üye alanların private metodların public olacağı gözükmemiş.
+
+141
+00:38:31,728 --> 00:38:54,728
+Onların yapılması lazım. Ama yaparken tabii şu da komentlerin, koment kutularının içlerini Türkçe'ye iştirmişim. Diğer şeyleri, başlarına hepsini, eksikol, metodları, pantazikol falan onları yapmaya üşenmişim. Siz lütfen bunları yapmamanız gerektiğini hatırlayın.
+
+142
+00:38:56,980 --> 00:38:59,980
+Hem tabii ikinci hüvize de...
+
+143
+00:39:00,275 --> 00:39:09,935
+Hem de bu refactoring ile ilgili yapacağımız final sınavında. Daha o da yapan ayrıntılarını o zaman konuşuruz şimdi. Biz konuya odaklanalım.
+
+144
+00:39:09,935 --> 00:39:25,376
+Peki, işte bu customer sınıfından kalıtımda ne olmuş? Regular customer ve preferred customer sınıfları oluşturulmuş. Her ikisinde aynı isimli metotları var. Fakat normal bir müşterinin şarj edilmesiyle
+
+145
+00:39:25,615 --> 00:39:45,975
+İşte tercih edilen, işte premium falan neyse müşterinin charge edilmesi farklı kodlanacak. Arada istisnalar var, kampanyalar var, onlar şunlar bunlar falan dolayı ayrıntı olacak. O charge formületotlarının çok çok farklı kodlandığını görüyoruz. Önceki hal bu.
+
+146
+00:39:46,771 --> 00:39:59,412
+Peki, ne yapacağız? Çok farklı kodlanmışlar bunlar. O zaman çare yok. Charge for metodunu yukarıda soyut metodu olarak tanımlayacağız.
+
+147
+00:40:01,551 --> 00:40:08,511
+İki alt sınıfta çok çok farklı kodlanmış oldukları için içini kodlamayıp soyut olarak bırakacağız.
+
+148
+00:40:10,099 --> 00:40:23,099
+Yine orada metod, soyut metodu itilik yazmış. Belki burada güzel anlaşılıyor ama kağıt kalemlerle yazarken yatıklı mı yazıyorum, nasıl yazıyorum pek zor kişi anlar benim yazımı mesela.
+
+149
+00:40:23,099 --> 00:40:34,099
+Üstelede de böyle durum olabilir. O yüzden yine onun yerine en sonuna o metodun 40 parantası, abstrak diyerekten bunu soyut metodu olarak göstermek daha yararlı olacaktı.
+
+150
+00:40:36,403 --> 00:40:57,104
+Biraz mazur giriyorum diyelim ki. Peki. Evet. Yani hiçbir şey yapmıyorsak en azından metot imzasını yukarıda tanımlamış olalım ki, işte biz soyut sınıf olarak da bu işlerin yapılması gerekiyor. O metotların gövdelerinin mutlaka tanımlanması lazım diye bize bir uyarı vermiş oluyor.
+
+151
+00:40:58,835 --> 00:41:09,795
+Peki, hep bundan şeyden bahsettim. Olaydan çok bahsetmedim. Hayır, bahsettim. Tamam, charge formül metodu yukarıda taşındı. Geriye kalan metotlar ne olacaksa.
+
+152
+00:41:12,615 --> 00:41:19,795
+Evet, yukarıda soyut olarak tanımlandı. Böylece ben işte ister regular custom, ister preferred custom, hexende...
+
+153
+00:41:21,300 --> 00:41:37,539
+Faturalandırabilirim, charge edebilirim. Ama işte ne yapalım? Kod paylaşımı ortak kod pek olmadığı için ayrı ayrı sınıflarda ev alıyor. Varsın olsun. En azından hepsini customer gibi erişip kullanabiliyorum ya. Bu bana yeter. Demek istiyorum.
+
+154
+00:41:38,804 --> 00:41:49,704
+Bu da yetmiyorsa o zaman template metodu kullanacağız. Onu da artık tekrar göstermeyeceğim. Kalıplar arasında onu epey gerekli kadar konuşmuştuk zaten.
+
+155
+00:41:49,704 --> 00:41:56,943
+Peki. Şimdi pull up metot. Metot yukarı çekme. Önceki hale bakalım.
+
+156
+00:41:57,684 --> 00:42:03,483
+Pardon. Zaten buradaydık. Şeye basamamışım. Tamam. Trençlerine basamamışım.
+
+157
+00:42:03,483 --> 00:42:04,583
+Peki.
+
+158
+00:42:06,547 --> 00:42:23,307
+Şimdi, madem çok uzun bir kurdumuz var, aslında bunu kısaltmanın daha başka yolları yok mu? Evet var. 3 tane var. Şimdi onların aynatlarını göreceğiz. Önce neler olduğunu bakalım. Bir şey mi yanılıyorsam? Decompose Condition'la devam edeceğiz.
+
+159
+00:42:23,860 --> 00:42:37,840
+Evet, tamam. Decompose Condition. Condition dediği şey if arkadaşlar. If, else, if, else veyahut da switch case. Bunlar Condition olarak değerlendiriyor.
+
+160
+00:42:37,840 --> 00:42:48,800
+Decompose'i işte birleştirmenin tersi, kompozisyonun tersi parçalarına ayırma. Decompose Condition.
+
+161
+00:42:51,380 --> 00:43:13,720
+İki şeylerin, if, else, false veyahut da switch case mantıklarının kimi zaman tamamen yok edilmesine, kimi zaman etkilerin önemli olan da düşürülmesine kadar giden bir refactoring eylemi birazdan göreceğiz.
+
+162
+00:43:15,720 --> 00:43:17,720
+İkinci olarak da...
+
+163
+00:43:17,744 --> 00:43:19,983
+Replace Temp With Query.
+
+164
+00:43:25,483 --> 00:43:27,523
+Burada olay şu.
+
+165
+00:43:29,084 --> 00:43:35,824
+Geçişi değişkenler kullanmak yerine normal metot çağrımı yapın demek istiyor.
+
+166
+00:43:36,244 --> 00:43:55,744
+Çünkü eğer siz, programcı neden geçici yerler değişken tanımlar, bir hesaplamanın sonucunu saklamak, sonra tekrar tekrar kullanmak yerine sonuç gerektiği zaman veriyi de bayatlamamışsa tabii ki. En son saklanılan sonuç çıktığı ifadeyi.
+
+167
+00:43:56,755 --> 00:44:11,155
+Oraya geri vermek şeklinde kolaylıkla kullanabiliriz. Böyle bir durum. Engellemez bizi. Fakat şey oluyor işte.
+
+168
+00:44:12,371 --> 00:44:24,731
+O ara sonuç hesabını şurada da kullansam, burada da kullansam, burada da gerekecek falan diye eğer ekstrakt de etmiyorsak o metot uzayıp gidecek arkadaşlar.
+
+169
+00:44:24,731 --> 00:44:35,012
+Yani toparlarsam geçici yerel değişkenlerin veya nesnelerin kullanımı kodu uzamaya meylediyor.
+
+170
+00:44:35,380 --> 00:44:41,100
+Neylettiriyor. Bunda sakınçlarını az önce konuştuk.
+
+171
+00:44:42,224 --> 00:44:48,424
+Bu bağlamda genelde kodda geçişli değişken kullanacağımız zaman bir bakalım.
+
+172
+00:44:48,424 --> 00:44:52,284
+Tabi burada olay bir Time Memory Trade-off.
+
+173
+00:44:52,544 --> 00:45:10,224
+Yani yaptığınız işlemlerin sonucu geçişli bir değişkende saklamak, bu hesabın tabi parametreleri değişmeden tekrar yapılması gerektiğinde hesabı tekrar yapmak yerine, aha işte bak burada yapılmışı var diye geçişli sonucu var.
+
+174
+00:45:10,224 --> 00:45:32,844
+Kodun çalışma zamanını düşürüyor. Elbette hızlandırıyor kod. Ama öte yandan bellek ihtiyacını yükseltiyor. Her geçişken meannesine bellekte ayrı bir yer kaplayacak. Çalışmayı hızlandırabiliyor. Bellek tasarrufını kötüleştiriyor.
+
+175
+00:45:36,148 --> 00:45:49,148
+Bu ikisinin arasında hangisi daha sıkıncalı ise sizin projeniz ve doğanlarınız için o zaman onu tercih edersiniz aslında. Ama genelde...
+
+176
+00:45:51,347 --> 00:46:19,347
+Performans açısından oluşacak daha boğazlar buralardan kaynaklanmıyor genelde. Daha ciddi yerlerden kaynaklanıyor. O yüzden mümkünse geçici değişken hiç kullanmayalım. Ama hiç kullanmamak da mümkün değil elbette. Örneğin kümülatif toplanma yapacaksak, mecbur adı üstüne kümülatif toplanma biriktirebileceğimiz bir geçici değişken lazım. Ama mesela bazı durumlarda lazım olmadığı anlarda oluyor. Birazdan göreceğiz.
+
+177
+00:46:19,347 --> 00:46:45,788
+Örnekleyeceğiz. Peki, decompose conditional yetmediyse, replace temp with query de yetmediyse, o zaman replace method with method object diye bir refactoring eldeğimiz var. Bu biraz nispeten karmaşık kalan bir düzenleme elde olur. En son da ayrıntısını konuşuruz ya da böyle bir şey varsa kitabı inceleyebilirsiniz deriz.
+
+178
+00:46:46,271 --> 00:46:46,992
+Vakilas.
+
+179
+00:46:53,012 --> 00:47:01,012
+Tamam, burada başka işe yoktur. Decomport Conditioner olayını bir görelim şimdi örnek olarak.
+
+180
+00:47:01,012 --> 00:47:16,972
+Kodun öncesine bakıyorum. Bu damacımız tabii aşırı kalmış if komutlarını sade değiştirmek olacak. Yoksa bunu anlaması zor gerçekten. Anlamsız olunca benim oraya hata bırakmış olma olasılığım da yükseliyor. Bir bakalım bakalım şimdi.
+
+181
+00:47:18,579 --> 00:47:46,559
+Önceki hale bakıyoruz. Diyor ki, date, bu date bir yerler değişken, androskola başlamadığına göre, date önce ise yazın başlangıcından. Bu bir sabit tanımlanmış herhalde date türünden falan ama çok da önemli değil. Anlıyorum adını yarınlandırmışlar. Peki, tarih yaz başlangıcından önce ise veya kış sonundan daha sonra ise o zaman ne kadar çağrıcı edeceğiz?
+
+182
+00:47:46,579 --> 00:48:11,559
+nesbeder miktar harcanı miktar çarpı kış oranı ki bakın bu underscora'ya başlıyor demek yalan. Artı kışın yaptığımız hizmete bir ek çarj ediyormuşuz. Daha zor koşullarda yapılan tamirat, bakım işlemleri falan daha masraf olacak. Onun bir servis çarjı varmış. Peki aksi takdirde ek mükatsı olmadan
+
+183
+00:48:12,947 --> 00:48:34,947
+Ortaya çıkan nicelik verisi, kuantiti şarkı yaz oranıyla işler hesaplamaya gönderiliyor. Ama şimdi diyelim ki bu konu doğal değil mi? Bu if koşulu biraz karmaşık gözüküyor. Bunu bir anlamaya çalışalım. Her ne kadar altında...
+
+184
+00:48:35,284 --> 00:49:00,084
+Bu koşulların içine girerse, kış ünitesi olarak kullanılacak. Demek ki bu ifade kışı anlatıyor demek diye güvenebiliriz belki ama programcı dediğin biraz paranoyak olmalı. Her şeyi ilk kere kontrol etmeli. Kontrol etmeye çalışalım bakalım şimdi. Çizerekten bir şeyler anlamaya çalışalım.
+
+185
+00:49:04,083 --> 00:49:11,763
+Şöyle bir zaman çizgisi olsun. Ondan son açıdan. Bir saniye sıra çarpıyorum.
+
+186
+00:49:35,539 --> 00:49:45,539
+Tamam, tamam.
+
+187
+00:49:51,155 --> 00:49:52,195
+Bilmiyorum oğlum.
+
+188
+00:50:00,000 --> 00:50:02,320
+Allah'a.
+
+189
+00:50:50,003 --> 00:51:08,563
+Evet, özür dilerim. Bir başlayalım. Şimdi zaman doğru mu yazılmış mı? Onu anlamaya çalışıyoruz. Peki, şurada diyeyim ki, şurası summer start. S.s. Peki, bundan önce ise, tamam yani, şu arada bir yer var.
+
+190
+00:51:11,188 --> 00:51:19,288
+Date after, Summon'ın Endi. Summon'ın Start'ı buradaysa Summon'ın Endi. Daha solda bir yerde olacak. Summon'ın Endi.
+
+191
+00:51:20,288 --> 00:51:26,428
+Peki, ondan sonra ise? Bakıyorum. Neymiş bu?
+
+192
+00:51:27,155 --> 00:51:55,155
+Anlıyorum ki yazın Summer'ın startından önce, Summer'ın endinden sonra. Yaz olmayan alanları taraladı bana. Çünkü ortadaki kısım yaz olan kısım, Summer olan kısım gerçekten. Summer'ın startından endine kadar gider. Onun öncesi ve sonrası yaz olmayan mevsimler. O zaman Unity Service Charge demesi mantıklı.
+
+193
+00:51:55,155 --> 00:52:06,596
+Ama tabi diğer başka mevsimler de var. İlkbahar, sonbaharda var. Orada da kış servis bedeli alıyormuş. Bu bir hata mı diye mi?
+
+194
+00:52:08,532 --> 00:52:16,532
+İş mantığı satış kararları o şekildeymiş diyelim. Onun hatasız olduğunu düşünelim. Tamam doğru kodlayabilmişiz diyebiliriz.
+
+195
+00:52:16,532 --> 00:52:35,392
+Ama şu şekilde anlamaya çalışmakta bile biraz zorlandık. Acaba bunu daha sade ve öz biçimde yapamaz mıyız? Bu karmaşık if karar verme koşulunu parçalara ayıramaz mıyız?
+
+196
+00:52:35,860 --> 00:52:42,940
+Ayrılız. Gelelim aşağıki haline, sonraki haline. Önce çizimleri temizleyeyim.
+
+197
+00:52:44,916 --> 00:53:04,256
+Yaz değilse tarih, o zaman if'in tarifine girsin şeklinde ifade yazabilirim. Bu not summer metodunu da bu arada şey yapmışıyorum. Metod extract etmiş oluyorum. Bunu dışarıdan başka birisinin çağırmasının pek bir anlamı yok. Olmayacak. O yüzden private tanımlanmış.
+
+198
+00:53:12,500 --> 00:53:22,460
+Gerçi çok çok daha ekstrak etmemişim ama önceki halindeki ilk bloğunu komple alıp buraya koymuşum.
+
+199
+00:53:22,867 --> 00:53:48,367
+Eğer bu koşul doğruysa true dönecek, aksi taktirde force dönecek. Bu biraz şey olmuş. Karmaşıklı halımın altına süpürmüşüm gibi olmuş. Ama yukarı geri döndüğümde eğer yaz değilse charge'ımız winter charge, aksi taktirde charge'ımız summer charge şeklinde ne yaptığımızı en azından yukarıda anlıyoruz.
+
+200
+00:53:49,619 --> 00:53:58,920
+Önceki halinde bir kere ne yaptığıyla ilgili en ufak bir fikrimiz olması için şunu ayrıntılı okumak ve değerlendirmek zorunda kalacaktık.
+
+201
+00:53:58,920 --> 00:54:11,619
+Ve onun dışında GELİN IF'in içerisine girmişse veya ERS'in içerisinde gizliyse yaptığımız çağrıcı işlemlerine çeşitli değerler birbirine çarpılıyor, toplanıyor falan ama her durumda toplanmıyor.
+
+202
+00:54:17,619 --> 00:54:28,400
+Ayrı bir der alt iş olarak değerlendirip sonraki halinde hem Summit Charge metodu ekstrakt ediyoruz hem de Winter Charge metodu ekstrakt ediyoruz.
+
+203
+00:54:31,668 --> 00:54:55,968
+Orman yöntemlerinde bir değişiklik yapılması gerekmiyor zaten. Başka nasıl hesaplarız? Bu şekilde hesaplarım ancak. Fakat biz şimdi bunu bölmek yöntemiyle hem metot ekstra ettik hem de bu karmaşık olan kondişmanı tam parçalayamadık ama en azından işin içerisinde değil artık.
+
+204
+00:54:56,532 --> 00:55:07,271
+Başka bir metodun, kendi sırf odaklanmış o metodunun içerisinde. Böylece dekompost kondisyonu yaptık diyebiliriz.
+
+205
+00:55:07,891 --> 00:55:19,991
+Ortaya çıkan durum en azından üst kısım için, yani şuradaki üst parça için çok daha rahat anlaşılır bir kod ortaya çıkarmış oluyoruz.
+
+206
+00:55:19,991 --> 00:55:28,411
+Benim elimde deyince belki şunu şu şekilde yazmaktansa, belki de nasıl yazabilirim?
+
+207
+00:55:30,771 --> 00:55:37,311
+Yani yaz olmayan kısımları şey etmektense ben bunu şöyle kodla aldım. Derdim ki eğer
+
+208
+00:55:37,940 --> 00:55:52,700
+Yazın başlangıcından sonra ise, eğer date'in summer start'ından sonra ise ve summer end'inden önce ise o zaman false döndür.
+
+209
+00:55:53,260 --> 00:56:02,320
+Çünkü o durumda yaz, yazın olmaması durum anında false döndür. Aksi taktirde true döndür diyerekten ben buradaki daha karmaşık,
+
+210
+00:56:05,940 --> 00:56:18,240
+Oran noktalarının dışındaki alanları anlamaya çalışmakta. İçindeyse şöyle yap, aksi takdirde şöyle yap yazarak da daha öz anlaşılır koda varacağımızı düşünürüm.
+
+211
+00:56:18,240 --> 00:56:30,000
+Ve öyle bir kod içeriği değişikliği de yaparım aslında. Ama ben böyle rahat anlayabilirim hocam diyorsanız, varsın öyle kalsın, böyle kalsın, işler değil.
+
+212
+00:56:33,940 --> 00:56:35,120
+Mantra çevirmek ile.
+
+213
+00:56:37,240 --> 00:56:38,580
+Evet. Peki.
+
+214
+00:56:40,680 --> 00:56:43,300
+Şimdi şunları bir sileyim bakalım.
+
+215
+00:56:44,260 --> 00:56:45,600
+Sonraki sahneye bakalım.
+
+216
+00:56:46,440 --> 00:56:49,560
+Yeni konuya geçireceğiz. Devam edeceğiz. Peki.
+
+217
+00:56:51,923 --> 00:57:01,403
+Ne diyoruz? Bir kere önce, özür dilerim. Long Palimitarist, onun için iki tane ayrı bir farklar.
+
+218
+00:57:02,123 --> 00:57:07,543
+Tamam, bence ara verme zamanı gelmiş diyebilirim arkadaşlar. Tabii eğer sizin sorunuz yoksa.
+
+219
+00:57:08,683 --> 00:57:10,523
+13.58 ettik bu arada.
+
+220
+00:57:12,364 --> 00:57:12,923
+Peki, tamam.
+
+221
+00:57:17,460 --> 00:57:23,919
+İyi, o zaman 10 dakika arayı hak ettik arkadaşlar. Saat 14 diyelim.
+
+222
+00:57:27,923 --> 00:57:28,923
+Home.
+
+223
+00:57:28,923 --> 00:57:29,923
+Support
+
+224
+00:57:34,228 --> 00:57:38,447
+14, 10'a kadar 10 dakika.
+
+225
+01:11:14,387 --> 01:11:19,108
+Evet arkadaşlar, yine iki dakika atlamış olduğum özür dilerim. Ama geldim.
+
+226
+01:11:31,796 --> 01:11:42,256
+Evet, zaten böyle bir şey daha iyi oldu. Onu da ekleyelim de. Neyse, tartışıyoruz. O da güzel oluyor.
+
+227
+01:11:43,256 --> 01:11:54,436
+Evet. Şuna nasıl çaktım? Evet. Peki, şimdi sarıki kod kusurumuz Long Parameter List. Uzun parametre listesi.
+
+228
+01:11:54,436 --> 01:11:56,856
+Şimdi bir metot çağırıyoruz.
+
+229
+01:11:57,344 --> 01:12:23,043
+Haydi parametresi varsa ya, bir tane olur, iki tane olur, işte olur ama daha da fazla parametre gördüğüm zaman bir şüphelenirim. Hatta diğer metot parametrelerine baktım da bu parametre listelerinin bazı metotlarda bir yere kadar ortak olması durumunu da gözlemliyor olabiliyorum.
+
+230
+01:12:24,020 --> 01:12:41,180
+Bu da demek oluyor ki aslında bu parametre birlikte bu durumun herhangi bir varlığın, durum bilgisinin ya bir kısmının ya da tamamının metot parametre olarak aktarıyorum anlamına gelmektedir.
+
+231
+01:12:49,171 --> 01:12:55,891
+Durum bilgisinin bir parçasını onu ilgilendiren diğer sınıflara gönderiyorum anlamına gelmektedir.
+
+232
+01:12:55,891 --> 01:13:08,851
+İkinci sınıf ise ayrı ayrı beraber etmekle birlikte neredeyse tamamını, gerçekten de tamamını durum bilgisinin oluşturan üyelerin gönderiyorum anlamına gelmektedir.
+
+233
+01:13:09,072 --> 01:13:10,891
+Eğer olay birinci olaysa...
+
+234
+01:13:11,412 --> 01:13:15,912
+Introduce Parameter Object diye bir refactoring eylemi var.
+
+235
+01:13:19,380 --> 01:13:47,380
+İkinci durum söz konusu ise PrezorWholeObject diye bir refactoring elemimiz var. Nedir bunlar? Birincisi, pardon fazla bastım, IntroduceParameterObject, parametre nesnesi oluşturma. Bir metot, çok fazla parametre alıyorsa, yani bu kod kusuru mevcutsa, uygun parametre üye alan olarak yepyeni bir sınıfta toplayın ve artık o türden nesneyi parametre alın.
+
+236
+01:13:47,380 --> 01:13:49,159
+Kullanın, gönderin.
+
+237
+01:13:50,219 --> 01:13:52,180
+Bakıyorum şimdi kastımasınıfına.
+
+238
+01:13:52,719 --> 01:13:59,159
+Amount Inversed In, Amount Received In, Amount Overdue In gibi metotlarımız var.
+
+239
+01:13:59,260 --> 01:14:02,300
+Hepsi de bir Start Date bir de End Date alıyor.
+
+240
+01:14:02,963 --> 01:14:21,443
+Şimdi her ne kadar uzun olmamakla birlikte buradaki parametre listesi. Birçok metotla tekrar randana görüyorum. Bu da demek oluyor ki bu iki alan çoğunlukla birlikte kullanılıyorlar ve bunlar aslında bir araya gelip başlı başına bir varlık oluşturabilir.
+
+241
+01:14:22,228 --> 01:14:34,547
+Diye düşünüyorum. Yani başlangıç ve bitiş bir zaman aralığıdır aslında. Bu iki parametreyi bir üye alan oluşturacak şekilde Date Range diye bir sınıf oluşturur.
+
+242
+01:14:36,547 --> 01:14:45,967
+Ondan sonra artık bunu kullanırız. Metotlarımızın parametreleri şeklinde çalışabilirim.
+
+243
+01:14:46,644 --> 01:15:07,644
+Bu tarih, belirli bir aralığın dışında mı, içinde mi gibi yapacağım hesaplamalar için de direkt bu yeni oluşturduğum D-Trange sınıfını kullanıp bu hesaplamalar için o sınıfa yeni metodlar ekleriz.
+
+244
+01:15:07,644 --> 01:15:14,644
+Böylece bir önceki ders saatin sonuna doğru yaptığım örnek gibi şeyler işlenmiş.
+
+245
+01:15:14,644 --> 01:15:35,244
+Bunların geçtiği yerlerde, üniversiteye ve orduyu hesaplamak için olan yerlerde, kodlanmak ve çoğu zamanda tekrarlanmak zorunda kalmayacak. Yeni oluşturulduğun sınıfta olacak, yaralacak.
+
+246
+01:15:35,283 --> 01:15:45,283
+O gibi şeyler içinde, ek işler içinde belki de yararlı bir başlangıç noktaları oluşturabiliriz. Hiçbir şey olmasa bile dediğim gibi...
+
+247
+01:15:47,828 --> 01:15:53,347
+Daha bir derdi toplu kodu yazmış olmamızı sağlamış oluyor.
+
+248
+01:15:53,347 --> 01:16:11,388
+Ve o varlıkla ilgili özel alt işler yapılacak görevler varsa da onları yerleştireceğimiz, yani ekstrak ettiğimiz metodu koyabileceğimiz gayet güzel bir konum seçeneği ortaya çıkmış oluyor.
+
+249
+01:16:14,963 --> 01:16:20,683
+Evet. Altta da bu söylediklerim yazılı şekilde geçiyor.
+
+250
+01:16:26,323 --> 01:16:50,483
+İkincisi, Prezo Whole Object. Tüm Nesneye Gönder. Bazen görebiliyoruz ki bir nesnenin çeşit üyelerini aynı metodun farklı parametre olarak göndermek gibi işlemler yapıyor olabiliriz. Böyle yapmaktan yerine nesnenin kendisini neden göndermiyoruz ki? Örneğin, kodun önceki hali, low diye bir geçir değişken.
+
+251
+01:16:50,880 --> 01:17:18,880
+DayStampRange diye bir metot çağırılıyor. O bir nesne döndürmüş oluyor. Onun getLow metodunu çağırarak low diye bir yalanına dönmüş oluyorum. Sonra high diye bir geçişi değişkeni daha tanımlıyorum. Dönecek olan ay nesnenin bu seferde getHigh metodunu çağırıyorum. Bir diğer daha elde ediyorum. Ve bu iki int diğeri plan.witnRange diye metot.
+
+252
+01:17:18,880 --> 01:17:19,200
+Bu
+
+253
+01:17:19,200 --> 01:17:23,319
+sağlığına veriyormuşum. Tamam da, bunları ayrı ayrı yapmaktansa
+
+254
+01:17:23,319 --> 01:17:26,640
+bu
+
+255
+01:17:26,640 --> 01:17:28,180
+itin ve inç metodunu artık
+
+256
+01:17:29,108 --> 01:17:36,208
+Bu D's Temp Range sınıfı ne döndürüyorsa, ne türden nesne döndürüyorsa, o nesne olacak şekilde değiştirelim.
+
+257
+01:17:37,208 --> 01:17:47,988
+Ki bu Riturn Range metodunda da ayrı ayrı intila yerine, yani artık o dönen nesneden olan sorgulamaları onun içerisinde yapalım.
+
+258
+01:17:48,916 --> 01:18:04,916
+Ayrıca bu değişikliğin şöyle bir yararı da olabilir. Belki de o nesnenin başka üyeleriyle de ilgilenmesi gerekiyordu bu Witten Range metodunu. Ama onu henüz keşferemedik. İleride lazım olabiliriz gibi de düşünebilirsiniz.
+
+259
+01:18:16,916 --> 01:18:23,736
+Doğru aslında. Böyle yaralı olmakta.
+
+260
+01:18:24,159 --> 01:18:39,180
+Burada sadece iki üye alan hazırlanıp döndürüyor. 3-4-5 ayrı kalem veriye de ihtiyaç olabilir. O zaman gerek aynı nesmin olsun gerek farklı nesminin başka üye alanları olsun.
+
+261
+01:18:52,159 --> 01:19:00,760
+Çıkıyorum diyor. Çıkmış oluyor veya çıkmaya yaklaşıyor. Onun da önünü kesmiş oluyoruz. Böylelikle.
+
+262
+01:19:02,163 --> 01:19:18,843
+Şimdi fakat burada aslında bir problemimiz de var. Bir önceki yansıda da aslında fark edilebilen bir şey. Daha evvel iki tane int alıyordu. Şimdi date range tuturundan bir resne alıyor parametro olarak metodumuz.
+
+263
+01:19:20,847 --> 01:19:48,847
+Dates Tempereş herhalde Date Range türünden nesne döndürüyor. Ama her neymişse işte o türden bir nesne alıyor. Tamam da biz bunu bu şekilde yaptığımızda iki tane olumsuzluk ortaya çıkarmış olabiliyoruz. Birincisi bağımlılığı arttırmış olabiliyoruz. Şama üstünden konuşalım. Şu andaki hal ile konuşalım. Şimdi biz yine bir Date Range sınıfı oluşturduğumuzda...
+
+264
+01:19:48,847 --> 01:20:10,667
+Buradaki durumda, şurada yeni bir date range sınıfı oluşturduğumuzda, işte DR diyeyim, date range, böyle bir şey oluşturduğumuzda sahiplik yoksa bile en azından kullanma ilişkisi var. Hiçbir şey olmasa bile.
+
+265
+01:20:11,859 --> 01:20:21,159
+Ve daha evverden olmayan 20 sınıf ortaya çıkartıp, Customer Sınıfı ile bu sınıf arasında bir ilişki kurduğumda bağlaşımı bir arttırmış oluyorum.
+
+266
+01:20:21,159 --> 01:20:28,539
+Ha bu sahiplik kadar ağır sıklet değil, o yüzden belki kullanma ilişkisini yarım ağırlıkla düşünebilirsiniz ama ne olursa olsun.
+
+267
+01:20:28,539 --> 01:20:35,739
+Artık eskiden olmayan bir ilişkiyi tasarımına eklemiş oldum ve böylelikle bağlaşımı yükselttim.
+
+268
+01:20:35,739 --> 01:20:38,939
+Ama az ama çok ama yükselttim.
+
+269
+01:20:39,283 --> 01:20:47,603
+Bağlaşım zaten, yani bağlaşımın yüksek olmamasını özellikle hedefliyorsanız,
+
+270
+01:20:48,467 --> 01:20:58,567
+O zaman Vars'ın long parameter list olsun, biz yine de bu refactoring eylemini yani Introduceive Parameter Object Refactoring eylemini kullanmayalım. Böyle kalsın diyelim.
+
+271
+01:20:58,948 --> 01:21:11,387
+Aslında bu refactoring eylemin biraz şeye de yarıyor bu arada. Onu da söylemeyi unuttum. Kusura bakmayın. Çok formunda değilim bugün. Şunu bir temizleyeyim de oraya bir geri döneyim.
+
+272
+01:21:15,315 --> 01:21:32,815
+Ne diyecektim? Tamam. Şimdi bakın şurada int door diye geçici değişken, int height diye geçici değişken ondan sonra bunları da kullanmışım. Ama sonraki haline bakıyorum. Bakın geçici değişken yok. Tamam mı? Mümkün olduğu kadar geçici değişken kullanımından kaçınmaya çalışıyoruz.
+
+273
+01:21:36,851 --> 01:22:02,631
+İleride replacePamplitQuery diye bir refactoring eğilimi de göreceğiz aslında long metot için. Dedik ya geçici değişkenlerin kullanımı kodu uzatma eğilimi de kazandırıyor metotlara. O yüzden aslında bu refactoring eğilimi bir taşla iki kuş vurmuş oluyor. Hem uzun parametre listesini daireli toparlıyor hem de bazı durumlarda
+
+274
+01:22:03,572 --> 01:22:15,311
+Aslında çok hoşlanmadığımız geçiş değişkenleri de ortadan kaldırmaya da yarıyor. Ama olumsuzluklarını geri dönelim. Birinci olumsuzluk yeni bir bağlaşım ortaya çıkartıyor.
+
+275
+01:22:16,307 --> 01:22:31,307
+İkinci olumsuzluk, geriye doğru uyumluluğu kaybetmiş oluyoruz arkadaşlar. Defactoring'in en sert katı tanımı, genel tanımı nedir?
+
+276
+01:22:33,427 --> 01:22:48,288
+Yazılımın ne yaptığını değiştirmeden, bunun nasıl yaptığını değiştirmektir. Tamam, bu bağlamda baktığınızda bir problem görmeyebilirsiniz ama şöyle bir anlamı da var. Bakış açısı da var Refactoring'e.
+
+277
+01:22:48,288 --> 01:23:01,288
+Refactoring eylemi, yazılımın dış dünyaya açılan penceresini değiştirmeden, arayüzlerini değiştirmeden iç yapısını ve tasarımını değiştirmektir. Şeklinde de algılanabilir.
+
+278
+01:23:01,427 --> 01:23:07,427
+Bu şekildeki refactoring tanımı geriye doğru uyumluluğun korunduğu bir refactoring tanımadır.
+
+279
+01:23:07,427 --> 01:23:12,927
+Bazı durumlarda geriye doğru uyumluluğu korumayı bizim için özellikle çok önemlidir.
+
+280
+01:23:12,927 --> 01:23:18,927
+Halbuki bu refactoring gelinimi bu şekilde yaptığımızda bir metodumuzun imzasını değiştirmiş oluyoruz.
+
+281
+01:23:18,927 --> 01:23:21,927
+Public bir metodumuzun imzasını değiştirmiş oluyoruz.
+
+282
+01:23:27,604 --> 01:23:47,324
+Değiştirmiş oluyoruz. Geriye doğru uyumluluğu kaybetmiş oluyoruz. Bu iki husustan, iki olumsuzluktan biri ya da ikisi sizin için önemliyse o zaman bu defaktörün eylemini hiç yapmayalım. Ama önemli değilse o zaman yapalım şeklinde karar verebiliriz.
+
+283
+01:23:51,315 --> 01:23:59,635
+Bu şekilde değerlendirilmemiz lazım. Bu Introduce Parameter Object Refactoring'i.
+
+284
+01:23:59,635 --> 01:24:05,395
+Peki, sıra da geldi. Sıradaki de oymuş.
+
+285
+01:24:05,395 --> 01:24:10,835
+NetplayStampWithQuery. Geçici değişken yerine erişim metodu kullanımı.
+
+286
+01:24:10,835 --> 01:24:11,475
+Peki.
+
+287
+01:24:11,475 --> 01:24:16,915
+Evet bakalım. Bu arada bir şey yapmak istiyorum.
+
+288
+01:24:20,340 --> 01:24:47,280
+Tamam, pekala. Evet. Şimdi madem geçici değişkenleri ortadan kaldırmaya çalışıyoruz. O zaman bir ifadeliğin sonucunu geçici değişkenli saklanıp kullanmak yerine o ifadeden metot ekstra edelim ve o metodu kullanalım diyoruz.
+
+289
+01:24:47,891 --> 01:25:15,691
+Belki kod üstünden daha rahat anlatabilirim bu durumu. Bunun önceki haline bakalım. Get Price metronu inceleyelim. Peki, şimdi Base Price diye bir geçici değişkenim var. Miktar çarpı birim fiyatı. Peki, bunlar da yüyalan underscore olduğundan anlıyorum. Burada bir de Double Discount Factor diye bir değişken tanımlanmış. Geçici değişken. Eğer Base Price binden büyükse o zaman 0.95 olacak discount factor. Aksi takdirde de 0.98 olacak.
+
+290
+01:25:15,891 --> 01:25:20,891
+Ondan sonra Base Price'a Discount Faktörü de uygulayıp geri döndürüyorum.
+
+291
+01:25:20,891 --> 01:25:22,891
+Bedel hesaplama metodunda.
+
+292
+01:25:22,891 --> 01:25:27,891
+Peki, şimdi bakımını nasıl ortadan kaldıracağım?
+
+293
+01:25:27,891 --> 01:25:29,891
+Geçişi değişkenleri.
+
+294
+01:25:29,891 --> 01:25:31,891
+Get Price metoduna bakıyorum.
+
+295
+01:25:31,891 --> 01:25:35,891
+Diyor ki bana Return Base Price çarpı Discount Faktör.
+
+296
+01:25:36,435 --> 01:25:47,195
+Evet, telenli yaptım o. Penal fiyatın hesaplanma şişesi işi yapıyorum. Ondan sonra discount faktörü belirleme işi yapıyorum. Sonra bu kısım birbirine çarpıyorum. Geri döndürüyorum. Olay bu. Peki.
+
+297
+01:25:51,195 --> 01:26:02,315
+Bu şekilde şuna da dikkat etmek lazım. Geçişi değişkenleri gözümüze çarpan değil, geçişi değişkenleri bulduktan sonra
+
+298
+01:26:02,463 --> 01:26:29,963
+Bakın, şu an mesela Base Price var. Bir şurada geçiyor bu Base Price. Tabi IDE üstünden baktığımızda, hani High Right özelliğiyle bunu daha iyi şey deriz ama, anlarız ama, şimdi bu olmadığı için altını şey edelim, çizelim. Sonra bir de şey var, bir de Discount Factor geçici değişkeni var.
+
+299
+01:26:30,452 --> 01:26:38,711
+Peki, onu da şurada kullanıyorum. Ondan sonra şurada kullanıyorum. Bir de şurada kullanıyorum.
+
+300
+01:26:39,512 --> 01:26:50,131
+Şimdi, önce base price'ın geçtiği yerlere bakıyorum. Bunu bir kere hesapladıktan sonra, bunun değerini hiçbir yerde değiştirmemişim. Doğrudan kullanmışım.
+
+301
+01:26:50,547 --> 01:27:08,868
+Kuranca olarak işaretlediğim diskrant faktörü de bakıyorum. Bunu bir kere ya burada ya burada değerlattıktan sonra kullanacağım zaman daha başka hiçbir değişikliklere de tabi tutmuyor. Özellikle bu geçici değişkenleri ortadan kaldırmayı düşünüyorsanız.
+
+302
+01:27:09,231 --> 01:27:33,912
+Bu şekilde o değişkeni sadece bir kere diğer ara tanıp, ondan sonra bir ya da daha fazla yerde kullanımı söz konusuyorsa, yani diğer hızlı pırt değişmiyorsa bu geçişe değişkenin, işte onun elimine edilmesi çok daha kolay oluyor. Ama arada bir yerlerde değişiyorsa, o zaman neler yerde değiştiğini göz önünde bulundurun.
+
+303
+01:27:34,579 --> 01:27:48,319
+2 yerde mi değişiyor, 3 yerde mi değişiyor, kaç yerde değişiyorsa o kadar ayrı ekstrak metot yapabiliriz. Bunu da aklınızın bir ucunda tutmakta yarar var.
+
+304
+01:27:48,655 --> 01:27:52,595
+İlla tek bir tane metot ekstrak etmek durumunda değiliz.
+
+305
+01:27:54,476 --> 01:28:02,095
+Buradaki örneğimde ekstrak edilen iki ayrı metot var ama burada iki ayrı yıkılan iş de var.
+
+306
+01:28:02,095 --> 01:28:04,376
+O yüzden benim dediğimde aynı kapıya çıkıyor.
+
+307
+01:28:06,771 --> 01:28:30,231
+Neyse toparayım. Eğer geçir değişkenin değeri sürgü de değişmiyorsa onu elimine etmek daha kolay. Öbür türlü de elimine edilebilir ama biraz daha çaba harcayacağımız gerekecek. Artık size kalmış. Bu çabayı harcayacak zamanınız varsa harcamayı tercih ederim ben. Ama Refactoring için ayırdığımız zaman kısıtlıysa o zaman hadi bunu atlayabiliriz diye de söyleyebilirim.
+
+308
+01:28:30,752 --> 01:28:33,451
+Peki konu sonraki halini inceleyelim şimdi.
+
+309
+01:28:35,475 --> 01:28:36,275
+Bakıyorum.
+
+310
+01:28:36,948 --> 01:28:43,007
+Get Price, evet anon olarak Base Price'in hesaplaması ve Discount Faktör'ün hesaplaması şeklindeydi.
+
+311
+01:28:43,548 --> 01:28:48,588
+Base Price hesaplamaya bir bakıyorum. İşte miktar çarpı item price olacak. Tamam.
+
+312
+01:28:49,128 --> 01:28:56,488
+Sonra Discount Faktör'e bakıyorum. Şimdi Discount Faktör benim şeyimle ilgili, Base Price'imle ilgili değişen bir şey aslında.
+
+313
+01:28:57,228 --> 01:29:01,668
+O yüzden şimdi bu Base Price hesaplamayı unutmayın. Şurada tekrar çağırmam gerekiyor.
+
+314
+01:29:02,007 --> 01:29:04,748
+Çağırıyorum. Binden bir yükse 0.95.
+
+315
+01:29:04,948 --> 01:29:11,548
+Aksi taktirde 0.98 olarak belirliyorum.
+
+316
+01:29:12,500 --> 01:29:32,079
+Discount Faktörü'nde. Şimdi, kodu bu hale geldiğinde akışa bakarsak, önce Base Price çağrıldığında şurada çarpma işlemi oluyor. Ondan sonra Discount Faktör çağrıldığında, oraya geldiğinde tekrar Base Price'in hesaplanması, oraya çarpmanın tekrar yapılması da bir gerekiyor.
+
+317
+01:29:40,500 --> 01:30:02,000
+Ekstrakt etmiş olduğum halinde 3 çarpma yapılmış oluyor. O da bu base price'in 2 kere çağrılması nedeniyle hem get price'in içinde base price'in çağrılması hem de discount faktörün içerisinde base price'in çağrılması nedeniyle get price'da bu 2 ayrı çağrım sonuçta toplam 2 yerine 3 çarpma işleminin yapılmasına sebep oluyor.
+
+318
+01:30:02,387 --> 01:30:11,387
+Şimdi çatma da en masraflı işlemlerden bir tanesi. Yani toplama çıkarmayı daha kolay yapıyor makineler. Çatmayı daha zor yapıyorlar.
+
+319
+01:30:13,387 --> 01:30:14,387
+Ama...
+
+320
+01:30:14,644 --> 01:30:42,644
+İki çarpma işleminden bahsediyoruz. Bilgisayarlar saniyede milyonlarca işlem yapıyor. Yani ne bileyim, iki çarpma yapmanın da öyle bir hissetmezsiniz bile demek istiyorum. Ama şunu da unutmayın. Şimdi bu geçiş değişkenler, hani Time Memory, Trade Off tamam, daha az işlem yapmayı, işlem tekrarını engelliyor geçiş değişkenler.
+
+321
+01:30:42,644 --> 01:31:03,644
+Biz şimdi bunları erişim metotlarından öğrenmek şeklinde çalışmamızı yaptık, yürüttük. Ama bazı durumlarda, karmaşık sistemlerde, karmaşık bilgi sistemlerinde ve hele ki bazı işlemlerin farklı farklı sunucu adacıklarında yapılıp...
+
+322
+01:31:04,051 --> 01:31:32,051
+Belirli bir network üstünden belki de dış ağa çıkıp bulutan çağrılan çeşitli işlemler olduğunu düşünürsek eğer bu hesaplamalarımızın sonucunun bulunmasının o zaman işte bu geciktirici hesaplamanın birden fazla gereksiz yere yapılma tekrarı bizim başaralımızı önemli olarak...
+
+323
+01:31:32,051 --> 01:31:59,891
+düşürebiliyor. Genelde finans alanında çalışan arkadaşlar bunu vurguluyorlar. Hocam işte tamam iyi diyorsunuz da biz bu geçir değişkeniz aktarılan metodu başka bir makinede uzun süren bir hesaplama zamanı, enerji maliyeti ve haberleşme masrafı harcayaraktan almış oluyoruz. Onu saklamamız gerekiyor diyorlar.
+
+324
+01:32:00,051 --> 01:32:12,051
+Ben de o zaman ev varla diyorum. O zaman yapmayın. Ama öyle bir durum söz konusu değilse lütfen yapın. Birkaç tanecik fazla işlem karşılığında çok daha kolay anlaşırız.
+
+325
+01:32:12,051 --> 01:32:23,231
+Ve bu nedenle de bakım kolaylığı önemli olan da iyileşecek bir kod elde etmiş oluyorsunuz. Şey bu. Olay bu.
+
+326
+01:32:26,644 --> 01:32:28,644
+Peki, çizimlerimi sileyim.
+
+327
+01:32:31,644 --> 01:32:32,644
+Ve devam edelim.
+
+328
+01:32:35,644 --> 01:32:36,644
+Evet.
+
+329
+01:32:37,644 --> 01:32:41,644
+Şöyle bir avantajı da var. Replace Tank BigQuery'in.
+
+330
+01:32:41,644 --> 01:32:48,644
+Kopya yapıştır, kodlama yapmayı daha ortaya çıkmadan azaltan bir olumlu etkisi var.
+
+331
+01:32:50,688 --> 01:33:11,347
+Madem bu geçiş değişkeni kullanan bir metodum var, buna yaptığına benzer bir işi başka bir yerde de yapmak istiyorum. Bu mevcut metodu, yani bu mevcut kısatılarımı kopyalayayım, başka yerlere ve yerlere de yapıştırayım gibi düşünebilirsiniz.
+
+332
+01:33:18,688 --> 01:33:31,167
+Ve onca dönem daha işin başında bir query metodu haline getirerekten o diğer bütün gerekli yerlerde sadece query metodu çağırmak şeklinde kod yazmaya devam etmiş olacaksınız.
+
+333
+01:33:31,167 --> 01:33:37,387
+Böylece daha bu duplicate kodu ortaya çıkmadan engellenmiş olacak.
+
+334
+01:33:38,579 --> 01:33:50,579
+İkincisi, bu kop parçacıyla ilgili bir hata çıkarsa ortaya var ya, yeni bir gereksinim ortaya çıkarsa o zaman...
+
+335
+01:33:51,167 --> 01:34:18,547
+Bu işlemler sorgu metodlarında toplanıyor oldukları için kendi odaklanmış yerinde yapılacak değişiklikler düzenlemelere evrilmiş olacak yapmamız gereken iş. Yoksa çok daha farklı bir metodun içerisindeki farklı bir bölgedeki o bölgeye dolaşmak için büyük ihtimalle long bir metodun içerisinde dolaşıyor diye olacağız. Böyle şeyleri yapmamız gerekmeyecek.
+
+336
+01:34:19,167 --> 01:34:20,907
+Bu türlü çalışırsak eğer.
+
+337
+01:34:22,907 --> 01:34:29,327
+Arktaki kısmı ise konuştuk. Başarım performans azalmasını önce konuşmuştuk.
+
+338
+01:34:30,167 --> 01:34:35,207
+Onu da söylemiş oldum konuşaraktan.
+
+339
+01:34:38,148 --> 01:34:40,975
+Evet, peki. Ama...
+
+340
+01:34:40,975 --> 01:34:46,935
+İşin biraz daha kalmaşıklaştığı bir vakaya bakalım. Bu, Replace Temp with Query'di.
+
+341
+01:34:52,467 --> 01:34:53,355
+Şimdi...
+
+342
+01:34:53,876 --> 01:35:21,576
+Kodun önceki halini bir inceleyelim. Predicive diye bir metodun var. Onun içerisinde toplam miktarı diye bir değişkeni var. Bir de tek bir işlemle ilgili yapılan miktar diye bir değişkeni var. For Döngüsü içerisinde. Önce item'in çağırcını alıyorum. Disarvantı atıyorum. Ondan sonra bunu kullandıktan sonra toplam miktarı da artı eşittir. Bu miktar yani kümülatif toplam hesaplayarak gidiyoruz. Böyle bir yapım var.
+
+343
+01:35:21,876 --> 01:35:42,315
+Şimdi ne diyelim geçiş değişkenlerin? Total amount ve disamount. Şimdi total amount'a bir şey yapamam. Kümülatif toplam yapmam gerekiyor çünkü. O illaki kalacak. Yani bir geçiş değişken olmadan kümülatif toplam yapmam gerekiyor. O kalsın ama bu disamount'u acaba değiştirebilir miyim?
+
+344
+01:35:47,956 --> 01:36:09,956
+Tanımlamışım. Ona ilk değerini atamışım. Şurada item-get-charge. Daha sonra da yine hiçbir değer değişikliği yapmadan this amount'u iki yerde kullanmışım. O zaman tamam, bu ortadan kaldırmam zor olmayacak. Hemen girişelim işin içerisine. O zaman diyelim ki,
+
+345
+01:36:14,644 --> 01:36:31,064
+Bir şu noktaya bir de şu noktada derleme hatası alacağım. Ama disamount neydi? Doğrudan item.getcharge değeriydi. O zaman disamount geçen yere item.getcharge deyip disamountu da ortadan kaldırıyorum. Sonraki haline ulaşmış oluyorum.
+
+346
+01:36:42,644 --> 01:37:10,644
+İtemeye bakalım.
+
+347
+01:37:10,644 --> 01:37:30,284
+İki kat daha fazla iş yapmış oluyoruz şimdi. Acaba bu çok önemli bir başarım problemi ortaya çıkarır mı? Bence çıkarmaz. 10 tane de zaten çıkarmaz da 100 tane de acaba çıkarır mı?
+
+348
+01:37:31,091 --> 01:37:44,532
+Genç Çarş metodu 1 milisaniye sürse 100 kayıtta daha evvel 100 milisaniye harcanıyordu. Şimdi bunu 2 kere çalmakta 100 kayıtta 200 milisaniye harcanıyor.
+
+349
+01:37:46,836 --> 01:38:00,775
+Aradaki fark ne? 100 milisane. Ekstra harcanan 100 milisaneyi biz hisseder miyiz? Hissetmeyiz. O yüzden varsın bu refactoring ellemi yapılsın şeklinde söyleyebilirim.
+
+350
+01:38:01,332 --> 01:38:14,452
+Ama tabii ki işte az önce bahsettiğim üzere hesaplaması çok masraflı. Başka başka sunucularda hesaplanıp arzinden geri dönen hesaplar gibi bir durum söz konusuysa o zaman yapmayalım elde et.
+
+351
+01:38:14,452 --> 01:38:25,452
+Ama öbür türlü yapalım. Bunu da çok önceden fark edemezsek arkadaşlar, gerçi o kısımda söyleniyor. Profiler falan şey diyeceğiz.
+
+352
+01:38:27,572 --> 01:38:33,252
+Bakıyorum, biraz gideyim de. Yoksa evin konuşuz. Tamam, şimdi konuşalım.
+
+353
+01:38:35,252 --> 01:39:03,252
+Şimdi, profiler denilen gelişler var arkadaşlar. Kimi zaman kod cover için hesaplamak için kullanılıyor. Kimi zaman da işte performans test açısından bir metot çağırdığınızda bunun tamamlanması için ne kadar zaman geçmiş ve o metonun içerisinden hangi başka metotlar çağırılmış da onlar da bireysel olarak ne kadar zamanlar harcamış, toplamda da bu kadar zaman harcamış gibisinden size rapor veriyor.
+
+354
+01:39:03,252 --> 01:39:19,972
+Bu kadar uygulamalar var. Refactoring yapmadan önce performansı ölçünüz. Refactoring'den sonra performansı tekrar ölçünüz. Ortaya çıkan fark eğer hissedilir bir düzeyde ise ya da büyük bir orandaysa, daha önceden belirlediğiniz limitleşikleri aşıyorsa.
+
+355
+01:39:20,787 --> 01:39:34,107
+O zaman yapmayalım. Ama yaptık. Önceden bilemeyiz. O zaman madem öyle, yaptığımız değişiklikleri geri adımlarla izleyerek de refactoring eylemlerini geri alabiliriz.
+
+356
+01:39:34,107 --> 01:39:48,787
+Veyahut da, hele ki işin daha iyisi bir Software Configuration Management yazılımı kullanıyorsak, bir Code House'u kullanıyorsak, bu refactoring eylemlerini yapmadan önce profiler çağrıştırıldığımız süreç...
+
+357
+01:39:48,787 --> 01:39:56,787
+Bir de bu refactorik eylemlerinden sonra yaptığımız sürüm başka bir sürüm olarak da yine orada duruyor.
+
+358
+01:39:56,787 --> 01:40:07,787
+Baktık performans değerleri kabul ettiğimizden daha aşağı düşmeye başladı. O zaman rollback yaparız. Olur bitersin. Önceki versiyona geri döneriz. Oradan devam ederiz.
+
+359
+01:40:10,323 --> 01:40:28,083
+Ki aslında bir deyim vardır ya, bir zincir en zayıf arkasının kadar güçlüdür diye. Buradan bunu daha kısa şekilde zincirin zayıf arkası şeklinde bir deyim kullanabiliyoruz kişiler veya sistem parçaları için.
+
+360
+01:40:28,083 --> 01:40:34,083
+Şimdi burada da belirli bir darboğaz, bottleneck söz konusu olabiliyor bilgi sistemlerinde.
+
+361
+01:40:35,155 --> 01:40:40,956
+Her yerde değil ama spesifik bir noktada ve belki bir dal boğaz ortaya çıkıyorsa
+
+362
+01:40:41,359 --> 01:41:09,359
+Ben bunda trafik şeritleri örneğini veriyordum mesela. Şimdi ne oluyor mesela? Boğaz Köprüsü'nden önce 5 şerit giriyor yol, ondan sonra 3 şerit köprüye sıkışıyoruz. O 5 şeridi 3 şeridi düşünmeye çalışırken ister istemez orada bir bekleme olabiliyor. Araç harcımına göre bu bekleme azdan çoğa kadar değişik zaman ayaklarında yine zaman yaparlarında sonuç.
+
+363
+01:41:09,359 --> 01:41:33,380
+Eğer o dal boğazı kaldırsak o zaman çok daha iyi bir akış gerçekleşecek. Benzer şeyler bilgi sistemlerindeki denetim akışı, veri akışı, işlem akışı için de geçerlidir. Acaba biz bu herhangi bir refactoring eylemini yaptıktan sonra acaba bu dal boğazı mı kötüleştirdik?
+
+364
+01:41:34,003 --> 01:41:53,003
+Ona bir bakmak lazım tabii ki. Ama büyük ihtimalle bizim sistemdeki darboğaz bir faktörün yaptığımız yerlerin dışında bir yer olacak. Zaten biz tasarımımızda veya kodluyuzarken oraların neler olduğunu biliyoruzdur zaten. Oralara dokunmuyorsak...
+
+365
+01:41:53,908 --> 01:42:11,488
+Yani yaptığımız ufak tefek ek yüklerin işte bir de facto eylemine gelen 100 milisaniye, bir de facto eylemiyle gelen 200 milisaniye, öteki ikisiyle gelen 50'şer milisaniye derken toplamda 400 milisaniye tuttu.
+
+366
+01:42:13,524 --> 01:42:40,423
+İşlemleri 3 saniye, yani 3000 milisaniye zorlayan başka bir darboğazım var. Yani onun yanında, 3000'in yanında 200 göz ardı edilebilecek bir miktar. Ama bunun bize getireceği bakım kolaylıkları, oradan getireceği tasavvuflar, maddi tasavvuflar hatta gerçekleşeceği için biz bu defaklılık eylemini yapalım deriz.
+
+367
+01:42:41,524 --> 01:42:59,524
+Bu konuda orada olmasının bir nedeni vardır herhalde. Eğer kaldırabiliyor olsaydı kaldırılırdı diye düşünüyorum. Ya da Trican, Dolarity Fix bir çözüm yapıldı. Sonraki sürümlerde o daha doğrusu geliştirme yönelik başka taslamlarda yapılabiliriz. Ama şu an elinizdeki şu versiyonda...
+
+368
+01:43:00,884 --> 01:43:14,124
+O dağboğaz'ın yanına bile yaklaştırmayacak kadar ek yük getiren ufak tefek refactoring eylemlerini toplamda yapmış olmamızın bir sakıncasının olmadığını söylemek istiyorum. Tekrar tekrar.
+
+369
+01:43:24,692 --> 01:43:31,431
+Evet, olay bu. Kaç cümleleri de burada özetlemişim.
+
+370
+01:43:31,431 --> 01:43:37,171
+Evet, şimdi, şunu da sorunlarından geçmeyelim.
+
+371
+01:43:41,011 --> 01:43:45,831
+Sıradaki defaktörlük eğilimimiz aynı kod kusura gidenme yönelik.
+
+372
+01:43:46,151 --> 01:43:48,611
+Replace method with method object.
+
+373
+01:43:49,235 --> 01:44:07,536
+Metot yerini yeni türden bir nesne kullanımı şeklinde çay edebiliriz. Üstüne çalıştığımız metot hem çok uzun hem de çok sürede geçiyor yerler değişken kullanıyor ve bununla o kadar karışık karmaşık şekilde kullanıyor ki bir türlü rahatça ekstra metot yapamıyoruz.
+
+374
+01:44:09,043 --> 01:44:17,703
+Eğer böyle bir durum söz konusuysa o zaman o sorumlu kısmı bir bütün olarak ekstra edelim.
+
+375
+01:44:17,703 --> 01:44:24,703
+Yeni bir sınıf oluşturalım. Bütün o metodu aynısını o yeni oluşturduğumuz sınıfa taşıyalım.
+
+376
+01:44:25,903 --> 01:44:35,703
+Metodun yarar değişkenlerini yeni sınıfın üye alanları yapalım. Böylelikle onu bir kenara ayıralım.
+
+377
+01:44:37,043 --> 01:44:40,643
+Onun üstünde düzenlemeleri yapmaya çalışalım.
+
+378
+01:44:43,743 --> 01:45:03,983
+Örneğin, Orda sınıfında, Price metodunda bir dolu en azından 3 tane geçli değişkenim var. Uzun uzun hesaplamalarım var. Bu değişkenleri oluşturan, kullanan, birkaç kere kullandıktan sonra değerini değiştiren, hesaplamayı tazeleten veyahut da üstüne ufak bir ek yapan
+
+379
+01:45:04,207 --> 01:45:28,171
+O ufak ekle başka yerlerde tekrar kullanan bir tanesini diğer iki tanesini ne bileyim toplayıp çarpıp falan veren bir kavraşık bir kod hayal edin kafanızda. Bu price metodu böyle kolay şey yani çetin ceviz gözüküyor refactor etmek için. O zaman bari...
+
+380
+01:45:29,427 --> 01:45:39,887
+Bu menü, price hesabı, şey bu zor kısmımız. O zaman price calculator adını vereceğimiz yeni sınıfımız olsun. Bunun bu geçişi değişkenleri onun yalanları olsun.
+
+381
+01:45:42,292 --> 01:45:58,872
+Ondan sonra mesela işte Compute diye bir metot ekleyelim. Price'ın adını da değiştirmiş olduk yeni sınıfta. Çünkü adını ne? Price Calculator. Tamam. Compute'de de Calculator diyebilirdik belki. Calculator'a daha iyi bir isim vermiş olurduk. Şimdi aklıma geldi. Ama Compute' diye.
+
+382
+01:45:59,380 --> 01:46:24,100
+O hale getirdik ve order sınıfının artık price metodunda yapılan tek şey bir price karakteri nesnesi oluşturup ona parametre olarak tabi bu order nesnesini vermek. Çünkü büyük olasılıkla bu price metodunun içerisinde order sınıfın üye alanlarına erişen erişim metotları da ya da zaten kendi üyesi olduğu için direkt adı yazılaraktan üye alan erişimleri söz konusuydu.
+
+383
+01:46:27,380 --> 01:46:37,539
+Private olan üye alanların bu yeni sınıfa aktarılması gerekiyor. Ama bunu da tek tek yapmayalım lütfen. O zaman işte non-panameteristler çıkar ortaya.
+
+384
+01:46:38,868 --> 01:46:48,588
+Onun yerine bu order nesnesinin yeni halini komple disk diyerekten verelim. Bu price calculator'ın constructına.
+
+385
+01:46:48,588 --> 01:46:53,088
+Ya da belki computer parameter de olabilir. Artık nasıl uygun görüyorsa öyle olacak.
+
+386
+01:46:53,088 --> 01:47:02,488
+Ama bir şekilde order artık kendisini komple bir nesne olarak, prezor whole object yaparak price calculator'a versin.
+
+387
+01:47:02,488 --> 01:47:06,868
+Gerek constructor'a gerek ilgili metodular. Ondan sonra varsın başına.
+
+388
+01:47:06,868 --> 01:47:15,868
+Çok müdahale edemesek bile en azından Ordu sınıfının anlaşılabilirdiğini arttırdık, iyileştirdik diyebiliriz.
+
+389
+01:47:18,628 --> 01:47:21,248
+Durumumuz bu.
+
+390
+01:47:24,884 --> 01:47:43,844
+Belki de işte oradan bu price calculator kullanması yeterli ama tabii orada kendisini vereceği için gerek konstruktör parametresi gerek metod parametresi olarak o zaman arada bir bu yeni oluşturulan price calculator sınıfının mevcut orada sınıfı türünden Nesne cinsinden üye alanında olacak.
+
+391
+01:47:49,011 --> 01:48:03,032
+Yani sınıf sayısı bir arttı. Bağlaşımda bir ya da öbür taraf okudasayarsak bir buçuk arttı. O da bir dezavantaj yani. Bağlaşımı biraz yükseltmiş olduk. O da bir dezavantaj.
+
+392
+01:48:09,268 --> 01:48:17,208
+Belki daha sonra Press Calculator'u o kadar iyi refaktör etmiş oluruz ki, daha sonra tekrar order'ın içine atarız.
+
+393
+01:48:18,228 --> 01:48:24,108
+Duruma göre. Böylelikle bağlaşımı geri almış oluruz. Bağlaşım artımını geri almış oluruz.
+
+394
+01:48:24,368 --> 01:48:33,068
+Yani bakın bazı yaptığımız refactoring eyleminin çok net olmakla birlikte, bazı refactoring eylemlerinin dezavantajları da geliyor.
+
+395
+01:48:35,923 --> 01:48:47,804
+Refaktörünün evliliğini yapmakla olan kazanımımızı da görüp artık hangi durumda daha karlı olmuş oluruz ona göre yolumuzu seçip devam edeceğiz demek istiyorum.
+
+396
+01:48:52,500 --> 01:49:02,180
+Peki, yine non-class var. Ne kadar kalmış? Evet, bir 30 yansı daha var. Pekala.
+
+397
+01:49:03,739 --> 01:49:13,880
+Ha, pardon ama tabii hepsi şey değil. Sonra bir komple refactoring yapacağız. Ha, evet. Oraya kadar baktığımızda 47. yansı.
+
+398
+01:49:16,319 --> 01:49:17,880
+Ama şu an...
+
+399
+01:49:23,028 --> 01:49:49,128
+Şuradayız. Evet, daha var. Peki. Arkadaşlar, bugün üçüncü dersi yapamayacağım. O yüzden şimdi bakıyorum. Nerede kesinlikle diye bakıyorum. Saat neredeyse 3'e 10 var. Demek ki bugünlük yeterince yaptık diyorum. Sorunlarımız varsa buyurun. Yoksa bugünlük bu kadar diyeceğim. Ben unutun olayım. 0'ya yeminim.
+
+400
+01:49:50,355 --> 01:50:16,775
+13'ten nereye kadar geldik? 30'a kadar geldik. 13'ten 30'a kadar geldik. Önümüzdeki hafta refactoring bitsin bitmesin hiç önemli değil. Bitirmek zorunda değiliz. Çünkü ikinci vizemizde şey olacak nihayetinde tasarım katılımları olacak.
+
+401
+01:50:17,779 --> 01:50:25,159
+Proje edebi veremeyeceğim. Bu derste şu an kadar anlamlı bir proje edebi düşünmedim.
+
+402
+01:50:25,159 --> 01:50:30,979
+Ver ve vermedim. Bu dönemde önümüzde kalan kısa süre içerisinde verebileceğimi düşünmüyorum.
+
+403
+01:50:32,179 --> 01:50:36,739
+Ama yıl içi için iki not birleşen gerekiyor. O yüzden bir ikinci sınırımız olacak.
+
+404
+01:50:37,439 --> 01:50:45,119
+Ama dediğim gibi varsın olsun problem değil. Tasarım kalıpları odaklı olacağı için bir farklı dönemde geldiğimiz yer bizi bağlamıyor.
+
+405
+01:50:45,779 --> 01:51:07,079
+Daha sonraki komple bir ilk haftamız var. 13. haftada bile biter konularımız. O yüzden bugün 1 saat eksik yapmanın bize hiçbir götürüsü olmayacaktır. Aslında bugünlük böyle olsun diyeyim. Haftaya kaldığımız yerden devam ederiz.
+
+406
+01:51:08,404 --> 01:51:19,823
+Peki, chatten de bir şey gelmedi. Sizler de sesinizi açmanız o zaman yolunda diye değerlendiriyorum. Hoşçakalın. Haftaya görüşmek istiyorsanız.
+
+407
+01:51:19,823 --> 01:51:20,884
+Görüşürüz.
+
+408
+01:51:21,684 --> 01:51:22,463
+Birgül arkadaşlar.
