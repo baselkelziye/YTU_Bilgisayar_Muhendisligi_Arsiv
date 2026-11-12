@@ -1,0 +1,2331 @@
+1
+00:07:02,259 --> 00:07:04,259
+Arkadaşlar merhabalar.
+
+2
+00:07:04,259 --> 00:07:06,027
+Ses geliyor mu online için?
+
+3
+00:07:10,420 --> 00:07:11,860
+duyuyor musunuz?
+
+4
+00:07:22,548 --> 00:07:49,747
+Şimdi son kaldığımız yerden devam edelim. Arama problemlerini konuşuyorduk. Daha problemlerin çözüm yöntemlerine gelmedi. Problemin çözümünü oluşturmak için bir veri yapısı veya bir çözüm yaklaşımı üzerinde konuştuk. Şu ana kadar ki baktığımız birçok problem, bidon problemi olsun.
+
+5
+00:07:50,163 --> 00:07:57,663
+Ondan sonra bir yerden bir yere geçiş problemi olsun. En genel haliyle başlangıç durumundan bitiş durumuna,
+
+6
+00:07:57,663 --> 00:08:05,163
+bizi bir ağaç yapısında taşıyan ve durumları birbirine aktaran bir veriyapısı modeline dönüştürdük.
+
+7
+00:08:05,163 --> 00:08:07,663
+Problemi bu şekle çevirmiştik.
+
+8
+00:08:07,663 --> 00:08:12,663
+Şimdi bugün, bu...
+
+9
+00:08:13,139 --> 00:08:39,379
+problemle alakalı verdiğimiz tanımların üzerine artık bazı çözüm algoritmalarına bakacağız. Bu algoritmaların hepsinin özelliği bugünkü bakacaklarımız kör arama algoritmaları. Yani bilgisiz bir şekilde ekstra bir bilgiye ihtiyaç duymadan problemin tanımında var olan bilgiyle ancak çözüm arayan algoritmalar. Tanımın dışında ekstra bilgi olursa o biraz daha
+
+10
+00:08:39,668 --> 00:09:03,668
+bilgili arama algoritmaları olacak. Burada tanımlarımıza tekrar bir bakalım, öyle devam edelim. Bir kere arama yapacağımız bir durum uzayı State Space diyebileceğimiz bir yapı var. Bu durum uzayını genellikle biz şu an için arama ağacı State Space 3 veya Third Space olarak ifade ediyoruz.
+
+11
+00:09:04,052 --> 00:09:08,052
+Bunun içerisine baktığımızda mevcut durumlarımız var.
+
+12
+00:09:08,052 --> 00:09:12,052
+Bir durumdan bir duruma geçişle alakalı bilgimiz var.
+
+13
+00:09:12,052 --> 00:09:18,956
+Ve bu genel anlamda bir graf da olabilir, A-çık da olabilir ama her halükarda bir graf diyebiliriz.
+
+14
+00:09:19,187 --> 00:09:41,587
+Burada ağaç çizdiğimizde genellikle şöyle bir yanılsama oluyor. Ağacın en fazla üç düğümlü falan çiziyoruz. Üç tane durumlu çiziyoruz ama bunu üç değil belki oturt üç tane de diyebiliriz arkadaşlar. Çok şey değil. Her bir düğüm kendi içerisinden sonra farklı farklı durumlara gidebilir. Bu şekilde bir ağaç gibi düşünelim. Operatörlerimiz var.
+
+15
+00:09:41,971 --> 00:09:49,491
+Bu operatörler durumlar arası geçişlerimizi sağlayacak. Başlangıç durumumuz var. Bir tane durumumuz başlangıç olacak.
+
+16
+00:09:49,491 --> 00:09:55,731
+Bu yüzden bunu bir kök düğüm gibi düşüneceğiz. Hedeflediğimiz, ulaşmak istediğimiz bir düğüm var.
+
+17
+00:09:55,731 --> 00:10:04,771
+Başlangıçtan hedefe birkaç farklı şekilde gidebiliriz. Bu gidiş yollarının toplam maliyetleri bizim için ayrı bir bilgi.
+
+18
+00:10:08,148 --> 00:10:26,548
+başlangıçtan hedefe giden yola çözüm yolu diyeceğiz. Bu yollarda çok fazla olabilir. Maliyetler farklı olacağı gibi çözüm yolları da çok farklı olabilir. Bu yollardan en düşük maliyetli olduğumuz şey optimal yol.
+
+19
+00:10:26,548 --> 00:10:34,444
+En düşük maliyetli yollardan ilkide ilk bulduğumuz sözünde optimal çözüm olacak. Bu da birazdan gelecek.
+
+20
+00:10:34,964 --> 00:10:41,764
+Optimal köyü olması için ilk bulduğumuz en düşük maliyetliği isimlendireceğiz diyelim.
+
+21
+00:10:42,764 --> 00:10:48,964
+Arama işlemi neden zor olabilir? Şimdi şuradaki tanımlara dikkate alırsak,
+
+22
+00:10:50,964 --> 00:10:54,964
+bir durumdan girilecek durum sayısı, branch factor dediğimiz,
+
+23
+00:10:58,676 --> 00:11:23,635
+branching factor, B olsun. Ve bu B değeri 10 olsun. Şimdi şöyle düşünün, bir düğümdesiniz. Bu düğümden 10 farklı çıkış noktanız var. 10 tane oldu. 2, 4, 6, 8, 10, 10 tane. Düşünün, o düğümlerden de 10 tane, 10'dan da 10 tane. Yani eksponansiyel bir durumdan bahsediyoruz.
+
+24
+00:11:25,107 --> 00:11:49,227
+Dolayısıyla bizim çözümümüzün derinliği 0 olursa, bu nedir? Bir tane şey gerektirir. Çözümün derinliği 2 olursa, yani bunu bir ağaç düşünün, işte bu ağacın birinci seviyesi şu, ikinci seviyesi şu, sizin elde ettiğiniz çözüm derinliği 2 olduğunda, branş faktörünüz de 10 olduğunda,
+
+25
+00:11:50,004 --> 00:12:03,824
+10'un karesi mertebesinde ama 10'un karesine gidene kadar, düşünün, şu seviyede 10'un karesi kadar, 10'dan bir önceki seviyede 10 üzeri 1 kadar, şurada da 10 üzeri 0 kadar toplam ne oluyor?
+
+26
+00:12:03,824 --> 00:12:16,104
+111 tane durum oluyor. Dolayısıyla, şurada bahsettiğimiz şey, üzerinde işlem yapılan durum sayısı, o ana kadar ki bütün durumları toplam. 4 olduğunda ne olacak?
+
+27
+00:12:16,307 --> 00:12:26,107
+10 üzeri 4 artı, 10 üzeri 3 artı, 10 üzeri 2 artı, 10 üzeri 1 artı, 10 üzeri 0 mı olacak? Böyle bir şey işte. Şunu topladığımızda şu değere geliyor.
+
+28
+00:12:26,107 --> 00:12:34,307
+Bu kadar farklı durumu eğer B'yi 10 alırsak işlememiz gerekiyor. Bunun üzerinde işlem yapmamız gerekiyor.
+
+29
+00:12:34,307 --> 00:12:40,268
+Tabii bunu saniyede işlem yapabileceğimiz makinemizin...
+
+30
+00:12:40,659 --> 00:12:53,220
+saniyede 1000 tane işlem yapabilmek kabiliyeti olduğunu dikkate alırsak, işte bir işlem 1 milisaniyede gerçekleşti.
+
+31
+00:12:53,220 --> 00:12:57,539
+2 olduğunda 111 tane işlem yapacağız, yaklaşık olarak şu kadar.
+
+32
+00:12:57,539 --> 00:13:07,539
+4 olduğunda şu kadar oluyor, yani 2 katına çıkmış ama şurası 2 katına çıktığında burası neredeyse 100 katına çıkıyor.
+
+33
+00:13:07,956 --> 00:13:12,556
+Şuradaki işlem de 0.1 saniyeden 11 saniyeye çıkıyor.
+
+34
+00:13:12,556 --> 00:13:21,155
+İşte bu iki katına çıkınca bu bu sefer çok çok daha fazla katlanıyor. Çünkü 10 üzeri bir ifade, eksponansiyel bir ifade.
+
+35
+00:13:21,155 --> 00:13:32,556
+Ve 12 olduğunda yani şuradan şuraya 6 kat çıktığında saniyeden yıla geçiyor. Bu kadar fazla devasa bir işlem durumu var.
+
+36
+00:13:33,903 --> 00:13:43,503
+Aynı şey bellek tarafında da tutulacak. Şöyle düşünelim, bir durum veya bir not için tutulan bellek mihtarımız 100 byte olsun.
+
+37
+00:13:43,503 --> 00:13:53,503
+Sadece şunun için 100 byte tutuyoruz. O zaman iki seviyeli olduğunda üç tane 100 byte, yaklaşık olarak şu kadar byte tutacağız.
+
+38
+00:13:53,503 --> 00:14:00,235
+Dört seviye olduğunda megabyte, sekiz seviye olduğunda gigabyte, daha sonra terabyte'e gidiyoruz.
+
+39
+00:14:00,820 --> 00:14:25,500
+Hem zaman açısından hem de bellek açısından bu arama yer yer çok çok zor bir problem haline gelebiliyor. Şimdi burada şöyle bir varsayım yapsak, saniyede yapabileceğimiz işlem sayısını binden bir trilyona çıkarsak, yani bir trilyona çıkarmak için çarpı 10 üzeri 9 mu diyeceğiz? 10 üzeri 9 kadar işlem kabiliyetimizi arttırsak.
+
+40
+00:14:25,908 --> 00:14:46,908
+Ki günümüz işlemcileri gigahertzlerle çalışıyor. Yani hemen hemen bu seviyelerde bir şey. Şimdi bunu bu kadar arttırdığımızda şu 35 yıl birazcık azalacaktır değil mi? Belki saniyeler mertebesine indirebileceğiz. Ama sizce tam bir çözüm olur mu bu? Niye olmaz?
+
+41
+00:14:48,692 --> 00:15:15,692
+Yani şu derinlik dediğimiz buradaki şey branş faktörümüz de sabit kalsın, B eşittir 10'da kalsın. Şu 12 değil de bunu 32 yaptığımızda, hatta 12'nin tam bir katı yapalım, 48 yapalım. Şunun 4 katına çıktığında, şurası yine çok kısa bir şey sonra yıl mertebesinde olacak. Çünkü o kadar farklı durum üzerinde işlem yapmamız gerekiyor.
+
+42
+00:15:15,827 --> 00:15:22,707
+Çünkü öyle bir çözüm arıyoruz ki, tabi ben burada ikili çizdim ama şu ağacı, arkadaşlar onlu düşünün.
+
+43
+00:15:24,147 --> 00:15:31,827
+Bu onlu bir ağaç üzerinde ben işte biraz sonra göreceğimiz algoritmalar farklı farklı arama işlemleri yapabilirim.
+
+44
+00:15:32,228 --> 00:15:37,427
+Ve aradığım şey de çok çok derinlerde olabilir. Bir de bu şu an çizdiğim şey sadece ağaç.
+
+45
+00:15:37,668 --> 00:15:43,268
+Bir de bunun graf halini düşünün. Graf ise cycle olma ihtimali var, başka durum ihtimalleri var.
+
+46
+00:15:43,408 --> 00:15:48,627
+neredeyse çok çok çözülmesi mümkün olmayan problemlere gidilebiliyor.
+
+47
+00:15:48,627 --> 00:15:54,688
+Zaten bazı problemler bu tarzda algoritmalarda çözülemeyecek. Onun için yaklaşık algoritmalara ihtiyaç duyacağız, gelecek.
+
+48
+00:15:55,807 --> 00:16:01,168
+Şimdi arama algoritmaları veya arama stratejileri dediğimiz şey, bize şunu söylüyor.
+
+49
+00:16:01,168 --> 00:16:03,807
+Tamam, burada aramanın tanımını yaptık.
+
+50
+00:16:04,367 --> 00:16:09,248
+Bir durumumuz var ve mümkünse başlangıç durumundan başlayacağız dedik.
+
+51
+00:16:09,248 --> 00:16:11,087
+Bir başka duruma giderken
+
+52
+00:16:11,604 --> 00:16:15,604
+Olası durumlarda acaba hangisini nasıl seçmeliyiz?
+
+53
+00:16:15,604 --> 00:16:18,604
+Algoritmalar ve aslında tecrübimiz bize bunu söyleyecek.
+
+54
+00:16:18,604 --> 00:16:20,604
+Veya bununla alakalı bazı şeyler söylüyor.
+
+55
+00:16:20,604 --> 00:16:22,604
+Bu ne demek?
+
+56
+00:16:22,604 --> 00:16:29,604
+Yine arama uzayımızı bir kiliç edelim ama bunu 10'lu, 15'li veya 5'li artık farklı şeyler düşünebilirsiniz.
+
+57
+00:16:29,604 --> 00:16:31,604
+İşte şöyle şeyler düşünelim.
+
+58
+00:16:31,604 --> 00:16:36,604
+Ben mevcutta şuradaki bir noktadayım.
+
+59
+00:16:37,203 --> 00:16:55,203
+Bu noktadan, acaba buna mı gideyim, buna mı gideyim, buna mı gideyim? Bunlardan bir karar veririz. Neye göre karar verebiliriz? Şimdi şunların üzerlerinde maliyetleri yazar, ona göre karar verilebilir. Bu grafta bir maliyet bilgisi olur, ona göre karar verilebilir. Bütün maliyetler eşit olabilir, buna göre bir karar verilebilir.
+
+60
+00:16:55,203 --> 00:17:04,139
+İşte, aşağıya doğru mu gidelim, enlemesine mi gidelim, farklı kararlar verebiliriz. Bu algoritmalar bir de bunu söylüyor.
+
+61
+00:17:04,403 --> 00:17:12,403
+Ve bu algoritmaları değerlendirirken birkaç farklı açıdan, birkaç farklı buna kriter demek de her zaman şey değil mi o?
+
+62
+00:17:12,403 --> 00:17:17,403
+Kriter diyebiliriz. Şu boyutlarla değerlendirme yapmamız gerekir.
+
+63
+00:17:17,403 --> 00:17:30,220
+Bir, bu seçtiğimiz algoritmaYapay Zeka strateji eğer ki bu arama zayı içerisinde bir tane çözümümüz varsa acaba bu çözümü illaki bulacak mı?
+
+64
+00:17:31,508 --> 00:17:42,508
+Ne zaman bulduğu önemli değil. Çözüm var, ağaç üzerinde bir yerde bu algoritma gidecek o çözüme sonsuzda dahi olsa bulabilecek. Buna komplet mis, tamlık diyoruz.
+
+65
+00:17:42,508 --> 00:17:51,508
+Düşünün, şu ağacı işte 100 seviye aşağıya indirin, her seviyede de ağaç 8'e dallanmak gerçekleştirsin.
+
+66
+00:17:51,731 --> 00:18:13,731
+88. seviyede de sizin çözümünüz var. Düşünün çok devasa bir arama olsaydı. Ama algoritmanız gerekirse teker teker brute force mantığında olduğu gibi bakıyor. Size çözümünü veriyorsa, ne zaman verdiği, ne kadar bellek harcadığı önemli değil. İlla ki çözümü buluyorsa, bu algoritmanın komplet, tamlık dediğimiz şartını sağlayacak.
+
+67
+00:18:19,251 --> 00:18:29,251
+Problem uzayına göre nasıl büyüyeceğini, veri miktarına göre algoritmanın çalışma zamanının nasıl büyüyeceğini gösteren bir kompleksti. Aslında bir fonksiyon.
+
+68
+00:18:29,251 --> 00:18:42,251
+Aynı şekilde problem için tuttuğumuz veri dışında, sonuçta problemi tanınlarken bir veri yapısı kullanarak veriyi bir yerde saklıyoruz. Bunun dışında hesaplama yapmak için dikkat edelim.
+
+69
+00:18:42,771 --> 00:18:54,771
+Space Complex'de zaten hep yanlış ve yanıltamalı bir şey. Veriyi saklamak için, orijinal veriyi saklamak için veya problemi tanımlamak için tutulan veri değildir.
+
+70
+00:18:54,771 --> 00:19:09,771
+Problemi çözmek için gerekli olan algoritmanın ihtiyaç duyduğu ekstra bellek miktarı. 10 elemanlı dizimiz var. Bu diziyi sıralamak için algoritma 10 elemanlı bir yere daha ihtiyaç duyuyor.
+
+71
+00:19:10,228 --> 00:19:15,827
+n-e n'lik bir şey, o n'lik bir space kompleksi olduğunu söyledim. Orijinal veriyle alakası yoktur.
+
+72
+00:19:15,827 --> 00:19:21,827
+Arama için gerekli hafıza miktarı bize burada hafıza karmıcısı veriyor.
+
+73
+00:19:21,827 --> 00:19:31,228
+Optimallik, şimdi şurada yukarıda söylediğimiz optimallikle karışmasın. Birincisi optimum yol, optimum path, en düşük maliyetli yolumuz.
+
+74
+00:19:36,276 --> 00:19:39,876
+İlk bulunan çözümün en düşük maliyeti olması.
+
+75
+00:19:41,876 --> 00:19:55,276
+Tabi burada özellikle zaman karmaşıklığı ve hafıza karmaşıklığı bakarken bize algoritmik modelimize, algoritmamıza ne etki edecek?
+
+76
+00:19:55,876 --> 00:20:00,000
+Bunu bir ağaç yapısı gibi düşündüğümüzde ağacın maksimum...
+
+77
+00:20:00,000 --> 00:20:13,119
+Maksimum dallanma sayısı, yani B dediğimiz branch factor etki edecek bir parametredir. Bir düğümden çıkan maksimum düğüm sayısı. Çünkü ağaç buna göre zaten derinleşiyor ve bu derinliğin maliyetli bu artık.
+
+78
+00:20:13,119 --> 00:20:22,559
+D'de en az maliyetli çözümün derinliği olsun. M dediğimiz şey de arama uzayının maksimum derinliği. Yani bu ağaç...
+
+79
+00:20:22,963 --> 00:20:34,963
+Dallanacak, dallanacak, dallanacak. En son nereye kadar gidiyor? Yani çocuk şey dediğimiz yaprak düğümler dediğimiz şeyler en son nerede? Ne kadar derinlikte oluyor? Ki bu bazen sonsuzluğu olabilir.
+
+80
+00:20:34,963 --> 00:20:47,963
+Bu B, D, M, M'yi kullanarak işte M maksimumdan geliyor. D dediğimiz şey çözümün derinliği, solution of the depth of solution. B de branch factor. Bunları kullanarak
+
+81
+00:20:49,523 --> 00:21:03,023
+Time Complex'te işte TN diyoruz ama aslında burada T, B virgül, M virgül, D'ye bağlı bir şey çıkabilir. Aynı şekilde Space için de B virgül, D virgül, M'ye bağlı şeyler çıkabilir diyeceğiz.
+
+82
+00:21:05,523 --> 00:21:15,723
+Şimdi gelelim algoritmalarımızın bazı örneklerine. Şimdi bunlar sadece problemin tanımından sunulan verileri kullanan
+
+83
+00:21:15,923 --> 00:21:31,923
+Bunun dışında ekstra bir veri kullanmayan algoritmalar. Dolayısıyla problemin tanımı dışında herhangi bir bilgiye sahip olmadığı için bunlara kör arama, mekanik arama, bilgisiz arama, blind arama, uninformal arama...
+
+84
+00:21:32,211 --> 00:21:54,211
+stratejileri, algoritmaları diyebiliriz. Bunların bazılarını biliyorsunuz, Bradford Search, Debford Search diyoruz, biliyoruz. Bunlara birazcık modifikasyonlar yapmışlar. Bu modifikasyonlar sayesinde, şuradaki dört tane kriterden, ana kriterden bazıları iyileştirilmiş, bazıları kötüleştirilmiş.
+
+85
+00:22:00,084 --> 00:22:08,084
+Biraz daha bilgili arama algoritmalarına geçelim. Şimdi bir kısmını buradan anlatacağım, bir kısmını da şeyden anlatacağım.
+
+86
+00:22:08,084 --> 00:22:18,084
+Enlemesini arama dediğimiz breadth-first-first ne oluyor? Elimizde bir mevcut durumumuz var.
+
+87
+00:22:18,084 --> 00:22:26,084
+Bu mevcut durum, bakın burada breadth-first-first algoritma analizinde veya veri yapılarında gördüğümüz veya diskrette gördüğümüz
+
+88
+00:22:27,028 --> 00:22:31,028
+Bütün bir graf baştan veriliyor da o graf üzerinde arama yapıyorsunuz değil.
+
+89
+00:22:32,028 --> 00:22:39,028
+Bir başlangıç durumundasınız, aramaya başlıyorsunuz, graf kendisi büyüyor veya ağaç kendisi açılıyor.
+
+90
+00:22:39,028 --> 00:22:45,028
+Hani oyunlar vardır ya işte böyle karanlık bir alan vardır, siz oraya doğru gidersiniz, o kendisi açılır, bu da onun gibi düşünün.
+
+91
+00:22:45,028 --> 00:22:49,028
+Çünkü tamamen öyle bir uzay içerisinde bilgisizce arama yapıyoruz.
+
+92
+00:22:49,028 --> 00:22:52,028
+Dolayısıyla başlangıçta şöyle bir durumumuz var.
+
+93
+00:22:53,395 --> 00:23:01,056
+Ondan sonra bu branş faktörü de örneğin bu durumdan hangi durumlara gidebiliriz, gidebiliriz, durum bilgisi size açılıyor.
+
+94
+00:23:01,056 --> 00:23:08,315
+Burada ne var? Önce bu varken daha sonra şu durumlara gidebildiğinizi öğreniyorsunuz ve durum uzayınız şu hale geliyor.
+
+95
+00:23:08,315 --> 00:23:13,355
+Şimdi Brad Körstörç'ün kuyruk yapısı kullandığı için bir tane K kuyruğu kullanalım.
+
+96
+00:23:21,172 --> 00:23:31,771
+12, 13, 14. Normalde olabilecek, en sonunda açılabilecek durum uzayımız şu olsun. Kuyruk yapısı gereği, kuyruğun başına önce biz kuyruğa 1 alıyoruz.
+
+97
+00:23:31,771 --> 00:23:43,172
+Bu 1 aldıktan sonra bakıyoruz. Örneğin bizim optimal aradığımız çözüm de ne olsun? 6 olsun. Çözüm 6 olsun. Yani 6'yı arayacağız.
+
+98
+00:23:47,923 --> 00:23:54,923
+Kuyruğumuz boş vaziyette. Bir bizim aradığımız çözüm mü değil. O zaman diyeceğiz ki, kuyruktan kimlere gidebilirim?
+
+99
+00:23:54,923 --> 00:24:03,923
+İkiye gidebiliyorum, üçe gidebiliyorum. İkiyi ve üçü kuyruğa ekliyoruz. Birden gidilebilecek olan her şeyi bir sefer de kuyruğa ekledik.
+
+100
+00:24:03,923 --> 00:24:09,923
+Sonra kuyruktan bir eleman daha çekiyoruz. Kuyruk boşalmışlar henüz. Arama uzayımız devam ediyor.
+
+101
+00:24:11,476 --> 00:24:16,096
+Ve biliyoruz ki işte bu 6 dediğimiz şey bu uzayın bir yerlerinde var.
+
+102
+00:24:16,096 --> 00:24:19,096
+Ama bilinçsizce körü körünü aramaya devam edeceğiz.
+
+103
+00:24:19,776 --> 00:24:22,776
+2'yi çıkartıyoruz. 2 aradığımız çözüm mü değil.
+
+104
+00:24:23,636 --> 00:24:26,016
+Kuyrukta şu an sadece 3 var.
+
+105
+00:24:26,556 --> 00:24:31,056
+3'ü çıkartıyoruz. 3 aradığımız çözüm mü değil. Kuyruğumuz boş.
+
+106
+00:24:31,776 --> 00:24:34,896
+Tabi 2'yi, bir dakika şurada şey yanlış yaptık.
+
+107
+00:24:34,896 --> 00:24:38,676
+2'yi çıkarttığımızda 2'den gidilebilecek olanları da
+
+108
+00:24:38,768 --> 00:25:03,768
+Şu an kuyrukta sadece 3 vardı. 2'den gidilebilecek olanları da yani 4'te 5'i de kuyruğa ekledik. Sonra 3'ü çıkarttık. 3'ü çıkartırken kuyruğun başında 4-5 vardı. 3'ten gidilecek olanları da, 3 bizim çözümümüz olmadığı için, 6 ve 7 diye ekledik. 3 çözümümüzde kuyruktan bir tane eleman çıkartıyoruz. 4'ten gidilecek olanlar var.
+
+109
+00:25:04,435 --> 00:25:12,035
+4 kuyruktan çıkacak 5, 6, 7, 4'ten gidilecek olan 8 ve 9 var. Bunları kuyruğa ekliyoruz.
+
+110
+00:25:13,235 --> 00:25:27,435
+4 şey olmadığı için 5'i çıkartacağız. 5'ten gidilecek olanları 6, 7, 8, 9, 10, 11, şeyi çıkartıyoruz. Sonra 6'yı çıkartıyoruz. 6 bizim çözümümüzdür.
+
+111
+00:25:28,276 --> 00:25:35,155
+Bakın, 6 burada bir çözüm ama aşağıda başka bir yerlerde de çözüm olabilirdi. Birden fazla şey de bulabilir.
+
+112
+00:25:35,155 --> 00:25:43,076
+Diyoruz ki tamam, 6 buradan çıktı, artık çözümü bulduk. Bu bizim bulduğumuz çözüm.
+
+113
+00:25:43,076 --> 00:25:54,436
+Gezdiğimiz sıra 1, 2, 3, 4, 5, 6 sırasıyla girdik ama 6'nın çözüm yolu, solution pet dediğim şey, 1, 3, 6 şeklinde de daha sonra kullanılacak.
+
+114
+00:25:55,443 --> 00:26:22,084
+Dikkat ederseniz burada şu bellek miktarı kullandığımız şu liste, hani Q, bir düğümle başladık, problem açıldıkça devasa bir şekilde büyümeye başladı. Niye? O State Space 3'de, şurada bahsettiğimiz şeyde, bellek miktarı da aynı zamanda olduğu gibi, burada çok fazla miktarda problem uzayı genişledikçe,
+
+115
+00:26:22,291 --> 00:26:26,291
+saklamamız gereken miktarda artacağı için çok devasa bir şekilde artabilir.
+
+116
+00:26:27,291 --> 00:26:33,291
+Bu bizim işte Bradford-Burch dediğimiz algoritmanın kendisi ve kör arama algoritmalarından bir tanesi.
+
+117
+00:26:34,291 --> 00:26:39,211
+Şimdi bunun analizine bakacak olursak, tabi önce şuradan şey göstereyim arkadaşlar.
+
+118
+00:27:00,276 --> 00:27:25,276
+Evet, önce mesela problem uzayında A var. Q'nun başında A olacak. Sonra A ile beraber B ve C'yi ekleyeceğiz. Q'nun başına B gelecek. Sonra problem uzayına B ve E'yi ekleyeceğiz. Kuyruğun başına C'ye gelecek. Ondan sonra P ve G'yi ekleyeceğiz. Sonra D'ye bakacağız. B'nin çocukları varsa böyle devam edip gidecek. Bu algoritma sizce kompleit olur mu?
+
+119
+00:27:26,804 --> 00:27:28,804
+Komplit özelliğiniz ha var.
+
+120
+00:27:31,804 --> 00:27:33,804
+Sağ var, neden sağ var?
+
+121
+00:27:33,804 --> 00:27:46,804
+Bir şekilde, çözüm ağacın neresinde, ne kadar derinlerinde olursa olsun, makinemiz isterse 300 yıl sonra vak verecek olsun, bu algoritma Komplit algoritmadır.
+
+122
+00:27:46,804 --> 00:27:50,804
+İlla ki bir yerlerde çözüm varsa ona bir şekilde ulaşacaktır.
+
+123
+00:27:51,763 --> 00:28:03,443
+Ama şuna dikkat edelim, B'miz finite olursa, sonun olur. İnfinit bir durum olursa makine cevap vermeyeceği için o anlamda böyle bir ufak bir eğer çıkartılır.
+
+124
+00:28:03,443 --> 00:28:12,564
+Algoritmanız zaman karmaşıklığı da şimdi B'miz vardı, M'miz vardı, bir de D'miz vardı. Buna göre algoritma zaman karmaşıklığı nasıl düşüyoruz?
+
+125
+00:28:16,980 --> 00:28:18,731
+Böyle düşünün mesela.
+
+126
+00:28:24,084 --> 00:28:31,884
+Biz ikili çiziyoruz ama hani kolayımıza geldiği için ama bunun her daldan işte 20 tane dal çıktığını düşünün.
+
+127
+00:28:33,384 --> 00:28:38,884
+Şimdi bu ağaç nasıl bir büyüme gösteriyor?
+
+128
+00:28:39,684 --> 00:28:40,884
+Her seviyede.
+
+129
+00:28:42,684 --> 00:28:50,884
+Ama şöyle, mesela dördüncü seviyede, pardon burada üçüncü seviyede, 2 üzeri 3 artı 1 kadar.
+
+130
+00:28:51,284 --> 00:29:18,324
+Artı 2 üzeri 3 kadar, artı, pardon, 2 üzeri 3. sevide 2 üzeri 3, artı 2 üzeri 2, artı 2 üzeri 1, artı 2 üzeri 0. Yani verilen seviyeye kadar düğümleri içerecek şekilde bir arama yapmamız gerekiyor. O kadar fazla şey. E bu genelleştirilirse nasıl bir şey olur? B, M ve D üzerinden. 2 üzeri kaç dedik? İşte 3 dedik.
+
+131
+00:29:19,028 --> 00:29:40,528
+B dediğimiz şey burada ikiye karşılık gelecek. D'de çözümünüze karşılık gelecek. B üzeri D. Aslında B üzeri D artı bir baştan alıyorsun. Çünkü şöyle bir durum var. Örneğin senin çözümün burada.
+
+132
+00:29:41,172 --> 00:29:50,172
+Bu çözümde şu noktaya gelince bunun altındakileri de Q'ya ekliyorsun. Dolayısıyla Q'ya onlar da girilir için aramaya onlar da dahil olabiliyor.
+
+133
+00:29:50,172 --> 00:29:59,172
+Düşün yani en son çözümümüz şurada olsun. Aradığınız çözüm. Ben şuraya bakınca zaten bunların hepsinin eklendiğini görüyorum.
+
+134
+00:29:59,172 --> 00:30:06,172
+Dolayısıyla bir altı seviyeye kadar B üzeri D artı 1'e kadar eksponansiyel olarak yapalım. Space'imiz nasıl olacak?
+
+135
+00:30:08,147 --> 00:30:31,147
+Bundan çok farklı bir şey olur mu? Ağaç bu şekilde büyüyorsa algoritmik olarak, bu da çok benzer değil mi? Her bir nodu bellekte tutuyoruz. O bellekteki her bir noduda gezmek zorundayız. O zaman şey. Peki algoritma optimal mı? Yani ilk bulduğumuz çözüm acaba...
+
+136
+00:30:32,084 --> 00:30:42,764
+En iyi çözüm, en az maliyetli çözüm olabilirdi. Şimdi burada çözümden kastımız şu arkadaşlar. Ağacı bu şekilde inşa, yani var kabul ediyorum.
+
+137
+00:30:45,524 --> 00:30:52,204
+Kabul edelim ki, çözümlerden bir tanesi şurada, bir tanesi şurada.
+
+138
+00:30:53,884 --> 00:30:57,764
+Optimal çözüme acaba bizi ulaştırabilir mi muhafır?
+
+139
+00:30:58,387 --> 00:31:09,987
+Çünkü nasıl geziyor? Önce buraya bakıyor, sonra bu seviyeye bakıyor. Aşağıda bir çözüm varsa, ama bundan daha az maliyet çözümü daha önce bulabilme ihtimalimiz var.
+
+140
+00:31:09,987 --> 00:31:22,067
+Dolayısıyla, optimal. Ama işte şuna bakacağız. Burada bulunduğumuz bu noktadan bir şuraya gidebiliriz, işte bir de buraya gidebiliriz.
+
+141
+00:31:22,067 --> 00:31:25,587
+Yapacağımız bu geçişlerin hepsinin maliyeti aynıysa.
+
+142
+00:31:25,680 --> 00:31:39,680
+Şimdi düşünün, şuradan aşağıya doğru gitme bir yol, buraya doğru sola doğru gelmek bir yol. Burada biz her şeyin maliyetini eşit düşünürsek, şuradaki bulduğumuz çözüm optimal çözüm olur.
+
+143
+00:31:39,680 --> 00:31:50,680
+Ama belki, şöyle bir ihtimal de var, aşağıya doğru gidip şuradaki bulduğumuz çözüm maliyet olarak daha küçük olursa, işte o yanıltır. O zaman şu optimal bir çözüm olmaz.
+
+144
+00:31:52,372 --> 00:32:00,372
+Eğer ki Space Plan'ında yaptığımız her bir hamle aynı durumdaysa o zaman buna optimal bir durum diyebiliriz.
+
+145
+00:32:01,372 --> 00:32:11,372
+Bunun en büyük sıkıntısı bilgisayar açısından düşündüğümüzde Space'in çok fazla büyümesi yani eksponansiyel growth olması büyük bir problem.
+
+146
+00:32:12,372 --> 00:32:19,148
+Her şeyi tutmak zorundasınız. Ve düşünün, bulunduğunuz noktadan bir adım ileriye gidiyorsunuz.
+
+147
+00:32:19,539 --> 00:32:30,739
+Yani düşündüğünüz şu an işte D inci derinlikteyiz. O D inci derinliğe kadar indik. Belleğimiz var, yetti. Ondan sonra bir adım daha yapsak ne olacak?
+
+148
+00:32:31,539 --> 00:32:37,139
+B üzeri D kadar artı space'e daha iyi. B üzeri D artır space'e kadar daha iyi geçeceğiz.
+
+149
+00:32:37,739 --> 00:32:43,339
+İşte her daldan beş tane şey açılsın. Üç birim ilerlemiş olalım.
+
+150
+00:32:43,859 --> 00:32:48,980
+Yani bir adım attık, sonra bir alt seviyeye daha gittik, bir alt seviyeye daha gittik, bir altı daha gittik.
+
+151
+00:32:48,980 --> 00:33:02,899
+Gittiğimiz yerde, üç üzeri ne oluyor? Altı kadar, pardon beş üzeri dört kadar, her adımda beşe dallanıyoruz dedik ya, yeni bir şey aileye dahil ediyor.
+
+152
+00:33:02,899 --> 00:33:09,859
+Çözüm uzayımıza, belleğimize dahil oluyor. Dolayısıyla belleği çok kötü kullanan bir algoritma diyebiliriz.
+
+153
+00:33:10,324 --> 00:33:11,980
+Öbür tarafa geri geleceğim.
+
+154
+00:33:15,988 --> 00:33:40,587
+Şimdi ağacın sonlu olma durumunda okey dedik. Şimdi şurada B üzeri D artı bir, B üzeri de üç aşağı beş yukarı aynı olacağı için biz burada şeyde daha anlaşılsın diye bu şekilde söylüyoruz. Yine aynı şekilde burada şey var, hafıza burada zamandan çok çok daha büyük bir problem. O kadar şey, space'i sağlamak her zaman mümkün olmayabiliyor.
+
+155
+00:33:40,980 --> 00:33:52,980
+Şimdi burada breadth-first-search'ü konuşmuşken aynı problem üzerinde depth-first-search'e gelelim. Bakın o zaman değişiklik nasıl olacak.
+
+156
+00:33:54,980 --> 00:34:00,980
+Yine aynı puyruk gibi bir liste tutuyorum. Yani burada K dedik, işte burada da L diyelim aynı listemize.
+
+157
+00:34:00,980 --> 00:34:07,980
+Birinci düğümü eklediğimizde listeye D eşittir şöyle.
+
+158
+00:34:08,436 --> 00:34:20,436
+Bunu çıkartıyoruz listeden. Aradığımız çözüm yine 6 olsun. 6 bizim aradığımız çözümü değil. Şimdi birinci düğümü eklediğimizde 2 ve 3 eklenecek.
+
+159
+00:34:20,436 --> 00:34:33,196
+Burada başına ekleyip baştan çıkartıyoruz ya, listenin içerisine 2 ve 3'ü ekleyip bu sefer sondan çıkartacağız.
+
+160
+00:34:33,460 --> 00:34:37,860
+Yani 2 ve 3 eklendi birden sonra, işte 1'i de çıkarttık aradığımız çözüm değil.
+
+161
+00:34:37,860 --> 00:34:43,860
+2'yi çıkartmayıp 3'ü veya 3'ü çıkartmayıp 2'ye eklediğimizi düşünelim.
+
+162
+00:34:43,860 --> 00:34:55,659
+Mechanizma hep şeyle yani bir sonraki derinliğe gidecek şekilde olsun. Bu da Q mantığı yerine stack mantığı demektir. En son eklediğimizi önce çıkartacağız.
+
+163
+00:34:58,516 --> 00:35:05,315
+Sonra 2'yi ekleyelim, hani şuradaki sıraya göre girecek olsak. Buyurun listenin içinden kimi çıkartacağız? Bu sefer 2'yi çıkartacağız.
+
+164
+00:35:05,315 --> 00:35:18,115
+2'yi çıkartırken, 2 bizim aradığımız çözümlü değil, 2'den gidilebilecek olanları listeye ekliyoruz. Mesela 3, 4, 5 ekleyelim.
+
+165
+00:35:18,115 --> 00:35:25,315
+Bu sefer listeden kimi çıkartacağız? 5'i çıkartacağız. 5 aradığımız çözümlü değil.
+
+166
+00:35:25,780 --> 00:35:39,579
+Listeye ekleyeceğimiz eleman 3, 4, 5'ten gidilebilecek olan 10, 11 var. Bu şekilde sondan ekleyip sondan çıkarma yoluyla arama yaptığımızda bu sefer aşağıya doğru derinlemesine bir hareket yaptık.
+
+167
+00:35:39,579 --> 00:35:50,180
+1'den 2'ye geldik, 2'den 5'e geldik, 5'ten sonra kime gideceğiz? 11'e gideceğiz. 11 son ulaştığımız yer olsun, 11'i çıkarttıktan sonra 10'a bakacağız.
+
+168
+00:35:50,675 --> 00:36:16,675
+Yani 11 çıkacak. 11'den sonra aşağıda bir şey yok, onun için listeye bir şey eklemiyoruz. Sonra 3-4-10 oldu. 10'u çıkarttığımızda şey oluyor. Bakın dikkat ederseniz burada bellek çok genişleyen bir yapıda girerken, şurada ağacın en derinlerine doğru gittiğimiz için bu bir yerde limitleniyor, sınırlanıyor bellekler. 10'u çıkarttıktan sonra ne var? Kime bakacağız? 4'e bakacağız.
+
+169
+00:36:17,268 --> 00:36:30,467
+4'ten sonra 3, 4, 8, 9 olacak. Sonra 9'u çıkartacağız, 8'i çıkartacağız. 4'e çıktıktan sonra 3'e gelecek. 3, 6 olacak.
+
+170
+00:36:30,467 --> 00:36:35,507
+3, 6, 7. 7'yi çıkartacağız, 6'yı çıkartacağız. 6 aradığımız şeymiş diye bakacağız.
+
+171
+00:36:35,507 --> 00:36:39,747
+Dolayısıyla biraz daha burada bellek çok aşırı büyümüyor.
+
+172
+00:36:39,747 --> 00:36:42,707
+Şimdi zaten bunu şöyle göstereyim.
+
+173
+00:36:44,820 --> 00:36:56,620
+İki boyutlu bir uzayda, arama yaptığımızı düşünelim. Yani bunu bir matris gibi düşünün ve matrisin şu noktasına gelmek istiyoruz.
+
+174
+00:36:56,620 --> 00:37:03,620
+Ve gideceğimiz dört tane ana yön olsun, hani sekiz komşuluk olmasın, dört komşuluk olmasın, şöyle yapayım.
+
+175
+00:37:03,620 --> 00:37:11,020
+Şimdi Brad first, dört ile birinci önce şuna bakalım, iki, üç, dört, yani dört tane hamlemiz var.
+
+176
+00:37:11,295 --> 00:37:33,795
+Bu sırayla gideceğiz. İşte bir yerde duvara gelirsek öbür sıraya geçeceğiz. Brad Perth-Kirst bize nasıl bir arama yapar? Önce buraya bakar. Ondan sonra yukarıya bakar. Yukarıya gidemez. Sonra üç yönüne bakar. Sonra aşağıya bakar. Ve en son baktığı yer neresi şurası. Ondan sonra bunun bu tarafına bakar. Buraya bakar.
+
+177
+00:37:34,099 --> 00:37:51,420
+Sonra, işte şundan aşağıya gidebilecek şöyle bir şey yapar. Sonra işte buraya bakar. Ondan sonra şuraya bakar. Falan şöyle. Yani etrafa yayla yayla bulunduğunuz bir noktadan önce burayı dikkate alıyor. Ondan sonra biraz daha daireyi genişletiyor. Sonra biraz daha daireyi genişletiyor. Böyle bir mantık.
+
+178
+00:37:51,420 --> 00:38:01,420
+Depth First Search açısından baktığımızda, şöyle başladıysak, yine bu bir yönünden gidecek olsak şöyle gidebiliyoruz.
+
+179
+00:38:01,588 --> 00:38:09,588
+Ve her gittiği yönde, sadece kendinden bir öncekine dair bellek bilgisini tutacağı için, bellek bakın çok fazla şey olmuyor.
+
+180
+00:38:09,588 --> 00:38:23,588
+Şimdi Bradford Search yaptığımızda, bir noktaya gittiysek, o noktanın altındaki bütün düğümleri, yani B üzeri D kadarki yeni bütün seviyeyi belleğe almamız lazım.
+
+181
+00:38:24,244 --> 00:38:32,684
+Çok küçük bir şey biliyoruz. Ama bu sadece kendisinden bir önceki tuttuğu için ve bir sonraki yer gelecek için biraz daha az bir bellek tutacak.
+
+182
+00:38:32,684 --> 00:38:43,003
+Tabii bunun da belki başka bir dezavantajı var. Şimdi oraya doğru geleceğiz. Bu da Deathverse Church dedik. Şuna ayrıca geleceğim.
+
+183
+00:38:46,612 --> 00:38:59,331
+Yine başlangıçta şöyle başladıysak, buradan sonra arama yüzeyimiz bize şu ikisini kapsayacak şekilde oluyor. Ondan sonra şu üçünü kapsayacak şekilde açılıyor. İlerlemeniz o şekilde.
+
+184
+00:38:59,331 --> 00:39:07,731
+Ve böyle stack mantığıyla, ilk giren son çıkar veya son giren ilk çıkar mantığıyla arama işlemini gerçekleştiriyoruz.
+
+185
+00:39:07,731 --> 00:39:10,612
+Buradan şeye bakalım.
+
+186
+00:39:14,036 --> 00:39:27,235
+A'dan başladıysak, önce küçük olana gidecek dersek, önce B'ye gideceğiz, sonra D'ye gideceğiz, sonra H'ya gideceğiz, sonra D'den gidilebilecek olan I'ye giriyoruz, sonra E, J, K.
+
+187
+00:39:27,235 --> 00:39:40,536
+Bu şekilde derinlemesini aramayalım. Şimdi bu algoritma komplit midir? İllaki bir yerde çözüme ulaşır mı? Bir yerlerde varsa çözüme ulaşır mı acaba?
+
+188
+00:39:43,347 --> 00:40:02,347
+Şimdi, derinlemesine gidiyoruz ya, algoritma sonsuz derinlikte olsun. Normalde hani sonlu bir derinlik varsa elbette komplet diyebiliriz. Ama algoritma şey ağacımız sonsuz bir derinlikte olduğunda, gidebildiğiniz kadar derine gidiyorsunuz ve bu derinlikten yukarıya gelme ihtimaliniz olmayabilir.
+
+189
+00:40:03,347 --> 00:40:06,347
+Klasik bir graf gibi düşünmeyelim veya klasik bir ağaç gibi düşünmeyelim.
+
+190
+00:40:06,675 --> 00:40:25,275
+Bu, öyle bir derine dalıyorsunuz ki, hatta içinde looplar olan da bir derinlikte. O derinlikten hiç çıkmama ihtimaliniz olduğu için, infinite bir dep de no diyeceğiz. Ama finite bir space'imiz varsa, complete diyebiliriz.
+
+191
+00:40:25,275 --> 00:40:33,076
+Ve şey finite olacak ve loop olmayacak, öyle söyleyebiliriz. Zaman karmaşıklığı için ne diyebiliriz?
+
+192
+00:40:33,940 --> 00:40:37,940
+Yine B, M ve D üzerinden düşecek.
+
+193
+00:40:54,036 --> 00:41:14,036
+Aradığımız çözüm mesela ağacın derinlerinde bir yerde, D derinliğinde iniyoruz ve B kadar her derinlikte bir branş faktörümüz var. Oraya kadar arama yapmak zorundaysak ne olur bu sonucu? Olmuyor mu?
+
+194
+00:41:15,795 --> 00:41:33,495
+Yine B üzeri D olmaz mı arkadaşlar? Pardon, B üzeri, yani M'ye kadar aşağıda bir yerlerde bir çözümümüz var. D'ye kadar ineceğiz. Ama M, D'den çok çok daha büyük bir sayı burada.
+
+195
+00:41:33,495 --> 00:41:43,495
+B üzeri D'ye kadar dedik ama M daha aşağılarda bir yerde çok çok daha kötü bir şey verebiliyor. Fakat soluşunlarımız dense.
+
+196
+00:41:43,891 --> 00:42:01,011
+Yani Bradford Search'tan daha şey olabiliyor. Eğer ki sizin ağaç üzerinde bir tane iki tane soluşumunuz var koskoca ağaçta, o soluşumlardan yani sıkıysa pardon dense dediğim şeydir, seyrek değil.
+
+197
+00:42:01,331 --> 00:42:22,412
+yoğun bir soluşunuz varsa, işte bir orada, bir orada, bir orada birden fazla soluşunuz varsa, o zaman breadth first search'ten daha hızlı fonksiyonlar elde edebiliyorsunuz. Bu tamamen arama uzayına göre değişebiliyor. Ama B üzeri M'ye kadar, M bakın daha aşağılarda bir şeydir. Şurada tekrar söyleyelim.
+
+198
+00:42:27,155 --> 00:42:50,155
+B, maximum branch factor, D, en az çözümün derinliği, state space'in derinliği de M. Bu ağaç, eğer çözüm en aşağılarda bir yerdeyse, ağacın sonsuza giden bir noktalarındaysa, that first work bize B üzeri M'ye kadar şey verebiliyor. Görüntüde teoride böyle. Ama...
+
+199
+00:42:50,304 --> 00:43:09,304
+Daha birkaç farklı çözümümüz varsa, belli durumlarda özellikle harita problemlerinde bakıyorsunuz ki Bradford-Furge'den daha kısa sürede sonucu vermiş. Bu işte çözümün birkaç tane yerden ihtimalle kaynaklanıyor olması ileri. Space'imiz nasıl? Space'imiz biraz daha az olacak.
+
+200
+00:43:10,708 --> 00:43:18,307
+Linear bir space görüyoruz burada. Niye? Bir düğme gittiğimde o düğümün altındaki bütün bir seviyeyi açmaya gerek.
+
+201
+00:43:18,307 --> 00:43:26,307
+Sadece o düğümden bir sonra bir alttakine bakıyorum. Sadece işte onun çocuklarına bakıyorum.
+
+202
+00:43:26,307 --> 00:43:36,907
+Bu da ne demek? Bir düğümün kaç tane çocuğu olabilir? Branch Factor B ise B kadar. Peki ben en fazla ne kadar derine gidebilirim?
+
+203
+00:43:37,427 --> 00:43:49,107
+M kadar derine girebilir. O zaman şöyle düşünün. Şurada bir şey var. Kabul edelim ki buraya geldik. Ondan sonra buraya geldik. Ondan sonra buraya geldik.
+
+204
+00:43:49,107 --> 00:44:02,707
+Olabilecek en kötü durum, en son buraya geldiğinde buradaki işte bütün çocuklar açılacak ya B kadar. Ben M kadar derinleştim. M kadar derinleştirdiğinden sonra B kadar da açmış oluyorum. B çarpı M linear space kadar. Tabi bu tam bir...
+
+205
+00:44:02,880 --> 00:44:21,880
+şey değil ama biz bu işte iki yüzleri, pardon, 5N gibi şeyleri n'e yuvarlarız ya Big O'da. Bu da B'ye çarpı m linear space'e kadar oluşabiliyor. Peki bu algoritma optimal olur mu? Neden?
+
+206
+00:44:21,880 --> 00:44:23,880
+Bir farkla.
+
+207
+00:44:23,880 --> 00:44:28,880
+N'lere ulaştı. N'lere ulaştı. N'lere ulaştı.
+
+208
+00:44:28,880 --> 00:44:29,728
+Tamam.
+
+209
+00:44:29,728 --> 00:44:31,728
+A&D tarafında daha çok güzel.
+
+210
+00:44:31,728 --> 00:44:36,728
+Çok güzel. Şimdi kabul edelim ki, şurada bir çözüm bulduk.
+
+211
+00:44:36,728 --> 00:44:41,728
+Depth-Bursearch geldi, geldi, geldi, geldi, şurada bir çözüm bulduk.
+
+212
+00:44:41,728 --> 00:44:46,728
+Ama öbür çözümlerimizden bir tanesi de mesela şurada bir yerde duruyoruz.
+
+213
+00:44:46,728 --> 00:44:53,728
+Ve maliyetlerde hani buraya gitmenin maliyeti ve bu yoldan gitmenin maliyetini aynı kabul ettiğimizde
+
+214
+00:44:54,356 --> 00:45:14,115
+Şimdi şurada bulduğumuz çözüm, şuradaki bulduğumuz çözümden daha fazla maliyetli bir şey. Tamam ilk bunu bulduk ama ilk bulduğumuz çözümün maliyeti daha önceden bulabileceğimiz, şurada unuttuğumuz veya gitmediğimiz çözümün maliyetinden daha fazla, onun için optimal olmuyor.
+
+215
+00:45:17,364 --> 00:45:24,364
+Bunlar temel. Sizin de şeyden bilmeyiniz ama yapay zeka bakış açısıyla birazcık olaya bakıyoruz.
+
+216
+00:45:28,364 --> 00:45:38,364
+Şimdi, bir diğer algoritmamız, Uniform Host Search. Diyor ki,
+
+217
+00:45:39,827 --> 00:46:02,827
+Ben kuyruğun başından veya kuyruğun sonundan, listenin başından kuyruk mantığıyla veya listenin sonundan stek mantığıyla bir eleman çekmek yerine, şu ana kadar harcadığım, oluşturduğum maliyetlerdenki bilgiyi kullanarak, bakın burada biraz işin içerisine maliyet bilgisini katarak işlem yapayım ve bir şeyi çıkartırken,
+
+218
+00:46:03,443 --> 00:46:26,443
+Burada sadece şurada bir hata var arkadaşlar. Şu 4 olacak. Şu da 5 olacak. Listeden eleman çıkartırken, acaba hangisini listeden alayım diye hesap yaparken, şu ana kadar ki harcanan toplam maliyeti dikkate alarak işlem yapayım.
+
+219
+00:46:29,204 --> 00:46:41,204
+minimum olursa, optimalliği sağlarım düşüncesiyle geliştirmiş bir algoritma. Mesela bu bir en kısa yol bulma algoritması gibi bir şey düşünebilirsiniz.
+
+220
+00:46:41,204 --> 00:46:52,204
+Körü körüne en kısa yol bakıyoruz. Uniform cost search. Şunu yapıyoruz. A'dan başladık. A'dan başladığımızda ve A'dan F'ye gideceğiz.
+
+221
+00:46:52,204 --> 00:46:56,204
+En kısa yola bakacağız. Bu en kısa yol.
+
+222
+00:46:59,251 --> 00:47:25,052
+A'dan sonra listeye ekleyeceğimiz elemanlar B olabilir, C olabilir, D olabilir. Şimdi A'dan B'ye gelmenin maliyeti 1, A'dan C'ye gelmenin maliyeti 4, A'dan D'ye gelmenin maliyeti 15. Listeden bir eleman çıkartırken bunların minimumunu bakıyor. Yani aslında yine bir kuyruk-boyastek mantığı var ama
+
+223
+00:47:25,556 --> 00:47:43,556
+Bir anlamda bu öncelikli kurup gibi düşünüyoruz. Priority-Q. Yani HIP kullanıyor. Biri listeden çıkar. Sonra B'den gidilebilecek olanları da listeye ekliyor. Ne var? B'den F'ye gidebiliyoruz. Şuradan F'ye gidiyoruz. Başka B'ye gidemiyoruz.
+
+224
+00:47:43,556 --> 00:47:51,556
+B'den F'ye gittiğimizde F'ye gitmenin toplam maliyeti kökten itibaren toplam maliyet 10 artı 1.
+
+225
+00:47:51,795 --> 00:48:00,996
+Şimdi kimi çıkartacağız? İşte daha az maliyetli olan 4. 4 ile C'den kime gidebiliriz? C'den E'ye gidebiliyormuşuz.
+
+226
+00:48:00,996 --> 00:48:13,195
+Listeye E'yi de ekliyoruz. E'yi eklediğimizde listede ne var? Önceden şu vardı, F, D vardı. Bir de E geldi, 4 artı 5, 9.
+
+227
+00:48:13,195 --> 00:48:19,596
+Listeden çıkartacağımız E, en az maliyetli olduğu için E'yi çıkartacağız.
+
+228
+00:48:19,891 --> 00:48:47,071
+E'den kime gidebiliriz? F'ye gidiyoruz. Bakın F listeye ikinci kez ekleniyor. Bu F üzeri bir, F üzeri iki gibi bir şey diyebilirsiniz. Bir 11 maliyetli F vardı. Ondan sonra bir 10 maliyetli F daha geldi. Bir de önceden eklediğimiz 15 maliyetli şey var. Bunlardan en küçüğünü çıkartıyoruz. Ha bu arada şeye bakıyoruz. Çıkarttığım şu eleman acaba aradığım nokta mı? F mi? Burada değil.
+
+229
+00:48:47,956 --> 00:49:13,456
+Burada değil, burada değil, şu. Bu hep en küçüğü çıkartıyor ya bak, bu ilk bulduğum F aradığım çözüm mü? Evet. Bu nedenle acaba optimal olabilir mi bu aradığı? Yani birazdan bakacağız işte, complete mi? Space complexity, time complexity, optimal. Optimal olabilir mi bu çözüm?
+
+230
+00:49:19,860 --> 00:49:42,220
+Komplit olabilir mi? Onunca onu soralım. Bunda bütün durumlara illaki bakıp bir çözüm bulabiliyor muyuz? Yani hiç arada atladığımız, gitmediğimiz herhangi bir şey çözüme ulaşamama gibi bir durum pek yok. Hatta bu directed graph gibi olduğu için, hani bir cycle de olmayacak, Komplit olur.
+
+231
+00:49:45,076 --> 00:49:56,356
+Time Complex'imiz yine bulunduğumuz her bir noktadan ne kadar dallandığımızla alakalı B üzeri de, Space de aynı şekilde B üzeri de olacak.
+
+232
+00:49:56,356 --> 00:50:10,356
+Şimdi optimallik şu, eğer ki buradan bir başka noktaya giderken bütün maliyetlerimizi eğer pozitif olarak tanımıyorsak, işte kilometre olabilir, süre olabilir, işte para olabilir, şu olabilir, bu olabilir.
+
+233
+00:50:11,027 --> 00:50:13,027
+O zaman bu optimal sonucu veriyor.
+
+234
+00:50:15,027 --> 00:50:18,027
+Ama bazen maliyet dediğimiz şey,
+
+235
+00:50:19,027 --> 00:50:21,027
+işte bu transmission problemlerinde
+
+236
+00:50:21,027 --> 00:50:25,027
+negatife dönebiliyor. O zaman bu algoritma optimal sonucu vermeyebilir.
+
+237
+00:50:26,027 --> 00:50:30,027
+Yani bir yerde bir enerji harcıyorsunuz ama o halde harcadığınız enerji size
+
+238
+00:50:30,612 --> 00:50:42,112
+şey olarak geri dönüyor. Ekstra enerjilerini negatif bir edge gibi düşünüp öyle bir şey geri dönüyor. Öyle bir durum olsa, o zaman şey olmaz, optimal olmaz.
+
+239
+00:50:42,112 --> 00:50:49,812
+Ama optimal sonucu veriyor. Yani ilk bulduğu çözüm neymiş? En az maliyetli çözüm.
+
+240
+00:51:05,331 --> 00:51:12,731
+Yani diyor ki expand, leach code, unexpanded code, en az maliyette olanı ekle.
+
+241
+00:51:14,331 --> 00:51:17,331
+Mesela şurada space olarak...
+
+242
+00:51:18,356 --> 00:51:31,356
+Burada bir C parametresi, yani her bir işlemin ne kadar süreci ile alakalı kost maliyetini B üzeri P demiş, branş faktörün C ile çarpımı demiş, onu da D ile çarpıyor.
+
+243
+00:51:31,356 --> 00:51:37,356
+Yani yine bu da yaklaşık olarak B üzeri D'ye veya yaklaşık olarak B üzeri D'ye gelen şeyler arkadaşlar.
+
+244
+00:51:40,179 --> 00:51:50,179
+Optimal aslında şeyler, aradığınız şeyler artan bir sıradaysa veya pozitifse diyelim maliyetler, o zaman Uniform Cost Search size optimal sonucu veriyor.
+
+245
+00:51:51,179 --> 00:51:52,179
+Geçelim.
+
+246
+00:52:03,507 --> 00:52:05,507
+İthmaniyetli arama döküle.
+
+247
+00:52:08,659 --> 00:52:16,980
+Şimdi bu aramalardan bellek oranı, bellek karmaşıklığı en iyi olan şu ana kadar hangisiydi?
+
+248
+00:52:18,659 --> 00:52:20,980
+Depth-first-first, B çarpı M kalmış.
+
+249
+00:52:21,860 --> 00:52:30,019
+Acaba demişler ki bu Depth-first-first'ü birazcık Brett-first-first'ün de şeyi daha iyi.
+
+250
+00:52:30,739 --> 00:52:35,460
+Hangi özelliği daha iyi Depth-first-first'ü göre? Optimal olabiliyor değil mi?
+
+251
+00:52:35,648 --> 00:52:49,967
+Çünkü en, ruta en yakın noktalardan başlaya başlaya aşağıya sonradan derinleşiyor ya, önce çevreye bakıyor. Şimdi bu ikisini kombine edelim demiştik. Manipülasyon veya işte modifikasyon yaparken algoritmaya.
+
+252
+00:52:49,967 --> 00:53:00,288
+Depth-First-Turch'un bellek özelliği ile Brett-First-Turch'un optimallik özelliği tamam, hepsi şey, complete mi, complete.
+
+253
+00:53:00,659 --> 00:53:11,659
+E bir bellekten şey oluyor, zaman ikisinde de aynı, B üzeri de, B üzeri de. Acaba ikisini bir araya getirirsek bir iyileştirme olabilir mi diye düşünmüşler.
+
+254
+00:53:11,659 --> 00:53:22,659
+Birincisi sınırlı derinlikle arama. Şunu yapıyor. Diyor ki tamam aşağıya kadar ineceğim ama bu ineceğim limit sonsuz M kadar olmasın.
+
+255
+00:53:27,059 --> 00:53:34,260
+L'ye kadar et. L'ye eşittir 5. L'ye eşittir 5 olduğunda şimdi şurada, first search'e geri geleyim.
+
+256
+00:53:35,760 --> 00:53:48,960
+Baştan başlıyorsun. En fazla işte şurada bir seviye var. Şurada da bir seviye var. 1, 2, 3, 4, bir seviye daha koyacağız. Şuraya kadar inceğiz.
+
+257
+00:53:49,684 --> 00:53:57,364
+Algoritma bu iniş şeyini en fazla buraya kadar yapabilir. Bu neyi sağlar?
+
+258
+00:53:59,164 --> 00:54:03,503
+Veya nelerden kayıp oluşturabilir?
+
+259
+00:54:09,644 --> 00:54:14,003
+Yani komplet özelliği yok olmayabilir.
+
+260
+00:54:14,483 --> 00:54:22,963
+Sizin çözümünüz L artı X gibi bir seviyedeyse, aşağılardaysa biraz da, yani L artı bir senatında bulamayacaktır.
+
+261
+00:54:23,523 --> 00:54:38,763
+Ama şunu sağlıyor. Kompleks değil, zamana baktığımızda, bu sefer L üzeri, şey, B üzeri L gibi, biraz önce B üzeri D demiştik, burada B üzeri L gibi bir seviyeye.
+
+262
+00:54:38,763 --> 00:54:41,143
+Bu L'de işte 5 ise B üzeri 5 gibi bir şey oluyor.
+
+263
+00:54:41,503 --> 00:55:08,603
+Bellek de buna göre, bunun şöyle bir iyiliği olabilir. Eğer ki çözümümüz yukarılarda bir şeyse, ruta yakın bir yerlerde ise, breadth-first-first olduğu gibi yukarılarda hızlıca o çözüme ulaşabilme imkanı da oluyor. Çünkü düşünün, normal breadth-first-first aşağıya doğru sonsuza kadar gidecek, kabul edelim ki bizim çözümümüz de şurada olsun. Yani şuradan şu şekilde aşağıya kadar gidecek, gidecek, gidecek.
+
+264
+00:55:09,076 --> 00:55:22,476
+Sonra geri geri toplayacak, öbür dala gidecek, sonra gelecek. Yani arama çok çok uzayabiliyor. Bunu sınırlı derinlikle yaparsak, şuradaki bir çözüme daha kısa sürede ulaşabilmen ihtimali olabiliyor.
+
+265
+00:55:23,476 --> 00:55:24,875
+Sınırlı derinlikle arama.
+
+266
+00:55:27,476 --> 00:55:32,275
+Artan derinlikle arama da aslında bunun tam şeye uyarlanmış hali.
+
+267
+00:55:33,536 --> 00:55:43,135
+Hem Brad-Gorskörç hem de Deb-Gorskörç'ü kombine etmiş hali diyebiliriz. Diyor ki, algoritmada önce derinlik miktarını sıfırdan başlayın.
+
+268
+00:55:43,135 --> 00:55:56,536
+Bulamadıkça her seferinde derinliği bir aranır. O zaman ne oluyor? Önce şuraya bakıyoruz. Aradığımız eleman var mı? Yok. Sonra derinliği bir arttırıyoruz.
+
+269
+00:55:56,536 --> 00:55:59,936
+Derinliği bir arttırınca ne olacak? Bu vardı, şu beşi gelecek.
+
+270
+00:56:00,063 --> 00:56:13,264
+Sonra buraya tekrar bakıyoruz. Aramayı tekrar baştan başlatır gibi düşünün. Yani aslında artan derinlikli arama birden iki seviyesine kadar sürekli sınırlı derinlikli arama yapıyoruz.
+
+271
+00:56:13,264 --> 00:56:25,663
+Sınırlı derinlikli arama ne oluyordu? Bütün bir ağacı belli bir seviyeye kadar arama deniyor. Önce sıfır seviyeden bütün ağacı gezdik. Sonra seviyeyi bir arttırdık. Bütün ağacı tekrar gezdi.
+
+272
+00:56:26,195 --> 00:56:31,195
+Aradık ve bulamadık. Seviyeyi bir daha arttırıyoruz. Bütün ağacı tekrar geziyoruz.
+
+273
+00:56:33,195 --> 00:56:43,195
+Olmuyor çünkü nerede kaldığında şey yapamıyorsun. Yani, tamam, düşünce olarak şey güzel, işte şurada kaldım da, şimdi buradayken şunların açılması söz konusu.
+
+274
+00:56:43,195 --> 00:56:47,195
+Onun için baştan şey yapıyorum. Ha bu ne yapar?
+
+275
+00:56:48,195 --> 00:56:52,195
+Belli açıdan sizin eğer çözümünüz yukarılarda bir yerdeyse,
+
+276
+00:56:53,076 --> 00:57:19,980
+hem breadth-first-
+
+277
+00:57:20,500 --> 00:57:43,500
+Sınırlı derinlikle arama, depth limited search dediğimiz şey, ne oluyordu? Siz bir depth'e kadar, D değerine kadar problem uzayınızı söylediyseniz, en sonda B üzeri D, ondan B üzeri D-1, B üzeri D-2, B üzeri 0. Bu kadar tane noda geçiş yapmanız lazım, bakmanız lazım. Artan derinlikle aramada şöyle bir şey var.
+
+278
+00:57:47,315 --> 00:57:54,915
+B üzeri 0'ı bir defa kontrol ediyorsun. Sonra bir daha derinleştiriyorsan bir daha, bir daha derinleştiriyorsan bir daha kontrol ediyorsun.
+
+279
+00:57:54,915 --> 00:58:06,515
+Dolayısıyla ben D defa sürekli bu algoritma döngüyü çevireceksem, B üzeri 0'ı D artı bir defa, bir alttakini D defa, bir alttakini D eksi bir defa,
+
+280
+00:58:13,876 --> 00:58:18,476
+düğüm üzerinde dolaşacak. Burada B'yi 10, B'yi 5 alırsak,
+
+281
+00:58:20,275 --> 00:58:24,876
+bunda şu kadarken bunda bu kadar. Yani %11, bu da çok fazla bir şey değil aslında.
+
+282
+00:58:25,916 --> 00:58:31,036
+Böyle bir iyileştirme yapmak. Bu kadar fazlalıkla bir optimumluğu elde edebiliyoruz.
+
+283
+00:58:32,316 --> 00:58:35,635
+Şimdi şuna gelelim. Bir saniye.
+
+284
+00:58:47,603 --> 00:59:15,204
+Sınırlı derinlikli arama. Şurada. Bunun analizini yapacak olsak, Complete, Time, Space ve Optimality. Sınırlı derinlikli aramada optimal bulunamayabilir. Yani aslında daha aşağıdaysa bulamıyoruz. Complete midir bu alerjikman? Değildir çünkü aşağıdaysa bulamayacağız.
+
+285
+00:59:15,443 --> 00:59:24,443
+Hang kompleksli ne olacak? Mesela bunu L demiştik. B üzeri L. B üzeri L kadar da kompleksimiz olacak.
+
+286
+00:59:28,148 --> 00:59:31,148
+Artan derinlikli aramada aynı şeyi söyleyecek olursak.
+
+287
+00:59:32,148 --> 00:59:34,148
+C, D, F.
+
+288
+00:59:38,420 --> 00:59:49,099
+Bu, komplekt bir alue etmem. Yani ağacı, illaki bütün düğümleri gezeceğiz, komplekt olur. Optimal olur mu?
+
+289
+00:59:52,820 --> 01:00:05,619
+Bakın, hem breadth first search, hem depth first search var. Dolayısıyla önce ruta yakın yerlerde, tabii eşit maliyetliyse arama yapmaya çalışıyoruz. O zaman optimal oluyor. Space kompleksimiz nasıl olacak?
+
+290
+01:00:08,179 --> 01:00:16,119
+En kötü. Yani ağaç mesela şöyle başladı, ondan sonra genişlettik, böyle devam ettik.
+
+291
+01:00:20,543 --> 01:00:47,623
+kadar olduğu durumda en son aşağıya gittiğimiz zaman şöyle bir şey olmayacaktı. Önce ağaç 1'di. Sonra bulamadık. İşte B üzeri 1 kadar geldik. Sonra bulamadık. B üzeri 2 kadar geldik. Sonra B üzeri 3 kadar. Sonra nokta nokta nokta B üzeri D kadar gelmedi mi? Her bir şeyde derinliği araştırdık. Peki bu Big O cinsinden nedir? En büyük, hani Big O'da en büyük şeyi alıyoruz ya.
+
+292
+01:00:48,019 --> 01:00:57,420
+Yani şunlar ihmal edilen değerler olduğu için time core place'imiz B üzeri B oluyor. Peki space'imiz? Onda bir olay farklılık var mı?
+
+293
+01:01:00,628 --> 01:01:14,108
+Derinlemesine gidiyoruz ya burada. Space'imiz ne olur? İşte düğümlerden aşağıya doğru bakacağız. Her ne kadar açsak da, Depth-4'ün aslında bellek özelliğini alıyor, B çarpı D.
+
+294
+01:01:14,108 --> 01:01:25,148
+Şu B üzeri D'ye kaynaklarda artı işte alfa veya Q dediğimiz bir şey. O artı şu. B üzeri D dışında şunlar da var ya.
+
+295
+01:01:26,068 --> 01:01:39,887
+Topladığımızda, Big O cinsinden B üzeri de diyebiliriz. Şurada B çarpı D kadar space gerektirecek. Çünkü ekstra listeye bir düğümün gidilebilecek şeyleri eklerken,
+
+296
+01:01:39,887 --> 01:01:48,847
+bir düğümden olabilecek şeyler ne kadar? B kadar ekliyoruz. Bu da D kadar derinliğe gittiğimi kabul edersen,
+
+297
+01:01:49,023 --> 01:01:54,423
+diğer yandakiler zaten o listeden çıkmış olacağı için en fazla B çarpı D'ye kadar derinleşmiş olacak.
+
+298
+01:01:58,023 --> 01:02:01,823
+Depth-limited search, iterative deep-mean search.
+
+299
+01:02:03,423 --> 01:02:07,423
+Mesela iterative deep-mean search şurada daha böyle şey göstermiş.
+
+300
+01:02:09,023 --> 01:02:15,223
+Şimdi complete dedik, B'leri D dedik, B çarpı D dedik, optimal olabiliyor.
+
+301
+01:02:15,827 --> 01:02:24,587
+Nümerik olarak bakıldığında işte şu şeyler. Şimdi peki B ve D değerleri arasında farklı oynamalar yapsak?
+
+302
+01:02:26,587 --> 01:02:35,587
+Mesela B'yi D'ye yaklaştırsak veya B'yi çok büyük, D'yi de çok büyük testsek. Şu aradaki yüzde oranı, yüzde yüzde on bir mi demiştik?
+
+303
+01:02:36,807 --> 01:02:42,268
+Bu nasıl değişiyor? B'nin ve D'nin farklı değişen değerleri için bunlar nasıl değişiyor? Buna bir bakmak lazım.
+
+304
+01:02:43,731 --> 01:03:03,331
+Tamam, time dediğimiz şey, B üzeri de, şuna göre şey olacak da, hani bu formüle göre, ikisi arasında, acaba her zaman bu kadar küçük bir fark, %10'luk bir fark oluşacak. Buna bir bakmak, yani inceleyin.
+
+305
+01:03:09,652 --> 01:03:13,751
+Yani D'ler aşağıda genişlemediği için daha iyi olabilir.
+
+306
+01:03:14,891 --> 01:03:19,451
+Bradford Söğüsün aslında demiş ki modifiye edilmiş halidir diyebiliriz. Bunları
+
+307
+01:03:20,052 --> 01:03:22,251
+genel olarak inceleyelim bizde
+
+308
+01:03:23,552 --> 01:03:24,951
+birazdan daha ara vereceğim.
+
+309
+01:03:26,052 --> 01:03:28,251
+Şuradaki tablo karşımıza geliyor.
+
+310
+01:03:29,052 --> 01:03:32,751
+Bunlar Uninformed, bilgi yok arkadaşlar.
+
+311
+01:03:33,351 --> 01:03:34,351
+Yani
+
+312
+01:03:34,996 --> 01:03:37,636
+Şöyle düşünün, A'cın su düğümündesiniz.
+
+313
+01:03:39,756 --> 01:03:41,116
+Ondan sonra...
+
+314
+01:03:42,836 --> 01:03:43,836
+Böyle bir şey.
+
+315
+01:03:44,476 --> 01:03:47,996
+A düğümündeyiz. B, C, D, E.
+
+316
+01:03:48,596 --> 01:03:54,156
+A'dan B'ye gitmeyi bize çoğu söylüyor. A'dan sonra B'ye gideceğiz. Tamam, okey.
+
+317
+01:03:54,156 --> 01:03:57,116
+B'den sonra B'ye mi gidelim, C'ye mi gidelim?
+
+318
+01:03:58,036 --> 01:04:00,716
+Birisi sizi C'ye gönderiyor, birisi A'ye gönderiyor.
+
+319
+01:04:00,784 --> 01:04:09,784
+Bu da ne? Kuyruğun başında mısın, sonunda mısın? En fazla ne var? Şu A'dan B'ye gitmenin maliyetini buraya söylersin eğer böyle bir şey varsa.
+
+320
+01:04:09,784 --> 01:04:18,784
+A'dan C'ye gitmenin maliyetini söylersin, B'den D'ye gitmenin maliyetini söylersin. Bu maliyet bilgisini de kuyruğa eklersin.
+
+321
+01:04:18,784 --> 01:04:27,784
+Uniform Cost-Source bunu yapıyordu. O kuyruktan bir şeyi çekerken maliyeti dikkate alarak, kuyruğun başından sonunda değil de prioriteti yapıp,
+
+322
+01:04:28,052 --> 01:04:37,812
+Bu bilgiye göre gruptan bir şey çekersin. Farklı stratejiler olabilir. Bu algoritmaların farklı defektleri var.
+
+323
+01:04:39,092 --> 01:04:46,211
+Örneğin A'dan B'ye gidiyorsun, A'dan B'ye birden fazla yoldan gitme ihtimali var.
+
+324
+01:04:46,692 --> 01:04:49,012
+Repeated states'ler dediğimiz.
+
+325
+01:04:49,108 --> 01:05:13,168
+Veya A'dan B'ye gidiyorsun, A'dan B'ye bir daha gidiyorsun. İki tane yol var. İşte bu şekilde graflar olabilir. İşte B'den C'ye gidiyorsun, B'den C'ye gidiyorsun. Bu biraz daha olayı repeat statement karıştırabilir. Graf üzerinde search'ler var. Bunlara şimdilik bakmayacağız. Bunlar, bu best search, bu bir durdun. Şuraya geri gelelim. Ama bir ara vereyim önce.
+
+326
+01:05:15,539 --> 01:05:21,779
+10 dakika ara veririm arkadaşlar, geldiğimizde devam ederiz. 40 geçe devam edelim, olur mu?
+
+327
+01:17:47,507 --> 01:17:48,507
+Vakit geldi mi?
+
+328
+01:17:48,507 --> 01:17:49,507
+Evet.
+
+329
+01:17:49,507 --> 01:17:54,507
+Şimdi iki önlü arama algoritmamız var.
+
+330
+01:17:54,507 --> 01:18:02,507
+Bu bulunduğunuz bir noktadan bir başka noktaya geçiyoruz yani.
+
+331
+01:18:02,507 --> 01:18:12,507
+Bir tarafa geçerken bir de öbür tarafa geçip yani iki tarafı da memnun edecek şekilde bu tarz bir dallanma gerçekleşiyorsa yapılan bir şey.
+
+332
+01:18:12,507 --> 01:18:14,507
+İşte bir bu tarafa gidiyorsun, bir bu tarafa gidiyorsun.
+
+333
+01:18:15,539 --> 01:18:33,140
+Yine, complete olabiliyor. İşte B üzeri B bölü 2'de time space olabiliyor. Maliyetleri eşitse optimal olabiliyor. Ama yani çok karşılaştığımız, kullandığımız bir algoritma değil diyebiliriz.
+
+334
+01:18:33,140 --> 01:18:43,340
+Şurada enlemesini arama algoritmasını, breadth-first-search'ın algoritmasını görüyorsunuz. Depth-first-search breadth-search'ten nasıl yapılabilir?
+
+335
+01:18:43,988 --> 01:19:09,587
+değişiklik yapılabilir. Bread First Search'te kuyruğun başına ekleyip başından çekiyorduk. Burada da sonuna ekleyip kuyruğun başından çıkartacağız. Yani başka da bir şey yok. O kadar bir ufak bir algoritmik manipülasyon. Peki bu Bread First Search'ten Depth First Search'e geçmek ne açıdan fayda sağladı bize?
+
+336
+01:19:10,452 --> 01:19:24,452
+bir hafızayı değiştirmişti. Onun dışında optimal çözüm açısından bir fayda mı vardı, zarar mı vardı? Zarar vardı. Time kompleksi, bellek kompleksi, diğer durumlar aynıydı. İkisi de komplektir algoritmaydı.
+
+337
+01:19:24,452 --> 01:19:32,452
+Ama depth-first-search'u biraz daha iyileştirmek için breadth-first-search'u biraz daha benzetilirse,
+
+338
+01:19:33,460 --> 01:19:53,460
+Orada da aslında şundan şey yapıyoruz, B üzeri de artık Q dedik ya biraz öyle. Biraz belleği fazla kullanıp, arama sayısında biraz daha fazla kullanıp, eğer çözüm yukarıda, yani ruta yakın bir yerlerde ise, optimal çözümü daha hızlı bulabilme imkanımız olabiliyordu.
+
+339
+01:19:55,460 --> 01:19:59,460
+Uniform Cost Search Algo algoritmasını da buyruktan...
+
+340
+01:20:00,000 --> 01:20:24,720
+Çekeceğimiz şey, en minimum o ana kadar düğümden ana kök düğümden gidilecek en az maliyete sahip olan düğümü çekiyoruz. Şu ana kadar en bilgili algoritmamız, en çok bilgiyle iş yapan algoritmamız veya bilgi demeyelim aslında veriyle iş yapan algoritmamız, Uniform Cost Search. Yani rastgele bir şey seçmiyoruz.
+
+341
+01:20:25,043 --> 01:20:29,403
+maliyet bilgisine göre bir şeyler çıkıyoruz.
+
+342
+01:20:32,724 --> 01:20:34,003
+Şurada derinlemesine.
+
+343
+01:20:34,763 --> 01:20:35,804
+Şimdi burada
+
+344
+01:20:36,923 --> 01:20:40,683
+tekrarlayan durumlarla alakalı aslında biraz önce repeated dediğim şey
+
+345
+01:20:41,603 --> 01:20:45,123
+A'dan D'ye, D'den E'ye, E'den A ve F'ye
+
+346
+01:20:46,043 --> 01:20:47,043
+gittiğimizde
+
+347
+01:20:47,699 --> 01:21:04,699
+A'dan başlayıp derinlemesine arama yaparsak, hedefimizde F ise, böyle bir durumlarımız var, nasıl bir şey oluşacak? Acaba F'ye ulaşabiliyor muyuz? Bu algoritma komplet oluyor mu? Şimdi A, başlangıç durumumuz.
+
+348
+01:21:04,699 --> 01:21:15,532
+A'dan sadece D'ye gidilebildiği için bu durumda, D'yi kuyruğa ekledik, şey S'ye ekledik diye. Yani listeyi ekledik, daha genel konuşalım.
+
+349
+01:21:15,699 --> 01:21:43,692
+D'yi çıkartıyoruz. D'den gidilecek olan ne var? E var. E'yi çıkarttık. E'den gidilecek olan ne var? A'yı ekledik veya F var. Şimdi, E'den sonra şu durumda, A'yı eklediğimizde, A'yı içeriye eklemeden tekrar şey yaparsak algoritma başarılı.
+
+350
+01:21:44,180 --> 01:21:52,180
+Ve dikkat ederseniz şu yoldan gittiğimizde, hep şu durumlardan gittiğimizde hiçbir şekilde hedefimize ulaşamıyoruz.
+
+351
+01:21:52,180 --> 01:22:08,180
+Hani bir algoritmalarını da göstermişlerdi, bir düğme ulaşıldıysa, vizit yapıldıysa oranın işaretlenmesi gibi ayrıca bir bilgi tutarak veya işte bu liste içerisinde varsa tekrardan işte oraya gitmeyerek bu problemden, bu tekrarlayan durumlardan
+
+352
+01:22:08,595 --> 01:22:29,275
+çözülebilir. Yani yeni durumu eklemeden önce kontrol et. Hala hazırda bu durum önceki şeylerde varsa bunu ekleme. Eklersen ne oluyor? Şu şekilde bir loopa takılmış oluyorsun. Ve hiçbir zaman aradığın çözüme gidemiyorsun. Aradığın çözüme gidemeyince algoritma konflikt olmayabiliyor.
+
+353
+01:22:30,131 --> 01:22:41,931
+Veya işte çözümü bile bulamıyorsun. Çözümü bulamıyorsan optimal diye bir şeyden zaten söz etmek diye bir şey yok. Çözüm varsa optimallik olabilecek bir şey. Burada çözüm olmayabiliyor.
+
+354
+01:22:43,811 --> 01:22:56,211
+Şöyle karşılaştıracak olursak, DFS hafıza açısından linear, çok iyi bir şey. Ama loop olma durumunda sonsuza gitme durumu var. Optimum çözümü hiçbir zaman garanti etmeyebiliyor.
+
+355
+01:22:56,435 --> 01:23:10,036
+Çünkü bulduğu çözüm optimal olmayabiliyor. BFS optimal çözüm looplara takılmayabiliyor. Ama hafıza özellikle zaman açısından düşündüğümüzde belki o da çözülebilir.
+
+356
+01:23:10,036 --> 01:23:17,636
+Ama hafıza açısından düşündüğümüzde çok çok fazla ve eksponansiyel büyüyen bir algoritma olduğu için yer yer sıkıntılı.
+
+357
+01:23:17,636 --> 01:23:23,235
+Çok büyük haritalar üzerinde mesela BFS algoritmasını şu anki bilgisayarlarınızda deneyin.
+
+358
+01:23:23,408 --> 01:23:25,408
+Bin tane notlu bir şey.
+
+359
+01:23:26,408 --> 01:23:29,408
+Ve burada notlar şöyle düşünün, harita yani.
+
+360
+01:23:30,408 --> 01:23:34,408
+Bir ilden öbürü ile yedi sekiz tane il var. Yani her roman dört olmuyor maalesef.
+
+361
+01:23:35,408 --> 01:23:37,408
+Ankara'nın etrafını, Konya'nın etrafını düşünün.
+
+362
+01:23:38,408 --> 01:23:42,408
+Neredeyse o civarda, yani bir ilin etrafında yedi sekiz tane il vardır.
+
+363
+01:23:42,408 --> 01:23:43,408
+Şimdi Konya'yı sayacak olursak...
+
+364
+01:23:44,340 --> 01:23:54,840
+Aşağıda Karaman var, Adana var, Nevşehir var, Nide var, Ankara var, Afyon var, Isparta var, bir de ufacıkta Antalya var, sekiz tane.
+
+365
+01:23:54,840 --> 01:24:03,840
+Yani her bir noktadan sekiz sekiz gittiğinizi düşünün seksen gibi var. Bu bayağı bir sekiz üzeri sekiz fazladır arka bir rütma.
+
+366
+01:24:04,051 --> 01:24:12,731
+İkiye çevirseniz çok yok da. Niye Konya örnek verin? Tam Göbek'te olduğu için yani onu genelleştirebilirsiniz. İstanbul'da mesela ne var?
+
+367
+01:24:12,731 --> 01:24:21,011
+İzmit var. Yalova hani belki biraz şöyle böyle. Edirne, Kırklareli var değil mi bir de?
+
+368
+01:24:21,011 --> 01:24:30,691
+Kırklareli var. Tekirdağ ve Edirne şey var. Yani 4 veya 5 oluyor. Ortalama bakıldığında zaten şu yukarıdaki şey bize ne demiş ki? 2 nokta.
+
+369
+01:24:31,283 --> 01:24:33,843
+67'li bir değerimiz varmış burada.
+
+370
+01:24:43,699 --> 01:25:08,180
+Hangisinde? Evet. Bu mesela şu oyunda ortalama adım sayısı 22, dallanma sayısı 2.67 olduğunda bu şu demek. Şu bir adım, bu bir adım. Yani 22 adım aşağıya kadar ineceksin. Ortalama olarak da 2.67 kadar her şeyde dallanma olursa, 2.7 milyar yani durumu kontrol etmen gerek.
+
+371
+01:25:09,363 --> 01:25:14,043
+Bu biraz önce bahsettiğimiz iller ilerine düşündüğüm için çok çok daha fazla olabilir.
+
+372
+01:25:14,683 --> 01:25:17,003
+Onun için hani bunlar maliyetli şeyler.
+
+373
+01:25:26,036 --> 01:25:28,036
+Yoklamayı vereyim ben arkadaşlar.
+
+374
+01:25:30,036 --> 01:25:34,036
+Online katılanların bilgisini ben yoklamaya daha sonra işleyeceğim.
+
+375
+01:25:52,627 --> 01:26:01,627
+Şurada şöyle bir detayımız var. Artan derinlikli aramada, yani düştümde.
+
+376
+01:26:05,811 --> 01:26:14,992
+Sınırlı derinlikte arama yerine, sınırlı genişlikte arama uygulasak, acaba iyi bir şey mi yaparız, kötü bir şey mi yaparız?
+
+377
+01:26:18,996 --> 01:26:25,315
+Artan derinlikle arama ne oluyor? Sürekli derinliği sıfırdan başlatıp arttırıyorsunuz. Sorumlu şu.
+
+378
+01:26:28,532 --> 01:26:56,332
+unuttuk. Derinlemesine arama yapmak yerine, enlemesine, yani gidip orada sınırlı derinlik yerine, onun yerine enlemesine arama yapsak. Burada iyi bir şey yaparız, bütün bir şey yaparız. Şimdi, özeti biraz önce söyledim. Depth first search, bellek açısından ilgili breadth first search. Burada artan derinlikli aramada breadth first search ekleyince belleğimiz ne olacak?
+
+379
+01:26:58,003 --> 01:27:04,403
+Çünkü bir düğme gidince breath first search ne yapıyordu? Aşağıdaki bütün seviyeyi ekleyebiliyordu. Bu kötü bir şey.
+
+380
+01:27:05,403 --> 01:27:11,804
+Peki breath first search'un karmaşıklığıyla depth first search'un karmaşıklığıyla zaman karmaşıklığıyla arasında bir fark var mı?
+
+381
+01:27:14,503 --> 01:27:17,804
+Space'de kaybettik, zamanda bir şey kazanmadık.
+
+382
+01:27:18,503 --> 01:27:23,203
+Optimali bulma noktasında bir farkımız zaten yok çünkü artan derinliklerimiz zaten...
+
+383
+01:27:23,539 --> 01:27:28,140
+Depth-first-search'u, breadth-first-search'e biraz benzetme ile alakalı bir şeydi.
+
+384
+01:27:28,140 --> 01:27:31,180
+Bu optimali buluyor, o da zaten aynı şeydi.
+
+385
+01:27:31,180 --> 01:27:34,619
+Zamandan bir kazancımız olsa belki optimali daha hızlı bulabiliriz.
+
+386
+01:27:34,619 --> 01:27:36,819
+Optimallik noktasında da bir çözümümüz yok.
+
+387
+01:27:36,819 --> 01:27:40,100
+Komplik'te zaten ikisi de komplik, bunda bir farkımız yok.
+
+388
+01:27:40,100 --> 01:27:43,059
+Onun için bellek açısından daha kötü bir şey yapmış oluruz.
+
+389
+01:27:43,059 --> 01:27:45,860
+Diğer açılardan da daha iyi bir şey olmuyor.
+
+390
+01:27:45,860 --> 01:27:49,780
+Yani tamamen kötü bir algoritma elde edilmiş olur.
+
+391
+01:27:52,948 --> 01:27:53,948
+Teşekkürler.
+
+392
+01:28:02,739 --> 01:28:07,939
+Şimdi şu uygulamanın size Fatih Hocanın sayfasında bir tane kod var.
+
+393
+01:28:07,939 --> 01:28:09,539
+MATLAB kodu.
+
+394
+01:28:10,539 --> 01:28:13,139
+MATLAB hiç kullananınız var mı aranızda?
+
+395
+01:28:13,139 --> 01:28:14,539
+Kullanınız.
+
+396
+01:28:14,539 --> 01:28:16,539
+Kurup mu kullan?
+
+397
+01:28:16,539 --> 01:28:20,539
+MATLAB kurduğunuzda mı kullandınız yoksa kurmadan?
+
+398
+01:28:20,539 --> 01:28:23,539
+Ha, kurmanıza gerek yok aslında.
+
+399
+01:28:23,539 --> 01:28:26,539
+Yani bu o kadar şey bir kod değil.
+
+400
+01:28:31,539 --> 01:28:33,539
+MediTap Online.
+
+401
+01:28:33,539 --> 01:28:36,539
+O da kendinizin denemenizi istiyoruz.
+
+402
+01:28:36,539 --> 01:28:44,539
+Buraya yıldız mailinizle, üniversitenin burada aboneliği var. Üye olabilirsiniz.
+
+403
+01:28:44,539 --> 01:28:48,539
+Ben en son sinyal dersini verirken kullanıyorum da.
+
+404
+01:28:48,539 --> 01:28:51,539
+Bayağı da giriş yaptım.
+
+405
+01:29:04,819 --> 01:29:12,819
+OpenMathTabOnline dediğinizde normal masa hükmü mettebin aynısını burada kullanabiliyorsunuz.
+
+406
+01:29:13,519 --> 01:29:18,319
+İşte klasörlerimiz falan oluşturup, mesela ben burada uygulamalarım falan varmış.
+
+407
+01:29:19,319 --> 01:29:22,819
+Bir aslında Cloud üzerinde metteb çalıştırma imkanı var.
+
+408
+01:29:23,319 --> 01:29:27,819
+Bu kodu açıp buraya yüklediğinizde, doğrudan upload ettiğinizde,
+
+409
+01:29:28,979 --> 01:29:35,779
+Çok zor bir kod değil. İçinde birazdan inceleyeceğiz. Bazı fonksiyonlar var ve plot işlemleri var.
+
+410
+01:29:35,779 --> 01:29:46,180
+Plot ederken de algoritmaları karşılaştırmak üzerine bir plot. Normal mettebe açtığınızda masaüstü uygulaması da yapsanız, buradaki uygulamada birebir aynısı.
+
+411
+01:29:46,180 --> 01:29:56,180
+Burada kod yazıp kodun çıkısını görebiliyorsunuz. Şurada workspace'imiz var. Şurada diğer M uzantılı kodlarımız var.
+
+412
+01:29:56,404 --> 01:30:02,123
+Bunları işte run edebiliyorsunuz. İsterseniz burada script yazabilirsiniz. İllaki şuraya yazmak zorunda değilsiniz.
+
+413
+01:30:02,123 --> 01:30:13,404
+Ara yüzü basittir. Biz yıllarca Python meşhur olmadan önce MATLAB kullandığımız için bu kodların çoğunu Fatih Hoca orada yazmış.
+
+414
+01:30:13,404 --> 01:30:19,404
+Python'a da benzer. Bazı ufak tefek farklılıklar var ama çok dramatik farklılıklar değil.
+
+415
+01:30:19,604 --> 01:30:31,404
+Amaç burada zaten bir şeyleri karşılaştırmak, simülasyon modunda karşılaştırmak olduğu için işte bu plot işlemleri falan kolay, çizim işlemlerini rahat bir şekilde yapabiliyorsunuz. Veya user interface işlemleri rahat yapılıyor.
+
+416
+01:30:31,404 --> 01:30:36,804
+Çok yardıma ihtiyacınız olursa şurada help kısmı var. Mesela neyin halkını alalım?
+
+417
+01:30:47,155 --> 01:30:51,716
+plot fonksiyonunu anlatıyor, işte parametrelerini söylüyor.
+
+418
+01:30:52,115 --> 01:30:54,275
+Documentation'a girdiğimizde,
+
+419
+01:30:56,436 --> 01:31:00,155
+asıl sayfalarına gönderiyor, işte burada plot işlemi nasıl yapılır,
+
+420
+01:31:01,155 --> 01:31:07,235
+ondan sonra örneklerini falan tek tek anlatıyor. O açıdan gayet güzel, dokümanlık güzel.
+
+421
+01:31:07,444 --> 01:31:31,444
+Zaten ücretli bir yazdım, üniversite ücretle bunu aldığı için, diğer dillere göre dokümentasyonu da gayet güzel yapmışlar. Onun için incelemeniz çok zor olmayacaktır. Biz size ödev verirsek illa METTEP'te yapın diye belki de zorunluluk bir koşmuyoruz ama, kodlarımız METTEP'te hazırlandığı için buna birazcık alışkanlık kazanmanız gerekiyor arkadaşlar.
+
+422
+01:31:35,988 --> 01:32:00,988
+Şurada, bu kodun içerisinde, verilen değerlere göre, mesela burada kaça kadar gidiyordu? 16 mu acaba ya? 18. Verilen maksimum sayıya göre noktalar oluşturuluyor, şehirler diyelim bunlara. Ve bunlar arasında yine rastgele olarak yollar oluşturuyor.
+
+423
+01:32:01,971 --> 01:32:16,971
+Mesela burada her noktadan her noktaya da yol oluşturulmamış. 12'den 9'a 33 kilometre veya 33 dakika, 33 saat artık maliyet anlayışımız neyse buna göre şeyler oluşturuluyor.
+
+424
+01:32:16,971 --> 01:32:28,971
+Bu oluşturulan şeylerden sonra bizim şu algoritmalarımız koşturuluyor. Bunların buldukları yollar print ettiriliyor.
+
+425
+01:32:29,747 --> 01:32:39,747
+Bir de bunların maliyetleri ve adım sayıları şurada gösteriliyor. Şimdi biz buradan gelecek hafta şu ikisini inceleyeceğiz.
+
+426
+01:32:39,747 --> 01:32:53,747
+Bu algoritmaları konuşacağız. Şimdi Brad Kirstörç, buradaki hedefimiz on iki noktasından. Bir başlangıç bir de bitiş veriyorsunuz. Şu bir noktasına gitmek.
+
+427
+01:32:56,467 --> 01:33:05,228
+Açıkçası şey, yani 20 tane şey olur ki yollar sayısı da bayağı fazla olduğu için aslında biraz zor bir problem. Yani şey, gözle çözülmesi bile zor.
+
+428
+01:33:05,228 --> 01:33:21,068
+Bradford Search, 12'den 4'e gitmiş. Oradan 2'ye gitmiş. Oradan 5'e gitmiş. Oradan da 1'e gitmiş. Bradford Search'un maliyeti 314'miş. Yani 36 artı...
+
+429
+01:33:22,131 --> 01:33:30,511
+Artık şurası 14.000 neyse tam görünmüyor. Onları topladığınızda arama maliyeti 314.
+
+430
+01:33:30,511 --> 01:33:44,731
+Bradford Church'un ulaşma adım sayısı da 37.000 imiş. Pardon, Bradford Church 128 arama maliyeti var. 37 adımda 1'e ulaşmış.
+
+431
+01:33:47,859 --> 01:33:58,859
+Bakın aslında şöyle bir şey var. 12'den 11'e şuraya geliyor. 11'den 9'a geliyor. 9'dan 15'e geliyor. Yani 1'e aslında gayet güzel gidiyor.
+
+432
+01:33:58,859 --> 01:34:13,707
+15'den de 18'e geliyor. Ondan sonra birazcık yolunu sapıtıyor. Yani 18'den 17 hemen aşağıya geri gidiyor. Çünkü artık o derinlemesini aramanın şeyleri... Yani bu ne demek?
+
+433
+01:34:14,387 --> 01:34:17,467
+Optimallik'ten uzaklaştığım bir kanıtı.
+
+434
+01:34:18,747 --> 01:34:22,587
+Şey açısından baktığımızda zaten şurada
+
+435
+01:34:23,347 --> 01:34:26,667
+Adım sayısıyla listenin boyutu yani
+
+436
+01:34:26,667 --> 01:34:30,268
+Breadboard Search'te, Depthboard Search'te veya Uniform Cost Search'te
+
+437
+01:34:30,268 --> 01:34:34,867
+Listeye eleman ekleyip ekleyip çıkartıyoruz o listenin boyutu bir artıyor bir azalıyor işte.
+
+438
+01:34:34,867 --> 01:34:37,188
+Nasıl olacağını gördüğünüzde şu
+
+439
+01:34:37,188 --> 01:34:39,067
+Uniform Cost Search
+
+440
+01:34:39,067 --> 01:34:40,747
+Listeyi en fazla
+
+441
+01:34:40,819 --> 01:34:45,019
+kullananlardan algoritma, kullananlar algoritma, ama bize optimal sonucu veriyordu.
+
+442
+01:34:45,019 --> 01:34:51,219
+Bread First Search, şuradaki kırmızı ile gösterilen, şöyle biraz daha yaklaşalım.
+
+443
+01:34:51,219 --> 01:34:59,420
+Şu Bread First Search, Bread First Search şunlar, A-Star ve şeyler şurada çok küçük görünüyorlar.
+
+444
+01:34:59,420 --> 01:35:04,420
+Bunu zaten slide'dan bakarsınız, bunu da gelecek. Birini bunu yetiştirebilirsem anlatacağım.
+
+445
+01:35:05,684 --> 01:35:22,084
+Adım sayısının artışına göre listenin boyutu şey, normalde Uniform Course Search o kadar çok adımı kontrol etmiş ki listenin boyutuna bir sürü şey eklemiş listeye olabilecek her türlü şeyler var. Yani ilerleme adımları var.
+
+446
+01:35:22,084 --> 01:35:29,284
+Ama ne yapıyor listeden en az maliyetli olanı çektiği için burada elbette o rotanın tamamını görmüyoruz.
+
+447
+01:35:32,787 --> 01:35:46,387
+Astar falan bunlara bakacağız. Şunların breadth-first-search'ün ve depth-first-search'ün optimal olmadıkları aşikar. Uniform cost da zaten optimal olacağını söyledik.
+
+448
+01:35:47,987 --> 01:35:58,387
+Kodu farklı farklı defalarda, farklı farklı şeylerde çalıştığında farklı haritalar üretilecek ve bu haritalar sonrasında şu grafikler değişecektir.
+
+449
+01:35:58,452 --> 01:36:24,012
+Ama normal şeyde baktığınızda, yani bu kodu yüz defa çalıştırın, böyle bir ortalama alın, şuna yine yakın bir şey yapacaksınız. Uniform Post Search hep böyle çok fazla adımda işlem yapacak. Listenin boyutunu biraz daha fazla. BFS, DFS bunlara yakın çıkacak. İşte Astar ve Best First Search.
+
+450
+01:36:24,399 --> 01:36:40,880
+Gelecek hafta konuşacağımız algoritmalar yine aynı şekilde benzer çıkacaktır. Çünkü bizim biraz önce asintotik notasyon şeklinde söylediğimiz, 4-5 tane algoritma üzerinde söylediğimiz şeyler, onlar kodun analizinden elde ettiğimiz karmaşıklıklar.
+
+451
+01:36:40,880 --> 01:36:48,559
+Bunu değiştirebilecek çok ekstrem bir durum yok. Hani algoritmalarda şu şeyi söylemedik.
+
+452
+01:36:49,108 --> 01:37:00,108
+işte Bradford, Şöyle olursa O üzeri, ne bileyim, iki en olur. Böyle olursa B üzeri D olur gibi bir şey söylemedik değil mi? Hep B üzeri D, B üzeri L gibi şeyler.
+
+453
+01:37:00,108 --> 01:37:07,108
+Veya işte liste boyutu dediğim şey, bellek karmaşıklığında bir B üzeri D oluyor. Bakın burada B üzeri D'ye yakın bir şey görüyoruz.
+
+454
+01:37:07,108 --> 01:37:13,108
+B çarpı M oluyor. Bakın B çarpı M olduğu nereden belli? Hangisiydi B çarpı M?
+
+455
+01:37:14,612 --> 01:37:24,011
+Depth-Purse-Turge, yani lineerdi. Bakın şurada lineerliği gösteriyor aslında. Bir yere kadar artıyor sonra şöyle lineer kaldır.
+
+456
+01:37:24,011 --> 01:37:29,011
+Burada olduğu gibi. Bunları incelersiniz diyelim.
+
+457
+01:37:35,011 --> 01:37:38,211
+Evet, şurada da hocanın böyle farklı bir şeyi var.
+
+458
+01:37:39,507 --> 01:37:47,907
+Her gün iki seçeneği olan bir karar verdiğinizi düşüneceğiz. Bu durumda kararınızın etkisine göre iki olası dünyadan birinde yaşıyoruz.
+
+459
+01:37:49,108 --> 01:37:59,907
+32 gün sonra, yani bugünden 32 gün sonraya gittiğimizde 4.3 milyar olası dünyadan sadece birinde yaşıyoruz.
+
+460
+01:38:01,108 --> 01:38:05,907
+İşte doğduğumuzdan geçen zaman başkalarının kararlarının bile olan etkisi.
+
+461
+01:38:06,131 --> 01:38:15,532
+Bir de bazı kararlar var ki ikiden fazla seçeneğimiz var. Bunların hepsini düşündüğünüzde bu State Space Tree dediğimiz şey çok çok büyük.
+
+462
+01:38:15,532 --> 01:38:24,532
+Şimdi yapay zekaya biz bununla başlıyoruz. Çünkü olayın önemini anlatmak için bu dersin kitabı bu şekilde başlıyor.
+
+463
+01:38:24,532 --> 01:38:30,532
+Klasik geliştirdiğimiz polinom zamanlı algoritmalar, Depth-First-Firstler bilmem neler.
+
+464
+01:38:31,412 --> 01:38:50,732
+Exact Solution veya optimal solution'u verme noktasında sıkıntı verir. Çok fazla durum olduğu için. Tamam, çözümü verebiliyor ama sıkıntı şuna, ya makul zamanda veremiyor, ya belleğin yetmiyor veya hiç optimal çözüme ulaşamayacak şekilde bir durumun içerisine düşüyorsun.
+
+465
+01:38:50,732 --> 01:38:58,532
+O zaman ne yapalım? Yani kitabın ilerleyen şeyleri de söyleyeceğini ben baştan söyleyeyim. Optimale gidemiyorsak...
+
+466
+01:38:59,988 --> 01:39:14,388
+ve optimale en yakın veya şu ana kadar bildiğim çözümleri, hiçbir şey bilmemekten ise, hiçbir çözüm olmaması, bir çözüm bulayım, onu şimdi uygulayayım, ileride daha iyisini bulursam onu kullanayım.
+
+467
+01:39:14,388 --> 01:39:26,188
+Yapay zeka beni buraya doğru götürüyor. Şimdi makine öğrenmesi veya diğerini öğrenme dediğimiz şeyler ne yapıyor? Tahmin yapıyor. Classification yapıyor. O classification yapılan şeyde
+
+468
+01:39:26,387 --> 01:39:31,507
+Teker teker belki bir pattern bulmaya çalışsak, belki 100 yıl sonra buluruz.
+
+469
+01:39:31,507 --> 01:39:36,867
+Mevcut computational complex ile veya bu elektronik cihazlarla.
+
+470
+01:39:36,867 --> 01:39:43,587
+Ama diyoruz ki, şimdilik %80 başarı da bulsun, ileride yeni yöntemler çıkar, yeni şeyler çıkar.
+
+471
+01:39:43,587 --> 01:39:45,587
+Aslında bu bilimin doğasında olan bir şey.
+
+472
+01:39:45,587 --> 01:39:52,627
+Yani tıpçıların yaptığı şey de bir hastalığı tedavi ederken, mevcut bilimleriyle bir çözüm bulmaya çalışıyorlar.
+
+473
+01:39:53,043 --> 01:40:03,203
+Ya işte bunun tedavisi yok, hiçbir şekilde aman uğraşmayalım, bunu kendi aileyle bırakalım, öyle bir şeyle uğraştın değil mi? Yani bir yerde belli bir prosedürü var, o prosedürü uyguluyor.
+
+474
+01:40:03,203 --> 01:40:09,363
+Üç sene sonra yeni bir tedavi şekli çıkıyor, ilaç çıkıyor, bilmem ne çıkıyor, onu uyguluyor, daha iyisini bulabilirse.
+
+475
+01:40:09,363 --> 01:40:17,443
+Aslında tamamen bilim için hep şunu söyledim ben, approximation to the truth diyor. Gerçeğe yaklaşma.
+
+476
+01:40:17,555 --> 01:40:37,555
+Bir tane optimal veya gerçek diye bir çözüm var. Biz de körlemesine veya birazcık bilinçli olarak belli argümanları kullanarak gerçeğe bir şekilde yaklaşmaya çalışıyoruz. Bu kadar olası durumdan bahsettik. Şimdi bir yeni tarafa da gelelim. Ondan sonra bitireceğiz.
+
+477
+01:40:45,072 --> 01:40:46,699
+Telefonu 2, ay?
+
+478
+01:41:01,684 --> 01:41:13,684
+Şu ana kadar ki bu algoritmalarda bize state space tree üzerindeki veriler dışında bir veri söylenme.
+
+479
+01:41:14,684 --> 01:41:21,684
+Tabi buradaki problemde bize söylenecek veri her yerde söylenmeyebilir. Şimdi burada konuşacağımız şey.
+
+480
+01:41:21,684 --> 01:41:28,652
+Kabul edelim ki problemimiz bir noktadan bir noktaya gitmenin en kısa yolu olsun.
+
+481
+01:41:29,171 --> 01:41:33,851
+Harita problemleri şeklinde düşünebiliriz. Böyle bir çözüm arıyoruz.
+
+482
+01:41:35,531 --> 01:41:38,371
+Sezgisel arama, hani şuradaki şeyleri okuyalım.
+
+483
+01:41:39,011 --> 01:41:46,652
+Özel buluşlara çok değer vermiyorum ve en çok arzu ettiğim şey icat etme saati mükemmelleştirmek ve problemin çözümlerini bulmaktan ziyade
+
+484
+01:41:47,011 --> 01:41:53,091
+çözüm yöntemlerini bulmaktadır. Çünkü tek bir yöntem sayısız çözümleri kapsa böyle bayağı iddialıdır.
+
+485
+01:41:54,068 --> 01:42:05,068
+Sezgisellik problemin durum uzayı çok büyük olduğunda çözümün aranmasını kesim biçimde sınırlayan herhangi bir kural, strateji ile sadeleştirme diğer etmenlerin kullanımıdır.
+
+486
+01:42:05,068 --> 01:42:19,980
+Yani diyor ki çözüm çok fazla bir şeyse, acaba beni bu çözüme götürecek ekstra bir yardımcı bir şey ile hızlı bir şekilde aradığım çözüme gidebilir mi? Bu hile olabilir.
+
+487
+01:42:20,115 --> 01:42:47,115
+Kural olabilir, strateji olabilir, veri olabilir, belli bir manipülasyon olabilir gibi gibi. Arama algoritmalarında sevgi ne olabilir? Şimdi düşünün, bundan 40 yıl önce telefonunuz yok, WhatsApp yok, bilmem ne yok. Anadolu'nun herhangi bir köyüne gittiniz. O köyden hatta araç da yok. Belki en fazla araç olarak bir merkez olduğunu kabul edin.
+
+488
+01:42:47,380 --> 01:42:58,779
+Bir yerden kalancaya gidiyorsunuz. Ne yaparsınız? İşte birine sorarsınız. Onun söylediğine inanırsınız. Eğer doğruysa şansınız varsa o noktaya gidersiniz.
+
+489
+01:42:58,779 --> 01:43:11,180
+İşte arama algoritmalarında da aslında yaptığım şey bir bilgiye güvenerek veya işte sezgi dediğimiz veya bir tahmine göre, hedefe acaba ne kadar yakın?
+
+490
+01:43:12,020 --> 01:43:29,020
+Bu bilgiden yola çıkarak, şu ana kadarki bilginin dışında, hedefi olan uzaklığı veya hedefi olan yakınlığı dikkate alarak, çözüm arayışımızı sağlamak. Çözüm arayışımızda da, buradaki algoritmalarda şuna dikkat edin.
+
+491
+01:43:29,020 --> 01:43:38,020
+Uniform Cost Search ne yapıyordu? Listeden bir sonraki gidilecek noktayı beğenirken, seçerken,
+
+492
+01:43:38,228 --> 01:43:47,228
+En düşük maliyete baktım. Bu en düşük maliyet neydi? Şu ana kadar kat ettiğim veya şu ana kadar harcadığım maliyet bilgisi.
+
+493
+01:43:47,228 --> 01:43:58,228
+Bir noktadan başladım. Bulunduğum yere gelene kadar şu yoldan gelirsem şu kadar maliyet, bu yoldan gelirsem bu kadar maliyet, bu bilgi var.
+
+494
+01:43:58,228 --> 01:44:05,228
+Ama bu geçmişe yönelik bir şekilde. Peki geleceğe yönelik bize bir tahmin bilgisi verirse, bunu da kullansak...
+
+495
+01:44:05,747 --> 01:44:14,747
+ve bu tahmin bilgisiyle geleceğimizi tayin edsek diye düşündükler. Yani geçmişi alıyoruz tamam, şeyi de elde ettik de,
+
+496
+01:44:15,747 --> 01:44:20,747
+mevcut durumlar üzerinde gelecek çözümlere yönelik geçmişten bir bilgi alamayız.
+
+497
+01:44:21,747 --> 01:44:28,747
+Ama ayrıca bize bir bilgi sunursak, diye bakılmış, işte bu sezgisel algoritmaların temelini oluşturur.
+
+498
+01:44:29,747 --> 01:44:32,747
+Bunun birinci versiyonu birazdan göreceğimiz Best Search Algotması.
+
+499
+01:44:33,376 --> 01:44:39,135
+sizi çözüme götürebiliyor. Hatta hızlı da götürebiliyor. Tek sıkıntısı ne olabilir?
+
+500
+01:44:41,536 --> 01:44:51,975
+O optimal olmayabiliyor. Uniform postwork optimal olabiliyor bakın. Ama bu optimal olmayabiliyor. Bunun optimal olanı da A-star dediğimiz alibarizmalıdır.
+
+501
+01:44:52,975 --> 01:45:00,975
+Peki bize bu bilgi nereden gelecek? Sezgi veya tahmin yapacağımızı söyleyen bu bilgi acaba nereden gelebilir?
+
+502
+01:45:06,547 --> 01:45:18,347
+Geçmişten. Zaten geçmişten o bilgi var. Yani başlangıç noktasından gittiğim, ulaştığım noktalara dair bilgi var.
+
+503
+01:45:18,347 --> 01:45:32,347
+Gideceğim noktalara dair, hiç uğramadım ama şu an bu noktadayım, önümde şu nokta, şu nokta, şu nokta, bunlardan hangisine gideceğime dair bir bilgi nereden gelebilir?
+
+504
+01:45:32,819 --> 01:45:35,460
+Bu şey üzerinde, en kısa yol problemi üzerinde.
+
+505
+01:45:40,243 --> 01:45:43,243
+Gerçek hayatta bunu belki söyleyebiliriz.
+
+506
+01:45:44,243 --> 01:45:47,243
+Kuş uçuşu uzaklık diye bir şey söyledim.
+
+507
+01:45:48,243 --> 01:45:55,243
+Şimdi mesela şöyle düşünün, bir çölün ortasındasınız, gideceğiniz yer biliyorsunuz ki doğuya yakın.
+
+508
+01:45:56,243 --> 01:45:58,243
+Ve gece.
+
+509
+01:45:59,243 --> 01:46:08,043
+Sabaha beklediğinizde güneş nereden doğuyorsa, oraya doğru gitmek sizi doğru bir şey yapar. Tam tersi yöne gitmek çok alakalı değildir.
+
+510
+01:46:08,275 --> 01:46:15,595
+Veya bununla alakalı şeye bakarsınız, kuş uçuşu uzaklıkta, hani sizde bir yerden bir liste şeklinde veririz.
+
+511
+01:46:16,255 --> 01:46:25,695
+O zaman bir noktadan yeni bir noktaya geçerken yapacağım şey, bu kuş uçuşu uzaklığı yeni noktada hani hangisi daha kısaysa,
+
+512
+01:46:26,055 --> 01:46:34,095
+hedeflediğim nokta, bulunduğum noktadan gideceğim nokta, hangisi daha yakındaysa, önce ona giderim mantığıyla işlem yapacağız.
+
+513
+01:46:35,475 --> 01:46:46,875
+Bunun için iki algoritma var, bir de lokal arama algoritmaları var. Bugün gidebildiğimiz kadar şuna bakalım ama A-Star'a girmeyiz herhalde. Diğer arada kalmasın.
+
+514
+01:46:46,875 --> 01:47:01,475
+Best First Search. Best First Search, adından da anlaşılabileceği gibi şu ana kadarki tahminlerin içerisinde bulduğum en iyisine devam.
+
+515
+01:47:03,091 --> 01:47:16,771
+Yine bakın bir aynı mantık var. Uniform Cost Search'u birazcık best şeyle, Bread First Search'le kombine ediyor gibi. Pardon Bread First Search'le değil, Death First Search'le kombine ediyor gibi.
+
+516
+01:47:17,372 --> 01:47:27,612
+Death First Search derinlemesine gidiyordu. Uniform Cost Search'ta de en az maliyetli olana gidiyor. İkisini birleştirdiğimizde ne yapacağız?
+
+517
+01:47:28,251 --> 01:47:30,219
+Başlangıç noktasındayım.
+
+518
+01:47:32,372 --> 01:47:58,284
+Şuraya gideceğim. Başlangıç noktasından şuraya gidebilirim, şuraya gidebilirim, şuraya gidebilirim. Bana ek bilgi olarak diyor ki A noktası diyelim. B noktası, C noktası. A'dan, şurası da ne olsun? X noktası. A'dan X'e kuş uçuşu maliyet 100 birim olsun. B'den X'e kuş uçuşu maliyet 500 olsun. C'den X'e kuş uçuşu maliyet 500 olsun.
+
+519
+01:47:58,323 --> 01:48:26,003
+300 olur. Hangisine gideriz? Daha küçük olana gideriz. Bilmiyoruz, bundan sonraki aşamalarda daha iyi bir yol, belki şu B'den gidilir veya C'den gider. Bu tamamen sezgiyle tahminle ortaya atılmış. Çünkü kuşu, kuşu, mesafe gerçek mesafe değil. Buradan mesela hani şu an hava yollarında bu kullanılır ama biz normal karayolunda buna şey yapıyoruz. Şimdi kuyruktan veya işte listeden
+
+520
+01:48:26,899 --> 01:48:32,220
+Kuyruk boş olduğu sürece, boş olmadığı sürece veya bulamadığımız sürece devam edeceğiz.
+
+521
+01:48:33,420 --> 01:48:39,300
+Kök durumumuz var, kuyruktan durum çekiyoruz. Eğer bulduysak çıkacağız ve döngü devam edecek.
+
+522
+01:48:39,300 --> 01:48:45,699
+Bulamadıysak, neyden bulunduğumuz kuyruktan çektiğimiz durumdan,
+
+523
+01:48:47,300 --> 01:48:51,859
+tüm kuyruğun, gidilebilecek tüm durumları kuyruğun içerisine ekliyoruz.
+
+524
+01:48:51,859 --> 01:48:53,060
+Bel listeye ekliyoruz.
+
+525
+01:48:53,619 --> 01:49:09,819
+İşte bu listeden bir eleman çıkartırken geçmişteki hesapladığımız maliyet değil, kuş uçuşu maliyet veya işte herhangi bir belirlediğimiz değerlendirme fonksiyonuna göre bir tane maliyet oluşturuyoruz.
+
+526
+01:49:09,819 --> 01:49:21,019
+Bu maliyetten en kabul edilebilir olanı, hani bu kazanç da olabilir, kazanç da maksimum kazanç, maliyet de minimum maliyet. Onlardan bir tanesini alıyoruz veya sıralıyoruz.
+
+527
+01:49:21,332 --> 01:49:45,332
+Bir tanesini çekiyoruz. Aslında burada sıralama söz konusu. Bir tanesini çektin. O çektikten sonra yaptığın hamle seni çözüme götürmedi. Loop'a girdin, bad end oldu, bir şey oldu. O sıralama yaptın yani. Oradan çözüm bulamadıysan sıranın ikincisinden devam etmek için sıralamayı yapıyoruz. Ama biz genelde bunu anlatırken şey deriz.
+
+528
+01:49:45,619 --> 01:50:10,119
+kuyruğun en az yani şuradaki fonksiyonundan en az maliyetli olanı al yoluna devam. Oldu da bir sıkıntı oldu. Çünkü bu Uniform Post-Turge artı Depth-First Search'un bir arada kullanılması gibi bir şey. Depth-First Search'te D-dense geldiğinde geri geri gelmen lazım. Bu da onu yapacak. Ve yolumuza devam edeceğiz. Şimdi burada değerlendirme fonksiyonu dediğimiz şey şu.
+
+529
+01:50:12,724 --> 01:50:35,724
+F'n eşittir, heuristic, A, Hn. Benim F'nin toplam maliyetimi söyleyecek. Burada diyorum ki gideceğim noktayı bana söylenen kuş uçuşu mesafeye göre veya şu A, Hn konksiyonuna göre sezgisel olarak buna güveneceğim. Ve bu güven üzerine bir yol araması gerçekleştirdim.
+
+530
+01:50:36,627 --> 01:50:55,627
+HL dediğimizde mevcut durumun hedefe tahmini uzaklık. Yani hışışışı uzaklık. İşte HSLD dediğimiz shortest line distance. Yani ne demek? İki nokta arasındaki öklük mesafesi gibi düşünebilirsiniz. Bu öklük mesafesi hesaplamak kolay.
+
+531
+01:51:00,724 --> 01:51:09,724
+Onlardan yola çıkarak işte koordinat bilgisinden, küresel koordinat bilgisinden iyi kötü bir şeyler çıkartılıyor. Zaten günümüzden birçok yerde bu bilgiler var.
+
+532
+01:51:10,724 --> 01:51:19,724
+Her adımda hedefe en yakın görünen duruma iler. Şu ana kadar toplam maliyeti bakın işin içerisine almadık şuradan.
+
+533
+01:51:20,724 --> 01:51:24,395
+Yani Uniformed Coastal Ölç'ün o maliyet şeyini çöpe attık.
+
+534
+01:51:25,300 --> 01:51:37,300
+Atmakla aslında birazcık iyi bir şey yapıyoruz da tam iyi bir şey olmuyor. Şimdi bundan sonraki A-Star'da hem o maliyeti hem de şu heuristik maliyeti dikkate alarak çözüme gideceğiz.
+
+535
+01:51:37,300 --> 01:51:48,300
+Ama önce bunu konuşuyoruz. Problem şu, size güzel görünüyor muyum? Bunu biraz daha büyürsek...
+
+536
+01:51:50,300 --> 01:51:51,596
+Niye mi büyüdüm?
+
+537
+01:51:54,644 --> 01:52:15,444
+Bu, Bükreş, Romanya haritası. Şurada Arat diye bir nokta var. Bir de burada, nerede Bükreş? Buradan. Buradan buraya gitmek istiyoruz. Şunlar normal yol uzunlukları.
+
+538
+01:52:16,180 --> 01:52:26,680
+Arat'tan Sibu'ya 140 km diyelim veya 140 dakika diyelim. İlla kilometre olmak zorunda değil de, distance hesabı olduğu için kilometre diyebiliriz.
+
+539
+01:52:28,180 --> 01:52:39,180
+Bu bilginin dışında bir de bir liste halinde Bükreş'e uçuşuşlu uzaklık bilgilerini sunan şöyle bir şey var.
+
+540
+01:52:40,180 --> 01:52:44,076
+Bükreş'ten Bükreş'e sıfır, onda sıkıntı yok.
+
+541
+01:52:44,819 --> 01:53:04,220
+gibi şöyle bir ekstra bir bir. Şimdi araktan başladığımızda Uniform Post-Turch'e göre neleri ekliyorum? Şu Zerint dediğimiz yeri ekleyeceğiz, Sibuya ekleyeceğiz, Kimisi soramayız, neyse şunu ekleyeceğiz, başka bir şey eklemeyeceğiz. Bunlardan hangisini çıkartacağız?
+
+542
+01:53:11,123 --> 01:53:37,123
+Bu 75 olanlığına, işte, komşuları 71 var. Ondan sonra şu timiz sorayı ekleyeceğiz. Böyle uniform postör tükendi, devam edecek. Ama onun nesi fazlaydı? Kompleksi fazlaydı. Yani burada düşünün birkaç tane yer var. Belki bir 20 tane falan nokta vardır. 20 tane olunca, her birinden de bakın 3'er 4'er tane ihtimal var gidilecek. Onun için bayağı zor.
+
+543
+01:53:37,492 --> 01:53:56,492
+Onun için bu diyor ki hiç şeye bakma, hani şu şeylere bakma, Arat'dan, şöyle gelelim, başladım. Arat'ın şeye kuş üçü mesafesi 360 altı. Şu bilgiyi dikkate alıyorum. Keşke şunu bir ekran görüntüsü alayım da.
+
+544
+01:54:02,420 --> 01:54:04,420
+Gerçi diğer sılakta da benzeri var.
+
+545
+01:54:26,579 --> 01:54:39,979
+Aradınki 366'mış. Arad'dan 366'yla gideceğiz ama Arad'dan önce kime gidebiliriz? Yani doğrudan bu köşe gidemeyeceğim için. Şu Zerint var, Timisora var, bir de Sibu var.
+
+546
+01:54:41,340 --> 01:54:50,219
+Bu üçüne ihtimaller var. Şimdi diyor ki Sibu'dan kuş uçuşu mesafe 253'müş. Timisora'dan...
+
+547
+01:54:51,899 --> 01:54:53,260
+Nerede yazıyor?
+
+548
+01:54:54,260 --> 01:55:07,260
+329'muş, zaten şurada yazan şey. Bu Fn eşittir, Haşen dediğimiz şey, bakın geçmişte şuradan Arat'tan Sibu'ya ne kadar geldim, ne kadar maliyette geldim, Timisora'ya ne kadar maliyette geldim, buna bakmıyor.
+
+549
+01:55:07,260 --> 01:55:20,108
+Diyor ki doğrudan, ben şu sezgime güveniyorum, kuş uçuşu mesafe sezgime güveniyorum. İşte bu bilgilerden yola çıkarak 253, 329, 374 Sibu'yu seçiyorum.
+
+550
+01:55:20,756 --> 01:55:27,756
+Sibu'yu seçtikten sonra Sibu'dan kim varmış? İşte şu iki tane, hatta şunu da belki söylersek, üç tane yer var.
+
+551
+01:55:30,256 --> 01:55:34,756
+Dört tane, gerçi aranı da dikkate alıyor. Ooo bu çok kötü oldu ya.
+
+552
+01:55:35,756 --> 01:55:36,756
+Nereye gitti şey?
+
+553
+01:55:48,851 --> 01:55:51,851
+Neyse, şunu kapatalım.
+
+554
+01:55:53,851 --> 01:55:56,851
+Sibu'dan, Arada tekrar gidebiliriz.
+
+555
+01:55:57,851 --> 01:56:00,851
+Şu Pagaras var, Oradevo var, Binghamlı var falan.
+
+556
+01:56:00,851 --> 01:56:05,851
+Bu da diyor ki 176. Şimdi bundan sonra arama yaparken şuna bakıyor.
+
+557
+01:56:05,851 --> 01:56:11,851
+Bunu, bunu, bunu, bunu, bunu, aslında bunu da ama bunu almayacak.
+
+558
+01:56:11,851 --> 01:56:12,851
+Çünkü Arada'dan gelmiyor.
+
+559
+01:56:12,851 --> 01:56:14,667
+Hepsine bakarak...
+
+560
+01:56:14,676 --> 01:56:36,076
+diyor ki bunlardan en küçük olan kim var? Niye? Bu bana bunu söyleyecek. Mesela şurada 176 değil de 576 olsaydı, demek ki bu yol kötü bir yol, sıkıntılı bir şey. Ne olması lazım? İşte daha küçük olan, mesela şurada 593 olsun, Sibu'dan gelmek yanlışmış. Şunu söylüyoruz, bir noktadan o noktaya gittik.
+
+561
+01:56:36,435 --> 01:56:43,935
+Bu nokta daha kötü noktalara, daha uzak noktalara veya daha fazla maliyet çıkartacağı için hemen şuraya geri gelecek.
+
+562
+01:56:43,935 --> 01:56:47,935
+Onun için hani biraz önce sıralama yapacağız dedik ya, buraya geri gelmek lazım.
+
+563
+01:56:47,935 --> 01:56:51,435
+Şimdi en küçük burada denk geldiği için 176 dedi.
+
+564
+01:56:51,435 --> 01:56:59,435
+176'dan, Pagaras'tan gidilebilecek olan, küçük uçuşu mesafeye bakıyor.
+
+565
+01:57:01,619 --> 01:57:24,619
+Pardon, Fagaras'ın gidilebilecek noktalarına bakıyor. O da Sibu ve Bükreş'miş. Bunu en küçük zaten buldu, sıfır. Sibu zaten geldiği noktaydı. Ne oluyor? Demek ki ben buradan buraya, buradan buraya, buradan buraya gelirsem, bu benim hesabım, şeyim olabilir.
+
+566
+01:57:27,859 --> 01:57:43,859
+En iyi arama algoritmasının, yani best search algoritmasının bulduğu çözüm. Bu çözüm optimum değil arkadaşlar. Niye? Çünkü aslında şeyi dikkate almıyor.
+
+567
+01:57:55,444 --> 01:58:18,644
+Öyle değil mi? O minimum çıkan şeyler şundan daha az maliyete neden olsa ne yapmış oluyoruz? Optimallikten kaçmış oluyoruz. O detayı şey yapıyoruz. Aslında bu bir gri yaklaşım değil mi? Açgözde yaklaşım. Açgözde yaklaşım her zaman optimal çözümü veren bir şey değildir. Bazı durumlarda işte optimalden kaçırabiliyor.
+
+568
+01:58:20,404 --> 01:58:46,404
+şu 140 artı 80 artı 97 artı 101 neyse şu bir optimal bir çözümmüş. 140 artı 99 artı 213 şu da bizim bulduğumuz çözüm. Şu daha şey optimum bir çözüm. Uniform cost search yapsaydık bunu bulabilirdik. Dolayısıyla komplek bir algoritma mı değil, loopa takılma ihtimali var. Çünkü şeyden başladık.
+
+569
+01:58:46,739 --> 01:58:56,139
+Arat'tan Sibu dedik, Sibu'dan tekrar Arat'a. Eğer kontrol yapamıyorsak, loop'a takılabiliriz veya başka ihtimallerde de şey olabilir.
+
+570
+01:58:56,139 --> 01:59:13,539
+Hiçbir zaman çözümü bulamayabiliriz. B üzeri M, olabilir işte her birinden ortalama M'ye kadar şey, B'ye kadar bir dallanıma gerçekleşecekse ve çözümümüz M'ye kadar genişliyorsa, B üzeri M'ye kadar bir şey var.
+
+571
+01:59:13,811 --> 01:59:22,811
+Space'imizde tüm durumları hafızada tutmamız gerekiyor. Açtıkça, yani kuyruk mantığıyla tutacağız. Hani burada bir şey yok.
+
+572
+01:59:22,811 --> 01:59:34,811
+Aramanın kendisi algoritmik şeyi depth-first search ama bellek karmaşıklığı breadth-first search gibi. Dolayısıyla bütün durumları tutmamız gerekiyor. Optimal mi? Değil.
+
+573
+01:59:34,811 --> 01:59:38,811
+Optimal olmadığı için şey yok. Şimdi burada duralım.
+
+574
+01:59:39,539 --> 01:59:42,539
+Hatta şuradan da bir şey söyleyeyim.
+
+575
+01:59:44,739 --> 01:59:54,539
+Bunlar arkadaşlar, Tree Search algoritmaları dediğimiz, bir Evaluation değerlendirme opsiyonuyla işlem yapan algoritmalar.
+
+576
+01:59:54,539 --> 02:00:06,220
+Ekstra bakım bilgi var. Bu bilgi bizi neden kurtarıyor? Biraz önceki Curve, Blind, Uninformed dediğimiz algoritma adresinden ayırıyor.
+
+577
+02:00:06,292 --> 02:00:26,292
+Ve bir sezgi var mı? Sezgi var. Çünkü gelen bilgi mutlak bilgi değil. Tamamen işte hış uçuş uzaklık gibi başka sezgiler olacak. Bunları kullanıyoruz. Mesela burada... Aynı şeye göndermiş.
+
+578
+02:00:28,792 --> 02:00:33,792
+Mesela demiş ki, iasi niant, iasi niant böyle kalabilirsin diyor.
+
+579
+02:00:34,068 --> 02:00:46,868
+Time'ı böyle, Space'ı böyle, optimal değil. Sonra ASTAR'a geliyor. Buna da zaten şey yaparsın. Bu bilim dersinin kitabının slide'ları size... Şu kitabın slide'ları yok değil mi sizden?
+
+580
+02:00:47,412 --> 02:00:54,412
+Tamam, ben bir Google Drive açayım. Bunları oraya PDF olarak ücliyeyim. Hem Fatih Hoca'nın şeylerinden ayrıca, bunlara da bakarsınız.
+
+581
+02:00:54,412 --> 02:01:05,412
+Fatih Hoca buraya bunların benzerlerini almış ama biraz daha böyle kompakt hale getirmiş. Daha fazla detay isteyen, hem dersin kitabının tekstine bakar hem de isterseniz slide'ına bakarsınız.
+
+582
+02:01:05,412 --> 02:01:10,412
+Sorumuz var mı? Tamam, bugün de keseceğiz arkadaşlar.
+
+583
+02:01:10,931 --> 02:01:32,587
+Şöyle bir ek ders yapacağız. Geçen haftaki yapamadığımız dersten kaynaklı olarak. Onu herhalde bayram sonrasına bırakırız. Cuma günü öğleden sonra boşmuş. Online olarak bir üç saatlik falan ek ders yaparız. Sonumuzu tamamlarız. Onun bilgisinin zamanı gelince sizlere buyururum. Hepinize iyi günler. Görüşmek üzere arkadaşlar.
