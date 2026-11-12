@@ -1,0 +1,1567 @@
+1
+00:03:35,348 --> 00:03:36,508
+Günaydın arkadaşlar.
+
+2
+00:03:38,728 --> 00:03:43,908
+Günaydın hocam.
+
+3
+00:03:47,795 --> 00:03:59,335
+İlk önce bir ders programı paylaşayım. Bugün 6 Mart Hayat Bilgisayar Mühendisliği temanlarının kısmını işleyecekmişiz.
+
+4
+00:03:59,335 --> 00:04:12,716
+İşte öyle değil mi? Zekiler gideriz zaten. Geçen hafta küçük bir giriş yapmıştık zaten. Anlambilim, hesap olan anlam bilim ne demek? Burada kullanılan temel yöntemler neler? Bunlardan birazcık bahsetmiştik.
+
+5
+00:04:15,828 --> 00:04:20,187
+İki tane temel yöntemden bahsetmiştik aslında hatırlarsanız.
+
+6
+00:04:22,048 --> 00:04:26,408
+Bunlardan bir tanesi, şöyle bir şey açalım da.
+
+7
+00:04:33,187 --> 00:04:39,168
+Formal Anlam Bilim diye ismini vermiştik. Kural taban yaklaşımlar demiştik bunlara.
+
+8
+00:04:40,507 --> 00:04:42,827
+Bizim sistemin yapabileceği...
+
+9
+00:04:44,339 --> 00:05:04,239
+Yapmasını istediğimiz şeyleri mümkün olduğu kadar hodlamaya çalışıyorduk. Kuralların içerisine gömmeye çalışıyorduk. Burada karşımıza birkaç tane sonlu durum makineleri vesaire gibi ya da uzman sistemler gibi şeyler karşımıza çıkıyordu.
+
+10
+00:05:05,108 --> 00:05:21,324
+Burada işte cümle çözümlemekte, hangisinden her şeylerin böyle istanlar kural yapılarıyla belli bir dereceye kadar yapılabildiğinden bahsetmiştik. Ya da morfolojik analiz gibisinden şeylerinde yine bu tarz kural tabanlı yapılarla çözebildiğinden bahsetmiştik. Kural tabanlı yapılarla yapılabilen...
+
+11
+00:05:21,843 --> 00:05:44,716
+Başka şeylerden bir tanesi de çıkarım vardı. İşte böyle bir örneğimiz var. Mesela böyle bir paragraf veriliyordu. Sonra da bir tane soru soruyordu. Bu soruya, bu paragrafa göre cevap verebilmek için kural tabanlı bir yapının oluşturulabileceğinden bahsetmiştik. Ama bu kural tabanlı yapının içerisinde...
+
+12
+00:05:45,204 --> 00:06:06,603
+Sistemin soruları cevap verebilmesi için bilmesi gereken bazı bilgiler vardı. Bu bilgiler şu aşağıdaki kısımlarda yer alıyorlardı. Bu aşağıdaki kısımlar için birisi bir yerde bulunduysa oraya gitmiştir. Birisi o yere gitmişse o yeri içine alan yere gitmiştir. Sınıf okulun içindeler, o da evin içindeler gibi gibi bu tarz bilgiler.
+
+13
+00:06:07,699 --> 00:06:17,720
+Aslında bugünkü dersimizin konusu bu alt kısımdaki burada bilmesi gerekenler kısmı. Yani ne demek istiyorum?
+
+14
+00:06:21,799 --> 00:06:30,572
+Biz sadece bir soruya cevap verirken değil, aslında bütün konuşmalarımızın içerisinde...
+
+15
+00:06:32,019 --> 00:06:52,179
+Karşı tarafın bildiğini varsaydığımız şeyler vardır. O bildiklerimiz üzerinden bilmediğimiz ya da karşı tarafın bilmediği konular üzerinde konuşuruz. Bir haber veririz vs. vs. karşı tarafın bilmediği bir şeyler. Karşı tarafın bildiği bir şeyler olduğunda varsayarak hareket ederiz.
+
+16
+00:06:59,507 --> 00:07:20,827
+Mümkün olamayacağını düşünebilirsiniz rahatlıkla. Burada dediğim gibi bu tarz bilgilerin kurallar halinde yazılabileceğinden bahsediyor aslında. Şurada gördüğümüz belli kurallar var bu bilgileri içeren ya da şurada belli kurallar var yine bu bilgileri içeren.
+
+17
+00:07:23,923 --> 00:07:30,423
+Dili kullanılmış burada. İşte ProDog, Programming, Logik diye bir şeyin kısaltılması.
+
+18
+00:07:31,223 --> 00:07:37,423
+Ve burada belli çıkarımlar gerçekleştirebiliyor bu formal yapıya.
+
+19
+00:07:37,423 --> 00:07:40,923
+Bütün cümleleri mesela şu formata getiriyoruz. Şuradaki formata.
+
+20
+00:07:41,331 --> 00:08:01,412
+Görüyor musunuz? İşte yüklem var, öznesi var, belirtilmesisi var, doğal iletimciler var, cümle gönlüsü var vesaire. Basit cümleler bunlar. Ama tabii başka bir cümle yani şuradaki belirtilmesine aslında başka bir alt cümle olabilir. Ya da buradaki bir özne başka bir alt cümle olabilir. Bu nesli bir yapı halinde de oluşturulabilir aslında.
+
+21
+00:08:02,100 --> 00:08:19,620
+İlla çok basit cümleleri ifade edebiliyoruz demek çok doğru değil kural taban yapılarda. İstersek bu yapıyı daha kompleks bir hale getirebiliriz. Özne de başka bir cümlenin ne olsa olabilir mesela örnek vermek gerekirse.
+
+22
+00:08:30,324 --> 00:08:42,443
+Bunun içerisinde direkt yazmıyor ama size böyle bir soru sorulduğunda siz bunun cevabını verebilmenizi sağlayan şey ne ise ona işte bugün hayat bilgisi diyeceğiz.
+
+23
+00:08:44,443 --> 00:08:48,004
+Peki, o zaman başlayalım.
+
+24
+00:08:55,155 --> 00:09:00,975
+Geldim arkadaşlar, bu hayat bilgisi veritabanın slide'ı. Evet, görünüyor hocam.
+
+25
+00:09:04,975 --> 00:09:13,035
+Şimdi bugünkü konumuz, dediğim gibi burada başlayacağız. İşte hayat bilgisi nedir, neye ihtiyaç var, benzer çalışmalar neler var bu konuda yapılmış.
+
+26
+00:09:13,888 --> 00:09:26,148
+Türkçe hayat bilgisiyle alakalı yapılan birkaç bir şeyden bahsedeceğim. Bir CSO'ndan bahsedeceğim. En sonunda otomatik bilgi çıkartalım. Bu tarz bilgileri otomatik nasıl çıkartabiliriz falan onunla alakalı birkaç bir şey söylemeye çalışacağım.
+
+27
+00:09:28,927 --> 00:09:32,228
+Şimdi şunu tam ekran yapsam da olur aslında herhalde.
+
+28
+00:09:35,028 --> 00:09:46,948
+Hayat bilgisi ya da İngilizce common sense diyoruz buna nedir? Herkesin bildiğini varsaydığımız bilgiler. Burada birkaç tane örnek verilmiş. Elmalar, yuvarlaklar, insanlar, geceleri, uyumlar bunlar.
+
+29
+00:09:46,948 --> 00:09:59,888
+Tabii genel şeyler, bunların exception'ları olabilir mi? Tabii ki olabilir ama genel manada düşündüğümüzde böyle bilgilerimiz vardır.
+
+30
+00:10:00,000 --> 00:10:04,899
+İnsanlar ne zaman uyurlar diye sorulduğu zaman geceleri yerleriz genelde.
+
+31
+00:10:05,899 --> 00:10:11,899
+İnsanlar ne sıklıkla yemek yerler? 5-6 saat bir yemek yerler gibisinden bir şeyler denebilir.
+
+32
+00:10:13,179 --> 00:10:16,480
+Yani iki gün yemek yemek, bir gün yemek yerler gibisinden değildir.
+
+33
+00:10:16,619 --> 00:10:21,179
+Elvaların şekli yuvarlayar, kediler, miyavlarlar genelde bildiğimiz kediler.
+
+34
+00:10:22,740 --> 00:10:43,600
+Peki, bu tarz bilgilerin bir veri tabanından bahsediyoruz burada. Hayat bilgisi veri tabanı. Bu tarz bir hayat bilgisi veri tabanına neden ihtiyaç olabilir? Burada birkaç tane ifade var. Ne diyor işte? Bilgisayarlar her şeyi söylemek gerekli söylediklerimizden söylemediklerimizi anlamadılar, tahmin edemezler.
+
+35
+00:10:47,347 --> 00:11:08,647
+Burada paragrafın içerisinde soruya cevap vermeye yetecek bilgi yok. Fakat bu yok olması bu soruyu cevap vermemizi, bizim cevap vermemizi engellemiyor.
+
+36
+00:11:09,107 --> 00:11:29,167
+Ama makineler bu bilgiye sahip olmadığı zaman bu sorulara cevap veremiyorlar. Peki bu bilgileri onlara biz nasıl vereceğiz? Bunu konuşacağız. Eğer ki verebilirsek kapaca, Şahil Lokantı diye mekili cümlesine Ali Para Ödemiştir bilgisini çıkarabilecekler.
+
+37
+00:11:33,683 --> 00:11:59,084
+İhtiyaç dediğim gibi, biz normalde bu tarz bilgileri çok kabaca yaşayarak ediniyoruz. Doğduğumuzda bizde de yok bu tarz bilgilerin çok çok büyük bir kısmı. Ama biz yaşayarak öğreniyoruz. Ve bu yaşayarak öğrendiğimiz bilgileri belli bir format haline, belli bir forma sokup aşağı makamaya verebilir miyiz? Bunu daha da bahsedeceğiz.
+
+38
+00:12:00,659 --> 00:12:17,940
+Şimdi, bir dakika şuna bakayım. Mesela bir örnek verelim. Duygudurum analiziyle alakalı, olumlu mu olumsuz mu bir ifade ondan bahsediyoruz.
+
+39
+00:12:17,940 --> 00:12:27,879
+Şimdi mesela ilk örneğe bakalım. Yemeğim 5 dakikada geldi. Çok teşekkürler. Ne bileyim XXX, buradaki XXX bir firma mesela. Tamam mı?
+
+40
+00:12:28,788 --> 00:12:32,848
+Şimdi bu birinci cümle. İkinci cümleye bakalım. Yemeğim 55 dakikada geldi. Çok teşekkürler.
+
+41
+00:12:33,108 --> 00:12:40,268
+Şimdi birinci cümle olumlu bir şeyken, ikinci cümle genel manada olumsuz bir şey söylüyor.
+
+42
+00:12:40,268 --> 00:12:46,988
+Bir iman var burada. 55 dakikada yemek mi getirilir kardeşim? Çok teşekkürler.
+
+43
+00:12:47,968 --> 00:12:54,251
+Şimdi yukarıdaki ifade ile aşağıdaki ifade arasında...
+
+44
+00:12:55,187 --> 00:13:15,788
+Tek bir şey değişmiş fark ettiyseniz. Bir tanesinde 5 yaşıyor, bir tanesinde 55 yaşıyor sadece. Başka bir şey yok. Yukarıdakinin olumlu olup aşağıdakinin olumsuz olmasını söyleyebilmek için neyi bilmek lazım?
+
+45
+00:13:19,860 --> 00:13:22,019
+Yemeğin ortalaman kaç dakikada getirdin?
+
+46
+00:13:22,220 --> 00:13:22,720
+Yemeğin.
+
+47
+00:13:23,220 --> 00:13:30,159
+Değil mi? Aynen öyle. O bilgiyi bilmeden buna cevap vermek pek şey değil. Ne derler ona? Mümkün değil.
+
+48
+00:13:33,059 --> 00:13:37,820
+Yani hatta şöyle bir durum bile olabilir. Bu aşağıdaki 55 dakikada geldi diyoruz ya mesela.
+
+49
+00:13:38,620 --> 00:13:43,100
+Yani adam hakikaten dağın bir başında yaşıyordur. Mesela diyelim ki.
+
+50
+00:13:43,504 --> 00:14:10,303
+Oraya yemeğin gitmesi hakikaten uzun sürüyordur. 55 dakikada gitmesi hakikaten yine de teşekkür edilebilecek bir şey de olabilir mi? Olabilir. Yani o bir de mümkün bir şey. Yani duruma göre de aslında düşünülebilir bu. Yani bağlamı da işin içine katarak karar vermek gerekir. Kimin söylediğine, nereden söylediğine falan bağlı olarak bir şeyler söylemek gerekir. Ama biz düz hani çok böyle exception'lara gitmeden düşünürsek.
+
+51
+00:14:11,028 --> 00:14:26,367
+Yemek dağıtımında 5 dakikada gelmesi iyi bir şey, 55 dakikada gelmesi kötü bir şey. Bu bilgiyi bilirsek ancak bu sistem ve ikincisine burada bir ima var, iyi bir şey demiyor burada, teşekkür ediyor ama.
+
+52
+00:14:26,772 --> 00:14:39,652
+İmalı bir şekilde. Ya da ne bileyim mesela şu aşağıya bakıyorum. X-X sayesinde buradaki X-Xler yine firma. Mesela bir saatlik filmi üç saatte izledim. Ya da öteki döküye X sayesinde bir saatte on tane film indirdim.
+
+53
+00:14:40,652 --> 00:14:54,032
+Şimdi yukarıdaki ve aşağıdaki mesela olumsuz bir şey ifade ediyor herhalde. Aşağıdaki ise olumlu bir şey ifade ediyor. Şimdi burada da yine böyle çok acayip birbirinden çok farklı şeyler yok.
+
+54
+00:14:54,388 --> 00:15:00,168
+Surfer's açısını yani hani şekilsel olarak baktığınızda yukarıda şekilsel olarak sadece bir karakter oynuyordu.
+
+55
+00:15:00,628 --> 00:15:28,108
+O bir karakter bile olumluğa geçirmeyi sağlayabildi. Aşağıda birazcık daha karakter kelime bazında biraz daha farklılık var ama yine de yukarıdakine kötü, aşağıdakine iyi bir şey diyebilmek için film seyretmektir, izlemek, indirmektir falan gibisinden şeyler. Bunlar normalde ne kadar sürüyorlar falan gibisinden bir sürü şeyi biliyor olmanız lazım ki bu yukarıdaki kötü bir şey. Bir saatte film, üç saatte izledim demek. Demek ki ne olmuş muhtemelen.
+
+56
+00:15:28,528 --> 00:15:40,728
+Bayağı kesintiye uğramış bağlantı, durmuş, donmuş, kalmış gibi bir sürü çok düşükmüş bant genişliği falan gibisinden bir şeyler düşünebilirsiniz.
+
+57
+00:15:40,728 --> 00:15:48,728
+Aşağıda biraz daha iyi bir şeyden bahsediyoruz. Bir saatte 10 tane film indirdimlerine göre yüksek bir şeymiş mesela.
+
+58
+00:15:50,740 --> 00:16:06,720
+Ne bileyim, bir günün standart Türkiye teknoloji altyapısı açısından düşünürseniz, bundan 20 sene öncesinde düşünürseniz, belki yukarıdaki çok çok da kötü bir şey değil. Yani bir saatlik filmi, üç saatlik izlediyseniz, bu belki de fena olmayan bir durum olabilir.
+
+59
+00:16:07,740 --> 00:16:16,300
+Neyse, ama temel olarak yine burada da bilmemiz gereken şeyler var. Direkt sadece metne bakarak bir şey söylememiz çok kolay bir şey değil.
+
+60
+00:16:16,820 --> 00:16:27,620
+Peki, bu tarz bilgileri biz, herkesin bildiğini varsaydığımız bilgilerde, bu tarz bilgilerden bir veri tabanı oluşturmak istesek, bunun için ne yapmak gerek?
+
+61
+00:16:27,620 --> 00:16:42,620
+Eski bir soru bu, yeni bir soru değil, öyle söyleyeyim bu, Common Sense mevzusu. Çünkü yapay zekanın tarihine baktığınızda Common Sense...
+
+62
+00:16:43,604 --> 00:17:03,204
+Cumansans probleminin, öyle söyleyelim, birçok problemin önünde bir duvar gibi durduğunu görürsünüz. İşte bu deminki hikaye anlamaktan tutundan makine çevirisine kadar hepsinde Cumansans büyük bir problem olarak karşımıza çıkar ya da uzman sistemlerde.
+
+63
+00:17:03,731 --> 00:17:21,351
+Dolayısıyla bu hayat bilgisayar veri tabanlarını oluşturma, onları bilgisayarlara vermek çalışmaları 1980'lerin başlarına kadar uzanıyor hatta daha öncesi de var. Ama hani büyük girişimler manasında düşünürsek, 80'lerin başlarına kadar uzanıyor.
+
+64
+00:17:22,132 --> 00:17:30,612
+Şimdi burada nasıl? İki tane yaklaşım var çok temel. Bir tanesi şu, saykın yaklaşımın, saykın işte böyle bir veri tabanı.
+
+65
+00:17:32,115 --> 00:17:44,155
+Uzman insanlar olsunlar. Bu uzman insanlar kontrollü bir şekilde, onların söyledikleri her şey güvene güvene, bir tane formal bir yapıda bunu girsinler.
+
+66
+00:17:45,155 --> 00:17:51,155
+Yani cycle'ın bir tane dili var, cycle diye. O dilde...
+
+67
+00:17:52,723 --> 00:18:07,884
+Yani bir format var. Öyle söyleyeyim. Bilgilerin girilmesi gereken bir format var. O formata uygun bir şekilde uzman kişiler bunları girsinler. Bu birinci yaklaşım. 20 yıl boyunca bu iş gerçekleştirilmiş. Ve böyle işte 1,5 milyon tane.
+
+68
+00:18:08,288 --> 00:18:23,248
+Adet manasında söylersek bilgi oluşturmuş. Bu birinci yaklaşım türü. İkinci yaklaşımın türü ise bilgileri. Madem bu hayat bilgisi dediğimiz şeyin tanımı gereği, bunu herkesin biliyor olması gerekiyor. O zaman herkes girsin.
+
+69
+00:18:24,067 --> 00:18:30,807
+Herkes girsin, insanlara bilgilerini girsin, bu bilgileri girsin. Bildiğiniz şeyleri söyleyin falan gibisinden bir şey oluyor bu.
+
+70
+00:18:31,508 --> 00:18:57,748
+O durumda insanların önüne, sokaktaki insanın önüne formal bir yapı çıkartmak çok sürece hızlandırmıyor. Bilgileri gir ama şu formatta bunları girmen lazım. O formatı biraz güncelleyebilirsiniz. Daha doğrusu basitleştirebilirsiniz. Ama temelde insanların cümleleri de girebilirler. Free form, öyle söyleyelim. Cümleler halinde bilgileriniz diyor.
+
+71
+00:18:58,420 --> 00:19:17,880
+Bu da yapılmış bir yaklaşım. Bu da Open Mind tarafından yapılmış bir gerçekleştirilmiş bir yaklaşım. Orada da 8000 kişi gönüllü, 3 yılda 1 milyon bilgi toplanmış. Bu tabii daha sonra evrildi. Zaman içerisinde evrilde evrilde ilerliyor. Hala da yeni yeni versiyonları çıkıyor bunların.
+
+72
+00:19:19,776 --> 00:19:38,056
+Tabii. Gönüllü kişiler, öteki yukarıdaki taraflar profesyoneller, para ödenen kişiler öyle söyleyelim. İnternet vesaire gibisinden şeyler ortaya çıktıktan sonra yine bu alttaki da mümkün olabildi. Öyle söylemişim. Yukarıdaki internet yokken başlayan bir süreç.
+
+73
+00:19:38,612 --> 00:20:01,291
+Aşağıdaki ise interneti kullanan bir süreç aslında. Başka türlü o kadar kişiden bilgiyi toplamanız pek kolay olmazdı. Bilgi sayısı açısından bakarsanız çok çok büyük bir şey yok. Hani farklılık diyor. Hız açısından baktığınızda aşağıdaki daha hızlı var. Güvenilik açısından baktığınızda yukarıdaki daha güvenilir. Neden?
+
+74
+00:20:02,259 --> 00:20:25,759
+Bizim para ödediğiniz kişiler gibi ötekisini deyince gönüllerden alıyorsunuz bunu. Tutarsızlıklar çok daha fazla olacaktır. Onu çözmenin çeşitli yollarından bahsedeceğiz daha sonra. Ama temel iki tane yaklaşım. Bir tanesi işte uzmanlar girsinler, bir tanesi şey yapsın. İnsanlar, sokaktaki insan girsin. Böyle bir iki yaklaşımlar. Bu tabii bilgileri elle toplamak için iki tane yaklaşım.
+
+75
+00:20:27,059 --> 00:20:45,059
+Bu konuda dediğim gibi, 84'te Psyc var, 85'te Birdnet var, Open Mind 2002, Nel var işte 2010, 2020 falan civarında Cassandra çıktı. Daha sonra şimdi mesela bu tarz bilgileri dil modellerinin içerisinde...
+
+76
+00:20:47,092 --> 00:21:12,932
+Gönmek demeyelim de, hani öleleri de var. Hani dil modelleri, bu tarz yapıları birlikte kullanma yaklaşımları. Dil modeli derken, istatistiksel dil modellerinden bahsediyorum, sinirsel dil modellerinden bahsediyorum. Bunların ikisini birlikte kullanan yaklaşımlar da var. Ya da işte belki zaten sinirsel dil modeli bu tarz bilgileri biliyor, öğreniyor. Çok büyük miktarda değerler kullandığından dolayı bunlara artık hakim.
+
+77
+00:21:13,332 --> 00:21:18,372
+Diyen yaklaşımlar da var. Bunun için ekstradan bir şey yapmamıza gerek yok diyen yaklaşımlar da var.
+
+78
+00:21:19,572 --> 00:21:20,972
+Günümüze doğru geldik.
+
+79
+00:21:22,652 --> 00:21:34,932
+Şimdi, burada bu tarz bilgilerin oluşturulmasında insanlardan cümleler halinde, formlar halinde bunu aldınız diyelim ki.
+
+80
+00:21:35,700 --> 00:21:58,440
+Burada şey anlatıyorum, open mind'dan konsept nete geçişe anlatıyorum. Bunları, cümleleri, insanların cümle formuna girmiş olduğu bilgileri bilgi üçlüğüne çeviriyorlar. Bilgi üçlüğüne çevirmekten kastım şu aslında çok temelde, üçlüden kastım şu daha doğrusu.
+
+81
+00:22:02,064 --> 00:22:11,124
+Türden bir ilişki vardır. Böyle üçler. Bunlar tüm bilgilerin %90'ını oluşturuyor.
+
+82
+00:22:11,124 --> 00:22:19,084
+Yani Open Mind'de girilmiş olan cümlelere şu...
+
+83
+00:22:19,508 --> 00:22:37,988
+O MCS korpus dediğimiz şey, o cümleler korpusu. O korpusu kullanıp bir çıkarım yapılıyor. Üçler haline getiriliyor onlar belli tekniklerle. Ve konsept netin tüm bilgisinin %90'ı bu bilgi üçleri oluşturuluyor. Yani cümlelerden direkt çıkarılanlar.
+
+84
+00:22:43,604 --> 00:23:06,004
+Çıkarım yapmak. Yani çıkarım yapmak şu manada çıkarım. Mantıksal çıkarımdan bahsediyorum. Yukarıdaki information extraction, yani yukarıdaki çıkarım, şuradaki çıkarım, başka bir şey. Yani başka bir şey derken cümlelerden bilgi çıkarımı. Bu zenginleştirme aşamasıysa üçlülerden yeni üçlüler çıkartım aşaması. Bu da tüm bilgilerin yüzde onunu ifade ediyor.
+
+85
+00:23:09,647 --> 00:23:29,087
+Nasıl yapıldığından daha sonra bahsedeceğim. Üçlüden nasıl üçlü çıkartılır? Çok basit derken mantıksal kurallar hepimizin bildiği, monotonik ya da non-monotonik, resonik diye ifade edilen yaklaşımlar burada kullanılıyor. Onlara daha sonra bakacağız.
+
+86
+00:23:30,207 --> 00:23:37,167
+Yani ilk önce cümlelerden üçlüler çıkartılmış, daha sonra bu üçlüler zenginleştirilmiştir.
+
+87
+00:23:37,940 --> 00:23:44,279
+Peki bu konsept netin içerisinde, yani Open Mind'in toplanan cümlelerden,
+
+88
+00:23:44,279 --> 00:23:49,380
+Open Mind'in toplanan cümlelerden,
+
+89
+00:23:50,080 --> 00:23:54,220
+elde edilen bilgi üçlülerinin ne tür ilişkileri var?
+
+90
+00:23:55,279 --> 00:23:59,580
+Şimdi 1.6 milyon kavram üçlüsü oluşmuş en sonunda.
+
+91
+00:23:59,980 --> 00:24:03,100
+Kavram 1 ile kavram 2 arasında şu ilişki vardır.
+
+92
+00:24:03,763 --> 00:24:17,363
+Peki bu ilişki türleri neler? Bu ilişki türleri şu sol tarafta yazılı olanlar. Part of, location, sub-event, effect of, desire of, motivation of, capable of, use it for gibi ilişkiler.
+
+93
+00:24:17,363 --> 00:24:31,303
+Bu şunun için kullanılır, bu şunun bir parçasıdır, bu bir tür şudur, bunu yapmak için önce şunu yapmalısın, şu durumda şöyle bir ajan şunu ister, eğer böyle yaparsan bunun sonucu şu olur.
+
+94
+00:24:31,763 --> 00:24:47,923
+Gibi gibi bir sürü ama bir sürü derken binlerce değil. Belki buradaki en azından ilk konserde 20 tane ilişki türü var. Ve bu 20 tane ilişki türüne dair de 1.6 milyon tane kavram oluşturulmuş.
+
+95
+00:24:47,923 --> 00:24:53,623
+Burada bunun bir miktar grafiksel gösterim var. Yuvarlakların ya da elips.
+
+96
+00:24:54,195 --> 00:25:01,555
+Ya da hiçbir şey değil. Yuvarlak, mavi kapalı çizgilerin içinde olanlar kavramlarımız bizim.
+
+97
+00:25:01,555 --> 00:25:08,475
+Öyle söyleyelim. İki tane kavram da birbirine bağlayan ilişkiler de oklarla gösterilmiş.
+
+98
+00:25:08,575 --> 00:25:13,195
+Okların üstlerinde de bu ilişkilerin türleri görüyorsunuz.
+
+99
+00:25:16,175 --> 00:25:19,555
+Bununla ilgili birçok uygulama da yapılmış o zamanlar.
+
+100
+00:25:22,228 --> 00:25:45,228
+Bu büyüklükte bir veri ele geçtiği zaman bununla alakalı birçok çalışma gerçekte. Mesela kullanıcısının yazdığı e-maili incelerip içine uygun fotoğraf öneriyor. Siz bir şeyler yazıyorsunuz. Sizin yazdıklarınızdan bakıp sizin bir şekilde elinizde etiketlenmiş resimler de olabilir.
+
+101
+00:25:45,228 --> 00:25:49,048
+Ya da sistem kendisi etiketliyordur. O resimler de uygun olanlarını ekliyor mesela.
+
+102
+00:25:50,579 --> 00:26:05,079
+Ya da hikaye üretiyor. Mesela burada şey tarafından, bu Make Believe diye bir tane program var işte bu şeyi, konsept neti kullanıyor. Onun yazmış olduğu bir tane hikaye, küçük bir hikaye tabii ki.
+
+103
+00:26:07,140 --> 00:26:16,160
+Şimdi sizden istediğim şöyle bir şey. Burada şey yapabiliyorduk değil mi?
+
+104
+00:26:16,723 --> 00:26:42,623
+Bir saniye. İki örneğe ne istediğimi anlatayım. Gruplar oluşturacağız. İki ya da üç, onu birazdan ayarlarız. Hayat bilgisi toplamak. Toplanmışı iyileştirmek ve olası uygulamalar için yeni fikirler geliştirip istelemenizi istiyorum. Anlatabildim mi? Hayat bilgisi toplamak için fikirleriniz olabilir. Toplanmış olanları iyileştirmek için fikirleriniz olabilir. Ya da toplandığını varsayıp onu kullanan uygulamalar için yeni fikirler oluşturmanızı istiyorum.
+
+105
+00:26:43,443 --> 00:27:10,984
+Anlatabildim mi? Bahsettiğim gibi bu ders biraz şey olacak demiştim. Böyle interaktif yapmaya çalışacağız. Anlaşıldı mı istediğim arkadaşlar? Daha sonra da herkes bize şeyini anlatacak. Ne derler ona? Kendi bir grup sözcüsü seçersiniz. O grup sözcüsü bize şeyi anlatır. Kendi fikrinde, kendi grubunda üretilmiş olan fikirleri anlatır. Anlaşıldı mı buradaki? Ne yapabilirsin, ne olduğunu herkes kavradı.
+
+106
+00:27:11,635 --> 00:27:14,816
+Bunu toplamak için acaba neler yapabiliyoruz? Bir saniye arkadaşlar.
+
+107
+00:28:41,076 --> 00:28:54,115
+Peki. Şimdi, tabii benim şu tekrardan, bakayım nereden yapıyordu bu işi tabii. Çünkü onu bir hatırlamam lazım. Bir şeyimiz var, biliyor musun?
+
+108
+00:28:59,188 --> 00:29:09,468
+Breakout Rooms. Evet. Şimdi bakıyorum kaç kişiyiz diye. Ben çıkardım. 21 kişi. 3 ay kişilik gruplar iyi olur herhalde. Değil mi?
+
+109
+00:29:10,668 --> 00:29:18,408
+Sen otomatikli create... Bir tane diye canım. Olur mu? 7 tane üret diyeceğim.
+
+110
+00:29:20,528 --> 00:29:44,847
+Süre olarak dediğim gibi bir 15 dakika verelim aslında. Yani gruplara gideceksiniz. Herkes kendi grubun içerisinde 3'er kişi olacak odalarda. O odalarda kendi aranızda fikirlerinizi tartışacaksınız, üreteceksiniz. Bir tane grup sözcüsü edeceksiniz. 15 dakika sonra tekrardan ana kısma geldiğiniz zaman da grup sözcüsü fikirleri bize aktaracak. Anlaşıldı mı arkadaşlar?
+
+111
+00:29:47,604 --> 00:29:48,463
+Evet hocam.
+
+112
+00:29:49,104 --> 00:29:50,624
+Tamam, hadi bakalım.
+
+113
+00:29:54,548 --> 00:29:59,228
+Şu anda üçlü, üçlü, üçlü. Tamam. Open all room stick. Evet.
+
+114
+00:30:15,859 --> 00:30:22,279
+15 dakika sonra geri döneceksiniz zaten. Evet, [öğrenci], [öğrenci], [öğrenci], siz de gruplarınıza geçin.
+
+115
+00:30:32,307 --> 00:30:34,708
+[öğrenci], sesim gelmiyor mu sana?
+
+116
+00:30:36,868 --> 00:30:41,268
+Hocam geldim. Bozuldu sanırım da beni tekrar dördüncü odaya yollayabilir misiniz?
+
+117
+00:30:41,548 --> 00:30:43,807
+Ben yollayamıyorum, sen gidiyorsun zaten.
+
+118
+00:30:44,188 --> 00:30:47,188
+Davet geldi, tıkladım. Zoom, crash verdi de.
+
+119
+00:30:47,988 --> 00:30:50,448
+Allah Allah. Bir dakika.
+
+120
+00:30:52,588 --> 00:30:54,388
+Görebileceğin bir yer var mı o odaya?
+
+121
+00:30:55,588 --> 00:30:57,188
+Yok, ben de...
+
+122
+00:30:57,907 --> 00:31:23,147
+Bir saniye. Benden hatta şu an iki tane var sanırım. Evet, senin şey gitti. O yüzden seni buradan direkt oraya gönderemiyorum. Neyse, zaten sanırım dördüncü odada [öğrenci] var. Biz yan yanayız. Ben onun yanına geçeyim. Ha, öyle yapalım o zaman. Tamam, öyle çözelim. Tamamdır. Ben burada kalıyorum, diğerini atar mısın? Kal, kal. Tamam, tamam. Sıkıntı değil.
+
+123
+00:31:24,596 --> 00:31:26,215
+Görüşürüz.
+
+124
+00:46:53,684 --> 00:47:15,484
+Evet arkadaşlar, sesim giriyor mu? Geliyor hocam. Tamam. Yedi tane grubumuz oldu. Daha sonradan gelenler de oldu ama onlara yapacak bir şey yok şimdilik. Ben gelenleri görebildiğim odaları yönlendirmeye çalıştım. Neyse, herkes belli fikirler oluşturdu herhalde.
+
+125
+00:47:17,391 --> 00:47:35,532
+49 geçiyor. Bir ara verelim. Aranın dönüşünde de grupların sözcülerinden fikirleri teker teker alıp dinleyeceğiz onları. Tamam mı? Saat 10'da tekrardan devam ediyoruz. Yani 10'a kadar para veriyoruz.
+
+126
+00:47:39,532 --> 00:47:42,271
+Evet, az sonra görüşmek üzere.
+
+127
+01:00:23,699 --> 01:00:25,699
+Evet arkadaşlar, tekrardan merhaba.
+
+128
+01:00:27,199 --> 01:00:31,579
+Evet, şimdi ben şu şeyi açayım.
+
+129
+01:00:32,759 --> 01:00:36,819
+Yedi grup vardı, yedi tane grup sözcüğümüz olması lazım.
+
+130
+01:00:37,439 --> 01:00:39,979
+Grup bir, grup iki diye hatırlıyor musunuz grup isimlerinizi?
+
+131
+01:00:41,679 --> 01:00:42,919
+Bizimki dörtte.
+
+132
+01:00:45,339 --> 01:00:48,859
+Tamam. Peki, grup bir hatırlıyor mu kendini?
+
+133
+01:00:52,820 --> 01:00:54,020
+Bizdik galiba.
+
+134
+01:00:55,020 --> 01:01:01,760
+Peki, tamam. Başlayın o zaman. Ben de şu şeyi açayım.
+
+135
+01:01:02,220 --> 01:01:03,940
+Merhabalar, grup birim.
+
+136
+01:01:05,320 --> 01:01:06,240
+Sözcüsü benim.
+
+137
+01:01:06,240 --> 01:01:12,240
+Ben [öğrenci] ve [öğrenci] arkadaşımla...
+
+138
+01:01:13,172 --> 01:01:26,292
+Bilgi alışverişinde bulundum. Şöyle bir şey üzerine düşündük. Sosyal medya etkilişimleri üzerine bir veri toplama fikri ortaya atıldı. Nasıl?
+
+139
+01:01:31,552 --> 01:01:44,752
+Yani güvenilir oldu belirlenen kişilerin gönderilerine verilen reaksiyonlardan bir aslında veri toplanmasına yönelik bir fikir ortaya atıldı.
+
+140
+01:01:46,891 --> 01:01:53,483
+Toplanan veriler de belirli bir web sitesinde kim diye doğrulanmış kişiler tarafından...
+
+141
+01:01:53,684 --> 01:01:55,423
+Bu konuyu doğrulamaya sunulacak.
+
+142
+01:01:56,123 --> 01:02:06,164
+Şimdi bir dakika, toplanacak veriler nasıl toplanıyor? Orasını anlayamadım ben. Reaksiyondan kastım ne? Birisi bir şey yazacak sosyal medyada. Nasıl bir şey anlatabilir misin?
+
+143
+01:02:08,244 --> 01:02:20,043
+Yani sosyal medyada nasıl bir şey yazmış olabilir? Belirli bir konu üzerine, hayatın arkadaşı içerisindeki belirli bir konu üzerine bir şeyler yazmış olabilir.
+
+144
+01:02:20,851 --> 01:02:44,192
+Bu konu üzerinde yorumlar, mesela Twitter örneği vereceğim. Twitter'da bir gönderi yaptı diyelim. Twitter'da böyle bir yorum yaptı. Ona verilen reaksiyonlar ve yorumlar olsun yine. Bunlardan elde edilecek verilerden bir veri toplanması.
+
+145
+01:02:44,192 --> 01:02:48,311
+Nasıl bir şey yani? Orası bir somut bir örnek verebilir misin?
+
+146
+01:02:49,139 --> 01:02:52,059
+Arkadaşlarına yardımcı olabilir. Eğer beraber düşündüyseniz.
+
+147
+01:02:53,479 --> 01:03:10,359
+Tabii ki. Şöyle bir örnek verilebilir. Mesela yarın meteorolojiden bir ver alınacak. Yarın havanın açık olması bekleniyor gibi. Buna verilen reaksiyonlar gibi. Buradan bir veri toplanması gibi.
+
+148
+01:03:11,519 --> 01:03:15,439
+Yani şimdi birisi gitti, yarın kar yağacak dedi. Tamam mı?
+
+149
+01:03:15,695 --> 01:03:20,855
+Oldu mu? Mesela böyle bir tweet attı. Bu mudur? Sonra başkaları ne yapacak buna?
+
+150
+01:03:22,296 --> 01:03:28,756
+Yani yarın kar yayacaksa, yarın okullar tatil mi gibi bir yorum yapılabilir.
+
+151
+01:03:29,975 --> 01:03:33,036
+Okullar tatil mi? Diğer birisi bir şey sordu.
+
+152
+01:03:33,588 --> 01:03:34,927
+Evet. Başka?
+
+153
+01:03:35,368 --> 01:03:54,488
+Yani hocam belki de altına kar lastiğiyle ilgili de bilgi verilebilir. İşte İstanbul'da yarın kar yağışlı, sürücülerin kar lastiğini takması gerektiğiyle ilgili bir reaksiyon olabilir. Bunun için de kar yağdığında kar lastiği takılmalı gibi de yapılabilir.
+
+154
+01:03:55,795 --> 01:03:58,916
+Takmak lazım dedi başka birisi. Değil mi?
+
+155
+01:03:59,456 --> 01:04:00,175
+Aynen. Aynı grubu.
+
+156
+01:04:00,675 --> 01:04:04,355
+Atılan tweet'e yönelik reaksiyonlardan da çıkılmak.
+
+157
+01:04:04,355 --> 01:04:07,416
+Ve yorumlar çıkıyor. Tamam.
+
+158
+01:04:08,095 --> 01:04:16,076
+Buradan da işte kar yağmakla okulların tatil olması ya da kar lastiğinin takılması gerekliliğiyle alakalı bilgiler çıkartılacak diyorsunuz.
+
+159
+01:04:16,295 --> 01:04:16,536
+Tamam.
+
+160
+01:04:17,015 --> 01:04:19,095
+İlişkisel bir veri oluşturabiliyor yani bu şekilde.
+
+161
+01:04:19,755 --> 01:04:23,795
+Tamam. Ondan sonra da bu oluşturulan verileri de başka bir taraftan birileri oluşturabiliyor.
+
+162
+01:04:23,795 --> 01:04:24,475
+Oylayacak, öyle mi?
+
+163
+01:04:24,875 --> 01:04:25,735
+Evet, evet, aynen.
+
+164
+01:04:26,235 --> 01:04:30,076
+Anladım, anladım. Peki. Teşekkürler grup bir.
+
+165
+01:04:31,735 --> 01:04:32,975
+Grup ikiyi dinleyelim.
+
+166
+01:04:34,356 --> 01:05:01,396
+Merhaba hocam, grup 2'nin sözcüsü benim. [öğrenci] ve [öğrenci] ile grup arkadaşı. Onlar da eklemek istersek de. Hocam biraz tesadüf mi oldu? Biz de aynı grup 1 gibi düşünüyorduk. Yani bilgileri sosyal medyadan, özellikle Twitter'dan alıp işlemeyi düşünüyorduk. Ben de aslında o da biraz daha tesadüf. Ben de hava durumu üzerinden bir tahmin söyleyeceğim. Önemi mesela bugün ben biraz duygu analizi kısmından ilerlemek isteyecektim aslında hocam. Biraz farklı olarak.
+
+167
+01:05:02,356 --> 01:05:06,796
+Sarı [öğrenci]'tu. Bugün bir şey yapasım yok diyor bir insan. Bir tweet atıyor.
+
+168
+01:05:07,756 --> 01:05:09,636
+Mesela hava kapalı diyor birisi.
+
+169
+01:05:09,976 --> 01:05:13,396
+Hava kapalı diyor. Bir şey yapasım yok diyor.
+
+170
+01:05:15,188 --> 01:05:36,307
+Bu tweet Ön'in çok paylaşılıyor. Veya reklam yoluyla da başka insanlara da gösteriliyor bu tweet. Altına baya bir yorum yapılıyor. Bazı insanlar tam tersi bir şekilde havanın kapalı olmasını iş anlamında daha fazla, nasıl diyeyim, olumlu anlamda daha fazla etkileyebiliyorken bazı insanlar negatif anlamda etkileyebiliyor.
+
+171
+01:05:36,307 --> 01:05:40,807
+Ve bunun sonucunda her iki insanda da farklı eylemler oluşuyor.
+
+172
+01:05:43,188 --> 01:06:03,528
+Şimdi mesela havanın başka bir günü yani yarın ve bir sonraki gün açık bir hava olduğunda durumlarını şu işte çoğunluk insan şu hava durumunda şu duygu durumundadır ve şu şu şu eylemleri yapar gibi bir varsayım yapabilir miyiz?
+
+173
+01:06:03,528 --> 01:06:09,408
+Yani şöyle bir şey mi oluyor? Hani insanların yüzde x'i bu durumda.
+
+174
+01:06:10,228 --> 01:06:28,876
+Şu duygu durumunda olur ve şu olasılıkla şu eylemleri yapar. Öncelikle kapalı hava durumunda çoğu %60 insan daha karamsar oluyor ve evinde kalıyor gibi bir eylem. Açık hava olduğunda işte...
+
+175
+01:06:29,172 --> 01:06:48,652
+Aslında burada gün de önemli. Hangi gün attığı önemli. Hafta sonası bu tweette ve hava güzel olsa. Örneğin sahilde yürümeye gider gibi bir çıkarım da yapılabilir. Biraz hafta içi atılan günün de önemi var burada tweetin gibi bir şey söylüyorum. Arkadaşlarımdan eklemek istedikleri bir şey varsa.
+
+176
+01:06:51,891 --> 01:06:52,831
+Var mı arkadaşlar?
+
+177
+01:06:58,003 --> 01:07:03,943
+Peki, teşekkürler grup 2. Grup 3'ü dinleyelim.
+
+178
+01:07:11,860 --> 01:07:22,079
+Sesim geliyor mu hocam? Geliyor. Merhaba hocam. Biz sözcü belirlemedik de arkadaşlar da isterse beraber yapabiliriz. Tamam.
+
+179
+01:07:23,539 --> 01:07:31,420
+Şimdi şöyle bir şey hocam, biz biraz daha farklı, belki algıladık da şöyle bir çalışma yaptık.
+
+180
+01:07:32,211 --> 01:07:47,992
+Daha baştaki slaytlardaki gibi bir hayat bilgisi olarak belli cümleler seçtik. Kendimiz aslında son kullanıcı yerine kendimizi koyup birkaç cümle belirleyip basit bir çıkarın ve iyileştirme denemesi yaptık diyelim.
+
+181
+01:07:47,992 --> 01:07:48,592
+Tamam.
+
+182
+01:07:48,891 --> 01:07:56,672
+Format farklı herhalde bizdeki. Şöyle mesela hayat bilgisi olarak şöyle dedik. İnsanlar hastalanır.
+
+183
+01:07:57,652 --> 01:08:13,012
+İnsanlar hastaneye gider, hastanede doktorlar çalışır, insanlar doktora gider, insanlar hastalanınca ilaç kullanır gibi temel hayat bilgisi örnekleri bilir.
+
+184
+01:08:13,012 --> 01:08:19,012
+Ve mesela bunlardan çıkarım olarak da bir insan hastanede ise hastadır.
+
+185
+01:08:20,627 --> 01:08:41,947
+Bir insan ilaç kullanıyorsa doktor vermiştir gibi ve türevleri çıkarımlar mesela yapmalıdır. Ama iyileştirme olarak da bir önceki çıkarımda mesela bir insan hastanedeyse hastadır dedik ama iyileştirmesi de mesela hastanedeki insan doktorsa hasta olmayabilir.
+
+186
+01:08:42,547 --> 01:09:02,027
+gibi bir şey, mekan ve insan arasında. Bunlarda da hocam sizin slide'lardaki gibi mesela ilişki türlerinden, mesela nerede çalışır sorusuna doktor hastanede çalışır. Sadece insan olarak birçok yerde çalışır.
+
+187
+01:09:02,515 --> 01:09:12,576
+Mesela gene bu konuyla ilgili bir gereklilik olursa bir doktor için ne gerekir? Okumak gerekir, çok çalışmak gerekir.
+
+188
+01:09:12,576 --> 01:09:27,515
+Veya mesela gene bir diğer akademi için akademisyen üniversitedir gibi. Bununla ilgili de program olarak da şöyle olabilir, tasarlanan bir program.
+
+189
+01:09:29,043 --> 01:09:46,963
+Kişilerin bu hayat bilgisi verdikten sonra veya başkalarının verdiği hayat bilgileriyle ilgili, içeriklerle ilgili, kombobaks veya daha serbest olabilir. O kapsamdaki bilgi girişleri yapılabilir.
+
+190
+01:09:48,148 --> 01:10:01,608
+Yani hastanede doktorlar çalışır dediği zaman onunla ilgili veri toplamak için başka kişilerin yan bilgiler girmesi için bir program tasarlanabilir.
+
+191
+01:10:01,608 --> 01:10:09,807
+Yani bu dediğim gibi sınırlandırılarak bir seçim, atentikleri sınırlayarak da olabilir veya geniş.
+
+192
+01:10:10,144 --> 01:10:21,283
+Daha geniş kapsamlı ama sonrası tabi daha zahmetli bir düzenleme ile iyileştirme yapılabilir diye. Ben ön olarak söyledim ki arkadaşlar da.
+
+193
+01:10:22,739 --> 01:10:37,000
+Yani farklı insanlar kendilere hayat bilgileri girecekler. Onu diyorsun ilk önce. Onun arkasından onların arasında belli çıkarımlar yapan bir mekanizma oluşacak. Öyle mi?
+
+194
+01:10:37,299 --> 01:10:39,520
+Evet hocam. Olabiliyor yani. Böyle bir şey.
+
+195
+01:10:50,739 --> 01:10:53,239
+Kural var.
+
+196
+01:10:55,679 --> 01:10:56,359
+Çıkarım.
+
+197
+01:10:57,799 --> 01:10:59,840
+Düzeltme gibisinden bir şey olacak aslında.
+
+198
+01:11:00,479 --> 01:11:00,799
+Doğru mu?
+
+199
+01:11:01,199 --> 01:11:01,359
+Evet.
+
+200
+01:11:01,959 --> 01:11:02,359
+Peki.
+
+201
+01:11:03,719 --> 01:11:06,139
+Var mı gruptaki başka arkadaşların eklemek istediği bir şey?
+
+202
+01:11:08,219 --> 01:11:09,639
+Benim yok hocam.
+
+203
+01:11:10,459 --> 01:11:15,739
+Biz biraz konuya biraz daha farklı bir şekilde yöneldiğimizden dolayı biraz daha...
+
+204
+01:11:16,659 --> 01:11:26,719
+Genel bir tanım oldu. Eklemek istedim bu kadar. Peki, teşekkürler. Grup 4'ü dinleyelim.
+
+205
+01:11:28,079 --> 01:11:41,399
+Hocam merhaba, sesim geliyor mu? Geliyor. Ben [öğrenci], bir de [öğrenci] gruptuk. Her grup bir tane mi şey söylüyor? Varsa birden fazla söyleyebilirsiniz.
+
+206
+01:11:42,003 --> 01:12:03,543
+Tamamdır hocam. Bizim oluşturma ve iyileştirme için şöyle bir tane maddemiz var. Kullanıcıların sağladığı hayat bilgisi verisini diğer kullanıcıların teyit edip, yani upvote edip, download etmesi. Bu hem var olan veriyi iyileştirmek için hem de yeni oluşturulan bir hayat bilgisi veri tabanı.
+
+207
+01:12:04,243 --> 01:12:28,823
+İçin düzgün bir şekilde oluşturulabilmesi için bir mekanizma olarak düşünüldük. Sonuçta hayat bilgisi dediğimiz, hani common sense, topluluğun kabul edip etmediği şeyler olduğu için bu şekilde bir teyit sistemiyle veritabanı oluşumu ya da var olan veritabanın düzeltilmesi, iyileştirilmesi şeklinde bir fikir düşündük.
+
+208
+01:12:31,444 --> 01:12:52,904
+Uygulama olarak da elimizin güvenilir bir tane hayat bilgisi veritabanı olduğunu varsayarsak, X kişinin, mesela geçen dersteki Ali'nin kurduğu cümlenin yalan olup olmadığının.
+
+209
+01:12:53,524 --> 01:13:06,524
+Tespiti olabilir diye düşündük. Mesela Ali okula gitti. Ben ders dinlerken televizyon izledim dedi. Eğer hayat bilgisi veritabanında da...
+
+210
+01:13:06,975 --> 01:13:14,095
+Okulda televizyon yoktur bilgisi varsa, Ali'nin yalan söylediğini çıkarabiliyoruz. Bu şekilde bir çıkarım yapabiliriz.
+
+211
+01:13:14,495 --> 01:13:19,735
+Aslında yalan ya da tutaksızlık tespiti gibi bir şey aslında değil mi?
+
+212
+01:13:19,735 --> 01:13:29,915
+Aynen öyle hocam. Uygulama konusunda bir fikrimiz daha var. Yine hayat bilgisi veritabanının güvenilir olduğunu varsayıyoruz.
+
+213
+01:13:34,003 --> 01:13:58,903
+Yani yararlı ya da zararlı olarak sınıflandırılabilir eğer bir eylemse bunu o şekilde sınıflandırmak. Örneğin Ali'nin 5. kattan aşağı atlaması Ali için zararlı bir eylemdir. Bilgisayara Ali ben 5. kattan aşağı atlayacağım dediğinde bu modele. Modelin bize bu zararlı bir eylemdir çıktısını vermesi bir uygulama olarak düşünebilir diye düşündük.
+
+214
+01:14:00,435 --> 01:14:16,216
+Tamam. Aslında yalan tutarsız tespitinin yanında bir de şey oluyor. Yararlı, zararlı tespiti. Öyle değil mi?
+
+215
+01:14:16,216 --> 01:14:23,956
+Evet. Bunun haricinde bir fikir daha var da o da net olmadığı için.
+
+216
+01:14:24,819 --> 01:14:31,180
+Pas geçelim. Peki, peki. Teşekkürler grup dört. Evet, grup beş.
+
+217
+01:14:34,079 --> 01:14:42,219
+Merhaba hocam. Merhaba. Merhaba arkadaşlar. Biz [öğrenci] ve [öğrenci]'la birlikte aynı gruptaydık.
+
+218
+01:14:42,219 --> 01:14:50,859
+Hocam, birden fazla fikir ürettik. Üzerinde çok fazla derinlemesine konuşamadık ama şöyle.
+
+219
+01:14:52,372 --> 01:15:20,372
+Birincisi uygun olanlardan şu anda bahsedeceğim. Sponsorlu reklamlar üzerine bir düşündük. Bu sosyal medya uygulamaları üzerinden bize ücret verilmiş ve sponsorlu bir şekilde dönen reklamların, bunlar kullanıcılar tarafında tavsiye niteliğinde görülerek, örneğin kim neyi aldı ve daha sonrasında neyi alabilir diye düşünürsek, atıyorum telefon satın alan, kılıfta satın alan.
+
+220
+01:15:20,372 --> 01:15:28,852
+gibi kullanıcıya veya firmalara bu şekilde geri dönüş yapabilir diye, böyle bir çıkarım yapabilir diye düşündük.
+
+221
+01:15:29,811 --> 01:15:31,672
+Bir dakika, nereden çıkartacak onu?
+
+222
+01:15:32,832 --> 01:15:35,552
+Hocam sponsorlu reklamlardan alacağız.
+
+223
+01:15:36,172 --> 01:15:41,891
+Tamam, sponsorlu reklamlar var. Tamam. Yani bir kişi gösteren bir sponsorlu reklam var. Tamam. Sonra?
+
+224
+01:15:42,112 --> 01:15:42,311
+Evet.
+
+225
+01:15:42,707 --> 01:15:50,587
+Sonrasında da makineyi şöyle düşündürtüyoruz. Telefon satın alan bir kişi kılıf da satın alır. O yüzden kılıf reklamı da döndürsün.
+
+226
+01:15:55,188 --> 01:16:04,007
+Bir dakika, yani sponsorlu reklam üreticileri için aslında sistemi kullanmaktan mı bahsediyorsun?
+
+227
+01:16:04,627 --> 01:16:09,907
+Orasını tam şey yapamadım. Yani hani reklam çıkartmak için, reklam önerisi öyle mi?
+
+228
+01:16:10,108 --> 01:16:19,547
+Reklam önerisi evet hocam. Spontorlu reklamlar yine elimizdeki verilerimiz ve bunun üzerinden de yeni reklam tavsiyeleri ürettirmeye çalışıyoruz.
+
+229
+01:16:19,707 --> 01:16:25,087
+Bu da şundan geliyor. Atıyorum telefon sıkmaların bir kişi kılıfta alır gibi düşündük.
+
+230
+01:16:25,587 --> 01:16:34,567
+Reklam önerisi dediğimizde, elimizde belli reklamların önerileri var. Cep telefonu reklamı var mesela.
+
+231
+01:16:35,072 --> 01:17:03,072
+Onu aslında bu veri tabanını bir şekilde, bu ayak bilgisi veri tabanı kullanarak güncellemek gibi bir şey oluyor aslında. Şu reklamı yanına bir de şu reklamı döner falan gibi bir şey değil mi? Doğru mu? Evet, evet doğru hocam. Siz daha güzel düzelttiniz. Hocam ikincisi de şöyle, hikayelerden ve romanlardan gibi bunların pdf'leri olabilir. Elimizdeki veri tabanımız bu. Bunlar üzerinden içerisinde.
+
+232
+01:17:03,072 --> 01:17:20,731
+Kişi veya yer isimlerinden hangi ülkeye ait olduğu çıkarımı yapılabilir. Böylece bir ek veri tabanı daha oluşturulabilir. Bu yapay zeka vesaire uygulamalarda elimizde farklı bir veri olmuş olabilir diye düşündük. Bu da yine bir çıkarım olur diye.
+
+233
+01:17:24,787 --> 01:17:35,487
+Hikaye ve romanda geçen yer ismi veya kişi isimleri o romanın ve hikayenin geçtiği lokasyona göre ülke tahmini yapabilir diye düşündük.
+
+234
+01:17:35,587 --> 01:17:37,967
+Hani bu isimler şu hikaye aittir diye.
+
+235
+01:17:38,167 --> 01:17:39,587
+Tamam, bunu sonra nasıl kullanacak?
+
+236
+01:17:41,587 --> 01:17:47,127
+Bunu yine elimizde ekstra bir veri tabanı oluşturmuş oluyoruz aslında.
+
+237
+01:17:47,287 --> 01:17:51,707
+Bunu da yine yapay zeka uygulamalarında eğitim için kullanılabilir diye düşündük.
+
+238
+01:17:53,811 --> 01:18:03,131
+Bir dakika, bir tane bir roman var. O romanın nerede geçtiği ya da nerelerde geçtiği gibi bir şey çıkartıyorsunuz. Diyorsunuz ki bu roman Fransa'da geçiyor, Paris'te geçiyor mesela.
+
+239
+01:18:04,131 --> 01:18:07,391
+Ya da Şabat Şabat'a geçiyor. Tamam, bunu buldunuz diyelim ki.
+
+240
+01:18:07,391 --> 01:18:14,752
+Ya da geçen kişi isimlerini düşünelim mesela. Bu isimler şu ülkeye aittir diye bir çıkarım yapabiliyoruz.
+
+241
+01:18:14,771 --> 01:18:15,572
+Buldunuz, sonra?
+
+242
+01:18:17,432 --> 01:18:21,112
+Bu da elimizde yeni bir veritabanı oluşturmuş oluyor aslında.
+
+243
+01:18:23,188 --> 01:18:27,948
+Yani o veritabanı şöyle bir şey oluyor. Doğru mu anlıyorsun? Şu roman şurada geçiyor, şu roman şurada geçiyor.
+
+244
+01:18:30,288 --> 01:18:36,047
+Hayır, şu isimler şu ülkeye aittir diye aslında çıkarım yapıyoruz. Bunun üzerinden oluşturmuş oluyorum.
+
+245
+01:18:37,827 --> 01:18:42,648
+Yani yer isimlerinden nerede geçtiğini çıkartıyorsunuz ilk önce.
+
+246
+01:18:43,327 --> 01:18:48,587
+Ve kullanılan özel isimlerden de hangi ülkeye ait olduğunun çıkarımını yapıyorum.
+
+247
+01:18:49,332 --> 01:18:52,952
+Var olan bilgiden yeni bir çıkarım yapmaya çalıştık.
+
+248
+01:18:57,076 --> 01:19:04,155
+Ben tam kavrayamadım ya. Yani şunu demeye çalışıyorum. Grup arkadaşlarım da dahil olabilir isterler. Yanlış aktardıysam.
+
+249
+01:19:04,155 --> 01:19:13,076
+Yani şöyle bir şey. Ahmet diye bir şey geçti mesela. Sallıyorum. Bu ne bileyim Mısırlı mesela. Sallıyorum. Tamam mı? Mısır'da kullanılan bir isim, Türkiye'de kullanılan bir isim mesai de.
+
+250
+01:19:13,556 --> 01:19:22,556
+Hani şimdi bu hikaye için böyle bir bilgi elde edebilirsin. Doğru. Onu anladım. Sonra hani bunu daha sonra nasıl kullanacaksın?
+
+251
+01:19:24,372 --> 01:19:30,992
+Çünkü bunu kullanmak için bir veritabanı kullanıyorsun anladığım kadarıyla. Yani bir hayat bilgisi veritabanı kullanıyorsun. Öyle mi?
+
+252
+01:19:31,772 --> 01:19:34,212
+Evet, hikaye ve romanlardan elde ediyoruz.
+
+253
+01:19:35,764 --> 01:19:51,203
+Hayır, şöyle. Yani hikaye ve romanlardan şunu mu çıkartıyoruz? Hani hikayenin içerisinde hem Ahmet yapıyor, yani geçiyor. Hem Mısır'da geçtiği geçiyor. Vesaire vesaire. O zaman hani Ahmet isimleri Mısır'a özgü bir isimdir falan gibisinden bir bilgi mi çıkartıyoruz romandan?
+
+254
+01:19:51,744 --> 01:19:53,283
+Evet hocam. Evet.
+
+255
+01:19:53,283 --> 01:20:03,244
+Bu yani hani veri tabanını kullanıp Ahmet'in Mısır'da özgü bir şey olduğunu çıkartmıyorsun aslında. Yani.
+
+256
+01:20:03,764 --> 01:20:05,443
+Evet, ilk söylediğiniz şekilde hocam.
+
+257
+01:20:05,863 --> 01:20:16,184
+Yani romanın kendisini kullanıp işte şu isimler, şu yerler, şuralarda geçiyorlar mesela. Hani işte burası buradadır, burası buradadır falan. Doğru mu?
+
+258
+01:20:16,344 --> 01:20:17,404
+Evet, doğru hocam.
+
+259
+01:20:17,404 --> 01:20:27,463
+Anladım. Yani kitaptan diyelim, kitaptan kişi, yer bilgilerini çıkarır mı aslında? Doğru mu?
+
+260
+01:20:28,304 --> 01:20:28,584
+Evet.
+
+261
+01:20:29,747 --> 01:20:30,967
+Tamam. Peki.
+
+262
+01:20:30,967 --> 01:20:52,707
+Hocam bir üçüncüsü var. O da şöyle. Yine firmaların kullandığı ham maddeden yola çıkarak firmalar ne ürün alıyor, kullanıyor ve bunun tedarik zincirine bir entegrasyonu için düşündük. Bu firmalar atıyorum pamuk ham maddesini kullanıyorsa pamuktan kıyafet yapar çıkarımını elde edebiliriz.
+
+263
+01:20:54,068 --> 01:21:04,548
+Bu da yine ham maddenin nereden alınması ve hangi sektörle bağlantılı olacağı üzerine bir uygulama olabilir gibi düşündük.
+
+264
+01:21:04,628 --> 01:21:11,188
+Yani böyle konular çıktı aklımızdan ancak dediğim gibi çok fazla derinlemesine gidemedik.
+
+265
+01:21:11,587 --> 01:21:14,048
+Birazcık böyle şey başlıklar halinde kaldık.
+
+266
+01:21:14,068 --> 01:21:16,788
+Peki tamam teşekkürler grup 5.
+
+267
+01:21:17,988 --> 01:21:18,988
+Ben de teşekkür ederim.
+
+268
+01:21:18,988 --> 01:21:20,427
+Tamam grup 6.
+
+269
+01:21:24,819 --> 01:21:30,399
+Merhaba hocam. Ben [öğrenci] ve [öğrenci] Temin Hoca ile birlikte gruptaydım.
+
+270
+01:21:32,627 --> 01:22:00,608
+Belli kalıplar belirleyerek, regex ile onları çıkarıp belli bir frekansın üzerindeki bilgileri doğru olarak kabul etmeyi düşündük. Kavramlarımız olacak ve onların arasında ilişkiler olacak yani temelde. Ama bu ilişkiler daha kapsamlı olacak. Mesela işte XY'de bulunur, XY'yi kurduğu, XY'nin yazarı gibi bizim aralarında da farklı kelimede müsaitlik olacak şekilde, onları almayacak şekilde.
+
+271
+01:22:00,627 --> 01:22:19,307
+Sonra bu elde ettiğimiz veri tabanıyla kullanım açısından iki kullanımımız olabilir dedik. Bir, dil modelinin hayat bilgisini arttırabilecek şekilde belki farklı görevlere etkisini gösterebilir kavramları vereceğiz ve aralarındaki ilişkiyi tahmin etmesini söyleyeceğiz.
+
+272
+01:22:28,627 --> 01:22:32,087
+Mesela Bill Gates ve Microsoft olacak kurdu.
+
+273
+01:22:32,511 --> 01:23:00,511
+Veya kurmak ilişkisini tahmin edecek. İkincisi olarak da veri arttırımı için kullanılabilir. Yani bir cümle var elimizde. Belli bir kavram var. Ya o kavramı tamamen kaldırıp diğer kavramla onun arasındaki ilişkiyi kullanarak onun yerine kullanacağız. Ya da ilişkiyi ekleyerek olacak. Mesela Microsoft geçiyor bir cümlede. Bilgi et tarafından kurulan Microsoft da olabilir. Ya da bilgi et tarafından kurulan şirket şeklinde de olabilir.
+
+274
+01:23:00,511 --> 01:23:08,211
+Veya bilgisi tarafından kurulan diye Microsoft yerine başka bir şey yazılabilir. Bu ikiyi kullanıyorum. Uygulama olarak düşünüyorum.
+
+275
+01:23:08,211 --> 01:23:12,871
+Anladım. Peki. Teşekkürler. Grup 6. Grup 7.
+
+276
+01:23:19,091 --> 01:23:45,451
+Merhaba hocam. Merhaba. Onda da ben sözcü olmuştum. [öğrenci], [öğrenci] ve [öğrenci] ile beraber düşündük. Tamam. Bizim düşündüğümüz de şey üzerineydi. İnsanlara bildiklerini söyle dediğinde aklına bir anda birçok şey gelmeyebilir ama bir görsel dataset oluşturup işte çok farklı yerlerden alınmış görsellerden oluşan bir dataset oluşturduğumuzda ve fotoğrafların insanları gösterip
+
+277
+01:23:45,652 --> 01:23:51,891
+Bu fotoğrafa baktığında ne görüyorsun gibi bir soru sorulabilir ve bu fotoğrafın altındaki yorumlar alınabilir.
+
+278
+01:23:52,111 --> 01:24:01,311
+Mesela iki tane çocuğun yan yana dikildiği fotoğrafa bakıp, işte çocuğun tokası kırmızı renktidir dediğimizde oradan bir teçhane yapabiliriz.
+
+279
+01:24:01,311 --> 01:24:12,371
+Çocuklar saçlarına toka takar ve tokalar kırmızı olabilir mesela. Bu bilgiyi bir insana hadi bildiklerini anlat dediğinde söylemesini beklemeyiz ama fotoğrafa baktığında aklına gelebilir.
+
+280
+01:24:12,948 --> 01:24:17,587
+Böylelikle aslında bilgiyi dağarcığımızı genişletmiş olabiliriz.
+
+281
+01:24:18,128 --> 01:24:23,648
+Anladım yani. Rastgele fotoğraflar gösterelim insanlara. O fotoğraflar hakkında konuşsunlar aslında.
+
+282
+01:24:24,268 --> 01:24:26,048
+Ve bu şekilde biz verileri toplayalım.
+
+283
+01:24:26,927 --> 01:24:32,228
+Yoksa hani ne biliyorsan söyle dediğinde sınırlı kalabilirler diyorsun.
+
+284
+01:24:32,347 --> 01:24:34,007
+Evet, sonra fotoğrafları kullanmayacağız.
+
+285
+01:24:34,868 --> 01:24:36,247
+Anladım. Peki.
+
+286
+01:24:37,247 --> 01:24:37,528
+Evet.
+
+287
+01:24:39,347 --> 01:24:41,087
+Teşekkürler. Başka var mı?
+
+288
+01:24:46,676 --> 01:25:03,776
+Bu kadardı bizim de. Tamamdır. Peki. Çok teşekkürler Grup 7. Evet arkadaşlar, Grup 7 grup çeşitli fikir üreti. Hepinize teşekkürler. Böyle aktiviteler arada sırada yapacağız. Ümit ediyorum. Sizin de hoşunuza gider. Çetten birisi bir şeyler yazmış ama.
+
+289
+01:25:08,500 --> 01:25:19,500
+Tamam geçelim. Şimdi devam edelim. Şimdi bu...
+
+290
+01:25:23,412 --> 01:25:35,292
+Open Mind'tan sonra yine büyük girişim olarak ifade edebileceğimiz NEL var. NEL, Never Ending Language Learning diye geçiyor.
+
+291
+01:25:36,051 --> 01:25:41,912
+2010 yılında çalışmaya başlayan, web sayfalar üzerine iteratif olarak çalışan, yarı otomatik, sürekli ilişki yönetilen bir sistem.
+
+292
+01:25:43,060 --> 01:26:06,840
+İçinde çeşitli teknikler kullanıyor. Morfolojik şablonlar var. Eşkemel kodlarıyla alakalı şeyler var. Metinlerin direkt kendi şablonları var. Başlangıçta şöyle bir şey yapılıyor bunda. Her ilişki türü için doğrulu bildiği kavram ikilleri veriliyor. Yani şununla şunun arasında şu ilişki vardır, şununla şunun arasında şu ilişki vardır gibisinden bu bilgiler veriliyor sisteme.
+
+293
+01:26:09,235 --> 01:26:30,796
+Bilgileri, yani ona verilmiş olan bilgileri kullanarak şablonlar üretiyor. Yani diyor ki işte şu ilişkinliği türünü belirlemek için şöyle şablonlar kullanılabilir diyor. Daha sonra bu şablonları buluyor. Sonra bu şablonları kullanıp bu şablonların yeni kavram ikileri buluyor. Bununla bunun arasında bu ilişki vardır. Yeni veri tabanını güncelliyor.
+
+294
+01:26:31,412 --> 01:26:59,172
+Bu yeni veri tabanıyla da tekrar yeniden şablonlar yapıyor. Bu yeni şablonlarla tekrardan yeni veriler elde ediyor. Bu şekilde bu iteratif olarak iteratif diye ifade ettiğim şey bu. Dolayısıyla bir web sayfasının üzerinden birinci geçişiyle üçüncü, beşinci geçişi arasında o web sayfasına farklı bilgiler çıkartabiliyor. Çünkü ne bileyim bazı şablonlar ilk geçişinde elinde yoktu mesela.
+
+295
+01:26:59,412 --> 01:27:06,532
+Ama zaman içerisinde şablon veri tabanı genişledikçe o aynı web sayfasının içerisinden çok daha farklı şeyler elde edebiliyor.
+
+296
+01:27:06,791 --> 01:27:10,271
+O yüzden iteratif manada dediğim şey bu nokta. Burası.
+
+297
+01:27:12,072 --> 01:27:16,652
+Şimdi mesela buradan ne yazmışım? Pardon.
+
+298
+01:27:19,971 --> 01:27:25,332
+Üreten şablonların bunların ilişkilerinin doğrultuları keskin bir şekilde düştüğünü gören tasarımcılar.
+
+299
+01:27:27,252 --> 01:27:36,412
+Bunu çalıştırmışlar, bu mekanizmayı. Ama hani üretilen ilişkinin doğrulukları bayağı bir düşmeye başlamış.
+
+300
+01:27:36,815 --> 01:28:04,796
+Bu noktada yani şununla şununla arasında şöyle bir ilişki var. Buna dair bir ama üretilen şeyler yani sistemden gelen şeyler kötüleşmeye başladı. Bunu düzeltmek için de böyle kısıtlar tanımlamaya başlamış. Kısıtlardan kastığımız ne demek? Yani mesela bu nerede yapılır gibisinden bir ilişki varsa elinizde yani şu kavramla şu kavram arasında bu nerede yapılır ilişkisi varsa bunun için şey olması lazım. İlkinin bir eylem, ikincisinin ise bir mekan olması kısıtını.
+
+301
+01:28:04,815 --> 01:28:26,855
+Bu konuları koymuşlar işin içerisinde. Bir şeyin mekan mı, eylem mi olduğunu belirleyen kuralları da tabii ki tanımlamaları gerekiyor. O zaman anca veri tabanına dahil etmişler mesela o bulunan ilişki. Bu bayağı bir şey yapmış. Medel ona başarıyı yükseltmiş. Ayrıca şey var, bu kısaları uyan uymayan kavramatilerinin sayılarını kullanarak şablonlara güvenlik hesapları yapmışlar.
+
+302
+01:28:28,532 --> 01:28:47,452
+En azından veri kümesi büyümeye devam ediyor çünkü ama başarının çok keskin bir şekilde düşmesi engel. Burada herhangi bir temel, şu ana kadar anlattığım bir sümde herhangi bir insan müdahalesi çok temelde yok. Ama şöyle bir kısım var, şu şeyde fark ettiyseniz buraya yarı otomatik diye bir şey yazdım. Yarı otomatikten kasıt şu.
+
+303
+01:28:47,904 --> 01:29:07,712
+Veri tabanının başında duran kişiden her gün bir yarım saat civarında yeni üretilen şablonları bir gözden geçirmeleri gerekiyormuş. Eğer ki bu gözden geçirmeyi yapmazlarsa sistem hiç olmadık yerlere doğru sapabiliyormuş. Öyle durumlar olabiliyormuş. Çünkü hani bir şekilde şablon...
+
+304
+01:29:07,712 --> 01:29:25,492
+Bunları kendisi buluyor. Bu şablonlar ne kadar doğrular değiller. Bu şablonların üzerinde bir insan müdahalesinin sistemi oldukça diri tuttuğu, iyi tuttuğu öyle söyleyeyim. Hani öyle bir şeyi varmış. Mekanizması varmış. Burada şey var, onun bir sayfası var. Hala da açık yanlış hatırlamıyorsam.
+
+305
+01:29:26,351 --> 01:29:47,112
+Burada şeyler var. Şunun arasında şöyle bir ilişki var. Buradaki ize bir ilişki türü. Bu altı çizili olan şeylerde bizim kavramlar. 2012'de mesela 5126. iterasyonda öğrenilmiş bu. Burada bazı insanlardan şey de alabiliyor. Arı yüzde doğru bir şey, yanlış bir şey gibisinden bir şeyler de alabiliyor.
+
+306
+01:29:47,796 --> 01:29:59,956
+Burada belli kategoriler var. İşte İze ile bağlantılı kategoriler. Bu kategorilerin altında şunların her biri, bunun birer şeyi. El Nası diye bir film var, Biof diye bir film var.
+
+307
+01:30:00,000 --> 01:30:20,899
+Bunlar şeyler. Mühendisliği kategoriler var. Bunları da insanlar şeyler yapıyor. Şurada seed diye yazan şey, demin şey demiştim ya, sisteme en başta şununla şunun arasında şu tür bir ilişki vardır diye söyleniyor. Daha sonra oradan iş şablonlarını buluyor.
+
+308
+01:30:21,264 --> 01:30:33,264
+Oradaki ilk verilen şeylerden biri olduğunu söylüyor aslında. Aliens, bir veri verilmiş sisteme.
+
+309
+01:30:33,264 --> 01:30:41,264
+Paris'te bir Amerikalı, bu da yine bir film olarak verilmiş sisteme ama mesela bu B.O.Wolf'u kendisi bulmuş.
+
+310
+01:30:41,264 --> 01:30:47,264
+161. iterasyonda. Verilenler var, verilenlerden kendilerinin bulutları var vesaire.
+
+311
+01:30:48,787 --> 01:31:09,787
+Şimdi işte 2010'dan bugüne kadar ki bugün diye ifade edilen kısım orada 2012-2013 civarında onu söyleyeyim. 50 milyon aday ilişkin 2 sene içerisinde epey bir şey var. Bunların 1.8 milyonunda güvenildiği epey bir yüksek olduğunu ifade ediyorlardı. Bunun işte Twitter'ı vesaire de vardı. Ama şey ne der ona dediğim gibi.
+
+312
+01:31:10,644 --> 01:31:19,104
+Web sayfalarının içindeki metinler ve orada bir sürü şablon pürleri var. Onları kullanarak ilerliyor.
+
+313
+01:31:19,844 --> 01:31:28,264
+Tabii burada şey kısmı önemli. Bu güvenirlik yani bir şablonun güvenilir olduğu ya da bir ilişkinin güvenilir olduğunu hesaplamayışı var.
+
+314
+01:31:28,264 --> 01:31:32,844
+Yani şimdi şurada şöyle bir laf etti bakın. Bunların 1.8 milyonun güvenilirliği yüksek.
+
+315
+01:31:33,332 --> 01:31:57,252
+Yani buradaki 1.8 milyon dediğimiz şey ilişkiler. Yani şununla şunun arasında şutur bir ilişki var. Böyle bir üçlü. 50 milyon tane varmış. Bunların 1.8'inki yüksekmiş güvenilir. Peki o güvenilini nasıl ölçüyor? Birincisi şu, şablonların güvenirliği aslında bir ölçülmesi gereken kısımlarla mesela ürettiği ikileri doğruluk oranı.
+
+316
+01:31:57,536 --> 01:32:22,775
+Yani o şablondan üretilen ikiller ne kadar doğrularsa o şablon o kadar doğru bir şeydir. İkincisi peki bir ilişkinin güvenilir nasıl bir şey olacak? Yani üretildiği ikilerin doğruluğu konu o zaman ikillerin ilişkisine ihtiyacı var. Üretildiği şablonun güvenilene bağlı bu. Hani tavuk yumurta hikayesi başka. Kaç farklı şablondan üretildi? Mesela aynı ilişkiyi siz birden fazla şablon kullanarak ürettiyseniz o zaman bu.
+
+317
+01:32:23,184 --> 01:32:36,644
+Daha doğru bir ilişki olma olasılığı yüksektir. Başka bir yer var. Kullanıcı geri beslemeleri var. Yani kullanıcılar ilişkilere ne yapıyorlar? Belli puanlar veriyorlar ve bunlar da kullanarak ilişkilerin güvenlikleri hesaplanıyor.
+
+318
+01:32:37,268 --> 01:32:51,268
+Mesela burada şablon şablon diye bir laf edip duruyoruz. Şablon nasıl bir şey mesela? Metin şablon diye ifade edilen şey, regex değil de metin şablon. Mesela şuraya baktığımızda bir tür x olan y mesela. Böyle bir şey, bir şablon.
+
+319
+01:32:51,796 --> 01:33:11,536
+Eğer böyle bir şey geçiyorsa, o zaman git böyle bir ilişki ekle diyorsunuz veritabanla. Bir tür X olan Y, böyle bir metin varsa, bu X ve Y'nin yerine gelen kelimeler neyse onu buraya koyun. Mesela bir diğer X çeşidi olan Y, bu da yine aynı şekilde. İse X, Y. Bunlar dediğim gibi bizim şablonlarımız.
+
+320
+01:33:19,444 --> 01:33:42,344
+Şuna devam edebiliriz. Bir sıkıntımız yok. Burada daha sonra bizim Türkçe için yapmış olduğumuz bir çalışma var. Ondan birazcık bahsedeceğim. Türkçe için böyle bir şey yapalım dediğimizde işte site ya da open mind yani hangisini kullanalım bu bir soru işareti. Orada mevcutları tercüme edip kullanalım. Şimdi site'a erişemiyorsunuz açık değildi o zamanlar.
+
+321
+01:33:42,804 --> 01:33:49,764
+Open Mind ama açıktı. O zaman biz bunları tercüme edip kullanabiliriz diye o var. Ve frekans zamanında bilgi çıkarımı yapabiliriz.
+
+322
+01:33:50,324 --> 01:33:52,244
+Verilerini nasıl tutacağız? İşte şu yine standart.
+
+323
+01:33:53,587 --> 01:34:15,887
+İşte ConceptNet ve orijinal WordNet var. Mevcutları kullanmaktan kastımız. ConceptNet ve orijinal WordNet'i Google Translate ile çevirip, küçük de olsa bir Türkçe WordNet var. Bir de HTML sayfalarında, HTML sayfalarında Information Extraction. Demin gördüğünüz türden bilgi çıkarım, yani şablonları kullanarak bilgi çıkarım yaparak sistemin içerisine vaksinanı dahil etmiştik.
+
+324
+01:34:16,884 --> 01:34:42,283
+Otomatik çeviri problemli bir şey ki o zamanın otomatik çevirisi daha da problemliydi. Ama en az manetlisi bu çünkü çok fazla veri var elimizde. Frekans tamamında bir bilgi çıkarım işte. Zemberek muafolojik analiz yapıp 400 bin tane web sitesini crawl etmiştik. Onların HTML kodlarının üzerinden dediğim gibi zemberek kullanıp muafolojik şey yapıp şablonlar.
+
+325
+01:34:42,804 --> 01:35:06,824
+Tanımlayıp o şavlanlarla verileri elde etmiştik. Burada veri tabanından küçük bir şey var. Görüntüsü var. İşte bunun için ne gerekir, neye sebeplir, bunların neler yapılır gibi ilişki türleri için hangi ikiler var sistemin içerisinde? Ne demek için? Denemek için para lazım. Seyahat etmek için enerji lazım. Öğrenmek için okumak lazım. Yaşamak için yiyecek lazım. Asker ne için kullanılır? Savaş. Çatal yemek için kullanılır. Top oynamak için, ördek yemek için kullanılıyormuş.
+
+326
+01:35:07,252 --> 01:35:13,392
+Kuş uçabilirmiş, kişi yürüyebilirmiş, bilgisayar düşünebilirmiş, çocuk düşebilirmiş, bıçak kesebilirmiş gibi gibi.
+
+327
+01:35:13,692 --> 01:35:16,231
+İşte ne nerede bulunur falan. Bunlar mesela çeşitli ilişki türleri.
+
+328
+01:35:16,972 --> 01:35:23,592
+Burada bütün ilişki türleri var. Bir ilişki türü için ne kadar ilişki olduğu ve bunların kaynaklarının nerelerden geldiğine dair bir veriler var.
+
+329
+01:35:24,052 --> 01:35:27,572
+Burada toplam ilişki sayıları işte. Onlar da yazıyorlar.
+
+330
+01:35:29,108 --> 01:35:54,028
+Tabii problemler neler? Birincisi otomatik çeviriler hatası. Yanlış çeviriler. Çevirinin yapılaması falan. Elle çevirir ama çok maniyetli tabii. Bilgi kalitesi sonuçta bir veritabanı oluşturduktan sonra o veritabanın içerisinde elbette bir çöp kısım var. Bunun için de hani bu sistemi iyileştirmek için de insanlardan bir geri besleme almak lazım. İnsanlardan geri besleme almak da çok standart bir yapıda işte bu bir ilişki doğru mu bu değil mi falan diye.
+
+331
+01:35:54,448 --> 01:36:03,708
+Direkt sorduğunuzda çok da çekici bir şey olmuyor. Biraz daha çekici hale getirmek için bir tane onu bir oyun şeyine getirmiştik. Formuna getirmiştik.
+
+332
+01:36:03,708 --> 01:36:11,988
+Yani CS oyun demiştik. CS oyun şöyle bir şeydi. O zamanlar işte şeyler var, kişiler var. Oyun oynadıkça puan kazanıyorsunuz.
+
+333
+01:36:13,028 --> 01:36:20,728
+Burada insanların karşısında oynayabilecek de beş tane oyun çıkmıştı. İşte bir tanesi bildiklerim, bir tanesi araştır, tahminlerim. Bana öğret, birlikte eğitim.
+
+334
+01:36:21,555 --> 01:36:37,655
+Şimdi mesela burada tahminlerimin ekranı gözüküyor. Burada bir tahminde bulunuyor sistem. Diyor ki, hayal diyor, yaşamın ilk adı mıdır? Bu doğru mudur, yanlış mıdır? Ya da kararsız mısınız? diye buna dair kullanıcının bir şey söylemesi isteniyor.
+
+335
+01:36:37,655 --> 01:36:41,876
+İnsanlar bir şeyler söyledikçe de puan kazanıyorlar. Puan bordlar falan yukarıya doğru çıkıyorlar.
+
+336
+01:36:42,739 --> 01:37:05,799
+Şimdi bilgi sayısı ve kaliteyi arttırmak temel burada. Beş tane oyun var, puan alıyorlar. Yeni ilişkiler ve kavramlar girebiliyor insanlar ya da var olan ilişkilere dair geri besleme verebiliyorlar. Ve tahminlerin kısmı bence burada dikkat çekici olan kısım, sistemde veri tabanında olmayan yeni ilişkiler üretip geri besleme alabiliyor.
+
+337
+01:37:06,644 --> 01:37:29,923
+Çıkarım yapabiliyor sistem ama monotonik bir çıkarım değil. Monotonik çıkarım yapmanın bir manası yok aslında. Ne demek istediğimi biraz anlatacağım. Şimdi birinci oyun bildiklerim. Bildiklerim şu, işte bir ilişki seçiyor kullanıcı ve o ilişkiye dair sistemin bildiği şeyler karşısına çıkıyor. Burada da kullanıcı puan veriyor. Diyor ki işte bununla bunun arasındaki bu ilişki.
+
+338
+01:37:30,612 --> 01:37:54,692
+Yani sıfır puan ya da beş puan diyor ya da arada bir şey diyor. İlla bir sıfır olmasın. İkili bir dünyanın olmadığı durumlar da söz konusu çünkü bazı tür ilişkilerde. Bu tarz bir veri tabanında şey var. Araştırdığı ise bir kelime ve bir ilişki seçip o ikisi için diğer üçüncü kavram neyse onlar karşısına geliyor ve bunlara dair puanlar verebiliyor.
+
+339
+01:37:55,152 --> 01:38:18,112
+Bu da tamam. Şimdi dediğim gibi asıl kritik olan kısım bu tahminlerin kısmı. Şimdi bu tahminler kısmında sistem elindeki bilgileri kullanıp, elindeki ilişkileri kullanıp yeni ilişkiler üretiyor. Şimdi bu ilişki türlerini anlatırken iki tane ilişki türünden bahsetmek gerekiyor. Bir tanesi monotonik, bir tanesi non-monotonik. Şimdi monotonik şu.
+
+340
+01:38:19,507 --> 01:38:32,907
+Elinizde iki tane ilişki var ve bu iki tane ilişkiden yeni bir ilişki üretiyorsunuz. Fakat bu son ilişki kesinlikle doğru. Yani ilk iki ilişki doğruysa üçüncüsü kesinlikle doğru. Ne demek istiyorum?
+
+341
+01:38:33,688 --> 01:38:42,907
+Bütün insanlar ölümlüdür, Sokrat insandır. Tamam bu ikisinin doğru olduğunu kabul ederseniz kesinlikle diyebilirsiniz ki Sokrat da ölümlüdür.
+
+342
+01:38:42,907 --> 01:38:45,507
+Şimdi bu kesin bir çıkarım değil mi?
+
+343
+01:38:48,500 --> 01:39:05,360
+Peki, kesin olmayan çıkarım demek ne demek? Burada hani bu iki ilişki ya da işte kaç tane ilişki var, bu ilişkiler doğru olduğu durumda üçüncü ilişki doğru olma da bilir. Olma da bilir, olma da bilir. Tamam mı? Non-monotonikten kastımız bu.
+
+344
+01:39:05,360 --> 01:39:07,360
+Şimdi...
+
+345
+01:39:07,988 --> 01:39:31,847
+Monotonik çıkarım yapmanın bu tarz bir veri kümesi üzerinde çok çok bir anlamı aslında olmuyor. Ne demek istiyorum? Çünkü monotonik çıkarım aslında bakarsanız yeni bilgi ne yapmaz arkadaşlar? Üretmez. Yani var olan bilgiler doğruysa, çünkü zaten bunun doğal sonucu olarak doğrudur. Bunu üretip veri tabanına eklemenin bir manası yoktur.
+
+346
+01:39:36,020 --> 01:39:58,940
+Uzman sistemlerde bir tane örnek veriyorum. Diyorum ki mesela bir yerde bir tane kaplumbağa var. Görüyorsunuz o kaplumbağayı. O kaplumbağanın sol ön ayağını düşünün. O sol ön ayağının bir tane hücresini düşünün. O hücrenin mesela endoplazmik üretik bulumu var mıdır diye sorsam size.
+
+347
+01:40:00,000 --> 01:40:11,059
+Hepiniz vardır dersiniz. Niye bunu diyorsunuz? Çünkü işte o bir hayvan, buradaki de bir hücre, o bir hayvan hücresi, bütün hayvan hücrelerinin endoplazmi retikulumu vardır.
+
+348
+01:40:11,659 --> 01:40:18,920
+Şimdi bugüne kadar hiçbir şekilde siz böyle bir şey düşünmediniz değil mi? Yani bir tane kaplumbağanın sol ön ayağından.
+
+349
+01:40:19,296 --> 01:40:28,515
+Hücrelerinin endoplazmikleti bulun var mıdır? Gibisinden bir soruya bugüne kadar hiç karşılaşmaz ama buna %100'e yakın bir olasılıkta evet diyorsunuz.
+
+350
+01:40:29,108 --> 01:40:56,847
+Vardır diyorsunuz. Şimdi bunu yapabiliyor olmanızın sebebi monotonik çıkarımını yapıyorsunuz burada. Yani kesinlikle doğru oluna inandınız. İşte yukarıdan tümden gelim diyelim, öyle söyleyelim. Tümden gelimli bir çıkarım yapıyorsunuz ve bunu, bu bilgiyi gerektiği zaman çıkartabiliyorsunuz zaten. Bu bilgiyi çıkartıp veri tabanına eklemenin anca çok fazla sıklıkla kullandığınız bir şey ise eklemek.
+
+351
+01:40:57,108 --> 01:41:05,347
+Ama gerektiğinde çıkartıp kullanabilecekseniz o zaman bunu veri tabanına eklemenin bir manası yok.
+
+352
+01:41:06,068 --> 01:41:15,168
+O yüzden burada monotorim çıkarım yapmanın dediğim gibi yani zaten bunu istediğiniz zaman erişebiliyorsanız niye bunu veritabanın şişirmesine izin verelim?
+
+353
+01:41:15,548 --> 01:41:23,548
+Onun yanı non-monotorim çıkarım. Non-monotorim çıkarımın dediğim gibi örneği kabaca tüme varım gibisinden yaklaşımlar.
+
+354
+01:41:23,708 --> 01:41:27,068
+Ya da işte bunların birkaç tane örneği bu sağ tarafta görüyorsunuz.
+
+355
+01:41:27,796 --> 01:41:52,836
+Mesela örnek çıkarımlara bakalım. Şablonunda da aslında yazıyorum. Şimdi şöyle bakalım. X ile Y arasında R1 ilişkisi varsa ve Y ile Z arasında R2 ilişkisi varsa, X ile Z arasında R3 ilişkisi vardır. Şimdi bu kesin olan bir şey değil. Yani bunun örneğini yanında görürsünüz. Mesela martı bir tür kuştur. Martı uçabilir. O zaman kuşlar uçabilir. Aslında bu doğru bir çıkarım değil fark ettiyseniz.
+
+356
+01:41:53,492 --> 01:42:11,492
+Yani bir üst kavram var. Kuş, onun altında martı var. Martının yapabildiği bir şeyi onun üstündeki bir şeye atıyor. Tamam mı? Ve tümen varım yapsa yukarı mesela kuşlar uçabilir, o zaman martı da uçabilir şeklinde bir şey yapsa bu monotonik bir şey. Ama burada öyle değil. Burada alttaki bir şeyin özelliğini üste aktarmaya çalışıyor.
+
+357
+01:42:13,427 --> 01:42:33,927
+Şimdi bu kuş ne yapabilir? Uçmak. Bu bilgi onaylanırsa o zaman gerçekten yeni bir şey elde etmiş olursunuz. Veri tabanına eklenmesi gereken bir şey elde etmiş olursunuz. Alt taraftaki bir şey aslında kendi özelliği değil. Onun üstündeki bir şeyden geliyor. Tamam mı? Dolayısıyla bu monotonik olmayan bir çıkarım. Bu ne aslında? Bir tahmin.
+
+358
+01:42:34,484 --> 01:42:49,284
+Bu gerçekten bildiği bir şey değil. Bir tahmin. İşte o teminki tahminlerin oyunumuzda bu tarz şablonlardan üretilen tahminleri gösteriyor. Kullanıcıya son kısmını gösteriyor sadece. Yani kuşlar uçabilir mi? Bunu soruyor.
+
+359
+01:42:49,555 --> 01:43:15,375
+Kuşlar uçabilir mi? Kullanıcı eğer evet derse o zaman bunu veri tabanına ekliyor. Burada bunun çeşitli örneklerini görebiliyorsunuz. Kedi alt kavramıdır memeli, köpek alt kavramıdır memeli. Kedinin kürkü var, o zaman köpeğin de kürkü var. Yani bir üst kavrama sahip iki tane alt kavram var. Bunlara kardeş ilişkilerden. Kardeş ilişkinin, kardeşlerden bir tanesinin bir özelliği diğerinde de vardır. Bunu tahmin ediyorum.
+
+360
+01:43:15,764 --> 01:43:22,384
+Ya da işte mesela bıçak nerede bulunur? Mutfak. Bıçak ne için kullanılır? Kesmek. O zaman kesme eylemi mutfakta yapılır.
+
+361
+01:43:23,923 --> 01:43:45,463
+Şimdi dediğim gibi bunlar kesinlikle şart olan şey, non-monotonik çıkarımlar. Bunlar da dediğim gibi tahminler oyunun için üretiliyor. Mesela burada sormuş. Ama burada şey yazmıyor. Hani onun geçmişi, yani bu ilişki nereden türetildi falan yazmıyor. Onlar veritabanında varlar, onlar kullanılar. Bu tahmin üretilmiş mi? Onu kullanacak bir şeyler diyor.
+
+362
+01:43:46,739 --> 01:44:08,679
+Başka ne var? Banöğret var. Burada kullanıcıların birazcık bir tane kavram ve ilişki türü veriliyor ve insanlar buraya bir şeyler giriyorlar. Yani veritamana kavram eklemeleri için kullanılan bir şey. Bir birlikli eğitim var. Şimdi bu oyunu tahmin edebileceğiniz gibi free ol değil. Free derken, insanların doğru yapıp yapmadığını bilemediğiniz bir durum.
+
+363
+01:44:09,024 --> 01:44:33,664
+Birazcık burada şeye güveniyoruz. Çoğu insanın bir ilişki için verdiği ortalama bir şeylere güvenmek makul. Dolayısıyla insanlar sallayabilirler. Salladıklarından emin olmak için bir sürü mekanizmalar geliştirilebilir. Burada yazılı olmayan bir sürü şey var ama bir sürü mekanizma geliştirebilir. Buradaki mekanizma şeydi, iki kişinin birlikte aynı şeyi atma olası da düşüktür.
+
+364
+01:44:37,024 --> 01:44:51,704
+Cevaplar çok daha değerlidir. Birbirinden farklı olan cevaplara göre. Bu birlikte eğitim de oydu. Yani oyundaki kişileri ikişerle ikişerle eşleştirip aynı oyunu oynamalarını sağlayıp daha sonra onların ikisinin de aynı şeyi söylediklerine daha yüksek puan verme şeklinde bir mekanizma it.
+
+365
+01:44:53,844 --> 01:45:01,224
+Evet. Burada neler olmuş? Bir sürü şey var. Bir dakika. Edwin ekranları var vesaire vesaire.
+
+366
+01:45:01,876 --> 01:45:22,056
+Ne olmuştu? 2010 ile 2012 arasında iki tane rapor çekmişiz o zaman da. İşte 34 bin oydan 155 bin oya çıkmış. 65 kişiden 182'ye çıkmış. İlişki türlü sayısı 40'dan 45'e çıkmış. İlişki sayısı 1 milyondan 1.2 milyona çıkmış.
+
+367
+01:45:23,380 --> 01:45:46,979
+Bu kavram sayısı 475 binden 700 bine çıkmış. Şimdi buraya bakarsak, kullanıcılar tarafından oynayan tekil ilişkilerin sayısı yaklaşık tekil ilişkilerden bahsediyoruz. 99 bin. Ve bu süreç yaklaşık 2 yıla yakın bir süreden bahsedeyim. Yani 2 yıla sürede 99 bin %8'i oylanmış.
+
+368
+01:45:48,020 --> 01:46:08,920
+Dolayısıyla sistemin tamamının oylanması için gereken süre bayağı bir fazla olduğunu görebiliyorsunuz. Yani bu tarz bir şeyle ilerlemek çok çok kolay değil. Başka başka mekanizmalar falan da kurmak lazım. Ha tabii çok kişiye oynatabilirseniz falan orası ayrı bir hikaye ama insanların oynaması için motivasyon sağlamanız lazım.
+
+369
+01:46:16,020 --> 01:46:24,260
+Bir kullanıcının oynaması asıl burada belki hedeflenebilir. Ama onlar için de çok çok çekici bir şey yok aslında bakarsanız.
+
+370
+01:46:25,440 --> 01:46:34,780
+Peki burada şeyler var. Her bir ilişkinin ortalama puanı vs. Hangi tür ilişkiler daha çok puan almış, ortalama puanına kadarmış onlardan falan bahsediyor.
+
+371
+01:46:34,780 --> 01:46:39,000
+Dediğim gibi yani iki sene bir deney aslında yapılan işlem bu.
+
+372
+01:46:42,804 --> 01:47:08,764
+8. Çok bir şeyimiz kaldı ama var aslında epeydi. Şurasını da konuşalım o zaman. Şimdi bu hayat bilgisi veri tabanlarının kalitesini nasıl ödeceğiz? Kalite birkaç tane var. Yani bir tane kalitelik ölçü doğruluk. Yani içindekiler doğru mu değil mi? Başka bir şey daha var. Kapsayıcılık. Yani bu ikisi bir de çelişen bir şey birazcık. Ne demek istiyorum?
+
+373
+01:47:09,844 --> 01:47:25,923
+İçeriye çok fazla bir şey doldurursanız daha kapsayıcı bir şey olur. Evet ama doğruluğu düşük olur. O manada düşünebilirsiniz. Ya da çok doğru bir şeyler koyacağım ben bunun için derseniz o zaman da çok az bir şey koyabileceksiniz. O durumda da kapsayıcılığı düşecek. Peki bunlar nasıl ölçülebilirler?
+
+374
+01:47:26,904 --> 01:47:32,923
+Mesela doğruluk için şöyle bir şey diyebilirsiniz. Sistemden rastgele yüz tanesini seçerseniz insanlara bunları şey yaparsınız. Ne derler ona?
+
+375
+01:47:33,492 --> 01:47:44,931
+Kendiniz ya da ekibinizden birileri bunları oylar bakar ki sistemde işte yüzde şu kadarlık bir şey var, performans var. Doğruluğu ölçmek için bir sample ile bir işlem yapılabilir.
+
+376
+01:47:45,771 --> 01:47:54,612
+Kapsayıcılık gereken tahminin sayı milyonlar. Yani bu ilişki türleri için gerekli olan sayının hakikaten milyonlara eriştiği varsayılıyor. Öyle söyleyeyim.
+
+377
+01:47:55,539 --> 01:48:13,380
+Kavram sayısının yeterli ve ilişki sayısının yeterli. İlişki sayısı korkunç, sıkıntılı bir şey değil belki ama kavram sayısı sıkıntılı. Bu ölçümlerde sürekli geçen bir sistemin kapsatçılık ve dolu performanslarının zaman içinde değişimlerince, peki bu kavram sayısının yeterli ve ilişki sayısının yeterli nasıl ölçeceğiz?
+
+378
+01:48:13,719 --> 01:48:19,339
+Kavram sayısının yeterli belki şey olabilir. Büyük bir metik kütüphanesinde kavramlarının yüzde kaçı sistemde var. Yani bir derlem aldınız.
+
+379
+01:48:20,020 --> 01:48:28,380
+O derleme içerisindeki kavramların ne kadar veri tabanının sizin kendi verikümeniz içerisinde varlar. Ona bakabilirsiniz. Başka ilişki sayısının yeterliliğine bakabilirsiniz.
+
+380
+01:48:29,076 --> 01:48:55,315
+Ne bileyim, bir insanın rastgele verilen bir kavram hakkında, rastgele gösterilen bir resim hakkında, öyle diyelim, [öğrenci] sahiblerin dediği gibi, kavram hakkında bir dakika da üretebildiği ilişkilerin yüzde kaçına kadar var bu sistemin içerisinde? Yani ne bileyim, insanların karşısına rastgele 50 tane kavram çıkartıyorsunuz. Bu her bir kavram için insanlar oturuyorlar, bununla alakalı bir şeyler yazıyorlar, çiziyorlar. Bu yazıp çizdikleri şeyler, bu ürettikleri ilişkiler sizin bir tabanınızda ne kadar var?
+
+381
+01:48:55,923 --> 01:49:05,223
+O manada bir kapsayıcılık şeyi yapılabilir. Ölçümü yapabilir ama işte insanlar ölçümlerle tabii yine tek kişinin yetmişler de bariz bir şey.
+
+382
+01:49:07,263 --> 01:49:17,223
+Hayat bilgisi ve tabanlarının bir sürü uygulama alanı olabilir. Demin sizler de konuştuk aslında. Bunların her biri elinizdeki…
+
+383
+01:49:18,387 --> 01:49:33,488
+Mevcut bu problemler için çözümleri entegre edilebilirler. Bu hayat bilgisi veritabanları çeşitli yollarla. Bunların her birinde fayda sağlayabileceklerini düşünebiliriz.
+
+384
+01:49:34,228 --> 01:50:00,000
+Peki, şimdi bugünkü dersi burada noktalayalım arkadaşlar. Önümüzdeki hafta bu şablonlardan biri falan nasıl çıkartılıyor, onlar üzerinde konuşmaya devam edeceğiz. Hayat bilgisi ve tamamlarıyla alakalı bir haftamız daha olacak. Sizler de ders noktalarında var, oradan önceden bakabilirsiniz. Biraz bu kasandırı falan belki birazcık araştırabilirsiniz ya da bu…
+
+385
+01:50:00,115 --> 01:50:13,475
+Sinirsel dil modellerinin common sense bilgisini içerip içermediğine dair bir sürü çalışmalar var. Böyle harici bir şey yapmadan da sinirsel dil modelleri zaten bu common sense'i kapsıyor ya da kapsamıyor.
+
+386
+01:50:14,395 --> 01:50:23,015
+Dair çeşitli çalışmalar var. Onları birazcık inceleyebilirsiniz. Belki haftaya o noktalarda da birazcık konuşabiliriz sizlerin yaptığı araştırmalar doğrultusunda.
+
+387
+01:50:24,180 --> 01:50:28,000
+Peki, var mı arkadaşlar bugünkü derste alakalı sorunuz?
+
+388
+01:50:31,796 --> 01:50:33,416
+Yok hocam, teşekkür ederiz.
+
+389
+01:50:33,456 --> 01:50:34,536
+Yok hocam, teşekkürler.
+
+390
+01:50:34,596 --> 01:50:40,876
+Teşekkür ederim. Peki, o zaman haftaya görüşmenizi ödüyorum arkadaşlar. Sağlıcakla kalın.
+
+391
+01:50:41,756 --> 01:50:42,276
+Teşekkürler.
+
+392
+01:50:43,476 --> 01:50:44,616
+İyi günler hocam.
