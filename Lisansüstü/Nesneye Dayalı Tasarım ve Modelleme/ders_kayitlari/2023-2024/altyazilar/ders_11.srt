@@ -1,0 +1,1003 @@
+1
+00:00:15,252 --> 00:00:16,452
+İzhanlı, hello?
+
+2
+00:00:17,891 --> 00:00:18,911
+İzhanlı, okay.
+
+3
+00:00:18,911 --> 00:00:20,192
+And still, pick out.
+
+4
+00:00:36,979 --> 00:00:46,979
+Evet, katılımcı yanımız yavaş yavaş artıyor. Saat ikiliye haber göndermiştim, kusura bakmayın. Bir terk sınavım vardı.
+
+5
+00:00:46,979 --> 00:00:55,979
+Onun değişik üniversitelerden değişik hocaları, çok sayıda hocayı ortak bir zaman toplamak çok kolay olmuyor.
+
+6
+00:01:02,100 --> 00:01:07,099
+Biraz bu dersin vaktinden de kullanmak zorunda kaldı.
+
+7
+00:01:07,099 --> 00:01:17,099
+Bunlar da durumumuz iyi, femariyiz. Şimdi ekran paylaşımı açayım. Başlayalım bakalım. Neredeyiz? Ne yaptık? Ne ettik? Onlara bir bakalım.
+
+8
+00:01:30,048 --> 00:01:36,728
+Evet, ilk 30'ün yalnızca üniversitemiz bakalım.
+
+9
+00:01:51,956 --> 00:02:08,956
+Evet, pekala. Evet, bu da estağfurullah deyip ondan sonra geri kalanına bırakmışız. Hem hemen yarısındayız, pekala. Ama bunun yarısı demek, şey, yansı olarak yarısı. Şey olarak baktığımızda, daha göreceğimiz diğer...
+
+10
+00:02:09,503 --> 00:02:20,503
+Refactoring ve CodeSmart'lar açısından baktığımızda aslında nereye kadar? KT'ye kadar tanımlamak için diyoruz.
+
+11
+00:02:20,503 --> 00:02:29,503
+Bu da demek oluyor ki, bugün aylıca saat 4'e kadar yapamayacağım. Bir ders saati kadar çalışmayı düşünüyorum.
+
+12
+00:02:37,503 --> 00:02:42,363
+Bütüncü Refactoring örneğini de en sona bırakmak.
+
+13
+00:02:44,659 --> 00:02:58,020
+Yeter vaktimiz var. Bugün, Constable Refactoring konularını bitirip, ikinci vizemizi tasarım kalıpları üzerinden, birinci vize gibi yapman lazım.
+
+14
+00:02:58,020 --> 00:03:05,740
+28 adlı tarihinde de en son bütün jöre-refactoring örneğini yaparak, ondan sonra ders kapatabiliriz.
+
+15
+00:03:05,740 --> 00:03:12,659
+Son haftayı da bu arada belki kullanılırız diyeceğim ama, üç vize yapmaya sözlermiştim.
+
+16
+00:03:12,659 --> 00:03:32,539
+Onu da arasına filanlisi olarak sadece kullanacağımızdan, bu da bize bugünü ve 28 Aralık'ı şey diyor, bırakıyor. O yüzden şimdi vaktimizi güzel verimde kullanalım. Ama yetişmemesi konusunda bir endişem yok. Yeterli zamanımız, vaktimiz, süremiz var. Pekala.
+
+17
+00:03:34,140 --> 00:03:35,759
+Şimdi 30 demiştik galiba.
+
+18
+00:03:37,524 --> 00:03:41,524
+Evet, 30'a kadar yaptık. Karnımız gelden devam etmiş. Peki.
+
+19
+00:03:41,524 --> 00:03:57,524
+Son modu bulalım. Kayıt olduğundan iyi bulalım. Son modu ayşalım. Evet. Şimdi sıradaki konkusumuz Large Class. Bunu aşırı büyük kısım olarak çevirdim.
+
+20
+00:03:58,228 --> 00:04:21,768
+Çünkü Large ama baş başına bir problem değil. Bunun aşırı olduğunu özellikle vurgulamak için önemli. Large class'taki en önemli problem ve bu problemin kök nedeni o sınıfın sorumluluklarının aşırı fazla olmasıdır.
+
+21
+00:04:22,196 --> 00:04:29,556
+Solumlulukların sayısı da arttıkça bunların birbiriyle ilgi oranı da düşmektedir.
+
+22
+00:04:31,252 --> 00:04:38,331
+Ve bu ilgi olanının azalması da uyumun düşmesine sebep olmaktadır.
+
+23
+00:04:38,772 --> 00:04:45,012
+Kaplink ve Kohejim hatırlarsanız, dersin ilk haftalarında tartışmıştık. En temel iki kalite ölçüyüydü.
+
+24
+00:04:46,512 --> 00:04:54,432
+Kaplink, Nesne'nin birbirleriyle ilişkisellik içerisinde bulunma oranı üzerinden konuşmuştuk.
+
+25
+00:04:59,252 --> 00:05:09,111
+Birbirine ne kadar yakın, ne kadar birbiriyle ilgili alanlarda ise bu kadar cohesive olduğu şeklinde tanımımızı yapmıştık.
+
+26
+00:05:10,711 --> 00:05:24,271
+Aşırı büyük sınıf sayısına bakarken, yani aşırı büyük sınıfları incelerken aslında ilk aklımıza gerekli olan ölçü, büyüklük, line of code yani kod satırı sayısıdır aslında.
+
+27
+00:05:24,848 --> 00:05:37,048
+Fakat bunu sadece lütfen satırı sayısı olarak düşünmeyin. Büyü alan sayısının fazlalığı da bir göstergedir sınıfın büyüklüğü açısından.
+
+28
+00:05:38,867 --> 00:05:56,188
+Neden? Çünkü madem fazla sorumluluk atamışız, bu sorumlulukların yerini getirmek için gerekli verileri de sınıfa koyuyoruz. Madem bu kadar veri var, şu işi de bu sınıfı yapsın diyoruz. Böylece bir kart okutu gibi büyüyen bir döngü içerisinde sınıflar aşırı büyüyebilmektedir.
+
+29
+00:05:56,639 --> 00:06:02,139
+Halbuki Nesneye'nin bize, Göl parçalar yönet stratejini önermektedir.
+
+30
+00:06:02,139 --> 00:06:09,139
+Ve ayrıca demiştik ya, iyi bir tasarım. Probabilon anındaki varlıklar ne bireyde parçalarla ayrılıyorsa,
+
+31
+00:06:09,408 --> 00:06:17,408
+Aynı düzeyde veya daha fazla alt düzeylere ayrılabilen tasarıma ilgili tasarımdır.
+
+32
+00:06:17,408 --> 00:06:30,408
+Bu large class ise bunun tam tersi. Daha aşırı büyük parçalarda konuşmuş yapılardan bahsediyoruz.
+
+33
+00:06:30,408 --> 00:06:35,408
+O yüzden buna bir teymenin tam anlamıyla neşter atmamız gerekiyor.
+
+34
+00:06:35,764 --> 00:06:49,163
+Yani parsör içerisinde ne gibi bir faktör eylemleri yapabiliriz bununla ilgili? Birincisi Extract Class. Extract Metod gibi düşünebilirsiniz bu da.
+
+35
+00:06:55,423 --> 00:07:20,043
+Buradan yeni bir sınıf oluşturmaktır. Ve tabii ki elbette bu üyeler ve çalışan metotları da yine o sınıfa taşımak durumunda olacağız. Bunu illaki tek bir sınıf değil, birden fazla sınıf oluşturmak, çıkartmak şeklinde de uygulayabiliriz elbette. Bu bizim kusurlu sınıfımız ne kadar büyükse ondan o kadar çok sınıf çıkartma olasılığımız artmaktır.
+
+36
+00:07:21,492 --> 00:07:44,351
+Şimdi bu sınıfı çıkarttık diyelim ama bu çıkarttığımız sınıf mevcut sınıfın alt sınıfı olması uygun oluyorsa o zaman bu yaptığımız işe Extra Subclass diyoruz. Burada genelde şöyle bir durum olarak karşılaşabiliyoruz. Şimdi mevcut bir sınıfımız var, büyük bir sınıf. Çok sayıda üyesi de var.
+
+37
+00:07:44,723 --> 00:08:11,863
+Bu üyelerin, yani bir metotlarını da inceliyoruz. Belki metotları bu üyeleri yeterli yoğunlukta kullanıyor. Fakat bu metotların içerisinde gerek if-else açısından baktığımızda, gerekse üye alanların ve metot parametrelerin çeşitli değerlerine göre belirli bir koşu gerçekleşmişse şu üye alanları yok, öbür türlü bu üye alanları kullan gibi.
+
+38
+00:08:12,723 --> 00:08:16,963
+İsmeten ayrık bir alan erişim desenleri ortaya çıkıyorsa.
+
+39
+00:08:17,396 --> 00:08:32,615
+Örnek verin mesela. Maaş hesaplamasında çalışanın ayrık maaşını hesaplarız. Ama bu bir yönetici ise ayrık maaşına ek olarak varsa ikramiyesi söz konusunda.
+
+40
+00:08:32,615 --> 00:08:44,016
+Her çalışana bu bir yönetici mi? Yönetici ise bonusunu da ekle gibisinden kod yazıyorsa bazı durumlarda bu ikramiyesi kullanılıyor, bazı durumlarda kullanılmıyor.
+
+41
+00:08:45,395 --> 00:09:11,395
+Bu da demek ki, yönetici sınıfını çıkarttığımızda bunu çalışan sınıfını alt sınıf olarak yapmak daha doğru her yönetici aynı zamanda bir çalışandır. Ama ek olarak bonus ikramiye sahibidir. Şekilde durumlarda da ortaya çıkarttığımız sınıfı bir alt sınıf olarak çıkartmış oluyoruz. Sonra da Extra Subclass.
+
+42
+00:09:12,083 --> 00:09:24,803
+Bu iki refaktörün eylemi genelde bizi çözüme getiriyor. Ama götüremediği durumlar da olabiliyor. Onlar diğer şeyler devreye girecek.
+
+43
+00:09:25,803 --> 00:09:29,303
+Üçüncü bir büyüklük oluşma nedeni ise,
+
+44
+00:09:29,748 --> 00:09:49,128
+Bazen iş mantığı katmanı ile sunum katmanı arasında, yani daha doğrusu böyle katmanlar yok, ikisi tek bir araya işe geçmiş, koca bir ip yumağı bir hale gelmiş olabiliyorlar.
+
+45
+00:09:49,128 --> 00:09:57,568
+Başka bir deyişle, iş mantığını oluşturan, yürüten sınıflar ile kullanıcı ara yüzünü oluşturan, yürüten sınıflar.
+
+46
+00:09:57,748 --> 00:10:10,228
+Arasında fazla bağımlılık, haplenik varsa, iste istemez bu kullanacağı yüzünü kodladığımız sınıflar çok büyümekte oluyorlar.
+
+47
+00:10:10,228 --> 00:10:15,908
+Böyle bir durum varsa kullanacağımız refactoring eylemini duplicate observed data diyoruz.
+
+48
+00:10:16,568 --> 00:10:24,648
+Aynı tarihine kalıp konuşurken girelim aynı oturumda. Öncelikle extra class sınıfı çıkartmaya.
+
+49
+00:10:28,436 --> 00:10:38,736
+Bu temelinde birbiriyle ilgisiz veya az ilgili iki iş yapan bir sınıfı, işte bu iki ayrı işe göre ikiye ayırmaktır.
+
+50
+00:10:39,412 --> 00:11:05,451
+Bu ikinci işle ilgili üye alanları seçip bu yeni sınıfa taşımaya dayanan bir faktör eylemidir. Aslında ekstra klas birden fazla kokkusunu düzeltebilecektir. Bunlardan ilki long klas elbettir. Fakat mesela long metod konusunu da düzeltebiliriz ekstra klas işlemi.
+
+51
+00:11:05,812 --> 00:11:29,391
+Çünkü uzun bir metot içerisinde yapılan işleri de incelediğimizde, diğer metotlarda yapılan işlerden daha farklı alanlarda çalıştığını gördüğümüzde, bu ekstra ettiğimiz metoda normalde yeni bir uygun yer alanları demiştik ya, o uygun yer yepyeni de sanılsa, işte ekstra klas oluyor. Yaptığımız bir fark yok.
+
+52
+00:11:30,868 --> 00:11:56,928
+Örnek olarak bir person sınıfımız var. Bunun iletişim bilgileri de diğer üye alanlarına ek olarak bu sınıfta yer almaktadır. İşin ismi, ofis telefonunun alan kodu ve ofis telefonunun numarası. Sonra büyük ihtimalle bunun yanına cep telefonu alan kodu, cep telefonunun numarası gibi farklı farklı benzer telefon bilgileri, benzer iletişim bilgileri de gelecektir.
+
+53
+00:11:57,779 --> 00:12:09,299
+Bütün bu bilgiler geldikçe bütün bunlarla ilgili metotlar da bunu takip edecektir. Ve bu sınıf açılı bir şekilde büyüyecektir.
+
+54
+00:12:09,299 --> 00:12:16,959
+Bunun yerine bu telefon numarası ile ilgili verileri...
+
+55
+00:12:16,960 --> 00:12:40,480
+Bu telefonla ilgili bir şey. O zaman telefon diye yeni bir sınıf oluşturur. Telefon numarası her neyse. Bu bilgileri o sınıfa taşımak ve mevcut person sınıfından bu yeni oluşturduğumuz telefon numarası sınıfına sahiplik ilişkisi kurmak en doğru mantıktır. O yaptığımız durumu da saat arttaki haliyle görüyoruz.
+
+56
+00:12:44,960 --> 00:12:58,000
+Telefon lamburu türünden bir tane daha nesne tanımlayıp, kurasında artık bir tane telefon lamburu üyesi, iki tane telefon lamburu üyesi var. Birisi ofis için, birisi cep için.
+
+57
+00:12:58,600 --> 00:13:07,040
+Çiftler numarası olarak mesela gibi. Böylelikle çok daha verimli bir kullanım ortaya çıkartabiliyoruz.
+
+58
+00:13:07,760 --> 00:13:12,400
+Ayrıca telefon numaralarıyla ilgili başka yapılan işlemler olduğunu da görebiliriz.
+
+59
+00:13:12,751 --> 00:13:14,751
+Belki de mesela...
+
+60
+00:13:16,596 --> 00:13:41,076
+Ne diyebilirim? Telefon masımlarından yola çıkarak hangi telkon operatörüne ne kadar masrafımız düşüyoruz, hangi telkon operatörüne ne kadar aboneyiz, ne oranda aboneyiz, ona göre nereyle daha fazla arka yapabiliriz gibi analizler yapmak için de bu ortaya çıkan veriyi daha rahat kullanabiliriz bambaşka bir sınıfta.
+
+61
+00:13:44,596 --> 00:14:08,936
+Hatalı eğilme, düşme olasılığımız da arttık. Halbuki bu gibi kendi içerisinde daha sıkı ilişkili ama o sınıftaki mevcut üyelere baktığımızda daha gevşek ilişkili içeriği gördüğünüzde bunları kendi içerisinde daha sıkı ilişkili tek tek sınıflar haline taşımak her alanda avantaj sağlayış.
+
+62
+00:14:12,307 --> 00:14:20,307
+Ama bazen de çıkarttığımız sınıfı mevcut sınıfın alt sınıfı olarak moda daha doğru olabiliyor.
+
+63
+00:14:20,307 --> 00:14:34,923
+Buradaki örneğimizde Job Item diye bir sınıfımız var. Yani çeşitli işler de yapılıyor. Bu işlerin toplam fiyatı, dilim fiyatı ve bu işi kimin yaptığıyla ilgili üye alanlarımız var.
+
+64
+00:14:35,091 --> 00:14:46,091
+Fakat sistemde kalitli olan işlere baktığımızda görüyoruz ki bazı işleri özellikle o işin ustası olan bir kişiye atamışız.
+
+65
+00:14:46,091 --> 00:14:55,091
+Ama bazı işlerimizi ise herhangi bir tanıtımdan yapabiliriz şeklinde işaret edip kimin yaptığını saklamamışız bile.
+
+66
+00:14:55,091 --> 00:14:59,091
+Yani bazı durumlarda işi kimin yaptığı ile ilgilenmiyoruz.
+
+67
+00:14:59,412 --> 00:15:23,412
+Ama bazı durumlarda işin kimin tarafından yapıldığıyla ilgileniyoruz. Ona göre işlemlerimiz var. O zaman, şimdi burada farklılaşan şey, bazı işlemlerin daha ayrıntılı bir şekilde bir başka insan tarafından yapılması. Çalışan tarafından yapılması. O zaman biz tasarımımızda Job Item sınıfından yeni bir sınıf oluşuyoruz. Adına Label Item diyoruz.
+
+68
+00:15:23,727 --> 00:15:51,547
+Job İş, labor da iş olarak çalışabiliriz de ama labor daha çok emeğe yönelik, belirli bir işin yaptığı emeğe yönelik iş şeklinde söylendiğinden o sınıfta da ek olarak employee üyesi var. Onu da getteriz metodu var. Böylece bu spesifik, belirli bir çalışan tarafından yapılan işleri daha özelleştirmiş hali.
+
+69
+00:15:51,727 --> 00:15:53,727
+Bu da kalıta ilişkisi.
+
+70
+00:15:53,727 --> 00:16:11,727
+Şimdi geldik. Biraz daha kalmışım dediğim soruma. Uygulama alanı ile ilgili verinin GUI sınıfında saklanması doğru değil. Ama maalesef bu tarafa eğilim gösterebiliyoruz. Nihayetinde kullanıcılığa bilgi alınacak.
+
+71
+00:16:12,371 --> 00:16:28,363
+iç mantığı ile ilgili bilgi alacak ve bu bilgiyi de artık grafik kullanıcı ara yüzleri üzerinden alıyoruz. O zaman bu ara yüzdeki her bir alan, o iç mantığını oluşturacak her bir verinin
+
+72
+00:16:28,628 --> 00:16:39,628
+Bu türünde o veriyi alabilecek, modifiye edebilecek şekilde grafik kullanıcı, fon bileşenlerinden oluşmalıdır.
+
+73
+00:16:39,628 --> 00:16:49,628
+Bu verinin tutarlık kontrolü yapılması gerekmektedir. Ve tutarlık kontrolü de aslında iş mantığı ile ilgili kurallardır. Bu yüzden ister istemez...
+
+74
+00:16:50,548 --> 00:17:11,548
+Kullanıcı ve giriş ya da raporlama ekranlarımızda iş mantığına yönelik kodlar yazmamız gerekebilmektedir. O zaman tutup bütün her şeyi kullanıcı aryası katmanına yapıp ayrı bir iş katmanına sahip olmama gibi bir duruma götürebiliyor bizi.
+
+75
+00:17:13,332 --> 00:17:32,752
+Fakat burada katmanlı bir tasarımın her zaman için avantajları olduğunu konuşmuştuk. Çünkü o katmanla ilgili gerek küçük, gerek büyük bir değişiklik söz konusu olduğunda sadece o katmanda yapacağımız işlemlerde istekleri karşılayabiliriz.
+
+76
+00:17:32,752 --> 00:17:41,332
+Ve bu işlemlerin diğer katmanlarda yapılan işleri etkilememesini ya da minyum düzeyde etkilesini sağlayabiliriz.
+
+77
+00:17:41,332 --> 00:17:52,211
+Sağlamış olabiliyoruz. Peki şimdi bu bölmeyi nasıl yapacağız? Bölmeyin diye de dilde çoklayın, çoğullayın diyor bize bu rifatmenin eylemi.
+
+78
+00:17:54,067 --> 00:18:13,487
+Veri katmanı için ayrı bir katman oluşturuluyor ve ilgili GUI birleşenleriyle yeni ortaya çıkarttığımız bilgi nesneleri arasında observer tasarım kalıbını tutarak birindeki değişikliğin ötekine de yansıtılmasını sağlayın diyor.
+
+79
+00:18:14,003 --> 00:18:28,143
+Önceki tasarımımızda, internet ürün doğrulu diye bir sınıfımız var. Başlangıç ve bitiş alanlarımız var. Bir de ne kadar bu işlerin sürdüğü ile ilgili bir başka bir yerimiz var.
+
+80
+00:18:42,003 --> 00:18:53,143
+Hangi ikisi verilmişse üçüncüsünü hesaplamaya yönelik, işte calculate length, calculate end ile toplanır. Başlangıç belli ne kadar sürece belli ise bitiş alanını hesaplanabilir.
+
+81
+00:18:53,143 --> 00:18:58,543
+Veya başlangıç belli, bitiş belli ise ne kadar uzun sürdüğü belli hesaplanabilir.
+
+82
+00:18:58,923 --> 00:19:04,323
+Bu iki ayrı bir yapak, üst mantı ve yakaktığımızda var. Hepsi tek bir sonuçta gömülmüş.
+
+83
+00:19:05,428 --> 00:19:11,212
+Bu da diyor ki, bu sınıftaki veriler...
+
+84
+00:19:11,251 --> 00:19:35,231
+GUI birleşenliği olarak kalsın. Fakat madem biz bu window bir interval, bir aralık verisini simgelemek için, onunla ilgili veriler almak için kullanıyoruz. O zaman madem öyle başlı başına bir aralık varlığı da olsun. Aralık sınıfı olup ondan nesne oluşturulsun. Ve burada da GUI katmanı ile ilgili hiçbir bilgi olmasın.
+
+85
+00:19:35,503 --> 00:19:57,503
+Orta Interval Sınıfı çıkmıştır burada. İste istemez Windows sınıfında bu iş mantığının önündeki verileri alabilecek mantıkla birleşikler mevcut. Ama arka katmanda, veri katmandaki Interval Sınıfında GUI ile ilgili hiçbir şey yok. Bu bize neyi sağlıyor? Belki GUI'nizi değiştirdiğimizde...
+
+86
+00:20:00,000 --> 00:20:09,700
+Başka bir platforma taşıdığımızda veyahut da alternatif giriş metotları kullanmaya başladığımızda verileri bir servisten çekeceğiz belki diyelim ki.
+
+87
+00:20:09,700 --> 00:20:24,000
+Bu gibi durumlarda iş mantığı kısmını değiştirmeden sadece veri girişi katmanlarımı değiştirerekten işimizi daha verimli bir biçimde yürütmüş olabiliyoruz.
+
+88
+00:20:26,548 --> 00:20:54,087
+Birinci sınıfın eski halinin büyüklüğüne nispeten yakın iki sınıfta çıkıyor ortaya. Diyelim ki bu önceki halinde interval window 1000 satır kod içeriği iken, ortaya çıkan sınıfların kod satır toplamı örneğin 1'i 600, ötekisi 700, 1300 satır olabilir toplamda.
+
+89
+00:20:54,548 --> 00:21:12,548
+1000 satırlı kod 1300 satırlığa çıktı. Toplamda baktığımızda daha uzadı kodumuz. Ama bu da toplamda değil, birimler cinsinden bakıyoruz. Her bir sınıfımız ayrı bir birimimiz. Çünkü bir problem olduğunda...
+
+90
+00:21:12,852 --> 00:21:36,332
+Hangi sınıf üzerinde çalışıyorsak, onun daha küçük parçası üzerinde çalışmış oluyoruz. Bu durumda her iki parçamız da eski halinden daha kısa olduğu için bizim daha kolay yutabileceğimiz lokmalar halinde yapılarla uğraşıyor oluyoruz. Erdi ettiğimiz kazanç budusu.
+
+91
+00:21:40,115 --> 00:21:55,115
+Sıradaki iki kod kısımlarımız. Bunların adlarını ben biraz esprili buluyorum. Bilmiyorum, belki de öyle değillerdir. Ama özellikle bu Shotgun Surgery bana öyle geliyor biraz.
+
+92
+00:21:55,115 --> 00:22:04,115
+Birisinin adı Divergent Change, ötekisi Shotgun Surgery. Divergent Change demek...
+
+93
+00:22:05,299 --> 00:22:27,119
+Bir değişikliğin çok sık yapılması anlamına geliyor. Shotgun sözcülü ise, kemlerin tam anlamıyla çifte tüfekleri oluyor ya, saçmadan çiftler. Çifteyle ameliyat yapmak. İyi bilirim aslında. Anlatacağım şimdi, gireyim sebebine.
+
+94
+00:22:27,859 --> 00:22:37,339
+Tabii ki, ister istemez, gereksinler değişecek veya bir hata bulacağız, onları düzeltmeye çalışacağız. Bugün durumlarda koda müdahale edeceğiz.
+
+95
+00:22:37,339 --> 00:22:55,180
+Ama bizim tasarımımız ne kadar iyiyse, bu değişiklikler o kadar az yerde yapılıyor. Ama durum böyle gerçekleşmiyorsa, az önce adını zikrettiğim iki kod kusurundan birisi vardır demektir. Bunların birbirinden farkı da şudur.
+
+96
+00:22:55,796 --> 00:23:06,175
+Bir değişikliği yapabilmek için gerekli kod düzenlemelerini aynı sınıfın birçok farklı metodunda yapıyorsak buna Divergent Change diyordu.
+
+97
+00:23:06,175 --> 00:23:17,455
+Veya birden fazla sınıfın, yani çok sayıda sınıfın kendi içerlerinde az sayıda metotlarını da yapıyorsak da Çatkan Sörgü'ü diyoruz.
+
+98
+00:23:17,907 --> 00:23:26,887
+Örnek Divergent Change için yeni bir veri tabanına geçeceğiz. Tek bir sınıfın 3 ayrı metodunda toplamda 8 değişiklik yapacağız.
+
+99
+00:23:27,407 --> 00:23:31,387
+Divergent Change, bütün değişikliklerimiz tek sınıfta ama çok sayıda.
+
+100
+00:23:32,207 --> 00:23:42,407
+Shark Grand Surgery'de ise mesela isteme yeni bir tür kredi eklenecek. 2 sınıftaki 5 metod ya da 3 sınıftaki 8 metod değişmeli.
+
+101
+00:23:43,092 --> 00:23:58,552
+Bu durumda da tek tek sınıf olarak baktığımızda az sayıda metotla değişiklik kalıyor ama sınıf sayımız çok olduğu için toplamda epey dağınık bir resim, dağınık bir kodlama değişikliği, düzeni ortaya çıkıyor.
+
+102
+00:23:58,552 --> 00:24:03,772
+Onu da Shotgun Surgery'ı da buluyoruz. Biraz da şöyle göstermek istiyorum mesela.
+
+103
+00:24:04,276 --> 00:24:11,276
+En son nasıl bir sınıf çaması ile uğraşmışız mesela.
+
+104
+00:24:11,276 --> 00:24:22,276
+Evet. Şu çıkmış mesela bizim visitor şeyinin. Güzel. Çok sayıda sınıf var.
+
+105
+00:24:22,276 --> 00:24:29,276
+Şimdi mesela Shotgun Surgery için diyelim ki bu kadar sınıfımızın diyelim ki
+
+106
+00:24:31,635 --> 00:24:43,076
+Şu metodun da değişiklik yapıyoruz. Şu metodun da değişiklik yapıyoruz. Şu yalanın türüyle ilgili bir değişiklik yapıyoruz. Şuradaki metodla değişiklik yapıyoruz.
+
+107
+00:24:43,536 --> 00:24:46,276
+Şuradaki reportta değişiklik yapmamız gerekiyor.
+
+108
+00:24:47,016 --> 00:24:51,956
+Bir de ne bileyim şuradaki kontakta da bir değişiklik yapmamız gerekiyor.
+
+109
+00:24:52,375 --> 00:24:53,936
+Bir bakıyorum değişiklikler.
+
+110
+00:24:54,276 --> 00:24:56,236
+Beş ayrı değişiklik işaretledim.
+
+111
+00:24:56,536 --> 00:24:57,316
+Altı tane falan.
+
+112
+00:25:07,827 --> 00:25:25,748
+Divergent Change için ise, aslında onu da yeşil olarak alayım. Şu Visit Dependent Task'ta, ondan sonra Cuma, Visit Task'ta ve Visit Project'ta değişiklik yapıyorum. Bir de, işte ne bileyim, Project Cost Visitor'da
+
+113
+00:25:25,791 --> 00:25:42,011
+İki değişiklik yapıyorum. Yeşillere baktığımda, evet yine çok sayıdalar ama daha toplu bir alandalar. Kırmızılara baktığımda yine çok sayıdalar ama daha dağınık bir alandalar. Daha dağınık olan, şifteyle ateş etmişim gibi.
+
+114
+00:25:53,791 --> 00:25:55,791
+Bu şekilde çizimlendirmişler.
+
+115
+00:26:06,387 --> 00:26:27,107
+Peki, buranın problemleri nasıl söz ediyoruz, ne öneriliyor? Burada da yine ekstra klas yapabiliriz arkadaşlar. Az önce konuştuğumuz şeyi. Bu söz konusu olan düzenlemiz gereken metotlardan ve onlarla ilgili üyelerden yeni bir ya da iki sınıfı çıkartırız. Ekstra klas yapabiliriz.
+
+116
+00:26:27,604 --> 00:26:36,784
+Ya da özellikle Shotgun Surgery'da daha çok söz konusu olabilecek Move Method ya da Move Field Refractor Eylemleri yaparız.
+
+117
+00:26:36,784 --> 00:26:45,203
+Bu ilgili metotlarda değişiklik yapıyorsak Move Method, Yelerde değişiklik yapıyorsak Move Field, Sisiyle birlikte yapıyorsak,
+
+118
+00:26:45,284 --> 00:26:55,584
+İkisini birlikte kullanıp bu sık değiştirdiğimiz veya yaygın olarak değiştirdiğimiz yalanları ve Y Metotları pek bir ya da iki sınıfta.
+
+119
+00:26:55,604 --> 00:27:08,644
+Toplarız. Mevcut sınıflar ile de bu yeni sınıf arasında da bir tür gerek sahip ilişkisi olur, gerek parça bütün olur, gerek kullanma olur. Hangisi işimize yarıyorsa bu türden ilişki de kurarız.
+
+120
+00:27:11,827 --> 00:27:28,168
+Ekstrakt klası görmüştük. Ekstrakt metot, Mu metot. Mu metot da işte metot. Bir bakıyoruz ki metot içerisinde tanımladığı sınıftan ziyade başka sınıflardan çağrılıyor.
+
+121
+00:27:29,140 --> 00:27:36,759
+O zaman galiba biz bu metodu doğru yere konumlandırmamışız fikri gelmeli aklımıza.
+
+122
+00:27:37,160 --> 00:27:42,980
+Ve bu metod en çok hangi sınıftan çağrılıyorsa bu metodu biz o sınıfa taşınmalıyız.
+
+123
+00:27:44,060 --> 00:27:52,720
+Bunu yaparken tabii ki onun kullanacağı bir alanlar söz konusuysa onları da taşınmamız gerekebilecektir.
+
+124
+00:27:53,800 --> 00:27:55,280
+Peki eski sınıfa ne olacak?
+
+125
+00:27:56,051 --> 00:28:01,251
+Bu taşıdığımız metodu eski sınıfından tamamen silmeyi tercih edebiliriz.
+
+126
+00:28:02,531 --> 00:28:08,815
+Gerçi bu durum genel metot arayüzünü API'yi değiştireceği için...
+
+127
+00:28:08,816 --> 00:28:32,535
+Refactoring kapsamında baktığımızda tercih edilmeyebilir. Çünkü Refactoring'in en önemli hedeflerinden biri geriye doğru uyumluluğu korumaktır. Dışarıya bir eden hizmet arayüzünü değiştirmeden iç yapıya değiştirmektir. O yüzden mevcut sınıftan tamamen taşınsak bu Refactoring'in özüne biraz aykırı bir iş yapmış oluruz.
+
+128
+00:28:33,044 --> 00:28:55,684
+Fakat bundan dairesini yapabiliriz elbette. O metodu tamamen silmeyiz eski yerinden. Metodun imzası kalır. Bövdesinde ise biz bu metodu nereye taşıdıysak eski haline gelen metod çağrısının bu yeni taşıdığımız yere iletilmesi sağlanabilir. Bu arada delegation yok genelde.
+
+129
+00:28:57,044 --> 00:29:14,984
+Bu düzenleme aslında başka refaktör eylemlerinin alt adımları şeklinde de düşünülebiliriz. Mesela ekstra klas yapacağız. Ekstra klas yaptığımızda eski sınıftan tabii ki bazı üyalarını, üyeme tuttuğunu da oraya taşımış olacağız aslında.
+
+130
+00:29:14,984 --> 00:29:25,044
+O yüzden belki bunu başlı başına bir refaktör eylemi değil, daha özür dilerim, yarışlıkla bastım. Başlı başına bir refaktör eylemi değil, başka refaktör eylemi değil.
+
+131
+00:29:25,044 --> 00:29:31,703
+Çünkü eylemlerinin alt adımları gibi düşünebilirsiniz ama bence başlı başlı bir faktörlük olmayı da hak ediyor.
+
+132
+00:29:31,703 --> 00:29:41,403
+Çünkü illaki klas ekstrakt etmek zorunda kalmadan mevcut sınıflara da bunu taşımak söz konusu olabilir.
+
+133
+00:29:41,923 --> 00:29:47,864
+Nihayetinde öncesinde klas 1'de yalan e-metodun klas 2'ye taşımasını tercih etmişiz.
+
+134
+00:29:53,044 --> 00:30:08,884
+Bu M metod çağırılıyorken, klasik 2'nin içerisindeki 8 ayrı metoddan bu M metod çağırılıyorsa, demek aslında biz bunu en başında diye tabalıymışız diye düşünüp bu faktörlük eylemini yürütmeliyiz.
+
+135
+00:30:12,948 --> 00:30:17,107
+Peki, sırada Limitive Obsession var.
+
+136
+00:30:21,844 --> 00:30:31,844
+Obsession takıntı demek arkadaşlar. Kendinizi kurtaramadığınız, ısrarla yaptığınız hareketler ya da düşünceler.
+
+137
+00:30:40,084 --> 00:30:54,584
+İlkel tiplerinin kullanımına takıntıdan bahsediyoruz. Ama takıntı değil de ben şahsen aşırı kullanımı şeklinde çevirmeyi tercih ettim.
+
+138
+00:30:55,155 --> 00:31:07,936
+Özellikle burada yapısal programlama konusunda uzun süreler çalışmış olan kişiler, ülke artıkleri de yoğun olarak kullanma eğilimi göstermektedirler.
+
+139
+00:31:08,936 --> 00:31:20,779
+Bunların da farklı farklı istismar edilme, farklı farklı kişilik kullanım yöntemleri olduğu için, bunları şimdi uzun uzun burada tartışmak yerine...
+
+140
+00:31:20,819 --> 00:31:30,819
+Her birini hangi yanlış aşırı kullanım türüyle ilişkiliyse o konuda konuşmak en doğrusu olacak.
+
+141
+00:31:30,819 --> 00:31:36,587
+Hep replace bir şey, which bir şey şeklinde kalıplar.
+
+142
+00:31:37,236 --> 00:31:57,236
+Onun dışında az önce konuştuğumuz Exact Class ve daha önceki hafta konuştuğumuz özellikle Long metodu, özellikle de aşırı uzun metot parametresi listelerini sarkmakta kullandığımız Introducement Parameter Object Refactoring NM'leri de var. Onlar da aslında...
+
+143
+00:31:58,451 --> 00:32:17,251
+Yaptığımız tasarımın yapısallık kokusunun üzerinden atılması, daha Nesneye Mühendisliği şekilde kokuması için kullanabileceğimiz diğer faktörünün eylemleridir. Aynı zamanda onları da bir zikredelim, hatırlayalım. Şimdi gelelim şu bireysel RIPNACE işlerine.
+
+144
+00:32:26,163 --> 00:32:44,844
+Basit bir üye alan yerine bir sınıf ile modellenmesi en doğrusu olacaktır. Örneğin, öncesinde bizim bir order sınıfımız var ve bu siparişi kimin verdiğinin bilgisi order sınıfında adını custom'u verdiğimiz string türünden bir veri ile tutulmakta.
+
+145
+00:32:44,844 --> 00:32:53,163
+Ne bileyim işte. Bu kalemden yüzlü paket siparişi vermişim.
+
+146
+00:32:53,455 --> 00:33:09,455
+Bu siparişi veren, Yulisayar Mühendisler Çiftçik diye bir sting üniversitesinde sipariş kayıtında tutuluyor. Tamam da, bu siparişi gerçekten veren kişinin farklı bilgilerine ulaşmamız gereken senaryolarda adresi,
+
+147
+00:33:10,195 --> 00:33:25,515
+Mesela en çok sipariş veren müşterilerimiz, ilk 100 müşterilerimiz kimler? Bunların müştesi. Ve bunların erişim bilgilerinin de verildiği, farklı bilgilerinin de verildiği bir rapor şeklinde şeyler belirteceksek.
+
+148
+00:33:25,940 --> 00:33:40,440
+Bu önceki halde ne yapacağız? Sitemizdeki bütün müşteri kayıtlarını tarayıp, ismi o orderdaki string ile aynı olan müşterilerde bu işleri yapmak şeklinde olacak. Bu da çok verimsiz bir şey.
+
+149
+00:33:40,440 --> 00:33:51,940
+Bir nevi bu isim üyesini, ne bileyim, biraz da database-driven design ile çok fazla öne koşmuşsak, bir tür forum key olarak kullanıyoruz mesela.
+
+150
+00:33:52,243 --> 00:34:02,844
+Sonra gidip işler tablosuna bakıyoruz. Ama bu işler database ile daha verimli bir şekilde kullanabiliyorken, Nesneye'nin de bu hiç verimli değil.
+
+151
+00:34:02,844 --> 00:34:15,003
+İki ayrı listede, bir listede oldunlar tutuyor, bir listede işler tutuyor. Bütün kişinin Nesneye'nin aslında dolaşıp, senin adın bu mu diye soracağız yani.
+
+152
+00:34:15,003 --> 00:34:16,683
+Hiç de verimli değil.
+
+153
+00:34:17,012 --> 00:34:44,351
+Bu yüzden burada aslında başlı başına bir varlık olması gereken, burada demek ki başlı başına bir sınıftan nesneler türetilen nesneler olması gereken üye alanları, nesne yerine ne bileyim işte integer tam sayı, işlerin ID'si mesela, veyahut da işte string. String tam ilke değil ama yine de aslında bir nevi işlediğim gibi foreign key gibi kullanım söz konusu.
+
+154
+00:34:45,012 --> 00:34:51,351
+Bunlar doğru kullanım şekilleri değil. Bizim aslında bir müşteri sınıfımız, bir de sipariş sınıfımız olması.
+
+155
+00:34:51,351 --> 00:35:06,331
+Ve bir müşterinin, aslında biri ters tarafı da konuşmuyor. Örnek bir müşterinin bir sipariş vermesi ama madem burada elmas söz konusu, elmas bütünü gösterir bir tüm üniversite siparişler söz konusu.
+
+156
+00:35:08,768 --> 00:35:17,768
+Bir siparişinde diğer tarafına baktığımızda o da bir okuştur. Bir siparişinde hangi müşteri tarafından bilinmesi söz konusudur.
+
+157
+00:35:17,768 --> 00:35:25,768
+Böylece ben bir order nesnesinin müşterisini aldığımda onu komple bir nesne olarak ele almış olabiliyorum tek bir adımda.
+
+158
+00:35:25,768 --> 00:35:34,699
+Ondan sonra o tek adımda elde ettiğim örneğimizdeki müşteri nesnesini başka diğer bütün işler için rahatlıkla sorgulayabilirim.
+
+159
+00:35:35,956 --> 00:35:36,816
+Olay, blog.
+
+160
+00:35:37,204 --> 00:35:49,504
+Ki ayrıca programın bütününe baktığımızda, büyük olasılıkla işte belli müşterinin tüm siparişlerin alanması ya da daha önce risklettiğim örnek senaryolar gibi birçok iş yapıldığını da göreceğiz.
+
+161
+00:35:50,084 --> 00:36:03,204
+Bu işler çoğaldıkça, çoğalmada eğilimindedir zaten. Biz müşteri sınıfını yeni bir sınıf olarak orderdan ayırmadığımız sürece bu sipariş sınıfına yazdığımız kodlar aşırı şekilde şişmeye başlayacak.
+
+162
+00:36:03,204 --> 00:36:05,204
+O yüzden iyisini yollayacağız.
+
+163
+00:36:05,204 --> 00:36:09,044
+Yakınken, erkenden, şimdiden biz bu sınıfları ayıralım diyoruz.
+
+164
+00:36:09,264 --> 00:36:13,244
+Ve ekranda gördüğünüz gibi biz düzene geçiyoruz.
+
+165
+00:36:17,235 --> 00:36:30,096
+Şimdi ilkellerin bir farklı kullanım türü ise sabit değişkenler kullanımına fazla alışkanlık, fazla meyledilmesi şeklinde kendini gösterebilmektedir.
+
+166
+00:36:30,855 --> 00:36:39,476
+Örneğin kişilerin kan gruplarının da yapılması gerekir. O zaman personal sınıfında birkaç tane kan grubumuz var. 0, A, B ve A, B.
+
+167
+00:36:39,891 --> 00:36:58,472
+O yüzden dört ayrı sabit tanımlıyoruz. Hem Partik hem Final hem Statik. Yani aslında hem Final hem Statik. İkisi birlikte olduğunca Partik'te tanımlayabiliriz bunu. Ve kan kişinin, kan grubunun gerçekten ne olduğunu belirtmek için ise normal bir üye alanımız var. Burada Blood Graph. Yani Blood Graph'a.
+
+168
+00:36:58,867 --> 00:37:18,948
+O diye atamışsak 0 grubu, A diye atamışsak işte A grubu gibi. Ki arka planda da bunların içine gelen tam sayı değerleri olacak. Mesela O grubu ya da 0 grubu için 0 sayısı, A grubu için 1 sayısı, B grubu için 2 sayısı, AB grubu için ise 3 sayısı mesela atanmış olabilir.
+
+169
+00:37:21,012 --> 00:37:29,012
+Ama bloodgrab int dediğimize göre, biz bu bloodgrab'a 8 değeri atarsak ne olacak?
+
+170
+00:37:29,012 --> 00:37:37,012
+Yani öyle bir değer yok ki, mantığı yok. Böyle ters durumlara geçebiliriz olasılığımız çok.
+
+171
+00:37:37,012 --> 00:37:43,012
+O yüzden ya biz bu kan grubu ile ilgili ayrı bir sınıf oluşturup,
+
+172
+00:37:43,923 --> 00:38:06,963
+Eğer illaki bu arada bu her bir nesneyi de blood group'un kendi türünden statik bir alanlar olarak tanımlayıp daha sonra person ile bu blood group arasında birebir sahiplik ilişkisi veririz.
+
+173
+00:38:07,603 --> 00:38:34,423
+Bunu aslında bu şekilde kodlamak yerine birçok dilde bunun altyapısının hazır olarak sunulduğu enum yapısı vardır. Enum'u da kullanabiliriz aslında. Yani böyle işte farklı bilgi değerlerini sembolize etmek için farklı sabit değerler kullanmaktansa bunları başlı başına bir sınıf olarak düşünüp, mesela kan grubu ise kan grubu için ayrı bir sınıf.
+
+174
+00:38:35,603 --> 00:38:38,983
+Faktörü var. Pozitif veya negatif. Onun için ayrı bir sınıf.
+
+175
+00:38:39,327 --> 00:38:55,007
+Ondan sonuçta. Bu bir müşteri ise normal müşteri, düzenli müşteri, flatin müşteri falan filan birkaç tane farklı kategorimiz olsun. O kategori için ayrı bir ünlü.
+
+176
+00:39:04,847 --> 00:39:17,167
+Nesneye tutacaksak kullanılır. Bunların her birini ayrı bir emin türünden, ayrı bir üye alan olarak kullanmak daha doğrudur. Primitif sayısal değişkenler yerine.
+
+177
+00:39:17,167 --> 00:39:29,607
+Benim bu bilmeyen yoktur diye düşünüyorum. O yüzden bu son iki yazı atlıyorum. Bunu nasıl kullanacağımı gösteren. Gelelim sarıki yanlış ilke kullanımına.
+
+178
+00:39:31,443 --> 00:39:55,563
+Bir sınıftan olan nesnelerin farklı art türleri olabilecekse bunları da bir tip kodu altında toplayabiliyoruz. Örneğin şimdi employee sınıfımız var. Bizim ne gibi çalışanlarımız olabilir şirketimizde? Mühendislerimiz olabilir, satış elemanlarımız olabilir, hizmet elemanlarımız olabilir.
+
+179
+00:39:56,403 --> 00:40:17,403
+Kar merkezi elemanlarımız olabiliriz gibi farklı kategorilerde çalışanlarımız olabilir. Bunlardan her birini sabit değerler şeklinde tanımlayıp bu türlerden hangisinden olduğunu belirlemek üzere bir tane üye alanımız varsa
+
+180
+00:40:19,219 --> 00:40:30,519
+Kodu yazmış olalım. Böyle bir employee sınıfın kaynak koduna baktığımızda göreceğimiz şu. Herhangi bir iş yapacak.
+
+181
+00:40:31,347 --> 00:40:47,047
+Bir görev yapacak. Veyahut da bunun maaşını hesaplayacağız. Veya bazı özlü katlarını hesaplayacağız. İkramiyesini hesaplayacağız bayram denemeyeceğimiz. Her ne iş yapılacaksa bu empleriyle ilgili. O işlerin her birinde, daha doğrusu o metodların her birinde.
+
+182
+00:40:47,539 --> 00:40:51,940
+Ya bir switch case yapısı ya da if else if else if yapısı görüyor olacağız.
+
+183
+00:40:51,940 --> 00:41:11,139
+If type eşit eşit engineer o zaman şöyle yap. Else if type eşit eşit servicedesk o zaman böyle yap şeklinde uzun uzun if else'ler içeren kodlar görüyoruz.
+
+184
+00:41:15,539 --> 00:41:40,519
+Bu konumuz gerektiğinin bir göstergesidir. Hem de zaten long method ve long class konularını gördük. Bu kodu uzatmaya birebiliriz. Bunun yerine bu farklı çalışan türlerini ayrı birer sınıf oluşturup employee sınıfının alt sınıfları yapmak en doğrusudur.
+
+185
+00:41:40,927 --> 00:41:56,108
+Böylece, Employee'nin bu her bir metodundaki if-else-felse içerisindeki case'leri her birini kendisiyle ilgili olan alt sınıf türüne taşımak sayesinde dağıtırız.
+
+186
+00:41:56,708 --> 00:42:00,188
+Employee sınıfı son derece değerli toplu hiçbir sınıf olur.
+
+187
+00:42:00,659 --> 00:42:10,399
+Hem de hangi tür çalışanla yapılan işler söz konusuysa o işler kendi spesifik çalışan alt türüne de...
+
+188
+00:42:10,400 --> 00:42:31,079
+Olur, başka yerde olmaz. Oraya odaklı şekilde kodlanmış olumuz. Bu çalışan türleriyle ilgili bir değişiklik yapmamız gerektiğinde, örneğin, Enginer'in belli bir konuda çalışma biçimini değiştireceksek, hiç sales'ın ve diğer sınıfları da maçma sonunda kalmadan bu işi yürütebiliriz. Anlamına gelmektedir. Bu yaptığımız değişiklik.
+
+189
+00:42:33,780 --> 00:42:49,780
+Önceki, o kadar süresi konuştum dediğim şey burada görün yani. Çalışan türleri, ondan sonra bir iş yapacağız. Hangi tipini bir sığış içerisinde koyup, her birinin keyifinin içerisinde bir şeyler yapmaktansa.
+
+190
+00:42:50,739 --> 00:43:13,119
+Rastgele bir çalışan, anaylarda bir çalışanımız olması gerekmiyorsa, Employee sınıfını soyut bile tanımlayabiliriz. Bundan kalıtım da Engine'in, Salesman ve Manager sınıflarını oluştururuz. Eskisindeki her bir case'in içerisindeki işleri ilgili mesela buradaki örneğinizdeki work metronun içerisindeyken sadece ilgili case'in içeriğini alıp ilgili alt sınıftaki ilgili work metronun altına taşırız.
+
+191
+00:43:14,099 --> 00:43:33,979
+Ha bu arada buradaki switch içerisinde bir tane default case varsa da o da pekala employee sınıfında yer alabilir. O zaman employee abstract yapmayız. Varselan bir çalışma biçimi varsa o çalışma biçimi yürütür. Onu yürütebilecek nesneler tanımlayabilmek için de soyut yapmayız.
+
+192
+00:43:42,931 --> 00:43:57,631
+Böyle. O şeye de benziyor. Press Conditioning Polymorphism diye bir nifat yönetim eylemi de var. Benziyor. Ama burada, şu an gördüğünüz az önce daha özelleşmiş hali.
+
+193
+00:44:00,115 --> 00:44:17,275
+Tip kodunu değiştiriyoruz. Bu herhangi bir alelade bir switch ya da if else's değil. Bu iş yapacak Nesne'nin türünün ne olduğuna göre farklı darlanışlar yürütmenize bir kod olduğu için replace type code bir subclass şeklinde adlandırmışız.
+
+194
+00:44:19,576 --> 00:44:21,695
+Yani for group'ta öyle adlandırmış.
+
+195
+00:44:22,260 --> 00:44:36,260
+Evet, şimdi önceki örneğimizde bir kalıtım zinciri kurduk. Yani mevcut sınıftan yine alt sınıfla oluşturduk. Bunu istemiyorsak, alt sınıf oluşturmak istemiyorsak...
+
+196
+00:44:39,123 --> 00:45:00,303
+Belki, çünkü bu oluşturmayı düşündüğümüz sınıfı belki başka sınıflardan da kalıtım alması gerekebilir. Hatta o başka sınıflardan bilinen kalıtım alması çok daha önemli olduğunu da fark edebiliriz. Bu nedenle bu kusuru düzeltmek için Extract Subclass yapmayacaksak ne yapabiliriz?
+
+197
+00:45:00,788 --> 00:45:08,307
+Stats veya Stratégie Tasarım Kılıbı'nı uygularız. O zaman hiçbir şekilde kalıtım kullanmayız.
+
+198
+00:45:08,668 --> 00:45:24,588
+Bakın daha evvelki Employee'nin içerisinde Engine Assignment ve Management Frank gibi türler var diyken artık Employee'de Employee Type diye bir üye alan anılar o türden bir nesneyle birebir sahiplik ilişkisi içerisinde olur.
+
+199
+00:45:28,788 --> 00:45:55,327
+Bu da engineer, salesman, manager her neyse bunlar olur. Ve employee'nin work metodu içerisinde bu employee type'ın work'ı çağırız. Ve o sırada bu çalışanı hangi tür çalışan olarak belak etmişsek onun employee type nesnesi verileceğinden o alt somut sınıfın work metodu nasıl kodlanmışsa o çalışmış olur.
+
+200
+00:45:55,795 --> 00:46:23,416
+Aslında bir kadar uzun söyleme bile gerek yoktu. Strateji kalıbını biliyorsunuz siz. Bu çözüm aslında bir öncekine daha esnek de bir çözüm. Öncekine geri dönüyorum. Öncelikle bir mühendis olarak ele aldınız çalışanınızı. O mühendis çalışan 5-6 sene çalıştı, yoruldu. Ben biraz daha böyle artık mikronik işler de yapmak istiyorum dediğimde.
+
+201
+00:46:23,795 --> 00:46:44,076
+Amiri onu satış departmanına atayabilir. Şu tasarımda bir engineer nesnesini salesman nesnesinin haline doğrudan getirmek mümkün değil. Yapacağımız şey yeni bir tane salesman nesnesi oluşturmak. Mevcut engineer nesnesinin durum bilgisini salesman'a atmak.
+
+202
+00:46:44,659 --> 00:46:57,499
+Salesman'a özgür durum bilgileri varsa onları da ayrıca almak ve artık engineer nesnesini silip Salesman nesnesini tutmak şeklinde bir hareket yapmamız gerekiyor.
+
+203
+00:46:57,499 --> 00:47:00,239
+Ve pey ayrıntılı bir iş. Halbuki.
+
+204
+00:47:00,947 --> 00:47:21,447
+Şu tasarımda strateji kullandığımızda, daha evvel Employee Engineer rolü vermişken artık Salesman görevi veriyoruz diyebiliriz. Tek bir atama ile bu işi yapabiliriz. Ve o ilgili Employee nesnesini de silmemiz gerekmemekte. Bu da önemli bir avantaj.
+
+205
+00:47:25,012 --> 00:47:28,652
+Son olarak, Replace Array with Object.
+
+206
+00:47:29,108 --> 00:47:56,508
+Çok boyutlu dizilerde kayıt tutmamız söz konusu olabiliyor ya da çok sayıda tek boyutlu dizide kayıt tutmamız söz konusu olabiliyor. Bunu biz, şey demin, nisansta birinci sınıftaki öğrencilere daha splat yapısını falan görmüyorlarsa, bilmiyorlarsa bir varlıkla ilgili farklı türlerden verilerin tutulacağı zamanda kullanabilecekleri bir yol olarak gösteriyoruz.
+
+207
+00:47:57,043 --> 00:48:08,384
+Göstereş o gösteriş, bütün hayatları boyunca o şekilde kod yazmaya devam edebilirler. Halbuki biz bunu çok daha iyisini öğrendik Nesneye Dayalı'nda.
+
+208
+00:48:08,384 --> 00:48:21,043
+Buradaki örneğimizde, takımların isimleri, attığı gol sayıları ve puanları, daha doğrusu puanları ve attığı gol sayıları yer almaktadır.
+
+209
+00:48:21,043 --> 00:48:23,043
+Bunları nasıl tutacağız?
+
+210
+00:48:23,507 --> 00:48:28,767
+Önce şöyle tutmuşuz. İki boyutlu bir string dizisi tanımlamışız.
+
+211
+00:48:32,788 --> 00:48:51,788
+Bundan, bu iki boyutlu dizimizde her bir elemanda her satır bir takımla ilgili bilgiler. Satırın ilk sütumu takımın adı, satırın ikinci sütumu takımın puanı, satırın üçüncü sütumu takımın aracı şeklinde.
+
+212
+00:49:00,788 --> 00:49:05,788
+Aynı satırda, aynı takımın farklı verileri, aynı satımın farklı stumlarında.
+
+213
+00:49:05,788 --> 00:49:13,788
+Ki, burada bakın, stringleri balındırabilmek için sayısal değerleri de bile string olarak tutmak zorunda kalıyoruz.
+
+214
+00:49:13,788 --> 00:49:17,788
+Belki bunun biraz daha iyisi şöyle olabilir.
+
+215
+00:49:18,452 --> 00:49:30,752
+Team Names, String dizisi, Points, Int dizisi ve Average, Int dizisi olmak üzere üç ayrı tek boyutlu normal dizi.
+
+216
+00:49:30,752 --> 00:49:39,952
+Bir boyutlu dizi, üç tane bir boyutlu dizide kullanabiliriz. Her farklı dizinin aynı indisindeki veriler aynı varlıkla ilgili, aynı takımla ilgili verilerdir.
+
+217
+00:49:39,952 --> 00:49:45,252
+Ama işte burada da bir gereksiz bir dağılma söz konusu.
+
+218
+00:49:46,452 --> 00:50:00,452
+Aynı varlığın farklı veri, farklı farklı yerlerde aynı varlığın aynı verisini aynı ilişkide unutabiliriz. Çok çok şeyle ters gidebilir. Bunun yerine...
+
+219
+00:50:01,780 --> 00:50:14,580
+Ben Score diye bir sınıf oluştururum. Hatta, daha doğrusu, belki team derim ama ne bileyim, bu da odak puanlar olduğu için, Score sınıfın üç tane üyesi olur.
+
+220
+00:50:14,580 --> 00:50:29,780
+Birincisi String takım adı, ikincisi şey puanı, üçüncüsü de Avelacı şeklinde. Üç üyesi olur ve biz o sınıf türünden Nesneye içecek dizi.
+
+221
+00:50:29,780 --> 00:50:33,780
+Bu olay bu.
+
+222
+00:50:37,780 --> 00:50:46,780
+Son olarak da feature n var diye bir sorumuz var. Bunu özellik kıskançlığı diye sevindim.
+
+223
+00:50:55,956 --> 00:51:06,556
+Ait olduğu sınıfın üyelerinden daha çok başka sınıfların üyelerine erişiyorsa buna da özellik sınavçlardır. Bu biraz şeye benziyor.
+
+224
+00:51:06,864 --> 00:51:26,423
+Ki çözümlerinden biri de aslında muhmetot olacak aslında çözüm de o. Fakat bu biraz daha farklı. Burada belirli bir üyenin, daha önce gördüğümüz belirli bir üyenin başka sınıflardan daha çok kullanılmasıydı. Bu olaya tersten bakıyor.
+
+225
+00:51:27,936 --> 00:51:51,135
+Bir metot kendi sınıfındaki üyelerden ziyade başka sınıftaki üyeleri daha fazla gelişiyor. O zaman buna feature enlife diyoruz. Ama çok derken buna bir eşik vermek gerekir. Ortalama olarak projenin bütününe bakıp,
+
+226
+00:51:51,476 --> 00:51:58,795
+Bu ortamaları öyle belirleyebiliriz veya kendimiz makul bir eşit de belirleyebiliriz.
+
+227
+00:51:58,795 --> 00:52:10,476
+Suiz değil mi deriz mesela? Buna da nasıl karar veriyoruz? Belki daha evvel yaptığımız ve başarılı olarak adettiğimiz, varsaydığımız projelerde bu ortamaları hesaplayıp
+
+228
+00:52:10,559 --> 00:52:36,619
+Bunun en fazla %10 üstüne taşılabilir hata payı. Daha fazlaysa demek ki burada kod kusuru var diyoruz şeklinde kararlar verebiliriz pekala. Bu sıkıntıların kök nedeni de genelde o üyeyle ilgili sorumlulukların doğru atanmadığının göstergesidir.
+
+229
+00:52:37,300 --> 00:52:54,059
+Tabii ki bağlaşım diye bir şey var ve sıfır bağlaşım olamaz. Başka sınıflardan nesneleri erişmek, kullanmak zorundayız. Bir nesne, bir sorumluluğu yerine getirdik için başka nesnelerle hiçbiri içerisinde olacaktır. Kaçınılmaz bir şey. Hiçbir sınıf tek başına kendi metotlarını kullanmaz demek oluyor yani.
+
+230
+00:52:54,547 --> 00:53:09,547
+Ama bunun sıfır olmaması gerekiyor. Evet ama çok fazla sayıda orantılı olarak baktığımızda yüzde yirmi gibi bir eşikten daha fazla da olmaması gerekmektedir.
+
+231
+00:53:09,547 --> 00:53:16,547
+Böyle deyince aklınıza strateji ve visitor kalıpları gelebilir belki.
+
+232
+00:53:16,788 --> 00:53:43,888
+Her bir strateji gerçeklemesi işlerini yapabilmek için atanmış oldukları nesnenin durum bilgisini sorgulaması gerekebilecektir. Bu bir özel kıskançlığı değildir. Çünkü zaten biz bu işi bu yeni sınıflar nesneye yaptırmayı istiyoruz. O yüzden mecbur o yeni sınıf ihtiyacı olan bilgileri alacak. Kaçarı yok.
+
+233
+00:53:44,436 --> 00:53:58,036
+O yüzden bu bir feature and why değildir. Veya Luther kalıbına baktığımızda, işte bir visitor nesnesi, ağaç yapısındaki tek tek bütün nesnelerin düğümleri vizit ediyordu.
+
+234
+00:53:58,036 --> 00:54:03,036
+Düğümlerde bunu exact ediyordu. Ondan sonra düğümler kendisine veriyordu bunu.
+
+235
+00:54:03,380 --> 00:54:17,600
+Ve o visitors, o ziyaret nesnenin durumunu sorgulayarak ederekten yapması gereken şeyleri yapıyordu. Burada da olay stratejideki tartışmanız gibi.
+
+236
+00:54:18,228 --> 00:54:36,567
+Zaten bu nesnelerin kullanılmasını istiyoruz. O yüzden böyle bir yere gittik ve o kalıbın gerekliliklerini de düşünüyoruz. Bu gerekliliklere ihtiyacımız olduğu için bunu yaptık. Bunlar Fiction NY değildir arkadaşlar. Peki Fiction NY'yi nasıl çözeriz?
+
+237
+00:54:36,943 --> 00:54:53,943
+İlk başta aklımıza gelen Mühmetot. Daha çok farklı yerleri kıskanan metodu en çok kıskandığı yer neresiyse oraya atışırız. Böylece artık onu daha az kıskanç bir hale getiririz.
+
+238
+00:54:53,943 --> 00:55:01,183
+Dediğim gibi hiç kıskanç olacak diye bir durum yok ama mümkün olduğu kadar en az kıskançlık düzeyini indiririz.
+
+239
+00:55:02,643 --> 00:55:20,863
+Ya da eğer bu ilgili sıkançlık hususu, ilgili taşımayı düşündüğümüz, düşünebileceğimiz metodun tümünde değil de sadece bir kısmında ise o zaman sadece o bir kısmı çıkartıp ilgili yere taşırız.
+
+240
+00:55:21,323 --> 00:55:30,643
+Kökten aktarmayız, yani komple muğretmeyiz. Sadece ekstrakt edip ekstrakt ettiğimiz kısmı sıkandığı yere koyarız. Bu da yeterli olacaktır.
+
+241
+00:55:30,643 --> 00:55:32,183
+Aradaki fark budur.
+
+242
+00:55:32,903 --> 00:55:33,923
+Evet, peki ara.
+
+243
+00:55:36,043 --> 00:55:44,823
+Hedeflediğimiz biçimde bütün kod sınav ve refactoring hedeflediğimiz içeriği şeyde bizdik, oluşabildik.
+
+244
+00:55:45,184 --> 00:56:13,184
+Folder'ın kitabında bundan daha da fazla kod simal ve refactoring eylemleri var. Fakat ben bunların içerisinden bir seçme derdini yapmış oldum. Hangi kod simal ile hangi refactoring eylemleriyle birlikte kullanılabiliyor. Bunların şöyle bir ilişkisine baktığımda kendi içerisinde en yoğun ilişkiye sert bir art kümeyi seçtim. Yoksa bütün hepsini anlatmaya kalksam zaten her hafta...
+
+245
+00:56:13,184 --> 00:56:20,184
+Haftada 3'er saati dolu dolu yapsak diye yetişecek bir şey değil. O yüzden böyle bir tercih de yapılmış.
+
+246
+00:56:20,184 --> 00:56:25,184
+Tasarım kalıplarıyla bir şeyin nasıl dolu yapıldığını öğrenmeye ek olarak,
+
+247
+00:56:25,184 --> 00:56:33,036
+Kurt Simer'lerde çalışıp bir şeyin nerede yanlış olduğunu tespit etmek ve nasıl düzeltebileceğini bilmekle,
+
+248
+00:56:33,139 --> 00:56:45,639
+İyi bir tasarım yapabilmenin, bunu öğrenmenin, bu konuda deneyimi kazanmanın iki farklı yüzüdür. Elmanın iki ayrı yarısıdır, Pıranın iki ayrı yüzüdür. Bu ikisinin de birlikte bilinmesi gerekmektedir.
+
+249
+00:56:46,420 --> 00:57:12,139
+Şimdi, bugünlük bu kadar istiyorum. Haftaya ise folder'ın en başta yaptığını biz en sonunda yapacağız. Önce bütün bu kopuk kusurlarını ve düzeltme yöntemlerini çalıştıktan sonra böyle epey kötü kokan kusurlu bir kodu adım adım düzenlemelerle iyileştireceğiz. Haftaya din haftaya sunamamız var. Ondan sonraki hafta bu sınıfı da bitireceğiz.
+
+250
+00:57:12,884 --> 00:57:21,804
+Herkese haftaki sınavda başına daha verelim. Şimdilik alasını artık.
+
+251
+00:57:23,724 --> 00:57:24,503
+Tümünü kapatalım.
