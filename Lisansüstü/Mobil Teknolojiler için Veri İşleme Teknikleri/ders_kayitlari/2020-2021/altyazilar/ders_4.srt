@@ -1,0 +1,2719 @@
+1
+00:00:56,371 --> 00:00:59,012
+Merhaba arkadaşlar. Hepiniz hoş geldiniz.
+
+2
+00:00:59,871 --> 00:01:00,652
+Merhaba hocam.
+
+3
+00:01:03,932 --> 00:01:11,891
+Dersdeki öğrenci sayımız 16'ya çıktı. Son birkaç hafta eklenenlerle birlikte yeni katılanlar da var aramızda.
+
+4
+00:01:12,352 --> 00:01:29,951
+Onlara da hoş geldiniz diyorum. Çok fazla onları tanıma fırsatımız olmayacak maalesef. Çünkü çok hafta geçti. Herkesi tanımıştık ama yeni gelenlere şu anda vakit ayırmak için pek vaktimiz yok. Geçen haftada 29 Ekim nedeniyle dersimizi yapamamıştık.
+
+5
+00:01:30,867 --> 00:01:41,268
+Şimdi o açığı da kapatmamız gerekiyor. Öncelikle herkesin geçmiş Cumhuriyet Bayramı kutlu olsun. İzmir dolayısıyla da İzmir'de akrabası sevdikleri olanlar da geçmiş olsun diyorum.
+
+6
+00:01:44,756 --> 00:02:10,396
+Bu hafta bir ödev vereceğimi söylemiştim. O yüzden de katılımın önemli olduğundan bahsetmiştim. Şimdi sizlere birazdan ödev konusunu açıklayacağım. Bu ödev konusunu aslında birinci ödev olarak düşünüyordum ama sonra bunun daha kapsamlı bir ödev olması gerektiğine karar verip bunu dönem projeniz olarak belirledim. O yüzden dönem projenizi aslında bugün anlatıyor olacağım.
+
+7
+00:02:12,756 --> 00:02:33,635
+Önce böyle bir deneyim yaşayan vardır. Ama tabii bilemiyorum. Belki de hiç bu anlamda bir deneyim yaşayan olmamıştır. Bunu birazdan konuştuğumuz zaman göreceğiz. Dersin ilk bölümünü bu dönem projesini anlatmak ve bu dönem projesiyle ilgili ihtiyaç duyacağımız bilgileri vermeye ayırıyorum bugün. İkinci bölümde normal dersimize kaldığımız yerden devam edeceğiz.
+
+8
+00:02:35,668 --> 00:02:57,268
+Çok çeşitli konular var tabii bu dersin ilgi alanına giren. Akıllı ulaşım da bu konulardan bir tanesi. Özellikle crowdsourcing tekniğini kullanarak insanların cihazlarından bilgi toplamaya yönelik ya da hali hazırda deploy edilmiş cihazlardan bilgileri toplayarak
+
+9
+00:02:59,123 --> 00:03:24,183
+O bilgileri yorumladıktan sonra çiftler üretmek üzerine kurulu bir teknik bu. Bu bahsedeceğim yapıda da bu tekniğin bir kısmı kullanılıyor aslında. Biraz sonra konuşacağımız konu üzerinde. Şimdi hemen doğrudan dönem projemize geçiyorum. Biraz sonra bahsedeceğim konu üzerine bir derleme makale hazırlamanızı istiyorum.
+
+10
+00:03:25,747 --> 00:03:30,828
+Herkes kendi bakış açısıyla bu devleme makalesini hazırlıyor olacak.
+
+11
+00:03:31,828 --> 00:03:33,804
+Süre olarak…
+
+12
+00:03:33,876 --> 00:03:55,135
+14. haftanın son dersine bunu teslim edeceksiniz. Başka bir ödev daha vereceğim için final dönemine uzatmayacağım bu süreyi. Kesinlikle süre uzatma yapmayacağım. Yani daha önce şunu deneyin dedim. Şu uyarıda bulunayım. Uzun bir süre verdiğim zaman öğrencilerden de bazen eleştiri olarak şunu istediğimde bana geri dönüş yaptı.
+
+13
+00:03:55,135 --> 00:04:01,555
+Hocam süre uzun olduğunda aslında biz biraz sona bırakıyoruz ve bu bizim için iyi olmuyor.
+
+14
+00:04:01,876 --> 00:04:19,336
+Parça parça verebilir misiniz diye. Bu söylediğim ödevin ara çıktısını sizden isteye olacağım bir kez muhtemelen. Belki o sizin için bir motivasyon kaynağı olacaktır ama bu ödevi bir parçaya, birden fazla parçaya bölmek çok mümkün değil.
+
+15
+00:04:29,620 --> 00:04:51,659
+Alt parçaları çok bölmeyi düşünmüyorum. O yüzden 14. haftanın dersine teslim edilecek şekilde bir skecimiz var. Bu da yaklaşık olarak 9 hafta ediyor. Oldukça iyi bir süre derleme makale hazırlamak için. Derleme makalesiyle araştırma makalesi arasındaki farkı mutlaka biliyorsunuzdur diye düşünüyorum. Bana açıklayabilecek biri var mı?
+
+16
+00:04:57,875 --> 00:04:58,915
+Ya da bilmiyorum.
+
+17
+00:04:58,935 --> 00:05:00,975
+Ben açıklayabilirim hocam biraz bildiğim kadarıyla.
+
+18
+00:05:01,575 --> 00:05:01,915
+Efendim?
+
+19
+00:05:02,555 --> 00:05:04,096
+Ben bildiğim kadarıyla açıklayabilirim.
+
+20
+00:05:04,475 --> 00:05:06,015
+Evet, lütfen. [öğrenci] rücaleyim.
+
+21
+00:05:06,535 --> 00:05:18,155
+Yani derleme makalesinde hocam, hedefimiz yeni bir yöntem ortaya koymaktan ziyade mevcut literatürde bulunan yöntemleri karşılaştırmak, onlar hakkında yorum yapmak.
+
+22
+00:05:18,899 --> 00:05:45,159
+Evet, kabaca derleme yani survey diye adlandırdığımız [öğrenci]'in de chat üzerinden yazdığı gibi survey makale hazırlamak mevcut o güne kadar yapılan çalışmaları inceleyerek onlardan bu alanda araştırma yapan kişilere okuduklarında o alanla ilgili temel bütün bilgileri sağlayabilecek.
+
+23
+00:05:45,620 --> 00:05:49,180
+Bir okuduklarında makale üretmek.
+
+24
+00:05:49,879 --> 00:06:05,640
+Tabii derleme makalelerde yeni bir test ya da araştırma sonucu sunmamakla birlikte derleme makalelerinde bir orijinal yönünün ya da en azından farklı bir fikri ortaya koyuyor olması önemli.
+
+25
+00:06:05,640 --> 00:06:12,520
+Yani her şeyi ben aldım, koydum, derledim, sundum derseniz bu makaleler genelde kabul görmüyor.
+
+26
+00:06:13,620 --> 00:06:20,720
+Mutlaka oradan farklı bir fikir, başka bir araştırmacıyı tetikleyecek bir fikir çıkması önemli.
+
+27
+00:06:21,500 --> 00:06:26,160
+Şimdi hepiniz lisans üstü de yüksek lisans ve doktor yapan öğrencilersiniz.
+
+28
+00:06:26,160 --> 00:06:29,160
+Bu derleme makale işine ben...
+
+29
+00:06:29,620 --> 00:06:53,500
+Yaklaşık 10 sene önce doktora tezimi yaparken girdim. Akademik kariyerde çok fazla puan alamayan ve benim hala anlayamadığım bir aslında çalışma türü. Ama o alanda çok ciddi anlamda atıf alabiliyorsunuz. Artı o alanını bildiğinizi gösteren iyi kanıtlardan bir tanesi.
+
+30
+00:06:57,620 --> 00:07:18,699
+Bu şekilde bakmış oluyorsunuz. Yaklaşık en az 80-150 arasında bir makale taramış oluyorsunuz ama bunu 80-150 tane makaleyi tek tek hepsinin bütün içeriklerine bakarak değil, yani detay içeriklerine diyelim, bunların hangi alanlarda olduğunu gruplayarak da bu işi yapmış oluyorsunuz.
+
+31
+00:07:19,024 --> 00:07:38,744
+Şimdi derleme makalenin size getireceği en önemli avantaj tez yapacak arkadaşlarımız için, özellikle doktora tezi yapacak arkadaşlarımız için şu, oradaki açık problemi yakalama şansı elde ediyorsunuz. Bu açığı yakaladığınız takdirde de open issues dediğimiz bir başlık vardır genelde derleme makalelerde, survey makalelerde.
+
+32
+00:07:41,139 --> 00:07:48,020
+O alanda hali hazırda çözülmemiş başlıkları bulup ortaya koymaya çalışıyorsunuz.
+
+33
+00:07:48,080 --> 00:07:52,639
+Aslında sörvey makalelerinin en önemli çıktılarından bir tanesi de bu.
+
+34
+00:07:52,720 --> 00:07:59,860
+Bu sayede hem kendinize bir yol çizme şansına sahip oluyorsunuz hem de literatüre bakın bu alanlar açık,
+
+35
+00:07:59,860 --> 00:08:08,639
+hala araştırmaya ihtiyaç duyuluyor diye insanların okuduğunda sizden bir şeyler kapmasını sağlayacağınız bir makale türü hazırlamış oluyorsunuz.
+
+36
+00:08:09,139 --> 00:08:17,740
+Bu özelliklerle anlatacağım.
+
+37
+00:08:17,812 --> 00:08:38,711
+Çeşitli sınırlar var. Onları biraz sonra paylaşıyor olacağım makaleye hazırlarken dikkat etmenizi isteyeceğim. Tabii ki belki kendi tezinizdeki kadar istediğiniz detaylı kıvamlı bir soru ve makale olmayabilir ama bu bahsedeceğim kriterleri de karşılayacak bir soru ve makale olmasını bekliyorum.
+
+38
+00:08:45,908 --> 00:09:02,107
+İsteyen olursa birkaç kişinin çalışmasını birleştirerek, bu gerekiyorsa 4-5 duruma bağlı olarak değişir, bunu gerçekten bir yere gönderip yayınlatmak. Yani böyle bir hedefle yola çıkıyoruz.
+
+39
+00:09:13,908 --> 00:09:22,248
+En azından o amaçla bu ödevi size vermiyorum. Bunu da yapacağımız çalışmaların çıktısını hem yayınlamak istiyorum.
+
+40
+00:09:22,803 --> 00:09:50,364
+İsteyenlerle. Kimseyi buna zorlamayacağım. Ama ortaya güzel bir şey çıktığına inanan arkadaşlar, ben de hemfikir olursam. Birkaç tane çalışmanın da farklı bakış açıları sunacaksınız çünkü. Biraz sonra anlatacağım. Herkes aynı tıp bir survey hazırlamayacak. Problemin farklı noktalarını dikkate alarak hazırlayacağı için orada çeşitlilik arz edecek bakış açıları kesin çıkacaktır.
+
+41
+00:09:50,803 --> 00:09:57,103
+Farklı konularda verebilirdim ama ben bu konunun değerli olduğuna inandığım için tek bir konu üzerinden istiyorum.
+
+42
+00:09:57,103 --> 00:10:00,000
+Birden fazla kişi üzerinden...
+
+43
+00:10:00,000 --> 00:10:11,759
+Ben gruplamayı da düşünmüştüm. Ama bunun da sakıncaları var. Daha önce birlikte grupladığımız arkadaşlar arasındaki uyum, iş yükü vs. bir tarafa fazla yıkılma oluyor.
+
+44
+00:10:11,860 --> 00:10:21,940
+Bunu bu dönemden denemekten vazgeçtim. Zaten pandemi dönemi herkesin hayat düzeni birazcık farklı. Bir araya gelme şansı yok vs. Zoom gibi bir ortam var ama gene de çok aklıma yatmadı.
+
+45
+00:10:21,940 --> 00:10:27,460
+Son dakika vazgeçtim bu işten. Zaten aramıza yeni katılan arkadaşlar da var. Hepsinin de organize olması zaman alacaktır.
+
+46
+00:10:28,000 --> 00:10:38,560
+Şimdi bir kere bu makale konusunda herkesin kendi başına hazırlayacağı soru ve makalede en az 50 adet.
+
+47
+00:10:39,412 --> 00:11:02,832
+Bildiri ya da makale yani referans eklemesini istiyorum. Bunları nereden temin edeceğinizi biraz sonra konuşacağız. Muhtemelen gene bir kısmınız bunları biliyorsunuz ama ben bilmeyenler için bu işin nasıl yapılacağını anlatacağım. Özellikle kendi teziniz tarafında da böyle bir çalışma yürütücekseniz bu işleri nasıl yapmanız gerektiğini biraz bilmeniz gerekiyor.
+
+48
+00:11:04,788 --> 00:11:16,708
+IEEE Journal standartlarında, yazım biçimi olarak söylüyorum, en az 10 sayfalık bir çalışma olacak.
+
+49
+00:11:20,708 --> 00:11:27,456
+Bu şu demek, bunun içerisine grafik ekleyebilirsiniz, tablo ekleyebilirsiniz. Bunlar...
+
+50
+00:11:27,456 --> 00:11:45,176
+Herhangi bir sorun teşkil etmiyor. Ama gerçekten bir geografiye ve tabloya baktığında gerçekten bir şey kazanabilecekse onları eklemenizi istiyorum. Derlediğiniz işte gruplandırdığınız çalışmalar. Sörve çalışması yaparken özellikle o alanda yapılan çalışmaları gruplamak çok kritiktir.
+
+51
+00:11:45,504 --> 00:12:01,104
+Biraz sonra konuya özel de bunları söylüyor olacağım. Çünkü bunları kategorize etme problemi zaten hepimizde var. Yani o alana giriyorsunuz, tarıyorsunuz, ediyorsunuz, bir sürü çalışma var. Onları gruplamadan problemleri, alt problemleri indirgeme şansınız yok.
+
+52
+00:12:03,604 --> 00:12:10,604
+Bunu da söyledim. Onun dışında, şimdi zor bir karar olsa da bunu bu sefer vermek zorunda kaldım.
+
+53
+00:12:11,604 --> 00:12:17,903
+Hazırlayacağınız makaleyi İngilizce olarak hazırlamanızı istiyorum.
+
+54
+00:12:21,524 --> 00:12:43,384
+İngilizce düzenlerinizi bilmiyorum ama lisans üstüne geldiğiniz için ve bilgisayar mühendisliğiyle bir şekilde ilişkili olduğunuz için belirli bir seviyede en azından yazım ve okuma konusunda olduğumuza inanıyorum. O yüzden bunun İngilizce hazırlamasına karar verdim. Artı bunun bir sebebi de gerçekten bunu yayınlayabilirsek sizlerden gelecek çalışmalara bağlı olarak.
+
+55
+00:12:43,892 --> 00:13:01,172
+Maalesef ulusal düzeyde yazılan sörveylerde alacağınız atıflar sınırlı kalıyor. Belki yaptığınız araştırma çalışmaları ulusal düzeyde atıf olarak alabiliyor ama derleme çalışması olduğu zaman gerçekten uluslararası ile uluslararası da ciddi bir fark var.
+
+56
+00:13:03,347 --> 00:13:05,787
+Bu yüzden İngilizce yazmanız önemli.
+
+57
+00:13:05,967 --> 00:13:22,347
+Tabii şimdi burada geçen senelerde bazı sorve çalışması hiçbir zaman yaptırmadım ama başka bildiri çalışması yaptırdığımda şu sorunla karşılaştım ya da bir araştırma konusu verdiğimde hazırlanan dökümanın...
+
+58
+00:13:22,740 --> 00:13:42,740
+Önemli bir kısmı etraftan alınan cümlelerin kombinlenmesiyle oluşmuştu. Bu bizim önümüzü yayınlamak istediğimizde çok tıkayacak bir şey. Bu yüzden burada bir benzerlik taramasından da geçireceğim bu hazırlayacağınız çalışmaları.
+
+59
+00:13:45,779 --> 00:14:08,659
+Çalışmalar göreceksiniz. Onlardan cümle kanıpları da alabilirsiniz. Bunda da hiçbir sıkıntı yok. Ama birebir aynısı olmamalı. Aralara serpiştirilmiş olmalı. Bunlara dikkat etmeniz gerekiyor. Yani bu dokümanın kendi emeğinizle oluşması çok önemli. İngilizce hazırlamanız gerektiğini söyledik. İlk yapmanız gereken şey outline oluşturmak.
+
+60
+00:14:10,067 --> 00:14:17,067
+Yani siz bu derleme çalışmasında hangi başlıkları ve alt başlıkları...
+
+61
+00:14:18,515 --> 00:14:40,635
+Ne diyelim, yazmayı düşünüyorsunuz ya da bu konularda bir araştırma yapmayı düşünüyorsunuz ya da yaptığınız araştırmadan bu başlıklara geçmeyi düşünüyorsunuz. Bu ikisi aslında birbiriyle iç içe. Yani kafadan böyle ben bunları bunları yapacağım deyip girmek değil, önce kendinizce bir araştıracağınız başlıkları belirlemek, sonra onları araştırırken gördüklerinize göre outline'ı yeniden şekillendirmek.
+
+62
+00:14:46,131 --> 00:14:59,271
+Bu makalenin alt kısımlarını yazmak daha kolay olacaktır. Yani ben bir yerden yazmaya başlayayım. Sonra ben bunu bir yerde toparlarım derseniz maalesef istediğiniz sonuç çok da gelmeyecektir.
+
+63
+00:15:02,271 --> 00:15:10,871
+Burada olmazsa olmazları söyleyeyim. Her makalede görüyorsunuzdur. Bir introduction mutlaka var, bir abstract mutlaka var.
+
+64
+00:15:13,395 --> 00:15:29,195
+Derleme makalesi olduğu için bir related work kısmı olmayacak. Bu related work kısmını aslında siz diğer önemli ana başlıkları belirleyerek 3-4 chapter yapacaksınız belki. Chapter sayısı vermiyorum. Bu size bağlı alt chapter'larda.
+
+65
+00:15:40,916 --> 00:16:08,156
+Biraz daha problemleri artık toparladığınız çalışmaları diskas ettiğiniz ve bakın bu yapılmış ama şu kısma değinilmemiş. Burası açık diye Open Issues kısmı yazmanız gerekecek. Bu anlamda burası oldukça değerli bir kısım. Sonuçta Conclusion ve Abstract'ı da zaten en son yazacaksınız. Bunların yazım sırası mutlaka Abstract ve Conclusion sona bırakılmalı.
+
+66
+00:16:08,596 --> 00:16:27,596
+İntroduction'da genelde sona bırakılmalı aslında ama bazen önceden yazmayı tercih edenler olabiliyor. İntroduction'da ne anlatacaksınız? Problem ne? Bu alanda ne tür çalışmalar yapılıyor? Niye yapılıyor? Motivasyon nedir? Ve genel böyle belli başlı...
+
+67
+00:16:27,923 --> 00:16:43,823
+Sizin yaptığınız çalışmaya yakın, gene survey tadında olabilecek çalışmaları bu girişte yavaş yavaş birazcık anlatmaya başlamak. Sonra da sizin geri kalan makaledeki hikayenizin nasıl akacağını bu introduction'da vermeniz gerekiyor.
+
+68
+00:16:45,463 --> 00:16:52,623
+Şimdi bu kadar anlattım. Konuya çok az kaldı, konuyu birazdan söyleyeceğim.
+
+69
+00:16:54,740 --> 00:17:06,519
+Değerleme makalede çok önemli bir şey referansları tarama işi. Referans çalışmaları bulma işi, yapılmış çalışmalara bakma işi. Bunun için ne yapabiliriz diye sorayım. [öğrenci]'ın dışında bir cevap rica edeceğim.
+
+70
+00:17:08,860 --> 00:17:14,200
+Yani konu ile ilgili çalışmaları ararken nasıl bir yöntem izliyoruz?
+
+71
+00:17:22,740 --> 00:17:29,799
+Daha önce makale ya da bildiri yazmış olanlar el kaldırabilir mi? Sadece el kaldırsınlar. Ben göreyim.
+
+72
+00:17:29,799 --> 00:17:39,460
+Yani şeyden, şu Reis Hand var ya uzunluğunda. Tamam [öğrenci] seni gördüm yani her türlü. Teşekkür ederim.
+
+73
+00:17:42,299 --> 00:17:49,500
+Evet, [öğrenci] var, [öğrenci] var, [öğrenci] var, [öğrenci] var. Güzel. [öğrenci] orada mı?
+
+74
+00:17:50,836 --> 00:17:52,635
+Buradayım hocam ama el kaldıramadım, bulamadım.
+
+75
+00:17:53,155 --> 00:18:06,736
+Tamam, okey. Sonuçta [öğrenci] var. Güzel, süper. Herkesin bir deneyimi var. Hemen hemen. Bu oldukça önemli. Peki araştırmalarımızı nasıl yapacağız referans çalışmaları bulmak için? Onu sorayım.
+
+76
+00:18:08,816 --> 00:18:12,056
+En önemli kaynak ilk başladığımız yer neresi oluyor genelde?
+
+77
+00:18:14,596 --> 00:18:15,236
+Scholar Google.
+
+78
+00:18:16,660 --> 00:18:31,600
+Yani keywordlerle oraya yazıyoruz. Bir kere oradan başlıyoruz. Ama Scholar Google tabii ki bize birçok şeyi getirmekle birlikte orada bir dikkat edeceğimiz şey çalışmaların yayınlanma tarihleri, güncellikleri.
+
+79
+00:18:32,800 --> 00:18:41,880
+İki, aldıkları atıf sayısı. Tabii ki biz çalışmaların atıf sayısının düşük olmasa o çalışmaların değerini düşürmeyecektir.
+
+80
+00:18:42,192 --> 00:19:01,231
+Ama birçok atıf almış bir çalışmanın da dikkatten kaçmaması gerekir. Özellikle son döneme ait olan. Son beş sene en kritik olan dönemdir. Ama bu alanda yapılmış son on sene, son yirmi sene kült çalışmalar varsa onlara da yer vermek önemlidir.
+
+81
+00:19:01,715 --> 00:19:13,935
+Çalışmaları değerlendirirken makaleler her zaman bir adım öndedir. Ama çok önemli, çok güzel konferanslarla, çok iyi çalışmalar da yapılır. Bunları da gözden kaçırmamak gerekir.
+
+82
+00:19:27,220 --> 00:19:50,680
+Bunların farklı şeyleri var. ITP, Explorer, Scopus, Science Direct, Springer'in kendi arama motoru vs. Bu publisherların dergi yayınlarını taramakta fayda var. Bunun ötesinde tabii ki sizin en büyük rakibiniz şu ana kadar yazılmış olan bu alandaki derleme makaleler.
+
+83
+00:19:51,059 --> 00:20:15,740
+Yani aslında kendi tezinizde de liderleme makale yazma niyetine girerseniz, danışman hocanızla birlikte, o zaman ilk bakacağınız şey, survey keyword'ünü de kullanarak, ki bazen survey keyword'u başlıkta olmayabilir, bunu farklı şekillerde yakalayabilirsiniz. Genelde oluyor ama. Yapılmış bir çalışma var mı o alanda?
+
+84
+00:20:15,968 --> 00:20:31,208
+Varsa bunları klasöre bir yere toplayıp bunlar problemi hangi bakış açısıyla ele almışlar? Yani bir alanda bir sörve yazılmış olması demek o alanda başka bir sörve yazılmayacağı anlamına gelmiyor. Bu da önemli bir nokta.
+
+85
+00:20:32,248 --> 00:20:39,367
+Onların bakış açısından tamamen farklı bir şekilde siz çalışmaları grupladığınızda başka bir şey ön plana çıkartıyorsanız bu da çok değerli.
+
+86
+00:20:40,692 --> 00:20:51,511
+O kadar farklı perspektiflerden o çalışma alanını yorumlayabilirsiniz ki hepsi araştırmacılara bir çıktı üretecek nitelikte olabilir.
+
+87
+00:20:51,511 --> 00:20:54,511
+Ya da üretilen sörvey...
+
+88
+00:20:54,751 --> 00:21:17,432
+Örneğin 3-4 sene, 5 sene öncesine aitse sadece mesela makine öğrenmesi teknikleriyle yapılmış çalışmaları ele alırken son 5 senede yapılmış derin öğrenme çalışmalarını hiç değerlendirmemiştir. Demek ki o alanda yeni bir sörvete daha ihtiyaç vardır. Yeni yapılan çalışmaları görmek ve sunmak açısından. Yöntemler değişmiştir, başarılar değişmiştir, kısıtlar değişmiştir.
+
+89
+00:21:18,067 --> 00:21:26,567
+Yeni teknoloji gelmiştir gibi farklı sizi yönlendirebilecek maçlıklar da olabilir.
+
+90
+00:21:28,207 --> 00:21:34,008
+Bunun ötesinde referanslara ulaşırken keywordler çok önemli diye söyledim.
+
+91
+00:21:34,248 --> 00:21:41,867
+Bunu doktora çalışmamda aslında ben yaşadığım için keywordlerin aslında etkisini gördüm.
+
+92
+00:21:41,867 --> 00:21:44,867
+Ben Multimedia Sensor Networks...
+
+93
+00:21:45,619 --> 00:22:04,699
+Keywordleriyle doktora çalışmama başlamıştım. Orada farklı bir test konusu peşindeydim. Sonra baktım bir coverage optimization problemi var. Yani sensörleri sahaya attığınızda rastgele dağıldıkları için aynı yere düşen sensörler de var.
+
+94
+00:22:05,044 --> 00:22:29,004
+Bunu maksimize etmek için bunların yerlerini değiştirmek ya da kameraların yönünü değiştirmek gerekiyor. Ben arıyorum, arıyorum, arıyorum. Bir gün Multimedia Sensör Network, Video Sensör Network, farklı şekillerde hep bunlara karşı geliyorum ama tam böyle istediğim keyword sanki yok. Directional Sensör Network diye bir kavramla karşılaştım.
+
+95
+00:22:30,259 --> 00:22:47,399
+Yani yönlü bakış açısına sahip olan sensör nodlar var. Sadece kamera değil, mikrofon da buna giriyor mesela. Normalde fiziksel bir sensör etrafını 360 derece ağlayabilirken kamera ve mikrofonlar yani açılı bakanlar belirli bir pasta dilimiyle etraflarını ağlayabiliyorlar.
+
+96
+00:22:50,928 --> 00:23:14,668
+Tezimin bir anda bambaşka bir noktaya gitmesine sebebiyet verdi. O yüzden literatürde sizin düşündüğünüz keywordlerin dışında bir keyword ile o alan genişlemiş olabiliyor. Buna dikkat etmekte fayda var. Biraz sonra söyleyeceğim konuda da bu var. Ve hatta bu konuda çok enteresan şekilde geniş bir skalaya sahip keywordler. Onu da birazdan paylaşıyor olacağım.
+
+97
+00:23:15,604 --> 00:23:19,984
+Bulduğunuz çalışmaların referans kısmına bakın. Çok değerli.
+
+98
+00:23:20,367 --> 00:23:44,427
+O çalışmaların rekürsif olarak referanslarından geriye doğru giderseniz zaten artık elinizde çok değerli bir referans listesi olacak anlamına geliyor. Bu sayede de gözden kaçırdığınız, Skolor Google'da ya da diğer bahsettiğim veri tabanlarında bulamadıklarınızı o ilgili kişilerin point ettiği noktalarla bulabilirsiniz. Tabii ki sadece makale bildiri değil, patent.
+
+99
+00:23:45,395 --> 00:24:01,195
+Onun dışında kitap, onun dışında tez gibi doğrudan referans verebileceğiniz önemli çalışmalar da olabilir. Onlar da değerli. Onları da gözden kaçırmamakta fayda var. Bazen denk geliyoruz onlara. Bunu da tavsiye ediyorum.
+
+100
+00:24:02,935 --> 00:24:09,195
+Şimdi gelelim konuya. Yani işi bayağı bir anlattık. Konu...
+
+101
+00:24:09,460 --> 00:24:33,060
+Arkadaşlar, size dersin başında da bahsetmiş olduğum trafik akış tahmini konusu. Yani nasıl meteorolojiyi tahmin etmeye çalışıyoruz, meteoroloji, hava turunu tahmin etmeye çalışıyoruz. Biz de trafik akış hızını tahmin etmenin başındayız. Ama bu problemin tek bir bakış açısı yok.
+
+102
+00:24:33,428 --> 00:24:37,428
+Bu program çok fazla bakış açısına sahip. Neler olabilir ben size sorayım.
+
+103
+00:24:41,332 --> 00:24:50,012
+Trafik akış tahmininde hangi önemli noktalar ayrım yaratıyor olabilir?
+
+104
+00:24:55,059 --> 00:24:57,199
+Çevresel özellikle olabilir mi soruyorsunuz hocam?
+
+105
+00:24:58,720 --> 00:25:06,519
+Hiç fark etmez. Yani bu problemi ele aldığınızda şöyle çalışmalar olabilir, şuna odaklanmış çalışmalar olabilir, buna odaklanmış çalışmalar olabilir diye.
+
+106
+00:25:07,319 --> 00:25:14,159
+Günün saatine bağlı veya yolların yoğunluğuna bağlı, önceki verilerine bağlı bir çalışma yapılmış olabilir.
+
+107
+00:25:14,939 --> 00:25:16,839
+Peki. Günü alaya kaldırmış.
+
+108
+00:25:21,587 --> 00:25:27,107
+Hocam o yeminden el kaldırma kalmış ama ben de ileri çalışma için şöyle bir şey söyleyebilirim mesela.
+
+109
+00:25:27,847 --> 00:25:35,968
+Otonom araçlar geldiğinde insanlı olan sürücülerin ve otonom olan sürücülerin trafiğe etkisi gibi.
+
+110
+00:25:36,908 --> 00:25:44,468
+Güzel bir bakış açısı. Bu ileri dönük mesela Open Issues kısmında ters tutabilecek bir başlık diye düşünüyorum.
+
+111
+00:25:45,607 --> 00:25:46,307
+[öğrenci]?
+
+112
+00:25:47,508 --> 00:25:56,627
+Hocam bir kere elimizde geçmişe dair bir veri var. Yani bu trafik de olur. Ama bence başka problemlerde de kullanılıyordur. Bunu kullanarak geleceğe yönelik tahmin.
+
+113
+00:25:57,508 --> 00:26:00,008
+Evet. Yani bu...
+
+114
+00:26:00,008 --> 00:26:02,908
+Future prediction diye belki bir...
+
+115
+00:26:02,908 --> 00:26:12,203
+Evet. Bu bakış açısıyla başka problemler nasıl çözülmüş, buraya entegre edilebilir mi o oldaki bakış açıları diye de düşünebiliriz sanırım. Yani orada çünkü önemli olan...
+
+116
+00:26:12,243 --> 00:26:34,304
+Hakikaten genellediğiniz zaman future prediction'dan bahsediyoruz. Ama ben size hemen bakış ışılarından bir tanesini söyleyeyim. Şimdi genelde göreceksiniz literatürü taradığınızda short term, kısa vadeli trafik akış tahminleri çok yaygın. Ama mid term kavramıyla da karşılaşacaksınız.
+
+117
+00:26:34,720 --> 00:26:57,380
+Bunların define edilmiş süreleri var. Short term dediğiniz bir iki saate kadar. Mid term dediğiniz iki saatle beş altı saat arası diyelim ki bazen değişiyor. Ondan sonrası da long term olarak adlandırılıyor. Mesela long term ile ilgili bir sonraki günü tahmin etmek, on iki saat sonrası, iki gün sonrasını tahmin etmekle ilgili aslında çok fazla çalışma olmadığını ya da yeni yeni yapıldığını göreceksiniz.
+
+118
+00:26:57,380 --> 00:26:58,880
+Sağ ol.
+
+119
+00:26:59,135 --> 00:27:22,236
+Short termler için bir survey yapmak bir fikir olabilir. Long termler için bir survey yapmak bir fikir olabilir. Örnek veriyorum. Bu böyle olmalı demiyorum. Ya da bunların hepsini bakış açıları içerisinde, survey'in içerisinde eritip, bakın short term var, mid term var, long term var, problem. Üçe ayrılıyor. Buradan yola çıkarak bir survey tasarlamak olabilir.
+
+120
+00:27:23,923 --> 00:27:39,403
+Onun dışında mesela şöyle söyleyelim, survey içerisinde yer alabilecek başlıklar neler olabilir diye düşündüğümüzde, mesela traffic prediction diye bir keyword geçiyor.
+
+121
+00:27:39,824 --> 00:27:49,524
+Traffic flow prediction var, traffic speed prediction var, traffic flow speed prediction var, traffic flow estimation var, traffic estimation gibi.
+
+122
+00:27:50,132 --> 00:28:10,971
+Çok farklı keywordlerle çalışmaları bulabilirsiniz. Bir kere problemi tanınarken derlemenin başında mutlaka buna bir değinmekte fayda var diye düşünüyorum. Yani bu problem literatürde hangi başlıklarla ele alınıyor? Buna bir adını koymak lazım ya da aralarında bir fark var mı? Yani bir teörümü kullandığınızda arasında bir farklılık oluyor mu?
+
+123
+00:28:17,008 --> 00:28:43,228
+Temel yaklaşımlar kullanılıyor. İstatistiksel yöntemler mi? Yoksa instance-based learning yaklaşımı, derin öğrenme mi? Bunlar arasındaki farklılık ne? Bu problem aslında karmaşık bir problem mi? Gerçekten derin öğrenmeye ihtiyaç duyuyor mu? Short term için hangi bakış açısını kullanabiliriz? Short term'ı uyguladıklarımızı, long term'ı uygulayabilir miyiz?
+
+124
+00:28:45,011 --> 00:29:06,911
+Datasetler. Literatürde bu problemle ilgili kullanılan datasetler neler? Datasetlerde hangi özellikler var? Biz bu probleme input olarak nereli feed edebiliriz? Mesela trafik akış hızı dedik, zaman dedik, haftanın günü, saati, ay, başka?
+
+125
+00:29:14,163 --> 00:29:17,264
+Hava durumu, araç tipi gibi bilgiler olabilir.
+
+126
+00:29:18,004 --> 00:29:19,104
+Çok çok önemli.
+
+127
+00:29:19,864 --> 00:29:21,764
+Kullanıcı bazında kategorize edebiliriz.
+
+128
+00:29:22,124 --> 00:29:22,564
+Ne bazında?
+
+129
+00:29:22,984 --> 00:29:27,024
+Kullanıcı bazındaki özellikleri de kullanarak kategorize edebiliriz aslında.
+
+130
+00:29:27,403 --> 00:29:33,784
+Yola nereden çıktığı, nereye varmak istediği, ne kadar ara sokaklara girmeye ihtiyacının olduğu, ne kadar uzun yol gideceğini.
+
+131
+00:29:33,784 --> 00:29:38,163
+Buna bağlı olarak aslında belki de bir otoyol kullanacak ya da kullanmayacak.
+
+132
+00:29:38,264 --> 00:29:41,744
+İstanbul için de biliyorsunuz her zaman otoyola çıkmak zorunda değiliz.
+
+133
+00:29:42,163 --> 00:29:49,423
+Bazen tahminlerde ara soraklar bile verilebiliyor. Bu da aslında orada kategorize edeceğimiz özelliklerden bir tanesi.
+
+134
+00:29:49,663 --> 00:29:56,183
+Güzel. Şimdi bu noktayı aslında belirttiğin için benden onunla ilgili bir şey söylemeniz.
+
+135
+00:29:56,804 --> 00:30:06,804
+Şimdi burada problemin iki aslında ucu var. Birincisi sensör bazlı lokasyon bazında tahmin yapmak.
+
+136
+00:30:09,231 --> 00:30:22,652
+Bir hız tahminine ihtiyaç duyuyoruz. Bir de bunun bu hız tahminleri yapıldıktan sonra lokasyonların rotalama kullanılarak, rotalama algoritmaları kullanılarak birleştirilmesi lazım. Yani en hızlı lokasyon.
+
+137
+00:30:23,852 --> 00:30:36,832
+İşte en az yolcu rota. Bu da işin ikinci tarafı. Yani birinci tarafta siz lokasyon bazlı hız tahminleri yapıyorsunuz. İkinci tarafta bunları alıyorsunuz.
+
+138
+00:30:37,268 --> 00:31:00,147
+Buna bağlı olarak en hızlı gidilebilecek rotaları üretmeye çalışıyorsunuz. Bu yüzden problemin bir de o bakış açısı var. O tarafa ne kadar girmelisiniz tartışılır ama en azından bunu yazarken dile getirmekte fayda var. Bakın problem bu ama sonrasında bunların çıkıntılarını birleştirmek de önemli diye vurgulamakta fayda var.
+
+139
+00:31:00,147 --> 00:31:02,087
+Peki.
+
+140
+00:31:02,900 --> 00:31:09,820
+Konuştuk, dedik ki meteoroloji verilerine ek olarak ne eklenebilir?
+
+141
+00:31:14,612 --> 00:31:17,672
+Çevresel etkinlikler eklenebilir diye düşünüyorum.
+
+142
+00:31:17,672 --> 00:31:18,592
+Güzel, çok güzel.
+
+143
+00:31:18,592 --> 00:31:23,791
+Yani atıyorum futbol olan bir günde trafik tamamen kilitleniyor mesela.
+
+144
+00:31:24,011 --> 00:31:24,311
+Süper.
+
+145
+00:31:24,432 --> 00:31:26,392
+Veya o yere yakın yerlerde.
+
+146
+00:31:26,711 --> 00:31:35,791
+Evet, şu anda pandemi döneminde belki bu işler birazcık etkinliklerden çok fazla artık trafikte etkilenmiyoruz.
+
+147
+00:31:35,872 --> 00:31:38,811
+Trafikten hep bir nebze rahatlamış durumda.
+
+148
+00:31:42,612 --> 00:31:48,951
+Etkinliğin büyüklüğü doğrudan bir bölge ve o bölge komşu bölgeler için çok önemli bir parametre.
+
+149
+00:31:49,811 --> 00:31:52,172
+Teşekkür ediyorum. Güzel bir fikirdi.
+
+150
+00:31:52,771 --> 00:32:00,852
+Etkinlikleri de birkaç kategoride incelemek gerekirse, mesela özel etkinlikler, düğündür, asker uğurlamadır,
+
+151
+00:32:00,852 --> 00:32:05,432
+yani bu tür şeylerin tespit edilmesi durumunda da bunlar da yardımcı olabilecek.
+
+152
+00:32:05,511 --> 00:32:06,291
+Çok güzel, harika.
+
+153
+00:32:06,900 --> 00:32:30,700
+Yani halk etkinlikleri, yani bu bayrağı da olsun, şeyler olsun, onlar da hesaba katılabilir diye düşünüyorum. Bir de söylendiyse dikkatimden kaçmıştır ama olası olarak afetler, doğal afetler, işte depremdir, seldir, heylandır, bunların da hesaba katılması gerektiğini düşünüyorum.
+
+154
+00:32:31,087 --> 00:32:55,008
+Evet, yani aslında afet kategorisi de çok önemli. Burası genelde işte meteorolojik afetler var. Bir de dünyanın kendi yarattığı işte bu bir yangın da olabilir, bir deprem de olabilir dediğiniz gibi çok önemli. Bu da aslında problemin özel dönemler içinde çözülmesi gerekliliği konusunu tartışmaya açıyor. Nedir bu? Mesela bayramlar.
+
+155
+00:32:55,539 --> 00:32:59,259
+Bayramdaki trafiğin akışı tamamen normal akıştan farklı.
+
+156
+00:33:00,000 --> 00:33:03,620
+Bunun için bunu bir parametre olarak mı sisteme vermek gerekir?
+
+157
+00:33:03,680 --> 00:33:06,420
+Yoksa bu dönemler için ayrı modeller mi üretmek gerekir?
+
+158
+00:33:06,480 --> 00:33:08,120
+Mesela bu da tartışılması gereken bir konu.
+
+159
+00:33:08,596 --> 00:33:31,755
+Bunu da bir bakmak lazım. O yüzden deprem zamanı da aynı şekilde. Bir deprem olduğu zaman, depremin öncesi, sonrası, 3 günü, 5 günü, 6 günü sonrasındaki nasıl gelişiyor bunu da kategorize edebilirsiniz. Bunları tabloda verebilirsiniz. Bunun ötesinde başka veri olarak ne kullanabiliriz?
+
+160
+00:33:32,307 --> 00:33:38,768
+Olası yol senaryoları verilebilir diye düşündüm. Birinin sözünü böldüm sanırım.
+
+161
+00:33:40,107 --> 00:33:42,847
+[öğrenci] durdu galiba. Ona da bir söz verelim. Teşekkürler.
+
+162
+00:33:45,227 --> 00:33:48,227
+[öğrenci]'in ben bir söylemek için mikrofonu açtım ama.
+
+163
+00:33:49,147 --> 00:33:53,647
+O zaman [öğrenci] sana söz vereyim. Bir an orada [öğrenci]'in mikrofonunu aktif görünce öyle zannettim.
+
+164
+00:33:54,324 --> 00:34:07,584
+Ben de şundan bahsedecektim. Karayolları hakkında güncel bilgiler de bize yararlı olabilir. Şöyle ki, herhangi bir yolda bakım çalışması veya şerit azaltması gibi faktörler de kesinlikle yoğunluğu etkiler.
+
+165
+00:34:08,203 --> 00:34:09,443
+Çok doğru. Bu da nasıl?
+
+166
+00:34:10,516 --> 00:34:37,956
+Çok önemsediğim bir başlık. Bu gördüğünüz gibi aslında çok büyük bir problem. Aslında büyük veriyi de içeren bir problem. O yüzden bu başlık da yol çalışmalarındaki hem Karayolları'ndan gelecek hem de İstanbul gibi büyük şehri düşündüğünüzde belediyenin de elinde bulunan bilgiler kullanılarak işte yol bakım ne zaman başlıyor, ne kadar sürecek bilgileriniz?
+
+167
+00:34:38,516 --> 00:34:40,316
+Sisteme girilmesi çok önemli.
+
+168
+00:34:40,496 --> 00:34:50,096
+Tabii bir şey daha var. Kader parametresi dediğimiz ama nispeten o kadar parametresini belli oranda da denkleme dahil edebiliriz. Nedir o?
+
+169
+00:34:52,256 --> 00:34:53,056
+Kaza mı?
+
+170
+00:34:53,496 --> 00:35:03,376
+Evet. Önceden belli olmayan kaza. Kader parametresi o. Tabii ki kaza parametresini işin içine katmak her şey çözmüyor. Ama kaza parametresini nasıl işin içine katabiliriz?
+
+171
+00:35:04,244 --> 00:35:25,744
+Ben de onu şey olarak düşündüm. Olası yol senaryolarını göz önünde bulundurursak mesela diyelim ki elimizde olası olarak o yoldan geçebilecek 100 kişi var. Bu 100 kişi o yoldan geçmek için tahmin olarak nereden faydalanıyor? Mesela Google Map'ten mi faydalanıyor, Yandex'ten mi faydalanıyor, başka bir haritadan mı faydalanıyor?
+
+172
+00:35:32,244 --> 00:35:59,003
+Bunlar zaman içerisinde göreceksiniz. Çok daha yaygın bir şekilde bu problemin içerisine katılacaklar. Yavaş yavaş psikoloji. Şu anda en çok katılmaya çalışılan meteorolojikleri. Yağmur varsa çünkü trafiğin şekli değişiyor. Buzlanma varsa tıkık trafiğin şekli değişiyor. Hatta
+
+173
+00:36:00,244 --> 00:36:07,103
+Hafta sonu kış ortasında güneş açtıysa bile trafiğin rengi değişiyor yani. O kadar aslında etkili.
+
+174
+00:36:07,683 --> 00:36:17,304
+Şimdi [öğrenci] de chatten yazıyormuş, trafik ışıkları verse ve yapısal taraflarını da söylüyor, virajların olması vesaire gibi çok doğru.
+
+175
+00:36:17,723 --> 00:36:21,983
+Bunlar da aslında trafiğin hızına etki ediyor.
+
+176
+00:36:22,483 --> 00:36:23,304
+Ama hani...
+
+177
+00:36:23,407 --> 00:36:34,288
+Burada doğrudan etki edenler, dolaylı etki edenler, yüksek olanlar, düşük olanları sıralamak bile, mesela bunu yapabilirseniz bile bu çok önemli bir çıktı.
+
+178
+00:36:34,288 --> 00:36:36,288
+Tabii bunları...
+
+179
+00:36:37,940 --> 00:36:57,400
+Bilimsel olarak desteklemek gerekiyor. Bunu nasıl yapabilirsiniz? Ya formülle ortaya koyacaksınız, ya deneyle ortaya koyacaksınız ya da daha önceki çalışmalardaki referansları vererek bakın böyle bir çalışma var. Bunları sıraladığımızda o çalışmalarında gösterildiği gibi şu şekilde bir sırayla oluşuyoruz diyebilirsiniz.
+
+180
+00:36:58,260 --> 00:37:18,480
+Şuraya kadar çok güzel fikirler geldi. Bir kere gördüğünüz gibi farklı bakış açılarıyla çok daha iyi işler çıkartabileceğini bir kez daha görmüş olduk. Tek başınıza bu işi yaparken çok kolay olmayacaktır. Ama ortaya çıkan ürün sizi yeterince tatmin edecektir. Hatta bu yayınlandığında ve atıf aldığında hakikaten çok büyük keyif veriyor.
+
+181
+00:37:18,480 --> 00:37:25,720
+Şimdi ben biraz önce kaza dedim. Kazayla ilgili ekleyeceğimiz bilgiyi söylemedim.
+
+182
+00:37:26,260 --> 00:37:42,420
+Onu hemen söyleyeyim. Şöyle ki, kaza bilgilerini parametre olarak bir bölgedeki kaza sıklığını gün olarak da, saat olarak da, zaman olarak da işin içine katabiliriz.
+
+183
+00:37:42,420 --> 00:37:51,440
+Yani kaza verileri var biliyorsunuz. Özellikle C-Vortacılık şirketlerinin, şu an tam hatırlamıyorum ama Emniyet Genel Müdürlüğü'nün de bir sayfası vardı. Oradan yayınlayayım.
+
+184
+00:37:51,603 --> 00:38:14,083
+Bunları işin içine katarak en azından belirli bir risk parametresini de oraya koymuş olursunuz. Ama tabii ki bunun ötesinde hiç hesaba katamadığınız, gerçekten kadar parametresi dediğimiz işler olabiliyor. Araba arızalanması sadece kaza olmak zorunda değil. Ki arıza da bir tür aslına bakarsanız. Bunları derlediğinizde aslında…
+
+185
+00:38:14,771 --> 00:38:38,352
+Bu trafik tahminine etki edecek parametrelerin listesini ortaya koyduğunuzda işte size harika bir çıktı daha ortaya koymuş oluyorsunuz. Bu bakış açısı da data source'lar yani veri kaynakları neler olacak. Tabi bu bilgiler nereden gelecek o da önemli. Yani siz bu bilgileri ortaya koydunuz nerelerden alınabilir bilgisini de paylaşmak önemli.
+
+186
+00:38:40,052 --> 00:38:56,772
+Bazı bilgiler open data kavramıyla paylaşılıyor. Bazı bilgiler API'ler üzerinden rahatlıkla çekilebiliyor. Ama bazılarını temin etmek mümkün değil. Bunları kategorize ederken kullandığınız tablolarda başlıklar açık, var yok vs. diyebilirsiniz.
+
+187
+00:39:08,052 --> 00:39:13,972
+Değerleme çalışmalarında kısaca bir göz atmanız, yani olayı nasıl ele alıyorlar, bir fikir sahibi olmanız çok çok önemli.
+
+188
+00:39:14,952 --> 00:39:21,672
+Önümdeki notlara bakıyorum. Başka size soranlarım ne var diye.
+
+189
+00:39:21,672 --> 00:39:34,192
+Tabii, traffic prediction, performance metrikleri var. Yani bir yöntem önerdiniz, bir yaklaşım önerdiniz. Bunun iyi mi kötü mü olduğunu nasıl diyeceksiniz? Nedir bunun?
+
+190
+00:39:35,476 --> 00:39:42,576
+Prediction nasıl yapıyoruz yani? Bu bir sınıflandırma problemi, bu bir regresyon, bu unsparevised mi çözdür, nedir bu olay?
+
+191
+00:39:51,699 --> 00:39:58,239
+Hocam, daha çok supervised bir durum olduğunu söyleyebiliriz bence. Çünkü var olan durumları inceleyip buna göre sisteme eğitmiş oluyoruz.
+
+192
+00:40:00,000 --> 00:40:22,739
+Önce söylediğimiz kader faktörü her zaman var. Onu da aslında bir random durum olarak düşünebiliriz. Orada da aslında diğer algoritmalarda da gördüğümüz bu durumu tam olarak tahmin edemediğimizde diğer durumlara da açık kapı bırakmak için bir rastgelelik her zaman işin içine katarız. Bu yüzden supervised'tan bir noktada da ayrıldığını da söyleyebiliriz. Aslında biraz ortaya karışık bir yöntem diyebiliriz yani.
+
+193
+00:40:28,000 --> 00:40:40,279
+Geçmiş verilerin şu şartlarda hız böyle olmuş, bu şartlarda hız böyle olmuş dediğimizde biz bir yani hali hazırda etiketlenmiş veriyi kullanacağız gibi gözüküyor.
+
+194
+00:40:40,279 --> 00:40:47,779
+Bu da supervised yaklaşıma götürüyor bizi. Ama burada sormaya çalıştığım bu bir sınıflandırma problemi midir?
+
+195
+00:40:51,795 --> 00:41:01,876
+Sonuçta trafiğin akışının hızını tahmin etmeye çalışıyoruz hocam. O yüzden bir regresyon problemi olarak ele alabiliriz. Her bir bölge için aslında hızın ne olduğunu tahmin etmeye çalışıyoruz.
+
+196
+00:41:01,876 --> 00:41:15,615
+Evet, burada bu bir regresyon problemi. Çünkü kontinuyus veriler var. Yani diskret veriler tahmin etmeye çalışıyoruz. Hani şunu tahmin ediyor olsaydık, işte bir bölge o saatte kırmızı mı?
+
+197
+00:41:15,967 --> 00:41:39,028
+Yeşil mi, sarı mı, turuncu mı diye bunu bir sınıflandırma problemine indirgeyebilirdik. Ama biz burada günün sonunda o lokasyondaki hızın o saat ve dakikada ne olacağını tahmin etmeye başlıyoruz. O yüzden de regresyon problemiyle uğraşıyoruz. Peki bu tarz bir problemde performans metriği nasıl ölçülüyor, ne kullanılıyor bunun için, hangi formüllerden paylanıyoruz?
+
+198
+00:41:41,748 --> 00:41:56,488
+Yani yaptığımız iş başarılı mı değil mi? Sınıflandırmada göreceğiz, konuşacağız, neler var. Recall değeri var, precision var, accuracy var, f-measure var. Peki regresyon tarafından oluyor.
+
+199
+00:42:00,788 --> 00:42:08,127
+Hocam, gerçekle tahmin edilenin karesel farkı gibi bir yaklaşım nasıl olur acaba?
+
+200
+00:42:08,587 --> 00:42:10,268
+Mesela biz buna ne diyoruz?
+
+201
+00:42:11,251 --> 00:42:33,251
+Square Error var. Bunun kare kökünü almak ya da almamak şeklinde. Maya dediğimiz Mean Absolute Error var. MAPE dediğimiz Mean Absolute Percentage Error var gibi regresyon problemlerine kullanılan metrikler var. Ama göreceksiniz tarama yaptığınızda bu alandaki çalışmaların en büyük problemi...
+
+202
+00:42:33,427 --> 00:42:54,987
+İki farklı yaklaşımı birbiriyle kıyaslarken el ve ile avutu karşılaştırma durumu oluşabiliyor. Çünkü genelde veri setleri çok ortak değil. Herkes belirli bir şehrin, belirli bir ülkenin şehrinin veri setini kullandığı için zaman zaman aynı veri setini kullanan çalışmalarda çıkıyor ama en önemli sorunlardan bir tanesi bu.
+
+203
+00:42:54,987 --> 00:43:00,487
+Bir, performans metrikleri neler kullanılıyor? Bunlardan bahsetmek lazım çalışmada.
+
+204
+00:43:00,916 --> 00:43:15,615
+İki, bugüne kadar yapılmış çalışmalar hangi yöntemleri kullanmış ve ne kadar başarılı olmuş? Yani hata oranı ne? Biz artı eksi ne kadar hız hatasıyla tahmin edebiliyoruz?
+
+205
+00:43:16,532 --> 00:43:30,092
+Ya da yüzdesel olarak ne kadar geliyorsun? Mesela artı eksi dediğiniz zaman 30 kilometrede 36 tahmin ettiğinizde aslında 6 kilometre sapmış oluyorsunuz. Ama yüzdesel olarak baktığınızda yüzde 20.
+
+206
+00:43:31,443 --> 00:43:56,284
+Ama 60'da 6 saptığınızda %10 hatanız var. Fakat yine 6 kilometre satmış oluyorsunuz. Bu da önemli. Düşük hızlardaki sapmayla yüksek hızlardaki sapmanın etkisi farklı. Bu mesela hakikaten dikkate almamız gereken bir durum mudur? O yüzden hani mapayı mı tercih edelim, mayayı mı tercih edelim yoksa means score errori mi tercih etmeliyiz? Hangisi daha haklı diyeceğim? Bunu ortaya koymak da önemli.
+
+207
+00:43:56,980 --> 00:44:13,159
+Doğal olarak gelinen noktada karmaşıklığı, trafik karmaşıklığı yüksek bir şehirde başarılar ne çıkıyor? Yani gelinen en iyi nokta ne? Bunu ortaya koymamız lazım derlerine çalışmasına.
+
+208
+00:44:13,159 --> 00:44:22,460
+En son işte 2019 yılında şöyle bir çalışma var 2020'de. Hatayı şuraya kadar indirmişler. Şu şehirde, şu şartlarda, şu veriyi kullanmışlar gibi.
+
+209
+00:44:23,699 --> 00:44:43,799
+Bir de tabii şöyle bir şey var, demin söylemek istediğim. Şimdi şehir bazında bir tahmin yapıyorsunuz. Doğal olarak bu modeli alıp başka bir şehre uyguladığınızda bu başarının ne olup olmayacağı bir soru işaret.
+
+210
+00:44:50,612 --> 00:45:01,831
+Lokasyon var. Yani bu da İstanbul'da yaklaşık 7 bin ve 10 bin civarında sensör var. Her lokasyon için bir öğrenme yapacağız ve her lokasyon için bir model oluşturacağız.
+
+211
+00:45:08,884 --> 00:45:14,884
+Lokasyonları kümeleyip o kümeler üzerinde bir model de oluşabilir.
+
+212
+00:45:16,820 --> 00:45:42,320
+En hani şeyi tek tek yapmak olurdu. En hani özel ve güzel çözüm. Ama tek tek yapmamızın maniyeti yüksek. Her seferinde öğretmek ve hepsi için ayrı ayrı modeller çalıştırmak gerekiyor. Bunu da Ayşin bir hale getirmenin yolu birbirine benzeyen karakteristiği birbirine benzeyen lokasyondan hükümeleyerek onlar için ortak model kullanmak. Bu da çok akıllıca bir yaklaşım.
+
+213
+00:45:44,628 --> 00:46:11,628
+Tek tek yapmakla ortak yapmak arasındaki farkı da ortaya koymak lazım. Ki tercih edebilir miyiz? Yoksa arada ciddi bir fark var mı? Çünkü arada önemli bir fark varsa o zaman gruplayarak yapmayı tercih etmekten vazgeçebiliriz. Bu da bir bakış açısı noktası ki bu konuda bir tez konusu düşünüyorum. İlgilenen olursa başvurabilir. Trafik karakteristiği benzer noktaların.
+
+214
+00:46:11,920 --> 00:46:26,920
+Bu konuda bulunması ve bunların trafik akış tahminindeki başarıyı olan etkisinin araştırılmasıyla ilgili zevkli bir konu olacağını düşünüyorum. Çünkü hakikaten belli bölgelerdeki trafik baktığınızda akşam, sabah...
+
+215
+00:46:27,380 --> 00:46:38,099
+Hemen hemen aynı karakteristiği gösteriyor ki birbirine yakın noktalarda bu böyle bir şekilde gerçekleşiyor. O noktaları gruplayarak tahmin yapmakta fayda var diye düşünüyorum.
+
+216
+00:46:39,099 --> 00:46:51,099
+Tabii bunu da söyledikten sonra elinizde kısa bir zaman var diyelim ve içlerinden en zor tahmin edilebilir noktalarla ulaşmak istiyorsunuz.
+
+217
+00:46:52,244 --> 00:47:11,163
+Yani 7 bin 10 bin tane saat sonra var ama ilk yüzüyle uğraşacaksınız. Çünkü kolay yeri tahmin etmek çok da bir espri değil. Kime sorsanız zaten aynı saatlerde aynı karakteristiği gösterirse sıkıntı değil. Peki en zor tahmin edilebilecek noktaları nasıl belirlersiniz?
+
+218
+00:47:16,563 --> 00:47:25,563
+Trafik akışının yoğun olduğu veya daha çok bu sanayi bölgeleri, okul bölgeleri veya etkinliklerin kesiştiği yerler olabilir.
+
+219
+00:47:26,323 --> 00:47:32,563
+Bir fikirdir, yanlış değildir ama alternatif bir fikrin peşindeyim.
+
+220
+00:47:35,635 --> 00:47:40,115
+Şöyle bir şey geliyor aklıma. Başkasının sözünü mü kestim?
+
+221
+00:47:40,856 --> 00:47:44,556
+Yok, ben emin olamıyorum. [öğrenci] gerçekten el kaldırıyor mu yoksa yanlışlıkla mı basıyor diye.
+
+222
+00:47:44,996 --> 00:47:46,276
+Ben kaldırdım hocam'ı sözler mi?
+
+223
+00:47:46,695 --> 00:47:49,635
+Tamam, o zaman önce [öğrenci]'a söz vereyim, sonra sana söz vereyim.
+
+224
+00:47:51,396 --> 00:47:57,216
+Tamam, şöyle bir fikrim vardı. En fazla talep edilen noktalar olabilir belki de.
+
+225
+00:47:58,516 --> 00:48:14,395
+Güzel. Bu da bir bakış açısı. Bakın, bu da fena bir fikir değil. Burada en fazla talep edilen noktalar artı ana arterler dediğimiz, aslında ara sokaklardan çok ana arterlerdeki problemleri önce çözmeyi tercih edebilirsiniz. Güzel. Bununla hiçbir ihtimali yok.
+
+226
+00:48:16,215 --> 00:48:22,076
+Geleceğiz. Çok az kaldı. Eminim. Yani herkes söyle, söyle o noktaya getirecek de tahmin ediyorum. Başka ekleyeceğim bir şey var mı buna?
+
+227
+00:48:23,855 --> 00:48:24,496
+Hayır, yok.
+
+228
+00:48:24,496 --> 00:48:26,096
+Tamam. [öğrenci]'a söz veriyorum.
+
+229
+00:48:27,188 --> 00:48:33,968
+Farklı zamanlarda rastlantısal gibi gözüken değişiklikleri sezmek belki iyi olabilir.
+
+230
+00:48:35,348 --> 00:48:38,548
+Biraz daha açar mısın? Aynı şeyi mi düşünüyoruz acaba diye merak ediyorum.
+
+231
+00:48:39,828 --> 00:48:53,268
+Yani şöyle, gözlemlenmesi zor, değişik parametrelerde çok değişik davranan, bugün çok sıkışık olan, diğer gün boş olan, karakteristik davranmayan yollar diyebilirim.
+
+232
+00:48:53,492 --> 00:49:17,452
+Çok güzel. Aslında key word, karakteristik davranmayan yol var. Bence çok doğru. Bunu bir nebze tespit etmenin yolu var. Kolay bir şekilde ama tam olarak bize %100 karakteristiği değişen yerleri vermemekle birlikte oldukça bir ipucu veriyor. Lokasyonların hızlarının standart satmasını bulmak.
+
+233
+00:49:18,099 --> 00:49:33,519
+Bir lokasyonda hızlarının standart satması yüksekse o zaman o lokasyondaki değişikliklerin de fazla olduğunu söyleyebiliriz. Ama şunu söyleyebilirsiniz karşı argüman olarak. Hocam işte sabah yavaştır, akşam hızlıdır, hep aynıdır.
+
+234
+00:49:33,972 --> 00:49:49,472
+Yine kolay tahammül edilir. Evet, haklısınız ama bu bir adımdır. Yani standart satmaya göre bunları dizerseniz en azından o lokasyonlarda hızların değişkenlik gösterdiği ve bizlerin bu problemle uğraşmamız gerektiğini düşünebiliriz.
+
+235
+00:50:00,000 --> 00:50:18,000
+Noktalara bakmamız gerektiğinde birazcık konuşmuş olduk aslında. Çok değişik noktaları var gördüğünüz gibi. Benim sizden beklentim, bütün konuştuğumuz her şeyi içermesi değil. Ama bir kişi okuduğunda o alanda bilmesi gereken temel bilgileri alması artı...
+
+236
+00:50:18,623 --> 00:50:32,703
+Farklı bakış açılarına göre okuduğunda o makaleden de bu bakış açıları varmış, bu gruplandırmayla da baktığımızda şu noktayı düşünmek güzel olabilir, dedirtebilmek.
+
+237
+00:50:34,143 --> 00:50:42,703
+Yani biz bunları bu kadar konuşurken sizi sonuçta ben kesinlikle bütün hepsini içeren bir çalışma hazırlayayım diye
+
+238
+00:50:43,152 --> 00:51:06,632
+Bir zorunluluk getirmiyor. Böyle bir şey yok. Zaten yapamazsınız da. Onun için 10-15 sayfa yetmez. En az 30 sayfa. Arada böyle sormelere denk gelebilirsiniz. Çok daha büyük bir çalışma. Fakat biz şunun peşindeyiz. Buradan çıkacak güzel çalışmalar birleştiğinde işte o etkiyi yakalayabiliriz. Herkes farklı bir bakış açısı da yapacağı için.
+
+239
+00:51:07,923 --> 00:51:13,503
+Yani biraz daha sörveyi sizin başlıklarınızı kombinlediğimiz zaman ortaya çıkartacağız.
+
+240
+00:51:14,764 --> 00:51:27,804
+Şimdi bir 50-55 dakika kadar yaptık. Tabii ben de uzun bir konuştum. Siz de katkıda bulundunuz. Teşekkür ediyorum. Bir 10 dakikada verelim. Sonra devam edelim. Çok teşekkür ediyorum. Birazdan görüşmek üzere.
+
+241
+01:04:29,139 --> 01:04:33,359
+Evet arkadaşlar, yeniden merhaba. Kaldığımız yerden devam edelim.
+
+242
+01:04:42,291 --> 01:04:58,811
+Şimdi tabii problemin birçok noktasını bile getiriyorum. Özellikle size bir fikir vermesi açısından nerelerden yakalayabiliriz derseniz en çok short term ile ilgili paper ile karşılaşacaksınız. Long term ile ilgili çok az paper ile karşılaşacaksınız.
+
+243
+01:04:58,811 --> 01:05:08,071
+Ve paperlarla şunu göreceksiniz. Bazı paperlar sonucu bile net bir şekilde vermeyebiliyorlar. Buna dikkat edin.
+
+244
+01:05:08,403 --> 01:05:24,003
+O yüzden bir tablo oluşturduğunuzda not available gibi bir ifade kullanmanız gerekebiliyor. Kategorize yaptıktan sonra tablolarınızı hangi başlıkla oluşturmanız gerektiğine karar vermeniz gerekiyor.
+
+245
+01:05:24,003 --> 01:05:27,820
+Bu arada sürüş...
+
+246
+01:05:27,827 --> 01:05:37,827
+Daha doğrusu sürüşte bir yerim de, trafik akış hızı tahminini etkileyen parametrelerden bir tanesi de bir lokasyonun etrafındaki diğer lokasyonlardan gelen bilgiler.
+
+247
+01:05:37,827 --> 01:05:39,827
+Yani örneğin...
+
+248
+01:05:40,244 --> 01:06:05,764
+Bu, Boğaziçi Köprüsü'ne girişi düşünün. Bir sensör var orada. Hemen arkasında bir altınız adede bir sensör var. Hemen arkasında Çamlıca'da bir sensör var. Aslında bunlar birbirleriyle connected. Ve bu connected yapı sayesinde etraftaki graf mantığından giderek ilgili bağlantıların bilgisini de kullanarak aslında tahmini daha da iyileştirme şansına sahipsiniz.
+
+249
+01:06:08,244 --> 01:06:31,164
+Bu bilgi alabilirsiniz. Öbür tarafın tahminini yapmak da biraz daha kolaylaşabilir. Bununla ilgili şu anda bir aktif bir çalışma zaten yürütüyoruz bir öğrencimle beraber. Bir sonuç ne çıkacak? Ben de merak ediyorum şu anda. Daha henüz aktif bir sonuç almadık ama faydası olacağını düşündüğümüz bir yaklaşım.
+
+250
+01:06:33,460 --> 01:06:48,219
+Onun dışında başka bir şey kaldı mı diye düşünüyorum bu konuyla ilgili olarak. Düşünelim, düşünelim. Bu arada sizin soracaklarınız var mı? Ben bu kadar anlattım. Sorularınız varsa bu konuyla ilgili cevaplayalım. Sonra yeni bölüme geçeceğiz.
+
+251
+01:06:53,523 --> 01:06:56,523
+Hocam bu Journal formatı iki sütunlu olan değil mi?
+
+252
+01:06:56,983 --> 01:07:00,283
+Evet, iki sütunlu olan. Aynen öyle. O formatı kullanıyoruz.
+
+253
+01:07:00,283 --> 01:07:09,003
+I3P Journal. Benim tercihim Latex ile yazmanız. Ama tabii ki Word ile yazanlara bir itirazım yok.
+
+254
+01:07:09,583 --> 01:07:18,083
+Orada bir kısıt getirmiyorum ama Latex kullanarak yazmaya alışırsanız birçok noktada işin kolaylaştığını göreceksiniz.
+
+255
+01:07:18,443 --> 01:07:20,643
+Formatla pek uğraşmak durumunda kalmıyorsunuz.
+
+256
+01:07:20,992 --> 01:07:28,232
+Ama tabii ki bu bir tavsiye İlesi için. Başka soru?
+
+257
+01:07:34,452 --> 01:07:37,432
+Sanırım yok. Güzel.
+
+258
+01:07:37,692 --> 01:07:39,432
+Hocam, chatte bir soru var.
+
+259
+01:07:40,152 --> 01:07:41,032
+Chatte bir soru, he.
+
+260
+01:07:43,212 --> 01:07:45,612
+Yunan'ın sorduğu bir soru var. Teşekkür ederim.
+
+261
+01:07:46,292 --> 01:07:47,352
+Daha hatırlattığın için.
+
+262
+01:07:49,312 --> 01:07:53,872
+Şimdi bu semester projesi yerine geçecek. Evet, bu ödev.
+
+263
+01:07:53,972 --> 01:07:56,752
+Semester projesi olarak bu ödevi teslim edeceksiniz.
+
+264
+01:07:57,592 --> 01:07:59,292
+Yeri gelmişken şunu da söyleyeyim.
+
+265
+01:08:00,447 --> 01:08:12,447
+Bu sene bir değişiklik yapmayı planlıyorum. Final sınavını eğer herhangi bir kısıt ya da enstitüden farklı bir şey gelmezse...
+
+266
+01:08:12,512 --> 01:08:34,772
+Bir gene proje şeklinde vermeyi düşünüyorum. Onu da gene önceden vermek planlıyorum ama onun süresi final haftasına kadar olacak. Ve bu sefer veriyle uğraşacaksınız ve programlama yapacaksınız. Çıktıları üreteceksiniz. Buradan da bir bildiri mümkünse yakalamanın peşindeyim.
+
+267
+01:08:34,772 --> 01:08:40,212
+Konularla ilgili önümüzdeki haftalarda biraz daha netleşip şu an çalışmalarım devam ediyor.
+
+268
+01:08:40,511 --> 01:09:06,971
+Bu, muhtemelen herkesin bir kere aynı konusu olmayacaktı büyük olasılıkla. İki, belki sizin de bu konuda tarama yapmanızı isteyebilirim. Yani hani çalışmayı düşündüğünüz, işte ben şu konuda bir şeyler buldum, yapmak istediğiniz bir şey varsa onu onaylayabilirim ders kapsamında olduğu sürece. Ama buna henüz karar vermedim. Onu bir iki hafta içerisinde sizinle paylaşmış olacağım. Bir iki de ufak ödev vereceğim.
+
+269
+01:09:07,636 --> 01:09:23,956
+Önümüzdeki haftalarda ama bu çalışmanızı şu an size verdiğim semestr projeyi çok çok önemsediğimi bir kez daha hatırlatayım. Eğer sona bırakırsanız inanın çok çok sığ bir şey çıkar.
+
+270
+01:09:24,372 --> 01:09:51,372
+Sonra hani puanlarda niye böyle oldu vesaire dememek adına o çalıştığınız emeği de harcın yani boşa gitmemesi adına buna dikkat etmenizi istiyorum. Arada bir kez sizden ara çıktı isteyeceğim. Orada outline'ı paylaşmanızı isteyeceğim. Outline'ın başlıklarının altına neler yazmanızı planladığınızı isteyeceğim. Bu da yaklaşık olarak bir ay sonra olacak. Yani daha fazlasını teslim ederseniz mutlu olun. Sorularınızı yanıtlayacağım.
+
+271
+01:09:51,728 --> 01:10:05,907
+Ben böyle bir planlama düşündüm. İşte şurada kafam karıştı. Acaba bunu koysam, bunu koysam, bunu koymaktan emin olamadım gibi sorularınız varsa onlara da cevap veriyor olacağım. Daha önce bir derleme yazan var mı onu sorayım.
+
+272
+01:10:09,555 --> 01:10:24,355
+Gördüğüm kadarıyla yok. O zaman iyi sizin için de bir deneyim olacaktır. Bu konuda en azından literatür taraması yapma deneyimi de edineceğiniz için tezde çok daha rahat edeceğinizi düşünüyorum.
+
+273
+01:10:25,675 --> 01:10:35,235
+Şimdilik benim bu konuyla ilgili söyleyeceklerim bunlar. Önümüzdeki haftalarda aklınıza soru geldikçe konuyla ilgili tabii ki istediğiniz zaman bana sorabilirsiniz.
+
+274
+01:10:35,796 --> 01:10:38,756
+Şimdi bu haftanın sunumuna gelelim.
+
+275
+01:10:39,556 --> 01:10:46,156
+Hocam sunuma geçmeden önce bu vize sınav şeklinde mi olacak yoksa ona da proje gibi bir şeyler olacak?
+
+276
+01:10:46,156 --> 01:10:50,476
+Vize sınav şeklinde olacak. Mutlaka bir tanesini sınava yapmayı planlıyorum.
+
+277
+01:10:51,115 --> 01:10:52,615
+Peki tarihi nedir?
+
+278
+01:10:53,300 --> 01:11:10,680
+Şu anda bize ulaşmış üniversiteden bir tarih maalesef yok. Muhtemelen nasıl olacağı konusunda henüz netleşmedi. Hangi platform üzerinden yapılacak en azından. Takrivi olarak 8'de 10. hafta arası, 8-9-10'dan bir tanesinde olur diye bekliyorum.
+
+279
+01:11:14,387 --> 01:11:15,807
+Tamamdır, teşekkür ederim.
+
+280
+01:11:16,167 --> 01:11:16,708
+Rica ederim.
+
+281
+01:11:18,708 --> 01:11:20,708
+Şimdi şunu açalım.
+
+282
+01:11:26,515 --> 01:11:45,255
+Bu arada dersle ilgili dokümanları ders duvarına ekleyeceğim. Oradan takip edebilirsiniz. Ödevle ilgili, dört semestre projesiyle ilgili doküman ekleyeceğim zaman oraya koyacağım. Yeri geldiğimde de size mail, gsiz üzerinden mail ile bilgilendirme yapıyor olacağım.
+
+283
+01:11:45,652 --> 01:11:54,652
+Ama en ufak bir noktada sorunuz olduğunuz lütfen benimle Yıldız Zetetere adresinin üzerinden iletişime geçmekte ama çekilmeyin.
+
+284
+01:11:54,652 --> 01:11:59,652
+Biraz geç de olsa bazen çok sıkışık program oluyor. Size mutlaka geri dönüş yaparım.
+
+285
+01:12:04,532 --> 01:12:06,711
+Çinli Share Screen yapalım.
+
+286
+01:12:18,068 --> 01:12:33,007
+Evet, şimdi mobil dünyaya giriş yapacağız. Aslında ilk derste yapmıştık ama o birazcık genel kavramları tanıtmak üzerineydi. Bugün biraz daha detaylı giriş yapacağız.
+
+287
+01:12:33,007 --> 01:12:42,007
+Geçtiğimiz haftalarda konteksti konuştuk nedir diye. Kontekst awareness kavramını konuştuk. Bu kontekstleri algılamak için...
+
+288
+01:12:42,515 --> 01:12:52,175
+Ne tür yaklaşımlar var? Çevresel zeka uygulamalarından bahsettik. Emniyet İntelijenst kavramını biraz konuştuk ki bir daha üzerinden geçmek gerekirse Emniyet İntelijenst'den.
+
+289
+01:12:54,835 --> 01:13:04,175
+Ortamdaki kişisel aktiviteleri algılayan ve bununla ilgili çözüm üretebilen tüm elektronik cihazlardan oluşan tüm...
+
+290
+01:13:05,716 --> 01:13:32,956
+Sistemlere verdiğimiz isim çevresel zeka aranları Ambient Intelligence. Ama Ambient Intelligence kavramı yani geçmişte çok daha sık kullanıyordu. Şimdi artık onun yerini smart kelimesiyle doldurduğumuz, arkasını da farklı şekillerde konumlandırdığımız smart transportation, smart city, smart buildings gibi aslında alt konular başlıklar almaya başladı.
+
+291
+01:13:33,716 --> 01:14:00,716
+Çevresel zekayı önemsiyoruz. Çünkü daha önce de söylediğimiz gibi kişilerle aynı dili konuşan cihazlar üretebilmemiz için cihazların önce çevresel farkındalıklarını sağlamamız gerekiyor. Bunları yapmanın yolu da sensörler kullanmak ve bu sensörlerden toplanan verileri yorumlamak. Ama gördüğünüz gibi biraz önce bahsettiğimiz problemde bile...
+
+292
+01:14:01,908 --> 01:14:26,408
+Onlarca başlık çıkardık. Bu arada biraz önce şunu söylemeyi unuttum. Şimdi farkına varıyorum. Bu bahsettiğimiz problemde bir de data source'lar var ama ne anlamda? İlk söylediğimiz anlamda değil. Hız verisinin toplandığı kaynaklar. Araçlardan toplanabilir, telefonlardan toplanabilir.
+
+293
+01:14:26,931 --> 01:14:50,152
+Bu bahsettiğimiz tabelalar vardır. Tabelalardan Bluetooth okunarak giriş çıkış zamanları kaydedilip hız öyle ölçebilir. Roadside unitler koyularak hız ölçebilir. Yolun altına konulan metal yoğunluğunu tespit eden detektörlerle oradaki araç yoğunluğu yavaş hareket ettiğinde yoğunluk yüksek olacağı için.
+
+294
+01:14:54,931 --> 01:15:21,931
+Bu arada kullandığımız verinin değişmesi anlamına geliyor. Göreceksiniz bir bölgede yolun açık olması demek hızı doğru tespit edebiliyorsunuz anlamına gelmiyor. Çünkü bir aracın oradan açık yolda yavaş geçiyor olması da bir bilgi. Yani yüzle gidebileceğiniz bir yerde, yani izin veriyorsa tabii ki bu trafik kuralları, adam 60'da gidiyorsa aslında o aracın 60'da geçiyor olması o bölgenin...
+
+295
+01:15:21,967 --> 01:15:39,667
+90'la geçinebileceği anlamına gelmiyor. Böyle de bir durum var. Ya da kamyon geçiyordur, yavaş geçiyordur. Araç hızı bilgilerini aldığınız zaman o bölgenin hız tahminini yaparken onu da göz önünde bulundurmanız gerekiyor. Bunu da eklemiş olayım ve buradaki konuma geri döneyim.
+
+296
+01:15:48,287 --> 01:16:11,347
+İşin rengi değişti. Neden değişti? Artık siz lokasyon bağımsız, zaman bağımsız, cihaz bağımsız hareket edebilmeye başladınız. Bu da dolayısıyla verinin taşınımını kablolara ihtiyaç olmadan sağlayabildiğimiz bir dönemi ifade ediyor. Wireless Communication ne kadar süredir var?
+
+297
+01:16:14,047 --> 01:16:15,028
+Düşündüğünüzde.
+
+298
+01:16:16,051 --> 01:16:19,412
+Tesla'dan beri var hocam. İkola Tesla'dan beri var aslında.
+
+299
+01:16:19,752 --> 01:16:26,951
+Peki, bizim düşündüğümüz anlamda data transmission valios olarak yaklaşık ne kadar süredir yapılıyor?
+
+300
+01:16:30,051 --> 01:16:31,492
+Radyolar çıktığından beri mi?
+
+301
+01:16:32,471 --> 01:16:36,252
+Öyle demeyelim. Yani şu anda benim anlatmaya çalıştığım şey...
+
+302
+01:16:36,252 --> 01:16:37,231
+Dijital olarak.
+
+303
+01:16:37,619 --> 01:16:48,699
+Dijital olarak veriyi taşıma valizu olarak ne kadar sürebilir gerçekleştirdiğimiz bir hikaye?
+
+304
+01:16:53,011 --> 01:16:59,851
+Hocam, veri olarak baktığımızda dijital sayılmayacaktır ama tergraf aslında bir veridir. Dijital değildir sadece.
+
+305
+01:17:01,371 --> 01:17:03,311
+Ben günümüze dönelim istiyorum.
+
+306
+01:17:04,492 --> 01:17:05,731
+Belki 15-20 yıl hocam.
+
+307
+01:17:05,731 --> 01:17:10,311
+Evet, şimdi baktığınızda yaklaşık olarak 20 senelik bir hikayeden bahsediyoruz.
+
+308
+01:17:15,956 --> 01:17:25,355
+Değişmesini sağlayan nedir? Yani bu kadar her şeyimizin valisi olmasını sağlayan akıllı telefonlar.
+
+309
+01:17:26,804 --> 01:17:43,463
+Ve bu da yaklaşık 2007-2008. Yani 2010'lu yıllar derseniz, 2010'lu yıllardan itibaren bildiğiniz şu anda bayağı içimizden radyo sinyamları geçiyor yoğunlukla. Bunun da nelere yol açacağını inşallah sağlık açısından kötü bir şekilde deneyimlemeyiz.
+
+310
+01:17:43,463 --> 01:17:54,804
+Çünkü bugün 3G, 4G bu şekilde etkiler yaratırken 5G'nin hangi noktada nasıl bir etkiler yaratacağını gerçekten bilmiyoruz. Çünkü şu anda siz evdeki bunu örnek...
+
+311
+01:17:54,804 --> 01:18:21,884
+Bir konferansta vermişti. Ben evdeki çocuklarım için akşam şeyi kapatıyorum, router'ı kapatıyorum dedi. Sonra üzerinde düşündüm ki benim kapatmamın bir önemi yok. Alt komşum, üst komşum, yan komşum vesaire düşündüğünüz zaman aslında biz artık öyle hani şunu kapattım, bunu kapattım diyerek bu işten kurtulma şansına sahip değiliz. Yani sinyaller maalesef çok yoğun bir şekilde geçiyor. Ama sar değerleri üzerinden baktığınızda bazı çalışmalar sorun olmadığını söylüyor.
+
+312
+01:18:22,804 --> 01:18:30,804
+Aksini iddia ediyorlar falan. Sonra devreye büyük kuruluşlar giriyor derken, işte hayatımız böyle evrilip devam ediyor. Burada...
+
+313
+01:18:31,091 --> 01:18:56,951
+Bu wireless mobilite özelliği, bizim hareketlilik özelliğimiz bize üç başlık getirdi. Mobile Communication, Mobile Hardware ve Mobile Software kavramlarını getirdi. Mobile Communication için çok farklı protokoller var. Onları yeri yerlerine konuşacağız. Hardware dediğimizde sadece telefonlar değil, karşımıza neler de çıkıyor Mobile Hardware'de.
+
+314
+01:18:57,492 --> 01:19:03,292
+Giyilebilir cihazlar son dönemde. Görmüş sistemler karşılığında karşımıza çıkıyor.
+
+315
+01:19:04,192 --> 01:19:14,252
+Ve mümkün olduğunca küçük cihazlar tasarlayarak insanın daha rahat taşıyacağı ve estetik kaygısı duymadan taşıyabileceği cihazların peşinde koşuyoruz.
+
+316
+01:19:14,252 --> 01:19:21,932
+Peki, mobile hardware konusunda damga vuran firma kimdir diye sorsam.
+
+317
+01:19:25,300 --> 01:19:51,220
+Apple'ın akıllı saati olabilir hocam. Oldukça iyi kullanım var. Doğru olabilir. Peki donanım bazında, ürün bazında düşünürsek, birim bazında, hardware component olarak düşünürsek? Sony yine sensör olarak birçok sensör üretiyor diye biliyorum.
+
+318
+01:19:52,404 --> 01:19:55,504
+Bu yayıncağızları güzel. Evet.
+
+319
+01:19:56,984 --> 01:19:57,944
+Nvidia, ARM.
+
+320
+01:19:59,064 --> 01:20:13,144
+Doğru. Ben aslında ARM'a gelmek istiyordum. ARM aslında mobil dünyada işlemci alanında özellikle kullanmış olduğu komut setiyle risk mimarisini mi kullanıyor, kesk mimarisini mi kullanıyor?
+
+321
+01:20:14,944 --> 01:20:15,324
+Risk.
+
+322
+01:20:16,043 --> 01:20:18,164
+Evet, risk mimarisi kullanıyor.
+
+323
+01:20:18,640 --> 01:20:27,600
+Bu, Reduced Instruction Set dediğimiz ve enerji anlamında da Intel'in çok çok önünde gidiyordu.
+
+324
+01:20:28,360 --> 01:20:33,620
+Ama şu anda Intel'de bu piyasaya girmeye çalışıyor diyorsunuz. Zaman zaman cihazlarını görüyoruz.
+
+325
+01:20:33,720 --> 01:20:41,739
+Ama gördüğünüz gibi doğru hamleleri yaptığınız zaman orada kalıcı olabiliyorsunuz ve rakiplerinizi o alana sokmuyorsunuz.
+
+326
+01:20:41,739 --> 01:20:45,300
+Bir dönem desktopta Microsoft'un olduğu gibi.
+
+327
+01:20:45,760 --> 01:20:58,720
+Microsoft hiçbir şekilde bu alana ne kadar çaba harcısı tam olarak giriş yapamadı. Bu anlamda geleceğin ürünleri üzerine gerçekten iyi bir bakış açısı getirmek gerekiyor.
+
+328
+01:20:58,720 --> 01:21:09,319
+Ben o zaman size sorayım. Her sene bu soruyu soruyorum. Siz bundan sonra böyle vay be işte şu teknoloji geldi yani.
+
+329
+01:21:09,939 --> 01:21:26,939
+Hani değişti, bir yeni dönem başlıyor diyeceğiniz ne bekliyorsunuz? Çünkü akıllı telefonlar buraya en yakın cihazlar olarak gözüküyor. Yinebilir cihazlar da okuyor ama yani sizi ne şaşırtır? Ya da neyi bekliyorsunuz en yakın zamanda?
+
+330
+01:21:28,939 --> 01:21:29,579
+Egzosoidler.
+
+331
+01:21:30,036 --> 01:21:45,115
+Bu dışarıdan giyilebilen, aksesuar tarzı olan fakat işte omurga sistemini destekleyen, kemikleri destekleyen ve atıyorum insanın mobilitesini arttırabilecek cihazları bekliyorum ben açıkçası.
+
+332
+01:21:45,115 --> 01:21:54,115
+Yani bu şey geçmeden önce gibi değil mi? Yanılmıyorum. Tabii ki aynı konsek değil ama yarı insan, yarı...
+
+333
+01:21:55,435 --> 01:21:57,716
+Yani onun biraz daha manuel hali diyelim.
+
+334
+01:21:58,036 --> 01:22:24,036
+Çünkü mesela gündelik hayatta atıyorum A noktasına B noktasına giderken omurgamıza binen yük belli yani. Bunun için hani yoruluyoruz. Ayaklarımız yoruluyor, kollarımız yoruluyor. Bunu atıyorum temel olarak ek bir yapay bir omurga üzerine yönlendirebilirsek bütün ağırlığı bizden alır yani. Belki kas yapısına zarar verir ama bence...
+
+335
+01:22:24,884 --> 01:22:44,884
+Hatta bunu sanal oyunlarda da görüyoruz. Mesela işte Wii'de oyun oynuyorsunuz, tenis oynuyorsunuz, boşa joysticks anlıyorsunuz. Etki tepki daha da olayı yok. Böyle olunca da fiziksel olarak aslında insanlığın, kas sisteminin…
+
+336
+01:22:45,971 --> 01:23:07,971
+Bu anlamda sanal deneyimlerde de aynı şey var. Zayıflayacağı bir dönemden bahsediyoruz. İnsanlar bunu açığı kapatmak için, sportif yaşantı vesaire sürdürüyorlar ama bir anlamda da sanallığın getirmiş olduğu bir fiziksel eksiklik var. Bu konuda destek verebilir. Şu anda vücudumuzun en zayıf noktası, en çok böyle…
+
+337
+01:23:08,692 --> 01:23:14,631
+Bu teknolojik gelişiminden etkilenen ve zarar gören noktası neresi sizce? Yani çok farkında değiliz belki ama.
+
+338
+01:23:15,992 --> 01:23:16,512
+Göz mü?
+
+339
+01:23:17,652 --> 01:23:19,031
+Hayır diyemem.
+
+340
+01:23:20,051 --> 01:23:20,611
+Neresi?
+
+341
+01:23:21,012 --> 01:23:21,852
+Boyun olabilir.
+
+342
+01:23:22,231 --> 01:23:23,691
+Evet, boyun. Çünkü...
+
+343
+01:23:24,884 --> 01:23:51,884
+Şöyle bir hareket içerisindeyiz. Bütün yolculuk boyunca bakarsanız metroda oturanlara, ayakta olanlarla oturanlarla sürekli olarak telefona bakma pozisyonundayız. Boyunla ilgili ciddi şeyler artmış. Arkadaşın vasıtasını ediyorum, şikayetler, tedavi süreçleri. Fiziksel bir değişime uğruyoruz. Çocuklarda da bu var. Tabii bu işin sosyal boyutu ama…
+
+344
+01:23:52,756 --> 01:24:02,336
+Arkadaşınızın da söylediği gibi bu tarz ekstra destekler, teknolojik olarak hayatımıza muhtemelen gelecek sağlık anlamındaki sıkıntıları geçirmek için.
+
+345
+01:24:02,895 --> 01:24:11,855
+Mobile Software konusunu konuştuğumuz zaman da bütün bu mobil cihazlar için geliştirmiş olduğumuz yazılımları aslında adlandırmış oluyoruz.
+
+346
+01:24:11,855 --> 01:24:20,235
+Peki, mobil işletim sistemleri de bunlardan bir tanesi. Ve çok çok önemli. Normal işletim sistemlerinden farkı nedir?
+
+347
+01:24:22,547 --> 01:24:27,987
+Ve kaç tip işletim sistemi vardır? Yani gruplasanız kaç tip işletim sistemi sayabilirsiniz?
+
+348
+01:24:29,007 --> 01:24:35,648
+Yani normal işletim sistemlerinden farkı bir risk mimarisi olduğu için bir kere enerji tasarrufu yapması lazım.
+
+349
+01:24:35,648 --> 01:24:36,307
+Peki.
+
+350
+01:24:36,648 --> 01:24:39,500
+İşlemcilerin ona göre az enerji...
+
+351
+01:24:39,667 --> 01:24:59,407
+Kullanması lazım. Hani bu Big Little mimarisi falan filan da çıktı ya, bu büyük çekirdekler kullanılmadığı zaman kapatıyor, küçük çekirdekleri kullanıyor. O da beraberinde performans sorunlarını getiriyor. İşletim sistemi de ona göre belli başlı optimizasyonlar yapmak zorunda kalıyor.
+
+352
+01:24:59,687 --> 01:25:01,487
+Peki, başka bir yaklaşma söz vereyim.
+
+353
+01:25:13,844 --> 01:25:15,823
+Sıradan gidelim. Heyecan dur.
+
+354
+01:25:21,524 --> 01:25:23,264
+Aklıma gelen bir şey yok hocam şu an.
+
+355
+01:25:24,164 --> 01:25:33,544
+Yani telefondaki yapılan işler ve bilgisayardaki yapılan işleri kıyasladığında işletim sistemlerinin görev olarak farklılıkları vardır.
+
+356
+01:25:34,184 --> 01:25:39,624
+İllaki mutlaka bir şey gelir. Sırayı senden alıyorum. Sonra bir tur sana dönerim. [öğrenci].
+
+357
+01:25:40,948 --> 01:25:45,627
+Hocam, anlatabileceğim çok fazla şey var da normalde araya girmeyeyim dedin.
+
+358
+01:25:46,068 --> 01:25:48,887
+Bir tane başlık vermen yeterli. Herkes bir şeyler yapar.
+
+359
+01:25:48,887 --> 01:25:49,108
+Aynen.
+
+360
+01:25:49,587 --> 01:26:14,268
+En önemli iki tane konuya değinmek istiyorum. İlki aslında en büyük farklılık mobil cihazlardaki pilin kısıtlı olması. Buna bağlı olarak işlemleri istediğimiz gibi yüksek frekanslarda gerçekleştiremiyoruz. Az önce bir arkadaşımızın da söylediği gibi Big Little Mimarisinin yönetimi aslında bir noktada işletim sistemi katmanına da taşmış oluyor. Bu noktada işlemler eğer ki çok güç gerektiriyorsa bunu hızlı bir şekilde yapabilmek için işlemcinin o kısmı devreye alınıyor.
+
+361
+01:26:15,764 --> 01:26:43,323
+Diğer işlemler için ise Lidl tarafı devreye alınıyor. Bunu yönetebilmek başlı başına işletim sisteminin kabiliyetlerinden bir tanesi. Bir diğeri de sizin daha önce bahsettiğiniz gibi bir aslında communication tarafında da optimizasyon gerekiyor. Yine aslında bunun da temeli arka planda pil tarafına dayanıyor. İşletim sistemi iletişim sıklığını doğru şekilde ayarlamak zorunda ve bu sayede aslında elinde sınırlı olan kaynakları doğru şekilde idare etmek zorunda.
+
+362
+01:26:43,764 --> 01:26:53,543
+Aslında vereceğimiz neredeyse bütün örneklerin sonu 50-2 kısıtlı olan kaynakların doğru şekilde yönetilmesi ve ihtiyacıya yönelik çiftli verilmesi şeklinde olacaktır mobil işaret sistemlerinde.
+
+363
+01:26:53,543 --> 01:27:11,543
+Teşekkür ediyorum. Çok doğru bir nokta. Arkadaşlarım da söyleyeyim, kaynak optimizasyonu problemimiz var. Aslında eskiden de aynı sorunu bilgisayarlarda yaşıyorduk. Bundan 20 sene önce bilgisayarların işte RAM'leri kısıtlı, secondary soruşları kısıtlı vs. derken ona özel...
+
+364
+01:27:11,764 --> 01:27:31,983
+İşte yazılımlar geliştirmeye çalışıyorduk. Sonra telefonlar hayatımıza girince orada da aynı kısıtlar başladı. Gerçi şu an geldiğimiz noktada kaynaklar oldukça zengin ama dön dolaş bugün bilgisayar mühendislerinin özellikle araştırma yapanların en çok üzücü konu ne olurdu biliyor musunuz? Kimyacılar, biz bir pil bulduk.
+
+365
+01:27:32,372 --> 01:27:58,412
+Bir ay gidiyor deseler, ben size söyleyeyim. Yani bilgisayar mühendislerinin araştırma yapanların bir kısmı bayağı boreli bozulur. Çünkü old imzası ne yapacak, problem kalmayacak. Şu an her şey dönüyor dolaşıyor. İşte iOS zaten tanıtımını yaparken de, Android de yaparken de enerjiyi şöyle daha iyi kullanıyoruz. İşte görülmemiş bugüne kadarki en iyi performansı vs. falan diye. Dön dolaş, geldiğimiz nokta iki gün.
+
+366
+01:27:59,220 --> 01:28:04,760
+Olursa mutluyuz. Ama teknolojik olarak şu anda devrim yaratacak.
+
+367
+01:28:05,460 --> 01:28:31,720
+Bu alanlardan bir tanesi pil teknolojisi arkadaşlar. Gücü, enerji depolama ile ilgili bir sıkıntımız var. Mevcut telefonlarda ekranı büyüterek bir yandan daha çok enerji harcamayı göz önüne alıp ama bataryanın da büyümesiyle o aradaki farkı lehine çevirmeye çalışan bir tasarım oluştu. Şu anda bayağı bildiğiniz böyle 6 küsur inçlik telefonlar var.
+
+368
+01:28:33,460 --> 01:28:49,119
+Orada da ciddi bir pil kullanılıyor. Sonuçta biz mobil işletim sistemlerinde kaynak yönetimine çok daha dikkat etmek zorundayız. Güncel bir desktop, yani PC işletim sisteminde böyle bir kaygımız yok.
+
+369
+01:28:51,764 --> 01:29:11,064
+Önemli bir nokta communication'da. Communication'da gene PC üzerinde böyle bir kaygımız yok. Yani birkaç tane yol var zaten yapılabilecek, haberleştirebilecek ama onun ötesinde bunlar arasında switch etmek zorunluluğu yok kaynak yönetim arasından. Ama siz bir valisi ortama girdiğiniz zaman otomatikman hemen işletim sistemi eskiden böyle bir şey kendi otomatik yapmıyordu.
+
+370
+01:29:12,271 --> 01:29:22,671
+Açıp kapıyordunuz bundan ilk dönemlerde ama şimdi artık sizden sadece onayı alıyor, girdiği yerde tarıyor, bulduğu anda wireless'a geçiyor daha önceden tanındığı bir yerde.
+
+371
+01:29:24,112 --> 01:29:28,791
+Peki hangi tip işletim sistemleri var diye sormuştum. Oraya bir dönelim.
+
+372
+01:29:30,711 --> 01:29:33,051
+PC için Desktop Operating Systems var diyelim.
+
+373
+01:29:34,372 --> 01:29:35,372
+Mobile Operating Systems.
+
+374
+01:29:39,475 --> 01:29:54,415
+Mobil için mi soruyorsunuz hocam? O kısmı tamamlayalım. Yok, genel olarak. Yani kategorize etseniz işletim sistemlerini kaç başlıkla kategorize edersiniz? Windows bandılı var. Unix bandılı var.
+
+375
+01:29:54,415 --> 01:30:01,675
+Yok, o anlamda sormuyorum. Yani bir tarafta mobil telefonlar için işletim sistemleri var, bir tarafta PC'ler için var.
+
+376
+01:30:03,188 --> 01:30:14,188
+Evet. Bunun karşısında başka? Bir de sanırım bu ayrıyeten performans için kullanılan makinelerde da Nvidia'nın...
+
+377
+01:30:14,836 --> 01:30:20,236
+Günex üzerinden geliştirdiği şeyler var. Yani nasıl olsa enerji tüketiminde sıkıntı yok diye.
+
+378
+01:30:22,316 --> 01:30:26,296
+Genelde biz bunları sunucu işletim sistemleri olarak adlandırıyoruz.
+
+379
+01:30:26,836 --> 01:30:29,296
+Sunucular için ayrı bir işletim sistemi yapısı var biliyorsunuz.
+
+380
+01:30:29,296 --> 01:30:36,296
+Yani desktop PC'lerle benzeseler de PC ortamında aynı anda en tane kullanıcıyı yönetmiyorsunuz.
+
+381
+01:30:37,011 --> 01:30:58,612
+Ama sunucu işletim sistemleri aynı anda en tane kullanıcıyı elindeki kaynakları paylaşacak şekilde yanıtmak zorunda. Bu yüzden de farklı bir yapıda dizayn edilmiş olması gerekiyor. Bu yüzden Server Operating Systems diye de adlandırabiliriz. Onun ötesinde Embedded Operating Systems var. Yönü işletim sistemleri olarak adlandırabiliriz.
+
+382
+01:31:00,404 --> 01:31:06,304
+Birkaç tanesi TinyOS, CONT2 gibi sensör networkler için zamanında nizan edilmiş.
+
+383
+01:31:06,703 --> 01:31:11,923
+İşletim sistemleri. Başka adlandırabileceğimiz var mı? Kategorize edebileceğimiz.
+
+384
+01:31:12,423 --> 01:31:25,064
+Hocam, real time olanlar vardı. Biliyorsunuz genelde uçak gibi çok ani hassas işlemlerin yapıldığı makinelerde gerçek zamanlı olarak işlemin yapılmasını sağlayacak işletim sistemleri var.
+
+385
+01:31:25,064 --> 01:31:33,503
+Tabi bu noktada buna donanım da destek verdiği için yazılımla bizim bu hızı mümkün olduğunca arttırmamız gerekiyor ki bu üst katmanda bir yazılım değil.
+
+386
+01:31:34,703 --> 01:31:44,043
+Evet, çok doğru. Aynen öyle. Real-time operating system'ın güzel bir özeti oldu. Başka aklınıza gelen bir şey var mı?
+
+387
+01:31:48,404 --> 01:31:50,404
+Peki, şimdilik devam edelim.
+
+388
+01:31:52,340 --> 01:32:01,079
+Burada şimdi mobil işletim sistemleri ve desktop işletim sistemlerinin farklarına ara ara slide'lar içerisinde devam ediyoruz.
+
+389
+01:32:01,079 --> 01:32:11,380
+Aslında bu haberleşmenin gelişiminde telefonun rolü ve sonrası nasıl gelişiyor? Bunun kısa bir özetini görüyoruz.
+
+390
+01:32:11,880 --> 01:32:20,079
+1876 yılında başlayan hikaye, 1970'ler itibariyle kablosuz telefonlara...
+
+391
+01:32:20,340 --> 01:32:45,940
+Bu konuda gelmeye başladığı noktada özellikle 2000'li yıllardan itibaren akıllı telefonlara geçiş yapıyor. Akıllı telefonların akıllı olmasını sağlayan şeylerden bir tanesi işlem yeteneğinin artmış olması. İki, etraflarıyla iletişim içerisinde olabiliyor olması. Kamera, mikrofon, çeşitli sensörlere sahip olması. Bir de featured phone dediğimiz bir kavram var.
+
+392
+01:32:48,340 --> 01:33:07,699
+Aslında düz, sadece telefon konuşması ve mesajlaşma yapabildiğiniz telefonlara verilen ad. Bütün telefonların genel adı mobil, işte mobil haberleşme yapabildiğiniz telefonlar, mobile phone diye geçmekle birlikte bu eski tip telefonları feature phone olarak adlandırıyorlar.
+
+393
+01:33:12,307 --> 01:33:37,747
+Antik olarak nasıl insanlar arabayı saklarsa, bak bende de zamanında şu telefon vardı diye gösterilen telefonlar var. Peki, bunlar için çeşitli işletim sistemleri yazıldı akıllı telefonlar için. İşte Android var, iOS var, Symbian var ki bu işin en başında yer alan ilk mobil işletim sistemi diyebileceğimiz işletim sistemi.
+
+394
+01:33:38,547 --> 01:33:41,887
+Bu feature fonların bir işletim sistemi var mı?
+
+395
+01:33:45,492 --> 01:33:54,971
+Evet, belki çekirdek düzeyinde de olsa, kör düzeyinde de olsa bir şey düşünüyorum.
+
+396
+01:33:59,315 --> 01:34:22,076
+Hocam, işletim sistemi genelde multitasking'in olduğu yerlerde aslında kaynak yönetimini sağlayabilmek için uygulanıyor. Bu noktada aslında donanım seviyesinde yine bir lojik tabii ki var ama işletim sistemini yeliktirecek kadar bir karmaşıklık söz konusu olmadığında, doğrudan feature phone için konuşuyorsak eğer ki simbiyanları da bir kenara bıraktığımızda, bir işletim sistemi vardır demek bence doğru olmaz.
+
+397
+01:34:22,868 --> 01:34:33,667
+Şimdi normalde bu telefonlar için bir işletim sistemi aslında yoktu. Arka planda gömülü bir cihaz için çalışan bir, ne diyelim, middleware da diyebilirsiniz.
+
+398
+01:34:35,127 --> 01:34:44,467
+Framework çok doğru olur mu bilemiyorum ama middleware demek daha doğru olurdu bilgisayar bana. Bu telefonun yeteneklerini yöneten bir yazılım olarak da düşünebilirsiniz.
+
+399
+01:34:45,140 --> 01:35:12,760
+Fakat son dönemde bir işletim sistemi çıktı ve bunu ilerleyen saatlerde göreceğiz. Bu işletim sistemi yaklaşık herhalde 3 sene önce falan çıktı. Feature fonları hedef aldı ama güncel. Ve dedi ki, ben dünyada şu kadar telefon kullanıcısı var, bunların önemli bir bölümü, özellikle Afrika ve Asya'da yer alanlarının önemli bir bölümü, maddi yetersizliklerden dolayı akıllı telefon kullanamıyor.
+
+400
+01:35:13,140 --> 01:35:38,140
+Ellerinde standart telefonlar var. Günümüzün güncel ama işte arama ve mesajlaşma ve biraz da internete girildiğinden telefonlar. Ben bunun için bir işletim sistemi ortaya koyayım. Şirket böyle bir misyonuna çıkıyor ve bu Afrika ve Asya doylesindeki insanların telefonuna bu işletim sistemlerini çalıştırmasını sağlayayım ve buraya...
+
+401
+01:35:38,671 --> 01:36:03,971
+Belirli miktarda uygulamaların market üzerinden yüklenmesini sağlayalım. İşte YouTube, Twitter, Instagram gibi çok fazla daha komplike uygulamalar değil ama sosyal medya uygulamaları da dahil olmak üzere temel uygulamaları kullanmasını sağlayabileyim diye bir işletim sistemi türedi. İsmini bilen var mı Duyan? Hiç.
+
+402
+01:36:06,323 --> 01:36:25,291
+Peki, söyleyeceğim. Birazcık bekleyelim zamanı geldiğinde. Ama ilginç bir proje. Gerçekten baktığınızda her şey akıllı telefonlara yönelmişken aslında ciddi hatırı sayılır bir miktarda bir grup telefonu da...
+
+403
+01:36:25,492 --> 01:36:53,351
+Bu konuda kısmen, kısmi akıllı hale getirmenin güzel bir yolu ve kaynakları da muhtemelen daha optimize kullanıyor. İnsanları da aslında biraz da daha fazla harcamaya teşvik eden bir yapı diyelim. Çünkü sonuçta ne kadar çok internete girerse o kadar çok harcama olasını da artacak. Bunlar mobile computing'in avantajı ve dezavantajları. Bu slide'ları sizlerle paylaşıyor olacağım zaten. Çok standart bilgiler var artık.
+
+404
+01:36:53,492 --> 01:37:15,072
+Bunları çok üzerinde duymaya gerek yok ama short battery life hala bir problem. Artık slow internet speed diye bir kavramımız yok. Bayağı bildiğiniz ciddi ciddi yüksek hızlarda iletişim sağlayabiliyoruz. Ama bir network ihtiyacımız olduğu kesin.
+
+405
+01:37:15,408 --> 01:37:27,408
+Ve bu network'ünde özellikle veri taşınırken bulunduğunuz ortamdaki interference'lardan çok etkilenmemesi gerekiyor. O yüzden hala...
+
+406
+01:37:28,564 --> 01:37:34,323
+Taşınan verenin doğru aktarılıp aktarılmadığı, çıkış gücünün ayarlanması gibi sorunları,
+
+407
+01:37:34,764 --> 01:37:38,083
+Mobile Computing'de telefon özelinde yaşıyoruz.
+
+408
+01:37:38,083 --> 01:37:45,083
+Mobile işletim sistemlerinin sorumlu olduğu cihaz içerisindeki çeşitli komponentler,
+
+409
+01:37:45,163 --> 01:37:55,083
+dokunmatik ekran, hücresel erişim, Bluetooth, Wi-Fi, Near Field Communication gibi ve bunun...
+
+410
+01:37:55,344 --> 01:38:04,283
+Dışında bütün uygulamaların yönetimi gibi. Bu noktada bunlar içerisinde en çok enerji tüketen nedir diye sorayım.
+
+411
+01:38:07,163 --> 01:38:14,243
+Farklı bir kişi cevaplarsa. Mesela [öğrenci]'e soralım.
+
+412
+01:38:15,507 --> 01:38:28,127
+Hücresel haberleşme bu. İkincisindeki selüolar yasansanlarım en çok pili tüketiyor. Ayrıca daha az çekme durumları da iyice tüketiyor. Daha çok siyeni arttırması için.
+
+413
+01:38:28,267 --> 01:38:30,587
+Peki, ikinci adayım ne olurdu?
+
+414
+01:38:31,507 --> 01:38:32,627
+İkinci adayım ne olurdu?
+
+415
+01:38:34,195 --> 01:38:46,456
+Touchscreen. Evet. En çok iki başlık ön plana çıkıyor. Bir de tabii onların yanına ekleyeceğimiz bir tane daha var. Açık olduğu zaman bayağı başımıza artan bir şey.
+
+416
+01:38:47,916 --> 01:38:57,836
+Bluetooth mu? Bluetooth çok artıyor. GPS. GPS başımıza oldukça artıyor. Onların hemen arkasına yerleşecek olan bir kamera var.
+
+417
+01:38:59,028 --> 01:39:12,228
+Kamerada özellikle yeni nesil telefonların çekim yeteneklerini düşündüğünüzde saniyede 60fps, 120fps, 4K çözünürlükte çekim ya da Full HD bunlar.
+
+418
+01:39:12,655 --> 01:39:17,836
+Aslında bir yere telefonu koyduğumuzda ciddi enerji yükleyecek işler.
+
+419
+01:39:18,275 --> 01:39:23,916
+Şimdi eski tip telefonları aslında birer sensör mod olarak kullanabiliriz arkadaşlar.
+
+420
+01:39:24,916 --> 01:39:28,435
+Bunları bir kamera olarak kullanabiliriz, bir mikrofon olarak kullanabiliriz.
+
+421
+01:39:29,336 --> 01:39:33,735
+Bunların birbirleriyle haberleşmesini de sağlayabiliriz ki bunlarla ilgili çeşitli projeler var.
+
+422
+01:39:33,735 --> 01:39:35,735
+Aslında...
+
+423
+01:39:36,372 --> 01:40:01,260
+Bunların çöpe gitmesindense ciddi bir işlem kapasiteleri var, kaynak kapasiteleri var. Tek ihtiyacımız bu telefonun genel olarak bir enerji kaynağına bağlı olmasın. Bunu sağladığın sürece örneğin evde bir bebek monitör uygulamasını ekstra bir donanım almadan bir yazılım geliştirerek...
+
+424
+01:40:01,555 --> 01:40:11,595
+İlgili telefonlarınızdan, eski telefonlarınızdan birini kamera göreviyle, mikrofon göreviyle kullanarak çok rahatlıkla gerçekleştirebilirsiniz.
+
+425
+01:40:12,595 --> 01:40:17,015
+Muhtemelen ileride bununla ilgili daha fazla proje görüyor olacağız.
+
+426
+01:40:17,015 --> 01:40:25,895
+Yani nasıl şu anda biz eski eşyalarımızı atmayalım, değerlendirelim, çok fazla israf oluyor diyorsak.
+
+427
+01:40:26,207 --> 01:40:43,487
+Bu elektronik cihazlarla ilgili de bu tür önlemler olacak. O yüzden IoT device olarak da şu günkü telefonlarımız 5 sene sonra eskidiğinde çok ciddi güçlü bir device olarak hayatımızda kullanabileceğimiz cihazlar olacak.
+
+428
+01:40:46,067 --> 01:40:51,907
+Peki, touchscreen'deki enerjiyi azaltmak için bir yöntem var mı?
+
+429
+01:40:52,271 --> 01:40:59,311
+Yani daha doğrusu ekran diyelim. Dokunmatik ekran diyoruz. Dokunmatik kısmı değil de ekran, monitör özelinde.
+
+430
+01:41:00,532 --> 01:41:05,372
+ULED mi çıkmıştı en son galiba? Ekranın tamamı yanmıyor da sadece belirli LED'ler yanmıyor.
+
+431
+01:41:05,872 --> 01:41:14,212
+Bu televizyonlarda çok uygulanan OLED teknolojisi ve bunun farklı versiyonları da var.
+
+432
+01:41:14,212 --> 01:41:20,672
+Yani firmalar farklı isimler veriyorlar. QLED diyen de var. Ama esas teknoloji aslında OLED teknolojisi.
+
+433
+01:41:21,752 --> 01:41:24,712
+Diğer firmalar muhtemelen telif aktörü vesaire birbiriyle.
+
+434
+01:41:25,152 --> 01:41:50,711
+Başka şekillerde lanse ediyorlar ya da başka donanım tipleri kullanıyor ama prensipte noktasal piksellerin yanması, sönmesi üzerine kurulu. Hem siyahlığı tam olarak sağlayabiliyor bu ekranlar hem de enerji tüketimini arka planda sürekli bir ışık yanmak zorunda olmadığı için sağlayabiliyor. Çok güzel. Bu donanumsal bir çözüm. Başka?
+
+435
+01:41:52,243 --> 01:41:54,524
+Ekrandaki enerjiyi azaltmalıyordu.
+
+436
+01:41:55,264 --> 01:41:59,203
+Siyah şeyler kullanılıyor, black tema.
+
+437
+01:41:59,783 --> 01:42:08,024
+Black temalar çok yaygınlaştı. Bundan 5 sene önce çok fazla rağbet edilmeyen ama sonra birden.
+
+438
+01:42:08,595 --> 01:42:24,355
+İşletim sistemlerinin bu işi el atmasıyla şu anda neredeyse herkes uygulama geliştirirken sadece telefon ve tabletler için değil, farklı de saizler için değil, aynı zamanda mutlaka iki tane temayı da dark tema olmak üzere iki temayı da ekliyorlar.
+
+439
+01:42:24,635 --> 01:42:30,675
+Bu da söylediğimiz OLED ekranını daha verimli kullanmak ve enerji de ciddi oranda azaltıyor.
+
+440
+01:42:31,376 --> 01:42:34,695
+Peki başka ne tür çözümler var? Telefonla?
+
+441
+01:42:35,923 --> 01:42:50,623
+Telefonlarda herhalde kullanımı yok fakat bu Amazon'un Kindle cihazları falan oluyor. Paperwhite ekranları oluyor. Yani onların enerji tasarrufunu çok yüksek bulmuştum. Hatta neden telefonlara uyarlanmadığını da merak etmiştim.
+
+442
+01:42:50,623 --> 01:43:02,283
+Çok güzel bir şey hatırlattın. Eski versiyonlarında mesela şey yoktu. Direkt ışık vermiyordu. Normal bir kağıdı nasıl görüyorsanız öyleydi ama yeni versiyonlarında herhalde ışık da varmış.
+
+443
+01:43:02,707 --> 01:43:10,507
+Yani zaman içerisinde uyarlanarak daha performans, daha verimli cihazlar elde edilebilir gibi geldi bana.
+
+444
+01:43:10,507 --> 01:43:20,507
+Bu konuyu hatırlattın iyi oldu, ben onu unutmuştum. Bu bahsedilen, bu Amazon'un özellikle kitap...
+
+445
+01:43:21,760 --> 01:43:35,880
+Okumak için sunduğu Kindle tarzı cihazlarda kullanılan yaklaşım. Bir dönem Rus bir üretici tarafından bir telefonda iki ekran olarak tasarlanmıştı. Şu an ismini hatırlamıyorum.
+
+446
+01:43:36,271 --> 01:43:54,271
+Bu telefonun bir ekranı, bizim bildiğimiz klasik ekranı, Amazon'daki MacBook şeklinde oluşturulmuş bir ekranda Kindle'ın benzeri.
+
+447
+01:43:54,547 --> 01:44:09,188
+Birçok işinizi orada yapıyordunuz. Sadece işte browse yapmak istediğinizde, ekrana ihtiyaç duyduğunuzda diğer tarafta yapıyordunuz ve telefon çok uzun süre dayanıyordu. Bu anlamda şu an bu teknolojinin arkası gelmedi ama...
+
+448
+01:44:09,408 --> 01:44:28,528
+Önümüzdeki yıllarda bu tarz telefonlar çıkar mı? Kestiremiyorum. Biraz Google Glass'a benzetiyorum. Bir denendi ama çok tutmadı. Peşi de sanki gelmeyecek gibi. Çünkü her geçen gün Apple bile saatini çıkarttığında artık hiç kapanmayan ekran diye lanse ediyor.
+
+449
+01:44:28,528 --> 01:44:37,408
+Yani normalde saat ekranı kapanır ve enerji tasarrufu yapar. Ama insanlar sürekli o ekranı açık görmek istiyorlar. O yüzden çok bu tarafta bir...
+
+450
+01:44:37,408 --> 01:44:45,467
+Gelişme olur mu? Emin değilim. Peki, gene telefondaki enerji tüketimini azaltmakla ilgili çözümlerden bahsediyorduk.
+
+451
+01:44:47,768 --> 01:44:50,587
+Ekran üzerinde başladık. Ekran da olabilir, başka alanda da olabilir.
+
+452
+01:44:51,507 --> 01:44:54,768
+Yazılımsal olarak frekanstere düşülebiliyor.
+
+453
+01:44:55,380 --> 01:45:18,260
+Yani normalde performans modu olarak geçiyor ama yani bu işlemcideki frekansteleri yöneten temel bir program var. O her işletim sistemi için veya artık her product şeyinde ayrı ayrı veriliyor. Yani atıyorum Samsung cihazlar da ayrı oluyor, Huawei de ayrı oluyor. Yani onlar şey yapılabilir, optimize edilebilir.
+
+454
+01:45:19,347 --> 01:45:44,807
+Evet, işlemci frekansıyla ölemek. Mobil telefona iki işlemci koyup bir işlemcinin ana işlerden sorunu, diğer işlemcinin sensörlerden sorumlu olmasını sağlamak yine çözümlerden bir tanesi. Bunun dışında işletim standarını yine son dönemde çok sık ortaya koyduğumuz aslında Android'de bunun versiyonları da var. Bunlara isim de vermişlerdi.
+
+455
+01:45:46,739 --> 01:45:52,760
+Sizin arka planda yaptığınız işlerin frekanslarını ayarlamak.
+
+456
+01:45:53,104 --> 01:46:09,203
+Yani örneğin WhatsApp uygulamanız bir kontrol yapacak. Diyelim ki bunu saniyede bir yapacağına 5 saniye bir yapmaya başlıyor, 10 saniye bir yapmaya başlıyor gibi özellikle arka plan işini kontrol altına alacak.
+
+457
+01:46:10,104 --> 01:46:16,184
+Daha çok uygulama geliştiricilerinin işletim sisteminin sunduğu özellikleri kullanarak etkin hale getirdiği.
+
+458
+01:46:16,948 --> 01:46:30,948
+Özellikler var. Bu sayede, çünkü herkes artık bildirim göndermenin peşinde. Her uygulamalı bu var. Bu da bir aslında mesajda yaşadığımız kirliliğe döndü. Eskiden...
+
+459
+01:46:31,503 --> 01:46:53,564
+SMS'te bu kirlilik vardı. Şu anda bildirimde var. Yani telefonun bildirim yağıyor. Siz bunu filtrelemezseniz çok fazla. Bunun için işte çeşitli önlemler aldı Android. Bildirimler belirli bir süre içerisinde gelirse onları gruplayarak göstermeyi tercih ediyor gibi bu tür işletim sistemi özelinde çözümler oluşturulmaya devam ediyor.
+
+460
+01:46:56,243 --> 01:47:00,563
+Buradan başka söyleyebileceğim ne var diye bakıyorum aklımda.
+
+461
+01:47:00,764 --> 01:47:08,903
+Hocam, aslında ben şeyi kastetmiştim. Bu arka planda tamamen frekansı ayarlayan işte governor denen bir yapı var ya.
+
+462
+01:47:09,203 --> 01:47:09,463
+Evet.
+
+463
+01:47:09,844 --> 01:47:15,884
+Yani ondan bahsetmiştim. Yani onlar daha sonradan da normalde hani cihaz rootlanınca yüklenebiliyor da.
+
+464
+01:47:16,304 --> 01:47:20,523
+Yani rootlanmadan da normalde öyle bir seçenek verilebilmeli bence şeye kullanıcı için.
+
+465
+01:47:20,523 --> 01:47:24,043
+Şöyle, burada yok onu fark ettim yani.
+
+466
+01:47:24,243 --> 01:47:44,703
+Ben aslında şu an aktif olan bir çözümü paylaşmada söylemiştim. Senin söylediğin çözümünü şöyle bir, yani karşılayacağız belki ama şöyle bir riski var diyeyim. Telefonlarda farkındaysanız birden fazla user diye bir kavram yok.
+
+467
+01:47:45,492 --> 01:48:05,912
+Ya siz tek kişi olarak kullanıyorsunuz telefonu ya da cihazı rootlarsanız root yetkileriyle kullanıyorsunuz. Telefonda iki üç tane account olsun gibi bir yapı oluşturulmamıştır. Ve edin olarak bütün haklarına sahip olmanızı da istemiyorlar. Çünkü çok daha farklı security sorunlarına sebebiyet veriyor.
+
+468
+01:48:11,604 --> 01:48:14,923
+Bazına bırakılır mı yakın zamanda onu bilmiyorum.
+
+469
+01:48:17,243 --> 01:48:19,543
+Yani ben bundan emin değilim.
+
+470
+01:48:20,043 --> 01:48:27,484
+Ama belki de bundan bir 10 sene sonra hakikaten bilgisayar mantığıyla bir telefona birden fazla kişi login alıyor.
+
+471
+01:48:28,243 --> 01:48:29,264
+Göreceğiz bunu.
+
+472
+01:48:29,524 --> 01:48:33,104
+Çok bana akıllıca gelmiyor ama biraz beklemek lazım.
+
+473
+01:48:33,427 --> 01:48:45,868
+Hocam, bu konuda eklemek istediğim bir şey daha var. [kişisel bilgi]
+
+474
+01:48:47,060 --> 01:49:11,699
+O sırada mesela şey gördük, uygulamalar yazılırken mobil uygulamalar genelde paralel deste olmadan yazılıyorlar. Yani şu an en güncel uygulamalar, yani gerçi geçen sene içinde, ortalama olarak en fazla iki tane thread kullanıyorlar. Ama elimizdeki cihazların yeri geliyor dört çekimde, yeri geliyor sekiz tane çekimde var.
+
+475
+01:49:12,927 --> 01:49:25,328
+Biz bu şeyi incelemiştik mesela. Diyelim ki sadece bir çekirdeği kullanıyor uygulama. Çekirdek belli bir frekansın üstüne çıktığı zaman, belli bir ısının üstüne çıktığı zaman çekirdeği kapatıyor.
+
+476
+01:49:26,676 --> 01:49:42,115
+Ve aslında o frekansı yüksek çalıştırması şeyin zararına oluyor. Uygulama normalde atıyorum bir dakikada çalışıp bitecekse bir buçuk iki dakika bazen dört katı beş katına çıktığını gözlemledik.
+
+477
+01:49:43,735 --> 01:49:53,095
+Bu güzel çalışma olmuş. Hakikaten doğru bir tespit. Yani burada donanımla yazılımın paralel gitmediği noktalar var. Burada onlardan bir tanesi.
+
+478
+01:49:54,676 --> 01:50:06,676
+Bununla ilgili aslında başka çalışmalar da yürütülebilir diye düşünüyorum. Yani güzel bir test konusu olmuş ortaya koymak açısından. Muhtemelen önümüzdeki yıllarda…
+
+479
+01:50:07,060 --> 01:50:26,060
+Bu tür kullanım şekilleri değiştirilerek, bu bakış açısına evet okey bunun muhtemelen karşılığını görüyor olacağız. Çünkü şu anda kaynak yönetiminde mobil uygulamaların çok da efisent bir şekilde çalışmadığını söyleyebiliriz. Yani ona ben de katılıyorum.
+
+480
+01:50:27,060 --> 01:50:36,160
+Bu anlamda yapısal bir düzenlemeye gidilecektir. Bu arada saat 14.55 olmuş. Bir 10 dakika ara verelim. Ondan sonra devam edelim. Teşekkür ediyorum.
+
+481
+02:03:51,604 --> 02:03:56,524
+Evet, yeniden merhaba arkadaşlar. Kaldığımız yerden devam edelim.
+
+482
+02:04:03,283 --> 02:04:25,003
+Şimdi işletim sistemlerinin, mobil işletim sistemlerinin timeline'ını görüyorsunuz ekranda. Aslına bakarsanız ilk bu işin startı simbiyonla veriliyor. Arkasından iOS ve Android devreye giriyor ama bu süreçte birçok işletim sisteminin adını konuşuyoruz.
+
+483
+02:04:28,083 --> 02:04:34,483
+Ve artık çok fazla popüler olmayan hangi işletim sistemleri var?
+
+484
+02:04:36,083 --> 02:04:37,883
+Mobil işletim sistemi olarak.
+
+485
+02:04:39,483 --> 02:04:44,652
+Bundan 5-6 sene öncesinde adı yukarıda geçen.
+
+486
+02:04:51,188 --> 02:04:52,968
+Burada okunmayan Blackberry olabilir mi?
+
+487
+02:04:53,888 --> 02:04:58,068
+Bir Blackberry, aynen öyle. İki.
+
+488
+02:04:58,307 --> 02:04:59,448
+Diğeri de Windows Phone hocam.
+
+489
+02:04:59,448 --> 02:05:14,528
+Evet, diğeri de Windows Phone. Bunlar son 3-4 seneye kadar var olması lazım. Blackberry hala kendi telefonundan üretiyor. Özellikle klavyesini soft olarak değil, hard keyboard olarak kullandığı için.
+
+490
+02:05:14,927 --> 02:05:29,927
+İnsanların bir kısmı bunu tercih ediyorlar. Bir de kendine özel bir mail sunucu var. Bunu ön plana çıkartarak belirli şirketlerle anlaşması üzerinden bunlarını sürdürüyor. Biraz da artık...
+
+491
+02:05:31,956 --> 02:05:39,315
+Ekranı biraz büyüterek yeni telefonlar çıkardı ama şu anda onun da pazar payı oldukça düşmüş durumda.
+
+492
+02:05:40,275 --> 02:05:44,015
+iOS ve Android şu anda açık ara liderler.
+
+493
+02:05:44,155 --> 02:05:48,916
+1903'da artık maalesef diyorum çünkü rakip olarak yok.
+
+494
+02:05:49,956 --> 02:05:53,855
+Peki yeni bir işitim sistemi ufukta gözüküyor mu?
+
+495
+02:05:56,215 --> 02:05:58,836
+Bunlar alternatif ya da bunların devamı olacak.
+
+496
+02:06:02,387 --> 02:06:29,188
+Huawei'nin çıkarttığı vardı da ismini unuttum. Neydi? Ben de hatırlayamadım. Bir anda sen soruyunca aklıma geldi. Benim söylediğim o değil ama. Hemen bir bakalım. Google'ın bir ürünü vardı ama Flutter destekliydi. Adını unuttum. Bu şey olabilir mi? Yani F-U-C-H-S-I-A diye yazıyor galiba. Aynen.
+
+497
+02:06:29,779 --> 02:06:50,799
+O da aslında biraz güce hava altyapısından kurtulmanın peşinde olan bir işletim sistemi ama henüz orada da net bir adım görmedik. Hala geliştirdiğini biliyoruz ama muhtemelen 2020'li yılların bir, ikisinde, önümüzdeki bir ikisinin içerisinde onu görebiliriz.
+
+498
+02:06:50,799 --> 02:06:57,039
+Size biraz önce söylemek istediğim işletim sisteminin ismini şimdi paylaşalım. Kayıoz.
+
+499
+02:06:57,747 --> 02:07:11,567
+K-A-I-O-S. Feature formlar için bahsettiğim temel sosyal medya uygulamalarının kullanımını ve basit uygulamaların storunu da içeren bir işletim sistemi.
+
+500
+02:07:13,627 --> 02:07:20,447
+Tabii burada firmalar kendi özel işletim sistemlerinin peşinde koştular. Samsung'un çıkardığı iki tane vardı neydi?
+
+501
+02:07:24,979 --> 02:07:25,779
+Hatırlarsınız.
+
+502
+02:07:27,539 --> 02:07:34,479
+Tizen Samsung'unda hocam ama sonradan zannediyorum bunu hala akıllı cihazlarında ve televizyonlarında kullanmaya devam ediyorlar.
+
+503
+02:07:34,599 --> 02:07:42,259
+Aynen öyle. Telefonlardan vazgeçtiler. Orada baktılar ki yani tek başta da var olmaları ile ilgili sıkıntılar var.
+
+504
+02:07:43,079 --> 02:07:48,379
+Kendi cihazlarına devam ettiriyorlar ki bu aslında bir nevi bir mobil işletim sistemi.
+
+505
+02:07:49,043 --> 02:08:13,963
+Fikriyle ortaya çıkan bir işletim sisteminin biraz daha böyle IoT device'ları için evrilmesine döndü. Kendi habitatında devam eden bir yapıya sahip ama hep konuşuyorduk ya, IoT device'ler için bir işletim sistemi olacaksa diye. Hizam bunu güzel örneklenen bir tanesi. Başka? Bada. Bada'yı duymuş muydunuz?
+
+506
+02:08:19,731 --> 02:08:38,751
+Peki, bir de bunun WebOS tarafı var. Ubuntu ile ilgili olan versiyonları var. Bunun gibi birçok mobil işletim sistemi var ama hiçbiri şu anda aktif olarak cihazlar üzerine çok fazla kullanılmıyor.
+
+507
+02:08:39,471 --> 02:08:43,211
+Hocam, Ubuntu'nunki sanki bir telefonla kullanılmıştı ya.
+
+508
+02:08:43,568 --> 02:09:04,008
+Evet, bir telefonda kullanıldı. Hatta onun şeyi de şuydu, hedefi de telefonun üzerinde herhangi bir tuş yoktu. Ve sanırım yanları bu hafif kavisli olan bir telefondu. Orada kullanılmıştı ama sonra onun da arkası gelmedi.
+
+509
+02:09:04,724 --> 02:09:17,884
+Yani şeyde wireless desteğini veremediler diye biliyorum. Ben de bir kurmaya çalıştım çünkü. Bende S5 vardı o zamanlar. Daha şeyi desteklemiyordu. Yani çok eksikleri vardı. Onu da gideremediler.
+
+510
+02:09:18,996 --> 02:09:34,216
+Burada görüyorsunuz bu alternatif işletim sistemlerini. Bu alternatif işletim sistemlerinin hemen hemen hiçbiri açıkçası yaygınlaşma potansiyelini gösterebilir.
+
+511
+02:09:42,195 --> 02:10:03,195
+Bu taraftan, Çin'den mutlaka bir işletim sistemi gelecek. Yani geldi de belki dünyada daha da yaygınlaşarak devam edecek. Benim beklentim o yönde. Ama gerçekten bir sonraki işletim sistemini IoT Divanceli için konuşuyor olacağız gibi geliyor bana. Yani telefonlardan çok.
+
+512
+02:10:03,600 --> 02:10:11,600
+Biraz şey gibi oldu. Nasıl Windows hala var? Unix, Linux. Bunlar var ve bunlar değişmiyor. Bir de MacOS.
+
+513
+02:10:11,600 --> 02:10:21,600
+Şimdi telefon tarafında da bunlar artık yerleşmiş olacak. Belki bir rakip daha çıkar ama bundan sonrası daha çok IoT Devicelere dönecek.
+
+514
+02:10:21,600 --> 02:10:27,552
+Burada market şehri var. Bunları çok artık üzerinde durmaya gerek yok. Android'in...
+
+515
+02:10:27,551 --> 02:10:38,071
+Her zaman en üstte olduğu belli. iOS'unda belli bir market paylaşım var. Bu çok değişmiyor yıllar içerisinde. İniyor çıkıyor ama çok değişmiyor.
+
+516
+02:10:40,871 --> 02:10:52,071
+Android işletim sisteminin genel yapısına bakacak olursak, dört katmandan oluşuyor. En üst katmanda application var. Onun altında aslında...
+
+517
+02:10:52,336 --> 02:11:07,195
+Application geliştirmenizi sağlayan bir framework. Burada bu framework'a ait manager ve provider'lar var. Bunlar sizin bütün bu uygulamayı geliştirirken kullandığınız package'lar.
+
+518
+02:11:08,056 --> 02:11:16,136
+Library'ler indiğiniz zaman bir alt seviyeye biraz daha işletim sistemi seviyesine çekildiği yakın bir...
+
+519
+02:11:16,384 --> 02:11:22,412
+Kütüphane primlerinde karşılaşıyorsunuz ve bu size biraz da...
+
+520
+02:11:22,420 --> 02:11:46,140
+Aslında performans sağlamak için sunulmuş bir katman. Yani açık kullanımı. Birçok yukarıdaki, frameworkdaki yapı bunları kullanıyor ama sizin de buraya müdahale olabilmenizi sağladıkları bir katman var. Bu katmanda native development yaparak aslında oldukça performansı yükseltebiliyorsunuz.
+
+521
+02:11:49,460 --> 02:12:02,579
+Native Development Kit'ten faydalanıyorsunuz. Orada da yaratmış olduğunuz Java kütüphanelerini, daha doğrusu Java kütüphanelerini demeyelim, Native Development'da yarattığınız kütüphaneleri Java üzerinden çağırabiliyorsunuz.
+
+522
+02:12:02,819 --> 02:12:04,759
+Biz yanay üstünden. Evet hocam.
+
+523
+02:12:04,759 --> 02:12:08,759
+Evet, aynen öyle. Bu sayede...
+
+524
+02:12:09,300 --> 02:12:29,340
+Alt katmanlara yakın bir deneyimi sağlıyorsunuz. Şu anda bir Android Runtime'da konuşuyoruz. Android'in son dönemde iki tane önemli özelliği yöntemlerine çıkıyor. Bir tanesi package yapısı değişti. Nedir yeni package yapısı? APK yerine.
+
+525
+02:12:30,720 --> 02:12:31,880
+AAB'ye geldi hocam.
+
+526
+02:12:32,300 --> 02:12:32,960
+AAB'ye.
+
+527
+02:12:33,280 --> 02:12:33,880
+Bundle yapısı.
+
+528
+02:12:34,271 --> 02:12:38,711
+Evet, Android App Bundle yapısı geldi. Peki farkı ne APK'da?
+
+529
+02:12:43,220 --> 02:12:45,779
+Bağımlılıklarını direkt içerisinde tutmuyor mu?
+
+530
+02:12:46,479 --> 02:12:46,819
+Efendim?
+
+531
+02:12:47,819 --> 02:12:51,420
+Bağımlılıklarını direkt içinde tutmuyor. Orta kütüphane kullanıyor olabilir mi?
+
+532
+02:12:52,939 --> 02:12:54,939
+Yani tahmin yürütüyorum sadece.
+
+533
+02:12:55,600 --> 02:13:00,300
+Fena bir fikir değil ama tam açılımı bu değil. Başka yorum yapmak isteyen.
+
+534
+02:13:01,260 --> 02:13:02,220
+[öğrenci] fikrin var mı?
+
+535
+02:13:04,060 --> 02:13:05,520
+Hocam hiç bilgim yok yani.
+
+536
+02:13:05,520 --> 02:13:10,380
+Tamam. Buradan kime sorsak?
+
+537
+02:13:10,963 --> 02:13:12,003
+[öğrenci]
+
+538
+02:13:17,908 --> 02:13:33,427
+En son [öğrenci] chatten yazıyordu ama evet onu da kaybettik mi? Evet, Huawei yazmış. En son Harmonyos yazmış. Peki, [öğrenci] senin fikrim var mı?
+
+539
+02:13:35,047 --> 02:13:36,547
+Benim de fikrim yok hocam.
+
+540
+02:13:38,148 --> 02:13:40,307
+Peki, son olarak [öğrenci]'e sorayım.
+
+541
+02:13:42,068 --> 02:13:44,268
+Benim de bilgim, fikrim yok hocam. Yine duydum.
+
+542
+02:13:46,328 --> 02:13:50,887
+Şimdi Android Operatik System'da aslında en büyük sıkıntımız şuydu.
+
+543
+02:13:52,507 --> 02:14:00,007
+Biz bütün cihazların formatlarını application packaging'ın içerisine koyuyorduk.
+
+544
+02:14:00,692 --> 02:14:14,692
+Yani örneğin işte farklı size'lar için ikonları koyuyorsunuz. Farklı fontları işte hem Çin için hem Kore için koyuyorsunuz, Türkiye için koyuyorsunuz. Şimdi bu da...
+
+545
+02:14:14,927 --> 02:14:39,608
+İndirdiğiniz packaging şişmesine sebebiyet veriyor ve paket boyutu büyüyor. Özellikle uygulamanızın daha kapsamlı bir uygulama olduğunu düşünürseniz, 60 megabaytlık, 100 megabaytlık paketler oluşmaya başlıyor. Android de burada bir önemli karar vererek şöyle bir şey yapayım ben dedi. Ben bunu merkezde bu ilgili bütün seçeneklerimi saklayayım.
+
+546
+02:14:40,180 --> 02:14:56,000
+Benden bunu indirmek isteyene o cihazın özelliklerine bakayım, o cihaz için ilgili özellikleri sadece o cihaza pek üç olarak aktarayım yapısıyla bir yaklaşıma gitti. Bu da...
+
+547
+02:14:56,159 --> 02:15:15,439
+Çin'den biri işte x bir telefon için bir şey indiriyorsa sadece ona özel biraz önce aslında [öğrenci]'in bahsetmiş olduğu, genel olarak ifade etmiş olduğu o cihaza özel bir bilginin akmasını sağladı.
+
+548
+02:15:16,083 --> 02:15:34,923
+Bu da işte 60 MB yerine 20 MB, 10 MB'lik bir paketin ulaşmasını sağladı. Bunun getirmiş olduğu tabii çok önemli artılar var. Bir, işte gereksiz bir download trafiği oluşmuyor. İki, hafızanızla daha az yer kaplıyor. Üç, kurulum daha hızlı oluyor.
+
+549
+02:15:36,819 --> 02:15:58,939
+Bunları da düşündüğünüzde, hele kaynak kısıtı olan cihazlar için, ki Android'in genelde üst segment telefonları değil sadece alt segment telefonları hedeflediğini de düşünürsek ve sürümleri geriden gelen işletim sistemi versiyonlarında özellikle çok daha önem arz ediyor donanım kısıtları olan telefonların.
+
+550
+02:15:58,939 --> 02:16:00,919
+Bu önemli bir özellik.
+
+551
+02:16:03,667 --> 02:16:22,367
+Yenilik daha geldi Android İşletim sisteminde. O da aslında nasıl söyleyelim? Eskiden burada bir Java Virtual Machine, Alternatif Dalvik Virtual Machine'den bahsediyorduk.
+
+552
+02:16:22,367 --> 02:16:26,447
+Şimdi onun yerinde Android Runtime yapısından bahsediyoruz.
+
+553
+02:16:27,583 --> 02:16:40,603
+Gelen yeni bu yapı neyi sağlıyor bize? Yorumlayabilecek biri var mı? Eskiye göre neyi geliştirmiş olabilirler? [öğrenci] bir fikrim var mı?
+
+554
+02:16:41,664 --> 02:16:51,583
+Hocam, okoyla ilgili bildiğim daha çok lisanslamayla ilgili bir kıntı yaşadıkları ve kendi sürümlerine geçtiği üzerineydi. Ama teknik tarafta bize ne sağladığı konusunda net bir yorum yapamayacağım.
+
+555
+02:16:51,583 --> 02:16:52,223
+Tamam.
+
+556
+02:16:52,852 --> 02:17:14,272
+Burada söylediğim şey de bir neden olmakla birlikte Android işletim sisteminde bir uygulamayı çalıştırmak için önce derlemeniz ve derledikten sonra yeni oluşan executable file'ları çalıştırmanız gerekiyor.
+
+557
+02:17:14,559 --> 02:17:23,279
+Bunu yükleme esnasında yapma şansınız normal şartlarda size vakit kaybettiriyor.
+
+558
+02:17:28,308 --> 02:17:48,188
+Installation aşamasında yapma şansınız var. Bir de çalıştırma aşamasında yapma şansınız var. Eğer çalıştırma aşamasında yaparsanız, interpreter devreye girdiği için bu performansın düşmesine sebebiyet veriyor. Onun yerine şöyle bir opsiyon sunuyorlar. Siz bunu yüklerken aynı zamanda executable kodları da oluşturursanız.
+
+559
+02:17:48,559 --> 02:18:16,559
+Çalıştırdığınız anda performansı arttırabilirsiniz. Bu da tek dezavantajı tabii bir pakacı yüklerken iki katlık bir alana yerleşmeniz gerekiyor derleme işlemi sırasında. Çünkü siz çalışacak kodu da üretmiş oluyorsunuz. Belirli bir yüklemede yavaşlık üretmekle birlikte çalışma sırasında size bir performans kazancı sağlıyor. Bu yapıyı belli bir süredir uygulamayı tercih ediyoruz.
+
+560
+02:18:16,559 --> 02:18:16,860
+Teşekkürler.
+
+561
+02:18:18,004 --> 02:18:46,004
+Linux kernel de standart bir Linux kernel, bazı bir Linux kernel kullanılıyor. Tabii ki burada çeşitli driverlar var. Android işletim sistemi özel ve o ilgili cihazı özel. Bu driverlara ek, sizin de driver geliştirme hakkınız var. Böyle bir şey yapabiliyorsunuz ama çok sıklıkla karşılaştığımız bir yapı değil. Ama en önemli...
+
+562
+02:18:46,004 --> 02:18:52,564
+Noktalar'dan bir tanesi Power Management'tan sorumlu olan kısım. Bu kısmı da vurgulamış olalım.
+
+563
+02:18:53,363 --> 02:19:07,123
+iOS tarafına bakacak olursanız orada da dört katmanlı bir yapıdan bahsediyoruz. KakaoTouch, Media Layer, Core Service Layer ve CoreOS Layer olmak üzere orada biraz daha farklı bir yapı söz konusu.
+
+564
+02:19:07,123 --> 02:19:17,263
+Biraz daha kullanıcıya yakın olan medyayla ilişkili servislerin olduğu kısım, temel servislerin olduğu kısım olmak üzere.
+
+565
+02:19:18,932 --> 02:19:40,112
+Biraz Android'in yapısından farklı bir oluşum söz konusu. Çok fazla zaten Apple tarafında alt seviyelere inmenize müsaade etmiyor. Biraz daha üst seviyeden kesiyor ama bu üst seviyeden keserken bunu üst seviyelere daha fazla katmanı ayrılmış. Android size her zaman daha fazla bir esneklik veriyor.
+
+566
+02:19:41,843 --> 02:19:56,423
+Apple tarafında bu geliştirme noktasında zaten çok fazla geliştiriciler Apple ortamını tercih etmiyorlar. Bunu da vurgulamış olduk. Windows Phone artık çok kritik olmadığı için bunun üzerine durmamıza gerek yok.
+
+567
+02:19:56,423 --> 02:20:07,804
+Mobile OS ile PCOS arasındaki farkları konuşmuştuk hatırlarsanız. Bir tanesi Power yönetimi demiştik. Bu Wake Lock'lar var. Nedir bunlar?
+
+568
+02:20:14,420 --> 02:20:19,360
+Bir yere hatta eski tip Android telefonlarda bayağı bir sıkıntı oluşturuyordu bu.
+
+569
+02:20:20,040 --> 02:20:22,040
+Soruyu tekrar sorabilir misiniz hocam?
+
+570
+02:20:22,079 --> 02:20:30,319
+Wakelock kavramı var Android tarafında. Bunun ne olduğunu hatırlayan var mı diye soralım.
+
+571
+02:20:30,840 --> 02:20:37,060
+Text gibi bir şey mi hocam? Yani kendi kullanırken diğerlerini kullanmasını engelleyen bir mekanizma mı?
+
+572
+02:20:37,060 --> 02:20:41,060
+Şimdi şöyle, Wakelock aslında telefon...
+
+573
+02:20:42,420 --> 02:20:59,559
+Uyuma moduna geçtiği zaman diyelim ya da sizin kilit moduna aldığınızda belli bir süre sonra arka planda çalışacak uygulamaları da kapatıyordum. Hala bu yapı var.
+
+574
+02:20:59,935 --> 02:21:20,475
+Ama bu yapı eskiden programcının kontrolünde ve programcı tarafından açılması gereken bir yapıydı. Eski sürümlerinde Android'i. Ama yeni sürümlerinde bunu kontrol etme imkanını kullanıcıya da verebiliyor. Bu uygulama background'ı da çalışabilir ya da çalışamaz hakkını size verebiliyor. Siz bunu seçebiliyorsunuz.
+
+575
+02:21:23,871 --> 02:21:25,992
+olduğu dönemde biz projeden
+
+576
+02:21:25,992 --> 02:21:28,152
+telefon almıştık.
+
+577
+02:21:28,851 --> 02:21:30,152
+Bir uygulama yazıyoruz.
+
+578
+02:21:30,711 --> 02:21:32,091
+Arka planla yazıyoruz. Çalışmıyor.
+
+579
+02:21:33,251 --> 02:21:34,231
+Yani belli bir süre sonra
+
+580
+02:21:34,231 --> 02:21:36,331
+kapanıyor. Yaklaşık olarak 7-8
+
+581
+02:21:36,331 --> 02:21:38,591
+sene önce. Çözemiyoruz, çözemiyoruz.
+
+582
+02:21:38,711 --> 02:21:39,631
+Sonra bir baktık ki
+
+583
+02:21:39,631 --> 02:21:42,412
+Android tarafında bir wake lock mekanizması var
+
+584
+02:21:42,412 --> 02:21:44,431
+ve bu wake lock mekanizmasını programcı
+
+585
+02:21:44,431 --> 02:21:46,311
+olarak enable etmezseniz
+
+586
+02:21:46,311 --> 02:21:48,511
+o uygulamamızı istediğiniz kadar background'a çalışacak
+
+587
+02:21:48,511 --> 02:21:49,191
+şekilde yazın.
+
+588
+02:21:49,504 --> 02:22:13,504
+Bu maalesef çalışmıyor. O yüzden işletim sistemlerinin özelini de, işletim sistemlerinin yeteneklerini çok iyi analiz etmek lazım. Bunları iyi kullandığınızda inanın, hem user experience'i arttırıyorsunuz. Çünkü kaynak özellikle pil tüketimini azalttığınız için. Yani bu çok çok önemli. Bir kişi ilk olarak ne kadar pil tüketiyor diye bakıyor bir uygulamaya. Bu yüzden...
+
+589
+02:22:14,388 --> 02:22:22,388
+Bugün bir mobil işletim sistemi geliştirecek olsanız ilk öncelik vereceğimiz konulardan başında Power ve Enerji Management geliyor.
+
+590
+02:22:22,388 --> 02:22:34,388
+Interface. Interface'de tabii farklı mekanizmalar var artık. Normal bir keyboard ve mouse'dan bahsetmiyoruz. Bir kere bir touchscreen var.
+
+591
+02:22:41,523 --> 02:22:55,164
+Yani telefonla olan haberleşme şeklimizde ne de var? Sesli haberleşme de var, sessiz konutlar da var. Tabii ki normal işletim sistemlerine de girdi bu olay ama telefonda çok daha aktif kullanılıyor.
+
+592
+02:22:57,556 --> 02:23:06,036
+Bir bilgisayara bir şeyi dikte ederek çok yazdırmıyorsunuz ama mesajlaşırken mesela telefonda artık birçok şeyi sesli bir şekilde dikte edebiliyorsunuz.
+
+593
+02:23:06,036 --> 02:23:13,756
+O yüzden Speech-to-Text ve Text-to-Speech de telefonların içerisinde çok sık kullanılan çalışmalarından bir tanesi.
+
+594
+02:23:14,716 --> 02:23:16,096
+Gelelim memory kısmına.
+
+595
+02:23:17,416 --> 02:23:22,036
+Memory'deki kaynak kısmından dolayı mobil işletim sistemlerinde...
+
+596
+02:23:22,672 --> 02:23:44,412
+Android tarafında Low Memory Killer dediğimiz yapı söz konusu. Burada sizin aktivitenizin bulunduğu ne diyelim state'e bağlı olarak işletim sistemi sizden onay almadan aktivitenizi yok etme hakkına sahip.
+
+597
+02:23:44,639 --> 02:24:06,819
+O yüzden onu hangi stekte bıraktığınız da önemli. Bu anlamda memori kısıtı özellikle düşük olan telefonlarda Android işletim sistemi eski kapanmamış uygulamalardaki aktiviteleri kendi otomatik olarak memori'den temizliyor ve bunun yönetimini gerçekleştiriyor.
+
+598
+02:24:06,819 --> 02:24:10,520
+Burada mesela PC ortamında bunu çok sık görmezsiniz.
+
+599
+02:24:11,347 --> 02:24:33,707
+PC ortamında böyle bir dertle karşılaşmayız. Ama PC ortamında memory ile ilgili bir sorun varsa nasıl bir çözüm vardır? Memory yetersizse. Evet, onun bir adı daha var. Virtual Memory gibi bir şey. Evet, evet, evet. Paging yapıyoruz.
+
+600
+02:24:35,379 --> 02:24:50,040
+Hatırlarsanız, Secondary Storage tarafına taşıyoruz. Ondan sonra belli bir orada kalıyor. Sadece kullanacağımız kısımda burada kalıyor. Sonra ihtiyaç duyduğumuz Secondary Storage'tan tekrar geri alıyoruz. Mesela böyle bir dönüşü yapıyoruz. Oradaki çözüm tamamen...
+
+601
+02:24:50,040 --> 02:25:00,059
+Hocam ben Android tarafımda da yani direktman Android'in kendisinde değil de mesela LineageOS'ta şey gördüm. RAM'e ek olarak mesela swap memory kullanılıyordu.
+
+602
+02:25:00,948 --> 02:25:02,528
+Yeni bir şey mi peki?
+
+603
+02:25:03,087 --> 02:25:18,247
+Yok, yani yine S5'te denemiştim. Telefonun RAM'i normalde 2 GB'tı. 1 GB'da normal swap ekleyebiliyordunuz. Hatta daha fazla da ekleyebiliyordunuz da alan zaten 16 GB olduğu için yani.
+
+604
+02:25:18,932 --> 02:25:19,992
+Doğru aslında.
+
+605
+02:25:19,992 --> 02:25:21,272
+Ne kadar eklenmeye bakmadın.
+
+606
+02:25:22,072 --> 02:25:24,832
+Bu çözümü sen de söyleyin ya şimdi benim de aklıma geldi.
+
+607
+02:25:25,072 --> 02:25:33,612
+Snap ekleme özelliğin için de. Eski telefonlarda ihtiyaç olduğu için belki de ben onu o zaman kullandığım için de hatırladım.
+
+608
+02:25:34,332 --> 02:25:37,231
+O özelliği de telefonlara koymuşlardı doğru söylüyorsun.
+
+609
+02:25:37,231 --> 02:25:39,231
+Ama burada tabii...
+
+610
+02:25:40,724 --> 02:25:55,884
+Memory'den secondary storage'a gidip gelmenin maliyeti normal bir PC'dekinden daha yüksek aslında bakarsanız. Çünkü normal bir PC'deki bas hızıyla buradaki flash'a gitme gelme hızı, internal memory...
+
+611
+02:25:56,340 --> 02:26:09,420
+Ki nispeten hızlı ama ekstra bir external storage kullanıyorsanız daha da yavaş. O yüzden buradaki memory management kısmı ilgili uygulamaların temizlenmesi yönüyle çok kritiklik kazanıyor.
+
+612
+02:26:09,420 --> 02:26:24,340
+Communication processor, burada işletim sisteminin bu bahsettiğimiz protokoller üzerinde geçiş yapabiliyor olması çok önemli. Bunların çoğu normal şartlarda bir PC üzerinde.
+
+613
+02:26:24,340 --> 02:26:42,659
+Ve tabii ki portability kavramı özellikle son dönemde gündeme geldi. Mobil işletim sistemleri ilk etapta daha çok arm üzerinde çalışıyordu. Ama son dönemde internet mimarileri de destekleyecek şekilde evrilmeye başladılar.
+
+614
+02:26:52,084 --> 02:27:00,283
+Şöyle sorayım, tabii bunu konuşmadık, bu kısmı atlamayayım. Bir mobil işletim sistemi dizayn edecek olsanız kriterleriniz ne olur?
+
+615
+02:27:14,036 --> 02:27:29,355
+Aslında deminden beri konuştuğumuz şeyler olabilir. Hafızanın etkin kullanımı, performansı arttırmaya yönelik tasarımlar, enerji ilişki tutmaya yönelik tasarımlar.
+
+616
+02:27:30,076 --> 02:27:36,675
+Güzel. Başka ekleyeceğiniz bu konuştuğumuz başlıklara bir şeyler var mı?
+
+617
+02:27:41,843 --> 02:27:53,943
+Yani ben kullanıcı deneyimi derdim. Çünkü makine ne kadar güçlü, ne kadar kullanılabilir, ne kadar verimli olursa olsun, yani son kullanıcıya hitap etmiyorsa ne yazık ki pek bir değeri olmuyor.
+
+618
+02:27:54,603 --> 02:28:01,144
+Bunun örneğini de Linux ve Windows için verelimiz herhalde zamanında. Linux'un yaşadığı bir problemdi.
+
+619
+02:28:01,551 --> 02:28:17,211
+Uzunca bir süre kullanıcı deneyimi, kullanıcı arayüzü konusundaki eksikliği yüzünden yaygınlaşamamıştı. Ama son 10 yıla baktığınız zaman bildiğiniz ciddi anlamda birçok bilgisayar tercih edildi görüyoruz.
+
+620
+02:28:19,092 --> 02:28:27,132
+Güvenlik belki başka bir kritikten sonra. Çünkü birçok kişisel verimiz yanımıza taşıyoruz, yapımıza taşıyoruz.
+
+621
+02:28:27,487 --> 02:28:46,327
+Teşekkür ediyorum. Bu çok önemli. Bir mobil işletim sistemi tasarlıyorsanız mutlaka güvenlik ön plana çıkıyor. iOS'da Android'i kıyasladığınız zaman açık ara, iOS'un bu konuda birçok benchmark testinde ve tüm kullanıcılar üzerinin algısında önde olduğunu rahatlıkla söyleyebiliriz.
+
+622
+02:28:53,843 --> 02:28:56,483
+Ne belirliyor? Bir madde daha var çok kritik olan.
+
+623
+02:28:59,956 --> 02:29:04,956
+Hocam, hem donanım hem de yazılım üreticisi aynı firma olduğu için aradaki bağlantı çok güçlü oluyor.
+
+624
+02:29:05,456 --> 02:29:10,764
+Evet, şimdi bir tarafta donanım ve yazılım üreten ve donanım...
+
+625
+02:29:10,772 --> 02:29:28,780
+Çeşitliliği kısıtlı olan bir firma. Bir tarafta da dünyada en az 10 markaya, belki çok daha fazlasına 20-30 markaya işletim sistemi tasarlayan bir yapıdan bahsediyoruz. Bu yüzden bunun açıkçası...
+
+626
+02:29:28,915 --> 02:29:43,135
+Güvenliğini sağlamak çok çok zor. Çünkü her donanımı eficiente bir şekilde yönetecek. Kodun işletim sistemi içerisine gömülmesi demek işin yavaşlaması anlamına gelecek.
+
+627
+02:29:43,135 --> 02:29:54,987
+Güvenlik anlamında önemli bir işletim sisteminde ihtiyaç olduğunu rahatlıkla söyleyebiliriz. Peki, güvenlik demişken…
+
+628
+02:29:56,180 --> 02:30:21,740
+Birçok malware uygulama var. Yıllarca desktop PC'lerde virüs uygulamaları çalıştık. Hala çalışan işletim sistemleri de var. Ama telefonlarda virüsle karşılaşıyor muyuz? Kötücül yazılımlar dediğimiz malwarelerle karşılaşıyor muyuz? Sıklıkla oradaki durum nedir?
+
+629
+02:30:25,523 --> 02:30:39,223
+Yani en son Google'ın, yani gerçi ara ara yine yapıyor da, yani store'undan bir sürü uygulama kaldırdı ama yani o herhalde bir 3 veya 4 sene önceydi.
+
+630
+02:30:39,223 --> 02:30:51,984
+Bir temizliğe girişti ilk başta. Bayağı bir uygulama kaldırılmıştı yani. O zamanı hatırlıyorum yani. Yani uygulamalar özellikle şeyi kullanıyorlarmış.
+
+631
+02:30:52,724 --> 02:31:06,224
+Direkt Android dizinin altında, datanın altındaki şifrelenmeden tutulan cache dosyalarını kullanıyorlarmış diye duydum. Parola dosyalarını çalabiliyorlarmış yani uygulama spesifik şey içerisinde.
+
+632
+02:31:07,224 --> 02:31:18,283
+Yani öyle olunca aslında Android'te de veya diyelim ki mobil cihazlarda da buna ihtiyaç var ama herhalde bir ağırlık oluyor diye kullanılmıyor.
+
+633
+02:31:20,180 --> 02:31:34,520
+Doğru. Bu konunun testi için teşekkür ederim. Android cihaz kullanıp bir malware sorunu yaşayan oldu mu hiç? Önlü bir durumla karşılaşan.
+
+634
+02:31:35,520 --> 02:31:45,819
+Benim olmadan ama kuzenimin tabletine adware olanlar bir tane bulaşmıştı. Sürekli reklamlar, sürekli reklamlar. Gerçekten de silinmiyor yani RootGit gibi.
+
+635
+02:31:47,924 --> 02:31:50,144
+Yetkili bir şekilde yerleşiyor.
+
+636
+02:31:50,904 --> 02:31:54,564
+Eksadan normal gibi görünen ama backpanta çalışanlar da oluyor.
+
+637
+02:31:54,564 --> 02:31:58,244
+Böyle ekranın overlay üzerinde katman duruyor.
+
+638
+02:31:58,804 --> 02:32:02,524
+Sizin ekran üzerinde bastığınız tuşların yerlerini kaydediyor.
+
+639
+02:32:02,824 --> 02:32:10,844
+Tabii kullandığınız keyboard layout'una bağlı olarak da yanlış da kaydetebiliyor ama o şekilde de zararlı yazımlar var.
+
+640
+02:32:13,603 --> 02:32:15,564
+Başka aklıma çok...
+
+641
+02:32:16,020 --> 02:32:17,760
+Kullanılan bu ikisi geldi şu anda.
+
+642
+02:32:18,860 --> 02:32:35,280
+Peki, güzel bir nokta aslında. Bu şekilde şifreleri de çalma ihtimali söz konusu olabiliyor. Bu Merve'lerle karşı ne tür çözümler üretiyorlar şu anda? Bu konuda bilginiz var mı?
+
+643
+02:32:37,420 --> 02:32:41,260
+Google'ın şu anda şeyi...
+
+644
+02:32:41,268 --> 02:33:00,288
+Storunda dahiliye bir şey var. Virüs tarama sistemi var. Yüklenilen uygulamalarla hatta sistem ilk başta yükleneceği zaman genel olarak uygulamaları tarıyor. Eğer ki uygulamaları taramadıysa o birinci güncellemeye izin vermiyor. Direkt çalıştırmıyor mesela.
+
+645
+02:33:01,332 --> 02:33:13,871
+Peki bunu bilimsel açıdan nasıl inceliyor olabilirler? Yani böyle bir mekanizma kurmuşlar ama bir yazılımın man-reer mi olduğunu nasıl anlıyor olabilirler?
+
+646
+02:33:15,412 --> 02:33:19,092
+Anormal davranış tespiti yapmaya çalışıyorlar belki.
+
+647
+02:33:19,371 --> 02:33:20,692
+Stam kullanımı.
+
+648
+02:33:21,032 --> 02:33:23,772
+Static Code analizi. Yani olan kodu.
+
+649
+02:33:24,371 --> 02:33:25,292
+Decompile edin.
+
+650
+02:33:26,832 --> 02:33:29,912
+Orada ne kadar artık decompile edilebiliyorsa bak tabii.
+
+651
+02:33:30,092 --> 02:33:35,772
+Gerçi iletilen APK'lar Google Pay tarafından nasıl onaylanıyor orada bilmiyorum prosedürü ama
+
+652
+02:33:35,772 --> 02:33:40,612
+bu iOS tarafında saran şeyde iletilen uygulamalar detaylı olarak bakılıyor.
+
+653
+02:33:41,023 --> 02:34:08,923
+Normal kişiler tarafından da kontrol ediliyor. Öbür türlü otomatik araçlarla sadece statik kodranız yapıldığında her türlü aslında bypass edilebiliyor oradaki zararlı içerik. Birkaç defa enkodelinde veya şifrelendiğinde zaten bypass edilebiliyor kolayca. Bir taraftan da Android'in aslında sken yapıp ama bir o kadar da kaçak verdiği nokta bence burası olabilir. Çok fazla müşterisi var. Her uygulamaya da bakmaya zaman yok. Otomatik araçlar.
+
+654
+02:34:09,023 --> 02:34:10,384
+Hatta da gözden kaçıyor.
+
+655
+02:34:11,243 --> 02:34:20,504
+Çok doğru. iOS bu konuda daha etkisiz bir şekilde kendi hatta değerlendirme süreci de daha uzun bir uygulama yüklerken ki değerlendirme süreci.
+
+656
+02:34:21,103 --> 02:34:35,344
+Peki bu Melvair tespitinde Google tarafını konuşuyoruz. Bu Melvair'in kendini saklama şansı var mı?
+
+657
+02:34:35,763 --> 02:34:38,683
+Yani bu taramadan çıkma aşaması.
+
+658
+02:34:40,183 --> 02:34:57,863
+Yani bazen şey oluyor, bu buğut dosyalarının içerisine kendisini yazıyor bir şekilde yetki bulduğu zaman veya buğut dosyalarına değil de şey yazanlar da var yani direkt rootkit olarak çalışan değil, şey yapanlar oluyor.
+
+659
+02:34:58,388 --> 02:35:13,888
+Bu embedded olarak gelen uygulamalar gibi gösteriyor kendisini. Yani bir yetki yükseltmeyle o şekilde yapıyor. Öyle olunca sen istersen tableti veya telefonu yeniden sıfırla, tekrar kur. O tekrardan orada olmuş oluyor.
+
+660
+02:35:20,308 --> 02:35:42,008
+Yaklaşımla çalışan çözümler var. Bunun ötesinde bir uygulama eğer malware ise özellikle sandbox ortamlarında test edilerek telefona zarar vermeden o uygulamanın malware olup olmadığı anlaşılmaya çalışılıyor.
+
+661
+02:35:42,008 --> 02:35:48,308
+Ama bunun karşılığında malware yazılımlar da artık akıllı hale geldiği için.
+
+662
+02:35:48,308 --> 02:36:07,348
+Bir telefonda çalışıp çalışmadığını anlamaya çalışıyor ve gerçek bir telefonda çalışmıyorsa aslında o davranışta sergilememeyi tercih ediyor yazılan Cox neticesinde. Bir malware'in gerçek telefonda çalışıp çalışmadığını anlamak için neye bakıyor olabilir?
+
+663
+02:36:11,540 --> 02:36:20,960
+Çekirdek frekansı olabilir. Çekirdekle alakalı bilgi olabilir. Bu sanal makinelerde veremeyeceği bilgilere bakıyor olabilir.
+
+664
+02:36:22,300 --> 02:36:29,460
+Peki o bilgileri Sendbox'ın otomatik olarak sağladığını düşünürsek?
+
+665
+02:36:30,920 --> 02:36:38,460
+Prog dosyalarına bakıyor olabilir. Normalde stres testine girdikleri zaman...
+
+666
+02:36:39,219 --> 02:36:41,055
+Şöyle ki...
+
+667
+02:36:41,056 --> 02:36:57,296
+Belli başta makineyi zorladığı zaman, atıyorum birkaç şey çalıştırdığı zaman makinenin verdiği tepkiye göre bakıyor olabilir. Mesela frekansın artması, azalması. Onun benzeri birkaç şey görmüştüm. Yani uygulama içerisinde skript olarak çalışan.
+
+668
+02:37:09,056 --> 02:37:21,756
+Çalıştıktan sonra belli bir sıcaklık artımı, sıcaklık artımına bağlı olarak frekans düşümü, RAM'deki performans azalması gibi koşulları değerlendiren uygulamalar olduğunu da duydum.
+
+669
+02:37:22,131 --> 02:37:36,211
+Çok güzel, güzel bir bakış açısı paylaştın bizimle. Teşekkürler. Aynen telefonların kaynaklarının davranışlarını aslında inceliyor ve beklenen davranışları görmediği takdirde buranın bir saat bakış açısını algılıyor.
+
+670
+02:37:36,211 --> 02:37:38,211
+Bu gene...
+
+671
+02:37:38,963 --> 02:38:04,004
+Malware'lerin akıllı hale gelmesi için baktıkları noktalardan bir tanesi. Fakat buna da bir çözüm bulduğunu varsayarsak, bu karakteristiği oluşturduğunu varsayarsak, bir sonraki adımda, yani iş biraz daha komplik hale geldiğinde, artık Malware'ler o telefonun bir kullanıcı tarafından kullanılıp kullanılmadığını incelemeye başlıyor.
+
+672
+02:38:04,004 --> 02:38:06,963
+Yani gerçekten bir telefon olmalı. Örneğin, bir telefonun pozisyonu.
+
+673
+02:38:06,963 --> 02:38:34,063
+Bir telefonun belli aralıklarla taşınır. Bir telefona belli aralıklarla arama gelir, mesaj gelir, GPS koordinatı değişir, giroskop, aksiyometreden veri gelir gibi aslında kullanıcı tarafından gerçek hayatta kullanılan bir telefonun davranışını modellemeye çalışan sandboxlar da var.
+
+674
+02:38:34,420 --> 02:38:41,740
+Bu da aslında güzel bir araştırma konusu. Sadece sistemi mimiki etmek değil,
+
+675
+02:38:41,871 --> 02:39:09,871
+Bu konunun da popüler konusunda...
+
+676
+02:39:09,871 --> 02:39:11,772
+Onlar arasında olduğunu söyleyebilirim.
+
+677
+02:39:12,651 --> 02:39:16,991
+Şimdi bugün 15.45 oldu. Bayağı da bir konuştuk.
+
+678
+02:39:17,296 --> 02:39:45,175
+Katılan her hepinize çok teşekkür ediyorum. Özellikle bu derste katkı sağladınız. Ayrıca teşekkür ediyorum. Güzel bir ders oldu. Önümüzdeki hafta hem buradan devam ediyor olacağız, hem de artık biraz sensörlerin kendilerine bakıyor olacağız. Hangi sensörlerle ne işler yapabiliriz? Ceresel zekada hangi sensörleri kullanmalıyız? Ne değerler üretiyorlar? Ne kadar ekürit değerler üretebiliyorlar? gibi bu tür konuları inceleyebiliyoruz.
+
+679
+02:39:45,296 --> 02:39:55,656
+Ödevle ilgili bir sorunuz olursa da, yani sona Lester projekle ilgili yazarsınız. Çok çok teşekkür ediyorum. İyi haftalar diliyorum. Kendinize iyi bakın. Sağlıklı günler arkadaşlar.
+
+680
+02:39:56,716 --> 02:40:00,195
+İyi haftalar hocam. Hoşçakalın.

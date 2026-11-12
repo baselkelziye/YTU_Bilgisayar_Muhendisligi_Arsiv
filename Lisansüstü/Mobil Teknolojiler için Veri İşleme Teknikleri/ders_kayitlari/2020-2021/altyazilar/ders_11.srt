@@ -1,0 +1,3047 @@
+1
+00:03:25,427 --> 00:03:49,108
+Evet arkadaşlar, hoş geldiniz. 12. haftadayız. Her hafta değişik kadroyla karşılaşıyorum. İlk 11'imizi tam oturtamadık gibi gözüküyor. Birkaç tane banka oyuncumuz var ama diğerleri henüz form tutamadı sanırım. Nasılsınız, iyi misiniz?
+
+2
+00:03:51,795 --> 00:03:52,775
+İzro'cam sağ olun.
+
+3
+00:03:53,855 --> 00:03:55,275
+Teşekkürler. Ben de iyiyim.
+
+4
+00:03:57,135 --> 00:04:01,316
+Şimdi bugün crowdsourcing ile devam edeceğiz. Geçen hafta crowdsourcing'e başlamıştık.
+
+5
+00:04:02,515 --> 00:04:07,475
+Crowdsourcing biterse sensör networklere geçeceğiz.
+
+6
+00:04:09,036 --> 00:04:12,915
+Son hafta otonom araçlardan bahsetmek istediğimi söylemiştim geçen hafta.
+
+7
+00:04:12,915 --> 00:04:15,415
+Öyle bir planlama yaptım.
+
+8
+00:04:15,860 --> 00:04:27,540
+Önümüzdeki haftada muhtemelen sensör networkler, IoT ve büyük veri tarafında bazı bilgiler vereceğim bizim konumuzla alakalı olarak.
+
+9
+00:04:28,980 --> 00:04:33,840
+Hocam, geçen hafta mail atacağınızı söylemiştiniz ama attınız mı, bana mı gelmedi?
+
+10
+00:04:34,319 --> 00:04:34,920
+Neyle ilgili?
+
+11
+00:04:35,520 --> 00:04:37,540
+Bir ödev verecektiniz.
+
+12
+00:04:38,240 --> 00:04:40,520
+Bu final dönemi ödevi mi?
+
+13
+00:04:40,520 --> 00:04:41,879
+Evet hocam.
+
+14
+00:04:42,259 --> 00:05:02,259
+Evet, yok, hayır, atmadım. Önümüzdeki haftaya kadar yetiştirmek istiyorum dedim. Bitirirsem de ödevi paylaşacağımı söyledim ama henüz tam olarak bitirmedim. Kafamda birkaç tane soru işareti var ama ne olacağı ile ilgili bilgi verebilirim. Telefonlardaki enerji tüketimi ile ilgili bir...
+
+15
+00:05:02,899 --> 00:05:18,219
+Bu da hem birazcık araştırma içerecek telefonların enerji tüketimleriyle ilgili hem de bir implementasyon yapmanızı bekleyeceğim.
+
+16
+00:05:24,271 --> 00:05:45,411
+Çeşitli özelliklerinin bilinen istatistik, ortalama, medyan, standart satma gibi belli özelliklerinin çıkartılıp bunların belirli bir modelde kullanılarak ilgili sınıflandırma algoritmasının enerji tüketimini hesaplamanızı isteyeceğim.
+
+17
+00:05:45,411 --> 00:05:52,271
+Bunun için çeşitli software-based yöntemler var. Hardware-based de var. Ama o hardware'i temin etmek mümkün olmadığı...
+
+18
+00:05:52,271 --> 00:06:19,351
+Bu yüzden bu örneğe için software olarak hesaplamanızı isteyeceğim. Ve buradan hem sınıflandırma algoritmalarının enerji tüketimleriyle ilgili hem özellik çıkarımı bölümünün, hem pre-processing bölümünün, hem de sensörden veri toplama bölümünün enerji tüketimine olan etkisini görmüş olacağız. [öğrenci] hoş geldin.
+
+19
+00:06:20,372 --> 00:06:25,532
+Hocam hoş bulduk. Kusura bakmayın. Geç kaldım. Yok, sorun değil. Ben de bir an seni göremeyince sana mail attım. Gördün mü?
+
+20
+00:06:25,792 --> 00:06:27,792
+Hocam gördüm de. İki hafta ders oldu mu?
+
+21
+00:06:29,132 --> 00:06:29,752
+Oldu, oldu.
+
+22
+00:06:30,512 --> 00:06:33,072
+Yani ben sınav olduğu hafta girmeye çalıştım.
+
+23
+00:06:33,439 --> 00:06:40,439
+Yok yok, yanlış anlaştık. Pardon. Ben şunun için sordum. Bugün göremeyince, geçtiğimiz haftada yoktun ya.
+
+24
+00:06:41,199 --> 00:06:46,399
+Geçtiğimiz haftada ders oldu mu? Ben toplantıdan sonra girdim hocam, bölüm toplantısından sonra. Geç mi başladı acaba yoksa?
+
+25
+00:06:46,879 --> 00:06:48,459
+Yok, ikide başladık öyle değil mi?
+
+26
+00:06:49,620 --> 00:06:50,899
+Sen maili mi görmedin?
+
+27
+00:06:51,019 --> 00:06:54,320
+Ben o zaman maili alamadım hocam. Ben bir buçuğa kadar falan bekledim.
+
+28
+00:06:54,320 --> 00:07:06,320
+Çok üzüldüm çünkü ben şeyden atmıştım, online yıldızı TR'den. Hani saat 2'de başlayacaktır diye ders. Senin orada hangi adresin kayıtlı?
+
+29
+00:07:08,788 --> 00:07:12,968
+Yani öğrenci mailim kayıtlıdır herhalde hocam. Gelmesi lazım aslında ama.
+
+30
+00:07:12,968 --> 00:07:25,963
+Böyle şöyle bir endişem var bu sistemleri kullanırken. Sizlerin orada hangi adresleri kayıtlı, yani güncel adresleriniz kayıtlı mı bazen endişe ediyorum. Ona dikkat edin. Ben açıkçası...
+
+31
+00:07:26,228 --> 00:07:31,388
+Lisanstan alışkanlık geriyi otomatik olarak orayı kullanıyorum. Size de geldiğini düşündüm. Anlaştıkça.
+
+32
+00:07:31,388 --> 00:07:42,867
+Hocam şöyle bir şey var. Mesela benim online'de Gmail'im kayıtlı. Ama sizin geçen hafta attığınız mail öğrenci mailime düşmüş yani. Geçen hafta öyle bir şey yok.
+
+33
+00:07:44,328 --> 00:07:50,388
+Uzaktan eğitim sisteminden düştü galiba hocam. Diğeri GCS üzerinden düştü. İkisi farklı maillere gidiyor bildirim.
+
+34
+00:07:50,448 --> 00:07:50,668
+Aynen.
+
+35
+00:07:51,891 --> 00:08:01,211
+Bu kötü. Şimdi iki tane tabii sistem olunca ve bunların entegrasyonu tam olmayınca bu tür bir sorun yaşanıyor. Tamam, okey, anlaştık.
+
+36
+00:08:01,572 --> 00:08:04,052
+Sura bakmayın hocam, benim de iyi takip etmem de lazımdı.
+
+37
+00:08:04,788 --> 00:08:16,668
+Soru değil [öğrenci]. Benimki tamamen merak. Ben öğrencilerimin genelde takibini bu anlamda yaparım. İki, üç hafta birini görmediğim zaman hemen bir soruyorum ne oldu, ne bitti diye.
+
+38
+00:08:18,088 --> 00:08:18,487
+Sağ olun.
+
+39
+00:08:21,172 --> 00:08:32,471
+[öğrenci] bugün farklı bir yerden katılıyorum diye ama yine kendisi San Francisco'da işleri yolum gördüğüm kadarıyla bir türlü gelemedi Amerika'dan Türkiye'ye. Biz aslında aynı yerdeyiz seninle [öğrenci] değil mi?
+
+40
+00:08:33,352 --> 00:08:35,312
+Ama karşılaşamıyoruz bir türlü hocam.
+
+41
+00:08:35,352 --> 00:08:38,072
+Evet ama köprünün diğer taraflarındaydı.
+
+42
+00:08:38,072 --> 00:08:38,872
+Diğer tarafındaydı.
+
+43
+00:08:38,872 --> 00:08:39,672
+Farklı.
+
+44
+00:08:43,092 --> 00:08:48,092
+Arkadaşlar, şimdi ödevden bahsediyordum. [öğrenci] gelmişken bir kez daha tekrar edeyim.
+
+45
+00:08:48,596 --> 00:08:52,096
+Bu arada [öğrenci] sen nasılsın? [öğrenci]'yı da uzun süredir görmüyorduk.
+
+46
+00:08:52,975 --> 00:08:58,956
+Hocam bu aralar projeler çok yoğundu. Teşekkür ederim. İyiyim. Sizi sormak lazım.
+
+47
+00:08:59,716 --> 00:09:01,536
+Ben de iyiyim. Çok şükür. Benim de...
+
+48
+00:09:01,536 --> 00:09:10,076
+Testçiler şu anda bizi bayağı bir darboğaz ediyorlar. Bir projeye devre alımı var ama yazdığımız dokümanları okumuyorlar.
+
+49
+00:09:10,964 --> 00:09:25,604
+Zaten bu ara herkes iş yoğunluğundan ve toplantıdan çok şikayetçi. Kim de konuşsam aynı dertle geliyor. Yani pandemi bittiğinde galiba firmalar arasında bayağı bir transfer olacak gibi geliyor bana.
+
+50
+00:09:25,604 --> 00:09:32,304
+Sıkılanlar, bunalanlar ya da şu anda konumunu korumak durumunda olanlar.
+
+51
+00:09:32,596 --> 00:09:58,655
+Pandemiden sonra bayağı bir pozisyon değiştiğine gideceklermiş gibi bir hissiyatım var. Çünkü şu an yeni bir iş bulmadan ayrılmakla çok maceraya girmek anlamına geliyor böyle bir süreçte. Zaten biliyorsunuz yeni mutasyon mevzusu da işin başka bir boyutunu oluşturuyor. Yani ben orayı daha farklı yorumluyorum. Size küçük görüşümü de paylaşayım. Mutasyona uğramasını ben olumlu buluyorum virüsün.
+
+52
+00:10:00,000 --> 00:10:22,059
+İnşallah bu son sözler noktasına gitmez insanlık için. Çünkü neden derseniz mutasyonda olumluya evrileceğini genelde düşünüyoruz. Bütün domuz gribinde, diğer griplerde de mutasyona uğruyorsa bulaşıcılık artabilir ama zarar verme olasılığının düşmesi genelde bekleniyor.
+
+53
+00:10:24,563 --> 00:10:44,963
+Tabii öyle bir panik havası oluştu ki şu anda. Gerçekten sanki bırakın ikinci, üçüncü dalgayı biz bundan sonra baya dalga dalga, bununla maruz kalacakmışız gibi bir durum var. İnşallah öyle bir şey olmaz. Fakat herkesin de iş anlamında da ciddi zorlandığı bir dönemden geçiyoruz. Bunun farkındayım.
+
+54
+00:10:44,963 --> 00:10:47,963
+Şimdi toparlayacak olursak...
+
+55
+00:10:49,395 --> 00:10:54,495
+Ben size final için sınav yapmayacağımı söylemiştim. Bu görüşümü de koruyorum.
+
+56
+00:10:54,879 --> 00:11:12,339
+Mümkün olduğunca sizi yeni şeyler öğrenmeye yöneltecek bir ödev vermenin peşindeydim. Bu noktada da sizden şunu bekleyeceğim final ödevinde. Tam daha sınırlarını belirlemedim ama kabaca tekrar ediyorum.
+
+57
+00:11:13,120 --> 00:11:18,740
+Cep telefonlarındaki enerji tüketimi konusunda bir araştırma yapmanızı isteyeceğim.
+
+58
+00:11:19,124 --> 00:11:27,884
+Özellikle birimlerin, haberleşme yöntemlerinin, enerji tüketiminin etkilerini kısaca anlattığınız küçük bir araştırma.
+
+59
+00:11:27,884 --> 00:11:46,884
+Arkasından bir de telefonlar üzerinde farklı sınıflandırma algoritmalarını, özellik çıkarma yöntemini, pre-processing'den birkaç tane algoritmayı ve farklı sensörleri deneyerek enerjinin...
+
+60
+00:11:47,124 --> 00:12:09,444
+Eğitim harcanmasına etkisini göstermenizi isteyeceğim. Bunu yaparken de birkaç yöntem var. Android üzerinde yapacaksınız. Telefonu olmayanlar Android emulatör kullanabilirler. Bu noktada birkaç tane de software-based enerji ölçme yöntemi var. Bunlardan bir tanesi Android'in kendisi aldı. Battery Stats.
+
+61
+00:12:09,871 --> 00:12:32,291
+Burada tabii çok küçük süreli çalıştırdığınız bir kodun değişimini göremeyorsunuz bu tourlarla. Bunun için uzun süreli tekrar tekrar çalıştırmanız gerekecek. Oradan işte bu tekrar sonunda çıkan miktarı paylaşacaksınız, ortalamasını alacaksınız ya da işte süreli orantılı bir şekilde bunu vereceksiniz.
+
+62
+00:12:32,851 --> 00:12:49,051
+Artı, bu bahsettiğimiz bir konsept vereceğim muhtemelen. Yani sınıflandırma halini görüntülerini aldın, basit bir veri üzerine çalıştırın değil de şöyle bir tanıma yapın. Telefon üzerine çalışan bir uygulama şeklinde olacak.
+
+63
+00:12:49,931 --> 00:12:59,051
+Buradan elde ettiğiniz sonuçları da yine ilk ödeminizde olduğun gibi grafiksel ve tablolarla gösterip, yorum kısmına yazıp.
+
+64
+00:12:59,860 --> 00:13:22,860
+Final projenizi de tamamlıyor olacaksınız. Sonunu da, yani bunun teslim tarihini de ikinci haftanın mümkün olduğunda sonuna sarkıtacağım. Yani alabilecek en uzun süreyi size vermek adına. Ama bunun karşılığında da siz de elinizden geleni yapıp iyi bir şey çıkartmaya çalışacaksınız. Buradaki amaç söylediğim gibi...
+
+65
+00:13:23,028 --> 00:13:48,207
+Gerçekten mobil cihazlar üzerinde bu algoritmalar, şu anda belirlemedim ama birkaç tane kafamda var, nasıl performans gösteriyorlar, telefonun enerji tüketimini ne kadar etkiliyorlar, bir günlük kullanımda diğer uygulamalarla kıyasladığınızda aslında bir makine öğrenmesine dayalı bir uygulama geliştirdiğinizde ne oluyor?
+
+66
+00:13:49,139 --> 00:14:14,379
+Görmek istiyorum. Buraya belki bir rule-based yaklaşımı da ekleyebiliriz. Hani makine öğrenmiştik ya, rule-based'de bir if var. Bir, iki if var. Ama makine öğrenmesinin işlerde biraz daha farklı hale geliyor. Böyle bir şey yapma niyetim var. Ne kullanabilirsiniz? Veka'yı kullanabilirsiniz. Hani onun hazır söyleyeceğim bazı sınıflandırıcıları orada bulabilirsiniz.
+
+67
+00:14:14,879 --> 00:14:25,120
+Ya da başka bir kütüphane ile sınıflandırıcıyı kendinizin implemente etmesine gerek yok. Oradaki kütüphaneden sınıflandırıcıyı kullanabilirsiniz.
+
+68
+00:14:25,720 --> 00:14:30,720
+Sadece önemli olan aynı şartlarda testleri gerçekleştirmek. Buna dikkat etmeniz gerekiyor.
+
+69
+00:14:31,220 --> 00:14:40,279
+Bununla ilgili bir iki paper paylaşacağım sizinle. Bu enerji ölçümü için çeşitli yöntemler öneren.
+
+70
+00:14:40,724 --> 00:15:04,744
+Bunlardan bir tanesini tercih edebilirsiniz. Çünkü onların yapmış olduğu çalışmalarda donanımsal ölçüme yakın sonuçlar üreten yazımsal çözümler var. Bunları da görmüş olursunuz. İşte APK'yı yüklüyor, ondan sonra belirli adımlar var. Onları yaptıktan sonra ölçüm yapıyor. Bunları böylece öğrenmiş olacaksınız günün sonunda.
+
+71
+00:15:06,207 --> 00:15:30,988
+Aslında hafta sonuna yetiştirmeyi planlıyorum ama en kötü önümüzdeki haftaya yetiştirmiş olacağım. Ama siz şimdiden şunlara bakabilirsiniz. Enerji tüketimleri komponent bazında, telefonda neler oluyor? Küçük bir araştırma yapacaksınız. Enerjiyi ölçmek için hangi yöntemler var? Buna bakabilirsiniz. Ve Android'te sınıflandırıcı.
+
+72
+00:15:31,731 --> 00:15:40,471
+Çağırıp çalıştırmak ve ilgili kodları implement edebilmek için küçük küçük uygulama hazırlığına başlayabilirsiniz.
+
+73
+00:15:40,672 --> 00:15:45,211
+Ortamınızı hazırlamaya başlayabilirsiniz. Böyle bir senaryomuz olacak.
+
+74
+00:15:45,211 --> 00:15:49,672
+Bir sorusu olan var mı bu kısımla ilgili ya da bu süreçle ilgili?
+
+75
+00:15:52,820 --> 00:16:01,780
+Hocam, Native Development yapmayacağız değil mi? Yani sadece Java tarafında geliştireceğiz. Yani C kütüphaneleridir, onun benzeri bir performans.
+
+76
+00:16:01,780 --> 00:16:17,020
+Güzel soru. Native Development tabii burada iki anlama geldiği için bir an ilk duyduğumda aklım gitti geldi. Aslında SDK kullanarak Native Development yapacağız ama NDK kullanmanızı beklemiyorum.
+
+77
+00:16:18,131 --> 00:16:37,111
+Tamamdır. Java tarafında bunu implemente etmenizi bekliyorum. Tabii ki öbürü daha performanslı görmek açısından güzel olacaktır ama süre kısıtında göz önünde bulunduğunda ve bu anlamdaki belli bir bilgi birikimi de gerektiği için sizi buraya yöneltmeyeceğim.
+
+78
+00:16:39,443 --> 00:16:42,783
+Hocam, Kotlin kullanımı konusunda serbest miydi acaba?
+
+79
+00:16:43,183 --> 00:16:57,843
+Tabii ki. Serbestsiniz. İster Java, ister Kotlin kullanabilirsiniz. Önemli olan aynı test ortamını yaratarak test edeceğiniz senaryoları eşit şartlarla test etmeniz. Her ikisi de benim için uygun.
+
+80
+00:17:06,932 --> 00:17:24,492
+Gereken dosya seçilerek, run butonu olarak, sınıf sayısı seçilerek vs. Şimdi onların tam kurgusunu yapmadığım için yanlış bir şey söylemek istemiyorum. Benim de bunu test edebiliyor olmam lazım sizin gönderdiğiniz APK'yı kullanarak. Öyle düşünün.
+
+81
+00:17:26,451 --> 00:17:41,992
+Hocam, bir de ağır işler çalıştıracağız. Bu durumda biliyorsunuz genelde ön yüzde yapacaksak thread tercih ediyoruz. Ancak çok uzayacak işlerde servis tarafını da kullanmamız gerekebiliyor. Bu noktada beklentiniz acaba bir servis üzerinden yazmamız mı yoksa ön yüz uygulamasına çalışması yeterli olur mu?
+
+82
+00:17:42,372 --> 00:17:48,112
+Açıkçası güzel bir soru bu ama burada gene servisi zorunlu kılmayacağım.
+
+83
+00:17:48,692 --> 00:18:08,524
+Bu da servis yazanlara bonus puan vereceğim. Yani ödev 100 üzerindense servis yazanlar 120 üzerinden değerlendiriliyor olacak. Onu söyleyeyim. Bu da aklımda olan bir şeydi. İyi ki sordum bunu. Servis yazıp bunu arka planda çalıştırmak aslında bizim...
+
+84
+00:18:08,596 --> 00:18:26,316
+Bu telefonlarımızın karar verme süreçlerinde doğal olan süreç olması gerekiyor. Ara yüze bağlı olmadan arka planda çalışması gerekiyor. Ama bunun hiç Android bilmeyen biri için birazcık meşakkatli bir süreç olduğunu düşündüğümden herkese de aynı kulvarda eşitlik vermek adına böyle bir zorunluluk getirmiyorum.
+
+85
+00:18:27,827 --> 00:18:35,307
+ADB üzerinden bir otomasyon kurup uygulamanın tekrar tekrar çalıştırılması yapabilir miyiz?
+
+86
+00:18:35,847 --> 00:18:37,327
+Testleriniz için yapabilirsiniz.
+
+87
+00:18:37,327 --> 00:18:39,528
+Bazen kabul edilmiyor. O yüzden sorayım dedim.
+
+88
+00:18:39,548 --> 00:18:44,947
+Testleriniz için yapabilirsiniz ama ben sonuçta günün sonunda nasıl söyleyeyim?
+
+89
+00:18:45,807 --> 00:18:48,827
+Şey için diyorum, direkt servis olarak değil. Bazen...
+
+90
+00:18:49,039 --> 00:18:59,519
+Bu aktiviteleri direkt ADB üzerinden çağrılabilir hale getirip çalıştırılabilir hale getirilebiliyor.
+
+91
+00:18:59,519 --> 00:19:02,519
+Ve cidden yaklaşık olarak...
+
+92
+00:19:02,771 --> 00:19:23,531
+Yani yüzde şey yüzde demişim. Yani milyonda bir veya işte binde işte bilmem kaç sıfır virgül bir sapma meydana geliyor sadece. Yani çok çok fazla etkilemiyor şeyi. Yani direkt o aktiviteyi başlatıyor. İşlemi yaptıktan sonra kapatıyor. O halde bir otomasyon yapsak kabulünüz olur mu?
+
+93
+00:19:24,147 --> 00:19:25,547
+Yani şöyle söyleyeyim.
+
+94
+00:19:26,487 --> 00:19:32,248
+Yani şey, test sonuçları için diyorum. Yoksa yine hani sanki arayüzde tıklanmış gibi oluyor yine.
+
+95
+00:19:33,248 --> 00:19:44,248
+Olur. Bunu da hani bir opsiyon olarak size sunmuş olayım. Çünkü bizim buradaki amacımız aslında...
+
+96
+00:19:44,948 --> 00:19:57,528
+Bu yöntemlerin enerjiye olan etkisini ortaya koymak için, asıl amacımız böyle yola çıktığımız için günün sonunda bu sonucu elde edeceğimizi düşünürsek, olur senin söylediğinde tamam.
+
+97
+00:20:00,000 --> 00:20:12,139
+Daha önce biz bu alanda, benim lisanstaki bitirme projem bunun üstüneydi. Biz bu performans eğrisinde bile sıcaklığı da incelemiştik.
+
+98
+00:20:12,460 --> 00:20:16,940
+Ve birbiriyle gerçekten ilişkili olan bir hali olduğunu gördük.
+
+99
+00:20:16,960 --> 00:20:19,179
+Telefonun üzerindeki sıcaklık sensöründen bahsediyorsun.
+
+100
+00:20:19,179 --> 00:20:28,000
+Evet, ve bu CPU'dan aldığımız, direkt virtual olarak aldığımız değerler üstünden falan da kontrol etmiştik.
+
+101
+00:20:28,000 --> 00:20:33,600
+Onların da bulunması gerekir mi yoksa onu dahil etmeyelim mi?
+
+102
+00:20:33,740 --> 00:20:45,380
+Şöyle, burada enerjiyle koreli olduğunu ortaya koyduğunuz bir metriyi projenizin içerisine dahil etmeniz güzel olur.
+
+103
+00:20:46,019 --> 00:20:54,820
+Çünkü aslında burada göreceksiniz sizin dokümanı paylaştığında birkaç tane enerji ölçümü için yazılımsal çözüm var.
+
+104
+00:20:55,316 --> 00:21:12,456
+Bunlar tabii donanım kadar size çok yakın sonuçlar veriyor. Yanlış hatırlamıyorsam %1 ile %4 hata payıyla ve sapmayla size bu sonucu veriyor. Her zaman bunu implemente edemeyebiliyorsunuz bu yazılımsal çözümleri.
+
+105
+00:21:18,483 --> 00:21:32,604
+Başlangıç time'ını, yani iş yaptığınız başlangıç sistem time'ını alıp, bitirdiğinizdeki sistem time'ı alıp, bunları da mesela Koreli bir şekilde enerji konsumpşinin olup olmadığını ortaya koymanız güzel olabilir. Aynı şey sıcaklık içinde geçerli.
+
+106
+00:21:33,779 --> 00:21:40,539
+Diğer bir sorum, bu testleri gerçekleştirirken telefonun şarjda olması veya pil durumunda olması.
+
+107
+00:21:40,839 --> 00:21:41,919
+Çok güzel bunların hepsi.
+
+108
+00:21:41,919 --> 00:21:49,399
+Çünkü gerçekten bayağı fark ediyor. Arkadaki enerjiyle alakadar olan o governor tamamen modu değiştiriyor.
+
+109
+00:21:49,399 --> 00:22:00,019
+Daha önceden böyle bir farklılık gördüğüm için de bir sormak istedim. Fark eder mi? Veya öyle kullanırken ayrıca not edelim mi?
+
+110
+00:22:00,435 --> 00:22:22,015
+Şöyle, birincisi gene şartları eşit kılmak adına ya hep şarjdayken ya da şarjda değilken testleri yapmak önemli. Bu bir. İki fırsat olursa iki case içinde bunu ortaya koymak aslında işi daha güvenilir hale getirecektir.
+
+111
+00:22:28,403 --> 00:22:54,663
+Pildeyken ve daha doğrusu şarjdayken ve şarjda değilken ki davranış modellerini de ortaya koymak demek bu çalıştıracağımız algoritmalar. O yüzden ben ikisini farklı kez olarak test etmenizi isterim. Bunu zorunlu kılmayacağım ama bu da gene ekstra sizin için olumlu bir bakış açısı olacaktır. Bu arada bu soruların için de sana teşekkür ediyorum. Aslında önemli noktaları gündeme getirdim enerji tüketimiyle ilgili.
+
+112
+00:22:55,220 --> 00:23:15,920
+Rica ederim hocam. Daha önceden sorun yaşadığımız için bu şeylerde. Çünkü değer aldık mesela şey çıkaramadık. Oradan mesela bildiri çıkmadı. Çünkü tam uyuşmuyormuş mesela bazı kısımları. Kimisini pildeyken, kimisini şeydeyken yapmıştık. Yani yaklaşık böyle bir 500 koşma boşuna gitmiş oldu.
+
+113
+00:23:23,220 --> 00:23:39,180
+Battery Stats olmasına rağmen Android'teki enerji tüketimini bilimsel çalışmada yayınlamak ve onunla ilgili bir katkıda bulunmak literatüre birçok.
+
+114
+00:23:39,536 --> 00:23:59,256
+Bu da dikkat noktası gerektiriyor. Aynı setup ortamından tut. Biraz önce söylediğin özellikleri gözeterek yapmak gerekiyor bunu. Mansun'u duydunuz mu? Mansun. M-O-N-S-O-O-N. [öğrenci] sen duydun mu? Sen uğraştığın için merak ettiğin.
+
+115
+00:23:59,256 --> 00:23:59,976
+Yok hocam.
+
+116
+00:24:00,307 --> 00:24:24,928
+Masun bir donanımsal enerji ölçme için Android'de kullanılan bir cihaz aslında. Telefonunuzu bu cihaz üzerinden konfigür ediyorsunuz. Yani bağlantısını gerçekleştiriyorsunuz ve size enerji tüketiminizle ilgili bilgiler veriyor. Ama tabii ekstra bir ücret öterek bu cihazı.
+
+117
+00:24:26,867 --> 00:24:28,327
+Temin etmeniz gerekiyor.
+
+118
+00:24:29,067 --> 00:24:31,447
+Bununla ilgili zaten araştırmaları yaparken de göreceksiniz.
+
+119
+00:24:32,367 --> 00:24:35,727
+Donanımsal ve yazılımsal ne tür çözümler var diye Android tarafında.
+
+120
+00:24:36,587 --> 00:24:40,287
+iOS tarafında da var ama iOS'un kendi sunduğu çözümler var.
+
+121
+00:24:40,347 --> 00:24:47,827
+Çok müdahil olma şansınız olmadığı için o nokta biraz daha çetrefilli diyebilirim.
+
+122
+00:24:47,827 --> 00:24:50,087
+Şimdi biz kendi işimize geri dönelim.
+
+123
+00:24:51,867 --> 00:24:54,167
+Hemen ben sunumu paylaşayım.
+
+124
+00:25:06,900 --> 00:25:08,680
+Evet, şu an görebiliyor musunuz?
+
+125
+00:25:11,800 --> 00:25:13,060
+Evet, şu anda görünüyor.
+
+126
+00:25:13,840 --> 00:25:14,200
+Tamam.
+
+127
+00:25:21,683 --> 00:25:43,604
+Şimdi, biz geçen hafta Participatory ve Opportunistic iki tane seçenek vardı Crowdsourcing'e başladığımızda. Bir tanesinde kişinin kendi olaya dahil olduğu, diğerinde ise bizzat çaba harcamadan sahip olduğu cihazlardan ya da yaptığı doğal bir hareketten bilgisini paylaştığı iki tane yaklaşımı konuşmuştuk.
+
+128
+00:25:44,504 --> 00:25:49,324
+Arkasından dört tane Crowdsourcing Application kategorisi.
+
+129
+00:25:49,683 --> 00:25:56,264
+Baya uzun bir süre muhabbet ettik. Çeşitli örneklerini değerlendirdik ve bu kısmı tamamladık.
+
+130
+00:25:56,943 --> 00:26:08,104
+Şimdi biz kaldığımız yerden devam edeceğiz. Geriye dönük bir toparlama yapmayacağım. Siz zaten dersin geçen haftaki bölümünü takip edebilirsiniz.
+
+131
+00:26:08,104 --> 00:26:11,104
+Bir problem çözmeye çalıştığınız zaman...
+
+132
+00:26:11,200 --> 00:26:24,220
+Burada dört farklı adımdan bahsediyoruz. Intelligence, Design, Choice ve Implementation diye. İlk etapta daha çok fikirlerin toplandığı kısım var.
+
+133
+00:26:24,624 --> 00:26:45,624
+İkinci noktada, tasarım noktasında bu fikirlerin birleştirildiği ve bu fikirlerden yaratıcı bir çözüm hedefleniyor. Bu genel olarak farklı noktalardan gelen fikirlerin birleştirilmesi. Bir sonraki noktada da işte...
+
+134
+00:26:45,940 --> 00:27:13,560
+Ne diyelim, bir karar alınacaksa bu kararla ilgili çeşitli oylamalar yürütülüyor ve en sonunda bir karar veriliyor. Bu arada genel bir mimari bu. Herhangi bir problemin çözümünde kullanılan. Aynı şekilde buradaki crowdsourcing proses akışını görüyorsunuz. Information hangi noktada ilerlediğini problemle başlıyor. Task oluşturuyorsunuz ve bunu tüm çözücülere paylaştırıyorsunuz.
+
+135
+00:27:13,951 --> 00:27:41,932
+Bunun sonucunda her bir üye buradaki ilgili taskı ya da taskları proses ediyor. Üyeler aynı taskı da proses ediyorlar, farklı parçaları da proses ediyorlar. Bunun sonunda belirli bir veri üretiliyor, veri geri gönderiliyor, bir değerlendirme yapılıyor ve burada ya bu taskların sonucunda elde edilen bilgiler birleştiriliyor ya da bunlardan dönen aynı task.
+
+136
+00:27:41,951 --> 00:28:01,951
+Bilgiler belirli bir filtreden geçirilerek en son noktada bu problemi ortaya atan kişiye aktarılıyor. Burada crowdsourcing araştırma konusunun dört farklı başlıkta ki kategorilerinin altında çeşitli...
+
+137
+00:28:04,500 --> 00:28:29,460
+Araştırma konuları ve termoloji ifadeler var. Bunun detayına girmeyeceğim. Merak ederseniz buraya bakarsınız. Benim ilgileneceğim daha çok kısım crowdsourcing ile ilgili olan application'lar olacak. Crowdsourcing ile ilgili application'lara baktığımız zaman özellikle trafik izlemede bunu kısıklıkla kullandığımızı söylemiştik Yandex'in.
+
+138
+00:28:29,776 --> 00:28:37,476
+İşte Google Maps'in. Öte yandan çukur, yol bozukluğu vs. tespit etmede bunların giderilmesinde kullanıyoruz demiştik.
+
+139
+00:28:39,896 --> 00:28:52,676
+Tabii lokasyon tabanlı oyunlar var. Burada da crowdsourcing mekanizması sıklıkla devreye giriliyor. Bir ara hatırlarsanız Pokemon Go.
+
+140
+00:28:53,236 --> 00:29:11,236
+Ciddi derecede popüler olmuştu. Hatta yani sokaklarda böyle sanal Pokemon'ları yakalamak için enteresan hareketler yapan kişilerin videoları bir ara dolaşıyordu. Gerçekten bunu augmented reality ile...
+
+141
+00:29:13,011 --> 00:29:33,791
+Oyunlaştırmak ve lokasyon ve ziyanet işlerin hareketine dayalı hale getirmek çok akıllıca bir fikirdi. Çünkü kapalı bir ortamda sürekli oyun oynamaktansa hem gezmek hem değişik yerler görmek hem de hareketi sağlamak için insanları belli bir süre oldukça heyecanlandırdı ve belli bir fan grubu oluştu.
+
+142
+00:29:33,791 --> 00:29:40,791
+Ama sonra çok da arkasının geldiğini düşünmüyorum. Belli bir süre trend oldu ve...
+
+143
+00:29:41,011 --> 00:29:46,951
+Şu anda bilemiyorum. Bu tarz oyunlar bilen var mı? Gerçekten aktif lokasyon tabanına devam eden.
+
+144
+00:29:48,011 --> 00:29:56,291
+Hocam ben kendim oynamadım ama bir grup arkadaşımın sardığı bir oyun vardı. Oyunda şöyle bir mantık var. Oyunun adını da hatırlamıyorum da belki bilenler çıkar.
+
+145
+00:29:56,871 --> 00:29:59,611
+Hocam haritada çeşitli lokasyonlarda merkez üstler var.
+
+146
+00:30:00,000 --> 00:30:17,600
+Bunların yanına gittiğiniz zaman orayı ele geçiriyorsunuz. İki takım var oyunda. Ya mavi ya kırmızı gibi düşünün. Oraları kapışmaya çalışıyorsunuz. Yani işte %51 daha çok orada insan olursa o üstün yanında onların oluyor. Olmazsa işte diğerlerine de falan. Şırgın gibi hocam bunları takip edip.
+
+147
+00:30:18,003 --> 00:30:22,443
+Ne bileyim, işte adam Fatih'te oturuyor, kalkıp Karaburn'a falan gidiyordu. Yani sırf orayı ele geçirmek için.
+
+148
+00:30:22,963 --> 00:30:24,203
+Hadi ya, ne enteresan.
+
+149
+00:30:24,423 --> 00:30:26,103
+Çok çılgınları vardı hocam.
+
+150
+00:30:26,503 --> 00:30:33,963
+Fethetme içgüdüsü de herhalde yüzyıllardır bitmiyor. İlla yeni bir yara alma güdüsüyle hareket ediyoruz herhalde.
+
+151
+00:30:34,624 --> 00:30:39,223
+Gizli ETF'e benzettim biraz. Kutu oyunu vardır, belki biliyorsunuzdur.
+
+152
+00:30:39,683 --> 00:30:44,343
+Ülkeler arasında işte savaş açarsınız, asker saygınız var, zar atarsınız falan.
+
+153
+00:30:46,132 --> 00:30:53,571
+Bu tabii bir motivasyonu var mıydı? Yani bir puan kazandığında bir ödül veriliyor muydu ya da bir şey?
+
+154
+00:30:53,932 --> 00:31:02,152
+Hocam yani maddi bir şey yok ama öyle bir ortam oluşmuş ki böyle bazı garip mesela arabaların şeyi olur ya hocam, fan clubları. Onun gibi yani.
+
+155
+00:31:02,412 --> 00:31:05,192
+Toplanıyorlar, hadi İzmir'e gidiyoruz, oradaki üssü fethedeceğiz falan.
+
+156
+00:31:05,571 --> 00:31:06,192
+O kadar.
+
+157
+00:31:06,892 --> 00:31:08,451
+Evet hocam, çok aşırı oynuyordu insanlar.
+
+158
+00:31:08,884 --> 00:31:11,003
+Çok enteresan ya, çok merak ettim bu oyunun.
+
+159
+00:31:11,403 --> 00:31:12,544
+Ben ismini öğrenirim yani.
+
+160
+00:31:13,183 --> 00:31:20,884
+Tamam, okey. Ama iyi olur, ben de görmüş olurum. Sonuçta burada...
+
+161
+00:31:21,652 --> 00:31:37,352
+Birlikte hareket ederek bir sonuç üretilen oyunlardan bahsediyoruz. Bu ayrı. Bir de bu daha çok grup hareketi olarak geçiyor. Slide'ların sonunda göreceksiniz. Bir de kişisel hareketler var. O Pokemon Go'daki gibi kişisel topladığınız puanlar vardı.
+
+162
+00:31:48,468 --> 00:32:14,008
+Hayata geçirmişlerdir, emin değilim. Türksel'in bir ara böyle bir hedefi vardı ama yaptığımı bilmiyorum. Şimdi biliyorsunuz, operatörlere sorsanız en fazla onlar çekiyor Türkiye'de ya da dünyada. İşte %99.9, %99.8 işte vesaire vesaire. Bu işin esprisi bir dönemler bayağı kapışma oluyordu. Ama artık coverage ile ilgili çok bir sıkıntımız yok.
+
+163
+00:32:15,124 --> 00:32:33,943
+Kavarışla ilgili yok derken, oradaki baz istasyonunun kapasiteyle ilgili sıkıntımız var. Yani aynı anda yüklenildiği zaman performans düştüğü için data transferiniz ya da ses bağlantınızda sıkıntılar olabiliyor. Fakat bu daha çok karasal bölgede sorunlar çözülmüş durumda. Deniz üstüne çıktığınızda...
+
+164
+00:32:34,420 --> 00:32:40,140
+O zaman yandınız. Yani bayağı bildiğiniz Marmara Denizi de dahil olmak üzere iç deniz olan bir noktada.
+
+165
+00:32:40,140 --> 00:32:59,140
+Belli noktalarda tabii ki kıyıdan uzaklaştığınız için, yakında da kurulu bir baz istasyonu olmadığı için, uydu haberleşmesine de ihtiyaç duyduğunuz için, o noktalarda belirli spotlar...
+
+166
+00:32:59,635 --> 00:33:26,255
+Çekmiyor. Siz orada savunmasız durumdasınız. Acil bir şeye ihtiyacınız olsa, işte hatta uydu telefonları kullanılır ya gemicilik alanında. Şöyle bir uygulama, Ege Denizi biliyorsunuz oldukça aktif bir deniz. İnsanların gerek gemicilik merakı, gerek denizcilik merakı. Orada özellikle yaz döneminde çok ciddi bir tekne aktivitesi oluşmasını sağlıyor.
+
+167
+00:33:26,996 --> 00:33:44,296
+Bu teknelerin hareketini kullanarak deniz haritası üzerinde siz bir çekim gücüne göre haritalandırma yapabilirsiniz.
+
+168
+00:33:45,756 --> 00:33:53,736
+Telefonunuzdan aldığınız sinyalleri merkezi bir noktada toplayarak herkes gemiyle hareket ettiği noktada, herkesten gelen sinyaller toplanarak
+
+169
+00:33:54,932 --> 00:34:16,291
+Denizcilik haritası üzerinde hangi noktaların çektiği, çekmediği, ne kadar iyi çektiği, çekmediği konusunda bir değerlendirme yapabilirsiniz. Bununla ilgili Türk [öğrenci]'in çalışması olduğunu hatırlıyorum. Ama gerçek dedi mi bilmiyorum. Bu aslında denizciler açısından çok önemli çünkü herhangi bir ters bir durum.
+
+170
+00:34:16,724 --> 00:34:35,784
+Aniden fırtına çıkması, hesaba katılmayan bir durum, karaya oturma, işte bir adanın etrafında sıkıntı yaşama, teknede oluşan bir yangın gibi durumlarda erişimin olma gerekliliği açısından çok önemli gittikleri nokta. Buna göre kendilerini konumlandırabilirler.
+
+171
+00:34:43,088 --> 00:35:09,248
+kullanılan birçok uygulamayı görüyorsunuz. Bunlara burada ekli olmayan BlaBlaCar gibi, Airbnb gibi sıklıkla hayatımızda kullandığımız uygulamalar da var. Geçenlerde böyle bir bakarken değişiklik bir şey var mı diye MiFlight diye bir uygulama gördüm.
+
+172
+00:35:10,068 --> 00:35:24,068
+Size havalimanındaki kuyruk linelerinle ilgili bilgi veriyor. Yani ne kadar kuyruk var pasaport sırasında, X havayolunun kuyruğu, X uçuştaki kuyruk ne kadar şeklinde.
+
+173
+00:35:24,648 --> 00:35:33,128
+Çalıştırmadım. O yüzden nasıl bir mantıkla bilgi topluyor ve değerlendiriyor. Muhtemelen kullanıcı bilgisiyle bu gerçekleşiyor diye tahmin ediyorum.
+
+174
+00:35:33,588 --> 00:35:49,988
+Ama bunun market ve diğer otobüs kuyruğu, etkinlik kuyruğu, bir stada giriş, bir konsere giriş kuyruğunu başka bir uygulamada, şu an ismini hatırlamadığım, implemente etmiş.
+
+175
+00:35:49,988 --> 00:35:57,988
+Ve size o anda orada bulunduğunuz lokasyonda katılacağınız etkinlikle ilgili ne kadarlık bir...
+
+176
+00:35:58,351 --> 00:36:15,311
+Kuyruk oluştuğuyla ilgili bilgi geçiyorlar. Bunu normalde bir arkadaşınız sizi arar sıraya girdiyse, artık hadi gel, bak burası çok kalabalıklaşmaya başladılar. Bunu crowdsourcing mantığıyla kullanılabilir hale getirmişler. Oldukça enteresan fikirler var.
+
+177
+00:36:25,940 --> 00:36:35,400
+Çözülebilecek fikirler geliyor bu. Mevcut bildiğiniz bir fikir de olabilir. Yeter ki değişik bir şey konuşalım.
+
+178
+00:36:38,835 --> 00:36:44,215
+Hocam değişik bir şey değil pek ama navigasyon uygulamalarında çok fayda anılıyor bu şeyden herhalde.
+
+179
+00:36:44,715 --> 00:36:45,555
+Tamam, olur.
+
+180
+00:36:46,395 --> 00:36:51,487
+Bir de Yandex'te şey oluyordu hocam, yine trafik uygulamasında işte insanlar yorumlar yazıp...
+
+181
+00:36:51,487 --> 00:36:54,047
+Yol durumu ile ilgili kendileri de bilgi veriyorlardı falan.
+
+182
+00:36:54,227 --> 00:37:09,927
+Doğru. Yorumları en çok kullandığımız işte gerek otel seçerken, gerek ürün alırken. Hangisine giriyordu? Ben yeni katılan arkadaşlara sormuş olayım. [öğrenci] nasıl olsa biliyordur muhtemelen hatırlıyordur. Bilmiyorsa birazdan göreceğiz onu da.
+
+183
+00:37:19,188 --> 00:37:22,188
+Benim bir fikrim yok açıkçası ikisini de daha bugün duyduğum için.
+
+184
+00:37:23,648 --> 00:37:26,908
+Bir tanesi katılımcı, diğeri de fırsatçı desem.
+
+185
+00:37:28,588 --> 00:37:32,068
+Yani yorum yapmak katılımcı olur o zaman fırsatçı da. Daha çaktırmadın herhalde.
+
+186
+00:37:32,068 --> 00:37:38,764
+Daha çok non-intrusif çözümler için söylüyoruz. Yani insanın bir emek harcamadan...
+
+187
+00:37:38,867 --> 00:38:05,267
+Doğal yaptığı bir işten dolayı ya da insanın kendi cihazından dolayı gerçekleştirmiş olduğu tüm yaklaşımlara opportunistik diyoruz. Ama insana bir feedback vermek zorunda olduğu ya da bir data toplamaya bas gibi aktif işin içinde olduğu kısımlara ise daha çok katılımcı diyoruz. Bütün bu yorumlar katılımcıya giriyor.
+
+188
+00:38:05,811 --> 00:38:23,092
+Peki, biraz sonra göreceksiniz. Şimdi söylemeyeyim ama bunların belirli bir motivasyonu var. Yani boş boş katılımcı olmak için çeşitli motivasyonlarınızın olması lazım. Bunlar neler? Birazdan buna bakıyor olacağız.
+
+189
+00:38:30,739 --> 00:38:49,739
+Harcadığı enerji çok çok önemli. Bu, crowdsourcing'in bir parçası olduğunuzda aslında enerji harcıyorsunuz. Bu net. Çünkü Yandex için de lokasyon bilgisi sağlıyorsunuz belli periyotlarla diyelim. İBB trafik içinde sağlıyorsunuz. Ya da arka planda...
+
+190
+00:38:50,420 --> 00:39:18,420
+Google'ın sizden almış olduğu hareket verileri var. İşte yürüyor musunuz? Araç için misiniz? Bunları zaten bir kısmını daha sözleşmeyi imzalarken onaylıyorsunuz, paylaşacağınızı. O yüzden bunların bize maliyet olarak aşağı yukarı yapılmış bir çalışması var. Tabii bu biraz daha eski bir çalışmanın sonuçları. Şimdi yeni sonuçları sizlerin yapacağı çalışmada bir de...
+
+191
+00:39:18,420 --> 00:39:38,880
+Daha değerlendiriyor olacağız. Kabaca verilen bir değer. İşte en az kullanımda CPU'nun 35 milivatlık bir harcaması, güç tüketiminden bahsediyoruz. Standartta birden 5 kata kadar çıkıyor olay. Ve heavy de neredeyse 12-13 kata kadar yüksek bir CPU kullanımından bahsediyoruz.
+
+192
+00:39:45,523 --> 00:39:54,804
+3G, BZ noktasının yarısı kadar enerji tüketiyor. Yani vaz istasyonu tüketimi oldukça yüksek.
+
+193
+00:39:55,764 --> 00:40:09,344
+Wi-Fi görece vaz istasyonuna göre daha düşük olmakla birlikte CPU'nun pik olma durumu, heavy processing durumu çok az olduğu için CPU, Wi-Fi'ye göre oldukça az enerji tüketiyor.
+
+194
+00:40:09,876 --> 00:40:26,775
+Dolayısıyla GPS'in de düşünün, stedi konumdaki tüketimi 275 olarak raporlanmış. Bunun da gerçekten sürekli sorgulandığı bir durumda oldukça saniyede bir yüksek enerji tükettiğini rahatlıkla söyleyebiliriz.
+
+195
+00:40:26,775 --> 00:40:29,715
+Bir diğer noktada ekranların tüketimi.
+
+196
+00:40:31,088 --> 00:40:38,068
+Güneşli bir havada, ekranı parlak kullanıyorsanız açık bir havada, oldukça yüksek enerji tüketiminden bahsediyoruz.
+
+197
+00:40:38,748 --> 00:40:49,628
+Tabii sizin yapacağınız çalışmada, [öğrenci] sormuştu, daha doğrusu [öğrenci] de bunu söyledi, servis noktasını gündeme getirdi.
+
+198
+00:40:50,367 --> 00:40:54,967
+Arka planda çalıştırmakla bir uygulama açıkken çalıştırmak arasında ciddi fark var.
+
+199
+00:40:59,088 --> 00:41:21,068
+Bu da dikkat edilmesi gereken bir nokta. Smart P2P'yi konuşmak istiyorum kısaca. Ne olabilir Smart P2P? Şöyle bir bakarsanız.
+
+200
+00:41:23,251 --> 00:41:28,692
+Direkt cihazlar arası herhangi bir server olmadan iletişim olabilir.
+
+201
+00:41:29,552 --> 00:41:48,771
+Doğru. Ama bir tane optimizer server'a ihtiyaç duyuluyor bu tasarımda. Bu mimarada şöyle bir yaklaşım var. Herhangi bir obje paylaşımı, telefonunuz üzerindeki resim, dosya, video gibi istiyorsunuz diyelim.
+
+202
+00:41:50,496 --> 00:41:59,536
+Bu resmin size en yakın pozisyonda olan telefonlardan, tabii buraya üye olan bir network kurumundan bahsediyor.
+
+203
+00:42:00,659 --> 00:42:09,319
+Kişi grubundan bahsediyorum. Getirilmesi hedefleniyor. Bunun için bir look up table var. Bu look up table optimizer sorununda saklanıyor.
+
+204
+00:42:09,319 --> 00:42:27,839
+Bu sayede siz her telefona sorgu atmadan bu üye grubu içerisinde üye gruplarındaki telefonların lokasyon bilgileri de optimizerde saklanarak almak istediğiniz
+
+205
+00:42:28,371 --> 00:42:46,771
+İçin dosya, resim, videoyu Optimizer'a soruyorsunuz ve Optimizer size en yakın olan telefonla konuşmanızı sağlıyor, bilgilerini gönderiyor ve siz o telefonlardan indiriyorsunuz. Bunun en güzel örneklerinden bir tanesi konferanslar. Bunun dersin ilk haftalarında konuşmuştuk diye hatırlıyorum.
+
+206
+00:42:47,184 --> 00:43:15,184
+Bir konferansta onlarca fotoğraf, onlarca video paylaşılıyor. Konferansın kendi organizasyonunu paylaştıklarını sadece düşünün. Bazen sizden de alıyorlar bunları. Bunlar bir noktada cloud'a gidiyor. Siz cloud'tan bunları indiriyorsunuz. Bu çok maliyetli bir iş. Onun yerine lokal bir noktada bu işleri halletmek daha akıllıca. Bunun eski versiyonu, yani eskiden kastettiğim ilk versiyonları...
+
+207
+00:43:15,184 --> 00:43:33,344
+Proxy Serverlar aslında çeşitli uzaktaki bilgiler değişmediği sürece sizin yakınınızda sorgulamanız için bu bilgilere sahipler. Telefonlar içinde böyle bir yapı Smart P2P ile kurgulanmış ve kullanıma sunulmuş.
+
+208
+00:43:39,903 --> 00:44:00,804
+Afetler tarafında karşımıza çıkıyor. Bizim genel network'ümüz çökme noktasına geldiği için afet yaşandığında, özellikle deprem sırasında, voice hatları zaten muhtemelen çökmüş oluyor. Data hatlarını son dönemde kullanıyoruz biliyorsunuz.
+
+209
+00:44:06,003 --> 00:44:30,083
+İnşallah yaşanmaz. Afetlerde bu data hatların da sıkıntı yaratacağı zamanlar olacak ki WhatsApp'ın çalışmadığı, ilgili telefonların çalışmadığı belli bir süre oluyor. Bu durumda ad hoc network dediğimiz telefonları birbiri üzerinden haberleştirmek. Sadece herhangi bir vazetasyonu olmadan, Wi-Fi access point olmadan hop by hop aktarmak önemli.
+
+210
+00:44:32,179 --> 00:44:57,059
+Çok uzun mesafelere aktarma şansımız yok ama dizastır bölgesinde hayat kurtaracağı kesin. Özellikle belli sokaklarda, yıkımın olduğu noktalarda hızlıca haberleşmek adına bir noktaya kadar veriyi çıkartabilirsiniz. Oradan sonrası zaten verinin hızla yayılması için yeterli. Çünkü esas darboğaz olayın yaşandığı yerde oluyor. Örnek statlar.
+
+211
+00:44:57,780 --> 00:45:15,019
+Statlarının çevresinde kurulan baz istasyonları açıkçası maçların olduğu günlerde genelde çok kapasite yoğun kullanıldığı için iyi servis veremiyor. Ekstra hatta baz istasyonu getiriyorlar, mobil baz istasyonları.
+
+212
+00:45:25,652 --> 00:45:34,872
+Ana sunucuya gitmeden etraftaki cep telefonları üzerinden konuşması faydalı olacaktır.
+
+213
+00:45:34,952 --> 00:45:38,852
+Tabii şunu diyebilirsiniz, böyle bir crowd'a katılmanın bir maliyeti var.
+
+214
+00:45:38,932 --> 00:45:40,932
+Çünkü sizin telefonunuzda bir hop olarak kullanılıyor.
+
+215
+00:45:41,168 --> 00:45:56,528
+Yani gelen veriyi alacaksınız, ileteceksiniz. Bu noktada herkes buna açık olmayabilir. Evet, doğru. Bundan faydalanmak isteyen kişiler böyle bir hizmeti de kabul etmeleri gerekecek.
+
+216
+00:45:57,888 --> 00:46:07,008
+Hocam, bunun benzeri bir uygulama da şeyde vardı. Konser havası oluşturabilmek için telefonlar arasında böyle müzik paylaşımı.
+
+217
+00:46:07,443 --> 00:46:11,024
+Ben de ona benzer başka bir şey soracağım ama sen tamamla lütfen.
+
+218
+00:46:12,024 --> 00:46:12,844
+Aklıma bir şey geldi.
+
+219
+00:46:13,004 --> 00:46:16,584
+Yani çok verimli çalıştığını görmedim.
+
+220
+00:46:16,943 --> 00:46:22,024
+Yani arkadaşlar bir denemişlerdi ama o büyük ihtimal optimizer yoktu.
+
+221
+00:46:22,931 --> 00:46:37,692
+Yani aralarından bir optimizer olmak istiyordu. O benim gördüğüm program da yani biraz daha basit versiyonulardı. O yüzden çok verimli çalışmıyordu. Arada böyle kesilmeler falan oluyordu. Direkt Wi-Fi üstünden alıyordu ve bir alanı kaplıyordu ama...
+
+222
+00:46:38,016 --> 00:47:04,816
+Dediğim gibi çok verimli göremedim. Buradaki amaç şu değil mi? Yani çok sesliliği yaratmak mı? Evet. Yani atıyorum 10 tane, 15 tane telefonda aynı anda bir şarkının çalması. Biraz şey gibi, Senpone Orkestrı Kent Orkestrası ile yapılır yani sanatçılar konser verirler. Çok sesli birçok enstrümanın yer aldığı. Güzel fikirmiş, ben bunu duymamıştım. Enteresan bir fikir.
+
+223
+00:47:06,016 --> 00:47:16,836
+Vardı hocam şeyde Play Store'da ama yani arkadaş bize gösteriyordu böyle bir uygulama var diye ama pek verimli olduğunu göremedik yani. Birkaç kişi denedi ama.
+
+224
+00:47:16,836 --> 00:47:20,316
+Ne zaman bunu hani görmüşsündür?
+
+225
+00:47:20,416 --> 00:47:28,536
+Bunu ne zaman gördüm? Ben üniversite ikinci sınaftayken işte akademik bir işime gidiyorduk. Üç sene önce falan herhalde.
+
+226
+00:47:28,716 --> 00:47:33,176
+Tamam. Belki çünkü bu süre zarfı içerisinde bununla ilgili geliş.
+
+227
+00:47:33,715 --> 00:47:57,315
+Ve geliştirme yapıp başka uygulamalar çıkmış olabilir bu fikri kullanan. Buna bir bakmak istiyorum. Değişik bir fikir. Benim de şöyle bir benzer uygulama var. Mesela statlarda biliyorsunuz ışık gösterisi yapılır telefonlar kullanılarak. Ve bu hani bazen gerçekten çok güzel bir görsel şov haline dönüşür.
+
+228
+00:47:57,844 --> 00:48:01,664
+Bu arada geri gelmişken sorayım. Rahmetullah, takım tutuyor musun?
+
+229
+00:48:04,684 --> 00:48:07,104
+Yok hocam. Futbolda çok ilgilenme.
+
+230
+00:48:07,424 --> 00:48:12,844
+Vallahi öyle hissetmiştim ha rahmetullah. Doğru tahammül etmişim. Peki, [öğrenci]?
+
+231
+00:48:14,464 --> 00:48:16,804
+Tutmuyorum hocam. Ama eskiden Trabzon'u sporundaydı.
+
+232
+00:48:16,804 --> 00:48:18,444
+Tamam. [öğrenci]?
+
+233
+00:48:20,984 --> 00:48:22,224
+Tutuyorum hocam.
+
+234
+00:48:22,708 --> 00:48:24,128
+Bir ben tutuyorum herhalde.
+
+235
+00:48:24,608 --> 00:48:25,648
+Hangi takım tutuyorsun?
+
+236
+00:48:26,108 --> 00:48:27,128
+Galatasaraylıyım ben.
+
+237
+00:48:27,448 --> 00:48:33,068
+Bak nasıl belli, geliştikten belli mikrofona. Öyle bir gelmek istiyorum tabii. Galatasaraylıyım dedi.
+
+238
+00:48:34,268 --> 00:48:37,128
+UEFA kupasından önce ve son Galatasaray.
+
+239
+00:48:38,348 --> 00:48:39,388
+Güzel. [öğrenci].
+
+240
+00:48:39,956 --> 00:48:41,436
+Yok hocam, tutmuyorum.
+
+241
+00:48:41,936 --> 00:48:50,976
+Vay, süper bir statistik oldu. İlk defa tarihimde %25 oranında bir takım tutma ve %75 oranında bir takım tutmama oranı oluştu.
+
+242
+00:48:51,295 --> 00:48:53,096
+Ve bu şunu gösteriyor hakikaten.
+
+243
+00:48:55,123 --> 00:49:14,743
+Geldiğimiz noktada sportif başarılar o kadar kötü olmuş ve Türk sporu o kadar kötü noktada ki tabii ki bu kişisel tercihtir ama artık insanlar spor takip etmiyorlar. Ben fanatiklik konusunu kenara bırakıyorum. İşin eğlence kısmındayım.
+
+244
+00:49:17,652 --> 00:49:45,072
+Bunun bir şekilde yavaş yavaş kaybolduğunu görüyorum. Kimse kimseyle zaten uğraşacak noktada değil. Çünkü herkes birbirinden beter durumda şu anda. Maalesef başarı anlamında. Ben de [öğrenci] söylediği için hemen gururla söyleyeyim. Ben de Fenerbahçeliyim [öğrenci]. Galatasaray'ı da çok severim. Çok da keyifli olur. Birbirimizle uğraşmamız ama bu sene neyse ki 20 senelik hikaye bitti de biz de rahatladık, siz de rahatladınız.
+
+245
+00:49:45,652 --> 00:49:53,672
+Hocam, ben de bu muhabbeti açtığınızda herhalde dünkü maçı izledikten sonra bu muhabbet açıldı gibisinden bir çıkarımda bulunuyordum.
+
+246
+00:49:53,951 --> 00:50:07,652
+Yok [öğrenci], ona girmeyelim. Ona seninle özel olarak konuşuruz şimdi dersin sırasını almayalım. Orada zaten bir şeyler olmuş hakikaten. Ben tamamen böyle bir bakma şansım olmadı. Bu işler uzun işler ama inşallah...
+
+247
+00:50:08,563 --> 00:50:23,243
+Umarım. Sonunda bir noktaya varırız, öyle söyleyeyim. Hakikaten kötü durumdayız çünkü. Yani ben de mutsuzum. Bir zamanlar keyifle takip ediyordum. Şu anda keyifle takip edemiyorum. Ülke milli takımlarımız için de aynı şey geçerli diye düşünüyorum.
+
+248
+00:50:23,243 --> 00:50:31,763
+Bu biraz futbola has bir şey oldu sanki hocam bizim ülkede. Spor takip edilmiyor dediniz ya. Mesela ben voleybol falan izlerim ama yani futbol o kadar kötü oynanıyor ki.
+
+249
+00:50:32,123 --> 00:50:32,883
+Evet çok haklısın.
+
+250
+00:50:34,612 --> 00:50:40,592
+Biz bazı noktalarda ilerledik. Sportif olarak hakikaten. Mesela kadın voleybolu çok başarılı oldu.
+
+251
+00:50:41,271 --> 00:50:47,711
+Basketbol daha başarılı. Basketbol ziyan kitle sayısı çok yerlerde yani.
+
+252
+00:50:48,492 --> 00:50:53,612
+Böyle bir gerçek var ama sportif olarak açıkçası...
+
+253
+00:50:55,443 --> 00:50:59,483
+Ülkemizin çok daha iyi yerlere gelmesi lazım. Çünkü potansiyelimiz çok yüksek diye düşünüyorum.
+
+254
+00:50:59,844 --> 00:51:03,864
+Şimdi spora da bağlayacağım. Bu arada aklıma da bir şey geldi. Spor konuşurken bizim konularımızla ilgili.
+
+255
+00:51:04,384 --> 00:51:13,943
+Hemen şu bizim esas çıkış noktamızdan bahsedelim. Mobile Crowdsourcing'i konuşuyorduk.
+
+256
+00:51:13,943 --> 00:51:19,943
+Burada statlardaki ambiyansı konuşuyorduk.
+
+257
+00:51:19,983 --> 00:51:46,003
+Bir uygulama sizin telefonunuza senkron olduğunuzda bütün telefonların o uygulamaya bağlanarak senkron olmasını ve çeşitli farklı ışıklar yaparak, saniyede iki saniye bir yakarak, üç saniye bir yaparak bütün stat'takilerin gecikme olmadan aynı ne diyelim kareografi yapmasını hedefleyerek yola çıkmıştı.
+
+258
+00:51:46,804 --> 00:51:47,543
+Duyamıyorum [öğrenci].
+
+259
+00:51:49,588 --> 00:51:50,608
+Çok mantıklı.
+
+260
+00:51:51,268 --> 00:51:53,288
+Ben de olmaz diyorsun zannettim bu arada.
+
+261
+00:51:53,808 --> 00:51:55,108
+Yok hocam, çok mantıklı.
+
+262
+00:51:55,248 --> 00:51:58,788
+Evet, ben de bunu ilk duyduğumda çok şaşırmıştım ama çok bence güzel bir şey.
+
+263
+00:51:58,908 --> 00:52:01,908
+Sadece spora özel düşünmeyin. Bu konser için de geçerli.
+
+264
+00:52:02,468 --> 00:52:09,028
+Büyük etkinliklerde çok güzel ambiyanslar yaratılabilir ama tabii orada çeşitli gecikme problemleri var.
+
+265
+00:52:09,108 --> 00:52:12,988
+Bunu kabul etmemiz lazım. Yani öyle basit bir problem gibi gözükse de
+
+266
+00:52:12,988 --> 00:52:16,768
+5000 tane telefonun aynı bölgedeki senkron olması
+
+267
+00:52:17,427 --> 00:52:43,387
+Yani üzerine düşünülmesi gereken bir çalışma. Bu da bir crowd aslında çalışması. Bunu da sizle paylaşmış oldum. [öğrenci]'nın hatırlatması üzerine. Sportif tarafa dönecek olursak da, crowd, spor da nasıl kullanılabilir? Yani crowd sensing, crowd sourcing.
+
+268
+00:52:43,987 --> 00:52:46,767
+Sportif tarafı nasıl kullanılır? Şimdi akma geldi onda.
+
+269
+00:52:47,147 --> 00:52:53,267
+Hocam, geçen hafta gördüğümüz kral fonlaması vardı ya, kitle fonlaması vardı.
+
+270
+00:52:53,927 --> 00:52:58,087
+Bunu en son şu vefa olan görmüştük.
+
+271
+00:52:58,447 --> 00:53:08,687
+Evet, senin söylediğin teknik anlamda değil ama sportif organizasyonların kullandığı çok güzel bir crowdfunding uygulaması vardı.
+
+272
+00:53:08,687 --> 00:53:15,447
+Bütün takımlar bir şekilde Beşiktaş Fenerbahçe başta olmak üzere bu tarz etkinlikler yapmaya başladı.
+
+273
+00:53:15,567 --> 00:53:19,787
+Ama benim söylediğim daha çok sporcuya yönelik, takıma yönelik.
+
+274
+00:53:25,492 --> 00:53:29,332
+Bu arada crowd demek aynı anda bilgilerin toplanması, işlenmesi demek değil biliyorsunuz.
+
+275
+00:53:29,432 --> 00:53:32,152
+Yani crowdsourcing vs. Olaya öyle bakmayın.
+
+276
+00:53:36,980 --> 00:53:42,580
+Belki onun vücut verilerini falan toplayıp diğer oyunculara göre kıyaslamalar yapmak gibi bir şeyler.
+
+277
+00:53:42,580 --> 00:53:56,580
+Bir, bunu çok sık konuşuluyor. Veri bilimi diye de adlandırıyor. Spordaki veri bilimi diye. Yeni antrenman tekniklerinde kişilerin üzerine sansörler bağlanarak hem...
+
+278
+00:53:57,108 --> 00:54:19,628
+Hareketleri, kas hareketleri takip ediliyor. Hem toplu olan koordinasyonu hem de harcadığı enerji, vücudunun ürettiği laktik asit gibi farklı bilgiler toplanıyor ve bu artık ciddi derecede profesyonel bir meslek olmuş durumda. Antrenörlerin sporcuları çalıştırma.
+
+279
+00:54:19,983 --> 00:54:31,884
+ve sporculardan fazlasını alma taktikleri diyelim. Bu bir. İkincisi, tabi basit bir örnek ama...
+
+280
+00:54:32,500 --> 00:54:53,440
+Daha profesyonel olmayan ama bir tenis hocası çalıştırdığı öğrenciler arasındaki gelişimi ya da iyi öğrenciyle kötü öğrenciler arasında tanımladığı zaman onun kol hareketlerini, vuruş stilini aslında izleyip diğer öğrencilerin ne kadar buna yaklaştığını tespit etme şansına sahip.
+
+281
+00:54:53,728 --> 00:55:18,648
+Böylece burada iyi öğrencilerden elde edilen bilgilerle kötü öğrencilerin, yani daha yeni öğrenmeye başlayan öğrencilerin oynayış stilinin düzeltilmesi mümkün olabilir. Bu tarz farklı sporlarda yapılan hareketlerin, bu ayakla oynanan sporlar, elle oynanan sporlarda atış tekniği vardır biliyorsunuz. Yani basketle topun elden çıkışı. Herkes farklı atar.
+
+282
+00:55:18,976 --> 00:55:44,876
+İşte daha böyle teorik olarak bir atış vardır. O gösterilir ama başka biri onu hiç kullanmamasına rağmen çok yüksek yüzdeyle atıyordur. Farklı bir stille. Buralarda artık motor öğrenme hareketlerini sensörlerle izleyip sportif olanda başka çalışmalar yapılabilir. Bunu da yeri gelmişken değinmiş olalım.
+
+283
+00:55:45,364 --> 00:56:08,223
+Mobile Crowdsensing'dan bahsettik. Burada mobil cihazların üzerindeki sensörlerden bilgi toplanması konusu var. Crowdsourcing'dan farklı olarak. Gelelim Crowdsensing'deki motivasyonlara. Yani bir parçası oluyorsanız niye parçası oluyorsunuz? Bir, eğlence için.
+
+284
+00:56:09,523 --> 00:56:35,483
+İki, hizmet almak için. Yani siz bilgi veriyorsunuz, karşılığında hizmet alıyorsunuz. Üç, para. Bu üç başlık ön plana çıkıyor. Başka bir çalışmada da eğlenceyi ön plana çıkarmış. Ün, mesela reputation diyor. Gerçekten o işten para kazanmayıp ama fazla like almak adına ya da bilinirliğinin yüksek olması adına bu işi yapanlar var.
+
+285
+00:56:36,148 --> 00:57:04,148
+Bunu bir şekilde paraya döndürüyorlar ama bunun Crowdsource Sensit'teki karşılığı bu. Şimdi dönecek olursak, burada hizmetleri konuşmuştuk. Trafik hizmeti alıyorsunuz, karşılığında data paylaşıyorsunuz. Anket doldurarak para karşılığında bir hizmet yapabilirsiniz. Ya da işletim sisteminin ya da bir yazılımın beta versiyonunu kullanarak bir ücret alma şansınız var ya da kredi alma şansınız var. Google tarafında kredi almanızı düşünün.
+
+286
+00:57:04,148 --> 00:57:11,048
+Bu tarz motivasyonlarımız var. Gelelim crowdsourcing problemlerine. Gösterdim ve kapattım.
+
+287
+00:57:16,596 --> 00:57:17,416
+Neler olabilir?
+
+288
+00:57:19,615 --> 00:57:24,316
+Bu kısım önemli çünkü crowdsourcing'te gerçekten önemli problemler var.
+
+289
+00:57:24,316 --> 00:57:31,016
+Yani crowdsourcing, crowdsourcing dediğiniz zaman iş veriyi topladığımla bitmiyor.
+
+290
+00:57:31,596 --> 00:57:36,836
+O veriyi topladığınız gibi kullanırsanız bayağı bir hayal kırıklığı yaratabilirsiniz.
+
+291
+00:57:38,715 --> 00:57:39,695
+Nedir valla?
+
+292
+00:57:39,695 --> 00:57:42,016
+Valla enerjinin fazla olması olabilir.
+
+293
+00:57:42,255 --> 00:57:42,556
+Adını?
+
+294
+00:57:43,123 --> 00:57:56,723
+Kullanılan enerjinin fazla olması. Totalde hesapladığımız zaman gerçekten özel olarak o işte çalışan makinelere göre bence baya yüksek enerji harcanıyor. Özellikle kayıbı da çok.
+
+295
+00:57:56,723 --> 00:58:08,523
+Çok güzel. Ben bu açıdan problemleri sizinle paylaşmayacaktım ama bu çok doğru bir tespit. Bir, crowdsourcing, crowdsourcing'in parçası olan cihazların.
+
+296
+00:58:09,139 --> 00:58:13,199
+Ya da kişilerin harcadığı fazla enerji. Okey.
+
+297
+00:58:14,799 --> 00:58:21,000
+Hocam enerji deyince tam konumuzla alakalıma emin olamadım da. Bu blockchain teknolojileri de aşırı enerji tüketiyor.
+
+298
+00:58:21,819 --> 00:58:25,919
+Aslında blockchain'i bir crowdsourcing, sensing olarak adlandırabilir miyiz?
+
+299
+00:58:27,188 --> 00:58:33,148
+Geçen hafta konuşmuştuk. Hatta isimlendirebiliriz. Bir örnek olarak verilebilir demiştik.
+
+300
+00:58:33,427 --> 00:58:33,987
+Aynen öyle.
+
+301
+00:58:33,987 --> 00:58:46,864
+Bana sonradan şey aklıma geldi mesela blockchain için. Blockchain ilk mesela şeyler çıkarken bu neydi? White Paper oluşumunda mesela orada...
+
+302
+00:58:46,864 --> 00:58:53,123
+Direkt kitle fonlaması var aslında. Hani destekçi toplamaya çalıştığı için orası direkt zaten bir örnek oluyor.
+
+303
+00:58:53,724 --> 00:59:02,123
+Doğru. Blockchain noktasında da farklı distribütüt mekanizmaları kullandığımız için ve buradan...
+
+304
+00:59:03,411 --> 00:59:16,251
+Hem güvenliği sağladığımız için hem de farklı kaynaklar olmadan blockchain'i devam ettirme şansımız olmadığımız için burayı crowdsourcing uygulaması olarak rahatlıkla blockchain'i de görebiliriz.
+
+305
+00:59:16,884 --> 00:59:44,023
+Peki, burada da bir enerji problemi ortaya çıkıyor ve şu an dünyanın blockchain ile ilgili en büyük derdi bu. Çünkü biz gerçekten güvenilir bir yapı oluşturmaya çalışırken çok fazla enerji tüketen bir mimari aslında oluşturduk. Buna bir çözüm bulma peşindeler. Güzel, crowd sourcing ve sensing'e söyleyebiliriz. Bunlar daha çok crowd sourcing diyelim.
+
+306
+00:59:44,884 --> 00:59:58,064
+Bir de bu işin crowd sensing kısmı var. Birbirinden çok ayırmıyorum ama gene de crowd sensing üzerinden düşünürseniz belki aklınıza gelecektir. Rahmetullah bir şey katabilir misin? Crowd sensing'e problemlerine.
+
+307
+00:59:58,064 --> 01:00:06,324
+En ciddi problemi güvenlik ve gizlilik diye düşünüyorum. Yani veri gizliliği.
+
+308
+01:00:09,268 --> 01:00:16,468
+Bunun dışında şey olarak uygulama bazında baktığımız zaman da verinin doğrulanabilir olması.
+
+309
+01:00:16,748 --> 01:00:24,668
+Tamam, çok güzel. En güzel şeylerden bir tanesi, en kritik olanlardan bir tanesi, evet güvenlik önemli ama verinin güvenilirliği.
+
+310
+01:00:25,748 --> 01:00:33,128
+Neden verinin güvenilirliği? Siz bir ürün olacaksınız. Ürünle ilgili oraya girip fake bir yorum yazıldığında ürünü aldığınızda hayal kırıklık olabilir.
+
+311
+01:00:33,780 --> 01:00:51,840
+Ya da bir otele gideceksiniz. Otelin kendi işletmecileri 10 tane yorum yazmış. 10 tane yorumdaki arkadaşlarına yazdırmış. Otel 10 üzerinden 10 almış. 9.8 almış. Bakıyorsunuz harika. Fotoğraflar çok güzel. Bir gidiyorsunuz. Hiç de düşündüğünüz gibi değil.
+
+312
+01:00:58,132 --> 01:01:07,772
+Özellikle manipülasyon noktası çok açık. Bu manipülasyonu gidermenin yolları var. Bunu konuşuyor olacağız.
+
+313
+01:01:09,332 --> 01:01:23,332
+Hocam peki şey olabilir mi? Mesela bizim istediğimiz kitle dışında da veriler toplamış olabiliriz. Orada datanın yönetimi falan problem oluyor.
+
+314
+01:01:23,860 --> 01:01:25,800
+Biraz daha açabilir misin? Tam anlamadım.
+
+315
+01:01:25,820 --> 01:01:37,139
+Mesela bizim uygulamamız var elimizde ve gençlere yönelik dedik. Ama biz bunu kontrol edemeyebiliriz. Çok yaşlı insanlar da girebilir. O kitleye katılabilir.
+
+316
+01:01:37,139 --> 01:01:40,139
+Bu sıfır otomatikman topladığımız veri...
+
+317
+01:01:40,532 --> 01:01:49,711
+Yanlış oluyor yani. Biz gençlere yönelik çalışma yapıyorduk ama uygulamada yaşlıların da topladığımız veriler olmuş oldu.
+
+318
+01:01:49,992 --> 01:01:59,251
+Evet, siz onu oraya yazsanız da bu yaş grubu işte diyelim görüşlerini paylaşsın deseniz de bunun kontrolünü yapma şansınız yok.
+
+319
+01:01:59,251 --> 01:02:06,251
+Yani çok zor. Ancak örneğin bunu e-devlet gibi...
+
+320
+01:02:06,643 --> 01:02:23,463
+Belirli bir sertifika ya da güvenilir bir merkez, noter diyelim. Üzerinden ancak bunları, o uygulamayı tanımlarsanız orada kişinin TC kimlik numarası olduğu için kendi onunla girmek zorunda olduğu için bunları kontrolü yapma şansınız var.
+
+321
+01:02:29,940 --> 01:02:55,360
+E-Devlet üzerinden login olunacak şekilde gerçekleştirilmeye başladı. Ve bu birazcık bu söylediğin sıkıntıları engellemek için. Tabii önemli birkaç tane daha problem var ama şu anda saat 2.07 olmuş biraz uzun sürmüş bu kısım. Bir 10 dakika ara verelim. 10 dakikadan sonra devam edelim istiyorum. 10 dakika sonra görüşmek üzere arkadaşlar.
+
+322
+01:14:59,956 --> 01:15:10,775
+Evet arkadaşlar, yeniden merhaba. Merhaba. İkinci bölümle başlıyoruz. Biz burada,
+
+323
+01:15:11,855 --> 01:15:19,816
+Graat Sensing problemlerini konuşuyorduk. Siz enerji probleminden bahsetmiştiniz. İki verinin güvenirliğinden bahsetmiştik.
+
+324
+01:15:19,816 --> 01:15:26,716
+Üç, imbalans data. Yani dengesiz veri. Bu neye ifade eder?
+
+325
+01:15:29,811 --> 01:15:37,891
+Bir tarafta yoğunlaşmış data var. Örnek verebilir misin peki bir problem üzerinde?
+
+326
+01:15:47,956 --> 01:15:49,796
+Başka bir arkadaşımız örnek verebilir mi?
+
+327
+01:15:50,224 --> 01:16:15,123
+Hocam, zamana bağlı olarak alınmış örneklerde bu yaşanabilir. Örneğin bir şeyin gerçekleşme olasılığı sabah saatlerinde daha fazladır. Sabah tarafında bir yığılma olur. Akşam alınan örneklerde bu daha az yürülebilir. Aslında ikinci bir parametre bağlılık durumuna bakmış oluyoruz bu noktada. Bu da sıralamayla aslında temsil edilmiş oluyor. O noktada aslında [öğrenci]'in de söylediği gibi bir tarafa bir yığılma söz konusu oluyor bu durumda.
+
+328
+01:16:15,844 --> 01:16:18,123
+Şöyle ifade edelim isterseniz.
+
+329
+01:16:18,224 --> 01:16:38,703
+Doğru söyledikleriniz. Mesela trafik uygulamasında belli lokasyonlardan çok sık araç geçmez. Belli lokasyonlarda da belli saatlerde çok sık araç geçer. Oralarda veri yığılması yaşanır. Diğer tarafta da eksik veri olur. Bu bir problemdir.
+
+330
+01:16:44,595 --> 01:16:59,315
+Aslında büyük bir problem değildir ama verinin eksik üretilmesi büyük bir problemdir. Bu veri dengesizliğini karar verirken de zaman zaman karar verme aşamasında da veri dengesizliğinin bize yarattığı problemleri biliyoruz.
+
+331
+01:16:59,876 --> 01:17:02,036
+Unreliable Data, bunu konuştuk zaten.
+
+332
+01:17:03,376 --> 01:17:08,315
+Manacious Data. Yani güvenilir olmayan datayı da malicious data arasında...
+
+333
+01:17:08,692 --> 01:17:12,631
+Farkı ne olabilir? Onu sorayım size. Aslında ikisi de aynı kapıya çıkıyor da.
+
+334
+01:17:17,908 --> 01:17:19,488
+Bunun arasında bir fark var mıdır?
+
+335
+01:17:19,868 --> 01:17:27,408
+Malicious data, kasıtlı olarak sistemi yanıltmak için yanlış bir şekilde verilmiş, semiklenmiş veri.
+
+336
+01:17:30,808 --> 01:17:35,588
+Hocam, birinde aslında reliability sorunu var, birinde safety sorunu var diyebiliriz.
+
+337
+01:17:35,847 --> 01:17:44,468
+Hani hep biz güvenlik diye ikisini de ifade ediyoruz ama, birinde gerçekten sistemi yanıltmaya yönelik malicious olan da bir aksiyon olma durumu söz konusu.
+
+338
+01:17:45,427 --> 01:18:07,587
+Ben bu ayrımı şu şekilde yorumluyorum. Söylediğiniz gibi Maracious Data bilinçli kasıtlı bir şekilde sistemi yanıltmaya yönelik paylaşımlar ya da Crowd'un ürettiği bilgi. Diğerinde biraz daha örneğin sensörün ürettiği bir veri düşünün.
+
+339
+01:18:08,340 --> 01:18:25,239
+Sensörün hatalı veri üretme ihtimali vardır. Ya da kullanıcının kasten olmayan ama bir ürün hakkında yaptığı yorum. Güvenirlik açısından o kişinin o konuda eksper olmaması.
+
+340
+01:18:25,747 --> 01:18:41,587
+O konuyla ilgili yaptığı yorumun güvenilmez olmasını getirir. Yani burada biraz daha şu ön plana çıkıyor. Birinde kasıtlı bir şekilde yırtmak hedefi var. Diğerinde üretilen verinin hatalı olma ihtimali var.
+
+341
+01:18:43,539 --> 01:19:05,880
+Kasıt olmadan. Sensörlerin bozuk olması gibi. Sensörlerin bozuk olması gibi, aynen öyle. İşte bir telefonun sensörünün normalde 981 değer üretmesi gerekirken, yer çekilme için, 881 değer üretmesi gibi. O sensörün güvenilir olmadığını bize gösterir. Bunu algılamak kolay mıdır? Bunun çözümleri var. Unbalanced Crowd.
+
+342
+01:19:10,431 --> 01:19:11,811
+Farkı var mı sizce?
+
+343
+01:19:13,051 --> 01:19:22,471
+Bu şey olabilir mi? Genç nüfus daha fazla, kullanımda genç nüfus otomatikman kullanım oranı daha fazla çıkacak.
+
+344
+01:19:23,072 --> 01:19:26,791
+Evet, güzel bir örnek aslında şu anlamda.
+
+345
+01:19:26,791 --> 01:19:33,707
+Burada crowd'un yapısını öyle bir oluşturmuşsunuzdur ki, burada artık üretilecek verinin...
+
+346
+01:19:33,811 --> 01:19:55,271
+Dengesiz olmasından öte, aslında veriyi üretecek kravdın dengesiz olması problemi vardır. İkisi birbirinden farklı. Birinde verinin dengesiz üretilmesi, diğerinde katkı sağlayacak grubun ya da veriyi üretecek grubun dengesiz dağılımı.
+
+347
+01:19:56,492 --> 01:20:00,000
+Buna şey de diyebilirsiniz, bir bölgede yaşayanların sayısını...
+
+348
+01:20:00,000 --> 01:20:05,159
+Fazla Olması, kırsal bölgede yaşayanların olmaması gibi de bir yorum katabilirsiniz.
+
+349
+01:20:05,479 --> 01:20:14,860
+Şey var mesela, anket çalışmaları mesela. Belli bir bölgede yaptığı için ya da belli bir ortamda yaptığı için otomatik kitle de yorumlar.
+
+350
+01:20:14,860 --> 01:20:16,800
+Çok güzel, çok doğru bir örnek. Aynen öyle.
+
+351
+01:20:17,600 --> 01:20:24,860
+Lank of crowd. Crowd'ın olmaması. Bu bizim için problem. Bir ürünün...
+
+352
+01:20:26,003 --> 01:20:34,604
+Yorumunun girilmemiş olması, bir lokasyona gidilmemiş olması, başka ne söyleyebiliriz?
+
+353
+01:20:38,644 --> 01:20:43,264
+Ben göremiyorum ama şey mi aşağıda kaldı. Pardon, şimdi?
+
+354
+01:20:44,084 --> 01:20:44,344
+Tamam.
+
+355
+01:20:45,684 --> 01:20:47,084
+Lack of crowd.
+
+356
+01:20:47,664 --> 01:20:50,744
+Yaygınlaşma sorunları genelde buna yol açar gibi geliyor.
+
+357
+01:20:51,444 --> 01:21:05,784
+Yani bu bir yazılım olabilir, bu bir ürün olabilir ya da dediğiniz gibi insanların hiç gitmediği bir yer olabilir. İnsanlarla temasın az olduğu noktada ne varsa artık biz ne yapıyorsak bu duruma sebep olabilir gibi hissediyorum.
+
+358
+01:21:05,784 --> 01:21:18,784
+Evet, aynen öyle. Bu noktada kaynakların ya da insanların az olabileceği her nokta bizim için problem. Buraya Türkiye'nin coğrafi koşullarını düşündüğünüzde özellikle Doğu Anadolu ve Güney Doğu Anadolu'daki...
+
+359
+01:21:19,444 --> 01:21:22,804
+bölgelerden toplanacak
+
+360
+01:21:23,475 --> 01:21:44,716
+Bilginin de lack of crowd sorunu var. Çünkü oralarda çeşitli sebeplerden dolayı sizin farklı noktalardan, coğrafi, kırsal kesimden veri toplama olasılığınız biraz daha düşüyor. Çok fazla sayıda insan orada bulunamadığı için. Artık kaynak da oraya o kadar akmadığı için.
+
+361
+01:21:44,716 --> 01:21:51,475
+Baz istasyonunda, kilometreler bazında bir baz istasyonu olmamasından dolayı oradan veri toplayamamanın anlamına geliyor. Bu bütün her şey.
+
+362
+01:21:51,475 --> 01:22:11,475
+Her şeyi etkiliyor. Siz oradan bir lokasyon bilgisi gönderdiğinizde güvenilirliği de düşüyor. Çünkü lokasyon bilginizi paylaşırken en azından 3 tane baz istasyonundan gelen sinyal gücü üzerinden sizin lokasyon bilginiz hesaplandığı için trianglayışı mantığı kullanılarak aslında...
+
+363
+01:22:12,307 --> 01:22:25,288
+Öyle bir ortamda daha geniş bir aralıkta olduğunuz tahmin ediliyor ve bu da ekürisliği düşürüyor. Bunlar problemlerimiz. Peki bu problemleri nasıl çözebiliriz?
+
+364
+01:22:31,315 --> 01:22:58,315
+Bir tanesini siz söyleriniz mesela. E-Devlet'le oturum açılan uygulamalar falan diyerek mesela buradaki işte Melisius data'yı falan halletmiş oluyoruz. Artık kitleyi de yönetmiş oluyoruz. Hani bu ambalans kitli, dengesiz dağılımlı kitleyinin de önüne geçebiliyoruz. Mesela belli bir orana geçtikten sonra mesela belli bir yaştan fazlasını sisteme dahil edemeyebiliriz.
+
+365
+01:22:59,315 --> 01:23:07,075
+Böyle çözümler de yapılabilir. Bu ama sizin dediğinizden doğru çıktı. E-Devlet oturumundan doğru.
+
+366
+01:23:08,195 --> 01:23:24,315
+Evet ama tabii çok doğru bağladığın olayı E-Devlet gibi kontrollü mekanizmalar üzerinden veriyi toplamak ya da oradan login mekanizması yaratarak veriyi almak, kendi identitinizi...
+
+367
+01:23:45,235 --> 01:23:47,095
+Ya da Airbnb ne yapıyor?
+
+368
+01:23:48,095 --> 01:23:51,836
+Hocam, insanların genelde sahip olduğu bir tane değerli cep telefonu numarası var.
+
+369
+01:23:51,956 --> 01:23:53,996
+Aslında bunun üzerinden doğrulamış oluyoruz.
+
+370
+01:23:54,996 --> 01:24:00,255
+Posta biraz daha manipüle edilebilir bir noktada ancak cep telefonu hala daha güvenli diyebiliriz.
+
+371
+01:24:00,255 --> 01:24:08,256
+Yani kişinin bir kere gerçek bir kişi olduğu ya da en azından bir kişinin beş tane account'u...
+
+372
+01:24:08,595 --> 01:24:34,635
+Engellemek yerine en fazla 1-2-3 cep telefonu bilgisi girebileceğini varsayalım. Bir kere bu bir son dönemde en azından e-mail'de yaşanan sıkıntının önüne geçmiş durumda. Hatırlarsanız eskiden kullanıcı adı ve şifrede istediğiniz kullanıcı adını verebiliyordunuz. Ama yıllar içinde evrildi. Önce e-posta adresi oldu ki hala devam ediyor. Şu anda cep telefonu bilgisi kullanılıyor.
+
+373
+01:24:36,595 --> 01:24:53,595
+Peki, LOA servisleri yani Level of Assurance denilen bir kavram var. Bu konuyla ilgili bir bilginiz var mı? Mesela OTP mesajları gelir. OTP mesajları üzerinden siz bir siteye giriş...
+
+374
+01:24:54,612 --> 01:25:12,692
+Bu bilinen en kolay yöntemlerden biridir ve SMS ile yürür. Ama bunun Loa 2, Loa 3 ve Loa 4 versiyonu var. Nereye doğru gidiyor? Bilginiz var mı? Fikriniz var mı? Olay.
+
+375
+01:25:13,363 --> 01:25:16,283
+En azından bunu da ders kapsamında sizinle paylaşmış olayım.
+
+376
+01:25:16,863 --> 01:25:21,783
+Hocam, doğru anlamamış olabilirim belki ama biz buna two-factor authentication diyoruz normalde.
+
+377
+01:25:21,903 --> 01:25:31,083
+Three-factor, four-factor ile aynı anlamı mı geliyor acaba? Yani aynı anda sırasıyla diyeyim ya da hem cep telefonunu doğrulattı hem de mail adresinden doğrulatması gerekiyor.
+
+378
+01:25:31,083 --> 01:25:41,363
+Aynı anlama gelmiyor. O söylediğin two-factor authentication, bizim authentication mekanizmamızın başka bir mimari.
+
+379
+01:25:41,363 --> 01:25:54,023
+Burada biz daha çok cep telefonları üzerinden aslında otantikasyonumuzu sağlama noktasına iyice evrilmiş durumdayız, farkındaysanız.
+
+380
+01:25:54,623 --> 01:26:04,983
+Bazı blockchain borsalarında beklenmiştim ben. Google'ın otantikate şirketi. Öyle bir uygulaması üzerinden tekrar otantikate etmenizi istiyor.
+
+381
+01:26:09,363 --> 01:26:20,383
+Tekrar o borsaya aktif olmak çok zorlaşıyordu. Bir başıma geldi, baya mail mail atarak tekrar aktif edilmesi gerekti.
+
+382
+01:26:21,171 --> 01:26:38,791
+Ben, yani bu da bir tabii ki katkı ama size çalışma prensibini söyleyeyim. Artık öyle bir noktaya doğru ilerliyoruz ki sim kart üzerinden otantikasyon noktasına gidiyoruz.
+
+383
+01:26:38,791 --> 01:26:48,791
+Sim kartın manipülasyonu cep telefonu, akıllı telefonun yazılımını manipüle etmekten daha zor bir operasyon. Bu yüzden...
+
+384
+01:26:49,171 --> 01:26:58,171
+Operatörlerin ileride çeşitli servisler var. Bu servisleri incelerseniz göreceksiniz. Loa 4 üzerinde.
+
+385
+01:26:59,471 --> 01:27:18,471
+Üç de tabii bunların şansına giriyor. Buradaki GCM operatörlerinin üye olma koşuluyla belirli bir servise bağlanarak sizin cep telefonunuza gelen sim kart düzeyinde şifrelenmiş bilgileri onaylamanız doğrultusunda...
+
+386
+01:27:19,123 --> 01:27:40,123
+Alışveriş sitelerine, yarın bir gün bankalara, işte operatör sayfalarına girişleriniz gerçekleşiyor olacak. Bu yönde bir çalışma var. Buna bakabilirsiniz. Güzel bir alana olduğunu düşünüyorum. Özellikle sim kartların artık yavaş yavaş...
+
+387
+01:27:40,979 --> 01:27:42,979
+Ne diyelim, formları da değişiyor.
+
+388
+01:27:43,539 --> 01:27:45,079
+Bir şey sorabilir miyim?
+
+389
+01:27:45,079 --> 01:27:45,259
+Tabii.
+
+390
+01:27:45,359 --> 01:27:50,879
+Dediğinizde mesela TÜRSE'nin uygulamasına girerken mesaj gibi de değil.
+
+391
+01:27:51,000 --> 01:27:52,459
+Bir pop-up gibi bir şey açıyor.
+
+392
+01:27:52,819 --> 01:27:53,019
+Aynen.
+
+393
+01:27:53,539 --> 01:27:54,939
+O verilebilir mi diyecektim?
+
+394
+01:27:55,039 --> 01:27:56,079
+Kesinlikle verilebilir.
+
+395
+01:27:56,919 --> 01:27:58,979
+Burada aslında...
+
+396
+01:28:00,948 --> 01:28:28,747
+Mobile Connect servisi üzerinden bu operasyon gerçekleşiyor. Ama Türksel'in bildiğim kadarıyla o servisi Loa 4 değil. Ama gene bir orada sim kart düzeyinde olup olmadığını bilmediğim, çok yanlış bir şey söylemek istemiyorum Türksel'in servisi için, bir mekanizma var ve OTP servisinden daha güvenli bir servis. Çünkü muhtemelen gene sim kartı kullanıyor.
+
+397
+01:28:28,948 --> 01:28:51,287
+OTP servisi, SMS olduğu için over the air giden bir mesaj var. Bu mesajdaki bilginin alınma ihtimali her zaman için var. Cep telefonlarında security tarafı aslında oldukça önemli. Gün geçtikçe daha dikkat çekiyor. Bu alanda da test çalışması yürütmeyi düşünebilirsiniz.
+
+398
+01:28:53,328 --> 01:29:02,768
+Geri gelmişken bu fikri sizinle paylaşmış olayım. Çünkü bu tür bilgi sahibi kişilere ihtiyaç duyuyor sektör.
+
+399
+01:29:03,648 --> 01:29:13,648
+Dönelim biz kendi mevzumuza. Burada veriyi veren kişinin verifi edilmesiyle başladık olaya. Cep telefonlarına kadar geldik.
+
+400
+01:29:13,648 --> 01:29:17,047
+Ama ben daha çok şu noktadayım.
+
+401
+01:29:17,619 --> 01:29:38,619
+Cep telefonuyla da kendinizi verifay etseniz, ben otelle ilgili bir ya da ürünle ilgili bilgi girişi yaparken o otelin sahibini tanıyor olabilirim. O ürünü satan firmada çalışıyor olabilirim. Benim buraya gireceğim değerler...
+
+402
+01:29:39,572 --> 01:29:54,272
+Benim ürünümü satmak için daha böyle pozitif olabilir. En iyi niyetle diyelim. Yüksek vermiş olabilir notları. Bunu şu andaki yapılar nasıl dengeliyor? Ya da benim verdiğim yorumun tarihinin bir önemi var mı?
+
+403
+01:29:55,132 --> 01:29:58,472
+Satın almadan yorum yapılmıyor bazı sistemlerde mesela.
+
+404
+01:30:00,000 --> 01:30:04,219
+O satın alındıktan belli bir süreye kadar yorum yapılabiliyor. Kapanıyor.
+
+405
+01:30:04,779 --> 01:30:08,659
+Aynı şekilde otellerde falan da benim bildiğim öyle bir mekanizma var.
+
+406
+01:30:09,059 --> 01:30:10,779
+Hotel Z'de görmüştüm sanırım.
+
+407
+01:30:11,339 --> 01:30:13,460
+Kalmadan puanlandırma yapamıyorsunuz.
+
+408
+01:30:13,460 --> 01:30:15,279
+Evet. Bu bir çözüm.
+
+409
+01:30:16,139 --> 01:30:22,579
+Çok güzel. Gayet güzel bir bakış açısı. Bir verifiye mekanizmasıdır. Başka?
+
+410
+01:30:25,652 --> 01:30:37,652
+Yani kullanıcının da bu çerçevede bir puanı olabilir belki. Çünkü sistemi başka yerlerde de kullanması gerek değilse hani ne bileyim beş otelde kalmışsa bir adam daha güvenilirdir.
+
+411
+01:30:37,652 --> 01:30:52,192
+Çok güzel, harika bir nokta. Yani çeşitlilik daha ne kadar dağılmış, kullanıcı ne kadar geziyor ve ne kadar yorumuna güvenebiliriz. Bir, hakikaten çok yerde kalmış mı? Bu kullanıcının weightini arttırır.
+
+412
+01:30:52,756 --> 01:31:00,376
+Ama çok yerde kalmış olması yetmiyor. Bir de kullanıcının yorumlarına bakmak lazım. Niye?
+
+413
+01:31:01,095 --> 01:31:06,756
+Ya tabii ki olabilir ama her yere 10 verdiyse, her yere 2 verdiyse, 1 verdiyse...
+
+414
+01:31:06,880 --> 01:31:29,680
+Ya bu çok polyanna kullanıcı ya da gerçekten inanılmaz otellerde kalıyor. Ya da her yere iki verdiyse o kadar hiçbir şeyden memnun olmuyor ki. Ben bazen yorumlarda okuyorum. Adam otele altı puan vermiş. Her şey çok güzel demiş. İşte kettle yoktu demiş. Arkadaş kettle yoktu diye puan onun üzerinden altı mı verilir yani? Şimdi tabii bu tür hikayeler olabiliyor.
+
+415
+01:31:30,144 --> 01:31:53,203
+Bu mekanizmalar şimdi size şey gözüküyor olabilir. Hani böyle ya arkadaş yüksek lisans dersinde de ama enteresan konuları konuşuyoruz. Teknik bir tarafını göremiyoruz diyebilirsiniz ama gerçekten bugün sistem analizi yaparken ve crowdsourcing uygulamaları kurarken bunları o kadar iyi hesaplıp o kadar iyi implement etmeniz lazım ki sizin yarattığınız sisteme olan inan çok çok önemli.
+
+416
+01:31:54,064 --> 01:31:58,064
+Biliyorsunuz en tane işte otel satış uygulaması ya da TripAdvisor gibi.
+
+417
+01:31:58,144 --> 01:32:23,043
+Ama bunların bazıları biraz daha güvenilir. Bazıları biraz daha çok bakılır. Herkesin değişiktir. Ben şu anda bir isim vermeyeceğim ama mesela aralarında puan farkı da vardır. Yani bir tanesine girersiniz o kadardır, diğerine girersiniz daha yüksektir puanı. Sonuç itibariyle dönecek olursak ne kadar çok kullanıcı oyladıysa.
+
+418
+01:32:23,667 --> 01:32:35,907
+Oylayan kullanıcı ne kadar çok oylama yaptıysa ve veri dağılımı ne kadar yüksekse bunların güvenilirliği konusunda da daha net bir şeyler söyleyebiliyoruz.
+
+419
+01:32:37,027 --> 01:32:47,827
+Artı bir şey daha var. Verinin güncelliği. Çok kritik. Niye kritik?
+
+420
+01:32:51,731 --> 01:33:01,592
+Hocam değişken bir şey. Yani yorum bile zamana göre farklılığı gösterebilir. Önceden çok iyi olan yer artık çok kötü olabilir. Önceden çok kötü olan bir yer artık iyiye gidiyor olabilir.
+
+421
+01:33:02,131 --> 01:33:28,631
+Hocam şunu da eklemek istiyorum. Aslında bütün bu yorum mekanizmasının çöktüğü bir nokta var. Kullanıcılar kendi içlerinde bir lojik çıkarma eğilimindeler. Yani şöyle bir şeyi çoğu zaman görebilirsiniz Google Play'de. Aslında çok iyi uygulama üste çıksın diye bir yıldız verdim. Bütün sistemi aslında bozan ve bu kadar insan da buna evet çok yararlı yorumu veriyor. Sistem sanıyor ki uygulama çok kötü ama aslında gerçek durum uygulama çok daha iyi, çok kat kat daha iyi.
+
+422
+01:33:30,131 --> 01:33:31,771
+Kullanıcılar bir noktada.
+
+423
+01:33:32,011 --> 01:33:34,451
+Şeyi tam anlayamadım. Kaçırmış olabilirim.
+
+424
+01:33:34,991 --> 01:33:37,131
+Daha yukarı çıksın diye bir yıldız verdim.
+
+425
+01:33:38,031 --> 01:33:39,612
+Derken gözüksün diye hocam.
+
+426
+01:33:40,112 --> 01:33:41,351
+Gözüksün diye hocam.
+
+427
+01:33:41,951 --> 01:33:45,371
+O kadar insan da çok yararlı bulunca en üste çıkıyor yorum.
+
+428
+01:33:46,100 --> 01:33:53,640
+Bakıyorsunuz aslında puan değerolar bir ama yorumun içine bakıyorsunuz mükemmel bir uygulama diyor. Yani insanlar da buna puan vermiş oluyor.
+
+429
+01:33:54,060 --> 01:33:55,340
+Tamam okey gayet iyi anlı düşünüyorum.
+
+430
+01:33:55,340 --> 01:34:11,440
+Veya topluluk olarak mesela sırf o uygulamanın trollenmesi için, puanların düşmesi için şey yapılabiliyor. Bu mesela işte Hintlilerin TikTok'a bir puan verip işte dört küsur bilmem ne puandan işte ikiye düşürmesi gibi.
+
+431
+01:34:12,372 --> 01:34:19,812
+Yani evet, şimdi çok haklısınız. Güzel bir noktaya geldiniz. Olayı biraz daha böyle abstrakt hale getirirsek.
+
+432
+01:34:19,812 --> 01:34:35,532
+Yani işin ilginç tarafı bunlar gerçek kullanıcı. Şey de yapamıyorsun. Yani veriyi manipüle ediyorlar. Troll veri ama şey olarak da ayıklayamazsın. Çünkü gerçek kullanıcı ve adamlar indirmişler. Belli bir puan şeyi vermişler.
+
+433
+01:34:36,500 --> 01:35:03,380
+Şimdi çok güzel bir noktaya geldiniz. Yani bu işin en üst tarafına çıktığınız zaman bu işler yalan dolan, gerçek olan, hayatın ta kendisi noktasına geliyoruz tabii ama bu birazcık savaşa dönmüş durumda aslında bakarsanız. Yani ülkeler arası olabilir, bu firmalar arası olabilir. İşte kime Apple'cı, kime Google'cı inancını alır. Biraz fanatizm de işin içerisine girecek.
+
+434
+01:35:03,796 --> 01:35:26,656
+Bu kullanıcılar sosyal medyada yaralarak birçok şeyi etkileyebildiklerini gördükleri için artık belirli ortak hareketler var. Bu ortak hareketleri belki akıllı algoritmalarla inceleyip onları filtreden geçirerek bir puanlama mekanizmasına doğru gideceğiz. Bu gerçek.
+
+435
+01:35:27,119 --> 01:35:51,119
+Belki sıfır bir risk olmayacak ama her geçen gün farkındaysanız yeni çözümler ortaya çıkıyor. Güncelliğini söyleme sebebim de şuydu. Bir restoran dediğiniz gibi çok iyi olabilir, zaman içinde bozulabilir. Kötüyken zaman içinde iyileşebilir ya da formunu koruyor olabilir. Bunların hepsini doğru analiz edilerek...
+
+436
+01:35:51,536 --> 01:36:10,335
+Farklı puanların olması lazım. Farklı kategorilerin olması lazım. Bu kategoriler neticesinde ileride muhtemelen değerlendirmeleri takip ediyor olacağız. Şimdi en son çıkan uygulamayı duymuşsunuzdur. Bunu geçen hafta paylaştım galiba ama sizinle paylaştığımı hatırlamıyorum. [öğrenci], Yorbit.
+
+437
+01:36:12,675 --> 01:36:13,675
+Evet hocam.
+
+438
+01:36:14,644 --> 01:36:16,203
+[öğrenci], sen de hatırlıyorsun.
+
+439
+01:36:16,363 --> 01:36:17,503
+Aynen, aynen hocam. Not almış.
+
+440
+01:36:17,503 --> 01:36:19,144
+Siz duydunuz mu arkadaşlar Your Bit'i?
+
+441
+01:36:19,443 --> 01:36:20,783
+Yok hocam, ben duymadım.
+
+442
+01:36:21,144 --> 01:36:22,804
+Yok hocam, ben de duymadım.
+
+443
+01:36:23,224 --> 01:36:40,663
+Y-O-O-R-Bit. Your Bit. Bu bildiğiniz Trip Advisor'a benzeyen, IMDB'ye benzeyen. Yani aslında bütün kategorilerin yer aldığı film, müzik, restoran, yemek.
+
+444
+01:36:41,395 --> 01:37:08,815
+İstediğiniz lokasyon vesaire, etkinlik alanı gibi puanlandırmaya yapılan bir startup şirket. Ne kadar başarılı olacağımız zaman içerisinde göreceğiz ama hala ciddi bir potansiyel var ki Getirin kurucusu böyle bir startup şirketle yola çıkmış. İzleyip görmek lazım. Vaktiniz olduğuna bakarsınız.
+
+445
+01:37:09,332 --> 01:37:17,132
+Tamamen bu Crowdsensing'in birebir ruhuna uygun bir uygulama şu an için yapmış gözüküyorlar.
+
+446
+01:37:22,003 --> 01:37:34,943
+Burada çeşitli crowdsourcing ve sensing oyunları var. Bunlar şu an çok kritik değil. Slide'ları sizle paylaştığımda bakarsınız.
+
+447
+01:37:35,863 --> 01:37:41,884
+Group Level Incentive diye bir yaklaşım var. Incentive neydi? Az önce görmüştük.
+
+448
+01:37:51,091 --> 01:38:16,051
+Teşvik indir. Evet. Biz daha önce bireysel bazdaki teşvik mekanizmalarını, motivasyon mekanizmalarını gördük. Bu işi grup level şeklinde de yapabilirsiniz. Nasıl yapabilirsiniz? Yani biraz önce dedik ya para kazanıyorsunuz, servis hizmeti alıyorsunuz, eğleniyorsunuz ya da ün kazanıyorsunuz. Peki bu bireysel bazda değil de grup seviyesinde nasıl alınır?
+
+449
+01:38:21,939 --> 01:38:24,399
+Arkadaşını getirelim, puan kampanyası geldim hocam.
+
+450
+01:38:26,499 --> 01:38:29,859
+Tam olarak değil. Güzeldi ama.
+
+451
+01:38:33,876 --> 01:38:39,655
+Bölge, memleket yarışmaları yapıyorlar ya. İram'da, Facebook'ta o gibi bir şey herhalde.
+
+452
+01:38:39,655 --> 01:38:50,555
+Yani herhalde İstanbul'da yapsalar Sivaslılar kazanır diye düşünüyorum. En çok o gündeme gelir İstanbul'da çok Sivaslılar diye.
+
+453
+01:38:58,003 --> 01:39:09,884
+Servis mekanizmasına ya da böyle bir crowdsourcing application'ına grup olarak dahil olmanız ve buna grup olarak bilgi sağlamanız ve bundan grup olarak yararlanmanızı gösteren bir mekanizma.
+
+454
+01:39:09,884 --> 01:39:20,884
+Nedir? Bir aileyi düşünün. Anne, baba, çocuk, üç kişi olsun ya da kardeş de olsun, dört kişi olsun. Bir yorum yaptığı zaman...
+
+455
+01:39:21,460 --> 01:39:42,280
+Diğer kişiler de bu kişinin yaptığı, kazandığı mekanizmadan faydalanabiliyorlar. Örneğin park uygulaması olsun. Bir yere gidiyorsunuz, park ediyorsunuz. Park yerinden ayrılırken lokasyon bilgisi paylaşıyorsunuz. Bu sizin daha sonra boş park yeri ararken boş park yeri bilgisini sistemden çekmenizi sağlıyor. Çünkü sisteme katkıda bulundunuz.
+
+456
+01:39:43,220 --> 01:40:06,220
+Buna katkıda bulundunuz. Bir kişi bunu gün çok hızlı, çok gezen bir kişi. İşi gereği günde beş defa katkıda bulundu. Aileden biri bu kişinin bu beş defa katkıda bulunma mekanizmasında herhangi bir yere gittiğinde onun kredilerinden faydalanarak bu grup mantığını kullanıp herkesin daha fazla...
+
+457
+01:40:06,260 --> 01:40:29,460
+Katkı sağlamasını mümkün hale getiriyorsunuz. Niye? Çünkü bir kez faydalanıyorsunuz. O zaman diyorsunuz ki ben yaparsam işte benim yakınım da faydalanacak. Arkadaşım da faydalanacak. Böylece grup seviyesinde bir mekanizm oluşturursanız sizin birikiminiz daha çabuk artıyor ve daha fazla kişiye aslında bu işi ulaştırmış oluyorsunuz. Böyle çözümler de var.
+
+458
+01:40:30,804 --> 01:40:36,564
+Hocam bunu ticari model olarak düşünebiliriz sanki. Spotify, Netflix biliyorsunuz daha çok buna yönelmiş.
+
+459
+01:40:36,564 --> 01:40:53,804
+Çok güzel. Çok doğru. Güzel bir benzetme oldu. Benim aklıma gelmemişti. Son dönemde benim de takip ettiğim iki önemli şey kuruluş bu konuda bu modeli kullanmaya çalışan ve bu modeli kullanırken de...
+
+460
+01:40:54,015 --> 01:41:14,735
+Bu konuda oldukça ticari anlamda avantajlı bir durum yarattığı için kullanıcıya kullanıcı bunu tercih ediyor. Aynı mantık burada da geçerli. Uygun bir iş modeli oluşturabilirseniz burada bir çözüm, crowdsourcing çözümü bu yaklaşımı kullanmakta fayda var.
+
+461
+01:41:19,252 --> 01:41:41,252
+Hangi servisleri alabilirsiniz? Bunlardan bahsediyor. Mesela ikinci sırada Parking Information Driver'lara sağlanması, güzel bir servis paylaşımı, etraftaki videoların bilgisinin alınması ya da...
+
+462
+01:41:41,363 --> 01:42:04,363
+Product Price Sharing Service. Mesela en sevdiğim şeylerden bir tanesidir. Yeni nesil havalimanını sormuştum hatırlıyorsanız size sınavda. Mesela bir örnek vereyim. Çok sık seyahat eden biriyseniz, yurt dışına çok sık çıkıyorsanız ve işte çeşitli ihtiyaçlarınızı duty free'den...
+
+463
+01:42:05,203 --> 01:42:18,383
+Alma durumunuz söz konusuysa ve bunun daha uygun fiyatta olduğunu görüyorsanız, genelde oradan temin etme yolla gidiyorsunuz. Çikolata, parfüm, makyaj malzemesi vs. gibi düşünebilirsiniz.
+
+464
+01:42:20,003 --> 01:42:29,983
+Buradaki eksiklik nedir? Gezan birinin yaşadığı eksiklik. Ya da her seferinde teredditte kaldığı nokta. Ne olabilir?
+
+465
+01:42:32,372 --> 01:42:34,692
+Ürünün gerçekten ucuz olduğuna inanmak mı?
+
+466
+01:42:35,351 --> 01:42:40,572
+Ürün gerçekten gittiği havalimanında mı daha ucuz yoksa döneceği havalimanında mı daha ucuz?
+
+467
+01:42:40,952 --> 01:42:47,311
+En büyük sorulardan bir tanesi budur. Ya da üç tane şeyle uğrayacaksa, uçuşlarında böyle bir ihtimal varsa hangisine daha uygun?
+
+468
+01:42:48,231 --> 01:42:51,372
+Şimdi hakikaten arada çok ciddi farklar olabildiği için...
+
+469
+01:42:52,275 --> 01:43:08,615
+Bunu sorgulama şansınız yok. Duty Freed'lerin öyle bir mekanizması bildiğim kadarıyla son döneme kadar yoktu yani. 3-5 tane ürünün belki fiyatını görebilirsiniz ama kapsamlı anlamda böyle bir hizmet verildiğini ben bilmiyorum. Ne yaparsanız mükemmel olur.
+
+470
+01:43:13,876 --> 01:43:15,976
+Yani görebilsek tüm Duty Free'deki ürün.
+
+471
+01:43:15,976 --> 01:43:18,136
+Tamam, peki bunu görünür hale getirmenin yolu nedir?
+
+472
+01:43:19,376 --> 01:43:23,496
+Paylaşım yapmak hocam. Kendisi gittiği yerde paylaşacak ki bir tane görebilsin.
+
+473
+01:43:24,076 --> 01:43:26,156
+Aynen öyle. Bu mekanizmaya otur.
+
+474
+01:43:26,676 --> 01:43:38,536
+Kötürabilirseniz dünyada gezen kişi sayısını düşünün pandemi dışındaki. Her biri her bir duty free'e uğradığında herhangi bir ürünün paylaşımını yaptığında kredi toplayacak.
+
+475
+01:43:38,536 --> 01:43:47,756
+Ve bunun karşılığında da istediği bölgedeki ürünün fiyatını görebiliyor olacak. Benim çok yapmak istediğim bir şeydir bu aslında.
+
+476
+01:43:48,496 --> 01:43:49,536
+Yani ben soru yok.
+
+477
+01:43:49,536 --> 01:43:50,536
+Olur olmaz bilemiyorum.
+
+478
+01:43:50,963 --> 01:43:54,484
+Zil çaldı o sırada da soru kaçırdım.
+
+479
+01:43:56,671 --> 01:44:11,171
+Bu sorun sormuştum sınavda. Tabii bu yeni nesil havalimanlarının doğrudan konseptine girmiyor ama yeni nesil bir uygulama olabileceği için ben bunu o başlık altında söylüyorum.
+
+480
+01:44:11,171 --> 01:44:23,147
+Sorun şu, çok gezen bir kişi Duity Free'de alışveriş yapıyorsa, uygun fiyatlı ürünler buluyorsa bazı ürünlerin...
+
+481
+01:44:23,188 --> 01:44:45,188
+belli şehirlerde daha uygun olduğuna denk geliyor. Bu parfüm olabilir, çikolata olabilir vs. Bu noktada bunları takip ederek alışveriş yapma şansımız yok. Çünkü bunu paylaşan duty free'ler yok. Ama biz bunu crowdsourcing şeklinde organize edecek bir uygulama yazsaydık, kişi paylaştığı ürün kadar...
+
+482
+01:44:45,587 --> 01:45:03,228
+Tabii başka bir model de olabilir. Ürün görecek şekilde bir mekanizma oluşturursak, böylece herkes her havalimanındaki, duty free'deki ürünlerin hakkında fikir sahibi olacak ve bunun karşılığında da daha uygun alışveriş yapma şansına sahip olabilecek. Soru buydu.
+
+483
+01:45:03,988 --> 01:45:19,248
+Ben de buna benzer bir sistem düşünmüştük arkadaşlarla biz de. Yani şöyle mesela diyelim ki, duty free biraz daha şeymiş de, biz mesela şöyle bir şey düşünmüştük.
+
+484
+01:45:19,628 --> 01:45:31,988
+Şimdi diyelim ki marketten veya pazardan aldığımız herhangi bir yeşillik olsun. Yani bozulabilecek atıyorum maksimum raf ömrü iki hafta veya üç hafta olsun.
+
+485
+01:45:31,988 --> 01:45:44,928
+Bu ürün aslında tarladan çıktığı zaman kilosu 20-30 kuruş olsun ama bize gelene kadar bazen 5-6 liraya kadar çıkabiliyor.
+
+486
+01:45:45,308 --> 01:45:45,628
+Doğru.
+
+487
+01:45:45,952 --> 01:46:03,652
+Yani biz bir şekilde bu ilk üreticilerle mesela görüşebilirsek ve diyelim ki onların katılımının sağlanacağı bir sistem geliştirebilirsek, direkt o kişilerin sadece o aracıya para verilerek diyelim ki A noktasından B noktasına götürmesi için,
+
+488
+01:46:13,619 --> 01:46:32,060
+Konusunda bir şey yapılabilir demiştik. Ben bu, hani, Duty Free dediğiniz şeyde biraz daha buna benzettim. Hem yani yaklaşık ürün miktarı ortaya çıkmış olacak. Hem de hani herkes nereden, ne kadar uyguna gelebilir o şekilde.
+
+489
+01:46:33,140 --> 01:46:36,480
+Güzel, çok güzel bir fikir. Zaten...
+
+490
+01:46:36,496 --> 01:46:41,576
+Bunun bir türevinin şu anda aslında hayatımızda şöyle yapıyoruz.
+
+491
+01:46:44,627 --> 01:46:51,728
+Benzer bir mantıkla. Gitti gidiyor gibi, hepsi buradanın gibi başlıkların altında çok farklı firmalar var.
+
+492
+01:46:51,728 --> 01:47:03,027
+Bu firmalar aslında ürünleri uygun temin ettiklerinde rekabetçi özelliklerinden de kullanarak kargo firmalarıyla anlaşarak bu ürünü size gönderiyorlar.
+
+493
+01:47:03,107 --> 01:47:08,728
+Yani bir ürünü normalde büyük bir markette belki daha pahalıya bulacakken küçük bir...
+
+494
+01:47:09,747 --> 01:47:13,847
+Firma size bu ürünü daha uygun fiyata gönderebiliyor bu noktadayız.
+
+495
+01:47:14,487 --> 01:47:21,228
+Ve muhtemelen pandemi döneminden sonra alışveriş kültürü de birazcık değişiyor olacak gibi gözüküyor.
+
+496
+01:47:22,747 --> 01:47:24,787
+Bu senin söylediğinde güzel bir mantık.
+
+497
+01:47:25,687 --> 01:47:28,607
+Buna ek şöyle bir örnek daha vereyim.
+
+498
+01:47:28,747 --> 01:47:32,327
+Biz buna benzer bir projede Tübitan yarışmasına katıldık.
+
+499
+01:47:33,567 --> 01:47:36,787
+Kişiler fişlerini okutuyorlar telefonda.
+
+500
+01:47:37,460 --> 01:47:49,720
+Telefondaki fiş miktarları, ürünlerin hangi lokasyonun alındığı, ne kadar alındığı bilgisi, aynı Duity Free'de olduğu mantıklı hangi marketten alındığı bilgisi olarak veri tabanında kaydediliyor.
+
+501
+01:47:49,720 --> 01:47:56,780
+Ve böylece siz, herkes bu sistemin bir kullanıcısı olduğunda, örnek veriyorum X bir ürün.
+
+502
+01:47:57,427 --> 01:48:11,167
+Y firması, A firması da var, B firması da var, C firması da var. Ama sisteme baktığınızda alışveriş listesine giriyorsunuz. Size en uygun nerelerden bu ürünleri temin edeceğiniz bilgisi otomatik olarak çıkıyor.
+
+503
+01:48:11,604 --> 01:48:20,464
+Hatta lokasyon bazlı olarak hangi ürünleri nereden almanız gerektiğini de birden fazla markete giderek bunu alma şansına sahip olabiliyorsunuz.
+
+504
+01:48:20,524 --> 01:48:28,124
+Ve böylece yaklaşık %20 civarında en az bir tasarruf sağlıyorsunuz alışverişte. Bunu da ortaya koymuştuk.
+
+505
+01:48:28,604 --> 01:48:31,244
+Farklı firmaların ürünlerini aldık, inceledik.
+
+506
+01:48:33,108 --> 01:48:52,488
+Ama TÜBİTAK tarafında yarışmada maalesef bir sonuç elde edemedik. Bölge yarışmasından finale gitme şansımız olmadı. Biraz üzüldüğüm bir şeydir. Müsaade bir çalışma olduğunu düşünüyordum. Arkadaşımız da güzel bir şekilde hazırlamıştı ama maalesef bir derece elde edemedik.
+
+507
+01:49:00,532 --> 01:49:26,591
+Eğer yapılacaksa ne şekilde yapılabileceği kısmı var. Burada her bir tamamlanan soru için eşit miktarlar ödemek. Her soru için farklı miktarlar ödeyeceğinizi söylemek. Ve bunu söyledikten sonra da bunu anketi bitirdiğinizde açıklamak. Yani bir tanesinde soruları görüyorsunuz, fiyatı görüyorsunuz, diğerinde ise bunu görmüyorsunuz. Bunlar genellikle uygulanan teşvik modelleri.
+
+508
+01:49:27,091 --> 01:49:41,551
+Burada çeşitli eğlence bazlı, servis bazlı mekanizmaların ne tür yeni yapılarla kurgulanabileceği anlatılıyor.
+
+509
+01:49:42,771 --> 01:49:48,511
+Bu kısım üzerinde de çok detaylı durmayacağım. Çünkü bayağı bir konuştuk bu konular üzerine.
+
+510
+01:49:48,511 --> 01:49:53,511
+Burada genel olarak Mobile Crowdsensing'in...
+
+511
+01:49:54,384 --> 01:49:59,384
+Şu an günümüzdeki kullanım mimarisini görüyorsunuz.
+
+512
+01:50:01,164 --> 01:50:14,444
+Ve genelde diğer topluktan toplanan bilgilerin end user'larla paylaşıldığı bir yapı ve her türlü kaynaktan gelen bir bilgi akışı olduğu bu mimaride gözüküyor.
+
+513
+01:50:14,444 --> 01:50:21,444
+Burada task decomposition, task recommendation, distribution.
+
+514
+01:50:21,939 --> 01:50:45,739
+Recomposition Storage olmak üzere bir service provider katmanı var. Buraya sense eden bir katılımcımız alttaki dört başlık üzerinden katılabiliyor. Computing anlamında olan bir kullanıcının yine dört başlık üzerinden katıldığını görüyorsunuz. Ve sonuçta...
+
+515
+01:50:46,484 --> 01:50:57,324
+En son noktada da bir gene service provider katmını bulunuyor ve burada ilgili yapıların bilgi akışı gerçekleşiyor.
+
+516
+01:50:59,984 --> 01:51:13,423
+Buradaki sorunları konuşup biraz sonra bu kısmı noktalayacağız. İşin içinde insanın olması manipülasyonu getiriyor ve bu büyük bir sorun. Biraz önce konuştuk.
+
+517
+01:51:14,131 --> 01:51:21,551
+Burada Task Crowdsourcing dediğimiz zaman ne anlıyor olabiliriz? Size sorayım.
+
+518
+01:51:30,228 --> 01:51:32,028
+Biliyorum. Yok olabilecek olan var ama.
+
+519
+01:51:34,868 --> 01:51:40,167
+Yani bu daha bir görev verme kullanıcıları, işte Pokemon Go'daki gibi bir şeyler.
+
+520
+01:51:40,167 --> 01:51:48,507
+Evet. Bu tabii buradaki sorun da buna talip olacak kişilerin olup olmayacağı.
+
+521
+01:51:48,927 --> 01:51:56,608
+Yani gerçekten bu paylaşımı yapıyorsunuz ama bu paylaşımın sonucunda bazı taskların size geri dönüşü olmayabilir.
+
+522
+01:51:57,203 --> 01:52:16,783
+Burası kritik. Yani bu sistemin yürüyebilmesi için kullanıcıyı sürekli motive eden bir sisteminizin olması ve içeride tutmanız lazım. Bu krav sayısı ne kadar düşerse o kadar büyük bir problem demek. Bu anlamda bir sıkıntı var. Dinamik topoloji. Sisteme birilerinin girmesi çıkması.
+
+523
+01:52:17,716 --> 01:52:21,576
+Katılımcı olması olmaması durumu sürekli bir değişkenlik hali var.
+
+524
+01:52:22,296 --> 01:52:33,736
+Ve eterojen eti de bilginin eterojen bir şekilde toplanması farklı kaynaklar üzerinden mümkün olduğunca çeşitliliğinin arttırılarak toplanması.
+
+525
+01:52:33,736 --> 01:52:41,516
+Bu da sizin sisteminizin güvenirliğini arttırmak için önemli bir challenge noktası.
+
+526
+01:52:43,188 --> 01:53:00,887
+Buraya bakacak olursanız son örneklerimize farklı noktalardan alınan hava ölçümleri havayla ilgili bize bir fikir verecektir. Aynı şekilde su kalitesi bizim takip etmemiz gereken şehirler bazında akıllı şehircilikte kullanmamız gereken bir şey.
+
+527
+01:53:04,500 --> 01:53:29,019
+Özellikle baz istasyonları ve Wi-Fi routerların sinyallerinin ne düzeyde olduğunun izlenmesi. Akıllı ulaşım, akıllı park da bunlardan bir tanesi. En çok ilgilenmek istediğim konulardan bir tanesi Smart Traffic Light. Bu sizce İstanbul'da uygulanıyor mu?
+
+528
+01:53:35,315 --> 01:53:37,895
+Yani bence uygulandığı yerler var diye düşünüyorum ben.
+
+529
+01:53:38,636 --> 01:53:42,596
+Mesela hiç dikkatini çeken bir yer oldu mu? Yani denk geldi mi?
+
+530
+01:53:43,256 --> 01:53:53,536
+Yani bizim burada olduğu bir yer var hocam, bir yol var. Sağdan bir ceple yolun öteki tarafına geçiyorsunuz. Sağ cepte birisi beklemediği sürece yanmıyor diye düşünüyorum.
+
+531
+01:53:53,536 --> 01:54:02,155
+Şimdi çok uzun sürede başında beklemedim ama öyle bir şey olabilir. Başka yerlerde de olduğunu düşünüyorum çünkü biraz gelişti bu trafik sistemleri.
+
+532
+01:54:02,676 --> 01:54:02,796
+Evet.
+
+533
+01:54:03,604 --> 01:54:05,764
+Teşekkür ederim. Başka yorum olan var mı?
+
+534
+01:54:07,044 --> 01:54:09,484
+Bundan farklı bir şey söyleyeceğim ben de.
+
+535
+01:54:10,484 --> 01:54:12,584
+Akıllı trafik işi dediğimiz için.
+
+536
+01:54:13,224 --> 01:54:15,144
+Mesela ben de her zaman düşünmüşümdür.
+
+537
+01:54:15,564 --> 01:54:18,963
+Sürekli yolun belli saatlerde belli bir yöne trafik var.
+
+538
+01:54:19,224 --> 01:54:21,164
+Mesela gidişte Ankara için konuşursam.
+
+539
+01:54:21,604 --> 01:54:24,503
+Sabah saatleri Kızrağ'a gidiş yolunu var.
+
+540
+01:54:24,684 --> 01:54:26,444
+Akşam Kızrağ'da dönüş yolunu var.
+
+541
+01:54:26,444 --> 01:54:30,003
+Ama mesela ortadaki refis sabit yani.
+
+542
+01:54:30,579 --> 01:54:44,180
+Bu refüjün sabitliğini ortadan kaldırdığımızda, mesela 3 şeritli yolu gidiş için sabah saatlerinde 4 şeridi, akşam 1 şeride düşürülebilir gibi bir yaklaşım için. Sürekli bunu düşünüyordum mesela.
+
+543
+01:54:45,460 --> 01:54:55,579
+Güzel. Bu bizim de İstanbul'da köprüde uyguladığımız bir sistemdi. Sabah giderken 4 şerit, akşam Avrupa'da nasıl dönerken 4 şeritti.
+
+544
+01:54:58,304 --> 01:55:20,264
+Tünel açıldıktan sonra bu iş kalktı. Tabii sonuçta tünelin de çalışması lazım. Teknik olarak sıkışıklık olduğu zaman tünele gidiyorlar ve bu sistem yürüyor. Artı bunun güvenliğiyle ilgili endişeler söylendi. İşte rüzgarla havalarda ya da yolun karşı tarafına aracın geçmesi durumunda güvenlik sıkıntısı yapsamıyor. Doğru, o da yanlış değil.
+
+545
+01:55:20,623 --> 01:55:47,763
+Ama senin söylediğin sistemi yapabilmemiz için normalde insan eliyle yürüyordu bu sistem. Yani kukaları koyuyorlar ve kukaları değiştiriyorlardı bir şeride. Çok ciddi bir maliyet gerekiyor. Kaydırma teknolojisi ya da alttan çıkacak bariyerler olması lazım. Bunları döşemek lazım. O yüzden bunun dünyada çok uygulandığına şahit olmadım. Var mı senin bir insanın? Güzel fikir ama çok maliyetli iş.
+
+546
+01:55:48,307 --> 01:56:09,167
+Hocam ben de baktım ve ben de göremedim. Zaten şey var, hep hayal olarak düşünüyorum ben. Mümkün değil gibi gözüyle bakıyorum. Haliyet olarak düşündüğümüzde şöyle yaklaşıyorum ben. En büyük kazanç zamanı olduğu için trafik sıkışıklarını ortadan kaldırıyor. Değmez mi diye bir düşünüyorum yani.
+
+547
+01:56:09,167 --> 01:56:12,167
+Evet ama çok statik bir...
+
+548
+01:56:12,627 --> 01:56:17,688
+Yapılanma lazım. Yani nedir oraya çok kısa aralıklarla.
+
+549
+01:56:18,095 --> 01:56:35,515
+KUKA benzeri daha güvenilir yapılar koymak lazım. Ve bu altyapı çalışması da bir nevi şeye çeviriyorsun yani. Tramvay hattına ya da metro hattına çeviriyorsun. Onu yapmak demek de ciddi bir maliyet demek. Başka belki dezavantajları da vardır. [öğrenci] bir şey söyleyecek ya var.
+
+550
+01:56:35,515 --> 01:56:46,095
+Aynen hocam. Onun yapıldığını ben görmüştüm hocam. Amerika'da bir yerdeydi ama tam nerede bilemiyorum. Çok büyük tabii bir otoyol üzerindeydi bu. Zincir şeklinde bir bariyer...
+
+551
+01:56:46,095 --> 01:57:06,956
+Sistemi düşünün, plastikten. Bunu bir araç yardımıyla çok basit bir şekilde araç hareket ettiğinde soldan sağa ya da sağdan sola alma hareketini yapıyordu. Yani bir kişiyi en fazla bu işçen ayırıyordu. Bir tane de araçla bunu çok basit bir şekilde yapabiliyorlardı ve [öğrenci]'in de söylediği gidiş ve dönüş yoluna göre şerit arttırma ve azaltma işlemini efektif bir şekilde gerçekleştirebiliyorlardı.
+
+552
+01:57:07,095 --> 01:57:09,576
+Ama mutlaka araç girmesi gerekiyor bunu yapmak için değil mi oraya?
+
+553
+01:57:09,576 --> 01:57:13,255
+Mutlaka, aynen. Bir araç hatta bu işin özel tasarlanmış bir araç.
+
+554
+01:57:13,315 --> 01:57:13,795
+Evet, evet.
+
+555
+01:57:14,095 --> 01:57:19,755
+Yani aynen öyle. O şekilde olabilir. Onu doğru söylüyor olabilirsin. Belki Los Angeles tarafında olabilir o.
+
+556
+01:57:19,996 --> 01:57:23,215
+Los Angeles olabilir hocam. Ben de o şekilde hatırlıyorum. Emin olamadım.
+
+557
+01:57:23,515 --> 01:57:34,735
+Tamam. Teşekkür ediyorum. Şimdi bu konuyu konuştuktan sonra trafik light'e dönecek olursak ben açıkçası trafik light probleminin, trafik ışık probleminde dinamik bir trafik yönlendirmesini çok görmüyorum.
+
+558
+01:57:36,576 --> 01:57:41,735
+Hayatımızın içine daha girmiş değil. Ama bu problem bence çok önemli bir problem. Çünkü burada bir...
+
+559
+01:57:42,003 --> 01:58:03,103
+Trade-off var. Eğer ışıklarla çok oynarsanız, çok dinamik yaparsanız trafiğin akışkanlığını bozuyorsunuz. Trafiğin akışkanlığını bozmanız demek standartta, standart bir hızla giden green light dediğimiz yeşil ışık dalgasında bir ışıkta gitmeye başladığınızda diğer ışıklara da geçiyorsunuz 60'ta, 70'te gittiğinizde.
+
+560
+01:58:04,399 --> 01:58:28,859
+Bunu süreleri değiştirirseniz bunu bozmuş olacaksınız. Daha çok benzin tüketilme sebebiyet verebilir. Ama bunun uygulanabileceği yerler var, zamanlar var. Gece saatinde değişebilir. Daha trafiğin azaldığı, çoğaldığı zamanlar değişebilir. Bu konunun ben önümüzdeki dönemde hayatımıza daha fazla olacağını ve bununla ilgili çalışmaların daha çok yapılacağını düşünüyorum.
+
+561
+01:58:29,460 --> 01:58:47,440
+Hocam, yeşil dalga sistemi çok uzun yıllarda kullanılıyor diye biliyorum. Daha ben Edirne'de çocukluğumdan hatırlıyorum aslında. 2005-2010'lardan hatırlıyorum. Yeşil dalga sürekli vardı ama bunu tam olarak bir akıllı ışık olarak düşünmek herhalde mantıklı olmaz diye düşünüyorum. Orada bir periyodunu ayarlama söz konusu.
+
+562
+01:58:47,700 --> 01:58:48,020
+Tabii tabii.
+
+563
+01:58:49,108 --> 01:58:57,587
+Yani geceleri de yine biliyorsunuz belli bir saatten sonra sarı işe dönmesi bu da yine belli bir periyod ayarlaması söz konusu. Tam bir smart yaklaşım diyemeyiz herhalde bunun için.
+
+564
+01:58:58,028 --> 01:59:00,811
+Yok, hayır. Ben onu tamamen...
+
+565
+01:59:01,363 --> 01:59:27,323
+Nasıl diyeyim? Mevcut çözümler içerisinde en sık kullanılan ve bunun kullanılma sebebinin de olabildiğince safety'yi arttıran ve yakıt tüketimi düşüren bir çözüm olması sebebiyle söylemiştim. Ama buna sadece bir program yazıyorsunuz. O program dahilinde. Evet, akıl var mı içinde misleten var ama çok fazla bir öğrenme yok. Trafik karakteristini anlık değerlendirme yok.
+
+566
+01:59:27,764 --> 01:59:35,684
+Health Monitoring kısmı var. Bu kısımda da çokça şey yapılıyor. Daha da artacak bu kısım.
+
+567
+01:59:37,923 --> 01:59:48,823
+Risk izleyip masız çok önemli. Farklı kişilerin daha önceki semptomlarından özellikle örneğin COVID datası çok sıklıkla tıpçılar arasında paylaşılıyor.
+
+568
+01:59:49,268 --> 02:00:04,007
+Ve bu dünyanın birbiriyle crowdsourcing mantığıyla paylaştığı data sayesinde biliyorsunuz bugün aşı noktasına da geldik. İlaç noktasına doğru da gidiliyor. Artı tedavi yöntemleri de bu şekilde evriliyor. Bu da çok önemli.
+
+569
+02:00:05,007 --> 02:00:11,404
+Food Recommendation. Yani bu konuda da yapılan çalışmalar var ama hani...
+
+570
+02:00:12,148 --> 02:00:14,988
+Bu biraz daha arka planda kalıyor diyebiliriz.
+
+571
+02:00:14,988 --> 02:00:19,008
+Hocam ben bu sağlık alanına daha fazla şey yapılabileceğini düşünüyorum.
+
+572
+02:00:19,188 --> 02:00:27,408
+Yani şöyle ki, yani mesela şu anda özellikle bu yaşlı nüfusa baktığımız zaman hani bir hastalık hastası şeyi vardır.
+
+573
+02:00:27,548 --> 02:00:29,448
+Hani belli bir yaşlıktan sonra özellikle.
+
+574
+02:00:29,448 --> 02:00:39,128
+Yani bu tip insanlar için evde bulunabilecek sensörlerle mesela bunun sağlık durumunun ölçülmesi veya online olarak
+
+575
+02:00:39,488 --> 02:00:52,768
+yardım edilebilmesi bence biraz daha olası olarak hastalık durumlarını önceden önüne geçmekte şekilde...
+
+576
+02:00:52,768 --> 02:01:01,648
+Engellemek ve bir sorun olmadan çözmek hedefi ve çok haklısın bununla ilgili Avrupa Birliği projeleri de var.
+
+577
+02:01:02,208 --> 02:01:06,508
+Çünkü şey düşünüyorum, eğer ki...
+
+578
+02:01:06,579 --> 02:01:24,599
+Bu hastalıklar yayılmadan önce bir şey yapılsa, engellenebilse ilaç tüketimi de bayağı bir azalır. İnsanların aktif olarak çalışabileceği zaman artacağı için bu izin kullanımıdır, bunlar da daha fazla düşer ve hayat kalitesi de biraz daha yükselebilir.
+
+579
+02:01:25,299 --> 02:01:27,599
+İlaç şirketleri senin bu açıklamanı duymasın.
+
+580
+02:01:34,387 --> 02:01:43,567
+Büyük problem olarak gördüğüm şeylerden biri ilaç şirketleri. Çünkü gerçekten bu tür yapılacak çalışmaların önüne geçtiklerini de düşünüyorum.
+
+581
+02:01:44,756 --> 02:01:49,836
+Olabilir. Diziler, filmler bize o yönde feedbackler veriyor.
+
+582
+02:01:50,096 --> 02:01:57,615
+Ben mesela şeyde, Türkiye'de, Türkiye Tabipler Odası'nın yine bu şeyin önüne geçtiğini düşünüyorum.
+
+583
+02:01:57,615 --> 02:02:12,756
+Mesela Türkiye'deki doktor sayısını mesela sınırlayarak, biraz daha az talep şey olarak, doktorluktan çıkan, doktor olarak, 6 yıl okuyup doktor olan herkesin doktor olarak atanabilmesini sağlayabilirim.
+
+584
+02:02:12,756 --> 02:02:18,756
+Böylece ayrıyeten bir yarış ortamı olmadığı için aslında bir süre sonra köreliyorlar.
+
+585
+02:02:20,115 --> 02:02:24,756
+Ve arz talep şeyinden dolayı yine bu sefer...
+
+586
+02:02:26,195 --> 02:02:43,676
+Diyelim ki kimi yerlere doktor gitmiyor. Diyor ki ben oraya gitmek istemiyorum ve gerçekten gönderemiyorsun. Diyor ki İstanbul'da ihtiyaç var. Ben İstanbul'da kalıyorum. Şurada ihtiyaç var. Ben şurada kalıyorum. Ama yani böyle sistemlerin sırf başına doktor olmak zoruna da değil. Atıyorum bir hemşirenin yapabileceği.
+
+587
+02:02:44,064 --> 02:03:11,984
+Tedavi yöntemleri veya diyelim ki yapabileceği test yöntemleriyle diyelim ki mahalle bazında veya ilçe bazında merkezler kurulsun ve herkes belli aralıklarla buraya gidip tedavi olabilsin. Yani insanlar belli aralıklarla işte diyelim ki kan değerlerini ölçtürsün, onu ölçtürsün, bunu ölçtürsün ve bu değerlerin sonucunda atıyorum o mahallede bir salgın başlayacak mı? Çünkü özellikle kalabalık olan bu mahallelerde şey olabiliyor.
+
+588
+02:03:12,064 --> 02:03:26,003
+Bir salgın başladığı zaman, mesela bu ilkokulu olan yerlerde özellikle bu eskiden küçük şehirlerde şeyler vardı mesela. Bu bit salgınıdır veya grip.
+
+589
+02:03:26,336 --> 02:03:39,356
+Olduğu zaman bir çocuk o mahallenin tamamı, anne, baba, herkes grip oluyordu. Böyle bir şey olduğu zaman tahminince %40, %50'nin üstünde şey olur diye düşünüyorum.
+
+590
+02:03:39,856 --> 02:03:44,976
+Evet, yuvalarda ve şu an ilk okullarda küçük çocukların olduğu yerlerde de aynı sıkıntılar devam edecek.
+
+591
+02:03:44,976 --> 02:03:47,256
+Bu da bir şey söyleyebilir miyim?
+
+592
+02:03:47,256 --> 02:03:47,496
+Tabii.
+
+593
+02:03:47,916 --> 02:03:54,256
+Popular Science'ın ilk Mart sayısıydı, yanlış hatırlamışlarım, dergisinde bir arada okumuştum.
+
+594
+02:03:54,336 --> 02:04:10,516
+O yazıda Çin hükümeti mesela pandemi açıklamadan önce, böyle bir salgını açıklamadan önce İngiltere Merkezi bir firmanın burada salgın olduğuna dair verileri inceleyerek burada salgın var dediğine dair bir haber.
+
+595
+02:04:10,996 --> 02:04:12,276
+Çok ilginç.
+
+596
+02:04:12,436 --> 02:04:25,076
+Pasaj almışlardı. Mesela burada Türkiye'de bu sağlık piyasına ulaşmak çok zor ama ben şunu düşünmüştüm. İngiltere merkezli bir şirket bu veriye nasıl ulaştı diye düşünmüştüm.
+
+597
+02:04:25,076 --> 02:04:25,956
+Evet, Çin'den.
+
+598
+02:04:26,596 --> 02:04:38,996
+Covid konusunda gerçekten İngiltere'nin çok ilginç çalışmaları var. Mesela şey belki görmüşsünüzdür bu. Hastanelerin otoparkına bakarak hastanelerin yoğunluk çalışmaları var.
+
+599
+02:04:38,996 --> 02:05:06,996
+Doğru. Doğru.
+
+600
+02:05:06,996 --> 02:05:25,996
+Bu konuda söz konusu ama medya olsun, Avrupa olsun, Amerika olsun birden Çin'e yüklendiği için Çin'in de şey kalmadı diye düşünüyorum. Şu anda COVID'nin tam olarak çıkış kaynağı belirlendi mi onu da bilmiyorum. Kesinlikle şu kaynaktır.
+
+601
+02:05:25,996 --> 02:05:34,336
+Net bir şey söylemek zor. Bu hikayenin gerçek kısmını muhtemelen onlarca sene sonra.
+
+602
+02:05:34,771 --> 02:05:38,351
+10 sene sonra görüyor olacağız. Hep böyle oluyor biliyorsunuz.
+
+603
+02:05:38,832 --> 02:05:40,332
+Çarşı'nın bir dizisini izlediniz mi?
+
+604
+02:05:41,092 --> 02:05:43,832
+Yok hocam. İzlenecekler listemde var ama.
+
+605
+02:05:44,212 --> 02:05:45,132
+Evet, çok tavsiye ederim.
+
+606
+02:05:46,292 --> 02:05:47,811
+İzlenmemiş arkadaşlarımıza.
+
+607
+02:05:47,811 --> 02:05:59,592
+Yani bir mevzunun nasıl gerçekleştiğini ve insanların bu işten nasıl etkilendiğini çok güzel anlatan bir hikaye. Çok iyi çekmişler gerçekten.
+
+608
+02:06:00,127 --> 02:06:28,007
+Yani nasıl çekmişler onu da merak ediyorum. Çünkü sonuçta bir Amerikan yapımı olduğu için. Rusya'yla ilgili vesaire ilginç bir hikaye. Ama biz hikayeleri hep böyle sonradan öğreniyoruz. Doğrudur, yanlıştır bilemem ama anlatılanlar çok mantıklı geliyor kulağa. Toparlayacak olursak COVID'le ilgili de çok ciddi, çok güzel araştırmalar yapılıyor. Sadece COVID'in sağlık anlamında değil de DNA dizilimlerine bakıyorlar.
+
+609
+02:06:28,127 --> 02:06:56,107
+Biliyorsunuz şu anda yeni mutasyonun ne kadar uyumlu olduğunu, yani kişiler gerçekten sınırlara girmiş mi, o yeni mutasyon türüyle tutuyor mu DNA dizimleri diye. Bir yandan şey de yapılıyor, daha ilk çıktığında ben hatta bizim öğrenciler Skylab Kulüple katılmışlardı. Bir kişi COVID'in dağılım, yani vaka sayısının nasıl gideceğini, ne zaman sorumleneceğini.
+
+610
+02:06:56,127 --> 02:07:20,847
+Onu hesaplıyordu. Bir gün sonra kaç olacak sayısını hesaplıyordu. Biliyorsunuz bunların böyle finansda karşılığı var. Finansta da borsanın direnç noktası, işte destek noktası vesaire diye. Yani birçok alan var veriyi kullanarak yapabileceğiniz. Örneğin tweetlerden doların seyrinin ne olacağını tahmin etmeye çalışmak vesaire. Çok kolay işler değil. Ama forecasting.
+
+611
+02:07:21,587 --> 02:07:43,607
+Yani insanın en çok merak ettiği şey, gelecekte ne olacağını bilmek her alanda yapılmaya ve sayısı artmaya devam edecek. O yüzden doğru alanı seçerseniz, o alanda bir şeyler yapmaya çalışırsanız gerçekten fark yaratabilirsiniz. Meteoroloji bunların en başında bu işe başladı. Şu gün geldiği nokta en az iki haftayla çok iyi tahmin yapılabiliyor.
+
+612
+02:07:46,163 --> 02:08:12,463
+İşte biz de trafikte bunu böyle yapmaya çalışıyoruz. Bakalım başarılı olabilecek miyiz? Evet. Şimdi bir son olarak security ve privacy ile ilgili burada belirli başlıklar var. Artık bu konuya çok fazla vakit ayırmak istemediğim için bunu sizlerle paylaşacağım slide'ı. Bir 15-12 saat 15-20'ye kadar bir ara verelim. Ondan sonra bir 20-25 dakika daha ders yapıp dersimizi noktalayacağız. Görüşmek üzere arkadaşlar 15-20'de.
+
+613
+02:08:14,003 --> 02:08:14,883
+Çok güzel hocam.
+
+614
+02:20:12,404 --> 02:20:16,923
+Evet arkadaşlar, yeniden merhaba. Son bölüme hoş geldiniz tekrar.
+
+615
+02:20:18,184 --> 02:20:18,963
+Merhabalar hocam.
+
+616
+02:20:19,203 --> 02:20:21,404
+Bir iki üç dakika gecikmeyene geldim, kusura bakmayın lütfen.
+
+617
+02:20:23,043 --> 02:20:29,043
+Şimdi, bu kısmı da bitirdik. Bunu bir kapatalım.
+
+618
+02:20:31,164 --> 02:20:39,963
+Ben şeyi açarken, bu yeni slide'larımızı açarken size dönem projenizdeki son durumunuzu sorayım.
+
+619
+02:20:40,468 --> 02:20:42,668
+Çünkü zaman azalıyor.
+
+620
+02:20:44,108 --> 02:20:45,968
+Survey'de ne durumdasınız?
+
+621
+02:20:51,252 --> 02:21:06,471
+Makale okumalarım yavaş ilerliyor. 50 makale demiştik ki hocam, o hedefe tam bulaşabilir miyim bilmiyorum. Şu an bir 15 anca olmuştur yani. Belki benim yavaşlığımdan da kaynaklanabilir.
+
+622
+02:21:07,391 --> 02:21:17,191
+50 makaleyi şöyle düşünün. Burada bütün makaleleri tamamen her noktasına kadar okumak hedef değil.
+
+623
+02:21:17,940 --> 02:21:26,940
+Bazılarını abstrakt, konklujinal olarak okuyup çalışmanızın içerisinde detaya girmeden kullanabilirsiniz. Yani benim sizden beklentim...
+
+624
+02:21:27,540 --> 02:21:40,000
+Bu, 50 makalenin de sonuna kadar, son noktasına kadar okumanız değil. Ne yaptıklarını, nasıl yaptıklarını hakkında bilgi sahibi olmanız. Yani bu birazcık makale okuma kültürünüzü de geliştirmek açısından faydalı.
+
+625
+02:21:40,000 --> 02:21:47,760
+Bu takdeleri gruplandırmaya amaçladığımız için, özetimden bağlı bazen nereden birleştireceğimi çok...
+
+626
+02:21:47,760 --> 02:21:48,560
+Çok haklısın.
+
+627
+02:21:49,012 --> 02:22:15,211
+Ben bunu şey için söylüyorum, aklınızda bu kısım olsun unutmayın. Burada paperları hızlı tarayabilmek de bir yetenek. Bu yeteneği kazanmak için de böyle bir çalışma gerekiyor. Özellikle akademik çalışıyorsanız ki tez yaparken bunun faydasını çok göreceksiniz. Hatırlarsınız ya hocam bizi çok uğraştırdınız da.
+
+628
+02:22:15,567 --> 02:22:19,147
+Biraz da faydasını gördük diye inşallah o zaman bir doğanızı alırız artık [öğrenci].
+
+629
+02:22:22,407 --> 02:22:29,227
+[öğrenci] şimdi diyor ki bir ödemi tamamlayalım da dersi bitirelim de ondan sonrasında görüşürüz.
+
+630
+02:22:31,367 --> 02:22:36,768
+Lütfen ona dikkat edin. Peki, [öğrenci] durumunu özetledi. Diğer arkadaşlar ne durumda?
+
+631
+02:22:37,363 --> 02:22:56,023
+Ben de araştırma kısmındayım hocam. Araştırma kısmı biraz yavaş ilerliyor. Yani bir buçuk yıldır akademik çalışma yapmıyordum. Normal iş dünyasına biraz atılayım demiştim ama bayağı şey olmuş böyle. Ne denir? Paslanmışım biraz. O şekilde ben de araştırma kısmındayım.
+
+632
+02:22:56,023 --> 02:22:56,344
+Peki.
+
+633
+02:22:58,984 --> 02:23:02,504
+Ben de hocam şeyleri çıkardım makalede.
+
+634
+02:23:02,896 --> 02:23:04,596
+okuyacağım makaleleri o arada
+
+635
+02:23:04,596 --> 02:23:07,076
+seçtim. Açaklarını okudum hepsini.
+
+636
+02:23:07,796 --> 02:23:09,176
+Hangilerin de adet ayır bir şekilde
+
+637
+02:23:09,176 --> 02:23:10,396
+okuyacağını seçtim.
+
+638
+02:23:11,096 --> 02:23:12,615
+Bir şey kısmına
+
+639
+02:23:12,615 --> 02:23:14,056
+çıkarmaya çalışıyorum.
+
+640
+02:23:20,051 --> 02:23:21,691
+Tamam. Peki.
+
+641
+02:23:23,691 --> 02:23:25,652
+Tamam. Teşekkürler.
+
+642
+02:23:28,731 --> 02:23:31,772
+Hocam ben de okuyacağım şeylerin büyük çoğunluğuna bakmıştım.
+
+643
+02:23:33,231 --> 02:23:36,351
+Sörveylere falan. Ama bir şey yazmadım açıkçası şu ana kadar.
+
+644
+02:23:37,652 --> 02:23:39,971
+Muhtemelen önümüzdeki zamanda bir patlamayla.
+
+645
+02:23:40,819 --> 02:23:45,319
+Evet, bir patlamayı bekliyorum hepinizden. Yani maşallah bomba gibisiniz.
+
+646
+02:23:46,319 --> 02:23:48,260
+Biz de patlayabilir yani öyle hissediyor.
+
+647
+02:23:48,319 --> 02:23:49,479
+Elinizde patlamasın tabii.
+
+648
+02:23:50,299 --> 02:23:52,279
+İçimizde patlayacak gibi bir şey var.
+
+649
+02:23:52,479 --> 02:23:58,920
+Yok yok yok, hayır hayır. Ben güveniyorum size. Yani oradan güzel bir şey çıkacağını düşünüyorum.
+
+650
+02:23:59,260 --> 02:24:03,979
+Çok süper istediğiniz gibi belki olmayacak gibi duruyor olabilir şu anda.
+
+651
+02:24:03,979 --> 02:24:04,979
+Ama...
+
+652
+02:24:05,203 --> 02:24:27,083
+Hala çok ciddi süreniz var. Bu hafta sonu, ondan sonraki hafta sonu ve sonraki hafta sonu. Yani üç tane hafta sonunuz var. Lütfen bir an önce kafanızdakini toparlayıp yazmaya başlayın. Yani yazma kısmında zaman alacağı için burada elinizden geleni yapın. Artık ne kadar oluyorsa. [öğrenci].
+
+653
+02:24:28,051 --> 02:24:56,051
+Hocam ben sürekli bir araştırma içindeyim. Ancak net şekilde her araştırdığımı dökmediğim için şu an ben de o patlamayı bekler durumdayım aslında. Onu çok rahat söyleyebilirim. Önceki hafta sonu böyle bir planım vardı. Yani iki gün komple sadece bu işe ayırayım diye farklı bir dersten ödev geldi. Öncelikler değişmiş oldu. Bu hafta sonu bakalım hocam yine onun sırası. Benim takıldığım bir nokta var hocam. Science Direct'e doğrudan erişebildim. Bizim üniversite mailini falan çok güzel şekilde tanıdı. Orada hepsine erişim sağlayabiliyorduk.
+
+654
+02:24:56,051 --> 02:25:08,752
+Ancak büyük ihtimalle IEEE'de benzer şey yapamadım. Birkaç referans verdiğim makalede bütün içeriye erişimi sağlayamadım. Onlardan bazılarını değiştirmem gerekecek gibi görünüyor.
+
+655
+02:25:08,752 --> 02:25:13,072
+Bir site sayabilirim istersen. Cicirab diye bir site var.
+
+656
+02:25:13,424 --> 02:25:16,904
+Şimdi bunu burada söylemek de çok uygun olmadı ama.
+
+657
+02:25:17,084 --> 02:25:20,724
+Kayıttayız şu anda. Bence o yüzden ben duymadım.
+
+658
+02:25:20,724 --> 02:25:22,264
+Ben mail olarak bildirim.
+
+659
+02:25:22,364 --> 02:25:27,044
+Siz aranızda bilgi paylaşımını, crowdsourcing olayını gerçekleştirirsiniz.
+
+660
+02:25:28,623 --> 02:25:31,764
+[öğrenci] iyi bir arkadaşa ben numarasını almak istiyorum.
+
+661
+02:25:31,764 --> 02:25:34,164
+Evet, evet. Sen kendine yakın hissettin.
+
+662
+02:25:36,104 --> 02:25:37,444
+Bu şekilde hocam.
+
+663
+02:25:37,884 --> 02:25:41,283
+Tamam, peki. [öğrenci]'in hizmetleri devam ediyor.
+
+664
+02:25:41,424 --> 02:25:57,484
+Arkadaşlar, şimdi ben şöyle bir şey söyleyeceğim size. Birincisi [öğrenci] VETIS diye bir program var. VETIS'i kurarsan oradan öğrencinin varan ve şifrenle büyük ihtimalle bu bir plugin.
+
+665
+02:25:57,484 --> 02:26:03,264
+Krona kurabilirsin istersen. Diğer browserlarda plugin olarak vardır belki.
+
+666
+02:26:04,979 --> 02:26:26,039
+Oradan bağlandığında önüne veri tabanları geliyor. IEE Explorer'da bir tanesi. Oraya tıkladığında bazen problem olabiliyor ama genelde doğru çalışıyor. Institution login olarak giriş yapabiliyorsun ve ilgili paperlarını indirebilirsin. Olmazsa, tabii arkadaşlar var.
+
+667
+02:26:32,020 --> 02:26:51,200
+Şöyle bir şey söyleyeceğim. Herkes araştırma aşamasında ya, yani gördüğüm kadarıyla. Şimdi bu araştırma aşamasını bir an önce finalize etmemiz lazım. Bir. İki, yani elli istedim. Olmuyorsa, hiçbir şey yazmamaksa, tansa.
+
+668
+02:26:51,763 --> 02:27:12,183
+Bir şeyler yazmak lazım. Ya hocam elliye giderken okudum aslında da ama sıra kalmadı yazamadığım noktasında gelmeyin lütfen. Orada bazı indirimlere gidebiliriz. Yıl sonu kampanyasından faydalandırabiliriz sizi. Niyetiniz iyi olsun yeter ki. Bulduklarınız tatminkar makaleler olsun.
+
+669
+02:27:13,888 --> 02:27:30,948
+Benim için önemli olan o. Yani gidip bana 2011-2012 yılındaki makaleleri koyarsanız belli sayıda bu çok tatminkar bir yaklaşım olmaz. Ama işte gerçekten son dönemki makaleleri tarımışsınızdır ama 50'ye ulaşamamışsınızdır. Karşılıklı bir çözüm buluruz. Bunu ders etmeyin.
+
+670
+02:27:31,796 --> 02:27:40,335
+Hocam o noktada da ben bir tane tat katsın diye çok eski bir tane koymuştum ama yani bu şekilde çok eskiden bu yapılıyormuş, bu noktaya gelmişiz diyebilmek için.
+
+671
+02:27:40,835 --> 02:27:58,716
+Zaten bu tat katmamız lazım. Bu pul biber gibi düşünebilirsiniz. Bu isot gibi düşünebilirsiniz. Geçmişten gelen bazı tatları korumamız lazım. Yani işin esprisini bir kenara bırakalım. Hakikaten geçmişte kürt olmuş çalışmaları ve milestone olabilecek çalışmaları işin içine koymanız benim için gene önemli.
+
+672
+02:27:59,796 --> 02:28:08,216
+2018, 2019 ve 2020 var. Bu çalışma başlamış 2010'lu yıllarda. Oradan oraya geçerken hiçbir şey koymamak da doğru değil.
+
+673
+02:28:08,755 --> 02:28:13,155
+Ben 99'dan buldum bir tane. Biraz abartı olmuş olabilir belki ama.
+
+674
+02:28:13,315 --> 02:28:28,755
+Yok yok, çok doğru. Aynen öyle. Trafik Estimation ile ilgili hikaye çok uzun ama değişimi de muhtemelen görmüşsünüzdür. Hani nasıl evrildiğini, ilk yapılan çalışmalarda neler kullanıldığını, sonradan nerelere gittiğini. Yani bu hikayeyi...
+
+675
+02:28:29,843 --> 02:28:34,843
+Nasıl olduğunu anlamanızı istiyorum. Ortada iyi bir şey çıkacağına inanıyorum.
+
+676
+02:28:35,523 --> 02:28:47,063
+Hocam, eskilerde biraz daha al trafiğine yönelme var gördüğüm kadarıyla. Doğrudan araç trafiği değil de sürekli bir topografik çalışmalar karşıma çıkıyor. Hatta elediğim çok fazla oldu bu şekilde bulduktan sonra.
+
+677
+02:28:47,956 --> 02:29:08,596
+Aynen öyle dediğin gibi. Scholar Google kullanımında da artık yavaş yavaş uzmanlaşırsınız diye ümit ediyorum. Son yıllardakileri seçmek, citation'ı yukarıda daha fazla olanları belirlemek. Bunlar her zaman iyi çalışma olukları anlamına gelmiyor ama dikkat çekici çalışmaların genelde saytları da yüksek oluyor.
+
+678
+02:29:15,956 --> 02:29:35,076
+Bu şeyler olursa ve literatüre katkı olacağını düşünürsem, hakikaten o zaman bazı şeyler de ben de esneyeceğim. Bundan hiçbir endişeniz olmasın. Yani niyetim hep iyi ama bizim sizin yarattığınız çalışmadan literatüre bir şey koymamız lazım. Benim için değerli olan o. Öyle düşünebilirsiniz.
+
+679
+02:29:35,076 --> 02:29:41,195
+Evet şimdi gelelim benim yıllar önce bulaştığım bir konuya.
+
+680
+02:29:43,603 --> 02:30:09,383
+Bu konu aslında bütün hikayenin başladığı nokta görebiliyorsunuz sanırım. Wireless sensor networkler, sensor algılayacağı ağlar, kablosuz algılayacağı ağlar diye de geçer. Telsiz algılayacağı ağlar diye geçer. Genelde telsiz algılayacağı ağlar olarak adlandırılır Türkçesinde. Oldukça önemli bir geçmişi var.
+
+681
+02:30:09,808 --> 02:30:24,908
+Askeri uygulamalarla başlayan bu hikaye bizim açıkçası, nasıl söyleyeyim, bugün IoT'ye geldiğimiz noktanın başlangıç noktası olarak kabul edebilirsiniz.
+
+682
+02:30:24,908 --> 02:30:32,788
+Burada bir, ne diyelim?
+
+683
+02:30:34,260 --> 02:30:57,560
+Nodların üzerinde işlemcisi olan, communication birimi olan, sensing birimi olan nodların etrafa yerleştirilerek elle ya da saçılarak bir helikopter, uçak ya da katapultla atılarak mancınıkla etraftan bilgi toplama hikayesiyle başlıyor.
+
+684
+02:31:00,595 --> 02:31:17,595
+Bu konuda bitkilerden ağırlıklı olarak bilgi toplamak, onları gözlemlemek, onların verimliliğini arttırmak, hayvanlar hakkında zorleşir, nüyanız hakkında bilgi sahibi olmak noktasında özellikle askeri...
+
+685
+02:31:19,219 --> 02:31:40,459
+Ne diyelim operasyonlarla en az zayiatı vererek ortam bilgisine ve düşmandan gelecek saldırıları önlemek ya da ona yapılacak saldırılara destek sağlamak amacıyla bu düğümlerin özellikle açık alanlara, ulaşılması zor alanlara dağıtma söz konusu.
+
+686
+02:31:41,199 --> 02:31:43,659
+Bu düğümlerin tabii yetenekleri var.
+
+687
+02:31:44,079 --> 02:32:04,959
+Bu düğümler sabit olabilirler. Bu düğümler kendi etrafında dönüyor olabilirler. Bu düğümler bir yerden bir yere hareket ediyor olabilirler. Bu düğümlerin bir yerden bir yere hareket etmesi çok maliyetli bir iş. Enerji olarak da o düğümü oluştururken kullandığınız komponentler olarak da.
+
+688
+02:32:10,067 --> 02:32:26,067
+Sabit, statik notlar kullanmayı tercih ederiz. Hem maliyeti düşük hem de bir hareket imkanı olmadığı için enerjiyi harcamayacak. Ama statik notların deployment sırasında bir handikapı var. Nedir? Aynı bölgeye düşen notlar...
+
+689
+02:32:26,675 --> 02:32:43,355
+Hemen hemen aynı coverçta sense ederler. Hemen hemen aynı coverçta communicate ederler. Bu da 100 tane node attığınız bir noktada belki 20 tane, 30 tane nodunu efektif olarak kapsama alanını büyütme ihtimalinin olmaması demek.
+
+690
+02:32:43,956 --> 02:32:51,995
+Bir kapsama alanı, iki tür kapsama alanı var. Biri sense etme kapsama alanı, diğeri de cover, communication kapsama alanı.
+
+691
+02:32:52,352 --> 02:33:09,512
+Cover'dan bahsettiğimiz işte Communication Coverage'da iki düğümün birbirleriyle haberleşebileceği Distance'dan bahsediyoruz. Sense, edilecek Distance genelde Communication Distance'dan daha düşük mesafedir. Genelde aralarında bire ikilik bir oran vardır.
+
+692
+02:33:13,716 --> 02:33:36,335
+Temelde sensing yaparız. Biri omnidirectional, diğeri de directional. Omnidirectional yönsüzdür. 360 derece algılayabilirsiniz. Directional yönlüdür. Bir kameranın bakış açısını düşünün. Yönlü bir şekilde bir pasta dilimini algıladığınızı düşünün. Mikrofon içinde keza aynı şey geçerlidir.
+
+693
+02:33:37,152 --> 02:33:58,851
+Bunlara ek olarak sensing ile ilgili iki tip genelde sensing modelinden bahsedilir. Bir tanesinde ya bir noktayı algılarsınız ya da bir noktayı algılamazsınız. Sıfır ve bir mantığı vardır. Binary sensing olarak da adlandırabiliriz. İkincisi de probabilistic sensing'tir. Burada nasıl bir yapı vardır diye sorsam.
+
+694
+02:34:05,876 --> 02:34:09,835
+Hocam, dolaylı ölçümlerle bir sonuç çıkarma durumu mu var acaba?
+
+695
+02:34:10,975 --> 02:34:11,615
+Değil.
+
+696
+02:34:17,876 --> 02:34:23,096
+Ortamdaki gürültüyü veya belirsizlikleri de modellemeye çalışarak.
+
+697
+02:34:24,576 --> 02:34:34,495
+Öyle diyelim peki ama bu probabilistik sensing bize nasıl bir sonuç üretiyor böyle bir model kullanırsak?
+
+698
+02:34:36,556 --> 02:34:39,355
+Yani bir olasılık dağılımı şeklinde bir sonuç üretiyor.
+
+699
+02:34:39,355 --> 02:34:44,596
+Bir noktayı kesin algılayıp ağlayamayacağımız konusunda bir fikrimiz yok değil mi?
+
+700
+02:34:47,283 --> 02:35:06,923
+Mesafe uzaklaştıkça bu olasılık düşüyor. Hatta belli bir mesafe sonu dramatik bir şekilde düşüyor. Ama size en yakın noktalar 1 iken sonra 0.9 sonra 0.8 olarak devam ediyor. Bu model daha gerçekçi bir yaklaşım. Ama genelde bilimsel çalışmalarda 1 ve 0 mantığı kullanılır.
+
+701
+02:35:10,548 --> 02:35:32,524
+Şöyle anlatayım. Sıcaklığı bir mesafede algılayabilirsiniz, bir mesafede algılayamazsınız. Böyle keskin çizgilerle ayrılamaz. Ortam şartlarına bağlıdır. Ortam şartlarına bağlı olarak bazı durumlarda 5 metreye kadar, bazı durumlarda 6-7 metreye kadar yakınınızda olan olayları sens etme ihtimaliniz oluşur ki sıcaklık biraz daha...
+
+702
+02:35:32,628 --> 02:35:46,008
+Çok doğru bir örnek olmadı ama bir objenin hareketinden bahsedelim. Kameranın bir noktadaki ya da pasif infranetin bir noktadaki hareketi algılamasından bahsedelim. Her zaman sınır o kadar keskin bir şekilde değildir.
+
+703
+02:35:46,008 --> 02:35:59,008
+Tabii biz bu modelleri kullanarak kavrıç problemini çözmeye çalışıyoruz. Peki...
+
+704
+02:36:00,628 --> 02:36:07,488
+Kavrıç probleminde 2-3 tane temel kavrıç yaklaşımı var sensör networklerde.
+
+705
+02:36:08,208 --> 02:36:17,048
+Kavrıçtan başladım çünkü sensör networklerin eğer kavrıcı düzgün sağlayamazsanız aslında esprisi de çok kalmıyor.
+
+706
+02:36:17,048 --> 02:36:26,528
+1. Area Kavrıç. 2. Target Kavrıç. 3. Bir tane daha var.
+
+707
+02:36:28,211 --> 02:36:29,572
+Border alabiliyor mu hocam?
+
+708
+02:36:29,612 --> 02:36:31,252
+Evet, Border Cover'ı aynen öyle.
+
+709
+02:36:32,331 --> 02:36:37,772
+Şimdi, Area Cover'ı da hedefiniz maksimum alanı cover etmektir.
+
+710
+02:36:39,291 --> 02:36:44,772
+Target Cover'ı da verilen hedeflerden maksimum sayıda hedefleri cover etmektir.
+
+711
+02:36:44,932 --> 02:36:48,051
+Yani her noktayı cover etmek zorunda değilsiniz baktığınız alanda.
+
+712
+02:36:48,051 --> 02:36:50,051
+Border Cover'ı da...
+
+713
+02:36:50,675 --> 02:37:12,515
+Bir noktaya giriş ya da çıkış yapılma ihtimali varsa onu detect edebiliyor musunuz, edemiyor musunuz? Border cover-taki temel hedef de budur. Yani bütün alana her yeri avlayan sensörler yerleştirmektense bir line şeklinde sensörleri dizebilirsiniz. Ama bunun da dezavantajı var. Şöyle dezavantajı var.
+
+714
+02:37:15,667 --> 02:37:22,288
+Paraşütle inerse bunu nasıl cover edeceğiz? Border coverç'ta en çok karşılaşılan sorulardan bir tanesidir.
+
+715
+02:37:23,067 --> 02:37:36,987
+Tabii bunun için artık 3D coverçlar modeller oluşmaya başladı. Sensing problemleri, sensör networklerde ağırlıklı olarak hep bugüne kadar 2D olarak çözülüyordu.
+
+716
+02:37:41,876 --> 02:37:59,175
+3D coverage problemlerini ele almak popüler hale geldi. Bu sayede de siz düşman giriş çıkışını sadece topolojik yeryüzünde değil, aynı zamanda havadan yaklaşan araçların tespitinde de kullanabiliyorsunuz.
+
+717
+02:37:59,556 --> 02:38:07,335
+Diyebilirsiniz ki yani biz droneleri havada tutacağız, onların arasından geçerse mi yakalayacağız? Hayır, böyle bir şey yok tabii ki. Bundan bahsetmiyorum.
+
+718
+02:38:07,796 --> 02:38:34,155
+Ama droneların pozisyonlanması birini yakalamak için değil ama başka işleri yapmak için çok çok önemli. Hatta cooperation konusunda ciddi çalışmalar var son dönemde. Droneların birlikte hareketleri konusunda. Sonuçta farklı sensör networkler tipleri var kullandığımız. Biz hepsine genel olarak telsiz algılayacağılar diyoruz ama işte örnek veriyorum.
+
+719
+02:38:34,579 --> 02:38:53,119
+Underwater Akustik Sensör Networks var. Multimedia Sensör Networks var. Multimedia Sensör Networks'lerde ağırlıklı olarak ses ve görüntü taşınıyor. Ses ve görüntü taşımakla fiziksel sıcaklık, nem.
+
+720
+02:38:53,556 --> 02:39:18,695
+Gibi bilgiler taşımak arasında dağlar kadar fark var. Rooting'ten tutun, kullandığınız topolojiye kadar farklı bir yapılanma çözüm üretmek zorundasınız. Çünkü sensörler küçük cihazlar oldukları için iletim kapasiteleri de, bandwidth'leri de düşük kullandıkları protokoller enerjileri çabuk bitmesin diye daha farklı protokoller. Mesela bildiğiniz hangi protokolü kullanıyor sensör networklar?
+
+721
+02:39:21,139 --> 02:39:24,860
+Hocam, NQTT daha önce demiştim ama burada alabilir bir ihtimal.
+
+722
+02:39:25,319 --> 02:39:33,919
+NQTT daha çok IoT diyelim. Sensör networklerde ZIG bir protokolünü kullanıyoruz haberleşme için.
+
+723
+02:39:33,919 --> 02:39:45,835
+IEEE 802.15.4 protokolü. Bandfit oldukça sınırlı ama enerji tüketimine o oranda az olduğu için sahaya attığınız sensörleri...
+
+724
+02:39:45,940 --> 02:40:01,460
+Ama tekrar yenileme şansınız çok kolay olmadığı için, tekrar tekrar redeployment yapma şansınız çok olmadığı için, network lifetime'ını en uzun sürede tutacak şekilde konumlandırmanız ya da o bilgi akışını sağlamanız lazım.
+
+725
+02:40:02,400 --> 02:40:11,780
+Bunun için bir sürü çözüm var, network lifetime'ı uzatmak üzerine. Mesela neler olabilir, onu sorayım size. Sensör network'larda network her bir nodun.
+
+726
+02:40:12,564 --> 02:40:20,924
+Hayatta kalması için doğal olarak network'ün de ayakta kalmasını, nodların ayakta kalmasına bağlarsak neler yapılabilir?
+
+727
+02:40:22,463 --> 02:40:26,623
+Sensörlerin zarar görmesini engelleyecek bir şeyler olabilir.
+
+728
+02:40:26,984 --> 02:40:33,524
+Evet, bir, fiziksel olarak ayakta kalmaları önemli. Bunun için gerekli korumalarla o bölgeye atılması önemli.
+
+729
+02:40:34,195 --> 02:40:49,736
+Enerji tüketimi, illaki bunlar enerji kullanmak zorundalar veya tekrardan bataryalarının doldurulması gerekiyor veya bir yakıt kaynağı yanında olmaları gerekiyor. Bu enerjinin sağlanması gerekiyor.
+
+730
+02:40:50,451 --> 02:41:08,092
+Evet, bu iki türlü şekilde çözüleniyor. Bir, enerjiyi verimli kullanmak için çözümler var. İki, enerji harvesting dediğimiz enerjiyi sensörlerin farklı kaynaklardan elde etmesi var. Farklı kaynaklar, güneş olabilir, su olabilir.
+
+731
+02:41:08,912 --> 02:41:10,371
+Süzgar, su, aynadan öne.
+
+732
+02:41:12,564 --> 02:41:36,463
+Basınç olabilir hocam. Efendim? Basınç değişimleri olabilir. Ses üzerinden olduğunu bilmiyorum ama çok verimde değildi galiba. Aktardığınız bazen veri üzerinden bile ilgili sensöre enerji aktarma şansınız var. Çünkü bir dalga gönderiyorsunuz. Dalganın da bir gücü var. Bunu dönüştürme şansınız bile var. Ama bunların tabii gerçek hayattaki kullanılırlığı pratik anlamda çok kolay değil.
+
+733
+02:41:39,156 --> 02:41:52,476
+Enerji Harvesting problemini bir şekilde çalışıyorlar ve biraz daha farklı tasarımlar gerekiyor. Ama ondan daha kolay enerji harcama konusunda daha tutumlu olabilecek çözümler üretebiliriz.
+
+734
+02:41:59,476 --> 02:42:03,476
+Belli periyotlarda uyuması, belli periyotlarda da uyanması lazım.
+
+735
+02:42:03,615 --> 02:42:04,036
+Bilgi transferi sağlamak için.
+
+736
+02:42:04,036 --> 02:42:08,155
+Direkti veri göndermek yerine, actionlarda veri gönderilebilir.
+
+737
+02:42:09,775 --> 02:42:13,995
+Sensörde veriyi anas edip, en önemli veri gönderilebilir mesela.
+
+738
+02:42:14,708 --> 02:42:31,048
+Gayet güzel. Şimdi oraya da geleceğim ama oraya gelmeden önce hemen şunu tamamlayayım. Bu bahsettiğimiz slotlar dahilinde time düzeyinde de uyandırabilirsiniz. Belli time'larla uyanırlar, belli time'larla uyurlar.
+
+739
+02:42:42,708 --> 02:42:57,368
+Karşı tarafa bilgi çıkışı yapacağınızda, aydın konumundaki kişiye belli periyotlarda uyanan mesajı gönderirseniz bir sonraki turda da bilgi göndereceğinizi beyan ederek bunu gerçekleştirebilirsiniz.
+
+740
+02:42:58,968 --> 02:43:04,068
+Ama ilk yöntem veri kaçırmasına neden olmaz mı sensörün uyutulması?
+
+741
+02:43:04,852 --> 02:43:13,912
+Sadece bir fikir yani. Ben şöyle düşünüyorum. Uyuduğu zamanda bir olayın, bir action'ın gerçekleşmediğini bilemeyiz de.
+
+742
+02:43:14,692 --> 02:43:22,532
+Orada farklı çözümler var. Bir tanesi etrafı izlemeye devam etmek ayrı bir şey.
+
+743
+02:43:23,123 --> 02:43:37,100
+İki, komünikasyon yapmak ayrı bir şey. Yani sensetmekle komünikasyon birbirinden bağımsız şeyler. Ama sıcaklık bilgisi topluyorsanız yangınla ilgili bir gelişme olursa bunu...
+
+744
+02:43:37,236 --> 02:44:03,556
+Bir dakika önce sens etmeniz çok bir şey değiştirmeyecektir. Ya da 30 saniye önce. Bunun aralığını açabilirsiniz ama bir düşman gözlüyorsanız giriş çıkış yapılmadığına o zaman bu sensörün bu kadar uzun süre uyutulması mümkün olmayacaktır. Bu konuda haklısın. Sensör diyorum ama. Sensörle sensör not birbirinden farklı şeyler. Düğüm bütün birimleri içeriyor. Sensör kısmı düğümün bir parçasını içeriyor. Ve bir düğüm üzerinde birden fazla sensör olabilir.
+
+745
+02:44:04,435 --> 02:44:20,376
+Bunlara dikkat etmek gerekiyor. Şimdi sensör networkleri devam edeceğim ama saatte 15.48 olmuş. Bugünü daha uzun tutmayayım. Önümüzdeki hafta sensör networkleri bitireceğim hızla.
+
+746
+02:44:20,799 --> 02:44:40,799
+Yani bir fikir sahibi olmanızı istiyorum. Çünkü IoT'nin başlangıç noktası burası. Farkları neler? Bunlara değineceğim. Sonra IoT tarafına geçeceğiz. Biraz IoT ve büyük veri konuşacağız. Son haftada otonom araçları konuşuyor olacağız. Ve böylece hem yılı bitiriyor olacağız. Hem de...
+
+747
+02:44:43,540 --> 02:44:51,420
+Ve final öncesinde son bir sizinle görüşmüş olacağız. O zaman bir daha bu ödevle ilgili de sorularınızı vesaireye alıyor olacağım.
+
+748
+02:44:52,180 --> 02:44:54,819
+Şimdi başka bir sorusu olan var mı bu süreçle ilgili olarak?
+
+749
+02:44:57,620 --> 02:44:59,780
+Başka ara bir ödev olacak mı acaba?
+
+750
+02:45:00,780 --> 02:45:02,220
+Ara bir ödev vermeyeceğim başka.
+
+751
+02:45:02,995 --> 02:45:06,815
+Tamamdır. Bir de ikinci vize de olmayacaktık demiştiniz diye hatırlıyorum.
+
+752
+02:45:06,876 --> 02:45:08,835
+Evet, ikinci vize de olmayacak. Aynen öyle.
+
+753
+02:45:09,296 --> 02:45:09,956
+Tamamdır hocam.
+
+754
+02:45:10,075 --> 02:45:16,935
+Yani o yüzden dönem projeniz ve finalde vereceğim ödevin kritiklik seviyesi birazcık yükselmiş oluyor.
+
+755
+02:45:19,075 --> 02:45:23,855
+Burada iyi iş çıkarmaya çalışın.
+
+756
+02:45:26,384 --> 02:45:31,384
+Yani ağırlıkları biraz daha yüksek olacağı için herhangi bir sıkıntıya uğramayalım.
+
+757
+02:45:33,523 --> 02:45:50,043
+Aslında ikinci ödevi vermek gibi bir planım vardı ama o kadar çok ödev yükünden bahsedildi ki, bari dedim ben bu sefer biraz insaflı davranayım arkadaşlarımıza.
+
+758
+02:45:50,484 --> 02:45:59,484
+Hocam, korona var diyorum yani. Kısıtlama var da hafta sonu dışarı çıkamıyorum yani. Yoksa ödebile hiç yetişmeyecekmiş.
+
+759
+02:45:59,963 --> 02:46:09,263
+Evet, çok zor oluyor hakikaten. Ama sizden tek rica benim bu yaklaşımımın karşısında siz de teslim edeceğiniz ödevleri ayrıntılı da güzel bir şekilde hazırlamanız.
+
+760
+02:46:11,092 --> 02:46:16,252
+Evet, peki. O zaman hepinize teşekkür ediyorum. Önümüzdeki hafta görüşmek üzere. Hepinize iyi hafta. Sağlık, günler.
+
+761
+02:46:16,412 --> 02:46:16,932
+İyi günler.
+
+762
+02:46:17,232 --> 02:46:17,672
+İyi hafta.
