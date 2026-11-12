@@ -1,0 +1,1311 @@
+1
+00:00:48,948 --> 00:00:50,048
+Günaydın arkadaşlar.
+
+2
+00:00:52,368 --> 00:00:53,228
+Merhaba hocam.
+
+3
+00:00:56,347 --> 00:00:58,987
+Günaydın hocam.
+
+4
+00:00:58,987 --> 00:00:59,588
+Merhaba hocam.
+
+5
+00:01:00,248 --> 00:01:01,108
+Merhabalar.
+
+6
+00:01:02,108 --> 00:01:03,667
+Sen 9-6 geçiyor.
+
+7
+00:01:04,468 --> 00:01:06,888
+Biraz bekleyelim sonra başlayalım.
+
+8
+00:01:16,019 --> 00:01:18,140
+Ön geçe başlayalım.
+
+9
+00:01:18,140 --> 00:01:20,140
+[öğrenci] görüşmek üzere.
+
+10
+00:05:32,403 --> 00:05:34,403
+Evet, tekrardan merhaba arkadaşlar.
+
+11
+00:05:38,963 --> 00:05:44,043
+İçerimize bakalım.
+
+12
+00:05:47,043 --> 00:05:56,803
+Bugün 15 Mayıs. Geçen hafta ödev ücünü ve proje konularını duyurmuştum.
+
+13
+00:06:03,187 --> 00:06:10,687
+Derslere devam edenlerin büyük bir kısmının projelerini aldık herhalde diye tahmin ediyorum. Birazdan açarız onu da.
+
+14
+00:06:11,788 --> 00:06:20,007
+O zaman proje konuları belirlenmesini tamamlayacakmışız. Dersimiz varmış. Haftada ödev 3 sunlarımız pek.
+
+15
+00:06:21,487 --> 00:06:28,647
+Şimdi, şu kutu tutalım. Proje konularını bir açayım tekrardan.
+
+16
+00:06:31,699 --> 00:06:45,120
+Boşta kalan şu anda sadece B var. Onun aracındaki bütün konuları alındı. Bir de tabii öğrencilerin kendi önerileri de var.
+
+17
+00:06:47,259 --> 00:06:56,120
+Burada proje hiç almamış olanlar vardır muhtemelen.
+
+18
+00:06:58,324 --> 00:06:59,244
+Ama
+
+19
+00:07:04,403 --> 00:07:11,923
+Mühendisliği üzerinden süreci, şimdi onun detayına girmeyelim.
+
+20
+00:07:11,923 --> 00:07:21,444
+Peki. Ama dediğim gibi benim önerilerimden bir tek B kalmış durumda onu söyleyeyim.
+
+21
+00:07:23,283 --> 00:07:26,923
+Peki. Şimdi...
+
+22
+00:07:28,923 --> 00:07:30,923
+Bugünlük şu...
+
+23
+00:07:32,180 --> 00:07:33,579
+Anlamış.
+
+24
+00:08:16,019 --> 00:08:17,459
+Sırak geldi mi arkadaşlar?
+
+25
+00:08:20,399 --> 00:08:21,560
+Evet hocam geldi.
+
+26
+00:08:23,519 --> 00:08:30,459
+Tamam, şimdi geçen hafta biraz soru cevaplama sistemlerine başlamıştık.
+
+27
+00:08:34,460 --> 00:08:41,460
+Şurayı bir görmüş batırlarsanız, ilk önce Memo Netvektörünü görmüştük.
+
+28
+00:08:42,868 --> 00:09:02,408
+Memory Networkleri çok temelde şöyle bir şeyden bahsediyorduk. Elimizde bir memory vardı. Şurasını memory olarak düşünelim. Bir de soru vardı. Şu sondaki kısmı da soru olarak düşünelim.
+
+29
+00:09:09,395 --> 00:09:22,815
+Bu sorunun cevabının hangi memori bloklarıyla alakalı, hangilerine faydalanarak bulunması gerektiği üzerine bir mekanizmaydı aslında memori networkleri.
+
+30
+00:09:22,815 --> 00:09:25,815
+Eğitim kümesinde...
+
+31
+00:09:26,995 --> 00:09:47,836
+Şu 6 ve 2, ki onlar işte bu sonu cevabında şu 6 ve 2'nin alakalı olduğunu söylüyorlar. Bu 6 ve 2'nin kullanılması gerektiğini söylüyor. Eğitim kümesinden bahsediyorum. Eğitim kümesinde bunun olmasının sebebi eğitim sürecinde LOS'ta bunu kullanması aslında.
+
+32
+00:09:50,163 --> 00:10:01,163
+Makinenin şöyle bir şey yapmasını aslında temelde bekleniyor. Bununla alakalı, yani şey gibi nasıl söyleyeyim...
+
+33
+00:10:03,711 --> 00:10:30,552
+Cevabı tak diye bizim karşımıza getirsin tamam ama getirirken de birazcık onu yönlendirelimi istiyor istemiş tasarımcılar. Yani cevabı bul da nasıl bulursan bul şeklinde değil. Sen ilk önce bununla alakalı, memorinin içerisinde bununla alakalı senin içine yerine olacak parçaları bul. Ondan sonra onları kullanarak ilerle.
+
+34
+00:10:31,220 --> 00:10:51,740
+Böyle bir tasarım yapmışlardı. Bu tasarımda da iki adımlı bir şeyden bahsediyoruz şu anda. X diye ifade ettiğim şey soru, M diye ifade ettiğim şey memory blokları. Memory bloklarından hangisiyle SO diye bir işlem gerçekleşiyor?
+
+35
+00:10:59,283 --> 00:11:13,443
+Şurada şeyler var. Tetalar var ki bu tetalar şeyler, bir embelleğine çeviriyorlar. İçine aldıkları kısmı yani hem soruya hem cevabıya embelleğine çeviriyorlar.
+
+36
+00:11:13,543 --> 00:11:18,503
+Ve burada bir benzerlik hesabında kullanılacak bir U matrisi var.
+
+37
+00:11:19,003 --> 00:11:23,563
+Ki bu U matrisi öğrenilen bir matris süreç boyunca öğrenilen bir matris.
+
+38
+00:11:24,980 --> 00:11:32,860
+Bu işi gerçekleştirdiğimizde x ile m'in arasındaki similarity'yi duyduğumuzda her bir m ile arasındaki similarity'yi duyuyoruz.
+
+39
+00:11:33,000 --> 00:11:37,880
+Ve n benzeyen hangisiyse onu seçip ona o1 ediyoruz.
+
+40
+00:11:38,799 --> 00:11:45,279
+Daha sonra x, m, o1 yani buradaki o1 bir indis.
+
+41
+00:11:53,491 --> 00:12:19,432
+Bir sonraki en alakalı cevabı bulmakta kullanacağımız memory bloğunu bulmaya çalışıyoruz. Burada yine en iyiyle indislenmiş o. Onun da indisi bu işlemin sonucunda O2 çıkıyor. En sonunda da yaptığımız şey X yani soru. Memory bloğundaki alakalı bir kısım ve alakalı ikinci kısım. Bunların hepsinin konkaten edilmiş haliyle.
+
+42
+00:12:20,211 --> 00:12:46,991
+Elimizdeki bu sefer vocabulary üzerinden en benzeyen şey neyse, yine burada da similat hesabı yapıyor görüyorsunuz. Bu sefer şuradaki W dediğimiz şey memory bloklarından oluşmuyor, elimizdeki vocabulary'den oluşuyor. Bu problem, yani bu paperda çözülen problemler için vocabulary'ın oldukça küçük olduğundan söz edebiliriz. Yani 100 civarında falan şey var.
+
+43
+00:12:47,443 --> 00:13:00,803
+Bu kelime var. Dolayısıyla bu vakuvveriliklerin en yakın olana hangisiyse onu bize cevap olarak dönüyor.
+
+44
+00:13:01,364 --> 00:13:16,844
+Burada similite hesabında işte SO ve SR diye iki tane işlem var. SO'lar, U'ları aynı. SR'nin U'su farklı. Bu iki tane farklı U'nun yani şu ki SO ve SR'nin U'ları farklı dediğimiz kısım bunu ifade ediyor.
+
+45
+00:13:16,844 --> 00:13:25,764
+Ve buradan da bize cevabı ve koblenin şu yümcül elemanıdır bu diye cevap dönüyor.
+
+46
+00:13:29,364 --> 00:13:52,683
+Yani loss fonksiyonuna baktığımızda şu network'ün loss fonksiyonu. Burada aslında MO0 diye ifade edilen kısım bizim şuradaki 6. Yani 6 ile mesela bunun benzerliği yüksek olmasını istiyor.
+
+47
+00:13:53,364 --> 00:14:15,064
+Onun haricindeki, altının haricindeki her şeyle düşük olmasını istiyor. İkinci basamakta yine aynı şekilde burada ikiyle benzerliğin çok yüksek olmasını istemiyor. Burada da gerçek cevapla benzerliğin yüksek olmasını istiyor. Gerçek cevabının haricindeki bütün vakabudaki kelimelerle benzerliğin az olmasını istiyor.
+
+48
+00:14:15,668 --> 00:14:30,827
+Dolayısıyla şuradaki üstü olan kısımlar, üstünde çizgi olan kısımların hepsi gerçek cevabın haricindekiler. Yani gerçek cevap dediğim, şu daki 6, 2 ve bahçe diye ifade ettiğimiz kısmın haricindeki ifadeler.
+
+49
+00:14:30,827 --> 00:14:41,508
+Dolayısıyla memory networkler bir memorydeki bizim sorumuzla alakalı kısımları bulmak, onlardan faydalanmak üzerine,
+
+50
+00:14:41,971 --> 00:14:56,231
+Dâhili mekanizmeli bir miktar yönlendirmek aslında. Yani cevabı sen burada nasıl bulursan bul diye, bu şekilde bulu yönlendirmek amacıyla tasarlanmış mimarlar.
+
+51
+00:14:56,551 --> 00:15:05,711
+Bunun bir gelişmiş hali, end-to-end networkler demişti. Buradaki end-to-end kasıt aslında.
+
+52
+00:15:06,772 --> 00:15:19,012
+Şu eğitim kümesindeki şu 6 ve 2'ye olan ihtiyacı ortadan kaldırmak. Yani şu 6 ve 2'yi kullanmasak biz bu eğitim sürecinde bu işi ne gerçekleştirebilir miyiz?
+
+53
+00:15:19,912 --> 00:15:32,012
+Burada da aslında şey kısmında yapılan şey şöyle bir yapı olduğundan bahsetmiştik. Memorinin iki tane temsili var burada. Bir tanesi...
+
+54
+00:15:33,460 --> 00:15:43,059
+A temsili, bir tanesi C temsili diyelim. Memordeki ifadelerin. Şuradaki sentence dediğimiz şeyler memordeki cümlelerimiz. Yani şunlar, şurada gördüğümüz şeyler.
+
+55
+00:15:45,000 --> 00:15:54,460
+Question dediğimiz şey şu en sondaki arkadaş. Bu bir M-Belling'i alınıyor. Şimdi bu soluyla işte...
+
+56
+00:15:54,644 --> 00:16:06,004
+A temsili diyelim. A temsilindekilerin en benzerlikleri bulunuyor. Ve burada One Hat bir şey yapılmıyor. Yani şurada One Hat diye yapı.
+
+57
+00:16:06,451 --> 00:16:33,151
+Buna en benzeyen neyse, onu al, onu kullan şeklinde bir yapı vardı. O1'i buluyordu. O1'den sonra O1'i kullanarak O2'yi buluyordu. Burada ise direkt şudur şeklinde bir yapı yok. Benzerlikleri oranında ağırlıklar hesaplanıyor ki bu ağırlıklar buradaki Pİ'ler. Yani buradaki Pİ'lerin anlamı şu, soru elimizdeki sentencelerden iyincisine ne oranda benziyor?
+
+58
+00:16:33,779 --> 00:16:54,919
+Bunu ifade ediyor. Daha sonra bu P'lerle, burada dediğim gibi memmanın başka bir temsili daha var. Onların çarpımı üzerinden bir weighted sum olarak bir O'embedingi bulunuyor. Bu O'embedingi de yine buradaki sorunun embedingi çarpılarak en benzeyen şey neyse.
+
+59
+00:16:58,035 --> 00:17:15,935
+Cevap neyse onun bulması çalışılıyor. Burada tabii dikkat çekici bir unsur. Bu yapılım biraz şeyi andırıyor. Transformerlardaki attention mekanizmasını bir miktar andırıyor. Şu manada andırıyor. Bir kere iki tane temsil var.
+
+60
+00:17:16,980 --> 00:17:33,579
+Key ve value diye düşünürseniz, transformalardaki key ve value yapısını düşünürseniz, en benzerliğini buluyor. En benzerinin ağırlıklarıyla onları çarparak onu temsili. Aslında işte buradaki sorunun gerçek temsili şuradaki gibidir gibisinden bir şey yan geliyor.
+
+61
+00:17:33,579 --> 00:17:44,780
+Tabii burada soru ve cevap şeklinde ama Transformal Mühendisliği'ne bunu dönüştürdüğümüzde, onun terimleri düşünürseniz self-attention şeklinde düşünebilirsiniz.
+
+62
+00:17:44,980 --> 00:18:01,740
+Bir kelimenin gerçek anlamının, onun etrafındaki diğer kelimelerin vektörlerinin ağırlıklandırılmış ortalamaları gibisinden bir sonucu çıkıyor.
+
+63
+00:18:01,860 --> 00:18:07,539
+Ki bu sayede bir kelime etrafındaki kelimelerden anlam kazanıyor.
+
+64
+00:18:08,276 --> 00:18:09,756
+Böyle bir mekanizma.
+
+65
+00:18:10,155 --> 00:18:13,796
+Dediğiniz gibi internet yapıların özelliği buydu.
+
+66
+00:18:14,356 --> 00:18:21,655
+Daha sonra bunların tek adımını yapmak yerine bunu 2-3 adımını yapmak mümkün olduğundan bahsedmiş.
+
+67
+00:18:21,736 --> 00:18:24,615
+Burada mesela bu fix bir şekilde 2 adımlıydı.
+
+68
+00:18:24,615 --> 00:18:28,696
+Burada da fix tek adımlı sol tarafta, burada da fix 3 adımlı.
+
+69
+00:18:29,456 --> 00:18:34,256
+Bu 3 adımlı, 2 adımlı ve tek adımlı ile zaten gerçekleştirebilecek yapılarda.
+
+70
+00:18:36,276 --> 00:18:46,655
+Aslında temsillerin farklılaşması, yani birinci layırdaki temsiller A1, C1 iken, memori'nin, ikinci layırda A2, C2, üçüncü layırda A3, C3.
+
+71
+00:18:47,036 --> 00:18:53,256
+Bunu da yine derinleşmesi şeklinde yorumlayabilirsiniz.
+
+72
+00:18:53,256 --> 00:19:03,816
+Yani her bir layırda soruya göre memori'dekilerin anlamı, etkinliği öyle söyleyelim, değişiyor.
+
+73
+00:19:04,307 --> 00:19:23,507
+Bununla alakalı belli, tabii burada şeyle vardı, position, embeddingler, kelimelerin bulundukları konuma göre anlamda kazanması. Bunun için de şöyle bir matriz tanımlanmıştı. Bu matriz de aslında bir…
+
+74
+00:19:26,291 --> 00:19:47,243
+Çünkü sütunlar bizim indislerimizi gösteriyor. Yani kaçıncı kelime olduğunu gösteriyor. O kelimenin, bu da 128 boyutlu bir şeyde. Kelimelerin kendisi 128 boyutlu. Bir de 128 boyutlu bir position embedding hesaplıyorsunuz. Bu 128 boyutlu position embedding ise...
+
+75
+00:19:47,251 --> 00:19:53,551
+Bu sabit bir yapıda bulunuyor. Bu sabit yapı, şurada gördüğünüz fonksiyonla hesaplanmış.
+
+76
+00:19:53,551 --> 00:19:59,551
+Şimdi bu fonksiyonun özelliği şu, kelimeler ardışık ise...
+
+77
+00:20:00,000 --> 00:20:22,000
+Onların pozisyon en benimkleri birbirlerine yakınlar. Buradaki birinci ile ikinci düşünüyorum. Sütunlarda çok büyük bir değişiklik yok. Ardaşık sütunlarda. Şuradaki bir sütunla, şuradaki bir sütunla arasında çok büyük bir fark var. Buradaki ve buradaki arasında bir fark var. Birbirlerine uzaklar, yakınlar. Bunu ne yapabiliyoruz? Anlayabiliyorsunuz. Dolayısıyla...
+
+78
+00:20:23,955 --> 00:20:38,375
+Kelimelerin bulundukları yerlerin de işin içine katılması sağlanmış. Bunlar hep aslında bir nevi düşüklüğünüzde transform yapıların, berk yapıları bunlara doğru giden adımlar şeklinde algılayabiliriz.
+
+79
+00:20:38,975 --> 00:20:50,375
+Burada end-to-end mimarlarla yapılmış çalışmalarda elde edilmiş sonuçlar var. 20 tane görev tanımlanmış. Buradaki görevlerin hep şey olduğunu söylemiştik. Çok küçük bir recovery sahibi.
+
+80
+00:20:50,644 --> 00:21:03,304
+Ne olduğunu söylemiştik. Burada tabii karşımıza başka bir yön çıkıyor aslında. Eğitim kümelerinin anlamlı olup olmaması.
+
+81
+00:21:03,304 --> 00:21:14,523
+Anlamlı olup olmamasından kasıt şu aslında. Yani X veri kümesi dediğinizde, soru cevaplama veri kümesi dediniz mesela.
+
+82
+00:21:15,188 --> 00:21:31,768
+Bu veri kümesinde bir sistem başarılı olduysa soru cevaplama artık bu sistem yapabiliyordur gibi bir şeye geçmek çok doğru olmayabilir aslında birazcık bunu söylüyor.
+
+83
+00:21:31,768 --> 00:21:41,508
+Yani adı X olan bir veri kümesinde bir makine başarılıysa o zaman artık makinelerin X işini yapabildiğini söylemek çok doğru bir hareket olmaz.
+
+84
+00:21:42,675 --> 00:22:01,415
+Çünkü veri kümelerinin içerisinde bu işin hiç de aklımıza gelmeyen ve de istemediğimiz bir yöntemle çözülüyor olabileceğini söylemiştik.
+
+85
+00:22:02,335 --> 00:22:07,996
+Geçen hafta bununla alakalı bir örnek olayda anlatmıştım değil mi bu tanklarla alakalı?
+
+86
+00:22:07,996 --> 00:22:09,735
+Hatırlıyor musunuz?
+
+87
+00:22:14,644 --> 00:22:15,443
+Evet hocam.
+
+88
+00:22:17,684 --> 00:22:21,663
+Şimdi burada da bunun bir benzeri olay var.
+
+89
+00:22:23,403 --> 00:22:30,443
+Bu başarılı sonuçların arkasından, bayağı başarılı sonuçlar var birçok bir şeyde.
+
+90
+00:22:32,903 --> 00:22:40,104
+Bazen soru cevap, pardon metin var, bir soru var, bir de cevap var. Bizim derimiz cevabı tahmin etmek.
+
+91
+00:22:40,692 --> 00:22:54,512
+Bazı görevlerde şeyin falan olabildiğini görülmüş. Yani ben soruyu sormadan sadece metni vereyim bana cevabı verebiliyor. Ya da sadece soruyu vereyim hiç metni vermeye bana cevabı verebiliyor.
+
+92
+00:22:54,928 --> 00:23:07,728
+Doğalysa da burada aslında sorudan cevaba ya da metinden cevaba bizim hiç düşünmediğimiz ve istemediğimiz meplemeler yaptığını aslında buradan anlayabiliyoruz.
+
+93
+00:23:07,728 --> 00:23:13,008
+Biz her ne kadar burada işte ilk önce şey yap.
+
+94
+00:23:19,635 --> 00:23:40,355
+İlk önce şununla bir tane memori yakala, ondan sonra ona git, sonra onunla birleş ötekisine git gibi gibi ya da burada olduğu gibi her biriyle ağırlıklarını bul. Oradan hem soruyu hem cevabı kullanarak bu işi böyle adım adım gerçekleştir desek de, yönlendirmeye çalışsak da öyle söylerim.
+
+95
+00:23:42,867 --> 00:23:50,567
+Bizim istemediğimiz, aklımıza gelmeyecek şekilde çözümlerin ortaya çıkabildiği görülmüş.
+
+96
+00:23:51,107 --> 00:23:55,387
+Bu da dediğim gibi aslında şey birazcık denk geliyor.
+
+97
+00:23:55,748 --> 00:24:06,448
+Adı X olan veri kümesinde başarıyı sağlandığında, öyle söyleyelim, o X olayı çözülmüş falan, makinen tarafından çözülmüştür gibisinden bir şey demek.
+
+98
+00:24:07,124 --> 00:24:12,224
+Çok doğru değil. Burasını aslında ifade ediyor.
+
+99
+00:24:15,124 --> 00:24:22,504
+Şimdi burada yine bir başka soru cevap yapısı var.
+
+100
+00:24:23,423 --> 00:24:28,104
+Ki bu da aslında çok böyle nasıl söyleyeyim?
+
+101
+00:24:30,067 --> 00:24:40,727
+Bambaşka farklı bir şey değil. Yine temelde benzerlikler üzerinden, yani konteks ve question. Konteks dediğimiz şey burada şeyimiz.
+
+102
+00:24:43,284 --> 00:25:00,424
+Paragrafımız, soruda bizim question'da ifade ettiğimiz şey, en beliklerden geçiyorlar. Daha sonra bunlar context query attention diye ifade ettiğimiz bir yapıya giriyorlar. Artık attentionlar burada ismiyle geçmeye başlıyor.
+
+103
+00:25:04,307 --> 00:25:17,027
+Attention ifadesi doğal dil işleme NLP alanından çıkmış bir kavram değil attention ifadesi. Attention dikkat demek.
+
+104
+00:25:21,619 --> 00:25:37,819
+Görüntü işleme tarafında da buna dair birçok çalışmalar var. Doğal bir işlemede de tabii ki buna dair birçok çalışmalar var. Ama Transformer'ların bu noktaya getirdikleri farklı bakış açısı, self-attention kısmı.
+
+105
+00:25:38,208 --> 00:25:47,308
+Ki bunu da Sel Süpervars'ta ifade ettiğimiz görevlerde çok büyük ölçeklerde uygulanabilir. Uygulanması.
+
+106
+00:25:49,308 --> 00:26:01,388
+Dolayısıyla böyle bir şey bir anda hop diye ortaya çıkmıyor. Aslında birazcık onu anlatmaya çalışıyorum burada.
+
+107
+00:26:02,112 --> 00:26:28,432
+Yani cep yeni korkunç büyük bir şey. Tek bir adımda böyle ilerlemiyor. Ön hazırlıklarını belli bir miktar görebiliyorsunuz. Tabii bu biraz şimdi bilerek geçmişi yorumlamaya denk geliyor. Yani şu anda geldiğimiz noktayı biliyoruz. Geçmişte de bunun ayak izlerinin olduğunu.
+
+108
+00:26:29,172 --> 00:26:46,392
+Bu görebiliyoruz. Ama içinde bulunan noktada, asıl gidilecek noktanın, başarılı olacak yönün ne taraf olacağını tayin etmek o kadar da kolay bir iş değil. Geçmişe doğru baktığınızda her şey çok şey geliyor, manalı geliyor, anlamlı geliyor.
+
+109
+00:26:46,392 --> 00:26:53,392
+Ama o içinde bulunan zamanda başarılı olacak yöne doğru gitmek.
+
+110
+00:26:55,476 --> 00:27:04,216
+Bir miktar şans, o da azımsanamayacak bir şey. Bir miktarda tabii ki öngörü, vizyon gerektiriyor.
+
+111
+00:27:05,136 --> 00:27:16,016
+Peki, burada da yine bahsettiğim gibi aslında soru cevaplama kısmında bir paragrafın içerisinden, bu sefer karşımızda bir paragraf var.
+
+112
+00:27:16,415 --> 00:27:19,315
+Bu paragrafın içerisinden cevabı bulmak istiyoruz.
+
+113
+00:27:19,515 --> 00:27:24,555
+Ve burada bulmaya çalışan şey paragrafın bu sorunun neresinde başlayıp neresinde bittiği.
+
+114
+00:27:25,015 --> 00:27:30,255
+Yani cevap bir kelime değil, öyle söyleyeyim.
+
+115
+00:27:30,336 --> 00:27:33,015
+Çünkü kelimeyi söyle şeklinde değil.
+
+116
+00:27:34,195 --> 00:27:41,596
+Burada bulunmak istenen şey paragrafın içerisinde cevabın nerede başlayıp nerede bittiği sorusu.
+
+117
+00:27:41,596 --> 00:27:44,336
+Burada işte start probability ve end probability.
+
+118
+00:27:44,415 --> 00:27:57,775
+Teknik Üniversitesi'ler temelde gerçekleştiriliyorlar. Yani cevabın nerede başladığına da. Burada aslında şöyle bir şey düşünebilirsiniz. Paragrafın içerisindeki kelimeler ya da tokenlar uzunluğunda bir şey var elinizde.
+
+119
+00:27:57,775 --> 00:28:11,055
+Evet, vektör var diyelim. Oradaki her birinin başlangıç token'ı olma ve bitiş token'ı olma olasılıkları aslında hesaplanıyor. Ve buradan adım adım.
+
+120
+00:28:11,392 --> 00:28:18,752
+Şuradaydı herhalde onlar. Enimize edilen fonksiyon. Evet, gerçekte başlangıçları.
+
+121
+00:28:22,740 --> 00:28:45,460
+Yani Vekobler'ın içerisinden bir kelimeyi seçmek yöntemi yerine, böyle söyleyelim, burada şey geçiliyor. Paragrafın içerisinde sorunun cevabı nerede başlayıp nerede bitiyor. Üretici bir model değil burası. Dikkatinizi çekmek isterim. Burada aslında tamamen şey var.
+
+122
+00:28:47,923 --> 00:29:11,864
+Paragrafın içerisindeki belli bir parçanın sorunun cevabı olması mevzusu var. Ki bu da SNLH dataset'inin yapısı. En azından versiyon 1'in yapısı. Versiyon 2'de cevabın olmadığı cümleler de var ama birinci versiyon da illaki cevap şeyden.
+
+123
+00:29:12,372 --> 00:29:16,432
+Paragrafın içerisindeki bir kısım olarak ifade ediliyor.
+
+124
+00:29:17,592 --> 00:29:20,852
+Ve burada dediğim gibi birçok çalışma gerçekleştiriliyor.
+
+125
+00:29:20,852 --> 00:29:25,491
+Burada belki bir tık farklı olabilecek şey, yapay veri arttırma kaleminde gerçekleştiriyor.
+
+126
+00:29:26,711 --> 00:29:32,751
+İngilizce, Fransızca, Fransızca, İngilizce gibi veriyi arttırmak üzerine yaklaşımlar da var.
+
+127
+00:29:33,491 --> 00:29:50,672
+Şimdi burada şey tarzında, günümüze birazcık gelmeye başladığımızda şey yapısını birazcık görebiliyoruz.
+
+128
+00:29:50,672 --> 00:30:00,432
+Geçişi daha doğrusu. Bir seçmeden ziyade…
+
+129
+00:30:00,432 --> 00:30:10,731
+Yani cevap şudur, şuradadır falan gibisinden bir seçim yapmak. Ki Bert'in de mesela, Bert, Fine Tuning falan yapılarına baktığınızda.
+
+130
+00:30:11,412 --> 00:30:25,172
+Şıkların arasından seçmek ya da paragrafın şurasına başlıyor, şurasına bitiyor gibisinden görevlere uyarlanabildiğini, bunların üzerine işlerin yürüdüğünü görüyoruz.
+
+131
+00:30:25,172 --> 00:30:35,832
+Daha sonra bu 2022'nin aralığında nidihar bu CHPT tarafıyla ilerleyen süreçte ise,
+
+132
+00:30:37,107 --> 00:30:55,968
+Biraz da onun evveli de var tabii. Yöntem bu noktada değişmeye başladı. Yöntem bu noktada şöyle değişmeye başladı. Artık üretici süreçler işin içerisine girmeye başladı. Yani cevabı şuradan seç, kümenin içerisinden seç.
+
+133
+00:30:56,596 --> 00:31:08,435
+Yani şurada cevap nereden başlıyor, nerede bitiyor, bana söyle gibisinden yapılır değil. Tamamen üretime dayalı böyle bir sorunun cevabı ne olur?
+
+134
+00:31:09,587 --> 00:31:34,147
+Gibi düşünebilirsiniz. Cevaplar da şeyler. Şu paragrafın şurası falan gibisinden şeklinde değiller. Cevabın kendisinin üretilmesi üzerinden. Senin paragrafı veriyorsunuz, bana bu paragraftaki soruyun cevabını söyle diyorsunuz. İlla paragrafın içerisindeki bir şeyi birebir kopyalayıp size söylemesini beklemiyorsunuz bu sefer.
+
+135
+00:31:36,147 --> 00:31:37,587
+Normalde insanların...
+
+136
+00:31:37,587 --> 00:31:43,147
+Bu konuların da yaptığı şey öyle bir şey değildir. Bir şekilde bir üretim gerçekleşir.
+
+137
+00:31:43,731 --> 00:32:06,571
+Ve dediğim gibi şu anki mimariler yavaş yavaş oraya doğru kaymış durumda. Tabi bu bugünkü konuyu mevzu falan o kadar hızlı değişiyor ki. Ama şöyle bir şey söyleyeyim. Bu işteki büyük oyuncuların hepsi artık bu üretici modeller diyelim. Bunlara doğru yönelmiş durumdalar.
+
+138
+00:32:11,667 --> 00:32:36,927
+Üretici değil de tahmin eden sınıflandıran falan. Oralar birazcık daha şeyle kaldılar. Arka planda kaldılar. Şu anda çıkan bütün büyük mimarilerin, öyle söyleyeyim. Büyük modellerin hepsi bu üretici süreçler üzerinden hareket ediyorlar ve otoregresif üretici süreçler üzerinden hareket ediyorlar.
+
+139
+00:32:37,683 --> 00:33:01,224
+Peki, şimdi o zaman üretim öne çıktı. Şimdi bir miktar şeyden bahsedelim. Üretim nasıl bir şey? Şimdi bu üretim dediğimiz şey aslında oldukça geçmişi uzun bir şeyi var. Ne derler ona? Geçmişi var, öyle söyleyelim.
+
+140
+00:33:02,579 --> 00:33:17,579
+Burada üretim derkenki ifadem aslında otoragresif modeller. Otoragresif modellerini de anlamı şu, bir sonraki adımı tahmin etmek. Bir sonra ne olacağını tahmin etmek. Bir süreç var elinizde. Bu sürecin...
+
+141
+00:33:18,099 --> 00:33:37,099
+Belli bir yere kalaki kısmı size veriliyor. Siz de ondan bir sonraki adımı tahmin ediyorsunuz. Peki bir sonraki adımı tahmin ettiğimiz zaman uzun bir şey nasıl üretiyoruz diye sorabilirsiniz. Orada da cevap açık. Aslında sizin kendi ürettiğiniz şeyi kendinize input olarak verip ondan sonra bir sonraki devam ediyorsunuz.
+
+142
+00:33:45,460 --> 00:34:00,079
+X3'ü tahmin ediyorsunuz. Daha sonra X1, X2, X3 size verilmiş gibi düşünüp X4'ü tahmin ediyorsunuz. Dolayısıyla size bir X1 verildiğinde onun devamını tahmin etmeye devam edebiliyorsunuz. Dolayısıyla bütün hikaye aslında size verilmiş olan bir.
+
+143
+00:34:00,627 --> 00:34:17,708
+Sekansın bir sonraki tokunanı, öyle söyleyelim, tahmin edebiliyorsanız eğer, o zaman siz bir süreç üretebilirsiniz.
+
+144
+00:34:27,891 --> 00:34:46,751
+Mesela Washington'ların backpropagation'la alakalı paper'larını da bile yanlış hatırlamıyorsam ki 80'lerin sonu felandır. Orada bile next word prediction şeklinde problemler var onların üzerinde uğraşıyorlar.
+
+145
+00:34:46,751 --> 00:34:53,711
+Dolayısıyla dediğim gibi çok eski bir hikaye, yeni çıkmış bir şey değil o manada. Onu demeye çalışıyorum.
+
+146
+00:34:54,708 --> 00:35:13,708
+Tabii, Next Top Gun, Next Think ya da öyle söyleyeyim. Next Think Prediction niye bu kadar önemli demeyelim de, niye bu kadar etkili belki.
+
+147
+00:35:14,771 --> 00:35:39,331
+Biraz şey aslında, düşündüğünüzde şöyle bir şey düşünebilirsiniz. Bir şeyin bir sonrasını tahmin edebilme kabiliyetiniz varsa o mevzuyu büyük ölçüde kavramışsınızdır. Aslında bütün şey oradan geliyor. Hipotez bu aslında. Yani bir sekansın sonrasını siz tahmin edebiliyorsanız o sekansı üreten süreci siz kavramışsınızdır.
+
+148
+00:35:41,139 --> 00:35:53,019
+Tabi burada hani kavramışsınızdır ifadesini çok şey insan gibi algılamak şart değil. Çünkü deminki gördüğümüz örnekleri hatırlayın lütfen.
+
+149
+00:35:53,619 --> 00:36:02,219
+Yani bir problemi çözebiliyor olmak, o problemi bizim istediğimiz gibi, istediğimiz yoldan çözebiliyor olmak.
+
+150
+00:36:02,699 --> 00:36:09,239
+Hani insanlara atfettiğimiz terimleri makineler atfetme durumu çok böyle şey değil.
+
+151
+00:36:10,279 --> 00:36:21,079
+Ne diyeyim? Uygun değil, öyle söyleyeyim. Belki her ikisi farklı terimlerle ilerlemeliler ama öyle bir ayrım yapmak.
+
+152
+00:36:22,420 --> 00:36:41,579
+Çok kimsenin işine gelmiyor. Neyse, şimdi biz konumuza dönelim. Dediğim gibi eski bir hikaye bu aslında bu üretim süreçleri. Burada bir tane bir kod var. Bunu dersin sayfasını da görebilirsiniz. Şiir üretimi aslında.
+
+153
+00:36:43,100 --> 00:36:48,420
+Tabii burada 4 milyon karakter içen şiirler varmış. Karakter bakın.
+
+154
+00:36:48,831 --> 00:37:13,991
+Ve burada kelime değil bakın, dikkat ederseniz. Karakter tahmin ediyoruz sadece. Ve LSTM burada, Transformer falan yok. Ve yüzden fazla geçen 84 tane. Yani bütün verilerde yüzden fazla geçen karakterler bulunup, çünkü bazen çok abidip bulup karakterler olabiliyor onlara da uğraşmaktansa. 84 tane karakter var. Yani 84 boyutlu one head vector giricimiz. Şey yok. Ne der ona?
+
+155
+00:37:16,211 --> 00:37:26,891
+Ne diyelim? Bir embedding, öyle söyleyelim. Hani kelime embedding anlamlıca bir karakter sadece.
+
+156
+00:37:26,891 --> 00:37:33,072
+Ve bu problem aslında düşündüğünüzde arkadaşlar, bir sınıflandırma problemi.
+
+157
+00:37:34,672 --> 00:37:43,152
+Yani böyle bir inputa karşılık şu 84 tane sınıftan bir tanesini söyle diyorsunuz.
+
+158
+00:37:44,788 --> 00:37:54,572
+Bir sonraki token'ı. Tahmini token dediğiniz şey de sınıf aslında. Bu karakter değil de ne bileyim...
+
+159
+00:37:54,931 --> 00:38:06,411
+Tokenizer'ın outputları falan olsa o zaman mesela 32 binlik plan olabiliyor ve 48 binlik plan olabiliyor. Dolayısıyla şey değişmiyor, yapı değişmiyor. Yine aslında bir sınıflandırma problemi.
+
+160
+00:38:06,411 --> 00:38:16,671
+Yani bir sonra Next World Token Prediction dediğimiz problem, mevcut problem, çok farklı problem, o bir sınıflandırma problemi. Regresyon problemi değil, öyle söyleyeyim.
+
+161
+00:38:22,931 --> 00:38:34,171
+İndis tahmin ediyorsun. Doğrusu bu problemin bizim bildiğimiz mevcut problemler. O manada farklı olan eğitim kümesi.
+
+162
+00:38:34,171 --> 00:38:46,943
+Eğitim kümesi dediğim gibi, eğitim kümesinin farklılığı derken de aslında bu...
+
+163
+00:38:46,943 --> 00:38:59,324
+Sel süper vasiteyi ifade ettiğimiz, yani insan müdahalesine gerek olmadan çok büyük miktarda veri kimeleri üretebilme mevzusu öne çıkıyor.
+
+164
+00:38:59,923 --> 00:39:14,264
+Ve işte bir metin ne düşündüğünüzde bunu self-supervised bir yapıyla bir eğitim kümesine dönüştürmek, böyle bir eğitim kümesine dönüştürmek, aşırı derecede basit, çok basit bir kodla bunu gerçekleştirebiliyorsunuz.
+
+165
+00:39:14,264 --> 00:39:20,083
+Hiç insan emeğinin bir sonraki karakteri tahmini gelip sonraki kelimeyi tahmin edecek. Çok basit.
+
+166
+00:39:21,204 --> 00:39:35,543
+Şimdi burada birkaç tane örnek var. İlk 200 bin karakterle uğraşılmış tabii. Benim kendi kötü makinem. İki saatlik bir eğitim aslında öyle söyleyeyim. 500 literasyon ilmiş. 500-12 erestiyem hücresi kullanılmış.
+
+167
+00:39:37,144 --> 00:39:44,224
+Şunların her biri, Türkçe şeyler aktarıyorum. Bunların her biri birer şey. Ne derler? Farklı şiir öyle söyleyeyim. Tamam.
+
+168
+00:39:47,699 --> 00:40:01,059
+Burada tabii şeyler var, okuduğunuz zaman, yani iki saatlik eğitim için ve 200 bin karakterlik bir veri hükümesi.
+
+169
+00:40:01,619 --> 00:40:14,879
+İşte fena değil. Ve burada dediğim gibi LSM'ler kullanılmış, yani Transforma gibi daha gelişmiş mimarlardan yoklardı. Ama ona rağmen işte fena olmayan sonuçlar elde edebiliyorsunuz.
+
+170
+00:40:14,879 --> 00:40:22,879
+Tabii fena olmayan sonuçlar biraz şey, subjektif bir ifade. Çünkü...
+
+171
+00:40:26,996 --> 00:40:51,996
+Üretici modellerin en büyük problemi temelde değerlendirilmeleri. Ürettikleri şeyler ne kadar doğrudan ne kadar değiller. Çünkü üretici model olduğu için, yani üretici bir şeyler yaptırmaya çalıştığınız için aslında üretmesi gerekenin ne olduğunu tam olarak söylemeniz...
+
+172
+00:40:54,996 --> 00:41:21,096
+Söylemek istemiyor olabilirsiniz. Söyleyemiyor olabilirsiniz. O bir başka durum olabilir. Söylediğiniz durumda da onun ürettiği şey hakikaten sizin söylediğinize çok benziyor olabilir ama böyle birbiri bir meç şeklinde bir şey olmayabilir. Aynı şeyi ifade eden başka bir şeyler üretiyor olabilir ve bunu ne yapamayabiliriz, algılayamayabilirsiniz.
+
+173
+00:41:21,684 --> 00:41:29,924
+Dolayısıyla bu tarz sistemlerin değerlendirmesindeki en büyük problemlerden bir tanesi ölçeklenebilir değerlendirme sistemlerinin oluşması.
+
+174
+00:41:40,851 --> 00:41:53,551
+Bir şekilde, öyle söyleyeyim, oldukça şık bir yolla çözümü de bu renforcement learning yapısında gerçekleştirildi.
+
+175
+00:41:54,211 --> 00:41:57,531
+Ve şu anda da orası baya bir standart gibi gidiyor.
+
+176
+00:41:57,991 --> 00:42:02,291
+Öyle söyleyeyim. Onu yine ilerleyen derslerimizle konuşuruz.
+
+177
+00:42:03,027 --> 00:42:22,288
+Dediğim gibi, burada şu anda gördüğünüz şiirler var. Yapabileceğiniz şey ne? Bu şiirler iyi midir, kötü müdür? Baktığınızda diyebilirsiniz ki bu iyi, bu kötü ya da içindeki bazı kısımlar iyi, bazı kısımlar kötü gibisinden böyle değerlendirmelerde bulunabilirsiniz.
+
+178
+00:42:22,835 --> 00:42:48,315
+Burasına baktığınızda bu şiirlerin hiçbiri iyi değiller doğal olarak. Ama içlerinde iyi parçalar var mı, kısımlar var mı? Varla. Bu da birazcık şeye benziyor. Bir bütünlüğün olmayışı ancak lokal manada iyi gibi yüzüken öyle söyleyelim. Parçaların bulunması, bütünün iyi olması işi.
+
+179
+00:42:48,820 --> 00:43:12,599
+Bu konuda daha zor bir iş olarak ifade edebiliriz. Ürettiğiniz şeyin tamamının bir bütünlüğe sahip olmasını daha zor bir problem olarak değerlendirebiliriz. İçerilerde dediğim gibi iyi şeyler olsa da bütününe baktığınızda çok da manalı bir durumla karşılaşmıyor olabilirsiniz. Ama dediğim gibi bu oldukça şey.
+
+180
+00:43:15,059 --> 00:43:19,699
+Simple bir mimari, çok az bir veri kümesi.
+
+181
+00:43:20,519 --> 00:43:25,079
+Ve günümüzde temelde iddia edilen şey şöyle bir şey.
+
+182
+00:43:25,939 --> 00:43:34,779
+Mimariyi büyütüp veri kümesini büyüttüğümüzde, ikisini birden büyüttüğümüzde bizim bir sınırımızın olmadığı iddia ediliyor.
+
+183
+00:43:35,119 --> 00:43:37,460
+Dediğim derken makine anlamında demek istiyorum.
+
+184
+00:43:37,887 --> 00:44:03,727
+Makinenin kabiliyetlerinin bir sınırın olmadığı anlamında, yani memori büyüttükçe ve datayı büyüttükçe, iyi datayı büyüttükçe, iyi datayı demiyorum, iyi datayı ve memori model yapısını büyüttükçe, bunun bir yere kadar doygun oluşur, sonra durur gibisinden bir durumun hektir.
+
+185
+00:44:05,043 --> 00:44:08,704
+Olmadığı gibisinden bir hipotez var.
+
+186
+00:44:10,583 --> 00:44:14,384
+Peki, şimdi bir ara verelim arkadaşlar.
+
+187
+00:44:14,384 --> 00:44:16,204
+Bir şey üretildim.
+
+188
+00:44:16,384 --> 00:44:18,744
+Sonra oturayım.
+
+189
+00:44:19,864 --> 00:44:20,423
+49.
+
+190
+00:44:28,916 --> 00:44:29,396
+Evet.
+
+191
+00:44:35,987 --> 00:44:41,768
+15 dakika bir aramız olsun. 15 dakika sonra görüşmek üzere.
+
+192
+01:00:25,780 --> 01:00:29,980
+Tekrar merhaba arkadaşlar. Sesim geliyor herhalde.
+
+193
+01:00:32,100 --> 01:00:32,900
+Evet hocam.
+
+194
+01:00:42,900 --> 01:00:44,160
+Slide da geldi.
+
+195
+01:00:49,940 --> 01:00:53,279
+Evet, geldi hocam.
+
+196
+01:00:53,279 --> 01:01:07,960
+Tamam. Şimdi bu şiir üretiminden bahsetmiştik. Ondan sonra haber üretiminde aynı şey. 500 m² spor haberleri üzerinden bir eğitim yapılmış.
+
+197
+01:01:11,059 --> 01:01:18,819
+Spor Haberli kısmını alarak yapmış. Aslında burada çok daha fazla yeri var da şunun içerisinde ama sadece 500 bin kısım alınmış.
+
+198
+01:01:19,719 --> 01:01:24,380
+30 iterasyon, 512 saat, 2 saat eğitim yine farklı başlangıçlarla.
+
+199
+01:01:24,440 --> 01:01:30,159
+Dediğim gibi burada karakter tahmini yine gazete demiş. Mesela gazetecilere diye devam etmiş.
+
+200
+01:01:30,608 --> 01:01:57,048
+Defans demişiz, defans oyuncusu değil. Mesela Cimmon demiş. Cimmon tarafından da tek tek. Burada da çok benzeyen bir durum görebiliyorsunuz. Yani ardışık şeyler öyle söyleyelim. Lokalde iyi gözüküyor mesela gazetecilere yaptığı açıklamalar. Türkiye Futbol Federasyonu tarafından düzenlenen. Başkan Azzyıldırım ben anlatmış o zamanlar. Defans oyuncusu Burak.
+
+201
+01:01:58,068 --> 01:02:22,427
+Oyuncusu Burak Yılmaz demiş mesela. Sonra Yılmaz Bural demiş. Bu sekansı şeyden de biraz hatırlıyorsunuzdur. İstatistiksel dil modellerini konuşmuştuk hatırlıyorsunuz değil mi? Orada da şöyle bir durum vardı. Bir pencereden bahsetmiştik. Bu pencerenin içerisindeki bir şeyleri tahmin etmek üzerineydi.
+
+202
+01:02:22,896 --> 01:02:38,056
+Daha doğrusu pencerenin içindeki şeyleri işleme almak üzerineydi öyle söyleyelim. İki öncesi, iki sonrası vesaire gibi orada ne kadar büyük bir pencere alırsak o kadar büyük birliktelikler anlamlı hale geliyorlardı.
+
+203
+01:02:38,835 --> 01:02:53,076
+Burada da yine, ama onun problemi neydi? Lokallerin anlamlı ama bütünün çok da anlamlı olamayışı aslında. Burada da yine ona benzeyen bir problemi görebiliyorsunuzdur.
+
+204
+01:02:54,076 --> 01:02:57,435
+İşte Erestianlar bunu bir miktar daha çözüyorlar.
+
+205
+01:03:02,132 --> 01:03:18,692
+Datayı adım adım almadıkları için, paralel bir şekilde datanın hepsini birden aldıkları için, en azından zilveriniz konteksin uzunluğunda geçmişi, böyle söyleyeyim, işin içine katabiliyorlar.
+
+206
+01:03:19,347 --> 01:03:30,767
+Dediğim gibi burada da yine lokallarda belli bazı iş yer var ama bütüne baktığınızda bir haber üretilmiş olduğunu söylemek olacağı güç.
+
+207
+01:03:30,767 --> 01:03:40,607
+Ama dediğim gibi çok küçük bir veri kümesi, çok ne diyelim küçük bir mimari.
+
+208
+01:03:41,172 --> 01:03:59,052
+Bunların sonucunda da böyle yapılarının ortaya çıktığını, çıkabildiğini görebiliyoruz. Bu daha da verikimizi büyüdükçe, model büyüdükçe şuraların daha başarılı olabileceğini tahmin edebilirsiniz.
+
+209
+01:04:07,795 --> 01:04:20,295
+Onun mimari olarak buradan farkı, Transformer'ı kullanıyor olması ve bir de onun haricinde büyüklük her yönde.
+
+210
+01:04:21,635 --> 01:04:26,956
+Yoksa loss fonksiyonu anlamında düşündüğünüz herhangi bir farklılık yok aslında.
+
+211
+01:04:27,735 --> 01:04:31,596
+Loss fonksiyonu tamamen next thing diyelim hadi.
+
+212
+01:04:31,596 --> 01:04:33,376
+Next thing prediction.
+
+213
+01:04:34,867 --> 01:04:59,268
+Ve Orun'un ürettiği şeylere baktığımızda hiç de fena olmayan şeyler, bütünlüğün de bir ölçüde sağlanabildiğini, bir insan okuduğunda çok acayip şaşırmadığını, şaşırmadığını derken gariplik sezmediğini öyle söyleyeyim, ifade edebiliriz.
+
+214
+01:05:04,659 --> 01:05:07,679
+Peki, bunun menüsüne daha sonra tekrar gideceğiz.
+
+215
+01:05:11,239 --> 01:05:27,139
+Şiir ve haber üretimi noktasında bir karşılaştırma yapmaya kalkarsak, şey, şiir üretimi ile haber üretimi arasında, şey, şiirler biraz daha ne diyelim,
+
+216
+01:05:30,003 --> 01:05:36,363
+Hata kaldırır şeylerdir gibisinden bir şey diyeceğim ama hata kaldırmaktan kastım.
+
+217
+01:05:36,363 --> 01:05:50,623
+Şey biraz hani sembolik ifadeler, şiirlerde çok anlamasanız da bazen orada şair bir sembolik ifade kullanmıştır falan gibisinden şeyleri düşünebilirsiniz.
+
+218
+01:05:51,263 --> 01:05:57,863
+Burada da hani şiir üretiminde biraz daha böyle yapılan garip şeyleri biraz daha iyi.
+
+219
+01:05:58,003 --> 01:06:11,343
+Yorabilirsiniz. Öyle söyleyeyim. Ama düz metin üretimi öyle bir şey değil. Düz metinde yaptığınız bir yanlış, yani üretim sürecindeki bir hata. İnsanların gözüne direkt takılırlar.
+
+220
+01:06:17,940 --> 01:06:42,539
+Yani mesela günlük falan gibisinden ama burası yanlış yazılmış falan gibisinden bu algılanabilir. Ama yaşamak bir değil. Yaşamak bir değil, yani normalde öyle garip gibi geliyor ama da düşündüğünüz zaman bu anlamlı bir şiirin içerisinde olabilir mi? Olabilir. Güzel bir ülküdür, gönül verdiğim. İşte fena değil. İşte bahçem yaralı kapılar gibi.
+
+221
+01:06:43,027 --> 01:07:06,807
+Bu yaralı kapı. Normalde böyle bir şeyi yorumlamak öyle söyleyeyim. Bunlar mümkün şeyler. Ama düz metinde öyle değil. Düz metinde, dediğim gibi şuradaki mimari de şuradaki mimari arasında bir fark yok. Ama ürettikleri şeylerin kaliteleri arasında da aslında fark yok.
+
+222
+01:07:08,275 --> 01:07:24,175
+Ama şiirlerde üretilen şeyler biraz daha yoruma uyabiliyorlar. Öyle söyleyeyim.
+
+223
+01:07:25,376 --> 01:07:31,675
+Mimari açısından fark yok. Doğru ama şey açısından bir farklılık var. Onu da atlamayalım aslında.
+
+224
+01:07:36,179 --> 01:07:52,659
+Şiir dediğimiz yer çok daha divers, diyelim nasıl diyelim onu. Farklı farklı konudalar, farklı farklı yapılardalar. İki tane şiirin birbirine benzerliği çok fazla değildir.
+
+225
+01:07:52,659 --> 01:07:59,500
+Herhangi iki şiir seçin mesela. O iki şiirin birbirine benzerliği çok çok yüksek değildir. Ama...
+
+226
+01:07:59,539 --> 01:08:18,340
+Spor haberi diye düşündüğünüzde herhangi iki tane spor haberini aldığınızda bunların arasında epey bir şey bulursunuz. Benzerlik bulursunuz. Dolayısıyla çeşitliliğe azdır aslında spor haberlerinde. Ne olur spor haberlerinde? Belli bir yapı olabilir. Minör şeyler değişirler.
+
+227
+01:08:19,155 --> 01:08:39,536
+Dolayısıyla çeşitliliği aslında şiire göre daha azdır. Dolayısıyla çeşitliliğin de önemini aslında burada bir miktar ortaya çıkartıyor.
+
+228
+01:08:40,180 --> 01:08:59,940
+Veri büyüklüğü açısından çok büyük dediğim gibi farkları yok ama şiir tarafının biraz daha çeşitliliğinin yüksek oluşu bir miktar şiir üretiminin bir tık daha öyle söylüyorum, başarılı olarak değerlendirilebilmesini sağlıyor diyebiliriz.
+
+229
+01:08:59,940 --> 01:09:00,860
+Peki.
+
+230
+01:09:01,555 --> 01:09:15,796
+Şimdi, bunların üzerine bir sürü şey var. Şimdi bu noktadan sonra diyalog sistemlerine geçeceğiz. Burada iki tane yaklaşım amaçlı. Bir tanesi sadece sohbet amaçlı, bir tanesi hedefi olan şeyler.
+
+231
+01:09:17,076 --> 01:09:24,115
+Bu sadece sohbet amaçlı diye ifade ettiğimiz şeyler aslında bir arkadaşınızla yaptığınız muhabbeti.
+
+232
+01:09:24,496 --> 01:09:31,996
+Bir şekilde makine yapabilme arayışı. Bunlar gerçekten zorlar. Niye zorlar? Biraz daha şey bu. Ne derdim?
+
+233
+01:09:39,091 --> 01:10:01,091
+Çeşitliliği çok daha yüksek, öyle söylüyorum. Yani bir bank uygulamasının ya da bir ticaret uygulamasının sanal botuyla yapabileceğiniz muhabbetlerin çeşitliliğini düşünün. Bir de arkadaşınızla yapabileceğiniz muhabbetlerin çeşitliliğini düşünün. Ne kadar sizin açınızdan ne kadar çeşitli şeyler...
+
+234
+01:10:01,775 --> 01:10:18,976
+Yapabiliyorsanız farklı farklı arkadaşlarınızı o kadar sizin için iyidir. Sürekli aynı şeyle konuşuyorsanız arkadaşlarınızı o sizin açınızdan. Çok çok iyi bir şey değil belki. Bu tam subjektif bir görüş.
+
+235
+01:10:21,395 --> 01:10:33,175
+Şimdi, dolayısıyla burada ticari manada, işe yarayabilecek manadaki kısımlar, ticari manadan bahsede şu hedefi olan yapılar.
+
+236
+01:10:34,315 --> 01:10:38,595
+Ve daha kolay aslında bu problemler, şuna göre.
+
+237
+01:10:38,595 --> 01:10:41,536
+Ona göre daha kolay bir problem.
+
+238
+01:10:44,659 --> 01:11:05,860
+Bu diyalog sistemleri nereden başlıyor? Bu Eliza 95, 65 buradan başlıyor, buradan ilerliyor. Çok basit şablon tabanlı bir yapısı var. Şurada gördüğünüz dönüşüm yapılarını kullanıyor. Parametrik dönüşüm tabloları. Yani şöyle bir şey geldiyse şuna dönüştür.
+
+239
+01:11:12,372 --> 01:11:18,852
+Arka tarafta işlerin nasıl döndüğünü bilmem birilerine falan ilk gibi gelmiş. Vakti zamanında 65'ten bahsediyorum.
+
+240
+01:11:20,032 --> 01:11:26,231
+Turing testinde zeki olmalıcı ve az olsa kandırabildiği insanlar var. Kullanıcı girişini dönüşterek kullanıcıya söylüyor.
+
+241
+01:11:26,231 --> 01:11:35,231
+Bu psikoterapi tekniği aslında Rogerian. Psikoterapi tekniği. Bir kişi kendi sözlerini başkasının ağzından duyduğunda...
+
+242
+01:11:35,636 --> 01:11:45,435
+Farkındalığı, o söylediği şeye dair farkındalığının arttığına, onun üzerine bir daha düşündüğüne falan dair bir şey, yaklaşım.
+
+243
+01:11:47,076 --> 01:11:56,296
+65'te Eliza'nın ortaya çıkışından sonra işte 71'de peri var, kolgi var. Bunlar paranoye, mesela hastayı taklit etmeye çalışıyor.
+
+244
+01:11:56,396 --> 01:12:02,136
+Eliza psikoterapisti taklit etmeye çalışıyor, terapisti taklit etmeye çalışıyor. Bunlar ise hastayı.
+
+245
+01:12:02,931 --> 01:12:26,471
+Bunların hepsi, bu o kadar korkunç bir emek isteyen bir iş değil. Şuradaki yapılar ama burada epey bir uğraşıyorlar. Ama tabii hep şablon tabanlı yapılar. Bunun gibi yapılarla peri için burada karşı tarafın paranoyak dedim ya paranoyaklar biraz nasıl söyleyelim.
+
+246
+01:12:27,539 --> 01:12:50,020
+Olmayan tehditleri algılarlar. Sürekli tehdit algılamaya yöneliktir ya, paranın ayakların düşünce biçimi. O da bir şekilde kendini önemli hissetmeyle falan alakalı bir durum. Bütün Amerika peşinde, AMERİ CIA peşinde falan. Demek ki ben çok önemli birisiyim.
+
+247
+01:12:50,579 --> 01:13:06,020
+Aslında değil de işte oralardan besliyor kendini. Neyse. Dolayısıyla burada işte diğer tarafın bir şey söylediğinde onun amacının ne olduğunu, ne demek istediğini, akıl okuma.
+
+248
+01:13:06,384 --> 01:13:27,404
+Ama tabii kötücül bir şekilde akıl okumak tabii burada şey edilmiş, ne derli ona temsil edilmeye çalışılmış. Bunun üzerine epey kafa yorulmuş. Ama dediğim gibi tamamen şey üzerine, elle kodlama diyebileceğimiz şu yapılar üzerinden ilerlenilmiş.
+
+249
+01:13:30,739 --> 01:13:40,739
+Daha sonra başka örnek olarak vermek istersek, böyle bir epi gerçekleştirmek için yapabileceğimiz şeyden bir tanesi dediğim gibi elle kodlamak.
+
+250
+01:13:41,739 --> 01:13:44,920
+Ama bu hiç de maliyeti düşük bir şey değil.
+
+251
+01:13:44,920 --> 01:13:52,940
+Ve uygulanabilirliği, pardon, uygulanabilirdiğini adaptasyonu çok çok düşük olan bir şey yani.
+
+252
+01:13:53,268 --> 01:14:01,988
+A sistemi için yaptığınız bir şeyi B sistemine geçirmeye kalktığınızda o A'da harcadığınız emeği B'ye çok kolay transfer edemiyorsunuz. Öyle bir sıkıntı var.
+
+253
+01:14:03,028 --> 01:14:11,927
+Biraz daha ölçeklenebilir yapılar kuralım dediğimizde karşımıza çıkan en basit yaklaşım diyalog değerlemlerini kullanmak.
+
+254
+01:14:11,927 --> 01:14:20,908
+Böyle bir sistem için sizinle konuşan, sohbet eden ya da kullanıcının belli bir amacını...
+
+255
+01:14:21,043 --> 01:14:27,384
+Yerine getirmesi için tasarlanan sistemlerde en basit dediğim gibi derlemleri kullanmak.
+
+256
+01:14:27,443 --> 01:14:34,443
+Derlem dediğimiz şey, burada diyalog derlemini, kullanışın dediğinde sen şunu de gibisinden bir yapı aslında.
+
+257
+01:14:34,583 --> 01:14:36,083
+Soru cevap öyle diyelim.
+
+258
+01:14:36,683 --> 01:14:39,564
+Bu tabii zilyon tane yerden toplanabilir.
+
+259
+01:14:40,323 --> 01:14:44,064
+Ama open source olarak toplanabileceği yerler de var.
+
+260
+01:14:44,583 --> 01:14:46,903
+Filmler, diziler, bunlardaki diyaloglar.
+
+261
+01:14:47,344 --> 01:14:53,584
+Sizin kendi ya da şirketinizin WhatsApp diyalogları gibi böyle bir şey diyaloglar toplanabilir.
+
+262
+01:14:54,355 --> 01:15:21,215
+Şimdi hikayemiz aslında çok basit bir şekilde derlen var. Kullancının söylediğini, Q'ya en benzeyen ifadeyi bul. Burada gördüğümüz şey aslında bir kosünüs distans bulunuyor. En benzeyen hangisiyse, kullanıcının söylediği ifade, en benzeyen ifade hangisi, onu bulup onun cevabını da kullanıcıya direkt vermek. Yani elinize soru cevap ikilleri var, elinize bir soru var. Bu sorunun elinizdeki soruların içerisinden hangisine en çok benzediğini buluyorsunuz. Öyle söylüyorum.
+
+263
+01:15:21,779 --> 01:15:24,100
+Ve onun cevabını kullanıcıya söylüyorsunuz.
+
+264
+01:15:26,579 --> 01:15:31,739
+Bunun dediğim gibi sıkça sorulan sorular gibisinden bir şeye cevap vermek diye düşünebilirsiniz.
+
+265
+01:15:32,879 --> 01:15:37,100
+Burada yayınlar kullanı tekniklerden bir tanesi soft cosindir.
+
+266
+01:15:37,100 --> 01:15:39,699
+Cosin simileti şu şekilde.
+
+267
+01:15:41,876 --> 01:16:04,176
+One Hat gibisinden bir yapıyla yapmaya kalkarsanız kelimelerin anlamsal yakınlıklarına dair hiçbir şey çıkmaz. Yani ne bileyim işte aynı şeyi söylüyoruz. Cimbom kazandı ile Galatasaray yendi arasında şu gördüğünüz şeyde eğer One Hat Encoding gibisinden bir şey kullanırsanız kelime bazlı hiçbir şey bulamazsınız.
+
+268
+01:16:04,948 --> 01:16:10,948
+SoftCosim bunu birazcık çözmek için kullanılıyor. Bu SoftCosim'de...
+
+269
+01:16:11,956 --> 01:16:35,175
+Şuradaki hikaye, yani şuradaki X ve Y'nin arasındaki hikaye bulmak yerine arasında bir tane M'de ekleniyor. M dediğimiz şey bir similarity matriz. Aslında bütün kelimelerin bir şekilde embeddinglerinin olduğu, öyle söyleyelim, bir matriz. Ve bu da şeye yarıyor, neden bana? Bir miktar anlamsal benzerliğiyle.
+
+270
+01:16:36,051 --> 01:17:00,231
+Bu hesabın içine katıyor. Bir diğer katabileceği şey de Deminstein Distance. Deminstein Distance'da kelimelerin birbirlerine kaç tane karakter tuşuna basılarak dönüştürebildiğini hesaplayan bir yaklaşım. Bu da yanlış yazımdır, şudur budur gibisinden farklı yazımdır, hafiften farklı yazımdır, öyle söyleyelim gibisinden şeyleri similarity'nin içerisine dahil etmeye çalışıyor.
+
+271
+01:17:00,627 --> 01:17:16,047
+Dolayısıyla emeği oluşturmakta hem böyle semantiki yapılar hem de sentaktik varyasyonları oluşturabilecek, kapsayabilecek öyle şey yapılar kullanılıyor.
+
+272
+01:17:21,171 --> 01:17:35,251
+Bu şuna en benzeyen şudur gibisinden yapılan, yani şu sorunun cevabı şudur, şu sorunun cevabı şudur gibisinden yapılan problemi şu aslında.
+
+273
+01:17:37,811 --> 01:17:46,251
+Hafızasız sistemler bunlar. Hafızasız sistemler kasıt ne? Kullanıcının bir önce sorduğu soru...
+
+274
+01:17:47,475 --> 01:17:52,575
+Şimdiki sorduğu soru birbirinden tamamen bağımsızdır'a denk geliyor.
+
+275
+01:17:53,255 --> 01:17:55,115
+Ve bu belli durumlar için anlamlı olabilir.
+
+276
+01:17:55,275 --> 01:18:00,956
+Yani ne bileyim, sıkça sorulan soruların içerisinde bir arama yaptırıyorsanız burada bir şey yok.
+
+277
+01:18:01,595 --> 01:18:05,075
+Bir sıkıntı yok aslında çünkü bütün sorular kabaca birbirinden bağımsızlar.
+
+278
+01:18:05,075 --> 01:18:11,275
+Ama işte bir sohbet gibisinden bir şey, bir diyaloğun içerisinde kullanıcıyla girecekseniz.
+
+279
+01:18:11,764 --> 01:18:38,503
+Diyalog dediğimiz şey, tarihe olan bir şeydir. O durumda tarihçesi olan, tarihe olan mimarları ihtiyacı var. Tarihi olan mimarların da işte en şeyi bilinen örneği, çok çok da fazla şey yok aslında, örnek yok. Yani arenenler, arenen ve versiyonları, işte elestiyemler falan bunların hepsi, bunların içerisine giriyorlar.
+
+280
+01:18:39,444 --> 01:18:52,644
+Tarihi olandan kasıt ne demek? Yani geçmişte görmüş ol yani bir sekansınız var. Bu sekansın içerisinde kullanıcı bir şey diyor, siz bir şey diyorsunuz. Kullanıcı bir şey diyor, siz bir şey diyorsunuz. Böyle ilerliyor ya.
+
+281
+01:18:53,463 --> 01:19:03,544
+İşte kullanıcı bir şey dedi, siz bir şey diyeceksiniz. O dediğiniz şey sadece o kullanıcının bir önceki söylediği şeye bağlı değil. Kullanıcının daha önce söylediği şeyler ve sizin ona karşılık verdiğiniz şeyler. Hepsi birden.
+
+282
+01:19:03,855 --> 01:19:16,055
+Bunların hepsi birden bir tarihçi derseniz, bunlara bağlı olarak bunu söylemek isterseniz ki genelde istediğimiz, hayal ettiğimiz şey temelde budur.
+
+283
+01:19:17,587 --> 01:19:24,907
+Bu durumda bu tarz memoriye sahip yapıları. Buradaki memoriye sahip derken şey düşünmeyin.
+
+284
+01:19:24,987 --> 01:19:29,667
+Demin konuştuğunuz benim networkleri düşünmeyin. Buradaki memori, adenenin kendi memorisi.
+
+285
+01:19:29,667 --> 01:19:35,427
+Yani bir state aslında. Sürekli güncellenen bir state.
+
+286
+01:19:35,807 --> 01:19:54,747
+Bu state'i, yani RNN'lerin çok klasik yapısı nedir? Kendileri mevcut girişlere göre bir çıkış üretirler. O çıkışı daha sonra kendilerinin bir sonraki zamanında, kendilerine input olarak verirler. Bu da şeyi sağlar.
+
+287
+01:20:00,000 --> 01:20:18,659
+Bu da bu mimarların memori sahibi olduğunu ifade eder.
+
+288
+01:20:19,283 --> 01:20:46,724
+Şimdi burada dediğim gibi kullanıcının söylediği bir şey, böyle bir şey derse böyle bir şey derse böyle bir şey derse böyle bir şey der. Böyle bir yapı aslında kuruyorsunuz. Bir Encoder Decoder yapısı. Bu günümüzde yine çok standart olarak kullanılan bir yaklaşım. En input'u bir vektöre dönüştür. Bir şekilde buna Encoder deniyor. Daha sonra da...
+
+289
+01:20:47,060 --> 01:21:00,220
+Üreteceğin şey de aslında bir şey. Metin ise, metin artık neyse üretmek istediğin şey. Ona da dönüşüm yapan, ona decoder kısmı.
+
+290
+01:21:00,220 --> 01:21:07,940
+Yani herhangi bir veri tipinden vektöre dönüşüme encoder deniyor.
+
+291
+01:21:08,351 --> 01:21:15,131
+Bir vektörden herhangi bir veri tipine, dönüşümüne de, dediğim gibi ses olur, görüntü olur, metin olur vesaire artık.
+
+292
+01:21:15,371 --> 01:21:26,351
+Yani neyse, video olur. Ona da decoder yapısı genelde atfediliyor. Böyle söyleniyor.
+
+293
+01:21:27,220 --> 01:21:50,819
+Şimdi burada mesela Microsoft'un Tide diye bir örneği var. Ama bu şey, alenen tabanlı yapılar ve şeyde şu, amaç demeyelim de, fikir de şu, biz değerlenen kullanıcılardan topluyoruz, ediyoruz. Ama aslında sistemin şey de yapması lazım. Ne derler ona?
+
+294
+01:21:51,347 --> 01:22:09,167
+Yapabiliyor olması çok iyi olur. Kullanıcının söylediği şeyleri de, yani o anda kullanıcıyla geçen diyaloğun kendisine de eğitim kümesine hemen dahil edelim. Onları da öğrensin. Bunu yaptıklarında çok hızlı bir şekilde güncelliyorlar sistemi.
+
+295
+01:22:20,051 --> 01:22:36,051
+İşler bayağı çığırından çıkıyor. Kötü niyetli kullanıcıların söylemleri botun söylemlerine temel oluşturuyor.
+
+296
+01:22:36,051 --> 01:22:43,851
+Ve kullanıcıların ne söylüyorsa bir şeylerin karşılığında bot da onları söylemeye başlıyor. Ondan sonra kapatılıyor.
+
+297
+01:22:45,460 --> 01:23:08,100
+Bu tabii bayağı bir ders oluyor. Bu hatalar ola ola aslında bir şeyler ilerliyor. Hiçbir şey bir anda taktiğe ilerlemiyor. Bu hatalardan çıkarılan derslerle daha başarılı, daha başarılı sistemler gide gide oluşuyorlar.
+
+298
+01:23:10,003 --> 01:23:33,283
+Çetçi biti, özelinde konuşursak, Çetçi biti ile sizin söylediğiniz şeyler anında lang diye şey girmiyorlar. Veri tabağının içerisine girip anında kullanılmıyorlar. Hepsi belli filtrelerden, şuralardan, buralardan geçe geçe gidiyorlar. Zaten çok büyük bir miktarda veri olduğundan dolayı o noktada korkunç bir veri ihtiyacı.
+
+299
+01:23:34,899 --> 01:23:42,699
+İstemediği türden verileri içinin içerisine katmıyorlar. Öyle diyelim. Formüle edelim.
+
+300
+01:23:46,699 --> 01:23:57,599
+Sohbetten şeye geçersek, sanal asistanlar mevzusu aslında bu diyalog sistemlerinin ticari tarafı.
+
+301
+01:23:58,868 --> 01:24:18,968
+Bunlardaki yapı çok değişmiş değil aslında. GUS diye bir yapıları var. Günümüzde de hala da burası çok çok değişmiş değil. Ne demek istiyorum?
+
+302
+01:24:25,140 --> 01:24:38,360
+Ticari kısım, öyle söyleyeyim sizin için bir taraf, bir de işte eğlence amaçlı, şu dur budur falan gibisinden kısımlar var.
+
+303
+01:24:38,360 --> 01:24:42,260
+Diyalog sistemler arasından konuştuğumuzda.
+
+304
+01:24:50,068 --> 01:25:13,148
+Çalışma yapılıyor, ediliyor vesaire. Hani bayağı başarılı çalışmalar var. Daha da duyacağız. Ama mesela ticari manadaki diyalog sistemleri, yani ne bileyim işte bir bankanın chatbotunun mevcut bu chat GPT gibisinden sistemlerle entegrasyonun süreçleri o kadar da hızlı ilerlemiyor fark ettiyseniz.
+
+305
+01:25:14,131 --> 01:25:41,191
+Neden? Çünkü safety diye bir mevzu var. Yani siz chat-chip-it ile sohbet ederken yanlış bir şey yaptığında ne yapıyorsunuz? Gülüyorsunuz mesela. Hani abi bu ne falan. Ya da iyi bir şey yaptığında ne derin şaşırıyorsunuz falan. Hani böyle nasıl yapabildi falan gibisinden şeyleriniz oluyor. Ama ticari taraf birazcık öyle bir şey değil. Yani sizin bir hedefiniz var, bir şey yapın. Ne bileyim işte birisine para göndereceksiniz.
+
+306
+01:25:41,648 --> 01:25:59,747
+Ya da akıllı bir yatırım yapmaya çalışıyorsunuz. Yanlış yap, daha güleyim gibisinden bir pozisyonuz olmayacak orada. Bana şu anda %5 para kaybettirdin, ne kadar komik falan demeyeceksiniz. Kazandığınızda güleceksiniz, sevineceksiniz ama kaybettiğinizde öyle demeyeceksiniz.
+
+307
+01:26:00,115 --> 01:26:26,815
+Dolayısıyla bu tarz sistemlerin ticari uygulamalardaki şey kısmı dediğim gibi uygulamaları o kadar hızlı ilerlemiyor. Şey tarafındakiler böyle bireysel kullanıcılara yönelik olan şeyler evet oralarda gerçekten çok iyi işler çıkıyor ama şey tarafı o kadar şey değil, basit değil. Yani çünkü hata kaldırmıyor öyle söyleyeyim.
+
+308
+01:26:27,988 --> 01:26:40,268
+Kimse de %99 başarıyla çalışsa bile bir sistem, öyle söyleyeyim, ticari taraftan bahsediyorum, kabul etmeyebilir.
+
+309
+01:26:44,228 --> 01:26:51,188
+Dolayısıyla bu taraftaki yapılar biraz daha geleneksel yapılar. Anlatabildim mi?
+
+310
+01:26:51,667 --> 01:27:09,667
+Çok rigid yapılar. Yanlış yapmasın. Yani yapamıyorsa yapmasın o işi ama yanlış bir şey yapmasın. Şey bu. Yaklaşım bu. Gerekirse biz insan çalıştırıyoruz orada. Orası çok çok şey değil. Sıkıntılı değil belki.
+
+311
+01:27:10,727 --> 01:27:16,727
+Bunlar da işte belli yapılar. Biraz aslında şu şeye benziyor bu. En başta.
+
+312
+01:27:16,832 --> 01:27:37,092
+Elisa ya da Peri'de falan konuştuk ya, çok fazla emekle yapılar oluşturuyor. Kullanıcılar neler isterler? Bu kullanıcılardan bu istediklerini biz nasıl alırız? Nasıl sorular sorarız? Nediklerinde ne anlamalıyız? Gibisinden bir sürü sorular soruyor. Kullanıcı ne istiyor?
+
+313
+01:27:38,931 --> 01:27:59,931
+Burada işin içerisine belli parçanın içerisinde makine öğrenmesi tekniklerini eklemek, entegre etmek bu tarzların hepsi gerçekleştiriyorlar. Ama dediğim gibi yani diyaloğun kendisinin tamamını bu demin bahsettiğimiz üretici modellere yaptırmak henüz...
+
+314
+01:28:00,500 --> 01:28:14,779
+Şey değil. Çok uygulanabilir gözükmüyor. İleride neler olur orasını bilmiyoruz. Onları göreceğiz. Ama güvenliğin yüksek olması gerekiyor. O tarz sistemlerde.
+
+315
+01:28:14,779 --> 01:28:24,779
+Yani kullanıcı web araması yaptığında onun karşısında yanlış bir bilgi çıkartmak evet olabilir. Kullanıcı bunu fark edebilir. Fark etmese bile.
+
+316
+01:28:26,228 --> 01:28:50,068
+O kişi için böyle korkunç kötü sonuçlar olmayabilir. Bilmiyorum. En azından yani bunun safety uyarısını zaten yapabilirsiniz. Kullanıcılara diyebilirsiniz ki burada gördüğünüz her şeye inanmayın. Tamam mı? Yani böyle bir şey yapabilirsiniz. Ama dediğim gibi bir bankanın chatbotunun üzerine yazarsanız bu sistemin yaptığı söylediği her şeye inanmayın derseniz olmaz. Anlatabildim mi?
+
+317
+01:28:51,155 --> 01:29:08,416
+O yüzden şey tarafı daha hala biraz yavaş yavaş gidiyor. Çok daha adım, adım demeyeyim nasıl ifade edeyim onu, daha katı öyle söyleyelim şekilde ilerliyor. Daha geleneksel bir şekilde ilerliyor.
+
+318
+01:29:08,835 --> 01:29:18,076
+Burada tabii ki teknikler var. Kullanıcının söylediği şeyden kastettiği şeyi anlamak, onları kullanıcıya söylemek.
+
+319
+01:29:18,644 --> 01:29:33,744
+Kullanıcıdan henüz işinizi yapmanıza gerekli olan hangi bilgileri almadığınızın farkına varıp onları almaya çalışmak gibi birçok şey var. Restoran öneren sistemlerdir.
+
+320
+01:29:35,024 --> 01:29:45,444
+Ama dediğim gibi bunların hepsinin özelliği, şurada gördükleriniz hepsinin özelliği, elle bu işlere böyle mümkün mertebe ilerletebilmek.
+
+321
+01:29:46,771 --> 01:29:52,471
+Burada başka bir çok kritik bir şey var mı? Bunların hepsine zaten rahat rahat bakarsınız.
+
+322
+01:29:56,012 --> 01:30:02,992
+Kullanıcının söylediği şey, karşı tarafa anlaşılıp anlaşılmadığını hissettirmek. Üzerine şeyler var.
+
+323
+01:30:04,951 --> 01:30:10,291
+Anlaşıldı, anlaşıldı, başka bir şey var mı? Bu da çok kritik. Yok, tamam. Peki. Şimdi.
+
+324
+01:30:11,028 --> 01:30:21,507
+O zaman burada sanat sistem oluşturmak için ticari birkaç tane uygulama var. Sanat sistemler iyiler vs. vs. Bunların hikayesi. Tamam.
+
+325
+01:30:21,507 --> 01:30:33,507
+Şimdi, bugünkü dersimizi burada bitirmiş olun arkadaşlar. Önümüzdeki hafta muhtemelen şu zaten.
+
+326
+01:30:33,971 --> 01:31:00,412
+22 Mayıs ve 29 Mayıs derslerimiz var. İki dersimiz var. Haftaya sizin ödev sunumlarınız da olacaklar. Bir miktar görsel anlam bilime de gireriz. Ondan sonra son hafta şu en son gelişmeyle alakalı bir site hazırlamaya çalışıyorum. En son da onu birazcık konuşacağız. 29 Mayıs haftasının, 29 Mayıs gününde.
+
+327
+01:31:01,076 --> 01:31:03,836
+Bu şekilde ilerleyeceğiz. Var mı soru sorun arkadaşlar?
+
+328
+01:31:24,307 --> 01:31:48,667
+Sesim geliyor değil mi arkadaşlar? Evet hocam geliyor. Geliyor hocam. Tamam. Sizin ses gelmeyince ben dedim acaba bir şey yok. Peki. Sonra haftaya görüşmek üzere diyorum. Dediğim gibi projelerle alakalı kısımları ben size mail ile döneceğim. Onlar konuşuruz tamam mı? İyi günler herkese. İyi haftalar. İyi günler hocam. İyi günler.
