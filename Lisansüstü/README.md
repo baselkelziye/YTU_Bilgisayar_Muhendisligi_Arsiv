@@ -795,6 +795,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Veri Madenciliği ve Bilgi Keşfi Ders Kayıtları](./Veri%20Madencili%C4%9Fi%20ve%20Bilgi%20Ke%C5%9Ffi/ders_kayitlari/) ✨
 - 📄 **Not:** [Önder'in markdown notları](./Veri%20Madencili%C4%9Fi%20ve%20Bilgi%20Ke%C5%9Ffi/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
