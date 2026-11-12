@@ -1,0 +1,4171 @@
+1
+00:00:26,611 --> 00:00:35,572
+Merhaba arkadaşlar. Sesim geliyordur herhalde. Sahtanın daha bir dakikamız var. İki üç dakika içerisinden başlayacağız arkadaşlar dersler.
+
+2
+00:00:37,451 --> 00:00:38,491
+Tamam hocam.
+
+3
+00:05:55,827 --> 00:05:59,027
+Merhaba arkadaşlar. Nasılsınız?
+
+4
+00:06:00,647 --> 00:06:02,427
+İyiyiz hocam. Nasılsınız? Merhabalar.
+
+5
+00:06:03,467 --> 00:06:05,447
+Teşekkür ederim. Ben de iyiyim.
+
+6
+00:06:06,767 --> 00:06:12,127
+Şimdi bugün neler yapacakmışız bir bakalım ilk önce haftalık planımıza.
+
+7
+00:06:15,127 --> 00:06:18,827
+Geçen hafta aşırı rastal ormanlara kadar gelmiştik.
+
+8
+00:06:18,827 --> 00:06:22,827
+Şu rotasyon ormanları April Space Forest'ı bu haftaya bırakmıştık.
+
+9
+00:06:23,567 --> 00:06:31,427
+Bu hafta anlatacağımız birkaç bir şey var. Bir de ikinci ödev sunumları olacak.
+
+10
+00:06:33,007 --> 00:06:39,507
+Şimdi nasıl ilerleyelim? İlk önce şu Rotasyon Ormanları ve Improved Space Forest'ı anlatayım.
+
+11
+00:06:40,927 --> 00:06:49,927
+Ondan sonra ödevlere geçelim. Ondan sonra da vaktimiz kalırsa ki kalır diye tahmin ediyorum. Bu kısımdan devam ederiz.
+
+12
+00:06:52,244 --> 00:07:06,903
+Ya da ilk önce bunları anlatırız. Neyse dur bakalım bir şu Rotasyon Ormanları ve Improved Space Forest'ı bir anlatalım. Bakalım ne kadar sürecek. Ona göre bir planlama yaparız. Buradaki herkes ödevini yapmıştır herhalde değil mi?
+
+13
+00:07:23,411 --> 00:07:24,731
+Yaptık hocam.
+
+14
+00:07:26,891 --> 00:07:29,231
+Olumluysa ses çıkarmayayım dedim hocam ama.
+
+15
+00:07:30,251 --> 00:07:30,731
+Efendim?
+
+16
+00:07:31,391 --> 00:07:35,751
+Yani yaptık evet, olumluysa ses çıkarmayayım. Yapmayan varsa o söylesin.
+
+17
+00:07:36,751 --> 00:07:39,291
+Ben yapmadım diye birisi söyler mi sence?
+
+18
+00:07:40,951 --> 00:07:42,831
+Değil mi? Daha düşük olasılık.
+
+19
+00:07:43,631 --> 00:07:46,831
+Neyse. Peki. Şimdi o zaman...
+
+20
+00:07:50,451 --> 00:07:54,971
+Geçen haftaki slide'ımıza kaldığımız yerden devam edelim.
+
+21
+00:07:57,672 --> 00:08:07,372
+Şimdi, geçen hafta en son Extreme Random Forest'tan bahsetmiştik.
+
+22
+00:08:09,032 --> 00:08:16,451
+Bu rastgele özelliklerin kullanılması noktasında, rastgele özellikler, ring kullanımı...
+
+23
+00:08:17,524 --> 00:08:20,084
+Sesim geliyor değil mi arkadaşlar? Herhangi bir sıkıntı yok.
+
+24
+00:08:21,064 --> 00:08:21,903
+Yok hocam, geliyor.
+
+25
+00:08:25,944 --> 00:08:43,903
+Rastgele özelliklerin kullanılması, yani her bir düğümde bütün özelliklere bakılması yerine daha küçük bir sayıdakine bakmak konusunda, dediğim gibi Random Subspace'den başlayan, Random Forest'a devam eden, daha sonra da...
+
+26
+00:08:43,956 --> 00:09:01,936
+Extreme Random Forest'ta da en rastgele hale getirilen bir süreç söz konusu. Şimdi burada daha az sayıda özelliğe bakarak aslında her bir modun üretilme hızını bayağı bir arttırıyoruz.
+
+27
+00:09:01,936 --> 00:09:04,436
+Fakat bunun dezavantajı neydi?
+
+28
+00:09:05,652 --> 00:09:27,572
+Anlamlı belki özellikler var, işimize çok yarayacak özellikler var. Fakat rastgele seçilenlerin arasında onlar olmadığı zaman o bölmenin, o nodun çok iyi yapılamaması ve bunun da ağacın büyümesine sebep olması. Ağaç da ne kadar derinleşirse onu genelleştirme kabiliyeti ki dolayısıyla da tekil öğrenci başarısının düşmesi söz konusu.
+
+29
+00:09:27,572 --> 00:09:30,752
+Bir yandan böyle bir kötü tarafı var.
+
+30
+00:09:32,500 --> 00:10:00,000
+[kişisel bilgi]
+
+31
+00:10:00,000 --> 00:10:19,620
+Kararların da birbirlerinden o kadar farklı olmasını sağlıyorlar. Ne kadar rastgele bir şeyler yaparsanız o kadar birbirinden farklı farklı ağaçlar oluşuyor ve birbirinden o kadar farklı farklı sonuçlar üretebiliyorlar. Dolayısıyla bu noktada bir tanesinden kazanırken bir tanesinden kaybediyoruz şeklinde bu süreci özetleyebiliriz.
+
+32
+00:10:25,076 --> 00:10:41,316
+Rotasyon Ormanları'na 2006'da önerilmiş bir algoritma. Orijinal eğitim kümesine yakın eğitim kümeleriyle eğitilen temel öğrencilerin kişisel başarılı yüksek ancak kararların birilerinden farklılıkları az olur.
+
+33
+00:10:41,316 --> 00:10:48,296
+Şimdi begging'de de özelliklerin de örneklerin seçimi noktasını düşünelim.
+
+34
+00:10:48,692 --> 00:10:59,032
+Örneklerin seçimi, yani siz bir tekil öğreniciyi orijinal veri kümesine ne kadar yakın bir şeyle eğitirseniz.
+
+35
+00:10:59,443 --> 00:11:14,583
+Ama aslında sizin tekil öğrencilerinin başarısı o kadar yüksek olacaktır. Çünkü çok benzer bir dağılımdan üretiyorsunuz. Dolayısıyla testin de eğitimle aşağı yukarı aynı dağılımdan geldiğini varsayıyoruz zaten. Bütün makine öğrenmesinin temeli bu.
+
+36
+00:11:15,323 --> 00:11:27,144
+Dolayısıyla onun orijinal eğitim kümesine ne kadar yakın bir eğitim kümesi olursa her bir tekil öğrencinin onların başarılığı da o kadar fazla oluyorlar.
+
+37
+00:11:27,443 --> 00:11:52,323
+Şimdi buradaki fikir şu, tüm örnek ve özelliklerin sayısını aynı bırakalım diyorlar. Yani özellikleri rastgele seçmeyelim, örneklerin içerisinden bootstrap ya da begging diye ifade ettiğimiz şey yapmayalım. Tüm örnekler ve özellikler aynı olsunlar. Yani yeni bir eğitim kümesi üreteceğiz ama örnekler aynı örnekler olsun, özellikler aynı özellikler olsun.
+
+38
+00:11:53,107 --> 00:12:18,847
+Peki o zaman nasıl bir farklılık oluşturacağız? Burada datayı döndürmekten bahsediyorlar. Rotation'da oradan geliyor zaten. Datayı döndüren yapı. Yani datayı belli bir miktar döndüreceğiz. Döndürdükten sonra bir tane tekil öğrenciye vereceğiz. Sonra yine orijinal datayı başka bir şekilde döndüreceğiz. Yine başka bir data oluşacak. O da başka bir öğrenciye vereceğiz. Ağaç olması şart değil de.
+
+39
+00:12:20,467 --> 00:12:47,988
+Tekidir Öğrenci'ye veririz. Bu şekilde. Şimdi, dönüşümde yani datayı döndürürken, şimdi şöyle bir şey düşünün. Elinizde n örnek olsun, çarpı d özellik olsun değil mi? Bu bizim datamız. Yani buna da işte x diyelim mesela. Böyle bir şey yani n çarpı.
+
+40
+00:12:48,500 --> 00:13:11,960
+D'lik bir şey. Şimdi biz bunu x üstünü bulacağız. x üstü eşittir x çarpı d çarpı d'lik bir matris. Şu. Şimdi bunu yaparsak burada yine bunun boyutlarını yazmaya kalkarsak şu x n çarpı d'ydi. Yani n çarpı d.
+
+41
+00:13:15,668 --> 00:13:39,248
+Çarpı D çarpı D eşittir. N çarpı D olacak değil mi yine? Dolayısıyla bizim döndürmeden kastımız aslında bir matriz bulacağız. Bu matriz özellik sayısı çarpı özellik sayısı boyutlu olacak. X'i bu matrize çarpacağız. X'in matrize çarptığımız zaman X'in boyutu değişmeyecek. Ama tabii içerisinde bir şeyler değişecek.
+
+42
+00:13:45,235 --> 00:14:02,536
+X datasını bir matrisle çarptığınız, çarpmanız demek aslında onu bir şekilde döndürüyorsunuz anlamına. Yani bir şekilde skelleri falan da değişebilir tabii ki. Ama datayı döndürmek anlamına gelecektir.
+
+43
+00:14:02,536 --> 00:14:12,435
+Şimdi peki, döndürmek için en çok kullanılan yaklaşımlardan bir tanesi, datayı döndürmek için en çok kullanılan yaklaşımlardan bir tanesi PCI'dir.
+
+44
+00:14:13,235 --> 00:14:17,155
+Bilgisayar Mühendisliği biliyor musunuz? Duydunuz mu adını daha önce?
+
+45
+00:14:19,015 --> 00:14:20,475
+Ülk ödevde vermiştiniz hocam.
+
+46
+00:14:22,255 --> 00:14:25,715
+Evet, doğru. Başka? Yani ondan öncesinden?
+
+47
+00:14:26,635 --> 00:14:31,935
+Daha önce görmüştüm ama hatırlamıyorum. Bayağı 6-7 yıl oluyor hocam.
+
+48
+00:14:33,940 --> 00:15:01,460
+Şimdi PCI aslında bir temel birleşenler analizi, Principal Component Analizi diye geçiyor. PCI datayı aslında döndürür. Yaptığı şey budur. Yani yine şuradaki D çarpı D'lik bir matriz bulur PCI algoritması. Ve siz bu D çarpı D'lik özellikleri kullandığınızda, yani X üstünü elde edersiniz. X ile bunu çarptığınızda yeni bir uzaya taşınmış olur aslında verilerimiz.
+
+49
+00:15:03,187 --> 00:15:28,528
+Fakat Psi'nin temel kullanım amacı, datayı bir şekilde azaltmak. Neyini azaltmak? Özellik sayısını azaltmak. Yani Psi'de aslında şöyle bir şey yapılır. X ve D ile D'nin mesela hepsi değil de D'nin ilk mesela 3-5 tanesi alınır. Öyle söyleyeyim. Mesela burası K olur.
+
+50
+00:15:29,076 --> 00:15:49,296
+K tane komponent üzerine dönüştürürsünüz. K komponente dönüştürürsünüz. Daha doğrusu K boyutlu uzaya iz düşürürsünüz. Öyle de ifade edilebilir. Dolayısıyla burada işlem en çarpı K'lık bir hale gelir. Dolayısıyla D boyutlu bir veri kümesini, K boyutlu bir veri kümesini indirgersiniz.
+
+51
+00:15:52,211 --> 00:16:05,792
+Ama hepsini, tabii bu belli bir kayıba sebep olur. Yani D'nin hepsini değil de K tanesi kullandığınızda belli bir kayıp olur. Ama bu da size şeyi sağlar. Çok daha az sayıda özellikle iş görmenizi sağlar.
+
+52
+00:16:07,155 --> 00:16:17,216
+Fakat burada PCI kullanabiliriz döndürmek için. Bunda herhangi bir sıkıntı yok. Ama PCI deterministik bir algoritma. Deterministik ne demek?
+
+53
+00:16:18,216 --> 00:16:31,635
+Algoritmaya siz bu X datasını verdiğinizde size D çarpı D'lik bir matriz üretiyor. Yani D tane temel birleşen buluyor. Bunların üzerine iz düşürüyor.
+
+54
+00:16:32,048 --> 00:16:58,227
+Fakat bunu farklı farklı şekillerde üretmiyor. Yani deterministik bir algoritma olduğu için, x'e her verdiğinizde içinde rastgele bir süreç olmadığı için. Mesela şöyle söyleyeyim, random forest'ı hatırlayalım. Random forest algoritması deterministik bir algoritma değil. Neden? Ben aynı datayı ona her verdiğimde farklı farklı tekil ağaçlar üretilecek. Niye? Çünkü içeride hem özellik seçiminde hem de örnek seçiminde rastgelelik var.
+
+55
+00:16:58,740 --> 00:17:26,299
+Fakat PCA öyle değil. PCA'da siz x'i aynı datayı verdiğinizde her zaman size aynı dönüşüm maddesini bulacaktır. Tamam mı? O zaman bizim farklı transformasyon maddesleri bulmak için farklı bir şeyler yapmamız lazım. Nedir onlar? Yapabileceğimiz şeyler neler? Örneklerden bir kısmını kullanır. Bakın örneklerden bir kısmını kullanmaktan kasıt şu. Transformasyon maddesini hesaplarken, yani şuradaki şu d çarpı d'lik maddesi hesaplarken bunun.
+
+56
+00:17:26,672 --> 00:17:42,531
+Bahsediyoruz. Yoksa şu X'te herhangi bir örnek azaltması yok. Sınıflardan bir kısmı kullanılabilir. Yine bu transformantasyonu hesaplarken. Yani sınıflardan bir kısmı demek aslında örneklerden bir kısmı demek bir açıdan bakarsanız.
+
+57
+00:17:43,423 --> 00:17:59,864
+Yani elinizde 10 sınıf var. Mesela içinden 5 tane sınıf seçelim, onları kullanalım, onun örneklerini kullanalım. Dolayısıyla bu da sınıflardan bir kısmına denk gelecek. Yani örneklerden bir kısmına denk gelecek. Özelliklerden bir kısmı, bütün özelliklerden bir kısmını kullanmak.
+
+58
+00:18:10,516 --> 00:18:28,256
+Şu D çarpı D mesela T1 diyelim. T1 maddesi diyelim. X'i bir T1 maddesi bulacağız. T1 maddesiyle datayı çarpacağız. Yeni bir X üstü bulacağız. Bu X üstünü gideceğiz. Bir tane karar racine vereceğiz. Sonra yine orijinal datayı için başka bir T2 maddesi bulacağız.
+
+59
+00:18:29,172 --> 00:18:52,331
+Bu T2 maddesiyle bunu çarptığımızda X üstü, üstü belki farklı bir data çıkacak. Onda başka bir ağaca vereceğiz. Bu şekilde her bir ağaca vereceğimiz data aslında n çarpı D'lik olacak. Bütün örnekleri içerecek. Bütün özellikleri içerecek ama özellikler tabii dönmüş halde içerilmiş olacaklar. Orijinal uzayda değil.
+
+60
+00:18:57,268 --> 00:18:59,268
+Burada bakayım. Şey var mı?
+
+61
+00:19:04,407 --> 00:19:13,347
+Evet. Şimdi algoritma bu. Rotation Forest'ın algoritması bu. Bakalım nasıl bir şey yapıyor bu transformasyon matrislerini üretmek için.
+
+62
+00:19:13,967 --> 00:19:20,967
+Yukarıdaki kısımlar zaten çok bariz. Şunu biraz daha şey yapsam bakayım. Böyle yapsam daha iyi mi? Herhalde daha iyi.
+
+63
+00:19:23,539 --> 00:19:44,440
+L dediğimiz şey bir training set demişiz. L işte X, Y, Y, Y, Y, Y, Y, Y'tir birden N'e kadar ilerliyor. Pardon. X, Y, X işte N çarpı P'lik matriz. Buradaki P dediğimiz şey özellik sayısı. P tane özelliğimiz var. Demin D dedim ya. Burada algoritmada P diye yazılmış.
+
+64
+00:19:52,948 --> 00:20:11,548
+Y'de sınıfları gösteriyor. K, Number of Attribute Sets. Buradaki Attribute Subsets, yani bu transformasyon madresini hesaplarken kullanacağımız alt özellik, özellik alt kümelerinin sayısı.
+
+65
+00:20:11,548 --> 00:20:20,208
+Ya da buna M'de diyebilirsiniz. Bu da her bir subsetin içerdiği özellik sayısı olacak.
+
+66
+00:20:21,172 --> 00:20:36,192
+W, bir based learning algoritm, işte temel öğrencimiz bizim. T number of iterations, x data point to be classified. Yani burası test zamanında kullanacağımız x'i ifade ediyor. Şuradaki output kısmında yapacağımızdır.
+
+67
+00:20:47,059 --> 00:21:10,059
+T.C.Klassifier, yani bizim CT klasifier için bir rotasyon maddesi oluşturacağız. Şimdi rotasyon maddesinin oluşturması şu birden başlıyor. İki, üç, dört ve beş. Beşe kadar. Şurası şu beş adımlı kısım rotasyon maddesinin oluşturması kısmı. Rotasyon maddesi oluşturduktan sonra...
+
+68
+00:21:10,675 --> 00:21:21,415
+Provide X çarpı RTA'yı buluyor ve o aslında şu anda yine X'imiz eğer işte N tane özellik P tane.
+
+69
+00:21:23,412 --> 00:21:42,952
+En tane örnek P tane özellikten oluşan bir matriz ise X çarpı RTA da yine ne olacaktır arkadaşlar? En tane örnek P tane özellikten oluşan bir şey olacaktır. Bunu da biz Classifier CT'ye ne yapacağız? Input olarak vereceğiz. Yani bir tane Classifier burada eğiteceğiz. Ve işlem burada bitecek.
+
+70
+00:21:43,539 --> 00:22:04,039
+Şimdi bunun detayına girmeden önce test kısmından bir bahsedelim. Test kısmında bir örnek geldiği zaman biz direkt bunu klasifier'lara yani tekil öğrencilere direkt olarak veremeyiz. Niye veremeyiz? Diğerlerini veriyorduk. Ama burada veremeyiz.
+
+71
+00:22:06,159 --> 00:22:08,039
+Aynı uzayda değiller değil mi?
+
+72
+00:22:09,920 --> 00:22:29,019
+Aynı uzayda değiller. Dolayısıyla ne olması gerekiyor arkadaşlar? Test örneğinin her bir sınıflandırıcıya verilmeden önce o sınıflandırıcının eğitilmiş olduğu transformasyon matrisi var ya, yani şurada çarpılarak, yani X ile RTA çarpılarak CT eğitildi ya, Teknik Üniversitesi.
+
+73
+00:22:35,539 --> 00:22:56,559
+Test örneği bu rotasyon maddesiyle çarpılacak. Bunun sonucunda, yani mesela RT ile çarpılacak. RT ile çarpıldığında aslında X örneğini biz T'nci klasifier'ın uzayına taşımış oluyoruz. Onu da bu sefer CT'ye veriyoruz. Yani artık onun uzayına geldiği için artık bunu yapabilir.
+
+74
+00:23:00,852 --> 00:23:24,452
+İşte y'ye eşit midir, değil midir? Burada en fazla oyu alan temel olarak yine kazanıyor. Yoksa herhangi bir ağırlıklandırma işlemi yok burada. Şu i ile gösterilen şey, fonksiyon, içerisi bir ise bir, sıfır ise sıfır çıkışı veriyor. Dolayısıyla her bir y eleman teta demiş. Teta dediğimiz şey, bütün şeyler.
+
+75
+00:23:25,076 --> 00:23:39,076
+Sınıf etiketleri. Dolayısıyla herhangi bir test datasının sınıfı ne olacak? En fazla hangi y'den, yani hangi sınıftan oy alırsa...
+
+76
+00:23:39,539 --> 00:23:57,319
+O dediğimiz şey de burada CT'nin o X üzerindeki tahmini aslında. İki CT mesela bu A sınıfındandır. Başka bir CT diyecek ki bu B sınıfındandır. Başka bir tanesi diyecek A sınıfındandır. İşte üç tanesi mesela kabaca. İki tane B, bir tane A olduğu için o zaman B sınıfındandır diyeceğiz.
+
+77
+00:23:58,959 --> 00:24:02,740
+Buraya kadar bir sıkıntı var mı arkadaşlar? Yani şu mevzuyu anlamışsınızdır herhalde.
+
+78
+00:24:04,788 --> 00:24:08,268
+Burada X'i döndürdük de Y'yi niye döndürmüyoruz?
+
+79
+00:24:09,867 --> 00:24:11,507
+Y'ler sınıf bilgisi.
+
+80
+00:24:12,007 --> 00:24:14,627
+Ama X'lere karşılık gelen mesela Y sınıfı değil miydi?
+
+81
+00:24:15,467 --> 00:24:20,107
+Yani 5 tane özellik var. Bu özelliklere karşılık gelen bir tane Y'lerimiz var.
+
+82
+00:24:20,927 --> 00:24:25,907
+X'i o özellikleri farklı bir uzaya taşırık. Ama Y'e halde sabit değişmedi.
+
+83
+00:24:27,107 --> 00:24:28,567
+O uzaya taşımak için.
+
+84
+00:24:30,387 --> 00:24:38,687
+Yok. Yani sonuçta etiket dediğimiz şey bir renk gibi düşün bunu. Yani noktanın koordinatının değişmesiyle etiketi değişir mi?
+
+85
+00:24:39,947 --> 00:24:40,627
+Değişmez.
+
+86
+00:24:41,467 --> 00:24:46,847
+Tamam. Yani doğrusu da Y'nin üzerinde herhangi bir transforması mı yapmıyoruz? Aynen duruyor.
+
+87
+00:24:50,847 --> 00:24:54,387
+O zaman şurada şunu da farkında olmamız lazım.
+
+88
+00:24:54,900 --> 00:25:11,120
+Mesela bir Random Forest'ta ya da Bagging'te bir test örneğini sınıflandırmak için sizin neye ihtiyacınız var? Temel öğrencilere ihtiyacınız var. Ağaçlar mesela. Ağaçlar kullandıysanız o ağaçlar size yeterli. O ağaçlar elinizde ise herhangi bir test örneğini sınıflandırabilirsiniz. Boosting'te de aynı şekilde.
+
+89
+00:25:13,299 --> 00:25:26,539
+Boosting'de küçük bir farklılık var. Neyse, orası önemli değil şimdilik. Fakat burada başka bir şey daha ihtiyacınız var. Yani modelinizin içerisinde tutmanız gereken başka bir şey daha var. Ne o? Ağacın haricinde.
+
+90
+00:25:26,539 --> 00:25:28,480
+Matris buradaki.
+
+91
+00:25:29,399 --> 00:25:40,539
+Değil mi? Bu matris aynen öyle. Bu matrisleri yani deminki bahsettiğimiz matrisleri hepsini tutmamız gerekiyor. Bir saniye arkadaşlar.
+
+92
+00:25:42,387 --> 00:25:46,207
+Bir saniye arkadaşlar.
+
+93
+00:26:32,692 --> 00:26:41,892
+Neyse, döndüm tekrardan. Peki arkadaşlar, şimdi nerede kaldık?
+
+94
+00:26:42,372 --> 00:26:47,532
+Şimdi rotasyon madresinin üretilmesinden kısmına gelelim.
+
+95
+00:26:48,272 --> 00:26:55,832
+Şimdi yapılan işlem ne? Dediğim gibi her seferinde arkadaşlar D çarpı D'lik bir madres üreteceğiz.
+
+96
+00:26:55,832 --> 00:26:59,132
+Şimdi bu P çarpı P'lik madresi ama şu şekilde üreteceğiz.
+
+97
+00:26:59,763 --> 00:27:24,283
+Şimdi bir matrisi, bu deminki yani rotasyon matrisini ya da transformasyon matrisini düşünelim. Ne diyordu? Datayı çok fazla bozmayalım diyordu. Datayı çok fazla bozmamak demek, yani bana bir datayı en az bozan matrisi söyleyebilir misiniz? Yani şuradaki X, pardon, R, T, A matrisinin hangi hali datayı en az bozar?
+
+98
+00:27:25,324 --> 00:27:26,203
+Birin matris mi?
+
+99
+00:27:26,836 --> 00:27:36,915
+Birim matris değil mi? Diagonalinde sadece birler olan, diagonalinin haricindeki bütün değerleri sıfır olan birim matrisle çarparsanız bir datayı ne olur?
+
+100
+00:27:42,708 --> 00:28:03,748
+Evet. Kendisini verir. Kendisini verir değil mi? Bu kadar. Yani hiçbir değişiklik yapmaz. Dolayısıyla buradaki asılda şeyde yapılan işlem, Rotation Forest'ta yapılan işlem, bu birim matrisine benzeyen matrislerle çarpalım biz bunu diyorlar. Birim matrisine benzeyen matrislerden de kasıt şu.
+
+101
+00:28:04,500 --> 00:28:17,779
+Sıfırdan farklı değerler nerede yer alacaklar? Diagonalün yakınlarında yer alacaklar. Sıfırlar ise diagonalün haricinde yer alacaklar.
+
+102
+00:28:17,779 --> 00:28:27,199
+Yani şöyle bir şey nasıl çizebilirim? Onu bir saniye belki çizebilirim. Bir deneyeyim. Burada neler var? Text, Draw, bu ne?
+
+103
+00:28:34,259 --> 00:28:38,259
+Bir dakika. Daha basit bir yol aramı bulmaya çalışıyorum.
+
+104
+00:28:40,259 --> 00:28:42,259
+Read Android.
+
+105
+00:28:44,259 --> 00:28:46,259
+Bunun açık.
+
+106
+00:28:52,180 --> 00:28:54,180
+Şöyle bir şey çizeyim.
+
+107
+00:28:58,180 --> 00:29:02,180
+Mühendis 5'e 5. 5'e 5 demeyelim.
+
+108
+00:29:02,180 --> 00:29:04,180
+9'a 9 olsun.
+
+109
+00:29:04,180 --> 00:29:09,180
+9'a 9'luk olsun. Tamam.
+
+110
+00:29:09,180 --> 00:29:13,180
+Ne oldu? Ekledim. Yanlış şey yaptık.
+
+111
+00:29:13,180 --> 00:29:17,180
+9'a 9. Tamam.
+
+112
+00:29:17,180 --> 00:29:18,923
+Evet.
+
+113
+00:29:19,092 --> 00:29:19,812
+9.9.
+
+114
+00:29:20,692 --> 00:29:22,812
+Bu tam istediğim gibi değil şu anda.
+
+115
+00:29:23,032 --> 00:29:24,632
+Heh tamam şu anda ben istediğim gibi.
+
+116
+00:29:25,312 --> 00:29:26,492
+Şunun formatını da bir
+
+117
+00:29:26,492 --> 00:29:27,892
+normal hale getirelim.
+
+118
+00:29:28,352 --> 00:29:29,272
+Bu çok kötü oldu.
+
+119
+00:29:31,272 --> 00:29:32,912
+Çiziklerin olduğu hali yok mu hiç?
+
+120
+00:29:37,940 --> 00:29:39,600
+İşte o. Tamam. İstedim bu.
+
+121
+00:29:40,779 --> 00:29:45,819
+Buradaki yapılan işlem, mesela diyelim sizin dokuz tane özelliğiniz var.
+
+122
+00:29:46,440 --> 00:29:49,059
+Dokuz tane özelliğiniz varsa bir transformasyon matrisi oluşturacağız.
+
+123
+00:29:49,140 --> 00:29:51,579
+Bu transformasyon matrisi dokuzda dokuzluk olacak değil mi?
+
+124
+00:29:52,500 --> 00:29:56,380
+Dokuzda dokuzluk transformasyon matrisi, birim matris nasıl bir şeydi?
+
+125
+00:29:56,420 --> 00:29:58,740
+Birim matris, şuraların hepsi bir var bir şeydi.
+
+126
+00:29:59,400 --> 00:30:03,220
+Değil mi? Şöyle şöyle bir olan bir şey. Buradan hepsi böyle birler gidiyor.
+
+127
+00:30:03,955 --> 00:30:16,215
+Burada yapılan işlem ise sadece şuralar için değerler üreteceğiz. Yani onu da nasıl yaptırabilirim? Şurası için. Şurası için.
+
+128
+00:30:23,380 --> 00:30:25,380
+Ve şurası için.
+
+129
+00:30:25,380 --> 00:30:32,380
+Bunların farklı renk olmasını anlamıyorum. Tamam yeterli.
+
+130
+00:30:32,380 --> 00:30:36,380
+Ve onun haricindeki şu kısımları tamamen sıfır bırakacağız.
+
+131
+00:30:36,380 --> 00:30:42,380
+Şimdi bu şekilde bir rotasyon maddesi de çarptığınız zaman datayı çok büyük bir değişime uğratmıyorsunuz.
+
+132
+00:30:42,380 --> 00:30:45,380
+Ama küçük bir değişime uğratmış oluyorsunuz. Tamam mı?
+
+133
+00:30:46,483 --> 00:31:06,563
+O zaman şuraların tamamen sıfır olacağı, şöyle şöyle üçlük bloklardan bahsediyor. Şimdi buradaki üçlük bloklar, demin bahsettiğimiz işte k tane subset vardı ya, attribute set f'i yani dokuzu üç tane subsete bölecek. Şu birinci subset, şu ikinci subset, şu üçüncü subset diye düşünün.
+
+134
+00:31:07,859 --> 00:31:27,759
+Dokuz tane örneğimiz olduğunda, bu dokuz tane içerisinden rastgele üç tane, her birinde üç tane özellik alt gümesi olan şey elde edecek. Daha sonra, örneklerin içerisinden üç tane özelliği seçti. Datasetin içerisinde üç tane özelliği seçti rastgele. Onun üzerine Bootstrap yaptı.
+
+135
+00:31:29,332 --> 00:31:52,912
+Bulstrap yaptıktan sonra, yani bulstrap yapmak ne demek? Örneklerin içerisinden en tane örneğin varsa en tane örnek seç. Bunu da yaptı. Yaptıktan sonra bunun üzerine PCI uyguladı. PCI'yi uyguladıktan sonra, PCI'yi bulduğu sonuçta 3x3'lük matris olacak değil mi? Çünkü 3 tane özellik seçtik ya RASY'yle. Yani 9 tane özellik içerisinde 3 tanesini seçtik. Dolayısıyla 3x3'lük bir matris elde edeceğiz PCI'den.
+
+136
+00:31:53,268 --> 00:32:09,688
+Aynı şekilde ikinci özellik staseti için başka bir üçe üşük maddi seyredeceğiz. Burada da yine başka bir üçe üşük maddi seyredeceğiz. Dolayısıyla her birinde bütün özellikler yer alacaklar. Bütün özellikler derken tamamında bütün özellikler yer alacaklar.
+
+137
+00:32:17,203 --> 00:32:42,843
+Burası mesela birinci, altıncı, yedinci özelliklerle eğitilecek. Birinci, altıncı, yedinci özellikler kullanılarak yani onların PCI'yi edilecek. Mesela diyelim ki ikinci, üçüncü, beşinci diyelim bunu da. Geriye de bir, iki, üç, dört, dördüncü, sekizinci, dokuzuncu.
+
+138
+00:32:45,491 --> 00:33:12,632
+Dolayısıyla bütün özellikler aslında kullanılmış olacaklar. Ve buralar sıfırdan farklı olacaklar. Ama şuralar tamamen sıfırlardan oluşturulmuş olacaklar. İşlem bu. Burada anlatılan kabaca. Dolayısıyla bu tarz matrislerle çarptığımızda datayı bir miktar döndürüyoruz. Datayı bir miktar döndürdüğümüzde de biz yeni bir ağaç elde edebiliyoruz. Ağaçları döndürmeye karşılığına kadar hassas olabileceğini tahmin edebiliyor musunuz?
+
+139
+00:33:15,155 --> 00:33:35,115
+Ağaçlar döndürmeye karşı hassas mı zararlar? Mesela şöyle bir örnek vereyim size. Mesela One Nearest Neighbor algoritmasını düşünün. One Nearest Neighbor algoritmasında bütün datayı 45 derece oynatsanız, döndürürseniz şöyle tam orjinden. One Nearest Neighbor algoritmasının sonuçları değişir mi?
+
+140
+00:33:36,796 --> 00:33:37,536
+Değişmez.
+
+141
+00:33:38,228 --> 00:33:53,108
+Değişmez değil mi? Ama bir karar ağacını düşünün. Bir karar ağacında Tata'yı 45 derece oynatırsanız karar ağacı ne olur? Baya bir değişir değil mi? Çünkü zaten aksistere dik bir şeyler üretiyor.
+
+142
+00:33:53,567 --> 00:34:20,547
+Karar sınırları olarak. Dolayısıyla datanızı döndürdüğünüz zaman karar açıları döndürmeye karşı aşırı hassaslar o manada. Zaten aşırı hassaslar. Dolayısıyla çok büyük değişimler yapmaya gerek yok. Küçük değişimler bile farklılıklar oluşturabiliyor. Büyük değişiklikler yapma işinin amacı zaten datayı çok fazla bozmamak. Datayı çok fazla bozmak da istemiyor ki onun için böyle daha spars bir transformasyon maddesi oluşturuyor.
+
+143
+00:34:21,396 --> 00:34:35,615
+Bunun tamamı full dolu olsa data epey bir ne olacaktır? Dönecektir, epey bir bozulacaktır. Onu yapmak yerine bu tarz bir spars matriz oluşturarak transformasyon yapıyor. Mantığı kavradık mı arkadaşlar? Rotation force'ın.
+
+144
+00:34:43,059 --> 00:35:00,159
+Rotation Forest algoritmasının diğer algoritmaları karşılaştırılması var. Yani genel olarak daha iyi. Random Forest'ten, Boosting'ten ve Bagging'ten. Şuradaki J48 bir karar ağacı algoritması. Temel öğrenici J48.
+
+145
+00:35:00,820 --> 00:35:20,760
+C48'leri Rotation'larla Ensemble yaparsanız böyle son şey ediyorsunuz. Bagging'te yaparsanız böyle, Boosting'te yaparsanız böyle, Rotation Force'te yaparsanız böyle. Burada en altında Wintai Lost'lar yer alıyor. Wintai Lost'lar sizin ikinci ödevde yapmış olduğunuz şey aslında.
+
+146
+00:35:22,708 --> 00:35:40,948
+Bir student test ya da artık nasıl bir test uyguladıysanız ona göre kaç tanesinde yendi, yenildi, beraber kaldılar. Onları gösteriyor. Burada Rotation Forest 21 yenmiş, 10 kez yenmiş, 8 kez yenmiş, 10 kez yenmiş. Fena bir performans yok gördüğünüz gibi. Diğerlerinden daha başarılı.
+
+147
+00:35:46,739 --> 00:36:09,779
+Bilmiyorum ödevde ne kadar bundan faydalandınız, incelediniz mi, incelemediniz mi? Ödevde sizin istediğim şeylerden bir tanesi, daha ödevlere de bakmadım azıcıkçası ama birazdan görürüz. Ödevde sizin istediğim şeylerden bir tanesi şuydu, tekil öğrencilerin kararlarının birbirlerine benzerliği, farklılığı üzerinden bir karşılaştırma yapın. Bunun ensemble doğruluğuyla alakasını inceleyin diye.
+
+148
+00:36:13,907 --> 00:36:36,167
+Teknik Üniversitesi Bilgisayar Mühendisliği, Kollektif Öğrencilerin hataları bulmak kolay. Ama teknik Üniversitesi bilgisayar Mühendisliği, Kollektif Öğrencilerin kararlarının birbirine benzerliğini ölçmek demek birazcık garip. Yani garip bir şey de nasıl yapılacak bu? Bunun için bir sürü yöntem var ama kullanılan yöntemlerden bir tanesi bu kapba yaklaşımı. Yani kapba'da one versus all gibisinden bir şey oluyor.
+
+149
+00:36:36,167 --> 00:36:41,327
+Şimdi temel öğrenciler kararlar veriyorlar çeşitli örnekler üzerinde değil mi?
+
+150
+00:36:41,844 --> 00:37:05,943
+Şimdi bu kararların yüzlerine kadarı aynı. Bu kararların yüzlerine kadarı aynı yapmak için şöyle bir şey yapabilirsiniz. Ya şunu yapacaksınız. Her bir ikiliye alacaksınız. Yani her bir temel öğrenci ikilisini alacaksınız. Ve bu ikililerin arasındaki iki şeyin birbirine kararları yüzlerine kadar onu bulacaksınız. Ve bütün ikililerin hepsinin ortalamasını alacaksınız. Bu bir yaklaşım.
+
+151
+00:37:06,320 --> 00:37:29,680
+Başka şey yapabilirsiniz. Tekil öğrencilerin her birinin Ensembl'ın kararına ne kadar benziyora bakabilirsiniz. Yani Ensembl bütün hepsinin maksimumlarını aldığınızda elde edeceğiniz değer maksimumları derken, hani orta demokrasi üsürü kararı birleştirdiğini elde ettiğiniz değerler. Her bir ağacın Ensembl'ın tamamını, Ensembl'ın kararına ne kadar benzediğini ölçebilirsiniz. Bu tarz yaklaşımlar kullanılabilir.
+
+152
+00:37:30,195 --> 00:37:46,395
+Burada işte bu özelliklerin ve tekil ağaçların başarılarının ve tekil ağaçlarının kararlarının birbirine benzerliğini kullanan diagramlar çiziliyor.
+
+153
+00:37:46,996 --> 00:37:54,295
+Bu diagramlar, mesela burada bir dataset var. Datasetimiz Wobble Data. Burada yanlış hatırlamıyorsam 100 tane falan şey olması lazım.
+
+154
+00:37:56,916 --> 00:38:15,576
+Temel öğrenci. 100 tane temel öğrenciyle, burada yine yanlış hatırlamıyorsam, o en başta bahsettiğim gibi ikiler. Yani iki tane mümkün her ikili ağaçlar. Dolayısıyla 100 tane ise 100'ün içerisinden kaç tane ikili seçebilirsiniz diye sorsam.
+
+155
+00:38:17,576 --> 00:38:18,695
+5500.
+
+156
+00:38:20,755 --> 00:38:45,455
+Tamam. Şimdi burada 5500 tane nokta var yani hani şurasını düşünürseniz. Bu 5500 tane noktanın iki tane koordinatı var. Bu koordinatlardan bir tanesi şurası kapva. Yani o ikiliğin kararları birbirlerine yüzdene kadar uyuyorlar. İkincisi ise pardon kararlarına kadar farklılar öyle söyleyeyim. İkincisi ise
+
+157
+00:38:46,356 --> 00:39:10,476
+Hataları, yani birincisinin hatası ve ikincisinin hatasının ortalaması. Yani şuradaki her bir nokta şu mesela kırmızılar için, şurada bir kırmızı nokta var. O kırmızı noktanın anlamı şu, burada iki tane ağaç var. Bu iki tane ağacın kapvaları, kapva değerleri 0.1'miş. Hata değeri ise 0.68 civarında falanmış. Ve buradaki kırmızılar Rotation Forest Algoritması ile oluşturulmuş.
+
+158
+00:39:11,251 --> 00:39:21,771
+Temel ağaçlar için error kappa diagramları. Şuradaki şu bölgedekiler random forest için oluşturulmuş. Şu arka tarafta kalmış olanlar adabust. Burada kalmış olanlar begging.
+
+159
+00:39:23,351 --> 00:39:32,911
+Şimdi buraya baktığımızda neler görüyoruz? İlk önce birazcık ondan bahsedelim. Bu error kappa diagramı nasıl okunur, nasıl anlaşılır, bize neler söylüyor, onu görmeye çalışalım.
+
+160
+00:39:33,300 --> 00:39:45,260
+Bunların altlarında da şeyler yazıyor. O data setteki her bir ensemble yönteminin performansını yazıyor. İşte Bagging, Adabust falan bu tarz şeyler yapmışlar. Performanslar göstermişler bu data sette.
+
+161
+00:39:46,480 --> 00:40:00,000
+Şimdi burada ideal olan nokta neresidir? Yani ideal olan noktadan kastımız ne? Ensembullar açısından. Ne istiyorduk biz ensembullarda? Tekil ağaçların başarıları yüksek olsun, hataları...
+
+162
+00:40:00,000 --> 00:40:13,480
+Yani hataların minimum olmasını istiyoruz. Ve de kararlarda birbirinden maksimum farklı olsunlar istiyoruz. Kararların da maksimum farklı olması o da burada. Benzerliğinin sıfır olması.
+
+163
+00:40:15,079 --> 00:40:23,480
+Dolayısıyla yani şurası 0, 5'den 9'a kadar gidiyor da bunun 0'a 0'a kadar indiğini düşünün. Dolayısıyla en fazla istediğimiz şey...
+
+164
+00:40:24,371 --> 00:40:42,711
+Şu noktaya yakın olması aslında bütün bu buluttaki noktaların. Çünkü bu buluttaki noktalar buraya yakın olarsa, buradaki bir ağaç ikilisinin anlamı ne demek? Hem hatası çok düşük hem de kararları birbirlerinden farklı var demek.
+
+165
+00:40:44,311 --> 00:40:50,711
+Burada mesela neyi görüyoruz? Begging'in ürettiği ağaçlara bakalım. Begging'in ürettiği ağaçların...
+
+166
+00:40:51,603 --> 00:41:08,423
+Hataları 0.6 civarlarında. Neye göre mesela Random Forest'ın hatalarında mesela 0.7 civarlarında. Rotation Forest'ın hatası birazcık daha yüksek belki ondan. Ortalarını kabaca bilmiyorum ama.
+
+167
+00:41:14,003 --> 00:41:34,684
+Rotation Forest'a göre, onlarda işte şeye göre, Adabust'a göre biraz daha başarılı. En başarısız ağaçlar, Random Forest'ın ağaçları. Çünkü onların hatası 0.7'lerde kalmış. Peki, Bagging yani en başarılı tek ilaçlar. Fakat, Kappa'ya göre bakarsak,
+
+168
+00:41:35,920 --> 00:41:57,200
+Burası. Kapaya göre bakarsak bunların da benzerliği en yüksek. Rotation, bakın Random Forest'ın benzerliği en düşük. Şuraya da. Görüyor musunuz? En düşük kap badalığına sahip olan Random Forest'ın ağaçları. Ondan sonra Rotation Forest'lar, Adaluslar ve en sonunda en benzeyen de, kararları da en çok birbirine benzeyenler Begging'in ağaçları.
+
+169
+00:41:57,780 --> 00:42:19,660
+Dolayısıyla burada Rotation Forest aslında şu iki tane uç arasında bir dengeyi yakalamış gibi gözüküyor. Yani hem kararlar birbirinden farklı bir şeyler üretebiliyor hem de çok da kötü olmayan bir şeyler üretebiliyor gibi gözüküyor. Ama tabii bunun teorik bir açıklaması yok. Hani bu bir empirik açıklama öyle söyleyelim bir varsayım.
+
+170
+00:42:22,483 --> 00:42:47,864
+Bir fikir, evet o şekilde ifade edilir. Bir teorem falan değil yani. Ama temel olarak kappa error diagramları bizim ensemblların dinamiklerini oldukça güzel gösteren diagramlar. Farklı algoritmaların kappa error diagramlarını, yani farklı ensembl algoritmaların kappa error diagramlarını incelemek, ensembl dinamiklerini anlamak, algılamak açısından oldukça faydalı.
+
+171
+00:42:49,972 --> 00:43:11,452
+Şimdi Rotation Force, evet Rotation Force epey uzun sürdü ama tabii anlattığım arada bayağı bir şeyler de oldu herhalde. Peki, şimdi gelelim Improved Space Force'ta. Improved Space Force'ın diğer algoritmadan bir farkı var. Bir meta algoritma, yani diğer Ensemble algoritma ile birlikte çalışabilen bir algoritma.
+
+172
+00:43:15,987 --> 00:43:39,567
+Bazı baggingle ya da Adabust'la ya da Random Forest'la kullanabilirsiniz. Herhangi bir sıkıntı yok. Peki burada neler oluyor? Örneklerin sayısını azaltmak, özelliklerin sayısını azaltmak değil de özelliklerin sayısı bir şekilde arttırılıyor. Ne demek bu?
+
+173
+00:43:40,436 --> 00:44:02,155
+Her öğrenci için orijinal özelliklerden yeni özellikler üretiliyor. Yani diyelim ki uzayınız D boyutlu olsun. D boyuttan D artı Z çarpı D. Yani burada Z'nizi bir kat sayış. Bir, iki ne derseniz. Mesela bir derseniz ne olacak? D boyuttan iki D boyuta çıkacak. Yani D tane de üretilmiş olacak elinizde. Ve iki boyutlu bir.
+
+174
+00:44:04,755 --> 00:44:30,155
+Uzay elde edeceksiniz. Yeni özellikleri üretirken eğitimden bir örneklem seçiliyor. Örneklem dediğimiz şey bootstrapping. Yani işte en tane, içinde en tane seç. Rastgele özellik F'leri üretiyoruz. Özellik ikileri, üçleri artık o F kaçsa ikileri üretiyoruz. Her F adet özellik için kancısı ve lineal regresyondan çıkışı tahmin eden bir model oluşturuyoruz. Bu modelin tahminlerini GF'e yeni bir özellik olarak ekliyoruz.
+
+175
+00:44:31,668 --> 00:44:57,288
+Bunu yaptığımızda her bir özellik evlileri için yeni bir tane özellik ekliyoruz. Bu işlemin ne kadar tekrar ederseniz o kadar tane fazla özelliğiniz oluyor. Ve rastgele özellik evlileri ürettiğimiz için rastgele özellik evlileri, ikilileri, üçleri, beşleri diye düşünün. Bunlar her tarafında rastgele üretildikleri için her bir yeni üretilen özellik, yani şurada başka bir özellik oluyor.
+
+176
+00:44:58,324 --> 00:45:09,324
+K'nci seviye lineal regresyon. Buradaki K'nci seviye mesela birinci seviye lineal regresyonla bunu yapabilirsiniz. İkinci seviye bir lineal regresyon çalıştırıyorsunuz yani. Lineal regresyonu hatırlıyorsunuz.
+
+177
+00:45:11,324 --> 00:45:17,483
+Hani Y eşittir, X A'da işte A'yı bulmak için neler yapıyorduk?
+
+178
+00:45:20,884 --> 00:45:26,423
+Transpozuyla çarpıyorduk, onun bir de tersini alıyorduk. Hatırlıyorsunuzdur herhalde onun.
+
+179
+00:45:26,423 --> 00:45:37,684
+Bir sonraki saatte vardır belki ama. Ne varmış? Şurada varmış işte. Ne yapılıyor? F'in 2, k'nın 1 olması durumunda.
+
+180
+00:45:39,524 --> 00:45:47,544
+F dediğimiz şey, özellikle F'leri dedik ya, alt kümelerin sayısı, alt kümelerin içindeki eleman sayısı.
+
+181
+00:45:48,211 --> 00:46:05,192
+F'in iki, yani iki tane özellik aldık rastgele. Karşıda bir linear regresyon yaptığımızda, mesela SX matrisi bizim şöyle bir matris oluyor, dizayn matris. Buradan W'yu buluyoruz şu şeye göre. X, Y ve X, G'ye göre. Buradaki Y ve G'den rastgele ikili özellik ikilileri.
+
+182
+00:46:05,780 --> 00:46:31,820
+Daha sonra bu ürettiğimiz SX matresini kullanarak bunu Y ile çarparak W'yu elde ediyoruz. SX ile de W'yu çarparak GF'ye tahminini elde ediyoruz. Buradaki GF tahmini aslında output yani şuradaki Y'ye. Output'u tahmin etmek. Yani şunu yapıyor aslında iş. Rastgele iki tane özellik alıyor. Bu iki tane özelliği kullanarak ben Y çıkışını tahmin etmeye çalışıyorum. Linear regresyonla. Ve bu tahmin ediciyi de.
+
+183
+00:46:32,211 --> 00:46:34,552
+GF'yi yeni bir özellik olarak tanımlıyor.
+
+184
+00:46:36,692 --> 00:46:49,432
+Eğer ki F3 işte X, K eşittir 2 dersek burada 3 tane üçlüler alacağız. Özellik üçlüler alacağız. Özellik üçlülerinin K eşittir 2, K eşittir 2 demek ne demek? Second order lineal regresyon.
+
+185
+00:46:54,943 --> 00:47:03,204
+İşin içerisine girecekler. SX matrisi böyle bir matris olacak. Daha uzun, daha fazla sayıda özelliği olan. Ama yine işlem aynı.
+
+186
+00:47:05,268 --> 00:47:19,288
+Her öğrenci farklı bir iyileştirilmiş uzay oluşturuluyor aslında her bir öğrenci için. Yani orijinal özellikler ve özellik EFL'lerinden üretilen yeni özelliklerle iyileştirilmiş yeni bir uzay oluşturuluyor her bir öğrenci için.
+
+187
+00:47:19,288 --> 00:47:31,748
+Her bir öğrenciye de daha sonra isterseniz, burada da yine algoritma var, isterseniz farklı farklı ensemble algoritmalarını da kullanarak onu gerçekleştirebiliyorsunuz.
+
+188
+00:47:32,659 --> 00:47:48,860
+Burada aslında önemli olan nokta neresi? Improved Space'den kasıt ne? Daha iyileştirilmiş. Yani orijinal uzaydan daha iyi bir uzay bulmak amaçlanıyor aslında burada.
+
+189
+00:47:53,139 --> 00:48:18,960
+Yeni özellikler oluşturuluyor ve hem orijinal hem de bu yeni oluşturulmuş özellikler karar ağaçlarına veriliyor. Karar ağaçları burada mesela diyelim ki orijinal özellikleri seçtiler. Yani sonuçta bazı özellikleri seçecekler şeyin içerisinde yani normal standart bir begging yaptığınızı düşünün. Ya da tam tek bir tane karar ağacı olduğunu düşünün. Yani beggingin tek bir karar ağacını düşünün.
+
+190
+00:48:20,211 --> 00:48:40,751
+Bazı özellikler notlarda yer alacak, bazı özellikler notlarda yer almayacak. Mesela orijinal özellikler tamamen ağacı kaplamışsa, yani ağacın içerisinde sadece orijinal özellikler varsa, bu yeni demin ürettiğimiz, linear regresyonla ürettiğimiz özellikler yoksa, bizim ürettiğimiz özellikler çok da fazla bir anlam taşımıyorlar demek.
+
+191
+00:48:46,068 --> 00:49:06,828
+Yeni üretilen özellikler var ise bu durumda bizim bu yeni ürettiklerimiz anlam taşıyor. Başarılı bir şey yapmışız diye düşünebiliriz. Şimdi linear regresyon yaptığı için bu işlem ve dolayısıyla yeni özellikler yani şurada ürettiğimiz her bir GF neyi içeriyor?
+
+192
+00:49:09,828 --> 00:49:10,568
+Elimizdeki
+
+193
+00:49:11,507 --> 00:49:33,967
+Özellik ikililerini içeriyor ya da özellik üçlülerini içeriyor. Yani, univerit bir şey değil bunlar. Karar notları olmayacaklar. İçinde ya ikililer, özellik ikilileri olacak ya da özellik üçleri olacak ya da artık kaçtan almalıysanız, o kadarlı özelliklerden bahsediyor olacaksınız.
+
+194
+00:49:36,831 --> 00:49:54,872
+Orijinal özellikleri dik çizgilerle uzayı bölmeyecek aslında bunlar yeni özellikler. Normal standart yaklaşımın yapamadığı mesela işte dik olmayan multivariate yaklaşımları da bu kapsayabiliyor. İşin içerisine onlar da girebiliyorlar.
+
+195
+00:49:55,331 --> 00:50:02,251
+Mesela diyelim ki, sizinlerinizde iki tane şunu biraz büyütürsem daha rahat herhalde anlaşılır.
+
+196
+00:50:08,724 --> 00:50:27,844
+Pardon. Şurası. Mesela iki sınıflı bir probleminiz olsun, artılar ve yuvarlaklar. Şu mavi sizin gerçek sınıfınız olsun. Pardon, gerçek sınırınız olsun. Yani bu sınıra göre ben bunları artı ya da yuvarlak diye etiketlemişim. Öyle söyleyeyim. Tamam.
+
+197
+00:50:27,844 --> 00:50:32,264
+Şimdi, üniversite 3'in buradan. Mesela üniversite 3'nin yapacağı şey.
+
+198
+00:50:34,708 --> 00:50:44,628
+Burada şöyle, şunun da altında kalacak şekilde gözüküyor. Şöyle yeşilli, şöyle devam ediyor. Sonra şöyle bir şey, sonra şöyle bir şey, sonra şöyle bir şey yapacaktır. Tamam mı?
+
+199
+00:50:47,288 --> 00:51:01,628
+Burada Univered Tree'nin yaptığı şey bu. Fakat Improve Space Tree'nin yapacağı şey ise, şurada gördüğünüz, şöyle şu moru görüyorsunuz. Sonra şöyle bir şey yapıyor, sonra da şöyle bir şey yapıyor.
+
+200
+00:51:02,164 --> 00:51:17,164
+Yani aslında gerektiği zamanlarda düz çizgiler, gerektiği zamanlarda ise yatay çizgileri, ya da dikey olmayan eğik çizgileri kullanabiliyor. Yani şu bölgede orijinal uzaydan bir...
+
+201
+00:51:17,811 --> 00:51:43,371
+Özellik seçmiş. Şu bölgede, bu bölgede yeni uzaydan yani üretilmiş özelliklerden bir tanesini seçmiş. Yine şu bölgenin içerisinde ise neyi seçmiş? Yine orijinal örneklerden bir, orijinal özelliklerden birisini seçerek işlemi gerçekleşmiş. Yani gerektiği zaman kompleksleşip gerektiği zaman orijinal uzayda kalabilen bir yaklaşım aslında.
+
+202
+00:51:44,724 --> 00:52:01,483
+Ve bunun kapva error diagramını incelediğinizde oldukça farklı data setlerde, farklı diyelim, enstamlı algoritmalarıyla oldukça iyi çalıştığını gözlemleyebilirsiniz. Fena olmayan bir yaklaşım.
+
+203
+00:52:03,204 --> 00:52:05,724
+Ayrıca teorik olarak da birkaç tane özelliği var. Efendim?
+
+204
+00:52:06,443 --> 00:52:08,184
+Bu yaklaşım size mi ayıp var görüntü?
+
+205
+00:52:09,304 --> 00:52:10,284
+Evet, evet.
+
+206
+00:52:12,052 --> 00:52:14,052
+Tamam.
+
+207
+00:52:14,052 --> 00:52:15,052
+Şimdi...
+
+208
+00:52:23,795 --> 00:52:47,195
+Gelelim 14.51. Şöyle bir şey yapalım. Burasını bitireceğiz. Bir dakika, planımızda ne vardı? Nereye kadar gideceğiz demiştik. Bu hafta iki katmanlık Kollektif Öğrenme bitiyor. Tamam o zaman şöyle bir şey yapalım. 50 dakikaya gelmiş zaten. Bir ara verelim arkadaşlar şimdi.
+
+209
+01:06:21,940 --> 01:06:24,420
+Pardon arkadaşlar, biraz geciktim.
+
+210
+01:06:25,659 --> 01:06:29,379
+Şimdi kalan kısmı yapalım.
+
+211
+01:06:30,000 --> 01:06:32,619
+Sayfayı paylaşayım bir saniye.
+
+212
+01:06:40,884 --> 01:06:48,184
+Şimdi diğer Ensemble yöntemi hata düzelten kod tabanlı, error correcting output kod tabanlı topluluklar.
+
+213
+01:06:48,844 --> 01:06:53,224
+Şimdi buradaki amaç elimizde K sınıflı bir problem olsun.
+
+214
+01:06:53,224 --> 01:07:01,584
+Bu K sınıflı problemi daha basit alt problemlere bölmek aslında buradaki amaç.
+
+215
+01:07:02,344 --> 01:07:07,684
+Yani daha basit derken iki sınıflı, öyle söyleyelim, iki sınıflı problemlere bölüyoruz.
+
+216
+01:07:08,403 --> 01:07:35,523
+Yani K tane sınıflı bir datasetimiz var ve biz bu K sınıflı dataset'i iki sınıflı birçok probleme böleceğiz. Bu birçok probleme bölerken bir kod matrisi oluşturacağız ki buna da biliyor demişiz. Bunun oluşturma yöntemleri üç tane. Peki böyle bir şey niye yapıyoruz? Yani derdimiz ne? Mesela şöyle bir durum düşünün. Elinizdeki bir sınıflandırıcı var ve bu sınıflandırıcı sadece iki sınıfı birbirinden ayırabiliyor.
+
+217
+01:07:36,403 --> 01:07:52,444
+Yani üç sınıfı birbirine ayıramıyor. Lineer bir yapısı var diyelim ki. Bu durumda aslında yapılan işlem ne olacak? İki sınıflı bir sınıflandırıcıyı istediğimiz kadar sınıfı birbirinden ayırt eden bir mimari, bir modeli oluşturmakta kullanabileceğiz.
+
+218
+01:07:53,012 --> 01:08:17,551
+Bunun en yaygın kullanıldığı yer SVM'lerdir. SVM'ler bildiğiniz gibi iki sınıfı birbirinden ayırt edebilirler temelde. Fakat bu ECOG'la yani Correcting Output Code'la kullanılan yöntemlerden bir tanesi ya da herhangi bir tanesiyle siz işte 10 tane sınıf varsa da yine SVM'i kullanabilirsiniz. Peki bunu nasıl yapacağız?
+
+219
+01:08:19,667 --> 01:08:44,927
+Kod maddesi oluşturmak için üç tane yöntem var. Bu üç tane yöntem, bir tane yöntemlerden birincisi, bir sınıf diğer tüm sınıflara karşı. Yani L tane probleme dönüştüreceğiz demiştik ya, K sınıflı bir tane problemi. Burada L eşittir K oluyor. Yani K tane sınıf vardı. Dolayısıyla L, mesela dört tane sınıfınız varsa, dört tane ne olacak? Probleme dönüşecek. Dört sınıflı bir problemi.
+
+220
+01:08:46,163 --> 01:09:03,523
+Dört tane iki sınıflı probleme dönüştüreceksiniz. Peki nasıl? Burada bir sınıf diğer tüm sınıflara karşı, yani bu one versus all diye geçer. Bir sınıf diğer tüm sınıflara karşı. Şu birinci sütun bir şeyi ifade eder.
+
+221
+01:09:08,724 --> 01:09:33,644
+Eğitim kümesini ifade eder. İkinci sütun başka bir eğitim kümesini, üçüncüsü başka bir eğitim kümesini, dördüncüsü başka bir eğitim kümesini. Şimdi burada her sütunun ifade ettiği eğitim setini bir öğrenci öğreniyor. Yeni eğitim setinde sütunla artı bir de ifade eden sınıfa şimdi satırlarda sınıfları gösteriyor. Yani birinci satır birinci sınıf, ikinci satır ikinci sınıf, üçüncü satır üçüncü sınıf, dördüncü satır dördüncü sınıf. Burada dört tane sınıf var.
+
+222
+01:09:36,564 --> 01:09:58,764
+Birinci problemimizde şunu yapıyoruz. Birinci sınıfın örneklerini artı bir etiketiyle, iki, üçüncü ve dördüncü sınıfın örneklerini eksi bir etiketiyle etiketliyoruz. Ve dolayısıyla iki sınıflı bir problem oluyor. Birinci sınıfın içerisinde sadece, yani yeni birinci sınıftan örnekler var. Yeni ikinci sınıfın içerisinde ikinci, üçüncü ve dördüncü sınıftan örnekler var. Bu bir dataset.
+
+223
+01:10:00,000 --> 01:10:19,800
+İkincisinde başka bir datı ser. İkincisinde ise sadece iki numaralı sınıfın örneklerine artı bir diğerlerinin hepsine eksi bir yapıyoruz şeklinde devam ediyor. Peki bu dört tane eğitim setiyle, yeni eğitim setiyle dört tane temel öğrenci eğitiyoruz ve bunların her bir gördüğünüz gibi binary'ler. Yani iki sınıf var. Peki sonucu ne yapacağız? Yani sonucu nasıl bulacağız?
+
+224
+01:10:20,435 --> 01:10:46,456
+Yeni bir test örneği geldi. Bu test örneğini birincisine vereceğiz. Bize artı bir ya da eksi bir verecek. İkincisine vereceğiz. Yine artı bir eksi bir verecek. Üçüncüsüne vereceğiz. Dördüncüsüne vereceğiz. Bize dört tane değer verecek. Bu dört tane değeri bir satır olarak düşünün. O satır buradaki satırlardan hangisine en çok benziyorsa o demektir. Yani mesela eksi bir eksi bir eksi bir artı bir verdi. Bu durumda bu dördüncü sınıftan bir örnek olduğunu ifade etmiş olacağız.
+
+225
+01:10:54,676 --> 01:11:00,336
+Hocam peki artı 1-1 artı 1-1 tarzı bir şey olursa ne olacak?
+
+226
+01:11:07,539 --> 01:11:23,699
+Artı bir eksi bir, artı bir eksi bir şeklinde bir şey olursa elimizdekilerden en çok hangisine benziyorsa ona vereceğiz. Elimizdekilerden iki tanesine aynı anda çok benziyorsa diyelim ki o durumda işlerinden bir tanesini rastgele seçip output olarak vereceğiz.
+
+227
+01:11:29,908 --> 01:11:33,228
+Anlaşıldı mı? Anlaşıldı hocam.
+
+228
+01:11:33,948 --> 01:11:43,756
+Tamam. Şimdi bu birincisi, yani one versus all. İkincisi, bütün olası sınıf ikillerini birer problem haline getiriyoruz. Yani...
+
+229
+01:11:44,659 --> 01:12:00,159
+Bu durumda L, yani problem sayımız, yeni problem sayımız, K çarpı K eksi bir bölü iki, yani sınıf sayısı K burada. Yani dört tane sınıfımız varsa, 4 çarpı üç bölü iki, altı tane yeni problem edilir.
+
+230
+01:12:00,692 --> 01:12:26,792
+Problemlerimizin her biri şuradaki sütunlarda belliler. Birinci problemimiz birinci ve ikinci sınıfı birbirinden ayırmaya yarıyor sadece. İkincisi birinci ve üçüncüsünü ayırmaya. Üçüncü datasetimiz birinci ve dördüncü sınıfı birbirinden ayırmaya şeklinde bütün olası sınıf ikillerini içeriyorlar. Peki burada eğitim kümeleri nasıl oluşturacağız? Eğitim kümeleri şu şekilde oluşturuluyor.
+
+231
+01:12:27,475 --> 01:12:43,595
+Mesela şunun için düşünelim. Birinci sınıfı dördüncü sınıftan ayıran bir veri kümesini oluştururken ikinci ve üçüncü sınıftan örneklere zaten ihtiyaç yoktur. Dolayısıyla sadece ve sadece birinci ve dördüncü sınıftan örnekleri veriyorsunuz. Bir tanesini artı bir, bir tanesini eksi bir olarak ifade ediyorsunuz.
+
+232
+01:12:46,271 --> 01:13:07,731
+Eğitim kümelerini oluşturduktan sonra, ikiler için eğitim kümelerini oluşturduktan sonra bunların her birini bir tane temel öğrenci öğreniyor. Altı tane temel öğrenci eğitiyorsunuz. Sonra yeni bir test örneği geliyor. Test örneğine göre altı tane sonuç çıkıyor. O altı tane sonucun oluşturduğu satır, buradaki satırlardan hangisine en çok benziyorsa o da o sınıftandır diyoruz. Yani burada yine satırlar sınıfları ifade ediyorlar.
+
+233
+01:13:10,963 --> 01:13:28,724
+Üçüncü yaklaşım ise tüm olası alt problemleri. Full code deniyor. Buradaki problem sayımız 2 üzeri k-1, eksi 1. Yani 4 tane ise işte 2 üzeri 3, 8, 7. 7 tane yeni problem çıkıyor. Burada bütün olası alt problemler var.
+
+234
+01:13:31,764 --> 01:13:46,043
+Biri diğerlerinin hepsinden ayıran, iki diğerlerinin hepsinden ayıran, biri ve ikiyi üç ve dörtten ayıran mesela ya da iki ve üçü bir ve dörtten ayıran bütün olası alt problemleri burada görüyorsunuz.
+
+235
+01:13:46,984 --> 01:13:51,244
+Tabii sınıf sayısı çok fazla olduğunda burası oldukça büyük bir şey olacaktır, tahmin edebilirsiniz.
+
+236
+01:13:52,644 --> 01:13:54,304
+Yine işlem aynı.
+
+237
+01:13:55,731 --> 01:14:03,172
+Bütün eğiticiler sonuçlarını söylüyorlar. O sonuç satır halini düşünürsek, buradaki satır haline hangisine benziyorsa o sınıftandır diyoruz.
+
+238
+01:14:06,612 --> 01:14:22,432
+Verdiği sıfırlar etkisi eleman zaten. Bu dediğim gibi yani bu ECOG yaklaşımı özellikle SVM'ler için oldukça sık literatürde kullanılan bir yaklaşım.
+
+239
+01:14:22,432 --> 01:14:28,432
+Gelelim bir saniye.
+
+240
+01:14:31,188 --> 01:14:54,128
+Tamam, bunu da yapalım. Şimdi, yerel modellerin birleşimi algoritması. Şöyle bir şey yapalım. Şimdi burada duralım arkadaşlar. Şu iki sesi sona kalsın. Zaten çok fazla bir şey kalmadı. İki tane onları hallederiz yani. Önümüzdeki haftaya da halledebiliriz. O kadar şey değil. Sesim biraz kötü de o yüzden ilerlemekte zorlanıyorum.
+
+241
+01:14:54,547 --> 01:15:13,987
+Şimdi dediğim gibi şu dokuzu ve onu haftaya atalım. Yani planımızı düşünürsek çok büyük sıkıntı olacak mı? Yok, olmaz. Yani önümüzdeki hafta kompleks şeyler yok. Tamam, sıkıntı değil. Şu uzman karışımı ve onları sonraki haftaya atarız.
+
+242
+01:15:13,987 --> 01:15:18,487
+Peki arkadaşlar, benim bugünlük anlatacaklarım bu kadar.
+
+243
+01:15:19,252 --> 01:15:36,731
+Şimdi topu size atmak istiyorum. Şimdi kaç kişiyiz? 14 kişiyiz. Tabii ikili yapanlar vardır, tek başına yapanlar vardır. Ben de ki sıraya bakayım, onunla isterseniz gideyim. [öğrenci]?
+
+244
+01:15:38,192 --> 01:15:39,092
+Buradayım hocam.
+
+245
+01:15:39,652 --> 01:15:43,532
+Merhabalar [öğrenci]. Sen tek başına mı yaptın yoksa birisi de var mıydı?
+
+246
+01:15:43,952 --> 01:15:44,572
+Tek yaptım.
+
+247
+01:15:45,108 --> 01:15:48,368
+Tek başına yaptın. Tamam. İlk önce seni dinleyelim o zaman.
+
+248
+01:15:49,688 --> 01:15:49,988
+Tamam.
+
+249
+01:15:56,724 --> 01:15:57,804
+Geldi mi?
+
+250
+01:15:59,804 --> 01:16:00,804
+Evet geldi.
+
+251
+01:16:03,444 --> 01:16:04,043
+Tamam.
+
+252
+01:16:04,404 --> 01:16:06,864
+Şimdi önce veri setlerini seçmemiz gerekiyordu.
+
+253
+01:16:07,444 --> 01:16:09,144
+Ben şu kurala uyan bütün veri setlerini aldım.
+
+254
+01:16:09,184 --> 01:16:09,804
+30 taneydi.
+
+255
+01:16:10,144 --> 01:16:10,944
+Sonra öyle çalıştıydım dedim.
+
+256
+01:16:10,984 --> 01:16:12,904
+Sonra çok uzun sürüyordu.
+
+257
+01:16:13,384 --> 01:16:14,884
+Küçük olan 20 tanesini aldım onlardan.
+
+258
+01:16:16,944 --> 01:16:23,064
+İşte o algoritmalar için 5 çarpı ekelik cross-validation'ları çalıştırdım ve t-test ile karşılaştırdım.
+
+259
+01:16:23,423 --> 01:16:29,423
+1 derinlikte, şu ikisini Beggin kazanmış, 11 beraber ökmüş, 7'sini Adabust kazanmış bu şekilde.
+
+260
+01:16:29,423 --> 01:16:40,423
+Burada dikkatimi çekenler, Adabust'un başlangıçta çok iyi olmasıydı. Sonra, son derinlikte eşit oldular, Decision Tree ile.
+
+261
+01:16:40,423 --> 01:16:44,423
+En büyük farklar, Random Forest ile Decision Tree arasında 10 derinlikte oldu.
+
+262
+01:16:44,423 --> 01:16:51,211
+Yani 14'e 0 ama 1 derinlikteyken, yenildiği de vardı, 9'a 4'tü.
+
+263
+01:16:51,859 --> 01:17:00,299
+Bunların tabloları var. Bir derinlik için. İki rüzgar. Genel olarak ensemblerinin daha iyi olduğu gibi gözüküyor.
+
+264
+01:17:01,079 --> 01:17:03,899
+Onları geçeyim.
+
+265
+01:17:06,459 --> 01:17:11,819
+Sonra grafikler var. Mesela algoritmaların maksimum derinlik başarı karşılaştırılması.
+
+266
+01:17:12,115 --> 01:17:23,115
+Bu derinlik sayısının başarı oranını veriyor. Bu 10 tane cross-folder için değeri var. 20 veri set için 10 ortalama, bir de 10'ların ortalamasının alınması.
+
+267
+01:17:23,115 --> 01:17:29,115
+Burada göze çarpanlar en başarılı her durumda 10 derinlikte random forest algoritması.
+
+268
+01:17:29,115 --> 01:17:31,115
+O ve şey...
+
+269
+01:17:31,311 --> 01:17:43,031
+Begging, şurada 10 derinlikte pik yapıyor. Adabuzz, 5 derinlikte pik yapıyor. Distant Tree, sonsuz derinlikte. İşte Adabuzz'un böyle bir düşüşü var. Şundan ufak bir düşüşü oluyor.
+
+270
+01:17:44,311 --> 01:17:55,711
+Ortalama Tekil Öğrenci Başarısında da, Adabuzz çok kötü başlıyor, sonra bayağı çıkıyor ama bu çıkması aslında iyi olmuyor onun için. Sonra da şeyler görünüyor, adım.
+
+271
+01:17:56,083 --> 01:18:06,083
+Random Forest, daha düşük Teknik Üniversitesi Başarısına sahip ama genel şeyde daha başarılı çıkıyor.
+
+272
+01:18:06,083 --> 01:18:14,083
+Benzerlik ölçümleri var. Bunun için algoritmaların, Teknik Üniversitesi'nin testleri var.
+
+273
+01:18:14,868 --> 01:18:24,468
+Bu testleri, her bir testi diğer hepsiyle karşılaştırdım kendisiyle dahil. Karşılaştırmayı da kosmüs benzerliğiyle yaptım. Toplam 100 çarpı 100'lük bir matris oluştu.
+
+274
+01:18:24,468 --> 01:18:28,468
+Onların ortalamasını aldım. Bu benzerlik değerini verdi.
+
+275
+01:18:28,468 --> 01:18:31,468
+Burada aslında...
+
+276
+01:18:31,468 --> 01:18:35,468
+Anlatayım mı orayı bir daha?
+
+277
+01:18:35,468 --> 01:18:39,468
+Yok yok şimdi bu grafiği anlat bize. Grafikten ne gözüküyor diye.
+
+278
+01:18:39,468 --> 01:18:40,268
+Tamam.
+
+279
+01:18:40,500 --> 01:18:48,819
+Grafik ilginç geldi bana. Çünkü her biri farklı bir fonksiyon çıktı. Bu sabit bir fonksiyon. Bu adabuz üstel artıyor. Random forest logaritmik artıyor gibi.
+
+280
+01:18:50,619 --> 01:18:55,879
+Şimdi bunların diğer mesela bagging için tüm grafikleri verip burada güzel yorumlar olabilir.
+
+281
+01:18:57,300 --> 01:19:10,300
+Ortalama
+
+282
+01:19:10,300 --> 01:19:13,300
+İkisinin doğru orantılı olduğunu görebiliyoruz.
+
+283
+01:19:13,300 --> 01:19:19,300
+Adabus'da Kollektif Başarışı'ya kadar artıyor.
+
+284
+01:19:24,271 --> 01:19:32,771
+O bir düşüş yaşıyor diğer şeylerde. Şu ikisi doğru orantılı ama şu da ters orantılı olduğu için ve bu daha çok arttığı için, şuralarda bir azalma görüyoruz.
+
+285
+01:19:34,771 --> 01:19:44,271
+Random Forest'te de yine o ikisi doğru orantılı artıyor. Ama benzerliğin yavaş artması belki de onu etkilemiyor. En son kolektif başarısı yüksek oluyor.
+
+286
+01:19:45,587 --> 01:19:53,268
+Onun harici Extremely Randomized Ricit de yaptım ben ama diğerleriyle karşılaştıramadım yine zaman probleminden. Onda da böyle bir grafik çıktı.
+
+287
+01:19:53,268 --> 01:20:08,147
+Zaman karşılaştırmasında da şey baya kısa sürdü. Karar harcıyla görüldüğü gibi. Random Forest diğerlerinden işte bu derinlikte kadar iyi. AdaBus sonsuz derinlikte baya hızlı çalıştı.
+
+288
+01:20:08,147 --> 01:20:11,147
+Sonuç ve yorumlar...
+
+289
+01:20:11,380 --> 01:20:24,579
+Genel olarak Kollektif Öğrenmeler daha başarılı sonuçlar verdi. En yüksek başarı oranına her türlü durumda Random Forest ulaştı. Maksimum derinlik 5'e kadar Ada Boost daha başarılı oldu. Öyle bir kısıt varsa derinlik sayısı şey olacaktı, Ada Boost kullanılabilir.
+
+290
+01:20:24,579 --> 01:20:36,380
+Daha yavaş çalıştılar. Yukarıdaki grafik işte benzerlik oranı çok arttığında bireysel başarılar artsa bile...
+
+291
+01:20:36,627 --> 01:20:41,407
+Kollektif Öğrenme başarısı düşmüş oldu. Bu kadar benim.
+
+292
+01:20:43,007 --> 01:20:49,507
+Tamam, teşekkürler [öğrenci]. Güzel bir ödevdi. Evet, sırayla dağılır. [öğrenci].
+
+293
+01:20:52,927 --> 01:20:53,867
+Buradayım hocam.
+
+294
+01:20:54,747 --> 01:20:56,587
+Sen tek başına mı yaptın [öğrenci]?
+
+295
+01:20:56,607 --> 01:20:58,387
+Ben tek başına yaptım, evet hocam.
+
+296
+01:20:58,836 --> 01:21:10,656
+Tamam, dinleyelim seni. Bir saniye hocam, mikrofon takayım. Belki sesim kötü geliyordur. Yok, şu anda gayet iyi geliyor sesim. İyi mi hocam? İyi, iyi. Şu anda gayet iyi. Yok, gerek yok. Tamamdır hocam.
+
+297
+01:21:15,444 --> 01:21:17,424
+Gözüküyor mu hocam şu an?
+
+298
+01:21:19,424 --> 01:21:20,624
+Evet, görünüyor.
+
+299
+01:21:23,667 --> 01:21:40,827
+Öncelikle hocam, ben raporumda bir yeri yanlış yapmışım. Onun nedeni de kodda küçük bir yeri, 4 yerine 3 yazdığım için Adabos'un Teknik Üniversitesi'ni yerine onda da begging almışım.
+
+300
+01:21:40,827 --> 01:21:51,067
+O yüzden ikisi aynı çıktı. Hatta ona göre yanlış bir yorum da yapmışım. Ama onun yenisini hesaplattım ben hemen sunumdan önce. Yeni grafiği göstereceğim size.
+
+301
+01:21:51,667 --> 01:21:53,207
+Hmm.
+
+302
+01:21:55,347 --> 01:22:18,067
+Şöyle başlayayım. Ben 12 tane veri seti seçtim hocam. Sizin dediğiniz gibi bu veri setlerini seçerken Zero Rule algoritmasını kullandım. Bu algoritmaya göre en düşük olan, başarı oranı en düşük olan yani dağılımı daha diğerlerine göre kötü olan aslında.
+
+303
+01:22:23,347 --> 01:22:24,667
+frekansı diğerlerine göre
+
+304
+01:22:24,667 --> 01:22:27,268
+daha az olan, daha eşit olan
+
+305
+01:22:27,268 --> 01:22:28,847
+veri setlerini seçtim.
+
+306
+01:22:29,368 --> 01:22:31,228
+En şey, düşük
+
+307
+01:22:31,228 --> 01:22:33,268
+12 tanesini. Bunlar da
+
+308
+01:22:33,268 --> 01:22:35,007
+Avalon, Odoloji
+
+309
+01:22:35,007 --> 01:22:37,347
+diye gidiyor böyle V-form'a kadar.
+
+310
+01:22:38,323 --> 01:22:58,884
+Hiper parametre olarak maksimum derinlik değerlerimi 1, 2, 3, 5, 10 ve sonsuz olacak şekilde zaten ödevde de öyle söylemiştiniz. Buna göre aldım. Buna göre modelleri eğittim ve ona göre sonuçları karşılaştırdım. Hepsi için 100 tane tekil öğrenici belirledim.
+
+311
+01:22:58,884 --> 01:23:05,583
+Diğer parametrelerimi default olarak kullandım. Algoritmada ne geliyorsa.
+
+312
+01:23:06,323 --> 01:23:10,323
+T-Test'i yaparken...
+
+313
+01:23:12,340 --> 01:23:32,139
+Python'da hazır bir kütüphane vardı. ParyTest 5x2 Cross Validation diye. Zaten soruda da 5x2 Cross Validation kullanmamızı söylemişti. %95'lik. Bunun tabloya baktığımız zaman bu tabloyu da bir kaynaktan aldım. Aşağıda var kaynak.
+
+314
+01:23:36,139 --> 01:23:40,280
+%5'lik değer için güven değeri bizim artı ve eksi.
+
+315
+01:23:40,340 --> 01:23:47,340
+2.571 olarak değişiyordu. Yani eğer benim bu fonksiyondan...
+
+316
+01:23:47,988 --> 01:24:15,748
+Bana parametre olarak geri döndürülen değer T ve P değerler. T dediğimiz statistik, P dediğimiz değer de bizim bu belirlediğimiz alfa değerine karşılık gelen değer. Bu değer 0.05'den küçükse eğer, şurada da zaten yazdım, bu değer eğer bizim alfa değerimizden küçükse çıkan T değeri eğer 2.571'den büyükse birinci model küçükse eğer ikinci model kazanmış.
+
+317
+01:24:15,988 --> 01:24:31,048
+Eğer değilse bunların berabere kaldığını, yani bunların arasında çok önemli bir fark olmadığını söyleyebiliriz aslında. O yüzden beraber aldım ben. Ben derinlik yüzünde bir tablo yaptım böyle.
+
+318
+01:24:31,536 --> 01:24:45,855
+Her derinlik için farklı farklı bu t-testi yaptım. Toplam 12 tane var. Bunların Win-Draw-Lose'unu şu şekilde belirttim. Win ilk şeydeki. Draw beraber'ı Lose kaybetti demek.
+
+319
+01:24:48,819 --> 01:25:02,000
+Tekil öğrencileri de kattım ben bunun içine. Tekil öğrenciler hemen hemen her şeyde derinlikte genelde yeniliyor veya beraber kalıyorlar.
+
+320
+01:25:02,000 --> 01:25:09,639
+Çünkü yendikleri çok nadir. Bir tane burada yenmiş, o da begging'i yenmiş birinci derinlikte.
+
+321
+01:25:10,279 --> 01:25:16,819
+Buraya baktığımızda üçüncü derinlikte adı buslu bir kere yenebilmiş. Bir kere de onuncu derinlikte random...
+
+322
+01:25:16,819 --> 01:25:44,679
+Random Forest'ı yenebilmiş. Sonsuz derinlikte de yine aynı. Ama genel olarak baktığımızda, tabloyu incelediğimizde en başarılı modelin en az yedilme sayısıyla 10. derinliğe kadar Adobos'ta olduğunu görebiliyoruz şurada. Şu stunlar incelediğimiz zaman mesela burada 4 kere yenmiş, 8 kere beraber kalmış ama hiç yenilmemiş. Diğerlerine de baktığımızda burada bir kere sadece Random Forest'a yenilmiş.
+
+323
+01:25:44,819 --> 01:26:03,819
+Diğerleri buna göre daha fazla. Diğerlerine baktığımızda da 10. derinliğe kadar hep bu şekilde. Ama 10. derinlikten sonra sonsuz derinliğe geçtiğimiz zaman adından da anlaşılacağı üzere Random Forest ne kadar derin olursa, ne kadar...
+
+324
+01:26:05,971 --> 01:26:26,152
+Orman yapısında olursa o kadar başarılı oluyor. Burada sonsuz derinlik olunca yenilmeye başlamış. Sadece şurada 12 kere beraber kalmış. Ama Random Forest'a baktığımız zaman, sonsuz derinlik olduğu zaman en düşük yenilme sayısına sahip olduğunu görebiliyoruz burada.
+
+325
+01:26:33,971 --> 01:26:54,811
+Dezişin Tiri'yi de kattım. Her birini veri seti bazında değerlendirdim. Buna karşılık çıkan değerlerim bu şekilde. Şu mavi noktalı olanlar bizim genelde hep en altta kalan dizişin Tiri'miz. Çizgili olanlar Begging.
+
+326
+01:26:56,243 --> 01:27:19,423
+Düz, yeşilimsi olanlar Random Forest'tı. Mavi, düz çizgi olan da Adabust'u gösteriyor. Bu tabloya baktığımız zaman bir yöntemin bir veri setinde iyi, diğerinde kötü olabileceğini görüyoruz. Bu da bana her veri seti için farklı modelin daha iyi olduğunu anlamamı gösterdi.
+
+327
+01:27:24,243 --> 01:27:28,703
+En yüksek başarıyı sağlayacak diye bir kural yok.
+
+328
+01:27:29,587 --> 01:27:39,667
+Özellikle sizin derste söylediğiniz hocam, mesela şuradan 1, 2, 3, 5, 10, bu bizim derinlik sayımız görünüyor burada.
+
+329
+01:27:41,167 --> 01:27:54,227
+Adobos'ta baktığımız zaman mesela birinci derinlikte iyiyken, mesela şu primary tumor veri setini incelediğimizde, birinci şey iyiyken ikinci biraz daha kötü oluyor, üç daha iyi oluyor.
+
+330
+01:27:57,587 --> 01:28:16,207
+Aşağı inecekti. Sonra 5'te biraz daha yukarı çıkıyor. 10'da yine aşağıya çıkıyor. Böyle bir zikzak. Bu da büyük ihtimalle karar vermeyle alakalı. Bu oylama sonucunda siz de derste söylemiştiniz. Çift sayılar olduğu zaman bir şey oluyor.
+
+331
+01:28:17,524 --> 01:28:19,144
+Oylama problemi oluyor.
+
+332
+01:28:19,944 --> 01:28:32,484
+Yani burada o mu olmuştur çok çok emin değilim ama senin Adabus'larında bu tarz bir şey varsa. Birinci datastete de bakıyorum. Orada da Adabus biraz böyle zikzaklı bir hareket yapmış.
+
+333
+01:28:33,300 --> 01:28:44,139
+Bir de hocam, lafınızı kesiyorum. Birinci şeyi ben çok iyi eğitemedim. Mesela diğerlerinde çok bir sıkıntı yok. Veri setinden dolayı.
+
+334
+01:28:44,239 --> 01:28:47,460
+Yok yok, o birinci, o Avalon data seti çok zor bir data set.
+
+335
+01:28:47,680 --> 01:28:51,739
+Yani en maksimum %28'lerde falan oldu. Başarılı.
+
+336
+01:28:51,739 --> 01:28:56,739
+Evet, evet. Tabii tabii. Sende bir anormallik yok, merak etme.
+
+337
+01:28:56,739 --> 01:29:01,280
+İyi o zaman. Ben dedim Allah Allah. Ama diğerlerine baktığımda gayet iyi.
+
+338
+01:29:01,300 --> 01:29:18,420
+Bir de bir primary tümöre baktığımda. Bu arada dikkatimi çekti hocam bu zero rule'u yaparken genelde sağlık data setleri, breast cancer falan vardı. Mesela bunların zero rule'u daha yüksek çıkmaya başladı. Bu veri setiyle alakalı herhalde.
+
+339
+01:29:18,420 --> 01:29:26,520
+Ama genelde sağlık data setlerinin zero rule'u 0.7'nin çok çok üstündeydi. Hatta 0.9 olanlar falan bile vardı.
+
+340
+01:29:28,944 --> 01:29:47,184
+Bu şekilde hocam, Maximum Derinik Ensemble Başarı çizelgesilerini bu şekilde oluşturdum. Yanlış olan yer benim aslında burası hocam. Bunların her biri için Teknik Üniversitesi'nin ortalamasını alıp yaptığımda aslında şurada yaptığım yorumların hemen hemen hepsi yanlış.
+
+341
+01:29:47,184 --> 01:29:56,024
+Nedeni de şu, ben bunu oluşturduğum zaman benim gitti Begging'im ve Atavus'tum. İkisi üst üste geldiler böyle.
+
+342
+01:29:56,944 --> 01:30:19,864
+Üç tane olması gerekirken iki tane çıktı. Ben ilkim bayağı bir şaşırdım. Allah Allah niye böyle oldu falan. Bayağı bir denedim şey yaptım ama gözümden tamamen kaçmış. Şimdi bu şeyden önce anlatmadan önce bir kere daha bakayım dediğim anda gördüm ve hemen düzelttim. Hatta yeni şeyi de aldım. Onu şurada gösterebilirim size. Hangisiydi?
+
+343
+01:30:28,115 --> 01:30:32,115
+Aslında benim maksimum...
+
+344
+01:30:33,427 --> 01:30:55,408
+Berinlik Tekil Öğrencilerin ortalamasına oluşturduğum çizelge bu. Adobus'ta olan maviler, bugünkü olanlar kesikli çizgi, randomlarda yeşil olanlar. Bunlara baktığımız zaman bu çizelgelere genelde random forest'ın Tekil Öğrencilerinin ortalamasının daha kötü olduğunu görüyoruz.
+
+345
+01:31:01,427 --> 01:31:09,627
+Kayıtma 2 tabanında class sayısı aldığı için, pardon feature sayısı aldığı için,
+
+346
+01:31:10,188 --> 01:31:14,467
+diyelim ki önemli olan feature'larım var benim ama onları almıyor.
+
+347
+01:31:15,188 --> 01:31:23,507
+Aynen öyle. Gereksiz kötü şeyler seçiyorlar. O yüzden de ortalamaları bu şekilde buldum.
+
+348
+01:31:24,288 --> 01:31:31,948
+Yani Bagging'inkiler en yüksekler değil mi? Evet, Bagging'inki genelde en yüksek hocam.
+
+349
+01:31:32,368 --> 01:31:37,208
+Random Forest'inki en kötü. Evet, aynen. Random Forest'inki en kötü.
+
+350
+01:31:37,967 --> 01:31:41,068
+Adobos da ortalarda. Bir iyi oluyor, bir kötü oluyor.
+
+351
+01:31:43,188 --> 01:31:46,688
+Tamam, tamam. Sıkıntı yok. Tamamdır.
+
+352
+01:31:47,007 --> 01:31:50,208
+Olmadı. İsterseniz tekrar ekleyip de gönderebilirim.
+
+353
+01:31:50,608 --> 01:31:59,847
+Yok, yok. Gerek yok. Ama şöyle bir şey yap. Yani raporunu düzelt, bana e-mail ile gönder. Şimdi sistemini bir daha yükleyemezsin. Bana e-mail ile gönderirsin raporunu.
+
+354
+01:32:00,528 --> 01:32:02,268
+Aynen öyle e-mail atayım ben size.
+
+355
+01:32:02,268 --> 01:32:02,807
+Tamam.
+
+356
+01:32:03,828 --> 01:32:09,648
+Hatta bunların ben değerlerini de aldım şurada. Karşılaştırma için.
+
+357
+01:32:11,188 --> 01:32:29,828
+Mesela şunlar benim dataset'lerim. Bunlar da işte birinci, ikinci, üçüncü, beşinci, onuncu ve sonsuz şeyde boyuttaki değerlerim. Ama bu yanlış. Waging ve Adobostat'ta aynı olduğu için aynı almıştım. Doğrusunu onların da şurada görebiliriz. Şöyle mesela.
+
+358
+01:32:29,828 --> 01:32:31,288
+Tamam, grafikleri gördük zaten.
+
+359
+01:32:31,288 --> 01:32:39,188
+Grafiklerin aynısı hocam. Ben sadece o şeyi göstermek için yaptım. Diğer sizin o gösterdiğiniz kapı olayını...
+
+360
+01:32:39,188 --> 01:32:48,307
+Tam yapamadım hocam. Çok da idrak edememiştim. Zaman da biraz geçmişti artık size de mail şey yapamadım.
+
+361
+01:32:48,307 --> 01:32:49,967
+Yani şey diyorsun.
+
+362
+01:32:52,671 --> 01:32:55,811
+Kararların aynılığına dair analizler.
+
+363
+01:32:55,971 --> 01:33:20,431
+Evet, kararların aynılığına dair şeyi tam yapamadım. Tek eksik o. Çalışma sürelerime gelince şurada tabloyu oluşturdum. Bunu da yine veri setlerine ve boyutlara göre yine bir çizdirme işlemi yaptım. Bu en alttakinler bizim dizi şey olsun diye, kıyas yapabilelim diye. Diz için tri de koydum bir tane.
+
+364
+01:33:21,395 --> 01:33:48,675
+Random Forest'a baktığımız zaman çok büyük olmasına rağmen orman boyutunun yine de hızlı bir şekilde çalışıyor. Bunun nedeni de yine dediğim gibi özellik sayısını seçerken hepsini değil de bunu ayarlayabiliyoruz ama default olarak aldığım için ben logaritma 2 tabanındaki özellik sayısına bakıyor. Bu yüzden diğerlerine göre daha hızlı çalışıyor.
+
+365
+01:33:49,395 --> 01:34:07,835
+Adobos'ta baktığımda diğer arkadaşta da böyle bir şey vardı. İlk sınan arkadaşta da böyle bir şey vardı. Onuncudan sonra mesela çalışma süresi çok düşüyor. Bunun nedeni şey olabilir mi hocam? Tam bilmiyorum. Onu da tam anlayamadım ama.
+
+366
+01:34:08,595 --> 01:34:24,875
+Sonsuz derinlik seçtiğimiz zaman tekil öğrenici sayısını otomatik olarak kendisi düşürüyor olabilir mi? 100 tane değil de mesela onun yerine daha az. Sonsuz derinlikte olduğu için diğer tekil öğrencilere şey yapmaya ihtiyaç duymadan.
+
+367
+01:34:24,875 --> 01:34:29,935
+Yani şöyle bir şey söyleyeyim. Bu çok mantıklı bir görüntü değil.
+
+368
+01:34:30,235 --> 01:34:31,755
+Görüntü değil, evet. Aynen.
+
+369
+01:34:36,595 --> 01:34:59,615
+Seviyedeyken çok yüksek ama orada sonsuz seviyeye çıktığımızda birden süresi azalıyor. Aynı falan da kalmıyor. Orada tekil bir öğrenciye düşüyormuş gibisinden bir durum var sanki. Peki başarı anlamında Ada Bust'un sonsuz seviyede başarısı bir anda düşüyor mu?
+
+370
+01:34:59,615 --> 01:35:03,115
+Bakalım bakalım. Şuradan.
+
+371
+01:35:04,659 --> 01:35:09,260
+Çok düşmüyor aslında hocam. Yani baktığımız zaman şurada bir düşüş olmuş.
+
+372
+01:35:10,599 --> 01:35:12,220
+Tamam, o datasyeti geçelim.
+
+373
+01:35:12,760 --> 01:35:16,439
+Şurada mesela aynı. Şurada çok fazla düşmemiş. Burada artmış.
+
+374
+01:35:16,439 --> 01:35:22,159
+Evet, çok da bir şey dikte yok. Yani öyle tek bir şeye düşse çok daha kötü olur.
+
+375
+01:35:22,460 --> 01:35:27,640
+Yani bilmiyorum tabii orada. Yani çalışma süresinde bir sıkıntı var orada gözüken.
+
+376
+01:35:28,000 --> 01:35:28,579
+Evet hocam.
+
+377
+01:35:28,760 --> 01:35:30,979
+Ama sebebini ben de anlayamadım.
+
+378
+01:35:31,572 --> 01:35:35,952
+Yani ben de tam anlayamadım ama bu çalışma... Tamam, sıkıntı değil o.
+
+379
+01:35:36,692 --> 01:35:55,752
+Kullandığım kaynaklar şunlar. Hocam, kodları da zaten sizinle paylaşmıştım. Hatta o kodun birinde de bir hata var. Sadece küçücük bir yerinde. O yüzden bu şu sonucu elde ettim. Ama dediğim gibi onu düzelttim. Şimdi gayet düzgün bir şekilde. Benim söyleyeceklerim, anlatacaklarım bu kadar.
+
+380
+01:35:55,752 --> 01:35:58,572
+Tamamdır. Çok teşekkürler [öğrenci].
+
+381
+01:35:58,832 --> 01:35:59,532
+Rica ederim.
+
+382
+01:35:59,572 --> 01:36:23,271
+Evet. Tamam, kapatabilirsin sen de. [öğrenci]. Merhabalar hocam. Merhaba. Evet, sen tek başına mı yaptın [öğrenci]? Evet hocam. Evet. Söz sende. Tamam, paylaşayım.
+
+383
+01:36:25,203 --> 01:36:35,684
+Hocam, ama ben galiba bazı yerleri, arkadaşların sunumlarında yanlışlarımı fark ettim. Ben anlatayım. Yanlışlarımı düzeltirseniz de öğrenmem için iyi olur.
+
+384
+01:36:36,604 --> 01:36:36,904
+Tamam.
+
+385
+01:36:39,144 --> 01:36:52,663
+Hocam, öncelikle veri setini Zero Rule kuralına uygun olarak 0.7'den küçük olanları aldım dediğiniz gibi. Burada 12 tane de set kalsın diye böyle 0.518 gibi bir şeyi koydum.
+
+386
+01:36:54,131 --> 01:37:11,131
+Burada gördüğünüz dataset'leri kullandım. Bu dataset'lerin üzerinde, bende mi arkadaşlar, bende mi böyle bilmiyorum ama bytes olarak gelmişti bu labellerin olduğu için. Onları kategorik olarak çevirip 0-1'lere çevirdim.
+
+387
+01:37:12,131 --> 01:37:16,131
+0-1'lere mi çevirdim? 0-1'lere çevirdim demek ne demek?
+
+388
+01:37:21,395 --> 01:37:28,475
+Sıfır olarak aldım. B2 olanı bir olarak aldım. Yani kategorik değişkenler olarak.
+
+389
+01:37:28,876 --> 01:37:30,475
+Daha fazla sınıf varsa?
+
+390
+01:37:31,635 --> 01:37:32,515
+Hepsini alıyor.
+
+391
+01:37:33,635 --> 01:37:34,635
+Hepsini alıyor yani.
+
+392
+01:37:34,815 --> 01:37:37,155
+0, 1, 2, 3, 4 olarak ilerliyor.
+
+393
+01:37:37,175 --> 01:37:40,095
+Tamam, tamam. İki sınıflı problemlere dönüşmekte.
+
+394
+01:37:40,315 --> 01:37:46,876
+Ben hani hata aldım da burada. Hani bytes olarak geldi. Normalde sayılarla int ya da flatla işlem yapılıyor ya. O açıdan.
+
+395
+01:37:46,935 --> 01:37:47,215
+Tamam.
+
+396
+01:37:48,756 --> 01:38:09,756
+Şimdi ben ilk olarak burada train timelarıyla skorlarını karşılaştırdım. Bagank'in, Ada Boost'un, Random Forest. Burada üçünün timelerine bakarsak Ada Boost'un genel olarak en hızlı çalıştığını gördüm. Bu ne kadar doğru bir sonuç bilmiyorum ama benim tahminimce…
+
+397
+01:38:10,804 --> 01:38:14,884
+Şimdi bir dakika, burada neler var? Begging var, Adabust var, Random Forest var.
+
+398
+01:38:14,884 --> 01:38:16,904
+Random Forest var. Skorlar var.
+
+399
+01:38:18,244 --> 01:38:19,644
+Tekil ağaçlar yok burada.
+
+400
+01:38:20,324 --> 01:38:20,784
+Yok hocam.
+
+401
+01:38:20,824 --> 01:38:24,324
+Şimdi burada derinliğe bağlı bir analiz var mı?
+
+402
+01:38:25,064 --> 01:38:27,644
+Hocam hepsi 100 ve 10 olarak sabit.
+
+403
+01:38:29,923 --> 01:38:31,744
+Derinlik 10 ve estimator 100.
+
+404
+01:38:33,324 --> 01:38:36,043
+Derinliğe bağlı olarak şey yapmadın mı? Analiz yapmadın mı?
+
+405
+01:38:36,692 --> 01:38:39,632
+Derinliğe bağlı olarak aşağıda yapmıştım.
+
+406
+01:38:40,792 --> 01:38:46,392
+Tamam, anladım. Burada şu anda derinlik 10'la bu çalışır elde ettin, öyle mi?
+
+407
+01:38:46,692 --> 01:38:49,852
+Taymanı sabit bir yerde alayım diye onu seçmiştim.
+
+408
+01:38:49,852 --> 01:38:56,792
+Burada AdaBoost'un en hızlı olmasını ben garipsedim aslında.
+
+409
+01:38:57,032 --> 01:39:02,392
+Çünkü Begün'ge bakarsak AdaBoost'taki o beta işlemini yapmamızı ben yavaşlatacağını düşünmüştüm.
+
+410
+01:39:02,771 --> 01:39:06,251
+Ama banking daha yavaş, adabust daha hızlı görünüyor.
+
+411
+01:39:07,451 --> 01:39:12,112
+Adabust'un ağaç mı yine?
+
+412
+01:39:12,971 --> 01:39:13,692
+Evet hocam.
+
+413
+01:39:14,091 --> 01:39:14,692
+Base owner.
+
+414
+01:39:16,131 --> 01:39:19,971
+Decision to request fire. Evet, bayağı şey farklı.
+
+415
+01:39:20,091 --> 01:39:21,711
+Garip geldi, anlamadım ama.
+
+416
+01:39:23,711 --> 01:39:29,751
+Sonrasında ama random forest'ta genel olarak yüksek sonuçlar aldım. Bunu beklediğim bir sonuçtu zaten.
+
+417
+01:39:30,228 --> 01:39:48,668
+Random Forest'ın daha iyi çalıştığını görüyoruz. Burada ensembluları aynı derinliklere göre ayarladım. Dediğiniz gibi 1, 2, 3, 5, 10 ve sonsuz olarak. Burada ben hocam testlerde ensembluları da karşılaştırmıştım.
+
+418
+01:39:49,619 --> 01:39:53,979
+İstediğiniz şeyler arasında var mıydı? Ben yanlış mı anladım onu bilmiyorum ama.
+
+419
+01:39:54,059 --> 01:39:56,939
+Ensembl'ları karşılaştırdım. Zaten Ensembl'ları karşılaştıracaktım.
+
+420
+01:39:57,399 --> 01:39:58,799
+Doğru mu burası?
+
+421
+01:40:00,279 --> 01:40:05,479
+Ensembl, yani Random Forest'la Bagging'in mesela birbiriyle karşılaştıracaktım.
+
+422
+01:40:06,500 --> 01:40:09,099
+Ya da burada neyi görüyoruz biz şimdi?
+
+423
+01:40:10,199 --> 01:40:14,139
+Burada derinlik bir ve derinlik ikideki Ensembl'ların karşılaştırması var.
+
+424
+01:40:14,612 --> 01:40:29,251
+Yani bütün Ensembl'larımı topladın bir yer veya. Evet, bu öyle bir analize oldu. Aşağıda da Ensembl ile Random Forest, Ensembl ile AdaBoost olarak yaptım. Sanırım istediğiniz bir dolayı.
+
+425
+01:40:30,331 --> 01:40:39,351
+Ensembl dediğin ne senin burada? Yani Ensembl dedim, Bagging, AdaBoost ve Random Forest'ın kararları.
+
+426
+01:40:40,404 --> 01:40:41,684
+Hepsinin birleşimi mi?
+
+427
+01:40:41,724 --> 01:40:42,644
+O çalışası, evet.
+
+428
+01:40:44,324 --> 01:40:48,344
+Hepsini birden mi birleştirin Ensemble diye? Öyle mi yaptın?
+
+429
+01:40:48,584 --> 01:40:49,944
+Evet, burada öyleydi.
+
+430
+01:40:51,824 --> 01:40:52,944
+Niye öyle bir şey yaptın ya?
+
+431
+01:40:55,144 --> 01:40:57,644
+İşte bir yeri yanlış anladım demiştim, burası galiba.
+
+432
+01:40:57,644 --> 01:41:07,864
+Yani Random Forest'ın mesela Begging'le derinlik mesela onken karşılaştırması.
+
+433
+01:41:08,372 --> 01:41:16,992
+Anlatabildim mi? O tarz karşılaştırma yapacaktın. Sen burada şey mi yaptın? Random Forest, Out of Boost ve Bangin'in hepsini birden aldın.
+
+434
+01:41:17,231 --> 01:41:23,011
+Evet. Derinlik 1 olanları 3'niz ve derinlik 2 olan olarak.
+
+435
+01:41:23,492 --> 01:41:30,032
+Orası olmamış. Peki. Ne çıktı peki böyle bir şey yaptığında ne oldu ki? Ne çıktı yani? Yorum ne?
+
+436
+01:41:30,868 --> 01:41:34,908
+Buradan ne çıktı? Derinlik arttıkça ne oldu? Bir şeyler değişti mi? Ne oldu?
+
+437
+01:41:35,387 --> 01:41:42,548
+Hocam, genelde beraberlik oldu. En sonunda benim şu dikkatimi çekmişti. Burada ikisini de hiç şey almadı.
+
+438
+01:41:43,387 --> 01:41:47,448
+Yani oncu derinlik ve sonsuz derinliktekilerin hiçbirinde bir kazan olmaması.
+
+439
+01:41:48,243 --> 01:42:01,844
+Bakmıştım. Çünkü genelde M1'la zaten sonsuzlar veri setlerine bağlı olarak düşündüm. Çok bir fark olmuyordu ikisinin arasında diye görmüştüm. Burası biraz yanlış olmuş. Kusura bakmayın.
+
+440
+01:42:02,144 --> 01:42:04,184
+Peki, yok estağfurullah. Tamam, sonra.
+
+441
+01:42:07,923 --> 01:42:13,923
+Burada da Bagging, Adabust ve Random Forest ile karşılaştırmalarını yapmıştım.
+
+442
+01:42:14,724 --> 01:42:15,344
+Neyin?
+
+443
+01:42:15,984 --> 01:42:20,923
+Ama yine Ensemble M1'e o zaman ben yanlış ifade etmiş olduğum için komple yanlış oldu değil mi?
+
+444
+01:42:21,444 --> 01:42:27,323
+Değil mi ya Ensemble M1 dediğin şeyde kaç tane base döner var şimdi o Ensemble M1'in içinde?
+
+445
+01:42:28,243 --> 01:42:28,844
+Üç tane.
+
+446
+01:42:28,844 --> 01:42:31,844
+Ya bu üçünün toplam kararıyla...
+
+447
+01:42:32,851 --> 01:42:36,411
+Tek başına baking'den çıkan karar yani bu tablo.
+
+448
+01:42:38,091 --> 01:42:44,291
+Anladım. Yani 300 tane Ensemble, yani Bayes Dörner var aslında o Ensemble en birinişinde. Öyle mi?
+
+449
+01:42:44,731 --> 01:42:45,011
+Evet.
+
+450
+01:42:45,331 --> 01:42:49,692
+Anladım, anladım. Peki. Orası da yanlış olmuş.
+
+451
+01:42:49,692 --> 01:42:59,391
+Evet. Hocam zaten bu Ensemble yanlış anlamışsam ben, hemen hemen hepsi yanlış değil. Çünkü onlarla karşılaştırdım sonuçta.
+
+452
+01:43:00,340 --> 01:43:11,360
+Tamam, peki. Şimdi tekil öğrencilerle karşılaştırdın. Peki şey yaptın mı? Bu kararların aynılığı, farklılığını karşılaştırdın mı?
+
+453
+01:43:12,480 --> 01:43:21,480
+Bir de yaptığım şu kısım vardı. Tamamen yanlış bir ade olmuş ama sonuçta sunumların iyi geçmesi gerekmiyor diye düşünüyorum. Yanlışlarımı gördüm.
+
+454
+01:43:22,836 --> 01:43:30,536
+Burada da maksimum derinlik ve ensam ilişkisi olarak dediğim şeyde de tekrardan yine 300'er tanenin karşılaştırması oldu.
+
+455
+01:43:32,235 --> 01:43:34,735
+Ne var burada peki? Ne söyleyebilirsin burada?
+
+456
+01:43:36,016 --> 01:43:37,815
+Hocam burada genel olarak...
+
+457
+01:43:37,815 --> 01:43:38,956
+Derinlik arttıkça ne oluyor?
+
+458
+01:43:39,916 --> 01:43:42,596
+Hocam derinlik bir yere kadar artıyor.
+
+459
+01:43:43,091 --> 01:43:55,551
+Mesela ilkinde bakarsak 96 oluyor ama sonrasında galiba sapmalar oluyor. Az önce gördüğümüz genel olarak aslında zikzak gibi bir görüntü hepsinde var. Birkaç tanesinde...
+
+460
+01:43:55,551 --> 01:44:09,332
+O zikzak görüntü keşke çizdirseydin bize. Şimdi burada mesela hani bir şey anlatarken, yani bunları genel olarak tavsiye olarak düşünün. Mesela burada bir grafik görsek daha güzel olmaz mı?
+
+461
+01:44:10,228 --> 01:44:31,108
+Evet. Bu tablo yerine. Değil mi? Daha iyi bir yaklaşım olabilir. Söylemek istediklerini daha net anlatabilirsin. Anlatabildim mi? Çünkü işte burada diyorsun ki işte şurada şöyle bakın böyle artıyor falan ama grafik olsa falan böyle çok daha rahat gözükür. Hani her bir data set için bir tane böyle bir şey çizsen. Değil mi? Daha iyi olabilir. Tamam peki.
+
+462
+01:44:31,108 --> 01:44:36,768
+Ben biraz anlamakta zorlandığım için anlayana kadar çok vakit harcadım ödeme.
+
+463
+01:44:37,427 --> 01:44:37,967
+Tamam.
+
+464
+01:44:38,247 --> 01:44:39,167
+Bu kadar olabildi.
+
+465
+01:44:40,368 --> 01:44:44,967
+Tamam, sonra burada bitiyor. Bu kararların aynılığıyla alakalı bir şey yapmadın o zaman.
+
+466
+01:44:44,967 --> 01:44:52,467
+Ben demek ki tekil öğrenci olan kısmını anlamamışım. Şu an anladım. Tekil öğrenciyle neyle karşılaştıracağım diye düşünmüştüm.
+
+467
+01:44:53,448 --> 01:44:53,648
+Anladım.
+
+468
+01:44:53,648 --> 01:44:55,488
+Ben yanlış mı fark etmiş oldum?
+
+469
+01:44:55,488 --> 01:44:56,368
+Tamam, peki.
+
+470
+01:44:57,368 --> 01:45:02,507
+Peki, peki. Tamamdır [öğrenci]'e. Teşekkür ediyorum sana da.
+
+471
+01:45:03,148 --> 01:45:03,948
+Ben teşekkür ederim.
+
+472
+01:45:12,275 --> 01:45:13,336
+Evet, [öğrenci].
+
+473
+01:45:16,235 --> 01:45:17,136
+Merhaba hocam.
+
+474
+01:45:17,836 --> 01:45:20,376
+Merhaba [öğrenci]. Sen tek başına mı yaptın?
+
+475
+01:45:20,676 --> 01:45:21,695
+Evet, tek başına yaptım.
+
+476
+01:45:22,496 --> 01:45:23,235
+Kulaklık tatlı mı?
+
+477
+01:45:24,556 --> 01:45:27,396
+Ya sesin çok fazla geliyor bana ama herkese mer geliyor.
+
+478
+01:45:29,516 --> 01:45:30,615
+Şu an nasıl hocam?
+
+479
+01:45:31,356 --> 01:45:32,376
+Şu an çok daha iyi.
+
+480
+01:45:32,676 --> 01:45:35,716
+Kulaklık tatlım. Bir saniye ekran paylaşımı yapıyorum.
+
+481
+01:45:44,340 --> 01:45:46,340
+Şu an ekranımı görebiliyor musunuz hocam?
+
+482
+01:45:49,340 --> 01:45:50,340
+Evet, görüyorum.
+
+483
+01:45:52,340 --> 01:46:06,340
+İlk önce hocam, Zero Rule ile tüm şeyler karşılaştım veri setine. Ve 0.75'ten büyük olan 3 tane vardı. Gerek kalan anetisi 0.75'ten küçüktü. Bunlardan ilk 12 tanesini seçtim benden.
+
+484
+01:46:07,155 --> 01:46:34,555
+Bundan sonra 5x2, CrossValidation, PayvertT testi uyguladım. Maksimum derinlik 1 iken, işte maksimum derinlik 2 iken, 3 iken, 5 iken, 10 iken, 9 iken, bir de tek bir tane veri seti için, genel karşılaştırma yaptım burada tüm veri setler için aynı derinlikte, bir de tek bir veri seti için farklı derinliklerdeki karşılaştırmasını yaptım. Direkt bunu anlatmak istiyorum.
+
+485
+01:46:35,028 --> 01:46:40,728
+Buradaki MD, kısaltmaları yazdım. Şurada kısaltmaları belirtmiştim ama hızlı geçtim.
+
+486
+01:46:40,728 --> 01:46:49,528
+Fn dediğimiz file demişti. MD dediğimiz derinlik. Dt karar aracı. B. Bagging. A. AdaBoost. Rf. Random Forest diye gidiyor.
+
+487
+01:46:52,528 --> 01:46:57,528
+Karar aracı ile baggingi karşılaştığımız zaman, P değerlerine baktığımızda...
+
+488
+01:46:57,775 --> 01:47:13,775
+Genelde 0.05'den küçükse eğer aralarında fark olduğunu söyleyebiliriz. 0.05'den büyükse de birine benzer olduğunu kabul ediyoruz. Eksi ise baggingin kazandığını artıysa da ilk klasifayar. Yani burada kararacını kazandığını söylüyoruz.
+
+489
+01:47:24,543 --> 01:47:37,543
+Ve maksimum denlik arttıkça kararlar arasındaki benzerlik azalmış. Ama bu ona kadar azalmış. Onun non olduğu zaman da yine artmış karar aracının benzerliği.
+
+490
+01:47:37,543 --> 01:47:46,283
+İki klasifier arasındaki benzerlik artmış. Bunu görebiliyoruz. Ama hep şey kazanmış. Birebir de begging algoritması kazanmış. Daha başarılı.
+
+491
+01:47:46,931 --> 01:47:52,931
+[öğrenci], kararların birbirine benzerliğin azaldığını nasıl anladın?
+
+492
+01:47:52,931 --> 01:48:06,931
+Hocam, şu an şöyle, p valyusu ne kadar küçükse, 0.05'den küçükse kararlar birbirinden farklı diyoruz.
+
+493
+01:48:13,684 --> 01:48:20,904
+Sen sınıflandırıcıların kararlarından bahsediyorsun. Teknik öğrencilerin kararlarından bahsetmiyorsun. Anladım. Tamam.
+
+494
+01:48:21,243 --> 01:48:28,904
+Daha gelmedim. Bu şekilde karşılaştırdım. Burada yorumlarda yazmışlar. Genel olarak bu söylediklerimi anlattım.
+
+495
+01:48:29,623 --> 01:48:33,003
+Burada şeyi çizdirmedi mi? Vintay lossları falan hiç çizdirmedi mi?
+
+496
+01:48:33,003 --> 01:48:34,524
+Çocam onun çapına gelmedi çizdirmek.
+
+497
+01:48:35,060 --> 01:48:39,700
+Bunları bu kadar anlatmaktansa onu çizilsem çok daha şey olmaz mı? Kolay olmaz mıydı?
+
+498
+01:48:39,820 --> 01:48:42,600
+Az önce arkadaşlar anlatınca fark ettim hocam yapmadığımı.
+
+499
+01:48:43,380 --> 01:48:50,760
+İyi, güzel işte. Yani böyle birbirinin şeylerini görmeniz, dinlemeniz o manada iyi oluyor. Tamam, güzel.
+
+500
+01:48:51,440 --> 01:48:59,680
+Bu şekilde hocam karşılaştırma yaptım. Sonra maksimum derinlik ensemble. Burada da şöyle bir yanlış anlamışım. Maksimum derinliği ben sıfırdan yüze kadar aldım.
+
+501
+01:49:00,148 --> 01:49:23,948
+Burada her bir ensemble için başarı karşılaştırdım. 0-2-3-5-10 değil de 0-100'e kadar arttım derinliği. Böyle yaptığım zaman karar ağacının derinliği başarısı. Bir anda artmış, ondan sonra zikzak çizerek hep stabil olarak devam etmiş.
+
+502
+01:49:23,948 --> 01:49:26,347
+Bu hangi dataset?
+
+503
+01:49:27,475 --> 01:49:38,995
+Hocam, bu hangi dataset? Şu an burada yazmamışım ama muhtemelen şeydir hocam. Bir saniye, ben genelde Balance Scale'i kullandım. Ya Kreditar ya da Balance Scale'dir. Onu isterseniz koddan bakayım hocam.
+
+504
+01:49:39,875 --> 01:49:43,675
+Yok, şimdi bakma da. Yani hani onları da yazarsan iyi olur raporda.
+
+505
+01:49:44,076 --> 01:49:51,355
+Tamamdır hocam. Şu an unutmuşum onu. Fandı fark ettim. Bagging ve Random Forest için birbirine benzer.
+
+506
+01:49:54,100 --> 01:49:59,199
+Derinliğe kadar artıyor başarı. Daha sonra biraz düşüyor. Sonra da stabil olarak devam ediyor.
+
+507
+01:49:59,800 --> 01:50:03,300
+Burada Ada Boost biraz garip geldi bana başta.
+
+508
+01:50:04,100 --> 01:50:06,600
+Başarısı başta çok yüksekmiş.
+
+509
+01:50:07,000 --> 01:50:10,600
+Sonradan düşüyor. Ondan sonra tekrar artıyor.
+
+510
+01:50:10,735 --> 01:50:13,996
+Başarısından yine belli bir derinlikten sonra sabit kalıyor.
+
+511
+01:50:14,076 --> 01:50:20,336
+Bu çok iyi bir grafik olmamış. Belki bir tane dasit için böyle olabilir de genel olarak böyle olmaz.
+
+512
+01:50:21,615 --> 01:50:29,515
+Şöyle hocam, karar harcıyla Adabur'su karşılaştırdığımız zaman aslında başarısı daha iyi şeyden karar harcından.
+
+513
+01:50:29,515 --> 01:50:36,935
+Çünkü burada üsttekinden 0.6-0.0 %70-80 diye giderken, burada zaten direkt %90'dan başlamış.
+
+514
+01:50:38,735 --> 01:50:49,076
+Başarısı sabit kalmış. Burada mesela %82'de sabit kalmış. Burada sayılar farklı olduğu için aslında Adabos daha kötü gibi görünüyor ama aslında daha iyi başarısı.
+
+515
+01:50:51,036 --> 01:50:58,315
+Anladım demek istedin de gel bu dataset nasıl bir dataset değil mi? Tamam peki anladım. Tamam edelim. Tamamdır.
+
+516
+01:50:59,155 --> 01:51:04,235
+Hocam böyle başta çok yüksek sona azalmasını da şeye yorumladım. Şöyle bir yorum yaptım. Doğal mi bilmiyorum.
+
+517
+01:51:05,908 --> 01:51:20,188
+Şimdi Adabust her adımda bir şey aldığı için, bir öncekinin hatalarını aldığı için, başarı gittikçe atması lazım gerçi. Oradan da öyle bir yorum yapamıyorum. Yani bu şekilde çıktı hocam. Ben de şaşırdım ama.
+
+518
+01:51:21,528 --> 01:51:25,088
+Ama bak bir tane dataset üzerinden genelleştirme yapamazsın zaten.
+
+519
+01:51:25,967 --> 01:51:31,307
+Evet. Bir tane dataset üzerinden denemiştim hocam. Evet. O dataset bazında konuşuyorum zaten şu an hocam.
+
+520
+01:51:31,764 --> 01:51:39,764
+O dataset'te ne olduğu belli değil. Bir de bir tane dataset'e bazı olarak şey yapmak çok makul değil. Peki, tamam devam edelim.
+
+521
+01:51:40,004 --> 01:51:52,304
+Tamamdır hocam. Maksimum derinlik ortalama tekil öğrenci başarısında da. Burada da hocam, işte Bagging, Adabust, Random'ı karşılaştırmışım.
+
+522
+01:51:53,024 --> 01:51:53,944
+Neyin üzerinde?
+
+523
+01:51:55,604 --> 01:52:04,463
+Şöyle yaptım hocam. Bu Bagging'deki 100 tane tekil öğrenci vardı. Bunların başarısını tek tek hesapladım. Bunların ortalamasını aldım.
+
+524
+01:52:06,384 --> 01:52:15,284
+Ve bunun işte yine aynı şekilde derinlik arttıkça derinlik ve başarı kıyaslamasını yaptım. Yukarıdakine benzer bir şey çıktı.
+
+525
+01:52:16,148 --> 01:52:23,807
+Derinlik arttıkça belli bir seviyeye kadar, derinliğe kadar başarı artıyor. Ama daha sonra yine zikzak çıger, stabil oluyor bir nevi.
+
+526
+01:52:24,807 --> 01:52:26,827
+Bir yukarıya doğru çıkabilir misin?
+
+527
+01:52:27,207 --> 01:52:27,667
+Tabii ki.
+
+528
+01:52:27,667 --> 01:52:29,068
+Maksimum derin yukarı.
+
+529
+01:52:30,688 --> 01:52:32,948
+Bu Maksimum derin Ensemble başarısıydı.
+
+530
+01:52:33,684 --> 01:52:48,943
+Alttaki de maksimum ortalama tekil öğrenci. Ama burada ortalama tekil öğrencinin 0.7'de kaldığını, %70'de kaldığını görüyoruz. Ensemble'da ise bu %85'lerde falan da ortalama. Ortalama tekil öğrenci başarırsam Ensemble'dan yine daha kötü.
+
+531
+01:52:57,363 --> 01:53:02,184
+Birbirine benzer şeyler çıktılar. Ortalama başarılar. Sadece zigzaglar artıyordu.
+
+532
+01:53:03,724 --> 01:53:06,823
+Ama bunlar yine bir tane dataset üzerinde değil mi?
+
+533
+01:53:07,823 --> 01:53:12,384
+Evet. Bunun sonlandığım hepsi tek bir dataset üzerinde değerlendirme yapmıştım.
+
+534
+01:53:12,384 --> 01:53:13,884
+E niye yaptın öyle?
+
+535
+01:53:15,863 --> 01:53:24,363
+Hocam, şöyle. 12 tane dataset hiç aklıma gelmedi. Tek bir tanesini de kıyaslamak.
+
+536
+01:53:24,884 --> 01:53:27,103
+Kıyaslamamız gerektiğini düşündüğüm için böyle bir şey yaptım.
+
+537
+01:53:28,403 --> 01:53:33,763
+Teknik bir tanesi yetmez ama değil mi? Yani şunu demeye çalışıyorum. 12 tane niye da size dataset verdim ben?
+
+538
+01:53:34,483 --> 01:53:39,844
+Onu hocam şurada kullanmıştım ben. Şunun için 12'sini kullanacağız diye anladım. Bu ilk kısım ilk soru için.
+
+539
+01:53:39,844 --> 01:53:42,583
+Peki, tamam devam edelim.
+
+540
+01:53:43,923 --> 01:53:48,844
+Sonra hocam tekili öğrenici kararlarının benzerliği. Burada da ikili kararların...
+
+541
+01:53:49,684 --> 01:54:13,184
+P değerlerini karşılaştırdım. P değerleri gördüğümüz gibi karar harcığı için 0.05'ten hepsi büyük. Yani hepsinin kararlar birbirine benziyor. Aynı sayılır. Ama yine de benzerlikte de ne kadar benzerliğine bakarsak tekken genelde kararların benzerliğin daha çok olduğunu, çift olduğu zaman biraz daha azaldığını görüyoruz.
+
+542
+01:54:14,260 --> 01:54:16,720
+Buradaki 5'ten 12'ye gidiş ne onlar?
+
+543
+01:54:17,320 --> 01:54:24,640
+Hocam bunlar şey, derinlik. Derinlik ile ikili kararların şeyini karşılaştırdım, benzerliğine.
+
+544
+01:54:27,199 --> 01:54:30,060
+Hangi iki tanesinden bahsediyorsun?
+
+545
+01:54:30,060 --> 01:54:34,060
+Şöyle hocam, mesela karar ağacı için işte...
+
+546
+01:54:34,579 --> 01:54:38,219
+Decision 3 için nasıl bunu yaptın?
+
+547
+01:54:38,659 --> 01:54:42,559
+Orada da şöyle yaptım hocam. Decision 3'de iki tane de Decision 3 oluşturdum.
+
+548
+01:54:42,840 --> 01:54:46,460
+Bir ve iki aynı data seti üzerinde. Onların karşılaştırmasını yaptım.
+
+549
+01:54:48,479 --> 01:54:49,479
+Aynı şey çıkar.
+
+550
+01:54:51,259 --> 01:54:52,639
+Farklı veriler için yaptım.
+
+551
+01:54:54,319 --> 01:54:56,039
+Farklı iki tane veri kullandın.
+
+552
+01:54:57,559 --> 01:54:59,559
+Sürekli farklı iki tane karar ağacı oluşturdum.
+
+553
+01:54:59,956 --> 01:55:24,195
+Her aşamada farklı iki karar ağacı oluşturdum yeniden. Onun üzerinde böyle bir karşılaşma yaptım. Peki, Bagging'de ne yaptın? Bagging'i anlatayım hocam. Bagging'de 100 tane derinlik bir eş iken 100 tane ağaç vardı. Her bir ağacın ikili kombinasyonlarına bakarak bunların değerlerini hesapladım.
+
+554
+01:55:25,332 --> 01:55:51,052
+Ve böyle bir grafik çıktı. P değerleri yine 0.05'ten büyük. Yani kararlar birbirine benziyor. Ama ne kadar benzediğini de incelediğimiz zaman derinlik arttıkça kararların benzerliğinin azaldığını görüyoruz. İşte 10. derinlikten sonra bir miktar artmış. Aslında burada biraz başarının tersi gibi gördüm ben ama ne kadar doğru bilmiyorum. Yani başarıda da bunun tam tersi bir grafik vardı. Belli bir miktar artıyordu. Daha sonra azaldı.
+
+555
+01:55:51,699 --> 01:55:52,999
+Başarı.
+
+556
+01:55:54,999 --> 01:56:03,519
+Adabust'ta sürekli azaldığını, arada bir tanesini daha artmış ama genel olarak genel manada azalıyor.
+
+557
+01:56:03,999 --> 01:56:10,699
+Random Forest'ta, işte Baging'e biraz benzer gibi artıyor. Sonra bir miktar azalıp tekrar artmaya başlıyor.
+
+558
+01:56:11,819 --> 01:56:13,179
+Bu şekilde bir değerlendirme yaptım hocam.
+
+559
+01:56:14,931 --> 01:56:21,931
+Kaç tane ortalama var burada? Tek bir noktada kaç tane şey var burada?
+
+560
+01:56:21,931 --> 01:56:29,931
+Şöyle hocam, 100 tane öğrenici var. N çarpı N artı 1 bölü 2'den, yani 100 çarpı 101 bölü 2 yaptım.
+
+561
+01:56:29,931 --> 01:56:35,787
+Yani 5500 demiştim ya aslında 5050 olacaktı.
+
+562
+01:56:35,891 --> 01:56:43,212
+5050 tane sayının ortalaması yani oradaki bir tanesi nokta. Evet hocam.
+
+563
+01:56:46,072 --> 01:56:57,891
+12'ye kadar seçmemin sebebi de çok fazla zaman alıyordu 5050 tane örneği olacağı. Onun için yüzde kadar ilerletmemiştim. Ondan buradaki sayılar biraz düşük aldım. Zaman karşılaştırmasında da...
+
+564
+01:56:58,355 --> 01:57:05,355
+Farklı datasetler için zamanlar karşılaştırdım. Bir tane sabit derinlikle zamanları ölçtüm ve şöyle bir sonuca vardım.
+
+565
+01:57:05,355 --> 01:57:16,355
+AdaBoost'un karar ağacının en hızlı olduğunu, sonra AdaBoost'un daha hızlı olduğunu, sonra RandomForce'un en sona Bagging geldiğini gördüm.
+
+566
+01:57:24,916 --> 01:57:45,976
+Karar ağacı, random forest, begging, adabust şeklinde olduğunu görüyoruz. Veya farklı bir verisitlerine baktığımız zaman da değişiyor. Yani bu genelde karar ağacı, adabust şeklinde ilerlemesine rağmen özelde baktığımız zaman bu sıralama için genelleştirme yapamayız. Verisitlerine göre değişiklik gösteriyor. Böyle bir sonuca var. Bu kadar hocam.
+
+567
+01:57:46,815 --> 01:57:48,376
+Peki, teşekkürler [öğrenci].
+
+568
+01:57:48,855 --> 01:57:50,216
+Ben teşekkür ederim hocam.
+
+569
+01:57:50,596 --> 01:57:51,836
+Sen de kapatabilirsin.
+
+570
+01:57:54,387 --> 01:58:01,328
+Evet, [öğrenci]. [öğrenci], pardon. Sorun değil hocam.
+
+571
+01:58:02,028 --> 01:58:03,387
+Sen tek başına mı yaptın [öğrenci]?
+
+572
+01:58:04,028 --> 01:58:12,728
+Tek başıma yaptım ama [öğrenci]'yle biraz telefonlaşarak şeyleri nasıl yapacağız, nasıl edeceğiz biraz tartıştık.
+
+573
+01:58:14,528 --> 01:58:15,688
+Niye beraber yapmadınız?
+
+574
+01:58:16,564 --> 01:58:29,444
+Evet, onu biz de sonradan çok sorduk kendimize. Çünkü raporu verdim ama bayağı bir eksik var.
+
+575
+01:58:30,503 --> 01:58:32,384
+Tamam, görelim şimdi o zaman [öğrenci].
+
+576
+01:58:40,275 --> 01:58:54,615
+Şimdi raporumu açayım. Raporda ismimi falan yazmayı bile unutmuşum. Yani en son artık 23.55 civarında bununla uğraşıyordum.
+
+577
+01:58:56,615 --> 01:58:59,615
+Şimdi ilk önce...
+
+578
+01:59:00,819 --> 01:59:17,819
+Bu şeyleri DEPT'e göre başarılarını, bir de burada da dataset'ler var. Datasetleri de yine arkadaşların yaptığı şekilde 07'nin altında kalanları seçtim. Zero Rule algoritmasını çalıştırıp.
+
+579
+01:59:27,216 --> 01:59:31,576
+Bütün datasetlerine göre ve derinliklere göre başarıları var.
+
+580
+01:59:31,576 --> 01:59:33,696
+Şu an ekranı görmüyoruz yalnız.
+
+581
+01:59:33,696 --> 01:59:35,176
+Öyle mi?
+
+582
+01:59:35,176 --> 01:59:37,696
+Evet, kalsörünüz açık.
+
+583
+01:59:37,696 --> 01:59:40,016
+Bir dev açık değil şu an.
+
+584
+01:59:40,016 --> 01:59:41,696
+Ha, dur tamam.
+
+585
+01:59:44,176 --> 01:59:45,376
+Şimdi?
+
+586
+01:59:45,376 --> 01:59:47,216
+Şimdi görüyoruz.
+
+587
+01:59:47,216 --> 01:59:48,236
+Görüyor musunuz?
+
+588
+01:59:54,547 --> 01:59:55,587
+Şu anda görmüyoruz.
+
+589
+01:59:55,627 --> 01:59:56,527
+Şimdi oldu mu?
+
+590
+01:59:57,587 --> 01:59:58,127
+Oldu.
+
+591
+02:00:00,127 --> 02:00:00,967
+Tamam.
+
+592
+02:00:01,787 --> 02:00:07,707
+Şimdi bu tabloda Random Forest'ı ilk önce şey yaptım.
+
+593
+02:00:07,707 --> 02:00:19,768
+Bu işte ödevde bahsettiğiniz derinliklerde ve bütün data setleri için ayrı ayrı başarı oranlarını bu tabloda görüyoruz.
+
+594
+02:00:22,452 --> 02:00:38,252
+Burada işte bu data setinde bir sıkıntı olduğunu arkadaşlar da söylemişti. Onun dışında genel olarak derinlik arttıkça başarısının arttığını gözlemliyoruz.
+
+595
+02:00:38,252 --> 02:00:45,431
+Şurada da eğitim zamanı var.
+
+596
+02:00:45,844 --> 02:01:05,603
+Yine zamanda derinlik arttıkça artıyor. Şurada, yok burada değil, diğerindeydi sanırım. Ondan sonra burada da bir tek yani ağaçların kendi başarılarından ortalama başarıları.
+
+597
+02:01:08,404 --> 02:01:16,764
+Yine derinlik arttıkça, içindeki tek bir ağacın başarı oranı artmış oluyor.
+
+598
+02:01:18,644 --> 02:01:27,623
+AdaBoost için de benzer şekilde. Yalnız şurada bir oynama olmuş. Yani bu 88'e çıkıp sonra 86'ya geliyor.
+
+599
+02:01:27,823 --> 02:01:36,304
+[öğrenci], bir önceki tabloya dönebilir misin? Ben orada bir şey anlayamadım da. Şimdi burada Average Accuracy Individual Trees yazıyor.
+
+600
+02:01:37,323 --> 02:01:42,684
+Şimdi burada mesela 0.26 diyor. Bu 0.26 hangi dataset?
+
+601
+02:01:45,300 --> 02:01:48,280
+Onun ortalamasını aldım.
+
+602
+02:01:49,240 --> 02:01:49,620
+Neyin?
+
+603
+02:01:50,440 --> 02:02:03,480
+Yani orada bir tane şey vardı. Bir derinlikte bütün ağaçların başarımlarının olduğu bir matris vardı. Sizin kodunuzu kullanmıştım.
+
+604
+02:02:03,480 --> 02:02:10,360
+Ama buradaki sonuçlar çok mantıklı değiller. Yani şu manada mantıklı değiller.
+
+605
+02:02:12,960 --> 02:02:26,420
+Hani ensembların ortalamalarına, başarıların ortalamalarına baksan %70, %80'lere falan çıkmış ama senin teki de aşırı %30'larda gözüküyor. Yani %30'luk bir şeyler birleşerek %80'lik bir şeyler oluşturamazsın.
+
+606
+02:02:27,119 --> 02:02:29,000
+Anladım. Evet.
+
+607
+02:02:29,139 --> 02:02:32,939
+Yani bu sondaki satırda bir problem var.
+
+608
+02:02:33,579 --> 02:02:34,239
+Tamam hocam.
+
+609
+02:02:34,599 --> 02:02:34,819
+Tamam.
+
+610
+02:02:35,956 --> 02:02:41,216
+Yani o şeyi, matrisin ne olduğunu yanlış anlamış olabilirim.
+
+611
+02:02:41,996 --> 02:02:42,836
+Peki.
+
+612
+02:02:44,372 --> 02:02:56,632
+Ada Boost için de benzer şekilde yine derinliğin artmasıyla. Genel olarak aslında bu çok da fazla şey yapmamış, fark etmemiş gibi duruyor.
+
+613
+02:02:57,812 --> 02:02:59,612
+Evet, diğerleri kadar farklı değil değil mi?
+
+614
+02:03:00,232 --> 02:03:00,472
+Evet.
+
+615
+02:03:01,152 --> 02:03:05,732
+Yani Dept1'de de başarılı bir şeyler çıkartabiliyor Ada Boost.
+
+616
+02:03:05,732 --> 02:03:12,372
+Evet, aslında öyle ama Dept1 ile Dept2 arasında bir ciddi fark buralarda var.
+
+617
+02:03:12,372 --> 02:03:20,712
+Aslında. Ama bazı datasetleri için sadece. Ama genel olarak birbirine hep yakın sonuçlar elde etmişiz.
+
+618
+02:03:21,492 --> 02:03:33,152
+Şeyde de yine zaman konusunda da çok farklı şeyler çıkmamış. Şurada mesela bu birazcık azalmış sonra geri çıkmış. Bu bilmiyorum anlamına.
+
+619
+02:03:39,028 --> 02:04:03,108
+Burada çok manalı yükselmeler oluyor depth arttıkça. Özellikle şu Auto Dataset'i için baktığımız zaman ciddi manada yükselmiş. Yine aynı şekilde waveform'da da aynı şekilde. Ondan sonra yalnız sürede bir o kadar artış gösteriyor.
+
+620
+02:04:03,108 --> 02:04:03,468
+Artıyor.
+
+621
+02:04:05,140 --> 02:04:19,320
+Bu da hepsinin ortalama eğitim sürelerini buldum. Ortalamada genel olarak Adavust en hızlı, Random Forest sonra da Bagging geliyor.
+
+622
+02:04:20,240 --> 02:04:25,320
+Buraya bir de Decision Tree'i ekleyecektim. Ben sanırım onun...
+
+623
+02:04:26,260 --> 02:04:35,180
+Yanlış, yani ben onu yanlış anladım sanırım. Ben de daha hızlı çıkmadı. O yüzden herhalde yanlış olduğunu düşünerek şey yaptım.
+
+624
+02:04:35,560 --> 02:04:36,359
+Muhtemelen.
+
+625
+02:04:37,640 --> 02:04:46,539
+Sonra burada da T-testlerimiz var. O ortasındaki beraber kalan şey kısım yok ama.
+
+626
+02:04:47,659 --> 02:04:47,880
+Niye?
+
+627
+02:04:50,680 --> 02:04:52,980
+Bilmiyorum neden böyle ikili ikili çıktı.
+
+628
+02:04:54,676 --> 02:04:57,576
+İkili çıkmaz. Sen herhalde yazıyorsun onları değil mi?
+
+629
+02:05:02,836 --> 02:05:14,156
+Yani böyle ikili ikili çıktı bence. Tamam hepsi on iki tane aslında. Bir de beraber kalanlar olması lazım bunlarda.
+
+630
+02:05:14,576 --> 02:05:22,896
+Normalde ikili çıkıyordu da toplamı on iki olmuyordu. Sen onu on ikiye tamamlamış olabilir misin?
+
+631
+02:05:23,196 --> 02:05:26,296
+Hayır, hiç oynamadım da ama hepsi on ikiye tamamlanık.
+
+632
+02:05:27,060 --> 02:05:37,840
+Görünce. Yani hiç beraberlik diye bir şey hesaba katılmamış gözüküyor burada. Evet öyle görünüyor hocam. Şurada falan. Tamam peki.
+
+633
+02:05:38,515 --> 02:05:40,635
+Peki, bu tablolardan ne çıkıyor peki?
+
+634
+02:05:40,635 --> 02:06:04,415
+Bu tablolara göre şu single tree dediğim decision tree. O en kötü, hep en kötü yani. Bir tanecik şurada Random Forest'da karşı kazanmış. Ondan sonra bunun dışında AdaBoost'da, Random Forest'da, önce AdaBoost burada Depth 1'de iyi gidiyor.
+
+635
+02:06:05,971 --> 02:06:22,451
+Ondan sonra Random Forest biraz daha iyi olmaya başlamış. En sonundaki, yani infinite adapte vermediğim zaman, bir kısıt vermediğim zaman baya yaklaşmış sonuçlar birbirine.
+
+636
+02:06:29,108 --> 02:06:35,108
+Begint'de Adavus'tan her zaman daha kötü görünüyor.
+
+637
+02:06:35,108 --> 02:06:41,108
+Bir tek şurada bir beraber vardı. Şurada.
+
+638
+02:06:46,108 --> 02:06:56,076
+Random Forest ile Begint'i karşılaştırırsak, orada da ilk önce Begint daha iyi.
+
+639
+02:06:56,243 --> 02:07:06,103
+Aslında hep Bagging daha iyi. Evet, hep Bagging daha iyi çıkmış. Buna çok şaşırdım şu anda.
+
+640
+02:07:07,663 --> 02:07:10,083
+Ben şu anda mı inceliyorsun bunları peki?
+
+641
+02:07:10,771 --> 02:07:19,251
+Hayır hocam, burada ben o kadar otomatik olarak Random Forest'ın daha iyi 10 çıktı, bu 2 çıktı diye geçtim ki bunu.
+
+642
+02:07:19,251 --> 02:07:27,131
+Yani hep Ada Wust'la Begging'i falan şeyi yaptım. Yani Random Forest'a çok güvenmiştim niyeyse.
+
+643
+02:07:27,971 --> 02:07:37,131
+Onu herhalde ondan daha iyi çıktı diye öyle şey yapmıştım. Şu anda şeyi fark ettim yani onun Vice Versa olduğunu şu an fark ettim.
+
+644
+02:07:37,855 --> 02:07:55,055
+Peki, tamam. 10 olan yenilme sayısı değil mi? Mesela Singletree'de 1'i 11 demişti. Bir kere yenmiş. O zaman 10'a 2. Diğerlerinde mesela Bagging daha iyi aslında. DEP3'den sonra. Bagging daha kötü vardı.
+
+645
+02:07:56,555 --> 02:07:58,955
+Yeniyor bu. 9 kere.
+
+646
+02:07:59,195 --> 02:08:02,875
+9 olan yenilmiş aslında. 3 kere yenmiş.
+
+647
+02:08:03,380 --> 02:08:08,859
+Çünkü Singletree'de öyle demiştiniz. Bir kere yenebiliyor sadece. On bir kere yeniliyor.
+
+648
+02:08:10,380 --> 02:08:17,180
+Tamam Singletree burası, Random Forest burası. Birinci, ikinci. Birinci, ikinci.
+
+649
+02:08:19,539 --> 02:08:22,739
+Yani şu Random Forest'ın...
+
+650
+02:08:22,739 --> 02:08:31,899
+Yani satıra baktığımızda, satırdan baktığımızda satırdaki algoritmanın ilk kısımda yendiği, ikinci kısımda ise yenidiği yazıldı değil mi?
+
+651
+02:08:32,659 --> 02:08:33,539
+Buradan bakınca da...
+
+652
+02:08:33,539 --> 02:08:36,460
+Ben sanki anladım hocam. Yanlış anlamışım kusura bakmayın.
+
+653
+02:08:36,479 --> 02:08:40,099
+Buradan bakınca da yine aynı şekilde begging 10 oluyor.
+
+654
+02:08:40,559 --> 02:08:41,359
+Yine Random Forest.
+
+655
+02:08:41,359 --> 02:08:42,359
+10 kere yenmişim.
+
+656
+02:08:43,760 --> 02:08:45,760
+Tamam simetrik bir matriz olacak zaten bu.
+
+657
+02:08:45,760 --> 02:08:46,039
+Evet.
+
+658
+02:08:47,060 --> 02:09:10,980
+Kararlarla ilgili o kısmı yapamadım. Eksik olanlardan bir tanesi de oydu. Size gönderdiğim raporda eksik olan şu bilgisayarını ekleyememiştim oraya. En son bu tablo kalmıştı. Şu diğer kısımlarını eklemiştim. Bu kadar.
+
+659
+02:09:10,980 --> 02:09:13,260
+Bir dakika. Tamam.
+
+660
+02:09:14,688 --> 02:09:18,988
+Peki, teşekkürler [öğrenci]. Kapatabilirsin sen de.
+
+661
+02:09:21,868 --> 02:09:30,408
+[öğrenci], arkadaşlar, 5 dakika bir ara verelim, öyle devam edelim. Tamam, 5 dakika ara verelim sadece.
+
+662
+02:09:33,668 --> 02:09:37,068
+Fatih Hocam.
+
+663
+02:09:42,771 --> 02:09:43,332
+Hmm.
+
+664
+02:10:19,028 --> 02:10:21,028
+Ekran alçamda bir alçamda bir alçamda.
+
+665
+02:10:43,060 --> 02:10:54,239
+Geldim arkadaşlar tekrardan. Bir bağlantıyı değiştirmem gerekti de. Şimdi en son [öğrenci] anlattı. [öğrenci] sen bir şey söylüyordun ama.
+
+666
+02:11:00,692 --> 02:11:08,511
+Arkadaş? Arkadaş yok. Peki. [öğrenci]?
+
+667
+02:11:12,180 --> 02:11:20,320
+Merhaba hocam. Bir arkadaş anlatacaktı ama ekranı alayım mı hatta dedi az önce.
+
+668
+02:11:21,240 --> 02:11:23,120
+Benim adım geçmişti hocam [öğrenci].
+
+669
+02:11:24,600 --> 02:11:30,400
+Tamam ben şimdi sıra değişmiş burada da. Tamam ilk önce [öğrenci] anlatsın o zaman. Peki [öğrenci] seni dinleyelim.
+
+670
+02:11:31,740 --> 02:11:33,080
+Alıyorum ekranı.
+
+671
+02:11:40,948 --> 02:11:42,328
+Şu an aldım herhalde.
+
+672
+02:11:46,163 --> 02:11:47,243
+Görülüyor değil mi?
+
+673
+02:11:51,060 --> 02:11:52,060
+Evet.
+
+674
+02:11:52,060 --> 02:12:12,908
+Tamam. Nasıl başlayacağım? Ben n-estimeter değerini 100 olarak aldım. Birbirinden farklı 5 tane derinlik değer ve 1 tane bu artık sonsuz değer olarak uzan aldım ben. Sonsuz veriyor muyuz bilmiyorum. Doğru.
+
+675
+02:12:13,332 --> 02:12:18,332
+Öbür türlü ben dört farklı model kullandım.
+
+676
+02:12:18,332 --> 02:12:24,332
+Baking, Boost, Link Random Forward ve Light GBM olarak.
+
+677
+02:12:24,332 --> 02:12:34,332
+İstatistik değerleri ve P-Value değerlerine göre kimin daha çok garip geldiğine baktım.
+
+678
+02:12:35,123 --> 02:12:38,563
+Burada begging'i görüyoruz. Derinliklere göre.
+
+679
+02:12:41,043 --> 02:12:42,503
+[öğrenci] sesim geliyor mu sana?
+
+680
+02:12:45,264 --> 02:12:46,083
+Geliyor hocam.
+
+681
+02:12:46,163 --> 02:12:48,844
+Tamam. Ben şu başını kaçırdım da biraz baştan alabilir misin?
+
+682
+02:12:49,003 --> 02:12:52,403
+Verileri aldın. Karşılaştırma içinde begging, boosting.
+
+683
+02:12:52,724 --> 02:12:54,063
+Dört var hocam. Dört.
+
+684
+02:12:54,123 --> 02:12:56,323
+Bir de begging, adı boost.
+
+685
+02:12:56,323 --> 02:12:57,243
+Anladım. Tamam.
+
+686
+02:12:57,923 --> 02:12:59,503
+Light GBM var bir defa hazırda.
+
+687
+02:12:59,503 --> 02:13:00,703
+Tamam. Tamamdır.
+
+688
+02:13:01,140 --> 02:13:07,140
+Onu biraz merak ediyordum. Ödevde çıkartayım.
+
+689
+02:13:07,140 --> 02:13:25,804
+Farklı derinliklere göre Baging'i inceledim burada. Burada 12 tane datasiplerin hepsinin 0 value değeri 0.7'den küçük.
+
+690
+02:13:27,699 --> 02:13:40,779
+Hepsinin zamanı ve burada ben cross-solidist kullandım başta. Daha sonrasında bu kazanma galip olup durumu. Duyuluyor muyum?
+
+691
+02:13:41,639 --> 02:13:53,679
+[öğrenci] bir şey soracağım. Burada şimdi bu derinlik bir zaman skor verileri dediğinde bu skorlar ne buradaki skorlar?
+
+692
+02:13:54,612 --> 02:13:59,731
+Hocam, ben karşılaştırma için Cross-Volidation kullandım başta. Sonrasında T-Statistik değerlerine indim.
+
+693
+02:13:59,971 --> 02:14:02,971
+Tamam, tamam. Anladım da. Bunlar başarı mı yani?
+
+694
+02:14:04,471 --> 02:14:05,671
+Eqris değerleri, evet.
+
+695
+02:14:06,412 --> 02:14:07,631
+Burada bir yanlışlık var ama.
+
+696
+02:14:09,891 --> 02:14:11,051
+Fark etmedim mi hiç?
+
+697
+02:14:11,051 --> 02:14:11,492
+Hocam hocam?
+
+698
+02:14:12,912 --> 02:14:15,412
+Yani şimdi mesela Auto-MPG'ye bakıyorum.
+
+699
+02:14:16,011 --> 02:14:18,231
+%85, 71, 43.
+
+700
+02:14:19,431 --> 02:14:21,051
+Şimdi 200'e bak.
+
+701
+02:14:21,876 --> 02:14:40,656
+85-71-43. Dört üste bak, 85-71-43. Bir üstüne bak, 85-71-43. Evet ama ben kodu istiyorsanız gösterin tek tek aldım yani. Yok tamam da yani bir yanlışlık var. Onu demeye çalışıyorum. Yani öyle bir şey olamaz.
+
+702
+02:14:40,656 --> 02:14:46,296
+Hocam bu şeyde mesela, LightGBM'de de bu şekilde çıktı. Hepsinin cross-revealleştiğinin skorları 0.53 diye.
+
+703
+02:14:47,315 --> 02:14:57,775
+Olamaz ki ama öyle bir şey. Mantıken düşünsün, elinde farklı farklı, tamamen birbirinden farklı yapılarda tasarlıklar var. Bunların hepsinde nasıl aynı sonuçlar çıkabilir?
+
+704
+02:14:59,335 --> 02:15:03,695
+Haklısınız aslında. En estimatür değerinin çok yüksek olmasına verdim bunu.
+
+705
+02:15:04,775 --> 02:15:13,395
+Yok, olmaz ki öyle bir şey. Mantıken biraz şey yap, düşün. Noktasına virgülüne kadar aynı çıkabilir mi?
+
+706
+02:15:14,292 --> 02:15:26,912
+Yani 85-88 aslında biraz fark var ama doğru söylüyorsunuz. Çok büyük bir benzerlik var. Bunları söylüyorsunuz, evet. Yani doğru, haklısınız.
+
+707
+02:15:27,792 --> 02:15:30,872
+Değil mi? Yani buradaki skorlarda bir problem var, bunlar doğru değiller.
+
+708
+02:15:33,752 --> 02:15:40,556
+Yani kodu tekrar incelerim ama çok bağımsızlar. Bir de hocam, yani burada mesela bununla bu aynı ama burada...
+
+709
+02:15:41,747 --> 02:15:47,047
+Yani tatı setlerinden bağımsız ama skorlar evet doğru söylüyorsunuz.
+
+710
+02:15:47,147 --> 02:15:48,827
+Yani bunun farkına varmadım mı?
+
+711
+02:15:49,507 --> 02:15:50,087
+Yok hocam.
+
+712
+02:15:51,607 --> 02:15:55,627
+Yani çünkü koduma baktım hocam. Yani sonuçta hepsini bağımsız söylüyorum.
+
+713
+02:15:55,627 --> 02:16:02,567
+Ya tamam bir yerde bir hata yapıyorsun. Bir yerde bir problem var. Artık nerede bilmiyorum tabii de. Peki devam edelim.
+
+714
+02:16:03,047 --> 02:16:04,387
+Yine tekrar incelerim ama.
+
+715
+02:16:07,347 --> 02:16:17,507
+Şu an şey oldum yani. O zaman hepsi öyle hocam. Hepsinin crossway geçtiğinin skorları çok yüksek. Farklı derinliklere göre ben bunları aldım.
+
+716
+02:16:17,587 --> 02:16:20,327
+Evet. Böyle olamaz ki ya.
+
+717
+02:16:22,988 --> 02:16:29,947
+Bunu çok geç fark ettim. Şu an fark ettim. Ama dediğim gibi hocam kodda yazdığım buydu, çıktı da buydu yani.
+
+718
+02:16:30,488 --> 02:16:33,648
+E tamam bir yerde bir hata var değil mi [öğrenci]? Yani çok bariz bir şekilde.
+
+719
+02:16:33,648 --> 02:16:34,488
+Bakacağım hocam.
+
+720
+02:16:35,827 --> 02:16:38,448
+Yani bak, boosting'de de aynı şey gözüküyor.
+
+721
+02:16:39,007 --> 02:16:39,427
+Evet.
+
+722
+02:16:40,148 --> 02:16:43,667
+Bu kadar birbirleriyle aynı şeyler çıkamaz yani farklı da setlerde.
+
+723
+02:16:46,067 --> 02:16:51,347
+Yani çok bir şey oynamamış. Evet, yani yüzde iki, üçlük bir fark var.
+
+724
+02:16:53,167 --> 02:16:56,927
+Hayır, noktası bir güne kadar aynı çıkması mümkün mü ya? Boosting'e baksana.
+
+725
+02:16:58,388 --> 02:17:13,628
+Evet, doğru hocam. Ama mesela derinlik birden ikiye geçince çok bağımsız oluyor. İşte daha da yükseldikçe fark açılmaya başlıyor. Ama yani ben de anlamadım. Hocam neden böyle yükseğe çıkmış?
+
+726
+02:17:15,448 --> 02:17:25,668
+Peki, devam edelim. Derinlik bir, iki, üç, beş. Beşte mesela farklar birazcık daha belirgin haldeler. Devam edelim. Onla bakalım, sonsuza bakalım. Devam edelim.
+
+727
+02:17:26,899 --> 02:17:35,479
+Sonsuzda birbirine daha da yaklaşmışlar. Ben non olarak aldım sonsuzluğu. Artık doğru mu aldım bilmiyorum. Onda keza yine yakınlar.
+
+728
+02:17:35,479 --> 02:17:37,559
+Yok ya, böyle olamaz ya.
+
+729
+02:17:39,340 --> 02:17:42,439
+Gerçekten çok beller çıkmışlar, haklısınız ama yani bilmiyorum.
+
+730
+02:17:43,479 --> 02:17:45,520
+Bunu şimdi fark ettin ama sen öyle mi?
+
+731
+02:17:46,420 --> 02:17:52,059
+Yani çok yakındı veriler ama ben şeye mi verdim, bu NSM-T değerinin 100 olmasına verdim.
+
+732
+02:17:52,628 --> 02:18:14,288
+Hocam ben like gibi emin hiç göstermeyeyim o zaman. Hepsi birbirinin aynı. Devam edelim. Bunları geçeyim. Şöyle bir şey yapalım mı [öğrenci]? Buraları devam et sen. Et et et. Sonra ne göstereceğim peki? Şimdi bunların hepsi aynı çıkıyorsa zaten bir analiz de ortaya çıkmaz ki. Windows'lar falan nasıl çıktı peki?
+
+733
+02:18:16,087 --> 02:18:17,067
+Göstereyim hocam.
+
+734
+02:18:17,523 --> 02:18:38,863
+Hocam ben burada işte validasyon değerlerinin ortalamasını aldım. Validasyon, accuracy değerlerini. Burada Baging'i çok daha yüksek gördüm. Diğerlerine nazaran. İşte Baging, Boosting, Random Force ve LightGPM olarak dört tane farklı şey var. Burası da accuracy değerleri.
+
+735
+02:18:40,272 --> 02:18:55,852
+Ya [öğrenci] şöyle yapalım mı? Sen bu ödevi bir daha yap. Sana vakit vereyim. Tamam mı? Sen bu kodundaki hatayı bul. Tamam mı? Ondan sonra ödevini bana tekrardan bu gece saat 12'ye kadar gönder. Tamam mı?
+
+736
+02:18:56,372 --> 02:18:57,192
+Tamam, bakayım.
+
+737
+02:18:57,892 --> 02:19:03,332
+Yani şey değil. Çünkü buradan yapacağın analizlerin de bir anlamı olmayacak. Öyle değil mi?
+
+738
+02:19:03,891 --> 02:19:06,971
+Doğru, biraz farklı çıkmış da. Bakayım koda tekrar.
+
+739
+02:19:07,531 --> 02:19:16,772
+Tamam, tamam. Hadi görüşürüz o zaman seninle. Dediğim gibi bu gece 12'ye kadar şey yapabilirsin, gönderebilirsin. Tamam mı?
+
+740
+02:19:16,772 --> 02:19:17,711
+Tamam, bakacağım hocam.
+
+741
+02:19:18,612 --> 02:19:21,512
+Tamamdır peki. Sultan?
+
+742
+02:19:22,551 --> 02:19:24,851
+Ben ekranımı paylaşayım hocam.
+
+743
+02:19:25,612 --> 02:19:29,731
+Tamam, [öğrenci] seni 2 dakika bekleteceğim. 2 dakika bekleyebilir misin? Hemen geliyorum.
+
+744
+02:21:38,195 --> 02:21:40,296
+[öğrenci], geldim. Başlayabilirsin.
+
+745
+02:21:42,155 --> 02:21:44,736
+Hocam, ben şöyle başlayayım.
+
+746
+02:21:47,136 --> 02:21:52,376
+Bu arada hocam, bizim Betin'le beraber yapmamamız aslında, size de şey yapmış olayım.
+
+747
+02:21:52,475 --> 02:22:01,456
+Betin biraz şey yaptı, koda falan iyice kendisi hakim olmak istedi, ortak yapamadık.
+
+748
+02:22:02,067 --> 02:22:04,207
+Daha çok haberleşmiş olduk.
+
+749
+02:22:04,627 --> 02:22:07,108
+Ortak yapmadığınız sonuçta ayrı ayrı değerlendireceğiz.
+
+750
+02:22:08,180 --> 02:22:35,880
+Evet, ama hani nedeni sordunuz ya, biz de en sonunda yani niye beraber yapmadık sorusunu çok sorduk. Şimdi bu dataset'lerin öncelikle zero rule'larına göre seçtim ben de. Burada en düşük olan bu az önce konuştuğumuz zor sınıflanan dataset çıktı. Koyu ile renklendirdim. 12 tanesini seçtim.
+
+751
+02:22:36,180 --> 02:23:04,180
+Burada bizim de bir arkadaşlarla WhatsApp grubumuz var. Orada Mushroom dataset'ini çok konuştuk. Birazdan sonuçlarda da göstereceğim. Mushroom dataset'i çok kolay daha fazla yükseldi. Ben de bunun 0 rolu da 0.7'nin altında aslında %70'den düşük. Neden diye düşününce dataset'i baktığım zaman hep pool değerlerden oluştuğunu, yani 0 ve 1'lerden oluştuğunu gördüm.
+
+752
+02:23:04,180 --> 02:23:25,060
+Bu nedenle daha iyi, daha kolay sınıflanıyor diye bir yorum yaptım kendi kendime. Doğru mu düşünüyorum bilmiyorum. Ama o dataceti de kullanmış oldum. Daha sonra yine tekili öğrenci sayısını arkadaşlar gibi ben de 100 aldım ve Cross-Voledation'da 5x2 şeklinde.
+
+753
+02:23:32,180 --> 02:23:43,900
+Başarılı çıktı. Şu şekilde yine diğerlerinde olduğu gibi sol tarafta yenen, ortada beraber veya anlamlı bir farklılık yoksa da beraber saymış oldu.
+
+754
+02:23:43,900 --> 02:23:51,400
+En sağda da yenilen, şu şekilde baktığımızda. Random Forest'dan.
+
+755
+02:23:52,115 --> 02:24:00,115
+Ben daha fazla başarılı olmasını bekliyordum aslında ama Random Forest'ın da ağaç derinliği arttıkça başarısı arttı.
+
+756
+02:24:00,115 --> 02:24:11,115
+Ve Decision Tree'de diğer yöntemlere göre geride kaldı. Derinlikleri bir olmasına rağmen Ensemble yöntemlerine göre geride kaldı.
+
+757
+02:24:20,115 --> 02:24:24,796
+Yani biraz daha fazla kazandığını gördüm.
+
+758
+02:24:26,191 --> 02:24:51,451
+Daha sonra ama tabii arkadaşların sonucuna göre de AdaBust'un derinliği arttıkça, normalde hem birazdan o şeyleri de göstereceğim sonuçlara ama derinlik arttıkça algoritmaların yani yöntemlerin başarılarının arttığını gördüm. Ama AdaBust'ta derinlik arttıkça başarısı düştü. Örneğin burada daha 8 kazanırken burada örneğin 2'ye düşmüş.
+
+759
+02:24:52,543 --> 02:24:59,543
+Bir anda kazanma sayısı ve kaybetme sayısı da artmış. T-testlerim bu şekilde.
+
+760
+02:25:00,020 --> 02:25:27,220
+Daha sonra Ensemble başarılarını almak için başarıların ortalamasını aldım. Her bir dataset için şu şekilde gösterdim ama şöyle ekranı uzaklaştırıp ben her grafikte datasetleri ve yöntemi tek aldım. Arkadaşlar gibi datasetleri tek alıp yöntemler daha iyi olabilirmiş. Yukarı aşağı inerek göstereceğim yöntemleri.
+
+761
+02:25:28,020 --> 02:25:34,560
+çok da dikkat ettiğim şey Örneğin ben de iris data seti hani sunumlarda şey yapamadım dikkat
+
+762
+02:25:34,560 --> 02:25:42,720
+etmeyi unuttum ama iris data setinde Ada Boost derinlik arttıkça çok fazla düştü başarısı
+
+763
+02:25:50,932 --> 02:26:04,132
+Bir satır, şey ha şurada. Bu dataset'i ben de çok iyi eğitemedim. 0.27'ye çıkabildi en çok şu dataset. Bu arada masum gözüküyor değil mi benim de?
+
+764
+02:26:04,352 --> 02:26:05,031
+Evet, evet.
+
+765
+02:26:05,031 --> 02:26:18,792
+Tamam. Daha sonra ama burada şey, derinlik artık diyor. Örneğin mushroom dataset'inde de Adabuse'da düşme gerçekleşmiş. Buradakinde de düşme gerçekleşmiş. Bazıları da artıp sabit.
+
+766
+02:26:18,932 --> 02:26:28,032
+kalmış. Bagging'e ve random forest'a baktığım zaman şimdi genellikle bir düşüş pek göremiyorum.
+
+767
+02:26:28,032 --> 02:26:37,932
+Ya sabit kalmış ya da yükselmiş. Bu yine sınıflayamadığım dataset'in bu aşağıda kalan ayetlerinde.
+
+768
+02:26:37,932 --> 02:26:46,932
+Random Forest'ta yine bagging gibi derinlik arttıkça başarısı yükseliyor.
+
+769
+02:26:46,932 --> 02:27:07,772
+Şuradaki örneğin sonsuz derinlikteki başarılarına baktığımız zaman, örneğin ilk dataset için 0.84, bagging'e benzer çıkmış Random Forest'ta. Aralarında çok fark yok bagging ile.
+
+770
+02:27:09,087 --> 02:27:20,047
+Şeyde şöyle göstereyim. Adabust'ta ise örneğin Iris'i göstereceğim. %94'dan bir anda %29'a düşüyor.
+
+771
+02:27:20,847 --> 02:27:31,427
+Adabust için. Böyle bir sonuç aldım Iris için. Başka Iris'i kullanan arkadaşlar Adabust için yorum yaparsa aslında şey olabilir.
+
+772
+02:27:31,808 --> 02:27:35,567
+Benim için de ben mi bir hata yaptım, niye bu kadar düştü bilemiyorum hocam.
+
+773
+02:27:36,435 --> 02:27:38,435
+Evet biraz garip var, tütyingi bir.
+
+774
+02:27:38,868 --> 02:28:00,668
+Tamam, devam edelim. Ama hani diğerleri düzgün çalışıp sadece iriste bu olunca, acaba hani her zaman, yani ben de buraya yorum olarak aslında derste yaptığımız her zamanki yorumumuzu yaptım. Iris çok fazla özelliği olan bir şey değil, data set değil biliyorum. Ama hani acaba gürültü mü fazla da Adabustum'da bu kadar değişiklik?
+
+775
+02:28:00,668 --> 02:28:06,847
+Yok, yok. Gürültü bir data set de değil o. Evet, yani ben bir hata yaptım.
+
+776
+02:28:06,868 --> 02:28:08,028
+Bilemiyorum hocam orada.
+
+777
+02:28:09,188 --> 02:28:20,328
+Ama genel olarak hani diğer arkadaşlarından da gördüğümüz üzere hani Bagging ve Random Forest'ta derinliği arttırdıkça başarı artıyor ama AdaBus'ta öyle bir şey pek olmuyor gibi genel olarak.
+
+778
+02:28:21,008 --> 02:28:27,688
+Hani çok büyük bir şey olmuyor. Artış olmuyor. Aynen kalıyor. Feran feran belki o tarz olabilir ama.
+
+779
+02:28:28,227 --> 02:28:29,048
+Peki tamam devam edelim.
+
+780
+02:28:30,015 --> 02:28:33,655
+Birisi de mi bir atattım bilmiyorum. Çünkü bunlar bu kadar çok düşmemiş.
+
+781
+02:28:34,175 --> 02:28:35,255
+Onu şey yapabilirim.
+
+782
+02:28:35,255 --> 02:28:38,975
+Fazla bilir. Yani o rastgele atmaya denk gelmiş oradaki hali.
+
+783
+02:28:39,195 --> 02:28:43,376
+Evet. Ben daha irisi tekrar yapsaydım daha sağlıklı olabilirdi.
+
+784
+02:28:43,376 --> 02:28:54,335
+Decision Train'in de burada sonucunu gösterdim. O da bu şekilde. Derinlik arttıkça diğerleri gibi ya sağ olup kalıyor ya da artıyor.
+
+785
+02:28:54,775 --> 02:28:58,015
+Ama tabii başarıları diğer yöntemlerinde...
+
+786
+02:28:58,015 --> 02:29:05,015
+Bu yöntemlerine göre düşük. Örneğin sonsuza bakarsanız diğer yöntemlere göre daha düşük çıkıyor.
+
+787
+02:29:34,324 --> 02:29:49,923
+Tol eraylarla kullanıldığı yazılmış. Tol eraylar nedir tam bilmiyorum. Daha sonra maksimum numsplit ve yaprak sayısını kısıtlama, split sayısını kısıtlama gibi farklı parametreler var. Bunlarla ayarlanması gerekiyordu.
+
+788
+02:29:49,923 --> 02:29:59,923
+Ama ben burada şöyle söyleyebilirim. Son iki güne kadar bunu araştırdım. Zannediyorum ki ben bulamadım. Sonra bizim WhatsApp grubunu farklı...
+
+789
+02:30:00,000 --> 02:30:21,000
+Arkadaşlara sordum, meğer orada da bu parametrenin olmadığını fark edip Python'a dönenler olmuş. Bu yüzden ben orada çok zaman kaybetmiş oldum. Dönünce de, yani split sayısını kısıtlayarak derinlikleri belirlemeye çalıştım. Derinlikleri sürekli kontrol ederek split sayısını verdim.
+
+790
+02:30:22,548 --> 02:30:31,108
+Yani şimdi benim paylaştığım kod hani yani belki en son...
+
+791
+02:30:32,628 --> 02:30:53,628
+Yani bir sene ya da iki sene öncesine kadar çalışıyordu ama şu yeni gelen yeni versiyonlarında o parametre yokmuş herhalde anladığım kadarıyla. Eski versiyonları yükleyip yapmak falan belki gerekebilirdi ama ya da orada belki bilmiyorum yani ben de yeni halini araştırmadım ama belki...
+
+792
+02:30:55,476 --> 02:31:00,596
+Pruning falan gibisinden bir yaklaşımla gerçekleştirebilirdi belki bir de ayrıca.
+
+793
+02:31:01,043 --> 02:31:26,344
+Evet, o yaklaşım var. Pruning de falan belki yapılabilir gibi şu anda aklıma geliyor ama ben yine de bir yerlerden maksimum depti ayarlanabilir. Daha önceden olan bir özelliği şimdi niye koymasınlar falan gibi düşünüyor insan bir yandan yeni versiyona geçtiğinde. Ama o kadar da kişi araştırdı ve hala bulamadıysa o durumda da yoktur herhalde. Belki pruning de falan yapılabilirdi.
+
+794
+02:31:26,736 --> 02:31:28,956
+Sen burada nasıl yaptın?
+
+795
+02:31:29,116 --> 02:31:37,356
+Split sayısını kısıtlayarak yapmaya çalıştım. Maksimumlu split parametresi var. Kaç defa split yapılacağını kısıtlıyorsunuz.
+
+796
+02:31:37,356 --> 02:31:42,116
+Yani şeyi yapamıyorsun. Derinliği sınırlayamıyorsun ama not sayısını sınırlıyorsun.
+
+797
+02:31:42,616 --> 02:31:43,896
+Evet, evet. Şey yaptım.
+
+798
+02:31:43,996 --> 02:31:48,736
+Tamam, o da çok şey değil. Peki depth on dediğini nasıl ayarladın?
+
+799
+02:31:54,048 --> 02:32:22,048
+12 ya da 11 verdim şey için maksimumum splite. Daha sonra derinlikleri bulmak için sürekli yazdırdım bütün derinlikleri. İşte 7 üretti, 8 üretti mesela ama hiç onun üzerinde üretmedi. Bu şekilde yani şu an sayıları tam hatırlamıyorum ama böyle ona değer verip bütün derinlikleri yazdırarak bir yerde tutarak kontrol ederek şey devam ettirdim. Ama işte ben de bu...
+
+800
+02:32:22,048 --> 02:32:43,288
+Bu direkt partında böyle direkt şey maksimum derinlik belirlenince Medlab'de nasıl olmaz diye sizin gibi düşünerek bu kadar çok zaman harcadım. Zaten iki gün önceye kadar sadece bununla zaman harcadım. Sizin gibi düşünü ben bulamıyorum zannettim WhatsApp grubuna yazmadan önce. Sonra onu duyunca ben bu şekilde ilerleyip sonuçları alayım artık dedim.
+
+801
+02:32:43,328 --> 02:32:44,168
+Peki, peki.
+
+802
+02:32:45,152 --> 02:32:52,191
+Bunu da niye bu kadar uzun anlattım? Şunun için anlattım. Böyle çok zaman kaybedince şimdi Ada Boost için şey yaptım.
+
+803
+02:32:52,832 --> 02:33:02,592
+Matlab'in bir fonksiyonunu kullandım. O fonksiyonu kullanınca da tekili öğrencilerin tek tek yani 100 tane öğrencim başarısına ulaşamadım.
+
+804
+02:33:03,132 --> 02:33:11,492
+Başka fonksiyonu kullanabilirdim kesinlikle ama kullanmaya vaktim yoktu. O yüzden sadece Bagging ve Random Force'ı tekili öğrenciler için göstereceğim.
+
+805
+02:33:13,152 --> 02:33:18,012
+Şimdi burada Cross Validation 10 seçtiğimiz için ve
+
+806
+02:33:19,028 --> 02:33:41,628
+Her birinde de 100 tane ağaç ürettiğimiz için 1000 tane ağaç üretiliyordu. Bunların ortalamasını aldım. Ve baktığımız zaman da burada yazdığım gibi örneğin Bagging'de en yüksek ortalama %80 iken birinci dataset için Ensemble başarılarında bu %84-85'e kadar çıkmış.
+
+807
+02:33:47,028 --> 02:33:55,508
+%74 iken bu 80 küsürlere kadar çıkmış ensemble başarısında. Bunu da bu şekilde söyleyebilirim.
+
+808
+02:33:56,048 --> 02:34:00,688
+Ama genel olarak Random Forest'ın tekli örneğe daha başarısız.
+
+809
+02:34:00,688 --> 02:34:00,927
+Evet.
+
+810
+02:34:01,747 --> 02:34:26,687
+Evet, evet. Hocam, bu arada şey söyleyecektim. Benim de az önce [öğrenci] miydi arkadaşın adı? Onun gibi ben şey yapmışım, benim kopyalı yapıştırdığı sıkıntım olmuş. Gelip Bagging sonuçlarını Random Force'da yapıştırmışım. Ben de sonumdan önce şöyle bir açayım diye baktım. Bunlar niye aynı dedim. Onları burada düzelttim. Ben de size mail atabilir miyim raporumu?
+
+811
+02:34:27,156 --> 02:34:30,596
+Ha, yeni halini. Yani şu anda gördüğümüz yeni hali ama herhalde değil mi?
+
+812
+02:34:30,636 --> 02:34:41,916
+Evet, evet. Bunlar aynıydı. Ben de şey, yani birkaç tane sütun aynı olmuş. Hepsi aynı olmamış. O yüzden fark etmemişim. Örneğin şu web 5'ler aynı olmuş.
+
+813
+02:34:42,515 --> 02:34:43,336
+Tamam, tamam.
+
+814
+02:34:43,796 --> 02:34:59,796
+Daha sonra burada da tekili öğrencilerin kararlarının benzerliği. Hepsinin kararını, bütün dataset'lerin kararlarını sellerde tuttum. Daha sonra da her birinin birbirleriyle olan uzaklığını hesapladım.
+
+815
+02:34:59,796 --> 02:35:11,796
+Ve her bir derinlik içinde uzaklığın ortalamasını aldım. Her birinin birbirine uzaklığını hesaplayıp sonra ortalama aldım. Böyle bir şey için...
+
+816
+02:35:11,796 --> 02:35:29,796
+Burada şöyle derinlik arttıkça benzerliğin daha çok azaldığını gördüm genellikle. Bazı data setlerde artıyor ama ağaç büyüdükçe benzerliği de azalıyor şeklinde gördüm.
+
+817
+02:35:29,796 --> 02:35:38,796
+Ama Random Forest'taki ağaçların benzerlikleri daha yüksek gibi duruyor.
+
+818
+02:35:39,603 --> 02:35:41,703
+Birbirlerine daha benzer gibi çıktı.
+
+819
+02:35:42,943 --> 02:35:43,484
+Allah Allah.
+
+820
+02:35:44,583 --> 02:35:46,603
+Yani hani benim beklentim şeydi.
+
+821
+02:35:46,603 --> 02:35:50,484
+Random Forest'ın kararları daha benzemez olmalılar.
+
+822
+02:35:51,503 --> 02:35:52,443
+Bagging'e göre.
+
+823
+02:35:52,603 --> 02:35:55,563
+Çünkü onlar hem daha büyükler hem daha rastgele üretiliyorlar.
+
+824
+02:35:56,500 --> 02:35:59,819
+Yani şöyle örneğin.
+
+825
+02:36:00,399 --> 02:36:02,360
+Buradaki değerler benzerlik değerleri mi?
+
+826
+02:36:02,819 --> 02:36:09,220
+Evet, yani birbirlerine olan uzaklık. Aslında uzaklık hesaplıyoruz. Büyükler daha uzak oluyor.
+
+827
+02:36:10,899 --> 02:36:26,119
+Evet, daha farklı oluyor. Evet, tamam. Affedersiniz. Ben de bunu şu an fark ettim. Aslında uzaklık hesaplıyorum. Uzaklık daha büyük olduğu için birbirinden daha farklı olmuş oluyor. Affedersiniz. Söyleyince fark ettim şu an.
+
+828
+02:36:26,119 --> 02:36:27,680
+Tamam, tamam. Peki.
+
+829
+02:36:37,075 --> 02:36:52,735
+Hani şeyde örneğin, Random Forest'ta özellik seçimi de yapıyoruz. O kısımları da aldım eğitim süreleri için. Onun için Random Forest tek başına tabii çok hızlı bir yöntem ama o seçim kısımlarını da aldığım için şöyle ortada çıktı.
+
+830
+02:36:53,955 --> 02:36:55,675
+Seçim kısmı dediğin ne?
+
+831
+02:36:56,435 --> 02:37:03,755
+Şeyleri, yani biraz geniş tuttum eğitim süresini almayı. İşte özellik seçiyor ya Random Forest'ı.
+
+832
+02:37:05,075 --> 02:37:12,155
+Örnek seçiyor. O satırları da almış oldum zamanlama kısmına. Ortada oldu.
+
+833
+02:37:13,255 --> 02:37:16,635
+Peki bu birden ona kadar geçen alttaki ne?
+
+834
+02:37:16,635 --> 02:37:28,815
+Ben sadece bu sonsuz derinlikte bu sadece. Bu şey her on tane sonucu aldığım için bu şekilde bütün derinlikleri yapmayı unutmuşum.
+
+835
+02:37:29,395 --> 02:37:32,355
+Yok yok. X ekseni derinlik mi?
+
+836
+02:37:33,172 --> 02:37:46,452
+Yok hocam, derinlik değil. O sadece 10 tane zaman aldığım için. Her bir cross-validation'da yani her bir şeyde 10 tanesini aldım. 10 eğitim süresini aldım onun için.
+
+837
+02:37:48,132 --> 02:37:49,832
+Nasıl bu kadar düzgün gitmiş onlar?
+
+838
+02:37:51,912 --> 02:37:54,832
+Evet, böyle artı artı kümülatif topladım çünkü.
+
+839
+02:37:55,540 --> 02:37:56,300
+Onun için.
+
+840
+02:37:56,420 --> 02:37:59,060
+Hee, kümülatif üstüne toplayarak gittin.
+
+841
+02:37:59,120 --> 02:37:59,320
+Evet.
+
+842
+02:37:59,720 --> 02:38:01,020
+Peki, tamam.
+
+843
+02:38:03,507 --> 02:38:31,347
+Yani benim çıkarttığım sonuçlarda da Adobus yöntemi genelde daha iyi sonuçlara ulaştı ama derinlik arttıkça onun da başarıları düştü. Bu dediğim gibi örneğin az önce söylediğimiz zor sınıflanan bir veri seti vardı. Onu sınıflandıramadım ama mushroom veri setinin sıfır ve bir değerlerinden oluştuğu için daha kolay sınıflandığını gördüm.
+
+844
+02:38:31,507 --> 02:38:41,507
+Tekil ağaçların ortalama başarılarına baktığımız zaman tek başlarına erişemedikleri başarılara ensembal yöntemiyle ulaşabildiğimizi gördüm.
+
+845
+02:38:42,308 --> 02:38:45,067
+Peki. Teşekkürler [öğrenci].
+
+846
+02:38:46,347 --> 02:38:47,128
+Teşekkürler.
+
+847
+02:38:47,148 --> 02:38:50,227
+Tamamdır. Sen de kapatabilirsin.
+
+848
+02:38:52,488 --> 02:38:55,468
+Şimdi [öğrenci].
+
+849
+02:38:56,948 --> 02:38:57,727
+Merhaba hocam.
+
+850
+02:38:58,067 --> 02:39:00,768
+Merhaba [öğrenci]. Evet, söz seneyim.
+
+851
+02:39:01,387 --> 02:39:02,707
+Paylaşıyorum ekranımı.
+
+852
+02:39:04,627 --> 02:39:06,627
+Bu arada sesim iyi geliyor mu hocam?
+
+853
+02:39:07,587 --> 02:39:09,067
+Gayet iyi geliyor şu anda.
+
+854
+02:39:11,807 --> 02:39:13,847
+Şu anda geldi sanırım ekran.
+
+855
+02:39:15,796 --> 02:39:34,556
+İlk başta hocam ben de yine Zero Rule kullanarak 12 tane veri kümesi belirledim. Burada 12 veri kümesinde kaç örnek var, kaç özelliğin var, sınıf sayısı ve Zero Rule değerlerini buraya yazdım ve %70'den küçük olanları seçtim.
+
+856
+02:39:37,620 --> 02:39:59,740
+Bu beraberlik, kazanma, kaybetme durumları için T-Test, %95 güven arabında bir T-Hipotest testi kullanacaktık. Buna değindim. Burada T-Hipotest testine baktığımda bu şekilde hesaplanamıyormuş. Ben de Python'a yine T-Test 5x2 cross-solidation metodunu kullandım.
+
+857
+02:40:00,051 --> 02:40:13,191
+Ve netot kısaca şunu yapıyor aslında. T değerini hesaplarken burada 5x50V cross-ölde işlemi şu oluyor. 5 iterasyonu 2V yapıyor aslında.
+
+858
+02:40:13,191 --> 02:40:18,191
+Burada P11 değeri 3 iterasyonunda...
+
+859
+02:40:19,219 --> 02:40:33,219
+Birinci folkdaki skor arasındaki farkı hesaplıyor. SC kare ise var yans. Yani yiğnin inci iterasyondaki şeyler arasındaki...
+
+860
+02:40:33,971 --> 02:40:45,971
+Yeni inci iterasyon, yeni inci foldtaki. Şöyle dedim ben. S'c'nin karesi P1-P'nin ortalaması yani yeni inci iterasyonun ortalaması karesi.
+
+861
+02:40:45,971 --> 02:40:46,971
+Artı...
+
+862
+02:40:48,211 --> 02:41:04,272
+Şu 2. iterasyon 2. poltaki değerden ortalamayı çıkarıp karesini aldığımızda bulduğumuz değer. Bunların açıklamasını da buraya ekledim. 5 iterasyon yaptığımız için bunun ortalamasını aldık, kara kök değerini hesaplayarak kritik değeri bulmuş oluyoruz.
+
+863
+02:41:04,691 --> 02:41:13,211
+Daha sonra bey serbestlik dereceli %95 güven aralığında T kredik değerimiz 2.575 olurdu.
+
+864
+02:41:13,211 --> 02:41:19,211
+Eksi 2.575 ve 2.575. Eğer bu sınırların dışında kalıyorsa...
+
+865
+02:41:20,468 --> 02:41:34,468
+Yani burada aslında ilk başta bir hipotez kuruyoruz. Burada H0, 0 hipotezimiz sınıf sayıcılar arasında istatistik açıdan bir fark olmadığını söylüyor. H1 hipotezimiz ise...
+
+866
+02:41:34,992 --> 02:41:49,551
+Sınıflayıcılar açısından istatistik bir açıdan önemli fark olduğunu ifade ediyor. Eğer bizim tek kritik değerimiz şu mavi bölgelerden birine düşüyorsa bu durumda H0 hipotezimizin reddedildiğini, H1 hipotezimizin de kabul edildiğini ifade ediyoruz.
+
+867
+02:41:49,551 --> 02:42:00,471
+Daha sonra bu Bayes'i öğreneler arasındaki simulati hesabımız için de ben de yine cosine benzerliğini kullandım. Burada temel öğrenici çarp temel öğrenici sayısı kadar.
+
+868
+02:42:00,863 --> 02:42:18,244
+Bir kare matris oluşturdum. Orada üç üçgen veya alt üçgen matrisi alarak, yani toplamını alıp, bir toplamın ortalamasını alarak Bayes temel öğrencilerin benzerliğini hesaplamış oldum.
+
+869
+02:42:24,435 --> 02:42:39,735
+Grafiksel olarak ortaya koydum. Burada neler var? Maksimum derinlik Ensembled Accuracy, Maksimum derinlik Average Big Learner Accuracy, Maksimum derinlik Temel Öğrenci Benzerliği, Maksimum derinlik Eğitim Süresi.
+
+870
+02:42:41,299 --> 02:42:47,699
+Beş deneme yaptım. Bu beş deneme sonucunda algoritmaların bildiğini üstünlüklerinde tablo halinde sundum.
+
+871
+02:42:47,699 --> 02:42:54,500
+Burada aslında hepsini teker teker geçmekten ziyade buldum. Genel sonuçları değinecek.
+
+872
+02:42:54,500 --> 02:42:55,500
+Daha iyi olur.
+
+873
+02:42:55,500 --> 02:42:58,500
+Tamam. Şöyle böyle buldum.
+
+874
+02:42:58,804 --> 02:43:18,023
+Şimdi normalde Bayes'e Örne Simility'ye baktığımızda yani maksimum derinlik temel öğrenci benzerliğine göz attığımızda her bir veritmesi için Begging ve Adabuse arasında herhangi bir kıyaslama yapamadım ama yani çünkü bazen Adabuse daha iyi oluyor, bazen Begging'in temel öğrenci benzerliği daha iyi oluyor.
+
+875
+02:43:18,023 --> 02:43:23,943
+Ama Random Forest daima bunların aşağısında.
+
+876
+02:43:24,531 --> 02:43:26,751
+Tema de oranye benzerdi.
+
+877
+02:43:27,188 --> 02:43:28,827
+bakımından daha
+
+878
+02:43:28,827 --> 02:43:31,167
+düşük seviyede olduğunu söyleyebilirim.
+
+879
+02:43:31,567 --> 02:43:32,427
+Ama buna rağmen
+
+880
+02:43:32,427 --> 02:43:35,808
+şöyle bir çıkarım da yaptım ben.
+
+881
+02:43:35,847 --> 02:43:37,308
+Ne kadar doğru bilmiyorum ama
+
+882
+02:43:37,308 --> 02:43:38,948
+temel öğrenci benzerliği
+
+883
+02:43:38,948 --> 02:43:41,347
+birbirinden birbirlerine ne kadar az
+
+884
+02:43:41,347 --> 02:43:43,507
+benziyorsa o derece
+
+885
+02:43:43,507 --> 02:43:44,868
+Ensemble'ın daha
+
+886
+02:43:44,868 --> 02:43:46,827
+iyi sonuçlar ürettiğini
+
+887
+02:43:46,827 --> 02:43:49,427
+aslında farklı örüntüleri de bu seviyede
+
+888
+02:43:49,427 --> 02:43:51,427
+tanıyabildiği şekilde bir
+
+889
+02:43:51,427 --> 02:43:52,407
+yorum getirdim.
+
+890
+02:43:53,716 --> 02:44:07,176
+Daha sonra burada zaten gördüğünüz üzere Average Big Learner ekorisi daima Ensemble ekorisine yani maksimum derinlik seviyelerini temeli aldığımızda daha düşük olduğunu görebiliriz.
+
+891
+02:44:08,256 --> 02:44:12,856
+Mesela şurada birinci seviyeye baktığımda maksimum derinlik bir için.
+
+892
+02:44:13,299 --> 02:44:20,919
+0.5, 0.4. Yani ensembulların daima temel öğrencilerin ortalamasından daha iyi sunup ürettiğini.
+
+893
+02:44:21,919 --> 02:44:31,915
+Yine burada ben ve şunla karşılaştım. Burada özellikle Adalus için maksimum derinliği yükselttiğimizde...
+
+894
+02:44:31,924 --> 02:44:51,224
+Eğitim süresi düşüyor. Düşüyor derken çok fazla sıra yakın. Bunun nedenini araştırdığımda da şöyle. Bu estimatorların sayısına baktım. Ben normalde 100 olarak ilgilendirmiştim ama daha sonra baktığımda yani maksimum derinliği arttırdığımda tek bir öğrenciye düştüğünü gördüm.
+
+895
+02:44:51,224 --> 02:44:59,924
+Yani normalde 100 olarak ilgilendirdim ama derinliği arttırdığımda tek bir öğrenci kalıyordu. Dolayısıyla training zamanı.
+
+896
+02:44:59,924 --> 02:45:04,344
+Bu kadar az olmasının nedeniyle bu şekilde...
+
+897
+02:45:04,344 --> 02:45:07,684
+Aslında yani sonsuz değil de o bir demek.
+
+898
+02:45:08,844 --> 02:45:09,543
+Evet hocam.
+
+899
+02:45:09,684 --> 02:45:15,904
+O zaman orada yani sistematik bir problem var o kütüphanede. Öyle değil mi? Yani herkes aynı şeyi bulmuş.
+
+900
+02:45:16,744 --> 02:45:20,963
+Zaten aynı problemi yaşamış öyle diyelim yani garip durumu.
+
+901
+02:45:21,604 --> 02:45:23,684
+Orada bir garip bir durum var demek ki yani.
+
+902
+02:45:23,684 --> 02:45:26,684
+Yani nasıl maksimum derinliğim...
+
+903
+02:45:27,476 --> 02:45:36,156
+Sonsuza çıkarttığın zaman number of estimator değiştirsin ki niye değiştirsin yani? Çok saçma. Ama bir bak yani muhtemelen bu. Peki, tamam.
+
+904
+02:45:36,856 --> 02:45:52,856
+Hocam, ben de tam tersine bulmuştum. Maksimum derinlik 1 olduğu zaman, Ada Bust'un estimator sayısı 100 değil de daha az oluyordu. Onun için mesela bir grafikte 5'den ve 12'ye kadar göstermiştim.
+
+905
+02:45:53,683 --> 02:45:57,904
+Çünkü 5'ten aldığım zaman hata veriyordu. 100 tane estimator kullanmıyor.
+
+906
+02:45:59,263 --> 02:46:00,023
+Allah Allah.
+
+907
+02:46:00,904 --> 02:46:14,283
+Çünkü hocam daha çabuk şey oluyor. Bir threshold var muhtemelen. Bu tür sistemin başarısı arasında. Başarısının belli bir farkında thresholdu var.
+
+908
+02:46:14,675 --> 02:46:26,876
+Hayır hayır, maksimum şu kadar olsun diyebilirsiniz ve maksimum dediğinizde en fazla o kadar olur, ondan daha düşük olabilir. Bu bir anormal bir durum değil. Anlatabildim mi demek istediğimi?
+
+909
+02:46:28,095 --> 02:46:35,659
+Yani maksimum estimator sayısı şu olsun diyebilirsiniz ama hani...
+
+910
+02:46:35,860 --> 02:46:46,000
+Number of Estimator'u 100 dediğinizde daha önce bitebilir mi? Daha önce bitebilir. Ama bir de bitmesi o bir enteresan bir şey. Peki, tamam. Devam edelim.
+
+911
+02:46:47,420 --> 02:46:56,040
+Bunun dışında hocam, derste şunu söylemiştik. Eğer bir position tree, karar ağacını saplaştırırsak.
+
+912
+02:46:56,500 --> 02:47:20,680
+Kararlarının benzerliğinin daha az olacağını konuşmuştuk. Ama ben çoğu ver hükümelerinde söylemedim de. Bütün ver hükümelerinde şunu gördüm. Mesela burada üçüncü grafiklerde daima maksimum derinliği arttırdığında karar benzerliklerinde arttığını gördüm. Aslında bu benim beklediğim bir durum değildi. Bunun neden olduğunu tam olarak anlayamadım.
+
+913
+02:47:21,087 --> 02:47:30,527
+Bir dakika, maksimum derinliği arttırdığında daha büyük ağaçlar ve durumda daha benzerlik fazla mı çıktı?
+
+914
+02:47:31,087 --> 02:47:42,247
+Evet, benzerlik genelde fazla çıkıyor. Tabi bazen sapmalar oluyor ama benim beklediğim şuydu, derinlik az olduğunda daha artıyor, daha fazla benzer olmasıydı.
+
+915
+02:47:42,247 --> 02:47:48,527
+Derinlik arttırdığında da daha, hani Bayesler'ın daha birbirinden farklılaşmasıydı.
+
+916
+02:47:49,087 --> 02:47:51,687
+Ama bunu ben gözlemleyemedim.
+
+917
+02:47:52,907 --> 02:47:54,207
+Birer datasetlerde de mi böyle?
+
+918
+02:47:55,407 --> 02:48:02,907
+Yani çoğu datasetti. Mesela bunda da düşmüş ama artanlar var.
+
+919
+02:48:02,907 --> 02:48:06,367
+AdaBus artmış, Begins artmış.
+
+920
+02:48:07,367 --> 02:48:16,227
+Diğerlerinde mesela burada aynı dataseti. Bu Kolik datasetinde 300'e gerçi.
+
+921
+02:48:20,595 --> 02:48:26,115
+Yani hocam düşmeler var ama yani çıkmalar çoğunlukta.
+
+922
+02:48:32,884 --> 02:48:33,824
+Peki, tamam.
+
+923
+02:48:35,224 --> 02:48:42,603
+Bu şekilde. Daha sonra bu tweet test aşamasına geldiğimde bu karışık müzikler üzerinden anlatacağım.
+
+924
+02:48:43,503 --> 02:48:48,523
+Ben bu tweet testle hani kazanma kaybetme beraber durumuna baktığımda 5 defa deneme yaptım.
+
+925
+02:48:48,583 --> 02:48:54,603
+5 defa denememiz sonucunda bu kazanma kaybetme durumlarının tabloyu işledim.
+
+926
+02:48:54,603 --> 02:48:56,564
+Bir dakika, 5 deneme dediğin?
+
+927
+02:48:57,492 --> 02:49:01,891
+Ben hocam 5 defa çalıştırdım spor adımı. Şey, key testi.
+
+928
+02:49:03,251 --> 02:49:04,731
+Hangi data set üzerinde?
+
+929
+02:49:05,451 --> 02:49:15,731
+Bütün data setler üzerinde. Ama çok şey çalıştı yani, yavaş çalıştı. Hatta gece de açıp bıraktım yani sabahı almışım.
+
+930
+02:49:16,931 --> 02:49:22,171
+Hayır, şimdi 5 kez çalıştırdın onu anladım da şeyi anlayamadım. Ne derler ona?
+
+931
+02:49:22,739 --> 02:49:38,400
+Bu tablo bize neyi söylüyor? Derinlik 1'de mesela kaç tane dataset'te kimin kimi yendiğini görmek istiyoruz. Burada sanki o yok. Burada başka bir şey var.
+
+932
+02:49:38,400 --> 02:49:44,579
+O yok. Bu sadece hangi dataset? Bu Glass dataset için şöyle yapıyor.
+
+933
+02:49:45,075 --> 02:50:02,716
+Yani 5x1 kılası değişmeden 5 defa çalıştırdım. Bu 5 defa çalışma işleminin sonucunda t değerine bakarak kimin kimi kaç defa da kaç defa yendi, kaç defa yendi ya da beraber kaldığını buldum.
+
+934
+02:50:03,155 --> 02:50:07,655
+Anladım ama bir tane dataset üzerinde şu tablo. Aynı dataset üzerinde.
+
+935
+02:50:07,655 --> 02:50:08,655
+Evet hocam.
+
+936
+02:50:08,755 --> 02:50:19,636
+Yani hani şeyi çıkarttın mı peki? Hani şu bütün datasetlerde atıyorum işte. Kaç tane dataset kullanmıştın? 12 miydi?
+
+937
+02:50:19,876 --> 02:50:21,636
+12 tane. Onu çıkarmadım hocam.
+
+938
+02:50:22,115 --> 02:50:27,396
+12 tane dataset'in kaçında kim kimi kaç kez yendi, kaybetti falan. Hani onlara bakmadın. Öyle mi?
+
+939
+02:50:27,515 --> 02:50:34,595
+Hocam ben sadece şey, dataset'ler arası yapmadım. Sadece dataset içerisinde yaptım. Bu tabloları.
+
+940
+02:50:35,376 --> 02:50:36,155
+Peki, tamam.
+
+941
+02:50:38,260 --> 02:50:46,260
+Burada da benim genelde bulduğum yani şu kazanma kaybetme durumunda da Random Forest ile Bedingin daha başarılı olduğu daf setler üzerinde.
+
+942
+02:50:47,283 --> 02:50:55,444
+Single Division 3'nin ise daima kaybetti. Hiçbir kazanma göstermediğini gözlemlemiş oldum.
+
+943
+02:50:55,444 --> 02:51:10,484
+Adabust ise, bu single division 3 ile begging ve random forest'ın arasında kazanma kaybetme olarak bu şekilde bunları da söyleyebilirim.
+
+944
+02:51:12,115 --> 02:51:16,915
+Burada en sonunda zaten her birinin altına kısa sonuçları olarak not adam en sonunda bulunur.
+
+945
+02:51:20,115 --> 02:51:21,595
+Bu şekilde hocam.
+
+946
+02:51:22,036 --> 02:51:23,815
+Peki teşekkürler [öğrenci].
+
+947
+02:51:28,819 --> 02:51:37,260
+Bu arada son 10 dakikamız kalmış. [öğrenci] var, bir de [öğrenci] var. [öğrenci] burada mısın?
+
+948
+02:51:42,164 --> 02:51:43,144
+Ben buradayım hocam.
+
+949
+02:51:44,584 --> 02:51:45,304
+[öğrenci]?
+
+950
+02:51:48,304 --> 02:51:53,744
+Neyse, yani herhalde Zoom bizi atmaz dışarıya. Peki [öğrenci] seni dinleyelim ilk önce.
+
+951
+02:51:54,324 --> 02:51:57,164
+[öğrenci] de gelirse. Geç kaldın [öğrenci].
+
+952
+02:51:59,924 --> 02:52:07,484
+Şey yaparız, dediğim gibi yani muhtemelen Zoom kapatmaz, 5'te bitiyor ders ama bitmez seni de dinleriz, tamam mı?
+
+953
+02:52:07,840 --> 02:52:10,699
+Tamam, zaten ben yapamamıştım hocam ödevi.
+
+954
+02:52:11,739 --> 02:52:12,399
+Öyle mi?
+
+955
+02:52:12,799 --> 02:52:13,020
+Evet.
+
+956
+02:52:13,020 --> 02:52:13,680
+Peki o zaman.
+
+957
+02:52:13,680 --> 02:52:16,559
+Ben başları dinliyorum nasıl yapmışlar diye.
+
+958
+02:52:16,739 --> 02:52:19,539
+Ödevleri dinliyorsun, güzel. Tamam o zaman. Peki, tamam.
+
+959
+02:52:19,760 --> 02:52:20,719
+Hocam, bir örneğe geldi mi?
+
+960
+02:52:22,079 --> 02:52:22,879
+Bir saniye.
+
+961
+02:52:23,987 --> 02:52:24,787
+Bakayım.
+
+962
+02:52:25,368 --> 02:52:27,427
+Screen dedim ama doğru yerimi paylaştım acaba.
+
+963
+02:52:27,688 --> 02:52:29,167
+Geldi, geldi. Şu anda geldi.
+
+964
+02:52:29,167 --> 02:52:30,688
+Şunu alt alalım, bu gereksiz.
+
+965
+02:52:31,387 --> 02:52:34,268
+Ben kısa bir sunum yapmaya çalışayım madem hocam.
+
+966
+02:52:34,727 --> 02:52:37,427
+12 değil de 15 dataset üzerinde çalıştım ben.
+
+967
+02:52:38,268 --> 02:52:40,627
+07 bir zero rule kuralınız vardı.
+
+968
+02:52:40,727 --> 02:52:46,528
+Ben o kuralı tek tek her bir dataset'e bakarak bu dataset 07'den daha başarılıymış demedim.
+
+969
+02:52:46,907 --> 02:52:50,787
+Bunun yerine genel olarak mümkünse 07 bandında kalmasına baktım.
+
+970
+02:52:50,787 --> 02:52:51,987
+Bunu yapma...
+
+971
+02:52:51,987 --> 02:52:59,127
+Birbirinde çok başarılı olanların da ne yapacağını merak ettim açıkçası. Ondan dolayı 12 yerine 15 tane yapıp 3 tanesini de çok başarılı koydum.
+
+972
+02:52:59,700 --> 02:53:25,500
+O şekilde söyleyebilirim. Başlangıçta yaşadığım bir sorum vardı hocam. Özellikle MATLAB tarafında FitC3 kullanımına geçilmiş. Bununla birlikte arkadaşlarım da bahsettiği gibi bazı parametrelerde değişiklikler oldu. O kısım özellikle birazcık zorlayıcı oldu. Bunun dışında çalıştığım datasetlerde Letter vardı. Letter çok büyük bir datasettti ve işlemleri çok uzun sürüyordu. Ben de etki vermesinden korkup onu VOD gibi daha küçük bir dataset ile değiştirdim.
+
+973
+02:53:25,500 --> 02:53:27,700
+Anladım. Peki [öğrenci] şey...
+
+974
+02:53:27,700 --> 02:53:31,020
+Bir sorayım, o maksimum derinlik işini sen nasıl hallettin?
+
+975
+02:53:31,252 --> 02:53:38,631
+Maksimum derinlik işini ben de aynı şekilde şu split olayı vardı hocam. Hala görüntüm geliyor mu bilmiyorum.
+
+976
+02:53:38,832 --> 02:53:39,492
+Geliyor, geliyor.
+
+977
+02:53:40,252 --> 02:53:56,412
+Maksimum split'i kullanarak yaptım. Doğrudan ben derinlik değerine bunu verdim ama zaten oradaki amacımız bizim doğrudan onun üzerinde ne olduğunu görmek değil de arttırınca ne olduğunu görmek olduğu için çok da fazla önemsemeden devam ettim o noktada.
+
+978
+02:53:56,412 --> 02:53:57,792
+Tamam, tamam. Peki.
+
+979
+02:53:59,252 --> 02:54:27,252
+Bunun dışında TTS sonuçlarım var. Ancak ben onları açıklayıcı bulmadığım için duruma göre bazı dataset'leri seçip bunlar üzerinden ilk açıklamalarımı yaptım. Hemen devam ediyorum. Mesela aynı derinlikte bazı örnek veriler verdim burada. Üç algoritma için. Bagging, Boosting ve Random Forest için. Bunlar üzerinden derinlikle alakalı kısımları, daha doğrusu derinliğe bağlı olmayan kısımları bunlar üzerinden açıkladım. Hemen alt kısma geçiyorum.
+
+980
+02:54:27,252 --> 02:54:48,891
+Topluluk kararlarının her zaman en az bireysel kararlar kadar doğru sonuçlar verdiğini görmüş olduk burada. Nadiren ya aynı sonucu verdiği oldu, şuradaki gibi, ya da çok daha iyi sonuçları verdiği zaten genel bir kabul topluluk kararlarının. Kollektif öğrenme metotları başarımı bu noktada arttırmaktadır. Bu sonucu gözlemlemiş olduk.
+
+981
+02:54:49,459 --> 02:55:09,659
+Algoritmalar arasında bir verimliliğin karşılaştırması noktasında farklı algoritmaların farklı dataset'ler üzerinde farklı farklı başarımlar gösterdiğini görmüş oldum burada. Yani sizin de söylediğiniz gibi genel geçer bir tane çok başarılı bir algoritma yok. Dataset'e göre seçmemiz gerekiyor. Örneğin Splice dataset'inde çok ciddi bir şey fark ettim ben burada.
+
+982
+02:55:10,048 --> 02:55:19,448
+Splash Datasit'inde özellikle Random Forest çok başarılı oldu. Hatta iki defa çalıştırdım bir sıkıntı mı vardı. %91 başarı oranına ulaştı Random Forest.
+
+983
+02:55:19,855 --> 02:55:47,615
+Diğerleri ise %52 bantlarında kaldı. Bunun dışında hemen aşağıdan devam edelim. Size gönderdiğim raporda bu sarı kısımlar yoktu ama hızlı anlatayım diye az önce çizdim bunları. Boosting algoritmasının Bedinger'e kısmen daha başarılı sonuçlar ortaya koyduğunu görmüş olduk. Çünkü burada seçilmeyen değerlerin ön plana çıkartılarak bir sonraki eğitimde kullanılması söz konusuydu. Tabii bunun getirdiği bir dezavantaj da var zaman anlamında.
+
+984
+02:55:47,855 --> 02:56:10,015
+Ben Begging ve Boosting algoritmalarını kendim yazdım. Boosting'de de biraz performans konusunda sıkıntı olduğunu açıkçası düşünüyorum. Zaman kıyaslaması yaptığımızda Boosting'in, burada bir örneği gösterdim bu arada, 180 saniye gibi çok uzun bir zaman sürdüğünü, arkasından Arandan Forest'in 113 saniyene geldiğini ve en azıda Begging'in tamamlandığını gördüm.
+
+985
+02:56:10,611 --> 02:56:20,311
+Bu noktada kullanılan algoritmaların alt planında, arka planındaki yapılarda farklılık olduğundan dolayı zamanların yanıtlıcı olabileceğini aktarmam gerekiyor.
+
+986
+02:56:22,051 --> 02:56:26,951
+Boosting algoritması tabii ki beynice göre daha maliyetli. Bu çok net şekilde beklenen bir durum.
+
+987
+02:56:27,111 --> 02:56:32,431
+Az önce söylediğim gibi seçilmeyenleri ön plana çıkarma işlemi aslında ek bir maliyet getiriyor bize.
+
+988
+02:56:33,268 --> 02:56:51,028
+Burada yine bahsettiğim durumu çizmişim. Şimdi bir de karar harcı derinliğinin süreci etkisi üzerinden inceleyelim. Dediğim gibi T-test sonuçlarım da bunlarla örtüşen sonuçlar verdi. Ama ben daha somut olması açısından bir tane dataset seçtim ve bu dataset üzerinden incelemek istedim.
+
+989
+02:57:01,268 --> 02:57:25,608
+Bu derinlikten 2'ye geçiş, 2'den 3'e geçişte çok daha yüksek başarımlar elde ediyoruz. Ancak bir noktadan sonra bu bir doygunluğa ulaşıyor ve 10 derinlikten sonsuz derinliğe atlamanın hatta bir noktada topluluk başarımı düşürdüğünü bile görebiliyoruz.
+
+990
+02:57:25,951 --> 02:57:34,251
+Tabii bu boosting algoritması olduğu için büyük ihtimalle bir sonraki çalıştırmada yine farklı bir sonuç elde ederdik diye düşünüyorum. Aşağıdaki notlarımı kontrol edeyim.
+
+991
+02:57:35,092 --> 02:57:56,172
+Karar ağacı derinliğini arttırmanın başarım oranını bireysel ve toplulukta arttırdığını iletmiştim. Kollektif algoritmaların önem verdiği bir şey vardı, karar çeşitliliği. Ne kadar fazla kararımız varsa elimizde biz bunları bu kadar demokrasi üsulü birleştirerek daha verimli sonuçlar elde edebiliriz diyorduk.
+
+992
+02:57:57,459 --> 02:58:02,839
+Burada biz derinliği arttırdıkça aslında verinin etrafında daha kesin çizgiler çizmiş olduk.
+
+993
+02:58:03,199 --> 02:58:07,559
+Ve daha kesin çizgiler çizmek demek bir noktadan sonrasında bizim gürültüye de odaklanmamız demek.
+
+994
+02:58:08,099 --> 02:58:13,719
+Bu bir noktada başarımı düşürecek bir senaryo da çizebiliyor.
+
+995
+02:58:14,879 --> 02:58:20,599
+Datasete göre değişen belirli bir derinliğe kadar inmenin verimli olabileceğini yine iletmem gerekiyor.
+
+996
+02:58:20,599 --> 02:58:22,839
+Bu datasetten datasete değişen bir durum.
+
+997
+02:58:23,860 --> 02:58:25,860
+Hocam sorunuz var mı? Çok hızlı ilerledim galiba.
+
+998
+02:58:25,980 --> 02:58:29,020
+Yok yok yok. Ben gayet iyi takip edebiliyorum. Sıkıntı yok.
+
+999
+02:58:29,020 --> 02:58:46,320
+Burada iki tane örnek farklı derinliklerdeki ağacı gösterdim. Bir algoritmadan görselleştirmek amacıyla alınmış sonuç hocam. Yani özel olarak şu algoritmaya ait dememin bir manası yok. On derinlikteki bu şekilde, bir derinlikteki bu şekildeydi bende.
+
+1000
+02:58:46,688 --> 02:58:54,748
+Tabi orada split sayısını verdiğim için büyük ihtimal split sayısı üzerinden ölçüm yapıyordu. Tam olarak derinlik üzerinden ölçüm yapmıyordu diye düşünüyorum.
+
+1001
+02:58:56,048 --> 02:59:01,908
+Gelelim T-test sonuçlarına. T-test sonuçları az önce söylediğim gibi yukarıda verdiğim verilerle örpüşüyor.
+
+1002
+02:59:02,579 --> 02:59:13,860
+Özellikle mesela Begging ve Random Forest üzerinden incelediğimizde, bunu söylemedim az önce de, Random Forest'ın neredeyse her zaman çok daha verimli sonuçlar elde ettiğini gördüm.
+
+1003
+02:59:13,860 --> 02:59:23,400
+Orada çünkü özelliklere yoğunlaşma durumu söz konusu. Ve beklendiği üzere Boosting'de Begging'e göre her zaman az miktarda bile olsa daha iyi sonuçlar elde ediyor.
+
+1004
+02:59:23,800 --> 02:59:30,579
+Yalnız burası yanıltmasın, şu an incelediğimiz tablo ağaç derinliği bir. Ağaç derinliği arttıkça hemen...
+
+1005
+02:59:30,579 --> 02:59:43,980
+Aynen hemen hepsinde başarım miktarının yine arttığını burada da görüyoruz. Windows matrislerini koydum. Açıkçası nasıl incelemem gerektiğini bilmediğimden dolayı bunlarla ilgili bir yorum yapmadım hocam. Size sormak istediğim bir konu da bu olacak birazdan.
+
+1006
+02:59:45,299 --> 02:59:59,619
+Dilerseniz 10 ve Infinity inceleyelim. Az önce bir doygunluktan bahsetmiştim hatırlarsanız. Ağaç derinliğini arttırmak bir yerden sonra pek de fayda etmiyor. Burada onu çok net bir şekilde tüm algoritmalarda görüyoruz. Basit bir örnekle.
+
+1007
+03:00:00,000 --> 03:00:17,459
+Random Forest'ta %82.12 iken %82.68'e sadece yükselebilmiş. 10 ve sonsuz arasındaki fark bu kadar az bir verim farkına yol açmış diyebilirim. Atladığım bir nokta olabilir hocam. Çok azı şekilde anlattım. Size sormak istediğiniz arkadaşlarım sormak istediği varsa.
+
+1008
+03:00:17,459 --> 03:00:26,559
+Tamam ben şunu sorayım [öğrenci]. Kararların yani tekil öğrencilerin kararlarının benzerliğine dair bir inceleme yaptın mı?
+
+1009
+03:00:28,000 --> 03:00:55,420
+Doğrudan bir hesaplama yaptırarak sonuca ulaşmadım. Ancak ben burada şunu gördüm hocam. Burada belli bir doygunluğa ulaştıktan sonra bunların zaten kararları birbirine benzemeye başlıyor. Kararların birbirine benzemesi demek topluluk başarımına aslında daha az verim katması anlamına geliyor. Ben bu noktadan yakalayıp da yorumladığım için ekstra bir test yapma gereğinde bulunmadım açıkçası.
+
+1010
+03:00:55,824 --> 03:01:05,464
+Anladım, anladım. Tamam, peki. Sen şey soruyordun bana, oradaki o matrisler ne demek diye. Evet hocam, aynen.
+
+1011
+03:01:06,227 --> 03:01:19,268
+O matrisler, bir dakika. Bu çıkanlara bakalım. Şimdi 0.077. Biri t-test'e göre hocam. Biri de ortalama'ya göre o şekilde sonuç aldım. Sizin kodunuzu kullandım bu arada t-test için.
+
+1012
+03:01:19,268 --> 03:01:23,787
+Anladım. Şimdi burada 15 tane dataset var.
+
+1013
+03:01:24,435 --> 03:01:26,755
+Evet, üçlü şekilde koydum hocam bu arada.
+
+1014
+03:01:27,076 --> 03:01:31,376
+Şimdi 15 trend asset var. Burada üçlü dediğin Bagging Boosting ve Random Forest.
+
+1015
+03:01:33,376 --> 03:01:44,156
+Şimdi buradaki ortalamaya göre dediğimiz şey, hani 5x2 fold cross-padiation yapılıyor ya, orada 10 tane sonuç elde ediyor sonuçta algoritmalarda.
+
+1016
+03:01:44,156 --> 03:01:49,236
+10 tane sonucun ortalamasına göre hangisi hangisinden daha yüksek, daha düşük.
+
+1017
+03:01:51,700 --> 03:01:56,719
+0, 15, 3, 12. Buradaki değerlerin toplamlarının 15 olduğunu görüyorsun.
+
+1018
+03:01:56,940 --> 03:02:03,200
+Hocam ben buna göre kullanmışım demek ki. Benimki de böyleydi ya hani.
+
+1019
+03:02:03,700 --> 03:02:27,399
+Sen ortalamaya göre olan kısmı almışsın o zaman. Evet, ben bunu almışım hocam. Ama alman gereken şu t-test kısmı. T-test kısmındaysa orada toplam 15 değil gördüğünüz gibi orada toplam mesela değişebiliyor. Yani hangi algoritman hangi algoritmayı kaç tane kaç kez yendiğini gösteriyor ya da yenildiğini gösteriyor.
+
+1020
+03:02:27,860 --> 03:02:50,020
+Şimdi burada 0-0 kendi kendisi, yani diagonaller kendi kendisiyle karşılaştırma. Daha sonra mesela 0'a 7 demek, ilk satırdaki 0-7 düşünelim. Satırdaki algoritmanın sütundaki algoritmayı 0 kez yendiğini, 7 kez yenildiğini gösteriyor. Yani buradaki satırdaki herhalde neydi o? Bagging herhalde.
+
+1021
+03:02:50,548 --> 03:02:53,868
+Begging, boosting, random forest diye gidiyordun hocam sırası.
+
+1022
+03:02:54,148 --> 03:03:11,848
+Yani begging mesela burada sıfır kere kazanmış, yedi kez yenilmiş boosting'e. Ama mesela yine begging mesela 2-8 ne demek? Begging iki kez kazanmış, sekiz kez kaybetmiş random forest'a.
+
+1023
+03:03:12,500 --> 03:03:27,420
+Yani şu 10 tane dataset var burada gözüken, hani 2 ve 8. Ama toplamda 15 tane dataset var. Dolayısıyla geri kalan 5 tanesinde de beraber kalmışlar. Anlatabildim mi? Mantıklı.
+
+1024
+03:03:27,420 --> 03:03:34,979
+Yani şu bunun karşılığı diğer tarafa bakarsan, mesela bak 2, 8'in diğer taraftaki karşılığı 3'e 12.
+
+1025
+03:03:35,763 --> 03:03:48,623
+Yani aslında 3 kez yenmiş ama bunların sadece 2 tanesi istatistiksel manada anlamlı ya da 12 kez yenilmiş sadece bunların 8 tanesi istatistiksel anlamda manalı. Tamam.
+
+1026
+03:03:49,683 --> 03:03:54,603
+Hocam peki burada eksi çıkan değerler var. Bu loss'u mu gösteriyor? Eksi olması.
+
+1027
+03:03:54,843 --> 03:03:59,643
+Evet yani kaç kez kazandığından kaç kez kaybettiğini çıkartıyorsun.
+
+1028
+03:04:00,755 --> 03:04:04,555
+Dolayısıyla dost daha fazla olduğu zaman eksi oluyor.
+
+1029
+03:04:05,935 --> 03:04:09,235
+Anladım hocam. Benim sunumum bu kadar hocam.
+
+1030
+03:04:09,875 --> 03:04:16,775
+Tamam. Yok yok gayet iyiydi. 13 dakikada hallettik. Benim de sunumumun içerisinde.
+
+1031
+03:04:17,555 --> 03:04:25,235
+Peki arkadaşlar başka sunum herkesle konuştuk herhalde. [öğrenci] konuştu, [öğrenci] konuştu, [öğrenci].
+
+1032
+03:04:25,843 --> 03:04:43,843
+Konuştu, [öğrenci] konuştu, [öğrenci] konuştu, [öğrenci] konuştu, [öğrenci] zaten ödevi yapmamış ama dinledi. Epey bir şey öğrenmiştir diye ümit ediyorum. [öğrenci] de konuştu. Tamam. Peki arkadaşlar, bugünkü dersimiz burada o zaman sona eriyor. Haftaya…
+
+1033
+03:04:43,843 --> 03:04:46,403
+Hocam bir şey sorabilir miyim kapatmayı?
+
+1034
+03:04:47,092 --> 03:04:58,532
+Ben rapora beggingin sonuçlarını yazamamıştım ya, onu eklenmiş halini gönderebilir miyim size? Yani daha önce yapmıştım, gece yaptım da rapora ekleyemedim.
+
+1035
+03:04:59,492 --> 03:05:00,652
+Tamam, ekle gönder.
+
+1036
+03:05:00,912 --> 03:05:02,112
+Tamam, teşekkür ederim.
+
+1037
+03:05:02,532 --> 03:05:03,272
+Rica ederim.
+
+1038
+03:05:05,692 --> 03:05:06,471
+Peki arkadaşlar.
+
+1039
+03:05:07,272 --> 03:05:08,552
+Hocam, hafta ediyordunuz ama.
+
+1040
+03:05:08,943 --> 03:05:17,623
+Evet, haftaya kaldığımız yerden devam edeceğiz. Yani vizemiz falan yok. Tamam. Haftaya kaldığımız yerden devam edeceğiz. Görüşmek üzere arkadaşlar.
+
+1041
+03:05:17,923 --> 03:05:19,263
+Görüşmek üzere. İyi akşamlar.
+
+1042
+03:05:19,863 --> 03:05:20,983
+İyi akşamlar hocam.
+
+1043
+03:05:20,983 --> 03:05:26,163
+İyi akşamlar.
