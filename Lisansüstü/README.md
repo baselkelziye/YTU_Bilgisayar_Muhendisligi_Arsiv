@@ -29,6 +29,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Bilgisayarla Görme Ders Kayıtları](./Bilgisayarla%20G%C3%B6rme/ders_kayitlari/) ✨
 - 📄 **Not:** [Önder'in markdown notları](./Bilgisayarla%20G%C3%B6rme/slaytlar_notlar/2022/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
@@ -226,6 +227,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Bilgisayar Sistemleri ve Ağ Güvenliği Ders Kayıtları](./Bilgisayar%20Sistemleri%20ve%20A%C4%9F%20G%C3%BCvenli%C4%9Fi/ders_kayitlari/) ✨
 - 📄 **Not:** [Önder'in markdown notları](./Bilgisayar%20Sistemleri%20ve%20A%C4%9F%20G%C3%BCvenli%C4%9Fi/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
 - 📄 **Not:**[Zehra Aksoy'un Notları](./Bilgisayar%20Sistemleri%20ve%20A%C4%9F%20G%C3%BCvenli%C4%9Fi/slaytlar_notlar/2024/zehra_aksoy) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
@@ -258,6 +260,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Biyomedikal İşaret ve Görüntü İşleme Ders Kayıtları](./Biyomedikal%20%C4%B0%C5%9Faret%20ve%20G%C3%B6r%C3%BCnt%C3%BC%20%C4%B0%C5%9Fleme/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
