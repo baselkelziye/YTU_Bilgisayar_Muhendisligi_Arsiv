@@ -1,0 +1,1935 @@
+1
+00:18:01,556 --> 00:18:08,316
+Arkadaşlar merhaba. Sesim geliyor mu? Bir teyit eder misiniz lütfen?
+
+2
+00:18:14,099 --> 00:18:15,939
+Tamam, geliyor oradan de.
+
+3
+00:18:19,220 --> 00:18:46,120
+Evet, bugün Recommendation System konusunu konuşacağız. Chapter 9. Yine bugün konuşacağımız dersle ilgili dersin kitabının sayfasında ders materyallerini bulabilirsiniz. Yine bizim kendi dersimizin sayfasında da bugünkü işleyeceğim konu ile ilgili slide'ları arkadaşlar bulabilirsiniz.
+
+4
+00:18:46,932 --> 00:19:13,172
+Okey. Sınavlarınızı bu hafta sonu okumasını yapıp duyurusunu yapacağım. Bunun dışında zaten dönem projelerinizle ilgili bana proposlarınızı göndermiştiniz. Çalışmaya devam ediyorsunuz. Son hafta dönem projelerinizle ilgili sunumlarınız olacak. Onu biliyorsunuz. Tekrardan hatırlatıyorum.
+
+5
+00:19:15,539 --> 00:19:23,079
+Ders başlamadan önce bana sorusu olan var mıdır? Sorusu olan varsa mikrofonunu açıp sorabilir yahut da chatten yazabilir.
+
+6
+00:19:30,900 --> 00:19:33,680
+Okay. O zaman başlayalım.
+
+7
+00:19:35,660 --> 00:19:39,320
+Today we are going to talk about recommender systems.
+
+8
+00:19:40,840 --> 00:19:51,019
+And particularly we are going to talk about recommender systems that runs on large scale data, on big data.
+
+9
+00:19:51,019 --> 00:19:51,960
+Okay.
+
+10
+00:19:56,211 --> 00:20:04,551
+So, first of all, so what is the motivation for recommender system? Let's talk about this.
+
+11
+00:20:22,804 --> 00:20:26,344
+It could be videos on YouTube.
+
+12
+00:20:28,704 --> 00:20:33,403
+It could be music files on Spotify, et cetera.
+
+13
+00:20:33,943 --> 00:20:34,084
+Okay.
+
+14
+00:20:34,504 --> 00:20:37,804
+Now, if you have such large amount of items...
+
+15
+00:20:38,367 --> 00:20:50,807
+Obviously, the user sometimes would like to find that item that he or she is most interested in.
+
+16
+00:20:50,807 --> 00:20:57,687
+Okay. So one thing that user can do is do search.
+
+17
+00:20:58,288 --> 00:21:01,887
+Okay. But the search interfaces are limited.
+
+18
+00:21:02,288 --> 00:21:06,347
+Okay. And the results that comes as a result.
+
+19
+00:21:06,367 --> 00:21:21,427
+A lot of search, okay, the user still has to do a lot of browsing on the results in order to find the best possible item that he or she is interested in.
+
+20
+00:21:22,268 --> 00:21:30,387
+So therefore, we want recommendation systems that can recommend the user.
+
+21
+00:21:31,124 --> 00:21:36,463
+The right items that he or she is interested in.
+
+22
+00:21:38,844 --> 00:21:39,104
+Okay.
+
+23
+00:21:40,364 --> 00:21:55,703
+Now, normally, so if you consider the retailer stores, which means the physical stores, the number of items that are available there is limited.
+
+24
+00:21:56,208 --> 00:22:05,708
+If you go to a supermarket, the number of available items in a supermarket is limited because of the space requirement.
+
+25
+00:22:05,708 --> 00:22:20,168
+Or if you go to movie theaters in Istanbul, the number of movie theaters and the number of different movie sessions that's available are limited.
+
+26
+00:22:21,556 --> 00:22:30,496
+Or, if you go to different TV channels, obviously you have 24 hours of screening time.
+
+27
+00:22:31,395 --> 00:22:38,996
+Therefore, the number of different shows that can be broadcast on the TV channels are also limited.
+
+28
+00:22:40,336 --> 00:22:54,076
+Now, if you have a limited number of items that are available there, okay, then finding the item that you are requested could be somehow easier.
+
+29
+00:22:54,900 --> 00:23:14,800
+But if the number of items are unlimited, or if the number of items that are available in the stores, it could be a retailer store, it could be a movie store, etc.
+
+30
+00:23:22,900 --> 00:23:32,380
+really difficult okay so therefore on the web we have different sites websites where the number of
+
+31
+00:23:32,380 --> 00:23:39,019
+items that are available there is almost unlimited for example netflix okay the streaming websites
+
+32
+00:23:39,955 --> 00:23:43,935
+Or the e-commerce book websites.
+
+33
+00:23:44,455 --> 00:23:51,855
+Or the music websites that are broadcasting music.
+
+34
+00:23:52,255 --> 00:23:53,775
+So for example, Spotify.
+
+35
+00:23:54,675 --> 00:23:59,056
+So from scarcity to abundance.
+
+36
+00:23:59,056 --> 00:24:01,855
+So we have the scarcity problem.
+
+37
+00:24:02,515 --> 00:24:07,935
+We have the scarcity situation in physical stores or TV.
+
+38
+00:24:07,955 --> 00:24:20,035
+TV channels or movie theaters, but if you go to the web environment, okay, then you have the abundance situation where you have high number of items that are available for you.
+
+39
+00:24:20,035 --> 00:24:27,615
+Now, this is a phenomenon and this is called long tail phenomenon, okay?
+
+40
+00:24:29,907 --> 00:24:35,727
+The way that we are explaining this long tail phenomenon is like this.
+
+41
+00:24:36,407 --> 00:24:39,407
+So if you consider this x-axis,
+
+42
+00:24:40,019 --> 00:24:46,460
+A4D items and items are ranked based on their popularity.
+
+43
+00:24:47,099 --> 00:24:52,880
+The high popular items are in the left-hand side of the X-axis.
+
+44
+00:24:53,319 --> 00:24:59,420
+The low less popular items are on the right-hand side.
+
+45
+00:24:59,420 --> 00:24:59,839
+Okay.
+
+46
+00:25:00,639 --> 00:25:07,680
+And the Y-axis here is telling us the number of purchases of these items per week.
+
+47
+00:25:08,019 --> 00:25:16,299
+Okay, it could be purchases or it could be it could be number of views per week for the movies, for example.
+
+48
+00:25:17,619 --> 00:25:23,519
+Now, if you consider this area, for example, if so, let's draw a line here.
+
+49
+00:25:23,519 --> 00:25:31,599
+If you consider this area, now the items that are highly popular, okay, you can find these items in the retailer stores.
+
+50
+00:25:32,051 --> 00:25:42,371
+For example, if you go to a physical retailer store, obviously they are going to put those items that are high likely to be sold to the customers.
+
+51
+00:25:42,371 --> 00:25:50,631
+They are not going to put the items that are less likely to be sold because they don't have enough space.
+
+52
+00:25:51,551 --> 00:26:00,051
+But on the web environment, you see that there are also, so here there are many items that are less likely to be sold.
+
+53
+00:26:00,051 --> 00:26:04,571
+ve dağıtık veri işlemiyeni ve dağıtık veri işlemiyeni ve dağıtık veri işlemiyeni.
+
+54
+00:26:05,107 --> 00:26:26,827
+And if you consider this area underneath, if you compare this area here with this area for the popular items, you will see that this area is bigger than this area which is reserved for the popular items.
+
+55
+00:26:33,107 --> 00:26:56,627
+On the web, okay, is much bigger compared to the physical stores or physical or TV channels for the movies or for the TV shows or for the movies, movie theaters. So on the web, we have much more available items.
+
+56
+00:26:58,932 --> 00:27:01,231
+Now, here is an example.
+
+57
+00:27:02,675 --> 00:27:30,675
+Why recommendation engines are important for the long tail phenomenon. Why it is so important? Now, as I said, the long tail phenomenon tells us that there are high number of less popular items on the web and we need systems that could recommend those items to the users who...
+
+58
+00:27:30,675 --> 00:27:48,855
+might be interested in them. Okay. Now, so let's see an example of why recommendation engines are important for the long tail phenomenon. Now, you see that there are two
+
+59
+00:27:49,263 --> 00:27:58,743
+There are two books here, and they both are in a mountaineering area.
+
+60
+00:28:00,203 --> 00:28:04,903
+They are both written in a mountaineering topic.
+
+61
+00:28:04,903 --> 00:28:13,403
+Now, this second book was published first.
+
+62
+00:28:13,779 --> 00:28:35,599
+And when it was first published, it didn't get much attraction. It didn't become a bestseller. And then this first book was published. And when this book was published afterwards, this got a lot of attraction and it became a bestseller.
+
+63
+00:28:36,276 --> 00:28:52,596
+And after that, Amazon recommendation engine recommended this book, which was published much earlier than this book, recommended this book to the users.
+
+64
+00:28:52,596 --> 00:29:03,496
+And it turned out that users who also bought this book started to buy the second book, Touching the World.
+
+65
+00:29:04,243 --> 00:29:12,463
+And it turned out that by the help of recommendation engine, the second book become a bestseller as well.
+
+66
+00:29:12,463 --> 00:29:24,823
+Okay. And it become actually, it turned out that it is sold much more than the first book. Okay. So this one.
+
+67
+00:29:25,652 --> 00:29:43,652
+So, this tells us something. This tells us that recommendation engines can influence people to buy items that are less popular at the beginning, but by the help of recommendation engines…
+
+68
+00:29:43,859 --> 00:29:49,879
+So, these items may become really popular and they may be sold to many customers.
+
+69
+00:29:49,879 --> 00:29:59,879
+Okay. Now, as for the items, it could be books, movies, music items, news articles. Okay. And also...
+
+70
+00:30:00,000 --> 00:30:06,500
+These recommendation engines not only can recommend these items, they can also recommend people.
+
+71
+00:30:06,500 --> 00:30:20,820
+If you are in a social network such as Facebook, LinkedIn, and Twitter, you see that their recommendation engines continuously are recommending to you different people.
+
+72
+00:30:40,948 --> 00:30:41,407
+Now,
+
+73
+00:30:43,220 --> 00:30:46,680
+We talked about the importance of recommendation engines.
+
+74
+00:30:47,000 --> 00:30:51,300
+What kind of recommendations that we can do on a given website?
+
+75
+00:30:51,860 --> 00:30:51,960
+Okay.
+
+76
+00:30:52,360 --> 00:30:58,000
+First off, we can do editorial or hand-created recommendations.
+
+77
+00:30:58,000 --> 00:30:58,619
+Okay.
+
+78
+00:30:59,059 --> 00:31:11,220
+Now, these recommendations, basically, if you go to, for example, if you go to a Starbucks, right, you see a blackboard that tells you.
+
+79
+00:31:11,220 --> 00:31:18,220
+Today's most important or most favorable drink is...
+
+80
+00:31:47,604 --> 00:31:49,063
+User's behavior.
+
+81
+00:31:50,063 --> 00:31:56,563
+So this recommendation is done by the owner or the editor of that website.
+
+82
+00:31:58,163 --> 00:32:02,824
+Now, the second type of recommendation is based on the simple aggregates.
+
+83
+00:32:03,764 --> 00:32:03,884
+Okay.
+
+84
+00:32:03,884 --> 00:32:07,884
+So this is based on the statistical...
+
+85
+00:32:09,779 --> 00:32:15,679
+Metrics that we can use in order to understand what's popular on that website.
+
+86
+00:32:15,679 --> 00:32:25,679
+For example, we can say, okay, the top 10 most viewed books are...
+
+87
+00:32:25,887 --> 00:32:28,507
+As the following.
+
+88
+00:32:29,007 --> 00:32:35,487
+Or we can say that these are the books that are sold to the customer mostly.
+
+89
+00:32:36,268 --> 00:32:44,527
+Or you can say these are the movies that are watched by the customers recently.
+
+90
+00:32:44,527 --> 00:32:52,487
+So these are basically, again, based on the collective behavior of the user.
+
+91
+00:32:52,948 --> 00:33:03,208
+It does not look at the individual behavior of the user, but it looks at the collective behavior of the users.
+
+92
+00:33:05,779 --> 00:33:12,639
+Now, this one was based on the editor of that website, editorial recommendation.
+
+93
+00:33:12,639 --> 00:33:20,559
+And this one is based on the crowd activities, how the users are using that website.
+
+94
+00:33:21,059 --> 00:33:26,319
+Based on that information, we can do simple aggregate-based recommendations.
+
+95
+00:33:27,763 --> 00:33:39,023
+Now, the third type of recommendation in which we are interested in is doing recommendation based on the behavior of the individual users.
+
+96
+00:33:39,023 --> 00:33:46,303
+For example, as a user, you are subscribed to Netflix.
+
+97
+00:33:47,563 --> 00:33:55,103
+And ever since your subscription begins, you start watching action movies.
+
+98
+00:33:55,763 --> 00:34:04,223
+And in that case, Netflix knows that it can recommend you more action movies.
+
+99
+00:34:04,223 --> 00:34:14,083
+Okay, so based on your interactions, based on your behavior on that website, okay, that websites can recommend you.
+
+100
+00:34:14,356 --> 00:34:16,576
+Some items.
+
+101
+00:34:17,176 --> 00:34:17,296
+Okay.
+
+102
+00:34:17,296 --> 00:34:25,736
+So therefore, we are interested in the recommendation engines that can look and analyze the customer behavior.
+
+103
+00:34:26,376 --> 00:34:26,516
+Okay.
+
+104
+00:34:31,635 --> 00:34:39,056
+Now, what we are trying to do with the recommendation engines is the following.
+
+105
+00:34:39,596 --> 00:34:43,675
+So, we are going to try, we are going to define a formal model.
+
+106
+00:34:43,976 --> 00:34:50,596
+Let's say C, capital C, is used to define customers.
+
+107
+00:34:51,096 --> 00:34:53,516
+Capital S is used to define items.
+
+108
+00:34:53,516 --> 00:34:54,115
+Okay.
+
+109
+00:34:56,244 --> 00:35:03,524
+What we are trying to find, we are trying to find, we are going to use a utility function.
+
+110
+00:35:03,987 --> 00:35:15,447
+This function takes the customers and the items as an input, and it finds all possible customer and item payers.
+
+111
+00:35:16,248 --> 00:35:17,807
+So what does this mean?
+
+112
+00:35:18,248 --> 00:35:23,947
+The first element of the payer will be customer, and the second element of the payer will be item.
+
+113
+00:35:23,947 --> 00:35:24,427
+Okay.
+
+114
+00:35:25,067 --> 00:35:25,927
+All possible.
+
+115
+00:35:26,739 --> 00:35:49,279
+Pairs of customer and items, okay, this function will find those pairs. And for each of the pairs, we will find a rating, okay? Now, so the utility function that we are going to use, it will find a rating for the customer item pairs.
+
+116
+00:35:50,068 --> 00:36:02,568
+And once we find the customer item pay rating, then what we are going to do, we are going to order these ratings.
+
+117
+00:36:04,500 --> 00:36:24,519
+From the largest rating to the smallest one, okay? In a descending order, okay? Then we can recommend to certain customer, okay, the item which is likely to have the highest ranking.
+
+118
+00:36:25,108 --> 00:36:30,528
+Okay, now here the ratings could be a star base ratings.
+
+119
+00:36:31,148 --> 00:36:33,188
+The ratings could be between zero and five.
+
+120
+00:36:33,668 --> 00:36:41,887
+It could be a real number between zero and one, or it could be a binary number zero or one.
+
+121
+00:36:41,887 --> 00:36:42,568
+Okay.
+
+122
+00:36:50,195 --> 00:36:54,135
+Now, this is an example of utility matrix.
+
+123
+00:36:54,135 --> 00:37:00,036
+And you see that in this matrix, the rows are indicating the people.
+
+124
+00:37:00,835 --> 00:37:00,956
+Okay.
+
+125
+00:37:01,416 --> 00:37:03,916
+And the columns are indicating the items.
+
+126
+00:37:04,500 --> 00:37:21,300
+And you see that some values in this matrix are, so we have some values available for these positions, and most of them are empty, so they don't have any values.
+
+127
+00:37:21,840 --> 00:37:27,480
+The reason for that is that usually most people do not give any feedback.
+
+128
+00:37:27,923 --> 00:37:37,943
+When they use an item, okay, when they watch a movie or when they purchase an item, they don't give any feedback, okay?
+
+129
+00:37:37,943 --> 00:37:52,564
+Therefore, the utility matrix that we encounter in real life, usually it's a scarce matrix, which means that there are lots of zeros and there are small number of non-zero values, okay?
+
+130
+00:37:55,219 --> 00:38:08,800
+And with the utility function that we want to use, with the utility function, we are interested in finding those areas where there is a zero value.
+
+131
+00:38:08,800 --> 00:38:20,519
+Okay, which means that we want to find these empty places so that we can recommend.
+
+132
+00:38:21,072 --> 00:38:28,412
+Those items to that corresponding user if that area turns out to be high value.
+
+133
+00:38:29,844 --> 00:38:51,184
+Hedefimiz buradaki arkadaşlar boşlukların değerlerini bulmak. Eğer bu boşlukların değerlerini bulursak bu durumda mesela kullanıcı Alice düşünelim. Alice'in şu ana kadar izlememiş olduğu Lord of the Rings yahut da Pirates filmlerinin hangisine daha fazla puan vereceğini bulmuş olacağız.
+
+134
+00:38:51,384 --> 00:38:56,583
+Dolayısıyla hangisine daha fazla puan verecekse Alice'e onu önereceğiz.
+
+135
+00:38:57,844 --> 00:39:13,243
+Lakin bizim bundan sonra yapacağımız, öğreneceğimiz algoritmaların tamamı hedefi bu utility matrix içerisindeki boş alan alanları bulmak. Ama bunu yaparken de bu dolu olan alanlardan yararlanarak yapıyoruz.
+
+136
+00:39:24,467 --> 00:39:46,447
+How we can obtain the known ratings for the matrix. As you see, there are some values here, right? How you get these values? Okay. Now, one thing is you can collect these data by asking the user.
+
+137
+00:39:46,864 --> 00:40:13,644
+Okay, which means that right after you watch a Netflix movie, Netflix gives you a five-star rating survey. In that case, Netflix is asking you to enter a rating. Okay, if you enter a rating, then it explicitly gathers the rating from you.
+
+138
+00:40:14,036 --> 00:40:20,855
+But most of the people do not give any rating for the items that they purchased or they watched.
+
+139
+00:40:21,576 --> 00:40:28,895
+Okay. Now, this is a problem then. Okay. Gathering the known rating, it's a problem.
+
+140
+00:40:29,576 --> 00:40:38,416
+Now, the other problem is that how do you find the unknown ratings from the known ones?
+
+141
+00:40:38,867 --> 00:40:55,748
+As you see, there are unknown ratings, right? So these people did not watch these movies, for example, therefore there is no rating. How do you find the values for the unknown ratings?
+
+142
+00:40:56,532 --> 00:41:21,952
+Okay, by using the known ratings, how do you find the unknown ratings? That's the second problem. So remember the first problem, how do you get the known ratings? Okay, because that's difficult to convince people to give feedback. After that, by using the known ratings, how do you find the unknown ratings?
+
+143
+00:41:22,804 --> 00:41:30,864
+Now, the third problem is that how do you evaluate the success or performance of the recommendation engine?
+
+144
+00:41:30,864 --> 00:41:48,344
+Okay, now, after I find the values for these unknown ratings, what I'm going to do, I am going to find a way to evaluate whether this recommendation engine
+
+145
+00:41:49,012 --> 00:41:54,271
+works well or it doesn't work well.
+
+146
+00:41:54,672 --> 00:42:06,472
+So therefore, what we need to do, we need to also come up with an evaluation methodology which can measure the performance of the recommendation method.
+
+147
+00:42:06,472 --> 00:42:07,771
+Okay.
+
+148
+00:42:10,832 --> 00:42:11,752
+Now,
+
+149
+00:42:12,403 --> 00:42:26,963
+Let's take a look at the first problem. In the first problem, gathering ratings is difficult because you can either gather the rating explicitly.
+
+150
+00:42:26,963 --> 00:42:40,403
+You can ask people or customers to rate the item. But if you do that, this solution does not scale. If you only rely on your…
+
+151
+00:42:40,403 --> 00:42:56,003
+recommendation engine for explicitly rating gathering, then it does not scale because a majority of the people, they are not actually giving any feedback about the items that they are using.
+
+152
+00:42:57,003 --> 00:42:57,083
+Okay.
+
+153
+00:42:57,403 --> 00:43:02,463
+Now, the second thing that you can do is implicit feedback.
+
+154
+00:43:02,944 --> 00:43:07,484
+In that case, you can extract the rating from the user actions.
+
+155
+00:43:08,179 --> 00:43:10,559
+Okay, without asking the user.
+
+156
+00:43:10,960 --> 00:43:12,039
+How can you do that?
+
+157
+00:43:12,039 --> 00:43:18,987
+For example, if the user, for example, spent a lot of time...
+
+158
+00:43:19,188 --> 00:43:24,188
+Bu, bir item var,
+
+159
+00:43:24,188 --> 00:43:26,188
+ve bu item var,
+
+160
+00:43:26,188 --> 00:43:29,188
+bu user'nin online'e vermek için
+
+161
+00:43:29,188 --> 00:43:30,188
+bir item var.
+
+162
+00:43:30,188 --> 00:43:37,996
+Bu, bir item var.
+
+163
+00:43:38,291 --> 00:43:51,471
+Or, if the user purchased that particular item, then you can say that, okay, this person paid money and bought this item, purchased this item.
+
+164
+00:43:51,851 --> 00:43:57,671
+So, therefore, we think that this user would give this item high rating.
+
+165
+00:43:58,291 --> 00:44:06,291
+Now, you can extract this rating information from the user actions.
+
+166
+00:44:06,952 --> 00:44:09,731
+But how do you extract the low ratings?
+
+167
+00:44:10,551 --> 00:44:16,831
+How do you know that a user would give a low rating to an item?
+
+168
+00:44:17,907 --> 00:44:34,228
+Okay, because spending, buying an item is a good indicator that this person is giving a high rating to this item, but it is difficult to understand whether or not this person would give a low rating.
+
+169
+00:44:35,007 --> 00:44:41,728
+So therefore, explicit rating gathering does not scale. It has a disadvantage.
+
+170
+00:44:42,516 --> 00:44:53,936
+It's a good solution because it gets the user feedback in an exact manner, but it does not scale.
+
+171
+00:44:54,596 --> 00:44:54,676
+Okay.
+
+172
+00:44:54,976 --> 00:44:57,855
+And implicit feedback, it scales.
+
+173
+00:44:58,355 --> 00:44:58,516
+Okay.
+
+174
+00:44:58,676 --> 00:45:06,855
+We can get the implicit feedback from the user action, but with the implicit feedback, we cannot know about the low ratings.
+
+175
+00:45:12,052 --> 00:45:19,532
+Now, the second problem was, how do you calculate the unknown values by using the known values?
+
+176
+00:45:20,492 --> 00:45:30,172
+Now, this is also a problem, a challenge in recommendation systems.
+
+177
+00:45:30,172 --> 00:45:32,908
+Now, the reason is that...
+
+178
+00:45:34,003 --> 00:45:40,523
+Now, most people, they have not rated most items.
+
+179
+00:45:41,403 --> 00:45:41,483
+Okay.
+
+180
+00:45:41,963 --> 00:45:47,523
+Now, since they have not rated most items, okay,
+
+181
+00:45:48,916 --> 00:45:54,676
+So we have a scarcity matrix, utility matrix, okay?
+
+182
+00:45:54,676 --> 00:46:08,796
+Which means that we have a matrix utility matrix, but we have a majority of the matrix is unknown values and only small portion of the matrix has non-zero values, okay?
+
+183
+00:46:08,936 --> 00:46:15,576
+Then it makes it difficult to find the unknown values if you have a matrix like this.
+
+184
+00:46:16,056 --> 00:46:16,916
+That's one problem.
+
+185
+00:46:16,916 --> 00:46:20,956
+Now, the second problem is the cold start problem.
+
+186
+00:46:21,376 --> 00:46:31,356
+For example, if you have a new user which has no history, okay, in that case, what are you going to recommend to this user?
+
+187
+00:46:31,956 --> 00:46:38,016
+Because you don't have any interaction data between the user and the system.
+
+188
+00:46:38,547 --> 00:46:50,787
+And another thing, let's say you have a new item, a new movie that comes to Netflix, and no one has already watched this movie.
+
+189
+00:46:51,507 --> 00:47:00,987
+So therefore, there is no ratings at all. In that case, how can you recommend this new movie to the Netflix customers?
+
+190
+00:47:00,987 --> 00:47:04,507
+Because you don't have any pure information.
+
+191
+00:47:05,844 --> 00:47:09,744
+Now, this is called cold start problem, which we will learn later.
+
+192
+00:47:10,704 --> 00:47:19,444
+But the idea here is that we don't have enough history data so that we can use this history data in order to recommend something.
+
+193
+00:47:20,744 --> 00:47:20,864
+Okay.
+
+194
+00:47:20,864 --> 00:47:21,923
+Now,
+
+195
+00:47:23,507 --> 00:47:38,887
+In order to find the unknown values, even though we have these two difficulties, these two challenges, in order to find the unknown values based on the known values, we have three categories of recommended systems.
+
+196
+00:47:39,127 --> 00:47:46,127
+Now, the first recommended system category is content-based systems, which we will learn in this class.
+
+197
+00:47:46,612 --> 00:47:52,072
+The second category is collaborative filtering recommender systems.
+
+198
+00:47:52,072 --> 00:47:55,692
+We will also learn this category.
+
+199
+00:47:56,192 --> 00:48:00,211
+The third one is later factor-based recommender systems.
+
+200
+00:48:00,551 --> 00:48:03,851
+We will leave this as out of scope.
+
+201
+00:48:10,900 --> 00:48:15,699
+Okay, now let's get started with the content based recommender systems.
+
+202
+00:48:18,340 --> 00:48:18,819
+Okay.
+
+203
+00:48:21,460 --> 00:48:22,819
+Give me one minute.
+
+204
+00:48:53,139 --> 00:48:57,500
+Okay, let's get started with the content-based recommender systems.
+
+205
+00:48:58,259 --> 00:48:58,359
+Okay.
+
+206
+00:49:00,599 --> 00:49:09,099
+Now, the content-based recommender systems, we want to recommend items to customer X
+
+207
+00:49:09,099 --> 00:49:16,719
+based on the similar items that are rated by the same customer.
+
+208
+00:49:17,168 --> 00:49:34,047
+Now, we can recommend movies, we can recommend websites, people, et cetera, but we can only recommend based on the items that this particular user has already rated.
+
+209
+00:49:34,547 --> 00:50:00,000
+Okay, how we are going to do this? For example, here, so we have a user, and this user interacted with the system and told the system that it likes these items. And there is one red circle, and there is one red triangle. Okay. Now, for each of the items, okay, I can...
+
+210
+00:50:00,000 --> 00:50:02,640
+I can create an item profile.
+
+211
+00:50:03,347 --> 00:50:08,367
+Now, you can consider this item profile as a future vector.
+
+212
+00:50:09,207 --> 00:50:13,927
+It consists of all the features that this particular item has.
+
+213
+00:50:14,528 --> 00:50:23,627
+For example, this item is a circle and its color is red, etc.
+
+214
+00:50:23,627 --> 00:50:28,068
+And obviously, item profile.
+
+215
+00:50:28,496 --> 00:50:33,356
+So you can have an item profile that can represent the books.
+
+216
+00:50:34,195 --> 00:50:38,176
+Okay, you can have an item profile that can represent the movies.
+
+217
+00:50:38,695 --> 00:50:48,276
+Okay, for example, in this item profile, in order to represent the movie, you have the actors, directors, genre, etc.
+
+218
+00:50:50,996 --> 00:51:12,476
+In order to represent an item profile for a website, you can use the articles, you can use the words in order to represent a website or blog or news.
+
+219
+00:51:14,387 --> 00:51:27,087
+Now, you have a vector that represents each element of this vector is a feature of this particular item.
+
+220
+00:51:27,748 --> 00:51:31,608
+And this user likes different items.
+
+221
+00:51:31,608 --> 00:51:42,387
+And what you are going to do, you are going to combine all these future vectors and you are going to come up with a vector.
+
+222
+00:51:42,387 --> 00:51:44,648
+Açıkçı olarak, user profile.
+
+223
+00:51:45,488 --> 00:51:45,608
+Okay.
+
+224
+00:51:45,948 --> 00:51:50,168
+Now, this user profile will represent the user itself.
+
+225
+00:51:51,248 --> 00:52:05,028
+And what this algorithm, the content-based filtering algorithm is doing, it takes the user profile and it compares with the rest of the item profile that are available in your catalog.
+
+226
+00:52:05,684 --> 00:52:18,644
+And if there is a match between the user profile and also one of the item profiles, then this particular item is being recommended to the user.
+
+227
+00:52:22,516 --> 00:52:29,596
+As we said, for the items, we create an item profile.
+
+228
+00:52:30,296 --> 00:52:33,576
+And we said that item profile consists of features.
+
+229
+00:52:34,076 --> 00:52:43,155
+For example, if the item is movie, author, title, actor, director, all these are the features of this item.
+
+230
+00:52:43,155 --> 00:52:50,155
+Now, if this is an image, then all the metadata and the tags that we are using...
+
+231
+00:52:50,516 --> 00:52:54,836
+In order to identify these images or videos are the features.
+
+232
+00:52:55,996 --> 00:53:06,115
+For example, if this is a people, then we can use the set of friends that this person has as a future vector.
+
+233
+00:53:12,115 --> 00:53:16,476
+So therefore, we can create an item.
+
+234
+00:53:16,911 --> 00:53:21,711
+We can create an item profile by using a vector.
+
+235
+00:53:21,711 --> 00:53:27,112
+And this vector might have Boolean values or real values.
+
+236
+00:53:27,635 --> 00:53:32,976
+So, what does boolean value a future vector means?
+
+237
+00:53:33,376 --> 00:53:38,876
+For example, let's say a book, right?
+
+238
+00:53:39,416 --> 00:53:43,716
+And all possible words that may appear in a book, okay?
+
+239
+00:53:43,896 --> 00:53:49,236
+You can create a vector space, okay?
+
+240
+00:53:49,576 --> 00:53:55,256
+Where the size of the vector space is the all possible words that may appear in a book.
+
+241
+00:53:55,699 --> 00:54:02,099
+And if that word is in the book, then the value for that word will be one.
+
+242
+00:54:02,416 --> 00:54:27,436
+If the word is not available in that book, then it will be zero. The value will be zero. In that case, what you will have, for example, for a book item profile vector, you will have a vector which consists of zeros and ones, and one would indicate that the word is in the book, zero would indicate that the word is not in the book.
+
+243
+00:54:30,416 --> 00:54:32,496
+This is a Boolean valued vector.
+
+244
+00:54:32,496 --> 00:54:37,296
+It could be also, we could also have real valued item profile vector.
+
+245
+00:54:40,216 --> 00:54:41,736
+Okay, now.
+
+246
+00:54:42,420 --> 00:54:59,239
+I already told you that in order to represent a document, it could be a document, it could be a book, it could be a text. So we can use the words as the profile vector, item profile vector.
+
+247
+00:55:03,603 --> 00:55:13,363
+If you wanted to represent a given text, okay, so which words you would use in order to represent it?
+
+248
+00:55:13,363 --> 00:55:25,503
+Because a text might have too many words. For example, it might have words like and, or, or the article the, okay?
+
+249
+00:55:25,683 --> 00:55:26,963
+Now, these are common.
+
+250
+00:55:27,860 --> 00:55:34,659
+And we don't want to use these common words in order to represent the document.
+
+251
+00:55:35,239 --> 00:55:42,319
+So therefore, we would like to pick the important words that would represent a particular document.
+
+252
+00:55:42,319 --> 00:55:51,199
+Now, how do you choose the important words? And for this, we are using a metric called TF-IDF.
+
+253
+00:55:51,731 --> 00:55:59,251
+Okay, now TF stands for term frequency, IDF stands for inverse document frequency.
+
+254
+00:55:59,952 --> 00:56:05,112
+Okay, now let's take a look at what term frequency and what inverse document frequency is.
+
+255
+00:56:08,596 --> 00:56:28,295
+Okay, now, so let's start with the term frequency. Now, this term frequency tells us that the term frequency of item i, okay, or term i in a document j, okay?
+
+256
+00:56:28,851 --> 00:56:47,592
+So in this particular case, in order to calculate the turn frequency of word i in document j, what we are going to do, we are going to count the number of times that this particular word appears in that document j.
+
+257
+00:56:48,019 --> 00:57:00,440
+Now, this is the number of times that the count of the appearance, the number of times that this particular word appears in the document.
+
+258
+00:57:00,440 --> 00:57:03,179
+Now, divided by...
+
+259
+00:57:03,476 --> 00:57:09,115
+Now, this particular document is in a collection set, right?
+
+260
+00:57:09,456 --> 00:57:22,856
+Within a collection set, which means that we have a document collection in which this particular document is available.
+
+261
+00:57:23,155 --> 00:57:30,496
+So, in that document collection, so what is the maximum number of times that this particular
+
+262
+00:57:31,155 --> 00:57:55,820
+Bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar da bu ne kadar
+
+263
+00:57:56,788 --> 00:58:04,788
+Now, this basically tells us the importance of the word for that document in that document correction.
+
+264
+00:58:05,907 --> 00:58:11,947
+Now, the second part of the TF idea is inverse document frequency.
+
+265
+00:58:12,807 --> 00:58:16,467
+Now, inverse document frequency is calculated like this.
+
+266
+00:58:18,592 --> 00:58:29,612
+Here, log, you see in nominator, I have capital N, which indicates the number of total documents in that document collection.
+
+267
+00:58:30,692 --> 00:58:40,391
+And in denominator, you see that small letter N, N sub I, which means that the number of documents that includes that word I.
+
+268
+00:58:40,980 --> 00:58:53,160
+Now, the number of documents that word i, if it is big, which means that that word is included in every document in that document collection.
+
+269
+00:58:53,760 --> 00:59:03,720
+If it appears in every document, then the importance of this word for that document collection will be small.
+
+270
+00:59:04,720 --> 00:59:07,200
+Inverse document frequency will be small.
+
+271
+00:59:08,019 --> 00:59:19,779
+Arkadaşlar, TF-IDF'in TF kısmını bir kelimenin o döküman için ne kadar önemli olduğunu ifade eden bir metrik olarak düşünebilirsiniz.
+
+272
+00:59:20,799 --> 00:59:30,379
+IDF'i ise o kelimenin bu dökümanın bulunmuş olduğu döküman koleksiyonu içerisindeki önemini ifade eden metrik olarak düşünebilirsiniz.
+
+273
+00:59:30,739 --> 00:59:33,759
+Birisi döküman için, birisi ise döküman koleksiyonu için.
+
+274
+00:59:34,420 --> 00:59:59,599
+Hani burada bunu bulurken ne yaptım? Bu dökümanın bulunmuş olduğu döküman içerisinde kaç defa geçiyor buna baktım. Bir de o döküman koleksiyonu içerisinde maksimum olarak herhangi bir dökümanda ne kadar geçmiş buna baktım. Yani bu döküman içerisindeki geçmiş olduğu sayıyı maksimum olarak herhangi bir dökümanda geçmişse ona bölüyorum. Bu benim TF değerimi veriyor.
+
+275
+01:00:00,436 --> 01:00:18,436
+IDF'de ise bu doküman kaç tane doküman koleksyonunun içerisinde kaç tane dokümanda geçmiş? Eğer bu doküman elimdeki doküman koleksyonunun içerisinin hepsinde geçmişse bu ne olacaktır? Benim için çok önemli bir kelime olmayacaktır değil mi?
+
+276
+01:00:26,675 --> 01:00:45,455
+Bu değer büyük olursa bu durumda bu log değerinin değeri küçük olacaktır. Yani IDF değeri küçük olacaktır. Ama eğer az sayıda dökümanda geçiyorsa bu durumda denominator büyük olacaktır. Bu log değeri ise ne olacaktır?
+
+277
+01:00:47,539 --> 01:00:58,639
+Denominator küçük olacaktır çünkü az sayıda geçiyor. Bu log değeri ise büyük olacaktır. Yani inverse document frequency büyük olacaktır.
+
+278
+01:00:59,139 --> 01:01:13,500
+Demek ki bir kelime bir doküman içerisinde çok defa geçiyorsa, aynı şekilde bir kelime bir doküman koleksiyonu içerisinde az sayıda dokümanda varsa bu kelimenin TF-IDF skoru ne olacaktır? Büyük olacaktır.
+
+279
+01:01:14,003 --> 01:01:38,683
+Bu dokümanın o doküman için TF-IDF skoru büyük olacaktır. Peki biz buraya niye geldik? Dedik ki biz bir tane tekst bize verildi, bir doküman verildi. Bunu reprezent edecek bir tane item profile oluşturmamız gerekli. Ama bu doküman içerisinde çok sayıda kelime var. Bu kelimelerin hepsini düşünerek mi bir item profile oluşturacağız? Hayır.
+
+280
+01:01:39,219 --> 01:01:53,459
+TF-IDF skorlarını hesaplayacağız bunun içerisindeki kelimelerin. TF-IDF skorları belirli bir değerin üzerinde olmuş olan kelimeleri bu dokümanı temsil edecek item profile ile kullanacağız.
+
+281
+01:02:00,563 --> 01:02:24,304
+Now, user has rated items with profiles I1, I1 to I1, N. Now, these are the item profiles that we create. And user has rated all these item profiles. Then I need to calculate and user profile by using these item profiles.
+
+282
+01:02:24,820 --> 01:02:31,599
+Now, one thing that I can do, I can take the average of these item profiles.
+
+283
+01:02:32,460 --> 01:02:40,579
+I can take the average of these item profiles, or I can take the weighted average of these item profiles.
+
+284
+01:02:44,371 --> 01:02:52,231
+And another version, I can normalize weights by using the average rating of user.
+
+285
+01:02:52,231 --> 01:03:01,951
+Okay. And as I calculate the weights for each of these item profiles, then I can normalize these weights by using the average rating.
+
+286
+01:03:02,551 --> 01:03:07,611
+Okay. And there are also other approaches in order to find the user profiles.
+
+287
+01:03:08,047 --> 01:03:18,187
+Okay, now let us give a break for 10 minutes, then I will continue with an example how we can calculate user profile. So I'm going to give a 10 minute break.
+
+288
+01:13:02,003 --> 01:13:03,603
+Evet, sesim geliyor mu arkadaşlar?
+
+289
+01:13:05,443 --> 01:13:06,184
+Geliyor hocam.
+
+290
+01:13:06,184 --> 01:13:06,923
+Okey.
+
+291
+01:13:09,324 --> 01:13:20,443
+Buradaki örnekte bu Boolean Utility Matrix bize verilmiş. Bu Boolean Utility Matrix'te ne vardı?
+
+292
+01:13:22,583 --> 01:13:27,344
+İşte satırlarda user'lar vardı.
+
+293
+01:13:29,235 --> 01:13:43,575
+Sütunlarda da ürünler vardı. Ben bu Bullion Utility Matrix'te de eğer ben bir user bir filmi izlemişse bir var, izlememişse sıfır var.
+
+294
+01:13:44,243 --> 01:13:56,963
+Şimdi buradan ben bir user için user profilleri oluşturacağım. Diyelim ki mesela bir user X, user X'in satırına bakıyorum. Orada beş tane film var.
+
+295
+01:13:57,804 --> 01:14:03,103
+Şimdi bu beş tane filmi kullanaraktan bu user X için bir tane user profil oluşturacağım.
+
+296
+01:14:04,103 --> 01:14:09,243
+Şimdi her bir filmin bir tane item profili var.
+
+297
+01:14:09,747 --> 01:14:25,108
+Bu item profili de ben bir future vektörü olarak tanımlıyorum. Bu future'ları da buradaki örnekte sadece future olarak sadece aktör var. Yani bütün aktörlerin isimlerini yazıyorum, yanlarına bir ya da sıfır koyuyorum.
+
+298
+01:14:25,108 --> 01:14:36,948
+Şimdi mesela future A, işte A aktörünün ol ile ilgili future, B aktörü ile ilgili future. Şimdi ben ne yapacağım?
+
+299
+01:14:37,747 --> 01:14:47,788
+O zaman her movie'yi bir tane future A, future B, future C, future D gibi future'lar için eğer o future varsa bir yanına yoksa sıfır yazacağım.
+
+300
+01:14:47,788 --> 01:15:02,127
+Okey. Beş tane film izlemiş bu arkadaş. Bu beş tane bu item profile'ın ne yapacağım? Ortalamasını alacağım. Ortalamasını aldığımda bu benim için ne olacak? User profile olacak.
+
+301
+01:15:03,220 --> 01:15:30,780
+Burada da hani onu yapmışım. Bu user profili oluştururken future A'ya 5 tane izlemiş. Bunlardan 2 tanesinde A aktörü oynuyor. 3 tanesinde B aktörü oynuyor. O yüzden bunun item profillerinin ortalamasını aldığında future A'ya karşılık gelen future için 2 bölü 5, 0.4 değeri olacak user profilde.
+
+302
+01:15:31,220 --> 01:15:50,340
+FutureB'ye karşılık gelen Future için 3 bölü 5 o da 0.6 olacak User Profile'da. Aynı şekilde FutureC, FutureD, FutureE için bu şekilde gidiyor. Bunun için ben bir User Profile oluşturduktan sonra ContentBaseFiltering ne diyordu?
+
+303
+01:15:59,220 --> 01:16:17,659
+Karşılaştıracağım. Çünkü item profilerin şeyi de aynı şekilde, aynı yapıda. Future A, Future B, Future C şeklinde gidiyor. Buradaki user profile ile item profileri karşılaştıracağım. Hangileri yakınsa onları ben kullanıcıya önereceğim.
+
+304
+01:16:22,387 --> 01:16:31,048
+Şimdi bir diğer durum da bu utility matrisle 0-1 yerine 1'den 5'e kadar reytingler olabilir.
+
+305
+01:16:31,572 --> 01:16:54,051
+Bu durumda da kullanıcı bu filmlere gerçekten reyting vermiş. Burada da diyelim ki A aktörünün içerdiği iki tane film izlemişti ya, bunların bir tanesine, üç bir tanesine beş vermiş. B aktörünün oynadığı filmlere ise bir vermiş, iki vermiş, dört vermiş. Hani bir ile beş arası reytingler için.
+
+306
+01:16:59,572 --> 01:17:03,811
+Rating verildiği durumda acaba user profili ben nasıl bulurum?
+
+307
+01:17:04,692 --> 01:17:10,772
+Bu durumda da benim şöyle bir yöntem uygulayabilirim.
+
+308
+01:17:11,092 --> 01:17:17,731
+Öncelikle bu kişinin totaldeki filmlere vermiş olduğu ratinglerin toplamı nedir?
+
+309
+01:17:18,492 --> 01:17:22,292
+Hani burada 5 tane var, bunların toplamı 15.
+
+310
+01:17:23,859 --> 01:17:29,600
+Beş tane film izlemiş. Demek ki bütün filmleri toplamda ortalamada üç puan vermiş.
+
+311
+01:17:30,131 --> 01:17:55,492
+Şimdi ortalamada 3 puan verdiyse ben bu her bir film için vermiş olduğu reytingden bu ortalamayı çıkartırım. 3'den 3'ü çıkartacağım 0, 5'den 3'ü çıkartacağım 2, ondan sonra 1'den 3'ü çıkartacağım eksi 2, 2'den 3'ü eksi 1, 4'den 3'ü artı 1.
+
+312
+01:17:56,180 --> 01:18:10,980
+Şimdi bunu yaparak neyi hedefliyorum? Diyelim ki eğer bir user, easy ratersa, yani filmlere puan verirken hep böyle bol keseden veriyorsa buradaki değerler hep yüksek çıkacaktır.
+
+313
+01:18:11,828 --> 01:18:34,968
+Ya da bir user eğer filmlere çok düşük değerler çıkıyorsa burada hep düşük çıkacaktır. Benim isteğim bu arkadaşın vermiş olduğu ortalamadaki değerle bu vermiş oldukları değerlerin ortalamadaki değerle karşılaştırıldığında hangisine daha iyi vermiş, hangisine daha kötü vermiş?
+
+314
+01:18:39,828 --> 01:19:00,528
+Demek ki bu ikisini çok sevmemiş. Ama şu ikisine yani 5 puan ve 4 verdiği ortalamanın üstünde çıkmış bunları daha çok sevmiş. Ama 3'ü ise orta derece. Şimdi bu şekilde normalize ettikten sonra ben profile weightimi nasıl bulurum?
+
+315
+01:19:01,684 --> 01:19:25,064
+User Profile Vektörümde yine Future A, Future B, Future C gibi değerlerim olacak. Future A için ne yapacağım? Bu Future A'nın geçmiş olduğu movilerin normalize edilmiş reytinglerinin toplamını Future A'yı içeren movi sayısına böleceğim.
+
+316
+01:19:25,460 --> 01:19:37,159
+Aynı şekilde yine şey yaparken şunu şöyle yapalım daha güzel.
+
+317
+01:19:40,979 --> 01:19:59,979
+Yine aynı şekilde Future B'yi içeren yani B aktörünü içeren filmlerin normalize edilmiş reytinglerinin toplamını buradaki B aktörünün olduğu movie sayısına böleceğim. Bu da bana normalize edilmiş bir şekilde eğer Star Rating...
+
+318
+01:20:00,000 --> 01:20:20,360
+User Profile'i bulacağım formülü vermiş oluyor. Az önceki yöntemde eğer benim utility matrisimde 0-1'ler varsa yani star ratingler yoksa ki yöntemi söylemiştim.
+
+319
+01:20:24,051 --> 01:20:35,691
+Kullanıcı, movileri izlemiş ve izlediğim movileri 1 ile 5 arası star rating vermiş. O durumda user profile'ın nasıl hesaplanacağına bir örnek vermiş oldu.
+
+320
+01:20:36,659 --> 01:20:58,260
+Şimdi ben dedim ki user profile'ı oluşturduktan sonra bu user profile'la katalogumdaki item profileri karşılaştırıyorum dedim ve bunları karşılaştırdığım zaman user profile'e en yakın olan itemler hangisi ise onları sıralandırılmış bir şekilde son kullanıcıya önereceğim dedim.
+
+321
+01:21:03,667 --> 01:21:08,087
+Yöntemlerden bir tanesi Cosine Similarity yöntemi.
+
+322
+01:21:08,087 --> 01:21:23,067
+Hani bu eğer benim User Profile'imi ifade ediyorsa şuradaki X vektörü, iyi ise benim katalogumdaki bir tane filmin Item Profile'ini ifade ediyorsa ben bunun için ne yaparım?
+
+323
+01:21:23,427 --> 01:21:31,467
+Cosine Similarity değerine bakarım. Cosine Similarity değerine bakaraktan ikisinin birbirine ne kadar yakın olduğunu şey yaparım.
+
+324
+01:21:31,667 --> 01:21:39,487
+Burada iki tane vektörün dot product'ı bölü her iki vektörün uzunluğunun çarpımı ile bulunuyor.
+
+325
+01:21:41,811 --> 01:22:02,512
+Şimdi bu konuştuğumuz şey Content-Based Filtering yaklaşımı ile Recommender Sistem. Şimdi bunun avantajı da var, dezavantajı da var. Avantajını konuşalım. Bunu implement ederken başka kullanıcıların datasına ihtiyacımız yok arkadaşlar.
+
+326
+01:22:04,051 --> 01:22:16,572
+Sadece kullanıcının kendi yapmış olduğu historiye bakaraktan bu kullanıcıya öneri yapabilirim. Başka kullanıcıların verisine bakmama gerek yok.
+
+327
+01:22:17,131 --> 01:22:29,751
+Diğer bir şey, bir kullanıcının öyle bir müzik zevki vardır ki,
+
+328
+01:22:29,807 --> 01:22:44,807
+Diğerlerinden tamamıyla farklılaşıyordur. Ya da bir kullanıcının öyle bir film izleme alışkanlığı vardır ki diğer kullanıcılardan farklılaşıyordur. Bu yöntem kullanıcının...
+
+329
+01:22:47,328 --> 01:22:57,608
+Tekil, diğerlerinden farklaşan bir alışkanlığı, izleme alışkanlığı, beğeni alışkanlığı olsa bile bu tür kullanıcılara bile öneri yapabiliyor.
+
+330
+01:22:57,748 --> 01:23:12,368
+Çünkü bu kullanıcının kendisinin daha önceden izlemiş olduğu ya da satın almış olduğu ürünlerden yola çıkaraktan öneri yaptığı için direkt bu kullanıcının kendi beğeni alışkanlığına yönelik öneri yapabiliyor.
+
+331
+01:23:13,427 --> 01:23:35,688
+Diğer bir avantajı, diyelim ki yine sürekli Netflix üzerinden örnek veriyorum. Netflix'e yeni bir tane film geldi. Şimdi bu filmi daha önce hiç kimse izlemedi. Bu film hakkında hiç kimse bir reyting vermedi. Ben bu filmi bu content-based yaklaşımla halen kullanıcılara öneri yapabiliyorum.
+
+332
+01:23:36,884 --> 01:24:04,224
+Neden? Çünkü kullanıcıların user profilini zaten çıkartmışım daha önceden. Bu yeni gelen filmin de item profilini kolaylıkla çıkartabilirim. İçerisindeki geçen aktörlere dayalı olarak yapabilirim ya da farklı feature'larla. Itemla user profili karşılaştırıyorum. Eğer yakınsa bu filmi öneriyorum. Dolayısıyla yeni gelen ürünleri de önerme imkanı sağlıyor.
+
+333
+01:24:04,787 --> 01:24:18,268
+Bir de ben bir öneri yaptığım zaman bu öneriyi niye yaptın diye sorulduğu zaman ya da bununla ilgili kullanıcı bana bu öneri niye yapılmış diye baktığı zaman bir açıklama görme imkanı oluyor.
+
+334
+01:24:18,407 --> 01:24:31,987
+Çünkü kullanıcının daha önce izlemiş olduğu filmler örneğin hep aksiyon filmleri ise bu kullanıcıya aksiyon filmi önermek çok da abuk bir şey değil. Beklenmedik bir durum değil.
+
+335
+01:24:32,500 --> 01:24:56,819
+Bu kullanıcının daha önceki alışkanlıklarına, beğeni alışkanlıklarına benzer bir öneri yapmış oluyorsun. Peki bunun dezavantajları nedir? Bir tane dezavantajı tamam mesela film için biz bir yaklaşım söyledik. Dedik ki bir filmdeki item profile'i ifade ederken içindeki aktörlere kullanırız.
+
+336
+01:24:57,332 --> 01:25:16,052
+Peki bir image olsa nasıl yapacağız? Ya da bir müzik olsa, müzik faili olsa ne yapacağız? Yani o ürünü en iyi şekilde temsil eden, futurelardan oluşan bir tane item profile vektörünü oluşturmak zor.
+
+337
+01:25:16,692 --> 01:25:41,771
+Bazı itemlarda kolay örneğin bir kitabı ya da bir metni, bir teksti, bir news artikalı kelimelerle ifade edebilirsin. TF-IDF skorları en yüksek olan kelimelerle bunu bir item profile'ı dönüştürebilirsin. Ama bazı multimedya dosyaları var ki bunlarla ilgili item profile oluşturmak zor.
+
+338
+01:25:43,891 --> 01:25:58,111
+Diğer bir problem bunda, insanların farklı zevkleri olabilir. Yani bir insan sürekli aksiyon filmi izliyor diye, klasik film hiç izlemeyecek diye bir şey yok.
+
+339
+01:25:58,692 --> 01:26:07,371
+Eğer sadece insanların geçmişte yapmış oldukları beğenilere ya da alışkanlıklara dayalı olarak öneri yaparsak,
+
+340
+01:26:07,572 --> 01:26:17,112
+Bu kişilerin daha önce hiç görmediği ama ilgilenebilecekleri başka şeyleri önerme şansımız yok. Bu kişiye hep aksiyon filmi önereceğiz.
+
+341
+01:26:17,112 --> 01:26:33,291
+Ya da işte bu kişi hep böyle polisiye ya da bilim kurgu kitapları okuyorsa hep bu tarzda kitaplar önereceğiz. Oysa belki bunun dışında bir şey önersek bu kişi bununla da ilgilenebilir.
+
+342
+01:26:33,695 --> 01:26:44,815
+Demek ki bu yöntem kişilerin daha önce yapmış oldukları beğenilere çok odaklanarak öneri yapan bir yöntem. Bu bir dezavantaj.
+
+343
+01:26:45,695 --> 01:26:56,956
+Diğer bir problem ise sisteme yeni bir kullanıcı geldi. Ben bu kullanıcının hiçbir histori bilgisi yok bende. Bu durumda bu kullanıcı için bir user profile nasıl oluşturabilirim?
+
+344
+01:26:58,676 --> 01:27:10,036
+User profile oluşturamazsam çünkü bu yöntemde user profile ile item profilleri karşılaştıramam ve buna öneri yapamam. Demek ki bu da bu yöntem için bir tane problem.
+
+345
+01:27:20,115 --> 01:27:20,515
+Anladın.
+
+346
+01:27:41,876 --> 01:27:55,855
+Şimdi diğer bir yöntem Collaborative Filtering yöntemi. Collaborative Filtering yönteminde ise bir kullanıcıya öneri yaparken bu kullanıcının beğenilerine benzer beğeni göstermiş olan diğer kullanıcıların
+
+347
+01:27:56,500 --> 01:28:10,640
+Beğenilerini kullanarak öneri yapıyorum. Bu ne demek? Şimdi bir kullanıcım var, kullanıcı X. Bu kullanıcı diyelim ki bir takım filmleri beğenmiş. Yine Netflix üzerinden gidelim. Bir takım filmleri beğenmiş.
+
+348
+01:28:10,640 --> 01:28:23,819
+Bu filmlere benzer nitelikte filmleri, benzer filmleri izlemiş olan başka kullanıcıları tespit ediyorum bu yöntemde. Bu tespit ettiğim başka kullanıcıların
+
+349
+01:28:24,692 --> 01:28:36,131
+Bu izlemiş oldukları, benzer filmlerin haricinde izlemiş oldukları filmler varsa bu filmleri X kullanıcısına öneriyorum.
+
+350
+01:28:37,032 --> 01:28:46,231
+Yani bu kullanıcıya şunu diyorum, diyorum ki bak diyorum senin beğenilerine, seninle aynı filmleri izlemiş olan 10 tane kullanıcı var.
+
+351
+01:28:47,231 --> 01:28:50,172
+Bu kullanıcılar senden farklı olarak şu filmi de izlemiş.
+
+352
+01:28:50,899 --> 01:29:10,920
+İstersen buna bir bak. Şimdi Content-Based Filtering'de bir kullanıcının daha önceki yapmış oldukları alışkanlıklara bakaraktan bir öneri yapıyordum. Collaborative Filtering'de ise bir kullanıcıya başka kullanıcıların yapmış oldukları davranışlardan yola çıkarak öneri yapıyorum.
+
+353
+01:29:14,931 --> 01:29:20,332
+Şimdi bunu bir utility matris üzerinde bununla ilgili bir örneği çalışalım beraber.
+
+354
+01:29:21,192 --> 01:29:28,011
+Burada dört tane kullanıcı var. Utility matrisi hatırlayın. Kullanıcılar satırlarda.
+
+355
+01:29:28,652 --> 01:29:37,311
+Burada da benim filmlerim var. Harry Potter 1, 2, 3, Twilight Zone, ondan sonra Star Wars 1, 2, 3.
+
+356
+01:29:38,644 --> 01:29:44,984
+Ve bu kullanıcılar izlemiş oldukları filmlere 1 ile 5 arası star rating vermişler.
+
+357
+01:29:44,984 --> 01:29:59,484
+Şimdi ben burada benim hedefim neydi bu recommendation sistemlerde? Utility function kullanaraktan şuradaki unknown değerleri bulmakta.
+
+358
+01:30:00,000 --> 01:30:12,239
+Buradaki Anlon değerleri bulursam ve bunların ne yapabilirim? Bunları değerlerine göre bu kullanıcılara öneri yapabilirim.
+
+359
+01:30:12,239 --> 01:30:20,680
+Buradaki değerleri sıralandırarak büyükten küçüğe, buradaki ürünleri bu kullanıcılara önerebilirim.
+
+360
+01:30:21,427 --> 01:30:35,268
+Bu durumda benim buradaki görevim şuradaki empty alanları bu collaborative filtering yöntemiyle bu sefer kullanacağım collaborative filtering yöntemi hesaplamak.
+
+361
+01:30:35,268 --> 01:30:42,228
+Bu yöntem de bana şunu diyor ki buradaki her bir kullanıcı için
+
+362
+01:30:42,256 --> 01:30:55,496
+Olacak davranış vektörünü, bu davranış vektörünü şu, şuna ya da rating vektörü diyelim. Bu rating vektörünü, en yakın olan rating vektörlerini bulman gerekiyor bunun için.
+
+363
+01:30:55,496 --> 01:31:05,256
+Mesela A için, şuradaki değerleri bulacağım ya, şuradaki unknown değerleri. Öncelikle A'nın rating vektörüne,
+
+364
+01:31:05,844 --> 01:31:19,584
+En yakın olan diğer reyting vektörlerini bulmalıyım ki sonra o reyting vektörlerinden yola çıkaraktan şuradaki A'nın unknown değerlerini tahmin edebileyim.
+
+365
+01:31:20,584 --> 01:31:32,224
+Şimdi bu durumda benim şuna ihtiyacım var. Ben bir tane reyting bir kullanıcının reyting vektörüyle bir başka kullanıcının reyting vektörü arasındaki benzerliği nasıl hesaplayabilirim?
+
+366
+01:31:32,435 --> 01:31:58,615
+Yani bana bir tane benzerlik metri lazım. İki tane rating vektörü arasındaki benzerliği veren bir rating vektörü lazım. Ve öyle bir benzerlik metri olmalı ki şunu yakalayabilmeliyim. Mesela şuradaki A kullanıcısına bakın. Bu kullanıcı Harry Potter 1 ile Twilight'ı sevmiş. Ama Star Wars 1'i sevmemiş.
+
+367
+01:31:59,475 --> 01:32:21,095
+Tamam. Şimdi ikinci kullanıcıya bakalım. İkinci kullanıcı da Harry Potter 1'i sevmiş. Ama Twilight ve Star Wars'la ilgili hiçbir şeyi yok. Yani ben buradan yola çıkaraktan birinci kullanıcı ve ikinci kullanıcının benzerliğinin büyük çıkması gerektiğini düşünüyorum.
+
+368
+01:32:22,036 --> 01:32:41,476
+Şimdi birinci kullanıcı ile üçüncü kullanıcıya bakalım. Birinci kullanıcı ile üçüncü kullanıcı iki tane ortak film seyretmiş. Twilight Zone bir de Star Wars 1. Ve ikisi de birbirinin tam zıttı değerler vermiş. Birisinin sevdiğini birisi sevmemiş, birisinin beğenmediğini diğerisi beğenmiş.
+
+369
+01:32:42,036 --> 01:33:04,376
+Bu durumda bu iki tane arkadaşın benzerliğinin de düşük olmasını beklerim. Yani buradaki A ile B'nin benzerliğinin yüksek, aynı derecede A ile C'nin benzerliğinin de düşük olması gerektiğini düşünüyorum. Hatta bunun bu değerden çok düşük olması gerektiğini düşünüyorum.
+
+370
+01:33:05,011 --> 01:33:15,771
+Şimdi benim kullanacağım similarity metriğinin de benim bu gözle yapmış olduğum tespiti desteklemesi gerekiyor. Bakalım yapabilecek miyiz?
+
+371
+01:33:16,771 --> 01:33:24,252
+Şimdi öncelikle Jakart similarity'i biz daha önce öğrenmiştik. Jakart similarity metriğini.
+
+372
+01:33:24,655 --> 01:33:45,315
+Onu kullanarak ilerleyelim. Jacquard similarity ne diyordu? İki tane eğer vektör varsa bu vektörün içerisindeki kesişen elemanların sayısı bölü bu iki vektörün elemanlarının unionına böldüğün vakit sana bu ikisi arasındaki similarity'yi verir.
+
+373
+01:33:45,684 --> 01:34:11,664
+Buradan yola çıkarak A ile B arasındaki similarity'e bakalım. İkisinin kesişen A ile B ortak olarak kaç tane film seyretmiş? Bir tane, bir. Ondan sonra A ile B'nin totalde birlikte seyretmiş oldukları film sayısı nedir? Bir, iki, üç, dört ve beş tane. Her ikisi birlikte totalde beş film seyretmişler. Bir bölü beş.
+
+374
+01:34:12,595 --> 01:34:31,036
+Şimdi bir de şeye bakalım, A ile C'ye bakalım. A ile C'ye kaç tane ortak film seyretmiş? İki. A ile C'ye totalde kaç tane film seyretmişler? Bir, iki, üç, dört, dört. İki bölü dört.
+
+375
+01:34:31,572 --> 01:34:44,692
+Hani bu durumda bu 0.5, bu ise 0.2, A ile C birbirine daha benzer çıktı.
+
+376
+01:34:45,268 --> 01:35:00,548
+Ama bu zaten benim istemediğim bir durum. Yani az önce konuştuk. A ile B'nin birbirine daha yakın olması gerekir. Hatta A ile B'nin A ile C'nin birbirine yakın olduğundan çok daha fazla yakın olması gerekir.
+
+377
+01:35:00,728 --> 01:35:13,128
+Buradan dolayı burada bir problem var. Problem şu ki, Jakart Simility sadece ortak yapılmış şeylere bakıyor. Bu ortak yapılmış şeylere.
+
+378
+01:35:13,268 --> 01:35:20,028
+Bu kişiler ne puan vermiş buna bakmıyor. O yüzden C-Kart similarity'inde metriğini kullanamıyorum.
+
+379
+01:35:21,108 --> 01:35:27,548
+Peki diğer similarity metriğim nedir? Cosine similarity metriği. Bunu deneyelim, bunu kullanmayı deneyelim.
+
+380
+01:35:27,548 --> 01:35:30,528
+Cosine similarity metriğine bakalım.
+
+381
+01:35:32,020 --> 01:35:38,580
+Cosine similarity metriğini kullanaraktan A ile B vektörü arasında ben similarity hesaplayacağım.
+
+382
+01:35:38,680 --> 01:35:44,360
+Şimdi hatırlayın, cosine similarity ne görmek istiyordu? Bir vektör görmek istiyordu.
+
+383
+01:35:44,860 --> 01:35:53,520
+O yüzden şuraya benim bir değerler yazmam lazım. Ben bu empty değerlere sıfır yazmayı tercih ediyorum. Buraları sıfır yazdım.
+
+384
+01:35:54,300 --> 01:35:59,460
+Böylelikle artık elimde değerleri olmuş olan hem A hem B vektörü var.
+
+385
+01:36:00,020 --> 01:36:15,440
+O iki tane vektörü ben cosine similarity fonksiyonuna koyabilirim. Bu durumda A ile B arasındaki similarity değeri 0.38 çıktı. A ile C arasındaki similarity değeri 0.32 çıktı.
+
+386
+01:36:16,360 --> 01:36:23,200
+Okey, bu şu yanlış yazılmış. Similarity AB, AC'den büyük çıktı. Bu benim istediğim bir şeydi.
+
+387
+01:36:23,699 --> 01:36:41,799
+En başta ne demiştik? Yani A ve B birbirine daha yakın. Ama aradaki farka baktığım zaman 0.06 düşük bir fark. Oysa ki A ile C birbirinden tam zıt durumdalar ve A ve B birbirine ise çok çok yakın durumdalar.
+
+388
+01:36:42,484 --> 01:37:02,104
+Dolayısıyla benim burada kullanmış olduğum cosine similarity de tamam istediğim tipteki benzerliği yakaladı ama halen şeyi yakalamadı. Aralarındaki uzaklığın daha yüksek olması gerektiği durumunu yakalayamadı.
+
+389
+01:37:08,212 --> 01:37:17,112
+Ben buraya sıfır verdim ya, şuralara sıfır koydum ya, sıfır bir kişinin bir filme verebileceği en düşük reytingdir.
+
+390
+01:37:17,747 --> 01:37:38,887
+Çünkü burada 0 ile 5 arası ya da 1 ile 5 arası star rating veriyorum. En düşük ratingtir. Ben buradaki iki kullanıcıların bu filmleri izlemediği halde bu durumda kullanıcıların buraya sanki negatif rating verdiğini düşünüyorum.
+
+391
+01:37:39,572 --> 01:37:51,192
+Oysa ki böyle bir durum hakkında yargı yapmamam gerekir. Yani bunlara negatif değer verecekleri konusunda şeyim yok. Pozitif değer verecekleri konusunda da bir bilgim yok.
+
+392
+01:37:51,764 --> 01:37:59,463
+Ama şunu yapabilirim, buralara ortalama değer vereceklerdir şeklinde bir varsayım yürütebilirim.
+
+393
+01:37:59,463 --> 01:38:08,783
+Yani bilmiyorum ama hepsi şu izlemedikleri değerleri ortalama değer versin gibisinden bir varsayım yapabilirim.
+
+394
+01:38:12,148 --> 01:38:38,148
+Peki, bu varsayımı nasıl gerçekleyeceğim? Bu durumda şunu yapmaya çalışıyorum. Her kullanıcı için bu kullanıcıların yapmış oldukları, vermiş oldukları reytinglerin ortalamasını buluyorum ve bu arkadaşlardan bu ortalamayı çıkartıyorum.
+
+395
+01:38:39,155 --> 01:38:43,935
+Ne yapıyorum? Burada 4, 5, 9, 1 değer de 10. 10 bölü 3.
+
+396
+01:38:44,055 --> 01:38:51,655
+Demek ki A kullanıcısı izlemiş olduğu filmlere 10 bölü 3 bir değer vermiş.
+
+397
+01:38:52,884 --> 01:39:14,963
+Okey? 4'den 10 bölü 3'ü çıkartıyorum, buraya yazıyorum. 5'den 10 bölü 3'ü çıkartıyorum, buraya yazıyorum. 1'den 10 bölü 3'ü çıkartıyorum, buraya yazıyorum. Aynı şekilde her kullanıcı için bunu gerçekleştiriyorum. Mesela burada baktığım vakit.
+
+398
+01:39:16,756 --> 01:39:24,155
+İki tane değer var. Üç ve üç. Bunların ortalaması da üç. Şunlardan çıkartmış oldum. Sıfır sıfır. Okey.
+
+399
+01:39:24,756 --> 01:39:44,956
+Şimdi ben bunu bu şekilde getirmiş olmakla beraber aslında şuradaki sıfırlar vardı ya daha önce sıfır koymuştum. Şimdi burayı sıfır yaptığım zaman şuraları sıfır yaptığım zaman şuralar benim için average değerler olmuş olacak.
+
+400
+01:39:45,279 --> 01:40:03,279
+Yani kullanıcının daha henüz izlememiş olduğu değerler için buraya cosine similarity karşılaştırmasına gittiğim vakit buraya sıfır koyduğum zaman sanki kullanıcı bunlara ortalama bir değer vermiş gibi bir durum söz konusu olacak.
+
+401
+01:40:04,500 --> 01:40:09,659
+Bir dakika müsaade edin. Laptop'un şarjı bitiyor. Onu şarja takalım.
+
+402
+01:40:20,851 --> 01:40:21,291
+Ok.
+
+403
+01:40:26,739 --> 01:40:44,739
+Bu yapmış olduğumla birlikte ben ne yapmış oldum? Artık bu elimdeki utility matrisi güncellemiş oldum. Güncellediğim değer de her bir kullanıcının...
+
+404
+01:40:45,587 --> 01:41:02,807
+Vermiş olduğu ortalama reyting değerini bu değerlerden çıkartarak her bir kullanıcının vermiş olduğu değerleri bir merkez etrafında normalize ettim.
+
+405
+01:41:03,155 --> 01:41:14,895
+Buraya baktığım mesela, birinci kullanıcı Harry Potter 1'e artı bir değer vermiş, Twilight'e artı bir değer vermiş, Star Wars 1'e eksi bir değer vermiş.
+
+406
+01:41:14,895 --> 01:41:29,895
+Bu yapmış olduğum normalizasyonla ben artık birinci kullanıcının hangi movileri sevdiğini, bunun artı ya da hangisini sevmediğini, bunun artı ya da eksi olmasını takip ederek de görebilirim.
+
+407
+01:41:32,115 --> 01:41:32,536
+Ok?
+
+408
+01:41:33,171 --> 01:41:42,051
+Şimdi bunu yaptıktan sonra, yani kullanıcı bazında bu normalizasyonu yaptıktan sonra artık cosine similarity'i gerçekleyebilirim.
+
+409
+01:41:42,051 --> 01:41:55,831
+Buradaki empty yerlere, boşluk yerlere sıfır yazabilirim ve bu birinci kullanıcı ve ikinci kullanıcı arasındaki cosine similarity değerini bulabilirim.
+
+410
+01:41:55,931 --> 01:42:01,171
+Burada bulmuşum 0.09. Birinci ile üçüncü arasındaki similarity değerini bulabilirim.
+
+411
+01:42:01,171 --> 01:42:03,791
+değerini bulmuşum. Eksi 0.56.
+
+412
+01:42:04,287 --> 01:42:25,327
+Bir önceki örnekte iki tane similarity değeri arasındaki fark 0.06 idi, düşük bir değerdi. Ama burada ise bu değer düşük. 0.064 gibi büyük bir değer bu ikisi arasındaki farklılık.
+
+413
+01:42:32,287 --> 01:42:35,667
+Çok çok daha fazla olduğunu ben burada yakalamış oluyorum.
+
+414
+01:42:36,724 --> 01:43:04,724
+Bu yönteme biz Cosine Centered Similarity diyoruz. Aynı zamanda bazı kitaplarda bu Pearson Correlation Similarity olarak da geçiyor. Bu yöntemle beraber ben özellikle sert değerlendiriciler bir de kolay değerlendiricileri ne yapmış oluyorum? Ortalamaya çekmiş oluyorum. Sert değerlendiriciler hep küçük değerlendiriciler.
+
+415
+01:43:04,724 --> 01:43:16,663
+Ya da kolay değerlendiriciler hep kolay değerler verir. Bunların hepsini ortalamaya önce çekip ondan sonra bunların similarity değerine bakmış oluyorum arkadaşlar.
+
+416
+01:43:20,372 --> 01:43:46,892
+Şimdi ben bu benzerlikleri bulduktan sonra bir kullanıcının rating vektörüne benzerlik içeren diğer kullanıcıların rating vektörleriyle Pearson Correlation Metri ile aralarındaki uzaklıkları bulduktan sonra
+
+417
+01:43:48,307 --> 01:43:55,268
+Bu benzer kullanıcıların sayısını bu büyük enle sınırlayacağım.
+
+418
+01:43:55,368 --> 01:44:07,528
+Diyeceğim ki en yakın iki tane benzer kullanıcının değerlerini kullanaraktan X'in rating vektöründeki unknown değerleri bulalım.
+
+419
+01:44:07,528 --> 01:44:10,208
+Bu durumda şunu yapıyorum.
+
+420
+01:44:11,268 --> 01:44:14,528
+X'in, kullanıcı X'in...
+
+421
+01:44:14,560 --> 01:44:37,040
+Annon değeri iyi, ininci değeri hesaplamak istiyorum. Buna en yakın komşuluktaki similarity değerlerini hesapladım ya, en yakın komşu olan en tane kullanıcının rating vektörlerinin
+
+422
+01:44:39,252 --> 01:44:49,164
+Bu ortalamasını al diyorum ama en yakın en tane kullanıcının da mutlaka bu i item'ını...
+
+423
+01:44:49,427 --> 01:45:03,087
+Rating vermiş olmasını istiyorum. En yakın, en tane kullanıcının aynı zamanda i itemına rating vermiş olan kullanıcıların ortalamasını alacağım. Nasıl yapacağım?
+
+424
+01:45:17,427 --> 01:45:28,387
+Ve kullanıcı belirledim. Bu kullanıcılardım da mutlaka E'ye puan vermiş olmasına baktım. Bu ikisinin ortalamasını almış oluyorum. Ortalaması da işte bir bölü K ile çarparak almış oluyorum.
+
+425
+01:45:29,207 --> 01:45:37,728
+Şimdi bu birinci opsiyon. Yani burada şeyi katmamış oldum. Uzaklıkları katmamış oldum.
+
+426
+01:45:38,163 --> 01:45:44,823
+Şimdi bir de uzaklıkları katarak yani ağırlıklandırarak hesaplama yapayım.
+
+427
+01:45:45,403 --> 01:45:53,983
+Şimdi düşünün ki kullanıcı X, bu X'e en yakın olan iki tane başka kullanıcı var.
+
+428
+01:45:54,868 --> 01:46:12,648
+Cosine similarity, Pearson Correlation Similarities'ine göre hesaplama yaptım. Ama bu iki tane kullanıcından bir tanesinin Cosine Similarities'i, Pearson Correlation Similarities'i bu X kullanıcısına çok yakın.
+
+429
+01:46:12,960 --> 01:46:34,519
+Ama diğerisi ise çok uzak. Aynı şuradaki örnekteki gibi. Yani birisi 0.09, diğerisi ise 0.56. Şimdi bu durumda bu iki tane kullanıcının bir item için vermiş olduğu değerlerin ortalamasını almak çok doğru değil.
+
+430
+01:46:37,568 --> 01:46:59,747
+X kullanıcıma daha yakın olan kullanıcının vermiş olduğu reytingi biraz daha fazla ağırlık vermem gerekir. Benim X kullanıcıma daha uzakta duran kullanıcının I itemına vermiş olduğu puanı daha az ağırlıkla hesaba katmış olmam gerekir.
+
+431
+01:47:05,427 --> 01:47:13,408
+X kullanıcısına en yakın olan n tane kullanıcının rating vektörlerini tespit edelim.
+
+432
+01:47:14,163 --> 01:47:22,184
+Bu n tane kullanıcıyı belirlerken de mutlaka bu kullanıcıların bu i itemine puan vermiş olmasını istiyoruz.
+
+433
+01:47:42,163 --> 01:48:00,163
+Olan Pearson Correlation değeriyle bunun vermiş olduğu iItem'ına vermiş olduğu rating değerini çarpalım ve bunların toplamını alalım. Bunu da totaldeki total uzaklık değerine bölelim.
+
+434
+01:48:00,163 --> 01:48:05,243
+Bunu yapacak olursak bize neyi verecektir? Ağırlıklandırılmış bir şekilde.
+
+435
+01:48:05,844 --> 01:48:24,184
+X kullanıcısının I item'ına ne puan vereceğini hesaplamış olacağım. Bunu az sonra bir örnekle göreceğiz. Az sonraki örneğe geçmeden önce bir de item item collaborative filtering'i konuşalım.
+
+436
+01:48:24,184 --> 01:48:32,184
+Şu ana kadar konuştuğumuz user collaborative filtering. Ne demek yani? Bir user'ın...
+
+437
+01:48:33,684 --> 01:48:53,684
+Şuradaki değerlerini, bir user'ın unknown değerlerini bulurken bu user'a benzer olan kullanıcıların bu unknown değerlere vermiş oldukları değerlerden yola çıkaraktan şuradaki unknown değerlerin değerlerini bulmaya çalışıyorduk.
+
+438
+01:48:57,395 --> 01:49:03,076
+Diğer kullanıcıların rating vektörlerini Pearson Correlation kullanaraktan karşılaştırıyorduk.
+
+439
+01:49:03,435 --> 01:49:11,395
+Şimdi bu vektörü şu şekilde düşünün. Burada itemler olsun. Yani filmler burada olsun. Burada da kullanıcılar olsun.
+
+440
+01:49:12,404 --> 01:49:26,384
+Bu durumda aynı formül, aynı yaklaşım sadece bir item'ın rating vektörüyle diğer item'ların rating vektörlerini karşılaştırıyorum.
+
+441
+01:49:26,384 --> 01:49:40,384
+Okey, item'ın rating vektörüyle diğer item'ın rating vektörlerini karşılaştırıyorum. Aynı yaklaşımla en yakın, en tane yakın olan rating vektörü buluyorum. Bu rating vektörlerden
+
+442
+01:49:40,851 --> 01:49:59,832
+Benim tahmin etmek istediğim item için değer vermiş olanların ağırlıklı ortalamasını alıp buraya yazıyorum. Bu aynı formül sadece matristeki görünümü değiştirdim. Aynı formül buna da item, item-based filtering diyorum.
+
+443
+01:50:01,043 --> 01:50:12,903
+Şimdi item item based filtering için bir tane örnek yapalım. Az önce dediğim gibi item item based'de şurada satırlarda mobiler var, kolonlarda ise user'lar var.
+
+444
+01:50:14,543 --> 01:50:26,083
+Şimdi burada sarıyla boyanmış hücreler bunlar bilinen reytingler yani bu kullanıcılar bu filmleri izlemişler ve 1 ile 5 arasında reyting vermişler.
+
+445
+01:50:26,612 --> 01:50:35,432
+Şimdi bizim derdimiz ne? Bu collaborative filtering, item item based, collaborative filtering kullanaraktan şuradaki beyaz değerleri bulmak.
+
+446
+01:50:36,020 --> 01:51:03,360
+Bu beyaz değerleri bulursam elime ne geçecek? Mesela diyelim ki 5 numaralı kullanıcıya film önerisini de yapacağım. Bu durumda iki tane bu kişinin izlemediği film var. Bunlardan hangisini önereyim diye gittiğim zaman hangi değer daha yüksek çıkmışsa yani bu kullanıcı eğer bu filmi izlemiş olsaydı şu değeri verirdi tahmini yapacağım ya bu item-item-based collaborative filtering'i kullanarak.
+
+447
+01:51:04,020 --> 01:51:08,659
+Bulursam, buradan yola çıkaraktan 5 nolluk kullanıcıya öneri yapabileceğim.
+
+448
+01:51:09,380 --> 01:51:19,780
+Şimdi bunu yaparken de Item Item Based Collaborative Filtering'de en yakın komşu sayısını da 2 olarak belirliyorum. Şimdi başlayalım.
+
+449
+01:51:20,435 --> 01:51:40,295
+Şimdi buradaki örnekte Beşnoğlu çok sayıda beyaz nokta var. Ben bunlardan bir tanesini seçtim. Bu bir tanesinin hesabını nasıl yaptığımızı göstereceğim. Nasıl ki bunu yapıyoruz, nasıl hesaplayacağız? Aynı şeyi diğer bütün beyaz noktalar içinde yapıyoruz.
+
+450
+01:51:48,243 --> 01:52:05,023
+En yakın olan diğer item rating vektörlerini benim tespit etmem lazım. Bunların içerisinden en yakın iki tanesini seçeceğim ama en yakın iki tanesini seçerken mesela şunu seçmeyeceğim. İkin olayı seçmeyeceğim.
+
+451
+01:52:05,023 --> 01:52:15,463
+Çünkü bu item'a mutlaka puan vermiş olanlar arasından seçim yapmam gerekiyor. Şimdi bakalım.
+
+452
+01:52:16,916 --> 01:52:26,604
+Öncelikle ne yaptım? Buradaki her bir satır için Pearson Correlation metriğini bulabilmek için...
+
+453
+01:52:26,771 --> 01:52:54,412
+Her bir satırın ortalamasını buldum. Şuradaki satır için mesela ortalama 3.6 çıkmış. Ondan sonra bu ortalamayı buradaki satırdaki değerlerden çıkarttım. Birinci satır için sadece örneği gösteriyorum. Birinci satırda bir yerine eksi 2.6. Buraya zaten dokunmuyorum. 3'ten çıkarmışım. Eksi 0.6. Yani şuradaki değerleri ne yaptım?
+
+454
+01:52:54,771 --> 01:52:56,472
+Normalize ettim.
+
+455
+01:52:57,268 --> 01:53:08,807
+Nasıl bunu yaptım? Bu item için verilmiş ortalama reytingi buradaki değerlerden çıkartarak yaptım ve bunu bütün satırlar için yaptım.
+
+456
+01:53:08,807 --> 01:53:22,747
+Bunu yaptıktan sonra her bir item'ın rating vektörü, birinci item'ı hesaplamak istediğim için birinci item'ın rating vektörüyle diğer bütün item vektörlerinin
+
+457
+01:53:22,899 --> 01:53:25,599
+Şimdi cosine similaritiesine baktım.
+
+458
+01:53:27,039 --> 01:53:31,899
+Cosine similarities zaten birincisi kendisiyle karşılaştığım için doğal olarak bir olacak.
+
+459
+01:53:32,399 --> 01:53:35,919
+İkinciyle, üçle, dörtle, beşle, altı ile karşılaştırdım.
+
+460
+01:53:39,539 --> 01:54:02,440
+Bire en yakın olan iki taneyi seçmem lazım. En yakın olan iki tane ve aynı zamanda bu puan vermiş olan yani reyting içinde reyting olmuş olan en yakın iki tane 3 nolu bir de 6 nolu item olmuş oldu.
+
+461
+01:54:02,804 --> 01:54:12,844
+Şimdi bunu bulduktan sonra bu sefer artık geriye ne kalıyor? Bu ikisini kullanaraktan şuradaki soru işaretini hesaplamak.
+
+462
+01:54:19,123 --> 01:54:37,103
+Birnoğlu ürünün rating vektörüne yakınlıklarına bakarak ağırlıklandırılmış bir şekilde hesaplama yapıyorum. Bu durumda ne yapıyorum? Öncelikle bu arkadaşın buraya olan uzaklığı 0.41, bu arkadaşın buraya olan uzaklığı 0.59 bunları hesaplamıştım.
+
+463
+01:54:37,876 --> 01:55:02,296
+Şimdi bu arkadaşın user'ın 3 nolu ürüne vermiş olduğu puan 2 idi. 2 ile 0.41'i çarptım. Neydi? 0.41, 1 ile 3'ün arasındaki uzaklıktı. User 5'in 6 nolu ürüne vermiş olduğu puan 3. 3 ile 0.59'u çarptım. 0.59 neydi? 1 ile 6 vektörü arasındaki uzaklıktı.
+
+464
+01:55:03,956 --> 01:55:13,015
+Buradaki uzaklıkların toplamı 1 ile 3'ün arasındaki uzaklık 0.41'di, 1 ile 6'nın arasındaki uzaklık 0.59'du.
+
+465
+01:55:13,344 --> 01:55:26,724
+Ve nihayetinde ne buldum? 2.6. Yani ağırlıklandırılmış bir şekilde user'ın 3 ve 6 nolu ürünlere vermiş olduğu puanlardan yola çıkarak acaba biri ne puan verir diye bulmuş oldum.
+
+466
+01:55:26,724 --> 01:55:41,344
+Şimdi artık benim burada eğer 5 nolu user 1 nolu movie izleyecek olursa 2.6 puanla sevecektir diye bir tane tahminim.
+
+467
+01:55:41,344 --> 01:56:01,023
+Ne yapacağım? Bütün bu beyaz noktalar için bu hesaplamayı yapacağım ve bu hesaplamayı yaptıktan sonra artık bir daha 5 nolu user geldiği zaman şuradaki beyaz yerlerde puanlarım olduğu için hangi değer yüksekse o filmi bu kullanıcıya önerebileceğim.
+
+468
+01:56:09,587 --> 01:56:13,207
+Ne yapmış oldum? Bir kullanıcıya öneri yapmış oldum.
+
+469
+01:56:14,167 --> 01:56:22,067
+Şimdi aslına baktığınız vakit Collaborative Filtering, iki tane şey dedik. Bir tanesi User User, diğerisi Item Item.
+
+470
+01:56:22,067 --> 01:56:25,996
+Aslında bu sadece matrisin matristeki...
+
+471
+01:56:26,644 --> 01:56:40,783
+Kolonları satır yaptım. Formüller değişmedi. Buradan her ikisinin de benzer sonuçlar vereceğini düşünebilirsiniz. Ama pratikte item, item-based, collaborative filtering daha güzel sonuçlar veriyor.
+
+472
+01:56:41,171 --> 01:57:02,951
+Bunun sebebi de şu, şimdi insanlar kompleks, itemlara göre çok daha kompleks. Yani iki insanın benzerliklerine bakıp oradan yola çıkaraktan bu kişi şu filmleri izlemiş, diğerleri de bu filmleri izlemiş.
+
+473
+01:57:02,951 --> 01:57:09,171
+Dolayısıyla bu kişiye şu öneriyi yapabilirim gibisinden öneriyi yapmak her zaman işlem.
+
+474
+01:57:09,171 --> 01:57:14,171
+Çünkü heavy metal seven bir kişi...
+
+475
+01:57:15,060 --> 01:57:34,039
+Klasik müzik de sevebiliyor. Yani insanların beğenileri ve ilgi alanları büyük bir spektrum içeriyor. Ama itemlerin ise birbirine benzerlikleri daha iyi tanımlanabiliyor.
+
+476
+01:57:40,319 --> 01:57:59,399
+User-based collaborative filtering'e göre daha başarılı sonuçlar verdiği kanıtlanmış. Dolayısıyla da collaborative filtering yöntemini kullanırken item-based collaborative filtering yöntemini tercih etmeyi öneriyoruz.
+
+477
+01:58:03,315 --> 01:58:03,635
+Ok?
+
+478
+01:58:07,315 --> 01:58:08,295
+Tamam.
+
+479
+01:58:13,492 --> 01:58:40,812
+Arkadaşlar, ben burada duracağım. Bugünlük bu kadar yeter. Bugün de Recommender Systems chapter'ını konuşmuş olduk. Hem Content Base hem de Collaborative Filtering chapter'ını konuşmuş olduk. Gelecek hafta Clustering konusunu konuşacak, konuşmayı planlıyorum. Ondan sonra dersle ilgili içerikleri tamamlayacağım.
+
+480
+01:58:41,492 --> 01:58:55,312
+Ondan sonra geriye kalan şey sizle bir toplantımız daha olacak. O da dönemin son haftası. O toplantıda da sizlerle dönem projelerinizi değerlendiriyor olacağız.
+
+481
+01:58:57,872 --> 01:58:59,412
+Sorusu olan var mıdır bana?
+
+482
+01:59:04,692 --> 01:59:11,112
+Yok sanırım. Tamam. Katılımınız için teşekkür ederim. Arkadaşlar, iyi akşamlar diliyorum.
+
+483
+01:59:12,192 --> 01:59:12,752
+İyi akşamlar.
+
+484
+01:59:14,812 --> 01:59:16,492
+Bir sonraki ders görüşmek üzere.

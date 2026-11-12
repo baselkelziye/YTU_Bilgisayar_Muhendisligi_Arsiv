@@ -1,0 +1,1267 @@
+1
+00:08:29,235 --> 00:08:33,836
+Arkadaşlar, merhaba. Sesimi geliyor mu? Teyit eder misiniz?
+
+2
+00:08:35,696 --> 00:08:36,635
+Geliyor hocam.
+
+3
+00:08:36,915 --> 00:08:37,436
+Merhaba hocam.
+
+4
+00:08:37,495 --> 00:08:38,056
+Geliyor hocam.
+
+5
+00:08:39,535 --> 00:08:40,535
+Herkese merhaba.
+
+6
+00:08:44,596 --> 00:09:02,855
+Bu ders kısa da bayağı kalabalık olacağız. 85 kişi dersi kayıt yaptırmış. Umarım 85 kişi olarak kalır. Bu dönem ekleme çıkarma haftasının olduğu dönem.
+
+7
+00:09:02,855 --> 00:09:11,956
+Bu yüzden bugün sizlere bu ders kapsamında neler göreceksiniz? Sizlerden benim beklentim ne olacak?
+
+8
+00:09:12,947 --> 00:09:18,467
+Sizlerin benden bekleyecekleriniz ne olacak? Bunları anlatmak istiyorum.
+
+9
+00:09:20,627 --> 00:09:29,268
+Right from the start, I want to switch to English and I want to tell you that I will cover this course entirely in English.
+
+10
+00:09:30,487 --> 00:09:38,827
+So if you have any problems with this, you should let me know in advance.
+
+11
+00:09:40,755 --> 00:09:56,275
+Now, this course is a selective course. It's a fourth year selective course, Big Data Processing and Analysis, BLM 4120.
+
+12
+00:09:56,836 --> 00:10:03,555
+For those who are attending right now, you should double check that you are in the right course.
+
+13
+00:10:04,851 --> 00:10:13,491
+Okay, those students who do not know me, my name is Mehmet Aktaş. I'm an associate professor in the department.
+
+14
+00:10:16,011 --> 00:10:25,731
+Now, in this course, obviously, we are going to learn how we can store, manage, and process large-scale data.
+
+15
+00:10:26,323 --> 00:10:32,183
+And we are going to learn how we can analyze large scale data and we can extract information.
+
+16
+00:10:32,723 --> 00:10:39,223
+Okay, we are going to learn algorithms that can analyze the large scale data.
+
+17
+00:10:40,144 --> 00:10:50,024
+So when we talk about large scale data or big data, we are talking about the amount of data that cannot fit in on one single machine.
+
+18
+00:10:50,024 --> 00:10:50,783
+Okay.
+
+19
+00:10:51,412 --> 00:11:14,124
+Bu dağız, hizmetiklerle ilgili birçok
+
+20
+00:11:15,347 --> 00:11:27,347
+Now, in this course, there will be a midterm exam and it will be on the eighth week, so which is April 28th.
+
+21
+00:11:28,127 --> 00:11:36,767
+This date, so I believe it is on the April 28th of this year.
+
+22
+00:11:37,268 --> 00:11:48,548
+But the date might be changed by the department, so the exact date, so you will have to wait for the announcements.
+
+23
+00:11:49,548 --> 00:11:59,504
+Now, if you have an excuse not to attend the midterm, there will be a make-up midterm exam, which is on the last day of the...
+
+24
+00:11:59,504 --> 00:12:03,264
+Bu da sonunda, on the last day of the class,
+
+25
+00:12:03,264 --> 00:12:05,063
+I will not cover any lecture.
+
+26
+00:12:06,344 --> 00:12:09,024
+There will be a midterm makeup exam.
+
+27
+00:12:10,663 --> 00:12:12,663
+And so obviously,
+
+28
+00:12:13,884 --> 00:12:17,964
+there is a final exam,
+
+29
+00:12:18,324 --> 00:12:24,884
+so which is 40% of your cumulative grade.
+
+30
+00:12:25,716 --> 00:12:28,716
+ve aile bir term project
+
+31
+00:12:28,716 --> 00:12:31,716
+ve ailemde kuruluşu
+
+32
+00:12:31,716 --> 00:12:34,716
+gibi bir midterm
+
+33
+00:12:34,716 --> 00:12:37,716
+30%.
+
+34
+00:12:37,716 --> 00:12:40,716
+Ve
+
+35
+00:12:40,716 --> 00:12:41,716
+term project,
+
+36
+00:12:41,716 --> 00:12:44,716
+bir
+
+37
+00:12:44,716 --> 00:12:47,716
+veya iki
+
+38
+00:12:47,716 --> 00:12:48,716
+student
+
+39
+00:12:48,716 --> 00:12:49,716
+bir
+
+40
+00:12:49,716 --> 00:12:51,716
+sorun.
+
+41
+00:12:53,235 --> 00:13:01,135
+And so what I will do is that I will give you a framework for the term project in this course.
+
+42
+00:13:01,635 --> 00:13:15,255
+And I will ask you to write a project proposal which follows this framework and write me a project proposal of one page.
+
+43
+00:13:16,788 --> 00:13:30,688
+And later explain to me what are your goals for this project. But I will tell you what kind of conditions that this project should include.
+
+44
+00:13:32,179 --> 00:13:38,679
+And I will expect your project proposals at the week number four.
+
+45
+00:13:39,319 --> 00:13:47,000
+So which means that four weeks from today, I will expect you to submit a project proposal to me.
+
+46
+00:13:47,559 --> 00:13:55,599
+And later, I will ask you to explain to me, each group, what you are going to do in the project.
+
+47
+00:13:57,556 --> 00:14:24,556
+And obviously for the project there will be a due date. And so last year the due date for the projects was the last week of the semester. On the same date that I'm doing the makeup midterm exam, I'm also doing the project evaluations. Okay. So each group will be presenting their project online and explain to me how they...
+
+48
+00:14:24,991 --> 00:14:27,991
+ve bu programlar için, bu programlar için,
+
+49
+00:14:27,991 --> 00:14:30,991
+ve bu programlar için, etk.
+
+50
+00:14:30,991 --> 00:14:33,991
+Bu, bu programlar için,
+
+51
+00:14:33,991 --> 00:14:37,991
+bu programlar için,
+
+52
+00:14:39,923 --> 00:15:00,503
+Obviously, there is a regulation. Your progress during the semester, your cumulative grade during the semester has to be above 40. For example, if you're the term project and you're midterm,
+
+53
+00:15:00,912 --> 00:15:09,772
+Bu kadar da 40 puan noktası için, bu kadar da 40 puan noktası için,
+
+54
+00:15:09,772 --> 00:15:11,412
+bu kadar da 40 puan noktası için,
+
+55
+00:15:11,412 --> 00:15:14,812
+bu kadar da bir kere kadar da geçen bir kere kadar.
+
+56
+00:15:14,812 --> 00:15:16,512
+Bu kadar da, bu kadar da.
+
+57
+00:15:16,512 --> 00:15:19,612
+Bu, bu kadar da, bu kadar da,
+
+58
+00:15:19,612 --> 00:15:21,912
+bu kadar da, bu kadar da,
+
+59
+00:15:21,912 --> 00:15:24,912
+ve bu kere kadar da,
+
+60
+00:15:24,912 --> 00:15:25,708
+tamamen?
+
+61
+00:15:31,379 --> 00:15:33,379
+I'm going to switch the screen now.
+
+62
+00:15:41,620 --> 00:15:42,079
+Okay.
+
+63
+00:15:44,799 --> 00:15:47,639
+Now, this course has a website.
+
+64
+00:15:48,779 --> 00:16:01,840
+What I'm going to do now, I'm going to share the URL for this website through ZoomChat so that you can all have this link.
+
+65
+00:16:04,220 --> 00:16:04,980
+Okay.
+
+66
+00:16:05,779 --> 00:16:15,039
+Now, this is the link that you can use in order to access the class announcements. All the class announcements will be published here.
+
+67
+00:16:15,443 --> 00:16:21,823
+Okay, and you are responsible for checking the announcements before you come to the class.
+
+68
+00:16:22,503 --> 00:16:28,663
+Okay, there may be some teaching materials that I will share with you that you should read,
+
+69
+00:16:29,223 --> 00:16:35,563
+or there may be some information related with the term project that you should know about.
+
+70
+00:16:36,083 --> 00:16:41,923
+So therefore, it is your responsibility to check the announcements on the website.
+
+71
+00:16:42,707 --> 00:16:43,147
+Ok?
+
+72
+00:16:47,796 --> 00:17:08,855
+The syllabus for the course is also published on the website. You can read the description of the course. And obviously, I will be using a set of textbooks in order to explain to you big data, in order to teach you big data processing and analysis.
+
+73
+00:17:10,740 --> 00:17:35,859
+And the course will be on Thursdays. So it will start at 5 o'clock in the late afternoon. Okay. My plan is to conduct the lecture in two sessions. So I will do 15 minutes. Each session will be 15 minutes. I will give a break for 10 minutes and then I will continue the second session.
+
+74
+00:17:37,779 --> 00:17:52,799
+Based on my experiences in the previous years, so two sessions each with 15 minutes is good enough to cover all the materials for me to teach.
+
+75
+00:17:53,719 --> 00:18:04,500
+The course will be online, so you see that before the pandemic, so we were teaching this course at this class, but now it's online.
+
+76
+00:18:05,907 --> 00:18:19,907
+Now, you see there are different topics that you see here and all the topics that I am listing here is from a particular textbook which is called Mining of Massive Datasets.
+
+77
+00:18:19,907 --> 00:18:24,268
+So, which means that I will strictly follow a textbook in this course.
+
+78
+00:18:24,788 --> 00:18:28,427
+And I will cover each of the chapter of these textbooks.
+
+79
+00:18:29,208 --> 00:18:29,347
+Okay.
+
+80
+00:18:29,347 --> 00:18:45,467
+So in order for you to be successful in this course, I strongly recommend you to read each chapter even before I cover the lecture or after I cover the lecture.
+
+81
+00:18:45,807 --> 00:18:46,107
+Okay.
+
+82
+00:18:48,019 --> 00:18:54,480
+And here you see that, so you see the grading policy here as well.
+
+83
+00:18:56,420 --> 00:19:05,219
+Now, all the documents that I'm going to cover in this course, you can access all the slides here.
+
+84
+00:19:06,819 --> 00:19:12,039
+Okay, all the slides that I am going to be teaching, you can find these slides here.
+
+85
+00:19:13,203 --> 00:19:19,983
+And also, you can find these slides on the website of the textbook that I am covering.
+
+86
+00:19:20,203 --> 00:19:25,423
+Again, I am covering the Mining of Massive Datasets book.
+
+87
+00:19:26,523 --> 00:19:34,923
+And this book has all the PDF chapters available for you to download.
+
+88
+00:19:36,468 --> 00:19:48,988
+In addition, the slides that I am covering in the lecture, they are also available in both PDF format and PowerPoint format.
+
+89
+00:19:50,448 --> 00:19:56,568
+Obviously, the version that I'm covering is different than the versions that are available here.
+
+90
+00:19:56,568 --> 00:19:59,988
+So you should follow the version that I have.
+
+91
+00:20:00,147 --> 00:20:07,147
+ve bu
+
+92
+00:20:07,147 --> 00:20:22,475
+bu
+
+93
+00:20:23,731 --> 00:20:27,051
+Now, in addition to that, you can also find videos.
+
+94
+00:20:27,551 --> 00:20:35,911
+And these are the videos that are covered by the authors of the Mining of Massive Datasets.
+
+95
+00:20:35,911 --> 00:20:45,112
+So you can also listen to the video lectures on YouTube in order to better understand what each chapter is talking about.
+
+96
+00:20:45,652 --> 00:20:45,771
+Okay.
+
+97
+00:20:46,152 --> 00:20:49,251
+Now, my lectures will also be online.
+
+98
+00:20:49,779 --> 00:20:54,000
+Online.yieldis.edu.tr.
+
+99
+00:20:54,720 --> 00:21:06,599
+But I don't know when exactly the videos for each of the lectures will be published because it doesn't depend on me.
+
+100
+00:21:06,599 --> 00:21:13,759
+It all is done by the university IT department.
+
+101
+00:21:17,523 --> 00:21:28,884
+As you see, all the chapters that I listed on the syllabus, you can find that these chapters are coming from the book.
+
+102
+00:21:28,884 --> 00:21:43,423
+And I will try to follow the chapters in a sequence, but sometimes I might jump some of the chapters and I might cover later in the class, depending on the flow of the course.
+
+103
+00:21:44,423 --> 00:21:44,623
+Okay.
+
+104
+00:21:47,347 --> 00:21:49,347
+Now, so we...
+
+105
+00:21:50,016 --> 00:21:58,576
+And this course is also being taught in Stanford University Computer Science Department.
+
+106
+00:21:58,576 --> 00:22:06,216
+So therefore, I'm trying to cover the same course simultaneously here in Yıldız.
+
+107
+00:22:06,756 --> 00:22:14,836
+And the same course is being also taught in Stanford under this title.
+
+108
+00:22:15,476 --> 00:22:15,615
+Okay.
+
+109
+00:22:16,435 --> 00:22:26,955
+My plan is to cover as many chapters as possible during the semester, depending on the permitted time.
+
+110
+00:22:27,508 --> 00:22:35,728
+As you know, we have 19 Mayıs and also Ramazan Bayramı.
+
+111
+00:22:35,728 --> 00:22:44,367
+So therefore, to my knowledge, two weeks we won't be able to cover the lecture.
+
+112
+00:22:44,628 --> 00:22:53,748
+So what I'm going to do, I'm going to either do a makeup class in order to cover the content that I plan on covering.
+
+113
+00:22:54,192 --> 00:23:18,032
+On another day or one of the days, one of the upcoming Thursday nights. So I will extend the lecture time so that I can cover the materials that I was supposed to cover on those two weeks that we won't have classes.
+
+114
+00:23:20,132 --> 00:23:20,971
+Okay.
+
+115
+00:23:21,375 --> 00:23:33,735
+Here, I'm going to copy and paste the address of the book as well so that you can access it on Zoom chat.
+
+116
+00:23:35,875 --> 00:23:36,836
+Okay.
+
+117
+00:23:49,140 --> 00:24:06,400
+Now, for today, what I'm going to do, I'm going to basically just do a brief introduction into the course for those students who are not sure whether or not to take this course, because this week is the Add and Drop week.
+
+118
+00:24:06,804 --> 00:24:22,364
+So, therefore, if you are not into this course, if you are not interested in this topic, but somehow you registered to this course, so you can understand what kind of topics that will be covered in this course.
+
+119
+00:24:22,836 --> 00:24:33,155
+So if that is the case, I kindly recommend you to drop the course so that other students who want to register the course can do that.
+
+120
+00:24:33,155 --> 00:24:39,115
+So we are already 85 students and this is a high number for an elective course.
+
+121
+00:24:41,436 --> 00:24:42,076
+Okay.
+
+122
+00:24:42,579 --> 00:24:56,519
+And one additional thing that I want to ask you is that if you have any questions related to the content of the course, I kindly ask you to ask questions.
+
+123
+00:24:56,519 --> 00:25:05,659
+Okay. Now, so one thing with the online education is that since I don't see you physically,
+
+124
+00:25:06,096 --> 00:25:14,996
+There is no way for me to understand whether or not you are following the course, whether you understand the concepts that I'm teaching you.
+
+125
+00:25:15,536 --> 00:25:24,036
+Okay, so therefore, if you follow the course and if there is something that you don't understand, feel free to ask.
+
+126
+00:25:24,175 --> 00:25:32,315
+You can either open your microphone and turn on your microphone and ask your question or you can write it on Zoom chat.
+
+127
+00:25:32,672 --> 00:25:39,652
+You can send me e-mails. Do whatever you can in order to access me and ask your questions.
+
+128
+00:25:39,652 --> 00:25:45,832
+If you do not ask your questions, then you will not remember it later.
+
+129
+00:25:46,072 --> 00:25:51,952
+And if you encounter that problem in the exam, then it will be way too late.
+
+130
+00:25:52,372 --> 00:26:00,672
+So this is your chance for you to ask questions to the professor of the course.
+
+131
+00:26:00,672 --> 00:26:07,711
+Now, so let's go back to the course introduction.
+
+132
+00:26:08,692 --> 00:26:15,932
+Now, why do you need to learn about big data processing and analysis?
+
+133
+00:26:16,632 --> 00:26:21,572
+First off, you can see examples of big data in different domains.
+
+134
+00:26:21,572 --> 00:26:22,252
+Okay.
+
+135
+00:26:22,932 --> 00:26:29,852
+Even though you have not seen hands-on large-scale data or big data,
+
+136
+00:26:30,387 --> 00:26:45,907
+At least you are aware of different sectors or different areas where you know that the data is accumulating and then you also know that they might have a big data problem.
+
+137
+00:26:46,447 --> 00:26:53,207
+Now here there are different examples of big data in different sectors.
+
+138
+00:26:54,387 --> 00:27:04,827
+Okay, these data might come from the customers or these data might be produced by the companies by themselves.
+
+139
+00:27:05,488 --> 00:27:16,587
+But as a result, all this big data needs to be analyzed, processed and analyzed in order to extract useful information from them.
+
+140
+00:27:19,107 --> 00:27:21,488
+Okay, now.
+
+141
+00:27:22,003 --> 00:27:34,503
+Obviously, if you know the ways to extract important information from data, that's valuable because it contains the knowledge.
+
+142
+00:27:35,324 --> 00:27:43,443
+But if the data is way too big, then you need to know the ways how to extract this knowledge.
+
+143
+00:27:43,443 --> 00:27:47,864
+You need to know the ways to process and analyze this data.
+
+144
+00:27:50,579 --> 00:27:56,359
+And now in this course, we are going to focus on how to extract the knowledge.
+
+145
+00:27:57,920 --> 00:28:01,299
+So where the data is large scale.
+
+146
+00:28:01,299 --> 00:28:15,259
+So when I say large scale, you should understand that we are talking about the data, amount of data that cannot fit on one single storage or that cannot fit into one single physical memory.
+
+147
+00:28:15,731 --> 00:28:31,031
+If the data is large scale, this means that that data needs to be stored on multiple nodes where the pieces of the data is scattered through a number of different computers.
+
+148
+00:28:31,955 --> 00:28:48,515
+Now, we are going to learn how we can store such data. We are going to learn how we can manage such data. And also, we are going to learn the algorithms, big data processing algorithms that can analyze this data.
+
+149
+00:28:49,011 --> 00:29:03,391
+Okay, so therefore all the algorithms that we are going to learn in this course is different than other algorithms that you have seen so far in other courses because these algorithms are designed to process large scale data.
+
+150
+00:29:03,391 --> 00:29:11,731
+Okay, our focus will be on how to process the large scale data. So therefore our problems.
+
+151
+00:29:12,192 --> 00:29:19,752
+will be mostly about the problems that comes when the data is large scale.
+
+152
+00:29:21,432 --> 00:29:22,772
+Okay, now.
+
+153
+00:29:23,183 --> 00:29:44,043
+The algorithms, obviously, that we are going to use on large-scale data should have a purpose, okay? And the purpose is, in this particular case, is the data science or predicted analysis. So what we are going to do, we are going to do data mining on the large-scale data, okay?
+
+154
+00:29:51,355 --> 00:29:58,355
+bu
+
+155
+00:29:51,183 --> 00:29:55,144
+algoritmas that can only process large scale data.
+
+156
+00:29:57,844 --> 00:30:07,283
+Now, so this picture is a little bit old, but it also tells you the trend.
+
+157
+00:30:07,523 --> 00:30:18,563
+It gives you an idea why data scientist is important and why there is a need for data scientist.
+
+158
+00:30:19,104 --> 00:30:38,364
+And obviously, over the years, as the data accumulates and the number amount of data in different sectors increases, there is also greater need for data scientists that can store, manage and analyze such large scale data.
+
+159
+00:30:38,740 --> 00:30:58,220
+So therefore, this picture shows you that the need or the potential in data science over the years. Obviously, in recent years, the need and the potential only increased.
+
+160
+00:31:00,359 --> 00:31:01,439
+Okay.
+
+161
+00:31:01,971 --> 00:31:20,152
+Now, in this course, what we are going to do, we are going to work on the large-scale data. All the algorithms that we are going to cover will work on the large-scale data. And what we are going to do is discover patterns or discover models.
+
+162
+00:31:46,355 --> 00:31:55,635
+And the patterns and the models that we retrieve from large-scale data, obviously, it should not be obvious.
+
+163
+00:31:56,055 --> 00:32:03,395
+Okay, we should extract something that are not obvious and that can only be extracted from the large-scale data.
+
+164
+00:32:03,395 --> 00:32:12,755
+And also, the results of these algorithms that can discover patterns and models should be understandable.
+
+165
+00:32:14,324 --> 00:32:18,403
+Now, these are the requirements of the algorithms that we are going to talk about.
+
+166
+00:32:20,884 --> 00:32:27,223
+Now, about the algorithms that we are going to talk about, so you can do two things.
+
+167
+00:32:27,344 --> 00:32:31,304
+One is descriptive study. The second one is predictive study.
+
+168
+00:32:32,084 --> 00:32:38,564
+Now, in the descriptive study, what we are going to do, we are going to take a picture of the data.
+
+169
+00:32:38,963 --> 00:33:05,583
+We are going to understand what kind of patterns that exist in the data. An example of such descriptive analysis is clustering analysis. We are going to take a picture of the large-scale data. We are going to apply clustering algorithms, but only those clustering algorithms that can only work on
+
+170
+00:33:05,940 --> 00:33:23,860
+Large-scale data, okay? You may have taken a data mining course from Songil Hoca or information retrieval course from me or a machine learning course from Elif Hoca.
+
+171
+00:33:24,420 --> 00:33:30,940
+So you may have learned some clustering algorithms, obviously, but here we are going to focus on how...
+
+172
+00:33:31,392 --> 00:33:36,372
+The clustering algorithm scale on large scale data.
+
+173
+00:33:37,892 --> 00:33:42,612
+And the second category is the predictive analysis.
+
+174
+00:33:42,892 --> 00:33:51,772
+This time, instead of taking the picture of the existing situation, this time we are going to learn from the data and predict the future.
+
+175
+00:33:51,772 --> 00:33:52,572
+Okay.
+
+176
+00:33:53,971 --> 00:34:02,412
+We are going to learn from the data, create a model, or we are going to learn from data, create a pattern, okay?
+
+177
+00:34:02,412 --> 00:34:06,091
+And then use this model or pattern in order to...
+
+178
+00:34:06,228 --> 00:34:28,228
+Predict the future value of the situation. An example could be recommender systems. So we may, based on the information that we extract from the previous data, we can recommend some items to the end users. Or we can do...
+
+179
+00:34:30,483 --> 00:34:56,364
+Bu da
+
+180
+00:34:58,387 --> 00:34:58,867
+Ok?
+
+181
+00:34:59,539 --> 00:35:25,699
+Now, obviously, when we analyze large-scale data, the patterns that we discover turned out to be meaningless as well, because the data is created autonomously, and there may be some patterns that does not make sense and that are not meaningful.
+
+182
+00:35:25,699 --> 00:35:27,539
+Okay, so we are going to...
+
+183
+00:35:27,539 --> 00:35:32,779
+learn how to analyze the results of these algorithms as well.
+
+184
+00:35:34,699 --> 00:35:35,019
+Okay.
+
+185
+00:35:36,099 --> 00:35:41,659
+And so here is, for example, a nice problem, a nice example,
+
+186
+00:35:42,420 --> 00:35:50,179
+which falls into category of the big data problems.
+
+187
+00:35:50,880 --> 00:35:54,739
+So say you want to find two unrelated people.
+
+188
+00:35:55,135 --> 00:36:12,755
+Who in the past, at least twice stayed at the same hotel on the same day. Okay. Say you want to find these two people who stayed on last 1000 days on the same day at the same hotel. Now.
+
+189
+00:36:13,523 --> 00:36:30,163
+So, take a look at the numbers. So, in this particular problem, there is way too many people to track. Okay, 10 to the power of 9 people. And so, you are going to look back 1,000 days.
+
+190
+00:36:30,771 --> 00:36:37,091
+And obviously, let's say each person stays in a hotel one person time, okay?
+
+191
+00:36:37,431 --> 00:36:41,971
+So which means that one day out of 100, these people are staying at hotels.
+
+192
+00:36:42,452 --> 00:36:52,551
+And obviously, hotels that hold 100 people, so you have 10 to the power of 5 hotels.
+
+193
+00:36:53,112 --> 00:36:58,231
+So that's high number of combinations of two people that you should check, okay?
+
+194
+00:36:58,771 --> 00:37:08,931
+Now you need to check 250,000 different pairs of people to find whether they are suspicious.
+
+195
+00:37:08,931 --> 00:37:09,492
+Okay.
+
+196
+00:37:10,331 --> 00:37:22,431
+So therefore, so these are the kinds of problems that we focus on by using the algorithms that we are going to study in this course.
+
+197
+00:37:26,291 --> 00:37:50,271
+Okay, now, so when dealing with the large scale data, obviously there are different problems. There's a problem how you are going to collect the large scale data, how you are going to pre-process it, how you are going to define it so that it is machine learning ready, how you are going to apply machine learning techniques or deep learning techniques in order to create a model.
+
+198
+00:37:50,708 --> 00:37:54,847
+how you can extract the reason out based on this model.
+
+199
+00:37:55,188 --> 00:37:57,988
+And so if you are able to extract the reason,
+
+200
+00:37:58,108 --> 00:38:00,887
+how you can visualize it so that, you know,
+
+201
+00:38:01,128 --> 00:38:02,807
+everybody can understand it.
+
+202
+00:38:03,188 --> 00:38:03,407
+Okay.
+
+203
+00:38:03,407 --> 00:38:04,228
+Now.
+
+204
+00:38:04,672 --> 00:38:09,971
+So, what are the other aspects of the large-scale data?
+
+205
+00:38:09,971 --> 00:38:13,112
+The data could be in a structured format.
+
+206
+00:38:13,471 --> 00:38:19,072
+It could come in a database, in a relational database.
+
+207
+00:38:19,572 --> 00:38:21,271
+It could have ontologies.
+
+208
+00:38:21,612 --> 00:38:23,952
+It could be semantic web data.
+
+209
+00:38:24,436 --> 00:38:47,136
+It could be a network data. It could be a text-based data. It could be a multimedia data. It could be a signal data. You might have to process the signal data. Now, all these are different formats of the large-scale data that you might have to deal.
+
+210
+00:38:52,436 --> 00:39:06,096
+At the end of the day, you might have filters or converters that would take these different types and convert into a type where you can apply big data and processing frameworks.
+
+211
+00:39:06,096 --> 00:39:11,096
+Okay. Now, I haven't mentioned so far, but...
+
+212
+00:39:12,211 --> 00:39:21,631
+In this course, we are going to use and learn big data processing frameworks such as Hadoop, HDFS, Spark.
+
+213
+00:39:21,631 --> 00:39:33,831
+Now, these frameworks are libraries that can process large-scale data where the data is scattered on multiple nodes.
+
+214
+00:39:35,591 --> 00:39:37,631
+So, therefore, so...
+
+215
+00:39:37,715 --> 00:39:45,115
+So, in your term project, you will use these libraries in order to implement your code.
+
+216
+00:39:45,336 --> 00:39:57,615
+So, therefore, one of the things that you will learn how to use these libraries, how to do coding on these libraries, and how you can process the large-scale data.
+
+217
+00:39:58,615 --> 00:40:00,000
+And obviously...
+
+218
+00:40:00,000 --> 00:40:08,739
+The challenges when you implement an application that can process big data or large scale data.
+
+219
+00:40:09,260 --> 00:40:14,380
+So one of them is scalability. So scalability means ölçeklenebilirlik.
+
+220
+00:40:14,900 --> 00:40:19,239
+So, what happens if you go from one node to many nodes?
+
+221
+00:40:19,739 --> 00:40:19,880
+Okay.
+
+222
+00:40:20,500 --> 00:40:22,460
+And the second one is streaming.
+
+223
+00:40:22,460 --> 00:40:32,020
+Your data might be batch process data, which means that all the data can be on one location.
+
+224
+00:40:32,360 --> 00:40:41,280
+Or your data could be streaming data, which means that your data might come to your application in a streaming way.
+
+225
+00:40:41,820 --> 00:40:41,940
+Okay.
+
+226
+00:40:42,708 --> 00:40:59,127
+And the context of the data, the quality of the data, whether or not your data has anomalies in it, abnormal values in it, and also the usage of this data. All these are challenges that we encounter when we deal with big data.
+
+227
+00:41:02,099 --> 00:41:11,119
+Okay, so where does this course fall when we consider different concepts? Who also deals with the data?
+
+228
+00:41:11,668 --> 00:41:21,088
+For example, there's databases, right? In databases, we have also a large-scale data problem in databases.
+
+229
+00:41:22,088 --> 00:41:28,488
+And so these databases could be relational databases. It could be NoSQL databases.
+
+230
+00:41:28,488 --> 00:41:34,488
+But in databases area, what we do, we have simple queries in order to...
+
+231
+00:41:35,668 --> 00:41:39,927
+extract results that match to these queries.
+
+232
+00:41:40,648 --> 00:41:40,688
+Okay.
+
+233
+00:41:41,507 --> 00:41:54,628
+Now, in machine learning area, usually so far in all the courses that you have covered machine learning, so you had small amount of data, data that can fit into one single machine.
+
+234
+00:41:56,436 --> 00:42:01,876
+And also, the models that you extract from this data are usually complex.
+
+235
+00:42:02,876 --> 00:42:17,096
+So you use maybe random forest model or support vector machine model or naive biocene machine learning model.
+
+236
+00:42:17,596 --> 00:42:22,516
+And these models are rather complex, but they all work on small data.
+
+237
+00:42:23,795 --> 00:42:32,775
+And in theory, obviously, we have algorithms that can run on the large-scale data.
+
+238
+00:42:32,775 --> 00:42:42,775
+And so in big data mining, okay, in large-scale data mining falls into basically...
+
+239
+00:42:44,019 --> 00:42:50,139
+So, it uses the concepts from different areas.
+
+240
+00:42:50,139 --> 00:43:08,699
+So, therefore, in this course, if you have taken machine learning or database systems or algorithms courses before, so you will see that we are going to be using the algorithms and concepts from those areas.
+
+241
+00:43:08,699 --> 00:43:12,019
+But our main focus is how we can extract.
+
+242
+00:43:21,588 --> 00:43:42,847
+Okay. Now, in this particular class, so we will use large-scale data mining, big data mining, that utilizes some of the techniques from statistics, some of the techniques from machine learning, and some of the techniques from the database systems.
+
+243
+00:43:43,280 --> 00:43:57,800
+Okay. And the algorithms that we are going to learn basically utilizes these techniques and all the algorithms are designed in order to process and handle large scale data.
+
+244
+00:44:03,572 --> 00:44:31,572
+Now, what you should expect from me. I already told you what I expect from you. So you have seen. So how I'm going to score your evaluation in this course. And you have seen the kinds of things that I expect from you. Okay. Now you should. So this this here tells you what kind of things that you should learn in this course, what kind of things that you should expect me to teach you. We are going to learn how.
+
+245
+00:44:31,572 --> 00:44:35,572
+bu da farklı bir bilgiler var.
+
+246
+00:44:35,572 --> 00:44:57,572
+Bu da bir bilgiler var.
+
+247
+00:44:57,572 --> 00:44:59,052
+Bu da bilgiler var.
+
+248
+00:44:59,572 --> 00:45:22,352
+Okay. But you will also learn how we are going to process all these data. We are going to utilize MapReduce Programming Model, which allows us to process large-scale data, which are scattered onto multiple machines.
+
+249
+00:45:23,211 --> 00:45:25,352
+We are going to learn how we can...
+
+250
+00:45:42,483 --> 00:45:52,384
+And we are going to learn how to process all this large-scale data even using one machine.
+
+251
+00:45:52,683 --> 00:45:54,983
+So which means that we will learn.
+
+252
+00:46:25,076 --> 00:46:29,856
+And also, we are going to learn all these techniques in order to solve some real world problems.
+
+253
+00:46:29,856 --> 00:46:33,396
+We are going to look at how the recommender systems work.
+
+254
+00:46:34,176 --> 00:46:38,816
+We are going to learn the market basket data analysis problem.
+
+255
+00:46:39,336 --> 00:46:50,436
+But this time, in this problem, the data will be considered as a large scale data where it cannot fit on one single machine's storage.
+
+256
+00:46:52,052 --> 00:46:55,452
+Ve yöntemizde öğrenmek nasıl yapabiliriz?
+
+257
+00:46:56,052 --> 00:47:00,952
+And we are going to learn how we can detect the duplicate documents.
+
+258
+00:47:01,572 --> 00:47:01,732
+Okay.
+
+259
+00:47:01,912 --> 00:47:05,672
+If you want to catch a plagiarism activity.
+
+260
+00:47:06,312 --> 00:47:18,372
+So if you are asked to do software, implement the software that can detect the documents that are similar to each other, we are going to learn how we can do that.
+
+261
+00:47:18,372 --> 00:47:23,492
+But the thing is that this time, the data that we are going to consider.
+
+262
+00:47:24,052 --> 00:47:26,052
+Bu da büyük bir şey.
+
+263
+00:47:28,452 --> 00:47:29,052
+Şimdi,
+
+264
+00:47:29,392 --> 00:47:31,372
+bu da allıcı şey
+
+265
+00:47:31,372 --> 00:47:32,152
+that I have
+
+266
+00:47:32,152 --> 00:47:34,751
+discussed so far.
+
+267
+00:47:35,271 --> 00:47:36,251
+We said that
+
+268
+00:47:37,204 --> 00:47:56,623
+We are going to talk about the high-dimensional data. So this is one type of data. On top of this high-dimensional data, we are going to talk about clustering. And so we are going to talk about the hashing, how we can do the hashing on the high-dimensional data.
+
+269
+00:47:57,139 --> 00:48:07,639
+We are going to talk about graph data and how we can rank such a large scale data when the data is graph data.
+
+270
+00:48:08,779 --> 00:48:14,320
+And given the time, we are going to talk to spam detection on a given data.
+
+271
+00:48:14,804 --> 00:48:29,524
+Okay. And infinite data, the streaming data, we are going to talk about how we can conduct queries on the stream data. Okay. And we are going to talk about how we can filter the incoming data streams. Okay.
+
+272
+00:48:30,068 --> 00:48:39,388
+And we are going to talk about different machine learning approaches that can be applied on the large-scale data.
+
+273
+00:48:39,828 --> 00:48:46,708
+Okay, so how does the machine learning algorithm differ when it applies to large-scale data?
+
+274
+00:48:47,488 --> 00:48:53,228
+And finally, obviously, we are going to do this for different kinds of applications, recommender systems.
+
+275
+00:48:53,711 --> 00:49:04,871
+Association rule-based applications, duplicated document detection-based applications, all that will be included in this course.
+
+276
+00:49:07,059 --> 00:49:21,579
+Now, if you look at, again, the textbook website, so you are going to see different chapters that actually explains what I just summarized to you.
+
+277
+00:49:21,579 --> 00:49:33,079
+And you are going to see that there is a separate chapter for each of the concepts that I just mentioned in the introduction class.
+
+278
+00:49:33,899 --> 00:49:34,019
+Okay.
+
+279
+00:49:34,867 --> 00:49:42,608
+Now, this is the intro to the Big Data Processing and Analysis course.
+
+280
+00:49:43,108 --> 00:49:55,628
+Again, for those who entered the course, who just attended the course lately, again, I'm going to show what I expect you to do in this class.
+
+281
+00:49:56,967 --> 00:49:59,788
+Here it is. Let me go back.
+
+282
+00:50:00,000 --> 00:50:16,240
+To the slide. Again, there will be one midterm exam, which is going to affect 30% of your grade. There will be a term project, which you can do as one member or two member student groups.
+
+283
+00:50:17,523 --> 00:50:33,263
+Okay. And obviously, as I explained to you, you will use big data processing libraries such as Spark or Hadoop and HDFS in order to perform this project.
+
+284
+00:50:33,876 --> 00:50:38,236
+ve bu programı bir programı verirken,
+
+285
+00:50:38,236 --> 00:50:45,656
+ve bu projelerin,
+
+286
+00:50:45,656 --> 00:50:57,836
+bu projelerin,
+
+287
+00:50:58,260 --> 00:51:08,599
+And I will expect you to submit your project proposal at the week four or maybe at the week five. So I will do the announcement later.
+
+288
+00:51:09,539 --> 00:51:24,200
+Now, if you are not able to attend the midterm exam and if you can provide a report in that case, so you will have to submit that obviously not to me, but the department.
+
+289
+00:51:24,755 --> 00:51:36,135
+If the department approves your request, then you will be able to attend the make-up midterm exam, which will be conducted on the last day of the lecture.
+
+290
+00:51:37,596 --> 00:51:45,235
+Okay, now the midterm affects the 30%, the project affects the 30% of your grade.
+
+291
+00:51:45,568 --> 00:51:58,488
+And after you calculate the 30% and add it up, if it turns out that it is lower than the 40 points, then you will fail in the course. You won't be able to attend the final exam.
+
+292
+00:51:58,488 --> 00:52:08,088
+Okay. Now, the condition for you to attend final exam is that your cumulative grade that comes from the semester has to be about 40 points.
+
+293
+00:52:08,868 --> 00:52:09,468
+Okay.
+
+294
+00:52:11,027 --> 00:52:18,228
+And you can see the date for the makeup exam and also for the midterm.
+
+295
+00:52:18,867 --> 00:52:23,347
+And as for the final exam, the date will be announced later.
+
+296
+00:52:24,028 --> 00:52:24,168
+Okay.
+
+297
+00:52:24,407 --> 00:52:27,588
+Now, these are the conditions that I expect from you.
+
+298
+00:52:27,827 --> 00:52:34,307
+And for those who attended the lecture lately, so there is a website for the class.
+
+299
+00:52:34,588 --> 00:52:36,867
+You can see, you can find all the announcements.
+
+300
+00:52:37,208 --> 00:52:41,327
+The syllabus is also on the website and you can find all the documents.
+
+301
+00:52:42,195 --> 00:52:48,775
+ve dağıtık veri işlemiyeni, her zaman bu konularını verenlerlebiliriz.
+
+302
+00:52:48,775 --> 00:52:55,775
+Ve dağılık, her zaman bu konularını verenlerlebiliriz.
+
+303
+00:52:55,775 --> 00:53:03,855
+Bu konularını verenlerlebiliriz.
+
+304
+00:53:04,724 --> 00:53:25,583
+So, you can always ask for time for the office hours. I can meet with you on this timeframe and we can discuss any questions that you have. And you will have to do this on Zoom. Okay? So, therefore, you need to let me know in advance that you want to meet me.
+
+305
+00:53:26,324 --> 00:53:36,564
+And as I explained at the beginning of the lecture, so I will follow the textbook and the textbook has a website. You can find all the PDFs.
+
+306
+00:53:36,864 --> 00:53:40,164
+So, these are the chapters.
+
+307
+00:53:40,724 --> 00:53:44,744
+And also, you can find the slides in both PPT and PDF formats.
+
+308
+00:53:44,944 --> 00:53:54,264
+And all the video lectures that are provided by the authors of the lecture textbook are also here available for you.
+
+309
+00:53:55,824 --> 00:53:56,584
+Okay.
+
+310
+00:53:56,984 --> 00:53:59,084
+So, any questions so far?
+
+311
+00:54:06,547 --> 00:54:08,347
+Evet, sorusu olan var mı arkadaşlar?
+
+312
+00:54:14,452 --> 00:54:25,452
+Tamam, soru yok. Bugünlük bu kadar. Bir derse introduction yaptık, tanıştık. Sizlerden neler beklediğimi anlattım. Dersle ilgili takip etmeniz gereken...
+
+313
+00:54:26,195 --> 00:54:49,795
+Materyalleri sizlerle paylaştım. Eğer derse devam etmeyecekseniz lütfen dersi en kısa zamanda drop edin ki dersi almak isteyen arkadaşlarınız alabilsinler. Bana e-mail atanlar var çünkü. Derse devam edecekseniz hoş geldiniz. Güzel bir dönem olmasını dinlerim. Hem yeni şeyler öğrenelim hem de zevkli bir ders olsun diyorum.
+
+314
+00:54:50,895 --> 00:54:52,556
+Teşekkürler hocam. Gayet açık der şey.
+
+315
+00:54:53,492 --> 00:54:57,391
+Tamam, ben sizlere teşekkür ederim. İyi akşamlar diliyorum.
+
+316
+00:54:58,871 --> 00:54:59,592
+İyi akşamlar.
+
+317
+00:54:59,851 --> 00:55:00,731
+İyi akşamlar hocam.

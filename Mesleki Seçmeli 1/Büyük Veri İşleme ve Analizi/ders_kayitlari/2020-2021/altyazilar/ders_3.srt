@@ -1,0 +1,1575 @@
+1
+00:08:14,579 --> 00:08:15,599
+Arkadaşlar, merhaba.
+
+2
+00:08:19,572 --> 00:08:22,612
+Sesim geliyor mu? Bir teyit eder misiniz lütfen?
+
+3
+00:08:23,091 --> 00:08:23,752
+Geliyor hocam.
+
+4
+00:08:39,604 --> 00:09:00,304
+Evet arkadaşlar, bugün Chapter 2 ile ilgili konuları tamamlamak istiyorum. Chapter 2 ile ilgili konuları tamamladıktan sonra size dönem ödevinizi vereceğim. Bu dönem yapacağınız ödevden bahsedeceğim. Hangi kurallara göre ödevi yapacağız, ödevin içeriği nedir?
+
+5
+00:09:01,683 --> 00:09:16,823
+Bunlardan bahsedeceğim. Zamanın kalmasına dayalı olarak da biraz da Chapter 3'ün 3'te üzerinde çalışacağımız Büyük Veri Problemi'nden biraz bahsedeceğim. Bugünkü dersimizde işleyeceğimiz konular bu şekilde olacak.
+
+6
+00:09:19,823 --> 00:09:21,823
+Dersin sayfasında...
+
+7
+00:09:22,707 --> 00:09:31,028
+Sanıyorum henüz daha dönem projesini yayınlamadım ama bugün konuştuktan sonra onu da yayınlamış olurum.
+
+8
+00:10:15,059 --> 00:10:24,059
+Okay, first I would like to remind you what we covered in the previous lecture. Just a reminder before I go into details of today's topic.
+
+9
+00:10:25,699 --> 00:10:41,139
+In the previous, hold on, okay. Our problem was we wanted to process the distributed data and we wanted to apply the MapReduce programming model.
+
+10
+00:10:41,652 --> 00:10:58,112
+And we said that, so here you say the MapReduce Programming Model takes key value pairs where the key is the ID of the file and the value here is the content of the file.
+
+11
+00:10:58,112 --> 00:11:00,652
+Okay, so remember here.
+
+12
+00:11:01,268 --> 00:11:17,288
+If this is, for example, this is a big document and this is a small component of it, a small chunk of it, and this will be the value and there will be an ID that distinguishes this content.
+
+13
+00:11:17,728 --> 00:11:22,368
+An ID will be the key and the value which is the content will be the value.
+
+14
+00:11:23,731 --> 00:11:30,291
+And the MapReduce Programming Model takes key value pairs in that manner as an input.
+
+15
+00:11:30,291 --> 00:11:36,991
+And the first step is the mapping step.
+
+16
+00:11:40,980 --> 00:12:08,800
+Okay. The first step is the map function. What map function is doing is basically processing the content of the file and extracting the intermediate key value pairs. Okay. The intermediate key value pairs is related with our problem. For example, in our problem, we want to count. So this was our initial example.
+
+17
+00:12:08,980 --> 00:12:13,240
+We want to count the number of words that appear in a document.
+
+18
+00:12:13,860 --> 00:12:25,240
+So therefore, we want to extract the individual words from each of the file.
+
+19
+00:12:25,840 --> 00:12:31,440
+So here you see that these are the keys that we extract from the file.
+
+20
+00:12:31,440 --> 00:12:32,440
+These are the...
+
+21
+00:12:33,556 --> 00:13:01,096
+Vars, actually. Each key is actually a word that is extracted from the content of the file. And the value here is 1 because this word appears. So every time this word appears in this document, then the count of that word will be 1. Okay. So once we extract all these intermediary key value pairs, okay,
+
+22
+00:13:01,556 --> 00:13:08,396
+Then the map part of the MapReduce job is done.
+
+23
+00:13:09,396 --> 00:13:12,896
+Then the second step is group by key.
+
+24
+00:13:13,496 --> 00:13:17,516
+This is done by the MapReduce programming platform.
+
+25
+00:13:18,096 --> 00:13:24,396
+What MapReduce programming platform is doing is putting together...
+
+26
+00:13:24,480 --> 00:13:28,620
+The same key value pairs.
+
+27
+00:13:29,240 --> 00:13:29,319
+Okay.
+
+28
+00:13:29,319 --> 00:13:37,160
+So what it does is that it brings together the key values pairs where the key is the same.
+
+29
+00:13:37,259 --> 00:13:41,879
+For example, here is one key and you see all the values here.
+
+30
+00:13:42,120 --> 00:13:42,220
+Okay.
+
+31
+00:13:42,480 --> 00:13:50,779
+Now, this means that there were three key value pairs where the key is the same instead of writing separately.
+
+32
+00:13:51,779 --> 00:13:52,480
+The MapReduce.
+
+33
+00:13:52,480 --> 00:13:56,039
+platform groups them together by key.
+
+34
+00:13:56,039 --> 00:13:56,740
+Okay.
+
+35
+00:13:57,360 --> 00:14:00,720
+And the next, the last step is the reduced step.
+
+36
+00:14:01,652 --> 00:14:21,672
+This is written by the programmer. Okay. And in the reduce step, what we are doing is that we are calculating, we are applying an operation on the values. In this particular case, we wanted to count the number of times that each
+
+37
+00:14:22,355 --> 00:14:24,655
+A key appears in the document.
+
+38
+00:14:25,076 --> 00:14:33,355
+So therefore, what we need to do, we need to sum the values that we see here, okay, and calculate the...
+
+39
+00:14:34,259 --> 00:14:45,319
+A value. Okay. The reduce step, what it does is that it calculates the reduce function on the values and
+
+40
+00:14:45,319 --> 00:14:57,759
+comes up with a result. Okay. And it does this for every keys. Okay. That the reduce function receives.
+
+41
+00:14:58,759 --> 00:14:59,539
+Okay.
+
+42
+00:15:00,659 --> 00:15:28,659
+And in the last lecture, I have shown you this, and I said that here is the document. So here, so you divide this document into four different parts. Everyone has its own ID, ID and value pairs. Value is the content. And the map function takes it, takes each component. There is a map process, which is
+
+43
+00:15:56,307 --> 00:16:03,567
+And obviously, whenever it attracts keyword and the value for this keyword is one.
+
+44
+00:16:04,327 --> 00:16:04,427
+Okay.
+
+45
+00:16:05,048 --> 00:16:11,768
+And once this is done, then the group by key brings together the same.
+
+46
+00:16:12,211 --> 00:16:39,652
+A key value pairs together. As you see here, same key value pairs accumulated here, same key value pairs are accumulated here. Okay. And then once the group by key operation is done by the MapReduce programming platform and the reduce operation, which is provided by the programmer takes place, reduce operation, what it does is that
+
+47
+00:16:40,211 --> 00:16:48,591
+It adds, it applies the reduce function on top of the values that correspond to the same key.
+
+48
+00:16:48,591 --> 00:16:54,611
+In this particular case, you see that there are two crew where the values are one.
+
+49
+00:16:55,231 --> 00:17:00,811
+So we are going to add them together and which will give me the result too.
+
+50
+00:17:01,392 --> 00:17:01,531
+Okay.
+
+51
+00:17:02,644 --> 00:17:17,364
+At the end of it, the Reduce program will write the result of the word count application results.
+
+52
+00:17:17,644 --> 00:17:26,244
+So for every word that appears in the whole document, we will have the count that corresponds to this document.
+
+53
+00:17:26,867 --> 00:17:42,887
+Okay. And so this is pseudocode for map and reduce. We said that we are going to write when we write our code. So we are going to write the map and we are going to write reduce. And in this particular case, you see that we are extracting the word.
+
+54
+00:17:44,211 --> 00:17:55,251
+From the value that we received, remember the value is the text that we want to parse and extract the words one by one.
+
+55
+00:17:55,251 --> 00:18:03,012
+You see that there is a for each loop, which means that within the content of this document, we are going to extract every word.
+
+56
+00:18:03,711 --> 00:18:12,211
+And then we are going to create pairs of word key value pairs, intermediate key value pairs, where the first element is.
+
+57
+00:18:12,211 --> 00:18:14,592
+The second element is one.
+
+58
+00:18:15,652 --> 00:18:18,751
+And the reduce function, we are going to write the reduce function as well.
+
+59
+00:18:19,112 --> 00:18:21,271
+Reduce function takes key and values.
+
+60
+00:18:21,771 --> 00:18:25,412
+And of course, we need to write the content of the reduce function.
+
+61
+00:18:25,791 --> 00:18:28,451
+As you see, there is a for each loop again.
+
+62
+00:18:28,632 --> 00:18:33,192
+This time, this for each loop is going to do the loop on the values.
+
+63
+00:18:33,731 --> 00:18:33,912
+Okay.
+
+64
+00:18:34,352 --> 00:18:51,112
+So, I have a number of values that correspond to the same key. So, in this particular case, the values for the reduce function, I'm going to do the summation, okay, because I'm interested in the count for each of the individual word.
+
+65
+00:18:51,112 --> 00:19:02,112
+So, once the for each loop finishes, then I'm going to write the result into a file, okay, where the...
+
+66
+00:19:02,352 --> 00:19:13,912
+The first element of the pair is the key and the second element of the second element, which is the value, which is the summation of the values.
+
+67
+00:19:14,472 --> 00:19:19,951
+Okay, now this was the word count example that we talked about.
+
+68
+00:19:20,852 --> 00:19:22,951
+How we did the...
+
+69
+00:19:25,940 --> 00:19:31,940
+...how we can program map and reduce writing the...
+
+70
+00:19:32,940 --> 00:19:34,940
+...how we can write the map and reduce.
+
+71
+00:19:34,940 --> 00:19:37,940
+Now I'm going to show you the...
+
+72
+00:19:39,124 --> 00:19:59,963
+Some pieces of code because so you will be doing it by your own. So I didn't set the configuration for dependency files, but you can, you should just focus on the example code here. Okay, I did.
+
+73
+00:20:00,000 --> 00:20:24,579
+So, this is why I have these errors, as you see. Now, as you see, I have WordCount. So, this is a simplest Hadoop program where you can do MapReduce programming model. You see, it has a mapper.
+
+74
+00:20:28,084 --> 00:20:51,644
+Okay. And it has a mapper. What mapper is doing is that, as you can see, it takes the value, which is defined as type text. Okay. And it takes it and it converts it into a string. Okay. Then using the string tokenizer, it takes it.
+
+75
+00:20:54,291 --> 00:21:22,291
+From this string, so I'm creating a string tokenizer object, which you will learn, okay? And within the string tokenizer object, basically what it does is that it puts all the words that are available in this big string and puts it into string tokenizer. And on the string tokenizer, you can do a while loop, okay? And as you are doing the while loop,
+
+76
+00:21:22,291 --> 00:21:28,331
+string tokenizer, which includes all the words that are available in that text.
+
+77
+00:21:29,051 --> 00:21:39,571
+And you can retrieve each token, okay, and set it as a value to word,
+
+78
+00:21:39,651 --> 00:21:43,291
+which is defined here as a global member field, okay?
+
+79
+00:21:43,571 --> 00:21:47,751
+And then you can write the intermediate key value pairs, as you see.
+
+80
+00:21:49,811 --> 00:22:15,371
+My key and this is my value. Okay. And so let's take a look at the reducer. Okay. This is also written by the programmer, as you see. So this retrieves values. Okay. And also the key as an input. And as you see here, here I am doing a for loop on the values.
+
+81
+00:22:16,243 --> 00:22:26,023
+And in each loop, I'm getting the value and I'm adding into summation, okay, sum value, okay.
+
+82
+00:22:26,423 --> 00:22:37,663
+My purpose is that in the reduce function, since I wanted to find the count for each word, so therefore I have to have the sum operation as the reduce function.
+
+83
+00:22:38,183 --> 00:22:43,864
+Now, once the sum operation is done for every key, then I can write it back.
+
+84
+00:22:44,243 --> 00:22:54,563
+to the file system okay in this case my key will be the the word and the value will be the number
+
+85
+00:22:54,563 --> 00:23:02,403
+of times that it appears in the document okay now here i have the reducer i have the mapper
+
+86
+00:23:02,403 --> 00:23:09,683
+of course i need to have a main i need to have a class which has a main method in it so that it can
+
+87
+00:23:12,243 --> 00:23:19,163
+You see that so I am creating a job object, setting its parameters.
+
+88
+00:23:19,163 --> 00:23:19,723
+Okay.
+
+89
+00:23:20,283 --> 00:23:30,643
+And then so by doing so I can create a job and I can invoke a job after I.
+
+90
+00:23:41,455 --> 00:23:48,915
+A mapper object and when produced reducer object, which will be responsible of processing the text file.
+
+91
+00:23:48,915 --> 00:23:53,655
+The text file is so simple, so you can have your own text file.
+
+92
+00:23:54,175 --> 00:24:03,895
+The idea here is that I want you to be able to run the mapper and reducer, which will then process a simple text file,
+
+93
+00:24:04,355 --> 00:24:09,415
+and which will then find the count of the words that appear in that document.
+
+94
+00:24:09,455 --> 00:24:14,315
+Okay, so this is simplest word count example.
+
+95
+00:24:29,140 --> 00:24:32,140
+OK, let's...
+
+96
+00:24:46,579 --> 00:24:53,579
+Okay. Now, in the previous lecture, I also showed you this diagram and I said that...
+
+97
+00:24:55,188 --> 00:25:20,948
+So, each mapper is responsible for processing one chunk of a huge document and each mapper is going to create key value pairs. Okay. These are the intermediate key value pairs. Now, remember the mapper is storing these intermediate key value pairs into local storage, not the distributed system, not the HDFS. Okay.
+
+98
+00:25:22,675 --> 00:25:39,495
+Now, so here you see that intermediate key value pairs are here. And so on this node, group by key operation is done. And so the MapReduce programming platform puts together.
+
+99
+00:25:39,920 --> 00:25:48,000
+The key value pairs which has the same key in it and puts them into a separate file.
+
+100
+00:25:48,000 --> 00:25:54,240
+And there will be a file which is prepared for each of the reducers.
+
+101
+00:25:55,320 --> 00:26:02,599
+Arkadaşlar, Mapper'ın bulunmuş olduğu not üzerinde Mapper intermediate key value pairleri yarattıktan sonra
+
+102
+00:26:03,092 --> 00:26:15,312
+Bu Intermediate Key Value Pair'ler üzerinde Group by Key Operation'ını MapReduce Programming Platform'un oradaki kütüphanesi yapıyor.
+
+103
+00:26:15,988 --> 00:26:32,188
+Ve bir araya getirilmiş olan her bir key values pairlerini bir tane file'ın içerisine koyuyor. Bu key values pairleri bir reducer tarafından kopyalanacak şekilde konuyor.
+
+104
+00:26:41,683 --> 00:26:55,144
+10 tane şeyleri oluşmuşsa, GroupByKeyOperation'a yapıldıktan sonra, 10 tane KeyValues pairleri oluşmuşsa, 10 tane küçük dosyacık olacak burada.
+
+105
+00:27:01,172 --> 00:27:25,372
+Name note and tells that, okay, here I'm done. These are the names of the keys and I prepared the files so that reducers can come and copy those files. Okay. Now, what name note is doing, name note is going to calculate by using a hash function, which reducers are responsible for these keys.
+
+106
+00:27:25,811 --> 00:27:52,412
+Burada 10 tane key varsa ne yapıyor name node? Bu kendisine mapper tarafından belirtilmiş olan bu keyleri hash fonksiyonu içine koyuyor ve bu hash fonksiyonunun vermiş olduğu reducer numarasına göre gidip ilgili reducera diyor ki sen işte şu IP adresinde olmuş olan kendinle ilgili şu file'ı gidip kopyalayacaksın.
+
+107
+00:27:53,107 --> 00:28:07,687
+Bu 10 tane file hangi reducerler tarafından gelip kopyalanması gerekiyorsa bu reducerler name node tarafından invok ediliyor. Bu reducerler gidip datayı map'in bulunmuş olduğu nottan kopyalıyorlar.
+
+108
+00:28:08,247 --> 00:28:17,687
+Demek ki her bir reducerın alması için ayrı ayrı içerisinde key values pair'lerin olduğu dosyalar var. Bunları kopyalıyoruz.
+
+109
+00:28:19,220 --> 00:28:41,720
+Okay, now once the reducer copies the key values pairs that it is responsible, for example, this particular reducers, okay, went to this mapper and copied the key values pair and went to this mapper, copied key values pair and went to this mapper, copied this key values pair.
+
+110
+00:28:41,720 --> 00:28:46,640
+Okay, once all the key values pair,
+
+111
+00:28:47,220 --> 00:28:54,540
+Are copied from the corresponding mappers to the node where the reducer is residing.
+
+112
+00:28:55,060 --> 00:29:01,259
+Then what reducer is going to do? Reducer is going to apply the reduce function on the values.
+
+113
+00:29:01,820 --> 00:29:05,480
+Hani buradaki reduce function bizim sum operasyonuydu.
+
+114
+00:29:06,100 --> 00:29:14,880
+Farklı mapperlerin olduğu notlardan kendisine gelmiş olan dosya içerisindeki values'lar üzerinde sum operasyonunu uygulayıp
+
+115
+00:29:15,220 --> 00:29:39,360
+ne buluyor? Reducer will write the result as key value pair. Buradan bulmuş olduğu sonuç value'ye gelecek. Yani o key'e karşılık gelmiş olan, bütün farklı mapronotlardan gelmiş olan value'ların sum yapıldıktan sonraki değerini value olarak tutacağız. O key'in değerini de key olarak tutacağız ve sonucu yazacağız.
+
+116
+00:29:43,183 --> 00:29:54,423
+Each reducer will write different key, okay, value pairs into the distributed file system, okay?
+
+117
+00:29:55,644 --> 00:30:02,984
+Now, why is it the distributed file system? We discussed this in the previous lecture.
+
+118
+00:30:04,115 --> 00:30:11,415
+Because we don't want the result of the MapReduce programming to be lost.
+
+119
+00:30:11,556 --> 00:30:16,536
+So therefore the results will be written into the distributed file system.
+
+120
+00:30:17,195 --> 00:30:23,355
+Bu diyelim ki bir tekstin, metnin içerisinde bin tane kelime varsa
+
+121
+00:30:23,355 --> 00:30:28,215
+bu kelimelerin bir kısmı birinci reducer tarafından hesaplanıp yazılacak.
+
+122
+00:30:28,215 --> 00:30:32,096
+Bir kısmı ikinci reducer tarafından, bir kısmı üçüncü reducer tarafından.
+
+123
+00:30:32,115 --> 00:30:48,536
+Ama bütün bu yazılmış olan key value pairlerine baktığımız zaman o key'in bütün bu büyük doküman içerisinde kaç tane olduğunun değerini bulabileceğiz.
+
+124
+00:30:50,740 --> 00:31:05,440
+Okay, now, so this is the same thing. So this only shows you that, okay, these, so not only one mapper, but there will be more mappers that may be working on the nodes.
+
+125
+00:31:11,508 --> 00:31:12,388
+Eh...
+
+126
+00:31:13,044 --> 00:31:34,264
+Burada bir arkadaşınız hani Sorten Group kütüphanesinin Reduce üzerinde çalıştığını söylemiş. Bu Sorten Group bir de partitioning function aslında mesela partitioning function da burada değil partitioning function da name node üzerinde çalışıyor arkadaşlar.
+
+127
+00:31:41,044 --> 00:31:59,044
+Bu diagramda eksiklik var. Bu sorting işlemi yapıldıktan sonra key values pairleri tek bir file haline getirildikten sonra ilgili reducer...
+
+128
+00:31:59,615 --> 00:32:22,855
+Gidip ilgili mapperdan bu dosyayı alıyor, kendisine kopyalıyor. Bu kendisine kopyalama işlemin diğer mapperlardan da gerçekleşiyor. Artık elinde her bir reducerın hesaplaması zorunlu olan bu key değerleri ve bu key değerlerinin yanındaki values değerleri olmuş oluyor ve bunların üzerinde reduce şey yapıyor.
+
+129
+00:32:27,615 --> 00:32:37,015
+MapReduce Programming Platform'unun libraryleri, yani şurada partition'ın fonksiyonu olduğu yerde bir de şurada MapReduce Programming Platform ne yapıyor?
+
+130
+00:32:37,556 --> 00:32:45,255
+Buradaki key value pairlerini grupluyor, bir file'in içerisine sokuyor, sonra gidiyor name node'u sinyal veriyor.
+
+131
+00:32:45,255 --> 00:32:52,255
+Yine bu taraftaki library ne yapıyor? Name node'dan sinyali aldıktan sonra gidiyor, ilgili mapper'dan dosyayı alıyor.
+
+132
+00:32:55,615 --> 00:33:18,836
+Ve bu reducerun bunun üzerinde processing yapmasına izin veriyor. Dolayısıyla şuradaki arkadaşların, üzerinde yazanlara bakmayın, bütün bu kütüphanenin totalde yapmış olduğu işe anlattığını düşünün. Hem Sort and Group hem de ayrı file'ların içerisinde bu key value pair'lerini birleştirdiklerini düşünün arkadaşlar.
+
+133
+00:33:23,124 --> 00:33:46,243
+Okay. Şimdi geçtiğimiz hafta, so last week, so we had the, we had this problem. Okay. We said that when the mapper produces key values pairs, okay.
+
+134
+00:33:47,539 --> 00:34:02,619
+And it puts into a separate file corresponds so that the reducer can come and copy it to its node and then apply the reduce function.
+
+135
+00:34:03,539 --> 00:34:12,099
+There are some words, for example, like the word the, okay, that may appear in a document many times.
+
+136
+00:34:12,692 --> 00:34:19,052
+Okay, so in that case, there will be lots of the same key value pairs here.
+
+137
+00:34:19,711 --> 00:34:23,292
+Okay, where the first value is the, second value is one.
+
+138
+00:34:23,952 --> 00:34:35,012
+Okay, now if this is the case, for example, there will be thousands of pairs where the key is the and the value is one.
+
+139
+00:34:40,467 --> 00:34:55,407
+A retrieve this big file where the key value pair, the number of key value pairs are huge from the local area network and it will have to copy all that big file to its node.
+
+140
+00:34:55,407 --> 00:34:56,587
+Okay.
+
+141
+00:34:57,748 --> 00:35:22,568
+Now, communication between the nodes will take time. Okay? So we don't want that. Now, so we are going to try and find a solution to this problem. How we can reduce the time that is spent for communication. Okay? Now let us talk about that problem.
+
+142
+00:36:16,788 --> 00:36:17,108
+Ok.
+
+143
+00:36:21,012 --> 00:36:48,432
+So we said that, so the mapper function will produces the key value pairs, but there will be a case, okay, there will be, most of the time there will be cases where the intermediate, the number of intermediate key value pairs are huge, okay, where the, where the, for this kind of intermediate key value pairs is where the key is the same, okay.
+
+144
+00:36:50,195 --> 00:37:03,135
+So therefore, without sending a huge file to reducer, we are going to try to do the same thing like the reducer on the mapper node.
+
+145
+00:37:03,855 --> 00:37:09,375
+Okay, what mapper node is doing here is it's doing the summation function, right?
+
+146
+00:37:09,835 --> 00:37:17,155
+We are going to try to do the same function on the mapper by introducing another method called combiner.
+
+147
+00:37:17,748 --> 00:37:33,887
+Okay, now, so how this will work? We are going to write another method as a programmer, which will do the, which is the combiner. Okay, what combine is going to do, it's going to take the key.
+
+148
+00:37:34,579 --> 00:37:49,239
+A values pair, okay, where the key is the first element of the intermediate key value pairs. And the second element is the list of values where the key is the same. Okay.
+
+149
+00:37:50,003 --> 00:38:05,003
+And then combiner is going to do the exactly the same thing like what reducer is going to do. It's going to apply the reduce function on the list of values. Okay. Therefore, we usually use the same reduce function.
+
+150
+00:38:06,264 --> 00:38:08,643
+So let's see how it's going to work.
+
+151
+00:38:19,635 --> 00:38:28,576
+Okay. Now, take a look at this example. Here, as you see, now this is the, I have two blocks.
+
+152
+00:38:29,039 --> 00:38:57,019
+Okay, so this, the first block is, there is a mapper, which is responsible for processing the first block. Okay, now just focus on the values section, just focus on the values section, B, C, D, B, A, D, E, D, B. Okay, now mapper is going to process the values section. Okay, just the values section. Now, what it's going to do.
+
+153
+00:38:57,039 --> 00:39:18,439
+It's going to extract what we care about. It's going to extract in this particular case, the letters. Okay. So B, I have only one. C, there is one. D, there is one. E, there is one. D, there is one. D, there is one. Okay. Now, so this, this is the normally the intermediate key value pairs.
+
+154
+00:39:18,963 --> 00:39:30,864
+Okay, now without the combiner function, what we were going to do, we were going to ship the whole key values pair to the reducer.
+
+155
+00:39:31,283 --> 00:39:43,884
+So how many, for example, let's take a look at for the key B. I have one and two, two pairs where the key is B.
+
+156
+00:39:45,204 --> 00:40:11,024
+Let's look at D. I have two pairs, okay, where the key is D, okay? Now, this means that if I didn't have the combiner function, I was going to send two pairs to the reducer where the keys are B and D, okay? Now, what combiner function is doing,
+
+157
+00:40:11,407 --> 00:40:21,228
+It's going to do the same thing as the reduce is going to do. It's going to add the values of the same teams together.
+
+158
+00:40:21,748 --> 00:40:30,688
+Okay, so in this particular case, it's going to add the values for B together and then it will produce this key value pair.
+
+159
+00:40:30,688 --> 00:40:40,108
+And it's going to add the values of the same key for D and it's going to find this key value pair.
+
+160
+00:40:40,608 --> 00:40:45,644
+Okay, now as you see, normally I had...
+
+161
+00:40:45,715 --> 00:40:48,596
+6 farklı bir parçası
+
+162
+00:40:48,596 --> 00:40:52,596
+ve bu parçası var.
+
+163
+00:40:52,596 --> 00:40:55,835
+Şimdi 4 parçası var.
+
+164
+00:40:56,143 --> 00:41:01,743
+That I need to transfer from the mapper node to the reducer.
+
+165
+00:41:02,263 --> 00:41:02,344
+Okay.
+
+166
+00:41:02,703 --> 00:41:09,703
+So therefore, before that, we were responsible for writing the mapper function and reducer function.
+
+167
+00:41:09,863 --> 00:41:13,543
+Now, we are also going to write the combiner function.
+
+168
+00:41:13,844 --> 00:41:14,103
+Okay.
+
+169
+00:41:14,143 --> 00:41:14,823
+As a developer.
+
+170
+00:41:16,019 --> 00:41:32,399
+As you see, the MapReduce Programming Platform, so groups these key value pairs by key. As you see, so these are the result of group by key.
+
+171
+00:41:32,399 --> 00:41:43,939
+And then, so these will be shipped to the reducer. Reducer will contact.
+
+172
+00:41:44,019 --> 00:42:13,019
+ve
+
+173
+00:42:12,019 --> 00:42:27,179
+Okay. Now, by using the combiner, what we have done is that we shipped much less data. Okay. We shipped much less data from the mapper node to the reducer node.
+
+174
+00:42:30,547 --> 00:42:31,007
+Ok?
+
+175
+00:42:34,900 --> 00:42:45,600
+But the combiner idea only works if the reduce function is committative and associative.
+
+176
+00:42:45,780 --> 00:42:49,699
+Committative, değişkenlik, associative birliktelik özelliği.
+
+177
+00:42:50,240 --> 00:42:58,380
+So let me stop this and I want to share something else so that I can better explain to you.
+
+178
+00:43:50,195 --> 00:44:07,435
+Okay, now take a look at the sum function, okay? The sum function, we say commutative, so değişkenlik özelliği var. So you see that elements of the sum function, if I change their position, nothing is going to change, okay?
+
+179
+00:44:18,195 --> 00:44:31,335
+Now, if I add all these integer numbers at one step, I will get a sum as a result.
+
+180
+00:44:31,715 --> 00:44:43,795
+Or I can divide this into two and I can sum the half of it in this part and sum the other half of it in this part and then add the result, the final result.
+
+181
+00:44:43,795 --> 00:44:46,036
+The resulting sum value.
+
+182
+00:44:46,195 --> 00:44:52,916
+Bu dağıtık veri işlemiyormatörü ve dağıtık veri işlemiyormatörü ve dağıtık veri işlemiyormatörü.
+
+183
+00:45:11,411 --> 00:45:38,911
+And you can see the associative property. Okay. So A plus B plus C is the same thing as A plus B plus C. Okay. Now, if a function is both committative and associative, then we can apply the combiner function. Okay. But not all the functions are associative and committative. For example, let's take a look at the average. Okay.
+
+184
+00:45:39,539 --> 00:45:56,340
+Now, let's do the same thing as I did with the sum operation. Now, let's consider this as an integer numbers, okay, a series of integer numbers, an array of integer numbers, okay.
+
+185
+00:45:56,340 --> 00:46:03,279
+Now, you can take the average of these integer numbers at one step, okay, then you will find one value.
+
+186
+00:46:03,860 --> 00:46:20,740
+Then you can do the following. You can divide the data into two. First find the average by looking at the first part. Then calculate the average by looking at the second part. And then you have two average values.
+
+187
+00:46:20,740 --> 00:46:29,240
+And then you can take the average of these averages. But the result is not going to be the same thing.
+
+188
+00:46:29,552 --> 00:46:35,372
+As you would get by averaging the whole numbers at one step, it will be two different things.
+
+189
+00:46:36,192 --> 00:46:41,752
+So because the average function is not commutative and associated just like the summation.
+
+190
+00:46:42,211 --> 00:46:42,312
+Okay.
+
+191
+00:46:43,252 --> 00:46:54,211
+So therefore, the average function as is, we cannot apply, we cannot use it as a combiner.
+
+192
+00:46:55,372 --> 00:46:57,012
+But we can do the following.
+
+193
+00:46:57,652 --> 00:47:18,632
+Okay, what we can do if the function is not committative and associative, we need to take a look at the function and we need to see whether I can divide this function into separate functions where each of the sub functions are committative and associative.
+
+194
+00:47:19,231 --> 00:47:25,012
+Now, what is the calculation for average? Average is, as you know, the sum divided by count, right?
+
+195
+00:47:25,780 --> 00:47:39,719
+Okay, it has two subfunctions. You can add the values of the integers and you can count the number of the integers. You can divide sum by count and that will give you average.
+
+196
+00:47:40,719 --> 00:47:50,599
+Okay, now if this is the case, then instead of calculating the average, this time we are going to calculate sum and count pairs.
+
+197
+00:47:51,460 --> 00:47:52,099
+Okay.
+
+198
+00:47:53,204 --> 00:48:04,004
+Now, as you see here, I am dividing this array of integers into three parts.
+
+199
+00:48:04,483 --> 00:48:11,304
+In the first part, instead of calculating the average, I'm calculating the sum and count pairs.
+
+200
+00:48:11,731 --> 00:48:21,012
+Okay, first in the in order to calculate the first element, I need to add them up. In order to calculate the second element, I need to count them.
+
+201
+00:48:21,991 --> 00:48:32,951
+I'm going to do the same thing for the second portion, and I'm going to do the same thing for the third portion. Okay, then in the reduce step, I will do the same thing.
+
+202
+00:48:33,344 --> 00:48:46,764
+Okay, I will calculate the sum and count pair. Okay, so what I'm going to do, I'm going to sum, I'm going to add the sum.
+
+203
+00:48:49,184 --> 00:48:54,184
+Ve bu
+
+204
+00:49:03,507 --> 00:49:19,267
+Okay, so what I did right now is that when I wanted to calculate the average, I looked at the function and tried to understand whether I can divide this function into sub functions where the sub function is commutative and associative.
+
+205
+00:49:19,267 --> 00:49:20,087
+Okay.
+
+206
+00:49:21,556 --> 00:49:35,735
+In that way, I can also write a combiner for the average function, but not the exact average function, but for the subfunctions of the average.
+
+207
+00:49:37,012 --> 00:49:43,432
+But there will be some functions for those I cannot write combiners.
+
+208
+00:49:43,812 --> 00:49:43,952
+Okay.
+
+209
+00:49:43,952 --> 00:49:55,592
+For example, for median, there is no way for me to find the sub functions of median where they are commutative and associative.
+
+210
+00:49:56,012 --> 00:49:56,092
+Okay.
+
+211
+00:49:56,512 --> 00:49:59,032
+For some of the functions.
+
+212
+00:50:00,000 --> 00:50:27,940
+So we don't have sub-functions that are commutative and associative. So for those, we cannot take the advantage of the combiner. And if we have such functions, obviously there is no way. So we have to ship all the key values pairs to the reducer. And reducer has to do the same job like it used to do. So we don't take the advantage of combiner for those kinds of functions.
+
+213
+00:50:28,000 --> 00:50:30,220
+And medium is one of them.
+
+214
+00:50:33,160 --> 00:50:33,440
+Okey.
+
+215
+00:50:35,560 --> 00:50:44,820
+Arkadaşlar, bunu anlamanız önemli. Bunu dönem projenizde de kullanmanızı isteyeceğim.
+
+216
+00:50:44,820 --> 00:50:54,600
+Eğer ben key value pairlerinin hepsini reducera taşımak istemiyor isem,
+
+217
+00:50:54,960 --> 00:51:15,160
+KeyValue pairleri üzerinde Reducer'ın yapmış olduğu işi Combiner fonksiyonuyla yapıyorum. Combiner fonksiyonu value'ların üzerinde Reducer fonksiyonu ne yapıyorsa bunu yapıyor ve KeyValue pairlerini tek bir KeyValue'ya dönüştürüyor.
+
+218
+00:51:15,603 --> 00:51:31,843
+Ve Reducer, o mapperdan çok sayıda aynı key value pair'i almak yerine onları temsil eden kendisinin yapacağı işi Combiner'ın yapmış olduğu resulting key value pair'ini alarak alıyor.
+
+219
+00:51:31,843 --> 00:51:40,143
+Ve bu farklı makineler üzerinden gelmiş bu Combiner'dan geçmiş olan key value pair'leri üzerinde son Reduce operation'ını yapıyor.
+
+220
+00:51:40,903 --> 00:51:43,603
+Reduce Combiner içerisinde...
+
+221
+00:51:43,603 --> 00:52:02,943
+Bu konuların içerisine yazdığımız kod, Reduce fonksiyonunun içerisine yazdığımız kodla aynı kod olmuş oluyor. Burada tek dikkat etmemiz gereken değişkenlik ve birliktelik özelliğini sağlayan bir fonksiyon olmalı ki biz bunu combiner üzerinde de kullanabilirim bu fonksiyonu.
+
+222
+00:52:06,291 --> 00:52:06,791
+Okay.
+
+223
+00:52:08,352 --> 00:52:10,592
+Now, this was the first refinement.
+
+224
+00:52:10,791 --> 00:52:16,731
+So this was the first optimization that we can do with the MapReduce programming model.
+
+225
+00:52:16,731 --> 00:52:32,211
+Now, the second optimization that we can do, for example, when you have, say, you have a log file, which includes many URL files.
+
+226
+00:52:32,692 --> 00:52:39,172
+And you would like to find the number of times that each URL appears in that log file.
+
+227
+00:52:40,192 --> 00:52:45,991
+So in that case, instead of looking for the words, this time you are looking for what? URLs.
+
+228
+00:52:47,072 --> 00:52:50,192
+And in that case, your key will be URL.
+
+229
+00:52:51,795 --> 00:52:59,575
+Okay, now if you use a standard hash function with the MapReduce platform, it will be like this.
+
+230
+00:52:59,955 --> 00:53:10,815
+Okay, you will give the key hash function will produce a value and you will take the mod R, which is the number of reducers that you have.
+
+231
+00:53:11,175 --> 00:53:18,435
+And it will give you an integer number, which will indicate the ID of the reduce job.
+
+232
+00:53:18,435 --> 00:53:19,275
+Okay.
+
+233
+00:53:20,179 --> 00:53:26,859
+Now, that reduced chop will be notified and it will go and retrieve that key value pair.
+
+234
+00:53:26,859 --> 00:53:27,679
+Okay.
+
+235
+00:53:28,259 --> 00:53:30,379
+Now, if...
+
+236
+00:53:30,931 --> 00:53:49,112
+If you have URLs, okay, here, this means that the same, the URLs that belongs to the same hostname, for example, so you may have many URLs from yieldis.edu.tr, okay?
+
+237
+00:53:49,112 --> 00:53:55,172
+Now, if you want all the URLs of the same host,
+
+238
+00:53:55,668 --> 00:54:01,508
+To go to the same reducer, in that case, you need to update that partition function.
+
+239
+00:54:02,448 --> 00:54:06,708
+Okay, in that case, you can use a partition function like this.
+
+240
+00:54:07,328 --> 00:54:15,428
+What you can do, you can write a function which will take the URL as an input and it will produce a hostname.
+
+241
+00:54:15,588 --> 00:54:17,388
+For example, it will take the URL.
+
+242
+00:54:18,036 --> 00:54:25,036
+And it will generate a dot dot dot yield is that edu edutr.
+
+243
+00:54:25,036 --> 00:54:34,036
+Okay. All the URLs that comes from the yield is that edu ttr.
+
+244
+00:54:34,036 --> 00:54:41,036
+Okay, we'll be shipping or we'll be transferring to the same reducer.
+
+245
+00:54:41,036 --> 00:54:42,036
+Okay.
+
+246
+00:54:43,059 --> 00:54:49,059
+URL'leri değiştirmiyorum. Sadece URL'in hangi hostu olmasına bakaraktan...
+
+247
+00:54:49,972 --> 00:55:12,352
+Aynı host üzerinden olan URL'leri aynı Reducer tarafından proses edilmesini istiyorum. Bu yüzden de ne yapıyorum? Bu hash fonksiyonumu güncelliyorum. Demek ki MapReduce programı yazarken MapReduce'un kullanmış olduğu hash fonksiyonu da developer olarak update edebiliyorum arkadaşlar.
+
+248
+00:55:12,916 --> 00:55:36,576
+Böylelikle ben datamdaki verilerin kim tarafından, hangi reducer tarafından ne şekilde proses edilmesi konusunda da MapReduce Programming Platform'unu konfigüre edebiliyorum. Bunu da hash fonksiyonunu güncelleyerek yapıyorum.
+
+249
+00:55:39,987 --> 00:56:01,068
+Okay. Now, there are different implementations of MapReduce platform. So, obviously, the first MapReduce paradigm came from Google file system, but Google file system is not an open source library.
+
+250
+00:56:01,811 --> 00:56:29,291
+Instead, we have an open source library called Hadoop, and Hadoop is using HDFS underneath, okay? And there are also other libraries which is used on top of Hadoop, and they are providing SQL operations so that you can apply SQL operations on the HDFS.
+
+251
+00:56:30,132 --> 00:56:30,612
+Ok?
+
+252
+00:56:32,403 --> 00:56:46,784
+Obviously, there are different cloud platforms where by default have the MapReduce, the Hadoop environment as a setup is already ready for you to program.
+
+253
+00:56:46,784 --> 00:57:00,103
+Or you can download the Hadoop environment or an HDFS environment to your development or your computer.
+
+254
+00:57:00,403 --> 00:57:03,003
+ve dağıtık veri işlemiyormatör.
+
+255
+00:57:04,304 --> 00:57:20,503
+Now, let me show you some other software that is available right now that can be used along with Hadoop.
+
+256
+00:57:31,987 --> 00:57:33,647
+Now, let's take a look at this one.
+
+257
+00:57:35,347 --> 00:57:48,167
+Now, this figure is a little bit old because there are other frameworks that are available in the big data open source big data frameworks, but it should give you an idea.
+
+258
+00:57:48,592 --> 00:58:00,312
+Now, you see that as a file system, there is HDFS. There are other also distributed file systems that are available. Okay. So we discussed HDFS in the previous lecture.
+
+259
+00:58:00,820 --> 00:58:18,000
+Now, HDFS is a distributed database. Obviously, if you have a distributed database like this, you need to have a management library which can keep track of the liveliness of these distributed nodes.
+
+260
+00:58:18,708 --> 00:58:29,907
+So, by using the Yarn or Mesos libraries, you can monitor the existence of the existing HDFS nodes.
+
+261
+00:58:29,907 --> 00:58:42,907
+Okay, so you can think of this as a management library, okay, which is used, which is generally utilized when you use HDFS.
+
+262
+00:58:45,172 --> 00:58:55,031
+On top of it, we have here different NoSQL platforms available.
+
+263
+00:58:55,031 --> 00:59:00,211
+Okay, so this is also a data storage layer.
+
+264
+00:59:03,027 --> 00:59:25,387
+This layer does not necessarily mean on top of HDFS. Yani buradaki NoSQL layer'ı HDFS'in üzerinde diye almayın. Şuradaki NoSQL'den başlayıp HDFS'e kadarki olan kutucuğun içerisindeki alan aslında dağıtık NoSQL database'leri ifade ediyor.
+
+265
+00:59:31,027 --> 00:59:44,447
+Yoma olabilir ya da işte akumulu olabilir. Bunların hepsi farklı database'ler. Burada mesela MongoDB olabilir, KaoşDB olabilir. Bunların hepsi farklı NoSQL database'ler.
+
+266
+00:59:46,483 --> 00:59:55,704
+On top of it, on top of this distributed database environment, we have data processing layers.
+
+267
+00:59:56,463 --> 01:00:04,384
+Okay, now Hadoop is a data processing layer which processes this data that is residing on HDFS.
+
+268
+01:00:05,204 --> 01:00:12,184
+Spark is a data processing layer which process the data that is on HDFS, for example.
+
+269
+01:00:12,604 --> 01:00:17,724
+And there are different libraries that allows us to do big data processing.
+
+270
+01:00:17,984 --> 01:00:24,004
+There is, for example, Giraffe that is also doing the big data processing on graph data.
+
+271
+01:00:24,004 --> 01:00:33,204
+There are, there is Storm, SAMSA and different libraries that are designed for stream processing.
+
+272
+01:00:33,204 --> 01:00:50,804
+Now, we are interested in applying the interested in with the data processing platforms that are using MapReduce programming model. Spark is one of them. Hadoop is another one.
+
+273
+01:00:53,715 --> 01:01:00,715
+Now, on top of the data preprocessing layers, so we have high-level data processing layers.
+
+274
+01:01:00,855 --> 01:01:06,655
+For example, we have Hive, we have PIPDs provide, SQL-like.
+
+275
+01:01:07,056 --> 01:01:33,716
+A programming interface so that you can apply SQL statements on the data that you have on the HDFS. Obviously, these Hive and Peak, in return, they're utilizing these may produce processing platforms. Okay. So Hive and Peak, they are implemented on top of these may produce processing.
+
+276
+01:01:35,056 --> 01:01:36,056
+Platforms.
+
+277
+01:01:36,956 --> 01:01:37,776
+Okay?
+
+278
+01:01:38,867 --> 01:02:06,867
+And on top of these layers, okay, there is other data analytics layer, which is an example of this Mahout. And these are implementing the machine learning or deep learning algorithms, okay? And these, obviously, these libraries, they in turn utilize these MapReduce processing libraries, which are
+
+279
+01:02:06,867 --> 01:02:10,587
+actually used on top of HDFS.
+
+280
+01:02:10,587 --> 01:02:11,587
+Ok.
+
+281
+01:02:13,188 --> 01:02:15,587
+Burada bir büyük veri...
+
+282
+01:02:16,128 --> 01:02:37,748
+Bir büyük verinin işlemesi için genelde yaygın olarak kullanılan çerçeve kütüphaneleri, framework libraryleri görebiliyorsunuz. Bunların üzerinde tabi bu paperın yayınlandığı o günden bugüne çok daha farklı frameworklerde üretildi.
+
+283
+01:02:44,128 --> 01:02:56,228
+MapReduce programlama modeli tekniği olduğu için biz bu MapReduce programlama tekniğini implement eden frameworkleri kullanaraktan dönem projesi ödevinizi yapacağız.
+
+284
+01:02:56,947 --> 01:03:10,748
+Şimdi bir 10 dakika ara verelim. Ondan sonra ben dönem projenizle ilgili size bilgileri vereceğim. Sonra biraz konuşacağız. Sonra dersimizi tamamlayacağız. Bir 10 dakika ara veriyorum.
+
+285
+01:12:23,956 --> 01:12:29,336
+Evet arkadaşlar, sesim geliyor mu? Bir teyit edebilir misiniz? Geliyorum hocam.
+
+286
+01:12:29,336 --> 01:12:44,115
+Tamam. Arkadaşlar, dönem projesinde sizlerden istediğim bir MapReduce programlama modelini kullanarak bir proje yapmanız.
+
+287
+01:12:52,020 --> 01:13:07,979
+A program, so which will utilize a MapReduce programming platform, and your data will reside on top of HDFS.
+
+288
+01:13:07,979 --> 01:13:09,280
+Okay.
+
+289
+01:13:10,323 --> 01:13:24,543
+And you can use a different MapReduce programming platform. You can use Hadoop or you can use Spark. It doesn't matter. But your data needs to reside on HDFS. Okay.
+
+290
+01:13:25,003 --> 01:13:37,283
+Now, in your program, you will have a user interface which I can use in order to put a file into HDFS.
+
+291
+01:13:38,003 --> 01:13:56,443
+Okay, and retrieve from HDFS. Okay, that's the first thing. You will have a client user interface which can take a file on your local storage system, on your file system.
+
+292
+01:13:56,948 --> 01:14:08,048
+And it can put into the HDFS, okay, which will be installed either on your computer or some other computer, okay?
+
+293
+01:14:08,548 --> 01:14:14,728
+It will store in HDFS and it will retrieve when you give the same ID.
+
+294
+01:14:16,007 --> 01:14:24,728
+So when you give the identifier of the file in that HDFS system, it will retrieve the file and it will put it back to the...
+
+295
+01:14:24,948 --> 01:14:26,507
+And file system.
+
+296
+01:14:27,768 --> 01:14:29,028
+Okay, that's the first thing.
+
+297
+01:14:31,007 --> 01:14:39,748
+And what I want, what I'm asking is for you to install a multi-node, not a single note, a multi-node.
+
+298
+01:14:40,212 --> 01:15:03,192
+Hadoop, cluster. Okay. It could be a, it could be multi-node HDFS cluster. If you are using Spark as a MapReduce programming platform, then you, so you need to install a multi-node HDFS cluster and on top of it, you're, you're gonna, you are going to install the Spark platform. Okay.
+
+299
+01:15:05,192 --> 01:15:05,752
+Now,
+
+300
+01:15:07,315 --> 01:15:29,835
+The first thing is to install a multi-note HDFS cluster. The second thing is to write a user interface that can put a file into HDFS system and that can retrieve a file from the HDFS system.
+
+301
+01:15:30,127 --> 01:15:45,028
+Okay. Now, once you put this file into the HDFS system, you also need to show me where the parts of the HDFS, where the parts of the file is stored in the HDFS.
+
+302
+01:15:45,807 --> 01:15:51,427
+So what does this mean? If you have a two-node HDFS system,
+
+303
+01:15:51,807 --> 01:16:03,788
+And if you put a file into the HDFS system, what HDFS is going to do, it's going to divide this file into 64 megabyte chunks.
+
+304
+01:16:04,948 --> 01:16:15,108
+And then it will store some chunks in the first node, it will store some chunks in the second node.
+
+305
+01:16:15,604 --> 01:16:27,004
+But I want to, I want you to have a user interface that will show where the chunks of the file is stored.
+
+306
+01:16:28,004 --> 01:16:28,203
+Okay.
+
+307
+01:16:29,543 --> 01:16:32,784
+Now, so far, do you have any question?
+
+308
+01:16:34,084 --> 01:16:35,123
+Is this clear?
+
+309
+01:16:37,703 --> 01:16:38,384
+Okay.
+
+310
+01:16:38,644 --> 01:16:40,244
+Now I'm going to continue.
+
+311
+01:16:40,244 --> 01:16:41,244
+Now.
+
+312
+01:16:42,547 --> 01:16:49,907
+The file that you are going to find will be your responsibility.
+
+313
+01:16:50,608 --> 01:16:50,747
+Okay.
+
+314
+01:16:51,067 --> 01:17:01,127
+So I will ask you to go to the public datasets and find a public datasets that you can use in this project.
+
+315
+01:17:01,768 --> 01:17:01,907
+Okay.
+
+316
+01:17:01,907 --> 01:17:09,627
+So therefore, I'm going to ask you to write a proposal for one page.
+
+317
+01:17:10,323 --> 01:17:21,023
+Bu da bu da bilimde, bu da bilimde kullanmanızı kullanmak için,
+
+318
+01:17:21,023 --> 01:17:27,123
+ve bu da bilimde, bu da bilimde kullanmanızı kullanmak için,
+
+319
+01:17:27,123 --> 01:17:31,123
+bu da bilimde kullanmanızı kullanmak için.
+
+320
+01:17:31,247 --> 01:17:43,688
+Okay, so I want you to use a public data set and the data sets are so and for that data sets, I want you to also describe what kind of application that you are going to do.
+
+321
+01:17:45,387 --> 01:17:57,407
+Next, I want you to implement five different, at least five different descriptive statistics function using the MapReduce programming model.
+
+322
+01:17:57,407 --> 01:17:58,567
+Okay.
+
+323
+01:17:59,764 --> 01:18:04,423
+For example, Average, MinMax, Range, Standard Deviation.
+
+324
+01:18:04,943 --> 01:18:15,203
+All these statistics functions I want you to implement on top of the, by using the MapReduce programming platform.
+
+325
+01:18:16,423 --> 01:18:16,584
+Okay?
+
+326
+01:18:17,664 --> 01:18:22,384
+Now, your user interface, then it will be like this.
+
+327
+01:18:22,504 --> 01:18:24,244
+The first thing that you are going to do.
+
+328
+01:18:24,724 --> 01:18:35,023
+You are going to select a file from your local file system and then you are going to put that file into the HDFS.
+
+329
+01:18:35,564 --> 01:18:44,583
+Then in your user interface that you are going to show me where are the parts of this file is located in the HDFS.
+
+330
+01:18:45,876 --> 01:18:55,296
+And then in your user interface, you are going to select one of the five different descriptive statistic functions.
+
+331
+01:18:55,636 --> 01:19:12,456
+And then you are going to run that statistic function, which will be applying the MapReduce programming model, okay, on top of the data that you just stored in the database, okay, HDFS database.
+
+332
+01:19:13,268 --> 01:19:13,768
+Okay.
+
+333
+01:19:15,188 --> 01:19:18,347
+Now, so far, do you have any questions?
+
+334
+01:19:23,028 --> 01:19:45,927
+Okay. Now, once you completed all these tasks, I want you, I, so you will also have a user interface where you can do the performance analysis, which means that how much time does it take for this function to complete?
+
+335
+01:19:46,420 --> 01:20:03,300
+Okay, when you start, when you click on the execute button, so how much time it's going to take to complete to for this function. So in this multi node HDFS platform. Okay.
+
+336
+01:20:04,520 --> 01:20:06,880
+I want you to do the performance analysis.
+
+337
+01:20:08,083 --> 01:20:18,743
+Okay. And I want you to do the performance analysis when you do this on one node and when you do this on multiple nodes. Okay.
+
+338
+01:20:21,064 --> 01:20:27,703
+And obviously your graphical user interface will be able to select the data set to be analyzed.
+
+339
+01:20:28,180 --> 01:20:38,140
+And also in the by using the graphical user interface, you will be able to select the statistic functions that you are going to use. Okay.
+
+340
+01:20:47,380 --> 01:21:09,640
+Kullanıcı arayüzünü web tabanlı yapabilir miyiz? Yapabilirsiniz. Sunucu olarak DigitalOcean ScaleWave kullansak olur mu? Kullanabilirsiniz. Java yerine başka bir dil kullanabilir misiniz? Java yerine Scala'da kullanabilirsiniz, Python'da kullanabilirsiniz. That's okay.
+
+341
+01:21:10,100 --> 01:21:31,800
+Ama mutlaka size az önce dersin başında gösterdiğim mapper ve reducer ve combiner fonksiyonlarını görmek istiyorum. Mutlaka kullanacağınız şeyde mapper, combiner ve reducer fonksiyonları olmalı. Bunları göreceğim. Bunlara not vereceğim.
+
+342
+01:21:35,796 --> 01:22:01,695
+I want you to write a one-page proposal. And in this proposal, I want you to tell me which database you are going to use. And describe the dataset and provide the link to this dataset. Okay? I want to make sure that what kind of dataset that you are going to use it. Okay? I don't want you to collect the data.
+
+343
+01:22:02,095 --> 01:22:29,227
+Bu projede değil, bu projede değil, bu projede kullanmanızı kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak
+
+344
+01:22:29,555 --> 01:22:50,855
+Okay, what kind of statistics function that you will implement? Obviously, these statistics functions need to be committative and associative, or we should be able to split this descriptive function into sub-functions.
+
+345
+01:22:51,828 --> 01:22:57,768
+...which are committive and associative, just like what we did with average function.
+
+346
+01:22:59,628 --> 01:23:04,628
+In your proposal, I want you to tell me who will be in your group.
+
+347
+01:23:04,788 --> 01:23:10,648
+You can be a group of one, you can do it by yourself, or you can be a group of two people.
+
+348
+01:23:11,508 --> 01:23:16,428
+Okay, the maximum you are allowed to form a group of two people.
+
+349
+01:23:17,747 --> 01:23:44,987
+And I want you to give me a plan for my source. I want you to tell me. So first week, we are going to install the HDFS platform. Second week, we are going to work on the tutorial example for Spark platform. The fourth week, we are going to start implementing the first descriptive function. Okay.
+
+350
+01:23:45,471 --> 01:23:55,851
+I want you to tell me on a weekly basis what you are going to do starting from the fifth week all the way to the end of the semester.
+
+351
+01:23:56,211 --> 01:24:12,971
+Now, this week is the third week. I have two weeks from now. So this is, it says fourth week, but I want two weeks from now, which is, which makes the fifth week of the semester. Okay. Not next week, the following week.
+
+352
+01:24:13,332 --> 01:24:23,632
+I want you to send me the hard copy proposal, okay, which explains your program, okay?
+
+353
+01:24:25,132 --> 01:24:33,731
+And I want you to send this proposal to this address, not my email address, okay, not my school address.
+
+354
+01:24:33,912 --> 01:24:39,452
+Don't send it to [e-posta]. Send it to this email address, okay?
+
+355
+01:24:42,836 --> 01:24:50,855
+If you do send it to my email address, it will get deleted because I don't have enough space in my email account.
+
+356
+01:24:51,496 --> 01:24:59,256
+And if I don't receive it in this email address, I will understand that you are not submitting a project.
+
+357
+01:24:59,256 --> 01:25:09,056
+Okay, please send it to this address so that you make sure that I received your project proposal.
+
+358
+01:25:09,876 --> 01:25:13,456
+Without project proposal, you will not be able to do the project.
+
+359
+01:25:13,756 --> 01:25:13,916
+Okay.
+
+360
+01:25:14,156 --> 01:25:24,016
+I want every group to determine about their topic, the data set that they're going to do, the statistic functions that they're going to implement.
+
+361
+01:25:24,176 --> 01:25:30,615
+I want you to think in two weeks time, all this and send it one page proposal to me.
+
+362
+01:25:31,536 --> 01:25:32,096
+Okay.
+
+363
+01:25:34,228 --> 01:25:42,288
+Now, at the end of the semester, the last week of the semester, in the last lecture, we are going to do in-class demos, okay?
+
+364
+01:25:43,268 --> 01:25:47,768
+So what I will do, each group will show me their demo.
+
+365
+01:25:48,467 --> 01:25:56,407
+And at the same time, I want every group to write a two page long paper about their demo.
+
+366
+01:25:56,407 --> 01:26:09,827
+And this paper will have motivation section, goal section, implementation section, which will discuss the implementation.
+
+367
+01:26:10,579 --> 01:26:13,420
+It will include user scenarios.
+
+368
+01:26:14,359 --> 01:26:20,139
+And also it will include what kind of problems that you encountered, how you solve them.
+
+369
+01:26:20,979 --> 01:26:24,600
+Okay, it will include details of your implementation.
+
+370
+01:26:24,600 --> 01:26:27,359
+It will include performance evaluation.
+
+371
+01:26:28,020 --> 01:26:30,579
+And finally, it will include experience and discussion.
+
+372
+01:26:31,279 --> 01:26:31,420
+Okay.
+
+373
+01:26:33,203 --> 01:26:49,884
+And what I want you to submit, I want you to submit your Eclipse project or NetBeans or IntelliJ, whatever you are using. I want you to put the project into a zip file and format it like this.
+
+374
+01:26:49,884 --> 01:26:59,663
+Okay, termproject underscore the first student ID underscore second student ID and zip it and send it to course email address.
+
+375
+01:27:00,083 --> 01:27:10,023
+Okay, and the email title, then you need to write term project and your student ID and your name. Okay, this is how you are going to send it to me.
+
+376
+01:27:11,103 --> 01:27:20,363
+And I want you to send your projects one day before the last lecture class. And so I want you to submit it by midnight.
+
+377
+01:27:22,203 --> 01:27:22,763
+Okay.
+
+378
+01:27:23,264 --> 01:27:41,764
+And if you send it to me late and if you do not attend the project proposal demonstration, then obviously you will not get any grade from the term project.
+
+379
+01:27:41,764 --> 01:27:50,404
+Okay, you must attend the demo class and you must do the demonstration of your work.
+
+380
+01:27:51,220 --> 01:28:08,300
+Now, as you see, between the fifth week of the class and the 14th week of the class, which is the last last week, so there is more than two months, which is more than enough to implement a project like this.
+
+381
+01:28:08,851 --> 01:28:22,451
+Okay, so therefore, I want you to think what you are going to implement at the beginning of the class. Therefore, that's why I'm asking you to submit a proposal at the fifth week, which is two weeks from today. Okay?
+
+382
+01:28:24,752 --> 01:28:28,591
+Arkadaşlar, projeyle ilgili her şey anlaşılmış mıdır? Sorunuz var mı?
+
+383
+01:28:33,300 --> 01:28:59,979
+Okay, I'm going to upload this term project description to the website. Okay, you can download it here. So two weeks from today, I want you to submit a project proposal to this email address and every student, so that's why I will know how many groups that I have who is going to submit a project.
+
+384
+01:29:00,384 --> 01:29:07,764
+Bu grup hakkında neylerle ilgili? 2 hafta zamanı bilmek istiyorum.
+
+385
+01:29:23,988 --> 01:29:24,807
+Sağol hocam.
+
+386
+01:29:25,967 --> 01:29:27,967
+Okey, teşekkür ederim katılımınız için.
+
+387
+01:29:28,547 --> 01:29:29,088
+İyi günler.
+
+388
+01:29:29,307 --> 01:29:30,467
+Haftaya görüşmek üzere.
+
+389
+01:29:30,988 --> 01:29:31,708
+İyi akşamlar hocam.
+
+390
+01:29:31,868 --> 01:29:32,688
+İyi akşamlar.
+
+391
+01:29:33,488 --> 01:29:34,248
+İyi günler hocam.
+
+392
+01:29:35,728 --> 01:29:36,307
+İyi günler.
+
+393
+01:29:36,728 --> 01:29:37,448
+İyi günler hocam.
+
+394
+01:29:37,688 --> 01:29:38,408
+İyi günler arkadaşlar.

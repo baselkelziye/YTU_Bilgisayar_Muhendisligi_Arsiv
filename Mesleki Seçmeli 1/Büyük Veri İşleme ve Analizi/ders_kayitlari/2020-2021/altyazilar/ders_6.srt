@@ -1,0 +1,1971 @@
+1
+00:08:48,500 --> 00:08:54,139
+Şu yankıyı kapatalım. Sesim geliyor mu? İtehit eder misiniz?
+
+2
+00:08:56,700 --> 00:08:59,879
+Geliyor hocam.
+
+3
+00:09:00,679 --> 00:09:01,100
+Süper.
+
+4
+00:09:04,299 --> 00:09:05,580
+Bugün...
+
+5
+00:09:07,347 --> 00:09:19,847
+Çeptir 5'ten devam edeceğiz. Geçtiğimiz hafta ders yapamamıştık. O yüzden cumartesi gününü erteledik. Cumartesi sabahı yaptık. Çeptir 4'ü konuştuk cumartesi günü.
+
+6
+00:09:28,467 --> 00:09:52,668
+Bu derse ulaşabilirler. Eğer normal derslerin bulunduğu videolar arasında göremiyorsanız bu dersi katıldığınız toplantılar arasında görebilirsiniz. Çünkü onu toplantı olarak yarattım ve sizleri de katılımcı olarak belirttim. Mutlaka sizin kullanımınızı açık bir şekilde izleyebilirsiniz.
+
+7
+00:09:55,251 --> 00:10:20,271
+Bana şeylerinizi göndermişsiniz. Projek proposlarınızı aldım ama henüz bakma fırsatım olmadı. Projek proposlarınızı okuyacağım. Herhangi bir düzeltme talebi olanlara özellikle e-mail atıp yahut da bir sonraki derste bildirimde bulunacağım. Onun dışında.
+
+8
+00:10:21,139 --> 00:10:34,519
+Çalışmaya başlamak isteyenler şimdiden benim onayımı beklemeden başlayabilirler. Gelecek hafta bir değişiklik olması gereken projeleri ben bilgilendirme yapacağım.
+
+9
+00:10:36,639 --> 00:10:42,159
+Onun dışında sorusu olan var mı derse başlamadan? [öğrenci]'un varmış.
+
+10
+00:10:42,772 --> 00:10:59,352
+Mining Data Stream Slider'ını henüz paylaşmadınız. Haklısın olur. Doğrusun. Ben paylaştığımı düşünüyordum ama demek ki onu şey yapmışız, atlamışız. Ben onun notunu alıyorum. Bu dersten sonra hemen paylaşacağım.
+
+11
+00:11:00,532 --> 00:11:02,292
+Hocam ben de bir şey sorabilir miyim?
+
+12
+00:11:02,592 --> 00:11:03,392
+Tamam sorabiliriz.
+
+13
+00:11:03,572 --> 00:11:05,832
+Siz notunuzu alın da sonradan unutma olmasın.
+
+14
+00:11:06,312 --> 00:11:07,951
+Tamam, seni dinliyorum aynı zamanda.
+
+15
+00:11:08,592 --> 00:11:12,272
+Size ulaşmak istediğimizde hangi mailden yazmamız gerekiyor acaba size?
+
+16
+00:11:14,607 --> 00:11:16,927
+[öğrenci], sen soruyorsun değil mi?
+
+17
+00:11:17,307 --> 00:11:17,548
+Evet.
+
+18
+00:11:42,607 --> 00:11:48,028
+Düşüş ve İşlemi ile ilgili bir acil sorunuz varsa bu e-mail adreslerinden bana ulaşabilirsiniz.
+
+19
+00:11:48,707 --> 00:11:55,807
+Senin e-mailini aldım. Senin e-mailinle ilgili sana geri dönüş yapamadım. Derse konuşuruz diye.
+
+20
+00:11:56,347 --> 00:12:04,507
+Sen istersen sanırım cumartesi günü arkadaşın katılacaktı. Onunla ilgili bir şeyim vardı.
+
+21
+00:12:06,227 --> 00:12:12,687
+[kişisel bilgi] Yani sizden cevap alamayınca hiçbir şekilde hallettim yani.
+
+22
+00:12:12,687 --> 00:12:15,867
+Tamam, tamam. Tamam, tamam [öğrenci].
+
+23
+00:12:30,548 --> 00:12:32,447
+Evet, başka sorusu olan var mıdır?
+
+24
+00:12:35,091 --> 00:12:50,692
+Okey, o zaman dersimize başlayalım. Bugün link analisis konusunu konuşuyoruz. Tekrardan arkadaşlarım dersi daha rahat takip edebilmesi için her dersin başında nerede olduğumuzu gösteriyorum.
+
+25
+00:12:50,831 --> 00:13:03,091
+Chapter 1'den başladık. Chapter 5'e doğru gidiyoruz. Dersi için kullandığımız textbook'u takip ediyorum. Şu anda konuşacağım, anlatacağım dersin ilgili book chapter'ı.
+
+26
+00:13:03,091 --> 00:13:23,351
+Yine bu sayfada bulabilirsiniz. Sayfanın linki burada var. Slide'larını ve video lecture'larını da yazarların bırakmış olduğu video lecture'ları burada bulabilirsiniz. Ben ayrıca dersin sayfasına dersi anlattığım materyalleri koyuyorum. Geçen haftanın materyallerini de koyacağım.
+
+27
+00:13:24,083 --> 00:13:46,243
+Bunları böyle adım adım size açıklıyorum. Çünkü sınavda nelerden sorumlu olduğunuzu söylerken direkt kitabın ilgili çeptirlerinden ve dersin sayfasına konulmuş ve kitabın sayfasında olan eğitim materyallerinden sorumlusunuz diyeceğim. O yüzden burayı takip etmeniz gerekiyor arkadaşlar.
+
+28
+00:14:01,844 --> 00:14:02,324
+Ok.
+
+29
+00:14:12,563 --> 00:14:28,343
+Now, today we are going to talk about analysis of large graphs, how we can analyze large graphs that cannot fit into a single machine or a single physical memory.
+
+30
+00:14:28,980 --> 00:14:35,980
+ve
+
+31
+00:14:35,980 --> 00:14:37,980
+onların
+
+32
+00:14:37,980 --> 00:14:38,980
+large graphs.
+
+33
+00:14:38,980 --> 00:14:39,980
+Now,
+
+34
+00:14:39,980 --> 00:14:40,980
+in particular,
+
+35
+00:14:40,980 --> 00:14:44,980
+we are going to do link analysis on the large graph data,
+
+36
+00:14:44,980 --> 00:14:45,980
+and in particular,
+
+37
+00:14:45,980 --> 00:14:48,980
+we are going to learn how we can calculate page rank.
+
+38
+00:14:51,980 --> 00:14:52,587
+Okay.
+
+39
+00:14:55,028 --> 00:15:00,908
+Now, at the beginning of the lecture, I have shown you this slide.
+
+40
+00:15:01,208 --> 00:15:05,668
+And so I told you that we have different types of big data.
+
+41
+00:15:06,148 --> 00:15:08,728
+And we talked about high dimensional data.
+
+42
+00:15:08,888 --> 00:15:12,288
+We talked about infinite data, which is streaming data.
+
+43
+00:15:12,928 --> 00:15:15,048
+And we talked about high dimensional data.
+
+44
+00:15:15,048 --> 00:15:18,827
+And we talked how we can analyze high dimensional data.
+
+45
+00:15:18,928 --> 00:15:21,248
+We talked about locality sensitive hashing.
+
+46
+00:15:22,148 --> 00:15:23,028
+Now we are going to...
+
+47
+00:15:23,028 --> 00:15:33,028
+Şimdi, bu konuda dağlar ve bu konuda dağlar yapabilirsiniz.
+
+48
+00:15:33,344 --> 00:15:54,044
+Even though we are not going to talk about other types of link analysis techniques, such as community detection and spam detection, you will find information in the book chapter that there are available algorithms that process graph data in order to do community detection and spam detection.
+
+49
+00:15:54,044 --> 00:15:59,663
+But today, we are particularly interested in how we calculate the page rank.
+
+50
+00:16:04,179 --> 00:16:15,159
+Okay, now the graph data that we are talking about, so you will see such graph data in different domains. One of them is social networks.
+
+51
+00:16:16,379 --> 00:16:24,440
+Now this is an illustration of a visualization of a social network, Facebook.
+
+52
+00:16:25,364 --> 00:16:36,024
+Okay. And you see that so in any given graph data, you have nodes and you have edges.
+
+53
+00:16:36,528 --> 00:16:40,908
+Edges are the links between the nodes, which connect the nodes.
+
+54
+00:16:41,488 --> 00:16:41,628
+Okay.
+
+55
+00:16:42,048 --> 00:16:46,528
+And in any given graph data, you may have directed graph data.
+
+56
+00:16:46,868 --> 00:16:49,488
+In this case, the edge has direction.
+
+57
+00:16:50,168 --> 00:16:56,927
+So one node has an edge to another node, which has an arrow, actually.
+
+58
+00:16:57,628 --> 00:17:00,248
+And it has a direction.
+
+59
+00:17:00,827 --> 00:17:01,067
+Okay.
+
+60
+00:17:01,208 --> 00:17:04,367
+If it has a direction, then you have a directed graph.
+
+61
+00:17:04,528 --> 00:17:23,208
+If the two nodes have an edge which has no direction in it, then you have undirected graph. For example, Facebook is an undirected graph. Why? Because in Facebook example, you don't know who initiated the friendship between the two nodes.
+
+62
+00:17:23,208 --> 00:17:30,988
+But for example, Twitter is another example social network. Twitter is a directed graph.
+
+63
+00:17:31,327 --> 00:17:41,647
+Why? Because you know who follows who on Twitter. You know who actually initiated the link between the two nodes.
+
+64
+00:17:45,011 --> 00:17:56,231
+Now, this is another visualization of graph data. And this particular graph data is from the web domain, in particularly web block domain.
+
+65
+00:17:56,231 --> 00:18:11,051
+And this graph data is visualized in a way that the blue is indicating one political wing and the red is indicating the other political wing.
+
+66
+00:18:13,011 --> 00:18:15,112
+There exist edges in between.
+
+67
+00:18:17,412 --> 00:18:29,672
+And now what we are going to do, we are interested in how you can process such large scale data in order to create information like this.
+
+68
+00:18:29,991 --> 00:18:36,251
+Now this, what I am showing to you right now is a summary information about this data.
+
+69
+00:18:36,251 --> 00:18:39,572
+Now the summary information could be a visualization.
+
+70
+00:18:40,211 --> 00:19:00,652
+Okay, it could be a ranking of the nodes. Okay, it could be a table that shows statistical information about the graph data. Okay, it is something useful that is extracted from the large scale data. Okay.
+
+71
+00:19:02,331 --> 00:19:07,092
+Now, in this particular case, so this is a visualization. Okay.
+
+72
+00:19:08,980 --> 00:19:21,700
+And this is another visualization, which is done on the graph data. And the graph data is extracted from the papers. Okay.
+
+73
+00:19:23,731 --> 00:19:28,851
+As you know, a paper, a publication has a references section.
+
+74
+00:19:29,291 --> 00:19:37,692
+And the authors of that paper is referencing those papers that are relevant.
+
+75
+00:19:37,692 --> 00:19:50,331
+Now, if you use the references section of each paper and create an edge between the nodes, and each node being the paper,
+
+76
+00:19:50,867 --> 00:20:05,867
+ve etkişe
+
+77
+00:20:07,347 --> 00:20:35,288
+Different disciplines have papers and they all are citing each other. And so each color is representing a different discipline. Now, this tells you that most of the disciplines are actually working within this discipline. So there is not much multidisciplinary area. Most of them are working closely.
+
+78
+00:20:35,347 --> 00:20:41,327
+within the same discipline because you see that they are actually referencing each other.
+
+79
+00:20:41,327 --> 00:20:48,107
+Now, this is also a summary information which is extracted from the given graph data.
+
+80
+00:20:50,087 --> 00:20:59,268
+Now, another graph data example is from internet. So far, the graph data examples that I have shown you
+
+81
+00:21:00,692 --> 00:21:03,731
+are from the software level.
+
+82
+00:21:04,291 --> 00:21:04,332
+Okay.
+
+83
+00:21:04,832 --> 00:21:06,592
+And you can also have
+
+84
+00:21:06,592 --> 00:21:08,751
+graph data
+
+85
+00:21:08,751 --> 00:21:10,852
+extracted from the hardware level.
+
+86
+00:21:11,011 --> 00:21:12,991
+For example, in this particular example,
+
+87
+00:21:13,531 --> 00:21:14,531
+so you have the
+
+88
+00:21:14,531 --> 00:21:16,011
+internet infrastructure
+
+89
+00:21:16,011 --> 00:21:17,592
+and these
+
+90
+00:21:17,592 --> 00:21:20,971
+servers that are
+
+91
+00:21:20,971 --> 00:21:23,112
+providing the
+
+92
+00:21:23,112 --> 00:21:24,771
+underlying internet
+
+93
+00:21:24,771 --> 00:21:26,872
+infrastructure are actually
+
+94
+00:21:26,872 --> 00:21:27,991
+connected to each other.
+
+95
+00:21:27,991 --> 00:21:28,572
+Okay.
+
+96
+00:21:28,692 --> 00:21:48,912
+And if you take each server as a node, and if you take the connection between the servers as an edge, then you can also create a graph data that shows you the internet infrastructure, okay?
+
+97
+00:21:49,251 --> 00:21:50,872
+Communication networks, okay?
+
+98
+00:21:51,132 --> 00:21:55,971
+And on top of such graph data, you can also do analysis, link analysis.
+
+99
+00:22:00,756 --> 00:22:03,276
+Okay, so let's take a look at this.
+
+100
+00:22:05,140 --> 00:22:32,079
+Now, here's another graph data, which in this lecture, we will be focusing on this type of graph data. Now, this graph data is extracted from the web domain, okay? Now, the web, as you know, consists of HTML pages, and each HTML page has a link to other HTML pages, okay?
+
+101
+00:22:33,140 --> 00:22:42,160
+HTML page has hyperlinks. So what hyperlink is that? When you click on it, it takes you from one page to another page.
+
+102
+00:22:42,900 --> 00:22:51,400
+Okay. Here is an example. You see that I have four pages here and each page has a hyperlink that points to another page.
+
+103
+00:22:53,364 --> 00:23:12,003
+Now, what we are interested in doing here is that we want to, so each page is a node and the edges is the hyperlinks. We are interested in creating a network, okay, out of this web structure.
+
+104
+00:23:12,564 --> 00:23:25,443
+And on top of such network, which is a graph data, we would like to do link analysis. And by doing the link analysis, we would like to find the importance of each page.
+
+105
+00:23:26,364 --> 00:23:26,923
+Okay.
+
+106
+00:23:33,715 --> 00:23:36,675
+We would like to find the importance of each page.
+
+107
+00:23:37,295 --> 00:23:43,036
+Now, if we can find the importance of each page, it's going to help us in different ways.
+
+108
+00:23:43,215 --> 00:23:44,195
+So let us see.
+
+109
+00:23:44,576 --> 00:23:46,915
+So what are the advantages of that?
+
+110
+00:23:47,115 --> 00:23:47,275
+Okay.
+
+111
+00:23:47,395 --> 00:23:49,715
+Now, this is an example of a web graph.
+
+112
+00:23:49,875 --> 00:23:50,155
+Okay.
+
+113
+00:23:50,255 --> 00:23:51,895
+It's a small web graph, obviously.
+
+114
+00:23:52,415 --> 00:23:59,435
+We would like to find out which of these web pages given the web graph is important.
+
+115
+00:24:02,291 --> 00:24:16,592
+Okay. Now, there are billions of webpages right now on the web. Okay. Now, and you are looking for a specific web page that you are interested in.
+
+116
+00:24:17,299 --> 00:24:42,880
+Now, there are two different ways. One way is that you can browse the web. So what you can do, you can go one of the directories. There exists some directories. One of them is Yahoo, Demos, LookSmart. These are web directories. You can go there and you can start browsing the directory. So you see that here there are different categories. Okay.
+
+117
+00:24:44,115 --> 00:24:56,155
+You can start with one of the category that you are interested in, and then you can go to subcategories, and then from there you can further go to subdirectories, and until you find something that you are interested in.
+
+118
+00:24:56,615 --> 00:25:01,175
+Now, that's one way to find what you are looking for on the web.
+
+119
+00:25:01,675 --> 00:25:11,175
+Now, the other web is the common web. Almost every day, on a daily basis, almost everybody who is using the internet...
+
+120
+00:25:12,115 --> 00:25:24,755
+Who is using the web is using the web search. Now, the way that we are actually doing this, we are entering some keywords into a search engine and the search engine brings us the results.
+
+121
+00:25:25,895 --> 00:25:37,455
+Okay. Now, so a web search engine is basically is an information retrieval engine. Okay. Information retrieval is basically
+
+122
+00:25:40,180 --> 00:25:45,160
+A small version of a web search engine, but the idea is the same.
+
+123
+00:25:45,759 --> 00:25:54,820
+And information retrieval is actually, is being done on the relatively small and trusted document set.
+
+124
+00:25:54,820 --> 00:26:04,440
+For example, you are working for a company and in your company there are maybe thousands of PDF documents.
+
+125
+00:26:04,816 --> 00:26:13,976
+And you have an information retrieval engine and your engine is helping you to find the relevant documents to your query.
+
+126
+00:26:14,708 --> 00:26:23,368
+Now, in that particular company, you have a small number of documents, which is in the order of thousands.
+
+127
+00:26:23,368 --> 00:26:35,748
+And they all trusted because they all are monitored and entered into the document collection by the company employees.
+
+128
+00:26:37,364 --> 00:26:43,724
+But on web, this is different because the web is huge and on web, we have untrusted documents.
+
+129
+00:26:44,243 --> 00:27:07,203
+And we have documents that could be considered as spam. People are creating webpages that are not relevant to a certain query, but even though they are not relevant, they update the web page content in a way that that page can be visible on the search results.
+
+130
+00:27:07,203 --> 00:27:11,051
+Okay, now, so therefore...
+
+131
+00:27:11,731 --> 00:27:34,751
+We have two main challenges on the web when we are doing the web search. One is that we need to find those web pages that are trustworthy because when you enter your keywords, okay, there may be millions of web pages that may match to your query.
+
+132
+00:27:35,284 --> 00:27:48,544
+So you need to find those webpages that are trustworthy, which means that the content of those pages are trustworthy and they are worth to look at.
+
+133
+00:27:49,344 --> 00:27:50,824
+Okay, they are not spam.
+
+134
+00:27:51,504 --> 00:27:59,683
+Now, the second challenge is that there may be many matches to your query.
+
+135
+00:28:00,307 --> 00:28:07,708
+Among the trustworthy webpages, there may be many webpages that may match to your query.
+
+136
+00:28:09,288 --> 00:28:15,627
+Okay, now we are interested in finding the best answer to a query.
+
+137
+00:28:16,127 --> 00:28:21,807
+Okay, so therefore there may be many trustworthy webpages that match to our query.
+
+138
+00:28:22,127 --> 00:28:24,528
+We are interested in the best answer.
+
+139
+00:28:25,076 --> 00:28:29,676
+Now, in order to do this, we would like to rank those webpages.
+
+140
+00:28:30,196 --> 00:28:44,636
+If we can find a ranking methodology that would rank the webpages in a way that only the trustworthy webpages are in the higher portion of the ranking results.
+
+141
+00:28:45,107 --> 00:28:54,367
+And also those webpages that are the best match to the given query.
+
+142
+00:28:54,367 --> 00:28:55,107
+Okay.
+
+143
+00:28:59,155 --> 00:29:21,215
+Now, take a look at this particular small toy graph. If you look at it, you'll see that there are two web pages here. One is in blue, the other one is red. Now, the one in blue is actually receiving many links from others.
+
+144
+00:29:22,215 --> 00:29:25,895
+But the one in red is only receiving one link.
+
+145
+00:29:26,963 --> 00:29:41,243
+Now, on web, if your web page is an important web page, and if your web page is a valuable web page, many people are going to give a link to your web page.
+
+146
+00:29:42,163 --> 00:29:46,104
+So, this means that the connectivity or your web page will be high.
+
+147
+00:29:47,412 --> 00:29:59,991
+And if your webpage receives only a few links, which means that it's not that important, or it's not monitored by many other people.
+
+148
+00:30:00,000 --> 00:30:06,000
+ve bu konuda da bilgi verilir.
+
+149
+00:30:06,000 --> 00:30:10,000
+Bu konuda, bu konuda,
+
+150
+00:30:10,000 --> 00:30:16,000
+bu konuda, bu konuda,
+
+151
+00:30:16,000 --> 00:30:28,000
+bu konuda,
+
+152
+00:30:28,000 --> 00:30:34,599
+And therefore, they put a link in their website to this web page in blue.
+
+153
+00:30:34,599 --> 00:30:45,359
+So therefore, the ranking of it should be higher than this one, okay, because it has more quality or more importance in it.
+
+154
+00:30:46,324 --> 00:31:09,364
+Now, so you see that there are two websites. One is unknown website. The other one is the website to the Stanford University. Obviously, if you look at the web link structure, you will see that the Stanford University websites will receive much more links from other websites compared to an unknown link.
+
+155
+00:31:12,660 --> 00:31:38,279
+Okay, now this is the problem that we are interested in. We are going to learn an algorithm that would analyze such a big data, such as graph data for the web, and that can extract, that can do the link analysis and compute the importance of nodes in the graph.
+
+156
+00:31:38,655 --> 00:31:53,455
+Now, there are different algorithms that does that. So, there are algorithms, PageRank algorithms, HITS algorithm, Topic-Specific PageRank algorithm, WebSpan detection algorithms.
+
+157
+00:31:53,675 --> 00:32:05,915
+Now, they all do link analysis and they all compute the importance of a node in a given graph. Okay? But here, today, we are going to look at only the PageRank algorithm.
+
+158
+00:32:27,220 --> 00:32:31,039
+Okay, let's see how the algorithm works.
+
+159
+00:32:32,299 --> 00:32:38,279
+Now, the idea here is that every link is counted as a vote.
+
+160
+00:32:38,279 --> 00:32:39,099
+Okay.
+
+161
+00:32:40,379 --> 00:32:46,119
+Now, if a page has more inlinks,
+
+162
+00:32:47,220 --> 00:33:10,220
+Then the others, okay, then that page is more important than the others, okay? And here we are looking at the incoming links. For example, going back to the previous example here, you see that I have two websites. The first one is the website to Stanford University. You see that it has...
+
+163
+00:33:10,996 --> 00:33:15,996
+23,000 inlinks ve dağıtık bir inlink.
+
+164
+00:33:15,996 --> 00:33:19,996
+Ve dağın bir inlink var.
+
+165
+00:33:20,468 --> 00:33:39,868
+So, by looking at this, without actually looking at what the link is, okay, by looking at the number of inlinks, you can see that, okay, the first one must be much important than the second one, because 23,400 different websites owners.
+
+166
+00:34:03,855 --> 00:34:09,395
+If you receive a high number of links, this will affect your importance.
+
+167
+00:34:09,796 --> 00:34:13,076
+The more link you have, the more important you are.
+
+168
+00:34:13,076 --> 00:34:20,675
+And the second idea here is that not all the in-links are equal.
+
+169
+00:34:24,416 --> 00:34:29,256
+So which means that links from important pages would count more.
+
+170
+00:34:32,820 --> 00:34:38,480
+Let's take a look at this example here in this particular example I have.
+
+171
+00:34:41,000 --> 00:34:42,780
+I have 11 nodes.
+
+172
+00:34:43,720 --> 00:34:55,760
+And the total ranking score is 100, which means that the total score for 11 nodes is the 100.
+
+173
+00:34:55,760 --> 00:34:57,480
+Okay, now.
+
+174
+00:34:58,623 --> 00:35:06,023
+By using the PageRank algorithm, I'm going to divide the importance to these nodes that are available in the graph.
+
+175
+00:35:07,123 --> 00:35:12,643
+Now, it turns out that now node B receives the highest ranking.
+
+176
+00:35:13,363 --> 00:35:16,443
+Okay, now all these are web pages.
+
+177
+00:35:17,083 --> 00:35:24,083
+Now, in the visualization, so you see that some web pages is visualized with the bigger circle.
+
+178
+00:35:24,083 --> 00:35:32,907
+Now, this bigger circle, basically, the size of the circle is related with the...
+
+179
+00:35:33,108 --> 00:35:50,608
+PageRank score. The higher score, the bigger circle, just for the visualization purposes. Okay. So on, apart from that, every web page, every node here is a web page. Okay.
+
+180
+00:35:51,476 --> 00:36:02,195
+Now, you see that node B is receiving more innings compared to the other nodes that are available in this small web graph.
+
+181
+00:36:02,836 --> 00:36:10,155
+Okay, now, if you calculate the page rank, it turns out that node B has the highest score.
+
+182
+00:36:11,396 --> 00:36:18,155
+Okay, which means that the higher number innings you have, the more importance you have.
+
+183
+00:36:18,739 --> 00:36:37,159
+Okay. And in the page rank, the second idea is that not all the links are equal. If you receive an in-link from the highest score or from the high score nodes, your page rank will also be higher.
+
+184
+00:36:38,059 --> 00:36:42,439
+Now, if you look at the node G, node G is receiving only one link.
+
+185
+00:36:42,768 --> 00:36:51,028
+But this link is coming from the page that has the highest link in the web graph.
+
+186
+00:36:51,443 --> 00:37:00,483
+So, therefore, that by receiving from this link from the node B, node C has also a high ranking, as you see.
+
+187
+00:37:00,483 --> 00:37:13,923
+Okay. And there are web pages, as you see here, which have no links, but so therefore their importance is the lowest within the given graph.
+
+188
+00:37:17,652 --> 00:37:37,652
+Okay, now we just learned that page link is based on two different ideas. One is just, so the more links you have, the more important you are. The second one is that if you receive a link from the higher...
+
+189
+00:37:38,324 --> 00:37:45,864
+More important pages, then your ranking score will be also high.
+
+190
+00:37:48,123 --> 00:37:53,423
+Page rank is actually combining these two ideas.
+
+191
+00:37:53,972 --> 00:38:02,052
+Okay, now let's take a look at how we would compute a PageRank score of a node, okay?
+
+192
+00:38:02,712 --> 00:38:14,132
+So obviously, I will start from the simplest version of PageRank, then I will go to do complex versions of it.
+
+193
+00:38:14,132 --> 00:38:17,252
+Now, so I'm going to start with the simplest version of it.
+
+194
+00:38:17,588 --> 00:38:27,068
+Now, you see that here I have also a small graph, okay, which consists of six nodes, and you see there are some edges in between.
+
+195
+00:38:28,268 --> 00:38:40,668
+And the node in red color, node J, is receiving links from node I and node K.
+
+196
+00:38:41,907 --> 00:38:58,587
+Okay, now node i and node k has also a ranking score. Okay, I'm going to represent a ranking score with r, okay, which means that the ranking score for i is ri, ranking score for k is rk.
+
+197
+00:39:09,780 --> 00:39:31,480
+At the page rank scores of the nodes that receive, that give a link to node J. Okay, we will only count the page rank scores of the nodes that give link to node J. Okay, I have two nodes here. One is I, the other one is K.
+
+198
+00:39:32,436 --> 00:39:51,376
+Now, the second thing that we are going to do, now, each node is going to give its page rank score proportional to the alt number links, proportional to the alt links that it has.
+
+199
+00:39:51,636 --> 00:39:59,956
+Now, it has, this node I has three links, three alt links, so therefore we are.
+
+200
+00:40:00,000 --> 00:40:16,819
+And we are going to divide its page rank scores by three. And we are going to pass this to node J. And node K has four outlinks. Okay. It's going to be our, its ranking score is RK. And we are going to divide it by four and pass it to.
+
+201
+00:40:17,168 --> 00:40:29,708
+Not J. And so the ranking score for Rj is the sum of Ri divided by 3 and plus Rk divided by 4.
+
+202
+00:40:30,739 --> 00:40:55,579
+Okay, now similarly, if I wanted to calculate the page ring scores for the blue nodes here, okay, since they receive a link from node J, I am going to pass the page ring score of node J, which is Rj, to these blue nodes, and I'm going to pass the proportional page ring scores to each one of them.
+
+203
+00:40:55,579 --> 00:40:58,739
+So Rj divided by 3 will be passed to this.
+
+204
+00:40:58,739 --> 00:41:03,219
+Rj divided by 3 will be passed to this one and this one as well.
+
+205
+00:41:03,859 --> 00:41:04,259
+Okay.
+
+206
+00:41:07,123 --> 00:41:13,823
+Now, this is the equation that I just showed you in the previous example.
+
+207
+00:41:13,823 --> 00:41:32,863
+Now, in order to calculate the page rank score for Rj, what you need to do, you need to sum the proportional page rank scores of the nodes that give link to j, not j.
+
+208
+00:41:35,123 --> 00:41:50,643
+Pagerink scores, I say, because you need to divide the Pagerink score of the node that gives a link to J divided by the number of outlink of that node.
+
+209
+00:41:51,003 --> 00:41:59,943
+OK, and for each of the node, you are going to do this, each of the node that gives a link to node J, and then you are going to sum those values.
+
+210
+00:41:59,943 --> 00:42:02,943
+OK, now this is the general way of...
+
+211
+00:42:03,123 --> 00:42:06,443
+Bu konularını yapmak istedim.
+
+212
+00:42:06,443 --> 00:42:07,003
+Okay.
+
+213
+00:42:09,903 --> 00:42:13,304
+Now, here you see a simple web graph.
+
+214
+00:42:13,723 --> 00:42:16,423
+And this web graph consists of three nodes.
+
+215
+00:42:17,663 --> 00:42:20,183
+Y, A, and M.
+
+216
+00:42:20,851 --> 00:42:33,451
+Okay, you see that A is giving a link to M, A is giving a link to Y, it's receiving a link to Y, a link from Y, and Y is also giving a link to itself, etc.
+
+217
+00:42:36,052 --> 00:42:49,952
+If I apply this equation to this small toy example in order to find the page rank score for each node, now these are the three equations that I have, okay?
+
+218
+00:42:50,692 --> 00:42:57,036
+Ry equal to Ry divided by 2 because Y has two alt links, therefore...
+
+219
+00:42:58,452 --> 00:43:15,272
+So I need to divide the Ry by 2 and plus Ra has also linked to Y, Ra divided by 2. As you see, A has also two outlinks.
+
+220
+00:43:15,987 --> 00:43:43,787
+Similarly, RA receiving one link from M. M has one alt link. Therefore, RM divided by one, which is RM. And it is receiving one link from the Y. Ry divided by two, because it has two alt links. You see Ry divided by two. And the summation of those will give me the RA. Okay. And RM, M is receiving only one link.
+
+221
+00:43:43,987 --> 00:43:50,148
+A ve A ve A ve A ve A ve A ve 2. I have 3 equations.
+
+222
+00:43:50,707 --> 00:44:03,108
+OK, now I have 3 equations and 3 unknowns. What are the 3 unknowns? The ranking score for Y, ranking score for A and M.
+
+223
+00:44:04,067 --> 00:44:10,148
+Now, if I have 3 equations and 3 unknowns and no constants value, then there is no
+
+224
+00:44:10,639 --> 00:44:21,199
+Unique solution. If I try to solve this, okay, and there will be no one unique solution for Ry, Ra, and Rm.
+
+225
+00:44:22,260 --> 00:44:30,779
+Now, in order to solve this, what I need to do, I need to bring an additional constraint, an additional equation, which is this.
+
+226
+00:44:31,764 --> 00:44:41,563
+And this equation tells that the total value of all page rank scores should equal to one.
+
+227
+00:44:43,124 --> 00:44:48,884
+Okay, so this is the fourth equation that I bring to existing equations.
+
+228
+00:44:49,224 --> 00:44:58,503
+Now, if I have four equations and three unknowns, and if I solve this equation set, then I will have a unique solution such as this.
+
+229
+00:44:59,380 --> 00:45:13,179
+Okay. Now, this is okay for a small size graph. Okay. But what would happen if I have a large scale graph? Okay. Such as, such as the web graph. Okay.
+
+230
+00:45:17,108 --> 00:45:22,568
+Let's just take a look at when we have the web graph.
+
+231
+00:45:39,572 --> 00:46:03,991
+Okay. Now, on a web graph, so when we show a graph such as web graph, when we represent it, we usually represent it with a matrix. And this matrix is called adjacency matrix. Okay.
+
+232
+00:46:04,527 --> 00:46:20,427
+An example of this matrix is this one. This is a matrix. And as you, so here, starting from, so you see the columns. Okay. And starting from the first node.
+
+233
+00:46:20,815 --> 00:46:25,815
+All the way to the last node, okay, we have that many columns in this matrix.
+
+234
+00:46:26,655 --> 00:46:34,615
+And so for the rows, starting from the first node all the way to the last node, we have also that many rows, okay?
+
+235
+00:46:35,395 --> 00:46:45,835
+And if there exists a link between a certain node to another node in the graph, then you have here non-zero value.
+
+236
+00:46:46,867 --> 00:46:59,027
+Okay, now if there is no link between this one and this one, in that case, you have zero value. So which means that in this matrix, we will have zero and non-zero values. Okay.
+
+237
+00:47:00,788 --> 00:47:09,147
+Now, for the non-zero value, so for example, if there is a link from i to j, okay.
+
+238
+00:47:10,068 --> 00:47:12,168
+I will have non-zero value.
+
+239
+00:47:12,468 --> 00:47:15,208
+But what kind of value that I need to put here?
+
+240
+00:47:16,208 --> 00:47:25,668
+Now for the value, what we do here, we use one divided by the number of outlinks that this node has.
+
+241
+00:47:26,808 --> 00:47:32,748
+One divided by the outlet number of the node which is giving the link.
+
+242
+00:47:33,427 --> 00:47:58,447
+Okay. In this particular case, this link has two, three outlinks, one, two, three. So therefore, here, there will be one over three, one over three, one over three. Okay. Now, this way, we will construct our adjacency matrix. Okay. Now, if you look at it,
+
+243
+00:47:58,867 --> 00:48:13,927
+If I add the values in this column together, okay, many of the values will be zero, only three of them will be non-zero, and their values will be 1 over 3, 1 over 3, 1 over 3, okay?
+
+244
+00:48:15,847 --> 00:48:26,347
+Now, if I add these values together, it will turn out that the total number, the summation of the values in this column will be equal to 1.
+
+245
+00:48:27,092 --> 00:48:33,152
+And it will be the same for all the columns in this adjacency matrix.
+
+246
+00:48:34,032 --> 00:48:40,731
+So therefore, we call this adjacency matrix as a stochastic matrix, stochastic adjacency matrix.
+
+247
+00:48:40,731 --> 00:48:49,731
+In other words, if a matrix has, if all the values in the column vector of a matrix...
+
+248
+00:48:50,547 --> 00:49:05,167
+Okay, equal to one if they add the values of a column and if the result is one for all the columns, okay, then we call this matrix as a stochastic matrix.
+
+249
+00:49:08,275 --> 00:49:32,275
+Now, you see that, so here is the formal representation of what I just told you. If there is a link from i to j, okay, then we write 1 over di, di meaning that the number of all things of i, and if there is no link, then the value will be 0.
+
+250
+00:49:32,659 --> 00:49:47,539
+Okay. And since the columns, column vector of that matrix is going to equal to one, the summation of it is equal to one, then we call this as a stochastic matrix. Okay.
+
+251
+00:49:49,940 --> 00:49:59,559
+Now, this was the, the four equation that we used in the previous toy example. Okay. Now,
+
+252
+00:50:00,000 --> 00:50:05,360
+So what we can do, what we are going to do, we are going to write this equation just like this.
+
+253
+00:50:05,780 --> 00:50:10,719
+Okay, here there will, this is a column vector, which is a ranking vector.
+
+254
+00:50:11,039 --> 00:50:14,059
+This is a column vector, which is the same as this one.
+
+255
+00:50:14,219 --> 00:50:16,079
+And this is a matrix.
+
+256
+00:50:16,420 --> 00:50:18,920
+Okay, stochastic adjacency matrix.
+
+257
+00:50:19,219 --> 00:50:20,679
+We want to write this equation.
+
+258
+00:50:20,900 --> 00:50:22,280
+Let's see how we can write it.
+
+259
+00:50:23,000 --> 00:50:23,440
+Okay.
+
+260
+00:50:25,619 --> 00:50:48,159
+Now, if you take a look at this one, so this here is a row vector, right? Row vector for J, node J. And if you take a look at every values,
+
+261
+00:50:48,851 --> 00:51:00,871
+Okay, every values on this row vector, these are the values for the nodes that are giving link to node j.
+
+262
+00:51:00,871 --> 00:51:12,831
+Okay, so remember, when we calculate the patron score for node j, what we did is that we calculated the proportional
+
+263
+00:51:15,027 --> 00:51:20,228
+Proportional PageRank Scores of the Nodes that give link to J.
+
+264
+00:51:20,623 --> 00:51:28,164
+Okay, and then we added all those values together and which gave us the patron score for node j.
+
+265
+00:51:28,704 --> 00:51:48,603
+Now, for this particular row vector, if I take this transpose of this vector, okay, and if I, and this is a column vector, and I take the transpose of this one and turn it into a column vector, and when I multiply the transpose of this row vector,
+
+266
+00:51:48,623 --> 00:51:53,363
+element by element with this column vector.
+
+267
+00:51:53,603 --> 00:51:55,863
+And if I add the values together,
+
+268
+00:51:56,384 --> 00:51:59,583
+now this will give us the value for
+
+269
+00:51:59,583 --> 00:52:02,923
+patron score for Rj,
+
+270
+00:52:03,403 --> 00:52:05,583
+which is exactly this one.
+
+271
+00:52:05,583 --> 00:52:07,103
+So which means that
+
+272
+00:52:07,423 --> 00:52:23,224
+In order to calculate the value for Rj, what I'm doing is that I am taking this row vector, taking transpose of it, converting into a column vector and multiplying with another column vector element by element.
+
+273
+00:52:23,463 --> 00:52:32,244
+Okay. And then adding those results together, which will give me the value of Rj. Now, this is exactly what this equation is doing.
+
+274
+00:52:32,916 --> 00:52:43,536
+Now, if this equation is, if I use this equation to find only one element in this column vector, I can also use this for every element.
+
+275
+00:52:44,096 --> 00:52:52,036
+So therefore, what we are saying is that, so I can write this equation in the matrix form just like this.
+
+276
+00:52:52,596 --> 00:52:52,936
+Okay.
+
+277
+00:52:55,476 --> 00:53:08,356
+And here is the stochastic adjacency matrix. And here is the column vector, which is the page rank vector. And this is also a column vector and page rank vector. Okay.
+
+278
+00:53:14,867 --> 00:53:40,607
+Now, this equation is a known equation in linear algebra. Okay. And this equation is called eigenvector formulation. Okay. Now, I would like to give a break for 10 minutes, then I will start with how we can calculate, how we can compute this formulation in the next session. So let's give us 10 minute break. Okay.
+
+279
+00:53:42,867 --> 00:53:45,147
+Arkadaşlar, 10 dakika sonra devam edeceğim.
+
+280
+01:03:16,563 --> 01:03:19,963
+Evet arkadaşlar, devam edelim. Sesimin geldiğini bir teyit edebilir misiniz?
+
+281
+01:03:23,987 --> 01:03:24,748
+Geliyor hocam.
+
+282
+01:03:26,027 --> 01:03:35,208
+Tamamdır. Bir önceki dersle ilgili slide'ları da ben de arada dersin sayfasına yüklemiş oldum. Oradan indirebilirsiniz arkadaşlar.
+
+283
+01:03:38,804 --> 01:03:57,763
+Okay, now we just talked about the patron flow equation, which is R equal to M dot product R, which is here you see that R
+
+284
+01:03:59,860 --> 01:04:22,920
+is the column vector, which is for the rank vector. M is the stochastic adjacency matrix. And R here is the, again, the rank vector. Now, this equation here, this equation is a well-known equation in linear algebra, and we call this eigenvector formulation.
+
+285
+01:04:24,788 --> 01:04:45,947
+And in fact, this equation is looks like this here. A is a matrix. You multiply a matrix with a column matrix and the result becomes lambda multiply another column matrix. And so here is a lambda is the eigenvalue. Okay.
+
+286
+01:04:47,148 --> 01:04:48,947
+Now this eigenvalue.
+
+287
+01:04:50,771 --> 01:04:58,632
+So, the Lambda is an eigenvalue and the X is called as the principal eigenvector.
+
+288
+01:04:58,632 --> 01:04:59,152
+Okay.
+
+289
+01:04:59,592 --> 01:05:06,311
+So, when the eigenvalue is one, then X is called as the principal eigenvector.
+
+290
+01:05:07,668 --> 01:05:19,327
+Now, what we are going to do, we are going to solve this eigenvector formulation with a well-known technique called power iteration method.
+
+291
+01:05:19,947 --> 01:05:26,547
+Okay, now if this is an eigenvector formulation, then the power iteration can be applied on this equation.
+
+292
+01:05:27,507 --> 01:05:40,487
+And we use this power iteration method in order to find the value for the principal eigenvector, okay, which in this case here is the R, okay.
+
+293
+01:05:44,692 --> 01:05:56,291
+Okay, now in order to understand what we are going to do, so let's first look at a toy example. In this toy example, I again have three nodes.
+
+294
+01:05:58,195 --> 01:06:03,455
+And here I created the adjacency metrics for this toy example.
+
+295
+01:06:04,075 --> 01:06:04,235
+Okay.
+
+296
+01:06:04,575 --> 01:06:08,895
+You see that, for example, Y has two alt links.
+
+297
+01:06:09,155 --> 01:06:11,095
+One is to Y itself.
+
+298
+01:06:11,235 --> 01:06:13,355
+And the second one is not A.
+
+299
+01:06:13,875 --> 01:06:20,815
+And since it has two alt links, we divide the value one by two.
+
+300
+01:06:21,175 --> 01:06:21,335
+Okay.
+
+301
+01:06:21,955 --> 01:06:23,995
+A has also two alt links.
+
+302
+01:06:23,995 --> 01:06:25,175
+One is to Y.
+
+303
+01:06:25,415 --> 01:06:26,195
+And the second one.
+
+304
+01:06:26,195 --> 01:06:31,675
+So therefore we have one over two as the non-zero values.
+
+305
+01:06:32,395 --> 01:06:40,335
+And M has only one link, which is to A, and therefore one over one, it's one.
+
+306
+01:06:40,735 --> 01:06:43,215
+And this gives me the adjacency metrics.
+
+307
+01:06:44,436 --> 01:07:03,836
+And here, I'm interested in calculating this equation, okay, this eigenvector equation. And here, I have the adjacency matrix. I multiply this with the column vector, which is the rank vector. And so, it will give me another column vector, which is also the rank vector.
+
+308
+01:07:29,684 --> 01:07:52,744
+Okay. Now, as we are, how we calculate this, how we apply this power iteration method on the eigenvector equation is as the following. Now, at the beginning, what we say is that we say the initial page rank vector, okay, will be a
+
+309
+01:07:53,139 --> 01:08:06,679
+A column vector, where the all values of the all elements of the vector will be one over n. So what is n? n is the total number of nodes in that web graph.
+
+310
+01:08:08,259 --> 01:08:18,159
+In the previous example, I had three, three nodes in the graph. So therefore, for the previous example, it would be one over three.
+
+311
+01:08:18,996 --> 01:08:36,296
+Now, you see here, this is a row vector. And so we take the transpose of it, which means that this will be a column vector. So the initial state of the rank vector is the column vector, where all elements of the column vector is 1 over n.
+
+312
+01:08:37,140 --> 01:08:57,380
+Okay, now what we are going to do, we are going to put the initial state, which is R0 here, and multiply stochastic adjacency matrix with this column vector, and which in turn will give us the next state of the column vector.
+
+313
+01:08:59,572 --> 01:09:09,152
+Okay, now, after I find the next state of the column vector, what I'm going to do, I'm going to calculate the difference between the two vectors. Okay.
+
+314
+01:09:09,844 --> 01:09:31,724
+Now, here is the state, next state of the vector. And this is the previous state of the vector. And if I look at the, if I subtract it, and if it is less than an epsilon value, okay, in that case, I'm going to stop, which means that the rank vector converged.
+
+315
+01:09:32,180 --> 01:09:59,760
+Okay, it converges some something constant value. So therefore, if it is, if the difference is less than certain threshold or a small number, then I will stop. Otherwise, I will keep doing this. So next time, so when I calculate R1, in the next iteration, I'm going to put a new column vector here, and I'm going to multiply the R1.
+
+316
+01:10:00,000 --> 01:10:17,619
+M, OK? And then it will give me R2, OK? And then in the next step, I will put R2 here and multiply it and then it will give me R3. And every time, I will check whether the difference between the next step and the current step is less than epsilon.
+
+317
+01:10:19,028 --> 01:10:38,587
+Okay, so this is how the power iteration is applied. Now let us apply the power iteration on the toy example that we just, we have just seen. Now this was the toy example, and this was our edge, stochastic adjacency matrix.
+
+318
+01:10:40,212 --> 01:11:08,212
+Okay, now this is the pseudo, so simple algorithm for the power iteration method. At the beginning, the values for the rank vector is 1 over n. As you see, I give 1 over 3 to every element of the rank vector. And I multiply this vector with this stochastic adjacency matrix. And after multiplication, now the second
+
+319
+01:11:08,212 --> 01:11:36,212
+birçok
+
+320
+01:11:36,212 --> 01:11:53,512
+If I take the difference between the last version of the rank vector from the previous one, if it is less than certain value of it is almost exactly the same, then it means that the rank vector converged to something.
+
+321
+01:11:53,792 --> 01:12:03,372
+In this particular case, it converged to something. And then I can use this as the ranking values of this given graph.
+
+322
+01:12:03,728 --> 01:12:09,347
+So, each one of them will indicate the importance of that node in that graph.
+
+323
+01:12:15,091 --> 01:12:20,911
+Okay, now, so far, we talked about page rank computation.
+
+324
+01:12:23,211 --> 01:12:29,211
+Okay, we talked about page rank computation from the importance perspective.
+
+325
+01:12:30,131 --> 01:12:39,911
+Okay, now, I will talk about the same thing from the random walk interpretation perspective, from the random web server perspective.
+
+326
+01:12:42,739 --> 01:13:02,979
+Now, let's think of a web browser, okay? On the web browser, what you have, you have a box where you can enter the URL, right? You can enter a URL of a web page, and in which case, browser will take you to that URL.
+
+327
+01:13:03,859 --> 01:13:14,799
+Okay. And what else you can do in order to go to another page? Or you can click on the links on that webpage.
+
+328
+01:13:15,764 --> 01:13:27,943
+Okay, you have two options. One, you can use the text box on the browser and you can enter URL, which in that case it will take you to a web page.
+
+329
+01:13:28,244 --> 01:13:36,923
+Or you can click on the links that are available on that web page and that will also take you to a web page.
+
+330
+01:13:38,260 --> 01:14:02,200
+Arkadaşlar, bir browser üzerinde back butonu ya da URL'lere girdiğiniz textbox'ın olmadığını düşünün. Böyle bir browser var elinizde. Bu browserda bir sayfadan diğerine gitmek için tek opsiyonunuz nedir? O sayfanın üzerindeki URL'lerden birisine tıklamaktır.
+
+331
+01:14:02,836 --> 01:14:20,655
+Geriye gidemiyorsunuz. Sadece ileriye gidiyorsunuz ve bir connected web graph var sizin dolaşacağınız ve siz de bunun üzerinde random walk yapıyorsunuz. Yani sayfanın üzerinde hyperlinkler var. Bunlardan birisine tıklıyorsunuz.
+
+332
+01:14:29,587 --> 01:14:39,227
+ISAP1 sayfasındasınız. Bu sayfadan C sayfasına gitme olasılığını düşünelim.
+
+333
+01:14:52,416 --> 01:15:08,236
+Outlink sayısına bu sayfada bulunma olasılığınızın Outlink sayısına bölümünden bulunur. Yani bu iSappan sayfasında bulunmanız için de bir olasılık var. Herhangi bir anda.
+
+334
+01:15:08,916 --> 01:15:34,976
+Herhangi bir T anında bu I-SAP1 sayfasında bulunmanız için bir olasılık var. Bir sonraki sayfaya geçerken bu olasılık çarpı bir bölü DI1 diyoruz. Çünkü bu arkadaşın kaç tane outlinki varsa onlardan bir tanesine gitmiş olduğumuz için bunlar arasında bir tanesine gitme olasılığı bunun outlinkine bölmemiz demek.
+
+335
+01:15:35,507 --> 01:15:47,467
+Bu sadece I1 için, I-Sub1 için değil, I-Sub2 için, I-Sub3 için de geçerli. Dolayısıyla benim herhangi bir T plus 1 anında...
+
+336
+01:15:47,796 --> 01:16:05,976
+C sayfasında bulunma olasılığın bulunan bir önceki sayfalarda bulunma olasılıkların çarpı o sayfaların sayfaların olasılıklarının outlink sayılarına bölümlerinin toplamıyla bulunur.
+
+337
+01:16:06,976 --> 01:16:14,556
+Yani bu şu demek, bir browser üzerinde eğer Backbutton ya da Textbox olmasaydı
+
+338
+01:16:15,796 --> 01:16:24,695
+Bu browser'ı kullanaraktan web'i surf etmek isteyen bir tane random kullanıcımız olmuş olsaydı,
+
+339
+01:16:25,460 --> 01:16:39,460
+T plus one anında herhangi bir sayfada olan bu kullanıcının T plus one anında bir başka sayfada yani sayfa C'de olma olasılığını bu şekilde hesaplıyoruz.
+
+340
+01:16:39,460 --> 01:16:51,619
+Biraz önce şuradaki formülü importance açısından konuşmuştuk. Burada ise tamamıyla olasılık bakış açısıyla konuşuyoruz.
+
+341
+01:16:53,460 --> 01:17:03,960
+Hocam şimdi bu konuda geri gitme butonunu göz ardı etmeyen algoritmalar varsa grafı bu durumda da directed olarak mı düşünüyorlar?
+
+342
+01:17:07,764 --> 01:17:27,423
+Şu anlık hani Random Walker'ı konuşurken biz hep ileriye outlinkler üzerinden gidiyoruz. Yani mutlaka hani Directed Graph üzerinden bu PageRank hesaplamasını düşünüyoruz.
+
+343
+01:17:35,764 --> 01:18:00,344
+Bir konuşurken şunu demiştik ki, bir, kendisine gelen in-linkler üzerinden önemini hesaplıyoruz. Bu bir. İkincisi, bir de bu in-linklerin öneminden yola çıkaraktan bunun öneminin derecesini hesaplıyoruz. Dolayısıyla mutlaka PageRank gibi rankingi hesaplayan algoritmaların directed graph üzerinde çalışıyor olması gerekiyor.
+
+344
+01:18:01,460 --> 01:18:02,719
+Anladım hocam, sağ olun.
+
+345
+01:18:02,719 --> 01:18:29,319
+Yani bunu mesela Facebook mesela Undirected Graph ya da LinkedIn Undirected Graph. Bu Undirected Graph'lar üzerinde biz bunu kullanamayız. Ama Facebook'un üzerinde mesela birisini follow edebiliyorsun. Eğer follow tabanlı Facebook grafiğini kullanıyorsan hesaplayabilirsin. Mesela Twitter üzerinde de hesaplayabilirsin. Web page, web grafi üzerinde de hesaplayabilirsin.
+
+346
+01:18:29,460 --> 01:18:41,399
+Şimdi bizim bu durumda eğer herhangi bir C sayfasında bulunma olasılığımızı bu şekilde ben formüle edersem.
+
+347
+01:18:41,811 --> 01:19:00,072
+Bu durumda ben az önce göstermiş olduğum R eşittir M çarpı R ekoyşonunda R yerine P, T yazıp M yerine yine benim bu Stochastic Adjacency matrisimi yazıp çarpı yine P, T yazabilirim.
+
+348
+01:19:00,072 --> 01:19:09,811
+Yani şu şekilde yazabilirim. Yani P, T, T anında benim herhangi bir sayfada bulunmamış...
+
+349
+01:19:09,811 --> 01:19:22,172
+Olma olasılığımı veren vektör, bunu M matrisiyle çarpıyorum. T plus one anında Random Surfer'ın herhangi bir node üzerinde olma olasılığını bana veriyor.
+
+350
+01:19:22,172 --> 01:19:30,731
+Okey. Şimdi biz diyoruz ki bunun üzerinde Power Riteration yöntemini uyguladık.
+
+351
+01:19:32,148 --> 01:19:43,028
+Bu Power Iteration yöntemini uygulayınca biz bu Pt'nin değerini belirli bir iterasyon sonucunda bulabiliyoruz.
+
+352
+01:19:43,028 --> 01:19:59,448
+Şimdi biz bu Power Iteration yöntemini bu equation üzerinde uyguladığımız zaman
+
+353
+01:20:00,000 --> 01:20:08,680
+Belirli bir iterasyon sonucunda PT'nin değerine ulaştığınız zaman bu PT'ye stationary distribution vector diyoruz.
+
+354
+01:20:08,680 --> 01:20:18,719
+Yani artık bu PT değeri converge olmuştur ve bu değişmeyecektir. Yani bu vektörün değeri değişmeyecektir diyoruz.
+
+355
+01:20:19,180 --> 01:20:26,300
+Ama bunu diyebilmek için bu M matrisinin belirli conditionları sağlaması gerekiyor.
+
+356
+01:20:27,060 --> 01:20:44,860
+Bu vektörün yani T anında herhangi bir notta bulunma olasılıklarını bize veren vektörün stationary distribution bir vektör olabilmesi için
+
+357
+01:20:45,908 --> 01:21:09,388
+Bu, bunu uyguladığımız matrisin belirli kondişonları sağlaması gerektiğini söylüyoruz. Eğer sağlarsa, bu durumda Power Iteration yöntemiyle en sonda bulacağımız PT vektörü Unictir ve en başta seçmiş olduğumuz PT değerleri ne olursa olsun her zaman aynı değer çıkacaktır.
+
+358
+01:21:13,908 --> 01:21:30,388
+Şuradaki örnekte mesela, şuradaki değerleri bir bölü n seçtik. Bir bölü n seçmeseydik, farklı değerler seçmiş olsaydık bile, belirli bir iterasyon sonucunda yine şu değere ulaşacaktık diyor yani.
+
+359
+01:21:34,739 --> 01:21:53,420
+Belirli bir kondişonu sağlıyorsa, bu graf belirli bir kondişonları sağlıyorsa, bu durumda en nihayetinde elde edeceğimiz Probability Distribution Vektörü, yani Random Walker'ın herhangi bir notta bulunma olasılığını gösteren Vektör Stationary Distribution Vektörü olacaktır.
+
+360
+01:21:54,019 --> 01:22:01,699
+Ve başlangıçtaki ilk seçilen değerler ne olursa olsun aynı Vektörü ulaşılacaktır. Sadece iterasyon sayısı değişebilir.
+
+361
+01:22:02,579 --> 01:22:12,279
+İşte bunu söyleyen teoremede biz Markov zinciri teoremi diyoruz ya da diğer ismiyle random walker teorisi diyoruz.
+
+362
+01:22:12,279 --> 01:22:29,279
+Şimdi bu durumda bu matriz hangi kondişonları sağlamalı ki ben ilk başta seçtiğim renk değerleri ne olursa olsun bu unique distribution değerine, stationary distribution değerine ulaşabileyim.
+
+363
+01:22:29,359 --> 01:22:30,019
+Şimdi ona bakalım.
+
+364
+01:22:47,091 --> 01:22:54,652
+Okay, now initially this was our equation, right? This was our equation in order to find the page rank score for one node.
+
+365
+01:22:55,220 --> 01:23:19,460
+Okay, and this was the Patriot-Rank score at time t, and this was the Patriot-Rank score for time t plus one. And this was the equation when we wanted to show this for the whole matrix. Okay, probability distribution vector for t plus one, probability distribution vector for time t, and this was the stochastic adjacency matrix.
+
+366
+01:23:20,500 --> 01:23:26,619
+Now, the first, so we have some questions that we need to answer, okay?
+
+367
+01:23:26,840 --> 01:23:36,379
+First of all, one is, when we apply power iteration method on this equation, does this converge?
+
+368
+01:23:37,059 --> 01:23:38,639
+Okay, okay.
+
+369
+01:23:39,000 --> 01:23:44,100
+Now, the second question is, it may converge to something, but is it something what we want?
+
+370
+01:23:45,076 --> 01:23:51,736
+And also, if it is converging to something, are the results reasonable?
+
+371
+01:23:52,756 --> 01:23:52,855
+Okay.
+
+372
+01:23:53,775 --> 01:24:10,256
+Now, in order to explain to you what the conditions that this matrix should have, first, I will tell you what kind of problems that we have on the web, okay, that may affect the result of page rank.
+
+373
+01:24:11,252 --> 01:24:15,971
+Now, the first problem that we have is called spider trap problem.
+
+374
+01:24:16,652 --> 01:24:22,052
+So what spider trap problem is that if you start, if the random walker starts from one node,
+
+375
+01:24:23,412 --> 01:24:31,052
+okay, and if it jumps certain number of hoops and if it comes back to the same node every time,
+
+376
+01:24:31,512 --> 01:24:34,471
+then this means that there is a spider trap.
+
+377
+01:24:34,996 --> 01:24:40,216
+Which means that in this particular case, the certain number of is two hops.
+
+378
+01:24:40,836 --> 01:24:40,956
+Okay.
+
+379
+01:24:41,255 --> 01:24:46,855
+Every time starting from A, if the random walker comes back to the same node.
+
+380
+01:24:47,175 --> 01:24:47,456
+Okay.
+
+381
+01:24:47,876 --> 01:24:49,836
+In that case, there is a spider trap.
+
+382
+01:24:49,836 --> 01:24:55,015
+So it starts from this one, makes two hops, comes back again the same node.
+
+383
+01:24:55,275 --> 01:24:59,296
+Starts from make down, makes two hops, comes back to the same node.
+
+384
+01:24:59,636 --> 01:24:59,755
+Okay.
+
+385
+01:25:00,095 --> 01:25:02,956
+Now, this could be three hops.
+
+386
+01:25:02,996 --> 01:25:09,675
+Or four hops, whatever. If the random walker comes back to the same node, then we have this spider trap problem.
+
+387
+01:25:10,695 --> 01:25:22,396
+Okay. For example, if there's a spider trap problem in the given graph, okay, and if I apply the power iteration method, the initial version, let's say initial.
+
+388
+01:25:23,444 --> 01:25:37,904
+PageRank scores for these two notes is this one. After applying the power iteration method, the second ranking vector is this one, the third one, and the fourth one. As you see, it does not converge.
+
+389
+01:25:38,612 --> 01:25:56,551
+Okay, now, therefore, there is a problem, okay, because we said that our page rank needs to be converged to certain values so that we can find the stationary distribution vector, okay?
+
+390
+01:25:57,891 --> 01:26:02,172
+Now, that was the first problem. Now, the second problem is the dead-end problem.
+
+391
+01:26:02,931 --> 01:26:19,111
+Now, if you have a, so this is a small graph to show you what the dead end problem is. You see that one node is giving another node, link to another node, and that node is not giving any link back to the graph.
+
+392
+01:26:20,307 --> 01:26:26,707
+Okay, which means that if you cut this link from here, then this graph means reducible.
+
+393
+01:26:27,368 --> 01:26:32,307
+Okay, so because B does not have any effect to the rest of the graph.
+
+394
+01:26:32,887 --> 01:26:45,728
+Okay, if there is a node which receives in links from other, which receive links from other nodes, and it does not give any link back to the graph, then this means it's a dead node.
+
+395
+01:26:47,444 --> 01:27:15,424
+That end note. Okay. Now, in this particular graph, the initial page rank score is one and zero. Okay. And then when we apply the power iteration, this is the next one. And this is next one. As you see, it converges to something, but it does not converge something that we want, because what we want is that we want to see the relative importance between these.
+
+396
+01:27:15,444 --> 01:27:23,884
+But these zero and zero does not give any relative importance between these two nodes.
+
+397
+01:27:24,924 --> 01:27:28,104
+Okay, it converges something, but it's not something that we want.
+
+398
+01:27:30,704 --> 01:27:34,484
+Okay, then we have two main problems. One is the dead end problem.
+
+399
+01:27:35,004 --> 01:27:38,344
+Okay, in the dead end problem, we have some links.
+
+400
+01:27:39,315 --> 01:27:45,556
+We have some nodes that receives links from other nodes, but that does not give any link back to the graph.
+
+401
+01:27:46,228 --> 01:27:48,507
+The second problem is the spider trap.
+
+402
+01:27:48,987 --> 01:27:59,268
+Okay, so if you start from one node in the graph and if you jump a certain number of nodes, you will always come back to the same node.
+
+403
+01:27:59,847 --> 01:28:03,028
+So in that case, then we have the spider trap problem.
+
+404
+01:28:03,768 --> 01:28:07,927
+In the spider trap problem, it does not converge to something.
+
+405
+01:28:08,148 --> 01:28:14,188
+And in the dead end problem, it may converge to zero and zero, but it is not something that we want.
+
+406
+01:28:14,228 --> 01:28:17,467
+Okay.
+
+407
+01:28:19,528 --> 01:28:22,847
+Now, let's see how we are going to solve these problems.
+
+408
+01:28:23,228 --> 01:28:28,708
+First, let's take a look at what the problem was and then let's solve it.
+
+409
+01:28:29,108 --> 01:28:29,228
+Okay.
+
+410
+01:28:29,347 --> 01:28:32,987
+Now, this is the toy example from the previous slides.
+
+411
+01:28:33,628 --> 01:28:33,907
+Okay.
+
+412
+01:28:34,028 --> 01:28:36,347
+This is the toy example from the previous slides.
+
+413
+01:28:36,788 --> 01:28:41,487
+And as you see, this has a spider trap problem because if you look at this one,
+
+414
+01:28:42,036 --> 01:29:08,816
+M, if the random walker starts from M, after certain number of hops, it will always come to the same node. After one hop, it will always come to the same node, okay? Which means that the random walker will be stuck on this node M, okay? Therefore, there is a spider trap problem, okay? Now, here you see that I am starting from the initial rank score.
+
+415
+01:29:09,619 --> 01:29:13,860
+Okay. And after applying the power iteration method, this is my second.
+
+416
+01:29:40,615 --> 01:29:44,615
+Akihz
+
+417
+01:29:39,380 --> 01:29:44,220
+Okay, now, so this is what the spider trap problem causes.
+
+418
+01:29:45,560 --> 01:29:58,820
+Now, in order to solve this problem, what we are going to do, we are going to introduce an idea which says that, now, if you are on a web page,
+
+419
+01:30:00,000 --> 01:30:05,939
+You can either follow the links that existing links on that web page.
+
+420
+01:30:06,319 --> 01:30:08,979
+You can want so you can do this.
+
+421
+01:30:09,639 --> 01:30:20,079
+The second thing that you can do this time so you can use the text box in the browser and you can enter any URL in the.
+
+422
+01:30:20,467 --> 01:30:24,527
+Web Graph, and you can jump to that web page, okay?
+
+423
+01:30:24,887 --> 01:30:30,647
+Which means that what we are doing, what we are going to do, we are going to insert
+
+424
+01:30:30,647 --> 01:30:45,067
+hidden links from the dead at node, from the node, from one node to every other node.
+
+425
+01:30:45,067 --> 01:30:47,707
+For example, this node has
+
+426
+01:30:48,115 --> 01:31:16,115
+One link to itself, and I will add two hidden links to this node. Okay, one, it will give the link to Y, the second one, it will give the link to A. And this node A has two links, one and two, and I will add one more link, it will point to itself, hidden link. And Y, it has two links, one and two.
+
+427
+01:31:16,115 --> 01:31:41,576
+One is A and one itself and I will add one more hidden link. It will just point to M. Okay. How do I do this? By introducing the jump option. Okay. You can either follow the links on that web page or you can jump to any page that is available.
+
+428
+01:31:42,163 --> 01:31:59,183
+Okay, now, and in order to identify, so what is the probability that you will follow the links and what is the probability that you will jump to any page that is available in the web page?
+
+429
+01:32:00,103 --> 01:32:10,163
+So I say, I use the beta factor and I say 0.8 probability, which means 80%.
+
+430
+01:32:10,163 --> 01:32:23,183
+Probabilisiyo, you will follow the links and 20% probability, you will jump to any page that is available in the in the web page.
+
+431
+01:32:24,123 --> 01:32:29,863
+Okay, now I will come back to this. Now let's take a look at the dead end problem.
+
+432
+01:32:31,347 --> 01:32:41,127
+Now, in the dead-add problem, so this was our toy example, and here is the Stokas adjacency matrix, as you see, okay?
+
+433
+01:32:41,547 --> 01:32:51,627
+Now, if I use this adjacency matrix, and if I apply the power iteration method, as you see, so this is my initial rank vector.
+
+434
+01:32:52,115 --> 01:33:00,315
+And if I multiply this with this matrix, the next version of my rank vector is this one, and the following is this one.
+
+435
+01:33:00,755 --> 01:33:14,855
+And so when it converges, it will converge to these values, okay, which is not something that I want because it does not give me the importance relatively, okay?
+
+436
+01:33:16,564 --> 01:33:33,663
+So, therefore, I need to solve this problem as well, the deadend problem. How do I solve this? Again, I use the teleport. So, what I do is that for the node, okay, which is a deadend node, okay, I am adding a hidden link from M.
+
+437
+01:33:34,064 --> 01:34:02,064
+...
+
+438
+01:34:02,064 --> 01:34:03,684
+Nodes in the system.
+
+439
+01:34:04,083 --> 01:34:05,743
+So therefore, I have zeros here.
+
+440
+01:34:06,403 --> 01:34:17,564
+Now, by adding these hidden links, okay, so I added three links and every for every one of them since now it has three alt links.
+
+441
+01:34:18,036 --> 01:34:31,815
+Okay, so I will divide, I will put 1 over 3, 1 over 3, 1 over 3. What I did basically by adding teleports to the dead end, I converted this matrix to this one.
+
+442
+01:34:33,427 --> 01:34:57,828
+Okay, so that this matrix becomes a stochastic matrix. Now it became a stochastic matrix because all the columns, all the columns summation equal to is one. Okay. Now let's take a look at the example. So let's, let me see.
+
+443
+01:35:12,851 --> 01:35:19,572
+Let's see how this solves the problem.
+
+444
+01:35:21,032 --> 01:35:24,011
+Okay, so I will come back to this.
+
+445
+01:35:25,684 --> 01:35:45,084
+Okay, now you see this formulation. Previously, what I have just, if you just do not consider, so just do not consider this part and this beta. And if you see this portion of the equation, this is exactly what we have seen at the beginning.
+
+446
+01:35:46,292 --> 01:36:04,472
+Okay, this is exactly what we have seen at the beginning. Now, you see that I added another segment to this equation which says that with a beta probability, the random walker will follow the existing links.
+
+447
+01:36:04,979 --> 01:36:31,979
+Usually, this beta is 0.8. And with minus beta probability, it will jump to any nodes that are available in the system. Now, this is only for calculating the score for one node in the system. Obviously, we will write the matrix version of this. But this is just to tell you how I...
+
+448
+01:36:32,979 --> 01:36:42,379
+And this introducing the beta was for the removing the problem, spider trap problem.
+
+449
+01:36:42,879 --> 01:36:47,699
+In order to solve the spider trap problem, I introduced the second segment.
+
+450
+01:36:47,699 --> 01:36:51,479
+And I said that random walker can jump to any page.
+
+451
+01:36:51,891 --> 01:37:05,612
+So, therefore, there will not be any spider trap anymore, okay, because it has a chance to jump to any page on the web graph, okay?
+
+452
+01:37:07,192 --> 01:37:12,612
+Now, the second thing is that now...
+
+453
+01:37:12,916 --> 01:37:21,416
+What I do here in order to solve the dead-end problem, what I did in the previous slides,
+
+454
+01:37:22,739 --> 01:37:34,499
+I started with the initial graph, okay, and I added links from the dead end to every node in the web graph.
+
+455
+01:37:34,499 --> 01:37:44,239
+By doing so, here you see that the column vector that belongs to the dead end node, okay, I added 1 over n values.
+
+456
+01:37:48,243 --> 01:38:14,644
+Okay, into a stochastic matrix. Okay, now the initial version of the matrix was this one. The initial version had the column vector for the dead end node. I had 0, 0, 0. Okay, for the initial matrix. Now, I am adding this additional segment. Okay, which is actually
+
+457
+01:38:15,988 --> 01:38:22,988
+Another matrix, okay, which is another matrix where only the...
+
+458
+01:38:24,064 --> 01:38:42,583
+Column that belongs to the dead end has the values. Arkadaşlar, yapmış olduğum şey şu. Az önce size spider trap problemini çözmek için bu beta cam faktörünü eklediğimizi söyledim.
+
+459
+01:38:42,583 --> 01:38:50,663
+Şimdi de diyorum ki dead end problemini de çözmek için eğer dead end problemi olan bir tane matrisim varsa.
+
+460
+01:38:52,064 --> 01:39:12,543
+Bu matrisi yeni bir matrise dönüştürüyorum. A matrisine dönüştürüyorum. Bunu da yaparken şu şekilde yapıyorum. Dead end problemi olan kolonları bir bölü n olan, onun dışındaki diğer bütün kolonları sıfır olan bir tane matris yaratıyorum.
+
+461
+01:39:19,507 --> 01:39:47,107
+Rol matrisi, E, Rol matrisi ve bütün değerleri birden oluşan bir Rol matrisi. Bu A ise bir tane yine Rol matrisi. Bu Rol matrisi de içerisindeki non-zero olan değerler sadece dead end problemi olan notlar için.
+
+462
+01:39:47,507 --> 01:39:59,807
+Yani dead end problemi olan notlarda bir var, diğerlerinde sıfır olan bir tane row matrik. Bunun transpozesini alıyorum. Yani n'e bir bir.
+
+463
+01:40:00,000 --> 01:40:17,579
+Bir vektör olmuş oldu. Burada da 1'e n bir vektör oldu. n'e 1 bir vektörle 1'e n bir vektörü çarptığım zaman n'e n bir matriz elde ediyorum. Elde ettiğim matriste de sadece içinde dead n problemi olan kolonlarda bir bölü n yazacak, diğerlerinde ise sıfır yazacak.
+
+464
+01:40:18,420 --> 01:40:42,340
+Peki, buradaki matriste ne durum vardı? Buradaki matriste de içinde dead end problemi olan kolonlar sıfırlardan oluşuyordu. Bu iki tane matrisi topladığında şu matrisi elde ediyorum. Ne yapmış oluyorum? Buradaki yeni oluşturduğum bunların birleşiminden oluşan matris yani A matrisinde şuradaki dead end problemi olan kolona bir bölü M'leri yazmış oluyorum.
+
+465
+01:40:42,340 --> 01:40:43,500
+Okey?
+
+466
+01:40:44,627 --> 01:40:50,067
+Bunu yaparak ben ne yaptım? Elimdeki matrisi stokastik bir matrise dönüştürdüm.
+
+467
+01:40:50,067 --> 01:41:11,267
+Az önce Markov zinciri teoremini konuşurken demiştik ki bir grafın belirli özelliklere sahipse power iteration metodunu uyguladığında belirli bir iterasyon sonunda mutlaka probability distribution vektörü belirli bir sabit vektöre converge olur dedik.
+
+468
+01:41:12,020 --> 01:41:28,159
+Bunu sağlamak için bu matrisin bir stokastik matrisi olması lazım. Yani her kolonundaki değerleri topladığında bire eşit olması lazım. İki, irreducible olması lazım. Yani içinde dead end problemi olmaması lazım.
+
+469
+01:41:28,560 --> 01:41:54,180
+3. Eperiyodik olması lazım. Yani içerisinde SpiderTrap problemi olmaması lazım. SpiderTrap problemini uçurmak için, kaldırmak için ne yaptım? Ben jump faktörünü ekledim. Dedim ki %80 olasılıkla bir RandomWalker sayfadaki linkleri takip etsin. %20 olasılıkla da yukarıya URL'i yazsın. Browser'daki textbox'a. URL'den istediği sayfaya gitsin.
+
+470
+01:41:54,644 --> 01:42:12,324
+Bunu yaptığım zaman benim grafımın içerisinde eğer şeyler varsa bile, spider trapler varsa bile, Random Walker'ın spider trap içerisinde kalmak zorunluluğunu artıdan kaldırdım. Çünkü bu şekilde istediği sayfaya geçebilir.
+
+471
+01:42:13,964 --> 01:42:20,844
+Irreducible yani dead end problemini de az önce gösterdiğim şekilde matrisi ne yapmış oldum?
+
+472
+01:42:21,811 --> 01:42:30,412
+dead end problemi olan kolonlara bir bölü n yazdım. Bu sayede matrisi aynı zamanda stokastik matris haline getirdim.
+
+473
+01:42:38,260 --> 01:42:43,740
+Now, if I do this, then my equation for patron computation becomes this.
+
+474
+01:42:44,740 --> 01:42:48,920
+Okay, so this is my equation for patron computation.
+
+475
+01:42:49,360 --> 01:42:52,740
+Okay, now, so remember what I did for the...
+
+476
+01:42:54,100 --> 01:43:11,100
+In order to remove the dead-end problem, what I did is that I add into this adjacency matrix, I add this additional matrix, okay?
+
+477
+01:43:11,640 --> 01:43:20,100
+And if I add these two matrices together, then I will end up with a matrix that does not have...
+
+478
+01:43:20,640 --> 01:43:43,680
+A spider trap problem and which does not have at the same time a dead end problem. Okay. And this matrix will be stochastic matrix, periodic, periodic metric and irreducible metric, which means that I can use this. Okay. In order to calculate the power iteration method, because so Markov chain.
+
+479
+01:43:44,083 --> 01:44:03,064
+Theorem says that if the matrix is stochastic, aperiodic, and irreducible, after certain time of iteration, when you apply the power iteration method, you will end up with a stationary distribution probability distribution vector.
+
+480
+01:44:04,963 --> 01:44:10,923
+Okay, now, so let's take a look at an example. Okay, this was our toy example.
+
+481
+01:44:11,344 --> 01:44:13,944
+Now, initially, this was my mattress.
+
+482
+01:44:14,644 --> 01:44:42,623
+Okay, this is my matrix. And you see that my jump factor is 0.8, which is given in the problem. Now 0.8 probability, I will follow the links in the matrix. And 0.2 probability, I will jump to any node in the matrix. Okay. Now, if I add these two together, then I will end up with a matrix, which is a periodic, stochastic, and irreducible.
+
+483
+01:44:42,644 --> 01:44:47,404
+Then I can use this matrix in the power iteration method.
+
+484
+01:44:47,824 --> 01:44:54,144
+So let's say I start with the initial page rank values where each element is 1 over 3.
+
+485
+01:44:54,707 --> 01:45:00,867
+And if I apply the power iteration method, it will converge to these values, okay, in the end.
+
+486
+01:45:00,867 --> 01:45:11,967
+And this is exactly what you want because it gives the importance of the pages relatively each other, okay?
+
+487
+01:45:12,307 --> 01:45:18,087
+So by looking at this, I can find out which page is more important in the graph.
+
+488
+01:45:22,836 --> 01:45:23,336
+Ok.
+
+489
+01:45:28,564 --> 01:45:35,783
+Evet arkadaşlar, anlatacaklarım bugünlük bu kadar. Sizlerin sorusu var mıdır bugünkü dersle ilgili?
+
+490
+01:45:40,340 --> 01:46:06,800
+Sorusu olan yok gibi. Dersin başında dediğim gibi project proposal'larınızı aldım ama okuma fırsatım olmadı. Bunları okuyacağım ve gelecek haftaya kadar da project proposal'larınızla ilgili revizyon talep edeceğim arkadaşlara direkt ulaşacağım ve project proposal'larını revize etmelerini isteyeceğim.
+
+491
+01:46:08,532 --> 01:46:09,391
+Teşekkürler.
+
+492
+01:46:10,231 --> 01:46:14,971
+Ben teşekkür ederim katılımınız için. İyi dersler, iyi akşamlar arkadaşlar.
+
+493
+01:46:16,351 --> 01:46:17,471
+İyi akşamlar hocam.

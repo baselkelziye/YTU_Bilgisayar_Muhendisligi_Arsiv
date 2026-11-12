@@ -1,0 +1,1847 @@
+1
+00:05:16,307 --> 00:05:17,387
+Arkadaşlar, merhaba.
+
+2
+00:05:21,875 --> 00:05:24,055
+Sesim geliyor mu? Bir teyit eder misiniz lütfen?
+
+3
+00:05:24,575 --> 00:05:26,096
+Merhaba hocam, geliyor sesiniz.
+
+4
+00:05:26,815 --> 00:05:27,435
+Süper.
+
+5
+00:05:29,715 --> 00:05:31,096
+Nasılsınız? Her şey yolunda mı?
+
+6
+00:05:33,855 --> 00:05:35,515
+Yolunda hocam, çok şükür.
+
+7
+00:05:36,135 --> 00:05:39,075
+Sınav nasıl geçti? Ne düşündünüz?
+
+8
+00:05:42,175 --> 00:05:46,395
+Baktığım kadarıyla gayet iyi. Yani ortalama bayağı yüksek.
+
+9
+00:05:51,795 --> 00:06:17,015
+Evet, zor olduğunu düşünen kimse yok galiba. Tamam. Süper. Bundan sonra dönem içerisinde sizden beklediğim bir dönem projeniz var. Bir de final sınavınız olacak. Dönem projesini arkadaşlar çok bekletmeden zaten onunla ilgili bir proposal da vermiştiniz.
+
+10
+00:06:17,684 --> 00:06:41,364
+Lütfen son haftaları bırakmadan çalışmaya devam edin. Son hafta ders yapmayacağız. Dönem projesinin demolarını yapacağız. Bilginiz olsun. O gün herkesin demosunu yapmasını istiyorum. Telafisi olmayacak. O yüzden planınızı ona göre yapın. Önünüzde hala bir aya yakın bir süre var.
+
+11
+00:06:44,564 --> 00:06:46,344
+Evet, onun sorun var galiba.
+
+12
+00:06:47,324 --> 00:06:55,944
+Hocam, çalışmaya devam edin dediniz de ama biz henüz sizinle irtibat kuramadık proposerler için. Yani çalışmaya başlayabilir miyiz, uygun mu gibisinden mi?
+
+13
+00:06:55,944 --> 00:07:03,864
+Onu söylemiştim. Yani proposerlerinizde olumsuz yönde bir geri dönüş yapmadıysam çalışmaya başlayın demiştim.
+
+14
+00:07:04,384 --> 00:07:05,924
+Anladım, tamam. Özür dilerim, teşekkürler.
+
+15
+00:07:10,004 --> 00:07:18,004
+Tamamdır. Arkadaşlar bugün tekrardan nerede olduğumuzu göstermek adına...
+
+16
+00:07:39,124 --> 00:07:39,884
+Şöyle yapalım.
+
+17
+00:07:47,187 --> 00:08:02,288
+Evet, kitaptan devam ediyoruz. Bu haftada Chapter 6'i konuşacağız. Bugüne kadar ilk 5 çeptere konuşmuş olduk. Bu haftada Frequent Item Set chapter'ını konuşuyor oluyoruz.
+
+18
+00:08:02,288 --> 00:08:15,187
+Yine kitabın sayfasında bugünkü dersle ilgili bütün hem kitabın bölümünü hem PDF slide'larını hem de video lecture'ları bulabilirsiniz. Bunun dışında...
+
+19
+00:08:15,187 --> 00:08:19,707
+Dersin sayfasına da bugün işleyeceğim slide'ları koymuş durumdayım arkadaşlar.
+
+20
+00:08:32,947 --> 00:08:43,467
+Today we are going to talk about frequent item sets. In particular, I'm going to talk about market basket data analysis problem.
+
+21
+00:08:44,827 --> 00:08:58,587
+As we are finding the frequent item sets, we are going to work on algorithms that will extract association rules from the transaction data.
+
+22
+00:08:59,091 --> 00:09:03,491
+In particular, we are going to talk about a priori algorithm.
+
+23
+00:09:04,231 --> 00:09:12,511
+But for those who have seen the a priori algorithm in other courses like data mining or information retrieval,
+
+24
+00:09:12,511 --> 00:09:20,572
+today we are going to talk about a big data version of the a priori algorithm.
+
+25
+00:09:20,991 --> 00:09:26,511
+We are going to talk about how a priori algorithm can be applied on...
+
+26
+00:09:27,091 --> 00:09:28,611
+Large scale data sets.
+
+27
+00:09:36,340 --> 00:09:43,860
+Okay, so the market basket model or market basket data analysis.
+
+28
+00:09:45,080 --> 00:09:46,600
+So what is this?
+
+29
+00:09:47,680 --> 00:09:55,320
+First of all, so let's think of the physical markets, physical supermarkets.
+
+30
+00:09:55,900 --> 00:10:00,000
+In those supermarkets, what we have is we have a large...
+
+31
+00:10:00,000 --> 00:10:13,163
+bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri de bir şeyleri
+
+32
+00:10:13,203 --> 00:10:33,131
+Okay. And when we go to the register, so when we want to pay our money in order to buy these items, okay, usually all these items go into the same receipt, okay, which means that we pay once and we...
+
+33
+00:10:33,268 --> 00:10:35,827
+All these items all together.
+
+34
+00:10:36,388 --> 00:10:36,548
+Okay.
+
+35
+00:10:36,728 --> 00:10:40,868
+All the items that we put into our basket, we buy them all together.
+
+36
+00:10:41,148 --> 00:10:45,307
+So when we purchase it, then that becomes a transaction.
+
+37
+00:10:46,248 --> 00:10:46,528
+Okay.
+
+38
+00:10:46,728 --> 00:10:53,008
+Now, every person who buys something from the supermarket will create a transaction.
+
+39
+00:10:53,668 --> 00:10:53,948
+Okay.
+
+40
+00:10:55,567 --> 00:10:59,688
+Now, we are interested in a problem.
+
+41
+00:11:00,148 --> 00:11:12,968
+...which tries to find the set of items that are frequently sold together.
+
+42
+00:11:12,968 --> 00:11:21,968
+Okay, now let's say in a supermarket, the supermarket has 100,000 customers.
+
+43
+00:11:22,388 --> 00:11:32,327
+Now, we would like to find out 90% of these customers, if they buy certain items together, we would like to know about it.
+
+44
+00:11:32,327 --> 00:11:40,188
+Okay. For example, if a bread and milk, if these two items are sold together.
+
+45
+00:11:40,755 --> 00:12:01,235
+90% of the customers are buying these two items together. We are interested in this information. Okay. This is the market basket analysis model. So, how can we find frequently sold items in a store?
+
+46
+00:12:05,587 --> 00:12:05,947
+Ok?
+
+47
+00:12:10,644 --> 00:12:19,984
+Now, basically, when we are finding the frequently sold items, we need to define frequent. So, what is frequent?
+
+48
+00:12:20,628 --> 00:12:48,628
+Okay, so I, in my example, I said 90% of the whole transactions, if 90% of the whole transactions include bread and milk, I called it as frequent. Okay, how do I come up that 90%? Okay, now, this value that I just mentioned, the 90% is, can be a support.
+
+49
+00:12:48,628 --> 00:13:04,868
+Okay, now we are going to use a metric called support, which will tell us the number of transactions which will contain these items that are sold together.
+
+50
+00:13:06,227 --> 00:13:24,327
+Okay, if there are items that are sold together above certain threshold, above certain support threshold, then we will call them as frequent. Okay, now these items could be one item or multiple items.
+
+51
+00:13:24,820 --> 00:13:25,299
+Okay.
+
+52
+00:13:26,299 --> 00:13:34,920
+If, for example, a bread is being sold above support threshold, then bread is a frequent item.
+
+53
+00:13:34,920 --> 00:13:47,559
+If bread and milk is being sold above support threshold, then bread and milk are frequent two item sets.
+
+54
+00:13:47,980 --> 00:13:48,080
+Okay.
+
+55
+00:13:51,827 --> 00:14:00,447
+Support threshold can be given as the number of transactions, or it could be given as a percentage.
+
+56
+00:14:01,247 --> 00:14:01,327
+Okay.
+
+57
+00:14:02,667 --> 00:14:08,768
+Then, so, sometimes we will hear 90% of the all transactions.
+
+58
+00:14:09,467 --> 00:14:18,447
+So, 90% or 70% or 50% is my support threshold, which means that that many...
+
+59
+00:14:19,827 --> 00:14:29,187
+That much percentage of the whole transactions, if they contain certain items, then we call those items as frequent.
+
+60
+00:14:30,127 --> 00:14:30,227
+Okay.
+
+61
+00:14:30,367 --> 00:14:33,747
+And sometimes we will hear as number for the threshold.
+
+62
+00:14:33,747 --> 00:14:43,747
+If, for example, among all the transactions, if support threshold is 100, if one particular item...
+
+63
+00:14:44,724 --> 00:15:11,276
+İkincisi
+
+64
+00:15:11,668 --> 00:15:14,627
+Eight different transactions.
+
+65
+00:15:15,548 --> 00:15:17,408
+Okay, eight different transactions.
+
+66
+00:15:18,307 --> 00:15:23,347
+And in each of these transactions, I have different items in my basket.
+
+67
+00:15:24,211 --> 00:15:40,892
+Okay, now, so let us see. So the support threshold is given as three, which means that if an item happens to be in more than three baskets, then we will call that as frequent.
+
+68
+00:15:41,511 --> 00:15:48,371
+Okay, now let us look at this example. First, let us find single item sets.
+
+69
+00:15:49,139 --> 00:16:05,720
+As you see, M happens to be in B1, B3, and B5. Okay. And B2 and B6. That is 5, which is above 3. So it's frequent. C happens to be in B1.
+
+70
+00:16:06,611 --> 00:16:33,211
+B4, B6, B8, that is 4, which is above 3, so it's frequent. Similarly, I can find the other frequent items, B and J. Let's look at the two item sets, which means that item sets that has two items in it. So let's say MB. MB here is in B1, in B3.
+
+71
+00:16:34,035 --> 00:16:37,755
+B5, B6.
+
+72
+00:16:38,207 --> 00:17:05,367
+So that's four, which is above three. So it's frequent. Likewise, I can find other two item frequent item sets. Okay. So this is how we are finding the frequent item sets. Okay. If it is above the certain threshold, then so we are going to count a single frequent item sets, two item item sets, three item item sets. Okay.
+
+73
+00:17:06,208 --> 00:17:12,228
+As long as they are above the support threshold, we will call them as frequent item sets.
+
+74
+00:17:18,163 --> 00:17:31,824
+Now, if I have a way to find the frequent item sets, then I can use this in different applications.
+
+75
+00:17:32,663 --> 00:17:42,304
+For example, let's take a look at this application. In this application, I have products as the items, and the baskets are set of products.
+
+76
+00:17:44,852 --> 00:18:01,592
+And in this particular application in a physical store, if many people buy beer and diaper together, okay, and this means that this is, if you find this information, you can use this for marketing.
+
+77
+00:18:01,592 --> 00:18:06,912
+For example, so this says that people who buys diaper.
+
+78
+00:18:07,407 --> 00:18:24,327
+Okay, people who have baby and who goes to store in order to buy diaper, they also buy beer. Okay, because the data tells you that beer and diaper are being sold together.
+
+79
+00:18:24,784 --> 00:18:39,364
+Now, in this particular case, what you can do in the marketing department, you can do a sale on the diaper, you can decrease the price on diaper.
+
+80
+00:18:40,372 --> 00:19:08,231
+So that you can attract people who have baby to come to your store in order to buy diaper. And you can raise the price for beer. Okay. Because people who want to buy diaper will come to your store. And it will be difficult for them to go to another store just to buy beer. So they can just, along with the diaper, they can buy the beer in that particular store.
+
+81
+00:19:08,372 --> 00:19:10,572
+So, this is a marketing strategy.
+
+82
+00:19:10,572 --> 00:19:24,231
+Now, this application gives this critical information to the marketing department and they can do pricing strategies like this.
+
+83
+00:19:31,188 --> 00:19:41,847
+Now, another application, baskets, in this particular example, items are the documents and baskets are the sentences.
+
+84
+00:19:41,847 --> 00:19:42,888
+Okay.
+
+85
+00:19:44,108 --> 00:19:48,408
+Now, if, let's say, if I find
+
+86
+00:19:49,268 --> 00:19:56,107
+And so obviously in a document, you will have lots of sentences, right?
+
+87
+00:19:56,107 --> 00:20:04,127
+Now, if for example, you have a hundred sentences, okay?
+
+88
+00:20:05,652 --> 00:20:31,952
+So here the transaction, so instead of transaction, I use sentences. Now, if a document happens to be in many of the baskets, which means that if a document has many of the sentences, if two documents have many of the sentences together,
+
+89
+00:20:32,948 --> 00:20:47,908
+In their content. Now, you can count these documents, you can consider these documents as a replica, or you can consider this as a plagiarism effect.
+
+90
+00:20:47,908 --> 00:20:55,908
+Okay. So, what this application is trying to do, if many documents...
+
+91
+00:20:56,084 --> 00:21:08,724
+If two or three documents appear in many baskets, in that case, those documents will include many sentences in them.
+
+92
+00:21:09,364 --> 00:21:11,184
+Many sentences in them.
+
+93
+00:21:12,044 --> 00:21:19,364
+So in that case, you will consider these three documents as being replica of each other.
+
+94
+00:21:24,084 --> 00:21:28,724
+To poor plagiarism in order to detect plagiarism between the documents.
+
+95
+00:21:29,395 --> 00:21:54,755
+Okay, so this is another example. So this time, you look at the problem from different point of view. You consider items as the documents, you consider baskets as the sentences, and you look at whether the documents, whether the two documents appear in many of the baskets or these two documents happen to have many sentences in them together.
+
+96
+00:21:58,344 --> 00:22:00,344
+İkincisi
+
+97
+00:21:57,395 --> 00:22:03,875
+bu iki dokumente olarak bir repliklerinden birbirine veriyor.
+
+98
+00:22:08,723 --> 00:22:29,423
+Now, another application. Now, this time, items are worth, baskets are documents. Okay. But here, when we say documents, so we only consider documents that have short content, such as tweets. Okay. So in this particular case,
+
+99
+00:22:30,867 --> 00:22:56,547
+If two words in a tweet, okay, if two or three words happen in many of the tweets, okay, in that case, we can consider this two or three words as an interesting, we can consider the relationship between these words as an interesting relationship, okay?
+
+100
+00:22:58,867 --> 00:23:04,387
+The two or three words happen to be in many of the tweets.
+
+101
+00:23:04,788 --> 00:23:16,547
+Then from this, we can extract some useful information and we can conclude that, okay, these three words have a certain importance for being together.
+
+102
+00:23:16,967 --> 00:23:21,347
+So this could be a news, an important news, for example.
+
+103
+00:23:21,599 --> 00:23:47,139
+So, this is another application. As you see, the first application was to create a decision support system for the marketing. The second application was being used to detect plagiarism. The third application is to find important news from the tweets.
+
+104
+00:23:49,599 --> 00:23:55,959
+Market Basket Data Analysis in different problems, okay, as you have seen it.
+
+105
+00:23:57,599 --> 00:24:08,299
+Now, the problem here, in a physical store, the number of items that are being sold is not that many.
+
+106
+00:24:08,579 --> 00:24:14,119
+For example, a physical store can sell 100,000 items, okay.
+
+107
+00:24:15,124 --> 00:24:30,663
+And obviously, over the time, billions of baskets or billions of transactions can happen in a physical store.
+
+108
+00:24:30,663 --> 00:24:42,584
+Okay, now, so for, let's say, six months period or one year period, billions of transactions may happen and people will buy.
+
+109
+00:24:43,124 --> 00:24:50,903
+And different items together when they do a transaction, when they go to the store and purchase something.
+
+110
+00:24:50,903 --> 00:24:51,544
+Okay.
+
+111
+00:24:52,864 --> 00:25:01,984
+And, but when it is on the web environment, when the items are.
+
+112
+00:25:03,476 --> 00:25:12,056
+On the e-commerce environment, then the number of items that are being sold, for example, on Amazon is in the order of billions.
+
+113
+00:25:12,836 --> 00:25:22,236
+Okay, so then the number of obviously transactions that happens on Amazon is much bigger than the billions.
+
+114
+00:25:22,236 --> 00:25:24,336
+Okay, it's in the order of trillions.
+
+115
+00:25:24,816 --> 00:25:49,816
+Okay, so therefore the scale of the problem increases when it happens on the web. Okay. For example, for the second type of application, if you try to find the plagiarism, if you try to find the
+
+116
+00:26:19,508 --> 00:26:34,488
+Hunderd thousands. Okay. And the number of tweets that are available is in the order of billions, maybe trillions. Okay. So therefore, the scale of the problem gets bigger and bigger when it comes to the web environment.
+
+117
+00:26:37,748 --> 00:26:50,748
+Okay, now, what are we trying to do when we do find the frequent item sets that are above certain thresholds?
+
+118
+00:26:51,548 --> 00:26:59,268
+Okay, what we are doing is we are going to create rules out of these frequent item sets.
+
+119
+00:27:00,088 --> 00:27:03,028
+Okay, now, let's take a look at this example.
+
+120
+00:27:03,028 --> 00:27:03,908
+In this example,
+
+121
+00:27:05,140 --> 00:27:10,060
+I have K plus one items.
+
+122
+00:27:10,740 --> 00:27:10,880
+Okay.
+
+123
+00:27:11,440 --> 00:27:23,160
+And in this particular case, from I1, I1, I1 to I1K, all the items are in the left hand side of the rule.
+
+124
+00:27:23,540 --> 00:27:25,960
+And there is only one item on the right hand side.
+
+125
+00:27:26,560 --> 00:27:26,800
+Okay.
+
+126
+00:27:26,800 --> 00:27:33,140
+Now, this rule says to me that if somebody buys items from one to...
+
+127
+00:27:33,140 --> 00:27:39,740
+I sub one to I sub K, he or she will also likely to buy item J.
+
+128
+00:27:40,580 --> 00:27:46,300
+Okay, now we are going to try we are going to extract association rules like this.
+
+129
+00:27:46,300 --> 00:27:47,300
+Okay.
+
+130
+00:27:48,680 --> 00:27:49,460
+Now.
+
+131
+00:27:51,316 --> 00:27:58,816
+When you create a rule like this, then there is another metric that will tell us the strength of this rule.
+
+132
+00:27:58,816 --> 00:28:03,036
+Okay, now this metric is called confidence.
+
+133
+00:28:03,876 --> 00:28:13,236
+Okay, now this tells us that now among those transactions who have items from I sub one to I sub k.
+
+134
+00:28:13,779 --> 00:28:17,819
+How many of them have also item J in it?
+
+135
+00:28:17,819 --> 00:28:35,199
+Okay, now, so this gives us the probability, which tell us that among the item, among the transactions that includes these items here, also includes the item J, okay?
+
+136
+00:28:35,199 --> 00:28:36,199
+In the...
+
+137
+00:28:38,836 --> 00:28:47,256
+So, this is the difference between, so this is how we define the confidence metric.
+
+138
+00:28:50,291 --> 00:29:01,231
+Okay, now let's go back to the same example that I have shown you when I discussed the support threshold.
+
+139
+00:29:01,751 --> 00:29:09,211
+Now, let's take a look at how we can find the association rule that we extract from this example, the same example.
+
+140
+00:29:09,211 --> 00:29:18,211
+Now, here you see that I extracted an association rule like this, okay, and this association rule tells...
+
+141
+00:29:18,291 --> 00:29:30,332
+me that if M and B is already purchased, then that person is also likely to purchase the item C.
+
+142
+00:29:30,731 --> 00:29:36,592
+Now, let's find the confidence or strength of this rule, okay?
+
+143
+00:29:37,132 --> 00:29:42,471
+Now, first, what I'm going to do, I'm going to find the number of transactions
+
+144
+00:29:43,859 --> 00:30:07,980
+That include MMB. Okay. So here I have one. Okay. And I have two. And I have three. And I have four. Okay. I have four transactions or baskets that include items MMB. Okay. In dominators. So I have four.
+
+145
+00:30:08,564 --> 00:30:25,804
+Now, among the ones, among the transactions that has MNB in it, how many of them also includes item C? I have one here and I have two here. Okay. In denominator,
+
+146
+00:30:26,420 --> 00:30:37,100
+I have, therefore, I will write two. In the denominator, I have four. Two over four, that will give us the confidence value for this association rule. Okay?
+
+147
+00:30:45,715 --> 00:31:01,096
+Now, how we are going to find the association rules, so how can we write a simple pseudocode that can find association rules? Let's take a look at this problem.
+
+148
+00:31:01,096 --> 00:31:11,955
+Now, we want to find all association rules with support value, which is bigger than S, and the confidence value, which is bigger than C, okay?
+
+149
+00:31:13,907 --> 00:31:20,727
+Now, support of an association rule is the support of set of items on the left.
+
+150
+00:31:20,727 --> 00:31:21,247
+Okay.
+
+151
+00:31:22,027 --> 00:31:31,567
+And so we are going to, and so, which means that.
+
+152
+00:31:31,855 --> 00:31:39,056
+Here is the support of the association rule is the support of the set of items on the left-hand part.
+
+153
+00:31:39,596 --> 00:31:46,076
+And what we are interested in here is that first we need to find the frequent item sets.
+
+154
+00:31:46,476 --> 00:31:46,615
+Okay.
+
+155
+00:31:46,776 --> 00:31:52,796
+Because after we find the frequent item sets, then we can extract the association rules.
+
+156
+00:31:53,216 --> 00:31:53,476
+Okay.
+
+157
+00:31:55,635 --> 00:32:02,275
+Now, so let's take a look at this rule. If this rule has high support and confidence, then both...
+
+158
+00:32:02,675 --> 00:32:21,515
+Items set from A sub 1 to A sub 1 to I sub k, both this one and item set from I sub 1 to I sub k plus j and this one will be frequent, okay?
+
+159
+00:32:21,515 --> 00:32:30,515
+Which means that if I have a rule like this, both the items set that is on the left hand side,
+
+160
+00:32:30,675 --> 00:32:39,455
+And also item sets that is on both left-hand side on the right-hand side, they will be frequent, which will be above the support threshold.
+
+161
+00:32:42,163 --> 00:32:58,163
+Okay. Now, when we find the association rules, we follow these steps. Okay. You can consider this as the pseudocode for the finding the association rules. Now, first, we are going to find...
+
+162
+00:33:00,435 --> 00:33:09,755
+Okay, we are going to find all the sets with support at least CS.
+
+163
+00:33:10,395 --> 00:33:10,775
+Okay.
+
+164
+00:33:12,955 --> 00:33:20,315
+And we are going to find all the sets with support at least as support value C.
+
+165
+00:33:20,315 --> 00:33:21,075
+Okay.
+
+166
+00:33:22,228 --> 00:33:41,248
+And then what we are going to do, we are going to, if the item set has support at least CS, and we are going to see which subset is missing one element that has at least support value C.
+
+167
+00:33:41,248 --> 00:33:41,907
+Okay.
+
+168
+00:33:42,447 --> 00:33:47,528
+Now, so in other words, we are going to find the frequent item sets.
+
+169
+00:33:48,028 --> 00:33:48,167
+Okay.
+
+170
+00:33:49,140 --> 00:34:01,200
+Which is this one. Okay. And then we are going to start, start, starting from this. We are going to extract one element out of this. Okay.
+
+171
+00:34:02,932 --> 00:34:12,192
+And then we will start checking whether this is an acceptable association rule.
+
+172
+00:34:12,192 --> 00:34:18,072
+Now, we already know this. This is above support threshold.
+
+173
+00:34:18,511 --> 00:34:22,351
+Okay. So therefore, we already know that this is frequent item sets.
+
+174
+00:34:22,711 --> 00:34:29,092
+Now we need to find whether this is an acceptable rule, which means that whether this is above
+
+175
+00:34:30,931 --> 00:34:34,291
+confidence threshold.
+
+176
+00:34:34,291 --> 00:34:36,251
+Now, in order to do this,
+
+177
+00:34:36,251 --> 00:34:40,031
+so we say that now this particular,
+
+178
+00:34:40,192 --> 00:34:41,631
+the left-hand side of the rule
+
+179
+00:34:41,631 --> 00:34:46,151
+above threshold S, S1, okay?
+
+180
+00:34:46,811 --> 00:34:48,911
+And the whole thing is,
+
+181
+00:34:49,171 --> 00:34:54,071
+has a support threshold value,
+
+182
+00:34:54,351 --> 00:34:56,511
+which is C multiply S, okay?
+
+183
+00:34:57,351 --> 00:34:58,871
+And this is the,
+
+184
+00:34:58,931 --> 00:35:06,152
+S2, and S2 divided by S1 will give us the confidence of this rule.
+
+185
+00:35:06,551 --> 00:35:17,211
+Okay, now, this is how I am finding the confidence value by using the support thresholds.
+
+186
+00:35:17,211 --> 00:35:17,851
+Okay.
+
+187
+00:35:19,539 --> 00:35:31,659
+Yapmaya çalıştığım şu arkadaşlar, öncelikle ben CS diye bir tane support threshold belirliyorum, bir de S diye bir support threshold belirliyorum.
+
+188
+00:35:31,659 --> 00:35:39,659
+Bu CS threshold'um benim bütün itemları içeren…
+
+189
+00:35:39,891 --> 00:35:58,291
+Item Set'imin en azından bu CS Threshold'un üzerinde olmasını istiyorum. Ondan sonra da bunun içerisinden sol tarafa bunun içerisinden sürekli birer tane elemanı çıkartarak kurallar oluşturuyorum.
+
+190
+00:35:58,291 --> 00:36:07,291
+Bunun içerisinden demek ki ben K plus one tane farklı kural oluşturabilirim. Bu kurallardan bir tanesi. Şimdi bu kuralın...
+
+191
+00:36:07,891 --> 00:36:35,891
+Acceptable bir kural olup olmadığına bakacağım. Bu kuralın Acceptable olduğuna bakarken sol taraftaki item setin minimum support threshold'dan büyük olmasını istiyorum. Bu değer de bana verilmiş. Bu support threshold'dan bunu biliyorum. Bir de bütün itemların içinde olduğu setin threshold değeri...
+
+192
+00:36:35,891 --> 00:36:56,051
+Bu iki threshold değerini birbirine böldüğüm zaman bana vereceği değer confidence değeri. Eğer confidence değeri benim input parametrem olan confidence değerimden daha büyükse o zaman buna acceptable bir association rule diyorum.
+
+193
+00:37:03,891 --> 00:37:10,731
+Frequent Item Setleri bulurken bir içerisinde C olacak şekilde Frequent Item Setleri buluyorum.
+
+194
+00:37:11,411 --> 00:37:35,192
+İki, ondan sonra bu Frequent Item Set'lerden bir tanesi bu diyelim ki. Bu Frequent Item Set'in içerisinden ben K plus 1 tane farklı kural çıkartabilirim. Bu K plus 1 kurallarını teker teker deniyorum. Burada bir tanesini çıkartmışım. Sol tarafta K tane item var. Sağ tarafta da bunlardan bir tanesini seçip sağa koymuşum.
+
+195
+00:37:39,411 --> 00:37:47,671
+Üzerinde midir, değil midir ona bakıyorum. Buna bakmak için ben bu arkadaşın tümünün support değerini bulmuş muydum? Bulmuştum.
+
+196
+00:37:47,671 --> 00:37:58,971
+Bu support değerini CS diye belirlemiştim. Bu support değerini sol taraftakinin support değerine böldüğüm zaman bana vereceği değer confidence değeri.
+
+197
+00:37:59,431 --> 00:38:04,591
+Bu confidence değerini de input olarak almış olduğum confidence değeriyle karşılaştırıyorum.
+
+198
+00:38:07,411 --> 00:38:23,411
+Yoksa bu zaman bu acceptable bir association rule diyorum. Demek ki ilk başta bana support ve confidence değerleri veriliyor. Minimum support değerini sağlayacak şekilde bütün...
+
+199
+00:38:26,068 --> 00:38:43,848
+İşte içerisinde kaç tane totalde eleman oluşturmak istediğim kural, kural için kaç tane eleman oluşturmak istiyorsam o kadar eleman içerecek şekilde itemlerin, item setlerin support thresholdlarını buluyorum. Bunlardan bir tanesi bu.
+
+200
+00:38:54,068 --> 00:39:12,728
+Ve biliyorum bu support değerini ve bütün kuralın içerisindeki itemları içeren support değerini bildiğim için bu ikisinin oranına bakıyorum. Bu oran bana inputta verilmiş olan confidence değerinden yüksekse bu bir acceptable association rule diyorum.
+
+201
+00:39:15,952 --> 00:39:31,272
+Üç ve dördüncü adım o kadar zor değil. Ama bu adımlardan üçüncü adım oldukça zor bir problem. Özellikle data ölçeği büyürse. Yani ben frequent item setleri nasıl bulurum?
+
+202
+00:39:31,795 --> 00:39:36,335
+Bana verilmiş olan veri seti içerisinde frequent item setleri nasıl bulurum?
+
+203
+00:39:36,335 --> 00:39:48,175
+Buradaki problemi zor bir problem haline getiren ise benim elimdeki transaction sayısı ya da elimdeki basket sayısı o kadar fazla ki
+
+204
+00:39:48,559 --> 00:40:15,380
+Ben bunları elimdeki in-memory'ye alamıyorum. Yani in-memory'de bunun sayısını bu acaba elimdeki itemların çok sayıdaki transaction içerisinde support değerinin üzerinde geçip geçtiğini kontrol edemiyorum. Dolayısıyla benim buna bir yöntem bulmam lazım. Yani frequent item seti nasıl hesaplarıma bir yöntem bulmam lazım.
+
+205
+00:40:15,807 --> 00:40:16,307
+Okay.
+
+206
+00:40:18,307 --> 00:40:24,628
+Now, in this problem, the data is kept in files.
+
+207
+00:40:24,628 --> 00:40:25,268
+Okay.
+
+208
+00:40:25,387 --> 00:40:26,988
+In the transaction format.
+
+209
+00:40:27,764 --> 00:40:54,943
+And the data is stored on disk and they are stored basket by basket. So you can see an example of this. Data is stored in this format. You can see in one basket, you see all the items that are being sold in this basket and another basket. These are the data items that are being sold in this basket, etc. So this is the format, stored basket by basket.
+
+210
+00:40:55,311 --> 00:41:04,231
+Now, what we want to do, we want to find first frequent single items.
+
+211
+00:41:06,835 --> 00:41:23,935
+We want to find what are the items that appear in many baskets. In other words, what are the items that appear in those baskets that are above, in certain number of baskets that are above the support threshold.
+
+212
+00:41:23,935 --> 00:41:32,155
+Okay. And then once we find the single frequent items, then we will, we need to find a pair.
+
+213
+00:41:33,076 --> 00:41:38,576
+A frequent items, then we will find triple frequent items.
+
+214
+00:41:38,576 --> 00:41:39,096
+Okay.
+
+215
+00:41:40,576 --> 00:41:47,775
+Now, in order to do this, in order to do this, so we need to have an algorithm that can do that.
+
+216
+00:41:48,096 --> 00:41:48,335
+Okay.
+
+217
+00:41:48,596 --> 00:41:54,155
+So let's take a look at how we can write an algorithm for this.
+
+218
+00:41:55,996 --> 00:42:00,596
+Now, the algorithm that we are going to talk about
+
+219
+00:42:00,960 --> 00:42:11,719
+The cost of this algorithm is being counted by the number of disk IO accesses.
+
+220
+00:42:11,719 --> 00:42:12,339
+Okay.
+
+221
+00:42:12,659 --> 00:42:18,759
+Now, if this algorithm runs by doing...
+
+222
+00:42:19,507 --> 00:42:39,707
+several disk IOs, okay, then the cost of this algorithm will be high. So if this algorithm can do one or two disk IOs, then the cost of this algorithm will be comparatively better, okay?
+
+223
+00:42:41,492 --> 00:43:01,032
+The computation of this algorithm, which means that without considering the disk IO, the execution of this algorithm, the cost of the execution is very small compared to the disk IO access time.
+
+224
+00:43:01,364 --> 00:43:11,063
+Okay, so therefore when we try to analyze the cost of this algorithm, we tend to look at the disk IO accesses.
+
+225
+00:43:11,344 --> 00:43:18,683
+How many disk IO accesses does the algorithm do in order to perform its functionality? That's what we are interested in.
+
+226
+00:43:18,683 --> 00:43:19,804
+Okay.
+
+227
+00:43:22,203 --> 00:43:22,804
+And
+
+228
+00:43:26,420 --> 00:43:35,139
+In order to find whether an item is frequent, as you can imagine that every time these algorithms will do a pass,
+
+229
+00:43:35,603 --> 00:43:42,183
+In whole data in order to find whether the item or item sets are frequent.
+
+230
+00:43:42,783 --> 00:43:42,903
+Okay.
+
+231
+00:43:43,143 --> 00:43:51,903
+So therefore, when we talk about a pass on the data, we are talking about analyzing all the items that are available.
+
+232
+00:43:51,903 --> 00:43:59,663
+We are talking about analyzing all the data, all the data that are available in the file.
+
+233
+00:44:05,492 --> 00:44:16,632
+Now, doing a pass on the data is not that problem, but the problem is the memory.
+
+234
+00:44:18,099 --> 00:44:32,199
+And when you find, when you try to count whether an item is frequent, what you need to do, you need to count all the items in your, in your store.
+
+235
+00:44:32,679 --> 00:44:41,380
+If you're, if, for example, if your store has 1 billion items in it, then you need to do a count for 1 billion item.
+
+236
+00:44:41,380 --> 00:44:42,099
+Okay.
+
+237
+00:44:42,675 --> 00:44:51,715
+What you need to do, so if you have a 1 billion item in the physical memory, so you need to keep track of 1 billion items.
+
+238
+00:44:51,715 --> 00:44:58,536
+And after you analyze basket number one, you need to go and increment those items.
+
+239
+00:44:59,027 --> 00:45:03,047
+Okay, that is included in the basket one.
+
+240
+00:45:03,148 --> 00:45:05,367
+Then you go on the basket number two.
+
+241
+00:45:05,367 --> 00:45:15,047
+And then you look at the items and you go to your table and then you update the count for those items.
+
+242
+00:45:15,587 --> 00:45:16,748
+And you go on like this.
+
+243
+00:45:17,127 --> 00:45:27,027
+So therefore, your physical memory should be big enough in order for you to count all those frequent...
+
+244
+00:45:27,027 --> 00:45:27,748
+Items.
+
+245
+00:45:28,527 --> 00:45:28,648
+Okay?
+
+246
+00:45:29,248 --> 00:45:30,987
+Now...
+
+247
+00:45:31,123 --> 00:45:37,043
+We are not only interested in counting the single items.
+
+248
+00:45:37,043 --> 00:45:44,183
+We are also interested in counting the pairs of items.
+
+249
+00:45:44,983 --> 00:45:57,183
+Now, if you have 100,000, for example, item in your physical store, maybe counting 100,000 item is not that problem.
+
+250
+00:45:58,420 --> 00:46:09,760
+When you consider the pairs of 100,000 items, then it becomes a problem because then you need to do 100,000 choose two.
+
+251
+00:46:10,199 --> 00:46:15,900
+And that means that 1 billion of pairs that you need to count.
+
+252
+00:46:15,900 --> 00:46:16,780
+Okay.
+
+253
+00:46:18,963 --> 00:46:28,003
+So therefore, the number of different things that we need to count in order to find whether they are frequent or not is way too big for the main memory.
+
+254
+00:46:28,003 --> 00:46:45,663
+Okay. And we don't want to put this information in the disk IO because in the disk, because the number of IO accesses that will have to be done in order to increment the counts will be will be a lot.
+
+255
+00:46:45,663 --> 00:46:46,243
+Okay.
+
+256
+00:46:50,708 --> 00:47:16,527
+Okay. Now, then counting the frequent single items is not that problem, but counting the pairs of items, whether they are frequent or not, that's a big, big problem. Okay. And therefore, when we talk about the finding frequent item set problem, we usually are talking about finding frequent pairs. Okay.
+
+257
+00:47:23,668 --> 00:47:43,847
+Arkadaşlar, Frequent Item Sets Mining yaparken ikililerin üzerinde yoğunlaşıyoruz. İkililerin üzerinde yani Frequent ikililerin üzerinde yoğunlaşmamızın sebebi şu, bu tür problemleri çalıştığımız domenlerde support trash oldu.
+
+258
+00:47:51,668 --> 00:48:11,248
+%80, %90 basket içerisinde birlikte satılmış ürünleri tespit etmeye çalışırız. Bu kadar yüksek bir support değerinde çok sayıda basket içerisinde geçmiş üçlü ya da dörtlü ürün bulmak oldukça zor.
+
+259
+00:48:11,987 --> 00:48:39,967
+Ama yaygın olarak ikili ürünleri bulmak mümkün. Dolayısıyla buradaki problemi Frequent Pair problemine indirgiyoruz. Frequent Pair'de hedeflediğimizde, üzerinde çalışmak istediğimizde şu, eğer benim normalde bir physical memory'm içerisinde ben bir elimde diyelim ki bir milyon tane transaction var, bir milyon tane basket.
+
+260
+00:48:39,987 --> 00:48:53,548
+Aynı zamanda elimde 100 bin tane de itemim var. Bu 100 bin tane itemı her birisi 4 byte'dan olacak şekilde ben inmemory'de kolaylıkla takip edebilirim.
+
+261
+00:48:54,771 --> 00:49:16,632
+Her birisinin count'unu takip edebilirim. Ama bunların ikililerini oluşturduğum zaman, yani 100 binin ikilisini oluşturduğum zaman bu durumda benim takip etmem gereken ikili sayısı, yani sayısını arttırarak takip etmem gereken ikili sayısı bu sefer milyarlara doğru gidiyor.
+
+262
+00:49:22,771 --> 00:49:27,371
+Dolayısıyla da benim buna uygun bir çözüm üretmem gerekli.
+
+263
+00:49:39,476 --> 00:49:58,496
+En basit yöntemi konuşaraktan problem üzerinde düşünelim. Benim diyelim ki karşılaşabileceğim bütün ikilileri sayacak kadar bir tane memorim olduğunu düşünelim.
+
+264
+00:50:00,000 --> 00:50:11,019
+Ne kadarlık bir büyüklüğe sahip diye öncelikle düşünelim. Benim en tane itemim olduğunu düşünelim. Bu en tane item için ben count işlemini yapabilirim.
+
+265
+00:50:11,476 --> 00:50:25,856
+Bunu in memory'de tutabilirim. Çünkü elimdeki bütün datayı scan ettikten sonra, üzerinden bir pass yaptıktan sonra ancak bu single itemların frequent olup olmadığını anlayacağım.
+
+266
+00:50:26,696 --> 00:50:31,776
+Bunu yaptıktan sonra bu sefer ikililer için tekrardan bütün data üzerinden gideceğim.
+
+267
+00:50:31,776 --> 00:50:39,476
+Yani olabilecek bütün ikililer için acaba bunlar data içerisinde birlikte geçmişler midir? Bunların kan...
+
+268
+00:50:39,476 --> 00:51:04,696
+Kontlarına bakmam lazım. O zaman elimdeki itemların hepsi worst case eğer frequent ise, n tane item'ın, bunların ikililerinin hepsine bakmam gerekecek. İkilileri de acaba frequent mu diye. 100 binin ikilisi, n'in ikilisine bakmam gerekiyor. n'in ikilisine baktığım zaman da oluşabilecek pairlerin sayısı n çarpı n-1 bölü 2.
+
+269
+00:51:05,364 --> 00:51:30,023
+Bu durumda benim memori ihtiyacım ne olmuş oluyor? En kare boyutunu geçmiş oluyor. Yani elimde 100 bin tane item varsa ve her bir item içerisinde bu durumda 100 binin karesi kadar bir tane item için
+
+270
+00:51:30,516 --> 00:51:51,936
+Pairler için, 100 binin karesi kadar pair için benim main memori de takip etmem lazım. Count saymam lazım. Her bir count içinde integer kullanıyorsam, 4 byte kullanıyorsam bu durumda bu benim totaldeki memori ihtiyacıma n çarpı n-1 bölü 2 diye düşünecek olursak bunu 4 ile çarpalım.
+
+271
+00:51:58,516 --> 00:52:01,516
+Bu gerçekten büyük bir memori ihtiyacına dönüşüyor.
+
+272
+00:52:01,996 --> 00:52:24,675
+Eğer böyle bir memori sahibi olmuş olsaydım, bu durumda çok kompleks bir algoritmaya gerek olmadan sadece in-memory'de hem single item itemları countlarını takip ederek hem de bunların pair'lerinin countlarını takip ederek hangilerinin frequent olup olmadığını bulabilirdim.
+
+273
+00:52:30,675 --> 00:52:31,016
+Ok?
+
+274
+00:52:33,844 --> 00:52:45,264
+Şimdi biz bu naif algoritmaya alternatifler sunacağız. Ama bu öncelikle biz böylesi bir datanın countunu alırken,
+
+275
+00:52:45,864 --> 00:52:57,024
+memori'de nasıl bir data reprezentasyon yapmalıyım ki bu count işlemini gerçekleştirebileyim konusuna bir bakmamız gerekiyor.
+
+276
+00:52:57,304 --> 00:53:01,844
+Bunun için iki tane farklı yöntem. Yani memori'de bu count işlemini...
+
+277
+00:53:01,844 --> 00:53:11,884
+iki farklı yöntemle yapabilirim. Bunlardan bir tanesi bir tane triangular matriz kullanırım. Bu triangular matrizle şöyle bir şey yaparım.
+
+278
+00:53:14,516 --> 00:53:41,816
+Derim ki şurada şeyden başladığımı düşünelim, birden başladığımı düşünelim, birden yukarıya doğru gittiğimi düşünelim. Birinci satır iki, üç, dört, beş buradan n'e kadar gidiyor. Şurası da yine birden başlasın n'e kadar gitsin. Böyle bir elimde matris olduğunu düşünelim.
+
+279
+00:53:42,516 --> 00:53:56,275
+Burada birin, şurada tuttuğum, şunu da şöyle diyelim, başka bir şekilde anlatayım.
+
+280
+00:54:02,996 --> 00:54:23,536
+Şunu düşünelim. Benim tuttuğum değerleri tutarken şöyle bir orderda tutuyorum. Birinci indis ikincisinden küçük olacak şekilde her bir satırı tutuyorum. Yani 1-2, 1-3, 1-4, 1-5, 1-n. Perilerin countlarını bu şekilde tutuyorum.
+
+281
+00:54:27,092 --> 00:54:40,652
+Ondan sonra da bu sefer 2, 3, 2, 4, 2, 5, 2n'e kadar olan pairleri tutuyorum. Ondan sonra 3, 4, 3, 5, 3n'i tutuyorum. Ta ki n-1n'e kadar tutuyorum.
+
+282
+00:54:51,092 --> 00:55:10,351
+N mesela şurada bir tane eleman tutuyorum. Bir aşağısına düştüğüm zaman N-2'ye N-1, N-2'ye N diye tutuyorum. N-3, N-2, N-3, N-1, N-3, N diye tutuyorum.
+
+283
+00:55:19,092 --> 00:55:33,851
+matrisi oluşturduğunuz zaman şöyle bir şey karşınıza çıkıyor. Bunun içerisinde ben ne yapmış oldum? Bu matrisle beraber her bir matrisin hücresinde bir tane count değeri tutabilirim.
+
+284
+00:55:35,452 --> 00:55:37,731
+Oluşabilecek bütün periler için bunu yapıyorum.
+
+285
+00:55:38,132 --> 00:55:55,231
+Okey, triangular matris de bir elimdeki en tane eleman için oluşabilecek bütün pairler için bir tane triangular matris oluşturuyorum. Şimdi bu triangular matrisin her bir hücresinde de bir tane integer tutmak istiyorum. Bu da 4 byte.
+
+286
+00:56:02,356 --> 00:56:14,636
+Frequent olup olmayacağını bilmiyorum. Yani bunlardan bazıları frequent olmayacaktır. Bazıları hatta hiçbir basket içerisinde geçmeyecektir. Bazıları da geçecektir. Tamam mı?
+
+287
+00:56:24,659 --> 00:56:32,159
+Benim oluşturacağım yaklaşımda her bir hücre için 4 byte'a ihtiyacım var.
+
+288
+00:56:33,159 --> 00:56:39,839
+Şimdi diğer bir yöntem ise şey kullanıyorum, tablo kullanıyorum.
+
+289
+00:56:40,499 --> 00:56:45,999
+Tabloda ise her bir satırda üçlü eleman kullanıyorum.
+
+290
+00:56:51,572 --> 00:57:09,331
+İlk elemanı, ikincisi ikinci elemanı, üçüncüsü ise count'ı gösteriyor. Ben ne yapıyorum? Karşılaştığım pair'leri, birinci şeyden başladım, karşılaştığım pair'leri count'larını yazıyorum. Ne yapıyorum yani? Şunu yapıyorum.
+
+291
+00:57:10,835 --> 00:57:30,175
+Şu basketten başladım. Bu basket içerisinde kaç tane item var? İki, beş tane item var. Bunlardan oluşan olası ikilileri buraya yazıyorum. İşte birinciyle ikinciyi yazıyorum. Birinciyle üçüncüyü yazıyorum. Bütün olası ikilileri yazıyorum ve bunların yanına countlarına yazıyorum.
+
+292
+00:57:30,175 --> 00:57:38,795
+Sonra aşağıya indim. Bunların da bütün olasılıklarını yazıyorum. Eğer bunlar zaten elimdeki listede varsa.
+
+293
+00:57:38,835 --> 00:57:53,835
+Bu listede bunların countlarını arttırıyorum. Eğer yoksa bunları ekliyorum. Bu yöntemle ne yapmış olacağım? Bu trip sadece bu data içerisinde geçen...
+
+294
+00:57:54,324 --> 00:58:18,003
+İkililerin countlarını saymış olacağım. Çünkü bu data içerisinde hiç geçmeyecek olası ikililer olabilir. Triangular matris yaklaşımında ben ne yapıyorum? İçerisinde geçmeyecek olanlar içinde in memory'de bir yer ayırıyordum. Ama bu yaklaşımda ne yapıyorum? Sadece data içerisinde geçmiş olan ikililer için count'u saymış oluyorum.
+
+295
+00:58:18,516 --> 00:58:43,016
+Tamam. Peki bu ikinci yöntemdeki kostüm nedir? Her bir eleman için 4 byte tuttuğum için totalde bunun için ihtiyacım olan 12 byte. Burada ise triangular matriste ise benim her bir eleman için tutacağım değer ise 4 byte.
+
+296
+00:58:45,364 --> 00:59:12,743
+Şimdi eğer biz totalde oluşabilecek bütün pairlerin sayısı, bu pairlerin sayısı neydi? N çarpı n-1 bölü 2 idi. Totalde oluşabilecek bütün pairlerin sayısı yani n çarpı n-1 bölü 2 tane pair içinde gerçekleşen pair sayısı yani data içerisinde olan pair sayısı 1 bölü 3'ünden küçük ise
+
+297
+00:59:13,460 --> 00:59:18,019
+Bu durumda ben tabular metodu kullanmayı tercih ederim.
+
+298
+00:59:18,420 --> 00:59:34,860
+Neden? Çünkü tabular metodda 12 byte, her bir satır için 12 byte kullanıyorum. Her bir pair için 12 byte kullanıyorum. Ama triangular approach'ta ise her bir pair için 4 byte kullanıyorum.
+
+299
+00:59:34,860 --> 00:59:46,340
+Bu durumda eğer bir bölü üçünden daha az sayıda data içerisinde geçen pair varsa tabular metodu kullanmak benim için daha az memori kullanmak demek.
+
+300
+00:59:46,420 --> 00:59:54,740
+Ama 1 bölü 3'ünden üzeri şey varsa bu durumda triangular matrisi kullanmak benim için daha avantajlı.
+
+301
+00:59:56,900 --> 01:00:12,320
+Şimdi triangular matrisi de kullanırken orada da ben ne yapıyorum? Elimdeki matrisi daha kolay bir şekilde reprezenti etmeye çalışıyorum. Peki bunu nasıl yapıyorum?
+
+302
+01:00:13,780 --> 01:00:41,740
+Şimdi bu matrisi ben şu şekilde yazabilirim. Şuradaki gördüğümüz matrisi ben şöyle bir sıralamada yazabilirim. Öncelikle 1, 2, 1, 3, 1'den n'e kadar gidecek şekilde en alttaki satırı yazdığımı düşünelim. Ondan sonra 2, 3, 2, 4, 2'den n'e gidecek şekilde yazdığımı düşünelim. 3, 4, 3'den n'e kadar n-1'den n'e gidecek şekilde.
+
+303
+01:00:41,780 --> 01:00:51,060
+Bu şekilde sıralandırılmış bir şekilde bu matrisin yazdığımı düşünelim.
+
+304
+01:00:51,411 --> 01:01:06,051
+Ve bunu da bir integer değeriyle numaralandırdığımı düşünelim. Yani birincisine bir dedim, ikincisine iki dedim, üçüncüsüne üç dedim. Bu şekilde devam ettim ta ki sonuncusuna kadar.
+
+305
+01:01:06,051 --> 01:01:17,511
+Ve bunu tek dimensional bir array olarak düşündüğümü şu anlık düşünelim. Tek dimensional bir array olarak farz ettiğimi düşünelim.
+
+306
+01:01:19,411 --> 01:01:47,331
+Yöntemle eğer bana verilmiş olan İ ve J değeri için yani P'nin İ'si ve J'si bana verilmişse yani şu triangular matriste hangi noktada olduğunu bana vermişsen eğer bir yöntem bulabilirsem bu tek boyutlu ereği içerisinde bunun hangi pozisyonda olduğunu bulabilirsem bu durumda böylesi bir matris tutmak yerine şöyle tek boyutlu bir tane.
+
+307
+01:01:47,411 --> 01:01:53,191
+Array tutarak ben bu Triangler matrisin bütün değerlerini takip edebilirim.
+
+308
+01:01:53,771 --> 01:01:58,311
+Onun için de şöyle bir formülüm var.
+
+309
+01:01:59,051 --> 01:02:13,931
+Bununla beraber bana verilmiş olan pairlerin pozisyonunu bana verdiğin zaman ben tek dimensional array içerisinde hangi sırada olduğunu ne yapabilirim bulabilirim.
+
+310
+01:02:14,192 --> 01:02:18,952
+Bu durumda eğer ben bir...
+
+311
+01:02:19,347 --> 01:02:41,028
+Şimdi Triangular matris kullanacaksam Triangular matrisi de tek boyutlu bir array olarak memory'de reprezent edebilirim ve bu tek boyutlu array'de herhangi bir pair'in count'unu update edeceksem bu array'in ilgili indisine bu formülle gelip bu indisteki değeri ne yapabilirim? Arttırabilirim.
+
+312
+01:02:47,347 --> 01:03:08,108
+İki memory representation gördünüz. Bir tanesi triangular approach. Bu triangular approach'da ben olası bütün pairler için memoride yer tutuyorum. N çarpı N-1 bölü 2 tane farklı pair için yer tutuyorum. Ama bu durumda her bir pair için 4 byte yer ayırmam gerekiyor.
+
+313
+01:03:08,851 --> 01:03:28,891
+Bu pair data içerisinde gerçekleşmiş olsun ya da gerçekleşmemiş olsun tutmam gerekiyor. Diğer yöntem ise tabular metot. Tabular metotta ise sadece data içerisinde karşılaşmış olduğum pairler için ben ne yapıyorum? Bir tane entry tutuyorum.
+
+314
+01:03:29,396 --> 01:03:57,396
+Bunun dışında data içinde karşılaşmadığım periler için tutmuyorum. Ve diyorum ki eğer benim data hakkında önceden bir bilgim varsa ve bu bilgiye dayalı olarak benim data içerisinde gerçekleşmiş olan perilerimin sayısı n çarpı n-1 bölü 2'nin 3'te 1'i oranındaysa ve bundan daha azsa o zaman tabuları metodu kullanıraktan ben ne yapabilirim? Data reprezentasyonu.
+
+315
+01:03:57,396 --> 01:04:13,195
+Ama eğer elimde böyle bir bilgi yoksa ya da elimdeki bilgi bu gerçekleşen pairlerin 3 bölü 1'den n çarpı n-1 bölü 2'nin 3 bölü 1'inden yukarıda olduğunu söylüyorsa bu durumda triangular matrisi kullanırım.
+
+316
+01:04:13,195 --> 01:04:25,195
+Ama triangular matrisi kullanırken de 2 boyutlu ereği kullanmak yerine tek boyutlu ereği kullanırım. Bu tek boyutlu ereği üzerinde de triangular matristeki herhangi bir pairin pozisyonunu...
+
+317
+01:04:25,396 --> 01:04:29,615
+bulmak için şuradaki formülden yararlanabilirim.
+
+318
+01:04:34,739 --> 01:04:42,819
+Bunu da konuşmuş olduk. Evet, bir 10 dakika ara verelim arkadaşlar. Ondan sonra artık algoritmalara gireceğiz. A priori algoritmasını konuşuyor olacağız.
+
+319
+01:14:09,779 --> 01:14:12,079
+Arkadaşlar, sesim geliyor mu? Bir teyit eder misiniz?
+
+320
+01:14:13,799 --> 01:14:14,639
+Geliyor hocam.
+
+321
+01:14:15,420 --> 01:14:15,639
+Tamam.
+
+322
+01:14:17,171 --> 01:14:41,471
+Şimdi bizim üzerimizde, üzerinde çalışacağımız az önceki bölümde neyi konuşmuş olduk? Ben hangi memory reprezentasyonu kullanarak bu frequent item seti tespit etmek için memory'de count işlemini gerçekleştirebilirim? Bir triangular matris yöntemi vardı, bir de tabular yöntem vardı.
+
+323
+01:14:45,171 --> 01:14:52,971
+item setleri bulmak için kullanabileceğim yöntemlere bakacağız. Şimdi bunlardan bir tanesi apriori algoritması.
+
+324
+01:14:52,971 --> 01:15:12,051
+Şimdi bu apriori algoritmasını şunu yapalım. Apriori algoritması şunu yapıyor. Apriori algoritması diyor ki eğer bir tane item set frequent ise
+
+325
+01:15:12,595 --> 01:15:15,536
+Bunun bütün subsetleri de frequent'tur.
+
+326
+01:15:15,536 --> 01:15:17,155
+Okey.
+
+327
+01:15:18,996 --> 01:15:45,175
+Buna da monotonicity özelliği diyor. Eğer bir tane item setin içerisindeki itemlar support trash olduğunu üzerindeyse bunun bütün subsetleri de o kadar farklı basketin içerisinde geçecektir. Dolayısıyla bütün subsetleri de aynı şekilde frequent'tür.
+
+328
+01:15:46,003 --> 01:16:08,023
+Şimdi biz bu Epiri algoritmında bunu kullanıyoruz. Biz de şunu diyoruz. Diyoruz ki eğer bir item frequent değil ise bu itemı içeren bütün pairler de frequent değildir.
+
+329
+01:16:08,787 --> 01:16:26,487
+Yani bu monotonicity özelliğinin tam tersini kullanaraktan bunu söylüyoruz. Eğer bir tane single item frequent değil ise bunu içeren bütün pairler de frequent değildir. Yani bu frequent olmayan pairler için tekrardan saymaya gerek yoktur diyoruz.
+
+330
+01:16:26,487 --> 01:16:34,607
+Şimdi bu bilgiyi kullanaraktan a priori algoritmasını bir çalıştıralım.
+
+331
+01:16:34,868 --> 01:16:44,108
+Şimdi AppYori algoritması iki tane data set üzerinde yani disk üzerinde duran data üzerinde iki tane.
+
+332
+01:16:45,203 --> 01:17:07,503
+Pass yapıyor. Bunlardan bir tanesi ne amacında? Single itemları saymak amacıyla yapıyor. Elimde en tane item varsa single itemlar. Bu single itemların her bir basketle geçip geçmemesine bakaraktan sayılarına bakıyor. Birinci pass bu.
+
+333
+01:17:09,427 --> 01:17:28,827
+Birinci pası yaptıktan sonra bu en tane item içerisinde hangilerinin frequent olduğunu tespit ediyor algoritma. Bunları sadece frequent olanları için olası bütün pairleri oluşturuyor.
+
+334
+01:17:29,235 --> 01:17:57,175
+Yani bu en tanenin içerisinde diyelim ki 3'te biri sadece Frequent çıktı. Bu 3'te birinin ikililerini tespit ediyor ve tekrardan data sete gidip disk üzerinde data seti okurken bu sefer bu 3'te birini, 3'te bir elemanı kullanarak oluşturmuş olduğu ikililerin
+
+335
+01:17:57,235 --> 01:18:08,815
+Sayısına bakıyor. Bu sefer teklilere bakmıyor, bu sefer pairlere bakıyor. Birinci baskette bu pair var mıdır? İkinci baskette bu pair var mıdır diye bu sefer bu pairlerin countlarını sayıyor.
+
+336
+01:18:10,956 --> 01:18:15,975
+Yani birinci pasta ilk önce itemların countlarını saydı.
+
+337
+01:18:16,948 --> 01:18:30,288
+Ondan sonra ikinci pasın başında frequent itemleri tespit etti. Sonra bu frequent itemlardan yola çıkaraktan olabilecek bütün pairleri tespit etti.
+
+338
+01:18:30,288 --> 01:18:44,608
+Ve bu sefer tekrardan database'e gidip baktığı zaman bu sefer bu frequent itemlardan oluşan pairlerin gerçekten frequent olup olmadığına bakacak. Yani bunların sayılarını sayacak.
+
+339
+01:18:45,011 --> 01:19:08,091
+Şimdi bu algoritmada şöyle bir problem var. Eğer bu frequent olan itemlerin sayısı da çok yüksekse, dolayısıyla bu frequent itemlardan oluşan pairlerin sayısı da çok yüksek olacaktır. Çünkü ikili kombinasyonuna bakıyoruz.
+
+340
+01:19:08,659 --> 01:19:36,659
+Bu durumda şuradaki memory requirement'ı çok yüksek olacaktır. Ve bunların çoğunun da gerçek data içinde geçip geçmediğini bilmiyoruz. Yani bunların içerisinde hiç data içerisinde beraber geçmemiş olanları da olmasına rağmen ben bu memory içerisinde bunları da sayacak şekilde bir data...
+
+341
+01:19:36,659 --> 01:19:38,619
+Reprezentasyon yaratmam gerekecek.
+
+342
+01:19:40,420 --> 01:19:42,500
+Epriori'nin böyle bir sorunu var.
+
+343
+01:19:45,460 --> 01:19:58,359
+Şimdi Epriori'de bu şeyi biraz daha space kazanmak için, biraz daha memori'den şeyi kazanmak için şöyle bir yöntem uyguluyorum.
+
+344
+01:20:00,372 --> 01:20:20,772
+Bu kadar matrix reprezentasyonu kullanıyordum değil mi? Elimde n tane item varsa bu n tane item için n çarpı n-1 bölü 2 tane pair oluşacaktır diye düşünüyordum. Bu kadar n çarpı n-1 bölü 2 tane pair için bir tane triangular matris oluşturuyordum.
+
+345
+01:20:23,636 --> 01:20:38,396
+Bir tek boyutlu bir ereğe dönüştürüyordum. Tek boyutlu bir ereğinde hangi indise gideceğimi az önce indisleri kullanaraktan gösterdiğim formüle dayalı olarak tek boyutlu ereğindeki pozisyonunu bulabiliyordum.
+
+346
+01:20:38,396 --> 01:20:49,556
+Ama şimdi burada kalan frequent itemlar totaldeki birden n'e kadar olan itemlardan daha az.
+
+347
+01:20:49,971 --> 01:21:02,951
+Ben aynı şekilde yine bu triangular matriz yaklaşımını kullanarak bu frequent itemlardan oluşturmuş olduğum pairler için memoride bir reprezentasyon yapmak istiyorum.
+
+348
+01:21:03,512 --> 01:21:17,771
+Ve bu yapmış olduğum reprezentasyonu da yine bir önceki derste gösterdiğim formülü kullanaraktan bu tek boyutlu ereği üzerinde hangi noktaya gideceğimi bulmak istiyorum.
+
+349
+01:21:17,971 --> 01:21:21,032
+Bunun için de şöyle bir yöntem uyguluyor.
+
+350
+01:21:21,844 --> 01:21:46,744
+Şimdi sanki frequent item setleri, sanki burada bütün pairleri takip edeceğim, yani olabilecek bütün n çarpı n-1 bölü 2 tane pairi takip edeceğim tek boyutlu ereğin numaralarının olduğu bir tane tablo tutuyor.
+
+351
+01:21:49,844 --> 01:21:57,004
+birden ene kadar olan bu tek boyutlu ereğin indisleri var.
+
+352
+01:21:58,355 --> 01:22:14,975
+İkincisinde ise, şimdi artık yeni bir tane tek boyutlu array oluşturdum ya, bu yeni boyut oluşturduğum tek boyutlu arrayi sadece frequent itemler için oluşturduğum pairlerden oluşturdum.
+
+353
+01:22:14,975 --> 01:22:26,355
+Dolayısıyla bu yeni oluşturduğum arrayin içerisindeki pair sayısı ilk durumdakine göre, yani bütün itemlardan oluşan pairlerin sayısı.
+
+354
+01:22:26,355 --> 01:22:48,036
+O yüzden buradaki yani orijinal ilk baştaki triangular matristeki triangular matrisin tek boyutlu eray şeklindeki reprezentasyonundaki pozisyonuyla yeni oluşan eraydeki pozisyonunu bu şekilde takip ediyorum bu tablodan.
+
+355
+01:22:54,355 --> 01:23:04,815
+Erey reprezentasyonunda birinci konumda olan pair, bu frequent pairler için oluşturmuş olduğum tek boyutlu ereğide de birinci pozisyondaymış.
+
+356
+01:23:05,363 --> 01:23:33,043
+Üçüncü pozisyondaki benim bu tek boyutlu array'de frequent pairler için oluşturduğum pozisyonda ikiye karşılık geliyormuş. Bu şekilde bu frequent pairler için oluşturmuş olduğum bu yeni array'in herhangi bir indisine gitmek istersem yine bu orijinal triangular matriste ilgili tek boyutlu array'deki ilgili noktayı...
+
+357
+01:23:33,363 --> 01:23:52,743
+bulmak için kullandığım formülü kullanıyorum. Bu formülle ilgili noktaya gidiyorum. Onun karşılığındaki pozisyonu alıyorum ve bu şekilde ulaşıyorum. Bu yeni oluşturduğum tek boyutlu array'deki count değerini arkadaşlar. Demek ki yerden kazanmak için
+
+358
+01:23:53,108 --> 01:24:04,208
+Bu yeni yapmış olduğum yöntem yine triangular matris yaklaşımını tek boyutlu ereyle belirtiyorum ama yerden kazanmak için böyle bir tablo oluşturuyorum.
+
+359
+01:24:04,208 --> 01:24:18,208
+Bu şekilde yaptığım zaman bütün datayı tutmak için büyük n çarpı n-1 bölü iki tane içinde elemanı olan bir triangular matris kullanmak yerine yine triangular matris yaklaşımını kullanıp
+
+360
+01:24:18,304 --> 01:24:30,943
+Ama bu sefer sadece Frequent Pair'leri takip etmek için kullanıyorum. Bu da Apriori algoritmasının biraz daha memoriden yer kazanmak için kullandığı bir yöntem.
+
+361
+01:24:32,724 --> 01:24:56,404
+Şimdi, Apriori algoritmasının yaklaşımı ne olmuş oldu? Öncelikle şuradan başladı. Elimde frequent olup olmadığını bilmediğim n tane item var. Bu n tane içinde bir tane elemanı olan item set. Şimdi bunun için bir tane pass yapıyorum. Yani data seti okuyorum.
+
+362
+01:24:57,011 --> 01:25:13,899
+Ve bunun içlerinden support değerinin yukarısında olanlarını seçiyorum. Bunlar benim için frequent demek. Bu frequent item set. Bunu yaptıktan sonra bu frequent item setlerden...
+
+363
+01:25:13,971 --> 01:25:36,591
+Oluşacak ikili pairleri oluşturuyorum. Yani bir sonraki candidateleri oluşturuyorum. İşte burada benim count işlemi yapacağım yeni oluşturduğum bütün ikililer bu candidate 2 içerisinde. Ondan sonra ikinci pasımı yapıyorum.
+
+364
+01:25:37,716 --> 01:25:53,476
+İkinci pası yaptığım zaman bu sefer de içerisinde iki tane eleman olan pair'lerin count'una bakıyorum dataset içinde. Eğer bunlar belirli bir değerin üzerinde ise üzerinde olanlar için bunlara ben frequent diyorum. Frequent pair'ler.
+
+365
+01:26:02,416 --> 01:26:15,096
+Şimdi triplar, candidate triplar oluşturuyorum ve bir sonraki PES'te bu sefer de bu üçlülerin frequent olup olmadığı için count işlemi yapacağım.
+
+366
+01:26:15,096 --> 01:26:20,676
+Okey, filter aşaması bu candidate üçten sonra da olacak. Bu bu şekilde devam ediyor.
+
+367
+01:26:21,676 --> 01:26:23,096
+Ama bizim...
+
+368
+01:26:25,876 --> 01:26:34,296
+Her bir candidate için mutlaka bir tane pass yapmam lazım. Yani bir defa dataset'i okumam lazım.
+
+369
+01:26:34,296 --> 01:26:37,296
+Şimdi benim...
+
+370
+01:26:39,539 --> 01:26:50,980
+Her bir yeni Candidate için yani Candidate 2 için az önce Pair durumları için ne kadar memori ihtiyacı olduğunu gördük.
+
+371
+01:26:51,699 --> 01:27:00,000
+Triple'lar içinde ya da içerisinde 4 tane item olan item setler içinde yine bu şekilde memori ihtiyacım olacak.
+
+372
+01:27:00,368 --> 01:27:22,368
+Onların countunu yapabilmem için. Ama genelde bizim sahada karşılaştığımız problemlerde support değerleri o kadar yüksek tespit ediliyor ki yani 80'nin 90'ın üzerinde. Dolayısıyla içerisinde çok fazla frequent item olan item setlerle karşılaşma imkanımız yok. Dolayısıyla biz problemi...
+
+373
+01:27:23,988 --> 01:27:36,168
+Neyi indiriyoruz? Bu pairleri tespit edecek, yani Frequent pairleri tespit edecek şekilde a priori algoritmasını büyük data setler üzerinde nasıl uygularız problemini indiriyoruz.
+
+374
+01:27:36,848 --> 01:27:44,888
+Şimdi a priori algoritması demek ki şu anda neyi görmüş olduk? İki tane pas yapıyor.
+
+375
+01:27:45,408 --> 01:28:12,828
+Öncelikle birinci pasta tekli itemların count'unu sayıyor. Datasete bakıp itemların count'larını yazıyor. Arkasından bunların frequent olanlarını bırakıyor, gerisini siliyor. Frequent olanlarının içerisinden de neleri buluyor? Olabilecek bütün pair'leri buluyor ve bütün pair'ler için tekrardan database'e gidip tekrardan ikinci bir pas yapıyor.
+
+376
+01:28:13,231 --> 01:28:21,331
+Ve bu pairler için countları tekrardan hesaplıyor ve bunların içerisinden frequent olanları buluyor. Yani frequent pairleri bulmuş oldu.
+
+377
+01:28:21,652 --> 01:28:49,652
+Ama şu anda gördüğümüz şöyle bir eksikliği var. Buradaki pairlerin sayısı çok büyük olacak olursa halen benim memori problemim devam ediyor. Buradaki pairlerin sayısı çok büyük olursa benim limited memori içerisinde bu algoritmayı çalıştırmam imkansız. Dolayısıyla frequent olmayacağını bildiğim pairleri benim saymam.
+
+378
+01:28:49,652 --> 01:28:56,492
+Bunun için de bu a priori algoritmasının improvement'larına bakalım.
+
+379
+01:29:03,923 --> 01:29:11,224
+Şimdi bu algoritmalardan bir tanesi Park Chen Yu tarafından önerilmiş PCY algoritması.
+
+380
+01:29:11,224 --> 01:29:28,923
+Şimdi bu PCY algoritması şunu öneriyor. Bu PCY algoritması diyor ki, ben öncelikle ilk pası gerçekleştirirken diyor,
+
+381
+01:29:29,395 --> 01:29:47,695
+Ben itemların countlarını sayayım diyor. Aynı zamanda bir tane hash table'ı oluşturayım diyor. Bu hash table'ın büyüklüğünü de memory'nin geri kalan kısmı, bu algoritmanın kullanabileceği geri kalan kısmı için düşüneyim diyor.
+
+382
+01:29:48,340 --> 01:30:02,240
+Ve benim karşılaştığım bütün pairleri bu hash table'a ne yapayım? Map ettireyim diyor. Yani bunun bucket'larına bu pairleri ne yapayım? Koyayım diyor.
+
+383
+01:30:02,240 --> 01:30:14,420
+Ve ne zamanki bir tane bucket'a bir tane pair map etti, bu bucket'ın count'unu da bir arttırayım diyor.
+
+384
+01:30:15,444 --> 01:30:38,684
+Şimdi böyle bunu yaptığım zaman ne olmuş olacak? Bunu yaptığım zaman birinci pası bitirdiğim zaman aynı bakıta eğer bir bakıta support değeri küçük olan yani support değerinden küçük olan
+
+385
+01:30:39,123 --> 01:30:43,123
+Bakıtlara map etmiş olan pairlerin…
+
+386
+01:30:43,923 --> 01:31:11,903
+Frequent olmadığını biliyorum demek değil mi? Yani Frequent olmayan bucketların karşılık gelen pairlerin gerçek data içerisinde Frequent olmadığını biliyorum. Dolayısıyla bir sonraki aşamada benim onları onları tekrar saymam gerekli değil. Onlar için memuride bir allocation yapmam da gerekli değil.
+
+387
+01:31:11,923 --> 01:31:36,283
+Bu algoritma bana şunu sağlıyor. İçerisinde bunları bakıtlara map ettirirken hash fonksiyonuyla bu bakıtların değerlerine bakıyorum. Bu değerler eğer support değerinden düşükse bu bakıtlara map etmiş olan bütün pairleri ne yapıyorum? Artık bir sonraki aşamada count etmiyorum.
+
+388
+01:31:39,923 --> 01:32:02,923
+Bu konuda ki aşamada bunu count etmemeyi nasıl gerçekleştiriyorum? Onu da şu şekilde yapıyorum. Her bir bucket için bir tane bitmap oluşturuyorum. Bu bitmap'in her bir hücresi bir tane bucket'a karşılık geliyor. Eğer bu bucket...
+
+389
+01:32:03,247 --> 01:32:10,967
+Bakıtın frequent olduğunu tespit etmişsem bir, frequent olmadığını tespit etmişsem sıfır yazıyorum.
+
+390
+01:32:11,567 --> 01:32:16,487
+Ve elimde benim sıfır ve birlerden oluşan bir tane bitmapim var.
+
+391
+01:32:16,884 --> 01:32:33,564
+Ve burada kullanmış olduğum hash fonksiyonu burada da kullanıyorum. Elimde frequent item setlerim var. Normalde ben a priori algoritmasında ne yapıyordum? Bu frequent item setlerin oluşturabileceği bütün pairleri buraya yazıyordum.
+
+392
+01:32:44,884 --> 01:32:53,504
+Bir araya getirerek oluşturduğum pay'ı öncelikle bu hash fonksiyonuna sokup hangi bucket'a karşılık geldiğine bakıyorum.
+
+393
+01:32:54,004 --> 01:32:59,324
+Ve bu bucket'ın değeri eğer sıfırsa bu durumda bunu count etmeyeceğim.
+
+394
+01:32:59,859 --> 01:33:20,859
+Eğer bunun denk gelmiş olduğu bakıtın değeri birse bunu count edeceğim. Dolayısıyla burada benim count edecekler listesine koyduğum perilerin sayısını artık azaltmış oluyorum. Nasıl azaltmış oluyorum? Artık bunların arasında bir önceki pastan bildiğim...
+
+395
+01:33:21,039 --> 01:33:27,539
+Bu kadarıyla frequent olmadığını bildiğim pairleri artık buraya koymamış oluyor.
+
+396
+01:33:28,140 --> 01:33:36,400
+Ve ikinci pası yaparken sadece frequent olduğu konusunda ön bilgim olan pairler için pası yapıyorum.
+
+397
+01:33:36,400 --> 01:33:40,579
+Ve bu pairler için countları saydığım zaman
+
+398
+01:33:41,939 --> 01:33:52,340
+Bunlar arasından frequentları bulmuşsam algoritmam burada bitiyor. Dikkat edin algoritmam neydi? Frequent pairleri tespit etmeye indirmiştim artık algoritmamı.
+
+399
+01:33:52,340 --> 01:34:08,019
+Şimdi bu PCY algoritmasının da yine bir problemi var. Bu problem de şu. Şimdi benim buradaki memorimde oluşturabileceğim hashtable'ın büyüklüğü memorimle sınırlı.
+
+400
+01:34:08,467 --> 01:34:23,467
+Okey. Dolayısıyla olabilir ki aynı bakıta denk gelen pairler olduğu zaman bu pair diyelim ki çok sayıda...
+
+401
+01:34:23,891 --> 01:34:31,511
+Frikunt olmayan pair aynı bakıta denk geldi. Hash fonksiyonu tesadüfen bunları aynı bakıta soktu.
+
+402
+01:34:31,511 --> 01:34:42,112
+Ve her birisi bir tane bakıta denk gelince o bakıtın değerini bir tane arttırıyorum ya, dolayısıyla bu bakıtın değeri de support değerinin üzerine çıkmış oldu.
+
+403
+01:34:43,032 --> 01:34:51,811
+Bu durumda hepsi frekunt olmamasına rağmen aynı bakıta şans olarak denk geldikleri için
+
+404
+01:34:51,891 --> 01:35:11,431
+Benim bu PCIY algoritmam bu pairleri de sanki frequent adayıymış gibi düşünecek ve bunlar için de benim sayma yapmamı zorlayacak. Dolayısıyla da memori de gereksiz yere ben yer tutmuş olacağım.
+
+405
+01:35:11,956 --> 01:35:26,396
+Bu birinci durum. İkinci durum da diyelim ki mesela bir tane frequent olan bir tane pair'i ben bir tane bakıta map ettirdim. Ama bunun yanı sıra bununla birlikte frequent olmayan 4-5 tane pair de aynı bakıta map oldu.
+
+406
+01:35:26,695 --> 01:35:32,516
+Şimdi frequent pair'den dolayı bu bakıtın değeri zaten support'tan yüksek olacağı için.
+
+407
+01:35:32,948 --> 01:35:57,771
+Bitmap'te bu bucketın değeri bir olacaktır. Dolayısıyla da frequent olmayan pairler de ne yapılmak? Bir sonraki aşamada sayılmak durumunda olacaktır. Dolayısıyla PCI algoritması, Appliori algoritmasına göre bir tık bana memory kazancı sağladı ama halen improvement var. Yani halen benim...
+
+408
+01:35:58,804 --> 01:36:09,684
+Frikunt olmayan pairler için sayma işlemi yapmak üzere memuride yer ayırma durumum söz konusu. Bunu da iyileştirmem gerekli.
+
+409
+01:36:14,228 --> 01:36:41,867
+Az önce bu PCY algoritmasının südokodunu ben size anlatarak söyledim. Ne yapıyorum? Öncelikle tekliler için şey yapıyorum, teklilerin sayısını birinci pasta sayıyorum. Sonra karşılaştığım her bir pair için bu pair'i bir tane bucket'a hash ettiriyorum ve hash fonksiyonun ilgili bucket'a eğer bir pair'i map ettirmişse
+
+410
+01:36:42,228 --> 01:36:46,387
+Bunun count'unu bir arttırıyorum. Bu birinci pasta yapmış olduğu işlem.
+
+411
+01:36:54,676 --> 01:37:22,676
+İkinci pasta yapmış olduğu işlem ise öncelikle ne yapıyorum? Frequent itemlardan yola çıkarak bütün pairleri oluşturuyorum. Bu pairler benim için candidate pairler. Ondan sonra da bu pairlerin sayıp saymayacağıma karar verirken öncelikle i ve j'nin frequent item olmasına dikkat ediyorum. Zaten frequent itemlardan bu pairleri oluşturduğum için bu birinci koşulu zaten sağlamış.
+
+412
+01:37:22,676 --> 01:37:43,836
+İkinci koşulda da bu pairleri hash fonksiyonumla bitmap'e hash ettiriyorum. İlgili bakıta buluyorum. Eğer o ilgili bakıtın bitmap'teki değeri bir ise bu durumda bu pairi ikinci peste sayıyorum. Yoksa saymıyorum.
+
+413
+01:37:48,532 --> 01:38:03,112
+PCY algoritmasını konuşmuş olduk. Şimdi PCY algoritmasından sonra PCY algoritmasını bir tık daha iyileştirecek üçüncü bir algoritmayı konuşacağız. Hani bu da multi-stage algoritması.
+
+414
+01:38:07,507 --> 01:38:28,988
+Şimdi bu multi-stage algoritması da en nihayetinde frequent pairleri bulan bir algoritma. Yalnız bu multi-stage algoritması diyor ki, arkadaş ben diyor bir iki tane PES yapmak yerine üç tane PES yaparak sana minimum memory requirementıyla şeyi bulabilirim, frequent pairleri bulabilirim.
+
+415
+01:38:30,515 --> 01:38:44,535
+Öncelikle birinci pasında aynı PCY algoritması gibi çalışıyor. Bir tane hash table tutuyor. Bütün pairleri bu hash table'a, bucket'larına map ettiriyor ve bunların count'larını arttırıyor.
+
+416
+01:38:45,835 --> 01:38:53,995
+İkinci pasta ise şunu yapıyor. İkinci pasta öncelikle frequent item seti buluyor.
+
+417
+01:38:55,380 --> 01:39:23,380
+Bu frequent item seti nereden buluyor? Item countları saymıştı. Support değerinden yüksek olanlar frequent item setler. Sonra bitmap'i hesaplıyor. Bunu nasıl hesaplıyor? Bitmap'in element sayısı buradaki bucket sayısı kadar. Buradaki hash table'da her bir bucket'ı count değerini kontrol ediyor. Support değerinden yüksek olan bucket'lara bir yazıyor.
+
+418
+01:39:23,380 --> 01:39:42,500
+Diğerlerine 0 yazıyor. Ondan sonra burada yine bir tane hash table tutuyor. Şimdi bu hash table'da da yine pairleri sayacak. Bu artık multi-stage algoritması. Yalnız burada bu pairleri sayarken bu sefer şuna dikkat ediyor.
+
+419
+01:39:50,804 --> 01:39:59,804
+Hem iki tane elemanın da, her iki peyrin oluşturan iki elemanın da frequent olması gerekli. Aynı zamanda...
+
+420
+01:40:00,000 --> 01:40:15,199
+Pair'i bitmap'e hash fonksiyonuyla map ettirdiği zaman bitmap'teki o bucket'ın değerinin 1 olması gerekli. Ancak onlar için bu hash table'ın entry'lerini ne yapıyorum? Dolduruyorum.
+
+421
+01:40:27,119 --> 01:40:41,800
+Bu pairler için yeni hash table'a ne yapıyor? Map ettiriyor. Ve bu hash table'da ilgili bakıta map ettirdiği pairler için de bunların count değerini bir arttırıyor.
+
+422
+01:40:44,787 --> 01:41:08,747
+Üçüncü pasta ise şunu yapıyor. Yine elimde frequent item set var. İkinci olarak bitmap 1'in taşıyor. Bu sefer bitmap 2'yi oluşturuyor. Bitmap 2'yi oluştururken de ikinci hash table içerisinde count değeri support'tan yüksek olan bucket'lar için 1 koyuyor, diğerleri için 0 koyuyor.
+
+423
+01:41:09,300 --> 01:41:24,800
+Şimdi üçüncü pasa gelecek. Üçüncü pası yaparken de artık üzerinde count işlemi yapacağı pairleri belirliyor. Bunu yaparken nasıl belirliyor?
+
+424
+01:41:25,876 --> 01:41:53,876
+Elimde frequent item setler içerisinden olası pairleri belirliyor. Bu pairleri öncelikle birinci hash fonksiyonu kullanarak birincinin bitmapine bakıyor. Bu pairin map ettiği vakıttaki değer bir mi? Bir ise okey. İkinci bitmap'e bakıyor. İkinci hash fonksiyonunun map ettirdiği vakıtın değeri bir ise, bu da okeyse, bu durumda artık bu pair...
+
+425
+01:41:53,876 --> 01:42:04,976
+Pair için count işlemi yapıyoruz. Eğer bu üç tane kondisyondan herhangi birisine uymuyorsa bu pair, bunun için count işlemi gerçekleştirmiyoruz.
+
+426
+01:42:04,976 --> 01:42:21,816
+Şimdi bu durumda ben en nihayetinde yapmış olduğum şeyle memory requirement'ım düşük olan bir ortamda üç tane pass yaparaktan frequent itemları sınırlı bir memory ile
+
+427
+01:42:21,876 --> 01:42:41,736
+gerçekleştirme imkanına sahibim. Ama bu algoritmanın da problemi şu, bu algoritmada dikkat ederseniz bir, iki, üç tane pas yaptı. Yani disk ayağıya üç defa ulaşıp dataset üzerinde üç defa bütün datayı okumuş oldu.
+
+428
+01:42:42,228 --> 01:43:08,967
+Oysa ki ben bu tür algoritmaların costunu hesaplarken nasıl yapıyoruz demiştim. Bu disk IO excess sayısına bakıyoruz demiştik. Yani ne kadar az disk IO excess olursa o kadar iyi. Dolayısıyla bu algoritmanın da dezavantajı daha az memoriyle frequent pairleri bulabiliyor ama bu sefer de daha fazla ne yapmış oldu?
+
+429
+01:43:10,228 --> 01:43:11,268
+zaman avcımış oldu.
+
+430
+01:43:12,367 --> 01:43:12,608
+Okey?
+
+431
+01:43:17,524 --> 01:43:40,524
+Şimdi bu algoritmayı da improve eden bir algoritmamız daha var. Bu da multi-hash algoritması. Bu algoritmanın yaptığı ise multi-stage algoritmasında yaptığımız yani birden fazla hash fonksiyonu kullanaraktan bizim bakmamız gereken...
+
+432
+01:43:41,344 --> 01:43:52,224
+Saymamız gereken ikili sayısını, candidate ikili sayısını azaltmayı iki pasla yapmaya çalışıyor. Bu algoritmanın da yaptığı şey şu.
+
+433
+01:43:53,344 --> 01:44:04,823
+Şimdi algoritma bunu yaparken yine birinci pasta tekli itemları sayıyor. Bunun yanı sıra iki tane hash table oluşturuyor.
+
+434
+01:44:05,395 --> 01:44:20,915
+Bu iki tane hash table'ın içerisinde aynı PCY algoritmasında olduğu gibi bakıtlarım var. Her iki hash table'ın da birbirinden farklı hash fonksiyonları var.
+
+435
+01:44:21,844 --> 01:44:31,524
+Ne yapıyorum? Hem item countları sayıyorum. Yani birinci pasta yukarıdan aşağıya dataset'i okurken hem itemları sayısını arttırıyorum.
+
+436
+01:44:31,524 --> 01:44:44,543
+Aynı zamanda her bir basket içerisindeki olası pairleri öncelikle birinci hash table'a map ediyorum. Sonra da ikinci hash table'a map ediyorum. İlgili bucket'ın count'unu da ne yapıyorum? Arttırıyorum.
+
+437
+01:44:48,532 --> 01:45:01,452
+Birinci HashTable içerisinde count değeri arttırılmış olanların support değerinden büyük olanları varsa bunun karşılığı olan bitmap'te bunun değerini bir arttırıyorum.
+
+438
+01:45:02,371 --> 01:45:08,452
+Eğer yok ise bunun karşılığı olan bitmap'te bunun değerini sıfır olarak tutuyorum.
+
+439
+01:45:10,152 --> 01:45:13,452
+Bunu arkadaşlar ikinci HashTable için de gerçekleştiriyorum.
+
+440
+01:45:13,811 --> 01:45:34,171
+Şimdi ikinci pasa geldiğim zaman ise ikinci pasta aynı multistage algoritmasının son aşamasında yaptığım gibi candidate pairleri yani üzerinde count yapacağım pairleri belirlerken her iki pairin her iki elemanın da frequent olmasına bakıyorum.
+
+441
+01:45:34,804 --> 01:45:57,084
+İki, Pair'i birinci Hashtable'a map ettiğimde karşıma gelen bucket'ın Bitmap'teki değerine bakıyorum, bir olması lazım. İkincisine bakıyorum, ikincisinin de Bitmap değeri bir olması lazım. Eğer bu üç kondişünü sağlıyorsa, bu durumda ben bu Candidate Pair için Memoride yer allocate ediyorum ve bunun için count işlemini gerçekleştiriyorum.
+
+442
+01:45:57,391 --> 01:46:25,391
+Şimdi buradaki hash table sayısı ne kadar artarsa bu durumda benim gereksiz yere sayacağım candidate pair sayım o kadar azalacaktır. Burada eğer iki tane yerine beş tane hash table varsa bu durumda burada gereksiz yere sayacağım candidate pair sayısı da o kadar azalacaktır. Bu da multi-hash algoritm.
+
+443
+01:46:29,684 --> 01:46:53,564
+Şu ana kadar neleri konuşmuş olduk? Apriori algoritmasını konuşmuş olduk. Apriori algoritmasını konuşurken Apriori'nin memory konusunda problemli olduğunu söyledik. Onun için Triangular Matriz yaklaşımını bir tık daha ilerletecek şekilde Apriori'yi ne yaptık? Güncelledik.
+
+444
+01:46:57,684 --> 01:47:25,583
+Takip edecek şekilde bir triangular matrisin tek boyutlu array reprezentasyonunun nasıl yapılacağını konuştuk. Arkasından dedik ki bu da bize yetmez. Apriori algoritmasını biraz daha ilerletelim. Apriori algoritmasını ilerletmek için PCY algoritmasını konuştuk. PCY algoritmasında da dedik ki birinci pasta memorinin geri kalanını boş tutmayalım, hash table kullanalım ve elimdeki bütün pairleri bu hash table'a.
+
+445
+01:47:25,684 --> 01:47:41,024
+Map edelim ve bunun için bir bitmap oluşturalım. İkinci pasta oluşturacağımız candidate pairleri oluştururken hem frequent olmasına bakalım bu pairin elemanlarının hem de bitmap karşılığının da bir olması.
+
+446
+01:47:41,024 --> 01:47:53,684
+Yani bunun support değerinden yüksek olan pairi içeren vakıta denk düşebilir.
+
+447
+01:47:53,684 --> 01:47:59,423
+Bu iki kondişonu sağlıyorsa count işlemini yapalım.
+
+448
+01:48:01,235 --> 01:48:16,615
+Bu da yetmez dedik. Ondan sonra multi-stage algoritmasında biz dedik ki bu sefer disk IOS sayısını arttıralım. Ama bunu yaparken bu sefer memory required'ımız çok fazla olmayacaktır.
+
+449
+01:48:16,615 --> 01:48:28,615
+Bu durumda birinci pasta yine PCY algoritması için bir tane hash table gibi hash table tutalım. İkinci pasta bu sefer...
+
+450
+01:48:29,235 --> 01:48:53,315
+İkinci bir hash table tutalım. İkinci hash table'a map ettirmeden önce pair'lerin elemanlarının bir frequent olmasına bir de birinci bitmap condition'ını geçmesine bakmış olalım. Ondan sonra üçüncü pastada bu sefer ikinci hash table için bir bitmap daha oluşturalım.
+
+451
+01:48:57,235 --> 01:49:08,235
+3 tane condition'ı check edelim. Hem frequent item set hem bitmap 1 hem bitmap 2 condition'larını geçiyorsa bu frequent pair o durumda bunun sayısını sayalım.
+
+452
+01:49:09,427 --> 01:49:33,228
+Üçüncü olarak da bu sefer dedik ki multi-stage algoritması iki tane disk IO aksesi yapıyor. Bunu da azaltalım ama aynı zamanda bu multi-hash table özelliğinden de yararlanıp olabilecek candidate pair sayısını minimize etmeye çalışalım. Bu durumda ilk pasta birden fazla hash table tutuyorum.
+
+453
+01:49:33,747 --> 01:49:56,527
+Bunların hash fonksiyonlarının birbirinden independent olmasına dikkat ediyorum. Elimdeki bütün karşılaştığım pairleri bu hash table'lara map ediyorum. İkinci pasta hem frequent itemları belirliyorum. Aynı zamanda her bir hash table'a ait birer tane bitmap oluşturuyorum.
+
+454
+01:50:00,000 --> 01:50:12,519
+Saymak için başlayacağım, saymak için allocate edeceğim, memoride yer ayıracağım pairleri belirlerken bu üç tane kondişünü sağlayan pairler olmasına dikkat ediyorum.
+
+455
+01:50:12,519 --> 01:50:28,000
+Bu şekilde false positive yani frequent olmayacak olan pairler için memoride yer ayırmadan sadece frequent olacak pairler için ya da frequent olacak.
+
+456
+01:50:28,000 --> 01:50:41,420
+Frequent olma olasılığı yüksek olan pairler için memoride yer ayarlayarak sınırlı büyüklükteki memoriyle ben ne yapıyorum? Frequent pair hesabını, Frequent pairleri tespit edebiliyorum.
+
+457
+01:50:44,659 --> 01:50:46,500
+Arkadaşlar, sorusu olan var mıdır?
+
+458
+01:50:53,140 --> 01:51:07,479
+Tamam. Yok sanırım. Bugünlük bu kadar. Dediğim gibi dersle ilgili tüm teaching materyalleri dersin sayfasında ve benim ders sayfamda bulabilirsiniz.
+
+459
+01:51:10,131 --> 01:51:20,571
+Konuyu daha detaylı anlamak için kitabın sayfasındaki PDF'i ve PowerPoint slide'ları ve video lecture'larını da izleyebilirsiniz arkadaşlar.
+
+460
+01:51:21,071 --> 01:51:27,171
+Gelecek hafta clustering konusuyla devam ediyor olacağız. Gelecek hafta sınav sonuçlarınızı da açıklıyor olurum.
+
+461
+01:51:27,571 --> 01:51:28,171
+Teşekkürler.
+
+462
+01:51:29,491 --> 01:51:32,531
+Katıldığınız için teşekkür ederim. Haftaya görüşmek üzere arkadaşlar.
