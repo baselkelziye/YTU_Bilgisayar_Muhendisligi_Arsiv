@@ -1,0 +1,1707 @@
+1
+00:00:11,507 --> 00:00:21,687
+Evet, merhabalar. Bugünkü dersimiz sınavdan önceki son ders ve size bugün yine analize devam edeceğiz.
+
+2
+00:00:22,787 --> 00:00:34,987
+Analiz aşamasındaki nesneye yönelik analiz, nesne ve varlık kavramları arasındaki farklılık üzerinde durmuştuk geçen hafta.
+
+3
+00:00:35,344 --> 00:00:39,524
+Bu haftada bu konu üzerinde durmaya devam edeceğiz.
+
+4
+00:00:40,384 --> 00:00:43,603
+Evet, şimdi slide'ları paylaşacağım.
+
+5
+00:01:18,260 --> 00:01:38,260
+Öncelikle bu nesneye yönelik analiz yaklaşımıyla ilişkili, daha sonra nesneye yönelik programlama dersinde de, yazılım mühendisliği dersinde de bu konuları...
+
+6
+00:01:38,963 --> 00:01:47,743
+LARMA'nın kaynaklarından daha iyi ilerleteceğimizi göreceksiniz.
+
+7
+00:01:47,743 --> 00:02:04,103
+Bugün de LARMA'nın hem alan modelleme hem de use case diagramlarını, belgelerini çizmekle ilişkili.
+
+8
+00:02:04,596 --> 00:02:23,495
+Kaynaklarını öncelikle tanıtarak başlayacağım. Daha sonra yine bizim notlarımızdan nesneye yönelik analiz üzerine konular üzerinde duracağız.
+
+9
+00:02:25,075 --> 00:02:41,156
+Şimdi ben önce hemen slide'ımı paylaştım. Derse katılanlara şöyle bir bakıyorum. Slide'ı görme konusunda ve ses duyma konusunda bir sıkıntı var mı?
+
+10
+00:02:42,596 --> 00:02:43,935
+Yok hocam, bir sıkıntı yok.
+
+11
+00:02:43,935 --> 00:02:50,716
+Tamam, teşekkürler. O zaman şunu büyüterek bir devam edeyim.
+
+12
+00:03:03,060 --> 00:03:06,120
+LARMA'nın kaynaklarını kullanıyorum demiştim.
+
+13
+00:03:08,959 --> 00:03:11,000
+Bir alan modeli.
+
+14
+00:03:11,399 --> 00:03:13,639
+Alan modelinden kastımız nedir?
+
+15
+00:03:15,508 --> 00:03:23,608
+Sistem, bilgi sistemi hazırlayacağımız sistemin uygulama alanı.
+
+16
+00:03:24,128 --> 00:03:39,747
+Örneğin, bir hastane bilgi sistemi oluşturacaksak, bu yapıyla ilişkili alan içinde hangi nesneler var, bu nesneler üzerinde hangi işlemler var?
+
+17
+00:03:42,036 --> 00:04:04,195
+Sonuçta bir sınıf diagramı notasyonu yazabileceğimiz, UML sınıf diagramı yazabileceğimiz ve bu yazılmış bir sınıf diagramı varsa onu anlayabileceğimiz, okuyabileceğimiz bir alan modeli yapısını anlamak.
+
+18
+00:04:09,876 --> 00:04:21,536
+Nasıl oluşturabiliriz ve bununla ilişkili yazılım ürünleri, artifaklar nelerdir? Bunları göreceğiz.
+
+19
+00:04:24,915 --> 00:04:47,655
+UML sınıf diagramlarını kullanarak bunları görselleştiriyoruz. Görsel sözlük de diyebiliriz biz. Yani bu işte bir hastane bilgi sistemi yaratıyorsak hastane alanı içinde, alan modeli içinde hangi nesneler vardır?
+
+20
+00:04:47,655 --> 00:04:52,755
+İşte hastalar hakkında bilgi tutulur, doktorlar hakkında bilgi tutulur.
+
+21
+00:04:52,915 --> 00:04:57,716
+gerçekleştirilecek işlemler hakkında bilgi tutulur gibi.
+
+22
+00:05:01,139 --> 00:05:11,159
+Önemli bir görsel bilgi tanımlar ve ilişkilendirir birbiriyle ve arada boşluk kalmaması gerekir.
+
+23
+00:05:11,279 --> 00:05:19,899
+Yani sınıflar arasındaki ilişkiler nelerdir, sınıflar birbirleriyle nasıl bağlantı kurar, bunu görebilmemiz gerekir bu şeyde.
+
+24
+00:05:29,204 --> 00:05:57,124
+satıldığı, müşteriye kiralandığı, satıldığı demeyeyim de müşteriye kiralandığı bir mağaza. Bu mağazanın müşterileri var. Bundan video kiralarlar ve mağazanın stokları var. Hangi videoların olduğu stokları. Bunlar arasında da ilişkiler var. İşte bire çoklu olabilir ama bire çoklu ama en az birden çok.
+
+25
+00:05:57,204 --> 00:06:02,704
+gibi buradaki kurallar belirtilebilir.
+
+26
+00:06:03,507 --> 00:06:24,267
+Bir alan kavramı yaratmak istediğimizde aday liste oluştururuz. Bu aday listede de bir sınıf diagramı, yani kavramsal sınıf diagramı diyoruz biz analiz aşamasında oluşturduğumuz sınıf diagramına.
+
+27
+00:06:25,168 --> 00:06:31,147
+Bunu mümkün olduğunca basit, en basit haliyle düşünüp oluşturmamız gerekiyor.
+
+28
+00:06:31,507 --> 00:06:42,227
+Buradan eklemeler yaparak gitmemiz gerekiyor. Ayrıca paternler var. Bu daha ileriki konularda.
+
+29
+00:06:44,227 --> 00:06:49,227
+Bağlantılar dediğimiz zaman, işte bağlantılar…
+
+30
+00:06:51,283 --> 00:07:07,804
+Ok yönünde okunarak, işte video mağazası, videoları, depolar dediğimizde bireçoklu bir ilişki var. Yani ok yönünde okuyacağız bağlantıları da.
+
+31
+00:07:10,612 --> 00:07:30,052
+Şu, yine ben körsür kaybettim. Evet, şu çizginin, bağlantı çizginin üzerindeki isim okuma yönünde, ok yönünde okuduğumuzda video mağazası depolar videoları.
+
+32
+00:07:30,355 --> 00:07:44,055
+Burada bir çokluluk var. Şu yıldız çokluluğu gösteriyor. Burada da bir var. Bir video mağazası çok sayıda video saklar.
+
+33
+00:07:47,572 --> 00:08:06,271
+Burada işte çokluluk dediğimizde sıfırdan çoğa menü, birden çoğa. Burada bir sayı da verilebilir. Çok fazla bu kullanılmaz ama mesela birden kırka kadar sadece beş gibi.
+
+34
+00:08:06,271 --> 00:08:12,912
+Ama genellikle yıldız bir ve sıfır kullanılır. Şuradaki gibi.
+
+35
+00:08:15,220 --> 00:08:33,500
+Sıfırdan bire kadar yani bir zorunluluk yok, seçimlik. Müşteri video mağazasına üye olmuştur ama müşteri çok sayıda video kiralayabilir.
+
+36
+00:08:34,879 --> 00:08:41,799
+Bir videoyu hiçbir müşteri şimdiye kadar kiralamamış da olabilir tersten okursak.
+
+37
+00:08:43,731 --> 00:08:47,412
+bağlantıları bu şekilde okuyabiliyoruz.
+
+38
+00:08:48,451 --> 00:09:00,392
+Aslında siz şimdiye kadar nesnelik programlama dersinde de bu kavramları görmüşsünüzdür ama olsun.
+
+39
+00:09:01,111 --> 00:09:04,711
+Yine de bir kez daha üzerinden geçiyoruz.
+
+40
+00:09:13,139 --> 00:09:16,480
+Nesneyi de basit olarak göstereceğiz demiştik.
+
+41
+00:09:17,379 --> 00:09:27,960
+İşte ödeme, özellikler ödeme işleminde zaman, tarih, zaman, miktar ne kadar ödeme olmuştur.
+
+42
+00:09:29,620 --> 00:09:34,840
+Özellikler şu bölümde yer alanlar, şu bölümde yer alanlar, özellikler.
+
+43
+00:09:34,840 --> 00:09:36,920
+Bu da nesnenin adı.
+
+44
+00:09:37,491 --> 00:09:59,251
+Özellikler dediğimizde müşteri, müşterinin hangi özellikleri var ve müşterinin kiraladığı video listesi bu işlemler üzerinde görülebilir.
+
+45
+00:10:02,932 --> 00:10:19,772
+Bir alan modelini tamamladığımızda, şimdi bu video mağazasındaki video mağazası videoları depoluyor, müşteri kiralıyor şu ana iş akımı.
+
+46
+00:10:20,403 --> 00:10:47,603
+İşte nakit para ödeyebilir ve kiralama işlemini gerçekleştirebilir. Video kiralama işlemi bu para kira aktarımından sonra gerçekleşir ve video kiralamada da hangi tarihte, hangi zamanda kiralandı bilgisi olacaktır.
+
+47
+00:10:48,403 --> 00:10:58,103
+Video mağazasının bir kataloğu olacaktır. İşte depodaki videolar bu katalogda bulunacak ve video tanımları da kategorilere ayrılabilir.
+
+48
+00:10:58,103 --> 00:11:16,283
+Bu kategoriler de burada gösterilebilir. Müşteri üye olabilir ya da sadece bir kerelik alım yapabilir. Eğer müşteri üyeliğe sahipse o zaman şeyleri farklı olacak. Burada bakın birebir bir ilişki var.
+
+49
+00:11:16,403 --> 00:11:33,403
+müşteriyle üyelik arasında. Böylece alan modelini tamamlamış olduk. Burada küçük bir şey için...
+
+50
+00:11:34,899 --> 00:11:51,379
+Yüz case için başka bir alan tanımı da yapabilirsiniz. Zaten bunu kendi projelerinizde de yapacaksınız. Kendi projelerinizde ister klasik yaklaşımla, ister nesneye yönelik yaklaşımla çalışabilirsiniz.
+
+51
+00:11:51,379 --> 00:11:55,659
+Şimdi, bir dakika çok ilerledim.
+
+52
+00:11:57,908 --> 00:12:17,947
+Evet, şimdi aşama aşama gidersek, önce business modeling yani domain modeli çıkarıyoruz. Müşterilerden bilgi aktarımı yaptıkça, yani olay hakkında bilgi topladıkça alan modelimizi oluşturuyoruz.
+
+53
+00:12:17,947 --> 00:12:24,468
+Önce bu uygulamada neler hakkında bilgi tutmamız gerekiyor, bunu belirliyoruz.
+
+54
+00:12:25,844 --> 00:12:30,624
+Ve her bir iterasyonda da bunu geliştiriyoruz.
+
+55
+00:12:30,944 --> 00:12:37,824
+Gereksinimler dediğimizde, use case'leri tekst olarak yazıyoruz, use case diagramlarını oluşturuyoruz.
+
+56
+00:12:38,163 --> 00:12:51,464
+Yalnız burada yine de ekip karar verir. Bunların ikisini paralel de yürütebilir, use case'lerin belgelerini hazırlamayı, use case diagramlarını da önce de yazabilir.
+
+57
+00:12:53,844 --> 00:12:59,744
+Şu belgeler, text ve diagramlar arasında.
+
+58
+00:13:00,947 --> 00:13:05,447
+kullanıcıya ait sıralama şeyi.
+
+59
+00:13:06,727 --> 00:13:13,187
+Bundan sonra da sequence diagramın modelini oluşturmaya başlayabilir.
+
+60
+00:13:13,187 --> 00:13:16,667
+Bundan sonra da tasarım modeli gelecek.
+
+61
+00:13:17,147 --> 00:13:24,267
+Yani önce business modeling, domain modeli çıkarmak, sonra gereksinimler ya da bizim sistem analizi dediğimiz aşama.
+
+62
+00:13:24,767 --> 00:13:28,947
+Ondan sonra da sistem tasarımı aşaması, domain modeli.
+
+63
+00:13:28,947 --> 00:13:30,847
+Bu nedenler kapsamında olacak.
+
+64
+00:13:31,887 --> 00:13:36,727
+Şimdi veri modelinin nasıl oluşturulduğuyla ilişkili başka kaynaklar da var.
+
+65
+00:13:37,487 --> 00:13:40,307
+Bunlar da önerilen kaynaklar olarak burada verilmiş.
+
+66
+00:13:52,980 --> 00:14:02,459
+Referanslarını kullanmanız yeterli şu anda ama bunları da ek olarak olsun. Daha sonra özellikle dikkat ederseniz paternler var.
+
+67
+00:14:03,939 --> 00:14:19,519
+Paternler, tasarım kalıpları. Bunlar da daha sonra görülecek. Bu ders kapsamında sadece tasarım aşamasında tasarım kalıplarının olduğunu da belirteceğiz tasarım sırasında.
+
+68
+00:14:28,532 --> 00:14:35,471
+Evet, alan modelini yaratıp rehberleri uyguluyoruz ve alan modeli yaratma işimiz tamamlanmış oluyor.
+
+69
+00:14:35,471 --> 00:14:39,912
+Şimdi, use case diagramlarına bakalım.
+
+70
+00:14:48,788 --> 00:15:02,208
+Katılımcılar, bugün sınavdan önce son dersimiz. Neden az kişi var acaba? Şimdi baktım sayıya, 38 kişi olmuş henüz benimle beraber.
+
+71
+00:15:23,283 --> 00:15:23,884
+Evet.
+
+72
+00:15:30,772 --> 00:15:39,552
+Bilginiz var mı arkadaşlarınız neden gelmedi? Çünkü bunun iki katı öğrenci var şu anda derste kayıtlı.
+
+73
+00:15:44,052 --> 00:15:47,592
+Neyse, şimdi diğer slide'ı paylaşacağım.
+
+74
+00:16:06,419 --> 00:16:07,899
+Evet, şimdi use case'leri.
+
+75
+00:16:08,320 --> 00:16:29,060
+Nasıl oluşturuyoruz? Özellikle az önceki slide'da üç aşama gördük. Önce iş modelleme yapıyoruz. İş modelleme sırasında alanımızda yani uygulama alanımızda neler hakkında bilgi tutacağız, hangi nesneler var bunları bir ortaya çıkarıyoruz.
+
+76
+00:16:36,320 --> 00:16:45,540
+Hangi hikayeler gerçekleşiyor burada? Bunların kuralları nelerdir? Bunları çözmeye çalışıyoruz. Şimdi bunu görelim.
+
+77
+00:16:52,467 --> 00:17:14,067
+Use case'ler işlevsel gereksinimleri yakalamanın bir yolu. İşlevsel gereksinimden kastımız da acaba bu sistemde hangi işlemler gerçekleşiyor? Bir sistemi kullanan hikayeler bunlar, hangi hikayeler?
+
+78
+00:17:15,635 --> 00:17:20,115
+use case seviyelerini tanımlamamız gerekiyor.
+
+79
+00:17:20,115 --> 00:17:23,956
+Yani önce bir genel olarak sistemde ne oluyor?
+
+80
+00:17:24,596 --> 00:17:30,855
+Sonra biraz daha ayrıntıya girerek bu sistemdeki işlemlerin ayrıntıları nelerdir?
+
+81
+00:17:32,875 --> 00:17:35,036
+Bunların farklı formatları var.
+
+82
+00:17:35,516 --> 00:17:38,456
+İşte bir tanesini seçeceğiz.
+
+83
+00:17:38,596 --> 00:17:42,076
+Bazı ufak farklılıklar var formatlar arasında.
+
+84
+00:17:42,996 --> 00:17:50,036
+Ve use case rehberindeki kuralları uygulayacağız.
+
+85
+00:17:50,716 --> 00:17:53,816
+Use case diagramlarını okur yazar olacağız.
+
+86
+00:17:53,976 --> 00:17:54,716
+Yani bu ne demek?
+
+87
+00:17:54,716 --> 00:18:08,976
+Karşımıza bir use case diagramı geldiğinde bunun ne dediğini anlayabilmek ve bunu tasarıma aktarabilmek ya da karşımıza bir hikaye geldiğinde.
+
+88
+00:18:09,364 --> 00:18:17,963
+düz yazıyla yazılmış bir hikaye geldiğinde bunu use case diagramı haline çevirip use case diagramını yazabilmek.
+
+89
+00:18:18,324 --> 00:18:19,463
+Hocam bir soru sorabilir miyim?
+
+90
+00:18:19,564 --> 00:18:20,023
+Tabii ki.
+
+91
+00:18:20,624 --> 00:18:24,744
+Burada dediniz ya, biz sistemin nasıl çalıştığını falan anlatıyoruz diye.
+
+92
+00:18:24,744 --> 00:18:30,064
+Biz akış diyagramlarında da bir nevi aynı şeyi yapmıyor muyduk? Yani farkları ne buradaki kısmın?
+
+93
+00:18:36,788 --> 00:18:41,128
+Bu veri akış diyagramlarında da aynı şeyi yapıyoruz.
+
+94
+00:18:42,248 --> 00:18:46,708
+Burada geçen hafta biraz üzerinde durmuştum.
+
+95
+00:18:47,847 --> 00:18:53,327
+Bir varlık tanımı var, bir de nesne tanımı var.
+
+96
+00:18:55,327 --> 00:18:57,327
+Use case diagramlarını...
+
+97
+00:18:59,443 --> 00:19:11,643
+Yani klasik yaklaşımda da kullanabiliriz ama use case diagramları esas nesneye yönelik yaklaşımda analiz aşamasında kullanılıyor.
+
+98
+00:19:14,516 --> 00:19:28,396
+Hakkında bilgi tutacağımız varlıkları varlık olarak tanımladığımızda, yani bu varlıklara hangi işlemler uygulanıyor, bu ayrıntıya girmediğimizde klasik yaklaşımı kullanmış oluyoruz.
+
+99
+00:19:28,396 --> 00:19:42,016
+Ve klasik yaklaşımda biz veri akış diyagramlarıyla aşama aşama, burada daha sistematik aslında veri akış diyagramlarında, data flow diyagramlarında.
+
+100
+00:19:42,516 --> 00:20:07,436
+Her bir kademe ayrıntıda ne oluyor? Geçen hafta gördüğümüz gibi önce bir konteks diagram oluşturuyoruz. Burada özet sistem hakkında hangi varlıklarla ilişkiye giriyor onu belirtiyoruz. Ondan sonra birinci düzey ayrıntılıyı çiziyoruz. Sonra burada bütün sistemin alt...
+
+101
+00:20:07,604 --> 00:20:33,444
+İşlemlerini görüyoruz. Sonra her bir alt işlemi ayrıca görüntülüyoruz. Şimdi burada nesne ile varlık arasındaki farklılık, klasik yaklaşımda biz varlıkları ve işlemleri birleştiriyoruz.
+
+102
+00:20:34,003 --> 00:20:40,083
+Nesneye yönelik yaklaşımda ise nesneleri ilişkilendiriyoruz.
+
+103
+00:20:41,143 --> 00:20:47,783
+Nesnelerin hangi hikayeler üzerinde bir arada çalıştığını görüyoruz.
+
+104
+00:21:03,059 --> 00:21:08,519
+hakkında bilgi tutulacak nesnenin özelliklerini veriyoruz.
+
+105
+00:21:09,379 --> 00:21:13,879
+Ayrıca bir de bu nesneye hangi işlemler uygulanıyor onu da tanımlıyoruz.
+
+106
+00:21:14,879 --> 00:21:21,279
+Oysa varlıklarda sadece varlığın adı ve özelliklerini belirtiyoruz.
+
+107
+00:21:21,779 --> 00:21:28,039
+İşlemleri veri akış diyagramlarında gösteriyoruz işlem hiyerarşisini.
+
+108
+00:21:29,236 --> 00:21:31,576
+Anlaşıldı mı?
+
+109
+00:21:31,983 --> 00:21:33,423
+Evet hocam, teşekkür ederim.
+
+110
+00:21:33,783 --> 00:21:44,983
+Tamam. Yoksa başka bir slide daha kullanacağım. Bu da çok fazla ayrıntıya girmiş olacağım. Vakit kalırsa o slide üzerinden de ikisinin arasındaki farklılığı gösteririm.
+
+111
+00:21:44,983 --> 00:21:58,983
+Çünkü bu arkadaşınızın sorduğu soru önemli. Biz size bu daha ilk uygulama dersimiz, yani yazılım geliştirme ile ilişkili bütün evreleri.
+
+112
+00:21:59,983 --> 00:22:02,403
+üzerinden geçtiğimiz.
+
+113
+00:22:03,723 --> 00:22:06,383
+Ve her ikisini de tanıtmak istiyoruz burada.
+
+114
+00:22:06,923 --> 00:22:10,183
+Klasik yaklaşımı da nesneye yönelik yaklaşımı da.
+
+115
+00:22:10,183 --> 00:22:19,183
+Klasik yaklaşımda varlıklar üzerinde duruyoruz ve işlemlerle bunları birleştiriyoruz.
+
+116
+00:22:23,155 --> 00:22:28,515
+Neyse, biraz sonra başka bir slide'da onu bir daha açıklayacağım. Çünkü önemli bu.
+
+117
+00:22:30,155 --> 00:22:31,995
+Evet, şimdi devam ediyorum o zaman.
+
+118
+00:22:57,268 --> 00:23:15,488
+Bir hedef belirleyip bu hedefi, bu sistemi kullanarak use case diagramı bu hikayeyi nasıl gerçekleştiriyor onu göstermiş oluyoruz.
+
+119
+00:23:17,364 --> 00:23:27,503
+Ve primary aktör, esas aktör kimdir bu hikayede? Bunu destekleyen aktörler kimlerdir? Bunları vermiş oluyoruz.
+
+120
+00:23:27,503 --> 00:23:36,844
+Mesela video kiralama işlemi. İşte bir müşteri domen modelde belirttiğimiz gibi.
+
+121
+00:23:37,332 --> 00:23:59,332
+Az önce bir görevli ID'si vardır ve müşterilere video kiralar. Sistem her bir işlemden bir çıktı üretir ve kiralama raporlarını almak ister görevli.
+
+122
+00:24:05,332 --> 00:24:26,372
+Bu çıktıları ona verir. Müşteri ve videolar arasında da ilişki kurulur. Bu senaryoyu use case diagramı ile anlatmaya çalışacağız ve use case belgeleri ile anlatmaya çalışacağız.
+
+123
+00:24:26,372 --> 00:24:31,791
+Şimdi Object Oriented Analiz ve Design.
+
+124
+00:24:32,435 --> 00:24:52,996
+çalışması. Önce Object Oriented Analiz'den bahsedelim, use case'lerle. UML ile ilişkilendirilir, use case diyagramları. UML ile ilişkilendirilir dediğim, UML sınıf diyagramlarıyla ilişkilendirilir.
+
+125
+00:24:57,299 --> 00:25:19,419
+Evet, yani burada da yine use case'de, yani nasıl ki data flow diagramda seviyeler varsa, burada da seviyeler var. Bir üstten bakışta ne kadar alttaki ayrıntıyı görmeden ne oluyor onu görmek. Bir de ayrıntıyı görebilmek aşağıdaki uygulamalardaki.
+
+126
+00:25:23,827 --> 00:25:50,447
+İlk başta bütün ayrıntıyı verirsek FED use case'ler olur. Yani bütün organizasyonu ayrıntılı bir use case'de vermek doğru değil. Aynı şekilde biz veri akış diyagramlarını da böyle aşama aşama gidiyoruz. Tek bir veri akış diyagramında bütün ayrıntıyı verirsek, ikinci düzey ayrıntıyı hepsini birleştirip verirsek takip edilemez olur.
+
+127
+00:25:51,827 --> 00:25:57,107
+Aynı şekilde karmaşıklık problemi çıkmasın diye kademe kademe gidiliyor.
+
+128
+00:26:01,107 --> 00:26:09,827
+Öncelikle use case seviyelerinde nasıl çalışıldığı anlaşılmaya...
+
+129
+00:26:10,367 --> 00:26:19,627
+Yani bilgi toplama aşaması, sistem analizindeki bilgi toplama, modelleme ve raporun oluşturulması aşamaları vardı.
+
+130
+00:26:21,047 --> 00:26:30,367
+Topladığımız bilgiye göre aşama aşama ayrıntıda use case diagramlarını hazırlıyoruz.
+
+131
+00:26:40,019 --> 00:26:46,339
+Tekst bir belge de üreteceğiz, bir diagram da üreteceğiz.
+
+132
+00:26:46,339 --> 00:26:52,331
+Belge ürettiğimizde...
+
+133
+00:26:53,652 --> 00:26:59,051
+Tanımlamaları sırasıyla belli bir formatı var. Bu formatta tanımlamaları veriyoruz.
+
+134
+00:27:01,571 --> 00:27:13,511
+Ve use case diagramını çizdiğimizde de aynı veri akış diyagramlarındaki gibi önce bir kontekst diyagram oluşturuyoruz.
+
+135
+00:27:13,511 --> 00:27:19,971
+Daha sonra bu use case'leri ayrıntılı hale getiriyoruz.
+
+136
+00:27:21,652 --> 00:27:24,791
+fazla use case diyagramı çizerek gösteriyoruz.
+
+137
+00:27:25,231 --> 00:27:34,551
+Şimdi mesela use case diyagramı, burada video mağazası bilgi sistemi.
+
+138
+00:27:34,551 --> 00:27:39,551
+Bir görevli var şurada.
+
+139
+00:27:41,652 --> 00:28:05,372
+Kiralama işlemi yapıyor, üyelikleri yönetiyor, sistemi açıyor, bir de müşteri var, yine ödeme yapıyor, kiralıyor, üyelik için gerekli işlemleri gerçekleştiriyor. Bunları canlı varlıklar olduğu için böyle çöp adamlarla gösteriyoruz.
+
+140
+00:28:09,652 --> 00:28:33,792
+Denetim servisi gibi bir servis var. Bu da başka bir yazılım olabilir. Başka bir mesela ev güvenlik sistemlerinde sensör olabilir. Bunları da böyle karelerle gösteriyoruz. Bunlar da birer aktör. Bunlar da sisteme destek veriyorlar çünkü.
+
+141
+00:28:37,491 --> 00:28:38,892
+UML
+
+142
+00:28:39,827 --> 00:29:03,647
+Bir de yönetici var. Yönetici de sistemi açıyor, envanter yönetimi yapıyor, kullanıcıları belirliyor. Böyle bir sistem, use case sistemi. Bu arada yan tarafta da bir uyarı var. Bu diagrama diyor çok fazla zaman harcamayın. Yani şeyiyle ilişkili temel sembolleri kullanın.
+
+143
+00:29:08,019 --> 00:29:17,200
+Diagramı bir başlangıç olarak başlatın, esas belgeler üzerinde durun, use case belgelerini hazırlayın diyor.
+
+144
+00:29:17,759 --> 00:29:25,059
+Burada yine de sembolleri bir daha gözden geçirelim. Sembollerimiz elipsler, hikayeleri gösteriyor.
+
+145
+00:29:25,059 --> 00:29:32,359
+Hikayeleri demeyeyim de alt işlemleri gösteriyor. Hangi işlemler gerçekleşiyor? Her biri de bir hikayeden çıkıyor tabii ki bunların.
+
+146
+00:29:32,900 --> 00:29:35,359
+Çöp adamlar, canlı aktörleri.
+
+147
+00:29:35,796 --> 00:29:59,756
+Dikdörtgenler veya kareler sisteme yine giriş yapan, girdi sağlayan elemanlar. Bunlar da birer aktör. Canlı varlık olmadığı için bunları çok adamla göstermiyoruz. Bunlar da birer aktör.
+
+148
+00:30:00,000 --> 00:30:16,980
+Aslında böyle bir bütün uygulamayı şey için aldık, dikdörtgen için aldık. Yani hepsi aynı yerde, aynı sistem içinde gerçekleşen işlemler şeklinde bunları da belirtiyoruz.
+
+149
+00:30:27,604 --> 00:30:45,904
+Use case diagramlarını, işte video kiralama bilgi sistemi, video kiralama işlemi, çalışan primary aktör. Primary aktör genellikle soldadır. Destek aktörleri sağ taraftadır.
+
+150
+00:31:00,403 --> 00:31:18,024
+Use case'lerde başlangıç, bitiş belirtilmeli. Başlangıç sırasındaki koşullar, ön koşullar, bittiğini nasıl anlarız bunlar belirtilmelidir.
+
+151
+00:31:18,024 --> 00:31:26,524
+Şimdi belgelerine, use case belgelerine geçiyoruz. Nasıl oluşturuyoruz belgeleri?
+
+152
+00:31:36,596 --> 00:32:00,855
+Evet, şimdi video kiralama, temel aktör görevli, ön koşullar nelerdir, bu görevlinin tanıtılması ve denetimi, yani gerçekten bu görevli olan kişi mi?
+
+153
+00:32:01,587 --> 00:32:15,807
+Paydaşlar bunlarla ilişkili, görevli, bu doğru ve hızlı giriş yapmak istiyor. Yani her bir paydaş ne istiyor sistemden? Müşteri.
+
+154
+00:32:16,271 --> 00:32:24,192
+Videoların hızla alınmasını en az gayret sarf ederek hızlı bir servis istiyor.
+
+155
+00:32:26,192 --> 00:32:32,351
+Muhasebe tarafında da kayıtların doğru tutulması isteniyor.
+
+156
+00:32:32,892 --> 00:32:38,192
+Pazarlama kısmında da, pazarlama kısmı daha sonra bunlara satış...
+
+157
+00:32:40,051 --> 00:32:57,051
+değerlendirmesi yapacağı için müşterinin alışkanlıklarını izleyebileyim istiyor. Bunların hepsine destek verecek bir uygulama gerçekleştirecek. Şimdi şurada kalmıştık. Önce...
+
+158
+00:33:02,644 --> 00:33:05,224
+Önce müşteri
+
+159
+00:33:09,811 --> 00:33:31,172
+Müşteri, aktörler kimler, paydaşlar kimler bunlar belirleniyor. Sonra temel adımlar burada da happy pet yani temel akış. Bu temel akış işte müşteri kiralamak üzere geliyor.
+
+160
+00:33:34,579 --> 00:33:47,739
+Çalışan müşteri ID'sini yazıyor ve kiralama tanımlayıcı bilgilerini veriyor ve her aldığı ürün için 3 ile 4 arasındakini tekrar ediyor.
+
+161
+00:33:48,399 --> 00:33:57,079
+Ve sonuçta da bir toplam fiyat çıkıyor. Bunları ödemesi için müşteriye bildiriyor, müşteri ödeme yapıyor.
+
+162
+00:34:02,291 --> 00:34:26,251
+Bir kira raporu, kiralama raporu isteyecek sistemden ve bu çıktığı alacak, müşteriye de bunu verecek. Müşteri de hem kiraladıklarıyla hem raporuyla işi tamamlamış olacak. Bu yani hiçbir problem olmadığı zamandaki durum.
+
+163
+00:34:26,804 --> 00:34:37,003
+Ama sorunlar çıkabilir. Bu sorunları da belirtmemiz gerekecek. Bu sorunlar hangileridir?
+
+164
+00:34:38,684 --> 00:34:40,403
+Evet, bir ara verelim şimdi.
+
+165
+00:38:26,739 --> 00:38:28,059
+[öğrenci].
+
+166
+00:38:30,340 --> 00:38:32,199
+Pardon hocam, ses açık kalmış.
+
+167
+00:38:32,840 --> 00:38:33,199
+Evet.
+
+168
+00:44:52,884 --> 00:45:08,876
+Evet, derse devam ediyoruz şimdi. Bu arada sınav konusunda önümüzdeki hafta nasıl yapacağımız konusunda...
+
+169
+00:45:09,043 --> 00:45:25,203
+test veya klasik türde bazı test soruları olsa da yine de işte bu diagram çizimlerini filan da gözleyebileceğimiz bazı ek sorularımız da olacaktır.
+
+170
+00:45:25,203 --> 00:45:33,463
+Onun için hani karma gibi bilin şimdi sınav tipini.
+
+171
+00:45:35,795 --> 00:45:43,795
+Bu konuda soru soran olmamıştı ama önümüzdeki hafta sınavınız olduğu için bir açıklama vereyim istedim.
+
+172
+00:45:44,315 --> 00:45:46,675
+Hocam peki slide'ları hala paylaşmadınız mı?
+
+173
+00:45:48,275 --> 00:45:52,715
+Slide'lar aslında şeyde var Avesis'teki sayfamda.
+
+174
+00:45:55,215 --> 00:45:56,055
+Bakayım hocam.
+
+175
+00:45:57,108 --> 00:46:20,688
+Yani bir kısmı var, geçen seneden kalan slide'lar var. Onları güncelleme gerekirse ekleyeceğim ama Avesist'teki sayfamda var. Buraya yüklemekte her gün mümkün olmuyor, bazı gün yüklenemiyor diyor falan. O yüzden yani bu sisteme değil de Avesist'e yine eklemeler yaparım.
+
+176
+00:46:30,132 --> 00:46:34,472
+Avesis'te paylaşımlarım arasında oluyor.
+
+177
+00:46:42,132 --> 00:46:45,192
+Ders notları diye görebilirsiniz.
+
+178
+00:46:46,072 --> 00:46:50,052
+Hocam, duyurularda, duyurularda mı diyorsunuz? Duyurular ve dökümanlarda.
+
+179
+00:46:50,251 --> 00:46:54,011
+Duyurular ve dökümanlar, evet. Başka bir şey yok zaten orada koyacak.
+
+180
+00:46:54,372 --> 00:47:05,652
+Hocam, burada şey yok. Yazılım şeyleri var. Yazılım proje yönetimi, sistem analizi, ikinci FÖ'yü var sadece sistem analizi hakkında. Deney FÖ'yü var.
+
+181
+00:47:06,072 --> 00:47:08,231
+Tamam, o zaman eklerim onları da.
+
+182
+00:47:08,952 --> 00:47:09,572
+Tamam hocam.
+
+183
+00:47:09,940 --> 00:47:10,360
+Tamam.
+
+184
+00:47:18,291 --> 00:47:34,672
+O Avisisteki sayfa biraz karışık ama yani burada da daha zor oluyor. Bugün mesela Yüksekli Sasso'unkini yükleyemedim burada her zaman.
+
+185
+00:47:37,172 --> 00:47:39,192
+Bazen problemler olabiliyor.
+
+186
+00:47:39,631 --> 00:47:42,452
+Hocam, AVS sorsa şey de aslında bayağı kolay.
+
+187
+00:47:43,912 --> 00:47:48,912
+Yıldız şeyde, online Yıldız'da ders duvarına eklemek bayağı kolay.
+
+188
+00:47:49,711 --> 00:47:50,711
+Yani direkt atıyorsun.
+
+189
+00:47:51,131 --> 00:47:54,451
+Ben, ders duvarına mı ekliyor hocalarınız?
+
+190
+00:47:54,652 --> 00:47:58,391
+Yani genelde hocalar bir şey paylaşacaksa ders duvarına direkt atıyorlar.
+
+191
+00:47:58,391 --> 00:47:59,811
+Bayağı da kolay bir soru.
+
+192
+00:48:00,231 --> 00:48:04,612
+Ben şeyde, dökümanlar bölümü var oraya.
+
+193
+00:48:05,748 --> 00:48:09,347
+Yükleyemedim. O zaman ders duvarını deneyeyim.
+
+194
+00:48:09,847 --> 00:48:10,688
+Oraya koyarım.
+
+195
+00:48:10,688 --> 00:48:11,148
+Daha kolay.
+
+196
+00:48:11,148 --> 00:48:17,567
+Tamam. Çünkü şeyleri filan sizin gruplarınızı filan şeye koydum, Avesis'e koydum.
+
+197
+00:48:18,087 --> 00:48:18,627
+Evet hocam.
+
+198
+00:48:18,728 --> 00:48:27,547
+Proje tanımını, gruplarınızı. Neyse ders duvarını bir denerim. Olmazsa oraya koyarım.
+
+199
+00:48:27,847 --> 00:48:28,907
+Tamam. Teşekkürler.
+
+200
+00:48:29,407 --> 00:48:29,947
+Teşekkürler.
+
+201
+00:48:29,967 --> 00:48:32,967
+Evet. O zaman devam ediyorum şimdi.
+
+202
+00:48:46,228 --> 00:48:58,568
+Evet, aktörlerin tanımı, aktörlerin her birinin gerçekleştirdiği işlemler ve
+
+203
+00:49:01,811 --> 00:49:13,612
+Sistemde gerçekleşen işler konusunda da sırayla işlemlerin gerçekleştirilme sırasıyla bilgi verilmesi gerekiyor.
+
+204
+00:49:15,271 --> 00:49:24,231
+Ve o zaman tamamlanmış bir use case belgesi elde ediyoruz.
+
+205
+00:49:27,827 --> 00:49:39,107
+İlk başta da bahsettiğimiz gibi bir uygulamayla ilişkili tüm hikayeleri gösteriyor.
+
+206
+00:49:40,708 --> 00:49:44,587
+Ve bu model rahat kullanılabilir bir model.
+
+207
+00:49:45,567 --> 00:49:50,127
+Teknik olmayan kişiler tarafından da kolay takip edilen bir model.
+
+208
+00:49:50,867 --> 00:50:11,947
+Yuz case'leri ayrıca kullanmak üzere çok sayıda, yani burada bir tane örnek vermiş ama çok sayıda şey var, gereksinimleri özetten genele doğru nasıl yüz case'lerde belirteceğiz.
+
+209
+00:50:12,687 --> 00:50:14,248
+Kaynaklar çok fazla.
+
+210
+00:50:22,228 --> 00:50:38,608
+Evet, ilk başta daha karmaşık vermektense önce bir taslakta bir özette belirtip daha sonra genişleterek verilmesi daha uygun diye belirtiyor burada da.
+
+211
+00:50:48,467 --> 00:51:02,747
+Şurada baktığımızda gereksinimler az önce böyle üçlü halde görmüştük. Önce şurada alan modelini veriyoruz, sonra gereksinimleri veriyoruz, sonra da tasarıma geçiyoruz bu gereksinimlerden diye.
+
+212
+00:51:02,747 --> 00:51:07,647
+Her bir iterasyonda daha fazla şey eklenebilir.
+
+213
+00:51:16,467 --> 00:51:21,267
+Doğru hazırlamak en uygunu.
+
+214
+00:51:21,847 --> 00:51:29,127
+Yine etkin use case yazma, use case modelleme gerçekleştirme.
+
+215
+00:51:31,067 --> 00:51:35,567
+Bu ilk Butch Jacobson.
+
+216
+00:51:35,920 --> 00:51:50,220
+Rambo, bu object-oriented UML yaklaşımının ilk çalışanları, bu üç yazarın şeyiyle oluşturulmuş.
+
+217
+00:51:50,220 --> 00:52:02,980
+Hatta şeylerde, paternler, tasarım kalıpları da yine bu üçlü tarafından başlatılmış bir şey.
+
+218
+00:52:03,507 --> 00:52:05,467
+yaklaşım
+
+219
+00:52:15,347 --> 00:52:24,028
+Evet, use case seviyelerini oluşturmamız gerekiyor ve use case diagramlarını okur yazar olmamız gerekiyor.
+
+220
+00:52:24,148 --> 00:52:34,608
+Sınavda da işte bu diagramları yazabiliyor musunuz? Bu diagramları okuyabiliyor musunuz? Bunları sormuş olacağız.
+
+221
+00:52:35,968 --> 00:52:41,588
+Diagramları yazıp yazamadığınızı belki klasik yaklaşımla görmeye çalışacağız.
+
+222
+00:52:43,347 --> 00:52:57,708
+Bu diagramları, kuralları, test sorularıyla kuralları doğru okuyor musunuz? Bunları görmeye çalışacağız.
+
+223
+00:52:59,708 --> 00:53:04,528
+Evet, şimdi başka bir slide'a geçiyorum.
+
+224
+00:53:31,635 --> 00:53:40,735
+Nesneye yönelik analizde, bunlar belki sizin nesneye yönelimli programlama dersinde de gördüğünüz kavramlar olabilir.
+
+225
+00:53:40,735 --> 00:53:52,235
+Bugünkü dersimiz dediğim gibi nesneye yönelik programlama, yazılım mühendisliği ve sistem analizinde bir girişim yapabilir.
+
+226
+00:53:59,635 --> 00:54:02,175
+Anlayabilmek için parçalara ayırmak anlamında.
+
+227
+00:54:33,139 --> 00:54:35,879
+Uygulama alanının çözümlenmesi.
+
+228
+00:54:35,879 --> 00:54:37,879
+Yani az önce...
+
+229
+00:54:42,931 --> 00:54:45,771
+Evet, bir kesinti oldu. Tekrar ediyorum.
+
+230
+00:54:45,771 --> 00:55:05,851
+Uygulama alanının çözümlenmesi, ilk slide'da gösterdiğim alan modelleme, alan analizi, bizim bilgi sistemi hazırlayacağımız alanın anlaşılması, burada toplanan bilginin analiz modeline taşınması.
+
+231
+00:55:07,411 --> 00:55:24,011
+Uygulama alanı hakkında bilgi edilinecek kaynaklar önce ortaya çıkarılır. Teknik literatür, mevcut uygulamalar, müşteri anketleri, uzman tavsiyeleri, mevcut ve gelecekteki gereksinimler ortaya çıkarılır.
+
+232
+00:55:34,675 --> 00:55:45,535
+Gereksinimleri belirlerken, müşterinin programdan beklentilerini anlatan doğal bir konuşma diliyle yazılmış bir belge oluşturulur.
+
+233
+00:55:46,155 --> 00:55:55,135
+Parakende satış programı, bu da az önceki video satışıydı, bu da herhangi bir web sitesinden satış işlemi.
+
+234
+00:55:57,556 --> 00:56:21,695
+Daha önceki satış programı bu webden satışı desteklemediği için yenilenmesine gerek duyuluyor. Program kasada yapılan alışveriş işlemlerine yardımcı oluyor. Yapılan her işlem program tarafından saklanmalı. Mali bilgiler harici bütçe sistemine aktarılmalı. Mal çıkış bilgileri de harici envanter sistemine iletilmelidir.
+
+235
+00:56:22,164 --> 00:56:27,664
+Saklanan işlemler üzerinde daha sonra raporlamalar ve analizler yapılabilmektedir.
+
+236
+00:56:28,244 --> 00:56:32,324
+Sistem yapılan alışverişler karşılığında müşteriye fiş vermelidir.
+
+237
+00:56:32,884 --> 00:56:37,144
+Yapılan her satış için KDV'de hesaplanarak ayrıca belirtilmelidir.
+
+238
+00:56:37,704 --> 00:56:44,304
+Şirketimizin birden fazla şubesi var ve bu şubelerin işlemleri merkezi sunucuya iletilmelidir.
+
+239
+00:56:44,304 --> 00:56:48,224
+İşte doğal dille yazılmış bir gereksinim belgesi.
+
+240
+00:56:48,304 --> 00:56:50,164
+Yani siz müşteriyle konuşuyorsunuz.
+
+241
+00:56:50,164 --> 00:56:53,943
+Bunların yapılması gerektiğini anlıyorsunuz.
+
+242
+00:56:59,251 --> 00:57:01,731
+use case'ler, kullanım öyküleri.
+
+243
+00:57:02,175 --> 00:57:08,695
+Programın yapacağı işleri ayrıntılı adımlarla ve belli kurallara uyarak anlatan belgeler.
+
+244
+00:57:10,235 --> 00:57:17,016
+Burada ürünün sağlanması beklenen işlevler nelerdir? Ürünün çalışma ortamı nedir?
+
+245
+00:57:18,215 --> 00:57:27,856
+Son kullanıcı ve yazılım ekibi arasında bir anlaşma zemini belirlemektir yine bu use case'in amacı.
+
+246
+00:57:31,155 --> 00:57:51,655
+Sistemle kullanıcı nasıl etkileşimde olacak? Bunu tanımlamak. Testler için bir zemin oluşturacak. Yani daha sonra kullanıcı testi yaparken gereksinimler, isterler nasıl belirlenmişti? Bunu anlayacağımız bir zemin oluşturması gerekir.
+
+247
+00:57:51,655 --> 00:57:55,355
+Şimdi kullanım öyküsünün bölümleri.
+
+248
+00:58:06,483 --> 00:58:07,103
+Olmalı.
+
+249
+00:58:10,996 --> 00:58:26,816
+Şimdi bir tane kullanım öyküsü örneği. Satış işlemi. Birinci laktör kasiyer. İlgililer ve ilgi alanları dediğimizde kasiyer doğru ve hızlı giriş ister. Kasa açığı maaşından kesildiğinden ödeme hatası istemez.
+
+250
+00:58:26,816 --> 00:58:34,756
+Yani birinci laktör kasiyer. Satış işlemini o yapacak. Satıcı da diğer ilgililer sınıfına giriyor.
+
+251
+00:58:36,820 --> 00:58:48,099
+Bu satıcı dediğimiz şey, işte mağazada dolaşıp size satış konusunda yardımcı olan, satışı yaparsa da komisyon alan kişi.
+
+252
+00:58:49,480 --> 00:58:57,559
+Müşteri de en az çabayla en hızlı hizmet ister ve ürün iadesi yapması gerektiğinde de bunun yapılmasını istiyor.
+
+253
+00:58:58,324 --> 00:59:23,224
+Bu anlamda fiş istiyor. Ön koşullar neler? Kasiyerin kimliği doğrulanır, öyle başlar işlem. Yani kasiyer kasayı açmak için kimlik doğrulaması yapacaktır. Son koşulda, yani ne zaman bitti deriz biz bu satış işlemine, ödeme tahsil edilir, satış kaydedilir ve fiş yazılır.
+
+254
+00:59:26,420 --> 00:59:49,040
+Satış işleminin ana öyküsüne baktığımızda 11 tane madde var. Bu 11 tane maddeyi nasıl yazacağız? Bir defa bunların sırası önemli. Sırası alan modellemede biz nasıl dinlediysek, müşterilerden işlerin nasıl olduğunu dinlediysek o sırası doğru olmalı.
+
+255
+00:59:49,492 --> 01:00:13,972
+Müşteri kasaya alacağı ürünlerle gelir, kasiyer satış işlemini başlatır, kasiyer ürünün bar kodunu girer, sistem bir satış kanalı maddesi oluşturur ve üçüncü ve dördüncü adımlar tüm ürünler için tekrarlanır.
+
+256
+01:00:14,367 --> 01:00:23,047
+Ve altıncı adımda sistem toplam bedeli ve vergi iadesini hesaplar. Ne ödeyecek şeklinde.
+
+257
+01:00:23,047 --> 01:00:41,047
+Ve kasiyer müşteriye toplamı bildirir, ödemeyi ister. Sistem tamamlanan işlemin kaydını tutmayı tamamlar ve harici bir envanter ile mali sistemlere gerekli.
+
+258
+01:00:41,492 --> 01:00:55,132
+bilgileri gönderir. Yani bütçe programına ve envanter programına şu kadarlık işlem yapıldı diye bu bilgileri gönderir ve fiş verir.
+
+259
+01:00:56,467 --> 01:01:09,827
+Müşteri de ürünlerle beraber ayrılabilir. Bu 11 madde. Burada maddeleri belirlerken, algoritmalardaki gibi her bir maddenin bir tane temel işlemi görmesi istenir.
+
+260
+01:01:13,331 --> 01:01:29,692
+Burada bu satış işlemi kullanıcı öyküsünde, hani az önceki örnek slide'da da Happy Pet dediğimiz, bu da sorunsuz akış, ana öykünün sorunsuz akışı.
+
+261
+01:01:29,692 --> 01:01:38,951
+Ama sorun çıkarsa alternatif öyküler oluşur. Mesela 3A'da bir tane barcode girdi, geçersiz barcode. Ne yapacak bu?
+
+262
+01:01:39,891 --> 01:01:43,011
+Tam uyarı mesajı verecek ve kayıt girişini reddedecek.
+
+263
+01:01:43,011 --> 01:01:46,011
+3.7'de
+
+264
+01:01:46,612 --> 01:01:55,632
+3'den 7'ye kadar olan kısımda müşteri bir kalem malı alışverişten çıkarmak ister.
+
+265
+01:01:55,751 --> 01:01:57,492
+Yani tekrar bakalım buna 7.
+
+266
+01:01:58,132 --> 01:02:00,811
+Kasiyer müşteriye toplamı bildirir, ödeme ister.
+
+267
+01:02:00,811 --> 01:02:08,512
+Müşteri de bunlardan bir tanesini görmedim, çok pahalıymış, ben bunu çıkarmak istiyorum der.
+
+268
+01:02:09,152 --> 01:02:10,192
+O zaman ne olacak?
+
+269
+01:02:11,507 --> 01:02:15,107
+3'den 7'ye kadar olan kısımda
+
+270
+01:02:18,643 --> 01:02:21,383
+Bu çıkarma işlemi gerçekleştirilecek.
+
+271
+01:02:24,788 --> 01:02:32,708
+Satıştan çıkarmak üzere ürünün balkodunu okutur ve sistem güncel toplamı bildirir şeklinde.
+
+272
+01:02:35,068 --> 01:02:40,867
+Bu kullanıcı gereksinimleri belgesinden ve kullanım senaryolarından sınıflar da elde edilir.
+
+273
+01:02:42,675 --> 01:02:56,695
+Hangi sınıflar var, hangi bilgiler saklanıyor, gereksinim duyulan hizmetler nelerdir, bir de bunlar belirlenir. Gerekli varlıklar ortaya çıkar böylece.
+
+274
+01:03:04,532 --> 01:03:26,192
+Sınıfların belirlenmesinde de bu kısım söz konusu. Üyelerin belirlenmesinde sorumluluklar, class, response, collaboration. Yani her bir sınıf, sınıfın sorumluluğu nedir?
+
+275
+01:03:26,643 --> 01:03:38,023
+Bu sınıf hangi sınıflarla iş birliği içindedir? Sınıflar arası ilişkileri. CRC kartlarında bu gösterilir.
+
+276
+01:03:40,364 --> 01:03:50,463
+Yani use case'lerden sınıflara geçiş, sınıf diagramına geçiş. Sorumlulukların dağıtılması, bir yerde yoğunlaşmamalı.
+
+277
+01:03:59,027 --> 01:04:03,187
+Tek bir şey hakkında bilginin tek bir sınıfta yer almaması gerekir.
+
+278
+01:04:04,547 --> 01:04:07,987
+Sınıflara dağıtma sorumluluğu, dağıtma işlemi.
+
+279
+01:04:08,987 --> 01:04:14,187
+Evet, kullanım senaryosunun temel elemanlarını az önceki slide'larımızdan da biliyoruz.
+
+280
+01:04:22,708 --> 01:04:27,447
+ATM'den para çekme örneği verelim bir de.
+
+281
+01:04:30,367 --> 01:04:46,668
+ATM'den para çekme örneğinde banka müşterisi, bakım sorumlusu ve bankadaki çalışanlar.
+
+282
+01:04:47,092 --> 01:04:57,291
+banka müşterisi bankamatikten nakit para çekebilir, transfer, fon transferi yapılabilir.
+
+283
+01:04:59,871 --> 01:05:11,011
+Bunlar bu şeyle, use case ile ilişkili olanlar.
+
+284
+01:05:11,011 --> 01:05:13,971
+Hocam banka neden?
+
+285
+01:05:15,155 --> 01:05:16,635
+Canlı olarak gözükmüş.
+
+286
+01:05:17,655 --> 01:05:30,375
+Evet, burada aslında şey gibi düşünülmüş, bankadaki memur bu işi gerçekleştiriyor gibi ama sonuçta bu bankamatiğin arkasında bir sistem var.
+
+287
+01:05:31,195 --> 01:05:35,255
+Bu para çekme işini gerçekleştiriyor. Burada kare olması daha uygun.
+
+288
+01:05:38,260 --> 01:05:45,880
+Bu şeyde aldığımız kitapta bu şekilde koymuş ama dediğiniz gibi kare olması daha uygun.
+
+289
+01:05:46,019 --> 01:05:56,460
+Çünkü ATM sistemine baktığımızda arkada bankadaki memurların yaptığı bir iş değil de bankamatik sisteminin gerçekleştirdiği bir iş.
+
+290
+01:05:56,460 --> 01:06:04,780
+O yüzden onun kare olması otomatik banka sisteminin.
+
+291
+01:06:05,427 --> 01:06:07,867
+Bunu gerçekleştirmesi daha doğru.
+
+292
+01:06:14,132 --> 01:06:20,132
+Tüm personeli makineye tekrar para doldurma işini gerçekleştirecek.
+
+293
+01:06:23,635 --> 01:06:25,376
+Başka burada sorunuz var mı?
+
+294
+01:06:34,228 --> 01:06:35,367
+Sorunuz var mı?
+
+295
+01:06:42,132 --> 01:06:42,931
+Yok hocam.
+
+296
+01:06:43,552 --> 01:06:56,851
+Evet, o zaman şimdi vakit kalırsa üzerinden geçerim diyordum. Bu LARMA'nın slide'larıyla siz daha önceden bunu anladığınız için bu slide'ı daha hızlı geçebildik.
+
+297
+01:06:57,751 --> 01:07:05,632
+Yine de bu use case belgeleri ve use case diagramları hakkında sorunuz varsa sorabilirsiniz.
+
+298
+01:07:08,072 --> 01:07:09,672
+Sorusu olan var mı?
+
+299
+01:07:14,452 --> 01:07:34,092
+Evet, o zaman şu nesne ve varlık arasındaki ilişkiler üzerinde, geçen hafta durmuştuk ama onu bir kez daha üstünden geçmek istiyorum. Dersin başında arkadaşınızın sorduğu sorunun üzerinden geçmek istiyorum. Buraya kadar sorusu olan var mı?
+
+300
+01:07:41,012 --> 01:07:45,372
+Evet, o zaman bir dakika, bir başka slide getireceğim.
+
+301
+01:07:49,427 --> 01:07:55,307
+Hocam, nesneler varlık dediğiniz şey miydi? Birinci düzeyde ayrıntılı falan o şemalar mıydı?
+
+302
+01:07:56,927 --> 01:08:01,148
+İşte orada kullandığımız nesnelerin yapısı.
+
+303
+01:08:02,028 --> 01:08:02,748
+Tamam hocam.
+
+304
+01:10:25,779 --> 01:10:35,719
+Evet, varlıklar ve nesneler arasındaki farklılık üzerinde duracağım şimdi.
+
+305
+01:10:57,684 --> 01:11:01,304
+Yeni paylaştığım slide izlenebiliyor mu?
+
+306
+01:11:02,304 --> 01:11:02,844
+Evet hocam.
+
+307
+01:11:03,244 --> 01:11:04,583
+Tamam, teşekkür ederim.
+
+308
+01:11:25,332 --> 01:11:49,231
+Veri varlıkları, bilgi sistemleri, özellikle geleneksel bilgi sistemleri yaklaşımında hakkında veri saklamamız gereken sistemdeki şeyleri, veri varlıkları diyoruz, varlık diyoruz.
+
+309
+01:11:49,619 --> 01:12:09,920
+Bunlar varlık ilişki diagramlarıyla modelleniyor. Varlık ilişki diagramlarını database dersinde de göreceksiniz. Çünkü bir sistem geliştireceksiniz. Bunlar ilişkisel veri tabanı üzerinde işlenirler.
+
+310
+01:12:17,427 --> 01:12:27,948
+Bilginin sistemdeki bilginin saklandığı şeyler hem davranışları hem özelliklerini saklıyoruz burada.
+
+311
+01:12:29,128 --> 01:12:33,288
+Sınıf, nesne ve metotlar kavramlarını burada söyleyebiliriz.
+
+312
+01:12:34,288 --> 01:12:41,067
+Sınıf bir hakkında bilgi tutulan şeyin tipi.
+
+313
+01:12:41,619 --> 01:12:50,819
+Nesne de bu özel sınıfın özel bir hali. Metotlar da bu nesnelerin davranışları.
+
+314
+01:12:51,940 --> 01:12:55,819
+Görelim örneğini. Esas şu şekli göstermek istiyordum ben size.
+
+315
+01:12:55,819 --> 01:13:01,819
+Burada üstteki şekil.
+
+316
+01:13:04,051 --> 01:13:30,531
+Ayrı, veri varlığı ayrı, data entity ayrı bir yerde duruyor. Uygulamadaki işlemlerimiz ayrı bir yerde duruyor. Bu varlıklar veri tabanından alınarak işlem 1'de, işlem 2'de, işlem 3'de kullanılıyor program içinde.
+
+317
+01:13:31,091 --> 01:13:38,851
+Ve sonra burada işlendikten sonra tekrar geri veri tabanına aktarılabiliyor.
+
+318
+01:13:43,475 --> 01:13:55,376
+Nesnelerde ise nesneler metotları da enkapsület ederler. Yani bir nesne içindeki, birbirim içindeki veriyi işlerler.
+
+319
+01:13:55,376 --> 01:14:08,315
+Ve baktığımızda yani geleneksel uygulamalarda şu yapı söz konusu, veri tabanında duran bir veri.
+
+320
+01:14:08,659 --> 01:14:16,739
+İşlem 1, işlem 2, işlem 3 gibi farklı işlemlerde çalıştırılmak üzere aktarılebiliyor.
+
+321
+01:14:20,020 --> 01:14:26,739
+Nesneye yönelik kavramda ise bu nesneye ait olan veri,
+
+322
+01:14:26,963 --> 01:14:51,344
+Ve bu veriyi işleyecek olan yöntemler nesne tanımı içinde veriliyor. Bu yöntemleri çalıştırmak üzere bu metotları mesaj alışverişi oluyor. Mesaj geliyor, bu işlemin çalışmasını tetiklemiş oluyor.
+
+323
+01:14:52,307 --> 01:14:56,548
+İkisi arasındaki farklılığı bu şekilde görüyoruz.
+
+324
+01:14:57,927 --> 01:15:00,307
+Veri akış diyagramlarında varlık...
+
+325
+01:15:08,627 --> 01:15:13,327
+Nesne değil de varlıklar arasındaki ilişkileri görüyoruz.
+
+326
+01:15:13,827 --> 01:15:23,167
+Mesela müşteri ve sipariş. Müşteri ve sipariş arasında bire çoklu bir yaklaşım var ama alt tabanı sıfır da olabilen.
+
+327
+01:15:25,547 --> 01:15:29,507
+Müşteri sipariş ve sipariş parçası.
+
+328
+01:15:34,195 --> 01:15:46,376
+Kasiyerin gerçekleştirdiği işlem, müşteri bir sipariş başlatıyor ama bir siparişte bir tane mal da olabilir, 15 tane mal da olabilir.
+
+329
+01:15:48,256 --> 01:15:52,735
+Bir sipariş çok sayıda ürünle ilişkilendirilmiş oluyor.
+
+330
+01:16:00,372 --> 01:16:17,132
+Müşteriler, siparişler bunları gerçek isimlere çektiğimizde John bir sipariş veriyor. Siparişte üç tane ürün var. İkinci bir sipariş veriyor. Siparişte yine üç tane ürün var.
+
+331
+01:16:31,380 --> 01:16:43,079
+Sara ise bir tane siparişi var ve bu siparişte üç tane ürün satın almış.
+
+332
+01:16:45,460 --> 01:16:53,460
+Burada Entity Relationship, ER diyagramlarını burada gösterebiliriz.
+
+333
+01:16:58,963 --> 01:17:09,963
+Peki, bu ER diyagramının nesneye yönelikteki karşılığı olan sınıf diyagramlarında…
+
+334
+01:17:13,363 --> 01:17:28,304
+Aslında bazı uygulamalarda sınıf diyagramı çizsek bile yine ilişkisel veri tabanlarına kaydedeceğimiz için bu uygulamanın son halinde ER diyagramı haline de geçirebiliriz.
+
+335
+01:17:28,304 --> 01:17:34,123
+Sınıf diyagramı, sınıf diyagramında...
+
+336
+01:17:38,612 --> 01:17:54,992
+Sınıflar, nesneler, veri varlıklarından farklıdır. Genelleştirme ve özelleştirme hiyerarşileri yapılabilir.
+
+337
+01:17:55,764 --> 01:18:18,184
+Alt sınıflar oluşturulabilir. Kalıtımlara müsaade edilir alt sınıflarda. Karakteristikleri paylaşmak üzere süper sınıfları denir. Kalıtımla üzerlerindekiler bir sınıfın süper sınıfı olabilir.
+
+338
+01:18:23,764 --> 01:18:26,104
+nesnelerle ilişkilidir.
+
+339
+01:18:29,043 --> 01:18:29,444
+Burada
+
+340
+01:18:33,587 --> 01:18:41,287
+Bir sınıf diagramına baktığımızda burada hem hiyerarşi var, genelleştirme ve özelleştirme.
+
+341
+01:18:41,287 --> 01:18:46,727
+Genelleştirmeye baktığımızda bir sedan araba.
+
+342
+01:18:48,787 --> 01:19:04,307
+Bir üst sınıfa baktığımızda bir araba çeşididir ve arabanın tüm özelliklerini taşır. Bir üste çıktığımızda da motorlu taşıttır. Motorlu taşıtın tüm özelliklerini taşıyacaktır.
+
+343
+01:19:04,307 --> 01:19:07,987
+Şurada spor araba sedan.
+
+344
+01:19:09,684 --> 01:19:27,384
+Ve yukarıya gittiğimizde araba bir üst sınıfıdır. Sedan sınıfının bir üst sınıfıdır. Sedan nesnesinin üst sınıfıdır. Araba ise motorlu taşıtların bir üst sınıfı.
+
+345
+01:19:33,332 --> 01:19:46,391
+Aggregation kavramına bakabiliriz. Aggregation kavramında da bir bütünün parçası olanların arasında ilişki vardır.
+
+346
+01:19:47,632 --> 01:19:56,792
+Mesela bilgisayar, bilgisayarın ek parçaları arasında ama bütünü bilgisayar gösterecektir.
+
+347
+01:19:56,792 --> 01:19:59,992
+Burada da bakalım sınıf sembolüne.
+
+348
+01:20:00,000 --> 01:20:18,239
+Bunu da üzerinden geçelim istemiştim. Varlık dediğimiz zaman, entity dediğimiz zaman iki bölmesi var. Entity'nin adı ve özellikleri. Başka bir şey yok. Sınıf yapısında ise sınıfın adı.
+
+349
+01:20:18,355 --> 01:20:30,215
+Sınıfın özellikleri ve bu sınıfa hangi işlemlerin uygulanacağı var. Bu da bize başka bir şey sağlamış oluyor.
+
+350
+01:20:32,395 --> 01:20:39,855
+Banka ekant sistemi yine aynı şekilde iki sınıf arasındaki ilişkiyi de gösteriyor. Bir müşteri.
+
+351
+01:20:40,659 --> 01:20:47,180
+Sıfır hesabı olabilir veya çok sayıda iki veya daha fazla hesabı vardır.
+
+352
+01:20:49,399 --> 01:20:55,719
+Bu nasıl biriktirilmiştir?
+
+353
+01:20:58,039 --> 01:21:01,800
+Account'ın kontrolünü gerçekleştirebiliriz.
+
+354
+01:21:03,619 --> 01:21:06,764
+Aradaki ilişkiye baktığımızda…
+
+355
+01:21:06,899 --> 01:21:14,199
+Bir müşteri sıfır hesabı olabilir, bir müşterinin çok sayıda hesabı da olabilir.
+
+356
+01:21:16,579 --> 01:21:30,500
+Bu da aynı şekilde gösterdiği şey, aradaki bağlantılar, bu aradaki bağlantılar da şeye çok benziyor ER diyagramına.
+
+357
+01:21:30,500 --> 01:21:34,179
+Bu şekilde tanımlayabiliyoruz.
+
+358
+01:21:37,140 --> 01:21:37,780
+Evet.
+
+359
+01:21:58,420 --> 01:22:04,000
+Evet, şimdi başka bir slide'ı kullanacağım.
+
+360
+01:22:37,268 --> 01:22:41,967
+Hocam bu konular içinde en çok bakmamızı tavsiye ettiğiniz konu hangisi?
+
+361
+01:22:46,067 --> 01:22:47,807
+Analiz aşamasında mı?
+
+362
+01:22:49,067 --> 01:22:53,288
+Yani hayır yani analiz aşamasında tabii o da olabilir hocam.
+
+363
+01:22:53,288 --> 01:22:56,288
+Şimdi analiz aşamasında...
+
+364
+01:22:58,515 --> 01:23:08,036
+En önemlisi şu, veri akış diyagramlarını okur yazar olacaksınız. Yani bir case verildiğinde onun veri akış diyagramını çizebileceksiniz.
+
+365
+01:23:09,055 --> 01:23:23,155
+Biliyorsunuz bir paket içinde 3 kademe var. Evet, bunu paylaşacağım şimdi. Şimdi hep use case'leri gördük. Veri akış diyagramlarını da unutmayalım.
+
+366
+01:23:23,923 --> 01:23:26,244
+O yüzden onu paylaşacaktım şu anda.
+
+367
+01:23:31,188 --> 01:23:34,747
+Hocam, biz projelerimizde bunların ikisinden birini seçeceğiz değil mi?
+
+368
+01:23:35,007 --> 01:23:51,108
+Evet, evet. Ekip olarak biz nesneye yönelik hazırlamak istiyoruz. Biz klasik yöntemle hazırlamak istiyoruz diyeceksiniz. Ona göre hangisini seçtiyseniz onun diagramlarını kullanacaksınız.
+
+369
+01:23:53,228 --> 01:23:57,788
+Yine yapısal yaklaşım, klasik yaklaşım aynı şey.
+
+370
+01:23:58,323 --> 01:24:21,224
+Yapısal yaklaşımla devam ettiyseniz tasarım aşamasında sadece yapı diyagramı kullanacaksınız. Bir de ER diyagramı kullanacaksınız. Eğer nesneye yönelik yaklaşım seçmişseniz tasarım aşamasında sequence diyagram ve sınıf diyagramını kullanacaksınız.
+
+371
+01:24:22,384 --> 01:24:23,543
+Teşekkür ederim.
+
+372
+01:24:29,971 --> 01:24:40,572
+Şimdi yapısal yaklaşımla gereksinim analizi modelinde neler hazırlıyoruz?
+
+373
+01:24:41,371 --> 01:24:49,532
+Bir veri sözlüğümüz oluyor, varlık ilişki diagramı, ER diyagramı hazırlıyoruz ve veri akış diyagramı hazırlıyoruz.
+
+374
+01:24:57,971 --> 01:25:21,011
+Yani şeylerinizi de hazırlamasanız da olur. Veri tanımı ya da nesne tanımı neyse onu yapıyorsunuz. Bu klasik yaklaşıma daha uygun. O yüzden süreç tanımını veri akış diyagramıyla, veri tanımını da varlık ilişki diyagramıyla gerçekleştiriyorsunuz.
+
+375
+01:25:23,923 --> 01:25:32,543
+Modelin ortasında bir veri sözlüğü var. Bu veri sözlüğü yazılım tarafından kullanılan ve üretilen tüm veri nesnelerinin tanımını içerir.
+
+376
+01:25:33,984 --> 01:25:41,224
+Varlık ilişki diagramı, Entity Relationship diagram, veri modelleme aşamasında kullanılır.
+
+377
+01:25:41,724 --> 01:25:48,783
+Veri akış diyagramları ise sistem analizi süresince fonksiyonların modellemesinde kullanılır.
+
+378
+01:25:49,460 --> 01:25:56,600
+geleneksel, yapısal yaklaşımda bu şekilde görüyoruz.
+
+379
+01:26:00,212 --> 01:26:06,612
+Sistemin dışsal birimlerinin sistemle ilişkisini basitçe gösteren diagramlar.
+
+380
+01:26:06,612 --> 01:26:10,592
+Burada dikkat edeceğimiz kuralları da söyleyeyim.
+
+381
+01:26:11,132 --> 01:26:20,532
+Kurallar, bu bir varlık, öğrenci hakkında bilgi tutulan bir varlık.
+
+382
+01:26:21,032 --> 01:26:24,811
+Öğretim üyeleri yine bir varlık.
+
+383
+01:26:27,891 --> 01:26:44,051
+Doğrudan veri aktarımı olmaz. Yani bir kareden bir kareye okla veri aktaramazsınız. Arada mutlaka bir işlem olması gerekir. Bu birinci kural.
+
+384
+01:26:53,332 --> 01:27:18,211
+Veri tabanı tablosu, öğrenci not veri tabanı tablosu. Bunlar da veri saklama ortamları. Yine bir varlık, öğretim üyeleri bir varlık mesela, veri saklama ortamına doğrudan veri girişi olamaz. Mutlaka arada bir işlem olması gerekir.
+
+385
+01:27:18,931 --> 01:27:32,672
+Aynı şekilde veri saklama ortamından, veri saklama ortamında da doğrudan kendiliğinden veri aktarımı yapılamaz. Arada mutlaka bir işlem olması gerekir.
+
+386
+01:27:39,891 --> 01:27:49,612
+hiçbir zaman için bir varlıktan bir varlığa bilgi sistemi yapısı içinde kendiliğinden veri hareket edip gidemez.
+
+387
+01:27:49,612 --> 01:27:55,811
+Aynı şekilde bir dosyadan dosyaya veri kendi kafasına göre gidip hareket edemez.
+
+388
+01:27:56,291 --> 01:28:04,731
+Ne olması gerekir? Size böyle hatalı uygulamalar verdiğimizde doğrusunu belirlemeniz gerekir.
+
+389
+01:28:07,699 --> 01:28:25,440
+Arada mutlaka bir işlem olması gerekir. Yoksa kendiliğinden gidiyorsa hatalı. Kendiliğinden nasıl gidebilir veri? Bir işlemden başka bir işleme gider. Yani şurada kenarları yuvarlatılmış dikdörtgen bir işlem.
+
+390
+01:28:35,667 --> 01:28:44,747
+Sınav sonuçlarını sisteme ekleyip de öğrencinin seçilen ders bilgilerinin gittiğini görebiliyoruz.
+
+391
+01:28:47,127 --> 01:28:52,867
+Öğrenci not bilgisi sınav sonucu görüntüle işlemine aktarılıyor.
+
+392
+01:28:53,867 --> 01:29:00,287
+Burada da yine işlemden işleme veri aktarımı olabilir.
+
+393
+01:29:03,091 --> 01:29:06,351
+O zaman biriniz sayabilir misiniz buradaki kuralları?
+
+394
+01:29:13,043 --> 01:29:14,064
+Erdiği ağacı.
+
+395
+01:29:15,443 --> 01:29:15,683
+Evet.
+
+396
+01:29:15,963 --> 01:29:17,943
+Aklıma gelenleri söyleyebilirim.
+
+397
+01:29:18,244 --> 01:29:18,564
+Tamam.
+
+398
+01:29:19,244 --> 01:29:23,423
+Bir seferde tek bir işlem gerçekleşebilir, birden fazla işlem gerçekleşemez.
+
+399
+01:29:23,863 --> 01:29:29,324
+Ama bir seferde tek bir işlem, yani bir veri akış diyagramında mı?
+
+400
+01:29:30,183 --> 01:29:34,783
+Evet hocam, mesela her seçimde bir ok var, onun yanına biz başka bir şey daha ekleyemeyiz.
+
+401
+01:29:35,604 --> 01:29:58,844
+Yani eklenebilir, başka bir veri daha gidebilir. Yalnız şu doğru, bir seferde bir tane işlem, şunun için söyleyebiliriz, eğer konteks diyagramsa, özet diyagramsa, burada işlem sadece tektir. O da bütün sistemi anlatan işlemdir.
+
+402
+01:30:02,944 --> 01:30:17,584
+Mesela öğrenciyinden direkt bir öğretim üyesine veri aktarımı yapılamaz. Arada mutlaka bir işlem yapılması gerekir. Ama bir işlemden sonra bir başka işleme geçiş yapabilir. Bir işlemden diğer işleme yapılabilir.
+
+403
+01:30:17,584 --> 01:30:25,564
+Evet. Bir varlıktan bir varlığa doğrudan veri aktarımı olamaz.
+
+404
+01:30:26,003 --> 01:30:50,703
+Bir veri saklama ortamından varlığa ya da veri saklama ortamından veri saklama ortamına bilgi aktarımı, veri aktarımı olamaz. O da doğru, yani bu da hatalı olur. Araya mutlaka bir işlem eklememiz gerekir. Bu aktarma işlemini anlatacak bir işlem eklememiz gerekir.
+
+405
+01:30:53,460 --> 01:30:56,739
+Başka kurallar olarak ne söylemiştik?
+
+406
+01:31:10,003 --> 01:31:25,083
+Mesela bu şeyi, diagramı bozmasın diye öğrenciyi burada kullanmışız. Tekrar kullandığımızda şurada bir işaret olması gerekir. İkinci defa kullanıyoruz diye biz de yazmamışız bunu burada. Bu da hatalı.
+
+407
+01:31:25,983 --> 01:31:38,003
+İkinci defa kullanıyorsak buna biz başka varlık diye bakmayalım diye ikinci defa kullandığımızda ucuna daha önce kullanılmış varlık diye bir çizgi çizmek.
+
+408
+01:31:44,020 --> 01:31:55,680
+Evet. Başka? Geçen hafta anlattıklarıma göre hata şeyi eklemek isteyen var mı?
+
+409
+01:32:06,131 --> 01:32:06,531
+Evet.
+
+410
+01:32:08,243 --> 01:32:26,703
+Giden, gelen verilerin her birini ayrı okla yazarız ki okun üzerine yazdığımız veri karışmasın. Kaç tane giden, gelen veri varsa o kadar ok yazarız. Bu bir konteks diyagram, o yüzden faturalama sistemi diye geçiyor.
+
+411
+01:32:35,408 --> 01:32:58,528
+İkinci düzey ayrıntılı, konteks diyagramla birinci düzey ayrıntılı arasında mantıksal bir bağ olması gerekir. Mesela bir tanesinde bir işleme sadece üç tane varlık bağlantı kurulmuşsa, diğerinde beş tane kurulmuşsa hatalı olur. Birbiriyle uyumlu olması gerekir.
+
+412
+01:33:04,275 --> 01:33:19,055
+Bu birinci düzey ayrıntılı veri akış diyagramı. Varlık, doktor, hasta. Hasta ikinci kez geçiyor. Sigorta şirketi. Bunlar varlıklar.
+
+413
+01:33:22,100 --> 01:33:32,020
+Şu 1-0, 2-0, bunlar numara koymuşuz. İşlem sırasını gösteriyor. İşlemden işleme aktarılan veri var.
+
+414
+01:33:40,819 --> 01:34:07,920
+1-0, 2-0, 3-0, 4-0 buradaki tüm işlemleri gösteriyor. D1, D2, D3, D4 bunlar da şeyleri gösteriyor. Varlık, veri saklama ortamlarını yani karşılığa gelen şey veri tabanı olabilir, dosya olabilir, neyse.
+
+415
+01:34:11,764 --> 01:34:15,223
+Bu da birinci düzey ayrıntılı veri akış diyagramıydı.
+
+416
+01:34:15,663 --> 01:34:26,683
+Birinci düzey ayrıntılı veri akış diyagramının en önemli özelliği de bütün uygulamadaki işlemlerin tanımlanması burada.
+
+417
+01:34:34,323 --> 01:34:51,163
+İkinci düzey ayrıntılı veri akış diyagramında ise, ikinci düzey ayrıntılı veri akış diyagramı her bir birinci düzeydeki işlemi, tabii ki ayrıntısı varsa hepsini değil, alt işlemleriyle göstermek.
+
+418
+01:34:52,763 --> 01:34:59,443
+Bu diğer işlemlerden de girdi alıyorsa bunları da göstermemiz gerekir.
+
+419
+01:35:02,836 --> 01:35:21,836
+Evet, sorunuz var mı? Buraya kadar. Bu geçen haftakileri de şimdi use case'i gördükten sonra veri akış diyagramlarını da bir kez daha üzerinden geçeyim istedim. Sorunuz var mı?
+
+420
+01:35:29,939 --> 01:35:49,579
+Önümüzdeki hafta sınava çalışabilirsiniz. Bazı slide'ları bu ders duvarına yerleştirmeye çalışacağım. Bunun dışında yine dersle ilişkili kitaplar var.
+
+421
+01:35:54,452 --> 01:36:07,652
+İngilizce kitabı var. Bizim Göksel Hoca ile beraber yazdığımız sistem analizi kitabı var. Bu kitaplardan da faydalanabilirsiniz.
+
+422
+01:36:09,632 --> 01:36:12,392
+Sorunuz var mı dersle ilişkili?
+
+423
+01:36:21,043 --> 01:36:23,123
+Sorunuz yoksa dersi bitiriyorum.
+
+424
+01:36:26,043 --> 01:36:26,963
+İyi günler hocam.
+
+425
+01:36:28,463 --> 01:36:30,443
+İyi günler.
+
+426
+01:36:31,323 --> 01:36:33,163
+Haftaya başarılar.
+
+427
+01:36:34,563 --> 01:36:35,343
+Teşekkürler.

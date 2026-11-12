@@ -1,0 +1,1603 @@
+1
+00:00:20,083 --> 00:00:29,083
+Merhabalar. Bugün sizin sunumlarınızı önümüzdeki hafta yapacağız. Ondan önceki son dersiniz oluyor.
+
+2
+00:00:29,083 --> 00:00:36,483
+Ve bugün hangi konuları işleyeceğiz?
+
+3
+00:00:37,963 --> 00:00:43,084
+Geçen hafta yazılım geliştirme...
+
+4
+00:00:44,148 --> 00:01:00,067
+Bu dersteki kapsamıyla bilgi sistem geliştirme sürecinin kodlama ve test aşamasında yaptıklarımızdan bahsetmiştim ve bakım konusunu da bugün ekleyeceğim.
+
+5
+00:01:00,927 --> 00:01:08,948
+Ayrıca yeni sisteme geçiş yolları üzerinde duracağız en son dersimiz olarak.
+
+6
+00:01:10,640 --> 00:01:28,819
+Bir de önümüzdeki hafta uygulamalarınızı, projelerinizi göstereceksiniz. Bir örnek üzerinde acaba analiz ve tasarım aşamasında neler yapıyoruz? Bunun üzerinde de duracağız.
+
+7
+00:01:30,867 --> 00:01:55,828
+Derse başlamadan önce sorularınız var mı? Bir gruptaki arkadaşlarınız bana mail attı, önümüzdeki hafta sunmak üzere. Bu hafta başka diğer gruplardan da sunum yapacağız diyen olursa kaydedebilirim. Başka derse başlamadan sorunuz eklemek istediğiniz bir şey var mı?
+
+8
+00:02:01,140 --> 00:02:03,840
+Duyabiliyor musunuz? Takip edebiliyor musunuz?
+
+9
+00:02:05,019 --> 00:02:11,019
+Duyuyoruz hocam. Biz geçen hafta da söylemiştik, derste mail atmadık ama.
+
+10
+00:02:12,879 --> 00:02:24,420
+Ben bakayım, kaydetmiş olabilirim. Kontrol edeyim değilse, şimdi yazacağım. Bilmiyorum, yazdım mı yoksa haftaya mı konuşuruz dedim.
+
+11
+00:02:24,879 --> 00:02:27,379
+Ama şimdi...
+
+12
+00:02:27,379 --> 00:02:28,279
+Yazmışsınız hocam.
+
+13
+00:02:28,959 --> 00:02:29,859
+Yazdım mı?
+
+14
+00:02:30,519 --> 00:02:30,979
+Tamam.
+
+15
+00:02:31,560 --> 00:02:35,979
+Sizin dersinizin kağıtlarını alıp bakıyorum şu anda.
+
+16
+00:02:43,635 --> 00:02:58,195
+Hocam, daha önce sormuştum ama emin olmak adına, eksik olmaması adına, eğer ki nesne yönelik bir şey içerisindeysek, bizim akış diyagramları yapmamamız sadece 100 kez diyagramı yeterli oluyor değil mi? Ve senaryo dökümanı.
+
+17
+00:02:59,156 --> 00:03:04,596
+Evet, evet. Senaryo dökümanı ve sınıf diyagramı.
+
+18
+00:03:05,516 --> 00:03:06,776
+Tamamdır hocam, teşekkür ederim.
+
+19
+00:03:09,395 --> 00:03:13,355
+Diğerini seçerseniz de bunları yapmanıza gerek yok.
+
+20
+00:03:16,716 --> 00:03:20,316
+Yani ya onu ya onu, hangisini seçiyorsa grup.
+
+21
+00:03:24,883 --> 00:03:28,364
+Hocam, sunum süresi yaklaşık ne kadar olması gerekiyor?
+
+22
+00:03:31,483 --> 00:03:51,483
+Sunum süresi grup sayınızda baya fazla. Yani 12 dakika falan olacak. Maksimum 15 dakika. Zaten raporlarınızı da teslim etmiş olacaksınız.
+
+23
+00:03:54,611 --> 00:04:08,231
+Belki yazdığınız programları Elçin Hanım'a anlatabilirsiniz. Öyle bir program yapabilirsiniz.
+
+24
+00:04:14,163 --> 00:04:17,803
+Sunumda herkes kendi yaptıklarını mı anlatsak hocam?
+
+25
+00:04:19,244 --> 00:04:24,803
+Evet, herkes katılacak sunuma. Yani bir tane temsilci anlatmayacak.
+
+26
+00:04:41,396 --> 00:04:43,795
+Sınav sonuçlarınızı girdim sisteme.
+
+27
+00:04:45,176 --> 00:04:46,676
+Gördünüz herhalde.
+
+28
+00:04:50,355 --> 00:04:52,175
+UCS'e baktınız değil mi?
+
+29
+00:04:52,696 --> 00:04:54,436
+Evet hocam, mail de geldi zaten.
+
+30
+00:04:55,936 --> 00:05:02,156
+Evet, evet. [öğrenci] grubumu anlatacaktı. Derste öyle mi söylemiştiniz?
+
+31
+00:05:02,336 --> 00:05:02,936
+Evet hocam.
+
+32
+00:05:02,936 --> 00:05:03,295
+Tamam.
+
+33
+00:05:08,819 --> 00:05:12,580
+Bana mail atan grup kimdi?
+
+34
+00:05:16,788 --> 00:05:21,468
+Burada mı mail atanlar? Şu anda mailimi açmadım çünkü.
+
+35
+00:06:04,276 --> 00:06:08,176
+Evet, şimdi önce yeni anlatacağımız konu üzerinde duralım.
+
+36
+00:06:08,296 --> 00:06:15,936
+Sonra da örnek sizin projelerinize benzer bir konuda bir örnek çalışma üzerinde duracağım.
+
+37
+00:06:15,936 --> 00:06:32,216
+Yalnız bu çalışmada fizibilite çalışması, onu çok iyi bir örnek olarak görmediğim için sadece analiz ve tasarımdan devam ederek anlatacağım örnek projeyi.
+
+38
+00:06:32,276 --> 00:06:45,255
+Evet, şimdi önce geçen haftaki konulara şöyle bir bakalım. Ondan sonra da en son konumuz üzerinde duralım.
+
+39
+00:07:50,355 --> 00:07:56,995
+Evet, şu anda geçen hafta işlediğimiz konuyu paylaşacağım.
+
+40
+00:08:15,891 --> 00:08:22,531
+Geçen hafta yazılım kodlama aşamasından başlayarak
+
+41
+00:08:22,932 --> 00:08:35,991
+Kodlama sırasında yapılanları şöyle bir hatırlatmıştım ve bunun üzerinde durmayacağımızı çünkü derslerinizde zaten programlama derslerinizde bu konu üzerinde durduğumuzu söylemiştim.
+
+42
+00:08:35,991 --> 00:08:48,912
+Analiz ve tasarımı geçtikten sonra hem nesne yönelik hem yapısal yaklaşımla olan analiz tasarımı kodlamaya geliyordu sıra.
+
+43
+00:08:50,932 --> 00:08:56,552
+UML diyagramın niteliği düzenli bir kodlama tekniğine ve kodlama biçimine bağlıdır.
+
+44
+00:08:57,552 --> 00:09:08,052
+Kodlama aşamasına geçilmeden önce yapılması gereken bir işlem programlama dilinin ve kullanılacak platformun belirlenmesi.
+
+45
+00:09:09,072 --> 00:09:14,432
+Bu da uygun seçilmelidir demiştik.
+
+46
+00:09:19,956 --> 00:09:27,676
+Sistem gereksinimlerini aldık, tasarımları oluşturduk, sonra kodlamaya başladık.
+
+47
+00:09:27,756 --> 00:09:35,135
+Kodlama sonucunda programlar ortaya çıktı ve kodlamanın denetimi sonucunda gerekirse revizyon oldu.
+
+48
+00:09:35,135 --> 00:09:47,776
+Eğer denetimden geçtiyse ondan sonra test süreci, test sürecinde modüller genel test, sistem testi ve onaylama testi şeklinde yapılıyordu.
+
+49
+00:09:47,956 --> 00:10:09,895
+Tabii ki burada teste başlamadan önce bir test planı oluşturuluyor. Buna göre de test işlemleri gerçekleştiriliyordu. Bundan sonra artık sistem kullanıma hazır. Kullanıcının da onayından geçmiş bir sistem var karşımızda diyebiliriz. Bundan sonra artık kullanıma geçme.
+
+50
+00:10:11,347 --> 00:10:24,827
+Kullanıma alma sırasında yapılacak işler geliyor ve kullanıma aldıktan sonra da belli aralıklarla bakım, maintenance işlemleri gerçekleştiriliyor.
+
+51
+00:10:26,451 --> 00:10:48,231
+Şimdi kodlamaya yaparken programlama dilini nasıl seçiyoruz? Genel uygulama alanına, algoritmamızın karmaşıklığına, yazılımın kullanılacağı ortama ve yazılımı hazırlayacak olanların seçilen programlama dilindeki bilgi düzeyine bağlı olarak seçiliyor.
+
+52
+00:10:48,231 --> 00:10:54,432
+Kodun anlaşılır olması gerekiyor. İşte onun için açıklama satırları ne fazla ne az.
+
+53
+00:10:54,451 --> 00:10:57,652
+gerektiği kadar açıklama verilmesi gerekiyor.
+
+54
+00:10:58,132 --> 00:11:01,731
+Kod yazım düzeni okunabilirliği sağlamak üzere.
+
+55
+00:11:02,259 --> 00:11:25,120
+gerçekleştiriliyor. Veri tabanı tablolarının anlamlı isimlerde olması ve program modül isimlerinin, değişkenlerin, tablo kolonlarının anlaşılır şekilde isimlendirilmesi veya kurumda bir standart varsa o standarda uygun hazırlanması bekleniyordu.
+
+56
+00:11:30,259 --> 00:11:46,379
+kalite ve test yapısı oluşturuluyordu. Bu arada bir şey sorayım sizlere. Burada kodlama diyoruz. Daha önceki hafta derslerde kodlama geçmişti.
+
+57
+00:11:50,388 --> 00:11:58,727
+tasarım aşamasında bir kodlama daha geçti. Bu kodlama kavramını hatırlayan var mı?
+
+58
+00:12:05,875 --> 00:12:13,615
+Katılımcılardan bakalım kime soralım? [öğrenci]. [öğrenci] duyuyor mu beni?
+
+59
+00:12:14,175 --> 00:12:15,935
+Buradayım hocam ama hatırlayamadım.
+
+60
+00:12:17,395 --> 00:12:20,595
+Peki, [öğrenci].
+
+61
+00:12:24,916 --> 00:12:33,036
+Bu program kodunun yazılmasından başka bir kodlama daha geçti tasarımda. Neydi o?
+
+62
+00:12:35,956 --> 00:12:37,876
+[öğrenci] burada mı?
+
+63
+00:12:40,376 --> 00:12:41,636
+[öğrenci].
+
+64
+00:12:44,216 --> 00:12:45,296
+[öğrenci].
+
+65
+00:12:48,076 --> 00:12:49,696
+[öğrenci] burada mı?
+
+66
+00:13:12,211 --> 00:13:13,512
+[öğrenci] duymuyor musun?
+
+67
+00:13:14,412 --> 00:13:16,492
+Hocam isterseniz ben cevaplayabilirim.
+
+68
+00:13:24,467 --> 00:13:27,407
+Bir dakika, kim cevaplayacak?
+
+69
+00:13:27,787 --> 00:13:29,407
+[öğrenci].
+
+70
+00:13:30,007 --> 00:13:31,227
+Tamam, cevapla [öğrenci].
+
+71
+00:13:32,067 --> 00:13:37,107
+Hocam, tam açıklamasını yapamam ama şunun için kullanıyorduk.
+
+72
+00:13:37,107 --> 00:13:46,107
+Mesela, unique bir kod veriyorduk ona. Mesela bir öğrencinin öğrenci numarası veya bir insanın...
+
+73
+00:13:46,240 --> 00:14:00,020
+TC Kimmik numarası gibi hani daha kolay erişim sağlayabilmek için yani o şeyi kodluyorduk yani ona bir kod veriyorduk ve bu da unique oluyordu. Yani bu şekilde hatırlıyorum.
+
+74
+00:14:02,520 --> 00:14:10,020
+Şöyle, şimdi sen biraz şeyle karıştırdın bunu. Veri tabanı tasarımında.
+
+75
+00:14:12,307 --> 00:14:27,307
+Primary key kavramıyla biricik anahtar, yani veri zamanında bir tabloya erişmek için, tablodaki bir satıra erişmek için bir anahtar alan oluşturuyoruz.
+
+76
+00:14:29,307 --> 00:14:30,307
+O değil de...
+
+77
+00:14:31,124 --> 00:14:40,204
+Kod şöyle, şimdi bir tane olması gerekmiyor ama şöyle açıklıyoruz onu.
+
+78
+00:14:40,204 --> 00:14:51,624
+Daha sonra bu alan üzerinde sınıflama yapacaksak, raporlama yapacaksak,
+
+79
+00:14:51,923 --> 00:15:00,963
+O alanı sayısal hale ya da karakter olarak daha kolay erişilebilecek hale getiriyoruz.
+
+80
+00:15:01,763 --> 00:15:09,083
+Mesela birçok kayıtta öğrenim durumu geçecek.
+
+81
+00:15:09,491 --> 00:15:18,091
+Öğrenim durumuna işte ilkokul, ortaokul gibi yazı yazsanız veya kısaltmasını koysanız herkes başka yazabilir.
+
+82
+00:15:18,091 --> 00:15:36,091
+Ama bunu bir sayıya karşılık getirirsek ya da tek harfe karşılık getirirsek o zaman biz bütün ilkokul mezunlarını sadece ilkokul bitirmiş olanları çalışanlar için de listeleyebiliriz.
+
+83
+00:15:36,820 --> 00:15:39,680
+Veya hastalık kodlarını söylemiştim.
+
+84
+00:15:41,560 --> 00:15:56,820
+İşte diyabet hastalığı olan hastaları hastanede listelemek istersek, gelen hastalar içinde, o zaman bu tanı grubunu...
+
+85
+00:15:57,331 --> 00:16:10,852
+Kodlamışsak eğer ve hastalara da hangi tanılar görüldü dendiğinde işte diyabet yazmak yerine onun kodunu yazmışsak daha kolay sınıflayabiliriz.
+
+86
+00:16:11,352 --> 00:16:23,632
+Dolayısıyla daha tasarım aşamasında hatta analizden başlayarak biz hangi bilgiyi doğrudan mesela isim soyad onları doğrudan kendisine gireceğiz.
+
+87
+00:16:25,331 --> 00:16:49,992
+dediğimiz zaman bunun karşısına bir kod koyacağız. Ya da işte cinsiyet dediğimiz zaman karşısına bir kodla koyacağız bunu. Yoksa herkes farklı yazabilir. Yazıyı uzun yazabilir, kısa yazabilir. Eşleşme olmaz. Bunu sağlamak için kodlama kullanıyoruz. Anlaşıldım mı?
+
+88
+00:16:49,992 --> 00:16:50,792
+Benziyor hocam.
+
+89
+00:16:52,751 --> 00:16:58,071
+Evet, yani sen de bunu demek istedin ama açıklayamadın.
+
+90
+00:16:58,071 --> 00:17:06,851
+Yani mesela şey gibi, okul numaralarımızın başında 18 var mesela, 19 var, mezunları ayırmak için.
+
+91
+00:17:06,851 --> 00:17:08,451
+Evet, giriş senesi.
+
+92
+00:17:08,632 --> 00:17:08,891
+Aynen.
+
+93
+00:17:09,051 --> 00:17:09,911
+Evet, evet.
+
+94
+00:17:11,431 --> 00:17:13,871
+Veya bölüm adı.
+
+95
+00:17:14,831 --> 00:17:18,411
+İşte orada şey oluyor aslında, o bir yandan da.
+
+96
+00:17:18,963 --> 00:17:38,523
+Veri tabanı tasarımında baktığımız zaman foreign key oluyor, ilişki kuruyor iki tablo arasında. Bölüm tablosuyla, bölümlerin açıklandığı tabloyla, öğrencilerin açıklandığı tablo arasında relation yapıyor, ilişki kuruyor.
+
+97
+00:17:40,523 --> 00:17:41,244
+Evet.
+
+98
+00:17:42,451 --> 00:17:54,911
+Şimdi devam ediyorum. Yani kodlamayı anlatırken kodlamayı biz bir de tasarım sırasında girdi kodlaması için kullanmıştık.
+
+99
+00:17:54,911 --> 00:18:01,632
+Şimdi yazılımı yazdık programlama dilinde.
+
+100
+00:18:04,051 --> 00:18:16,131
+Testleri yapacağız. Testleri anlatmadan önce kaliteli yazılım nedir? Önceden belirlenmiş olan işlevsel gereksinimlere ve standartlara uygun yazılımdır.
+
+101
+00:18:20,852 --> 00:18:41,592
+Hangi kalite faktörleri var? Doğruluk, güvenirlik, verimlilik. Yani yazılım kalitesi kullanıcılar açısından kullanışlı olmalı, güvenlikli olmalı, verimli olmalı, güvenir reliability olmalı, doğru çalışmalı.
+
+102
+00:18:42,195 --> 00:19:00,596
+Hata bulma kolaylığı olmalı, kolay değişiklik yapılabilmeli, test edilebilmeli, taşınabilirlik özelliği olmalı. Yani bir işletim sisteminden başka bir işletim sistemine. Tekrar başka yazılımlarda bir parçasını ya da bütününü kullanabilmeliyiz.
+
+103
+00:19:01,375 --> 00:19:09,596
+Bağlanabilirlik aslında burada birlikte çalışabilirlik demek daha doğru. Interoperability başka sistemlerle.
+
+104
+00:19:10,195 --> 00:19:26,556
+çalışabilmesi gibi özellikleri olması gerekir. Peki, bir programı nasıl test edeceğiz? Birim testi yapacağız. Yani doğru kodladık mı programlama dilinde?
+
+105
+00:19:27,036 --> 00:19:33,955
+Algoritması doğru mu? Buna bakacağız. Kodunun olması lazım bu birim testi yapabilmesi için.
+
+106
+00:19:34,675 --> 00:19:46,235
+Daha sonra bu birim kodları birleştirdiğimiz zamanda doğru çalışıyor mu? Yani modüller tek tek doğru çalışıyor da birleştirdiğimizde de doğru çalışıyor mu? Ona bakacağız.
+
+107
+00:19:47,335 --> 00:19:55,435
+Sistemle ilişkilerin nasıl? Yani işletim sistemiyle uyumlu mu? Buna bakmamız gerekiyor.
+
+108
+00:19:56,495 --> 00:20:00,000
+Sistem testi aynı anda kaç kullanıcı çalışabilir?
+
+109
+00:20:00,000 --> 00:20:18,000
+Gerçekten çalışıyor mu? Veri tabanından nasıl okuma yapıyor? Sistem testinde bunlara bakıyoruz. Onaylama testinde ise kullanıcı gereksinim sistem analizinde istediklerini söylemişti.
+
+110
+00:20:18,000 --> 00:20:23,000
+Sistemin ne yaptığını söylemişti, ne yapmasını istediklerini söylemişti.
+
+111
+00:20:25,523 --> 00:20:36,804
+Onaylama testinde de, kullanıcı testi de diyebileceğimiz onaylama testinde de kullanıcı hakikaten benim istediklerimi yapıyor mu sorusuna cevap vermiş olacak.
+
+112
+00:20:37,923 --> 00:20:43,723
+Ve test ettik, kullanıma açacağız yazılımı.
+
+113
+00:20:44,324 --> 00:20:47,864
+Kullanıma açma aşamasında neler yapıyoruz?
+
+114
+00:20:48,423 --> 00:20:49,783
+Şimdi ona bakalım.
+
+115
+00:20:50,867 --> 00:21:01,528
+Bu haftanın konusu yazılımın kullanıma geçiş, yeni sistemin kullanıma geçiş aşaması.
+
+116
+00:21:15,508 --> 00:21:19,587
+Oraya kadar sorunuz var mı? Sizin sorunuz var mı bu defa?
+
+117
+00:21:38,163 --> 00:21:58,084
+Şimdi var olan bir sistem var. Artık hiçbir yerde yeni bilgisayar kullanılmazken kullanılmaya başlanmıyor genellikle. Var olan bir sistemde iyi gitmeyen şeyler var. Sistem yenileniyor genellikle. Her alanda bilgisayar kullanılıyor çünkü.
+
+118
+00:22:05,715 --> 00:22:15,015
+Nasıl hazırlandı yeni sistem ve nasıl kullanıma geçirildi? Bu ikisi de önemli rol oynuyor.
+
+119
+00:22:17,015 --> 00:22:21,015
+Öncelikle yeni sistemimiz hazırlandığında...
+
+120
+00:22:21,779 --> 00:22:37,599
+kullanıcılara bir eğitim verilmesi gerekiyor. Bu eğitimde de sistemle ilgilenecekler, işleten, düzenleyen, uç kullanıcılar ve üst yönetim olmak üzere farklı kategorilerde eğitim verilir.
+
+121
+00:22:37,599 --> 00:22:47,720
+Şimdi eğitime baktığımızda sistemle ilgilenecekleri işletim sistemine ve program modüllerinin yapısıyla ilgili daha fazla.
+
+122
+00:22:48,468 --> 00:23:06,947
+Bilgi verilmendir. İkinci grupta yer alan uç kullanıcılara sistemde gerçekleştirebilecekleri işlemler, hangi modülle ne yapıyorlar, bu menüler arasında nasıl geçiş yapıyorlar, bunlar anlatılmalı.
+
+123
+00:23:16,915 --> 00:23:24,955
+Sistem aracılığıyla hangi bilgileri alabilirler? Hangi kısıtlamalar var? Öncelikle bunların verilmesi gerekiyor.
+
+124
+00:23:25,415 --> 00:23:32,235
+Yani altta çalışanlardan bu sistemden neyi isteyebilirler?
+
+125
+00:23:36,051 --> 00:23:48,372
+Bir var olan sistemden yeni sisteme geçiş yöntemlerimiz neler olmalı?
+
+126
+00:23:48,451 --> 00:23:58,192
+Şimdi eğitimi verdik. Eğitimi verdikten sonra kurumda çalışanlar hazır oldu sizin kurduğunuz sistemi, anladılar.
+
+127
+00:23:58,720 --> 00:24:05,220
+Nasıl kullanacaklarını, ne isteyebileceklerini, nasıl çalıştırabileceklerini anladılar.
+
+128
+00:24:05,940 --> 00:24:15,539
+Bundan sonra var olan sistemden veri kaybı olmadan, iş kaybı olmadan nasıl yeni sisteme geçilebilir?
+
+129
+00:24:15,539 --> 00:24:18,200
+Bunu görelim.
+
+130
+00:24:19,519 --> 00:24:21,980
+Burada doğrudan geçiş.
+
+131
+00:24:23,188 --> 00:24:36,208
+Belirlenen bir tarihten itibaren eski sistem tamamen bırakılarak yeni sistem kullanılmaya başlanır. Bu tabii ki oldukça riskli bir yöntem.
+
+132
+00:24:36,692 --> 00:25:04,652
+Burada ön hazırlıkların iyi yapılması gerekir. Özellikle eğitimin iyi verilmiş olması gerekir. Ve veri tabanı dönüşümünün çok iyi hazırlanmış olması gerekir. Veri tabanı dönüşümünden kastımız nedir? Bizim yeni sistemimizde yeni bir veri tabanı tasarlanmıştır kullanmak üzere. Ama eski yürüyen sistemimizde saklanmış olan veri var.
+
+133
+00:25:06,644 --> 00:25:34,644
+Güncel uygulamalarda bulunan veri var. O verileri de kaybetmeden, o veriyi kaybetmeden yeni sisteme aktarmamız gerekiyor. İşte buna veri tabanı dönüşümü diyoruz. Hem eğitim verilmişse hem veri tabanı eski bilgilerde yeni kullanılacak, yeni sistemde kullanılacak şekilde dönüştürülmüşse doğrudan geçiş biraz daha.
+
+134
+00:25:34,644 --> 00:25:45,944
+Daha rahat olacaktır doğrudan geçiş sırasında bu hazırlıkların tam olarak yapılmış olması gerekiyor.
+
+135
+00:25:46,044 --> 00:25:47,464
+Şimdi buna şekil olarak bakalım.
+
+136
+00:25:50,612 --> 00:25:59,952
+Çizerek T anında eski sistem kullanılırken o T anında yeni sisteme geçiş yapılacak.
+
+137
+00:25:59,952 --> 00:26:18,612
+Tabii ki bu patlıya olmayacak. Az önce söylediğim gibi yeni sistemin kullanacağı veri tabanı eski sistemin kullandığı veri tabanından alınan bilgilerle dönüşüm yapılarak hazır hale getirilir.
+
+138
+00:26:18,612 --> 00:26:31,212
+Aynı şekilde bütün kullanıcılar da yeni sistem konusunda eğitim almış olacaklar ve yeni sisteme geçiş yapılacak.
+
+139
+00:26:31,712 --> 00:26:42,812
+Tabii ki burada hazırlıklar iyi yapılmışsa eski sistemi bırakıp yeni sistemi almakta o zaman işler daha kolay.
+
+140
+00:26:43,248 --> 00:26:56,907
+Yani bir kullanıcılar eğitimliyse, biliyorlarsa yeni sistemin nasıl kullanılacağını, eski sistemle ne farklıların olduğunu daha kolay adapte olacaklar.
+
+141
+00:26:57,567 --> 00:27:08,008
+Bir de veri tabanı, uygulamalar hazırsa o zaman yine geçiş daha kolay olacaktır.
+
+142
+00:27:08,531 --> 00:27:31,451
+Bundan başka geçiş tipleri neler var? Paralel geçiş. Şimdi bu doğrudan geçişte eğer hazırlıklar iyi yapılmışsa üzmeyecek bir şey. İki tarafta da veri kullanmayacağız. Veri tabanımız bir tane olacak. Eskisinden beslenip hazırlanmış olacak.
+
+143
+00:27:31,968 --> 00:27:50,768
+Bu durumda böyle bir geçiş daha temiz olacaktır, doğrudan geçiş. Paralel geçişte ise eski sistemle yeni sistemin bir süre beraber çalışmasını anlatmak istiyoruz burada.
+
+144
+00:27:55,155 --> 00:28:01,816
+Veri bulunacak ve veri tutarsızlığı olmamasına dikkat edilecek.
+
+145
+00:28:02,675 --> 00:28:09,695
+Kullanıcıların gerçekleştirdikleri işlemi hem yeni hem de eski sistemde yapmaları gerekecek.
+
+146
+00:28:11,635 --> 00:28:15,115
+Bu bazen sıkıntılı olabilir.
+
+147
+00:28:15,115 --> 00:28:20,115
+Eğer hazırlıklar iyi yapılmışsa ve uygulamada uygunsa,
+
+148
+00:28:22,612 --> 00:28:32,272
+Doğrudan geçiş daha doğru ama tabii burada da geriye dönüşler olduğu zaman çok sıkıntılı olacaktır.
+
+149
+00:28:36,372 --> 00:28:49,632
+Şimdi paralel geçişe bakalım. Paralel geçişte burada gördüğümüz gibi eski sistem kullanılırken yeni sistem de devreye alınıyor. Bu da kullanılıyor.
+
+150
+00:28:49,632 --> 00:28:59,632
+Tabii burada da bir takım zorluklar var. Her iki tarafa da bilgi işlenmesi gerekiyor. Bir süre. Bu da...
+
+151
+00:28:59,728 --> 00:29:10,248
+Zahmetli bir iş. Ayrıca yine burada erişim açısından güçlükler olabilir.
+
+152
+00:29:12,028 --> 00:29:19,388
+Yani eski sistemle yeni sistem teorik olarak baktığınızda çok güzel görünüyor ama zorlukları var tabii.
+
+153
+00:29:20,208 --> 00:29:23,368
+Bir süre ikisi birlikte kullanılacaklar.
+
+154
+00:29:30,516 --> 00:29:44,396
+Paralel geçiş son yıllarda daha fazla kullanılmaya başlandı. Paralel nasıl oluyor şeklinde baktığınızda cevabı burada.
+
+155
+00:29:44,396 --> 00:29:47,156
+Dereceli geçiş.
+
+156
+00:30:03,028 --> 00:30:10,388
+Dereceli geçişe baktığımızda yeni sistem belli işlevleriyle kullanılmaya başlanır.
+
+157
+00:30:10,948 --> 00:30:19,128
+Zaman içinde yeni sistemin diğer işlevleri de aşamalı olarak aktarılarak sistem bütünleştirilir.
+
+158
+00:30:19,128 --> 00:30:29,128
+Yani yeni sistemi bütün modülleri, bütün işlevleriyle değil parça parça devreye sokuyoruz.
+
+159
+00:30:32,084 --> 00:30:49,084
+Diğer işlevleri aşamalı olarak aktarır ve yeni sistem tüm fonksiyonlarıyla beraber kullanılmaya başlandığı andan itibaren eski sistem kullanımdan kaldırılır.
+
+160
+00:30:49,983 --> 00:30:59,403
+Yani yeni sistem hazır olana kadar eski sistemin de kullanımda tutulması.
+
+161
+00:31:02,195 --> 00:31:11,296
+Ve buna da paralel geçiş diyoruz. Belli bir süre her ikisi de kullanılıyor şeklinde.
+
+162
+00:31:22,644 --> 00:31:26,864
+Bakıyorum. Evet, dereceli geçişi.
+
+163
+00:31:32,115 --> 00:31:32,915
+görelim.
+
+164
+00:31:39,988 --> 00:31:46,988
+Evet, derece geçiş. Yeni sistem belli işlevleriyle kullanılmaya başlanır. Zaman içinde...
+
+165
+00:31:50,291 --> 00:32:03,491
+Evet, burada zaman içinde yeni sistemin diğer işlevleri de aşamalı olarak kaydedilecektir.
+
+166
+00:32:03,592 --> 00:32:15,352
+İşte eski sistem şurada, eski sistem yavaş yavaş kullanılmaya bırakılıyor ve yeni sistem bunun yerini alacak şekilde kullanılıyor.
+
+167
+00:32:17,619 --> 00:32:19,839
+Bir de prototip geçiş var.
+
+168
+00:32:21,419 --> 00:32:30,559
+Bu eski sisteminin bazı işlevleri yeni sisteme geçtiği zaman bu işlevler eski sistemden kaldırılıyor mu yoksa orada çalışmaya devam ediyor mu?
+
+169
+00:32:32,399 --> 00:32:34,359
+Kaldırılıyor dereceli geçişte.
+
+170
+00:32:35,299 --> 00:32:36,279
+Tamam, teşekkür ederim.
+
+171
+00:32:39,951 --> 00:33:02,511
+Dereceli geçişteki kademeleri iyi seçmek gerekiyor. Birbiriyle uyumunun sağlanması gerekiyor. Şu dereceli geçiş, yeni sistem belli işlevleriyle kullanılmaya başlanıyor. Zaman içinde yeni sistemin diğer işlevleri de aşamalı olarak aktarılıyor.
+
+172
+00:33:04,528 --> 00:33:14,928
+Yeni sistem tüm fonksiyonlarıyla beraber kullanılınca o andan itibaren eski sistem kullanımdan kaldırılıyor.
+
+173
+00:33:16,127 --> 00:33:20,847
+Bazen eski sistemde kalabilirdi.
+
+174
+00:33:32,564 --> 00:33:35,384
+Şurada eski sistem, burada yeni sistem var.
+
+175
+00:33:36,784 --> 00:33:49,564
+Ve işte şu noktada giderek eski sisteme doğru küçük küçük, ben burada çizememişim aslında bu tırtıkla, küçük küçük tırtıklar var.
+
+176
+00:33:51,144 --> 00:33:55,044
+Şu tarafta eski sistemin kaldırıldığını gösteren.
+
+177
+00:34:00,403 --> 00:34:12,623
+Evet, bir de prototip geçiş var. Prototip geçiş, şimdi bundan farkı ne dereceli geçişten? Prototip geçiş, bir prototip alan seçiliyor.
+
+178
+00:34:22,036 --> 00:34:25,675
+Grup tarafından kullanılıyor bankacılık uygulamaları.
+
+179
+00:34:27,175 --> 00:34:30,036
+Ama mesela aynı bankanın...
+
+180
+00:34:31,123 --> 00:34:59,063
+Geçiş işlemi nerede yapılacak? Prototip nerede seçilecek? Bir uygulama grubundan dinlediğim şekilde o bankanın işte Balkan ülkelerinde küçük bir yerde de şubesi varsa veya orada da bir birimi varsa önce orada prototip olarak test ediliyor sonra buraya yükleniyor gibi bir
+
+181
+00:34:59,123 --> 00:35:17,463
+Bir şey, prototip geçiş yolu görülebilir. Prototip geçişin şekli şu, eski sistemle prototip aynı anda kullanılıyor ve prototip üzerinde denemeler yapıldıktan sonra yeni sisteme geçiliyor.
+
+182
+00:35:19,539 --> 00:35:26,859
+Baktığımızda prototip geçiş dereceli geçişe doğru göre daha organize bir yapısı var.
+
+183
+00:35:26,859 --> 00:35:44,359
+Yani belli modülleri prototipini oluşturup seçerek yazılım geliştiricileri dağıtarak hazırlıyor.
+
+184
+00:35:44,831 --> 00:35:57,831
+ve sistemin bir prototipi oluşturulup küçük bir bölüm için kullanıma hazır hale getiriliyor.
+
+185
+00:36:04,179 --> 00:36:05,920
+Buraya kadar sorunuz var mı?
+
+186
+00:36:13,492 --> 00:36:15,152
+Evet, sorusu olan var mı?
+
+187
+00:36:19,188 --> 00:36:42,608
+Prototip geçişte, dereceli geçiştekinden farklı olarak sistemin bir prototipi oluşturulur. Yani bütününün bir prototipi oluşturulur. Bu prototipin çalışmasından elde edilen sonuçlara göre sistem üzerinde gerekli düzeltmeler yapılır.
+
+188
+00:36:52,467 --> 00:36:57,927
+Prototip geçişte eski sistem bir süre prototiple birlikte çalışıyor.
+
+189
+00:36:58,867 --> 00:37:04,307
+İşte bu prototipin yeri kullanıcılarını doğru seçmek önemli.
+
+190
+00:37:11,284 --> 00:37:14,744
+Daha sonra artık yeni sistem kullanıma geçilmiş oluyor.
+
+191
+00:37:28,820 --> 00:37:37,739
+Dağıtılmış geçişte, kurumun her bölümünde aşamalı olarak tek tek geçiş söz konusudur.
+
+192
+00:37:38,340 --> 00:37:46,560
+Sistemin belli periyotlarla genel olarak değerlendirilmesi ve bakımının yapılması gerekiyor.
+
+193
+00:37:50,516 --> 00:37:52,516
+dağıtılmış geçişte.
+
+194
+00:37:56,724 --> 00:38:05,784
+Kurumdaki bölümler tek tek yeni sisteme dahil edilir.
+
+195
+00:38:06,244 --> 00:38:21,804
+Buna da baktığımızda dağıtılmış geçişte eski sistemin belli gruplar için veya belli departmanlar için tek tek yeni sisteme geçişinin sağlanması.
+
+196
+00:38:29,588 --> 00:38:33,888
+Evet, sorunuz var mı bu geçiş tipleri için?
+
+197
+00:38:36,448 --> 00:38:46,428
+Geçiş gerçekleştirildi, eğitim verildi, seçildi hangi yolla yapılacağı geçişin ve geçiş işlemleri yapıldı diyelim ki.
+
+198
+00:38:46,428 --> 00:38:51,807
+Bundan sonra artık kullanıma alınacak uygulama.
+
+199
+00:38:58,164 --> 00:39:03,204
+Tekrar arada bakım işlemi yapılacak.
+
+200
+00:39:03,204 --> 00:39:08,624
+Bakım, şöyle yazayım, chatte yazacağım şu anda.
+
+201
+00:39:25,940 --> 00:39:28,199
+Baintainance, bakım aşaması.
+
+202
+00:39:28,199 --> 00:39:32,199
+Nasıl ki şeyde...
+
+203
+00:39:33,715 --> 00:39:52,175
+Donanımda bir bozukluk olduğunda, arıza olduğunda bakım yapılıyorsa, yazılımda da herhangi bir durumda bakım yapılabilir. Hangi durumlarda bakım yapılır? Diyelim ki iki sene kullanıldı, bir bakım sürecinden geçecek.
+
+204
+00:39:52,175 --> 00:40:00,000
+Eğer yazılımın geliştirildiği platform veya şeyde...
+
+205
+00:40:00,052 --> 00:40:02,391
+platform ya da
+
+206
+00:40:03,092 --> 00:40:26,632
+Veri tabanı ya da geliştirme ortamında bir iyileştirme olmuşsa, yeni versiyonları çıkmışsa bunlarla daha iyileştirilebilir. Bunun için bakım yapılır. Yeni olanaklardan faydalanmak, performansı arttırmak için ya da hata çıkar, hatayı düzeltmek için bakım yapılır.
+
+207
+00:40:31,092 --> 00:40:53,311
+kullanıcıların işleyiş şekillerinde, sistemlerinde değişiklik olmuştur. Bu değişikliğe sizin yazılımınızı da adapte edilmesini isteyebilirler. Bu yüzden software maintenance yazılım bakımı gerçekleştirilebilir.
+
+208
+00:40:59,188 --> 00:41:22,068
+Bu da kullanımı aldıktan sonra, bir süre sonra, işte 6 ay sonra mesela hata çıkabilir ya da bir sene sonra bir iyileştirme çalışması yapılabilir ya da yine bir süre sonra sistemde değişiklikler olur, ona adapte edilmesi istenir. Böylece değişiklikler yapılır.
+
+209
+00:41:26,099 --> 00:41:43,500
+Eski sistemden yeni sisteme geçiş, gerekli olan eğitimler, geçiş tipleri ve gerçekleştirilen kullanım süresinden sonra bakım çalışması üzerinde durduk.
+
+210
+00:41:43,559 --> 00:41:45,619
+Buraya kadar sorusu olan var mı?
+
+211
+00:41:50,835 --> 00:41:52,075
+Sorunuz var mı?
+
+212
+00:42:00,211 --> 00:42:10,672
+O zaman bir ara verelim. Ben size bahsettiğim uygulamayı göstereceğim.
+
+213
+00:42:22,387 --> 00:42:24,247
+Şimdi bir 10 dakika
+
+214
+00:42:28,916 --> 00:42:29,876
+Ara veriyoruz.
+
+215
+00:53:32,083 --> 00:53:34,204
+Evet, herkes aradan geri döndü mü?
+
+216
+00:53:39,539 --> 00:54:04,579
+Şimdi sizin için seçtiğimiz bir spor salonu sistemi uygulaması var. Önce bu uygulamanın yapısını, problemi anlayalım. Hizmet vermekte olan bir spor salonu var. Bir bilgi yönetim sistemi kurulmasını istemişler. Var olan sistemde müşteriler spor salonuna giderek bilgi almakta, kayıt olmakta.
+
+217
+00:54:04,976 --> 00:54:14,076
+Kayıtlar yönetim tarafından saklanmakta. Spor salonu online olarak kişilerin üye olmasını,
+
+218
+00:54:14,480 --> 00:54:25,799
+Yani sistem değişecek. Şu anda yerel kayıt sistemi var. Spor salonuna giderek kayıt oluyorlar.
+
+219
+00:54:25,799 --> 00:54:42,480
+Ama bunu online kişilerin üye olduğu derslere eğitmenlerin görüntüleyebilmesini, istedikleri sınıflara kayıt olabilmesini sağlayan işte farklı spor çeşitlerinde ders içerisinde.
+
+220
+00:54:42,480 --> 00:55:10,459
+Bunların eğitimciler de bilgilerini güncelleyebiliyorlar. Eğitimcisi oldukları sınıfların durumlarını görebiliyorlar. Her ay sabit bir üyelik icreti alınıyor ve üyeler buradan faydalanabiliyorlar. Özel olarak farklı derslere katılmak istiyorlarsa, Plates Dance gibi ekstra ücret ödüyorlar.
+
+221
+00:55:10,480 --> 00:55:14,879
+Özel ders talebinde bulunabiliyorlar, istek yapabiliyorlar.
+
+222
+00:55:16,159 --> 00:55:17,480
+Şimdi bu problemde...
+
+223
+00:55:18,003 --> 00:55:32,884
+Sistemde, şimdi bu problemi tanıdık. Problemi biraz daha ayrıntılandırırsak, sistem analizi öncesinde, daha ayrıntılı inceleme aşamasında, spor salonu yönetimi var.
+
+224
+00:55:32,884 --> 00:55:41,423
+Kişilerin yaptığı üyelik başvurusunu onaylıyor, derslere ait sınıflar oluşturuyor, tarih saat bilgileriyle eğitmenleri belirliyor.
+
+225
+00:55:41,983 --> 00:55:45,563
+Gerekirse bu bilgilerde güncelleme yapabiliyor. Üyeler ne yapıyor?
+
+226
+00:55:46,003 --> 00:56:02,304
+İster bilgilerini girerek üyelik işlemlerini gerçekleştiriyor. Sınıfların takvim, eğitmen gibi bilgilerini görüntülüyor. Kontenjana olan sınıflara kayıt olabiliyor. İsterlerse eğitmenlerden özel ders talep edebiliyorlar.
+
+227
+00:56:02,867 --> 00:56:22,427
+Eğitmenler sistemdeki bilgilerini güncelleyebilirler. Ders verdikleri sınıflara ait katılımcı listelerini görüntüleyebilirler. Yani bizim az önceki paragraflardaki bilgilerimizi kişilere göre neler gerçekleştiriyorlar, hangi işlemleri yapıyorlar bunu görmüş olduk.
+
+228
+00:56:22,427 --> 00:56:26,028
+Şimdi sistem analizi ve tasarımında hangi adımlar vardı?
+
+229
+00:56:27,411 --> 00:56:44,311
+Olabilirlik araştırması, teknik olarak, ekonomik olarak, zaman olarak böyle bir sistem geliştirilebilir mi? Sonra gereksinim analizi, sistem analizi diyelim. Müşteriyle yapılacak görüşmeler sonucunda modelleme yapıp tasarım aşamasının temelini oluşturuyor.
+
+230
+00:56:44,311 --> 00:56:51,351
+Sistem tasarımında ise belirlenen gereksinimler doğrultusunda yapısal olarak net bir şekilde.
+
+231
+00:56:53,300 --> 00:57:06,619
+Gerçekleştirme aşamasına hazır hale getiriyoruz problemleri. Mesela modülleri belirliyoruz, iş akışını belirliyoruz gibi.
+
+232
+00:57:12,820 --> 00:57:34,599
+Ekonomik fizibilite, zaman fizibilitesi gibi kavramlar var. Sizin problemlerini, projelerinizi de gerçekleştireceğiniz. Bu adımları geçiyorum. Öncelikle bu analiz ve tasarım örneği. Daha önce biz zaman fizibilitesi örneği yapmıştık.
+
+233
+00:57:36,500 --> 00:57:40,579
+Elçin Hanım'la beraber bakmıştınız o örneğe.
+
+234
+00:57:41,059 --> 00:57:49,400
+Şimdi gereksinim analizi, ön inceleme ve fizibilite adımından elde edilen bilgilere göre raporlar incelenir.
+
+235
+00:57:49,807 --> 00:58:14,507
+Sistemde var olan kaynaklar gözden geçirilir. Yapılan detaylı görüşmeler sonucunda sistem ihtiyaçları belirlenerek modelleme yapılır. Yani bu analiz aşaması, tasarım aşamasının temelini oluşturmak hedefindedir. Bu aşamada veri toplama yöntemi olarak açık uçlu ve kapalı uçlu sorulardan oluşan anketler uygulanabilir.
+
+236
+00:58:18,291 --> 00:58:33,991
+Bir bakalım, mesela var olan sistemde sorun yaşıyor musunuz? Evet, hayır. Online sisteme geçmek sorunları çözecek mi? Online sistemde ihtiyaç duyduğunuz modülleri işaretleyin. Hangi modüller var?
+
+237
+00:58:36,132 --> 00:58:40,107
+Rakipleriniz tarafından kullanıldığını gördüğünüz sistemde...
+
+238
+00:58:40,371 --> 00:58:45,771
+sistemlerde, yani başka uygulamalarda neler var, hangi özellikler var?
+
+239
+00:58:46,152 --> 00:58:59,271
+Şimdi burada baktığınızda bu ankette hangisi açık uçlu, hangisi kapalı uçlu?
+
+240
+00:59:01,351 --> 00:59:04,811
+[öğrenci], [öğrenci] duyuyor mu?
+
+241
+00:59:08,371 --> 00:59:10,311
+[öğrenci]
+
+242
+00:59:14,420 --> 00:59:15,780
+[öğrenci] menzil.
+
+243
+00:59:17,400 --> 00:59:18,719
+Buradayım hocam.
+
+244
+00:59:20,099 --> 00:59:29,639
+Evet. [öğrenci] bu anket örneğinde hangi sorular açık uçlu, hangi sorular kapalı uçlu?
+
+245
+00:59:29,820 --> 00:59:34,579
+Hocam dördüncü soru açık uçlu kişi kendisi yorum yapabiliyor bu soruya.
+
+246
+00:59:35,300 --> 00:59:35,519
+Evet.
+
+247
+00:59:35,519 --> 00:59:37,320
+Bir, üç ve kapalı uçlu.
+
+248
+00:59:38,643 --> 00:59:42,303
+Cevaplardan herhangi birini seçme hakkı var kişinin.
+
+249
+00:59:43,423 --> 00:59:51,643
+Evet, teşekkürler. Böylece [öğrenci] dördüncü artıyı almış oldu. Teşekkür ederim.
+
+250
+00:59:52,003 --> 00:59:52,943
+Teşekkür ederim, UML.
+
+251
+00:59:55,943 --> 01:00:05,623
+Evet, bundan sonra veri akış diyagramına geliyoruz. Analizi yaptık.
+
+252
+01:00:06,068 --> 01:00:09,068
+Yani veri toplama işini yaptık.
+
+253
+01:00:12,728 --> 01:00:15,288
+Sistem hakkında bilgimiz var.
+
+254
+01:00:16,648 --> 01:00:22,387
+Elde edilen bilgiler doğrultusunda sistemdeki verilerin nasıl taşındığını modelliyoruz.
+
+255
+01:00:23,208 --> 01:00:25,028
+Spor salonu sistemi için.
+
+256
+01:00:25,556 --> 01:00:31,715
+Veri akış diyagramlarında önce bir taslak diyagram gösteriyoruz.
+
+257
+01:00:31,715 --> 01:00:34,715
+Bu taslak diyagramda...
+
+258
+01:00:43,027 --> 01:01:01,427
+Spor salonu sistemi, Tasar-veri akış diyagramını hatırlayın. Tek bir sistem gösteriyoruz. Bu sistemle ilişkide olan varlıklar, bu sistemle ilişkide olan üye, eğitmen, yönetim var.
+
+259
+01:01:02,147 --> 01:01:04,467
+Üye ne yapıyor? Spor salonuna üye oluyor.
+
+260
+01:01:05,172 --> 01:01:13,772
+Sınıf bilgilerini alıyor, bakıyor, istediği sınıfa kaydoluyor, istediği sınıfla ilgili ödeme yapıyor.
+
+261
+01:01:13,772 --> 01:01:31,372
+Spor salonu sisteminde katılımcıları görüyor, bilgi güncelleme yapıyor, eğitmen, yönetim,
+
+262
+01:01:32,244 --> 01:01:34,824
+Sınıf oluşturuyor ve raporlama yapıyor.
+
+263
+01:01:38,771 --> 01:01:48,771
+Veri akış diyagramı, Taslak veri akış diyagramında, evet az önce açıkladıklarımı burada da yazıyla görebiliyorsunuz.
+
+264
+01:01:49,692 --> 01:01:58,771
+Üyeler sisteme bilgilerini girerek üye oluyor, sınıf bilgilerini görüntülüyorlar, derslerin saatlerini filan gösteriyorlar.
+
+265
+01:02:04,851 --> 01:02:10,471
+Yönetim kullanıcıların üyelik taleplerini topluyor, onaylıyor.
+
+266
+01:02:11,671 --> 01:02:14,971
+Eğitmen sisteme bilgileri girip güncelliyor.
+
+267
+01:02:18,867 --> 01:02:24,327
+Şimdi bunu biraz daha açalım, birinci düzey haline getirelim.
+
+268
+01:02:25,447 --> 01:02:29,028
+Alt işlemleri de görelim, yani bütün sistemi.
+
+269
+01:02:29,327 --> 01:02:34,967
+Şurada bakarsak, konteks taslak diyagramda tek sistem görüyoruz.
+
+270
+01:02:42,268 --> 01:02:45,967
+Veri akış diyagramının birinci seviyesinde.
+
+271
+01:02:46,547 --> 01:03:03,007
+1, 2, 3, 4, 5, 6, 7 tane alt işlem var. Üyelerin üye olması.
+
+272
+01:03:08,148 --> 01:03:28,327
+Sınıf oluşturması yönetimin, üyenin belli bir üyelik ücretini ödemesi, ödeme yapması, sınıf bilgilerinin görüntülenmesi, üyenin sınıfa kaydolması,
+
+273
+01:03:36,371 --> 01:03:51,031
+Eğitmenin sınıflara kaydolmuş katılımcıları görüntülemesi, bilgileri güncellemesi, eğitmen dosyasında eğitmenin kendi bilgilerini güncellemesi.
+
+274
+01:03:51,531 --> 01:03:52,971
+Bütün bunlar yapılan işlemler.
+
+275
+01:03:52,971 --> 01:03:55,871
+Buradaki sembolleri de bir daha bakalım.
+
+276
+01:04:01,876 --> 01:04:10,876
+ve yönetim. Bunlar sistemle ilişkide olan varlıklar.
+
+277
+01:04:14,876 --> 01:04:24,876
+1-0, 2-0, 3-0 gibi üye olma, sınıf oluşturma, ödeme yapma. Bunlar da işlemler.
+
+278
+01:04:27,572 --> 01:04:40,572
+Bu varlıklarla işlemler arasında da geçiş verisi nelerdir? Geçiş verisinin görünümü bunları görmüş oluyoruz.
+
+279
+01:04:54,228 --> 01:05:11,768
+Birinci düzeydeki herhangi bir şeyde, işlemde, alt işlemler ve bununla ilişkili varlıkların gösterilmesi.
+
+280
+01:05:13,588 --> 01:05:21,288
+Burada veri saklama ortamlarını da D1, D2, D3 gibi görüyoruz.
+
+281
+01:05:22,003 --> 01:05:24,324
+gösterim şekli olarak.
+
+282
+01:05:25,164 --> 01:05:27,684
+Yine kuralları hatırlayalım.
+
+283
+01:05:28,324 --> 01:05:31,764
+Varlıktan varlığa geçiş olmaz doğrudan.
+
+284
+01:05:31,963 --> 01:05:33,543
+Arada bir işlem olması lazım.
+
+285
+01:05:34,423 --> 01:05:36,304
+İşlemden işleme geçiş olabilir.
+
+286
+01:05:37,144 --> 01:05:42,503
+Varlıktan dosyaya ya da veri saklama ortamına geçiş olmaz.
+
+287
+01:05:42,704 --> 01:05:44,324
+Arada bir işlem olması lazım.
+
+288
+01:05:47,315 --> 01:05:57,655
+Yine varlıktan veri saklama ortamına geçiş olmaz. Arada bir işlem olması lazım. Bu kurallara uyarak hareket etmek gerekiyor.
+
+289
+01:05:57,655 --> 01:06:12,655
+İkinci düzeye baktığımızda birinci seviye diagramda yer alan işlemlerin alt işlemlerini içerecek şekilde gösterilen yapı.
+
+290
+01:06:15,891 --> 01:06:40,471
+Ücret hesaplanması, üyenin ücret belirlenmesi, ödemenin alınması. Önce ücret hesaplanıyor, ödeme alınıyor, kalan borç hesaplanıyor. Böyle bir alt işlem. Neyle ilişkili? Bu 3.0 üyeyle ilişkili ve veri saklama ortamı olarak da ücretle ilişkili.
+
+291
+01:07:05,907 --> 01:07:07,268
+Veri sözlüğü
+
+292
+01:07:15,315 --> 01:07:20,435
+Veri sözlüğünde herhangi bir veri akışı nasıl gerçekleşiyor?
+
+293
+01:07:21,619 --> 01:07:43,380
+Bunun açıklandığı yapı, bütün elemanların mesela veri akışı, veri saklama ortamı, hepsi ismi ne, tanımı ne, miktar ne, ne kadar buraya giriş yapılıyor, bunların tanımlanmasına veri sözlüğü diyoruz.
+
+294
+01:07:43,380 --> 01:07:49,380
+Yani veri akış diyagramı dışında, veri sözlüğünde de veri akış diyagramında...
+
+295
+01:07:49,619 --> 01:07:53,500
+Geçen her bir eleman bu şekilde tanımlanmış oluyor.
+
+296
+01:07:53,639 --> 01:08:01,019
+Bir de biz analiz sırasında, tasarımda bunu daha genişletebiliyoruz.
+
+297
+01:08:01,440 --> 01:08:07,639
+Analiz sırasında daha veri nesneleri arasındaki ilişkileri gösteriyoruz.
+
+298
+01:08:07,639 --> 01:08:17,000
+Entity relationship diagram, veri tabanı analizi.
+
+299
+01:08:18,163 --> 01:08:34,644
+Varlıklar dikdörtgenlerle gösteriliyor. Varlıkların sahip olduğu nitelikler elipsle gösteriliyor. Varlıklar arası ilişkiler eşkenar dörtgenle gösteriliyor. Bunun belirlenmesi gerekiyor.
+
+300
+01:08:45,779 --> 01:09:01,819
+Diğer kullandığımız kitapta bu eşkenal dörtgeni araya çizmeden varlıklar arasındaki ilişkileri ilişkinin zorunlu ve seçimlik oluşuna göre de göstermiştik.
+
+301
+01:09:01,819 --> 01:09:08,599
+Çenin diagramı, notasyonunu kullandığımızda da daha farklı gösteririz demiştim.
+
+302
+01:09:09,239 --> 01:09:12,399
+İşte o zaman sözlü olarak anlattığım örneği de bu.
+
+303
+01:09:14,484 --> 01:09:38,484
+Bu uygulamanın ER diyagramı üyeler kaydolur sınıflara, sınıflara eğitmenler ders verir, yönetim sınıfları oluşturur, muhasebe raporlar, üyeler muhasebeye ödeme yaparlar.
+
+304
+01:09:42,323 --> 01:09:54,183
+Zaman da yazabiliriz, sınıf oluşturur, ödeme yapar, kaydolur, ders verir gibi yazarsak belki daha doğru olur.
+
+305
+01:09:54,183 --> 01:10:04,183
+İşte biz analiz aşaması dediğimizde veri tabanı analizi ve
+
+306
+01:10:06,836 --> 01:10:16,396
+İş analizini gösterdiğimizde analiz aşamasında sistem analizi yapmış oluyoruz bu uygulama için.
+
+307
+01:10:16,876 --> 01:10:19,816
+Hangi yaklaşımla? Yapısal yaklaşımla.
+
+308
+01:10:21,043 --> 01:10:37,884
+Yapısal yaklaşımla. Şimdi yapısal yaklaşımı seçenler bunları analiz sırasında yapmak zorunda. Şimdi nesneye yönelik yaklaşımla nasıl gerçekleştireceğiz?
+
+309
+01:10:48,243 --> 01:10:51,623
+Use case kullanım senaryoları çizilir.
+
+310
+01:10:52,144 --> 01:10:54,863
+Sistemin aktörleri üye eğitmen yönetim.
+
+311
+01:10:55,543 --> 01:10:57,963
+Senaryolar elips şeklinde gösterilir.
+
+312
+01:10:58,623 --> 01:11:06,683
+Üyenin sınıfa kaydolma işlemi, sınıf bilgisini görüntüleme işlemini de içermekte olduğunda include kullanılmıştır.
+
+313
+01:11:09,076 --> 01:11:16,036
+Sınıfa kaydolurken isterlerse özel ders talebi de alabilirler. Extent ile genişletilir bu da.
+
+314
+01:11:17,136 --> 01:11:25,536
+Spor salonu sistemine ait örnek, use case diyagramına bakalım. Nesneye yönelik yaklaşıma geçtik şimdi.
+
+315
+01:11:30,068 --> 01:11:57,007
+Üye, üye oluyor. Bir sınıfa kaydolma işlemi yapacak. Kaydolmak için sınıf bilgisini görüntülüyor. Include ile ilişkilendiriyoruz. Sınıfa kaydoluyor. Özel derse de kaydolabilir. Extend ile bunu genişletebiliriz. Yönetim sınıf oluşturuyor.
+
+316
+01:11:57,908 --> 01:12:07,368
+Üye ödeme yapıyor, eğitmenle yapıyor, katılımcıları görebiliyor ve kendi bilgilerini güncelleyebiliyor.
+
+317
+01:12:07,468 --> 01:12:21,248
+Burada dikkat ederseniz use case senaryolarında, kullanım senaryolarında, biz buralarda işleri kademe kademe belirlemiş oluyoruz.
+
+318
+01:12:26,292 --> 01:12:37,952
+Bu şekli çizdikten sonra bir de use case kullanım senaryosu dokumentasyonunda açıklamalar yapıyoruz.
+
+319
+01:12:38,352 --> 01:12:40,532
+Hangi senaryo? Ödeme senaryosu.
+
+320
+01:12:40,971 --> 01:12:42,932
+Burada kim birinci laktör? Üye.
+
+321
+01:12:43,471 --> 01:12:47,212
+İlgililer kim? Üyeler.
+
+322
+01:12:48,948 --> 01:12:56,108
+Doğru sisteme doğru para ödemek istiyorlar. Ön koşul kişi üye olmalı.
+
+323
+01:12:56,627 --> 01:13:03,347
+Biz sistemde online olarak erişebilmiş olmalı. Son koşul ödeme bilgileri doğrulanmış olmalı.
+
+324
+01:13:03,987 --> 01:13:14,347
+Ana akış ne? Üye ödenecek toplam tutarı görüntülüyor. Ödenecek tutar için kredi kartı bilgilerini ve fatura bilgilerini giriyor.
+
+325
+01:13:14,347 --> 01:13:24,347
+Üyenin onayıyla ödeme gerçekleşiyor. Üyenin verdiği bilgilerde yanlışlık olması durumunda sistem hata mesajı vererek bilgileri yeniden...
+
+326
+01:13:24,627 --> 01:13:28,667
+Bu da alternatif akış.
+
+327
+01:13:34,579 --> 01:13:41,520
+Sistem tasarımına geçtiğimizde yine yapısal yaklaşımla bakalım.
+
+328
+01:13:41,720 --> 01:13:50,659
+Yapısal yaklaşımda sistem mimarisini ortaya koymak amacıyla programdaki yapısal öğeler arasındaki ilişkiler, yapı diagramları,
+
+329
+01:13:52,539 --> 01:13:58,059
+hiyerarşik olarak ortaya konur, ana modüle bağlı alt modüller belirlenir.
+
+330
+01:14:01,844 --> 01:14:03,523
+Yapı diagramına bakalım.
+
+331
+01:14:06,443 --> 01:14:25,344
+Spor salonu uygulaması, alt modüller, üye olma, üye girişi yapma, sınıf oluşturma, üye girişi yapma, sınıf bilgilerinin görüntülenmesi, daha sonra sınıf seçimi, sınıfa kaydolma, sınıfa kaydol, özel ders al, grup dersine katıl.
+
+332
+01:14:25,344 --> 01:14:27,003
+İki farklı şey.
+
+333
+01:14:29,524 --> 01:14:40,524
+İki yerde üyelik onayı ve doğrulamada ucu, içi dolu olan,
+
+334
+01:14:40,916 --> 01:14:54,195
+Bu kontrol akışı, diğer içi boş olan oklarda, üyelik bilgileri gibi, sınıf seçimi gibi, sınıf bilgileri gibi burada da veri girişi yapılıyor.
+
+335
+01:14:54,195 --> 01:15:07,976
+Peki şu neydi? Şu da IF, yani sınıfa kayda ol modülünün içinde eğer istiyorsa grup dersine katılacak.
+
+336
+01:15:08,351 --> 01:15:31,172
+Ama eğer ek özel ders istiyorsa, özel derse katılacak. Bu sorguyu tanımlamak için. Burada mesela döngü yok. Birçok kişi için bunu tekrarla şeklinde. O zaman böyle bir döngü, yarım daire ok olacaktı.
+
+337
+01:15:31,923 --> 01:15:40,503
+Şimdi sistem tasarımı yapısal yaklaşımla olduğunda structure diagram, yapı diyagramı çizdik.
+
+338
+01:15:43,699 --> 01:15:59,619
+Sistem tasarımında nesne tavanlı yaklaşımın benimsendiği proje için sistem tasarımı adımında çizilen sınıf diagramlarıyla sistemdeki sınıflar ve sahip oldukları özelliklerle metotları detaylı olarak belirtiyoruz.
+
+339
+01:16:00,144 --> 01:16:14,604
+Ardışıl diyagramda, sequence diyagramlarda nesneler arası iletişim modelleniyor ve sınıf çağrılarının içerisinde gerçekleşen işlemlerin ayrıntılı olarak gösterilmesine bakılıyor.
+
+340
+01:16:24,307 --> 01:16:51,647
+Bütün sınıflarımızı ve bu sınıflar arasındaki ilişkileri gösteriyoruz. Üye hangi bilgiler tutulacak? Üyelik işlemleri için hangi metotlar çalışacak? Üye bir sınıfa kaydolacak.
+
+341
+01:16:54,420 --> 01:17:01,279
+Hangi ders, hangi eğitmen sınıf bilgisi alınacak?
+
+342
+01:17:02,059 --> 01:17:10,639
+Spor salonu yönetimi ve eğitmen de bu sınıfları değerlendirecek, kontrol edecek.
+
+343
+01:17:11,123 --> 01:17:21,744
+Ve dersle ilişkili bilgiler, aerobik, dans, plates gibi. Onlar da şurada bir genelleme yapılacak.
+
+344
+01:17:21,744 --> 01:17:34,443
+Ders özellikleri, saat ücreti ismi, saat ücretini getir ama bu aerobik ise...
+
+345
+01:17:34,931 --> 01:17:44,951
+Dans ise, plates ise hepsi genelleme yapılıyor ders olarak. Yani alt sınıflar.
+
+346
+01:17:51,475 --> 01:17:54,055
+Bir de sequence diagramı.
+
+347
+01:17:54,775 --> 01:18:04,775
+Sequence diagramına baktığımızda, artificial diagramda, bunun özelliği nedir sequence diagramın?
+
+348
+01:18:10,163 --> 01:18:11,144
+Şurada bakalım.
+
+349
+01:18:13,583 --> 01:18:16,503
+Sequence diagramın özelliği nelerdir?
+
+350
+01:18:16,503 --> 01:18:21,283
+Yani etkileşim diagramıdır.
+
+351
+01:18:21,823 --> 01:18:24,923
+Sınıflar arasındaki etkileşimleri gösterir.
+
+352
+01:18:26,083 --> 01:18:28,823
+Sistemin elemanları arasında.
+
+353
+01:18:29,064 --> 01:18:32,144
+Ama özelliği nedir burada baktığınızda?
+
+354
+01:18:33,463 --> 01:18:35,123
+[öğrenci] söyleyebilir mi?
+
+355
+01:18:36,180 --> 01:18:39,760
+Sekunz diyagramların, ardışıl diyagramların özelliğini
+
+356
+01:18:49,524 --> 01:18:52,404
+Söyleyecek olan var mı? Sequence diagramları?
+
+357
+01:18:54,744 --> 01:18:59,364
+Çok özelliği derken nasıl bir cevap beklediğinizi anlayamadım ben.
+
+358
+01:18:59,364 --> 01:19:15,084
+Yani şimdi şu şekle bakarak bu ardışıl diagram buradaki sınıfları nasıl gösteriyor?
+
+359
+01:19:15,539 --> 01:19:21,960
+Yani işlemleri nasıl gösteriyor, sınıfları nasıl gösteriyor, nasıl dizilmişler?
+
+360
+01:19:26,707 --> 01:19:31,528
+Bu şekli bakarak sınıf diyagramı özellikleri.
+
+361
+01:19:31,547 --> 01:19:40,247
+Şu şekilde diyebilirim. Ana fonksiyondan başlayarak öncelikle hangi fonksiyon, hangi işi yaptığını, hangi class'ta yaptığını gönderiyor.
+
+362
+01:19:40,768 --> 01:19:51,707
+Oradan da bir return olarak da bir onay mesajı. İşte burada mesela kabul alırsa onay mesajı alıyor veya kaydolduktan sonra belli bir ücret çıkıyor bu gönderdiği fonksiyonda.
+
+363
+01:19:54,644 --> 01:19:57,224
+Geri fonksiyona bir geri bildirim veriyor.
+
+364
+01:19:57,524 --> 01:20:02,863
+Yani sınıfları nasıl dizilmiş? Burada sınıflar nasıl dizilmiş?
+
+365
+01:20:04,283 --> 01:20:10,623
+Fonksiyondan en az detaydan en detaylıya doğru gitmiş. Ben tam olarak anlatamadım ama.
+
+366
+01:20:12,203 --> 01:20:14,644
+Yani iş sırası.
+
+367
+01:20:14,644 --> 01:20:18,963
+Yani iş sırası en temelden en detaya göre gitmiş.
+
+368
+01:20:18,963 --> 01:20:20,444
+Çalışmaya başlayacak.
+
+369
+01:20:20,916 --> 01:20:27,015
+Önce işte üye olacak, spor salonu sınıfları açacak gibi.
+
+370
+01:20:27,675 --> 01:20:37,036
+Yani şu soldan sağa doğru uygulama çalışmaya başladığında hangi sınıf devreye girecek?
+
+371
+01:20:37,755 --> 01:20:40,015
+Hocam şunu diyorum en zamanlısı.
+
+372
+01:20:40,195 --> 01:20:41,175
+O yüzden seconds.
+
+373
+01:20:41,551 --> 01:20:50,831
+Hem de çağırma sırasıyla, yani ikisini yaparak hem zonsa olarak soldan sağa doğru hangi sırayla çağırılacağını ve kimin kimi çağıracağını.
+
+374
+01:20:50,831 --> 01:21:06,971
+Evet, evet, evet. Yani iş sırasını göstererek o temelli. İş sırasında hangi sınıf işlem görüyor, işleme giriyor. O yüzden seconds sıralı.
+
+375
+01:21:07,828 --> 01:21:09,908
+Ardışıl diyagram diyoruz.
+
+376
+01:21:17,876 --> 01:21:43,876
+Evet, böylece bir şeyi göstermek istiyordum size. Hem projelerinizde, biz burada ikisini birden yaptık, hem projelerinizde hangi analiz ve tasarım için yapısal yaklaşımı kullandığınızda hangi diagramları kullanıyoruz?
+
+377
+01:21:45,395 --> 01:21:48,735
+Neye yönelik yaklaşım kullandığımızda hangi diagramları kullanıyoruz?
+
+378
+01:21:49,175 --> 01:22:04,335
+Ve bunların doğru kullanım şekilleri çok karmaşık düşünmeden, daha basit düşünerek nasıl geliştirileceği üzerinde bir çalışma yapmış olduk.
+
+379
+01:22:05,115 --> 01:22:10,796
+Bütün derslerle ilişkili bir sorunuz var mı? Bu örnek bu kadar.
+
+380
+01:22:13,811 --> 01:22:18,891
+Aklınıza gelen bir soru var mı? Bütün işlediğimiz dersleri düşündüğünüzde.
+
+381
+01:22:29,171 --> 01:22:30,331
+Sorunuz var mı?
+
+382
+01:22:31,731 --> 01:22:40,152
+Hocam, nesneye yönelik yaklaşımda bizim projede yapmamız gereken diagramlar şunlar mı?
+
+383
+01:22:40,211 --> 01:22:45,891
+UML class diagramıyla UML sequence diagram, bir de ER diyagramı mı yapacağız yani?
+
+384
+01:22:46,831 --> 01:22:53,731
+Evet, yani ER diyagramı veri tabanını gerçeklerken dönüşümü göstermek amacıyla.
+
+385
+01:22:54,323 --> 01:23:18,523
+İyi olabilir ama yapısal yaklaşımda ER diyagramını ayrıntılı olarak gösteriyorsunuz veri tabanı tasarımı için. Analiz aşamasında veri akış diyagramlarını bir paket halinde taslak birinci düzey ve ikinci düzey ayrıntılı olarak çiziyorsunuz ve tasarım aşamasında da yapı diyagramını çiziyorsunuz.
+
+386
+01:23:18,523 --> 01:23:22,323
+Ayrıca ER diyagramını da veri tabanı tasarımı için oluşturuyorsunuz.
+
+387
+01:23:22,323 --> 01:23:42,283
+konuşturuyorsunuz. Ama şeylere de bakın, proje tanımı var Avesis'te. Belki bu ders duvarına da yapıştırmış olabilirim. Ama en azından Avesis'e koymuştum. Oradan bakın.
+
+388
+01:23:43,988 --> 01:24:01,847
+Neler gerekiyorsa. Ayrıca herkes bir fizibilite çalışması yapacak. Ama fizibilite çalışmasında böyle hani çok klişe şeyler yazmayın. Kendi sisteminizi düşünerek doğru şeyler yazın.
+
+389
+01:24:05,619 --> 01:24:18,920
+Bu arada şimdi bir bana mesaj atan grup var, bir de geçen hafta söyleyen grup var. Onun dışında önümüzdeki hafta sunum yapmak isteyen var mı?
+
+390
+01:24:23,572 --> 01:24:32,832
+Önümüzdeki hafta sunum yapacakları biraz daha ilk sunumlar olduğu için biraz daha fazla puan veriyorum.
+
+391
+01:24:37,939 --> 01:24:50,779
+Evet, eğer isteyen grupları olursa önümüzdeki hafta için bugün yarın akşama kadar mesaj atabilirsiniz bana, mail atabilirsiniz.
+
+392
+01:24:52,699 --> 01:24:54,340
+Sorunuz var mı başka?
+
+393
+01:25:00,627 --> 01:25:05,247
+Evet, önümüzdeki hafta sunumlarınızı dinleyeceğim.
+
+394
+01:25:08,948 --> 01:25:12,688
+Projelerinizi de o gün yüklüyorsunuz proje raporlarınızda.
+
+395
+01:25:18,355 --> 01:25:24,935
+Bu sistemde de tanımlı hale getirdim zaten projeleri. Proje tanımına orada da bakabilirsiniz.
+
+396
+01:25:25,716 --> 01:25:27,735
+Hocam gruptan sadece bir kişi yüklüyor değil mi?
+
+397
+01:25:28,275 --> 01:25:32,216
+Bir kişi yüklüyor ama herkes anlatırken hazır oluyor.
+
+398
+01:25:33,335 --> 01:25:34,015
+Tamamdır hocam.
+
+399
+01:25:38,804 --> 01:25:43,444
+Evet, o zaman dersi bitiriyorum. Sorunuz var mı?
+
+400
+01:25:46,764 --> 01:25:48,664
+Teşekkür ederiz hocam. İyi günler.
+
+401
+01:25:49,164 --> 01:25:49,863
+İyi günler.
