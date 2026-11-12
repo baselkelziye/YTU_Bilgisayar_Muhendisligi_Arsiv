@@ -1,0 +1,3211 @@
+1
+00:00:18,068 --> 00:00:20,108
+Merhaba arkadaşlar. Sesim giriyor mu?
+
+2
+00:00:21,888 --> 00:00:22,608
+Merhaba hocam.
+
+3
+00:00:22,608 --> 00:00:22,648
+Merhaba.
+
+4
+00:00:24,708 --> 00:00:26,468
+Merhaba herkese.
+
+5
+00:00:27,588 --> 00:00:28,648
+Merhabalar hocam.
+
+6
+00:00:39,252 --> 00:00:40,140
+Çalın.
+
+7
+00:00:56,884 --> 00:01:00,363
+Word belgesi açık herhalde değil mi? Şu anda hepiniz görebiliyorsunuz.
+
+8
+00:01:00,683 --> 00:01:01,363
+Evet hocam.
+
+9
+00:01:01,863 --> 00:01:09,103
+Tamam. Şimdi önümüzdeki 3 haftayı kapsayacak olan optimizasyona giriş yapacağız bugün.
+
+10
+00:01:12,043 --> 00:01:14,503
+30 Ekim'de de ödeviniz olacakmış.
+
+11
+00:01:35,731 --> 00:01:39,091
+Şu anda sunu dosyasını görüyorsunuz herhalde değil mi arkadaşlar? Sıkıntı yok.
+
+12
+00:01:40,632 --> 00:01:41,311
+Yok hocam.
+
+13
+00:01:42,091 --> 00:01:42,371
+Tamam.
+
+14
+00:01:44,271 --> 00:01:53,371
+Peki arkadaşlar, şimdi 3 hafta içerisinde bu konuyu işleyeceğiz. O yüzden bazı kısımdan kısa kısa belki geçebilirim.
+
+15
+00:01:53,371 --> 00:01:57,251
+Hepsini çok detaylı detaylı anlatmak pek mümkün olmayabilir.
+
+16
+00:01:58,451 --> 00:02:01,227
+Ama birazdan da fark edeceğiniz gibi...
+
+17
+00:02:01,268 --> 00:02:24,548
+Buradaki bütün anlatılan konseptlerin, kavramların, algoritmaların hepsinin kodları da var. Bu kodlara da erişebileceksiniz dersin sayfasına koyacağım zaten. Bunlar MedDev kodu. Üniversitenin zaten MedDev'le anlaşması var. Sizler de indirip kurabiliyorsunuz. O konuda herhangi bir sıkıntı yaşamazsınız diye tahmin ediyorum.
+
+18
+00:02:26,355 --> 00:02:52,276
+Daha önce metlep kullanmamış olanlar, biz ne yapacağız diye çok düşünmesinler. Metlep oldukça basit bir programlama dili. Zaten bir sürü programlama dili biliyorsunuzdur. O bildiklerinize binaen metlebe anlamanız, ne yapılıyor, ne ediliyor burada diye bulmanız çok çok zor olmayacaktır. Daha önce zaten kullandıysanız, zaten aşinasınızdır.
+
+19
+00:02:53,524 --> 00:02:58,524
+Şimdi arkadaşlar, dersimize yavaş yavaş başlayalım.
+
+20
+00:02:59,944 --> 00:03:04,824
+What is optimization demişiz. İşte bir matematiksel bir şey söylüyor.
+
+21
+00:03:06,704 --> 00:03:08,923
+Hocam iç sesimi duydunuz.
+
+22
+00:03:08,923 --> 00:03:10,463
+Metapik olsun.
+
+23
+00:03:11,063 --> 00:03:12,383
+Peki.
+
+24
+00:03:13,524 --> 00:03:14,563
+Şimdi.
+
+25
+00:03:15,860 --> 00:03:26,980
+Bir matematiksel optimizasyon probleminden bahsedeceğiz. Matematiksel optimizasyon probleminin temel formatı şu şekilde, şurada gördüğünüz yapıda.
+
+26
+00:03:26,980 --> 00:03:36,020
+Bir fonksiyonumuz var elimizde, f0 diye bir fonksiyon bu. Bu f0 fonksiyonunun minimum değerini bulmaya çalışacağız.
+
+27
+00:03:36,020 --> 00:03:41,060
+Maksimum da olabilir de yani bütün minimizasyonlar maksimizasyonla bir şekilde çevre edildiği için genel olarak.
+
+28
+00:03:41,183 --> 00:04:02,343
+Ne doyorsa Mühendisliği genel olarak yazılır. Böyle bir fonksiyonumuz var. Bu fonksiyonun minimum değerini bulmaya çalışacağız. Bir de onun altında Subject To diye bir kısım var. Bunlar ise bizim kısıtlarımız. Yani biz bir fonksiyonun minimum değerini bulmak istiyoruz. X'in hangi değerinde o fonksiyon?
+
+29
+00:04:02,687 --> 00:04:19,627
+Benim minimum değerine erişiyor. Onu bulmak istiyoruz. Onun haricinde bir de x'in olmasını istediğimiz belli kısıtlar var, belli sınırlar var. Mesela şu bargenin içerisinde olsun, şu bargenin içinde olmasın vs. vs. Bunlar da bizim konstrenklerimiz ya da kısıtlarımız diye ifade ediliyorlar.
+
+30
+00:04:19,627 --> 00:04:27,067
+Burada gördüğünüz gibi i eşittir birden m'e kadar gitmiş. Yani m tane, şurada gördüğünüz gibi kısıt fonksiyonu tanımlanmış.
+
+31
+00:04:27,475 --> 00:04:41,915
+Ve bizim x'imizin nerelerde bulunabileceğinden bahsediyor. Bu x'imiz, bulacağımız x bizim f'i minimum yapan x. Buradaki kısıtlar ise x'in bulunabileceği alanları gösteriyor.
+
+32
+00:04:42,516 --> 00:04:57,156
+Eğer ki bir optimizasyon probleminde şu subjective kısmı olmayabilir mi? Olmayabilir. Bu durumda bütün uzaydır aslında kısıt alanı. Yani bir kısıt yoktur. O durumda da Unconstrained Optimization diye geçer bu mevzu.
+
+33
+00:04:57,396 --> 00:05:04,656
+Şimdi buradaki birkaç tane yine terimi ifade edelim. X dediğimiz şey bir optimizasyon değişkenimiz bizim.
+
+34
+00:05:05,555 --> 00:05:24,355
+Hangi değişkeni, yani o fonksiyonun içerisine giren değişkenimizi ifade ediliyor? En boyutlu bir şey bu. Tek bir boyutta olmak zorunda değil. F0 dediğimiz şey, Rn'den R'ye bir objektif fonksiyon. Yani şuradaki şu yazdığımız, optimize etmek istediğimiz fonksiyon ki onun terimsel adı, objektif fonksiyon diye geçer.
+
+35
+00:05:31,827 --> 00:05:35,307
+diye bir tanımımız var ki buna x yıldız diyeceğiz.
+
+36
+00:05:36,087 --> 00:05:50,443
+Has the smallest body of the f0 and the all vectors has the smallest body of the f0 and all vectors has the smallest body of the f0 and all vectors has the smallest body of the f0 and all vectors has the smallest body of the f0 and all vectors has the smallest body of the f0 and all vectors has the smallest body of the f0 and all vectors has the smallest body of the f0 and all vectors has the smallest body of the f0 and all vectors has the smallest body of the f0 and all vectors has the smallest body of the f0 and all vectors has the smallest body of the f0 and all vectors has the smallest body of the f0 and all vectors has the smallest body of the f0 and all vectors has the smallest body of the f0 and all vectors has the smallest body of the f0 and all vectors.
+
+37
+00:05:50,548 --> 00:06:08,328
+X değerine X star, işte buradaki optimal çözüm diyeceğiz. Bizim amacımız, işte optimizasyon problemlerinde bu X star'ı bulmaya çalışmak. Bunu her zaman becerebiliriz, bazen beceremeyebiliriz vs. vs. Bunu göreceğiz yavaş yavaş.
+
+38
+00:06:10,291 --> 00:06:15,731
+Şimdi mesela burada constraint optimization'a bir örnek var. Ne demişiz burada?
+
+39
+00:06:15,731 --> 00:06:21,871
+Find the largest possible rectangular area you can enclose assuming you have L meters of fencing.
+
+40
+00:06:22,251 --> 00:06:27,431
+İşte bir tarlanız var, kare. Dikdörtgen bir tarlanız var diyelim ki.
+
+41
+00:06:27,759 --> 00:06:44,539
+Elinizde de L metrelik bir çitiniz var. Bu L metrelik çitle etrafını tarayabileceğiniz en büyük tarla alanı, dikdörtgen alanı nedir? Böyle bir şey soruyor.
+
+42
+00:06:45,043 --> 00:07:13,043
+Şimdi bunu birazcık düşündüğünüzde bir dikdörtgeni hayal edin kafanızda. Mesela şu bizim dikdörtgenimiz olsun. Şurada gördünüz. Şu ikisinin toplamı eşit olacaktır. Dolayısıyla burasının toplamı ne olacaktır? L bölü 2 olacaktır değil mi? Bütün çitin tamamının çevresinden bahsediyoruz çünkü. Çitin toplam uzunluğu L olacaktır. Dolayısıyla burası ve burası toplamı da L.
+
+43
+00:07:13,043 --> 00:07:22,824
+L bölü 2 olacaktır. Bir tarafa x bir tarafa o zaman ne diyebiliriz? L bölü 2 eksi x diyebiliriz. O zaman şurasıyla şurasının çarpımı aslında bizim neyimiz olacak?
+
+44
+00:07:24,923 --> 00:07:40,264
+Alanı olacak değil mi? Yani x çarpı L bölü 2 eksi x dediğimiz şey bizim alanımız. Bu bir fonksiyon. Bu fonksiyon bizim şurada işte ifade ettiğimiz bu sefer minimazliği de var. Ne istiyoruz? Maksimum diyoruz. Largest possible area diyor.
+
+45
+00:07:41,747 --> 00:07:49,247
+Bu durumda ne yapacaksınız? Burası maksimum hale gelecek. Peki nasıl çözebilirsiniz bunu? Böyle bir problemi.
+
+46
+00:07:52,608 --> 00:07:58,268
+Türevini alırız hocam. Türevini alıp sıfır eşitleyip ekstrem değerlerini buluruz.
+
+47
+00:07:59,088 --> 00:08:00,067
+Niye araya bir şey yapıyoruz?
+
+48
+00:08:04,067 --> 00:08:05,067
+Çünkü...
+
+49
+00:08:04,148 --> 00:08:14,028
+Sorucu da largest password yani en büyük değerini bize soruyor. Dolayısıyla ekstrem değerlerini bulmak, analitik yönden böyle bir çözüm yapılabilir.
+
+50
+00:08:18,196 --> 00:08:22,236
+Tamam, peki ne bulursunuz burada? L'ye bağlı olarak bir şey mi çıkar?
+
+51
+00:08:23,156 --> 00:08:25,096
+Evet, L bölü 4 sanırım.
+
+52
+00:08:25,456 --> 00:08:28,816
+L'li bir şey çıkar değil mi? L bölü 4 demek ne demek? Aslında.
+
+53
+00:08:30,396 --> 00:08:32,696
+Aslında şeklin kare olduğunu bize.
+
+54
+00:08:32,696 --> 00:08:34,836
+Bunu söyler değil mi? Aynen öyle.
+
+55
+00:08:36,307 --> 00:09:04,307
+Peki, bu dediğim gibi constraint bir problemi. Aslında burada unconstraint bir hal edilmiş şekilde getirmiş olduk. Şurada gördüğünüz gibi belki. Constraintleri optimizasyon fonksiyonu, yani objektif fonksiyonun içerisine gömmek ki onun en büyük işte bu lagbench denklemleri onları sağlarlar. Sizin elinizdeki bir objektif fonksiyon var ve constraintleriniz var. Bu constraintleri alıp şeyin içerisine, objektif fonksiyon içerisine gömerek sanki unconstraint...
+
+56
+00:09:04,307 --> 00:09:07,768
+Renk bir probleme dönüştürüp işlem yapabilirsiniz.
+
+57
+00:09:09,127 --> 00:09:13,768
+Şimdi, burada bir sürü optimizasyon örneği var. Bunlara bakarsınız.
+
+58
+00:09:13,768 --> 00:09:19,347
+Bir sürü noktanın içerisinden geçen en uygun modeli bulmaya çalışmak.
+
+59
+00:09:19,840 --> 00:09:33,680
+Tam tutun da işte ne bileyim borsada elinizde şey var, paranız var. Bu parayı en optimal bir şekilde nasıl dağıtmalıyım ben? Bu manada bir sürü gündelik hayattan da problemlerimiz var.
+
+60
+00:09:33,680 --> 00:09:38,840
+Şimdi burada iki tane teknikten bahsedeceğim.
+
+61
+00:09:39,200 --> 00:09:57,380
+Temel, büyük grup diye ifade edeceğimiz bir tanesi derivatif teknikler. Yani demin arkadaşımızın ifade ettiği gibi türevi kullanan teknikler. Bir de non-derivatifler var. Bunlar ise türevi kullanmayanlar. Türevi kullanmayan demeyelim de belki buna türevi kullanamayan diye de ifade edebiliriz.
+
+62
+00:10:00,000 --> 00:10:21,719
+Diskrit bir uzaydaysanız, yani kontinüüs bir uzayda türevi tanımlıdır ama diskrit bir uzaydaysanız burada türevi tanımlamak oldukça güçtür. O durumda daha sembolik işlemler yapılır. Burada genetik algoritmalar, simületlenen, hill climbing gibi, hill climbing derivatif tekniklerde de kullanabilirsiniz. Orada çok önemli ama temelde yine non-derivatif teknik geçer.
+
+63
+00:10:26,131 --> 00:10:38,551
+Türevi alınabilen fonksiyonlar üzerinde çalışıyor olmanız, diğerine ise türevi alınamayan, yani bu objektif fonksiyonunuz türevi anlamayan bir şey ise bu durumda bulunan deratif tekniklere geçmemiz gerekiyor.
+
+64
+00:10:40,563 --> 00:10:54,663
+Şimdi biraz tanım görelim. Bunlara daha önceden de belki aşinansınızdır ama aşinanların içinde tekrar olmuş olur. Liner ne demek? Non-liner ne demek? Non-liner kolay. Liner olmayanlar belki.
+
+65
+00:10:55,220 --> 00:11:19,940
+Şimdi f is a function işte RN, n boyutlu bir uzaydan, r boyutlu uzaylı bir fonksiyon. Şimdi eğer ki bu RN'in içerisindeki bütün x1 ve x2 olası kirleri için bunların her biri n boyutlu uzayda birer noktalar. Eğer f lineer ise şurada gördüğünüz kırmızı eşitliği sağlıyordur ya da tersi. Yani böyle bir eşitliği sağlıyor da lineerdir.
+
+66
+00:11:20,755 --> 00:11:37,575
+Buraya bakalım ne demek istiyor bu? Fx artı 1 artı fx 2 eşittir. Fx artı 1 artı fx 2. Yani bu değişkenleri f'in içerisine koyup topladığınızda, değişkenleri toplayıp f'e attığınızdaki halleri sonuçları eşitler birbirlerine.
+
+67
+00:11:38,163 --> 00:11:51,403
+Bu toplam sağlık, bir de çarpımsallık kısmı var. Çarpımsallıkta ise R çarpı X1'i F'i ile R çarpı F'x1 ne olacak? Birbirlerine eşit olacak. Bu iki şartı birden sağladığı zaman bir fonksiyon, bu diner bir fonksiyon oluyor.
+
+68
+00:11:52,203 --> 00:11:59,183
+Şimdi burada bir de afin diye bir mevzu var ki bazen göz ardı edilir. Ama çok büyük bir şey değil.
+
+69
+00:12:00,563 --> 00:12:06,923
+Büyük bir benzu değil. Şimdi 2x diye ifade ettiğimiz şey linerdir. Liner ve afindir.
+
+70
+00:12:07,923 --> 00:12:12,223
+Şimdi afin ne demek olduğunu anlatmadım daha. Birazdan ortaya çıkacak çünkü.
+
+71
+00:12:12,223 --> 00:12:14,223
+Şimdi 2x eşit...
+
+72
+00:12:14,932 --> 00:12:19,091
+Bu bir lineer fonksiyon. Şunu sağlar. Şu ikisini birden sağlar.
+
+73
+00:12:19,091 --> 00:12:22,872
+Ama mesela 2x artı 3 diye ifade ettiğimiz şey düşünün.
+
+74
+00:12:22,932 --> 00:12:26,892
+Fonksiyon düşünün. Şöyle bir tane çizgi. Tam sıfıra sıfırdan geçmiyordur.
+
+75
+00:12:27,492 --> 00:12:33,312
+Bu fonksiyon lineer değildir. Çünkü şurada gördüğünüz şartı sağlamaz.
+
+76
+00:12:34,072 --> 00:12:37,992
+Ama bu fonksiyon afin bir fonksiyondur.
+
+77
+00:12:38,388 --> 00:13:04,968
+Yani linear fonksiyonlar orijinden geçmek zorundalar. Fakat siz bu normalde orijinden geçen linear bir fonksiyonu yukarıya doğru ya da aşağı doğru kaydırırsanız bir öteleme hareketiyle bu durumda yine davranışsal olarak linear görünen bir fonksiyon elde edersin ama fonksiyonlara ne deniyor? Afin fonksiyonlar deniyor.
+
+78
+00:13:05,460 --> 00:13:33,040
+Mesela şuna bakalım. Fx eşittir 3 demiş. Fx eşittir 3 constant demiş. Constant sabit fonksiyon demek. Yani x'in değerine bağlı değil. Düşünürseniz bunu tek boyutlu bir değerse bu x dümdüz bir çizgi olacaktır. Bu neler değildir? Niye? Çünkü zaten orijinden geçmiyor. Şunu ne yapmayacaktır? Yine sağlamayacaktır. Değil mi? Şimdi şurasını düşünün siz. Şurayı en azından sağlamayacağını göreceksiniz. Bu yine afin bir fonksiyon olacaktır.
+
+79
+00:13:33,812 --> 00:14:00,152
+Peki, bu linear ve afin mevzusundan sonra gelelim konvekste. Bir fonksiyonun konveks olması ne demek? Bir fonksiyonun konveks olması için şurada gördüğünüz eşitsizliği sağlıyor olması gerekiyor. Burada bu eşitsizliğin içerisinde iki tane kat sayı var. Bir tanesi lambda, bir tanesi beta. Bu lambdanın ve betanın ikisinin de sıfırdan büyük ve pozitif ve ikisinin toplamında bir olduğunu.
+
+80
+00:14:00,628 --> 00:14:25,848
+İfade ediyoruz. Şimdi burada şöyle bir şey yazıyor. Bakalım neymiş? Lambda çarpı fx1 artı beta çarpı fx2 büyük eşittir f diyor. Lambda çarpı x1 artı beta çarpı x2. Şimdi burayı düşünürseniz burası diyor her zaman buradan büyüktür diyor. Bakın burası her zaman buradan büyük eşittir diyor. Ne zaman ne derler için? Şuradaki kısıtlar için.
+
+81
+00:14:26,192 --> 00:14:31,872
+Şimdi bunu kabaca düşünürsek, şu aşağıda aslında bunun neden böyle olduğuna dair bir gösterim var.
+
+82
+00:14:32,672 --> 00:14:34,752
+x1 ve x2 diye iki tane noktamız olsun.
+
+83
+00:14:35,192 --> 00:14:38,192
+Şimdi bu iki noktanın bu x1'e karşılık gelen şurası neresidir?
+
+84
+00:14:38,492 --> 00:14:42,572
+fx1, şu x2'ye karşılık gelen yer neresidir? Şurası da fx2 değil mi?
+
+85
+00:14:43,512 --> 00:14:46,892
+Şimdi f fonksiyonumuz şurada gördüğümüz şu siyah çizgi olsun.
+
+86
+00:14:46,892 --> 00:14:51,892
+Şimdi biz bu x1 ve x2 arasında herhangi bir nokta alırsak,
+
+87
+00:14:52,384 --> 00:15:05,124
+Bunu nasıl yazabiliriz? Şurada gördüğünüz gibi yazabilirsiniz. X1 ve X2 arasındaki herhangi bir noktayı şurada gördüğünüz gibi yazabilirsiniz. Burada gördüğünüz şey aslında t çarpı X1 artı 1 eksi t çarpı X2.
+
+88
+00:15:11,251 --> 00:15:27,111
+Birleştiren çizgin üzerine çeşitli noktalar elde edersiniz değil mi? Aslında şurada gördüğünüz şeyleri, yani şunu aslında şöyle de yazabilirsiniz. Lambda çarpı fx1 artı 1 eksi lambda çarpı fx2 şeklinde yazılır. Yani beta yerine 1 eksi lambda da yazabilirsiniz şuradaki eşitlikleri kullanarak.
+
+89
+00:15:27,111 --> 00:15:35,211
+Dolayısıyla şurada gördüğünüz şey mesela t'nin bir değeri için burası nereye eşit olur arkadaşlar? T1 ise şurası neye eşit olur?
+
+90
+00:15:40,371 --> 00:15:41,511
+X1'e eşit olur.
+
+91
+00:15:42,991 --> 00:15:44,792
+0 için nereye eşit olur?
+
+92
+00:15:46,951 --> 00:15:47,751
+X2.
+
+93
+00:15:48,292 --> 00:15:50,891
+0.5 için hangi nokta olur?
+
+94
+00:15:54,868 --> 00:15:57,008
+x1 artı x2 bölü 2.
+
+95
+00:15:57,908 --> 00:16:00,908
+Değil mi? Tam orta noktasına denk gelir.
+
+96
+00:16:01,628 --> 00:16:05,707
+Şimdi bu herhangi bir noktaya bu şekilde yazabiliyoruz. Peki şimdi ne diyor burada?
+
+97
+00:16:06,707 --> 00:16:15,988
+Şimdi bu değerin şuradaki tx1 artı 1 eksi t çarpı x2 değerinin f'teki karşılığı şurasıdır.
+
+98
+00:16:16,288 --> 00:16:20,108
+Değil mi? Bakın şu noktayı düşünün. Şöyle geldik. Buradan karşıya geldik. Buraya gelir.
+
+99
+00:16:20,980 --> 00:16:35,300
+Bunun ikisinin arasındaki diner bir düz çizgi var olsaydı elimizde geçecek olan fonksiyonu da, yani şuradaki gördüğümüz şey de aslında t çarpı fx1 artı 1 eksi t çarpı fx2'dir. Şu nokta.
+
+100
+00:16:36,420 --> 00:16:43,460
+Ve burada diyor ki, bu kırmızı nokta, yani şuradaki nokta, buradaki şu siyah noktadan her zaman büyük eşittir.
+
+101
+00:16:48,083 --> 00:16:52,864
+Fonksiyon, şu siyah fonksiyonlar her zaman daha büyük eşittir demek istiyor.
+
+102
+00:16:53,864 --> 00:17:04,563
+Eğer bu bütün olası x1, x2 ikilleri için geçerli ise, bu durumda sizin elinizdeki bu fx fonksiyonu nedir diyoruz arkadaşlar?
+
+103
+00:17:04,784 --> 00:17:06,483
+Konveks bir fonksiyondur.
+
+104
+00:17:07,804 --> 00:17:09,983
+Peki bir fonksiyon konveks olmayabilir mi?
+
+105
+00:17:10,124 --> 00:17:12,683
+Tabii ki olmayabilir. Yani şöyle bir şey düşünün.
+
+106
+00:17:13,587 --> 00:17:17,347
+Yukarıya doğru çıkmış, aşağıya doğruymuş bir fonksiyon. Şöyle gelmiş.
+
+107
+00:17:17,728 --> 00:17:25,608
+Burada herhangi iki nokta alın. Bu ikisini birleştiren doğrunun değeri doğru her zaman fonksiyonun değerinden daha küçüktür.
+
+108
+00:17:26,228 --> 00:17:29,768
+Dolayısıyla bütün fonksiyonlar komveks olacak diye bir şey yok da tahmin edebileceğiniz gibi.
+
+109
+00:17:31,228 --> 00:17:41,028
+Mesela burada birkaç örnek var. 3x1 artı 3. Mesela bu fonksiyon komveks midir değil midir arkadaşlar? Ne dersiniz?
+
+110
+00:17:47,251 --> 00:17:58,511
+Tek değişkenli bir fonksiyon 3x1 artı 3. Bu fonksiyon konveks midir değil midir? Afin bir fonksiyon, evet. Peki konveks midir?
+
+111
+00:17:58,511 --> 00:18:01,672
+Hocam, büyük eşit dedik. Bu durumda olabilir gibi hissediyorum.
+
+112
+00:18:04,180 --> 00:18:17,599
+Tamam, doğru hissediyorsun. Her zaman eşit olur zaten bu değil mi? Şöyle bir şey diyeyim. Düz bir çizgi bu. Düz çizginin üstünde iki tane nokta alıyorsunuz. Bu iki noktayı birleştiren çizgi de zaten fonksiyonun kendi üzerindedir değil mi?
+
+113
+00:18:19,160 --> 00:18:19,400
+Evet.
+
+114
+00:18:20,319 --> 00:18:29,539
+Dolayısıyla böyle gördüğünüz her afin fonksiyon, şöyle gördüğünüz her afin fonksiyon, yani düz çizgilerle oluşan fonksiyonlar, konveks fonksiyonlardır. Peki bu?
+
+115
+00:18:30,612 --> 00:18:45,231
+A çarpı x1 artı b çarpı x2. Bu sefer iki boyutlu bir fonksiyonumuz var. Şurada görüyorsunuz. İki boyutlu bir fonksiyon. Bu fonksiyon acaba konveks mi değil mi?
+
+116
+00:18:46,872 --> 00:18:56,352
+Burada küçük de olabilir. O yüzden olmaz büyük ihtimalle. Büyük eşit olabilir demiştik. Burada küçük de olabilir. İki değişken olduğu için.
+
+117
+00:18:58,003 --> 00:19:01,683
+Yok. İki değişken olduğu küçük düğünle alakası var.
+
+118
+00:19:02,983 --> 00:19:03,763
+Yani bu şöyle bir şey.
+
+119
+00:19:04,163 --> 00:19:05,644
+O onun grafiği değil, doğru.
+
+120
+00:19:06,503 --> 00:19:08,723
+O onun grafiği değil, canım. O başka bir şey.
+
+121
+00:19:09,203 --> 00:19:10,203
+O başka bir şey.
+
+122
+00:19:10,923 --> 00:19:14,144
+Şuradan bahsediyoruz. Bu zaten iki değişkenli de değil. Bu tek değişkenli.
+
+123
+00:19:14,163 --> 00:19:14,403
+Doğru.
+
+124
+00:19:14,903 --> 00:19:15,104
+Değil mi?
+
+125
+00:19:15,763 --> 00:19:17,723
+Şimdi bu iki değişkenli fonksiyonu demek ne demek?
+
+126
+00:19:17,723 --> 00:19:23,803
+Elinizde bir x'i var, bir de x'i var. Bunların karşılığında her bir olası x'i ve x'i için üretilen bir f.
+
+127
+00:19:24,175 --> 00:19:33,135
+x1, x2 değeri var. Dolayısıyla aslında bir düzlem, bir yüzey aslında tanımlıyor değil mi bu fonksiyon? Bir çizgi tanımlamıyor.
+
+128
+00:19:34,675 --> 00:19:35,395
+Evet.
+
+129
+00:19:35,875 --> 00:19:47,556
+Bir yüzey tanımlıyor ve bu yüzey burada gördüğünüz şekilde parametrize edilmiş. Bu yüzey acaba konveks bir yüzey midir yoksa değil midir? Soru bu.
+
+130
+00:19:52,115 --> 00:20:00,000
+Bu da arkadaşlar, yine afin bir fonksiyonu. Afin fonksiyonlar da, yani iki değişken bir afin fonksiyonu öyle söyleyeyim, bir düzlem tanımlılıyor.
+
+131
+00:20:00,000 --> 00:20:21,539
+Şurada gördüğünüz şey, bir çizgi değil de bir düzlem tanımlar. Üç boyutlu uzayda bir düzlem tanımlar. Şurada gördüğünüz şey, x1 bir boyut, x2 diğer boyut, fx1 x2 ise buna da y diyebilirsiniz. Mesela bu da diğer bizim üçüncü boyutumuz. Bu üç boyutlu uzayda bir düzlemi tanımlar. Şurada gördüğünüz fonksiyon. ABC'nin farklı dergiler için farklı farklı düzlemler oluşurlar.
+
+132
+00:20:21,539 --> 00:20:27,759
+Ve bir düzlem de aynen bir çizginin konveks olduğu gibi o da bir konveks fonksiyondur.
+
+133
+00:20:28,000 --> 00:20:42,099
+Şimdi gelelim başka bir fonksiyona. X2 üzeri 2 artı x1 üzeri 2 yani kareleri x1 kare artı x2 kare artı 3x1. Bu konveks midir?
+
+134
+00:20:45,779 --> 00:20:49,100
+İki değişkenli bir şey yine şurada görüyorsunuz.
+
+135
+00:21:03,059 --> 00:21:06,039
+Hiç ses gelmedi ya. Korktum bir an.
+
+136
+00:21:06,819 --> 00:21:10,359
+Hocam, bir yöne eğimli düzlem olarak düşünebilir miyiz?
+
+137
+00:21:10,639 --> 00:21:18,220
+[öğrenci], bir dakika dursana sen. Senin haricinde birilerinden de ses duymak istiyorum ya. Evet arkadaşlar, içeride kaç kişi var şu anda?
+
+138
+00:21:22,579 --> 00:21:24,235
+Kalabalığı üzerinde
+
+139
+00:21:30,291 --> 00:21:36,791
+23 kişi. Evet, 23 kişi var. Evet arkadaşlar, şu fonksiyonun birileri bir şeyler söylemesini bekliyorum.
+
+140
+00:21:37,011 --> 00:21:45,711
+Yani hocam, üstteki fonksiyona benziyor esasında ama 3x1'de sonuçta bir sabit sayı olacak, artıcı kısmı.
+
+141
+00:21:47,192 --> 00:21:48,311
+Burası sabit, tamam.
+
+142
+00:21:49,311 --> 00:21:54,771
+Esasında üçüncü fonksiyonla ikinci fonksiyon sıradaki şey birbirine benziyor.
+
+143
+00:21:55,731 --> 00:22:03,572
+Burada kare var. Hatta pozitif olacak. Bence konvexdir.
+
+144
+00:22:04,572 --> 00:22:07,872
+Konvexdir. Peki. Tamam. Neyse. Bunu araştırma bakalım.
+
+145
+00:22:10,872 --> 00:22:21,032
+Bilmiyorum. Üniversite geri sınavında falan bile vardır bunlarda. Değişkenli fonksiyonlar var mıydı? Onu hatırlamıyorum lise de. Neyse. Vardır herhalde. Sizler daha iyi hatırlarsınız benden.
+
+146
+00:22:21,811 --> 00:22:25,111
+Var mıydı lisede birden fazla değişkenli fonksiyonlar?
+
+147
+00:22:28,692 --> 00:22:39,071
+Vardı hocam. Çember sanırım dedi bir arkadaş. X kare artı y kare eşittir re kare diye bir çembere fonksiyonu var. Ona benzetemedim açıkçası.
+
+148
+00:22:39,711 --> 00:22:41,071
+Yok, bu çember değil canım.
+
+149
+00:22:41,412 --> 00:22:41,711
+Evet.
+
+150
+00:22:42,831 --> 00:22:44,331
+Bu çember fonksiyonu değil.
+
+151
+00:22:44,884 --> 00:22:46,923
+Benim düşüncem böyle hocam. Teşekkürler.
+
+152
+00:22:47,043 --> 00:22:48,263
+Tamam, peki. Sağ ol.
+
+153
+00:22:48,844 --> 00:22:59,563
+Sinüs x fonksiyonu var. Şurada aşağıda görüyorsunuz. Bu sinüs x fonksiyonunun konveks ya da konveks midir diye sorduğunuzda konveks bir fonksiyon değildir.
+
+154
+00:22:59,683 --> 00:23:02,144
+Neden konveks bir fonksiyon değildir? Mesela şu noktayı alalım.
+
+155
+00:23:02,963 --> 00:23:25,603
+Bir de şu noktayı alalım. Bu ikisinin arasında bir çizgi çizelim. Şöyle bir çizgi çizelim. Bu çizgi her zaman neyin üstündedir? Fonksiyon üstündedir değil mi? Mesela şöyle seçeceğimiz iki nokta için. Evet doğru çıktı. Peki ben bir noktayı şuradan, bir noktayı da buradan seçersem ne olur? Şöyle bir çizgi çizersem. O zaman istediğimiz çizginin bu sefer üstünde kalıyor değil mi fonksiyon?
+
+156
+00:23:26,259 --> 00:23:43,659
+Bu durumda o zaman bu fonksiyon konveks bir fonksiyon değil. Konkab bir fonksiyon bu o da değil. Yani konveksin tersi, yani şuradaki tersine çevirseniz, şuradaki büyük türü küçük eşitlere çevirseniz bu konkab fonksiyon olur. Yani aşağı doğru böyle eğimli.
+
+157
+00:23:44,339 --> 00:23:48,279
+Bu konkal bir fonksiyon da değildir. Bu fonksiyon nasıl bir fonksiyon arkadaşlar?
+
+158
+00:23:48,479 --> 00:23:52,059
+Belli bölgelerde konveks, belli bölgelerde konvakal bir fonksiyondur değil mi?
+
+159
+00:23:52,539 --> 00:23:56,539
+Şimdi mesela şu bölgeyi düşünün, sıfırla pi aralığını düşünün. Burası bir konveks yapı.
+
+160
+00:23:56,999 --> 00:24:03,539
+Eksi pi ile eksi iki pi arası ise konkal bir yapı. Ondan sonra bir konveks, bir konkal şeklinde gidiyorlar.
+
+161
+00:24:03,619 --> 00:24:07,899
+Böyle fonksiyonlar da var. Yani ne konveks ne konkal olan bir fonksiyon olabilir mi? Olabilir.
+
+162
+00:24:08,599 --> 00:24:09,579
+Bir öyledir, bir öyledir.
+
+163
+00:24:10,519 --> 00:24:10,799
+Şimdi
+
+164
+00:24:11,635 --> 00:24:29,555
+Gelelim, bu konveks mevzusuna niye zaman ayırdık? Çünkü konveks fonksiyonların çok önemli bir özelliği var. Ne olabilir acaba konveks fonksiyonların bu önemli özelliği? Optimizasyon açısından çok önemli bir özelliği var.
+
+165
+00:24:34,483 --> 00:24:39,483
+Minimum noktası var sanırım. Minimum noktası var.
+
+166
+00:24:39,483 --> 00:24:41,483
+Minimum noktası var.
+
+167
+00:24:41,483 --> 00:24:49,483
+HBK olduğu için pozitif alanda bir dip noktası olacak diye düşünüyorum.
+
+168
+00:24:49,483 --> 00:24:53,483
+Bir dip nokta oluşabilir. Evet, güzel.
+
+169
+00:24:57,364 --> 00:25:07,003
+Doğru bir nokta. Yani konveks fonksiyonların bu optimal noktalarını bulmak daha kolaydır.
+
+170
+00:25:07,624 --> 00:25:11,784
+Hangi tür fonksiyonlara göre? Non-konveks fonksiyonlara göre.
+
+171
+00:25:12,503 --> 00:25:15,624
+Bunu yavaş yavaş göreceğiz ilerleyen zamanda.
+
+172
+00:25:15,624 --> 00:25:21,784
+Şimdi peki, bizim amacımız elimizde bir fonksiyon var. Fonksiyonu biliyoruz.
+
+173
+00:25:22,324 --> 00:25:34,324
+Bu bildiğimiz fonksiyonun minimum olduğu noktayı, yani bu fonksiyonu minimum yapan x'i bulmak istiyoruz. Zaten o x'i bulursak, zaten fonksiyonun da minimum değerini bulmuş oluruz.
+
+174
+00:25:34,804 --> 00:25:42,084
+Şimdi ne yapabiliriz? Buradaki en temel sağduyuyu düşünürseniz, yani bir saniye bakayım.
+
+175
+00:25:43,544 --> 00:25:44,824
+Burayı çizmemişim öyle bir şey.
+
+176
+00:25:45,299 --> 00:25:51,980
+Mesela şöyle bir şey düşünün. Siz bir noktadasınız. Onu birazdan zaten göreceğiz. Çok da önemli değil.
+
+177
+00:25:53,500 --> 00:25:58,839
+Bize sağduyu temelde türevi kullanmamızı söyler. Türevi dediğimiz şey neyi ifade eder acaba?
+
+178
+00:25:58,839 --> 00:26:06,279
+Tek boyutlu bir fonksiyon düşünün. Bu tek boyutlu fonksiyonu türevi bize neyi söyler?
+
+179
+00:26:07,796 --> 00:26:14,695
+Şimdi bizim bir noktadan başlayarak minimum noktayı bulmaya çalışacağız.
+
+180
+00:26:15,015 --> 00:26:19,455
+Temel mantığımız bu. Yani başlangıçta minimum noktayı ne yapamayız?
+
+181
+00:26:19,635 --> 00:26:22,735
+Yani korkunç derecede şanslıysak tak diye bulamayabiliriz değil mi?
+
+182
+00:26:23,735 --> 00:26:30,415
+Fakat bir nokta buluruz. Bu noktadan acaba ben, hani tek boyutu düşünürsem, sağ mı gitsem sola mı gitsem?
+
+183
+00:26:30,816 --> 00:26:32,355
+Buna bir karar vermemiz gerekiyor değil mi?
+
+184
+00:26:33,715 --> 00:26:58,455
+Yani bir noktadasınız siz. Sağa doğru mu ilerlemeliyim minimum noktaya ulaşmak için? Sola doğru mu ilerlemeliyim? Tamam. Yani yönümüzü bizim bilmemiz lazım. Peki bu yönü bize kim söyleyebilir? Türev söyleyebilir. Türev bize ne der? Ya sağa gideceksin ya sola gideceksin. Yani türevin işaretinin tersi yönde. Gitmeniz mantıklı bir hareket olur.
+
+185
+00:27:00,243 --> 00:27:22,783
+Ve burada karşımıza başka bir soru daha çıkıyor. Ne o soruda? Ne büyüklükte bir adım atacağım? Yani bir noktadayım ben. Türev'e baktım. Türev bana bu tarafa, yani sağa doğru git ya da soğa doğru git dedi. Onu söyleyebiliyor. Onun haricinde bir de neyi karar vermem gerekiyor? Yönü seçtim ama bir de o yönde ne kadar gideceğime karar vermem gerekiyor. Tamam.
+
+186
+00:27:23,443 --> 00:27:30,884
+Şimdi o zaman genel algoritmamız ne olacak bizim? İteratif optimizasyondaki genel algoritma aslında şurada gördüğünüz gibi.
+
+187
+00:27:31,104 --> 00:27:35,243
+Şimdi bir initial guess'iniz var. Initial guess dediğimiz şey rastgele bir noktadan başlamak.
+
+188
+00:27:36,644 --> 00:27:39,243
+Yani bir tahminde bulunuyorsunuz. Diyorsunuz ki şurasıdır.
+
+189
+00:27:39,827 --> 00:28:01,107
+Şuradan başlayayım. Daha sonra while diyoruz. Improvement is significant. Yani iyileşme anlamlı olduğu sürece ve maximum number of iteration is not exit. Maximum iterasyon sayısı aşılmadığı sürece result'ı iyileştir. Yani elimdekinden daha iyi bir noktaya doğru gitmeye çalışacağım.
+
+190
+00:28:01,460 --> 00:28:28,120
+Tamam, oldukça basit bir algoritma. Buradaki significant'tan kastınız şöyle bir şey olabilir. Mesela örnek verelim. Minimum bir değer bulacaksınız ya, ama işte kontinyüs bir uzaydayız biz. Kontinyüs uzaylar bilgisayarlarda da yapılamazlar. Tam olarak temsil edilemezler. İlla ki böyle bir kesikli yapıda temsil edinmek zorundalar. Bir şey var. Bizde sonuçta dijital bir yapılar, anomotu yapı yok.
+
+191
+00:28:28,915 --> 00:28:55,996
+Dijital bilgisayarlarla yapamazsınız bunu. Dolayısıyla bir yakınlık tanımlamamız gerekecek bizim. Bu yakınlıktan kastım da ne demek? Mesela ardışık iki tane, mesela işte bir noktadan başka bir noktaya gidiyorsunuz ya, bir noktadan başka bir noktaya giderken f fonksiyonu üzerinde ya da x'in bir öncesiyle bir sonrası arasındaki fark belli bir eşik değerinden küçükse artık çok da fazla iyileşmeler, önemli iyileşmeler yapamıyorsunuz anlamına gelebilir.
+
+192
+00:28:56,819 --> 00:29:24,500
+Bu durumda, while improvement is significant dediğimiz şey buraya geliyor. Yani, ardışık güncellemelerinizin arasındaki mesafe, büyüklük, belli bir eşik değerinden daha küçük değilse devam et iyileştirmeye. Ama belli bir eşik değer mesela 0.000001 gibisinden bir şeyden daha da aşağıya indiyse artık daha da uğraşma. Çünkü bunları yapmak her bir zaman değil mi? Belli bir zamanda bu problemleri çözmeniz gerekiyor. Dolayısıyla böyle bir kısıt var.
+
+193
+00:29:24,819 --> 00:29:48,039
+Yılın içerisinde şart var. Aynı zamanda bir de sonsuza kadar sürmesin bu iş. Yani siz burada bir significance'ı tanımlamışsınızdır. Fakat deniyorsunuz, deniyorsunuz. Yani ilerliyor ilerliyor yiterasyonlar. Yani x'i ilerletiyorsunuz, ilerletiyorsunuz ama bir türlü bu yere varamıyor olabilirsiniz. Dolayısıyla ne yapmanız da gerekir o zaman? Bir sonsuza kadar dönmemesi için yapının. Bir de bunu koymanız gerekir.
+
+194
+00:29:48,435 --> 00:29:54,655
+Bu iki şart bildirinize aldıktan sonra ne yapacaksınız? Improved Resort sonucu iyileştirmeye çalışacağız.
+
+195
+00:29:54,655 --> 00:30:06,155
+Şimdi Gradient Descent algoritmasına gelelim. Bu kenel algoritmanın içerisinde özel bir yönteme gelmiş olduk.
+
+196
+00:30:06,155 --> 00:30:10,155
+Şimdi burada birkaç tane şeye bakacağız.
+
+197
+00:30:11,539 --> 00:30:16,160
+Etkiyi inceleyeceğiz. Çeşitli yaklaşımlarla bakalım neler yapacakmışız.
+
+198
+00:30:17,059 --> 00:30:23,640
+Şimdi birinci yapacağımız şey şu. Ne demiştik? Bir noktadan başlıyoruz ve başka bir noktaya gideceğiz.
+
+199
+00:30:23,640 --> 00:30:29,900
+Bir noktadan başka bir noktaya gitmek için neye ihtiyacımız var dedik? Yöne ihtiyacımız var. Bir de neye ihtiyacımız var?
+
+200
+00:30:31,039 --> 00:30:35,160
+Adım büyüklüğüne, ne büyüklükte bir adım atacağımıza ihtiyacımız var.
+
+201
+00:30:38,932 --> 00:31:00,231
+Sadece türeve bakabiliriz ve türevin işaretini kullanabiliriz. Yani diyebiliriz ki ben türevin işaretini tersi yöne doğru gideceğim. Adım büyüklüğümde sabit olacak. Bunu yapabilirsiniz. Yani diyebilirsiniz ki benim bütün adımlarımın arası mesela 0.01 olacak. Bunu yapabilirsiniz.
+
+202
+00:31:00,852 --> 00:31:07,112
+Böyle yaparsak ne olacak? Yavaş yavaş bunları göreceğiz. Daha sonra türevin büyüklüğünü de işin içine katacağız vs. vs.
+
+203
+00:31:08,752 --> 00:31:18,252
+Şimdi bu kod burada. Şurada gördüğünüz kısımlar kodların isimleri aslında. Hepsinde böyle kodlar yazmıyor tabii.
+
+204
+00:31:18,252 --> 00:31:23,252
+Yani kodların hepsini buraya koymadım ama bu şurada...
+
+205
+00:31:23,476 --> 00:31:37,336
+Kodların isimleri, ilgili kodun ismi her zaman sayfanın içerisinde bir yerde yazıyordur. Dediğim gibi o şeydekinden hani dersin sayfasına koyacağım kodların içerisinden bunları inceleyip görebilirsiniz.
+
+206
+00:31:38,355 --> 00:31:59,596
+Şimdi burada amacımız ne? Ne dedim ben? Ben bir noktadan başlayacağım ve türevin işaretinin tersi yönüne doğru gideceğim hep. Ama ne büyüklükte gideceğim? Sabit bir büyüklükte. Şimdi bakalım burada ne varmış? Bir f fonksiyonumuz var. F fonksiyonumuz x kare fonksiyon. x kare fonksiyonun minimum değeri neredeyse arkadaşlar? Sıfır değil mi bunu biliyoruz.
+
+207
+00:32:01,440 --> 00:32:07,160
+Bilmediğimiz bir fonksiyon da olabilir. Yani minimumun sıfır olduğunu bilmediğimiz bir fonksiyon da olabilir.
+
+208
+00:32:07,960 --> 00:32:14,700
+Yapacağımız işine bir noktadan başlayacağız. Adım adım adım adım ilerleyerek minimuma doğru yaklaşmaya çalışacağız.
+
+209
+00:32:14,700 --> 00:32:21,180
+Burada şu anda şu gördüğünüz şeyi birazcık büyütürsem herhalde daha iyi olacaktır.
+
+210
+00:32:27,988 --> 00:32:29,248
+Erst fosabildim galiba.
+
+211
+00:32:33,811 --> 00:32:36,151
+Şöyle büyüteyim.
+
+212
+00:32:36,891 --> 00:32:38,891
+Şimdi burada bakın...
+
+213
+00:32:41,940 --> 00:32:43,600
+Şöyle iyice büyüsün.
+
+214
+00:32:45,160 --> 00:32:46,019
+Bakın şurada bir var.
+
+215
+00:32:46,860 --> 00:32:49,680
+Yani şu birinin olduğu yer benim başladığım nokta.
+
+216
+00:32:49,759 --> 00:32:52,680
+Yani işte eksi 4.9'dan başlamışım mesela.
+
+217
+00:32:53,519 --> 00:32:55,440
+Eksi 4.9'dan başladım.
+
+218
+00:32:55,440 --> 00:32:58,559
+Eksi 4.9'dan sonra gittiğim yer şu iki.
+
+219
+00:32:58,840 --> 00:33:01,680
+Sonra üç. Böyle adım adım adım adım görüyorsunuz gidiyorum.
+
+220
+00:33:01,779 --> 00:33:04,759
+İleriyorum. Burası en son da şurası varmış.
+
+221
+00:33:06,160 --> 00:33:07,059
+Gördüğünüz gibi.
+
+222
+00:33:07,571 --> 00:33:15,611
+Peki burada birden ikiye gitmem nasıl sağlanıyor? Birden ikiye gitmem oldukça basit bir mantık tahmin edebileceğiniz gibi.
+
+223
+00:33:16,672 --> 00:33:25,412
+Türevin işaretinin ters yöne gideceğim. İşte benim bu fonksiyonun türevi nedir? İşte 2x'tir. 2x'in bu bölgedeki türevi nedir arkadaşlar?
+
+224
+00:33:26,324 --> 00:33:41,743
+Eksi yönlüdür. O zaman ben arttıracağım. Dolayısıyla ben sola değil, sağa doğru gideceğim. Sağa doğru gideceğim ve constant step size'a gideceğim. Yani her bir adımda ben ne olacağım? 0.05 gideceğim. Tamam mı? Şimdi bunu gerçekten yaparsak işte starting point eksi.
+
+225
+00:33:42,976 --> 00:33:49,836
+Şurada gördüğünüz gibi eksi 4.9. Niye o eksi? Neyse. Eksi 4.9'dan başlamışım.
+
+226
+00:33:50,456 --> 00:33:54,156
+Şimdi şurada gördüğünüz grafikte ise başka bir şey var. Dikkatinizi çekelim.
+
+227
+00:33:56,476 --> 00:34:02,016
+Bakın burada ne oluyor? Eksi 4.9'dan başlıyor. Fonksiyon. Burası f değerini gösteriyor.
+
+228
+00:34:02,676 --> 00:34:08,636
+Gidiyor, gidiyor, gidiyor, gidiyor. Sıfıra doğru gidiyor. Sıfıra çok yakın bir yere varıyor. Ondan sonra sürekli ne yapmaya çalışıyor arkadaşlar? Bakın.
+
+229
+00:34:10,228 --> 00:34:17,908
+Zikzak çiziyor değil mi? Şurayı görüyor musunuz? Yani bu 200'e kadar gitmiş bakın. 200 iterasyon gitmiş.
+
+230
+00:34:17,908 --> 00:34:25,908
+Ve biz şöyle bir şey koymuşuz hani koda da bakalım. O while'ın içerisindeki precision neymiş? Mesela bakın while demişim.
+
+231
+00:34:26,068 --> 00:34:38,428
+XNV ile XALT arasındaki fark Precision'dan büyük olduğu sürece git demişim. Precision'da 0.0001 tanımlamışım. Burada XNV ile bir önceki ile bir sonrakinin arasındaki fark her zaman nedir arkadaşlar?
+
+232
+00:34:41,008 --> 00:34:42,248
+0.05
+
+233
+00:34:42,248 --> 00:34:51,248
+0.05'tir. Bu değer hiçbir zaman Precision'dan ne olmaz? Küçük olamaz değil mi? Dolayısıyla bizim bu fonksiyonumuz illa ki...
+
+234
+00:34:51,795 --> 00:35:01,275
+Şu while'dan ne zaman çıkabilir? Sadece maksimum interasyon sayısından çıkabilir ki maksimum interasyon sayısında 200 tanımlamıştı. 200 adım 60. Şurada görüyorsunuz.
+
+235
+00:35:02,435 --> 00:35:09,655
+Fakat hani sıfıra yaklaştıktan sonra sıfırdan çok uzak bir yere falan gidiyor mu? Gitmiyor. Şurada gördüğünüz gibi tık tık tık tık tık diye dolanıyor.
+
+236
+00:35:16,659 --> 00:35:37,479
+0.05 verecek ya da eksi 0.05 verecek. Diğer tarafa da geçebiliyorsa. Gerçi geçemez burada herhalde. Bu şekilde ne yapacak? Sürekli tık tık tık burada dönüp duracak. Şimdi bu çok iyi bir şey değil aslında. Çünkü x'e yani minimum değere istediğimiz kadar ne yapamadık? Biz yaklaşamadık. Ne kadar yaklaşabiliriz burada en fazla?
+
+237
+00:35:42,003 --> 00:35:57,903
+EPS'e işte step size kadar yaklaşabiliriz değil mi? Ortalama olarak ya da yarısı kadar hani rastgele bir de birazcık içine katarsak. Yani optimum noktaya biz en fazla şu kadar yaklaşabiliriz. Daha fazla yaklaşma şansımız pek yok. Çünkü adımlarımızın arası bu kadar. Tamam mı?
+
+238
+00:35:59,572 --> 00:36:16,352
+O zaman şunu işte birazcık büyüttüğümüzde görüyoruz. Şurası aslında şurada büyümüş halini görüyorsunuz. Yüzüncü iterasyonda aslında sıfıra oturuyor. Ondan sonra sıfırla 0.5 arasında ne yapıyor arkadaşlar? Sürekli zikzak yapıp duruyor.
+
+239
+00:36:17,791 --> 00:36:43,952
+Ben yine aynı şekilde 4.9'dan başlasam mesela, bu sefer 5'den itibaren bu sefer azaltmaya başlayacak. Yine 0'ın orda yine bu sefer 1'e zikzak yapmaya başlayacak. Yani buradan da başlasam buraya gidiyor, buradan da başlasam buraya gidiyor. Ama burada 0'ın orda ne yapıyoruz? Sürekli 1'e zikzak hareketini görüyoruz. Burada 100 adımda buraya varacağını tahmin edebilirdik. Neden tahmin edebilirdik? Tabii bunu her fonksiyon için yapamayız ama bu fonksiyonu da yapabiliriz. Çünkü fonksiyonun her şeyi bilmiyoruz.
+
+240
+00:36:44,500 --> 00:36:47,500
+Ne dedik biz? Nereden başlayalım dedik?
+
+241
+00:36:47,500 --> 00:36:54,500
+Arkadaşlar, eksi 4.4, işte 5'ten başlayalım dedik. 5'ten sıfırına ne kadar büyüklük var?
+
+242
+00:36:54,500 --> 00:36:57,835
+Şuradan şuraya.
+
+243
+00:37:01,748 --> 00:37:08,367
+5 değil mi? 5'lik bir büyüklük var. Burada 0.05 adımlarla bu 5'lik büyüklüğü kaç adımda açarsınız?
+
+244
+00:37:10,228 --> 00:37:16,068
+100 adımda değil mi? Yaklaşık 100 adımda açarsınız. Bu zaten beklenen bir şeydi.
+
+245
+00:37:17,128 --> 00:37:26,447
+Peki. Step size ben 0.05 değil de 0.05 kaç yapmışım burada?
+
+246
+00:37:27,059 --> 00:37:53,900
+0.1 yaparsam, bu sefer görüyorsunuz noktalar birbirlerinden daha uzaklar. Yani şuradakine göre bakarsanız, şurada çok daha yakın tık tık tık birbirlerine çok yakınlarda. Burası birazcık daha ağırlıkları var. Şöyle göreceksiniz ama bir şey değişmeyecek. Yani bu sefer 100. adımda değil de 50. adımda ulaşacak tahmin ettiğiniz gibi bu minimum nokta yakınına. Ondan sonra zikselak yapmaya çalışacak. Yani step size'ı istediğimiz kadar küçültelim, büyütelim çok da fazla bir şey olmayacak. İşimize yaramayacak.
+
+247
+00:37:54,356 --> 00:38:00,856
+Step Size daha da küçültürsem, 0.01 desem 200 iterasyon da şuraya varmış.
+
+248
+00:38:01,556 --> 00:38:05,155
+Buraya varabilmesi için 500 iterasyon lazımdı.
+
+249
+00:38:05,155 --> 00:38:10,856
+Ama ben çok küçük bir şey vermişim. Dolayısıyla bu yolda kalmış maksimum iterasyondan dolayı.
+
+250
+00:38:10,856 --> 00:38:15,556
+Bunlar sabit Step Size'da ilerlemenin sıkıntıları.
+
+251
+00:38:16,307 --> 00:38:33,067
+Şimdi gelelim asıl gradient descent algoritmasına. Gradient descent algoritması şunu kullanır. Türev dediğimiz şey aslında bize hangi yönde adım atacağımızın ötesinde bir de ne büyüklükte adım atacağımız konusunda da bir fikir verir der.
+
+252
+00:38:33,067 --> 00:38:43,788
+Yani türev mesela büyük bir şey ise biz neredeyizdir optimum noktadan uzakta mıyızdır yakında mıyızdır?
+
+253
+00:38:44,980 --> 00:39:04,759
+Uzaktayızdır. Türev sıfıra yakınsa mesela yakınsınızdır değil mi optimum noktaya? Çünkü hani bahsettiğimiz gibi bu sürevin sıfır olduğu nokta bizim optimum değerimiz olacak değil mi? Demin bahsetmedik bundan ama zaten bildiğiniz şeyler.
+
+254
+00:39:04,759 --> 00:39:11,480
+Şimdi peki o zaman algoritmamız şu şekilde arkadaşlar. Demin şunu yaptık bakın.
+
+255
+00:39:12,532 --> 00:39:13,532
+Öğrenme dersi.
+
+256
+00:39:14,132 --> 00:39:41,472
+Demin şunu yaptık. x new eşittir dedik. x old eksi EPS, ki bu EPS neydi? Adın büyüklüğü. Çarpı sin df. Buradaki df türevin o noktadaki yani şu x old noktasındaki f'in x old noktasındaki türevi. Şuradaki df. Burası onun işareti. İşaretle EPS'yi çarptık ve işte ters yöne gideceğiz. Dolayısıyla demin yaptığımız iş şuydu.
+
+257
+00:39:42,068 --> 00:39:56,827
+Buradaki yeni yapıda ise buradaki sahni kaldırıyoruz. Sahni kaldıralım. Sahni kaldırdığımız zaman bu bize ne sağlayacak? DF'nin büyüklüğünün de sürecin içerisine katılmasını ve adın büyüklüğünü belirlemesini sağlayacak.
+
+258
+00:39:56,827 --> 00:39:57,847
+Şimdi bakalım.
+
+259
+00:40:01,780 --> 00:40:14,260
+Bunu yaparsak ne oluyor? Step size yine 0.05 vermişiz. Maximitasyon 200. The number of iterations 120. 120 de bitmiş. 200'e varmamış. Niye?
+
+260
+00:40:17,000 --> 00:40:28,420
+İlk başlarda çok hızlı gitmiş hocam. Büyük büyük. Daha sonra yavaşlamış. Epsilon'u küçültmeye başlamış.
+
+261
+00:40:28,884 --> 00:40:46,403
+Epsilon dediğimiz şey XT ile XT artı bir arasındaki fark. Yani bizim attığımız adımın büyüklüğü giderek ne oluyor bu sefer? Küçülmeye başlıyor. Ve burada nereye varmış artık? Bizim o demin bahsettiğimiz neydi o değer? Bakayım.
+
+262
+00:40:51,956 --> 00:41:07,056
+Precision şurası. 0.00010 üzeri eksi 5. 10 üzeri eksi 5'in de altına düşmüş. Tamam mı? İki noktanın arasındaki fark. Bu yüzden maksimitasyon sayısından değil de o precision'dan dolayı dışarı çıkabilmiş.
+
+263
+00:41:09,492 --> 00:41:24,092
+Ve bu gördüğünüz gibi zikzak yapmıyor. Yani x'e bir yönden yaklaşıyor, şurada gördüğünüz gibi ve oraya yaklaşmaya devam ediyor. Daha büyük adımlar da öteki tarafa da geçebilir, mümkün ama sabit büyüklükte zikzaklar olmaz.
+
+264
+00:41:24,851 --> 00:41:39,551
+Ne demek istediğimi birazdan göreceğiz. Step Size'ı arttıralım. 0.05'ti. Step Size'ı 0.1 yapalım. Bu sefer itirazasyon sayısı 60'a düştü. Yine aynı şekilde daha hızlı bir şekilde konverge ediyor bu optimal noktaya diye görebiliriz.
+
+265
+00:41:40,403 --> 00:41:57,884
+Buraya bakalım. Step Size 0.01. Burada 200'e erişmiş. Şurada görüyorsunuz biraz daha bunun gitmesi lazım. Yani Step Size'ın etkisi yok değil hala. Step Size'ın hala bir etkisi var. Şurada söylediğimiz şey de. Şurasını EPS'e görüyorsunuz.
+
+266
+00:42:01,972 --> 00:42:24,692
+Maksimum iterasyona çıkmak zorunda değiliz burada. İstediğimiz kadar yakın bir, optimal noktaya istediğimiz kadar yaklaşabiliriz. Bunun güzel tarafı burası. Step Size'ı büyük yaparsam 0.7 yapmış bu noktalar. Çok büyük değil mi? Number of iteration is 16 arkadaşlar. 16 adımda varmış bakın. Bir burada, iki nerede bakın diğer tarafta.
+
+267
+00:42:25,235 --> 00:42:50,096
+3 burada, 4 bu tarafta, 5 bu tarafta, 6 bu tarafta. Şimdi bunun aslında zigzag yapıyor gibi burada yine görüyorsunuz. Fakat zigzagın büyüklükleri ne oluyor arkadaşlar? Bakın giderek küçülüyor, çok minimal şeyler yapıyor. 16 adım sonra zaten ardış 2 tane x1 ile x2'nin arasındaki fark 10 üzeri x5'in altına inebiliyor. Stepsize şu da oldukça büyük bir şey yapmışız.
+
+268
+00:42:52,980 --> 00:43:15,900
+Pardon, yaptık. Daha da büyütürsek, mesela 0.99 yaparsak. 0.99 yaptığımızda 1 burada, 2 bu tarafa atlamış. 3 bu tarafa atlamış. 4 bu tarafa, 5 bu tarafa. Tık tık tık tık. Yine bu 200'e varıyor. Bunu biraz daha devam etsek yine 10 üzeri ikisi 5'in altına iner. Ama bu sefer fonksiyona baktığımız zaman bakın ne olmuş.
+
+269
+00:43:16,340 --> 00:43:29,759
+Eksi 5'ten artı 5'e, artı 5'ten eksi 5'e sıçrıyor ama aralık giderek ne yapıyor bu sefer? Daralıyor, daralıyor, daralıyor, daralıyor. Yani yine bir zigzag var burada ama zigzag'ın magnitudu, büyüklüğü oldukça küçük.
+
+270
+00:43:30,759 --> 00:43:37,639
+Peki, Step Size'ı 1 yaparsam ne olur?
+
+271
+00:43:40,519 --> 00:43:41,039
+Bakalım.
+
+272
+00:43:41,619 --> 00:43:49,440
+StepSize'i 1'i yaptığımız zaman maksimum iterasyon 200'e varıyor. Fakat başka bir şey oluyor. Ne olmuş burada arkadaşlar?
+
+273
+00:43:51,559 --> 00:43:52,900
+Varamamış herhalde hocam.
+
+274
+00:43:54,420 --> 00:43:56,519
+Yok, varamamış değil. Daha kötü bir şey olmuş.
+
+275
+00:43:59,139 --> 00:44:00,800
+Yan tarafa sıçramış hocam.
+
+276
+00:44:01,559 --> 00:44:04,579
+Şuralara bakın. Şuradaki değerlere bakın. Bunlar ne? Bakın.
+
+277
+00:44:06,547 --> 00:44:14,047
+%93, %94, %95, %96, %99, %200. Ne olmuş burada?
+
+278
+00:44:14,047 --> 00:44:21,547
+Hocam yan taraftaki boşluğa gitmiş yani. O nasıl anlatayım bilmiyorum.
+
+279
+00:44:21,547 --> 00:44:26,547
+Şu an fonksiyon gözükmüyor yani bu aralıkta. Öyle bir şey mi var?
+
+280
+00:44:26,547 --> 00:44:32,139
+Yok, fonksiyonun içinde hala bu. Çizdirmemişim sadece ben burada. Fonksiyon hala burada.
+
+281
+00:44:33,972 --> 00:44:38,872
+Minimum noktasına ulaşmak yerine tam zıttına farklı bir pointe doğru kayıyor.
+
+282
+00:44:40,892 --> 00:44:45,072
+Bence ilk seferde buluyor minimumu ama yani...
+
+283
+00:44:45,072 --> 00:44:46,692
+Yok, ilk seferde bulmuyor canım.
+
+284
+00:44:47,032 --> 00:44:48,731
+Direkt sıfırda değil mi şu an?
+
+285
+00:44:49,912 --> 00:44:51,711
+Nasıl sıfırda değil mi? Şu anda iki yüzde.
+
+286
+00:44:51,731 --> 00:44:52,992
+Alt grafiğe bakıyorum da.
+
+287
+00:44:54,512 --> 00:44:55,892
+Hayır, bitirdiği yer şurada.
+
+288
+00:44:57,972 --> 00:45:11,972
+Ama başladı yer 0. Minimumu kaçırıyor. Tamam. Şimdi şöyle bir şey söyleyeyim. Şimdi tabii orasını 0 olarak görüyor olabilirsiniz ama gerçekte değil. O başladı yer. Şimdi bakın burasının ölçeyi 10 üzeri 16. Şuranın ölçeyi.
+
+289
+00:45:13,331 --> 00:45:25,231
+Tamam. O yüzden burası böyle hani sanki 0'mış gibi gözüküyor. Tamam mı? Aslında 0'dan giderek büyüyor. Öyle söyleyeyim. Burası da zaten 10 üzeri 32. Arkadaşlar bu konverj etmiyor.
+
+290
+00:45:26,708 --> 00:45:40,907
+Sıfıra. Yani bizim optimum noktaya konverj etmiyor. Giderek optimum noktadan ne yapıyor arkadaşlar? Uzaklaşıyor. Nereye uzaklaşıyor? Bakın 10 üzeri 32 olmuş. Uçmuş gitmiş. Başka bir şey de artık.
+
+291
+00:45:43,443 --> 00:45:49,463
+Başka bir düzen değil ya, hala aynı düzenin içerisinde ama bizim optimum noktaya yaklaşmıyor. Optimum noktan uzaklaşıyor.
+
+292
+00:45:49,983 --> 00:45:58,283
+Yine ziktaklar yapıyor, şurada gördüğünüz gibi. Fakat bizim istediğimiz optimum noktaya yaklaşmak yerine gidip optimum noktan sürekli uzaklaşıyor.
+
+293
+00:45:58,463 --> 00:46:02,283
+Iraksıyor, öyle ifade edebiliriz. Converge etmiyor yani.
+
+294
+00:46:03,063 --> 00:46:07,603
+Dolayısıyla Step Size'ın hala bizim için ne yapılması gerekiyor arkadaşlar?
+
+295
+00:46:08,596 --> 00:46:25,035
+İyi bir şekilde seçilmesi gerekiyor değil mi? Step Size'ın büyüklüğü ki bunu birçok algoritmanın içerisinde bunun adını Learning Rate, Learning Ratio diye duyarsınız.
+
+296
+00:46:25,035 --> 00:46:33,735
+Bu Step Size'ı ne yapmanız gerekiyor sizin? Seçmeniz, neye göre seçmeniz? Fonksiyona göre seçmeniz, fonksiyona göre denemeniz gerekiyor.
+
+297
+00:46:34,099 --> 00:46:41,099
+Bir fonksiyonda bir step size büyük olabilir ama aynı değer başka bir fonksiyonla küçük gelebilir.
+
+298
+00:46:41,099 --> 00:46:50,099
+Dolayısıyla bu step size'ın seçimi başımızda bir iş yükü olarak duruyor.
+
+299
+00:46:50,099 --> 00:46:54,099
+Peki, şimdi...
+
+300
+00:46:54,643 --> 00:47:11,403
+Şu fonksiyonu düşünelim. Bu fonksiyonu işte biz buradan başladık. Sonra buraya geldi, sonra buraya geldi, buraya geldi. Mesela ben buradan başlamasaydım, buradan başlasaydım ne olurdu? Muhtemelen bu tarafa gidecekti. Sonra böyle gidecekti, böyle böyle. Şöyle yine bir dizik sakın, magnetik küçülterek ne yapacaktı? Bu noktaya varacaktı. Peki.
+
+301
+00:47:12,947 --> 00:47:23,068
+Başlangıç noktası bu fonksiyon için fark eder mi? Yani ben nereden başlarsam başlayayım aynı minimum noktaya, aynı optimum noktaya doğru mu hareket ederim?
+
+302
+00:47:25,487 --> 00:47:36,367
+Nereden başlarsam başlayayım. Step Size'ın Iraksam adını varsa. Daha doğrusu Step Size'ı birden küçük yaparsanız zaten Iraksamaz.
+
+303
+00:47:38,132 --> 00:47:40,831
+İlla ki yaklaşırsınız ama biraz yavaş olacaktır.
+
+304
+00:47:42,932 --> 00:47:45,291
+Sorumu tekrarlıyorum. Nereden başlarsak başlar.
+
+305
+00:47:48,371 --> 00:47:52,412
+Öbür tarafa geçersek, yani negatiften pozitife sayı değişmeyecektir.
+
+306
+00:47:52,532 --> 00:47:57,432
+Ama step size birazcık küçük olursa, yani sağ tarafa geçilmezse bizi başladığınız yere etkili olur.
+
+307
+00:48:00,244 --> 00:48:15,604
+Bu taraftan da devam edebiliriz. Şöyle de olabilir. İlla bunu düşünmeyin. Şu durum da olabilir. Buradan başladığım zaman buraya varıyorum. Buradan başladığım zaman da yaklaştığım nokta hep aynı nokta mıdır? Soru bu. Nereden başlarsam başlayın.
+
+308
+00:48:18,364 --> 00:48:23,644
+Aynıdır hocam. Tek bir global minimum olduğu için Türev her zaman o noktayı gösterir.
+
+309
+00:48:24,052 --> 00:48:31,852
+Evet, bunun anlamı nedir arkadaşlar? Bu hangi tür fonksiyonların özelliğidir peki? Nereden başlarsam başlayayım, aynı yere yakınlayacağım.
+
+310
+00:48:35,032 --> 00:48:36,612
+Nasıl fonksiyonlardır bunlar?
+
+311
+00:48:37,292 --> 00:48:38,652
+Konveks değil mi?
+
+312
+00:48:38,752 --> 00:48:44,192
+Konveks fonksiyonlar, aynen öyle. Nereden başlarsanız başlayın, aynı yere varırsınız bu fonksiyonlarda.
+
+313
+00:48:44,192 --> 00:48:48,752
+Konveks fonksiyonlarla optimizasyon yapmanın güzelliği ve kolaylığı burada.
+
+314
+00:48:49,427 --> 00:49:00,327
+Başladığınız nokta varacağınız yeri etkilemiyor. Nereden başlarsanız başlayın, aynı yere doğru hareket ediyorsunuz. Sonunda varacağınız yere hep aynı.
+
+315
+00:49:00,327 --> 00:49:06,688
+Peki, şimdi gelelim şu fonksiyona.
+
+316
+00:49:08,019 --> 00:49:14,039
+Bu fonksiyon x üzeri 4 eksi 3 çarpı x üzeri 3 artı 2. Türevi de işte şurada gördünüz.
+
+317
+00:49:14,420 --> 00:49:19,159
+Şimdi bunun iki tane ekstrem noktası var. Yani türevinin sıfır olduğu iki tane nokta var. Öyle söyleyeyim.
+
+318
+00:49:19,860 --> 00:49:23,760
+Şimdi türevinin sıfır olduğu iki tane nokta var.
+
+319
+00:49:25,360 --> 00:49:31,139
+Şimdi aslında bir ara verelim. Tam buraya kadar gelmişken. O vakit olmuş.
+
+320
+00:49:34,643 --> 00:49:42,983
+3'e 7 var. 15 dakikada sürek. 3'ü 8 geçer. Şöyle yazayım. Çek neredeydi?
+
+321
+00:49:47,731 --> 00:49:48,332
+Evet.
+
+322
+00:49:52,115 --> 00:49:57,596
+Herkese atalım. 3.008'de devam.
+
+323
+00:49:57,596 --> 00:50:00,355
+Sıra devam.
+
+324
+00:50:06,835 --> 00:50:11,615
+Evet arkadaşlar, bir miktar ara verelim 15 dakika kadar. Sizlerle görüşmek üzere.
+
+325
+01:25:24,500 --> 01:25:46,260
+Arkadaşlar, tekrardan sesim geliyor mu? Evet hocam. Kusura bakmayın, bir aksilik oldu. Neyse, çözüldü. Şimdi nerede kalmıştık? Başlangıç noktası etkili mi değil mi? Etkili olabildiği durumlar olabilir mi? Ondan bahsediyorduk. Burada bir kod var. O kodu birazdan açarız zaten.
+
+326
+01:25:50,355 --> 01:25:51,355
+Öncelikle.
+
+327
+01:26:17,587 --> 01:26:42,268
+Metap'e kalınını görüyor musunuz şu anda? Evet hocam. Evet hocam. Tamam. Şimdi şu fonksiyon var. Bunun işte türevi şurada gördüğünüz gibi bununla alakalı işte ilk önce fonksiyonu çizdirmişiz. Daha sonra bir başlangıç noktasından şuradaki noktadan başlayarak step size 0.1 olarak almışız. Precision'da 10 üzeri eksi 5.
+
+328
+01:26:42,771 --> 01:26:53,072
+Maksimum İterasyon 200, X'ler ve Y'ler. Yani X'ler bizim ilerlediğimiz değerler. Y'ler ise onlara karşılık olan F fonksiyonunun değerleri.
+
+329
+01:26:53,871 --> 01:27:05,032
+Neville'da olduğun arasındaki farkın absolut değeri, Precision'den büyük olduğu sürece ve Maksimum İterasyon'da Y'den küçük, Y'den büyük olduğu sürece döneceğiz içeride. Ne yapacağız?
+
+330
+01:27:05,456 --> 01:27:16,316
+Yeni noktayı, mevcut olan noktayı ilk önce XS'lere kaydetmişiz. Sonra onun karşılığını hesaplamışız. Daha sonra onu kırmızı bir noktayla işaretlemişiz.
+
+331
+01:27:16,884 --> 01:27:40,524
+Bu noktayı daha sonra bir de yanına kaçıncı adımda o noktayı seçtiğimizi göstermek için integer to string ile çevirip yanına yazdırmışız. Sonra asıl yeni noktaya geçişimiz. Oldu almışız, niva atılmışız. Sonra df eşittir. Burada türevini hesaplamışız. O noktadaki eski noktadaki türevini. Daha sonra x niva eşittir. x old eksi eps çarpı df.
+
+332
+01:27:40,948 --> 01:27:59,648
+Def edelim zaten. Şuradaki değer olacak. O noktadaki türevi olacak. İyi bir arttırmışız. Sonra da çizdirme işi zaten. Çok klasik bir iş. Oldukça gibi basit, sade bir kod. Bunu bir çalıştıralım bakalım ne oluyor? Çalıştırma ekranları görebilecek misiniz acaba? Onu merak ediyorum.
+
+333
+01:28:06,676 --> 01:28:32,016
+Şu anda ekranlar gözüküyor mu? Figürler? Hayır hocam, hayır. Figürleri görmüyorsun. Gözüküyor mu? Hayır. Gözükmüyor mu? Hayır. Görünmüyor. Tamam, görmüyorsunuz. Tamam, peki. O zaman şöyle yapalım. Bir dakika. Tüm ekranı paylaşayım. O zaman olur herhalde. Screen desem.
+
+334
+01:28:33,460 --> 01:28:49,299
+Şimdi görüyor musunuz benim tüm ekranımı? Tamam, güzel. Şimdi birden başladık. Eksi 0.9'da hatırlıyorsunuz. Sonra 2 işte buraya gelmiş. Sonra 3 buraya gelmiş, buraya gelmiş. Şurada ne olmuş? İş bitmiş.
+
+335
+01:28:51,440 --> 01:28:55,079
+Fonksiyona bakarsak işte 200. iterasyona kadar ilerlemiş.
+
+336
+01:28:56,500 --> 01:29:06,800
+Burada durmuş ama. Şurada görüyorsunuz. Yani bunun ötesine geçememiş. Bunun ötesinden geçememiş olmasının sebebi. Şimdi bu fonksiyonun minimumu neresi arkadaşlar? Bu aralık için konuşursak.
+
+337
+01:29:07,100 --> 01:29:07,760
+Vermemiz lazım.
+
+338
+01:29:08,180 --> 01:29:09,000
+Şurası değil mi?
+
+339
+01:29:09,760 --> 01:29:10,020
+Evet.
+
+340
+01:29:11,139 --> 01:29:21,059
+Yani şuradan başlayıp biz buraya varmak istiyorduk halbuki ama burada takıldı. Niye burada takıldı? Çünkü buraya yaklaştıkça türev ne haline geldi? Burada bir nokta var ki o sıfır noktası işte.
+
+341
+01:29:21,684 --> 01:29:22,324
+Plato.
+
+342
+01:29:22,623 --> 01:29:35,164
+0 oldu değil mi? Türev 0 olduğu zaman fonksiyonun güncellenmesi ne olacaktır? Bakın burada. Şuradaki df 0 olursa ne olur? Bakın. X değil mi? X oldu eşit olur değil mi?
+
+343
+01:29:38,043 --> 01:29:46,444
+Dolayısıyla o türevin 0 olduğu noktaya yaklaştıkça ne olacak? Orada takılıp kalacak. Diğer tarafa ne yapamıyor? Geçemiyor.
+
+344
+01:29:48,979 --> 01:29:53,579
+Tabi geçtiği durumlar da olabilir de, hani burası için öyle bir şey geçerli değil.
+
+345
+01:29:55,379 --> 01:30:02,799
+Peki ben buradan başladım, buraya vardım. Peki buradan başlasın dedim, görelim onu. Mesela 3.5'dan başlatalım kodu. Mesela şuradan bir yerden başlasın.
+
+346
+01:30:04,599 --> 01:30:14,059
+Eksi değil de mesela 3.5'dan başlatalım kodumuzu. Başladığı nokta orası olsun.
+
+347
+01:30:17,108 --> 01:30:19,667
+Şimdi ne olacak tahmin edebilirsiniz.
+
+348
+01:30:21,468 --> 01:30:24,788
+Birden başladığım sefer şuraya geldi değil mi? Görüyorsunuz bakın.
+
+349
+01:30:25,807 --> 01:30:29,908
+Dolayısıyla nereden başladığım etki etti mi? Nereye gittiğimde?
+
+350
+01:30:30,427 --> 01:30:37,327
+Etki etti. Bir tanesinde bu taraftan başladığımda sıfıra konverj etti. Bu taraftan başladığımda iki nokta küsura konverj etti.
+
+351
+01:30:38,347 --> 01:30:42,188
+Dolayısıyla bu fonksiyon nasıl bir fonksiyon değil arkadaşlar?
+
+352
+01:30:43,604 --> 01:30:53,024
+Konveks bir fonksiyon değil. Konveks olsaydı, eğer nereden başlarsam başlayayım, aynı yere doğru ne yapacaktı bu? Hareket edecekti. Tamam mı?
+
+353
+01:30:53,724 --> 01:30:55,884
+Konveks fonksiyonlarının güzelliği burası. Evet.
+
+354
+01:30:56,463 --> 01:31:03,684
+Konveks fonksiyon olup olmadığını nasıl teyit edebiliriz bilmediğimiz bir fonksiyon? Bu mümkün mü? Karışık bir problemmiş gibi geldi bana.
+
+355
+01:31:05,064 --> 01:31:08,684
+Bir fonksiyonun konveks olup olmadığını, yani şunu...
+
+356
+01:31:09,171 --> 01:31:22,731
+Bu konuyu gösterebiliyor olmanız lazım. Bütün x ve y ikileri için. Şurada gördünüz neredeydi o? Pardon. Onu kanıtlayabildiğimiz zaman ancak...
+
+357
+01:31:22,731 --> 01:31:33,591
+Aynen öyle. Bunu kanıtlayabilirseniz, bunun her x, 1, x, 2 çifti için geçerli olduğunu söyleyebilirseniz o durumda o fonksiyonu konvex diyebilirsiniz. Tamam mı?
+
+358
+01:31:34,163 --> 01:31:45,843
+Hocam, bir de 8. slide'da 3. fonksiyondu galiba. Onu ben çizdirdim online. 3 boyutta konveks bir fonksiyonmuş.
+
+359
+01:31:46,503 --> 01:31:55,384
+Tabii, şimdi 2 boyutlu ya da 1 boyut, yani 1 değişken alan ve 2 değişken alan fonksiyonları çok rahat bir şekilde ne yapabiliyoruz?
+
+360
+01:31:56,843 --> 01:32:01,323
+Çizdirebiliyoruz değil mi? Bununla herhangi bir sıkıntı yaşamıyoruz. Ama onun üstüne çıktığımızda...
+
+361
+01:32:03,604 --> 01:32:09,584
+Olmuyor değil mi? O fonksiyon konveks mi değil mi anlamak oldukça güç bir şey.
+
+362
+01:32:11,304 --> 01:32:22,703
+Gene konudan saptıyorsam hocam toplayın beni. Bir de bir konveks olmayan bir fonksiyonu konveks fonksiyonuna çevirmek ne kadar literatürde yapılabildi?
+
+363
+01:32:22,984 --> 01:32:27,684
+Hani başa çözülmüş bir problem mi değil mi? Ya da böyle bir şey mümkün mü?
+
+364
+01:32:30,195 --> 01:32:38,935
+Belli fonksiyonlar için mümkün ama her fonksiyon için bu yapılabilir olsaydı zaten non-convex optimizasyon diye bir alan çıkmazdı.
+
+365
+01:32:39,255 --> 01:32:39,636
+Anladım.
+
+366
+01:32:40,716 --> 01:32:50,495
+Anlatabildim mi? Yani konvex bir fonksiyon, yani bir problem var elinde. Elindeki objektif fonksiyon konvex değil ama onu başka şekilde ifade ederek konvex bir hale getirebilirsin.
+
+367
+01:32:51,055 --> 01:32:55,555
+Ama bu her türlü problem için, her türlü fonksiyon için mümkün olan bir şey değil.
+
+368
+01:32:56,916 --> 01:33:18,336
+Peki bu yaklaşımın hani böyle bir işlem adımları var mı? Hani bir fonksiyonun non-konveks bir fonksiyonun konveks olabilir bu demek ya da konveksi çevirmenin böyle tanımlı işlem adımları var mı? Yoksa böyle belli tanımlamalar yapıp o fonksiyonu farklı şekilde ifade etmekten mi geçiyor bu iş?
+
+369
+01:33:18,868 --> 01:33:31,347
+İkincisinden temelde geçiyor ama belli fonksiyon tipleri için böyle prosedürler oluşturulabilir. Ama genel geçer bir şey yapmak oldukça güç.
+
+370
+01:33:31,927 --> 01:33:33,208
+Tamam, teşekkür ederim hocam.
+
+371
+01:33:33,208 --> 01:33:43,180
+Rica ederim. Ama bizim bu dersin ileriki kapsamlarında göreceğimiz non-convect fonksiyonlar olacaklar ki genelde...
+
+372
+01:33:43,220 --> 01:34:03,960
+Yapay sinir ağlarının hatta ve parametre uzayı diye ifade edeceğimiz uzaylar genelde konveks değiller. Belki bir perceptronun ki konvekstir ama onun haricindekilerin, birden fazla yerden oluşan yapıların hatta parametre uzaylarının loss fonksiyonları aslında.
+
+373
+01:34:04,627 --> 01:34:24,108
+DOS fonksiyonuna göre değerleri konveks değiller. Ama orada hala biz konveks optimizasyon tekniklerini kullanıyoruz. Ve hala da işe yarıyorlar. Hala da işe yarıyor olmaları aslında birazcık şey.
+
+374
+01:34:25,395 --> 01:34:52,755
+İnsanları şaşırtan bir şey. Buna dair çeşitli açıklamalar getirilmeye çalışılıyor ama oldukça araştırılan, üstünde durulan bir konu. Dersin ileriki haftalarında bu yapay sinir ağlarının hata parametre uzaylarının nasıl bir şey olduğuna dair şeyler yapacağız. Fikirler oluşturmaya çalışacağız. Hatta 3. ödeveniz herhalde yanlış hatırlamıyorsam bu konuda olacak.
+
+375
+01:34:53,395 --> 01:35:02,296
+Bu uzayları nasıl biz anlarız, tanımlarız, geometrisini görmeye çalışırız. Bunların üzerine biraz çalışacağız. Tamam mı?
+
+376
+01:35:06,195 --> 01:35:30,895
+Şimdi bakalım neredeydik? Şurayı yaptık. Oradan başladık, oraya vardık. Öteki taraftan başladık, başka bir yere vardık. Nerede? Burada işte görüyorsunuz. Şunun kenara. Aslında Helmet'le bir daha dömeyeceksek aslında slide'a geçebilirim. Ekranla şey yapmayın, yorummayın.
+
+377
+01:35:34,644 --> 01:35:36,123
+İçinde bir tek slide var herhalde değil mi?
+
+378
+01:35:39,184 --> 01:35:39,423
+Evet.
+
+379
+01:35:39,423 --> 01:35:39,844
+Tamam.
+
+380
+01:35:41,604 --> 01:35:48,844
+Şimdi buraya baktığımızda, bakalım işte starting point farklı farklı olduğunda neler olduğunu gördük.
+
+381
+01:35:50,224 --> 01:35:56,744
+Mesela step size'ı 0.05 yaptığımızda, buradan başladığımızda buraya varabiliriz.
+
+382
+01:35:59,304 --> 01:36:00,564
+Bakın şurada.
+
+383
+01:36:01,716 --> 01:36:14,636
+Bölgeyi, şurayı atlayabiliriz. Şurayı görüyor musunuz? Birden bu değil, ikiye gitmiş. İkiden sonra üçe, dörde, beşe, bu şekilde ne yapabilmiş? Çökebilmiş. Ama bu biraz ne işi arkadaşlar?
+
+384
+01:36:16,979 --> 01:36:30,979
+Şans, yani burada şuradan kurtul, size buradan kurtulmayı sağlayacak stepsize nedir falan gibisinden. Çünkü hani bir boyutta, iki boyutta bunları çok rahat görebiliyoruz. Ama yüksek boyutlara çıktığımızda...
+
+385
+01:36:31,539 --> 01:36:56,180
+Neler oluyor, neler bitiyor, bu kadar net görmek pek mümkün olmaya biliyor. Dolayısıyla 0.01 yerine 0.05 yaptığımızda, büyük biraz adımlar attığımızda buraya gidebiliriz. Ama tabii bunun tersi de mümkün. Yani şöyle bir şey düşünün. Mesela şu fonksiyonun şurasının şöyle daha derin olup şöyle olduğunu düşünün. Anlatabildim mi?
+
+386
+01:36:57,108 --> 01:37:15,747
+Belki buradan gitseydik, yani çok büyük adım atmasaydık, belki o daha minimum olan yere erişebilecektik ama büyük bir adım attık. Orayı kaçırdık ve belki buraya konverj ettik. Anlatabildim mi? Hani bu fonksiyonun tipine bağlı olarak çok değişebilecek bir şey ve o fonksiyonun tipini de önceden maalesef bilemiyoruz.
+
+387
+01:37:16,068 --> 01:37:17,007
+Hocam bir şey sorabilir miyim?
+
+388
+01:37:17,007 --> 01:37:18,148
+Tabii.
+
+389
+01:37:18,836 --> 01:37:25,816
+Burada eğer biz stokastik yaklaşım kullansaydık, gerçek minimuma ulaşacağını garanti eder miydik?
+
+390
+01:37:27,036 --> 01:37:28,836
+Stokastik yaklaşımdan kastın ne?
+
+391
+01:37:28,916 --> 01:37:46,136
+Yani ben bu pointleri belirlerken bir moment verseydim, bir hız verseydim. Böylece bu tam sıfır olduğu yerde, eğimin olduğu yere doğru, türevin sıfırdan farklı olduğu yere doğru o pointi öteleyebilirdim.
+
+392
+01:37:46,579 --> 01:38:06,000
+Böylece gerçek minimum değerine ulaşırdım. Buradan da şöyle bir soru startıyorum. İster sağdan, ister soldan ya da istediğimiz yerden başlatırsak ve gerçek minimum ulaşırsa bu konvekstir, aksi değildir gibi bir yaklaşımı ben doğru olmadığını düşündüm. Şayet farklı.
+
+393
+01:38:12,336 --> 01:38:28,275
+Problem, yani konveks olmayan fonksiyonlar problemi. Mesela şöyle bir şey düşünelim. Şimdi şu fonksiyon şöyle gidiyor, burası böyle. Daha sonra şöyle bir şey düşünelim. Mesela burası böyle çıkıyor. Ondan sonra şöyle aşağı doğru gidiyor. Şöyle aşağı doğru gidiyor, sonra yukarı doğru çıkıyor tekrardan. Tamam mı?
+
+394
+01:38:29,136 --> 01:38:35,316
+Şimdi bu bulduğumuz yerin global minimum olduğundan herhangi bir şekilde emin olabilir miyiz?
+
+395
+01:38:36,627 --> 01:38:55,608
+Konveks fonksiyonların en temel özelliği o zaten. Bulduğunuz bir minimum, global bir minimumdur. Anlatabildim mi? Ama non-konveks fonksiyonlarda bulduğunuz bir minimumun global bir minimum olduğundan emin olamazsınız.
+
+396
+01:38:56,372 --> 01:39:18,311
+Yeterince iyi olabilir, alıp onu kullanabilirsiniz, onunla herhangi bir sıkıntı yok. Ama daha iyisi her zaman olabilir. Çünkü bütün uzayı taramanız mümkün değil. Çok kabaca. Tek boyutta belki bütün her şeyi deneyebilirsiniz, şu olabilir bu olabilir ama 100 bin tane parametresi olan bir yapay sinir ağını eğittiğinizi düşünün. Ki bu çok büyük bir sayı değil.
+
+397
+01:39:18,739 --> 01:39:43,819
+Günümüzdeki yapılar için 100 bin boyutlu yapay sinir ağının bu hata parametre uzayı 100 bin bir boyutlu olacaktır. 100 bin bir boyutlu, 100 bin bir boyutlu bir uzaydan bahsediyoruz. Bu uzayda bütün olası noktaları denemek ve bulduğumuz şeyin işte minimum olduğunu, gerçekten minimum olduğunu söyleyemek mümkün değil.
+
+398
+01:39:44,435 --> 01:40:01,115
+Dolayısıyla ama konveks bir fonksiyondan bahsediyorsak, 100.001 boyutu da olsa, konveks fonksiyonsa ama, bu durumda bulduğumuz bir minimumun global minimumu olduğundan eminizdir. İşin güzel tarafı bu zaten. Tamam mı?
+
+399
+01:40:01,695 --> 01:40:04,076
+Tamam hocam. Şu an çok clear oldu.
+
+400
+01:40:04,076 --> 01:40:04,855
+Sağ olun.
+
+401
+01:40:04,855 --> 01:40:05,695
+Tamam. Güzel.
+
+402
+01:40:07,604 --> 01:40:25,104
+Şimdi Gradient Dissent'te statik zigzagdan bahsetmiştik. Yani sabit adım büyüklüğünden bahsetmiştik. Sadece türevin işaretini kullanıyordu. Türevin büyüklüğünü kullanmıyordu. Sonra ne yaptık? Türevin büyüklüğünü de kullanmaya başladık.
+
+403
+01:40:31,923 --> 01:40:56,463
+Büyük şeyler yaptığınızda yavaş kalabilir ya da çok büyük olduğuna konverj etmeyebilir gibi durumlar olabilir. Ama buradaki temel mevzu ne? Büyük ve küçük diye ifade ettiğimiz stepsizer'ın objektif fonksiyona bağlı olması. Bu aslında kötü bir şey. Yani 0.1 büyük müdür, küçük müdür bunların dair bir şeyi söyleyemiyoruz. Öyle kötü bir durumumuz var.
+
+404
+01:40:57,524 --> 01:41:04,884
+Şimdi bu en temelse bir optimizasyondu. Şimdi bunun üstüne yavaş yavaş bir şeyler koya koya devam edeceğiz arkadaşlar.
+
+405
+01:41:04,884 --> 01:41:10,804
+Şimdi bunu kapatalım. Kaydetmeyelim, bir sürü şey bozuk herhalde.
+
+406
+01:41:10,804 --> 01:41:16,924
+Şimdi gelelim ikinci slide'ımıza.
+
+407
+01:41:16,924 --> 01:41:18,924
+İkinci slide'ı neyi görüyorum?
+
+408
+01:41:46,228 --> 01:41:47,948
+Şimdi ikinci sekşon açıldı mı arkadaşlar?
+
+409
+01:41:50,908 --> 01:41:51,587
+Evet hocam.
+
+410
+01:41:51,768 --> 01:41:52,408
+Tamam.
+
+411
+01:41:53,468 --> 01:41:58,167
+Şimdi şöyle bir şey yapacağız.
+
+412
+01:41:58,167 --> 01:42:00,007
+Yani burada temel mantığını anlatacağım.
+
+413
+01:42:00,208 --> 01:42:02,068
+Direkt çok detayına girmeyeceğim ama.
+
+414
+01:42:04,927 --> 01:42:07,148
+Şimdi bir yön bulduk diye.
+
+415
+01:42:07,288 --> 01:42:11,768
+Steepless Descent değil de Steepless Descent'den bahsediyorum.
+
+416
+01:42:12,372 --> 01:42:35,891
+Şimdi Exact Step Size'ı belirlemek. Şimdi Exact Step Size ne demek? Şimdi siz bir yön belirlediniz değil mi? Şu tarafa doğru gideceğim. Ama ne kadar gideceğim? Bunu bulmak istiyorsunuz. Burada yapılan iş şu. O tarafa doğru giden bir fonksiyon oluşturuyorsunuz. Linear bir fonksiyon oluşturuyorsunuz. O fonksiyonun minimum noktasını buluyorsunuz.
+
+417
+01:42:36,404 --> 01:42:55,724
+O yöne doğru ben dümdüz devam edersem hangi noktada sıfırı yakalarım? O sıfırı yakalayacağım noktaya gideyim, gitmem için gerekli adım büyüklüğünü hesaplıyorsunuz. Yani algoritmayı siz vermiyorsunuz Step Size'ı dışarıdan.
+
+418
+01:43:03,956 --> 01:43:10,115
+Detaylarını siz inceleyin. Şimdi dediğim gibi buna vakit çok fazla ayırmayacağım.
+
+419
+01:43:11,615 --> 01:43:13,876
+Onu nerede görebiliriz? Bir dakika.
+
+420
+01:43:17,652 --> 01:43:19,652
+Şurası nasıl?
+
+421
+01:43:24,979 --> 01:43:28,079
+Ayrı bir gösterim yanında olmadı. Evet mesela bu fena değil.
+
+422
+01:43:29,359 --> 01:43:33,000
+Şimdi diyelim ki biz şu noktadan başladık.
+
+423
+01:43:33,239 --> 01:43:35,920
+Bakın şu nokta. Şimdi iki boyutlu optimizasyondan bahsediyoruz.
+
+424
+01:43:36,019 --> 01:43:38,859
+Şimdi tek boyutlu değil bizim fonksiyonumuz. Şimdi iki boyutlu bir fonksiyon bu.
+
+425
+01:43:38,859 --> 01:43:41,840
+Ve bu fonksiyon konveks bir fonksiyon arkadaşlar.
+
+426
+01:43:42,019 --> 01:43:45,199
+Şimdi konveks bir fonksiyon şuradaki çizgiler neyi ifade ediyorlar sizce?
+
+427
+01:43:45,279 --> 01:43:49,639
+Şu sarı çizgiler mesela. Her bir sarı çizgi neyi ifade ediyor olabilir?
+
+428
+01:43:51,796 --> 01:43:56,176
+Aynı sarı çizgi üstünde bulunan noktaların ortak özelliği ne acaba?
+
+429
+01:43:57,176 --> 01:43:58,156
+Hep sayesinde.
+
+430
+01:43:59,176 --> 01:43:59,596
+Efendim?
+
+431
+01:44:00,836 --> 01:44:02,056
+Uzaklıkları optimum.
+
+432
+01:44:03,556 --> 01:44:05,996
+Aynı düzeydeler değil mi hocam?
+
+433
+01:44:06,136 --> 01:44:15,195
+Evet, hata değerleri aynı. O noktaların hata değerleri aynı. Bu coğrafyadan hatırlayan izoips evleri vardı. Hatırlıyor musunuz?
+
+434
+01:44:16,243 --> 01:44:26,724
+10 gibi bir yapı aynen burada. Burada tabii içeriye doğru bu. Hani aşağı doğru indiğini düşünün bunun. Burası en yukarısı. Ondan bir aşağısı, bir aşağısı bu şekilde gidiyor.
+
+435
+01:44:27,623 --> 01:44:34,403
+Şimdi biz şu noktada olduğumuzu düşünelim. Xn noktasında olduğumuzu düşünelim. Xn artı 1'e gideceğiz.
+
+436
+01:44:38,003 --> 01:45:01,644
+Hangi yöne gideriz biz? Bakın ne demiştik? Türevin yönünün tersine. Türevin işaretinin tersineydi hatırlıyorsunuz değil mi? Şimdi türevin işaretinin tersine ve türevin yönünün tersine birbirinden ters mi? Tuhaf değil aslında. Şimdi buradaki türev, şuradaki görüntü türev, şu noktadaki türev, şuradaki mavi ok yönündedir. Tamam mı? Mavi ok şeklindedir diyebilirim rahatlıkla.
+
+437
+01:45:02,228 --> 01:45:09,547
+Neden? Çünkü tam o noktaya t çizdiğinizde, bu fonksiyonun baktığına şuraya t çizdiğinizde, ona dik ve dışarıya doğru bir şey olur değil mi türev?
+
+438
+01:45:10,247 --> 01:45:21,247
+Biz ne tarafa doğru gitmek isteriz? Türevin tersine doğru. Yani bunun tam tersi bu tarafa doğru. Şu kırmızı çizgi ve şunun devamına doğru. Böyle bir tane yönden bahsediyorum.
+
+439
+01:45:29,747 --> 01:45:37,608
+Hangi büyüklükte bir adımı atman benim için en iyisidir? Bunu bulmak istiyorum aslında. Yani ben şuradan bir fonksiyon oluşturuyorum.
+
+440
+01:45:37,887 --> 01:45:44,627
+Steeple's Descent'te. Şu gördüğünüz kesikli çizgili fonksiyon öyle söyleyeyim. Bu kesikli çizgili fonksiyonu oluşturuyorum.
+
+441
+01:45:45,227 --> 01:45:55,667
+Bu fonksiyonun minimum yeri neresi mesela? Şurası değil mi? Bakın. Çünkü oraya kadar azalıyor, azalıyor, azalıyor, azalıyor. Ondan sonra artmaya başlıyor değil mi fonksiyonun değerleri? Bakın. Şu yönde.
+
+442
+01:45:56,275 --> 01:46:00,275
+O zaman, şuradaki şu mavilerin hepsi birer türev gösteriyorlar bakın.
+
+443
+01:46:01,775 --> 01:46:06,275
+Buraya, bu büyüklükte bir ne yapacağım ben bu sefer? Adım atacağım. Tamam mı?
+
+444
+01:46:06,275 --> 01:46:10,188
+Yani adım sayı, adımın boyutunu hesaplıyorum aslında.
+
+445
+01:46:11,188 --> 01:46:37,148
+Hesapladım, bu adımı attım. Bu adımdayken türevi neresi? Burası. O zaman ben bu yönde gideceğim. Şuradaki yine tırtıklı olan şu yönde gideceğim. Ama ne büyüklükte bir adım atacağım. İşte burada mesela şu yönde. Çünkü buraya kadar azalmış. Değerler daha sonra artmaya başlamış. Bunu atacağım. Sonra buradan bunu atacağım. Dolayısıyla burada işte şu adım, birinci adım, sonra ikinci adım, sonra üçüncü adım, sonra dördüncü adım. Bunlar hep birbirlerine ne olacaktır arkadaşlar? Dik olacaklardır.
+
+446
+01:46:37,652 --> 01:47:04,752
+Şimdi Stepless Descent hani Step Size'ı dışarıdan vermemize gerek bırakmıyor. Bu yönden iyi bir yöntem. Ama çok hızlı bir şekilde konverge eder mi etmez mi orası tartışmalı bir nokta. Yani az sayıda adımla istediğimiz yere hemen varabilir miyiz? Orası birazcık sıkıntılı bir süreç. Bunun bir örneğini verelim.
+
+447
+01:47:05,140 --> 01:47:11,900
+Mesela diyelim ki, şuradan başlasak ne olur, şuradan başlasak ne olur?
+
+448
+01:47:13,900 --> 01:47:21,820
+Şimdi şuradan başlasak, bakın şuradan başlasak, optimizasyonu, yani başlangıçta rastgele bir noktadan başlayıp onu iteratif olarak ilerletiyoruz ya,
+
+449
+01:47:22,060 --> 01:47:30,600
+rastgele bir yerden başlasak bu noktadan sonra biz şu noktayı seçeriz, stepples descent ile, sonra şu noktayı seçeriz, sonra bu, sonra bu, sonra bu, sonra bu şekilde gideriz.
+
+450
+01:47:31,315 --> 01:47:46,315
+Tam şu noktadan başlasak. Bu nokta aslında şurayı gördüğünüz gibi tam bu eğimin yani şu hata, parametre, hata, uzayın, objektif fonksiyonun...
+
+451
+01:47:49,684 --> 01:47:55,024
+Aygın vektörüne eşit bir nokta. Yani şurası aslında bir tane aygın vektör oluyor.
+
+452
+01:47:55,663 --> 01:48:03,703
+Tam yani çok aşırı derece şanslı biriyseniz, bu noktadan başladığınızda Steepless Descent'i kullanarak tek bir adımda nereye varabilirsiniz?
+
+453
+01:48:05,224 --> 01:48:07,524
+Optimum noktaya. Bakın tek adımda. Hiçbir şey yapmalı.
+
+454
+01:48:08,423 --> 01:48:11,083
+Tek bir adımda şuraya varabilirsiniz. Görüyor musunuz?
+
+455
+01:48:12,003 --> 01:48:13,783
+Çünkü bu nereden geçecek?
+
+456
+01:48:14,963 --> 01:48:30,064
+Fonksiyonun sıfır olduğu noktadan, fonksiyonun minimum olduğu noktadan geçecek. Bu öyle bir yön ki o kadar şanslıymışsınız ki. Ama işte buralardan yani genelde bu kadar şanslı olamazsınız zaten. Buralardan bir yerlerden başladığınız zaman işte böyle zikzaklar yapmanız gerekecektir.
+
+457
+01:48:31,283 --> 01:48:49,103
+Stepless Descent dediğim gibi arada bir tane fonksiyon oluşturma işi var. Detayları zaten yukarıda var. Kodu da var. Koddan da çok rahat şey yapabilirsiniz. Biraz dikkatli bir şekilde okursanız nasıl çözüldüğünü göreceksiniz. Ama her bir iterasyon adımı birazcık işlem gerektiriyor.
+
+458
+01:48:50,387 --> 01:49:04,228
+Gradient descent kadar hızlı iterasyonları ilerletemezsiniz. Çünkü her birinde o f fonksiyon, yani şu g fonksiyonun da, yani şu çizginin de minimumunu bulmanız gerekiyor, öyle söyleyeyim.
+
+459
+01:49:05,268 --> 01:49:14,108
+Peki, bu çizginin minimumunu her zaman bulabilir misiniz? Ve bu çizginin minimumu bir tane midir? Öyle sorsam size.
+
+460
+01:49:16,884 --> 01:49:23,203
+Şu fonksiyon, öyle söyleyeyim. Bu fonksiyon konveks bir fonksiyon mudur? Daha net bir şekilde sorayım.
+
+461
+01:49:25,123 --> 01:49:28,384
+Şu çizgiyle gösterilen fonksiyon konveks bir fonksiyon mudur?
+
+462
+01:49:31,163 --> 01:49:36,443
+Bir ara kadar azaldırıp daha sonra giderek artıyor.
+
+463
+01:49:44,051 --> 01:49:51,532
+Bu konveks bir fonksiyon ise, evet buradaki her türlü çizgi, oluşturabileceğiniz her türlü çizgi nedir arkadaşlar?
+
+464
+01:49:54,032 --> 01:49:57,631
+Konveksdir değil mi? İstediğiniz herhangi iki nokta alın, bu ikisini birleştirin.
+
+465
+01:49:58,051 --> 01:50:03,011
+Bu ikisini birleştirdiğinizde oluşan fonksiyon her zaman konveks bir fonksiyon olacaktır.
+
+466
+01:50:03,539 --> 01:50:21,739
+Dolayısıyla burada bu oluşturduğunuz fonksiyonun her zaman minimumun ortasını bulabilirsiniz. Yani çözümü olan bir durum ama hangi şartla? Yani tek bir minimumun olması şartı. Eğer bunun kendisi de konveks ise burada çizeceğiniz fonksiyonlar, oluşturacağınız fonksiyonlar komveks olacaklardır.
+
+467
+01:50:30,560 --> 01:50:33,300
+Sıklıkla tercih edilen bir yöntem değil.
+
+468
+01:50:35,140 --> 01:50:42,120
+Şimdi gelelim Linear Approximation mevzusuna.
+
+469
+01:50:42,240 --> 01:50:50,220
+Linear Approximation aslında birazdan göreceğimiz yöntemin temelini oluşturuyor.
+
+470
+01:50:52,960 --> 01:50:56,220
+Linear Approximation ne demek olabilir sizce?
+
+471
+01:51:06,836 --> 01:51:12,536
+Liner Approximation ne demek olabilir? Aslında yazıyor.
+
+472
+01:51:12,536 --> 01:51:17,316
+Fonksiyonla Liner ama biz onu Liner'e Approximate ediyoruz.
+
+473
+01:51:17,956 --> 01:51:24,696
+Liner'miş gibi ele alıyoruz o fonksiyonu.
+
+474
+01:51:25,300 --> 01:51:40,440
+Tamam, aslında fonksiyon lineer değil ama o fonksiyon lineer kabul ediyoruz. Ne zaman, yani nerede lineer kabul ediyoruz? Belli bir noktada lineer kabul ediyoruz. Tamam. Şimdi mesela buradaki örneğe bakalım. Buradaki örnekte bizim asıl fonksiyonumuz, şurada gördüğünüz şu mavi fonksiyon.
+
+475
+01:51:53,716 --> 01:51:57,496
+Bu noktada bu fonksiyonu sanki lineermiş gibi varsayıyoruz.
+
+476
+01:51:58,036 --> 01:52:00,656
+Şimdi lineermiş gibi varsayarsak neler yapabiliriz?
+
+477
+01:52:00,936 --> 01:52:04,316
+Ve bu yaptığımız şeyin bize avantajı ne olur?
+
+478
+01:52:05,176 --> 01:52:06,116
+Onu düşünelim.
+
+479
+01:52:07,036 --> 01:52:09,896
+Şimdi burada f x artı delta x.
+
+480
+01:52:09,896 --> 01:52:13,216
+Şimdi x burası, x artı delta x. Yani şu arası delta x.
+
+481
+01:52:13,496 --> 01:52:14,816
+Öyle düşünelim.
+
+482
+01:52:15,796 --> 01:52:21,276
+fx artı delta x neresidir? Şu nokta, şu b noktası değil mi?
+
+483
+01:52:21,276 --> 01:52:30,436
+Şu b noktası. Şimdi l dediğimiz şey, yani f'in neyi arkadaşlar buradaki bu l?
+
+484
+01:52:30,436 --> 01:52:35,796
+Bakın. Türevi değil mi? Şurada görüyorsunuz türevi.
+
+485
+01:52:41,460 --> 01:53:01,819
+Tamam, iki önüşünü bir daha tamamlayalım aslında. L x artı delta x ile f x artı delta x birbirine yakın değerler midir? Bir tanesi şurasını gösteriyor, aşağı yukarı bir tanesi şurasını gösteriyor. Bunlar birbirine yakın şeyler midir? Ya da yakın olmaları için ne olması gerekir?
+
+486
+01:53:06,547 --> 01:53:13,887
+Aradaki şu mesafeyi siz sıfıra doğru çekerseniz, bunların arasındaki fark da ne olmaya başlar?
+
+487
+01:53:17,007 --> 01:53:23,847
+Sıfıra doğru gider değil mi? Yani limit, bakın delta x'in sıfıra doğru giderken, bu ikisinin arasındaki fark nedir arkadaşlar?
+
+488
+01:53:25,488 --> 01:53:27,507
+Sıfırdır. Şurada görüyorsunuz.
+
+489
+01:53:29,872 --> 01:53:57,412
+Burada ne yapacağız aslında? Yapacağımız iş. L x artı delta x. L x artı delta x dediğimiz şey neye karşılık geliyor? Ona bakalım. Bir fx var. Yani şuradaki a aslında. Şurasının büyüklüğü daha doğrusu. Şu fx var. Artı d'ye var. Şuradaki kısım. Yani şurası, şu gördüğünüz kısım. Artı şu kısım. Değil mi? Bu ikisinin toplamı neye eşittir arkadaşlar? L x artı delta x değil mi?
+
+490
+01:53:57,807 --> 01:54:09,228
+Şurası artı şuradaki dy. Tamam mı? Bu ne eşittir? Peki biz buradaki dy için ne yazabiliriz?
+
+491
+01:54:11,807 --> 01:54:19,927
+fx'in x noktasındaki türevi dy bölü dx'dir. Şimdi dy neresi? İşte şurası. dx dediğimiz şey şurası.
+
+492
+01:54:19,927 --> 01:54:24,667
+f'in x noktasındaki türevi budur. O zaman biz burada ne yapacağız?
+
+493
+01:54:25,268 --> 01:54:28,047
+Şuradaki yapacağımız işi göreceğiz.
+
+494
+01:54:28,327 --> 01:54:35,268
+Şimdi f dom x yaklaşık olarak f x artı f dom x eksi x çarpı f'in türevi x.
+
+495
+01:54:36,107 --> 01:54:42,747
+Şimdi bunun bir basit bir örneğini görelim de çok daha net olacak aklımızda.
+
+496
+01:54:42,747 --> 01:54:43,967
+Bir saniye.
+
+497
+01:54:48,020 --> 01:55:00,500
+Mesela şöyle bir iş yapacağımızı düşünelim. 1.0002 üzeri 50'yi hesaplamak istiyoruz. Tamam. Şunu görüyorsunuz. Şimdi burada fx fonksiyonu ben x üzeri 50 değil mi?
+
+498
+01:55:00,739 --> 01:55:13,199
+x, fx fonksiyonu x üzeri 50. Ve ben şunu ifade ediyorum. Diyorum ki fx artı delta x yaklaşık olarak fx artı delta x çarpı f'in türevi x'dir. Yani şurada yazdığımız şey aslında o.
+
+499
+01:55:16,148 --> 01:55:22,068
+Şurada yazdığımız şey işte. Şurada yazdığımız şey. Tamam. Pardon.
+
+500
+01:55:24,927 --> 01:55:27,868
+Tabii bu eşit değildir arkadaşlar. Bakın.
+
+501
+01:55:28,404 --> 01:55:56,404
+Şurada eşit işareti yok. Yaklaşık işareti var. Şimdi birinci dereceden bir şey yaptığımızda bunun yaklaşık bir şeyini buluruz. Yani gerçek olan değerini değil de, yani mesela bunun gerçek olan değeri şu nokta. Ama biz lineer bir şey yaparsak ne hangi noktayı buluruz? Şuradaki noktayı buluruz. Tamam mı? Yani bir hata yaparız burada. Bunun kesin şeyi değildir. Ama bu hata işte bu delta x'i. Yani ne kadar küçük adım atarsanız, aradaki fark ne kadar...
+
+502
+01:55:56,404 --> 01:56:17,644
+Bu yaptığınız hata da o kadar az olur. Şimdi burada ne diyor? Pardon. Şurada. Şunu söyledik. Şimdi dom x dediğimiz şey 1.002. x eşittir bir noktasında sanki bu lineermiş gibi varsayacağız. Dolayısıyla delta x'imiz de 0.002 olacak.
+
+503
+01:56:23,859 --> 01:56:37,539
+F'in bir noktasındaki türevini yazmışız. Onu zaten biliyoruz. 0.2. Şunun türevi nedir arkadaşlar? 50 çarpı x üzeri 49 değil mi?
+
+504
+01:56:38,279 --> 01:56:49,679
+Dolayısıyla şurada yaptığımız için yaklaşık olarak şuna eşit olduğunu, burada 50 kere üst almakla uğraşmak yerine,
+
+505
+01:56:50,931 --> 01:56:58,172
+Buna eşit olduğunu görebiliriz. Eşit derken yaklaşık olduğunu söyleyelim. Tam kesin olarak bu söylenemez.
+
+506
+01:56:58,992 --> 01:57:06,152
+Şimdi bu birinci dereceden yaklaştırma. Yani bir noktada bir fonksiyona, bir fonksiyonu linear kabul etmek.
+
+507
+01:57:06,872 --> 01:57:10,712
+Şimdi bunun daha ötesi var mı? Var. Neler yapabilirsiniz?
+
+508
+01:57:11,572 --> 01:57:29,491
+Burada yine mesela lnx'in nasıl bulunabileceği var. Ona siz bakarsınız. Daha iyi yaklaşımlar için ise, bu yaptığımız iş first order bir yaklaşımdı. Yani şurada biz x'den uzaktaki bir noktanın, yani x'i biliyoruz, x'in değerini biliyoruz.
+
+509
+01:57:39,060 --> 01:57:42,480
+Tam kesin değer değil de yaklaşık bir değer bizim için yeterli oluyor.
+
+510
+01:57:42,820 --> 01:57:47,180
+Fonksiyonun kendisini çalıştırmaktansa türeviyle işimizi görebileceğiz.
+
+511
+01:57:47,580 --> 01:57:50,360
+Şimdi bakın burada ne yapmışız? First order bir yaklaşım.
+
+512
+01:57:50,740 --> 01:57:56,400
+Eğer ben birinci dereceden değil de ikinci dereceden bir yaklaşıma geçersem, o zaman ben aslında şunu yapmış oluyorum.
+
+513
+01:57:57,171 --> 01:58:08,411
+O noktada lineer bir fonksiyon tanımlamıyorum da o noktada kuadratik bir fonksiyon. Yani ikinci dereceden bir fonksiyon tanımlıyorum. İkinci dereceden bir fonksiyon geçiriyorum orada.
+
+514
+01:58:10,996 --> 01:58:27,996
+Şu fonksiyonumuz buydu. Bu noktada ben gittim. Mesela birinci dereceden bir şey yaptım. Şöyle bir şey çıktı. İkinci dereceden bir şey yaparsam işte birazcık daha şöyle şuna daha yakın bir şey elde ederim. Daha da üste geçersem daha da yakın bir şeyler elde edebilirim. Ne kadar üst seviye dereceler alırsam...
+
+515
+01:58:28,692 --> 01:58:39,243
+Burada asıl fonksiyona o kadar daha yakın bir şeyler bulurur ve aradaki hata da o kadar azılır. Yani şurada yaklaşık bir şey söyledik ya, o hata da o kadar azı. Eğer ki şöyle bir şey olursa...
+
+516
+01:58:39,380 --> 01:58:59,460
+Buradaki fonksiyon zaten mesela dördüncü derecedense mesela, dördüncü derecede taylara geçtiğimde zaten direkt fonksiyonun kendisine erişir. Ama fonksiyonlarınız direkt o kadar düzgün olmayabilirler. Dolayısıyla hep yakın yakın daha yakın hale gelirsiniz. Hiçbir zaman tam aynısını bulmanız mümkün değil. Bunun örneğini göreceğiz zaten.
+
+517
+01:58:59,988 --> 01:59:07,728
+Şimdi işte Second Order, End Order Tyler'la da ne yapabilirsiniz? İstediğiniz kadar yaklaştırabilirsiniz.
+
+518
+01:59:08,128 --> 01:59:18,088
+Şimdi burada bunun basit bir örneği var. Şimdi bizim elimizde, şunu birazcık büyüsem, fx eşittir xpx, yani işte e üzeri x bunu ifade ediyor.
+
+519
+01:59:18,088 --> 01:59:25,588
+E üzeri x fonksiyonu var. Bu e üzeri x fonksiyonu kırmızıyla çizilmiş olan, şuraya bakalım.
+
+520
+01:59:27,060 --> 01:59:49,760
+Kırmızı ile şöyle gelmiş. Şuradan şöyle yukarıya doğru gidiyor. Şuradan şöyle yukarıya doğru gidiyor. Şimdi burada first order bir yaklaşım yaparsam ben tam şu noktadan bahsediyorum. Yaklaşık hangi noktada aproksimetre edeceğim? 0.25. 0.25 noktasında, şuna geri alayım da yerleri karışmasınlar.
+
+521
+01:59:50,899 --> 02:00:01,899
+0.25 noktasında ben bu fonksiyonu linear kabul edersem, bu fonksiyona nasıl yaklaşımlar sergileyebilirim?
+
+522
+02:00:03,419 --> 02:00:12,239
+Linear kabul edersem, yani şunu hesaplarsam bakın. Bunu nasıl hesaplayacağım? Şimdi x'i biliyor muyum ben? Biliyorum.
+
+523
+02:00:15,283 --> 02:00:36,443
+Belli, nasıl belli? Mesela ben 0.25 elimde ya, 0.25'i biliyorum ben. Mesela diyelim ki 0.5'i hesaplamak istiyorum. 0.5 değerinin, yani f fonksiyonunun 0.5'teki değerini hesaplamak istiyorum. Bu durumda ne yapmam gerekiyor? Delta X ne olacak bu sefer? O da 0.25 olacak değil mi? İkisini birden topladığımızda.
+
+524
+02:00:38,612 --> 02:01:00,492
+Dolayısıyla, burada ben istediğim herhangi bir değerini ne yapabilirim o fonksiyonun? Bulabilirim. İstediğim herhangi bir değerini. Ama ne kadar elimdeki değerden uzaklaşırsam o kadar ne yapabilirim? Hatalı bir şeyler yapalım. Delta X çünkü neydi? Ne kadar büyük uzaklıklardan bir yaklaştırma yaparsanız o kadar hatalı bir şey yapıyordunuz.
+
+525
+02:01:06,612 --> 02:01:18,572
+Şu yeşil olan, bir dakika, blues and green demişim. Green en sondaki, blues'lar da iki. Şimdi buradakilerden herhangi bir tanesi linear olması lazım.
+
+526
+02:01:19,112 --> 02:01:28,152
+Şimdi ilk önce sıfırı yapmışım. Sıfırıncı dereceden bir şey. Yani sıfırıncı dereceden aproksimet demek, bütün hepsine aynı şeyi vermek demek. Zaten kendisini vermişiz.
+
+527
+02:01:28,592 --> 02:01:31,632
+Şurada şöyle bir tane mavi bir çizgi görürsünüz. Bunun büyütülmüş hali burası.
+
+528
+02:01:32,095 --> 02:01:43,375
+Bu arada şurada şöyle mavi bir çizgi görüyorsunuz. O mavi bir çizgi lineer bir şey. O lineer bir çizginin anlamı da şuradaki sadece ben birinci dereceden benzetim yaptım. Yani şuradaki şu first order'ı kullandım demek.
+
+529
+02:01:43,859 --> 02:02:00,179
+Daha sonra, ondan sonraki maviler ise buralarda görüyorsunuz, işte ikinci dereceden, üçüncü dereceden, beşinci dereceden giderek artıyor. Burada kaça kadar gitmişim tam hatırlamıyorum. Tabii approximate tayları açıp bakabilirsiniz oradan. Ama giderek, mesela şu kırmızı gerçek yani.
+
+530
+02:02:00,564 --> 02:02:27,023
+Şu anda yeşil mesela elimde varmış. En son. Mesela herhalde 5-6 adım atmışım burada. Yani 5-6 dereceden yaklaştırmışım. Şu yeşile erişmişim. Yeşil bakın burada kırmızıya epey bir benziyor. Ama mesela şuralara dikkat edin. Şu noktadan sonra ne olmaya başlamış? Uzaklaşıyor ya daha uzaklar. Yakınlarda mesela artık kırmızıyı görmüyorsunuz değil mi? Yani 0.25'in yakınlarında kırmızı hiç gözükmüyor.
+
+531
+02:02:27,423 --> 02:02:52,564
+Çünkü yeşil onun üstünden geçmiş tam. Orada ona çok yakın değerler alabiliyor. Ama uzaklaştıkça kırmızı ve yeşil arasında, yani bizim son yaklaştırma fonksiyondaki en üst seviye yaklaştırma derecemizi de elde ettiğimiz fonksiyon, yakın yerlerde fonksiyona çok iyi oturmuş ama uzaklaştıkça işler bulutuyor. Bunun başka bir örneğini yine şeyde görebiliriz.
+
+532
+02:02:54,036 --> 02:03:15,316
+Mesela aynı fonksiyon için 1.25, mesela burada 0.25'te linear kabul ederek bu iştir. Yani linear ya da quadratic üst üste gidiyorlar. Tayları yaklaşımlarını yapmışız. Burada ise ne yapmışız? 1.25 için bunu gerçekleştirmişiz. 1.25 için aynı şeyler yine burada söz konusu, hiçbir farkı yok.
+
+533
+02:03:16,180 --> 02:03:39,840
+Başka fonksiyon mesela sinüs fonksiyonu. Burada fx eşittir sinüs x fonksiyonu. fx eşittir sinüs x fonksiyonu. x eşittir 25 için 15'e kadar çıkmışım burada bakın. 15. dereceye kadar tayları kullanmışız. Green dediğimiz şey işte last approximation. Red dediğimiz şey, red burada gözükmüyor. Epey bir oturmuş üstüne ama biraz daha bunu açarsak göreceksinizdir.
+
+534
+02:03:44,275 --> 02:03:54,028
+Yok. Neyse. Çok çok da önemli değil ama belli bir yere kadar bunlar birbirinin üstüne otururlar ama bir yerden sonra artık bu...
+
+535
+02:03:54,131 --> 02:04:11,112
+Ayrılmaya, birbirlerinden uzaklaşmaya başlarlar. Ama şurada mesela şu sıfırcı derecedendi, şu lineer birinci dereceden, belki şuradaki mesela birincisi şöyle ikinci dereceden bir şey, belki şuradaki şu üçüncü dereceden, dördüncü dereceden bunlar böyle derece derece artı artı ilerliyorlar.
+
+536
+02:04:17,456 --> 02:04:26,655
+Fx'de benzer değerlere sahip olan bir fonksiyon elde etme olasılığınızda en azından x'in yakın çevresinde bayağı artıyor.
+
+537
+02:04:27,456 --> 02:04:34,416
+Bu Tyler'la, yani bir fonksiyonu Tyler'ın serisini açmak aslında o şekilde de ifade edilir.
+
+538
+02:04:34,695 --> 02:04:37,996
+Herhangi bir fonksiyonu, türevi alınabilen çünkü burada türevini almanız gerekiyor.
+
+539
+02:04:42,068 --> 02:05:02,768
+Burada birinci derecede birinci türev var, ikinci derecede ikinci türev var, eninci derecede eninci türev var. Öyle bir sıkıntısı da var tabii. Onlar çok kolay hesaplanabilen fonksiyonlar değillerse, pahalılarsa, uzun zaman alıyorsa daha yüksek seviyelere gitmek istesek de gidemeyebiliriz. Sıkıntılarımız olabilir.
+
+540
+02:05:08,979 --> 02:05:26,739
+Tyler Approximation'dan hareketle bir görev gerçekleştireceğiz. Şöyle bir görev gerçekleştireceğiz. Bir fonksiyonun minimum değerini değil ama bir fonksiyonun kökünü bulacağız. Bir fonksiyonun kökü ile minimum arasında bir fark var mıdır? Bir fonksiyonun kökü ne demekti?
+
+541
+02:05:29,599 --> 02:05:31,359
+Bir fonksiyonun kökü sıfırlar.
+
+542
+02:05:32,939 --> 02:05:34,619
+Sıfır olan değerini bulmak.
+
+543
+02:05:34,931 --> 02:05:50,611
+Şimdi burada buna Newton-Raphson yöntemi diyeceğiz. First order'ı diyeceğiz bunun. Find a point x ver fx eşittir sıfır. Mesela türevinin sıfır olduğu noktayı değil de kendisinin sıfır olduğu noktayı bulmak istiyoruz.
+
+544
+02:05:57,939 --> 02:06:19,939
+First Order Tyler'ı kullanarak orada bir linear fonksiyon oluşturuyoruz. O linear fonksiyon şöyle bir şey, şu çizgi aslında şurada görürüz. O çizginin şurada x ekseni kestiği noktayı buluyoruz. Aynı işi tekrarlıyoruz. Yine yukarı çıkıyoruz. Burada da yine bu sefer...
+
+545
+02:06:20,884 --> 02:06:27,884
+Ne oluşturuyoruz? Linear bir şey oluşturuyoruz. O noktadaki neye eşittir arkadaşlar? Şu çizgi.
+
+546
+02:06:27,884 --> 02:06:45,884
+Tangent. Tangent. Türevi değil mi? Şu çizgi. Türevi. Dolayısıyla o noktadaki türevini takip ederek biz neyi bulabiliriz? İşte buradan buraya geçebiliriz. Sonra buraya, sonra buraya, sonra buraya. En sonunda burada görüyorsunuz köke doğru ne yapıyoruz bakın. Giderek yaklaşıyoruz. Tamam mı? Şurada.
+
+547
+02:06:46,355 --> 02:07:02,735
+Bu noktadan başladım. O noktadaki türevi buldum. Türevin x eksenini kestiği yeri buldum. Sonra o noktadan tekrardan o noktadaki türevi buldum. Bu şekilde adım adım adım adım ilerledim. Peki şimdi bunun bu adım adımı nasıl yazabilirim ben? Şuraya bakalım.
+
+548
+02:07:13,524 --> 02:07:29,243
+Xn noktasındaki türevi neye eşittir? Şimdi türev neydi arkadaşlar? Şurasının şuraya oranı. Burası neye eşittir? Burası. Şu yükseklik.
+
+549
+02:07:32,363 --> 02:07:37,764
+Fxn'dir değil mi? Fxn'dir değil mi? Yani şu anda n'de durduğumuzu düşünelim.
+
+550
+02:07:38,899 --> 02:07:51,899
+fxn bölü neresi? Şurası değil mi? Bakın şurası. xn-xn-1 Şurayı kavradık mı arkadaşlar? Burasının kavramanız önemli. Bakın şu nokta.
+
+551
+02:07:51,899 --> 02:08:06,763
+xn noktasındaki türev neye eşitmiş? fxn bölü xn-xn-1'e eşitmiş. Anlaşıldı mı burası? Şurasını şurasını oranı olarak yazdım sadece.
+
+552
+02:08:06,931 --> 02:08:24,051
+Şimdi ben burada bir değişiklik yapıyorum. Ne yapıyorum? Şunu aşağıya ve bunu yukarıya getiriyorum. Bunun altında yazılı olduğunu düşünün. Şuraları yer değiştiriyorum. Dolayısıyla xn-1, xn-1 eşittir fxn bölü f'in xn noktasındaki türevi oluyor. Doğru mu?
+
+553
+02:08:25,431 --> 02:08:33,072
+Ve ben bunu da şu hale getireyim. Bunu da şu hale getireyim. Şimdi neyi elde ettim bakın?
+
+554
+02:08:34,068 --> 02:08:39,028
+Eninci noktadaki halleri kullanarak n artı biri elde edebilir hale geldi. Görüyor musunuz?
+
+555
+02:08:40,788 --> 02:08:41,308
+Evet.
+
+556
+02:08:41,908 --> 02:08:48,488
+x n artı bir eşittir x n eksi. İşte burada o noktadaki f'i bulacağız, bölüleyeceğiz. F'in o noktadaki türevi diyeceğiz.
+
+557
+02:08:49,408 --> 02:08:53,628
+Şimdi ve n'i işte sıfırdan başlayıp adım adım herhangi bir yerden başlayarak ne yapabilirsiniz?
+
+558
+02:08:53,628 --> 02:08:58,048
+Türevin kökünün sıfır olduğu yere bu yöntemle varabilirsiniz.
+
+559
+02:08:58,479 --> 02:09:18,380
+Anlaşıldı mı burada yaptığımız iş? Bu şeyden farklı mesela. Deminkinde mesela epsilon yani step size çarpı türev vardı. Burada ise fxn bölü f'in türevi xn var. Görüyor musunuz? Buradaki iterasyon deminki iterasyonundan çok farklı bir şey. Deminki iterasyonumuz nasıldı bakın.
+
+560
+02:09:27,604 --> 02:09:39,164
+X'in ve eşittir Xolt eksi EPS çarpı DF'ydi. Bu DF dediğimiz şey Xolt noktasındaki F'in türevini gösteriyordu.
+
+561
+02:09:39,644 --> 02:09:41,764
+Şimdiki fonksiyonumuz ise oldukça farklı.
+
+562
+02:09:48,564 --> 02:09:52,224
+n artı bir iştir. x n eksi gibi EPS'e de yer almıyor.
+
+563
+02:09:52,903 --> 02:09:55,264
+Şimdi bunun bir şeyi var.
+
+564
+02:09:58,043 --> 02:10:00,923
+Çalıştırırsam acaba görebilir misiniz? Deneyeyim.
+
+565
+02:10:02,724 --> 02:10:04,304
+Şu anda görüyor musunuz arkadaşlar?
+
+566
+02:10:06,543 --> 02:10:07,184
+Evet hocam.
+
+567
+02:10:08,243 --> 02:10:10,363
+Tamam. İşte burada görüyorsunuz.
+
+568
+02:10:10,363 --> 02:10:13,123
+Adım adım nasıl şeyi bulmaya çalışıyor.
+
+569
+02:10:15,572 --> 02:10:41,311
+Fonksiyonun sıfır olduğu noktayı bulmaya çalışıyor. Bir kere daha görelim. Mesela x1'den başladı burada. Sonra buraya türevini kullanarak buraya geldi. Orada buraya gitti. Bu şekilde bu tarafa geçti. Birazdan yine bu tarafa doğru hareket etmeye başlayacak. Adım adım adım ilerleyerek ne yapıyor? İstediğimiz işlemi gerçekleştiriyor. Peki, sorumuz şu.
+
+570
+02:10:42,100 --> 02:10:49,500
+Bu güzel süreci, acaba biz bir fonksiyonun minimum noktasını bulmak için de kullanabilir miyiz?
+
+571
+02:10:50,500 --> 02:10:58,699
+Şimdi, bir fonksiyonun kökü ne demekti?
+
+572
+02:10:59,500 --> 02:11:02,060
+fx'in 0 olduğu yer.
+
+573
+02:11:02,319 --> 02:11:06,940
+Peki, bir fonksiyonun minimum olduğu nokta ne demekti?
+
+574
+02:11:07,699 --> 02:11:08,980
+fx'in...
+
+575
+02:11:09,108 --> 02:11:22,828
+Türevinin 0 olduğu yer değil mi? Yani bir tanesinde fx eşittir 0, bu kök. Bir tanesinde fx'in türevi 0. Onu bulmaya çalışıyorum. İkisinin arasındaki fark bu. O zaman...
+
+576
+02:11:28,627 --> 02:11:40,867
+Mesela burada işte karakökükiyi bu yöntemle bulmak isterseniz, çözmek isterseniz nasıl çözüldüğünü gösteriyor.
+
+577
+02:11:41,367 --> 02:11:48,427
+Ama bize asıl ilgilendiren kısım orası değil. Asıl ilgilendiren kısım burası.
+
+578
+02:11:52,020 --> 02:12:04,300
+Şimdi bakalım ne yapıyor burada. Şimdi First Order Tyler'da şöyle bir şey vardı. Şunu yazdık zaten. Bir saniye bunu daha net bir şekilde yazmış olabilir miyim bir yere?
+
+579
+02:12:08,627 --> 02:12:13,068
+Tamam, burası bence iyi kayıt. Şimdi Newton Raphson'ın first order'ını gördük.
+
+580
+02:12:14,007 --> 02:12:18,047
+Ve first order'ın bulduğu şey ne? FX'in sıfır olduğu yer değil mi?
+
+581
+02:12:20,148 --> 02:12:25,608
+Ve biz daha önce gradient descent'e gördük. Gradient descent'e şöyle bir şey yapıyordu bakın. Görüyor musunuz?
+
+582
+02:12:25,608 --> 02:12:30,427
+Bu neyi buluyordu? Türevin sıfıra eşit olduğu yer. Yani şunu buluyordu değil mi yine?
+
+583
+02:12:31,155 --> 02:12:41,395
+Ben burada fonksiyonun kendisinin değil de türevinin sıfır olduğu yeri acaba bu deminki yaklaşımda bulmaya kalkabilir miyim?
+
+584
+02:12:42,076 --> 02:12:42,615
+Fikir bu.
+
+585
+02:12:43,336 --> 02:12:47,055
+Bakalım burada buna dair bir şeyler var mı elimizde?
+
+586
+02:12:50,676 --> 02:13:02,736
+According to the first order Tyler to find fx artı delta x eşittir 0. Bu durumda x dediğimiz şey şu oluyordu. Bu kadarlık adımlar ata ata ilerliyordu.
+
+587
+02:13:03,976 --> 02:13:10,936
+Şunun türevinin 0 olduğu yeri bulmak için ise şurada gördüğümüz şu eşitliğin her iki tarafının türevini alalım.
+
+588
+02:13:12,467 --> 02:13:23,588
+El iki tarafın türevini aldım. El iki tarafın türevini aldığımızda burada bir türev geliyor. Şurada bir türev geliyor. Burada ama ikinci dereceden bir türev geliyor. Zaten burada türev vardı ya. İkinci dereceden bir türev geliyor.
+
+589
+02:13:23,588 --> 02:13:40,108
+Ve buradaki ikinci dereceden türevi yine yazmaya kalkarsak şurası f'in yani xn artı 1 eşittir xn eksi f'in türevi xn bölü f'in ikinci dereceden türevi xn haline geliyor.
+
+590
+02:13:40,819 --> 02:13:52,659
+Yani ben buradaki aynı mantığı bir fonksiyonun sıfıra eşit olduğu yeri bulmak için değil de bir fonksiyonun türevinin sıfıra eşit olduğu yeri bulmak için de kullanabilirim.
+
+591
+02:13:52,840 --> 02:14:02,899
+Ve burada şu gördüğünüz, şurada bakın f yerine df var, df yerine ddf var. ddf demek ikinci dereceden türevi demek.
+
+592
+02:14:04,212 --> 02:14:13,311
+Ve bu yaklaşımla yine neyi bulmayı amaçlayabilirim? Türevin sıfır olduğu noktayı bulmayı amaçlayabilirim.
+
+593
+02:14:13,492 --> 02:14:17,252
+Şimdi bakalım böyle bir şey yaparsak bu bize bir şey sağlıyor mu?
+
+594
+02:14:18,372 --> 02:14:21,212
+Yani ben birinci dereceden...
+
+595
+02:14:24,884 --> 02:14:33,684
+Tider Approximation'la bulunmuş olan formülü alacağım. Bu sefer türevin 0 olduğu yeri bulmak için kullanacağım.
+
+596
+02:14:34,844 --> 02:14:36,064
+Bakalım ne olacak?
+
+597
+02:14:38,543 --> 02:14:45,963
+Şimdi Gradient Descent Step Size 0.01, Starting Point Eksi 0.1 demişiz.
+
+598
+02:14:46,043 --> 02:14:48,003
+Mesela şu noktadan başlıyorlar. İkisi de aynı noktadan başlıyorlar.
+
+599
+02:14:51,667 --> 02:15:15,007
+DoesNotConvush bit 200 iterasyonda ne yapamamış? Erişememiş. Buysa 20 iterasyonda erişmiş. Epey bir hızlı gibi gözüküyor. Ve de burada enteresan bir mevzu var. Burada ne yok arkadaşlar? Evet, burada ne yok? Bakın. EPS yok. Yani learning rate yok.
+
+600
+02:15:15,796 --> 02:15:19,976
+Learning Rate'i aramakla ne yapmayacaksınız? Uğraşmayacaksınız hiç.
+
+601
+02:15:21,856 --> 02:15:26,796
+Şimdi mesela şuna bakalım.
+
+602
+02:15:26,796 --> 02:15:28,296
+Bu taraf, diğer taraftan.
+
+603
+02:15:29,836 --> 02:15:31,236
+Şimdi şurasını bir inceleyelim.
+
+604
+02:15:31,776 --> 02:15:34,956
+Bir dakika. Şu tarafından başlamış herhalde bu.
+
+605
+02:15:35,507 --> 02:15:49,027
+Bir noktası şu mavi olan, şu mavi gördüğünüz şey ne arkadaşlar? F'in kendisi. Kırmızı olan şey F'in türevi. Şu kırmızı F'in türevi. Yeşil olan şey ise F'in ikinci dereceden türevi.
+
+606
+02:15:49,684 --> 02:16:04,384
+Burada korkunç derecede hızlı ilerlemiş zaten fonksiyon. İşte 5. 6. iterasyonda zaten direkt 0'ı şey yapmış, konverj etmiş buraya. Yani bu deminkine göre oldukça hızlı bir fonksiyonun olduğu gözüküyor.
+
+607
+02:16:05,003 --> 02:16:15,372
+Eğer ben gidip f'in 0 olduğu noktayı bulmaya kalkarsam, yani first order bir şey yapmaya kalkarsam da yine bunu da çok hızlı bir şekilde bulabiliyor. Onda da herhangi bir şey yok. Yani şuradaki...
+
+608
+02:16:15,539 --> 02:16:21,460
+F'in türevinin sıfır olduğu yeri bulan, burası ise F'in kendisinin sıfır olduğu yeri bulan kısım.
+
+609
+02:16:24,916 --> 02:16:44,115
+Burada Newton-Raphson'un problemini anlatıyor. Şimdilik ona çok takılmayalım. Ama Newton-Raphson'un kabaca şunu söyleyebiliriz. Çok daha hızlı konverjli. Yani çok daha az adım atarak ilerleyebiliyorsunuz. Fakat bir kötü tarafı var. O da ne?
+
+610
+02:16:50,036 --> 02:16:51,036
+Şurada...
+
+611
+02:16:51,603 --> 02:16:57,423
+Şimdi ikisinde de, yani şu ikisini karşılaştırıyoruz şu anda. Çünkü aynı amaçla kullanan bu ikisi.
+
+612
+02:16:57,563 --> 02:17:00,743
+Şimdi bu yukarıdaki başka bir amaçla kullanılıyor. Aşağıdakilerin ikisi aynı amaçla kullanılıyor.
+
+613
+02:17:00,743 --> 02:17:06,343
+Yani f'in türevinin sıfır olduğu yeri kullanmak için kullanılanlar bu ikisi.
+
+614
+02:17:06,623 --> 02:17:11,363
+Şimdi bu ikisini karşılaştırdığımızda burada da df var. Df'nin hesaplanması gerekiyor. Burada da df'nin hesaplanması gerekiyor.
+
+615
+02:17:11,443 --> 02:17:15,763
+Bu tamam. Bunda bir anormal bir durum yok. Yani df dediğimiz şey bir vektör. Değil mi?
+
+616
+02:17:16,123 --> 02:17:18,543
+Her bir boyut için türevi hesaplıyoruz.
+
+617
+02:17:19,188 --> 02:17:46,188
+Peki DDF dediğimiz şey ne demek? DDF dediğimiz şey ikinci dereceden türev demek. İkinci dereceden türev dediğimiz şey de sizin her bir boyutunuzun her bir boyutuna göre türev almak anlamına geliyor. Ve bu bir matriz oluyor arkadaşlar. Nasıl bir matriz oluyor? D boyutunuz varsa D çarpı D'lik bir matriz hesaplıyorsunuz.
+
+618
+02:17:47,188 --> 02:17:59,927
+Eğer ki 10 tane parametreniz varsa, objektif fonksiyonun 10 değişkeni varsa, 10 çarpı 10'luk bir matriz hesaplıyorsunuz.
+
+619
+02:17:59,988 --> 02:18:02,847
+100 tane varsa 100 çarpı 100'luk bir matriz hesaplıyorsunuz.
+
+620
+02:18:03,288 --> 02:18:08,788
+Bu ikinci dereceden türevin değerlerini gösteren fonksiyonun, matrizin bir ismi var. Bilen var mı?
+
+621
+02:18:11,507 --> 02:18:16,108
+İkinci dereceden türevleri, değerlerini gösteren matris neydi?
+
+622
+02:18:16,608 --> 02:18:17,987
+Hesiyan matris mi hocam?
+
+623
+02:18:18,487 --> 02:18:20,747
+Hesiyan birinci, Jacobayan ikinciydi.
+
+624
+02:18:21,288 --> 02:18:22,688
+Yok, Hesiyan ikinci.
+
+625
+02:18:22,847 --> 02:18:23,567
+Hesiyan ikinci.
+
+626
+02:18:23,567 --> 02:18:28,427
+Evet, Hesiyan ikinci derece. Hesiyan matrisini hesaplamanız gerekiyor.
+
+627
+02:18:29,047 --> 02:18:31,608
+Ve o matrisini ne yapmanız gerekiyor bakın?
+
+628
+02:18:33,148 --> 02:18:37,628
+Bu bir vektör. Vektör bölüm matrisi. Matrisini bölmek diye bir şey var mı arkadaşlar?
+
+629
+02:18:39,731 --> 02:18:59,412
+Matriste bölünür mü bir şey? Bölünmez. Matristen önce ne yapabilirsiniz? Çarpabilirsiniz değil mi? Matriste bölüm diye bir şey tanımlı değil. Matriste çarpmak tarafını. Matriste o zaman çarpma dönüştürmeniz lazım. O zaman çarpma dönüştürmek için de ne yapmanız lazım? Bu hesapladığınız matrisin neyini almanız lazım?
+
+630
+02:19:01,459 --> 02:19:28,399
+Tersini bulmanız lazım değil mi? O maddesinin tersini de bulacaksınız. Yani 12 önce o maddesi hesaplayacaksınız. Ondan sonra bir de onun tersini bulacaksınız. Ki maddes tersi almak boyut sayısı arttığında uzun süren bir işlem olabiliyor. Ondan sonra DFL çarpacaksınız. Dolayısıyla daha az sayıda adımla konverge edebiliyor bu algoritma. Fakat her bir adımın alacağı süre bundan çok daha fazla.
+
+631
+02:19:29,108 --> 02:19:37,047
+Yani burada 10 adımla ben bunu yaptım. Burada bunu 100 adımla yaptım. Belki bu 100 adım bundan daha kısadır. Anlatabildim mi? Hesaplanması.
+
+632
+02:19:38,528 --> 02:19:44,927
+Dolayısıyla sadece iterasyon sayısı açısından değerlendirmemek lazım. Arka tarafta işlemin sürmesi açısından da bakmak gerekiyor.
+
+633
+02:19:44,927 --> 02:19:52,507
+Şimdi saat 4.23 geçiyor.
+
+634
+02:19:53,843 --> 02:20:14,843
+İkincisini yaptık. Daha 3 var. 2 boyutları göreceğiz. Sonra 4 var. Onları ikinci haftaya da bakıyoruz. Şöyle bir şey yapalım. 10 dakika ara verelim. Ondan sonra bir kısa bir ders daha yapalım. Birazcık daha şey olsun. Biraz daha gidebildiğimiz kadar ileri gidelim. Çünkü ilerleyen haftalarda...
+
+635
+02:20:16,147 --> 02:20:27,387
+Kollar birazcık daha sıkışabilirler. O yüzden birazcık daha, yani çok ilerlemeyeceğiz. 20 dakikalık falan bir ders daha yaparız. O şekilde kapatırız bugünü.
+
+636
+02:20:28,187 --> 02:20:38,327
+Şimdi saat 16.24 geçiyor. 10 dakikada ise 11 dakika 35. 16.35'te tekrardan bir araya gelelim arkadaşlar. Tamam mıdır?
+
+637
+02:31:47,603 --> 02:31:48,164
+Merhaba arkadaşlar.
+
+638
+02:32:36,308 --> 02:32:39,148
+Üçüncü seksiyon geldi mi arkadaşlar?
+
+639
+02:32:41,087 --> 02:32:41,747
+Evet hocam.
+
+640
+02:32:41,747 --> 02:32:42,587
+Tamam.
+
+641
+02:32:43,548 --> 02:32:54,208
+Şimdi, türevlerin hesaplanmasında kullanılan üniversite yöntemler var ama şimdilik onların detayına girmeyeceğim.
+
+642
+02:32:55,008 --> 02:32:59,247
+Burada da forward ve backward inference yöntemleri var.
+
+643
+02:33:03,667 --> 02:33:10,887
+Fonksiyonun kendisini kullanarak hesaplamak aslında. Türev kurallarını kullanarak değil de.
+
+644
+02:33:13,288 --> 02:33:17,567
+Yani şöyle bir şey, fx'in türevi yaklaşık olarak yine burada.
+
+645
+02:33:17,727 --> 02:33:38,307
+İşte fx artı delta x fx bölü delta şeklinde hesapların. Yani herhangi bir şekilde türev alamıyorsanız, almak istemiyorsanız vs. vs. O durumlarda böyle yaklaşık işlemler yapmak makul hareketler olabiliyor. Forward, backward ve bu ikisinin de ortalaması central. En iyi çalışır. Bunları kullanabiliyorsunuz.
+
+646
+02:33:44,147 --> 02:33:48,628
+Burada türevin anlamadığı noktalar onları göstermiş.
+
+647
+02:33:49,172 --> 02:34:06,512
+Daha yüksek dereceden türevleri de yine ikinci dereceden, yani birinci dereceden türevleri fx'in kendisini kullanarak hesaplayabiliyorsunuz. İkinci dereceden türevleri de birinci dereceden türevleri kullanarak hesaplayabiliyorsunuz. Dolayısıyla ikinci dereceden türevleri de fx'in kendisini kullanarak hesaplayabiliyorsunuz. Bu şekilde ifade edebilirim.
+
+648
+02:34:07,051 --> 02:34:15,872
+Burada mesela işte birinci dereceden, ikinci dereceden türevlerin hepsi var. Bunların hepsi kullanılabiliyorlar. Daha üst seviyelerde çıkarılabilir.
+
+649
+02:34:17,172 --> 02:34:27,432
+Bizim birkaç tane tamamına başlayalım. Daha önceki dersimizde, deminki slide'lerde fonksiyonlar hep bir boyutluydu.
+
+650
+02:34:27,432 --> 02:34:33,132
+Kabaca hep öyle hatırladın ama aslında birden fazla fonksiyon var.
+
+651
+02:34:34,872 --> 02:34:36,092
+Birden fazla boyut var.
+
+652
+02:34:39,059 --> 02:34:54,000
+Şimdi buraya bakalım. Şu nokta bizim kırmızı noktamız. Bu noktada aslında iki tane türev var. İki tane türevin her birini şurada oklarını görüyorsunuz. Yani bir y boyutuna göre türev var, bir de x boyutuna göre türev var.
+
+653
+02:34:54,399 --> 02:35:09,579
+Y boyutuna göre türev burada gözüküyor. X boyutuna göre türev burada gözüküyor. Şu noktada türeve uygun hareket etmek için aslında bu iki doğrultunun her ikisinde birden olan şey, şöyle aşağı doğru belki bir hareket etmeniz gerekiyor.
+
+654
+02:35:10,420 --> 02:35:12,020
+Tabi ters yöne gidiyorsanız bu tarafa doğru.
+
+655
+02:35:12,468 --> 02:35:35,188
+Dolayısıyla aslında her bir türev dediğimiz şey birden fazla bileşenden oluşuyor. Yani bir yön aslında kaç tane boyuttaysa o yön o kadar tane bileşenden oluşuyor. Bunu şu şekilde ifade edebiliriz. Herhangi bir fonksiyonun türevi aslında her bir boyutuna göre türevlerinden oluşur.
+
+656
+02:35:40,147 --> 02:35:46,747
+Burada tabi genelde sütun bazlı bir gösterim olur. Burada satırı transposisi yazılmış.
+
+657
+02:35:49,147 --> 02:35:54,747
+F türevi, bu da bir fonksiyon türevi olarak rn'den rn'e gidiyor.
+
+658
+02:36:01,172 --> 02:36:04,092
+Burası da zaten klasik bir şey.
+
+659
+02:36:06,492 --> 02:36:11,272
+Şimdi kuadratik bir fonksiyonlardan bahsedeceğiz. Kuadratik fonksiyonlardan bahsedeceğiz.
+
+660
+02:36:11,412 --> 02:36:17,912
+Kuadratik fonksiyonların, şimdi baktığınız zaman kuadratik demek ikinci dereceden demek.
+
+661
+02:36:18,112 --> 02:36:21,891
+İsmin birazcık böyle havalı falan gibi gözüküyor ama ikinci dereceden fonksiyon demek kuadratik.
+
+662
+02:36:22,804 --> 02:36:31,563
+Bunların genel bir formatları var, genel bir yazılışları var. Şurada gördüğünüz şekilde bütün kvadratik fonksiyonları tanıtılmayabilirsiniz.
+
+663
+02:36:31,664 --> 02:36:38,484
+Bu şekilde yazabilirsiniz. Yani x'in transpozisi çarpı q çarpı x'in kendisi.
+
+664
+02:36:39,263 --> 02:36:48,724
+Buradaki q diye ifade ettiğimiz şey bir matriz. Buradaki b diye ifade ettiğimiz şey bir vektör. Buradaki c diye ifade ettiğimiz şey tek bir sayıdan oluşuyor.
+
+665
+02:36:49,427 --> 02:37:03,427
+Eğer Q matrisi pozitif definite ise, yani pozitif definite matrisler, semi definite matrisler onları biliyor musunuz? Hatırlıyor musunuz? Linear cevirde bunlar vardı ama...
+
+666
+02:37:09,363 --> 02:37:17,195
+Hatırlamıyorsunuz galiba. Peki, bütün şeyleri aygın...
+
+667
+02:37:17,716 --> 02:37:45,675
+Valu'ları sıfıra eşit ya da sıfırdan büyük olanlara semidefinit matrizler, pozitif semidefinit matrizler deniyor. Hepsi sıfırdan büyükse pozitif definite matriz oluyor. Peki bunlar böyle böyle bir şeyler olduğu zaman bunların bizim için ne anlamı var? Bunların anlamı şu. Eğer ki bu Q maddesi pozitif definite ise, işte bu böyle yukarıya doğru bakıyor, şurada görüyorsunuz. Ve bu fonksiyon nasıl bir fonksiyondur arkadaşlar?
+
+668
+02:37:45,716 --> 02:37:49,096
+Arkadaşlar, şurada gördüğünüz fonksiyon.
+
+669
+02:37:49,256 --> 02:37:49,876
+Parabolik.
+
+670
+02:37:51,896 --> 02:37:53,175
+Konveks.
+
+671
+02:37:53,995 --> 02:37:57,355
+Aynen öyle. Bizim asıl ilgilendiğimiz kısım konveks olması.
+
+672
+02:37:57,815 --> 02:37:59,736
+Kuadritik fonksiyonları çok seviyoruz.
+
+673
+02:37:59,815 --> 02:38:05,155
+Kuadritik fonksiyonları tabii belli durumlar için bu geçerli.
+
+674
+02:38:05,155 --> 02:38:07,155
+Mesela buradaki gibi Q'nun...
+
+675
+02:38:07,731 --> 02:38:16,811
+Pozitif Definite ya da pozitif Semi Definite de yine fena değil belki ama asıl güzel an tam pozitif Definite olması.
+
+676
+02:38:17,471 --> 02:38:21,671
+Bu durumda tam bir konveks fonksiyon oluyor ve bunu da optimizasyon yapmak çok kolay oluyor.
+
+677
+02:38:22,331 --> 02:38:28,912
+Eğer ki Q negatif Definite ise o da şu hale geliyor. Şurada gördüğünüz gibi.
+
+678
+02:38:29,427 --> 02:38:35,007
+Bunda da optimizasyon yapmak kolay. Çünkü zaten bunu ters çevirebilirsiniz kolaylıkla. Değil mi? Bunda da sıkıntı yok.
+
+679
+02:38:35,747 --> 02:38:40,747
+Problemli olan kısım ise Q'nun indefinite olması. Yani tanımsız olması.
+
+680
+02:38:40,867 --> 02:38:47,007
+Q'nun indefinite olmasının anlamı bir tane eigen values'unun pozitif, bir tane eigen values'unun negatif olması.
+
+681
+02:38:47,007 --> 02:38:52,827
+Yani ikisi birden pozitifse pozitif definite, ikisi birden negatifse negative definite.
+
+682
+02:38:55,424 --> 02:39:01,004
+Biri pozitif, biri negatif ise bu zaman indefinite yani tanımsız matris haline geliyor.
+
+683
+02:39:01,444 --> 02:39:08,224
+Tanımsız matris olduğunda da aslında kuadratik bir fonksiyon eğer tanımsız ise bunun şekli şurada gördüğünüz gibi bir şey.
+
+684
+02:39:09,324 --> 02:39:11,684
+Şimdi buna eğer fonksiyonu denir.
+
+685
+02:39:12,595 --> 02:39:31,275
+Yani atın eğri gibi. Şurada atın bacağı var. Pardon, atın bacağı değil. Onun kafası var. Şurada öyle söyledi. Siz şuradan bacaklarınızı uzatıyorsunuz, biniyorsunuz üstüne. Burası eğer. Eğre benzediği için böyle denemiş. Bu fonksiyonun kötü tarafı, bunun da optimizasyon yapmıyor. Yani öyle bir nokta var ki burada mesela.
+
+686
+02:39:32,084 --> 02:39:47,704
+Bir tarafa doğru gittiğinizde türev artıyor, bir tarafa doğru gittiğinizde türev azalıyor. Ne tarafa doğru gideceğinizi çok fazla göremiyorsunuz. Bir nokta var fakat o noktanın türevi sıfır, fakat o nokta minimum nokta değil. Bu da başka kötü bir taraf.
+
+687
+02:40:00,000 --> 02:40:11,000
+Teknik Üniversitesi'nin tam kesiştiği noktada mesela bir sıfır türevli bir nokta var. Fakat o nokta ne değil arkadaşlar? Minimum değil.
+
+688
+02:40:11,000 --> 02:40:20,000
+Ve biz eğer ki o noktaya gelirsek ne yapamayız oradan? Çıkamayız.
+
+689
+02:40:20,000 --> 02:40:26,000
+Çıkamayız. Oraya takılırız değil mi? Aynen deminki derste vardı ya hani şey vardı.
+
+690
+02:40:26,995 --> 02:40:52,315
+Hani şu tarafa, şuradan başlarsam başka bir yere varıyordu, öteki taraftan başlarsam başka bir yere varıyordu. Orada da aslında bir tane subtle point vardı. O subtle point aslında kendisi minimum olmayan ama bir şekilde türevi sıfır olduğu için türevi kullanan bütün fonksiyonların ne yaptığı, oraya takıldığı, oraya açmayı başaramadıkları, açmaların garanti olmadıkları yerler. Tamam mı? Bu subtle pointler o noktada.
+
+691
+02:40:54,995 --> 02:41:04,955
+Mesela yapay sinir ağları açısından düşünürsek, yapay sinir ağlarının uzaylarının içerisinde çok fazla mektarda saddle point olduğu genelde ifade ediliyor.
+
+692
+02:41:05,435 --> 02:41:14,235
+Genelde takılan yerler böyle yerler oluyorlarmış, öyle diyorlar. Ben gözümle görmedim ama. Gözümle derken birinci elden deneyimlemedim.
+
+693
+02:41:14,932 --> 02:41:34,891
+Bu kadarıyla fonksiyonları yazmak, çizdirmek bunlar oldukça basit. Bizim klasik, normal yazdırdığımız, yani lisede falan gördüğümüz formatıyla mesela şu gördüğünüz şey, Q'nun, B'nin, C'nin şunlar olması, FX dediğimiz şey şuna denk geliyor. Onları zaten bakarsınız, bunlar çok kompleks şeyler değiller.
+
+694
+02:41:36,211 --> 02:41:44,211
+Şimdi bizi ilgilendiren kısım ise, asıl bu kuadratik fonksiyonlarda optimizasyon yapmak.
+
+695
+02:41:46,211 --> 02:41:48,211
+Peki biz burada nasıl optimizasyon yapacağız?
+
+696
+02:41:48,211 --> 02:41:56,211
+Şimdi şurayı gördüğümüzde bakın şu bir fonksiyon, kuadratik bir fonksiyon ve pozitif definite bir fonksiyon olduğu belli çünkü yukarı doğru değil mi?
+
+697
+02:41:57,211 --> 02:42:02,891
+Ve bunu ben işte demin gördüğünüz o izohips eğrileri üzerinden yazarsam, çizdirirsem şöyle bir şey görüyorum.
+
+698
+02:42:02,963 --> 02:42:23,304
+Burada ben bir yerden başlayacağım ve bir noktaya varacağım. Bakalım neler olacak? Çeşitli şu ana kadar görmüş olduğumuz yapılarla bakacağız. Bu da deminki gördüğümüz R fonksiyonu. İşte eğer Q şu olursa, B şu ve C şu olursa mesela şöyle bir fonksiyon karşımıza geliyormuş. 3 boyutta hali bu. Altındaki izo-hips evleriyle oluşturan hali de.
+
+699
+02:42:28,628 --> 02:42:39,028
+Şu şekilde bir QBC'sini bulmak falan bunlar mümkün şeyler. Çok kritik şeyler değiller. Hesyan maddesinden bahsetmiştik. Birazdan kullanacağız da o yüzden burada gelmiş.
+
+700
+02:42:39,028 --> 02:42:55,427
+Şimdi demin neyi gördük? Bir tane gradiyant vektörünü gördük. Gradiyant vektöründe neydi? Her bir boyuta göre bir türev vardı. Neredeydi onu? Çizdirdiğimiz yer bakalım. Şuradaydı bakalım.
+
+701
+02:42:55,924 --> 02:43:00,164
+Hatta mal onu şuraya koyalım. Yan yana dursunlar. Farklarımı görelim.
+
+702
+02:43:03,412 --> 02:43:30,811
+Bununla bunun farkını bariz görebiliyor muyuz? Bir kere bu bir vektör, bu bir matriz. Burada ne var? Bakın. Şimdi yukarıdan aşağı doğru ya da bu tarafa bu simetrik bir matriz. İlk önce onu söyleyeyim. Yani burası ile burası aynı aslında. Burada aynı değil gibi gözüküyorlar ama bununla bunların arasındaki fark nedir arkadaşlar? İlk önce x1'e göre türeval, sonra x2'ye göre türeval diyor bu. Burası ise önce x2'ye göre türeval, sonra x1'e göre türeval diyor. Farklı sırada türevalı sırası sonuç değişir mi?
+
+703
+02:43:31,412 --> 02:43:32,731
+Değişmez.
+
+704
+02:43:36,731 --> 02:43:39,912
+Şimdi burada ne varmış bakalım.
+
+705
+02:43:40,832 --> 02:43:46,512
+X'in birinci boyuta göre iki kez türev almaktan bahsediyor.
+
+706
+02:43:46,995 --> 02:44:03,556
+Şurada da ikinci boyuta göre iki kez türev almaktan mahsup oluyor. Burada da eninci boyut artık sizin fonksiyonunuz neyse ona göre iki kez türev almaktan mahsup oluyor. Burada ise işte ilk önce şuna göre sonra şuna göre, sonra şuna göre türevler oluşuyor ve bu S-Yav Matesi ismiyle adlandırılıyor.
+
+707
+02:44:15,667 --> 02:44:17,247
+Yaptırmışım bir saniye.
+
+708
+02:44:19,628 --> 02:44:28,968
+Tamam, şurayı geçelim. Bunlar zaten ikinci dereceden türevler neye eşit oluyorlar aslında birazcık gösteriyor.
+
+709
+02:44:29,727 --> 02:44:34,167
+Şimdi şurasını düşünürseniz biraz yoralım kafamızı.
+
+710
+02:44:34,167 --> 02:44:38,407
+Şimdi iki kez türev alacağız değil mi? İkinci dereceden iki kez türev alacağız.
+
+711
+02:44:38,727 --> 02:44:42,167
+İki kez türev aldığımızda şunun...
+
+712
+02:44:43,156 --> 02:44:56,156
+Burası hani x kare gibi düşünen, mesela 3x kare gibisinden bir şey olduğunu düşünün. Buradaki bu x'ler ne olacaklar? Gidecekler ve tek bir tane sayı kalacak değil mi? Ama işte bu...
+
+713
+02:44:56,404 --> 02:45:10,824
+Tek değişkenli olduğunda tek bir tane sayı kalacak. Ama iki değişkenli olduğunda 2 çarpı 2'lik bir matriz burada karşımıza çıkıyor. Bizim buradaki Q diye ifade ettiğimiz şey aslında demin gördüğümüz Hesya matrisine denk geliyor.
+
+714
+02:45:11,924 --> 02:45:16,811
+Neyse, şimdi orası önemli değil. Şimdi asıl bizim ilgileneceğimiz mevzu...
+
+715
+02:45:17,108 --> 02:45:20,468
+Bu iki boyutlu uzayda optimizasyon yapmak.
+
+716
+02:45:20,567 --> 02:45:24,268
+Şimdi buraya baktığımızda önceden bunların hepsi tek birer sayıdı değil mi arkadaşlar?
+
+717
+02:45:24,448 --> 02:45:30,988
+Bakın, new da tek bir sayıydı, old da tek bir sayıdı, EPS de tek bir sayıdı, DF de tek bir sayıydı.
+
+718
+02:45:31,948 --> 02:45:35,587
+Şimdi EPS dediğimiz şey bir kat sayı, o yüzden hala bir sayı.
+
+719
+02:45:36,507 --> 02:45:41,108
+Fakat, n boyut için düşünürsek biz bunları, Xnew dediğimiz şey...
+
+720
+02:45:41,940 --> 02:45:52,180
+n'e birlik bir vektör olacak. x-oq dediğimiz şey yine n'e birlik bir vektör olacak. Eps sayı zaten. df dediğimiz şey de yine n'e birlik bir vektör olacak.
+
+721
+02:45:54,600 --> 02:46:04,440
+Peki, Newton-Rabson'un ikinci hali, yani şurasına bakarsak, mesela ben şunu şu halde yazmamız gerektiğini söylemiştim hatırlarsanız az önce.
+
+722
+02:46:05,876 --> 02:46:10,076
+Çünkü bölme diye bir şey yok. O yüzden tersiyle çarpmaktan bahsediyorduk.
+
+723
+02:46:10,556 --> 02:46:18,316
+Buraya baktığımız zaman şu ddf diye ifade ettiğim şey 2x2 ya da d boyutuysa d çarpı d'lik bir şey olacak.
+
+724
+02:46:19,116 --> 02:46:23,876
+Ve dolayısıyla işte d çarpı d'lik bir şey, d çarpı bir bir şey çarpınızda d çarpı bir bir şey deneceksiniz.
+
+725
+02:46:23,976 --> 02:46:27,855
+Dolayısıyla bunlar birbirleriyle işleme girebilir halde olacaklar.
+
+726
+02:46:27,956 --> 02:46:29,175
+En boyutlu hali içinde.
+
+727
+02:46:30,131 --> 02:46:38,432
+Burada determinantın geometrik manası, çünkü tersinde olurken determinant da kullanılıyor.
+
+728
+02:46:39,191 --> 02:46:44,492
+Onlar var, buralar çok çok önemli değil. Bir matrisin tersinde almak ne demektir? Onu anlatıyorum burada.
+
+729
+02:46:45,932 --> 02:46:49,631
+Burası belki birazcık ilginizi çekebilir, önemli olabilir.
+
+730
+02:46:51,631 --> 02:46:54,131
+Bir matrisin tersinde almanın...
+
+731
+02:46:55,443 --> 02:47:12,083
+Süresi. Neye bağlı? Matrisin tek bir satırının değerine bağlı olarak. Burada matris size'ı arttıkça görüyorsunuz. Gerekli olan yani inverse için gerekli olan zaman ne oluyor? Bakın eksponansiyel bir şekilde yukarıya doğru gidiyor.
+
+732
+02:47:12,083 --> 02:47:22,023
+Yani ne kadar büyük bir matrisiniz olursa işler o kadar daha kötüye doğru ilerliyorlar. Dolayısıyla bu pahalı bir iş.
+
+733
+02:47:23,667 --> 02:47:43,628
+İnvers alma işlemi. Bakın hesaplamasından bahsetmiyorum. Yani şuradakinden bahsetmiyorum. Şu DDF'nin bulunmasından bahsetmiyorum ya da tutulmasından. Onlar da pahalı olabilir. Ayrı bir mevzu. Ama sadece şu DDF'nin inversinin alınmasından bahsediyorum. O bile pahalı bir işlem.
+
+734
+02:47:48,084 --> 02:48:13,844
+Gelelim bir tane fonksiyonumuza. İşte fonksiyonumuz bu. Şurada görüyorsunuz. Bu fonksiyonu çizdirmişiz. Q'si, B'si, C'si ile tanımlayabiliyoruz demiştik herhangi bir quadratik fonksiyonu. Gradient Descent Step Size 0.1 ile başladığında bakalım nere oluyormuş. Şuradan başlıyor 1, sonra 2, 3, şöyle, şurada smooth bir şekilde tam ne yapıyor? Yaklaşıyor. Güzel. Newton Rapsona bakalım.
+
+735
+02:48:14,324 --> 02:48:17,443
+Nefes [öğrenci] son arkadaşlar ne yapmış? Bakın bakalım.
+
+736
+02:48:22,932 --> 02:48:50,231
+İkinci adımda olmuşum. Tek adımda. Bir, iki yazmıyorum. Bir tane adım atmış. Biriden başlamış. Tek adımda. İyi mi? Çok iyi değil mi? Peki, buradan başladığımızda bunu buldu. Acaba başka bir yerden başlasam da tek adımda bulurum mu? Diye düşünebilirsiniz. Bu noktanın kendisinin bir özelliği var mıdır diye düşünebilirsiniz. Yok.
+
+737
+02:48:51,347 --> 02:48:56,567
+Kuadritik fonksiyonlar için bunu şöyle düşünebilirsiniz.
+
+738
+02:49:00,659 --> 02:49:16,799
+Hesiyan matrisiyle işlem yaptığınızda zaten o fonksiyonun oraya ikinci dereceden bir şeyi oturtuyoruz. Eğer ki fonksiyonun kendisi de ikinci dereceden bir şey ise zaten fonksiyonun minimum olduğu değeri tek adımda hesaplayabiliyoruz.
+
+739
+02:49:17,139 --> 02:49:35,899
+Demin Tider Approximation'ları anlatıyordum. Birinci dereceden Tider Approximation, ikinci dereceden şeklinde ilerliyordu onlar. Şöyle bir şey demiştim. Eğer fonksiyonun kendisi mesela dördüncü dereceden ise, Tider'in dördüncü approximation'ında zaten o fonksiyonun kendisinde ne yaparsınız? Oturursunuz. Aynı şey burada da geçerli.
+
+740
+02:49:45,043 --> 02:49:52,423
+Ne oluyor? Tam kendisini yakalamış olursunuz ve kendisini minimum olduğu noktaya tek bir adımda ilerletebiliyorsunuz.
+
+741
+02:49:53,384 --> 02:49:57,984
+Burada mesela yine Gradient Descent ile Steepest Descent karşılaştırmışız. İki boyutlu.
+
+742
+02:49:57,984 --> 02:50:08,504
+Şurada şey söylemiştim siz hatırlarsanız. Ardışık yönler birbirlerine dikler. Mesela bakın bir, şöyle iki burası, sonra üç burası, dört böyle zikzak şeklinde ilerliyor.
+
+743
+02:50:11,603 --> 02:50:18,403
+Peki, şimdi şu slide'ı gördünüz. Ne düşünüyorsunuz? Nasıl bir fonksiyon bu?
+
+744
+02:50:22,036 --> 02:50:48,095
+Konveks değil. Yani? Konkav. Konkav. Konkav da diye canım. Konkav demek ne demekti? Ne konveks ne konkav bu. Belli bölgelerde konveks, belli bölgelerde konkav. Evet ama tamamen şudur budur diyemiyorduk buna. Peki bu fonksiyonu optimizasyon yapmak için iyi bir fonksiyon mu? Değil.
+
+745
+02:50:49,075 --> 02:50:50,895
+Lokal minimumlar var.
+
+746
+02:50:51,135 --> 02:50:56,716
+Değil mi? Lokal minimumlar var. Bir yerden başlayacağız. Gidecek bu kim bilir. Nerelere? Bakalım nerelere gidecek ne yaparsak.
+
+747
+02:50:58,015 --> 02:51:09,536
+Credit Discent'i mesela şu noktadan başlatmışız. Şu noktadan. İşte 118. adımda şey varmış. Buraya. Şu noktadan başlatmışız. Bakalım. Buraya varmış.
+
+748
+02:51:10,195 --> 02:51:18,175
+Newton-Rabson'u aynı yerden başlatmış. Dört adımda varmış sadece. Bayağı iyi yani. Şuraya düşündüğümüzde gayet iyi.
+
+749
+02:51:21,256 --> 02:51:29,275
+Sonra şu noktadan başlatmışız. Skratt-Antisanti. Bu şöyle 142. adımda buraya gelmiş. Bu da iyi. Gayet güzel.
+
+750
+02:51:30,256 --> 02:51:33,416
+Newton-Rabson'u buradan başlatmışız. Newton-Rabson gitmiş nereye?
+
+751
+02:51:33,824 --> 02:51:50,504
+Görüyor musunuz? Dördüncü, beşinci adımda konverj etmiş bir yere. Nereye konverj etmiş? Niye oraya konverj etmiş? Konverj etmesini anlayabiliriz. Neden oraya da duruyor? Çünkü orası lokal memnun değil. Orası ne bir arkadaşlar?
+
+752
+02:51:52,324 --> 02:52:01,423
+Lokal memnun değil, orası. Bir subtle point. Türevinin sıfır olduğu bir nokta.
+
+753
+02:52:02,388 --> 02:52:15,408
+Ve oraya takılmış. Bunun sebebi hani mesela Gradient Design aynı noktadan başında sadılık pointa takılmıyorken Newton Rapson'un aynı noktadan başında sadılık pointa takılıyor olması garip değil mi?
+
+754
+02:52:18,668 --> 02:52:20,808
+Step size ile alakalı değil mi hocam?
+
+755
+02:52:21,468 --> 02:52:23,668
+Yok, Newton Rapson'un step size yok ki.
+
+756
+02:52:24,708 --> 02:52:26,888
+Olmadığı için aslında oraya takılıyor.
+
+757
+02:52:27,828 --> 02:52:28,868
+Yok, ondan değil.
+
+758
+02:52:29,747 --> 02:52:32,907
+İkinci dereceden bir şey oraya oturtmuş değil mi hocam?
+
+759
+02:52:33,907 --> 02:52:34,247
+Evet.
+
+760
+02:52:35,308 --> 02:52:39,768
+Ama arttırmış fonksiyonu değerini. Bakın azaltmamış.
+
+761
+02:52:40,207 --> 02:52:42,227
+Bakın bu aşağı doğru azalıyor değil mi burası?
+
+762
+02:52:42,827 --> 02:52:44,827
+Bu yukarıya doğru artıyor. Şuraya doğru.
+
+763
+02:52:45,747 --> 02:52:50,567
+Tamam mı? Yani bu aslında şurayı düşünürseniz, bunun mesela şöyle bir noktadan başladığında,
+
+764
+02:52:50,747 --> 02:52:54,927
+şöyle şu yukarıdaki sadık pointa takıldığı gibi, takılması gibi bir şey. Anlatabildim mi?
+
+765
+02:52:54,927 --> 02:52:56,347
+Yani şuradan başlıyor mesela.
+
+766
+02:52:56,768 --> 02:53:03,948
+Aşağı doğru gideceği ne? Gidiyor. Yukarıya doğru gidiyor. Yukarıdaki bir, yani bulunduğu yerden daha kötü bir hal getiriyor. Anlatabildim mi?
+
+767
+02:53:04,488 --> 02:53:04,747
+Evet.
+
+768
+02:53:05,747 --> 02:53:12,808
+Niye böyle bir şey oluyor? Niye böyle bir şey oluyor? Burada anlatıyorum aslında. Bunu size bırakıyorum şimdilik.
+
+769
+02:53:14,327 --> 02:53:19,827
+Newton rapsana ne oldu diye. Güzel bir algoritma. Niye böyle şeyler oldu?
+
+770
+02:53:20,628 --> 02:53:30,628
+Temel olarak, birazdan yine görebileceğim, lafı geçer. Newton-Raphson, yani second order bu HESF'ler aşırı derecede stabil değiller.
+
+771
+02:53:31,407 --> 02:53:38,948
+Yani mesela işte gradient descentler çok daha stabil ve çok daha yavaş algoritmalardır.
+
+772
+02:53:38,948 --> 02:53:45,907
+Newton-Raphson'lar mesela belli zamanlarda, belli durumlarda, ki o durumlar burada yazıyorlar, incelersiniz.
+
+773
+02:53:46,451 --> 02:53:58,912
+İstediğimiz işi yapmazlar. Mesela buradan başladığında bu buraya varır ama şuradan başlarsanız buraya varacağına, burada tek boyutlu bir yüzeyde bak, şuradan başladığınızda şuraya varıyor, şuraya konverj ediyor. Görüyor musunuz?
+
+774
+02:53:59,951 --> 02:54:12,771
+Yani x0 olarak x0.5'ten başlatırsam ben, şu mavi fonksiyondan bahsediyorum, şu noktadan başlatırsam buraya varıyor. Ama gidip x0 olarak 0.5'ten başlatırsam, bu noktadan başlatırsam gidip buraya konverj ediyor.
+
+775
+02:54:13,203 --> 02:54:21,344
+Bu kötü bir şey. İsteyeceğimiz bir şey değil. Gratantisan'da böyle bir sıkıntı olmaz. Buradan da başlasanız buraya iner. Buradan da başlasanız yine buraya iner.
+
+776
+02:54:24,583 --> 02:54:30,984
+Bunu size bırakıyorum. Evet, bunda bir şeylik yok.
+
+777
+02:54:31,984 --> 02:54:36,484
+Şimdi o zaman arkadaşlar, burada duralım haftaya yine.
+
+778
+02:54:37,620 --> 02:54:45,960
+Buradan bir, tekrardan bir geri alıp, belki şeyden bahsederiz, niye burası da Newton Rapson'da problem var diye.
+
+779
+02:54:47,040 --> 02:54:56,780
+Şimdi o zaman genel olarak şöyle bir şey yapalım. Bugün sürekli ben konuştuğum fark ettiyseniz, bu konuları yani bunlar temel kavramlar, optimizasyondaki bunları...
+
+780
+02:54:57,396 --> 02:55:07,936
+Bir şekilde bilmenizi istiyorum. Bunları bilmenin anlamının en güzel yolu da bence kodları incelemek ve üzerlerinde düşünmek.
+
+781
+02:55:08,404 --> 02:55:20,884
+Kodları incelediğiniz zaman çok daha rahat her kavram yerine oturacaktır diye tahmin ediyorum. Kodları her şeyi siteye koyacağım. Onunla bir sıkıntı olmayacaktır. Mühendisliği kurmanız gerekecektir.
+
+782
+02:55:20,884 --> 02:55:34,283
+Ya da bu kodları anlatan zaten daha başka bir sürü kaynak da vardır. Oralardan da faydalanabilirsiniz. Bunların en sonlarında genelde referansları da koyuyorum. Buralardan da inceleme yapabilirsiniz.
+
+783
+02:55:37,203 --> 02:55:50,743
+Evet, bugünlük söyleyeceklerim bu kadar. Sizin söylemek istediğiniz bir şeyler var mı arkadaşlar? Biraz yorulmuşsunuzdur ama sürekli dinle, anlamaya çalış vesaire. Biraz yorucu olabilir. Evet.
+
+784
+02:55:53,743 --> 02:56:01,783
+Hocam, şu Newton Raps'ın niye hatalı çalıştığını çok ufak otosaniye anlatabilir miyim? Hayır.
+
+785
+02:56:02,804 --> 02:56:07,703
+Uzun bir iş mi? Tamamdır. Ben araştırıyorum. Teşekkürler.
+
+786
+02:56:08,004 --> 02:56:08,783
+Ben rica ederim.
+
+787
+02:56:15,572 --> 02:56:18,511
+Hocam, sonraki derste sürede oynama yapılabilir mi?
+
+788
+02:56:19,231 --> 02:56:20,051
+Nasıl sürede?
+
+789
+02:56:20,572 --> 02:56:36,051
+Yani 3 saat benden ateş çıkarttı. Beynim şu an overloading oldu. Son 20 dakikada hocam ben çok zor tuttum kendimi.
+
+790
+02:56:36,471 --> 02:56:42,051
+Anladım, anladım. Şöyle bir şey söyleyeyim. Bugünkü dersi...
+
+791
+02:56:43,283 --> 02:57:10,843
+İçeriği de birazcık daha ağırdı. Üç saatte ders yapmadık. Tamirciler yüzünden yarım saat atladık. Belki bir miktar daha kısa olabilir, bakarız. Dersin içeriği bugün birazcık yoğundu. Ondan aslında öyle hissediyorsunuz diye tahmin ediyorum [öğrenci]. Böyle çok biraz topu size atıp sizi rahatlatacak şeyler yapmadım. Sürekli size bir şey de anlattım. O da sizi muhtemelen durmadan takip etmeye çalışmak yormuştur, tahmin edebiliyorum.
+
+792
+02:57:11,283 --> 02:57:34,763
+Şimdi önümüzdeki iki haftada birazcık böyle olacak. Yani iki haftaya da bir buçuk hafta bakalım. Ama şey olduğunuz zaman, yorulduk bir ara verelim hocam falan bana diyebilirsiniz. Onlara açayım. Üç saatte doldurmak zorundayız diye şey yapmıyorum. Ben sadece içeriyi birazcık yetiştirmeye çalışıyorum. Yoksa üç saatte bir şeyim yok. Takıntım yok. Anlatabildim mi?
+
+793
+02:57:36,435 --> 02:57:42,835
+Tamamdır hocam. Ben tamircileri unutmuşum. Ben gerçekten 3 saat ders yapmış gibi hissettim kendimi. Tamam.
+
+794
+02:57:43,435 --> 02:57:47,435
+Anladım. Ama içerikten o ya. Tamam. Bugünkü içerikten o. Tamam mı?
+
+795
+02:57:47,435 --> 02:57:48,915
+Tamamdır hocam.
+
+796
+02:57:48,915 --> 02:57:57,635
+Tamam. Biraz kodlarla falan haşır neşir olursanız bu hafta, önümüzdeki hafta konuşacağımız, anlatacağımız mevzulara çok daha hakimiyet sağlarsınız.
+
+797
+02:57:58,095 --> 02:58:06,475
+Bunların üstüne bina edeceğiz çünkü bir şeyleri. O yüzden bunları kavrarsanız, rahat ederseniz ama kavramazsanız sıkıntı sürer.
+
+798
+02:58:06,475 --> 02:58:19,955
+Tamam mı? Peki. O zaman arkadaşlar hepinizle teşekkür ediyorum geldiğiniz katıldığınız için bugünkü dersimize. Haftaya aynı gün aynı saatte görüşmek ümidiyle diyorum. Hepiniz hoşçakalın.
+
+799
+02:58:20,216 --> 02:58:21,835
+İyi hafta sonunda.
+
+800
+02:58:21,835 --> 02:58:22,736
+Teşekkürler hocam.
+
+801
+02:58:23,736 --> 02:58:25,056
+Teşekkürler, iyi akşamlar hocam.
+
+802
+02:58:25,683 --> 02:58:26,683
+İyi akşamlar hocam.
+
+803
+02:58:27,224 --> 02:58:28,043
+İyi akşamlar.
