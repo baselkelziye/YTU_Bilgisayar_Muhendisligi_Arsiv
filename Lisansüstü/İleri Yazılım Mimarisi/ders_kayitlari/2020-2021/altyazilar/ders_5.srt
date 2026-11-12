@@ -1,0 +1,2079 @@
+1
+00:00:27,123 --> 00:00:28,123
+Günaydın arkadaşlar.
+
+2
+00:00:32,979 --> 00:00:34,319
+2 dakika bekliyorum.
+
+3
+00:00:42,932 --> 00:00:45,231
+Geçen hafta kaldığımız yerden devam edeceğim.
+
+4
+00:02:11,187 --> 00:02:23,187
+Bu arada ses rahatsız ediyor mu sizi? Arka plan sesi. Dışarıda bir çalışma yapıyorlar galiba. Camda açık olmak durumunda ya. Oradan bir ses geliyor.
+
+5
+00:03:42,003 --> 00:04:08,463
+Herhalde daha fazla katılım olmaz diye düşünüyorum. Biz bugünkü dersimize yine başlayalım. Bugünkü konumuz OCL olacak. Object Constraint Language. Geçen hafta kaldığımız yerden devam edeceğim. Bir basit bir örnek yapacağım. Özellikle de yazılımla alakalı problemleri, tasarımını ifade ederken formal olarak ifade etmemiz gerekirse, yani herkesin aynı şekilde anlayacağı, değişmeyeceği şekilde ifade etmemiz gerekirse,
+
+6
+00:04:09,139 --> 00:04:19,120
+Nasıl bir kısıt yazmamız gerekir? Bildiğimiz basit bir problem için bile aslında ne kadar çetrefilli işler yapmak durumunda kalacağız. Hep birlikte onu inceleyeceğiz.
+
+7
+00:04:19,572 --> 00:04:45,411
+İlk önce First Order Logic kullanarak bir ifadeyi çözmeye çalışacağız. Sonrasında da OCL ile bunu yapmaya öğreneceğiz. OCL'de aslında UML'in standart bir parçası. Çok fazla kimse kullanmasa da, dediğim gibi formal tanımların yapılması gerektiği ortamlarda mutlaka buradaki kısıt dilini kullanarak tanımlamaları yapmak durumunda kalıyoruz.
+
+8
+00:04:45,908 --> 00:04:50,728
+Aynı zamanda aslında first order lojiye de direkt olarak dönüştürülebiliyor.
+
+9
+00:04:51,148 --> 00:05:00,028
+Ve bu sayede onun için insanlarca o daha rahat okunup anlaşılabilecek bir söz dizimi, bir sintaks sağlaması da bizim için ekstra bir avantajı oluyor.
+
+10
+00:05:00,168 --> 00:05:05,088
+Yani her şeyi böyle full matematik, lojik ifadelerle göstermek zorunda değiliz.
+
+11
+00:05:05,088 --> 00:05:13,908
+Ayrıca UML araçlarında da tanımlı olduğu için diagramlarda bunları kullanabilir ve bu sayede açıklamalarla kısıtlarımızı rahatlıkla tanımlayabiliriz.
+
+12
+00:05:13,908 --> 00:05:30,288
+Yapacağımız örnek hepimizin bildiği aslında bir sıralama problemi olacak. Şimdi sıralamanın acaba formal spesifikasyonunu nasıl ifade edebiliriz? Çok basit bir örnek. Herkes bilir değil mi? Elimizde bir liste var ya da bir dizi var.
+
+13
+00:05:30,740 --> 00:05:40,939
+Onu nasıl sıralayacağımız konusunda sezgisel ya da deneysel çeşitli yaklaşımlarımız vardır. İşgambil kağıtlarını sıralamak gibi düşünebilirsiniz.
+
+14
+00:05:40,939 --> 00:05:51,360
+Alın elinize bir desteği, işte 13 tane aslan, papaza kadar kağıt var. Onların değerlerini artan sırada bir şekilde dizmeniz gerekiyor diyelim.
+
+15
+00:05:52,399 --> 00:05:58,540
+Bunu elinizde yapabilirsiniz ama bilgisayar bunu nasıl yapılacağını doğal olarak aslında bilmez.
+
+16
+00:05:58,740 --> 00:06:04,920
+Bizim onu bir şekilde programlamamız, sıralamanın nasıl olacağını, nasıl işletileceğini ona söylememiz gerekiyor.
+
+17
+00:06:05,340 --> 00:06:09,740
+Peki, elimizde tam sayılardan oluşan, hiç böyle real sayıları da karıştırmayalım.
+
+18
+00:06:10,220 --> 00:06:16,139
+Elimizde tam sayı vektörleri var. Bunları sıralayacak bir program için bir formal spesifikasyon yazmaya çalışalım.
+
+19
+00:06:16,800 --> 00:06:20,120
+Inputumuz nedir? X. X nedir? Bir tam sayı vektörü.
+
+20
+00:06:20,755 --> 00:06:32,336
+Çıktığımız nedir? Yani output Y diyelim buna da nedir? Artan sırada X'in yani girdi argümanımızın sıralanmış halide bizim çıktığımızı oluşturacak.
+
+21
+00:06:32,435 --> 00:06:37,576
+Şimdi ilk olarak First Order Logic ile bunu yapacağız. Önce bir Türkçe tanımlama yapalım.
+
+22
+00:06:37,755 --> 00:06:43,655
+İşte X tam sayı dizisi, Y tam sayı dizisi sıralamada artan şekilde olacak.
+
+23
+00:06:43,655 --> 00:06:48,655
+Peki nasıl bir tanım yaparım? Yani nasıl bir cümle yazmam gerekir? Şöyle bir şey yapabilirim.
+
+24
+00:06:48,755 --> 00:06:59,815
+X tam sayısı dizisi verildiğinde Y tam sayı dizisini döndürürüz ve Y'deki her eleman bir sonrakinden daha küçüktür.
+
+25
+00:07:00,468 --> 00:07:28,468
+Tamam, güzel bir tanım. Ama o zaman şunu kaçırıyoruz. Ya içinde eşit elemanlar varsa, yani iskambi kağıdı destesinde hem kupalar hem maçalar bir arada duruyorsa, hepsinden ikişer tane varsa ne yapacağız? O zaman tanımımı değiştirmem lazım. Y'deki her eleman bir sonrakinden küçük veya eşittir diye tanımımı değiştirmem lazım. Peki ya son eleman? Son eleman için ne yapacağım? Onun sonrası yok. Sonrakinden küçük olabiliyor.
+
+26
+00:07:28,468 --> 00:07:38,628
+O da ayrı bir sıkıntı. Demek ki aslında benim son elemandan bir önceki ne kadar bu tanımı yapabiliyor olmam lazım.
+
+27
+00:07:39,307 --> 00:07:47,488
+Şimdi bu gibi tanımları yaparken ilk önce düşünmemiz gereken şey aslında yazdığımız spesifikasyon girdiği tanımlıyor mu?
+
+28
+00:07:47,488 --> 00:07:53,488
+Biz ne dedik? Tam sayı vektörü dedik. Eğer x deyip geçseydik...
+
+29
+00:07:54,036 --> 00:08:11,175
+O zaman işte böyle vektörler olabilir, elmalar, armutlar olabilir, muzlar olabilir. Bunların hepsini anlamlı bir şekilde bizim first order logic ifademizin sıralaması beklenirdi. Biz ne dedik? Bir tam sayı vektörü alıyoruz dedik ve bu sayede kısıtımızı, girdi kısıtımızı tam olarak belirlemiş olduk.
+
+30
+00:08:11,487 --> 00:08:38,408
+Aynı şey çıktığı için de geçerli. İkinci düşünmemiz gereken. Çıktı da düzgün bir şekilde tanımlanmış olması gerekiyor. Ve artan yönde sıralama olmasını istediğimiz için de daha sonrakinden küçük veya eşit olması gerektiğini, bir konumdaki sayının değerini diyelim, takip edenden daha küçük veya eşit olması gerektiğini de belirtiyoruz. Son eleman aslında bizim için özel bir durum. Çünkü bunu takip eden bir eleman yok.
+
+31
+00:08:39,091 --> 00:09:04,672
+Tabi burada sadece bunu yazıp geçmemiz yeterli olmuyor. Mesela, şimdi tanımladık mı? Tanımladık diyoruz. Fakat şu durumları da bizim spesifikasyonumuzun bir şekilde karşılayabiliyor, ele alabiliyor olması lazım. Nedir? Çıktılarımızın içeriği, girdilerimizin içeriği ile birebir aynı ve tam sayı olmalıdır.
+
+32
+00:09:05,172 --> 00:09:30,052
+Mesela, şimdi bir önceki tanımı hatırlayalım. Şöyle geri geleyim. Şuradaki formal tanımı yaptık. X tam sayısı verildiğinde Y tam sayı döndürürüz. Yerideki her eleman bir sonrakinden daha küçük veya eşittir dedik. Peki, ben böyle bir kısıta 3, 2, 1 sayılarını bu vektörü girdi olarak versem, ondan sonra da 4, 5, 6 diye çıktı üretise bana bu uygulama, bu program. Doğru değil mi?
+
+33
+00:09:30,495 --> 00:09:43,255
+Çıktı, tanımımıza uyuyor. Girdi de tanımımıza uyuyor. Ama girdi ile çıktı arasında içeriklerinin birebir aynı ve tam sayı olması gerektiği koşulunu da eklemek zorundayım.
+
+34
+00:09:43,716 --> 00:09:51,155
+Eklemezsem ne olur? Benim lojik ifadem şuradaki girdi ve şuradaki çıktı için de doğru olacaktır.
+
+35
+00:09:52,155 --> 00:09:53,115
+İkincisi.
+
+36
+00:09:53,812 --> 00:10:21,172
+Çıktı y vektöründeki her eleman girdi x vektöründe de yer almalıdır. Bu da yine girdiği olan duyarlılıklardan bir tanesi. Peki, o zaman şöyle. Ben 3, 2, 1'i input olarak veririm ve programım 1, 1, 1, 1, 2, 3 çıkartır. Bunu da karşılıyor. Ama içerik birebir aynı. İçerik tam sayı. Her eleman girdi x vektöründe de yer alıyor ama sayısı farklı.
+
+37
+00:10:21,583 --> 00:10:40,603
+Gördüğünüz gibi bu da mesela böyle bir output ürettiğinizde doğru olacaktır. Fakat baktığınızda girdinin sıralanmış bir şekilde çıktı da oluştuğunu görmüyoruz. Demek ki bir de sayı kontrolü yapmamız lazım. Y'deki her eleman X'deki elemanlarla aynı sayıda yer almalıdır.
+
+38
+00:10:41,076 --> 00:11:06,996
+O zaman da 3, 2, 1 girdiğinde 1, 2, 3, 4 çıkartabilirim. 4 yok. Aynı sayıda yer alıyor 1, 2, 3. Fakat 4 burada yer almıyor. O zaman daha net bir ifadeyle Y'deki her eleman X'deki elemanlarla aynı sayıda yer almalıdır ve başka eleman ya da yeni eleman yer almamalıdır diye bunu da eklemem gerekiyor formal spesifikasyonuma.
+
+39
+00:11:07,539 --> 00:11:24,700
+Yani böyle kısa ve kesin bir tanım yapacaktık. Sıralama da çok basit bir problem. Ama gördüğünüz gibi böyle uç nokta problemi ya da diyebileceğimiz girdiğe olan duyarlılıkla çıktı da oluşabilecek değişiklikleri de bir şekilde garanti altına almamız gerekiyor.
+
+40
+00:11:26,163 --> 00:11:47,903
+Çok basit bir problemde bile aslında bir sürü noktayı düşünmeniz gerekiyor. Ya da işte bir askeri yazılım yaptığınızı düşünün, güvenlikle alakalı bir şeyler yazdığınızı düşünün. İşte orada bu gibi tanımların, bu gibi tasarım noktalarının çok daha net ve kesin tanımlanması ve kesin çalışacak, kesin çıktılar, üretecek şekilde kısıtlanmaları mutlaka gerekiyor.
+
+41
+00:11:48,659 --> 00:12:06,480
+Bu gibi first order logic ya da OCL tanımlarını yazarken dikkat etmeniz gereken noktalardan biri de circularity kavramı. Döngüsellik diyoruz biz buna. Şöyle, bir kavramı tanımlarken kavramın kendisini de tanımda söylemeye çalışıyoruz.
+
+42
+00:12:06,480 --> 00:12:14,259
+Yani mesela sıralama yaparken sıralama terimleriyle ifade etmeye çalışıyoruz. Aslında problemi anlamak için bize hiçbir şey katmaz.
+
+43
+00:12:14,639 --> 00:12:37,799
+Hani işte bir soru soruyorsunuz. İşte ne bileyim bardak nedir? Bardak öyle bir şeydir ki işte bardak tipindeki şeylere bardak denir gibi bir tanım yapıyorsunuz. Bu hiçbir şey katmıyor aslında. Problemi anlama konusunda da bir katkısı yok. O yüzden tanımı yaparken problem ifadelerini tanımın içinde kullanmamamız gerekiyor.
+
+44
+00:12:39,220 --> 00:12:48,100
+Tanımımıza tam olarak bir daha bakalım. X tam sayı vektörü verildiğinde Y tam sayı vektörü üretilir. Y vektörü sıralı olmalıdır. Bakın sıralı.
+
+45
+00:12:49,716 --> 00:12:54,096
+Y vektörünün içeriği, X vektörünün içeriğiyle aynı olmalıdır.
+
+46
+00:12:55,096 --> 00:12:59,056
+Başka bir deyişle, Y vektöründeki her eleman X'den gelmelidir.
+
+47
+00:12:59,496 --> 00:13:05,736
+Y'deki her bir elemanın tekrar sayısı X'deki tekrar sayısıyla aynı olmalıdır dersem eğer,
+
+48
+00:13:06,196 --> 00:13:07,956
+ben burada tanımımı yapmış oluyorum.
+
+49
+00:13:08,356 --> 00:13:12,276
+Ama tabii buradaki Y vektörü sıralı olmalıdır ifadesi yanlış.
+
+50
+00:13:12,276 --> 00:13:17,196
+Bunun yerine her eleman sonrakinden küçük veya eşit olmalıdır gibi.
+
+51
+00:13:17,716 --> 00:13:21,716
+Net ve döngüsellik içermeyen bir tanım yapmam gerekiyor.
+
+52
+00:13:22,416 --> 00:13:27,556
+Şimdi bunu first order logic ile yani kesin matematik diliyle modellemek istediğinizde,
+
+53
+00:13:27,556 --> 00:13:30,516
+ki buna biz formal specification adında veriyoruz.
+
+54
+00:13:31,283 --> 00:13:47,604
+Üç tane aşamamız var. Bir Signature dediğimiz imza. Yani aslında sizin sanki bir fonksiyon başladığınız gibi düşünebilirsiniz. Adınız, soyadınız gibi düşünebilirsiniz. Yani buradaki spesifikasyon nedir? Ne alıyor, ne veriyor ve ne iş yapıyor? Bunları tanımladığımız alan.
+
+55
+00:13:47,604 --> 00:13:55,364
+Ön koşullar, bu şartın çalışması için gerekli ön koşul. İşte mesela x'in yani girdiğinizin tam sayı vektöründen oluşması.
+
+56
+00:13:55,711 --> 00:14:05,163
+Son koşulda sizin çalışıp bittikten sonra ortamda neyi garanti ettiğiniz, hangi değişikliğin olmasını, hangi kesin değişikliklerin yaşanmasını garanti ettiğiniz?
+
+57
+00:14:09,620 --> 00:14:29,080
+Topladım, başka bir tam sayı elde ettim de olabilir. Ama bunun dışında işte bana bir girdiler verildi. İnternetim unstable diyor. Bağlantıda inşallah sıkıntı yoktur. Katılımcılar duyuyorsunuz beni değil mi? İnşallah bir sıkıntı yok.
+
+58
+00:14:29,748 --> 00:14:31,048
+Evet, duyuyoruz hocam.
+
+59
+00:14:31,128 --> 00:14:56,868
+Tamam. Bizim network bazen böyle gider gelir üniversitede. İdare edin. Ne dedim? Böyle şey olabilir. Kesin böyle hani girdiyle çıktı birbirine eşit olabilir. Ama bazen de eşit olmaya da bilir. Çünkü mesela siz bazı inputun bir kısmıyla bir işlemler yaparsınız. Bunu outputa yansıtırsınız. Bir kısmını da yansıtmayabilirsiniz. Örneğin başka bir sisteme o veriyi aktarabilirsiniz. Ya da bir veri tabanına bir kısmını yazabilirsiniz.
+
+60
+00:14:57,748 --> 00:15:13,508
+Başka şeylerin değişmesine neden olabilirsiniz. O yüzden her zaman bizim yazılımlarımızda girdi eşittir, çıktı olamayabilir. Fakat ortamda yaratılan toplam etki girdi eşit olacaktır tabii ki. Son koşulda özetle bizim ortamı ne hale getirmeyi garanti ettiğimiz.
+
+61
+00:15:14,355 --> 00:15:22,855
+Söyledik, Signature kısmı, adımız, girdimiz, girdinin adı, çıktının adı ve tiplerini tanımladığımız alan.
+
+62
+00:15:22,855 --> 00:15:33,136
+Mesela buradaki sıralama ifadesi için Formal Specification'ı yazarsam, tam sayı vektörlerinden oluşan bir x girdisi aldığını söylüyorum.
+
+63
+00:15:33,276 --> 00:15:38,975
+İşte parametre aslında argümanım burada. Vektör, integer tipinde bir x. Adına da sort demişim.
+
+64
+00:15:39,576 --> 00:15:42,255
+Çıktısı ne? y. y eşittir, sort.
+
+65
+00:15:42,355 --> 00:16:05,596
+Bu da yine bir tam sayı vektörü şeklinde bir yapıda olmasını tanımlamışım. Tek bir girdisi var, tek bir çıktısı var. Bunlara kesin isimler vermemiz gerekiyor. Neden? Çünkü ön koşulları ve son koşulları tariflerken aslında x'leri ve y'leri yani buradaki değişkenlerimizi kullanacağız. Bu mantık olarak Java'daki değişkenlerle aynı gibi düşünebilirsiniz.
+
+66
+00:16:06,548 --> 00:16:12,748
+Sıralama programımızı mesela, burada yazdığımız tanımı, formal specification'ı...
+
+67
+00:16:12,884 --> 00:16:35,483
+Sıralanabilecek basit veri tipleri olması koşuluyla başka veri türlerine de kolaylıkla uyarlayabilirsiniz. Mesela karakterlere ya da tam sayılara ya da başka veri tipleri varsa sıralanabilecek bunlara da basit veri tipi olması koşuluyla rahatlıkla buradaki tanımı, bu imzayı sadece girdi ve çıktı türlerini değiştirerek uygulayabilirsiniz.
+
+68
+00:16:36,083 --> 00:16:45,223
+Nedir? İşte büyüktür, küçüktür gibi sıralama ifadelerinde yer alabilme buradaki basit veri tipi koşulu, sıralamaya uygun olma koşulu.
+
+69
+00:16:46,223 --> 00:16:53,524
+Ön koşullarda bizim inputlarımız hakkındaki aslında savlar yani teoremlerimiz.
+
+70
+00:16:55,347 --> 00:17:22,647
+İlk önce yapmamız gereken beklenen girdiler var mı, yok mu? Bunun kontrolünü ilk adımda yapmamız beklenir. Ve formal specification'i yaparken de aslında bu kontrolün nasıl yapılması gerektiğini tanımlarız. Biz burada ne dedik? Girdinin tam sayı olması, gerçi sıfırdan büyük küçük olması ile ilgili bir şey de söylemedik. Sadece tam sayı olması bizim için yeterli. Bu durumda sıralama için belki de ön koşulu yazmamıza da gerek yok.
+
+71
+00:17:23,028 --> 00:17:30,788
+Peki bir sort değil de square root yazsaydık, yani kare kök fonksiyonu yazsaydık, o zaman mesela bir ön koşulumuz mutlaka olurdu.
+
+72
+00:17:30,967 --> 00:17:40,447
+Neydi? Negatif sayıların kare kökünü alamayacağımız için x'in mutlaka büyük eşit sıfır şartını sağlaması gerekirdi.
+
+73
+00:17:40,447 --> 00:17:45,367
+Ve şöyle x büyük eşit sıfır şeklinde bir ön koşul yazmamız gerekirdi.
+
+74
+00:17:46,007 --> 00:17:51,028
+Ama eğer tam sayılar yerine mesela burada kompleks sayıları da...
+
+75
+00:17:51,028 --> 00:18:01,487
+Ön koşullarda barındırsaydınız, yani veri tipini real number değil de kompleks number olarak tanımlasaydınız, o zaman bu ön koşula da ihtiyaç duymayabilirdiniz.
+
+76
+00:18:02,228 --> 00:18:08,947
+Gördüğünüz gibi aslında ben burada x negatif olursa, şey olur, imajiner sayılara geçerim gibi bir tanım yapmıyorum.
+
+77
+00:18:09,587 --> 00:18:16,268
+Sadece bu girdiğiyle fonksiyonun ön koşulları neler olması lazım ve davranışı nasıl olması lazım bunları tanımlıyorum.
+
+78
+00:18:17,683 --> 00:18:31,584
+Tabi bir exception üreten bir versiyonu da tanımlayabilirdik. Negatif olduğunda şu şu çık diye bir şey de söyleyebilirdik ama bence ön koşulu en azından garanti etmek daha doğru bir yaklaşım olacaktır.
+
+79
+00:18:33,284 --> 00:18:42,864
+Veri tipleriyle ilgilenmediğimizi söyledik. Bunun zaten imza alanında olduğunu, signature alanında bunu yazdığımızı, vector hint şeklinde tanımladığımızı söyledik.
+
+80
+00:18:43,827 --> 00:19:02,988
+Şey yapabiliriz, x vektörü eğer boş küme verilirse ne olacak? Bu yani boş kümenin sıralanmış hali de boş kümedir. O zaman x ve boş bir kümeyi de alabilmem beklenir. Yani x büyük sıfır ya da x'in boyutu büyüktür sıfır yapabilirsiniz ama bence boş kümeyi de kapsamak daha doğru olacaktır.
+
+81
+00:19:03,344 --> 00:19:16,084
+Dediğim gibi sıralama için aslında herhangi bir ön koşul olmaması, tanımlanmaması ya da illa söyleyeceksiniz de true diye geçmeniz, yani her koşulda doğrudur, her koşulda çalışır sıralama demeniz yeterli olacaktır.
+
+82
+00:19:17,172 --> 00:19:37,172
+Son koşullarda işte biz ortamı ne hale getiriyoruz? Neyi garanti ediyoruz? Yani ne çıktı hakkında ne mutlaka doğru olacak? Ben mesela burada Y çıktısı hakkında konuşmuştum. Ben aslında Y çıktısının ne hale geleceğini garanti ediyorum buradaki tanımla. Onu söylemem gerekiyor son koşul alanında.
+
+83
+00:19:37,172 --> 00:19:45,112
+Şimdi sort biraz daha karışık olacak. O yüzden önce basit square root ile bakalım. Y eşittir square root X dersek eğer ne yaptık?
+
+84
+00:19:45,172 --> 00:20:00,000
+Bunların circularity yaratmış olduk. Neden? Ben çıktığı tanımlarken fonksiyonun kendisini kullanırım. Bu yanlış ama aralarındaki ilişkiyi tanımlamam gerekir. Mesela y çarpı y eşittir x. Bu şartı sağladığınızda burada...
+
+85
+00:20:00,000 --> 00:20:19,940
+Attığınız imza, buradaki signature alanı bu çıktığı garanti edecektir. Yani x eşittir y çarpı y. Aslında bu kare kök çalıştıktan sonra doğru olması gereken ifade. Yani işte benim son koşulum neyi garanti ediyorum? y çarpı y'nin girdiği eşit olmasını garanti ediyorum. Kendisiyle tanımlamıyorum.
+
+86
+00:20:20,319 --> 00:20:29,079
+Bu fonksiyonun çıktısındaki garanti, neyin mutlaka doğru olduğunu tanımlıyorum. Formal Specification'deki son koşulları da bu şekilde tanımlarız.
+
+87
+00:20:30,039 --> 00:20:40,039
+Şimdi dediğim gibi bunu söyledim. Hep saf fonksiyonlar çıktı eşittir girdi şeklinde bir dönüşüme tabi tutar olayları.
+
+88
+00:20:40,039 --> 00:20:44,360
+Fakat yan etkiler de olabilir özellikle programlama yaparken.
+
+89
+00:20:44,784 --> 00:21:10,683
+Bunlar işte global değişkenlerde yaptığınız değişiklikler olabilir. Sonuçlarda göstermediğiniz işlemler olabilir. Başka bir nesnede yarattığınız bir değişiklik olabilir. Veritabanına yazdığınız bir takım veriler olabilir gibi gibi. İlla ki girdi eşittir çıktı birebir eşlemesini yapamadığınız durumlar olabilir. Saf fonksiyonlar her zaman yazmak durumunda değiliz. Bunu aklımızdan çıkarmayalım.
+
+90
+00:21:11,028 --> 00:21:15,988
+Y çarpı Y eşittir X her zaman için yazılabilecek bir ifade değil aslında.
+
+91
+00:21:18,968 --> 00:21:26,408
+Peki, şimdi sort imzasına döndüğümüzde first order logic'ta bunu nasıl göstereceğiz?
+
+92
+00:21:27,848 --> 00:21:31,248
+Önce veritiplerle ilgili ifadeleri de zaten kaldırdık.
+
+93
+00:21:31,848 --> 00:21:38,008
+Y sıralı olmalıdır dedik ama sıralı olmasını da kendisinden gelen öncekinden daha büyük küçük eşit olmasını söylememiz gerekiyor.
+
+94
+00:21:38,612 --> 00:21:48,332
+X'deki içerik de aynı olmalı. Her şey Y'de olmalı. Y'deki her şey X'den gelmeli. Y'deki her bir elemanın tekrar sayısı da X'deki tekrar sayısıyla aynı olmalı demiştik.
+
+95
+00:21:48,951 --> 00:22:04,892
+Şimdi bunu tabii önce bir sıralı olma koşulu sağlamamız gerekiyor. Ondan sonra da bu tekrar sayılarını ve başka eleman bulundurmama sayılarını bir şekilde halletmemiz gerekiyor.
+
+96
+00:22:06,612 --> 00:22:24,971
+Y'deki her bir eleman için, şimdi bir ifade yazmam lazım. Bunu formal olarak tanınacak bir ifade. Eğer kendisinden sonra gelen bir eleman varsa, son elemanı aslında burada kısıtlamış oluyoruz.
+
+97
+00:22:25,491 --> 00:22:50,112
+O eleman, baktığımız elemandan daha büyük ya da eşit olmalıdır. Son eleman için hiçbir şey söylemiyoruz. Neden? Aslında burada tüme varım yapıyoruz. Siz en elemanlı bir girdi için, en eksi bir tanesinin kendisinden sonra gelen, takip edenin özür dilerim, kendisinden önce gelenden büyük olduğunu ya da işte olduğunu garantilerseniz, bunu ispatlarsanız aslında şunu da ispatlamış olursunuz.
+
+98
+00:22:50,579 --> 00:23:18,579
+Son eleman zaten en büyük eleman olmak zorundadır. Bunun başka bir durumu olamaz. Özellikle de sıralama algoritmalarını mesela analizini yaparken tek tek işletirseniz görürsünüz. Son adımda aslında son elemana bakmayız. Niye bakmayız? Çünkü diğer hepsinin yerini değiştirdik. Bir şekilde en büyük zaten sona atılmıştı. O yüzden son elemana bir daha kontrol edip bakmamıza ihtiyacımız var.
+
+99
+00:23:18,579 --> 00:23:22,639
+Son elemanın en büyük eleman olması hep garanti altındadır.
+
+100
+00:23:24,039 --> 00:23:27,920
+Şimdi o zaman benim bir indeks değişkenine ihtiyacım var.
+
+101
+00:23:28,139 --> 00:23:31,119
+İ artı bir gibi bir değişkene ihtiyacım var.
+
+102
+00:23:32,399 --> 00:23:34,119
+İkinci kısımda da...
+
+103
+00:23:34,548 --> 00:23:58,367
+Eleman sayısını kısıtlamam lazım. Şimdi burayı bir şey yapalım, bırakalım. Önce şöyle bir ifadeyi yazmaya çalışalım. Her i için önce bir tanım yapmam lazım. Bu i'nin 1 ile n-1 arasında olması gerekir. Eşit olması, en az 1.
+
+104
+00:23:58,836 --> 00:24:07,356
+Sıfırı da aslında koyabilirsiniz gibi. Fakat i eşittir 1 dediğinizde n-1 zaten sıfır olacak.
+
+105
+00:24:12,819 --> 00:24:14,139
+İlçin oluşmayacak.
+
+106
+00:24:16,199 --> 00:24:20,339
+Saçma yapıyoruz. Yanlış bir ifade yazıyor gibiyiz ama maalesef ifade doğru.
+
+107
+00:24:20,799 --> 00:24:41,880
+Bu durum, yani n'in sıfır olma durumu, n-1'in negatif olma durumu aslında hiçbir zaman iyi yaratmayacağı için, yani her iyi diye bir şey olmayacağı için buradaki ifadenin boşu boşuna çalışmasını ya da işlem görmesinin önüne geçecek. Hiç iyi olmayacak. O yüzden de bizim doğruluğumuzu değiştirmeyecek. Tamam.
+
+108
+00:24:42,548 --> 00:24:57,707
+n-1 niye? Çünkü işte n. elemana kadar bakmam gerekiyor. Buraya n yazarsam burada i artı 1'den dolayı n artı 1'e giderim. Yani aslında vektörün dışına taşıyorum. Bu hatanın önüne geçmek için de n-1'e kadar kontrolümü yapmam gerekiyor.
+
+109
+00:24:57,707 --> 00:25:09,768
+Tamam. Ben 1 ile n-1 arasındaki bir i sayısında yani buradaki sayı her bir değişken için hangi koşulun doğru olmasını garanti etmek istiyorum?
+
+110
+00:25:10,483 --> 00:25:33,483
+Yi küçük eşittir. Yani bu çıktıdaki y değişkenimiz. Gördüğünüz gibi son koşullarda işte o x'i y'yi kullandık. Yi küçük eşittir. Yi artı bir. Tabi buradaki y'ler nelerden oluşuyor? Hani gerideki tekrar sayısı bilmem nesi burada yok. Bunları da eklemem gerekiyor. Burası aslında ilk kısmı. Neyi söylemiş oldum? Her eleman kendini...
+
+111
+00:25:34,228 --> 00:25:40,768
+Takip eden eleman şu anda incelediğimiz elemandan mutlaka daha büyüktür ya da eşittir söylemiş olduk.
+
+112
+00:25:43,068 --> 00:25:48,768
+Peki, şimdi sıralı diye bir şeyimiz olsaydı...
+
+113
+00:25:49,299 --> 00:25:52,159
+ordered diye bir imzamız olsaydı.
+
+114
+00:25:52,240 --> 00:25:57,399
+Yine x tam sayı vektörünü alıp bir Boolean değer döndürseydi.
+
+115
+00:25:57,399 --> 00:26:04,399
+Burada herhangi bir şekilde tip kontrolü yapmadığımız için hangi x gelirse gelsin bu sıralı mı diye sorabilirdik.
+
+116
+00:26:06,139 --> 00:26:10,119
+Boş bir vektör de sıralı mı? Evet doğru sıralı diyebilirdik.
+
+117
+00:26:10,899 --> 00:26:16,720
+Peki böyle bir ifadede mesela sıralı mı diye bir x vektörünü alıp da
+
+118
+00:26:17,140 --> 00:26:22,779
+True ya da False döndüren bir imzadaki son koşu ne olabilir?
+
+119
+00:26:24,820 --> 00:26:28,140
+Bakalım. Şöyle yazarız.
+
+120
+00:26:29,840 --> 00:26:34,440
+Birden x'in boyutuna kadar, ki bu da işte vektör boyutu demektir.
+
+121
+00:26:34,440 --> 00:26:43,100
+Bu kadar şey için, i için, buradaki bütün i'ler için x'i küçük eşit x'i artı bir ise
+
+122
+00:26:43,923 --> 00:27:06,323
+O zaman ben burada doğrudur diye bir ifade doğurabilirim. Yani bu her koşul için doğrudur diyorum. Ben buradaki bütün i'ler için yani bütün x'ler için şunu doğrudur çıkartabiliyorsam, son koşulda bunu garanti ediyorsam imzanın çıktısı true olacaktır.
+
+123
+00:27:06,323 --> 00:27:11,283
+Eğer edemiyorsam, işte buradaki nokta it must be the case demektir.
+
+124
+00:27:11,615 --> 00:27:25,536
+Bu çıktı doğru değilse o zaman da buğlayan ifadem doğal olarak false çıkaracaktır. Yani sıralı mı aslında son koşul için sadece şuradaki ifadeyi yazmanız yeterli olacaktır.
+
+125
+00:27:26,003 --> 00:27:33,823
+Peki bunun tersi olsaydı, hani reverse ordered gibi bir şey olsaydı, ters sıralı, o zaman da ön koşulumuz yine true olurdu.
+
+126
+00:27:33,823 --> 00:27:40,263
+Son koşulumuz, tek fark var, burada küçük eşit kontrolü değil, büyük eşit kontrolünü yapardık.
+
+127
+00:27:40,343 --> 00:27:42,523
+Yine eşitlik mutlaka olmak zorunda tabii ki.
+
+128
+00:27:43,124 --> 00:27:50,743
+Bu bütün iyiler için, yani bütün elemanlarınız için doğruysa sizin yerinizle çıktığınızda doğru olacaktır.
+
+129
+00:27:52,384 --> 00:27:54,003
+Yanlış olan bir şey varsa.
+
+130
+00:27:54,003 --> 00:28:21,583
+Burada çıktığınız false olacaktır. Böylece sıralımı ya da ters sıralımı gibi bir fonksiyonun formal tanımanı garanti etmiş olursunuz. Ama sıralama tabii ki biraz daha fazla son kuruşlu ihtiyaç duyuyor. Biraz önce de gördük işte başka eleman olmayacak. Tekrar sayıları aynı olacak falan olacak falan olacak. Şurada söylediğim şeyler. X'deki her şey Y'de olacak. Y'deki her şey X'den gelecek ve Y'deki her bir elemanın tekrar sayısı aynı olacak.
+
+131
+00:28:21,983 --> 00:28:31,903
+Bunların hepsini tek tek yazabilirsiniz. Fakat aslında matematikte denklikler de konuşur. Bunları yazmak tabii ki çok daha zor olacaktır.
+
+132
+00:28:32,323 --> 00:28:38,283
+Fakat elimizde aslında daha önceden bildiğimiz, tanıdığımız bir fonksiyon var ki buna da biz aslında permütasyon diyoruz.
+
+133
+00:28:38,283 --> 00:28:41,503
+Nedir permütasyon? Tanımı şu.
+
+134
+00:28:42,003 --> 00:29:00,283
+X'in elemanları, Y'nin elemanlarının bir permütasyonu ise X, Y ile aynı elemanlara sahiptir. Yani bu aslında tanımlanmış bir matematiksel özellik. Bir daha bunu kendimiz yazmak zorunda kalmayız. Eğer çıktı girdinin bir permütasyonu ise şunu garanti eder.
+
+135
+00:29:01,296 --> 00:29:10,556
+Çıktıdaki tüm elemanlar girdiden oluşmak zorundadır. Her eleman çıktı da yer almak zorundadır. Ve farklı sayıda yer alamaz.
+
+136
+00:29:12,692 --> 00:29:30,511
+1, 2, 3, 4 diye 4 tane rakamdan oluşan bir girdiğiniz varsa, permütasyonun çıktısı neler olabilir? İşte 4, 2, 3, 1 olabilir. 4, 3, 2, 1 olabilir. 1, 2, 3, 4 olabilir. 2, 1, 3, 4 olabilir. Biliyorsunuz o 4 sayının bütün kombinasyonlarını düşünür. Permütasyonlarını, pardon. Hepsi olabilir.
+
+137
+00:29:31,155 --> 00:29:44,836
+Ve benim biraz önce söylediğim işte her şey X'den gelecek. X'deki sayılarla tekrarlarla aynı olacak ve X dışında başka eleman barındırmayacak koşulu aslında permütasyonun bana üçünü de sağlıyor.
+
+138
+00:29:45,836 --> 00:29:56,756
+Demek ki ben aslında permütasyonu yani X vektörü ve Y vektörü bir permütasyonudur, boğul şeklinde çıkartırsam, son koşula bunu eklersem.
+
+139
+00:29:57,087 --> 00:30:08,288
+Şeyle birlikte, küçük eşit vardı ya, yi, yi, yi, yi arasındaki küçük eşit ifadesiyle birlikte bunu da eklersem aslında yeterli olacaktır.
+
+140
+00:30:09,168 --> 00:30:16,867
+Tabii buradaki son koşulları yazmak biraz daha zor. İki vektör de boşsa permütasyon x, y ne olacaktır?
+
+141
+00:30:16,968 --> 00:30:24,367
+Boyutu sıfır olduğu için doğru olacaktır. Neden? Çünkü ikisi de boş, birbirinin permütasyonudur.
+
+142
+00:30:24,852 --> 00:30:52,352
+İkinci durumda vektörler boş olmayabilir. X ve Y vektörleri. İlk elemanlar aynı mı değil mi diye bakarsınız. Yani şu şekilde X1 ile Y1 eşit mi diye bakarsınız. Üçüncü durumda da kalanlar aslında kalanı birbirinin permütasyonu mu diye bakarsınız. Aslında burada bir rekürsif ifade yazabilirsiniz. Yani permütasyon kalan X kalan Y ise permütasyon X Y diyebilirsiniz.
+
+143
+00:30:52,852 --> 00:31:03,491
+Yani boyutu sıfırdan büyük olacak ve ilk elemanlara eşit olacak ve X ile Y'nin kalan kısmı da permutasyon olacak.
+
+144
+00:31:03,491 --> 00:31:14,592
+Yani ön kürsü olarak bunu çağırdığınızda da aslında öz iğnelemeli olarak siz bütün elemanların çıktı da yer aldığını garanti edebilirsiniz.
+
+145
+00:31:15,112 --> 00:31:16,172
+Ne yapmış olduk?
+
+146
+00:31:17,268 --> 00:31:27,788
+Şimdi şunun hepsini birleştirdiğimizde uzun uzun anlatmayacağım. Çok fazla matematik ifadeye girmiş olacağız.
+
+147
+00:31:29,788 --> 00:31:36,667
+Y vektörünü x1'in geçtiği yere göre 3 parçaya bölüp, mesela x1 eşittir 5 olsun.
+
+148
+00:31:37,299 --> 00:31:52,940
+Çıktığının herhangi bir yerinde 5'in olması gerektiğini kontrol edeceğiz. Yoksa permütasyonu değildir. Sonrasında da kalan önceki ve sonraki parçaları da rekürtif olarak sen var mısın, sen var mısın diye kontrolünü yaparak bunu tanımlayabiliriz.
+
+149
+00:31:53,299 --> 00:32:06,740
+Özetle, aslında şuradaki ifade birleştir. Permütasyon kalan x, şuradaki ifade şeklinde ben buradaki permütasyonu da sağlayabilirim. Ne yaptım?
+
+150
+00:32:08,880 --> 00:32:13,740
+İfadelerin, yani girdi ve çıktı arasındaki sayıların...
+
+151
+00:32:13,907 --> 00:32:37,907
+Aynı sayıda olmasını, aynı tekrar sayısında olmasını, birebir aynı elemanlardan oluşmasını ve başka hariçten eleman olmamasını elimde daha önceden bildiğim ve bu tanımı iyi bir şekilde ortaya koyan başka bir fonksiyonu kullanarak, yani permütasyonu kullanarak da ifade edebilirim.
+
+152
+00:32:37,907 --> 00:32:41,407
+Özellikle permütasyon için son koşulumuz buradaki slide'da yer alıyor.
+
+153
+00:32:41,907 --> 00:32:55,967
+Permutasyon x, y, if and only if, hangi durumda permutasyondur? Şuradaki şartlar sağlandığında boyut sıfırsa veya boyut sıfırsa zaten permutasyonudur dedik.
+
+154
+00:33:01,844 --> 00:33:28,672
+Birinci elemanlar eşit ve kalanlar permütasyon. Ya da birinci elemanlar eşit değilse eşit olduğu yerden öncesi ve sonrası da kendi içinde permütasyon şeklinde. Eğer bunu sağlayabiliyorsam diyorum ki bu ikisi birbirinin permütasyonudur. Yani bunu önce bir yerde tanımladık. Aslında bunu başkası bizim için yazmış. Ben direkt olarak permütasyon x, y'yi kullanarak da...
+
+155
+00:33:28,672 --> 00:33:47,291
+Sıralı ifadesindeki, imzasındaki son koşulu yazabilirim rahatlıkla. Yani işte yi artı bir büyük eşittir. Yi olacak her i için ve x ile y permütasyon olacak dediğimde direkt olarak.
+
+156
+00:33:48,435 --> 00:33:56,435
+First Order Lojin ifadesinin en başında Türkçe uzun bir cümleyle yazdığımın bütün detaylarını birebir karşılamış oluyorum.
+
+157
+00:33:57,556 --> 00:34:12,596
+Tekrar şeye bakmaya gerek yok. Özetle ben girdi ve çıktı arasındaki ilişkiyi ve sıralama sonucunda neyi nasıl garanti ettiğimi matematik, lojik ifadeler kullanarak formal specification ile tanımladım.
+
+158
+00:34:12,596 --> 00:34:25,556
+Tabii basit bir problem için bile oturup uzun uzun düşünmemiz gerekiyor. Şu anda bunları çok hızlı bir şekilde aktardım size. Ama hani çıktıların tekrar sayısının hariçten eleman...
+
+159
+00:34:25,556 --> 00:34:40,056
+Olmaması gerektiğinin, elemanların toplam sayısının, tekrar sayısının girdiğiyle aynı olması gerektiğinin, bir şekilde kontrollerinin resmi olarak yapılması gerektiğini ve tanımlanması gerektiğini ifade ettik.
+
+160
+00:34:40,056 --> 00:34:48,936
+Ve tabii ki davranışımızın ve ortama ne hale getirdiğimizin de formal tanımının yapılması gerektiğini söyledik. Son koşullar içinde.
+
+161
+00:34:49,427 --> 00:35:06,947
+Peki, şimdi aynısını mesela eğer biraz sonra tanımaya başlayacağımız OCL ile tanımlasaydık nasıl olacak? Hafta ediyoruz ama aslında işte bu haftaki ders olacak bu. Bunları normalde geçen hafta anlatmam gerekiyordu ama yeterince uzun olduğu için orada bırakmıştık.
+
+162
+00:35:07,568 --> 00:35:17,407
+Sıralı için mesela şöyle bir şey yazarız. Context Vector. Biraz sonra göreceğiz ne olduğunu. Çok takılmayın. Sıralı dedik. Ordered mesela. İşte Boolean.
+
+163
+00:35:17,427 --> 00:35:43,927
+İfade döndürecek. Precondition'u true ya da hiç gerek yok. True ise. Postcondition'u self for all. İyi integer olacak. İyi büyüktür sıfır and. İyi küçüktür self nokta length. Ne dedik? Sıfırdan n-1'e kadar. Yani küçüktür n olana kadar diye bir döngü kurduk. Implice ok işareti.
+
+164
+00:35:44,815 --> 00:35:57,376
+Böyleyse neyi garanti ediyorum? İ pozisyonundaki ifade küçük eşittir. İ artı bir pozisyondaki ifade olacak. Böyle de küçüktür n olduğu için de en son n. elemana bakmış oluyorum.
+
+165
+00:35:58,516 --> 00:36:11,315
+Biraz daha böyle programlama dili gibi daha rahat okunan ve daha kolaylıkla oluşturulabilen bir dil ile First Order Logic yerine OCL'i kullanarak da aynı tanımı yapabilirim.
+
+166
+00:36:11,315 --> 00:36:26,216
+Ufak tefek farklılıkları var. Mesela Pipe sembolü OCL'de değişkeni önermeden ayırmak için kullanılıyor. Şurada gördüğünüz gibi. Burada bir i'nin integer değişken olduğunu tanımlayıp ayırıyorum.
+
+167
+00:36:26,516 --> 00:36:35,115
+Kısıtlar, iyi değişkenin için olan kısıtlar da önermenin bir parçası olarak yer alıyor. İşte bunun intijri olması mesela.
+
+168
+00:36:36,815 --> 00:36:46,916
+Döngü değişkeni gibi kullandığımızda implies anahtar kelimesini kullanıyoruz. Yani bu if'ten ifadesi, first order logic'ta noktayla ifade ettiğimiz şey.
+
+169
+00:36:47,572 --> 00:37:09,492
+Yine OCL'de aslında vektör tanımı yok, sequence'lar var ama aslında ikisi de aynı şey. Birebir farklı olarak da düşünmeyebilirsiniz son farkı. Ufak tefek şeyler var, farklar var ama bir şekilde OCL'de de daha rahat bir programlama diline yakın olacak şekilde hem de UML için de araçlar desteğiyle bu kesin tanımları yapabiliyoruz.
+
+170
+00:37:09,940 --> 00:37:20,039
+Dediğimiz gibi kesin işlevsellik tanıma ihtiyaçlarımız olabilir. Bunlar için biçimsel dilleri kullanmamız gerekiyor ve formal specification tanımlamamız gerekiyor.
+
+171
+00:37:20,480 --> 00:37:30,119
+Bunları tanımlamak için, tam olarak ne çıktısı üretmeye çalışıyorsunuz, neyi garanti etmeye çalışıyorsunuz, bunun için çok sıkı bir şekilde düşünmeniz gerekebilir.
+
+172
+00:37:30,119 --> 00:37:44,980
+Eğer başta bunu yaparsanız ve formal specification'ı kesin olarak tanımlarsanız, burada harcadığınız efor aslında sizi anlaşılmayan gereksinimler yüzünden tekrar tekrar çalışmaktan kurtarabilir.
+
+173
+00:37:45,480 --> 00:37:47,079
+Sıralama örneğinde olduğu gibi.
+
+174
+00:37:48,480 --> 00:38:01,619
+Her çıktı, girdiden bir öncekinden daha büyük olacaktır. Garanti ettiğinizde aslında sıralamayı garanti etmiş olmuyorsunuz. Çünkü çıktı ile girdi arasındaki ilişkiyi de tanımlamak zorundasınız. Tekrar sayıları gibi.
+
+175
+00:38:02,128 --> 00:38:20,068
+Başka eleman olmaması gibi, eksik eleman kalmaması gibi. Bunu da biz permitasyonla hızlı bir şekilde yaptık ama başka problemlerde bu gibi bağlılıkları, girdi ve çıktı arasındaki kesin tanımları da mutlaka yapmak zorunda, durumunda kalacağınız durumlar olabilir.
+
+176
+00:38:20,820 --> 00:38:33,960
+Bu gibi durumlarda da mutlaka First Order Logic ya da OCL gibi dilleri kullanarak kesin tanımlarınızı yapmak durumunda kalacaksınız.
+
+177
+00:38:33,960 --> 00:38:43,320
+Peki, şimdi yeni sunumumuzu hemen paylaşayım ve OCL tarafına geçelim.
+
+178
+00:38:51,860 --> 00:38:59,539
+Şimdi aslında OCR için hemen hızlı bir örnek gördük biraz önce ama First Ornolojik ile birebir denk olacak şekilde bir ifade yazmıştık.
+
+179
+00:39:00,000 --> 00:39:08,880
+Ama şimdi biraz daha böyle nasıl yazılır, ne parçaları vardır, nasıl oluştururuz OCR ifadelerini. Bunlara bakalım ve OCR'i tanımaya başlayalım.
+
+180
+00:39:15,507 --> 00:39:29,347
+OCL ile ilgili söyleyebileceğimiz ilk şey, UML'in aslında resmi bir parçası olduğu. Hep böyle aklımıza UML deyince diagramlar geliyor ve hep diagramlarla ilgileniyoruz, diagramlara bakıyoruz ama aslında diagramlarla biz her şeyi anlatamıyoruz.
+
+181
+00:39:30,247 --> 00:39:41,487
+Tasarımda, detay tasarımda bazı noktaları kesin bir şekilde tanımlamamız gerekebiliyor. İşte bunun için de OCL tanımlarından faydalanıyoruz.
+
+182
+00:39:42,132 --> 00:39:59,871
+Bugün mesela o silin ne olduğunu gördükten sonra, geçen hafta yaptığımız o kütüphane örneği vardı ya, Saffet vardı. Saffet'in kütüphanesinin gereksinimlerin üzerinden bir daha geçeceğiz ve mesela işte yaşının 12 olmasıyla alakalı bir şeyler tanımlamamız gerekiyordu.
+
+183
+00:40:00,000 --> 00:40:06,159
+Hatırlarsanız çocuk 12 yaşındaysa 5 tane mi alabiliyordu? Evet, 5 tane alabiliyordu kitap.
+
+184
+00:40:06,159 --> 00:40:13,940
+O gibi kısıtları acaba o siyerle nasıl yazarız ya da o gereksinimlerde başka ne gibi yazılması gereken ifadeler var?
+
+185
+00:40:14,079 --> 00:40:18,740
+Bunların üzerinden geçerek de örneğini size yapmış olacağım, tanıtmış olacağım.
+
+186
+00:40:20,019 --> 00:40:40,860
+Bir OCL, bir spesifikasyon dili. Aynı First Order, Logic gibi. Bir belirtim dili yani. Ve bu sayede sizin sisteminizin özelliklerini, işlevsel detaylarını tanımlayabiliyorsunuz. Bu imperatif bir dil değil. Deklaratif bir dil. Ne demektir?
+
+187
+00:40:47,327 --> 00:41:07,347
+Yazdığınızda aslında adım adım yapmanız gereken, işletmeniz gereken komutları verirsiniz. Fakat burada deklaratif dillerde, bildiren dillerde siz yazılacak kodu ya da yapmanız gereken algoritma adımlarını açıkça belirtmezsiniz. Açıkça belirtmeden sonuçların ne olacağını tanımlarsınız.
+
+188
+00:41:07,347 --> 00:41:14,768
+Dediğim gibi ortamı ne hale getiriyorsunuz, neyi garanti ediyorsunuz? Bunları deklare edersiniz. Bu gibi dillere deklaratif diller denir.
+
+189
+00:41:16,211 --> 00:41:23,431
+Bir diğer özelliği OCR dilinin Strongly Type olmasıdır. Yani Weakly Type'tın tam tersidir.
+
+190
+00:41:23,923 --> 00:41:51,923
+Tüm değişkenler bellidir ve tipleri de bellidir. Bir değişkeni, bir tipte tanımladığınız değişkeni bir başka değişken yerine ya da bir başka tip yerine kullanamazsınız. Mesela burada JavaScript ya da Python karşımıza weekly type olarak çıkıyor. Neden? İşte i eşittir bir dediniz, kullandınız. Aşağıda i eşittir ali dediniz string olarak. Ne oldu? Birinde integer, birinde string.
+
+191
+00:41:51,923 --> 00:42:06,104
+Zinc kullandığınız ikisi de aynı değişkende. İşte bunlara weekly type diyoruz. Fakat bu işte C gibi, Java gibi daha doğrusu strongly type değişkenlerin tipini değiştiremediğiniz bir değil.
+
+192
+00:42:07,384 --> 00:42:17,443
+Pek çok araç, UML yazdığımız pek çok araç da aslında OCL'i destekliyor. Hala kaldı mı bilmiyorum ama Rational Enrolls'u çok meşhurdu uzun zaman. Argo UML.
+
+193
+00:42:17,876 --> 00:42:38,576
+Eclipse, Eclipse'in tabii plug-inleri, Poseidon Octopus ya da Enterprise Architect gibi işte bu dünyada kurumsal olarak kullanılan uygulamalar, yani gömsel diagramı çizdiğiniz uygulamaların çoğu aslında OCL yazmanıza da tanımları deklare etmenize de olanak sağlıyor.
+
+194
+00:42:38,936 --> 00:42:44,996
+Bu tanımları deklare etmek size neyi getiriyor? İşte mesela o davranışın başka türlü çalışmamasını garanti etmenizi getiriyor.
+
+195
+00:42:46,003 --> 00:43:07,963
+Diagramlarda tanımlayamadığımız anlamsal detayları verdiğimizi söylemiştik. Aynı şeyi tekrar etmeye gerek yok. Neler sağlıyor? Herst Order Logic'de biraz önce aslında gördük. Bir değişmeyen bir sınıf yapısı tanımlıyor.
+
+196
+00:43:08,755 --> 00:43:24,755
+Oysiyel'de bunu tanımlayabilirsiniz. İki, yaptığınız eylemlerin ya da davranışların, yani işlemlerinizin çalışması için gerekli ön koşulları ve çalışıp bittikten sonra ne hale getirdiğini, ortamın kesin tanımlarını yapmanızı ve hatta...
+
+197
+00:43:25,039 --> 00:43:48,219
+Durum diagramlarında, ki durum diagramlarında haftaya işleyeceğiz, durum modellemesini haftaya göreceğiz. Durum diagramlarında durum geçişlerini nasıl kontrol edeceğimizi de, yani hangi koşullar altında bir durumdan başka bir duruma geçmemiz gerektiğini sistem olarak da yine OCL ifadeleriyle tanımlayacağız.
+
+198
+00:43:53,039 --> 00:43:59,019
+Ve her türlü uygulamada kullanılabilir hale getiren bir parçası ya da eklentisi.
+
+199
+00:43:59,668 --> 00:44:27,108
+Ne dedik? Bir daha bakacak olursak, deklarativdir dedik. Prosedürel bir dil değil, programlama dili değil ama tanım dilidir dedik. Aktiviteleri değil, değerleri tanımlar, oluşacakları belirler dedik. Aslında bir atama ifadesi yoktur. Yani eşitleri doğal olarak kullanacağız. Fakat bunlarla kısıt ya da özellikleri ifade edeceğiz. Arkadaşlar çok affedersiniz bir önemli telefon geldi.
+
+200
+00:44:27,668 --> 00:44:28,648
+Hemen dönüyorum.
+
+201
+00:45:04,148 --> 00:45:29,528
+Kusura bakmayın. Geri geldim. Ne dedik? Strongly Type dedik. Kendi veri tipleri ve UML diagramlarında kullandığımız veri tipleri var. Bunların tipleri değişmiyor. Atamalar eşittir koyuyoruz ama atama değil bunlar. Aslında bir bildirim yapıyoruz ya da bir kısıtı ya da özelliği tanımlamış oluyoruz eşittirle. Ve OCL'de aslında tanımladığımız tek bir şey var. Bu da kısıtlar.
+
+202
+00:45:30,483 --> 00:45:48,163
+Yani Object Constraint Language ya zaten. Tek yaptığımız şey Constraint tanımlamak. Bunlar Formal Specification'lar ve sistem özelliklerini biçimsel olarak bildirdiğimiz yapılar. Sadece Constraint tanımlıyoruz. Başka hiçbir şey değil. Peki neler yapabilirim? Yani ben o siyerle ne gibi Constraint'ler tanımlayabilirim?
+
+203
+00:45:48,163 --> 00:45:56,384
+Bir, sınıflarınızda değişmemesi gereken ifadeler varsa bunları tanımlayabilirsiniz. İlla böyle olacak dedikleriniz.
+
+204
+00:45:57,043 --> 00:46:02,344
+İşlemlerinizdeki ön ve son koşulları biraz önce uzun uzun bahsettim, tanımlayabilirsiniz.
+
+205
+00:46:03,503 --> 00:46:10,824
+Eğer türetilen özellikleriniz var ise, mesela yaş özelliği türetilen bir özelliktir diye yanına bölü koymuştuk hatırlarsanız.
+
+206
+00:46:10,824 --> 00:46:20,744
+Bu nasıl türetilecek? Aslında bugünden doğum tarihini çıkartarak yapmam gerekiyor. Çok basit ama başka türetilen özelliklerde farklı şeyler yapmanız gerekir.
+
+207
+00:46:20,844 --> 00:46:24,344
+Mesela faiz hesabı gibi. Bunların nasıl türeyeceğini tanımlayabilirsiniz.
+
+208
+00:46:25,108 --> 00:46:39,827
+State Chart'lardaki geçişler için Guard'lar tanımlayabilirsiniz. Dediğim gibi kontrolleri. Hangi durumdan hangi duruma hangi koşulla geçerim. Mesajlarınız için hedefler tanımlayabilirsiniz. Hangi hedeflere bu mesajın gideceğini kısıtlayabilirsiniz.
+
+209
+00:46:40,659 --> 00:46:46,899
+Stereotipler için tip sabitleri tanımlayabilirsiniz. Yani type invariant dediğimiz yapılar.
+
+210
+00:46:46,899 --> 00:46:56,779
+Ve ayrıca yine bir sorgu dili gibi kullanarak sınıf diagramından türettiğiniz nesneleri belli kriterlere göre sorgulayabilirsiniz.
+
+211
+00:47:01,331 --> 00:47:02,172
+Öğ...
+
+212
+00:47:06,708 --> 00:47:14,588
+Niye geçmiyor? Geçti. Bazen böyle takılıyor slide'lar. Bilmiyorum neden.
+
+213
+00:47:15,027 --> 00:47:37,087
+Peki, nasıl yazacağız? OCL'in sintaksı nasıl? Biraz önce söyledik sadece constraint yazarız diye. Sintaks şekilde, context, bir identifier, constraint'in tipi ve bir boolean ifade. Bu kadar. Aslında yazacağımız her şey, yani başlık alanı bu şekilde olacak.
+
+214
+00:47:38,420 --> 00:47:47,400
+Şimdi buradaki kısıtta, yani şuradaki constraint type'da aslında biz anahtar kelimeler ve ifadeler barındırıyoruz.
+
+215
+00:47:47,400 --> 00:47:57,660
+Bütün OCR'lerde, mutlaka yazdığınız bütün constraintlerde önce bir kontekst tanımlaması yapmanız gerekir.
+
+216
+00:47:57,660 --> 00:47:59,660
+Kontekst aslında...
+
+217
+00:48:00,447 --> 00:48:24,787
+Bir diagramda, örneğin bir sınıf diagramında bizim nerede durduğumuzu gösteriyor. Yani kontekstimizin, odak noktamızın ya da başlangıç noktamızın neresi olduğunu gösteriyor. Identifier dediğimizde kontekstin ismi. Yani hangi kontekste duruyorsunuz? Genellikle bir sınıf ismi verilir. İşte kontekst ziyaretçi.
+
+218
+00:48:25,204 --> 00:48:45,443
+Ben ne yaptım? Ziyaretçi sınıfı kapsamında bir kısıt yazıyorum diye bir tanım yapmış oldum. Ya da bir metot adını yazabilirsiniz. Ziyaretçinin ödünç aldıkları. Ziyaretçi 2.2. ödünç aldıkları. Bir işlemle ilgili kısıt yazacaksanız da metodun adını verebilirsiniz.
+
+219
+00:48:47,311 --> 00:49:04,891
+Kısıtın tipi. Üç çeşitli kısıtımız var. Biraz sonra göreceğiz. Invariance, yani değişmez tanımlar. İkincisini zaten gördük aslında yine First Order'da. Preconditionlar, bu kısıtın çalışması için gerekli ön koşullar nelerdir? Doğru olması için.
+
+220
+00:49:04,891 --> 00:49:12,291
+Ve postconditionlar, yani bu kısıt çalışıp bittikten sonra ben neyi garanti ediyorum, neyi tanımlıyorum, neyi deklare ediyorum?
+
+221
+00:49:12,692 --> 00:49:28,072
+Bu da kısıt tipi. Sonrasında da mantıksal bir ifade. Yani aslında kısıtın tanımı. Şöyle böyle hani büyüktür, küçüktür, permütasyonudur falandır falandır diye örnek verdik ya. Buradaki kısıt tanımımız.
+
+222
+00:49:30,036 --> 00:49:39,536
+Kısıtlarımız doğal olarak UML'deki sınıf modeliyle birebir ilişki içinde olması gerekiyor ve bunun içinde bir sınıf modelini oluşturmuş olmamız gerekiyor.
+
+223
+00:49:39,536 --> 00:49:48,536
+Sınıf modeli üzerinde tanımlayamadıklarımızı ve hatta üzerine kısıt olarak söylememiz gerekenleri de OCL ile vermemiz gerekiyor.
+
+224
+00:49:49,536 --> 00:49:55,536
+Peki şimdi invariantlardan başlayalım. Invariant şu demektir, ilk kısıt tipimiz. Bir özelliğin.
+
+225
+00:49:56,307 --> 00:49:59,087
+Her zaman doğru olan ifadesidir.
+
+226
+00:50:00,000 --> 00:50:05,440
+Yani bir anahtar gereksinim tanımı gibi bunu düşünebilirsiniz. Ne demek bu?
+
+227
+00:50:06,759 --> 00:50:17,159
+Mesela sistemde diyelim nesneleriniz var ve nesnelerin değerleri var. Bu değerlerle ilgili belli kısıtlar yazmak istiyorsunuz. Bunları garanti etmek istiyorsunuz.
+
+228
+00:50:17,159 --> 00:50:27,799
+İşte bunun için bir OCL invariant tipinde bir kısıtı yazabilirsiniz. Bunun anahtar kelimesi iğne ve kısa olsun diye. İnvariantın iğne V'si.
+
+229
+00:50:28,179 --> 00:50:54,579
+Şimdi kontekst. Kontekst şeklinde mutlaka başlamamız gerektiğini söyledim. Etki alanımız büyük şirket. Demek ki ben büyük şirket sınıfı kontekstinde çalışıyorum ve bir invariant yazıyorum. Tipim invariant. Bakın bu benim bir özelliğim. Bir daha kontekstim büyük şirket olduğu için büyük şirket nokta çalışan sayısı gibi bir şey yazmama gerek yok.
+
+230
+00:50:54,896 --> 00:51:04,896
+Çünkü zaten buradayım. Hani self burası. Çalışan sayısının 50'den büyük olması gerektiğini belirtmişim. Yani...
+
+231
+00:51:05,427 --> 00:51:31,587
+Eğer sen büyük şirket sınıfından türeyen bir nesneysen, yani uygulamada kullanılan bir nesneysen, şu şartı her koşulda sağlamalısın. Bu bir invarianttır. Çalışan sayısı değişkenin ya da özelliğinin değeri 50'den büyük olmalıdır. Ya da çalışan sayısı özelliği 50'den küçük olursa sen büyük şirket sınıfına ait olamazsın.
+
+232
+00:51:31,587 --> 00:51:33,268
+Artık yok mu edersiniz?
+
+233
+00:51:33,427 --> 00:51:44,867
+Ya da bir şekilde çalışan sayısının 50'nin altına düşmesini mi engellersiniz? Aslında burada yaptığınız şey 50'den aşağı düşmemen gerekiyor kısıtını tanımlamaktır.
+
+234
+00:51:46,768 --> 00:51:53,367
+Mesela şey gibi bu, veri tabanındaki integrity constraint'ler vardır ya, veri bütünlüğünü sağlayan.
+
+235
+00:51:54,987 --> 00:52:00,047
+İşte işçi çalışır şirkette, şirket iflas etti, veri tabanından şirketi sildiniz.
+
+236
+00:52:00,596 --> 00:52:21,455
+İşçiyi ne yapacaksınız? İşçiyi de mi sileceksiniz? Yoksa başka bir yerde mi çalıştıracaksınız gibi düşünebilirsiniz. Ya da içinde işçi varken şirketin silinmemesini garanti edeceksiniz. Burada da yaptığımız şey çalışan sayısı 50'nin altına düşmemesini garanti etmek ki bu sınıf büyük şirket sınıfı olmaya devam edebilsin.
+
+237
+00:52:22,260 --> 00:52:43,700
+Ya da işte dangling pointer'lar vardır. Bu CD falan bunu rahatlıkla yaratabilirsiniz. Ama veri tabanı yönetim sistemleri işte biraz önce verdiğim örnekte olduğu gibi bunu engeller. Yani burada tabii karar size kalmış yönetici olarak işçileri de silebilirsiniz ama normalen işçi varken şirketin kapanmasını ya da silinmesini engellemeniz beklenir.
+
+238
+00:52:44,211 --> 00:53:05,731
+Buradaki invariantlarımız da aslında çok benzer bir mantıkla çalışıyor. Ve bu tanımlamalarda benzer rolleri üstleniyor. İkinci ve üçüncü tiplerimiz de ön ve son koşullar. Bunlar da işlemlerin anlamları aslında. Genellikle de bunları işlemlere yazarız.
+
+239
+00:53:06,483 --> 00:53:26,683
+O metot ne anlama geliyor? Bunu kullandığımızda ne olacak? Pre eğer yazıyorsak, ikinci kısıt tipimiz, işlemin anlamlı bir şekilde çalışması için ortam ne halde olmalı? Yani neler doğru olmalı? Hangi koşullarda bu işlem çalışır? Aslında bunu söylemiş oluyoruz.
+
+240
+00:53:27,251 --> 00:53:36,951
+Post'ta da çalıştı bitti ne olacak? Ortam ne hale gelecek? Yani bu çalışma neyi garanti ediyor? Örneğin sıralama neyin çıktısının oluşmasını, nasıl bir çıktı oluşmasını garanti ediyor.
+
+241
+00:53:37,556 --> 00:53:55,396
+Dönüş değeriyle inputlarımız arasındaki ilişkiyi tanımlamış oluyoruz. Aynı şekilde eğer bu işlemin çalışmasıyla mesela sınıfların özelliklerinde de değişiklikler yaratacaksak, ortamda farklı değişiklikler de yaratacaksak bunları da yine tanımlamamız gerekiyor.
+
+242
+00:53:57,967 --> 00:54:03,288
+Kontekste şey yazarken hem preyi hem postu birden tanımlayabilirsiniz.
+
+243
+00:54:03,947 --> 00:54:07,648
+Ya da ayrı ayrı kısıtlarda birinde preyi birinde postu da tanımlayabilirsiniz.
+
+244
+00:54:07,648 --> 00:54:10,588
+Bu size kalmış çok önemli bir nokta değil.
+
+245
+00:54:11,068 --> 00:54:16,028
+Genellikle pre ve post birlikte olarak yazılması daha okunaklı olacaktır.
+
+246
+00:54:18,008 --> 00:54:23,608
+First Order Lojik ifadesinde yaptığımız kare kök için ön ve son koşullara bakacak olursak.
+
+247
+00:54:23,923 --> 00:54:40,923
+İşte square root nedir? Bir kontekst tanımlamam gerekiyor. Hangi kontekste çalışacağım? Square root konteksti. Bakın bu bir davranış, işlem yani bir metot. Nerede tanımlı? Tam sayı sınıfında tanımlı.
+
+248
+00:54:52,148 --> 00:55:17,608
+Bir tam sayı çıktı üretecek. Ön koşul ne? Self, yani kendisi. Bu kontekstin kendisini biz direkt olarak ifadede self ile kullanırız. Self büyük eşittir, sıfır olacak. Bu olmazsa aslında siz buradaki işlemin çalışmamasını garanti etmiş oluyorsunuz. Yani negatif sayılarda çalışmam demiş oluyorsunuz.
+
+249
+00:55:18,195 --> 00:55:38,115
+Post Condition'ı ne? Self Eşittir Result Çarpı Result. Result da bizim Return Value'umuz. Buna da OCR'de Result adını veririz. Result Çarpı Result'ın Self'e eşit olması gerektiğini Post Condition'da tanımlamış olduk. Bir sub fonksiyonu tanımladık ve çıktığı ile girdi arasında direkt bir bağlantı kurmuş olduk.
+
+250
+00:55:38,804 --> 00:56:06,324
+Yani işte y çarpı y eşittir x şeklindeki tanımı self eşittir result çarpı result şeklinde tanımladım buradaki son koşulda. Tamamen deklarasyon yapıyorum gördüğünüz gibi. Yani sen kare kökü nasıl alacaksın, şu adımı yapacaksın, işte bu atamayı gerçekleştireceksin, bilmem ne çarpacaksın, böleceksin, çıkaracaksın, kalana bilmem ne yapacaksın gibi bir şeyler yapmıyorum. Adım adım.
+
+251
+00:56:06,804 --> 00:56:09,744
+İmperatif bir şekilde tanımlamıyorum. Sadece deklare ediyorum.
+
+252
+00:56:13,204 --> 00:56:34,384
+Şimdi bu saf fonksiyon olmayabilir dedik. Yani özelliklerin değerlerinde de değişiklikler yaratabiliriz demiştik. Mesela bir şeyimiz olsun. Banka hesabımız var. Banka hesabında da tutar ya da bakiye diye bir özelliğimiz var. Amount, pardon balance diyelim buna.
+
+253
+00:56:35,923 --> 00:56:49,923
+Bir para yatırabilirim ya da para çekebilirim. Yani depozit ya da withdraw işlemi yapabilirim. Ne yapmam gerekiyor? Aslında ben, yani girdiğiyle çıktı arasında bir bağlantı kurmam gerekecek.
+
+254
+00:56:57,135 --> 00:57:12,355
+Balans adını verdiğim bir özelliğinin değerini manipüle edeceğim. Peki nasıl edeceğim? Şu şekilde. Şimdi bunu depozit işlemiyle yaptığımı söyledim. Nedir? Para yatırma. O zaman benim kontekstim şu olması lazım.
+
+255
+00:57:12,355 --> 00:57:19,735
+Account sınıfının, yani hesap sınıfının depozit davranışı. Account'un depoziti.
+
+256
+00:57:20,096 --> 00:57:30,395
+Peki ben girdi olarak ne istiyorum? Adına amount dediğim bir gerçek sayı değişkeni istiyorum. Tamam mı? Bunun bir real number olması gerekiyor.
+
+257
+00:57:31,315 --> 00:57:37,775
+Şimdi real number olunca işler tabii biraz karışabilir. Negatif sayı verdiğimde hocam para mı çekmeye çalışıyoruz acaba diyebilirsiniz.
+
+258
+00:57:37,775 --> 00:57:44,775
+Hayır. Para çekmede başka kontrollerin de belki yapılması gerekecektir. O yüzden biz bunu aslında...
+
+259
+00:57:45,523 --> 00:57:49,583
+Sıfırdan büyük değerler için çalıştırmamız gerekiyor.
+
+260
+00:57:50,123 --> 00:57:52,724
+O zaman hemen buna çok basit bir ön koşul yazabilirim.
+
+261
+00:57:52,724 --> 00:58:01,583
+Ön koşulu bana verilen argümanın yani input argümanımın ya da işte x'imin sıfırdan büyük olması.
+
+262
+00:58:02,684 --> 00:58:05,503
+Ancak bu durumda depozit metodunu çalıştıracağım.
+
+263
+00:58:06,123 --> 00:58:09,824
+Eğer negatif bir sayı varsa zaten depozit metodunu çalıştırmayacağım demiş oldum.
+
+264
+00:58:10,164 --> 00:58:33,503
+Peki neyi garanti edeceğim? Balance eşittir, Balance artı amount değil mi? Mantık olarak düşündüğünüzde. Fakat burada ben atama yapıyorum. Bu atamayı böyle yaparsanız, hani OCR'de eşitlik yoktur dedik ya, atama yoktur dedik ya, bunlar eşitliklerdir. Ama siz burada nasıl bir eşitlik yapacaksınız? Hani Balance, Balance'ı götürdü. Hani burada hiçbir şey yok, burada amount var.
+
+265
+00:58:33,972 --> 00:58:54,852
+Burada null var, burada amount var. O zaman amount eşittir null mı olacak? Bu da doğru bir ifade değil. Yani yanlış bir ifade tanımı yapmış olursunuz. O zaman ben buradaki eşitliği şöyle tanımlamalıyım. Post Condition'da. Balance eşittir. Balance at pre. Özel bir yazım şekli gördüğünüz gibi.
+
+266
+00:59:00,692 --> 00:59:19,452
+Artı gelen hali. Bakın artık burada bir eşitlik var. Öncesi artı gelen eşittir benim yeni değerim. Ne yapmış oldum? Ortamda değişiklik yaratmış oldum. Örneğin nesnenin bir özelliğini manipüle etmiş oldum.
+
+267
+00:59:21,072 --> 00:59:23,092
+Peki, bir örnek.
+
+268
+00:59:24,980 --> 00:59:31,900
+A ve B diye real tipinde iki tane özelliğim var bir sınıfta. Tamam mı?
+
+269
+00:59:32,480 --> 00:59:40,239
+Ve bu sınıfta swap diye bir işlem var. Yaptığı şey de A ile B'nin değerlerinin yerini değiştirmek.
+
+270
+00:59:40,760 --> 00:59:42,539
+Bunun son koşulu acaba nedir?
+
+271
+00:59:43,380 --> 00:59:56,840
+Nasıl yazarım? Osyerle. Hemen aklımıza şey geliyor değil mi? İşte TMP eşittir A, A eşittir B, B eşittir TMP gibi böyle değişken ataması ifadesini yazmak geliyor. Ama burada dediğim gibi atamalar yok.
+
+272
+00:59:56,840 --> 01:00:07,840
+Peki o zaman bir postcondition yazacağım. Şu eşittir, şu ve şu eşit. Yani ben aslında...
+
+273
+01:00:10,036 --> 01:00:27,455
+B değişkenine A'nın ilk değerini, A değişkenine de B'nin ilk değerini atmaya çalışıyorum. O zaman yazmam gereken şey A eşittir, B et pre, and birlikte doğru olacaklar, B eşittir, A et pre.
+
+274
+01:00:28,315 --> 01:00:34,935
+Bakın burada da aslında ifadelerin neye eşit olduğunu garanti ediyorum, onu söyledim.
+
+275
+01:00:35,231 --> 01:00:44,791
+A değişkeni B'nin ilk haline eşittir. Bununla birlikte B değişkeni de A'nın ilk haline eşittir dedik.
+
+276
+01:00:45,391 --> 01:00:53,311
+Yani bir programlamadığında mutlaka bir TMP kullanıyorsunuz ama burada bir TMP değişken kullanmanıza, geçici bir değişken kullanmanıza gerek yok.
+
+277
+01:00:53,871 --> 01:01:01,751
+Tanımını sen ilk haline, B'nin ilk haline ve sen de A'nın ilk haline eşit olacaksın diyerek rahatlıkla yapabiliriz.
+
+278
+01:01:03,188 --> 01:01:11,708
+Saat 11 olmuş. Bir ara verelim isterseniz. Bir 15 dakika dinlenelim. Ondan sonra 11.15 geçe yolumuza devam edelim.
+
+279
+01:18:14,163 --> 01:18:22,743
+Evet arkadaşlar, tekrardan merhaba. Gecikmeyeceğiz ya. İki dakikada. Neyse, olur o kadar. İlerleyelim.
+
+280
+01:18:24,083 --> 01:18:32,863
+Şimdi OCR'de veri tipleri değişmez dedik. Peki, nasıl veri tipleri var acaba? OCR bize hangi veri tiplerini sunuyor?
+
+281
+01:18:33,423 --> 01:18:39,843
+Ve bunlarla hangi işlemleri yapabiliyoruz? Bunun konuda tabi ki tablo sadece bu kadar değil.
+
+282
+01:18:40,275 --> 01:18:47,475
+Bununla ilgili siz araştırma yapar ve hangi veri tipiyle hangi işlemleri yapabildiğinizin detaylarını araştırırsınız.
+
+283
+01:18:48,475 --> 01:18:53,015
+Ama işte genel olarak dört tane veri tipi var. Boolean, Integer, Real ve String olmak üzere.
+
+284
+01:18:53,695 --> 01:19:01,155
+Booleanlar True, False. Üzerinde AND, OR, XOR, NOT, IMPLIES ve IF, THEN, AS işlemlerini yapabiliyoruz.
+
+285
+01:19:02,376 --> 01:19:04,376
+Integer'ler tam sayılarımız.
+
+286
+01:19:04,800 --> 01:19:17,600
+Yine dört işlem ya da mutlak değer alma gibi ve bunun gibi farklı şeyler toplama falan gibi işlemler üzerlerinde hazır tanımlı durumda.
+
+287
+01:19:17,600 --> 01:19:27,980
+Yine tam sayılarda da benzer işlemleri yapabildiğiniz gibi işte hani üstte yuvarlı, alta yuvarlı gibi farklı şeyler hazır.
+
+288
+01:19:28,595 --> 01:19:54,175
+Fonksiyonlar ya da işlemlerde kullanabilirsiniz. Yine stringlerde de pek çok hazır fonksiyon var. Hepsini büyük harfe çevirme, küçük harfe çevirme, stringleri birleştirme, substring alma gibi hazır işlemler. Yine veri tipleri üzerindeki manipülasyonlar için kullanabileceğiniz tanımlı fonksiyonlarınız mevcut. Dediğim gibi bunları araştırır ve neler olduklarının detaylarını bulabilirsiniz. Bu tablo sadece bu kadar. Doğal olarak değil.
+
+289
+01:19:57,427 --> 01:20:19,047
+Osiyle oluşturan anahtar kelimeler, yani Osiyle'nin nasıl bir söz dizimi var, keywordleri nelerdir diye bakacak olursak, şimdi invariant, pre ve post anahtar kelimeleri, gördük bunları, ne yapıyordu? Kısıtları tanımlıyorlardı.
+
+290
+01:20:19,475 --> 01:20:36,195
+Eğer koşullu ifade oluşturmak istiyorsanız elinizde şu var. Koşul ifadesi olarak if, then, else ve and if zincirlemesini kullanabilirsiniz. Tabi burada else, if falan diye bunları devam ettirebilirsiniz isterseniz.
+
+291
+01:20:37,335 --> 01:20:46,975
+Mantıksal operatörler not yazıyla, or, and bunlar hep yazıyla gördüğünüz gibi, xor ve implies.
+
+292
+01:20:47,456 --> 01:20:57,935
+Hani if b'den q ok ifadesi. Bunlar da bizim mantıksal operatörlerimiz, OCL'de kullandığımız.
+
+293
+01:20:58,771 --> 01:21:18,011
+Paket konusunda özellikle birimleri bölükleme yeteneğini, UML'deki yeteneği gösteren paketleme ile alakalı package ve end package ifadeleri var. Yani bir paketin başlangıcı ve sonunu tanımlamanız için anahtar kelime package olacaktır. Bu ders kapsamında çok fazla kullanmayacağız.
+
+294
+01:21:18,515 --> 01:21:31,675
+Bir diğer anahtar kelime kontekst. Kontekst aslında biliyorsunuz ilk yazdığımız kelime her zaman. Kısıtı hangi kontekste, hangi etki alanında tanımladığımızı söylüyor. Bunu da başta gördük.
+
+295
+01:21:31,915 --> 01:21:41,456
+Global tanımlar yapmak istiyorsak, global tanım yapmamızı sağlayan ifade def, yani define, bunun kısaltması.
+
+296
+01:21:42,003 --> 01:22:01,203
+Lokal tanım yapmak istiyorsak da let ve in. Bunlar şunu söylüyor aslında. Uzun bir ifadeniz var diyelim. Hani böyle ifli, denli, orlu, entli bilmem neli böyle uzun bir ifade tanımladınız ve bunu birkaç yerde aynen kullanmanız gerekiyor.
+
+297
+01:22:02,739 --> 01:22:14,699
+Sen şu ol, senin takma adın şöyle kısa bir şey olsun deyip sağda solda o ifadeyi direkt kullanmanızı sağlayan, yani kısaltma yapmanızı, o siyelde kısaltma yapmanızı sağlayan anahtar kelimeler.
+
+298
+01:22:15,840 --> 01:22:23,899
+Hesaplanan özellik değerlerini tanımlamak istiyorsanız, yani özellik türetmek istiyorsanız da derive kelimesini kullanmamız gerekiyor.
+
+299
+01:22:24,459 --> 01:22:25,559
+Bunun da örneğine bakacağız.
+
+300
+01:22:26,292 --> 01:22:43,172
+Eğer bir ilk değer ataması yapacaksak init anahtar kelimesini kullanıyoruz. Result ve self'i gördük. Result, return value'larımız, dönüş değerimiz. Self'de kontekstimizin içindeki o nesne her neyse, şu anda kısıtladığımız nesne her neyse onun kendisi.
+
+301
+01:22:43,172 --> 01:22:53,292
+Onun özelliklerine falan ya da kendisi üzerinde yapacağımız kısıt tanımlarını self anahtar kelimesiyle kullanıyoruz. Aslında bunu da örneğiyle gördük.
+
+302
+01:22:53,600 --> 01:23:07,659
+Yani bu kadar bir anahtar kelime havuzuna sahip. Çok böyle karmaşık bir dil değil. Fakat her türlü kısıtı bunları kullanarak uygulamalarımızda, diagramlarımıza eşlenik olarak yazmamıza olanak sağlıyor.
+
+303
+01:23:08,280 --> 01:23:17,980
+Let ifadesi şöyle. Hemen göstereyim örneğini. Şimdi income diye bir tane tanımım olsun. Bu tanım aslında şu.
+
+304
+01:23:18,420 --> 01:23:37,840
+İşlerimdeki bütün maaşların toplamı. Tamam mı? Ben income ifadesini şöyle tanımlıyorum. Integer, tamam mı? Integer tipinde eşittir. Self.job.salarinin sum'ı.
+
+305
+01:23:38,515 --> 01:23:55,635
+Demek ki ben her nerede duruyorsam, işte mesela employer nesnesindeyim kontekst olarak diyelim. Oradaki benim üzerimden erişebildiğim job nesnesindeki salary özelliklerinin tamamının toplamı anlamına geliyor.
+
+306
+01:23:55,635 --> 01:24:06,036
+Ben yani self.job.salary'nin sum'ı şeklinde her yerde ifadeyi tekrar tekrar uzun uzun yazmak yerine, bu daha da karışık bir şey olabilirdi.
+
+307
+01:24:06,515 --> 01:24:14,335
+Let income ifade in deyip sonrasında bakın şurada bir kısıt yazıyorum.
+
+308
+01:24:14,335 --> 01:24:19,595
+If is unemployed, işte bu doğruysa ya da yanlışsa then.
+
+309
+01:24:20,148 --> 01:24:37,948
+İnkam küçüktür, 100 olması gerekir. Bunun koşulu mutlaka doğru olması gerekir. Eğer değilse de bunun toplamı, yani jobların, saların, samının toplamı 100'den büyük eşit olması gerekir. Bunu garanti etmeniz gerek diye bir kısıt tanımlayabilirim.
+
+310
+01:24:38,224 --> 01:25:02,764
+Eğer income'ı burada yazmasaydım, yani let income deyip bir tanım yapmasaydım, let income in diyerek, o zaman her yerde şuradaki integer self-job salary sum'ı şurada ve şurada kullanmam gerekirdi. Daha karmaşık ifadeler de olabilir. İşte böyle ifadeleri makro yazar gibi sadeleştirmek amacıyla kullanırız let'i. Yerel bir kısaltmaya da tanım yapmış oluruz.
+
+311
+01:25:05,332 --> 01:25:18,572
+OCL içinde aslında UML'de de kullanabildiğimiz bir gezinti mekanizması var. İlk başta biz ne demiştik? Kısıtlar, koleksiyon sınıfları, diagramlardaki sınıflar ya da ilişkiler arasındaki gezinin mekanizması.
+
+312
+01:25:19,572 --> 01:25:32,172
+Gezinti aslında. Ve OCL'lerde, aslında yazdığımız OCL'lerde hep bir sınıf diagramı ile mutlaka ilişki içindedir dedik. Her bir kısıtımız mutlaka bir sınıf veya işlemle başlıyor.
+
+313
+01:25:33,235 --> 01:25:49,395
+O zaman ben biraz önce hani self-job salari de bunu ufak ufak görmeye başladık. Ben sadece context sınıfını değil, bunlarla ilişkili başka sınıfların özelliklerini de değiştirebilmeliyim.
+
+314
+01:25:50,292 --> 01:25:55,852
+Yani özetle bir OCL invariantı yazıyorsunuz.
+
+315
+01:25:56,231 --> 01:26:04,592
+Burada non-context bir sınıfın özelliklerine referans vermek istiyorsanız o zaman buradaki nitelikli isimleri kullanmamız gerekli.
+
+316
+01:26:04,592 --> 01:26:12,592
+Bir navigasyonla, bir gezintiyle, diagram üzerinde yürüyerek tabii ki diagramda erişebilir olmamız gerekiyor.
+
+317
+01:26:12,852 --> 01:26:17,592
+Ve her bir adımda sanki her bir context switch yaptığımızda bir noktaya...
+
+318
+01:26:18,292 --> 01:26:34,252
+Eklediğimizde yeni bir kontekste geçip, ilişkideki başka bir sınıfa ya da o sınıfa ait bir ilişkiye ya da ilişkiye ait ayrı bir özelliğe kadar gidip bunları kısıtımıza ekleyebiliriz.
+
+319
+01:26:34,252 --> 01:26:39,652
+Yani mesela şimdi şöyle bir örnek hızlıca basit bir şey düşünelim.
+
+320
+01:26:40,787 --> 01:26:59,627
+Bir class diagram var burada. Pardon özür dilerim. Yalnızca tıkladım. Burada ben şimdi context customer yazmış olayım tamam mı? Ve ben bir siparişin hangi tarihte verildiğiyle alakalı müşteri üzerinde bir kısıt yazmaya çalışıyorum.
+
+321
+01:27:03,220 --> 01:27:21,900
+Belki bir yıldan önce ya da sonra sipariş verememesini ya da görememesini falan istiyorum diyelim. Bununla ilgili bir kısıt yazmam lazım. Ben şimdi context customer'dayım. Peki ben bir şekilde siparişlerin tarihlerine erişmem lazım. Nasıl erişeceğim? Neredeyim? Customer'dayım. Burası nest self.
+
+322
+01:27:22,355 --> 01:27:41,415
+Self nokta dedim ve customer'dan erişebildiklerime artık gidebildim. Nereye gidebiliyorum bu diagramda? Sadece order'a gidebiliyorum değil mi? Yani self nokta order dediğimde artık bu kontekste değil bu konteksteyim. Aslında self'in order'ındayım. Çünkü buradan erişebildiğimi görüyorum. Ve order'ın bir date'i var.
+
+323
+01:27:41,844 --> 01:27:57,644
+SelfOrder.date diyerek de aslında buradaki order'ın date'ine erişip bu kontekstin içinde olmama rağmen, customer kontekstinde olmama rağmen başka bir yerdeki non-context özelliği kendi kısımın içinde de kullanabiliyorum.
+
+324
+01:27:57,644 --> 01:28:07,863
+Ama tabi diagramda oraya gidebilir, erişebilir olmanız bunun esas ilk noktası. Eğer gidemiyorsanız doğal olarak bunu yazmanızın bir mantığı yok.
+
+325
+01:28:09,043 --> 01:28:18,163
+Gezintide tabii çoğullamalar da var. Hatırlarsanız sınıf diagramlarında sayılar ya da yıldız kullanarak bir sınıftan kaç örneğin?
+
+326
+01:28:18,511 --> 01:28:37,391
+Diğer sınıftan kaç örnek ile ilişkide olabileceğini tanımlayabiliyorduk. İşte birebir ilişki varsa gelin damat gibi düşünmüştük. Bir annenin en tane çocuğu olabilir ya da işte en tane öğrenci en tane ders alabilir ya da işte en derste en öğrenci olabilir şeklinde çoğullamaları tanımlayabiliyorduk.
+
+327
+01:28:46,612 --> 01:29:04,172
+Şuraya baktığımızda şöyle geri geleyim. Bakın mesela bir customer'da n tane order var değil mi? Yani siz burada, burada bire n ilişki olduğu için gezinti sonucunda non-context'te geçtiğinizde orada aslında size gelen şey tekil bir nesne değil.
+
+328
+01:29:04,576 --> 01:29:17,716
+Bir nesne koleksiyonu, yani çoğul bir sayı varsa orada tek nesne değil bir koleksiyon gelecektir. Ve işte bu bir küme olabilir, bir yığın olabilir, sıralı bir dizi olabilir. Bir koleksiyon olacaktır. O siyel.
+
+329
+01:29:18,515 --> 01:29:29,775
+Bu gibi koleksiyonlar üzerinde işlem yapabilmenize de olanak sağlıyor. İşlemleri hatırlarsanız işte tam sayı ya da Rinteger, Real gibi tiplerde neler olduğunu hızlıca söylemiştik.
+
+330
+01:29:30,315 --> 01:29:35,755
+Koleksiyonlar üzerinde de işte bu aynı C'deki straklara erişir gibi düşünebilirsiniz.
+
+331
+01:29:38,836 --> 01:29:49,336
+Eksi büyüktür sembolüyle, yani aslında bir ok sembolüyle koleksiyonun adını o koleksiyon üzerinde yaptığımız işlemin adından ayırabiliriz.
+
+332
+01:29:49,336 --> 01:29:54,395
+Mesela örneğimizde ödemeler vardı. Şöyle geri gideyim.
+
+333
+01:29:55,076 --> 01:30:00,000
+Customer Order. Bakın bir orderda bir ile en...
+
+334
+01:30:00,000 --> 01:30:26,779
+Tane Payment var. Tamam mı? Ve bu Payment aslında, bunu aslında yatık yazsak daha da güzel olur. Kredi kartıyla Payment olabilir. Cash ile Payment olabilir ya da Check ile Payment olabilir demiştik. Aynı zamanda bakın bunlar bir interfejsi de implement ediyorlar. Kredi kartı ve Check bir otorizasyon interfejsini de mutlaka, authorized diye sağlamak durumundaymış. Diyelim ki ben buradaki siparişi birden fazla Check ile ödedim. Tamam.
+
+335
+01:30:27,247 --> 01:30:33,927
+O zaman ben mesela kaç tane çekle ödediğimi saymak istiyorum. Nasıl sayacağım?
+
+336
+01:30:34,467 --> 01:30:42,287
+Koleksiyonlardaki tabii ki size OSI'nin sunduğu işlemleri biliyor olmanız lazım ama ben size hızlıca bir tanesini söyleyeyim. Size diye bir işlem var.
+
+337
+01:30:42,747 --> 01:30:47,387
+Yani nedir? Koleksiyonda kaç eleman olduğunu size geri döndüren bir işlem.
+
+338
+01:30:47,387 --> 01:30:53,147
+Customer nesnesindeydik hatırlarsanız. SelfCustomer.Order.
+
+339
+01:30:53,939 --> 01:31:14,619
+Nokta Check. Niye direkt Check'e gidiyorum? Aslında çünkü ben Customer Order içinde Payment'a bağlıyım. Payment'la ilişkileyim ama Payment değil aslında. Benim için önemli olan Credit Payment, Cash Payment ya da Check Payment olmak buradaki genelleştirmeden dolayı. O yüzden Customer Order Check diye devam ediyorum.
+
+340
+01:31:15,380 --> 01:31:32,280
+Customer Self, yani Order Check. Bunun içindeki Bank ID'lerin Size'ı. Ne yaptım? Birden fazla bankanın çeki ile yaptığım sayı ödemelerin toplamı. Yani kaç tane farklı banka çeki ile ödeme yaptım?
+
+341
+01:31:32,659 --> 01:31:46,119
+Bunu saymaya çalışıyorum. Direkt olarak gezinti çoğullaması ile, self-order check bank ID'lerin size'ını ver şeklindeki bir ifadeyle kısıt yazarken buradaki sayıya erişebildim.
+
+342
+01:31:46,979 --> 01:31:52,279
+Hani şeyi unutmayalım, yıldız ya da belli bir birden büyük sayı varsa mutlaka koleksiyon dönecektir.
+
+343
+01:31:52,679 --> 01:31:58,460
+O zaman orada koleksiyon nesneleri üzerinde mutlaka kısıtın tanımını yazmanız gerekecek.
+
+344
+01:31:59,444 --> 01:32:27,204
+Aslında OSIEL'deki üçüncü ana eleman neydi? Birincisi, kısıtın kendisiydi. İkincisi de gezinti yapmaktı. Yani kontekst switching yapmaktı. Üçüncüsü de koleksiyon sınıfları. Bireen ya da NAM şeklindeki ilişkileri destekleyen dört tane koleksiyon çeşidimiz var OSIEL'de. Bunlar bir koleksiyon. İki, aslında bunlar da koleksiyon ama daha özel halleri küme yani set. Set nedir?
+
+345
+01:32:27,444 --> 01:32:30,004
+Bir eleman bir kere olur değil mi? Set'te tekrarları olmuyordu.
+
+346
+01:32:30,224 --> 01:32:33,764
+Beg ve sıralı dizi yani sequence halinde durması.
+
+347
+01:32:34,704 --> 01:32:39,364
+Tabi bu da girdilerin sıralı olmasını garanti eden özel bir koleksiyon tipi.
+
+348
+01:32:39,984 --> 01:32:42,044
+Koleksiyon sınıfında neler yapabilirsiniz?
+
+349
+01:32:42,244 --> 01:32:44,644
+Yine bunların detaylarına siz araştırıp bakarsınız.
+
+350
+01:32:45,304 --> 01:32:46,844
+Size'ı biraz önce gördük.
+
+351
+01:32:47,044 --> 01:32:50,844
+Includes var. İşte belli bir elemanı içerip içermediyeyim.
+
+352
+01:32:51,220 --> 01:32:57,400
+Sayısı, include all. Bunların hepsini içerip içermediği. Boş mu, dolu mu?
+
+353
+01:32:58,003 --> 01:33:12,344
+Toplam değeri nedir? Exists, For All, For All ve Iterate direkt olarak üzerinde bütün nesneleri gezerek teker teker mesela işlem yapmanızı sağlayan,
+
+354
+01:33:12,344 --> 01:33:19,564
+for döngüsü yaratmanızı ya da bütün elemanları için belli bir eğilimi gerçekleştirmenizi sağlayan işlemler.
+
+355
+01:33:20,500 --> 01:33:46,119
+Aynı zamanda koleksiyonun alt sınıfları olan Set, Bag ve Sequence bunları direkt olarak miras alır. Bunlar yine onlarda tanımlıdır. Haricinde bunun dışında özelleşmiş işlemleri de var. Yine OCR'nin referansmanı yönüne girer bakarsınız ve buradaki koleksiyon sınıf tiplerinde ne gibi işlemler tanımlı OCR yazmak için bunları ortaya çıkartabilirsiniz.
+
+356
+01:33:47,252 --> 01:33:57,552
+Geri kalanı çok fazla buralara girmeye gerek yok ama bilin, farkında olun. Sonuçta bu bir ileri seviye ders.
+
+357
+01:33:58,036 --> 01:34:19,215
+Kısıtlarımızın, gezinti mekanizmamızın ve koleksiyonlarımızın dışında OCL'de daha az kullandığımız çeşitli özellikler vardır. Bunların birincisi Tupple'dır. Aynı Stratya'da Record yazar gibi yapı oluşturmanızı sağlar. Değişken grubu oluşturmanızı sağlar. Enumerasyon yapabilirsiniz. Aynı Java'daki gibi ya da diğer dillerdeki gibi.
+
+358
+01:34:19,731 --> 01:34:45,771
+Bir mesaj ifadesi yaratabilirsiniz. Bu ne demek? Bir işaret gönderildi diye bir belirtim yaratabilirsiniz. Ya da bir işlem tetiklemesi yapabilirsiniz. Ya da yine en ileri seviye olacak şekilde UML meta modele erişip, hani meta modeli de değiştirebilir ve kendi UML'inizi yaratabilirsiniz demiştik ya. Burada da yazmanız gereken OCR'ler olacaktır. Meta modele erişerek bunlar için de OCR kısıtlarını tanımlayabilirsiniz.
+
+359
+01:34:47,252 --> 01:35:15,252
+Son burada bahsedeceğimiz özellik otomatik flattening dediğimiz otomatik düzleştirme özelliği. Diyelim ki bir gezinti yapıyorsunuz ve üzerinde pek çok bileşeni olan iki tane ilişkiniz var. İşte şey gibi hani set of sets ya da set of bags gibi böyle bir şeyin bir şeyi şeklinde pek çok bileşeni olan iki tane ilişkiniz varsa her bir iki seviyeyi de belirtmemize burada gerek yok.
+
+360
+01:35:15,252 --> 01:35:40,952
+Yani ikinci seviyeden direkt olarak bahsetmeniz yeterli oluyor. Buna da otomatik düzleştirme adını veriyoruz. İhtiyacınız olursa dediğim gibi detaylarını yine araştırır da daha fazlasını öğrenebilirsiniz. Ama bunlar OSEAN'ın ileri seviyeleri. OSEAN'ın kendisi bile ileri seviye olduğu halde bir de onun da ilerisinden bahsetmek iyice uç nokta haline geliyor aslında ama bunlar var sonuçta elimizde araç olarak.
+
+361
+01:35:41,844 --> 01:35:59,203
+OCR ile ilgili son olarak söyleyebileceklerim. Aslında First Order Logi'ye göre, görece, kolay bir dil. Aynı şeyi yazıyorsunuz ama biraz daha böyle programlama mantığıyla yazdığınız için daha kolay implementasyonu var. Case araçları bunlara destek veriyor.
+
+362
+01:36:00,804 --> 01:36:07,844
+Dediğim saydığım işte Eclipse olsun, Eclipse eklentileri olsun, Argo olsun, Enterprise Architect olsun bunlara destek veriyor.
+
+363
+01:36:08,307 --> 01:36:30,967
+Sistemimizin özelliklerini kesin olarak tanımlayabilmemizi sağlıyor. Hem yapısal hem de davranışsal diagramların aslında vazgeçilmez tamamlayıcısı. Yani UML'in ayrılmaz bir parçası. Ve OCL kullanarak da deklarasyonlarınızı istediğiniz kadar kesin tanımlarınızı aynı First Order Logic gibi birebir yapıp yaratabilirsiniz.
+
+364
+01:36:36,307 --> 01:36:40,367
+Kesin tanımlı olması gereken durumlarda mutlaka yazmanız gerekecektir.
+
+365
+01:36:44,115 --> 01:36:50,296
+Peki, bu noktadan sonra şeye bakalım. Bizim Saffet'in kütüphanesine geri dönelim.
+
+366
+01:36:51,176 --> 01:37:01,155
+Ve YÖML diagramı ile açıklayamadığımız gereksinimlerdeki olan ama hala diagramlarda gösteremediğimiz kısımları OCR ile nasıl ifade ederiz ki hepsi olmayacak?
+
+367
+01:37:01,376 --> 01:37:06,816
+Kaç örneğini en azından nasıl yaparız? Bunlara da bakalım ve bu şekilde dersimizi tamamlayalım.
+
+368
+01:37:07,576 --> 01:37:09,216
+Gereksinimlerimizi hatırlayacak olursak.
+
+369
+01:37:09,652 --> 01:37:18,192
+Her ziyaretçi bir teki kütüphane kartına sahipti. Ad adres, telefon ve kart numarasını bilmemiz gerekiyordu.
+
+370
+01:37:18,707 --> 01:37:44,047
+Herhangi bir anda ödünç aldığı parçaları, teslim zamanlarını, ödemediği gecikme cezalarını bilebilmeli ve hesaplayabilmeliydi. Bakın burada zaten buram buram OCR kokuyor. Bunun nasıl yapılması gerektiği, demek ki ödünç aldıklarını almam lazım, teslim zamanlarını bilmem lazım, bunları bir şekilde çarpmam, toplamam ve buna göre bir gecikme cezası hesabı yapabilmem lazım. Bunun hesabı nasıl yapılacağını OCR ile tanımlayabiliriz.
+
+371
+01:37:44,692 --> 01:38:00,992
+12 yaş altındakiler en fazla 5 parça. Hoppa! Direkt olarak invariant. Direkt yazarız. Post Condition'la da yapabilirsiniz tabii ki. Burada da yine tek bir doğru yol yok. Birkaç şekilde aynı kısıtı sağlayabilirsiniz. Ama en basit olanı her zaman tercih etmeye gayret edin.
+
+372
+01:38:03,072 --> 01:38:09,052
+Kitap DVD alabilir eyvallah. 3 hafta ödünç alabilir. 2 hafta limiti vardır. Bakın böyle sayılar varsa.
+
+373
+01:38:09,619 --> 01:38:28,099
+İki hafta ödünç almak, on lira gecikme cezası, limiti iki haftadır gibi. Böyle gereksinimlerde belli şeyler varsa bunlar direkt invariant olarak tanımlanması beklenir zaten. Ödünç alınamayanlar var. Bunu biz sınıfla halletmiştik. Hatırlarsanız ödünç alınabilen, ödünç alınamayanları ayırmıştık.
+
+374
+01:38:28,627 --> 01:38:56,087
+Sınıf modelimizde talep edebilir. Belki bu taleple ilgili bir kısıt yazmamız gerekebilir. Süre uzatımı yapmak. Süre uzatımı ile alakalı belki bir şeyler yazmamız gerekebilir. Sınıf modelimize baktığımızda hatırlamak için şöyle. Ziyaretçiler başlıkları talep eder demiştik. Don Quixote'dan beş ayrı kopya olabilir. Biz illa dördüncü kitabı istiyoruz demiyoruz. Sadece Don Quixote istiyoruz ve bize bir tanesini veriyorlar.
+
+375
+01:38:56,627 --> 01:39:15,207
+Bunun için de ödünç almanın kendine ait uzadı mı, teslim tarihi nedir, cezası bu bir hesaplanan özellik. Burada zaten hesaplanıyorsa OSİYAL yazman beklenir gibi bir sınıfı vardı. Başlıklarımız parçalardan oluşuyor. Parçalar ödünç verilebilir ya da verilemez.
+
+376
+01:39:15,648 --> 01:39:36,228
+Ödünç verilemeyenler başvuru kitabı ve dergi tipinde, ödünç verilebilenler DVD ve kitap tipinde. Kitapların aynı zamanda çok satan olup olmama durumu var. Ona göre de mesela bir şeyler değişiyor. Bir de bir tarafta para, tarih ve işletim sistemi gibi hizmet sınıflarımız vardı. Bunları da utility stereotipiyle bahsetmiştik.
+
+377
+01:39:38,484 --> 01:39:58,064
+Mesela ikinci şeye baktığımızda, gereksinime adını, adresini bilmemiz gerekiyor dedik. Biz bunları aslında diagramda gösterdik. Niye? Çünkü bunlar benim oradaki modelimde ziyaretçi dediğim sınıfın içindeki özellikler olarak yer aldılar. Bu aydınlatıldı.
+
+378
+01:40:00,000 --> 01:40:25,860
+Kütüphanenin ödünç aldığı parçalar, ziyaretçinin ödünç aldığı kütüphaneden parçalar. Bunların teslim zamanları, gecikme cezaları bilebilmeliyiz demiştik. Ya da hesaplayabilmeliyiz demiştik. Burası şey, aslına bakarsanız hesaplamaların OCL ile tanımlanmaları direkt olarak gözüküyor. Neden? Bir şeyleri hesaplamam gerekiyor ve bunun nasıl yapılacağını kısıtlamam gerekebilir.
+
+379
+01:40:27,155 --> 01:40:46,195
+Ödünç alınmayan başvuru kitapları. Tamam, bunu yaptık zaten. Kitap ya da DVD ödünç alabilir. Burada aslında bilgi var. Ama ödünç işleminin detaylarıyla ilgili kısıtlar vermemiz gerekecek. Mesela çocuksa limit koymamız gerekiyor. O zaman burada da bir ofsyal yazmamız gerekir.
+
+380
+01:40:46,644 --> 01:40:57,184
+Yani ya biz diagramdaki bir tanımı desteklemeliyiz ya da diagramda gösteremediğimiz yeni bir tanım getirmeliyiz. Bunlar bizim osi ifadelerimiz olacak.
+
+381
+01:40:57,784 --> 01:41:04,184
+Şimdi basitten başlayalım. Hani ilk başta da söyledim ya, sayı görüyorsanız kesin invariant tanımı yapmanız beklenir.
+
+382
+01:41:05,124 --> 01:41:12,784
+Altıncı gereksinim bize diyordu ki, kitaplar 3 hafta için ödünç alınabilir, çok satansa 2 hafta.
+
+383
+01:41:13,108 --> 01:41:32,268
+Bunlar kesin sayılır. Demek ki bunları kontrol edeceğim, tanımlayacağım. OCL ile ekleyeceğim. İlk adım, hangi kontekste ben bunu tanımlamalıyım? Yani diagramdaki hangi nesne, sınıf diagramındaki hangi sınıftasak daha doğru, acaba OCL ifadesini yerleştirmek için uygun olacaktır.
+
+384
+01:41:32,655 --> 01:41:48,095
+Şimdi ben burada kitaplar ödünç alınabilir. Çok satan kitaplar. Çok satan da zaten kitabın özelliği. Demek ki ben kitap kontekstine bir şeyler tanımlamaya çalışıyorum. Kısıt tanımlamaya çalışıyorum. Demek ki benim kontekstimin kitap olması gerekiyor.
+
+385
+01:41:57,408 --> 01:42:21,028
+Sistemin bütün geneliyle ilgili mi? Yoksa sadece bir sınıfla ya da sadece belli bir işlemle mi ilgili? Eğer sisteminizle ya da kontekst klasınızla ilgili ise direkt invariantı yazabilirsiniz. Yani sınıf ya da sistemle ilgili her zaman doğru olması gereken koşul nedir? Bunu, neyi garanti etmemiz lazım? Direkt invariantla yazabiliriz.
+
+386
+01:42:21,427 --> 01:42:26,687
+Eğer bir işlemle ilgili ise bunları ön ve son koşul olarak da verebilirsiniz.
+
+387
+01:42:27,467 --> 01:42:30,467
+Şimdi buraya baktığımızda aslında iki tane seçeneğiniz var.
+
+388
+01:42:30,467 --> 01:42:38,507
+Bir, siz bunu kitap sınıfına invariant olarak yazabilirsiniz.
+
+389
+01:42:38,847 --> 01:42:43,967
+Kitapsa üç hafta, ondan sonra çok satansa iki hafta gibi bir invariant yazabilirsiniz.
+
+390
+01:42:44,851 --> 01:43:10,292
+Ya da şunu da yapabilirsiniz. Ben bunu sadece ödünç alma işleminde kullanmıyor muyum? Evet. O zaman ödünç alma işleminde bir postcondition olarak yazarım. Son koşul olarak bunu eklerim. Fakat kesin sayılar dediğim gibi varsa bu limitler hep olacağı için invariant tanımlarını yapmak daha mantıklı olacaktır. Yapalım. Kontekst kitap yazdık.
+
+391
+01:43:11,060 --> 01:43:36,380
+Invaryant yazdığımı tanımladım. İki nokta üst üsteyi koydum. Neydi? Çok satansa iki hafta, değilse normal kitap demektir. Üç hafta. Ödünç periyodu da hatırlarsanız kitap sınıfının o anda gördüğümüz bir özelliğiydi. Ödünç verme periyodu iki ya da üç değerini alacak demiştik. İşte buraya yazacağımız kısıt şu olmalıdır.
+
+392
+01:43:36,787 --> 01:43:44,967
+Çok satan doğruysa, yani çok satan özelliği kitabın turuysa ödünç periyodu 2 değerine eşit olmalıdır.
+
+393
+01:43:45,068 --> 01:43:48,167
+Burada da komentleri böyle eksik eksiyle verebilirsiniz.
+
+394
+01:43:48,667 --> 01:43:49,648
+O siyel komentlerini.
+
+395
+01:43:50,387 --> 01:43:53,207
+Değilse ödünç periyodu 3 olmalıdır.
+
+396
+01:43:53,207 --> 01:43:55,608
+Yani aslında ben şunu kısıtlamış oldum.
+
+397
+01:43:56,247 --> 01:44:01,787
+Bir kitap klasından türeyen herhangi bir nesnenin ödünç periyodu ya 2'dir ya 3'dür.
+
+398
+01:44:02,484 --> 01:44:16,364
+Hangi durumda 2 olur? Çok satan turuysa 2'dir. Bu böyle olacak, garanti dedim. İşte bu tanımı yaparak, bu deklarasyonu yaparak bunun mutlaka 2 ya da 3 olmasını garanti etmiş oldum. En kolayı bu.
+
+399
+01:44:18,036 --> 01:44:33,456
+İki ve üç açıkça kullandık. Tarih olarak söylemedik ama tabii bunları biz biliyoruz. Tarih. Tarih sınıfımız da var. Siz gerekirse bunu daha düzgün bir şekilde ifade edebilirsiniz. Bir tarih nesnesi türünden ifade yazabilirsiniz.
+
+400
+01:44:35,115 --> 01:44:41,675
+Ve işte her kısıtın o sınıf kapsamında yorumlandığını zaten söyledik. Noktasız gördüğümüz her şey.
+
+401
+01:44:42,963 --> 01:45:01,084
+Gezinti yapmadığımız her şey o sınıfın kapsamındadır. Tabii başka kapsamda sınıflar varsa bunları da kullanmamız gerekiyor. Şimdi DVD'ler içinde var hatırlarsanız. Onlar da iki hafta ödüm canlı oluyor. Burada şart da yok. Direkt kontekstimiz DVD.
+
+402
+01:45:01,844 --> 01:45:19,184
+Çünkü klas olarak orada yer alıyor. Diagramda DVD kontekstine bir invariant tanımlıyorum. Ödünç periyodu eşittir 2. Başka bir değer alamaz. Ödünç periyodu 2 olmak zorundadır dedi. Ne yaptık? Bu değerden başka bir şey alamaz. Sabit değeri tanımlamak için de bunu kullanabilirsiniz.
+
+403
+01:45:20,184 --> 01:45:22,003
+Üçüncü gereksinime bakalım.
+
+404
+01:45:22,579 --> 01:45:36,520
+Burası biraz daha uzun, hatırlayalım. Herhangi bir anda ödünç alınan parçaları, bir kişinin aldıklarını, teslim zamanlarını ya da ödemediği gecikme cezalarını bilmeliyim ya da hesaplayabilmeliyim demiştik.
+
+405
+01:45:39,060 --> 01:45:45,500
+Şimdi burada bir sorgular var. Ne yapıyoruz? Aslında hiçbir şeyi değiştirmiyoruz. Özelliklerin değerlerini sorguluyorum.
+
+406
+01:45:46,771 --> 01:45:53,471
+Bu işlemleri yine pre-condition ve post-conditionlarını yazarak tanımlayabilirim.
+
+407
+01:45:53,872 --> 01:45:55,591
+Şimdi önce ilk kısmına bakalım. Ne dedik?
+
+408
+01:45:56,051 --> 01:45:59,912
+Siyaretçinin ödünç aldığı parçalar nelerdir?
+
+409
+01:46:00,467 --> 01:46:11,247
+Şimdi biz diagramda, diagrama geri dönmeyeyim, ziyaretçinin içinde ödünç aldıkları diye bir metot yazmıştık hatırlarsanız.
+
+410
+01:46:11,868 --> 01:46:22,028
+Ve aslında biz burada geri dönüş değeri olarak ziyaretçinin ödünç aldıklarını, sadece ödünç aldıklarını listelemem gerekiyor.
+
+411
+01:46:22,028 --> 01:46:24,788
+Yani burada bir sorgu yazmam lazım aslında. Şu şekilde.
+
+412
+01:46:25,492 --> 01:46:51,692
+Kontekstim, ziyaretçi sınıfının ödünç aldıkları metodu. Buradaki davranışı. Buraya bir şey yazacağım. Nedir? Geri dönüş değerinin ne olması gerektiğini. Ödünç verilebilir parçalardan oluşan bir küme geriye döndürmesi gerekiyor. Argümanı var mı? Yok. Görünmez argüman olabilir mi? Olabilir. Global bir değişken mesela kullanabilirsiniz.
+
+413
+01:46:52,159 --> 01:47:10,199
+Ama bir geri dönüş değeri var. Biz küme olduğunda neyi garanti etmiş oluyoruz aslında? Ben mesela bir kitabın pek çok kopyasını ödünç alabilirim. Ne diyeceksiniz bilmiyorum ama mesela 3 tane Don Quixote kopyasını ödünç alabilirim.
+
+414
+01:47:10,739 --> 01:47:34,419
+Fakat, o başlıktan 3 ayrı kopya ödünç alabilirim. Ama aldığım bir kitabı aynı anda 2 kere ödünç alamam. Yani 4 numaralı etikete sahip olan, rafta duran donkey shot'u sadece 1 kere alabilirim. Bir daha alamam çünkü zaten aldım. İşte küme aynısının 2 kere olmamasını garanti ediyor. Bu yüzden bunun bir set olduğunu rahatlıkla ifade edebilirim.
+
+415
+01:47:34,419 --> 01:47:35,599
+Tamam.
+
+416
+01:47:36,148 --> 01:47:53,347
+Şimdi şeye bakalım. Şöyle bir durum. Bir kitabı ödünç aldım. Yani ödünç aldıklarımın içinde yer alıyor. Ama teslim zamanını geçirdim. Yani borcum oluştu. Ondan sonra da geri getirdim.
+
+417
+01:47:54,452 --> 01:48:06,112
+Demek ki sistemin, benim bunu bir şekilde ödünçlerim arasında görmem, kayının orada olmasını sağlamam lazım. O yüzden de küme koleksiyonunu kullanmak burada bu problemi de çözmeme yardımcı oluyor.
+
+418
+01:48:06,771 --> 01:48:18,132
+Bundan sonra ön koşullara bakmamız lazım. Neydi ön koşullar? Bir işlemin çalışması hangi durumda anlam ifade eder? Yani hangi koşul doğru olduğunda bu işlem çalışabilir?
+
+419
+01:48:18,644 --> 01:48:36,984
+Böyle bir problem de şu anda yok. Niye? Çünkü herhangi bir anda ödünç aldığı parçaları sorgulayabilmeliyim diyor. Genellikle durum değişikliği yapmayan, sadece sorgu yapan işlemlerde precondition olmaz. Yani ya preye true yazarsınız ya da hiç preyi kullanmazsınız. İkisi de aynı şey.
+
+420
+01:48:39,724 --> 01:48:41,764
+Şimdi dönen değerleri.
+
+421
+01:48:42,095 --> 01:48:56,055
+Belirlememiz lazım. Bu dönen değerlerin bir küme olduğunu söylemiştik. Peki neleri ben geri döndüreceğim? Yani post condition'da neyi garanti edeceğim? Rizaltımda ne olması lazım küme tipindeki rizaltımda?
+
+422
+01:48:56,659 --> 01:49:15,539
+Hem ödünç aldığım ama henüz getirmediklerim, hem de ödünç aldığım ve bununla birlikte zamanını geçirip geç getirdiklerim. Bunların hepsinin aslında benim aldıklarımı oluşturur. Yani benim üzerimden ödünçlerimin, aslında burada self ödünç de yazsak daha doğru olurdu.
+
+423
+01:49:17,539 --> 01:49:20,919
+Ödünç, benim üzerimden eriştiğim.
+
+424
+01:49:21,300 --> 01:49:34,220
+Ödünç ilişki sınıfındaki ödünç verilebilir parça tipindeki nesnelerin tamamı benim buradaki sonucumu oluşturacaktır.
+
+425
+01:49:34,220 --> 01:49:47,460
+Yani bunun bir küme olduğunu ve bu kümenin de benim üzerimden gidilen ödünç ilişki sınıfından dahil olduğu ödünç verilebilir parçalardan oluşması gerektiğini garanti ediyorum.
+
+426
+01:49:50,804 --> 01:50:06,563
+Bir diğer kısıtımız 12 yaşın altı çocuklar için 5 parça ödünç alabilmesi. Şimdi bunu invariant mı yazalım yoksa precondition mı yazalım?
+
+427
+01:50:07,315 --> 01:50:18,655
+Yine burada bir şeyler düşünebilirsiniz. Fakat sanki bütün ziyaretçiler için kısıt yok ve sadece tüm çocuklar için kısıt var.
+
+428
+01:50:20,795 --> 01:50:32,155
+Bu durumda sistem genelliğine yazmak yerine her ödünç alma işleminde aslında benim bir şekilde bir kontrol yapmam gerekiyor.
+
+429
+01:50:33,716 --> 01:50:44,716
+Çocuk önce iki tane kitap alır. Ondan sonra gider, iki taneyi aldı. Sonra iki gün sonra geldi, dört tane daha aldı.
+
+430
+01:50:45,235 --> 01:51:09,155
+Ne oldu? 6 tane kitap almış oldu ve benim 5 parça kısıtımı bir şekilde ezebildi. Bu durumda benim her ödünç alma işleminden önce bir kontrol yapmam lazım. Eğer bu kontrol doğru değilse zaten benim ödünç vermeyen, ödünç al metodunu hiç çalıştırmamam lazım. Şimdi bunun konteksti o zaman ne olacak? Ziyaretçinin ödünç al davranışı.
+
+431
+01:51:09,811 --> 01:51:17,731
+Bir parametre nedir? Bir i değişkeni alıyorum aslında. Nedir? Bu da bir ödünç verilebilir parça. Yani bir kitap ya da bir DVD. Neyse.
+
+432
+01:51:18,771 --> 01:51:26,851
+Şimdi ön koşul yazmam lazım dedim. Ön koşul doğru olmazsa buradaki, bu kontekstdeki bu işlem çalışmayacak.
+
+433
+01:51:26,851 --> 01:51:32,672
+Yani çocuk ise bir ön koşul diye başlamam lazım. Çocuk ise'yi nasıl yazarım?
+
+434
+01:51:33,363 --> 01:51:56,803
+Yaş küçük eşit 12. Aslında ziyaretçi kontekstindeyim ya, ziyaretçinin ödünç alma metoduna yazıyorum. Ben ziyaretçinin yaş özelliği 12'den küçük eşit ise diyerek bir ön koşulu yazabilirim. Demek ki 12'den büyükse zaten bu tarafın hiçbir önemi yok. Eğer 12'den küçükse bu da doğru olmak zorunda. İf P'den Q.
+
+435
+01:51:58,063 --> 01:52:00,443
+Nedir peki ne doğru olmak zorunda?
+
+436
+01:52:01,011 --> 01:52:25,051
+Ödünç aldıkları dediğim, biraz önce tanımlamıştık değil mi bunu? Ödünç aldıkları metodumuz vardı. Buraya bir şey yazmıştık, bir küme döndürdüğünü söylemiştik. Bunun boyutu, çünkü bire enlik bir ilişki var, boyutunun beşten küçük olması gereklidir.
+
+437
+01:52:25,587 --> 01:52:41,688
+Neden küçük eşit değil? Eğer küçük eşit olursa altıncıyı alma tehlikesi var. Biraz önce bahsettiğim durumdan dolayı. Şimdi iki tane aldı. Ödünç aldıklarının size'ı iki. Değil mi?
+
+438
+01:52:44,884 --> 01:53:01,003
+Siz yine 4 kitapla geldiniz, 6 oluyor. Fakat diyelim ki öncesinde siz 5 kitap almıştınız ve 6. için geldiniz. Küçüktür 5 şartını sağlamayacaksınız. Ne yapmış olduk?
+
+439
+01:53:10,868 --> 01:53:24,748
+Beş tane alabileceğini söylemiyorum. Pardon. Toplamda en fazla beş kitap alabileceğini söylemiyorum. Bir kerede en fazla beş parça alabileceğini söylüyorum.
+
+440
+01:53:25,332 --> 01:53:49,692
+Bu sayede ben 2 aldım, 4 aldım, 6 tane kitap aldım ama hiçbir zaman bir kerede 5 tane parçayı ödünç almadım. Eğer bunu küçük eşit yaparsak o zaman bir kerede 6 taneyi de almaya gider bunun sonu. Asla 5'ten fazla olmamasını garanti altına aldık. Ama tabii burada henüz bir post yok.
+
+441
+01:53:50,292 --> 01:54:12,252
+Ödünç alma ile alakalı başka kontroller de yapmamız gerekecek ve ödünç alma sonucunda teslim tarihinin ayarlanması, ödünç aldıkları kümesinin arttırılması gibi başka ortamda yaratacağım değişikliklerin de oluşturulması gerekiyor.
+
+442
+01:54:16,884 --> 01:54:25,944
+12 yaşından küçük eşit insanlar için, ziyaretçiler için bir kerede en fazla 5 tane alabileceğini ifade ettim.
+
+443
+01:54:29,404 --> 01:54:32,004
+Gereksinim 5, bu şey.
+
+444
+01:54:32,851 --> 01:54:45,811
+Ziyaretçilerin kitap ya da DVD alması, ödünç alabilmesi. Şimdiye kadar hep böyle sorgulama yaptık. Değerlere baktık, değerlere göre izin verdik ya da değerlere göre kısıt koyduk. İki ya da üç olabilirsin gibi.
+
+445
+01:54:46,384 --> 01:55:11,864
+Bunun dışında elemanların durumlarını da değiştirmemiz lazım. Yani ödünç alma işlemini post kondisyonlarında oluşturmamız lazım. Bir kontekst içinde, ziyaretçi ödünç al içinde mesela birden fazla kısıt hem pre hem post hatta postlarda birden fazla post kondisyon varsa bunların hepsini ayrı ayrı da tanımlayabilirsiniz. Ya da hepsini and, and, and, and diyerek ekleyebilirsiniz.
+
+446
+01:55:11,864 --> 01:55:13,864
+Yani şöyle.
+
+447
+01:55:14,484 --> 01:55:33,064
+Dvd ya da kitap ödünç almak için belirli ön koşullarım var. Bunların hepsini ayrı ayrı yazabilirim. Ya da endleyebilirim. Bir tanesi biraz önce bakmıştık hatırlarsanız. 12 yaşından küçükse bir kere de en fazla 5 tane alabiliyordu.
+
+448
+01:55:34,564 --> 01:55:37,064
+Başka neler olması lazım? Bir.
+
+449
+01:55:37,555 --> 01:55:59,595
+Aslında o ödünç alınabilir parçanın var olması lazım. Yani böyle bir şey mevcut mu diye bir davranışımızın olması lazım. Yani benim ödünç verilebilir parçanın var olup olmadığını sorgulayabiliyor olmam lazım. O zaman burada bir mevcut mu diye bir davranış olması beklenir. Yoksa alamam.
+
+450
+01:56:02,355 --> 01:56:06,355
+Bir de istek listemiz vardı hatırlarsanız. Bu ziyaretçinin...
+
+451
+01:56:06,640 --> 01:56:27,740
+İstek listesindeki ilk kişi olması gerekiyor. Eğer beşinci kişiyse dur, senden önce dört kişi var sana vermemem lazım diye bunun çalışmamasını sağlamamız gerekiyor. O zaman başkası istemedim gibi böyle bir, hani Türkçesi biraz şey oldu ama, sıradaki ilk sen misin gibi bir davranışa daha ihtiyacımız var.
+
+452
+01:56:32,659 --> 01:56:36,679
+Başkası da istemedi. İlk bekleyen biz isek...
+
+453
+01:56:36,724 --> 01:56:53,444
+Ayrıca yaşımız 12'den küçük olduğu halde 5'ten fazla kitap istemiyorsak ancak ödünç alma davranışı gerçekleşebilir. Bunu kısıtlamış olduk. Ne yaptık? Aslında adım adım bir algoritmayı parçalar gibi işlemlerimizi eklemeye başladık.
+
+454
+01:56:53,444 --> 01:57:00,664
+Ve bu ödünç almanın gerçekleşebilmesi için aslında başka işlemlerinde ihtiyacımız olduğunu gördük.
+
+455
+01:57:01,779 --> 01:57:12,659
+Şimdi genellikle ön koşul yazmak biraz daha kolay. Çünkü hani bunlar yoksa yerimdar oynayamam demiş oluyorsunuz. Ama son koşulları yazmak biraz daha karmaşıktır genellikle.
+
+456
+01:57:18,319 --> 01:57:29,079
+Şimdi son koşul neydi? İşlem çalıştı bitti. Sistem hangi hale gelecek? Yani ben neyin doğru olacağını garanti ediyorum. Sistemde yan etkiler dahil neler yaratılmış olacak?
+
+457
+01:57:29,844 --> 01:57:56,243
+Bir, ödünç aldığı aslında yeni bir bağlantı yaratacağız. Yeni bir nesne yaratmış olacağız. Bir ödünç nesnesi ve bunu bize referansına döndürülmesi gerekecek. Sonra istek listesini bir şekilde elinden geçirmemiz, güncellememiz gerek. Neden? Biz talep etmiştiysek, iyice bunun Türkçesi nasıl oluyor, etmiştiysek ve biz ödünç aldıysak
+
+458
+01:57:56,627 --> 01:58:05,147
+O zaman bizi listene atman gerekiyor ki benden sonraki bir ziyaretçi tekrar bunu ödünç alabilir hale, yani listenin başına gelebilir hale olsun.
+
+459
+01:58:05,887 --> 01:58:11,987
+Demek ki benim, bakın bir ödünç nesnesi tanımlıyorum. Ayırdım buradaki pipela.
+
+460
+01:58:12,747 --> 01:58:17,427
+Bakarsanız her şeyi bir exist içine alıyorum. Exist neydi? Ters e.
+
+461
+01:58:17,427 --> 01:58:22,427
+Yani öyle bir ödünç nesnesi vardır ki bu ödünç nesnesi doğrudur.
+
+462
+01:58:23,444 --> 01:58:35,964
+Bütün ödünç nesneleri için değil ama bir tanesi için en azından bunun doğru olduğunu garanti ediyoruz. O yüzden exist'i kullanmak zorundayız. Yine first order logic'teki exist ya da all ile aynı şey aslında.
+
+463
+01:58:44,532 --> 01:58:57,392
+Ödünç verilebilir parçasının İ olması gerekiyor. İ neydi hatırlarsak imza kısmında bana gelen parametre. Yani bu parçanın bana gelen parametre ile aynı olması gerekiyor.
+
+464
+01:58:57,392 --> 01:59:06,112
+Ve sonrasında bunun teslim tarihini, işletim sistemindeki tarih alıp,
+
+465
+01:59:06,163 --> 01:59:20,223
+Üzerine ödünç verilebilen parçanın ödünç periyodu. İki ya da üç hafta hatırlarsanız. Bu da başka bir kısıttan gelmişti. Bunun değerini alıyoruz. Ve bunu biraz daha böyle vikli vikli bir şeyle yazmak lazım.
+
+466
+01:59:30,880 --> 01:59:40,600
+Buradaki yeni nesnenin de eklenmiş hali haline gelecek. Yani ödünç koleksiyonuna yeni bir eleman, yeni bir nesne ilave etmiş olacağım.
+
+467
+01:59:40,912 --> 01:59:53,472
+İşte bunlar benim ortamda yarattığım değişiklikler. O İ nesnesini alacağım. O İ nesnesinin teslim tarihini ayarlayacağım. O nesnesini aktardım. Teslim tarihini güncelledim.
+
+468
+01:59:53,472 --> 02:00:07,492
+Ve benim ödünç aldıklarımı tutan ödünç koleksiyonuna, ilişki sınıfına, önceki halin üzerine bir tanecik O nesnesini, şuradaki nesneyi koymuş olacağım.
+
+469
+02:00:11,412 --> 02:00:24,551
+Evet, buradan bahsettik. Aynısını aslında slide'ı da yazmışım. Demin üzerinde mouse pointer ile anlattım. Dermast exist ile exist'i aslında ifade etmiş olduk.
+
+470
+02:00:24,551 --> 02:00:36,731
+Yani özetle mutlaka ödünç verilebilir parçaya iyince argümanı olan bir o örneğini yarattım. Don Quixote ise Don Quixote'u yarattım.
+
+471
+02:00:37,039 --> 02:00:49,079
+Sonrasında teslim tarihini ayarladım ve işlem bittiğinde de bu yeni nesnenin ilişki kümesine, oradaki koleksiyona eklenmesi gerektiğini söyledim.
+
+472
+02:00:50,300 --> 02:00:52,039
+Bir de neyimiz vardı?
+
+473
+02:00:54,979 --> 02:00:58,260
+Talep listesinin güncellenmesi gerekiyordu.
+
+474
+02:00:58,659 --> 02:01:04,680
+Şimdi o zaman burada böyle bir uzun bir ifade olacak. Bunu bir ledle kısaltmamız gerekecek. Nedir?
+
+475
+02:01:05,043 --> 02:01:17,003
+Diyelim ki şöyle nereye yazıyorum kontekstim? Ziyaretçinin ödünçalı yine. Devam ediyorum aslında. Bunu da endleyebilirsiniz ya da çok uzun olduğu için ayrı bir post condition şeklinde buraya yazabilirsiniz.
+
+476
+02:01:19,224 --> 02:01:23,003
+Şimdi yine bana gelen mesela donkey shot dedik.
+
+477
+02:01:23,412 --> 02:01:50,692
+Şimdi, Donkşurt'un kitabı, kitap nesnesi. Şimdi let B, başlık eşittir, i nokta başlık. Tamam mı? B diye bir başlık var. Şimdi hatırlarsanız başlıklara talep yapılabiliyordu. Sınıf diagramına gidip baktığımızda B'nin taleplerinin ziyaretçisi, kontekste switch ettim, ziyaretçiye geçtim. Include self.
+
+478
+02:01:51,315 --> 02:02:19,315
+Yani ziyaretçi, bu ziyaretçi varsa bu başlıktaki talep listesinde o zaman talepler eşittir. İlk halinden bu başlığı ziyaretçinin olduğu, talep yaptığı başlıktan ziyaretçiyi at. Daha doğrusu bu talebi düşür demiş olduk. Eğer yoksa, yani listenin başında biz değilsek o zaman hiçbir şey yapma, bu doğrudur demiş olduk.
+
+479
+02:02:19,315 --> 02:02:42,996
+Yani başlığa ait talebi yapan ziyaretçi biz isek o zaman kendimizi listeden çıkarttık. Nasıl? Rejectle. Bu da yine hazır bir fonksiyon. Ne yapmış oldum? Talepler listesinin ilk halinden B başlığından self ziyaretçisini çıkar demiş oldum.
+
+480
+02:02:43,604 --> 02:03:02,604
+Bunu implies'e de yapabilirdik tabii ki. Çünkü else tarafı yok. Else true dedik, geçtik. Hani bunu b talepler ziyaretçi include self implies talepler eşit talepler bilmem ne bilmem ne gibi bu cümleyi de alarak yine aynı şekilde yazabilirdik.
+
+481
+02:03:03,188 --> 02:03:21,168
+Ödünç almanın sonunda ben talep listesinden kendimi düşürmem gerektiğini de mutlaka bir şekilde formal olarak tanımlamam gerekiyor. Basit bir iş ama yine de burada bile ufak tefek şeyleri detaylarıyla düşünmemiz gerekiyor gördüğünüz gibi.
+
+482
+02:03:22,612 --> 02:03:48,812
+Türetilen özelliklere bakalım. Ona bakmadık. Veri türetmek için o siyeli nasıl kullanıyoruz? Kontekstimizin artık bir özellik olması, türeyen özellik olması gerekiyor. Mesela ziyaretçinin yaşı, date tipinde olması lazım. Türetilen özellikler için neydi? Invariant, pre ya da post değil, derive kullanıyorduk. Derive dedik, işte os.getdate-doğum tarihi. Doğum tarihini ziyaretçinin içindeki bir tarih zaten.
+
+483
+02:03:49,311 --> 02:04:10,871
+Bugünün tarihinden doğum tarihini çıkarttım ve bunu yaş özelliğini türetmek için kullandım. Yani aslında yaş sürekli olarak burada tanımladığım, deklare ettiğim OCL ile anlık olarak sorgulandığında güncellenmesi gereken, türetilmesi gereken bir özellik olduğunu OCL ile tanımlamış oldum.
+
+484
+02:04:13,011 --> 02:04:36,952
+Evet, her türden örnek vermeye çalıştım. Invariant nasıl tanımlanır, implies nedir, bunlar birden çok varsa nasıl birleştirilir, pre-condition nasıl yazılır, post-condition deyince neleri garanti edeceğimizi, saf fonksiyonlarda ve saf olmayan davranışlarda, fonksiyonlarda nasıl yazabiliriz, bunların hepsini ve türetilen özellikler nasıl osiyerli ifade edilir.
+
+485
+02:04:41,011 --> 02:05:06,211
+Örneğiyle birer örnek osiyel vermeye çalıştım. Neler eksik? İşte burada mesela bakarsanız 1, 3, 8, 10, 11 daha hiç ellenmedi, incelenmedi. Onlar için de osiyeller yazılması gerekebilir. İşlevsel olmayan gereksinimler konusunda hala hiçbir şey yapmadık. İşte mesela bu kütüphanenin belli bir zamanda belli bir kullanıcı kitlesine aynı anda hizmet vermesiyle alakalı bir kısıtımız hiç yok.
+
+486
+02:05:07,923 --> 02:05:30,724
+Türettiğimiz işlemler vardı ya, mevcut mu, başkası istemedi mi gibi. Bunların nasıl yazılmaları gerektiğiyle alakalı belki kısıt yazmamız lazım. Bunlara hiç eğilmedik şu anda. Başka metotlara hiç bakmadık. İade etmek nasıl olacak mesela ya da ceza ödemek nasıl olacak? Bunların osyelleri ne olması lazım hiç düşünmedik. Tarih ya da para gibi sınıfların olduğunu varsaydık.
+
+487
+02:05:31,155 --> 02:05:52,756
+Ve yaratım konusunda, hani creation'ları konusunda parçalar ve ziyaretçiler nasıl yaratılacak, bunları kim yaratacak, nasıl bağlayacak bununla ilgili noktaları ya da detayları çalışmadık. Bunlarla ilgili de her biri için ayrı ayrı hosyaller yazmanız belki gerekebilir. Belki de bazıları için yazmanız gerekmeyebilir.
+
+488
+02:05:54,131 --> 02:06:08,691
+Burada ne yapıyoruz? Gördüğünüz gibi formal tanımlar, formal deklarasyonlar yapmaya çalışıyoruz ki ben bu tasarımı başka birisine de versem, herhangi dünya üzerindeki birine de versem, UML okumayı bilen ya da bir tuğla da versem, bir araçla.
+
+489
+02:06:09,072 --> 02:06:16,372
+Direkt olarak o metodun mesela ne yapması gerektiği, neyi garanti etmesi gerektiğini kısıt altına alıyorum.
+
+490
+02:06:16,652 --> 02:06:22,231
+Sen böyle çalışacaksın. Senin tepkin bu olacak. Yaptığın işlemler sonuçta bunu garanti edecek.
+
+491
+02:06:22,872 --> 02:06:29,912
+Nasıl yaparsan yap. İçine karışmıyorum fakat bunların mutlaka doğru olmasını benim için sağlaman gerekiyor diyoruz.
+
+492
+02:06:31,252 --> 02:06:44,352
+Ve işte şeyi de gördük. Bazen invariant yazarak, bazen postcondition yazarak aynı ifadeleri farklı farklı şekillerde gösterebiliyoruz. Özetle, OCL yazarken de aynı tasarım yaparken gibi tek bir doğru yok.
+
+493
+02:06:44,884 --> 02:07:09,264
+Ayrıca analiz yaptıkça yeni gereksinimler doğabilir. Mesela mevcut mu, başkası istemedi mi gibi yeni davranışlar, yeni gereksinimler doğabilir. Hala açık olmayan noktalar bulunabilir. Ceza işlemi nasıl olacak, iade işlemi nasıl olacak, belki detaylarını daha konuşmadınız. Hatalar olabilir. Bu yüzden müşteriyle tekrar tekrar temasa geçmek zorunda da kalabilirsiniz.
+
+494
+02:07:09,823 --> 02:07:30,363
+OASYEL niye var? Sıkı düşünmemizi sağlıyor ve bu tip noktaları özellikle sürecin erken aşamalarında ya da tasarım aşamalarında fark etmemizi gerçekleştirmeye geçmeden önce bu gibi detayların ya da pürüzlerin sorun yaratabilecek noktaların ortadan kaldırılmasını, bu noktaları minimuma indirmeyi sağlamaya çalışıyor.
+
+495
+02:07:31,796 --> 02:07:44,736
+Evet, OSYEL ile ilgili söyleyeceklerim de bu kadar. Gelecek derste işte davranış modellemesi tarafına bakacağız. Durum nedir, geçiş nedir, bunlar nasıl modellenir, stek çartlar nelerdir, bunlarla yolumuza devam edeceğiz.
+
+496
+02:07:44,736 --> 02:07:56,396
+Bu şimdi kaçıncı haftamız? Beşinci haftamız değil mi? Haftaları karıştırdım. Ne zaman başladık biz? Bir saniye.
+
+497
+02:07:57,171 --> 02:08:23,011
+Hemen takvime bakıyorum. Ekim'de başladık. 1, 2, 3, 4, evet. Beşinci dersimizi yaptık. Şimdi altıncı ders, yani haftaya davranış modellemesini de geçip sonrasında 8 hafta kalıyor değil mi? Bu 8 hafta içinde bizim nüfus en son kaç oldu? Bir daha bakayım. Sürekli değişiyor. Bakayım. Azalma oldu mu? Onu merak ediyorum.
+
+498
+02:08:24,051 --> 02:08:26,391
+Hemen bir girip kontrol edeceğim.
+
+499
+02:08:31,956 --> 02:08:36,296
+Dinamik olarak öğrenci listemize bakalım.
+
+500
+02:08:43,764 --> 02:09:05,644
+15. Tamam, değişmemiş son halinden bu yana. Bir farklılık yok. 15 kişiyiz hala. Ne oluyor? 8 haftaya ihtiyacımız var. Yani büyük bir ihtimalle ben önümüzdeki hafta, daha sonraki hafta içinde belki anlatacaklarımı biraz daha kompakt hale getirip anlatacaklarımın sonuna geleceğim.
+
+501
+02:09:11,764 --> 02:09:38,004
+Bu konuda olanları bir kontrol edeceğim hemen. Şu share'i bir kapatalım. Bir saniye. Evet, kapattım. Onun yerine hemen listeyi paylaşayım. Evet, şu ana kadar [öğrenci] en son mail attı ve üçüncü bölümü aldı.
+
+502
+02:09:38,431 --> 02:10:03,031
+[öğrenci] birden başlayacak. Zaten biri bitirdiğine dair bana mail attı. Henüz daha içeriğini incelemedim yalnız. [öğrenci] aramızda yok ama Section 2'yi bugün aramızda yok aldı. [öğrenci] aramızda yok 3'ü aldı. [öğrenci] aramızda 4'ü aldı. [öğrenci] ve [öğrenci]. Sizler de istiyorsanız 5 ve 6'yı vereyim. Uygun mu?
+
+503
+02:10:06,899 --> 02:10:14,399
+Hanginiz 5'i alır? Bir dakika bir chat geldi. Onu da açayım. Açamıyorum.
+
+504
+02:10:18,963 --> 02:10:46,363
+Hangisi uygun? Sana 5'i vereyim o zaman. Olur mu? Tamam. [öğrenci] 5 dedik. O zaman [öğrenci] sana da 6'yı veriyorum. Tamam.
+
+505
+02:10:49,908 --> 02:11:16,108
+Burada mı bilmiyorum ama artık kayıttan izler. Bunları da belirledik. Bunun dışında işte derse en son kayıt yaptıranlar kimlerdi acaba? Son iki kişi kim? Onu bir şey yapamadım, ayırt edemedim. Çünkü eski liste elimde yok. Ona göre şuradan aslında 7, 8, 9, 10 diye de devam etmek istiyorum. Rastgele atayabiliriz. Bakalım.
+
+506
+02:11:18,260 --> 02:11:30,380
+Ben bunları şey yapıp, bugün atayıp, kalan iki kişiye de konularını verip, ondan sonra bunları bu online yıldız edi tr'de dersin duvarına eklerim.
+
+507
+02:11:30,600 --> 02:11:33,940
+Ya da oradaki işte konu alanına ekleyebilirim. Ya bu sakalara artık eklerim.
+
+508
+02:11:34,420 --> 02:11:39,260
+Eğer yine dediğim gibi ders notlarını da ekleyebiliyorsam oraya pdf'lerini koymaya çalışacağım.
+
+509
+02:11:39,460 --> 02:11:42,920
+Uzun süre koyamadım. Belki düzelmiştir. Ona da bugün bakarım.
+
+510
+02:11:43,328 --> 02:11:57,288
+Eklersen ders notlarını da sizlerle tekrardan paylaşmış olurum. Evet, bugünlük bu kadar. OCL konusunda neler yapabiliyoruz, nasıl yazabiliyoruz tanıtmaya çalıştım.
+
+511
+02:11:57,716 --> 02:12:15,996
+Bunlar yine tasarımın detayları aslında ve bir mimari oluştururken öncelikle yazılımın düzgün tasarlanması gerektiğini söyledik. Tasarımı ifade etmek için de bunları mecbur kullanmak zorundayız. O yüzden de öğrenmek zorundayız. Bu şekilde karşımıza çıkıyorlar. Soru var mı?
+
+512
+02:12:23,956 --> 02:12:25,476
+Yok hocam, teşekkür ederim.
+
+513
+02:12:25,856 --> 02:12:29,096
+Peki, o zaman ben de size katıldığınız için teşekkür ediyorum.
+
+514
+02:12:30,896 --> 02:12:36,936
+Haftaya da artık ondan sonraki hafta, özür dilerim, birinci ve ikinci sekşinlerle yolumuza devam edeceğiz.
+
+515
+02:12:37,356 --> 02:12:41,196
+Kitabı da paylaşmadım sizinle daha, değil mi? Paylaştım mı ben? Yok.
+
+516
+02:12:42,131 --> 02:12:43,532
+Yok hocam, paylaşmadınız.
+
+517
+02:12:43,792 --> 02:12:51,952
+Tamam. Onu da bir şekilde koymaya çalışacağım online'a. Eğer koyamıyorsam da mail atıp Drive'dan link paylaşırım, tamam?
+
+518
+02:12:54,051 --> 02:12:56,731
+Tamamdır hocam, teşekkürler.
+
+519
+02:12:56,971 --> 02:13:01,072
+Ben teşekkür ederim. İyi haftalar, iyi çalışmalar. Hoşçakalın.
+
+520
+02:13:03,072 --> 02:13:03,912
+İyi günler hocam.

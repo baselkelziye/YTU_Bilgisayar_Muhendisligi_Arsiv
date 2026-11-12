@@ -1,0 +1,1999 @@
+1
+00:00:53,332 --> 00:00:54,472
+Evet, günaydın arkadaşlar.
+
+2
+00:00:57,472 --> 00:01:00,231
+Şimdi sunamamızı açalım.
+
+3
+00:01:18,644 --> 00:01:20,644
+Bu konuyu da ortadan başlatalım.
+
+4
+00:01:43,123 --> 00:01:45,423
+Biraz bekliyorum ki katılan olur diye.
+
+5
+00:01:54,772 --> 00:02:07,172
+Şimdi şeye baktım. İkisi ise dün akşam 13 kişi olmuşuz. Gitgide artıyor. Ama artık herhalde eklesi iller tamamlandığı için bundan sonra... diye düşünüyorum.
+
+6
+00:02:08,391 --> 00:02:09,951
+13 olmuşuz.
+
+7
+00:02:13,075 --> 00:02:34,776
+Sunum konusunda şöyle bir değişiklik yapacağız. Size önereceğim bir kitap, hatırlarsanız iki üç tane kitaptan bahsetmiştim. Şimdi onlardan bir tanesini bugün dersin sonuna doğru buradan paylaşacağım ekranda. Ama zaten bir şekilde Drive Linki ile bunu indirmenizi de sağlarım.
+
+8
+00:02:35,219 --> 00:02:43,300
+13 kişiyiz ve bu kitapta da 13 tane chapter var. Her bir chapterda başka bir paterne anlatıyor mikroservislerle alakalı.
+
+9
+00:02:43,840 --> 00:02:49,840
+Farklı bir yaklaşımdan bahsediyor. Yani aslında yapacağınız sunum herkes oradan bir chapter'ı seçecek.
+
+10
+00:02:49,979 --> 00:02:58,060
+Sırasıyla her hafta iki kişi olacak şekilde 7 hafta boyunca bu kitaptaki bütün paternlerin üzerinden geçmiş olacağız.
+
+11
+00:02:59,120 --> 00:03:01,400
+Bu şekilde bir sunum planladım.
+
+12
+00:03:01,939 --> 00:03:11,879
+Kalabalık olduğu için iki tane sunum belki de yaptıramayacağım. Dediğim gibi artık tek bir sunum, yani sunum artır rapor şeklinde dönem içi değerlendirmesini hallederiz diye düşünüyorum.
+
+13
+00:03:15,660 --> 00:03:19,819
+Geçen hafta ya da bu derse bu hafta ilk defa katılan var mı aranızda?
+
+14
+00:03:23,187 --> 00:03:25,087
+Ben ilk defa katılıyorum hocam.
+
+15
+00:03:25,307 --> 00:03:27,608
+İlk defa mı? Geçmiş videoları seyrettiniz mi?
+
+16
+00:03:28,168 --> 00:03:33,687
+Henüz seyredemedim çünkü sisteme de bugün giriş yapabildim. Geçen hafta kaydettiğiniz için.
+
+17
+00:03:34,127 --> 00:03:34,728
+Anladım.
+
+18
+00:03:35,587 --> 00:03:37,747
+Ben de ilk defa katılıyorum hocam.
+
+19
+00:03:38,387 --> 00:03:38,687
+Peki.
+
+20
+00:03:39,295 --> 00:03:41,015
+Siz izleyebildiniz mi?
+
+21
+00:03:41,675 --> 00:03:51,395
+Maalesef hocam ben de izleyemedim henüz. Geç kayıttan dolayı uzayın bir derslerin aktarılmasıyla alakalı bir problem oldu. İlk hafta ondan dolayı kaçırdım ama izleyeceğim tekrarları.
+
+22
+00:03:51,395 --> 00:04:07,195
+Tamam, izlerseniz iyi olur. Çünkü biz bir giriş yaptık. Geçen haftada ders yaptık. Özetle ben bir 6 hafta ya da 7 hafta ben anlatacağım. Ondan sonraki kalan 7 haftada da siz ders sunum yapacaksınız. Konuları bugün şey yaparım.
+
+23
+00:04:07,295 --> 00:04:22,855
+Kitabı da tanıtırım size. Bu hafta içinde herkes hangi çeptere alacaksa onları da belirlemeye başlarız. Olmayanları da ben atarım. O şekilde bir sunum programı yapacağım. Önümüzdeki hafta itibariyle yani bu haftanın içinde duyurulmuş olur.
+
+24
+00:04:23,895 --> 00:04:30,975
+Yine online yılı ZBTR'den, portal üzerinden ya duyurulardan ya duvardan bir şekilde bunları size aktaracağım.
+
+25
+00:04:32,372 --> 00:04:40,272
+Evet, şimdi bugün size özellikle bir yazılımın mimarisi nasıl ifade edilir?
+
+26
+00:04:41,632 --> 00:04:56,172
+Tasarım nasıl ifade edilir? Yani mimari tasarım ne demektir ve bunu biz hangi dilde nasıl görselleştirebiliriz? Bunun için ne gibi araçlarımız vardır? Bunlardan bahsedeceğim. Burada kullanacağımız aslında temel dilde doğal olarak UML olacak.
+
+27
+00:04:56,172 --> 00:05:09,632
+Ve UML'in bazılarını iyi bildiğinizi düşündüğüm fakat bazılarında hiç adını bile duymadığınızı düşündüğüm farklı diagramlarından bahsedeceğim. Ve bunları bir yazılıma mimarisini modellerken nasıl kullanabiliriz? Hangisi ne işe yarar? Bugün bunları örneğine.
+
+28
+00:05:09,632 --> 00:05:16,451
+Daha sonra da vaktimiz kalırsa analizle, analiz modeli nasıl oluşturulurla yolumuza devam edeceğiz.
+
+29
+00:05:19,512 --> 00:05:27,172
+Şimdi tabii pek çok göğmel diagram var ama biz bir mimariyi gösterirken bundan hepsini kullanmak zorunda olmayacağız.
+
+30
+00:05:27,987 --> 00:05:38,747
+Fakat burada diagramları tanıyacağız. Tanıdıkça da hangilerinin bizim işimize yarayacağını zaten üzerinden geçerek irdeleyeceğiz. Bu noktada da hangisi bizim işimize daha çok yarar öğrenmiş olacaksınız.
+
+31
+00:05:39,887 --> 00:05:46,548
+Diagramlar aslında tabii sadece UML olarak düşünmeyin. Yazılım geliştirme dünyasında en başından beri oldukça popüler.
+
+32
+00:05:46,959 --> 00:06:05,439
+Mesela işte algoritmaları akış diagramlarıyla ifade ederiz. Akış diagramlar içinde belirli şablonlar, belirli semboller vardır. O sembolleri kullanırız ki burada mesela eski bir cetvel görüyorsunuz. Bu cetvel sayesinde kağıt üzerine algoritmalarınızı çizebilirsiniz. Bende de var bir tane.
+
+33
+00:06:14,004 --> 00:06:15,004
+Şöyle göstereyim.
+
+34
+00:06:15,944 --> 00:06:18,864
+Evet, böyle algoritma çizmenizi sağlayan şablonlar da vardı.
+
+35
+00:06:19,348 --> 00:06:36,747
+Tabi zaman içinde yazılım geliştirme dünyasında pek çok çeşitli karmaşık diagram teknikleri ortaya atmış. ZADT var, Jackson Design var, Structure Design var. Bunların hepsine tabi ki girmeyeceğiz de. Hani şöyle bir isimleri ya da farklı farklı neler var diye merak ederseniz buradan yola çıkarak bunları araştırabilirsiniz.
+
+36
+00:06:37,207 --> 00:06:47,228
+80'lerin sonlarından itibaren 90'larda nesne yönelik teknikler yaygınlaştı ve bununla beraber aslında diagramlar da değişmeye başladı. Burada bir OMT.
+
+37
+00:06:47,348 --> 00:07:01,387
+O metre şu demektir. Object Management Teknik. Nedir bu teknik? General Elektrik'te çalışan, o zaman General Elektrik'te çalışan James Rumbauer. Bunun ekibi tarafından ortaya atılmış bir teknik.
+
+38
+00:07:01,387 --> 00:07:10,427
+Ve bunun tabii ki doğal olarak kitabını da yazıyorlar. Sağda görüyorsunuz. Object Oriented Modeling and Design with UML şeklinde. Bu ikinci baskısının kapağı.
+
+39
+00:07:11,379 --> 00:07:32,699
+Kapakta bir tane zar var ya da bir küp var. Fakat biz bunun tabii ki üç tane yüzünü görebiliyoruz. Bu sembol ya da bu simge şunu gösteriyor bize aslında. Bir yüzünde bize bir sınıf diagramı çizmiş durumda. Şurada biraz sonra da göreceksiniz ama küpün sol yüzüne bakarsanız, sol aşağı bakan yüzüne orada bir sınıf diagramı var.
+
+40
+00:07:33,043 --> 00:07:41,603
+Sağ altı bakan yüzüne baktığınızda bir durum geçiş diyagramı var. State chart var.
+
+41
+00:07:42,259 --> 00:08:05,839
+Üst tarafa bakan yüzünde de bir tane ardışıl diagram var. Şimdi bu böyle bakınca, çeşit çeşit diagramlar bize sunmuşlar gibi düşünebilirsiniz ama aslında burada şunu söylüyor. Üç tane bakış açısı var. Bunların hepsini bir uyum içinde birleştiriyor. Nedir bu üç bakış açısı? Ben yazılımın bir yapısal yönünü, iki davranışsal yönünü, üç işlevsel yönünü bir arada ifade edebilmeliyim.
+
+42
+00:08:10,259 --> 00:08:31,259
+Tabii rakipleri de aynı zamanda gelişmeye devam ediyordu. Fakat bu işte dediğim gibi özellikle de üç farklı görünümü bir araya getirip bunların hepsini aynı şekilde ortak bir paydada çeşitli bir diagramlar ailesiyle göstermeye yaradığı için bir şekilde OMT...
+
+43
+00:08:32,916 --> 00:08:55,676
+Aldı, yürüdü diyelim. İçlerinde en bilineni. Sonrasında Rumba ve ekibinden de bu işi tabii ki genişledi. Ve Object Management Group olarak bilinen grup tarafından bir standart hale getirildi. İstiyorsanız OMG'nin, OMG deyince de OMG gibi oluyor. Object Management Group'un sayfasına girerseniz oradaki şartnameleri, YÖML'le alakalı bütün teknik detayları da orada bulabilirsiniz.
+
+44
+00:09:00,916 --> 00:09:28,736
+Bir ürünleşemezseniz kimse bunu alıp kullanmaz. Burada IBM'in bir desteği var tabii ki. IBM bunu Rational firmasına alıp Rational Rose ürünüyle işte OMT'nin daha sonra da OMG'nin önerdiği modelleme şeklini ve modelleme grafiklerini ya da diagramlarını birebir ürünün içinde kullandırdı. Rose ürünüyle birlikte başladı. Şu anda günümüzde de pek çok daha farklı bir sürü ticari ya da bedava ürün ya da çözümde.
+
+45
+00:09:28,916 --> 00:09:32,056
+Bunlar için bu diagram adlerini kullanan bulabilirsiniz.
+
+46
+00:09:32,628 --> 00:09:58,128
+Yömel'in merak ediyorsanız üç tane ana mimarı vardır. Bunlara Tri Amigos denir. Böyle bilinirler. İşte Rumba birincisi, Buğuş ikincisi, Yakup Sonu da üçüncüsüdür. Bunlar Yömel'in dizişinde farklı farklı üç ayrı kitap, bir tane kullanıcı kılavuzu ve daha pek çok dokümanı da üretmişlerdir. Yani oldukça üretken Amigos'lar bunlar. Fakat Yömel'in mimarları temelde bu üç kişiye dayanıyor. İşte Object Management grubunda çekirdeği zaten bunlar.
+
+47
+00:10:00,000 --> 00:10:06,440
+Şimdi UML diagramları biz bir yazılımı geliştirirken ya da tasarlarken hem analizde hem de tasarımda kullanabiliyoruz.
+
+48
+00:10:06,899 --> 00:10:16,700
+Sadece tek bir noktada dikkat etmeniz gerekir. Analiz problemi modellemeye, yani problem uzayını modellemek için aslında kullanılır analiz diagramları.
+
+49
+00:10:17,139 --> 00:10:21,279
+Tasarım diagramları ise problemi nasıl çözeceğimiz teknik detaylarla alakalıdır.
+
+50
+00:10:21,279 --> 00:10:27,279
+Yani biri biraz daha böyle gerçek dünyaya yakın, biri daha çok yazılım dünyasına yakın gibi düşünebilirsiniz.
+
+51
+00:10:28,000 --> 00:10:35,340
+Siz aynı diagramı kullansanız bile, birinde mesela kavramsal sınıflar varken, öbüründe yazılım sınıfları yer alacaktır.
+
+52
+00:10:35,679 --> 00:10:55,879
+Yömel tabi versiyonları var. 1, 1.5, 2 gibi gidiyor. Biz Yömel 2'ye bakacağız şimdi bu ders kapsamında. 14 çeşit diagramı var. Bu 14 çeşit diagramın üzerinden geçeceğiz. Neler olduklarını tanıyacağız. Ama bu ders kapsamında özellikle de bir mimari ifade etmek istiyorsanız aslında kullanacağınız 3-4 tane olacak. Bunlara odaklanmanız yeterli olacaktır.
+
+53
+00:10:55,879 --> 00:11:03,600
+2 tane ana diagram kategorisi vardır. Yapısal diagramlar ve davranışsal diagramlar. Yapısal diagramlar statik diagramlardır.
+
+54
+00:11:03,679 --> 00:11:13,159
+Yani sistemin her zaman var olan parçalarını ya da bileşenlerini ve bunların aralarındaki ilişkiler nelerdir? Bunları tanımladığımız diğer kanlar.
+
+55
+00:11:13,535 --> 00:11:32,755
+Davranışsal diagramlara geldiğimizde, bunlarda bir sistem nasıl çalışır, ne gibi işlevleri vardır ya da ne gibi sorumlulukları vardır, bunlar nasıl yerine getirilmelidir? Genel olarak bunları ifade ettiğimiz, dinamik olan davranışlarımızı gösterdiğimiz taraftır. Diagram ailesidir.
+
+56
+00:11:34,548 --> 00:11:41,307
+Tabii sonuçta dinamik davranışları modellediğimiz için her davranış için ayrı bir diagram çizmemiz gerekecektir.
+
+57
+00:11:41,387 --> 00:11:47,548
+Ya da her bir diagramda farklı bir çalışma şeklinin gösterilmesi esastır.
+
+58
+00:11:47,788 --> 00:11:52,067
+Baktığımızda yapısal diagramlar, şöyle bir blueprint, burada bir tasarım var.
+
+59
+00:11:52,548 --> 00:11:59,267
+Ama davranışsal diagramlarda bunun gerçekten nasıl çalışacağını, paranın nasıl buradan çıkacağını modellediğimiz diagramlar.
+
+60
+00:12:00,659 --> 00:12:28,039
+Şimdi biz tasarım diagramı kullanırsak ne olur? Kullanmazsak ne olur? Yani niye bu kadar uğraşıyoruz? Şimdi fayda ve zarar analizine bakmak lazım burada. Faydaları şunlar. Birinci faydası iletişim. Bir bilgi var ve bu bilgiyi grubun diğer elemanlarına yani ekibin diğer parçalarına da aktarmanızı sağlar. Bunlar arkadaşlarınız, ekip arkadaşlarınız olabileceği gibi proje boyunca hiç konuşmadığınız insanlar bile olabilir. Fakat bunlarla diagramların üzerinden daha kolay anlaşabilirsiniz.
+
+61
+00:12:28,528 --> 00:12:56,467
+Ya da 5 yıl boyunca, hatta 5 yıl sonra, belki siz orada yokken bile uygulamanın bakımını yapacak insanlara da bilgiyi aktarmış olursunuz. Eğer bunu tasarımınızı diagramlarla ifade ederseniz. Ayrıca mevcut yöntemlere destek verir. Özellikle de kullandığınız bir yazılım geliştirme metodolisi varsa bunu da destekler. Mesela bir design review yapılacaksa, prosesi yapılacaksa, bunların nasıl yapılacağı konusunda bize yol gösterici olur elimizdeki diagram.
+
+62
+00:12:56,528 --> 00:13:02,067
+Çünkü bütün sorumluluklarımızı göstermiş durumda oluruz. Bunları kontrol edebiliriz.
+
+63
+00:13:03,251 --> 00:13:31,251
+Üçüncüsü, araç desteği faydası vardır. Artık tabii elde de çizebilirsiniz ama genellikle case araçlarıyla bunlar çiziliyor. Buradaki araçlar da mesela eksikleriniz ya da hatalarınız varsa bu konuda size yardımcı oluyor. Sınıflarla alakalı mesela yanlış bir bağlama yaptınız. Onu bağlayamayacağınız belli sebepten dolayı size uyararak ya da işte belli bir mesajın orada olmadığı, onun sorumluluğunun başka bir sınıf olduğunu size göstererek yapabileceğiniz hatalar.
+
+64
+00:13:31,251 --> 00:13:33,531
+Hatalardan sizi kolaylıkla döndürmeyi de sağlar.
+
+65
+00:13:33,940 --> 00:14:01,940
+Peki, hep faydalı mı, hiç mi zararı yok? Evet, zararı da var. Bir kere vakit alıyor haliyle. Bunların hepsi bir emek. Bir yandan ürünü geliştirirken bir yandan da ürünün tanımlarını geliştiriyor olursunuz aslında. Bir de bunlar versiyon ya da değişiklik yapıldıkça bunların da güncellenmeleri gerekir. Yani bütün diagramlar bir şekilde güncel olarak tutulmaya devam edilmesi gerekir. Sistemde bir şey değiştiğinde diagram ailenizi gözden geçirip varsa etkileyebilirsiniz.
+
+66
+00:14:01,940 --> 00:14:08,440
+Bunların hepsini güncellemeniz gerekir. Bu da ekstra bir iş gücü tabii ki yapmanız ya da yerine getirmeniz gereken.
+
+67
+00:14:09,440 --> 00:14:13,140
+Peki, şimdi hızlıca yapısal diagramlarla başlayalım.
+
+68
+00:14:14,240 --> 00:14:22,200
+Buralar bildiğiniz şeyler ama bazen bilmediğiniz detaylar olacak. O yüzden yine de üzerinden somut bir şekilde geçmekte fayda görüyorum.
+
+69
+00:14:24,800 --> 00:14:27,080
+Sınıf diagramı en popüler diagram bildiğiniz gibi.
+
+70
+00:14:27,635 --> 00:14:47,515
+Pek çok insan için UML Eşittir Klas Diagram. UML'i ne çizdim falan derler. O da bayağı yanlış bir kullanım buradan fark ettiğiniz üzere. Ama sınıf diagramı UML'in en popüler diagramı. Buna statik model de diyenler var. Neden? Çünkü zaten sizin statik yapınız. Biraz önce bunları detaylıca anlattım. Sınıf yapı diagramı olarak söyleyenler de var.
+
+71
+00:14:48,275 --> 00:15:13,915
+Değişik değişik isimler. Yapı diagramı tabi eskiden kaldı ama eskiyi devam ettirmeye çalışıp bunun başına bir de sınıf koyup sınıf yapı diagramı diyenler de var. Özetle bu bize sistemimizin yapısını, daha doğrusu bileşenlerini, temel parçacıklarımızı gösterir. Temelde sınıflar ve ilişkiler zaten burada diagramda ifade edilir. Sınıfların da mutlaka olanı isimdir. İsim dışında da özellik dediğimiz yani attribute dediğimiz oluşum değişkenlerimiz.
+
+72
+00:15:16,275 --> 00:15:25,915
+Metotlarımız, yani davranışlarımız ve işlemlerimiz yer alır. Burada bir tane hemen UML Class örneği görüyorsunuz. Diğer detaylara da devam edeceğiz.
+
+73
+00:15:26,451 --> 00:15:51,012
+Ne dedik? Sınıflar ve ilişkileri olur dedik. Ne gibi ilişkiler bir sınıf diagramında yer alır? Üç çeşit ilişki vardır temelde. Bağımlılık, ilişki ve genelleştirmedir. Genelleştirme tam olarak kalıtım değildir. Dersin sonuna doğru göreceksiniz. Yani UML'de biz burada modellemeden bahsediyor olacağız, gerçeklemeden bahsetmiyor olacağız. Bağımlılık dediğimiz şu şekilde kesikli okla gösterilir üstteki.
+
+74
+00:15:51,488 --> 00:16:08,948
+Bu şu demektir. X, Y'yi kullanır. Bağımlılık her zaman görünür olmayabilir. Yani siz bir mesneyle başka bir sınıfla ilişki içerisindesinizdir. Association dediğimiz. Örneğin Y'yi etkiliyorsunuzdur ya da Y'den bir örnek içeriyorsunuzdur. Yani onu mesela içinizde barındırıyorsunuzdur.
+
+75
+00:16:10,528 --> 00:16:19,448
+Eğer içinde barındırma gibi bir durum varsa o zaman ucuna eşkenar dörtgen de koyarak daha da detay veririz. Buna da aggregation deriz. Heze anlamını verir bize.
+
+76
+00:16:19,488 --> 00:16:42,888
+Ve buradaki dikdörtgen. Siz mesela X, Y ile ilişki içinde asıl şey işine var. Böyle bir somut gördüğünüz gibi çizgiyle bağlı. Ondan sonra Y ile Z ile bağlı diyelim aynı şekilde. Siz X, Y üzerinden Z'ye X içindeyken Y üzerinden Z'ye yerleşebildiğiniz için aslında X, Z'ye bağımlı hale gelir. Onda bir şey kullanıyorsanız da bir çağrı yapıyorsanız Z sınıfından.
+
+77
+00:16:43,508 --> 00:17:06,867
+Bir örnekten o zaman mutlaka bu bağımlılığı da o diagramda ilişki olarak göstermeniz, somutlaştırmanız faydalı olacaktır. Bir de genelleştirme var dedik. X bir Y tipindedir demektir bu da. Tam olarak dediğim gibi bir kalıtım mekanizması ama programlama dilindeki birebir tamam işte extant bulacağım deyip geçmeyin. Burada biraz daha fazlasını yapabiliyorsunuz.
+
+78
+00:17:07,796 --> 00:17:34,916
+Burada örnek bir tane sınıf diagramı var. Gördüğümüz gibi ilişkiyle olan sınıflar var. Film var, filmin fiyatı var. Fiyat farklı farklı sınıflar içeriyor. Şöyle alt sınıflar genelleştirmeyle gördüğünüz gibi. Şurada X, bir Y tipindedir demiştik ya. Mesela Children's Prize bir Prize tipindedir. Yeni çıkanlar için farklı bir fiyatlandırma sınıfı varmış. Normaller için farklı bir fiyat sınıfı varmış gibi.
+
+79
+00:17:35,344 --> 00:18:02,864
+Burada bir kiralama kavramı var. Kiralama filmle ilişkiliymiş. Kiralama müşteriyle ilişkiliymiş. Müşteriyle bir anlaşma ya da sözleşme yapılıyormuş. Sözleşmeler şöyle ya da böyle olabiliyormuş gibi bir modeli o anda görebildiğimiz haliyle yazılımımızı oluşturacak olan parçaları ya da atomik birleşenlerimiz ve bunların arasındaki ilişkileri bu şekilde gösteririz.
+
+80
+00:18:03,344 --> 00:18:19,124
+Sınıf diagramı ile beraber isterseniz türetilmiş nesne örneklerini içeren, yani aslında bir T anında sistemin olması çalışırken olması gerektiği halini modellediğimiz bir diagramda ikinci diagramımız olarak karşımıza çıkıyor. Bu da nesne diagramı.
+
+81
+00:18:19,667 --> 00:18:29,167
+Bu şekilde türetilmiş örnekler. Mesela C nesnesi Company klasından türetilmiş. D1 Department'dan türemiş bir nesne. D3 başka bir şey.
+
+82
+00:18:29,527 --> 00:18:35,008
+Gördüğümüz gibi işte bu bunlar ve D2 ile ilişkili, D1, D3 ile ilişkili, D3 bir Person ile P ile ilişkili.
+
+83
+00:18:35,008 --> 00:18:47,647
+Person ile bir tane Contact Information'ı varmış. Bu şekilde türettiğiniz nesnelerin adları, sınıfları ve aldığı değerler varsa özelliklerin olması, tam o şekilde çalışan haliyle olması gereken özellikleri varsa.
+
+84
+00:18:47,667 --> 00:19:02,248
+Onlarla birlikte gösterdiğimiz diyadan. Yani canlıda özellikle belli bir fotoğraf çekmek istiyorsanız ve onu göstermek istiyorsanız da bunu kullanabilirsiniz. Sınıf değil, çalışan nesneler. O anda çalışan nesneler.
+
+85
+00:19:02,624 --> 00:19:16,364
+Kompozit Yapı Diagramı, üçüncü diagramımız yapısal diagramlarda. Bu biraz daha az bilinir. Belki de çoğunuz ilk defa duymuşsunuzdur. Daha az kullanılır. Bu aslında sınıfın iç yapısını ve özellikle de arayüzlerini göstermek için çizilir.
+
+86
+00:19:30,624 --> 00:19:34,063
+Sınıf olarak hangi yetenekleri dünyaya sunuyorum?
+
+87
+00:19:34,644 --> 00:19:39,743
+Gerektirdiği de ben bu sınıf olarak çalışmak için ortamdan şunları şunları bekliyorum.
+
+88
+00:19:39,743 --> 00:19:48,104
+Bunlar sağlanmadan, bu arayüzler olmadan ben çalışamam şeklindeki arayüz tanımlarını ifade ettiğimiz diagram.
+
+89
+00:19:49,268 --> 00:19:54,928
+Bunların üzerinden aslında zaten gördüğünüz gibi hani şey, priz gibi bunlar birbirine bağlanırlar.
+
+90
+00:19:56,228 --> 00:20:01,208
+Kompozit yapı diagramı bir yazılım mimarisinin parçalarını birleştirmenin yollarından biri.
+
+91
+00:20:01,208 --> 00:20:10,108
+Yani siz özellikle interfej kavramlarını kullanarak bir şeyleri modelleyip bunu göstermeye çalışıyorsanız mimarinizde kompozit yapı diagramını kullanabilirsiniz.
+
+92
+00:20:14,483 --> 00:20:22,803
+Bileşen diagramımız var, komponent diagramı. Tam olarak aslında mimari ifade ettiğimiz diagramların temelidir komponent diagramımız.
+
+93
+00:20:24,303 --> 00:20:29,663
+Bileşenler nasıl bir araya gelecek? Bunları statik olarak yapılarını nasıl bağlayacağız birbirine?
+
+94
+00:20:29,763 --> 00:20:34,443
+Bunu gösterdiğimiz diagrama bileşen ya da komponent diagramı adını veriyoruz.
+
+95
+00:20:34,443 --> 00:20:41,443
+Şimdi burada UML'in referans menüleğine giderek UML'de bileşen ne demektir? Ona bakıyoruz. Türkçesi şöyle, ben sizin çevirdim.
+
+96
+00:20:42,867 --> 00:21:10,807
+Sistemin fiziksel ve değiştirilebilir bir parçasıdır. Burada bir nokta koydum daha anlamlı olsun diye. Bileşen gerçekleştirmeyi kapsar. Demek ki gerçekleştirme var burada. İmplementasyon var. Ve bir arayüz kümesinin gerçekleştirmesine hem uyar hem de katkı sağlar. Bir arayüz için hem bir işlevsellik sağlayacak hem de belirli bir arayüz şablonuna da.
+
+97
+00:21:10,867 --> 00:21:38,867
+Uymayı garanti edecek. İşte burada komponentlerimiz aslında bizim temel yazılım mimarisindeki temel bileşenlerimiz olarak karşımıza çıkacak. Genellikle kütüphane şeklinde böyle kodların ya da kod varlıklarının modellenmesinde de komponent diagramı sıklıkla kullanılır. İşte bu kütüphanede şu bileşenler var. Bunları hazır olarak bu hizmetleri sunuyor ya da çalışmak için şunlara ihtiyaç duyuyor. Bunu sağladığınızda bu hizmetleri alabilirsiniz şeklinde bu modellemede genellikle komponent diagramını kullanırız.
+
+98
+00:21:38,867 --> 00:21:48,647
+Peki komponentler arasındaki ilişkiler nedir? O da bir komponentin diğer komponente ait servisleri kullandığını ifade eder.
+
+99
+00:21:49,587 --> 00:22:17,567
+Komponent diagramı şu anda görüyorsunuz mesela bir tane örnek. Komponentler şöyle burçun burç programlarından geliyor. Kenarında şöyle bir fiş gibi düşünebilirsiniz. Sanki böyle taktığınız bir fiş gibi. Bu bir komponent. Komponentin de işte gördüğünüz gibi bağlantı noktaları yani interfeysleri var. Bu interfeysleri sunuyor. Bakın mesela Ticket Database hem bir status interfeysi sunuyor hem bir purchase interfeysi sunuyor. Mesela manager interfeys dediğimiz şey komponent buradan.
+
+100
+00:22:17,587 --> 00:22:27,788
+Bu interfeisten, ticket seller dediğimizde başka bir interfeis üzerinden buradaki komponente erişerek onun içindeki servisleri kullanıyor.
+
+101
+00:22:28,327 --> 00:22:36,728
+Aktörlerimiz yine burada. Aktörlerden hiç bahsetmedik ama kullanım senaryolarında bahsedeceğiz. Bunlar da sistemde rol alan kullanıcılar diyebilirsiniz.
+
+102
+00:22:36,728 --> 00:22:44,608
+Aktör lafı zaten rol almaktan geliyor. Kesikli çizgilerde bu bileşenler nereden bağlanıyorsa onları gösterdiğimiz noktalar.
+
+103
+00:22:45,364 --> 00:23:13,163
+Gördüğünüz gibi işte mesela Ticket Seller'ın çok fazla interfeysi var. Subscription Sales, Individual Sales ve Group Sales şeklinde 3 ayrı arayüzden hizmet veren interfeyslere sahip. Mesela bu şuna bağlanmış, bu da buna bağlanmış. Bu ikisi yine buna da bağlanabiliyormuş. Ama mesela Group Sales sadece Clerk dediğimiz işte şey hani gişe görevlisi üzerinden bağlanabiliyormuş.
+
+104
+00:23:13,364 --> 00:23:18,564
+Geosk üzerinden grup satışı mesela yapmamayı aslında burada modellemiş oluyoruz.
+
+105
+00:23:21,503 --> 00:23:26,503
+Bir sonraki diagramımız kaç oldu? 7 mi oldu? 6 mi oldu? Diployment diagramımız.
+
+106
+00:23:27,243 --> 00:23:32,743
+Karmaşık sistemlerde parçalar ve komponentler yani farklı işlem birimlerinde çalışabilir.
+
+107
+00:23:33,183 --> 00:23:39,503
+İstelimizde çalışıyor olabilir.
+
+108
+00:23:39,503 --> 00:23:45,503
+Runtime'deki işlem birimlerinin ya da türetilmiş birleşenlerden oluşan işlem birimlerinin...
+
+109
+00:23:46,271 --> 00:24:04,711
+Bu nasıl konfigüre edilecekleri ve bunların birbirleriyle nasıl etkileşecekleri de deployment diagram ile resmedilir. Burada her bir node bir işlem cihazıdır. Bu node'lar arasındaki bağlantılar yani edge'lerde, graph oluşturan edge'lerde bunların arasındaki haberleşmeleri gösterir.
+
+110
+00:24:14,271 --> 00:24:27,251
+Scheduler ve Meeting DB. DB de burada duruyormuş. Makinedeymiş. Burada Scheduler diye bir tane komponent var. Bu iki makine, iki tane ortam birbirine direkt bir bağlantıyla, Direct Channel diye buraya yazılmış. Bununla bağlıymış.
+
+111
+00:24:27,251 --> 00:24:42,271
+Ve aralarındaki haberleşmeyi mesela Client'da duran Planner komponenti, Server'da duran Scheduler komponentinin Reservation Interface ile haberleşiyormuş. Buradan kontak olarak işlemlerini gerçekleştiriyormuş. Ben buna baktığımda hemen mesela burada.
+
+112
+00:24:42,271 --> 00:24:59,991
+Burada bir sunucu katmanı, burada bir istemci katmanı olduğunu, bunların aslında ne gibi bağlantılar olduğunu, her bir katmanın içinde aslında benim yazılımın hangi mimari parçalarının yer aldığını, bunların birbirlikte nasıl çalıştığını, birbirleriyle nasıl hizmet sunduğunu basit bir şekilde modelleyip göstermeme yarıyor.
+
+113
+00:25:02,571 --> 00:25:09,751
+Geldik paketlere. UML, Java'dan bildiğimiz ya da DatNet'ten bildiğimiz paket yapısını da destekler.
+
+114
+00:25:10,144 --> 00:25:29,203
+Bunlar doğal olarak nesne yönelik olduğu için paket yapısına da güçlü bir desteği var. Bunlar genel amaçlı düzenleme mekanizmalarıdır. Aslına bakarsınız. Paket paket dediğimiz şey bir şekilde işlevselliği genel amaçlı olarak düzenlememizi sağlayan organizasyon aslında başka bir şey değil.
+
+115
+00:25:38,144 --> 00:25:59,763
+Namespace mantığı da her bir paketin kendi ad uzayı olur. Mesela aynı isimli bileşenler farklı paketlerde çakışmaya neden olmadan kullanılabilir. Bunu sağlar. Eğer bir paket içindeki parçalarda bağımlılık varsa o zaman bunu paketlerin arasında da göstermeniz gerekir.
+
+116
+00:26:00,211 --> 00:26:17,072
+Bu YM1.5'daki haliydi. 1 ve 1.5'daki. Paket dediğinizde, bakın klasör ayıraçları vardır ya, onun gibi düşünün. Kulağı var bir tane, içine ismini de yazabilirsiniz ya da kulağına da ismini yazabilirsiniz. Paketler iç içi olabilir.
+
+117
+00:26:17,072 --> 00:26:28,211
+İşte ordering paketini bir subsistem paketiymiş. Onun için de user interface, order processing paketi, external storage paketi varmış. External storage paketi ya random storage paketi.
+
+118
+00:26:28,211 --> 00:26:41,112
+Yine, Steam Storage paketinden oluşabiliyormuş. Bunlar dışarıda gördüğünüz başka paketlerle bağımlıymışlar. Onları erişerek kullanıyorlarmış. Bu şekilde de yine paket mimarinizi ifade edebilirsiniz.
+
+119
+00:26:41,112 --> 00:26:53,872
+UML 2.0'a geldiğimizde ise içermeye şöyle include diyelim. Bakın şuradaki mesela Connection Sequence Controller burada açılmış durumda. İçinde iki tane daha başka birleşen varmış aslında.
+
+120
+00:26:56,211 --> 00:27:04,252
+Bu, mesela oklaşa birleşme anlamına gelir. Normal bir kullanım varsa mesela kontrolörünün
+
+121
+00:27:04,252 --> 00:27:11,692
+integer paketinden bir şey kullanıyorsa, import ederiz. Dediğim gibi bu da barındırma, içine kapsama şeklinde.
+
+122
+00:27:11,692 --> 00:27:19,432
+Yani siz bu kontrolörü bunun içine de çizebilirsiniz ya da bu kontrolörün içinde bunlar da yer almaktadır şeklinde gösterebilirsiniz.
+
+123
+00:27:20,723 --> 00:27:29,983
+Son olarak yapısal diagramların sonuncusu profil diagramı. Bunu eminim duymamışsınızdır.
+
+124
+00:27:31,083 --> 00:27:39,743
+Şimdi profil diagramı ne işe yarar? Sonuçta YVML tanımlı parçalardan, sınıflar, ilişkiler gibi tanımlı parçalardan oluşan bir dil.
+
+125
+00:27:40,084 --> 00:27:54,204
+Bu parçalarla bir sistem tanımı yapıyorsunuz. O zaman ben aslında parçaları tanımlayabiliyorsam, bu parçaların tanımlarını değiştirerek aslında UML dilini de değiştirebilirim. Yani UML'i UML kullanarak tanımlayabilirim.
+
+126
+00:27:54,204 --> 00:28:06,264
+Biz buna UML'in meta modeli adını veriyoruz. Mesela bir tasarımcı olarak kendi UML modelinizi genişletebilirsiniz. Modeldeki belli elemanları, yeni özellikler ya da yeni etiketler ekleyebilirsiniz.
+
+127
+00:28:08,084 --> 00:28:11,904
+Yaptığınız değişikliklerin hepsini aslında belirli bir UML profili içinde yaparsınız.
+
+128
+00:28:12,344 --> 00:28:16,444
+Ve profil diagramıyla da kendi UML ailenizi ifade edebilirsiniz.
+
+129
+00:28:17,144 --> 00:28:21,764
+Meta klaslar ve stereotip şablonlarıyla bunu rahatlıkla genellikle yaparız.
+
+130
+00:28:22,344 --> 00:28:29,304
+Dediğim gibi standart UML'deki belli türde yer alan sistemleri bunları genişletmeye çalışıyoruz.
+
+131
+00:28:29,304 --> 00:28:35,784
+Kendi ihtiyacımızı giderecek şekilde yeni mesela özellikler ya da davranışların başka şeylerini eklemeye çalışıyoruz.
+
+132
+00:28:36,084 --> 00:29:01,424
+Bunları eklemek için, UML'i UML kullanarak genişletmek için profil diagramını kullanabilirsiniz. Bu biraz iyice ileri ya da üst seviyeli bir diagramı haline geliyor. Eminim ki çoğunuz böyle bir şeye ihtiyaç duymayacaktır. Ama olur ola ki standart UML size yetmiyor ve bir şeyler eklemeniz gerekiyor. Bunu yapmak için kendi profilinizi oluşturup profil diagramıyla bunu ifade etmeniz gerekecektir.
+
+133
+00:29:01,971 --> 00:29:09,091
+Genel olarak UML diyagramların üzerinden, yapı diyagramların, yapısal diyagramların üzerinden geçecek olursak, ne dedik?
+
+134
+00:29:09,091 --> 00:29:15,071
+Sınıf diyagramıyla başladık. Burada da gördüğünüz gibi 7 tane bileşen var bu tarafta, yapısal ailede.
+
+135
+00:29:16,031 --> 00:29:20,991
+Sınıflarda bizim temel bileşenlerimiz, aslında atomik bileşenlerimiz ve bunların yapısal özelliklerini tanımlarız.
+
+136
+00:29:21,364 --> 00:29:30,564
+Bundan sonra hemen nesneye geçebiliriz. Belirli bir zamandaki statik yapıyı oluşan nesne örnekleriyle birlikte göstermek istiyorsanız nesne diagramını kullanırsınız.
+
+137
+00:29:31,064 --> 00:29:36,644
+Kompozit yapı diagramıyla sınıfların iç yapılarını ve olası etkileşimlerini yani arayüzlerini tanımlayabilirsiniz.
+
+138
+00:29:37,263 --> 00:29:46,543
+Komponent diagramıyla fiziki yazılım bileşenleri nasıl organize olacak, kimle hangi interfesten nasıl haberleşecek, hizmet verecek, alacak bunları modelleyebilirsiniz.
+
+139
+00:29:49,364 --> 00:29:52,983
+Kaynakları ve donanım üzerindeki komponentlerin dağılımını gösterebilirsiniz.
+
+140
+00:29:53,723 --> 00:29:59,104
+Paket diagramı ile mantıksal gruplama yapıp bunlar arasında bağımlılıklar yaratabilir, gösterebilirsiniz.
+
+141
+00:30:00,000 --> 00:30:03,700
+Bir diagramıyla da UML'deki meta modele eklenti yapabilirsiniz.
+
+142
+00:30:04,279 --> 00:30:05,759
+Tabi bunların arasında örtüşmeler de var.
+
+143
+00:30:05,900 --> 00:30:11,519
+İşte bir komponent pek çok diagramın içinde gördüğünüz yer alabiliyor ya da bir klas farklı diagramlarda yer alabiliyor.
+
+144
+00:30:12,039 --> 00:30:13,160
+Bunlar normaldir.
+
+145
+00:30:13,519 --> 00:30:17,339
+Diagramların arasında örtüşmeler olması gayet normaldir.
+
+146
+00:30:18,996 --> 00:30:27,615
+Peki, ben buraya kadar gördüklerim arasından, yani bir sistemin yapı diagramları arasından, mimari hangilerini ifade edebilirim?
+
+147
+00:30:28,096 --> 00:30:40,276
+Sınıf diagramı temel bileşen atomik parçalarımız dedik. Komponent diagramı dedik. Bunlar zaten bizim nasıl bir hizmet yapısı sunduğumuzu gösterdiğimiz parçaları bir araya getiriyordu.
+
+148
+00:30:40,796 --> 00:30:45,076
+Deployment üzerinde durduk. Bunların fiziksel dağılımlığı ile birlikte ve bir de paket diagramı.
+
+149
+00:30:46,996 --> 00:30:53,996
+yazılımınızın mimarisinin statik yapısını ifade edebilirsiniz.
+
+150
+00:30:55,508 --> 00:31:01,567
+Peki, o zaman şimdi behavioral diagramımıza geçelim. Yani davranışsal diagramlara bakalım.
+
+151
+00:31:02,327 --> 00:31:06,567
+Dediğimiz gibi biraz önce yapısal diagramlar sistemi bir bütün olarak tanımlıyor.
+
+152
+00:31:06,668 --> 00:31:10,387
+Bileşenlerini, parçalarını, onu oluşturan elementleri tanımlıyor.
+
+153
+00:31:10,508 --> 00:31:17,448
+Davranışlar diagramlar da bunların nasıl davranacağına, her bir örnek nasıl çalışması lazım, bunlarla ilgili olan diagramlardır.
+
+154
+00:31:18,067 --> 00:31:23,508
+Tabii ki mesela işte bir sınıf diagramıyla kendi modelinizi ifade edebilirsiniz ya da bir...
+
+155
+00:31:23,508 --> 00:31:39,688
+Komponent Diagramı ile. Ama bunların davranışları için birden çok, hatta her davranış için ayrı olacak şekilde, her bir senaryo, her bir sorumluluk için ayrı olacak şekilde ardışıl ve işbirliği diagramları çizmeniz gerekecek. Bunlar da zaten birer davranışsal diagram. Biraz sonra göreceğiz.
+
+156
+00:31:40,112 --> 00:31:52,072
+Fakat dediğimiz gibi yine bütün diagram tiplerini hepsine kullanmak zorunda değiliz. İşimize gelenleri ya da bizim problemimize en iyi katkı sağlayanları seçip kullanmak daha doğru olacaktır.
+
+157
+00:31:52,072 --> 00:31:59,072
+Şimdi şeyden başlayalım. Davranışsal diagramlarda yine bir davranış gösterdiği için use case diagramı.
+
+158
+00:32:00,852 --> 00:32:21,692
+Tabi use case diagramı tek başına aslında böyle use case modellemesinin en önemli parçası değildir. Sadece onun sonucunun basit bir resmidir. Öyle söyleyebiliriz. Kullanım senaryosunu modellemesinde en önemli şey kullanım senaryolarını bulmak ve bunları yazmaktır aslına bakarsanız. Yani işin metin tarafı çok daha fazladır.
+
+159
+00:32:28,884 --> 00:32:41,084
+Tümleştirilmiş modelleme dilini kullanıyorsanız, yani yövmeli kullanıyorsanız, o zaman Object Management Teknik'in aslında söylediği şey, burada analiz modelinde özellikle veri akış diagramları kullanmaktır ama...
+
+160
+00:32:43,923 --> 00:32:57,023
+Object Management Group bunun yerine Yakup'su'nun kullanım senaryosu, diagramlarını kullanır. Yani use case modellemesini ve use case'in görselleştirilmesini önerir. Veri akış diagramları, yani data flow diagramları yerine.
+
+161
+00:33:03,231 --> 00:33:12,692
+Kullanıcı tarafından gözlenebilen sistemin evylem sırasına ya da etkileşim olaylarının toplamına biz kullanım senaryosu adını veriyoruz.
+
+162
+00:33:12,891 --> 00:33:22,751
+Yani aslında sistem bir kullanıcı etkileşimiyle baştan sona nasıl başa çıkacak ve nasıl bir hizmet sağlayacak bunun hikayesidir.
+
+163
+00:33:22,911 --> 00:33:25,311
+Nasıl olması gerektiğini adım adım yazdığımız hikayesidir.
+
+164
+00:33:25,779 --> 00:33:50,639
+Şimdi bu gereksinimleri ortaya çıkarmak için oldukça faydalı. Bir örneğini de yapacağız zaten hızlıca daha iyi oturması için. Bazı sayıları yine biliyorsunuz ama bilmediğiniz detaylar olabilir. O yüzden bunlarda da yine doğru ve çalışan bir olması gereken örnek üzerinden size bir şeyler aktarmak isteyeceğim. Önümüzdeki hafta. Belki de önümüzdeki hafta yapacağız onu. Bu hafta yetişmez.
+
+165
+00:33:55,667 --> 00:34:23,667
+Biz burada yüz keslerle bir sistemin nasıl kullanılacağına dair değişik hikayeleri ortaya çıkartırız. Sonra da buradaki dallanmalar neler olacak? Bunları somutlaştırırız. Ve bunlar şunu da içerir. Mesela bir şeyler yanlış olursa ne olacak? Ve belirgin yapmadığımız, söylemediğimiz ara adımlarda neler olacak? Mesela bunları da çeşitli kontratlarla, sözleşmelerle ifade etmek durumunda kalabiliriz. Mesela kendi içinde yine karmaşık işlemler.
+
+166
+00:34:23,668 --> 00:34:40,588
+O adım mesela senaryoda bir cümle olarak geçer ama onun içinde belki yeni bir daha detaylı nasıl yapılacağını gösteren bir ufak senaryocuk diyebileceğimiz bir kontrat yazılması, bir sözleşme yazılması gerekebilir.
+
+167
+00:34:41,780 --> 00:34:51,100
+Yüz kes diagram üzerinden gidecek olursak da çok basit iki tane ana parçası var. Çöp adamlarımız var. Çöp adamlar, işte stikmenler. Bunlar dış aktörlerimiz.
+
+168
+00:34:51,720 --> 00:35:00,380
+Sistemin kullanıcıları olabilir, başka sistemler olabilir, başka cihazlar olabilir, her şey olabilir. Yani illa aktör deyince kanlı canlı insan olmasına gerek yoktur.
+
+169
+00:35:01,000 --> 00:35:09,620
+Sistemle etkileşime geçen dış aktörlerin hepsini çöp adamı olarak ifade ederiz. Elipslerle de bizim kullanım senaryolarımızı gösteririz. Böyle basit.
+
+170
+00:35:09,780 --> 00:35:37,780
+Elif'sinin içine alırız. Çünkü yazı yazılıyor, adı yazılıyor. Ve bunlar birleştiğinde aralarındaki ilişkilerle birlikte bir Yuscase diagram oluşturuyor. Fakat burada düşülen bir hata var. Yuscase diagram sanki böyle her bir Yuscase için ayrı ayrı. İşte aktör şunu yapar, o bunu yapar, bu bunu yapar şeklinde böyle baloncuklardan oluşan, aktörlerden oluşan bir hikaye gibi resmedilmeye çalışıyor. Hayır, bu değildir. Tamamen bütün senaryolarımız...
+
+171
+00:35:37,780 --> 00:36:02,800
+Bütün use case'lerinizin sistemde yer alan hepsini kapsayan kümenin bir arada gösterilmesidir. Yani şöyle ifade edelim. Diagramdaki her bir elips için ayrı bir use case yazmanız gereklidir. Sekiz tane use case'iniz varsa doğal olarak işte diagramınızda sekiz tane elips olması beklenir. Böyle de söyleyebiliriz. Tabi her bir senaryonun içinde pek çok adım, pek çok cümle yer alacak.
+
+172
+00:36:06,420 --> 00:36:21,059
+Bir çizgilerle bunlar birbirleriyle bağlanırlar. Açıklama yoksa bunlar ortaklık ya da katılım demektir. Yani bir aktör diğer senaryoyla ilgilidir. Onu kullanır. Esas faydayı o sağlar şeklinde okuyabiliriz buradaki diagramları.
+
+173
+00:36:21,059 --> 00:36:32,840
+Bunun dışında iki ayrı özel açıklama ya da bağlantı şekli de vardır. Bunlardan birincisi Extents'tir. İkincisi de Include ya da Uses'tir. Extents şu demektir. Yani bizim bir senaryomuz var, bir hikaye var.
+
+174
+00:36:34,420 --> 00:36:39,580
+Zorunlu olmadan duruma göre değişen şekillerle genişletmeye çalışıyoruz.
+
+175
+00:36:39,580 --> 00:36:44,280
+Yani böyle bir tane fiyatına iki tane alıyoruz gibi. İkincisi bedava gibi düşünün.
+
+176
+00:36:44,880 --> 00:36:47,760
+Birinci de çalışabilir, bir ile iki de çalışabilir duruma göre.
+
+177
+00:36:48,940 --> 00:36:54,800
+Bu şekilde senaryonun ilave parçaları varsa bunlara da ekstens ilişkisiyle gösteriyoruz.
+
+178
+00:36:55,280 --> 00:36:59,660
+Includes'a sanki böyle bir rutin sap program çağrısı gibi düşünün.
+
+179
+00:37:00,059 --> 00:37:02,400
+Pek çok senaryoda ortak kullanılan davranışlar bir.
+
+180
+00:37:02,420 --> 00:37:15,380
+Onlar hep included'idir. Mesela otentikasyon problemini çözmek ayrı bir senaryoda gerçekleştirilir. Ve siz bir yerde bir şeyi yetkilendirmeniz gerekiyorsa onu alıp kullanırsanız oradaki senaryoyu.
+
+181
+00:37:15,764 --> 00:37:43,463
+Diagramlar bu şekilde. Burada aktörler var. Aktörlerin ilişkili olduğu senaryolar var. Mesela Trading Manager diye bir rol varmış, bir aktör varmış. Bu aktör limitleri ayarlıyormuş. Bu limitleri gördüğünüz gibi başka hiç kimse ayarlamıyor. Bu limitler ayarlanması, sistemde bir etkileşim, sistemde belli ayarların değişmesi. Onun için de bir akış işletilmesi, yani bir işlevselliğin çalıştırılması gerekiyor. Bu da bir senaryo olarak burada anlatılmış.
+
+182
+00:37:43,764 --> 00:37:45,284
+İçinde tabii ki.
+
+183
+00:37:45,284 --> 00:37:49,204
+Accounting System hesapları yüncellebiliyormuş.
+
+184
+00:37:50,963 --> 00:37:59,764
+Simsar ve satıcılar da risk analizi yapmak, fiyat teklifi vermek falan gibi şeylere, senaryolara erişim kullanabiliyorlarmış.
+
+185
+00:38:00,324 --> 00:38:03,923
+Bunlarca aktörleri de trader ve salesperson'mış.
+
+186
+00:38:04,423 --> 00:38:10,884
+Risk analizi bir değerleme içeriyormuş ya da bir fiyat teklifi bir değerleme içeriyormuş.
+
+187
+00:38:11,315 --> 00:38:29,875
+Capture Deal'a baktığınızda da bu isterseniz Limits Exceeded'la birlikte de çalışabilir ya da tek başına da çalışabilir. Bu şekilde sistemimizdeki temel sorumlulukları, davranışları modellediğiniz, gösterdiğiniz diyagram. Böyle kuş bakışı sistemin şeyi.
+
+188
+00:38:30,387 --> 00:38:39,187
+Ne derler? İşlevselliğinin tepeden çekilmiş fotoğrafı gibi düşünebilirsiniz. Basit ve taraflar arasında anlaşmayı kolaylaştıran bir diagram.
+
+189
+00:38:39,747 --> 00:38:49,907
+Peki gelelim şimdi Yuskates'lere o zaman. Yani şuradaki elipslerin her birine. 1, 2, 3, 4, 5, 6, 7 tane burada senaryon yazılması ekleniyor.
+
+190
+00:38:50,387 --> 00:39:06,748
+Kullanım senaryodur, dediğimiz gibi hikayelerdir. Bunlar yapısız metin şeklinde ya da tablo şeklinde yazılabilir. Genellikle biz cümle cümle maddelendirerek yazmayı tercih ederiz. Bunun bir giriş kısmı, aktörler, ön koşullar, son koşullar gibi farklı kısımları da vardır.
+
+191
+00:39:08,980 --> 00:39:24,539
+Bakıp örneklerine ne olduğunu daha detaylı inceleyebilirsiniz. Şimdi o kadar detayına girmeyeceğim. Mesela örnek olarak senaryolarda hep etken davranışlar gösterilir. Mesela bir işi kim yapar, nerede yapar, neyle yapar bunların hepsi açık bir şekilde ifade edilir.
+
+192
+00:39:24,539 --> 00:39:35,620
+İşte Ayşe Amazon'dan ürün almak ister. Ayşe'nin bir şey istemesi gerekiyor demek ki. Bunu aslında modellediğinizde bir yerlerde bir şeylere tıklaması gibi düşünebilirsiniz.
+
+193
+00:39:36,980 --> 00:39:57,820
+Aradığı ürünü bulana kadar sitede gezer. Demek ki burada bizim bir şekilde Ayşe'ye ürün göstermemiz gerekiyor. Böyle sorumluluklarımız var. Bunları yerine getirmemiz lazım. Bunların nasıl yapılacağını sözleşmelerle ifade edebilirsiniz.
+
+194
+00:40:00,000 --> 00:40:26,059
+TFT ekler. Bulmuş demek ki. Sonra işte burada bir satış senaryosundan bahsediyoruz. Satın alma sayfasına geçer. Fatura bilgilerini verir. Sonra aslında V dediği için onu ayırabilirsiniz. Ayşe ödemeyi tamamlar diye. Sistem bir onay üretir ya da sipariş numarası üretir gibi detaylarla bunu zenginleştirebilir ya da daha anlaşılır hale getirebilirsiniz. Burada böyle slide'ın içinde az yer kaplasın diye bu şekilde ifade ettik.
+
+195
+00:40:28,000 --> 00:40:38,400
+Kullanacaksanız da o zaman üç tane kolona ihtiyacınız var. Aktör kim, eylem nedir ve nesne ya da nesneler nelerdir? İşte mesela Ayşe Ekler, Kitap, Sepet.
+
+196
+00:40:38,704 --> 00:40:46,784
+Burada bir kitap nesnesi, bir sepet nesnesi Ayşe'nin ekleme davranışının içinde yer alması, etkileşime geçmesi gereken nesnede.
+
+197
+00:40:47,184 --> 00:40:54,224
+Bu şekilde yapabilirsiniz ama öbürü biraz daha çok kullanılan ve okunan, rahat okunan şeklidir.
+
+198
+00:40:55,044 --> 00:40:57,004
+Tabloyu da isteyen varsa kullanabilir.
+
+199
+00:40:57,624 --> 00:40:59,824
+Konteks diagramına geçelim. İkinci diagram.
+
+200
+00:41:00,500 --> 00:41:08,960
+Bu çok kullanılmaz. Aslında yömenin de parçası değil. İlginç bir şey. DFT'lerin Level 0'ı bu aslında. Level 0 DFT. Ne demektir Level 0 DFT?
+
+201
+00:41:08,960 --> 00:41:17,980
+Veri Akış Diagramı'nda tek bir işlem birimi var. Orası da sisteminiz. Sisteminiz dış paydaşlarla tam temelde ne alıyor ne veriyor.
+
+202
+00:41:18,119 --> 00:41:27,879
+Yani sizin sisteminizin sağladığı temel fayda kimlere nedir ve çalışması için mutlaka alması gereken temel girdiler nelerdir? Bunları gösterirsiniz.
+
+203
+00:41:28,500 --> 00:41:35,259
+Level 0 DFT'ye eşittir. Konteks Diagram merak eden varsa onun detaylarını oradan inceleyebilir.
+
+204
+00:41:35,259 --> 00:41:41,379
+Ama dediğim gibi yövme ennasında bir parçası değil. Fakat o da yine içinde yer alıyor. Konteks Diagram şeklinde.
+
+205
+00:41:42,260 --> 00:41:58,860
+Geldik. Belki de en çok gördüğünüz ya da en çok kullanacağınız davranış diagramına. Buna sequence diagram adı veriliyor gerçekte. Ben Ardışıl diye birbirini takip eden mantık sırasıyla takip eden hem nesne hem olaylar zinciri olduğu için Ardışıl diagram demeyi tercih ediyorum.
+
+206
+00:41:59,640 --> 00:42:07,559
+Ardışıl diagramlar senaryolar için yapılır. Yani her bir senaryodaki davranışlar, her bir sorumluluk ayrı bir sequence diagram demektir aslında.
+
+207
+00:42:10,260 --> 00:42:24,960
+Kolon adını veriyoruz. Nesnelerimiz yer alıyor. Bunlar katılımcılar. Aktör de olabilir tabii ama genellikle nesneleri görürüz biz burada. Zaman da aşağı doğru bir işte T0'dan TN'e doğru gider. Aşağı doğru çizgisel olarak devam eder.
+
+208
+00:42:25,588 --> 00:42:43,208
+Buradaki şeyler metot gövdeleridir. Kalın kutular. Yani client'da bir metot çalışıyor. Aslında bunu birisinin çalıştırması lazım. Ve bu metot çalışınca mesela ilk olarak bir bağlantı görüyorsunuz. Nesneler arası mesajdır bunlar aslında. Bu özel mesaj create mesajı.
+
+209
+00:42:43,208 --> 00:42:53,208
+Yani bir transaction sınıfından bir T nesnesi yaratır bu metodun içinde. Sonrasında o T nesnesinin set actions metodunu çağırır.
+
+210
+00:42:53,588 --> 00:43:16,408
+SetIctions metodu burada çalışmaya başladı. O da bir metot gövdesi. O da kendi içinde gidip bir ODBC Proxy sınıfından türeyen bir nesneden değerleri alır. Sonra ona belli değerleri verir. Bu arada işte commit ettiğini bildirir. Değerleri verir. Bu işlem commit edildikten sonra işte client T nesnesini yok eder. Bitirir. Free eder.
+
+211
+00:43:17,748 --> 00:43:45,748
+Ne oldu? İşte transaction tarafıyla işimiz bitmiş oldu. Ne oldu? Ben burada client olarak bir aslında şurada bir metot çalıştırdım. Yani benim bir sorumluluğum var. Bir senaryodaki bir eylemin yerine getirilmesi için yapmam gereken işlemler var. İşte onları önce transaction'ı yaratacağım sonra oradan şunu çağıracağım. O gidip proxy'den bilmem ne yapacak, onu yapacak, bunu ayarlayacak. Ondan sonra bana tamam diyecek ve ben transaction meselesini bitireceğim ve bu sorumluluğu yerine getirmiş olacağım. Bunların hepsini tek bir böyle...
+
+212
+00:43:45,748 --> 00:43:52,988
+Diagram içinde, zaman içinde nasıl akacağını gösterdiğimiz davranış diagramı çeşidi, sekonist diagram.
+
+213
+00:43:53,907 --> 00:44:08,867
+Telefon sanayisinde mesaj sıra kartları var. Oradan evrimleştirilmiş. Yoksa bir anda ortaya çıkmış bir şey değil. Eskiden aslında alınıp da devşirilen başka bir diagram çeşidi. Bunlar iletişim diagramlarıyla birebir aynı içeriğe sahiptir.
+
+214
+00:44:10,088 --> 00:44:20,867
+Sadece biri zamandaki yakışı daha rahat görmenizi, birisi yer tasarrufu yapmanızı haberleşmelerin nasıl olacağını numaralı olarak gösterir. Burada da onu görüyorsunuz.
+
+215
+00:44:21,907 --> 00:44:28,748
+Aynı şeyi yapıyor. Client, Transaction'la bağlı, Transaction'da Proxy'yle bağlı haberleşmeleri var.
+
+216
+00:44:29,148 --> 00:44:34,688
+Burada mesela şöyle yan okuyacak olursak. Bir, önce Create ediyor.
+
+217
+00:44:35,188 --> 00:45:02,228
+2, SetAction'ı çağırıyor. Ondan sonra bu 2'nin, yani SetAction'ın çağrılmasıyla birlikte 2.1, SetValues, SetValues şeklinde proksiye başka şeyler gidiyor, başka metotlar çağrılıyor. 2 bitti. O zaman 3. olarak buraya Destroy geliyor. Gördüğünüz gibi işte 1, 2, 3 şeklinde metot çağrıları numaralandırılmış. 2.1, 2.2 de bunların ikinci metot çağrısının içinde yaratıldığı.
+
+218
+00:45:03,188 --> 00:45:06,028
+yapılması gerektiğini modellediğimiz gösterim.
+
+219
+00:45:07,268 --> 00:45:19,288
+Dividend ondalık gösterimin 1.1, 1.1.1 şeklinde giden dallanma ya da kitaplardaki section, subsection dallanmasını birebir kullanırız.
+
+220
+00:45:20,628 --> 00:45:25,168
+Aslında örnekler aynı ama sequence diagramı da bu şekilde görürsünüz.
+
+221
+00:45:25,768 --> 00:45:27,568
+İletişim diagramını da bu şekilde görürsünüz.
+
+222
+00:45:29,172 --> 00:45:44,012
+Şimdi geldik. Dördüncü mi oldu, beşinci mi oldu? Aktivite diagramına. Aktivite diagramı da PETRA'larından türemiş. Bu şu demektir. Aslında burada bir Final State Machine tasarlarız, gösteririz. Yani bir durum geçiş makinesidir bu.
+
+223
+00:45:45,492 --> 00:45:57,172
+Senkronizasyona ihtiyacınız varsa, paralel çalışan işlemleriniz varsa ve bunların belli yerlerde senkron hale gelmeleri gerekiyorsa bunları Sekvenci diagramlarla gösteremezsiniz. Ya da işte Communication diagramlarla gösteremezsiniz.
+
+224
+00:45:57,172 --> 00:46:07,811
+Burada aktivite diagramlarını kullanıyoruz. İş akışı nedir? İşlemler nasıl senkronize edilecek ve eş zamanlık nasıl sağlanacak? Bunu gösteririz. Mesela burada bir örneği var.
+
+225
+00:46:11,827 --> 00:46:19,367
+Şöyle düşünün, böyle bir imleç buradan başlar. İçi dolu olan başlangıç. Burada tabii stop da var. Stop şeyde kalmamış.
+
+226
+00:46:22,452 --> 00:46:40,392
+İlk olarak, bakın buradaki işlem gerçekleştirilecek. Tamam mı? Bu bir durum. Bunu yaptık. Sonrasında bir karar var. Single Order mı Subscription mı? Eğer Single Order ise bu yoldan yoluna devam eder. Bakın, dıt dıt buraya gel. Ondan sonra birleş bunu yap. Burada da bir karar varmış demek ki.
+
+227
+00:46:41,684 --> 00:47:03,104
+Niye bölüyor? Birleştirmek için yapmışız. Okey. Karar yok yani. Direkt olarak aslında buraya akıyor. Fakat Subscriptions'a eğer, şuradaki Setup Order'dan gelen bir karar mekanizması, o zaman buraya geliyoruz. Şimdi burada ne var? Bir tane siyah bir bar görüyorsunuz burada. Siyah bir çubuk. Bu bir engel. Yani buna bir senkronizasyon noktası diyoruz. Burada paralelleşme başlıyor.
+
+228
+00:47:09,684 --> 00:47:37,684
+Award bonus ödülü bilmem nesi kazanması için ayrı işlemler çalışıyor. Yine orada bir senaryo gerçeklemesi. Yani bir seconds diagram belki de çalışacak. Ve burada işler bir şekilde atıyorum 10 saniyede bitti. Buradaysa 3 saniyede bitti. Buraya girip bekleyecek. Yani buranın gelmesini ya da bu taraf öbürünün gelmesini bekleyecek. Burada çünkü yeni bir bar görüyoruz. Bu da ikinci senkronizasyon noktası. Yani burada paralelleşti, burada tekrar birleşti.
+
+229
+00:47:37,684 --> 00:47:46,344
+İşte burada paralel olanların sonuçlarının birleşerek yoluna devam etmesi lazım. O da burada gelmiş. Buradaki daimot da birleşip aşağıya gelmiş.
+
+230
+00:47:47,380 --> 00:47:54,180
+Bu şekilde paralelleştirme, senkronik hikayeçleriniz varsa da bunları aktivite diagramıyla gösterebilirsiniz.
+
+231
+00:47:54,820 --> 00:47:59,120
+Bir de genel etkileşim diagramı var. Bu da bir çeşitli aktivite diagramı.
+
+232
+00:47:59,120 --> 00:48:07,280
+Aslında gördüğümüz gibi şurada yine başlıyoruz. Burada başladıktan sonra bunların her biri alt sivili bir etkileşim diagramıdır.
+
+233
+00:48:07,700 --> 00:48:15,280
+Burada bir senaryo ya da bir diagram varmış gibi düşünün. Sonrasında bir şey bulunursa başka bir sorumluluğa geçiliyor.
+
+234
+00:48:15,380 --> 00:48:42,720
+Bulunmazsa tekrar tekrar aramaya devam ediliyor. Bulunduğu Checkout senaryosu ya da Checkout diagramı çalıştı. Sonra işte duruma göre ya bu ya bu senaryo çalışacak. Burada yine bir karar var. Ve işte şu senaryo çalıştı bitti ya da bu senaryo çalıştı bitti şeklinde aktivite diagramını da daha böyle üst seviyeye çıkartıp genelleştirerek genel etkileşim diagramı şeklinde gösterebilirsiniz.
+
+235
+00:48:43,380 --> 00:48:56,220
+İçindeki düğümler, Sequence Diagram olabilir, Communication Diagram olabilir, kendi içinde başka genel etki eşim diagramları ya da hatta Timing Diagramları olabilir. Buradaki parçalar, UML'deki diğer diagramlar aslında, diğer davranış diagramları.
+
+236
+00:48:58,980 --> 00:49:06,360
+Bir diğer diagram, bu da hiç belki de duymadığınız diagramlardan biridir. Timing Diagramı. Bu da dijital çip tasarımından bize miras.
+
+237
+00:49:06,751 --> 00:49:31,972
+Sistemde durumlar belirli zamanlamalara sahip olması gerekiyorsa o zaman biz bunu timing diagramla gösteririz. Burada zaman soldan sağa doğru idareler. Bakın milisaniye cinsinden sıfırdan 110-120 milisaniyeye kadar bir şeyler oluyor. Burada da oklar vardır. Oklarla da senkronizasyon noktalarını yine şöyle gösterebilirsiniz. Yani şu şuraya senkronize, bu buraya senkronize şeklinde.
+
+238
+00:49:34,228 --> 00:49:51,488
+Hop, pardon. Yeni şey yaptık. Çok kullanılan bir şey değil ama dediğim gibi çok detayına ben de girmeyeceğim. Fakat bilin diye söylüyorum. Eğer bir belirli zamanlamalarınızın olması gerekiyorsa o zaman bu şekilde bir timing diagramla bunu modelleyebilirsiniz.
+
+239
+00:49:53,488 --> 00:49:59,628
+Geldik. Kaçıncı oldu? Yedi mi oldu? State diagram. Bu aslında şey.
+
+240
+00:50:00,000 --> 00:50:27,859
+Aktiviteyi falan da biraz daha bir adım öteye götürerek davranışsal diagramları bir şekilde en karmış ya da en güçlü olanı diyebiliriz. Burada hem sonlu durum makinelerinin yeteneklerini hem aggregation'ı birleştirmeleri, hem eş zamanlılığı, hem geçmişi yani böyle bir zaman geçmişini hem de olayların tüme yayılmasını, değişik maddelerin hepsini bir arada ifade edebiliyoruz. Bunlarla ilgili bir ders, daha detaylı bir ders yapacağız.
+
+241
+00:50:28,000 --> 00:50:43,339
+Fakat burada çok basit bir örneğine bakacak olursak, state diagramının. Burada mesela iki tane harici durum var. Yani sisteminiz ya idle state'dedir ya maintenance state'dedir. Bunların arasında da durum geçişi maintain.
+
+242
+00:50:44,820 --> 00:51:10,820
+Koduyla ya da kriteriyle oluşur. Maintain aktif olduysa, mesela true olduysa o zaman sizin sisteminiz buradaki state de olacaktır. Bu state'i geçtiğinde paralel eş zamanlı olarak çalışan, bunu da böyle şuradaki kesikli çizgiden görüyoruz, eş zamanlı çalışan iki tane alt durumu olduğunu görüyoruz. Biri test, biri komut. Test ise işte burada başlar, şu işi, şu işi yapar, bunlar yine ardışıl diagramlarla ifade edilebilir ve biter.
+
+243
+00:51:11,251 --> 00:51:25,291
+S zamanlı olarak aynı anda mesela çalışan, buradan başlayıp şurada keypress olduğu sürece devam eden wait, command, wait, command, wait, command, en sonunda bitir şeklinde farklı bir durum vardır, alt durum vardır.
+
+244
+00:51:25,291 --> 00:51:36,672
+Bu şekilde durum durum içinde, onun içinde paralel durumlar, bunların geçmiş zaman modellemeleri gibi, bunu da yine dediğim gibi daha detaylı derste ifade ederiz, şimdi çok derinine girmeyelim.
+
+245
+00:51:39,251 --> 00:51:54,031
+Çok UNL'deki şu ana kadar gördüğümüz parçaların her birinden biraz içererek davranışımızı, sistemimizin genel durumlarının nasıl davranacağını modellediğimiz bir başka diagram olarak karşımıza çıkıyor.
+
+246
+00:51:55,795 --> 00:52:23,175
+Peki, davranış diagramları da bu kadar. Yine 7 tane, 7-7-14 tane diagramdan bahsetmiş olduk kabaca. Nedir? Aktivite diagramı. Aktiviteler arasındaki akış kontrolünü bize sağlıyordu. Hatta versen senkronizasyonla birlikte. Ağırlaşıl ve iletişimler, sequence ve communicationler birbirinin aynısı fakat farklı gösterimlerdi. Yine nesneler, etkileşimler nasıl, sorumluluk nasıl yerine getirilecek? Detaylı tasarımımızı aslında ifade ettiğimiz diagramlar.
+
+247
+00:52:23,795 --> 00:52:25,643
+Genel etkileşim...
+
+248
+00:52:25,684 --> 00:52:32,364
+Daha alt seviyedeki aktivite diagramlarının birleştirilmesi, yani onların bir sentezinin oluşturulup gösterilmesi anlamındaydı.
+
+249
+00:52:33,604 --> 00:52:44,784
+Zamanlama arasında bir çeşit döndürülmüş bir arası diagram. Zaman aşağı doğru değil, yana doğru gidiyor ama özellikle zaman sekronizasyonlarınız, zamanlamayla çalışan işleriniz varsa kullanmanız beklenen bir diagram.
+
+250
+00:52:44,784 --> 00:52:53,244
+Yüz keisler bu aslında analizin diagramı. Yüz keisler ve yüz keis diagramı diyelim buna aslında.
+
+251
+00:52:53,684 --> 00:52:59,104
+Ağırıcı aktörlere sistemimizin sağladığı işlevsellik. Bunlar nelerdir? Sorumluluklarımız nelerdir?
+
+252
+00:52:59,104 --> 00:53:06,484
+Ve durum diagramı. Belirli uyaranlara tepki olarak hangi durumda olacağız? Nasıl dinamik davranışlar sergileyeceğiz?
+
+253
+00:53:07,224 --> 00:53:12,684
+Bizim sistemimizin hangi durumda neler çalıştırması gerektiğiyle alakalı modellemeyi gösterdiğimiz diagram.
+
+254
+00:53:13,268 --> 00:53:27,188
+Dediğim gibi bunların hepsine bir anda ihtiyaç duymazsanız genellikle en popüler işte sekvensleri falan çok kullanacaksınızdır. Ama ihtiyacınız olursa işte timingle ilgili bir şeyler yapacaksanız o diagramda orada duruyor. Detaylarını öğrenip kullanabilirsiniz.
+
+255
+00:53:29,588 --> 00:53:52,248
+Bu noktada bir de Object Constraint Language'den bahsetmek istiyorum. Nesne, kısıt dili. Şimdi bu da şudur. UML hep diagram, diagram gidiyor ya bazı şeyleri diagramla ifade edemezsiniz. Belli kısıtlarınızı bir şekilde başka bir dil kullanarak göstermeniz gerekir. Bunlara da UML'in diagramsız kısmı ya da diagramların metin uzantısı diyebiliriz. Bunlara OCL adını veriyoruz.
+
+256
+00:53:52,704 --> 00:54:14,824
+Genellikle sınıflarda ve durum geçiş diagramlarında bu metin uzantılarını kullanırız. Tanımlayamadığımız detayları, vermemiz gereken detayları OCL dilini kullanarak kullanırız. Ne zaman ihtiyaç duyuyoruz biz buna? Sistemde mutlaka kesin tanımlamamız gereken şartlar varsa bunları da kullanabiliriz.
+
+257
+00:54:20,704 --> 00:54:48,684
+Anlatacağım yine o sayeli. İşte burada mesela bir hesap sınıfımız var. Account. Bunun da bir deposit diye bir metodu var. Account deposit. Bunun fayı bu şekilde. Sintaksı. Ve işte amount türünden bir gerçek sayı alıyor. Ve şunu söylüyoruz. Mutlaka bunun çalışması için amount'un sıfırdan büyük olması lazım. Yani sıfırdan küçük değerler için buradaki metot çalışmaz. Bunu garanti edin şeklinde tanımlamamızı formal olarak.
+
+258
+00:54:48,704 --> 00:55:16,684
+Yapmamızı sağlar. Ve işte postta da son bittiğinde, yani deposit bittiğinde sisteminizde siz hangi durumu garanti ediyorsunuz? Bunu mutlaka garanti edeceksin anlamına geliyor. İşte balans eşittir. Balance at pre, yani balansın başlangıçtaki halinin üzerine bana verilen sıfırdan büyük amountun koyulmasını garanti etmem lazım. Bunu sağlayacağım. Kesinlikle bu şekilde çalışacak. Başka herhangi bir davranış olmayacak. Çalışmak için.
+
+259
+00:55:16,704 --> 00:55:27,744
+Yani planın çalıştıktan sonra da sistemimizin post durumunda olmasının mutlaka şart olduğunu garanti edilmesi gerektiğini bu şekilde kısıt diliyle ifade edebiliriz.
+
+260
+00:55:28,124 --> 00:55:37,084
+Mesela ne bileyim, 18 yaşından küçük bir şeyin çalışmaması gerekiyor. Mesela bir davranışın yapılmaması gerekiyor. Bunu yine bir OCL ile tanımlayabilirsiniz.
+
+261
+00:55:37,084 --> 00:55:44,504
+Ama onun dışında klas diagramda metodun yanına bir şey mi yazacaksınız? 18'den küçükse lütfen bunu çalıştırmaya dikkat edin.
+
+262
+00:55:44,704 --> 00:55:47,804
+İşte bunların formal tanımlarını yaptığımız değil.
+
+263
+00:55:51,315 --> 00:56:18,516
+Meta modeli, UML'i UML'le tanımlamaktır ve profil diagramlarıyla bunu yaparız demiştik. Burada kısıtları aslında modeli değil, diagramlara yapıyorsunuz. İstediğiniz gibi dediğim gibi UML'inizi özelleştirebilir ve değiştirebilirsiniz. Burada mesela UML'in bir meta modeli var. Gördüğünüz gibi işte class burada. Class'ların association'ları vardır. Class attribute'a sahiptir. Class operation'a sahiptir. Class'lar classifier'dan şey yapar. Bunlar da primitive data type'larda.
+
+264
+00:56:19,315 --> 00:56:45,415
+İlginç primitif data type'lara sahiptir. Operation'ların parametreleri vardır. Eğer sizin burada parçaların bir şeylerini değiştirmeniz gerekiyorsa o zaman meta modeli profil diagramı kullanarak değiştirebilirsiniz. Bu da ileri mimarinin ilerisinin de ilerisi olabilecek tarafı. İlgilenen ya da merak eden varsa Yömer profilleme üzerinde tabii ki bir araştırma yapıp ne olduğunu öğrenebilir.
+
+265
+00:56:46,483 --> 00:57:01,923
+Sonuç olarak ne gördük? Biz burada şu anda UML bize modelleme için ya da bir mimari tasarımı ifade etmek için ne gibi diagramlar sunuyor? Hangisi ne işe yarar? Detayları nelerdir? Hızlıca bir ders içinde bunları size aktarmaya çalıştım.
+
+266
+00:57:02,739 --> 00:57:23,159
+Karmaşık bir sistem özellikle de yaparken bunların ne yapacağını varsaymadan tasarımı gerçekleştiremezsiniz. Diagramlar aslında bizim ifade şeklimizdir. Yani ifademizi temsil şeklidir. Problemi nasıl anladığınızı ve problemi nasıl çözdüğünüzü aslında göstermiş olursunuz bu diagramları kullanarak.
+
+267
+00:57:30,739 --> 00:57:43,139
+Sonrasında da aslında o kadar az problemle boğuşarak yolunuza devam edersiniz diyoruz. Modellemenin önemini, mimari tasarlamanın önemini göstermek için.
+
+268
+00:57:45,139 --> 00:58:00,860
+Şimdi bir ara vereceğim. Aradan sonra da özellikle nesne dayalı analiz nedir ve UML sınıf modeli detayları nelerdir? Bunlarla da bir ders yapıp sonrasında da bu haftayı tamamlayacağız. Dediğim gibi en son konu paylaşımları konusunda da birkaç şey söyleyeceğim size.
+
+269
+00:58:13,139 --> 00:58:17,619
+Tekniker başlayacağım. Şimdilik paylaşımı durduruyorum. Görüşmek üzere.
+
+270
+01:15:48,275 --> 01:15:50,275
+Evet, arkada.
+
+271
+01:15:58,131 --> 01:16:01,451
+Oldu. Geri geldik.
+
+272
+01:16:06,323 --> 01:16:08,323
+Evet, şimdi geldik.
+
+273
+01:16:10,323 --> 01:16:13,323
+O, güzel. İyi dikişleri derste. Harika.
+
+274
+01:16:18,931 --> 01:16:24,752
+Evet, bu derste de, bu saatte de nesne yönelik analiz ve sonrasında görmen sınıf modellerine bakacağız.
+
+275
+01:16:28,756 --> 01:16:36,496
+Nesli yönlük analiz nedir? Nasıl yapılır? Yolu yordamı düzgün bir şekilde nasıl ilerler? Hızlıca bir saat onlardan size bahsetmek istiyorum.
+
+276
+01:16:38,003 --> 01:17:01,043
+Tasarıma nasıl başlarsınız? Aslında temel soru bu. Tasarımı nasıl yapacağız? Nereden tasarımı, mimari oluşturmaya nereden başlayacağız? Bunun için ilk önce problemi çözmeden önce yani, tasarlamadan önce anlamamız gerekiyor. İşte anladığımız problemi anladığımız ve gösterdiğimiz, ben bunu anladım diye gösterdiğimiz safhaya analiz aşaması adını veriyoruz. Burada da işte neslinik analiz nasıl yapılır hızlıca ona bakacağız.
+
+277
+01:17:01,463 --> 01:17:05,984
+Abbott ve Burt tarafından 80'lerde aslında bu geliştirilmiş.
+
+278
+01:17:06,003 --> 01:17:26,363
+Ve nesne analiz modeli yaratmak için aslında şunu yapmaya çalışıyoruz. Doğal dille tanımladığımız gerçek dünya nesnelerini alıp yazılım uzayına taşımaya çalışıyoruz. Bu sayede aslında kavramları daha iyi ifade edebilmeyi ya da yazılımı gerçek dünyaya yakınlaştırmayı hedefliyoruz. Bunları biz hemen sınıf diagramıyla ifade edeceğiz.
+
+279
+01:17:34,003 --> 01:17:52,443
+Nesneye yönelik ya da nesne analiz modeli yaratmayacaksak, nesneye yönelik analiz yapmayacaksak ne yapabiliriz? Fonksiyonel çözümleme yapabiliriz.
+
+280
+01:17:52,884 --> 01:18:20,783
+Fonksiyonel çözümleme ya da eski usul diyebilirim yani bir çözümleme yaratabilirsiniz. O zaman da siz sisteminizin davranışları neler olması gerekir, hangi uyarana hangi tepkiyi vermesi gerekir ya da kullanıcıya nasıl hizmet sağlaması gerekir, nasıl sorumlulukları olması gerekir soruları yerine benim sistemin ne gibi işlevleri olması gerekir, hangi fonksiyonları ben hizmet olarak ya da dışarıya hizmet gibi sunmalıyım.
+
+281
+01:18:20,884 --> 01:18:29,324
+Bunlara odaklanabilirsiniz. Bu da ikinci alternatifiniz. Bu da olabilir tabii ki. Fakat biz bu ders kapısında en azından nesne yönelik olan yoldan yürüyeceğiz.
+
+282
+01:18:30,804 --> 01:18:58,804
+Peki, niye biz fonksiyon yerine nesne kullanmayı tercih ediyoruz ya da istiyoruz? Bunu niye promote ediyoruz? Temel sebebi aslında arkadaşlar, buradaki slide'da açıklamaya çalıştım, size özetlemeye çalıştım. Bizim amacımız uzun yaşam ömürlerine sahip yazılım sistemlerini oluşturmak. Yani böyle bir işi üretince o yazılımın, o bilgi sisteminin, her neyse çözümümüzün uzun süre yaşaması ve hizmet vermesinin devamlılığını sağlayabiliriz.
+
+283
+01:18:58,804 --> 01:19:22,004
+Ve zaman içinde doğal olarak evrimsel değişikliklere de yazılımınız uğrayacaktır. İstekler değişecektir, şartlar değişecektir, altyapı değişecektir, donanım değişebilir. Her şey olabilir ya da işte daha genişlemeniz gerekebilir. Hizmet sunmanız gereken kitlenin büyümesi gerekebilir. Bunun gibi pek çok sebepten değişiklik yapmanız gerekebilir.
+
+284
+01:19:22,547 --> 01:19:43,627
+Siz sisteminize yeni özellikler ekledikçe, var olan mesela yaptığınız yanlışları ya da hataları bulup düzelttikçe ya da kullandığınız üçüncü parti dediğimiz hazır kütüphaneler değiştikçe gitgide sizin yazdığınız kodların ya da tasarımınızın orijinal yapısı da ortadan kalkıp bambaşka bir hale doğru dönmeye başlar.
+
+285
+01:19:50,547 --> 01:19:58,948
+Yukarıdaki cümlede söylediklerinden dolayı çok daha, nesnelere göre çok daha sık değişikliğe uğramak zorunda kalırlar.
+
+286
+01:19:59,407 --> 01:20:01,768
+Mesela bir tane bankacılık uygulamasını ele alalım.
+
+287
+01:20:03,167 --> 01:20:07,028
+Ne gibi fonksiyonlar bulabilirim ben bir bankacılık uygulamasında?
+
+288
+01:20:07,028 --> 01:20:11,268
+Çok basit olsun diye hemen aklıma gelenleri yazdım. Bir faizin hesaplanması.
+
+289
+01:20:11,699 --> 01:20:28,199
+İşlem ücretinin hesaplanması ve alınan verginin hesaplanması. Ki biliyorsunuz son bir ay içinde bu iki kere değişti. Hem bir faiz arttırımları oluyor, ondan sonra döviz ve altında kambiyo vergisi diye bir olay çıktı.
+
+290
+01:20:30,452 --> 01:20:46,032
+Bilmem kaçtı, %1'e çıktı, sonra geri indirildi. Bunlar fonksiyon olsaydı, fonksiyonlar sürekli zaman içinde daha bile belki de değişmek zorunda kalacaktı. Fakat bu anlayın bankacılık uygulamasına baktığınızda sizin aslında kavramlarınız değişmiyor. Yani hesap dediğiniz kavram değişmiyor.
+
+291
+01:20:46,547 --> 01:20:59,688
+Müşteri dediğiniz kavram değişmiyor. Bunların davranışları aslında değişmiyor. Yani hizmet değişmiyor. Sadece hizmetin içeriğinde bazı değişiklikler. Yani fonksiyonitesinde değişiklikler oluyor. İşte burada da yine fonksiyon değişikliklerinden bahsediyoruz.
+
+292
+01:21:00,532 --> 01:21:14,492
+Aslında temel nokta şu, bizim yazılımımızdaki nesneler her zaman için kavramsal ve kaynakları olduğu için, gerçek dünya karşılıkları olduğu için fonksiyonlardan çok daha kararlı yapılardır.
+
+293
+01:21:14,592 --> 01:21:25,772
+Yani daha az değişen, değişime daha az uluyan yapılardır. Bu yüzden de nesne kullanırsanız daha sürdürülebilir tasarım yaparsınız. Daha sürdürülebilir tasarımlarla çözümünüzü...
+
+294
+01:21:26,515 --> 01:21:30,796
+İfade edip uzun süre yaşamasını sağlayabilirsiniz.
+
+295
+01:21:31,412 --> 01:21:47,932
+Peki, nesne yönelik analiz ve tasarım nedir? Dedik ki, yapısal analiz ve tasarım yapıyorsanız, burada işlevselliğe, fonksiyonları bulmaya yönelmeniz gerekir. Neler hesaplamanız gerektiği üzerine yoğunlaşmanız gerekir. Veriler ise genellikle ikinci plandadır. Daha çok işlevsellik ön plandadır.
+
+296
+01:21:47,932 --> 01:21:54,872
+Nesne yönelik yaparken siz veri nesnelerini ilk planda öne alırsınız ve bunları ilk elde alırsınız.
+
+297
+01:21:55,283 --> 01:22:04,363
+Önce kavramlarınız, bunların özellikleri ve bunların hangi veri tiplerinde olacağını modellerseniz, aslında sonradan bunlara davranışlarını eklersiniz.
+
+298
+01:22:04,363 --> 01:22:16,983
+Yani aslında tam ters işlev yerine kavram bulmaya çalışmak, birbiriyle aslında aynı noktadan başlıyor gibi görünse de tamamen farklı kulvarlarda, zıt yönlerde ilerleyen iki farklı analiz modeli.
+
+299
+01:22:18,228 --> 01:22:35,208
+Şimdi ne yapacağız? İlk önce sistemimizin gereksinim dokümanlarını almamız lazım. Bunları bir sistemin metin ifadesi adında verebiliriz. Eğer yoksa biz oluşturacağız tabii ki. SRS dokümanı mesela ya da bir yerdeyden yola çıkarak SRS dokümanını mutlaka bir yerden almamız ya da oluşturmamız gerekiyor.
+
+300
+01:22:36,827 --> 01:22:39,108
+Bunun için de senaryolarımızın olduğunu.
+
+301
+01:22:39,891 --> 01:23:06,832
+Düşünelim, Yuskeslerimiz var. Yuskeslerdeki isim, fiil, sıfat gibi kelime tiplerini araştırırız, buluruz. Bunların altını çizeriz. Bildiğiniz ortaokul, edebiyat, dil bilgisi dersine geri döneriz. Ve sonrasında ben bu senaryoların içindeki isimleri kullanarak sınıflara erişirim. Sıfatları kullanarak bunların özelliklerine erişirim. Eylem bildiren fiillerle işlemleri bulurum.
+
+302
+01:23:07,444 --> 01:23:35,104
+Durum bildiren fiillerle de ilişkileri bulurum. Temelde yaptığımız analiz sonucundaki modellemeye bu şekilde ulaşabiliriz. Sonra bir sınıf modeli oluşturduk. Bunu gözden geçirebiliriz müşteriyle birlikte. Adım adım iteratif olarak da ilerleyebiliriz. Kolaymış hocam ya isim, sıfat, fiil. Ondan sonra durum, eylem fiilleri. O çok güzel. Sınıflar, özellikleri, davranışları ve bunların ilişkilerini bulduk. Ne kadar güzel diyebilirsiniz.
+
+303
+01:23:35,444 --> 01:23:41,444
+Ancak düşünerek çözmeniz gereken çözüm bulabileceğiniz pek çok noktası olacaktır.
+
+304
+01:23:42,163 --> 01:24:04,224
+Şimdi hemen çok basit bir örnek yapalım. Elimizde bir tane tree var, ağaç yapısı. Bu ağaç yapısında kaç tane yaprak var onu saymaya çalışalım. Senaryo şu şekilde. Önce ağaç nedir? Ağaçlar bir graftır fakat özel graftır. Nedir herhangi bir graftan farkı? Kapalı döngü, çevrim, içermemeleridir. Bu gibi bir yapılara, veri yapılarına ağaç veri yapısı adını veriyoruz.
+
+305
+01:24:10,163 --> 01:24:38,123
+Bir, üç düğümü olabilir. Böyle bir tanım yapılmış. Yani üçte doğru bir yerden bağlı olacaksınız. İki, üç yere bağlı olamazsınız. Fakat altınızda birden fazla olabilir. Binary tree gibi değil. Farklı sayıda çocuk ya da yaprak ya da düğüm sahibi olabilirsiniz. Yaprak ne demektir? Altında sıfır tane eğer düğüm varsa bir düğümün bir yaprak düğümüdür. Son düğümdür. Onun daha altında bir düğüm yer almamaktadır gibi bir tanımı.
+
+306
+01:24:38,163 --> 01:24:56,064
+Şimdi, bunun algoritması şu şekilde. Algoritmanın senaryolaştırmasını yaptım sizin için. O ana kadar saymadığınız ağaç parçalarını alıp bir yığına koyarsınız. Boş bir yığına koyarsınız. Tabii ki yığının boş olması gerekiyor. Sonra yapraklığın sayıcının, bir tane sayıcı ihtiyacım var. Sıfırlarım.
+
+307
+01:24:56,627 --> 01:25:06,827
+Ve elimdeki yığın boş olmadığı sürece, yani hala saymam gereken ağaç parçaları olduğu sürece ondan yığından bir tane ağacı alırım, incelerim.
+
+308
+01:25:06,987 --> 01:25:11,907
+Bu da işte tek aslında. Eğer bu ağaçta tek yaprak varsa ne yaparım?
+
+309
+01:25:11,907 --> 01:25:19,167
+Haa, bu şey, çocuğu yok bunun, alt ağacı yok, o zaman bu bir yapraktır. Ne yapacağım? Sayacı arttırırım ve onu diskart ederim.
+
+310
+01:25:19,287 --> 01:25:21,587
+Yani o parçayı saydım diye atarım giderim.
+
+311
+01:25:21,876 --> 01:25:48,796
+Siteye bir daha koymamam lazım. İki tane alt ağacı varsa o zaman sol ve sağı ayırmam gerekir. Solu tekrar yığına, sağı tekrar yığına eklemem gerekir ki onları da inceleyebileyim. Ne zaman benim yanımdaki bütün ağaç parçalarını incelerim ve şuradaki dördüncü yanımdaki diskart işlemini, atma işlemini gerçekleştiririm. Artık elimde sayılabilecek alt ağaç parçası kalmamıştır. Sadece bütün yaprakları, şurada sayıcı arttır arttırı saymışımdır.
+
+312
+01:25:49,876 --> 01:26:16,836
+Kaç tane yaprak düğümü olduğunu bu şekilde hesaplarım. Böyle basit. Sadece şey hani senaryonun ana akışı gibi düşünebilirsiniz burayı. Şimdi ne yapacağız burada? İlk olarak yapmamız gereken şey dediğimiz gibi isimleri, şeyleri, sıfatları falan işaretlemek. Ağaç parçaları. Değil mi? İsim tamlaması. Yığın. Boş yığın. Boş da sıfatı farkındaysanız. Yapraklar.
+
+313
+01:26:17,216 --> 01:26:34,456
+Sayaç, sıfır. Sıfır da sonuçta bir isim. Yığını işaretledik. Boş onun sıfatı dedik. Ağaç alıp inceleyin. Ağaç parçası dedik. Tamam. Ağaçta tek yaprak varsa yaprak.
+
+314
+01:26:35,091 --> 01:27:00,371
+Yapraklığınız sayacı, sayacı işaretledik. Ağacı atın. İki tane alt ağaç varsa dedik. Peki onu da işaretleyelim. Solu ve sağı ayırıp sol ağaç, sağ ağaç işaretleyebilirsiniz. İkisini de yığına ekleyin. Yığını işaretledik. Yığın boşaldığında, demek ki yığın boşalma durumu ya da özelliği var. Yaprak sayısını gösterin. Sayı. Tamam. Demek ki sayıçtaki değer belki de var.
+
+315
+01:27:00,851 --> 01:27:21,492
+Ne yapacağız? Şimdi buradaki isimleri gördüğünüz gibi işaretledik. Bazı kelimelerin tekrar ettiğini görüyoruz. Ağaç, ağaç, ağaç ya da alt ağaç, sol ağaç, sağ ağaç. Bazı kelimelerin kökü ortak. Bazıları çok yakın birbirine ve aslında aynı konsepti söylüyor. Yaprak, yapraklar. Bu aynı şey.
+
+316
+01:27:21,855 --> 01:27:30,735
+Sonra sayaç sayı, acaba bu tek bir şey mi? Yoksa sayı başka bir şey, sayaç başka bir şey mi? Bunları hep düşünerek bulmamız gerekecek.
+
+317
+01:27:32,212 --> 01:27:56,912
+Peki, elimizde neler var işaret dediğimiz? Yığın, parçalar, ağaç, alt ağaç, sayı, sayaç, yaprak, yapraklar sıfır. Temizlememiz gerekiyor. Şimdi bakın, buradan böyle başlıyoruz. Yığın, ilki. Yığın sanki önemli bir şey. Çünkü o yığına bir şey koyuyorum, yığından bir şey çekiyorum. Değil mi? Aslında bu bir stek yapısı. Demek ki bununla ilgili bir kavram oluşturmam ya da tutmam gerekecek.
+
+318
+01:27:57,332 --> 01:28:22,472
+İkincisi parça. Parça dediğimiz şey aslında bir ağaç ya da bir alt ağaç. Yani parça yerine alt ağaç kullansak sanki daha iyi olacak. Bu daha iyi açıklıyor bu kavramı. Ağaç, bu da önemli şu anda dursun. Sayaç, bir şeyleri saymamız sayıcı arttırmamız gerekiyor. Bu da dursun. Yaprak. Yaprak neydi? Altında alt ağaç olmayan ağaçtı değil mi? Aslında o da yeni bir ağaç. Bu da sanki özel bir ağaç isimlendirmesi gibi.
+
+319
+01:28:23,091 --> 01:28:30,952
+Büyük bir ihtimalle buna da ihtiyaç duymayacağız. Düğüm, şey yapabilirsiniz, bunu ekleyebilirsiniz. Mesela analist olarak.
+
+320
+01:28:31,380 --> 01:28:56,779
+Sizin senaryonuzda, gördüğünüz senaryoda böyle bir kelime yoktu. Hatta düşünmemişti. Ama siz mesela biliyorsunuz ki ağaçların düğümleri vardır. O zaman belki buraya düğüm diye bir kavram eklemek istediniz. Bu da belki alt ağaç ve yaprak gibi kavramların yerini alabilir. Eksik bir şey varsa bunları daha rahat görmenizi sağlayabilir. Bazen siz modele olmayan şeyleri de eklemek durumunda kalabilirsiniz.
+
+321
+01:28:59,380 --> 01:29:17,719
+Yani sayı çeşittir sıfır. Fakat yine modelde bir yeri var. Bir özelliğimizin ilk değerinin sıfır olması gerektiğini bir şekilde ifade ediyor. Unutmamamız lazım onu da. Silerken onu da silip atmayın. Onu ileride bir özellik değeri olarak kullanacağınızı unutmayın.
+
+322
+01:29:18,100 --> 01:29:42,820
+Hemen aday sınıflarınızdan bunları grupluyorsunuz. Üst kavramlar ya da daha genel kavramlar doğrudur şeklinde ya da daha iyi anlatanlar, ismi daha düzgün olanlar diyelim. Bu şekilde modelliyorsunuz. Şimdi buraya baktığımızda ben bir tane Counter görüyorum. Bir tane Leaf gördüm, yaprak. Bir tane Tree gördüm, bir de Pile gördüm. Pile dediğimiz Stack. Yığın. Adı özel, farklı olsun, Stack olmasın diye Pile yazdık.
+
+323
+01:29:46,003 --> 01:29:55,184
+Bunlar bizim sınıflarımız. Bakın hemen burada sınıf diagramı oluşmaya başladı. Nedir? Birbiriyle ilgili nesne grubunun tanımına sınıf şablon adını veriyoruz aslında.
+
+324
+01:29:57,583 --> 01:30:04,804
+Anlatımdan, senaryodan isimleri çizdim, gereksizleri eredim. Sonuçta böyle dört tane kavram bana yeterli olacaktır gibi geldi.
+
+325
+01:30:05,332 --> 01:30:32,532
+Tabii burada hiçbir sonuç kesin değil. Benimki doğru. Vay efendim bunun dışında başka bir model çıkartırsanız bu yanlış. Böyle bir şey söz konusu değil. İlk başta ilk derslerde söyledik ya tasarımı ben size öğretemem ancak siz onu öğrenebilirsiniz. Yapayapa daha iyi olacaktır. Deneyim bu konuda çok önemlidir demiştik. Yapayapa sonuçlarınızın daha gerçek dünyayı iyi modelleyen hale gelmesini sağlayabilirsiniz.
+
+326
+01:30:33,024 --> 01:30:44,944
+Süreçte ilerlediğiniz sürece, problem hakkında daha fazla bilgi sahibi olduğunuz sürece de bu modeliniz, analiz modeli bile olsa yani problemi gösterdiğiniz, anlamanızı gösterdiğiniz model bile olsa sürekli revizyona uğrayacaktır.
+
+327
+01:30:45,460 --> 01:31:06,340
+Ve bir yandan da analist mesela buradaki eksikleri gidererek, eksikler varsa gereksinimlerde, müşterinin gerçekten istediği modeli oluşturmak için çaba sarf etmelidir. Bunun için sürekli müşterilere geri dönmesi gerekebilir. Müşteriler çoğu zaman sizin sorduğunuz şeyleri düşünmemiştir bile. Ha öyle mi, onun da mı oluyordu falan şeklinde bile cevap verebilirler.
+
+328
+01:31:13,460 --> 01:31:20,380
+Çözüm tam olarak beklediğimden fazlası oldu şeklinde. Size teşekkür edebilirler doğal olarak.
+
+329
+01:31:20,948 --> 01:31:45,028
+Bu artımlı bir süreçtir. Bir kere de doğru bir analiz modeli çıkartamazsınız. Artımlı artımlı devam edersiniz ve sonuçta bir yerde, bir ortak anlaşılmış noktada bu kadar oldu. Tamam, bizim problem uzayımız iyice, yeterince modellendi şeklinde son verebilirsiniz. Buradaki problem uzayını, detaylarını ortaya çıkartmakta. Yani bir yerde durmak lazım aslında. Yeteri kadar detaylar.
+
+330
+01:31:45,876 --> 01:32:04,536
+Peki, özellikleri nasıl bulacağız? Dedik ki sıfatlara bakacağız. Etkiledikleri isimlerle birlikte sıfatları işaretliyoruz. Burada işaretlen bir şey var. Boş yığın, yaprakların sayacı, tek yaprak, sol ağaç, sağ ağaç, iki ağaç. Bunlar da özelliklerimiz olabilir.
+
+331
+01:32:05,536 --> 01:32:11,536
+Baktığımızda yığının boş olması. Yani her sıfat özellik olacak diye bir şey yok. Bunu eleyebiliriz.
+
+332
+01:32:12,319 --> 01:32:18,380
+Yani edatlardan da ağaçların parçaları, yaprakların sayısı gibi şeylerden de bir şeyler elde edebilirsiniz.
+
+333
+01:32:18,619 --> 01:32:20,000
+Yine özellikleri bulabilirsiniz.
+
+334
+01:32:20,640 --> 01:32:25,060
+Ağaca baktığınızda iki ağaç, sol ağaç, sağ ağaç. İki ağaç biraz şey. Zaten sol ve sağ var.
+
+335
+01:32:25,640 --> 01:32:28,720
+Demek ki benim belki sol ağaç ve sağ ağaç şeklinde bir şey olması lazım.
+
+336
+01:32:30,980 --> 01:32:37,699
+Yaprakların tek olması demiştik. Tek yaprak. Peki. Parça. Parça da ağacın bir parçası.
+
+337
+01:32:37,699 --> 01:32:40,300
+O zaman aslında ağacın parçası kendi içinde.
+
+338
+01:32:40,319 --> 01:32:46,760
+Bu şekilde modelleyebiliriz. Geldiğimizde baktığımızda sayacımızın içinde bir sayı var.
+
+339
+01:32:47,507 --> 01:33:11,427
+Ağacımızın içinde sol ağaç, sağ ağaç, yaprak ve parça var. Parça zaten uçacak büyük bir ihtimalle. Ve sitemizin ya da pile dediğimiz sınıfımızın boş olma durumu var. Değil mi? Boş mu değil mi? Bir şekilde bunu is empty diye true false tutabilmemiz lazım, sorabilmemiz lazım. O zaman boş olma durumunu da bir özellik olarak burada ekledik.
+
+340
+01:33:15,507 --> 01:33:17,547
+Hangi özellikler yer alır? Bunları gördük.
+
+341
+01:33:18,188 --> 01:33:22,967
+Sonrasında da bunları artık davranışlarını görebildiğimiz davranışlarını ortaya çıkartmak,
+
+342
+01:33:23,087 --> 01:33:26,927
+bilgilerini atamak ve aralarındaki ilişkileri ortaya çıkartmamız gerekecek.
+
+343
+01:33:27,087 --> 01:33:28,627
+Bunun için de fiillere bakacağız dedik.
+
+344
+01:33:30,087 --> 01:33:32,827
+İşlem dediğimiz şeyler aslında eylem fiilleri nedir?
+
+345
+01:33:32,827 --> 01:33:37,567
+Nesnelerin sağladığı, tam olarak söylemek gerekirse bilişimsel servisler.
+
+346
+01:33:38,108 --> 01:33:40,067
+Yani bunların hepsine biz işlem adını vereceğiz.
+
+347
+01:33:43,859 --> 01:33:50,699
+Durum fiilleri de nesneleri değil durumları bildirecek ve bunlar da aralardaki çizgileri oluşturmamızı sağlayacak.
+
+348
+01:33:51,039 --> 01:34:03,939
+Şimdi saymak, sayılmamış bir ağaç parçası, koymak, koyun, yapmak, almak, incelemek, arttırmak, atmak, ayırmak, eklemek, göstermek.
+
+349
+01:34:04,340 --> 01:34:09,980
+Bu şekilde fiiller aslında bizim davranışlarımız olarak modelde yer alacak.
+
+350
+01:34:10,120 --> 01:34:15,760
+Ama kim nerede duracak? Hangi işi kim yapacak? Mesela burada yığını kim tutacak?
+
+351
+01:34:16,260 --> 01:34:22,920
+Tabii ki yığını doğal olarak sizin bir sistem sınıfınızın ya da bir ana metodunuzun olduğu bir sınıfa ihtiyacınız var.
+
+352
+01:34:23,340 --> 01:34:26,680
+Tasardığınız her sistemde aslında sistemde bir sınıf olarak yer alabilir.
+
+353
+01:34:27,120 --> 01:34:32,320
+Main, dediğim gibi main class ya da main metodun nerede olduğu.
+
+354
+01:34:32,340 --> 01:34:54,940
+Buna göre bir ana sistem sınıfı koyabilirsiniz. Genellikle modelde göstermeyiz onu ama kodlarken gerçekleştirme aşamasında mutlaka buna doğal olarak bir başlangıç için ihtiyaç duyarız. Sonra saymak dedik. Saymayı kim yapacak? Sayılmamış aslında bir durum değil mi? Sayılmış ağaç, sayılmamış ağaç. Bu bir eylem değil. Ama bir sayma işi var.
+
+355
+01:34:57,619 --> 01:35:07,399
+Kim neyi sayacak? Mesela sayaç yaprakları sayacak. Ağaç mı kendini saysın? Sayaç mı ağacı saysın? Bu tamamen sizin elinizde.
+
+356
+01:35:07,712 --> 01:35:32,052
+Nasıl problemi anlayıp anladığınızı göstereceksiniz. Ben bu sorumluluğu sayaca da verebilirim ki sonuçta onun ismi sayarsa bir şeyleri sayması beklenir. Ya da ağaca da verebilirim. Ağaç kendi kendine saysın, raporlasın da diyebilirsiniz. Ama o zaman da ağaç kendi içinde belki de gereksiz işler yapmaya başlayacak. Hani iyi uyum, az bağımlılık falan demiştik ya ilk hafta. Onları bir gözden geçirip buradaki kararları vermenizde fayda var.
+
+357
+01:35:33,203 --> 01:35:52,263
+Ağacı ya da ağacın parçalarına, neyse left subtree, right subtree'leri, yığına kim koyacak? Pileç içine ya da stack içine kim koyacak? Oradan kim çekecek? Bunlar stack, hani push ve pop işlemleri kimin sorumluluğu? Doğal olarak yığının sorumluluğu. Yığına ne koyacak? Argüman olarak aldığı ağaç nesnesini koyacak aslında.
+
+358
+01:35:52,787 --> 01:36:14,127
+Yani push, pop gibi, insert ya da extract gibi artık isimlendirme farkı size kalmış. Bu gibi davranışlar sonuçta oradaki stack yapısı neyse ya da pile dediğimiz sınıf neyse onun sorumlu olması beklenir. Sayacı kim sıfır yapacak, sayacı kim arttıracak ve sayaç dediğimize göre zaten kendisinin arttırması, kendi işinin uzmanı olarak arttırması daha iyi olacaktır.
+
+359
+01:36:14,644 --> 01:36:32,524
+Ağacı kim inceleyecek? Sistem mi inceleyecek? Yoksa yığın mı inceleyecek? Belki de yığın inceleyecek. Size kalmış. Yine burada bir şekilde birine bu sorumluluğu atamanız gerekiyor ama bir davranış var. Şu anda illa hemen şimdi atamak zorunda değilsiniz. İleride de davranışları modellerken de bu detayı ekleyebilirsiniz.
+
+360
+01:36:33,171 --> 01:36:51,731
+Sonra ağacı kim yok edecek? Yani diskart edecek. Sayaç mı edecek? Yığın kendisi mi edecek? Ne olacak? Ya da ağacı kim sol ve sağ diye bölecek? Bu gibi yapılması gereken işlerin kimlere atanması gerektiğini düşünüp bulmamız gerekiyor. Mesela ağacın kendini bölmesi, ağacı kendini destroy etmesi daha mantıklı.
+
+361
+01:36:52,083 --> 01:37:13,963
+Site'in push ve pop yapması, hani put, get yapması bir şekilde kendi sorumluluğun olsa daha iyi olur. Sayacın artması ve sayacın bir değeri göstermesi olabilir. Dediğim gibi tam olarak bulabildiklerimizi ya da gösterebildiklerimizi burada sınıf modelimizin içine davranış olarak eklemekte fayda var. Eğer bilebiliyorsak parametreleri...
+
+362
+01:37:14,228 --> 01:37:19,847
+Veri tiplerini, parametrelerini ve hatta dönüş değerlerini de belirtebiliriz.
+
+363
+01:37:20,347 --> 01:37:26,427
+Ya da şimdilik bu kadar detay analizde benim için yeterlidir de diyebilirsiniz. Bu da size kalmış.
+
+364
+01:37:26,815 --> 01:37:45,255
+Esas amacımız, tekrar söylüyorum, problemin parçaları nelerdir? Hangi gerçek dünya kavramlarını ben yazılım olarak modellemeliyim? Bunları hangi özelliklerle gösterebilirim? Hangi servisleri bunlar, bu kavramlar hangi servisleri aslında sunacak? Bu gibi cevapları bulup ortaya çıkarmaya çalışıyoruz.
+
+365
+01:37:45,844 --> 01:37:51,923
+Son olarak beşinci adımda da durum bildirenlerden de bağlantıları, ilişkileri bulacağımızı söylemiştik.
+
+366
+01:37:52,304 --> 01:37:57,864
+Hatırlarsanız üç çeşit bağlantıdan bahsettik. Genelleştirmeye, birleştirmeye ve ilişki demiştik.
+
+367
+01:37:57,864 --> 01:38:08,364
+Şimdi Generalization ya da Specialization, tersden okursanız, alt sınıfın nesnelerinin üst sınıfın türünde olması demektir.
+
+368
+01:38:09,855 --> 01:38:27,796
+Bir ağaçtır. Yani ağaç bir genellemedir. Daha genel bir kavramdır. Üst kümedir. Daha böyle kapsayıcıdır gibi düşünebilirsiniz. Lif daha özeldir. Bunun özelleşmiş bir halidir. Bunu işte genelleştirme, özelleştirme ilişkisi şeklinde ifade ederiz.
+
+369
+01:38:28,275 --> 01:38:38,195
+Normalde içinde de olabilir ama biz bunu dışarı çıkıp özellikle alt bir küme olduğunu gösterme ihtiyacı duyuyorsak bu şekilde bir genelleştirme ilişkisi kullanmamız yerinde olacaktır.
+
+370
+01:38:38,195 --> 01:38:50,055
+İşte mesela üst sınıf araçtır, araba onun bir halidir, otobüs bir halidir, ne bileyim motor yat o bir araçtır gibi uçak bir araçtır. Bunların hepsi araçtır.
+
+371
+01:38:51,315 --> 01:38:53,155
+İşte ağaç yaprak da burada ikinci bir örnek.
+
+372
+01:38:54,068 --> 01:39:17,788
+Bir diğer bağlantı ilişki aggregation, parça bütün ilişkisidir. Bir çeşit böyle bir X koleksiyonu, X grubu diyebilirsiniz. Mesela Pile bizim Stake'imiz. Stake neden oluşuyordu bizim Stake'imiz? Özel bir Stake. Sadece ağaçları tutuyordu. O zaman Pile Consist of Tree şeklinde burada böyle bir gene birleştirme aggregation ilişkisiyle bunları gösterebilirsiniz. Hatta işte Pile Consist of Tree, Tree Consist of Tree. Ne oldu?
+
+373
+01:39:18,256 --> 01:39:24,496
+Aslında ağacın alt ağaçları, parçaları vardı ya, işte onu da bu şekilde kavramı modellemiş, göstermiş oldunuz.
+
+374
+01:39:25,140 --> 01:39:45,820
+Durumları bildiren fiillerle de kim kimle konuşacak ya da kim kime hizmet verecek, kim kimin metodunu çağıracak bunları ortaya çıkartırsınız. Bunların bağlantıları isimlendirebilirsiniz. Böylece anlamlı hale gelir. Örneğin işte öğrenci okur üniversitede. Öğrenci ve üniversite sınıfları arasında bir tane okuma ilişkisi gösterebilirsiniz.
+
+375
+01:39:45,820 --> 01:39:49,699
+Şimdi biz buraya baktığımızda sayaç sayar yaprakları.
+
+376
+01:39:50,032 --> 01:39:53,132
+Burada demek ki sayaç ve yaprak arasında bir ilişki olması lazım.
+
+377
+01:39:53,872 --> 01:40:02,012
+Yaprak ağacın özel bir halidir dedik. Onu bir alt sınıf şeklinde modelledik. Genelleştirme yaptık. Daha doğrusu buradan okursanız da özelleştirme yaptık.
+
+378
+01:40:02,912 --> 01:40:12,612
+Biraz önceki slide'da şurada gösterdiğim yığınımız ağaçlardan oluşur, ağaçlar da ağaçlardan oluşur. Yapısı da şurada tam olarak birebir karşınızda.
+
+379
+01:40:12,944 --> 01:40:29,423
+Daha önceden çıkarttığımız özellikleri ve davranışlarını da tekrar gösterdiğimizde buyurun size ağaçları saymak için, ağaçtaki yaprak sayısını saymak için yapmanız gereken çözümdeki ya da sistemdeki bileşenler, parçalar bunlar olmalıdır.
+
+380
+01:40:29,423 --> 01:40:40,944
+Ben bu şekilde modelledim diyorum. Dediğim gibi bu gerçek mi, tam doğru mu? Hiç kimse bunun tam doğru olduğunu söyleyemez. Yanlış olduğunu da söyleyemez. Benim anlama şeklimle, benim problemi modelleme şeklimle...
+
+381
+01:40:40,944 --> 01:40:49,324
+Bu şekilde ifade ettim. Bunu gösteriyorum. Mesela siz belki de şuradaki leaf'i hiç koymayacaktınız. Zaten tree yeterli diyecektiniz.
+
+382
+01:40:49,884 --> 01:40:55,904
+Ve bunu direkt olarak counter'ı tree'ye bağlayacaktınız belki. Bu da bir çözümdür. Bir şey değil. Olabilir.
+
+383
+01:40:56,304 --> 01:41:03,083
+Ama burada yaprağın özel bir şeyleri olduğunu düşündüğüm için ben bunun özelleştiğini özellikle göstererek ifade etmek istedim.
+
+384
+01:41:06,547 --> 01:41:21,907
+Arada söyledik ama sonuçta her şey aslında bir sistem sınıfından başlıyor. Yani bir ağaç yaprak sayma sistemi diye bir tane sınıf var. Bu bizim tamamen sistem sınıfımız gibi düşünebilirsiniz. Ama genellikle diagramlarda bunu göstermeyiz.
+
+385
+01:41:24,083 --> 01:41:36,663
+Tipik gereksinim dokümanları böyle 6 tane cümleden oluşmaz. Tek bir davranış var burada. Sadece sayma işleri için 4 tane kavram bulduk ve bunların arasındaki ilişkileri ve davranışları ve özelliklerini gösterdik.
+
+386
+01:41:36,663 --> 01:41:51,344
+Ama tabii normalde bu dokümanlar yüzlerce sayfa ve pek çok özel kelimeden oluşur. Ve aslında biz algoritmik bir çözüm detayını sizinle burada paylaşmış olduk. Normalde tabii böyle algoritmik çözüm yolları yer almaz. Sadece problem tanımları vardır gereksinim dokümanlarında.
+
+387
+01:41:52,083 --> 01:42:02,764
+Senaryolaştırılmalarını, yani yürüt kesimlerinin oluşturulması da belki size kalacaktır yine ya da analiz tarafına kalacaktır. Bunların yerine getirilmeleri, yapılmaları gerekiyor. Bu başka türlü olmaz.
+
+388
+01:42:03,231 --> 01:42:30,951
+Peki, bir örnek üzerinden hızlıca analiz nasıl yapılır? Sınıflar ya da kavramlar nasıl ortaya çıkartılır? İlişkileri, özellikleri görebildiğimiz kadarıyla davranışları nelerdir? Kim kimin genellidir, özelidir ya da kim kimin parçasıdır, bütün ödür şeklindeki bir araya getirmelerle birlikte bir modelin kavramsat ya da problem uzayı modellemesinin nasıl yapılması gerektiğiyle ilgili hızlı bir giriş yapmış.
+
+389
+01:42:31,231 --> 01:42:54,572
+Şimdi sınıf modellerine biraz daha detaylı bakalım. UML'in sınıf modellerine. Dediğim gibi birkaç belki görmediğiniz detay olabilir buralarda. UML'le tabii ki en popüler tarafı sınıf modelleri. Analiz modelini nasıl ifade edeceğinizde bir UML kavramsat sınıf diagramıyla, conceptual class diagramla çok rahat ifade edebiliyorsunuz ama bir yandan da karmaşık.
+
+390
+01:42:56,275 --> 01:43:14,755
+Neyi ne kadar ayıracağınızı ve kimin nerede durması gerektiğini, nasıl bağlanması gerektiğini hissederek bulmanız gerekiyor çoğu zaman. Biraz da aslında bu yüzden de karmaşık bir modelleme. Çünkü olmayan bir şeyi düşünüp ortaya koyduğunuz, resmini çizdiğiniz model buradaki sınıf modeli.
+
+391
+01:43:15,475 --> 01:43:20,055
+Şimdi tabii mümkün olunca bütün yönlerine değmeye çalışacağız bu ders kapsamında.
+
+392
+01:43:20,463 --> 01:43:36,903
+Bunlar statik yapı diagramı olarak da bilinir demiştik hatırlarsanız bir saat önce. Bunun dışında neler olabilir bir sınıf diagramında? Arayüzler olabilir. İnterfaysleriniz yer alabilir, nesneler yer alabilir yeri geldiğinde ya da bunların nesne arası ilişkileri de yer alabilir.
+
+393
+01:43:37,903 --> 01:43:48,463
+Detaylarını merak ediyorsanız, UML'in referans manueline bakarak temel referans kaynağınız olsun. Buradan gerekli detayları, sınıflar dışında neler olabilir?
+
+394
+01:43:48,463 --> 01:44:15,644
+Bu konuda bir sınıf yapabileceğini inceleyebilirsiniz. Temelde sınıf, gördüğünüz gibi bir dikdörtgendir. Benzer örneklerin bir küme tanımıdır aslında, şablon tanımıdır. Neler biz sınıf olarak modelleriz normalde? Bir etki alanı, bir domeyndeki objeler varsa, bunlar bir grup oluşturuyorsa, birden fazla anlamlı nesne türetilip kullanılması uygulamanız için doğruysa, yani bunlar mantıklıysa, o zaman bunlar sınıf olabilir.
+
+395
+01:44:18,547 --> 01:44:36,028
+Roller sınıf olabilir, olaylar sınıf olabilir, hatta etkileşimler de yine sınıf olabilir. Bazı etkileşimler kendi özelliklerini ve kendi davranışlarını taşıdığı için ayrı bir sınıf olarak modellenebilir. Yani çizgiyi de aslında bir sınıf haline getirebilirsiniz. Peki sınıf arasındaki çizgiyi.
+
+396
+01:44:37,011 --> 01:45:02,832
+İsimlerle bunları nasıl bulacağımızın üzerinden hızlıca geçtik. Genellikle üç parçalı bir dikdörtgenle gösterilir. Olmazsa olmaz kısmı burasıdır. Window'dur. Mesela buradaki sınıfın adı. Eğer biraz sonra gelip şu an geçeyim. Eğik yazıldığında soyut sınıf anlamına gelir. Bunun dışında özellikleri ikinci kutuda, şuradaki alanda, davranışları da üçüncü alanda vermeye gayret ederiz.
+
+397
+01:45:03,507 --> 01:45:17,707
+Bu şekilde ifade ederiz. Bunun dışında sorumluluklar ve aykırı durumlar ve başka şeyler yaptırmak istediğiniz, aktarmak istediğiniz şeyler varsa modelinizde bunları da ayrı dikdörtgenler içinde gösterebilirsiniz. Bir örneğini size göstereceğim.
+
+398
+01:45:18,000 --> 01:45:40,780
+Mutlaka bir isim olması lazım dedik ve EİKS'e ya da bir abstrakt stereotip ile verildiyse bu bir soyut sınıftır. Soyut sınıf şablon kontratıdır. Kendisinden asla örnek türemez ama alt sınıfların özelliklerini tanımlar. Temel kavram bu şekilde. Ortak özellikleri olan alakalı sınıflarınız varsa o zaman soyut sınıf kullanmak mantıklı olabilir. Kendisinden nesne türemeyecek şekilde.
+
+399
+01:45:41,300 --> 01:46:01,480
+Bunun dışında stereotipler, klişe diyeyim, stereotipin tam Türkçesi klişe. Bunları kullanarak da temel modelleme dilini genişletebilirsiniz. Başka tanımlar yine meta modeli ekleyerek yeni stereotipler yaratabilirsiniz. Bu size kalmış ya da ileri modelleme tekniklerine ihtiyaç duyarsanız kullanabileceğiniz bir araç.
+
+400
+01:46:02,195 --> 01:46:14,916
+Özellikler ya da nitelikler. Bunlar sınıfların nitelikleri, özellikleri ve davranışlarıdır. Sınıflar bildiğimiz gibi biraz önceki gerçek hayat örneğinden yola çıkarak mümkün olduğunca yazılıma taşınmaya çalışırlar.
+
+401
+01:46:16,195 --> 01:46:25,095
+Ve bunlar da özellikleri ya da gerçek hayat nesnesinin nitelikleri neyse bunların değişkenli olarak özellik.
+
+402
+01:46:25,779 --> 01:46:47,599
+Metot olarak da davranışlarını göstermeye ya da şablon içinde bulundurmaya çalışırız. İlk olarak özelliklerine bakalım. Yani attribute'lerine bakalım. Attribute alanında hızlıca neler söyleriz? Tipini, adını ve erişim türlerini söyleriz. Erişim türleri artı koyduysanız genel görünür demektir. Yani diğer sınıflara görünür.
+
+403
+01:46:48,180 --> 01:46:56,079
+Opsiyonel ama başta görebildiğiniz kadarını eklerseniz iyi olur. Ne kadar detaylı modellerseniz aslında o kadar da faydalı olur. İleride tabi ki değiştirebilirsiniz.
+
+404
+01:46:56,860 --> 01:47:05,119
+Eksi görüyorsanız özelliğin başında bu özel görünür demektir. Yani benim kendi içimde sakladığım özel bir özellik. Bunu dışarıya vermiyorum, göstermiyorum.
+
+405
+01:47:06,655 --> 01:47:33,576
+Diyez görürseniz, yani bu şarp işareti, C şarpı şarpı gibi, bu korumalı görünür demektir. Yani sadece alt sınıflarım görebilir, başkaları göremez, dışarıdakiler göremez ama benden türeyen alt sınıflar, beni eksen edenler bunu görebilir demektir. Bir de tilde vardır. Bu da paket kapsamında görünürlük demektir. Aynı paketin içinde ise görür, başka paketlerde ise görmez. Bu şekilde erişim türlerini sınıflandırıyoruz.
+
+406
+01:47:34,047 --> 01:48:00,068
+Aynı zamanda çoğullamaları da belirtebilirsiniz. Hani kaç tane olacağını, bundan en tane ya da en az bir tane ya da sıfır tane ya da bir tane şeklinde bunların çoğullamalarını da belirtebilirsiniz. Özelliklerin tiplerinin tanımlanması beklenir. Genellikle basit veri tipleri kullanmaya gayret edin. Çünkü karmaşık ise orada bir genelleştirme, pardon, aggregation yine vardır aslında ya da composition yapısı vardır. Onu da ayrı bir sınıf olarak modellemeniz gerekecektir.
+
+407
+01:48:00,851 --> 01:48:18,011
+Yine ilk değer atamaları varsa, mesela sayıcı sıfırlamıştık ya, böyle ilk değer ataması falan yapabilirsiniz. Ya da onun bir türetilen özellik olduğunu, yani aslında hesaplanarak oluşturulduğunu, direkt olarak değer atanmadığını da belirtebilirsiniz. Ne bileyim işte, faiz gibi düşünelim mesela.
+
+408
+01:48:18,547 --> 01:48:39,467
+Özel tanımlamalar yapmak istiyorsanız ki biraz önce şurada yapmıştık. Bakın yazarını ve test durumunu koymuştuk. Bunları da yine küme parantezleri içinde yapabilirsiniz. Eğer bir özelliği mesela küme parantez içinde frozen yazdıysanız bu sabit demektir. Constant demektir. Bunun özelliğini aldığı değer değişmez mesela. Bir tane örnek size.
+
+409
+01:48:40,692 --> 01:48:53,351
+Geldik üçüncü kutuya, yani kutu dikdörtgenin üçüncü parçasına. Burada da işlemlerimiz var. Burada işlemlerin bir kere isimlerini mutlaka anlamamız gerekiyor. Bunların da mantıklı isimler olması doğru olacaktır.
+
+410
+01:48:53,351 --> 01:49:05,572
+Biraz önce gördüğünüz işte ağacın siteye eklenmesi ya da çekilmesi ya da yok edilmesiyle alakalı tümkün olduğunca mantıklı isimlendirmeler, o eğilimi gösteren, sorumluluğu gösteren mantıklı isimlendirmeler vermeye çalıştık.
+
+411
+01:49:08,467 --> 01:49:36,467
+Metotların da görünürlükleri vardır. Aynı özelliklerdeki gibi bu görünürlükleri tanımlayabilirsiniz. Değer döndürüyorsa eğer geriye o zaman dönüş tipinin ne olduğunu belirtmeniz beklenir. Parametre varsa çalışmak için beklediği bunların tiplerini yine tanımlamanız beklenir. Hatta gerekirse ilk diyaretaması ya da bunun içeri doğru dışarı doğru parametre olduğu hani call by reference, call by value gibi özellikler kullanacaksanız onları bile burada tanımlayabilirsiniz. Yine aynı şekilde özel tanımlayabilirsiniz.
+
+412
+01:49:36,467 --> 01:50:00,000
+Mesela bu bir query metodudur. Bu bir concurrent metodudur ya da bir abstract metodudur şeklinde tanımlamaları da yine küme parantezi kullanarak yapabilirsiniz. Bir de sınıf kapsamı vardır. Bu da tekil nesneleri ait değil de direkt sınıfla alakalı. Örneğin bir sınıfınızdan kaç tane nesne türettiğinizi sorgulamak istiyorsunuz. Bu gibi işlemleri de yine sınıf kapsamı şeklinde burada ifade ediyoruz.
+
+413
+01:50:00,000 --> 01:50:28,000
+İlk adet edebilirsiniz. Hemen örnek sınıflara bakacak olursak, işte bir dikdörtgen sınıfı var. Gördüğünüz gibi iki tane noktayla ben dikdörtgeni tanımlayabilirim. P1 ve P2 pointleriyle. Point tabi başka bir nesne aslında, başka bir sınıf. Onu da bir yerde tanımlıyor olmam lazım. Sonrasında bakın bir stereotiple konstraktör vermişiz. Konstraktör kendisiyle aynı isimde. Ne lazımmış? P1 point tipinde, P2 point tipinde iki tane parametre bekliyormuş bizden.
+
+414
+01:50:28,000 --> 01:50:55,980
+Sonra sorgu metotları varmış. Mesela alanını hesaplamak ve geriye bir gerçek sayı döndürüyormuş. Ya da işte dikdörtgenin oranını hesaplamak. 4'e 3, 16'ya 9 muhabbeti var ya onun gibi düşünmüştü. Ne kadar basık olduğunu. Onu da bir real sayı olarak geri döndürüyormuş. Başka başka şeyler. Update metotları. Mesela move. Delta kadar kaydırabiliyorsunuz. Ya da belirli bir oran verdiğinizde, scale oranı. Rectangle'ın işte P1, P2 pointleri.
+
+415
+01:50:56,000 --> 01:51:07,039
+Mesela P2 pointini değiştiriyorsunuz. Bunlar da sizin güncelleme sınıflarınız, özelliklerinizi değiştirdiğiniz sınıflar olduğu için update stereo type ile burada verilmiş.
+
+416
+01:51:07,507 --> 01:51:29,807
+Başka bir sınıf. Bakın burada da mesela rezervasyon sınıfı var. Hiçbir şey verilmemiş, özelliği yok. Fakat ben mesela bu rezervasyon sınıfının garanti diye bir davranışının olmasını, iptal diye bir davranışının olmasını ve değiştirme, yeni bir tarihle değiştirme rezervasyonun değiştirme özelliğinin, işleminin olmasını istiyorum. Bunlar olacak demişim.
+
+417
+01:51:35,507 --> 01:51:53,047
+O zaman bunların da mutlaka şey yapılması, çarj edilmesi, faturasının kesilmesi gerekiyormuş. Ya da işte sadece rezervasyonun mevcut olan odalara yapılması, dolu olan odalara rezervasyon yapılmaması gerekiyormuş. Bunlar da onun sorumlulukları. Bunları bir şekilde garanti etmeniz lazım.
+
+418
+01:51:53,684 --> 01:52:20,064
+Ve exception'lar. Mesela işte In-Valty Credit Cardinal'ında ne yapacaksınız? Burada bir şeyler yapılması lazım. Bu gibi değişik tanımlar. Mesela bakın burada bir, iki, üç, dört tane sınıfın alanı var. Özelliklerini de koysaydık beşe çıkacaktı. Böyle sınıfını da görebilirsiniz. Yömel diagramlarında. Ya da sadece adını görebilirsiniz. Ya da sadece adı ve özelliklerini de görebilirsiniz. O andaki detaya göre farklı farklı sınıf modelleri oluşturabilirsiniz.
+
+419
+01:52:20,576 --> 01:52:46,376
+Bunların dışında sınıf modelinde ileri seviyede neler olabilir? İleri sınıf modelinde neler vardır? Bunları artık çoğunuz da biliyordur ama interfazler. Bir interfaz ile programınızı tip tanımlayabilirsiniz ve sisteme neler sunduğunu ve sistemden neler beklediğini tanımlayabilirsiniz. Implements diye yaptığımız interfaz şablonlarını hangilerinin karşılayacağı ya da hangilerine uymasını garanti ettiğiniz.
+
+420
+01:52:48,532 --> 01:53:04,392
+Parametrik sınıflar, Java Generic ya da C++ da template'ler olarak gerçeklenen yapılar. Bunlar da koleksiyonda yer alan, bu jenerik koleksiyonda yer alan sınıfların mesela türünün ne olduğunu bir parametre ile tanımlamanızı sağlarlar.
+
+421
+01:53:04,851 --> 01:53:26,091
+Nested Cluster olabilir. Sınıf içinde sınıflar olabilir. Yine UNL'de bu durumu tanımlayabilirsiniz. Bir de kompozit nesneler vardır. İçinde başka nesne barındıran nesneler. Bunları da yine detaylı olarak tanımlayabilirsiniz. Bunlar da standardın dışında ileri olarak sınıf modelinde görebileceğiniz diğer sınıflar.
+
+422
+01:53:27,507 --> 01:53:47,287
+İleri ilişki ve bağlantılara baktığımızda da, burada da işte mesela association'lar, generalization'lar ve dependents'leri görüyorsunuz. Bunlar ilişkilerde ve bağlantılarda da olabilir. Mesela insan, araç. İnsanlar araçları kullanır. Ya da araba dedik, araç dedik. Araba bir araçtır.
+
+423
+01:53:47,712 --> 01:54:10,832
+Bağımlılığa baktığımızda da mesela arabalar var, araçlar var ve araçların emisyon kanunları var. Bir şekilde emisyon kanunları değişirse arabaların da mesela bunu adapte edilmesi gerekebilir. Mesela görünmese de burada bir gizli de olsa bir bağımlılık var. Bu bağımlılığı da dependans olarak sınıf modellerinizde bir şekilde ilişki halinde mutlaka göstermeniz gerekir.
+
+424
+01:54:11,252 --> 01:54:24,572
+Başka ne olabilir? Şurada bir Composition görüyorsunuz. Şurada bir Aggregation görüyorsunuz. Bu ilişki yönlü olabilir ve bunun okuma yönü vardır. Mesela Contains. Polygon. Bir Polygon.
+
+425
+01:54:25,076 --> 01:54:43,496
+En az 3 tane veya daha fazla pointten oluşur. Bunların mutlaka sıralı olmalarını bekliyorsunuz. Ve bunların da bu rolde, bu ilişkide vertex olarak görünmelerini istiyorsunuz. Yani siz poligonun içindeki vertexler halinde point nesleler, sınıflarından türeyen neslilere erişeceksiniz.
+
+426
+01:54:43,496 --> 01:54:52,555
+Ya da burada bir bütünleşme görüyorsunuz. Bu da şu demektir. Poligonla grafik bandıl ayrılmaz, böyle mütemmim cüz derler ya, ayrılmaz bir bütün haldedir.
+
+427
+01:54:53,076 --> 01:55:08,043
+Bu şekilde örneğe bakalım.
+
+428
+01:55:08,083 --> 01:55:24,684
+İleri seviyede ilişkilerin tanımlarında da yön, rol, okuma için bunun ilişkinin ne olduğu ve çoğullamaları ve varsa kısıtlamaları gibi pek çok detayı da ilişkilerin içinde gösterebilirsiniz.
+
+429
+01:55:25,779 --> 01:55:43,859
+Hatta ve hatta ilişkileri ayrı sınıf olarak da modelleyebilirsiniz. Burada mesela bir örneğini görüyorsunuz. Burada bir insan var, insan sınıfı. Burada da bir şirket sınıfı var. Employer ve employee rolleriyle birbirlerini tanıyor. Yani employer person tipinde, employee company tipinde gibi düşünebilirsiniz ve job ilişkisine sahip.
+
+430
+01:55:44,212 --> 01:56:00,212
+Yani kişi çalışır şirkette. Ama mesela buradaki ilişkinin kendi içinde özellikleri ve davranışları var. Mesela maaş. Basit olsun. Ben bir şirkette belirli bir iş için belirli bir maaş alırken...
+
+431
+01:56:00,960 --> 01:56:13,159
+Burada da işte Yıldız koyduğumuz için birden fazla şirkette de çalışabiliyorum hatta. Ben mesela işte başka bir pozisyonda aynı şekilde şirkette çalıştığımda o zaman da şey yapabiliyorum.
+
+432
+01:56:13,619 --> 01:56:37,439
+Başka bir maaş alıyor. Ne oldu? Özellik farklı değerleri aldı. O zaman ben bunları farklı nesneler şeklinde modellemeli. Burada gördüğümüz gibi çalışma ilişkisinin kendine ait özellikleri ve davranışları var ise o zaman ben gider buraya bir nokta nokta koyarım, buraya bir sınıf koyarım. İşte bu bir ilişki sınıfıdır ve ilişki sınıfını da kendi içinde kendi taşıması gereken özellikleri ve davranışları modellerim.
+
+433
+01:56:41,619 --> 01:57:04,579
+Benim jobta aynı zamanda person'ın bas mı olacağı, worker mı olacağını bile modelleyebilirsiniz. Bunlar da mümkünse yapın, yönleriyle birlikte yapın. Rol tanımlarını da her iki uçta vermeye gayret edin. Eğer böyle tanımlarınız oluyorsa. Yani person'ın da mesela bu job içinde bas ya da worker şeklinde farklı farklı.
+
+434
+01:57:05,807 --> 01:57:32,587
+Görünümleri ya da instansları olacağını belirtmiş olursunuz. İlişkileri de yine dediğim gibi eğer kendi özellik ve davranışları varsa farklı ilişki sınıfları halinde modelleyebilirsiniz. Birleşme ve bütünleşmeyi çok hızlı bir şekilde söyledim. Fakat yine bir tekrar edeyim. Birleşme bir sınıfın örneği diğer sınıfın pek çok örneğinden yapılmış. İçi boş bir dikdörtgen, eşkener dörtgenle bunu gösteriyoruz.
+
+435
+01:57:33,039 --> 01:57:50,659
+Ama bu ilişkinin anlamıyla ilgili bize bir bilgi vermez. Mesela yaşam ömürleriyle ilgili bir bilgi vermez. Bütünleşmedeyse bunu verir. Şu şekilde öğenin, yani bütünleştiğiniz öğenin yaşam süresini de siz yönetirsiniz. Bunlar genellikle de geçişkendir. Yani o kompozisyonun içinde başka bir kompozisyon da yer alabilir.
+
+436
+01:57:51,180 --> 01:57:57,100
+İşte buna en güzel örnek evler odaları verebilirsiniz. Mesela evle oda arasında bir birleşme ilişkisi var.
+
+437
+01:57:57,524 --> 01:58:08,823
+Değil mi? Ev odalardan oluşur şeklinde ama biliyoruz ki biz evi yıkarsak odaları da yıkarız. Odayı yıkmadan evi yıkmak gibi bir şey olamaz. O zaman ben buna bir bütünleşmedir derim. Bunlar bir bütündür.
+
+438
+01:58:09,235 --> 01:58:36,456
+Ve ev yıkıldığında, destrakt edildiğinde odaların da destrakt edilmesi gerektiğini, yaşam ömrünün bitmesi gerektiğini söyleyebilirim. Ama mesela odayla masayı düşünün. Odanın içinde masa var. Ben evi yıkarken masayı dışarı alabilirim, o masayı başka yerde kullanabilirim. O zaman bunlar birbirinden bağımsız yaşam ömürlerine sahiptir. Birbirleriyle bağlı yaşam ömürleri yoktur. İşte bu durumda da buna biz bir birleşme ilişkisi deriz. Evet, masa odanın içinde.
+
+439
+01:58:36,912 --> 01:58:44,912
+Ama birebir tamamen aynı yaşam ömrüne sahip değil. Ben o nesneyi aldım, başka yerde kullanmaya devam ediyorum.
+
+440
+01:58:44,912 --> 01:58:50,912
+Ve evi de yıktım, odayı da yıkmış oldum. Masa yaşamaya devam ediyor. İşte buna da genelde birleşme diyoruz.
+
+441
+01:58:50,912 --> 01:58:57,912
+Bu örnek üzerinden birleşme, bütünleşme, aggregation, composition biraz daha rahat anlaşılır hale geliyor.
+
+442
+01:58:57,912 --> 01:59:00,832
+Peki, şimdi şöyle örneklere bakalım.
+
+443
+01:59:00,832 --> 01:59:07,771
+Elimizde dersler ve öğrenciler var. Acaba bunlar arasındaki ilişki nedir? Var mı tahmin olan?
+
+444
+01:59:12,180 --> 01:59:28,460
+Peki ben söyleyeyim. Bunlar birleşme ilişkisidir. Neden? Çünkü ben öğrencileri yok etmeden dersleri kapatabilirim. Değil mi? Yani dersi kapatıyorum diye öğrencileri de öldürecek halim yok.
+
+445
+01:59:32,243 --> 01:59:47,703
+Bu çok basit bence. Herhalde bunu hemen bulmuşsunuzdur. Bu sadece basit bir ilişkidir. Çünkü ikisinin de anlamsız yaşam ömürleri vardır. Birbirinin içinde diğeri yok. Bir kapsama durumu yok. İki tane nesne sadece ilişki halinde. Anlamsız da yaşam ömürlerine sahip.
+
+446
+02:00:00,000 --> 02:00:10,659
+Benim banka hesaplarım var. Yani ben banka hesaplarımı içeriyorum. Değil mi? Ve mesela işte Moody'yi öldürmeden banka hesaplarınızı kapatabilirsiniz.
+
+447
+02:00:13,860 --> 02:00:23,220
+Moody'likten vazgeçersiniz ama banka hesabı, mesela bankalarda oluyor 10 sene falan hesap kapanmadan durabiliyor. Bu şekilde bir birleşme.
+
+448
+02:00:26,676 --> 02:00:30,936
+Düz bir ilişki olarak da bunu modelleyebilirsiniz. %100 doğru değil yani.
+
+449
+02:00:32,936 --> 02:00:35,136
+İnternet connection'ım unstable'mış.
+
+450
+02:00:37,203 --> 02:00:59,184
+Bu, şu anda sanırım daha iyi olmuştur. Üniversitenin, bilmiyorum, network'ünde herhalde bir sıkıntı var. Yazı tipleri, fontlar ve bunların mesela gölgeleri. Bu çok basit. Bu direkt bir bütünleşmedir. Çünkü yazı tipini öldürdüğünüzde bütün süslemelerle onunla birlikte ölecek girecektir. O yüzden mutlaka bunların bütünleşmesi beklenir.
+
+451
+02:01:02,963 --> 02:01:15,663
+Bir de qualifier'lardan bahsedelim. Madem ki ileri seviyede veriyoruz UML'de onları. Bunlar küçük dikdörtgenler. Şuradaki yeşille yazdığımız küçük dikdörtgenler. Bunlar da sınıfın kenarında yer alır.
+
+452
+02:01:15,663 --> 02:01:27,443
+Ve bakın banka ve insan sınıfları arasında bir account number şeklinde bir qualifier var. Bu şu demektir aslında. Birinci anahtar gibi düşünebilirsiniz.
+
+453
+02:01:28,564 --> 02:01:45,624
+Bir insan sınıfı olarak bankaya hesap numarası üzerinden erişeceğim. Yani müşteri numarası da olabilir ya da bazı banka demek ki hesap numarası ile erişiyormuş. Bu da böyle bir kavramın modellenmesini gösteriyor özel bir şekilde. Ya da işte satranç tahtasında kareler var.
+
+454
+02:01:46,015 --> 02:02:14,015
+Şurada. Ve her bir karenin belirli bir satırı ve sütunu var. Burada bütünleşme de var. Çünkü tablonun üzerindeki siyahları, beyazları çıkartıp alamıyorsunuz. Tabloyu kırıp attığınızda onlar da ölüyor. O yüzden bir bütünleşme var ama her birinde mutlaka bir satır sütun, renk ve fail dediğimiz, A5 ya da F8 diyoruz ya satanış tahtasında, bu koordinatların mutlaka biliniyor olması lazım ve bu koordinatlar üzerinden aslında tahtada.
+
+455
+02:02:14,015 --> 02:02:32,895
+Tahtadaki konumunuzu belirlemeniz lazım. Böyle özel tanım noktalarınız ya da bağlantı noktalarınız varsa bunları da kualifierlerle ifade edebilirsiniz. Yine bunlar link de olabilir. Şöyle, burada mesela bir kulüp var. Bu kulübünde böyle üç tane ilişkide olduğu insan var. Biri Jill, biri Joe, biri de Chris. Bunların nesne örneklere.
+
+456
+02:02:42,015 --> 02:02:56,535
+Fakat eğer Treasure linkiyle bağlanırsa o zaman burada officer rolünde oluyor. Yine Chris aynı zamanda kulübün üyesi fakat onunla birlikte President linkiyle bunun officer bağlantısına yani çalışanı bağlantısına sahip.
+
+457
+02:02:56,847 --> 02:03:13,607
+Bu şekilde bir nesne başka bir nesne ile ilişki içinde ama bu ilişki duruma göre mesela hem normal bir ilişki metot mesela erişimi fakat president rolüyle başka bir rol üzerinden başka bir erişim şeklinde de modellenebilir.
+
+458
+02:03:17,171 --> 02:03:45,171
+Genelleştirmeye de bakalım. Son olarak kısa ne dersem ondan başka bir konu kalmayacak. Sınıf modelinde üzerine eğileceğimiz. Genelleştirmede de bir tane üçgen koyuyoruz aslında biliyorsunuz. Üçgen tarafına koyduğunuz üst sınıf ya da ana sınıftır. Alttakilerde yani üçgen olmayan taraftakilerde alt sınıf ya da çocuk sınıflardır. Bu şu demektir. Alt sınıfın örnekleri aynı zamanda üst sınıfın da bir örneğidir. Fakat bunu kalıtım ile birebir aynı kavram gibi düşünmeyin. Burada bir modelleme...
+
+459
+02:03:45,171 --> 02:04:11,171
+Yani UML'de aslında çoklu üst sınıf ya da çoklu alt sınıf tanımı yapabilirsiniz. Ya da discriminator tanımlarıyla alt sınıfları gruplandırabilirsiniz. Mesela buraya bakıyorsunuz. Sailboat'a bakın. Hem bir water vehicle'dan hem de wind powered vehicle'dan türemiş durumda. Truck aynı şekilde hem motor powered hem land vehicle'dan türemiş gibi. Burada bir overlapping söz konusu. Yani eğer şöyle kestiğinizde...
+
+460
+02:04:12,720 --> 02:04:28,580
+Bir üst sınıftan türeyen alt alt sınıflar birden fazla alt sınıfa aitsa o zaman overlapping anlamına geliyor. Eğer tek bir üst sınıfa ait olursa bu alt alt sınıflar o zaman bunlara da disjoint deniyor. Şimdi örneklerle bunu biraz daha iyi anlayacağız.
+
+461
+02:04:29,076 --> 02:04:45,435
+Ve bir disjoint olmak ya da overlapping olma durumu var. Eğer birden fazla alt sınıfa aitse o zaman overlapping, eğer tek bir üst sınıfa aitse o zaman disjoint. Aynı şekilde complete ya da incomplete olabilir. Çocuk sınıf.
+
+462
+02:04:45,684 --> 02:05:06,444
+Kendinden türeyen bütün nesneleri kapsıyorsa buna complete adı verilir. Kapsamıyorsa da incomplete. Mesela hibrit bir araç var ve bu hibrit araç alttaki çocukların hiçbirine uymuyor. Ne wind-powered, ne motor-powered, ne land, ne water. Ne amfibik, ne diyordu? Hiperbot mıydı? Overbot mu? Bir şey vardı.
+
+463
+02:05:07,204 --> 02:05:13,684
+Overcraft. Buldum. Onun gibi bir şey. Bunların hiçbirine uymuyor. Demek ki o zaman bir incomplete durum burada var diyebiliriz.
+
+464
+02:05:13,684 --> 02:05:40,444
+Şöyle, mesela bir atlet düşünün. Atlet sınıfınız var ve burada işte bu atlet sınıfından genelleşmesinin altında, alt sınıf olarak voleybol oyuncusu, basketbol oyuncusu ve futbol oyuncusu var. Şimdi bunlar overlapping'tir. Neden overlapping'tir? Çünkü bir oyuncu, aslında bunun alt sınıfı olan bir oyuncu, mesela hem voleybol oyuncusu hem de futbol oyuncusu olabilir ya da işte hem basket hem de futbol oynayan biliyorsunuz atletler var.
+
+465
+02:05:40,832 --> 02:06:00,112
+Demek ki overlapping. Peki, complete mi incomplete mi diye bakacak olursak buna incomplete deriz kısıt olarak. Neden? Çünkü bunların dışında da mesela bunları oynamayan atletler de var. Handball oyuncusu var mesela. O zaman atlet sınıfında kapsamayanlar da olduğu için buna da incomplete adını veriyoruz.
+
+466
+02:06:00,659 --> 02:06:19,639
+Mesela kitapları düşünelim. Kitaplarda şeylerimiz olsun alt sınıf olarak. Kağıt ciltli, bez ciltli ya da çizgi roman, hani fasükül dediğimiz kitap türlerimiz olsun alt sınıflarımız. Bunlar disjointtir. Neden? Çünkü ben bir kitap olarak, tekil bir kitap örneği olarak aynı anda hem kağıt hem de bez ciltli olamam.
+
+467
+02:06:20,148 --> 02:06:43,667
+ISBN numaraların farklı olmak zorunda. Hem fasükül hem bez cilt de olamam. Ya oyumdur ya oyumdur. O zaman ben disjointim. Bir overlap yok. Peki complete midir, incomplete midir? Düşündüğümüzde, mesela günümüzde e-kitap var değil mi? Demek ki kağıt, çizgi roman ya da bez cilt dışında başka kitap türleri de olabilir. O zaman buna da incomplete kısıtı vardır diyoruz.
+
+468
+02:06:44,659 --> 02:06:50,920
+Kafa karıştırıcı bir örnek. Omnivorlar mı üst sınıftır, vejeteryanlar mı üst sınıftır?
+
+469
+02:06:51,979 --> 02:07:02,220
+Omnivor hem eti hem otu yiyenler ya, bizimki gibi, biz gibi. Vejeteryanlarsa sadece biliyorsunuz sebze yiyor. Yok neydi, et yemiyor diyelim.
+
+470
+02:07:02,576 --> 02:07:24,795
+Düşündüğümüzde omnivor daha geniş şey ya üst sınıfmış gibi geliyor ama maalesef vejeteryanlar üst sınıf. Neden? Çünkü alt sınıf onun özelleşmiş hali. Vejeteryanlarda daha az aslında davranış. Ama omnivorlar bunun üzerine bir şeyler koymuş, özelleştirmiş. Yani vejeteryan maalesef daha genel bir kavram olarak karşımıza çıkıyor.
+
+471
+02:07:25,971 --> 02:07:53,971
+Şimdi UML diagramlarına baktığımızda da, ilk saatte de bol bol anlattık, ikiye ayrılır dedik. Yapısal diagramlar ve davetsal diagramlar diye sol taraf ve sağ taraf olarak ayırdık. Bunların da içinde 7'şer tane diagram var. Bunların hiyerarşisiyle aslında yine bir genelleştirme ilişkisidir. Hepsi UML'de diagram sınıfının altında yer alırlar. Bu şekilde 14 tane bu ders kapsamında bu hafta bahsettiğimiz diagramların da nasıl dağıldıklarını görebiliriz.
+
+472
+02:07:53,971 --> 02:08:18,572
+Peki. O zaman bugünlük bu kadar. Önümüzdeki haftada tasarım çalışmalarına geçeceğiz. Tasarım nasıl yapılır? Yine örnek üzerinden bakacağız. Bir tane kütüphane, basit bir kütüphane örneği, böyle müşteri gelecek süreci ilerleteceğiz. Neyi nasıl bulmamız gerektiği üzerinde biraz kafa yoracağız. Ve bunları formal olarak nasıl tanımlarız? Bunlara bakarak.
+
+473
+02:08:19,028 --> 02:08:27,948
+Yolumuza devam edeceğiz. Belki yetişte daha sonra OCL tarafına da geçeriz. Şimdi şeyden bahsedeyim. Bunu bir kapatayım.
+
+474
+02:08:27,948 --> 02:08:45,948
+Evet. Dediğim gibi son 13 kişi gördüm derste. Ve sonuçta sunum yapmanızı, araştırma yaparak sunum yapmanızı istiyorum. Şuradan bir saniye.
+
+475
+02:09:04,148 --> 02:09:09,387
+Tamam. Şimdi şu ekranı paylaşacağım sizinle.
+
+476
+02:09:16,467 --> 02:09:27,467
+Geldi, değil mi? Şimdi bu kitap Microservices Pattern diye bir kitap. Burada şu, Monolitik'ten...
+
+477
+02:09:28,148 --> 02:09:44,887
+Nasıl kaçılır? Decomposition stratejileri nelerdir? Mikroservis mimarisinde proses arası haberleşme nasıldır? Saga kalıbıyla transakçınlar nasıl yönetilir? Ondan sonra mikroservis arkitekturunda business logic nasıl tasarlanır?
+
+478
+02:09:45,264 --> 02:09:59,083
+Event Sourcing nedir, nasıl yapılır? Ondan sonra kuyruk mekanizmaları nedir, nasıl yapılır? External API için patternlar nelerdir? Mikroservis testleri nasıl yapılır? İki parça halinde, iki çeptir halinde.
+
+479
+02:10:00,000 --> 02:10:27,279
+Production Reddy dediğimiz servisler nasıl oluşturulur? Nasıl deployment'ları yapılır, deploy edilir? Ve refactoring'i nedir, nasıl yapılır? Buraya baktığınızda 13 tane chapter görüyorsunuz. Sizden tabii ki bunu paylaşmadım daha, paylaşacağım. Ve sonrasında her biriniz buradan bir chapter'ı alacak. Almayanlarınkini de rastgele atacağım. Ve her hafta iki chapter, iki chapter yolumuza devam edeceğiz.
+
+480
+02:10:28,000 --> 02:10:37,880
+Araştıracaksınız, sunum halini raporlayacaksınız ve sunum yapacaksınız. Yani derste işte bir saat kadar biriniz, bir saat kadar da biriniz olacak şekilde.
+
+481
+02:10:37,880 --> 02:10:44,880
+Tabii artar, azalır, konunun uzunluğuna göre değişir. Bu şekilde sizlerden...
+
+482
+02:10:45,747 --> 02:11:01,047
+Mikroservis özellikle mimarisinde kalıplar nelerdir? Bütün yönleriyle mikroservis mimarisi nasıl oluşturulur? Bunların yazılım örnekleriyle birlikte incelemelerini, araştırmasını, raporlamasını ve sunumunu yapmanızı istiyorum.
+
+483
+02:11:02,047 --> 02:11:08,047
+Bunu paylaşacağım sizinle bu hafta. Dediğim gibi ondan sonra talepleriniz varsa onları...
+
+484
+02:11:08,659 --> 02:11:18,880
+Mailde, hocam ben şurayı istiyorum diye alınmamışsa, orayı size atarım önce. Eğer haftaya kadar hala bir sesluluk çıkmazsa da kalanları rastgele olarak ben atacağım.
+
+485
+02:11:19,779 --> 02:11:20,019
+Evet.
+
+486
+02:11:22,380 --> 02:11:23,579
+Zoom nerede ya?
+
+487
+02:11:25,380 --> 02:11:26,039
+Bulmadım.
+
+488
+02:11:27,119 --> 02:11:29,300
+Çok çılgınca ekran karıştı, kusura bakmayın.
+
+489
+02:11:29,800 --> 02:11:32,680
+Peki, şunu artık durdurabilirim.
+
+490
+02:11:34,119 --> 02:11:34,399
+Tamam.
+
+491
+02:11:35,260 --> 02:11:35,859
+Soru var mı?
+
+492
+02:11:38,963 --> 02:11:40,783
+Efendim?
+
+493
+02:11:41,303 --> 02:11:43,183
+Mail adresinizi söyleyebilir misiniz?
+
+494
+02:11:43,703 --> 02:11:47,844
+Mail adresim g1.yıldız.tr. Hemen şuraya yazıyorum.
+
+495
+02:11:52,212 --> 02:12:17,771
+Yazdım. Teşekkürler. Rica ederim. Hocam, slide'lara biz nasıl ulaşabileceğiz? Bize verecek misin slide'ları? Slide'ları veririm de şöyle, şu online Yıldız Edit.tr'de daha koyamadım, beceremedim. Kaynak paylaşım tarafını henüz implement mi etmemişlerine? Geçen hafta yapamadım. O yapıldığında oraya koyacağım slide'ları. Teşekkürler hocam. Rica ederim.
+
+496
+02:12:18,804 --> 02:12:25,304
+Peki, o zaman bu haftalık bu kadar. Haftaya görüşürüz. Kendinize iyi bakın. Hoşçakalın.
+
+497
+02:12:26,344 --> 02:12:27,043
+İyi günler hocam.
+
+498
+02:12:27,324 --> 02:12:28,024
+İyi günler.
+
+499
+02:12:28,324 --> 02:12:29,204
+İyi günler hocam.
+
+500
+02:12:29,304 --> 02:12:29,984
+İyi günler.
