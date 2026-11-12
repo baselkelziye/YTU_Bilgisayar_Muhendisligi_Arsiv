@@ -1,0 +1,1711 @@
+1
+00:00:26,420 --> 00:00:28,140
+Arkadaşlar, merhabalar.
+
+2
+00:00:36,756 --> 00:00:39,676
+Katılım artıyor. Bir iki üç dakika daha bekleyelim.
+
+3
+00:02:22,388 --> 00:02:26,468
+Evet, yeniden merhabalar. Ses geliyor herhalde.
+
+4
+00:02:30,228 --> 00:02:31,228
+Gelir.
+
+5
+00:02:42,099 --> 00:02:59,099
+Öncelikle hepiniz hoş geldiniz. Sayısal Analiz BLM 10-22 dersimiz. Benim ismum Ahmet. Sabah bir kısmınızla beraberdik. Bir kısmınız Fatih Hoca'nın yapısal programlamaya giriş dersinde beraberdiniz.
+
+6
+00:02:59,099 --> 00:03:07,099
+Fatih Hoca'nın grubunda olanlar bir yazabilir mi? Bir grup dengelerine bakmak istiyorum da sabahki derste.
+
+7
+00:03:11,860 --> 00:03:37,100
+Güzel. Geçen seneye göre daha düzgün dağılım olmuş. Teşekkür ederim arkadaşlar. Şimdi bugün bir tanışalım ondan sonra. Dersin detaylarıyla alakalı, kurallarla alakalı konuşalım istiyorum. Yaklaşık 90 dakikalık falan bir ders yapar bırakırız herhalde.
+
+8
+00:03:38,228 --> 00:03:47,228
+Öncelikle kendimi tanıtayım. Bir kısmınızı sabahki dersten tanıyorsunuz da herhalde çoğunuz tanımıyor.
+
+9
+00:03:47,228 --> 00:03:57,228
+Burada 2013 yılından beri önce araştırma görevlisi, 2020'den beri de doktor öğretim görevlisi olarak çalışıyoruz.
+
+10
+00:03:57,228 --> 00:04:04,228
+Kendi çalışma alanlarım, daha çok algoritma, programlama ve sinyal işleme, makine öğrenmesi gibi konular.
+
+11
+00:04:05,108 --> 00:04:14,828
+Daha özelinde müzik ve ses sinyallerinin analizi ve işlenmesiyle alakalı çalışıyorum. Tezim de bunun üzerine zaten.
+
+12
+00:04:17,148 --> 00:04:27,388
+2-3 yıldır da bu dersi Bane hocamla beraber veriyoruz. Daha önce bir başka hocamız vardı, İngiltere'de kendisi. Onun yerine ben bu derse dahil oldum.
+
+13
+00:04:29,588 --> 00:04:38,588
+Benimle alakalı iletişim kurmak isterseniz şu e-mail adresini kullanabilirsiniz arkadaşlar. Şurada şöyle işaretleyelim.
+
+14
+00:04:39,588 --> 00:04:47,588
+Bazen soru sormanız gerekebiliyor veya başka aklınıza bir şey takılıyor olabilir. Buradan bana rahatlıkla ulaşabilirsiniz.
+
+15
+00:04:49,588 --> 00:04:51,588
+Hemen hemen bu şekilde.
+
+16
+00:04:52,588 --> 00:04:54,588
+Dersimizin...
+
+17
+00:04:55,028 --> 00:05:08,028
+İsmi hemen hemen her bölümde bulunabilir. Makine mühendisliğinde de vardır, inşaatta da vardır, işletme iktisatta da vardır, finans gibi bölümlerde de vardır.
+
+18
+00:05:08,028 --> 00:05:21,963
+Hatta sosyal bölümlerin bazılarında hala var. Numerical methods diye geçiyor, sayısal yöntemler diye görebilirsiniz. Numerical analiz diye görebilirsiniz, sayısal analiz.
+
+19
+00:05:22,420 --> 00:05:25,980
+gibi farklı isimleri var. Bizim bu dersimiz
+
+20
+00:05:26,740 --> 00:05:32,379
+Yapısal programlamaya giriş dersini Destekler Mahiyet'te tasarlandı.
+
+21
+00:05:33,659 --> 00:05:40,899
+Özellikle C programlamada kendimizi biraz daha geliştirmeniz için, daha çok pratik yapmanız için bu dersi önemsiyoruz.
+
+22
+00:05:41,420 --> 00:05:48,060
+Bir de algoritmalara matematiksel bir bakış açısı kazandırmak gayemiz var.
+
+23
+00:05:48,627 --> 00:05:55,427
+Genel anlamda aslında hep soru çözeceğiz burada da, konular üzerinden soru çözeceğiz, örnekler yapacağız.
+
+24
+00:05:55,427 --> 00:06:05,427
+Bunun işte bir projesi olacak, birazdan detaylandırırım. O projede de siz buradaki gördüğünüz konuların kodlarını yazacaksınız.
+
+25
+00:06:05,427 --> 00:06:13,427
+Böyle aslında zor olmayan, matematiksel anlamda da lise seviyesindeki bir matematiği kullanarak
+
+26
+00:06:13,843 --> 00:06:23,163
+Üniversite seviyesindeki matematikte çareler arayan, çözümler arayan bir ders, böyle söyleyebilirim.
+
+27
+00:06:24,363 --> 00:06:28,524
+Dersin kitaplarının elektronik hallerini çok rahat bulabilirsiniz.
+
+28
+00:06:29,323 --> 00:06:31,764
+İnternetten bunlar rahat bulunabilir.
+
+29
+00:06:32,644 --> 00:06:37,963
+Tavsiyem şudur, her bir konunun sonrasında bu kitaplarda örnek sorular var.
+
+30
+00:06:38,516 --> 00:06:43,516
+Yani Uluslar Bankası tarzında bizde çok olmaz ama bu ders adına şunu söyleyebilirim.
+
+31
+00:06:44,516 --> 00:06:49,016
+Konu anlatımının sonrasında örnek soruların olduğu faydalı kitap.
+
+32
+00:06:49,016 --> 00:06:56,516
+Bunun dışında farklı üniversitelerin işte bu isimli numerical analysis, numerical methods veya Türkçe'de aratabilirsiniz.
+
+33
+00:06:56,516 --> 00:07:00,516
+Farklı üniversiteler Türkçe'de örnek sorular falan paylaşıyorlar.
+
+34
+00:07:00,516 --> 00:07:05,016
+Bizim zaten ders anlatımımız bu ders için yeterli olacaktır.
+
+35
+00:07:05,588 --> 00:07:32,588
+kaynağı bol olan, mesela yapısal gibi değil ve birçok kaynağı da işte anlaşılır ve güzel örnekler olan bir şeydir, derstir. Dediğim gibi lise matematiği, hani öyle hatırlayacak olursak şöyle geriye doğru gidelim. Biraz linearce bir gerektiriyor. Biraz basit türev, basit integral işlemleri gerekiyor. Bu basit operasyonları kullanarak daha karmaşıklarını çözüyoruz.
+
+36
+00:07:33,108 --> 00:07:43,708
+Onun dışında limit bazen gerekir. Trigonometrinin bazı basit konuları, logaritmanın basit konuları, kuralları gerekiyor.
+
+37
+00:07:43,708 --> 00:07:57,708
+İş zorlaştığında da şuna bakıyoruz. Çok kendimizi yormadan, genellikle döngülerle ve iflerle, iterasyon metotlarıyla yaklaşım metotları diyoruz.
+
+38
+00:07:57,887 --> 00:08:14,287
+problemi yaklaşık bir şekilde çözmeye çalışacağız. Birazdan detayları gelecektir. Bu anlamda hani genel başarıya da baktığımızda, işte dersi takip eden, projeyi yapan, vize de finalde genellikle rahat, güzel puanlar alınabiliyor.
+
+39
+00:08:14,287 --> 00:08:24,287
+Hesap makineli bir derstir. Sınavını yaptığımızda hesap makinesi kullandırıyoruz. Baştan hani kolay, başarısı da yüksek, ortalaması yüksek bir ders.
+
+40
+00:08:24,788 --> 00:08:30,788
+Kısaca değerlendirme nasıl olacak, içerik nedir, bunları bahsedeceğim.
+
+41
+00:08:30,788 --> 00:08:38,788
+Derse giriş yapmadan önce sizin sorularınız varsa onları bir alırız. Sonra ufak bir giriş yapıp dersi bitiririz.
+
+42
+00:08:38,788 --> 00:08:43,788
+Şimdi uzaktan öğretim akıbeti ne olacak bilmiyoruz.
+
+43
+00:08:43,788 --> 00:08:52,512
+Biz online de olsa, yüz yüzeye de geçilse şu an için iki vize planladık. Yüzde yirmi, yüzde yirmi ağırlıklı.
+
+44
+00:08:52,511 --> 00:09:19,755
+Toplamda yüzde kırk. Bir dönem projeniz olacak. Bu dönem projesi size diyeceğiz ki on tane algoritma var. Bu ders kapsamında mesela anlatacağımız belki on beş tane. Bunlardan on tanesini kodlayın ve son iki hafta sunumunu yapacaksınız diyeceğiz. Tabii on tanesini dönemin en son haftası vermeyeceğiz. İşte üçüncü hafta bir algoritma var. Arkadaşlar bu projede size
+
+45
+00:09:19,827 --> 00:09:25,827
+sorulacak, projede kodlamanız istenecek, şimdiden çalışmaya başlayabilirsiniz diyebiliriz.
+
+46
+00:09:26,827 --> 00:09:35,827
+Bununla alakalı bir doküman paylaşacağız. Bir rapor hazırlayacaksınız, bir de kodunuz olacak, bunları yükleyeceksiniz, işte online yazısı falan üzerinden.
+
+47
+00:09:35,827 --> 00:09:42,475
+Bunun %20 ağırlığı olacak, final sınavı da klasik veya test olabilir artık.
+
+48
+00:09:42,580 --> 00:09:49,580
+Bunu yine okulun durumuna göre, online olma durumuna göre planlarız. O zamanı gelince bunların alakalı bilgi verilir.
+
+49
+00:09:49,580 --> 00:09:56,580
+Onun dışında bu derste bir ara ödev falan şu an için düşünmüyoruz. Daha önceleri quiz yaptığımız oldu ama
+
+50
+00:09:56,580 --> 00:10:02,580
+uzaktan öğretimde quiz çok verimli olmadığı için stratejimiz bu şekilde.
+
+51
+00:10:02,580 --> 00:10:08,580
+Şimdi konularımıza baktığımızda sayısal analiz nedir, ne değildir?
+
+52
+00:10:08,692 --> 00:10:12,692
+Nümerik hesaplamalar, yaklaşım hesaplamaları neye göre yapılır?
+
+53
+00:10:12,692 --> 00:10:17,692
+Yaklaşım olacağı için mutlaka hatadan söz edeceğiz. Çünkü gerçek çözüme ulaşamıyoruz.
+
+54
+00:10:17,692 --> 00:10:21,692
+Ulaşamıyorsak belki yaklaşık çözüme ulaşırız. Mantığımız bu.
+
+55
+00:10:21,692 --> 00:10:26,692
+Hata ve bu hata kavramlarının, hata türlerini konuşacağız.
+
+56
+00:10:27,572 --> 00:10:36,572
+Sonra, hani, en bilinen doğrusal olmayan eşitliklerin çözümü. Şimdi lineer olmayan eşitliklerden bahsedersek şöyle bir grafik çizelim.
+
+57
+00:10:36,572 --> 00:10:43,572
+Şöyle bir fonksiyonumuz var. İşte bunun çözümü demek ne demek? İşte sıfırı kesen noktaları, aslında kökleri bulmak.
+
+58
+00:10:43,572 --> 00:10:50,572
+Bununla alakalı, işte bakın burada altı tane algoritmadan bahsetmişiz. Bu altı algoritmayı tek tek anlatacağız.
+
+59
+00:10:50,572 --> 00:10:54,572
+Bunlar doğrusal olmayan eşitlik çözümleri.
+
+60
+00:10:55,508 --> 00:11:14,508
+Sonra sayısal integral dediğimiz, yani belirli integral biliyorsunuz işte A noktasından B noktasına, işte fx şey diyelim mesela, bir alan hesabıydı hatırlarsanız, a'dan b'ye fx, dx bizim alanımız olsun.
+
+61
+00:11:14,508 --> 00:11:21,508
+Şimdi şu fx'in integralini alırsak a'dan b'ye integrali almak kolay, ne bileyim, basit eşitlikler olur, kolaydır.
+
+62
+00:11:22,100 --> 00:11:38,100
+Ama fx çok zor bir şey olursa, integrali alınamayacak kadar zor bir şey olursa, örneğin e üzeri x kare çarpı sinüs, ne bileyim x küp çarpı 3 üzeri x diyelim.
+
+63
+00:11:38,100 --> 00:11:47,884
+Fonksiyonumuz bu. Şimdi bunun integralini al alabilirsen. Bunun yerine, burada bahsettiğimiz yöntemlerle yaklaşık bir alan bulma.
+
+64
+00:11:48,148 --> 00:12:15,148
+işlemi yapacağız. Tabi belli aralıklarda bu işlemler yapılıyor sayısal integral kapsamında. Bunların hepsi yaklaşık çözüm bulma üzerine. Eğer siz hassasiyeti çok çok arttırırsanız, gerçek çözüme çok çok yakın değerler elde edersiniz. Veya şöyle bir soru sorsam, bu kapsamda bunu da örnek olarak verebiliriz. Şimdi kök 2'nin yaklaşık değeri nedir?
+
+65
+00:12:17,587 --> 00:12:26,187
+Bunu belki bir yerlerde sizlere ezberlettiler. Dediler ki arkadaşlar ezberebilirseniz, hızlı çözüm yaparsınız, sıralamalarda falan kolay olur.
+
+66
+00:12:27,187 --> 00:12:32,187
+1.7 miydi? Öyle bir değeri var yanlış hatırlamıyorsam. Veya hesap mı? 1.4.
+
+67
+00:12:32,436 --> 00:12:42,436
+Şimdi kök 2'yi belki ezberlediniz. Kök 3 nedir? Bilmiyoruz. Ne bileyim, kök 8'i bilemiyoruz. İşte o da 2 kök 2. Kök 17 mesela.
+
+68
+00:12:42,436 --> 00:12:49,436
+İşte bu yaklaşık değerleri bulmanın farklı algoritmaları var. İşte doğrusal yöntemlerde aslında bunlardan da bahsedebiliriz.
+
+69
+00:12:49,436 --> 00:12:55,436
+Gibi gibi böyle bu tarz problemlere algoritmik çözümler üreteceğiz.
+
+70
+00:12:56,659 --> 00:13:03,740
+Sonra sayısal türev de işin içine giriyor. Sayısal türev şimdi integral ile zor olunan bir şeyin türevi de illaki zor olunacak.
+
+71
+00:13:03,740 --> 00:13:16,139
+Bir noktadaki türevin sayısal değeri, örneğin f fonksiyonu verildi, f'in türevinde 0.8 noktasındaki değeri şey yapacağız, bulacağız, bu nedir diyeceğiz.
+
+72
+00:13:16,139 --> 00:13:23,740
+Şimdi bunu hesaplayabilmem için türev alıp 0.8'i yerine koymak gerekiyor ama türevi alamıyorsak, çok zorsa
+
+73
+00:13:23,967 --> 00:13:27,367
+İşte burada bu konu devreye geliyor. Basit şeyler.
+
+74
+00:13:27,367 --> 00:13:35,367
+Ve yerine konular geldiğinde göreceksiniz ya, hakikaten lise matematiği seviyesinde bir şey. Belki of the school seviyesinde konular bile var.
+
+75
+00:13:36,767 --> 00:13:46,967
+Bir diğer konumuz aslında optimizasyon için nedir? İşte yerel minimum, lokal minimum veya lokal maksimum, global maksimum gibi.
+
+76
+00:13:47,091 --> 00:13:53,491
+fonksiyon değerlerinin bulunması için optimizasyon konumuz var burada anlatacağımız.
+
+77
+00:13:53,491 --> 00:14:09,491
+Sonra işin biraz linear, doğrusal tarafına gireceğiz. Şimdi doğrusal denklem takımları dediğimiz, bunu iki bilinmeyenle iki tane denklem varsa bilinmeyenleri çözersiniz. Ne bileyim işte 2x artı 3y eşittir 18 olsun.
+
+78
+00:14:09,875 --> 00:14:23,675
+3x artı 2y eşittir 36 olsun. Buradan x ve y'yi belki bulabilirsiniz. İşte denklemler doğru verildiyse. Ama bu her zaman böyle kolay bir yöntem değil. İki bilinmeyen değil de 20 tane bilinmeyen varsa
+
+79
+00:14:24,179 --> 00:14:31,779
+Bunlara ulaşmak sıkıntı, analitik çözüm yapamayız, algoritmik çözümlere ihtiyacımız oluyor.
+
+80
+00:14:31,779 --> 00:14:38,579
+Algoritmik çözümlerde de belki Liner Cebir dersinde bir kısmında gördüğünüz dolaylı ve dolaysız yöntemler var.
+
+81
+00:14:38,579 --> 00:14:46,179
+Şunlar genelde Liner Cebir'de anlatılır. Gauss eliminasyonu, Gauss-Jordan, Cholesky yöntemi gibi yöntemler.
+
+82
+00:14:48,563 --> 00:14:54,244
+Tam çözümü verirler. Bir de yaklaşık çözümleri veren Jacobi ve Gauss-Seidel yöntemleri var.
+
+83
+00:14:54,244 --> 00:15:01,683
+İşte x'in ve y'nin veya işte 20 tane değişkeniniz varsa 20 değişkenin yaklaşık çözümlerini bulacağız.
+
+84
+00:15:03,124 --> 00:15:09,443
+Şu aklınıza gelebilir hocam yaklaşık çözüm iyi bir şey mi? Yeri geliyor çok iyi bir şey oluyor. Tahmin yapıyorsunuz.
+
+85
+00:15:09,620 --> 00:15:20,379
+gerçek çözüme ulaşmak hakikaten imkansızsa, tahminlerle ve o tahminleri güncelleyerek, optimize ederek yaklaşık çözümler çoğu anlamda iş görüyor.
+
+86
+00:15:20,379 --> 00:15:28,820
+Özellikle geleceğe yönelik, işte finans kısmında, işte şu an mesela depremcilerin de belli olasılıklarla işte tahminleri var.
+
+87
+00:15:28,820 --> 00:15:35,420
+Onlar nümerik yöntemleri kullanırlar, işte sinyal sistemde linear sistemler teorisini kullanırlar.
+
+88
+00:15:35,604 --> 00:15:49,004
+Burada bunların temellerini şey yapacağız. Ama siz bu derste bir bilgisayar mühendisi gözüyle bakmanız gerekiyor. Yani ben bu yöntemi nasıl işte herhangi bir programlama dilinde kodlarım?
+
+89
+00:15:49,004 --> 00:16:01,004
+Şimdi bir başka işte makine mühendisi olsun, ne bileyim başka alanlarda çalışan kişiler olsun, o yöntemin zaten kodlanmış halleri var. Yeri geldiğinde onların size tool'larını da göstereceğiz.
+
+90
+00:16:01,203 --> 00:16:10,403
+o yöntemi sıfırdan kodlamayacak. Siz algoritmik olarak bu yöntemi ben nasıl iyi bir şekilde kodlarım? Bizim derdimiz bu. Projeniz de zaten bu amaçlı olacak.
+
+91
+00:16:10,403 --> 00:16:24,803
+Örneğin, bir fonksiyon verelim. İşte sinüs x kare çarpı e üzeri x diyelim. Bunun bilgisayarda c ile modellemesini nasıl yapabilirsiniz?
+
+92
+00:16:25,107 --> 00:16:50,107
+Şimdi şu bir fonksiyon, sinüstü bir fonksiyon, bu eksponansiyel bir fonksiyon. Şöyle bir şey olsaydı, x küp olsaydı, bu mesela polinomiyol bir fonksiyon. Bunların modellemesini C'de nasıl yapabiliriz? Biraz daha matematik düşünceyi soyutlayıp programlama düşüncesine çevirmemiz gerekiyor. İşte sinüst dediğimiz şeyin bir karakteristiği var, polinomların bir karakteristiği var. Mesela polinom desek ne olur? Polinomun bir kat sayısı vardır.
+
+93
+00:16:50,292 --> 00:17:12,612
+Bir de derecesi vardır. Bu bir polinom terimidir. Bu polinom terimlerden en tane olursa, polinomun kendisi oluyor. İşte bunu dizilerle, matrislerle veya structure'larla modelleyip, bir polinomu bilgisayarda saklıyoruz. Bu bizim için önemli. Sonra sinüsü de benzer şekilde, eksponansiyel fonksiyonları, logaritma fonksiyonlarını da benzer şekilde modelleyebiliriz.
+
+94
+00:17:12,832 --> 00:17:22,832
+Daha sonra bunların çözüm yapacaksak çözüm, değilse integral ise integral, türev ise türev gibi algoritmalarla hesaplamalarını gerçekleştireceğiz.
+
+95
+00:17:22,832 --> 00:17:35,832
+Bu açıdan sizin programlama bilginize hakkı sunacağını düşünüyoruz. Sonra linear olmayan denklem takımlarının çözümü, işte burada bazı yaklaşımlar var.
+
+96
+00:17:36,019 --> 00:17:49,779
+Sonlu farklar dediğimiz sayısal türev için kullanıyoruz ama asıl tahmin için kullandığımız interpolasyon dediğimiz bir konu başlığımız var. Burada kullanacağımız sonlu farklardan sözdebiliriz.
+
+97
+00:17:49,779 --> 00:18:00,659
+Interpolasyon ve regresyon bizim için çok önemli kavramlar. Özellikle günümüzde tahmin yapabilmek her anlamda, her alanda kullanılan bir şey.
+
+98
+00:18:01,076 --> 00:18:28,076
+interpolasyon dediğimiz işte elimizde bazı veriler var. Aslında x'ler ve y'ler var sayısal olarak işte tutulmuş bunlar. Hani bunu daha önceden siz örüntü olarak önceki okullarınızda, ortaokulda, lisede belki görüyorsunuz. İşte ikiye sekiz gelmiş, dörde dokuz gelmiş, ne bileyim beşe on iki gelmiş. Acaba on sekize kaç gelir? Veya ne bileyim arada işte şu dört buçağa kaç gelir, üçe kaç gelir?
+
+99
+00:18:28,243 --> 00:18:50,844
+var olan verilerden geçen bir şey, bunların üzerinden geçen bir şey bu interpolasyon oluyor. Ara değer uydurma dediğimiz, işte şu aradaki değeri tahmin edelim deyip, bunlara yaklaşım yöntemleri, işte burada iki tane algoritma var. Regresyonda bu elimizdeki x ve y'leri en iyi temsil edecek bir doğru veya eğri çiziyoruz.
+
+100
+00:18:51,135 --> 00:19:04,536
+Bunların üzerinden geçmek zorunda değil. Bu doğru veya eğri minimum hatayı bize gösterecek. İşte gerçek noktalara olan uzaklığı. Yine regresyonda da geleceğe yönelik tahminler yapacağız. Yaklaşım farklılıkları birazcık var.
+
+101
+00:19:04,799 --> 00:19:11,240
+Bununla alakalı algoritmaları anlatacağız. Enterpolasyonun burada bakın tanımını da vermişiz.
+
+102
+00:19:11,240 --> 00:19:15,240
+Hatasız veri noktalarının arasında kalan ara noktaları belirlemede kullanılır.
+
+103
+00:19:15,240 --> 00:19:21,279
+Şimdi bu matematiksel olarak düşündüğümüzde şöyle bir şey işte, noktaların üzerinden geçen bir eğri var.
+
+104
+00:19:21,279 --> 00:19:30,720
+Biz de aradaki noktaları tahmin ediyoruz. Bu ilk bakışta böyle ama şöyle düşünün. Elinizde bir resminiz var.
+
+105
+00:19:31,892 --> 00:19:48,091
+Bu resim mesela üç yüz'e üç yüz'lük olsun. Resmi resize ederseniz, yani yeniden şekillendirirseniz mesela bir tane örnek yapalım. Nasıl bir şey göreceğimizi inceleyelim. Şuradan bir ekran görüntüsü alayım.
+
+106
+00:19:50,892 --> 00:19:57,892
+Şöyle bir benim arka planımın görüntüsünü alalım. Biraz şöyle yaprakların olduğu yerden bir şey bulayım.
+
+107
+00:20:00,500 --> 00:20:10,900
+Şöyle bir Paint programını açayım.
+
+108
+00:20:13,900 --> 00:20:15,100
+Ve yapıştırabilirim.
+
+109
+00:20:16,400 --> 00:20:21,500
+Şimdi Paint ve aldığım ekran görüntüsünü böyle yapıştırdım. Herhalde Paint görüyorsunuz şu an.
+
+110
+00:20:23,700 --> 00:20:24,900
+Yansıyor değil mi ekran?
+
+111
+00:20:25,107 --> 00:20:34,107
+Görüyoruz hocam. Mesela burada Resize diye bir şey var. Resize'ı seçtiğimizde diyor ki resmin yeni boyutları nedir?
+
+112
+00:20:34,107 --> 00:20:46,107
+Mesela şu anki boyutları neymiş? 822'ye 500'lerde bir şey Resize diyelim. Bunu piksel olarak, bakın şurada çıktı. Mesela bunu...
+
+113
+00:20:46,771 --> 00:21:07,771
+2500'e şöyle bir şey yaptığında, okey dediğinde böyle yaklaşıyor. Ama yaklaştığında bir bozulma var. Çünkü piksel değerlerini yenisine göre ya ortalamasını alıyor, işte iki piksel arasındaki ortalama değeri veya o arada bir doğru eğri üretip değişimin hızına göre piksel değeri araya yerleştiriyor, uyduruyor.
+
+114
+00:21:08,084 --> 00:21:18,084
+Siz bu interpolasyon fonksiyonunu ne kadar kaliteli yaparsanız, büyüttüğünüz resim o kadar kalite olur. Mesela kendi fotoğrafınızı vesikalık fotoğraf falan deneyin.
+
+115
+00:21:18,084 --> 00:21:33,084
+Mesela vesikalık fotoğraflar, mesela şurada bir crop yapabilir miyiz acaba? Veya şöyle yapayım, bir select yapayım. Şimdi bunu Ctrl-C dedim, Ctrl-A dedim, Ctrl-V dedim. Şimdi şunu resize yapalım.
+
+116
+00:21:33,428 --> 00:22:00,108
+x'leri olarak 2500'e 2500'e diyorum mesela, çok oldu. Şöyle baktığında bakın çok çirkin bir görüntü geliyor. Ne kadar yaklaşırsak da çok detay gidiyor. Bozulmalar ciddi ciddi fark ediyor. Eğer bu interpolasyon biraz daha düzgün yapılırsa, seçilirse daha göze hoş ve büyütülmüş bir görüntü elde etmek mümkün. İşte bunun için kullanıyoruz. Regresyon ise
+
+117
+00:22:00,819 --> 00:22:14,819
+Daha çok tahmine yönelik, elimizde veriler var, gelecek verileri tahmin etmek için kullandığımız bir doğru veya eğri uydurma konusu diye yeri geldiğinde konuşacağız.
+
+118
+00:22:14,819 --> 00:22:21,819
+Şimdi diferansiyel denklemler diye bir konumuz var. Bu derste normalde bunu önceden anlatıyorduk.
+
+119
+00:22:21,819 --> 00:22:24,715
+Şimdi diferansiyel denklem ne demek? Var mı [öğrenci]?
+
+120
+00:22:24,980 --> 00:22:32,140
+Daha önce bununla alakalı ders görmemişsiniz diye tahmin ediyorum. Diferansiyel kavramını gördüğümüz bir yerlerde türev alırken falan.
+
+121
+00:22:32,660 --> 00:22:34,460
+Ama bunun denklemini görmediniz.
+
+122
+00:22:37,779 --> 00:22:39,579
+Mesela şöyle desek.
+
+123
+00:22:42,640 --> 00:22:47,259
+Y'nin türevi artı iki x eşittir sıfır desek.
+
+124
+00:22:47,259 --> 00:22:47,759
+Şimdi
+
+125
+00:22:48,372 --> 00:22:56,372
+y'nin türevi bir fonksiyonun türevi demek. Bundan kurtulmak için işte integral alabilir misal y'nin türevi eşittir, ikisi 2x olur.
+
+126
+00:22:56,372 --> 00:23:16,012
+İki tarafın integralini alırsak, neye göre? İşte y de x'e bağlı bir fonksiyonsa, burada türevden kurtuluruz. Şunun da şeyini aldığımızda 2x² bölü 2, dx artı c gibi bir şey gelir. Şunlar da gider x² artı c diyebiliriz. Tamam mı?
+
+127
+00:23:16,115 --> 00:23:38,316
+Bu basit bir diferansiyel denklem. Bir değişkenin türevi var ve türev ile beraber ona bağlı olan bir değişken var. Ama şöyle bir şey olsaydı, y'nin ikinci türevi artı y'nin türevinin karesi artı 2x kare eşittir 0. Şimdi y'nin türevini bilmiyoruz, bir de onun türevini de bilmiyoruz. İkinci dereceden türevini bilmiyoruz.
+
+128
+00:23:43,892 --> 00:23:58,892
+Bilmediğimiz iki tane şey var ve bize verilen denklem bir tane. Bununla alakalı yaklaşım, çeşitli yöntemler var. Bu ayrı bir derstir, diferansiyel denklemler dersidir. Orada analitik yöntemleri, denklem çözme yöntemleri anlatılır.
+
+129
+00:23:58,892 --> 00:24:10,892
+Şimdi ortaokulda veya lisede, yine hatırlayın, denklem çözmek için ne yapılır? Bilinenler bir tarafa, bilinmeyenler bir tarafa. Şimdi burada iki tane bilinmeyen olduğu için bilinenler, bilinmeyenler o kural burada işlemiyor maalesef.
+
+130
+00:24:11,188 --> 00:24:33,188
+Orada çaresiz kalıyoruz. Dolayısıyla başka başka teknikler anlatılıyor o dersin içerisinde. Adi diferansiyel denklemlerin çözümü için biz yine bilimlik yaklaşım yöntemleriyle yaklaşık çözümler üretebiliyoruz. Ama bu dersin kapsamından çıkardık. Çünkü siz diferansiyel denklem çözme dersini almadığınız için...
+
+131
+00:24:33,536 --> 00:24:39,776
+Açıkçası biraz da zor geliyor. Onun için şimdilik belki zamanımız kalırsa birazcık bahsederiz.
+
+132
+00:24:39,776 --> 00:24:44,895
+İşte bunun en çok kullanılan yöntemi Runge-Kutta diye bir yöntemdir.
+
+133
+00:24:44,895 --> 00:24:52,336
+Belki ilerleyen zamanlarda diferansiyet denklemlerine işiniz düşerse, üçüncü, dördüncü sınıfta robotik falan çalışırsanız karşılaşacaksınız.
+
+134
+00:24:52,496 --> 00:25:03,896
+Rungi Kutlan'ın da 1-2-3-4 versiyonları var. Genellikle dördüncü versiyon, en az hata ile çözüme ulaşan, biraz tabi aligritmik olarak karmışık ama böyle bir yöntem.
+
+135
+00:25:03,896 --> 00:25:11,496
+Neyse, bu da konularımızdan birisiyle. Evet, dersle alakalı içerik bu şekilde arkadaşlar.
+
+136
+00:25:11,763 --> 00:25:19,763
+Genel kurallar zaten diğer derslerde de şimdiye kadar ifade edilmiştir. Sınavlarımız olacak, projemiz olacak.
+
+137
+00:25:19,763 --> 00:25:25,763
+Herhangi bir sorunuz olursa bu dersin yardımcısı yoktu. Oradan benimle mail adresim üzerinden irtibat kurabilirsiniz.
+
+138
+00:25:25,763 --> 00:25:29,763
+Hep söylediğim şey vardı, burada da tekrar edeyim. Öğrenci olarak sizin...
+
+139
+00:25:30,259 --> 00:25:51,259
+Sorumluluklarınız var, bir de haklarınız var. Sorumluluklar, derse gelmek, ödevi zamanında yapmak, dersin verilen faaliyetlerinde, ödevlerinde, projelerinde kendiniz yapmak, intihal vesaire yapmamak, bunlar sizin sorumluluklarınız. Her zaman sorumluluklarınızı söylemek doğru değil, haklarınız da var. Beklediğiniz puanı alamadınız.
+
+140
+00:25:51,476 --> 00:26:14,476
+veya ne bileyim, bir sorunun çözümünü merak ediyorsunuz, anlamadığımız bir şey var. Dersin içerisinde, sınavında artık neredeyse. Bunları sormak, talep etmek sizin hakkınız arkadaşlar. Sormadan, özellikle derste anlamadığınızı söylerseniz tekrar ederiz. Gerekli açıklamaları daha fazla arttırırız. Bu haklarınızı lütfen kullanın. Sorumluluklarınızı da bilin.
+
+141
+00:26:14,900 --> 00:26:27,900
+Haberleşme için mail adresi yeterli. Şu kurala da dikkat edelim. Burada her biriniz kendinize özelsiniz, kendi durumlarınız başka arkadaşlarınızdan farklılık gösterebilir.
+
+142
+00:26:27,900 --> 00:26:35,628
+Dolayısıyla yaşadığınız bir sorun, hangi sorun olursa olsun, dersle alakalı veya dersin dışında sorunlar olabilir.
+
+143
+00:26:35,859 --> 00:26:41,859
+Bir hocaya danışmak istediğinizde kendi özelinizle düşünerek danışın.
+
+144
+00:26:41,859 --> 00:26:46,859
+Hocam işte benim şöyle bir durumum vardı falanca arkadaşıma bu konuda böyle bir şey yapmışsınız deyip
+
+145
+00:26:47,859 --> 00:26:52,859
+söze girmeye gerek yok. O arkadaşınızın durumu farklıdır, siz farklı sınıftır.
+
+146
+00:26:53,971 --> 00:26:59,971
+Ödevlerde, değerlendirmelerde, puanlamalarda adil, herkese eşit davranmaya çalışırız.
+
+147
+00:26:59,971 --> 00:27:01,971
+Yani değerlendirmemiz buna göre olur.
+
+148
+00:27:01,971 --> 00:27:04,971
+Ve puanlar eşit dağılır.
+
+149
+00:27:04,971 --> 00:27:07,971
+Harf notları buna göre dağılır. Kimseye bir ayrıcalık yoktur.
+
+150
+00:27:07,971 --> 00:27:09,971
+Ama bunun dışındaki konularda,
+
+151
+00:27:09,971 --> 00:27:13,971
+işte hocam ödev gecikmeyle alakalı bir sıkıntı yaşanmış,
+
+152
+00:27:13,971 --> 00:27:15,971
+yaşadığım şeylerden soruyorum.
+
+153
+00:27:15,971 --> 00:27:17,971
+Falanca arkadaşa şöyle demişsiniz,
+
+154
+00:27:17,971 --> 00:27:21,971
+veya ödevin üçüncü sorusunda şunu mu kastetiyor?
+
+155
+00:27:21,971 --> 00:27:28,692
+ders ettiniz diyorsunuz. İşte söylediğimiz bir ifade var. İşte bilmem falanca arkadaşa veya geçen seneki
+
+156
+00:27:28,692 --> 00:27:35,491
+birisine şöyle bir şey yaptırmışsınız, böyle bir tavsiyede bulunmuşsunuz. O özel durumda o dediğim şey ona yönelik
+
+157
+00:27:35,491 --> 00:27:41,491
+doğru olabilir ama sizin için aynı şey doğru olacak diye bir şey kesinlikle yok. Dolayısıyla aklınıza takılan
+
+158
+00:27:41,491 --> 00:27:49,571
+her şeyi doğrudan birinci elden bana sorup ikinci el hiçbir şeye güvenmemenizi tavsiye ediyorum ki mağdur olmayasınız.
+
+159
+00:27:49,779 --> 00:28:00,940
+Bu kuralları da söyledikten sonra sizin sormak istediğiniz bir şey varsa derse dair onları alayım. Ondan sonra dersin giriş konularıyla başlayıp dersimizi bitirelim. Buyurun söz sizde.
+
+160
+00:28:06,771 --> 00:28:09,771
+Hocam slide'ları paylaşacak mısınız?
+
+161
+00:28:09,771 --> 00:28:28,771
+Güzel. Şimdi ben bir classroom linki diğer dersim için paylaştım. Bu ders içinde var. Lütfen bir test edelim. OBS'ye girdiğinizde, dersimizi seçtiğinizde dersin ayrıntıları diye bir bölüm göreceksiniz.
+
+162
+00:28:28,771 --> 00:28:34,508
+Ek işlemlerde falan çıkabilir. Sizin arayüzünüzü bilmiyorum. Orada bir link var.
+
+163
+00:28:34,836 --> 00:28:43,836
+Bu linke baktığımızda bir Google sayfasına yönlendiriliyorsunuz. Ben de şimdi o sayfayı açmaya çalışayım.
+
+164
+00:28:44,836 --> 00:28:51,836
+İki grupta, Bani Hocam da, ben de bu linki sizlere ortak olarak paylaştım.
+
+165
+00:28:52,147 --> 00:29:16,827
+Bütün slide'lar şu an orada var. Mesela diğer dersim için haftalık olarak yükleyeceğim. Bir dakika, ekran paylaşımı olmuş. Şöyle bir şeye, yani BLM1022 diye bir sayfanın linkini görüyor olmanız lazım. OBS'den bir bakarsanız, işte burada birinci haftadan, yani birinci slide'dan sekizinci slide'a kadar bütün şeyler, ders linkleriniz var. Oradan edinebilirsiniz.
+
+166
+00:29:18,420 --> 00:29:32,420
+Bu derste slide kullanmak aslında bazı haftalarda gereksiz. Bazı şeyleri hızlı anlatmak için slide kullanabiliriz ama ben genellikle şunu da yapacağım.
+
+167
+00:29:32,420 --> 00:29:44,420
+İşte bir tabletim var önünde, grafik tablet. Adım adım sorunun çözümünü veya algoritmayı böyle kodlayarak değil de, çünkü kodlayacak olan sizlersiniz.
+
+168
+00:29:45,044 --> 00:29:51,443
+algoritmayı adım adım trace edeceğiz, ilerleteceğiz. İşte birinci adımda bunu yaptık, ikinci adımda bunu yaptık.
+
+169
+00:29:51,964 --> 00:29:55,284
+Buradan rahatlıkla öğrenirsiniz diye düşünüyoruz.
+
+170
+00:29:56,044 --> 00:30:00,403
+Evet, link var mı arkadaşlar? Bir kontrol ederseniz bir yazın ekrana, ben de göreyim.
+
+171
+00:30:02,703 --> 00:30:05,524
+Tamam, güzel yani. O linki hatta ben
+
+172
+00:30:06,044 --> 00:30:11,163
+şuradan da hani paylaş deyip aynı linki elde edebilirim, istedim.
+
+173
+00:30:12,468 --> 00:30:35,468
+Çet ekranına da yazarsam. Burada şuna dikkat edelim. Mesela son değiştirilme tarihi denmiş. Bunları yeni yüklediğim için değiştirilme tarihi olarak görüyor. Mesela bu bölüm 1'de gündüz sabah bir ufak bir değişiklik yapmıştım. Güncel halleriyle elde edebilirsiniz. Yani indirdiğiniz halim...
+
+174
+00:30:35,635 --> 00:30:43,956
+Daha sonra güncellenip güncellenmediğine bir bakarsınız. Genelde bu da zaten dersin sırasında bir şey eklemek gerekiyor veya ufak bir şey değiştirmek gerekiyor.
+
+175
+00:30:43,956 --> 00:30:51,635
+Böyle dersten bir gün önce bir gün sonra falan yaptığınız şeyler dersin gününe göre bunları takip etmeniz yeterli olur.
+
+176
+00:30:52,307 --> 00:31:01,508
+Ama dediğim gibi bu ders böyle slide'dan tam şeyde öğrenilecek bir ders değil. Bazı kavramları öğretmek için veya bazı şeyleri hızlı aktarmak için yeterli.
+
+177
+00:31:01,508 --> 00:31:08,708
+Onun dışında ben hani dersi takip etmenizi, anlamadığınız yerde soru sormanızı istiyorum.
+
+178
+00:31:08,708 --> 00:31:17,708
+İkinci haftadan itibaren bu chapter'dan sonraki chapter'a geçtikten sonra diyeceğiz ki mesela x eşittir 0'la başlayalım.
+
+179
+00:31:18,067 --> 00:31:38,067
+başlangıç noktamız. İşte x'de bir şey yaptık, x'de 0.008 olacak. Sonra ikinci adımda şu olacak, sonra bu olacak. Böyle tahtaya yazar gibi, ekrana yaza yaza ilerleyeceğim. Bazı derslerde yine slide'ın üzerinde yazacağım. Burada olduğu gibi, bugün olduğu gibi. Böyle ilerleyeceğiz. Başka sorunuz var mı?
+
+180
+00:31:47,476 --> 00:31:49,476
+Benim aklıma bir soru geldi.
+
+181
+00:31:49,476 --> 00:31:51,476
+En azından ömüyoruz.
+
+182
+00:31:51,476 --> 00:31:56,476
+Şimdi derste hesap makinesi gerekir mi diye bir soru sorabilirsiniz. Aklınıza gelebilir.
+
+183
+00:31:56,476 --> 00:31:59,476
+Yani şimdi gelmese bile ikinci, üçüncü hafta gelecek.
+
+184
+00:31:59,476 --> 00:32:04,476
+Şimdi arkadaşlar, bu dersi biz yüzle yaptığımızda hesap makinesi kullandırıyoruz.
+
+185
+00:32:05,107 --> 00:32:15,507
+Ama aynı zamanda şey de var, sizin devre teorisi dersiniz de var, orada da hesap makinesi gerekiyor. Çünkü burada hassas hesaplar yapılıyor. Yani virgülden sonra 4 basamak, 5 basamak falan.
+
+186
+00:32:15,507 --> 00:32:25,107
+Şimdi uzaktan öğretim ne kadar devam eder bilmiyorum. Devam ederse bir hesap makinesi temin etmenize gerek yok.
+
+187
+00:32:25,107 --> 00:32:32,507
+Excel'i açarsınız veya Windows'un hesap makinesinde bile çoğu hesaplamayı yapabilirsiniz.
+
+188
+00:32:32,948 --> 00:32:52,748
+Ama eğer uzaktan öğretim devam etmezse ve tekrar % olma durum olursa, şu FX 999-1 tarzında, içerisinde lineer denklem takımlarını çözen, yani burada şey vermek istemiyorum, istediğiniz marka işi alabilirsiniz ama...
+
+189
+00:32:53,332 --> 00:33:19,452
+Şunun özelinde bakacak olursak, şöyle bir numara vardır. Bu çoğu şeyde markadan bağımsızdır diyebilirim. İşte bunun içerisinde integral hesabı yapılabiliyor, türev hesabı yapılabiliyor. Linear denklem takımlarını çözebiliyorsunuz. Bu tarz bir makine gerekebilir. Ama benim için, bu ders için özellikle online devam edersek bir şey, masraf yapmanıza gerek yok.
+
+190
+00:33:19,892 --> 00:33:32,492
+Şimdi aklınızda bulunsun. İleride lazım olursa devre teorisi dersine de faydalı olacak bir şey yeterli olur. Sizin varsa sorunuzu alayım yoksa konuya başlayacağım.
+
+191
+00:33:53,556 --> 00:33:59,796
+Bir iki dakika ara verelim arkadaşlar. Çok kısa bir bölümden bir istek var bir saniye.
+
+192
+00:34:04,852 --> 00:34:14,452
+Maalesef üniversitede olduğumuzda bölümden atılabiliyorlar idari görevler için. Böyle pek tepek kesintiler olabilir.
+
+193
+00:35:03,795 --> 00:35:05,739
+So, thank you.
+
+194
+00:35:31,476 --> 00:35:32,476
+Evet.
+
+195
+00:36:42,003 --> 00:37:01,503
+Evet, arkadaşlar, devam edebiliriz. Sizin herhalde sorunuz yok, gayet her şey açık anlaşılır. Eğer sorunuz olursa da daha sonra dersin sonrasında da aklınıza gelirse not edin, şey yapalım, cevap vermem arkadaşlar. Şimdi başlıyoruz.
+
+196
+00:37:02,291 --> 00:37:11,291
+Şimdi, bilgisayar teknolojisi ne işimize yarıyor dersek, bir insan olarak ikinin karesini hesaplamak bizim için çok basit.
+
+197
+00:37:11,827 --> 00:37:36,228
+Ama 200'leri 2000'i hesaplamak istersek bunu bir şekilde yine yaparız insan olarak. Ama makinenin faydası şununla şunu, ikisini de hemen hemen yaklaşık sürelerde makul kabul edilebilir sürelerde hesaplıyor. İşte bu hız ve özellikle kapasite bilgisayarın bu iki özelliği bize birçok mühendislik problemini çözebilmeyi mümkün hale getiriyor. Buradaki hikaye bununla alakalı.
+
+198
+00:37:38,291 --> 00:37:54,692
+Özellikle fiziksel bir sistem ortaya konacak. Fiziksel bir sistemden kastımız, bir köprünün davranışsal denklemi olabilir. Ne bileyim, bir makinenin giriş-çıkış ilişkisi olabilir.
+
+199
+00:37:54,692 --> 00:38:02,291
+Matematiksel bir eşitliğe sahiptir. Bu matematiksel eşitlik biraz önce gösterdiğimiz denklemler olabiliyor, diferansiyel denklemler olabiliyor.
+
+200
+00:38:02,320 --> 00:38:09,920
+Regresyon, interpolasyon yöntemleri olabiliyor. Çözeceğimiz bir integral işlemi gerekebiliyor. Ara adımlar olabilir.
+
+201
+00:38:09,920 --> 00:38:23,920
+Ara işkemelerde bir tane türev çözeceğiz ama türevin analitik çözümünü yapamıyoruz. Yani y eşittir x karenin analitik çözümü 2x. Bunu elle yapabiliyoruz ama öyle bir şey var ki analitik çözümü mümkün değil.
+
+202
+00:38:24,143 --> 00:38:31,663
+imkansız olan çözümü yaklaşık olarak çözmeyi mümkün kılıyor.
+
+203
+00:38:33,663 --> 00:38:45,343
+Hazır programlarla yaklaşım yöntemlerini yapamıyoruz ama biz kendimiz bir program kod yazarak yaklaşım yöntemleriyle, kendi yaklaşım yöntemlerimizle çözüme ulaşabiliyoruz.
+
+204
+00:38:45,343 --> 00:38:47,023
+Çünkü hazır programlar...
+
+205
+00:38:47,155 --> 00:38:55,155
+kullanıcıdan input olarak özellikle eskiden daha yaygındı. Denklemi alamıyorlar, sembolik işlemler yapamıyorlar.
+
+206
+00:38:55,155 --> 00:39:08,155
+Günümüzde bazı programlama dilleri bunu, denklemi de alacak hale getirdi. Yani siz denklemi veriyorsunuz, sembolik olarak makineye, işte diyorsunuz x kareyi verdim, bunun türevini hesapla, 2x.
+
+207
+00:39:08,155 --> 00:39:13,835
+Çok karmaşık bir şey verdiğinizde de türevini hesaplayabiliyor sembolik olarak, işte analitik çözümünü de yapabiliyorsunuz.
+
+208
+00:39:14,036 --> 00:39:18,536
+Yüksek matematiksel işlemleri, basit matematiksel işlemleri, indirger. Bu ne demek?
+
+209
+00:39:19,036 --> 00:39:30,536
+Üniversite ve daha yüksek seviyedeki matematiksel problemleri lise, ortookul matematiği ile cebirsel işlemlerle halledebiliyoruz arkadaşlar.
+
+210
+00:39:31,036 --> 00:39:32,536
+Bunu da söyleyebiliriz.
+
+211
+00:39:32,851 --> 00:39:43,611
+Şimdi analitik çözüm ve sayısal çözüm. Şimdi analitik çözümden kastımız sürekli çözümler. Yani 2x, biraz x kare dedik ya, buradan türev aldığımızda 2x elde ediyoruz.
+
+212
+00:39:43,611 --> 00:39:53,851
+Bu da sürekliliği ifade ediyor, bu da sürekliliği ifade ediyor. Süreklilikten kastım da 0 ila 1 arasında kaç tane sayı vardır? Sonsuz tane sayı vardır.
+
+213
+00:39:53,851 --> 00:39:59,851
+Yani bunu ifade etmek için bir matematiksel denklem söylüyoruz. İşte bunlar sürekliliği ifade eden şeyler.
+
+214
+00:40:00,211 --> 00:40:08,211
+Kesikli, ayrık olan şeyler de sayısal çözümler. İşte x²'nin türevinin 0.8 noktasındaki değeri.
+
+215
+00:40:08,211 --> 00:40:19,211
+Şimdi x²'yi al, türevini al, ondan sonra onun yerine 0.8 koy. Böyle analitik olarak yapılabilir bir şey. Bir de yaklaşık olarak sayısal olarak da hesaplanabilir bir şey.
+
+216
+00:40:19,211 --> 00:40:27,980
+İkisinin farkı bu. Analitik çözümlerde matematiksel fonksiyonlardır bizim çözümümüz. İşte bir Px polinomunun
+
+217
+00:40:28,019 --> 00:40:37,740
+integralini aldığımızda elde ettiğimiz sonuç yine bir kolinomdur. Ama burada elde edeceğim sonuç bir sayı olacak. Sonuçlar daima sayı olacaktır.
+
+218
+00:40:38,387 --> 00:41:04,367
+Karışık olmayan problemlerin çözümünde analitik yöntemler işimizi görüyor. Yani şöyle bir şeyin türevini almak için gidip de algoritma yazmaya gerek yok. Doğrudan çözüm yapabiliriz. Ama karışık bir çözüm varsa iteratif olarak yaklaşık çözüm kullanıyoruz. Bu iteratiften kastımız da genellikle arkadaşlar for veya bazen while olacaktır. 100 iterasyon boyunca çözüme yaklaşmak istediğimizde basit bir for dönüşü yazacağız.
+
+219
+00:41:04,367 --> 00:41:25,367
+tepede bir for döngüsü, içeride de basit basamak, matematiksel işlemler olacak işlemin türüne göre. Eğer çözüme, yaklaşım yöntemi farklı olacaksa, yani çözümüne ne zaman ulaşacağımız belli değilse, while döngüsüyle hassasiyet dediğimiz bir kriterle bu işlemi sağlayacağız.
+
+220
+00:41:25,684 --> 00:41:33,324
+Problemin çözümü yaklaşık olarak bulunduğunda hata analizi yapacağız. İşte hata analizinde de eğer kabul edilebilir bir hataya ulaştıysak,
+
+221
+00:41:33,324 --> 00:41:45,923
+tamam artık durabilir diyeceğiz. Şurada yaptığımız şey tek ve kesin sonuçtur. Yani şurası true ise, burası approximation dediğimiz şey arkadaşlar.
+
+222
+00:41:46,612 --> 00:41:54,532
+Aslında bilimin yaptığı şey de bilimin tanımlarından bir tanesi approximation to the truth, gerçeğe yaklaşma argümanları diyebiliriz.
+
+223
+00:41:54,532 --> 00:42:02,692
+Belli bir hata ile gerçeğe şu an yaklaşıyoruz, ileride kendimizi tekrar güncelliyoruz yeni yeni şeyler çıktığında.
+
+224
+00:42:02,692 --> 00:42:07,092
+Sayısal yöntemler burada approximation yöntemleri diyebiliriz.
+
+225
+00:42:07,092 --> 00:42:09,092
+Örneğin...
+
+226
+00:42:10,132 --> 00:42:22,132
+Analitik yaklaşımda bir fonksiyonun türevini nasıl alacağız? İşte şöyle bir fonksiyonumuz var. Bunun türevi nedir? İşte yukarıdakini indir, aşağıya yaz, dereceyi biraz azalt, işte sana olsun türev.
+
+227
+00:42:22,132 --> 00:42:33,132
+Ne oluyor? İşte türevini aldık. 2x-3, 2x-3'ü bir de burada şey yapmış mesela minimum ve maksimum noktalarını bulalım demiş fonksiyon. O zaman türevini alıp 0'a eşitlersek...
+
+228
+00:42:33,588 --> 00:42:55,588
+tepe noktalarını buluruz. Tepe noktaları da ne oluyormuş? İşte bir buçuk noktası oluyormuş. Bir buçuk noktasındaki fonksiyonun görüntüsü de eksi 0.25'miş. Demek ki bu fonksiyonun pik noktası bir buçuğa eksi 0.25 bir şeymiş diyebiliriz. Bu gayet basit, analitik olarak çözeceğim bir şey. Ama şöyle bir şey olsa...
+
+229
+00:42:55,635 --> 00:43:19,635
+İşte x'ı 1.0 iken y0 imiş, bu 1.2 iken bu böyleymiş, bu böyleymiş. Acaba 1.5 iken x'in 1.5 iken değeri nedir? Veya y'nin 0.8 değeri hangi x değerine karşılık geliyordur? Bunları bulmak istediğimizde elimizde böyle bir fonksiyon yok şurada oldu. Şunu kırmızıyı değiştireyim, daha düzgün bir renk kuralım.
+
+230
+00:43:23,327 --> 00:43:25,887
+Yani şuradaki de olmadı.
+
+231
+00:43:30,739 --> 00:43:36,139
+Şurada gördüğünüz fonksiyona benzer bir fonksiyon burada olmadığı için ne yapıyoruz?
+
+232
+00:43:36,139 --> 00:43:43,139
+Önce fonksiyonu üretecek ara işlemler yapıyoruz. Mesela bu bir enterpolasyon problemi olarak karşımıza gelir.
+
+233
+00:43:43,139 --> 00:43:50,539
+Bu ara işlemler sayesinde karşımıza y'ye bağlı, y'ye ve x'e bağlı bir denkten çıkıyor. Ondan sonra gidiyorsun, yerine bir buçuk koyuyorsun.
+
+234
+00:43:50,539 --> 00:43:54,139
+Ara değer tahmini gerçekleştirmiş oluyoruz.
+
+235
+00:43:56,751 --> 00:44:11,751
+Analitik çözümü mümkün olmayan veya çok zor olan denklemlerin veya problemlerin yaklaşık çözümlerinin bulunmasına sayısal analiz, numerical methods, sayısal yöntemler, numerical yöntemler diyoruz.
+
+236
+00:44:11,751 --> 00:44:14,751
+Şu bir analitik çözümle bulunacak bir şey.
+
+237
+00:44:15,411 --> 00:44:28,931
+x²-3x², bunu diskriminantına alırsınız. Diskriminantı sıfırdan büyükse, sıfıra eşitse, ikinci derece denklem çözüm yöntemleriyle bulunabiliyor. Bu analitücü kolay.
+
+238
+00:44:30,003 --> 00:44:39,803
+Ama şuna baktığınızda, şimdi burada nasıl bir analitik çözüm bulacağız? Şimdi biz denklem çözümlerinde iki tane kural biliyoruz. Bir, bilinenler bir tarafa, bilinmeyenler bir tarafa atılır.
+
+239
+00:44:39,803 --> 00:44:54,203
+Gerekirse sadeleştirme yapılır. Bilinmeyen yalnız bırakılınca işte karşı taraf bilinendir deyip şey yapıyoruz. Şimdi baktığımız zaman burada x'i, yani bu eşitliği sıfır yapacak denklem kökleri, işte bu bir denklem.
+
+240
+00:44:54,320 --> 00:45:01,320
+ne bilinenleri bir tarafa atsak, bilinenleri bir tarafa atsak çıkmıyor, başka bir şeyler yapsak çıkmıyor, işte sadeleştirme yapamıyoruz.
+
+241
+00:45:01,320 --> 00:45:11,320
+Burada çaresiz kalbuki. Halbuki bu fonksiyon çizdirildiğinde, tabi ben yaklaşık böyle gerçek bir şey çizemeyeceğim.
+
+242
+00:45:11,320 --> 00:45:13,320
+Ne bileyim, belki şöyle bir şey.
+
+243
+00:45:13,320 --> 00:45:22,188
+İşte biz şu noktalara yaklaşacak şekilde bir çözüm üretebilirsek, o zaman bunun yaklaşık çözümlerini bulabiliriz deriz.
+
+244
+00:45:22,387 --> 00:45:29,987
+Şimdi burada bir araçtan bahsedeyim. Kullanışlı bir araç. Desmos, belki daha önce duyanlarımız vardır.
+
+245
+00:45:29,987 --> 00:45:43,788
+Hem hesaplama yapılabiliyor hem de plot işlemi yapılabiliyor. Mesela şunu çizdirmeye çalışayım. X kare vardı.
+
+246
+00:45:53,108 --> 00:45:58,028
+Bir de smoot, koks, polinomit.
+
+247
+00:46:01,043 --> 00:46:13,043
+Bir değişken tanımı yapmak gerekiyor. Mesela x üzeri 4'ün görüntü. Biz şunu şöyle değiştirelim. x kare y eşittir demek gerekiyormuş.
+
+248
+00:46:27,731 --> 00:46:54,411
+e üzeri x. Bakın böyle bir şey. Şimdi demek ki bu bir yerde neyi kesiyor? Şurada kesiyor. Bakın burada kökleri görebiliyoruz. Yaklaşık kökleri. Ama bunu, diyeceğiz ki biz, işte köklerden bir tanesi mesela yaklaşık olarak eksi altıdan başlayalım. Eksi altıdan başlayıp, öyle yaklaşacağız, yaklaşacağız şu noktaya kadar gelmez.
+
+249
+00:46:54,608 --> 00:47:03,488
+Veya şuradan başladığımız zaman olsun olduğu yerde işte eksi ikiye doğru gidebiliriz, eksi dördü doğru gidebiliriz. Toplam kaç tane kökü varmış? Dört tane kökü varmış.
+
+250
+00:47:03,488 --> 00:47:12,688
+Bazen real kökü olmadığı durumlar var. O zaman diyeceğiz ki bunun real kökü yoktur gibi yaklaşımlar söylüyor. Desmos'u bu iş için kullanabilirsiniz.
+
+251
+00:47:14,483 --> 00:47:23,043
+Mesela bunun analitik çözümü x eşittir 1 için şöyle bir ifade çıkıyor. Yani 1 bunun çözümü değil. x eşittir 0 için 1 çıkıyor.
+
+252
+00:47:23,043 --> 00:47:30,963
+Şimdi bir şeyin kökü olması için bir kere 0 noktasına ulaşması gerekiyor. Real çözümden bahsediyoruz.
+
+253
+00:47:30,963 --> 00:47:35,003
+Mesela x karenin kökü nedir? 0'dır değil mi arkadaşlar?
+
+254
+00:47:35,003 --> 00:47:41,043
+x kareyi çizdirdiğimizde şöyle bir şey elde ediyoruz. Tam 0 noktasına ulaşır. Ama x kare
+
+255
+00:47:41,523 --> 00:47:49,523
+Artı ikinin kökü var mıdır? Şimdi x k artı ikiyi çizdirecek olursak, ne oldu takıldı?
+
+256
+00:47:49,523 --> 00:47:58,523
+x k artı ikiyi çizdirecek olursak şöyle, artı iki noktasında bir şey. Bunun real kökü yok, imajiner kökü vardır.
+
+257
+00:47:58,523 --> 00:48:04,523
+Çünkü hiçbir zaman x eksenimi kesmiyor, doğru. İmajiner kökü de işte iki iyi dediğimiz falan şeyler.
+
+258
+00:48:05,172 --> 00:48:14,771
+Reel kökü olan bir şey, demek ki sıfır noktasını kesiyorsa, şimdi x eşittir bir de eksi bir değermiş. Mesela x eşittir bir şurası olsun,
+
+259
+00:48:14,771 --> 00:48:26,771
+şurası olsun, x eşittir sıfır da şurası zaten. Şimdi x eşittir bir de negatif bir değer, x eşittir sıfır da pozitif bir değer. Demek ki
+
+260
+00:48:27,059 --> 00:48:49,340
+1 ile 0 arasında bir kök vardır yaklaşımından yola çıkarak ilerleyeceğiz biz de konularımızda. Niye? Çünkü arada bir kesinti var yani 0 noktasından geçiş yapılmış. Bir taraf pozitif, bir taraf negatif. İşte bunu kullanarak yaklaşım yöntemlerini işleteceğiz. Mesela diyeceğiz ki bu arada en basit olarak değil bir de x eşittir 0.5'e bakalım.
+
+261
+00:48:49,568 --> 00:48:59,367
+x eşittir 0.5'e baktığımızda, eksi 0.6. Demek ki 1 ile 0.5 arasında değildir bu kök. Çünkü arada 0'ı geçmiyor ama
+
+262
+00:48:59,367 --> 00:49:05,447
+0.5 ile 0 arasında bir işaret değişimi olmuş. Demek ki burada bir kök vardır.
+
+263
+00:49:05,599 --> 00:49:15,079
+Ne yaptık? Biraz daha yaklaşmış olduk. Biraz daha ilerlersek, biraz daha 0.5 ile 0 arasına bakarız. 0.75'e göre bakarız.
+
+264
+00:49:15,079 --> 00:49:27,559
+İşte bisection yöntemi dediğimiz yöntem bu. Veya işte bunu biz programlamada binary arama, ikili arama algoritması olarak bir aranan veriyi bulurken kullanıyoruz.
+
+265
+00:49:30,900 --> 00:49:51,692
+Bu kolay çözülebilir bir şey değil. Elen var, x küp var, tanjant var. Neyi neye değiştireceğiz? Yani bir şeyi bir şeye atamıyoruz. Bunlar bizim çözüm yöntemlerinde kökleri bulabileceğimiz şekilde karşımıza gelecek karmaşık denklemler diyebiliriz. Buraya kadar bir sorumuz var mı? Her şey anlaşılıyor mu arkadaşlar?
+
+266
+00:49:57,619 --> 00:50:19,019
+Çok az daha ilerleyelim, keseceğiz, türeceğiz. Şimdi burada biz sayıların gösterimi temel kavramlarla bu derse başlıyoruz, algoritmalardan önce. Şimdi biz matematikte ve bilgisayar bilimlerinde en çok sayı gösterimini şu tabanlarda yapıyoruz. Base 10, 2, 8 ve 16.
+
+267
+00:50:19,168 --> 00:50:27,168
+İkilik sistem bilgisayarda doğrudan işlemcinin ve bellek birimlerinin çalışma mantığıyla alakalı olduğu için kullanılır.
+
+268
+00:50:27,168 --> 00:50:37,168
+Sıfır ve birlerden oluşuyor dedik. Sekizlik sistem ve onaltılık sistem ikilik sistemde yazması uzun ifadeleri kısa şekilde yazmadık.
+
+269
+00:50:37,168 --> 00:50:41,168
+Şimdi şöyle göstereyim. Hem de dönüşümleri konuşmuş oluruz.
+
+270
+00:50:43,731 --> 00:50:49,132
+sıfır sıfır sıfır sıfır sıfır sıfır. Kaşa karşılık geliyor? Bu 65.
+
+271
+00:50:50,452 --> 00:50:57,652
+Şimdi nasıl? Hocam ben bunu ezber yani şey denme A harfinin baineri karşılığı, büyük A'nın.
+
+272
+00:50:58,251 --> 00:51:04,132
+Ezber olduğum için hızlıca yazdık. Şimdi bunu onluk sisteme çevirin desek, ne oluyor?
+
+273
+00:51:04,132 --> 00:51:11,411
+İki üzeri sıfırlar, iki üzeri birler, iki üzeri ikiler, iki üzeri üçler, iki üzeri dörtler, iki üzeri beşler, iki üzeri altlar, iki üzeri yediler.
+
+274
+00:51:11,603 --> 00:51:20,603
+Ne yapıyorsunuz? 0x2 üzeri 7, 1x2 üzeri 6. 0'ları yazmaya gerek yok. Artı artı artı dediniz, artı 1x2 üzeri 0.
+
+275
+00:51:20,603 --> 00:51:28,103
+Şu 64 dediniz, işte şuna da 1 dediniz, toplam 65'i bulunuyor. Şimdi bunu uzun uzun yazmak biraz zor.
+
+276
+00:51:28,103 --> 00:51:35,603
+Geçen dönem BBG'de de gördünüz, bunu 8'lik sisteme veya 16'lik sisteme çevirerek daha hızlı 10'luk sisteme çevirebiliyoruz.
+
+277
+00:51:35,603 --> 00:51:37,995
+Veya tam tersini daha hızlı yapabiliyoruz.
+
+278
+00:51:38,068 --> 00:51:48,068
+Mesela 16'lık sisteme nasıl çeviriliyor bu sayı? Söyleyin bakalım. Geçen dönem BBG'de almış olmalı lazım.
+
+279
+00:51:57,588 --> 00:52:04,588
+Dörd ərli bölmeler halinde. Dörtlü grup diyeceğiz. Nereden dörtlü grup diyeceğiz? Bu taraftan da başlayacağız, bu taraftan da başlayacağız.
+
+280
+00:52:10,387 --> 00:52:30,387
+sağdan yani şuradan. En düşük anlamda şimdi buna LSP list significant bit diyoruz. Bitten itibaren dörder dörder grupluyoruz. Neden dörder dörder? Çünkü
+
+281
+00:52:30,480 --> 00:52:40,480
+iki üzeri birler, iki üzeri iki, iki üzeri sıfır, iki üzeri bir, iki üzeri iki, iki üzeri üç, ondan sonra iki üzeri dört geliyor. Yani bu dört yüzü zaten hegzadesimalin karşılığıdır.
+
+282
+00:52:40,480 --> 00:52:48,480
+Dolayısıyla on altıları, on altı üzeri sıfıra karşılık gelecek şekilde dörder dörder. Eğer sekizli deseydik, bu sefer üçer üçer bulutlardır.
+
+283
+00:52:48,480 --> 00:52:52,139
+Şimdi on altılık tabana geldiğimizde, onu açalım birazcık.
+
+284
+00:52:52,371 --> 00:53:05,771
+0, 1, 2, 3, 4, 9'a kadar gidiyor. Bundan sonra 16'lık tabanda 15'e kadar gideceğimiz için yeni semboller var. Buna A demişiz, B demişiz, C demişiz, D demişiz ve E demişiz.
+
+285
+00:53:05,771 --> 00:53:19,211
+Bir de F var. Yani şu bizim 10'a karşılık geliyor, decimal olarak 11'e karşılık geliyor, 12'ye karşılık geliyor, 13, 14 ve 15.
+
+286
+00:53:19,827 --> 00:53:28,947
+Burada bir dönüşüm yaptığımızda, bunun on altılık tabanda karşılığını bulurken, mesela şunları biraz daha zorlaştırayım, şöyle yapayım.
+
+287
+00:53:28,947 --> 00:53:37,707
+1, 1, 1, 0 olsun. Şimdi bu nedir? Bu 1'e karşılık geliyor. Doğrudan on altılık tabandaki karşılık da zaten 1.
+
+288
+00:53:37,707 --> 00:53:40,707
+Şu onluk sistemde kaça karşılık geliyor?
+
+289
+00:53:40,815 --> 00:53:54,655
+1, 2, 4, 8, 8, 4 daha 12, 2 daha 14. 14 neymiş? E'ymiş. O zaman bu E'ye 1'dir. 16'lık temelde egzadesim olarak bunu böyle gösterebiliriz. Bir saniye arkadaşlar.
+
+290
+00:54:03,315 --> 00:54:12,596
+Arkadaşlar, zaten vakit gelmiş bir 10 dakika ara verelim. Ben de o arada işimi halledeyim, bölüme gideceğim. Geldiğimizde az bir şey var, onu da devamlı getiririz.
+
+291
+01:07:49,715 --> 01:07:50,715
+Arkadaşlar.
+
+292
+01:07:54,708 --> 01:07:56,708
+Ekran geldi herhalde.
+
+293
+01:07:58,708 --> 01:08:07,708
+Evet, bu şekilde ikilik sistemi, onaltılık sistemi veya tam tersinden de yapabildik. Mesela ne diyelim, C8.
+
+294
+01:08:08,708 --> 01:08:17,708
+C8'in karşılığını nasıl bulacağız? 8'i ayrı böleceğiz, C'yi ayrı böleceğiz. İşte 1, 0, 0, 0, 8'dir.
+
+295
+01:08:18,100 --> 01:08:25,340
+1100'da C'dir. Bunu ikilik sisteme çevirebiliyoruz. Binary sisteme çevirebiliyoruz arkadaşlar.
+
+296
+01:08:28,627 --> 01:08:41,147
+Sekizliyi çok kullanmıyorum. İstersek dörtlü bile yapılabilir de. Burada peki niye sürekli onaltılığı kullanmıyoruz da bazen ikiliye ihtiyaç duyuyoruz? Bu konuda bir bilgisi olan var mı?
+
+297
+01:08:45,555 --> 01:08:49,155
+Hatta 256'lık kullansak daha rahat olmaz mı?
+
+298
+01:09:00,979 --> 01:09:06,659
+16'lık sistem yerine 256'lık sistem çok çok daha kısa yazarız sembollerimizi.
+
+299
+01:09:09,844 --> 01:09:10,844
+İki olan var mı?
+
+300
+01:09:12,644 --> 01:09:17,443
+Hocam, iki yüz elli altı farklı sembol kullanmamız gerekmez mi o zaman?
+
+301
+01:09:17,443 --> 01:09:20,844
+Çin alfabesi gibi olur. Çince gibi olur.
+
+302
+01:09:20,844 --> 01:09:24,443
+Bu sefer dil zorlaşır, anlaşılırlık zorlaşır.
+
+303
+01:09:24,443 --> 01:09:30,244
+Belki şu sembollerin izinle iki tane sembol yerine belki bir tane ile göstereceğiz ama
+
+304
+01:09:30,244 --> 01:09:35,043
+yüz elli altı tane sembolü ezberlememiz gerekiyor. Bu biraz zor bir şey.
+
+305
+01:09:35,444 --> 01:10:00,364
+Çince'de zannediyorum, orada karakter harf yok. Ne derler? Kavram diyorlar. Kırk bine yakın şey var. Birçok şeyi onlardan türeterek yapıyorlar. Pür Çince falan en sade halleri daha azdır ama kırk bin tane şeyi ezberlemek o dili oldukça zor hale getiriyor. Aynen burada da.
+
+306
+01:10:00,435 --> 01:10:21,036
+tabanı arttırdığımızda ne olacak? Daha güç hale gelecek. Şimdi anlamlı rakam diye bir şey var. Şimdi significant diye ifade ediyor. Virgülden sonra veya işte virgünün sonundaki sayıların kaç tanesini kullandığımızı söylüyoruz.
+
+307
+01:10:21,268 --> 01:10:29,948
+Örneğin beş anlamlı rakam dediğimizde, şurada bu sayıyı böldüğümüzde 0.666 gidiyor.
+
+308
+01:10:29,948 --> 01:10:36,987
+Bunu beş anlamlı rakamla yazdığımızda arkadaşlar, şurada beş tane rakamın olacağını, yuvarlama yapıyoruz meclurak.
+
+309
+01:10:36,987 --> 01:10:43,387
+Beş anlamlı rakamla göstermek gerekiyor. Bunlar birazcık temel kavramlar.
+
+310
+01:10:43,387 --> 01:10:48,987
+Mesela şuna baktığımızda, bunu beş anlamlı rakamla ifade ettiğimizde, burada 0-1 anlamı yok.
+
+311
+01:10:49,024 --> 01:11:02,024
+Şimdi sıfır doğal olarak var ama burada birin bir anlamı olacak. Beş anlamlı rakam dediğimizde burada virgülden önce dört şey bir virgülden sonra dört tane rakam olacak şekilde yazabiliyoruz. Bu da anlamlı rakam.
+
+312
+01:11:03,024 --> 01:11:09,024
+Şu dönüşümleri göstermiyorum detaylı olarak zaten bunlar bilinen şeyler işte sekizlikten
+
+313
+01:11:09,619 --> 01:11:36,203
+onluğa dönüşüm, onluktan ikiliye dönüşüm, yani ya bölerek ya da çarpa çarpa, biraz önce yukarıda yaptığımız gibi veya ikilikten onaltılığa, onaltılıktan ikiliye dönüşüm yapıp onluk sisteme dönüş yapabiliyoruz. Basit şeyleri yapmak yeterli. Şunu sorayım, mesela 4A, F ile 3, 2,
+
+314
+01:11:36,884 --> 01:11:42,283
+İkinin hexadesimal toplamı ne olur? Bunun sonucu nedir? Yapın bakalım.
+
+315
+01:11:46,387 --> 01:11:51,987
+Bir de 522'den 4af'i çıkartalım.
+
+316
+01:11:57,427 --> 01:12:01,747
+Nasıl yapabiliyorsunuz? Çok kısa şu kapatayım hemen geliyorum.
+
+317
+01:12:26,163 --> 01:12:29,243
+Toplama nispeten kolay değil mi? Çıkartma biraz zor.
+
+318
+01:12:31,023 --> 01:12:36,144
+Burada ilkokul seviyesinde toplama şeyi düşünmek gerekiyor.
+
+319
+01:12:36,403 --> 01:12:38,443
+Şimdi f dediğimiz sayı 15'ti.
+
+320
+01:12:39,224 --> 01:12:41,263
+15'e 2 eklersek 16.
+
+321
+01:12:41,783 --> 01:12:45,363
+7, 8 daha 15, 15'in 5'i elde var 1 diyorduk.
+
+322
+01:12:45,363 --> 01:12:48,183
+Burada 15, 2 daha 17, 17'nin
+
+323
+01:12:49,463 --> 01:12:51,243
+1'i 16'dan çıkartıyorsunuz.
+
+324
+01:12:51,796 --> 01:12:54,556
+Elde var biri, elde var biri buraya getirip yazıyoruz.
+
+325
+01:12:55,556 --> 01:13:05,796
+Şimdi 10, bir daha elde 11, iki daha 13, 13 neye karşılık geliyor? 10A'ydı, 11B'ydi, 12C'ydi, 13D, D'ye yazacağız.
+
+326
+01:13:06,036 --> 01:13:10,436
+4, 3 daha, 7, 7D'ye bir. Elgile resmi. [öğrenci] teşekkür ederiz.
+
+327
+01:13:10,636 --> 01:13:14,636
+Evet, şunun sonucu nedir? Bu çıkarma işleminin sonucu.
+
+328
+01:13:18,163 --> 01:13:24,163
+Burada da ilkokulda ne yapıyorduk? Çıkartamayın da ne yapıyorduk?
+
+329
+01:13:26,163 --> 01:13:30,163
+İkiden F çıkmaz. Çıkmazsa ne yapacağız?
+
+330
+01:13:33,163 --> 01:13:35,163
+Komşudan ne alıyoruz?
+
+331
+01:13:35,163 --> 01:13:37,163
+Bir onaltılık almamız lazım.
+
+332
+01:13:37,163 --> 01:13:42,123
+Komşudan onluk alıyorduk. Burada komşudan bir onaltılık alacağız.
+
+333
+01:13:42,323 --> 01:14:06,123
+İkiden F çıkmadı, komşudan 16'lık alınca burası 1 oldu. Buraya 16'lık gelince burası 18 oldu. 18'den F çıktı, 15 çıktı, 3 kalır. 1'den A çıkmaz, komşudan yine bir 16'lık aldı. 16, 1 daha 17, 17'den A çıktı, 7 oldu. Komşuda ne kaldı? 4 kaldı, 4'ten 4 çıktı, 0.
+
+334
+01:14:06,387 --> 01:14:14,387
+73, hexadesimal deyip, mantığı bu şekilde. Diğer kısımları zaten çok söylemeye gerek yok.
+
+335
+01:14:14,387 --> 01:14:22,387
+Şimdi tam sayılar böyleyken, floating point sayılar biraz daha detay gerektiriyor. Bunun bir işareti var.
+
+336
+01:14:22,387 --> 01:14:30,387
+Virgülden önceki kısmı var, virgülden sonraki kısmı var, hassasiyet kısmı var. Bunlara mantısa ve eksponent diyoruz.
+
+337
+01:14:31,796 --> 01:14:39,796
+Genel anlamda şu şekilde yazılıyor. Biz bu derste bu Desim Floating Point Notasyonu çok kullanmayız da bilginiz olsun diye koyduk.
+
+338
+01:14:39,796 --> 01:14:49,796
+İşte burada bir mantis bilgisi, burada bir üst bilgisi ve kullanılan sayı sisteminin tabanı, yani ikilik tabanda mı olacak, 16'lık tabanda mı olacak, buna göre bir genel hali vardır.
+
+339
+01:14:49,796 --> 01:14:56,796
+Ve burada bilimsel notasyona göre sayıları yazmamız gerekiyor. Ne demek bilimsel notasyon?
+
+340
+01:14:56,884 --> 01:15:09,884
+virgülden önce bir basamak, virgülden sonra diğer basamak da olsun, iki basamak ve gerisi eksponansiyel şekilde olacak. Mesela Avogadro sayısı 6,02 x 10 üzeri 23 müydü?
+
+341
+01:15:09,884 --> 01:15:15,467
+Yani ben bunu 602 x 10 üzeri 21 diye yazabilirim.
+
+342
+01:15:15,539 --> 01:15:38,020
+Öyle değil mi? Yani yanlış yapmadıysam. Ama bilimsel notasyon diyor ki virgülden önce bir tane, virgülden sonra iki tane geri kalanını eksponansiyel şekilde yaz. Tabii bu onluk tabanda. İkilik tabanda da yapabiliriz. Önce onluk taban örneklerine bir bakalım. 156 virgül 78. Bunu virgülden önce sıfır, virgülden geri kalanını virgülden sonra yazacak şekilde yazabiliriz. Bu 10 üzeri 3 demektir. İki tane kaydırmıyoruz.
+
+343
+01:15:38,260 --> 01:15:53,620
+Veya şunu, işte olması gereken 67,42, birgünden önce sıfır, birgünden sonrasında böyle, 10 üzeri 2, şu şekilde yazılabilir, bu şekilde yazılabilir. Bunların bir notasyonu olacak. O da hani Avogadro sayısından aklımızda kalsın.
+
+344
+01:15:55,940 --> 01:16:04,500
+Bu mesela hani aynı şekilde, hani şuradaki gerekli anlamsız rakamları atmak için bu şekle çevirip böyle yazabiliyoruz.
+
+345
+01:16:05,108 --> 01:16:12,108
+Bunlar da uygulanabilir şeyler ama şu daha doğru olanı veya şunu kullanabiliyoruz.
+
+346
+01:16:12,108 --> 01:16:22,108
+Dört anlamlı basamakla yazmak demek. Yani şu da dört anlamlı basamak, bu da dört anlamlı basamak. Bunlar haklı gösterimler.
+
+347
+01:16:22,108 --> 01:16:31,108
+Şimdi burada iki tane operasyonumuz var. Chopping, Roundation veya Truncation dediğimiz işlem.
+
+348
+01:16:31,604 --> 01:16:37,604
+Roundation yuvarlama, trancation da kopartma, kesme, budama dediğimiz şey.
+
+349
+01:16:37,604 --> 01:16:43,104
+İşte ben bu sayıyı şuradan kopartırsam, trancait edersem bu trancation oluyor.
+
+350
+01:16:43,104 --> 01:16:48,104
+Ama yuvarlarsam 6-5'ten büyük olduğu için şunu 3 yapacağım. İkisinin farkı budur.
+
+351
+01:16:48,692 --> 01:16:57,891
+Bunu decimal point'e göre, decimal place'e göre söylediğimizde, işte dört tane basamak olsun dersek virgülden sonraki basamak sayısına göre düşünüyoruz.
+
+352
+01:16:57,891 --> 01:17:07,252
+İşte p sayısının truncation'ı, virgülden sonra dört tane basamak olacak şekilde truncation'ı. Buradaki 9'a bakmadan doğrudan bunu aldık.
+
+353
+01:17:07,252 --> 01:17:14,532
+Roundation yaptığımızda da o 9'la dikkate alacağımız için 3.14-16 olacak temel özellikler bunlar.
+
+354
+01:17:14,963 --> 01:17:24,564
+Ve bu beş tane significant rakamdan oluşuyor demektir. Yani şunlarla beraber beş tane anlamlı rakam içeriyor şeklinde söyleyebiliriz.
+
+355
+01:17:25,763 --> 01:17:41,843
+Round of Errors diye bir kavramdan bahsedeceğiz. Şu elde ettiğimiz truncation değerini, roundation değerinden çıkardığımızda da elde ettiğimiz bu değer round of error kesme hatası gibi söyleyebiliriz.
+
+356
+01:17:42,931 --> 01:17:44,731
+Buraya kadar bir sorumuz var mı?
+
+357
+01:17:49,268 --> 01:18:08,268
+Evet, şurada bazı örnekler var. Bunlara bakabilirsiniz. İşte bu sayıyı, truncation yapacağız, three significant, üç anlamlı basamakla veya tridesimal. Şimdi, three significant olunca üç tane sayı olacak burada. Burada üç tane sayı, burada da üç tane sayı olacak şekilde söyleyebiliriz.
+
+358
+01:18:09,684 --> 01:18:15,264
+Tri decimal olunca da virgülden sonra üç tane basamak olacağını söylüyoruz ve bunları truncation yapacağız.
+
+359
+01:18:15,264 --> 01:18:21,764
+Truncation yaparken, Tri significant olacaksa şunları sileceğiz. İşte bunu 34.7.
+
+360
+01:18:21,764 --> 01:18:29,884
+3 decimal tri decimal olacaksa 34, 7, 8, 2 deyip bırakıyoruz. Roundation yaparken de
+
+361
+01:18:30,195 --> 01:18:50,195
+347, 34,7, 34,8 yapmamız gerekiyor. Çünkü ondan önceki şey 5'ten büyük. Tridesimal yapacak olursak, şu bir 5'ten küçük olduğu için aynen 782 olarak kalacak. Diğer örnekleri de buna bakarak pratik yapabilirsiniz.
+
+362
+01:18:50,804 --> 01:19:01,804
+Şunların floating point gösterimleri nedir demişiz. 12.35 neye karşılık geliyor? 0,1235 x 10 üzeri 2 şeklinde gösterebiliriz.
+
+363
+01:19:01,804 --> 01:19:13,804
+Şunu 0,080059 bu 10 üzeri 0 şeklinde, bu zaten doğrudan şey olarak vermiş ama eksponant kısmında söylememiz gerekiyor.
+
+364
+01:19:18,931 --> 01:19:29,731
+İşte bu şu formatta 519. Belki bunu iki tane kaydırıp, yani şuradaki gereksiz sıfırları alıp 10 üzeri eksi 2 şeklinde ifade edebiliriz.
+
+365
+01:19:31,332 --> 01:19:39,131
+Şimdi anlamlı basamaklar aslında şu. Şimdi kilometreye baktığınızda şöyle bakarsınız, bu nedir? Ya 50'ye yakın bir şey dersiniz.
+
+366
+01:19:39,828 --> 01:19:59,828
+Veya tam kısmını görmüyoruz. Ne olabilir? Bu hani 45'den biraz büyük, işte 50'ye biraz daha yakın. İşte 48 olabilir, 49 olabilir. Ama şöyle daha yakından baktığınızda, hele bile bu dijital bir sistemse, işte 49 demiş mesela burada. 49'dan sonrası...
+
+367
+01:20:00,884 --> 01:20:05,244
+İşte bu anlamda basamaklar daha hassasiyeti artıran ifadeler.
+
+368
+01:20:05,244 --> 01:20:07,804
+Bunu biz yaklaşım yöntemlerinde şöyle söyleyeceğiz.
+
+369
+01:20:07,804 --> 01:20:16,764
+İşte diyeceğiz ki başlangıç noktası 1.225 olsun ve virgülden sonraki 3 basamağı dikkate alarak hesaplamalarımızı yapalım.
+
+370
+01:20:16,764 --> 01:20:21,684
+İşte bu x0. değerimiz. Biz x1'i x0'dan türeteceksek,
+
+371
+01:20:21,684 --> 01:20:28,283
+bundan sonraki elde ettiğimiz sonuç mesela 2.878, 6, 5, 4 böyle bir şeyler olsun.
+
+372
+01:20:28,479 --> 01:20:36,239
+şununla şunun arasındaki ilişki mühim değil. Bunu yine üç basamak götüreceksek, üç basamak Roundation yapacağımız için bu ne olacak aslında?
+
+373
+01:20:36,239 --> 01:20:51,600
+2.879 şeklinde değerlendireceğiz. Şu beşten büyük olsun. Veya Trunkation yapacaksak, 2.878 bu Roundation sonucu, bu Trunkation sonucu üç tane basamak virgülden sonra olsun dersek.
+
+374
+01:20:54,452 --> 01:21:08,612
+Bu biraz daha güveni artırıyor. Burada karşımıza iki tane accuracy ve precision dediğimiz kavram geliyor. Şu accuracy. Her ne kadar ikisi aynı anlama yakın şeyler olsa da ufak bir farklılıkları var.
+
+375
+01:21:10,771 --> 01:21:20,131
+Hesaplanan veya ölçülen değerin gerçek değere ne kadar uyduğunu ifade ediyor. Mesela gerçek değerimiz, işte şurada olması gereken tam 12'den vuracağını söylüyoruz.
+
+376
+01:21:20,627 --> 01:21:43,027
+Burada en doğru olan şu, şunlar biraz daha yaklaşım yani doğrudan uzaklar. Yanlışlık ve belirsizlik var burada A durumunda. Şimdi B'de de ne kadar uyum olduğu yani hassaslıktan kastımız bir test yapıyoruz. O test gerçek sonucun etrafında kümeleniyor. Böyle dağımık bir durum yok.
+
+377
+01:21:43,699 --> 01:21:48,699
+Bunu mesela Covid zamanında hatırlarsanız testin hassasiyeti derler.
+
+378
+01:21:48,699 --> 01:21:55,699
+İşte 1000 kişiye hasta etiketi verdik. Bunlardan gerçekte 900'ü hastaydı.
+
+379
+01:21:55,699 --> 01:22:02,699
+Hassasiyet işte o 900 etrafında %90 falan ölçülür. Böyle bir ölçümdür.
+
+380
+01:22:02,699 --> 01:22:06,699
+Yani doğruluktan ayrı bu kriterede dikkat ediyoruz.
+
+381
+01:22:06,699 --> 01:22:10,315
+Şimdi yanlış ve belirsizlik burada ağ durumunda çok fazla.
+
+382
+01:22:10,452 --> 01:22:17,252
+B durumuna baktığımızda doğrular çok daha yakın, işte ortaya gelmiş, belirsizlik hala fazla.
+
+383
+01:22:18,372 --> 01:22:24,452
+Burada yanlışın etrafında kümelenmişiz. Yani herkes yanlış bir şeyin etrafında kümelenmiş.
+
+384
+01:22:24,452 --> 01:22:35,452
+Hassasiyet var ama yanlışlık fazla. Olması gereken hem doğru hem de hassas durum, yani en ideal çözümün oluşacağı durumlar. Bunlara dikkat etmemiz gerekecek bu iki kavram.
+
+385
+01:22:36,212 --> 01:22:41,612
+Şimdi hata kavramına bakalım, bitireceğim. Hata çünkü çok geniş bir şey.
+
+386
+01:22:42,412 --> 01:22:50,212
+Şimdi hata dediğimiz şey, elde edilen bir actual değer var, bir de hesaplanan değer var veya predicted değer var.
+
+387
+01:22:50,212 --> 01:22:55,012
+İşte gerçek değerin hesaplanan değer arasındaki farkı. Genellikle fark...
+
+388
+01:22:55,475 --> 01:23:11,475
+Örneğin ben iki bekliyordum, sekiz geldi, işte aradaki fark eksi demiyoruz. Bu aradaki farkı mutlak değerle gösterip altı diyoruz. Veya sekiz bekliyordum, iki geldi, yine altı. Bu genellikle pozitif bir değerle ifade edilen bir kavramdır.
+
+389
+01:23:11,796 --> 01:23:36,275
+Çünkü bazen hatalar, işte bir durumda mesela iki bekliyorduk, sekiz geldi, sekiz bekliyorduk, beş geldi. Burada hata eksi altı derseniz, burada üç derseniz, toplam hatayı göz önüne alacaksanız, toplam hatayı bunları topladığınızda üç dersiniz. Halbuki toplam hata daha azı. Onun için bunların mutlak değerlerine bakıp, mutlak değer eksi altı artı, mutlak değer üç deyip...
+
+390
+01:23:36,532 --> 01:23:44,932
+Toplam 9 birimlik bir sapmanın meydana geldiğini söylemek adına mutlak değer işaretini kullanacağız.
+
+391
+01:23:46,211 --> 01:23:57,051
+Burada hata kavramı ile birlikte bir de yanlış kavramı var. Örneğin siz dijitleri yanlış yazdınız, yer değiştirdiniz, bir şeyleri yanlış yaptınız. Bu hata değildir, bu yanlıştır, kusurdur.
+
+392
+01:23:57,572 --> 01:24:00,452
+Burada şunu da söyleyelim, bilgisayar hata yapar mı?
+
+393
+01:24:07,123 --> 01:24:09,123
+Bilgisayar hata yapar mı?
+
+394
+01:24:11,123 --> 01:24:23,123
+Yapar bence çünkü hani sonsuz mesela pi'nin atıyorum sonsuza kadar ki bütün basamaklarını alamayacağı için bir fark olacak arada mutlaka.
+
+395
+01:24:23,123 --> 01:24:29,123
+Şimdi bilgisayarın hata yapması ne demek peki? Önce onu şey yapalım da ona göre cevap ver.
+
+396
+01:24:30,452 --> 01:24:41,452
+Yani siz bir kod yazdınız, A artı B dediniz, ne bileyim A çarpım 3 dediniz. Bu kendisine verilen veriyi, işte iki tane veriyi topluyor, bir şey elde ediyor.
+
+397
+01:24:41,452 --> 01:24:49,452
+Bu toplamın sonucunda şu verilen veriler neyse elde edilen sonuç her zaman aynıdır. Onun için bunu 3 ile çarpar.
+
+398
+01:24:49,452 --> 01:24:58,315
+Yani eğer bir arıza yoksa bilgisayar arıza yapabilir, ne bileyim bir sistemde bir sıkıntı olur, 3 ile çarpamazsınız.
+
+399
+01:24:59,091 --> 01:25:09,091
+Ama hata yapmaz, hata yapmayan bir şey. Deterministik bir cihazdır bilgisayar için. Özellikle günümüzdeki kişisel bilgisayarlar deterministik makinelerdir.
+
+400
+01:25:09,091 --> 01:25:20,091
+Siz bunu A'nın değerine olursa olsun, A'nın değerini atadınız, sürekli üçle çarptığınızda elde ettiğimiz konu hep aynıdır. Onun için hata yapmayan bir şeydir.
+
+401
+01:25:20,091 --> 01:25:26,091
+Ama burada şöyle bir hata söz konusu. Kullanıcının programı yazarken
+
+402
+01:25:26,996 --> 01:25:32,756
+dikkat etmediği bir şey yüzünden elde ettiği sonuç hatalı gelir. Ya işte kod hatalı çalışıyor.
+
+403
+01:25:32,756 --> 01:25:40,756
+Yani bir kodu deterministik makine olduğu için sonsuz defa çalıştığında hep aynı sonuç elde ederse eğer random bir durum yoksa.
+
+404
+01:25:40,756 --> 01:25:47,636
+Dolayısıyla normalde bilgisayar hata yapmaz. Ama şöyle bir hatayla karşılaşırız. Aslında buna da hata demiyoruz.
+
+405
+01:25:47,636 --> 01:25:50,996
+Şimdi A bir float sayı.
+
+406
+01:25:52,627 --> 01:26:18,827
+Load A dedik. Buna siz kod içerisinde belli işlemler yaptınız. Bir algoritma çalıştı. Sonra IF dediniz. A eşittir eşittir 0.01. Mesela burada bir döngü var. A 0.01 olana kadar çalıştı. Şimdi burada ekrana da A'yı bastırdınız. A'nın değerini 0.01 olarak gördünüz.
+
+407
+01:26:19,828 --> 01:26:21,772
+Peki, şurası doğru olur mu?
+
+408
+01:26:26,931 --> 01:26:42,291
+Burada şu en son bir print var. Burada a dedik. A'nın sonucunu 0.01 olarak koyduk. Şu if ifadesi doğru olabilir mi? Veya yanlış olabilir mi?
+
+409
+01:26:49,235 --> 01:26:54,515
+Bununla çok karşılaşacaksınız mesela. Genellikle durdurma kriteri diye.
+
+410
+01:26:56,315 --> 01:27:03,915
+Şimdi bu doğru da olabilir, yanlış da olabilir. Şimdi bu karşılaştırma. Burası bir real sayı. Bu da bir real sayı.
+
+411
+01:27:03,915 --> 01:27:10,476
+Real sayılar plotting point notasyonuyla gösteriyordu. Yani bunların bit dizileri, 0 ve 1'lerden oluşan bit dizileri,
+
+412
+01:27:10,476 --> 01:27:14,235
+eşittir operatörü ne yapıyor? Bu bitleri birer birer karşılaştırıyor.
+
+413
+01:27:14,644 --> 01:27:27,644
+Şimdi bit dizileri, yani 32 bit diyelim mesela, 32 bit flow olduğu için, eğer 32 tane bit iki durumda da aynıysa, true değerini alırsınız. Ama aynı olmama olasılığı çok yüksek.
+
+414
+01:27:27,644 --> 01:27:37,644
+Şimdi sizin şurada yaptığınız matematik işlemlerden sonra, her ne kadar siz bunu 0.01 görüyorsanız da bunun devamı var. Bunun devamı bu bit dizisini değiştiriyor.
+
+415
+01:27:38,003 --> 01:27:51,523
+Sizin şurada yazdığınız 0.01 ise, 0.01 ise, şundan çok çok, belki bir bit bile farklı. O bir bit bile farklılıktan kaynaklı olarak ne yapacaksınız? Siz burada false termine ulaşacaksınız.
+
+416
+01:27:51,523 --> 01:28:04,003
+Buna bilgisayarın hatası da diyemiyoruz. Bu kullanıcının kendi yaptığı bir hatadır. Programcının hatasıdır. Böyle bir karşılaştırma normalde yapılmaz. Mesela ne yapılabilir?
+
+417
+01:28:04,159 --> 01:28:26,399
+a eksi 0.01, a'dan 0.01'i çıkarttığında eşittir eşittir değil de küçüktür eşittir 0.001 gibi yani çok küçük bir sayıya neredeyse fark yok denecek kadar bir sayıda farkı varsa bunların dersek o zaman daha doğru bir işlem yapmış oluyoruz.
+
+418
+01:28:26,399 --> 01:28:30,000
+Çünkü şu arasındaki fark ne kadar sıfıra yakınsa
+
+419
+01:28:30,239 --> 01:28:43,239
+Şundan şey olacak, belki bunun sıfırlarını arttırabiliriz. Bundan küçük olacaktır. Küçük olunca da A0.01'e eşittir gibi bir yaklaşımla problemi çözebiliriz. Tamam mı?
+
+420
+01:28:43,239 --> 01:28:56,239
+Burada anlaşılmayan bir şey var mı? Bunu ileride daha farklı şekillerde göreceğiz arkadaşlar. Karşımıza gelecek. Hatta siz soru soracaksınız, şimdi unutacaksınız. İlerleyen zamanlar, bir dizi hocam böyle bir sorun yaşıyoruz. Sürekli...
+
+421
+01:28:56,847 --> 01:29:01,847
+Benim kodum while döngüsüne girmiyor veya ifin içerisine girmiyor. Ben de bakacağım.
+
+422
+01:29:01,847 --> 01:29:07,847
+Böyle bir şey varsa diyeceğim, hani bu olmaz. İşte bunu böyle bir şekilde değiştirmeyeceğim. O zaman bunu hatırlarsınız.
+
+423
+01:29:12,275 --> 01:29:22,275
+Şimdi, hata nereden kaynaklı olabilir? Floating point'teki işlemlerden kaynaklı olabilir. Burada toplama çarpma falan yaptığınız bunlarla alakalı olabilir.
+
+424
+01:29:22,275 --> 01:29:35,275
+Şurada yazmanız gereken virgülü veya hassasiyeti bir tane eksik yazdınız, bir tane fazla yazdınız. Bu aşağıda yayılarak gitti, daha farklı sonuçlara ulaştı. Bunlardan kaynaklanabilir.
+
+425
+01:29:35,636 --> 01:29:56,636
+Hata kavramını öğrendikten sonra, bu temel kaynak kavramlarını öğrendikten sonra gelecek derste bizim yapacağımız şey hatanın türleri, nelerdir bunları öğrenip ondan sonra lineer olmayan denklem takımlarının, denklemlerin çözümü için hangi algoritmalar var, hangi yaklaşımlar var bunları inceleyeceğiz.
+
+426
+01:29:56,636 --> 01:30:02,636
+Benim anlatacaklarım bu kadar. Sizin sorunuz varsa şimdi sorunuzu alayım arkadaşlar, yoksa dersimizi bitireceğim.
+
+427
+01:30:13,140 --> 01:30:16,140
+Her şey açık herhalde, kimse bir şey sormuyor.
+
+428
+01:30:23,859 --> 01:30:43,459
+Peki, soru yok. O zaman haftaya görüşmek üzere diyelim. Ders sınıflarımızı, her şeyi paylaştık. Katıldığınız için teşekkür ederim. Tekrardan iyi hayırlı bir dönem dilerim. Sağlıklı, mutlu, başarılı. Kendinize iyi bakın arkadaşlar. İyi günler. Teşekkürler hocam, görüşürüz.
