@@ -1,0 +1,2239 @@
+1
+00:00:44,692 --> 00:00:46,332
+Tamam, peki.
+
+2
+00:00:49,012 --> 00:00:57,472
+Ama bir beş dakika bekleyelim. Devamlarımız artsın, katılımcılıklarımız artsın. O yüzden şunu bir açalım bakalım.
+
+3
+00:04:26,995 --> 00:04:28,995
+Teşekkürler.
+
+4
+00:07:00,372 --> 00:07:08,672
+Arkadaşlar artık başlayabiliriz herhalde diye düşünüyorum. Sonra aklımdan bir kimse gelmedi. Saatçı bir beş kişi yaptık. Artık başlayabiliriz.
+
+5
+00:07:10,232 --> 00:07:18,552
+En son command tasarım kalıbını incelemiştik. Şimdi iterator ile devam ediyoruz. Bir yandan ekipsi dörtlüğüm.
+
+6
+00:07:28,627 --> 00:07:41,548
+İterator, iterasyon diye yamuk Türkçe'ye çeviriyoruz. Tekrarlama, iğneleme, sıralama, sırada bir şekilde dikitme anlamlarına geliyor. Bu katıdaki amacımız...
+
+7
+00:07:41,555 --> 00:08:00,216
+Bir parça bütün yapımız var. Bir küçük parçalardan oluşan bir bütün var. Bu bütünle bir işlem yapmak istiyoruz. Bütün oluşturan tüm parçalarda. Yalnız bunu yaparken bu bileşenlerin iç yapısını açığa çıkarmamaya çalışıyoruz.
+
+8
+00:08:08,819 --> 00:08:32,059
+Bütünle ilgili bir eylemi bütün parçaları dolaşarak yapmak veya bütün parçaları eş bir işleme tabi tutmak yapmayı düşünüyoruz. Bunu nasıl tasarlayabiliriz? En basit örnek olarak bir veri yapısı içerisinde dolaşmaktan bahsedebiliriz.
+
+9
+00:08:36,820 --> 00:08:48,840
+Listeler gibi tek boyutlu veri yapılır var. Birbirini izleyen düğümler şeklinde doğrusal bir yapı. Şimdi bu basit doğrusal yapıda bile birçok varyasyon var.
+
+10
+00:08:49,216 --> 00:09:16,975
+Normalde listenin bir başı olur ve sonu olur. Tek yönlü navigasyon yapılır. Dürümler arasında dolaşır. Ama çift yönlü bağlı listeler de var. Her bir düğüm sadece sonraki düğümü değil, önceki düğümün de işaretçisine sahiptir. İlk düğümde Previous işaretçisini aldır. Son düğümde de Next işaretçisini aldır. Bazı Linked Listler circular oluyor. Son düğümün Next pointer'ı baş düğüm.
+
+11
+00:09:17,216 --> 00:09:27,395
+Eğer W link ise o zaman baş düğümün Previous nodu bu sefer Null değil, son düğümü gösteriyor şeklinde.
+
+12
+00:09:27,875 --> 00:09:29,475
+Ötespitaleriyle düşünemişsiniz.
+
+13
+00:09:30,355 --> 00:09:40,216
+Sırf bu listede bile tek yönlü, çift yönlü, circle'ı ya da değil olmak üzere varyasyonlarımız var.
+
+14
+00:09:40,336 --> 00:09:42,536
+Dört ayrı yapılar. İki varyasyon, iki, iki, dört.
+
+15
+00:09:42,536 --> 00:09:51,655
+Onun dışında ağaçlardan bahsedelim. Binary Triller var. Yani her düğümün, ara düğümün en fazla iki tane çocuğu olabileceği.
+
+16
+00:09:51,855 --> 00:09:58,336
+Left-Berate Şapı'nda ahlandırdığınız. Veyahut da en adet çocuğu da olabilir.
+
+17
+00:09:58,355 --> 00:10:10,276
+O zaman binary olmuyor da n-ary deniliyor. Normalde child node, parent node'a işaretçisi sahip değildir. Ama sahip olanları var.
+
+18
+00:10:10,676 --> 00:10:36,975
+Yaptak düğümlerin en kök düğümü gösterebildiği versiyonları var. Onun dışında bir dolu benim çok aşina olmadığım indekslemelerde kullanılan farklı ağaç yapıları var. Tablo yapıları var, map yapıları. Bir dolu şey var. Ama nasıl aradındaki yer ağaç nasıl olursa olsun, bütün bu elemanların ikisi de dolaşmak istiyoruz. Ve hepsine bir soru sormak ve hepsine bir iş yapmak istiyoruz.
+
+19
+00:10:37,888 --> 00:10:59,188
+Öte yandan, bir Binary Tree ile dolaşmanın da farklı algoritmaları var. Şöyle söyleyeyim, nasıl çizeyim? Mesela hemen alayım bir tane Annotation. Şöyle çizelim. Mesela şu köktüğün. Bunun iki tane çocuğu olsun. Şunun da iki tane çocuğu olsun.
+
+20
+00:10:59,892 --> 00:11:11,892
+Tam ağaç olsun mesela. Bu kadar yeter. Mesela LDR dolaşım türü var. Left Data Write anlamına geliyor. Şimdi bu düğümde...
+
+21
+00:11:12,115 --> 00:11:33,076
+Evet, kökten başlıyoruz. Peki, önce sola gidebildiğimiz kadar sola gitmemiz lazım. Bu düğümde kaç yazıyor önemliydi hiç bakmıyoruz. Şu düğme gidiyoruz. Yine sol pointer'ı izliyoruz. Sol pointer var mı? Evet var. Yine buraya gidiyoruz. Artık daha başka sol pointer'ım yok. Buradaki data neymişse onu ele alıyoruz. Diyelim ki 3.
+
+22
+00:11:36,403 --> 00:12:04,283
+Sonra, left yoktu, datayı aldık. Right var mı? Right da yok. O zaman bir geri gidiyorum. Şimdi bu düğümün, tabii şimdi normalde buraya ok yok ama belki bu dolaşımı kolaylaştırmak için var. Veyahut da biz düğümleri gittikçe bir yığını push ediyoruz. Ondan sonra pop ediyoruz. Yani iki makinismadan bir değil. Bu iş yapılıyor da olacak. Peki, şu düğmeye geri geldik. Left gitmiştik, dataya gidiyoruz. Mesela diyelim ki bu bir sıralı indeks harcı olmuş olsun.
+
+23
+00:12:04,403 --> 00:12:30,564
+Orada 5. 2, 5. Left'te yapmıştık. Data'yı yaptık. Şimdi right bakıyoruz var mı? Evet var. Ondan sonra buraya geldik. Burada kaç yazıyor olsun? 6 olsun mesela. 6. Çünkü hani left yok. Data'yı aldık. Right'de yok. Onu da yaptık. Geri döndük. Burada right yapmıştık. Geri döndük. Şimdi bu köklüğümde left yapmıştık. Data'sına bakalım.
+
+24
+00:12:31,539 --> 00:12:33,399
+Diyelim ki 9.
+
+25
+00:12:36,403 --> 00:12:54,644
+Data ile yaptık. Şimdi right yapmak zorundayız. Bu şekilde bir dolaşmak söz konusu olabilir. LDR bir algoritma. Veyahut da right, data, left, bu da bir algoritma. Veyahut da data, left, right, bu da bir algoritma. Data, right, left, bu da bir algoritma.
+
+26
+00:13:04,403 --> 00:13:07,504
+Bir dolu farklı dolaşma algoritmaları olduğunu görürsünüz.
+
+27
+00:13:07,504 --> 00:13:16,443
+Şimdi biz bütün bu karmaşıklıktan uzak bir biçimde bu parça bütün ilişkisini oluşturan varlıklar hepsinde dolaşmak istiyoruz.
+
+28
+00:13:17,423 --> 00:13:19,544
+Bunu nasıl yapabiliriz?
+
+29
+00:13:19,963 --> 00:13:22,564
+Şimdi farklı dolaşım yöntemleri var.
+
+30
+00:13:23,384 --> 00:13:28,504
+Ben bu veri yapısının arayüzünü bu bir dolu farklı dolaşım yöntemleriyle şiştirmek istemem.
+
+31
+00:13:29,235 --> 00:13:56,915
+Peki, mümkün olduğu kadar da eş biçimli bir dolaşım altyapısını kullanabilmeliyim. Hem listelerde, hem ağaçlarda, hem maplerde, her bir şeylerde çalışabilecek bir şekilde. Nasıl kullanabilirim, ne yapabilirim? Bu arada parantez içinde bir bilgi vereyim. Örneğin Java'da herhangi bir collection'ınız varsa bir bilgi yapınız. Ondan bir iterator isteyebiliyoruz. Adını iterator koymuşlar ama iterator tasarım kalıbından biraz daha basitleştirilmiş bir hali.
+
+32
+00:13:57,235 --> 00:14:03,336
+Aslında çok tam olarak uymuyor. Ama burada basit derken kötü anlamında demek istemiyorum.
+
+33
+00:14:04,096 --> 00:14:09,255
+Java'nın sağlığı iterator mekanizması birçok durumda içimizde yarayacaktır. O zaman onu kullanırız.
+
+34
+00:14:09,255 --> 00:14:11,336
+İlla ki bu kalıbı tutmamıza gerek yok.
+
+35
+00:14:11,923 --> 00:14:32,584
+Burada KISS ilkesini hatırlatalım. Keep it simple stupid. Yani işi basit tut. Tutmazsan aptallık yapmış olursun anlamına gelen bir kısaltma bu. Javon'un iterator işimize yarıyorsa onu kullanacağız. Yaramıyorsa veyahut da bir iterator atipsinin olmadığı bir dille çalışıyorsak o zaman bu kalıbı kesinlikle kullanabiliriz.
+
+36
+00:14:39,956 --> 00:15:04,156
+Birinci çözüm, 4.3 eten önerdiği birinci çözüm. Mesela bir list yapımız var. Bizde list iterator sınıfımız var. Bir list iterator'a bir liste veriyorsunuz. Bu da birebir sahiplik söz konusu. Niclekleri yazmamışlar ama. Mesela listenin ne gibi metotları var? Count, eleman sayısını görüyor. Append, araya eleman eklemeye yarıyor. Demo, bir elemanı silmeye yarıyor.
+
+37
+00:15:07,155 --> 00:15:21,535
+is iterator'un ise ne gibi bir metotları var? First, listelik ilk üye eriş. Next, listelik sonuna eriş. Is'dan bütün elemanları dolaştık mı? Current item, şu anda baktığımız eleman şeklinde metotları var.
+
+38
+00:15:22,076 --> 00:15:29,855
+Index ise tam sayı bir üye alan. Şu an kaçıncı elemandayız? Onu tutuyor şeklinde.
+
+39
+00:15:30,484 --> 00:15:40,583
+Tabi burada mesela şu okunusun list yazıcılarına göre demek ki aslında bir üye alan olarak da list türünden büyük leğeli küçük list adlı üye alanda var anlamına gelmektedir.
+
+40
+00:15:40,980 --> 00:16:03,755
+Peki, bu bize ne sağladı? Veri yapısıyla onun dolaşım biçimini birbirinden ayırmış oldu. Böylece şu ilk sakınmak istediğim şey olan dolaşma metotlarını bu veri yapısından soyutlamış oldum, ayırmış oldum. Böylelikle uyumu arttırdım. Bir list veri yapısı sadece...
+
+41
+00:16:04,947 --> 00:16:25,247
+Kendi içeriğiyle ilgili işlemler ve sonunu. Bunu dolaşmak ayrı bir sorumluluk olarak ele alınabileceği için neyin değişikliğini bulunuyor, onu sarmaz. İlk kesin doğrultusunda. Bunun için dolaşma işini yapabilecek başka bir sınıfımız var. O sınıftan nesne oluşturacağız ve kendisine vereceğimiz üstünde dolaşılacak.
+
+42
+00:16:25,748 --> 00:16:38,628
+Bu da sıkkı iyi. Fakat bu sefer bir ekstradan bağlaşım ortaya çıkarmış oldum. List yapısıyla list iterator arasında bir bağımlılık oluşturmuş oldum.
+
+43
+00:16:39,187 --> 00:17:01,087
+Bu bağımlılığı azaltabilir miyim? Aslında azaltabilirim. Çünkü listenin farklı türleri de olacak. Ondan sonra da oluşacak farklı iteratorlar da olacak. Böyle düşünce ilk başta aklıma hemen şey gelebiliyor aslında. Abstract Factory kalıbı gelebiliyor aslında. Veyahut da Factory Method kalıbı da gelebiliyor.
+
+44
+00:17:07,188 --> 00:17:35,188
+Farklı veri yapıları var. Mesela işte liste ailesi var. Map ailesi var. Ama bir dakika bu ailelerin bireylerine eş biçimli şey demeyeceğim. Mesela circle linked, double linked filan üyeleri var listenin ama ağacın öyle değil mesela. Tamam peki. Unutun. O kısmı vazgeçtik. Factory metot. Şurada işe yarayabilir. Bir veri yapısından kendisini dolaşacak bir...
+
+45
+00:17:35,188 --> 00:17:47,048
+Bu bağımları birazcık azaltsa da yine de belli bir somut övüle yapısıyla ilişkili olmak zorunda.
+
+46
+00:17:49,619 --> 00:18:12,939
+Ama yine de buradan yola çıkarak bir yerlere varabiliriz belki. Bir genel bir liste yapısı arayüzü oluşturalım. Bir de genel bir dolaşım biçimi arayüzü oluşturalım. Ve böylece hatta belki farklı bir yapı zamanı da destekleyecek bir arayüz de olabilir bu. Ama en azından liste yapısına bile hitap etse bu bizim işimizi verecek. Çünkü farklı farklı liste türleri var demiştik.
+
+47
+00:18:14,996 --> 00:18:38,536
+Peki, şöyle bir şey yapacağız dedik. Soyut bir liste sınıfımız olsun ve soyut bir iterator, onda dolaşmaya yarayacak bir sınıfımız daha olsun. Faktörü metod gibi bakın metodunu eklemeyeceğiz buna, abstract list sınıfına. Bir iterator oluşturma metodu. Tabi buradaki bütün metotlar da soyut. O yüzden aslında bunu bir arayüz gibi de düşünebiliriz belki.
+
+48
+00:18:41,428 --> 00:18:58,988
+Kaç yaramam var, count metodumuz gerekiyordu listelerde olan. Append ve move. Bu metotlarımız vardı zaten bir öncük çözümde. Onların hepsini soyut metodu olarak tanımlamamız gerekiyor. Başka ne metotlarda gerekiyorsa onları tanımlamamız gerekiyor. Ek olarak bir create iterator metodu eklemiş oldum. Virtual factor metodu bu.
+
+49
+00:19:08,019 --> 00:19:36,019
+Ondan sonra bu soyut listenin somut alt sınıflarını oluştururuz. Soyut iterator sınıfında somut iterator alt sınıflarını oluştururuz. Liste yapısında doğracak list iterator. İşte skip list, aradaki bazı elemanları atlayabilmeye yarayan diyelim ki. Onun için skip list iterator. İşte circle list için circle list iterator. Falan falan kardeş liste sınıfları ve kardeş iterator sınıfları ile biraz daha...
+
+50
+00:19:36,019 --> 00:19:57,219
+Bu işi kolaylaştırabiliriz. En azından client hangi spesifik veri yapısıyla uğraşıyor olursa olsun onun da dolaşacak bir iterator elde edebilir ve o iteratorların iç yapısının ayrıntılarını bilmek zorunda kalmadan sadece iterator soyut sınıfının sağladığı arayüzü kullanarak da bu veri yapısı üzerinde dolaşabiliriz.
+
+51
+00:19:57,219 --> 00:20:00,000
+Client açısından her şey derli toplu ve şef.
+
+52
+00:20:00,000 --> 00:20:19,900
+Ama tabi bu liste istemez. Belirli bir iterator sınıfıyla belirli bir liste arasında yine de bir ilişki olmaya devam ediyor. Etmek de zorunda. Çünkü belirli bir veri yapısında nasıl dolaşabileceğinin ayrıntılarını en iyi o yapıya özel bir iterator yazaraktan sarmalayabiliriz.
+
+53
+00:20:23,124 --> 00:20:30,584
+Kalıp yapısı da bu arkadaşlar. Az önce gördüğümüzün genelleştirmesi. Bizim birleşen, nereden oluşan bir yapımız var.
+
+54
+00:20:32,319 --> 00:20:59,299
+Birleşenlerden oluşan bir bütünü simgelen bir yapımcısı var. Soyut olarak ifade ediliyor bu. Onun kendisinde dolaşmasını, üzerinde dolaşılmasını sağlayacak olan Great Trader metodu var. Ve bu dolaşmayı sağlayacak olan sınıfın da temel yeteneklerinin ne olduğunu yine bir soyut üst sınıf üzerinde tanımlıyoruz. Sonra bu soyut üst sınıfların somut alt sınıflarını yaparaktan ne kodlanması gerekirse kodluyoruz.
+
+55
+00:21:00,319 --> 00:21:18,239
+Soyut üst sınıflar ile konuştuğu için biz bu yapıyı yeni alt sınıflara istediğimiz gibi genişletip bütün bu genişleme işlemlerinin client'ı etkilememesini sağlamış olabiliriz. O yüzden iterative kalıbını bize bunu öneriyor.
+
+56
+00:21:19,379 --> 00:21:25,819
+Dediğim gibi Java Utter paketindeki veri yapıları bu kalıbın biraz daha basitleştirilmiş halini kullanıyor.
+
+57
+00:21:29,364 --> 00:21:47,564
+Şimdi burada önemli ayrıntılar var. Bir gerçek görme yaparken bunlara karar vermemiz gerekmekte. Birinci karar. Bu iterator parçalar arasında dolaşırken acaba bu parçaların durumlarının değiştirilmesine izin veriliyor mu, verilmiyor mu? Ona bir bakmak lazım.
+
+58
+00:21:48,180 --> 00:22:03,800
+Eğer izin verilmemesi isteniyorsa, o zaman iterator veri yapısının kendisi üzerinde dolaşmaz da belki klonu üzerinde dolaşır. Böylece değişiklik yapsanız bile bu değişiklikler veri yapısındaki bileşenleri etkilemez.
+
+59
+00:22:03,800 --> 00:22:09,659
+Peki, ikinci soru. Dolaşma algoritmasını kim gerçekleyecek?
+
+60
+00:22:10,451 --> 00:22:28,451
+Yani demek istediğim örneğin ağaç yapısının LDR, DLR gibi farklı versiyonları var. Bunu nerede kodlayalım ve nerede seçelim? Biri yapısında mı yoksa iteratorda mı? Bu önemli bir soru.
+
+61
+00:22:29,071 --> 00:22:39,531
+Onunla ilişkili olduğu için üçüncü olarak yazmadığım soru ise dolaşılacak nesneleri birer birer mi istekçiye vereceğiz yoksa hepsini birden mi istekçiye vereceğiz?
+
+62
+00:22:39,531 --> 00:22:47,591
+Yani istekçi her seferinde next item, next item diyerekten bir sonraki elemanı mı alacak?
+
+63
+00:22:48,172 --> 00:22:57,051
+Veyahut da o bileşenin, bileşik yapımın elemanlarının belki bir dizi içerisinde mesela bir araya getirilmiş.
+
+64
+00:22:57,071 --> 00:23:14,431
+Halimi istekçiye verilecek. Ki onun içerisinde kendisi biraz daha serbest biçimde istediği şekilde dolaşabilir. Bu serbestlik işimize yarıyor mu? Yaramıyor mu? Ona göre de vermemiz gereken bir karar da bu.
+
+65
+00:23:17,523 --> 00:23:28,824
+Bunları seçmek gerek. Bunların mutlaka şöyle olmalıdır denilen bir yanıt yok. Elinizdeki problem veya uygulama alanı neye gerektiriyorsa o şekilde yapacağız.
+
+66
+00:23:30,963 --> 00:23:38,783
+Mesela bütün elemanları birden istekçiye vermek daha uzun sürer.
+
+67
+00:23:42,516 --> 00:23:59,376
+Ama tek tek birleşenleri almak başarımı biraz daha iyileştirebilir. Hele ki bu birleşenlerle client ayrı uzayla alırsa veyahut da birleşenlerin istekçiye götürülmesi bir mesele.
+
+68
+00:24:01,395 --> 00:24:27,716
+Bir network hattı üstünden gidiyorsa ve bu haberleşme masrafına sebep oluyorsa, hatta haberleşme hızımız düşükse ve hatta bunlar farklı bilgi sistemlerinde yerin hazırlanması, toparlanması, masraflıysa falan o zaman tek tek alıp bu arada arka planda bir prefetch, ön çekme, önceden çekme mekanizması kurmak da yararlı olabilir mesela.
+
+69
+00:24:27,716 --> 00:24:29,056
+Bu gibi ayrıntılar.
+
+70
+00:24:29,395 --> 00:24:32,156
+Bu konuda düşünmek ve karar vermek lazım.
+
+71
+00:24:35,135 --> 00:24:36,156
+Kalıbımız bu.
+
+72
+00:24:38,635 --> 00:24:43,456
+Soru olduğu anda, buyurun arkadaşlar, çok yabancı bir kalıp değil bu gerçi.
+
+73
+00:24:44,176 --> 00:24:49,996
+Tamam olarak bildiğimiz bir şey ama bu önemli ayrıntıları var. Onları bilmek gerekiyor.
+
+74
+00:24:58,132 --> 00:25:23,692
+Şimdi örneğimiz, bu kalıbın örneğini Headfirst Design Patterns'dan aldım. Problemimiz şu, online yemek siparişi işine girmek istiyoruz. Bu alanda hızlıca bir firma kurmak istiyoruz. En hızlıda nasıl hareket ederiz? Satın alma yoluyla hareket ederiz. Birisi kahvaltılıkta uzman olan, birisi de yemeklerde uzman olan iki tane firma satın alıyoruz. Tamam, çok güzel.
+
+75
+00:25:27,220 --> 00:25:41,220
+Bunların farklı yemek menüleri olacak haliyle. Tesadüfen diyelim ki, problemi biraz daha kolaylaştırmak açısından, bu menu item sınıfı...
+
+76
+00:25:42,132 --> 00:25:55,912
+Aynı diyelim ki belki açık kaynak bir çözümden yararlanmışlar. Fakat menüyü sunma açısından, menüyü dolaşma ve menüyü sunma açısından her iki firma da ayrı ayrı gerçekleme yapmışlar.
+
+77
+00:25:55,912 --> 00:26:04,672
+Şimdi acaba biz bu iki farklı menü gerçeklemesinden yola çıkarak birleştirilmiş bir menüyü nasıl hizmete alabiliriz?
+
+78
+00:26:06,932 --> 00:26:32,352
+Diyelim ki varsın olsun şimdilik deriz ama bir ortak kod yazmazsak eğer biz büyümek de istiyoruz. Her yeni firma sırtını aldıkça menü sunma koduna yeni bir kod bulu. Üçüncü firma için üçüncü seçenek, dördüncü firma için dördüncü seçenek şeklinde eklemeler yapmak zorunda olacağız. Bunu pek istemiyoruz doğrusu. Ayrıca farklı gereksinimler işleri daha fazla da karmaşıklaştırabilir.
+
+79
+00:26:34,932 --> 00:26:43,052
+Vejetaryanları düşünmüşler. Bu nedenle hangi yemekleri et içeriyor, hangileri içermiyor bunu da işaretlemişler diyelim.
+
+80
+00:26:44,712 --> 00:27:00,252
+Şimdi ek olarak yani kahvaltı menüsü mü, yemek menüsü mü ya da bütün menüyü mü göstermeye ek olarak bütün seçenekleri göster ya da sadece vejetaryan seçenekleri göster isteği çıktı işin içerisinde.
+
+81
+00:27:00,596 --> 00:27:08,135
+Başka başka şeyler de zamanla çıkabilir. Acaba bunu nasıl yapsak?
+
+82
+00:27:08,756 --> 00:27:11,496
+İlk başta ilk çözüm, ilk hakkı gelen çözüm.
+
+83
+00:27:11,776 --> 00:27:20,816
+Nasıl ne olsun? İki ayrı gerçeklemeyi kendimiz bir ortak kod olmadan nasıl birleştirebiliriz?
+
+84
+00:27:21,236 --> 00:27:24,356
+Ona yönelik bir şeyler göstereyim.
+
+85
+00:27:24,976 --> 00:27:27,836
+Onu ders notu ve kod olarak şey etmemişim ama vermemişim.
+
+86
+00:27:28,056 --> 00:27:29,516
+Gerçekten acıymış çözüm.
+
+87
+00:27:29,516 --> 00:27:34,476
+Ama en azından sakıncalarını görmek için bir hızlıca inceleyebiliriz.
+
+88
+00:27:40,627 --> 00:27:43,847
+Otosan Modelleme, şurada.
+
+89
+00:27:45,307 --> 00:27:46,048
+Koloblağız.
+
+90
+00:27:47,248 --> 00:27:48,607
+İtariyatız.
+
+91
+00:27:52,276 --> 00:28:19,456
+Peki. Şimdi QIQM4 dediğim o acemi çutlu. İlk başta şey demiştik, menu itemler ortak demiştik. Yani her iki filmlerde bunu ortak kullanmışlar bir şekilde. Onu bir inceleyelim. Bir menu iteminin ismi ve tanımı var. Eğer vejetaryan da uygun ise, vejetaryan da seçenekse bu üye alanının değeri true oluyor. Ve tabii ki fiyat. Construct'a bütün bunları alıyor.
+
+92
+00:28:20,339 --> 00:28:42,460
+Her biri için getter metodu var. Ondan sonra bu item'ın tarif edilmesi için de bir tane toString metodu var. Şunu yanlış yazmışım herhalde. Hangisi şimdi? Herhalde şöylesi doğrudur diye düşünüyorum. Bak şimdi ben de şaşırdım.
+
+93
+00:28:53,011 --> 00:28:56,531
+Şuraya bakalım. Belki de her iki disperink de doğrudur.
+
+94
+00:28:58,351 --> 00:28:58,692
+Bakalım.
+
+95
+00:29:00,192 --> 00:29:00,531
+Bir dakika.
+
+96
+00:29:00,791 --> 00:29:01,091
+VG.
+
+97
+00:29:02,811 --> 00:29:03,172
+Ha.
+
+98
+00:29:03,831 --> 00:29:06,192
+O, şuradaki bile fazla olmuş.
+
+99
+00:29:06,551 --> 00:29:06,871
+VG.
+
+100
+00:29:07,031 --> 00:29:07,971
+Tamam, peki.
+
+101
+00:29:08,412 --> 00:29:09,351
+Bir saniye arkadaşlar.
+
+102
+00:29:09,571 --> 00:29:09,912
+Bir dakika.
+
+103
+00:29:09,912 --> 00:29:10,991
+İstediğiniz için.
+
+104
+00:29:46,228 --> 00:30:13,228
+Evet, VGTAR şeklinde doğru. VGTAR tamam. VG da değil, VG böyle. Bakayım. Evet, tamam. Giri kalanlar doğrultusun. Peki, bu ortak ondan sonra çöne. Fakat kahvaltılıkta...
+
+105
+00:30:13,619 --> 00:30:39,740
+Usta olan Pancake. Şöyle yapmışlar. Hadi önce Diner göstereyim. Dinerdakiler biraz daha belki de acemice davranıp liste değil de dizi yapısı kullanmışlar. Şu an için menülerinde 6 tane seçenek varmış. O yüzden 6 elemanlık dizi oluşturuyorlar.
+
+106
+00:30:40,500 --> 00:30:55,380
+Ondan sonra menüye eleman ekliyorlar ki AddItem metodu da bir item oluşturup listeye ekleyecek. Daha doğrusu diziye ekleyecek.
+
+107
+00:30:55,807 --> 00:31:23,508
+Dizilerde ulaşırken biliyorsunuz elman sayısı geçmiş mi geçmemiş mi? Elman sayısını geçmiş mi ekleyemiyorum diyor. Aksi takdirde ekliyor. Gerçi şöyle yapabilirdik. Çok da fazla uzatmaya gerek yok ama dolmuşsa o zaman listi diziyi yeniden daha fazla eleman içleyebilecek yeni bir dizi oluşturup eski dizideki elemanları yeni diziye kopyalayıp sonra en son olarak
+
+108
+00:31:23,807 --> 00:31:49,508
+Üye alan eşittir yeni dizi şeklinde yeni işletme de yapabilirlerdi ama neyse şimdi o kadar çok didiklemeyelim. Bu şekilde yapmışlar. Menü ayrımlarını elde etmek için bunu da dizide döndürüyor. Herhangi bir işleme tabi tutmadan direkt diziyi döndürüveriyor. Şurasını görmüyoruz şimdi. Bu daha kalıbın kurulmamış halinde yok. Yapı bu.
+
+109
+00:31:50,003 --> 00:32:09,604
+Dino'cılar böyle yapmışlar. Pancake'çiler ise menülerini biraz daha akıllıca davranıp bir Array List üzerinde gerçeklemişler. Ondan sonra Constructor'da menüyü oluşturuyorlar. Itemları oluşturup oluşturup Array List'i ekliyorlar.
+
+110
+00:32:10,163 --> 00:32:34,743
+Ondan sonra şimdi add item da basitçe gelen bilgilerden item oluşturup listeye eklemek şeklinde. Onu da getirmek metodu bana geriye array list döndürüyor. 24. satının itibaren olan kısmını ilk çözümde görmüyorsunuz. Peki, şimdi bunları nasıl birleştireceğiz?
+
+111
+00:32:38,163 --> 00:32:46,023
+Bunu yapabilmek için bakıyorum. Ben KS menü türünden üye alanım ve Dynum menü türünden üye alanım var.
+
+112
+00:32:47,463 --> 00:32:50,923
+Ve tısırımızın konstraktörünü her ikisini de ilgilendiriyoruz.
+
+113
+00:32:51,539 --> 00:33:15,740
+Ondan sonra bakalım, şimdi müşterimize menü sunacağımız zaman nasıl iş yapacağız? Önce kahvaltı menüsünü sunuyorum deyip, ondan sonra bu kahvaltı evinin Penkeng House'u, getirdiği huyuna suyuna uygun bir biçimde, E-Re-List alıp, o E-Re-List'in her yeri tek tek elemanlarını alıp, item'a çevirip, zaten item türünde ya, ondan sonra onu yazdırıyoruz.
+
+114
+00:33:19,539 --> 00:33:23,800
+Dizi şeklinde itemları al. Çünkü orası öyle döndürüyor bizi.
+
+115
+00:33:23,800 --> 00:33:30,259
+Ve her birinin içerisinde de yine tek tek elemanları dolaş ve yazdır şeklinde gidiyor.
+
+116
+00:33:32,320 --> 00:33:37,360
+Yazardırken de şurada altta görüyorsunuz adını, fiyatını ve tanımını yazdırmak şeklinde.
+
+117
+00:33:37,600 --> 00:33:41,180
+İşte bir kitle falan koyaraktan yazdırmak şeklinde.
+
+118
+00:33:41,740 --> 00:33:44,680
+Peki, vejeteryan menüleri nasıl yapacağız?
+
+119
+00:33:45,071 --> 00:34:07,571
+Bir önceki koda çok benziyor ama bu sefer yazdırmadan önce if kontrolüne sokuyoruz. Vejetaryen mı diye bakıp eğer öyleyse ancak yazdırıyoruz. Şimdi burada ne gibi bir sakınca var? Birincisi iki ayrı yapıyı iki ayrı şekilde ele alıyoruz. İkincisi normal menü vejetaryen menüyü yazdırma kodları birbirine çok benziyor.
+
+120
+00:34:07,763 --> 00:34:25,063
+Tek fark, vejeteryan menü yazdırırken ekstradan if kontrolü var. Ben eğer buralarda bir hata yaparsam ya da bir değişiklik yapmak istersem her iki metotta birden bu iş düzenlemeleri yapmam gerekecek.
+
+121
+00:34:25,723 --> 00:34:35,764
+Veya ileride kod simak kusurlarına bakarken bunu duplicate code diyeceğiz. Yani hemen hemen neredeyse birbirinin tıp atıp aynı kod birden fazla yerde tekrarlanıyor.
+
+122
+00:34:35,764 --> 00:34:42,244
+En azından Print Menu Item işi ayrı bir metot içerisinde. En azından.
+
+123
+00:34:42,244 --> 00:34:46,244
+Onun dışında...
+
+124
+00:34:46,771 --> 00:35:13,152
+İşte kahvaltı menüsü basılı, yani bütün menüyü yazdırmak var elimizde. Bir de sadece kahvaltı menüsünü yazdırmak veyahut da sadece yemek menüsünü yazdırmak bir dolu metot. Kahvaltı menüsünü yazdırmak, normal ve rejetaryon tüm menüyü göstermenin ilk yarısının aynı kodu. Print Diner menü ise ikinci yarısının aynı kodu.
+
+125
+00:35:14,771 --> 00:35:30,051
+Birçok yerde geçiyor. Hiç güzel bir çözüm değil ama hadi işte ilk aklımıza gelen çözüm. Acilen çıktık bir yasa tamam ama ondan sonra da en ufak bir yenilik yapmaya kalksak işimiz zor.
+
+126
+00:35:32,192 --> 00:35:35,992
+Şimdi madem öyle acaba ne yapmalıyız, ne yapabiliriz?
+
+127
+00:35:40,467 --> 00:35:53,688
+Acaba bunları bir ek biçimli bir dolaşıma tabi tutabilir miyiz? Farklı farklı dolaşma biçimlerinin çok ortak yönleri var. Bu bizi duplicate koda götürüyor. Acaba bunları ortak bir yerde toplayabilir miyiz?
+
+128
+00:35:54,739 --> 00:36:22,739
+Nasıl toplarız? Diner ve Pancake menülerin iç yapısına müdahale etmeden mümkün olduğunca bu karmaşıklıktan ön yüzü nasıl soyutlarız? Aklımıza iterator kılımı geliyor. Çünkü farklı menülerde farklı bir çay biçimlerde dolaşıp kullanıcıya sunmak şeklinde ihtiyaçımız özetlendiğinden aklımıza iterator.
+
+129
+00:36:22,739 --> 00:36:26,840
+O zaman tasarımımız şu şekilde olacak.
+
+130
+00:36:28,739 --> 00:36:30,920
+Kılıbı uygulamaya çalışırsak.
+
+131
+00:36:34,547 --> 00:36:40,907
+Nihayetinde benim farklı menüleri bir ortak arayüz altında toplamam gerekiyor.
+
+132
+00:36:41,287 --> 00:36:48,307
+Ve farklı menü seçeneklerini de yine ortak bir arayüz altında toplamam gerekiyor.
+
+133
+00:36:49,087 --> 00:36:55,027
+Üye alan ekleme ve dolu metot eklenmede hiç gerek olmayacağı için interfezi şeklinde yazıyorum.
+
+134
+00:36:55,027 --> 00:36:59,167
+Gerekirse soyuç sınıfı da çekilebiliniz de ihtiyacım olmadığını öngörebiliyorum.
+
+135
+00:36:59,547 --> 00:37:02,547
+Öngörüm yanlış olsa bile iki kelimeyi düzeltmeyiz.
+
+136
+00:37:02,547 --> 00:37:27,627
+Peki, Pancake House menünün de, Diner menünün de menü arayüzünü gerçeklemesini sağlıyoruz. Diner menüde dolaşacak iterator sınıfını oluşturacağız. Pancake House menüsünde dolaşacak iterator'ı biz yazacağız. Ve bu ikisinin de bu iterator arayüzünü gerçeklemesini sağlayacağız.
+
+137
+00:37:32,244 --> 00:37:33,564
+İzlalya, kanışlas.
+
+138
+00:37:37,780 --> 00:37:44,240
+Hala bu da. Tamam peki. Bir saniye.
+
+139
+00:38:06,547 --> 00:38:14,547
+devam edebiliriz. Tasarımız anahtarıyla bu şekilde. Şimdi bir kod incelemesi yapabiliriz. Onu da...
+
+140
+00:38:14,963 --> 00:38:36,603
+Bakalım, şurada özel bir bilgi vermiş miyim? Hayır, yani bir altını çizmek, özel vurgulamak şeklinde bir vurgulama yapmamışım. O zaman bir yandan şu sınıf şımamız açık kalsın. Bir yandan da biz bunu nasıl kodladık? Özellikle şu sağ taraf yeni oluşturduğumuz arayüz ve sınıflar.
+
+141
+00:38:42,963 --> 00:38:46,844
+Sadece bir iteratif oluşturma metodu ekle.
+
+142
+00:38:51,251 --> 00:38:56,271
+Gördüğünüz gibi sadece bir CreateIterator metodu ekledik.
+
+143
+00:38:56,271 --> 00:39:06,952
+Bu arada o iterator'un da şey şeklinde, Java'nın generik sınıf desteğini kullanacak şekilde kodladık.
+
+144
+00:39:07,271 --> 00:39:09,791
+İşimizi biraz daha kolaylaştırabilmek için.
+
+145
+00:39:10,931 --> 00:39:14,271
+Java'nın kendi iterator'ı çeşitli...
+
+146
+00:39:14,496 --> 00:39:23,996
+Bu metotlara sahip, en azından sonraki elemanı getir metoduna sahip. Bu bizim işimizi görecek.
+
+147
+00:39:23,996 --> 00:39:39,036
+Ve ayrıca bu Java Util iterator'ı gerçekleyen her sınıf bir for döngüsü içerisinde yazdırılabilir şeklinde de olmuş oluyor.
+
+148
+00:39:39,376 --> 00:39:41,556
+Onu kullanacağız, o kolaylıkları kullanacağız.
+
+149
+00:39:41,983 --> 00:40:06,743
+Ama yine de iterator kalıbının da önerdiği altyapıyı da kullanıyor oluyoruz. O iterator menu item türünden elemanlar getirecek. Bu küçüktür, büyüktür harfler içerisinde bu jenerik yapı mantığı bu. Bu bir iterator ama içeride elemanlar menu item türünden olacak şeklinde bir notasyonu var.
+
+150
+00:40:07,380 --> 00:40:23,900
+Peki, bu interfeizi verdikten sonra hem Diner menüye, implement menü, şu menü aslında interfej.
+
+151
+00:40:25,876 --> 00:40:52,556
+Ve işte hem Pancake House Menü, o da Implement Menü. Hepsi menüyü içeriyor. Bir bunu ekledik. Bir de en sonra bu Create Iterator arayüzde tanımlı olan metodun kodlanması gerekiyor. O anda işte bu sınıf şemasından hatırlarsanız eğer Pancake House Menü, Pancake House Menü iterator ile çalışıyor olacak.
+
+152
+00:40:53,876 --> 00:41:08,136
+İterator ile çalışıyor olacak. Buna bu şekilde karar verdiğimiz için Pancake House Menu sınıfının Create Iterator metodu Pancake House Menu Iterator türünden bir neslin oluşturup geri döndürecek.
+
+153
+00:41:08,136 --> 00:41:21,796
+Tabii ki de bu bir iterator üzerinde dolaşılması gereken varlıkları bilmek zorunda ki client'a iletebilsin. O yüzden parametre olarak da.
+
+154
+00:41:21,876 --> 00:41:25,016
+Menü Aytın nesnelerini vereceğiz.
+
+155
+00:41:25,456 --> 00:41:51,016
+Şimdi bu menu item nesneleri işte Pancake House menü içerisinde array listinde tutulmuş veya Diner menü içerisinde dizi şeklinde tutulmuş. Varsın öyle olsun benim ilgili iterator sınıflarım, kendi yazacağım iterator sınıfların hangisinin hangi türde çalıştığını bilip ona göre gerekli işlemleri içeriyor olacak.
+
+156
+00:41:51,635 --> 00:42:03,956
+Bir keza Diner Menü'de Diner Menü İterator oluşturup, onlarda oluştururken de parametre olarak kendi menü itemlerini dizi şeklinde ileterekten oluşturmuş olacak.
+
+157
+00:42:04,996 --> 00:42:14,735
+Çok bir değişiklik olmadı burada. Ama esas şimdi bakalım bu gerçek iterator, somut iterator gerçeklemelerini nasıl yapıyor olduk?
+
+158
+00:42:15,251 --> 00:42:30,352
+Şimdi Diner'da dizi vardı. Önce dizi koyuldu. Onun için ona bakalım. Diner Menü İterator'a bakalım. Peki. Bu Diner Menü İterator benim şu aslında.
+
+159
+00:42:42,420 --> 00:42:43,400
+Şöyle diyeyim.
+
+160
+00:42:44,628 --> 00:43:12,148
+Burada yine Java'nın kendi iterator arayüzünün sağladığı özellikler bize yetiyor. Çok ekstra bir dolaşım seçenekleri gerekmeyeceğinden bu iterator sınıfını kendimiz yazmak zorunda değiliz. Java'nın sağladığı iterator bize yeter. Ama tabii kullandığımız dil sağlamıyorsa o zaman mecbur bunu da biz otocodlamak zorunda kalacağız.
+
+161
+00:43:16,659 --> 00:43:42,259
+Peki. Şimdi Java'nın kendi iterator sınıfı Heznek ve Next şeylerine, metotlarına sahip olması gerekiyor. Ek olarak Remove da var. Kullanmayacağız gerçi ama belki olur da menüden eleman silmek ve yeni eleman eklemek gibi şeyler söz konusu ise onu da yapabiliriz duruma göre.
+
+162
+00:43:44,083 --> 00:43:53,003
+Neyse, şu an odamız aslında menü üstüne dolaşmak ve bu dolaşımı eş biçimde nasıl yapabileceğimize bakmak. O yüzden onları da daha dikkatli inceleyelim.
+
+163
+00:43:53,003 --> 00:44:03,923
+Şimdi bu Diner Menü İterator, Diner Menü ile çalıştığı için listeyi dizi şeklinde, menü artım elemanları geçeren dizi şeklinde sahip olması gerekiyor.
+
+164
+00:44:04,324 --> 00:44:12,063
+Constructorum'da bu ilgileniyor ki onun verildiğini de gördük az önce Diner Menü içerisinde.
+
+165
+00:44:12,083 --> 00:44:28,423
+Next metodu, şu an hangi elemandayız onu tutacağımız sayaç gerekiyor. Öncelikle o listeki şu anki komdaki elemanı bir al, sayacı bir attır, şu anki elemanı geri döndürür şeklinde next metodu var.
+
+166
+00:44:28,423 --> 00:44:37,644
+Has next metodu ise listenin sonuna ulaşmış mıyım? Ona bakıyor. Ulaşmamışsa force döndürüyor, ulaşmışsa to do döndürüyor.
+
+167
+00:44:41,012 --> 00:45:02,232
+Javan'ın kendi iterator at yapısının bir kuralı var. Bir tane next demeden eleman silmeye izin vermiyor. Onu gerçekleşecek şekilde yazmışız kodu. Daha doğrusu örneği almışız. Şu açımına gerek yok. Menüden eleman silmeyeceğim ama en azından ufak bilgi olarak söylemiş olayım.
+
+168
+00:45:08,307 --> 00:45:19,307
+Benzer şekilde o da iterative menu item destekliyor. Bu sefer itemler bir ele elisinin içerisinde. Pozisyonumuz yine sıfır.
+
+169
+00:45:21,108 --> 00:45:41,487
+Aralist'i Constructor alıyor, ilklendiriyor. Onun Next metodu da arka tarafta. Aralist'in kullanımına göre hazırlanmış durumda. Aralist'te Get metodu var. Belli bir konu verip o konulu kelimelerini almak özelliği var. Ondan sonra konuda bir attır ve almış olduğun elemanı döndür şeklinde.
+
+170
+00:45:42,356 --> 00:45:59,996
+Nesnex metodu da bu sefer listenin size metodu var. Pozisyonun, konumun boyutuna ulaşmamışsa, ulaşmamışsa, false dördü ulaşmışsa true dördü. Burada da demo var da çok daha önemli değil.
+
+171
+00:46:10,356 --> 00:46:27,656
+Karmaşıklı Diner Menü İteriyatör'e alınmış durumda. Pancake House menünün bir Array List üzerinde dolaşması Pancake House Menü İteriyatör'e alınmış durumda. Fakat her iki iteriyatör'ün de ana olarak sunduğu hizmet aynı.
+
+172
+00:46:27,656 --> 00:46:38,276
+Can'ın iteriyatör ile uyumlu olarak da has next ve next metotlarını kullanarak da menü elemanları arasında dolaşmayı sağlıyor.
+
+173
+00:46:38,356 --> 00:46:55,616
+Bu sayede benim hazırlayacağım yeni weightless sınıfımın metodları çok daha kompakt, derli toplu ve bakım kabusu oluşturmayacak şekilde devam edecek.
+
+174
+00:46:55,616 --> 00:46:58,096
+Onu inceleyelim şimdi.
+
+175
+00:47:02,420 --> 00:47:15,000
+Tabi platformun hala iki ayrı menüyle uğraştığını bilmesi gerekiyor gerçi. Fakat bunları en azından eş biçimli şekilde okuyup müşteriye sunabilecek.
+
+176
+00:47:16,220 --> 00:47:27,380
+Print menü metodum ne hale geldi? Kahvaltı menüsünü itali etmene alıyorum. Şu an kahvaltı menüsünü basıyorum deyip.
+
+177
+00:47:27,423 --> 00:47:47,304
+Ondan sonra Print Menu metodu çağırıyor. İnceleyeceğiz birazdan onu. Sonra yemek için, yemek menüsünün iteratorunu alıp yemekleri basıyorum deyip yemek menüsünün basılmasını sağlar. Her ikisi için de dikkat ederseniz aynı metodu kullanıyor. Print Menu metodunu kullanıyor.
+
+178
+00:47:55,423 --> 00:48:05,144
+Ayrıca kullanarak menü itemleri okuyor olacaklar. Evet, bakın bu kadar basit. Leçti artık print menü.
+
+179
+00:48:10,228 --> 00:48:21,428
+Menü itemini yaz şeklinde bu kadar basit. Print menu itemi de orada yapılması gereken ismi, fiyatı ve tanımı az önceki sitede uygun biçimde bastırmak.
+
+180
+00:48:21,788 --> 00:48:29,148
+Gerçi şu üç satırlık komutu print menu içine de alabilirdik.
+
+181
+00:48:36,596 --> 00:48:47,635
+En odaklanmış işleri, en çekirdek olarak odaklanmış işleri ayrı metotlarda modellemenin, sarmalamanın hiçbir sakıncası yok. Hatta genelde tavsiye edilen budur.
+
+182
+00:48:48,516 --> 00:49:04,596
+Menüyü basmak, bütün menü ayrımlarını basmak anlamına geliyor. Bütün menü ayrımlarını basmak altı pısım. Pink menü gerçekliyor. Elemanların nasıl basılacağını ayrıntıların ise Pink menü ayrım metodu gerçekliyor. Bunların ayrılmasında hiç sakınca yok.
+
+183
+00:49:04,596 --> 00:49:26,076
+Hatta yarar var dedik. Peki, işin içerisinde bir de vejetaryen menü basmak vardı. Onu nasıl yapacağız? Çok zor değil. Gösterelim. Şu an onun için Print Vegetarian Menü metodumuz var. Tamam, vejetaryen menüyü basıyorum diyorum. Önce kahvaltılıklar.
+
+184
+00:49:26,612 --> 00:49:38,672
+Bu sefer metodum Print Vegetarian Menü. Onun için önce madem kahvaltılıkla kahvaltı evinin iteratorunu alıyorum. Sonra yemekler, yemek evinin iteratorunu alıyorum ve basıyorum.
+
+185
+00:49:39,072 --> 00:49:47,596
+Print Vegetarian Menü'ye baktığımda ise yine benzer şekilde iterator'da dolaşıp elemanı alıp...
+
+186
+00:49:47,699 --> 00:49:53,480
+Eğer bu elman vejeteryan ise bastır şeklinde çalışma biçimi var.
+
+187
+00:49:53,480 --> 00:50:07,519
+Bir dikkat ederseniz, bir önceki şu print menü içerisinde print menü item işlerini kodlamamanın, onu ayrı bir metoda çıkartmanın yararını burada görüyoruz.
+
+188
+00:50:08,692 --> 00:50:29,751
+Print Vegetarian menü içerisinde tekrar menü ait basma konutlarını tekrar aramak yerine zaten hazırlamış olduğum metodu çağırıyorum. Böylelikle epey derli toplu bir sonuç ortaya çıktı. Şu an için gördüğüm tek sakınca şu. Normal menü ve vegetarian menü için bir varyasyon geldi ortaya.
+
+189
+00:50:36,692 --> 00:50:50,231
+Biraz birbirine benziyor. Hatta epey benziyor. Sadece bakın nasıl şey edelim. Görüyorsunuz gerçi ama şu şeyleri sılarsam eğer font küçültmek istemiyorum.
+
+190
+00:50:52,755 --> 00:51:16,635
+Sizenin ekranı küçük oluyor. Yüzyılöre projeksiyon sınırından yansıtılırken de avantaj sağlıyor. Şimdi şurada görebiliyoruz. Şurada başka şey yok. Kırık parantezler kapanıyor. Gördüğünüz gibi Print Menu ile Print Vegetarian Menu arasındaki tek fark, iterator'a next aldıktan sonra bir tane ekstradan if komutu. Vegetarian ise bas şeklinde.
+
+191
+00:51:18,356 --> 00:51:41,476
+Durum bu. Bu problemi de çözmek istiyorsak aslında yine nispeten kolayca bir çözebiliriz. Burada yapmam gereken şey bir iterator oluştururken veya bir iterator kullanırken ona ek bir metot olarak
+
+192
+00:51:42,003 --> 00:51:51,483
+Bütün üyelerde dolaş veya vejetaryen üyelerde dolaş şeklinde eğer bir yapılandırma yaparsam bu dezavantajı çözmüş olurum.
+
+193
+00:51:51,483 --> 00:52:07,543
+Ama burada şunu da söyleyeyim. Bu iterator sınıfını hazır kullandığımız için, yani Java Util'de gelen iterator'ı kullandığımız için ona böyle bir ekstradan bir metot ekleyemiyorum.
+
+194
+00:52:08,211 --> 00:52:28,812
+Daha sonra zaman içerisinde vejetaryenler ayrı, mesela gluten içermeyen yemekler ayrı, çocuklar için olan yemekler ayrı gibi bu işler artacaksa o zaman biraz düşünüp taşınıp daha iyi bir çözüm yapmamız lazım.
+
+195
+00:52:28,812 --> 00:52:36,211
+Sadece vejetaryen var mı yok mu konusunu bir Boolean, Değerli True ya da False yapmakla çözülebiliriz.
+
+196
+00:52:36,211 --> 00:52:52,711
+Onun için işte dediğim gibi buraya Bijaon'un kendi iteratorunu değil de oradan yola çıkarak da kendi iterator sınıfımızı yazabiliriz. Onun için daha çok şey öğrenmek gerekiyor gerçi. Bu yatırıma değer mi? Sırf vejetaryen menü için değmez ama.
+
+197
+00:52:54,675 --> 00:53:11,655
+Başka seçenekler gelecekse o altyapıyı öğrenmenin yararı var ve vejetaryanın dışında seçenekler de söz konusu olacaksa o zaman buraya sadece ekleyebileceğimiz işte set vegetarian true ya gidecek bir metot bize yetmeyecek.
+
+198
+00:53:11,655 --> 00:53:22,275
+Çünkü sadece vejetaryandan olmayan şey çıkmıyor iç içerisine. Çocuk menüsüymüş, gluten free menüymüş, çölyak hastaları için menüymüş falan gibi şeyler.
+
+199
+00:53:22,675 --> 00:53:45,576
+Bunu da bir enumla yapmaya kalksak, sıvıç gez yapısına gideceğiz. O durumda bir oturup düşünüp taşınıp bu varyasyonları nasıl daha iyi modelleriz diye ya iyi bir nesneyelik tasarım yapmaya çalışacağız veyahut da öğrendiğimiz ve öğreneceğimiz kalıplardan birisini daha uygulamak gerekecek.
+
+200
+00:53:45,576 --> 00:53:49,436
+Ama şimdilik bu işi o kadar dallandırıp dudaklandırmayalım.
+
+201
+00:53:50,675 --> 00:54:10,295
+Neler gidebileceğini söyleyeyim sadece ve her zamanki gibi yaptığımız tek kalıp ve tek örneği şeklinde konuşmaya devam edeceğiz. Ama önce sizin sorularınız varsa veya paylaşmak istediğiniz deneyimleriniz varsa bir onları alalım arkadaşlar.
+
+202
+00:54:17,364 --> 00:54:17,903
+Nah, sabır.
+
+203
+00:54:30,068 --> 00:54:51,088
+Peki, o zaman biraz ara verelim. Bu ara birazcık uzunca olsun. 10 dakika değil de 15 dakika olsun. 13.55 ile 14.10 arasında olsun arkadaşlar. 15 dakika sonra devam edeceğiz.
+
+204
+01:14:11,283 --> 01:14:18,904
+Evet arkadaşlar, özür dilerim. Ara biraz uzadı. Neyse, işleri hallettik. Kaldığımız yerden devam edebiliriz.
+
+205
+01:14:37,939 --> 01:14:45,159
+İtre itire hallettiğimize göre bakalım ekstra bir şey var mı? Yok. Tamam. Memento. Peki. İyi güzel.
+
+206
+01:14:47,920 --> 01:15:01,839
+Şimdi, Memento aslında bir anı parçası anlamına geliyor sözlük anlamıyla. Hatta aslında Memento diye bir film de vardı. Bilmiyorum sereden var mı ya da duyan var mı?
+
+207
+01:15:04,180 --> 01:15:11,560
+Baş rollerde adımı hatırlamıyorum ama Ken Nost oynuyordu. İkinci elinde. Şöyle göstereyim.
+
+208
+01:15:23,923 --> 01:15:28,584
+Evet, bu. Ülkemizde de kullanılan afişi buydu arkadaşlar.
+
+209
+01:15:29,644 --> 01:15:32,764
+Yün öğretmen ne olanmış? Peki, tamam. Evet.
+
+210
+01:15:34,363 --> 01:15:42,764
+Film bu arkadaşlar. Başrol kahramanımız olan delikanımız çeşitli notlar görüyor.
+
+211
+01:15:44,003 --> 01:15:48,684
+Ve o notlar bir şey hatırlamıyor. Daha doğrusu yakın geçmişi hatırlamıyor.
+
+212
+01:15:48,916 --> 01:16:13,216
+Uzak geçmişi hatırlıyor, yakın geçmişi sırf tutamıyor kafasında birkaç gün öncesini. Bu amaçla sağında solunda küçük notlar görüyor, onlara göre hareket ediyor. Daha fazlasını anlatmayayım. Sıretmek isteyen arkadaşım olursa bir yerlerden bulabilirlerse seyredebilirler. Fena değildir film. Kaçanmış acaba bu arada zaten.
+
+213
+01:16:13,844 --> 01:16:33,804
+Gerçi o da çok fark etmiyor. Yani iyi medyabeden düşük alan bir notun bir filme belki notu da yüksek, şahsı 8.4. Epey iyiymiş. Peki tamam. Neyse. Çok fazla dağıtmayalım. Konumuza geçelim. O fragmanı da gösterecek. Akıl defteri diye çevirmişler. Nananto aslında orijinaları.
+
+214
+01:16:36,148 --> 01:16:50,048
+Yani bir varlığı snapshotlarını alıp bunlar arasında işlem yapabilmek şeklinde ama biraz daha ayrıntısı var. Şöyle ki bir nesnenin durum bilgisini elde etmek istiyoruz.
+
+215
+01:16:50,048 --> 01:17:00,048
+Ki bunu bu nesnenin değişik zamanlardaki durum bilginini saklayıp gerekirse önceki hallerinden birine geri dönebilirim.
+
+216
+01:17:00,948 --> 01:17:12,088
+Temel mantığımız bu şekilde olacak. Ama bu durum bilgisini alırken de sarmalama ilkesini yani enkartülasyon kurallarını bozmadan yapmak istiyoruz.
+
+217
+01:17:12,703 --> 01:17:26,183
+Bir de üstüne üstlük bu mementoların, daha doğrusu bu anlık bilgilerin dışarıdan bu anlık bilgilere müdahale edilememesini de istiyoruz.
+
+218
+01:17:26,683 --> 01:17:33,804
+Yani o nesnenin belli bir anda ki bir durum bilgisini aldığımızda o durum bilgisi değiştirilemesin.
+
+219
+01:17:34,420 --> 01:17:55,040
+Sadece o durum bilgisi komple alınıp mesela başka bir anda aynı türden bir varlığa verilebilsin. O varlıkta yine durum bilgisi olarak onu edinsin istiyoruz. Dışarıdan forge, böyle modifiye edilmiş, değiştirilmiş, sahte durum bilgileri verilemesin diye istiyoruz. O da ayrı bir mesele.
+
+220
+01:17:55,507 --> 01:18:23,507
+Bu durum bilgilerini toplu olarak alarak başka neler yapabiliriz? Bu nesneleri mesela diskte saklayabiliriz, network bağlantısı üstünden aktarabiliriz veyahut da değiş, geçirdiği aşamaların güncesini tutabiliriz veyahut da bir transaction mantığı söz konusuysa işte her bir adımda, ara adımda değişiklikler olacak ama ara adımlardan bir tane...
+
+221
+01:18:23,507 --> 01:18:35,647
+İstediğinde bir problem olduğu zaman rollback yapabilmek, yani hiçbir şey olmamış gibi işlemin başına dönebilmek için de yine bu memento işlemi faydalı bir araç olacaktır.
+
+222
+01:18:35,647 --> 01:18:47,507
+Veya işte bir nesne üstünde düzenleme işlemleri yaparken undo işlemleri yapabilmek için de yararlı olacaktır. Veya işte yedekten geri yükleme gibi düşünebilirsiniz.
+
+223
+01:18:48,032 --> 01:19:07,292
+Bu arada ek bir parantez. Belki durum bilgisinin hepsine ihtiyacımız olmayabilir. Bir kısmına da ihtiyacımız olabilir. Ama ister hepsi olsun, ister bir kısmı olsun. Bunların ayrıntılığını açığa çıkarmadan ve mümkünse dışarıdan modifikasyonu da engelleyerekten bu işi nasıl yaparız? Ona yönelik bir kalıbımızdır.
+
+224
+01:19:10,792 --> 01:19:13,051
+Kalıb yapısını görüyorsunuz arkadaşlar.
+
+225
+01:19:15,636 --> 01:19:35,636
+Originator dediğimiz varlık, işte bizim durum bilgisiyle ilgilendiğimiz varlık bu oluyor. Onun state durum bilgisi var. Çeşitli metotları var ama bu kalıpla ilgili olan metotları şunlar. Bir create memento metodu var. Bu create memento metodu işte o varlığın o andaki durum bilgisinin bir resmini çekip...
+
+226
+01:19:36,564 --> 01:19:48,164
+Verilecek, geri döndürecek. Set Memento ise parametre olarak bir Memento alıp durum bilgisini o Memento'nun söylediği şekilde getirecek.
+
+227
+01:19:50,104 --> 01:20:00,264
+İşte bu durum bilgisinin ister tamamı, ister bir kısmı ne kadar ilgileniyorsak onu Memento adlı bir sınıf içerisine alıyoruz.
+
+228
+01:20:00,851 --> 01:20:20,072
+Kopyalıyoruz daha doğrusu diyelim. Taşımıyoruz, kopyalıyoruz. Getter, Settler metotları da var bu state için. Ama bu get state ve set state aslında kullanması gereken originator. Başkası değil.
+
+229
+01:20:20,595 --> 01:20:43,255
+Bir Kale Taker ise bu mementoların bir koleksiyonunu yapıp, mutlaka elmasın eliniyle bunun birey yıldız ilişki olduğunu anlamalıyız. Bir koleksiyonunu yapıp, belki güncesini tutacak, belki Android video işlemleri yapacak, ne isterse yapacak. Ama sadece bunları yapabilecek durumu değiştirememesi de lazım.
+
+230
+01:20:44,180 --> 01:21:09,560
+Evet, Originator durum bilgisi saklanacak olan Nesne. Memento durum bilgisinin gerekli kısmını saklıyor. Kiyata yakın ise gerekli anlarda durum bilgisinin kopyasına alıyor. Ve istediği bir anda elindeki kopyalardan bir tanesini şu anki geçerli durum budur diyerekten kullanabilmeli. Ama bunu direkt Memento'yu modifiye ederek yapmamalı. Elindeki Mementolardan bir tanesini Originator'a verip onun Set Memento metodu üzerinden yapabilmeli bu işi.
+
+231
+01:21:10,579 --> 01:21:36,239
+Peki, söylemesi kolay da bunu kodlaması çok kolay değil. Çünkü eğer bir metot public ise herkes tarafından çalıştırılabilir. Private ise başka kimse tarafından çalıştırılabilir. O yüzden bir selektif olarak bir metot şu sınıflar tarafından çağırırsın, şu sınıflar tarafından çağrılamasın diye bir mekanizma benim bildiğim Nesneye'nin dillerde yok.
+
+232
+01:21:36,659 --> 01:21:56,199
+C++'da yok, C++'da yok, C++'da yok. Smalltalk'ta var mı bilemiyorum. Onu o kadar incelememiştim. Ama normalde yok. Ama elimizden gelen bazı şeyler olacak. İç sınıf mantığını kullanarak tam ne yapabiliriz. Birazdan bahsedeceğim. Ben önce bakayım başka bir şey var mıymış.
+
+233
+01:21:57,043 --> 01:22:25,023
+Bu Sequence Diagram'da işte durumu görüyorsunuz. Caretaker originator diyebilir işte, hadi bana bir memento var. Bu originator'ı bir memento nesnesi oluşturuyor. Durum bilgisinin olması gerektiği gibi ayarlıyor. Ve ondan sonra maalesef geri dönüş oklarını çizmemişler. Ve ayrıca şu New Construct'ını da normalde biz kesikli çizgiyle çizmiyoruz Sequence Diagram'larda. Ama dediğim gibi 4T Çetin'in kitabında da henüz UMS, XM, XM, XM dahtarı tam oturmamış olan bir zamanda yazıldı.
+
+234
+01:22:25,712 --> 01:22:51,472
+Böyle alternatif gösteriler olabiliyor. Geri dönüş okları da, şu geri dönüş okunu da şöyle çizeyim size. New Memento, bu Memento Originator'a geri dönüyor. Ondan sonra Set State'i çağırıyor Originator Memento'ya. Durum bilgim budur, al bunu. Kendi içinde sakla atıyor. Ve ondan sonra o metod bitince, şunu biraz daha uzatmak istiyorum.
+
+235
+01:22:53,712 --> 01:22:57,472
+K'ya tekrar Memento iletilmiş oluyor.
+
+236
+01:22:57,472 --> 01:23:00,472
+Ya da Memento yazabilirim.
+
+237
+01:23:02,292 --> 01:23:04,692
+Çok kötü yazılıyor ama anladın siz onu.
+
+238
+01:23:05,268 --> 01:23:32,967
+Sonra aradan bir vakit geçtiği zaman bu Memento'yu artık bu hale geri dönülmesini istiyorum diyor CareTaker. Originator'a söylüyor onu parametre olarak. Ondan daha önce almış olduğum Memento'yu vererekten. O Originator'da Memento'ya soruyor neymiş bu durum bilgisi falan filan. O bilgiyle aldıktan sonra kendi içerisinde ilgili Settler metotları çağırarak durum bilgisini güncelliyor. En sonunda bu metotları çalışıp bitiyor.
+
+239
+01:23:33,268 --> 01:23:37,427
+Bu şekilde bir çalışma mantığı söz konusu.
+
+240
+01:23:39,907 --> 01:23:41,268
+Şimdi krize vereyim.
+
+241
+01:23:43,628 --> 01:23:44,688
+Ve devam edelim.
+
+242
+01:23:47,868 --> 01:23:50,868
+Peki, şimdi bu kalıbı ne zaman kullanabiliriz?
+
+243
+01:23:51,007 --> 01:23:56,708
+Nesneye'nin durum bilgisinin tümünün veya bir kısmının daha sonra o duruma geri dönülebilmek için saklanması.
+
+244
+01:23:57,203 --> 01:24:07,023
+İçin kullanıyoruz. Ama tabii bunu başka şekillerde yapabiliriz. O state'i oluşturan üye alanlar, Nesne onları bir yapıta da toplayabiliriz normalde ama.
+
+245
+01:24:07,523 --> 01:24:18,103
+Mevento kalıbı aynı zamanda Nesne veya durum bilgisinin bir kısmına alınabilecek bir doğrudan bir işaretçi veri gizliliğini bozacaktır haliyle.
+
+246
+01:24:18,103 --> 01:24:25,203
+O public metodla erişim söz konusu alabilecektir. Bunun istenmediği anlarda söz konusu ise durum bilgisini saklayacak.
+
+247
+01:24:25,203 --> 01:24:37,663
+O zaman Memento kalıbını uygulamaya zahmet edebiliriz. Öbür türlü ekstra kalıp kurmaya kesinlikle gerek yok. Burada amacımız, Memento'nun amacı veri gizliliği ilkesini bozmamak.
+
+248
+01:24:37,844 --> 01:25:00,783
+Ama söylendiği kadar kolay değil demiştim. Veri gizli ilkesini sağlamak için Memento'nun bu ilgili metotlarına sadece Originator'dan ilişkilebilmesi lazımdır. Bunu nasıl gerçekleyebiliriz? Birkaç dil için birkaç seçeneğimiz var. Mesela C++'da Frent diye bir yapı var. Bu her dilde yok ama C++'da var. Memento'nun metotlarını private yaparız.
+
+249
+01:25:01,268 --> 01:25:22,347
+Oroginator sınıfının içinde memento sınıfında public class memento, neyse unuttum ama kusura bakmayın lütfen. Biraz başının gözünün yara yara olsa da soracağım. Public class memento, friend, originator şeklinde diyoruz.
+
+250
+01:25:29,268 --> 01:25:34,847
+Friend sınıf arkadaşı olduğu sınıfın private metotlarına erişebiliyor.
+
+251
+01:25:35,296 --> 01:25:58,916
+C++'da böyle bir yapı var. Ama bu başka bir şeyler de yok bildiğim kadarıyla. Java'da ne yapabiliriz? Bir seçeneğimiz var. Java'da da ek olarak package kuralı var. Bir üye alan veya üye metodu package olarak işaretlerseniz ki aslında public veya private yazmazsanız ya da protected falan otomatik olarak package devreye girmiş oluyor.
+
+252
+01:26:03,296 --> 01:26:23,296
+Başka paket dağıtaki sınıfları private gibi davranıyor. Bu işimize yarıyorsa olabilir. Ama şuna da dikkat etmek lazım. Java'da paket oluştururken, ya da daha doğrusu kaynak kudumuzu dağıtırken nasıl dağıtıyoruz? Eğer class dosyası olarak dağıtırken Java dosyası halinde şey diyorsak...
+
+253
+01:26:24,180 --> 01:26:50,860
+Dağıtıyorsak, jar dosyası yaparken içindeki paketleri sealed olarak işaretlememiz lazım. Bu jar'a bir parametre olarak veriliyor. Eğer bir paket veya jar dosyası sealed olarak işaretlenmezse dışarıdan herhangi birisi istediği bir sınıfı oradaki paketlerden birinin içerisine enjekte edebiliyor, ekleyebiliyor. Kimse de hayır demiyor buna.
+
+254
+01:26:52,243 --> 01:27:12,103
+Böyle yapılırca package kuralı sahip bütün metotlara erişebilir hale geliyor bir başkasının yazdığı sınıf. Ve bu da Renanto'nun bu veri gizliliğinin kuruması önlemini açmış oluyor. Daha sağlam bir şey yapamaz mıyız? Java'da yapabiliriz. İç sınıf şeklinde düzenleme yaparız.
+
+255
+01:27:12,659 --> 01:27:19,880
+Remanto sınıfını, Originator sınıfının iç sınıfı yaparız. Hatta Private iç sınıfı yaparız.
+
+256
+01:27:24,275 --> 01:27:42,175
+Private ya da Public yapabiliriz. Galiba fark etmiyor. Birazdan kodlanmış halini göstereceğim bu üçüncü seçeneğin Java'da. Yalnız bir püf noktası daha var. Mutlaka bu state kısmını clonable olarak işaretlemeliyiz Java'da.
+
+257
+01:27:52,275 --> 01:27:58,835
+Bu konuda veri erişim problemleri söz konusu oluyor. Tutarlık problemleri söz konusu oluyor.
+
+258
+01:27:59,335 --> 01:28:04,496
+Bunun zamanında işte bu ilk sınıflı çözümü yaptıktan sonra işler bir ters gitmeye başladı.
+
+259
+01:28:04,615 --> 01:28:10,296
+Bir türlü testlerini geçirmedik o. Neydi, neydi, filan falan değil. Uğraştın, araştırdın filan falan.
+
+260
+01:28:10,296 --> 01:28:14,976
+En sonunda bu çözümü buldum. Clonable yapılma ve klon döndürmesi gerektiğini keşfettim.
+
+261
+01:28:15,536 --> 01:28:20,275
+Epey de zaman harcamış olduğum için bu konuya. Siz bu zaman harcamadınız.
+
+262
+01:28:20,275 --> 01:28:32,036
+Bunu burada açıkça söylüyorum. Diğer çözümlere bakmayacağım. Package yapmaya zaten C++ kodu önlemi yok ama bu iç sınıf mantığını size şimdi göstermek istiyorum.
+
+263
+01:28:33,315 --> 01:28:37,235
+İç sınıf ile çözümü. Ama bunu kod üstünden göstereyim isterseniz.
+
+264
+01:28:39,416 --> 01:28:46,136
+Önce testlerimizi de yazabiliriz. Veri gizlerine istediğimiz gibi uyulduğunu gösterebiliriz.
+
+265
+01:28:49,300 --> 01:29:10,380
+Memento. Tamam. Şimdi Memento'nun inner class mantığı ile olanı anlatacağım. Diğer bazı çözümlerim de var ama işte mesela örneğin işte şey. Bakın erişim kuraları yazmayınca pek açıyorum. Aynı paket içerisindekiler öyle. Öbür paket içerisindekiler öbür türlü falan. Ama hani bunu kullanmayacağım.
+
+266
+01:29:10,836 --> 01:29:15,576
+Göstermeyeceğim. Inner Class mantığı olarak yaptığımızı göstermek istiyorum.
+
+267
+01:29:20,884 --> 01:29:41,804
+State'ın basitçe bir string olduğunu istedim. Daha fazla üye alan koyabiliriz. Hiç problem değil de örnekleme için o kadar çok şey koymaya gerek yok. Öncelikle şu normal kalıbımızdaki tasarımda şu state'i tek bir üye alan olarak da göstermedim.
+
+268
+01:29:47,347 --> 01:29:58,948
+Hazır'a daha yakın bir altyapı sunmak istedim. Tek üye alan değil de bir state sınıfı yazaraktan. Bunun clonable gerçeklemesi gerektiğini söylemiştim. Implements clonable.
+
+269
+01:30:00,000 --> 01:30:25,000
+Durum bilgisi şu an tek üye alan String. Getter metodu var, Setter metodu var. Olması gerektiği gibi. Bir tek burada Setter'umu aynı pakette yaptım. Package yaptım. Bir tek orada problemim var. Ama zaten Originator'da ilk sınıf kullanacağım için Set yapamayacağız basitçe. Onu gösterelim şimdi.
+
+270
+01:30:25,619 --> 01:30:30,779
+Bir de klon metodu olması gerektiğini de söylemiştim.
+
+271
+01:30:32,559 --> 01:30:35,319
+Bir dakika, git durumu döndürüyor ama...
+
+272
+01:30:35,319 --> 01:30:35,899
+Bir dakika.
+
+273
+01:30:38,039 --> 01:30:38,899
+Şey dememiş miydik?
+
+274
+01:30:39,239 --> 01:30:40,779
+Klonu dönsün değil mi?
+
+275
+01:30:44,380 --> 01:30:47,319
+Originated Clate metodu klon döndürmeli.
+
+276
+01:30:47,440 --> 01:30:48,139
+State'teki değil.
+
+277
+01:30:49,279 --> 01:30:50,975
+State'te sadece...
+
+278
+01:30:50,975 --> 01:31:13,835
+klon metodunu, şu yukarıdaki arayüzün gerektirdiği metot olan klon metodunu koymam lazım. O da yeni bir set nesnesi oluşturup onun durumunu kendi durumuna eşitledikten sonra, kopyaladıktan sonra o kopyayı döndürmüş oluyoruz. Böylelikle basitçe bu seti klonlamış, kopyalayabilmiş oluyorum.
+
+279
+01:31:13,835 --> 01:31:15,835
+Gelelim originator'a.
+
+280
+01:31:18,292 --> 01:31:34,652
+Şimdi, Originator'ın da state var haliyle. O state'i işte şey olarak state türünden tutuyor. Constructor'da, Originator'ın Constructor'ında state'i ilklendiriyorum. Boş state'i ilklenmiş oluyor.
+
+281
+01:31:36,132 --> 01:31:40,932
+Create Memento ve Set Memento metotları, kalıbın gerektirdiği metotlar.
+
+282
+01:31:41,332 --> 01:31:59,752
+Geriye memento döndürecek olan Create Memento metodu nasıl spotlanmış? Bir boş memento oluşturuyor önce, ilklendiriyor. Ondan sonra onun durumunu, kendi durumunun kopyasını oluşturarak set ediyor ve oluşturduğu mementoyu geri döndürüyor.
+
+283
+01:32:00,252 --> 01:32:08,592
+Set mementoda basitçe aldığı mementonun durumunu alıp kendi state'ine atıyor.
+
+284
+01:32:09,811 --> 01:32:27,851
+Bir de Modify metodu ekledim arkadaşlar. Bu geriye dönme undo işleminin doğru yapılabildiğini demonstre edebilmek için gösterebilmek için Modify metodu koydum. Aslında bir nevi set state metodu bu. Ki yaptığı şey, işte durumu, gelen durum bilgisini kullanıp
+
+285
+01:32:28,176 --> 01:32:38,436
+Bu nesnenin state nesnesinin durumunu bu stringi kopyalamış oluyor. Daha doğrusu bu stringi state nesnesinin durumuna atamış oluyor.
+
+286
+01:32:38,847 --> 01:32:47,648
+Sonra toString metodu ise kendisinin durumunun ne olduğunu göstermek için sitette ne aldığı durumu ekrana yazıyor.
+
+287
+01:32:48,407 --> 01:32:59,368
+Şimdi bakın Memento sınıfı işte şey sınıfı bitmeden, bu Originator sınıfı bitmeden, bakın bu sınıfın içinde Memento sınıfı var. Sahtara görebiliyorsunuz azıcık büyüteyim.
+
+288
+01:33:00,275 --> 01:33:14,976
+Sağ tarafta da görebiliyorsunuz. Daha şey sınıfı bitmedi. Originator sınıfı bitmeden onun blogu içerisinde Memento sınıfını açtım. Private dememe gerek yokmuş. Public demem yetiyor. Private demememin bir sebebi de şu.
+
+289
+01:33:24,884 --> 01:33:45,564
+Dış sınıftan nesneye de ihtiyaç var diye hatırlıyordum. O nedenle public biraz daha esnek işimizi de görüyor. Bir probleme yol açmıyor public email class tanımlamak. Momentum'da işte state var. Ve state için çok basitçe başka hiçbir önlem almaya gerek almadan get the methodları var.
+
+290
+01:33:47,564 --> 01:33:51,703
+Şimdi örneğimizi ise caretaker üzerinden yapacağız.
+
+291
+01:33:52,659 --> 01:33:54,659
+Şimdi...
+
+292
+01:33:59,155 --> 01:34:19,136
+İç sınıfların kullanımında ihtiyaç duyduğunuz iç sınıfın barındığı sınıfla sizin kullanımı yapacağınız sınıf aynı pakette bile olsa bu import komutunu vererekten o dış sınıfın nokta iç sınıfı şeklinde kod import etmeniz gerekiyor.
+
+293
+01:34:19,136 --> 01:34:25,136
+Öbür türlü şey bulamadım diyor işte bu sınıfı bulamadım şeklinde derleme hatası alıyorsunuz.
+
+294
+01:34:27,315 --> 01:34:35,255
+Bu mementoyu da doğrudan kullanabilmek için bu originator'ın içerisinde public yaptım.
+
+295
+01:34:36,376 --> 01:34:42,835
+İşte bir subject oluşturuyorum originator türünden. Ondan sonra onu modify ediyorum. İlk durum bu.
+
+296
+01:34:43,895 --> 01:34:48,915
+Ondan sonra bir memento istiyorum ondan. Bu ilk durumu saklayan memento bu mem.
+
+297
+01:34:48,915 --> 01:34:52,876
+Sonra subject'i durumu değiştiriyorum. Yeni durum diyorum.
+
+298
+01:34:53,619 --> 01:35:09,940
+Sonra, eski durumuna geri dönmesini sağlamak için, ilk durumuna geri dönmesini sağlamak için o Subject'in Set Memento metodunu çağırıyorum. Parametro olarak da daha önceden elde etmiş olduğum Memento nesnesini veriyorum. Ondan sonra da Subject'in kendini tanıtmasını.
+
+299
+01:35:10,387 --> 01:35:37,288
+Bekliyorum. Böyle yaptığımda, main metodunda da işte bu test metodunun çalışması için bir tane caretaker nesnesi oluşturup test metodunu çağırıyor. Ama acaba şimdi bu akıcı kırabilir miyim, kıramaz mıyım? Bir onu test etmek için de ayrı bir metodum da olacak. Şimdi kurcalayacağız sonra. Bakacağız. Şimdi kırma denemesi yapmayalım.
+
+300
+01:35:41,908 --> 01:35:46,608
+Ayrıca doğru çalışıp çalışmadığımı göstermeden yapalım. Sonra kılma dönemesi de yapacağız.
+
+301
+01:35:55,380 --> 01:36:14,280
+Şey yapmadım. Bir süre sonra, ondan sonra systemat printememiz var zaten. O da ilk durum dedi. Yeni durum demedi. Eğer şey yapmasaydım, eventoyu set etmeseydim, yeni durum gidecekti.
+
+302
+01:36:17,492 --> 01:36:33,452
+Memento'yu set etmediğim için yeni durum dedi. Ama Memento'yu set ettiğim için eski durum diyor bana. Yani ilk durum diyor bana. Olması gerektiği gibi. Peki, şimdi işte bu aşamada birkaç şey göstermek istiyorum.
+
+303
+01:36:40,500 --> 01:36:55,275
+Birincisi, bunun clonable olması gerektiğini göstermek istiyorum. Eğer şu state'i clonable yapmazsam...
+
+304
+01:37:01,235 --> 01:37:09,756
+Ve klon metodunu bu şekilde değil de basitçe get durumunu çağırıyor olsa.
+
+305
+01:37:16,627 --> 01:37:17,148
+Return.
+
+306
+01:37:18,047 --> 01:37:19,027
+Evet, durun.
+
+307
+01:37:20,608 --> 01:37:21,608
+Şöyle olsun.
+
+308
+01:37:23,827 --> 01:37:24,867
+Pardon.
+
+309
+01:37:25,507 --> 01:37:27,307
+O string döndürüyor. Peki.
+
+310
+01:37:27,587 --> 01:37:31,067
+Return this. Kendisini döndürsün.
+
+311
+01:37:31,167 --> 01:37:32,287
+Tamam. Return this.
+
+312
+01:37:34,027 --> 01:37:35,627
+Kendisini döndürsün.
+
+313
+01:37:37,247 --> 01:37:38,627
+Böyle yaparsam
+
+314
+01:37:38,627 --> 01:37:42,159
+şu caretaker'da
+
+315
+01:37:42,159 --> 01:37:51,199
+Bu Set Mevento yapmama rağmen ilk durum değil de yeni durum şeklinde çalışıyor olduğunu göreceğiz.
+
+316
+01:37:51,199 --> 01:37:53,779
+Nerede? CareTaker'ı tekrar çalıştığında.
+
+317
+01:37:56,239 --> 01:38:00,479
+Bakın yeni durum. Yani bu aktarım gerçekleşmedi.
+
+318
+01:38:01,159 --> 01:38:08,359
+Gerçekleşebilmesi için mecburduz ki bunu Chronable arayüzünü gerçeklesin.
+
+319
+01:38:10,836 --> 01:38:13,916
+Ve işte kendisinin değil de klonunu döndü olsun.
+
+320
+01:38:19,923 --> 01:38:29,743
+Sadece state'i değiştirdim. Keltik'le tekrar çalıştırıyorum. Ve daha olması gerektiği gibi ilk durumu, eski durumu döndürmüş oluyor.
+
+321
+01:38:32,884 --> 01:38:39,144
+Peki, acaba şu an Memento'nun bütünlüğü garanti altında mı?
+
+322
+01:38:44,692 --> 01:38:54,771
+Bir metodunu çağırmaya çalışacağım ama bakın ortaya çıkan metodların hepsi Java'nın kozmik üst sınıfı olan object sınıfı metodları.
+
+323
+01:38:54,771 --> 01:38:59,431
+Memento sınıfındaki hiçbir ek metoda buradan erişemiyor.
+
+324
+01:39:08,435 --> 01:39:28,755
+Bu nedenle ötürü direkt Memento'ya erişemiyorum. Memento'ya işareti alabiliyorum ama onun hiçbir metodunu çağıramıyorum. İç sınıf olması sayesinde. Böylece işte arada sahte durum falan gibi bir Memento üstünden yapabileceğim bir direçlik yok.
+
+325
+01:39:33,984 --> 01:39:55,684
+Originator'dan almış olduğum bir mementoyu geri verebilirim. Sahte kendi oluşturduğum bir memento türünden bir şey vermem buna. Bu sayede amacımıza ulaşmış oluyoruz. Peki, şimdi bakalım şu kırma denemelerinde neler kodlamışım? Yanlış hatırlamıyorum. Ben de şimdi sizinle birlikte bakacağım neler yapmışız.
+
+326
+01:39:57,764 --> 01:39:58,844
+Peki.
+
+327
+01:40:00,564 --> 01:40:08,564
+Bir subject oluşturmuşum. İlk durum demişim. Sonra yeni durum demişim. Ondan sonucuma...
+
+328
+01:40:08,564 --> 01:40:10,564
+Şimdi...
+
+329
+01:40:11,412 --> 01:40:39,271
+Bir tane originator daha tanımlamışım. Fake subject demişim ona. Onu bir oluşturmuşum. Peki. Ondan sonra fake subject'i sahte durum demişim. Peki. Ondan sonra bir sahte bir memento erdi atmaya çalışıp o fake subject'ten bir memento istemişim. Daha sonra subject'in mementosunu fake memento olarak vermişim ve hadi bakın kendini yaz demişim.
+
+330
+01:40:39,412 --> 01:40:57,412
+Ancak böyle kırabiliyorum. Yani o düzeyde kontrolüm yok. Şimdi şurada ilk örnekte bu Subject'ten almış olduğum bir Memento nesnesini yine ona geri verebildim. Bu Memento nesnesini modifiye edemedim ama...
+
+331
+01:40:57,684 --> 01:41:24,623
+Başarılı oldu. Sistemde genel olarak çalıştı. Ama şunu yapmanın herhangi bir şey engellemiyor. Bir başka bir tane daha subject oluşturup, o subject'in durumunu istediğim bir duruma çekip, ondan sonra ondan bir memento alıp, onun mementosunu önceki subject'in mementosuna vermek, bunu engelleyen şu an bir şey yok.
+
+332
+01:41:25,684 --> 01:41:34,243
+Belki oturup biraz daha düşünürsek buna yönelik bir altyapı da kurulabilir belki.
+
+333
+01:41:38,676 --> 01:41:53,676
+Nasıl bir şey olabilir belki o? Şöyle bir şey olabilir. Bizim Originator'ın içerisinde bu Originator'ın bir ID üye alanı olur ve o bir random sayı olarak da...
+
+334
+01:41:54,899 --> 01:42:11,039
+Final üye alanı olur. Final Teknik Üye alanı olur. O da Construct'ın içerisinde random olarak ilklendirilir. Buna hiçbir şekilde elde edilememesi, okunamaması sağlanır. Private olarak tanımladığımız için Getter metodu da vermeyiz.
+
+335
+01:42:15,184 --> 01:42:39,364
+Bu arada bu Originator'da İç Sınıf Memento'ya da Constructor olarak bu random seri numarasını iletiriz. Private olması hiç problem değil. Nasıl ki bir metod, bir sınıfın bir metodu o sınıfın bütün üyelerine private olsun, public olsun erişir. İç sınıfların içinde durum aynıdır.
+
+336
+01:42:43,184 --> 01:43:10,184
+Bu da erişebilir. Aktarmaya bile gerek yok. Bir tek şey yaparız. Ona getter metodu koyarız. O random olan üye alana. Ve şurada set memento da önce bakarız. Eğer işte gelen mementonun bana söylediği numarayla benim atanmış olan numaram aynıysa set et. Aksi taktirde set etme ekibisinden ek bir önlem alınabiliriz.
+
+337
+01:43:11,283 --> 01:43:17,283
+Eğer gerekiyorsa, gerekmiyorsa bu da bizim için yeterlidir diyebilirim.
+
+338
+01:43:18,684 --> 01:43:23,363
+Çalıştıralım. O kadar açlık komentleri konuştuk. Biz çalıştıralım şimdi.
+
+339
+01:43:24,884 --> 01:43:28,823
+Brok'ını da yapsın. Kılma devremesini de yapsın.
+
+340
+01:43:32,532 --> 01:43:49,912
+Evet, Kırma DMS'i sahte durum mesajı çıkartarak da başarılı olabildi diyelim. Dışarıdan, Memento'yu doğrudan modifiye edemiyoruz ama bu yöntemi kullanırsak dolaylı olarak modifiye edemiyoruz. Ama orada engelleminin yolu yok mu var? Az önce bahsettiğim gibi.
+
+341
+01:43:50,412 --> 01:43:58,751
+Bunu da bir yazayım belki. Şu an aklıma geldi. Sonraki dönemler için bunu şeydebilirim. Şuradaki açıklamamda ne yazıyor?
+
+342
+01:44:00,564 --> 01:44:13,844
+Evet, tamam. Peki. Evet, klon yaptım. Çok o arka planda yaratan mekanizmin neden klon yapmazsak çalışmadığını çok anlayamadım ama en azından çalışan çözümü buldum. Onu söylemiş olayım.
+
+343
+01:44:14,844 --> 01:44:22,224
+Şimdi şuraya bir tane daha ekleyeyim. Gözden geçeceğiz. Bir tane açıklama daha ekleyeyim.
+
+344
+01:44:23,144 --> 01:44:26,204
+Şöyle koyayım. O da da gözükmüyor çünkü.
+
+345
+01:44:36,340 --> 01:44:40,560
+Şimdi ne diyorduk ona? B3 oluştu.
+
+346
+01:45:10,579 --> 01:45:15,900
+ID vermeyen mantoyu kabul etme.
+
+347
+01:45:17,960 --> 01:45:25,260
+Set için kabul etme şeklinde mantığımı yazdım. Bunu da kodlayabilirsiniz.
+
+348
+01:45:27,060 --> 01:45:29,060
+Sonraki dönemde ben de kodlarım diye düşünüyorum.
+
+349
+01:45:33,555 --> 01:45:36,975
+Evet. Şurada bakalım ne derin var.
+
+350
+01:45:41,043 --> 01:45:57,903
+Zaten yazmışım ya. Tamam, neyse. Daha kısa olarak yazdım. Bu dönemde yapamamışım. Sonraki döneme inşallah diyorum. Evet, peki. Yapı bu. Şimdi isterseniz örneğine de bakın. Ondan sonra ara verelim.
+
+351
+01:46:03,796 --> 01:46:27,296
+Bir belge işleme programında undo-redo işlemlerini yapmak istiyoruz. Böyle bir şey nasıl çözülebiliriz? Bizim kontrolümüz, uygulamamız işte bu dökümanlarla uğraşıyor. Dökümanın mevcut durumu, en son durumu kendisinde saklanıyor ve bunun geçmiş durumları da kendisinde saklanıyor.
+
+352
+01:46:27,695 --> 01:46:46,556
+Bu mementoların yönetimini kontrol da yapabilir, döküman da yapabilir. Ama burada dökümanların yapmasını çekmişiz, tercih etmişiz. Ve şu an geçerli durum pozisyonunda ne olduğunu tutmak için de bir üye alanı varmış. İşte herhangi bir operasyon.
+
+353
+01:46:46,996 --> 01:46:52,615
+Modifiye etmek için. Esas undo-ridu metoduna bakalım.
+
+354
+01:46:53,256 --> 01:47:03,816
+Undu bir adım geri gitmek anlamında pozisyonu bir geri çekip bu stedlerin bir önceki elemanı, sıradaki elemanını getir diyorum.
+
+355
+01:47:04,336 --> 01:47:09,256
+Ridu ise bir sonraki sıradaki eleman durumu getir diyorum.
+
+356
+01:47:14,336 --> 01:47:21,676
+Bu durum değişikliğini durumlar arasına ekleme metodunu da vermeyi unutmamalıyız. En son komut olarak.
+
+357
+01:47:22,292 --> 01:47:44,272
+Yapı bu. Bunun kodunu yazmayacağım arkadaşlar. Zaten şey için Memento altı hepsini oluşturma konusunu yeterince kod düzeninde inceledik, kitlenedik. Altısını, eksisini daha ne fazla ne yapılabileceğini konuştuk. Böyle bir örnekte de bunu da o kadar görürsem zaten şu metotların dışında çok da fazla yapacağım bir şey yok.
+
+358
+01:47:46,163 --> 01:47:49,263
+Fazla bir şey getirmeyecek miyim? Ekko olarak incelemek.
+
+359
+01:47:50,763 --> 01:48:00,343
+Peki, şimdi sizlerden soru alayım arkadaşlar veya Memento'ya benzer bir şeyler yaptıysanız o konulardaki deneyimlerinizi alabiliriz.
+
+360
+01:48:06,836 --> 01:48:07,836
+Açılık.
+
+361
+01:48:32,020 --> 01:48:36,080
+Peki, o zaman bir normal ara verebiliriz arkadaşlar.
+
+362
+01:48:37,580 --> 01:48:41,380
+10 dakika ara diyorum. Saat 14.47 ama 14.50 diyelim sonra.
+
+363
+01:48:43,880 --> 01:48:45,900
+15.00 kadar ara verelim.
+
+364
+01:48:47,400 --> 01:48:48,400
+Daha tüşce görüşürüz.
+
+365
+01:48:50,980 --> 01:48:53,500
+Şimdi kontrol edelim burada.
+
+366
+02:04:12,307 --> 02:04:26,327
+Evet arkadaşlar, tekrar iki, üç dakika katılmış oldum. Özür dilerim. Evde olunca öyle ufak tefek saklar olabiliyor. [kişisel bilgi] Neyse.
+
+367
+02:04:28,148 --> 02:04:34,488
+Yine inanılacağız. Birkaç dakikalık geçişme dışında aralarda çok fazla bir şey olmadı. Çok şükür diyelim.
+
+368
+02:04:36,404 --> 02:04:53,923
+Ve Observer Kalıbına gittin. Herhalde bu derste Observer Kalıbını ancak tamamlayabiliriz diye düşünüyorum. Ve sonraki hafta yapacağımız sınavla da Observer Kalıbına kadar sorumlusunuz şeklinde söyleyebilirim size. Bakalım şimdi gireceğiz ne kadar ilerleyeceğiz.
+
+369
+02:04:57,716 --> 02:05:17,956
+Bir nesnenin durumunda bir değişiklik olduğunda bu nesneyle ilişkili olan tüm diğer nesnelerin bu değişiklikten haberdar edilmesi neyi sağlamak? Böylece bu diğer nesneler durum bilgisi değişen nesnenin değişikliğinden haberdar olup neyin değiştiğini anlayabilirler. Bunun farkında olup gerekli eylemleri alabilirler.
+
+370
+02:05:25,716 --> 02:05:43,716
+Bu haberdar edilme olayları ve yeni ilişkilerin kurulma ve bozulma olayları kodlama anında değil de çalışma anında değiştirilebilsin. İstenine kadar tekrarlanabilsin. Mevcut bir bozulup yerine kurulabilsin.
+
+371
+02:05:47,956 --> 02:05:54,635
+Gözleyicilerin ilişkide olacağı, olmayacağı zaman içerisinde değişebilirsin. Örnek.
+
+372
+02:05:56,796 --> 02:06:00,036
+Şimdi bir hesap tablosumuzda bir bilgi var.
+
+373
+02:06:00,036 --> 02:06:01,916
+Söz konusu.
+
+374
+02:06:04,948 --> 02:06:30,048
+Şimdi burada MVC'ye gitmeyeceğiz arkadaşlar. Observer olanından bahsedelim. Şimdi bizim bir hesap tablomuz var diyelim. Gerçi şu soldaki pencere hesap tablosuna daha çok benziyor ama anlayısıyla. Bizim esas subject dediğimiz varlık, bu varlığın durum bilgisiyle ilgileniyoruz. O da bir bilgi işleri var.
+
+375
+02:06:32,948 --> 02:06:53,807
+Şimdi bunu izleyen çeşitli başka varlıklar var. Mesela diyelim ki bu veriden yola çıkarak hazırlanmış bir tane par çartım, bir tane de bar çartım var. Buradaki rakamlar değiştiğinde bu par çartımda, bar çartımda güncellenmesini istiyoruz.
+
+376
+02:07:00,948 --> 02:07:18,188
+Dikkat ederseniz biraz daha koyu gri yapılmış. 50-30-20 bilgileri burada. Bu subject Y-subject'iymiş. Y satınında bu bilgiler var. Bu Windows X ve Z subject'lerini de onlarla da ilişkiymiş. Onlarla da izliyormuş. Bu olabilir kesinlikle.
+
+377
+02:07:20,083 --> 02:07:29,123
+Burada bir durum değişikliği olduğunda onunla ilgilenen bütün diğer varlıkların, observaların, gözleyicilerin değişmesinin sağlanması gerekmekte.
+
+378
+02:07:34,771 --> 02:07:56,891
+Nasıl yapabiliriz bunu? Önerilen kalıp, durum tasarımı bu şekilde arkadaşlar. Bizim durum bilgisiyle ilgilenilen subjectlerimiz var. Bu subjectlerin durumlarını gözleyen, durumlarındaki değişikliklerle ilgilenen ve en son durumları neymiş onlarla ilgilenen observerlarımız var.
+
+379
+02:07:57,939 --> 02:08:02,799
+Farklı farklı subjektlerle farklı farklı observerler yapabilir.
+
+380
+02:08:03,636 --> 02:08:29,356
+Bir Subject birden fazla Observer tarafından gözleniyor olabilir. Bir Observer birden fazla Subject'i gözlüyor olabilir. Arada emeğen ilişki var. Bütün bunların farklı Subject'ler ve farklı Observer'lar arasında kullanabilmesini sağlamak için bir ortak altyapı oluşturmak gerekiyor. O da işte Soyut Subject üst sınıfı ile Soyut Observer üst sınıfı.
+
+381
+02:08:31,699 --> 02:08:38,699
+Farklı tür subjeklerin olmasından ve farklı tür obzorların olmasından bağımsız olarak...
+
+382
+02:08:39,028 --> 02:08:52,008
+Bir varlığa bir gözlemci iliştirebilmek, bir varlıktan bir gözlemciyi düşürebilmek ve bir subject'in durumda bir değişiklik olduğu zaman,
+
+383
+02:08:52,008 --> 02:09:02,568
+az aradaların haberdar edilmesi için, bunlar ortak yapılacak olan işlemler olacağına bu altyapıyı subject sınıfında kurmuş oluyoruz.
+
+384
+02:09:06,068 --> 02:09:24,467
+Oddsor sınıfında ise basitçe bir update metodumuz var. Bu bir arayüz olabilir arkadaşlar. Burada somut metot kodlamak zorunda değiliz. Ama soyut subject sınıfında attach, detach, notify metotları olmak zorunda. Somut metot olmak zorunda.
+
+385
+02:09:25,467 --> 02:09:31,167
+Farklı tür subjectlerimiz subject sınıfında kalıtımla üretilir.
+
+386
+02:09:35,188 --> 02:09:40,688
+Farklı gözlemleyicilerimiz ise Observer sınıfından kalıtımla üretilir.
+
+387
+02:09:43,528 --> 02:09:58,887
+Subject'in durum bilgisinde değişik olduğu zaman Observer'ın notifiy edilmesi için gereken metodun işaresinde ise basitçe bütün Observer nesnelerini artık listede mi tutuluyor, dizide mi tutuluyor, ne de tutuluyoruz tutuluyor.
+
+388
+02:10:00,000 --> 02:10:10,859
+İlk önceki iterator örneğinde olduğum gibi iteratorumu alıp hepsinin içerisinde dolaşıp hepsinin update metodunun çağrılmasını kodlamak yeterli.
+
+389
+02:10:11,260 --> 02:10:16,659
+Ha ondan sonra observer subject'ten bilgileri nasıl alır o biraz ona kalmış.
+
+390
+02:10:17,159 --> 02:10:23,179
+Birazdan çok çeşitli ayrıntıları işte pull model, push model falan konuşuyor olacağız.
+
+391
+02:10:23,179 --> 02:10:27,039
+Bu update'in mekanizması ile ilgili ayrıntıları konuşuyor olacağız.
+
+392
+02:10:28,000 --> 02:10:29,500
+Bu incelemeye devam edelim.
+
+393
+02:10:32,439 --> 02:10:38,000
+Şimdi, Somut Subject nesnelerini...
+
+394
+02:10:38,452 --> 02:10:46,091
+Bu siteyi alabilmek için ilgili gözlemleyicilere de iletirmek için Getter Setter metotları olacak çeşitli.
+
+395
+02:10:46,612 --> 02:10:55,811
+Veya bütün siteyi birden aktarmaktansa belki tek tek farklı gözlemleyiciler, farklı alanlardaki değişikliklerle ilgileniyor olabilir bu sallı şekilde.
+
+396
+02:10:55,811 --> 02:11:03,931
+O yüzden zaten ilgili Getter metotlarını alarak zaten kodlarımız olan Getter metotları söz konusu olacak.
+
+397
+02:11:06,452 --> 02:11:27,131
+Observer hangi tür belirli nesneleri izlediğini bilmek ihtiyacında olacak. Çünkü bir Observer, bir Subject'in belli bir bilgiyle ilgilenebilir. Başka bir Observer başka bir bilgileriyle ilgilenebilir. İlla bütün bilgisiyle ilgileniyor olmak zorundayız.
+
+398
+02:11:33,300 --> 02:11:52,239
+Bu değişikliklerin ne olabileceğini sorgulamak etmek için veya onunla işte haşır neşir olup ona bazı şeyleri yaptırabilmek için bir observer, somut observer. Belirli bir tür somut subject ile ilişkide olması gerekmekte. Yani burada bir sınıf bağımlılığı var.
+
+399
+02:11:58,515 --> 02:12:25,675
+Soyut üst sınıflarda oluşturulmuş durumda. Ama belli bir tür konkret obzorlu, belli bir tür konkret subject ile ilişkide olabilir. Eğer bütün bu farklı konkret subject alt sınıflarında ortak olarak geçebilecek bir metot varsa, istediğiniz o metot bu soyut subject üst sınıfına da somut metot olaraktan şey dilebilir.
+
+400
+02:12:26,515 --> 02:12:31,403
+Veyahut da soyut metot olarak geçip...
+
+401
+02:12:31,475 --> 02:12:53,815
+Gerek Observer Suite üst sınıfından ona ulaşmakla ilgili kodu yazılabilirsiniz. Ortak kod alt sınıflar için. Veyahut da somut bir Observer alt sınıfı içerisinde, konkret Subject'de değil de az önce bahsettiğimiz Subject sınıfındaki somut metodun çağrılması söz konusu olabilir.
+
+402
+02:12:53,815 --> 02:12:59,355
+Yani şu alttaki konkret Observer'den, konkret Subject'de her zaman için bu şekilde okulması.
+
+403
+02:12:59,475 --> 02:13:09,035
+Bazı durumlarda konkret observadan bir soyut subjekt türünden de iletişim, bir bağlantı, o türlü de bağlantı söz konusu olabilir.
+
+404
+02:13:11,335 --> 02:13:12,735
+Bu durum bunlar ibaret.
+
+405
+02:13:17,844 --> 02:13:23,484
+Evet, bu altta geçen şeyleri söylemiş olduk hepsini. Üstünden konuştuk.
+
+406
+02:13:24,051 --> 02:13:41,891
+Evet, yani şu Subject işareti opsiyonel de olabilir. Yani illa her zaman böyle olmak durumda değil. Çünkü, birazdan göreceğiz, yani bir Observer, senin ne durumun değişti diye konkret Subject'i sorgulamak zorunda olmayabilir.
+
+407
+02:13:48,944 --> 02:14:02,304
+Eğer bu subject, mementoda olduğu gibi diyelim illa mementoda olmasına gerek yok ama ayrı bir sınıf şeklinde encapsüle edilmişse o zaman bu observer o state ile ilişkilidir.
+
+408
+02:14:03,243 --> 02:14:05,663
+Konkret subject ile ilişkili olmayabilir.
+
+409
+02:14:08,423 --> 02:14:12,323
+Şu işte update metodunda observer state'ini alıyoruz işte.
+
+410
+02:14:13,323 --> 02:14:14,144
+Pardon.
+
+411
+02:14:17,652 --> 02:14:31,851
+Biraz sanki misleading, yani yanıltıcı gibi. Observer'ın state bilgisi, subject'in state bilgisiyle aynı olacak veya ona bağımlı diye bir şey yok. Burada direkt subject'in state'ini almış, observable state'i atamış.
+
+412
+02:14:33,140 --> 02:14:58,859
+İlla böyle olması gerekmiyor yani. Hatta böyle senaryonun daha sınırlı olduğunu söyleyebilirim. Sadece bir konkret observer, bu konkret subjektinde neler değişmişse onları bir alıp onlar da çeşitli işlemler yapar. Yoksa direkt kendi alanlarını atamak durumunda değil tabii ki. Yoksa bu sanki şey gibi olmuş, biraz proxy gibi olmuş bu konkret observer'ın şu şekilde bir şeyi yazmak. Neyse.
+
+413
+02:15:10,260 --> 02:15:32,260
+Peki, geldik şimdi gerçekleştirme anlatılara. Bu durum bilgisinin gözleyicilere, yani o zaman olarak gönderilmesi için iki farklı modellden birisi kullanılabilir. Birisi pull model, ötekisi push model. Her birinin avantajı, ötekisinin dezavantajı şeklinde olmuş oluyor. Pull modelde gözlenen subject...
+
+414
+02:15:33,108 --> 02:15:51,288
+Gözleyicileri, observerları sadece haberdar ediyor. Ben değiştim diyor yani. Gözleyiciler bu değiştiğinin farkına vardığı subjectin çeşitli metotlarını çağırarak da değişen durum bilgisini bu gözlenen subjectten elde eder.
+
+415
+02:15:53,140 --> 02:16:20,779
+Bu çalışma biçimi gözlenen subject'in gözleyici observer'la bağlantısını azaltır. Çünkü bu sayede sadece basitçe üst sınıfın soyut subject sınıfının notify metodunu çağırdığı zaman bütün observer'lara gidecek bu soyut observer üst sınıfı sayesinde.
+
+416
+02:16:21,140 --> 02:16:24,279
+Hangi spesifik observer olduğunu bilmesine gerek kalmayacak.
+
+417
+02:16:24,500 --> 02:16:31,840
+Yani az önceki şemada, şu şemada olan Subjectan Observer'a doğru olan Nesneye.
+
+418
+02:16:33,556 --> 02:16:55,576
+Yeterli olacak. Bu durumda tabii konkurta obsuralı subjekte iletişime gidecek. Tamam biraz hafifletecek ama yine de arada ilişki var mı var. Yani o ilişki tamamen yok etmiyor. Ama sadece en azından update metodunu çağırmakla sınırlı tutuluyor.
+
+419
+02:17:01,556 --> 02:17:26,855
+İlişki var mı? Var. Tamam kardeşim. İster bir metodunu çağırsın, ister on metodunu çağırsın. İster bir nesneyle ilişkili olsun, ister on nesneyle ilişkili olsun. Fark etmez. O yine bir aynı olarak sayılıyor. Çeşitli siz alternatif coupling ölçütleri tanımlayabilirsiniz ama yine de ilişki var mı var şeklindeki tanım değişmiyor.
+
+420
+02:17:29,876 --> 02:17:43,975
+Ama en azından şey yani, o observer'ın diğer metotlarında yapacağınız çeşitli değişikliklerde eklemeler falan, subject etkileme olası da biraz daha düşmüş olacak.
+
+421
+02:17:46,100 --> 02:18:11,260
+Üçüncü avantaj olarak gözleyici durum bilgisinin sadece istediği kısmını almayı seçebilir. Farklı tür observalar aslında farklı tür subjektlerin farklı state bileşenleriyle ilgilenebilir. Böylece hangi üye alanların durumuyla ilgileniyorsa onları get eder, diğerlerini get etmesine gerek kalmaz.
+
+422
+02:18:13,427 --> 02:18:31,211
+Subject'ler, Observer'lar arasında eğer bunlar ayrı ayrı lokasyonlarda haberleşme arayla ilgili birbirine bağlanmış olan proseslerse, nesnelerse o zaman...
+
+423
+02:18:32,500 --> 02:18:59,260
+Yani Observer Subject'in sadece istediği bilgilerini, kendi ilgilendiren bilgilerini çekeceğinden daha az haberleşme olur, daha az paket gider, daha az masraf olur diyelim. Hem maliyet açısından, haberleşme ücreti açısından hem de haberleşmenin daha az gidenleri daha çabuk tamamlanan iletişim anlamına da gelmektedir. Bu açılardan avantajlı ama.
+
+424
+02:19:00,500 --> 02:19:16,560
+Bir avantajı ise gözleyici acaba bu gözlerle ne değişti? Onu kendisi keşfetmek, çıkartmak, anlamak zorunda kalıyor. Çünkü sadece ben değiştim diyor. Peki neyin değişti? Onu o zorluğa sorgulayacak.
+
+425
+02:19:29,172 --> 02:19:57,172
+Diyelim ki üç durum bilgisiyle ilgileniyor. Bunlardan sadece bir tanesinin değişmiş olması nedeniyle Notify metodu geldi buna. Ya da belki o observer'ın ilgilenmediği bir üye alanda bir değişimi oldu. Buna rağmen bütün observer'a Notify gitmesi gerektiği için ona da gitti. Observer'da Nesne Subject'ı sorguladı. Kendi ilgilendiği diğer üç üye alana bakmış, üçü de değişmemiş. İyi peki diyecek belki bir iş yapmaz.
+
+426
+02:19:57,172 --> 02:20:14,292
+Ya da belki basın, değişmiş olsun olmasın, ben bu işi yine de yapıyorum diyorsa o da ayrı. Ama tabii ki o yapılan işin çok uzun sürenliğe çok masraflı bir iş olmaması lazım. Boş veri tekrarlanmasının bir zarar ya da kayıp getirmemesi için.
+
+427
+02:20:15,292 --> 02:20:17,412
+Push modellerde tam tersi.
+
+428
+02:20:18,227 --> 02:20:43,108
+Gözlenen Subject, gözleyici observerlara durum değişikliği hakkında ayrıntılı bilgi gönderiyor. Bunu en basit şekilde şöyle kodlayabiliriz. Subject, kendisinin bütün durum bilgisini iletir. Notify metodunda parametre olarak da o Subject'in kendisi veya Full State'i yani alır parametre olarak Notify'la birlikte o durumda gider.
+
+429
+02:20:44,020 --> 02:21:01,279
+Böylece işte bunun da dezavantajı haberleşme masrafı daha fazla. Bütün o nesnenin, gözler nesnenin komple durumun ilgisi gittiği için daha fazla byte gidecek, daha fazla ücret alınacak o haberleşmeler ve daha uzun sürecek o haberleşme.
+
+430
+02:21:02,804 --> 02:21:30,804
+Ve ayrıca belki de state ile birlikte bir change mask yani kaç tane üye alan var diyelim ki olduğunun bilgisiyle ilgili 10 tanesi. 10 alanlıkta 10 tane volume'dan oluşan bir alanlıkta her observer kendisinin ilgilendiği konumdaki bit diyelim ki sıfırdan birine dönmüş olduğunu algılarsa o zaman işte neyin değiştiğini...
+
+431
+02:21:30,804 --> 02:21:49,763
+Kendisi çıkarmak ayrıntılı incelenek zorunda kalmadı da subject'in dediği, ha şu değişmiş, ben onunla ilgileniyor muyum? İlgileniyorsa tamam, al. İlgileniyorsa ve değişmemişse hiç alma gibi daha rahat kod yazılabiliyor. O bizlerimiz tarafında.
+
+432
+02:21:50,515 --> 02:22:00,396
+Gördüğünüz gibi birbirinin tam doğalak avantajları ve dezavantajları birbirinin tam dışlamalısı. Elimizdeki problem niye gerektiriyorsa onu kostabak durumundayız.
+
+433
+02:22:03,924 --> 02:22:20,844
+Öte yandan eğer bazı basitleştirmeler söz konusu olabilecekse, yani belirli bir türden subject'in tümünün sadece belirli türden observerları olması gerekiyorsa bazı basitleştirmeler yapılabilir kalıpta.
+
+434
+02:22:20,844 --> 02:22:30,564
+Ama bunun her zaman böyle kalacağın garantisi yok. Farklı türler de gelebileceği için. En iyisi, madem zahmet edip bu kalıbı kurmuşsak, çok hafif bir kalıp değil çünkü.
+
+435
+02:22:33,523 --> 02:22:36,763
+Orijinal haliyle kurmak daha mantıklı geliyor.
+
+436
+02:22:40,884 --> 02:22:57,344
+Peki, şeyden bahsetmiştik. Bir gözleyici, o bu zorunda bizden fazla nesneyi gözleyebilir. Hiç bir problem yok. Bu yapı onu izlemeliyor. Gözlenen nesneyin durumundaki farklı türden değişiklikleri, farklı türden gözleyicilerin izlemesi istenebilir.
+
+437
+02:23:03,700 --> 02:23:08,180
+Tutarlık kontroller yapmak istiyorsanız onları koda eklemeniz gerekmekte haliyle.
+
+438
+02:23:08,299 --> 02:23:11,680
+Attach metoduna eklemeniz gerekmekte.
+
+439
+02:23:12,799 --> 02:23:19,819
+Peki, şimdi bundan daha önemli olan bir kriter daha var. En az pull push model seçimi kadar önemli.
+
+440
+02:23:20,860 --> 02:23:24,360
+Bu notify mesajı nasıl tetiklenecek?
+
+441
+02:23:25,940 --> 02:23:27,760
+Ve kim tarafından tetiklenecek?
+
+442
+02:23:30,579 --> 02:23:54,100
+İlk başta akla gelen aslında gözlenen nesnenin tetiklemesi. İlk başta akla gelen. Ama buradaki durum da şu. Subject'in durum değişikliği oldu. Durum değişikliği olur olmaz. Bunun tetiklenmesi gerekir. Notify'nin tetiklenmesi gerekir. Yani işlemaya dönelim de.
+
+443
+02:23:56,180 --> 02:24:05,360
+Bu Concrete Subject sınıfının içerisinde SetState veya Stat'in ayrı birleşenler için ayrı ayrı Settir metotları varsa,
+
+444
+02:24:07,139 --> 02:24:10,420
+fark etmez, tekte bile aynı şey geçerli.
+
+445
+02:24:10,420 --> 02:24:18,139
+Şimdi bu SetState metodunun en son komutu olarak mutlaka Notify'ın çağrılması lazım.
+
+446
+02:24:18,835 --> 02:24:38,675
+Tekrar diyorum. Eğer bu değişikliğin bildiriminin tetiklenmesi subject tarafından yapılacaksa, set state metodunda ve olası değer bütün durumu değiştirecek metotların sonuna ek olarak notify metodunun çağrılmasının kodlanması gerekmekte. Bu bir zorunluluk.
+
+447
+02:24:41,940 --> 02:25:00,659
+Fakat diyelim ki o sarp çektiğim durum bilgisi çok sık değişiyor. Hatta en son bir değişikliğin bir iki önceki duruma nesneyi geri çekmesi olasılığı bile söz konusu olsun.
+
+448
+02:25:01,652 --> 02:25:22,592
+Olmasa bile her durum değişikliğinde Notify metodu tekrar tekrar çağrılacağı için tekrar tekrar bir haberleşme çağrısı söz konusu olacak. Hele ki eğer bu bir network üstünden veri iletimi ise sürekli Subject'ten Observer'lara çok yoğun bir veri trafiği olacak.
+
+449
+02:25:23,087 --> 02:25:36,308
+Hani pull modelde bu biraz daha az haberleşme masrafı çıkartır. Push modelde zaten çok olan haberleşme masrafını daha da katlayaraktan tamam yaptırır.
+
+450
+02:25:39,487 --> 02:26:01,948
+Önemli bir sorun. Ama halbuki bu observerla çok sık dakikalık anlık değişikliklerle ilgilenmesi gerekmiyorsa, mesela diyelim ki belirli bir süre, bir dakika, iki dakika çok anlık değişimlerle ilgilenmiyorsa observerla, bu aynı zamanda gereksiz de haberleşme trafiği ortaya çıkarmış oluyor.
+
+451
+02:26:02,451 --> 02:26:26,252
+Bunun yerine ayrı ayrı gidecek birçok mesaj yerine bunların biriktirilip gönderilmesi yine mümkün olabilir ama bu durumda gözlenen nesnenin set state metodu veya notify metodu, belki o iç mantığın bir kısmını notify'a da gömülebilir.
+
+452
+02:26:26,252 --> 02:26:28,891
+Orası karmaşıklaşacak ister istemez.
+
+453
+02:26:31,379 --> 02:26:33,759
+Bu önemli bir dezavantaj.
+
+454
+02:26:34,227 --> 02:26:54,387
+Öte yandan, observer'lara versek, gözleyiciye de versek. Ama bu sefer de bu observer'ların, bu istekçilerini kodlayan kişi, bu observer'lara belli periyotlarda tetikleme komutunun kodlamayı unutabilir.
+
+455
+02:26:54,387 --> 02:27:02,087
+Unutuyorsa o zaman gözlenenler var, gözlemiyor olacak tam olarak. Durum değişikliklerinden haberdar olmadık.
+
+456
+02:27:02,227 --> 02:27:11,447
+Sonra bir anlama bir işe gelmeyecek. Bir dakika, şunu demek istiyorum. Özür dilerim. Yanlış bir şey söyledim. Şema aslında anlatsam daha iyi olacak.
+
+457
+02:27:14,036 --> 02:27:42,036
+Bu subjectlerin, konkret subject üstünden söyleyeyim, client olacak illa ki bunun durumunun değişmesine sebep olabilecek. Peki, belki de bu client içerisine de kodlanabilir her veyahut da istenen durum değişikliklerinin ardından bu notify metodunun çağrılması söz konusu olabilir bir clientta. Bunun unutulması söz konusu olabilir, unutulmamak.
+
+458
+02:27:42,036 --> 02:27:43,295
+O önemli bir problem.
+
+459
+02:27:49,556 --> 02:28:01,416
+Öte yandan gözleyiciler tetiklerse nasıl tetikleyecek? Ne zaman değişikliğini bilmiyor ki. Belki bir zaman periyodunda söz konusu olabilir bu. Gözleyici konuda denilir ki işte.
+
+460
+02:28:02,804 --> 02:28:20,184
+10 dakikada bir ya da 1 dakikada bir her neyse sabit bir rakam. Git, gözlediğin bütün şeyleri, sorgula şeklinden kod yazılabiliriz belki. Ama o da yani böyle fixed interval, sabit aralıklarla yapılan işler aynı zamanda verimsiz olmaya eğilimlidir.
+
+461
+02:28:30,804 --> 02:28:54,644
+Bu değişimi diye soracak. Boş ya da haberleşme masrafıyla. O yüzden buradan haberleşme masrafından optimize, orada bir optimizasyon yapmak istiyorsak en uygun yer yine gözlenen nesnenin tetiklemesi. Ama orada işi biraz karıştıracak ama elde edeceğimiz kar önemliyse o zaman mecbur bu karmaşıklığı göze alıp o işi yapmak zorundayız.
+
+462
+02:28:54,644 --> 02:28:55,763
+Diyebilirim.
+
+463
+02:28:57,244 --> 02:28:57,744
+Peki.
+
+464
+02:28:58,195 --> 02:29:14,916
+Paparlı özetlersek bu kalıbı ne zaman kullanabiliriz? Herhangi bir soyutlamanın birbirine bağımlı birbirinden fazla parçası varsa o zaman bu bağımlılığın tutarlılığını koruyabilmek için bu otorlu kalıbını kurabiliriz. Onu bir söyleyelim ek olarak.
+
+465
+02:29:15,603 --> 02:29:28,203
+Bir nesnedeki değişikliklerin kodlama anında bilemeyeceğimiz sayıda ve türde nesneleri de etkilemesi gereken senaryolar söz konusuysa onların hepsinde bu kalıbı kullanabiliriz.
+
+466
+02:29:28,203 --> 02:29:38,943
+Ve adıda ek bağlaşım koymadan bir nesnenin diğer nesneleri herhangi bir durumdan haberdar etmesi gerekiyorsa yine bu kalıbı kullanabiliriz.
+
+467
+02:29:39,667 --> 02:29:59,847
+Çünkü farklı tür nesnelerin haberdar edilmesi için her bir ile ayrı ayrı bir bağlantı kurmaya gerek yok. Sadece bu soyut observer, soyut sınıfı üzerinden yapılacak çağrılarla spesifik herhangi bir türden somut observer.
+
+468
+02:30:00,000 --> 02:30:09,560
+İliçki kullanabiliriz ve Subject'te hangi tür Observer ile iletişimde olduğunun bilmesi gerekmeyecek.
+
+469
+02:30:09,819 --> 02:30:12,560
+Az önce yaptığımız tasarım sayesinde.
+
+470
+02:30:14,000 --> 02:30:15,779
+Evet, durum bu.
+
+471
+02:30:18,020 --> 02:30:26,340
+Şimdi eğer sorunuz yoksa örnek üstünden bir Observer örneği yapalım şimdi sizinle birlikte.
+
+472
+02:30:29,716 --> 02:30:43,155
+Bunu nereden almıştım? Benim çizdiğim şama değildir. Zaten anlarsınız da benzer bir örnekte ben bunu nereden almışım demiştim. Unutmuşum, eklemişim bu sözleri.
+
+473
+02:30:43,155 --> 02:30:51,236
+Ya da belki de sunum modundan çıkıp acaba altında falan mı kalmış yok. Neyse, bakarız artık.
+
+474
+02:30:55,059 --> 02:31:07,219
+Özellikle problemimiz şu. Bir müşteri ilişkileri programı yazıyoruz. Sisteme yeni bir müşteri eklediğimizde müşteriye hoş geldiniz, aramızda hoş geldiniz e-postası gönderecek.
+
+475
+02:31:07,219 --> 02:31:17,599
+Ve işte müşterinin vermiş olduğu ikamet adresi geçerli miymiş, değil miymiş? O da kontrol edilecek. Öyle bir gerisim geldi. İyi peki, tamam.
+
+476
+02:31:18,164 --> 02:31:45,764
+Normal bir şekilde kodlarız. Ne olacak? Customer sınıfına diyelim ki. Aslında bunu customer sınıfına koymak da çok da doğru değil. Customer sınıfına metodu eklemek. Bu nihayetinde bu customer nesnesi bilgi sisteminde tutulacak. O bilgi sistemini simgeleyen başka bir sınıfa aslında metodu koyulur da. Orası da ayrı mesele.
+
+477
+02:31:46,164 --> 02:31:51,164
+Ama diyelim ki işte eklenirken aynı zamanda...
+
+478
+02:31:52,595 --> 02:32:00,435
+Bu mantığı nihayetinde müşteriyle ilgili epey bir işlem söz konusu olduğu için oraya kodlamayı tercih etmiş.
+
+479
+02:32:01,435 --> 02:32:03,315
+Peki ne yapıyoruz?
+
+480
+02:32:03,675 --> 02:32:18,475
+AdCustomer metodu hem bir hoş geldiniz mektubu hazırlamak için ve artık ameliyatı sınıfından bir nesneyi AdCustomer metodu içerisinde oluşturup kullanacak veya belki bir fabrikadan alacak ve kullanacak.
+
+481
+02:32:18,475 --> 02:32:20,595
+Ve adres doğrulamayı da benzer.
+
+482
+02:32:20,595 --> 02:32:34,256
+Bu amaçlı hazırlanmış bir sınıfın belki bir statik metodunu kullanacak. Belki de yine bir bilgi sisteminden veya bir bilgi sisteminin faktörü metodundan yola çıkaraktan elde edecek.
+
+483
+02:32:34,256 --> 02:32:48,216
+Elde edecek bir şekilde yani. Her birinin de ilgili metotlarını çağırarak işlerin yapılmasını sağlayacak. Bu akla gelen en tamam, en basit çözüm. Sabit bir kodlama biçimi.
+
+484
+02:32:48,755 --> 02:33:15,415
+Peki, şimdi ne kadar iyi de? Gereksinimleri değişiklikler geliyor. Örnek. Bizim çeşitli mağazalarımız var. Eğer bu müşterimiz bir mağazamızın, şubemizin on kilometre yarı çaplı dairesi içindeyse ona bir mektupla gönderelim. İndirim kuponları olsun. Gelsinimizden alışveriş yazsın. Biz de para kazandınız.
+
+485
+02:33:16,147 --> 02:33:18,347
+İsteği geldi.
+
+486
+02:33:19,287 --> 02:33:24,167
+Şimdi biraz gözler çıkmış programcı olarak anladık ki bu kampanyaların sonu yok.
+
+487
+02:33:25,027 --> 02:33:28,227
+Bir dolu şey, böyle bir dolu değişik değişik istek gelebilir bize.
+
+488
+02:33:28,227 --> 02:33:32,268
+O yüzden biz şimdiden bunun altyapısını kurmaya başlayalım.
+
+489
+02:33:33,203 --> 02:33:43,844
+Şu gelen istek kapsamında ona benzer başka şeyler de gelebileceğini düşünüp biraz acaba daha iyi bir kod yazabilir miyiz diye düşünelim.
+
+490
+02:33:45,363 --> 02:34:01,363
+Hangi tasarım kalıbını kullansak diye düşünelim. Hem bir yandan sisteme her yeni müşteri eklendiğinde bir ya da birkaç farklı işlem yapılabilmesini sağlayacak bir art yapı oluşturmaya çalışalım. Hem de müşteri eklendiği zaman...
+
+491
+02:34:01,727 --> 02:34:11,108
+Sistem bizim işte bu ve olabilecek daha sonraki diğer işler, çeşitli işler olabileceğinden bizi haberdar etmesini isteyelim.
+
+492
+02:34:11,927 --> 02:34:19,268
+Bu olayı bir tetiklesin. Biz de ona göre iş yapalım diye düşündüğümüzde aklımıza o güzel kalıbı gelebilir.
+
+493
+02:34:22,027 --> 02:34:23,847
+Başka bir şey gelebilir mi?
+
+494
+02:34:25,647 --> 02:34:26,608
+Mesela ne bileyim.
+
+495
+02:34:27,123 --> 02:34:31,324
+Sizin aklınıza bu tanımdan başka bir kalıp geliyorsa söyleyin. Onu tartışırız.
+
+496
+02:34:34,963 --> 02:34:54,664
+Command desek, bir komut göndermi. Benzer bir örnek yaptık zaten. Belki o da olabilir. Ama burada kritik olan şey şu. Müşteri eklenece yeni müşterilikler komutunu eline manuel olarak vermek başka. Bizim şu an bize gelen istek tam olarak öyle değil.
+
+497
+02:34:55,763 --> 02:35:11,763
+Yeni bir müşteri eklendiği zaman bu işler yapılsın ve başka başka işlemler de söz konusu olacak. Belki müşteri geldiğinde değil, yeni bir şurada eklendiğinde gibi istekler de gelebilecek. O zaman bir...
+
+498
+02:35:12,979 --> 02:35:25,000
+Durum değişikliğinde sistemin haberdar edilip ilgili işlemlerin otomatik olarak yapılması diye düşündüğümüzde o zor kalıbıyla ilişkilendirebiliriz bu problemi.
+
+499
+02:35:26,260 --> 02:35:44,680
+Bu arada bir sonraki şemada brick and mortar diye tanım geçecek. O şu, bir kurum hem sanal ticaret hem fiziksel ticareti yapıyorsa bu fiziksel binalarda yaptıkları ticarete brick and mortar diyorlar İngilizce literatürde.
+
+500
+02:35:45,619 --> 02:35:49,200
+Brick, tuğla, mortar da harç.
+
+501
+02:35:55,092 --> 02:35:55,531
+Peki.
+
+502
+02:35:57,108 --> 02:36:17,047
+Observer kalıbını kullanarak nasıl bir modelleme yapabiliriz? Şöyle yapabiliriz. Şimdi bizim şu an için odak noktamız custom. Ama bu yapı tamamen yeni bir şubeye falan da uyarlanabilir. Çünkü onların her biri biraz subject olarak davranacak. Observer kalıbı biraz subject olarak davranacak.
+
+503
+02:36:25,108 --> 02:36:45,828
+Olarak davranacak. Bu anlamda Observer İnterfazimi tanımlıyorum. Hatta bunu, dikkat ederseniz, İnterfazim ısı, Customer'ın C'si ve Observer. Yani Customer'lardaki değişiklikleri dinleyen Observer'lar şeklinde.
+
+504
+02:36:46,644 --> 02:37:04,684
+Ve oradan adres verifikasyon. Yeni açılan şubemizin 10 km yakındaysa oraya özel indim kuponu verirsin kısmıyla ilgili şeyi biriken morta koyacağız. Erken latta da zaten yine de haber olan sınıfımız.
+
+505
+02:37:05,427 --> 02:37:18,288
+Şimdi bu acaba bu interfesi sadece Customer Observer interfesi diye kısıtlamak doğru olur mu, olmaz mı? Onu da tartışalım şimdi. Aklıma geldi.
+
+506
+02:37:23,572 --> 02:37:26,031
+Alt ikinci sonra konuşacağız.
+
+507
+02:37:28,971 --> 02:37:29,731
+Birincisi.
+
+508
+02:37:32,351 --> 02:37:34,031
+Mesela diyelim ki...
+
+509
+02:37:35,059 --> 02:37:56,059
+Custom'ı sonra ne bileyim işte şube yani ne location diyelim. Veya başka başka şeylerin dinlenmesi söz konusu olacaksa, onlar için de ayrı ayrı interfazler varsa diyelim ki address verification işlemi onlar için de yapılması gerekiyorsa eğer veya address verification'da o...
+
+510
+02:37:56,852 --> 02:38:17,231
+O türden subjectlerle ilgili bir şeyler yapılması gerekiyorsa, onlar için tanımlanan interphase'ler hiçbir sonuç kalmaz. O address verification sınıfı o interphase ya da interphase'leri de implement edebilir. Çünkü bir sınıf birden fazla arayüz implement edebilir. Hiç problem olmadan modern diller yapımı destekliyor.
+
+511
+02:38:18,644 --> 02:38:32,963
+O nedenle pek bir problem olmaz. Hatta şey demiştik ya, yani belirli tür observer'a belirli tür subjektleri dinlemek isteyebilir diye. Bu son derece mantıklı bir senaryo. Bu da ona göre düşünülmüş bir örnek.
+
+512
+02:38:41,236 --> 02:39:02,256
+Bakın dikkat ederseniz kalıpta aslında bir tane Sweet bir Subject de öneriliyor. Normalde Observer kalıbında Sweet Subject ve Sweet Observer sınıfları var. Ama bu örnekte sadece müşteri nesneleri izleneceği için ayrıca bir Sweet bir Subject sınıfı koymadık. Doğrudan bu şekilde oluşturduk bu işi.
+
+513
+02:39:02,256 --> 02:39:09,096
+O yüzden Customer sınıfında Attach ve Detach metotları var. Observer eklemek.
+
+514
+02:39:09,236 --> 02:39:19,336
+Çıkarmak için ve bütün customer nesneleri hep aynı observer tarafından izlenmesi gerek.
+
+515
+02:39:19,956 --> 02:39:40,756
+Bir senaryo olduğu için bu observerların tutulduğu listenin statik olarak kodlanması tercih edilmiş. Hala öyle olduğunca attach ve detach metotları da statik olmak zorunda. Örneğimizde durum böyle. Yoksa bunların statik olmasını kalıp gerektirmiyor kesinlikle.
+
+516
+02:39:46,739 --> 02:40:12,079
+Peki, Subject olarak ne demiştik, Location falan gibi ek sınıflarda olacaksa o zaman o Soyut Subject sınıfını kazandırmak yararlı olacaktır. Çünkü o diğer farklı Location, Mocation falan gibi sınıflara da bu Observer'lar üye alanı koyma, bunlarla ateşleşmiş işlemlerini yapma.
+
+517
+02:40:17,012 --> 02:40:42,092
+Bu attach-ditaç işlemlerini yapma işlerini duplicate code olarak kodlama yapmamıza sebep olur. Onlar da söz konusu olacaksa o zaman o soyut subject sınıfında mutlaka çözümümüzü kazandırmamız lazım. Şuradaki slide'ın sonunda söylenemişleri de o şekilde ayrıntılandırabilirim. Açabilirim, daha açıklayabilirim. Peki, koda gelelim.
+
+518
+02:40:44,340 --> 02:40:55,020
+Bakalım. Özellikle bulguladığım bir şey var mıymış kodda? Yok. En üst üzerinden bakalım, inceleyelim. Şiyamız da bir yandan açık olsun.
+
+519
+02:41:03,347 --> 02:41:08,108
+Neydi?
+
+520
+02:41:08,672 --> 02:41:36,672
+Interface Customer Observer. İşte o update metodunu içeriyor. Peki, şimdi bunu incelerken şuna da bakalım. Acaba bunu pull modelde mi yaptık, push modelde mi yaptık? Bir ona bakalım. Update metodu parametre olarak customer nesnesini komple aldığı için o subject'imiz customer bu örneğimizde. O subject'in yani customer'ın tüm durum...
+
+521
+02:41:36,672 --> 02:41:43,872
+Bilgisini göndermesini sağlıyor bu atlet metodu. Demek ki push model ile çalışıyormuşuz.
+
+522
+02:41:43,872 --> 02:41:45,692
+Peki.
+
+523
+02:41:46,772 --> 02:42:05,672
+Custom'la bakıyoruz. Bir kısım kodu subject işlemleri. Observer'ın tutulması, ondan sonra attach ve detach edilmesi. Bunlar subjective işleri aslında. Ama bir tek tüm subjective'imiz custom olacağına onu kodlamamışız. Gerekiyorsa extract ederiz. O sırada çıkartırız yani.
+
+524
+02:42:07,092 --> 02:42:22,352
+Şimdi GetState metodu, neyse o dönecek. Şu an sadece iskelet kodu yazdım. Notify metodu da keza yine aslında Subject olması gereken şey, bütün Observer Nesneli için Update metodunu çağırıyorum.
+
+525
+02:42:22,352 --> 02:42:30,012
+Bu nesnenin kendisini yani tüm durum ikisini push model ile vererekten iletmiş oluyorum.
+
+526
+02:42:31,636 --> 02:42:39,876
+Örneğin, Adress Verification ve Brick and Mod ve Welcome Letter bunlar bizim şeylerimizde.
+
+527
+02:42:40,876 --> 02:42:49,576
+Adress Verification'da, Update metodunda, Customer geliyor bunu parametre. Customer state'ini alıyoruz ve ne iş yapılması gerekiyorsa yapıyoruz.
+
+528
+02:42:50,376 --> 02:42:56,655
+Yazıyoruz, bir yerden sorguluyoruz, ne yapılacaksa. To do diye not almışız.
+
+529
+02:42:59,636 --> 02:43:17,376
+Aynı şekilde State, Observer Subject'in, yani Custom'ın durum ikisini alıp ne yapılması gerekiyorsa bütün bu Observer'da bu şekilde iskelet kod olarak belirilmiş durumdalar. Bu kadar. Bunda başka bir şey yok arkadaşlar.
+
+530
+02:43:18,579 --> 02:43:28,479
+Sorunuz varsa konuşalım. Örnek bu kalıbı veya benzerini kullandığınız örnek durumlar varsa konuşalım.
+
+531
+02:43:41,363 --> 02:43:43,363
+Bu ne, bu da, Motta ve Anonyum.
+
+532
+02:43:56,340 --> 02:43:59,680
+Aslında şeyh 55'e kadar.
+
+533
+02:44:06,036 --> 02:44:06,536
+İçtik.
+
+534
+02:44:09,536 --> 02:44:13,435
+Ezberim de yoktu. Ha, iterative. Tamam, iterative'e başladık.
+
+535
+02:44:14,315 --> 02:44:16,195
+Önceki şeydi.
+
+536
+02:44:19,956 --> 02:44:20,956
+Tamam, tamam.
+
+537
+02:44:33,459 --> 02:45:00,779
+Şu resmi kartı nedeniyle ders yapamamış olmamız nedeniyle sıradaki stratejiyi görememiş olacağız. Ondan sonra acaba Singleton State'i görememiş olacağız. Görevlisiyelik iyi olurdu ama neyse yani. Olduğu kadar.
+
+538
+02:45:01,427 --> 02:45:15,047
+Zaten ondan sonra, onlardan sonra visitor var. Sonra şey neydi? Ne vardı? Bir şey daha vardı. Ha mediator. Tamam o kadar karışık değil. Daha yapacak işimiz var. Peki.
+
+539
+02:45:15,700 --> 02:45:19,040
+Neyse, ne yapalım? Buraya kadar gelebildik.
+
+540
+02:45:19,540 --> 02:45:21,240
+Hocam bir şey sorabilir miyim izninizle?
+
+541
+02:45:21,680 --> 02:45:25,760
+Lütfen buyurun. Ben zaten soru sorun diye yallanıyorum ama...
+
+542
+02:45:25,760 --> 02:45:37,300
+Hocam ben şunun dikkatimi çektim. Bazı kalıplar özellikle birbirine çok benziyor. Bazı kullanılış şekilleri farklı ama birbirlerinin yerine kullanılabilir. Belki birisine daha fazla yoracak bizi. Birisi daha kolayımıza gidecek.
+
+543
+02:45:37,840 --> 02:45:43,700
+Önyeyim mesela, yanlış hatırlamıyorsam ilk derste vize için demiştiniz ki bir problem vereceğim size. Bu hangi kalıplar?
+
+544
+02:45:43,700 --> 02:45:53,319
+Kalıpla çözülür diye. O sorunun tek bir cevabı olmayabilir değil mi? Biz şu kalıpla da yapabiliriz. Şu şekilde diyebiliriz sınavda da. Onu sormak istedim hocam.
+
+545
+02:45:53,319 --> 02:46:11,639
+Evet, aynen öyle olacak. Dediğiniz gibi şey olarak ne diyeceğiz? Problemimiz diyeceğiz. Diyeceğiz ki işte dediğimiz gibi böyle böyle bir şeyler yapacağız. Ek olarak böyle böyle bir şeyler de yapılması gerek. Hangi tasım?
+
+546
+02:46:11,700 --> 02:46:15,180
+Kalıbını kullanırsınız. Adını yazınız.
+
+547
+02:46:15,680 --> 02:46:38,200
+Seçme nedenini açıklayınız ve bu kalıbı kullanarak bir YMAR sınıf şaması ile tasarımınızı anlatınız diyeceğiz. Böyle iki soru olacak. Bizden fazla kalıp birbirinin yerine kullanılabilir. Burada önemli olan sizin neden o kalıbı seçtiğinizin açıklamasına da bakacağım.
+
+548
+02:46:43,680 --> 02:46:45,900
+Açıklama kısmında dile getireceksiniz.
+
+549
+02:46:46,400 --> 02:46:48,680
+Böylece, şimdi ben...
+
+550
+02:46:48,788 --> 02:47:08,368
+Sorularım için öngörebiliyorum. Şu kalıp olabilir, şu kalıp olabilir diye kafamda bir ya da iki kalıp oluyor. Ama arkadaşlarımdan gelen yanıtlara baktığımda farklı kalıplar önermiş olabiliyorlar. Açıklamasına baktığımda o açıklamam beni ikna ediyorsa, ha evet bu da güzel arkadaş doğru yakalamış, o kısmına tam puan veriyorum diyorum.
+
+551
+02:47:12,531 --> 02:47:31,291
+Tam tutmuyor. Yani o kalıbın sağladığı yapı soruda verdiğin isterlerin hepsini karşılamıyor. Bir kısımını karşılıyor, bir kısımını karşılamıyor ise ve o karşılanmayan kısımlar için ek bir kalıp önermemişse o zaman onu yarı doğru şeklinde değerlendiriyorum.
+
+552
+02:47:31,291 --> 02:47:38,572
+O kısma doğru kalıbı ve doğru açıklamayı ayırdığım puanlama kısmına yarım puan veriyorum.
+
+553
+02:47:40,531 --> 02:47:51,811
+Olmamış oluyor ama biraz daha eksik puan alınmış oluyor o durumda. Ama açıklama yerindeyse hiç bir kırma yapmadan o kısmına tam puanı veriyorum.
+
+554
+02:47:54,811 --> 02:47:56,031
+Evet, başka?
+
+555
+02:47:56,431 --> 02:47:58,171
+Tamamdır hocam, çok teşekkür ederim. Çok sağ olun.
+
+556
+02:48:00,011 --> 02:48:04,551
+Evet, buyurun. Haftaya sınırlarınız olacak. Böyle sorular da önemli olabilir. Bazı da buyurun.
+
+557
+02:48:11,796 --> 02:48:26,796
+Öte yandan şunu da tekrarlamak istiyorum. Birbirine benzeyen kalıplar hem kullanmaması hem de sınıf şaması ile verilmiş tasarım açısından birbirine benzeyen kalıplar da var. Oradaki fark...
+
+558
+02:48:28,020 --> 02:48:48,659
+Ayrıntılarda ediyor. Hangi metotların ne sıklıkla çağrılması, hitap ettiği temel çekirdek probleminin birbirinden farklı olması gibi noktalarda onlar birbirinden ayrılıyor. Bunu dersin ilk haftalarında söylemiştim. Burada da ayrıca tekrar etmekte yanağı var.
+
+559
+02:48:51,763 --> 02:49:02,304
+Onun daha somut örneğini strateji ve builder'ı yaptıktan sonra tartışacağız da. Şimdiden ayrıca tekrar sözü söylemiş olayım.
+
+560
+02:49:04,691 --> 02:49:24,912
+Peki, o zaman bugünlük bu kadar arkadaşlar. Yine dolu dolu 3 saat dersimizi yapabildik. Haftaya sınav da 100 yüze olacak. Buluşacağız sınıfta inşallah. Bekliyorum hepinizi. Başarılar diliyorum. Haftaya görüşmek üzere. Allah'a ısmarladık. Hoşçakalın, sağolun.
