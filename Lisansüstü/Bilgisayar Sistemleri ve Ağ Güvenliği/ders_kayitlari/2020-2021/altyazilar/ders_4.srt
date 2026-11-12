@@ -1,0 +1,2607 @@
+1
+00:01:06,548 --> 00:01:24,067
+Herkese merhaba arkadaşlar. Şu anda kaç kişi olmuşuz? 7 kişi. 1-2 dakika daha bekleyelim isterseniz. Ondan sonra da konumuza başlayalım. Sesimi duyuyorsunuz değil mi?
+
+2
+00:01:26,207 --> 00:01:28,987
+Evet hocam geliyor. Tamam, süper.
+
+3
+00:01:43,284 --> 00:01:49,104
+İki arkadaşımızın ses bağlantısında sorun var. Böyle görünüyor. Bakalım yeni kimler gelecek.
+
+4
+00:03:38,228 --> 00:03:47,188
+Evet, 10 kişiye çıktık. Biz başlayalım anlatmaya. Diğer arkadaşlar da daha sonra gelirse gelirler.
+
+5
+00:03:47,188 --> 00:03:50,828
+Şimdi ekranı paylaşıyorum.
+
+6
+00:04:08,756 --> 00:04:18,896
+Şimdi bugün, geçen hafta anlattıklarımızın üzerine güvenli sistemler oluşturabilmek için nelere dikkat etmemiz gerekiyor?
+
+7
+00:04:19,855 --> 00:04:28,435
+Tasarımda, uygulamada, gerçekleştirmede veya kullanımda ön plana çıkan prensipler neler olmalı?
+
+8
+00:04:28,435 --> 00:04:35,576
+Güvenli sistemler oluşturabilmek adına bunlara değineceğiz. Bunların ayrıntılarına gireceğiz yavaş yavaş.
+
+9
+00:04:38,755 --> 00:04:49,055
+Bunu yaparken de, az önce söylediğim gibi, bir takım temel prensipleri tarifleyip, anlatıp, bunlardan ne anlıyoruz, niçin önemli.
+
+10
+00:04:49,735 --> 00:04:53,935
+Sonrasında da işletim sistemleri güvenliğiyle devam edeceğiz.
+
+11
+00:04:56,076 --> 00:04:59,776
+Şimdi biliyoruz ki, zafiyetler kaçınılmaz.
+
+12
+00:05:00,716 --> 00:05:06,995
+Geçen hafta, ondan önceki hafta, uzun uzun konuştuk. Savunma mekanizmalarını da konuştuk.
+
+13
+00:05:06,995 --> 00:05:18,175
+Ancak savunma mekanizmalarını uygulasak bile, başarısız olan bir buffer overflow saldırısının aslında bir denial of service saldırısına dönüştüğünü de konuştuk.
+
+14
+00:05:18,175 --> 00:05:30,735
+O açıdan herhangi bir buffer overflow zafiyeti, serbest bıraktıktan sonra bir memori bölgesinin kullanılması
+
+15
+00:05:30,735 --> 00:05:40,636
+veya iklendirilmemiş sıfır değerine sahip bir pointer üzerinden bir veriye erişilmesi,
+
+16
+00:05:42,495 --> 00:05:48,216
+saldırgana kötü niyetli kod çalıştırabilmesi için aradığı fırsatı verebiliyor.
+
+17
+00:05:48,216 --> 00:06:03,056
+O yüzden bir taraftan hataları bulmada, engellemede veya en aza indirmede daha iyi bir hale geliyor olmamıza rağmen
+
+18
+00:06:03,055 --> 00:06:11,495
+diğer taraftan da bu hataların her zaman olacağını ve bu hataların varlığıyla beraber
+
+19
+00:06:11,495 --> 00:06:18,036
+sistemleri nasıl daha güvenli hale getirebileceğimizi konuşmamız, bunları düşünmemiz lazım.
+
+20
+00:06:18,836 --> 00:06:25,135
+Hatalar yok diyemeyiz, bunlar bundan sonra, bu hatalar bundan sonra hiçbir zaman olmayacak diyemeyiz.
+
+21
+00:06:25,135 --> 00:06:28,255
+Böyle bir seçeneğimiz söz konusu değil.
+
+22
+00:06:31,436 --> 00:06:42,936
+Şimdi hatırlarsanız size söylemiştim, type safe language, tip atamalarında tiplerin birbiriyle uyuşmasına dikkat ediyor.
+
+23
+00:06:43,495 --> 00:06:48,196
+Uyuşmazsa bu atamaları yaptırmıyor ve sonucunda da code generate etmiyor.
+
+24
+00:06:48,795 --> 00:06:50,275
+Bu dilleri kullanalım.
+
+25
+00:06:51,675 --> 00:06:53,115
+Seçeneklerden biri buydu.
+
+26
+00:06:53,115 --> 00:06:57,735
+İşte Java bunlardan biri, Go bir başkası, Python bir başkası.
+
+27
+00:06:58,296 --> 00:07:02,016
+Ama orada da size üzerine basa basa şunu anlatmıştım.
+
+28
+00:07:02,696 --> 00:07:14,836
+Ya bu dillerin kendisi CC++ kullanılarak yazılmış ya da runtime'ları CC++ kullanılarak yazılmış olan kütüphaneler üzerine kurulu.
+
+29
+00:07:14,836 --> 00:07:27,456
+Bakın Python şu anda çok popüler, özellikle veri bilimi alanında, yapay zeka alanında inanılmaz popüler bir dil.
+
+30
+00:07:27,456 --> 00:07:32,076
+Ancak Python'ın kendisi C programlama dilinde yazılmış.
+
+31
+00:07:32,076 --> 00:07:41,615
+Ve işte şurada 2016 yılındaki bir Common Vulnerability and Exploit CV o demek.
+
+32
+00:07:42,355 --> 00:07:43,696
+Onun raporu var.
+
+33
+00:07:43,696 --> 00:08:05,415
+Yani demek ki Python'ın kendisi güvenli bir dil diye sınıflandırılabilir.
+
+34
+00:08:05,415 --> 00:08:07,415
+Ancak...
+
+35
+00:08:07,120 --> 00:08:23,220
+Python'ın implementasyonu C'de olduğu için Python'ı oluşturan modüllerde şu haftaya kadar gördüğümüz zafiyetler mevcut olabilir ve saldırgan bunun analizini yapıp, bunun incelemesini yapıp bu noktadan saldırabilir.
+
+36
+00:08:23,220 --> 00:08:30,220
+Yine aynı yere dönüyoruz. Hatalar var ve bu hatalarla yaşamayı öğreneceğiz.
+
+37
+00:08:30,220 --> 00:08:49,980
+Bunun için de en temel şey hep söylüyorum ya size bir hat şeklinde müdafaa savunma mekanizması oluşturmamak bir yüzey şeklinde yani hattı müdafaa değil sat müdafaa.
+
+38
+00:08:49,980 --> 00:09:08,519
+Birden fazla güvenlik tedbirimizin olması lazım. Bir noktadaki bir güvenlik açığı, bir güvenlik zafiyeti, bir başka noktadaki almış olduğumuz tedbirle belki en aza indirebilir veya tamamen bertaraf edilebilir.
+
+39
+00:09:08,519 --> 00:09:16,860
+Örnek vermiş burada, what if there is a vulnerability in Chrome's JavaScript interpreter.
+
+40
+00:09:17,600 --> 00:09:23,399
+Şimdi Chrome en çok kullanılan browserlardan bir tanesi değil mi internete erişmek için.
+
+41
+00:09:24,340 --> 00:09:32,100
+Burada JavaScript interpreter'de bir zafiyet olduğunu ve saldırganların bunu kullanmak için bir yol bulduğunu düşünüyorum.
+
+42
+00:09:32,100 --> 00:09:37,779
+Chrome'un kendi yapısı tedbir alabilir.
+
+43
+00:09:38,000 --> 00:09:41,899
+Chrome should prevent malicious websites from accessing other tabs.
+
+44
+00:09:42,779 --> 00:09:54,019
+Bir tabda bir sayfa açıkken ve bu sayfada bu kötü niyetli kod parçası çalışırken diğer tablardaki verilere erişmesini engellememiz gerekiyor.
+
+45
+00:09:54,019 --> 00:10:04,159
+Yani aynen işletim sistemi mantığında olduğu gibi proses tabanlı birbirlerinden izolasyonu sağlamamız gerekiyor.
+
+46
+00:10:05,340 --> 00:10:11,539
+Bunun tabi ki altyapısını nerede oluşturmuş olmamız lazım?
+
+47
+00:10:11,799 --> 00:10:12,779
+İşletim sisteminde.
+
+48
+00:10:13,240 --> 00:10:16,360
+Operating system should prevent access to other processes.
+
+49
+00:10:16,360 --> 00:10:39,259
+Eğer Chrome'un yapısı tabları thread şeklinde değil de proses şeklinde gerçekleştirilirse, o zaman işletim sisteminin de proseslerin birbirlerinden özel izin olmadığı sürece, kullanıcı hak tanımadığı sürece veri alıp veremediklerini biliyorsak,
+
+50
+00:10:39,259 --> 00:10:51,680
+bu durumda ne açıdan gönlümüz biraz daha rahat olabilir, bir seviye daha fazla tedbir almış olabiliriz, bir tabda sıkıntılı bir durum varsa bu diğer tabları etkilemeyecek.
+
+51
+00:10:53,120 --> 00:10:59,580
+Aynı şekilde hardware should prevent permanent malware installation in device firmware.
+
+52
+00:10:59,580 --> 00:11:19,620
+Şimdi öyle örnekler var ki, ya motherboard'un kendisi kullandığımız bilgisayar sisteminin anakartının üzerindeki BIOS, işte UEFI veya standart BIOS, onun güncellenmesi sırasında,
+
+53
+00:11:19,620 --> 00:11:34,200
+ya da bu anakartın üzerindeki donanımların, controller'larının, firmware'lerinin güncellenmesi sırasında, kötü niyetli kod enjekte edilmeye çalışılabiliyor saldırganlar tarafından.
+
+54
+00:11:35,759 --> 00:11:49,399
+Bunun da arkasındaki temel prensip, eğer ben bir cihazın kontrolünü ele geçirirsem, üzerinden akan veriyi de istediğim bir yere yönlendirme şansına sahip olabilirim.
+
+55
+00:11:49,844 --> 00:12:13,644
+Düşünsenize bir disk kontrolörün firmware'i güncellenirken sizin kötü niyetli firmware'iniz kullanıldığı farkına bile varmadınız. Diske yazılan ve okunan her türlü verinin bir kopyası başka bir tarafa gönderiliyor. Siz üst tarafta istediğiniz kadar kullanıcı seviyesinde, proses seviyesinde izolasyon yapmış olun, bunları birbirinden ayırt etmiş olun.
+
+56
+00:12:13,644 --> 00:12:30,484
+Alt tarafta tek bir noktada birleşiyorlar ve oradaki bir zafiyet sebebiyle her türlü kullanıcıya ait, en yetkilisinden en yetkisisine kadar her türlü kullanıcıya ait veriler ifşa olabiliyor, başka bir yere kopyalanabiliyor.
+
+57
+00:12:30,484 --> 00:12:35,944
+Network should prevent malware from infecting nearby computers.
+
+58
+00:12:36,444 --> 00:12:47,604
+Genelde kötü niyetli kod parçaları bir bilgisayar sistemini ele geçirdikleri zaman network üzerinden etrafta başka hangi bilgisayar sistemleri var diye bakıyorlar.
+
+59
+00:12:47,604 --> 00:13:05,244
+Onlarda da benzer zafiyetler varsa ki genelde uygulanan güvenlik politikasının bir sonucu olarak ev kullanıcılarından bahsetmiyorum, ağırlıklı olarak kurumsal kullanıcılardan kurumsal bilgisayar sisteminin birinde bir açık varsa,
+
+60
+00:13:05,244 --> 00:13:12,304
+onun bağlı olduğu kurumsal ağdaki diğer sistemlerde aynı açığın olma ihtimali çok yüksek oluyor.
+
+61
+00:13:12,744 --> 00:13:19,244
+Ve böylece bir noktayı atlama taşı gibi kullanıp oradan diğer sistemlere atlayabiliyorlar, geçebiliyorlar.
+
+62
+00:13:20,364 --> 00:13:22,084
+Şimdi bakın buradan biz neyi anlıyoruz?
+
+63
+00:13:22,224 --> 00:13:29,903
+Defense in Depth dediğimizde, yani sat-ı müdafaa, bir noktada bir tedbir almıyoruz.
+
+64
+00:13:29,903 --> 00:13:51,384
+O noktanın bağlantılı olduğu, o noktadaki zafiyet sonucunda oluşan bir saldırının devamında kullanılabilecek, devamı getirilmek istendiğinde yararlanılabilecek diğer noktalar neredeyse oralarda da tedbirler alıyoruz.
+
+65
+00:13:52,624 --> 00:13:55,204
+Yapımızı bunun üzerine kurmamız lazım.
+
+66
+00:13:55,204 --> 00:14:02,163
+Şimdi o zaman güvenli sistemlerin prensipleri neler?
+
+67
+00:14:02,504 --> 00:14:04,684
+Birincisi Defense in Depth.
+
+68
+00:14:05,844 --> 00:14:06,163
+Değil mi?
+
+69
+00:14:06,784 --> 00:14:08,524
+Az önce örneğini verdim.
+
+70
+00:14:09,024 --> 00:14:14,244
+Tek bir savunma mekanizması, çizgi hat şeklinde bir savunma mekanizması oluşturmayacağız.
+
+71
+00:14:14,344 --> 00:14:18,024
+Bir satıh şeklinde savunma mekanizması oluşturacağız.
+
+72
+00:14:18,184 --> 00:14:21,704
+Yani birden fazla mekanizmamız olacak.
+
+73
+00:14:21,704 --> 00:14:28,184
+Şimdi ikincisi Principle of Least Privilege.
+
+74
+00:14:28,964 --> 00:14:30,784
+Ne anlama geliyor?
+
+75
+00:14:31,664 --> 00:14:32,784
+Least Privilege.
+
+76
+00:14:33,524 --> 00:14:34,764
+En az yetki.
+
+77
+00:14:36,704 --> 00:14:44,524
+Users should only have access to the data and resources needed to perform routine authorized tasks.
+
+78
+00:14:44,524 --> 00:15:07,004
+Bir kullanıcının günlük yapmakla yetkili olduğu, sorumlu olduğu işleri yerine getirmek için ihtiyaç duyduğu minimum güvenlik seviyesi aslında o kullanıcının sahip olması gereken maksimum güvenlik seviyesidir.
+
+79
+00:15:07,004 --> 00:15:08,024
+Öyle düşünün.
+
+80
+00:15:08,024 --> 00:15:10,884
+Daha fazlasına ihtiyacı yok.
+
+81
+00:15:11,384 --> 00:15:18,004
+Daha fazlası verilecek olursa kullanıcı bunu hatalı kullanabilir.
+
+82
+00:15:19,224 --> 00:15:20,864
+Amacı dışında kullanabilir.
+
+83
+00:15:21,564 --> 00:15:23,024
+Kötü niyetli kullanabilir.
+
+84
+00:15:23,024 --> 00:15:43,824
+Demek ki bir işlemin gerçekleştirilmesinde ihtiyaç duyulan minimum yetki seviyesi, bunun daha fazlasını o işleme, o işlemi gerçekleştirecek olan kullanıcıya vermemek gerekiyor.
+
+85
+00:15:46,580 --> 00:15:57,580
+Gerçek hayat örnekleri. Ben bir öğretim üyesi olarak sadece kendi verdiğim derslerin notlarını verebilirim veya değiştirebilirim.
+
+86
+00:15:58,860 --> 00:16:12,500
+Diğer hoca arkadaşlarımın verdiği dersler, oradaki öğrencilerin o derslerde aldığı notlar, ben de bir öğretim üyesi olmama, onlar da bir öğretim üyesi olmalarına rağmen birbirimizin sınırları dışında.
+
+87
+00:16:12,500 --> 00:16:34,900
+Güvenlik soruşturması yapılmış olan ve belirli bir güvenlik seviyesine sahip olduğu kesinleştirilmiş olan çalışanlar özel dokümanlara erişebilirler.
+
+88
+00:16:34,900 --> 00:16:48,759
+Herkes bu özel dokümana erişemez, içeriğine erişemez. Çünkü o zaman bilgiyi koruyamayız. O bilginin yayılımını, dağılımını kontrol edemeyiz.
+
+89
+00:16:48,759 --> 00:17:03,879
+Aynı şekilde benzer tarzda bir prosese yapması gereken iş için ihtiyaç duyduğu yetkiden daha fazlasını verecek olursak,
+
+90
+00:17:04,460 --> 00:17:15,980
+bu proses saldırıya uğradığında, bu proses saldırgan tarafından kontrol edilir hale geldiğinde çok ciddi bir güvenlik açığı oluşmuş olur.
+
+91
+00:17:15,980 --> 00:17:33,880
+Bir başka şey, prensip. Privilege separation. Yetkinin bölümlendirilmesi. Compartmentalization da deniliyor buna.
+
+92
+00:17:33,880 --> 00:17:43,400
+Compartmentalize yani parçalara ayırma. Bu kompartmanı aslında biz Türkçe'de ne için kullanıyoruz?
+
+93
+00:17:43,960 --> 00:17:52,360
+Trende bağımsız seyahat edilebilen alanlar değil mi? Özellikle uzun yol trenlerinde yataklı olanı, yataksız olanı var.
+
+94
+00:17:52,360 --> 00:18:01,320
+Yani herkes aynı trende seyahat ediyor. Ancak kişiler birbirlerinden bölümlerle ayrılmış durumda.
+
+95
+00:18:02,840 --> 00:18:08,940
+Bu bazen mantıksal bölümleme de anlamına geliyor, bazen fiziksel bölümleme anlamına da geliyor.
+
+96
+00:18:08,940 --> 00:18:32,420
+Least privilege, az önce öğrendiğimiz prensip, doğal olarak bir sistemin kendi içerisinde erişim açısından sınırlandırılmış parçalara ayrılmasını gerektiriyor.
+
+97
+00:18:32,420 --> 00:18:42,000
+Buna da privilege separation diyoruz. Yani yetkinin ne yapılması? Bölümlendirilmesi.
+
+98
+00:18:42,900 --> 00:18:51,779
+Segmenting a system into components with the least privilege needed can prevent an attacker from taking over the entire system.
+
+99
+00:18:53,279 --> 00:18:59,160
+Bu yaklaşımın arkasındaki düşünce çok basit, motivasyon çok basit.
+
+100
+00:18:59,160 --> 00:19:07,059
+Saldırgan başarılı bir şekilde bir buffer overflow saldırısı gerçekleştirebilir.
+
+101
+00:19:07,700 --> 00:19:09,620
+İşte use after free kullanabilir.
+
+102
+00:19:10,579 --> 00:19:13,519
+Null pointer dereference yapabilir. Fark etmez.
+
+103
+00:19:13,519 --> 00:19:35,820
+Ama ele geçirdiği komponent hem işini yapmak için ihtiyaç duyduğu minimum yetkiye sahipse hem de bu komponent sistemdeki diğer komponentlerden yetki açısından izole edilmişse saldırgan sadece ve sadece o komponenti ele geçirmiş olur.
+
+104
+00:19:35,820 --> 00:19:45,820
+Ve bizim bu durumda hatalı olan, ele geçirilmiş olan, kötü niyetli çalışma sergileyen komponenti...
+
+105
+00:19:45,820 --> 00:20:08,759
+...
+
+106
+00:19:46,867 --> 00:20:01,447
+Bulmamız, izole etmemiz ve düzeltmemiz kolay olur. Hem de saldırganın o komponent üzerinden başka yerlere atlamasını engellemiş oluruz.
+
+107
+00:20:08,115 --> 00:20:29,875
+Least Privilege and Privilege Separation Apply to More Than Just Users. Bunu sadece kullanıcılar olarak düşünmemek gerekiyor. Bakın Unix. Burada Unix diye veriyoruz ama bunu Windows olarak da düşünebilirsiniz. Genel anlamda işletim sistemi olarak da düşünebilirsiniz.
+
+108
+00:20:29,875 --> 00:20:52,576
+A user should only be able to read their own files. Bir kullanıcı sadece kendi dosyalarına erişebilmeli. Burada read'i sadece read olarak düşünmeyin. Hani read-write olarak düşünün. Kendine ait dosyaları okuyabilir, yazabilir, bunları çalıştırabilir.
+
+109
+00:20:52,576 --> 00:21:06,395
+Yine Unix örneğinden. A process should not be able to read another process's memory. Bir proses, bir başka prosesin belleğini okuyamamalı.
+
+110
+00:21:06,395 --> 00:21:27,395
+Çünkü bunlar farklı işlemler. Orada farklı program akışları devam ediyor. İzin verilmediği sürece veya işletim sisteminin tariflemiş olduğu düzgün mekanizmalar kullanılmadığı sürece bir prosesin, bir başka prosesin belleğini, memorisini okumasının bir anlamı yok.
+
+111
+00:21:27,395 --> 00:21:33,215
+Mobile tarafında, an app should not be able to edit another app's data.
+
+112
+00:21:33,955 --> 00:21:38,395
+Şimdi telefonlarımızda, tabletlerimizde bir sürü uygulama çalıştırıyoruz.
+
+113
+00:21:39,895 --> 00:21:49,935
+Bunların birbirlerinin verilerini okuması, değiştirmesi, bunlara erişmesi, biz izin vermediğimiz sürece yine bir güvenlik tehtiydi.
+
+114
+00:21:49,935 --> 00:21:59,715
+Web tarafında, a domain should only be able to read its own cookies.
+
+115
+00:22:00,715 --> 00:22:09,155
+Şimdi ben diyelim ki Google'a eriştim, Yahoo'ya eriştim, Yıldız'a eriştim, erişiyorum da erişiyorum, Zoom'a eriştim.
+
+116
+00:22:09,155 --> 00:22:28,195
+Her bir erişim sırasında benim browserıma daha sonradan beni hatırlayabilmesi ve ona bağlı olarak da diyelim ki kaldığım yerden devam etmemi sağlayabilmesi adına cookies'ler gönderiyor karşı taraftaki sormuş.
+
+117
+00:22:28,996 --> 00:22:38,096
+Şimdi bu durumda Google'ın gönderdiği bir cookie'yi, işte Zoom okuyamamalı, Zoom'un gönderdiğini Yıldız okuyamamalı veya tam tersi.
+
+118
+00:22:38,096 --> 00:22:51,316
+Çünkü niye? Bunlar domain spesifik. Buradaki domain aslında arka tarafta o domain'e servis veren web server'ı, application server'ı kastediyor.
+
+119
+00:22:52,255 --> 00:23:04,296
+Yani yoksa kalkıp da işte bir yerde bir otorite var, bu otorite hangi domain, hangi domain'den okuyabilir veya hangisinden okuyamaz öyle bir şey değil.
+
+120
+00:23:04,296 --> 00:23:15,175
+O cookie'yi yollayan bir web server, o cookie'yi yollarken de aslında o cookie'nin izolasyon seviyesini de belirtiyor.
+
+121
+00:23:15,655 --> 00:23:18,756
+Kimler tarafından okunup, kimler tarafından okunamayacağını.
+
+122
+00:23:19,355 --> 00:23:27,115
+Doğal olarak, normal şartlarda bize gönderilen her cookie'yi sadece ve sadece gönderen server,
+
+123
+00:23:27,115 --> 00:23:33,036
+yani dolayısıyla gönderen domain okuyabilir veya değiştirebilir.
+
+124
+00:23:34,076 --> 00:23:41,496
+Şimdi bir tarafta kullanıcılar var, user. Diğer tarafta neler var?
+
+125
+00:23:42,655 --> 00:23:47,115
+Kullanıcıların eriştiği kaynaklar var. Onlara da subject diyoruz.
+
+126
+00:23:47,996 --> 00:23:51,016
+User ile subject arasında bir ilişki var.
+
+127
+00:23:51,016 --> 00:23:55,976
+Kullanıcılar, user'lar kaynaklara yani subjectlere erişiyor.
+
+128
+00:23:55,976 --> 00:24:06,976
+Bu durumda bu list privilege sadece kullanıcılar için değil, aynı zamanda kaynaklar için de geçerli olmalı.
+
+129
+00:24:07,155 --> 00:24:24,816
+Subjects Should Only Have Access to Data and Resources Needed to Perform Routine Authorized Tasks Kullanıcılar için ne tariflediysek kaynaklar için de aynısını tariflememiz lazım.
+
+130
+00:24:24,816 --> 00:24:30,816
+Çünkü kaynaklar pasif olmak zorunda değil, kaynaklar aktif de olabiliyor.
+
+131
+00:24:30,816 --> 00:24:42,056
+Bu şartlar altında demek ki sadece kullanıcıları değil, aynı zamanda o kullanıcıların eriştiği kaynakları da ne kapsamına almak zorundayız?
+
+132
+00:24:42,576 --> 00:24:44,915
+Lease Privilege kapsamına almak zorundayız.
+
+133
+00:24:48,756 --> 00:25:08,276
+Güvenlik politikalarını oluştururken, değerlendirirken, incelerken, uygularken temel bazı soruları sormamız gerekiyor aslında.
+
+134
+00:25:08,276 --> 00:25:15,636
+Who, what, how? Subject, object ve operation.
+
+135
+00:25:19,955 --> 00:25:39,875
+Kullanıcılar, uygulamalar, prosesler, kaynaklar, işte memori olabilir, dosyalar olabilir. Az önce söyledik donanımdaki parçalar, donanımı oluşturan parçalar bir disk kontrolör, bir network kontrolör.
+
+136
+00:25:39,875 --> 00:25:52,015
+İşlemlerden ne? Okuma ve yazma. O zaman nasıl bunları bir araya getiriyoruz? Nasıl getirmemiz lazım aslında?
+
+137
+00:25:52,955 --> 00:26:03,315
+A user should not be able to delete other users' files. Bir kullanıcı, bir başka kullanıcının dosyalarını silememeli.
+
+138
+00:26:03,315 --> 00:26:14,235
+A process should not be able to read another process's memory. Bir proses, bir başka prosesin memorisini okuyamamalı.
+
+139
+00:26:15,115 --> 00:26:26,695
+An app should not be able to edit its own data. Bir uygulama sadece kendi verisini düzenleyebilmeli.
+
+140
+00:26:26,695 --> 00:26:36,915
+A domain should not be able to read another domain's cookies. Bir domain, bir başka domain tarafından gönderilmiş olan cookie'leri okuyamamalı.
+
+141
+00:26:37,415 --> 00:26:46,135
+Bakın burada cümlelerde mavi, kırmızı ve yeşil şeklinde subject, object ve operation tariflenmiş durumda.
+
+142
+00:26:46,275 --> 00:26:54,855
+Demek ki güvenlik politikalarımızı belirlerken bu üç tane soruyu çok net bir şekilde cevaplıyor olabilmemiz lazım.
+
+143
+00:26:54,855 --> 00:27:10,935
+Who, what ve how. Bunların üzerine kurulu. Bunların üzerine kurulu politikaları da, polisi diyelim isterseniz prensipleri de, kurallar silsilesi, kurallar bütünü, polisi.
+
+144
+00:27:10,935 --> 00:27:30,775
+Bunları da daha sonra kontrol etmemiz lazım. Uygulanıyor mu, uygulanmıyor mu? Hangisinde bir kaçak oldu veya saldırgan hangi kural olmadığı için, hangi kuralı atladığımız için, kontrolünü yapmadığımız için bu saldırıyı başarıyla gerçekleştirdi?
+
+145
+00:27:30,775 --> 00:27:32,615
+İşte bunun analizini yapabilmemiz lazım.
+
+146
+00:27:34,195 --> 00:27:42,975
+Şimdi bu noktada, hani işletim sistemiyle ilişkilendireceğiz dedik ya, bu noktada Unix'teki güvenlik modeline bakacağız.
+
+147
+00:27:44,915 --> 00:27:48,655
+Şimdi subject, kim sorusu değil mi?
+
+148
+00:27:49,195 --> 00:27:51,455
+Kullanıcılar var, prosesler var.
+
+149
+00:27:51,995 --> 00:27:54,235
+Object, what sorusunun cevabı.
+
+150
+00:27:54,235 --> 00:28:06,576
+Bildiğimiz sıradan dosyalar ve dizinler ama bunun haricinde, Unix'in yapısından ötürü, network haberleşmesinde kullandığımız soketler,
+
+151
+00:28:07,355 --> 00:28:12,235
+proseslerin haberleşmesinde kullandığımız pipelar, donanımdaki cihazlar,
+
+152
+00:28:12,235 --> 00:28:23,195
+kernel'da işletim sisteminin çalışması veya kullanıcılara hizmet verilmesiyle alakalı verilerin kendileri,
+
+153
+00:28:24,076 --> 00:28:32,395
+proseslere ait o prosesleri tarifleyen yapılar, artık prosesin üzerinde işlem yaptığı veriler.
+
+154
+00:28:32,995 --> 00:28:35,975
+Bütün bunların hepsi sonuçta neyi oluşturuyor?
+
+155
+00:28:36,495 --> 00:28:37,975
+What sorusunun cevabını.
+
+156
+00:28:37,975 --> 00:28:44,155
+Peki, operasyonlar diyelim, how kısmı, erişim operasyonları.
+
+157
+00:28:44,836 --> 00:28:47,395
+Üç tane temel operasyon var.
+
+158
+00:28:48,096 --> 00:28:49,275
+Read, write, execute.
+
+159
+00:28:50,355 --> 00:28:53,096
+Okuma, yazma ve çalıştırma.
+
+160
+00:29:00,339 --> 00:29:27,399
+Unix sistemlerinde çok farklı kullanıcı tanımları olabiliyor. Bir, servisle alakalı kullanıcı tanımları. Mesela bir web server'ın kullanıcı tanımı. İşte nedir? Apache veya HTTP'de Apache kullanıyorsanız genelde Apache diye bir kullanıcı açılır.
+
+161
+00:29:27,399 --> 00:29:42,899
+Veya Nginx kullanabilirsiniz. O zaman Nginx diye bir kullanıcı açabilirsiniz. Veya hem Apache hem Nginx hangisini kullanırsanız kullanın. Her ikisi de aslında bir web server olduğu için HTTP'de diye de bir kullanıcı açabilirsiniz.
+
+162
+00:29:42,899 --> 00:29:54,659
+Ama sonuçta bu kullanıcı ismini gördüğünüzde bunun sıradan bir kullanıcı olmadığını, bunun aslında web server hizmeti veren bir kullanıcı olduğunu anlarsınız.
+
+163
+00:29:54,659 --> 00:30:13,399
+Diğer taraftan da kullanıcıların kendisine ait olan hesap bilgileri. İşte diyelim ki benim kullanıcı adım olsun. [öğrenci] diye. Nedir? Bir insana, o sistemi kullanan bir insana ait olan hesap bilgisi.
+
+164
+00:30:13,399 --> 00:30:24,799
+İster servisle alakalı olsun ister gerçek kullanıcılarla alakalı olsun her kullanıcının bir tanımlayıcısı var.
+
+165
+00:30:24,799 --> 00:30:31,500
+Bu tanımlayıcı tekil bir tanımlayıcı, tekrar etmeyen bir değer ve integer değer.
+
+166
+00:30:32,299 --> 00:30:48,059
+Sıfır değeri ise sistemdeki her türlü yetkiye sahip, her türlü erişimi kısıtsız bir şekilde, kısıtlamasız bir şekilde diyelim, gerçekleştirebilen, ismi de root olan kullanıcıya ayrılmış durumda.
+
+167
+00:30:48,059 --> 00:31:02,379
+Bazı sistemle alakalı işlemlerin yapılabilmesi sadece ve sadece root kullanıcısına tanınmış olan bir imtiyaz.
+
+168
+00:31:06,644 --> 00:31:23,544
+Bakın burada bir takım örnek kullanıcı isimlerini görüyoruz. Unix sistemlerinde kullanıcı tanımları ETC klasörü altında PESVD dosyasındadır. En üst satırda dikkat edin root kullanıcısı.
+
+169
+00:31:23,544 --> 00:31:38,963
+User ID'si 0'mış. Grup ID'si 0'mış. Adı root'muş. Login olduğu zaman yönlendirileceği home directory'si de slash root'muş.
+
+170
+00:31:38,963 --> 00:31:49,963
+Ve çalıştıracağı shell sistemle etkileşim command line interpreter. Bu da neymiş arkadaşlar? 1005'miş.
+
+171
+00:32:04,463 --> 00:32:15,463
+Çünkü niye? Aslında web server'ın executable'ı kenarda o değişen bir şey değil. Ama web server'ın kendisinin sunduğu sayfaların içerikleri değişebilir.
+
+172
+00:32:15,463 --> 00:32:25,163
+Statik olarak sunulsa bile oradaki içerik değiştirilebilir. File upload edilebilir. Benzeri şeyler veya dinamik sunulabilir.
+
+173
+00:32:26,324 --> 00:32:35,104
+Bir başka kullanıcı bakın. Backup kullanıcısı. Backup almakla alakalı. Bu arada şu sondaki şeye dikkat edin. No login.
+
+174
+00:32:35,104 --> 00:32:46,624
+Bu kullanıcı ile sisteme login olamazsınız. Login olmak istediğinizde sizi dışarıya atar. Halbuki root kullanıcısı ile login olmak istediğiniz zaman size bir shell açar.
+
+175
+00:32:46,624 --> 00:33:05,324
+Sistemde risol DNS ile alakalı bir servis. Bizim vermiş olduğumuz domain isimlerinin adreslere adreslerinde domain isimlerine dönüştürülmesini sağlıyor.
+
+176
+00:33:05,324 --> 00:33:20,683
+Bununla alakalı bir servis. Diğer taraftan da bakın. Zakir ve Dabo'da iki kişi görüyorsunuz. Dan, Bonnie ve Zakir, Durmerich. İki tane kullanıcı.
+
+177
+00:33:24,307 --> 00:33:43,528
+Grup yapısı benzer sorumluluklara, benzer yetkilere, benzer özelliklere sahip olan kullanıcıları gruplamayı seviyoruz. Çünkü böylece onlarla alakalı işlemleri bir seferde gerçekleştirebiliyoruz.
+
+178
+00:33:43,528 --> 00:33:53,688
+Unix'te grup kavramı da var. Benim tarifi farklı bir şekilde de yapabilirsiniz.
+
+179
+00:33:53,688 --> 00:34:13,467
+Collection of Users who can share files and other system resources. Aralarında dosya paylaşabilen ve bir takım sistem kaynaklarını bir arada ortaklaşarak, paylaşarak kullanabilen kullanıcı grupları, toplulukları da diyebilirsiniz.
+
+180
+00:34:13,527 --> 00:34:21,547
+Her grubun da bir aynısı var. Tabii ki doğal olarak bu da ne olmak zorunda? Tekil olmak zorunda.
+
+181
+00:34:21,547 --> 00:34:35,688
+Grup bilgisi de etc altında grup dosyasında tutuluyor. İşte bakın root 0 numaralı gruba aitmiş.
+
+182
+00:34:35,688 --> 00:34:45,268
+Daemon 1, 1002, ss3, adm4 bunlar gruplar ve grupların id'leri.
+
+183
+00:34:46,027 --> 00:34:50,487
+TTY 5 bu şekilde devam ediyor.
+
+184
+00:34:50,487 --> 00:34:57,288
+Peki bir dosyanın sahiplik bilgisi nasıl belirleniyor?
+
+185
+00:35:02,324 --> 00:35:14,023
+Linux diğin, Unix diğin fark etmez. Bütün kaynaklar, ister soket olsun, ister cihaz olsun, ister dosya olsun. Bunların her biri bir file gibi görünüyor. Bunu daha önce konuşmuştuk.
+
+186
+00:35:15,023 --> 00:35:32,003
+All files and directories have a single user owner and group owner. Bütün dosya ve klasörlerde bir kullanıcı oranın sahibi oluyor.
+
+187
+00:35:32,003 --> 00:35:39,664
+User owner ve bir grupta oranın grup owner'ı oluyor. Bakın burada gösterilmiş. User owner, grup owner.
+
+188
+00:35:40,604 --> 00:35:49,264
+Homework'ın user owner'ı zakirmiş. Grup owner'ı CS155 TAS'mış. Grades'in user owner'ı zakirmiş.
+
+189
+00:35:49,923 --> 00:35:59,983
+İşte grup owner'ı CS155 INST'miş. Lectures, benzer şekilde. Şurada bir tane dosya var.
+
+190
+00:35:59,983 --> 00:36:13,764
+İlk üç tanesi klasördü. Alttaki dosya. Orada da user owner'ı zakir olmasına rağmen DABO diye bir grup var.
+
+191
+00:36:14,224 --> 00:36:15,344
+Grup owner'ı da DABO.
+
+192
+00:36:21,108 --> 00:36:35,968
+Three Subjects Have Access to a File. Kimler erişebiliyormuş? User Owner, Group Owner, Other. Ya sahibi, kullanıcı sahibi ya da grup sahibi ya da bunların dışındakiler.
+
+193
+00:36:37,588 --> 00:36:47,488
+Subjects Can Have Tree Operations. Read, Write, Execute. Üç tane işlem gerçekleştirebiliyor. Okuyabiliyor, yazabiliyor, çalıştırabiliyor.
+
+194
+00:36:47,488 --> 00:37:01,948
+Owner, Can Change Permissions. Sahip, yani şuradaki şu User Owner, erişim izinlerini değiştirebiliyor.
+
+195
+00:37:02,468 --> 00:37:14,368
+Root kullanıcısı ise Can Change File Ownership. Kime ait olduğunu ise Root değiştirebiliyor. Arada böyle bir yapı var.
+
+196
+00:37:14,368 --> 00:37:29,108
+Bakın, bunlar Retried Execute ya, üçlü gruplar halinde ilk üçlü User'ı gösteriyor, ikinci üçlü grubu gösteriyor, üçüncü üçlü de Other'ı gösteriyor.
+
+197
+00:37:29,108 --> 00:37:38,968
+Şöyle düşünebilirsiniz, Homework'e kullanıcı Retried Execute olarak erişebiliyor, grup Retried Execute olarak erişebiliyor.
+
+198
+00:37:39,688 --> 00:37:45,868
+Ama onun harcındakiler, sistemdeki kullanıcıların tamamı kesinlikle ve kesinlikle erişemiyor.
+
+199
+00:37:45,868 --> 00:38:00,148
+Bu arada bir directory verildiğinde ve ona X, yani Execute izni verildiğinde aslında onu çalıştırıyor değilsiniz, onun içerisine Change ile girebiliyorsunuz demektir.
+
+200
+00:38:11,603 --> 00:38:23,023
+Andrew diye bir kullanıcı olsun ve bu kullanıcı aslında CS155-TAS grubunun üyesiymiş.
+
+201
+00:38:23,023 --> 00:38:28,723
+Soru da diyor ki, can Andrew read homework? Hemen homework'e bakalım.
+
+202
+00:38:28,723 --> 00:38:46,843
+Homework'ün grup onları kim? CS155-TAS. Andrew bu grubun üyesi ve gruba verilmiş olan homework ile alakalı izinler neleri içeriyor?
+
+203
+00:38:47,503 --> 00:38:55,523
+Read, Write ve Execute'u içeriyor. Sonuç olarak homework'ü okuyabiliyor.
+
+204
+00:38:59,731 --> 00:39:18,831
+Peki, şöyle düşünelim. If a student has access to this server, which files can they access? Bir öğrenci erişirse, hangi dosyalara, bu server'a erişirse, hangi dosyalara erişebilir?
+
+205
+00:39:18,831 --> 00:39:37,112
+Hemen bakalım. Şimdi, öğrenci olduğuna göre, Zakir değil, CS155TAS grubu değil, CS155Instractors herhalde grubu değil, CS155TAS olmadığını söylemiştim.
+
+206
+00:39:37,112 --> 00:39:49,532
+DABO değil. O zaman, nereye denk düşüyor student? Other'a denk düşüyor. Hemen şu Other kısmına bakacağız. Yani sondaki üçlüğe bakacağız.
+
+207
+00:39:50,152 --> 00:39:58,431
+Burası üç tane tiri olduğuna göre, homework'e kesinlikle erişemez. Burası üç tane tiri olduğuna göre, grades'e kesinlikle erişemez.
+
+208
+00:39:58,431 --> 00:40:11,771
+Lectures'da read var, x var. Bir direkt tiri için ne demiştim ben size? Oraya girebilmeyi, change yapabilmeyi sağlıyor.
+
+209
+00:40:12,451 --> 00:40:23,451
+O zaman, buraya girebilir, burayı okuyabilir. Test Python, bunu da okuyabilir. Çünkü buradaki student Other'a denk düşüyor.
+
+210
+00:40:29,300 --> 00:40:40,660
+Şimdi, what can then, then dediği demo, do to test pi. Bu test pi ile alakalı ne yapabilir?
+
+211
+00:40:44,659 --> 00:41:03,759
+Baktığımızda, DEN kullanıcısı, DEBO grubunun üyesi, şuraya bakalım ne yapabiliyormuş, tespiyeyi okuyabiliyormuş, çalıştırabiliyormuş. Durum bundan ibaret.
+
+212
+00:41:09,876 --> 00:41:11,796
+Buraya kadar sorunuz var mı arkadaşlar?
+
+213
+00:41:25,715 --> 00:41:34,155
+Devam edelim. Bir soru geldi galiba. Tamam, peki [öğrenci]. Devam edelim o zaman.
+
+214
+00:41:36,556 --> 00:41:45,835
+Şimdi, o zaman bakın bir tarafta Subject var, diğer tarafta Object var, bir de arada Operation var, Access var.
+
+215
+00:41:45,835 --> 00:42:03,955
+Bunların arasındaki bu etkileşimi yönetmek için Unix'de ilk defa uygulanmış, ortaya atılıp uygulanmış yapıya Access Control List diyoruz.
+
+216
+00:42:04,955 --> 00:42:14,895
+Unix Permissioned Model is a simple implementation of a generic Access Control Strategy known as Access Control Lists.
+
+217
+00:42:15,835 --> 00:42:20,496
+En genel haliyle bu, erişim kontrol listesi.
+
+218
+00:42:22,635 --> 00:42:31,456
+Ama Unix'deki, dolayısıyla Linux'taki, bunun basitleştirilmiş bir uygulaması.
+
+219
+00:42:32,456 --> 00:42:36,536
+Ancak günümüzde de yeterince efektif bir şekilde kullanılıyor.
+
+220
+00:42:36,996 --> 00:42:38,135
+Bu basit haliyle bile.
+
+221
+00:42:39,596 --> 00:42:41,675
+Ne diyor? Nasıl açıklıyor?
+
+222
+00:42:41,675 --> 00:42:48,155
+Every object has an ACL that identifies what operation subjects can perform.
+
+223
+00:42:49,335 --> 00:42:53,956
+Her kaynağın, her objectin bir ACL'i var.
+
+224
+00:42:55,155 --> 00:43:05,096
+Ve bu ACL, hangi subject, yani kullanıcının hangi işlemleri yapabileceğini gösteriyor.
+
+225
+00:43:05,096 --> 00:43:27,315
+Bakın, then, zakir, ameli, then, bu homework klasörü olsa gerek, retried erişebiliyormuş, zakir retried erişebiliyormuş, ameli de ne olarak erişebiliyormuş?
+
+226
+00:43:27,315 --> 00:43:30,476
+Read olarak erişebiliyormuş.
+
+227
+00:43:31,635 --> 00:43:36,335
+Each access to an object is checked against the object's ACL.
+
+228
+00:43:36,335 --> 00:43:51,456
+Bir kaynağa, bir objekte erişim yapacağımız zaman, bu erişim, o objektin ACL listesindeki entrilerle karşılaştırılıyor.
+
+229
+00:43:51,815 --> 00:43:54,675
+Ona göre izin veriliyor veya verilmiyor.
+
+230
+00:44:09,295 --> 00:44:22,815
+replied
+
+231
+00:44:01,204 --> 00:44:03,764
+Role-Based Access Control are back.
+
+232
+00:44:07,699 --> 00:44:16,819
+Bu işi biraz daha böyle kompakt yapmak için ortaya atılmış, mevcut yapının iyileştirilmiş hali.
+
+233
+00:44:18,019 --> 00:44:20,819
+Aslında gruplara yetki verilmesi.
+
+234
+00:44:21,419 --> 00:44:26,759
+Role-based nedir? Aynı rolü paylaşanlar, aynı yapıda olanlar, aynı özellikte olanlar.
+
+235
+00:44:27,319 --> 00:44:30,139
+Zaten biz bunlara ne diyorduk? Grup diyorduk.
+
+236
+00:44:31,599 --> 00:44:36,359
+Ama işte grup üzerinden isimlendirilmemiş de bu yapı.
+
+237
+00:44:36,359 --> 00:44:43,659
+Role denilerek isimlendirilmiş. Ondan ötürü de Role-based Excess Control diyoruz.
+
+238
+00:44:43,799 --> 00:44:44,259
+Arbeck.
+
+239
+00:44:45,039 --> 00:44:51,759
+Excess Control matrices can grow complex as number of subjects, objects and possible operations grow.
+
+240
+00:44:52,779 --> 00:44:58,639
+Şimdi bunu bir matriz olarak, işte şurada gördüğünüz tarzda ifade edecek olursak,
+
+241
+00:44:59,759 --> 00:45:02,539
+Subject yani kullanıcıların sayısı arttığında,
+
+242
+00:45:02,539 --> 00:45:09,559
+Object yani kaynakların sayısı, erişilebilen kaynakların sayısı arttığında ve
+
+243
+00:45:09,559 --> 00:45:14,579
+olası işlemler, şu ana kadar biz read, write, execute tarifledik ama
+
+244
+00:45:14,579 --> 00:45:16,539
+belki başka işlemler de tariflenebilir.
+
+245
+00:45:17,679 --> 00:45:22,539
+Bunların sayısı arttığında, o zaman şu görmüş olduğunuz matrizin boyutu
+
+246
+00:45:22,539 --> 00:45:26,500
+ciddi anlamda büyüyecek ve karmaşık hale gelecek.
+
+247
+00:45:27,219 --> 00:45:29,039
+Bunun da iki tane dezavantajı olacak.
+
+248
+00:45:29,239 --> 00:45:33,219
+Bir, memuride kapladığı alan, çok fazla alan kaplayacak.
+
+249
+00:45:33,419 --> 00:45:40,659
+İki, kendisi büyüdüğü için arama yapılma zamanı fazlalaşacak.
+
+250
+00:45:40,859 --> 00:45:42,719
+Bu da performansı düşürecek.
+
+251
+00:45:42,719 --> 00:45:49,599
+Diğer taraftan, kullanıcılar çoğu zaman rol değiştirebiliyorlar.
+
+252
+00:45:50,559 --> 00:45:58,460
+İşte diyelim ki öğrencisiniz, mezun oluyorsunuz, asistanlığa başvuruyorsunuz,
+
+253
+00:45:59,099 --> 00:46:00,899
+asistan olarak devam ediyorsunuz.
+
+254
+00:46:01,000 --> 00:46:08,579
+Öğrenciyken erişemediğiniz kaynaklar asistanken erişilebilir hale geliyor size.
+
+255
+00:46:08,579 --> 00:46:13,500
+O zaman eğer başlangıçta bir kullanıcınız vardıysa,
+
+256
+00:46:14,219 --> 00:46:18,059
+bu kullanıcının ismini değiştirmeden uygunsa eğer,
+
+257
+00:46:18,779 --> 00:46:25,219
+sadece sizin ait olduğunuz grubu, yani size yüklenmiş olan rolü değiştirerek,
+
+258
+00:46:26,039 --> 00:46:31,579
+çok daha kolay bir şekilde en az güvenlik açıyla, en az insani hatayla
+
+259
+00:46:32,159 --> 00:46:35,659
+size yeni yetkilerin verilmesini sağlayabiliriz.
+
+260
+00:46:35,659 --> 00:46:43,579
+İşte bu ARBEC'in arkasındaki temel ana fikir bu.
+
+261
+00:46:45,039 --> 00:46:50,659
+Şu yapıya bakın, işte bunlar instructorlar muhtemelen, bunlar teaching assistantlar,
+
+262
+00:46:51,439 --> 00:46:54,519
+şunlar öğrenciler, bunlar da genel öğrenciler.
+
+263
+00:46:54,519 --> 00:47:04,199
+İşte genel bilgisayar mühendisliği öğrencilerine homework, exam ve grade'e erişim yok.
+
+264
+00:47:04,819 --> 00:47:09,500
+CS 155 öğrencilerinin homework'e erişime hakkı var.
+
+265
+00:47:10,179 --> 00:47:16,719
+Teaching assistantların homework'e read write'ı var, exam ve read'i var, grade'lere hakkı yok.
+
+266
+00:47:16,719 --> 00:47:23,639
+Bu instructorlar gördüğünüz gibi kısıtlamasız bir şekilde her yere erişiyorlar.
+
+267
+00:47:24,279 --> 00:47:25,359
+Şurada da dersler var.
+
+268
+00:47:25,519 --> 00:47:28,980
+İşte instructorlar ve teaching assistantlar, read write erişirken,
+
+269
+00:47:29,619 --> 00:47:34,219
+öğrenciler, hem CS 155 özelindeki öğrenciler,
+
+270
+00:47:34,319 --> 00:47:39,759
+hem de CS öğrencileri buraya sadece okuma yönünde erişiyorlar.
+
+271
+00:47:43,476 --> 00:47:55,155
+Şimdi proses kavramına bakalım. Unix'teki proseslerin birbirlerinden nasıl ayrılabileceğine, nasıl güvenlik anlamında kurallarla izole edilebileceğine bakalım.
+
+272
+00:47:55,976 --> 00:48:05,896
+Normalde zaten işletim sisteminin Unix'in tasarımı sebebiyle prosesler birbirlerinden izole.
+
+273
+00:48:06,896 --> 00:48:13,016
+Processes cannot access each other's memory. Bir proses, bir başka prosesin memorisine erişemez.
+
+274
+00:48:13,476 --> 00:48:23,276
+Processes run as a specific user. Prosesler bir kullanıcıya bağlı olarak çalışmak zorundalar.
+
+275
+00:48:23,276 --> 00:48:31,516
+Bu sistem de olabilir ama çoğunlukla o prosesi başlatan kullanıcıdır.
+
+276
+00:48:32,635 --> 00:48:36,776
+When you run a process, it runs with your user ID permissions.
+
+277
+00:48:36,776 --> 00:48:46,936
+Eğer prosesi ben başlattıysam, o zaman benim haklarım neyse, bana tanımlanmış olan izinler neyse,
+
+278
+00:48:47,396 --> 00:48:50,776
+bu proses de o haklara ve o izinlere sahip olarak...
+
+279
+00:48:50,776 --> 00:48:51,456
+Olarak...
+
+280
+00:48:54,900 --> 00:49:16,039
+Çalışacak. Diğer taraftan, process can access any files that the user ID has access to. Yani benim erişimim olan dosyaların tamamına, prosesin de erişim hakkı var. Az önce söylediğimiz şeyin zaten doğal bir sonucu.
+
+281
+00:49:16,039 --> 00:49:35,680
+Processes run by the same user ID have the same permissions. Aynı user ID'ye bağlı olarak çalışan prosesler, memorileri birbirlerinden izole olmasına rağmen erişim hakkı olarak aynı erişim haklarına sahipler.
+
+282
+00:49:40,275 --> 00:49:50,635
+Proceses started by root can reduce their privileges by changing to a less privileged user ID.
+
+283
+00:49:51,675 --> 00:50:01,596
+Root olarak başlatılmış, root tarafından başlatılmış bir proses, çünkü doğal olarak root tarafından başlatıldığında root user ID'siyle çalışıyor.
+
+284
+00:50:01,596 --> 00:50:09,735
+Kendi user ID'sini daha düşük seviyeli bir user ID olacak şekilde değiştirebilir.
+
+285
+00:50:10,275 --> 00:50:14,235
+Bunu da genelde niye tercih ediyoruz? Root olarak başlatmayı.
+
+286
+00:50:14,695 --> 00:50:24,056
+Başlangıçta bir takım iklendirmeler yapması lazım. Belirli soketlere erişmesi lazım. Belirli dosyalara erişmesi lazım.
+
+287
+00:50:24,056 --> 00:50:38,235
+Yani yapılandırmasını tamamlaması lazım. Ondan sonrasında bu işleri tamamladıktan sonra kendini kısıtlayıp daha güvenli bir şekilde çalışma yolunu seçebilir.
+
+288
+00:50:38,235 --> 00:51:00,655
+İşte az önce gördük ne vardı? VVV data vardı. Root olarak başlayabilir. Root olarak başladıktan sonra da o az önce saydığım, belirttiğim iklendirme ve yapılandırmayı tamamlamasının ardından kendini VVV data kullanıcısına dönüştürebilir.
+
+289
+00:51:04,596 --> 00:51:13,155
+When you run a command, it runs with all your privileges because your shell runs as your user account and forks to start the command.
+
+290
+00:51:13,155 --> 00:51:24,036
+Şimdi buradaki kullanıcı Zakir ismine sahip. Şuradaki örnekteki ls komutunu bile çalıştırdığında,
+
+291
+00:51:24,036 --> 00:51:39,416
+ls komutu Zakir kullanıcısının shell yani command line'ından başlatıldığı için, fork ile başlatıldığı için Zakir kullanıcısının yetkileriyle başlıyor.
+
+292
+00:51:39,416 --> 00:51:48,835
+Zakir kullanıcısı olarak başlıyor. Ve fork'un özelliği mevcut prosesin bir kopyasını oluşturmak,
+
+293
+00:51:48,835 --> 00:51:55,835
+daha sonra oluşturulan kopyanın da içinde o adı verilen executable neyse onu çalıştırmak şeklinde.
+
+294
+00:51:56,876 --> 00:51:59,556
+Bundan ötürü son cümle önemli.
+
+295
+00:51:59,675 --> 00:52:03,835
+When any process forks, it inherits its parent, UID.
+
+296
+00:52:04,775 --> 00:52:09,735
+Fork sonucunda bir parent var yaşamaya devam eden. Bir de child var.
+
+297
+00:52:10,376 --> 00:52:13,536
+Child dediğimiz yani fork sonucunda oluşan proses,
+
+298
+00:52:13,536 --> 00:52:22,956
+parent'ın user ID'sini ve onun permission'larını ne yapıyor?
+
+299
+00:52:24,516 --> 00:52:25,195
+Ediniyor.
+
+300
+00:52:25,775 --> 00:52:30,775
+Onunkiler de parent'ınkilere eşitlenmiş oluyor.
+
+301
+00:52:38,483 --> 00:52:56,403
+Bir prosesin çalışmasıyla alakalı ve kaynaklara erişmesiyle alakalı arka planda aslında üç tane user ID'si var. Biri efektif user ID, biri real user ID, biri de saved user ID.
+
+302
+00:52:56,403 --> 00:53:02,963
+E-U-D, R-U-D, S-U-U-I-D diyelim. E-U-I-D neyse.
+
+303
+00:53:02,963 --> 00:53:18,703
+E-U-I-D, bir prosesin erişim izinlerini belirliyor. Real user ID, bir prosesin kimin başlattığını belirliyor.
+
+304
+00:53:19,103 --> 00:53:25,203
+Saved user ID de geçici olarak bir tampon değer olarak kullanılıyor.
+
+305
+00:53:25,203 --> 00:53:34,963
+Size söylemiştim ya, bir proses işte root olarak başlayıp ondan sonra user ID'sini değiştirebilir.
+
+306
+00:53:35,703 --> 00:53:46,563
+İşte o sırada değiştirirken geri dönmek isterse diye, eski değer neyse, ona geri dönmesi gerekirse diye, eski değerin saklandığı alana ne diyoruz?
+
+307
+00:53:47,103 --> 00:53:48,523
+Saved user ID diyoruz.
+
+308
+00:53:48,523 --> 00:54:00,744
+Normal şartlar altında bu üç değer birbirine eşit ve bu üç değerinde eşit olduğu değerle prosesi başlatan kullanıcı.
+
+309
+00:54:01,744 --> 00:54:03,284
+Ne demektir bu?
+
+310
+00:54:03,923 --> 00:54:14,183
+E-U-U-I-D, normal çalışma sırasında real user ID'ye eşit, saved user ID de yine real user ID'ye eşit.
+
+311
+00:54:18,387 --> 00:54:33,148
+Root kullanıcısı bu söylediğimiz EUID, RUID, SUID değerlerini istediği herhangi bir değere değiştirebilir. Herhangi bir kısıtlama olmadan.
+
+312
+00:54:33,148 --> 00:54:47,467
+Ancak Root haricindeki yetkisiz kullanıcılar, Efektif User ID'lerini ya Real User ID'ye değiştirebilirler ya da Saved User ID'ye.
+
+313
+00:54:47,867 --> 00:54:49,907
+Sınırlandırılmış durumda ikisinden biri.
+
+314
+00:54:49,907 --> 00:55:05,587
+Set UID X yaptığınız zaman, Efektif User ID, X oluyor Real User ID, X oluyor Saved User ID, X oluyor Set User ID diyoruz.
+
+315
+00:55:07,268 --> 00:55:09,587
+Peki bu bize ne sağlıyor?
+
+316
+00:55:10,527 --> 00:55:18,587
+Bakın hemen az önce size dersin başında anlattığım örneğin gerçek hayat karşılığını görüyorsunuz.
+
+317
+00:55:18,587 --> 00:55:26,107
+Apache Web Server must start as root because only root can create a socket that listens on port 80.
+
+318
+00:55:26,927 --> 00:55:34,967
+1024'ün altındaki portların tamamı özel yetki gerektiren portlardır ve sadece root tarafından erişilebilirler.
+
+319
+00:55:35,607 --> 00:55:41,228
+O yüzden Apache Web Server çalışmaya başladığında root olarak çalışmak zorunda.
+
+320
+00:55:42,188 --> 00:55:48,327
+Without any privilege reduction, any Apache bug would result in the attacker having unrestricted server access.
+
+321
+00:55:48,587 --> 00:55:57,648
+Eğer sokete erişimi sağladıktan sonra Apache Web Server'ın hala daha root kullanıcısı olarak çalışmasına izin verirsek,
+
+322
+00:55:58,327 --> 00:56:06,268
+Apache Web Server'daki herhangi bir hata, herhangi bir açık saldırganın sisteme root yetkisiyle erişmesini sağlar.
+
+323
+00:56:06,268 --> 00:56:11,228
+Instead, Apache creates children using the following scheme.
+
+324
+00:56:12,768 --> 00:56:19,807
+If fork equals zero, soket soket oluştur diyor.
+
+325
+00:56:23,148 --> 00:56:31,507
+Fork'un sonucunda sıfır değerini alan yer çocuktur.
+
+326
+00:56:32,007 --> 00:56:38,168
+Çünkü fork'un başarıyla sonuçlandığını gösterir sıfır değeri, fork sistem çağrısının.
+
+327
+00:56:38,168 --> 00:56:41,347
+Eğer çocuksa hemen ne oluyor?
+
+328
+00:56:41,967 --> 00:56:58,168
+Zaten var olan soketi 80 soketini alıyor ve sokete bağlantıyı kurduktan sonra artık o soket verisine erişimi sağladıktan sonra...
+
+329
+00:57:03,956 --> 00:57:08,956
+Kendi User ID'sini nereye indirgiyor?
+
+330
+00:57:20,820 --> 00:57:37,059
+Peki, geçici olarak değiştirmek istiyorsak. Şunu unutmuyoruz. Unprivileged Users can change Effective User ID back to the Real User ID or Saved User ID. Yetkisi yoksa.
+
+331
+00:57:41,059 --> 00:57:48,039
+Şimdi, Effective User ID eşittir Real User ID, eşittir Saved User ID, eşittir 0 diyelim.
+
+332
+00:57:48,039 --> 00:58:07,720
+Set Effective User ID dediğimiz zaman, bakın, R U ID, S U ID değişmiyor. Bunlar 0 değerinde. Ama Effective User ID 100, yani erişim hakları 100 için neyse ona göre çalışacak.
+
+333
+00:58:07,720 --> 00:58:19,000
+Sonra, geriye alabiliyorum. Bakın ne? Set User ID 0. Çünkü ya Real User ID'ye ya da Saved User ID'ye eşitleyebiliyordum.
+
+334
+00:58:19,460 --> 00:58:26,960
+Bunu gerçekleştirebiliyorum. Demek ki, bir Set User ID var. Bu takım olarak hepsini birden değiştiriyor.
+
+335
+00:58:26,960 --> 00:58:35,900
+Bir de bunların alt parçaları var. İşte burada Effective User ID set etmişim. Diğerleri değişmemiş.
+
+336
+00:58:39,539 --> 00:58:49,400
+Bir sisteme Secure olarak erişilmesini sağlayan SSH Secure Shell, Root olarak çalışıyor.
+
+337
+00:58:50,739 --> 00:58:56,460
+Ve ne yapıyor bakın? Bu aslında SSH kodundan alınmış bir parça.
+
+338
+00:58:56,460 --> 00:59:12,460
+Authenticate User ID PSV'de eğer success dönüyorsa ve fork başarılıysa, yani kendinden bir kopya düzgün bir şekilde oluştuysa,
+
+339
+00:59:14,400 --> 00:59:18,440
+Effective User ID'yi nereye set ediyor? UID'ye set ediyor.
+
+340
+00:59:18,440 --> 00:59:28,440
+Effective User ID, yani erişim hakları ve Shell'i, tabii burada basitleştirilmiş, gidip kullanıcının
+
+341
+00:59:28,440 --> 00:59:35,440
+ETC PSVD altında çalışan, tariflenmiş olan Shell'ini alıp onu çalıştırması lazım.
+
+342
+00:59:35,800 --> 00:59:37,659
+Burada çok basitleştirilmiş.
+
+343
+00:59:38,320 --> 00:59:40,019
+1005'i çalıştırıyor.
+
+344
+00:59:40,980 --> 00:59:42,960
+Doğrudan bir Shell açmış oluyor.
+
+345
+00:59:42,960 --> 00:59:55,059
+Şimdi şurada Effective User ID, UID olmasına rağmen Real User ID ve Set User ID değişmedi.
+
+346
+00:59:56,259 --> 01:00:03,079
+User can call Set User ID 0 to become root because Set User ID 0.
+
+347
+01:00:04,079 --> 01:00:11,920
+Dikkat edin nelere geri dönebilirdi Real User ID veyahut da Set User ID'ye.
+
+348
+01:00:11,920 --> 01:00:17,880
+O yüzden bunun bu şekilde yapılması bir zafiyet oluşturuyor.
+
+349
+01:00:18,420 --> 01:00:23,599
+Saldırgana şu seçenekten yararlanma hakkını verebiliyoruz.
+
+350
+01:00:24,440 --> 01:00:35,019
+Saldırgan, işte diyelim [öğrenci] kullanıcısı gibi çalışan bir Shell'i, o Shell böyle başlatıldığı için bir anda neye dönüştürebiliyor?
+
+351
+01:00:35,920 --> 01:00:39,039
+Root kullanıcısının haklarına dönüştürebiliyor.
+
+352
+01:00:39,039 --> 01:00:43,139
+Halbuki bunun doğrusu ne olmalıydı?
+
+353
+01:00:43,539 --> 01:00:44,539
+Set User ID.
+
+354
+01:00:45,039 --> 01:00:53,519
+Set User ID dediği zaman hem Effective User ID, hem Real User ID, hem de Safe User ID, UID'ye dönüştürüldü.
+
+355
+01:00:53,519 --> 01:01:08,940
+Ve saldırgan hiçbir şekilde user ID'sini bir önceki zafiyet gösteren kod parçasında olduğu gibi root kullanıcısına dönüştüremez.
+
+356
+01:01:17,076 --> 01:01:32,215
+Şimdi PS3 diye bir komut var. PS3, Process3'i gösteriyor. Hangi kullanıcı, hangi prosesi başlatmış, hangi proses, hangi prosesin altında.
+
+357
+01:01:33,096 --> 01:01:39,836
+Bakın burada çok düzgün bir şekilde renklendirilerek de gösterilmiş.
+
+358
+01:01:39,836 --> 01:01:54,295
+İşte sistemde iki tane SSHD prosesi varmış. Bunlardan biri Zakir'e aitmiş. Diğeri Debo'ya aitmiş.
+
+359
+01:01:55,576 --> 01:02:07,936
+Zakir'de, Debo'da sisteme login olurken 5 kullanmışlar. Ama Zakir işte şu örneği basabilmek için neyi çalıştırmış? PS3'yi çalıştırmış.
+
+360
+01:02:07,936 --> 01:02:22,655
+Bu arada işte sistem D altında LightHttp'de başlatılmış. Bu sistem D kontrolünde.
+
+361
+01:02:23,775 --> 01:02:32,996
+RemoteSystemLogD başlatılmış. Bu kendinden 3 kopya çıkartmış. Şu kendinden 2 kopya çıkartmış.
+
+362
+01:02:32,996 --> 01:02:45,215
+Diğer taraftan SystemD Resolve var. Bu arada Screen ekran, terminalden görüldüğü için ekrandan da bağlanmış.
+
+363
+01:02:45,336 --> 01:02:49,836
+Yani remote olarak bağlanmamış da aynı zamanda lokal olarak da bağlanmış Zakir.
+
+364
+01:02:50,635 --> 01:02:58,695
+Orada da 5 altında ZDNS çalışmış ve ZIterate çalıştırmış.
+
+365
+01:02:58,695 --> 01:03:02,476
+隨� exiting bak车 satın.
+
+366
+01:03:03,115 --> 01:03:03,876
+Vesladiye vedلا.
+
+367
+01:03:05,315 --> 01:03:06,356
+Evet.
+
+368
+01:03:06,356 --> 01:03:18,215
+...
+
+369
+01:03:15,027 --> 01:03:25,027
+Bir saat oldu arkadaşlar. Saat 38. İsterseniz bir 50'ye kadar duralım. 11.50'de devam edelim.
+
+370
+01:15:41,300 --> 01:15:42,699
+Devam ediyoruz arkadaşlar.
+
+371
+01:15:44,539 --> 01:15:54,239
+Şimdi Set User ID bitini kullandığımız spesifik bir örnek daha vermek istiyorum.
+
+372
+01:15:55,380 --> 01:15:59,860
+Özellikle demin anlattığımın tam tersi.
+
+373
+01:16:00,960 --> 01:16:06,880
+Deminkinde kullanıcı root, proses root yetkileriyle başlıyor.
+
+374
+01:16:06,880 --> 01:16:20,440
+Sonrasında da gerekli ilklendirmeyi ve yapılandırmayı tamamladıktan sonra root yetkisini bırakıyor.
+
+375
+01:16:20,880 --> 01:16:22,539
+Normal bir kullanıcıya dönüşüyor.
+
+376
+01:16:22,699 --> 01:16:28,480
+İşte iki tane orada SSH örneğini gördük veyahut da Apache örneğini gördük.
+
+377
+01:16:28,480 --> 01:16:37,060
+Burada ise benzer bir şeyi farklı bir yaklaşımla yapacağız.
+
+378
+01:16:38,320 --> 01:16:47,820
+Şöyle ki, bütün kullanıcıların tanımları etc altında pastvd dosyasında.
+
+379
+01:16:48,340 --> 01:16:54,320
+Diğer taraftan bütün kullanıcıların şifreleri de etc altında shadow dosyasında.
+
+380
+01:16:54,320 --> 01:17:05,279
+Şimdi pastvd komutu bir kullanıcının şifresini güncellemek için kullanılan komut.
+
+381
+01:17:05,279 --> 01:17:07,220
+Bu da şu anlama geliyor.
+
+382
+01:17:07,360 --> 01:17:14,480
+Bu komutun etc shadow dosyasına erişmesi ve o dosyayı değiştirmesi lazım.
+
+383
+01:17:14,480 --> 01:17:32,600
+Ancak bu dosyanın haklarına baktığımızda bu dosyanın sadece ve sadece root kullanıcısı tarafından okunabilir ve yazılabilir olduğunu görüyoruz.
+
+384
+01:17:32,600 --> 01:17:37,619
+Yani diğer bütün kullanıcıların erişimine kapalı.
+
+385
+01:17:38,960 --> 01:17:55,600
+Öyleyse birinci soru, bana okuma ve yazma yönünde kapalı olan bir dosyada şifre değişikliği yapabilmek için o dosyaya okuma ve yazma olarak nasıl erişeceğim?
+
+386
+01:17:57,600 --> 01:17:58,880
+Birinci soru bu.
+
+387
+01:18:05,043 --> 01:18:25,623
+İkinci soru, aynı dosya diğer kullanıcıların da şifrelerini tuttuğuna göre o dosyaya özellikle yazma yönünde eriştiğimde başka bir kullanıcının şifresini değiştirmeyeceğim nasıl garanti edilecek?
+
+388
+01:18:29,971 --> 01:18:42,591
+Bu iki tane soru kritik. Normal şartlarda şimdi konuşacağımız mekanizma olmasa bunun gerçekleştirilebilmesi mümkün değil.
+
+389
+01:18:46,100 --> 01:18:49,380
+Ancak Unix'teki bir mekanizma...
+
+390
+01:18:56,307 --> 01:19:14,627
+Çalıştırılan bir programın efektif user id'sinin çalıştıran kullanıcı değil de çalıştırılan dosyanın sahibinin user id'si olmasına izin veriyor.
+
+391
+01:19:14,627 --> 01:19:30,307
+Bu çok önemli bir ayrıntı. Çalıştıran kullanıcı [öğrenci], normalde [öğrenci]'ın çalıştırdığı programların efektif user id'si nedir diye öğrendik, [öğrenci]'dır diye öğrendik.
+
+392
+01:19:30,307 --> 01:19:48,988
+Ama [öğrenci]'ın çalıştırdığı, executable'ın owner'ı root, o zaman çalıştıran [öğrenci] kullanıcısı olmasına rağmen, real user id'i [öğrenci] olarak geçiyor olmasına rağmen,
+
+393
+01:19:49,847 --> 01:19:57,287
+saved user id'i [öğrenci] olarak geçiyor olmasına rağmen, efektif user id ne olacak arkadaşlar? Root olacak.
+
+394
+01:19:57,287 --> 01:20:11,648
+Yani, kontrollü bir şekilde benim yetkilerim yükseltildi. Peki, bu yükseltilmiş yetkiden geri döndüğümde nereye geri dönüyordum?
+
+395
+01:20:11,908 --> 01:20:17,828
+Efektif user id'i, ya real user id'ye set edebiliyordum ya da saved user id'ye set edebiliyordum.
+
+396
+01:20:17,828 --> 01:20:26,828
+Her ikisi de [öğrenci] olduğuna göre, aslında root olarak işin bittiğinde yine geri döneceğim yer neresi?
+
+397
+01:20:27,927 --> 01:20:29,587
+[öğrenci] kullanıcısının yetkileri.
+
+398
+01:20:30,787 --> 01:20:33,127
+İlk iki örneğe göre durum farklı.
+
+399
+01:20:33,488 --> 01:20:44,268
+Bu örnekte, çalıştırdığım programın sahibinin yetkisi ile erişim hakları bana veriliyor.
+
+400
+01:20:44,268 --> 01:20:54,188
+Onun için de, x yerine s kullanılıyor.
+
+401
+01:20:55,268 --> 01:21:01,948
+x yerine s kullanılması demek, bu programı kim çalıştırırsa çalıştırsın,
+
+402
+01:21:03,488 --> 01:21:11,068
+efektif user id'si bu dosyanın sahibi olacak demek.
+
+403
+01:21:11,068 --> 01:21:17,408
+Bakın, usr1000 passvd, sahibi kim?
+
+404
+01:21:17,827 --> 01:21:21,827
+Root. Şurada ne var? S var. Yani set user id.
+
+405
+01:21:29,908 --> 01:21:33,988
+Anlaştık mı burada? Peki, diğer bir soru.
+
+406
+01:21:35,528 --> 01:21:41,688
+How does passvd know which user it should allow the caller change the password for? İkinci kısım.
+
+407
+01:21:45,876 --> 01:22:05,155
+RealUserID'nin [öğrenci] olduğunu biliyor. Root olarak çalışıyor. Shadow dosyasında RealUserID [öğrenci] olan satırın değişmesine izin veriyor. Diğer satırların değişmesine izin vermiyor.
+
+408
+01:22:05,155 --> 01:22:17,916
+Kodun o parçası o şekilde yazılmış. Sonrasında da tekrar [öğrenci] olarak yetkileri eski haline dönüşüyor.
+
+409
+01:22:30,292 --> 01:22:38,412
+Şimdi tabii bunu çok sorgulayabiliriz. Privilege Separation'dan bahsettik dersin girişinde.
+
+410
+01:22:39,792 --> 01:22:47,692
+Diyebiliriz ki bugüne kadar karşılaşılmış en kötü yetki bölümlendirilmesi yöntemi mi?
+
+411
+01:22:47,692 --> 01:23:01,432
+Baktığımızda standart Unix ve Unix türevleri, Effective User ID sıfır mı yoksa sıfırdan farklı mı diye kontrol edeceğiz.
+
+412
+01:23:07,475 --> 01:23:18,835
+Efektif User ID'si sıfır olan prosesler her türlü kontrolden muaflar, her türlü erişimi doğrudan yapabiliyorlar.
+
+413
+01:23:18,835 --> 01:23:37,415
+Ama efektif User ID'si sıfır değilse eğer, bahsetmiş olduğumuz o access control listi, diğer şeyde o izinlerin kontrol edilmesi gerekiyor.
+
+414
+01:23:37,475 --> 01:24:00,635
+Sadece PESVD komutu değil, aynı zamanda PINK komutu, yani uzaktaki bir hostun açık olup olmadığını, IP bağlantımız olup olmadığını test ettiğimiz PINK komutu da benzer şekilde bu Set User ID mekanizması üzerine kuruluyor.
+
+415
+01:24:00,635 --> 01:24:04,635
+Bu yapışın çok tehlikeli.
+
+416
+01:24:04,635 --> 01:24:12,496
+Teşekkürler.
+
+417
+01:24:08,627 --> 01:24:19,167
+Arkadaşlar, birinizin mikrofonu açık galiba. Arka plandan ses geliyor. Soru mu sormaya çalışıyorsunuz? Ses bağlantısında mı sıkıntı var yoksa açık mı unuttunuz? Emin olamadım.
+
+418
+01:24:23,444 --> 01:24:25,844
+Niye çok tehlikeli bu yaklaşım?
+
+419
+01:24:28,004 --> 01:24:49,704
+Uygulamalardan herhangi birinde bu tarz çalıştırılması öngörülmüş olan uygulamalardan herhangi birindeki bir hata, işte biliyoruz Waffer Overflow, Use After Free, Null Pointer, Dereference, bunlardan herhangi biri doğrudan saldırgana en yetkili kullanıcı olma hakkını tanıyor.
+
+420
+01:24:49,704 --> 01:24:55,544
+O yüzden çok dikkat etmemiz gereken bir nokta.
+
+421
+01:24:57,084 --> 01:25:13,244
+Onun yerine modern Unix'lerde, klasik standart değil de modernize edilmiş bu Access Control List artı bu Privileged Separation'ın modernize edilmiş hallerinde
+
+422
+01:25:13,244 --> 01:25:19,544
+Capability'den bahsediyoruz, yetenekten bahsediyoruz.
+
+423
+01:25:20,244 --> 01:25:30,384
+Capabilities segment root powers into components such that if a program that has one or more capabilities is compromised, damage is limited.
+
+424
+01:25:30,384 --> 01:25:44,384
+Yani aslında her şeye yetkili olan root kullanıcısının yetkisi kendi içerisinde parçalara bölünmüş durumda.
+
+425
+01:25:44,384 --> 01:25:47,624
+Örneğin Capability Kill.
+
+426
+01:25:49,064 --> 01:25:54,024
+Kill burada çok tarihi bir şeyden geliyor.
+
+427
+01:25:54,204 --> 01:25:56,284
+Bir prosesi durdurmanın yolu kill.
+
+428
+01:25:56,804 --> 01:26:05,864
+Ama daha sonra diyorlar ki zaten prosesi durdurmak için ona kill komutuyla bir sinyal gönderiyorduk, bir mesaj gönderiyorduk.
+
+429
+01:26:05,864 --> 01:26:15,504
+O yüzden proseslere sinyal göndermenin genel ismi kill olsun, o prosesi durdurmak da bunun altındaki özel bir sinyal olsun.
+
+430
+01:26:16,084 --> 01:26:26,864
+O yüzden kill yeteneğini bir prosesi sadece durdurmak olarak düşünmeyin, o prosesi bir sinyal, bir interrupt göndermek olarak düşünün.
+
+431
+01:26:26,864 --> 01:26:30,544
+İşte Capability Net Bind Service.
+
+432
+01:26:31,624 --> 01:26:39,404
+Az önce söyledim ya 1024'ün altındaki portlar özel yetki root'a ihtiyaç duyuyor.
+
+433
+01:26:39,884 --> 01:26:44,244
+Ama işte Apache root olmaya niye ihtiyaç duyuyor?
+
+434
+01:26:44,344 --> 01:26:48,644
+80 numaralı veya 443 numaralı portlara bağlanabilmek için.
+
+435
+01:26:49,164 --> 01:26:51,584
+Onun haricinde root olmasına gerek yok.
+
+436
+01:26:51,584 --> 01:27:01,724
+O zaman aslında ben Apache server'a CapNet Bind Service yeteneğini versem yeterli olacak.
+
+437
+01:27:01,884 --> 01:27:03,384
+Başka bir şeye ihtiyacı yok.
+
+438
+01:27:04,064 --> 01:27:11,064
+Ya da Capability CSP Trace, çalışmakta olan bir prosesi trace edebiliyorum.
+
+439
+01:27:11,184 --> 01:27:16,424
+Hatasını ayıklayabilmek adına, hatasını çözebilmek adına.
+
+440
+01:27:16,423 --> 01:27:26,524
+Sadece bu şekilde izleyeceğim, hata ayıklaması yapacağım bir aksiyonum içerisinde
+
+441
+01:27:26,524 --> 01:27:33,404
+bütün root kullanıcısının bütün yetkilerine sahip olmamın da bir anlamı yok.
+
+442
+01:27:33,923 --> 01:27:35,624
+Orada da işte neler devreye giriyor?
+
+443
+01:27:36,044 --> 01:27:38,024
+Capability devreye giriyor.
+
+444
+01:27:38,024 --> 01:27:44,524
+Şimdi Unix'in güvenlik mekanizmalarına baktığımızda
+
+445
+01:27:44,524 --> 01:27:53,164
+çoğu durum için yeterli ve basit bir şekilde uygulanabilir bir koruma mekanizması sağlıyor.
+
+446
+01:27:55,164 --> 01:27:57,604
+Aynı zamanda esnek.
+
+447
+01:27:59,504 --> 01:28:03,104
+Günümüzde hala da çok rahatlıkla kullanılıyor.
+
+448
+01:28:03,944 --> 01:28:06,224
+Ancak negatif tarafları da var.
+
+449
+01:28:06,224 --> 01:28:15,564
+ACL yapısı çözümlemesi ince değil, kaba bir çözümlemesi var.
+
+450
+01:28:16,244 --> 01:28:18,264
+Alt seviyelere yeterince inmiyor.
+
+451
+01:28:19,091 --> 01:28:33,671
+Kurumsal yapılardaki karmaşıklığa denk düşecek şekilde bir yetkilendirme yok. Örneğin ACS do not handle different applications within a single user account.
+
+452
+01:28:33,671 --> 01:28:48,451
+Aynı kullanıcıya bağlı farklı uygulamaların durumlarını göz önünde bulundurarak, onların ihtiyaçlarını göz önünde bulundurarak bir yetkilendirme, bir erişim kontrolü yok. Kullanıcı seviyesinde var.
+
+453
+01:28:49,091 --> 01:29:00,991
+Neredeyse bütün sistemle alakalı işlemler, operasyonlar root kullanıcısı olmayı gerektiriyor.
+
+454
+01:29:00,991 --> 01:29:13,011
+Orada da insanların hata yapabilme durumları, olasılıkları sistemi zafiyetli hale dönüştürüyor.
+
+455
+01:29:13,011 --> 01:29:20,031
+Evet, şimdi bir de Windows'un güvenlik modeline bakacağız.
+
+456
+01:29:22,791 --> 01:29:26,251
+ACL kavramı Windows'da var. Daha esnek.
+
+457
+01:29:29,876 --> 01:29:57,716
+Hani az önce söyledik ya, Unix'teki çok böyle hassas bir ayrıma sahip değil, çözüme sahip değil. Buradaki ise ciddi hassas bir ayrıma. Objects have full ACS. Objektler neydi? Erişilebilen kaynaklardı. Possibility for fine grain permissions. Çok böyle ince ince hassas bir şekilde erişim kontrolü hakkı vermeyi sağlıyor.
+
+458
+01:29:57,716 --> 01:30:15,936
+Kullanıcılar birden fazla grubun üyesi olabiliyorlar. Unix'te böyle bir şey yoktu. Tek bir grup vardı. Ama orada da birazdan göreceğiz. Bir primary grup kavramı var Windows'da. Birinci grubu nedir?
+
+459
+01:30:15,936 --> 01:30:29,876
+Bir takım erişimle alakalı karar vermeler gerçekleştirileceği zaman aslında o birinci grup üzerinden gidiliyor. Esneklik aynı zamanda karmaşıklığı da beraberinde getiriyor.
+
+460
+01:30:29,996 --> 01:30:41,676
+Karmaşıklık da hata yapılabilmesi riskini arttırıyor. Bu da önemli bir şey. Gruplar da kendi içlerinde grup olabiliyorlar. Nested, iç içe geçmiş grup şeklinde.
+
+461
+01:30:41,676 --> 01:31:01,516
+ACL'lerde allow ve deny yani izin ver ve reddet mantığı var. Bu da farklı. Çünkü diğerinde ne erişim var veya yok diye bakılıyordu.
+
+462
+01:31:01,516 --> 01:31:05,436
+Yani read mi var? Evet var veya yok. Write mi var? Var veya yok.
+
+463
+01:31:05,916 --> 01:31:12,476
+Burada ise şunlara izin ver ama bunlara izin verme şeklinde bir yaklaşım uygulanıyor.
+
+464
+01:31:16,275 --> 01:31:24,815
+Objektlerin yani kaynakların bir güvenlik tanımlayıcısı var. Security Descriptor.
+
+465
+01:31:29,716 --> 01:31:46,336
+Kimlerin, yani Subject User diyorduk ya, ne işlemler yapabileceğini ve bunlar hakkında ne loglar oluşturabileceğini, auditleme, loglama söylüyor bize.
+
+466
+01:31:50,260 --> 01:32:10,420
+Her objektin bir Security Identifier'ı var. Owner ve Primary Group için, yani o objektin sahibi ve bağlı bulunduğu birinci grup. Az önce söylemiştim ya birinci grup kavramı diye. Security Identifier. Security Identifier, kriptografik olarak üretilmiş bir hash değeri.
+
+467
+01:32:10,420 --> 01:32:33,619
+Objektin isminden bağımsız, objektin Security ID'sini siler ve tekrar Security ID'yi oluşturursanız, ismi aynı kalmasına rağmen Security ID'si farklı olacak. Bu belirli noktalarda güvenliği arttırıyor ama diğer taraftan da can sıkıcı senaryolar oluşturabiliyor.
+
+468
+01:32:33,619 --> 01:32:57,560
+Discretionary ACL, DACL. Access Rights, Allowed Users or Groups. Bunlar bizim kullanıcı veya grupların erişimi için o objekte verebileceğimiz veya vermeyebileceğimiz erişim hakları.
+
+469
+01:32:57,560 --> 01:33:12,220
+Objekte hiçbir erişim hakkı vermeyebiliriz. O zaman hiçbir kullanıcı veya hiçbir grup tarafından erişimmez olur. O yüzden discretionary verip vermemek, bu izinleri verip vermemek bizim elimizde olduğu için.
+
+470
+01:33:12,220 --> 01:33:33,960
+Ancak System ACL mandatory yani bunlar sistem tarafından empoze edilen erişimler, loglama için oluşturulmuş olan erişimler, hangi tip erişimler arka tarafta log oluşturuyor?
+
+471
+01:33:33,960 --> 01:33:49,960
+İşte başarısız okuma, başarısız yazma veya başarılı okuma, başarılı yazma, execute etme, silme. Bunlar bizim keyfimize kalmış ACL'ler değil.
+
+472
+01:33:49,960 --> 01:34:04,880
+Bu ACL'ler işletim sistemi tarafından tariflenmiş olarak geliyor. Ondan ötürü de bunlara System ACL veya mandatory, zorunlu ACL'ler deniliyor.
+
+473
+01:34:09,140 --> 01:34:30,780
+Diğer taraftan token kavramı var. Her çalışmakta olan programın birden fazla token'ı var. Bunun amacı o programın, o prosesin güvenlik derecesini belirlemek.
+
+474
+01:34:30,780 --> 01:34:48,480
+Nedir? Aynen Unix'de olduğu gibi, ID of User Account, ID of Groups, ID of Login Session, List of Operating System Privileges held by Users and or Groups, List of Restrictions.
+
+475
+01:34:48,480 --> 01:35:04,320
+Impersonation Token can be used temporarily to adapt a different context. Özel bir token, bir prosesin mevcut security konteksti haricinde başka bir security kontekstinde davranmasını sağlıyor.
+
+476
+01:35:04,320 --> 01:35:26,260
+Örneğin bir File Server düşünün. File Server'a yüzlerce farklı kullanıcıdan okuma yazma isteği geliyor. O zaman File Server'ın kendisini gelen isteğin sahibine dönüştürerek o erişimi yapması en güvenli çözüm.
+
+477
+01:35:26,260 --> 01:35:39,300
+Aslında neye benziyor? Unix'deki şu Set User ID olayına benziyor. Onun birebir denk düşen yapısı diye de kafanızı da camlandırabilirsiniz.
+
+478
+01:35:40,160 --> 01:35:48,079
+Bunun olabilmesi için de bu Impersonation, başkasıymış gibi davranma token'ına ihtiyaç var.
+
+479
+01:35:48,079 --> 01:36:00,960
+When a process wants to access an object, bir proses, bir objekte erişmek istiyorsa, it presents its set of security tokens.
+
+480
+01:36:01,700 --> 01:36:10,220
+Elinde bulundurduğu token'ları işletim sistemine veriyor. Diyor ki benim elimdeki token'lar bunlar ve ben şu erişimi yapmak istiyorum.
+
+481
+01:36:10,220 --> 01:36:18,280
+Windows checks whether the security context has access to the object, based on the object, security descriptor.
+
+482
+01:36:18,780 --> 01:36:32,420
+Bu token grubu ile diyelim, set kümesi ile aslında, token kümesi ile güvenlik descriptörü, güvenlik tanımlayıcısındaki bilgiler ne yapılıyor?
+
+483
+01:36:33,420 --> 01:36:37,440
+Kontrolden geçiriliyor. Buna göre bu erişim olacak mı, olmayacak mı?
+
+484
+01:36:37,440 --> 01:36:43,700
+Bakın, access token, user mark, group 1 administrators, group 2 poets.
+
+485
+01:36:44,440 --> 01:36:52,620
+Şimdi grup 1 primary group, o yüzden grup 1 diye isimlendirilmiş, administrator grubu, grup 2 de poets.
+
+486
+01:36:53,960 --> 01:36:58,180
+Şimdi neleri varmış security descriptorunda?
+
+487
+01:36:58,180 --> 01:37:11,000
+Dinay varmış, kime dinay edecekmiş? Poets'e, read ve write. Poets grubuna read ve write dinaymış.
+
+488
+01:37:11,420 --> 01:37:14,360
+Kesinlikle ne okuyabiliyorlar, ne yazabiliyorlar.
+
+489
+01:37:14,360 --> 01:37:26,900
+Ama mark kullanıcısına read ve write allow edilmiş, izin verilmiş, pardon hızı geçtim.
+
+490
+01:37:27,660 --> 01:37:40,320
+Şimdi buradaki düşüncemiz şu olabilir, mark kullanıcısı şu aşağıdaki allow'dan ötürü bu erişimi gerçekleştirecek.
+
+491
+01:37:40,320 --> 01:37:47,680
+Hayır, Windows'un tasarımı gereği, dinayın önceliği allow'dan daha yüksek.
+
+492
+01:37:48,260 --> 01:37:54,520
+Listede erişini reddeden bir kural varsa, o kural geçerli oluyor.
+
+493
+01:37:54,520 --> 01:37:59,520
+Burada da Mark'ın Poets grubunda olmasından ötürü...
+
+494
+01:38:01,908 --> 01:38:10,828
+Bir reddetme durumu, dinayi durumu söz konusu ve bunun sonucunda da Mark bu erişimi gerçekleştireme.
+
+495
+01:38:13,048 --> 01:38:16,688
+Şimdi şu noktada aslında neyin farkına vardık?
+
+496
+01:38:20,884 --> 01:38:42,684
+Bir tarafta ACL'ler var, diğer tarafta Capability'ler var. Capability'de kullanıcılar içeriği değiştirilemez, taklit edilemez bir bilet, ticket sunuyorlar. Token, jeton sunuyorlar.
+
+497
+01:38:42,684 --> 01:38:52,123
+Subject presents an unforgable ticket that grants access to an object. Bunun sayesinde de o kaynağa erişmeyi planlıyorlar.
+
+498
+01:38:52,804 --> 01:38:58,444
+System doesn't care who the subject is, just that they have access.
+
+499
+01:38:58,444 --> 01:39:11,363
+İşte sinemaya gittiniz, biletinizi gösterdiniz, yer gösterici sizin kim olduğunuzla ilgilenmiyor, bilet geçerliyse sizi koltuğunuza buyur burası deyip oturtuyor.
+
+500
+01:39:11,363 --> 01:39:21,564
+ACL'de ise, system checks where subject is on the list of users with access to the object.
+
+501
+01:39:22,764 --> 01:39:31,984
+Objectin listesinde subject olarak yer alıyor musunuz? Onu kontrol ediyor ve hangi yetkilerle yer alıyorsunuz? Onu kontrol ediyor.
+
+502
+01:39:32,804 --> 01:39:38,743
+Buradan da neyi anlıyoruz? ACL'de kullanıcının kim olduğu önemli. İşte bakın bir misafir listesi.
+
+503
+01:39:38,743 --> 01:39:43,104
+Ben geldim [öğrenci], davetliyim şeklinde.
+
+504
+01:39:53,011 --> 01:40:12,612
+Şimdi desktuplarda ne yazık ki kişisel kullanımdan ötürü güvenlik açısından böyle bir inherited diyelim, doğuştan gelme, olayın ilk tasarımından gelme bir zafiyet var.
+
+505
+01:40:12,612 --> 01:40:18,991
+Relying on user permission provides user with little protection against malicious applications.
+
+506
+01:40:18,991 --> 01:40:32,331
+kullanıcı yetkilerine güvenerek bunun üzerinden güvenlik sağlamak kötü niyetli uygulamalar için çok da böyle başarılı bir tedbir değil.
+
+507
+01:40:32,451 --> 01:40:37,771
+Çünkü zaten o desktopta ben olarak çalışıyorum. Ben olarak login olmuşum.
+
+508
+01:40:37,771 --> 01:40:52,431
+Bütün prosesler bana ait, bütün dosyalar benim dosyalarım. O zaman benim yüklediğim bilerek veya bilmeyerek bir şekilde farkına varmadım, varmadım.
+
+509
+01:40:52,891 --> 01:40:59,532
+Çalıştırdığım bir malicious kodun zaten benim dosyalarıma erişememesi gibi bir şey söz konusu değil ki.
+
+510
+01:40:59,532 --> 01:41:03,291
+İşte ikinci madde bunu söylüyor.
+
+511
+01:41:03,371 --> 01:41:07,491
+Malicious application running as you have access to all of your files.
+
+512
+01:41:08,032 --> 01:41:13,251
+Adobe Acrobat can edit, delete and encrypt, ransom all of your data.
+
+513
+01:41:13,791 --> 01:41:14,411
+Acrobat.
+
+514
+01:41:15,271 --> 01:41:16,671
+Siz yüklediniz.
+
+515
+01:41:17,572 --> 01:41:19,231
+Sizin dosyalarınıza erişim var.
+
+516
+01:41:19,391 --> 01:41:22,551
+Acrobat'la beraber gelen bir ransomware.
+
+517
+01:41:22,551 --> 01:41:29,991
+Açtığınız, tıkladığınız Acrobat dosyasında aktif hale geliyor ve sizin dosyalarınızı şifrelemeye başlıyor.
+
+518
+01:41:31,152 --> 01:41:33,391
+Olayın yapısında bir sıkıntı var.
+
+519
+01:41:33,391 --> 01:41:45,871
+Yani zaten kendim, kendime ait olan şeyleri o yapı içerisinde dışarıdan müdahale olmadan koruyamam.
+
+520
+01:41:47,371 --> 01:41:51,091
+Bunun aklımızda olması lazım.
+
+521
+01:41:51,091 --> 01:41:57,491
+Yani işletim sistemi seviyesinde şu ana kadar hem Linux, Unix hem Windows tarafını gördük ama
+
+522
+01:41:57,491 --> 01:42:06,631
+sonuçta desktop uç kullanıcı tarafına geldiğimizde yaşadığımız açmanın da farkındasınız.
+
+523
+01:42:08,791 --> 01:42:11,771
+Bir de Chrome tarafına bakacağız arkadaşlar.
+
+524
+01:42:16,595 --> 01:42:42,595
+2006 öncesine kadar tek bir browser prosesi vardı. Tıkladığınız zaman çalışıyordu. Bu browser prosesi network'e de erişiyordu, disk'e de erişiyordu, grafik rendering'ini de yapıyordu, müziği de çalıyordu,
+
+525
+01:42:42,595 --> 01:42:50,475
+JavaScript'e de çalıştırıyordu. Aklınıza gelebilecek her türlü şeyi tek bir proses yapıyordu.
+
+526
+01:42:52,135 --> 01:42:59,015
+Ve bu az önce sayılan parçalar o prosesin altındaki thread'lerdi.
+
+527
+01:43:00,095 --> 01:43:09,955
+Yalnız 2006 sonrasında işte bakın network proses ayrıldı, storage proses ayrıldı, device proses ayrıldı, browser, renderer,
+
+528
+01:43:09,955 --> 01:43:24,195
+işte user interface, GPU, plug-in'ler bunların hepsi birbirinden bağımsız ayrı prosesler haline getirildi.
+
+529
+01:43:24,315 --> 01:43:29,595
+Hatta renderer birden fazla var çünkü birden fazla tab'ınız var.
+
+530
+01:43:30,455 --> 01:43:35,955
+İşte plug-in birden fazla var çünkü birden fazla plug-in'iniz yüklü.
+
+531
+01:43:36,955 --> 01:43:38,135
+Öyle düşünmeniz lazım.
+
+532
+01:43:42,484 --> 01:44:01,484
+Nasıl bir privilege separation uygulanmış durumda? Browser process controls Chrome part of the application, like address bar and bookmarks, also handles the invisible privileged parts of a web browser, like network requests. Browser process bunu yapıyor.
+
+533
+01:44:01,484 --> 01:44:11,484
+Renderer process controls anything inside of a tab where a website is displayed. Website'in görüntülenmesi için tab içerisindeki her şey renderer ve plugin.
+
+534
+01:44:11,484 --> 01:44:16,484
+A plugin controls any plugins used by the website, for example Flash.
+
+535
+01:44:16,484 --> 01:44:29,484
+GPU handles GPU tasks in isolation from other processes. It is separated into different processes because GPUs handle requests from multiple apps and draw them in the same surface.
+
+536
+01:44:29,484 --> 01:44:39,484
+Burada bu GPU yapısının bir özelliği var. Farklı tablerden gelen render edilmiş olanları aynı ekranda göstermek zorunda.
+
+537
+01:44:39,484 --> 01:44:52,484
+O yüzden o prosesleri öncesinde izole edip sonrasında birbirleriyle doğrudan etkileştirmek yerine ne üzerinden?
+
+538
+01:44:52,484 --> 01:45:00,484
+GPU proses üzerinden izole etmek ve kontrollü bir şekilde etkileştirmek daha anlamlı.
+
+539
+01:45:17,484 --> 01:45:23,484
+Şimdi B'nin renderer'ı ayrı, C'nin renderer'ı ayrı, A'nın renderer'ı ayrı.
+
+540
+01:45:23,484 --> 01:45:29,484
+Böylece bunlar birbirlerinden tamamen izole olmuş durumda.
+
+541
+01:45:29,484 --> 01:45:35,484
+Tabii ki bunların her biri bir proses olduğu için ne yazık ki memori kullanımı çok artıyor.
+
+542
+01:45:35,484 --> 01:45:45,484
+Ne yazık ki bir yerden sonra sistem yeterince hızlı tepki veremez hale geliyor.
+
+543
+01:45:45,484 --> 01:45:49,484
+Responsif olan. Ama bunun responsif tasarımla bir alakası yok.
+
+544
+01:45:49,484 --> 01:45:52,484
+Sistemin cevaplenme süresi ikisini karıştırmamak lazım.
+
+545
+01:45:52,484 --> 01:45:57,484
+Veyahut da kıvraklı tablar arasında hareket ederken.
+
+546
+01:45:57,484 --> 01:46:02,484
+Veyahut da işte bu bir tabın içeriğini şurada gördüğünüz gibi yüklerken.
+
+547
+01:46:07,484 --> 01:46:17,484
+onun içinde gelen işte source code, http, html, javascript hepsi bunlar şey yapılırken,
+
+548
+01:46:17,484 --> 01:46:20,484
+bakıldığında iframe input edilmiş, ayrı proses başlıyor.
+
+549
+01:46:20,484 --> 01:46:25,484
+Iframe input edilmiş, ayrı proses başlıyor diye düşünmeniz lazım.
+
+550
+01:46:30,676 --> 01:46:46,776
+Ve broker bir tane arada geçişi kontrol eden, göreceğiz, reference monitor. Onu bu hafta görmeyeceğiz, bu ders görmeyeceğiz ama bir reference monitor.
+
+551
+01:46:46,776 --> 01:47:01,556
+Arada bahsettiğimiz prosesler arasındaki etkileşimin geçerli, kabul edilebilir, izin verilebilir bir etkileşim mi yoksa olmaması gereken bir etkileşim mi olduğuna karar veren bir yapı.
+
+552
+01:47:02,356 --> 01:47:14,476
+Renderer's only access to the network is via its parent browser process and file system access can be restricted. Yani çok kısıtlanabiliyor bu sayede renderer'ın erişimi.
+
+553
+01:47:14,476 --> 01:47:17,416
+Şu yapıyı görüyorsunuz, bakın.
+
+554
+01:47:19,676 --> 01:47:27,396
+Şuradaki policy engine A targıtıyla B targıtının birbiriyle konuşup konuşamayacağına karar veriyor.
+
+555
+01:47:31,923 --> 01:47:49,884
+Şimdi Windows, Chrome'un en fazla çalıştığı işletim sistemlerinden biri. O yüzden de ilk böyle yapısal değişiklikler orada çıkartılıyor. En fazla da sıkıntılı browser ortamı açısından en fazla da sıkıntılı olan işletim sistemi Windows.
+
+556
+01:47:49,884 --> 01:48:05,764
+Token'ın ne olduğunu öğrendik. Windows'da bir Restricted Token var, kısıtlanmış token var. Chrome calls create Restricted Token to create a token that is a subset of the user's privileges.
+
+557
+01:48:05,764 --> 01:48:21,423
+Kullanıcının yetkilerinin kısıtlanmış bir alt seviyedeki yetkiye sahip token'ını oluşturuyor. Bu token'ı Nobody grubu ve Nobody user'u ile eşleştiriyor.
+
+558
+01:48:22,304 --> 01:48:33,104
+Ve neredeyse bütün sistem kaynaklarına olan erişimi iptal ediyor. Yani bu token'la hiçbir yere erişemiyorsunuz ve bu token hiç kimse.
+
+559
+01:48:33,104 --> 01:48:59,984
+Yani kalkıp da biri disk'teki dosyalara işte security olmayacak, dosyaların ACL'leri herkes tarafından security kontrolü olmadan erişilebilecek demediği sürece bu token'la herhangi bir yere erişebilme şansınız yok.
+
+560
+01:48:59,984 --> 01:49:05,804
+Vista ve sonrasında aslında bu token network erişiminde de kullanılıyor.
+
+561
+01:49:08,743 --> 01:49:13,944
+Şeylerden biri bu. Kısıtlamalardan yapılan kısıtlamalardan biri bu.
+
+562
+01:49:14,543 --> 01:49:18,423
+Diğeri de bir job object Windows'da. Aslında bu var. Ne için var?
+
+563
+01:49:18,804 --> 01:49:22,024
+İşte scheduled job'lar var ya arka planda çalıştırıyorsunuz.
+
+564
+01:49:22,024 --> 01:49:25,644
+Belirli bir saat, tarih, gün, neyse geldiğinde şu çalışsın.
+
+565
+01:49:26,304 --> 01:49:31,163
+Ekrana ihtiyacı yok. Sadece arka tarafta bir executable çalıştırıyor.
+
+566
+01:49:31,823 --> 01:49:34,344
+Veya SQL server çalıştırıyorsunuz.
+
+567
+01:49:35,583 --> 01:49:37,144
+Onun da ekrana ihtiyacı yok.
+
+568
+01:49:37,144 --> 01:49:41,363
+Buna Windows'da job object deniyor.
+
+569
+01:49:42,264 --> 01:49:53,083
+Desktop ve display'e erişimi olmayan, clipboard'a yani nedir basılan tuşlara copy-paste edilmiş içeriğe erişimi olmayan,
+
+570
+01:49:53,083 --> 01:50:07,363
+alt prosesler oluşturamayan ve işletim sisteminde bir tane global atomik şey yapısı var, tablo yapısı var.
+
+571
+01:50:07,903 --> 01:50:16,323
+Oraya da erişimi kısıtlanmış, sınırlanmış bir object, bir kaynak diye düşünün.
+
+572
+01:50:16,323 --> 01:50:25,663
+Böylece kaynak açısından da, renderer'ın da yapabildikleri, niçin renderer açısından önemli?
+
+573
+01:50:25,804 --> 01:50:30,264
+Renderer'daki kötü niyetli kod gidip şifre çalmaya çalışıyor.
+
+574
+01:50:30,404 --> 01:50:34,243
+Key stroke'ları, key click'leri okumaya çalışıyor.
+
+575
+01:50:34,363 --> 01:50:36,663
+Diğer tablardan bilgi çalmaya çalışıyor.
+
+576
+01:50:36,764 --> 01:50:41,623
+Böyle yaptığınız zaman bunun tamamen, neredeyse tamamen önüne geçmiş oluyorsunuz.
+
+577
+01:50:42,384 --> 01:50:45,963
+Ve diğer bir şey, Windows'da çok alışkanlığımız yok.
+
+578
+01:50:47,283 --> 01:50:50,703
+Aslında Windows 1'den fazla desktop destekliyor.
+
+579
+01:50:51,663 --> 01:50:55,863
+Bu desktop'u ekranla ilişkilendirip ilişkilendirmemek bize kalmış.
+
+580
+01:50:56,003 --> 01:51:00,623
+Hatta farklı desktop'ları aynı anda aynı ekranla da ilişkilendirebiliyorsunuz.
+
+581
+01:51:00,623 --> 01:51:03,283
+İşte Chrome bundan da yararlanıyor.
+
+582
+01:51:05,783 --> 01:51:08,243
+Bunun da şöyle bir güzelliği var.
+
+583
+01:51:09,024 --> 01:51:13,623
+Farklı desktop'lar arasında mesajlaşma yapamıyorsunuz.
+
+584
+01:51:13,623 --> 01:51:22,863
+Farklı desktop'ların prosesleri birbirinden copy-paste falan açısından da iyice izole edilmiş durumda.
+
+585
+01:51:22,863 --> 01:51:27,323
+Yani baktığınız zaman aslında Chrome'un...
+
+586
+01:51:28,467 --> 01:51:41,427
+Security modeli de tek bir hat üzerinden kurulu değil, bir satık üzerinden kurulu. Birden fazla security özelliği içerisinde.
+
+587
+01:51:43,108 --> 01:51:53,747
+Windows Fista ile beraber Integrity Level denen, özellikle development'ı kolaylaştırmak adına oluşturulmuş.
+
+588
+01:51:53,747 --> 01:52:05,847
+İşte Untrusted, Low, Medium, High System. Nedir bu? Normalde Windows 1 Executable'ın sertifikası olmadan çalıştırılmasına izin vermiyor.
+
+589
+01:52:05,847 --> 01:52:15,648
+Ama development yaparken de daha tamamlamadığınız bir ürün için, bir kod parçası için sertifika almanız anlamlı değil.
+
+590
+01:52:16,268 --> 01:52:20,847
+Ona bağlı olarak Integrity Level set ediyorsunuz.
+
+591
+01:52:20,847 --> 01:52:26,867
+İşte development'ınız bittikten sonra da bunu olması gereken şeye getirebiliyorsunuz.
+
+592
+01:52:26,927 --> 01:52:37,228
+Most processes run at medium level. Bu hani şu anda işte Windows 10'da falan da bu uygulamanın kaynağı belirlenemiyor, şey yapılamıyor falan tarzı şeyler var ya, onlar.
+
+593
+01:52:37,228 --> 01:52:45,247
+Chrome neden yararlanıyor? Low Integrity Level'dan yararlanıyor.
+
+594
+01:52:45,247 --> 01:52:53,547
+Low Integrity Level'ın temel şeyi okuyabiliyor ancak yazma yetkisi kısıtlandırılmış.
+
+595
+01:52:53,667 --> 01:53:03,667
+Yani isterse Security Descriptor okey desin ama Integrity Level'ı low olduğu için yazma hakkı elinden alınmış durumda.
+
+596
+01:53:03,667 --> 01:53:17,667
+Müzik
+
+597
+01:53:08,916 --> 01:53:13,895
+MacOS tarafında da inceleyebileceğimiz güzel bir şey var.
+
+598
+01:53:18,131 --> 01:53:33,271
+Sandbox, bunu göreceğiz önümüzdeki haftalarda. Hatta yanımlıyorsam önümüzdeki haftanın konumlarından biri bu. İzolasyon yapmak demek aslında. Sınırları belirlemek demek. Bir hücrenin içerisine yerleştirmek demek.
+
+599
+01:53:33,271 --> 01:53:52,471
+MacOS'ta da uygulamalar sınırlandırılıyor Sandbox yapısıyla. Donanım, kamera erişimi, mikrofon erişimi, USB erişimi, printer erişimi, network erişimleri, network bağlantıları hem gelen yönde hem giden yönde.
+
+600
+01:53:52,471 --> 01:54:06,351
+Uygulama verisi, takvime erişim, lokasyona erişim, kontaklara erişim. Kullanıcı dosyaları, download, picture, müzik, movie, user selected files, neyse.
+
+601
+01:54:08,271 --> 01:54:14,911
+Access to any resource not explicitly requested in the project definition is rejected by the system at runtime.
+
+602
+01:54:14,911 --> 01:54:31,411
+Siz projenizi oluştururken o kodla beraber aslında ship edeceğiniz, yüklenmesini sağlayacağınız bir uygulama onu oluştururken açıkça nelere erişime ihtiyacınız olduğunu belirtmek zorundasınız.
+
+603
+01:54:31,411 --> 01:54:39,431
+Diyorsunuz ki mesela benim downloads'a ihtiyacım var, movies'e ihtiyacım var veya işte outbound to network connection yapacağım.
+
+604
+01:54:40,331 --> 01:54:46,711
+Bunları belirtmezseniz bunlar sistem tarafından geri çevriliyor.
+
+605
+01:54:47,671 --> 01:54:57,531
+Kullanıcı isterse, izin verirse erişime devam ettiriliyor ama default policy o uygulamayı çalıştırmamak.
+
+606
+01:55:01,427 --> 01:55:14,167
+Android tarafında da Linux kullanıldığı için Linux'ta görmüş olduğumuz izolasyon modeli oluşturuluyor.
+
+607
+01:55:14,467 --> 01:55:19,927
+Artı bir de bunun üzerine Android'in kendisinin oluşturduğu bir izolasyon modeli var.
+
+608
+01:55:20,787 --> 01:55:26,847
+Yine proses tabağının. Android uygulamalarının tamamı aslında Java üzerine kurulu.
+
+609
+01:55:27,568 --> 01:55:29,148
+O yüzden bir Virtual Machine var.
+
+610
+01:55:29,148 --> 01:55:35,327
+Tek Virtual Machine altında bu uygulamaları çalıştırmak yerine çok güvensiz olurdu.
+
+611
+01:55:35,427 --> 01:55:43,787
+Çünkü o zaman her biri o Virtual Machine altında bir thread olurdu ve bir tanesi diğer hepsinin verisine erişebilirdi.
+
+612
+01:55:44,568 --> 01:55:51,387
+Ondan ötürü her bir uygulama kendine ait bağımsız bir Virtual Machine'de bir proses olarak çalışıyor.
+
+613
+01:55:51,387 --> 01:56:01,387
+Dolayısıyla uygulamalar, appler özel bir yapı olmadığı sürece birbirleriyle etkileşemiyorlar.
+
+614
+01:56:01,387 --> 01:56:16,728
+Ve yine az önce MacOS örneğinde belirttiğim gibi bir uygulamanın sistemde hangi kaynaklara erişeceği kurulum sırasında belirleniyor.
+
+615
+01:56:16,728 --> 01:56:21,028
+İşte kameraya mı yerleşecek, mikrofonaya mı yerleşecek, takvime mi yerleşecek?
+
+616
+01:56:22,148 --> 01:56:24,007
+Göreceğiz bu reference monitor.
+
+617
+01:56:24,387 --> 01:56:27,847
+Az önce ben de söylemiştim size konularımızdan biri.
+
+618
+01:56:28,307 --> 01:56:33,988
+Reference monitor, Chrome'daki broker gibi bir şey.
+
+619
+01:56:34,108 --> 01:56:35,188
+Orada bahsetmiştim.
+
+620
+01:56:35,188 --> 01:56:46,467
+Komponentler arası iletişim, haberleşme olacağı zaman bunun izin verilip verilmeyecek bir şey olup olmadığına karar veriyor.
+
+621
+01:56:48,547 --> 01:56:54,148
+O zaman bakın, hattı müdafaa yok, sattı müdafaa var.
+
+622
+01:56:55,287 --> 01:56:58,988
+En düşük yetki prensibini uyguluyoruz.
+
+623
+01:56:59,667 --> 01:57:01,887
+Yetkileri birbirinden ayırıyoruz.
+
+624
+01:57:01,887 --> 01:57:06,268
+Ve bunun haricinde açık bir dizayn yapmamız lazım.
+
+625
+01:57:06,988 --> 01:57:11,747
+The security of a mechanism should not depend on the secrecy of its design or implementation.
+
+626
+01:57:11,988 --> 01:57:13,507
+Bu yapabileceğiniz en büyük hata.
+
+627
+01:57:13,827 --> 01:57:19,268
+Çünkü bunlar ele geçtiği zaman sisteminiz tamamen açığa çıkar.
+
+628
+01:57:20,568 --> 01:57:22,268
+İşte benim dediğimi söylüyor.
+
+629
+01:57:22,327 --> 01:57:28,387
+If the details of the mechanism leaks through reverse engineering, dumpster diving or social engineering,
+
+630
+01:57:28,387 --> 01:57:32,488
+then it is a catastrophic failure for all the users at once.
+
+631
+01:57:33,228 --> 01:57:39,247
+If the secrets are abstracted from the mechanism, for example an inside key,
+
+632
+01:57:39,387 --> 01:57:41,907
+then leakage of the key only affects one user.
+
+633
+01:57:43,268 --> 01:57:47,627
+Mesela diyelim ki bu uygulamanız bir veri tabanına erişecek.
+
+634
+01:57:47,627 --> 01:57:54,768
+O veri tabanının kullanıcı adı ve şifresinin uygulamanın içerisindeki gömülü olması çok kötü bir şey.
+
+635
+01:57:55,627 --> 01:58:03,827
+O yüzden güvenlik mekanizmalarıyla uygulamanın kendisine ait mekanizmaların birbirinden ayrılması gerekiyor.
+
+636
+01:58:03,827 --> 01:58:17,988
+Bu çok temel kriptografiden gelen bir prensip ama bize de birebir doğrudan denk düşen bir prensip.
+
+637
+01:58:18,148 --> 01:58:19,827
+Open design'de söylediğimiz şey.
+
+638
+01:58:20,747 --> 01:58:23,608
+August Kerkhoff zamanında söylüyor.
+
+639
+01:58:23,688 --> 01:58:25,547
+Bunlar çok çok yıllar önce söylüyor.
+
+640
+01:58:25,547 --> 01:58:45,648
+Bakın bir kripto sistem anahtarı haricinde her türlü bilgisi, her türlü yapısı, tasarımı herkes tarafından bilinirken güvenliyse güvenli bir kripto sistemdir.
+
+641
+01:58:45,648 --> 01:58:57,768
+Ben diyorum ki işte AES kullanıyorum, ben diyorum ki ARS'yi kullanıyorum, işte ben diyorum ki ECC, eliptik kriptografi kullanıyorum.
+
+642
+01:58:58,228 --> 01:59:21,927
+Buyurun, bütün matematiği burada, bütün yapısı burada, her türlü şey burada, mesajlaşma şeyleri burada. Ama bu sistem benim kullandığım anahtarın bilinmemesi sebebiyle güvenlidir. Bu kadar net. Bunu sağlayabiliyorsak o zaman ciddi, düzgün bir tasarım yapmışız demektir.
+
+643
+01:59:21,927 --> 01:59:33,927
+Open Design'ı da anladık yanılmıyorsam. Geriye bir tek şey kalıyor. Bu hayatın her yerinde uygulanması gereken bir prensip bence. Keep it simple.
+
+644
+01:59:33,927 --> 01:59:51,387
+Ne kadar basitse o kadar kolay anlaşılır, o kadar kolay hatalar ortaya çıkar, o kadar kolay düzeltilir. Karmaşık yapılar her zaman sıkıntılar içerir.
+
+645
+01:59:51,927 --> 02:00:07,507
+Esneklik, karmaşıklığı beraberinde getirir. Ama bu aynı zamanda güvenliği ortadan kaldırır. O yüzden çok dikkatli olunması lazım. O ilgisi arasındaki dengenin çok düzgün bir şekilde sağlanması lazım.
+
+646
+02:00:08,927 --> 02:00:10,788
+Bugünkü dersimiz bu kadar arkadaşlar.
+
+647
+02:00:13,087 --> 02:00:14,568
+Hepinize teşekkür ediyorum.
+
+648
+02:00:15,927 --> 02:00:19,148
+Haftaya kaldığımız yerden devam edeceğiz.
+
+649
+02:00:19,148 --> 02:00:21,167
+Sorusu olan var mı?
+
+650
+02:00:31,988 --> 02:00:36,068
+Ben teşekkür ederim sizlere. Sizlere de iyi günler, iyi haftalar.
+
+651
+02:00:38,288 --> 02:00:40,427
+Görüşmek üzere. Kolay gelsin arkadaşlar.
+
+652
+02:00:43,368 --> 02:00:44,448
+İyi günler.

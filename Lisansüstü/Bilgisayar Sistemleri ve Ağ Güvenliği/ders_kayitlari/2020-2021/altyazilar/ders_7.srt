@@ -1,0 +1,2159 @@
+1
+00:53:33,652 --> 00:53:49,952
+Evet arkadaşlar, kusuruma bakmayın. Sabahki bir toplantı gereğinden fazla uzun sürdü. O yüzden sizi bekletmek zorunda kaldım. Şu anda dersimize başlayabiliriz. Duyuyorsunuz değil mi beni?
+
+2
+00:53:53,492 --> 00:53:54,692
+Evet hocam, sesiniz geliyor.
+
+3
+00:53:55,312 --> 00:54:00,992
+Tamam, okey. Geçen hafta kaldığımız yerden başlayacağız. Daha doğrusu devam edeceğiz, pardon.
+
+4
+00:54:01,892 --> 00:54:06,852
+Şimdi önce bir ekranı paylaşayım sizinle. Tamam.
+
+5
+00:54:08,312 --> 00:54:14,852
+Şimdi hatırlarsanız, şunu bir oynatayım. Okey.
+
+6
+00:54:14,852 --> 00:54:20,852
+Şimdi geçen hafta web üzerinden gerçekleştirilen saldırılara bakmıştık.
+
+7
+00:54:20,852 --> 00:54:34,852
+Same Origin Policy'yi gözden geçirmiştik. Same Origin Policy, biliyorsunuz, web isteklerinin yüklenmesi durumunda ayrı çalışıyor.
+
+8
+00:54:35,972 --> 00:54:37,832
+Farklı kriterlere göre çalışıyor.
+
+9
+00:54:38,612 --> 00:54:41,852
+Kukiler için farklı kriterlere göre çalışıyor.
+
+10
+00:54:43,852 --> 00:54:45,952
+Onları incelemiştik.
+
+11
+00:54:45,952 --> 00:54:53,952
+İşte ne demiştik? Başka bir web sitesinden content içerik alabiliriz.
+
+12
+00:54:54,912 --> 00:55:01,912
+Ancak bu içeriği izin verilmediği sürece JavaScript'te, yani lokalimizde inceleyemeyiz.
+
+13
+00:55:02,052 --> 00:55:04,392
+İçeriğin kendisine bakma şansımız yok.
+
+14
+00:55:04,592 --> 00:55:06,952
+Burada bir görüntü örneği vardı hatırlarsanız.
+
+15
+00:55:06,952 --> 00:55:07,752
+Hatırlarsanız.
+
+16
+00:55:11,752 --> 00:55:18,952
+Safa yüklenirken ekstra isteklerde bulunabileceğini, bunları da konuşmuştuk.
+
+17
+00:55:20,912 --> 00:55:25,872
+Ve bunun kurallarının ne şekilde olması gerektiğini konuşmuştuk hatırlarsanız.
+
+18
+00:55:26,512 --> 00:55:29,792
+Bunlar biraz hatırlatma niteliğinde slide'lar.
+
+19
+00:55:29,792 --> 00:55:38,152
+Çünkü birazdan doğrudan web üzerinden yapılan saldırılara geçeceğiz.
+
+20
+00:55:38,292 --> 00:55:39,711
+Onların analizine geçeceğiz.
+
+21
+00:55:39,892 --> 00:55:42,272
+Sadece geçtiğimiz haftayı bir hatırlayalım istiyorum.
+
+22
+00:55:43,092 --> 00:55:48,392
+Yoksa ekstra böyle burada geçen hafta anlatmadığım şu slide'larda anlatacağım bir şey yok.
+
+23
+00:55:48,392 --> 00:55:58,532
+Access Control Allow Origin ile nelere erişmeye izin verildiği bildiriliyordu, belirtiliyordu.
+
+24
+00:55:58,992 --> 00:56:03,392
+Hatırlarsanız bunu Server belirtiyordu.
+
+25
+00:56:04,452 --> 00:56:11,472
+Server bu içeriğe şu orijinden erişilebilir veya bu orijinden erişilemez şeklinde.
+
+26
+00:56:11,472 --> 00:56:13,472
+Yani daha doğrusu orada bir whitelist var.
+
+27
+00:56:13,592 --> 00:56:18,952
+Bunu koyduğumuz zaman sadece burada belirtilen orijinlerden erişilebiliyor.
+
+28
+00:56:19,711 --> 00:56:30,772
+Buna bağlı olarak da hatırlarsanız bir doğrudan yapılan istekler ve pre-flight modunda yapılan istekler diye iki kategoriden bahsetmiştik.
+
+29
+00:56:30,772 --> 00:56:41,992
+Çünkü eğer Server bir isteğe izin vermiyorsa, o isteğin de arka tarafta hazırlanması uzun sürecekse, sıkıntılı olacaksa,
+
+30
+00:56:42,512 --> 00:56:53,231
+o durumda browser önce options, HTTP'deki options header'ını kullanarak bu içeriğe erişip erişemeyeceğini kontrol ediyordu.
+
+31
+00:56:53,231 --> 00:56:59,152
+Eğer erişebiliyorsa gerçek get veya post'u gerçekleştiriyordu.
+
+32
+00:56:59,692 --> 00:57:04,972
+Ama erişemiyorsa da hatayı kullanıcıya geri döndürüyordu.
+
+33
+00:57:05,632 --> 00:57:09,211
+Burada basit istekler için pre-flight yapmıyoruz.
+
+34
+00:57:09,211 --> 00:57:15,492
+Çünkü o zaman iki defa trafik oluşturmuş oluyoruz.
+
+35
+00:57:15,592 --> 00:57:27,652
+Ama biraz daha sıkıntılı yük getirecek istekler için bu pre-flight, yani önden bir kontrol edilmesi isteğini gerçekleştiriyoruz.
+
+36
+00:57:31,219 --> 00:57:44,139
+Cookie tarafında hatırlarsanız cookie'lerin kapsam tuttuğu anda istisnasız bir şekilde gönderildiğini söylemiştik.
+
+37
+00:57:44,599 --> 00:57:48,059
+Cookie'yi bize başlangıçta server gönderiyor.
+
+38
+00:57:48,379 --> 00:57:51,599
+Cookie browser tarafında bizim lokalimizde tutuluyor.
+
+39
+00:57:51,599 --> 00:58:16,359
+Ancak daha sonra erişilecek olan adrese bağlı olarak cookie'nin de geldiği adres ve hangi bölge veya hangi skop, hangi kapsam için geçerli olduğuyla alakalı olarak bu cookie kaç tanese, bu cookie'ler daha doğrusu kaç tanese hepsi birden gönderiliyordu hatırlarsanız.
+
+40
+00:58:16,359 --> 00:58:23,059
+Şimdi burada sıkıntıları konuşmuştuk.
+
+41
+00:58:23,159 --> 00:58:31,919
+Cookie'ler domain ve pet üzerinden eşleştirilip ona göre gönderilip gönderilmeyeceğine karar veriliyordu.
+
+42
+00:58:31,919 --> 00:58:40,919
+İşte ya domain tarafı ya da pet tarafında gönderilecek yer içeriği olması gerekiyor.
+
+43
+00:58:41,139 --> 00:58:43,919
+Bunu kapsıyor olması gerekiyordu.
+
+44
+00:58:43,919 --> 00:58:46,559
+Bunları gözden geçirmiştik.
+
+45
+00:58:48,019 --> 00:58:51,679
+Bakın işte burada örnek cookie'nin peti classes.
+
+46
+00:58:52,179 --> 00:58:56,299
+Cookie'nin peti classes olduğu için Stanford edu classes'a gönderiliyor.
+
+47
+00:58:56,439 --> 00:59:02,019
+Classes slash cs155'e gönderiliyor ama Stanford edu'ya gönderilmiyor.
+
+48
+00:59:03,159 --> 00:59:03,439
+Değil mi?
+
+49
+00:59:03,439 --> 00:59:09,719
+Şimdi domain boş olduğu zaman özel bir şey vardı hatırlarsanız.
+
+50
+00:59:09,879 --> 00:59:15,539
+Hangi host gönderdiyse sadece o host'a geri gönderilebiliyordu.
+
+51
+00:59:15,539 --> 00:59:23,719
+Burada da domain boş geldiği için Stanford edu'dan alındığı için VVV Stanford edu'ya geri gönderilmiyor.
+
+52
+00:59:23,919 --> 00:59:28,179
+Çünkü neden? VVV farklı bir host'u sembolize ediyor.
+
+53
+00:59:29,299 --> 00:59:33,439
+Burada da işte yine hatırlayın Stanford edu ve pet slash.
+
+54
+00:59:33,439 --> 00:59:35,879
+o zaman buraya gidecek.
+
+55
+00:59:36,000 --> 00:59:37,699
+Çünkü pet slash verilmiş.
+
+56
+00:59:37,839 --> 00:59:42,259
+Yani Stanford edu'nun altındaki her şeyi kapsayacak demektir.
+
+57
+00:59:42,839 --> 00:59:44,299
+Buraya da gönderilecek.
+
+58
+00:59:44,819 --> 00:59:45,960
+Çünkü neden?
+
+59
+00:59:46,619 --> 00:59:47,679
+cs155
+
+60
+00:59:47,679 --> 00:59:50,599
+Stanford edu'nun bir altındaki yapı.
+
+61
+00:59:50,699 --> 00:59:53,460
+Stanford edu da cs155'i kapsıyor.
+
+62
+00:59:53,460 --> 01:00:06,419
+Üst domain alt domain'i set edemiyordu ama alt domain üst domain için kendisini kapsayan domain için set edebiliyordu.
+
+63
+01:00:06,980 --> 01:00:11,099
+İşte şurada bakın Stanford edu cs155 için set edemiyordu.
+
+64
+01:00:11,099 --> 01:00:13,599
+Çünkü istek ki Stanford'dan geliyor.
+
+65
+01:00:13,819 --> 01:00:15,399
+cs155'den gelmiyor.
+
+66
+01:00:16,219 --> 01:00:18,899
+O tarz kontroller vardı.
+
+67
+01:00:20,199 --> 01:00:22,339
+Bunu konuşmuştuk hatırlarsanız yine.
+
+68
+01:00:23,460 --> 01:00:32,379
+Nasıl oluyor da cookie'yi ele geçirip daha sonradan bunu kullanabiliyoruz.
+
+69
+01:00:32,519 --> 01:00:36,799
+Bu örneği işte Zakir ve Deybo iki tane kullanıcı.
+
+70
+01:00:38,019 --> 01:00:44,739
+Zakir'in Deybo'nun şeyini, cookiesini kullanması örneğini gözden geçirmiştik.
+
+71
+01:00:45,319 --> 01:00:48,159
+Cookie'ye erişme olayından bahsetmiştik.
+
+72
+01:00:48,159 --> 01:00:56,799
+Ve işte çakışma olduğu durumda ne olacak dedik.
+
+73
+01:00:56,939 --> 01:01:04,939
+İşte burada hatırlayın yine cs Stanford edu Zakir is not cookies for cs Stanford edu Dabo.
+
+74
+01:01:04,939 --> 01:01:06,659
+Oraya gönderemez.
+
+75
+01:01:07,719 --> 01:01:11,019
+İşte cs Stanford edu da oraya gönderilemiyor.
+
+76
+01:01:11,159 --> 01:01:18,359
+Ama bu den kullanıcısının şeyleri, cookie'leri Zakir kullanıcısından korunmuş durumda mı?
+
+77
+01:01:18,359 --> 01:01:20,359
+Hayır, çünkü...
+
+78
+01:01:20,359 --> 01:01:26,359
+Zilf kylaç придurku.
+
+79
+01:01:31,039 --> 01:01:31,699
+Odağlandır.
+
+80
+01:01:21,523 --> 01:01:33,403
+DOM üzerinde, yani lokaldaki o hani document object model diyorduk ya, orada same origin policy de PET diye bir şey söz konusu değil.
+
+81
+01:01:33,523 --> 01:01:45,963
+O yüzden JavaScript üzerinden ben o cooking içeriğini alabiliyorum, onu işleyebiliyorum, kullanabiliyorum.
+
+82
+01:01:46,483 --> 01:01:48,023
+Böyle bir sıkıntımız vardı.
+
+83
+01:01:48,023 --> 01:01:58,423
+İşte Google Analytics, JavaScript'ini bir bankanın sayfasına yükleyecek olursak ne olur demiştik.
+
+84
+01:01:58,603 --> 01:02:10,263
+Bunun da normal haliyle özel bir kontrol yapılmadan, o hani access control, allow origin yapısı kullanılmadan felaketle sonuçlanacağını söyledik.
+
+85
+01:02:10,263 --> 01:02:19,663
+Çünkü neden? JavaScript her zaman Windows'un permissioniyle, yani Windows'un orijini neyse o orijinle çalışıyor.
+
+86
+01:02:35,163 --> 01:02:46,003
+Benzer şekilde eğer farklı bir domeyinden JavaScript kütüphanesi de yükleyecek olursanız ve bu kütüphaneler kötü niyetli kod içeriyorsa,
+
+87
+01:02:46,304 --> 01:02:48,864
+benzer şekilde sıkıntı söz konusuydu.
+
+88
+01:02:49,364 --> 01:02:50,463
+Bunun üzerine ne dedik?
+
+89
+01:02:50,884 --> 01:02:53,764
+HTTP only cookie yapısı var.
+
+90
+01:02:53,763 --> 01:03:04,763
+Java script ile erişilemiyor bu kukiler ama sadece HTTP requestlerinde gidip gelebiliyorlar.
+
+91
+01:03:05,703 --> 01:03:19,223
+Burada da araya bir saldırgan network üzerinden girerse, network trafiğini izlerse ve bizi bu kukiyi HTTP trafiği üzerinden göndermeye zorlarsa,
+
+92
+01:03:19,223 --> 01:03:26,063
+bu senaryoyu konuşmuştuk veya kandırırsa zorlamak zorunda değil, kandırabilirdi.
+
+93
+01:03:26,703 --> 01:03:35,344
+Burada da kukilerin sadece ve sadece HTTPS bağlantısı söz konusu olduğunda gönderilebilmesini sağlamak adına
+
+94
+01:03:35,344 --> 01:03:40,143
+kukinin sonuna sekür ibadesini yerleştirdiğimizden bahsetmiştik.
+
+95
+01:03:40,143 --> 01:03:54,324
+Evet, şimdi sonuç olarak kukilerin ele geçirilmesi temel olarak ne diye isimlendiriliyor arkadaşlar?
+
+96
+01:03:55,083 --> 01:03:56,304
+Session hijack.
+
+97
+01:03:57,123 --> 01:03:57,463
+Değil mi?
+
+98
+01:03:57,943 --> 01:04:00,023
+Control hijack öğrenmiştik.
+
+99
+01:04:00,243 --> 01:04:01,764
+Kontrolün ele geçirilmesi.
+
+100
+01:04:02,764 --> 01:04:06,884
+Muffer overflow, integer overflow, uzun uzun onları konuşmuştuk.
+
+101
+01:04:06,884 --> 01:04:11,743
+Orada ki de bir ele geçirilmeydi.
+
+102
+01:04:11,864 --> 01:04:14,384
+Control hijack, kontrolün ele geçirilmesi.
+
+103
+01:04:15,023 --> 01:04:21,643
+Burada ise yine bir ele geçirme olayı var ama buna da session'ı ele geçirme saldırısı diyoruz.
+
+104
+01:04:21,723 --> 01:04:24,364
+Çünkü kukiler ne için varlar?
+
+105
+01:04:25,103 --> 01:04:34,784
+Arada bağımsız request, responslardan oluşan yapıyı birbiriyle ilişkili bir bütün haline getirmek için varlar.
+
+106
+01:04:34,783 --> 01:04:37,723
+Yani session, oturum oluşturmak için varlar.
+
+107
+01:04:37,824 --> 01:04:54,443
+O zaman biz kukilere erişirsek, kukileri başka yerlerde kullanırsak, bize ait olmayan, başkalarına ait olan kukileri başka yerlerde kullanırsak, o zaman session hijack yapmış olacağız.
+
+108
+01:04:54,443 --> 01:05:01,643
+Bu network'ün dinlenmesi olabilir, kötü niyetli javascript olabilir.
+
+109
+01:05:01,844 --> 01:05:09,003
+Az önceki örneklerde gösterdiğimiz gibi hangi türlü yapılırsa yapılsın, her ikisi de ne olarak geçiyor?
+
+110
+01:05:09,523 --> 01:05:11,483
+Session hijack olarak geçiyor.
+
+111
+01:05:12,523 --> 01:05:15,903
+Session hijack saldırısı olarak, etek olarak geçiyor.
+
+112
+01:05:16,628 --> 01:05:37,988
+Evet, şimdi bunları gözden geçirmeye başlayacağız arkadaşlar. Cross-site request forgery, CSRF. En çok yapılanlardan bir tanesi. Cross-site request forgery, CSRF saldırısı ne anlama geliyor?
+
+113
+01:05:37,988 --> 01:05:58,088
+Önce onu söyleyelim. Bir web uygulamasına, o web uygulamasının güvendiği, otantike etmiş olduğu bir kullanıcı olarak istek göndermek.
+
+114
+01:05:59,028 --> 01:06:03,228
+Neyi kullanarak yapacak bunu? Cookie kullanarak yapacak.
+
+115
+01:06:03,228 --> 01:06:27,028
+Çünkü ne demiştik? Web uygulamaları bir kez bir kullanıcıyı otantike edip, ilgili otorizasyonu ona göre belirledikten sonra tekrar tekrar aynı kullanıcı geldiğinde, tekrar tekrar kullanıcı adı şifre, o onay yapısından geçilmemesi adına ne gönderiyorlar?
+
+116
+01:06:27,028 --> 01:06:33,388
+Cookie gönderiyorlar. Cookie gönderilmesinin temel sebebi buydu. İşte oturum oluşturulması, session oluşturulması.
+
+117
+01:06:34,048 --> 01:06:43,988
+O zaman kötü niyetli bir site bu cookie'yi ele geçirirse ve web uygulamasına bu cookie'yi kullanarak bir istek gönderirse,
+
+118
+01:06:44,608 --> 01:06:53,028
+web uygulaması bu isteğin kendisi tarafından onaylanmış ve güvendiği bir kullanıcıdan geldiğini düşüneneceği için bu isteği gerçekleştirecek.
+
+119
+01:06:53,028 --> 01:06:57,468
+Bakın, ikinci cümle ne diyor?
+
+120
+01:06:57,888 --> 01:07:06,068
+In CSRF attack, a user is tricked into submitting an unintended, often unrealized web request to a website.
+
+121
+01:07:06,708 --> 01:07:20,028
+Kullanıcı kendi isteğiyle olmayan, çoğu zamanda fark etmediği bir HTTP isteğini bir web request'ine, bir web sitesine gönderiyor.
+
+122
+01:07:20,028 --> 01:07:22,847
+Bizim bunu ne yapmamız lazım?
+
+123
+01:07:23,388 --> 01:07:29,488
+Durdurmamız, engellememiz, gerçekleşmemesini sağlamamız lazım.
+
+124
+01:07:30,827 --> 01:07:36,908
+Şimdi tek başına cookie-based authentication yeterli değil.
+
+125
+01:07:36,908 --> 01:07:50,588
+Özellikle bu requests that have any site effect'ten anlamamız gereken şey şu, bu bir diyelim ki bankadaki yapılacak işlem site effect ne olabilir?
+
+126
+01:07:51,148 --> 01:07:54,788
+Para transfer edilmesi olabilir, para çekilmesi olabilir.
+
+127
+01:07:54,788 --> 01:08:11,668
+Yani bir eksiltme, azaltma, değiştirme yönünde, modify etme yönünde, güncelleme yönünde bir transaction ile sonuçlanacak bir transaction'ımız var ise,
+
+128
+01:08:12,468 --> 01:08:20,248
+bunları sadece ve sadece cookie tabanlı authentication ile korumamız yeterli değil.
+
+129
+01:08:20,248 --> 01:08:23,988
+Çünkü neden? Cookie'ler ele geçirilebiliyor.
+
+130
+01:08:24,488 --> 01:08:35,847
+Cookie'ler ele geçirildiği zaman, karşı tarafa web uygulamasına, bu cookie gittiğinde web uygulaması,
+
+131
+01:08:36,688 --> 01:08:40,948
+gelen cookie sebebiyle o isteğin geçerli olduğunu kabul edecek.
+
+132
+01:08:40,948 --> 01:08:49,268
+İşte şurada post transfer, diyelim ki ilgili kişinin hesabındaki parayı başka bir hesap numarasına aktaracak.
+
+133
+01:08:50,248 --> 01:09:03,467
+O zaman tek başına cookie üzerine kurulu bir authentication yapıp da bu işi çözdük diyemiyoruz.
+
+134
+01:09:05,460 --> 01:09:33,460
+Tekrar üzerine basa basa söylüyorum. Domain ve pet tuttuğu zaman, kukiler istisnasız bir şekilde gönderiliyor. O yapıya, o domain ve pet yapısına uygun kaç tane kuki varsa, hepsi gönderiliyor. Bütün isteklerde gönderiliyor. Yani bir istekte gönderilip diğer bir istekte gönderilmemesi söz konusu değil.
+
+135
+01:09:33,460 --> 01:10:00,659
+Browser, domain ve pet tutan bütün kukileri ilgili web uygulamasına aktarıyor. Demek ki bu request'in, bu gönderilen isteğin geçerli olduğunu, düzgün, onaylı bir kullanıcıdan geldiğini, gerçekten otantik doğru bir kullanıcıdan geldiğini anlamak için
+
+136
+01:10:00,659 --> 01:10:07,659
+ek mekanizmalar kullanmak zorundayız. CSRF'i engellemenin yöntemi bu.
+
+137
+01:10:07,659 --> 01:10:19,239
+CSRF, kukileri engellemenin yöntemi çıkan bir tipi. Kukiler ise, yani biraz tavuk-yumurta ilişkisi var burada.
+
+138
+01:10:19,399 --> 01:10:24,980
+Kukiler ise bir kullanıcının otantik olduğunu anlamak için kullanılan bir yöntem.
+
+139
+01:10:24,980 --> 01:10:35,980
+Ancak bu yöntem, ne yazık ki saldırganlar tarafından kötü niyetli bir senaryoda kullanıldığında, az önce tariflediğim şekilde,
+
+140
+01:10:36,720 --> 01:10:48,980
+web uygulaması, kullanıcıdan gelmeyen bir isteğin, kullanıcıdan geldiğini düşündüğü için, onaylanmış bir kullanıcıdan geldiğini düşündüğü için, o isteği gerçekleştiriyor.
+
+141
+01:10:48,980 --> 01:11:00,859
+Peki, Cross-Site Request Forgery saldırılarını engellemek için nasıl tedbirler alabiliriz?
+
+142
+01:11:01,159 --> 01:11:04,980
+Toplam dört tane tedbirimiz var. Bunları uygulamamız gerekiyor.
+
+143
+01:11:06,359 --> 01:11:09,980
+Bunları bir arada uygulamak en düzgünü, en doğrusu.
+
+144
+01:11:09,980 --> 01:11:12,980
+Çünkü her zaman için ne diyoruz?
+
+145
+01:11:13,560 --> 01:11:16,779
+Tek bir müdafamız olmaması lazım.
+
+146
+01:11:17,640 --> 01:11:23,079
+O delindiğinde, o müdafaa hattımız delindiğinde, arka tarafa geçilir.
+
+147
+01:11:23,180 --> 01:11:25,680
+O yüzden bunu bir satıh şeklinde yapmamız lazım.
+
+148
+01:11:25,880 --> 01:11:34,760
+Yani birbirini tamamlayan, birbirini daha güçlü yapacak, birden fazla tekniği bir arada kullanmamız gerekiyor.
+
+149
+01:11:35,960 --> 01:11:37,380
+Bunlar neler arkadaşlar?
+
+150
+01:11:37,380 --> 01:11:46,100
+Referrer Validation, Secret Validation Token, Custom HTTP Header ve Same Site Cookie.
+
+151
+01:11:47,500 --> 01:11:58,420
+Referrer, bir isteğin hangi web sitesinden geldiğini söylüyor.
+
+152
+01:11:58,420 --> 01:12:04,279
+Referrer Request Header contains the address of the previous web page.
+
+153
+01:12:04,399 --> 01:12:11,420
+Yani bir önceki adımda hangi web sayfasından, dolayısıyla hangi domeninden gelindi.
+
+154
+01:12:11,420 --> 01:12:16,980
+The header allows servers to identify where people are visiting from.
+
+155
+01:12:17,399 --> 01:12:26,260
+Böylece bu isteğin gittiği server, gelen bu isteğin hangi sitelerden kendisine yönlendirildiğini anlayabiliyor.
+
+156
+01:12:26,260 --> 01:12:32,199
+İşte Google araması sonrasında Google'da search yaptınız, liste geldi.
+
+157
+01:12:32,840 --> 01:12:45,980
+Oradaki beğendiğiniz linklerden, işinize göreceğine inandığınız linklerden birine tıkladığınızda bu istek ilgili web server'a gidecek.
+
+158
+01:12:46,420 --> 01:12:51,680
+İlgili web server'a giderken de aslında bu isteğin referrer alanında neresi olacak?
+
+159
+01:12:51,680 --> 01:12:53,600
+Normal şartlarda Google olacak.
+
+160
+01:13:29,395 --> 01:13:31,395
+Şimdi diğer taraftan...
+
+161
+01:14:13,912 --> 01:14:21,212
+Şimdi bu durumda bir soru işareti var. Doğru mu? Değil mi? Bunu bilemiyoruz.
+
+162
+01:14:29,171 --> 01:14:49,131
+Evet, öyleyse emin olmak için eğer böyle bir transaction gibi, parasal transaction gibi bir uygulama ise bu, işte bankacılık uygulamasında olduğu gibi.
+
+163
+01:14:54,131 --> 01:15:02,871
+O zaman mutlaka server'ın neyi kontrol etmesi gerekiyor? Referrer alanını kontrol etmesi gerekiyor.
+
+164
+01:15:02,871 --> 01:15:23,751
+Çünkü bu bir web uygulaması olduğuna göre kullanıcıya ilgili formları doldurup da kendisine geri döndüreceği formları ve buna bağlı olarak da kendisine gelecek olan istekleri zaten kimin aktarmış olması gerekiyor?
+
+165
+01:15:24,131 --> 01:15:30,331
+Bankanın aktarmış olması gerekiyor. Bunun da bankanın sunucusundan çıkmış olması gerekiyor.
+
+166
+01:15:30,331 --> 01:15:35,652
+Yani birinci satırdaki senaryonun gerçekleşmiş olması gerekiyor.
+
+167
+01:15:38,231 --> 01:15:45,471
+İkincisi zaten çok net, rahat anlaşılabilecek bir şey. Üçüncüsü sıkıntılı bir durum.
+
+168
+01:15:45,471 --> 01:16:03,591
+Şimdi referrer yok. Referrer olmadığına göre acaba bu hakikaten benim size az önce söylediğim browserda işte URL alanına ben gitmek istediğim yeri yazdım.
+
+169
+01:16:04,171 --> 01:16:09,211
+O şekilde isteği sıfır noktasında mı başlattım yoksa başka bir şey mi oldu?
+
+170
+01:16:09,211 --> 01:16:11,491
+Peki bu durumda ne yapmamız lazım?
+
+171
+01:16:12,771 --> 01:16:19,692
+Şimdi değişiklikler ancak ne sonrasında gerçekleşiyor arkadaşlar?
+
+172
+01:16:20,692 --> 01:16:28,211
+Uygulamaya bir input girdiğimizde, uygulamadan bu input üzerinden bir istekte bulunduğumuzda,
+
+173
+01:16:28,211 --> 01:16:34,211
+yani aslında bir form submit ettiğimizde, bir form gönderdiğimizde.
+
+174
+01:16:36,211 --> 01:16:41,331
+O zaman banka her formun içerisine
+
+175
+01:16:41,331 --> 01:16:51,591
+HTML açısından tipi hidden olan, yani sayfada görüntülenmeyecek ama formun içerisinde yer alacak,
+
+176
+01:16:51,751 --> 01:16:56,551
+formla beraber gidip gelebilecek bir token değeri yerleştiriyor.
+
+177
+01:16:56,551 --> 01:17:00,311
+CSRF token denmiş mesela burada ismine.
+
+178
+01:17:00,711 --> 01:17:03,491
+İsminin ne olduğu önemli değil, önemli olan değeri.
+
+179
+01:17:04,831 --> 01:17:12,231
+Tabii ki bu değerin tahmin edilemez bir değer olması lazım.
+
+180
+01:17:12,791 --> 01:17:13,652
+Çünkü niçin?
+
+181
+01:17:14,311 --> 01:17:19,891
+Saldırgan bu değeri bilmediğinden, ismini de bilmediğinden diyelim şimdilik.
+
+182
+01:17:19,891 --> 01:17:30,571
+göndereceği formda bu alan eksik olacağı için bankacılık uygulaması bunun kendisinden gelmediğini anlayacak.
+
+183
+01:17:30,711 --> 01:17:37,731
+Yani az önceki sayfada üçüncü durum vardı ya, referör alanının boş olması ne olacak?
+
+184
+01:17:37,731 --> 01:17:51,251
+O zaman da referör alanı boş ise ve bir form gönderildi ise uygulama bu formun içerisinde ne bilgisine bakıyor?
+
+185
+01:17:51,971 --> 01:18:00,551
+Kendisinin yerleştirmiş olduğu özel token değerinin olup olmadığı bilgisine bakıyor.
+
+186
+01:18:00,551 --> 01:18:02,491
+Bu değer varsa sorun yok.
+
+187
+01:18:03,051 --> 01:18:08,131
+Ancak bu değerin, bu değerin statik olmaması lazım.
+
+188
+01:18:09,131 --> 01:18:09,851
+Çünkü niye?
+
+189
+01:18:10,571 --> 01:18:20,192
+Saldırgan bu sayfayı yükleyip tamamen browser haricinde bakın,
+
+190
+01:18:20,192 --> 01:18:30,771
+out of band dediği, saldırgan bu saldırıyı bizim browserdaki bankayla etkileşimimiz sırasında gerçekleştirecek ya,
+
+191
+01:18:31,831 --> 01:18:32,471
+orada değil.
+
+192
+01:18:32,891 --> 01:18:37,192
+Kendisi offline diyelim, bu formu yükledi.
+
+193
+01:18:38,311 --> 01:18:39,192
+Formun içerisindeki...
+
+194
+01:18:39,192 --> 01:18:41,192
+...
+
+195
+01:18:40,176 --> 01:19:08,996
+Token'ın hem ismini öğrendi hem de değerini öğrendi ve bu değer statik. Yani bütün fonlarda aynı değer kullanılıyor. O zaman saldırgan bizim bankayla etkileşimimiz sırasında bankaya göndermemizi istediği, kendi işine yarayacak olan o kötü niyetli transaction var ya, o transaction içinde de bu token'ı, bu isim ve bu değer ile kullanabilir.
+
+196
+01:19:08,996 --> 01:19:24,056
+Bunun önüne geçilebilmesi için sayfanın bir parçası olarak bu token'ın ne olması gerekiyor? Dinamik olarak üretilmesi gerekiyor.
+
+197
+01:19:24,056 --> 01:19:36,036
+Send session specific, session'a özel, token as part of the page, sayfanın parçası olarak. Yani hem session'a özel hem de sayfanın bir parçası.
+
+198
+01:19:36,036 --> 01:19:54,316
+Öyleyse ben çıktım, tekrar bağlandım. Banka bunu anlayabilir. Veya uygulama neyse illa ki banka olmak zorunda değil. Her seferinde, her seferinde yeni bir token üretilmesi lazım.
+
+199
+01:19:54,316 --> 01:20:08,936
+Ve neyi biliyoruz? Neyi biliyoruz? Same origin polisi. İçerik bizim gelmesini sağlıyor. Değil mi? Ekranda görüntülenmesini sağlıyor.
+
+200
+01:20:08,936 --> 01:20:19,196
+Ama JavaScript tarafından okunulmasını engelliyor. Düzgün SOP ayarı yapıldıysa.
+
+201
+01:20:19,716 --> 01:20:26,936
+Öyleyse saldırgan benim browserıma kötü niyetli JavaScript'i enjekte etmiş olabilir.
+
+202
+01:20:26,936 --> 01:20:42,236
+Ancak bankadan gelen CSRF token değerini benim browserımdaki o kötü niyetli JavaScript ile okuyabilme şansı yok.
+
+203
+01:20:43,655 --> 01:20:44,736
+İşin güzelliği burada.
+
+204
+01:20:45,396 --> 01:20:56,176
+Dinamik olsaydı eğer, şey dinamik değil de statik olsaydı eğer, az önce söylediğim şekilde bu token'ı ele geçirebilecekti.
+
+205
+01:21:02,195 --> 01:21:06,555
+Arkadaşlar, bir saniye. İzninizi isteyeceğim iki dakikalığına.
+
+206
+01:21:15,891 --> 01:21:21,831
+Evet, geri döndüm. Devam ediyoruz. Nerede kalmıştık? Şuradan play ile devam edelim.
+
+207
+01:21:23,831 --> 01:21:43,412
+Şimdi, üçüncü yöntem. Hatırlarsanız preflight çekimiz vardı. Yani ne yapıyorduk? Server gelen isteğe kontent gönderebilir mi? Gönderemez mi? Daha doğrusu göndereceği kontenti kimler okuyabilir? Kimler okuyamaz?
+
+208
+01:21:43,412 --> 01:22:06,271
+Bunun kontrolü vardı. Basit, sıradan get ve postların preflight ile javascripten işte xml.http request üzerinden bir request yapılsa bile test edilmesine normalde gerek yok.
+
+209
+01:22:06,271 --> 01:22:23,291
+Ancak şöyle düşünün. Browser'da biz preflight check'i force ettik. Yani browser'a dedik ki sen her şey için bunu kullan. En basit şeyde bile.
+
+210
+01:22:23,291 --> 01:22:39,271
+Ve xml.http request'in içerisine de bir custom header ekledik. Custom header nedir? Normalde browser'dan çıkan header'ı gördünüz. Oradaki alanlar standartta tanımlanmış durumda.
+
+211
+01:22:39,271 --> 01:22:55,652
+Ancak standart aynı zamanda ne de tanımlıyor? Diyor ki sen istersen kendi header alanını ismini şeyle beraber ekleyebilirsin ve bunu kullanabilirsin.
+
+212
+01:22:55,652 --> 01:23:17,412
+Bunlar normalde get ve post'ta ne yapılmıyor? Gönderilmiyor. Ancak custom header olduğu için preflight yapılmak zorunda.
+
+213
+01:23:17,412 --> 01:23:22,192
+Çünkü karşı taraf bunu yani xml.http request'te bu yapılmak zorunda.
+
+214
+01:23:23,791 --> 01:23:32,471
+Saldırganın yüklediği javascript'te ne gerçekleştirecek aslında? xml.http request gerçekleştirecek.
+
+215
+01:23:32,572 --> 01:23:38,771
+Çünkü javascript içerisinden content dinamik olarak pars edilirken bu gerçekleşiyor.
+
+216
+01:23:38,891 --> 01:23:45,952
+Yani biz browser'ı otomatikman preflight yapmaya force etmiş oluyoruz.
+
+217
+01:23:45,952 --> 01:23:50,192
+Daha doğrusu saldırganın saldırma metodolojisi bunu force etmiş oluyor.
+
+218
+01:23:50,831 --> 01:23:55,331
+Ancak bu isteklerin içerisine ne ekliyoruz biz?
+
+219
+01:23:56,051 --> 01:24:00,831
+Özel header alanları ekliyoruz. Ama normal get ve post'ta bu header alanları yok.
+
+220
+01:24:01,391 --> 01:24:09,731
+Şimdi o zaman bu eklenenler mesela başına cross yani x işareti konunuyor.
+
+221
+01:24:09,731 --> 01:24:18,211
+x requested by veya x requested bit genelde kullanılan bunun arkasına başka şeyler de ekleyebilirsiniz.
+
+222
+01:24:26,547 --> 01:24:38,827
+Şimdi bir de same-side cookie var. Cookie option that prevents browser from sending a cookie along with cross-site requests.
+
+223
+01:24:39,287 --> 01:24:55,707
+Yine cookieler için ekstra oluşturulmuş bir seçenek. Browser'a bu cookie'yi gönderip göndermemesi yönünde talimat veren bir seçenek.
+
+224
+01:24:55,707 --> 01:25:09,487
+Şey gibi düşünün, hani cookie'nin sonuna secure yazdığımızda bu cookie'ler sadece HTTPS bağlantısı üzerinden gönderilebiliyordu ya,
+
+225
+01:25:09,927 --> 01:25:19,707
+burada da bu cookie'nin cross-site isteklerde gönderilip gönderilemeyeceği, yollanıp yollanamayacağı.
+
+226
+01:25:19,707 --> 01:25:28,527
+Strict mode veya relaxed and legs yani rahat olan mode. Strict veya legs.
+
+227
+01:25:28,707 --> 01:25:36,228
+Strict mode never send cookie in any cross-site browsing context even when following a regular link.
+
+228
+01:25:36,228 --> 01:25:46,648
+Regular link ne? HTML'in içerisine resmen yani gömülü link olarak, href olarak hiç böyle javascript'ı falan şeyi yok.
+
+229
+01:25:47,108 --> 01:25:50,228
+İsteği browser kendisi oluşturacak.
+
+230
+01:25:50,228 --> 01:25:58,728
+If a logged in user follows a link to a private GitHub project from e-mail, mesela e-mail'den basıp da oraya gidiyorsa,
+
+231
+01:25:59,167 --> 01:26:04,047
+GitHub will not receive the session cookie and the user will not be able to access the project.
+
+232
+01:26:04,047 --> 01:26:13,347
+Yani ben mail ile GitHub'ın bir projesinin linkini gönderebilirim.
+
+233
+01:26:13,347 --> 01:26:25,407
+Normalde strict mode olmasaydı, browser GitHub'a cookie gönderecekti.
+
+234
+01:26:25,728 --> 01:26:27,627
+GitHub o cookie'yi kontrol edecekti.
+
+235
+01:26:27,807 --> 01:26:37,427
+Evet deyip, sen şu kullanıcıymışsın deyip, o kullanıcıyı içeri alacaktı ve authentication'lar falan geçilmeyecekti.
+
+236
+01:26:37,427 --> 01:26:49,567
+Ama strict mode olarak belirttiğimiz için, dikkat edin, maildeki linke basılması durumunda dahi o cookie gönderilmediği için
+
+237
+01:26:49,567 --> 01:26:54,927
+GitHub'ın gelen isteği ekstra otantike etmesi lazım.
+
+238
+01:26:55,127 --> 01:27:00,707
+Yani kullanıcının user ID password'üyle neyse login olması gerekiyor.
+
+239
+01:27:00,707 --> 01:27:10,707
+LexMode, linklerden gönderilmesini onaylıyor.
+
+240
+01:27:11,587 --> 01:27:20,327
+Linkler üzerinden, linke tıklandığında onun üzerinden o siteye erişilirken kullanabilirsin diyor.
+
+241
+01:27:20,327 --> 01:27:40,228
+Ancak post tarzı, yani CSRF'ten etkilenebilir buna karşı hassasiyeti olan az önce izlediğimiz, incelediğimiz senaryolardaki hallerini de gönderemezsin diyor.
+
+242
+01:27:40,228 --> 01:27:47,907
+Yani aslında cookie'nin definition'ına gönderilme şeyine bir de secure haricinde ne ekliyoruz?
+
+243
+01:27:48,087 --> 01:27:49,707
+Same site ekliyoruz.
+
+244
+01:28:04,819 --> 01:28:06,699
+Şimdi...
+
+245
+01:28:10,676 --> 01:28:17,056
+Şunu unutmamak lazım. Buradaki belirtilen şey çok önemli. Ne diyor?
+
+246
+01:28:17,056 --> 01:28:39,696
+Prior attacks were using CSRF attack to abuse cookies from logged in users. Yani bir kullanıcı logged in ise, bağlantı kurduysa, user id ve password'ünü verdiyse, zaten server onu otentik etmiş olacağı için ona bir cookie gönderecek ki,
+
+247
+01:28:39,696 --> 01:28:46,816
+sonraki isteklerde bu cookie sayesinde kullanıcıya tekrar user id ve password sorulması.
+
+248
+01:28:47,336 --> 01:28:59,036
+Şimdi, orijinal CSRF saldırıları bu cookielerin kullanılması, kötü niyetli kullanılması üzerine kurulu.
+
+249
+01:28:59,796 --> 01:29:03,836
+Not all attacks are attempting to abuse authenticated users.
+
+250
+01:29:03,836 --> 01:29:14,796
+Bütün saldırılar illa ki otantike olmuş kullanıcıların cookielerini kötü niyetli kullanmak üzerine kurulu değil.
+
+251
+01:29:15,456 --> 01:29:24,336
+Yani, authentication bilgisini aldım, o kullanıcıymış gibi bir işlem yaptımın ötesinde.
+
+252
+01:29:24,336 --> 01:29:32,776
+Şöyle bir şey düşünün, senaryo düşünün. İşte şurada bir router var.
+
+253
+01:29:32,976 --> 01:29:40,956
+Imagine, script that logs into your local router using default password and changes DNS settings to hijack traffic.
+
+254
+01:29:41,676 --> 01:29:45,016
+Logging into a site is a request with a side effect.
+
+255
+01:29:45,016 --> 01:29:58,796
+Yani, dikkat edin, bir script var. Sizin local router'ınıza default password ile giriyor ve DNS ayarlarınızı değiştiriyor.
+
+256
+01:29:59,456 --> 01:30:01,756
+Niçin DNS ayarlarınızı değiştiriyor?
+
+257
+01:30:14,396 --> 01:30:25,336
+Bunun için neye güveniyorsunuz? Evden, ofisten, bürodan neyse dışarı çıkarken kullandığınız, şuradaki şekli verilmiş olan gibi,
+
+258
+01:30:26,115 --> 01:30:29,216
+lokal router'ınızdaki DNS ayarına güveniyorsunuz.
+
+259
+01:30:29,216 --> 01:30:42,456
+Ancak, bunun şifresini değiştirmediğiniz için ve nasıl olsa bu şifreye sadece evden veya ofisten, lokalden ben erişiyorum,
+
+260
+01:30:42,996 --> 01:30:47,796
+başka kimse erişemez, internetten erişime kapalı diye düşündüğünüz için,
+
+261
+01:30:47,796 --> 01:31:05,356
+ancak kötü niyetli kullanıcı sizin browser'ınıza o router'a lokalden erişilmesini sağlayacak ve DNS ayarlarının değiştirilmesini sağlayacak script'i gönderdiği için
+
+262
+01:31:05,356 --> 01:31:12,356
+ve default şifresini de kendisi bildiği için, bunların bütün hepsi bir araya geldiğinde,
+
+263
+01:31:13,516 --> 01:31:20,356
+sonuçta güzel bir saldırı olup, sizin internete kapalı olan router'ınızın şifresi,
+
+264
+01:31:21,236 --> 01:31:27,476
+sizin web browser'ınızda çalıştırılan JavaScript tarafından lokalde değiştirildiği için,
+
+265
+01:31:27,476 --> 01:31:31,756
+çok için oldu ama hepsi bir araya geldi, bakın bütün senaryo öyle birleşiyor.
+
+266
+01:31:32,276 --> 01:31:39,376
+Siz artık DNS request yaparken saldırganın hayal gücüyle sınırlısınız.
+
+267
+01:31:40,816 --> 01:31:48,476
+Sizi herhangi bir ekran görüntüsünü replike etmiş olduğu servise,
+
+268
+01:31:48,476 --> 01:31:51,596
+gönül rahatlığıyla yönlendirebilir.
+
+269
+01:31:52,056 --> 01:31:57,696
+Yani bankaya da, istediği bir bankaya da kendi sitesi gibi yönlendirebilir,
+
+270
+01:31:57,836 --> 01:32:00,736
+başka bir tarafa da kendi sitesi gibi yönlendirebilir.
+
+271
+01:32:06,452 --> 01:32:24,532
+Öyleyse bakın, hani transactionlar, side effect, başlangıçta dedim ya, para değişikliği olur, transfer yapar, bunların side effect, değişiklik, modifikasyonlar, sonuçlanan şeyler, sadece bununla sınırlı olduğunu düşünmemek lazım.
+
+272
+01:32:24,532 --> 01:32:32,931
+Bir siteye, burada işte bir router bu, bunu da bir site, çünkü ona da bir web arayüzü üzerinden login oluyorsunuz.
+
+273
+01:32:33,152 --> 01:32:40,612
+Öyle düşünün, oraya login olmakta aslında yan etkisi olan bir durum.
+
+274
+01:32:42,292 --> 01:32:45,891
+Evet, şimdi SQL Injection'a geleceğiz arkadaşlar.
+
+275
+01:32:53,844 --> 01:33:10,684
+Bakın şeyler çok değişmiyor, görüyorsunuz. Yani 2013-2017 istatistikleri karşılaştırılmış. Birinci sırada Injection var. İkinci sırada Broken Authentication and Session Management. Yine bakın Broken Authentication var orada.
+
+276
+01:33:10,684 --> 01:33:32,203
+Üçüncü sırada Cross-Site Scripting varmış. Bu kaça düşmüş? Bir, iki, üç, dört, beş, altı, yedinci sıraya düşmüş. Ama sonuçta ne olmuş? Insecure Direct Object References'la Missing Function Level Access Control.
+
+277
+01:33:32,203 --> 01:33:46,203
+Bunlar bir arada birleşip yani merge edilmiş ikisi ayrı ayrı değerlendirilirken 2017 Broken Access Control denmiş. Yani ayrı şey yapmaya gerek yok. O yüzden...
+
+278
+01:33:51,252 --> 01:34:06,692
+Web tarafındaki bu saldırıları da, bunların metodolojisini de, saldırganların bunu nasıl yaptığını da iyice anlamamız, analiz etmemiz ve ona göre tedbirlerimizi almamız büyük önem taşıyor.
+
+279
+01:34:08,052 --> 01:34:19,492
+Şimdi, tipik command injection ile başlayalım arkadaşlar. Yani SQL Injection öncesinde bir command injection nasıl oluyor onu görelim.
+
+280
+01:34:19,492 --> 01:34:35,592
+Hiç tahmin edilmeyecek bir şekilde işletim sisteminin, bir takım araçlarının bize sunduğu kolaylıklar var. Bu işletim sisteminden kaynaklanmıyor, araçlardan kaynaklanıyor.
+
+281
+01:34:35,592 --> 01:34:48,792
+Örneğin, ben aynı satırda birden fazla komutu verebilirim. Neden? Kolaylık olsun. İşte komutu yazdım, enter'a bastım, komutu yazdım, enter'a bastım.
+
+282
+01:34:48,792 --> 01:35:09,012
+Onunla uğraşmak yerine bunları noktalı virgülle birbirlerinden ayırıp yazabilirim. En sonunda enter'a basarım ve shell yani command line bunları sırayla interpret eder, çalıştırır, sonuçlar bana verir. Kolaylık değil mi? Güzel.
+
+283
+01:35:09,012 --> 01:35:25,792
+Şimdi burada head 100 diye bir program parçası yazmış. Head baştan itibaren bir fail'in verilen satır kadarının listelenmesini sağlıyor.
+
+284
+01:35:25,792 --> 01:35:46,672
+İşte 100 derseniz ilk 100 satırı. Yapılan şey ne yapmış? STR ile gelen hangi fail ise onun isminin uzunluğu artı yüzlük bir alan daha açmış.
+
+285
+01:35:46,672 --> 01:36:02,872
+Kendince bir alan büyütmüş. O kadarlık bir yere malloc ile allocate ediyor. Sonra string copy ile bu cmd alanına head komutu, eksi n kaç satır basılacağı, yüz satır boşluk.
+
+286
+01:36:03,352 --> 01:36:16,332
+Arkasına da concatenate ile şey ekledi. Argüman v1'i ekledi. Argüman v0 programın adı. Argüman v1'de ilk argüman, 2'de ikinci argüman.
+
+287
+01:36:16,332 --> 01:36:24,872
+Sonra da bakın. Sistem, yani sistem çağrısı yapmak demek. Sistem cmd. cmd bas etti. Çok düzgün değil mi?
+
+288
+01:36:25,552 --> 01:36:38,392
+İşte normal çalışma head 100 olacak. O head 10 yazmıştı. Head 100 myfile.txte. Head minus 100 myfile.txte.
+
+289
+01:36:38,392 --> 01:36:42,532
+Çok güzel. Myfile.txte'nin ilk yüz satırı listelendi.
+
+290
+01:36:42,532 --> 01:36:53,812
+Şimdi, saldırgan ne yaptı bakın? Head dedi. Tırnak içerisinde, çift tırnak içerisinde. Bu yine Shell'in özelliklerinden biri.
+
+291
+01:36:54,972 --> 01:37:00,712
+Verilen, yazılanları tek parça halinde değerlendirilmesini istiyorsak bunu ne yapıyoruz?
+
+292
+01:37:01,212 --> 01:37:04,672
+Çift tırnak içerisinde ifade ediyoruz. Burada olduğu gibi.
+
+293
+01:37:13,112 --> 01:37:16,452
+Şimdi, head 100 neydi?
+
+294
+01:37:17,092 --> 01:37:20,592
+Bir failin ilk yüz satırının listelenmesiydi.
+
+295
+01:37:20,592 --> 01:37:30,012
+Ama gelin görün ki, saldırgan bunu bu şekilde kullandığında, arkasına bir başka komut daha ekletip çalıştırabildi.
+
+296
+01:37:30,532 --> 01:37:31,312
+Çünkü niye?
+
+297
+01:37:34,192 --> 01:37:38,552
+Programın içerisinde bir temizlik yapılmıyor. Buna sanitization deniyor.
+
+298
+01:37:39,292 --> 01:37:41,592
+Resmen sanitization, kelime anlamı olarak temizlik.
+
+299
+01:37:41,592 --> 01:37:42,132
+Temizlik.
+
+300
+01:37:42,676 --> 01:38:02,796
+Başka bir şey değil. Gelen input doğru mudur? Gelen input kirli midir, pis midir, düzgün müdür, temiz midir? Burada programın ihtiyacı haricinde bir takım şeyler içeriyor mudur? Bunun kontrolü yapılmıyor. Oldu gibi kullanılıyor. Çünkü neden? Settereket, argv1 yapılmış.
+
+301
+01:38:02,796 --> 01:38:19,976
+Sıkıntı bu. Şimdi bunu, bu shell injection, shell'in özelliğinden yararlanarak bu injection'ı gerçekleştirdik. Şimdi bunu SQL'e transfer edeceğiz. SQL'de kullanacağız.
+
+302
+01:38:23,636 --> 01:38:45,136
+Bakın basit bir form oluşturulmuş. Formda işte login alanı var, password alanı var. SQL'de çok basit. Select ID from users, where username eşittir $login and password eşittir $password. Sonra result set elde ediliyor.
+
+303
+01:38:45,136 --> 01:38:59,396
+db, execute, qr, sqr. Result set count sıfırdan büyükse, yani böyle bir kullanıcı, böyle bir satır döndürüldüyse, çünkü hem username, login eşit olacak, hem de password, password eşit olacak.
+
+304
+01:38:59,856 --> 01:39:04,936
+İşte basit bir şekilde otantikasyon sqr üzerinden sağlanmış oldu.
+
+305
+01:39:04,936 --> 01:39:22,196
+rs count sıfırdan büyükse, success. Çok tipik, neredeyse hani böyle binlerce, on binlerce web uygulamasında karşılaşabileceğiniz, ancak SQL injection açısından felaket kötü bir senaryo.
+
+306
+01:39:23,416 --> 01:39:27,936
+Şimdi düzgün girildiğinde, işte kullanıcı zakirmiş, password 123'müş.
+
+307
+01:39:27,936 --> 01:39:38,856
+Düzgün girildiğinde hiçbir sorun yok. Niçin? UID yerine zakir gelecek, PVD yerine 123 gelecek ve başarıyla sonuçlanacak.
+
+308
+01:39:39,776 --> 01:39:49,596
+Ancak, bakın ne oldu? 123 verilmedi, 123 tırnak, tek tırnak verildi. SQL error.
+
+309
+01:39:49,596 --> 01:40:04,496
+Çünkü neden? Siz password'ü de, user ID'yi de tek tırnak içerisine alıyorsunuz. SQL öyle bir sintaksı beklediği için, yani gelen input'u temizlemediğiniz için, SQL error oldu.
+
+310
+01:40:05,356 --> 01:40:10,356
+Ve çalıştırılmadı. Kenardan döndünüz ama kötü niyetli.
+
+311
+01:40:10,356 --> 01:40:12,056
+Bakın, bakın ne yaptı?
+
+312
+01:40:13,256 --> 01:40:20,396
+UID kısımda, zakir, tek tırnak, tire tire.
+
+313
+01:40:22,156 --> 01:40:33,516
+SQL'de iki tane eksi işareti yan yana geldiyse, ondan sonrasını değerlendirilmez bir açıklama satırı gibi, bir comment line gibi değerlendirilir.
+
+314
+01:40:34,036 --> 01:40:35,716
+İşte buyurun, query nerede bitti?
+
+315
+01:40:36,396 --> 01:40:37,316
+Zakir'de bitti.
+
+316
+01:40:37,316 --> 01:40:40,436
+Zakir kullanıcısının olduğunu biliyorum.
+
+317
+01:40:41,456 --> 01:40:43,016
+UID olduğunu biliyorum.
+
+318
+01:40:44,876 --> 01:40:47,276
+Öyle bir kullanıcı olduğunu ama şifresini bilmiyorum.
+
+319
+01:40:47,716 --> 01:40:50,176
+Bu kullanıcıyla şifresini bilmeden içeri girdim.
+
+320
+01:40:50,276 --> 01:40:52,496
+Çünkü neden? Tire tire end PVD.
+
+321
+01:40:53,096 --> 01:40:54,716
+End PVD hikaye oldu.
+
+322
+01:40:54,896 --> 01:40:58,296
+Orası artık bir comment, açıklama haline dönüştü.
+
+323
+01:40:58,716 --> 01:41:01,236
+Hata oluşmadı ve başarıyla girildi.
+
+324
+01:41:01,836 --> 01:41:04,096
+Şimdi sistemde hiçbir kullanıcıyı bilmiyorum.
+
+325
+01:41:04,296 --> 01:41:04,796
+Ne yapacağım?
+
+326
+01:41:04,796 --> 01:41:08,236
+Çok basit. Bakın kullanıcı olarak ne verdim?
+
+327
+01:41:08,756 --> 01:41:10,316
+Tek tırnak verdim.
+
+328
+01:41:10,476 --> 01:41:12,456
+Or, bir eşittir bir.
+
+329
+01:41:14,076 --> 01:41:17,196
+SQL'de C'deki gibi değil.
+
+330
+01:41:17,536 --> 01:41:20,356
+Hani eşitlik kontrolü de normal eşitlikle yapılıyor.
+
+331
+01:41:20,496 --> 01:41:21,596
+Bir bile eşit midir?
+
+332
+01:41:21,716 --> 01:41:21,936
+Evet.
+
+333
+01:41:22,536 --> 01:41:24,336
+Or bir ne anlama geliyor?
+
+334
+01:41:24,936 --> 01:41:26,676
+Bir öncekiyle bunu orlayacaksın.
+
+335
+01:41:26,876 --> 01:41:28,115
+Bir eşittir bir true.
+
+336
+01:41:28,115 --> 01:41:33,736
+Öyleyse şart ne olursa UID boşluk veya bir eşittir bir.
+
+337
+01:41:34,416 --> 01:41:35,936
+Geri kalanı da comment.
+
+338
+01:41:36,476 --> 01:41:37,856
+O zaman ne oldu arkadaşlar?
+
+339
+01:41:39,416 --> 01:41:41,136
+UID boşluk mu?
+
+340
+01:41:41,456 --> 01:41:41,776
+Hayır.
+
+341
+01:41:42,136 --> 01:41:42,836
+Boşluk değil.
+
+342
+01:41:43,016 --> 01:41:44,896
+Yani boşluklu bir UID yok.
+
+343
+01:41:45,736 --> 01:41:47,376
+Database'de öyle bir şey konumlu.
+
+344
+01:41:47,376 --> 01:41:50,036
+Ancak bir bile eşit mi?
+
+345
+01:41:50,336 --> 01:41:50,536
+Evet.
+
+346
+01:41:50,696 --> 01:41:51,596
+Bir bile eşit.
+
+347
+01:41:52,136 --> 01:41:59,396
+Bunun sonuyunda da kullanıcı adı bile vermeden, bırakın şıkkıyı hiçbir şey vermeden içeriye girdik.
+
+348
+01:41:59,396 --> 01:42:01,796
+Şimdi...
+
+349
+01:42:01,908 --> 01:42:31,608
+Burada daha felaket bir örnek var. Ne yapıyor? Tek tırnak kullanıyor noktalı virgül. SQL'de de birden fazla SQL Statement'ını birbirlerinden noktalı virgül ile ayırıp tek bir satırda çalıştırabiliyorsunuz. Yani bir komut bitti öbürü başladı şeklinde. Ne oldu? UID bitti. Sonra Drop Table. Users tıre tıre geri kalanı da attı.
+
+350
+01:42:31,608 --> 01:42:51,928
+End kısmına da EndPVD eşittir kısmında attı. Şimdi kullanıcılar muhtemelen ya User'dadır ya Users'dadır. Hele eriştiğiniz uygulamayı biliyorsanız, o uygulamada open source'a, tablo yapısı da açıksa, buyurun rastgele tablo drop edebilirsiniz.
+
+351
+01:42:51,928 --> 01:43:01,148
+Web üzerinden kullanıcının login olacağı ekran aracılığıyla, form aracılığıyla ne gerçekleşti arkadaşlar?
+
+352
+01:43:02,988 --> 01:43:06,307
+Database'deki bir tablonun silinmesi gerçekleşti.
+
+353
+01:43:06,307 --> 01:43:19,968
+Daha da öteye gidelim. MS SQL, Microsoft'un SQL Server'ı SQL içerisinden komut satırında komut çalıştırılmasını destekliyor.
+
+354
+01:43:19,968 --> 01:43:26,307
+Bunların sonucunu da bir tablo yapısında geri döndürüyor.
+
+355
+01:43:26,908 --> 01:43:30,148
+Ne diyor? Any output is returned as rows of text.
+
+356
+01:43:30,347 --> 01:43:37,048
+Satır satır böyle bir dinamik tablo açıyor. O tablonun içerisine de sonucu koyuyor.
+
+357
+01:43:37,048 --> 01:43:40,968
+İşte bakın, tek tırnak, noktalı bir gün.
+
+358
+01:43:41,968 --> 01:43:46,428
+XP, cmd, shell, net user, add, user, pvd.
+
+359
+01:43:48,048 --> 01:44:04,028
+Aşağıda örneği verilmiş, net komutu Microsoft'a kullanıcı eklemek için, network administrator, net komutu kullanıcı eklemek, şifre değiştirmek, diğer işlemleri yapmak için kullanılan bir şey.
+
+360
+01:44:04,028 --> 01:44:09,368
+USR isimli bir kullanıcıyı ekliyor.
+
+361
+01:44:10,168 --> 01:44:13,347
+Password'ün de pvd, işte boşluk orada var aslında.
+
+362
+01:44:13,468 --> 01:44:15,108
+1, 2, 3, geri kalan da tire tire.
+
+363
+01:44:15,788 --> 01:44:22,488
+Adı USR, şifresi 123 olan bir lokal sistem account'unu sisteme ekledi.
+
+364
+01:44:23,168 --> 01:44:28,628
+Hata oluşmadı ama artık sizin o sistemde lokal bir kullanıcınız var.
+
+365
+01:44:28,768 --> 01:44:31,948
+Hem de sistem kullanıcınız var.
+
+366
+01:44:31,948 --> 01:44:39,887
+Çünkü niye? SQL Server Windows sistemlerde lokal sistem olarak çalışıyor.
+
+367
+01:44:41,028 --> 01:44:43,948
+Yani bu komutta onun yetkileriyle gerçekleşecek.
+
+368
+01:44:45,008 --> 01:44:53,408
+O zaman demektir ki açılacak olan kullanıcı da lokal sistem yetkisinde olacak.
+
+369
+01:44:53,408 --> 01:45:01,428
+SQL injection çok kötü bir şey, çok can sıkıcı bir şey gördüğünüz üzere.
+
+370
+01:45:03,807 --> 01:45:06,408
+Peki SQL injection'ı nasıl engelleyebiliriz?
+
+371
+01:45:08,068 --> 01:45:13,408
+SQL injection'ı engellemenin en temel yolu kullanıcı listesi.
+
+372
+01:45:13,408 --> 01:45:37,868
+Üstelik
+
+373
+01:45:17,684 --> 01:45:34,284
+Ve SQL QR'lerini uygulama içerisinden dinamik olarak böyle az önceki örnekte olduğu gibi oluşturmamak. Bunun için Prepared SQL yapısı kullanılabilir.
+
+374
+01:45:34,284 --> 01:45:51,384
+SQL önceden belirleniyor. Hazır duruyor. Ona sadece parametre aktarılıyor. O zaman sistem gelen parametrelerin zaten kontrolünü yapıyor. Doğru mu değil mi diye. Fazlalık var mı diye.
+
+375
+01:45:51,384 --> 01:46:07,844
+Ya da Object Relational Mapper'dan ORM'den yararlanılacak. Yani biliyorsunuz objektlerle database tablolarına denk düşürüyoruz. Buna göre get ve set operasyonlarıyla tablodan QL'i update gerçekleştirebiliyoruz.
+
+376
+01:46:08,364 --> 01:46:17,663
+Aslında ORM'de kendi içerisinde Prepared SQL kullanıyor. Bir fark yok. Bu iki yöntemden birini kullanmamız lazım.
+
+377
+01:46:17,663 --> 01:46:27,404
+Bakın burada Prepared SQL var. Insert into Users. Name, email. Values. Soru işareti. Soru işareti.
+
+378
+01:46:27,904 --> 01:46:33,064
+Veya Select Yıldız from Users. Val'de email. Soru işareti.
+
+379
+01:46:34,224 --> 01:46:42,364
+Burada soru işareti dediğimiz yerlere parametreler aktarılacak.
+
+380
+01:46:42,364 --> 01:46:52,364
+İşte birinde Dan Bonney aktarılıyormuş, Debo Ed Stanford Edu aktarılıyormuş, öbüründe Zakir D. Stanford Edu aktarılıyormuş.
+
+381
+01:46:53,503 --> 01:47:07,604
+Böylece kullanıcıdan gelen ve güvenmeyeceğimiz verinin temizlenmesi ve onaylanması işlemi bu işi yapmakla yükümlü olan noktada gerçekleşecek.
+
+382
+01:47:07,604 --> 01:47:20,324
+Güzelliği bu. Böylece o tire tireler olsun, tek tırnaklar olsun, bir eşittir birler ve benzeri şeyler bunların hepsi uçup gidecek.
+
+383
+01:47:20,944 --> 01:47:31,664
+İkincisi, Parameterized veyahut da işte Prepared SQL'ler sürekli çalıştırılacağı için bunun Query Plan deniyor.
+
+384
+01:47:31,663 --> 01:47:41,703
+SQL Server'ın bir Query'i analiz edip ona göre adımlara bölmesi ve bunları mümkünse esnamalı çalıştıracak şekilde bir plan oluşturması gerekiyor.
+
+385
+01:47:42,144 --> 01:47:49,663
+Bu zaten cache'lenmiş olduğu için, sürekli çalıştırılacağında cache'lenmiş olduğu için çok daha hızlı bir şekilde çalışacak.
+
+386
+01:47:50,784 --> 01:47:52,884
+ORM'de bakın User Class'ı var.
+
+387
+01:47:53,003 --> 01:47:55,203
+DbObject, ID, Name, Email.
+
+388
+01:47:55,204 --> 01:48:00,344
+Gördüğünüz gibi burada neyi alıyor?
+
+389
+01:48:03,543 --> 01:48:09,404
+Bu klas üzerinden user.query, işte email eşittir, şey yapıyor.
+
+390
+01:48:09,543 --> 01:48:18,264
+Böylece bunu şu user, bu database klası üzerinden gerçekleştirmiş oluyor.
+
+391
+01:48:18,264 --> 01:48:27,604
+Native Object'lerle Relational Database'deki tablolar arasındaki bağlantı neymiş?
+
+392
+01:48:27,724 --> 01:48:30,724
+İşte dbObject, ID bir kalınmış, integer'mış.
+
+393
+01:48:31,284 --> 01:48:34,264
+Öbürü string 255'miş, öbürü de string 255'miş.
+
+394
+01:48:35,024 --> 01:48:35,384
+Neyse.
+
+395
+01:48:35,963 --> 01:48:41,264
+Buna göre yine arka tarafta ne gerçekleşiyor?
+
+396
+01:48:42,444 --> 01:48:46,364
+Bir temizlik gerçekleşiyor, bir kontrol gerçekleşiyor.
+
+397
+01:48:48,264 --> 01:48:56,104
+Evet, şimdi Cross-Site Scripting'e gelelim arkadaşlar.
+
+398
+01:48:59,444 --> 01:49:02,764
+Bakın ilk gördüğümüz Cross-Site Request Borger'ıydı.
+
+399
+01:49:02,904 --> 01:49:05,364
+Ondan sonraki SQL Injection'dı.
+
+400
+01:49:05,524 --> 01:49:07,444
+Şimdi Cross-Site Scripting.
+
+401
+01:49:07,444 --> 01:49:23,503
+İlkaç
+
+402
+01:49:18,387 --> 01:49:31,967
+Şimdi bir web application var. Bu güvenilmeyen bir veriyi, yani kontrol etmeden bir veriyi alıyor ve ondan sonra browser'a geri gönderiyor diye düşünüyorum.
+
+403
+01:49:31,967 --> 01:49:38,347
+Yani browser'a gönderiyor. Validasyonu ve simitizasyonu, yani temizliği yapılmadan.
+
+404
+01:49:38,347 --> 01:49:48,867
+Command veya SQL Injection'da attackers malicious code is executed on application server. Unutmayın bu nerede çalışıyor application server'da.
+
+405
+01:49:48,867 --> 01:50:01,028
+Cross-site scripting'de attackers malicious code is executed on victims browser. Yani bu browser'da çalışıyor. Cross-site scripting'de kod browser'da çalışıyor. Bunu unutmayalım lütfen.
+
+406
+01:50:01,028 --> 01:50:20,327
+Tamam mı? Şimdi Google'ın search'u, işte QR eşittir, search term değil mi? Burada da en basit haliyle işte PHP, echo, get de geri döndürüyor bana. Results for ne search ettiysem o çıkacak değil mi?
+
+407
+01:50:20,327 --> 01:50:30,327
+Şimdi QR olarak Apple kullandım. Browser'a send edilen şey çok normal, basit bir şey. Results for Apple.
+
+408
+01:50:31,028 --> 01:50:45,188
+Ama dikkat edin bakın, yukarıdaki HTML'ler de browser'da. Input browser'da dolduruluyor. Bu nereye gidiyor? Server'a gidiyor. Server'da bunun sonucunda bana sonuç döndürüyor.
+
+409
+01:50:45,667 --> 01:50:50,587
+Döndürürken de results for Apple diye. Yani şu dinamik yapı artık neye dönüşmüş durumda?
+
+410
+01:50:52,247 --> 01:50:54,047
+Statik olarak Apple içeriğine.
+
+411
+01:50:54,047 --> 01:51:07,507
+Peki, şimdi buraya script koyduk, alert hello. Ne olacak? Ekranda bir hello diye window açılacak. Alert window açılacak ve hello yazacak.
+
+412
+01:51:07,507 --> 01:51:31,427
+Yani demek ki ben arama alanına bunu yazarsam, bir script yazarsam, bu script de dinamik olarak parse edileceği için browser tarafına bu böyle geleceğinden dolayı, bu şekilde geleceğinden dolayı, browserda bunu parse edeceği için, yani burada gördüğü gibi script alert falan demeyecek, gidecek, alertı çalıştıracak. İçinde de hello yazacak oyunda orada.
+
+413
+01:52:01,427 --> 01:52:14,887
+Bu da çok net bir şekilde cookie hırsızlığı. Şimdi XSS, cross-site scripting'in iki türü var. Biri reflected olanı, biri stored olanı.
+
+414
+01:52:14,887 --> 01:52:34,887
+An XSS vulnerability is present when an attacker can inject scripting code into pages generated by a web application. Yani bir web application tarafından oluşturulmuş sayfaların içerisine scripting code inject edebiliyor muyum, edemiyor muyum?
+
+415
+01:52:34,887 --> 01:52:49,007
+Az önce gördüğünüz search alanına koyduk değil mi? Search alanını modifiye ettik. Search alanı böylece bir anda aktif hale geldi. Burada da iki tipi var. Reflected veya stored. Reflected olanı ne diyor?
+
+416
+01:52:49,007 --> 01:52:58,007
+The attack script is reflected back to the user as part of a page from the victim site. Kullanıcıya geri döndürülüyor.
+
+417
+01:52:58,007 --> 01:52:58,648
+Döndürülüyor.
+
+418
+01:52:58,868 --> 01:53:06,347
+Attack Script is Reflected Back. Az önce gördünüz değil mi? Attack Script kullanıcıya geri döndürüldü.
+
+419
+01:53:06,688 --> 01:53:18,788
+Store the attacker stores the malicious code in a resource managed by the web application such as a database. Bir database'e onu yerleştirdi. Oradan dinamik olarak query ile geri çekildi. O şekilde gönderildi.
+
+420
+01:53:18,788 --> 01:53:29,168
+Az önce gördüğümüz örnek Reflected. Çünkü neden? Bir input alanı var. Oraya girilen şey geri dönüyor kullanıcıya. Browser'a tekrar geri dönüyor.
+
+421
+01:53:30,128 --> 01:53:35,748
+Bakın Reflected Example. Bu yaşanmış bir örnek. PayPal için yaşanmış bir örnek.
+
+422
+01:53:36,268 --> 01:53:45,008
+Attackers contacted PayPal users via email and fooled them into accessing a URL hosted on the legitimate PayPal website.
+
+423
+01:53:45,008 --> 01:53:54,347
+kullanıcılara dediler ki, işte sizin şifreleriniz ele geçti, bilmem ne oldu. Güvenlikten dolayı şifrelerinizi değiştirmemiz lazım.
+
+424
+01:53:54,508 --> 01:54:00,048
+Ama gidilen site bu arada gerçekten düzgün bir PayPal sitesi.
+
+425
+01:54:00,628 --> 01:54:08,088
+Injected code redirected PayPal visitors to a page warning users. İşte their account has been compromised. Az önce söylediğim şey.
+
+426
+01:54:08,347 --> 01:54:14,248
+Victims were then redirected to a phishing site and prompted to enter sensitive financial data.
+
+427
+01:54:14,248 --> 01:54:18,228
+Mantık bu. Yani oradaki bir boşluğun yakalanması.
+
+428
+01:54:18,347 --> 01:54:24,608
+Stort'ta ise, the attackers stores the malicious code into a resource managed by the web application such as database.
+
+429
+01:54:24,748 --> 01:54:28,988
+Database'den çekilirken o şekilde geliyor.
+
+430
+01:54:29,388 --> 01:54:34,928
+İşte burada ne? PHP Bluton Board. PHP temelli Bluton Board yapısı.
+
+431
+01:54:34,928 --> 01:54:42,988
+Onun database'ine daldıysa, bu sayfa oluşturulurken otomatik olarak ne oluyor?
+
+432
+01:54:44,248 --> 01:54:46,688
+O kötü niyetli kod parçası da gelmiş oluyor.
+
+433
+01:54:46,688 --> 01:54:50,068
+XSS'de, cross-site scripting'de gelmiş oluyor.
+
+434
+01:54:50,668 --> 01:54:55,508
+Semi-warm çok yaygındır, çok bilindik bir şey. MySpace'de.
+
+435
+01:54:56,468 --> 01:55:00,448
+It would display the string, but most of all, semi is my hero.
+
+436
+01:55:00,448 --> 01:55:05,128
+On a victim's MySpace profile page as well as send semi a friend request.
+
+437
+01:55:06,228 --> 01:55:13,828
+Yani bunun ne kadar etkili olabileceğini, ne kadar hızlı bir şekilde yayılabileceğini göstermek.
+
+438
+01:55:13,828 --> 01:55:18,908
+Yeni saat içerisinde bir milyon kullanıcıya yayılmış.
+
+439
+01:55:19,868 --> 01:55:25,788
+Düşünün yani daha bir gün bile değil, bir milyon kullanıcıya yayılmış bir script.
+
+440
+01:55:26,488 --> 01:55:31,488
+Bu da bir worm. Oradan oraya atlayıp gittiği için hani başlangıçta bir internet worm vardı ya.
+
+441
+01:55:31,488 --> 01:55:43,388
+Çünkü niye? Kullanıcıların postlarında script, body, onclick, href de javascript bütün bunların hepsini filtrelemişler.
+
+442
+01:55:43,847 --> 01:55:45,008
+Ama niye atlamışlar?
+
+443
+01:55:45,428 --> 01:55:52,468
+Div style'da, background'da hani parçaları, division'lar oluşturuyorsunuz.
+
+444
+01:55:52,528 --> 01:55:55,208
+Onların style'ı renk olarak, görüntü olarak falan görüyorsunuz.
+
+445
+01:55:55,208 --> 01:55:58,788
+Background'ında bakın, bunu filtrelemeyi atlamışlar.
+
+446
+01:55:59,347 --> 01:56:02,728
+Oranın içerisine javascript yerleştirebiliyorsunuz.
+
+447
+01:56:03,748 --> 01:56:07,068
+Sonradan tabii ki bunu düzeltiyorlar ama çok geç.
+
+448
+01:56:07,608 --> 01:56:08,908
+Bu da bize neyi gösteriyor?
+
+449
+01:56:10,948 --> 01:56:16,268
+Kötü niyetli tagleri filtrelememiz lazım ama filtrelemeyi yapmak çok zor.
+
+450
+01:56:16,268 --> 01:56:26,148
+Bütün olabilecek kötü niyetli içeriği, bu şekilde tagleri, scriptleri ne yapmamız gerekiyor?
+
+451
+01:56:26,628 --> 01:56:28,948
+Teker teker kontrol edip temizlememiz gerekiyor.
+
+452
+01:56:29,048 --> 01:56:35,868
+Header'lar, cookie'ler, query string'ler, form alanları, gizli alanlar, aklınıza gelebilecek her türlü şey.
+
+453
+01:56:39,604 --> 01:56:56,764
+Şimdi bakın, Google'ın cross-site scripting filtrini bile atlatabilmenin yolu var. Bu da gerçekleşmiş. Image'da source olarak adam burada görüyorsunuz, kodluya kodluya yazmış.
+
+454
+01:56:56,764 --> 01:57:13,104
+Yani orada aslında görüntü varmış gibi düşünülüyor. İmajin kendisiymiş gibi düşünülüyor. Ama o bir script. Şeye geldiği zaman, browser'a geldiği zaman, browser onu açtığında onun bir script olduğunu fark ediyor ve onu çalıştırıyor.
+
+455
+01:57:15,604 --> 01:57:25,024
+Yani aslında yaptığı şey şu bakın, javascript alert document.cookie aşağıda bunun kodlanmış anı görüyorsunuz.
+
+456
+01:57:25,024 --> 01:57:32,624
+Çılgınca bir durum. Yani bütün şeyleri filtrelemek çok zor.
+
+457
+01:57:34,884 --> 01:57:47,864
+İşte 105 tane falan en azından filtrelenmesi için dikkat edilmesi gereken sadece 10 event handler'lar, yani 10 submit, 10 error, 10 sync restore, sadece bunlar 105 tane.
+
+458
+01:57:47,864 --> 01:57:57,164
+Ki başka noktalar da söz konusu. Bunları her birini teker teker ne yapmanız lazım? Kontrol etmeniz lazım.
+
+459
+01:57:59,864 --> 01:58:09,304
+İçeriği de bozan filtreler olabiliyor. İşte script'i filtrele dediğin zaman içerik başka hale dönüşebiliyor.
+
+460
+01:58:09,304 --> 01:58:11,304
+İkbankansız ooh..
+
+461
+01:58:11,384 --> 01:58:12,384
+İkbankansız?..
+
+462
+01:58:12,384 --> 01:58:13,824
+İkankansız...
+
+463
+01:58:14,204 --> 01:58:18,784
+İkbankansız..
+
+464
+01:58:21,304 --> 01:58:24,244
+İkbankansız...
+
+465
+01:58:28,304 --> 01:58:30,543
+İkbankansız access..
+
+466
+01:58:32,503 --> 01:58:33,503
+İkbankansız artık тел餐antsız Rising İng阻ocka..
+
+467
+01:58:33,784 --> 01:58:35,704
+İkbankız..
+
+468
+01:58:36,124 --> 01:58:37,304
+İkbankansız..
+
+469
+01:58:15,667 --> 01:58:30,807
+Web Framework'leri şu anda bu filtreleme işlemini düzgün bir şekilde yapmaya çalışıyorlar. İşte nedir mesela? WordPress. Bunlardan bir tanesi. Zaman zaman onlarda da açık çıkıyor.
+
+470
+01:58:30,807 --> 01:58:46,247
+Yani nasıl olsa ben WordPress kullanıyorum. Onlar bu işi çözmüşlerdir. Tamam demenin bir anlamı yok. Yüzde yüz güvenmemek gerekiyor.
+
+471
+01:58:46,247 --> 01:59:06,607
+Ama kendi filtrelememi kendim yapacağım da çok tehlikeli bir şey. Çünkü az önce örneği gösterdiniz. Yani bütün keisleri dinmediğiniz sürece, her türlü durumu göz önünde bulundurmadığınız sürece çok kolay bir şekilde başınız ağrıyabilir, canınız yanabilir.
+
+472
+01:59:06,607 --> 01:59:15,607
+Siz filtre yaptığınızı düşünürken aslında çok büyük bir açıkla karşı karşıyasınızdır. Bakın 26 Mart 2019 yani bir buçuk sene öncesi.
+
+473
+01:59:23,347 --> 01:59:37,528
+Deyaz listeler, white listeler, kara listelerden, yasaklayıcı listelerden her zaman için daha iyi. Bu ne anlama geliyor? Her şeyi yasaklayın. Nelere izin verilmesi gerekiyorsa onlara izin verin diyor.
+
+474
+01:59:37,528 --> 01:59:58,127
+Content Security Polisi, CSP, Content Security Polisi ne yapıyor? Scriptlerin veya diğer resursların hangi kaynaklardan yüklenebileceği konusunda bir liste oluşturuyor.
+
+475
+01:59:58,127 --> 02:00:10,108
+Bunun sonucunda da browserlar, scriptleri sadece ve sadece izin verilmiş olan kaynaklardan, sitelerden kullanıyorlar.
+
+476
+02:00:10,387 --> 02:00:13,847
+Diğerlerini yokmuş varsıyorlar ve tek.
+
+477
+02:00:16,707 --> 02:00:22,688
+Bakın diyor ki, Default Source Self, Content Security Polisi, Default Source Self.
+
+478
+02:00:23,127 --> 02:00:26,007
+Content can only be loaded from the same domain as the page.
+
+479
+02:00:26,007 --> 02:00:33,007
+Page sayfa nereden geldiyse, diğer şeyler de ancak oradan yüklenebilir.
+
+480
+02:00:33,908 --> 02:00:40,047
+Inline scriptler çalıştırılmayacak. Inline style'lar çalıştırılmayacak.
+
+481
+02:00:40,408 --> 02:00:47,068
+Yani içine gömülü script varsa çalışmayacak ama bu domeynden include edilmiş olan scriptler çalışacak belki.
+
+482
+02:00:48,327 --> 02:00:51,167
+Content Security Polisi, Default Source Self.
+
+483
+02:00:51,608 --> 02:00:53,368
+Image Source herhangi bir yer.
+
+484
+02:00:53,368 --> 02:00:56,787
+Script Source, CDN, JQuery, Com.
+
+485
+02:00:59,327 --> 02:01:02,568
+İmajlar herhangi bir yerden yüklenebilir.
+
+486
+02:01:05,068 --> 02:01:12,007
+Scriptler sadece CDN, JQuery, Com'dan yüklenebilir.
+
+487
+02:01:12,268 --> 02:01:14,148
+Inline scriptler çalıştırılamaz.
+
+488
+02:01:14,268 --> 02:01:16,528
+Inline style'lar çalıştırılamaz.
+
+489
+02:01:16,528 --> 02:01:22,167
+Ve Content'de sadece bu sayfayı yükleyen domeynden gelebilir.
+
+490
+02:01:22,167 --> 02:01:25,927
+Evet, bir konumuz daha var.
+
+491
+02:01:26,167 --> 02:01:28,207
+Sub Resource Integrity.
+
+492
+02:01:28,988 --> 02:01:35,007
+Bunu da gözden geçirdiğimiz zaman aslında bugünkü dersimiz bitmiş olacak.
+
+493
+02:01:35,728 --> 02:01:37,507
+Sub Resource Integrity.
+
+494
+02:01:37,507 --> 02:01:43,688
+Şimdi siz dediniz, code JQuery, Com.
+
+495
+02:01:44,028 --> 02:01:49,528
+Ben buna CSP üzerinden, Content Security Polisi üzerinden onay verdim.
+
+496
+02:01:49,927 --> 02:01:52,047
+Peki burası ele geçirilirse ne olacak?
+
+497
+02:01:53,307 --> 02:02:01,188
+Burası ele geçirildi ve sizin site, buranın da güvenli olduğunu düşündüğü için buradan content yüklenmesine izin veriyor.
+
+498
+02:02:01,188 --> 02:02:04,287
+Ancak ortalık karıştı.
+
+499
+02:02:04,568 --> 02:02:05,627
+Mahşer yerine döndü.
+
+500
+02:02:05,707 --> 02:02:06,188
+Çünkü neden?
+
+501
+02:02:06,327 --> 02:02:10,568
+CDN, JQuery, Com ele geçmişti.
+
+502
+02:02:12,427 --> 02:02:15,787
+Bu yaşanmış olan bir olay.
+
+503
+02:02:15,908 --> 02:02:19,188
+Bootstrap CDN, Com ele geçiriliyor.
+
+504
+02:02:20,448 --> 02:02:23,488
+Bootstrap JavaScript modifiye ediliyor.
+
+505
+02:02:23,488 --> 02:02:31,368
+Ve Bootstrap'i kullanan bütün uygulamalar bundan anında etkileniyorlar.
+
+506
+02:02:31,827 --> 02:02:32,188
+Nedir?
+
+507
+02:02:33,127 --> 02:02:36,887
+İşten çıkartılan bir mühendisin account'u disable edilmiyor.
+
+508
+02:02:37,747 --> 02:02:47,967
+Bu account üzerinden saldırganlar Bootstrap CDN'e erişiyorlar ve Bootstrap JavaScript'te değişiklik yapıyorlar.
+
+509
+02:02:48,847 --> 02:02:50,028
+Olay bunun üzerine kuruluyor.
+
+510
+02:02:50,028 --> 02:02:55,787
+Peki SRI yani subresource integrity neyi sağlıyor arkadaşlar?
+
+511
+02:02:57,387 --> 02:02:57,768
+Gelen
+
+512
+02:02:57,768 --> 02:03:01,807
+Source'un işte burada
+
+513
+02:03:01,807 --> 02:03:06,368
+HTTPS, Code, JQuery, Com, JQuery, 340, Min, JS
+
+514
+02:03:06,368 --> 02:03:07,408
+Bunun
+
+515
+02:03:07,408 --> 02:03:12,307
+Secure Hash Values'unu da
+
+516
+02:03:12,307 --> 02:03:14,747
+Check ediyoruz.
+
+517
+02:03:15,148 --> 02:03:16,167
+Diyoruz ki bunun
+
+518
+02:03:16,167 --> 02:03:18,967
+SHA-256 değeri budur.
+
+519
+02:03:18,967 --> 02:03:20,627
+Oradan dönem
+
+520
+02:03:20,627 --> 02:03:20,847
+.
+
+521
+02:03:22,484 --> 02:03:40,344
+İçeriğin ŞA256'sı hesaplanıyor. İkisi eşit mi diye. Tabi bunu kim yapıyor? Browser'ın kendisi yapıyor. İkisi birbirine eşit mi diye bakılıyor. Eğer eşitse sorun yok. Eşit değilse çalıştırılır. Sub Resource Integrity de bu.
+
+522
+02:03:40,344 --> 02:03:46,344
+Evet, bugünkü sunumumuz burada bitti arkadaşlar.
+
+523
+02:03:48,844 --> 02:03:52,344
+Saldırıların nasıl yapıldığını...
+
+524
+02:03:56,435 --> 02:04:16,015
+Gözden geçirdik. İşte nelere baktık? Başta zaten ne var? Cross Origin Resource Sharing var. Bunun HTTP tarafı, oradaki istekler tarafı, cookie'ler tarafı bunları gözden geçirmiştik geçen hafta ayrıntılı bir şekilde. Bugün üzerinden hızlıca geçtik.
+
+525
+02:04:16,015 --> 02:04:34,715
+Sonrasında Cross Site Request Forgery saldırısına baktık. SQL Injection saldırısına baktık. Cross Site Scripting saldırısına baktık. Bunlara alınabilecek tedbirleri gözden geçirdik. Değil mi? Referrer alanını gözden geçirdik.
+
+526
+02:04:34,715 --> 02:04:46,115
+Ondan sonra Cross Site Request Forgery'yi engellemek adına yine Secret Validation Token'ı gözden geçirdik.
+
+527
+02:04:46,695 --> 02:05:04,115
+Same Site Cookie'lerini gözden geçirdik. Sonra bu Preflight Check'i force ederek, Custom Header kullanarak yine Cross Site Request Forgery'nin nasıl engellenebileceğini gözden geçirdik.
+
+528
+02:05:04,115 --> 02:05:14,335
+Aslında orada bayağı bir 4 tane yöntem gördük. SQL Injection'da yine hatırlarsanız sadece sisteme login olma olayı,
+
+529
+02:05:16,076 --> 02:05:22,536
+draw tarzı veya command execute etme tarzı sıkıntılı noktaları gözden geçirdik.
+
+530
+02:05:22,956 --> 02:05:28,335
+En sonunda Cross Site Scripting'e baktık. Onun da iki türlüsü olduğunu gördük.
+
+531
+02:05:28,335 --> 02:05:46,435
+İşte Reflected olanı var, Stored olanı var ve onunla beraber bir filtreleme yapılması gerektiğini yani Cross Site Scripting'in engellenmesinin yönün önündeki en temel şey,
+
+532
+02:05:46,435 --> 02:05:52,055
+yöntem bunu sağlayacak, en temel yöntem engellenmesini sağlayacak şey filtreleme.
+
+533
+02:05:52,155 --> 02:05:55,235
+Ama bu filtrelemeyi kendimiz yapmamalıyız.
+
+534
+02:05:55,935 --> 02:05:58,915
+Yapanlarinkine de gözü kapalı güvenmemeliyiz.
+
+535
+02:05:58,915 --> 02:06:07,135
+Hatalı olabilir diye veyahut da eksik açık olabilir diye onları da zaman zaman kontrol etmemiz gerekiyor.
+
+536
+02:06:07,735 --> 02:06:14,735
+En sonunda Content Security Policy'e göz attık ve Sub Resource Integrity ile de dersi bitirdik.
+
+537
+02:06:14,735 --> 02:06:18,076
+Tamam mıdır arkadaşlar? Var mı sorunuz?
+
+538
+02:06:25,300 --> 02:06:32,279
+O zaman bugünkü dersi bitiriyorum. Hepinize çok teşekkürler. İyi günler. Haftaya görüşmek üzere.
+
+539
+02:06:32,880 --> 02:06:33,760
+İyi günler hocam.
+
+540
+02:06:34,180 --> 02:06:35,560
+İyi günler. Sağ olun arkadaşlar.

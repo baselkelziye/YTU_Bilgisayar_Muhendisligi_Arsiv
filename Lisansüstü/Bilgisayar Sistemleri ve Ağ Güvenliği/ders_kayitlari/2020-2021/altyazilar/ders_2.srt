@@ -1,0 +1,2619 @@
+1
+00:00:58,579 --> 00:01:00,039
+Sesim geliyor mu arkadaşlar?
+
+2
+00:01:18,388 --> 00:01:19,428
+Beni duyuyor musunuz?
+
+3
+00:01:22,963 --> 00:01:24,623
+Evet, duyuyoruz hocam.
+
+4
+00:01:24,623 --> 00:01:46,343
+Tamam, süper. Kaç kişi oldunuz bakayım. 1, 2, 3, 4, 5, 6, 7, 8, 9 kişi oldunuz. 1-2 dakika daha bekleyelim isterseniz. 10 geçiye kadar. Sınıfta başkaları da vardı çünkü.
+
+5
+00:03:13,587 --> 00:03:28,467
+Evet, 11 kişi olduk. Benle beraber 12. Bu haftaki dersimize başlayabiliriz. Şimdi ekranımı paylaşacağım. Slideleri size göstereceğim. Onun üzerinden ilerleyeceğiz.
+
+6
+00:03:48,020 --> 00:03:49,960
+Ekran size de geldi mi arkadaşlar?
+
+7
+00:03:54,228 --> 00:03:55,207
+Evet, geldi.
+
+8
+00:03:55,207 --> 00:04:16,468
+Tamam, süper. Şimdi, bugünkü konumuz temel olarak karşı taraftaki bilgisayar sisteminin kontrolünü nasıl ele geçirebiliyor. Buna ne diyoruz? Control hijacking attack diyoruz. Kontrolün ele geçirilme saldırısı.
+
+9
+00:04:16,468 --> 00:04:33,807
+Ama adından da anlayacağınız üzere başındaki basic kelimesinden bunlar temel saldırılar. Bu işin yapılmaya başladığı günden beri aslında hep aynı metodoloji üzerinden gidiliyor, hep aynı temel üzerinden gidiliyor.
+
+10
+00:04:33,807 --> 00:04:42,867
+İşte o temel üzerinden gidiliyorsa eğer, bu tarz saldırılar zaten o sınıfı gösteriyor, o kategoriyi gösteriyor, o zaman basic diyoruz.
+
+11
+00:04:42,867 --> 00:04:54,968
+Ancak günümüzde bu temelden çıkıp daha gelişmiş, daha karmaşık şekilde yine aynı sonucu veren saldırılar da yapılmakta.
+
+12
+00:04:56,148 --> 00:04:58,048
+Adım adım ilerleyeceğiz.
+
+13
+00:05:00,648 --> 00:05:03,288
+Öncelikle saldırganın hedefi ne?
+
+14
+00:05:04,187 --> 00:05:07,827
+Saldırdığı bilgisayar sisteminin kontrolünü ele geçirmek.
+
+15
+00:05:07,828 --> 00:05:13,348
+Bu bir web server olabilir, bir mail server olabilir, bir DNS server olabilir.
+
+16
+00:05:14,567 --> 00:05:27,008
+Peki kontrolü ele geçirdiği zaman yapacağı şey, kontrolü ele geçirirken eğer karşı taraftaki en yüksek yetkiye sahip kullanıcı olarak bunu başarabildiyse,
+
+17
+00:05:27,487 --> 00:05:36,248
+ki zaten aslında saldırının temelinde de bu var, o zaman ele geçirdiği sistemde istediği herhangi bir kod parçasını çalıştırabilir.
+
+18
+00:05:36,247 --> 00:05:49,947
+Bu durumda da ele geçirilen sistem saldırganın rahatlıkla kullanabildiği, kod çalıştırabildiği, orayı kullanarak başka yerlere saldırabildiği bir duruma dönüşür.
+
+19
+00:05:53,492 --> 00:06:03,512
+Yalnız dikkat edin, bakın şurada maddede ne diyor? Execute by Arbitrary Code on the Target by Hijacking Application Control Flow.
+
+20
+00:06:04,331 --> 00:06:13,831
+Burası hakikaten önemli. Bir uygulamaya saldırmak zorundayız. Bir uygulamadaki açıktan yararlanmak zorundayız.
+
+21
+00:06:14,192 --> 00:06:20,711
+Ama normalde biliyorsunuz ki uygulamalar bir görevi yerine getirmek üzere tasarlanmış ve kodlanmış.
+
+22
+00:06:20,711 --> 00:06:42,012
+Burada o uygulamada birazdan göreceğimiz bir takım zafiyetler var ise o zafiyetleri kullanarak o uygulamanın aslında planlandığı amacın dışında başka bir kod parçasını çalıştırması için kullanacağız.
+
+23
+00:06:42,012 --> 00:06:58,312
+olayın özünde bu var. Yani oraya evet bir kod yüklüyoruz ama bu kod sıfırdan yüklenen gidip de file sistemin bir yerine yerleştirilip ondan sonra adı verilip de çalıştırılan bir kod parçası değil.
+
+24
+00:06:58,312 --> 00:07:07,172
+çalışmakta olan bir programın, bir uygulamanın bu sistem uygulaması olabilir, kullanıcı uygulaması olabilir.
+
+25
+00:07:07,951 --> 00:07:10,732
+Bunun akışını değiştireceğiz.
+
+26
+00:07:11,552 --> 00:07:16,272
+Burası kritik nokta. Bunu lütfen aklınızdan çıkarmayın.
+
+27
+00:07:16,272 --> 00:07:39,752
+Burası
+
+28
+00:07:22,451 --> 00:07:44,312
+Şimdi bunun gerçekleşmesi için, yani kontrolün ele geçirme saldırısının gerçekleşmesi için en temel yaklaşım buffer overflow, arkasından integer overflow, sonrasında format string vulnerability, en sonunda da use after free.
+
+29
+00:07:44,312 --> 00:08:00,331
+Bunların bu sırayla verilmesi hem kronolojik olarak olayın akışını gösteriyor. Zaman içerisinde buffer overflow ile başlayıp işte use after free'ye doğru gitmiş. Hem de işin zorluk derecesini gösteriyor.
+
+30
+00:08:00,331 --> 00:08:23,672
+Buffer overflow saldırısını yapmak, integer overflow'a göre daha kolay. Integer overflow, format string zafiyetinden yararlanmaktan daha kolay. Bu şekilde bir arada hem yukarıdan aşağıya hem de soldan sağa zorluk derecesi açısından artma düşünebilirsiniz.
+
+31
+00:08:23,672 --> 00:08:43,711
+Diğer taraftan, dikkat edin, hem buffer overflow için hem de integer overflow için doğrudan saldırı diyebiliyoruz. Neredeyse bu zafiyet varsa bu zafiyet, yani %100 neredeyse diyeyim, 99.99'da diye düşünebilirsiniz.
+
+32
+00:08:43,711 --> 00:08:57,591
+Bir saldırı ile sonuçlanıyor. Ama format string sonunda ne yazıyor? Zafiyet yazıyor. Yani bize saldırı imkanı da verebilir, saldırıyla da sonuçlanabilir diye düşünün.
+
+33
+00:08:58,231 --> 00:09:07,711
+Veya saldırmakta kullanacağımız hassas bir bilgiyi ele geçirmekte de faydalı olabilir. Bunu dersin akışı içerisinde göreceğiz.
+
+34
+00:09:07,711 --> 00:09:26,211
+Şimdi ilk saldırı buffer overflow ile gerçekleşiyor. C ve C++ programlarına günümüze de dahil olmak üzere o kadar çok bu kapsamda saldırı düzenlenmiş ki.
+
+35
+00:09:26,211 --> 00:09:48,591
+Çünkü belirli kurallara dikkat etmez isek programlama dilinin kendisinden de kaynaklı sıkıntılar var ama esas yüksek seviyede yazdığımız kodun alt seviyeye yani SMN'ye dönüştürülmesi
+
+36
+00:09:48,591 --> 00:10:02,172
+ve bunun çalıştırılmasıyla alakalı kabul edilmiş, tasarlanmış aslında yani karşımıza böyle bir şey vardı da gelip oturulup konulmadı, böyle olacak denilmedi.
+
+37
+00:10:02,292 --> 00:10:17,312
+Sonuçta bu bir tasarım sonucunda ortaya çıktı. Bu tasarımdaki bazı zafiyetlerin bir araya gelmesi sonucunda inanılmaz rahatlıkla bu saldırı gerçekleştirilebilir hale gelmiş.
+
+38
+00:10:17,312 --> 00:10:34,532
+Burada C, C++ yazıyor ama bahsedeceğimiz üzerinden geçeceğimiz konuları kafanızda yani ben anlattıktan sonra canlandırdığınızda aslında bunun herhangi bir başka programlama ortamında da olabileceğini anlayacaksınız.
+
+39
+00:10:34,532 --> 00:10:50,692
+Ancak C, C++'ın en kritik noktası şu anda kullandığımız bütün işletim sistemleri neredeyse istisnasız bir şekilde C, C++ kullanılarak gerçekleştirilmiş temellerinde bu var.
+
+40
+00:10:50,692 --> 00:11:07,772
+Ve bu işletim sistemlerinde uygulamalarımızı çalıştırmak için kullandığımız çalıştırma zamanı kütüphaneleri yani runtime library bunların da neredeyse tamamı C, C++'da kodlanmış durumda.
+
+41
+00:11:07,771 --> 00:11:17,531
+İlk saldırı, ilk bu zafiyetin kullanılıp da saldırıya dönüşmesi 1988 yılında gerçekleşiyor.
+
+42
+00:11:17,652 --> 00:11:20,292
+İnternet worm diye geçiyor.
+
+43
+00:11:21,875 --> 00:11:42,375
+Ve Finger D diye bir servise yapılıyor Unix'te. Unix terminolojisinde eğer bir uygulamanın sonunda D kelimesi varsa bu bunun sürekli çalışan bir servis olduğunu, Demon'dan geliyor.
+
+44
+00:11:42,375 --> 00:12:00,035
+İşte Demon aslında doğaüstü güçleri olan varlıklar falan, iblisler o şekilde bir kelime ama burada onun o şekilde kullanılmasının sebebi siz komut satırından çalıştırıyorsunuz sonrasında o arka tarafta çalışmaya devam ediyor.
+
+45
+00:12:00,535 --> 00:12:08,235
+Normalde biliyorsunuz program çalışır biter. Yani işletim sisteminin içerisinde bu bir servis olarak devam ediyor.
+
+46
+00:12:08,235 --> 00:12:15,415
+Sürekliliği var. İşletim sistemiyle neredeyse açılmasıyla beraber açılıyor. Onunla beraber kapanıyor.
+
+47
+00:12:15,995 --> 00:12:28,596
+Bu da neyi kolaylaştırıyor? O servise herhangi bir anda saldırı yapabilmemizi, yani program o sırada açık mıydı değil miydi diye düşünmemize de gerek kalmıyor.
+
+48
+00:12:28,596 --> 00:12:51,295
+Sonrasında bakın burada grafikte bu saldırının yıllar içerisinde 2015'e kadar verilmiş burada nasıl binli seviyelere kadar yani bir yıl içerisinde binli seviyelere kadar geldiğini görüyorsunuz.
+
+49
+00:12:51,295 --> 00:13:11,716
+Burada yalnız şöyle bir şey kafanızı karıştırmasın yani bin tane saldırı bin farklı yani bin tane farklı uygulamada buffer overflow zafiyeti var ve bu bin tane farklı uygulamaya saldırı yapılıyor.
+
+50
+00:13:11,716 --> 00:13:16,956
+Ama bu bin farklı uygulamanın on binlerce yüz binlerce kopyası çalışabilir.
+
+51
+00:13:17,535 --> 00:13:30,135
+Bu uygulamalar neredeyse kimler tarafından hangi sistemlerde kullanılıyorsa o zaman o sistemlerin tamamı bu zafiyet karşısında etkilenebilir durumda.
+
+52
+00:13:30,535 --> 00:13:33,836
+Saldırılıp kontrolleri ele geçirilebilir durumda.
+
+53
+00:13:33,836 --> 00:13:48,296
+O açıdan bir senede bin farklı uygulamada bu zafiyetin bulunabiliyor olması, ortaya çıkartılabiliyor ve kullanılabilir hale getiriliyor olması ciddi bir güvenlik açığı.
+
+54
+00:13:48,296 --> 00:14:05,975
+İşte az önce söylediğim şey whenever possible avoid C, C++ often cannot avoid C, C++ yani bunu maalesef göz ardı etme veyahut da kullanmama gibi bir seçeneğimiz yok.
+
+55
+00:14:05,975 --> 00:14:11,295
+Şimdi bu saldırıları anlamaya çalışıyoruz, neler gerekli?
+
+56
+00:14:11,975 --> 00:14:19,836
+Öncelikle C fonksiyon yapısını ve runtime ortamını bilmemiz lazım.
+
+57
+00:14:20,395 --> 00:14:29,675
+Runtime ortamında C fonksiyonları çalışırken stack ve heap'ten oldukça bol miktarda yararlanıyoruz.
+
+58
+00:14:29,675 --> 00:14:37,395
+Diğer taraftan sistem çağrılarını yani işletim sistemi açısından sistem çağrılarının nasıl yapıldığını bilmemiz gerekiyor.
+
+59
+00:14:38,056 --> 00:14:40,855
+Önemli bir sistem çağrısı var, kod çalıştırmaya yarıyor.
+
+60
+00:14:41,115 --> 00:14:51,775
+Biz de orada gerçekte çalışan uygulamanın akışını değiştirip kendi gönderdiğimiz uygulamayı çalıştıracaksak eğer bunu bir şekilde başlatabilmemiz lazım.
+
+61
+00:14:52,235 --> 00:14:57,115
+Bunun için de ihtiyaç duyduğumuz sistem çağrısı exec, execute'tan kısaltılmış.
+
+62
+00:14:59,675 --> 00:15:08,935
+Saldırdığımız sistemin işlemci mimarisine de ihtiyacımız var, işletim sistemiyle beraber.
+
+63
+00:15:10,755 --> 00:15:15,755
+Şimdi işlemci mimarisinin değişmesi bir instructionları değiştiriyor.
+
+64
+00:15:15,875 --> 00:15:20,076
+Yani saldırıda kullanılacak olan komut seti değişiyor.
+
+65
+00:15:20,755 --> 00:15:38,735
+Bu basit bir ayrıntı aslında. Çünkü normalde ne yapıyoruz? Saldırı kodunu da çoğu zaman high-level, üst seviye bir programlama dilinde yazıp, onun komut karşılığını zaten compiler'ları kullanarak elde edebiliyoruz.
+
+66
+00:15:38,735 --> 00:15:44,675
+Ama tabii ki istersek doğrudan SM seviyesinde de saldırımızı kodlayabiliriz.
+
+67
+00:15:44,675 --> 00:15:56,295
+kullanılan işlemcinin Intel olması veya işte Power olması veya ARM olması komut setini değiştiriyor.
+
+68
+00:15:56,716 --> 00:16:03,076
+Diğer taraftan da işlemcilerin memoriye erişimde kullandıkları bir sıra var.
+
+69
+00:16:03,875 --> 00:16:08,435
+Şimdi byte dediğimiz zaman bu sıra bütün işlemciler için aynı.
+
+70
+00:16:08,435 --> 00:16:16,375
+Ama integer, işte 16 bit dediğimiz zaman düşük anlamlısı mı önce olacak, yüksek anlamlısı mı?
+
+71
+00:16:16,875 --> 00:16:19,035
+Her iki türlüsünde kullanan işlemci var.
+
+72
+00:16:19,816 --> 00:16:25,415
+Birine little ending diyoruz, diğerine big ending diyoruz.
+
+73
+00:16:25,415 --> 00:16:43,495
+Eğer düşük adreslerde düşük anlamlı değer, yüksek adreslerde de yüksek anlamlı değer varsa, yani mantıksal memori akış sırasına göre bunlar sıralanıyorsa, o zaman bu little ending oluyor.
+
+74
+00:16:44,195 --> 00:16:47,675
+Ama bunu gerçek hayatta kullanmamız için ne yapmamız lazım?
+
+75
+00:16:48,216 --> 00:16:52,576
+Yüksek adresli olanı önce yazıp, düşük adresli olanı sonra yazmamız lazım.
+
+76
+00:16:52,576 --> 00:16:59,375
+Yani memoriden okuyup, kağıda yazıp bunların değerleri neymiş diye kontrol etmek istediğimizde böyle bir şey var.
+
+77
+00:16:59,895 --> 00:17:02,395
+Diğer taraftan big ending de bu durum oluşmuyor.
+
+78
+00:17:02,935 --> 00:17:06,496
+Düşük adreste en yüksek anlamlı kısım var.
+
+79
+00:17:06,875 --> 00:17:12,375
+Yüksek adreste daha yüksek anlamlı kısım var.
+
+80
+00:17:12,375 --> 00:17:23,496
+Yani böylece memoriye erişirken gördüğüm sırayla bunu yine az önceki örnekte olduğu gibi kağıda arka arkaya yazacak olursam sıralarını değiştirmeme gerek yok.
+
+81
+00:17:23,855 --> 00:17:27,316
+Biri bize yakın, biri makineye yakın diye düşünebilirsiniz.
+
+82
+00:17:27,516 --> 00:17:29,955
+Ama her ikisinde kullanan işlemci tipi var.
+
+83
+00:17:29,955 --> 00:17:46,275
+İşletim sisteminin Unix veya Windows olması, stack frame yapısında yani bir fonksiyonun çağrılması sırasında stackte oluşturulan veri yapısında bir takım değişiklikler gerektiriyor.
+
+84
+00:17:46,276 --> 00:17:48,336
+Ama bunlar da minör değişiklikler.
+
+85
+00:17:49,675 --> 00:18:03,855
+Çok büyük böyle saldırı yapılamaz hale dönüştürecek veya var olan bir saldırıyı bir işletim sisteminden diğer işletim sistemine aktarmayı imkansız veya çok zor kılacak şeyler değil.
+
+86
+00:18:04,096 --> 00:18:05,615
+Değişiklikler değil.
+
+87
+00:18:07,056 --> 00:18:10,175
+Şimdi biz burada Linux üzerinden gideceğiz.
+
+88
+00:18:10,556 --> 00:18:15,596
+Kolay olması açısından da 32 bit üzerinden gideceğiz.
+
+89
+00:18:15,596 --> 00:18:19,316
+Bu örneklerin tamamını 64 bit'e de uygulayabilirsiniz.
+
+90
+00:18:19,475 --> 00:18:20,955
+Windows'a da uygulayabilirsiniz.
+
+91
+00:18:21,475 --> 00:18:25,715
+64 bit dersek şuradaki adresler çok daha uzun olacak.
+
+92
+00:18:26,415 --> 00:18:29,596
+Yazılması da, okunması da, kullanılması da daha zor olacak.
+
+93
+00:18:30,076 --> 00:18:34,475
+O yüzden 32 bit ve Linux rahat rahat ilerleyebiliriz.
+
+94
+00:18:34,475 --> 00:18:43,755
+Şimdi bakın her prosesin bir sanal adres uzayı var.
+
+95
+00:18:43,755 --> 00:18:48,475
+Memory layout, address space bu şekilde isimlendiriyoruz.
+
+96
+00:18:49,435 --> 00:19:01,576
+Bu sıfır adresinden başlayıp işletim sisteminin prosesler için tanımladığı maksimum adrese kadar gidiyor.
+
+97
+00:19:01,576 --> 00:19:07,836
+İşte 32 bit'lik Linux'ta bir prosesin sahip olabileceği maksimum adres neymiş?
+
+98
+00:19:07,895 --> 00:19:08,455
+Eksedesim.
+
+99
+00:19:12,455 --> 00:19:13,655
+Bu.
+
+100
+00:19:14,804 --> 00:19:21,804
+Bunun daha ötesinde bir memoria sahip olamaz. Az önce de söyledim. 64 bit de bu çok çok daha yukarılarda.
+
+101
+00:19:23,163 --> 00:19:36,864
+Şimdi bu adresin, bu maksimum kullanılabilecek adresin olduğu yerden itibaren aşağıya doğru stack alanı var arkadaşlar. User stack diye yazıyor burada. Dikkat edin.
+
+102
+00:19:36,864 --> 00:19:59,984
+Ve stack'in büyüme yönü negatif diye düşünün. Stack'i kullandığım zaman stack'le ilgili adresler azalıyor. Normalde memoride bir değişkene, bir diziye, bir structure'a eriştiğimde adreslerim hep ne yapar? Artar.
+
+103
+00:19:59,984 --> 00:20:11,224
+Halbuki burada stack kullanımında kullandığım adresler azalıyor. Şu şekle bakarak bunun niye böyle tasarlandığını rahatlıkla anlayabilirsiniz.
+
+104
+00:20:11,804 --> 00:20:19,984
+Yukarıda maksimum bir limit var. O limiti aşmamamız lazım. Aşağıda da bir başlangıç noktası var. O zaman ne yapılmış?
+
+105
+00:20:19,984 --> 00:20:33,864
+Programın kendisinde ilerlenirken, komutlar çalıştırılırken, programın içinde kullandığımız değişkenlere erişilirken pozitif yönde bir adresleme yapılsın.
+
+106
+00:20:33,864 --> 00:20:43,663
+Ama diğer taraftan stack'e erişirken, stack'le ilgili işlem yaparken de negatif adresleme yapılsın.
+
+107
+00:20:43,764 --> 00:20:51,864
+Böylece okların yönünden de göreceğiniz gibi bir taraf yukarıya doğru giderken diğer taraf da aşağıya doğru ilerlesin.
+
+108
+00:20:51,864 --> 00:21:09,824
+Şimdi eğer stack'in oku aşağıya doğru çok gider ve bu örnekte görülen işte shared library veya runtime heap onların üzerine gelirse eğer bu durumda ne oluşuyor?
+
+109
+00:21:09,824 --> 00:21:15,163
+Stack overflow oluşuyor. Yani stack için artık kullanılabilecek alan kalmadı.
+
+110
+00:21:15,724 --> 00:21:25,524
+Stack diğer verilerin, programa ait diğer verilerin saklanması için hatta programın kendisi için kullanılan alana taştı oluyor.
+
+111
+00:21:27,764 --> 00:21:39,423
+Öte yandan programda kullanılacak olan kütüphaneler, shared library, onların da belirli bir boyutu var.
+
+112
+00:21:39,824 --> 00:21:43,204
+Bakın, shared library nereden başlamak zorundaymış?
+
+113
+00:21:43,524 --> 00:21:51,044
+Hexidesimal 4.0.0.0.0.0.0 adresinden başlamak zorundaymış.
+
+114
+00:21:51,144 --> 00:21:53,664
+Bu tamamen tasarımsal bir şey.
+
+115
+00:21:55,224 --> 00:22:00,804
+Linux'un process memory layout'u tasarlanırken bu şekilde tasarlanmış.
+
+116
+00:22:00,804 --> 00:22:02,724
+Peki, shared library ne?
+
+117
+00:22:03,324 --> 00:22:14,344
+Programımızda kullandığımız runtime sırasında ihtiyaç duyduğumuz ve sadece bizim programımız tarafından ihtiyaç duyulan değil, diğer bütün programlar tarafından ihtiyaç duyulan,
+
+118
+00:22:15,004 --> 00:22:24,804
+mesela giriş çıkışı gerçekleştirmek için, mesela matematik işlemlerini gerçekleştirmek için, mesela thread işlemlerini gerçekleştirmek için kullanılan kütüphaneler.
+
+119
+00:22:24,804 --> 00:22:30,804
+Kütüphaneler. Bunların en önemlisi libc, yani c runtime library.
+
+120
+00:22:32,324 --> 00:22:35,844
+Çünkü programlarımızı cc++'da yazıyoruz ya.
+
+121
+00:22:36,324 --> 00:22:50,943
+Bakın Linux'a. Linux'da ya doğrudan lib director'si altında ya da usr lib director'si altında hem libc bulacaksınız, hem de libc++ bulacaksınız.
+
+122
+00:22:50,944 --> 00:23:04,284
+Bu iki kütüphane en önemli ve işletim sistemiyle de beraber, onun versiyonuyla da beraber ilerleyen ve bütün uygulamaların çalıştırılabilmesi için temel teşkil eden runtime library.
+
+123
+00:23:04,664 --> 00:23:06,304
+Onlar buraya yerleştiriliyorlar.
+
+124
+00:23:07,604 --> 00:23:09,444
+Alt tarafa geçelim şimdi.
+
+125
+00:23:09,444 --> 00:23:13,444
+Sıfırdan itibaren programın...
+
+126
+00:23:13,444 --> 00:23:15,444
+...
+
+127
+00:23:13,875 --> 00:23:43,036
+Yüklendiği adrese kadar olan kısım unused yani kullanılmıyor. Niye? Bu alanın kullanımı işletim sistemine ait. İşletim sisteminin bazı bilgileri saklaması, prosesi yönetebilmesi artı işlemcilerin mimarileriyle alakalı bazı kullanıcıya açılmaması gereken sadece yetkili programlar.
+
+128
+00:23:43,036 --> 00:24:03,675
+Yani bu örnekte işletim sistemi tarafından yönetilmesi gereken bilgilerin tutulduğu yer. Program peki nereden itibaren yükleniyor? Standart, bu değişmiyor. Yani şu anda diyelim benim bilgisayarımda ister fiziksel ortamda ister sanal ortamda 32 bitlik bir Linux çalışsın.
+
+129
+00:24:03,675 --> 00:24:08,076
+Sizin bilgisayarınızda aynı şekilde 32 bitlik bir Linux çalışsın.
+
+130
+00:24:11,675 --> 00:24:25,855
+Her ikisinde de bu program kendisine ayrılan memori alanında hexadecimal 0804 8000 adresinden başlayacak. Bu değişmez.
+
+131
+00:24:25,855 --> 00:24:34,115
+64 bitlik de farklı, 32 bitlik de farklı ama sonuçta bu bilgi bana ne anlamda değerli?
+
+132
+00:24:34,115 --> 00:24:48,776
+Biliyorum ki saldıracağım sistem eğer 32 bitlik Linux kullanıyorsa orada işte programın başlama adresi hexadecimal 0804 8000,
+
+133
+00:24:48,776 --> 00:25:08,536
+paylaşılan kütüphanelerin başlama adresi hexadecimal 0804 8000 ve programa ayrılmış ve kullanıcı yığınının başladığı adres de bu hexadecimal C'li olan adres.
+
+134
+00:25:08,536 --> 00:25:21,755
+Yani uzaktaki bir sistem hakkında o sistemin sadece işletim sistemiyle alakalı bir bilgiye sahip olarak daha kapsamlı, daha değerli bilgiler elde edebiliyorum.
+
+135
+00:25:23,435 --> 00:25:29,536
+Başlangıç adresinden itibaren doğal olarak sol tarafta gösterildiği gibi executable yükleniyor.
+
+136
+00:25:30,375 --> 00:25:34,536
+Loaded from executable ve bunun üzerine hemen ne yerleşiyor?
+
+137
+00:25:34,536 --> 00:25:35,955
+Ne yerleşiyor? Runtime heap.
+
+138
+00:25:36,355 --> 00:25:37,296
+Heap alanı ne?
+
+139
+00:25:37,655 --> 00:25:44,776
+Dinamik olarak kullanılan memory bölgesi, bellek bölgesi.
+
+140
+00:25:46,155 --> 00:25:58,655
+Uygulamalarımızda uygulama öncesinde boyutunu bilemediğimiz ama uygulama sırasında boyutu anlaşılan değişkenlerin tutulması için kullanılan alan.
+
+141
+00:25:58,655 --> 00:26:03,056
+Bu alanı kullanmaktaki en önemli arayüz nedir?
+
+142
+00:26:03,056 --> 00:26:06,576
+C'deki malloc'tur ve free'dir.
+
+143
+00:26:06,975 --> 00:26:11,615
+Memory allocate ve allocated'in memory'i serbest bırak. Free.
+
+144
+00:26:12,235 --> 00:26:15,276
+Burası da en fazla nereye kadar gidebilir aslında?
+
+145
+00:26:16,175 --> 00:26:18,415
+Shared library'e kadar gidebilir.
+
+146
+00:26:18,415 --> 00:26:27,215
+Eğer o kalın çizgiyi geçecek olursa, şurada gösterilen kalın çizgiyi geçecek olursa, bu sefer de aslında ne olacak?
+
+147
+00:26:28,175 --> 00:26:29,875
+Heap overflow olacak.
+
+148
+00:26:30,255 --> 00:26:34,615
+Heap kendisi için ayrılmış olan alanın dışına taşmış olacak.
+
+149
+00:26:34,615 --> 00:26:45,076
+Şimdi bu şekil üzerinden stack overflow da, heap overflow da bir kez daha görmüş, bilmeyenleriniz için öğrenmiş olduk.
+
+150
+00:26:48,852 --> 00:27:01,552
+Her fonksiyon çağrılmadan önce stack'te, hani şurada gördük ya stack, stack'te onun için bir veri yapısı oluşturuluyor.
+
+151
+00:27:05,268 --> 00:27:23,028
+Oluşturulan bu veri yapısına Stack Frame deniliyor. Stack yığında bir çerçeve. Neler var bu veri yapısının içerisinde? Bu arada bakın sağ taraftaki okun yönü bize bir kez daha hatırlatıyor.
+
+152
+00:27:23,028 --> 00:27:41,948
+Yüksek adreslerden, high adreslerden, low düşük adreslere doğru gidiyoruz. Aslında bu şekilde negatif yönde ilerliyor olmamıza rağmen Stack'imiz genişlemiş oluyor. Stack'in genişleme, büyüme yönü bu şekilde.
+
+153
+00:27:41,948 --> 00:28:00,488
+En başta fonksiyona aktarılacak olan argümanlar var. Fonksiyonun parametresi var. Yanına parantez içerisinde yazıyoruz hatırlarsanız. Bu parametrelere denk düşen değerlere de ne isim veriyoruz?
+
+154
+00:28:00,488 --> 00:28:15,428
+Argüman ismini veriyoruz. Bu argümanların bitiminin hemen dibinde yani onların bittiği yerde return adres var.
+
+155
+00:28:16,268 --> 00:28:28,488
+Şimdi burada genişliği yani bu Stack Frame'in genişliğini 32 bitlik bir yapı olduğu için 32 bit olarak düşünelim.
+
+156
+00:28:28,488 --> 00:28:40,988
+O zaman buradan da şu çıkarımı yapabiliriz. Buradaki return adres kaç bit arkadaşlar? 32 bit. Çünkü mimarimiz 32 bit. Geri dönülecek adres de 32 bit ile ifade edilecek.
+
+157
+00:28:40,988 --> 00:28:57,988
+Hemen altında bakın bir Stack Frame Pointer var. Bu bir pointer. Yani aslında bu fonksiyonu çağıran fonksiyonun Stack'teki Framing'in adresi.
+
+158
+00:28:57,988 --> 00:29:13,867
+Buradan da ben ne anlıyorum? Fonksiyon çağırılmaları sırasında fonksiyonların Stack'teki veri yapıları birbirleriyle ilişkilendiriliyor.
+
+159
+00:29:13,867 --> 00:29:38,208
+Çok basit bir amacı var bunun. Herhangi bir noktada uygulamamız çökecek olursa, patlayacak olursa, memory dump'ını aldığımızda, o memory dump'ı izlediğimizde, incelediğimizde o noktaya hangi fonksiyonlardan geçerek geldiğimizi görüyoruz.
+
+160
+00:29:38,208 --> 00:29:50,948
+Bunu çoğu defa yaşamışsınızdır. İşte sadece C, C++'da değil, Java'da, C Sharp'ta, işte diğer Python'da ne der?
+
+161
+00:29:51,148 --> 00:29:59,907
+İşte şu hata oluştu. Aslında o hatanın öncesinde buradaydı, ondan önce buradaydı, ondan önce buradaydı. Böyle satırlar dolusu bilgi döker.
+
+162
+00:29:59,908 --> 00:30:10,408
+İşte o bilgiyi dökebilmesi için, onu gösterebilmesi için Stack'teki bu veri alanlarının birbirleriyle ilişkilendirilmesi lazım.
+
+163
+00:30:11,327 --> 00:30:16,248
+Şunun hemen arkasında, Stack Frame Pointer'ın hemen arkasında Exception Handler var.
+
+164
+00:30:17,827 --> 00:30:23,548
+C'de de Exception Handling var. Özel durumların değerlendirilmesi söz konusu.
+
+165
+00:30:23,548 --> 00:30:31,548
+C++'da bu daha net bir şekilde yapılıyor. İşte hani try blokları var ya, bir durumun...
+
+166
+00:30:32,756 --> 00:30:50,996
+Çalışması sırasında oluşabilecek özel durumları yakalamak adına bir try bloğu oluşturuyoruz. O özel durumlardan biri gerçekleştiğinde bununla karşılaştığımızda ne yapacağız veya nereye gideceğiz sorusunun cevabı işte şurada exception handler kısmında.
+
+167
+00:30:50,996 --> 00:31:07,115
+Bu exception handlerı özel durum oluştuğunda hangi adresten itibaren ilgili özel duruma göre çalışmaya devam edileceğini gösteren bir fonksiyon pointerı olarak düşünebilirsiniz.
+
+168
+00:31:07,115 --> 00:31:10,516
+Arkasında lokal değişkenler var.
+
+169
+00:31:10,516 --> 00:31:19,316
+Fonksiyonlarda, fonksiyonların içinde kullanılan değişkenler lokal.
+
+170
+00:31:19,956 --> 00:31:24,256
+Bu değişkenler fonksiyon çalışırken erişilebilir durumda.
+
+171
+00:31:24,736 --> 00:31:27,635
+Fonksiyondan çıkıldığında erişilemez durumda.
+
+172
+00:31:27,635 --> 00:31:29,816
+İşte sebebini burada görüyorsunuz.
+
+173
+00:31:30,135 --> 00:31:38,976
+Çünkü fonksiyondan çıkıldığı anda fonksiyonun stack framingin başlangıcını gösteren bir şey var mı?
+
+174
+00:31:38,976 --> 00:31:39,816
+Yok.
+
+175
+00:31:40,336 --> 00:31:42,416
+Değerler stack'in içerisinde duruyor.
+
+176
+00:31:42,596 --> 00:31:45,456
+Yani değerler kaybolmuyor veya silinmiyor.
+
+177
+00:31:46,016 --> 00:31:56,296
+Ancak bu değerlere nasıl erişebileceğimizi gösteren başlangıç noktası olmadığı için bu değerlere erişemiyoruz.
+
+178
+00:31:56,296 --> 00:32:18,936
+Bu yapının güzelliğine fonksiyon içerisinde diğer fonksiyonlara rahatsızlık vermeden lokal olarak kullanabileceğimiz değişkenleri hızlı bir şekilde oluşturup sonrasında da fonksiyon dışına çıktığımızda onları unutabilmemiz, yok varsayabilmemiz.
+
+179
+00:32:18,936 --> 00:32:23,716
+En altta da coli saved registers.
+
+180
+00:32:24,256 --> 00:32:28,176
+Şimdi color çağıran, coli çağrılan.
+
+181
+00:32:28,176 --> 00:32:29,736
+Çağrılan.
+
+182
+00:32:33,587 --> 00:32:50,147
+Fonksiyonun geriye dönerken mimariye bağlı olarak geri dönüş kodu döndürmesi için kullandığı register haricindeki işlemci registerlarının değerini bozmaması gerekiyor.
+
+183
+00:32:50,147 --> 00:32:59,587
+Kendisine gelindiğinde registerların durumu neyse dönerken de aynı şekilde olması lazım.
+
+184
+00:32:59,587 --> 00:33:14,288
+Örneğin, Intel mimarisinde bu geri dönüş kodu için, return code diyoruz ona, kullanılan register AX, EAX, extended hali veyahut da normal hali.
+
+185
+00:33:14,288 --> 00:33:24,228
+Bu register haricindeki diğer registerların ki üzerinde işte BX'i var, CX'i var, DX'i var, ES'i var, Dİ'si var, Sİ'si var.
+
+186
+00:33:24,228 --> 00:33:31,208
+Oldukça bol miktarda register'ı var. Bunların değerlerinin bozulmaması gerekiyor.
+
+187
+00:33:31,687 --> 00:33:40,288
+O zaman fonksiyona giriş sırasında bu registerların değerleri şurada gördüğünüz alana saklanıyor.
+
+188
+00:33:41,048 --> 00:33:43,728
+Geri dönüşte de o alandan geri yükleniyor.
+
+189
+00:33:43,728 --> 00:34:05,947
+Evet, şimdi bu kadar giriş bilgisinden sonra buffer overflow saldırısı nasıl oluyor, nasıl bu yapıdaki açıklardan yararlanıp da bu saldırıyı gerçekleştiriyoruz, onu görmenin zamanı geldi.
+
+190
+00:34:05,947 --> 00:34:12,007
+Bakın, sağ tarafta bir serverdaki fonksiyona yer verilmiş.
+
+191
+00:34:12,608 --> 00:34:17,947
+Void function ne kabul ediyormuş parametresi?
+
+192
+00:34:17,947 --> 00:34:19,307
+Karakter pointer str.
+
+193
+00:34:19,748 --> 00:34:29,347
+Yani buraya 32 bitlik bir adres gelecek ve bu adres bize arka arkaya yerleştirilmiş karakterler gösterecek.
+
+194
+00:34:29,447 --> 00:34:31,728
+Bu karakterlerin bittiğinde ben nereden anlayacağım?
+
+195
+00:34:31,728 --> 00:34:33,327
+En sonundaki sıfır değerinden.
+
+196
+00:34:33,467 --> 00:34:45,307
+Çünkü C programlama ortamında stringin uzunluğu veyahut da stringin bittiği sonundaki sıfır değerinden anlaşılıyor.
+
+197
+00:34:46,768 --> 00:34:51,547
+Lokalde de karakter buff 128 tanımlanmış.
+
+198
+00:34:51,688 --> 00:34:58,347
+Yani karakter tipinde 128 byte'lık bir buffer tanımlanmış.
+
+199
+00:34:58,347 --> 00:35:09,347
+String copy ile parametre olarak gelen str değerinin lokalde bir kopyası çıkartılıyor buff'a.
+
+200
+00:35:09,867 --> 00:35:12,087
+Daha sonra da bir başka fonksiyon çağrılıyor.
+
+201
+00:35:12,087 --> 00:35:16,228
+Bu fonksiyona da buff değişkeni aktarılıyor.
+
+202
+00:35:16,907 --> 00:35:26,407
+Bu o kadar çok kullanılan bir patent ki muhtemelen siz de program yazarken bunu kullanmışsınızdır.
+
+203
+00:35:26,407 --> 00:35:34,628
+gelen verinin bozulmaması için kopyasının çıkartılıp işlemlerin o kopya üzerinden yapılması.
+
+204
+00:35:35,128 --> 00:35:40,668
+Yani aslında do something'e gidecek olursak, o fonksiyona gidecek olursak,
+
+205
+00:35:41,087 --> 00:35:48,128
+aynen buradaki yapıya benzer bir yapıyı görme ihtimalimiz çok yüksek.
+
+206
+00:35:48,128 --> 00:35:54,128
+Bunu sadece ya bu böyledir deyip hissederek söylemiyoruz.
+
+207
+00:35:55,168 --> 00:36:00,268
+Bir sürü programda source code üzerinde yapılan analizler sonucunda,
+
+208
+00:36:02,587 --> 00:36:06,427
+sadece source code'un incelenmesiyle yapılan analiz başka bir şey yok.
+
+209
+00:36:07,047 --> 00:36:09,268
+Aklınıza başka bir özel analiz gelmesin.
+
+210
+00:36:09,268 --> 00:36:19,268
+Bu pattern'in pek çok birbirinden farklı programda, pek çok farklı programcı tarafından kullanıldığı görülüyor.
+
+211
+00:36:20,327 --> 00:36:23,967
+Peki bu pattern'in beraberinde getirdiği sıkıntı ne?
+
+212
+00:36:24,608 --> 00:36:25,327
+Hemen görelim.
+
+213
+00:36:26,228 --> 00:36:30,268
+Şimdi, fonksiyonel argümanı ne?
+
+214
+00:36:30,268 --> 00:36:57,327
+altyazı hmZ
+
+215
+00:36:30,639 --> 00:36:46,940
+STR. O zaman Argument alanında STR var. 32 bit dedim. Başka bir argüman var mı? Yok. Bu durumda hemen altında ne var arkadaşlar? Return adres var. C olduğunu kabul edelim.
+
+216
+00:36:46,940 --> 00:37:02,519
+Bakın, Exception Handling'i bir kenara bırakalım. Yani aslında C'de de yapabiliyoruz dedim ama şu anda Exception Handling'le uğraşmayalım. O yüzden Exception Pointer'lar yok. Bu durumda ne var şurada hemen? Stack Frame Pointer var.
+
+217
+00:37:02,519 --> 00:37:24,980
+Altında da bakın 128 bit'lik Buff değişkeni var. O zaman burası aslında kaç satır ediyor? 128 bölü 4, 32 satır var burada. Çünkü ne dedik? Her biri 32 bit'lik. Yani 4 bit'lik dedik. 32 satır var.
+
+218
+00:37:24,980 --> 00:37:48,500
+Şimdi, Stack yukarıdan aşağıya doğru genişledi. Yani yüksek adresler yukarıdaydı. Düşük adresler aşağıdaydı. O zaman Buff değişkeninin başlangıcı nerede arkadaşlar? En düşük adreste değil mi?
+
+219
+00:37:48,500 --> 00:38:09,319
+Çünkü ben size dersin başında ne dedim? Değişkenleri veyahut da komutları adreslerken pozitif yönde kullanıyoruz. O zaman ben Buff 0'a gitmek istiyorsam eğer, Buff 0'ı yani Buff değişkeninin sıfırıncı gözünü kullanmak istiyorsam eğer, bu en düşük adreste olmalı.
+
+220
+00:38:09,319 --> 00:38:21,420
+Buff 1 bir sonraki adreste, Buff 2 daha sonraki adreste, Buff 127'de hemen Stack Frame Pointer'ın dibinde olmalı. Bu kadar basit.
+
+221
+00:38:22,239 --> 00:38:26,059
+Yani Buff'ın başlangıcı nerede? Aşağıda.
+
+222
+00:38:27,199 --> 00:38:33,380
+Buff'ı da kullanırken yukarı doğru kullanıyoruz. Şu şekilde yukarıya doğru kullanıyoruz.
+
+223
+00:38:33,380 --> 00:38:35,279
+Devam.
+
+224
+00:38:36,500 --> 00:38:36,980
+Şimdi
+
+225
+00:38:36,980 --> 00:38:40,420
+Şu yandaki kod parçasına bakalım.
+
+226
+00:38:41,339 --> 00:38:42,380
+Gelen argümanın
+
+227
+00:38:43,199 --> 00:38:46,859
+Aslında en fazla
+
+228
+00:38:46,859 --> 00:38:49,339
+Kaç byte olması lazım?
+
+229
+00:38:50,480 --> 00:38:51,259
+En fazla
+
+230
+00:38:51,259 --> 00:38:53,000
+127.
+
+231
+00:38:53,659 --> 00:38:54,359
+Çünkü neden?
+
+232
+00:38:54,779 --> 00:38:57,219
+Karakter tipinde bir değişken.
+
+233
+00:38:57,219 --> 00:38:59,480
+O yüzden sonuna mutlaka
+
+234
+00:38:59,480 --> 00:39:01,799
+Hangi değeri yerleştirmemiz gerekiyor?
+
+235
+00:39:01,799 --> 00:39:03,899
+Sıfır değerini yerleştirmemiz gerekiyor.
+
+236
+00:39:04,399 --> 00:39:09,960
+Burada 128'lik bir alan açıldıysa sonunda da sıfır değeri olabilecek
+
+237
+00:39:09,960 --> 00:39:15,579
+Argümanın maksimum uzunluğunun
+
+238
+00:39:15,579 --> 00:39:20,500
+128 byte olması lazım.
+
+239
+00:39:20,579 --> 00:39:21,940
+128-1
+
+240
+00:39:21,940 --> 00:39:23,819
+127 byte olması lazım.
+
+241
+00:39:24,380 --> 00:39:26,420
+Ama şurada bir soru var. Ne diyor?
+
+242
+00:39:26,420 --> 00:39:30,519
+136 byte olursa ne olacak?
+
+243
+00:39:31,279 --> 00:39:32,199
+Ne olacağını görelim.
+
+244
+00:39:33,599 --> 00:39:34,019
+Bakın
+
+245
+00:39:34,019 --> 00:39:37,319
+Ekstradan gelen 8 byte
+
+246
+00:39:37,319 --> 00:39:40,339
+Bu 8 byte'ın
+
+247
+00:39:40,339 --> 00:39:43,019
+İlk 4 byte'ı
+
+248
+00:39:43,019 --> 00:39:44,739
+Nereyi
+
+249
+00:39:44,739 --> 00:39:46,599
+Ezdi geçti?
+
+250
+00:39:47,859 --> 00:39:50,359
+Stack frame pointer'ı ezdi geçti.
+
+251
+00:39:50,359 --> 00:39:54,460
+Yani bir önceki
+
+252
+00:39:54,460 --> 00:39:56,460
+Fonksiyonun
+
+253
+00:39:56,460 --> 00:39:58,519
+Stack'teki veri yapısıyla
+
+254
+00:39:58,519 --> 00:39:59,639
+Olan bağlantı
+
+255
+00:39:59,639 --> 00:40:00,259
+Koptu gitti.
+
+256
+00:40:01,460 --> 00:40:04,559
+Çok kritik bir şey diye düşünmeyebiliriz.
+
+257
+00:40:04,819 --> 00:40:06,759
+Uygulamada hata olmadığı sürece
+
+258
+00:40:06,759 --> 00:40:08,519
+Öyle bir memory dump alınıp da
+
+259
+00:40:08,519 --> 00:40:09,159
+Zincirleme
+
+260
+00:40:09,159 --> 00:40:10,179
+Hata
+
+261
+00:40:10,179 --> 00:40:12,299
+Ne üzerinden tetiklenmiş diye
+
+262
+00:40:12,299 --> 00:40:13,920
+Debug yapılmadığı sürece
+
+263
+00:40:13,920 --> 00:40:16,239
+Sıkıntı değil diye düşünebiliriz.
+
+264
+00:40:16,239 --> 00:40:16,679
+Ama
+
+265
+00:40:16,679 --> 00:40:19,399
+Ezilenler bununla kalmadı.
+
+266
+00:40:19,519 --> 00:40:20,500
+Ezilen değerler
+
+267
+00:40:20,500 --> 00:40:22,960
+Aynı zamanda hangi değerde ezildi?
+
+268
+00:40:23,659 --> 00:40:25,019
+Return adres değerini.
+
+269
+00:40:25,579 --> 00:40:25,880
+Şimdi
+
+270
+00:40:25,880 --> 00:40:27,380
+Burası felaket.
+
+271
+00:40:27,940 --> 00:40:28,359
+Niçin?
+
+272
+00:40:29,300 --> 00:40:50,100
+Bu fonksiyon geri döndüğünde hangi adrese geri dönecek? Return adreste saklı olan adrese geri dönecek. Peki artık biz dışarıdan bu fonksiyona verdiğimiz bir girdi ile neyi değiştirdik? Return adresi değiştirdik.
+
+273
+00:40:50,100 --> 00:41:04,420
+Yapamıyor olmamız gereken bir şey. Bize tamamen kısıtlanmış olması gereken bir şey. Sonuçta biz uç kullanıcı olarak ister bunu terminalden bir input diye düşünün, ister web serverden bir input diye düşünün.
+
+274
+00:41:04,420 --> 00:41:19,480
+Nereden olursa olsun bu inputun değerlendirildiği fonksiyonun geri dönüş adresini değiştiremiyor olmam lazım. Ama gelin görün ki değiştiriyorum.
+
+275
+00:41:20,100 --> 00:41:30,740
+Bakın birkaç tane tasarımsal eksik veya tasarım sırasında atlanmış olan nokta bir araya geldiğinde
+
+276
+00:41:30,740 --> 00:41:41,400
+o kadar net birbirleriyle örtüşüyorlar ki bize geri dönüş adresini değiştirebilme imkanı tanıyor.
+
+277
+00:41:45,396 --> 00:41:50,796
+Geri dönüş adresi değiştikten sonra artık bu fonksiyon.
+
+278
+00:41:55,476 --> 00:42:00,655
+Bozulmuş demektir. Çünkü orijinal dönmesi gereken yere dönmeyecek.
+
+279
+00:42:00,655 --> 00:42:06,115
+Peki, bu problemin oluşmasının sebebi ne?
+
+280
+00:42:06,956 --> 00:42:18,316
+STR-copy, şurada kullandığımız STR-copy fonksiyonundaki bu bir kütüphane fonksiyonu, sınır kontrolü olmaması.
+
+281
+00:42:20,036 --> 00:42:23,736
+STR-copy kopyalama işlemini ne zamana kadar devam ettiriyor?
+
+282
+00:42:23,736 --> 00:42:37,155
+0 değerini görene kadar ya BAF'ta 0 görecek ya da STR'de 0 görecek. İkisinden biri.
+
+283
+00:42:38,016 --> 00:42:46,836
+Şimdi BAF'ta 0 görmesinin bir anlamı yok. Orada kopyalama baştan biter. O yüzden burada STR.
+
+284
+00:42:46,836 --> 00:42:59,316
+Bu durumda demek ki, şu 136 byte'ı biz herhangi bir engelle karşılaşmadan ne yapabildik arkadaşlar?
+
+285
+00:42:59,316 --> 00:43:06,056
+Bu lokal değişkene aktardık. Lokal değişkenin sınırlarının dışına çıktık.
+
+286
+00:43:06,695 --> 00:43:09,896
+Stag frame pointer'ı ezdik. Return adresi ezdik.
+
+287
+00:43:09,896 --> 00:43:17,336
+İşte size en temel stag üzerinden yapılan saldırı.
+
+288
+00:43:18,796 --> 00:43:23,155
+Ezmeye devam ediyorum. Return adres sonrasında bakın bu kırmızılar.
+
+289
+00:43:24,236 --> 00:43:27,816
+Ezmeye devam ediyorum. Return adres neyi gösteriyor?
+
+290
+00:43:28,276 --> 00:43:29,476
+Bir programı gösteriyor.
+
+291
+00:43:29,476 --> 00:43:32,416
+Peki bu programı kim aktarıyor?
+
+292
+00:43:32,675 --> 00:43:33,896
+Onu da biz aktarıyoruz.
+
+293
+00:43:35,516 --> 00:43:44,115
+Yani dışarıdan inputla aslında uygulamanın çalıştıracağı programı aktarmış oluyoruz.
+
+294
+00:43:45,396 --> 00:43:50,036
+Şimdi bu konuda çalışan Alefman diye bir araştırmacı var.
+
+295
+00:43:50,036 --> 00:43:52,396
+bir kişi var.
+
+296
+00:43:53,195 --> 00:44:06,695
+Bu işte Linux ortamı için Shell başlatan kodu yazmış ve sitesinde kullanımı açmış durumda.
+
+297
+00:44:07,376 --> 00:44:08,816
+Sizler de yazabilirsiniz.
+
+298
+00:44:09,056 --> 00:44:10,036
+Yani bunu...
+
+299
+00:44:12,036 --> 00:44:19,076
+Çünkü şurada görmüş olduğunuz exec bin.sh'yi yapıyorsanız her şeyi yaparsınız demektir.
+
+300
+00:44:19,076 --> 00:44:20,195
+Niye?
+
+301
+00:44:20,916 --> 00:44:22,695
+Bu yeni bir Shell başlat demek.
+
+302
+00:44:23,496 --> 00:44:30,796
+E bunun yanına eksi C ile Shell'i başlatırken hangi komutu çalıştıracağım bilgisini de verirsem eğer
+
+303
+00:44:30,796 --> 00:44:37,916
+bu şartlar altında ben karşı sistemde her türlü kodu çalıştırabilirim demektir.
+
+304
+00:44:37,916 --> 00:44:42,596
+Yani bin sh eksi C reboot.
+
+305
+00:44:43,556 --> 00:44:47,856
+Bunu ben aldım. Bu bir satırlık kod parçasını compile ettim.
+
+306
+00:44:47,856 --> 00:44:53,556
+Gereksiz kısımlarını işte entry, C, entry kısımlarını falan attım.
+
+307
+00:44:53,655 --> 00:44:57,396
+Sadece bu exec'e denk düşen kısımlarını aldım.
+
+308
+00:44:57,516 --> 00:44:58,836
+Instruction'ları aldım.
+
+309
+00:44:59,336 --> 00:45:03,596
+Onu return adresin arkasına ekledim.
+
+310
+00:45:04,155 --> 00:45:08,675
+Başlangıç noktasında return adreste ayarladım neresi olacağını.
+
+311
+00:45:09,115 --> 00:45:12,256
+Ve bunu saldırdığım sisteme aktardım.
+
+312
+00:45:12,256 --> 00:45:24,876
+Saldırdığım sistem eğer buffer overflow için bir tedbir almıyorsa benim bu inputumu bu şekilde kabul ediyor ve return adresin ezilmesine imkan veriyorsa
+
+313
+00:45:24,876 --> 00:45:32,716
+o zaman bu input karşı tarafa gittiğinde karşı tarafın reboot olma ihtimali çok çok çok yüksek.
+
+314
+00:45:33,496 --> 00:45:37,195
+Bunun gerçekleşebilmesi için önümüzde tek bir engel daha var.
+
+315
+00:45:37,336 --> 00:45:38,796
+O da ne biliyor musunuz arkadaşlar?
+
+316
+00:45:38,796 --> 00:45:47,056
+Bu saldırıyı yaptığımız programın reboot komutunu çalıştıracak yetkide olması.
+
+317
+00:45:48,692 --> 00:46:05,972
+Her kullanıcının bu yetkisi yok. Normalde sistemlerde bu yetkiye sahip olan özel kullanıcılar var. İşte Unix ve Unix türevlerinde bu kullanıcı Root kullanıcısı. Windows'da da bu kullanıcı Administrator kullanıcısı.
+
+318
+00:46:05,972 --> 00:46:27,931
+Bu yüzden saldırganlar genelde neye saldırmayı tercih ediyorlar? Sistem uygulamalarına. Çünkü sistem uygulamalarının büyük bir çoğunluğu geçmişten gelen bir alışkanlıkla da hangi kullanıcı yetkisiyle çalıştırılıyor?
+
+319
+00:46:27,931 --> 00:46:43,132
+Sistemdeki en yetkili kullanıcı yetkisi. Yani Root kullanıcısı olarak. Yani Administrator kullanıcısı olarak. Hatta Windows tarafında bununla alakalı bir sistem kullanıcısı da var. Adı sistem diye geçen.
+
+320
+00:46:46,420 --> 00:46:55,820
+Şimdi yandaki şekli görüyorsunuz. Olayları ben size anlattım. Bu fonksiyon geri döndüğünde fonksiyonun orijinalde dönmesi gereken yere dönülmüyor.
+
+321
+00:46:55,820 --> 00:47:06,720
+Ne çalıştırılıyor? Shell kodu çalıştırılıyor. Demin söylediğim gibi o Shell kodunun içerisine siz her türlü komutu gömebilirsiniz.
+
+322
+00:47:11,731 --> 00:47:27,311
+Şimdi dikkat edin. Adresler bizim açımızdan kod çalıştırılırken ne olması lazım? Düşük adresten yüksek adrese doğru. Yani şu sağdaki mavi ok şeklinde olması lazım.
+
+323
+00:47:27,311 --> 00:47:49,951
+İşlemci mimarilerinin 32 bit olmasından kaynaklı olarak adreslerin tek adres mi, çift adres mi, hatta tam olarak dörde bölünür adres mi, yoksa bölünmez adres mi olmasından kaynaklı bir takım donanımsal şartlamalar var.
+
+324
+00:47:49,951 --> 00:48:12,112
+Hem bunların önüne geçmek hem bu sıkıntıları aşmak hem de programımızın sadece bir sistemde değil de birden fazla sistemde saldırıyı ilk seferde gerçekleştirebilmesini sağlamak adına araya ne yerleştiriyoruz?
+
+325
+00:48:12,112 --> 00:48:25,891
+Nop değerleri. Nop her işlemcide var olan no operation'a denk düşüyor. Bir komut, tek byte'dan oluşan bir komut. Ne için konulmuş?
+
+326
+00:48:26,112 --> 00:48:32,811
+İşlemci o anda komut execute etmiyorsa işlemcinin clock'u çalışmaya devam ediyor. E o zaman ne yapacak?
+
+327
+00:48:32,811 --> 00:48:42,811
+İşlemci hiçbir şey değiştirmemesi için hiçbir şey yapması lazım. Çünkü clock durmuyor. O zaman onun için de no operation instruction'ını ortaya atmışlar.
+
+328
+00:48:43,771 --> 00:49:00,072
+Yani işlemcinin program kaunturu arttırması haricinde başka hiçbir şey yapmadığı, internal state'inin değişmediği, boşa çalıştırdığı bir kod parçası.
+
+329
+00:49:00,072 --> 00:49:05,891
+Ama bu gerekli çünkü işlemcilerin clock'larını durdurup tekrar başlatmıyoruz.
+
+330
+00:49:06,532 --> 00:49:09,492
+Nop dediğim gibi tek byte'dan oluşuyor.
+
+331
+00:49:14,112 --> 00:49:23,291
+AIX register'ının kendi kendiyle egzorlanması da bir byte veya AX register'ının increment edilmesi de bir byte.
+
+332
+00:49:23,291 --> 00:49:32,492
+Yani bunlardan herhangi birinde kullanabiliriz. Bakın AIX veyahut da AX'i kullanmamızın bir sakıncası yok.
+
+333
+00:49:32,871 --> 00:49:40,291
+Çünkü zaten bu register'ın değeri çağrılan fonksiyonunda değiştirilebiliyordu, güncellenebiliyordu.
+
+334
+00:49:40,291 --> 00:49:49,552
+Yerleştirdiğimiz programın içerisinde sıfır değeri olmamalı.
+
+335
+00:49:49,652 --> 00:49:50,112
+Çünkü neden?
+
+336
+00:49:50,231 --> 00:49:52,652
+STR copy sıfıra kadar kopyalıyor.
+
+337
+00:49:52,652 --> 00:50:00,632
+Oluşturduğumuz overflow karşı tarafta çalışan programı çökertmemeli.
+
+338
+00:50:01,192 --> 00:50:02,831
+O zaman fonksiyon geri dönemez.
+
+339
+00:50:02,911 --> 00:50:06,471
+Fonksiyon geri dönemezse bizim saldırımız aktif hale geçemez.
+
+340
+00:50:09,972 --> 00:50:25,592
+Şimdi bazı uzaktan gerçekleştirilen buffer overflow saldırıları var. Bazen buna literatürde stack smashing de deniyor. Çünkü neden? Smash ezmek, stack deneyi eziyoruz arkadaşlar.
+
+341
+00:50:25,592 --> 00:50:42,172
+Mesela stack frame pointer yazıyoruz, return adresi yazıyoruz ve ondan sonrasındaki geri kalan kısma da kodu yerleştiriyoruz. Yani orada orijinal içerik neydi ise o içeriğin üzerine biz yeni içeriği ezerek yerleştirmiş oluyoruz.
+
+342
+00:50:42,172 --> 00:50:52,232
+İşte mesela Windows'daki animated cursor'lar mutlaka ayarlamışsınızdır veyahut da ayarlayan birini görmüşsünüzdür.
+
+343
+00:50:52,232 --> 00:51:10,312
+İşte bir şeye tıkladığınızda programa açılması için geçen sürede mouse pointer bir kum saatine dönüşüyor veyahut da başka bir şeyin üzerine geldiğinde rengi değişiyor veya bunun gibi atraksiyonlar gerçekleşiyor.
+
+344
+00:51:10,312 --> 00:51:21,372
+Buna ne deniyor? Animated cursor deniyor. Aslında aktif bir kod parçası anlamına geliyor. O anda işte o kum saatinin dönmesi, kumların akması falan benzeri şeyler.
+
+345
+00:51:21,992 --> 00:51:35,372
+İşlemci gücü eşittir, kod parçası gerektiriyor. Bunun üzerinden yapılan bir saldırı Load Animated Icon Windows'daki bu bir sistem çağrısı, bir kütüphane çağrısı.
+
+346
+00:51:35,372 --> 00:51:50,612
+Bunun içerisindeki zafiyetten yararlanarak saldırganlar tamamen zararlı kod içeren bir animated Icon kütüphanesi yayınlıyorlar.
+
+347
+00:51:50,612 --> 00:51:57,552
+İçinde güzel görünen Icon'lar da var ama kötü niyetli kod parçaları da var saldırıyı gerçekleştiren.
+
+348
+00:51:58,152 --> 00:52:06,432
+Siz onun etkisine kapılıp yükleyeyim dediğiniz zaman bu saldırıdan nasibinizi almış oluyorsunuz.
+
+349
+00:52:06,432 --> 00:52:17,312
+Veya Symantec 2016'da yaşadı bunu. Symantec'in virüs tarayıcısı içerisinde buffer overflow var.
+
+350
+00:52:18,152 --> 00:52:25,432
+Hani buffer overflow olmaz mı? Az önceki şeyden gördünüz. Neredeyse her yerde olabilir diyebiliriz.
+
+351
+00:52:25,432 --> 00:52:35,672
+Ancak buradaki sorun şu. Executable'ın header'ını pars eden yerde buffer overflow var.
+
+352
+00:52:36,192 --> 00:52:47,432
+Ve bu pars edip Executable'ın özelliklerini anlayan kod parçası ne yazık ki işletim sisteminin içerisinde çalışacak şekilde tasarlanmış.
+
+353
+00:52:47,432 --> 00:53:01,252
+Yani o da Symantec'in tasarım hatası. Bu durumda saldırgan bilinçli olarak header pars edilmesi sırasında buffer overflow tetikliyor.
+
+354
+00:53:01,772 --> 00:53:11,572
+Kod parçasını aktarıyor. Ve az önce söyledim ne güzel kernel'ın içerisindesiniz. Zaten işletim sistemisiniz. Zaten en yetkilisiniz.
+
+355
+00:53:11,572 --> 00:53:17,252
+Kimse sizin root kullanıcı mı, administrator kullanıcı mı olduğuyla ilgilenmiyor.
+
+356
+00:53:17,492 --> 00:53:24,492
+Çünkü kernel'dasınız. İşletim sisteminin en temel noktasındasınız. En derin noktasındasınız.
+
+357
+00:53:24,952 --> 00:53:27,152
+Böyle olunca da saldırı başarıyla sonuçlanıyor.
+
+358
+00:53:27,772 --> 00:53:35,392
+Yani sistemi virüslerden koruması gereken uygulamadaki buffer overflow zafiyeti
+
+359
+00:53:35,392 --> 00:53:41,292
+sistemin sadece virüslere değil saldırılara da açık olmasına sebep oluyor.
+
+360
+00:53:41,572 --> 00:53:54,972
+İzmet
+
+361
+00:53:48,179 --> 00:53:57,039
+C kütüphanesindeki pek çok fonksiyon güvenli değil. İşte str-copy, str-cat, get-s, scan-f.
+
+362
+00:53:58,199 --> 00:54:04,619
+Get-s'i şu anda kullanmanıza izin vermiyor compiler'ların neredeyse bütün sistemlerde.
+
+363
+00:54:04,619 --> 00:54:25,339
+Örneğin Linux'ta güncel sürümlerin bir tanesi kullanılarak, GUNU C compiler kullanılarak, işte bir satır kod yazın, kullanarak bir satır kod yazın, main'in içerisinde sadece get-s olsun, onu compile etmeyecek.
+
+364
+00:54:25,879 --> 00:54:29,399
+Get-s kullanmamanız gerektiği yönünde sizi uyaracak.
+
+365
+00:54:29,399 --> 00:54:41,699
+Çünkü niye? Bakın o kadar tehlikeli bir şey ki, get-s karakter pointer. Sonu nerede? Yok. Ne uzunlukla okunacak? Yok.
+
+366
+00:54:42,359 --> 00:54:53,399
+Bu durumda ben arka tarafta get-s'in bu bilgiyi saklaması için ne kadar yer açarsam açayım, yetersiz olacak.
+
+367
+00:54:53,399 --> 00:55:05,259
+Yani ben 1K açtım, 1K işte 1 byte gönderir. 10K açtım, 10K 1 byte gönderir. Bunun sonu yok. O yüzden sıkıntılı.
+
+368
+00:55:05,259 --> 00:55:18,199
+Şimdi bu str-copy'nin str-n-copy yani kaç byte kopyalayacaksın. Ya sıfır görene kadar kopyala ya da bu kadar byte kopyala.
+
+369
+00:55:18,859 --> 00:55:24,639
+Veya str-cat'in str-n-cat diye versiyonları var.
+
+370
+00:55:24,639 --> 00:55:28,599
+Burada da maalesef şöyle bir sıkıntı var.
+
+371
+00:55:29,819 --> 00:55:35,899
+Sİ kütüphanesi zaman içerisinde güncelleniyor, işletim sisteminin versiyonuyla ilişkili diyoruz ya.
+
+372
+00:55:38,199 --> 00:55:44,079
+Bir dönemdeki str-n-copy ve str-n-cat hatalı.
+
+373
+00:55:44,899 --> 00:55:45,639
+Bu şekilde dağıtılmış.
+
+374
+00:55:45,639 --> 00:55:59,460
+Sona koyması gereken kopyalama işlemi sonrasında en sona koyması gereken sıfır değerini koymadığı durumlar oluşabiliyor.
+
+375
+00:56:00,679 --> 00:56:01,299
+Pardon.
+
+376
+00:56:04,579 --> 00:56:10,480
+O zaman da başka sıkıntılara sebep oluyor.
+
+377
+00:56:10,480 --> 00:56:15,480
+Şimdi bu durumda
+
+378
+00:56:18,483 --> 00:56:40,483
+strcopy, strcat, ncopy, ncat bunları kullanırken ya hiç kullanmıyor olmamız lazım ya da çok dikkat ediyor olmamız lazım. Mesela Windows tarafında da POSIX sintaksında değil, POSIX şeyle uyumlu değil, ismini ne vermişler?
+
+379
+00:56:40,483 --> 00:56:53,264
+strcopy underscore s, safe versiyonu şeklinde bunu vermişler. strncopy'nin birebir aynısı ama ismi farklı.
+
+380
+00:56:59,092 --> 00:57:14,831
+Nerelerde Buffer Overflow gerçekleşebilir? Exception Handler'larda. Overwrite the address of an Exception Handler in the Stack Frame. Şu ana kadar hiç Exception Handler ile ilgilenmedik ama onun da olabileceğini söylemiştim size.
+
+381
+00:57:14,831 --> 00:57:28,472
+Function Pointer'larda. Mesela PHP 4.0.2'de bundan yararlanılarak saldırı düzenlenmiş veya Microsoft'un Media Player Bitmap'leri.
+
+382
+00:57:28,472 --> 00:57:43,172
+İşte hangi formatta olduğunu gösteriyor o Bitmap. Hangi decoder'ın devreye girmesi gerektiğini, o görüntünün neyle oynatılabileceğini veyahut da sesin neyle çalınabileceğini şey yapıyor.
+
+383
+00:57:44,831 --> 00:57:54,192
+Overflowing Buffer will Overwrite Function Pointer. Niçin? Function Pointer'larda nereye yerleştiriliyor arkadaşlar?
+
+384
+00:57:55,092 --> 00:58:00,352
+Lokal değişkenlerin olduğu yere yerleştiriliyor ama lokal değişkenlerden önce yerleştiriliyor.
+
+385
+00:58:00,352 --> 00:58:11,791
+Kritik olan kısım bu. Bu durumda lokal değişkendeki taşma, az önceki 136 byte kopyalama olayını gözünüzün önünde canlandırın.
+
+386
+00:58:11,791 --> 00:58:21,532
+Taşma. Function Pointer'lar olmasaydı Stack Frame Pointer ve Return Adresi ezecekti.
+
+387
+00:58:21,652 --> 00:58:25,731
+Ama Function Pointer'ları o araya yerleştirildiği için Function Pointer'ları ezecek.
+
+388
+00:58:25,731 --> 00:58:30,512
+Peki bu durumda bu saldırının tetiklenmesi için ne gerekiyor?
+
+389
+00:58:31,012 --> 00:58:35,572
+İlgili Function Pointer'ın aktif olmasını sağlayacak bir kod akışı.
+
+390
+00:58:35,572 --> 00:58:49,432
+Genelde Switch Case yapısı Compiler tarafından optimize edilirken böyle bir Jump Table veya Function Pointer Table kullanılıyor.
+
+391
+00:58:51,432 --> 00:58:57,811
+Perl'de karşılaşılan anlatmasını kolaylaştırdığı için Perl üzerinden de gidebiliriz.
+
+392
+00:58:57,811 --> 00:59:01,132
+5.003'de karşılaşılan Long Jump Buffer'lar.
+
+393
+00:59:02,172 --> 00:59:03,952
+Long Jump ne işe yarar?
+
+394
+00:59:06,352 --> 00:59:11,811
+Intel işlemcileri Segmented Memoriler.
+
+395
+00:59:13,092 --> 00:59:15,872
+İşte 32 bitse az önce gördük değil mi?
+
+396
+00:59:15,932 --> 00:59:18,032
+32 bittik adres uzayının ne olduğunu.
+
+397
+00:59:18,751 --> 00:59:23,952
+Eğer buna sığmayan bir program parçam varsa o zaman iki tane böyle adres uzayı kullanmam lazım.
+
+398
+00:59:23,952 --> 00:59:29,572
+Bu durumda da bu adres uzayları arasında geçiş yapmam lazım.
+
+399
+00:59:30,572 --> 00:59:32,692
+Bunun için düşünülmüş bir şey Long Jump.
+
+400
+00:59:33,072 --> 00:59:38,172
+Yani bir adres uzayından diğer adres uzayına sonra oradan da buraya geri dönülebilmesi için
+
+401
+00:59:38,172 --> 00:59:45,372
+adresi sabit, belirli olan bir atlama noktası gerekli.
+
+402
+00:59:46,632 --> 00:59:49,172
+İşte buna Long Jump Buffer deniyor.
+
+403
+00:59:49,972 --> 00:59:52,592
+Başka yerlerde de karşımıza çıkıyor bu Long Jump.
+
+404
+00:59:56,019 --> 01:00:12,619
+Bu bufferları override ettiğim zaman, oraya kendi istediğim değerleri yerleştirdiğim zaman, bu bufferlar kullanılacağında orijinalde gidilmesi gereken yere gidilmiyor.
+
+405
+01:00:12,619 --> 01:00:23,340
+Onun yerine benim oraya yerleştirdiğim adrese gidiliyor. Yani temel buffer overflow saldırısındaki durumla yine karşılaşmış oluyoruz.
+
+406
+01:00:26,019 --> 01:00:36,159
+HEAP'te de benzer bir sıkıntı var arkadaşlar. HEAP alanı ne için kullanılıyor dedik? Dinamik memori için kullanılıyor dedik.
+
+407
+01:00:36,159 --> 01:00:50,280
+Bu sefer C++ açısından düşünmemiz lazım. Object Oriented programlama dillerinin Runtime Environment'ında en çok kullanılan memori bölgesi HEAP.
+
+408
+01:00:50,280 --> 01:01:00,380
+Çünkü niye? Her şey dinamik olarak oluşturuluyor veya yok ediliyor. Yani ben bir clastan bir instance oluşturmak istersen bunu stack'te yapmıyorum.
+
+409
+01:01:00,480 --> 01:01:08,099
+Bunu nerede yapıyorum? HEAP'te yapıyorum. Ben yaptığım için değil de Runtime o şekilde kodlanmış olduğu için.
+
+410
+01:01:08,099 --> 01:01:24,579
+Yine şöyle düşünün. Bir klası, base class kabul edip onu extend edip ondan gelen bir takım metotları değiştirebiliyorum. Değil mi?
+
+411
+01:01:25,320 --> 01:01:26,500
+Overwrite edebiliyorum.
+
+412
+01:01:26,500 --> 01:01:43,599
+Veya overload edebiliyorum metotları. Yani aynı metot ismi fakat farklı parametrelerle, farklı argüman değerleri, argüman tipleri ile bunları çağırıp bu sefer de overload edebiliyorum.
+
+413
+01:01:43,599 --> 01:01:51,219
+Bütün bunların düzgün bir şekilde Runtime'de yönetilebilmesi için bakın ne kullanılıyor?
+
+414
+01:01:51,539 --> 01:01:57,159
+Function Pointer'lar kullanılıyor. FP1, FP2, FP3. Metot 1, Metot 2, Metot 3.
+
+415
+01:01:57,659 --> 01:02:01,219
+Bu Function Pointer'ların tutulduğu tabloya da VTable deniyor.
+
+416
+01:02:02,259 --> 01:02:08,059
+Şimdi bu VTable'da Object tarafından gösteriliyor.
+
+417
+01:02:08,059 --> 01:02:13,619
+Bakın Object'in datası var artı VPTR'ı var. VPTR'da VTable'ı gösteriyor.
+
+418
+01:02:14,139 --> 01:02:21,759
+Peki VTable'ın önüne bir buffer denk düşerse ki denk düşmemesi için hiçbir sebep yok.
+
+419
+01:02:21,900 --> 01:02:28,219
+Bu da heap'te oluşturulan bir değişken.
+
+420
+01:02:29,279 --> 01:02:37,360
+O zaman buffer overflow olduğunda ne kısmı da overflow olacak arkadaşlar?
+
+421
+01:02:37,360 --> 01:02:39,519
+VTable kısmı da overflow olacak.
+
+422
+01:02:40,159 --> 01:02:42,920
+Bu durumda yine başa döneceğiz.
+
+423
+01:02:43,539 --> 01:02:55,539
+Function Pointer overwrite edildiğinde, overflow sonucunda, ezilme sonucunda overwrite edildiğinde,
+
+424
+01:02:55,639 --> 01:02:59,139
+onun değeri değiştirildiğinde, o Function Pointer'da kullanıldığında,
+
+425
+01:02:59,679 --> 01:03:05,500
+nasıl kod akışını değiştirebiliyorsak, burada da benzer bir şekilde kod akışını değiştirme şansımız var.
+
+426
+01:03:05,500 --> 01:03:07,659
+Bunun ayrıntısını göreceğiz.
+
+427
+01:03:07,659 --> 01:03:14,119
+Sadece şu anda kafanızda canlansın diye var bu bilgi.
+
+428
+01:03:14,599 --> 01:03:17,639
+Şimdi şurada bir örnek yapalım.
+
+429
+01:03:18,219 --> 01:03:24,199
+Browser'ın heapini nasıl kullanıp da saldırı düzenleyebiliriz diye.
+
+430
+01:03:24,920 --> 01:03:30,400
+Sol tarafta kurban var, sağ tarafta da kötü niyetli web sitesi var.
+
+431
+01:03:30,400 --> 01:03:42,360
+Bir şekilde sosyal mühendislikle veya başka bir şeyle kurban bu web sitesine yönlendiriliyor ve oradan bir sayfa yüklüyor.
+
+432
+01:03:42,360 --> 01:03:50,860
+Yüklenen sayfada kurbana saldırmak için ayarlanmış.
+
+433
+01:03:51,860 --> 01:04:09,000
+Az önce bahsettiğimiz o zarfiyetten yararlanılmasını sağlayan kod parçası var. Buradaki örnek tabii ki ne olmak zorunda? C veya C++ değil, JavaScript olacak. Çünkü niye? Web sayfalarındaki dinamik yapıyı JavaScript ile sağlıyoruz.
+
+434
+01:04:13,108 --> 01:04:27,988
+Saldırganın hedefi, browser üzerinden saldırdığı sistemi ele geçirmek. Nasıl yapacak? Send JavaScript to browser that exploits a heap overflow.
+
+435
+01:04:35,123 --> 01:04:58,083
+Bakın ne diyor? Javascript gelecek diyor. Şurada shell kod. Unescape bunu web üzerinden HTTP protokolüyle gönderirken kodluyoruz ya, o kodlamayla alakalı kısım. Değerler bozulmasın, nasılsa o şekilde aktarılsın diye yapılan bir şey.
+
+436
+01:04:58,083 --> 01:05:12,843
+Arka tarafında da bakın ne var? Overflow string var. Yani buffer'ı overflow edecek olan şey var. Kısım var. Ve cause overflow, overflow string.
+
+437
+01:05:13,503 --> 01:05:27,783
+Şimdi bakın, şurada gözünüzün önünde camlanması açısından söylüyorum. Bunlar browser tarafından interpret ediliyor aslında. Compile edilmiyor.
+
+438
+01:05:28,083 --> 01:05:41,583
+Yani Javascript satır satır işlenerek çalıştırılıyor. Şuraya gelindiğinde bir değişken oluşturulması lazım. Çünkü burası bir değişken tarifliyor.
+
+439
+01:05:42,263 --> 01:05:54,283
+Adı shell kodmuş. Bu Javascript'in runtime'ına işleniyor. Sonrasında da bunun değeri, şurada gelen değer neyse onunla ilişkilendiriliyor, onunla ilklendiriliyor.
+
+440
+01:05:54,283 --> 01:06:05,743
+Arkasından bir başka değişken daha var. Overflow string. O da yerleştiriliyor. Peki Javascript bütün bunların hepsini nerede yapıyor?
+
+441
+01:06:05,863 --> 01:06:09,283
+Execution environment'ında yapıyor. O da heap içerisinde.
+
+442
+01:06:09,283 --> 01:06:19,163
+Arkasında da bir fonksiyon var. Cause overflow. Bu fonksiyona da argüman olarak overflow string gidiyor.
+
+443
+01:06:19,923 --> 01:06:22,063
+Şimdi buradaki sorun şu.
+
+444
+01:06:22,063 --> 01:06:33,543
+Browser'da kaç tane tab açık olduğuna, ne kadar zamandan beri açık olduğuna, hangi sayfadan gelindiğine, işte ne kadar memori kullanıldığında,
+
+445
+01:06:33,703 --> 01:06:37,403
+heap'teki durumun ne olduğuna bağlı olarak böyle bir sürü şey sayabiliriz.
+
+446
+01:06:37,983 --> 01:06:41,703
+Attacker does not know where browser places shall code on the heap.
+
+447
+01:06:41,703 --> 01:06:46,303
+Bunun sabit bir adresi yok. Nereye koyduğunu bilmiyoruz.
+
+448
+01:06:46,683 --> 01:06:47,923
+Şimdi bu ciddi bir problem.
+
+449
+01:06:49,323 --> 01:06:50,823
+Onun için ne yapılıyor?
+
+450
+01:06:51,963 --> 01:06:53,143
+Heap spraying yapılıyor.
+
+451
+01:06:54,023 --> 01:06:54,983
+Mantık çok basit.
+
+452
+01:06:55,343 --> 01:06:56,483
+Knob slide vardı ya.
+
+453
+01:06:56,903 --> 01:07:00,903
+Knob slide'ın heap için düzenlenmiş hali.
+
+454
+01:07:00,903 --> 01:07:05,163
+Use Javascript to spray heap with shell kod.
+
+455
+01:07:05,923 --> 01:07:10,843
+Heap'in her yerine neyi dağıtıyoruz, neyi yerleştiriyoruz?
+
+456
+01:07:10,843 --> 01:07:12,643
+Shell kodu yerleştiriyoruz.
+
+457
+01:07:13,963 --> 01:07:17,843
+Heap'i olabildiğince shell kod ile dolduruyoruz.
+
+458
+01:07:19,003 --> 01:07:23,843
+Ve bu shell kodların önüne de knob slide'lar koyuyoruz.
+
+459
+01:07:25,003 --> 01:07:31,323
+Ancak takdir edersiniz ki knob slide'lar çok uzun, shell kod çok kısa.
+
+460
+01:07:32,863 --> 01:07:40,163
+Böylece herhangi birini tutturursak, heap'in tamamını bunlarla doldurduk ya,
+
+461
+01:07:40,163 --> 01:07:46,523
+herhangi birini tutturursak eğer, knob slide'lardan herhangi birini tutturursak,
+
+462
+01:07:47,023 --> 01:07:51,243
+knob, knob'u, knob'u, knob'u, knob'u, böyle arka arkaya knob'lar işletilerek en sonunda
+
+463
+01:07:51,243 --> 01:07:55,283
+knob'lar bizi nereye getirecek?
+
+464
+01:07:55,423 --> 01:07:57,323
+Gerçek shell koduna getirecek.
+
+465
+01:07:57,323 --> 01:08:03,403
+İkincisi de denpoint v-table pointer anywhere in spray area.
+
+466
+01:08:04,403 --> 01:08:09,443
+Yani v-table pointer'ını artık herhangi bir yere gösterecek şekilde modifiye edersek,
+
+467
+01:08:09,863 --> 01:08:10,844
+o da yeterli olacak.
+
+468
+01:08:11,443 --> 01:08:16,224
+Böylece, bakın bir tane knob slide'ı yakalamamız,
+
+469
+01:08:16,783 --> 01:08:18,663
+işte burada şurayı gösteriyor,
+
+470
+01:08:19,804 --> 01:08:21,724
+saldırının başarılı olmasını sağlayacak.
+
+471
+01:08:21,724 --> 01:08:22,644
+ne oluyor?
+
+472
+01:08:22,764 --> 01:08:23,963
+O siteye gidiyorsunuz,
+
+473
+01:08:24,323 --> 01:08:26,884
+o site size çok ufak bir shell kod,
+
+474
+01:08:27,063 --> 01:08:28,903
+bir javascript gönderiyor.
+
+475
+01:08:29,363 --> 01:08:46,263
+Ama o JavaScript'in çalışması bilgisayarı epey bir yoruyor. Çünkü heap tamamen dolduruluyor. Siz bir an ne oldu diyorsunuz, bilgisayarım niye yavaşladı diyorsunuz. Aslında o sırada heap spraying yapılıyor ve arkasından da saldırı gerçekleşiyor. Bakın heap spraying kodu da bu.
+
+476
+01:08:50,163 --> 01:09:03,344
+Intel mimarisinde NOP 90. Aynı zamanda JVM'de de Javascript'i çalıştıran da aslında bir JVM. Modified bir Java Virtual Machine.
+
+477
+01:09:03,344 --> 01:09:19,264
+Orada da Java Byte kod olarak 90. While NOP'un lenghti, işte şu iki tekstim olduğu sürece NOP artı eşittir NOP.
+
+478
+01:09:20,163 --> 01:09:25,804
+NOP'u tak tak tak tak büyütüyor çok hızlı bir şekilde. Eksponensiyel bir şekilde dikkat ederseniz.
+
+479
+01:09:26,563 --> 01:09:34,264
+Shell kod burada. Arkasından da bakın spraying yapıyor. Ne demiş? Yeni bir tane array tanımlıyorum.
+
+480
+01:09:35,903 --> 01:09:44,323
+Variable x eşittir new array. i sıfırdan bine kadar x'i eşittir NOP artı shell kod.
+
+481
+01:09:44,323 --> 01:09:52,003
+x'i bin tane elemanı var. Bunların her biri de nerede açılacak?
+
+482
+01:09:52,003 --> 01:09:53,443
+Heap'te açılacak.
+
+483
+01:09:54,563 --> 01:09:59,443
+Pointing function pointer almost anywhere in heap will call shell kod to execute.
+
+484
+01:09:59,443 --> 01:10:00,203
+Evet.
+
+485
+01:10:01,663 --> 01:10:17,443
+İşte aslında bakın zor gibi görünen, imkansızmış gibi görünen bir takım saldırıları yapmak karşımızdaki tasarımın ayrıntısını öğrendiğimizde kolaylaşabiliyor.
+
+486
+01:10:17,443 --> 01:10:18,063
+paylaşabiliyor.
+
+487
+01:10:22,163 --> 01:10:36,543
+Heap Overflow'a karşı bir takım tedbirler alınmış. Mesela bunlardan bir tanesi JavaScript stringlerini ayrı bir heap alanında saklamak.
+
+488
+01:10:39,523 --> 01:10:52,003
+Çünkü JavaScript'in her şeyi string olarak geliyor. Bütün değişkenler o şekilde geliyor. Bütün kod parçası öyle geliyor. Ama bunun bir kısmı değişkene dönüşüyor. Bir kısmı da az önce gördüğünüz gibi kodun kendisi oluyor.
+
+489
+01:10:52,163 --> 01:11:09,963
+Bunların ikisini birbirinden ayırırsanız Overflow edeceğiniz yer stringlerin olduğu yerdir. Orada da Vtable olmayacağı için ezip de az önceki gibi bir knob slide'a gösterme şansınız kalmaz.
+
+490
+01:11:09,963 --> 01:11:35,363
+Veya araya işletim sisteminin memory management özelliklerinden yararlanarak ve tabii ki işlemcinin donanım özelliklerinden yararlanarak belirli aralıklarla böyle koruma amaçlı yazma imkanı tanımayan buffer page'ler yerleştiriliyor.
+
+491
+01:11:35,363 --> 01:11:39,743
+Non-writable pages, guard pages diye geçiyor.
+
+492
+01:11:40,844 --> 01:11:43,403
+Bu şu anda daha çok kullanılan bir yöntem.
+
+493
+01:11:49,684 --> 01:11:50,684
+Şimdi...
+
+494
+01:11:58,355 --> 01:12:06,956
+Buffer overflowları nasıl bulabiliriz? Nasıl tespit edebiliriz? Mesela bir web serverdaki buffer overflowu bulmak istiyoruz.
+
+495
+01:12:12,692 --> 01:12:28,692
+Web Server'ı lokal makinemizde çalıştırıyoruz. Buna hiç durmadan, sonu buna iCatcher deniyor. Bu et işareti de olabilirdi, diyez işareti de olabilirdi, dolar işareti de olabilirdi.
+
+496
+01:12:29,511 --> 01:12:39,992
+Mesela bu örnekte 5 tane dolar işareti konulmuş. Çünkü bu saldırıdan yaptığınız zaman başarıyla parada kazanıyorsunuz ya, öyle düşünün.
+
+497
+01:12:39,992 --> 01:12:51,112
+Değişik uzunlukta inputlar vermeye başlıyoruz. Bunun için script yazıyoruz. Ama bu inputların her birinin sonunda bu 5 tane dolar işareti var.
+
+498
+01:12:51,112 --> 01:13:00,971
+Bir yerde Web Server patlıyor, göçüyor. O zaman memory dump'ını alıyoruz.
+
+499
+01:13:00,971 --> 01:13:08,891
+Ve memory dump'ının içerisinde, core dump diye de geçer bu, prosesin memorisi çünkü.
+
+500
+01:13:09,971 --> 01:13:13,152
+Bu memory dump'ın, core dump'ın içerisinde ne arıyoruz?
+
+501
+01:13:15,212 --> 01:13:16,971
+Şu 5 tane dolar işaretini.
+
+502
+01:13:18,212 --> 01:13:23,551
+Bunu bulduğumuz yer bizim overflow'u gerçekleştirdiğimiz yerdir.
+
+503
+01:13:23,551 --> 01:13:33,792
+Onun ait olduğu, o overflow'un gerçekleştiği stack frame'in ait olduğu fonksiyon da nedir arkadaşlar?
+
+504
+01:13:36,671 --> 01:13:39,671
+Buffer overflow zafiyetinin olduğu fonksiyondur.
+
+505
+01:13:39,671 --> 01:13:49,931
+Adresi biliyorum, orijinal executable'da o adrese denk düşen fonksiyonu yakalıyorum.
+
+506
+01:13:50,391 --> 01:13:58,671
+Ve artık o fonksiyona uygun bir şekilde input'unu az önceki tarif ettiğimiz tarzda oluşturuyorum.
+
+507
+01:13:58,671 --> 01:13:59,332
+Oluşturuyorum.
+
+508
+01:14:06,963 --> 01:14:11,963
+Bir saat oldu arkadaşlar. İsterseniz bir...
+
+509
+01:14:15,444 --> 01:14:21,044
+10 dakika ara verelim, buçukta tekrar bir araya gelelim.
+
+510
+01:24:26,163 --> 01:24:32,023
+Evet arkadaşlar, kaldığımız yerden devam edebiliriz. Tekrar ekran paylaşımını başlatıyorum.
+
+511
+01:24:41,427 --> 01:24:56,247
+Şimdi, temel kontrolü ele geçirme saldırısını gördük. Analizini de yaptık. Nasıl gerçekleştiğini de öğrendik.
+
+512
+01:24:57,627 --> 01:25:09,148
+Ama size demiştim, başkaları da var, başka tipleri de var. Şimdi biraz da onlardan bahsedeceğiz, onları konuşacağız.
+
+513
+01:25:09,148 --> 01:25:15,627
+Örneğin, Integer Overflow veya Double Free
+
+514
+01:25:19,956 --> 01:25:26,496
+Memoriyi malloc ile allocate ediyoruz demiştim ya, kullanımı bittikten sonra da free ile serbest bırakıyoruz.
+
+515
+01:25:31,859 --> 01:25:39,799
+Şöyle düşünün, free ile serbest bıraktığım bir adresi tekrar free ile serbest bırakmak istersem ne olur?
+
+516
+01:25:40,899 --> 01:25:48,299
+Tamamen alokasyonu ve de alokasyonu gerçekleştiren kod parçasının davranışına bağlı.
+
+517
+01:25:48,299 --> 01:26:06,579
+Normalde bunu kodlayan kişinin, bunun tasarımını yapan kişinin böyle bir durum olacağını öngörmesi ve serbest bırakılmış bir memori bölgesi tekrar serbest bırakılmaya çalışıldığında herhangi bir şey yapmadan geriye dönmesi lazım.
+
+518
+01:26:06,579 --> 01:26:21,299
+Ama görünüş o ki, bu memori menajırlarda, HIP'i yöneten, HIP alanını yöneten memori menajırlarda bu durum her zaman için düşünülmemiş.
+
+519
+01:26:21,299 --> 01:26:39,439
+Ve daha önceden serbest bırakılan bir alanın tekrar serbest bırakılması istendiğinde, memori menajır belirli bir alana bir takım bilgileri yazmış yapılan incelemeler sonucunda.
+
+520
+01:26:39,819 --> 01:26:47,799
+Tabi bütün memori menajırlar, bütün HIP yöneticiler böyle demiyorum. O dönemde saldırı gerçekleştirildiği sıradaki durumu anlatıyorum.
+
+521
+01:26:47,799 --> 01:27:02,519
+O dönemin çok popüler kod versiyonlama sistemlerinden bir tanesi olan CVS, bu zafiyetten zarar gören servislerden biri mesela.
+
+522
+01:27:03,659 --> 01:27:09,359
+Bir başka fırsat, yani kontrolü ele geçirmek için,
+
+523
+01:27:09,359 --> 01:27:21,219
+use after free, bir memori bölgesini tekrar serbest bırakmak değil de memori bölgesini serbest bıraktıktan sonra kullanmak.
+
+524
+01:27:22,059 --> 01:27:24,960
+Bu da bir zafiyet aslında.
+
+525
+01:27:25,679 --> 01:27:29,519
+Ve listede yine görüyorsunuz, format string vulnerability.
+
+526
+01:27:29,519 --> 01:27:44,519
+Şimdi, integerlarla çalışırken biliyoruz ki her integerin, her tam sayının bit sayısına bağlı olarak gösterebildiği maksimum bir değer var.
+
+527
+01:27:45,319 --> 01:27:48,059
+Peki bu maksimum değeri aşarsak ne oluyor?
+
+528
+01:27:49,479 --> 01:27:50,159
+Başa dönüyor.
+
+529
+01:27:50,159 --> 01:28:03,659
+Örneğin, 8 bit, 128 artı 128, 256 ama 8 bit de gösterebileceğimiz maksimum değer 255 olduğu için değer sıfıra dönüyor.
+
+530
+01:28:04,359 --> 01:28:12,259
+Veya işte short 16 bit, hexadecimal ff80 ile hexadecimal 80'i topluyorum.
+
+531
+01:28:12,259 --> 01:28:19,219
+Yine overflow oluşuyor ve s'in değeri sıfır oluyor.
+
+532
+01:28:19,439 --> 01:28:27,099
+Veyahut da 32 bit, m, işte hexadecimal ff, ff, ff, ff, 80 ile 80'i topluyorum.
+
+533
+01:28:27,979 --> 01:28:30,019
+Overflow ve m'in değeri sıfır.
+
+534
+01:28:30,939 --> 01:28:32,239
+Bundan yararlanabilir miyiz?
+
+535
+01:28:32,340 --> 01:28:35,939
+Yani bu zafiyeti saldırı yapmak için kullanabilir miyiz?
+
+536
+01:28:37,199 --> 01:28:37,960
+Kullanabiliriz.
+
+537
+01:28:38,920 --> 01:28:40,359
+Şimdi şu örneğe bakın.
+
+538
+01:28:40,359 --> 01:28:46,099
+fonksiyona iki tane buffer geliyor, iki tane de uzunluk geliyor.
+
+539
+01:28:47,119 --> 01:28:52,420
+Len 1, buffer 1'in uzunluğunu, len 2'de buffer 2'nin uzunluğunu ifade ediyor.
+
+540
+01:28:54,359 --> 01:29:01,119
+Fonksiyonu yazan kişi kendince tedbir almış ve demiş ki,
+
+541
+01:29:01,859 --> 01:29:08,219
+len 1 ve len 2'nin toplamı 256'dan büyükse geri dön.
+
+542
+01:29:08,219 --> 01:29:11,639
+Çünkü bizim bu kadarlık bir alanımız yok.
+
+543
+01:29:12,139 --> 01:29:12,340
+Niye?
+
+544
+01:29:16,279 --> 01:29:21,500
+Lokal değişken temp, 256'lık bir alana sahip.
+
+545
+01:29:21,579 --> 01:29:23,859
+256 byte'lık bir alana sahip.
+
+546
+01:29:25,139 --> 01:29:28,340
+Ancak burada çok ciddi bir sorun var.
+
+547
+01:29:28,340 --> 01:29:30,939
+Len 1, 80
+
+548
+01:29:32,083 --> 01:29:50,384
+Heksidesimal yani 128. Hiçbir sorun yok. Ama len 2, heksidesimal, ff, ff, ff, ff 80. Bir önceki slide'da gördüğümüz örnek. İkisinin toplamı ne verdi arkadaşlar? Sıfır verdi. Sıfır 256'dan büyük mü? Hayır.
+
+549
+01:29:50,384 --> 01:30:09,323
+Len 1 artı len 2 sıfır. O da 256'dan büyük olmadığı için mem kopiye geçildi. Birinci mem kopi bir şey yapmayacak. Çünkü len 1, heksidesimal 80, 128'e denk düşüyor.
+
+550
+01:30:09,323 --> 01:30:30,224
+256'lık alanın 128'lik alanı kullanılacak. Ama ikinci mem kopi, temp değişkeninin 128. elemanından itibaren len 2 kadar kopyalamaya çalıştığında nereyi ezip geçecek?
+
+551
+01:30:30,224 --> 01:30:48,963
+heap alanını ezip geçecek. Çünkü niye? Aşağıya doğru geliyor ya. Demek ki integer overflow'u da bu tarz bir saldırı yapmak için kullanabiliyoruz.
+
+552
+01:30:54,323 --> 01:31:00,623
+Ancak, hani ilk slide'ı hatırlayın, buffer overflow'da binli değerler falan vardı.
+
+553
+01:31:01,983 --> 01:31:03,323
+Integer overflow'un...
+
+554
+01:31:08,180 --> 01:31:28,020
+Bunun erişebildiği en yüksek değer nerede? 120'de. Demek ki daha zor. Hani demiştim ya size buffer overflow daha kolay, integer daha zor, işte format string daha zor, diğeri daha zor. Bu şekilde düşünün demiştim. Aralarında 1'e 8 oranında bir fark var.
+
+555
+01:31:28,020 --> 01:31:48,380
+Format string. C'de bol miktarda kullanıyoruz. Ekrana veya bir dosyaya basılacak olanları formatlamak adına. Ama şöyle bir fonksiyon düşünün.
+
+556
+01:31:48,380 --> 01:32:05,880
+Karakter pointer argümanı var. İçinde de printf kullanılmış. Bunun fprintf, sprintf, printf olması bir şey fark ettirmeyecek. Burada file yazıyor ve nereye yazıyor? Standart error'a yazıyor.
+
+557
+01:32:05,880 --> 01:32:32,079
+Kullanıcı demiş ki gelen string neyse aynen ben bunu printf'e aktarırım. Böylece kullanıcıya formatlama rahatlığı da sağlarım. Ama çok büyük bir hata yapmış. Şöyle ki kullanıcı %s, %s, %s, %s, %s, %s, %s, %s gönderirse ne olacak?
+
+558
+01:32:32,079 --> 01:32:39,079
+Yani 1, 2, 3, 4, 5, 6, 6, 7 tane %s.
+
+559
+01:32:42,380 --> 01:33:00,640
+Her %s ne demek? Bir string basacaksın demek. String'i basacağı adreste 32 bitlik bir pointer gerektiriyor. O zaman stack frame pointer'da bulunulan yerden itibaren 32 bitlik değeri alacak.
+
+560
+01:33:00,640 --> 01:33:23,640
+0 görene kadar ekrana basacak. Diğer %s için aynı işlemi yapacak. Diğer %s için aynı işlemi yapacak. Öbürü için aynı işlemi. Yani 7 defa, 7 tane 32 bitlik adres alıp o adreslerin içeriğini sonunda 0 olduğunu kabul ediyoruz.
+
+561
+01:33:23,640 --> 01:33:37,340
+0 görene kadar basacak. Memoride erişmemesi gereken ne kadar yer varsa erişecek. Muhtemelen de bir yerlerde yanlış bir memori erişimi olacağı için program çökecek.
+
+562
+01:33:37,340 --> 01:33:43,680
+1. madde bunu söylüyor. Most likely program will crash. Denial of service.
+
+563
+01:33:43,680 --> 01:33:59,039
+Bu arada başarısız olan her buffer overflow saldırısı programın çökmesine sebep olur. Programın çökmesine sebep oluyorsa da bu aslında saldırıyı kontrol hijacking'den neye dönüştürmüştür? Denial of service'e.
+
+564
+01:33:59,039 --> 01:34:07,240
+Yani başarısız olan buffer overflow saldırısında saldırının programı çökertmesini kastediyorum.
+
+565
+01:34:07,240 --> 01:34:13,240
+Şu da olabilir. Tedbir alındığı için şey olmuyordur ama göreceğiz. Tedbirler kısmında.
+
+566
+01:34:15,240 --> 01:34:36,240
+O yüzden buffer overflow saldırısıyla karşı karşıyaysanız saldırıya zarar vermeden atlatmak için uygulayacağınız tedbirler sonucunda ya da saldırının yanlış düzenlenmiş olması sonucunda
+
+567
+01:34:36,240 --> 01:34:48,740
+çalışan programınızın uygulamanızın sonlanması ihtimali çok yüksek. Bu da eşittir aslında servisin kesintisi yani denial of service.
+
+568
+01:34:48,740 --> 01:35:00,520
+Eğer erişilen memori adresleri programın çökmesine sebep vermiyorsa o zaman da memorinin içeriğini görüyoruz.
+
+569
+01:35:00,520 --> 01:35:01,980
+Yani erişmememiz gereken
+
+570
+01:35:02,771 --> 01:35:27,952
+Memori alanlarının içeriğini görüyoruz. Bu da mahremiyeti ortadan kaldırıyor. Çoğunlukla kullanılmayan ama format string olarak bir anlamı olan bir de %n var. %n haricindeki bütün format string yapıları okumaya yönelik ama %n yazmaya yönelik. Bu yüzden daha da tehlikeli.
+
+571
+01:35:27,952 --> 01:35:34,171
+yukarıdaki fprintf satırının aslında olması gereken hali şuydu arkadaşlar.
+
+572
+01:35:35,171 --> 01:35:40,572
+std error, std out fark etmez. Buraya %s diyecekti, şuraya da user diyecekti.
+
+573
+01:35:41,452 --> 01:35:48,032
+Kullanıcı argüman olarak ne verirse versin, bunun tamamı bir string olarak algılanacak ve basılacaktı.
+
+574
+01:35:48,992 --> 01:35:52,271
+Şu yukarıda saydığımız sıkıntıların hiçbiri yaşanmayacaktı.
+
+575
+01:35:52,271 --> 01:36:03,231
+Şimdi printf, fprintf, sprintf, vprintf, vfprintf, vsprintf bunların hepsi bu zafiyeti içeriyor.
+
+576
+01:36:04,532 --> 01:36:06,851
+Bunları kullanırken çok dikkat etmemiz gerekiyor.
+
+577
+01:36:06,851 --> 01:36:09,711
+Az önceki örneği göz önünde bulundurarak.
+
+578
+01:36:10,652 --> 01:36:21,771
+Bunlara üzerine kurulu syslog, error, warn gibi sistem servisleri de aslında bu zafiyetleri içeriyor.
+
+579
+01:36:22,271 --> 01:36:27,332
+Çünkü syslog ne yapacak? Bir file'a log bilgisi yazacak.
+
+580
+01:36:27,971 --> 01:36:32,931
+Şöyle oldu, böyle oldu, parametre buydu, saat şuydu, sonuç da buydu diye.
+
+581
+01:36:33,572 --> 01:36:35,612
+Bunları yazarken printf'den yararlanacak.
+
+582
+01:36:35,612 --> 01:36:44,091
+Eğer yanlışlık olursa, doğru kullanılmazlarsa, o zaman sadece printf zafiyeti olarak kalmayacak bu.
+
+583
+01:36:44,471 --> 01:36:48,511
+syslog, error veya warn zafiyeti haline gelecek.
+
+584
+01:36:48,511 --> 01:37:03,152
+Bakın, herhangi bir memory bölgesinin içeriğinin elde edilmesi için
+
+585
+01:37:03,152 --> 01:37:08,351
+printf, formatlayarak da sıfırları da yazarak
+
+586
+01:37:08,351 --> 01:37:15,811
+sıfır sekiz hekse desimal, sıfır sekiz hekse desimal, sıfır sekiz, yani içeriği hekse desimal olarak bas ve yüzde es.
+
+587
+01:37:19,952 --> 01:37:27,731
+Yanına şurada virgülle argüman verilmediği için her biri basacak değer çekecek.
+
+588
+01:37:27,731 --> 01:37:31,591
+Şu sekiz tane stekten değer çekecek.
+
+589
+01:37:31,711 --> 01:37:32,971
+Demek ki sekiz ilerletti.
+
+590
+01:37:33,292 --> 01:37:35,292
+İkincisi sekiz tane daha değer çekecek.
+
+591
+01:37:35,431 --> 01:37:41,671
+Bir sekiz daha, bir sekiz daha, bir sekiz daha, yirmi dört byte, pardon, otuz iki byte ilerletti.
+
+592
+01:37:41,752 --> 01:37:42,792
+Dört tane sekiz çünkü.
+
+593
+01:37:43,652 --> 01:37:49,311
+Otuz üçüncü byte'dan itibaren stek pointer içerisinde, o hani yapıyı göz önünde bulundurun lütfen.
+
+594
+01:37:50,711 --> 01:37:51,671
+Argümanların olduğu.
+
+595
+01:37:51,671 --> 01:38:04,551
+dört byte'lık bir pointer alınacak ve oradan itibaren de sıfır görülene kadar içerik ekrana yansıtılacak.
+
+596
+01:38:05,591 --> 01:38:08,152
+Bakın printf, hello yüzde n, temp.
+
+597
+01:38:09,872 --> 01:38:14,112
+Yüzde n o ana kadar kaç tane karakterin print edildiğini tutan bir değişken.
+
+598
+01:38:15,891 --> 01:38:18,992
+Hello 5 karakter, şurada da bir boşluk var, 6 karakter.
+
+599
+01:38:18,992 --> 01:38:25,612
+O yüzden bu sonuçlandığında temp değişkenine altı değeri yazılıyor.
+
+600
+01:38:26,152 --> 01:38:33,872
+Bu ekran formatlamasını çıktıların sağının solunun düzgün ayarlanmasını sağlayan, sağlamak amacıyla düşünülmüş bir özellik.
+
+601
+01:38:34,532 --> 01:38:35,992
+Ama şimdi bir şuraya bakın.
+
+602
+01:38:39,152 --> 01:38:41,671
+Kaç tane değere eriştik arkadaşlar?
+
+603
+01:38:41,971 --> 01:38:44,891
+Otuz iki tane değere eriştik.
+
+604
+01:38:44,891 --> 01:38:49,532
+O anda stekte geldiğimiz yere ne yazılacak?
+
+605
+01:38:49,671 --> 01:38:50,912
+Otuz iki değeri yazılacak.
+
+606
+01:38:51,771 --> 01:38:54,551
+Tabii ki bununla saldırı yapması çok zor.
+
+607
+01:38:54,851 --> 01:38:55,891
+Bir byte'ı değiştiriyorsunuz.
+
+608
+01:38:55,891 --> 01:39:00,891
+Ama bu özellikten yani yüzde n...
+
+609
+01:39:00,819 --> 01:39:19,779
+Den yararlanarak yapılmış saldırı var. Binlerce mi? Hayır. Çok kısıtlı. Fakat bu bize neyi gösteriyor? Fırsat verirsek eğer, her fırsat aktif bir saldırıya dönüşebiliyor.
+
+610
+01:39:19,779 --> 01:39:32,599
+Use After Free, bunu da konuşmuştuk. Malok'la allocate ediyorum. Free ile serbest bırakıyorum. Ondan sonra sanki Free ile serbest bırakmamış gibi kullanmaya devam ediyorum.
+
+611
+01:39:32,599 --> 01:39:53,500
+Bakın Chrome. Chrome aslında C++'da yazılmış ve Google'ın güvenli internet dolaşımı için oluşturduğu bir framework.
+
+612
+01:39:53,500 --> 01:40:04,319
+Chrome'yum. Oradan Chrome. Değil mi? Safe Browsing. Bir sürü şey var. Ama bakın. 2015-2020 yılları arasında, 5 sene içerisinde.
+
+613
+01:40:07,460 --> 01:40:09,500
+Chrome'daki Use After Free...
+
+614
+01:40:13,203 --> 01:40:36,804
+Zafiyetlerinin sayısı oransal olarak diğerlerine göre %36.1. Diğer kategorisinde memorinin güvenli bir şekilde, zafiyete açık bir şekilde kullanılmasından oluşan sıkıntılar %32.9.
+
+615
+01:40:36,804 --> 01:40:47,543
+Bunların haricindekiler 23.9. Security Related şeyler %7.0. High, Plus veya Impact, Stable.
+
+616
+01:40:47,543 --> 01:41:09,023
+Pardon. Aslında baktığımızda, Chrome'un içinde de bu kadar şey bir şekilde hedefe yönelik nokta odaklı işte browser zafiyetlerini ortadan kaldırmak adına oluşturulmuş bir browser'da da başka tarafta açıklar var.
+
+617
+01:41:09,523 --> 01:41:12,483
+%70'i de Memory Management ile alakalı.
+
+618
+01:41:18,676 --> 01:41:43,096
+İnternet 11, İnternet Explorer 11'de C++'da yazılmış. Bakın bu dokümente edilmiş. Tabi burada bizi daha rahat takip edelim diye bazı şeyleri temizlenmiş yapı. Şurada bir formumuz var. Formun adı form. İki tane input alanı var.
+
+619
+01:41:43,096 --> 01:42:04,036
+C1 ve C2. İşte biri text area, biri input. C1 id'sine sahip olana A1 denmiş. Diğerine de A2 denmiş. Hatta şurada ilk değeri de val olarak, values'la val olarak verilmiş.
+
+620
+01:42:04,036 --> 01:42:20,236
+Şimdi function changer. Önce ne yapıyor? Document get element by id form inner html formu sıfırladı. Yani C1 ve C2 alanları temizlendi. Hiçbir şey kalmadı.
+
+621
+01:42:20,236 --> 01:42:34,856
+Garbage collection'a gönderdim. Sonrasında da diyor ki, document C1 on property change, changer. Eğer C1 değişirse changer'ı çağırır. Yani C2'yi temizlemek istiyor aslında ikisini birden.
+
+622
+01:42:35,576 --> 01:42:38,776
+Sonra da formu resetle diyor. Şimdi bakın.
+
+623
+01:42:42,387 --> 01:42:58,827
+Formu resetlemek demek, formun bütün elemanları üzerinde dolaşıp yani c1, c2 her birinin resetini çağırmak demek. Bu kadar basit. Bunu biz yapmıyoruz, bunu framework yapıyor. Javascript'in kendisi yapıyor yapısından ötürü.
+
+624
+01:43:02,387 --> 01:43:26,228
+C1 Do Reset Causes Changer to be Cold and Free Object C2. Bunu biliyoruz. Çok güzel. Şurada bakın. C1. Değişikliğinde changer var. Değiştiği anda Do Reset, changer'ın çağrılmasına sebep oluyor.
+
+625
+01:43:26,228 --> 01:43:36,028
+Burada hani Function Pointer'ları var ya, bunun C2'nin ne olduğu önemli değil. Do Something, Do Reset, Do Something Else. Ama şurada bir Do Reset var.
+
+626
+01:43:36,028 --> 01:43:53,087
+Şimdi C2 ne olmuş durumda arkadaşlar? Boşlukta. Object C2 yok. Çünkü C1'in Do Reset'i tarafından tertemiz oldu. Şu eşitlemeden dolayı bakın. InnerHTML şuradan dolayı çöpe gönderildi.
+
+627
+01:43:58,387 --> 01:44:09,347
+Suppose attacker allocates a string of same size as vTable. Şunun boyutunda saldırgan yeni bir tane tablo oluşturdu.
+
+628
+01:44:09,347 --> 01:44:15,847
+Hop. Bunun içerisine bunu shell kodlardırdı.
+
+629
+01:44:18,307 --> 01:44:24,188
+When c2 do reset is called, attacker gets shell.
+
+630
+01:44:24,188 --> 01:44:33,908
+c1'in do reset'i c2'nin do reset'ini şey yapıyor daha doğrusu döngüsel olarak her birinin üzerinden şey yapıyor.
+
+631
+01:44:33,908 --> 01:44:42,028
+c1'in do reset'i c2'nin silinmesine sebep oluyor ama silinen bir şeyin reset'ini çağırıyoruz.
+
+632
+01:44:42,167 --> 01:44:47,268
+Orada da bir kontrol yok. Ne oldu şurada? Use after free oldu.
+
+633
+01:44:48,228 --> 01:44:53,908
+Peki bu ne kadar zor bir saldırı diye düşünürseniz bakın.
+
+634
+01:44:54,188 --> 01:44:55,827
+Function changer burada.
+
+635
+01:44:57,347 --> 01:45:03,268
+Inner HTML null'a atan yani boşluk yapılıyor, temizleniyor.
+
+636
+01:45:03,908 --> 01:45:08,927
+Şurada garbage collect. Az önce gördüğümüz şey yani şurada bir değişiklik yok. Şunun aynısı.
+
+637
+01:45:11,627 --> 01:45:13,028
+Her şey heap'te ya.
+
+638
+01:45:13,728 --> 01:45:16,967
+Bakın allocate string object to occupied vTable location.
+
+639
+01:45:17,488 --> 01:45:19,688
+String object'i buraya yerleştirmeniz yeterli.
+
+640
+01:45:19,688 --> 01:45:21,427
+Arkasında da şu kod parçası var.
+
+641
+01:45:22,188 --> 01:45:22,747
+Buyurun size.
+
+642
+01:45:24,827 --> 01:45:25,467
+Saldırı.
+
+643
+01:45:28,827 --> 01:45:30,707
+Öğreneceğimiz ders şu buradan.
+
+644
+01:45:30,867 --> 01:45:33,448
+Use after free can be a serious security vulnerability.
+
+645
+01:45:34,327 --> 01:45:37,087
+Use after free deyip geçmemek lazım.
+
+646
+01:45:37,087 --> 01:45:50,347
+Bunu dediğimiz zaman aslında çok ciddi saldırıların olabileceğini göz ardı etmiş oluyoruz ve beklemediğimiz bir yerden saldırıyla karşılaşabiliyoruz.
+
+647
+01:45:50,347 --> 01:45:54,108
+Şimdi bu haftaki dersimiz bu kadar arkadaşlar.
+
+648
+01:45:55,228 --> 01:45:57,867
+Zaten hatırlarsanız size hani slide'larımız var.
+
+649
+01:45:57,988 --> 01:46:05,347
+O slide'ların şeyine bağlı olarak, içeriğine bağlı olarak hafta hafta ilerleyeceğimizi söylemiştim.
+
+650
+01:46:05,347 --> 01:46:11,568
+Önümüzdeki hafta savunma mekanizmalarına geçeceğiz.
+
+651
+01:46:12,347 --> 01:46:12,467
+Tamam.
+
+652
+01:46:19,123 --> 01:46:44,623
+Şeyimiz bitti. Şuradan stop share yapıyorum. Bu arada geçen hafta sizinle paylaşıp paylaşmadığımdan emin değilim. E-mail adresimi bir kez daha yazayım. Bana erişmek istiyorsanız bu e-mail adresini kullanın lütfen. Yıldız e-mailimde sorun var. Tamam. Sorusu olan, yorumu olan var mı arkadaşlar?
+
+653
+01:46:57,492 --> 01:47:17,471
+[öğrenci] birincisi ders kayıt oluyor. Derse girip onu oradan dinleyebilirsin. İkincisi size ilk derste de söylemiştim. Stanford'ın CS155 dersinin slide'larından yararlanıyorum. Buradan her türlü şeyi alabilirsin.
+
+654
+01:47:26,100 --> 01:47:28,860
+Ben teşekkür ederim. Var mı başka sorusu olan arkadaşlar?
+
+655
+01:47:32,659 --> 01:47:38,619
+Evet, o zaman bugünkü dersi bitiriyorum. Hepinize iyi haftalar diliyorum. Haftaya görüşmek üzere.
