@@ -1,0 +1,2867 @@
+1
+00:04:02,644 --> 00:04:11,743
+Merhaba arkadaşlar, hoş geldiniz. Biliyorsunuz aslında hibrit sisteme geçtik bu hafta itibariyle.
+
+2
+00:04:12,340 --> 00:04:40,160
+Sadece bu haftalığına bir doktor randevum olduğu için uzaktan yapmayı tercih ettim. Sonraki haftalarda gelmek isteyen arkadaşlarla sınıfta buluşacağız ama sınıflarımızda kamera vesaire olmadığı için yine aslında aynı stilde dersi işliyor olacağım. Yine tahtayı kullanamayacağım. Ama en azından yüz yüze görüşme şansımız olur. Gelmek isteyen arkadaşlarla. Bununla alakalı zaten dersin sonunda şöyle bir yirmi kişiye çıktıktan sonra tekrar soracağım size tercihlerinizi.
+
+3
+00:04:40,339 --> 00:04:45,139
+Bugün böyle online bu haftalığına devam edelim istedim.
+
+4
+00:04:46,519 --> 00:04:52,979
+Şimdi sınav tarihlerimiz bayram sonrası diye belirlenmiş.
+
+5
+00:04:53,199 --> 00:04:56,120
+Yani sekizinci hafta değil dokuzuncu hafta olacakmış.
+
+6
+00:04:57,076 --> 00:05:23,496
+Bu da bizim ders günümüzde olursa 27'sine denk geliyor ama o gün benim bir görevlendirmem var. Onu bir rica edeceğim. Belki günde bir değişiklik olabilir. Online sınavlarla devam edeceğiz görünen o ki bu dönem. Ben belki yüz yüze yapılır mı diye ümit etmiştim ama öyle bir seçeneğimiz olmayacak gibi görünüyor. Yani bir projemiz zaten olacaktı biliyorsunuz. Belki bunu ikiye çıkartmak söz konusu olabilir.
+
+7
+00:05:24,016 --> 00:05:50,816
+Önümüzdeki hafta, onlar bir vizemiz olacak. 24 haftasına denk gelen bir zamanda. O zaten kesin. Onun dışında biliyorsunuz zaten sözlüsüm yapacağınız bir projeden bahsetmiştim. Belki bir tane daha proje söz konusu olabilir. Bununla alakalı ben size haftaya inşallah derste detaylı açıklamaları yapıyor olacağım. Artık başlayacaksınız o anlamda çalışmalarınıza.
+
+8
+00:05:52,627 --> 00:06:11,028
+Ama sınav bir tane oluyor. O konuda zaten geçen haftada söylemiştiniz bana. Biraz çözebilir miyiz bir şeyler diye. Bu hafta vakit buldukça, vakit kalırsa biraz çözmeye başlayacağız. Önümüzdeki haftada örnekler çözerek devam ederiz. Şimdilik bu şekilde planım.
+
+9
+00:06:20,531 --> 00:06:40,791
+Yani uzun uzun derken, tabi bu çok öneri şey bir konu. Çok güncel, sürekli gelişmekte olan bir konu. Pek çok uygulamada da hash fonksiyonlarını görüyoruz, encryption dahil olmak üzere. Dolayısıyla aslında uzun uzun işlemedik bir giriş yaptık neticede bu ciddi bir bilgi ve paperlar sürekli yayınlanıyor bununla alakalı. Temel şeyleri bir hatırlattım ben size.
+
+10
+00:06:48,531 --> 00:07:07,031
+Bu kullanım alanları için önemli olacak özellikleri var hash fonksiyonlarının. Bunun hakkındaki sözsel literatür vermek istedim size. Yani bu isimsel olarak bunları bilmenize bir araştırma yaptığınız vakit bunlarla karşılaştığınızda kafanızda bir şeylerin canlanmasını istiyorum.
+
+11
+00:07:07,531 --> 00:07:16,531
+Zaten bir şekilde işte kripto paralarla falanla ilgileniyorsanız biliyorsunuzdur aslında bu kavramları ama ben yine de isimsel olarak size...
+
+12
+00:07:16,531 --> 00:07:29,411
+Hızlıca bir bahsetmek istiyorum bu derste. Yani biraz uygulamalardan bahsedeceğiz ve bu uygulamalar için hangi özelliklerin önemli olduğundan bahsedeceğiz. Bu anlamda biraz fikir cimnasını yapacağız.
+
+13
+00:07:30,771 --> 00:07:36,091
+Şimdi doğrudan kriptografik olmayacak benim burada bahsedeceğim uygulamalar.
+
+14
+00:07:36,723 --> 00:07:53,283
+Hash fonksiyonları biliyorsunuz. Penitolojide kullanılıyor sıklıkla. Benimkiler doğrudan secure olanlar değil. Uygulama temelli olarak hangi özelliklerin önemli olduğunu konuşmak bu konuda biraz kafamıza bir şeyler otursun aslında amaç.
+
+15
+00:07:58,132 --> 00:08:04,532
+Bugün tahtayı aktif kullanmayı hedefliyorum. İnşallah güzel yazılarla karşılaşırız hepimiz.
+
+16
+00:08:06,072 --> 00:08:08,632
+Aslında yapmak istediğimiz şey şu arkadaşlar.
+
+17
+00:08:26,708 --> 00:08:37,848
+Bir hash fonksiyonu üreteceğim. Bu hash fonksiyonu bir input alacak ve bu input tabii ki binary bir input yani string de alsanız sıfırlardan ve birlerden nihayetinde oluşuyor.
+
+18
+00:08:37,848 --> 00:08:42,636
+Ve bu yıldız ne anlama geliyor? Buradaki bilginin...
+
+19
+00:08:42,964 --> 00:09:00,844
+Dijit olarak sayısını bilmiyorum. Yani password örneğini düşünürseniz. Bir password, beş dijitlik olabilir, on dijitlik, yüz yirmi sekiz olabilir. Buradaki sayı bilmiyorum. Yani input'umun size'ı variable bir şey burada. Değişken bir input size'ım varken bunu fix bir output'a dönüştüren.
+
+20
+00:09:01,460 --> 00:09:16,320
+Hatch fonksiyonlarından bahsediyoruz. Fixed bir output'a dönüşüyor. Fixed size daha doğrusu. Fixed output çok yanlış oldu. Fixed size bir şekilde hash üretiyorsunuz bu value'ları. Buradaki input'lara karşılık gelecek şekilde.
+
+21
+00:09:26,163 --> 00:09:43,763
+İlk başta belki dijital bir imzayla imzalanmış olabilir. Server upload edilmiş bir dosya olabilir. Bunun gerçekten o dosya olup olmadığını verify etmek istiyorsunuz. Böyle bir uygulamada dosyanız aslında public olduğu için kullanacağımız hash fonksiyon da secret bir fonksiyon değil.
+
+22
+00:09:54,163 --> 00:10:04,163
+Ayrı dökümanım olsun. Bu iki dökümanım hash fonksiyonuyla hashleniyor ve iki farklı değer üretiliyor bunlar için.
+
+23
+00:10:07,635 --> 00:10:32,395
+Şimdi benim valide etmek istediğim dosyam m1 olsun. Bunun ürettiği value h1 olsun. Şimdi kötü niyetli bir kişi bu m1'i değiştirip m2 haline getirebilir. Yani m2 dosyasını oluşturabilir m1 yerine, haline getirebilir demeyeyim. Ve öyle bir m2 dosyası oluşturuyor ki bu ikisinin hash fonksiyonları birbirine eşit olur. Ama bunlar birbirine eşit olmaz.
+
+24
+00:10:33,043 --> 00:10:42,583
+İşte böyle bir durumla baş edecek fonksiyonlar üretmemiz gerekiyor bizim. Bu tarz uygulamalar için mesela dosya validasyonu gibi ya da password validasyonu gibi.
+
+25
+00:10:43,443 --> 00:11:01,283
+İki farklı input için farklı output var. Üretiliyor olması gerekir. Aynı output'u üretmiyor olması gerekir. Aslında biz bunu gördük. Değil mi? Collision'dan bahsediyorum şu an. Collision örneğin önemli özelliklerden bir tanesi. Tek tek şimdi özelliklerin üzerinden geçeceğim.
+
+26
+00:11:01,283 --> 00:11:09,723
+Şimdi hangi mesela şu, şunları mutlaka duymuşsunuzdur. MD4, MD5.
+
+27
+00:11:12,820 --> 00:11:14,460
+Şah 1, Şah 256
+
+28
+00:11:19,251 --> 00:11:34,091
+Bunlar içerisinde hash fonksiyonlarından faydalanan kripto algoritmaları, kriptograf algoritmaları. Bunların aslında temel olarak iki üzere örneğin.
+
+29
+00:11:35,187 --> 00:11:56,087
+64'lük bir security level sağlamaları beklenmiş. Buradaki level'dan kast edilen şey şu, tüm bu algoritmalar aslında brute force bir şekilde kırılmaya müsait. Sürekli denerseniz bir kollisionla rastlama imkanınız var. Burada denemelerin ne kadar uzun sürdüğü aslında buradaki algoritmaların güvenliğini belirliyor.
+
+30
+00:11:58,464 --> 00:12:25,084
+Mesela MD5 için hepsi için aslında iki yüzler altmış dördü sağlamaları bekleniyor ama mesela MD5 iki yüzleri otuz edide kırıldığı ispatlanmış. Mesela Şabir iki yüzleri seksen için tasarlanmış ama iki yüzleri altmış biri de kırılabiliyor falan. Dolayısıyla bu aslında sürekli gelişen bir teknoloji var burada. Bununla alakalı makaleler var. İlginizi çekiyorsa karıştırabilirsiniz.
+
+31
+00:12:25,600 --> 00:12:30,100
+Şimdi Desirable Properties ile başlayalım. Tek tek üzerinden geçelim.
+
+32
+00:12:40,659 --> 00:12:48,599
+Bir tanesi bunların tek yönlü olma. One Way.
+
+33
+00:12:48,599 --> 00:12:56,839
+Kusaca O ve One Way'niz. Yani aslında One Way'niz şunu söylüyor bize.
+
+34
+00:13:12,275 --> 00:13:29,655
+Bir output verildiğinde, bir hash value verildiğinde bu hash value üretecek, verecek input'un bulunmasının zor olması gerekiyor.
+
+35
+00:13:40,403 --> 00:13:59,624
+One Way'nız böyle bir şey. Yani aslında şöyle olmalı bir yandan. Bir x değeriniz var. Buradan hx'e geçiş yapıyorsunuz. Geçiş yapması kolay olmalı. H fonksiyonunu üretmek çok uzun zaman almamalı. Yani bu da sizi yavaşlatacak bir şeydir. Ama geriye dönüş zor olmalı.
+
+36
+00:14:01,748 --> 00:14:10,888
+Zaten %100 van ve yenisi garanti edemeyebilirsiniz ama mümkün olduğunca katmanlarını arttırarak kullanmanız seç fonksiyonu. Burayı sağlamaya çalışıyorsunuz.
+
+37
+00:14:18,100 --> 00:14:35,100
+Mesela bir örnek. Biz ne yaptık şimdiye kadar? Mod kullanıp asal sayıları kullanarak hash fonksiyonları ürettik. X mod P mesela hash value'umuzu veriyordu.
+
+38
+00:14:45,620 --> 00:14:55,620
+Bulmak isteseniz ne yaparsınız mesela? Tek tek deneyeceksiniz değil mi? Bunu aritmatesinden faydalanarak. Yani diyeceksiniz ki...
+
+39
+00:14:59,187 --> 00:15:07,927
+Aslında X bana böyle bir şekilde ulaşabilirim. A'nın farklı değerleri için deneme yaparım ve vultip force bir şekilde bu işi çözebilirim diyeceksiniz.
+
+40
+00:15:07,927 --> 00:15:19,827
+İşte bizim bu kullandığımız ayolitim aslında 1-way değilmiş. 1-way olmasını sağlamak için de geri dönüşü zorlaştıracak adımlar eklememiz gerekiyor fonksiyonumuza.
+
+41
+00:15:28,659 --> 00:15:29,740
+Özellik.
+
+42
+00:15:38,227 --> 00:15:41,048
+Kollusion korumalı olması.
+
+43
+00:15:50,131 --> 00:15:51,947
+Pollution Resistance olması.
+
+44
+00:15:56,628 --> 00:15:59,128
+Bu ne demek? Collision Resistance olması.
+
+45
+00:16:26,227 --> 00:16:52,847
+Bir X ve X üstü pair'ının bulunması feasible olmamalı, zor olmamalı. Öyle ki bu ikisi birbirinden farklı olacaklar ama hash fonksiyonları aynı olacak. Yani kod ucuna karşı korumalı olması demek bu demek. İki farklı input için aynı hash'i üretme olasılığının düşük olmasını bekliyorsunuz. Bu iki farklı input çiftinin aynı hash'i verecek input çiftinin bulunmasını zorlaştıracak bir fonksiyon üretmeye çalışıyorsunuz.
+
+46
+00:16:53,268 --> 00:16:57,268
+Mesela bu özellik, özellikle password saklamak için önemli olabilir.
+
+47
+00:16:59,268 --> 00:17:00,268
+Ama...
+
+48
+00:17:00,659 --> 00:17:27,579
+Örneğin, bir dictionary create edecekseniz, programlama diliniz için örneğin, bir lookup table gibi bir şey yapacaksanız, o zaman burada mesela şabir gibi çok kompleks bir fonksiyon kullanmak istemeyeceksiniz. Çünkü computational time önemli hale gelecek sizin için. Güvenlikten daha önemli hale gelecek. Birkaç kollajin çok sorun olmayacak. Onu bilinçli listele çözebileceksiniz. Ama orada hızlı bir şekilde sonuca ulaşmak isteyeceksiniz.
+
+49
+00:17:28,660 --> 00:17:32,900
+Tüm bu özellikler uygulamaya bağımlı olarak aslında önemli hale geliyor.
+
+50
+00:17:35,460 --> 00:17:40,259
+Diğer bir özellik, aslında üsttekinin benzeri.
+
+51
+00:17:55,155 --> 00:18:06,275
+Bu şöyle diğerine benziyor ama yine Collusion ile alakalı. Ama bir tane x verildiği vakit.
+
+52
+00:18:14,612 --> 00:18:22,291
+Bu aynı hash fonksiyonunu verecek bir başka input bulmanın zorluğuyla alakalı.
+
+53
+00:18:22,291 --> 00:18:34,072
+Yani Collision Resistance'da aynı value'yu veren çifti iki ayrı x çiftini bulmaya çalışırken, burada bir tanesi elinizdeyken diğerini bulmaya çalışıyorsunuz.
+
+54
+00:18:34,072 --> 00:18:41,231
+Aslında birbirini kapsayan bir şey bu. Yani bir tanesi bu özelliklerden.
+
+55
+00:18:41,523 --> 00:18:50,243
+Yani bir fonksiyon Collision Resistance'a sahipse, Target Collision Resistance'a da sahip oluyor zaten. Bu bunun biraz daha white versiyonu gibi.
+
+56
+00:18:50,243 --> 00:19:00,923
+Pissado Randomness var. Bunu zaten aslında sürekli kullandık. Yani bir fonksiyon ürettiğiniz vakit o fonksiyonun random gibi görünmesine.
+
+57
+00:19:01,044 --> 00:19:15,384
+Sağlamak aslında burada hedef. Ama bunu tamamen random olmasını sağlayamadığınız için PISODO random olmasını sağlamaya çalışıyorsunuz. Prime Number'ları kullanarak üretmemiz de aslında buradan kaynaklanıyordu. PISODO random görünüşte olsun diye.
+
+58
+00:19:18,124 --> 00:19:20,024
+Bunu yine isimsel olarak şöyle bir yazayım.
+
+59
+00:19:28,500 --> 00:19:34,599
+Bir diğer tanesi, non-maliability.
+
+60
+00:19:45,172 --> 00:19:54,852
+Tahtaya daha iyi yazıyorum arkadaşlar. Sınıfta bir araya gelirsek artık bu sene olmaz da sizinle bilmiyorum ne zaman bir araya gireriz. Gerçekten yazı o kadar kötü değil normalde de.
+
+61
+00:19:57,492 --> 00:19:59,092
+Diyin bakayım. Ne yapayım?
+
+62
+00:20:04,084 --> 00:20:05,584
+Şimdi bunu da tanımış öyle.
+
+63
+00:20:27,220 --> 00:20:32,259
+Biraz değişik. Bunun uygulama örneğini verince birazcık daha kafamıza oturacak.
+
+64
+00:20:41,044 --> 00:20:48,604
+Şimdi 1hx verildiği vakit
+
+65
+00:20:52,372 --> 00:21:00,132
+Elimizde HX fonksiyonu varken bir HX' prime oluşturmakten bahsediyoruz burada.
+
+66
+00:21:01,592 --> 00:21:14,132
+X ve X'ın observe edilebilir, kanıtlanabilir bir ilişkisi olsun aralarında.
+
+67
+00:21:18,592 --> 00:21:22,791
+Kanıtlanabilir bir ilişkisi varken,
+
+68
+00:21:24,819 --> 00:21:33,819
+Bana yalnızca bir hash fonksiyonu verdiğinde, biraz hesap yaparak benim için başka bir hash yaratmak mümkün olması demek.
+
+69
+00:21:33,819 --> 00:21:39,819
+Malibality'nden malibality'de bunu sağlamayan, yani bundan koruyan bizi fonksiyonlar demek.
+
+70
+00:21:39,819 --> 00:21:51,819
+Yani bana yalnızca hash verildiğinde, bu hash, şu verildiğinde bana, bu verildiğinde, hash x prime'a yaratmam mümkün olmamalı.
+
+71
+00:21:52,276 --> 00:22:08,436
+Öyle ki inputlarım benim birbiriyle ilişkili olduğunda, yani bir tanesi x kendi yarı x artı 1 olduğunda ve bana hx verildiğinde ben bu bilgilerden yola çıkarak şunu yaratamamalıyım.
+
+72
+00:22:09,203 --> 00:22:20,203
+Bunu sağlayacak fonksiyonlar üretmek zorundayım. Kanıtlanabilir bir ilişki varsa mevcut inputumdan ve hashimden yola çıkarak yeni bir hash yaratamamam gerekiyor.
+
+73
+00:22:20,203 --> 00:22:29,203
+Buna da non-manability deniyor. Biraz sonra zaten application'dan bahsedince bunu birazcık da anlayacaksınız oturacak kafamıza.
+
+74
+00:22:29,203 --> 00:22:36,203
+Şimdi bu özellikler arasında bir ilişki var mı? Nasıl bir ilişki var? Ona biraz bakalım.
+
+75
+00:22:36,243 --> 00:22:36,884
+Pardon.
+
+76
+00:22:43,988 --> 00:22:56,668
+Mesela neyi az önce zaten konuşmuştuk? Collusion Resistance ile Target Collusion Resistance'ı konuşmuştuk.
+
+77
+00:22:58,608 --> 00:23:04,548
+Demiştik ki eğer bir fonksiyon Collusion Resistance'a zaten Target Collusion Resistance oluyor.
+
+78
+00:23:11,347 --> 00:23:23,548
+Arasında böyle bir ilişki kurabilir miyiz? Yani her poloji resistant olan fonksiyon aynı zamanda one way'dir. Yani tek yönlüdür, geri döndürülemez diyebilir miyiz mesela? Bununla alakalı ne düşünüyorsunuz?
+
+79
+00:23:26,963 --> 00:23:27,627
+Var mı?
+
+80
+00:23:30,932 --> 00:23:55,731
+Mesela şöyle bir şey yaratabilir miyiz? Bir tane fonksiyon oluşturalım. Hash fonksiyon oluşturalım. Bu fonksiyon one way olsun. Aynı zamanda da TCR olsun. Yani Target Collision Resistance'a sahip olsun. Şimdi bu hash fonksiyonunu kullanarak yeni bir fonksiyon create etmeye çalışalım. Hala one way olsun ama Collision Resistance'ı da bozalım mesela bunu. Böyle bir şey yapabilir miyiz?
+
+81
+00:23:59,251 --> 00:24:22,592
+One way ise çok kolay değil sanki. One way olması çok kolay değil. Doğru, one way olması çok kolay değil. Yok, öyle demedim. One way ise çok kolay değil söylediğinizi yapmak hocam. One way ise TCR'ını bozmak kolay değil mi demek istiyorum. Evet. Tamam. Peki bakalım şimdi ne yapabiliriz?
+
+82
+00:24:25,715 --> 00:24:48,635
+Şimdi bir edge fonksiyonu düşünüyorum. Bunun inputları var. Böyle gidiyor. X1, X2, X3. Yani bunlar sizin bitleriniz. Bu da bir output üretti size. D dijit olan bir output üretti.
+
+83
+00:24:54,324 --> 00:25:04,824
+One Way olduğunu, aynı zamanda da Target Collision Resistance'a sahip olduğunu resüm ediyorum. Şu anki şeyim bu.
+
+84
+00:25:04,824 --> 00:25:15,276
+Bunu kullanarak, bu h'yi kullanarak öyle bir fonksiyon yaratacağım ki hala One Way olacak. Ama şunu bulacağım. Nasıl yapabilirim ona bakacağız.
+
+85
+00:25:16,500 --> 00:25:26,500
+Bu anlatacağım şey, şu an zaten diyelim ya secure değil aslında ama bunun bir yolunun olabildiğini göstermek için bir örnek. Kafanızda bir şeyler otursun diye.
+
+86
+00:25:28,500 --> 00:25:40,460
+Şimdi eğer ben bunun page fonksiyonu input'larına ya da output'larına, şuralara ya da şuralara bir şeyler eklersem, daha karmaşık hale getirirsem.
+
+87
+00:25:40,884 --> 00:26:07,764
+Ne olur? One Way'nısı bozmuş olur muyum? Olmayayım. Olmaz. Çünkü aslında One Way'nısı karmaşıklıkla birlikte, fonksiyonlu karmaşıklığıyla birlikte etkisini arttıran bir şey. Yani siz ne kadar bu fonksiyonlu karmaşık hale getirirsiniz, moda aldınız, bir daha moda aldınız, bir daha moda aldınız mesela yapıyorduk ki. Hani Collusion Resistance'ı arttırmak için yapıyorduk aynı zamanda. Bunlar One Way'nısı da hizmet ediyor. Burada arttırarak buradaki şeyleri, katmanları ben One Way olmasını
+
+88
+00:26:08,147 --> 00:26:19,787
+önüne geçmiş olmuyorum, engellemiş olmuyorum. Buradan yola çıkarak mesela şöyle bir şey yapabilir miyim? Şuradaki yapıpların bir tanesine
+
+89
+00:26:24,692 --> 00:26:26,352
+Bir XOR ekleyeceğim.
+
+90
+00:26:30,996 --> 00:26:42,196
+X1 Artık A ve B bitlerinin XOR edilmesiyle oluşan bir input biti haline gelsin istiyorum. Böyle bir şey ekledim.
+
+91
+00:26:42,196 --> 00:26:51,596
+İmputlardan birine bir XOR gate ekledim. Dolayısıyla yeni fonksiyonum artık Cache fonksiyonum biraz değişti bu hale geldi.
+
+92
+00:26:51,596 --> 00:26:55,996
+Şimdi bu durumda aslında şöyle oluyor değil mi?
+
+93
+00:26:57,172 --> 00:27:07,392
+Bu yeni fonksiyonlumun inputları neler? A'yı alıyor, B'yi alıyor, X2'yi alıyor, X3'ü alıyor, X'e ne kadar alıyor.
+
+94
+00:27:08,851 --> 00:27:19,652
+Önceki neydi? Önceki aslında X1 alıyordu. X1 yerine şu an bunların ilk zorlanmış halini alacak.
+
+95
+00:27:21,807 --> 00:27:32,207
+Yani bunu x prime yaptım ben ama aslında bu ikisini ilk zorlayıp verdiğinizde tek bir x olarak verdiğinizde hala h'i üretmiş oluyorsunuz.
+
+96
+00:27:32,768 --> 00:27:36,407
+Yani şöyle tanımlarsam iki defa şekli çizmemek için böyle yaptım.
+
+97
+00:27:40,756 --> 00:27:51,496
+Bunlar x2, x kare, x küp değil bu arada. Altlarına yazmam gerekiyordu, özür dilerim. Şöyle. Kafanızı karıştırır mı, onu sileyim mi arkadaşlar sizin için?
+
+98
+00:27:59,923 --> 00:28:00,715
+Şimdi ben.
+
+99
+00:28:09,203 --> 00:28:21,223
+Şimdi bu şöyle iki fonksiyonum oldu. Bu durumda ben bu yeni fonksiyonum için ne söyleyebilirim? Bu yeni ürettiğim fonksiyon.
+
+100
+00:28:25,683 --> 00:28:39,663
+OneWay mi hala mesela? A ile B yerine bunun XOR'unu verip koyduğum vakit yeni ürettiğim H'prime fonksiyonu bu ikisini alıp kullanan hala OneWay midir? H1V iken.
+
+101
+00:28:43,508 --> 00:28:54,668
+Bunway midir? Oldu mu Bunway nesine? XOR nasıl çalışıyordu? İkisi aynı olduğu vakitte. Yani iki ayrı bitin aynı olup olmadığına bakıyordu aslında.
+
+102
+00:28:56,147 --> 00:29:11,087
+Şu an ben bunları XOR'layıp verdiğim zaman diğer bitleri değiştirmediğim için, diğer bitler aynen kaldığı için, siz eğer bir one way olduğunu bildiğiniz bir fonksiyonunuz varsa input'unuzu geri dönüp dönmediğine bakıyorsunuz.
+
+103
+00:29:11,087 --> 00:29:22,147
+Sizin bunun başına bir şeyler ekliyor olmanız, fonksiyon zaten diğer kısımları için, sonrası için aynı sonucu vereceğinden dolayı sizin one way'inizi etkilemeyecek.
+
+104
+00:29:24,147 --> 00:29:32,507
+Bilgiye iki biteklemiş oluyorsunuz ama Van Venis'i bozan bir şey değil bu. Peki, koloji rezistansı bozuyor mu? Ona bakalım.
+
+105
+00:29:42,324 --> 00:29:53,844
+Şimdi şununla X'i zor kullandığım için A'nın 1 olduğu, B'nin 1 olduğu X2 tat tat X'en.
+
+106
+00:30:08,723 --> 00:30:23,183
+Bunu verdiğinizde ne olacak? Şu ikisinin ürettiği birinci değerle bu ikisinin ürettiği birbirine eşit olduğu için burada siz bol bol collusiona rast gelir hale geldiniz.
+
+107
+00:30:23,183 --> 00:30:33,683
+Yani aslında one venus'ınız bozulmadı ama collusion resistance'ını bulacak bir hale getirmiş oldunuz. Bunların aynı olduğu iki ayrı fonksiyon artık elinizde.
+
+108
+00:30:34,355 --> 00:30:57,836
+Demek ki ben bir zorlama yaparak bu işi değiştirebiliyorum. Var mı soru? Bir sürü soru gelmiş mi? Ne onlar? Bakayım. Evet, hala van ve bozuldu. Süper, beni teyit eden mesajlar görünce mutlu oluyorum. Tamam. Şimdi, burası tamamsa bir de bunun tersini düşünelim.
+
+109
+00:31:03,059 --> 00:31:05,999
+Not aldınız mı? Şu an tahtta hissediyorum arkadaşlar.
+
+110
+00:31:08,079 --> 00:31:08,479
+Şimdi
+
+111
+00:31:08,479 --> 00:31:12,939
+ne yapmaya çalışıyorum?
+
+112
+00:31:13,719 --> 00:31:14,639
+VanVey'i bozacağım.
+
+113
+00:31:17,359 --> 00:31:18,019
+VanVey'i
+
+114
+00:31:18,019 --> 00:31:20,799
+bozalım.
+
+115
+00:31:22,419 --> 00:31:23,179
+Ama hala
+
+116
+00:31:23,179 --> 00:31:26,159
+Target Colourge Resistance
+
+117
+00:31:26,159 --> 00:31:27,339
+kalsın.
+
+118
+00:31:28,379 --> 00:31:30,259
+Bunu sağlamaya çalışacağım.
+
+119
+00:31:30,932 --> 00:31:45,071
+Aynı fonksiyonum için. Yine şuradaki H fonksiyonum için. Şuradaki H fonksiyonum için ilk baştaki H fonksiyonum var artık yok.
+
+120
+00:31:46,132 --> 00:31:52,991
+Buradaki H fonksiyonum için. Şimdi size birazcık düşünme vakti vereyim. Bu tarz bir şekilde bunu nasıl yaparsınız ona bakın.
+
+121
+00:31:52,991 --> 00:31:56,152
+X1
+
+122
+00:31:57,236 --> 00:32:00,636
+x3xn ve d üretilen.
+
+123
+00:32:03,276 --> 00:32:13,636
+Vanley'i bozacaksınız ama Collusion Resistance'ı bozmayacaksınız. Böyle bir şey tasarlayabilir misiniz? Mevcut yapısından h'in mevcut yapısından fayda alarak.
+
+124
+00:32:15,636 --> 00:32:18,036
+Ne yapabilirsiniz? Bir düşünün bakalım.
+
+125
+00:32:48,660 --> 00:32:50,800
+Var mı? Fikir.
+
+126
+00:32:56,660 --> 00:33:06,320
+Dünkü mailim geldi değil mi siz arkadaşlar? Yoksa burada zaten online devam etmek isteyen arkadaşlarımı görüyorum. Dünkü mailimi aldınız mı?
+
+127
+00:33:07,080 --> 00:33:07,300
+Evet.
+
+128
+00:33:08,000 --> 00:33:12,940
+Tamam, süper. Sizin kendi aranızda bir haberleşme grubunuz var mı?
+
+129
+00:33:15,155 --> 00:33:16,296
+Evet, var hocam.
+
+130
+00:33:16,496 --> 00:33:18,336
+WhatsApp grubunuz mu var?
+
+131
+00:33:18,536 --> 00:33:18,796
+Evet.
+
+132
+00:33:21,076 --> 00:33:26,536
+Yok, şaka yapıyorum. Maillerinizi konsol edin. Dedikodumu yapmayın yeter. Bu sorun değil.
+
+133
+00:33:27,215 --> 00:33:30,096
+Şimdi, bakalım nasıl bir şey yapabilirim?
+
+134
+00:33:33,536 --> 00:33:35,556
+Yeni bir fonksiyon create edeceğim.
+
+135
+00:33:37,336 --> 00:33:38,756
+Şöyle bir şey yapabilir miyim mesela?
+
+136
+00:33:41,364 --> 00:33:43,324
+Öyle bir fonksiyon create edeyim ki.
+
+137
+00:33:46,584 --> 00:33:49,804
+Bakın [öğrenci] da benim gibi gruba dahil olmak istiyor arkadaşlar.
+
+138
+00:33:50,844 --> 00:33:51,584
+Onu dahil edin.
+
+139
+00:34:02,804 --> 00:34:08,403
+Şimdi önce yazalım, sonra size açıklayacağım.
+
+140
+00:34:13,652 --> 00:34:17,231
+Yeni bir fonksiyon create ettim. Bu fonksiyon şöyle çalışıyor.
+
+141
+00:34:18,251 --> 00:34:26,192
+Bir n var. Burada bunun input uzunluğu, maksimum uzunluk örneği password'ın alabileceği gibi düşünün. Bir n değerimiz var.
+
+142
+00:34:26,452 --> 00:34:35,152
+Girilen input'un boyutu, eğer boyut yani length'i bu n'den küçükse o zaman ben bunun başına 0 ekleyeyim.
+
+143
+00:34:36,403 --> 00:34:52,844
+Normal input'un başına sıfırları ekleyeyim, n'e tamamlayıncaya kadar ve bunu hash fonksiyonu olarak çıkartayım dışarıya. Her zaman bir hash fonksiyonunun illa o sayıları bir işlemlerden, prime number'larla moda almalardan geçmesi gerekmiyor. Benim yazacağım bir şey bu. Başına sıfır ekleyeyim ve çıkartayım.
+
+144
+00:34:52,844 --> 00:35:03,844
+Eğer değilse, yani eğer n'den küçük değilse, o zaman da hash fonksiyonunun, values'unun yani çıkan values'unun başına bir ekleyeyim.
+
+145
+00:35:05,364 --> 00:35:10,164
+Bu durumda bu özelliklere ne olur?
+
+146
+00:35:10,164 --> 00:35:12,164
+One-Venice neydi?
+
+147
+00:35:12,164 --> 00:35:19,564
+Output üretildiği vakit, o output üzerinde brute force bir şekilde eğer kötü niyetli bir kişi denemeler yapıyorsa ve x'i buluyorsa,
+
+148
+00:35:19,564 --> 00:35:22,564
+burada One-Venice yok diyorduk. One-Venice'i bozduk mu?
+
+149
+00:35:23,764 --> 00:35:49,884
+Bozduk. Nasıl bozduk? Çünkü benim elimde output olarak başında sıfır olan, x'in daha az boyuttaki değerleri için başında sıfır olan bir x var. Output olarak bu var. Dolayısıyla burada işte o kötü niyetli kişi deneyerek buradaki sıfırları silip x'i elde etmeye yoluna gidebilir ve bunu başarabilir. Dolayısıyla ben var ve van veynisi bozdum.
+
+150
+00:35:50,675 --> 00:36:02,876
+Peki TCR'ı bozdun mu? Şimdi benim zaten assumption'ım, bu ilk baştaki H'ye dair assumption'ım bunun TCR ve VanVay olmasıydı biliyorsunuz. Dolayısıyla H fonksiyonu zaten TCR.
+
+151
+00:36:02,876 --> 00:36:09,255
+Şimdi ben burada bu üretilen V'nin başına bir tane bir eklediğim vakit.
+
+152
+00:36:09,811 --> 00:36:32,431
+Bunun TSE ağırlığı, yani Collegian Resistance'ına bir zeval gelmiş oluyor mu? Olmuyor. Çünkü zaten sonunda, yani ilk bitinin daha sonra ürettiği değerler her seferinde farklı. Bunun başına bir bir eklediğiniz vakit iki ayrı hash fonksiyonu elde etmiyorsunuz. Başında bir olan ve sonra unique olan değerleriniz var. Dolayısıyla aslında Collegian Resistance ile alakalı bir sıkıntı yaşamıyorsunuz.
+
+153
+00:36:35,347 --> 00:36:39,507
+One Way nasıl bulmuş oluyor musunuz?
+
+154
+00:36:52,820 --> 00:37:16,199
+Yani aslında şöyle söyleyeyim. X'in şey değerleri için, one venus, X'in küçük değerleri için one venus ile alakalı bir sıkıntı yaşıyor musunuz? Yaşamıyorsunuz. Onları zaten bozmuyorsunuz. Onlar zaten aynı ikiye sahip olmadığı için farklı değerleri üretiyorlar. Dolayısıyla şu an one venus'ı bozdunuz ama TCR'i bozmadan kaldığınız bir fonksiyonu elde ettiniz.
+
+155
+00:37:24,211 --> 00:37:24,671
+Aksolo.
+
+156
+00:37:33,460 --> 00:37:35,260
+Soru var mı? Anlaşıldı mı?
+
+157
+00:37:41,139 --> 00:37:42,939
+Peki, devam ediyorum o zaman.
+
+158
+00:37:42,939 --> 00:37:45,939
+O, hımm.
+
+159
+00:37:47,559 --> 00:37:51,039
+Yine, şimdi.
+
+160
+00:37:52,719 --> 00:37:56,099
+Artık application'lar hakkında konuşmaya başlayabiliriz.
+
+161
+00:38:17,460 --> 00:38:18,360
+Password Storage.
+
+162
+00:38:22,039 --> 00:38:25,020
+Hash fonksiyonlarının kullanıldığı bir uygulama.
+
+163
+00:38:26,199 --> 00:38:27,360
+Aslında mantığı şu.
+
+164
+00:38:30,100 --> 00:38:34,079
+Bir yerde şifre verifikasyonu yapan.
+
+165
+00:38:35,579 --> 00:38:38,680
+Yani sizin bir şifreyle bir sisteme girmenizi sağlayacak.
+
+166
+00:38:39,079 --> 00:38:40,420
+Login olmanızı sağlayacak.
+
+167
+00:38:41,280 --> 00:38:42,739
+Bir application'ınız var.
+
+168
+00:38:43,251 --> 00:39:00,911
+Bu durumda ben password'ü kontrol etmek zorundayım. Girmek isteyen kişinin password'ünü kontrol etmek zorundayım. Dolayısıyla saklamak zorundayım aslında. Ama password'ün kendisini saklamak yerine hash fonksiyonunu saklayalım.
+
+169
+00:39:06,931 --> 00:39:14,811
+Yani biri ele geçirirse benim bu dosyamı, insanların şifrelerini ele geçirmesin de hashlerini ele geçirsin.
+
+170
+00:39:15,811 --> 00:39:19,431
+Dolayısıyla direkt şifrelerini vermediğim için korumuş oluyorum onları.
+
+171
+00:39:21,271 --> 00:39:26,731
+Şimdi bu sistem şifremi kaybedersem ben kullanıcı olarak, tabi o zaman işime yaramayacak.
+
+172
+00:39:28,551 --> 00:39:33,711
+Bunun için farklı bir şeyler yapmak gerekiyor ama içeri girmemi sağlayacak bir sistemden bahsediyorum şu an.
+
+173
+00:39:34,483 --> 00:39:50,943
+Bunun için, böyle bir sistem için, şurada bahsettiğim, az önce bahsettiğim One-Wayness, Collusion Resistance, Target Collusion Resistance, Non-Malleability. Bunların hangilerine ihtiyaç var sizce? Hangisi en önemlisi?
+
+174
+00:39:55,443 --> 00:39:56,123
+Van V.
+
+175
+00:39:56,423 --> 00:39:57,644
+Van V. Değil mi?
+
+176
+00:39:59,364 --> 00:40:00,564
+Burada Van V çok önemli.
+
+177
+00:40:05,492 --> 00:40:18,592
+Çünkü ne yapmam gerekiyor? Bir restore ettiğim hash'i ele geçirebilir. Kötü niyetli biri ne yapabilir? Üzerinden gidiyorum. Bunu ele geçirebilir ama buna doğru dönmemesi gerekiyor hiçbir şekilde. Dolayısıyla bu önemli benim için.
+
+178
+00:40:20,692 --> 00:40:27,592
+Peki bu örnekte mesela Collusion Resistance ya da Target Collusion Resistance bunların önemi ne derece sizce?
+
+179
+00:40:32,340 --> 00:40:36,980
+Mesela kollajin rezistansı sağlamazsa ne yaparsınız? Nasıl bir sorunla karşılaşırsınız?
+
+180
+00:40:38,980 --> 00:40:41,000
+Başka bir parola ile de girebiliriz.
+
+181
+00:40:41,000 --> 00:40:54,699
+Girebilirsiniz. Kötü niyetli bir açısından düşünelim. Bunlar da tabii önemli, bunlar da gerekli ama eğer sizin yeterince uzun bir şifreniz varsa kollajin ihtimaliniz zaten düşük oluyor.
+
+182
+00:40:55,860 --> 00:41:17,160
+Kötü niyetli biri bunu brute force bir şekilde diyelim ki çözmeye çalışıyor biliyorsunuz. Kötü niyetli biri varsa örneğin üç denemeden sonra sistemden atabilirsiniz vs. Dolayısıyla aslında burada şu çok kritik. Password storage için. Şimdi bakar diğer uygulamalara bakalım. File Modification.
+
+183
+00:41:30,356 --> 00:41:40,096
+File Modification Detector bir tane file varken, store ediliyorken bunun modifikasyona uğrayıp uğramadığını test etmek için kullanılan bir algoritma.
+
+184
+00:41:40,716 --> 00:41:42,256
+Hocam şöyle bir şey yok mu?
+
+185
+00:41:42,739 --> 00:41:50,899
+Şifreniz yeterince uzunsa zaten collusion olmaz dediniz ama yani bu sonuçta...
+
+186
+00:41:50,899 --> 00:41:52,699
+Düşük bir ihtimal olur tabii olabilir de düşük.
+
+187
+00:41:52,699 --> 00:42:05,859
+Tamam evet, düşük bir ihtimal de değil bence. Yani şöyle, A harfinin hash'iyle ondan sonra çok uzun bir şifrenin hash'inin aynı olmayacağının garantisi yok ki. Yani şifrenin uzunluğuna bağlı değil sonuçta bu.
+
+188
+00:42:06,579 --> 00:42:16,319
+Şifrenin entrotisinin yüksek olması demek. Mesela 128 bitlik bir şifreniz olduğunu düşünün.
+
+189
+00:42:16,623 --> 00:42:34,264
+Yani tutup da 16 karakter, tutup da böyle bizimkiler, benimkiler mesela, kısalar genelde daha büyük bir entropiye sahip bir şifreniz varsa, onun için ürettiğiniz keylerde de random psodoyu yakalamanız kolay oluyor ve kolücün riskiniz azalıyor aslına bakarsan.
+
+190
+00:42:34,264 --> 00:42:44,003
+Fonksiyona bağlı olarak tabii ki garantisi yok ve senin söylediğin doğru olabilir. Fonksiyon öyle yazıldıysa olabilir. Ama üretilen tüm fonksiyonlar şifrenin uzunluğuyla birlikte
+
+191
+00:42:44,532 --> 00:42:53,292
+Aslında üretilecek veyoların da çeşitliliğine aynı zamanda orantılı bir şekilde arttıracak şekilde tasarlanıyor.
+
+192
+00:42:56,292 --> 00:43:02,292
+Yani şifrenin olması, kolocun...
+
+193
+00:43:03,476 --> 00:43:17,056
+İktimalini azaltır diyorsunuz. Şifrenin uzun olması, iş normal ihtimalini azaltır diyorum. Yani şifrenin uzun olması iyi bir şeydir her zaman diyorum aslında. Öyle değil mi sizce de?
+
+194
+00:43:18,068 --> 00:43:21,488
+Yani üstüne düşünmem lazım. Çok emin oluyorum.
+
+195
+00:43:21,868 --> 00:43:24,008
+Tamam, üstüne düşün biraz daha tekrar konuşalım.
+
+196
+00:43:24,008 --> 00:43:39,888
+Yani basit hash alınır etmaları geldiği zaman aklıma sonuçta hepsi örneğin 512 bit hash saklıyorsa bu şifreyi A harfi ve çok çok çok uzun bir şifrenin hash'leri aynı olabilir gibi geliyordu.
+
+197
+00:43:40,068 --> 00:43:41,528
+Ama söylediğinizi düşüneceğim.
+
+198
+00:43:42,008 --> 00:43:42,748
+Tamam, bir düşün.
+
+199
+00:43:42,888 --> 00:43:44,388
+Yeni bir şeyler gelirse şey yaparım.
+
+200
+00:43:44,388 --> 00:43:46,028
+Yani brute force bir şekilde.
+
+201
+00:43:46,068 --> 00:43:48,068
+Ve sen şifreleri denemen gerektiğini düşün.
+
+202
+00:43:49,008 --> 00:43:59,188
+Yani o zaman dolayısıyla ne kadar fazla olursa aslında denemen gereken dijit sayısı o kadar zor olmayacak mı bulması kişinin bunu?
+
+203
+00:44:00,488 --> 00:44:05,208
+Yani 10 dijitlik bir şifreyi düşün, 20 dijitlik bir şifreyi düşün ve brute force bir şekilde taradığını düşün mesela.
+
+204
+00:44:05,208 --> 00:44:06,548
+Hangisini daha kolay bulursun?
+
+205
+00:44:09,427 --> 00:44:17,627
+Şifrenin uzunluğundan bağımsız olarak bazı hash fonksiyonları aynı hash değerini üretebilirler. Uzunluğundan bağımsız olarak.
+
+206
+00:44:17,667 --> 00:44:18,307
+Üretebilirler.
+
+207
+00:44:18,867 --> 00:44:23,347
+Tabii üretebilirler. Hash fonksiyonunu öyle bir yazarsın ki üretebilir. Doğru, o konuda haklısın.
+
+208
+00:44:23,407 --> 00:44:28,047
+Evet, dolayısıyla bu noktada şifrenin uzunluğunun bir ehemmiyeti kalmamış oluyor. Onu demek istedim.
+
+209
+00:44:28,047 --> 00:44:30,387
+O hash fonksiyonlar için kalmayabilir.
+
+210
+00:44:30,527 --> 00:44:35,947
+Evet, işte söylediğiniz durumu da düşünüp tekrar şey yapacağım demiştim.
+
+211
+00:44:36,167 --> 00:44:46,688
+Mümkün tabii ki bu söylediğin. Aynı dediğin gibi tek dijitlik bir fonksiyon, şey, sembolle, şifreyle on dijitlik olanı için aynı şeyi üreten bir fonksiyon yazman mümkün tabii ki.
+
+212
+00:44:46,867 --> 00:44:54,647
+Yani bu da diğeri ama dediğim gibi bu senin tasarımınla alakalı tamamen. Hash fonksiyonunun tasarımıyla alakalı.
+
+213
+00:44:57,188 --> 00:45:11,507
+Peki çok bölmeyeceksen onu da sorabilir miyim? Yani şifrenin uzunluğunun hash fonksiyonunun ürettiği değerin karmaşıklığına olan etkisini nasıl bir fonksiyona anlatabiliriz?
+
+214
+00:45:13,619 --> 00:45:15,880
+Nasıl bir fonksiyonu anlatabiliriz?
+
+215
+00:45:16,019 --> 00:45:16,720
+Yani uzun
+
+216
+00:45:16,720 --> 00:45:18,720
+Hash fonksiyon mu?
+
+217
+00:45:19,320 --> 00:45:19,579
+Evet.
+
+218
+00:45:20,760 --> 00:45:28,440
+Yani şunu mu demeye çalışıyorsun? Şifrenin, password'ünün uzunluğunun etkisini
+
+219
+00:45:29,492 --> 00:45:32,412
+Evet, onu demek istiyorum.
+
+220
+00:45:32,612 --> 00:45:35,251
+Hash fonksiyonunda nasıl görebilirim diye mi soruyorsun?
+
+221
+00:45:36,512 --> 00:45:47,992
+Şöyle, öyle bir hash fonksiyonu yazalım ki kısa şifrede basit hash üretsin, uzun şifrede daha kompleks bir hash üretsin. Böyle bir şey çok anlamsız geliyor bana, o yüzden soruyorum.
+
+222
+00:45:48,492 --> 00:45:49,271
+Tamam, şöyle yapalım.
+
+223
+00:45:49,271 --> 00:45:57,492
+Normalde üretilen hash çok anlamsızdır ya, yani kısa bir şifre için de anlamsızdır, uzun bir şifre için de anlamsızdır. Dolayısıyla her iki...
+
+224
+00:45:57,492 --> 00:46:01,992
+Anlamsız, heşler birbirine eşit olabilir yani. Onu demek istiyorum.
+
+225
+00:46:02,072 --> 00:46:08,731
+Tamam. Şöyle yapalım mı [öğrenci]? Ben bununla alakalı sana örnek üzerinden açıklama yapayım.
+
+226
+00:46:08,731 --> 00:46:11,552
+Ama şimdi değil, belki bir sonraki derste. Olur mu?
+
+227
+00:46:14,351 --> 00:46:16,672
+[öğrenci] neredeyse? [öğrenci] ile konuşmuyor muyum ben?
+
+228
+00:46:18,547 --> 00:46:26,007
+Evet, sesiniz kesildi ama muhtemelen benim internetimden kaynaklandı. Bununla ilgili sana bir şeyler gönderir mi dediniz sanıyorum.
+
+229
+00:46:26,087 --> 00:46:37,248
+Ben bununla alakalı biraz da örnek üzerinden açıklama yapayım. Psolo Rand'ımızla alakalı da. Belki yazarak açıklarım o zaman. Herkes için daha aydınlatıcı olur. Onu bir sonraki derste üzerine tekrar konuşalım olur mu?
+
+230
+00:46:38,047 --> 00:46:39,347
+Tamam. Çok teşekkür ederim hocam.
+
+231
+00:46:39,347 --> 00:46:41,967
+Ben teşekkür ederim. Bunu hatta bir not almam lazım.
+
+232
+00:46:49,556 --> 00:46:50,556
+Hoşçakalın.
+
+233
+00:47:03,668 --> 00:47:11,528
+Ben bu güncel hash fonksiyonlarla alakalı olarak da onunla alakalı bir açıklama yapayım. Oldu mu? Biraz da elimde örnekler olsun.
+
+234
+00:47:11,528 --> 00:47:29,887
+Şimdi, ikinci örneğim File Modification Detector. Bu örnekte her dosya için bir hash üretiliyor aslında.
+
+235
+00:47:30,708 --> 00:47:41,708
+Ve bu dosyanın modify edilip edilmediğini anlayabilmek için bu hash fonksiyonunun değerine bakıyorsunuz. Tıpkı Passportlerde olduğu gibi.
+
+236
+00:47:42,452 --> 00:47:52,052
+Fonksiyonun kendisi bu arada dosyanın kendisi secure değil ama ürettiğiniz hash orada secure.
+
+237
+00:47:52,052 --> 00:48:03,948
+Dolayısıyla karşı taraf dosyayı aldığı vakit o aynı dosya için bir hash üretiyor ve iki hash'i karşılaştırarak dosyanın modifiye edilip edilmediğini anlamaya çalışıyor. Böyle bir uygulamadan bahsediyorum.
+
+238
+00:48:29,876 --> 00:48:42,175
+Şimdi böyle bir durumda successful bir şekilde break etmek istiyorsanız bu uygulamayı, file modification uygulamasını ne yaparsınız?
+
+239
+00:48:43,675 --> 00:48:45,956
+Yani nasıl olur successful bir girişim?
+
+240
+00:48:48,635 --> 00:48:53,056
+Successful girişim şöyle olur. Kötü niyetli biri F'i değiştirir.
+
+241
+00:48:54,900 --> 00:49:21,099
+Ama öyle bir değiştirir ki hala bu ikisi birbirinin aynısı olur. Dolayısıyla dosyayı aslında modifiye değiştirir ama siz değiştirdiğini anlamazsınız. Güncel dosya üzerinden işlem yaparsınız. Mesela birine şu kadar sana ödemeye tayt ediyorum dersiniz. O bir yerde hashlenir. Sonra o fiyat birdenbire uçar. Ama hashler aynı olduğu için bir şey ifade etmez. Hakikta edemezsiniz gibi.
+
+242
+00:49:21,811 --> 00:49:23,971
+Bunun için hangi özellik önemli olmalı?
+
+243
+00:49:28,500 --> 00:49:31,920
+Hangisi? Mesela One Way'iniz önemli mi?
+
+244
+00:49:35,380 --> 00:49:53,320
+Van Venis burada önemli değil. Zaten sizin verilmiş dosyanın zaten public. Onu zaten karşıya gönderiyorsunuz. Onda sorun yok. Bu önemli değil. Önemli olan ne? Aslında bu da resistance. Collision resistance'inden. Yapma yapmaması gerekiyor.
+
+245
+00:50:01,108 --> 00:50:06,748
+üretecek hale getirmemesi gerekiyor. Dolayısıyla Collusion Resistance burada önemli.
+
+246
+00:50:06,748 --> 00:50:10,068
+Peki diğer bir uygulamaya geçelim.
+
+247
+00:50:14,867 --> 00:50:42,128
+Dijital imzalar. Bu çok aslında güzel bir konu. Bunlar bu arada aslında encryption dersinin, yani kriptoloji dersinin aslında çakıştığı bir yer olduğu için hash fonksiyonlar ben ara ara değiniyorum. Kriptolojiyle alakalı ders var mı şu an bizim? Ben de şimdi bu zamanları şey bilmiyorum var mı? Kriptolojiyle alakalı yüksek lisans havuzunda ders var mı?
+
+248
+00:50:42,996 --> 00:50:58,615
+Var, tamam. Kim veriyordu? Alıyor musunuz? Alan var mı aranızda en az onu sorayım? Alan yok mu? Ben alıyorum hocam. Hamza Osman İlhan veriyor. Hamza Hoca veriyor, süper, tamam.
+
+249
+00:51:00,496 --> 00:51:10,395
+Şimdi, dijital bir imza söz konusuysa, yani o zaman iki ayrı keyden bahsediyoruz burada.
+
+250
+00:51:10,847 --> 00:51:18,907
+Dijital bir imzada bir public key var, bir de private key var. İki ayrı keyli dijital imzalama yapılıyor.
+
+251
+00:51:20,167 --> 00:51:30,647
+Şimdi şöyle yapılıyor. Şu public olan, yani öyle yazacağım bundan sonra. Şu private olan.
+
+252
+00:51:37,523 --> 00:51:45,364
+Şimdi bir dijital imza sisteminde şu işlem adımları var. Birincisi imzalama.
+
+253
+00:51:49,043 --> 00:52:10,463
+Bu imzalama için de gerekiyor. Bir imza create ediyorsunuz. Sigma bir imza create ediyorsunuz ve bunu create ederken de kişinin private keysini ve imzalayacağınız dökümanı kullanıyorsunuz ve bir imza create ediyorsunuz. Dolayısıyla bu imza karşı tarafa gidiyor.
+
+254
+00:52:10,996 --> 00:52:18,296
+Bu imza karşı tarafa giderken aynı zamanda imzaladığınız doküman da gidiyor tabii ki karşı tarafa. Buradan sonra bir verification yapıyorsunuz.
+
+255
+00:52:26,675 --> 00:52:50,936
+Verify ederken de dökümanı alıyorsunuz, imzayı alıyorsunuz. Bu kez de kişinin public key ile bu verification yapıyoruz. Bu da size true or false. Doğrudur, değildir. Bu kişi imzalamıştır bunu ya da imzalamamıştır diye bir değer döndürüyor.
+
+256
+00:52:55,476 --> 00:53:13,675
+Yani private key ile public key'nin birbiri hakkında bir bilgi direkt açığa çıkarmaması ama aynı zamanda matematiksel olarak da ilişkili olması gerekiyor. Bu aslında işte o encryption dersinin konusu. PK ve SK iki farklı password ve birbirinden farklı ama matematiksel de bir ilişki içermeli.
+
+257
+00:53:22,099 --> 00:53:32,099
+Private Key ile dokümanı imzalıyorsun ve bir imza ortaya çıkıyor. Bu imzayı, Public Key ve dokümanı gönderiyorsun. Mesajın senden gelip gelmediğini bilebilsinler diye.
+
+258
+00:53:34,699 --> 00:53:38,599
+Peki böyle bir şey için, böyle bir sistem için hangi özellikler önemli olmalı?
+
+259
+00:53:48,659 --> 00:53:52,659
+Yazın bana sohbete fikirlerinizi. Önemli olanlara.
+
+260
+00:54:07,411 --> 00:54:12,411
+Aslında burada bu arada dikkat etmeniz gereken şey şu ilişki.
+
+261
+00:54:14,271 --> 00:54:18,971
+İmzalayacağım dokümanınla bu ikisi arasındaki ilişkinin.
+
+262
+00:54:28,628 --> 00:54:32,628
+Şimdi, ödü niyetli bir kişiye...
+
+263
+00:54:36,563 --> 00:54:44,423
+Döküman verilmiş olsun. Bir de bu verification için gelen hashlenmiş fonksiyon verilmiş olsun.
+
+264
+00:54:44,423 --> 00:54:56,423
+Eğer A kişisi bu dökümanı imzalamışsa ama B kişisi A'nın başka bir döküman imzaladığını düşünürse...
+
+265
+00:54:56,628 --> 00:55:00,668
+Bu kötü olur. Bir kötü niyetli biri bunu yapmaya çalışabilir. Değil mi?
+
+266
+00:55:01,668 --> 00:55:13,748
+Dijital Signature ile imzalanmış bir bilgi geldiğinde, bunun aslında A kişisi tarafından imzalandığını, Emin HM ürettiğini, bu kişinin imzasını kullanarak biliyoruz.
+
+267
+00:55:13,748 --> 00:55:19,788
+Kötü niyetli kişi, burada imzalanan dökümanın başka bir döküman olduğunu.
+
+268
+00:55:20,467 --> 00:55:36,047
+ispatlarsa bir şekilde o zaman bu başarılı bir girişim olur. Dolayısıyla burada aslında önemli olan özellik hangisi oluyor arkadaşlar en önemlisi?
+
+269
+00:55:41,139 --> 00:55:43,639
+Yine Collision Resistans önemli.
+
+270
+00:55:47,059 --> 00:56:05,659
+Çünkü kötü niyetli kişi elinde döküman varken şu eşitliği verecek başka bir M-Prime dökümanı bulmaya çalışıyor. Dolayısıyla bu özellik burada önemli.
+
+271
+00:56:13,172 --> 00:56:36,512
+Mesela şu özellik önemli mi? Non-Malibility mesela. Non-Malibility önemli mi sizce burada? Hani diyordum ya, X mesela bir örnek vermiştim. Inputlar arasında matematiksel bir ilişki var mesela. Bir tanesi X, bir tanesi X artı birken. Aynı işi verecek şekilde. Bu özellik mesela bu örnek için, dijital signatür için önemli mi?
+
+272
+00:56:37,108 --> 00:56:55,608
+İmzalanan dökümanlar arasında böyle bir ilişki yoksa önemli değil o zaman. Yani ne imzaladıklarına bağlı olarak elinde direkt bir sayılar, birbiriyle ilişkili olabilecek, birbirinden biraz fazla, biraz eksik olabilecek bir ilişki yoksa iki ay dökümandan bahsediyorsak tekst dökümanı o zaman önemli hale gelmiyor.
+
+273
+00:56:57,748 --> 00:57:06,088
+Peki, keyler için önemli olmaz mı? Yani bir private key'in pay'ı olarak birden fazla public key gibi bir şey olsa?
+
+274
+00:57:07,468 --> 00:57:11,748
+Bir private key, birden fazla public key gibi bir şey olsa.
+
+275
+00:57:13,028 --> 00:57:22,887
+Verification'ın işleminde zaten private key söz konusu değil. Public key ile private key arasında.
+
+276
+00:57:23,391 --> 00:57:36,171
+Açığa çıkarlamayacak bir ilişki olması gerekiyor. Orası kesin. Adamın elinde çünkü çözmek için, verifi edebilmek için senin public key'in zaten var. Dolayısıyla buradan eğer private key'e bir geri dönüş yaparsan.
+
+277
+00:57:36,467 --> 00:58:02,627
+O zaman evet haklısın. O kötü olur. Yani o kötü olur. Onu yapmaması gerekir. Bunları saklamak için kullanılacak. İçerisindeki matematiksel ilişkiyi koruyacak ama birbirine ulaşmaması için kullanılacak olan algoritmalarda o dediğin doğru birbirleriyle ama bu bir hash fonksiyonla tutulmayabilir. Bu ikisi arasındaki ilişki nasıl saklanıyor diyorum ya o dersin konusu değil. Ama tabii ki bunlar arasındaki ilişkinin dediğin gibi geri döndürülemiyor olması gerekiyor.
+
+278
+00:58:03,668 --> 00:58:05,132
+Onu mu sormuştum?
+
+279
+00:58:08,403 --> 00:58:22,463
+Aslında benzer bir şey sorduk. Yani benim demek istediğim mesela private key ile bir şeyi imzaladı. Ama olması gereken public key ile değil de bir başka public key ile başkası hak iddia etti.
+
+280
+00:58:23,027 --> 00:58:28,587
+Aslında onu da sağlıyor olmuş oldu. O hakkı da sağlıyor olmuş oldu.
+
+281
+00:58:28,767 --> 00:58:36,987
+Tamam, çok güzel söyledin. Diyorsun ki, farklı bir dökümanı, benim de söylemek istediğim orada aslında.
+
+282
+00:58:37,067 --> 00:58:44,167
+Farklı bir dökümanı imzaladığını sağlamış oluyorsun. Ama sen bu dökümanı ben imzalamadım, başka bir imzaladı diye adama yutturmaya çalışayım.
+
+283
+00:58:44,247 --> 00:58:47,387
+Onu yapmaya çalışan bir kötü niyetli biri olursa diyorsun değil mi?
+
+284
+00:58:48,019 --> 00:58:57,139
+Bu dokümanı aslında İrem imzalamadı da şu imzaladı demek istesin. Aynı dokümanı ama. Onun imzaladığını söylemek istesin diyorsun. Doğru mu? Anlıyorum.
+
+285
+00:58:58,420 --> 00:58:59,019
+Evet hocam.
+
+286
+00:59:00,299 --> 00:59:08,639
+Esasında yine farklı inputlar için aynı işin üretildiği bir durum söz konusu. Değil mi? Bu senin söylediğinde de.
+
+287
+00:59:10,559 --> 00:59:12,519
+Aslında farklı şey.
+
+288
+00:59:14,099 --> 00:59:27,439
+Dosyalar için olmasına, veriler için olmasına gerek yok. Ama üretilen hash'in aynı olduğu bir durum. Ancak senin söylediğin kötü niyetlik işin istediği şey, üretilen hash'ler aynı olsun ama farklı bir key için üretilmiş olsun. Doğru mu?
+
+289
+00:59:28,884 --> 00:59:37,204
+Üretilen eşler aynı olsun ama aynı veriyle olabilir. Problem değil. Problem burada iki tane public key'in bir tane private key'i sağlaması.
+
+290
+00:59:37,204 --> 00:59:47,824
+Tamam. Yine target collision olmuyor mu o zaman da? İki farklı input'un aynı eşi vermesini sağlıyorsun. Input'ta değişen şey şu olmuyor da bu oluyor seninkinde.
+
+291
+00:59:50,003 --> 00:59:50,644
+Evet.
+
+292
+00:59:51,124 --> 00:59:53,124
+Tamam. Yine aynı özellik oluyor. Değil mi?
+
+293
+00:59:54,900 --> 01:00:10,360
+Farklı şekilde sağlıyorsun bu şeyi. Farklı bir kezde çözün. Burada senin tekrar farklı bir kez üzerinde çalışıyor. Ama sonuçta senin bunu Collision Resistance yapman gerekiyor neticede. Doğru değil mi?
+
+294
+01:00:12,860 --> 01:00:13,400
+Evet hocam.
+
+295
+01:00:13,400 --> 01:00:18,360
+Tamam. Şimdi geçeyim mi bunu arkadaşlar?
+
+296
+01:00:19,315 --> 01:00:28,035
+Yalnız bu derste hiç olmadığı kadar sesinizi duydum. Niye öyle oldu? Yani bu güzel bir şey. Mutlu oldum.
+
+297
+01:00:28,875 --> 01:00:35,695
+Aslaya gelecek misiniz? Bu arada bakayım, şu an 21 kişi zaten çok 21'i aşmıyoruz normalde. Hazır burada insanlar varken sorayım.
+
+298
+01:00:36,295 --> 01:00:41,555
+Yüz yüze gelmeyi planlayanlar hibrit sisteme geçildiği vakit bana el kaldırabilir mi?
+
+299
+01:00:42,452 --> 01:00:55,432
+Gelmeyi planlayanları sorayım çünkü onların azınlıkta olacağına dair bir öngörüm var. Tutacak mı merak ediyorum. Sınıfa gelelim hocam, sizi görelim beraber böyle karşılıklı Zoom'dan ders yapalım diyenler kimlerdir?
+
+300
+01:00:56,992 --> 01:00:58,392
+Parmak kaldıralım.
+
+301
+01:01:00,532 --> 01:01:03,512
+Hiç kimse mi? [öğrenci] teşekkür ediyorum [öğrenci].
+
+302
+01:01:05,492 --> 01:01:07,712
+[öğrenci] da gelecekmiş, [öğrenci] da teşekkür ediyorum.
+
+303
+01:01:09,268 --> 01:01:30,027
+Bu kadar mı? Ha [öğrenci]. Teşekkür ediyorum. 3 oldu. Tamam. 0 değilmişiz. Peki. Okey. O zaman devam edelim. Şimdi bu dördüncü application.
+
+304
+01:01:36,148 --> 01:01:51,288
+Commitment'lar için geçerli. Yani mesela ihaleler. İhaleler için örneğin. Ya da işte bir herkesin teklifinin açık olmadığı, açık arttırma gibi değil ama sanat nüzayeteleri işte. Ya da ihaleler falan gibi uygulamalar için geçerli.
+
+305
+01:01:51,288 --> 01:02:03,088
+Yani nasıl bir sistemden bahsediyorum? Mesela bir A kişisi var. Bu A kişisi bir teklif veriyor.
+
+306
+01:02:03,635 --> 01:02:24,275
+Bir ürün için neyse işte bir teklif veriyor. X teklifini veriyor. A kişisi bu teklif için bir hash veriyor, hesaplıyor. Ve bunu gönderiyor.
+
+307
+01:02:30,452 --> 01:02:42,272
+B kişisine gönderiyor. Buradaki B kişisi aslında bir ihale için onu düzenleyen kuruluş ya da sanat galerisi neyse.
+
+308
+01:02:42,272 --> 01:02:49,272
+Yani burada teklifleri toplayacak olan kuruma bunu teklifin kendisini değil de...
+
+309
+01:02:49,844 --> 01:03:14,304
+Eşini gönderiyor. Çünkü tüm teklifler bitmeden teklifleri açmıyorlar. Yani bir tanesi diğerinin teklifini görüp de arttırmasın teklifi. Bir süre sonuna kadar herkes teklifini versin. O süre bittiği vakit en çok teklifi veren kimse ona aynen kapalı zarf usul ihale. [öğrenci] teşekkür ediyorum. Derman oldun benim derdime. Kapalı zarf usul ihale.
+
+310
+01:03:15,539 --> 01:03:37,359
+Bunun için nasıl bir sistem gerekiyor? Herkes bunu verdikten sonra, işlem bittikten sonra aslında normalde B sadece CX'i görüyor, X'i görmüyor. İşler bittiği zaman hepsi bittiğinde bu CX açılıyor.
+
+311
+01:03:46,579 --> 01:04:07,259
+Fiyatlar ortaya çıkıyor. Şimdi böyle bir durumda neler önemli hale geliyor böyle bir sistem varsa? Bu CX bu arada public. Yani zarfı görüyorlar, zarfın dışını görüyorlar. Zarfın içini bilmemeniz gerekiyor. Zarfın dışını A'da görüyor, B'de görüyor. Zarflar toplanıyor.
+
+312
+01:04:14,835 --> 01:04:22,775
+Bu zarfa baktığınız zaman içindeki yazıyı okuyamamalısınız.
+
+313
+01:04:27,891 --> 01:04:30,271
+Cx'e baktığınız zaman x'i bulamamalısınız.
+
+314
+01:04:34,164 --> 01:04:41,264
+Aynı zamanda bu teklifi veren kişinin de dürüstlüğünü kontrol altında tutamayacağınıza göre,
+
+315
+01:04:41,444 --> 01:04:44,604
+onun da en azından secure hale getirmeniz gerekiyor niyetini.
+
+316
+01:04:44,604 --> 01:04:48,524
+Yani aynı zamanda...
+
+317
+01:04:58,068 --> 01:05:24,807
+Sistemi A'dan da korumanız gerekiyor. Yani teklifi veren kişi aslında ben şunu değil de bunu vermiştim demesin diye. Mesela aslında çok atıyorum 20 milyon teklif etti. Ama baktı ki o kadar vermesine gerek yokmuş. 15'te de bu işi yapabiliyormuş. Ya ben aslında 20 değil de 15 söylemiştim falan demesin diye. Dolayısıyla bu ikisini sağlayacak şekilde sistemi tasarlamanız gerekiyor.
+
+318
+01:05:26,164 --> 01:05:28,164
+Şimdi hangi parameseleler olmalı?
+
+319
+01:05:34,036 --> 01:05:35,596
+Bana söyleyecek olan.
+
+320
+01:05:38,963 --> 01:06:02,264
+Tek tek gidelim. Mesela One Way'niz. One Way'niz önemli mi bu uygulamada? One Way'niz önemli. Çünkü Cx'in x açığa çıkarmaması gerekiyor. Yani zarfa, public olarak o zarf ortalarda dolaşıyorken o zarfın içerisindeki x'e kimsenin ulaşmaması gerekiyor. Dolayısıyla One Way'niz önemli.
+
+321
+01:06:08,244 --> 01:06:24,184
+Bu önemli mi? Bu da önemli. Bu niye önemli? Çünkü diyelim ki ihaleye teklif veren kişi kötü niyetli, eski teklif yerine aynı heşi veren başka bir teklif verdiğini iddia etmesin diye.
+
+322
+01:06:25,012 --> 01:06:42,652
+Aynı heşi veren payer'ları bulmasın diye. Yani buydu ya hani kollüji rezistmasının değeri. Aynı heşi veren x ve x prime payer'larının bulunmasıydı. Bunu yapamasın. Aynı heşi veren daha düşük ve daha yüksek iki aydı teklif hakkında konuşmasın diye. Bu da önemli.
+
+323
+01:06:42,652 --> 01:06:50,072
+Peki, şundan hiç örneklerimizde bahsetmemiştik. Non-Malibility bu önemli mi?
+
+324
+01:06:53,076 --> 01:07:11,475
+O zarfan içindeki bilgiler birbirinin matematiksel olarak ilişkili bilgiler olacaktır. Fiyatlar olduğu için. Dolayısıyla burada bu da önemli. Yani CX verildiğinde CX artı biri örneğin üretemiyor olmanız lazım.
+
+325
+01:07:17,619 --> 01:07:29,980
+Teklifinin hemen bir fazlasını üretip gönderirsen eğer, çok fazla para kaybetmemek adına örneğin, o zaman kazanmış oluyorsun ihaleyi. Dolayısıyla nem mevlaibizde önemli bir kavram böyle bir uygulama için.
+
+326
+01:07:32,579 --> 01:07:42,400
+Şimdi bu konuyla alakalı genel kavramlar bunlar. İnternette araştırırsanız bu isimleri, bu özellikleri göreceksiniz.
+
+327
+01:07:43,123 --> 01:07:50,244
+Onlarca algoritma ile beraber. Bu algoritmaları dediğim gibi ilginiz dahilindeyse detaylı araştırabilirsiniz.
+
+328
+01:07:51,143 --> 01:07:55,923
+Şimdi şey ile devam edeceğim. Dinamik program numarıyla devam edeceğim. İsterseniz bir ara verelim. Soru var mıdır?
+
+329
+01:08:00,692 --> 01:08:12,011
+O zaman saat 12 geçiyor. 20 geçe geç mi olur bakayım? 25 olsun. 25 de görüşelim arkadaşlar.
+
+330
+01:08:12,551 --> 01:08:14,391
+Hocam ya 20 olsa ya buçuk olsa.
+
+331
+01:08:15,871 --> 01:08:22,152
+22 geçe geç. 25 yaptım işte. Olmaz mı? 25, 13 dakika. Uygun mudur?
+
+332
+01:08:23,412 --> 01:08:26,211
+Ben çok kararsızımdır arkadaşlar ara konusunda.
+
+333
+01:08:26,371 --> 01:08:30,291
+20 hocam. 20 rica etsek mümkün müdür?
+
+334
+01:08:30,612 --> 01:08:36,012
+20 rica. Tamam hadi 20 olsun. 8 dakika aranız var. 20'de görüşelim.
+
+335
+01:16:57,076 --> 01:16:58,456
+Evet, başlayalım arkadaşlar.
+
+336
+01:17:04,083 --> 01:17:05,523
+Dinamik programlamadan.
+
+337
+01:17:07,523 --> 01:17:08,763
+Sağsız giden.
+
+338
+01:17:16,372 --> 01:17:17,372
+Güzel.
+
+339
+01:18:10,292 --> 01:18:33,752
+Dinamik programlama görünüyor değil mi? Alt problemler olarak yine bir problemi çözmek için ortaya atılmış bir metot. Aslında programlama lafı bizim bildiğimiz programlama gibi değil de, optimizasyona yönelik bir çıkarım yapıyorsunuz burada.
+
+340
+01:18:35,859 --> 01:18:55,859
+Divide and Concure algoritmaları da sap problemleri ayırıyordu bildiğiniz gibi. Ama çoğu zaman gerektiğinden daha fazla problemi Divide and Concure ile defa et de çözmeniz gerekiyor. Birbiriyle overlap eden sap problemler karşınıza çıkabiliyor ve bunları yine de tekrar tekrar çözüyorsunuz.
+
+341
+01:18:56,532 --> 01:19:18,551
+Dinamik programlamanın amacı gerektiği kadar, yani örneğin her hesap problemi sadece bir kere mümkünse çözmek. Tekrar tekrar aynı sonuçları hesaplamanın getireceği zamandan tasarruf etmek aslında. Ve dediğim gibi optimizasyon problemlerine yönelik olarak daha ziyade çalışıyor.
+
+342
+01:19:22,644 --> 01:19:38,203
+Dört farklı adımı var takip edilen aslında. Birincisi sap problemleri, alt problemleri tanımlamanız gerekiyor. Yani probleminizdeki alt problemler nelerdir? Bunlar arasındaki ilişkiyi, matematiksel ilişkiyi kurmanız gerekiyor.
+
+343
+01:19:38,203 --> 01:19:48,364
+Hem rekörsif metotlarla hem de batımap metotlarla yani klasik döngülerle dinamik programlama yapmanız mümkün.
+
+344
+01:19:50,036 --> 01:20:07,176
+Orijinalı yanlış yazmışım ama önemli olan sap problemlerde tekrar eden gereksiz hesaplamalardan kaçınmak. O yüzden burada memorization dediğimiz hesapladığımız değerleri bir yerde tutmak.
+
+345
+01:20:07,583 --> 01:20:23,363
+Kaydetmek. Recursive fonksiyonları için memorization ya da bottom-up bir şey yazıyorsanız, dynamic programming table'lar oluşturarak mevcut alt problemleriniz için bulduğunuz çözümleri kaydetmeniz aslında esas.
+
+346
+01:20:23,363 --> 01:20:33,863
+Şimdi Fibonacci numaralarıyla, Fibonacci sayılarıyla hemen hızlıca bir giriş yapalım, hatırlayalım. Ondan sonra daha farklı örneklerim olacak.
+
+347
+01:21:17,844 --> 01:21:30,404
+Şimdi normalde nasıl çözmüştük biz bunu? Demiştik ki en inci fibonacciyi bulmak istiyorsak eğer.
+
+348
+01:21:34,068 --> 01:21:40,228
+Çıkış diyeli, fibonacci yine olduğunu hatırlıyorsunuz. F1 ikincisine eşit, o da 1'e eşitti.
+
+349
+01:21:40,228 --> 01:21:50,228
+Sonrakilerde 2 önceki toplamı diye giden şu meşhur birinci sınıftan beri her yerde gördüğünüz sayılar.
+
+350
+01:22:09,011 --> 01:22:21,332
+Komucu döndürdünüz. Şimdi bunun analizini daha önce yapmıştık. Naif Recursive Fibonacci sayılarıyla alakalı Naif Algoritma'nın analizini yapmıştık hatırlarsanız. Şöyleydi.
+
+351
+01:22:29,587 --> 01:22:48,467
+Hatta ben bunu ağaçla galiba size anlatmıştım. Upper Bound'da bu. 2 üzeri n'e denk geliyordu hatırlarsanız. Ama aslında Average'da Golden Ratio üzeri n'e denk geldiğini, çünkü her ağaç yaprağının aynı seviyede bitmediğini size göstermiştim.
+
+352
+01:22:48,467 --> 01:22:51,707
+Şimdi örneğin şöyle bir ağaç ortaya çıkıyordu.
+
+353
+01:22:53,768 --> 01:22:54,448
+Efen için.
+
+354
+01:22:56,756 --> 01:23:12,576
+fn-1 ve fn-2'yi üretiyordunuz. Bunun için fn-2 ve fn-3'ü üretiyordunuz. Bunun için fn-3 ile
+
+355
+01:23:13,684 --> 01:23:26,244
+fn-4 üretiyordunuz. Bu böyle gidiyordu. Dolayısıyla burada, mesela şu ikisi tekrar eden değer, bu ikisi tekrar eden değer. Bunları tekrar tekrar buluyordunuz ve bu da size zaman kaybettiriyordu.
+
+356
+01:23:46,484 --> 01:23:48,204
+O zaman ne yapıyorduk?
+
+357
+01:23:57,939 --> 01:24:00,979
+Başta bir kontrolünüz olması gerekiyor.
+
+358
+01:24:05,300 --> 01:24:21,360
+Eğer şu an aradığınız değerin enin fibonacci eninci sayısını eğer bulabilirseniz, sorunuzda nerede artık saklıyorsanız o zaman onu döndürürsünüz ve daha fazla ilerlemezsiniz.
+
+359
+01:24:23,360 --> 01:24:26,780
+Eğer en ikiden küçük ya da eşitse zaten değeriniz birdir.
+
+360
+01:24:30,323 --> 01:24:38,163
+Değilse de o zaman Recursion'ımızı If değil bu bu arada, F sadece.
+
+361
+01:24:43,283 --> 01:24:43,783
+Şöyle.
+
+362
+01:24:48,659 --> 01:24:50,659
+Mikrojimizi işleteceksiniz.
+
+363
+01:24:57,587 --> 01:25:04,667
+Ve tabii ki bulduktan sonra da story edeceksiniz. Tekrar kullanabilirsiniz diye.
+
+364
+01:25:07,067 --> 01:25:13,247
+Bu en basit şekilde dinamik programlama örneği görülebilecek.
+
+365
+01:25:14,247 --> 01:25:22,247
+Şimdi bir dinamik programlamayla bir şey çözdüğünüz zaman bunun karmaşıklığını temel olarak şöyle hesaplıyorsunuz.
+
+366
+01:25:28,564 --> 01:25:31,564
+Dinamik programlamada
+
+367
+01:25:34,899 --> 01:25:51,199
+Parmaşıklık, aşağı yukarı şuna eşit oluyor. Recursion'ın, yani kaç kere bu işi yapıyorsunuz? Ve memorization. Bu ikisinin maliyetleri toplama. Memorization ve recursion'ın maliyetlerini toplama.
+
+368
+01:26:00,083 --> 01:26:07,244
+Kaç kere Rikosan'a çağırıyorsunuz ve her seferinde ne iş yapıyorsunuz? Onların çarpımı toplamda yaptığınız işlem sayısını gösterecek.
+
+369
+01:26:09,423 --> 01:26:10,583
+Time Complex Lisi
+
+370
+01:26:14,515 --> 01:26:16,515
+Number of Sub Problems
+
+371
+01:26:19,828 --> 01:26:20,668
+Çarpı.
+
+372
+01:26:25,332 --> 01:26:27,912
+Time push, some problem.
+
+373
+01:26:32,051 --> 01:26:55,451
+Şimdi benim kaç tane sub problemim var? Kaç kere recursion'a giriyorum? Aslında n kere giriyorum. Her sayı çünkü sadece bir kere görüyorum. Dolayısıyla her sayı için n kez toplamda dönmüş oluyorum. Memorization cost ise sadece constant. Bu o bir. Bu da bir.
+
+374
+01:26:56,148 --> 01:27:01,927
+Dolayısıyla benim Fibonacci için dinamik programlamayla yaptığım vakit kostum,
+
+375
+01:27:04,448 --> 01:27:14,288
+detayına denk geliyor. Daha önce Upper Bound'da iki üzeri endi. Average Bound'da Golden Ratio üzeri endi.
+
+376
+01:27:14,288 --> 01:27:19,788
+Dolayısıyla buradan ene inmiş olduğunuz ciddi bir tasarruf sağlamış oldunuz.
+
+377
+01:27:21,011 --> 01:27:27,492
+Memorization, kavramsal olarak böyle. Şimdi yine bir örnekle birazdan tutalım.
+
+378
+01:27:33,844 --> 01:27:39,604
+Longus Palindrom Secure'sı bulmaya çalışalım.
+
+379
+01:27:41,644 --> 01:27:43,444
+Zainim bir şekilde.
+
+380
+01:28:05,747 --> 01:28:11,747
+Bu Longest Panorama Secrets problemi şöyle. Bir tane string belirliyor bize.
+
+381
+01:28:16,180 --> 01:28:38,059
+Bu string için birden büyük ya da eşit olacak şekilde elemanları olan içerisindeki en uzun palindromu bulmaya çalışıyoruz ama palindrom karakterlerin arka arkaya gelme durumu söz konusu değil. Örneğin mesela şöyle bir stringiniz varsa.
+
+382
+01:28:38,868 --> 01:28:45,868
+Buradaki en uzun palindrom nedir diye bakıyorsunuz. Şunların her biri, karakterlerin her biri tek başına bir uzunlukta palindrom var zaten.
+
+383
+01:28:47,868 --> 01:29:03,808
+Dolayısıyla en az biri olacak sizin palindromunuz. Ama mesela şunu, şunu, şunu, şunu ve şunu aldığınızda şu mesela bir palindrom. Beşlik.
+
+384
+01:29:05,300 --> 01:29:12,780
+Başka da belki görebilirsiniz. Mesela ara bu bir palindrom. Bunların içerisinde en uzun olanını bulmaya çalışıyoruz. Problem bu.
+
+385
+01:29:15,280 --> 01:29:23,360
+Palindromları biliyorsunuz zaten. Baştan ve arkadan bakıldığı vakit, sırası değiştiğinde yine aynı elimin üretiliyor olması gerekiyor.
+
+386
+01:29:23,360 --> 01:29:29,659
+Şimdi bununla alakalı Recursive Dynamic Programlamayla çözümümüz nasıl olabilir? Ona bakalım.
+
+387
+01:29:36,627 --> 01:30:02,167
+L, I, J'yi üreteceğiz. Fonksiyonumuz bunu üretecek. Bu L, I, J'den kastı, yani şu şartı sağladığı sürece verilen dizi içerisindeki, X içerisindeki en uzun palindrom subsequence'ın boyutu, lengti aslında. Kendisinde değil, şu an sadece lengtini ilk etapta.
+
+388
+01:30:06,100 --> 01:30:06,600
+Olá.
+
+389
+01:30:11,347 --> 01:30:14,627
+Pistodoka'da bakacağız.
+
+390
+01:30:26,739 --> 01:30:35,680
+ve i, j'yi recursive olarak bulan bir fonksiyon yazacağız. Birincisi biliyorsunuz recursive fonksiyonlarda
+
+391
+01:30:35,680 --> 01:30:52,203
+sonlanma noktasını iyi belirlemek gerekiyor. Fonksiyonu çağırdığınızda aynı point'ı bir subsecure sarıyorsunuz i ve j aralığında. Eğer i ve j'nin aynı olduğu bir durum söz konusuysa o zaman haliyle bir uzunlukta
+
+392
+01:30:53,171 --> 01:30:58,211
+Bir palindrom bulmuşsunuz demektir. Bunu döndürürsünüz ve çıkarsınız.
+
+393
+01:30:59,771 --> 01:31:13,431
+Şimdi değilse, İ ve J aynı değilse, İ input dizimizde İ ve J dizisindeki elemanların aynı olup olmadığına bakmamız lazım.
+
+394
+01:31:14,091 --> 01:31:17,231
+Diyelim ki bu input dizisinde İ ve J elemanları birbirinin aynısı.
+
+395
+01:31:19,859 --> 01:31:31,899
+O zaman iki ayrı durum söz konusu. Bu i ve j yan yana mı? Yoksa ikisinin içerisinde farklı yerlerde mi duruyorlar? Bunlara bakmak gerekiyor. Diyelim ki bunlar yan yana.
+
+396
+01:31:36,819 --> 01:32:03,020
+Şurada yukarıda J'nin İ'den büyük olduğu bir case için çalıştırmaya başladığımda ikisi diyelim ki yan yanaysa İ artı bir J'ye eşit oluyor. Bu durumda benim yan yana duran iki harfim var demek. Mesela işte bir tane string var içinde B, B geçiyor, A, A geçiyor gibi. Dolayısıyla o zaman benim palindrom uzunluğum 2 olacak. Bunu döndürüyorum.
+
+397
+01:32:04,532 --> 01:32:06,532
+Eğer yan yana değillerse...
+
+398
+01:32:12,340 --> 01:32:30,340
+Yan yana değillerse, bir kere tekrar, bitmiyor bu değişim, tekrar Recursive Call yapmam lazım ama iki tane aynı olan eleman bulduğum için, bunun başında ve sonunda iki ayrı eleman bulduğum için bir kere orada bir panindromda...
+
+399
+01:32:30,771 --> 01:32:50,172
+Artım yapmam gerekiyor ler açısından. İkisini toplam uzunluğa eklemem gerekiyor. Yani iki tane aynı olan eleman buldum. Bir de aynı zamanda artık bu İ ve J arasındaki ara stringte araştırma yapmaya devam edeceğim diyeceğim. Dolayısıyla İ'yi bir arttıracağım. J'yi biraz azaltacağım. Bu L.
+
+400
+01:32:51,731 --> 01:33:00,431
+Bunun için tekrar Cursion yapıyorum. Tekrar Cull ediyorum ama aynı zamanda da iki başında ve sonunda iki aynı karakteri bulduğum için de iki ekledim.
+
+401
+01:33:00,431 --> 01:33:04,300
+Değilse, yani...
+
+402
+01:33:04,467 --> 01:33:22,987
+İ ve G, X, İ ve X, J aynı değilse, aynı olmayan iki karakter üzerinden devam ediyorsam işte o zaman diyeceğim ki benim iki ayrı subproblem ile bu işe devam etmem lazım. İki ayrı subproblem için recursion kollarımı çağırmalıyım.
+
+403
+01:33:29,203 --> 01:33:39,115
+Bu problemin getirdiği bana panindrom daha büyükse, lankt olarak. Onu sonuç olarak döndüreceğim diyeceğim. Dolayısıyla...
+
+404
+01:33:43,636 --> 01:33:53,324
+İki ayrı kol yapacağım ve bundan daha yüksek sonuç döndüreni nihai sonucum olarak ileteceğim. Peki bu iki ayrı kolu...
+
+405
+01:33:57,171 --> 01:34:14,091
+Neresi için çağıracağım? Mevcut şu ikisi arasını tarıyordum. Ya burasını tarayacağım. İ'ye arttıracağım ve J'ye kadar olan kısmı. Ya da şurasını vereceğim. Bu ikisini ayrı ayrı değerlendirmem gerekecek. Bunlar için konumu çalıştıracağım.
+
+406
+01:34:15,451 --> 01:34:18,431
+Şimdi bu akışla alakalı var mı soru? Analizine geçeceğiz.
+
+407
+01:34:23,859 --> 01:34:42,819
+Bu şekilde çalıştırdığım zaman ben nasıl bir ağaç elde ediyorum? Hangi sak problemler için aslında bu çağrıyı yapmış oluyorum? Ona bir bakalım. Benim en kötü durum senaryom ne olur?
+
+408
+01:34:44,884 --> 01:35:05,323
+String içinde arama yaptığım zaman hep farklıdır. Yani en küçük parçaya kadar ineceğim. Diyelim ki şöyle bir bana String verilmiş. Bunun için de arama yapacağım. Burada Longest Palinron Sekans'ın değeri Length'i 1. Çünkü hepsi birbirinden farklı.
+
+409
+01:35:09,619 --> 01:35:36,579
+0, 1, 2, 3, 4 ve 5. İlk çağrımı başı ve sonu için yapıyorum ya. 0 ve 5 için bir kere çağrı attım. Başladım dikörz etmeye. Hiçbir şey bulamadığı için birincisi 1 ve 5 arasını tarayarak devam etti. 0 ile 4 arasını tarayarak devam etti. İki farklı sap problemi ayırdım. Buradaki sap problem 2 ile 5'i.
+
+410
+01:35:38,899 --> 01:36:06,159
+1 ve 4'ü taradı. Burası yine 1 ve 4'ü taradı. 0 ile 3'ü taradı. Çünkü her seferinde ya iyi arttırıyor ya iyi azaltıyor. Diğerini sabit tutuyor. Burası 3 ile 5 arasını taramak için kol yaptı. Burası 2 ile 4'ü. Bu da 2 ile 4'ü. 1 ile 3'ü. Bu 1 ile 4 zaten şunun aynısı. Kollarını yapıyor. 0 ile 3 yine 1 ile 3'ü.
+
+411
+01:36:06,479 --> 01:36:31,779
+Sıfırla ikiye. Birle üç. Şuradan devam edelim. Üçle beş. Dörtle beşi kol etti. Üçle dördü kol etti. Ne kadar çok birbirinin tekrarı durum var. Bunlar böyle gidiyor. Nereye kadar gidiyor? Örneğin şurada sonlanıyor. Sıfırla biri bir ve ikiyi kol etti.
+
+412
+01:36:33,427 --> 01:36:36,948
+Artık birbirinin yan yana oldu. Daha fazla gidecek yok. Burada sonlandı.
+
+413
+01:36:41,608 --> 01:36:45,247
+Mesela şurası tekrar etti, burası tekrar etti, şunlar tekrar etti.
+
+414
+01:36:46,368 --> 01:36:50,387
+Buradaki işlem, sayım ne olur benim?
+
+415
+01:36:50,387 --> 01:36:57,387
+Burada naif bir şekilde, az önce çözdüğüm algoritmayla ben bu işte karmaşıklık hesaplarsam.
+
+416
+01:36:58,228 --> 01:37:24,707
+Nasıl bir şey yapmış oluyorum? Burada ağaç seviyesi nereye kadar gidiyor? Şurada birinci seviyede bir tane işlemi var. Ağaç olarak çizdiğimizde biliyorsunuz ikersif kolların sayısıyla hesap yapıyordum. İkinci seviyede şurada iki tane var. Üçüncü seviyede dört tane var. Burada sekiz tane var. Bu böyle gidiyor. Benim ağaç seviyem.
+
+417
+01:37:25,171 --> 01:37:29,091
+Eleman sayım 5 ise ağaç seviyem 4 oluyor.
+
+418
+01:37:33,171 --> 01:37:38,711
+Şimdi tüm nodlara bakmam lazım. Şöyle bir eşitlik yazabilirim.
+
+419
+01:37:45,652 --> 01:38:09,612
+n0 olduğunda 1, n1 olduğunda 2, n2 olduğunda 4, 8 böyle gidecek. Dolayısıyla bu bana işlemleri yaptığımız vakit 2 üzeri n-1'lik bir sonuç döndürüyor. Buradaki n ama şu.
+
+420
+01:38:12,340 --> 01:38:37,019
+Sonucu döndürecek. Dolayısıyla üstel bir karmaşıklık söz konusu. Eksponansiyel bir, artan bir karmaşıklık söz konusu. Şimdi burada neden böyle bir karmaşıklıkla karşılaştım? Çünkü koduma baktığım zaman, kodumda hiçbir memorization eklentisi yapmadım. Şunları tekrar tekrar hesapladım. Bir dördü tekrar tekrar hesapladım gibi.
+
+421
+01:38:39,475 --> 01:38:58,835
+Memorization yapmadım. Memorization yapsaydım o zaman işler daha iyi olacaktı. Nerelere memorization yapmalıyım? Ben burada bir memorization sistemi kuracak olsam nerelere ne yazmalıyım? Ona bakalım. Şöyle bir şey deseydim koduma. Allah yine başladım.
+
+422
+01:39:01,576 --> 01:39:03,255
+Bundan da bir türlü çıkamıyor.
+
+423
+01:39:11,060 --> 01:39:27,980
+Şimdi tam şuraya, şuraya, Recurs etmeden önce şöyle bir şey yazabilseydim, bir lookup table'um olsaydı ve onun da yerine önce bak.
+
+424
+01:39:31,475 --> 01:39:34,376
+Eğer hesaplıysa hiç boşuna rikörs etme.
+
+425
+01:39:39,923 --> 01:39:40,944
+Diyecek şekilde.
+
+426
+01:39:42,944 --> 01:39:44,184
+Ben bu kodu.
+
+427
+01:39:47,543 --> 01:39:48,304
+Güncellersem.
+
+428
+01:39:49,244 --> 01:39:52,624
+O zaman yukarıdaki ekstra işlemlerden kurtulmuş olacağım.
+
+429
+01:39:52,704 --> 01:39:57,624
+Peki bunu söyleyebilmem için, burada böyle bir kontrol yapabilmem için tabii doldurmam gerekiyor bu l'yi.
+
+430
+01:39:58,164 --> 01:39:59,904
+Bu doldurma işlemlerini nerede yapacağım?
+
+431
+01:40:02,923 --> 01:40:05,944
+Aslında her sonuç döndürdüğümde bir doldurma yapıyorum.
+
+432
+01:40:05,944 --> 01:40:07,264
+Dolayısıyla şurada.
+
+433
+01:40:07,663 --> 01:40:34,303
+Bu L'yi doldurmam gerekecek. Burada doldurmam gerekecek. Burada doldurmam gerekecek. Bu olduğum değerlerle doldurursam eğer, o zaman en başında da L, İ, J için bir değer hesaplandıysa hiç rekörse etme, direkt bunu kullan diyebilirim. Öyle yaparsam, memorization yaparsam, bu durumda benim karmaşıklığım ne olur? Ona bakalım.
+
+434
+01:40:35,507 --> 01:40:49,507
+Şimdi dinamik programlamada, dinamik programlama olmadan üstel bir karmaşıklığı vardı bu eksponensel. Nasıldı aslında karmaşıklık?
+
+435
+01:40:54,003 --> 01:40:56,083
+Sap problemlerin sayısıyla
+
+436
+01:41:03,731 --> 01:41:11,752
+Her biri için harcanan her bir sap problem için harcanan zamanı çarpıyordu.
+
+437
+01:41:11,752 --> 01:41:19,492
+Bu problemde her bir sap problem için harcanan zaman aslında yine constant. Burası böyle.
+
+438
+01:41:20,292 --> 01:41:26,012
+Sap problemlerim benim aslında karmaşıklığımı belirliyor. Kaç tane sap problemim var?
+
+439
+01:41:27,891 --> 01:41:31,391
+Kaç tane sap problemim var? Arkadaşlar.
+
+440
+01:41:36,243 --> 01:42:01,764
+Benim sap problemlerimin şartı şu aslında. E'nin j'den küçük olduğu durumlar için sürekli sap problem üretiyorum. Dolayısıyla aslında E'nin ikilileri kadar sap problemim var. O da n kareye denk geliyor. Dolayısıyla benim bu kadarlık yine n karelik.
+
+441
+01:42:03,475 --> 01:42:04,715
+Ve problemi var.
+
+442
+01:42:14,931 --> 01:42:24,731
+Memorization yapmam üstlerden karesel bir şeye beni götürmüş oldu. Var mı soru?
+
+443
+01:42:29,811 --> 01:42:40,672
+Şimdi ne zaman başladık derse? Yirmide başladık değil mi? Tamam. Daha yarın saat olmuş. O zaman yeni bir problemle devam edelim.
+
+444
+01:42:51,923 --> 01:42:58,264
+Road Cutting problemi.
+
+445
+01:42:58,264 --> 01:43:00,264
+Görüyor musunuz Road Cutting problemini?
+
+446
+01:43:04,020 --> 01:43:29,020
+Rotcutting'i, yani bir hatırlatayım size. Rotcutting şu aslında. Enlik bir çubuğunuz var. Bu enlik çubuğu böleceksiniz, parçalara ayıracaksınız ve satacaksınız. Her parça uzunluğu için belirlenmiş bir fiyatımız var. Bir tablo olarak size veriliyor. Maksimum gelir elde etmeye çalışıyorsunuz. Bu rotcutting problemini daha önce bir yerlerde çözdüm, gördüm diyenler bana bir yazabilir mi?
+
+447
+01:43:30,804 --> 01:43:32,304
+Optimizasyon Problemi
+
+448
+01:43:36,340 --> 01:43:37,779
+Görmediniz. Tamam.
+
+449
+01:43:44,692 --> 01:43:51,811
+Okey. O zaman çözele. Road Cutting problemini.
+
+450
+01:43:59,412 --> 01:44:07,091
+Dediğim gibi, Road Cutting problemi şu. Size bir çubuk veriliyor.
+
+451
+01:44:11,828 --> 01:44:23,988
+En uzunlukta. Bunun için iyi uzunlukta her parçanın fiyatı bir tabloda verilmiş durumda. Böyle bir tablomuz var elinizde.
+
+452
+01:44:41,779 --> 01:44:53,779
+İğinin değerleri ne aralığında değişebilir bu durumda sizce? Yani sıfırla en arasında değişebilir. Hiç kesmeden satabilirsiniz.
+
+453
+01:44:53,779 --> 01:44:59,779
+Tabii sıfır satamazsınız da yani hiç kesmeden satabilirsiniz ya da birlik bir şey satabilirsiniz.
+
+454
+01:44:59,779 --> 01:45:04,779
+Ellerin bir şey satabilirsiniz. Bunun aralığındaki katlar için satabilirsiniz.
+
+455
+01:45:05,104 --> 01:45:19,344
+Dolayısıyla bunların hepsi için bir tablo verilmiş olacak size ama integer bölümeler yapılıyor. Yani 5 metre uzunluktaysa 1 metre, 2 metre, 3 metre, 4 metre ve 5 metrelik satışlar için fiyatlar size verilmiş. Böyle yarım metreden kesmeniz gerekmiyor örneğin.
+
+456
+01:45:27,060 --> 01:45:35,180
+kazancı elde edecek sonucu bulmaya çalışıyoruz. Her bir parça tam sayı.
+
+457
+01:45:44,627 --> 01:45:51,627
+sıfırla en eksi bir aralığında katlar yapılabilir. Buradaki katlar katların sayısı aslında.
+
+458
+01:45:51,627 --> 01:45:58,627
+Number of cuts yani katların uzunluğu değil. Hiç kesmeyebilirsiniz ya da birlik bir şey kesebilirsiniz.
+
+459
+01:45:58,627 --> 01:46:03,627
+Kesmek için de bir maliyetiniz yok yani kat için bir maliyet gözetmiyorsunuz.
+
+460
+01:46:03,627 --> 01:46:09,627
+Şimdi burada Optimist Sonuç'unu bulacağız. Bir örnek tablo koyalım şuraya.
+
+461
+01:46:19,539 --> 01:46:20,520
+Ve selesiyorlar.
+
+462
+01:46:25,524 --> 01:46:36,323
+İ uzunluk için Price, uzunluk ve Price tablosu verilmiş oluyor. Uzunluk 1 ise, bir uzunlukta bir şey satıyorsa Price'ını 1 demiş.
+
+463
+01:46:37,203 --> 01:46:44,463
+2 ise Price'ı 5'e çıkarmış. 3 ise Price 8 olsun. 4 ise 9 olsun.
+
+464
+01:46:44,992 --> 01:47:01,532
+Beş ise on olsun. Bunlar arasında ama doğrudan bir ilişki her zaman olmayabilir. Yani iki kat ilişkisi, üç kat ilişkisi olmayabilir. Altı ise on yedi olsun. Yediyse de on yedi olsun mesela. Fiyat farkı yokmuş. Sekiz ise yirmi olsun gibi. Sekiz santimlik bir şey için örneğin.
+
+465
+01:47:10,068 --> 01:47:29,007
+Çubuğum olsaydı ilimde, 4 uzunlukta bir çubuğum olsaydı, tablonun şu kısmı o zaman aktif olacaktı. O zaman mesela nasıl seçeneklerim olacaktı benim? 2'ye 2 şeklinde bölebilirdim. Her bölümü 5'e satacağım için bunun maliyeti kazancı 10 olacaktı. 1'e 3 bölebilirdim.
+
+466
+01:47:29,652 --> 01:47:39,891
+Bunun maliyeti de bir rahat 8'den 9 olacaktı. Ya da hiç bölmeyecektim. Bunun maliyeti de 9 olacaktı. Şunu seçecektim. Aslında yapma hakkı istediğim işlem bu.
+
+467
+01:47:40,756 --> 01:47:57,556
+Bunu dörtlük bir çubuk için, boyu dört olan bir çubuk için gözle görüp hesaplamak kolay. Ama tamamı işin örneği sekiz olsaydı ne olurdu, on olsaydı ne olurdu diye sorduğunuzda boyutta dair. O zaman artık dinamik programlamayla bu işi çözmeniz gerekiyor.
+
+468
+01:47:59,275 --> 01:48:00,775
+Tamam, soru var mı buraya kadar?
+
+469
+01:48:04,564 --> 01:48:05,963
+Tamam, şöyle kalsın.
+
+470
+01:48:10,100 --> 01:48:24,440
+Şimdi, boyutu 4 olan bir çubuk için olası kesim seçenekleriyle bunların price'ları arasında nasıl bir bağlantı var? Önce ona bir bakalım.
+
+471
+01:48:46,003 --> 01:48:50,963
+Hiç kat yok. Kazanç 9.
+
+472
+01:48:53,963 --> 01:48:56,923
+İki kat var. Bir ve üç arasından kesmişim.
+
+473
+01:48:58,224 --> 01:48:59,163
+Bir artı sekiz.
+
+474
+01:49:01,123 --> 01:49:02,643
+İki ile ikiden kesmişim.
+
+475
+01:49:04,443 --> 01:49:05,543
+Beş artı beş on.
+
+476
+01:49:07,163 --> 01:49:08,523
+Üç bir diye kesebilirdim.
+
+477
+01:49:09,863 --> 01:49:13,143
+Maliyet değişmeyecekti. Sekiz artı bir olacaktı.
+
+478
+01:49:13,568 --> 01:49:40,428
+Şöyle kesebilirim. 1, 1, 2. 1 artı, 1 artı, 5 olacaktı o zaman maliyet. Bunların diğer kombinasyonları var. Bu şekilde kesebilirim. Hepsinde maliyet 7 olacaktı. Ya da ne yapabilirim? Şöyle yapabilirim. O zaman da maliyet 4 olacaktı.
+
+479
+01:49:40,851 --> 01:49:50,452
+Öyle seçeneklerim var. Bu durumda benim en iyi opsiyonum şu. Bunu bulmaya çalışıyorum.
+
+480
+01:49:50,452 --> 01:49:58,051
+Peki benim kaç tane farklı deneme yapmam gerekiyor bu durumda? Yani bunu tek tek tüm opsiyonları deneyip,
+
+481
+01:49:58,051 --> 01:50:06,452
+Routforce bir şekilde hepsini deneyip en büyüğünü bulacağım olsam, kaç farklı seçenek var? Bunu nasıl bulabilirim? Kaç farklı kat yapmam gerekiyor?
+
+482
+01:50:06,739 --> 01:50:12,579
+Ene bağlı olarak bunu bana söyleyebilir misiniz? Buradaki tabloya da bakıp.
+
+483
+01:50:17,939 --> 01:50:44,939
+Ne olur? Aslında şöyle olur. Her bir metre için, neyse inç için neyse biriminiz ya bir kat vardır ya da yoktur. İki seçeneğimiz var yani. Her santimetreden sonra iki seçeneğimiz var. Dolayısıyla en eksi bir farklı kesik atma şansımız var. Yani iki üzeri.
+
+484
+01:50:47,220 --> 01:51:03,400
+n-1 seçeneğiniz var. Burada n-4 olduğu için bu 8 seçeneğe denk geliyor ki bu tabloda zaten 8 tane opsiyon var. Demek ki burada izleyeceğimiz akış algoritma yine eksi olan akı ile artan bir şey.
+
+485
+01:51:22,163 --> 01:51:22,603
+Şükür.
+
+486
+01:51:28,404 --> 01:51:30,404
+Şurayı alabilirim ama şimdi alabilirim ama.
+
+487
+01:51:33,404 --> 01:51:35,404
+Düz düz düz. Neyse ya.
+
+488
+01:51:39,731 --> 01:51:41,731
+Kısaca, şimdi de.
+
+489
+01:52:01,876 --> 01:52:04,876
+Sekizlik bir çubuk için.
+
+490
+01:52:05,876 --> 01:52:06,876
+Merkez edelim.
+
+491
+01:52:15,667 --> 01:52:34,407
+Şimdi bir price'ım var benim. Bir de toplam elde edeceğim gelirim var. Aslında farklı şeyler bunlar. Price oradaki o parça için ücretken toplam gelirim de o parçaların oluşturulduğunda hepsi sattığım zaman elde edeceğim gelir. Onu da R ile gösteriyorum.
+
+492
+01:52:45,203 --> 01:52:56,203
+Tek bir parça olarak satarsam, daha doğrusu birinci...
+
+493
+01:52:59,667 --> 01:53:16,087
+Pardon, bu şöyle. Bu tablo sekizlik boyutu olan bir tablo değil. Aslında şurada iyiler artan boyutlar için.
+
+494
+01:53:16,496 --> 01:53:24,216
+İ1 olsaydı, İ2 olsaydı, İ3 olsaydı sap problemleri ayırarak çözeceğimizden burada sap problemleri gözeterek bu tabloyu oluşturuyoruz.
+
+495
+01:53:24,615 --> 01:53:30,936
+Bir boyutlu bir tablom olsaydı, çubuğum olsaydı, onu sattığım vakit kazanacağım para 1 olacaktı.
+
+496
+01:53:30,936 --> 01:53:37,615
+Zaten bu da benim gelirim olacaktı. Ve hiçbir kesme yapmayacaktım.
+
+497
+01:53:38,236 --> 01:53:39,256
+İkilik bir şey için.
+
+498
+01:53:46,228 --> 01:54:09,007
+İkiden kessem yine kesme olmayacak. Neden böyle? Şimdi bunun için iki seçeneğim var. İkilik bir çubuğum olsaydı ya bir birden kesecektim ya da kesmeyecektim. Bunun maliyeti bir ve birden topladığım zaman iki. Bunun maliyeti ise beş.
+
+499
+01:54:10,068 --> 01:54:21,887
+Dolayısıyla daha kazancı. Dolayısıyla şunu seçiyorum. Buraya 5 yazdım. İkilik bir çubuk için gelirim 5 olacaktı. Üçlük bir çubuk olsaydı.
+
+500
+01:54:25,716 --> 01:54:29,556
+O zaman ne olacaktı seçeneklerim üçlük bir çubuk için?
+
+501
+01:54:32,376 --> 01:54:37,516
+1-2'den kesecektim ya da 2-1'den kesecektim. Aynı olacaktı. 3-0'dan kesecektim.
+
+502
+01:54:37,516 --> 01:54:47,576
+3-0 olursa 8, 1-2 olursa 6, 3-0'ı seçiyorum. Daha fazla gelir getiriyor. Geliri 8. Bu durumda yine ben sat yapmadım.
+
+503
+01:54:49,779 --> 01:55:09,659
+Dörtlük bir tablom olsaydı, örneğin, o zaman seçeneklerim nelerdi? 2'ye 2 olabilirdi. 1'e 3 olabilirdi. 4'e 0 olabilirdi. En fazla getirecek olanın bana getireceği toplam kar, yani gelir daha doğrusu 10 olacak. Bu da 2'ye 2'nin getireceği gelir gibi.
+
+504
+01:55:09,659 --> 01:55:15,720
+Böyle bir tablo nihayetinde benim elimde olacak. Bunu oluşturmaya çalışıyorum.
+
+505
+01:55:17,011 --> 01:55:41,112
+6 olsaydı, gelir 17 olacaktı. Bunu da bana hiç kat yapmadan sağladığım opsiyon getirecekti. 18 olsaydı, 1'e 6'dan, yani bir yedilik bir çubuğum olsaydı daha doğrusu, 1'e 6'ı kesmek, 2'ye 2'ye artı 3 kesmek bana aynı geliri getirecekti ve 18'i getirecekti.
+
+506
+01:55:41,488 --> 01:55:51,807
+Sekizlik bir çubuk içinde maksimum elde edebileceğim kazanç iki ve altılık. İki çubuk satarak yirmi iki elde etmek olacaktı. Ben bu tabloyu elde etmek istiyorum.
+
+507
+01:55:54,447 --> 01:55:59,268
+Şimdi bu tabloya göz attığım vakit, aslında bunu niye yazıyorum?
+
+508
+01:56:00,051 --> 01:56:12,811
+Alttaki değerleri üsttekileri kullanarak hesap etmek zorundayım. Bunlar benim en altta sap problemlerim. En üstteki değeri bunları kullanarak hesap edeceğim. Şimdi bu zaten birincisi R1. Zaten belli.
+
+509
+01:56:14,711 --> 01:56:18,891
+Şimdi R2'yi nasıl buldum? R2'yi bulurken aslında şunu yaptım.
+
+510
+01:56:20,891 --> 01:56:22,291
+R2'yi bulurken
+
+511
+01:56:25,844 --> 01:56:40,724
+2 ve 2 tane birlik parçanın ücretleri topladım. Tek başına ikilik parça ya da iki tane birlik parçadan hangisi bana yüksek kazanç getiriyorsa onu bulup R2'ye koydum.
+
+512
+01:56:41,804 --> 01:56:51,543
+R2'yi böyle buldum. Şimdi R3'ü nasıl buldum? Tüm seçeneklerimi yine değerlendirdim. P3 tek başına olabilir dedim.
+
+513
+01:56:52,212 --> 01:57:06,412
+P1 artı P2 olabilir dedim. P2 artı P1 aynı şeydi zaten. Ve 3'e bölmüştüm. Bu seçenekleri değerlendirmiştim. Şimdi bunu bulurken
+
+514
+01:57:09,939 --> 01:57:11,939
+Aslında şöyle...
+
+515
+01:57:15,252 --> 01:57:17,252
+yazabilir miydim?
+
+516
+01:57:17,252 --> 01:57:21,252
+R3'ü
+
+517
+01:57:28,692 --> 01:57:43,952
+P3 ile P1 artı P2 ve bir de 3 tane P1'in en fazla getirecek hangisi ise onu bulup yazmam gerekecektir.
+
+518
+01:57:43,952 --> 01:57:50,732
+Burada zaten P1'i P2'yi bir önceki iterasyonlarından hesaplamış oldum.
+
+519
+01:57:51,091 --> 01:57:58,091
+Dolayısıyla aslında şöyle bir eşitliğe doğru bunu evreştirmem mümkün. Diyebilirim ki...
+
+520
+01:58:02,228 --> 01:58:07,387
+RK genelleştirirsem, maksimum,
+
+521
+01:58:18,707 --> 01:58:22,608
+Burada artık ücretlerden gelirlere doğru.
+
+522
+01:58:28,659 --> 01:58:32,659
+Formülümü genelleştirdim.
+
+523
+01:58:34,659 --> 01:58:42,720
+Yani Pİ artı, şuradaki Pİ artı.
+
+524
+01:58:50,515 --> 01:58:55,115
+Ya da bunu bir sonraki örneğe mi yazayım, ondan sonra size söyleyeyim. Şimdi belki kafanız karışabilir.
+
+525
+01:58:55,755 --> 01:59:02,195
+Şimdi böyle bir formüle genelleştirebilirim bunu. Ne yapabilirim? Dedim ki, örneğin K'nın 4 olduğu durum için düşünürsem.
+
+526
+01:59:02,195 --> 01:59:07,455
+Aslında bu K'nın 4 olduğu durum için şuradaki ifade, parancılık içerisindeki ifade neye denklenecek?
+
+527
+01:59:08,915 --> 01:59:13,815
+4'ün 4 olarak, bütün olarak tutarsam onun bana getirdiği ücret.
+
+528
+01:59:16,083 --> 01:59:37,503
+Priceler yerine şunları yazdım. Birin birlik bir çubuğun getireceği toplam kazanç artı üçlük çubuğun getireceği toplam kazanç. Çünkü toplam dört ediyor. P1 artı P3 yerine R1 artı R3 olarak yazabiliyorum yani. R2 artı R2. İkilik bir çubuğun getireceği kazanç artı ikilik bir çubuğun getireceği kazanç.
+
+529
+01:59:41,043 --> 02:00:03,003
+Bunu getiriyor bana. Aslında şu formül açık hali bu. Dolayısıyla burada ben şu ifade yerine re i artı re ki yerine buradaki pi artı re ki'yi çevirebilir miyim? Çevirebilirim.
+
+530
+02:00:04,692 --> 02:00:10,692
+Aynı şekilde tersten çünkü bana içeriği sağlamış oluyor.
+
+531
+02:00:10,692 --> 02:00:15,692
+Örneğin, şöyle yazabilir miyim bunu diye soruyorum.
+
+532
+02:00:18,931 --> 02:00:33,912
+E'yi artı R, K'x'yi, İ'nin 1 ile K aralığında olduğu değer için. Şuradaki ifadeyi, bu ifadeyi çevirebilir miyim? Şuradaki ifadeyi.
+
+533
+02:00:45,203 --> 02:00:46,783
+P1 artı R3
+
+534
+02:00:50,228 --> 02:00:51,668
+Peki, artı R2.
+
+535
+02:00:55,859 --> 02:00:57,739
+V3 artı R1
+
+536
+02:01:02,579 --> 02:01:26,359
+F4 artı R0 olacaktı. Yani aslında bir uzunluktaki çubuğun fiyatı ile üç uzunluktaki çubuk için gelen gelir. Bunları üst üste topladığım vakit dört uzunlukta bir çubuk için maksimum geliri bulmuş olacaktım. Dolayısıyla ben artık şu formulizasyon üzerinden akışımı oluşturabilirim.
+
+537
+02:01:34,771 --> 02:01:39,631
+Şöyle yazabilirim. Üsteki tabloyu şu hale getirebilirim.
+
+538
+02:01:46,036 --> 02:02:11,036
+1 için R1, P1 artı R0, İ2 için R2, P1 artı R1 ya da P2 artı R0'dan, işte hangisi büyükse, 3 için
+
+539
+02:02:13,268 --> 02:02:29,387
+R3, P1 artı R2, P2 artı R1 ve P3 artı R0'dan hangisi büyükse, 4 için ise,
+
+540
+02:02:34,228 --> 02:02:39,287
+F1 artı R3, F2 artı R2.
+
+541
+02:02:44,500 --> 02:02:56,519
+V3 artı R1 ve F4 artı R0'dan en büyük olan iş. Bunları gezerek maksimumu bulabilir hale geliyorum.
+
+542
+02:02:56,519 --> 02:03:00,359
+Şimdi
+
+543
+02:03:15,891 --> 02:03:27,252
+Şimdi bu tabloya baktığımızda ne görüyoruz? Mesela R4'ü hesaplamak için R3'ü kullanmam gerekmiş. R2'yi kullanmam gerekmiş. R2'yi R3 hesaplarken de kullanmışım.
+
+544
+02:03:27,731 --> 02:03:44,472
+R3'ü hesaplarken R2'yi kullanmışım, R1'i kullanmışım. R1'i zaten R2'yi hesaplarken de kullanmışım. Dolayısıyla burada bir tekrarlı yapı söz konusu değil mi? Memorization'ımda o zaman ben bu tekrarlı yapılardan kurtulacak şekilde işlerimi ilerletmeliyim.
+
+545
+02:03:46,572 --> 02:03:52,752
+Peki mesela bunun için nasıl bir kod yazmalıyım? Ve bunun analizini yapacak olursam neyle karşılaşırım?
+
+546
+02:03:55,636 --> 02:04:09,636
+Aslında benim key olarak şurada zaten yazdığım şu key fonksiyonundaki key point orası. Onu kullanarak recursive bir şekilde bu işi çözebilirim.
+
+547
+02:04:11,636 --> 02:04:13,580
+Mesela diyebilirim ki
+
+548
+02:04:25,108 --> 02:04:28,368
+Eğer O yıl sıfırsa
+
+549
+02:04:34,963 --> 02:04:36,652
+Süpsel döndürüz.
+
+550
+02:04:42,996 --> 02:04:43,996
+Dizek
+
+551
+02:04:50,068 --> 02:05:03,468
+bir Q hesaplıyorum. Aslında bunu Memorize versiyon neyse tam burada kalsın bir Q değerini minimum intle doldurdum.
+
+552
+02:05:08,948 --> 02:05:09,667
+İyineğe.
+
+553
+02:05:16,051 --> 02:05:18,956
+Birilerin arasındaki değerleri için...
+
+554
+02:05:28,275 --> 02:05:29,275
+İ
+
+555
+02:05:31,996 --> 02:05:32,996
+Arta
+
+556
+02:05:42,292 --> 02:05:45,091
+E en eksidi. İyi dedim.
+
+557
+02:05:50,292 --> 02:06:08,171
+Bakışımı bitirdim. Yani İ uzunluktaki parçanın fiyatıyla bu kesimi yaparsam, İ uzunluktaki parçayı kesersem ondan geriye kalan, yani N'den geriye kalan kısım.
+
+558
+02:06:11,220 --> 02:06:36,020
+karını hesaplamaya devam etmem gerekiyor. O zaman için bu iyi kesimi için de elde ettiğim yine fiyatı toplamam gerekiyor bunları. Kalan kısım için hesaplamaya devam edeceğim. İyilik bir kesim yaptım. Kalanı için hesaplamaya devam edeceğim. Ama aynı zamanda iyilik kesim için elde edeceğim. Kazancı da toplayarak bu işi götüreceğim. Bunu bir körsü bir şekilde yaptığım vakit.
+
+559
+02:06:36,916 --> 02:06:51,916
+Hesaplamam tamamlanmış oluyor. Şimdi bunun ağacını çizeceğim size ve kollarını hangi değerler için recursive konu çalışacak onu bir şuraya yazacağım. Ağaç içinde bir bey dolaştırsın istiyorum.
+
+560
+02:06:55,315 --> 02:07:02,935
+Şimdi yanına şöyle alırsam, yanına yazarsam daha iyi olacak.
+
+561
+02:07:07,256 --> 02:07:17,516
+Şimdi örneğin ilk başta bu cut-root algoritmasını cr diye kısaca gösterirsem, dörtlük bir çubuk için örneğin çalıştırdığımı farz edin.
+
+562
+02:07:19,296 --> 02:07:21,036
+Price Array'de p ile gösteriliyor.
+
+563
+02:07:21,908 --> 02:07:26,448
+Şimdi i'nin değişken değerleri için 1 ile 4 aralığında.
+
+564
+02:07:30,515 --> 02:07:33,335
+Her seferinde bu kolları yapacak.
+
+565
+02:07:35,375 --> 02:07:36,175
+İ1 iken
+
+566
+02:07:44,819 --> 02:07:54,299
+P3 için bir kere kol yapacak ve maliyet hesaplarken de İ'nin bir olduğu durumdaki bana getireceği gelirle toplamış oluyor.
+
+567
+02:07:54,299 --> 02:08:05,439
+Aslında C, P, R4'ün seçeneklerden bir tanesi, seçilebilecek seçeneklerden bir tanesi P1 için bir gelir elde etmek ve geri kalan kısmı için tekrar fonksiyonu çağırmak.
+
+568
+02:08:07,347 --> 02:08:14,947
+Ama tabii devam ediyor bu. Çağırdıktan sonra aşağıya okul yapacağım ama İ1 iken bunu çağırıyor. İ2 iken neyi çağırıyor?
+
+569
+02:08:18,484 --> 02:08:19,564
+Şunu çağırıyor.
+
+570
+02:08:21,464 --> 02:08:22,404
+Formül gereği.
+
+571
+02:08:25,784 --> 02:08:26,524
+İ üçgen.
+
+572
+02:08:30,068 --> 02:08:30,948
+Bunu çağırıyor.
+
+573
+02:08:30,948 --> 02:08:31,488
+Bu benim.
+
+574
+02:08:32,588 --> 02:08:34,368
+Koşa gitmeye başladı biraz.
+
+575
+02:08:39,796 --> 02:08:42,976
+İ4 kendi. P ve 0 için çağırdı.
+
+576
+02:08:45,816 --> 02:08:50,376
+Şimdi aslında şuraya ağacı çizecek olursam.
+
+577
+02:08:52,716 --> 02:08:57,476
+İlk 4 değerini verdiğim vakit bu bana.
+
+578
+02:09:00,356 --> 02:09:01,156
+Şurada.
+
+579
+02:09:02,316 --> 02:09:04,996
+Çok doğru olmadı da ağaç çiziyorum çünkü.
+
+580
+02:09:08,692 --> 02:09:18,291
+Patrot 2'ye Patrot 1'e Patrot 0'ı çağırdı. Doğru mu? Şu kısımlar onu çağırdı.
+
+581
+02:09:18,291 --> 02:09:28,692
+Şimdi sonrasında zaten bu kollar sonlanmadan önce şunu tekrar çağıracak. Patrot 3'ü için ilk çağrıldığında
+
+582
+02:09:36,051 --> 02:09:51,551
+Biri üç arasında gidecek ve her seferinde yine İ1'den başlamak üzere. Yine Rikörsü bir şekilde. Bu sefer P2 artı P1 olacak seçeneklerden biri İ1 iken.
+
+583
+02:09:56,467 --> 02:10:20,967
+İkinci seçeneği İ2 olduğunda en eksisi İ'den burası 1 olacak. Artık B2 böyle bir kesim yapmak. Bunun getireceği gelir hesaplayacak. Bir de en son İ3 iken ekstra bir kesim yapmıyor. 3'ün getireceği gelir. Bunu topluyor. 3'ün fiyatı daha doğrusu. Bunlardan en büyüğünü alacak.
+
+584
+02:10:22,163 --> 02:10:37,663
+Dolayısıyla ne yaptı? P3 aslında burada kendi içinde 3 kere function call yaptı. 2 için, 1 için, 0 için function call yaptı. Doğru mu?
+
+585
+02:10:47,028 --> 02:10:53,387
+Şu sonlanmak zorunda bu sefer. Zaten hiçbiri henüz sonlanmadı. 2'ye kadar gidiyor.
+
+586
+02:10:53,387 --> 02:11:01,108
+İ1 iken P1 ile topladı.
+
+587
+02:11:03,248 --> 02:11:05,228
+İ2 iken
+
+588
+02:11:12,180 --> 02:11:13,260
+P sıfırla.
+
+589
+02:11:15,400 --> 02:11:16,600
+Toplada.
+
+590
+02:11:24,404 --> 02:11:26,044
+İyiyek senden dolayı.
+
+591
+02:11:28,564 --> 02:11:29,924
+Şimdi şu işlem.
+
+592
+02:11:33,332 --> 02:11:55,992
+Şu işlem zaten artık sonlanmasını sağlıyor. P0, 0 döndürücü için. Şurası 0 döneceği için. Burası aslında 0 artı P2 olacak. Burası sonlanacak. Şurada önce şeyi de bir yazalım. P2'ni çağırdı. 1'i ve 0'ı çağırdı.
+
+593
+02:12:00,435 --> 02:12:11,775
+Şimdi bu da son, bunu da yazayım. Sıkılmış olabilirsiniz ama. Biraz da Recursef Fonksiyon'un şeyini, doğasını anlatmak istedim.
+
+594
+02:12:16,275 --> 02:12:24,155
+Şimdi siz bunu yaptığınız vakit artık P1'i buldunuz. Çıkışı çünkü n'in sıfır olma durumuyla bu iş sonlanıyordu.
+
+595
+02:12:24,875 --> 02:12:36,675
+Buradaki bilgi, burada bulduğunuz bilgi şuraya geldi. Burada P1 artı P2 bu buraya döndü.
+
+596
+02:12:42,260 --> 02:12:48,399
+Opsiyon olarak geldi. Bununla P2'yi karşılaştırdınız. Hangisi büyükse onu buldunuz.
+
+597
+02:12:51,140 --> 02:12:56,800
+Sonrasında artık P2'yi bulabildiğiniz için buraya o bilgi geldi.
+
+598
+02:12:59,155 --> 02:13:12,155
+Bunun sonucuna geldi. P1'in sonucu da zaten yukarıdan geldi. Bunun sonucu belli. Bunu topladınız, o yukarıya geldi gibi. Artık Recursive Kolları topluyorsunuz. En sonunda P4 sonlanmış oluyor.
+
+599
+02:13:12,155 --> 02:13:22,735
+Burada sonlanırken de her seferinde 0'ı görmeniz gerekiyor. Bu 1'i kol etti, 0'ı kol etti.
+
+600
+02:13:26,003 --> 02:13:38,083
+İki de aynı şekilde. Biri kol etti. Sıfırı kol etti. Biri de sıfırı kol etti ve işlem bitti. Şimdi bu Rikorsif Kollar.
+
+601
+02:13:39,380 --> 02:14:00,279
+Bu şekilde üst üste ikiyi birkaç kere çağırdınız. Çünkü henüz memorization mekanizmanız yok. Biri için çağırdınız. Dolayısıyla sizin sıfıra ulaşmak için aslında kaç tane körsüm kol yapmanız gerekti? Yani performansınızı yukarıdaki ağacın yaprak sayısına bakarak hesaplayacak olursanız nasıl bir kol mu çıkıyor karşınıza?
+
+602
+02:14:02,760 --> 02:14:04,439
+Aslında şöyle bir şey çıkıyor.
+
+603
+02:14:08,979 --> 02:14:13,380
+Ne yaptınız? Nasıl bir Ricor Resolution'ımız var burada?
+
+604
+02:14:25,203 --> 02:14:26,524
+Şöyle bir dilation var değil mi?
+
+605
+02:14:29,384 --> 02:14:36,083
+Topladığınız için elemanları her seferinde toplama işlemi yaptığınız için bir onun getirdiği işleminiz var.
+
+606
+02:14:36,083 --> 02:14:44,623
+Bir de sonra bir ile n arasında n-i olacak şekilde her seferinde inputu n kere recursive call yaptınız.
+
+607
+02:14:44,724 --> 02:14:47,564
+Dolayısıyla sizde recursive dilationınız şu şekilde.
+
+608
+02:14:51,283 --> 02:14:54,503
+Peki bunun şey değeri ne? Ne zaman çıkıyoruz? T0.
+
+609
+02:14:58,515 --> 02:15:15,995
+Sıfırla çıkıyoruz. T sıfır olduğu zaman sıfır. T bir olduğu zaman ne olacak işleminiz? Şuradaki biriniz var ve şurası var. Bir artı sıfır.
+
+610
+02:15:26,644 --> 02:15:28,644
+Artı T0 göreceksiniz.
+
+611
+02:15:30,644 --> 02:15:32,923
+Bu da bize 2'yi verecek.
+
+612
+02:15:34,923 --> 02:15:36,663
+T3 olduğu zaman
+
+613
+02:15:36,663 --> 02:15:39,264
+1 artı
+
+614
+02:15:39,264 --> 02:15:41,804
+T2
+
+615
+02:15:41,804 --> 02:15:44,543
+artı T1
+
+616
+02:15:44,543 --> 02:15:49,043
+artı T0 göreceksiniz.
+
+617
+02:15:50,644 --> 02:15:52,483
+O da size 4'ü verecek.
+
+618
+02:15:53,203 --> 02:15:58,104
+Bu böyle gidecek. Bu durumda bunların arasında nasıl bir ilişki olduğunu yine görebilirsiniz.
+
+619
+02:15:58,904 --> 02:16:04,243
+Tn eşittir 2 üzeri n-1.
+
+620
+02:16:07,184 --> 02:16:19,144
+O zaman şurada Tn yerine 2 üzeri n-1 yazarsanız, 2 üzeri n çarpı formülden 1 bölü 2.
+
+621
+02:16:20,127 --> 02:16:44,688
+eksponansiyel bir karmaşıklık gelecek. Böyle karşımıza çıkıyor. Tamam. Şimdi bu, bunun naiv bir şekilde memorization yapılmadan çözülmüş versiyonu. Şimdi bunun dynamic programming ile memorization ile nasıl yapılır ona bakacağız.
+
+622
+02:16:45,843 --> 02:16:53,823
+Saatte 20 olmuş. Ara verelim mi yoksa devam edeyim mi? Araya ihtiyacınız var mı?
+
+623
+02:16:56,123 --> 02:17:02,203
+Bir de farklı bir dersimiz var hocam. Sadece devam edebiliriz diye düşünüyorum ben kendi şahsını.
+
+624
+02:17:04,203 --> 02:17:08,523
+Bunu bitirebilir miyim acaba diye düşünüyorum. Bitiririm herhalde. O zaman bu problemi bitirelim.
+
+625
+02:17:08,603 --> 02:17:13,063
+Eğer araya ihtiyacınız yoksa ara vermeden bitirelim. Zaten şimdi eklemeler yapacağım artık o da.
+
+626
+02:17:14,227 --> 02:17:20,108
+Tamam. Şimdi, kodumuz şöyleydi.
+
+627
+02:17:27,123 --> 02:17:29,123
+Hadi, budumuş.
+
+628
+02:17:29,123 --> 02:17:31,788
+Kut yazma, tak ne? Kut nad?
+
+629
+02:17:36,788 --> 02:17:37,788
+Bir dakika.
+
+630
+02:17:37,788 --> 02:17:38,788
+Ha, şurada.
+
+631
+02:17:38,788 --> 02:17:45,788
+Şimdi buraya memorization ekleyeceğiz. Normal naif versiyonumuz şuydu.
+
+632
+02:17:45,788 --> 02:17:49,788
+Buna memorization ekleyeceğiz.
+
+633
+02:17:49,788 --> 02:17:57,788
+Nasıl bir şey yapabiliriz? Nereye eklememiz gerekiyor?
+
+634
+02:18:01,747 --> 02:18:20,788
+Sat problemlerinizi, sonuçlarını tutacak ilave bir bilgiye ihtiyacınız var. Öyle değil mi? Önceden olmayan ama artık ihtiyacınız olan bir şey oraları yazmak zor olacak. Şuraya temiz bir şekilde yazalım. Sat problemlerin sonuçlarını tutacak bir izliye ihtiyacınız var.
+
+635
+02:18:24,308 --> 02:18:26,087
+Minumun şey nedense?
+
+636
+02:18:40,051 --> 02:19:05,211
+Şimdi buna R diyelim. Bu bir Array. Sıfırlayan aralığında. Bunu bir Initialize işlemine tabi tutmanız gerekiyor. Şöyle bir şey yapacaksınız. Yapabilirsiniz. En azından. İlk gözünü sıfırlayalım.
+
+637
+02:19:05,811 --> 02:19:11,752
+Diğer gözünü minimum int neyse tasarımımızdan onunla ilklendirelim.
+
+638
+02:19:14,971 --> 02:19:20,531
+Diyeceğiz. İlk gözü sıfır koyduk çünkü T sıfır sıfır eşitti biliyorsunuz.
+
+639
+02:19:22,652 --> 02:19:32,112
+T sıfır sıfır da. Diğerlerine işte eksi sonsuz diyebileceğimiz, tabir edebileceğimiz minimum intiniz neyse onu koydunuz.
+
+640
+02:19:32,755 --> 02:19:34,755
+Böyle iliklendirdiniz.
+
+641
+02:19:39,796 --> 02:19:44,995
+Sonrasında da fonksiyonunuzu çağırıyorsunuz.
+
+642
+02:19:46,655 --> 02:19:48,456
+Yazacağınız fonksiyonu şimdi yazacağız.
+
+643
+02:19:52,628 --> 02:20:05,308
+Memorize Cut Roads Diyelim. Dinamik programlamayla yapacak olan fonksiyonuzu çağırıyorsunuz.
+
+644
+02:20:05,308 --> 02:20:08,828
+Bakın bu fonksiyonda nelere dikkat etmemiz gerekiyor.
+
+645
+02:20:25,075 --> 02:20:48,415
+Birincisi, şu an beni bu fonksiyon için konuşuyorum. Memorize Cut-Rod-Ax fonksiyonunun P, N ve R için çağrıldığında, yeni bir, henüz bu şu an çağrıldığım değerler için, N değeri için bir hesaplama yapılmış mı, yapılmamış mı? Önce onu kontrol etmeliyim.
+
+646
+02:20:53,747 --> 02:21:15,847
+En uzunluklu çubuk için. Mininti eşitse o zaman bu ne demektir? Henüz bu değer için bir hesaplama yapılmamış demektir. Hesaplama yapmak zorundayım ve bunu benim doldurmam gerekiyor demektir. Bir minimum bulma işlemi yapacağım yine lokal olarak. Dolayısıyla bunu yine
+
+647
+02:21:17,427 --> 02:21:23,648
+İlklendireceğim bir kür değeriyle lokal minimum bulmak için ilklendireceğim bir kür değerini kullanıyor olacağım.
+
+648
+02:21:27,956 --> 02:21:37,396
+Az önceki gibi aslında bundan sonrası birilerin arasında değişen değerlerim var.
+
+649
+02:21:42,004 --> 02:21:51,584
+Lokal minimumu bulmak için dedim, yanlış söyledim özür dilerim. Lokal maksimumu bulmak için minimumla ilişkilendirmem gerekiyor. Şu değerler arasındaki maksimum olanını bulmaya çalışıyorum.
+
+650
+02:22:11,924 --> 02:22:18,104
+Önceki çözümden farklı olarak şu parametreyi aslında eklediniz. Bir önceki çözümde bu parametre yoktu. Bunu eklediniz.
+
+651
+02:22:20,164 --> 02:22:29,024
+N'e kadar döndünüz. Her seferinde yine input olarak Q'nun maksimum olup olmadığında bakmanız gerekiyor.
+
+652
+02:22:29,024 --> 02:22:36,224
+Bununla mevcut i ve bunu kestikten sonra geriye kalan kısım için elde edilecek kar bunu toplayıp
+
+653
+02:22:36,255 --> 02:22:52,655
+Bu en için, i1 için, i2 için, i3 için bu seçeneklerden maksimum olan aslında sizin bu i uzunluktaki çubuk için elde edebileceğiniz kar olacak. Maksimum kere olacak. Onu bulacaksınız. Ve bunu Q'da tutuyorsunuz.
+
+654
+02:22:56,468 --> 02:23:09,468
+Şimdi burada if'ten de çıktıktan sonra bu bulduğunuz Q'yu nasıl şurada başlattınız var mı yok mu diye eğer yoksa bu işlemi yaptınız. Doldurmanız gerekiyor tabii ki. Diyeceksiniz ki.
+
+655
+02:23:13,236 --> 02:23:21,816
+Rn, ilgili değerimi ben Q için, yani en uzunlukta çubuk için elde edebileceğim geliri yazayım.
+
+656
+02:23:25,780 --> 02:23:27,780
+Ve sonrasında...
+
+657
+02:23:32,724 --> 02:23:34,164
+işlemi bitirebilirim.
+
+658
+02:23:41,747 --> 02:24:01,827
+Şimdi, Memorize versiyonu bu şekilde çözdük. Var mı soru arkadaşlar bununla ilgili? Bu benim recursive bir şekilde çözmüş halim. Şimdi sizden rica etsem bunu bottom-up'a çevirebilir misiniz?
+
+659
+02:24:05,811 --> 02:24:14,711
+Nasıl çevirirsiniz Batım mapa? Yani de cursive yapmayacaksınız. Ne yapmanız gerekiyor bunu Batım mapa çevirebilmek için?
+
+660
+02:24:19,443 --> 02:24:29,923
+Rikörzen'in olduğu aslında şu satırda bunun yerine ekstra bir döngü mekanizmasına ihtiyacınız var değil mi? Batıma paça görmek istiyorsanız.
+
+661
+02:24:35,603 --> 02:24:37,603
+Nasıl çeviririz ona da bakalım.
+
+662
+02:24:55,252 --> 02:24:57,164
+Oturma paşı, no?
+
+663
+02:25:12,819 --> 02:25:26,479
+Şimdi benim Bottom-Up versiyonunda da dinamik programlama yaptığım için yine aslında bu sefer dinamik programlama table diye isimlendirdiğim bu değerleri tutturan bilgiye yine ihtiyacım var.
+
+664
+02:25:28,299 --> 02:25:30,419
+Bunun ilk değerini sıfır renklendirdim.
+
+665
+02:25:35,412 --> 02:25:52,731
+Şimdi her boyutta bir ile en arasında değişen her boyutta çubuk için bir kere tekrarlamam gereken işlemlerim var. Bunun için bir döngüm var. Bu az önceki döngümle aynı aslında amacı. Şuradaki döngüyle aynı.
+
+666
+02:25:59,059 --> 02:26:00,559
+Her seferinde bir Q'yu.
+
+667
+02:26:04,500 --> 02:26:14,799
+İlklendirmem gerekiyor. Recursive Code çağıramadığım için Bottom Up Solution'da burada yeni bir döndürüye daha ihtiyacınız olacak.
+
+668
+02:26:22,100 --> 02:26:31,340
+J'yi bu sefer baz almanız gerekecek. Bu iç döngüde. Ve yine aslında temel olarak aynı çıkarımımızı kullanıyoruz.
+
+669
+02:26:46,548 --> 02:26:50,968
+Yani boyutu J olan çubuk için maksimum katı burada buluyoruz.
+
+670
+02:26:52,128 --> 02:26:58,788
+İ'nin 1 ve J arasında değişen değerleri için toplamda boyut J olacak şekilde tüm opsiyonları deniyoruz.
+
+671
+02:27:04,275 --> 02:27:12,036
+Bulduğumuzda da bunu store edeceğiz. Tekrar ihtiyacımız olursa diye.
+
+672
+02:27:12,036 --> 02:27:22,275
+Endloat olmuş. Endloat'a ikinci şeyimizden de çıkalım. Döngümüzden de çıkalım.
+
+673
+02:27:25,427 --> 02:27:35,927
+Şimdi, Memorize işlemi, yani dinamik programlamanın ana unsuru olan bu işlemi, hem Recursive olarak hem Bottom Up olarak iki şekilde de çözdüm.
+
+674
+02:27:36,587 --> 02:27:41,927
+Recursive ya da Bottom Up çözülmesi bu problemin karmaşıklığını etkiliyor mu? Onu sorayım size.
+
+675
+02:27:47,219 --> 02:27:50,819
+Karmışıklığı hakkında bana ne söylemek istersiniz? Nasıl hesaplarız?
+
+676
+02:27:57,971 --> 02:27:59,811
+Var mı bir şeyler söylemek istiyorum?
+
+677
+02:28:03,700 --> 02:28:30,500
+Şimdi şu versiyonun, BATIMAP olanın şöyle yazabiliriz. Hatırlıyorsunuz değil mi bunları? Nasıl çözüyorduk? İçi içe iki tane döngüm vardı. Bir tanesi birden ene kadar gidiyordu. Diğeri şöyle. Değil mi? Bu ikisi için yapacağım işlemler böyle. İçi tarafta da.
+
+678
+02:28:30,932 --> 02:28:55,652
+Aslında konstanttan bir işlemim var. Dolayısıyla bu dışarıya nasıl çıkıyordu? Bu dışarıya nasıl çıkıyordu? J giderken birden birer birer n'e kadar. Şurada konstant bir ifade olduğu için burası j olarak çıkacak dışarıya. Dolayısıyla bunun formülü neydi? n çarpı n artı bir bölü ikiydi. Bu da n karelik bir.
+
+679
+02:28:57,299 --> 02:29:07,719
+Karmaşıklık veriyordu bana. Bottom up da yapsanız bunu, Recursive da yapsanız aynı karmaşıklığı elde edeceksiniz.
+
+680
+02:29:14,036 --> 02:29:17,795
+Recursive versiyonu için bu hesaplamayı nasıl yapabilirsiniz?
+
+681
+02:29:17,795 --> 02:29:23,692
+Şimdi, şurada...
+
+682
+02:29:29,811 --> 02:29:52,871
+Şurada, burada, Memorize Versiyonda, şurayı, şu kısmı her yaptığımızda aslında bir subproblem çözümü gerçekleşiyor. Öyle değil mi? Burada bir subproblem çözümü gerçekleşiyor. Neydi dinamik programlamada formül? Number of subproblems.
+
+683
+02:29:55,956 --> 02:29:59,135
+Çarpı her bir sap problemin karmaşıklığıydı aslında değil mi?
+
+684
+02:30:08,724 --> 02:30:10,724
+Yükat,
+
+685
+02:30:10,724 --> 02:30:12,724
+for solving subproblems.
+
+686
+02:30:14,724 --> 02:30:16,492
+Each subproblem.
+
+687
+02:30:21,683 --> 02:30:28,144
+Şimdi number of subproblems, her bir subproblemin çözümü burada gerçekleştiğine göre. Kaç tane subproblemim var benim?
+
+688
+02:30:33,587 --> 02:30:59,647
+En tane sap problemim var. Doğru mu? En kere atama yapıyorum. Her bir sap problem için kaç kere dönüyorum? Her bir sap problem için kaç kere dönmem gerekiyor arkadaşlar? Mesela değişen şekilde dönüyor tabii ki. Mesela 4 için 3 kere, 2 kere, 1 kere. 5 için 4 kere, 3 kere, 2 kere.
+
+689
+02:31:00,180 --> 02:31:22,440
+2-2 için bir kere iki kere değişiyor ama neticede buna genel olarak n kere dönüyor diyebilir miyim? Her bir tanesi için diyebilirim. Dolayısıyla bu da aslında yine beni n kareye götürüyor. Memorized versiyonunda bottom-up ya da recursive yapmanın sonucu değiştirmiyor. Neticede n kareye dönüyorsunuz.
+
+690
+02:31:23,443 --> 02:31:30,263
+Çünkü sap problem sayınız bu. Her sap problem için dönme sayınız belli. Tıpkı alttaki bottom up versiyonunda olduğu gibi.
+
+691
+02:31:40,435 --> 02:32:01,536
+Şimdi var mı soru arkadaşlar? Tamam. Şimdi biz neyi bulduk burada? Şu bulduk dedik ki, fraud cutting probleminde en fazla geliri ben nasıl elde edebilirim? Onun üzerine gittik.
+
+692
+02:32:02,388 --> 02:32:11,087
+Bu alkışların hiçbiri, şimdiye kadar çizdiklerim, en fazla kar elde edebileceğim kesim noktalarını bana söylemiyor.
+
+693
+02:32:11,608 --> 02:32:20,587
+Bana maksimum karımı söylüyor. En fazla kar getirecek olan kesimlerin nerelerde yapılması gerektiğini bana vermiyor.
+
+694
+02:32:20,587 --> 02:32:26,348
+Bunu veren bir çözüme ihtiyacım var. Bunu veren bir çözüm için benim neye ihtiyacım var aslına bakarsanız?
+
+695
+02:32:28,147 --> 02:32:40,747
+Bu bilgileri tutacak bir diziye ihtiyacım var. Bunun kodu biraz daha uzun. Bunu yazmadım. Aslında önceki versiyonuna eklemeler ile çözülüyor.
+
+696
+02:32:40,747 --> 02:32:44,387
+Şimdi bunun kodunu size göstereyim. Hızlıca bir göz atalım birlikte.
+
+697
+02:32:47,987 --> 02:32:50,468
+Pardon, paylaşımı değiştirmem lazım.
+
+698
+02:33:09,299 --> 02:33:19,059
+Şimdi bu bunun non-recursive, bottom-up hali. Çözümü bulmak için. Yani benim için en fazla karı verecek olan kesimler nerededir?
+
+699
+02:33:19,059 --> 02:33:25,259
+Dolayısıyla burada tutmak için bu kesimlerin yerlerini ekstra bir diziye ihtiyacım var.
+
+700
+02:33:26,779 --> 02:33:27,979
+Şu kısım aslında aynı.
+
+701
+02:33:28,463 --> 02:33:42,324
+Bu da max bulmak yerine if ile bu iş çözülmüş. Yine ilk değerini atıyorsunuz Q'ya. J'nin i ve n arasında değişen değerleri için. Sonra her seferinde yine J'ye kadar gidip.
+
+702
+02:33:42,639 --> 02:33:58,459
+Bu en yüksek getiren opsiyon nedir? Onu taradığınız, lokal maksimumu bulduğunuz taraf var. Formülünüz yine aynı. İ için gelen gelir artı çubuktan bu iyilik parçayı kestiğinizde geriye kalan kısım için gelen gelir. Bunları karşılaştırıyorsunuz.
+
+703
+02:33:58,459 --> 02:34:06,619
+Sadece şuraya her bulduğunuz noktada i'yi yani kesimlerden yapacaksanız ona eklemeniz gerekiyor. Aslına bakarsanız.
+
+704
+02:34:07,636 --> 02:34:23,576
+Sonrasında yine Q'yu atacaksınız bulduktan sonra. Bu şekilde problemi çözümünü de aslında bulmuş oluyorsunuz. Karmaşıklıkta da bir değişiklik olmuyor. Tabii ki space karmaşıklığında bir değişiklik oluyor ama time karmaşıklığında bir değişiklik olmuyor.
+
+705
+02:34:24,236 --> 02:34:32,995
+Bir tane daha problemi vardı bununla alakalı ama onu şimdi geçmeyeyim isterseniz. Uzun çünkü o hemen bitmeyecek. Sorunuz var mı arkadaşlar?
+
+706
+02:34:35,507 --> 02:34:38,347
+Teşekkürler hocam.
+
+707
+02:34:38,468 --> 02:34:41,747
+Ben teşekkür ederim. O zaman haftaya görüşmek üzere.
+
+708
+02:34:42,067 --> 02:34:44,028
+Hocam sunumları paylaşabilir misiniz?
+
+709
+02:34:44,747 --> 02:34:46,268
+Sunumları paylaşırım tabii.
+
+710
+02:34:46,907 --> 02:34:48,167
+Tamamdır, teşekkürler.
+
+711
+02:34:48,707 --> 02:34:53,227
+Nefsek problemi değildi. Hangi problem olsun isterseniz arkadaşlar?
+
+712
+02:34:54,587 --> 02:35:00,108
+Nefsek problemini daha sık görüyorsunuz diye onu çözmedim. Çözmeyeceğim yani.
+
+713
+02:35:01,028 --> 02:35:02,608
+Özel bir isteğiniz varsa alabilirim.
+
+714
+02:35:05,716 --> 02:35:09,136
+Yok. Tamam, peki. Teşekkür ederim. Görüşmek üzere o zaman.
+
+715
+02:35:09,816 --> 02:35:10,596
+İyi günler hocam.
+
+716
+02:35:10,816 --> 02:35:11,916
+İyi günler, çok sağ olun.
+
+717
+02:35:12,636 --> 02:35:14,276
+Görüşmek üzere.

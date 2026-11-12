@@ -1,0 +1,2387 @@
+1
+00:04:30,291 --> 00:04:32,751
+Merhabalar arkadaşlar, günaydın hoş geldiniz.
+
+2
+00:04:34,211 --> 00:04:41,231
+Bugünkü dersimizde geçen hafta en son Open Addressing'dan bahsetmiştik.
+
+3
+00:04:41,311 --> 00:04:43,851
+Önce bir onu hatırlatayım, onun analiziyle başlayacağız çünkü.
+
+4
+00:04:44,611 --> 00:04:50,911
+Biliyorsunuz hashtag oluşturduğumuz zaman karşılaştığımız en büyük problem çakışmalarda, collusionlarda.
+
+5
+00:04:51,231 --> 00:04:53,371
+Bunları çözmenin farklı metodlarını görmüştük.
+
+6
+00:04:54,251 --> 00:04:56,611
+Separate Chaining yapabiliyorduk.
+
+7
+00:04:56,687 --> 00:05:05,087
+Eğer herhangi bir slota denk gelen, çakışan başka bir entry varsa ilgili slota point eden bir linkli liste oluşturup
+
+8
+00:05:05,396 --> 00:05:17,636
+Orada çakışın elemanları saklamak şeklinde bir çözüm üretiliyordu. Bunun analizini yapmıştık. Diğer bir kollision çözme yöntemi ise Open Addressing'ti.
+
+9
+00:05:17,636 --> 00:05:33,355
+Open Addressing'te de ne yapıyorduk? Hatırlarsanız basit hash fonksiyonuna ikinci bir parametre olarak kaçıncı probda ulaşıldığını gösteren bir değer alıyordu. Örneğin bir fonksiyonumuzda iyiye bağlı olarak.
+
+10
+00:05:33,396 --> 00:05:54,696
+Bir hesaplama yapıyorduk ve birinci denemede bir slota yerleşiyordu. Eğer orada collusion varsa 2 oluyordu ve i'nin kullanılarak üretilen ikinci slota yerleşmek için çaba harcıyorduk. Böylece tek bir dosya, tek bir table içerisinde tüm elemanları tuttuğumuz bir yapı ortaya çıkıyordu. Buna da open addressing deniyordu.
+
+11
+00:05:55,252 --> 00:06:09,711
+Hatırlarsanız Open Addressing'in de Prop yöntemleri vardı. Linear Probing, Quadratic Probing, Double Hashing diye bunlardan bahsetmiştik. Bunların tamamının ortak noktası aslında Table'ın boyutunun M olduğu.
+
+12
+00:06:10,355 --> 00:06:17,755
+Entry sayısının n olduğu bir durumda, table boyutunun entry sayısından büyük olduğu bir table dizayn ediliyordu.
+
+13
+00:06:17,755 --> 00:06:25,755
+Ve mevcut hashing fonksiyonuna göre de sırayla ilgili slotları deneme yapılıyordu. Open addressing böyle çalışıyordu.
+
+14
+00:06:33,331 --> 00:06:51,891
+Load Faktör neydi hatırlarsanız? Doluluk oranıydı. Burada Entry Size'ımız, yani kaç tane bilgi girecekse key sayısı da diyebiliriz. M'de Slot sayınız. N bölü M'in birden küçük olduğu bir durum söz konusu. Çünkü Slot sayınızın daha fazla olması gerekiyor Open Addressing yapabilmeniz için.
+
+15
+00:06:56,372 --> 00:07:11,252
+Load Faktör'ü en bölümün birden küçük olduğu bir hash table'da bir başarısız searchteki prob sayısı en fazla böyle olabilir.
+
+16
+00:07:11,792 --> 00:07:15,312
+Uniform hashingin olduğu kabul edilirse diyor. Teorem bu.
+
+17
+00:07:20,148 --> 00:07:36,208
+alfa olmasını bekliyoruz. Uniform hashing olduğunu kabul ederek. Şimdi bunun ispatını yapacağız. Şuraya, şurada bir yanlışlık olmuş. Burada bir eşitleri yok. Çok üzere bir bölüm sadece bu. Şöyle. Şimdi bunun ispatını yapacağız.
+
+18
+00:07:39,048 --> 00:07:46,068
+Küçük bir hatırlatmadan sonra ekran paylaşımımı değiştirmem gerekecek.
+
+19
+00:08:02,644 --> 00:08:05,644
+Bu şu an Zoom'a Whiteboard'a mümkün.
+
+20
+00:08:22,579 --> 00:08:47,539
+Galiba görüyorsunuz artık. Tamam. Şimdi başlayalım. Çizeceğiz. Şimdi şuraya bir hatırlatalım. Neyi ispatlamaya çalışıyoruz? Bu benim load faktörüm. En böleğim.
+
+21
+00:08:49,491 --> 00:08:59,831
+Başarısız bir search'te prob sayısının, expected number of prob'un bir bölü bir eksi alfa olduğunu hesaplamaya çalışıyorum.
+
+22
+00:09:00,311 --> 00:09:14,031
+Şimdi bunun için şöyle bir yol izliyorum. Her başarısız prob, yani bir occupy edilmiş slota denk gelen bir deneme yaptığım zaman aslında sizin prob sayınız bir artmış oluyor.
+
+23
+00:09:18,644 --> 00:09:20,384
+Bunların Probabilitelerine bakacağız.
+
+24
+00:09:27,731 --> 00:09:46,412
+Şimdi, benim tablomdaki dolu eleman sayım emken. Tablomdaki toplam slot sayısı da emken. Birinci probu yaptığım vakit, yani ilk denememi yaptığım vakit, bunun oküpan edilmiş bir slota denk gelme olasılığı en bölü en oluyor.
+
+25
+00:09:54,227 --> 00:09:58,907
+Daha önce doldurulmuş bir solata denk gelme olasılığı.
+
+26
+00:10:03,316 --> 00:10:14,536
+Bu durumda da ikinci bir proba denk, ikinci bir proba gereksinim var. Dolayısıyla burada bir en bölü emlik bir oran şu an elimizde. Şimdi ikinci proba geçersem ne oluyor?
+
+27
+00:10:24,052 --> 00:10:32,951
+İkinci probun yine dolu bir slota denk gelme olasılığı ne oluyor biliyor musunuz?
+
+28
+00:10:32,951 --> 00:10:43,731
+Elimdeki elemanlardan bir tanesi azaldığı için, slotlardan da bir tanesi, denemek istediğim slotlardan bir tanesi azaldığı için n-1 bölü m-1 oluyor.
+
+29
+00:10:43,852 --> 00:10:48,552
+İkinci probun occupied edilmiş bir slota denk gelme olasılığı.
+
+30
+00:10:58,163 --> 00:11:01,104
+Bu durumda da üçüncü prova gerek var.
+
+31
+00:11:06,355 --> 00:11:19,495
+Neyse seve. Peki, üçüncüsü için nasıl olacak? N-2 sayısı azaldığı için M-2. Ve bu böyle gidecek.
+
+32
+00:11:21,596 --> 00:11:28,155
+Şimdi bu durumda benim bir tane random variable tanımladığımı düşünelim. Bu random variable'ın şunu anlatsın.
+
+33
+00:11:36,371 --> 00:11:41,672
+Made in an Unsuccessful Search.
+
+34
+00:11:47,059 --> 00:12:01,500
+Bir de event tanımlıyorum. Bu da i'nin 1, 2, sonsuza kadar giden durumu için biz bunu değerlendirmiş olacak. Aldığı değerler için.
+
+35
+00:12:09,460 --> 00:12:19,840
+İkinci Prob'da bu eventin oluşması ve bunun bir Occupy edilmiş slota denk gelmesi.
+
+36
+00:12:29,652 --> 00:12:36,072
+Şimdi buna da Aİ event edelim. Şimdi Probability'imi yazmaya çalışıyorum. Şöyle bir eşitlik yazabilirim.
+
+37
+00:12:44,851 --> 00:13:03,391
+Aslında bu şu demek. En az iyi prob olma olasılığı. Benim random variable'ımı tanımlamıştım. Yani number of probes made in an unsuccessful search demiştim. Başarısız bir aramada yapılacak prob sayısının en az iyi olma olasılığı şöyle ifade edilebilir.
+
+38
+00:13:05,131 --> 00:13:12,271
+Birinci event olacak. Yani birinci prob yapacaksınız ve occupied bir slota denk gelecek.
+
+39
+00:13:13,011 --> 00:13:22,711
+Aynı zamanda ikinci eventte olacak. Aynı zamanda üçüncü eventte olacak. Tüm bu eventlerin arka arkaya gelmesi gerekiyor. Tüm bu olasılıkları birlikte düşünmeniz gerekiyor.
+
+40
+00:13:28,052 --> 00:13:47,792
+Tüm bu olasılıkları birlikte düşündüğünüz vakit aslında toplam olasılığı bulmuş oluyorsunuz. Şu ilk probun oküp edilmiş bir stota denk gelmesi ve ikinci probun gerekme ihtimali. Şu ikincisinin denk gelmesi üçüncü proba ihtiyaç duyma hali. Dolayısıyla burası i-1'e giderken burası iyi oluyor.
+
+41
+00:13:48,628 --> 00:13:57,188
+Her seferinde slot, occupy demiş bir slotla karşılaştığınızda aslında diye bir artı bir prova ihtiyacınız olduğu için.
+
+42
+00:13:58,307 --> 00:14:02,848
+Şimdi şunları nasıl yazarız? Şu kısımları nasıl yazarız? Aslında şöyle yazabiliriz.
+
+43
+00:14:06,227 --> 00:14:31,288
+Prob A1, ilk sulat olduğu için böyle zaten. Probability A2, Probability A3, Probability A4 bunların hepsini çarpmanız gerekiyor bu kesişimi hesaplayabilmeniz için. Probability A2'yi nasıl hesaplıyorsunuz? Şöyle hesaplıyorsunuz. A1 gerçekleşmişken A2'nin de gerçekleşmesi gerekiyor.
+
+44
+00:14:33,076 --> 00:14:43,175
+Probability 3'ü nasıl hesaplıyorsunuz? A3 gerçekleşmişken A1 ve A2 gerçekleşecek. Bu böyle gidecek.
+
+45
+00:14:46,635 --> 00:14:50,755
+En son denk geleceği değerleri de yazalım.
+
+46
+00:14:57,844 --> 00:14:59,964
+Böyle gidiyor. A, i-1'e kadar.
+
+47
+00:15:01,724 --> 00:15:03,903
+Şimdi şu nedir? Şurası.
+
+48
+00:15:05,204 --> 00:15:08,224
+Zaten bunun n-1 olduğunu biliyoruz.
+
+49
+00:15:08,283 --> 00:15:12,344
+Birinci denememizde arayacağım eleman sayısı belli.
+
+50
+00:15:13,104 --> 00:15:14,744
+Tablomdaki eleman sayısı belli.
+
+51
+00:15:15,104 --> 00:15:18,283
+Dolayısıyla okübiyet edilmiş bir slota denk gelme olasılım bu.
+
+52
+00:15:19,324 --> 00:15:22,324
+Şimdi ikinci sefer, ikinci terim için ne olacak?
+
+53
+00:15:22,324 --> 00:15:23,864
+Bu az önce anlattığım gibi.
+
+54
+00:15:24,755 --> 00:15:26,755
+Pardon, bu en eksibir olacak.
+
+55
+00:15:28,255 --> 00:15:29,155
+Aç yazdım.
+
+56
+00:15:36,851 --> 00:16:03,611
+n-1 bölü m-1 Şurası ne oluyor? n-2 bölü m-2 Bu böyle gidiyor. Şurası ne oluyor? n-2 bölü m-2 Şurayı bu arada i-2 yazmam gerekiyordu. Yanlış yazmışım.
+
+57
+00:16:05,395 --> 00:16:08,375
+Dolayısıyla bunların çarpımını bulmamız gerekiyor.
+
+58
+00:16:08,375 --> 00:16:10,015
+Çok özür diliyorum.
+
+59
+00:16:12,115 --> 00:16:14,995
+Şimdi bunların çarpımını bulmamız gerekiyor.
+
+60
+00:16:19,700 --> 00:16:47,179
+Böyle bir gözlem yapabiliriz değil mi burada? N-i bölü m-i gibi aslında bunları genelleştirmek mümkün. Böyle bir ifadenin n bölü m'in oranı belli olduğu için, birden küçük olduğu için, n bölü m'den yani m'in n'den büyük olduğunu bildiğim için n-i bölü m-i'nin n bölü m'den küçük olduğunu biliyorum.
+
+61
+00:16:48,052 --> 00:16:52,832
+Bundan yola çıkarak aslında şimdi hesaplamama gidiyor olacağım.
+
+62
+00:17:00,244 --> 00:17:01,612
+Şuraya biraz gönül alalım.
+
+63
+00:17:21,940 --> 00:17:35,800
+Bir önceki ifademi açık olarak şöyle yazmıştım. Şu ifadeyi n-1, şuradaki ifadeyi n-1, n-2 cinsinden buraya yazıyorum.
+
+64
+00:17:41,491 --> 00:17:42,331
+n bölü m.
+
+65
+00:17:43,451 --> 00:17:44,951
+n-1 bölü.
+
+66
+00:17:45,632 --> 00:17:46,372
+m-1
+
+67
+00:17:46,372 --> 00:17:49,351
+n-2 bölü.
+
+68
+00:17:49,791 --> 00:17:50,571
+m-2
+
+69
+00:17:50,571 --> 00:17:52,511
+gidiyoruz böyle.
+
+70
+00:17:54,531 --> 00:17:56,412
+n-i artı 2 bölü.
+
+71
+00:17:58,351 --> 00:17:59,471
+m-i artı 2.
+
+72
+00:18:01,331 --> 00:18:03,392
+Peki bunları nasıl ifade edebilirim o zaman?
+
+73
+00:18:04,672 --> 00:18:05,351
+Probability.
+
+74
+00:18:09,395 --> 00:18:31,056
+Şöyle ifade edebilir miyim? Üzeri, İ-1. Şuradan yola çıkarak, normalde N-İ bölü M-İ'nin N bölü M'den küçük olduğunu düşünürsem, bunların her birinin çarpımının da, yani İ-1 tane terim olduğu için, şuradaki ifadeden küçük olduğunu yazabilirim.
+
+75
+00:18:46,099 --> 00:18:54,099
+Böyle bir şey ortaya çıktı. Alfa üzeri i-1'den küçük olmalı. Şimdi benim proof etmeye çalıştığım şey,
+
+76
+00:18:54,099 --> 00:19:02,099
+expected number of probeların 1 bölü 1-1'e denk gelmesiydi. Burada i'den kurtulmam gerekiyor. Yani i'yi limitlemem gerekiyor.
+
+77
+00:19:02,099 --> 00:19:09,099
+i'nin sonsuza gittiği durum için expected i'yi limitleyeceğim, bulacağım. Dolayısıyla
+
+78
+00:19:12,019 --> 00:19:25,220
+X'lerin sayısını, expected number of x random variable'ını iyi giderken birden sonsuza kadar probability böyle yazabilirim.
+
+79
+00:19:39,155 --> 00:20:02,496
+Alfa üzeri i-1 olduğunu, şuradaki eşitliği biliyorsunuz, böyle bulmuştuk. Bunu buraya alıyorum. Şu ifade neye eşit oluyor? Buradaki ifade, i'yi bir yerine sıfıra çekersem, alfa üzeri i'ye denk gelmiş oluyor. Bunun da summation formüllerinden ispatına isterseniz bakarsanız karşılığı buna denk gelmiş oluyor.
+
+80
+00:20:04,211 --> 00:20:07,491
+Bu durumda ben artık profumu bitirmiş oldum.
+
+81
+00:20:08,411 --> 00:20:14,612
+Expected Number of Props'un en fazla bir bölü bir eksi harfaya denk geldiğini.
+
+82
+00:20:15,211 --> 00:20:18,371
+Şimdi bu aslında analiz edecek olursam bana nasıl bir bilgi sağlayacak?
+
+83
+00:20:18,511 --> 00:20:22,592
+Örneğin benim en bölü emimin 0,5 olduğunu düşünelim.
+
+84
+00:20:22,592 --> 00:20:26,092
+Yani bu ne demek? Aslında yüzde elli dolu bir tablom var demek.
+
+85
+00:20:26,851 --> 00:20:28,592
+Yüzde elli dolu bir tablom varsa benim...
+
+86
+00:20:29,268 --> 00:20:37,228
+Kaç prop yapmalıyım? Bir unsuccessful search için en fazla hesabını burada bulmuş oluyorum.
+
+87
+00:20:37,811 --> 00:21:01,731
+1 bölü 05'ten. Bu da bana 2 prop. Demek ki %50'lik bir tablom varsa 2 prop da ben bu işi sonlandırabiliyorum. Ama tablonun boyut doluluk oranı arttıkça neyle karşılaşacağım? Örneğin 0,9 olsun. Yani %90'ı dolu bir table olsun. O zaman benim prop sayım 10'a çıkıyor.
+
+88
+00:21:04,596 --> 00:21:23,596
+Dolayısıyla Open Addressing yaptığım zaman Props sayım arttıkça sıkıntı yaşıyorum ve bir noktadan sonra bir başka çözüme gitmem gerekiyor. O çözüme bakacağız. Sorunuz varsa alayım.
+
+89
+00:21:33,523 --> 00:21:34,804
+Sorunuz var mı arkadaşlar?
+
+90
+00:21:38,304 --> 00:21:39,864
+Bakayım, şu şeyi bir göremedim.
+
+91
+00:21:43,063 --> 00:21:43,923
+Teşekkür ederim hocam.
+
+92
+00:21:43,943 --> 00:21:47,283
+Var mı? Sohbete bir bakayım. Yok, sorunuz yok. Okey.
+
+93
+00:21:48,283 --> 00:21:51,623
+Bir dakika bir şey gelmiş. Yok hocam diyor [öğrenci]. Teşekkür ederim [öğrenci].
+
+94
+00:21:52,703 --> 00:21:55,963
+Tamam, tamam. O zaman devam edelim sunmamızdan.
+
+95
+00:21:57,563 --> 00:21:58,603
+Şunu durduralım.
+
+96
+00:22:10,003 --> 00:22:11,423
+Tekrar sunuma geçelim.
+
+97
+00:22:35,284 --> 00:22:42,104
+Şimdi krufumuzu yaptık. Neyi gördük Open Addressing ile alakalı olarak? Şunu gördük.
+
+98
+00:22:42,104 --> 00:22:55,024
+Dedik ki, arttıkça benim doluluk oranım, o zaman işler kötüye gidiyor. Eğer bir tablo çok doluysa, bu durumda bununla alakalı operasyonlar çok fazla zaman almaya başlıyor.
+
+99
+00:22:56,144 --> 00:22:58,884
+Ve bir başka çözüme gitmek gerekiyor.
+
+100
+00:23:00,980 --> 00:23:07,980
+Şöyle bir çözüm üretilmiş. Yeni bir tablo. Eskisinin iki kat büyüklüğünde yeni bir tablo oluşturalım.
+
+101
+00:23:07,980 --> 00:23:19,980
+Ve tüm orijinal tablodaki tüm verileri yeni tablonun yeni hash değerlerini yeni bir hash fonksiyonuyla hesaplayıp orijinal tablodaki tüm yeni değerleri buraya aktaralım.
+
+102
+00:23:19,980 --> 00:23:25,980
+Silinmemiş olan elemanları yeni tabloya koyalım, böyle çözelim deniyor. Buna rehashing.
+
+103
+00:23:26,528 --> 00:23:45,268
+Poyalı bir işlem aslında ama problemi çözüyor. Nasıl bir şey yapılıyor? Örnek burada X mod 7 olan bir fonksiyonum var. Table'ımda 7 tane slotum olduğu için. Bunun içerisine 13, 15, 6 ve 24 sayıları linear probing ile örneğin yerleştirilmiş.
+
+104
+00:23:46,516 --> 00:23:53,115
+Yeni bir değer geldiğinde, örneğin 23 geldiği vakit, bu tablo artık %70 dolu olacak.
+
+105
+00:23:53,115 --> 00:23:57,115
+Dolayısıyla benim burada yeni bir tablo create etmem gerekiyor.
+
+106
+00:23:57,115 --> 00:24:07,115
+Eski tablomun boyutundan iki kat fazla olan bir sayı üzerinden en yakın asal sayı bulmam gerekecek.
+
+107
+00:24:07,115 --> 00:24:11,084
+Dolayısıyla 14'e yakın asal bir sayı arıyorum ve 17'yi seçiyorum.
+
+108
+00:24:11,412 --> 00:24:20,331
+Dolayısıyla 17'lik yeni bir tablo oluşturuyorum. Bu durumda benim yeni fonksiyonum da tablo sayım, tablodaki slot sayım 17 olduğu için XMOD 17 olacak.
+
+109
+00:24:20,331 --> 00:24:30,351
+Ve bu yeni fonksiyon üzerinden eski değerlerin tamamını yeni slotlarını hesaplayıp yerleştiriyorum. Dolayısıyla kollision problemini geçici bir süre için çözdüm.
+
+110
+00:24:32,912 --> 00:24:38,112
+Peki avantajları nedir, dezavantajları nedir bu işin? Birincisi pahalı bir işlem.
+
+111
+00:24:38,932 --> 00:24:55,271
+Çünkü tüm elemanları tek tek taramanız gerekiyor. En tane elemanınız varsa örneğin, yeni boyutunuz, yeni tablonuzun boyutu iki ayına çıkacak. O ayarlık bir tarama yapmanız gerekiyor. Ama çok sık olan bir şey değil. Dolayısıyla aslında çok da kullanışsız sayılmaz.
+
+112
+00:24:59,271 --> 00:25:05,392
+Kötü tarafı şöyle bir şey olabilir. Eğer interaktif bir uygulama içerisinde hashing yapıyorsanız.
+
+113
+00:25:05,844 --> 00:25:23,264
+İşte talihsiz bir kullanıcı sizin rehash'inize denk gelebilir. Onun insert ettiği ki doluk oranınıza aştığı için rehash yapmak zorunda kalabilirsiniz. O da ona şahit olabilir. Sistemde bir slowdown ile karşılaşır. Dolayısıyla bu karşılaşabilecek bir zorluk.
+
+114
+00:25:27,380 --> 00:25:31,539
+Şimdi bir başka konu da hashingle alakalı, güvenlik meselesi aslında.
+
+115
+00:25:33,019 --> 00:25:40,380
+Şimdi her hash fonksiyonunun belirli miktarda kolojina sebep olabilecek seri de...
+
+116
+00:25:41,299 --> 00:26:03,239
+Her hash fonksiyonu için kolujuna sebep olabilecek seride ki yüretmek mümkün. Yani hepsi aslında kolujuna uğrayacaklar. Eğer siz doğru ki'leri verirseniz. Dolayısıyla bir güvenlikle alakalı kaygınızın olduğu bir uygulamanız varsa o zaman farklı bir yöntem seçmelisiniz. Kötü durum senaryosunu bulamaması için buradaki kötü niyetli kişinin.
+
+117
+00:26:03,988 --> 00:26:21,288
+Bunu yapmak için Universal Hashing Metodu ortaya çıkmış. Universal Hashing Metodunun söylediği şey, aslında programın başında hash fonksiyonumu ben bir hash fonksiyonu ailesi içerisinden random seçeyim diyor.
+
+118
+00:26:21,988 --> 00:26:26,288
+Dediği bu, random bir şekilde seçeyim. Dolayısıyla benim kodumu görse bile...
+
+119
+00:26:26,420 --> 00:26:47,860
+Kodumu ele geçirse bile, bu kötü niyetli kişi hangisini kullandığını bilemeyeceği için benim D-bamılımı patlatacak diziyi oluşturamayacaktır. Bununla bu tarz güvenlik problemi olabilecek uygulamalarda birazcık daha robustlığınızı arttırmış oluyorsunuz.
+
+120
+00:26:49,960 --> 00:26:53,620
+Şimdi bu Universal Hashing için bir takım kriterler var.
+
+121
+00:26:54,048 --> 00:27:20,647
+Sallanması gereken. Şimdi şöyle anlatılıyor bunlar. Diyelim ki 0 ile M-1 arasında keyleriniz var. Ve bu keyleri maplemek için kullanacağınız bir hash fonksiyon aileniz var. H diyorsunuz buna. Bu hash fonksiyon ailesinin içerisinde keylerin K ve L keyleri, bu 0 ve M-1 arasındaki K ve L keylerinin farklı olduğu durumlarda aynı.
+
+122
+00:27:21,844 --> 00:27:44,263
+Ailesi, Rizaltı üretecek fonksiyonun sayısının şöyle olması gerekiyor. Ailedeki toplam fonksiyon sayısı bölüm. Yani başka bir değişle şöyle söyleyebiliriz. İki farklı ki'nin K ve L'nin aynı heşe verme olasılıklarının bir bölümden fazla olmaması gerekiyor.
+
+123
+00:27:44,723 --> 00:27:55,743
+Keyler 0 ve M-1 arasında olduğu sürece. Şimdi bu şartı sağlayabilecek bir hash fonksiyonu ailesi üretebilirseniz o zaman Universalization yapabilirsiniz demektir.
+
+124
+00:27:58,483 --> 00:28:05,403
+Şimdi yine tanıma devam ediyoruz. X1'in Y1'e, X2'nin Y2'ye.
+
+125
+00:28:08,468 --> 00:28:21,928
+Yani şu şart sağlanırsa, X1, Y1'e eşitse, X2, Y2'ye eşitse vs. Bu durumda HX1'in HY1'e, HX2'nin HY2'ye.
+
+126
+00:28:22,483 --> 00:28:50,423
+Eşit Olma, hepsinin eşit olma durumunun en fazla hash ailesindeki toplam fonksiyon sayısı bölü en üstü k'ya denk gelmesi gerekiyor. Bu nereden çıktı? Az önce de demiştik, şuna bir bölüm. Çünkü slot sayım bir bölüm olduğu için çakışma olasılığı bir bölüm. Herhangi distinct iki key'nin aynı hash'i verme olasılığı slot sayısı ile orantılı. Burası bir bölüm. Burası bir bölüm. Burası bir bölüm. Bunların hepsi bir bölüm. Bunların hepsinin üst üste gelmesi durumunda k kez bu.
+
+127
+00:28:50,483 --> 00:29:13,483
+Bu bir bölümün tekrarlanması gerekiyor. H tane de fonksiyon var. Her fonksiyon içinde bu tanımlamanın çarpım olarak olasılığa dahil edildiğini düşünürsek o zaman toplum olasılığımız şöyle bulunuyor. Bu da az önceki ifadelerin altında biraz da tüm family geneline yayılmış hali. Şimdi bu şartları sağlayacak universal hash'ler bulmamız lazım.
+
+128
+00:29:17,556 --> 00:29:35,556
+Bir Universal Hash fonksiyon ailesi yaratmanın farklı yolları var. Ben iki tanesinden burada bahsedeceğim. Prime Number'ları kullanarak ve bir de Matrix Method var. Bunları kullanarak Hash fonksiyonu oluşturabiliyoruz.
+
+129
+00:29:37,556 --> 00:29:41,136
+Prime'ları kullanarak bu işi nasıl yapıyoruz?
+
+130
+00:29:42,579 --> 00:30:02,339
+Bir P sayısı seçiyorsunuz. Bir prime number seçiyorsunuz. Ve bu prime number'ın yeterince büyük olması gerekiyor. Burada sizin key'lerinizin 0 ile P-1 aralığında kalacak şekilde prime number'ı seçmeniz lazım. Birinci adımınız bu.
+
+131
+00:30:09,268 --> 00:30:22,828
+HashTable ile bağlantısını göz önünde bulunduruyoruz. P'nin M'den büyük olduğu bir durum ortaya çıkıyor burada.
+
+132
+00:30:28,268 --> 00:30:36,148
+A ve B sayılarını seçeceksiniz. Hash fonksiyonu içerisinde bunları da random seçeceksiniz. Şurada bir örneğimiz var. Bunun üzerinden gidelim.
+
+133
+00:30:38,740 --> 00:30:47,140
+Şimdi, eş, ab, bu benim family'de her a ve b çifti için bir tane fonksiyonum olacak.
+
+134
+00:30:47,635 --> 00:31:01,316
+Bunları o yüzden A virgül B gibi gösterdim. İçinde de key'yi alıyorsunuz. Bu family'deki fonksiyon, herhangi bir family'deki herhangi bir fonksiyonun karşılığı A x artı B mod P, bir de mod M diye geçiyor.
+
+135
+00:31:01,895 --> 00:31:09,935
+Burada dikkat edilmesi gereken şey A'nın ve B'nin değerleri. Bir tanesi 1 ile P eksi 1 aralığında, diğeri 0 ile P eksi 1 aralığında olacak.
+
+136
+00:31:11,667 --> 00:31:29,127
+Random seçtiğiniz zaman a ve b'yi şu aralıklarda olacak şekilde bu bana bir aile vermiş oluyor. Şimdi örneğin random a ve b'yi seçtiğinizde 3 ve 7 gelmiş. O zaman birinci ailenizdeki birinci hash fonksiyonunuz 3x artı 7 mod p modem olacak.
+
+137
+00:31:30,003 --> 00:31:42,243
+İkinci seçtiğinizde 4 ve 1 gelmiş. 4 x artı 1 mod B modem olacak. Her seferinde M'e göre modladığınız için Table Size'ınızda bir yere denk gelmesini garanti altına almış oluyorsunuz.
+
+138
+00:31:46,708 --> 00:32:00,568
+Çeşitliliği benim hash fonksiyonumun mevcut family'deki hash fonksiyon sayımı belirleyecek. Dolayısıyla bu da p çarpı p eksi bir oluyor. Yani p çarpı p eksi bir possible hash fonksiyonumuz var. Seçilebilecek.
+
+139
+00:32:02,408 --> 00:32:04,028
+Şimdi bir örnek yapalım.
+
+140
+00:32:06,528 --> 00:32:13,968
+p'nin on yedi olduğu, m'in altı olduğu bir durumumuz var. Altılık bir tablo oluşturmaya çalışıyorum.
+
+141
+00:32:14,387 --> 00:32:26,127
+P'yi de 17 verdim. Şimdi birinci olarak A'nın 5, B'nin 7 olduğu bir durum için 3 ki'nin hash fonksiyonunu hesaplayacağım.
+
+142
+00:32:27,048 --> 00:32:40,488
+AX artı B, yani 5 çarpı 3, artı 7. Bunun 17'ye göre modunu alıyorum. Sonra bir de tablonun boyutuna göre modunu alıyorum. Bu da bana 5'i veriyor.
+
+143
+00:32:40,948 --> 00:32:45,448
+Dolayısıyla bu fonksiyon benim için 3-2 için 5'i üretti.
+
+144
+00:32:46,548 --> 00:32:55,367
+A'nın 3, B'nin 4 olduğu durum için örneğin 28'i map'lemek istiyorsam yine 3 ile yani A ile X'i çarpıyorum ve B'yi ekliyorum.
+
+145
+00:32:55,367 --> 00:33:00,687
+17'ye göre modunu alıyorum. Sonra da yine 6'ya göre modunu alıyorum.
+
+146
+00:33:01,268 --> 00:33:04,587
+İşte 88 mod 17, 3, 3 mod 6, 3 veriyor gibi.
+
+147
+00:33:05,039 --> 00:33:13,039
+Bu şekilde ben farklı keyler için farklı map'ler oluşturabiliyorum.
+
+148
+00:33:15,039 --> 00:33:19,039
+Şimdi ikinci bir yöntem ise Matrix metodu.
+
+149
+00:33:19,039 --> 00:33:25,039
+Şimdi burada kuralları ben yazdım ama birazdan örnek verdiğim zaman oturacak. Böyle biraz size karışık gelebilir.
+
+150
+00:33:26,039 --> 00:33:28,715
+Matrix metodunda şuna dikkat ediyorum.
+
+151
+00:33:28,756 --> 00:33:51,376
+Üreteceğim key'inin u bit uzunluğunda olacağını kabul ediyorum. Buna göre u'yu belirlemeniz lazım. Mesela eğer iki olarak belirlerseniz ikiyi, key'lerinizin her biri u'yu, key'lerinizin her birinin iki üzeri iki dört bit uzunluğunda olması lazım. Dolayısıyla maksimum alabileceği değer, minimum alabileceği değer belli. Buna göre seçiyorsunuz u'yu.
+
+152
+00:33:51,955 --> 00:34:02,075
+Şimdi diyelim ki M uzunluklu bir tablo oluşturmak istiyorsunuz. M'nin ikinin bir tam kuvveti olarak seçilmesi gerekiyor. Burada bir B değeri var. Bunu kullanacağız çünkü.
+
+153
+00:34:02,932 --> 00:34:20,532
+Bunu seçtikten sonra V çarpı olup bir matriks oluşturuyoruz. Bir binary matriks. Bu binary matriksin içerisinde tabii sıfırlar ve birler var binary olduğu için. Bunu random oluşturuyorsunuz. Ve aslında bu random oluşturduğunuz matriz size hash fonksiyonunuz oluyor. Nasıl olduğunu göstereceğim az sonra.
+
+154
+00:34:22,672 --> 00:34:29,532
+Bu hash fonksiyonuyla input'umuzu yani key'imizi mod 2'ye göre çarparak map'lemeyi yapıyorsunuz.
+
+155
+00:34:31,188 --> 00:34:32,387
+Şimdi bakalım.
+
+156
+00:34:36,532 --> 00:34:38,532
+Burada bir örnek var.
+
+157
+00:34:40,532 --> 00:34:42,532
+Şimdi
+
+158
+00:34:44,532 --> 00:34:46,532
+B çarpı U'luk bir matris oluşturdum.
+
+159
+00:34:48,532 --> 00:34:51,532
+Bunun az sonra şeyine da bakacağız.
+
+160
+00:34:52,532 --> 00:34:56,532
+Dört bitlik bir key'im varmış.
+
+161
+00:34:57,532 --> 00:34:59,532
+Dört bitlik bir key'im var.
+
+162
+00:35:00,532 --> 00:35:03,115
+Üç çarpı dörtlük bir hash matris oluşturdum.
+
+163
+00:35:03,284 --> 00:35:08,923
+Bu ikisini çarptığım zaman standart bir matriz çarpımı yapıyorum aslında. Ama ikiye göre mod olarak yapıyorum.
+
+164
+00:35:08,923 --> 00:35:30,043
+Bir çarpı bir artı, sıfır artı sıfır gibi gidiyor. Bire göre mod oluyorsunuz. Birincisi bir oluyor haliyle. İkinci satırla yine key'yi çarpıyorsunuz. Yine bir olacak gibi böyle gidiyor çarpma işlemi. Dolayısıyla benim şu key'im için ürettiğim hash fonksiyonu value
+
+165
+00:35:30,612 --> 00:35:31,372
+Bu olacak.
+
+166
+00:35:36,884 --> 00:36:00,764
+Şimdi, B çarpı U'luk bir matrisin olduğuna göre kaç tane hash fonksiyonu üretebiliyorum sizce? Size onu sorayım önce. Şurada her bir matris, her bir ürettiğim matris bir hash fonksiyonu. Şimdi bu ailede kaç tane hash fonksiyonu olur? Var mı söylemek isteyen?
+
+167
+00:36:07,284 --> 00:36:13,284
+Konuşmak mı istemiyorsunuz? Sesinizi duysaydım arkadaşlar, yalnız hissediyorum kendimi.
+
+168
+00:36:16,788 --> 00:36:17,988
+Ama çok kararlısınız.
+
+169
+00:36:21,876 --> 00:36:43,576
+Basit bir hesaplama yapıyoruz. Madresin eleman sayısı belli. U çarpı B'lik bir eleman var. Bu madresi kaç çeşit farklı şekilde oluşturabilirsiniz? Her bir eleman için iki seçeneğiniz var. Ya sıfır gelecek ya bir gelecek. U çarpı B'lik bir madresiniz var. Dolayısıyla iki üstü U çarpı B kadar farklı fonksiyon üretebilirsiniz.
+
+170
+00:36:48,179 --> 00:36:59,500
+32 bitlik bir IP adresim var benim. Bunun kullanılacağı bir keylenici, webleniciye daha doğrusu bir table oluşturmak istiyorum. 256'lık da bir table'ım olduğunu düşünelim.
+
+171
+00:37:08,148 --> 00:37:26,467
+2 üzeri 8'e denk geldiği için B çarpı U üzerinden biliyorsunuz matris oluşturuyorduk. 8 çarpı 32'lik bir sıfır ve birlerden oluşan matris mi olacak? Bu matris üzerinden ben işlemlerimi yapabileceğim. Bunun üzerinden 2 üzeri 8 çarpı 32 tane farklı hash fonksiyonunu oluşturabileceğim.
+
+172
+00:37:28,275 --> 00:37:38,975
+Böylece her seferinde matrisi random seçtiğim için programın başında hash fonksiyonumu random seçmiş olacağım. Dolayısıyla işte kötü niyetli kullanıcı buna ulaşamamış olacak.
+
+173
+00:37:41,456 --> 00:37:45,996
+Şimdi x ve y'nin birbirinden farklı olduğunu düşünelim.
+
+174
+00:37:46,804 --> 00:37:58,644
+Hx ve Hy'nin biliyorsunuz Universal Function'lar için, Universal Family'e ait olabilmesi için bir function'ın şu oranı yakalamamız gerekiyordu. Bir bölüm oranını yakalamamız gerekiyordu.
+
+175
+00:37:58,644 --> 00:38:07,623
+Matris metoduyla oluşturduğumuz function'ların yine bir bölüm oranını yakalayıp yakalamadığını bir kruf edelim beraber.
+
+176
+00:38:11,891 --> 00:38:13,891
+İlk ekran ve ales müminin de istirge.
+
+177
+00:38:30,900 --> 00:38:32,380
+Bakın, üzereyim şunları ve yenisini.
+
+178
+00:38:39,188 --> 00:38:41,347
+Hazırlayıp, arasızlığıyla paylaşacağım.
+
+179
+00:39:05,556 --> 00:39:07,855
+Tamam geldi galiba ekran paylaşıma.
+
+180
+00:39:12,563 --> 00:39:35,903
+Şimdi arkadaşlar, Matrix metoduyla Universal Hashing yaptık. Universal Family'e ait olması, yani bir hash toplumunun Universal Hash Family olması için de bir 1 bölü M oranı vardı biliyorsunuz yakalamamız gereken. İki farklı key'nin aynı hash'i verme olasılığı. Bunu Matrix için de uygun olup olmadığını kontrol edeceğiz.
+
+181
+00:39:43,860 --> 00:39:56,039
+Şöyle bir örneğim vardı. Bunun üzerinden devam edeceğiz. Bu bir hash fonksiyonuydu. Bunu bir key ile çarpıyordum.
+
+182
+00:40:00,436 --> 00:40:15,716
+Ve bu bana hash value'umu veriyordu. Maplenmiş halini veriyordu. İkiye göre mod alarak bu işi yapıyordum. Nasıl yapıyordum? hx eşittir hx.
+
+183
+00:40:21,012 --> 00:40:23,112
+Modiki'ye göre toplayarak yapıyordum.
+
+184
+00:40:24,172 --> 00:40:27,612
+Şimdi benim burada önerdiğim teorim şu.
+
+185
+00:40:27,612 --> 00:40:28,612
+Diyorum ki.
+
+186
+00:40:32,115 --> 00:40:35,436
+X ve Y birbirinden farklıysa
+
+187
+00:40:40,500 --> 00:41:02,380
+X ve H, Y'nin aynı sonucu verme olasılığı bir böleğe. Bu da aslında benim 2 üzeri B. Yani şurada boyutum nedir? Bu U çarpı B'lik bir matristi. Şu ki'nizin kaç biti olduğu, şu da matrisinizdeki satır sayısıydı.
+
+188
+00:41:07,887 --> 00:41:14,127
+belirliyorduk. 1 bölü 2 üzeri b'ye denk geliyor dolayısıyla. Şimdi bunu proof edeceğiz.
+
+189
+00:41:14,127 --> 00:41:21,547
+Şimdi şunu şu ifadede hani matrizimiz şöyle ya.
+
+190
+00:41:29,460 --> 00:41:37,380
+Üç tane kolonun random seçildiğini düşünelim ve buna şimdilik hash üstü fonksiyonu diyelim.
+
+191
+00:41:41,588 --> 00:42:02,828
+X ve Y'nin de iki farklı değerini buraya yazalım. Şimdi X ve Y birbirinden farklı ise, ben burada en kötü durum senaryosu üzerinden bu teorem ispatını yapmak zorundayım. X ve Y birbirinden farklı ise en az bir bit için mutlaka farklı olmalılar. Diğer bitler aynı olsa bile bir bitler en azından farklı olmalı.
+
+192
+00:42:09,396 --> 00:42:20,896
+Ve sonuncu bitlerinin farklı olduğunu farz edelim. Zaten iki seçenek olduğu için sonuncu bitte eğer farklılıkları varsa, bu örneği bunun üzerinden sürdürüyor olacağım.
+
+193
+00:42:22,896 --> 00:42:36,336
+Bunun J'inci bit olduğunu söylersem, pardon iyi olsun, X'i sıfırsa Y'i de bir olmak zorunda.
+
+194
+00:42:37,876 --> 00:42:46,876
+Şimdi bu durumda, şuradaki bu bitlerin, bu sonuncu bitlerin çarpım esnasında denk geleceği kolon aslında şu.
+
+195
+00:42:49,876 --> 00:42:53,876
+Bunlarla bunları çarpıyorum. Dolayısıyla bu şunlara denk geliyor.
+
+196
+00:42:55,876 --> 00:42:58,876
+Şimdi, x'i...
+
+197
+00:43:00,876 --> 00:43:04,428
+Çok özür dilerim ya, bakmadan yazınca gerçekten çok kötü oluyor.
+
+198
+00:43:06,324 --> 00:43:12,364
+Hala tam alışamadım. Aktif kullanmıyorum. En azından kapanma sorunu şimdilik karşımıza çıkmadı.
+
+199
+00:43:20,179 --> 00:43:21,099
+Şimli.
+
+200
+00:43:25,811 --> 00:43:33,751
+x'i eşittir 0 olduğunda, buradaki i'inci kolon ne olursa olsun, şu i'inci kolon aslında biliyorsunuz aynı zamanda.
+
+201
+00:43:36,652 --> 00:43:44,771
+i'inci kolon ne olursa olsun, aslında benim hüc x fonksiyonum hx fonksiyonuyla aynı olacak. Doğru mu?
+
+202
+00:43:45,780 --> 00:43:57,780
+Çünkü x'nin bu değeri, buradaki değer 0. Buraya ne koyarsanız koyun, çarpım zaten bunu sıfırlayacak. Dolayısıyla x'nin 0 olduğu durum için h üstü x'in h x'e eşit olduğunu biliyorum.
+
+203
+00:43:59,039 --> 00:44:06,780
+Peki, y için ne yapıyorum? Ona bakalım. Bu 1. yi1. yi1 olduğunda ise
+
+204
+00:44:10,579 --> 00:44:20,179
+Aslında h fonksiyonu, h y'nin değeri neye denk geliyor? h üstü y artı h y'ye denk geliyor.
+
+205
+00:44:20,179 --> 00:44:32,539
+Yani şu kısmı için y'yi hesaplıyorsunuz. y'nin ilgili biti 1 olduğu için son kolondaki tüm değerlerin, inci kolondaki birilerin toplamını aslında toplama eklemiş oluyorsunuz.
+
+206
+00:44:32,599 --> 00:44:38,139
+Dolayısıyla y'nin 1 olduğu durumda h y için de böyle bir şey yazıyorum.
+
+207
+00:44:39,572 --> 00:44:56,051
+Şimdi y'nin ve x'in ilk üç elemanı aynı demiştik. Çünkü en kötü durum senaryosuna bakıyorum. Sadece bir bit de fark etseler bile benim kollajın oranımın bir bölümde kalması gerekiyor. Dolayısıyla diğer kısımların aynı olduğunu kabul etmiştim.
+
+208
+00:45:08,884 --> 00:45:24,284
+Eşit olacak. Burada h üstü y ile h üstü x'in farklı olmasını sağlayacak tek şey aslında şu ifade. Burası farklılığı sağlayacak. Şimdi h'yi b elemanlı olduğundan b tane elemanı var ya buradaki.
+
+209
+00:45:36,692 --> 00:46:03,331
+Bunların aynı olmasını sağlar ki o seçenekte de tüm değerler sıfır. Aslında iki üzeri B tane seçenek var ve bu seçeneklerden sadece bir tanesi bunun eşit olmasını, ikisinin eşit olmasını sağlıyor. Çünkü H'yi sıfır veriyor. Dolayısıyla aslında buradan ben bir bölüm sonucunu çıkarabiliyorum. Çünkü M iki üzeri B'yi eşitti. X ve Y'nin yalnızca bir bit de fark ettiğini kabul edersek.
+
+210
+00:46:04,275 --> 00:46:31,515
+Bir bölüm olasılıkla ikisinin değerlerinin, map değerlerinin çakıştığını söyleyebiliyoruz. Daha fazla fark etseydi, o zaman zaten bu olasılık farklı olacaktı. Çakışma olasılığı düşmüş olacaktı. Ne kadar overlap ederse çakışma olasılığı da o kadar arttığı için bir bit de farklılık olduğunu kabul edip bu proof'umuzu
+
+211
+00:46:31,891 --> 00:46:33,931
+Bitirdik. Var mı sorusu olan?
+
+212
+00:46:37,031 --> 00:46:38,471
+Bakayım şöyle sohbeti bir şey.
+
+213
+00:46:40,051 --> 00:46:54,851
+Şimdi arkadaşlar, bir ara vereceğim ama aradan önce size sormak istediğim şey, dersin işleyiş hızıyla ya da içeriğiyle alakalı öneriniz ve fikriniz varsa onları bir duymak istiyorum sizden.
+
+214
+00:46:59,284 --> 00:47:16,923
+Ama basit ya da yani basite kaçmaktan korkuyorum açıkçası ama çok hızlı da gitmek istemiyorum. Çünkü bu analiz dersini mesela hiç almamış olan arkadaşlarınız vardı. O yüzden kendimce böyle bir düzen tutturdum ama bu konudaki geri bildirimleriniz önemli benim için. Fikirini paylaşmak isteyen var mı?
+
+215
+00:47:24,851 --> 00:47:32,892
+Yok mu kimse? Orada mısınız arkadaşlar? Peki. Her şey çok mu güzel yani? Onu mu söylüyorsunuz?
+
+216
+00:47:37,748 --> 00:47:52,268
+Buradasınız. Teşekkür ediyorum [öğrenci]. Var mı peki? Bir öneriniz yok. O zaman ara vereyim. Arada düşünün. Aradan sonra öneriniz varsa tekrar alayım. Tamam mı? Bir 10 dakika ara verelim. 11'de buluşalım.
+
+217
+01:00:07,764 --> 01:00:35,184
+Devam edelim arkadaşlar. Az önce ne gördük? Dedik ki, Marteks metoduyla ben bunu inceledik değil mi en son? Marteks metoduyla bu işi yaptığım vakit iki farklı key için aynı eşi üretme olasılığı bir böleğe olmalı demiştik ve bunu kanıtlamıştık.
+
+218
+01:00:38,068 --> 01:00:42,648
+Yani Universal Key'de M'e bağlı olarak olasılıkları inceledik.
+
+219
+01:00:43,347 --> 01:00:45,487
+Şimdi şöyle bir soru karşımıza çıkıyor.
+
+220
+01:00:47,728 --> 01:00:58,148
+En tane key varsa, bu en key içerisinde en az bir tane collusion ile karşılaşma olasılığım nedir?
+
+221
+01:00:59,092 --> 01:01:24,252
+Bir tane random seçilmiş bir hash fonksiyonu için n key varsa bunlardan en az bir tanesinde collusion ile karşılaşma olasılığı nedir? Bu soru karşımıza çıkıyor. Bunlar aslında benim kullanım esnasında performansımı etkileyecek. Buna göre parametrelerimi seçeceğim. O yüzden bunları görmeme önemli. Şimdi buna bakalım. Bunu bir hesaplamamız gerekecek.
+
+222
+01:01:30,835 --> 01:01:34,395
+Yine meşhur tahtalık aileşi hapsizlerle.
+
+223
+01:02:07,476 --> 01:02:26,675
+Öncelikle şuna bir bakalım. En tane key için collusion oranına bulmaya çalışıyorum. Kaç farklı key çiftim vardır benim? Bu collusionları hesaplayabileceğim kaç farklı key çiftim vardır? Önce bunu bir bak bulalım.
+
+224
+01:02:27,088 --> 01:02:36,188
+n'in ikilileri aslında bu değil mi? Kombinasyon. Yani sığının önemli olmadığı şekilde iki farklı key'yi n içerisinden aç farklı şekilde seçersiniz.
+
+225
+01:02:37,088 --> 01:02:39,268
+Bunun da formülü hatırlarsınız. Şöyleydi.
+
+226
+01:02:42,608 --> 01:02:45,128
+n-2, iki faktör yer.
+
+227
+01:02:46,447 --> 01:02:48,648
+Şimdi bunu açtığınız vakit nasıl açıyorsunuz?
+
+228
+01:02:48,648 --> 01:02:53,548
+n çarpı n-1, çarpı n-2.
+
+229
+01:02:54,516 --> 01:02:56,135
+Bu böyle 1'e kadar gidiyor.
+
+230
+01:02:57,576 --> 01:03:02,776
+Alt tarafta ise, şurada faktörüleri yazmayı unutmuşum özür dilerim.
+
+231
+01:03:03,516 --> 01:03:14,096
+n-2, azalarak n-3, n-4 vs. Bu da sonuna kadar gidiyor.
+
+232
+01:03:14,556 --> 01:03:16,216
+Ve sonra 1'e ulaşıyor.
+
+233
+01:03:17,836 --> 01:03:21,496
+Bir de şuradaki 2 faktörülerden dolayı 1-2 çarpanımız var.
+
+234
+01:03:22,675 --> 01:03:43,155
+Bunları parçalıklı şöyle götürüyorsunuz. Dolayısıyla elinizde n çarpı n-1 bölü 2 kalıyor. Yani n tane key'im varken bunların içerisinden n çarpı n-1 bölü 2 tane farklı pair elde edebiliyorum.
+
+235
+01:03:46,324 --> 01:03:58,004
+Bir bölü emlik bir collusion oranım vardı zaten. Dolayısıyla şimdi ben en tane key varken bir tane collusion olma olasılığını buradan çıkartabilirim.
+
+236
+01:04:00,104 --> 01:04:02,744
+En az bir tane bu arada. Bir tane değil de en az bir tane.
+
+237
+01:04:04,204 --> 01:04:06,624
+Şimdi şöyle yazalım bu olasılığı.
+
+238
+01:04:10,195 --> 01:04:27,275
+Number of Illusions Birden Büyük Eşit Olacak. En key varken en az bir tane çakışma olma olasılığı. Aslında bunu nasıl yazabilirim? En key varken en az bir tane çakışma olasılığı aslında şudur.
+
+239
+01:04:38,132 --> 01:04:54,771
+Yani enkiğin hiçbirine çakışmama olasılığı. Enkiğiden hiçbiri çakışmıyorsa bu olasılık değeriyle birin farkı birden bu olasılık değerini çıkarttığımız vakit enkiği varken en az bir çakışma olma olasılığını bize verecektir.
+
+240
+01:04:56,211 --> 01:04:59,851
+Şimdi şurada enkiğin hiç çakışmaması. Şu durum.
+
+241
+01:05:00,244 --> 01:05:25,764
+Bu durumı nasıl düşünebiliriz? Enkin hiç çakışmaması aslında şu demek. Bir tane key çiftinin bile çakışmama olasılığı. Bir tane key çiftinin bile çakışmama olasılığı ve bundan çift sayısı kadar var. Dolayısıyla aslında bunu şöyle yazarsam ben. Bir key çiftinin bile çakışmama olasılığını şöyle yazma şansım var mı? Bir eksi bir böle em diye.
+
+242
+01:05:26,612 --> 01:05:35,612
+Niye böyle yazıyorum? Çünkü şu aslında neydi? Bir çiftin çakışma olasılığı. Bunu biliyoruz. Slot sayısı ile orantılıydı.
+
+243
+01:05:42,099 --> 01:05:49,099
+Bir çiftin çakışma olasılığı. Bunu birden çıkardığınızda bulduğunuz şey ne oluyor? Bir ki çiftinin bile
+
+244
+01:05:54,612 --> 01:05:56,692
+Yakışmama olasılığını bulmuş oluyorsunuz aslında.
+
+245
+01:06:01,844 --> 01:06:13,463
+Yani aslında şurayı bulmuş oluyorsunuz. Ama burada key çiftleri de önemli. Kaç tane key çiftim var benim? Şurada az önce bulduğum değer kadar key çiftim var.
+
+246
+01:06:15,804 --> 01:06:28,623
+Dolayısıyla bu kısım aslında şurayı veriyor. Bir de bu başındaki bir vardı. Bunu da çıkartarak işleme almaya devam etmem lazım. Yani benim en key varken en az bir çakışma olma olasılığım
+
+247
+01:06:29,364 --> 01:06:43,184
+Bir bölüm üstü n çarpı n eksi bir bölü iki olacak. Burayı da şöyle yazabilirim aynı şey. m eksi bir bölüm.
+
+248
+01:06:50,835 --> 01:06:55,155
+Bunun üzerinden sonuçları inceleyeceğiz. Buraya kadar var mı anlaşılmayan bir şey?
+
+249
+01:06:58,963 --> 01:07:03,704
+Yok. Not aldıysanız, sonuna geri geçeceğim.
+
+250
+01:07:11,699 --> 01:07:12,699
+Şimdi geri geçelim.
+
+251
+01:07:35,059 --> 01:07:37,519
+Şimdi arkadaşlar, bakın burada bir eğri görüyorsunuz.
+
+252
+01:07:41,619 --> 01:07:57,420
+Bu tablo, en tane key olduğu durum için verilmiş. Değişen table size değerleri için, M değerleri için. Büyük tablolar söz konusuyken performansım nasıl olacak onu gösteriyor bu bana.
+
+253
+01:07:57,420 --> 01:08:06,220
+Burada 1 milyona kadar giden table size'ları için dediğim gibi 1000 tane key varken probability'm şöyle.
+
+254
+01:08:08,692 --> 01:08:21,832
+Az önce bulduğum enkiyi varken en az bir çakışma olma olasılığı böyle. Şimdi burada grafiğe baktığım zaman size'ın, table size'ın çok büyük değerleri için ancak kabul edilebilir çakışma oranları olduğunu görüyorum.
+
+255
+01:08:21,832 --> 01:08:30,471
+Mesela %50'lere gelebilmesi için, buradaki çakışma oranları şuraya %50'lere gelebilmesi için işte 700 binler civarında olması gerekiyor tablolarımın.
+
+256
+01:08:34,100 --> 01:08:37,100
+Şimdi yine tablo üzerinden indirilmeye devam edelim.
+
+257
+01:08:38,300 --> 01:08:51,520
+En bin iken, iyi sayım bin tane iken, emin mesela yüz bin seçersem o zaman şuralarda bir yerde oluyor probabilitim 0.99 gibi.
+
+258
+01:08:52,200 --> 01:08:58,560
+Yüz tane fonksiyonum varsa bunların her biri için toplam kılıycının üstü yüz olacak.
+
+259
+01:08:58,720 --> 01:09:01,040
+Dolayısıyla 0.5'e denk geliyor aşağı yukarı.
+
+260
+01:09:02,163 --> 01:09:12,163
+Bunu birden çıkarttığımda neyi bulurum? Bunlardan en az birinin collusion sahibi olmama olasılığını bulurum. O da %50'ye denk geliyor.
+
+261
+01:09:12,163 --> 01:09:18,059
+Eğer ben load faktörünü değiştirirsem biraz...
+
+262
+01:09:18,836 --> 01:09:31,136
+Diyelim ki 300 tane random fonksiyonu seçtim. Bu durumda şu oran, şunun üçüncü kuvvet olacağı için %13 civarı oluyor. Bunu da %100'den çıkarırsanız %87 civarı oluyor.
+
+263
+01:09:31,136 --> 01:09:33,816
+Bu hesaplamaları bu arada.
+
+264
+01:09:34,804 --> 01:10:00,824
+Bu yüzden load faktörün %1 olduğu durum için. Çünkü en tane değerim olduğu için, en de bu olduğu için %1 olduğu durum için yaptım. Yani aslında çok düşük bir doluluk var. Öyle olduğu halde kolujun oranları yüksek. Demek ki büyük tablolar için ve bu kadar düşük load faktör üretebilmek için de tablo boyutunuzu iyice büyütmeniz gerekecek. Çok uygun bir çözüm değil aslında Universal Hashing ailesi.
+
+265
+01:10:01,247 --> 01:10:18,688
+Bu durumda farklı bir çözüm önerisi ile gelmek gerekiyor. Bu çözüm önerileri de normalde worst case'de bile O1 access'de işleri yapabileceğim hash fonksiyonu çeşitleri olarak karşıma çıkıyor.
+
+266
+01:10:18,688 --> 01:10:22,907
+Şimdiye kadar gördüğümüz hash fonksiyonları.
+
+267
+01:10:23,264 --> 01:10:43,984
+Mantıklı load faktörler ve uygun hash fonksiyonlarıyla ortalama O1 karmaşıklığında insert, delete ve search yapabiliyorlardı ama ortalama olarak. Ben burada worst case için düşünürsem. Worst case için O1 verebilecek çözümler üretme peşindeyim. Bunlar için ne yapabilirim? Şimdi ona bakacağım.
+
+268
+01:10:50,676 --> 01:10:53,996
+Şimdi burada Perfect Hashing kavramı karşıma çıkıyor.
+
+269
+01:10:58,195 --> 01:11:13,556
+Perfect Haching, şöyle problemler için benim için iyi bir çözüm olabilir. Keylerin değişmediği bir durum varsa, yani key kümen statikse, örneğin işte bir CD Roma yazmak gibi.
+
+270
+01:11:14,228 --> 01:11:40,228
+ya da işte bir compiler tasarımında reserve wordleri kullanmak gibi onlara erişmek istiyorsanız vs. Statik değişmeyen bir key havuzum var. O zaman PerfectHash yapabilirim. PerfectHash'i yapmak aslında sürekli denemek, daha iyisini bulacak şekilde hash fonksiyonumu revise etmek mantığıyla çalışıyor. Rehashing gerekirse yapıyorsunuz. Ve O1 karmaşıklığında
+
+271
+01:11:40,532 --> 01:11:43,092
+Bu işi o zaman çözme şansınız oluyor.
+
+272
+01:11:45,652 --> 01:11:50,252
+Perfect Hashing yapabilmek için iki seviyeli hash yapmanız gerekiyor aslında.
+
+273
+01:11:50,252 --> 01:11:53,332
+Her bir seviyede de Universal Hashing yapacaksınız.
+
+274
+01:11:54,612 --> 01:12:01,772
+Linkli listeler kullanmak yerine, her bir level'da linkli listeler kullanmak yerine küçük.
+
+275
+01:12:03,024 --> 01:12:21,744
+Hatch tablolarınız olacak. Ve bu her küçük ikinci hash tablosu içinde bununla ilişkilendirilmiş bir hash fonksiyonunuz olacak. Örneğin SG slotu için yani collusion olan slot G numaradaysa bunun için yeni bir hash tablosu oluşturuyorsunuz. Bunun için bir hashg fonksiyonu tanımlayacaksınız.
+
+276
+01:12:28,692 --> 01:12:45,992
+İkinci tablolarda collusion yaratmayacak bir birinci seviye hashlemeyi bulmanız gerekiyor. Birkaç deneme yapıyorsunuz. Birinci seviyede collusionlarınız evet olacak ama ikinci seviyeye geldiğinizde artık collusion oluşturmayacak fonksiyonları bulmanız gerekiyor.
+
+277
+01:12:51,796 --> 01:13:14,136
+İkinci H'de çakışma olasılığını elemek için J slotu için oluşturulan ikinci H tablosunun boyutu, burada MG olarak yazılmış, bunun J'de çakışan key'lerin karesi olması gerekliliği var. Böyle bir gereklilik var. Yani MJ'nin, NJ'nin karesi olması gerekliliği var.
+
+278
+01:13:14,739 --> 01:13:37,079
+Burada MJ ile NC arasında bir karesel bağıntı var ve bu sanki olayları karmaşık hale getirebilir. Daha doğrusu storage requirement'ını çok arttırabilir gibi görünebiliyor. Ama iyi bir şekilde birinci fonksiyonu tanımlarsanız o zaman ikinci seviye için beklenen yer karmaşıklığını o alan düzeyinde tutabiliyorsunuz.
+
+279
+01:13:51,252 --> 01:13:52,932
+Şimdi burada şöyle bir yol izleniyor.
+
+280
+01:13:58,612 --> 01:14:11,152
+Dediğim gibi dikkatli bir şekilde seçtiniz birinci hash fonksiyonunu. Birinci hash fonksiyonunuz eğer iyiyse, her bir slot için, ilgili slot için ikinci hashfax fonksiyonunu hash'i'ye set ediyorsunuz.
+
+281
+01:14:11,152 --> 01:14:25,551
+Ve burada p değeriniz hiç değişmiyor. Emeğinin de n kare olduğunu düşünerek ikinci tablomuzun a ve b ile random seçerek hash fonksiyonunu üretiyorsunuz.
+
+282
+01:14:26,771 --> 01:14:46,311
+Ve sonra da check etmeniz gerekiyor. H1'nin kollijona sebep olmadığını. Şimdi bu iki adımı tekrarlamanız gerekiyor. Birinci adımda oluşturduğunuz ilk ana primary hash fonksiyonunuzu bunun iyi olduğunu anlamak için de bu iki adımı check etmeniz gerekiyor.
+
+283
+01:14:46,311 --> 01:14:48,311
+Şimdi burada sırayla gidelim.
+
+284
+01:14:49,108 --> 01:15:01,927
+Ama ondan önce nasıl göründüğünü gösteren bir slide var burada. Tanımlanmış bir PerfectHash tablosu. İkinci hash tablolarıyla beraber nasıl görünür?
+
+285
+01:15:05,332 --> 01:15:22,452
+Şimdi burada 10, 22, 37, 40, 52, 60, 70 bunlar benim keylerim. Bunlar tabloya yerleşecek olan keyler. Birincil hash için a çarpı k artı b mod p modem fonksiyonunu kullanıyorum.
+
+286
+01:15:24,051 --> 01:15:37,211
+A3, B42, P de 101 seçilmiş. Universal Hashing için bahsettiğim önceki slaytlarda kurallar burada A'nın, B'nin ve P'nin kullanılması için yine aynen geçerli.
+
+287
+01:15:39,155 --> 01:15:58,775
+Dokuzluk bir tablom var. M'de dokuz. Şimdi buna göre örneği yerleştirdiğim vakit on nereye yerleşiyor? İşte üç çarpı on artı kırk ikiden yetmiş iki. Yetmiş iki mod yüz bir. Sonra dokuza göre mod alıyorsunuz. Sıfırıncı göze yerleşiyor örneğin. Bunları yerleştirdikten sonra
+
+288
+01:16:06,612 --> 01:16:18,912
+Onu yanlış anlatmış olabilirim sizlere herhalde. On oraya yerleşmemiş çünkü ikinci göze yerleşmiş. Bunları mesela hash 75 ikinci ikiye şuraya yerleşiyor. Buraya yerleşiyor.
+
+289
+01:16:21,587 --> 01:16:39,987
+60, 72 ve 75 buraya yerleşmiş. 2'ye referans vermişler. 10, 0'a yerleşmiş. Doğru, pardon. Şuradaki 10 ile karıştı bir an aklım. Şu taraftakiler ikinci hash fonksiyonlarınız, şuradakiler de aslında parametreleriniz. Her bir hash fonksiyonu için m, a ve b değerleri burada.
+
+290
+01:16:41,684 --> 01:17:06,364
+60, 72 ve 75 ikinci slotta kolay da olmuş. 75. slotta şunlar da burada kolay da olmuş. Bunlar için de yine ikinci hash fonksiyonları oluşturulmuş. Ve ikinci hash fonksiyonları da örneğin ikinci slot için M'in 9 olduğu, A'nın 10 olduğu, B'nin 18 olduğu bir hash fonksiyonu. İkinci slot için 60, 72 ve 75'in yerleşimlerini sıra ile 3, 4 ve 7. slotlara vermiş gibi.
+
+291
+01:17:10,515 --> 01:17:23,475
+N, J'nin karesi olması önemli. Bu önemli. Burada zaten fonksiyonumuz belli. Şimdi tek tek adımları kontrol edeceğiz.
+
+292
+01:17:23,475 --> 01:17:30,155
+Adımları kontrol edeceğiz, bakacağız nasıl bir şey yapılıyor diye.
+
+293
+01:17:36,819 --> 01:17:37,659
+Şimdi bakalım.
+
+294
+01:17:40,840 --> 01:17:45,379
+Gelişecek olan keylerim şöyle. 8, 22, 36, 75, 61 böyle gidiyor.
+
+295
+01:17:46,799 --> 01:17:50,639
+Hash fonksiyonlarım, dıştaki ve içteki fonksiyonlarım böyle görünecek.
+
+296
+01:17:51,319 --> 01:17:52,260
+Birinci adımda.
+
+297
+01:17:56,724 --> 01:17:59,324
+A'yı B'yi random olarak seçtim.
+
+298
+01:18:01,003 --> 01:18:05,503
+B'nin de key universal'dan büyük olacak şekilde random olarak seçtim.
+
+299
+01:18:05,503 --> 01:18:07,003
+Şunlar seçildi.
+
+300
+01:18:09,244 --> 01:18:11,503
+Şimdi bu seçtiğim değerler için...
+
+301
+01:18:18,003 --> 01:18:22,623
+Her biri için hesaplama yaptım ve keylerimi tabloya yerleştirdim.
+
+302
+01:18:22,623 --> 01:18:29,123
+Her slotta kaç tane collusion olduğunu hesaplıyorum.
+
+303
+01:18:31,283 --> 01:18:35,443
+Bakıyorum burada 8 ile 84 ikinci slotta yerleşmiş.
+
+304
+01:18:35,663 --> 01:18:40,203
+36 ile 58 yedinci slotta yerleşmiş ama diğerlerinde birer tane eleman var.
+
+305
+01:18:40,923 --> 01:18:44,283
+Sayılarına bakıyorum. 1, 2 böyle gidiyor.
+
+306
+01:18:45,140 --> 01:19:00,960
+Sonrasında şu Step 3'teki bilginin doğruluğunu teyit etmek zorundayım. Yani her bir slotta kolay doğmuş olan elemanların karelerinin toplamanın iki enden küçük olması gerekiyor.
+
+307
+01:19:01,579 --> 01:19:06,380
+Dolayısıyla burada tek tek elemanların karelerini topluyorum. Bana 12'yi veriyor.
+
+308
+01:19:08,020 --> 01:19:21,020
+Bunun küçük olup olmadığına bakıyorum. Evet küçük. En sayımla çarptığım vakit 2. Dolayısıyla bu parçayı da atlamış oluyorum. Şimdi artık subtable'lara geçebilirim.
+
+309
+01:19:28,671 --> 01:19:35,891
+Slotlar için zaten table oluşturacağım belli. Bunların A, V ve M değerlerini şurada random olarak oluşturdum.
+
+310
+01:19:35,891 --> 01:19:52,911
+Ve her birini bu fonksiyonları kullanarak yerlerine yerleştiriyorum. İşlemleri yapmayacağım. Siz takip edebilirsiniz.
+
+311
+01:19:55,315 --> 01:20:17,036
+Mesela 61 için örneğin, M'in 1 olduğu, A'nın ve B'nin 0 olduğu bir durum var. Dolayısıyla 0 mod P mod M işlemini yapıyorsunuz. O da zaten 0. C sonucu veriyor. Dolayısıyla 0. slotu veriyor. Dolayısıyla 2. Hashtable'da 0. göze 61'i yazıyorsunuz gibi.
+
+312
+01:20:18,547 --> 01:20:27,547
+İkinci hash'in indekslere ayrı, parametreleri ayrı önemli olan bu. Böylece tablolarımı tamamladım.
+
+313
+01:20:29,547 --> 01:20:37,547
+Bunu yaptım. Tüm hepsini yerleştirdim. Tüm hepsini yerleştirdiğimde ikinci hash'lerde collusion olmadı.
+
+314
+01:20:37,547 --> 01:20:45,547
+İkinci hash'lerde collusion ile karşılaşmadım. Demek ki düzgün bir şekilde yaptım diyorum. Böylece işlemimi tamamlamış oluyorum.
+
+315
+01:20:47,699 --> 01:20:51,539
+Şimdi biraz vakit vereyim size. İki dakika bir inceleyip sonra kurul kısmına geçeceğiz.
+
+316
+01:20:55,412 --> 01:20:59,432
+Ay çok özür dilerim. Sorunuz varsa bu esnada alayım arkadaşlar.
+
+317
+01:21:19,923 --> 01:21:29,423
+Yok herhalde soru. Tamam o zaman kuruflara bakalım. Şimdi burada iki tane kontrol üzerinden biz işlemlerimizi yürüttük hatırlarsanız. Bunlardan bir tanesi şuydu.
+
+318
+01:21:32,203 --> 01:21:43,043
+Burada aslında bol ve bin problemi diye bir probleme benziyor hash fonksiyonları. Yani value'ları slotlara koyuyorsunuz. Aslında topları işte yerleştirmek gibi bu.
+
+319
+01:21:44,324 --> 01:21:45,824
+Şimdi en tane bulun.
+
+320
+01:21:47,252 --> 01:21:55,811
+Enkar olacak şekilde M boşluklara yerleştirilmesi durumunda.
+
+321
+01:22:02,355 --> 01:22:07,815
+Herhangi bir binin, herhangi bir boşluğun birden fazla topa sahip olmama olasılığı 1 bölü 2 oluyor.
+
+322
+01:22:07,815 --> 01:22:13,995
+Bu aslında bizim az önceki en kare olarak seçmeye çalıştık biliyorsunuz slot sayımızı.
+
+323
+01:22:14,376 --> 01:22:17,355
+Bunu gösteren bir teorem. Şimdi bunu ispatlayarak başlayacağız önce.
+
+324
+01:23:27,155 --> 01:23:34,355
+Çok özür dilerim arkadaşlar. Bir aksaklık oldu biraz. Vakitler bekliyorum burada. Şimdi açıyorum size tekrar.
+
+325
+01:23:39,315 --> 01:23:39,979
+Tamam.
+
+326
+01:23:46,131 --> 01:23:48,152
+Neye bakacağız? Bir özetleyelim.
+
+327
+01:23:54,100 --> 01:24:14,120
+N tane topu N kare eşitlere M olacak, M olacak şekilde boşluklara yerleştirildiği bir durum varsa, N tane topun, herhangi bir boşluğun birden fazla top içermeme olasılığı 1 bölü 2 oluyor en az.
+
+328
+01:24:14,120 --> 01:24:19,340
+Şimdi bunu prof edeceğiz. İnşallah ben yazabilirsem edeceğiz.
+
+329
+01:24:21,332 --> 01:24:47,512
+Şimdi, teoremimiz ne? Hocam ekranı göremiyoruz ama. Gerçekten mi? Paylaştım sanıyorum. Paylaşmamış mı? Yok hocam. Tamam. Kusura bakmayın. Paylaşıyorum. Geldi değil mi şimdi? Evet hocam. Tamam teşekkür ederim.
+
+330
+01:24:52,692 --> 01:24:58,371
+Şuraya yazayım da siz kendi gözünüzle görün. Biraz Türkçeye çevirirken.
+
+331
+01:25:02,195 --> 01:25:03,851
+Yükümdeki örneğe.
+
+332
+01:25:24,307 --> 01:25:27,028
+Şimdi, grufa geçelim.
+
+333
+01:25:30,899 --> 01:25:43,659
+Çift sayımız üzerinden yine hareket etmeliyim. Kaç farklı çiftim olabiliyordu? Enin ikilileri şeklinde bunu hesaplamıştık. En çarpı, en eksi bir bölü, iki demiştik zaten.
+
+334
+01:25:51,060 --> 01:26:01,100
+Kolaydetme Olasılığı 1 bölü M'de. Yani aslında bu ne? İki farklı ki'in aynı slota düşme olasılığı demek istiyorum. 1 bölü M'de zaten bunu biliyoruz.
+
+335
+01:26:02,860 --> 01:26:08,680
+Dolayısıyla tüm tabloda beklediğim Collusion Sayısı aslında ne oluyor?
+
+336
+01:26:08,680 --> 01:26:10,300
+Payr Sayısı.
+
+337
+01:26:15,283 --> 01:26:35,663
+çarpı bir bölü M oluyor. Şimdi bir bölü burada M'in en kare olduğunu söylemiştim. Dolayısıyla aslında buradaki işlem M eksi bir bölü iken bu da bir bölü giden.
+
+338
+01:26:37,844 --> 01:26:54,083
+Küçük olduğunu söyleyebilirim. Şu ifade şundan küçük oluyor. Dolayısıyla tüm tabloda beklenen kollajın sayısı 1 bölü 2'den küçük olduğuna göre sadece 1 kollajın olma olasılığı da yine 1 bölü 2'den küçük oluyor. Bu şekilde teoremi ispatlamış oluyorum.
+
+339
+01:26:56,184 --> 01:26:59,344
+Kollajın problemini deliklere yerleştirilen toplar gibi düşündük.
+
+340
+01:27:01,344 --> 01:27:04,423
+Şimdi ikinci bir teoremimiz vardı ispatlamamız gereken ona bakalım.
+
+341
+01:27:06,931 --> 01:27:10,351
+Ekran paylaşımını değiştireceğim yine.
+
+342
+01:27:21,844 --> 01:27:26,304
+Geçmiştik.
+
+343
+01:27:31,859 --> 01:27:33,699
+Bakın, ikinci teoremi.
+
+344
+01:27:36,699 --> 01:27:46,680
+Şimdi burada bizim çekincemiz neydi? İkinci secondary hash table'un alıştırılması sırasında fazlaca yerden kayıp yaşarız diye korkmuştuk değil mi?
+
+345
+01:27:47,920 --> 01:27:57,340
+Bununla alakalı bir teoremimiz var. Birinci hash table'a n'lik, n slot'luk, birinci hash table'a n tane item yerleştirildiği zaman
+
+346
+01:28:00,083 --> 01:28:15,963
+İkinci Hatch Table'ların boyutu, beklenen en yüksek boyutu iki yerin olur. Dolayısıyla beklediğimiz kadar, tahammül ettiğimiz kadar, daha doğrusu göründüğü kadar fazla yer kaybı olmaz. Bunu kuruf etmeye çalışacağız şimdi. Buna bakalım.
+
+347
+01:28:22,612 --> 01:28:24,332
+Tekrar paylaşımını değiştireceğim.
+
+348
+01:28:24,451 --> 01:28:25,031
+Zıpsı tekrar.
+
+349
+01:28:59,667 --> 01:29:06,448
+Şimdi arkadaşlar, teoremi şöyle özetleyeceğiz.
+
+350
+01:29:13,619 --> 01:29:14,460
+Expect it!
+
+351
+01:29:19,891 --> 01:29:23,832
+Namurof. Şöyle bir ifade yazalım şuraya. Önce yazın sonra anlatayım.
+
+352
+01:29:35,252 --> 01:29:59,152
+Şimdi burada ng, j.slota işaret eden pi sayısı. Her slot için oluşturulan subhash'lerin boyutlarının toplamını aslında siz bulmuş oluyorsunuz. Her bir slot için oluşturduğunuz subhash'in boyutu n kare oluyordu biliyorsunuz. Kolay dedenlerin karesi kadar bir hash oluşturuyordunuz.
+
+353
+01:30:00,000 --> 01:30:24,799
+Tamamını tüm tablo boyunca yaptığınızda bunun hala iki enden küçük olup olmadığını görmeye çalışıyoruz. Bunu proof etmeye çalışıyoruz. Bakalım nasıl proof edebiliriz? Şimdi şöyle bir ifade var. A kare eşittir. A artı iki çarpı A'nın ikilileri. Aslında şu çünkü. Şurası.
+
+354
+01:30:26,292 --> 01:30:39,132
+A çarpı A eksi 1'e denk geldiği için bunu ile ikiyi çarpıp A'yı eklediğinizde akaryayı veriyor size. Bunun üzerinden profonu aslında yürütüyor olacağız.
+
+355
+01:30:43,347 --> 01:30:46,347
+Dedik ki, benim M tanesi botum varsa...
+
+356
+01:30:51,507 --> 01:31:00,247
+Her bir slot için kolay dediğiniz eleman sayısı, paralelinin toplamının iki anden küçük olması gerekiyor.
+
+357
+01:31:00,368 --> 01:31:03,427
+Tablo boyutumu aslında subhashler oluşturduğumda çok da büyümüyor.
+
+358
+01:31:03,507 --> 01:31:05,967
+Bunu anlatmaya çalışıyorum. Şimdi şu kısmı şöyle yazacağım.
+
+359
+01:31:20,756 --> 01:31:38,436
+Bu eşitliği kullanıyorum aslında. Nj kare dediği şeyi a kare eşittir. A artı iki a'nın ikilileri olduğu için bunu şu ifadeye dönüştürerek yazıyorum. Nj artı diyorum. İki diyorum. Nj'nin ikilileri diyorum.
+
+360
+01:31:43,699 --> 01:31:55,819
+Şimdi bunu da şöyle açabilirim. Linerity of Expectation diye yani liner bir şekilde expectation sayılardan artış olduğu için bunu şöyle de ifade etmem.
+
+361
+01:31:55,819 --> 01:31:57,619
+Mümkün.
+
+362
+01:32:13,908 --> 01:32:16,908
+Aslında ikiye böldüm buradaki ifadeyi.
+
+363
+01:32:21,171 --> 01:32:35,091
+energy'nin ikilileri dedim. Şuradaki ikiye dışarı çıkardım. E'yi buraya aldığım zaman bunun belirlenen, beklenen değeriyle bunun beklenen değerinin toplamı aslında şunun toplamını veriyor. Dolayısıyla açarak yazmak mümkün.
+
+364
+01:32:35,991 --> 01:32:39,911
+Şimdi şuna baktığımız zaman şu ifadeye, bu ifade size ne anlatıyor?
+
+365
+01:32:40,564 --> 01:32:48,963
+Slot sayısı için gidiyorsunuz, her bir slottaki ng'leri topluyorsunuz. Yani aslında tüm slotlarda saklanan elemanların toplamını bulmuş oluyorsunuz.
+
+366
+01:32:48,963 --> 01:32:55,564
+Slottan kastım, şurada ana slot, burada at hash fonksiyonunda tutulan eleman sayısı.
+
+367
+01:32:55,564 --> 01:33:03,564
+Dolayısıyla aslında tüm sub-slotlarda tutulan toplam eleman sayısını bulmuş oluyorsunuz ki bu da n eşit, toplam eleman sayınız eşit.
+
+368
+01:33:03,564 --> 01:33:07,564
+Dolayısıyla aslında şurası, şu ifade.
+
+369
+01:33:09,587 --> 01:33:36,448
+Şimdi şu ifadeye bakalım. Burası için ne yazabilirim? Burası neyi ifade ediyor? Şimdi şurası NJ'nin ikilisi dediğim şey aslında Collusion olacak. J. slot'taki pair sayısı. Şurası. NJ'nin ikilisi. Yani J. slot'taki eleman sayısı. NJ bunun ikilileri.
+
+370
+01:33:40,819 --> 01:33:49,819
+Dolayısıyla buna M-1 ile M-1 kadar slot var. Hepsi için yaptığımız vakit aslında bulduğumuz şey tüm slotlarda collusion olacak. Pay sayısını bulmuş oluyorsunuz.
+
+371
+01:33:49,819 --> 01:34:00,819
+Yani bu aslında şuradaki iki E'yi işin içine katmayalım. Burayı biraz fazla çizmişim. Orayı şöyle yapacağım.
+
+372
+01:34:05,492 --> 01:34:07,752
+Şuradaki elbisindim.
+
+373
+01:34:08,992 --> 01:34:09,652
+Hopsi.
+
+374
+01:34:10,152 --> 01:34:11,652
+Hayır, ne oluyoruz?
+
+375
+01:34:17,203 --> 01:34:22,144
+Kalemimin kontrolünü tamamen kaybettim şu an arkadaşlar.
+
+376
+01:34:29,716 --> 01:34:31,976
+Allah'ım, ne kadar kötü bir görüntü.
+
+377
+01:34:34,216 --> 01:34:38,275
+O çocuk karalaması şeyselerini görmezden gelmenizi rica edeceğim.
+
+378
+01:34:39,275 --> 01:34:42,916
+Selim'imi keşfedemediğim düğmenin bir tanesine bastım yanlışlıkla.
+
+379
+01:34:42,916 --> 01:34:46,656
+Şimdi dikkatiniz daha olmamıştır umarım.
+
+380
+01:34:53,332 --> 01:35:01,292
+Şu kısım için ne demiştim ben? Tüm slotlarda collusion olacak pair sayısını ifade ediyor demiştim. Şurası.
+
+381
+01:35:03,332 --> 01:35:15,632
+Dolayısıyla aslında burası in'in ikileri çarpı bir bölü m eşit. Çünkü bir bölü m kolujun olma olasılığı.
+
+382
+01:35:16,083 --> 01:35:33,343
+n'nin ikilileri de sizden pair çiftiniz. Dolayısıyla bunu böyle yazabiliyorsunuz. Yani aslında n'nin ikilileri çarpı bir bölü m, n çarpı n-1 bölü 2m oluyor.
+
+383
+01:35:41,427 --> 01:36:00,148
+Dolayısıyla burası M'de N eşit olduğu için N-1 bölüm 2 olarak karşıma çıktı. Şimdi bunu şuradaki değer yerine yazıyorum. Şu kısım yerine yazıyorum. Dolayısıyla elimde artık formülüm şuna dönüşmüş oldu.
+
+384
+01:36:07,859 --> 01:36:21,500
+Şuradaki ifadeyi yazdım. Neye eşit oldu? En artı, şuradan gelen en, iki çarpı, en eksi bir bölü iki. Bu da iki en eksi bir adet geliyor.
+
+385
+01:36:29,268 --> 01:36:43,688
+2n-1'e eşitse demek ki 2n'den de küçüktür. Dolayısıyla bu ifadeye kurusunu böylece tamamlamış oluyorum. Biraz karışık oldu inşallah not almışsınızdır arkadaşlar.
+
+386
+01:36:48,916 --> 01:36:49,900
+Ayrıca, bugünkü derste konuyu örneklerle anlatacağız.
+
+387
+01:36:55,923 --> 01:36:58,703
+Şimdi soru yoksa devam edeceğim.
+
+388
+01:37:00,144 --> 01:37:02,664
+Hiç tohbet ortamını şimdilik yoksa ben.
+
+389
+01:37:05,963 --> 01:37:07,564
+O zaman neyi paylaşım yapalım?
+
+390
+01:37:27,444 --> 01:37:28,404
+Geldi mi arkadaşlar?
+
+391
+01:37:30,864 --> 01:37:31,524
+Evet hocam.
+
+392
+01:37:32,144 --> 01:37:34,464
+O zaman devam edebiliriz.
+
+393
+01:37:35,924 --> 01:37:38,444
+Şimdi eğlenceli başka bir konu var.
+
+394
+01:37:39,604 --> 01:37:40,304
+Kuku Eşing.
+
+395
+01:37:41,444 --> 01:37:48,724
+Şimdi bu metot O1'de bunun amacı birazcık daha güncel diğerlerine göre.
+
+396
+01:37:48,724 --> 01:37:50,744
+Yani yine çok güncel değil ama biraz daha güncel.
+
+397
+01:37:51,484 --> 01:37:52,724
+Bunun amacı...
+
+398
+01:37:53,876 --> 01:38:18,136
+O bir worst case karmaşıklığıyla işleri yapabilmek. Bu yüzden geliştirilmiş bir metot. Bu kuştan almış, koko kuşundan almış ilhamı da. O yumurtalarını yerleştirmek için boş bulduğu yerleri kullanıyormuş. Orada başka yumurtalar varsa onları atıyormuş. Kendi yumurtalarını oraya koyuyormuş her seferinde. Bundan yola çıkarak tasarlanmış bir sistem.
+
+399
+01:38:25,076 --> 01:38:32,335
+Bununla alakalı yine takip edilmesi gereken kurallar var. Önce onlardan başlayalım. Sonra örneğini anlatacağım size.
+
+400
+01:38:35,335 --> 01:38:39,175
+Şimdi CocoaEşek iki tane Hashdable ile çalışıyor.
+
+401
+01:38:43,123 --> 01:38:47,884
+Pardon, iki farklı hash fonksiyonuyla çalışıyor. Aynı zamanda iki tane hash table tabi oluşmuş oluyor haliyle.
+
+402
+01:38:55,667 --> 01:39:00,608
+iki farklı fonksiyonu verip iki farklı table'da yer edinebiliyorsunuz herhangi bir entinize.
+
+403
+01:39:01,867 --> 01:39:08,387
+Önce bir table'da deniyorsunuz. Arrow table'da yer bulabiliyorsanız ne hala bulamıyorsanız diğer table'a geçiyorsunuz.
+
+404
+01:39:08,387 --> 01:39:13,487
+İlgili key'inizin ikinci table'ın hash fonksiyonu için oluşturduğu value'ya göre.
+
+405
+01:39:14,228 --> 01:39:35,488
+Referet diye slota bakıyorsunuz. Eğer orası boşsa süper, oraya yerleştiriyorsunuz. Ama boş değilse o zaman yine de oraya yerleştirip orada mevcut olan eski key'yi başka bir yere gönderiyorsunuz. O da yine bu iki fonksiyona bakarak kendine bir yer bulmaya çalışıyor. Bunu sürekli teratif olarak hepsi yerleşene kadar yapıyorsunuz.
+
+406
+01:39:37,811 --> 01:39:59,412
+Şimdi iki tane tablomuz var. Bion'da arıyorsunuz, Bion'da arıyorsunuz, Bion'da arıyorsunuz, Bion'da arıyorsunuz. Dolayısıyla aslında query'nizde check etmek istiyorsanız iki tane tablo var topu topu bakabileceğiniz. Dolayısıyla birincisine bakıyorsunuz, ikincisine bakıyorsunuz. Buldunuz mu? Buldunuz. Query oldukça basit. Delayt de aynı şekilde.
+
+407
+01:40:00,724 --> 01:40:06,064
+Bulabiliyorsanız, query yapıyorsunuz. Birinci tabloda buldunuz, sildiniz ya da ikinci tabloda buldunuz.
+
+408
+01:40:07,064 --> 01:40:14,704
+Eğer insert iş mi? İşte burada birazcık daha kritik. Insert yapmak isterseniz önce T tablosunda var mı?
+
+409
+01:40:14,704 --> 01:40:24,564
+Fx'in karşılığı, boş mu orası? Buldunuz, baktınız. Eğer boşsa oraya yerleştirdiniz. Eğer boş değilse o zaman
+
+410
+01:40:25,300 --> 01:40:34,920
+Yine yerleştirdiniz ama T tablosunda önceden olan, orayı occupy etmiş olan key'i alıp başka bir tabloya koydunuz.
+
+411
+01:40:35,819 --> 01:40:40,579
+Tabi oraya koyduktan sonra eğer orası doluysa oradan alıp ilk tabloya geri dönmeniz gerekiyor.
+
+412
+01:40:40,579 --> 01:40:42,639
+Bu şekilde işlemleri devam ettiriyorsunuz.
+
+413
+01:40:44,639 --> 01:40:46,800
+Şimdi burada bir yerde durmanız gerekiyor.
+
+414
+01:40:47,764 --> 01:41:09,584
+Ya hepsini yerleştireceksiniz ya da sürekli oradan oraya zıpladığınızda bir sonsuz döngüye girme durumunuz ortaya çıkabilir. 6 logenden daha fazla bump yani atıp da elemanları bu işi yapıyorsanız artık doluluk oranınız çok artmış demektir. Reheş etmeniz gerekiyor fonksiyonunuzu.
+
+415
+01:41:21,363 --> 01:41:45,184
+Karmaşıklıklar ne? Her t anında x'in yeri sabit. Yani ya t1 tablosunda ya t2 tablosunda. Dolayısıyla o bir karmaşıklıkla query ve delete'i yapabiliyorsunuz. Ama insertion time analizi biraz daha zor. Yani onu burada bu derste çözmeyi düşünmüyorum. Çok beklediğimiz kadar kötü değil.
+
+416
+01:41:45,631 --> 01:41:56,131
+Eğer yeterince iyi seçerseniz, 4 en kadar mesela seçerseniz, hash ederseniz o zaman uygulanabilir alanlarda kalıyor.
+
+417
+01:41:56,131 --> 01:42:04,131
+Şimdi burada tamamlanmış bir poko hashing seti görüyorsunuz. İki tane tabloyla olmuşturulmuş.
+
+418
+01:42:04,131 --> 01:42:09,131
+Bir bakalım nasıl bir görüntü var. Bunlar keyleriniz.
+
+419
+01:42:11,060 --> 01:42:17,199
+Bunların yerleşecekleri hash fonksiyonunuza verdiğiniz zaman oluşan value'lar şurada.
+
+420
+01:42:18,380 --> 01:42:22,840
+Soldaki value'lar birinci tabloya yerleşirse nereye yerleşeceğini gösteriyor.
+
+421
+01:42:23,000 --> 01:42:27,140
+Sağdaki value'lar ikinci tabloya yerleşirse nereye yerleşeceğini gösteriyor.
+
+422
+01:42:28,724 --> 01:42:44,703
+Dolayısıyla A örneğin ya birinci tabloda sıfıra yerleşecek ya da ikinci tabloda ikiye yerleşecek. Sıfıra yerleşememiş, ikiye yerleşmiş. Bu tüm resurslar yapıldıktan sonraki hale, şu an A'yı buraya yerleştirmeye çalışmıyorum, bir iterasyonlardan sonra bu hale gelmiş.
+
+423
+01:42:53,811 --> 01:43:01,891
+Birinci göze ikinci tabloda. Dörde yerleşebilir, bire yerleşmiş gibi. Bu şekilde yapıyoruz.
+
+424
+01:43:03,471 --> 01:43:10,692
+Şimdi aslına bakarsanız bundan sonra nasıl tabloyu oluşturduğumuzu göstereceğim.
+
+425
+01:43:11,991 --> 01:43:15,311
+Bir aradan sonra mı göstersek acaba diye düşünüyorum.
+
+426
+01:43:15,311 --> 01:43:20,572
+Bir 10 dakika ara verelim arkadaşlar. Ondan sonra nasıl oluşturulduğunu çizerek göstereceğim size.
+
+427
+01:43:21,011 --> 01:43:24,891
+Çeyrek kala olmuş saat. Beş kala buluşalım inşallah.
+
+428
+01:55:42,707 --> 01:56:08,948
+Arkadaşlar, bakalım kokoreç tabler nasıl oluşturuluyormuş. Az önceki örneğimi yerleştireceğim burada. Geliyor değil mi sesim her şey yolunda? İki tane tablom var. Table 1 ve Table 2. Şu tabloların indekslerinde yazalım. Sıfırıncı, birinci.
+
+429
+01:56:09,908 --> 01:56:13,007
+İkinci, Üçüncü ve Dördüncü Göz.
+
+430
+01:56:14,847 --> 01:56:19,307
+Sıfır, Bir, İki, Üç ve Dört.
+
+431
+01:56:21,047 --> 01:56:25,728
+Şimdi buradaki keyleri bu verilen sırayla tabloları yerleştirmeye çalışacağım.
+
+432
+01:56:26,528 --> 01:56:29,148
+Şurası tablo bir.
+
+433
+01:56:31,908 --> 01:56:33,887
+Burası da tablo iki için.
+
+434
+01:56:36,659 --> 01:56:54,460
+oluşturduğu value, hash value. Önce a'yı yerleştirmeye çalışıyorum. a birinci tabloda sıfıra yerleşmek istiyor. a'yı birinci tablodaki sıfıra yerleştirdim. Şimdi b geldi. b de yine birinci tabloda sıfıra yerleşmek istiyor.
+
+435
+01:56:55,412 --> 01:57:22,552
+Burada aslında B'nin yerleşebileceği ikinci seçenek boş. Oraya bakıp oraya yerleştirmek şeklinde. Meyiplevatasyon da olabilir ama Kukla Hishing'in çalışma mantığı öyle değil. İlk yerleşmek istediği yere yerleştir, oradaki de başka bir yere gönder. Bir an önce yerleştir. Bu şekilde çalışıyor. O yüzden B buraya yerleşmek istediğinde, yine A'nın Occupy Yeti Yuslota yerleşmek istediğinde onu gerçekten oraya yerleştiriyor.
+
+436
+01:57:23,572 --> 01:57:50,851
+B'yi oraya yerleştiriyor. Ama A'yı başka bir yere koyması lazım. A'yı oradan attığı için. A'yı ikinci seçeneğine yerleştiriyor. Yani tablo 2'nin ikinci slotuna yerleştiriyor. O yüzden A buraya geldi. B'yi de yerleştirdim, A'yı da yerleştirdim. Şimdilik iki elemanım var. Şimdi sıra C'yi yerleştirmeye geldi. C'yi yine birinci tercihine yerleştirelim. Yani şuraya.
+
+437
+01:57:52,756 --> 01:58:18,936
+C'yi koydum. D'yi yerleştirmeye sıra geldi. D de yine birinci tablomu birinci gözüne yerleşmek istiyor. Ama şu an orası dolu. Yine de D'yi buraya koyacağım. Ama C'yi başka bir yere göndereceğim. C'yi ikinci tercihine göndereceğim. Yani dörde. Buraya C'yi gönderdim. Hem C'ye hem D'yi yerleştirmiş oldum. Şimdi E.
+
+438
+01:58:19,380 --> 01:58:44,920
+yerleşmek istiyor. E'yi birinci tabloda 3'e yerleştirdim. Sonra F'ye yerleşmek istedim. F'de buraya yerleşmek istiyor. Yine 3'e. O zaman buraya F'yi koyuyorum. Ama E'nin yerini değiştirmem gerekiyor. E ikinci tabloda ikinci göze yerleşebilir. Buraya E'yi koyuyorum. Bu sefer A'yı göndermem gerekiyor.
+
+439
+01:58:45,555 --> 01:58:56,415
+A, birinci tabloda sıfıra yerleşebilir. Buraya A'yı koydum. B'yi göndermem gerekiyor. Ve ikinci tabloda sıfıra yerleşebilir.
+
+440
+01:58:59,988 --> 01:59:04,387
+Bu şekilde bu elemanlarımı eklemeyi bitirdim.
+
+441
+01:59:08,148 --> 01:59:12,047
+Anlaşıldı mı? Var mı soru?
+
+442
+01:59:15,475 --> 01:59:24,235
+Oradan oraya atlayarak her seferinde bulunduğum slottaki elemanı atıp, o elemanı ikinci tercihine yerleştirerek tablomu doldurdum.
+
+443
+01:59:25,795 --> 01:59:28,915
+Şimdi burada yeni bir eleman daha gelsin mesela.
+
+444
+01:59:32,884 --> 01:59:59,283
+G gelsin. G'de 1'e 2. Olsun. H verilere. Şimdi G'yi yerleştirmek istediğimde başıma ne gelecek? G buraya yerleşmek istiyor. Birinci tercihi burası. Buraya G'yi koydum. O zaman D'yi göndermem lazım. D'nin ikinci tabloda sıfıra yerleşmesi lazım. D'yi buraya koydum. B'yi göndermem lazım.
+
+445
+02:00:00,000 --> 02:00:26,100
+B'nin birinci tabloda sıfıra yerleşmesi lazım. A'yı göndermem lazım. A'yı ikinci tabloda buraya yerleştirmem lazım. E'yi göndermem lazım. E'yi ilk tabloya buraya yerleştirmem lazım. F'yi göndermem lazım. F'yi de buraya haliyle yerleştirmem lazım.
+
+446
+02:00:27,315 --> 02:00:44,315
+Bu durumda C'yi göndermem lazım. C de buraya gelecek. Ne oldu? Y yine elimde kaldı. Eğer ben elimde aynı eleman varken tekrar aynı elemana dönüp dolaşıp aynı slota geliyorsam.
+
+447
+02:00:44,591 --> 02:01:00,692
+İşte burada işin içinden çıkılamaz bir durumla karşılaşmış oluyorum. Bu noktada rehash etmem gerektiğini tablolarımın anlıyorum. Bu kötü durum senaryosu. O zaman tablolarımı geliştirmen gerekiyor demektir. Var mı soru arkadaşlar?
+
+448
+02:01:07,283 --> 02:01:07,743
+Peki.
+
+449
+02:01:16,500 --> 02:01:18,720
+O zaman sunumdan devam edelim.
+
+450
+02:01:37,716 --> 02:01:54,216
+Şimdi Kuba Hashing'i bitirdik. Nasıl oluşturulduğunu gördük. Search ve Delete işlemlerinin O1'de yapıldığını, Insert işlemi de yine öyle ama onun grufuna girmeyeceğim burada. Gördük.
+
+451
+02:01:54,216 --> 02:02:04,216
+Şimdi yeni bir tane hashing fonksiyonu var karşımızda. Bu hashing fonksiyonu aslında Seksek oyunundan ilham almış.
+
+452
+02:02:06,068 --> 02:02:16,068
+Yaptığı şey aslında linear probing yapmak. Yani klasik linear probingi geliştirerek yola çıkıyor.
+
+453
+02:02:16,595 --> 02:02:34,995
+Neye hatırlarsanız yol açıyordu? Clustering dediğimiz bir şeye yol açıyordu. Neydi o? Bir elemanı eğer open addressing bir metoddu. Bir elemanı eğer bir slota yerleştiremediyseniz, linear olarak hemen altındaki gözlere bakıyordunuz ve ilk bulduğunuz göze yerleştiriyordunuz.
+
+454
+02:02:34,995 --> 02:02:44,395
+Bu da her aradığımız elemanın mevcut bulunduğu aslında, kendi hash'inin referans verdiği slotta değil, daha aşağılarda olmasına sebep oluyordu.
+
+455
+02:02:44,595 --> 02:02:54,595
+ve de arama karmaşıklığımızı arttırıyordu. Bunun böyle bir dezavantajı vardı. Bu problemi çözmek için de Quadrating Probing, Double Ashing yapmıştık.
+
+456
+02:02:54,595 --> 02:03:10,595
+Ama aslında Linear Probing'in şöyle de bir avantajı var. Eğer büyük veriyle çalışıyorsanız, memoriye yani drive'dan, diskten aldığımız verinin içerisinde bir anda çektiğiniz, memoriye çektiğiniz verinin içerisinde birbirine yakın olan
+
+457
+02:03:10,868 --> 02:03:23,408
+T'lerin olma ihtimali daha yüksek. Dolayısıyla aslında bilgisayar donanımını düşündüğümüz zaman kullanışlı bir yöntem bu. Bunu biraz iyileştirmek gerekiyor. Şöyle bir iyileştirme düşünülmüş.
+
+458
+02:03:34,112 --> 02:03:57,391
+Kollüjon olduğu vakit arka arkaya yerleşecek olan elemanlar var ya, aynı slota normalde refer edecek olan. Bunların boyutunu belirlemek üzerine yola çıkılıyor. Diyor ki ben bilgisayarımın özelliklerine bakarak bunun için bir maksimum length belirleyeyim. Ulaştığım zaman oradaki veriye, hemen altındaki verileri de aslında memoriye çekmiş olayım. Hızlıca erişebileyim.
+
+459
+02:03:58,260 --> 02:04:11,659
+Benim bilgisayarımın özelliklerine bakarak bu Maximum Length ne olabilir? Önce bunu belirliyor. Dolayısıyla bunun üzerinden hareket ederek yerleştirmelerini yapacak.
+
+460
+02:04:16,243 --> 02:04:24,264
+Yaptığı şey de aslında yerleştirmek için linear probing ile yerleşecek elemanın nereye yerleşebileceğine önce bakıyor.
+
+461
+02:04:24,264 --> 02:04:28,264
+Eğer orası aslında yerleşmesi gereken yerden çok uzaktaysa.
+
+462
+02:04:29,140 --> 02:04:39,800
+O zaman onu Neighborhood'una yani kendi orijinal hash values'una yaklaştıracak şekilde boşluk açmaya çalışıyor.
+
+463
+02:04:40,380 --> 02:04:44,400
+Ve bunu yaparak da işte optimal bir şekilde bu problemi çözmüş olacak.
+
+464
+02:04:46,539 --> 02:04:52,500
+Aslında Kukko Hashing'te de bu metotta da paralel olarak konusu öğretme imkanı var.
+
+465
+02:04:53,220 --> 02:04:56,320
+Bu da aslında iki yönteminde artılarından bir tanesi.
+
+466
+02:05:03,347 --> 02:05:15,847
+Şimdi boşluk açabilmek için, dedim ya size yaklaşık kendi orijinal source base'in hash değerinin işaret ettiği slot'a ulaşmaya çalışacak, yerleştirmek istediğim yeni değer diye.
+
+467
+02:05:16,547 --> 02:05:27,947
+Aslında buna ulaşabilmek için tahliye edici elemanlar olacak. Bunu deterministik bir şekilde yapıyor. Yani rastgele yapmıyor. Belirli bir şey var bunun için. Algoritması var çalıştırdığı.
+
+468
+02:05:30,515 --> 02:05:37,275
+Gerçekten çok kalabalıkta yine rehash etmek gerekebiliyor.
+
+469
+02:05:39,536 --> 02:05:48,515
+Ama oldukça düşük oranlar aslında burada. Yarı yarıya dolu bir tablo söz konusuysa neredeyse sıfır burada algoritmanın çökme ihtimali.
+
+470
+02:05:48,515 --> 02:05:50,855
+Dolayısıyla başarılı bir şekilde ilerliyor.
+
+471
+02:05:53,175 --> 02:05:54,515
+Şimdi eğer ben...
+
+472
+02:05:55,539 --> 02:06:05,539
+Arayacağım Mühendis diye bir değişken belirlersem, bu değişken benim prob sekansımın boyutu olacaksa, o zaman ben...
+
+473
+02:06:06,228 --> 02:06:15,307
+Bu max liste kadar olan kısımlarda önce orijinal hash fonksiyonumun orijinal olarak gösterdiği pointe, hash x'in gösterdiği slot'a bakacağım.
+
+474
+02:06:15,847 --> 02:06:21,507
+hash x artı 1'e gideceğim. hash x artı 2'ye gideceğim. hash x artı max list eksi 1'e kadar gideceğim.
+
+475
+02:06:21,907 --> 02:06:27,387
+Ve bunları aradıktan sonra zaten bulmuş olacağım ya da bulamamış olacağım. Daha fazla aramama gerek kalmayacak.
+
+476
+02:06:28,467 --> 02:06:30,007
+Sörat işlemi böyle işleyecek.
+
+477
+02:06:32,467 --> 02:06:34,467
+Nasıl çalışıyor? Bir bakalım.
+
+478
+02:06:34,467 --> 02:06:40,467
+Bunun sembolik bir gösterimi.
+
+479
+02:06:40,467 --> 02:06:46,467
+A, B, C, D, R, S ve T'ler bu tabloya yerleştirilmiş.
+
+480
+02:06:46,467 --> 02:06:59,087
+Bunlar key'ler. Şu altında, yani değerleriniz şu altında hash value'ları var. Yani A birinci slot'a yerleşmek istemiş. Base'i 1 bunun. Base vakıtı 1.
+
+481
+02:06:59,087 --> 02:07:20,407
+B'ninki yine bir. C aslında üçe yerleşmek istemiş ve yerleşmiş. D dörde. R yine üçe yerleşmek istemiş gibi. Böyle gidiyor. Şimdi, x'i diye bir entry var. Bu x'i ben bu hash table'a eklemek istiyorum. Bir neighborhood size belirliyorum. Az önce max disk dediğim şey. Bunu dört olarak belirledim.
+
+482
+02:07:20,735 --> 02:07:40,835
+Dörtlük komşudan daha uzağa koymamaya çalışacağım ben. Herhangi bir vakit arıyorsam, herhangi bir x'i koyacak yer arıyorsam, bulunduğum aslında refere ettiği slottan en fazla dört uzakta olmalı. Bu şekilde ilerlemeye devam edeceğim. Bilgisayarımın donanımına göre bunu belirledim.
+
+483
+02:07:43,923 --> 02:07:59,819
+Bana verdiği fonksiyon karşılığında, şuradaki fonksiyon neyse artık, onun ile bana verdiği değer örneğin 1 olsun. Yani x aslında 1'e. Olmadı, şuralara bir yere yerleşmesi lazım. 4 ya, benim komşuluk sayım. Buraya bir yere yerleşmesi lazım ama...
+
+484
+02:07:59,891 --> 02:08:13,551
+İlk boş yer yerleşebileceği sekizde. Neler probing yaptığımız vakit. Buraların hepsi dolu. Sona yerleşmesi gerekiyor. Sona yerleştiği zaman Neighborhood'un dışına çıkmış oluyor. Dolayısıyla buna ben bir yer bulmak zorundayım. Yerleşebileceği bir yer bulmak zorundayım.
+
+485
+02:08:23,507 --> 02:08:47,447
+Komşuluk şu dördü. Kendisini saymazsanız şuradaki üç oluyor. Elemana bakıyorum. Bunlardan hangisini bulunduğu yerden çıkartıp sona atabilirim? Ona karar vermem gerekiyor. Şimdi R'yi bulunduğu yerden çıkartıp sona atabilir miyim? Şimdi R'nin aslında yerleşmesi gereken slot üçmüş. Burada olması gerekiyordu. Sizin komşuluğunuz dört.
+
+486
+02:08:48,083 --> 02:09:00,763
+Dolayısıyla aslında şu arada bir yerde mutlaka R'yi tutmanız lazım. R'yi sona alırsanız kuralı bozuyorsunuz. O yüzden R'yi yerinden çıkartamazsınız. Peki S'yi çıkartabilir miyim yerinden? Ona bakıyorum.
+
+487
+02:09:03,383 --> 02:09:08,163
+S'nin asıl refere ettiği base values'u 5.
+
+488
+02:09:09,524 --> 02:09:22,384
+Burada yani aslında sadece bir adım öteye götürülmüş. Dolayısıyla bu komşuluk içerisinde S'yi çıkartabilirim. Çıkartmaktan kastım evakiyet ediyorsunuz. Yani bunu buraya alıyorsunuz. Aslında boş olan bölgeyi alıyorsunuz. Boşluğumuz artık burada.
+
+489
+02:09:23,699 --> 02:09:43,800
+Buraya x'i yerleştirme şansınız var. Peki buraya x'i yerleştirdiğinizde komşuluk içerisinde kalmış olacak mı? Olmayacak. Bir kere daha aslında değerlendirmeniz lazım. Çünkü şu arada bir yerde olması gerekiyordu x'e. Bir boş yer daha bulmanız gerekiyor. Şimdi bakıyorsunuz şunları c, d ve r'yi değerlendireceksiniz.
+
+490
+02:09:46,420 --> 02:10:06,079
+C'yi değerlendirebilir miyim? C'yi alabilir miyim boşluğu? Evet alabilirim. C'nin Neighborhood bölgesi şurası zaten. C, D, Res, 6'ya kadar gidiyor. C'yi buraya aldığım zaman hala yeterince yakın oluyor. Source Valiantına, Source Vakıtına. Dolayısıyla buraya alabilirim boşluğumu. C'yi buraya koyabilirim.
+
+491
+02:10:06,804 --> 02:10:21,484
+Öyle yapıyorum. Peki buraya yerleştirdiğim zaman x'i beni kurtarıyor mu? Evet kurtarıyor çünkü sadece üçüncü gözde şu ilk dört gözde yerleşme şansı vardı. Dolayısıyla artık işimi bitirdim. Son görüntüsü bu.
+
+492
+02:10:21,484 --> 02:10:26,604
+Son görüntüsü bu. Var mı anlaşılmayan bir şey?
+
+493
+02:10:32,051 --> 02:10:34,872
+Şimdi, anlaşılmıyor bir şey yok.
+
+494
+02:10:45,619 --> 02:11:09,239
+Dolayısıyla benim search işlemim için nasıl bir karmaşıklığım var? Az önce bahsettiğim gibi aslında. Bulunmanız aslında ilk point ettiğiniz yere bakıyorsunuz ve bundan sonraki bir sonraki bakıtlara, komşuluk için ne seçtiğiniz, odaya kadar bakıyorsunuz. Arama karmaşıklığınız o bir de bitmiş sayılıyor dolayısıyla. Oldukça performansı yüksek.
+
+495
+02:11:13,108 --> 02:11:14,699
+Silme için de yine...
+
+496
+02:11:14,931 --> 02:11:35,851
+Önce bulmanız gerekiyor tabii ki. Arama karmaşıklığı ile aynı şekilde bulacaksınız. Bulduktan sonra lazy dilation yapabiliyorsunuz. Yani lazy dilation dediğimizde sildiğimiz elemanın yerine ya nal koyacaksınız ya special bir değer artık programınızda ne koymak istiyorsanız onu koyacaksınız. İşaretleyebilmek için sildiğiniz vakıtı.
+
+497
+02:11:42,931 --> 02:11:51,112
+gerekmediği için basit bir sinme işlemi var. Ama tabii ki lazy delayışında hep konu edilen şey nedir?
+
+498
+02:11:51,532 --> 02:11:56,252
+Evet, programın çalışması için delayt edilen yere yeni bilgilerin gelmesi belki gerekmez.
+
+499
+02:11:56,532 --> 02:12:02,612
+Ama çok fazla delayışında sörçünüz zorlanışabiliyor vs. O riskler tabii burada da yine geçerli.
+
+500
+02:12:03,612 --> 02:12:09,271
+Şimdi bu sembolik gösterimde keylerin altına
+
+501
+02:12:09,939 --> 02:12:26,899
+Bazı aslında vakıtlarının numara olarak yazmıştım ama bunu kodlarken yapabilmek için farklı yöntemler önerilmiş. Nasıl kontrol edeceğim? Nasıl bir sayısal değerli? Bu gösterim metodlarından bir tanesi bitmap gösterimi.
+
+502
+02:12:35,956 --> 02:12:56,536
+Biterey dizisi 0100 olarak gösteriliyor. Bu şu demek, aslında temel olarak point ettiği vakit 5 olan eleman hemen şu yanında.
+
+503
+02:12:59,572 --> 02:13:21,072
+5 vakitine ait değil. Yanındaki eleman 5 vakitine ait. Diğer yanındaki eleman değil. Diğer yanındaki eleman değil. Buradaki sıfırlar ve biriler onu gösteriyor. 1. Şu an bulunduğum vakıta sahip olan komşumun hangisi olduğunu gösteriyor. Sıfırlar da zaten diğer vakıtlara ait olduğunu gösteriyor komşularıma.
+
+504
+02:13:26,323 --> 02:13:30,804
+Bitareyler neler olmalı? Burada örneğini görüyorsunuz.
+
+505
+02:13:38,387 --> 02:14:01,208
+Mesela şurası, bunu mu önce şuna bakalım. Üç için, üçüncü göz için. Üçüncü bezde kendisi var. O yüzden birinci biti bir. Yanındaki dördüncü bezde, o yüzden yanındaki bit sıfır. Bir yanındaki üçüncü bezde, o yüzden yanındaki bir. Diğeri başka bir bezde olduğu için o da sıfır. Bu şekilde yazılıyor bitereğe.
+
+506
+02:14:07,252 --> 02:14:12,512
+Bunları kullanarak yine aynı şekilde yerleşimi bir değerlendirelim bakalım nasıl oluyormuş.
+
+507
+02:14:14,552 --> 02:14:15,852
+Şimdi hash tablo şu.
+
+508
+02:14:17,852 --> 02:14:18,752
+Itemlarım bunlar.
+
+509
+02:14:19,392 --> 02:14:25,512
+Şunlar da yanındaki bitereyleri yani komşuluklarının ve ait oldukları slotları gösteren diziler.
+
+510
+02:14:26,512 --> 02:14:30,972
+Buraya bu diziye H'yi yerleştirmek istiyorum.
+
+511
+02:14:32,172 --> 02:14:32,372
+Ben.
+
+512
+02:14:39,731 --> 02:15:06,652
+Neyi yerleştirmek istiyorum? H'nin yerleşebileceği ilk boş yer şurası. 13'e yerleşebilmeler. Bakmam gereken 13 çok uzakta yerleştirmek istediğim vakit benim. H çünkü 9. slota yerleşmesi gerekiyormuş normalde. Benim burada yerleşebileceğim yerler şu bölge. 13 uzakta o yüzden 13'ü bakamıyorum. 13'e yerleştiremiyorum.
+
+513
+02:15:07,220 --> 02:15:18,220
+Nereleri denemeliyim? 13'e yerleştiremediğim için. E'yi, G'yi ve F'yi. Bu üçü benim adayım. 13'ü de sayarsak 4 komşuluk şurası oluyor. E, G ve F'yi yerleştirebilirim.
+
+514
+02:15:18,220 --> 02:15:25,819
+Önce E'ye bakıyorum. E'nin bit arayı 0, 0, 0, 0. E'nin bulunduğu E'yi gösteren.
+
+515
+02:15:26,228 --> 02:15:39,768
+Bit şu aslında. Bu sıfır. Yani E aslında yukarıdan bir yerden gelmiş. Onuncu slotta değil. Dolayısıyla bunu daha da aşağıya çekmek E'nin erişilebilir olmasını engelliyor artık. Dolayısıyla bunu yerinden kıpırdatamıyorsunuz.
+
+516
+02:15:41,167 --> 02:15:46,887
+Şimdi G'ye bakıyorsunuz. G'nin birinci biti bir. G zaten kendi slotunda.
+
+517
+02:15:48,992 --> 02:16:03,372
+Aşağıya indirebilirsiniz. Yerine boşluğunuzu bunun yerine çekebilirsiniz. Dolayısıyla G'yi 13. slota kaldırdınız. Burada boşluk artık 11'e geldi. 11'e bunu yerleştirebiliyor musunuz?
+
+518
+02:16:04,992 --> 02:16:08,872
+Yerleştirebiliyorsunuz. Çünkü 11 yeterince yakın. H'yi buraya koydunuz.
+
+519
+02:16:15,315 --> 02:16:26,496
+Neyi koydunuz? I geldi, I'yi yerleştirmek istiyorsunuz. I'nın da 6'ymış yerleşmesi gereken slot normalde. 6. göze yerleşmesi gerekiyor.
+
+520
+02:16:27,976 --> 02:16:39,835
+Burada ilk boş yer şurası, 14. Aday olanlar ise şu üçü, H, F ve G. Bunlardan birini evraküat etmeniz, onun yerine I'yi koymanız gerekiyor.
+
+521
+02:16:40,244 --> 02:17:05,424
+H'ye bakıyorsunuz. H'nin birinci biti sıfır. Yani aslında kendi bulunduğu slotta değil. Dolayısıyla H'yi gönderemem. Ama H bana bir bit gösterip yol gösteriyor aslında. Diyor ki aşağıda 11. slotta olması gereken bir entry var. O da şu an şurada. 11, 12, 13'te.
+
+522
+02:17:06,036 --> 02:17:13,315
+13'te B Entry var. Dolayısıyla burada ben G'yi kullanabilirim. Evoquid edebilirim demek. G'yi buraya koydum. Boştu yukarı çektim.
+
+523
+02:17:17,236 --> 02:17:42,236
+Boşluk buraya geldi. 13'e geldi. Buraya yerleştirebiliyor muyum I'yı? Yerleştiremiyorum. Çünkü I 6'ya gitmeye çalışıyor. Hala çok uzakta. 6. slot hala çok uzakta. O yüzden buraya yerleştiremiyorum. Yine adaylarımı belirledim. E'yi, F'yi ve H'yi belirledim. E'yi kullanabiliyor muyum? Kullanamıyorum. Çünkü ilk biti 0 kendi slotunda değil. Zaten yukarıdan gelmiş. Bunu daha fazla aşağıya indiremem.
+
+524
+02:17:46,131 --> 02:18:11,371
+F'ye bakıyorum. Şimdi H'de diyor ki ilk biti sıfır. Sonuncu eleman on bir, on iki, on üç, on dördüncü elemana bana ait burada bir şey var. Buraya yerleştirebilirsin diyor ama orası zaten boşluktan geride. Dolayısıyla onu da bir şey yapamıyorum. Bir aşağıya iniyorum. F'ye bakıyorum. F'yi yerleştirebilir miyim? Evet F'de ilk bit bir.
+
+525
+02:18:11,924 --> 02:18:16,924
+Bu zaten kendi yerinde duruyor. 12. slotta duruyor. Dolayısıyla bunu aşağıya indirebilirim.
+
+526
+02:18:17,924 --> 02:18:25,164
+F'yi indiriyorum. Boşluğu buraya taşıyorum. 12'ye taşıyorum. Dolayısıyla bir yukarı geldi. Boşluk şimdi 12'ye geldi.
+
+527
+02:18:29,396 --> 02:18:52,615
+Şimdi yerleştirebiliyor muyum ayı? Hala çok uzakta yerleştiremiyorum. Yeni adaylarım B, E ve F. Üç adayım var. Hangisi de müsait? B müsait mi? Bakıyorum. B şu an müsait. Kendisinin bulunduğu slotta zaten. Dolayısıyla boşluğu B'nin olduğu yere aldım. B'yi aşağıya çektim.
+
+528
+02:18:53,043 --> 02:19:19,504
+I buraya yerleşebilir mi diye bakıyorum. Şimdi I artık buraya yerleşebilir. Çünkü zaten origin slotu 6'ydı. 4 komşuluk içerisinde erişim dahilinde olduğunda I'yi buraya yerleştiriyorum. Tabii ki bu yerleştirmelerden sonra bu hopları update etmeniz gerekiyor. Gerekirse I'yi yerleştirdiniz. Artık burada C'nin 4. komşuluğunda.
+
+529
+02:19:20,564 --> 02:19:39,623
+Altıncı Slot'un hemen altındaki dördüncü boş Slotta bu Slota ait HVD'si olan bir Entry var. O yüzden A'yı buraya yerleştirdim diye buradaki Hop'u 1.001'e çekmek zorunda kalıyorsunuz. Bunu da yaptığınız zaman yerleştirme işlemini tamamladınız. Var mı soru arkadaşlar?
+
+530
+02:19:49,492 --> 02:19:57,092
+Yoksa yok galiba. Bakayım sohbet yok. Tamam o zaman devam edelim konumuza.
+
+531
+02:19:58,531 --> 02:20:03,551
+Bu da bugün size anlatacağım son konu. Extendable Hashing.
+
+532
+02:20:07,188 --> 02:20:24,028
+Şimdi eğer mail memoriye sığamayacak kadar miktarda veriyle uğraşıyorsak o zaman ne yapacağız? Minimum disk akses yapmak çok önemli hale geliyor böyle bir durumda. Dolayısıyla esnek bir metoda ihtiyacınız var aslında. Dinamik esnek bir metoda ihtiyacınız var.
+
+533
+02:20:31,028 --> 02:20:40,288
+Şimdi bu Extendable Hashing, diğer yöntemlerin aksine pek çok sayıda insertion, deletion yapıldığı halde bile yüksek performans getiren bir metot.
+
+534
+02:20:42,868 --> 02:20:49,888
+Ohenlik Disk Access'de de bu işi çözebiliyor. Extendable Hashing'e bakalım şimdi nasıl çalışıyormuş.
+
+535
+02:20:53,780 --> 02:21:03,480
+Extendable Hashing'de şöyle kavramlar var. Bucketlar var öncelikle. Bu bucketlar disklere yerleştiriliyor.
+
+536
+02:21:09,268 --> 02:21:14,768
+Bir de, şimdi şunlar aslında, bunlar disklere yerleştiriliyor.
+
+537
+02:21:16,768 --> 02:21:21,108
+Disklerin farklı bölümlerinde bulunabiliyorlar. Bir de keylerin tutulduğu bir kısım var.
+
+538
+02:21:21,887 --> 02:21:30,847
+Dictionary kısmı. Keylerin tutulduğu kısım. Bunlar aslında bu bucketlarla point edecek şekilde ilişkilendirilmiş adresler tutuyorlar.
+
+539
+02:21:31,667 --> 02:21:34,167
+Prefix üzerinden çalışıyorlar.
+
+540
+02:21:35,123 --> 02:21:46,704
+Şimdi şu demek bu, iki bitlik bir prefiks var burada, sıfır sıfır. Bunun ilişkilendirildiği point'ın şu vakıtı gösteriyor. Bu vakıttaki tüm elemanların ilk iki biti sıfır.
+
+541
+02:21:48,084 --> 02:22:06,344
+İkinci dikişlerdeki, ikinci direktördeki, pardon, ikinci eleman 0,1. Onun point ettiği vakıttaki tüm elemanlar 0,1 ile başlıyor. Diğer eleman 1,0, hepsi 1,0 ile başlıyor. Diğer eleman 1,1, hepsi 1,1 ile başlıyor. Bu şekilde bir yerleşim sürdümsü.
+
+542
+02:22:14,772 --> 02:22:19,132
+Var mı arkadaşlar? Anlaşılmayalım. Biraz daha zaten detaylı bakacağız şimdi.
+
+543
+02:22:22,711 --> 02:22:34,492
+Direktörüler, vakıtlar. Bizim datamız örneğin altı bitlik ifadelerden oluşuyorsa, altı bitlik sayılardan oluşuyorsa
+
+544
+02:22:38,868 --> 02:22:55,208
+Ve bir diskimizde bizim, bilgisayarımızın, neyse artık part uyarımızın gereksinimi dolayısıyla bir anda ulaşabileceğimiz eleman sayısı n ise o zaman benim her bir bakıtımda n eleman olacak şekilde bu tasarımı yapmam gerekiyor.
+
+545
+02:23:02,388 --> 02:23:23,008
+Herhangi bir anda saklanacak en rekordumuz var ama en zaman içerisinde değişebilir. Bunları dörderlik dörderlik eğer dörtse saklanabilecek disk bloğundaki bilgi dörderlik dörderlik gruplamalıyım. Ama saklamak istediğim eleman sayısı değişebilir, artabilir. O zaman zaten modifikasyonlara table içerisinde gitmemiz gerekecek.
+
+546
+02:23:32,244 --> 02:23:39,844
+Böyle bir Prefix modü ile çalıştığı için, aslında şuna root da birine şekilde ağaca benzetirsek diyebilir.
+
+547
+02:23:40,463 --> 02:23:47,224
+Dört tane pointer tutuyor. Bu pointerler datanın ilk iki biti ile ilişkilendirilmiş. Her yaprak en fazla dört eleman tutuyor.
+
+548
+02:23:47,224 --> 02:23:59,283
+Özetlemek istersem. Her yapraktaki elemanın ilk iki biti aynı. Eğer benim burada rootumda iki bitlik dairektörlerim varsa.
+
+549
+02:24:09,683 --> 02:24:25,063
+Şimdi insert işlemi Extendable Hashing'de nasıl yapılıyor? Extendable Hashing'de insert işlemi iki farklı değişikliğe neden olabiliyor. Leaflerde bir ayrılmaya sebep olabiliyor ya da rootta bir ayrılmaya sebep olabiliyor.
+
+550
+02:24:25,983 --> 02:24:36,063
+Örneğin bizim tablomuz, elimizdeki tablomuz şuyken buna neyi eklemek istediğimi şuraya yazmışım yazmışım.
+
+551
+02:24:36,819 --> 02:25:03,200
+1-0-0, 1-0-0. Bunu insert etmek istiyorum tabloma. Bunu insert etmek istediğimde aslında yerleşmesi gereken yer ilk iki biti 1 ve 0 olduğu için şurası. Normalde buraya bu vakıta yerleşmesi gerekiyor. Ama burada dört tane eleman var zaten. Ben de buranın maksimum eleman sayısını dört olarak belirlemiştim. O yüzden artık buraya yerleştiremiyorsunuz.
+
+552
+02:25:03,507 --> 02:25:27,927
+Buraya yerleştiremediğiniz için burada vakıtlarda bir ayrıma gitmeniz gerekiyor. Ve artık 2 bit de değil, 3 bit ile gösterilecek şekilde derlekterinizi oluşturmanız gerekiyor. Çünkü ayrıma gittiğinizde şu kısmı böleceksiniz. Nasıl böleceksiniz? 1 ve 0 değil, 3 bit olacak şekilde. 1, 0, 0 olanlar ilk 3 biti ya da 1, 0, 1 olanlar olarak bölmeniz gerekecek.
+
+553
+02:25:31,956 --> 02:25:51,716
+Şu iki vakit yeni elemanla beraber beş tane entry'i tutmuş olacak. 1.00 olanlar buraya yerleşmiş. 1.01 olanlar buraya yerleşmiş. Dolayısıyla direktörünüzü güncellediniz. 100 prefiksi burayı point ediyor. 101 prefiksi burayı point ediyor.
+
+554
+02:25:57,716 --> 02:26:19,476
+3 bit ile artık ifade ediliyor ama aslında adreslemede bir değişiklik yapmadınız. Bu ikisi yine birinci bakıta. Bu ikisi yine birinci bakıta referans ediyor. Dolayısıyla buradaki bakıtlara aslında hiç erişmediniz. Sadece buradaki directory de güncelleme yaptınız. Dolayısıyla aslında basit bir şekilde insertion'ınızı yapmış oldunuz.
+
+555
+02:26:25,203 --> 02:26:29,884
+100 100 100 100 yerleştirmiştim. Bu haldeydi.
+
+556
+02:26:34,100 --> 02:26:58,580
+Bunu bir bitleri sıfır olan bir değer. Bunu insert etmek istersem ne yapacağım? Şimdi ona bakıyorum. Bunu insert etmek istediğimde şu vakit haliyle buradan sorumlu. Tüm bitleri sıfır, ilk üç biti de sıfır. Buraya yerleşmek isteyecek ama burada da dört tane entry var. Dolayısıyla buraya yerleşemiyor. Burada da bir ayrıma gitmeniz gerekecek.
+
+557
+02:26:59,731 --> 02:27:05,691
+Ama buradaki ayrıma gittiğinizde sizin prefiksleriniz bu ayrımı kaldıracak düzeyde. Bunu 4 bite çıkartmanız gerekmiyor.
+
+558
+02:27:06,472 --> 02:27:12,652
+Dolayısıyla ilk 3 biti 0 olanları bu kısma şunun içerisindekileri ayırdınız.
+
+559
+02:27:12,652 --> 02:27:19,912
+Şu elemanı ve yeni gelen elemanı birinci bakıta koydunuz. Diğer elemanları ikinci bakıta yerleştirdiniz.
+
+560
+02:27:20,852 --> 02:27:24,652
+Yine aslında sadece şu göze ulaşarak, yani şuna...
+
+561
+02:27:24,724 --> 02:27:29,484
+Diskten ulaşarak bu işlemi yaptınız. Diğerlerine ulaşmanız gerekmedi.
+
+562
+02:27:34,227 --> 02:27:50,287
+Peki silme yapsaydım, mesela neyi sileyim? Mesela bir sıfır bir, bir bir sıfırı silseydim. Şunu silseydim örneğin ne yapacaktım?
+
+563
+02:27:55,700 --> 02:28:15,819
+Bunu silmeyelim. Bire 100 ve 101 vakıtlarının birleşmesi gereken bir şey. Mesela şunu silseydim arkadaşlar. Bunu silmek isteseydim. O zaman ne yapacaktım? Sildikten sonra bu iki vakıt artık birleşebilir hale gelecekti. Çünkü dörde inecekti toplam elemanları.
+
+564
+02:28:16,819 --> 02:28:30,600
+Bunu silecektim. Aslında yapacağım şey şuna ulaşmama gerek yok. Şu ikisinin aynı yere point etmesini sağlayacaktım. Dolayısıyla ikisi de şurada olduğu gibi aynı yere point ederek bunları birleştirmiş olacaktım.
+
+565
+02:28:33,971 --> 02:28:59,891
+Şimdi burada eğer benim şuradaki vakıtlarımın size çok küçük olursa o zaman oluşturduğum yapım genişleyecektir. Geniş bir hal alacaktır. Bu durumda vakıtlarda değerlerin kendilerini tutmaktansa çünkü genişlemesi de çok iyi değil. Pointer'ları tutarak belki erişmek mümkün. Mümkün olduğu kadar disk aksesini azaltmaya çalışıyorum.
+
+566
+02:29:01,427 --> 02:29:17,968
+Ama yine de eğer sizin direktörünüz ne kadar olursa olsun, direktörünüz memoriye yetemeyecek kadar genişse zaten ikinci bir disk akses yapmanız gerekiyor. Ama sonuçta en fazla iki disk akses de bu işlemleri yapabiliyor oluyorsunuz. Extendable Heşingen özeti bu.
+
+567
+02:29:21,299 --> 02:29:32,899
+Şimdi sorularınız var mı alayım. Bir de ders işleyişiyle ilgili düşündüğünüzü arada vesaire tahmin ederek onunla alakalı da feedback'lerinizi almak isterim. Bugünlük bu kadar benim slide'larım.
+
+568
+02:29:36,755 --> 02:29:38,896
+Yok mu arkadaşlar, kimseye söylemek istediği bir şey?
+
+569
+02:29:44,659 --> 02:29:46,659
+Tekrar ediyor musunuz peki?
+
+570
+02:29:46,659 --> 02:29:59,659
+Hocam bir şey diyeceğim. Tekrar demişken tekrar olması anlamında böyle bir belki vizeler örmesi veya vizelerden birkaç örneğin böyle genel konuları tekrarlandırıp soru çözümü yapsak da olur mu?
+
+571
+02:29:59,659 --> 02:30:00,659
+Olur, olabilir.
+
+572
+02:30:01,876 --> 02:30:07,876
+Aslında kitaplarda da güzel sorular var. Onlara da bakabilirsiniz. Genel olarak ben de bir tekrar etmek isterim.
+
+573
+02:30:07,876 --> 02:30:15,876
+Yani dersler şey kaydediliyor oradan da bakıyorsunuz ama tekrar interaktif olması açısından faydalı olur. Öyle bir şey yapabiliriz.
+
+574
+02:30:15,876 --> 02:30:20,876
+Aklınızda sorular olduğunuz zaman da interaktif olmalı.
+
+575
+02:30:21,376 --> 02:30:23,456
+Efendim, bir daha olabilir miyim? Orayı anlayamadım.
+
+576
+02:30:23,796 --> 02:30:29,596
+Dediğim gibi, en azından sorular çözerken aklımızda bir soru olduğu zaman hemen sormak istedik.
+
+577
+02:30:29,975 --> 02:30:38,355
+Okey, tamam. Şimdi kendiniz üzerinden geçtiğiniz vakit o formülleri vs. kendiniz çözmeye çalıştığınızda muhtemelen sorular oluşacaktır.
+
+578
+02:30:38,355 --> 02:30:44,956
+Hani ben böyle anlatırken ne kadar da olsa yine bazı şeyler kaçabiliyor. Dolayısıyla bir elinizi bulaştırmanız lazım.
+
+579
+02:30:45,136 --> 02:30:49,355
+Vizeler öncesi bir tarihte böyle bir şey yapabiliriz. Siz de biraz hazırlanır gelirsiniz. O zaman daha faydalı.
+
+580
+02:30:49,376 --> 02:31:07,056
+olacak diye düşünüyorum. Sonrasında biliyorsunuz bir proje sunumu planım vardı. Onunla alakalı da size genel bir konsept verip sizin konu aramanızı ve bana onu önermenizi isteyeceğim. Şimdilik planım o yönde. Ama şeyi çok kestiremiyorum.
+
+581
+02:31:10,164 --> 02:31:24,123
+Kişi sayısını çok kestiremiyorum. Yani acaba kaç kişi? Şu an çünkü 25'i hiç geçmiyor. Bugün oldukça azız 18 kişiyiz. Zamanlamayı çok kafamda canlandıramadım. Acaba kaç kişi katılmak ister diye ona bir bakacağız.
+
+582
+02:31:26,739 --> 02:31:33,759
+Tarih yaklaştığı vakit ilk zamanlar haberleşmiştik. Bir arkadaşın sunumla alakalı çekincesini paylaşmıştık.
+
+583
+02:31:33,819 --> 02:31:38,239
+Benim iletişime geçerse zaman planlamasına göre nasıl bir çözüm üretiriz bakarız.
+
+584
+02:31:39,379 --> 02:31:41,879
+O zaman tekrar dediniz, başka bir şey demediniz. Tamam.
+
+585
+02:31:41,979 --> 02:31:47,000
+Peki bu konuların sizin lisansta gördüklerinizle çakışma şeyi nedir?
+
+586
+02:31:47,000 --> 02:31:54,360
+Yani biz bunları zaten biliyoruz hocam mı diyorsunuz? Yoksa yeni şeyler burada çoğunlukta mı diyorsunuz bana?
+
+587
+02:31:54,739 --> 02:32:03,559
+Hiçbir şey demiyor musunuz? Hiç çakışmadı. Tamam. [öğrenci] sen nereden mezundun?
+
+588
+02:32:13,236 --> 02:32:16,496
+ [kişisel bilgi]. Tamam. Okey. Tamam.
+
+589
+02:32:17,012 --> 02:32:39,772
+[öğrenci] da aynı şeyi söylemiş. Tamam arkadaşlar, teşekkür ediyorum. Ben biraz matematiğine bu işin giriyorum. Aslında bunun sebebim sizin elinize kalem kağıt alıp ileride bu işi hesaplamanız gerekeceğini düşündüğümden değil. Ama biraz matematiğine gelince yöntemlerin kafanızda oturması da daha kolay olur diye düşündüğümden biraz proof etmek istiyorum. O biraz daha işleyişi anlamanızı da pekiştirmiş oluyor çünkü.
+
+590
+02:32:42,036 --> 02:32:58,335
+Bu formülizasyon üzerinden eğitim sistemimizde pek gidilmeyebiliyor bazen. Ama bu ileride özellikle bir akademik bir şey yapmak istediğinizde bir eksiklik olarak karşımıza çıkıyor. Benim için de aynı şey geçerli. Dolayısıyla biraz matematiğine girmek gerektiğini düşündüğümden ara ara gruplar yapıyorum.
+
+591
+02:32:59,876 --> 02:33:01,815
+Tamamdır. Teşekkür ediyorum o zaman arkadaşlar.
+
+592
+02:33:02,556 --> 02:33:03,935
+Gelebildiğimleriniz için.
+
+593
+02:33:06,935 --> 02:33:07,916
+Tamam, süper.
+
+594
+02:33:14,388 --> 02:33:21,888
+Bu derse kadar kanıtlar dışında lisansıyla aynıydı. Anladım. Okey, tamam. Sen nereden mezunsun [öğrenci]?
+
+595
+02:33:30,131 --> 02:33:37,651
+Yeter miyiz? Okey. Tamam. Teşekkür ediyorum arkadaşlar. O zaman haftaya görüşmek üzere. Kolay gelsin.
+
+596
+02:33:39,331 --> 02:33:40,211
+Teşekkür ederim.
+
+597
+02:33:40,211 --> 02:33:41,371
+Sağ olun.
