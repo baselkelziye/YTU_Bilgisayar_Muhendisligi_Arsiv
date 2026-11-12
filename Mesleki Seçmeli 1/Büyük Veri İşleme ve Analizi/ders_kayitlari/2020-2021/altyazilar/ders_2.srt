@@ -1,0 +1,2635 @@
+1
+00:04:09,460 --> 00:04:10,420
+Arkadaşlar, merhaba.
+
+2
+00:04:13,740 --> 00:04:14,540
+Merhaba hocam.
+
+3
+00:04:15,060 --> 00:04:15,719
+Güzel bir kış.
+
+4
+00:04:20,307 --> 00:04:21,887
+Sesim gidiyordu, ümit ediyorum.
+
+5
+00:04:23,707 --> 00:04:24,867
+Geliyor hocam sesine.
+
+6
+00:04:24,867 --> 00:04:25,387
+Geliyor hocam.
+
+7
+00:04:26,187 --> 00:04:27,327
+Tamamdır arkadaşlar.
+
+8
+00:04:29,707 --> 00:04:33,048
+Evet, biz yavaştan derse başlayalım.
+
+9
+00:04:34,147 --> 00:04:36,728
+Ben de saatimi kurayım.
+
+10
+00:04:45,363 --> 00:04:45,723
+Ok.
+
+11
+00:04:49,084 --> 00:04:57,003
+Ok, today we are going to be, oh sorry, let me close this, so let's, ok.
+
+12
+00:04:58,443 --> 00:04:59,003
+Perfect.
+
+13
+00:05:00,083 --> 00:05:08,483
+Today we are going to talk about MapReduce and the software stack that is necessary to run the MapReduce programming model.
+
+14
+00:05:08,483 --> 00:05:09,803
+That is Chapter 2.
+
+15
+00:05:10,483 --> 00:05:18,983
+And you can find all the PowerPoint slides, PDF slides, and video lectures available on the books website.
+
+16
+00:05:23,795 --> 00:05:24,375
+Let's see.
+
+17
+00:05:41,235 --> 00:05:51,836
+Okay, we are going to start with distributed file system and then this will be the first set of slides.
+
+18
+00:05:53,115 --> 00:06:03,716
+And then we'll talk about the computational model, how MapReduce programming model allows us to do parallel data processing on large scale data.
+
+19
+00:06:04,980 --> 00:06:23,620
+Then we are going to talk about how these big data processing platforms are doing scheduling and data flow so that they can allow us to write code which can process data in parallel.
+
+20
+00:06:24,627 --> 00:06:31,627
+Ve sonra, hizmetik ve
+
+21
+00:06:41,427 --> 00:06:48,127
+Now, in this lecture, we are going to deal with large-scale data.
+
+22
+00:06:48,127 --> 00:06:53,067
+So, when we talk about large-scale data, we should understand the following.
+
+23
+00:06:54,048 --> 00:07:02,987
+This data is big enough so that it cannot fit into a single physical memory.
+
+24
+00:07:03,987 --> 00:07:04,088
+Okay?
+
+25
+00:07:05,012 --> 00:07:19,151
+And there are a number of machine learning algorithms and statistics algorithms that we use in order to understand, in order to extract information from the data.
+
+26
+00:07:19,151 --> 00:07:23,151
+And these algorithms are usually designed...
+
+27
+00:07:23,343 --> 00:07:47,004
+In a way that the data has to be in memory. Okay. And so what they do, basically the data is sitting on the physical disk. And these algorithms are bringing the data from physical disk to physical memory so that they can process the data on the CPU. Okay.
+
+28
+00:07:48,435 --> 00:07:54,475
+Now we are talking about the kind of data that cannot fit into physical memory.
+
+29
+00:07:55,375 --> 00:08:06,351
+And so even we are talking about the kinds of data that cannot fit into single machine's physical disk storage, even though we have now...
+
+30
+00:08:06,351 --> 00:08:22,635
+Bu da yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yüksekliğe yük
+
+31
+00:08:26,867 --> 00:08:48,748
+Now, to better understand this, illustrate this example. Let's say you have what you want to do. You would like to do, for example, an indexing on the webpages that you cropped. Okay. So you would like to do what actually Google do. Okay.
+
+32
+00:08:49,844 --> 00:08:58,504
+So, suppose you have 10 billion pages, okay, and every size of a web page is 20 kilobytes.
+
+33
+00:08:59,344 --> 00:09:07,564
+Now, if you consider this data set, so then you will end up with 200 terabytes, okay.
+
+34
+00:09:08,104 --> 00:09:16,364
+Now, let's say your physical disk storage is big enough so that it can hold 200 terabytes, okay.
+
+35
+00:09:17,107 --> 00:09:28,787
+And this time, now, obviously, you have a limitation because you need to bring this data from physical memory, physical disk to physical memory.
+
+36
+00:09:28,787 --> 00:09:39,487
+Okay, just consider the case that even your physical memory is large enough to hold such a big data.
+
+37
+00:09:40,048 --> 00:09:40,207
+Okay.
+
+38
+00:09:41,043 --> 00:09:49,243
+But the limitation here is that you can only read data from physical disk into memory at certain speeds.
+
+39
+00:09:49,624 --> 00:09:55,323
+Okay, so there are different physical disk speeds right now.
+
+40
+00:09:55,543 --> 00:10:07,243
+It's much better what you see right now, but it is not good enough to bring this big data into physical memory in a short amount of time.
+
+41
+00:10:07,635 --> 00:10:27,375
+So if you have a disk which has a read bandwidth with 50 megabyte per second, it will take 4 million seconds for you to read the whole data into physical memory so that you can do, for example, a simple count on this data.
+
+42
+00:10:28,956 --> 00:10:31,096
+Obviously, this is way too much time.
+
+43
+00:10:31,915 --> 00:10:35,216
+Okay, so the problem here is that
+
+44
+00:10:36,436 --> 00:10:59,156
+What we are trying to do, what I'm trying to explain to you is that if I try to process such a large scale data on a single machine, okay, the amount of things that I need to do in order to process this, okay, takes so much time.
+
+45
+00:10:59,731 --> 00:11:11,571
+Okay, so therefore, so the big data processing and analysis techniques suggest that why not divide such a big data into multiple nodes?
+
+46
+00:11:11,571 --> 00:11:22,932
+Okay, store these such a large data on multiple nodes as a small chunks of data.
+
+47
+00:11:23,668 --> 00:11:34,948
+And apply the same function on these nodes and produce the results that comes from these nodes and merge them.
+
+48
+00:11:35,827 --> 00:11:43,347
+Okay. Instead of doing this all in one single machine, you would like to do this on multiple machine in parallel.
+
+49
+00:11:43,347 --> 00:11:44,587
+Okay.
+
+50
+00:11:45,364 --> 00:11:52,144
+So, that's a good motivation why we need the distributed file systems.
+
+51
+00:11:54,144 --> 00:11:55,024
+Okay.
+
+52
+00:11:56,104 --> 00:12:01,984
+Now, usually, distributed file systems are deployed on clusters.
+
+53
+00:12:30,644 --> 00:12:37,484
+In the same location, and they are connected with a high-speed local area network.
+
+54
+00:12:38,804 --> 00:12:45,344
+Now, so this is a common architecture for the cluster.
+
+55
+00:12:45,344 --> 00:12:52,344
+Now, you see here, there are a number of...
+
+56
+00:12:54,484 --> 00:13:06,644
+Computing nodes, okay? And these are usually called commodity hardware. So what is commodity hardware? It's a hardware that you can buy.
+
+57
+00:13:07,056 --> 00:13:27,796
+On a cheap price, okay, from everywhere. So they are not dedicated machine, okay. The CPU that is commodity hardware is the CPU that you use on your laptop. It's the same thing, okay. Their physical memory is usually the same size that on your daily use machine, okay.
+
+58
+00:13:29,812 --> 00:13:39,292
+What these data centers are doing, okay, they have these clusters of computers put together on trailers, okay?
+
+59
+00:13:39,764 --> 00:13:50,624
+For example, in a trailer, you have a number of commodity computers, commodity servers put together in a rec cabin.
+
+60
+00:13:50,963 --> 00:13:54,484
+So what is a rec cabin? So this is an example rec cabin.
+
+61
+00:13:54,484 --> 00:13:57,783
+So here, so this is one rec cabin.
+
+62
+00:13:58,323 --> 00:14:02,484
+And you see that there are, all these are.
+
+63
+00:14:03,412 --> 00:14:16,932
+The commodity servers, and they all are connected via a local area network, okay, between the same rack, okay?
+
+64
+00:14:18,163 --> 00:14:23,663
+Now, usually a REC contains 16 to 64 commodity Linux nodes.
+
+65
+00:14:23,663 --> 00:14:33,423
+And usually these server box, these computing boxes, have Linux installed on it.
+
+66
+00:14:34,903 --> 00:14:38,984
+So it's an open source operating system.
+
+67
+00:14:39,563 --> 00:14:45,984
+And these data centers, they don't have to pay for Linux operating system.
+
+68
+00:14:46,163 --> 00:15:02,624
+Now, all these computers in a rack cabin, they are connected with a switch and usually these switches, so they provide bandwidth with 1 GB per second between any nodes in the rack.
+
+69
+00:15:04,764 --> 00:15:10,923
+And obviously you have more than one rack, nettrailer, you have many racks next to each other.
+
+70
+00:15:11,508 --> 00:15:22,168
+And all these racks, they are connected via a switch which have a much bigger bandwidth.
+
+71
+00:15:22,788 --> 00:15:32,427
+So this switch here is much expensive compared to the switches that provides the connection between the rack.
+
+72
+00:15:33,087 --> 00:15:38,528
+Usually 10 gigabit per second bandwidth.
+
+73
+00:15:39,572 --> 00:15:41,391
+Now,
+
+74
+00:15:42,351 --> 00:15:42,831
+um,
+
+75
+00:15:43,412 --> 00:15:51,772
+Bu da bu da trailerin, bu da trailerin, bu da trailerin,
+
+76
+00:15:51,772 --> 00:15:53,971
+ve bu da trailerin, bu da trailerin,
+
+77
+00:15:53,971 --> 00:15:57,852
+bu da trailerin, bu da trailerin,
+
+78
+00:15:57,852 --> 00:16:04,331
+bu da normal-kürteki da trailerin,
+
+79
+00:16:04,331 --> 00:16:11,132
+bu da trailerin, bu da trailerin,
+
+80
+00:16:11,412 --> 00:16:22,732
+Okay, now, so this is an old figure, but it's, so it can give you an idea how large these data centers are.
+
+81
+00:16:23,452 --> 00:16:29,312
+So, one data center from Google, for example, had one million machines in it.
+
+82
+00:16:35,220 --> 00:16:51,940
+Okay, now, so we have these clusters of Linux boxes, so which are connected via local area network, doing the computation for us, okay?
+
+83
+00:16:53,060 --> 00:16:58,260
+And on such a cluster computing platform,
+
+84
+00:16:58,720 --> 00:17:05,440
+So, we know that node Linux boxes or servers can fail.
+
+85
+00:17:06,220 --> 00:17:06,280
+Okay.
+
+86
+00:17:07,380 --> 00:17:15,680
+And statistically, we know that a single server, a commodity server can stay up for three years.
+
+87
+00:17:15,680 --> 00:17:18,519
+So, which is 1,000 days.
+
+88
+00:17:19,360 --> 00:17:19,480
+Okay.
+
+89
+00:17:20,200 --> 00:17:20,519
+Now.
+
+90
+00:17:20,980 --> 00:17:38,679
+If you have a small data center which has 1000 servers, one failure per day is not a big deal. You can deal with that. So if every day if you have one server failure, so it's manageable.
+
+91
+00:17:39,251 --> 00:17:55,552
+But if you have a data center with 1 million servers in it, okay, so in that case, on a daily basis, you would have 1,000 failures. Now, that's a big number. So, when 1,000 servers fail,
+
+92
+00:17:55,983 --> 00:18:21,583
+Obviously, you need to recover those failed servers. You need to restart those jobs that are running on those failed servers. And also, you need to start using other copies of the data that were stored on these failed servers.
+
+93
+00:18:23,983 --> 00:18:51,371
+bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak için bir işe de yapmak
+
+94
+00:18:52,051 --> 00:19:07,891
+Even the movement of data from physical disk to physical memory takes so much time, let alone you put computation aside.
+
+95
+00:19:07,891 --> 00:19:11,791
+Just moving the data into physical memory takes so much time.
+
+96
+00:19:12,311 --> 00:19:19,891
+So therefore we say that we need to go from single computing architectures to a cluster.
+
+97
+00:19:20,051 --> 00:19:23,051
+platform.
+
+98
+00:19:23,051 --> 00:19:29,051
+So where you have many machines put together on the same location that can process your data.
+
+99
+00:19:29,051 --> 00:19:30,051
+Okay.
+
+100
+00:19:30,240 --> 00:19:42,940
+But obviously, if you have a cluster computing, so you have a challenge because in a cluster computing environment, so you use the commodity servers and they can obviously they can fail.
+
+101
+00:19:43,519 --> 00:19:53,519
+And if the number of servers that you have in your data center increase, and then you have a problem because the number of failures that may happen may be way too much.
+
+102
+00:19:54,355 --> 00:20:21,056
+Okay, then if you are working on a cluster computing environment, then you have, you need to solve some challenges. So one challenge is how to store the data persistently. Okay, so which means that, so when you store the data, you need to store multiple copies of the same data on different servers.
+
+103
+00:20:21,587 --> 00:20:31,067
+So that if one of them fails, you can still find the copy of the data on that storage.
+
+104
+00:20:31,788 --> 00:20:31,867
+Okay.
+
+105
+00:20:32,748 --> 00:20:39,507
+So therefore, in order to provide the persistency, you need to store the copies of the same data.
+
+106
+00:20:40,867 --> 00:20:46,548
+And the other thing is keep it available if the nodes fail.
+
+107
+00:20:47,508 --> 00:21:10,708
+If you store multiple copies of the same data, you obviously increase the availability of the data, which means that if one or two of the copies of the data fails, since you have multiple copies stored on the distributed nodes, you can still make that data available to the user.
+
+108
+00:21:11,251 --> 00:21:25,251
+Now, so this is one problem that needs to be solved, how you can persistently store the data and keep it available, even in case a node fail.
+
+109
+00:21:26,511 --> 00:21:32,271
+The second thing is that how to deal with node failures during a long-running competition.
+
+110
+00:21:32,791 --> 00:21:38,231
+Let's say you started a job and your job is to do a count.
+
+111
+00:21:38,740 --> 00:21:53,740
+...method, ok? On the large scale data, ok? And since the data size is big, even the count process will take so much time, ok? So therefore...
+
+112
+00:21:54,740 --> 00:22:05,700
+So, if something happens to that node, which is responsible of running that count process, okay, you need to handle this situation, okay?
+
+113
+00:22:05,700 --> 00:22:16,580
+You need to maybe keep track of that process that is running on that node, and if something happens in the middle, so you need to run that process on a different node.
+
+114
+00:22:17,076 --> 00:22:39,996
+And if maybe that process completed its job, then so you need to write the result of that process, not on that server, but on a different server so that if that not fails, you can still access the result of that computation.
+
+115
+00:22:40,615 --> 00:22:43,716
+Okay, now that's the second thing that we need to find a solution.
+
+116
+00:22:45,076 --> 00:22:48,296
+How I can store the data persistently.
+
+117
+00:22:48,296 --> 00:23:03,196
+The second thing is that how I can deal with failures if there is a job running in that node, so if the failure happens during its processing.
+
+118
+00:23:06,256 --> 00:23:06,676
+Okay.
+
+119
+00:23:07,736 --> 00:23:10,936
+Now, other challenges with cluster computing.
+
+120
+00:23:13,748 --> 00:23:19,967
+Now, the network bandwidth between the racks is usually 1 GB per second.
+
+121
+00:23:19,967 --> 00:23:32,288
+Okay, now, so again, so this data, the newest switches may provide a better speed, but it is still limited.
+
+122
+00:23:32,748 --> 00:23:40,347
+Okay, if you want to move data from one Linux box to another on the same rack server, okay,
+
+123
+00:23:40,751 --> 00:23:55,692
+It will take way too much time. For example, here is an example. If you move 10 terabyte data with one gigabit per second speed from one Linux box to another, it will take one day.
+
+124
+00:23:57,071 --> 00:24:04,632
+Now, so this is another challenge, which means that we do not want to move data from one node to another.
+
+125
+00:24:05,107 --> 00:24:10,127
+So we need to find a solution where we bring the computation to the data.
+
+126
+00:24:10,127 --> 00:24:10,887
+Okay.
+
+127
+00:24:12,647 --> 00:24:15,607
+And the other challenges is this.
+
+128
+00:24:15,955 --> 00:24:21,336
+Doing the distributed programming on a cluster computing is usually hard.
+
+129
+00:24:21,875 --> 00:24:27,675
+So you need to be aware of the number of nodes that are available in the cluster.
+
+130
+00:24:27,895 --> 00:24:39,755
+You need to be aware you need to do parallel programming that is required to submit your jobs to number of nodes and monitor them as they run.
+
+131
+00:24:39,755 --> 00:24:43,776
+And once they complete their jobs and retrieve the results.
+
+132
+00:24:43,955 --> 00:24:54,415
+Merge them. Okay. And so if you are doing the distributed programming, there are many details that needs to be taken care of if you do so. Okay.
+
+133
+00:24:54,832 --> 00:25:15,812
+So, if you, so, how did we start? We said that a single computing architecture is not good enough for big data processing, because even the moving the data from physical disk to the physical memory takes so much time, okay?
+
+134
+00:25:17,344 --> 00:25:39,563
+And then he said that, okay, we need to move to the cluster computing platforms. Okay, that's fine. But with the cluster computing platforms, we need to find solutions to several problems. One is how you can keep the data persistently. Second is how you can deal with the situation where your job is running and fails in the middle.
+
+135
+00:25:40,051 --> 00:25:49,471
+Third, moving the data from one node to another on the cluster computing platform takes so much time.
+
+136
+00:25:49,471 --> 00:25:53,471
+How you can do the programming without moving the data?
+
+137
+00:25:54,372 --> 00:26:02,192
+And fourth, how you can avoid the complexity of distributed programming?
+
+138
+00:26:03,476 --> 00:26:08,655
+All these are challenges in cluster computing.
+
+139
+00:26:11,016 --> 00:26:20,716
+Now, in order to solve this, over the years, a programming model called MapReduce Programming Model was introduced.
+
+140
+00:26:20,716 --> 00:26:28,076
+It was first introduced by several engineers who work at Google.
+
+141
+00:26:29,523 --> 00:26:37,523
+Now, this programming model basically addresses the challenges that I just mentioned.
+
+142
+00:26:38,423 --> 00:26:38,483
+Okay?
+
+143
+00:26:40,624 --> 00:26:47,523
+With this programming model, so by using this programming model, we can store data redundantly,
+
+144
+00:26:48,183 --> 00:26:52,743
+which means that this programming model asks you to store the data.
+
+145
+00:26:53,587 --> 00:27:18,047
+As chunks on multiple nodes. And if you store pieces of this data on multiple nodes, okay, so in that case, what you will do, you will create persistency and availability. So if something happens to one piece of the data, you can always find the copies of the same data on different nodes.
+
+146
+00:27:19,155 --> 00:27:32,855
+Now, this programming model also addresses the processing of the data locally, addressing the issue of processing the data locally.
+
+147
+00:27:33,415 --> 00:27:44,736
+So, this programming model says that, so we need to move computation close to data, okay, wherever the data is located, so that we can minimize the data movement.
+
+148
+00:27:46,163 --> 00:27:54,544
+Okay, so the MapReduce programing model does not move data around. It brings the computation to wherever the data is.
+
+149
+00:27:56,051 --> 00:28:09,291
+And the third issue that it addresses is that it provides simple programming model, which actually hides all the complexity of distributed computing.
+
+150
+00:28:10,011 --> 00:28:15,152
+Now, so we are going to study MapReduce programming model.
+
+151
+00:28:16,115 --> 00:28:21,976
+But first, we need to discuss the distributed file system.
+
+152
+00:28:22,536 --> 00:28:31,476
+Because we need first a distributed file system so that we can apply this programming model on top of it.
+
+153
+00:28:31,836 --> 00:28:36,996
+This programming model requires a distributed file system to exist.
+
+154
+00:28:38,615 --> 00:28:41,596
+Now, so what is a distributed file system?
+
+155
+00:28:42,708 --> 00:28:57,028
+A distributed file system, so you can see an example of this here. Now, in a distributed file system, what happens here that each file is stored as chunks on multiple servers.
+
+156
+00:28:57,556 --> 00:29:18,936
+Okay, now let's, so let's take a look at the file C and there's file D and you see that, so this file is split into chunks C0, C1, C2, C3, C4, C5.
+
+157
+00:29:18,936 --> 00:29:25,536
+Okay, it is divided into five different chunks and all these chunks, okay.
+
+158
+00:29:25,556 --> 00:29:27,195
+are replicated.
+
+159
+00:29:28,476 --> 00:29:29,796
+Now you see
+
+160
+00:29:29,796 --> 00:29:31,236
+the first chunk
+
+161
+00:29:31,236 --> 00:29:34,016
+is C0 is replicated
+
+162
+00:29:34,016 --> 00:29:35,976
+twice and
+
+163
+00:29:35,976 --> 00:29:38,016
+C1 is replicated twice.
+
+164
+00:29:38,276 --> 00:29:39,576
+This means that replication
+
+165
+00:29:39,576 --> 00:29:41,635
+in this example is 2.
+
+166
+00:29:41,635 --> 00:29:42,736
+Okay.
+
+167
+00:29:43,251 --> 00:29:49,191
+And similarly, file D is also split into chunks.
+
+168
+00:29:49,191 --> 00:29:56,271
+And it turns out that I have two chunks that belong to file D, D0 and D1.
+
+169
+00:29:56,851 --> 00:30:03,291
+And you see that D0 is also replicated twice and D1 is replicated twice.
+
+170
+00:30:04,596 --> 00:30:21,816
+Now, distributed file system, what happens is that when you want to store a file, distributed file system takes this file and divides into chunks and stores these chunks on separate servers.
+
+171
+00:30:22,271 --> 00:30:26,092
+And we will call these servers as chunk servers.
+
+172
+00:30:26,612 --> 00:30:26,731
+Okay.
+
+173
+00:30:27,192 --> 00:30:32,531
+These are the servers that are responsible for storing these chunks.
+
+174
+00:30:33,051 --> 00:30:39,031
+And at the same time, distributive file system makes sure that every chunk is replicated.
+
+175
+00:30:39,491 --> 00:30:39,771
+Okay.
+
+176
+00:30:39,991 --> 00:30:43,511
+Based on the configuration, you may have a replication of two.
+
+177
+00:30:43,912 --> 00:30:46,291
+So by two, replication by three.
+
+178
+00:30:46,511 --> 00:30:46,831
+Okay.
+
+179
+00:30:47,347 --> 00:30:51,948
+Now, this ensures that there is a persistency and availability.
+
+180
+00:30:54,887 --> 00:31:10,587
+Now, the other thing with the distributed file system, the chunk servers not only serves as a storage, it also serves as a computation server.
+
+181
+00:31:11,188 --> 00:31:34,948
+As a computing server. So, which means that you can also run jobs on each of these servers. Okay. Now, if you have a job that needs to be running on, for example, file C, in that case, your job will be running on all the chunk servers that hold pieces of file C.
+
+182
+00:31:35,327 --> 00:32:01,907
+Okay, so therefore with the distributed file systems, we have also ability to bring the computation to data. Okay, instead of moving the data to certain location where the job is running, with the distributed file systems, we can bring the process, we can bring the code to the charge server where it can run on that data.
+
+183
+00:32:04,627 --> 00:32:05,107
+Ok.
+
+184
+00:32:07,427 --> 00:32:07,788
+Now,
+
+185
+00:32:07,788 --> 00:32:09,827
+how
+
+186
+00:32:10,240 --> 00:32:38,240
+Yeni birçok
+
+187
+00:32:38,240 --> 00:32:44,000
+Bu da bilgi verilir, bu bilgi verilir,
+
+188
+00:32:52,788 --> 00:32:59,748
+And distributed file system is keeping track of the chunks that belong to a file.
+
+189
+00:33:00,248 --> 00:33:00,307
+Okay.
+
+190
+00:33:00,807 --> 00:33:08,387
+So what it does is it keeps track of which of the chunk servers are keeping which blocks of that file.
+
+191
+00:33:08,707 --> 00:33:17,228
+So that way it can keep track of the blocks and it can keep track of the chunk servers that store these blocks.
+
+192
+00:33:17,844 --> 00:33:37,544
+Now, there are different implementations of distributed file systems. Google has its own distributed file system. So Hadoop also has its distributed file system. And there are also different implementations. But the idea is the same.
+
+193
+00:33:37,875 --> 00:33:51,056
+Take the file, split it into chunks, give a URI, and the client who is using the distributed file storage does not know where these blocks are located.
+
+194
+00:33:51,576 --> 00:33:53,955
+It only knows the URI of that file.
+
+195
+00:33:53,955 --> 00:34:05,796
+Whenever a client wants to access that file, it will give that URI to the distributed file system, which in turn, the distributed file system will retrieve the data.
+
+196
+00:34:05,875 --> 00:34:09,115
+ve bu dağda bir aday verici.
+
+197
+00:34:09,115 --> 00:34:13,376
+Tamamen, bu dağda bir aday verici.
+
+198
+00:34:13,376 --> 00:34:14,476
+Ve bu adaylar, bu adaylar.
+
+199
+00:34:15,635 --> 00:34:17,876
+Ve bu adaylar,
+
+200
+00:34:18,036 --> 00:34:24,695
+bu adaylar,
+
+201
+00:34:24,695 --> 00:34:26,056
+bu adaylar.
+
+202
+00:34:27,743 --> 00:34:33,743
+Ve dağıtık veri işlemiyemle.
+
+203
+00:34:26,483 --> 00:34:51,703
+Data that is in the order of hundreds gigabyte and data in the order of terabytes, okay, or data in the order of petabytes. And usually this data is read-only data, which means that so we do not go back and change the data. We do not go back and update the data.
+
+204
+00:34:52,244 --> 00:34:56,784
+So, these distributed file systems are not operational databases.
+
+205
+00:34:56,784 --> 00:35:03,784
+So, what is an operational database? You can think of MySQL or Oracle or...
+
+206
+00:35:04,851 --> 00:35:25,572
+MS SQL, all these are operational databases because you can change, these are designed for low latency when you want to change the value of data, when you want to change the table structure, etc. You can all do that, okay?
+
+207
+00:35:25,572 --> 00:35:32,251
+But when you talk about the distributed FOIL file system, these are designed to keep
+
+208
+00:35:32,563 --> 00:35:51,563
+Only the read-only data. Okay. The updates on the distributed file systems is very rare. Almost you don't encounter such cases. Okay. Okay. What kind of data then we are talking about? For example, think of the...
+
+209
+00:35:51,568 --> 00:35:55,608
+Application Server Log Files.
+
+210
+00:35:56,228 --> 00:35:58,088
+So what is an Application Server?
+
+211
+00:35:58,228 --> 00:36:01,408
+For example, ISS Server is an Application Server.
+
+212
+00:36:01,856 --> 00:36:29,716
+Apache Tomcat Server is an application server. So what do we do with these application servers? We are running web applications, right? And every time when you access to your web application, okay, these application servers create log files, okay? And obviously in time, these log files become large enough so that when you want to process such large log files,
+
+213
+00:36:57,856 --> 00:37:03,716
+They are designed in order to store read-only data.
+
+214
+00:37:05,204 --> 00:37:13,364
+And on such data, on such file systems, read operations and append operations are common.
+
+215
+00:37:13,624 --> 00:37:15,304
+So what does append operation mean?
+
+216
+00:37:15,684 --> 00:37:24,184
+If you were, so let's say, so you store 100 log files, okay, that belong to the previous months.
+
+217
+00:37:24,524 --> 00:37:33,184
+And if you store an additional log file, what you do, you append the new coming log file to the existing log files.
+
+218
+00:37:33,204 --> 00:37:36,364
+that is available on the distributed file system.
+
+219
+00:37:36,364 --> 00:37:37,304
+Okay.
+
+220
+00:37:46,164 --> 00:37:47,764
+Distributed file systems
+
+221
+00:37:48,307 --> 00:37:54,128
+Bu çunçluğun çunçluğun çunçluğunu
+
+222
+00:37:54,128 --> 00:38:00,568
+ve çunçluğun çunçluğunu
+
+223
+00:38:00,568 --> 00:38:03,007
+64 MB'de
+
+224
+00:38:03,007 --> 00:38:03,668
+birçok
+
+225
+00:38:03,668 --> 00:38:04,347
+ama
+
+226
+00:38:04,347 --> 00:38:05,967
+bu çunçluğun çunçluğunu
+
+227
+00:38:05,967 --> 00:38:09,208
+çunçluğunu
+
+228
+00:38:09,208 --> 00:38:11,867
+ama
+
+229
+00:38:11,867 --> 00:38:13,907
+çunçluğun çunçluğunu
+
+230
+00:38:14,675 --> 00:38:19,216
+And usually, each chunk is replicated two or three times.
+
+231
+00:38:20,596 --> 00:38:20,735
+Okay.
+
+232
+00:38:21,855 --> 00:38:32,935
+And when we do the replication, okay, distributed file systems, they are trying to keep the replicas in different regs.
+
+233
+00:38:33,576 --> 00:38:35,435
+So why do we do that?
+
+234
+00:38:35,815 --> 00:38:39,096
+So remember, so what reg is.
+
+235
+00:38:39,583 --> 00:39:06,703
+Okay, so here you see the examples of rackcabins. Okay, now this distributed file system, when it does a replication of a chunk, it stores on different racks. It does not store on the same rackcabin. The reason is that all these Linux boxes, they are connected with a switch for each rackcabin, and they are going out to the network through that switch.
+
+236
+00:39:07,583 --> 00:39:30,507
+bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda
+
+237
+00:39:36,500 --> 00:39:50,139
+Now, in a distributed file system, so we have the chunk server, and there is another server which we call masternode or namenode. In Hadoop distributed file system, it's called namenode.
+
+238
+00:39:51,139 --> 00:40:00,539
+Okay, now what this masternode is doing, it stores metadata about where the files are stored.
+
+239
+00:40:01,739 --> 00:40:01,880
+Okay.
+
+240
+00:40:02,547 --> 00:40:11,207
+It keeps track of each file and the locations of the blocks that belong to that file.
+
+241
+00:40:12,851 --> 00:40:40,851
+So, what happens here, if you want to access to a file which is stored in the distributed file system, first you interact with the master node, okay, and you give the URI to the master node, and the master node has the list of blocks, okay, that contain the blocks of this file, and it...
+
+242
+00:40:40,851 --> 00:40:54,671
+Gives back the location of the chunk servers that has the blocks that belong to that file. It gives back to who? The client library of the distributed file system. Okay?
+
+243
+00:40:56,531 --> 00:40:57,131
+Now,
+
+244
+00:40:59,443 --> 00:41:03,403
+So this means that every distributed file system has a client library.
+
+245
+00:41:03,663 --> 00:41:10,923
+So which means that so when we use Hadoop distributed file system, we are going to use Hadoop distributed file systems client library.
+
+246
+00:41:10,923 --> 00:41:19,703
+Okay. And that that library so it provides the transparency, which means that it hides.
+
+247
+00:41:20,275 --> 00:41:44,555
+How the data is retrieved from the chunk servers. From the user perspective, we have two methods. One is put and the other one is get. Okay. So the put method is basically stores the data into these chunk servers and get method is responsible for retrieving the file from the distributed file system.
+
+248
+00:41:45,076 --> 00:41:59,576
+So what client library is doing is first the client library when a URI is given to client library, client library interacts with the master node, says that okay given the URI please give me the list of blocks that belong to this file.
+
+249
+00:41:59,996 --> 00:42:10,635
+And the master node gives the list of the blocks and the IP addresses of the chunk servers that stores these blocks to client library.
+
+250
+00:42:10,992 --> 00:42:20,632
+Then the client library interacts with those chunk servers separately and retrieves the blocks from those chunk servers.
+
+251
+00:42:21,632 --> 00:42:36,751
+And when all the blocks are retrieved, then the client library merges all these blocks on that location and gives the file back to the user.
+
+252
+00:42:39,731 --> 00:42:51,592
+So therefore, the client library first talks to the master node to find out where the chunk servers are and then connect it direct to the chunk servers to access the data.
+
+253
+00:42:53,204 --> 00:43:07,084
+Now, one thing about the master node, the master node obviously, so we provide persistency and availability by replicating the data chunks on multiple chunk servers.
+
+254
+00:43:07,084 --> 00:43:21,144
+And also, usually the master node is also replicated because the master node is our only way to know where all the data blocks are located corresponding.
+
+255
+00:43:21,204 --> 00:43:22,204
+bir file.
+
+256
+00:43:22,204 --> 00:43:23,204
+Ok?
+
+257
+00:43:23,204 --> 00:43:27,204
+So therefore, the system is…
+
+258
+00:43:27,204 --> 00:43:32,204
+In order for the system to be persistent, masternode also needs to be replicated.
+
+259
+00:43:55,956 --> 00:44:04,596
+Let's now talk about the MapReduce Programming Model.
+
+260
+00:44:05,316 --> 00:44:18,596
+Because we said that first we need to talk about the file system, distributed file system, that is required in order to process...
+
+261
+00:44:39,635 --> 00:44:50,536
+Okay, before I explain to you how the MapReduce programming model works, first you need to understand a specific problem.
+
+262
+00:44:50,756 --> 00:44:59,115
+So let us talk about a problem at hand so that you can have a better idea how MapReduce programming model solves this problem.
+
+263
+00:45:00,788 --> 00:45:13,887
+Now, let's say we have a huge text document. Now, this text document has a size in the order of, let's say, 100 gigabytes. That's way too big.
+
+264
+00:45:14,827 --> 00:45:22,667
+Now, what we want to do, we want to count the number of each distinct word in this file.
+
+265
+00:45:23,092 --> 00:45:49,672
+Okay, which means that let's say, so it may have 1000 distinct words in it. Okay, 1000 distinct words in it. And so what the problem is here is that for every distinct word, so I need to find how many times that it appears in that particular document. Okay, now.
+
+266
+00:45:50,612 --> 00:45:58,892
+Now, this problem, you may encounter this problem in different applications.
+
+267
+00:46:40,052 --> 00:46:44,312
+But the size of that log file will be in the order of 100 gigabytes.
+
+268
+00:46:44,952 --> 00:46:45,052
+Okay.
+
+269
+00:46:45,272 --> 00:46:58,732
+So therefore, in order to count the distinct URL that exists in that log file, it's the same problem as I just, which is the word count problem that I just told you.
+
+270
+00:46:59,292 --> 00:46:59,432
+Okay.
+
+271
+00:47:00,232 --> 00:47:06,492
+Another problem from the real life is the statistics, term statistics for search.
+
+272
+00:47:54,516 --> 00:47:54,976
+Ok?
+
+273
+00:47:55,476 --> 00:48:04,916
+Now, in order to do that, this time, instead of looking at the log file, you are going to look at the log file that belongs to specific to the search application.
+
+274
+00:48:05,496 --> 00:48:05,576
+Okay.
+
+275
+00:48:05,936 --> 00:48:14,956
+And this time, in that search application, in the log file of that search application, you are going to count the distinct keywords.
+
+276
+00:48:15,876 --> 00:48:16,056
+Okay.
+
+277
+00:48:16,196 --> 00:48:22,156
+How many times each distinct keyword that was searched on that search box.
+
+278
+00:48:22,756 --> 00:48:22,896
+Okay.
+
+279
+00:48:23,476 --> 00:48:27,556
+Now, this problem is the same problem as the word count problem that I just told you.
+
+280
+00:48:28,216 --> 00:48:28,336
+Okay.
+
+281
+00:48:28,636 --> 00:48:33,016
+Now, we need to find a solution to this problem.
+
+282
+00:48:34,636 --> 00:48:35,316
+Okay.
+
+283
+00:48:35,556 --> 00:48:43,936
+Now, let's consider the case where the pile is too large for the memory.
+
+284
+00:48:44,656 --> 00:48:44,816
+Okay.
+
+285
+00:48:45,316 --> 00:48:49,976
+The pile is in the order of, the size of the pile is in the order of.
+
+286
+00:48:50,483 --> 00:49:09,304
+100 GB. Now, this way too big for the physical memory. But the size of the keyword count pairs, distinctive keyword count pairs is not that big. It can fit into physical memory.
+
+287
+00:49:10,683 --> 00:49:15,523
+The number of distinctive keywords that appear in that huge file.
+
+288
+00:49:15,987 --> 00:49:22,987
+ve
+
+289
+00:49:22,987 --> 00:49:33,987
+bu
+
+290
+00:49:33,012 --> 00:49:37,212
+And you can read the data on the disk.
+
+291
+00:49:37,652 --> 00:49:49,532
+And as you read it, every time you encounter a keyword, you can put into this table in the key section.
+
+292
+00:49:50,072 --> 00:49:57,712
+And if the keyword exists in the hash table, then what you need to do, you need to increment the number of counts.
+
+293
+00:49:58,012 --> 00:49:58,612
+Okay.
+
+294
+00:49:59,012 --> 00:50:00,000
+If you don't have that.
+
+295
+00:50:00,675 --> 00:50:12,675
+bu
+
+296
+00:50:00,000 --> 00:50:06,000
+key in the table, then you will add that distinct keyword into your table.
+
+297
+00:50:06,559 --> 00:50:15,519
+Okay. And by doing so, you can scan all the log file, all through the log file that
+
+298
+00:50:15,519 --> 00:50:21,519
+sits on the physical disk and you can update the hash table. Okay. That's one solution. Okay.
+
+299
+00:50:22,835 --> 00:50:28,995
+The second case is that even the word count pairs do not fit in the memory.
+
+300
+00:50:30,155 --> 00:50:34,096
+Okay, so the file itself is way too large.
+
+301
+00:50:35,115 --> 00:50:43,995
+And also the word count pairs that you will extract, the distinct word count pairs that you will extract from this file is not...
+
+302
+00:50:52,403 --> 00:50:57,403
+Tamamen, bu işlemiyorsan bir şey var.
+
+303
+00:50:57,403 --> 00:51:00,403
+Bu işlemiyorsan bir şey var.
+
+304
+00:51:00,403 --> 00:51:04,403
+Ve diğer bir şey var.
+
+305
+00:51:04,403 --> 00:51:08,403
+Çünkü, bu işlemiyorsan bir şey var.
+
+306
+00:51:08,403 --> 00:51:16,403
+Bu işlemiyorsan bir şey var.
+
+307
+00:51:16,403 --> 00:51:19,723
+Or in the part that sits in the physical disk.
+
+308
+00:51:20,283 --> 00:51:20,323
+Okay.
+
+309
+00:51:20,843 --> 00:51:34,123
+So therefore, so we need to find a solution that can divide this data into multiple nodes and do this processing on multiple nodes in parallel.
+
+310
+00:51:34,123 --> 00:51:34,683
+Okay.
+
+311
+00:51:35,003 --> 00:51:43,923
+Now, I'm going to give a 10 minute break and then I will continue with case number two and then I will go into details of MapReduce program model.
+
+312
+00:51:45,268 --> 00:51:53,867
+Arkadaşlar, 10 dakika arıveriyorum. 10 dakika sonra ben şimdi saatimi çalıştırıyorum. Kaldığım yerden devam edeceğim.
+
+313
+01:02:25,427 --> 01:02:28,208
+Evet arkadaşlar, tekrardan merhaba. Sesim geliyor mu?
+
+314
+01:02:33,972 --> 01:02:34,412
+Oh.
+
+315
+01:02:48,851 --> 01:03:14,851
+Derse ilk seçeneğine katılmayanlar için tekrarlayayım. Şu anda kitabın ikinci çeptorunu konuşuyoruz. Şu anda gösterdiğim slide'ları hem dersin serfasında bulabilirsiniz hem dersin kitabının serfasında bulabilirsiniz. Aynı şekilde kitap yazarlarının da koymuş olduğu videolar var. Bunlardan da yararlanabilirsiniz arkadaşlar.
+
+316
+01:03:20,083 --> 01:03:38,083
+Okay. Now in the previous lecture, so we talked about the HDFS. Now I want to show you a couple more slides about the HDFS. Then I want to move to MapReduce. Here you see that...
+
+317
+01:03:38,291 --> 01:03:46,651
+So, clients here are actually the client libraries of the HDFS in this particular case.
+
+318
+01:03:46,651 --> 01:03:54,971
+Now, so what happens when a client library wants to access to a certain file?
+
+319
+01:03:55,411 --> 01:04:06,291
+It first asks the name node, okay, and name node tells the client which chunk servers that it needs to go in order to retrieve the block.
+
+320
+01:04:06,291 --> 01:04:08,291
+ve bu konuda bir aday var.
+
+321
+01:04:08,291 --> 01:04:12,291
+Ve bu konuda bir aday var.
+
+322
+01:04:12,291 --> 01:04:14,291
+Bu konuda bir aday var.
+
+323
+01:04:14,291 --> 01:04:16,291
+Aslında bu aday var.
+
+324
+01:04:16,291 --> 01:04:25,324
+Bu aday var.
+
+325
+01:04:25,780 --> 01:04:42,912
+Bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölgesi, bu bölges
+
+326
+01:04:42,911 --> 01:05:04,811
+Now, here you can see in a better way. So, this is another picture. As you see here, I have eight different data nodes. Now, in the name node, you see the metadata. Here is the name of the file name. So, in this particular case, so this is the file name.
+
+327
+01:05:05,199 --> 01:05:09,059
+So, et cetera, et cetera, part zero.
+
+328
+01:05:09,579 --> 01:05:09,699
+Okay.
+
+329
+01:05:10,239 --> 01:05:17,879
+And it tells you the number of replicas that each block of this file will have, which is in this case two.
+
+330
+01:05:18,440 --> 01:05:22,440
+And it tells you the blocks that belong to part zero.
+
+331
+01:05:22,440 --> 01:05:26,579
+So you see one and three blocks belongs to part zero.
+
+332
+01:05:27,179 --> 01:05:33,199
+And you see here one and three that belongs to part...
+
+333
+01:05:33,199 --> 01:05:41,519
+Zerom. And you can see that one and three has to be two replicas. One is here and second one is here.
+
+334
+01:05:41,920 --> 01:05:46,600
+And three also needs to have two replicas, three and three.
+
+335
+01:05:46,600 --> 01:06:01,820
+And also, in addition to this, this metadata has also the locations of the chunk servers, IP addresses of each of these blocks are located.
+
+336
+01:06:02,340 --> 01:06:09,920
+And here you see that for the second file, the blocks of the second file needs to have three replicas.
+
+337
+01:06:26,356 --> 01:06:43,916
+And so when the client interacts with a file, first it goes to the name node, it gets the locations of the chunk servers, and then it directly communicates the corresponding chunk servers to read the data.
+
+338
+01:06:44,436 --> 01:07:02,056
+And you can either do a get operation or you can do a create operation. So when you put a file into the system, so first you need to take the URI and the name note will tell you which locations that you need to write. Okay. And the client actually is writing.
+
+339
+01:07:02,547 --> 01:07:08,007
+And the name node is responsible doing the replication operations.
+
+340
+01:07:08,267 --> 01:07:14,667
+It is keeping track of how many times that a block needs to be replicated.
+
+341
+01:07:15,407 --> 01:07:25,607
+So therefore, it tells the chunk server that it needs to replicate the block to another server, and it gives the ID, IP address, etc.
+
+342
+01:07:26,067 --> 01:07:30,547
+Okay, so the orchestration is done by the name node.
+
+343
+01:07:30,547 --> 01:07:39,067
+We already discussed all this in the previous lecture.
+
+344
+01:07:39,067 --> 01:07:45,067
+So let's go back to our slides.
+
+345
+01:07:56,755 --> 01:08:06,496
+Okay, now the case two, so this time, so we don't have the luxury of fitting the word count pairs into physical memory.
+
+346
+01:08:06,496 --> 01:08:18,496
+Okay, now without MapReduce model, if you were to solve this problem in Linux, so one thing you can do, you can divide the...
+
+347
+01:08:43,275 --> 01:08:47,275
+Bu konularını işlemiyendo bir şey yapmak.
+
+348
+01:08:42,228 --> 01:08:49,688
+Which means that every word will be written in the console into a separate line.
+
+349
+01:08:49,688 --> 01:08:50,347
+Okay.
+
+350
+01:08:50,708 --> 01:08:53,087
+So it dumps the keywords.
+
+351
+01:08:53,368 --> 01:08:53,688
+Okay.
+
+352
+01:08:54,087 --> 01:08:55,507
+Into the console.
+
+353
+01:08:55,948 --> 01:08:58,247
+Console line by line.
+
+354
+01:08:59,247 --> 01:09:00,128
+Okay.
+
+355
+01:09:00,448 --> 01:09:00,887
+Now.
+
+356
+01:09:02,068 --> 01:09:14,327
+If you do this, okay, if you have or operation here in Linux, which means that the output of this Linux command will be given to another Linux command as an input.
+
+357
+01:09:14,648 --> 01:09:22,887
+So this is another Linux command. So what this does is that, so given the list of things,
+
+358
+01:09:23,279 --> 01:09:27,920
+It can sort these things in a lexicographical order.
+
+359
+01:09:28,699 --> 01:09:28,779
+Okay.
+
+360
+01:09:29,279 --> 01:09:36,500
+So, which means that it's going to retrieve all the words.
+
+361
+01:09:36,899 --> 01:09:37,199
+Okay.
+
+362
+01:09:37,680 --> 01:09:42,920
+And it's going to sort these words based on lexicographical order.
+
+363
+01:09:42,920 --> 01:09:46,180
+So, and it's going to group together.
+
+364
+01:09:46,591 --> 01:09:51,911
+Bu da aynı kiyosu.
+
+365
+01:09:52,991 --> 01:09:53,511
+Ok.
+
+366
+01:09:53,511 --> 01:09:58,991
+İlk başta A'dan da aynı kiyosu.
+
+367
+01:09:58,991 --> 01:09:59,871
+Atıcı b'inçü.
+
+368
+01:09:59,871 --> 01:10:02,711
+Ander b'inçü.
+
+369
+01:10:02,711 --> 01:10:06,711
+İlk başta A'dan da aynı kiyosu.
+
+370
+01:10:06,711 --> 01:10:08,711
+Ve bu kiyosu.
+
+371
+01:10:08,711 --> 01:10:10,711
+İlk başta A'dan da aynı kiyosu.
+
+372
+01:10:10,711 --> 01:10:11,711
+Ok.
+
+373
+01:10:12,148 --> 01:10:21,188
+Now, sort is grouping together these keywords and dumping its output to another Linux command.
+
+374
+01:10:21,188 --> 01:10:29,948
+So this command is unique. It takes the input that comes from the previous Linux command.
+
+375
+01:10:31,328 --> 01:10:37,984
+And what it does is that it takes the unique...
+
+376
+01:10:37,984 --> 01:11:04,224
+A key word from each group and also unique has different options. One of them is a C option, which stands for count. Okay. It takes the each group that it encounters and it takes the unique keyword that represents that group. And also it dumps the number of times that unique keyword appears in that group.
+
+377
+01:11:04,543 --> 01:11:30,224
+Okay, now start, so say the keyword apple. Okay, so the sort will sort the apples next to each other. It will group all the apple keywords next to each other. Let's say there are six of them. What unique is going to do, it's going to take the apple as the unique representative of that group and it's going to write the count of it. Okay.
+
+378
+01:11:31,636 --> 01:11:48,816
+Now, you see there is a pipeline. The first thing extracted what we cared about, what we care about is the words, right? Because we are trying to do the word count. Now, the second thing is actually sorted these words, group them together.
+
+379
+01:11:50,064 --> 01:12:09,344
+And the third process basically took the, it takes the groups of the same words and it reduces into one word and it also takes the count of those each unique groups.
+
+380
+01:12:09,344 --> 01:12:10,144
+Okay.
+
+381
+01:12:10,739 --> 01:12:28,859
+Now, this pipeline actually captures the idea of MapReduce, which means that what we are going to do, we are going to, when we look at the problems, we are going to say that, okay, we need to divide this processing into two parts.
+
+382
+01:12:29,779 --> 01:12:35,699
+So first, we are going to extract what we care about from the input file.
+
+383
+01:12:36,047 --> 01:12:56,887
+And then at last, what we are going to reduce the operation, okay, after we take the output of the first process, we are going to process them and reduce it into the result, okay?
+
+384
+01:12:56,887 --> 01:12:59,727
+Let's see how we are going to do that, okay?
+
+385
+01:13:01,779 --> 01:13:08,600
+In the example that I have shown you, the first step was the Linux command verse.
+
+386
+01:13:08,600 --> 01:13:15,559
+And what it does is that it takes, it extracts what we care about from the first document.
+
+387
+01:13:16,819 --> 01:13:26,959
+In MapReduce programming model, the first function that we are going to implement is the met function is doing the same thing.
+
+388
+01:13:27,315 --> 01:13:37,075
+It will scan the input file, record at a time, and it will extract what we care about. In this particular case, what we care about is the words.
+
+389
+01:13:39,699 --> 01:13:46,800
+Now, the second step is done by the MapReduce Programming Platform.
+
+390
+01:13:47,479 --> 01:13:52,119
+It could be Hadoop, MapReduce Programming Platform.
+
+391
+01:13:52,119 --> 01:14:02,100
+It could be Spark, MapReduce Programming Platform, or any alternative or Apache Flink, MapReduce Programming Platform.
+
+392
+01:14:02,920 --> 01:14:05,680
+It could be a different platform.
+
+393
+01:14:06,159 --> 01:14:07,559
+It is done.
+
+394
+01:14:07,699 --> 01:14:18,020
+Bu platform itself, which is taking the result of map function and grouping together so that the reduce function can be applied.
+
+395
+01:14:18,739 --> 01:14:27,300
+Okay, now what the reduce function is doing, what reduce method is doing, exactly what unique is doing.
+
+396
+01:14:27,731 --> 01:14:40,891
+It is taking the groups of the same things and it is summarizing or aggregating or in this case it is find the count of them. It is transforming into something.
+
+397
+01:14:40,891 --> 01:14:52,731
+In other words, it is reducing the groups of the groups of things that are the same into some statistical result that we are interested in.
+
+398
+01:14:53,731 --> 01:14:54,011
+Okay.
+
+399
+01:14:54,496 --> 01:15:07,756
+Now, this is the essence of MapReduce. Now, we are going to learn this on the examples. Let's now take a look at this example.
+
+400
+01:15:09,836 --> 01:15:19,476
+Okay, here at the beginning, we have input key value pairs. Okay, now,
+
+401
+01:15:20,659 --> 01:15:31,920
+So, remember the file, when you put a file into, when you put a file into, so let's, let me go back.
+
+402
+01:15:35,923 --> 01:15:36,244
+Tamam.
+
+403
+01:15:40,659 --> 01:15:51,299
+Okay, when you put a file into a distributed file system, that file is divided into chunks and put into different chunk servers.
+
+404
+01:15:51,299 --> 01:16:06,920
+For example, let's say file C is divided into five chunks, okay, from C0 to C5. In fact, it's divided to six chunks.
+
+405
+01:16:08,659 --> 01:16:10,659
+bu çunçlar var.
+
+406
+01:16:10,659 --> 01:16:28,659
+Bu çunçlar var.
+
+407
+01:16:29,199 --> 01:16:48,559
+Now, this C0 has a unique identifier which the distributed file system keeps track of. Let's say this unique identifier is C0. And there is the content of the file, which is the value. Let's now come back here.
+
+408
+01:16:51,439 --> 01:16:52,039
+Okay.
+
+409
+01:16:53,524 --> 01:17:05,224
+Now, this K here, in this case, the unique identifier that belongs to that block, in this particular case, the key will be C0.
+
+410
+01:17:05,224 --> 01:17:09,804
+Okay. And the value is the content of that block.
+
+411
+01:17:10,547 --> 01:17:33,368
+And you can say that, for example, for file C, how many file blocks that I have for file C? Six blocks, which means that I will have from C0 to C5 six different keys and the values corresponding to those keys will be the content of those blocks. Perfect.
+
+412
+01:17:34,260 --> 01:17:54,180
+Now, what MapFunction is going to do, MapFunction is going to take this key value pair, okay, and it's going to take the content, which is value, and it's going to extract what we care about. What we care about in this word count example is the birds.
+
+413
+01:17:54,640 --> 01:18:10,000
+Okay, because remember what the word command is, word command in Linux command is doing, it is retrieving each keyword and it is dumping line by line.
+
+414
+01:18:10,520 --> 01:18:10,640
+Okay.
+
+415
+01:18:12,640 --> 01:18:15,120
+The map function is going to do the same thing.
+
+416
+01:18:15,444 --> 01:18:38,324
+It will retrieve each keyword, and it will also retrieve the count of that keyword, which in this case is 1, and it will create key value pairs. It will say, okay, Apple 1. And if it encounters Apple again, it will say Apple 1 again.
+
+417
+01:18:38,996 --> 01:18:55,236
+Okay, which means that line by line, it will read all the keywords, all the words within that block, and it will dump everything line by line, and as for the value, it will write one as for the value.
+
+418
+01:18:56,095 --> 01:19:04,275
+Okay, now the map function is going to create intermediate key value pairs. Out of what? Out of the initial block.
+
+419
+01:19:05,716 --> 01:19:06,316
+Okay.
+
+420
+01:19:09,171 --> 01:19:20,551
+Now, after the map function has completed its job, so as you see that I will have key value pairs that belongs to each block.
+
+421
+01:19:21,043 --> 01:19:41,423
+How many blocks do I have? Six. Okay. Considering the example that I gave you. So the file C has six blocks, which means that for six blocks, I will have a key value pairs that belong to each different block.
+
+422
+01:19:44,627 --> 01:19:53,227
+Then the next step is being done by the MapReduce Programming Platform itself.
+
+423
+01:19:53,227 --> 01:19:57,207
+It could be any implementation of MapReduce Programming Platform.
+
+424
+01:19:57,768 --> 01:20:04,268
+So what the platform is doing is basically doing the same thing as the Linux command sort is doing.
+
+425
+01:20:04,608 --> 01:20:10,948
+It's grouping together the key value pairs where the key value pair has the same key.
+
+426
+01:20:11,475 --> 01:20:22,075
+Let's now consider these as the key value pairs that comes from this particular block.
+
+427
+01:20:22,075 --> 01:20:25,036
+Okay, that comes from this particular block.
+
+428
+01:20:26,515 --> 01:20:43,056
+Now, what it's going to do, the MapReduce platform, what it's going to do, it's going to group together, okay, the values, key-value pairs, where the key is the same, okay?
+
+429
+01:20:43,615 --> 01:20:48,515
+And so when it's completed its job, then we will have something like this.
+
+430
+01:20:48,515 --> 01:20:54,435
+The first, for example, first key has three different values here.
+
+431
+01:20:54,515 --> 01:21:13,956
+There is one, there is one, and there is another one. The second keyword has two values. There is one and there is one. Now, once the group by key job is completed by the MapReduce platform, then
+
+432
+01:21:14,484 --> 01:21:30,004
+The next step is the reduce function. Okay. Now reduce function is implemented by the programmer. The map function is implemented by the programmer and the reduce function is implemented by the programmer.
+
+433
+01:21:30,684 --> 01:21:40,264
+Okay. Now what reduce function is going to do, it's going to take the intermediate key value pairs. Okay.
+
+434
+01:21:40,787 --> 01:21:48,688
+And it's going to do a function on the values. So here there are three values, right?
+
+435
+01:21:50,163 --> 01:22:05,304
+And these three values, okay, so in this case, our job is to count the number of times that each keyword appears on that document.
+
+436
+01:22:05,963 --> 01:22:11,283
+So therefore, the job is here, summation, okay, the function is summation.
+
+437
+01:22:11,283 --> 01:22:18,123
+So I need to sum all these values here, each of them is one. In that case, I will write three here.
+
+438
+01:22:18,163 --> 01:22:21,744
+In this particular case, I will write 2 here.
+
+439
+01:22:22,244 --> 01:22:33,404
+Now, remember, all these intermediary key value pairs is coming from one block.
+
+440
+01:22:34,683 --> 01:22:44,844
+And so therefore, this particular reducer is going to do the reduce job for all the keys that you retrieve.
+
+441
+01:22:45,844 --> 01:23:05,056
+Bu da bu
+
+442
+01:23:05,055 --> 01:23:16,895
+So here you have the keys, distinctive keys and the values, okay, which is the number of times that they appear in that particular document, okay?
+
+443
+01:23:17,344 --> 01:23:27,463
+Now, if you look at all that picture, so where do we implement? We implement the two things. We implement the map function and we implement the reduce function.
+
+444
+01:23:27,463 --> 01:23:38,164
+And the group by key, which is sorting and shuffling, which is sorting and putting together the same things by key, is done by the MapReduce programming platform.
+
+445
+01:23:39,956 --> 01:23:59,576
+Okay, now just to show you formally what I have just told you, okay, initially the programmer is responsible for specifying the map function and the reduce function, okay.
+
+446
+01:23:59,576 --> 01:24:06,655
+Now the map function is taking the key value pairs, in this particular case the key here, remember,
+
+447
+01:24:07,796 --> 01:24:20,615
+A key here is this particular block that belongs to file C, C0, okay? And value here is the content of that C0, okay?
+
+448
+01:24:21,072 --> 01:24:28,132
+And it will take this and it will, what it will do, it will produce intermediate key value pairs.
+
+449
+01:24:28,572 --> 01:24:35,452
+So as you see star here, which means that key prime and B prime pairs will be multiple.
+
+450
+01:24:35,935 --> 01:24:55,375
+Okay, so, and these intermediary keys are the things that we want to extract from this content. Okay, from the content, from this content, we want to extract the key, okay, which is in this case is the words.
+
+451
+01:24:56,083 --> 01:25:13,443
+Now, once the map function produces the intermediate key value pairs, what MapReduce programming platform is going to do, is going to put them together, and it will group them, and it will put them together just like this.
+
+452
+01:25:15,667 --> 01:25:26,087
+Okay, the pair, the first element in this pair will be key prime, and the second element will be the list of values.
+
+453
+01:25:26,367 --> 01:25:31,247
+So therefore you see star here because there will be multiple v prime values here.
+
+454
+01:25:31,828 --> 01:25:38,228
+Now, the reduce function will take this as input because this is done.
+
+455
+01:25:38,728 --> 01:25:46,168
+So, this pair is completed by the MapReduce programming platform and it is given to reduce function.
+
+456
+01:25:46,768 --> 01:25:52,048
+Now, the reduce function will take this and then it will produce this.
+
+457
+01:25:52,408 --> 01:25:53,188
+So, what is this?
+
+458
+01:25:53,188 --> 01:25:56,228
+It will produce the key prime.
+
+459
+01:25:56,851 --> 01:26:04,491
+It will produce multiple pairs where the initial element of the pair is the key prime.
+
+460
+01:26:04,491 --> 01:26:14,351
+And the second element of that pair is the result of a function, reduced function that I apply on the values.
+
+461
+01:26:14,963 --> 01:26:40,463
+For example, if you do count, okay, the function that we use in order for values were summation, okay? It could be multiplication, it could be taking average, so whatever. So it needs to be done at the reduced time, okay?
+
+462
+01:26:42,260 --> 01:26:49,920
+All the values with v' with the same key, key' prime, are reduced together, and this will be the result.
+
+463
+01:26:50,360 --> 01:27:03,140
+Now, as a result of this, I will have a list of distinctive keywords where the second pair of these distinctive keywords will be the number of times that they appear in the documents.
+
+464
+01:27:03,600 --> 01:27:07,020
+Okay, now this is how we show it formally.
+
+465
+01:27:08,787 --> 01:27:14,067
+Okay, now here we can see it in another illustration.
+
+466
+01:27:14,607 --> 01:27:16,127
+So let me make it bigger.
+
+467
+01:27:20,083 --> 01:27:42,663
+Now, here is the big document. And so when I store in HDFS, obviously this big document is stored as chunks. So this is the first chunk, second chunk, third chunk, and fourth chunk. Okay. And then, so I gave the input to the map function, which is
+
+468
+01:27:44,724 --> 01:27:56,484
+Programmed by the programmer. Okay. And map function will take this content as the value and the identifier of the first chart as the key.
+
+469
+01:27:56,979 --> 01:28:07,819
+And what it does, it will take the content, which is the value, and it will extract the words one by one.
+
+470
+01:28:08,059 --> 01:28:15,960
+It will extract the words one by one, and as the value for corresponding to these words, it will write just one.
+
+471
+01:28:17,179 --> 01:28:24,460
+It's not going to do the count thing. It will just extract from what we care about from the input file.
+
+472
+01:28:25,268 --> 01:28:32,087
+And all the map processes here, they will do the same.
+
+473
+01:28:33,547 --> 01:28:41,487
+And obviously, this is on another chunk server, this is on another chunk server, another chunk server, another chunk server.
+
+474
+01:28:41,627 --> 01:28:45,947
+So every chunk server is running the map process.
+
+475
+01:28:51,412 --> 01:29:11,412
+So, map function completes its job. Okay? So, what will happen is that the MapReduce Programming Platform, it will group them together. Okay? It will group them together so that...
+
+476
+01:29:12,916 --> 01:29:32,416
+The same keywords, okay, will appear next to each other, okay? And as you see, crew, so they are sorted in this order, and you can see all the keywords, the, sorted in this way, okay? And then,
+
+477
+01:29:33,108 --> 01:29:44,208
+The MapReduce Programming Platform will signal the reducers. In this particular case, I have three different reducers.
+
+478
+01:29:44,208 --> 01:29:59,988
+Here you see I have three different mappers and here I have three reducers and it will signal the reducers and it will tell each reducer that where they should go in order to retrieve their input data.
+
+479
+01:30:00,000 --> 01:30:09,300
+Okay, so the reducer itself, okay, is going to go and retrieve the data that it should take as an input.
+
+480
+01:30:09,876 --> 01:30:14,556
+So once it retrieves the data, then it will apply the reduce function.
+
+481
+01:30:14,676 --> 01:30:16,556
+So what was the reduce function in this case?
+
+482
+01:30:16,936 --> 01:30:17,756
+Sum operation.
+
+483
+01:30:18,235 --> 01:30:22,476
+And in this case, it will take the key values pairs,
+
+484
+01:30:22,855 --> 01:30:27,536
+which here have two values, and it will sum them.
+
+485
+01:30:27,876 --> 01:30:31,296
+And space, which has only one value, it will be one.
+
+486
+01:30:31,296 --> 01:30:37,876
+Then each of these reducers will dump the results in...
+
+487
+01:31:08,564 --> 01:31:12,884
+Okay, now how are we going to do this? And as a programmer,
+
+488
+01:31:13,391 --> 01:31:25,731
+Since we are using the, so one of the MapReduce programming platforms, okay, these platforms are hiding the complexities of the distributed programming, obviously.
+
+489
+01:31:26,231 --> 01:31:31,171
+So therefore, what we need to do, we need to implement the Mapper and the Reducer, okay.
+
+490
+01:31:31,771 --> 01:31:39,011
+Here, you see that for Mapper, I have here a four loop.
+
+491
+01:31:39,475 --> 01:32:04,844
+Bu bir soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu soru var, bu sor
+
+492
+01:32:05,524 --> 01:32:29,524
+Now, the reduce part, the reduce part will take key and values as input. Key will be a single word and the values will be an array of values. And as you see here, I implemented the reduce function. At the beginning, the result, which is the number of...
+
+493
+01:32:30,228 --> 01:32:37,228
+Bu konuda bir kere var.
+
+494
+01:32:37,228 --> 01:32:42,228
+İlk başta, bu konuda bir kere var.
+
+495
+01:32:42,228 --> 01:32:54,228
+Ve bu konuda bir kere var.
+
+496
+01:32:55,475 --> 01:33:00,475
+Bu dağıtık veri işlemiyeni ve dağıtık veri işlemiyeni.
+
+497
+01:33:00,475 --> 01:33:07,475
+Bu dağıtık veri işlemiyeni, bu dağıtık veri işlemiyeni.
+
+498
+01:33:08,275 --> 01:33:26,255
+Okay, so it is simple. It makes the programming for the developer so much simple. All you need to find out is what it needs to be written in the map file and what it needs to be written in the reduced file.
+
+499
+01:33:26,255 --> 01:33:35,255
+If you can figure that out, then you can use any MapReduce programming platform. Okay, you can use Hadoop, you can use Spark, or you can use...
+
+500
+01:33:36,275 --> 01:33:44,895
+Apache Link ve any other platform in order to run your application on distributed data.
+
+501
+01:33:48,851 --> 01:33:49,391
+Okay.
+
+502
+01:33:55,152 --> 01:34:11,851
+Sometimes if we have a, so I will come back to this later because it's related with how you distribute the intermediate key value pairs to reducer.
+
+503
+01:34:12,391 --> 01:34:14,112
+So I will come back to that.
+
+504
+01:34:15,192 --> 01:34:15,551
+And
+
+505
+01:34:18,739 --> 01:34:37,559
+Just look at this example. So this is another example. So this time, the problem is count the number of times each five word sequels occurs in a large corpus of documents. Five word sequels. So what it means is that, so you have
+
+506
+01:34:38,547 --> 01:35:03,608
+First keyword, for example, Apple, School, Car, Object, Water. I just told you five different keywords. And so this is a five word sequence. Okay. And if you see the sequence in that document, how many times do you see this unique sequence in that document? Now, this is the question.
+
+507
+01:35:04,083 --> 01:35:16,444
+And this time in the map function, instead of extracting every word at a time, so this time we are going to extract five word sequels at a time.
+
+508
+01:35:16,864 --> 01:35:23,364
+Okay, so because the problem says that I want the number of counts each five word sequence.
+
+509
+01:35:23,604 --> 01:35:28,083
+So therefore, so we need to extract five word sequences from the document.
+
+510
+01:35:28,083 --> 01:35:32,083
+And then in the reduce function, it will be.
+
+511
+01:35:32,083 --> 01:35:35,404
+The same as the word count example this time.
+
+512
+01:35:35,724 --> 01:35:38,864
+So I'm going to do the, again, summation operation.
+
+513
+01:35:39,284 --> 01:35:44,564
+I'm going to add the number of ones that appear in the values array.
+
+514
+01:35:46,304 --> 01:35:48,764
+Okay, so that's another example.
+
+515
+01:35:59,988 --> 01:36:06,587
+I'm hoping now you have sort of an understanding of MapReduce Programming Model.
+
+516
+01:36:07,108 --> 01:36:11,587
+Obviously, when you do your term project, you will have much better understanding.
+
+517
+01:36:12,367 --> 01:36:21,167
+But let me continue and explain to you how the MapReduce Programming Platform is doing the scheduling and the data flow.
+
+518
+01:36:21,167 --> 01:36:22,367
+Okay.
+
+519
+01:36:26,131 --> 01:36:26,591
+No.
+
+520
+01:36:27,024 --> 01:36:32,024
+Here is another diagram that shows how the things are being done.
+
+521
+01:36:32,463 --> 01:36:41,243
+Here you have your big document and you store into HDFS, into a distributed file system.
+
+522
+01:36:41,243 --> 01:36:46,884
+So your big document is stored as chunks, even though their sizes are different here.
+
+523
+01:36:47,203 --> 01:36:50,323
+Just consider that their size are the same.
+
+524
+01:36:50,823 --> 01:36:54,663
+For the sake of this problem, just think of that.
+
+525
+01:36:55,024 --> 01:36:58,963
+So all the sizes of the blocks of the document is the same.
+
+526
+01:36:59,891 --> 01:37:10,112
+Now, you see that every chunk of this document is stored on a different chunk server, and there is a map function that runs on each chunk server.
+
+527
+01:37:10,591 --> 01:37:18,331
+Now, what map function is going to do is going to extract the words that appear in that chunk.
+
+528
+01:37:18,711 --> 01:37:27,591
+As you see, so one word, and there will be value. The second word, there will be value. Third word, there will be value. And the value in this case is only one.
+
+529
+01:37:27,891 --> 01:37:54,032
+Okay. And I'm giving you the word count example, but you can think other examples as well. You can think of the five word sequels example as well. Okay. In that case, the keyword here will be five word sequels and the value again will be the one. Okay. Now, once every map function, okay.
+
+530
+01:37:55,412 --> 01:38:21,119
+Yeni Y
+
+531
+01:38:21,119 --> 01:38:42,299
+Arkadaşlar, her bir chunk server üzerinde iki tane storage oluyor. Yani bir tanesi lokal storage. Bu bizim kendi kullandığımız normal hard drive. Bir de sonuçta bunun üzerinde ne var? Bir Linux işletim sistemi var. Bu işletim sistemi üzerine ben neyi kuruyorum? HDFS'i kuruyorum.
+
+532
+01:38:49,119 --> 01:38:54,419
+File System tek notluk da olabilir, multi notluk bir distributed file sistem de olabilir.
+
+533
+01:38:55,648 --> 01:39:18,328
+Şimdi ben bu bir faili bu distributed file sisteme yüklediğim zaman benim drive'ım içerisindeki, benim Linux box'ım içerisindeki distributed file sistem kısmına yüklenecek ve distributed file sistem benim yüklemiş olduğum dosyayı çanklara ayırıp çok sayıda not üzerine kopyalayacak.
+
+534
+01:39:19,123 --> 01:39:33,563
+Ama ben bu koyacağım şeyi, lokal storage'a koyacağım zaman ne yapmayacağım? Bunun replikalarını başka yerlerde yaratmayacağım. Sadece o anda mapper'ın çalışmış olduğu noktaki lokal diske yükleyeceğim.
+
+535
+01:39:35,703 --> 01:39:45,783
+Now, the map process is going to store the intermediate key value pairs on the local storage, not on the distributed file storage.
+
+536
+01:39:46,579 --> 01:40:02,380
+Okay. Now, what the MapReduce programming platform is going to do, it's going to do for every chunk server, it's going to put together.
+
+537
+01:40:03,155 --> 01:40:26,676
+Okay, it's going to put together the key value pairs where the key is the same. So here you see that. So this is a key values pair, key values pair, key values pair. Okay. Now this group operation, grouping operation, and is being done on the chunk server where the mapper is being run. Okay.
+
+538
+01:40:27,699 --> 01:40:40,239
+Now, once the grouping by key operation gets completed, okay, what's going to do, Mapper will signal the name node and tells that, okay, I'm done.
+
+539
+01:40:40,916 --> 01:40:46,655
+You can call the reducer to get the values of intermediate key value pairs.
+
+540
+01:40:47,195 --> 01:40:50,756
+And the name node is going to notify the reducer.
+
+541
+01:40:51,296 --> 01:40:59,115
+And the reducer will go and copy the key value pairs that it's responsible to process.
+
+542
+01:40:59,655 --> 01:41:07,956
+It will go and retrieve the key values pair into the chunk server where the reducer is running.
+
+543
+01:41:08,404 --> 01:41:17,184
+Now, you have the key values pair where each reducer is responsible on the chunk server where the reducer is running.
+
+544
+01:41:17,908 --> 01:41:38,228
+Okay, then what reducer is going to do is going to, so in this particle case in the reduce function, so we have the summation, it's going to add the numbers together and it's going to produce the result as a key value pair.
+
+545
+01:41:39,252 --> 01:41:53,692
+Okay, now let's take a look at, so this is another illustration of the same thing. In this particular case, I have five different chunk servers. Okay, now.
+
+546
+01:41:55,123 --> 01:42:23,123
+So, in this particular case, so here is the, here in this chunk server, I have three different chunks, okay? And as I said, so for every chunk, I have one mapper, okay? So what mapper is going to do is going to produce these key value pairs, okay? And there is this partitioning function, okay, which is responsible.
+
+547
+01:42:23,123 --> 01:42:29,123
+Bu konuda bir parçası var.
+
+548
+01:42:29,123 --> 01:42:33,123
+Bu parçası, bu parçası var.
+
+549
+01:42:33,123 --> 01:42:35,123
+Bir parçası var.
+
+550
+01:42:35,123 --> 01:42:39,123
+Bu parçası var.
+
+551
+01:42:39,796 --> 01:42:50,416
+It will take, the hash function will take the key one as a key and it will produce value which will be the number for the reducer.
+
+552
+01:42:51,056 --> 01:43:01,195
+Okay, so the reducer number is the reducer number four. I have five different reducer. It produced the reducer number four.
+
+553
+01:43:07,796 --> 01:43:27,796
+It will signal the name node and name node will tell the reducer number four that it should go to map chunk server number one and retrieve the key value pairs that belongs to, so where the key is key one.
+
+554
+01:43:28,180 --> 01:43:41,560
+Okay. And it will be the same for all the reducers. Reducers will be responsible for going to the chunk server where the MapReduce map task is running and retrieve the key value pairs. Okay.
+
+555
+01:43:42,836 --> 01:44:02,036
+Now, here you see that once the keys that corresponding to certain reducer is retrieved, and so the certain grouping is being done, and then the reducer is going to process these key values pair and produces, will produce the results.
+
+556
+01:44:02,612 --> 01:44:10,612
+The results of the reduced function will be written into distributed file storage, not the local storage.
+
+557
+01:44:12,071 --> 01:44:27,491
+Tekrar edecek olursak arkadaşlar, burada 5 tane kurulumu olan bir tane HDFS görüyorsunuz. Bu 5 tanenin üzerinde ben elimdeki file'ı dağıtmışım.
+
+558
+01:44:27,923 --> 01:44:35,923
+Bu file'ın öyle bir denk gelmiş ki chunkları 3 tane sunucu üzerine gelmiş.
+
+559
+01:44:35,923 --> 01:44:37,324
+Chunk server üzerine gelmiş.
+
+560
+01:44:37,908 --> 01:45:01,888
+Ve ben her bir chunk için bir tane map fonksiyonum olacağını konfigüre etmişim. Bu map fonksiyonları bu chunklar üzerinde çalışıyor ve intermediate key value paylerini oluşturuyor. Yalnız bu intermediate key value paylerini tekrardan bu chunk server üzerinde duran HDFS'e yazmıyorlar, local storage'e yazıyorlar.
+
+561
+01:45:02,804 --> 01:45:16,944
+Bu işlem bittikten sonra, şurada partitioning fonksiyon denilen kısımda her bir mapper aslında gidiyor nameNode'a soruyor. Diyor ki ben işlemimi bitirdim.
+
+562
+01:45:17,460 --> 01:45:31,899
+Bu partitioning fonksiyon dediğimiz şey bir hash fonksiyonu. Bu işi yapan name. Burada gösterilmemiş. Bu işi ne yapıyor? Map fonksiyon, mapper işini bitirdikten sonra
+
+563
+01:45:33,268 --> 01:45:43,688
+Bu mapperın bitirmiş olduğu her bir key value pairleri hangi reducerın alacağını name fonksiyonu, hash fonksiyonu ile belirliyor.
+
+564
+01:45:43,688 --> 01:45:57,748
+Ve gidiyor reducerlara diyor ki senin responsible olduğun key value pairleri işte birinci chunk serverda buradaki örnekte mesela bir ikinci chunk server bir de üçüncü chunk server.
+
+565
+01:45:57,927 --> 01:46:00,568
+Ne için bu mesela? K4 için.
+
+566
+01:46:01,268 --> 01:46:25,548
+Bir kısmı burada, bir kısmı burada. Git diyor, K4 ile ilgili T-value pairlerini ilgili chunk serverlardan al. Reducer bunu alıyor ve burada bunu getirdikten sonra burada Sort and Group işlemi gerçekleşiyor. Bunu da yine MapReduce programın platformu gerçekleştiriyor. Kullandığımız Hadoop.
+
+567
+01:46:25,920 --> 01:46:50,840
+Apache, Spring, Spark hangi platformu kullanıyorsak bu gerçekleştiriyor. Ondan sonra bizim yazmış olduğumuz Reduce fonksiyonu bu gruplandırılmış olan aynı key'e sahip olan key values paylerini alıp onun üzerinde biz Reduce fonksiyonunda ne yazdıysak onu yapıyor. Reduce fonksiyonunda eğer biz toplama yaptıysak toplamayı gerçekleştiriyor ve sonucu yazıyor.
+
+568
+01:46:51,636 --> 01:47:13,996
+En nihayetinde her bir reducerun oluşturmuş olduğu sonucu HDFS'e yazıyoruz. Yani distributed file storage'e yazıyoruz. Tekrardan lokal storage'e yazmıyoruz. Çünkü neden? Çünkü elde ettiğimiz sonuçlar bizim için önemli. Reliable bir storage'e yazmamız lazım. Input file'larımız da bizim için önemliydi. Bunu da reliable storage'e yazmamız lazım.
+
+569
+01:47:15,828 --> 01:47:31,708
+Aradaki MapReduce Programming platformumun kullanmış olduğu bu Intermediate Key Value Pair'leri local storage'a yazıyor. Çünkü bunları ileride kullanmayacağımız için bunların Distributed File Storage'a yazılmasının bir anlamı yok.
+
+570
+01:47:43,828 --> 01:47:53,608
+Bu mapperların yeniden başka bir chunk server üzerinde çalıştırılması gerekiyor. Bunu da takip eden NameNote. NameNote her bir mapperın idle durumda mı?
+
+571
+01:47:53,967 --> 01:48:18,668
+Çalışmakta mı yoksa yaptığı işi bitirmiş mi olduğunu takip ediyor. Eğer olur da bu mapperların çalışmış olduğu joblarda bir sıkıntı varsa bu durumda ya bunlar yaptıkları işi tamamlamışlar mı, idle mı yahut da şu anda devam etmektedirler mi durumlarına göre tekrardan o mapparı başka chunk server üzerinde yaratıyor.
+
+572
+01:48:19,024 --> 01:48:27,704
+Ama nerede yaratıyor? Mutlaka bu fail olan chunk serverdeki blokların kopyalarının olduğu chunk serverlerde yaratıyor.
+
+573
+01:48:39,539 --> 01:49:06,779
+So what we said is the MapReduce Programming Platform. So what MapReduce Programming Platform takes care of first partitioning the input data because MapReduce Programming Platform is working with a distributed file storage and distributed file storage is partitioning the data into chunks. Okay. And the second thing it does is that it schedules the mappers and the reducers. Okay.
+
+574
+01:49:07,539 --> 01:49:16,619
+In the platform, all you need to define how many mappers that you need to execute and how many reducers that you want to run.
+
+575
+01:49:16,819 --> 01:49:23,460
+Okay. And the scheduling of the mappers and the reducers is being done by the MapReduce environment.
+
+576
+01:49:24,539 --> 01:49:31,659
+And performing the group by key step is also done by the MapReduce platform.
+
+577
+01:49:32,404 --> 01:49:50,724
+And if a node fails, okay, running the map and reducer jobs on different nodes is handled by the MapReduce platform, okay? As a developer, we are not responsible for handling the failures.
+
+578
+01:49:51,384 --> 01:49:59,524
+And managing the inter-machine communication, for example, when the mapper task gets completed,
+
+579
+01:50:00,000 --> 01:50:10,720
+MapReduce sends a signal to the name node, and the name node signals the reducer telling that, okay, this is the IP address that it should go and retrieve the key values pair.
+
+580
+01:50:11,380 --> 01:50:19,500
+And so this inter-machine communication is handled by the MapReduce platform.
+
+581
+01:50:20,500 --> 01:50:21,200
+Okay.
+
+582
+01:50:23,412 --> 01:50:50,592
+Again, input and final outputs are stored in the distributed file system. I just told you that. Okay. But the intermediate results are stored on the local file storage. Okay. The reason for that is that intermediate results will not be used after the MapReduce task gets completed. Okay. So therefore, intermediate results only needs to be stored on
+
+583
+01:50:51,412 --> 01:51:02,072
+If you put it into a distributed file system, the distributed file system will replicate these intermediate files unnecessarily.
+
+584
+01:51:02,452 --> 01:51:19,731
+Okay. And usually when we write MapReduce tasks for different problems, so we have a pipeline of MapReduce tasks, which means that we have mapper and then reducer and then mapper and then reducer.
+
+585
+01:51:19,731 --> 01:51:30,452
+So because there are multiple jobs that needs to be written in Map and Reduce.
+
+586
+01:51:30,452 --> 01:51:43,572
+Reduce Fashion. Karşılaştığımız problemlerde çoğu zaman şu an mesela word count örneğinde sadece bir tane map, bir tane reduce aşamaları vardı.
+
+587
+01:51:43,572 --> 01:51:58,452
+Ama genelde bu word count example'ından daha kompleks problemlerle karşılaşıyoruz. Burada birden fazla map reduce aşaması, birbirini takip eden map reduce aşamasını görebiliyoruz.
+
+588
+01:51:58,452 --> 01:52:01,591
+Ok?
+
+589
+01:52:02,095 --> 01:52:08,956
+And the coordination is being done by the master node and the name node.
+
+590
+01:52:08,956 --> 01:52:19,055
+We said that for every mapper and reducer processes, there are three different status, idle, in progress, and completed.
+
+591
+01:52:19,735 --> 01:52:19,836
+Okay.
+
+592
+01:52:20,296 --> 01:52:30,076
+Now, if an idle tasks get scheduled, okay, so when the must...
+
+593
+01:52:30,095 --> 01:52:55,796
+When there is an idle task, so this basically means that if you at the beginning, if you say that I will have six different mappers, right? And all these mappers are at the beginning in idle status. Okay, so what Masternode is going to do, it's going to look at all the mappers.
+
+594
+01:52:57,199 --> 01:53:02,199
+İdil bir şey.
+
+595
+01:53:02,199 --> 01:53:03,199
+Bir şey.
+
+596
+01:53:03,199 --> 01:53:25,199
+İdil bir şey.
+
+597
+01:53:25,199 --> 01:53:32,699
+A sign that the first mapper which has idle status to process the first chunk.
+
+598
+01:53:32,699 --> 01:53:39,159
+Okay, then it will go to the second mapper which has the idle status to process the second chunk.
+
+599
+01:53:39,559 --> 01:53:42,439
+Okay, this is done by the masternode.
+
+600
+01:53:43,315 --> 01:54:07,615
+When a map task completes, it sends the master, the location, and the sizes of the intermediate files. So we talked about this. When the mapper is done, okay, it signals the name node and tells that, okay, I'm done. And so these are the name of the intermediate key value pairs, and this is the IP of the chunk server that I'm working. Okay.
+
+601
+01:54:08,595 --> 01:54:17,471
+Now, once the MapNode gets this information, once the NameNode gets this information, it...
+
+602
+01:54:17,471 --> 01:54:20,471
+bu informasyonu ile reducers.
+
+603
+01:54:20,471 --> 01:54:25,471
+Ve bu key value,
+
+604
+01:54:25,471 --> 01:54:29,471
+bu işe de birçok ve
+
+605
+01:54:29,471 --> 01:54:32,471
+ve bu işe de birçok ve
+
+606
+01:54:32,471 --> 01:54:45,471
+bu işe de birçok ve
+
+607
+01:54:45,471 --> 01:54:46,471
+Okay.
+
+608
+01:54:46,672 --> 01:54:47,992
+For example, here.
+
+609
+01:54:49,492 --> 01:55:17,492
+So, so this is a better example. Here, let's say, so one, two, three, four. Okay, fourth mapper task. One, it gets completed. Okay, so it will signal the name node telling that, okay, I have the keys, key three and key four, and this is the location of the IP address of the chunk server I'm working, and the names of the
+
+610
+01:55:17,492 --> 01:55:22,492
+İkincisi için bir şey var.
+
+611
+01:55:42,880 --> 01:55:50,720
+Key 3 is going to be shipped to reducer number 5.
+
+612
+01:55:52,239 --> 01:56:06,079
+And it will signal the reducer number 5 and telling that, okay, you need to go to chunk server 2 and this is the name of the file that you need to retrieve.
+
+613
+01:56:07,252 --> 01:56:11,992
+And it will then put the key four into the hash function.
+
+614
+01:56:12,399 --> 01:56:20,559
+And the key four will be responsible, obviously, by reducer number two.
+
+615
+01:56:21,099 --> 01:56:34,179
+And it will go to the reducer number two and tell that, okay, you need to go to chunk number two and retrieve the file which is created for key value four and retrieve it.
+
+616
+01:56:34,179 --> 01:56:34,859
+Okay.
+
+617
+01:56:35,796 --> 01:56:47,576
+And this is the way that each of the mapper will signal the name node and the name node will trigger the reducers so that they can go and retrieve the data they are supposed to retrieve.
+
+618
+01:56:50,963 --> 01:57:16,844
+Okay, and the master node pings workers periodically to detect the failures. So what happens if the in case of the failures? Okay, if if the name node detects that a map for a worker failure failed, okay, so in that case, if the map tasks completed or in progress, remember, there are three, three states.
+
+619
+01:57:17,311 --> 01:57:19,571
+Idle, in progress, and completed.
+
+620
+01:57:20,115 --> 01:57:36,295
+If the map task finds out that if the map task that is working on that failed chunk server is in the status of in progress or completed, then that map task will be reset to idle in the name node.
+
+621
+01:57:36,295 --> 01:57:48,095
+The name node will change the status for that particular map task to idle and it will start that map task in another chunk server.
+
+622
+01:57:48,115 --> 01:58:07,715
+Now, if there are map tasks on the failed worker which has an idle status, then the name node is going to take this map task and reschedule on other workers because that map worker, that map chunk server fails.
+
+623
+01:58:07,715 --> 01:58:08,435
+Okay.
+
+624
+01:58:08,955 --> 01:58:13,555
+In case of the reduced worker failure,
+
+625
+01:58:14,963 --> 01:58:31,323
+If the name node realizes that a reduced worker fails, okay, what it will do, it will check the status of the reduced jobs working on that worker node.
+
+626
+01:58:31,323 --> 01:58:41,583
+If there are reduced jobs with in-progress status, okay, so then their status will be set to idle, okay?
+
+627
+01:58:42,323 --> 01:58:52,863
+And if there are reduced tasks where the status is idle, again, they will be restarted on other workers.
+
+628
+01:58:52,863 --> 01:58:53,563
+Okay.
+
+629
+01:58:54,515 --> 01:59:18,315
+And if there is a Reduce task where the status is completed, because the result of the completed Reduce job is stored on the distributed file storage, we know that the results will be not only on this particular worker node, it will also be replicated on other nodes.
+
+630
+01:59:18,315 --> 01:59:21,695
+Therefore, we know that the results will be available to us.
+
+631
+01:59:22,515 --> 01:59:29,855
+Therefore, we will not reschedule the reduced tasks where the status is completed.
+
+632
+01:59:31,252 --> 01:59:44,392
+Now, the third failure could be the master itself, the name node itself. If the name node itself is failed, okay, in that case, the MapReduce task will be aborted and client will be notified, okay?
+
+633
+01:59:44,392 --> 01:59:54,392
+So then, so we will ask the client restart the whole MapReduce process when the name node or the master node will...
+
+634
+01:59:56,020 --> 02:00:01,020
+So, it will be repaired or resumed again.
+
+635
+02:00:02,659 --> 02:00:02,900
+Okay.
+
+636
+02:00:03,699 --> 02:00:12,020
+Now, how many, so when we write our code, how many maps or reduced jobs that we are responsible to write?
+
+637
+02:00:12,020 --> 02:00:17,020
+So, the rule of thumb is that, so we...
+
+638
+02:00:17,652 --> 02:00:25,372
+Bu da mapper tasks çok daha büyük bir növer.
+
+639
+02:00:25,372 --> 02:00:30,092
+Bu da, bu da bu particular case,
+
+640
+02:00:30,092 --> 02:00:32,652
+3 chunk servers var,
+
+641
+02:00:32,652 --> 02:00:34,172
+bu da mapper tasks var.
+
+642
+02:00:34,172 --> 02:00:39,252
+Bu da mapper tasks çok daha büyük.
+
+643
+02:00:39,252 --> 02:00:42,252
+Bu da 7 mappers.
+
+644
+02:00:43,283 --> 02:01:09,344
+And usually, we try to choose the number of mapper tasks where there is one mapper task per chunk. So this is a common approach. Based on how many chunks do I have for a file, when I start my MapReduce task, I can start that many mapper tasks.
+
+645
+02:01:11,507 --> 02:01:20,207
+And as far as the number of reducers that I should run in the MapReduce platform, it is much smaller than M.
+
+646
+02:01:20,207 --> 02:01:37,207
+And so because the output of the reducer will be put into HDFS, so therefore I don't want to create way too many reducers.
+
+647
+02:01:38,027 --> 02:01:38,167
+Okay.
+
+648
+02:01:39,028 --> 02:01:51,088
+Now, so I want to stop right now. So I want to continue the rest of the lecture next week.
+
+649
+02:01:51,088 --> 02:02:03,268
+Arkadaşlar, gelecek hafta bir MapReduce platformu üzerinde MapReduce platformunun daha başarılı bir şekilde yapılması için
+
+650
+02:02:05,152 --> 02:02:19,072
+Refinement'leri konuşacağız gelecek hafta. Bir de Term Project'ten bahsedeceğiz. Şu ana kadar konuştuklarımızla ilgili sorusu olan var mı? Sanırım chatten bir arkadaşımız yazdı.
+
+651
+02:02:23,347 --> 02:02:48,047
+[öğrenci] böyle bir soru sormuş. Reduce Task Komplete olmadan direkt IDOL olarak mı resetleniyor? Burada tekrardan şuna denelim. Şimdi diyelim ki ben Reduce Task'ım, şurada Reduce Task'ım var. Reduce Task'ımın çalışmış olduğu worker'ın çalışmadığını tespit ettiğini düşünelim NameNote.
+
+652
+02:02:51,347 --> 02:03:17,747
+Bu konularının statusları var. Bu statuslar neler? Idle olabilir, in progress olabilir, completed olabilir. Şimdi eğer completed ise ben bunun sonucunu distributed file storage'e mutlaka yazmışımdır. Yani bunun sonucu yazılmıyor. Burada completed olarak işaretlenmişse yazılmıştır. Dolayısıyla buraya ne kopyalamışsam bunun kopyaları bu distributed file storage'da farklı yerlerde bulabilirim.
+
+653
+02:03:18,163 --> 02:03:42,804
+Ama eğer in progress ise ya da idle ise, zaten idle ise bu arkadaş şu anda boş. Yani ben başlangıçta demişim ki benim 5 tane reducerim olsun. Bunlar, bu arkadaş burada boş. Eğer bu fail olduğu zaman aynı sayıda benim reducerim olması için idle olan arkadaşı diğer bir başka not üzerinde tekrardan çalıştırmam gerekli.
+
+654
+02:03:43,283 --> 02:04:08,923
+Peki in progress olanlar için, diyelim ki şuradaki iki tane reducer de in progress. Bu şu demek, daha bu arkadaş kendi inputunu alıp, proses edip resultunu daha üretmemiş. Dolayısıyla da yapması gereken işleri bunlar yapmamış. Bu arkadaşların yapmaları gereken iş için tekrardan bunları başka bir not üzerinde tekrardan çalıştırıyorum.
+
+655
+02:04:11,283 --> 02:04:31,963
+Arkadaşların hangi inputları alması gerektiğini de bu arkadaşları söylüyorum. Çünkü daha önce fail olanlara da name note söylemişti. Bu arkadaşlar kendisine assign edilmiş olan chunk serverlere gidip oradan key value payları aynı bu fail olanın üzerindekilerin yaptığı gibi alıyorlar, proses ediyorlar ve çalıştırıyorlar.
+
+656
+02:04:34,931 --> 02:04:55,931
+Okey, tekrardan baştan anlatmış oldum ama umarım daha açıktır. Arkadaşlar, kaçırdığınız yahut da online eğitimden dolayı soru soramadığınız durumlar söz konusu olabilir. O yüzden ben tekrar öneriyorum kitabın...
+
+657
+02:04:58,323 --> 02:05:23,003
+Bütün teaching materyalleri kitabın sayfasında var. Her dersten sonra mutlaka bunların üzerinden gidebilirsiniz. Gelecek hafta kaldığım yerden devam edip MapReduce Programming Model, yani Chapter 2'yi tamamlayıp ondan sonra da dönem projesiyle ilgili konuşacağım. Eğer vaktimiz kalırsa bir sonraki chapter'a da geçelim.
+
+658
+02:05:24,595 --> 02:05:31,295
+Bugün için bu kadar. Katılımınız için teşekkür ederim arkadaşlar. Gelecek hafta görüşmek üzere.
+
+659
+02:05:32,515 --> 02:05:33,815
+Teşekkür ederim hocam. İyi günler.
