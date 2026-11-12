@@ -1,0 +1,2259 @@
+1
+00:08:08,788 --> 00:08:10,867
+Merhaba arkadaşlar, herkese günaydın.
+
+2
+00:08:15,315 --> 00:08:25,036
+Geçen hafta aramayı bitirmiştik herhalde.
+
+3
+00:08:25,036 --> 00:08:30,955
+Ama kısa bir defter yapmaya geçiş yapmadım.
+
+4
+00:08:31,596 --> 00:08:38,415
+Önce bir hatırlayalım bakalım. Böyle kör arama algoritmaları vardı. 6 tane görmüştük.
+
+5
+00:08:38,964 --> 00:08:47,504
+Bu arama algoritmalarının nasıl özellikleri vardı? Biraz bana hatırlatır mısınız? Neler hatırlıyorsunuz?
+
+6
+00:09:10,676 --> 00:09:14,855
+Yani özellikler derken, şuradaki şu kriterlerden bahsediyorum.
+
+7
+00:09:16,176 --> 00:09:19,996
+Tamlık, karmaşıklıklar, zaman ve hafıza, bir de optimluk.
+
+8
+00:09:21,096 --> 00:09:23,596
+Bu dört tane kritere göre bunlar nasıllardı acaba?
+
+9
+00:09:25,676 --> 00:09:26,475
+Hatırlıyor musunuz?
+
+10
+00:09:36,275 --> 00:09:37,867
+[öğrenci] sen mi söyleyeceksin?
+
+11
+00:09:41,524 --> 00:09:43,984
+Yok hocam hatırlayamadım. Mikrofonum açık kalmış.
+
+12
+00:09:44,504 --> 00:09:47,264
+Uyanamamış olabiliriz. Biz bir miktar.
+
+13
+00:09:48,264 --> 00:09:49,624
+Bir miktar.
+
+14
+00:09:50,244 --> 00:09:50,543
+Peki.
+
+15
+00:09:53,543 --> 00:10:02,244
+Hocam mesela de First Search space açısından dinerdi ama Brad First Search space açısından daha kötüydü.
+
+16
+00:10:02,344 --> 00:10:04,484
+Çünkü köyü atıyorduk her gezimiz şeyi.
+
+17
+00:10:06,004 --> 00:10:07,024
+Bunu hatırlıyorum.
+
+18
+00:10:09,716 --> 00:10:24,796
+Hepsi bir tanesi önüne, başına bir tanesi sonuna atıyordu. Değil mi? Enlemesine ve derinlemesine aramanın arasında algoritmik açıdan ne fark vardı?
+
+19
+00:10:27,796 --> 00:10:41,456
+Bir kuyruk var elimizde. Bir tanesinde derinlemesini aramada sona atıyordu yeni gelenleri, o nottan üretilenleri. Derinlemesini aramada ise başa atıyordu. O kadardı. Yoksa her geleni küveye atıyor, ikisi de atıyor yani küveye.
+
+20
+00:10:42,396 --> 00:10:46,936
+Hocam aslında Depth First Search site kullanmıyor mu?
+
+21
+00:10:49,076 --> 00:11:10,076
+Ya şöyle, hani bunu bir dizi olarak düşünüp bir tanesinde başa ekleniyor, bir tanesi yani sonuçta bir tanesi Q, bir tanesi Stek diye düşünebilirsiniz. İlk giren ilk çıkar, ilk giren son çıkar noktasında düşünebilirsiniz. Ama sonuçta her gelen şey, yani enden üretilebilen şeylerin hepsi ya Q'ya ya da Stek'e atılıyor. O noktada bir şeylik yok, farklılık yok.
+
+22
+00:11:13,716 --> 00:11:15,956
+Hocam, Komplit olması farklıydı galiba.
+
+23
+00:11:18,355 --> 00:11:20,735
+Komplit olmaların farklıydı. Evet, nasıl farklıydı?
+
+24
+00:11:20,735 --> 00:11:29,196
+Aynen. The First Search'te sonsuz bir uzay varsa sonuna kadar aşağı ineceği için diğer uzaylara bakamayabilirdi. O yüzden Komplit olmayabilirdi.
+
+25
+00:11:29,216 --> 00:11:32,716
+Diğer notlara, daha yukarıdaki bir şeyleri açamayabilirdi. Değil mi?
+
+26
+00:11:32,775 --> 00:11:32,995
+Evet.
+
+27
+00:11:33,316 --> 00:11:37,056
+Aşağı doğru böyle sonsuza kadar gidebilirdi. Komplit.
+
+28
+00:11:39,091 --> 00:12:04,072
+Ama enlemesini arama sırayla gitti. Komplit yani çözüm varsa illa ki bulurdu. Komplit demek ne demekti? Çözüm varsa bulması, bulabiliyor olması demekti. Yani sonsuz döngülere takılmıyor olması anlamına geliyor aslında. Komplitin anlamı sonsuz döngülere takılmıyor olması. Ama enlemesini arama zaten takılmıyordu. Enlemesini arama takılabiliyordu. Peki, optimallik açısından düşünürsek?
+
+29
+00:12:07,091 --> 00:12:08,211
+Optimallik.
+
+30
+00:12:10,551 --> 00:12:16,611
+Buradaki gördüğümüz 6 tane algoritman hangisi optimaldir? Hangileri ya da hangi şartlar altında?
+
+31
+00:12:19,611 --> 00:12:26,051
+Hocam yine derinliği çok uzun olduğu için, aşağı inerken üstte daha optimal bir şey varsa onu bulamayabilirdi.
+
+32
+00:12:27,192 --> 00:12:28,351
+Kim bulamayabilir?
+
+33
+00:12:29,111 --> 00:12:29,951
+The First Search.
+
+34
+00:12:30,676 --> 00:12:47,516
+Evet, denlemesine arama algoritması optimal bir algoritma değildi, değil mi? Evet. Peki, denlemesine arama optimal bir algoritma mıydı? Evet hocam, optimal. Ama ne zaman? Bir şartı vardı. Her zaman optimal değildi. Costlar eşit olduğunda. Costlar eşit olduğunda.
+
+35
+00:12:47,516 --> 00:12:56,256
+Bütün maliyetler, yani her bir operatör uygulamanın maliyeti birbirine eşit olduğunda optimal bir algoritma. Peki, düşük maliyetli arama nasıldı?
+
+36
+00:12:58,067 --> 00:12:59,327
+Uniform Code Search.
+
+37
+00:13:08,532 --> 00:13:15,192
+O kuyruğun içerisinden en baştakini ya da en sonundakini çekmek yerine şöyle bir şey yapıyordu hatırlarsanız.
+
+38
+00:13:15,792 --> 00:13:22,032
+Köke olan uzaklıklarına göre yani maliyetlerine göre sıralayıp en düşük maliyetliği seçiyordu köke olan.
+
+39
+00:13:25,427 --> 00:13:31,388
+Ennemesinin arama algoritmasına çok benziyordu. Hatta maliyetler eşit olursa zaten ikisi birbirinin aynısı oluyor.
+
+40
+00:13:33,168 --> 00:13:35,127
+Düşük maliyette arama algoritması optimal miydi?
+
+41
+00:13:36,508 --> 00:13:37,847
+Bu durumda optimal oluyor hocam.
+
+42
+00:13:41,008 --> 00:13:46,468
+Optimaldi. Ennemesini aramadan optimallik açısından nasıl bir farkı var?
+
+43
+00:13:49,448 --> 00:13:50,548
+Ennemesini aramadan mı hocam?
+
+44
+00:13:52,851 --> 00:13:59,011
+Efendim? Enine göre aramadan mı? Enlemesini aramadan mı? Evet, evet. Enlemesini aramadan.
+
+45
+00:14:00,451 --> 00:14:10,791
+Kostu da düşük olanı seçtiği için ilk optimal çözümü bulacak. İlk optimal çözümü bulacak.
+
+46
+00:14:10,791 --> 00:14:19,791
+Enlemesini arama da optimal çözümü buluyordu. Eğer ki ne zamandı? Maliyetler gibi de eşitse. Düşük maliyetler.
+
+47
+00:14:20,563 --> 00:14:45,024
+Kostlar farklıysa daha düşük maliyetli arama oluyordu. Tamam mı? Yani kostlar birbirine eşitse enlemesini arama ve düşük maliyetli arama optimal arama algoritmaları. Eğer maliyetler birbirinden farklıysa enlemesini arama algoritması optimal bir arama algoritması değil. Ama düşük maliyetler birbirinden farklı olsa bile optimal bir arama algoritması. Tamam mı?
+
+48
+00:14:45,620 --> 00:14:59,680
+Peki, alta geçelim. Sınırlı derinlikte arama algoritması. Yani belli bir sınır belirliyoruz. O sınırın içinde derinlemesini arama yapıyoruz. Bir tane sınır belirliyoruz. O sınırın içerisinde. Bu kompleit midir? İlk önce onu soralım. Sınırlı derinlikte arama.
+
+49
+00:15:03,443 --> 00:15:30,283
+Hocam uzayın içinde varsa, aradığımız uzayın içinde derken şunu demek istiyorsun herhalde. Hani bir sınır koyuyoruz ya. O sınır eğer ki çözümden daha yukarıda bir yerdeyse, yani çözüm dışarıda kalırsa onu bulamaz. Ama o derinlik sınırın içerisindeyse çözüm onu mutlaka bulur mu?
+
+50
+00:15:32,916 --> 00:15:33,756
+Bulur hocam.
+
+51
+00:15:35,196 --> 00:15:44,196
+Bulur değil mi? Dolayısıyla aslında sınırlı derinlikte aramanın, derinlemesini aramadan farkı, çok temel bir farkı. Sonsuz lupa.
+
+52
+00:15:46,707 --> 00:16:06,807
+Takılmıyor olması. Çünkü belirli bir derinliğin ötesinde ne yapmıyor hiçbir zaman? Açmıyor oraları. Fakat bizim seçtiğimiz derinlik çözümün içermiyor olabilir. Bu durumda komplet değil değil mi? Eğer ama içeride ise onu illaki bulacaktır. Peki optimal mi sınır denildi arama?
+
+53
+00:16:11,700 --> 00:16:14,200
+Bu da dep olduğu için hocam yine optimal değil.
+
+54
+00:16:15,840 --> 00:16:33,820
+Maliyetler eşit olsa bile aslında burada yine bu optimal olmaz. Çünkü neden? İşte 5 derinlik dediniz diyelim ki sınırı. Belki 3. derinlikte bir çözüm var ama 5. derinlikteki bir çözümü 3. derinliklerdeki bir çözümden önce açabilir değil mi?
+
+55
+00:16:41,011 --> 00:16:48,711
+Bu yine optimal bir algoritma değildi. Peki artan derinlikle arama nasıldı? Bu optimal miydi?
+
+56
+00:16:51,051 --> 00:16:53,811
+Bu optimaldi hocam sıra sıra arttırdığı için.
+
+57
+00:16:55,671 --> 00:17:01,811
+Bu sıra sıra arttırdığı için yani daha yukarıdaki bir çözümlü, daha düşük manetli bir çözümlü daha önce bulacaktı.
+
+58
+00:17:01,951 --> 00:17:07,811
+Çünkü her seferinde derinlik sıfırdan başlatıyor. Birer birer arttır arttırı gidiyordu. Bu optimaldi ama ne zaman optimaldi?
+
+59
+00:17:12,084 --> 00:17:34,963
+Maliyetler eşitse yine optimal. Maliyetler birbirinden farklıysa yine bu da optimal bir şey değil. Yani enlemesini aramanın optimalliği gibi bir optimalliği var. Artan derinlikle arama algoritmasının. Peki, fakat artan derinlikle aramanın güzel tarafı neydi? Enlemesini arama kadar optimaldi. Artı başka bir güzelliği daha vardı.
+
+60
+00:17:36,544 --> 00:17:37,624
+Komplittir hocam.
+
+61
+00:17:40,243 --> 00:17:56,243
+Complete mi? Complete. Tabii ki optimal bir algoritanın complete olmaması mümkündü zaten. Sonsuz lupa takılmayacak hiçbir şekilde. Başka bir güzelliği daha vardı. Neydi o? Space bakımından lineer olarak artıyordum.
+
+62
+00:17:57,460 --> 00:18:18,539
+Aynen öyle. İçerisinde yani her bir sınırı belirledikten sonra yine enlemesini arama değil de derinlemesini arama yaptığımız için bizim hafıza gereksinimiz hala linergi haldeydi. Enlemesini aramadaki ya da düşük maliyetli aramadaki gibi üstel bir şekilde artmıyordu gerekli olan space miktarı.
+
+63
+00:18:19,480 --> 00:18:24,940
+Peki çift yönlü aramada, çift yönlü aramada içinde iki taraftan birden enlemesini arama uyguluyorduk.
+
+64
+00:18:25,215 --> 00:18:42,115
+Bunun güzel tarafı neydi? En bariz güzel tarafı çift yönlü aramanın. Neyi azaltıyordu bu? Bir taraftan bir tarafa doğru gitmek değil de iki taraftan birbirlere doğru gitmekti bu.
+
+65
+00:18:45,844 --> 00:18:51,164
+Arama yapmamız gereken derinliği ne yapıyoruz arkadaşlar? Her iki tarafta da.
+
+66
+00:18:55,731 --> 00:19:09,011
+D derinliğinde bir çözüm olduğunu düşünün. Bir tarafta başlangıçtan doğru gideceksiniz.
+
+67
+00:19:15,155 --> 00:19:17,836
+Hocam D'yi D bölü 2'ye düşürüyordu.
+
+68
+00:19:18,735 --> 00:19:25,536
+D bölü 2'ye düşürüyordu. Aynen öyle. D'yi D bölü 2'ye düşürüyordu. Bu da bize ütsel zaten bunların süreleri olduğu için.
+
+69
+00:19:29,140 --> 00:19:39,960
+Kazan şey, iki tane B üzeri D bölü 2 oluyordu. Ne yerine? Şimdi bu dediklerimizi en son aslında şu şeyde de görmüş.
+
+70
+00:19:45,875 --> 00:20:07,415
+Grafimiz vardı. Buraya baktığımızda bir grafik var elimizde. 12. şehirden 1. şehri yol buluyoruz. Bu yolu bulur. Çeşitli algoritmalar böyle yollar bulmuşlar. Şu anda görmediğimiz için Aslar ve Best First'i görmeyelim şimdilik. Sadece şu üçünü bakalım. Bread First Search, Uniform Coast Search, Depth First.
+
+71
+00:20:08,144 --> 00:20:33,723
+Search'un bulduğu yollar var. Şimdi ben yukarıya falan hiç bakmadan biliyorum ki diyorum ki size Brad First yol bu problem için şöyle bir çözüm olmuş. Uniform Coast şöyle bir yol bulmuş. Brad First yol ise şöyle bir yol bulmuş. Bu yolların hangisinin daha iyi olduğuna dair bir tahmininiz olabilir mi? Hiç yukarılara falan bakmadan yani aynı problem için diyorum size şu üç tane algoritmanın bulduğu yollar bunlar. Bu yollara bakarak
+
+72
+00:20:36,980 --> 00:20:38,380
+Neer söyleyebilirsiniz?
+
+73
+00:20:42,420 --> 00:20:47,720
+Mesela Brad First'ün bulduğu yol, Uniform Coast'tan daha iyi olabilir mi?
+
+74
+00:20:51,251 --> 00:20:52,192
+Olamaz hocam.
+
+75
+00:20:53,172 --> 00:20:55,911
+Olamaz değil mi? Yani en iyi ihtimalle ne olurlar?
+
+76
+00:20:56,271 --> 00:20:56,851
+Eşit olur.
+
+77
+00:20:57,632 --> 00:21:02,871
+Eşit olurlar değil mi? Birbirlerinden yani. Peki Uniform Cost, Bread First'ten daha iyi olabilir mi?
+
+78
+00:21:03,291 --> 00:21:03,791
+Olabilir.
+
+79
+00:21:04,391 --> 00:21:07,511
+Olabilir. Çünkü Uniform Cost algoritması nasıl bir algoritma?
+
+80
+00:21:08,551 --> 00:21:10,231
+Costa bakarak karar veriyor.
+
+81
+00:21:11,039 --> 00:21:22,179
+Optimal bir algoritma değil mi? Optimal bir algoritma. Maliyetler birbirinden farklı olsa bile optimal bir algoritma. Dolayısıyla Uniform Cost'un bulduğu yol...
+
+82
+00:21:23,188 --> 00:21:41,268
+En iyisidir. Red First'un bulduğu yol ise en iyi ihtimali uniform cost kadardır ama daha kötü olabilir. Red First'un bulduğu yol ise optimal olduğu, yani o da şansa bağlı artık. Onun yolu optimal midir değil midir, o kısmete bağlı bir iş ama zaten kendisi optimal bir algoritma olmadığı için.
+
+83
+00:21:41,663 --> 00:22:06,423
+Ve Uniform Cost'tan daha iyi bir şey bulma ihtimali yok. Yine dediğim gibi çok şanslıysa ne yapabilir? Uniform Cost kadar iyi bir yol bulabilir. Ama dediğim gibi tamamen şansa bağlı. Şimdi peki burada bu üç tane algoritmanın izledikleri yolları birazcık baktığımızda mesela şurada şeye bakalım. İşte Brad Burse mesela ne yapmış? 12'ye gitmiş, sonra 4'e gitmiş, sonra 2'ye gitmiş, sonra 5'e gitmiş, 5 tane 1'e gitmiş.
+
+84
+00:22:06,804 --> 00:22:30,184
+Uniform Coast fena bir yol değil değil mi? Yani şöyle gidiyor adım adım adım adım. 4'den 2'ye gidiyor, 2'den 5'e gidiyor, 5'den 1'e gidiyor. Bu 12'den 9'a gidiyor, 9'dan 15'e gidiyor, 15'den pardon yanlış tanım. Uniform Coast 12'den başlıyor, 9'a gidiyor, sonra 15'e gidiyor, sonra 7'ye gidiyor oldu da 1'e gidiyor. Tamam güzel. Giderek hedefe yaklaşıyor gördüğü gibi yol, bulduğu yol.
+
+85
+00:22:30,644 --> 00:22:57,064
+Depth First Yol'una baktığımızda 12, 11 güzel yaklaştı. 9, peki tamam. 9, 15 güzel çok güzel yaklaştı. 18 çok iyi baya yaklaştı değil mi? 1'e şu anda görüyorsunuz 18 ile. Şu anda birden 17'ye gidiyor. Sonra 13'e gidiyor. Sonra 10'a gidiyor. Sonra 7'ye gidiyor. Tamam yine güzel çok güzel. 14'e gidiyor bu sefer. Şimdi burada hedefe doğru yaklaşan bir şey görmüyorsunuz değil mi?
+
+86
+00:22:57,811 --> 00:23:20,612
+Yani ne yapıyor? İşte bir yerden başlıyor. Bir şekilde sıra artık o siteye atılma sırası neyse o sıraya göre ilerliyor ve en sonunda hedefi bulduğu zaman tamam buldum diyor. Ama neyi kullanmıyor burada? Aslında buradaki algoritmanın hiçbiri kullanmıyor ama mesela DevFirst'un seçtiği yolu kötü bir yol diye değerlendirmemizin sebebi ne?
+
+87
+00:23:23,635 --> 00:23:37,476
+Maliyetinin yüksek olması. Nasıl bir şeyler yapıyor hep? Hedefe böyle bir yaklaşıyor bir uzaklaşıyor değil mi? Hedefin yakınlarında olduğuna dair bir bilgisi.
+
+88
+00:23:38,003 --> 00:24:02,763
+Yok gibi, değil mi? Yani öyle bir şey olsa çünkü mesela işte 18'den şu 18'den 17'ye gitmez. 18'den 17'ye gidiyor bugün. Hedef 1'de. 18'den bir adım atsa oraya gidecek. Ama 18'den 17'ye gidiyor. Dolayısıyla aslında buradaki eksik olan kısım belki ne kısmı? Depth First için konuşursak, hedeflere kadar yakın olduğuna dair bir bilgiyi kullanmıyor olması. Bu kötü.
+
+89
+00:24:03,152 --> 00:24:14,032
+Şimdi ve bu da aslında buradaki bütün algoritmaların hepsi aslında böyleler. Yani buradaki algoritmanın hiçbiri o anki durumun hedefe yakınlığına dair bir bilgi kullanmıyorlar.
+
+90
+00:24:14,032 --> 00:24:30,092
+Tamam. Şimdi sezgisel arma algoritmalarına geçeceğiz. Onlar bunu kullanacaklar ve mesela şuradaki grafiğe bakarsak, bu grafikte Uniform Coast Search'un mesela şu mavi olduğunu görüyorsunuz.
+
+91
+00:24:31,059 --> 00:24:43,539
+Bradford Search şuradaki kırmızı olan en uzun zaten onlar sürmüşler. Şuradaki adım numarası ne demek? Kuyruktan ya da işte Stek'ten kaç tane eleman çektiğinizi gösteriyor.
+
+92
+00:24:45,220 --> 00:24:55,539
+Depth First Search'ın iyi olan kısmını görebiliyor musunuz? Depth First Search'ın iyi olan kısmını bir kere daha kısa sürmüş. O var. Başka? İyi olan kısmı neresi?
+
+93
+00:24:58,708 --> 00:25:21,807
+Aynen, diğer boyut. Diğer boyut da listenin boyutu. O elinizdeki Q'nun ya da Stain Art ya da Dizzy'nin ne kullanıyorsanız, onun içindeki eleman sayısı, adım sayısı değiştikçe mesela işte bir yere kadar gidiyor ondan sonra hep sabit seviyede kalmış görüyorsunuz. Devam etse de böyle düz gidecek. Fakat bunlar adım numarası büyüdükçe ne yapıyorlar görüyorsunuz lineer bir şekilde bunların memori gereksinimleri artıyor.
+
+94
+00:25:22,208 --> 00:25:42,568
+Ne kadar uzun sürerse o kadar fazla gereksinim var. Dolayısıyla burada başka ne var? All Star var. Onlar şurada bakın. All Star ve Best First şu aşağıda kalmışlar. Çok daha kısa zamanda çözüm bulmuşlar her ikisinde. Şu alttaki satırda adım sayıları kısmında görüyorsunuz. Best First 5 adımda bulmuş hedefi. All Star 6 adımda bulmuş.
+
+95
+00:25:46,132 --> 00:26:11,291
+Şimdi yukarıdaki yani bizim Depth First, Bread First ve Uniform Coast Search'un içerisinde üçüne baktığımızda optimal olan hangisi gördüğünüz gibi? Uniform Coast Search. Uniform Coast Search'un 110'luk bir yol bulduğunu görüyoruz. Şu yolu bulmuş. Bread First 128'lik bir yol bulmuş. İşte şu yolu bulmuş. Burada beklediğimiz şey zaten bu. Uniform Coast'un daha iyi bir çözüm bulması. Ama gördüğünüz gibi çok büyük bir maliyet de bunu bulabiliyor. Gördüğünüz gibi.
+
+96
+00:26:12,243 --> 00:26:28,583
+Küçük bir maliyet harcıyoruz bu optimal yolu bulmak için. Aynı şekilde Uniform Coast Church'un bulduğu yolun aynısını bakın A-Star'da bulmuş. Fakat çok daha küçük bir maliyet de bulmuş. Çok daha az adımda ve dolayısıyla az adım olduğu için de az liste boyutuyla. Tamam mı?
+
+97
+00:26:34,548 --> 00:26:41,587
+Sezgisel arama algoritmalarına başlayacağız. Buraya kadar soru soran var mı arkadaşlar? Bir tekrar yapmış olduk.
+
+98
+00:26:47,251 --> 00:26:52,071
+Peki, bunu kapatalım. Şimdi bir iki sayfımıza geçelim.
+
+99
+00:27:01,523 --> 00:27:25,623
+Sezgi nedir vs. onlar burada ama bizim arama algoritmalarında Sezgi dediğimiz şey arkadaşlar şu bakın. Hedefe ne kadar yakın olduğumuza dair bir tahmin üretmek. Yani bir durumun hani kuyruğun içerisindeki elemanlardan yani arama algoritmaları neydi? Kuyruğun içerisindeki elemanlardan hangisini seçeceğimize dair bir strateji geliştirmekti değil mi? Kuyruğun içerisinde bir sürü eleman var.
+
+100
+00:27:25,935 --> 00:27:50,096
+Bunların içerisinde hangisini seçeceğiz? Bu seçimi belirleyen şeyler bizim zaten temelde neyimiz? İşte algoritmalarımız. Şimdi bu durumların içerisinden hangisini seçeceğimizi şu ana kadar biz hep neyle nasıl yöntemler uyguladık? Ya mekanik yollara uyguladık. Mekanik derken ne? En baştakini seç, en sondakini seç. Yani standart bir şekilde en baştakini seçin mesela ya da işte en sondakini seç de yapabiliriz. Mekanik bir şeyler yapabiliriz.
+
+101
+00:27:50,644 --> 00:28:08,844
+Yaptık daha doğrusu. Başka ne yaptı? Uniform Code Search'te elimizdeki durumları köke olan mesafelerine göre en düşük olanını seçtik. Yani köke olan, kökten oraya gelmenin en az maliyetli olduğu notları seçtik.
+
+102
+00:28:09,875 --> 00:28:37,336
+Fakat şu ana kadar biz hiç şunu kullanmadık. O durumun hedefe ne kadar yakın olabileceğine dair bir tahmin. Şimdi bir durumun hedefe ne kadar yakın olduğunu kesin olarak bilebilir miyiz? İlk önce onu düşünüyorum. Yani niye tahmin diyorum da hedefe olan uzaklık demiyorum. Yani hedefe olan tahmini uzaklık diyorum. Hedefe olan uzaklık demiyorum fark ettiyseniz. Niye hedefe olan uzaklık diyemiyorum? Herhangi bir durumun hedefe olan uzaklığını hesaplayabilir miyim ben?
+
+103
+00:28:40,084 --> 00:28:41,124
+Gerçek uzaklığı.
+
+104
+00:28:43,923 --> 00:28:53,624
+Kökü olan uzaklığını hesaplayabiliyoruz. Zaten o yolu takip ederek gelmişiz de oraya. Onu biliyoruz. Ama hedefe olan uzaklığı hesaplayabilir miyim? Gerçek uzaklığı.
+
+105
+00:28:55,824 --> 00:29:00,223
+Gerçek uzaklığı hesaplayabilmeniz için neyi biliyor olmanız lazım arkadaşlar? Hedefe nasıl?
+
+106
+00:29:02,723 --> 00:29:03,503
+Gildeceğimiz o.
+
+107
+00:29:03,955 --> 00:29:30,455
+Gideceğimizi bilmemiz lazım. Gideceğimiz yolu bilmeden gerçek hedefi olan uzaklığı bulabilir miyiz? Bulamayız. E peki gideceğimiz yolu bilebilir miyiz herhangi bir durumda? Bilsek zaten arama algoritması uygulamamıza gerek yok değil mi? Zaten biliyor olsak bunu uygulamayız. Dolayısıyla biliyoruz ama ne yapabiliriz? Bir tahminde bulunabiliriz. Tamam, bir tahminde bulunacağız.
+
+108
+00:29:30,900 --> 00:29:34,640
+Ve bu tahmin dediğimiz şey de bizim sezgisel kısmımız olacak.
+
+109
+00:29:36,640 --> 00:29:46,400
+Şimdi sezgisel arama algoritmalarında bu hafta göreceğimiz ilk en iyi arama algoritması Best First Search ve Alstar algoritması.
+
+110
+00:29:47,079 --> 00:29:55,539
+A-Star algoritması. Alstar birazcık karışık ters olaydı. Neyse, A-Star algoritması derim. Ya da A-Yıldız algoritması.
+
+111
+00:29:58,099 --> 00:30:14,999
+Bu ikisini bu hafta göreceğiz. Diğer seyircisel arama algoritmalarının lokal algoritmalarını ise önümüzdeki hafta gördük. Onların zaten şu ana kadar gördüğümüz problemlerden çok temel bir farklılığı var. Onun gibi önümüzdeki hafta gördük ama bu hafta göreceğimiz dediğim gibi ilk ikisi olacak.
+
+112
+00:30:24,500 --> 00:30:26,339
+Şart değil burada best first search anında.
+
+113
+00:30:26,420 --> 00:30:28,799
+Burada aslar da diyebilirdik.
+
+114
+00:30:29,880 --> 00:30:30,420
+İkisinin de
+
+115
+00:30:30,420 --> 00:30:32,319
+algoritması şurası
+
+116
+00:30:32,319 --> 00:30:34,400
+tamamen aynısı. İkisinin içerisinde
+
+117
+00:30:34,400 --> 00:30:36,799
+sadece değişen kısım şuradaki değerlendirme fonksiyonu.
+
+118
+00:30:37,099 --> 00:30:37,259
+Tamam.
+
+119
+00:30:38,804 --> 00:30:58,784
+Yani Best First Search'te bir değerlendirme fonksiyonu kullanıyoruz. Aslında başka bir değerlendirme fonksiyonu kullanıyoruz. Yoksa tamamen yapı aynı. Zaten algoritmanın tamamının yapısı da aynı. Yani bu yapıyı hatırlıyorsunuz. Tamamen hepsini hep gördüğümüz şu ana kadarki algoritmanın hepsinde aynı yapı var. Tek buradaki fark neyi seçiyor burada bakalım.
+
+120
+00:30:59,200 --> 00:31:19,420
+Bu da seçmekte bir sıralama yapıyor. Sıralama yapmayıp en küçük olanı da seçebilirsiniz. O da mümkün. Kuyrukta ilk durumu çek yerine değerlendirme fonksiyonuna göre kuyruktan en düşük değerlendirme fonksiyonuna sahip durumu çek de diyebiliriz. O da çok farklı bir sonuç. Oluşturmaz.
+
+121
+00:31:19,796 --> 00:31:30,096
+Ama biz buna uygun halde düşünelim. Yine kuyruktaki durumları değerlendirme fonksiyonuna göre bir puan vereceğiz.
+
+122
+00:31:30,596 --> 00:31:37,396
+Bir değerlendirme fonksiyonumuz olacak. Ona göre bir puan vereceğiz. Durumları bu puana göre küçükten bir sıralayacağız. İlkini çektiğimiz iş oluyoruz biz.
+
+123
+00:31:37,396 --> 00:31:40,716
+Değerlendirme fonksiyonuna göre en küçük olanını çekmiş oluyoruz.
+
+124
+00:31:41,196 --> 00:31:43,052
+Şimdi değerlendirme fonksiyonu...
+
+125
+00:31:43,092 --> 00:31:56,951
+Best First Search algoritmasında FN, şimdi FN değerlendirme fokusunu neye eşit? HN'e eşit. HN dediğimiz şey heuristic. Yani heuristic dediğimiz şeyde demin konuştuğumuz mevcut durumun hedefe tahmini uzaklığı. Tahmini uzaklığı.
+
+126
+00:31:57,832 --> 00:32:03,211
+Şimdi tahmini uzaklık için kullanılabilecek yöntemlerden bir tanesi, mesela bu şehirler için konuşursak.
+
+127
+00:32:03,503 --> 00:32:23,203
+Bir şehirdeyken başka bir şehre gitmenin mesela gerçek maliyetini bilemiyoruz ama tahmini bir maliyet oluşturabiliriz. Tahmini maliyet olarak da mesela basitçe şunu kullanabiliriz. Kuş uçuşu mesafe. Yani dümdüz bir çizgi üzerinde gitsem ben oraya ne kadar zamanda varırım. Yani kaç kilometre sürer.
+
+128
+00:32:25,044 --> 00:32:50,223
+Şimdi bu bilgi elimizde varsa bunu biz HN diye kullanacağız ve FN'imizde HN olacak. Yani aslında ne yapacağız biz? Kuyruğun içerisindeki durumlarımız var. Bu durumların her birinin hedefe olan tahmini uzaklıklarını hesaplayacağız ve bunların içerisinden en küçük olan hangisiyse onu seçeceğiz. Yani aslında şöyle bir şey oluyor. Algoritma her adımda hedefe en yakın gözüken duruma ilerliyor.
+
+129
+00:32:51,188 --> 00:33:17,488
+Şeye bakmıyor hiç. Ne kadar yol geldim vesaire bu bilgiyi hiçbir şekilde kullanmıyor. Yani şey dedi ki mesela uniform code search'ta nasıldı? Kökten itibaren oraya kaçalımda geldiğini, ne kadar maliyetle geldiğine göre iş yapıyordu. Buradaysa ona hiç takılmıyor. Sadece neye bakıyor? Hedefe ben ne kadar yakınım. Her bir durum kendisinin hedefe ne kadar yakın olduğunu tahminini söylüyor ve algoritmada onların içerisinden en küçük olanı, yani maliyet en küçük olanı, hedefe en yakın gözükeni.
+
+130
+00:33:18,163 --> 00:33:18,763
+Seçiyor.
+
+131
+00:33:19,763 --> 00:33:21,304
+Anlaşıldı mı arkadaşlar?
+
+132
+00:33:21,663 --> 00:33:23,324
+Best First Search algoritmasının yaptığı.
+
+133
+00:33:32,980 --> 00:33:36,599
+Deri bir sessizlik. Anladık hocam.
+
+134
+00:33:38,939 --> 00:33:46,179
+Peki. Şimdi bunu bir Romanya haritası üzerinde göreceğiz. Bu anlattığımız yapıyı.
+
+135
+00:33:46,319 --> 00:33:51,980
+Romanya haritasında amacımız Arat diye bir şehir var. Bir de Bükreş diye bir şehir var.
+
+136
+00:33:52,352 --> 00:34:15,771
+Bu ikisi arasındaki yolu bulmak istiyoruz. En kısa yolu bulmak istiyoruz. İlk önce şunu söyleyelim. Burada notlar var gördüğünüz gibi. Notların arasındaki mesafeler var. Mesafeler birbirinden farklı gördüğünüz gibi. Şimdi burada sadece benim elimde, burada iki tane bilgi var aslında. Bir tanesi şu sol taraftaki bilgi, bir tanesi siz, şuradaki sağ taraftaki bilgi şu. Her bir şehrin bükreşi olan, şurada bükreş şurada, Arap şurada baktın.
+
+137
+00:34:16,179 --> 00:34:38,079
+Her bir şehrin Bükreş'e olan kuş uçuşu mesafeleri var burada. Aradan 366'mış, mesela Bükreş'in sıfırmış. Bükreş'in Bükreş'e kuş uçuşu mesafesi sıfır doğal olarak. Burada her birinin kuş uçuşu mesafeleri var. Şimdi bu iki bilgiyi kullanarak biz Sezgisel Arma Algorithmalarını çalışacağız. Ama şöyle bir şey düşünelim.
+
+138
+00:34:38,771 --> 00:35:01,551
+Şimdi şu bilgi bizim elimizde olmasa, şu bilgi elimizde olmasa, ben bu buradaki grafik için, bu grafik için, Arat'tan bir köşe giden en kısa yolu şu ana kadar öğrenmiş olduğumuz sevgisayar olmayan kör arama algoritmalarıyla bulabilir miyim? Optimal yolu. Ya da hangisiyle bulabilir miyim?
+
+139
+00:35:09,076 --> 00:35:19,956
+Şu bilgiler yok elimizde bakın. Sadece bunları biliyoruz. Sadece bu bilgileri kullanarak biz hangi algoritmaları kullanabiliriz ve bunların hangi bir şeyimize optimal çözüm verebilir?
+
+140
+00:35:20,215 --> 00:35:22,735
+Hocam Uniform Cost Search verebilir optimala.
+
+141
+00:35:24,956 --> 00:35:34,755
+Aynen öyle. Çünkü Uniform Cost Search algoritmasının diğerlerinden, hepsinden farklı olan yanı neydi? Maliyetler birinden farklı olsa da optimal çözümü buluyoruz değil mi?
+
+142
+00:35:35,251 --> 00:35:53,251
+Dolayısıyla bizim elimizde aslında Arat'tan herhangi bir şehirde giden yolu optimal olarak kullanan bir algoritma var. Peki niye Sezis Alarm'a algoritma kullanılır? Sezis Alarm'a algoritmaları kullandığımızda bulduğumuz yoldan daha iyi bir yol bulabileceğiz mi?
+
+143
+00:35:56,132 --> 00:35:56,931
+Hayır.
+
+144
+00:35:59,860 --> 00:36:24,900
+Hayır. Peki niye kullanıyoruz sevgisayar mal olarak öğretmenlerini? Daha iyi bir çözüm bulmak değilse? Aynen öyle. Zaman açısından aynen öyle. Zaman ve buna bağlı olarak tabii hafıza da işin içerisine girecektir. Çünkü optimal dediğimizde uniform cost geliyor. Uniform costunda hafıza maliyeti oldukça yüksek. Neden? Uzun sürüyor. Bir de enlemesin arama yakın.
+
+145
+00:36:25,300 --> 00:36:45,619
+O zaman arkadaşlar, sevdiksel arama algoritmaları bize daha iyi bir çözüm bulabilir mi? Hayır bulamazlar. Sevdiksel arama algoritmaları ne yaparlar? O optimal iyi bir çözümü aynısını bulurlar. Yani aynı maliyette olan bir çözümü bulabilirler. Fakat bunu bizim için çok daha hızlı yaparlar.
+
+146
+00:36:46,688 --> 00:37:08,467
+A şerhinden B şerhine giden yolu mesela John Costner'e algoritmasına verirsiniz. Size en optimal yolu bulur ama diyelim ki 10 dakikada. Sesli arama mesela A'slara verdiğimiz için A'sa algoritmasına veririz aynı şekilde A'dan B'ye. Size aynı yolu bulur ama 10 dakika değil 10 saniye. Tamam.
+
+147
+00:37:08,916 --> 00:37:30,796
+Seyrisi alarma algoritmaları dediğim gibi daha iyi bir çözüm bize olmazlar. Sadece çözümü bulunma hızını arttırırlar. Yoksa çözümün kendisini değiştirme, yani çözümü daha iyi bir hale getirmek gibisinden bir kabiliyetleri yok. Zaten optimalliği bulan algoritmalarımız var. Dediğim gibi optimalliği daha hızlı bulmayı sağlıyorlar. Anlaşıldı mı? Seyrisi alarma algoritmalarının bize ne kattığı?
+
+148
+00:37:32,836 --> 00:37:33,416
+Evet hocam.
+
+149
+00:37:33,780 --> 00:37:41,720
+Peki, şimdi dediğim gibi kör arama algoritmalarında bize sadece şu soldaki bilgi yeterliyken,
+
+150
+00:37:42,643 --> 00:38:08,884
+Seyrisi Alarmal Algoritmanı'nda bize ne de lazım dedik? Hedefe olan tahmini uzaklık da lazım. Hedefe olan tahmini uzaklığı da şehirler arası yol problemi bulmak, şehirler arası en kısa yol problemi bulmak için de neyi kullanabiliriz? Her bir şehrin o hedef olan şehre, mesela burada amacımız Bükreş'e, bu Bükreş'e kuş uçuşu mesafeleri bize lazım. Yani fazladan bir bilgiye ihtiyacımız var Seyrisi Alarmal Algoritmanı'nı kullanabilmek için.
+
+151
+00:38:09,615 --> 00:38:33,795
+İyi erişemiyorsak, yani herhangi bir durumda hedefene kadar yakın olduğumu bilemiyorsam, bu durumda seyirsel arama algoritmalarını kullanamam. İlla ki kör arama algoritmalarını kullanmam gerekiyor. Ama böyle bir bilgi varsa elimde, böyle bir şey elde edebiliyorsam, tabii problemden problem bu değişecek. Seyirsel yöntem değişecek. Ama hepsinin temel yapısını hedefene kadar yakın olduğumuza dair bir bilgi.
+
+152
+00:38:38,739 --> 00:38:44,059
+Sezi çalıştıracağız.
+
+153
+00:38:44,559 --> 00:38:55,979
+Şimdi ilk en iyi arama da ilk önce Arat'tayız. Şu anda şu aşağıda harita var görüyorsunuz. Şu anda şu Arat'tayım ben ve gitmek istediğim yerde şu Yükreş.
+
+154
+00:38:57,579 --> 00:39:00,819
+Başlangıç Arat'ta olduğum için Arat'ın altında bakın bir değer yazıyor.
+
+155
+00:39:02,260 --> 00:39:28,000
+Aradığın altındaki bütün notların altında yazacak bu değerler şöyle bakarsanız. Aradığın altında yazan ne arkadaşlar? Kuyruktaki elemanları neye göre değerlendiriyorduk biz? Sadece Fn neydi? Hn'di. Yani Hn neydi? Hedefe olan tahmini uzak. Yani aradığın, nereye olan uzaklığı bu? Bükreş'e olan tahmini uzak. Kuş uçuşu mesafeydi. Tamam.
+
+156
+00:39:28,788 --> 00:39:45,667
+Aradın 366'ymış. Bunu zaten dizinin içerisinde tek bir eleman var. Onu çektim. Çektikten sonra Arad'dan gidilebilecek kaç tane yer var arkadaşlar? Bana söyleyeyim. Şu aşağıdaki grafiğe baktığınızda görebiliyorsunuz. Kaç tane yer var Arad'dan gidilebilecek?
+
+157
+00:39:47,288 --> 00:39:48,608
+3 tane var hocam.
+
+158
+00:39:48,847 --> 00:39:54,728
+3 tane var. Zerin, Sibiu, bir de Tinsuara değil mi? Şimdi bu 3 tanesi kuyruğa eklendi.
+
+159
+00:39:55,155 --> 00:39:59,895
+Şimdi bu üçünün içerisinden bir tanesini seçecek. Hangisini seçecek?
+
+160
+00:40:06,931 --> 00:40:28,871
+Sibu'yu seçecek. Niye Sibu'yu seçiyor? Onun mesafesi daha az. Onun ne? O hedefe daha yakın gözüküyor. Değil mi? Evet. O yüzden onu seçiyor. Şimdi 253'miş on değil. Diğeri bir tanesi. 324, bir tanesi. 374, dolayısıyla Sibu'yu seçti.
+
+161
+00:40:29,715 --> 00:40:37,556
+Sibir'i seçtiği zaman Sibir'den gidilebilecek, Sibir şurada bakın, oradan gidecek bir, iki, üç, dört yer var. Yani tekrardan Arad'a da dönebilir.
+
+162
+00:40:39,456 --> 00:40:46,635
+Burada Bakırat, Fagaraz, Orduya ve Derinliku var. Şu anda kuyruğun içerisinde kaç eleman var arkadaşlar? Şu anda.
+
+163
+00:40:52,371 --> 00:41:11,091
+Altı. Altı eleman var. Aynen öyle. Bu altı elemanın içerisinden hangisini seçecek? Neye Fakar'ı seçiyor? Çünkü altındaki değer en küçük. Altındaki değerlere göre en küçük olanı seçiyor. Arkadaşlar, chatten niye yazıyorsunuz? Chatten yazmayın. Söyleyin.
+
+164
+00:41:15,347 --> 00:41:26,387
+Fakarası seçtim. Fakarası'tan gidilebilecek kaç tane yer var? Bakın, Sibiyo'ya geri dönebilir, bir de mikroşe gidebilir. Dolayısıyla Fakarası'nın iki tane şey çıkacak. Bir tanesi büyük, bir tanesi büyük. Şu anda kuyrukta kaç tane eleman var?
+
+165
+00:41:32,436 --> 00:41:33,036
+Yedi.
+
+166
+00:41:34,775 --> 00:41:54,436
+Bir, iki, üç, dört, beş, altı, yediye bakın. Açık olanlar şunlar göründüğü yedi. Bu yedi tanesinin içerisinden bir tanesini seçecek. Hangisini seçecek? Tabii ki Büyükköş'ü seçecek. Niye Büyükköş'ü seçecek? Zaten Büyükköş'ün Büyükköş'ü kuşuşu mesafesi sıfır. Değil mi? Büyükköş'ü seçti. Büyükköş seçti. O zaman bize Büyükköş'ü seçmek demek ne demek? Yolu bitti. Yani Büyükköş'ü seçti. O zaman zaten hedef algoritma bitti.
+
+167
+00:41:55,347 --> 00:42:22,748
+Bulunduğu true yaptık. Arad, Sibyuh, Fagoras, Bükreş yolunu bize ne yapmış oldu? Bulmuş oldu bu. Tamam. Peki bu yol optimal mi? Değil. Şu anda bizim bulduğumuz yol şurası. Ondan daha iyi bir yol var mı? Burada var. Şurada görüyorsunuz. Tamam. Daha iyi bir yol var. Yani ilk en iyi arama algoritması. O zaman ne değil diyeceğiz arkadaşlar? Nasıl bir algoritma değil? Optimal değil.
+
+168
+00:42:23,603 --> 00:42:48,463
+Optimal değil değil mi? İlk en iyi arama algoritması, best search algoritması optimal bir algoritma değil. Şimdi optimal olmayan bir sezgisel arama algoritması gördük. Şimdi ise optimal bir arama algoritması göreceğiz. Ama ondan önce bir şeyine bakalım. Özelliklerini inceleyin. Complete mi? Hayır. Looplara takılabiliyor.
+
+169
+00:42:48,880 --> 00:43:15,200
+Örneğin, hedefe aynı mesafede iki durum arasında sonsuz bir döngüye girebilir. Birbirlerini çekiyorlarsa. Yani şöyle bir şey söyleyelim. Nasıl yapalım onu? Pardon. Senin mikrofonun sorumluluğu. Böyle erkenden seçmesi mantıklı mı? Evet, [öğrenci]. Katılıyorum sana. Hiç mantıklı değil.
+
+170
+00:43:17,715 --> 00:43:24,395
+Bir dakika. Neyse. Bir saniye arkadaşlar.
+
+171
+00:43:27,395 --> 00:43:42,695
+Mesela şöyle bir şey düşünelim. Bir hedef var burada. Bir de bizim elimizde de iki tane durum olsun. Onlar da mesela şu durum ve şu durum olsun. Bunların ikisinin de şeyleri aynı olsun.
+
+172
+00:43:44,851 --> 00:43:46,011
+Çizeceğim şeyleri.
+
+173
+00:43:47,811 --> 00:43:49,771
+Bunlar ikisi de eşitler.
+
+174
+00:43:54,963 --> 00:44:12,243
+İki tane durum var. İkisinin de hedefe olan uzaklıkları aynı var. Ve ikisini de birbirlerine bağlılar. Birbirlerini çağırıyorlar. Birbirlerine yol var. Mesela şöyle bir şey düşün. Mesela bunu ben seçtim. Bunu seçtiğimde bu da işin içerisine giriyor.
+
+175
+00:44:12,947 --> 00:44:27,327
+Bu seçiliyor. Çünkü oradan giderek aralarında yol olduğunu düşünün. Bu seçiliyor. Daha sonra bu seçildikten sonra bundan da gidilecek yol arasında bu var. Bu seçiliyor. Ve bundan ikisinin arasında neye dönüşebilir arkadaşlar? Sonsuz bir döngüye dönüşebilir.
+
+176
+00:44:28,275 --> 00:44:52,275
+Dolayısıyla sonsuz döngü, yani komplek bir arama algoritması değil, best first search algoritması en başta. İkincisi, zamanlı space bunlar B üzeri M'ler ama iyi sezgisel kurallar gerçekten ikisini de çok hızlandırabiliyorlar. Yani zamanı hızlandırdığınız zaman zaten space'i de otomatik olarak hızlandırıyorsunuz. Çünkü dediğim gibi bunlar hep enlemesine arama algoritmaları, türünden algoritmalar. O yüzden...
+
+177
+00:44:52,724 --> 00:45:14,924
+Zamanı azalttığınız zaman space'i de azaltabiliyorsunuz. Optimal mi? Zaten değil demiştik. Şimdi gelelim astral algoritmasına. Şimdi astral algoritmasındaki olay şu. Demin fn eşittir neydi arkadaşlar? hn'di sadece. Şimdi bakalım. fn eşittir.
+
+178
+00:45:15,507 --> 00:45:33,248
+H n'di. Şimdi ise neyi ekliyoruz için içerisinde? G n'i ekliyoruz. G n ne? Daha önce gördüğümüz şey aslında Uniform Cost-Turch'un yaptığı şey. Uniform Cost-Turch neydi? Kökten mevcut duruma gelişim maliyetine göre işlem yapıyordu. Yani f n eşittir g n dersek eğer bu algoritma ne olur arkadaşlar?
+
+179
+00:45:35,387 --> 00:45:38,527
+f n eşittir g n dersem bu algoritma ne derim ben?
+
+180
+00:45:43,155 --> 00:45:44,515
+Uniform Coast Surge.
+
+181
+00:45:46,735 --> 00:45:52,795
+Uniform Coast Surge, aynen öyle. Ben Uniform Coast Surge'in içerisine bu haşeni ekleyeceğim.
+
+182
+00:45:53,375 --> 00:46:00,635
+Aslında olaçın genelde kökten mevcut duruma gelişim maliyeti. Haşen ne? Mevcut durumdan, yani M'den, hedefe gidişim tahmini maliyeti.
+
+183
+00:46:00,755 --> 00:46:07,915
+O zaman FN dediğimiz şey neye dönüşüyor? Kökten hedefe M'den geçilerek gidişim tahmini maliyetine dönüşüyor.
+
+184
+00:46:10,804 --> 00:46:33,624
+Peki, şimdi Fn'i sadece Hn değil de ya da sadece Gn değil de, Gn artı Hn alırsak ne oluyor? Onu bir görelim. Şimdi yine aynı şekilde Arat'tan başlıyoruz. Arat'ın altında bu sefer şöyle bir şey yazıyor. 366 eşittir 0 artı 366. Şimdi 366 eşittir 0. 0 ne olabilir burada?
+
+185
+00:46:36,624 --> 00:46:37,384
+Gn.
+
+186
+00:46:38,324 --> 00:47:00,164
+Gn. Çünkü zaten başlangıçtayız değil mi? Başlangıçta olduğumuz için. Burada her bir durumun altında ne yazıyor olacak arkadaşlar? Fn eşittir. Gn artı Hn yazılı olacak. Hn de zaten 366 yani aradın büyükleşe olan kuş uçuşu mesafesi. Aradından giderecek 3 tane yer var. Bunlardan bir tanesi Timi Suar'da bir tanesi Zerinti.
+
+187
+00:47:10,324 --> 00:47:11,148
+Evet.
+
+188
+00:47:20,500 --> 00:47:23,539
+Şimdi Sibiyonun altında 393 eşittir.
+
+189
+00:47:27,827 --> 00:47:41,307
+140 artı 200, 53 var. Ne demek bu? Neyi gösteriyor bu? 393 eşittir. 140 artı 253. 140 ne? 253 ne?
+
+190
+00:47:46,260 --> 00:47:48,300
+140 Sibiyu'ya gelmemiz.
+
+191
+00:47:48,680 --> 00:47:49,220
+Nereden?
+
+192
+00:47:50,220 --> 00:47:50,880
+Arat'tan.
+
+193
+00:47:51,820 --> 00:47:55,040
+4'ten Sibiyu'ya gelmenin maliyeti 140.
+
+194
+00:47:55,580 --> 00:47:55,860
+Aynen.
+
+195
+00:47:55,880 --> 00:47:56,320
+Artı.
+
+196
+00:47:56,360 --> 00:47:58,760
+Sibiyu'dan Bükreş'e gitmekte 250.
+
+197
+00:47:59,880 --> 00:48:01,740
+Sibiyu'dan Bükreş'e gitmek için.
+
+198
+00:48:01,820 --> 00:48:05,800
+Sibiyu'dan Bükreş'e gitmenin tahmini maliyeti. O da 253.
+
+199
+00:48:05,800 --> 00:48:12,160
+Peki şimdi bu üçünün arasında en düşük olan toplam 393 ile Sibiyu'yu seçtik.
+
+200
+00:48:16,628 --> 00:48:31,448
+Şimdi Sibi'den gidebilecek 4 tane yer var. Şu anda kuyruğun içerisinde kaç eleman var arkadaşlar? 6 tane eleman var. 6 tane elemanın içerisinden ben Rimlik Uyu seçiyorum. Niye Rimlik Uyu seçiyorum? Çünkü 413, 12. 413 eşittir. Şöyle bir şey yazıyor bakın. 220 artı 193. Buradaki 220 nedir?
+
+201
+00:48:39,507 --> 00:48:42,887
+Hocam, kökten oraya gidişim muayetli değil mi?
+
+202
+00:48:44,447 --> 00:48:57,987
+Yani, Arat'tan Sibiya gitmek artı Sibiya'dan Rimniku'ya gitmek. İkisinin toplamı. Tamam mı? Bakalım gerçekten 220 mi? Neye bakacağız? Arat'tan Sibiya, Sibiya'dan Rimniku'ya.
+
+203
+00:48:57,987 --> 00:49:01,327
+Arat'tan Sibiya, Sibiya'dan Rimniku'ya.
+
+204
+00:49:03,092 --> 00:49:27,432
+Şurada görebiliriz. Arattan Sibiya 140'mış, Rimniku 80'mış. İkisinin toplamı kaç arkadaşlar? 220. Görüyorsunuz. Şu anda şuradaki o 220 oldu. 193 ne? Rimniku'dan. Rimniku'nun mikroşu olan tuşu mesafesi. Şimdi kuyrukta 6 tane eleman var. Bunların içerisinde hangisini seçiyor? En düşük FM denine sahip olan Rimniku'yu seçtik. Rimniku'dan gidebilecek 3 tane yer var.
+
+205
+00:49:27,860 --> 00:49:49,099
+Şu anda 8 tane kuyrukta eleman var. Bu 8 tane içerisinden bu sefer neyi seçti? Bakın Fagaras seçti. 415 çünkü. Sonra Fagaras seçtikten sonra gidebilecek yerler, işte Silvi'den Bükreş var. Şu anda bakın kuyrukta ne var? Bükreş var. Farkındasınız. Ama kuyrukta Bükreş olmasına rağmen Bükreş'i seçmiyor.
+
+206
+00:49:52,019 --> 00:50:12,059
+Eğer ki ben Best First Search kullansaydım, Büyükleş kuyruğa girdiği anda ne olmak zorundaydı arkadaşlar? Seçilirdi. Neden? Çünkü neye göre seçiyor Best First Search algoritması? Durumları. Hedefe olan tahminin uzaklıklarına göre seçiliyor. Dolayısıyla Büyükleş içeri girdiği anda onu seçer Best First Search algoritması.
+
+207
+00:50:14,099 --> 00:50:23,019
+Asr-Ai Vurtaş'ı seçmeyecek. Neden seçmeyecek? Çünkü onun Fn'i sadece Hn'den oluştuğunda. Artık Gn'den de oluşuyor. Şimdi buraya bakalım. Bükreş eşittir.
+
+208
+00:50:23,572 --> 00:50:44,572
+Yani Büyükreş'in altında ne yazıyor bakın. 450 eşitti. 450 artı 0. Oradaki 450'nin de anlamı ne? Arat'tan Sibiyo, Sibiyo'dan Fagarastan, Fagarastan'da Büyükreş'e gidilen yolun uzunluğu 450. Artı 0 hedefe olan uzunluğu taktik. Ama 450'den daha hızlı var burada arkadaşlar. Bakın Pites'ti. Pites'ti şu anda 417'de. Oradan belki de daha iyi bir yol bulabilecek Büyükreş'e. Bakalım.
+
+209
+00:50:46,239 --> 00:50:54,939
+İşte, pardon, birleştirdim. Testi seçtim, testten gidebilecek üç tane not varmış. Şu anda kuyrupta kaç eleman var arkadaşlar?
+
+210
+00:51:05,460 --> 00:51:16,059
+11 tane eleman var. Bu 11 tane elemanın içerisinden bir kıyı seçtim. Burada farkındasınız 2 tane kıyı var.
+
+211
+00:51:20,563 --> 00:51:30,443
+İki tane Sibiyu var. İki tane Krayova var. Bunlar iki taneler ama bunlar aynı şeyler mi peki?
+
+212
+00:51:34,324 --> 00:51:56,284
+Değiller. Değiller. Farklı yollardan oraya gidişler değil mi? Evet. Şimdi aynı şey farklı yol yani aynı yere farklı yollardan gidişler farklı farklı durumlar oluşturuyor. Fakat mesela Best First Search algoritmasını kullandığımız işleyin böyle bir durumda aynı yere farklı yollardan gidişler farklı mı değerlendirilecek Best First Search tarafından?
+
+213
+00:51:59,891 --> 00:52:06,531
+Yani FN'leri farklı mı olacak? Farklı olmayacak. Neden? Çünkü Best Röstörç algoritması neye bakıyor sadece?
+
+214
+00:52:09,791 --> 00:52:10,891
+Tahmineye barışa.
+
+215
+00:52:12,172 --> 00:52:22,411
+O durumun, değil mi? O durumun hedefe olan tahmini uzaklığına bakıyor. Yoksa o yola nasıl, o yola, hangi yoldan geçilerek oraya gelinmiş ona dair hiçbir bilgiyi kullanmıyor.
+
+216
+00:52:23,284 --> 00:52:47,403
+Dolayısıyla bu özelliği yüzünden aslında ne oluyor? Daha uzun bir yolu, daha kısa bir yola tercih etmesi, yani o ana kadar gelenler için söylüyorum, mümkün değil. Sadece HN'e odaklandığı için. Ama az sağa görüntüması farklı yollardan gelinmiş aynı yerleri bile birbirinden farklı olarak değerlendirebiliyor. Burada gördüğünüz gibi bir tane büyük yaşın altında 450 yazıyor, başka bir tane büyük yaşın altında 418 yazıyor.
+
+217
+00:52:47,744 --> 00:53:06,744
+Bir tane Sibiu'nun altında 591 yazıyor, diğer Sibiu'nun altında 553 yazıyor. Tamam mı? Ama Best First Search kullansaydık, Sibiu'ların altında ikisinde de ne yazacaktı arkadaşlar? Söyleyin bakalım. İki Sibiu'nun da altında ne yazacaktı? Best First Search kullansaydık.
+
+218
+00:53:23,380 --> 00:53:27,980
+Hocam iki tane CB olmayabilir diye Fagoras'ı gördükten sonra direkt bir görüşe gideceği için.
+
+219
+00:53:28,000 --> 00:53:32,940
+Olduğunu varsayalım. İki CB'nin altında ne yazacaktı?
+
+220
+00:53:33,748 --> 00:53:35,047
+253 mu hocam?
+
+221
+00:53:35,387 --> 00:53:57,567
+253 yazacaktı. Aynen öyle. Yollara bakmayacaktı hiç. Sadece Sibir'in hedefi olan uzaklığına bakacaktı. Ve dolayısıyla iki Sibir'in altında da 253 yazıyor olacaktı. Şu anda gördüğünüz gibi elimizdeki 11 tanesinin içerisinden en düşük maneliyette sayfam olan 418'e bükülük. Bükülük seçtik zaten. Ne oldu? Aramamız bitti. Benim bir soru vardı galiba.
+
+222
+00:53:58,483 --> 00:54:14,523
+Evet, ben soracaktım. Bu aynı isimde olan yerlerin şu an değerleri de belli ya. Aslında bunları Q'ya eklerken ilk önce bir aynı isimde var mı diye bakılıp ondan sonra daha düşük maliyetliği sadece Q'da bırakmak space açısını yarar sağlamayacak mı?
+
+223
+00:54:14,523 --> 00:54:16,244
+Gerek yok.
+
+224
+00:54:17,012 --> 00:54:22,312
+Çünkü büyük maliyetli olan zaten diğerine hiçbir zaman geçemeyecek. Hepsinde aynı yerlerden devam edecek.
+
+225
+00:54:22,652 --> 00:54:29,952
+Tabii ki doğru söylüyorsun. Yani onları kontrol edebilirsin ama işte o kontrol de bir şey değil mi? Ne der? Maliyet değil mi?
+
+226
+00:54:32,172 --> 00:54:41,832
+Yani kuyruğun içerisinde 10 tane eleman varken sıkıntı değil ya. Kuyruğun içerisinde 100 bin tane eleman varken her eklemeden önce acaba bu var mıydı diye bütün dizinin üzerinde gezmek.
+
+227
+00:54:43,635 --> 00:55:00,896
+Değil mi? Zor olabilir. Ama dediği şey yapılabilir, mümkün ama gerek yok. Zaten algoritma bu tarz çalışıyor ama tabii belli durumlarda daha da hızlandırmak için bu tarz ek yöntemle, probleme özgü ek bir şeyler yapmak mümkün.
+
+228
+00:55:00,896 --> 00:55:10,115
+Ama temel olarak Asr algoritması, klasik manadaki Asr algoritmasında böyle bir şey yok ama dediğim gibi Asr'ın da bir sürü versiyonu, varyasyonu var.
+
+229
+00:55:11,280 --> 00:55:18,700
+Burada şu anda sadece ilgili bir klasik yapıyı inceliyoruz. Ama algoritma optimalliğini ne yapmıyor? Zaten hiçbir şekilde rozmuyoruz.
+
+230
+00:55:20,900 --> 00:55:34,440
+Şimdi, başka soru var mı şu anda? Bu bulduğu yol optimal. En iyi yol bu. Biraz daha göreceğiz zaten niye en optimal olduğunu.
+
+231
+00:55:34,440 --> 00:55:36,019
+Şimdi arkadaşlar bir ara verelim.
+
+232
+00:55:39,188 --> 00:55:50,508
+9.57, 10'a 10 geçelim. [öğrenci] da 253. [öğrenci] senin de mikrofonun bozuk.
+
+233
+00:56:00,947 --> 00:56:05,247
+Peki arkadaşlar, 13 dakika bir ara veriyoruz. Az sonra görüşmek üzere.
+
+234
+01:09:38,036 --> 01:09:42,275
+Merhaba arkadaşlar. Biraz daha uyandık mı?
+
+235
+01:09:44,556 --> 01:09:45,716
+Daha iyiyiz hocam.
+
+236
+01:09:47,296 --> 01:09:50,896
+Daha iyisiniz. Peki. Hadi bakalım. [öğrenci], sen iyi misin?
+
+237
+01:09:52,835 --> 01:09:53,556
+İyiyim hocam.
+
+238
+01:09:53,556 --> 01:09:55,655
+Tamam. Peki.
+
+239
+01:09:58,976 --> 01:10:04,556
+Tamam. Şimdi başlayalım. Kaldığımız yerden devam edelim.
+
+240
+01:10:06,804 --> 01:10:10,484
+Şimdi bu şehirler arası problem için çözdük.
+
+241
+01:10:10,584 --> 01:10:11,783
+Ağustos'a götürmesini gördük.
+
+242
+01:10:11,904 --> 01:10:22,384
+Ağustos'a götürmesinin sezgisel kısmı için şehirler arası yol bulmada sezgisel kısmı neyle çözdük?
+
+243
+01:10:22,384 --> 01:10:29,064
+Dediğimiz gibi bir şehrin öteki yani hedef şehre olan kuş uçuşu mesafesini kullanarak çözdük.
+
+244
+01:10:29,543 --> 01:10:30,884
+Şimdi başka bir probleme geçiyoruz.
+
+245
+01:10:31,584 --> 01:10:33,684
+Problemimiz bir labirente yol bulma.
+
+246
+01:10:34,068 --> 01:10:59,188
+S noktasından G noktasına gitmek istiyoruz. S noktasından G noktasına giderken orada engeller bak. Görüyorsun şu mavi kısımlar engelleri gösteriyorlar. Şimdi sezgisel bir arama kullanmak için bizim neye ihtiyacımız var demiştik. Sezgisel yani HN'e ihtiyacımız var. Şimdi HN'i burada biz ne olarak kullanıyoruz? Tüm durumların hedefi olan Manhattan Distance'ları. Manhattan Distance demek ne demek?
+
+247
+01:11:00,243 --> 01:11:11,743
+Dikede ya da yataydaki oraya gitmek için atmanız gereken adım sayısı. Arada sanki hiçbir engel yokmuş gibi davranarak.
+
+248
+01:11:12,532 --> 01:11:37,551
+Şimdi B kısmında, yani şuradaki şu kısımda neyi görüyoruz biz? Her bir durumun G'ye olan Manhattan Distance'larını görüyoruz. Bakın, her bir durumun G'ye olan Manhattan Distance'ları. Mesela şurada bir adımda buraya gidebilirim. Mesela burası 3, 1, 2, 3 adımda G'ye gidebilirim. Sanki arada hiçbir engel yokmuşçasına. Bakın, bu aslında birazcık kuşçu mesafeyi dediğiniz gibi benziyor.
+
+249
+01:11:38,036 --> 01:11:58,156
+Mesela burası 5'miş, 5 adımda oraya 1, 2, 3, 4, 5 adımda gidebilirim. Ya da işte 1, 2, 3, 4, 5 adımda gidebilirim. Mesela burası 7'miş, 1, 2, 3, 4, 5, 6, 7 adımda oraya gidebilirim. Şurası 8'miş vs. Şu anda gördüğünüz gibi şu B'de gözüken kısımlar bizim her bir durumun neyleri arkadaşlar?
+
+250
+01:12:00,896 --> 01:12:04,156
+H, n'leri. Tamam, anlaşıldı mı?
+
+251
+01:12:07,699 --> 01:12:32,159
+Evet hocam. Tamam. Şimdi C kısmında, şurada Best First Search yaptığımızda ne olduğunu görüyoruz. Bakalım ne oluyor. Şimdi bakın, şu anda biz S'deyiz. S'de başlayacağız. S'i çektik. S'den giderecek kaç tane yer var? Kaç hareket yapabiliyoruz? S'den yapabileceğimiz? Üç tane hareket var değil mi? Bakın, şurası 6, şurası 6, şurası 8.
+
+252
+01:12:33,427 --> 01:12:36,647
+Bunları hangisini seçecek? 6, 6, 8'in içinden hangisini seçecek?
+
+253
+01:12:40,028 --> 01:12:40,967
+Altılardan birini.
+
+254
+01:12:41,507 --> 01:12:51,567
+Altılardan birini seçelim. Diyelim ki mesela şu 6'yı seçti. Bu 6'yı seçtiğinde kime ekleyecek? Şu 7'yi ekleyecek. Şu anda kimler var? 7 var, 6 var, 8 var. Hangisini seçer?
+
+255
+01:12:53,987 --> 01:12:55,307
+7, 6, 8'den.
+
+256
+01:12:55,487 --> 01:12:56,827
+Sonradaki 6'yı seçer.
+
+257
+01:12:57,387 --> 01:12:59,288
+Bu 6'yı seçtiğinde...
+
+258
+01:12:59,764 --> 01:13:18,584
+Şu anda bu 6'yı seçeneği şu 7 ekleyecek içerisine. Ne kaldı elimize? Bakalım şu 7 var, şu 7 var, bir de şu 8 var herhalde değil mi? Başka bir şey yok. Şu 7, şu 7, bir de şu 8 var. Hangisini seçecek? 7, 7, 8'in içerisinde bir tane 7'yi seçecek. Mesela şu 7'yi seçse.
+
+259
+01:13:19,444 --> 01:13:42,344
+Ya da bu 7'yi seçsin diyelim. Bu 7'yi seçtiğinde kim var elinde şu anda? Şu 8 var, şuradaki 8 var, bir de şuradaki 7 var. Hangisini seçecek? 7'yi seçecek zaten. 7'yi seçti. 7'den sonra kim seçecek? 7'den sonra kim açılacak? Şuradaki 6 açılacak. Elinde kimler var? 8, 8, 6 var bakın. 8, 8, 6. 6'yı seçecek. 6'yı seçtiğinde 5 gelecek. Yani 6 gelecek, 5 gelecek.
+
+260
+01:13:42,868 --> 01:14:05,927
+8-8-5 olduğunda yine 5'i seçecek. 4-3-2. Buradaki 8'leri, bakın bu yol boyunca görüyor musunuz? Yol boyunca 8'lik bir şey var mı hiç? Yok değil mi? Dolayısıyla şuradaki yolu ne yapacaktır en sonunda? Seçecektir ve dolayısıyla şöyle bir yolu bize bulacaktır. Bu yolun optimal olduğunu söyleyebilir miyiz?
+
+261
+01:14:08,788 --> 01:14:10,168
+Hayır.
+
+262
+01:14:10,963 --> 01:14:31,564
+Burada zaten Best First Search'un kötü tarafı gözüküyor. Ne kadar yol gittiğine hiç bakmıyor değil mi? Ne kadar yol gittiğine hiç bakmıyor. Dolayısıyla aslında optimal çözüme götürebilecek burada bir yol var ama o yolu hiçbir zaman açmayacak. Niye açmayacak? Çünkü buradakilerin haçları hiçbir zaman buradakilerin haçlarından daha yukarıda değiller. Görüyorsunuz.
+
+263
+01:14:33,243 --> 01:14:37,763
+Dolayısıyla Best First Search'ta bulunan yol şurada gördüğünüz şöyle giden bir yol.
+
+264
+01:14:38,452 --> 01:14:53,791
+Ağustos'la aynı işi yapmaya kalktığımızda, şimdi burada her birisinin içerisinde tek bir sayı yok dikkat ederseniz. İki tane sayı var. Mesela buradaki sayılara bakalım. Şimdi şu alt karşısının altındaki yerde 8 artı 1 yazıyor arkadaşlar. Oradaki 8 ne 1 ne?
+
+265
+01:14:59,604 --> 01:15:04,744
+8 Manhattan Distance, bir root'u olan uzaklık.
+
+266
+01:15:04,804 --> 01:15:16,184
+S'den oraya kaç adım atılarak gelindiği. Mesela şuraya bakalım. Burada 6 artı 3 yazıyor. Okuyamayanlar için söylüyorum. 6 artı 3 yazıyor. Oradaki 6 ne?
+
+267
+01:15:18,764 --> 01:15:20,123
+G'ye uzaklık.
+
+268
+01:15:21,584 --> 01:15:24,844
+Değil mi? Evet, G'ye olan Manhattan Distance. 3 ne?
+
+269
+01:15:25,664 --> 01:15:27,043
+3S'ye olan uzaklık.
+
+270
+01:15:28,020 --> 01:15:45,560
+S'den oraya kaç adımda gelindiği, bir tanesi kesin olan bir şey, ötekisi de tahmini olan bir şey olduğunu söylemiş. Şimdi burada da aynı şekilde ayırtmayı çalıştırırsak, burada da ilk önce buradakileri açacaktır, burada adım adım adım adım adım ilerleyecek ama bir noktadan sonra buraya doğru giderken artık şurası 3 artı 6.
+
+271
+01:15:47,188 --> 01:16:09,347
+3 artı 6'dan sonra, burada 8 artı 3 var. Burası 4 artı 9. 4 artı 9'u açmak yerine 8 artı 3'ü açmayı tercih edecek şu noktadan sonra. Ondan sonra bu tarafta zaten her zaman 4 artı 9'dan daha küçük bir şeyler elde edilecek. Ve de olsa şuradaki G'ye giden şu yolu bize bulabilecek algoritma.
+
+272
+01:16:10,163 --> 01:16:36,183
+Çünkü burada, şu yukarıda, daha doğrusu bu sol tarafta, best part search'te, şuradaki derler her zaman bunlardan ne yapıyordu? Küçük kalıyordu. Çünkü burası sadece haşa bakıyordu. Fakat burada gidilen yolu da işin içine kattığı için artık gidilen yol o kadar fazla olmaya başlıyor ki burada. Evet haşlar küçük ama g'ler büyük fark edilseniz. Burada mesela 5 artı 4 yazıyor. 4 artı 6. 3 artı kaç o?
+
+273
+01:16:36,724 --> 01:17:03,764
+Bir dakika. 3 artı 6, sonra 2 artı 7, 3 artı 8, 4 artı 9, biliyorsunuz. 1, 2, 3, 4, 5, 6, 7, 8, 9 diye artıyor bunlar ileriye doğru. Ve dolayısıyla gördüğünüz gibi burası hiçbir zaman ne olmayacaktır? Açılmayacak artık şu nokta. Çünkü bu taraftan açmaya başlayacak bu sefer ve böyle ilerleyebileceğiz. Anlaşıldı mı arkadaşlar? Ağızların burada da optimal çözümü nasıl bulabildiği.
+
+274
+01:17:06,771 --> 01:17:07,611
+Evet hocam.
+
+275
+01:17:08,992 --> 01:17:13,471
+Anladım. Şimdi iki dakika bir ara verelim. Bir saniye. Telefona bakmam gerekiyor. Bir saniye arkadaşlar.
+
+276
+01:28:50,195 --> 01:28:56,195
+Arkadaşlar, özür diliyorum. Evet, araya evve pahalı olunca şeyler duyuyor, biliyor.
+
+277
+01:28:56,195 --> 01:29:09,195
+Peki, şimdi buradaki problemde Best Search algoritmasının optimal çözümü bulamadığını, neden bulamadığını da yine bazı bir şekilde görüyoruz ama Ağustos'ların bulabildiğini gördük.
+
+278
+01:29:09,195 --> 01:29:13,963
+Bir örnek üzerinde gördük. Şu ana kadar iki tane örnek de gördük.
+
+279
+01:29:14,355 --> 01:29:23,716
+Alistar'ın analizine bakalım. Birisi complete mi? Evet. Looplara takılmaz. Complete demek şu demek. Sonsuz döngüye girmez demek.
+
+280
+01:29:24,595 --> 01:29:32,335
+Şimdi demin Best First Search'un looplara takılabildiğini söylemiştik. Fakat burada Alistar looplara takılmıyor diyoruz. Niye acaba?
+
+281
+01:29:38,836 --> 01:29:41,615
+Hocam her adımda root'tan gelen uzaklık artıyor mu?
+
+282
+01:29:44,175 --> 01:29:56,275
+GN giderek artıyor değil mi? Aynen öyle. Loop'un içerisindeki, yani mesela bir loop'a girdiğinizde aynı şeyler tekrar ederken, mesela sadece haşenlerine baktığınızda onların değerleri ne olacaktır? Hep aynı olacaktır.
+
+283
+01:29:56,275 --> 01:30:03,956
+Best First World için. Ama A-Star'da aynı yerden bir kez daha geçtiğinizde bile ne olacaktır?
+
+284
+01:30:04,595 --> 01:30:19,755
+G, N artacaktır. Yani aynı iki tanesinin değerlerinden farklı olacaktır. Demin mesela o haritada görmüştük. Birden fazla bükreş vardı, birden fazla silvi vardı. Fakat onların altındaki değerler hep farklılardı. Best First Search'e göre hepsinin aynı olacağını söylemiştik.
+
+285
+01:30:19,755 --> 01:30:31,015
+Fakat Ağustoslar da aynı yerden geçiren, aynı yere farklı yollardan gelen ya da bir dukul içerisinde aynı yerden tekrar tekrar geçirse bile onlar ne olmayacaktır? Hiçbir zaman çekilmeyeceklerdir.
+
+286
+01:30:32,595 --> 01:30:38,435
+Ne derler ona? Kuyruğun içerisinden ve looplara dediğimiz gibi bu özelliği sayesinde takılmayacak.
+
+287
+01:30:39,115 --> 01:30:43,795
+Zaman ve space, space üzerime ama ancak iyi seyrisel kurallar büyük iyileşmeler sağlayabilir.
+
+288
+01:30:43,875 --> 01:30:47,835
+Ne kadar iyileşmeler sağlayabildiğini birazdan göreceğiz örnekler üzerinde.
+
+289
+01:30:48,615 --> 01:30:53,415
+Optimal mi? Evet. Ama arkadaşlar burada bir şey yazıyor. Ne diyor? Değerlendirme fonksiyonuna bağlı.
+
+290
+01:30:54,275 --> 01:30:58,875
+Değerlendirme fonksiyonunun bir özelliği sahip olması gerekiyor arkadaşlar.
+
+291
+01:30:59,764 --> 01:31:12,783
+A-Saray'ı bulatmasının optimal olması için. Yani değerlendirme fonksiyonu dediğimiz şey neydi? H-N'di. H-N'in arkadaşlar iyimser olması gerekiyor. İyimser demek ne demek? H-N'in iyimser olması gerekiyor.
+
+292
+01:31:14,363 --> 01:31:17,963
+Toplama her zaman en küçük olanı ilk önce olması lazım mı?
+
+293
+01:31:19,363 --> 01:31:25,484
+Yok, toplama alması. H-N'den bahsediyoruz. H-N fonksiyonunun kendisinin iyimser olmasından bahsediyoruz.
+
+294
+01:31:27,220 --> 01:31:54,220
+Toplumun küçük alması o ayrı zaten. Hepsi toplumun. Sonuçta Efe'ne göre en küçük olanını alıyor. HN'in bir özelliği iyimser olması. İyimser demesi şu demek aslında. Mesela şöyle bir şey düşünün. Bir şehir var. Bir şehirdesiniz. Başka bir şehre olan HN'i hesaplıyorsunuz. Bu HN'in iyimser bir tahmini olması lazım. İyimser tahmin ne demek? Gerçekten daha...
+
+295
+01:31:59,539 --> 01:32:01,536
+Kızı sürmesi daha kısa.
+
+296
+01:32:01,536 --> 01:32:29,515
+Küçük bir şey olmazsa, yani oraya normalde atıyorum, iki saatte gidebiliyorsanız oraya mesafeyi saate çevirdim. Oraya siz mesela iki saatten daha uzun bir tahminde bulunmayacaksınız. Anlatabildim mi? Yani ne yapacaksınız? İşte iki saatten daha az bir şey yapacak. Bir saat diyeceksiniz, yarım saat diyeceksiniz vesaire. İyimser bir tahmininiz varsa eğer HN için o zaman optimal oluyor. Eğer kötümserse sizin HN'iniz o zaman az.
+
+297
+01:32:29,536 --> 01:32:51,935
+Alt-Star algoritması optimal bir algoritma değil arkadaşlar. Tamam. Bunun neden öyle olduğunu birazdan göreceğiz. Tamam. Ama dediğim gibi bunu aklınıza tutalım. HN'in iyimser olması şart Alt-Star algoritmasının optimal olabilmesi için. Peki, shortest distance, shortest line distance diye ifade ettiğimiz kuş uçuşu mesafe, iyimser bir tahmin midir?
+
+298
+01:32:56,020 --> 01:32:57,319
+Evet, iyimserdir hocam.
+
+299
+01:32:58,460 --> 01:33:13,560
+Değil mi? Kesinlikle iyimser bir tahmindir. Yani kuş uçuşu oraya ben en iyi ihtimalle ne yaparım diyorum? Dümdüz gidersem diyorum. Bu çok iyimser bir tahmin. Ya da deminki problemde mesela Manhattan Distance'ı kullandım. Buradaki Manhattan Distance iyimser bir tahmin mi?
+
+300
+01:33:14,560 --> 01:33:15,239
+İyimser hocam.
+
+301
+01:33:17,779 --> 01:33:44,420
+Hiç arada engel yokmuşçasına hareket etmekten bahsediyorum. Gerçek uzaklığın mesela ben burada şuraya iki demişim değil mi? Buradan buraya ben iki adımda giderim demişim. İyimser olarak. İyimser olarak demişim. Çünkü gerçekte bu nasıl arkadaşlar? Buradan buraya ben iki adımda gidebilir miyim? Gidemem. Ne yapmam lazım? Şöyle bir yol gitmem lazım değil mi? Ya da şuradan şöyle bir yol gitmem lazım. İkiden çok büyük. Gerçeğe göre oldukça düşük bir tahminde bulunuyor.
+
+302
+01:33:45,043 --> 01:33:47,083
+Anlaşıldı mı iyimserlikten kastımız?
+
+303
+01:33:49,984 --> 01:33:50,603
+Evet hocam.
+
+304
+01:33:52,423 --> 01:33:53,423
+Ama peki.
+
+305
+01:33:55,064 --> 01:33:59,523
+Şimdi başka bir probleme geçelim. Problemimiz bu sefer daha önceden de gördüğümüz 8 taş.
+
+306
+01:33:59,884 --> 01:34:06,203
+8 taş için, tabii dediğim gibi her problem için sizin bir sezgisel fonksiyon tasarlamanız gerekiyor.
+
+307
+01:34:06,323 --> 01:34:08,103
+Asla aygatmasının gereksinimi bu.
+
+308
+01:34:08,692 --> 01:34:27,192
+Burada şimdi iki tane seyirciler kural tamamlamışım. Bir tanesi H1N, ikincisi ise H2N. H1 yani farklı yürüristikler bunlar. H1'i kullanarak da ben aslar çalıştırabilirim. H2 kullanarak da ben aslar çalıştırabilirim. Şimdi bakalım H1 de diyor ki yerinde olmayan taşların sayısı.
+
+309
+01:34:28,564 --> 01:34:47,364
+Yerinde olmayan taşlar için. Mesela şöyle bir şey düşünelim. Bu başlangıç durumu, bu da hedef durumu olsun. Bu başlangıç durumu için H1'i bulalım. H1'i bulalım başlangıç durumu için. Yerinde olmayan taş. Şimdi yerinde olan taş var mı bakalım bu ikisi arasında hiç?
+
+310
+01:34:49,844 --> 01:35:03,663
+Hiç kimse yerinde değil. Dolayısıyla H1S dediğimiz durum nedir arkadaşlar? 8'dir. Tamam mı? Peki H2 hesaplayalım. H2 neymiş? Taşların hedefteki yerlerine uzaklıkları toplamı.
+
+311
+01:35:14,420 --> 01:35:33,840
+Birin olması gereken yer neresi? Şurası. Yani şuraya gidecek değil mi? Oraya ben Manhattan Distance'a kaç adımda gidebilirim? Bir, iki, üç adımda gidebilirim. O zaman bir için ne yazmışım diye? Üç yazmışım. Şu anda burada. İki şurada. Nerede olması gerekiyor? Bir yanında. O zaman bunun Manhattan Distance'ı kaç? Bir.
+
+312
+01:35:34,868 --> 01:36:00,347
+3'e bakalım. 3 nerede? Şu anda burada. Olması gereken yer neresi? Burası. Oraya kaç adımda gidebilirim? 1, 2. 4 içinde 2 adım gerekiyormuş. Bakalım gerçekten önemli. 4 burada. Olması gereken yer burası olan 1, 2 adım. 5 de 2 imiş. 5'e bakalım. 5 burada şu anda. Olması gereken yer şurası. Bakın. 6'ya bakalım. 6, 3.
+
+313
+01:36:00,851 --> 01:36:07,851
+Uzaklıktaymış Manhattan Distance'a göre şu anki haliyle olması gereken yer nasıl? Şu anda burada olması gereken yer burası. Uzaklıktaymış.
+
+314
+01:36:07,851 --> 01:36:11,851
+Anlaşıldı mı yaptığımız hesap? H1 için ve H2 için?
+
+315
+01:36:17,300 --> 01:36:30,479
+Burada yine başka hedef durumları için mesela H1 ve H2'ler hesaplanmış. Şurada görüyorsunuz H1 1, H2 de 1, H1 5, H2 de 7 çıkmış mesela burada.
+
+316
+01:36:35,680 --> 01:36:40,180
+Şimdi baskınlık bir kavram var. Buna bakalım. Ne diyor?
+
+317
+01:36:40,659 --> 01:36:45,879
+Geçerli iki sezgisel kural. Geçerli demek şu demek, iyimser demek.
+
+318
+01:36:45,879 --> 01:36:53,399
+Tamam mı? Aslar açısından. İyimser. Şimdi bana söyleyin bakalım. Buradaki bizim demin tanımladığınız H1 ve H2 ikisi de iyimserler mi?
+
+319
+01:37:08,595 --> 01:37:10,715
+Yani H2 pek ilimsel gözükmüyor.
+
+320
+01:37:13,355 --> 01:37:13,995
+Niye?
+
+321
+01:37:16,515 --> 01:37:20,255
+Uzaklıkları arka arkaya toplamış, yani fazla gözüküyor.
+
+322
+01:37:20,515 --> 01:37:24,915
+Hayır, şimdi H1'i de böyle düşünmeyelim. Gerçeğe göre.
+
+323
+01:37:25,815 --> 01:37:31,695
+İlimsel demek şu demek. İlimsel demek şu demek. Gerçeğe göre daha küçük bir şey tahmin ediyor mu demek?
+
+324
+01:37:32,532 --> 01:37:53,291
+Gerçeğe göre daha küçük bir şey tahmin ediyor mu? Şimdi taş bir ne yapıyor? Yerinde olmayan taşların sayısı. Sanki taşlar ışınlanabiliyormuş gibi bir uzaklık hesaplıyor. Fark ettiniz mi? Taşlar bir anda istediği yere gidebiliyormuş gibi. Kaç tane yerinde olmayan taş varsa o kadar tane adımda ben sanki oralara gidebilirim diye.
+
+325
+01:37:53,684 --> 01:38:16,684
+H2'ye bakalım. H2'de sanki arada hiç engel yokmuşçasına oraya gidebilirim diye varsayıyor. Gerçekte öyle mi? Mesela şöyle bir şey düşünün. Mesela bir için 3 yazdık değil mi şuraya? Bir için bir 3 adımda gidebilir dedi. Şimdi bir burada, pardon bir burada, şuraya 3 adımda gidebilir diyorum. Doğru mu? Peki şimdi gerçekten bu bir buraya 3 adımda gidebilir mi?
+
+326
+01:38:20,979 --> 01:38:22,039
+Gidemez hocam.
+
+327
+01:38:22,899 --> 01:38:24,219
+Gidemez. Ne olması lazım?
+
+328
+01:38:24,799 --> 01:38:27,779
+Değil mi? Yani altıyı kenara çekeceksiniz.
+
+329
+01:38:28,759 --> 01:38:34,579
+Biri böyle çekeceksiniz. Sonra bunu buraya çekeceksiniz. Bunu böyle çekeceksiniz. Sonra buradakini aşağıya indireceksiniz. Burası dönecek vs.
+
+330
+01:38:35,059 --> 01:38:36,699
+En azından yedi sekiz adım var. En azından.
+
+331
+01:38:36,959 --> 01:38:38,919
+Biri şuraya getirebilmek için. Doğru mu?
+
+332
+01:38:40,359 --> 01:38:45,979
+Dolayısıyla burada her bir adımın olacaktan...
+
+333
+01:38:46,804 --> 01:38:59,164
+Nasıl bir farkı var? Daha fazla değil, daha az söylüyor değil mi? Gerçekte. Yani şuradaki durumdan şu hedef duruma 18 adımda gitmeniz mümkün mü arkadaşlar?
+
+334
+01:39:01,023 --> 01:39:01,363
+Hayır.
+
+335
+01:39:02,884 --> 01:39:09,664
+Değil. Peki o zaman şunu söyleyebilir misiniz? H1 ve H2 ikisi de iyimserdir diyebilir miyiz?
+
+336
+01:39:10,904 --> 01:39:11,703
+Diyebiliriz evet.
+
+337
+01:39:11,824 --> 01:39:12,564
+Diyebiliriz hocam.
+
+338
+01:39:13,460 --> 01:39:20,920
+İkisi de iyimserler. Bu konuda enfikir. Peki, H1 mi daha iyimser, H2 mi daha iyimser?
+
+339
+01:39:23,860 --> 01:39:24,819
+H1 hocam.
+
+340
+01:39:26,300 --> 01:39:32,479
+H1 daha iyimser. Peki, H2 her durumda H1'den büyük eşit midir?
+
+341
+01:39:37,524 --> 01:39:39,623
+Evet, her durumda öyledir.
+
+342
+01:39:42,304 --> 01:39:47,543
+Yani, Haş'ın daha büyük olacağı bir durum olabilir mi?
+
+343
+01:39:54,068 --> 01:40:01,228
+Hocam, H1 sadece yerinde var mı yok mu onu hesaplıyorum. H2 ne kadar uzaklıkta olduktan topladığı için her durumda daha fazla.
+
+344
+01:40:01,548 --> 01:40:09,408
+Dolayısıyla şöyle bir durum var. Yani H1'de yazan sayı kaç ise H2'de o kadar tane sayı toplanacak değil mi?
+
+345
+01:40:12,340 --> 01:40:39,460
+Bakın tekrar soruyorum. H1'de yazan sayı kaç ise? Mesela 5 diyelim ki. H2'de 5 tane sayı toplanacak, doğru mu? O sayılarda en iyi ihtimalle kaç olabilirler? 1 olabilirler. 0 zaten yerinde olacağı için 1 olamaz. En düşük 1 olacaklardır. Dolayısıyla mesela diyelim ki burası 8 ise bunların her biri en iyi ihtimalle kaç olurlar zaten? 1 olurlar. Dolayısıyla 8 tane birin toplamı yine en iyi ihtimalle ne olacaktır? En fazla.
+
+346
+01:40:40,500 --> 01:40:56,559
+En az 8 olacaktır değil mi? Dolayısıyla buradaki H1'den daha küçük bir değer elde etmemiz H2 ile mümkün değil. Anlaştık mı? Yani H2 her durumda H1'den büyük eşittir. Tamam mı?
+
+347
+01:40:59,299 --> 01:41:00,420
+Tamam hocam.
+
+348
+01:41:00,420 --> 01:41:02,399
+Peki.
+
+349
+01:41:07,572 --> 01:41:11,512
+H2, H1'den daha kötümserdir. Doğru mu?
+
+350
+01:41:15,315 --> 01:41:15,956
+Doğru.
+
+351
+01:41:19,075 --> 01:41:25,295
+Tamam. Peki o zaman şunu da söyleyebilir miyim? H2 gerçeğe H1'den daha yakındır.
+
+352
+01:41:27,675 --> 01:41:27,956
+Evet.
+
+353
+01:41:30,095 --> 01:41:34,015
+Tamam. O zaman arkadaşlar şunu söylüyoruz.
+
+354
+01:41:36,675 --> 01:41:39,956
+Eğer ki H2, H1'e baskın sayılır.
+
+355
+01:41:41,747 --> 01:41:45,688
+Bundan her zaman daha büyükse H2 arama için daha uygun. Niye?
+
+356
+01:41:50,163 --> 01:41:55,163
+Aşkı arama için daha uygun. Niye? Demin söyledik aslında. Evet.
+
+357
+01:41:58,503 --> 01:41:59,863
+Gerçeğe daha yakındır.
+
+358
+01:42:00,023 --> 01:42:05,583
+Aşk iki, Aşk bir'e göre gerçeğe daha yakındır. Gerçeği daha iyi tahmin eder. Doğru mu?
+
+359
+01:42:07,423 --> 01:42:09,623
+Şimdi o zaman arkadaşlar şunu söylüyoruz.
+
+360
+01:42:11,144 --> 01:42:16,123
+Ağustar algoritmasındaki, Ağustar algoritmasının optimal olması için sezgisel kuralın
+
+361
+01:42:16,467 --> 01:42:33,868
+Ne olması gerekiyor? İyimser olması gerekiyor. Ama elinizde birden fazla iyimser kural varsa bunların içerisinden hangisini kullanmak daha mantıklı? En kötümserini. Yani en kötümseri demek ne demek? Aslında gerçeğe en yakını demek.
+
+362
+01:42:36,307 --> 01:43:01,148
+Tamam. Gerçeğe daha yakın bir şey tahmin ettiği için de dolayısıyla daha gerçekçi tahminler yapabiliyor ve daha uygun oluyor arama için. Daha uygun oluyor demek ne demek? Daha kısa sürede çözümü buluyor demek. Tamam. Şimdi burada bir karşılaştırma var. Sekiz taş için arama maliyetleri. Şimdi gerçekte çözüm derinliğinin 12 olduğunu varsayalım. Yani 12 derinlikte bir çözüm olduğunu varsayalım.
+
+363
+01:43:03,220 --> 01:43:28,079
+Kuyruktan çekilen eleman sayıları yazıldı burada. Iterative Deepening Search 3.6 milyon tane not çekiyor. Bakın kuyruktan. Kuyruğun büyüklüğünden bahsetmiyorum. Kuyruktan çözümü bulan kadar. Çektiğin eleman sayısı 3.6 milyon. H1 virüsini kullanırsak ağızların içerisinde 227 tane not çekiyoruz sadece.
+
+364
+01:43:29,427 --> 01:43:55,627
+Kullanırsak 73 tane. Aradaki farkı görebiliyor musunuz? H1 ile H2 arasındaki fark o kadar önemli değil belki. Asıl önemli farkı görebiliyor musunuz? Iterative Deepening Search ve A-Star'ın arasındaki. Çok büyük fark var. D24'e gittiğinizde zaten Iterative Deepening Search'u yapmanız mümkün değil. Yani süper bilgisayar da kullansanız falan mümkün değil. Çözemiyorsunuz. Bitmiyor.
+
+365
+01:43:56,115 --> 01:44:15,195
+Çözemiyorsunuz derken bitmiyor. Ama onun yanında A-Star'ın H1 ve H2'sini de gördüğünüz gibi oldukça yapılabilir durumlar var. B-24'ten daha yüksek seviyelere çıktığımızda zaten kullanılabilecek başka bir algoritma A-Star tarzından dışında.
+
+366
+01:44:15,195 --> 01:44:17,235
+Peki, şöyle bir şey sorayım şimdi.
+
+367
+01:44:18,100 --> 01:44:36,300
+D eşittir 12'de. İDS bir çözüm buluyor mu? Buluyor. Daha uzun sürede buluyor ama buluyor. A-Star'ın H1'i ve H2'si de birer çözüm buluyorlar. Bu çözümler nasıllardır? Mesela iterative deepening search'ün çözümü optimal midir? Onu sorayım ilk önce.
+
+368
+01:44:37,640 --> 01:44:38,399
+Optimaldir, evet.
+
+369
+01:44:39,579 --> 01:44:42,540
+Neden optimaldir? Iterative deepening search ne zaman optimaldi?
+
+370
+01:44:48,243 --> 01:44:54,423
+Literative Deep Link Search algoritması ne zaman optimaldi? Mesela şehirleri arası yol bulmada optimal değildi.
+
+371
+01:44:54,543 --> 01:44:55,683
+Costlar eşit olunca.
+
+372
+01:44:57,492 --> 01:45:20,052
+Kostlar eşit olunca, bu problemde kostlar eşit mi? Eşit. Niye? Bir taşı sağa sola yukarı aşağı, yani hani şeyi ne derler ama boş taşı sağa sola yukarı aşağı hareket ettirmenin maliyetleri nedir çünkü burada? Eşittir bir adım, bir adım hepsi. Dolayısıyla iterative deepening search algoritması burada nasıl çalışacak? Optimal çözümü bulacak bize. Ağızların H1 ve H2'si de optimal çözümü bulacaklar mı?
+
+373
+01:45:27,028 --> 01:45:28,588
+Onlar da o ihtimal çözüm bulacaklar.
+
+374
+01:45:29,228 --> 01:45:36,347
+Tamam. Dolayısıyla aynı olabilirler, olmayabilirler ama neleri kesinlikle aynıdır bu üçünün de bulduklarının arkadaşlar?
+
+375
+01:45:38,588 --> 01:45:39,388
+Petler aynıdır.
+
+376
+01:45:41,468 --> 01:45:42,868
+Petler aynı değildir.
+
+377
+01:45:43,808 --> 01:45:45,088
+Maliyetler aynıdır.
+
+378
+01:45:45,908 --> 01:45:47,980
+Maliyetleri aynıdır. Aynen o pet...
+
+379
+01:45:48,404 --> 01:46:02,844
+Petlerin maliyetleri aynadır. Zaten petlerin, şimdi burada her bir adımın maliyeti eşit ya, o zaman petlerin neleri aynı diyebiliriz kesinlikle. Uzunlukları aynadır. Doğru mu? Petlerin.
+
+380
+01:46:02,844 --> 01:46:04,623
+Evet.
+
+381
+01:46:05,055 --> 01:46:18,055
+Petlerin yani maliyetler çünkü her bir adım aynı ya. Dolayısıyla maliyet de aslında kaç tane adım atıldığıyla alakalı bir şey dönüşecek. Maliyetler birinden farklı olsaydı adım sayısından bakarak ne yapamazdı? Maliyeti kestiremezdi. Ama burada zaten maliyetler eşit oldukları için...
+
+382
+01:46:18,579 --> 01:46:37,319
+Her bir adım aynı maliyette. Dolayısıyla kaç tane adım atıyorsan o kadar uzun ya da o kadar kısa bir çözümün var demektir. Dolayısıyla bunların buldukları çözümlerin hepsinin de adım sayıları aynılar. Maliyetleri dolayısıyla aynılar. Fakat iç çelikleri farklı olabilirler mi? Olabilirler. Onda bir şart yok.
+
+383
+01:46:38,963 --> 01:46:52,423
+Ama tabii buradaki kritik olan şey ne? Şurada gördüğümüz bu çözümleri bulmak için harcadıkları süreler birbirlerinden oldukça farklılar. Yani sezgisel arama algoritmaları kullandığımızda, şurada görüyorsunuz.
+
+384
+01:46:52,423 --> 01:46:55,423
+Sezgisel arama algoritmaları kullandığınızda,
+
+385
+01:47:01,140 --> 01:47:14,400
+Optimal sonuca çok çok daha hızlı bir şekilde erişebiliyorsunuz. Peki, burada niye iterative deepening search var da enlemesine arama yok? Onu sorayım. Niye buraya enlemesine arama yazılmamış da iterative deepening search yazılmış?
+
+386
+01:47:18,484 --> 01:47:20,484
+Ya da Uniform Cost-4 yazılmamış.
+
+387
+01:47:26,003 --> 01:47:28,604
+Onları da yazabiliriz. Onlar da optimaller burada.
+
+388
+01:47:36,020 --> 01:47:38,940
+Neden enlemesini aramayı burada kullanmak çok uygun olmayabilir acaba?
+
+389
+01:47:40,539 --> 01:47:49,280
+Hocam, iteratifte bu kadar not varsa, diğerinde bu lineer olmasına rağmen böyleyse, üstel bir durumda çok daha karmaşık olabilir diye anlıyor.
+
+390
+01:47:49,659 --> 01:48:01,659
+Yok, karmaşıklığı, yani şöyle söyleyeyim, iteratifte Deepening Search 3.6 milyon not çektiyse, enlemesini arama bundan daha fazla not çekmez.
+
+391
+01:48:03,028 --> 01:48:27,108
+Çünkü iterative deepening surge'in optimalliği sağlaması için ne yapması gerekiyordu? Fazladan arama yapması gerekiyordu. Hatırlıyorsunuz değil mi? Hani birinci seviyedekini bir kere açıyordu, onun bir altındakini bir kere açıyordu fazladan. Dolayısıyla 3.6 milyon değil de belki bunun yarısı enlemesini arama. Ama yine de burada iterative deepening surge çözüyor. Niye acaba?
+
+392
+01:48:28,532 --> 01:48:34,411
+Henlemesini arama niye burada çok uygun gözükmüyor gibi.
+
+393
+01:48:37,971 --> 01:49:05,411
+Hafıza arkadaşlar, hafıza. Tamam mı? Yani o işte 1.8 milyon tane nodu açana kadar onun tutması gereken hafıza miktarı öyle boyutlara erişiyor ki sizin onu bilgisayarda tutmanız mümkün olmuyor. Tamam mı? Yani çok zor tutuyorsunuz ya da öyle söyleyeyim. Ama 24 falan gibisinden durumlarda, yani D'nin 24 olması durumunda zaten orada bellek ne olacaktır arkadaşlar? Yetmeyecektir artık.
+
+394
+01:49:06,003 --> 01:49:28,783
+Ne kadar büyük bir belliğimiz olursa olsun, yetmeyecekler ya korkunç boyutlara ulaşacak. Teorik olarak tabii ki mümkün de. O yüzden burada iterative deepening search yazıyor. Yani dediğim gibi enlemesin arama burada daha az not çekerek ama yani daha az derken 3.6 milyonu işte en fazla yarıya falan indirir en iyi durumda.
+
+395
+01:49:29,551 --> 01:49:36,551
+1.8 milyona falan düşür. Yani gidip 18 bine ya da bine falan düşüremez. Çünkü...
+
+396
+01:49:37,395 --> 01:50:00,755
+Onu da konuşmuştuk. ITRT Deep Garing Search'un en büyük maliyetli olan kısmı neyse son katman değil mi? Son katmandakiler de zaten sadece ne kadar açılıyorlar? Bir kez açılıyorlar değil mi onlar? Sadece bir kez açılıyorlar. Üsttekiler daha fazla açılıyorlar ama üsttekiler üzerindeki not sayısı daha az olduğu için en alttakine göre onların etkisi o kadar korkunç büyük olmaya en fazla iki kat civarında falan bir şey olabilir.
+
+397
+01:50:03,539 --> 01:50:04,039
+Peki.
+
+398
+01:50:04,820 --> 01:50:06,760
+Hocam, bir soru sorabilir miyim?
+
+399
+01:50:06,820 --> 01:50:07,100
+Evet.
+
+400
+01:50:07,579 --> 01:50:10,880
+Bu sekiz taş probleminde G'e'ni nasıl alıyoruz?
+
+401
+01:50:11,360 --> 01:50:11,539
+Evet.
+
+402
+01:50:13,060 --> 01:50:13,380
+Neyi?
+
+403
+01:50:13,699 --> 01:50:15,539
+G'e'ni nasıl belirliyoruz burada?
+
+404
+01:50:19,252 --> 01:50:24,051
+Mesela bu durumdan gidilebilecek kaç tane durum var? Bana söyle.
+
+405
+01:50:24,711 --> 01:50:29,931
+Dört. Bu durumdan gidilebilecek kaç durum var? Dört durum var. Bundan dört tane şey çıkıyor değil mi?
+
+406
+01:50:30,792 --> 01:50:33,311
+Evet. Onların her birinin köke olan uzaklıklarına kadar?
+
+407
+01:50:34,391 --> 01:50:34,692
+Bir.
+
+408
+01:50:36,412 --> 01:50:41,912
+Bir. Sonra her birinden yine birkaç tane daha çıkacak değil mi? O çıkanların köke olan uzaklıkları ne olacak?
+
+409
+01:50:43,091 --> 01:50:43,931
+İki olacak.
+
+410
+01:50:45,939 --> 01:50:47,359
+İki olacak. Anlatabildim mi?
+
+411
+01:50:48,220 --> 01:50:49,659
+Evet, anladım hocam.
+
+412
+01:50:50,739 --> 01:50:54,319
+Tamam. Sonra her birinin HN'lerini ayrıca bulacaksınız zaten.
+
+413
+01:50:54,939 --> 01:50:56,059
+Tamam hocam, teşekkür ederim.
+
+414
+01:51:01,747 --> 01:51:21,608
+Şimdi buna da baktık. Şimdi esnetilmiş problemler, orijinal problemden daha az kısıtama içeren problemlere esnetilmiş problemler deniyor. Teorik olarak problemleri aslında esnetiyoruz. Sekiz taşta bir taş istediği yere gidebilir dersek H1'e en kısa çözümü veriyor. Bir taş istediği komşusuna gidebilir engel falan olsa da dersek orada da H2 en kısa çözümü veriyor.
+
+415
+01:51:21,608 --> 01:51:26,787
+Şimdi yeni bir problem var. Bunu size egzersiz olarak bırakıyorum aslında.
+
+416
+01:51:27,216 --> 01:51:50,336
+Problem şu, yedi gözlü bir dizi var. Bu dizinin ilk sol taraftaki üçüne siyah taşlar koyulmuş. Sonraki üç tanesi beyaz taşlar koyulmuş. Operatörlerimiz şunlar. Bir taş yanındaki taşın diğer yanı boşsa üzerinden atlayabilir. Bunun maniyeti iki. Bir taş yanındaki boş yere gidebilir. Bunun da maniyeti bir.
+
+417
+01:51:54,547 --> 01:52:10,328
+Başlangıç şu arkadaşlar. Hedef ise tüm V'ler B'lerin solunda. Yani buradaki üç tane beyaz taş nereye geçecekler? Üçü birden hepsi B'lerin soluna geçecekler. Yani V'ler bu tarafta olacaklar, B'ler bu tarafta olacaklar.
+
+418
+01:52:10,328 --> 01:52:19,167
+Tamam mı? Şimdi burada haş önerileri neler olabilir diye sormuşum.
+
+419
+01:52:20,659 --> 01:52:26,000
+Soruyorum yani. Bunu kendiniz şey yapın. Birazcık inceleyin bakalım.
+
+420
+01:52:30,420 --> 01:52:47,359
+Şimdi gelelim, bir problem üzerinde çeşitli algoritmaları çalıştıracağız. Onların işte bellekten ne kadar eleman oluşuyor falan. Onları bir toplu olarak göreceğiz aslında burada.
+
+421
+01:52:47,828 --> 01:53:13,248
+Şimdi şehrimiz, şehir arası yol yine klasik daha önce çözdüğümüz problem. Şekil 1'de dediğim gibi şeyler var. Şehir arası yollar var. Şehir 2'de ise turistik fonksiyonumuz var. Amacımız G olduğu için her bir şehrin G'ye olan tahmini uzaklıkları var. Dur, muza yı arama ağacı geçelim onu. Mesela enlemesini arama yaparsak siteğin içini görüyorsunuz şu anda. Enlemesini aramada. Sitekte böyle böyle yerlere erişebiliyoruz.
+
+422
+01:53:15,091 --> 01:53:38,671
+Derinlemesini arama yaparsak, stekte gördüğünüz gibi çok fazla eleman birikmiyor. Çözümü bulana kadar. Burada en sonunda şu yolu bulmuş mesela bu. Bu da şu yolu bulmuş. Farklı yollar bulmuşlar. Peki bu yolların optimal olduğundan emin olabilir miyiz? Söyleyebilir misiniz bana? Mesela enlemesini arama burada optimal çözümü bulmuş mudur?
+
+423
+01:53:40,756 --> 01:53:48,996
+Bulduğundan emin olabilir miyiz daha doğrusu? Öyle söyleyelim. Bulduğu çözüm optimaldir diyebilir miyiz? Denilemesini aramaya. Şurada.
+
+424
+01:53:52,315 --> 01:53:54,256
+Diyemeyiz hocam. Costlar eşit değil.
+
+425
+01:53:54,896 --> 01:54:03,436
+Diyemeyiz. Costlar eşit değil. Çok güzel. Dolayısıyla zaten denilemesini aramaya da optimal diyemeyiz. Peki düşük maliyetli arama bunun bulduğu sonuca optimal diyebilir miyiz?
+
+426
+01:54:04,615 --> 01:54:04,936
+Evet.
+
+427
+01:54:06,068 --> 01:54:17,568
+diyebiliriz. Çünkü zaten bu maliyetler birinden farklı olsa da optimal bir sonuç. Dolayısıyla UCS'nin bulduğu yol şu S-D-E-F-G yolu neymiş? Optimal bir yolmuş. Onu bulan diğerleri de artık optimal dediler.
+
+428
+01:54:18,788 --> 01:54:25,988
+Demlemesini aramaktır. Tabii düşük maliyetli aramanın da burada memori gereksiniminin oldukça büyük olduğunu görebiliyorsunuz. O da zaten belli.
+
+429
+01:54:27,688 --> 01:54:32,228
+Astar arama bakın. Astar aramanın şeyi bu. Bellek bu kadarcık.
+
+430
+01:54:32,724 --> 01:54:37,463
+Adım sayısı da bu kadar gördüğünüz gibi. Oldukça az adımda gelişebiliyor. Oldukça güzel.
+
+431
+01:54:41,604 --> 01:54:50,363
+Şurada aslında bütün süreci çok güzel gösteren bir gösterim tipi var. Ben de genelde sınavlarda bunu istiyorum sizlerden. Aklınıza olsun.
+
+432
+01:54:50,868 --> 01:55:14,488
+Şu ağaç gösterimi değil de şu siteyin içi gösterimini istiyorum. Bunu adım adım yaparsanız çok iyi olur. Elle bunu gerçekten yapın istiyorum. Şimdi bunu sizle beraber oluşturacağız. Bunu benim gibi sizden siteyi için göstererek arama ayı bırakmasına ilerletin diye bir şey görürseniz bir yerlerde o zaman bu aklınıza gelmeli. Bunu yapmalısınız. Tamam mı?
+
+433
+01:55:14,804 --> 01:55:42,184
+Peki, bu neyi gösteriyor ilk önce? Bu bir dizi. Dizinin t eşittir bir anındaki hali birinci satır, t eşittir iki anındaki hali ikinci satır, t eşittir üç anındaki hali üçüncü satır. Yani aynı dizinin farklı zamanlardaki hallerini görüyoruz şu anda ekranda. Yani bir matris yok elinizde. Elinizde bir dizi var. Bu dizinin birinci andaki hali bu, ikinci andaki hali bu, üçüncü andaki hali bu. Bu şekilde ilerliyor.
+
+434
+01:55:42,644 --> 01:56:06,003
+Burada S eşittir, S'ten başlayıp G'ye giden bir yol bulmaya çalışıyoruz. S'ten işte en sonunda burada G çekilmiş, G'nin olduğu şey çekilmiş ve bitmiş burada arama. Dolayısıyla burada arama bir adım, iki adım yani kuyruktan kaç tane eleman çekilmiş, kaç tane satır varsa o kadar tane eleman çekilmiş demek. Tamam mı? Yani bir, iki, üç, dört, beş, altı, yedi, sekizinci çekilen not.
+
+435
+01:56:06,452 --> 01:56:27,132
+Ama hedefmiş burada ve biz burada aramayı sonlandırmışız AUSTER algoritmasıyla. Peki siteyin büyüklüğü zaten burada görüyorsunuz. İşte bu boyutlara erişmiş. AUSTER algoritması bellek yönetimi açısından çok çok iyi bir algoritma değil. Yani Depth First Order kadar iyi bir algoritma değil. Aklınızda o da kalsın.
+
+436
+01:56:30,068 --> 01:56:54,807
+Adım sayısı büyüdükçe, gerekli olan adım sayısı büyüdükçe onun da tutması gereken sayısı fazlalaşıyor. Bellek sayısı fazlalaşıyor. Bellek büyüyor. Ama çok fazla adıma ihtiyaç duymadığı için oradan kurtarıyor. Ama dediğim gibi ağızlarında çeşitli şeyleri var. Yani bu tarz varyantları var. Ama dediğim gibi onlara şimdi bu ders kapsamında gelinmeyeceğim. Belki 10 tane varyant vardır.
+
+437
+01:56:57,716 --> 01:57:17,876
+Bu süreci bir görelim beraberce. Şimdi buradaki her bir hücrenin içine bir şeyler yazıyor. Ondan ne acaba? Bunlar birer durumu ifade ediyor. Mesela şu bir durum. Bu durum neyi gösteriyor? Şimdi S, D, E yolunu gösteriyor. S, D dediğimiz şey ne? Şu S'den D'ye git, D'den de E'ye git. Şu yolu gösteriyor. Şu yol. Bu bir durum. Tamam.
+
+438
+01:57:18,868 --> 01:57:45,068
+Bunun son bulunduğu yer neredeyse E. Yani şunun en sonundaki yazıyı tekrardan buraya yazmışım. Yani E'deyim ben. Onu gösteriyorum. Ama hangi E'deyim? S'den D'ye, D'den E'ye geçişin E'sindeyim. Tamam mı? Birden fazla E olabilir mi? Olabilir. Mesela S'de E'de bir E. Mesela şöyle bir E'de olabilir. S, A, D, E'de olabilir değil mi? Bunlar birden farklı E'lerdir. Ya da şu da olabilir. S, A, B, E. Bu da bir E'dir ama hepsi birden farklıdır.
+
+439
+01:57:46,068 --> 01:58:09,908
+Dolayısıyla içeride birden fazla E olabilir ama bu E'ler denilen farklı değerler verilecektir eğer ki A'sar kullanıyorsak. Bakalım. Altındaki değerler neyi ifade ediyor arkadaşlar? 6.9 bu E'nin hedefi olan uzaklığı. Hedefi olan tahmin uzaklığı. Yani E'nin G'yi olan bakın 6.9 görüyorsunuz. Şuradaki 9 neyi ifade ediyor peki? Onu da siz söyleyin.
+
+440
+01:58:13,619 --> 01:58:35,180
+Kökten, yani ne derler? S-D-E yolunun uzunluğunu gösteriyor değil mi? S-D-E yolunun uzunluğunu gösteriyor. Yani burada hem yol var, tamam mı? Bu en son hali, en son bulunduğu şehir. Burası ise dediğim gibi 6.9'luk bir kısım.
+
+441
+01:58:36,180 --> 01:58:41,100
+Bir saniye arkadaşlar, bakmam gereken bir telefon. Kısa sürecek bir saniye.
+
+442
+01:59:23,891 --> 01:59:48,431
+Şimdi bunu çalıştıralım arkadaşlar. Başlangıçta algoritmamız ne yapıyordu hatırlayalım. Başlangıç durumunu çekiyordu, başlangıç durumunu kuyruğa atıyordu, kuyruğa attı. S eşittir, yani S 11 artı 0. Buradaki 11 ne ifade ediyor? S'in hedefi olan tahmini uzaktı 11. 0 ne ifade ediyor? Kök zaten kendisi olduğu için S'ten S'e uzaklık 0.
+
+443
+01:59:49,332 --> 01:59:59,972
+Kuyrukta sadece S var. Dolayısıyla kuyruktan çektik. S'ten giderebilecek kaç durum var burada bakalım. İki tane durum var görüyorsunuz. A ve D. O zaman bunları ekliyoruz. Ne onlar? S, A.
+
+444
+02:00:00,000 --> 02:00:23,860
+Ve ST'yi ne yaptık? Ekledik. Ve onların altına şu hesaplamaları yaptık. Yani hesaplamalar derken ne var? Şuradaki 10.4 var. 10.4 ne? A'nın G'ye olan tahminin uzaklığı. 8.9 ne? D'nin G'ye olan uzaklığı. 3 ne? S'ten A'ya gitmenin maliyeti. 4 ne? S'ten D'ye gitmenin maliyeti. Şimdi bu ikisinin içerisine hangisini seçeceğiz? Kuyruktan.
+
+445
+02:00:30,771 --> 02:00:53,992
+Hangisini seçeceğiz arkadaşlar? Bu ikisinin içinde. D'yi seçeceğiz değil mi? Bunu seçeceğiz. Zaten bold olarak gösterilmiş. Bunu seçtiğimizde, D'yi seçtiğimizde, D'den gidilebilecek kaç tane yer var? Şuraya bakarsanız, 3 tane yer var değil mi? Bakın, 3 tane yer var. Tekrardan ben S'e dönebilirim.
+
+446
+02:00:54,452 --> 02:01:15,872
+Ya da D'den A'ya gidebilirim. Ya da D'den E'ye gidebilirim. Üç tane durum. Şimdi ben bunu çektim. Bunu artık yazmayacağım bir altı satıra. Bir önceki şu SA zaten aşağıya indi. Şimdi ST'den gidilebilecek üç tane değeri buraya eklemişim. Bakın STS, STA, STE. Bunları sona eklesen ya da başa eklesen fark eder mi A'slar için? Fark etmez. Çünkü A'slar da her zaman ben neye göre seçim yapıyorum?
+
+447
+02:01:17,619 --> 02:01:26,160
+Sıraya göre değil, değil mi? Mekanik bir seçim yapmıyorum. Dolayısıyla sona eklemişim, başa eklemişim hiçbir şeyi yok, farkı yok. Burada kolaylık olsun diye ben sona eklemişim.
+
+448
+02:01:28,140 --> 02:01:33,039
+Şimdi S de S. Bakın S de S de S'in farkını görebiliyor musunuz?
+
+449
+02:01:34,036 --> 02:01:59,195
+S de S de S. İkisi de S der aslında. Ama bir tanesi 11 artı 8. Öteki de 11 artı 0'dı. Şu anda tabii bu S yok da. Ama hani farklı bir şekilde görüldüğünü. Yani loop var mesela burada S de S değil mi? Aynı şeyi tekrar etmiş. Burada 11 artı 8 var ama. O 8 neyi ifade? S'den D'ye gitmek, D'den tekrardan S'e gitmek. Onu gösteriyor. S de S ne olacak? Açılmayacak zaten diye ümit ediyoruz değil mi?
+
+450
+02:01:59,636 --> 02:02:19,216
+Şimdi peki, eklesek de açılmayacak, anlamı olmayacak. Şimdi devam edelim. Burada şu dört tane eleman var şu anda içeride kuyrukta. Bunları hangisini seçecekmiş? Şunu seçecek. Çünkü bu 13.4 yerleri daha yüksek oldukları için bu 13.4'ü seçtik.
+
+451
+02:02:23,699 --> 02:02:44,220
+A var elimizde. A'dan gidilebilecek kaç tane yer var? 3 tane yer var. Yani SA'dan gidilebilecek. Bakın SA'dan gidilebilecek. Şurada 3 tane yer var. Ne onlar? SAS, SAD, SAB. O zaman şu 3 tanesini şuraya kopyalamışız. Onlar zaten duruyorlar.
+
+452
+02:02:44,756 --> 02:03:06,136
+Buyrukta. Şu SA'dan gidilebilecek 3 tane yeri de buraya eklemişiz. Tamam mı? SA, S, S, S, A, D, S, A, B. 3'ünü eklemiş. Şimdi bu 6 tanesinin içerisinden en düşük F, N değerine sahip olan S, A, B'ymiş. S, A, B'den, S, A, B nerede? B'den gidilecek kaç tane yer var arkadaşlar? 3 tane yer var değil mi?
+
+453
+02:03:06,543 --> 02:03:22,884
+SAB'den ne yapabiliriz? SAB'den tekrardan A'ya dönebiliriz. SAB'den E'ye gidebiliriz. SAB'den C'ye gidebiliriz. Dolayısıyla şuradakiler zaten olduğu gibi aşağıya, pardon, şu kısımdakiler olduğu gibi aşağıya kopyalanmış.
+
+454
+02:03:25,303 --> 02:03:29,003
+SAB'den gidilebilecek üç tanesi şuraya eklenmiş.
+
+455
+02:03:31,028 --> 02:03:53,347
+Şimdi, şu anda 8 tane eleman var kuyrukta. Bunların içerisinde hangisi seçeceğiz? Şunu seçelim. Dizide diyelim. Kuyruk falan demek. Kafa karıştırmasın. Bu dizinin içerisinde şu anda 8 tane eleman var. Bu 8 tane elemandan S, A, B, E'yi seçiyoruz. Niye? Çünkü örneğin en düşük olan o. Bunu seçtiğimiz zaman E'den gidilebilecek, E'den gidilebilecek. Yine 3 tane yer var. E'den D'ye gidilebilir, B'ye gidilebilir, B'ye gidilebilir.
+
+456
+02:03:58,804 --> 02:04:11,823
+Şu da geldi buraya. Sabeden, Sabed yapılabilir. Bir de Sabef yapılabilir. Şimdi bunların içerisinden, şu anda 11 falan oldu herhalde 10 mu oldu?
+
+457
+02:04:11,823 --> 02:04:16,743
+10 tane elemanın içerisinde en iyisi şuymuş.
+
+458
+02:04:17,983 --> 02:04:20,823
+S-A-B-C.
+
+459
+02:04:21,264 --> 02:04:22,823
+Pardon. S-A-C.
+
+460
+02:04:23,636 --> 02:04:36,596
+S, A, B, C. C'den gidilebilecek zaten. Sadece geriye dönüş var. Başka bir yere gidemiyor. Bir tane çıkacak sadece ondan. S, A, B, C'den. O nereye eklenmiş? Şuraya eklenmiş. Bakın S, A, B, C, B şeklinde eklenmiş.
+
+461
+02:04:37,011 --> 02:04:57,331
+Buradan çekilebilecek, diğerleri zaten aşağıya kopyalandılar. Şu anda bu onluğun içerisinden en iyisi şu. Buradan gidilebilecek de Sabef'den gidilecek G varmış. Bir de E'yi dönebiliriz tabii. Sabef'den Sabef E ve Sabef G üretilmiş. Ve burada da şundan hepsinin içerisinden çekilebilecek en iyisi.
+
+462
+02:04:58,068 --> 02:05:17,028
+Buymuş ve biz de burada ne yaptık? Bunu çektik. Çektiğimiz anda zaten yolumuz da elimizde görüyor musunuz? Durumun içerisinde yolu tuttuğumuz için şurada. Direkt zaten yol da elimizde oluyor. Çözüm budur diye kullanıcıya dönebiliyoruz. Anlaşıldı mı arkadaşlar bunun nasıl oluşturulduğu?
+
+463
+02:05:18,003 --> 02:05:32,103
+Oldukça basit. Yani disiplinli bir şekilde yazarsanız zaten göreceksinizdir. Bunu dediğim gibi elinizde çalıştırın. Böyle problemler tanımlayıp kendinize çözün. Bu iyi olur.
+
+464
+02:05:32,103 --> 02:05:35,663
+Var mı burada soru işareti arkadaşlar?
+
+465
+02:05:41,971 --> 02:06:08,891
+Hocam, şimdi C noktasına gidiyor ya. C noktasından bir de geri dönüyor. Mesela halen kısa 15 bulmuştuk biz onu. S, A, B, C, B. 15 bulunmuştu. Halen 15'ten küçükse mesela 14 ise, hala onun bir daha mı alacaktık? Mesela bir tane daha. Yani G bulmadı ama yani hala onun içinde, hala kısaysa içinde döngü olabilir.
+
+466
+02:06:10,163 --> 02:06:25,923
+Çekebilir, çekebilir. O sıkıntı, onlar çok bir sıkıntılar değiller. Ya da burada mesela işte şuradaki, şurası 15. Bakın şurası da 15. Görüyor musun? Burası 15, burası da 15. Niye ben bunu seçtim?
+
+467
+02:06:31,283 --> 02:06:35,483
+Bilmiyorum hocam. Yani daha uzun yol diye mi? Bir sürü seçenek var mı?
+
+468
+02:06:35,483 --> 02:06:38,503
+Yok, daha uzun değil.
+
+469
+02:06:39,523 --> 02:06:43,363
+Öncekinin dallarından oluştuğu için. Önceki seçtiğimiz.
+
+470
+02:06:43,383 --> 02:06:46,263
+Yok, ondan da değil. Hayır. Değil, değil.
+
+471
+02:06:46,723 --> 02:06:48,503
+İlk onu gördüğümüz için olabilir mi hocam?
+
+472
+02:06:48,743 --> 02:06:50,323
+İlk onu gördüğümüz için mi?
+
+473
+02:06:50,583 --> 02:06:53,463
+Rastgele, rastgele arkadaşlar. Rastgele, rastgele.
+
+474
+02:06:54,003 --> 02:07:21,203
+Hiçbir şeyi yok. Kriteri yok. Yani iki tane aynı değere sahip bir şey varsa elinizde, tamam? Onlardan bir tanesini rastgele seçiyorsun. Bu kadar. Tamam. Yani orada şöyle yapacağım, böyle yapacağım. Yani oradaki ikisinden bir tanesini seçmenin daha iyi olacağına dair hiçbir bilgi olmadığı için elinizde. Tamam. Hangisinin daha iyi bir yere götürebileceğini bilmiyoruz. İkisi de 15 çünkü. Dolayısıyla orada ne yapacağız? Yapacağımız tek şey rastgele bir seçim. Tamam.
+
+475
+02:07:23,764 --> 02:07:30,743
+Hocam, her defasında en düşük maliyetli olanı aramayla mı buluyoruz? Q'nun içindeki yani.
+
+476
+02:07:32,943 --> 02:07:39,743
+Evet. Yani ya şunu yapacaksın, Q'yu hep sıralı tutacaksın ki onu şeyle falan yapmak mümkün, heap de tutarak.
+
+477
+02:07:41,423 --> 02:07:50,123
+Ya sıralı tutacaksın sürekli, yani eleman eklendiğinde de hala sıralı bir halde tutup en baştakini çekeceksin. Bir heap yapısını kullanarak. Tamam mı?
+
+478
+02:07:50,579 --> 02:08:12,759
+O mesela iyi bir yol. Ya da her bir şeyler eklendiği zaman eklenenlerinkileri de hesaplayacaksın ve şey yapacaksın. Ne derler ona? İçerinde seçeceksin en küçük olan hangisiyse. Ama her seferinde sıralamanın maliyeti yüksek. Onun yerine o sıralamayı şeyle yapmak iyi. Hani HIPSOR'da bir HIP yapısında veri yapılar ve algoritmaları görmüştünüzdür değil mi? HIP yapılarının HIPSOR'tu.
+
+479
+02:08:15,475 --> 02:08:20,876
+Dizi sürekli sıralı bir halde tutuyor. Her zaman en küçük, en başta duruyor falan. Çekebiliyorsunuz hani.
+
+480
+02:08:21,427 --> 02:08:26,027
+O şekilde bir yapıda tutarsanız çok daha etkili bir süreç olur.
+
+481
+02:08:26,027 --> 02:08:39,427
+Zaten sürekli minimumu arayacak olsak, diğer dersin başında konuşmuştuk ya, aynı noktadayken daha fazla maliyetli olanı eleyebilir diye. Bu sefer minimumu ararken o işlemi de yapabilirdi diye düşünüyordum.
+
+482
+02:08:39,427 --> 02:08:44,427
+Anladım, anladım. Ama dediğim gibi bunlar genelde, hani implementasyon...
+
+483
+02:08:45,171 --> 02:09:05,631
+HIP'le tutulurlar. Ve HIP'le dediğim gibi sıralı bir şekilde tutulmaya çalışıyor. Yani öyle tutuluyor zaten otomatik olarak. Bir arama falan yapmanıza gerek kalmıyor içeride bir daha. Ama tabii HIP'i güncellemeniz gerekiyor. Ama HIP'i güncellemenin maliyeti çok yüksek değil. Yani logaritma iki taban değerlerdi gerçekten. HIP'in size en onu kütüphan.
+
+484
+02:09:06,851 --> 02:09:07,692
+Tamamdır hocam.
+
+485
+02:09:11,764 --> 02:09:27,064
+Peki, burada yine bir soru sormuşum. Mesela bu başlangıçtan haşa gitmek için burada mesela böyle bir şey varsa neler olur? Böyle bir şey varsa neler olur? Bunları elinizle deneyebilirsiniz. Kod yazarak deneyebilirsiniz. Oldukça güzel şey yapıyoruz.
+
+486
+02:09:27,380 --> 02:09:51,019
+Şimdi arkadaşlar, bir küçük bir ara verelim. Bir yüzünüzü yıkayın, birazcık daha açılın. Biraz böyle teorik bir şeye bakacağız. Böyle çok korkunç falan bir şey değil ama küçük bir ara verelim. Daha iyi olur diye düşünüyorum. Tamam. Şimdi saat 11.11 geçiyor. 11.5-6 dakikalık bir ara versek yeter herhalde.
+
+487
+02:09:52,083 --> 02:10:03,543
+Can, ben bir şey sorabilirim. Slide'ı açabilir misin? Tabii. Bu tablo çizdik ya. Evet. Burada bulduğumuz bir önceki slide'daki A-Star'ın yolu farklı. Ben onu anlayamadım.
+
+488
+02:10:08,595 --> 02:10:34,195
+Burada A-Star. Bakalım. Burada A-Star. Peki şeyleri farklı mı? Çözümleri farklı mı? Bakayım. G eşittir. 13 artı 0 bulmuş. Güzel bir nokta söyleyeyim. Bir dakika. Hakikaten öyle bir şey var. S-A-R-T-E-G. Bir dakika. Bu hangi yolu buldu? S-A-B-E-E-G'yi bulmuş. A-Star. Çok güzel.
+
+489
+02:10:34,671 --> 02:10:38,391
+Hocam iki grafik arasında maliyetler farklı.
+
+490
+02:10:42,452 --> 02:10:44,652
+Evet, B'ye arası birinde bir demiş.
+
+491
+02:10:44,872 --> 02:10:50,592
+Evet, farklı farklı. Tamam, neyse. Korktum bir an ya. Teşekkür ederim. Dikkatiniz için.
+
+492
+02:10:50,592 --> 02:10:51,632
+Ben görürüm en güzel.
+
+493
+02:10:51,632 --> 02:11:09,852
+İki tarafın da dikkatine teşekkür ederim. Önce bir korktum, sonra rahatladım. Evet, aynı problem değil bunlar. Tamam. Çünkü aynı problem olsa daha uzun bir çözümü bulmamış olmamız gerekir ya. Burası çünkü 15, burada 13'lük bir yol bulmuş bu. Tamam.
+
+494
+02:11:10,804 --> 02:11:24,644
+Çünkü şurası 2, görüntü gibi. Şurada burası 5. Tamam, maliyetler farklı. Evet, evet, farklı. Rahatlı. Şimdi arkadaşlar, o bir 20'ye kadar bir ara verelim. Ondan sonra son dersimizi yapalım.
+
+495
+02:11:47,123 --> 02:11:50,363
+Az sonra görüşmek üzere arkadaşlar. Bir kalkın, yürüyün, dolaşın.
+
+496
+02:18:48,659 --> 02:18:52,659
+Tekrar anlayın arkadaşlar.
+
+497
+02:19:00,244 --> 02:19:24,364
+Şu ana kadar azlar optimal dedik. Optimal olduğunu söyledim. Çeşitli problemlerde de optimal çözüleri bulduğunu gördük. Ama neden optimal olduğuna dair şartını söyledik. Neydi? HN dediğimiz şey ne olmak zorundaydı?
+
+498
+02:19:27,924 --> 02:19:39,103
+İyimser. İyimser olmak zorundaydı. Şimdi alsın optimalini göstereceğiz. Bakalım nasıl bir şey yapacağız.
+
+499
+02:19:39,987 --> 02:20:03,387
+Bir gün önce ne göstereceğimizi görelim. Şimdi diğerimizde bir grafik var. Bu grafikte bir başlangıç durum var. İşte bir şeyler oluyor falan. Sonra bir n durumu var. Bir g durumu var. Bir de g2 durumu var. Bundan ne ifade ediyorlar? Şimdi g dediğimiz şey optimal çözüm. Tamam. G optimal çözüm. G2 ise optimal olmayan bir başka çözüm. Yani g de bir çözüm, g2 de bir çözüm ama g optimal, g2 ise optimal olmayan bir çözüm. Tamam.
+
+500
+02:20:07,860 --> 02:20:32,819
+Yani N dediğimiz şey, bizi optimal yola götüren seçim. Tamam mı? Ve G2 var. Yani N de şu anda şeyde, kuyruğun içerisinde, stekte ya da dizide, G2 de dizide. Şimdi soru bu. Eğer ki burada gidip Aastar algoritması G2 seçerse, o zaman o Aastar algoritması ne olmaz arkadaşlar?
+
+501
+02:20:37,299 --> 02:21:04,739
+Optimal. Optimal olmaz değil mi? Yani burada G2'yi seçerse çünkü yani N'de var. Yani optimale götürebilecek bir durum var elimizde. Bir de G2 var. G2 optimal olmayan bir şey. N ve G2 varken dizide N yerine G2'yi seçerse A-Star algoritması o zaman A-Star algoritması optimal değildir diyeceğiz. Değil mi?
+
+502
+02:21:05,587 --> 02:21:13,808
+Ama biz optimale olduğunu göstermemiz istiyoruz. O zaman bizim neyi göstermemiz gerekiyor? Şunu göstermemiz gerekiyor. Bakın.
+
+503
+02:21:15,887 --> 02:21:29,927
+Fn küçük tür Fg2. Küçük eşittir değil bakın. Çünkü küçük eşittir olsa eşit olduğu anda da ne yapabilir? Rastgele seçim yapıyor ya. Dolayısıyla orada n yerine g2'yi seçebilir. Dolayısıyla mutlaka neyi göstermemiz gerekiyor bizim?
+
+504
+02:21:34,420 --> 02:21:47,840
+F, N'in. F, G2'den daha küçük olduğun, dolayısıyla her zaman yani N ve G2 varken her zaman N'in seçeceğini garanti altına almamız gerekiyor. Anlaşıldı mı? Yapmamız gereken şey, göstermemiz gereken şey.
+
+505
+02:21:49,520 --> 02:21:50,120
+Evet hocam.
+
+506
+02:21:52,440 --> 02:21:56,380
+Şimdi o zaman bizim şunu göstermek için bir şeyler yapacağız. Şimdi burada bakalım ne yazıyor.
+
+507
+02:21:56,884 --> 02:22:11,064
+Asar optimaldir. Eğer, bakın, H gerçek maliyeti daha düşük tahmin ediyorsa, yani iyimserse ve tüm maliyetler pozitif. Zaten tüm maliyetlerin pozitif olması gerektiği bütün algoritmalarda var. Negatif maliyetlerle zaten hiçbir algoritma optimist çözüm bulamaz.
+
+508
+02:22:14,123 --> 02:22:23,564
+Kritik olan kısım şurası. H gerçek maliyeti daha düşük tahmin ediyorsa, H iyimserse. Şimdi bakalım nasıl bir işlem yapacağız.
+
+509
+02:22:24,244 --> 02:22:51,644
+Şimdi burada ilk satırımıza şöyle bir şey yazıyorum. Neymiş bu? FG2 eşittir GG2. Şimdi FG2 aslında neye eşittir arkadaşlar? GG2 artı HG2 eşittir değil mi? F'in G2'si, pardon G2'nin F'i, şu G2'nin F'i neye eşit olacak? H'ı ve G'si ne? G'si artı H'ı. H'ı zaten sıfır değil mi?
+
+510
+02:22:52,659 --> 02:23:03,860
+O da çözüm ya. O zaman hg2 0 ise o zaman fg2 neye eşittir? gg2 eşittir. Tamam mıdır?
+
+511
+02:23:07,379 --> 02:23:29,379
+Bu satır tamam mı? Tamam hocam. Tamam. Şimdi ikinci satıra bakalım. FG. FG'de GG'ye eşittir, doğru mu? HG eşittir, sıfır olduğundan dolayı. Burası da tamam mıdır? Evet.
+
+512
+02:23:31,763 --> 02:23:58,343
+Peki şunu da yazabilir miyiz biz? GG2 büyüktür GG. Bu doğru mu kesin? Bu da doğru. Neden? Çünkü G2'nin optimal olmadığını söyledik zaten biz. Değil mi? Yani GG2 büyüktür GG. Burası tamam mı arkadaşlar? Tamam. Şimdi o zaman ben şurada şunu da yazabilirim.
+
+513
+02:23:59,219 --> 02:23:59,840
+Gördün mü?
+
+514
+02:24:04,628 --> 02:24:09,648
+Bu tarafına HG2'yi, öteki tarafına da HG'yi eklersem, bunların bu hale gelirler.
+
+515
+02:24:10,028 --> 02:24:11,108
+Sonrasında elimde şu var artık.
+
+516
+02:24:11,907 --> 02:24:16,468
+Bu bir yerde dursun. Yani FG2 büyüktür, FG. Bunu biliyoruz.
+
+517
+02:24:17,268 --> 02:24:17,927
+Şimdi devam edelim.
+
+518
+02:24:18,648 --> 02:24:19,388
+Şimdi ne diyorum bakın.
+
+519
+02:24:19,648 --> 02:24:26,448
+HN, ki bu benim iyimser olan hristiyem.
+
+520
+02:24:27,316 --> 02:24:49,596
+H, yıldız, n'den küçük eşittir. Yani bu h, yıldız dediğimiz şey ne? Gerçek maliyet. Yani gerçek maliyetinden kastımız ne? Şu n'den şu g'ye gitmenin gerçek bir yolu var. Gerçek bir yolu var. Tamam mı? Ki zaten onu bulacağız biz. Değil mi? O yolun gerçek maliyeti h, yıldız olsun.
+
+521
+02:24:50,164 --> 02:25:10,184
+HM ise onun tahminimiz olsun. O tahminimizin bizim her zaman ne olmasını istiyoruz? İyimser olmasını istiyoruz. Bakın burada hep iyimser. Görüyor musunuz? Yani H yıldızdan her zaman daha küçük bu. Tamam mı? Anlaşıldı mı? Yani bu yazdığımız şey aslında şuradaki yazdığımız şey.
+
+522
+02:25:12,684 --> 02:25:14,644
+Tamam mı? Evet hocam.
+
+523
+02:25:17,139 --> 02:25:30,139
+Her iki tarafa da G'yi ekleyeyim. Şunu buldum. Şimdi burada Gn artı Hn neye eşittir arkadaşlar?
+
+524
+02:25:30,139 --> 02:25:31,219
+Gn artı Hn?
+
+525
+02:25:34,059 --> 02:25:34,539
+Fn.
+
+526
+02:25:37,139 --> 02:25:41,559
+Fn'e eşittir. Peki Gn artı H yıldız n neye eşittir?
+
+527
+02:25:43,188 --> 02:26:08,188
+Bakın, Y, N. Y, N dediğimiz yeri buradan buraya gelmenin gerçek maliyeti zaten. Artı, H, Yıldız, N nedir? Buradan buraya gelmenin gerçek maliyeti. Tamam. Dolayısıyla şu yolun tamamının maliyeti olacak bu değil mi? N'den geçilerek. Dolayısıyla o da aslında neye eşittir? F, G'ye eşittir. Dolayısıyla ben burada F, N küçük eşittir. F, G yazabilirim. Tamam.
+
+528
+02:26:10,644 --> 02:26:29,724
+O zaman burada ben şunu da biliyorum. FG2, FG'den büyük mü? Büyük. O zaman şuradaki FG yerine ben ondan daha büyük olan bir FG2 yazabilirim ama buraya büyüğünü yazarım değil mi?
+
+529
+02:26:31,219 --> 02:26:43,619
+O zaman bunu yazabilirim. O zaman bunu gösterdiğim anda zaten benim göstermek istediğim şey neydi? Bakın, Fn her zaman daha küçüktür. Fg2'de iyi göstermek istiyordun değil mi? İşte burada onu göstermiş oldum.
+
+530
+02:26:50,067 --> 02:27:14,407
+Bir çözüm var. Optimal olmayan bir çözüm. Ama bir de optimale götüren bir durum var. Her zaman Ağustos'lar algoritması neyi açacaktır? Optimal'e götüren durumu açacaktır. Optimal olmayan bir çözüme göre. Ama bunu sağlayan şey ne arkadaşlar? Şurası. Eğer ki burası daha büyük olursa, yani burası dur değil de, şöyle bir şey olursa, bu durumda bunu yazamazsınız.
+
+531
+02:27:15,540 --> 02:27:35,600
+Bu çıkmaz. Yani burada şöyle bir durum olabiliyor o zaman çünkü. Ve bunu seçebiliyor. G2'yi. Tamam mı? O yüzden bizim mutlaka ve mutlaka ne olması gerekiyor? Şeyimizin, ne derler ona? Hüristliğimizin iyimser olması gerekiyor.
+
+532
+02:27:36,211 --> 02:27:48,291
+Tabii ne kadar iyimserse o kadar iyi anlamına gelmiyor bu. Ne kadar iyimserse yani iyimserlerin arasından hangisi daha iyiydi? Kütümser olanı daha iyiydi. Onu da hatırlayalım.
+
+533
+02:27:51,636 --> 02:28:18,156
+Şöyle bir şey düşünün en basitinden. Mesela aşırı derecede iyimser bir sezgisel algoritmayı düşünün. Aşırı derecede iyimser. Aşırı derecede iyimser olsa mesela şöyle bir şey olur. Her bir durumun hedefe tahmini uzaklığını aynı varsaysa. Bakın her durumun hedefe olan tahmini uzaklığını aynı varsaysa ne olur? Aşırı iyimser.
+
+534
+02:28:20,435 --> 02:28:26,155
+Optimalliği bozulur mu algoritmanın? İlk önce onu sorayım.
+
+535
+02:28:29,652 --> 02:28:31,871
+Her durumun hn'i aynı.
+
+536
+02:28:34,311 --> 02:28:36,391
+Algoritma hala optimal çözümü bulur mu?
+
+537
+02:28:42,835 --> 02:28:51,115
+Şöyle düşünün. Fn neye eşit? Gn artı haşene eşit. Bütün haşenler birbirine eşitse o zaman algoritma neye göre çalışır arkadaşlar?
+
+538
+02:28:52,775 --> 02:28:54,495
+Fn'e göre direkt. Gn.
+
+539
+02:28:54,495 --> 02:28:59,415
+Hayır. Gn'e göre çalışır değil mi? Sadece Gn'e göre çalışırsa algoritma optimal çözümü bulur mu?
+
+540
+02:28:59,935 --> 02:29:00,675
+Hayır bulamaz.
+
+541
+02:29:01,195 --> 02:29:02,315
+Bulur. Niye bulamazsın?
+
+542
+02:29:04,628 --> 02:29:08,427
+Uniform Cost Search neye göre çalışıyor arkadaşlar sadece?
+
+543
+02:29:08,868 --> 02:29:10,128
+Doğru, G'ye göre çalışıyor.
+
+544
+02:29:10,128 --> 02:29:14,427
+G'ye göre çalışıyor değil mi? Uniform Cost Search algoritması aslında Fn eşittir, Gn demek.
+
+545
+02:29:15,448 --> 02:29:22,048
+Dolayısıyla bütün haçlarınızın hepsi çok iyimser, hepsi tek adımda oraya varacaklarını tahmin ediyor olsalar bile, olsalar.
+
+546
+02:29:22,648 --> 02:29:25,568
+O zaman algoritma neye dönüşüyor? Uniform Cost Search'e dönüşüyor.
+
+547
+02:29:25,904 --> 02:29:53,203
+Uniform Coast Storage'a dönüştüğünde optimalliğinden bir şey kaybetmiyor. Ama neyi kaybedecektir Uniform Coast Storage'a dönüştüğünde? Hızını kaybedecektir. Çünkü daha yakın olan bir şey, daha uzak olan bir şey tahmin edemeyecek. Her şey çok çok iyimser ya, aşırı derecede iyimser. Dolayısıyla hani çok iyimser olmak yerine gerçeğe yine iyimser olacaksınız ama gerçeğe daha yakın olan bir şeyi seçmeniz sizin çözümü bulmak hızınızı ne yapacaktır? Oldukça arttıracaktır.
+
+548
+02:29:53,780 --> 02:29:57,360
+Anlaşıldı mı arkadaşlar? Şimdilik bu mevzuda.
+
+549
+02:30:00,420 --> 02:30:01,900
+İyiyimsellik, kötü müşterlik.
+
+550
+02:30:04,819 --> 02:30:08,120
+Şimdi burada yine bir grafimiz var.
+
+551
+02:30:09,012 --> 02:30:26,272
+Daha öncekine benzeyen bir şey, bu hafta da gördük aslında grafik. Burada yine başka bir grafik üzerinde aynı algoritma çalıştırılmış. Sadece yukarıya bakmayalım. Yukarıya hiç bakmadan, aşağıya bakarak biz...
+
+552
+02:30:37,556 --> 02:30:55,116
+Olamaz. Çünkü o nasıl bir algoritma değil? Optimal bir algoritma değil. Uniform Cost'un bulduğu yol diğerlerinden daha iyi olabilir mi? Olabilir. Peki, Uniform Cost'un bulduğu yoldan daha iyi bir yol olabilir mi? Bulunabilir mi?
+
+553
+02:30:56,956 --> 02:30:57,596
+Hayır.
+
+554
+02:31:01,108 --> 02:31:28,007
+Bulun ama dolayısıyla daha iyisi olamaz. Aynı şeyi ne için de söyleyebiliriz? Alstar için de söyleyebiliriz. Alstar'ın bulduğu yoldan daha iyisi olamaz. Ona benzeyen, yani onunla aynı yolları bulmuş olabilirler. Aynı maliyete sahip ama ondan daha iyi bir şey bulmuş olamazlar. Alstar ve Uniform Costum yolları optimal olduğundan emin olduğumuz iki yol. Zaten aynı yolu bulmuşlar. Farklı da olabilirlerdi. Farklı güvenliklerden fazla optimal yol çıkabilir.
+
+555
+02:31:28,628 --> 02:31:41,168
+Ama burada bir tane çıkmış. Brad First'in ve Best First'in bulduğu yollardan daha iyi bir yolla olabilir mi arkadaşlar? Olabilir. Çünkü bunun optimal... ...değiller. Tamam mı?
+
+556
+02:31:41,427 --> 02:32:00,207
+Şimdi yine buraya bakalım, grafiğe bakalım. Maliyetten mesela Depth First 518'lik bir yol bulmuş. Bread First 153'lük bir yol bulmuş. Best First 153'lük bir yol bulmuş. Optimal olan yolu kimler bulmuş? Bakın gördüğünüz gibi. Uniform Coast 4 ve A-Star algoritması bulmuşlar. %22 kilometre iki tane yol bulmuşlar.
+
+557
+02:32:00,691 --> 02:32:13,231
+Peki ne kadar uzun sürmüş algoritmaların çalışmaları? A-start 7 adımda bulmuş, best-first 4 adımda bulmuş, uniform-cost-first 14 adımda bulmuş, red-first 10 adımda, depth-first 10 adımda bulmuş.
+
+558
+02:32:13,231 --> 02:32:21,171
+Tabi burada en fazla adım giden uniform-cost-first ve fazla adım gittiği için memori gereksinimi de artmış.
+
+559
+02:32:25,139 --> 02:32:47,159
+Brett, Hurst, yani en az adımda açan ama çok aceleci bir algoritma. Anında bir şey yakın gördüğü zaman atlıyor. Hızlı diyor ama ne yapamıyor? Optimal yolu bulamıyor. Brett, Hurst zaten onlar 10 adımda bulmuşlar. Ama optimal olan dediğimiz gibi, uniform, costume ve astarın optimum çözümü bulduğunu da burada görmüş olduk.
+
+560
+02:32:52,308 --> 02:33:10,348
+Robotlarla keşiflere geçsem mi, geçmesem mi diye düşünüyorum. Ve geçmeyelim. Burada duralım arkadaşlar. Bunu haftaya göreceğiz. Haftaya şöyle öteyim. Bu Australi Götmesi'yle bir uygulama aslında bu. Robotlar bir alanı geziyorlar falan. Onu dediğim gibi önümüzdeki hafta çünkü kısa sürmez bunu anlatmam.
+
+561
+02:33:12,180 --> 02:33:31,559
+Önümüzdeki hafta 8 tane robot bir ortamı tarıyorlar burada. Bizim robot ekibiyle yaptığımız bir çalışmada kullandığımız simülasyon ortamı aslında. Kullandığımız ortam simülasyon ortamı değil de basitleştirilmiş bir simülasyon ortamı. Yoksa bu ortamlarda çalışmıyoruz tabii ki.
+
+562
+02:33:33,420 --> 02:33:36,099
+Dediğim gibi bu haftada bu kadar olsun.
+
+563
+02:33:36,512 --> 02:33:52,391
+Önümüzdeki hafta bu robotlarla keşifte bu AUS'lar gibi algoritmalar nasıl kullanılıyorlar? Onlardan bahsederek başlarız. Ve ondan sonra lokal arama algoritmalarına geçeriz zaten. Peki arkadaşlar var mı bugünkü dersle alakalı sorunuz?
+
+564
+02:33:57,139 --> 02:34:01,979
+Bayağı bir şey gördük aslında değil mi? Kafanıza takılan bir şeyler var mı?
+
+565
+02:34:09,556 --> 02:34:22,615
+Peki, o zaman arkadaşlar görüşmek üzere diyorum haftaya. İyi günler hocam. İyi günler hepinize. Sağlıcakla kalın, dikkatli olun.

@@ -1,0 +1,2351 @@
+1
+00:00:16,403 --> 00:00:17,664
+Doğunuzun da ne kadar ses?
+
+2
+00:00:22,931 --> 00:00:24,131
+Günaydın hocam.
+
+3
+00:00:27,012 --> 00:00:28,971
+Nasılsınız iyi misiniz?
+
+4
+00:00:41,171 --> 00:00:43,171
+İyiyiz hocam, siz nasılsınız?
+
+5
+00:00:43,171 --> 00:00:45,171
+Teşekkür ederim.
+
+6
+00:00:47,171 --> 00:01:00,171
+Şimdi arkadaşlar, biraz zaman isteyeceğim sizden. Dosyaları falan transkaratmam gerekiyor. Başka bilgisayardan çünkü.
+
+7
+00:01:00,171 --> 00:01:03,171
+Dokuzu çeke geçe başlayalım.
+
+8
+00:01:08,212 --> 00:01:11,591
+Az sonra görüşmek üzere arkadaşlar.
+
+9
+00:14:48,628 --> 00:14:50,968
+Evet, tekrardan merhaba arkadaşlar.
+
+10
+00:14:52,968 --> 00:15:02,368
+Şimdi bu haftaki planımız aslında, bir dakika ne varmış?
+
+11
+00:15:03,888 --> 00:15:06,028
+Makine öğrenmesine devam edeceğiz.
+
+12
+00:15:09,779 --> 00:15:25,819
+Projelerin dağıtımını tamamladık. Son süre zaten geçildi. Epey farklı, değişik projeler alanlar isteyenler oldu. Çok merakla bekliyorum ben de en güzel projelerinizi görmeyi.
+
+13
+00:15:36,244 --> 00:15:48,804
+Birinci hafta için bu üç haftadan oluşuyor diye konuşmuştuk zaten. Şu kısmı tamamlamıştık diye hatırlıyorum. Doğru mu? Şu verilerin sayısallaştırmasına kadar gelmiştik herhalde değil mi? Şu slatları gördük değil mi arkadaşlar?
+
+14
+00:15:59,956 --> 00:16:20,355
+Geçen hafta bunları gördük. Peki, bir sorayım sizlere. Bir tane veri kümesi oluşturuyorduk. Daha sonra bu veri kümesini eğitim ve test ile iki parçaya veriyorduk. Niye öyle bir şey yapıyorduk? Hatırlıyor musunuz? Bunun sebebi neydi acaba?
+
+15
+00:16:22,475 --> 00:16:24,676
+Overfitting olmaması için miydi hocam?
+
+16
+00:16:26,227 --> 00:16:32,048
+Overfitting. Evet. Ne demek bu?
+
+17
+00:16:33,647 --> 00:16:44,587
+Yani tüm veriyi öğrenmesi için verirsek şeyi kontrol edemeyiz. Veriyi ezberlemiş de olabilir. Geçerli bir model oluşturup oluşturmadığını kontrol edemeyiz.
+
+18
+00:16:44,587 --> 00:16:52,607
+Tamam. Bizim asıl istediğimiz şey nasıl bir şeydir? Yani modelin nasıl örnekler üzerinde iyi performans sergilemesini isteriz?
+
+19
+00:16:58,484 --> 00:16:59,584
+Daha önce görmedi.
+
+20
+00:17:00,264 --> 00:17:26,003
+Daha önce görmedi, doğru. Yani şöyle bir şey düşünün. Mesela siz bir OCR programı yaptınız ve bunu satacaksınız diyelim ki. OCR programının reklamını yapacaksınız. Diyorsunuz ki işte %90 başarı etmişti. Ne der bana? Yani şimdi %99 başarı diyorsunuz. Şimdi buradaki %99 başarı, %95 başarı da ifade ettiğiniz şey.
+
+21
+00:17:26,644 --> 00:17:48,884
+Verilerin üzerinde çalıştırmayacağım. Muhakkak sizin verilerin üzerinde çalıştırması onun hiçbir işine yaramadı. Kendi verileri üzerine çalıştıracağım. Kendi verileri üzerindeki performansın işte o %95 civarında bir şey olmasını bekleyecek değil mi?
+
+22
+00:17:49,395 --> 00:17:55,955
+Yoksa sizin kendi firma içinde oluştuğunuz veri hükümesindeki performans onu hiçbir şekilde ilgilendirmiyor.
+
+23
+00:17:56,304 --> 00:18:22,604
+Dolayısıyla bu noktada, fakat bu verileri sizin daha önceden görmeniz de mümkün değil, bilmeniz de mümkün değil. O yüzden aslında buradaki test kümesi diye ayırdığımız parça, gerçek hayatta gerçek uygulamaya geçildiğinde sistemin karşılaşacağı örnekleri temsil ediyor. Bunları daha önce modelin eğitimi kısmında görmemiş ve bu görmediği örnekler üzerindeki performansı, asıl performansı modeli.
+
+24
+00:18:22,740 --> 00:18:37,740
+Kullanıcı kendi verileri üzerinde çalıştırdığında iyi bir şey görmek istiyor. Burada ama biz performansı da ölçebiliyoruz. Nasıl da ölçebiliyoruz? Kendi içerimizde oluşturduğumuz verinin eğitime testi yapabildiğimizde test hükümesinin...
+
+25
+00:18:38,836 --> 00:18:57,296
+Sınıflarının ya da çıkışlarının gerçekten olduğunu biliyoruz aslında. Bilmiyormuş gibi davranıp onları test ediyoruz ve modelimizin onlar için tahminler üretmesini sağlıyoruz. Bu tahminlerle gerçekler arasındaki uyumda modelimizin başarısını veriyor. Çok kabaja böyle bir mekanizması vardı.
+
+26
+00:18:58,415 --> 00:19:02,135
+Şimdi bu dediğimiz gibi birinci slide'ın sonuydu.
+
+27
+00:19:02,932 --> 00:19:06,572
+Gelelim ikinci slide'ımıza.
+
+28
+00:19:25,236 --> 00:19:46,876
+Bugünkü konumuz şu kısım. İlerleyebildiğimiz kadar ilerleyeceğiz zaten bunun üzerinden. İlk önce özellik belirleme ile başlayacağız. Sonra sınıflandırma yöntemleri, kümelme algoritmaları, regresyon algoritmaları. Sonra çok boyutlu verilerle çalışmak nasıl bir şey? Bir de veri sızıntısı diye bir kavramdan bahsedeceğim. Dikkatli olmamız gereken bir kavramdan bahsedeceğim.
+
+29
+00:19:48,147 --> 00:20:14,147
+Şimdi özellik belirleme. Mesela bir doktoru düşünelim. Bir doktor bir hastalığına dosyalar koyduk. Bilgisayar hastalığının dosyasını açtı. Dosyanın içerisindeki bir sürü bilgi olabilir. Hastaya dair bir sürü bilgi olabilir. Fakat bu bilgilerin hepsi aslında hastalıkla…
+
+30
+00:20:14,675 --> 00:20:36,016
+Konuyla ya da alakalı değildir. O dosyanın içerisine bir şekilde girmişlerdir. Ne bileyim ben, hastanın ismi mesela. Hastanın ismi bir hastalığın belirlenmesinde çok çok önemli. Mesela cinsiyetin bir önemi olabilir ama hastanın isminin Ayşe de Fatma olması.
+
+31
+00:20:36,660 --> 00:20:57,100
+Çok anlamlı bir şey değil. Dolayısıyla elimize geçen her türlü özellik aslında output'u temsil etmek için, yani output'taki şeyi tahmin edilmek için gerekli şeyler değillerdir. Gereksiz bir kısım veriler de olabilir işin içerisinde.
+
+32
+00:20:57,587 --> 00:21:18,127
+Mesela şuradaki bir örneğe bakalım. Bir tablomuz var. Bu tablonun içerisinde üç tane özellik var görüyorsunuz. Bir de sınıf bilgisi var. Dört tane de örnek var. Şimdi birinci özellik, ikinci özellik, üçüncü özellik. Şimdi bunları bir inceleyin bakalım. Bu özelliklerden hangisi bu sınıfı belirlemek için daha anlamlı sizce?
+
+33
+00:21:23,635 --> 00:21:24,155
+İçeride.
+
+34
+00:21:30,708 --> 00:21:52,028
+Evet, ne dersiniz? Birinci özellik, ikinci özellik, üçüncü özellik. Birinci özellik. Birinci özellik. Niye? Bir olanlar A sınıfına, iki olanlar B sınıfına. B sınıfına. Çok bariz bir şekilde söylüyor değil mi? Peki ikinci özellik, herhangi bir şey söylüyor mu bize? Hayır. Yok, hayır değil.
+
+35
+00:21:54,291 --> 00:21:58,491
+Yani sınıf için kesin belirtecek bir şey pek söylemiyor.
+
+36
+00:21:58,631 --> 00:22:06,152
+Tamam, kesin bir şey söylemiyor ama mesela şöyle bir şey diyebilir miyiz? İkinci özelliği dört olanlar A sınıfındandır.
+
+37
+00:22:08,211 --> 00:22:12,731
+Diyebiliriz. İkinci özelliği üç olanlar büyük ihtimalle B sınıfındandır.
+
+38
+00:22:18,836 --> 00:22:23,695
+Değil mi? Mesela ikinci özelliği üç olan üç tane örnek var. İki tanesi D, bir tanesi A.
+
+39
+00:22:24,403 --> 00:22:48,084
+Dolayısıyla ikinci özellik 3 ise eğer, B olma olasılığı daha yüksektir A olmalısına göre. Dolayısıyla burada bize bir şeyler söylüyor ama deminki kadar mesela bu birinci özellik kadar iyi değil değil mi? Bu birinci özellik çok bariz bir şekilde söylüyordu. İkinci özellik bize bir şeyler söylüyor yine ama birinci özellik kadar iyi bir ayırt edici özellik değil. Sınıfı belirleyen bir özellik değil ya da çıkışı belirleyen bir özellik değil. Peki üçüncü sınıf bize bir şey söylüyor mu?
+
+40
+00:23:08,596 --> 00:23:09,816
+Sesim geliyor mu arkadaşlar?
+
+41
+00:23:10,615 --> 00:23:18,956
+Evet hocam geliyor. Burada üçüncü özellik için şey diyebilir miyiz? Üçüncü özelliği on üç olanlar yüzde elli ihtimalle A'dır veya yüzde elli ihtimalle B'dir.
+
+42
+00:23:19,215 --> 00:23:20,076
+Ne demek bu?
+
+43
+00:23:20,596 --> 00:23:23,096
+Yani çok bir şey söylemiyor aslında. Yani hiçbir şey söylemiyor.
+
+44
+00:23:23,516 --> 00:23:32,476
+Hiçbir şey söylemiyor. İkinci özellik gibi de değil. Bu hiçbir şey söylemiyor. Çünkü zaten üçüncü özelliğin içerisinde var ya hansı yok zaten. Görüyor musun?
+
+45
+00:23:33,519 --> 00:23:59,599
+Dolayısıyla buradaki üçüncü özellik bize hiçbir şey söyleyen, bütün örnekler için aynı olan bir şeyin ver hükümesinde olmasının zaten hiçbir anlamı yoktur değil mi? Tahmin edebileceğin diye. Dolayısıyla burada hani yüzde elli ihtimalle o, yüzde elli ihtimalle o ya zaten başka bir şey de değil, ne der? Anlamlı bir şey de olmaz. Dolayısıyla her özellik yani elimizdeki her özellik sınıfı belirlemede ya da çıkışı belirlemede eşit kabiliyete sahip şeyler olmayabilirler.
+
+46
+00:24:00,403 --> 00:24:16,864
+Şimdi özellik, yani var olan özelliklerden bir kısmını seçmek falan gibisinden bir şeylere bakacağız. Yavaş yavaş ilerleyelim. Şimdi burada mesela şu alttaki yatay boyutu X1 boyutu diyelim, dikey boyutu X2 boyutu diyelim.
+
+47
+00:24:21,748 --> 00:24:37,168
+Boyut demek, özellik demek. Bu iki özellikten hangisi sınıfları birbirinden ayırmak için daha iyidir? Sınıflar burada çarpılar ve yuvarlaklar diye ifade edilmiş. X1 özelliği mi daha iyidir, X2 özelliği mi daha iyidir?
+
+48
+00:24:43,827 --> 00:24:47,528
+X1 özelliği daha iyidir.
+
+49
+00:24:47,528 --> 00:25:03,048
+Bunu çizmeye kalkarsam mesela, X1 özelliğine bakarak sınıfların, histogramlarını çizmeye çalışalım.
+
+50
+00:25:03,443 --> 00:25:23,243
+Şurada mesela ilk önce çarpıları pembeyle ifade edelim. Mesela pembeler şuradan itibaren böyle biraz yükseliyorlar, yükseliyorlar, bayağı bir yükseliyorlar, yükseliyorlar. Ondan sonra şu aradan itibaren düşmeye başlıyorlar. Şu noktadan itibaren de artık hiç pembe yok. Yani pembe dediğim şey çarpıları gösteriyor.
+
+51
+00:25:23,667 --> 00:25:30,647
+Bunun tersinde yuvarlakları çizmek için de, yuvarlakların histogramını göstermek için de sarıyı kullanalım.
+
+52
+00:25:31,547 --> 00:25:36,627
+Sarı ilerledi, ilerledi, buralarda hiç sarı yok. Daha sonra şöyle dik bir yükseliş belki gösteriyor.
+
+53
+00:25:37,107 --> 00:25:40,867
+Sonra şöyle ileriye doğru gidiyor. Bundan sonrasını bilmiyoruz artık. Belki çok düşüyor falan.
+
+54
+00:25:40,867 --> 00:25:41,867
+Şimdi burada...
+
+55
+00:25:43,124 --> 00:25:54,963
+Bu x1'e göre histogramı çizdirdim. Şimdi ben bunu x2'ye göre çizdirsem nasıl bir şey olur? İlk önce yine sarıyla şeyi görmeye çalışalım. Şu tarafa çizeceğim bunu karışmasınlar diye.
+
+56
+00:25:56,531 --> 00:26:21,451
+Yuvarlak sınıfının dağılımına bakmaya çalışıyorum. Burada mesela bunlar gidiyorlar, gidiyorlar, gidiyorlar, buralarda varlar, varlar. Sonra işte buralarda bundan sonra da çok fazla yoklar. Aynı şekilde şartlı sınıfını çizmeye çalışsam bu da buralarda yükseliyor, yükseliyor, yükseliyor, yükseliyor, yükseliyor. Sonra şu anda devam ediyor. Belki şu noktadan sonra da düşüşe geçiyor. Tamam. Çok çok iyi çizemedim ama.
+
+57
+00:26:22,675 --> 00:26:50,655
+Derdimi anlatabilmişimdir diye tahmin ediyorum. Şimdi buraya baktığımızda X1 sınıfına göre sınıflar birbirlerinden dağılımlarını görüyorsunuz. Oldukça ayrıklar. Ama X2'ye göre baktığınızda dağılımlar birbirlerinin içerisine girmişler değil mi? Dolayısıyla burada mesela bu özelliğe göre sınıfları birbirinden ayırt edilmek çok zor. Yani sadece bu özelliğe bakarak mesela şundan daha büyükse şu sınıftandır, şundan daha küçükse şu sınıftandır falan demek mümkün değil. Ama buraya bakarsak.
+
+58
+00:26:50,675 --> 00:27:01,036
+X1'e göre bakarsak belki 0.05'den daha büyükse bu yuvarlaktır ve daha küçükse bu pen çarpıdır gibisinden bir şey söyleyebilmek mümkün. Tamam mı?
+
+59
+00:27:04,435 --> 00:27:05,755
+Anlaşıldı burası herhalde.
+
+60
+00:27:13,715 --> 00:27:15,155
+Sesim geliyor mu arkadaşlar?
+
+61
+00:27:20,339 --> 00:27:21,539
+Anlaşıldı hocam.
+
+62
+00:27:23,019 --> 00:27:31,920
+Kırk dört kişisiniz arkadaşlar. Bu kadar zor olmamalı bir cevap vermek. Böyle boşluğa konuşulmuş gibi ama kötü bir şey. Neyse.
+
+63
+00:27:38,516 --> 00:27:51,855
+Şimdi bir örneğimiz var. Bir balık halimiz var. Balık halinde balıklar yakalanmışlar. Fakat aynı türden olan balıklar birbirlerine karışmışlardı. Aynı türden yok. Farklı türden olan balıklar birbirlerine karışmışlardı.
+
+64
+00:27:51,855 --> 00:27:56,844
+Şimdi balıklarda...
+
+65
+00:27:57,203 --> 00:28:22,003
+Elimizde iki tür balık var. Yani bildiğimiz, ne derler ona, o karışımın içerisinde iki farklı balık türü var. Bir tanesi somon, bir tanesi sivas. Şimdi bir tanesi somon, bir tanesi lebrek. Şimdi kayan bir bant var. Bu bantın üzerine balıklar gidiyorlar. Yukarıda bir tane kamera var. Bu kamera preprocessing yapıp bize çeşitli özellikler veriyor.
+
+66
+00:28:22,548 --> 00:28:34,528
+İşte balığın mesela boyunu veriyor. Bir de balığın parlaklığını veriyor. Şimdi bu iki tane özelliği kullanarak biz acaba bu sınıfları birbirinden ayırt edebiliriz, edemememiz.
+
+67
+00:28:34,528 --> 00:28:48,347
+Şimdi birinci özelliğimiz uzunluk. Şimdi şurada çizliliği olan siyah kısım somon sınıfının dağılımını gösteriyor uzunluk özelliğine göre.
+
+68
+00:28:48,788 --> 00:29:05,288
+Pembe olansa levreklerinkini gösteriyor. Şimdi siyahlar şöyle, siyah böyle tabii çok daha iyi çizilmiş. Mesela burada yani şurada ne anlıyoruz biz? Uzunluğu 3 olan 4 tane Sibas varmış, 17 tane Somon varmış.
+
+69
+00:29:10,996 --> 00:29:27,236
+İki saniyeden geçiyorlar herhalde burada. Sekiz tane Sivas, sekiz tane somon varmış. Buraya baksak mesela uzunluğu yirmi, dört, yirmi, beş, yirmi, yirmi, uzunluğu yirmi yedi olan bir tane somon varmış. Pardon iki tane somon varmış, hiç Sivas yokmuş.
+
+70
+00:29:27,236 --> 00:29:38,135
+Şimdi burada şu iki tane sınıfımız var elimizde. Bu iki sınıfın histogramlarına bakarak biz mesela şöyle bir şey demek istiyoruz.
+
+71
+00:29:38,607 --> 00:30:04,487
+Uzunluğu şundan büyük olanlar şu sınıftandır, olmayanlar şu sınıftandır. Böyle bir şey yapmaya kalktığımızda, mesela genel olarak baktığımızda, Sibaslar daha uzunlar. Ama Somonlarda da yine epey bir uzun olanlar varlar. Yani böyle direkt çok birbirlerinden bariz bir şekilde ayırt edilmiyor gördüğünüz gibi iki tane sınıf.
+
+72
+00:30:05,076 --> 00:30:26,915
+Şimdi belli bir eşik değerinden sonraki, yani uzunluğu şundan büyük olanlara C bas diyeceğiz, ondan küçük olanlara Fonon diyeceğiz. Şimdi böyle bir sınıflandırma yapmaya kalktığımızda, işte uzunluğu şundan, şundan, şundan, şundan, böyle bir sürü şeyler yapabiliriz, denemeler yapabiliriz. Bu denemelerin içerisinde en iyisi şurada gördüğünüz şu yeşil çizgili olan deneme.
+
+73
+00:30:27,892 --> 00:30:42,211
+Şimdi, yani dediğim gibi burada bu yeşili, şöyle düşünün. İşte şurada bir deneme yapıyorsunuz, şurada bir deneme yapıyorsunuz, burada bir deneme yapıyorsunuz, burada bir deneme yapıyorsunuz. Bu denemelerin içerisinde en iyisi. Peki bu denemelerin birbirlerinden iyiliğini, kötülüğünü nasıl algılayabiliriz?
+
+74
+00:30:53,011 --> 00:31:06,112
+Yani uzunluğu 11 yaptığımızda ne olur? Uzunluğu ne bilmem 5 yaptığımızda, 5'ten ayırırsak ne olur uzunluk özelliği? Bunların birbirinden en farkı ne olur?
+
+75
+00:31:12,692 --> 00:31:39,192
+Yanlış tahmin eder test caselerde. Tamam, yanlış tahmin etmek demek ne demek? Mesela şimdi şu noktayı düşünelim. Mesela işte 5 diyelim ki. 5'ten uzun olanlara Sivas dedik. 5'ten küçük olanlara Somon dedik. Tamam mı? Şimdi 5'ten küçük olan Somon'lar, şuradaki siyahlar. Ama bir de neler var? Sivas'lar var, 5'ten küçük olan. Şu kısım, şuradaki...
+
+76
+00:31:47,028 --> 00:32:12,648
+Mesela şu kısım problemli bir kısım olacaktır. Şurada göre gerek. Yani işte şuradaki 4 balık artı şuradaki 5 balık. 9 tane balığı yanlış yapmış oluruz değil mi? Burada mesela bu tarafta. Ama diğer tarafı düşünelim bir de. Diğer taraftakilerin hepsine ne diyeceğiz? Seabust diyeceğiz. O zaman buradaki bütün somonların hepsine yanlış diyeceğiz. Yani şu siyah çizginin altında kalan alanın tamamı.
+
+77
+00:32:13,683 --> 00:32:41,183
+Bizim için yanlış olacaklar. Şuradaki alanın tamamı, şuradaki küçük alan, bir de buradaki bütün siyah çizginin altında kalan alan ne olacak? Bizim için yanlış olacak. Dolayısıyla kaç tane yanlış yaptığımızı da rahatlıkla sayabiliriz. Ve bu şekilde biz her bir özelliğimizin bizim açımızdan sınıflandırma işine kadar iyi ya da kötü olduğunu görebiliriz. Bu işlemi yaptığımızda elde edebileceğimiz en iyi sonuç arkadaşlar, şu yeşil çizgide olan kısım.
+
+78
+00:32:41,652 --> 00:32:56,652
+Burası en düşük hataya sahip olan cısım. En düşük hata arzana kadar oluyor burada. Bu sol taraftaki şu pembenin altındaki alan artı sağ taraftaki siyahın altında kalan alan oluyor.
+
+79
+00:32:56,652 --> 00:33:01,652
+Şimdi bu diğer özelliğimiz de parlaklık.
+
+80
+00:33:02,259 --> 00:33:06,259
+Parlaklıkta, Seabass'lar daha parlaklar.
+
+81
+00:33:06,259 --> 00:33:13,259
+Lightness demişiz. Yine histogramlar var. Buradaki histogramda en iyi yer, şuradaki X-Start diye gösterilen kısım.
+
+82
+00:33:13,259 --> 00:33:23,259
+Bu iki özelliği düşünürseniz eğer, yine burada bütün olasılığı Lightness değerlerine göre değerli birini yapmışız ve burasının en iyi olduğunu bulmuşuz.
+
+83
+00:33:23,259 --> 00:33:29,259
+Şimdi bu iki özelliği, yani balıkların uzunluğu ve parlaklığını düşünürsek hangisi daha iyi gibi gözüküyor?
+
+84
+00:33:33,875 --> 00:33:34,956
+Parlaklık.
+
+85
+00:33:36,115 --> 00:33:45,576
+Değil mi? Parlaklık çok daha iyi. Burada zaten daha bariz gösteriyor. Kırmızı bölge yapılan hataları gösteriyor. Burası uzunluğa göre yaparsak, burası parlaklığa göre yaparsak.
+
+86
+00:33:45,576 --> 00:33:58,056
+Şimdi çok daha fazla özelliğimiz olursa, bunları böyle teker teker gözle falan inceleneklerden çok mahkul bir şey. Makinede devreye sokmamız gerekecek. Ve makineler işte burada bize çeşitli özellikler seçebilirler.
+
+87
+00:33:58,483 --> 00:34:08,463
+Özellik seçiminde aslında iki tane ana yöntem var. Bu iki ana yöntemden ilkinin de iki tane alt yöntemi var.
+
+88
+00:34:12,148 --> 00:34:34,248
+Var olan özelliklerden bazılarını seçmek. Yani sizin elinizde 50 tane özellik var. Bunların içerisinden bir kısmını seçiyorsunuz. Mesela bu bir yaklaşım. İkinci yaklaşım ise var olan özellikleri linear birleşimlerinden yeni özellikler çıkartılıyor. Yani var olan özellikleri içinden bir şey seçmek değil de var olanları bir şekilde temel çoğunlukla linear birleşimleri kullanılır.
+
+89
+00:34:34,867 --> 00:34:47,608
+PC, LV falan gibisiniz algoritmalar burada çalıştırılıyorlar. Varan özelliklerini lineer birleşimlerinden yeni özellikler çıkartıyor. Yani varan uzaydan başka bir uzaya taşınmıyor. Tamam mı? O şekilde düşünebiliriz.
+
+90
+00:34:48,596 --> 00:35:00,916
+45 boyutlu bir uzay vardı. Yine onu mesela 45 boyutlu başka bir uzaya dön düştürmek ya da belki daha da düşük bir kısmını almak da mümkün olabilir. Onu dediğim gibi birazdan göreceğiz.
+
+91
+00:35:01,515 --> 00:35:16,235
+Şimdi peki var olan özelliklerden bazılarını seçmenin de altında iki tane yaklaşım var. Bunlardan bir tanesi ilki özellikleri tek başlarına değerlendirmek. Bunlar filter yaklaşımları. Yani her bir özellik tek başına değerlendiriyor. Şurada yaptığımız gibi.
+
+92
+00:35:16,500 --> 00:35:19,319
+Burada mesela tek başına Leng'de baktık.
+
+93
+00:35:19,635 --> 00:35:44,355
+LinkedIn gücünü gördük. Burada tek başına Liklis'e baktık, onun gücünü gördük. Bunun gibi mesela elinize 50 tane özellik olsun. 50 tane özellik her birine teker teker bakıyorsunuz. Her birinin sınıfı ya da çıkışı tahmin etme kabiliyetine bakıyorsunuz. Daha sonra bu kabiliyetlere göre bu özelliklerinizi sıralıyorsunuz ve bunların içerisinden sizin için anlamlı gelen bir kısmını ya da belli bir eşiklerin üstünde olan kısmını ya da belli bir sayı kadarını seçiyorsunuz.
+
+94
+00:35:47,635 --> 00:36:11,935
+Her bir özelliğin tek başına kullanıldığındaki çıkışı tahmini bulunuyor. Çıkışı tahmin kabiliyeti bulunuyor. Daha sonra bu kabiliyetlerine göre de özellikler sıralanıp bir şekilde bunların içerisinden sıralama yapılıyor. Peki ikincisinde ne yapılıyor? Özellikleri tek tek değerlendirmek değil de özellik alt kümeleri oluşturularak değerlendiriliyorlar, sınıflandırıcıları içerisinde kullanılır.
+
+95
+00:36:12,436 --> 00:36:17,936
+Bu alt kümeleri en iyilemek için işte raporlar var. Bu ikisini şimdi göreceğiz.
+
+96
+00:36:21,748 --> 00:36:40,608
+Eğitim bilgilerindeki her bir özellik teker teker ele alınıyor. Filtrlarda örnekle ilgili sadece elimizde o özellik olsaydı ne olur sorunun cevabı bulmaya çalışıyor. Seçilen özellikle sınıf ya da sonucun yani sınıf olması çarptırıyor. Regresyon dolayıdır. Birlikte değişimleri inceleniyor. Özellikle işin sınıf ya da sonuç ne kadar değişiyorsa o özelliğin sonucu o kadar etkisi olduğu düşünüyor.
+
+97
+00:36:49,748 --> 00:36:56,488
+Kategorik şeylerde kullanılıyor ama sayısal kısımlarda da kullanılması mümkün.
+
+98
+00:36:57,847 --> 00:37:08,307
+Bir saniye. Mesela şöyle bir şeyden bahsediyoruz. Bir örneğimiz olsun. Şöyle yine basit bir örnek. Burada dört tane özelliğimiz var. Bu da sınıfımız.
+
+99
+00:37:09,347 --> 00:37:12,988
+Şunlarda evet ya da hayır yani iki sınıflı bir problemimiz var.
+
+100
+00:37:15,123 --> 00:37:23,523
+Tek başına pikniğe gidildiğin kararı üzerindeki etkisi ne kadardır acaba? Nemin ne kadardır, rüzgarın ne kadardır, su sıcaklığının ne kadardır?
+
+101
+00:37:24,052 --> 00:37:42,872
+Şimdi buraya bakarsak, mesela şu rüzgarın pikniğe gidilme olasılığını etkilemeyecek, yani pikniğe gidilme sınıfının tahminini çok fazla etkileyemeyeceğini görüyoruz. Çünkü nasıl? Zaten hepsi güçlü, değil mi? Başka hiçbir şey yok bunda. O zaman bu özellik bizim için çok anlamlı olmayacaktır diye tahmin ediyoruz.
+
+102
+00:37:44,340 --> 00:38:11,100
+Diğerlerine de bakacağız. Şimdi bunu böyle gözle bakmak yerine bir Information Gain yöntemi var. Onunla gerçekleştireceğiz. Oldukça basit bir yöntem. Şimdi bir S eğitim seti içerisindeki A özelliğinin Gain'i, kazancı. Tamam mı? Bu kazanç ne kadar yüksekse o kadar iyi bir şey.
+
+103
+00:38:12,019 --> 00:38:33,380
+A özelliğinin S kümesi içindeki G'nin. Eşitti ne diyor? Entropi S kümesi. S dediğimiz şey eğitim setiydi. Eğitim setin entropisinden bahsediyor. Peki, sonra bu eğitim setin entropisinden bir şey çıkartıyor. O çıkarttığı şey de buradaki A'nın her bir özelliğine göre hesaplanan ileri entropi değeri ve oranları var burada.
+
+104
+00:38:33,711 --> 00:38:54,332
+Bunu örnek olarak göreceğiz. Peki buradaki entropi neye karşılık geliyor? Entropi diye bir şey var. Entropi aslında düzensizliğin ölçü. Yani bir şey ne kadar düzensizse entropisi o kadar yüksektir. Bu termodinamin ikinci kanununda mesela bu entropi geçer. Her sistem entropisini arttırmaya çalışır.
+
+105
+00:38:54,963 --> 00:39:15,283
+Yani hiçbir sistem entropisini yükseltmeye, düzenli hale gelmeye çalışmak, düzensiz hale gelmeye çalışmak. Ne bileyim, bir tane boş bir kabın içerisine bir miktar gaz molekülünü bir noktadan vermeye başlarsanız içeriye gazı, bu gaz molekülleri içeride belli bir noktaya odaklanmak gibisinden bir şey değil de her yere yayılmaya çalışırlar. Tamam mı?
+
+106
+00:39:15,572 --> 00:39:24,912
+Dolayısıyla entropi hep artmaya çalışan bir şey şeklinde düşünebiliriz. Neyse, peki entropiyi matematik olarak nasıl hesaplıyordur?
+
+107
+00:39:25,295 --> 00:39:38,336
+Ne kadar dağımık değil. N tane kavramın, bakın, N tane kavramın C farklı değeri varsa, N'in entropisi, N kavramının entropisi, N'in aldığı her diğerinin o hastalıkları kullanılarak şu şekilde hesaplanıyor.
+
+108
+00:39:38,876 --> 00:39:49,315
+Şimdi burada, i eşitir birden C'ye kadar, C bu dediğim gibi N tane C tane farklı değeri varsa, eksi diyor P, i çarpı logaritma kitabında P, i.
+
+109
+00:39:49,315 --> 00:39:51,596
+Bu ne demek? Mesela şöyle bir şey düşünelim.
+
+110
+00:40:01,715 --> 00:40:07,715
+Mesela bir özelliğimiz olsun. Mesela sınıfın...
+
+111
+00:40:12,500 --> 00:40:35,659
+Mesela diyelim ki elimizde 6 tane özellik var. 6 tane örnek var. Bu 6 tane örneğin de sınıfları şunlar. Şimdi şurada hem sınıfını da hesaplayabiliyorduk gördüğünüz gibi ya da herhangi başka bir özelliğini. Mesela şuradaki bir şeyi hesaplamaya kalkarsak şu havanınkini ya da pikniğe gidildiğininkini aynı yapıda da. Bunların hepsi gördüğünüz gibi hesaplayabiliyoruz.
+
+112
+00:40:40,500 --> 00:41:03,980
+Bir özellik ya da sınıfın değerleri bunlar olsun. Yani 6 tane örnek var. Şimdi burada baktığımızda A'nın oluşma olası da %50 gözüküyor. B'nin oluşma olası da %50 değil mi? Şuradaki Pİ diye ifade ettiğimiz şeyler buradaki %50'leri gösteriyorlar. Yani o özellikteki, o değerin ne kadar olası olduğunu gösteriyor.
+
+113
+00:41:04,320 --> 00:41:11,539
+Şimdi buna göre bakarsak, şu yapının entropisini hesaplamaya kalkarsak şöyle bir şey yapmanız gerekecektir.
+
+114
+00:41:13,440 --> 00:41:16,039
+Eksiyi boş veririm şimdilik. En sona koyarız.
+
+115
+00:41:16,039 --> 00:41:17,159
+Şöyle yapalım aslında.
+
+116
+00:41:17,860 --> 00:41:19,500
+Pİ diyor. Pİ'miz ne?
+
+117
+00:41:20,480 --> 00:41:23,079
+%50 çarpı.
+
+118
+00:41:23,560 --> 00:41:27,060
+Logaritma iki tablatla %0.5 kaçtır arkadaşlar?
+
+119
+00:41:33,012 --> 00:41:34,132
+Eksi 1 değil mi?
+
+120
+00:41:35,212 --> 00:41:36,632
+Değil mi? Eksi 1 değil.
+
+121
+00:41:37,052 --> 00:41:41,552
+Sonra artı, şimdi A değeri için yaptık, bir de B değeri için aynısını yapacağız.
+
+122
+00:41:41,752 --> 00:41:44,271
+B değerinin de aynısı olduğu için ne olacak burası aslında?
+
+123
+00:41:46,252 --> 00:41:49,392
+Bunun iki tanesi olacak değil mi?
+
+124
+00:41:50,672 --> 00:41:51,872
+O zaman bu kart çıkar.
+
+125
+00:41:55,891 --> 00:41:56,851
+Bir çıkar.
+
+126
+00:41:57,271 --> 00:42:13,051
+Değil mi? Bu bir çıkar. Yani şuraya baktığımızda böyle bir şeyin entropisi bir çıktı. Entropinin, şimdi şuraya da bakarsanız aslında onu görürsünüz. İki sınıflı bir şey için konuşursak. İki sınıflı bir şeyin entropisi en fazla zaten bir olabilir.
+
+127
+00:42:13,920 --> 00:42:35,960
+Burası bakın aşırı derecede düzensiz bir şey. Yani hiçbir şekilde tahmin yapamıyoruz. A sınıfından mı, B sınıfından mı? Çünkü örneklerin yüzde ellisi A sınıfından ya da A değerine sahip, yüzde ellisi B değerine sahip. Hiçbir structure yok. Hiçbir structure olmadığı için düzensizlik maksimum seviyede ve maksimum da iki kavram içinde.
+
+128
+00:42:38,195 --> 00:42:54,975
+Entropinin değeri maksimum 1'e erişebilir. Dolayısıyla mesela bu farklı olsaydı, şöyle bir şey olsaydı, mesela bu yüzde 100 olsaydı, bu da yüzde 0 olsaydı. Yani şöyle bir şeyin de olsaydı.
+
+129
+00:42:59,923 --> 00:43:08,123
+Burada bunun tahminen ne çıkmasını bekleyeceğiz? Sıfır çıkmasını bekleyeceğiz. Bakalım çıkacak mı? Yine eksi en başta duruyor.
+
+130
+00:43:08,123 --> 00:43:25,663
+Şöyle kaldıralım. Şimdi A için bunu düşünelim ilk önce. A, P yine bir değil mi? Çarpı logaritma iki tabanında bir. Logaritma iki tabanında bir kaç?
+
+131
+00:43:26,743 --> 00:43:27,264
+Sıfır.
+
+132
+00:43:27,827 --> 00:43:41,427
+Sıfır. Artı. Ötekisinin olasılığı ne kadar? Benim olasılığı sıfır çarpı bir şey. Çok da önemli değil. Dolayısıyla burası ne olacak o zaman? Sıfırı göreceğiz değil mi?
+
+133
+00:43:43,887 --> 00:43:55,007
+Dolayısıyla entropi dediğimiz şey bu şekilde hesaplanıyor. Peki, böyle bir örneğimiz olduğunu düşünün. Bu örnek için her bir özelliğin geyinini hesaplayacağız.
+
+134
+00:43:55,891 --> 00:44:09,951
+Pikniğe gidildi mi sorusunun iki tane cevabı var. Evet ya da hayır. İlk önce pikniğe gidildi mi özel mi? Yani sınıfın şu en sondakinin entropisini hesaplıyoruz. Çünkü formül etrafı hatırlayalım. Entropi S'ten çıkartıyoruz bunların hepsini. S dediğimiz şey eğitim setinin tamamı.
+
+135
+00:44:10,452 --> 00:44:28,292
+İlk önce eğitim setinin tamın entropisini hesaplıyoruz. Evet cevabının olası 3 bölü 4, hayır cevabının olası 1 bölü 4. Dolayısıyla Pikniğin entropisi, şurada gördüğünüz gibi işte eksi 3 bölü 4 çarpı ile ulatma kitabında 3 bölü 4, eksi 1 bölü 4 çarpı ile ulatma kitabında 1 bölü 4. O da eşitir 0.811 olarak bulunuyor. Bu Pikniğin entropisi.
+
+136
+00:44:28,788 --> 00:44:47,368
+Şimdi şu entropi S kısmı zaten bütün farklı, yani şuraya gelecek olan A özelliklerin hepsi için aynı olacağından dolayı bunu tekrar tekrar hesaplamayacağız. Zaten entropi S şartla değil hesaplamak. Hepsini de aynı şeyden çıkarttığınız için çok da bir şey fark etmeyecektir. Bunu hesaplaması şartla değil.
+
+137
+00:44:47,956 --> 00:45:00,695
+Şimdi gelelim havanın piknik üzerindeki entropisinin ölçününe bakalım. İlk önce neydi? Entropi S'ti. Yani şu kısmı kopyalayalım şuraya.
+
+138
+00:45:04,500 --> 00:45:05,327
+Evet.
+
+139
+00:45:05,327 --> 00:45:33,327
+A Entropi S 8.811-2 tane parça var burada. Ne onlar? V elemanıdır. Value A. Value yani A'nın değerlerinin her biri için her bir B'si. Buradaki V'lerin her biri A'nın her bir farklı değerini ifade ediyor. A'nın kaç tane değeri var arkadaşlar burada? A dediğimiz şey şu anda hava. Havana'nın iki tane değeri var. Bakın güneşli olması ve yağmurlu olması. Başka da bir şey.
+
+140
+00:45:33,327 --> 00:45:57,668
+İlk önce güneşleri ele alacağız. Sonra da yağmurlu günleri ele alacağız. İlk önce güneşli günleri ele alalım. Güneşli günlerin entropisi, havanın güneşli olma oranı üzerinden 3 bölü 4 çarpı yine burada entropi SV yani güneşli pikniğe gidilme ve gidilmeme oranları bunlar.
+
+141
+00:45:58,228 --> 00:46:14,507
+3 bölü 3 ve 0 çıkmış bunlar. Bunları hesapladığınızda, bir de şey var, ne derler ona, hava yağmurluykenki kısım var. Şuradaki, şu kısımda havanın yağmurlu olduğu durumdaki yapacağımız hesaplar.
+
+142
+00:46:22,900 --> 00:46:37,340
+Hava güneşliyken gidilmesiyle alakalı, bu kısım ise hava güneşliyken gidilmemesiyle alakalı. Burası havanın yağmurlu olduğu kısım, şurası hava yağmurluyken gidilmesiyle alakalı, burası hava yağmurluyken gidilmemesiyle alakalı kısım.
+
+143
+00:46:37,340 --> 00:46:45,779
+Bu yüzden bunu çalıştırdığımızda 0.811 olduğunu görüyoruz. Hiçbir şey değişmemiş. Niye hiçbir şey değil? O zaman bunlar 0 çıkıyorlar. Öyle olmalı.
+
+144
+00:46:46,460 --> 00:46:50,380
+Tabii 3 bölü 3 ne olacaktır? 1 logaritma kitabında 1 zaten 0.
+
+145
+00:46:50,831 --> 00:47:16,612
+Buraya bakarsak, bir bölü bir bir, burası sıfır. Dolayısıyla 811'den zaten sıfır çıkartıyoruz. Yine 811 çıkıyor. Bunu diğerleri için de gerçekleştirirsek eğer nem için, rüzgar için, su sıcaklığı için şuradaki değerlerin çıktığını görüyoruz. Bakın rüzgarın gain'i sıfır çıkmış. Çünkü 811'den 811 çıkarttırmış bize. Dolayısıyla bize hiçbir şey söyleyemiyor. Gördüğünüz gibi burada görebiliyorsunuz.
+
+146
+00:47:16,947 --> 00:47:38,667
+Yani geyini yüksek olan bir şey bizim için anlamlı bir şey. Yani bu aslında birazcık şöyle bir şey. Ben o özelliği, yani bu geyini düşünürseniz şöyle bir şey ifade edelim. Ben o özelliğin zaten mevcut entropisini ne kadar azaltabiliyorum o özelliği kullanarak bunu ölçmeye çalışıyor. Bir daha söyleyeyim.
+
+147
+00:47:39,059 --> 00:47:54,880
+Ben bu sınıfın, daha doğrusu bu sınıfın, S kavramının ya da öyle diyelim, S sınıfının entropisini A özelliğini kullanarak ne kadar azaltabiliyorum. Bunu gösteriyor.
+
+148
+00:47:55,639 --> 00:48:01,979
+A'yı kullanarak ne kadar azaltırsam o kadar kötü bir şey.
+
+149
+00:48:03,219 --> 00:48:14,379
+Dolayısıyla biz burada maksimum olan gain'e göre işlemlerimizi yapıyoruz. Bu oldukça standart bir yaklaşım. Çok sıklıkla da kullanılan bir yaklaşımdır.
+
+150
+00:48:16,779 --> 00:48:26,159
+Peki, elimizde burada kategorik bir şeyler var. Kategorik bir şeyler değil de mesela sayısal bir şeyler olsa kullanabilecek yöntemlerden bir tanesi de şu.
+
+151
+00:48:27,539 --> 00:48:29,059
+Signal to Noise Ratio.
+
+152
+00:48:29,748 --> 00:48:32,148
+Sinyal'in gürültüye oranı demek.
+
+153
+00:48:32,488 --> 00:48:33,667
+Daham edilebileceğiniz gibi.
+
+154
+00:48:34,768 --> 00:48:36,167
+Geçen hafta konuşmuştuk.
+
+155
+00:48:36,768 --> 00:48:42,268
+Sınıflar arası ayrılıkların fazla, sınıflar içi ayrılıkların az olması iyi bir şeydi değil mi?
+
+156
+00:48:43,228 --> 00:48:47,568
+Bu bilgiyi aslında bir metodolojiye dönüştürmüş halde.
+
+157
+00:48:48,847 --> 00:48:56,288
+Şimdi şuradaki SI dediğimiz şey, iyinci özelliğin signal to noise ratio'su.
+
+158
+00:48:56,820 --> 00:49:17,320
+İyinci özelliğin Singleton Öz Ratiosu. Nasıl bulunuyormuş bu? M1-M2 diyor. M1 ve M2 nemiş bakın. M1 sınıf 1'deki iyinci özelliklerin ortalaması, M2 ise sınıf 2'deki iyinci özelliklerin ortalaması. Şimdi bunlar birbirlerinden ne kadar uzak olurlarsa o kadar iyi bir şey midir, kötü bir şey midir?
+
+159
+00:49:22,643 --> 00:49:24,163
+Uzak olmaları iyi değil mi?
+
+160
+00:49:24,743 --> 00:49:29,743
+Uzak olmaları iyi değil mi? Dolayısıyla bunlar ne kadar uzaklarda olurlarsa o kadar bizim için iyi bir şey.
+
+161
+00:49:31,224 --> 00:49:40,983
+Peki D1 neyi ifade ediyormuş? Sınıf 1'deki ince özelliklerin standart satmasını, D2 ise sınıf 2'deki ince özelliklerin standart satmasını.
+
+162
+00:49:40,983 --> 00:49:46,823
+Yani sınıf içi özellikler. Şimdi bunların da ne olmasını isteriz biz? D1 artı D2'nin de ne olmasını isteriz?
+
+163
+00:49:55,860 --> 00:49:57,440
+Az olmasını isteriz galiba.
+
+164
+00:49:57,820 --> 00:50:07,692
+Az olmasını isteriz. Niye? Çünkü D1 ve D2'nin ikisinin de küçük olmasını istiyoruz. D1'in küçük olması demek ne demek? O özellik, o sınıftaki...
+
+165
+00:50:07,764 --> 00:50:32,644
+O özelliği, hesap örnekler birbirine çok benziyorlar demek. Dağılımları küçük bir bölgeye dağılmışlar demek. V1 artı da ekinde bu kadar küçük olmasını istedik. Şimdi Singleton'ın izlediğimiz şey bu ikisinin bölümünden geliyor. Yukarıdakinin yüksek olmasını istiyoruz, aşağıdakinin düşük olmasını istiyoruz. Tabi burada M1-M2'nin yanında bir mutlak değerli şartları kullanmanız mantıklı bir hareket olacaktır. Tahmin edebilirsiniz bunu zaten.
+
+166
+00:50:33,907 --> 00:50:48,467
+S değeri en yüksek olan özellikler seçilerek sınıflandırmanı kullanılıyor. S değeri en yüksek olan, ne bileyim şu değerden yüksek olanları seçebilirsiniz. Ya da en yüksek S'lerine sahip olan K taneyi seçebilirsiniz gibi bir sürü varyasyon gerçekleştirilebilir.
+
+167
+00:50:49,268 --> 00:51:06,867
+Şimdi örnekleri teker teker değerlendirmesini yaparken bu iki tane filtre'den bahsettim. Daha da bir sürü filtre var. Yani şu VK'yı muhtemelen bugün yetişirse bugüne bakarız ya da haftaya da bakarız. Orada bile mesela bir sürü bu tarz yöntem var.
+
+168
+00:51:07,668 --> 00:51:19,288
+Burada iki karesi var vs. bir sürü şeyleri var, çeşitli yöntemler. Burada sadece iki tanesini örnek olarak verdim. Bir tanesi kategorik değişkenler için, bir tanesi sayısal değişkenler için kullanılan filtrelere örnek.
+
+169
+00:51:19,288 --> 00:51:31,208
+Şimdi tekrardan şu yukarıdaki kısma dönersek, şimdi şuradaki şunu gördük. Bakın özellikleri tek tek değerlendirmeyi gördük.
+
+170
+00:51:32,244 --> 00:51:37,403
+Şimdi özellik alt hükümelerini göreceğiz. Şu kısmı.
+
+171
+00:51:41,556 --> 00:51:55,596
+Raporlar. Şimdi ilk önce şey yapalım. Niye böyle bir şeye ihtiyaç var? Onu biraz düşünelim.
+
+172
+00:52:19,956 --> 00:52:23,536
+Güzel renk seçimleri yaptım ama.
+
+173
+00:52:24,415 --> 00:52:24,775
+Olur.
+
+174
+00:52:29,043 --> 00:52:39,043
+Evet, tamam. Şimdi bizim bir veri kümemiz var. Bu veri kümünde...
+
+175
+00:52:54,547 --> 00:52:55,047
+Tamam.
+
+176
+00:53:08,019 --> 00:53:13,340
+Şu birinci özelliğimiz, bu da ikinci özelliğimiz. Tamam, yine koordinasyonundayız.
+
+177
+00:53:14,960 --> 00:53:22,599
+Elimizde bayağı bir yüksek boyutta nokta var. Yeşiller bir sınıfı gösteriyor, pembeler başka bir sınıfı gösteriyor.
+
+178
+00:53:22,960 --> 00:53:32,460
+Şimdi burada bana şunu söylemenizi istiyorum. X1 özelliği mi daha iyidir yoksa X2 özelliği mi daha iyidir?
+
+179
+00:53:40,916 --> 00:53:41,516
+Ne dersiniz?
+
+180
+00:53:46,612 --> 00:53:47,711
+Eşitler.
+
+181
+00:53:49,211 --> 00:53:50,892
+Eşitler. Peki iyiler mi?
+
+182
+00:53:51,731 --> 00:53:52,791
+İkisi de kötü.
+
+183
+00:53:53,372 --> 00:53:54,751
+İkisi de çok kötüler değil mi?
+
+184
+00:53:54,751 --> 00:54:04,612
+Yani mesela deminki filter yöntemlerini kullansak, mesela signotur nodre eşiği kullanmaya kalktığımızda burada ikisinin de hiçbir işe yaramadığını göreceğiz aslında.
+
+185
+00:54:05,652 --> 00:54:10,172
+Ya da histogramlarını çizdirmeye kalksanız ikisinde de bütün dağılımlar üst üste biniyorlar değil mi?
+
+186
+00:54:11,860 --> 00:54:29,860
+Yani X1 için de mesela pembelerin sadece şey yapalım. Pembeler için şöyle bir şey oluşuyor. Yeşiller için de yine dire bir onunla aynı bir şey oluşuyor. Aynı şey burada da geçerli.
+
+187
+00:54:30,260 --> 00:54:55,420
+Şöyle bir şey, yeşiller için, pembeler için de yine onun tamamen üstünde birebir bir şey oluyor. X1'e baksak da hiçbir şey bulamıyoruz. X2'e baksak da hiçbir şey bulamıyoruz. Peki, tamam. Yani filterler mesela burada özellik seçimi yapmak değil, bir şey değil. Yani bu özelliklere baktığınızda bu özellikler tek başlarına hiçbir şekilde özelliği ne yapamıyorlar? Pardon, sınıfı ne yapamıyorlar? Tahmin edemiyorlar gibi gözüküyor tek başlarına.
+
+188
+00:54:58,260 --> 00:55:03,940
+Burada pekala bu çok da zor bir problem değil gibi. Yani şunu demek istiyorum. Mesela şöyle bir şey diyebilirsiniz.
+
+189
+00:55:15,987 --> 00:55:24,987
+Şuraya bir tane şundan koyayım. Mesela şöyle bir şey yazabiliriz herhalde.
+
+190
+00:55:24,987 --> 00:55:35,987
+X1'i büyüktür, mesela X1 küçüktür, yıldız değeri neyse.
+
+191
+00:55:43,380 --> 00:56:01,680
+Kalpten. O zaman bunun sınıfı nedir diyebilirsiniz. Yeşil, değil mi? Bunun gibi ben kurallar yazarak bu verikimesini sınıflandırabilir miyim? Çok iyi bir şekilde.
+
+192
+00:56:06,420 --> 00:56:07,659
+Sınıflandırabiliriz.
+
+193
+00:56:08,000 --> 00:56:09,920
+Değil mi? Oldukça basit bir şekilde yapabiliriz.
+
+194
+00:56:10,019 --> 00:56:13,880
+Ama bu kadar basit bir şekilde yapılabilecek şeyi aslında neyler göremiyor?
+
+195
+00:56:14,380 --> 00:56:15,240
+Filterlar göremiyor.
+
+196
+00:56:16,440 --> 00:56:20,599
+Değil mi? Yani bu iki özellikleri tek başlarına kullandığımda hiçbir şey yapamıyorum.
+
+197
+00:56:20,720 --> 00:56:23,280
+Doğru. Ama özellikleri birleştirerek kullandığımda bakın.
+
+198
+00:56:23,380 --> 00:56:24,500
+Şuradaki şurası birleştirmeli.
+
+199
+00:56:24,500 --> 00:56:25,360
+Tamam.
+
+200
+00:56:26,099 --> 00:56:50,519
+Çünkü, filterler nasıl bir şeyler arıyorlar belki, şuradaki gibi bir şey arıyorlar sadece, tekli bir şey arıyorlar. Ama aynı anda birden fazla özellik kullanarak, ben ne yapabilirim? İyi bir sınıflandırma yapabilirim bu tarz bir veri hükümet sınıflar. Tamam mı? O zaman bizim bu özellikleri birlikte kullanan bir şeye ihtiyacımız var değil mi? Yapıya ihtiyacımız var. İşte bu da raporlar, karşımıza raporlar geliyor.
+
+201
+00:56:51,572 --> 00:57:00,892
+Anlaşıldı mı? Filtrların mesela böyle bir hükümesi üzerinde işe yaramadıkları ve ikisini birden kullanmanın aslında işe yarayabileceği böyle bir hükümesinde.
+
+202
+00:57:11,347 --> 00:57:34,188
+Bilmiyorum sessizlik, sükut ikrardan mı gelir, ona mı kabul etsem, ses gelmiyor. Anlaşıldı hocam. Peki, peki. Şimdi o zaman arkadaşlar raporlara geçmeden önce bir ara verelim. Saat 10.45 dakika olmuş. Clear diyelim.
+
+203
+00:57:38,483 --> 00:57:39,284
+Kapatalım.
+
+204
+00:57:39,983 --> 00:57:41,123
+Stop share diyelim.
+
+205
+00:57:46,547 --> 00:57:49,788
+15 dakika sonra görüşmek üzere.
+
+206
+01:13:23,891 --> 01:13:27,091
+Tekrardan merhaba arkadaşlar. Ses geliyor mu?
+
+207
+01:13:28,832 --> 01:13:29,611
+Geliyor hocam.
+
+208
+01:13:30,211 --> 01:13:39,192
+Tamamdır. Şimdi derse başlamadan önce bir şey merak ediyorum. Onu bir sorayım size. Epey 51 kişi olmuşuz. Genel bir fikir çıkar.
+
+209
+01:13:40,252 --> 01:13:44,631
+Şöyle bir şey diyorum. Sadece öğrenmek istiyorum.
+
+210
+01:13:45,300 --> 01:13:58,300
+Pandemi sürecinin tamamen bittiğini düşünelim. Yani herhangi bir riskin falan kalmadığını, dünyanın içinde Covid diye bir şey kalmadığını falan düşünelim. Öyle bir durumda eğitimin...
+
+211
+01:14:00,372 --> 01:14:17,152
+Tamamen onlar, laboratuvarlar ve sınavlar haricinde, ölçme değerlendirmenin daha düzgün yapılabileceği bir ortamda. O kısımlar yüz yüze olacaklar diye düşünün. Sınavlar ve laboratuvarlar, notlandırma işlerle ilgili alakalı olan kısımlar.
+
+212
+01:14:17,520 --> 01:14:44,940
+Oralar yüz yüze. Onu haricindeki kısımların tamamen online ya da tamamen yüz yüze ya da hibrit şeklinde yapılması gibi üç tane seçenek sunsak size. Hangisini seçersiniz? Burada bu konudaki fikirlerinizi chat kısmından hani online, hibrit ya da yüz yüze diye yazarsanız bir genel bir şeyi nasıl görmüş oluruz? Chate yazarsanız sevinirim.
+
+213
+01:14:46,739 --> 01:14:48,619
+Hocam, hibritte nasıl olacak peki?
+
+214
+01:14:49,159 --> 01:14:53,039
+Hibrit dediğim, mesela ne bileyim, derslerin yarısı online, yarısı yüzde.
+
+215
+01:14:54,199 --> 01:14:55,699
+Anladım. Derse göre o zaman.
+
+216
+01:14:56,579 --> 01:15:03,079
+Derse göre ya da dersin bir kısmı, yani ne bileyim işte 14 hafta varsa yarısı online, yarısı yüzde.
+
+217
+01:15:34,195 --> 01:15:36,275
+Başka, bayağı kalabalığız ya.
+
+218
+01:15:57,716 --> 01:16:23,756
+Genel olarak hibrit daha çok karşımıza çıktı herhalde. Yüzde diyenler de var. Tamamen online diyen de var ama onlar az der herhalde. Daha çok hibrit ön plana çıkmış gibi gözüküyor. Anladım. Peki niye hibrit, niye böyle tercihleriniz var?
+
+219
+01:16:24,724 --> 01:16:26,724
+Onu birazcık söyleseniz.
+
+220
+01:16:34,420 --> 01:16:37,280
+Burada mikrofonunuzu açıp konuşabilirsiniz. Yazmak kelime.
+
+221
+01:16:39,559 --> 01:16:47,180
+Hocam, bazı arkadaşlar, yani ben de çalıştığım için aslında her gün okula gelmektense bazen gelmek daha iyi olabilir zaman açısından.
+
+222
+01:16:48,220 --> 01:16:54,700
+Çalışma için daha uygun olabilir diyorsun İbrit'te. Peki, niye peki tamamen online olması?
+
+223
+01:16:56,275 --> 01:17:04,876
+Hocam, çok online olduğu zaman da bazen kopuyoruz derslerden. Kayıtların vermiş olduğu bir rahatlık oluyor, kayıtlardan izlerim diye.
+
+224
+01:17:08,755 --> 01:17:10,296
+Kayıtlar olmasa daha mı iyi?
+
+225
+01:17:10,915 --> 01:17:16,115
+Yok, aslında kayıtların olmaması değil de canlı ders takip etmek biraz zor oluyor.
+
+226
+01:17:18,956 --> 01:17:20,175
+Niye zor oluyor?
+
+227
+01:17:23,444 --> 01:17:26,184
+Canlı derste takip etmek. Ne diyorsun işte?
+
+228
+01:17:28,543 --> 01:17:29,924
+Konsantrasyon bozuluyor hocam.
+
+229
+01:17:30,584 --> 01:17:34,004
+Konsantrasyon bozuluyor. Sınıf ortamında gibi odaklanamıyorum diyorsun. Öyle mi?
+
+230
+01:17:34,404 --> 01:17:34,623
+Evet.
+
+231
+01:17:35,924 --> 01:17:37,804
+Anladım. Peki.
+
+232
+01:17:43,315 --> 01:17:46,635
+Çalışma açısından büyük imkan kayıtların olması.
+
+233
+01:17:47,415 --> 01:17:48,435
+Evet.
+
+234
+01:17:48,956 --> 01:17:50,735
+Başka fikri olan,
+
+235
+01:17:52,015 --> 01:17:55,595
+mesela tamamen yüzde diyenler var. Niye yüzdeyi seçtiniz?
+
+236
+01:18:06,355 --> 01:18:15,935
+Hocam bence uzaktan eğitimde hem odaklanamıyoruz hem de ev ortamında olduğumuz için böyle bir ders dinleme, bir şeyler öğrenme havasına yaramıyoruz.
+
+237
+01:18:16,515 --> 01:18:22,515
+Derslerin kayıtlarının olması gerçekten güzel bir avantaj ama bunu sınıf ortamında da yapabiliriz belki bilmiyorum.
+
+238
+01:18:22,515 --> 01:18:27,835
+O yüzden ben yüz yüzeye geçilmesini tercih ediyorum.
+
+239
+01:18:33,811 --> 01:18:45,091
+Hatta Stanford gibi bir sisteme de geçilebilir. Onların da genellikle dersleri video kayıt altına alıp sonradan YouTube'da paylaşılıyor ya öyle bir sistem de yapılabilir yüz yüzeye geçildikten sonra.
+
+240
+01:18:46,963 --> 01:19:12,743
+Olabilir. Yani dediğim gibi yüzde yapılması derslerin kaydedilmesinin önünde bir engel değil aslında. Size sunulması önünde bir engel değil ama teknik manada biraz daha şey lazım. Ne derler ona? Yatırım lazım. Öyleyse teknik derken biraz yatırım lazım. Sınıflara o sistemlerin döşenmesi falan gibisinden. O tarz bir iş var orada. Peki başka bir tür söylemek isteyen?
+
+241
+01:19:15,188 --> 01:19:20,188
+Hocam şey, ben online hibrit veya yüz yüze'den...
+
+242
+01:19:20,207 --> 01:19:30,747
+Farklı olarak hangisi seçilirse seçilirsin, ona uygun bir plan olması gerektiğini düşünüyorum. Şu an mesela çok planlı ilerlediğimizi düşünmüyorum online eğitim sırasında.
+
+243
+01:19:31,207 --> 01:19:32,647
+Nasıl yani planlı derken?
+
+244
+01:19:32,647 --> 01:19:48,207
+Yani şunu kastediyorum hocam, mesela biz sonuç olarak online bir eğitim alıyoruz ve doğal olarak buna uygun ben bu dersi alırken neyi öğreteceğim, benden kendi adıma da neyi öğreneceğimi dair.
+
+245
+01:19:48,207 --> 01:20:00,000
+Bu dersler açısından sadece öğrencilerin kopya çekmemesi o kadar büyük bir şey haline geliyor ki.
+
+246
+01:20:00,000 --> 01:20:16,340
+Peki, dersin içeriğiyle alakasız sınavlara giriyoruz. Gerçekten çok alakasız ve tamamen sadece çok kısa süre olsun ve kopya çekmeye fırsatı olmasının motivasyonuyla sınavlar yapılıyor.
+
+247
+01:20:17,059 --> 01:20:26,479
+Orası çok sıkıntılı bir süreç arkadaşlar. Gerçekten hocalar açısından o bir problem, gerçek bir problem.
+
+248
+01:20:28,000 --> 01:20:51,020
+Nihai bir çözümü de çok fazla. O yüzden en başta şeyi varsayarak söyledik. Bu ölçme değerlendirme sürecinin yüzde yapılacağını varsayarak diye konuştum zaten fark ettiyseniz en başta. Orasının hem hocaları çok zorlayan hem de öğrencileri çok zorlayan bir süreç olduğunun farkındayız. Herkes farkında.
+
+249
+01:20:51,408 --> 01:20:58,028
+Yani ama şu anda dediğim gibi buna böyle nihayet bir çözüm maalesef yok.
+
+250
+01:20:58,328 --> 01:21:05,948
+Şu an da söylüyorum özür dilerim hocam. Yani bütün dersler için benzer durumlar var ama bazı derslerde bunu yapabilen hocalarımız da var.
+
+251
+01:21:06,168 --> 01:21:11,788
+Yani proje odaklı gidiyor ve doğal olarak bir internet araştırması zaten bekliyor bizden.
+
+252
+01:21:11,788 --> 01:21:19,248
+Yani bu bir kopya değil aslında bir araştırma sürecinin parçası oluyor. Kaynak ayırıyorlar hocalar.
+
+253
+01:21:19,408 --> 01:21:47,408
+Hatta kaynak öneriyorlar ve bir aslında şeyden çok sürekli öğreten, her şeyi ezberleten kişiden çok bir yol gösterici gibi rol alıyor dersi öğretirken. Şimdi bu bir biçim. Biz ondan ilerleyeceksek bu biçim. Yüz yüze ilerleyeceksek de bunu bu araştırmalarla nasıl besleyebiliriz diye bir plan olabilir. Ama her şekilde net bir plan olması gerekiyor. Bu türlü ne siz yapabiliyorsunuz ne biz anlayabiliyoruz.
+
+254
+01:21:47,408 --> 01:21:53,008
+Böyle karışık, yani hibritin kötüsünü yaşıyoruz aslında o anlamıyla.
+
+255
+01:21:53,927 --> 01:22:01,768
+Anladım, anladım. Peki. Çok teşekkürler [öğrenci] değerlendirmenim için. Evet başka?
+
+256
+01:22:11,155 --> 01:22:22,595
+Peki, başka bir fitil yok. Biraz toparlandık herhalde. Herkes biraz daha açılmıştır. Şimdi derste kaldığımız yerden devam edelim arkadaşlar.
+
+257
+01:22:25,815 --> 01:22:33,796
+Şimdi şey noktasında özellikle teker teker seçmenin alternatifi olarak özellikle alt hükümelerin belirlenmesi. Yani bir sınıflandırıcınız olacak.
+
+258
+01:22:34,804 --> 01:22:54,583
+Sınıflandırıcı seçeceksiniz. Bunları daha sonra görelim. Mesela bir karar ağaç diyelim ki. Bir karar ise edeceksiniz. Daha sonra bu karar ağacına özellik alt kümelerini vereceksiniz. Mesela işte elinizde en tane özellik varsa, öyle düşünelim, en tane özellik varsa olası iki üzere en tane özellik alt kümesi vardır değil mi? Düşünürsek.
+
+259
+01:22:56,115 --> 01:23:23,236
+İki yüz lira en tane özellik alt ücünmesinin her biriyle bu sınıflandırıcınızı eğiteceksiniz ve bunların içerisinde en yüksek başarıya sahip olanı da seçeceksiniz. Tamam mı? Şimdi bu çok dümdüz bir yaklaşım ama bunun bedeli aslında iki yüz lira en tane eğitim. Şimdi özellik sayısı üçse burada sekiz tane eğitim yapmaktan bahsediyoruz ki bu belki çok korkunç bir şey değil ama özellik sayısı mesela yüz ise.
+
+260
+01:23:23,988 --> 01:23:48,688
+İki yüzyı yüz tane eğitim yapmanız mümkün değil. Değil mi? Yani bütün olası özellik alt kümelerini incelemeniz mümkün değil. Onun yerine nasıl bir şey yapabiliriz? Yaklaşım şu. Şimdi burada dört tane özellik var. Yani eniştiri dört için burada gördüğünüz şekil. Şuradaki sıfır sıfır sıfır sıfırın anlamı hiçbir özelliğin seçilmediği durum.
+
+261
+01:23:49,055 --> 01:24:05,815
+Mesela 0, 1, 0, 0'ın anlamı sadece ikinci özellik seçilmiş, diğerleri seçilmemiş. 1, 0, 0, 1'in anlamı birinci ve dördüncü özellik seçilmiş, ikinci ve üçüncü özellik seçilmemiş. Dolayısıyla burada yuvarlak yuvarlak görebileceğiniz 16 tane yuvarlak var. Şurada görüyorsunuz.
+
+262
+01:24:06,323 --> 01:24:13,023
+Bu 16 tane yuvarlak bütün olası durumları ifade ediyorlar ve bu bütün olası durumların birbirine bağlantılarını görüyorsunuz.
+
+263
+01:24:13,023 --> 01:24:22,984
+Şimdi şöyle bir şeyden bahsediyoruz. Mesela diyelim ki ben 0000'dayım. Yani bunun anlamı ben hiçbir özelliğe bakmayacağım demek.
+
+264
+01:24:23,923 --> 01:24:25,363
+Hiçbir özelliğe bakmayacağım.
+
+265
+01:24:26,163 --> 01:24:47,884
+Öniversitesi noktasından çıkan dört tane ok var. Ne onlar? Sadece birinci özelliğe bakacağım, sadece ikinciye bakacağım, sadece üçüncüye bakacağım, sadece dördüncüye bakacağım. Sadece birinciye bakacağımdan çıkan üç tane ok var. Burada görüyorsunuz bir ve ikiye bakacağım, bir ve üçe bakacağım, bir ve dörde bakacağım şeklinde. Mantığı anladınız buradaki okların neyi temsil ettiklerine. Şimdi peki yöntem nasıl ilerleyecek? Yöntem şu.
+
+266
+01:24:48,819 --> 01:25:04,519
+0-0-0 noktasındaki bu özellik alt kümesiyle ben sınıflandırıcımı eğiteceğim ve bununla bir tahminde bulunacağım. Daha sonra bundan çıkan oklarla yine eğiteceğim.
+
+267
+01:25:05,011 --> 01:25:28,092
+Buradan da sınıflandırıcımın başarılarını göreceğim. Mesela hiçbir şey elimde yokken %60 performansım varmış. Şimdi bunu da bir açalım. Hiçbir elinizde özellik yokken gelen bir örnek için de tahminde bulunmak isterseniz nasıl bir şey yapabilirsiniz? Hiçbir özelliğe bakamıyorsunuz ama. O şekilde düşünün. Nasıl tahminde bulunsunuz?
+
+268
+01:25:31,060 --> 01:25:33,380
+Tamamına aynı sınıfı verebiliriz.
+
+269
+01:25:33,420 --> 01:25:38,120
+Veririrsiniz. Peki o tamamına aynı sınıfı mesela neye bakarak verebilirsiniz?
+
+270
+01:25:43,572 --> 01:25:47,811
+Sınıfları biliyorsunuz, örneklerin sınıflarını biliyorsunuz ama örneklerin özelliklerini bilmiyorsunuz.
+
+271
+01:25:49,311 --> 01:25:51,252
+En çok hangi sınıftan varsa tamamını?
+
+272
+01:25:51,252 --> 01:25:58,032
+Aynen öyle. En fazla hangi sınıftan örnek varsa bütün hepsine ne yaparsınız? O örneği, o sınıfı söylersiniz.
+
+273
+01:25:58,872 --> 01:26:02,952
+Diyelim ki işte bir sınıftan %60 var, bir sınıftan %40 var.
+
+274
+01:26:03,291 --> 01:26:07,352
+Bu durumda o 60 olan sınıf hangisi ise bütün özelliklerin hepsine onu söylersiniz.
+
+275
+01:26:07,432 --> 01:26:10,172
+O zaman da zaten muhtemelen %60'lık bir başarınız olur değil mi?
+
+276
+01:26:10,676 --> 01:26:30,195
+Bu algoritma arkadaşlar, adını unutmayın, Zero Rule algoritması. Türkçesi mantıklı atmak demek. Tamam, hoşçakalıyım. Atmak ama mantıklı atmak. Sağlam atmak. Şimdi, dolayısıyla hiçbir şeyinizde yokken de bir performansınız olabilir.
+
+277
+01:26:30,752 --> 01:26:56,752
+Şimdi gelelim buraya. Mesela sadece birinci özelliğe bakarak birerik imesi oluşturunuz ve onun performansını ölçtünüz. %65 başarı çıktı. 1'e 2'ye baktığınız sadece 69, 3'e baktığınız sadece 70, 4'e baktığınız sadece 60. Hiçbir şeye dokunmadığınız durumda ise %60. Şimdi burada bizi bulunduğumuz noktadan daha iyi bir noktaya götüren bir şey var mı? Var. Bir sürü, 3 tane var. Bunların içerisinde en yüksek onların mesela o zaman biz bu noktadan bu noktaya ilerliyoruz.
+
+278
+01:26:57,235 --> 01:27:15,815
+Şimdi bu noktada elimizde kaç tane alternatif daha kaldı? Bir, iki, üç tane alternatif kaldı. Bakın bu üç tane alternatiften mesela yetmiştik. Bunu yapmışız, seksen olmuş. Bunu yapmışız, yetmiş olmuş. Bunu yapmışız, yetmiş beş olmuş. Yetmişi arttırabilmiş miyiz? Evet, yetmiş beş ve seksen var. Bunların en yükseli hangisi? O zaman bunu seçtik.
+
+279
+01:27:24,015 --> 01:27:35,835
+Bir, üç, dördü seçmek. Bu ikisine bakmışız. Bu yetmiş dokuz çıkmış, bu altmış beş çıkmış. Bulunduğumuz yerden daha iyi bir yere götürebilen bir şey yok şu anda bizim elimizde. O zaman ben diyorum ki, ne oldu?
+
+280
+01:27:39,988 --> 01:27:48,507
+En başarılı yöntem, pardon en iyi özellik alt gümesi şudur diye seçip ilan ediyor.
+
+281
+01:27:48,747 --> 01:27:52,568
+Algoritma bunu dönüyor. Yani birinci ve üçüncü özelliği seç buradan diye dönüyor.
+
+282
+01:27:54,048 --> 01:28:01,827
+Şimdi bu anlattığım algoritma daha önceden gördüğümüz bir algoritma aslında. Hangisi?
+
+283
+01:28:53,460 --> 01:28:53,979
+Hangisi?
+
+284
+01:28:58,515 --> 01:29:00,376
+Tepe tırmanma algoritması değil mi?
+
+285
+01:29:01,036 --> 01:29:23,456
+Evet, tepe tırmanma algoritması. Bir noktadayız, gidebileceğimiz yerler var. O gidebileceğimiz yerlerin içerisinden bizi en yükseğe çıkartan nokta, bulunduğumuz yerden daha iyi bir yere götürüyorsa oraya gidiyoruz. Eğer götürmüyorsa da orada kalıyorduk değil mi? Atılıyorsunuz tepe tırmanma algoritmasını. Bu tamamen tepe tırmanma algoritması şurada gördüğümüz şey.
+
+286
+01:29:27,380 --> 01:29:36,139
+Bulduğumuz çözümün, yani burada özellik alt kümesi, en iyi özellik alt kümesi olduğundan emin olabilir miyiz?
+
+287
+01:29:37,319 --> 01:29:37,579
+Hayır.
+
+288
+01:29:38,539 --> 01:29:45,360
+Olamayız değil mi? Çünkü şurada çizdiğiniz gibi belki de şuralarda böyle bir şeyler falan daha olabiliyor değil mi?
+
+289
+01:29:45,440 --> 01:29:47,079
+Tepe tırman, mavi batmanı hatırlıyorsunuz.
+
+290
+01:29:47,819 --> 01:29:50,579
+Burada da mesela onun bir örneği var. Mesela şurada bir 90 varmış.
+
+291
+01:29:50,579 --> 01:29:54,399
+Ama biz o 90'ı hiçbir zaman görmedik. Niye görmedik?
+
+292
+01:29:54,963 --> 01:30:22,083
+Çünkü biz bu noktadan şuraya ilerledik ve bundan sonra buraya zaten dönüş yok. Şunu seçmeyeceğiz, buna baktık, buna baktık. Dolayısıyla bulduğumuz şey en iyi çözüm olmayı, zaten bu tepe tırnakma algoritmuyla, yani lokal arama algoritmanın hepsinin temel problemiydi. Hatırlıyorsunuz, global bir çözümü bulmayı garanti etmiyorlar bize. Zaten, peki böyle bir algoritmayı niye kullanırız? En iyi çözüm bulmuyor bize.
+
+293
+01:30:29,300 --> 01:30:32,920
+Daha hızlı çözüm bulduğu için olabilir mi? Bütün şeyleri denemek yerine.
+
+294
+01:30:33,479 --> 01:30:39,420
+Bütün olasılıklarını, hepsini denemek yerine. Çünkü bütün olasılıklarını, hepsini denemek ne arkadaşlar? Burada bakın 2 üzeri n değil mi?
+
+295
+01:30:40,699 --> 01:30:48,319
+2 üzeri n. Peki bu algoritmanın karmaşıklığına kadar? Yani 2 üzeri n yerine kaç tane eğitim yapıyor bu algoritman?
+
+296
+01:31:01,908 --> 01:31:03,908
+Maksimum n tane sanırım hocam.
+
+297
+01:31:04,688 --> 01:31:09,808
+Yok değil. Şimdi n başta bile zaten n tane yapıyor değil mi? Bak şu noktadayım ben. Hadi bunu saymayalım.
+
+298
+01:31:10,288 --> 01:31:12,668
+En başta bile n tane yapıyor zaten. Bak şuraya düşünürsen.
+
+299
+01:31:13,128 --> 01:31:13,608
+Ha evet.
+
+300
+01:31:14,108 --> 01:31:17,508
+Değil mi? Burada n tane yapıyor. Peki bir sonraki adımda kaç tane yapıyor?
+
+301
+01:31:20,788 --> 01:31:21,768
+n-1
+
+302
+01:31:21,768 --> 01:31:23,468
+Sonra bir sonraki adımda?
+
+303
+01:31:24,787 --> 01:31:35,387
+Bir sonraki adım daha n-3. Bu en sona kadar gitse bile maksimum ne olacaktır? 1'den n'e kadar olan sayıların toplamı olacaktır. O da kaçtır?
+
+304
+01:31:50,131 --> 01:31:52,131
+O en kareye eşit değil mi hocam?
+
+305
+01:31:52,611 --> 01:32:05,211
+O en kareye eşit. Aynen öyle. N çarpıya n altı bir bölü iki değil mi? O en kareye eşit. Bu ama iki üzeri n'e eşit. İkisinin arasında fark var mı? Var. Hangisi çok çok daha büyük?
+
+306
+01:32:06,171 --> 01:32:07,152
+İki üzeri n daha büyük.
+
+307
+01:32:07,152 --> 01:32:10,931
+İki üzeri n çok çok daha büyük. Karşılaştırabilecek şeyler bile değiller.
+
+308
+01:32:11,859 --> 01:32:35,679
+Dolayısıyla arama uzayının zaten tepe tırmanma algoritmasının kullanım amacı neydi? Bütün uzayı taramanın çok maliyetli olduğu durumlarda yeterince iyi bir çözüm bulmak amacıyla kullanılan algoritmalardı. Bu da tam buna çok uyan bir durum. Bütün arama uzayını taramamız şey değil, ne derler ona? Pek mümkün değil.
+
+309
+01:32:36,372 --> 01:32:50,051
+Burada da aynen bir tepe tırmanma algoritması uygulanıyor. Şimdi bunun bu tarz uygulaması olduğu gibi bunun aynı şekilde şöylesi de yapılabilir. Buradaki bütün okları ters çevirelim.
+
+310
+01:32:50,547 --> 01:33:18,528
+Yani şöyle bir şey yapalım. Bu yukarıdakinden başlamak yerine aşağıdakinden başlayarak da bir işlemi yapabiliriz. Yani önce bütün özelliklerin hepsini elimizde olduğunu varsayarak hareket ederiz. Ondan sonra birer birer çıkararak ilerleyebiliriz değil mi? Bu algoritmanın karmaşıklığı nedir? Yine aynı olacaktır. Yani en başta yine en tane, sonrakinde yine en eksi bir tane. Aynı olacaktır. Yani sıfır sıfır sıfırdan başlamakla birbirinden başlamak arasında bir fark yok. Bir tanesinde ekleye ekleye giderken bir tanesinde çıkarta çıkarta gidebiliriz.
+
+311
+01:33:18,547 --> 01:33:32,528
+Peki, ani ver hükümesi için de buradaki 0000'dan başladığınızda bulduğunuz çözümle birbirinden başladığınızda bulduğunuz çözüm birbirinin aynısı olur mu?
+
+312
+01:33:43,731 --> 01:34:10,912
+Olmayabilir hocam. Olmayabilir. Aynen öyle. Çünkü bambaşka bir yerden başladığınızda süreçlerin ne kadar fark edebildiğini bu tepe tırmanma algoritmalarında görmüştük değil mi? Nereden başladığınız, sizin nereye varacağınızı aşırı derecede etkiliyordu. Dolayısıyla şey noktasında algoritma ne yapmayacaktır? Bize şuradan başladığınızda başka bir sonuç, buradan başladığınızda başka bir sonuç verebilir.
+
+313
+01:34:11,444 --> 01:34:19,244
+Aynısını da verebilir ama farklı sonuç verme ihtimali de oldukça yüksek. En rakamı büyükse özellikle.
+
+314
+01:34:20,064 --> 01:34:26,984
+Şimdi bunu konuştuk. Şimdi şu noktayı da gördük. Rapor mevzusunda.
+
+315
+01:34:30,944 --> 01:34:36,864
+Şimdi bu ikisini de gördük. Şimdi gelelim bir sonraki kısma.
+
+316
+01:34:37,492 --> 01:34:47,912
+Varla özellikle Liner Birleşim denen yeni bir özelliğin çıkarımı noktası. Şimdi burada iki tane yöntem göreceğiz. Bunlardan iki PC'ye, ikincisi LD.
+
+317
+01:34:48,467 --> 01:34:54,688
+Var olan özelliklerin diner birleşimlerinden yeni bir özellik uzayı oluşturulur ve veriler bu uzayda ifade edilir.
+
+318
+01:34:54,768 --> 01:34:56,167
+Yani bu iki yöntemler.
+
+319
+01:34:56,368 --> 01:34:58,707
+Şimdi bu iki yöntemin de klasik yaklaşımı şu.
+
+320
+01:34:59,268 --> 01:35:01,768
+Şimdi diyelim ki iki tane özelliğiniz var.
+
+321
+01:35:01,868 --> 01:35:05,688
+Bunlardan bir tanesi X1 olsun, bir tanesi X2 olsun.
+
+322
+01:35:05,807 --> 01:35:07,247
+Yani uzayınız burada tanımlı.
+
+323
+01:35:09,028 --> 01:35:11,567
+Bu iki yöntem şöyle bir şey yapıyor.
+
+324
+01:35:12,067 --> 01:35:14,067
+PC'ye de LGA'yı da ikisinde yaptığı şey şu.
+
+325
+01:35:14,484 --> 01:35:31,364
+W1 çarpı x x1 artı W2 çarpı x2 şeklinde bir dönüşüm yapıyorlar. Bu birinci özellik oluyor.
+
+326
+01:35:48,435 --> 01:36:12,036
+Yani x1, x2 boyutlarını p1, p2 boyutlarına dönüştürüyorlar. Ve p1'in içerisinde hem x1 var hem x2 var. P2'nin içerisinde de hem x2 var hem x2 var. Bu aslında bir dönüşüm yapmak demek. Bir, ne derler ona, linear bir dönüşüm yapılıyor aslında burada.
+
+327
+01:36:16,083 --> 01:36:42,543
+Şuradaki V1, V2, V3, V4 diye ifade ettiğimiz kat sayıların ne olacağını bulmak. Tamam mı? Bakın, her bir özellik, bütün diğer özelliklerin lineer birleşimi oluyor. Her bir özelliği içeriyor belli oranlarda. Ve dediğim gibi bir dönüşüm. Yani X1, X2 uzayından P1, P2 uzayına geçiş yapıyoruz. Burada şu da yapılabiliyor.
+
+328
+01:36:43,347 --> 01:37:02,188
+Genelde P1-P2 diye uzay, yani iki boyutta dönüş yapabiliyorlar. Burada mesela sadece P1'de kullanabiliyorsunuz. Yani şunu demeye çalışıyorum. Özellik sayısını da azaltmak için mesela yeni özelliklerin hepsini birden kullanmanıza gerek yok.
+
+329
+01:37:10,963 --> 01:37:31,756
+Yani P1 mesela daha iyi bir şey P2'ye göre. Tabi oradaki daha iyinin anlamı algoritmanın nasıl bir şeye odaklandığına bağlı. Pse'ye başka bir şeye odaklanıyor. Lc'ye başka bir şeye odaklanıyor. Yani Pse'nin odaklandığına, Pse ile bu dönüşümü yaparsanız, Pse'nin odaklandığı şeye göre P1...
+
+330
+01:37:32,212 --> 01:37:46,452
+P2'den daha iyi bir özellik olur. Tamam mı? Bu tabii iki boyutta olmak zorunda değil. Burası, yani şöyle bir şey de düşünebilirsiniz. Bu virgül tık tık tık virgül xn olsun. Tamam mı? Burası da...
+
+331
+01:37:57,076 --> 01:38:17,475
+m eşittir w k çarpı x1 artı w m çarpı x2 şeklinde bir hale geliyor. Yani şuradan şu hale getirmiş oluyorsunuz.
+
+332
+01:38:18,260 --> 01:38:25,260
+Burada da dediğim gibi n tanenin hepsini birden almak yerine bulunan bir kısmını alıp kullanabiliyorsunuz.
+
+333
+01:38:26,039 --> 01:38:32,920
+Şimdi genel olarak ikisinin de yaptığı şeyi anlattım. Şimdi her biri neye odaklanıyorlar ona bakalım.
+
+334
+01:38:32,920 --> 01:38:36,780
+Şimdi birincisi temel birleşen analiz, principal component analiz.
+
+335
+01:38:37,716 --> 01:38:46,056
+Bu metotta örneklerin en fazla değişim gösterdiği boyutlar bulunur. Yani öyle bir uzaya iz düşürülmeye çalışılır.
+
+336
+01:38:46,056 --> 01:39:04,896
+Şimdi şunu şöyle dön. Yanlış yaptım. Şöyle çevireyim. Tamam. Şimdi x1 x2 boyutumuz var. Bu algoritma c1 ve c2 boyutlarını buluyor. Bakın c1 ve c2 boyutlarını buluyor. C1 ve c2 boyutları zaten şurada yaptığımız gibi var.
+
+337
+01:39:05,332 --> 01:39:21,872
+Tamamen C1, C2. Normalde veriler şu şekilde dağılmışlar. Şurada görüyorsunuz siyah siyah nokta. Onları şu C1, C2 koordinatlarına dönüştürüyor. Buradaki C1 ve C2'nin bu şekilde seçilmesinin sebebi şu.
+
+338
+01:39:22,868 --> 01:39:42,868
+PC'nin yapmaya çalıştığı şey, verinin en fazla değişim gösterdiği boyutu bulmaya çalışacak. Şimdi mesela burada verilerin şu şekilde dağıldıklarını görüyorsunuz. Burada mesela hangi düzlem üzerine bunu iz düşürürsek, bu iz düşümün standart satması en fazla olur. Bunun üzerine odaklanıyor. Yani mesela...
+
+339
+01:39:43,328 --> 01:40:05,368
+Şu C1'in üzerine iz düşürseniz, şuradaki gibi bir dağılıma sahip olacaktır örnekler. C2'nin üzerine iz düşürseniz, şuradaki gibi bir dağılıma sahip olacaktır. İşte X1'in üzerine iz düşürseniz, şöyle bir şey olacaktır. X2'nin üzerine iz düşürseniz, şöyle bir şey olacaktır. Algoritma aslında ilk önce C1'i bulmaya çalışıyor.
+
+340
+01:40:05,716 --> 01:40:26,836
+Yani verinin üzerine iz düşürüldüğünde maksimum olan kısım maksimum standart satmanın olacağı şekilde bir iz düşüm gerçekleştirmeye çalışıyor. Bunu bulduktan sonra bu sefer o bileşeni dışarıya atıp geri kalanların içerisinden yine maksimum bulmaya çalışıyor. Mesela burada C1'i bulduktan sonra bulacağı şey C2.
+
+341
+01:40:26,836 --> 01:40:29,656
+Tabi burada şöyle kritikte bir özellik var.
+
+342
+01:40:29,952 --> 01:40:41,072
+C1 ve C2 birbirine ortogonaller. Yani ortogonal demek ne demek? Birbiri türünden ifade edilemiyorlar. Mesela C1 böyleyken C2 öklük uzayında diyelim. Şöyle bir şey olamaz.
+
+343
+01:40:45,332 --> 01:41:03,832
+C1 böyle bir boyutken, C2 şöyle bir boyut olamaz. Tamam mı? Çünkü bu bununla nasıl? Baya bir ilişkili. C1 ve C2 dediğim gibi bulmak için kullanan bir sürü, bir sürü demeyelim yani çeşitli yöntemler var. Şimdi burada onun içerisine girmeyeceğim ama temel yaklaşım bu.
+
+344
+01:41:12,659 --> 01:41:34,300
+Üstüne iz düşürüldüğünde maksimum standart satmaya sahip olacağı koordinatlar bulmaya çalışıyor. Bu aslında şudur dedim ben demin. Bir döndürme işlemidir. Hakikaten düşünürseniz şu C1-C2 mesela şöyle yapalım. Gördüğünüz gibi bakın X1-X2'yi döndürdüğünüz zaman C1-C2 ya da C1-C2'yi döndürdüğünüz zaman X1-X2 elde edebilirsiniz. Görüyorsunuz.
+
+345
+01:41:36,500 --> 01:41:44,500
+Bu elde için de geçerli. Şuradaki olay aslında tamamen bunun döndürme, lineer bir dönüşüm olmasından kaynaklanır.
+
+346
+01:41:44,500 --> 01:41:50,500
+Tabi burada şeyler falan da oluyor. Bastırma falan gibisinden şeyler de olabilir.
+
+347
+01:41:50,500 --> 01:42:02,500
+Ya da açma falan gibisinden. Şöyle şeyler falan da olabilir tabi. Ama temel yapı dediğim gibi bu şekilde.
+
+348
+01:42:02,676 --> 01:42:26,896
+Şimdi gelelim doğrusal ayırılanan analizine, Linerdisk Kronat analiz. Linerdisk Kronat analizini anlatmadan önce şöyle bir örnek verelim. Mesela şu kırmızı noktalar bir sınıf, mavi noktalar başka bir sınıf olsun. Tamam. Ve biz veri iki boyuttan tek boyuta indirgemeye çalışalım. PCI ile. Şimdi PCI'yi... Şunu tekrardan ezgi haline getirebileceğim.
+
+349
+01:42:35,380 --> 01:42:58,039
+Tamam. Şimdi, PSE'ye baktığınızda siyah noktalar vardı sadece, değil mi? Yani örneklerin sınıflarına hiçbir şekilde dikkat etmiyor. Yani örneklerin sınıf bilgisini kullanmadan bu işlemi gerçekleştiriyor. O şekilde düşünüyoruz. Unsupervised diye ifade edilir bu yaklaşım. Yani kümelemedeki problemdeki gibi belki.
+
+350
+01:42:58,931 --> 01:43:08,011
+Burada ama kümene yapmak veren istemiyorum. Sadece kullandığı veri türü açısından aynı. Yani sadece X'ler var. Çıkışlara dair bir bilgi kullanmadan bu işlem gerçekleştiriliyor.
+
+351
+01:43:08,971 --> 01:43:18,492
+Şimdi PCA'yı şöyle bir verikimesinde kullanırsanız, kırmızılar şöyle dağılıyorlar, maviler şöyle dağılıyorlar ve tek bir böğüte indirgemeye kalkarsanız,
+
+352
+01:43:18,944 --> 01:43:46,444
+Temel Bileş Anadolu'nun seçeceği eksen, yani boyut, ilk boyut, şuradaki bir boyut, şu boyut olacaktır. Neden? Çünkü bu verinin üzerine iz düşürdüğünde en fazla standart satmasında olacağı boyut burası olacaktır, değil mi? Şurası. Görüyorsunuz. Ve tek boyuta indirgediğimizde aslında iki boyutta birbirinden çok iyi ayrılabilen iki şeyi, iki sınıfı korkunç derecelerinin içine sokmuş oluyordu. Görüyor musunuz? Şurası. Şu çizginin üzerindeki noktaları görüyorsunuz. Bu iyi bir şey değil.
+
+353
+01:43:46,996 --> 01:44:12,755
+Bunu çözebilmek için bu LDA önerilmiş. Şimdi LDA, din yapmaya çalıştığı şey şu. LDA şeye bakmıyor. Standart satmaya bakmıyor. Standart satma yerine ben bunları öyle bir boyuta indirgi, öyle bir düzleme iz düşüreyim ki, doğruya iz düşüreyim ki bunların, bu sınıfların birbirinden ayrılabilir bir maksimum olsun diyor.
+
+354
+01:44:13,300 --> 01:44:38,520
+Tamam. Şimdi buraya bakarsanız, şurası, şu turkaz olan çizgi, eldeğin bulduğu boyut. Şimdi buraya bakarsanız, yine iki boyuttan tek boyuta indirgemeye çalışıyoruz. Şu boyuta bakarsak, bakın kırmızıların hepsini iz düşürürseniz buraya şurası oluyorlar, maviden hepsini iz düşürürseniz şurası oluyorlar ve dolayısıyla şu çizginin üzerinde iki sınıf birbirinden oldukça iyi ayrılmışlar. Görüyor musunuz? Ama şunun üzerinde korkunç götüler.
+
+355
+01:44:38,927 --> 01:44:56,747
+Ama burada iyiler. Evdeyin odaklandığı nokta neresi? Dediğim gibi verileri iyi sınıflandırabilmek. PCI'nin odaklandığı şey ise verileri açmak, verileri birbirlerine uzaklaştırmak, genişletmek, daha rahat olayı görebilmemizi sağlamak. İkisinin odaklandığı şeyler bu noktadan farklılar.
+
+356
+01:45:07,220 --> 01:45:22,319
+Mesela Elde'in gerektirdiği bilgi daha fazla. Neden? PC'yi mesela şeyle yapabilirsiniz. Sınıf bilgisi olmadan da yapabilirsiniz ama Elde için öyle bir şey söz konusu değil. Sınıf bilgisini kullanıyor çünkü.
+
+357
+01:45:23,155 --> 01:45:47,416
+Başka elde birkaç tane daha kısıtı var pratikteki açısından. Ama dediğim gibi ikisi de yaygınlıkta kullanılan yöntemler. Bunların tabii şeyleri var. İlla niye bunları diner bir şey iz düşürelim ki? Mesela bunları şöyle nanniler yapıları da iz düşürebiliriz aslında diye düşünebilirsiniz.
+
+358
+01:45:48,756 --> 01:46:06,496
+Mesela şöyle bir şeyin üzerine ben bunları iz düşürüyüm. Niye linear bir şeyin üzerine iz düşürüyüm ki? Mesela öyle de yaklaşımlar var. Onlar işte kuadratik şudur budur falan gibisinden dönüşümler diye ilerliyorlar. Ama dediğim gibi burada onlardan bahsetmeyeceğiz.
+
+359
+01:46:10,515 --> 01:46:27,515
+Şimdi burada, niye bu kadar çok metot var, ne zaman hangisini kullanacağız diye bir soru sorabilirsiniz. Sizden önce ben sormuşum. Şimdi burada çok temel bir şey var. Her durumda...
+
+360
+01:46:35,412 --> 01:46:46,992
+Bir ayrı unutma yok. Tamam. Kritik mevzu bu. Özellik seçim için de bu geçerli olacak. Sınıflandırma için de, kümeleme için de, regresyon için de hepsinde aynı şey geçerli.
+
+361
+01:46:47,539 --> 01:47:12,220
+Her durumda, her türlü dataset'te diğerlerinin hepsinden daha iyi olan bir algoritma olmadığından dolayı bir sürü yöntem hala varlığını koruyor. Eğer ki böyle bir algoritma olsaydı zaten bu konuların hepsi şey olurdu. Sadece onu anlatırdı ve diğerlerinin hepsi sadece tarihsel önemi olan şeyler olurdu. Yoksa bütün algoritmanın hepsinden daha iyi olan bir algoritma bulunsa.
+
+362
+01:47:12,756 --> 01:47:39,396
+Ki öyle bir şey teorik olarak da mümkün değil. O zaman bu kadar çok metot olmazdı vesaire vesaire. Peki bu kadar çok metot olmasını anladık. Tamam. Peki ne zaman hangisini kullanacağız? Şimdi burada birkaç tane kriter var. Kriter derken demin şeyi gördük. Yani mesela raporlar var versus şeyler, filtrlar. Şimdi peki filtrlarla raporları karşılaştırırsak.
+
+363
+01:47:39,731 --> 01:48:01,532
+Filtrlar her bir özellik için bir değerlendirme yapıyorlar diye düşünün. Yani filterların karmaşıklığı ne olacaktır bu durumda? N tane özelliğiniz varsa N olacaktır. Raporların iki üzere N değil ama N kare olacaktır. Dolayısıyla filterları kullanmak çok daha hızlı bir işlem aslında raporlara göre.
+
+364
+01:48:07,731 --> 01:48:21,231
+Eğer 10 bin tane özelliğiniz varsa, 10 bin tane özellik için en kare değerlendirme yapmanız durumunda bu yine de çok çok yüksek zamanlar doğurabilir.
+
+365
+01:48:21,692 --> 01:48:28,532
+Dolayısıyla burada bir hesaplama maliyeti noktası ortaya çıkıyor karşımıza bir yandan, bir kısıt olarak.
+
+366
+01:48:29,043 --> 01:48:48,443
+Bir yandan doğruluk, daha doğru, daha yanlışlık noktası ortaya çıkıyor. Burada bir trade-off var. Bu trade-off uygulamadan uygulamaya, henüzdeki problemden probleme değişebilecek bir, yani alabileceğiniz kararın değişmesi mümkün. O yüzden ne zaman hangisini kullanacağız, şunu kullanacağız desek zaten kolay olur bir iş.
+
+367
+01:48:49,971 --> 01:49:10,912
+Ama hani mesela şu ikisini düşünürsek, mesela bilgi kazancı ve information, pardon, signal to noise reju. Mesela burada sayısal verileriniz varsa, mesela signal to noise'u kullanmak mantıklı direkt. Eğer ki kategorik verileriniz varsa zaten bilgi kazancını kullanmak, information gain'i kullanmak daha mantıklı olacaktır.
+
+368
+01:49:11,216 --> 01:49:29,556
+Gerçi tabii information gain'i kullanmak için sayısal özelliklerle, bunu kullanmak için de çeşitli yöntemler var. Yani orası da ayrı verilmiyor. Çok uzun zamandır çok fazla çalışılan konular olduğu için hemen hemen her türlü şeyi, her türlü şeyi uygulamak için bir transformasyon yöntemi bulunmuş zaman içerisinde.
+
+369
+01:49:29,556 --> 01:49:34,615
+Peki. Şimdi bir saniye. Birisi bir şey yazmış.
+
+370
+01:49:46,100 --> 01:49:46,399
+Ne?
+
+371
+01:49:54,771 --> 01:50:11,572
+Şimdi gelelim, özellik seçimini konuştuk. Şimdi özellik seçimimizi yaptık. Elimizde ya da yapmadık, kullanmadık. O da sınıflandırma metodlarını kullanmak için özellik seçimini yapmış olmanız şart değil. Elinizdeki bütün özelliklerini sınıflandırma metodlarını verebilirsiniz.
+
+372
+01:50:13,460 --> 01:50:36,979
+Sınıflandırma metotları ne yapacaklar? Verileri alacaklar. Bunları birbirinden ayırt eden karar sınırlarını bulmaya çalışacaklar. Bu karar sınırları, Algor için bir sürü yöntem var. Regresyon kullanmak mümkün, karar ağaçları kullanmak mümkün, LVQ gibi yöntemler var, yapay sınavları var vs. bir sürü bu tarz yöntemler var.
+
+373
+01:50:37,395 --> 01:50:58,395
+Bunların her birinin kendi içinde varsayımları var. Bir algoritma seçmek demek, geçen haftaki dersi hatırlayın, makine vermesi aslında bir model bulmaya çalışıyordu değil mi? O model aslında her bir algoritma için o modelin yapısı, karakterisi başka bir şey. Birazdan göreceğiz. Mesela...
+
+374
+01:50:59,347 --> 01:51:19,047
+Linear, yani regresyon, linear regresyon buradaki sınıflandırma yoksa regresyon problemi değil bu. Linear regresyon, sınıfları birbirinden ayıran karar sınırının düz bir çizgi ya da bir düzlem ya da bir hiperdüzlem olduğunu varsayar. Ama mesela karar araçları öyle varsaymaz da karar araçları der ki...
+
+375
+01:51:19,060 --> 01:51:45,900
+Bu sınıfları birbirinden ayıran çizgiler özellikleri diktirler der. Mesela diktir, böyle bir varsayım da olmalı. LVQ der ki merkezler önemlidir, o merkezlerin etrafında olduğu, yani lokal yakınlık sınıfı aşırı derecede belirler, global bir şeyler kullanmak gereksizdir der. Yapay sinir ağları çok daha kompleks mimarlar ortaya koyuyorlar, işte transformlar yapıyorlar vesaire.
+
+376
+01:51:46,304 --> 01:51:59,003
+Şimdi, dolayısıyla buradaki her bir yöntemi seçmek demek, bu karar sınırlarının yapısının nasıl olacağı hakkında bir varsayımda bulunmak demek.
+
+377
+01:52:00,224 --> 01:52:07,583
+Eğer ki bu varsayımınız verinin kendi gerçeğiyle uyuşuyorsa, o algoritma iyi çalışıyordur.
+
+378
+01:52:07,583 --> 01:52:12,583
+İyi çalışır o veri hükmesinde ama uyuşmuyorsa o zaman orada bu iyi çalışmazdır.
+
+379
+01:52:12,724 --> 01:52:29,384
+Şimdi mesela şu bir hükümesini ara alalım. Maviler var ve griler var. Bizim sınıflandırmayı istediğimiz noktada mesela şu beyaz nokta olsun. Bu mavi midir, gri midir? Bunu bulmaya çalışacağımız var. Test kümenizde bir tanecik örnek var. Öyle düşünün. Eğitim kümenizde bir sürü örneğimiz var.
+
+380
+01:52:29,384 --> 01:52:34,324
+Şimdi burada mesela diyelim ki regresyon kullanmak, yani düz bir çizgi çekmek isterseniz.
+
+381
+01:52:35,956 --> 01:52:57,036
+Mesela diyelim ki böyle bir çizgi çekebilirsiniz. Böyle bir çizginin açılımı şöyle bir şeydir. Şundan büyükse mesela mavi diyecek, değilse gri diyecek. Bu çizgiyi çekmek tek bir adımda olan bir şey değil zaten ama önemli değil. Oldukça basit bir model görüyorsunuz. Tek bir çizgiyle ifade ediliyor.
+
+382
+01:52:57,684 --> 01:53:08,684
+O yüzden çok hızlı da bir model. Test süreci de çok hızlı, eğitim süreci de çok hızlı. Ama yeterince esneklik. Mesela şimdi böyle bir veri kümesine baktığınızda böyle bir veri kümesinde...
+
+383
+01:53:09,076 --> 01:53:37,076
+Doğrusal bir modelin işe yaramayacağı belli. Çünkü sınıflar birbirlerinden, şimdi iki boyutta her şey belli olduğu için söyleyebiliyoruz bunu. Buraya da tek bir tane çizgiyle bunu ayırmak çok mümkün gibi gözükmüyor değil mi? Bu iki veriklendirmesini ayırmak mümkün gibi gözükmüyor. Ama yine de algoritma demin aynen mesela filtrlarda var olanın en iyisini bulmaya odaklanacağı için size yine bir çözüm bulacaktır. Yani hani burada ben çalışmıyorum, çalışmam ben burada falan demez.
+
+384
+01:53:37,076 --> 01:53:55,296
+Altyazı çalışır. Linear olarak birbirinden en iyi ayrılabilecek noktayı bulmaya çalışır. Mesela bu algoritmalar genelde itibatik yaklaşılabiliyor. Direkt analitik çözümleri de var, tek adımlı çözümleri de var ama özellikle büyük miktarda veriler olduğunda analitik çözümler...
+
+385
+01:53:55,296 --> 01:54:18,296
+Hafıza problemi yaratıyorlar. Onun yerine iteratif çözümler. Yani başlangıçta rastgele bir yerden başlanıyor ve daha sonra adım adım adım adım bu ilerletilerek iyi bir çözüm bulunmaya çalışıyor. Burada başlangıçta rastgele başlatılan şey ne? Şurasına bakın. V0, V1 ve V2 değerleri aslında. Bunlar rastgele bir yerden başlıyorlar. Mesela başlangıçta sizin noktanız...
+
+386
+01:54:18,296 --> 01:54:20,055
+Yanlış hareket.
+
+387
+01:54:22,931 --> 01:54:38,612
+Şöyle bir şey. Mesela böyle bir şey. Buradan başlıyor. Burada bu çizginin sınıflandırma kabiliyetine bakıyor. Neleri doğru, neleri yanlış yaptığına bakıyor. Buna göre bunu güncellemeye başlıyor. Mesela bir sonraki adımda şu hale getiriyor. Belki bir sonraki adımda bunu alıyor.
+
+388
+01:54:39,220 --> 01:54:41,240
+biraz daha aşağı indiriyor.
+
+389
+01:54:41,659 --> 01:54:43,940
+Sonra bir sonraki adımda oluyor bunu belki biraz şöyle aşağı indiriyor.
+
+390
+01:54:44,039 --> 01:54:45,780
+Sonra bir sonraki adımda oluyor bunu böyle indiriyor.
+
+391
+01:54:45,880 --> 01:54:48,340
+Sonra bir sonraki adımda bunu biraz daha indiriyor.
+
+392
+01:54:48,760 --> 01:54:52,520
+Sonra bir sonraki adımda belki şöyle bir şey indiriyor.
+
+393
+01:54:53,659 --> 01:54:54,060
+Vesaire.
+
+394
+01:54:54,480 --> 01:54:56,680
+Dolayısıyla bir yere giriyor artık daha da iyileştiremiyor belki.
+
+395
+01:54:57,555 --> 01:55:15,775
+Bu noktada diyor ki tamam işte hemen burada işim bitti. İteratif olarak yani başlangıçta rastgele bir yerden başlayıp bunu iteratif olarak ilerletiyor. Bu anlattığım süreç aslında işte deep learning yapay sinyaları vesaire bunların hepsinin eğitiminde kullanılan mekanizmanın aynısı. Sadece orada.
+
+396
+01:55:16,340 --> 01:55:36,192
+Daha fazla parametre var ve yapı bu kadar basit değil. Ama optimizasyon anlamında yapılan işlem aynı. Rastgele bir yerden başlanıyor. Veri kümesine en uygun hale gelene kadar bu süreç ilerletiliyor. Bu süreçte yine aynı şekilde arkadaşlar aslında bir...
+
+397
+01:55:36,192 --> 01:55:58,471
+Tepe tırmanma süreci ya da çukur inme süreci hatayı minimum yapmaya çalışıyorsak bir yerden başlıyorsunuz ve onu giderek eğitim kümesi üzerinde optimize ede ede ede ede eğitim kümesi için en iyi olan yere indirgemeye çalışıyorsunuz. Ama tabii o en iyi indirgediğiniz yer, teçkümesi içinde en iyi yer midir değil midir orası ayrı bir mevzu. Yani şöyle bir şey demek istiyorum.
+
+398
+01:56:03,796 --> 01:56:25,016
+Mesela şu eğitim kümesi için olan şey olsun. Çok iyimser davrandım ama. Konveks bir şey çizdim çünkü. Test kümesi için olan şeyde mesela belki şöyle bir şey olabilir. Tamam mı? Sizin bulacağınız nokta mesela tek boyutlu bir şey düşünürseniz şöyle bir şey olurken.
+
+399
+01:56:26,515 --> 01:56:46,235
+Bu mesela test kümesi için çok çok da iyi bir nokta olmayabilir, görüyorsunuz. Aslında daha da iyi bir şey var. Ama test kümesi sizin elinizde olmadığında zaten yapabileceğiniz bir şey yok. Siz sadece bu siyah uzay elinizde var ve bu siyah uzayda siz eğitim kümesine göre en iyi yerini yapmaya çalışıyorsunuz, bulmaya çalışıyorsunuz.
+
+400
+01:56:46,612 --> 01:57:01,871
+Zaten şey nedir ona, elinizde yeterince büyük veriklileri varsa bu çizdiğim siyahla çizdiğim kırmızı birbirlerine giderek ne yapıyorlar? Aslında yaklaşıyorlar. Onu söyleyeyim. Yani iyi toplanmış bir veriklileriniz varsa.
+
+401
+01:57:02,355 --> 01:57:20,695
+Eğer gerçek problemi gerçekten iyi temsil eden bir veriltümeniz varsa o durumda bu siyah ve kırmızı birbirine ne kadar benzeyene başlarlar. Kırmızının ve siyahın birbirine benzemesi, yani minimum noktalarının birbirine yakın olması, mesela şöyle bir kırmızı noktaya göre şöyle bir şey olsa mesela bu daha iyi bir şey olur değil mi? Mesela.
+
+402
+01:57:22,387 --> 01:57:36,587
+Bu durumda mesela bunun yapacağı hata bu. Tabii ki bundan da daha iyisi belki şuraya falan biraz iyi olabilirdi ama yine çok kötü değil mesela. Yani siyahla sarı mesela bizim eğitim ve test mühürümüz olsa daha iyi. Neye göre? Siyah ve kırmızı eğilir.
+
+403
+01:57:40,275 --> 01:57:51,275
+Peki, dediğim gibi doğrusal regresyon, burada başlangıç dediği yerden başlayıp, weightleri adım adım adım adım tepe tırmanma algoritmasıyla iyi hale getirmeye çalışıyor.
+
+404
+01:57:57,235 --> 01:58:23,255
+Peki, karar ağacı algoritmaları ne yapıyor? Şimdi karar ağacı algoritmalarının varsayımı şeyden farklı, ne derler ona? Doğrusal regresyondan farklı. Doğrusal regresyondan çünkü karar sınırının düz bir çizgi ya da bir düzlem. Mesela yani üç boyutlu düşünürsen üç boyutlu bir düzlem olacaktır. Dört boyutlu veriniz varsa o durumda hiperdüzlem. On bin boyutlu veriniz varsa o durumda yine bir hiperdüzlem olacaktır.
+
+405
+01:58:23,764 --> 01:58:50,583
+Karar ağaçlarının karar sınırları ise küpler ve hiper küpler üzerine kurullar. Yani karar sınırları aslında her bir özelliğe dik olarak oluşturduyorlar. Şimdi şu veriklimesi için, yani aynı veriklimesinden bahsediyoruz. Şu veriklimesi için karar ağacı mesela şöyle bir karar sınırları üretebilir. Mesela şöyle bir karar sınırı, sonra şöyle bir karar sınırı, sonra şöyle bir karar sınırı. Bunu mesela şuraya rahatlıkla yazmışız. Böl ve en stratejisi aslında.
+
+406
+01:58:51,764 --> 01:59:17,923
+Şöyle bir yapısı var. Çıkan ağacın. İşte X mesela burada bir boyutumuza X demişiz, diğer boyutumuza Y demişiz. X 5'ten büyükse direkt zaten bu mavi sınıfındandır. D ise Y, 3'ten küçükse vesaire vesaire. Burada bu şekilde bir yapıya dönüştürebiliriz. Üç boyuta geçersek bunların birer dik dörtgenler krizması haline geleceğini düşünebilirsiniz. Şuradaki hacime sahip olmaya başlayacaklar bu bölgeden çünkü.
+
+407
+01:59:18,547 --> 01:59:29,187
+Ama hani diklik mevzusu değişmeyecek. Buradaki karar sınırı hep birbirine dik olacaklar. Böyle bir hiper küpler olacaklar. Çok boyutlu uzayda düşünürseniz. Yani hiper dik dörtgen prizmaları.
+
+408
+01:59:29,876 --> 01:59:55,855
+Onun da belki bir isim vardır ama neyse önemli değil. Şimdi karar ağaçlarının ürettikleri kurallar oldukça anlaşılırlar. Yani siz bir veriklimesinden bir karar ağacı ürettirirseniz eğer karar ağacını inceleyerek algoritmanın nasıl karar verdiğin hakkında çok iyi bilgi de fikirlerde bulunabilirsin. Aynı şey doğrusu arca regresyonunda da geçer. Neden? Çünkü şuradaki mesela W0, W1, W2 değerlerini düşünelim. Mesela bunu gördüğünüzü düşünelim.
+
+409
+01:59:56,212 --> 02:00:22,712
+Model, böyle bir model bulunmuş. Burada mesela W1'in W2'den büyük olması, mesela bu W1'in değeri 9, W2'nin değeri 0.2. X ve Y'nin de aynı range'de olduklarını düşünelim, aynı range'delerken. W1 dediğim gibi 9, W2 0.2. Bunun anlamı ne demek? Muhtemelen W1 bu karar sürecinde çok daha etkili bir şey. Değil mi? Buna kadar büyük bir şey olursa.
+
+410
+02:00:23,123 --> 02:00:50,083
+Şeye neden olan sistemin kararına o kadar büyük etkisi var demek. Bu tarz şeyi anlayabiliriz. Buraya baktığımızda mesela yine direkt çok rahat bir şekilde, işte şundan büyükse bundan küçükse falan gibisinden nasıl karar verildiğine dair, sistemin nasıl karar verdiğine dair çok rahat bunu okumak, yorumlamak mümkün. Bu da güzel bir şey. Algodumda nasıl çalıştığını ne yapabiliyorsunuz? Anlayabiliyorsunuz kolaylıkla. Bunlar güzel şeyler.
+
+411
+02:00:50,804 --> 02:01:13,363
+Şimdi karar ağacı oluşturma için ne yapılıyor? Ondan da bahsedelim. Sonra bir ara veriliriz belki. Tüm veri kümesiyle başlayacağız. Bir özelliğin bir değerine göre veri kümesini iki tane alt kümeye böleceğiz. Bölmede kullanan özellik ve değerleri karar düğümüne yerleştireceğiz.
+
+412
+02:01:14,771 --> 02:01:40,972
+Her alt kime için aynı prosedürü, her alt kime de sadece tek bir sınıf ayırtık örnekler kalıncaya kadar uygulayacağız. Şimdi, bir gün şuna dokunalım. Ne diyor? Verikimizi bölecekmişiz arkadaşlar. Her seferinde iki parçaya bölecekmişiz. Hiyarerşik bir yapı var. Rikörsif bir yapı var aslında burada. Bölecekmişiz ama bölmenin bir durma kuralı var. Yani her rikörsif fonksiyonun bildiğiniz gibi bir main olması lazım. Rikörsif olmayan kısmının o bir yerde durması lazım. Yoksa sonsuza kadar gidersek matlar.
+
+413
+02:01:41,747 --> 02:01:53,515
+Dolayısıyla algoritmanın bir durumu adı var. Diyor ki, her alt kümede sadece tek bir sınıfa ait örnekler kalıncaya kadar uyguladı. Yani bir bölgeyi...
+
+414
+02:01:53,684 --> 02:02:11,784
+Bölmeden önce bakacağız. Onun içindeki örneklerin hepsi aynı sınıftansa artık onu bölmeyeceğiz. Ama farklı sınıf örnekler varsa böleceğiz. Tamam mı? Böyle bir mekanizma. Şimdi bunu şöyle bir örnek üzerinde açıklayalım. Daha kolay olacaktır. Şimdi verikümemiz şu. Bakın şu verikümemiz.
+
+415
+02:02:13,332 --> 02:02:30,872
+Bir, iki, üç, dört değerlerine sahip X bir boyutumuz olsun. Bir de bir, iki, üç, dört, beş değerlerine sahip X iki boyutumuz olsun. İki boyutlu bir uzayımız var. O iki boyutlu uzayımızda O'lar bir sınıf, X'ler bir sınıf. Bu veri kümesi için bir karar ağacı oluşturacağız. Bunun için nasıl bir şey yapacağız?
+
+416
+02:02:31,859 --> 02:02:51,960
+İlk önce şunu gerçekleştirmemiz gerekiyor. Bütün veriye bakacağız. Bu veri, şu an bütün bölgeye bakıyoruz. Bu bölgenin içinde birden fazla sınıftan örnek var mı? Var. O zaman bunu bölmemiz lazım. Peki, peki nereden göreceğiz? Şimdi oradan mı böleceğiz, buradan. Bölmelerimizin yapısı şu arkadaşlar, dediğim gibi. Yani olası bölmelerimiz şu şekilde olabilirler.
+
+417
+02:02:55,859 --> 02:02:59,140
+Şuradan bölebiliriz, şuradan bölebiliriz.
+
+418
+02:02:59,507 --> 02:03:24,568
+Şuradan bölebiliriz. Şuradan bölebiliriz. Şuradan bölebiliriz. Şuradan bölebiliriz. Bir de şuradan bölebiliriz. Başka bir şey var mı olasılık? Yok. Şimdi dolayısıyla bu elimizdeki 1, 2, 3, 4, 5, 6, 7 bütün olasılık bölmeleri gerçekleştiriyoruz. Gerçekleştiriyoruz derken oradan bölersek ne olur acaba onu?
+
+419
+02:03:25,908 --> 02:03:28,467
+Anlamaya çalışıyoruz. Şimdi bunu gerçekleştirelim.
+
+420
+02:03:34,836 --> 02:03:56,475
+Şimdi şu yatağı eksem x1 olsun. x1 büyüktür. Önemli değil. 1.5.
+
+421
+02:03:58,420 --> 02:04:12,060
+Şimdi bu bir bölme ihtimali. Bakın, x1, 1.5'ten küçükse, yani şurada 1, 2, 3, 4 ya, 1.5 şurası tam. x1, 1.5'ten küçükse ben bu veriyi ne sıra bir parçaya bölmüş olacağım? Şöyle bir şey olacak.
+
+422
+02:04:34,579 --> 02:05:00,000
+Evet, şöyle böleceğim. Şimdi böyle yani x1, 1.5 tane küçüklüğüne göre böldüğümde sol taraf ve sağ tarafta iki parçaya yürümüş oluyorum değil mi? Bütün karar düğümlerinin yapısı bu şekilde olacağından dolayı her şey aslında uzayı iki parçaya yürüyor. Şimdi buraya baktığımızda sol tarafta bir parça var, sağ tarafta bir parça var. Şimdi sol taraftaki parça iyi bir parça mı değil mi? Sağ taraftaki parça iyi bir parça mı değil mi? Bunu düşünelim.
+
+423
+02:05:00,467 --> 02:05:09,247
+Bunun için yapılan işlem, yani bu X1'i 1.5'dan küçük müdür diye böldüğümüzde bunun iyiliğini hesaplayacağız.
+
+424
+02:05:09,247 --> 02:05:15,608
+Tamam mı? Bu iyiliği hesaplarken entropiyi kullanabiliriz. Entropi neydi arkadaşlar?
+
+425
+02:05:18,292 --> 02:05:45,132
+Buradaki örneklerin entropisine bakacağız. Sınıfın entropisine bakacağız. Bakın burada 5 tane O var, 1 tane X var. Buraya bakarsak 1, 2, 3, 4, 5, 6 tane O var. 6, 7, 8, 9 tane X var. Yani buranın entropisi artı buranın entropisi. Yani şöyle bir şey diyor. Entropi A artı entropi B ile hesaplıyoruz. Tamam mı?
+
+426
+02:05:46,131 --> 02:06:03,112
+Buranın entropisi artı buranın entropisi. Şimdi buranın entropisi, mesela ben böyle mükemmel bir yer mesela şöyle olduğunu düşünün. Buranın hepsinin O olduğunu düşünün. Buranın da hepsinin X olduğunu düşünün. Bu mükemmel bir durum olur değil mi? Peki o durumda entropilerin toplamına küçük mü olmasını isteriz, büyük mü olmasını isteriz?
+
+427
+02:06:08,212 --> 02:06:31,812
+Aynı sınıftan olacağı entropisi ne oluyordu? Sıfır oluyor. Hatırlıyorsunuz değil mi? Entropinin yaklaşıkları. Dağınık olduğu zaman büyük bir şey oluyordu. Dolayısıyla ben buradaki E A artı E B'nin ne olmasını isterim? Küçük olmasını isterim. Küçükse bu iyi. Tamam. Buranın entropisi küçük olmalı. Buranın da entropisi küçük olmalı. Mümkünse sıfır olsalar süper olacak.
+
+428
+02:06:32,340 --> 02:06:46,420
+Şu anda olamıyor ama buradan böldüğümde buranın entropisi artı buranın entropisine bakacağım. Bunu hesaplayacağım. E artı E B'yi hesaplayacağım. Peki hesapladım. Sonra ne yapacağım? Aynı işlemi.
+
+429
+02:06:53,076 --> 02:07:17,376
+2.5 için tekrarlayacağım. Yani şuradan böleceğim bu sefer. Bu sefer buranın entropisini hesaplayacağım, buranın entropisini hesaplayacağım. Sonra aynı işlemi 3.5 için yapacağım. Sonra aynı işlemi... 3.5 zaten tamam. Aynı işlemi bu sefer x. 2'nin 1.5 için yapacağım ki o durumda şöyle bir şey olacaktır.
+
+430
+02:07:24,275 --> 02:07:46,576
+Evet. Şuranın entropisi artı yukarının entropisi. Aşağının entropisi artı yukarının entropisi şeklinde olacaktır. Bunu da yine tekrarlayacağım. X2'nin 2.5'ü için tekrarlayacağız. X2'nin 3.5'ü için tekrarlayacağız. X3'ün 4.5'ü için tekrarlayacağız. Başka bir olasılık var mı arkadaşlar?
+
+431
+02:07:52,724 --> 02:08:19,884
+Burası için. Şimdi burada benim elimde yedi tane entropi değeri oldu. Yedi tane entropi değerinden en küçük olanını seçeceğim. Tamam. Diyelim ki şu anda tabii hesaplamadığımız için. Diyelim ki mesela şu en küçük. Mesela bu. Şu E A artı E B olan en küçük olsun. Tamam. O zaman bu şuna denk geliyor herhalde.
+
+432
+02:08:20,692 --> 02:08:45,431
+Şuradan ben bu veri kümesi iki parçaya ayıracağım. Artık veri kümem iki parçaya ayrıldı. Şimdi bu iki parçaya ayrıldıktan sonra her bir parça için demin konuştuğumuz yaklaşımın aynısını tekrar edeceğim. Yani ilk önce mesela bu parçayı aşağıya düşündüm. Şimdi şu aşağısının bütün örnekleri, ilk önce bu parçayı bölmeye devam edeceğim mi? İlk önce sorumuz bu.
+
+433
+02:08:46,420 --> 02:08:55,820
+Evet, neden? Çünkü hepsi aynı sınıftan değiller. Peki, o zaman bu bölgeyi nerelerden ayırabilirim ben? Bu ikinci bölgeyi.
+
+434
+02:09:04,083 --> 02:09:06,704
+Şu alttaki kısmı nerelerden ayırabilirim?
+
+435
+02:09:09,524 --> 02:09:11,003
+2 ile 3'ün arasından.
+
+436
+02:09:11,844 --> 02:09:15,984
+Başka? 1 ile 2'nin arasından, 3 ile 4'ün arasından ayırabilirim.
+
+437
+02:09:16,744 --> 02:09:20,344
+X 1'e göre ayırıp yapabilirim. X 2'ye göre herhangi bir ayrım yapamam değil mi?
+
+438
+02:09:21,404 --> 02:09:22,624
+Ayırabileceğim yerler bunlar.
+
+439
+02:09:24,764 --> 02:09:25,404
+Pardon.
+
+440
+02:09:32,115 --> 02:09:57,615
+Bunlara göre ayrım yapabilirim. X1, 1.5'tan büyük mü, 2.5'tan ve 3.5'tan. X2'ye göre bir ayrım yapamam. Burada bunları hesapladığımda göreceğim şey ne olacaktır? X2'nin 2.5'tan olanı, şurasının entropisinin 0 olacağını göreceğim. Ve bunu zaten seçeceğim. Değil mi? Bunu seçtim ve o zaman gittim. Şuradan da bunu böldüm.
+
+441
+02:10:00,000 --> 02:10:24,899
+Bu bölgeyi bölmeye gerek var mı? Yok. Burayı bölmeye gerek var mı? Yok. O zaman bu bölgeyi bir daha algoritma kendi kendini çağırmıyor. Ama yukarısı için hala var. Çünkü şunu kullanarak, şunu kullanarak bakın, iki parçaya ayırdık. Sonra şunu kullanarak şuraya da iki parçaya ayırdık ama daha burası ile ilgili bir kararımız yok. Şimdi burası için ne olacak? Tekrardan bölmeye gerek var mı? Var. O zaman bölelim. Nerelerden bölebilirim ben bunu?
+
+442
+02:10:29,460 --> 02:10:30,460
+Evet, korkunç.
+
+443
+02:10:35,220 --> 02:10:35,720
+Evet.
+
+444
+02:10:39,828 --> 02:10:42,128
+Nereden bölebilirim ben bunu? Düşünelim.
+
+445
+02:10:42,608 --> 02:10:46,068
+X2'ye göre, 2.5'un altındakilere göre bölebiliriz.
+
+446
+02:10:47,548 --> 02:10:50,108
+Bak, böleyim demiyorum, bölebilirim diyorum.
+
+447
+02:10:54,452 --> 02:11:17,352
+Algoritma nereden bulmamız gerektiğini söyleyecek. Ama biz ona her olası durumu vermemiz gerekiyor. Anlatabildim mi? Burada algoritmanın bütün olası şeyleri denemesi lazım. Bütün olası şeyler nelerdir diye soruyorum şu anda. Anlatabildim mi? Doğru olanın ne olacağını sormuyorum. Algoritmanın neyi seçeceğini beklediğinizi sormuyorum. Anlatabildim mi?
+
+448
+02:11:18,195 --> 02:11:31,716
+Bütün her şeye bakacak çünkü algoritma burada. Şimdi nelere bakacak? Şu bölgeden bahsediyoruz sadece. Şu üstteki bölgeden bahsediyoruz. Dolayısıyla burada x1'in şeyleri aynı duruyor. x2 içinse bir buçuk bölmesi yok. Şu yok değil mi?
+
+449
+02:11:35,923 --> 02:11:37,923
+Şu bölme yok şu anda.
+
+450
+02:11:42,484 --> 02:11:48,923
+Peki, bu bölmelerin içerisinden hangisi küçük olabilir? En küçük olabilir mi? Belki mesela şu.
+
+451
+02:11:48,923 --> 02:11:53,923
+Tamamen şu anda. Onu da mesela şey yapalım.
+
+452
+02:11:58,355 --> 02:12:24,395
+Mesela şu olsun. O da ne olur? X1'in bir buçuğa göre olduğunu yani şu. Buna göre böleceğim iki parçayı. Şimdi bu iki parçaya göre böldüm. Güzel. Burada birazcık size... Şunu mesela şöyle kenara alayım bir dakika. Neresinin neresi olduğunu biraz daha rahat işaretleyebilirim belki.
+
+453
+02:12:30,644 --> 02:12:40,644
+Şurası, bunun yeşil içerisinde bu hepsiydi.
+
+454
+02:12:40,644 --> 02:12:45,324
+Yani, bu şekillerden.
+
+455
+02:12:55,252 --> 02:12:55,972
+Yapıcı ama.
+
+456
+02:13:06,804 --> 02:13:16,524
+Bu hepsi için oluşlandı. Şuradaki, şunun ikini mesela mavi gösterelim.
+
+457
+02:13:20,884 --> 02:13:21,804
+Põmelserler.
+
+458
+02:13:42,963 --> 02:13:44,963
+Şu parça için oluşturuldu.
+
+459
+02:14:53,684 --> 02:14:59,324
+Evet, şu bölge için şurası. Yani bütün bölge için yaptığımız işlemler burada bakın.
+
+460
+02:14:59,728 --> 02:15:21,708
+Bunu iki parçaya ayırdık. Şu iki alt parça oldu. Sonra şurası için yaptığımız işlemler, denemeler şunlar. Daha sonra şu parça için yaptığımız işlemler bunlar. Bunun nasıl devam edeceğini tahmin edebiliyorsunuz artık değil mi? Yani adım adım daha da götürmemize gerek yok. Burada mesela şu bölüme yeniden parçalanacak belki. Şu da belki şöyle şöyle bölgeler oluşmaya başlayacak.
+
+461
+02:15:24,372 --> 02:15:27,572
+Anlatılaşımını gösterecek daha kolay olur.
+
+462
+02:15:29,452 --> 02:15:31,372
+Mesela belki şöyle bir bölgeye...
+
+463
+02:15:37,652 --> 02:15:49,672
+Şöyle bir bölgeye ve şöyle bir bölgeye ayıracak bu algoritma. Daha sonra yukarısının bölümüne gerek kalmadığını görecek ve bu bölgeyi de ayırmak için belki şöyle bir bölüm daha oluşturacak.
+
+464
+02:15:49,672 --> 02:16:04,592
+En sonunda şurada gördüğünüz gibi oluşmuş olan bütün bölgeler sadece tek sınıftan örnekler içerir halde olacaklar. Şuraları görüyorsunuz hep. Hepsi tek sınıftan.
+
+465
+02:16:04,927 --> 02:16:23,128
+Dolayısıyla algoritmamız bunu yapana kadar durmadan devam edecek. En sonunda işlem bittiğinde bizim elimize bir karar ağacı olacak. Karar ağacımızın büyümlerinde neler yer alacak? X1 ya da X2 küçüktür bir şey mi? diye sorular yer alacak.
+
+466
+02:16:39,412 --> 02:16:40,412
+Allah Allah.
+
+467
+02:16:42,191 --> 02:16:44,691
+Bir tane karar ağacı şuraya koymamıştım. Neyse, önemli değil.
+
+468
+02:16:46,211 --> 02:16:48,092
+Birazdan ardından sonra şey yaparız.
+
+469
+02:16:49,432 --> 02:16:53,051
+Bu şekilde dediğim gibi bir karar ağacı oluşmuş olacak.
+
+470
+02:16:53,191 --> 02:16:54,632
+Karar ağacı nasıl bir şey? Bir dakika.
+
+471
+02:16:54,792 --> 02:17:00,051
+Ona aslında çok basitçe bir örnek bulabilirim herhalde.
+
+472
+02:17:00,051 --> 02:17:01,051
+Bir saniye arkadaşlar.
+
+473
+02:18:15,956 --> 02:18:40,576
+Mesela böyle basit bir şey internetten buldum hemen. Burada mesela iki sınıflı bir problem var. Sınıflardan bir tanesi şu beyin diye yazılan bir tanesi maniklant diye yazılan iki tane sınıf. Şunlar özellikler. Özellikleri mesela üçten büyükse küçükse diye ayrılmış. Marginal adresinin özelliği birden büyükse küçükse, işte clamtikness yediden büyükse küçükse gibisinde ayrılmışlar.
+
+474
+02:18:43,731 --> 02:18:49,932
+Şuralar var bakın. Oralar ayrımın olmadığı yerler. Oralar zaten karar verilmiş olan kısımlar.
+
+475
+02:18:59,924 --> 02:19:09,664
+Mesela şurası, şurası, şurası, şurası. Bunlar hep karar düğümleri.
+
+476
+02:19:11,004 --> 02:19:14,963
+Burada karar verilmiş. Artık buradan itibaren bir parçalanma yok gördüğünüz gibi.
+
+477
+02:19:15,924 --> 02:19:21,324
+Ya da şunlar. Farklı sınıfları farklı renklerle ithal ettim.
+
+478
+02:19:22,164 --> 02:19:23,344
+Bakın şunlar kararlar.
+
+479
+02:19:23,891 --> 02:19:41,851
+En tepede bir yerden başlıyor iş. Soruyor, diyor ki, Üniformity of Cell Size özelliği 3'ten küçük müdür, büyük müdür? Buna göre buralara geliyor. Bear Nuclei, artık bunlar nasıl okunuyorsa bilmiyorum, tıbbi terimle. Bear Nuclei özelliği 3'ten büyükse bu tarafa, küçükse bu tarafa git şeklinde burada yönlendiriyor.
+
+480
+02:19:42,352 --> 02:20:09,372
+Dolayısıyla böyle bir karar ağacını aslında demin gördüğümüz mekanizmayla oluşturmuş oluyoruz. Peki, oluşturmayı tamamladıktan sonra, yani elinizde bir karar ağacı olduktan sonra bir test örneğinin sınıfını nasıl buluyoruz? Yapılan işlem basit. Elinizde bir test örneği geldiğinde onun özelliklerini biliyorsunuz. Burada karar ağacı dedi ki, bana şu özelliğin değerinin 3'den büyük mi küçük olduğunu söyle. Diyorsunuz ki işte 3'den küçük o zaman şu tarafa doğru gideceksin.
+
+481
+02:20:10,100 --> 02:20:22,860
+Burada diyor ki size B'nin mikrolerisi 3'den büyük mü küçük mü? Siz diyorsunuz ki küçük o özellik için. O zaman bu tarafa gidecek. Burada mesela normal mikrolerinin özelliği 2'den büyük mü küçük mü? Bunu soruyor. Diyorsunuz ki mesela küçük. O zaman...
+
+482
+02:20:23,956 --> 02:20:51,036
+Diyor ki, senin sınıfın, bu test örneğin sınıfı burası. Yani yukarıdan bırakıyorsunuz, aşağıdaki şu karelerle ifade ettiğim karar düğümlerinden bir tanesine düşüyor. Bütün hepsinin yapısı şuradaki gibi. Yani içlerinde tek bir tane özelliğe göre, özellik ve bir eşik değeri aslında buna eşik değeri diye ifade edebiliriz. Eşik değerine göre bu parçalanma gerçekleştiriyor. Bir karar ağacı çok temel olarak bu şekilde oluşmuş oluyor.
+
+483
+02:20:53,299 --> 02:20:53,899
+Şimli.
+
+484
+02:20:57,683 --> 02:20:59,683
+Bir şey yapalım.
+
+485
+02:21:03,683 --> 02:21:05,683
+Kaçta başlayalım?
+
+486
+02:21:07,683 --> 02:21:09,683
+10-15'te başlamışız.
+
+487
+02:21:11,683 --> 02:21:13,683
+Bir saat değişmiş.
+
+488
+02:21:13,683 --> 02:21:15,683
+Şimdi küçük bir ara verelim arkadaşlar.
+
+489
+02:21:15,683 --> 02:21:22,683
+11-30'a kadar ara. Ondan sonra bir 20 dakika daha ders yaparız.
+
+490
+02:21:25,012 --> 02:21:28,532
+Az sonra görüşmek üzere arkadaşlar. 7 dakika kısa bir moda.
+
+491
+02:30:08,884 --> 02:30:16,164
+Merhabalar arkadaşlar. Biraz kısa kaldım. Kısa kaldım ne demek ya? Geç kaldım kısa. Bakmayın.
+
+492
+02:30:17,043 --> 02:30:26,103
+Şimdi, [öğrenci] Hocam bugün proje verilmişim son gün. Ben henüz belirleyemedim. Birazcık bilgi veremez. Ne yapalım? Dersin WhatsApp grubu var mı arkadaşlar?
+
+493
+02:30:26,103 --> 02:30:33,504
+Sen bayağı hariçte kalmışsın [öğrenci] ya. Dersin WhatsApp grubu var mı? Bu hafta dersin 12. haftası mı ne?
+
+494
+02:30:35,347 --> 02:30:40,067
+Şimdi proje belirleme günü bugün son gün mü?
+
+495
+02:30:41,247 --> 02:30:42,087
+Yaklaş.
+
+496
+02:30:48,979 --> 02:30:51,979
+Evet, bugünün son gün. Değil mi?
+
+497
+02:30:54,979 --> 02:30:57,979
+Birazcık bir gün ne yapabiliriz diye. Yok, bilgi veremiyorum.
+
+498
+02:30:57,979 --> 02:31:02,979
+Proje önerisi bulmak da sizin işiniz. Projenin bir parçası.
+
+499
+02:31:02,979 --> 02:31:03,884
+Tamam mı?
+
+500
+02:31:06,932 --> 02:31:31,932
+Bugün bir miktar kaçırmıyorsan bayağı bir kaçırıyorsun. Sonradan da dinlemiyorsun derse. Neyse, peki. Dediğim gibi şey vermiyorum. Bugün 27 Mayıs'a kadar. Evet, bugün şey bitirmeniz lazım. Eğer veremezseniz o durumda...
+
+501
+02:31:33,683 --> 02:31:45,543
+Kesinti mevzusu var. Zaten Çeri yazıyor. Final dokümanında yazıyor. Peki, şimdi kaldığımız yerden devam edelim.
+
+502
+02:31:54,164 --> 02:31:59,364
+En düşük entropi özenine sahip özellik yerleştirilir. Bunları anlattım zaten.
+
+503
+02:32:03,987 --> 02:32:26,587
+Yapay sınavları daha kompleks karar sınır üretebiliyorlar. Yani mesela şuraya bakarsanız baya kompleks bir karar sınır üretebildiğini görüyorsunuz. Bu şeyden, şu TensorFlow onu aslında hep beraber sizle açın. Orada şey yapabiliriz. Yapay sınavının yapısını görebilirsiniz.
+
+504
+02:32:26,992 --> 02:32:38,811
+Aslında şöyle bir şey söyleyebilirim. Yapay sınavları da şu PCA var ya, PCA elde edildi anlattım. Şurada mesela şöyle bir şey düşünün.
+
+505
+02:32:46,963 --> 02:32:54,963
+İmputlarınız mesela şey olsun, 100 tane inputunuz var. Bunların 10 tane özelliği olsun. Tamam mı?
+
+506
+02:32:56,463 --> 02:33:06,583
+Bunu ben mesela bir W maddesiyle çarpsam ki bu W maddesi mesela 10 çarpı 10'luk bir şey olsa yeni uzayım nasıl bir şey olacaktır?
+
+507
+02:33:06,583 --> 02:33:13,363
+Buna yeni uzay diyeyim. Bu yeni uzay yine 100 çarpı 10'luk bir şey olacaktır değil mi?
+
+508
+02:33:14,131 --> 02:33:40,592
+Şimdi ben burada, mesela buradaki P, N'lerin hepsini birden aldığımı varsaydım burada, şunu görüyorsunuz değil mi? Burada aslında bunların belki, mesela bunu da 100'e çıkartsam, tamam öyle bir matriz bulsam ve onunla çarpsam, bu durumda, %50 diyelim karışmasın, 50'ye yapsam aslında 10 boyutlu bir uzayı 50 boyutlu bir uzaya çevirmiş olurum. Bakın şu an 50'e, görüyor musunuz?
+
+509
+02:33:41,299 --> 02:33:48,019
+10 boyutlu uzayı, 50 boyutlu uzayı çıkartmış olurum. Ya da küçülterebilirim. 5'e de indirebilirim.
+
+510
+02:33:49,843 --> 02:34:11,023
+Yapay sınavlarının yaptığı şey şu, yapay sınavlarının genel mimarını biliyorsunuzdur, bir daha bir daha anlatmaya gerek yok. Bir input space var, ondan sonra hidden layer'lar geliyorlar. Her bir hidden layer aslında şuradaki şu işlemi gerçekleştiriyor. Her bir input uzayı dönüşüme uğruyor ve yeni bir uzay haline geliyor.
+
+511
+02:34:11,504 --> 02:34:34,504
+Tabi buna bir de f fonksiyonu ekleniyor. Non-niner hale getiriliyor. Daha sonra o hali, mesela bu birinci hidden layer sonucu diyelim ki. Daha sonra bu birinci hidden layer sonucu, daha sonra bu h1'i alıyorsunuz.
+
+512
+02:34:35,283 --> 02:34:57,283
+W1 olsun. Bu W1 ama bir matriz bakın. Tek bir tane kat sayıdan bahsetmiyorum. Ona 5'lik bir matriz mi mesela? Hidden 1'de de yapılan işlem şu. 100 çarpı 5'lik bir şey var mesela. Burada ikinci hidden layer'ın baitleri var. Bunlar da mesela diyelim ki 5 çarpı...
+
+513
+02:34:58,195 --> 02:35:10,015
+40 olsun, sallıyorum, eşittir. Bu da ikinci hidden layer'deki temsiller oluyorlar. 100 çarpı 40'lık. Bunlar da ikinci hidden layer hali oluyor.
+
+514
+02:35:10,015 --> 02:35:17,195
+Yani aslında yapay siniralarının her bir hidden katmanında veriniz bir transformasyona oluyor.
+
+515
+02:35:17,636 --> 02:35:25,876
+Yani burada mesela birinci kat inputta, inputta 100'e 10'luk bir şeydi. Bunu mesela birinci hidden'in sonunda 100'e 5'lik hale getirdik.
+
+516
+02:35:26,195 --> 02:35:42,315
+Yüzebeşlik bir şeyi bir sonraki edinleyip bir önceki edinleyin outputlarını alıyor kendine input olarak. Bunu mesela buradaki weightlerle çarptığınızda H2'yi elde ediyorsunuz. Bu şekilde devam ediyor. En sonunda da sınıflandırıcı yapısı var.
+
+517
+02:35:43,572 --> 02:36:01,211
+Bütün yapay zeka eğitimi denilen hikaye aslında şuradaki W1 matrisi ve W2 matrisinin bulunması süreçleri. Şimdi bu size demin gösterdiğim neviçli bir açı açsın herkes ya da ben açayım beraber de görebiliriz. Bir dakika.
+
+518
+02:36:04,915 --> 02:36:21,948
+Teşekkürler.
+
+519
+02:36:35,827 --> 02:36:45,407
+Şu anda görüyorsunuz herhalde. Burada mesela çeşitli yapay şeyler seçebiliyorsunuz. Mesela çok basit bir şey seçelim. İki sınıf var. Şurada görüyorsunuz. Maviler ve sarılar.
+
+520
+02:36:45,824 --> 02:37:13,724
+Çok basit bir yapı, mesela inputlar var. Sonra dört tane nöronu olan bir hidden nail var, bir tane. Bir de output var. Şimdi buradaki dört rakamı aslında deminki prezentasyon, mesela kırk boyuta düşürelim ya da işte yirmi boyuta çıkaralım falan dedim ya, mesela bu iki boyutlu bir inputu dört boyutlu bir input haline getiriyor.
+
+521
+02:37:13,824 --> 02:37:28,884
+İki boyutlu bir uzaydan dört boyutlu bir uzaya çıkıyor. Sonra tekrardan iki boyutlu uzaya indiriyor. Görüyor musunuz? Şu aradakiler, weightler, mesela demin çizdim, weight 1 şu kısmı ifade ediyor, weight 2 bu kısmı ifade ediyor gibi düşünün.
+
+522
+02:37:29,203 --> 02:37:50,644
+Bütün eğitim denilen süreç bu W'ların rastgele bir yerden başlayarak veriye en uygun hale gelecek. Yani veriye en uygun hale demek ne demek? Böyle bir input geldiğinde onun sınıfını işte şu sınıftandır diye eğitim kümesindeki sınıfı neyse o sınıftandır diye verecek bir hale getirmeye çalışmak. Bütün olay eğitim dediğimiz şey bu baitlerin optimizasyonu aslında.
+
+523
+02:37:51,924 --> 02:38:06,104
+Şu anda herhangi bir şey yapılmıyor. Eğitim falan yok şu anda. Sadece bunlar veyitler başlangıçta rastgele atanmış durumdalar. Ben şimdi şuna tıkladığımda, bu zaten çok basit bir şey. Şey görüyorsunuz, veyitler değişti.
+
+524
+02:38:06,739 --> 02:38:24,619
+Ve şu anda mesela iki sınıfı birbirinden şöyle bir biraz böyle smooth bir şeyle ayırmış durumda. Bu da bir çok kolay bir veriklmesi olduğunu görüyorsunuz. Biraz daha zor bir şey deneyelim. Mesela şöyle bir veriklmesiyle bu yapıyı deneyelim. Bunu çalıştıralım.
+
+525
+02:38:25,620 --> 02:38:45,420
+Bu da gördüğünüz gibi yine oldukça iyi bir şekilde çalıştı. Şöyle bir, burası loss kısmı aslında. Başlangıçta büyük bir, iyi sınıflandıramıyordu şu anda ama test kümesi var elinde bir tane. Şurada rastgele seçtiği bir test kümesi var. Onun üzerinde oldukça iyi bir sonuç elde edebildi.
+
+526
+02:38:52,275 --> 02:39:00,655
+Hala çalışıyor. Göz gibi şey düşmüyor. Training düştü belki ama test gümesinde hiçbir şey yok. İyileşme yok.
+
+527
+02:39:05,620 --> 02:39:07,620
+Birazcık düşmeye başladı gibi.
+
+528
+02:39:09,960 --> 02:39:11,040
+Evet.
+
+529
+02:39:14,963 --> 02:39:18,804
+Ama hala, oldukça zor bir verişmesi zaten.
+
+530
+02:39:23,443 --> 02:39:33,443
+Bekliyoruz hala. Şu anda eğitim sürüyor. 1000 epok falan, 2000 epok olmuş. Şu anda...
+
+531
+02:39:33,747 --> 02:39:55,188
+Epoch falan ne demek? Yapay sinnağları kendisi bir ders konusu. Burada çok kısaca sadece bahsettim. Temel mantığını anlatmaya çalıştım. Yoksa içerisinde dünya kadar mevzu var. Ama bu şey, ne derler ona? İyi, ne derler ona? Görselleştiğim kadarıyla iyi bir tüm hazırlamışlar.
+
+532
+02:40:00,000 --> 02:40:20,659
+Daha çok da iyi bir yere varamayacak gibi gözüküyor. Yapıyı değiştirebiliriz. İlk dönüşünü durduralım. Araya birkaç tane daha hidden ekleyelim. Bunların nöron sayılarını birazcık arttırdım. Sonra mesela şurasını jelüye çevirelim. Aktivasyon fonksiyonunu. Regularization. Tamam. Bununla başlayalım. Bir de şuradan birkaç tane daha şey ekleyelim. Input.
+
+533
+02:40:21,620 --> 02:40:38,819
+Yani X1 ve X2'yi vermenin yanında bir de aynı zamanda X1'in karesini X2'nin karesini X1 çarpı X2'yi falan bu tarz şeyde de verebilir işin içerisine. Daha böyle baya kompleks hale gelsin. Şimdi bakalım burada bir şeyler elde edebilecek miyiz?
+
+534
+02:40:47,987 --> 02:40:49,288
+Güzel oturdu.
+
+535
+02:40:55,316 --> 02:41:01,016
+Ama şu bölgeler için hala pek şey yapamadık. İyi bir şey elde edemedik.
+
+536
+02:41:30,451 --> 02:41:32,451
+Bu ne?
+
+537
+02:41:50,164 --> 02:41:53,664
+Güzel, güzel, ha gayret. Arada uçuyor, görüyorsunuz.
+
+538
+02:41:57,203 --> 02:42:24,903
+Fena değil değil mi? Mesela şu andaki hali oldukça iyi gördüğünüz gibi. Tabii problemli olabilir bazı yerleri ama şu bölgenin mavi kalması çok da iyi bir şey değil aslında. Muhtemelen çünkü test örneklerinde mesela şuradan bir şeyler de gelebilir. Orası kaçak olarak bir görecektir ama elimizdeki veri açısından düşünürsek fena olmayan bir sonuca erişebildik.
+
+539
+02:42:25,203 --> 02:42:30,984
+Bu tabii dediğim gibi mimariyi değiştirdim gördüğünüz gibi. Sonra size burası da oynadım. Regulization ekledim.
+
+540
+02:42:35,252 --> 02:42:59,092
+Bunun gibi, şimdi bu aslında bir açıklaşık. Şimdi şunu söyleyelim, bir hiperparametre kavramından bahsedeyim aslında kapanış olarak. Şimdi sınıflandırma algoritmalarında bir lineal regresyondan bahsettik. Ondan sonra karar ağaçlarından bahsettik. Sonra yapay sinyalarından bahsettim. Şimdi hiperparametre kavramı şu.
+
+541
+02:42:59,731 --> 02:43:15,231
+Algoritmanın çalışması için ihtiyaç duyucu ama kendisinin belirleyemediği parametrelerdir. Tamam, hiperparametre dediğimiz şey bu. Yani algoritmaya çalıştığımız için bunlara bir değer atanması gerekiyor ama algoritma bunları kendisi belirleyemiyor.
+
+542
+02:43:15,827 --> 02:43:36,907
+Mesela yapay sinir ağlarında bunlar çok fazladır. Yani mesela burada işte kaç tane hidden layer olacak? Her bir hidden layerde kaç tane nöron olacak? Bunların aktivasyon fonksiyonu ne olacak? Learning rate ne olacak? Şunların her birinin belirlenmiş olması gerekiyor. Algorithmayı vermeniz gerekiyor. Aksi taktirde algoritmayı kendisi bunları ne yapamıyor? Bulamıyorlar.
+
+543
+02:43:37,363 --> 02:43:56,903
+Bunlar da ne kadar çok olursa, algoritma hem o kadar esnek oluyor ama aynı zamanda bir de bu deneme yanılma mevzusunu biraz daha şey haline getiriyor. Problemli hale getiriyor. Problemli derken süreci uzatıyor öyle söyleyeyim. Şimdi mesela ben bunu eğittim.
+
+544
+02:43:57,247 --> 02:44:05,547
+Şu anda bu bitti artık eğitim. Hala sürüyor aslında eğitimi de. Learning Rate'i düştüğü için artık pek bir şey değişmeyecektir devamında da.
+
+545
+02:44:11,827 --> 02:44:22,007
+Mesela bu eğitim kısa sürdü. Ama mesela o kadar büyük mimariler var ki, büyük datalarla eğitilen. İşte bir hafta sürüyor mesela eğitim. Tamam mı?
+
+546
+02:44:22,352 --> 02:44:45,891
+Şimdi eğitimin bir hafta sürmesi, mesela ben işte burada bir yapıyı gördüm, bu çok işe yaramadığını gördüm, ondan sonra başka bir yapıya geçtim falan, ekledim çıkarttım falan. Bu hani her bir eğitimin uzun sürüyor olması bizim bu hiperparametreleri o veri kümesi için optimize etme sürecini de o kadar zorlaştırıyor, uzun hale getiriyor. Bu aslında sağlam bir problem.
+
+547
+02:44:45,891 --> 02:44:50,352
+Aynen genetik algoritmaları hatırlıyorsunuz. Genetik algoritmaları da bir sürü hiper...
+
+548
+02:44:50,352 --> 02:45:08,012
+Hiperparametre vardı. Mutasyon oranı ne olacak? Kaç noktadan bölme yapacağız? Popülasyon büyüklüğü ne olacak? Gibi gibi bir sürü hiperparametre vardı ki ödevinizde bunların etkilerini üzerine de incelemeler yapmışsınız hatırlarsanız.
+
+549
+02:45:09,492 --> 02:45:30,512
+Dolayısıyla bu hiperparametre belirleme problemi aynen genetik algoritmalarda olduğu gibi yapay sinir ağlarında da mevcut. Hatta yapay sinir ağlarındaki daha fazla. Yapay sinir ağlarında çok daha fazla hiperparametre var çünkü. Bunlar statik, yani statik deneyim de klasik yapay sinir ağlar. Bir de derin mimariler var. Orada bu yapılar çok daha çeşitleniyorlar.
+
+550
+02:45:30,879 --> 02:45:40,360
+Ve her bir çeşitlilikte yeni işin içerisine hiperparametreler getiriyor. Öyle mi olsa, böyle mi olsa, kim nereye bağlı olsun, mimarileri falan da tasarlamamız gerekiyor.
+
+551
+02:45:41,279 --> 02:45:52,059
+Bir yerden işte ne bileyim ben, resimleri bir yerden veriyorsunuz, görüntüleri bir yerden veriyorsunuz. Mesela işte Caption Generation yapacaksınız. Bir resim için mesela metin üreteceksiniz diyelim ki.
+
+552
+02:45:52,415 --> 02:46:14,135
+Bir taraftan resmi veriyorsunuz, bir taraftan metni veriyorsunuz. Resmi nasıl reprezent edeceğim, görüntüyü nasıl reprezent edeceğim, bunları nasıl birleştireceğim, outputta nasıl bir loss kullanacağım gibi bir sürü envai çeşit, bir sürü hiper parametre karşınıza çıkıyor. Bunları optimize etmekte oldukça zaman alıcı işler olarak söyleyebiliriz.
+
+553
+02:46:15,028 --> 02:46:21,788
+Şimdi, peki bunu söyledik. Yapay sınarlarının kabaca ne olduğunu anlattık.
+
+554
+02:46:29,172 --> 02:46:36,592
+Şimdi bir de en son bugün için en yakın K komşu algoritmasından bahsedelim.
+
+555
+02:46:37,492 --> 02:46:39,452
+Böyle bugünkü dersimizi kapatalım.
+
+556
+02:46:41,932 --> 02:46:50,112
+Şimdi en yakın K komşu algoritması aslında, bana arkadaşını söyle sana kim olduğunu söyleyeyim, atasözüldü.
+
+557
+02:46:51,792 --> 02:46:54,472
+Algoritma hale, algoritmik hale gelmiş hale.
+
+558
+02:46:54,868 --> 02:47:07,347
+Şimdi, en yakın K komşu algoritması şöyle. Burada bir K var. Bu K bir hiperparametre. Yani algoritma bunu bulamıyor, sizin söylemeniz lazım. Mesela en yakın bir komşu algoritmasını düşünelim. En yakın bir komşu algoritması şu.
+
+559
+02:47:07,796 --> 02:47:31,815
+Genel bir test örneğinin sınıfını belirlerken şunu yapıyoruz. Burada bir eğitim süreci yok arkadaşlar, diğerlerinde olduğu gibi. Yani mesela linear regresyonda W'ları bulmaya çalışıyoruz. Karar ağacında ağacın kendisini bulmaya çalışıyoruz. Yapay sınavlarında yine ağın ağırlıklarını bulmaya çalışıyoruz. Burada ise bir eğitim süreci, bir modelleme süreci yok. Tamam mı? Yani eğitim zamanı sıfır. O şekilde düşünebilirsiniz.
+
+560
+02:47:32,308 --> 02:47:45,008
+Peki nasıl buluyor, nasıl tahmin ediyor? Bir test örneği geldi diyelim ki şu mavi kafalı olan arkadaş test örneği olsun. Bunun sınıfını belirlemek istiyoruz. Şuradaki siyah ve beyaz kafalı olanlar ise bizim eğitim örneklerimiz.
+
+561
+02:47:51,476 --> 02:48:11,536
+K adet, ki burada bir, K adet eğitim örneğini buldu diyor. Mesela burada bir tanesi. Şu mavi kafaya en yakın olan eğitim örneği bunların içerisinden şuymuş. En yakın örneği bu. Bunun sınıfı neyse bunun sınıfı da o olarak söyledi. Yani bu beyaz mı? O zaman bu da beyaz olacak. Eğer mesela K'yı 3 yapalım.
+
+562
+02:48:13,332 --> 02:48:37,272
+Bu sefer bu maviye en yakın eğitim örnekleri şuradaki şu dairenin içerisindeki 3 tanesi. Bu 3 tanesine sınıflarına bakıyorum ben. B var, B var, A var. Hangisi daha çok? B daha çok. O zaman B sınıfından diyeceğiz. Tamam mı? Yani en yakın bir komşu algoritması bu mavi kafa için A sınıfından derken en yakın üç komşu algoritması bu mavi kafa için B sınıfından diyecek.
+
+563
+02:48:41,332 --> 02:48:59,032
+Peki, fakat bu algoritmanın şeyi zor, kodlaması falan da çok kolay. Ama bir test örneğinin sınıfını bulmak için size ne gerekiyor?
+
+564
+02:49:00,340 --> 02:49:21,040
+Onu düşünelim. Diğer algoritmada ne gerekiyor? Mesela linear regresyonda oradaki W'lar lazım size. Yani yapıyı bilmeniz lazım ve W'ları bilmeniz lazım. Yani yapı zaten linear. W'yi bilmeniz lazım. Karar ağacında karar ağacının kendisi yeter. Karar ağacını biliyorsanız karar ağacını vererek, yani test örneğinin karar ağacını verirsiniz ve size sınıfın ne olduğunu söyler.
+
+565
+02:49:21,843 --> 02:49:36,283
+Yapay sinir ağlarında da mimari ve ağırlıklarını bilseniz yeter. Yani hani bir tane örneği verirsiniz, o size onun sınıfını söyler. Peki burada bize ne lazım bir test örneğinin sınıfını bulmak için? Neyi biliyor olmamız lazım? Elimizde neyin olması lazım?
+
+566
+02:49:40,211 --> 02:49:42,991
+Eğitim verisinin tamamını elimizde tutmamız gerekiyor.
+
+567
+02:49:43,271 --> 02:49:47,671
+Aynen öyle. Burada bir modelleme işlemi gerçekleşmiyor. Değil mi?
+
+568
+02:49:47,671 --> 02:49:53,592
+Bir modelleme işlemi gerçekleşmediğinden dolayı eğitim kümesinin tamamını elinizde tutmanız lazım.
+
+569
+02:49:53,731 --> 02:50:01,971
+Eğitim kümeniz çok büyükse, çok sayıda örnekten oluşuyorsa, test zamanınız korkunç hale gelebilir. Değil mi?
+
+570
+02:50:02,963 --> 02:50:21,704
+Yani binlerce örneğiniz varsa, sizin şu örneğinizin en yakınını bulacaksınız ya, orada epey bir uğraşmanız gerekebilir. Dolayısıyla çok büyük miktarda veri tutmanız gerekebilir elinizde. Bu, bunun kötü bir tarafı olarak söylenebilir.
+
+571
+02:50:25,236 --> 02:50:27,736
+En yakın komşu algoritmasına.
+
+572
+02:50:29,836 --> 02:50:37,256
+Peki arkadaşlar, bugün lük burada bırakalım. Şu anda şuraya kadar geldik. En yakın K komşuya kadar.
+
+573
+02:50:37,796 --> 02:50:44,296
+Önümüzdeki haftada şuradaki LVQ vs. buradan devam edebiliriz diye tahmin ediyorum.
+
+574
+02:50:44,752 --> 02:50:57,432
+Burada epey bir site var. Bugün önümüzdeki haftayı muhtemelen burası alabilir diye tahmin ediyorum. Peki, soru soru olan var mı arkadaşlar?
+
+575
+02:51:04,435 --> 02:51:08,455
+Hocam, final tarihimiz belli oldu mu? Yani şey için soruyorum, projenin teslimi için.
+
+576
+02:51:08,775 --> 02:51:09,095
+Değil.
+
+577
+02:51:09,275 --> 02:51:10,455
+Yayınlanmadı bir şey ama ben...
+
+578
+02:51:10,455 --> 02:51:15,515
+Yok, yok, yok. Benim bildiğim de yok. Ben de sizden çok önce öğrenmiyorum zaten.
+
+579
+02:51:16,615 --> 02:51:17,755
+Anladım hocam. Teşekkürler.
+
+580
+02:51:17,755 --> 02:51:17,915
+Tamam.
+
+581
+02:51:18,739 --> 02:51:41,739
+Ben öğrenince sistemden son kabul zamanını değiştireceğim. Günce saatine kadar final zamanını oradaki ile aynı yapacağım. Ona dikkat edersiniz. Ama belki son haftaki dersimize zaten ders yapacağız. Son haftaki dersimize kadar belli olursa o zaman duyurmuş da olabilirim.
+
+582
+02:51:45,523 --> 02:51:47,304
+Peki arkadaşlar, başka soru var mı?
+
+583
+02:51:48,724 --> 02:51:55,564
+Hocam, ikinci ödevdeki tahminleyici dediğimiz şey, mesela linear regression sonra decision tree gibi.
+
+584
+02:51:56,344 --> 02:51:59,324
+Evet, tahminleyici dediğim şeyler onlar. Aynen öyle.
+
+585
+02:52:00,004 --> 02:52:01,263
+Tamam hocam, teşekkürler.
+
+586
+02:52:01,583 --> 02:52:02,083
+Rica ederim.
+
+587
+02:52:06,291 --> 02:52:07,092
+Evet, [öğrenci].
+
+588
+02:52:20,115 --> 02:52:33,576
+Peki. Hepinize katılınız için teşekkür ediyorum arkadaşlar bugünkü dersimize. Önümüzdeki hafta kısmetse aynı gün aynı saatte görüşmek üzere diyorum. Hoşçakalın. İyi günler hocam. İyi günler hocam. İyi günler. İyi günler. İyi günler.
