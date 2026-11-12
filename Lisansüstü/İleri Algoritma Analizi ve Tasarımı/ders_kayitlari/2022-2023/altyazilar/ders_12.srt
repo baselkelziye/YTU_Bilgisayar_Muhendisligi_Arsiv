@@ -1,0 +1,1467 @@
+1
+00:02:25,300 --> 00:02:27,340
+İstersen [öğrenci] devam edelim seninle.
+
+2
+00:02:29,900 --> 00:02:30,800
+Olur hocam.
+
+3
+00:02:35,924 --> 00:02:41,343
+Biraz gribim. Dolayısıyla sesim biraz boğup geliyor. O herifimiz de var. Geçmiş olsun.
+
+4
+00:02:41,343 --> 00:02:56,504
+Ondan sonra herkeste salgın olduğu haberiyle böyle biraz bu yakıntılı falan geçiyor. Umarım herkes dikkat eder. Birçok kişi de gördüm. Kendi videomu durdurup ekran paylaşacağım.
+
+5
+00:03:02,324 --> 00:03:03,324
+Ekranım geldi mi?
+
+6
+00:03:03,324 --> 00:03:04,324
+Evet.
+
+7
+00:03:04,324 --> 00:03:06,324
+Sesin de geliyor.
+
+8
+00:03:08,532 --> 00:03:36,532
+Benim konum, kendi önerdiğim bir konuydu. KDTRI, yani Türkçe'sinde K boyutlu ağaçlar algoritması. Bu algoritma hakkında güncel kullanımların geçtiği bir literatür taraması yaptım ve bir prototip uygulama yaptım. Bu güncel kullanımlardan bir tanesinde de elde alınan bir kavram ispatı örneği oldu aslında. Bugün burada bu sunumda bahsedeceğimiz kavramları orada işte kodlama yönünde neye kaybedecek?
+
+9
+00:03:36,532 --> 00:03:38,652
+Karşılık geliyor. Onu gördüğümüz bir örnek olacak.
+
+10
+00:03:39,795 --> 00:04:07,355
+Ben sunum boyunca KDT'ye K boyutlu ağaçlar veya KDT olarak söyleyeceğim. Ama birisi Türkçe, birisi orijinal ismi gibi düşünebiliriz. Buradaki D, Dimension anlamındaki boyut. Yani K boyutlu ağaç aslında. Bizim temel amacımız aslında elimizdeki verileri hızla erişebilmek ve onları sistematik bir biçimde saklamak. Bu tek boyutlu veriler için birçok yöntem var ama boyut sallayın arttığı durumlarda ne yapacağız?
+
+11
+00:04:07,795 --> 00:04:13,735
+KDT de aslında buna çözüm getiriyor. Buna çözüm getirmeye çalışıyor.
+
+12
+00:04:14,771 --> 00:04:42,771
+Tek boyutlu veriler için bildiğimiz en meşhur algoritma ikili arama ağacı aslında. Bir arama ağacı oluşturuyoruz. Verilerimizi bunun üzerine yerleştiriyoruz. Küçük elemanları ağacın sol tarafına, büyük elemanları ağacın sağ tarafına yerleştiriyoruz. Ve bu indeks üzerinden bir arama yapıyoruz. Dolayısıyla verileri hızlı bir şekilde erişebiliyoruz. Ama maalesef gerçek dünyada verilerin çok az bir kısmı tek boyutlu. Hatta gelişen teknolojiyle birlikte bu boyut sayısı çok...
+
+13
+00:04:42,771 --> 00:04:56,192
+Daha bir ilme kazanmış durumda. Bunun için KDT yani KBD Ağaçlar Algoritması dediğimiz algoritma aslında köken olarak 1970'lerde John Bentley denen bir adam tarafından öneriliyor.
+
+14
+00:04:56,192 --> 00:05:02,312
+Ve 1990 yılında da hesaplamalı geometrik konferansında yine kendisi algoritmayı bildiriyor.
+
+15
+00:05:03,132 --> 00:05:10,672
+Temel amacı aslında en yakın komşuyu bulmak veya işte aradığımız verinin kendisini bulmak, aradığımız değeri bulmak veya
+
+16
+00:05:10,771 --> 00:05:32,531
+Bir aralık sorgusu yapmak için kullanılıyor. Araştırmacılar ve profesyoneller bu algoritmayı kabul görmüş durumdalar. Birçok farklı uygulamada kullanılıyor ve birçok araştırmanın da aslında ana konusu olmuş KDT. Boyumsallığın tabii fazla olduğu durumlarda oldukça performanslı çalışıyor ve aramayı hızlandırıyor.
+
+17
+00:05:33,375 --> 00:05:56,975
+Yaptığım literatür taramasına geçeceğim ama literatür taraması yaparken birden fazla disiplinde kullanıldığını gördüm. İşte bilgisayar bilimleri zaten olmazsa olmaz. Veritaban yönetim sistemlerinde, haritalandırmada, meteoroloji veya oşenografi araştırma alanlarında veya ağ uzmanlığı gibi alanlarda bu çözümün kullanıldığını gördüm.
+
+18
+00:05:56,975 --> 00:06:01,275
+Aslında veri varsa ve çok boyutluysa ondan sonra KDT.
+
+19
+00:06:01,375 --> 00:06:19,735
+Bu şey oldukça bu şeye uygun, yatkın bir algoritma. Literatür taramasında incelediğim altı yayından en eskisi 2018 yılında yayınlanmış İspanya'da. Ondan sonra altı çalışma inceledim ve bunlardan bu en baştaki sarı renkli olanı.
+
+20
+00:06:20,403 --> 00:06:40,403
+Ben de kodlamaya çalıştım. Az sonra zaten bir demosunu da yapacağım bunun. Ama buradaki altı çalışmaya hızlı hızlı değinmem gerekirse, ilki Çin Ulusal Savunma Teknoloji Üniversitesi'nde yapılıyor. Bu çalışan araştırmacılar meteoroloji ve...
+
+21
+00:06:41,232 --> 00:06:56,532
+Oşeografi Fakültesinden. Aslında çalışmanın içeriği basit ama KDT'yi anlamak için oldukça önemli bir çalışma. Temelde şunu yapıyorlar. Brute Force ile KDT'yi karşılaştırıyorlar. Hangisinde daha hızlı biz aradığımız verilere erişebiliriz?
+
+22
+00:06:56,532 --> 00:07:07,404
+Ve verideki boyutsallık ve veri hacmi arttığında ikisinin arasındaki durum ne oluyor? İşte bunu karşılaştırıyorlar, bunu kıyaslıyorlar. Tabii ki KDT'yi...
+
+23
+00:07:07,507 --> 00:07:10,687
+Çok daha performanslı çıkıyor bu çalışmanın sonucunda.
+
+24
+00:07:12,647 --> 00:07:18,887
+Yani aslında çalışma Kadetri'nin önerildiği zamandan bu yana farklı bir şey sunmuyor.
+
+25
+00:07:18,887 --> 00:07:24,027
+Ama bahsettiğim gibi Kadetri'yi anlamak için, nasıl çalıştığını algılamak için iyi bir çalışma.
+
+26
+00:07:24,107 --> 00:07:27,947
+Bu yüzden ben de yer verdim. Hatta ilk sırada yer verdim. Bunu da implement ettim.
+
+27
+00:07:28,372 --> 00:07:38,372
+İkinci çalışma IBM'de, IBM Research'ta gerçekleştiriliyor. Bu çalışmanın temel amacı, işte en yakın komşuyu bulabilmek için...
+
+28
+00:07:40,788 --> 00:08:00,788
+KDT üzerinde ne iyileştirme yapabiliriz? Zaten işte Papron başlığı da öyle başlıyor. Revisting diye başlıyor. Yani KDT var ama biz bunu nasıl iyileştirebiliriz ki daha fazla arama verimliliği yükselsin bunu araştırıyorlar. Burada dikkat çeken nokta IBM tarafından bunun yapılması. Zaten KDT...
+
+29
+00:08:01,363 --> 00:08:08,824
+Veritabanı yönetim sistemlerinde sıkça kullanılan bir algoritmaydı. IBM hala çalışmaya devam ediyor. Bunu görmüş oluyoruz aslında burada da.
+
+30
+00:08:10,384 --> 00:08:15,123
+Üçüncü çalışma, çok özür dilerim.
+
+31
+00:08:16,463 --> 00:08:23,163
+Ali Sina Üniversitesi İran'da Bilgisayar Mühendisliği'ndeki araştırmacılar bu üçüncü çalışmayı yapıyorlar.
+
+32
+00:08:23,163 --> 00:08:26,783
+Aslında Network alanı da bu çalışmada paket sınıflandırması probleminde.
+
+33
+00:08:27,603 --> 00:08:42,183
+Biz KDT'yi nasıl daha da zenginleştirebiliriz diye çalışıyorlar ve geometrik uzayı da dahil ederek için içerisine paket sınıflandırmasını klasik KDT'ye göre 24 kata kadar daha hızlandırdıklarını ve çalışmalarını da söylüyorlar.
+
+34
+00:08:45,940 --> 00:08:50,779
+Doğru gün bugün değilmiş gibi hissediyorum. Bu şey, boğazım tıkandıkça ama.
+
+35
+00:08:51,240 --> 00:08:52,800
+Yok, gayet güzel geliyor sesin.
+
+36
+00:08:52,800 --> 00:09:04,060
+Bir sonraki çalışma New Brunswick Üniversitesi'nden yine bilgisayar bilimleri alanında yapılmış. Ondan sonra bu çalışmanın da temel içeriği şu.
+
+37
+00:09:04,779 --> 00:09:13,880
+Çeşitli verilerimiz var. Sinyal işleme alanında, konuşma tanıma alanında veya hastalık teşhisi alanında. Bu çeşitli verilerin biz aslında en benzerlerini bulmak için çok çaba harcıyoruz.
+
+38
+00:09:13,940 --> 00:09:32,519
+O zaman Kadetri ile bize en yakın komşu ve aralık solukusunu rahatça verebiliyorsa... Kadetri'yi neden kullanmayalım çalışmalarımızda? Çok özür dilerim. Diyorlar. Bir dakika müsaade et.
+
+39
+00:09:33,740 --> 00:09:36,840
+Su falan içeceksen iç olmazsa devam et.
+
+40
+00:09:40,340 --> 00:09:42,240
+Bende de benzer bir durum olduğu için.
+
+41
+00:09:50,292 --> 00:10:00,000
+Yok, pardon. Ağlayarak anlatıyorum sunumu çünkü boğazım tıkandı. Çalışmayı tekrar hızlıca özetleyip farklı alandaki verileri...
+
+42
+00:10:00,000 --> 00:10:05,139
+Farklı sinyal verilerimiz var. Bu sinyal verilerinin biz en benzerlerini bulmaya çalışıyoruz.
+
+43
+00:10:05,279 --> 00:10:12,720
+İşte bir ses varsa veya bir görüntü varsa elimizde buna en benzerini bulmak için KDT'den faydalanabilir miyiz diye merak ediyorlar.
+
+44
+00:10:12,779 --> 00:10:18,879
+Çünkü KDT'nin temel vaatlerinden birisi en yakın komşuyu bulabilmek veya aralık sorgusunu gerçekleştirebilmek.
+
+45
+00:10:19,159 --> 00:10:24,599
+Bu çalışmada bunu el alıyor ve KDT'den oldukça faydalanıyorlar çalışma içerisinde.
+
+46
+00:10:26,355 --> 00:10:49,556
+Beşinci çalışma, İspanya'da yapılmış bir çalışma. Uluslararası La Rioja Üniversitesi'nde, yine Teknoloji ve Mühendislik bölümünde. Bu çalışmada da kablosuz sensör ağlarının kümelenmesi için çalışıyorlar. Bu kümeleme işi ne kadar isabetli olursa, ne kadar mantıklı bir kümeleme yapılırsa.
+
+47
+00:10:50,227 --> 00:11:07,387
+O kadar fazla güç tüketiminde enerji tasarrufuna yol açıyor ve hizmet kalitesi üzerinde önemli bir etki sahip. Çünkü kablosuz ağlarda hop sayısı önemli. Veri ne kadar çabuk ulaşıyorsa o kadar aslında iş performansı ve hizmet kalitesi artan bir düzeyde oluyor.
+
+48
+00:11:08,008 --> 00:11:15,807
+Burada da KDT'nin kullanılmasının oldukça verimli olduğunu vurguluyorlar çalışmalarında ve son çalışmamız.
+
+49
+00:11:16,628 --> 00:11:20,408
+Türkiye'de yapılmış bir çalışma İngazi Üniversitesi'nde.
+
+50
+00:11:22,484 --> 00:11:47,104
+Ali Şenol ve arkadaşları, Akan Belliler üzerinde bir sınıflandırma çalışması yapıyorlar ve bunu KDT'yi kullanarak yapıyorlar. Yanı sıra, bunu KDT'nin yanı sırada 4 farklı, 3 farklı özür dilerim, KDT'yi ile birlikte 4 ediyor, 3 farklı algoritmayla kıyaslıyorlar ve en iyi performansın, en iyi kümeleme performansının KDT'yi olduğunu çalışmalarında gösteriyorlar.
+
+51
+00:11:47,988 --> 00:12:11,768
+Tabii bunların hepsi klasik KDT değil. Çeşitli zenginleştirmeler var. İşte burada Adaptive Radius dediği en yakın komşuyu daha kolay bulabilmek için böyle küçük küçük eklentiler var. Ama KDT yaptığımız 6 çalışmanın araştırma çalışmasının sonucunda gördüğümüz yere hala geliştiriliyor, hala kullanmaya devam ediyor. 1970'lerde önerilmesine rağmen.
+
+52
+00:12:13,683 --> 00:12:16,024
+Son çalışmada ne verisi kullanmışlar?
+
+53
+00:12:18,024 --> 00:12:19,063
+Pardon.
+
+54
+00:12:19,744 --> 00:12:22,183
+Akan büyük veriler üzerine yapmışlar.
+
+55
+00:12:22,364 --> 00:12:23,464
+Ama ne verisi yani?
+
+56
+00:12:24,584 --> 00:12:29,724
+Çalışmanın veri setinin içeriğini incelemedim ama muhtemelen sentetik oluşturulmuş olduğunu düşünüyorum.
+
+57
+00:12:31,844 --> 00:12:34,104
+Yani bakar, katkı sağlar.
+
+58
+00:12:35,324 --> 00:12:38,704
+Ben de paperına da bakarım da denk geldi.
+
+59
+00:12:38,704 --> 00:12:40,824
+Zunday [öğrenci]'yi sordum. Tamamdır.
+
+60
+00:12:47,731 --> 00:13:02,891
+Ve prototip uygulamamız. Prototip uygulama, ilk bahsettiğim çalışmanın, bu için Ulusal Salama Üniversitesi'ndeki araştırmacılarının yaptığı çalışmanın aslında bir benzerini gerçekleştirmeye çalıştım. Ve bunu kavram ispatı olarak sunuyorum.
+
+61
+00:13:03,700 --> 00:13:17,940
+Ama önce KDT'den biraz bahsetmek gerekirse nedir, nasıldır, ağaç yapısı neye göre yerleşiyor vs. onu görelim. Ondan sonra uygulamaya geçeceğiz. Zaten bunları anlattıktan sonra uygulama oldukça anlaşılır hale gelecek.
+
+62
+00:13:20,340 --> 00:13:42,180
+Yapraklar ve aslında düğümler var. Şu düğümler dediğimiz yapraklardan önceki kısımlar. Farem görünüyordur umarım. Ondan sonra yuvarlakla gösterilen kısımlar aslında düğümler. Bu kısma indeksle deniyor ama düğüm, indeks yani verilere gitmek için takip edilen yol aslında ağaçta. Ve en alttaki kısma ise yaprak deniyor ve verilerin tamamı bu yapraklarda tutuluyor.
+
+63
+00:13:44,371 --> 00:14:07,432
+Düğümlerde ilerlerken herhangi bir veriyle karşılaşmıyoruz. Sadece indekslerle karşılaşıyoruz. Sadece sağa mı gitmem lazım, sola mı gitmem lazım bunun kararını veriyoruz. İkili arama ağacının bazı implementasyonlarında bu doğrudan veriyi işte düğümün içerisinde tutuluyor ama bunda öyle değil. Bunda yaprağa gidene kadar herhangi bir veriyle karşılaşmıyoruz. Sadece takip ettiğimiz bir yol şeklinde karşımıza çıkıyor.
+
+64
+00:14:12,403 --> 00:14:34,123
+Burada dolayısıyla şu çizime geri dönecek olursam, hem bellek içi erişim hem de bellek dışı erişim gibi iki farklı karmaşıklık kavramı var. Şurada takip edilen, yani ağaç boyunca takip edilen yol bellek içi erişim, ondan sonra ağacın dışına çıktıktan sonraki kısımda bellek dışı erişim olarak karmaşıklık hesabı yapılıyor.
+
+65
+00:14:37,395 --> 00:14:59,355
+Bellek Dışı Erişimi, Bellek İçi Erişimi anlıyoruz. Ağacın üzerinde ne kadar ilerledim veya ne kadar yol aldım gibi bildiğimiz şeyler gördüğümüz algoritmalardan ama Bellek Dışı Erişimi dediğimiz şey nedir? Bellek Dışı Erişimi dediğimiz şey de diske ne kadar eriştim veya ağ trafiği üzerinden kaç tane paket aldım veya kaç tane paket gönderdim gibi şeyler.
+
+66
+00:14:59,915 --> 00:15:05,015
+Genellikle Bellek İçi Erişimler, Bellek Dışı Erişime göre çok çok daha az maliyetli olduğu için.
+
+67
+00:15:05,395 --> 00:15:08,255
+Milisaniyeler cinsinde veya nanosaniyeler cinsinde olduğu için.
+
+68
+00:15:08,775 --> 00:15:11,375
+Burada dikkat edilen şey bellek dışı erişim.
+
+69
+00:15:11,715 --> 00:15:18,575
+Yani kardiyatriğinin karmaşıklığı hesaplanırken bellek dışı erişim neyi gösteriyorsa bize karmaşıklığımız odur deniyor.
+
+70
+00:15:20,255 --> 00:15:22,275
+Çünkü hep diske gitmek gerekiyor vs.
+
+71
+00:15:23,316 --> 00:15:44,576
+Ağacı oluşturmak için peki ne yapıyoruz? Burada örnek iki boyutlu bir çizim var. İşte K değerimiz ikiymiş. Yani iki boyutta bir veriyi biz ağaca yerleştirmeye çalışıyormuşuz. Bir işte birinci boyutta bir de ikinci boyutta verileri sağa veya sola atarak bu ağacı oluşturuyoruz.
+
+72
+00:15:51,316 --> 00:15:58,416
+Ondan sonra yer düzlemine göre bu verileri sağa sola atarak verilerimizi aslında indekslemiş, düğümle ve yerleştirmiş oluyoruz.
+
+73
+00:15:58,696 --> 00:16:02,936
+Ve en sonunda da yaprağa ulaştığımızda verinin kendisini tutabilir hale geliyoruz.
+
+74
+00:16:03,616 --> 00:16:09,916
+Bu üç boyuta, dört boyuta, beş boyuta yani en boyuta aslında genelleştirilebilir.
+
+75
+00:16:13,491 --> 00:16:35,152
+Bir takım karmaşıklık hesaplarımız var burada. Hızlıca onları özetleyeyim. Ağaca bir eleman eklemenin belirlik içi erişim maliyeti aslında binary tree ile aynı. O login karmaşıklığında biz ekleme yapabiliyoruz. Çünkü ağaçta bir yolu takip etmemiz lazım ve yolun sonuna geldiğimizde oraya verimizi ekleyeceğiz.
+
+76
+00:16:35,552 --> 00:16:53,932
+Logan karmaşıklıkta. Bu bellek içi erişim. Bir de bellek dışı erişim maliyetimiz var. Şuradaki aslında yapraklarda gördüğümüz yapraklar yani data notları bizim için. Bu data notları tek bir veri tutmuyor.
+
+77
+00:16:53,932 --> 00:17:01,772
+İşte hard diskimizde ayrılan bir data boyutu ne kadarsa o kadar veri tutabiliyoruz bunun içerisinde.
+
+78
+00:17:03,552 --> 00:17:11,731
+Bu rakam. Elimizde 4 kilobaytın onda biri kadar bir veri varsa o yaprağın içerisine 10 veriyi yerleştirebileceğiz anlamına geliyor.
+
+79
+00:17:13,044 --> 00:17:31,024
+Dolayısıyla buna M diyoruz. Yani M bizim bir yaprağa yerleştirebileceğimiz verim ihtarı sayısı. Burada da bellek dışı erişim karmaşıklığımız o log N bölü M oluyor. N ağaçlı takip ettiğimiz yol N'de bir yaprağa kaç tane eleman yerleşiyorsa o.
+
+80
+00:17:32,024 --> 00:17:41,044
+Eğer yaprağın içerisinde bir yeni yaprak açmıyorsak, yani yaprağımız full değilse bu karmaşıklık tabii ki geçerli ama yaprak full dolu.
+
+81
+00:17:41,044 --> 00:17:43,204
+ve yeni bir yaprak daha açmak gerekiyorsa
+
+82
+00:17:43,204 --> 00:17:48,084
+burada da log n bölü m'e iki disk erişimi daha geliyor.
+
+83
+00:17:48,204 --> 00:17:50,604
+Bu iki disk erişimi bir tane yeni yaprak açmak için
+
+84
+00:17:50,604 --> 00:17:53,264
+bir de düğüm eklemek için.
+
+85
+00:17:53,484 --> 00:17:56,024
+Yani bir tanesi düğümden geliyor, bir tanesi yapraktan geliyor.
+
+86
+00:17:56,184 --> 00:17:56,884
+Bu karmaşıkların.
+
+87
+00:17:57,184 --> 00:17:59,884
+İkinin burada bir önemi var mı diye sorabiliriz.
+
+88
+00:18:00,424 --> 00:18:04,384
+Şurası çok düşük geldiği için yani log n bölü m oldukça düşük geldiği için
+
+89
+00:18:04,384 --> 00:18:06,464
+endüstri standartları genelde 2 diyorlar.
+
+90
+00:18:06,764 --> 00:18:09,044
+Yani şu sağ tarafı aslında birazcık göz ardı ediyor.
+
+91
+00:18:09,044 --> 00:18:21,764
+Burası genelde O2'de bitiyor. İki diz gelişiminde yani bitiyor. Ağaçta ekleme yapma meselesi. Farklı gösterimler var. Faydalı olur diye bunları da ekledim.
+
+92
+00:18:24,500 --> 00:18:51,920
+Buradaki gösterimlerde ilk dikkatimizi çeken nokta şurası. Yapraklara kadar bütün düğümler yuvarlakla gösteriliyor. Bunların içerisinde herhangi bir şekilde veri tutulmuyor. Bunlar sadece elimizdeki düzleni hangi noktalarda bölüyoruz, hangi noktalardan parçalıyoruz. Bunun için işte R1 bu düzlemdeyken bunları sadece şu kesikli çizgelere böldüğümüzde R2, R3, R4, R5 yani farklı düzlemleri X, V'ye koordinatlarını düşünürsek bu düzlemlerde kesiyoruz.
+
+93
+00:18:52,500 --> 00:19:17,200
+Farklı bir gösterim. Sağdaki gösterim. Ağaç her zaman şey olmuyor. Balans durumda olmuyor. Bazen şeylere, data noktalarına yani verileri tuttuğumuz yapraklara daha hızlı erişebilirken bazı durumlarda daha uzakta kalıyorlar ve daha zor erişiyoruz. Bu da işte verimizi ne kadar iyi balansladık veya verimizin hangi noktasında işi yapmaya başladık. Bununla ilgili önemli bir durum.
+
+94
+00:19:18,644 --> 00:19:46,264
+Aralık sorgusu diyorduk. Bir de en yakın komşuyu bulmak için anladık durumu, vaziyeti anladık. Ama aralık sorgusu yapmak için ne yapmamız gerekiyor? Aslında aralık sorgusu yapmanın maliyeti en yakın komşuyu bulmak. Yani bir komşuyu bulmakla aynı gibi bir şey. Çünkü disk de, diskin yapısı böyle bir şey. SSD'leri varsayalım. Şimdilik döner disklerin olduğunu varsayalım. Eğer bizim data notlarımız bir track içerisinde yan yana diziliyse,
+
+95
+00:19:46,644 --> 00:19:59,744
+Bulduğumuz bir elemanın ondan sonra en yakın ikinci elemanı hemen yanı başında olacaktır. Hemen yanı başındaki data nodunun içerisinde olacaktır. Çünkü KDT elemanları sıralı şekilde tutmayı garanti ediyor.
+
+96
+00:20:00,000 --> 00:20:28,000
+Yani bir ağaç içerisinde en soldan en sağa doğru okumaya başladığımızda biz bu verileri kesinlikle sıralı okuyacağız. Bütün gösterimler zaten bunu gösteriyor. P1, P2, P3, P4 diye giden veya ABCD diye giden. Ağacın içerisinde ne yaparsak yapalım. Eğer data nodlarını yan yana tutmayı başarabilmişsek işletim sistemi seviyesinde bizim tüm verilerimiz sıralı şekilde olacaktır. Dolayısıyla aralık sorgusunun maliyeti tek bir nodu bulmakla ayrılabilir.
+
+97
+00:20:28,000 --> 00:20:56,000
+Aynı gibi bir şey. Eğer çok kötü bir senaryo başımıza gelmezse, bütün data noduları disk içerisinde dağılmış değilse, bir tanesini bulduktan sonra yan yana hepsini okuya okuya gideceğiz zaten. Burada da işte bir formülü var bu şeye, bir track şeyine erişmenin, data noduna erişmenin. Rotation time burada bizim için sıfır. Çünkü niye bir tanesine eriştik? Hemen yanındaki zaten istesek de istemesek de bu disk dönecek. Dolayısıyla rotation time'ını burada sıfır kabul edebiliriz.
+
+98
+00:20:56,000 --> 00:21:03,400
+Yani bir aralığı yakalamak, eşittir bir değeri bulmak bizim ağacımızla aynı maliyette.
+
+99
+00:21:07,796 --> 00:21:28,615
+Prototip çalışmamızdaki veri setini kendim oluşturdum. Türkiye'deki illerin enlem ve boylan bilgilerini ele aldım. Çünkü bizim aslında merak ettiğimiz çalışmanın içerisinde de tıpkı buna benzer bir düzen vardı. İşte dünya üzerindeki koordinatların X ve Y değerlerini alıyordu. Bunlar enlem boylama yani latitude, longitude ile denk geliyor.
+
+100
+00:21:33,587 --> 00:21:40,867
+Ondan sonra Latitude ve Longitude değerlerini ve birkaç tane de ekstra bilgiyle birlikte bu şehirlerin veri setini oluşturduk.
+
+101
+00:21:41,875 --> 00:21:45,875
+Ve böylelikle incelediğimiz çalışmaya bir adım daha yaklaşmış olduk.
+
+102
+00:21:47,155 --> 00:21:54,855
+Tabii ki burada lat edilmelerin 10 gibi üzerine çalıştığımız için KDM2 bir enlemimiz var, bir boylamamız var.
+
+103
+00:21:54,955 --> 00:21:58,835
+Çünkü iki boyutlu bir ağacımız var. Ve bu uygulamayı CD'in de gerçekleştirdim.
+
+104
+00:21:59,096 --> 00:22:04,915
+Uygulama aslında temelde şu işleri yapabiliyor. İki boyutlu bir tane KDT ağacı oluşturuyor.
+
+105
+00:22:04,915 --> 00:22:09,535
+Buna eleman ekleyebiliyor. Ondan sonra bir eleman arayabiliyoruz.
+
+106
+00:22:09,875 --> 00:22:14,315
+Yakın komşu araması dediğimiz eleman aramayışını yapabiliyoruz. Aralık sorgusu yapabiliyoruz.
+
+107
+00:22:15,355 --> 00:22:22,835
+Ve eğer istersek part diskimizde okunan ve yazılan disk boyutunu, sayfa boyutunu değiştirebiliyoruz.
+
+108
+00:22:22,835 --> 00:22:29,735
+İşte standart olarak şu anda Windows'da 4 kilobyte ama biz bunu 1 kilobyte düşürebiliyoruz vs. Bu uygulama bunu da sağlıyor.
+
+109
+00:22:30,516 --> 00:22:41,476
+Ve aynı şekilde KD ağacını da, yani indeksimizi de, düğümleri de diske bu sayfa boyutuna sadık kalacak şekilde yazıp okuyabiliyoruz.
+
+110
+00:22:43,955 --> 00:23:11,336
+Data notlarımız ve düğümlerimiz şöyle. Düğümlerde aslında basitçe şu var. Bu bir latitude çizgisi mi yoksa longitude çizgisi mi? Bunu tutan bir boolean değerimiz. Ondan sonra bu bir yaprak mı yoksa bu bir düğüm mü? Onu tutuyoruz. Bu bir eğer düğümse verisi nedir? Çünkü sağa sola buna göre gideceğim. Ondan sonra sağdaki veri sayfasının konumu nedir? Soldaki veri sayfasının konumu nedir?
+
+111
+00:23:11,955 --> 00:23:34,955
+Bunların pointerları. Bizim düğümümüz bundan oluşuyor. Peki bizim veri yaprağımız neyden oluşuyor? Aslında şehirlerden oluşuyor. Şehirlerinde işte bir plaka numarası var. Şehrin ismi var. Hangi popülasyona sahip? Popülasyon yoğunluğu nedir? Şehrin...
+
+112
+00:23:36,372 --> 00:23:46,832
+City Center'ın popülasyon yoğunluğu nedir? Yani şehir merkezinin popülasyon yoğunluğu nedir? Ve hangi bölgede bulunuyor? Latitude ve longitude. Zaten bizim en çok kullanacağımız iki alan.
+
+113
+00:23:49,832 --> 00:23:51,912
+Evet ve demo zamanı.
+
+114
+00:23:52,723 --> 00:24:19,923
+Demoyu burada hazırlamıştım. Bir C uygulaması. Ondan sonra C uygulamasını başlattığımızda bana diskimin ne kadar byte yazacağını soruyor. Bunun standardı aslında 4 kilobyte dediğim gibi ama biz arttırabiliriz, azaltabiliriz. Elimizdeki bir şehir için tutacağımız toplam boyut 112 byte. Yani şurayı hesaplarsak 112 byte ediyor bize.
+
+115
+00:24:20,723 --> 00:24:32,203
+Dolayısıyla en küçük 112 byte'lık bir data page'i açabiliriz veya 4 kilobyte'i aşacak şekilde bir data page'i açabiliriz. Öneriniz varsa öneriyi alabilirim hocam. Yoksa 1 kilobyte girip geçeceğim buraya.
+
+116
+00:24:34,963 --> 00:24:37,423
+Pardon sesim, sen devam edebilirsin.
+
+117
+00:24:39,003 --> 00:24:41,403
+Tamam, 1 kilobyte yazıp geçiyorum.
+
+118
+00:24:41,403 --> 00:24:41,823
+Evet.
+
+119
+00:24:43,380 --> 00:25:00,540
+Bir kilobaytlık data page'leri oluşturdum ve benim indeksimi yani KDT'ri'ni aslında uygulama benim için hazırladı. KDT'ri içerisindeki bütün nodları görmek istersem yani aralık sorumlusu yapmak istersem hemen görebiliyoruz. Şöyle büyüteyim ekrana. İyi görünsün.
+
+120
+00:25:04,500 --> 00:25:32,439
+12-13 tane sanırım şey oluşturdu, dataladı oluşturdu ve ağacı dizdi. Ağacı dizerken işte birbirine yakın olan iller çok muhtemelen aynı data page'inin içerisine düştüler. Bir data page'inin içerisinde şu anda kaç? 2, 4, 6, 8, 9 tane il var. Belki yukarıda birazcık daha fazla olan olabilir ama temel olarak bir 24 bölü 112'nin aşağı yuvarlanmış hali burası. Birbirine yakın olan iller.
+
+121
+00:25:32,500 --> 00:25:47,359
+Aynı data page'ine düştüğünü görüyoruz. Bir aralık provusu yaptık. Bir de en yakın komşu arayalım burada. Yani bir latitude, longitude'a göre. Bir şey arıyorum. Şehir öyle bir şey.
+
+122
+00:25:49,268 --> 00:25:50,008
+Efendim hocam?
+
+123
+00:25:50,408 --> 00:25:59,388
+Şimdi bu strukturları doldurdun ya, işte enlem boylan bilgisi, nüfus bir şey. Onlar hazır bir veri seti herhalde. Değil mi? Bir yerden okudun onları.
+
+124
+00:25:59,508 --> 00:26:08,567
+Bir veri seti, sentetik bir veri seti. Kendi oluşturdum. Ondan sonra Türkiye'deki 81 ilin şehir merkezlerinin latitüb ve logitüb, enlem boylan değerleri.
+
+125
+00:26:08,768 --> 00:26:10,827
+Kendi mi oluşturdun derken random mı oluşturdun?
+
+126
+00:26:11,128 --> 00:26:12,768
+Yok hayır. Şehir merkezleri.
+
+127
+00:26:12,768 --> 00:26:13,748
+Sentetik diyorsun ya.
+
+128
+00:26:15,988 --> 00:26:16,568
+Anlamadım.
+
+129
+00:26:16,868 --> 00:26:18,928
+Santetik dedin ya, o yüzden soruyorum.
+
+130
+00:26:19,048 --> 00:26:24,008
+Santetik, yani kendi konuşturduğum her veriye santetik diyorum. Toplanmış değil sonuçta.
+
+131
+00:26:24,108 --> 00:26:25,348
+Anladım, tamam. Peki.
+
+132
+00:26:25,811 --> 00:26:46,692
+Peki, şöyle yapalım. Şu data page'in içerisindeki bir ili arayayım. Ondan sonra Samsung'un örneğini arayalım. Ama Ordu'nun koordinat bilgilerini girerek arayalım ki en yakın komşuyu bulabilecek mi? Bunu merak ediyoruz. Veya doğrudan Samsung'un koordinatını girip Samsung'u da araya gireriz. Ama işte uygulamanın çalıştığını göstermek için böyle bir yol izleyebilirim.
+
+133
+00:26:46,692 --> 00:26:51,811
+Şöyle hemen latitude değine girdim Ordu'nun.
+
+134
+00:26:54,291 --> 00:27:12,951
+Longitude'una girdim ve nereye arıyorum? Örneğin Samsung'u arıyorum. Bana Samsung ilini bu data page'in içerisinde bulunduğu için buldu ve detaylarını verdi. İşte şehir merkezinin nüfus yoğunluğu, yüz ölçümü nedir, hangi bölgededir vesaire gibi.
+
+135
+00:27:14,483 --> 00:27:26,683
+Uygulama da böyleydi. Ve bunun ideksi de oluşturuyor diske yazabiliyor aslında. Temel fonksiyoneliteleri bunlar. Raporda da geçiyor bunlar zaten. Devam ediyorum.
+
+136
+00:27:26,683 --> 00:27:28,283
+Evet, lütfen.
+
+137
+00:27:29,011 --> 00:27:48,251
+Demoyu geçtik. Yorumlamamız gerekirse, günlük hayatta artık belirlerimizin boyutsallığı artıyor ve KDT'yi halen güncel. Ondan sonra sarma soluna ufak eklemeler, küçük parçalar ekleyerek, biraz daha zenginleştirerek kendi çalışmalarımıza uyarlayabiliyoruz.
+
+138
+00:27:48,251 --> 00:27:57,011
+Hem farklı disiplinlerden bunu görüyoruz. Meteoroloji alanında çalışıp da KDT'yi kullananı da var. Networking alanında çalışıp da...
+
+139
+00:27:57,011 --> 00:27:57,951
+Çalışıp kullanan da var.
+
+140
+00:27:58,891 --> 00:28:06,591
+Ve biz de aynı zamanda prototiple uygulama yaparak hem de bunun yanı sıra iç-dış bellek gelişimi yönünden işi özetleyerek aslında KDT'yi anlatmış olduk.
+
+141
+00:28:07,791 --> 00:28:11,451
+Ve gelecek çalışmalarda da KDT'nin kullanılması çok muhtemel.
+
+142
+00:28:12,591 --> 00:28:15,291
+Eski bir algoritma ama hala güncelleniyor.
+
+143
+00:28:16,243 --> 00:28:20,624
+Eski bir algoritma hala güncelleniyor derken aslında…
+
+144
+00:28:20,624 --> 00:28:24,683
+Yeni yapılan, ondan sonra eklemelerle güncelleniyor diye düzeltebilir.
+
+145
+00:28:25,384 --> 00:28:25,683
+Tamam.
+
+146
+00:28:26,183 --> 00:28:37,903
+Yani algoritma temeli 1970'de öneriliyor, 1990'da sunuluyor ondan sonra ama herkes kendi alanına göre buna bir parça bir şey ekleyip ondan sonra zenginleştirip kullanabiliyor.
+
+147
+00:28:38,463 --> 00:28:41,483
+Şimdi burada senin raporundaki kaynaklarına bakıyorum.
+
+148
+00:28:41,951 --> 00:28:52,872
+Az önce sunumumda da bir takım kaynaklardan bahsettin ama onların yanlarında yılları yazmıyordu. Hangisi hangisine ait şu an onu anlamaya çalışıyorum da.
+
+149
+00:28:53,031 --> 00:28:55,711
+Öyle, o sayfaya geleyim. Evet, o sayfa bu sayfa.
+
+150
+00:28:56,511 --> 00:29:01,372
+Bir dakika, şimdi bakmaya çalışıyorum. O sayfa bu sayfa mı? Ha, tamam.
+
+151
+00:29:01,940 --> 00:29:15,960
+Bunun hem tablo olarak rapor içerisinde koyulmuş hali var. Referanslar kısmında da mecburen hangisini nereden aldıysak onu yazıyoruz. Oradan format neyi belirtiyorsa onu yazdım. Yılı var mı yok mu? Dikkat etmedim buna tabii ki.
+
+152
+00:29:15,980 --> 00:29:21,400
+Yok, burada varmış da. Bir sonraki sıraytlarda bahsediyordun ya. Onlarla ilişkisini kuramaymıştım. Tamam.
+
+153
+00:29:21,880 --> 00:29:25,740
+Teker teker. Evet. Hepsinden bahsettiğim sıraytlar. Onlar da yok. Evet, özet olarak.
+
+154
+00:29:26,339 --> 00:29:27,860
+Şuradan bir bakmaya çalışıyorum.
+
+155
+00:29:30,003 --> 00:29:32,003
+Tamam.
+
+156
+00:29:34,228 --> 00:29:55,468
+Tamamdır. Raporuna da bakacağım. Ben buradaki kullanımlarıyla biraz daha fazla eğleniyorum açıkçası. KD3 Basic bir şey. Zaten sen de güzel anlattın onun matematiksel arka planını. Buradaki güncel kullanımları, diğer algoritmalarla bazen kombinleniyor dedim. Onların nasıl yapıldığı vs. Onlara raporundan bakacağım. Çok teşekkür ediyorum.
+
+157
+00:29:55,468 --> 00:29:58,728
+Ben teşekkür ederim. Süreyi biraz geçtim ama malum bu az önce.
+
+158
+00:30:00,000 --> 00:30:08,299
+Zaten şey, bugün kremiz fazla oldu öbür haftaya. O yüzden süre sıkıntımız yok. Çok teşekkür ediyoruz.
+
+159
+00:30:08,519 --> 00:30:09,059
+Teşekkür ederim.
+
+160
+00:30:09,079 --> 00:30:12,079
+Geçmiş olsun tekrar. Var mı arkadaşlara buraya sorunuz?
+
+161
+00:30:16,756 --> 00:30:19,415
+Yok. Tamamdır.
+
+162
+00:30:21,816 --> 00:30:27,355
+Şimdi, kim devam etmek ister arkadaşlar?
+
+163
+00:30:31,380 --> 00:30:32,740
+Ben devam edebilirim.
+
+164
+00:30:33,080 --> 00:30:33,620
+Devamdır.
+
+165
+00:30:36,700 --> 00:30:39,140
+Başlayabilirsin o zaman. Senin konuna bir bakalım.
+
+166
+00:30:41,560 --> 00:30:43,920
+Zaten senin gerçimunu da göreceğiz başında.
+
+167
+00:30:54,067 --> 00:30:56,127
+Tamam, bu hafta dinlemediğimiz bir konu.
+
+168
+00:30:58,647 --> 00:31:03,048
+Tamam. Yanlız Hocam, İngilizce anlatsam olabilir mi acaba?
+
+169
+00:31:03,927 --> 00:31:06,447
+Ne olsa İngilizce anlatsam olabilir mi? Olabilir tabii.
+
+170
+00:31:06,447 --> 00:31:08,288
+Tamam, teşekkür ederim.
+
+171
+00:31:09,008 --> 00:31:17,347
+Today, I'm going to be talking about comparison of hash functions against attacks.
+
+172
+00:31:17,791 --> 00:31:21,831
+Bu, bu tarzı bu tarzı,
+
+173
+00:31:21,831 --> 00:31:27,111
+bu tarzı,
+
+174
+00:31:27,111 --> 00:31:28,271
+ama
+
+175
+00:31:28,271 --> 00:31:29,711
+tarzı,
+
+176
+00:31:29,711 --> 00:31:43,307
+bu tarzı,
+
+177
+00:31:43,347 --> 00:31:48,507
+Asorbi Storage, ve a number of other applications.
+
+178
+00:31:51,507 --> 00:31:58,548
+Generally, hash functions, they are expected to have a couple of properties.
+
+179
+00:31:59,987 --> 00:32:07,347
+The first is they should be resistant to collision attacks. Collision attacks having
+
+180
+00:32:08,084 --> 00:32:14,084
+İki
+
+181
+00:32:32,884 --> 00:32:35,884
+bu tarzı,
+
+182
+00:32:32,660 --> 00:32:58,156
+Bu, bu
+
+183
+00:33:00,756 --> 00:33:23,916
+Bir diğer bir diğer
+
+184
+00:33:24,531 --> 00:33:26,971
+Ama hush-values aynı.
+
+185
+00:33:52,051 --> 00:33:59,051
+İçinlikler, bugünkü
+
+186
+00:33:59,051 --> 00:34:02,651
+ve bu
+
+187
+00:34:11,827 --> 00:34:24,628
+İntro, size, or whatever data should be unlimited to be used for different applications.
+
+188
+00:34:24,628 --> 00:34:36,228
+Here I'm going to show a bit of standard hash function algorithms. One of the oldest is
+
+189
+00:34:38,260 --> 00:34:41,860
+MESİGDIGEST5, or MD5.
+
+190
+00:34:41,860 --> 00:34:50,860
+It is a popular function, a hash function that utilizes the Merkel DamGuard post-production.
+
+191
+00:34:50,860 --> 00:34:55,860
+It outputs 128 bits of digest.
+
+192
+00:34:58,260 --> 00:35:01,836
+This particular hash function...
+
+193
+00:35:01,972 --> 00:35:21,168
+ve bu bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonra
+
+194
+00:35:21,168 --> 00:35:31,768
+Ösler ve Perneil in 1996. İçinize aynı konfigürlüsü.
+
+195
+00:35:46,996 --> 00:35:52,496
+İlk olarak, bir şah1, 1995.
+
+196
+00:35:54,496 --> 00:35:56,996
+İlk olarak, aynı bir çalışma yapıda.
+
+197
+00:36:12,916 --> 00:36:38,892
+H2 function, bu daha
+
+198
+00:36:39,507 --> 00:36:57,507
+Şah 1 is very popular, but I believe 2011, NSA decided to remove it from the standard because it has become too weak.
+
+199
+00:36:57,907 --> 00:37:24,235
+Bu, bu
+
+200
+00:37:50,960 --> 00:37:54,840
+bu KSAK algoritm.
+
+201
+00:37:54,840 --> 00:37:56,519
+Ben de
+
+202
+00:37:56,519 --> 00:37:59,400
+nasıl bir şeyin
+
+203
+00:37:59,400 --> 00:38:01,400
+çalışması
+
+204
+00:38:01,400 --> 00:38:02,880
+ama
+
+205
+00:38:02,880 --> 00:38:04,039
+bu
+
+206
+00:38:04,039 --> 00:38:04,519
+algoritmın
+
+207
+00:38:04,519 --> 00:38:05,559
+bu
+
+208
+00:38:05,559 --> 00:38:24,943
+bir
+
+209
+00:38:19,987 --> 00:38:44,203
+Bu, bu
+
+210
+00:38:44,436 --> 00:38:57,676
+Bu, 512 bits, 1024 bits. Ve 3, 1088 or 776 bits.
+
+211
+00:39:12,307 --> 00:39:36,268
+Bu, bu
+
+212
+00:39:36,851 --> 00:39:40,172
+bu algoritma kullanılıyor.
+
+213
+00:39:40,172 --> 00:39:43,851
+Bu algoritma, bu algoritma,
+
+214
+00:39:43,851 --> 00:40:02,731
+bu algoritma,
+
+215
+00:40:03,380 --> 00:40:18,619
+ARAP-AMD'i'nin 80 Rounds. ARAP-1-80 Rounds. ARAP-2-3-64-24 Rounds.
+
+216
+00:40:18,619 --> 00:40:27,619
+In these algorithms, they also use different operations such as AIM-to-XOR, NOT-SHIFT.
+
+217
+00:40:30,291 --> 00:40:57,708
+İlk olarak konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla konuştuklarla
+
+218
+00:40:59,780 --> 00:41:01,780
+Collision attacks
+
+219
+00:41:01,780 --> 00:41:03,780
+usually
+
+220
+00:41:03,780 --> 00:41:05,780
+they follow the
+
+221
+00:41:05,780 --> 00:41:07,780
+birthday paradox principle
+
+222
+00:41:07,780 --> 00:41:09,780
+for a given
+
+223
+00:41:09,780 --> 00:41:11,780
+n bits of
+
+224
+00:41:16,692 --> 00:41:23,371
+İntro, n'input, n'in n'ı 2'a.
+
+225
+00:41:23,371 --> 00:41:25,371
+Bu, en general.
+
+226
+00:41:25,371 --> 00:41:28,731
+Bu, fast collision,
+
+227
+00:41:28,731 --> 00:41:37,692
+birçok birçok birçok birçok birçok birçok.
+
+228
+00:41:37,824 --> 00:41:53,824
+Adversi üsü specific algorithmik vulnerabilites, or design weaknesses in the hash function to find the collision in less than to the power of n over 2 time complexity.
+
+229
+00:41:53,824 --> 00:42:02,824
+That means like the time it takes to find the collision is much lesser because they find.
+
+230
+00:42:02,835 --> 00:42:09,275
+Bu bir diğer
+
+231
+00:42:09,275 --> 00:42:12,415
+bir diğer
+
+232
+00:42:12,415 --> 00:42:31,568
+bir
+
+233
+00:42:29,588 --> 00:42:53,228
+İntrolar
+
+234
+00:42:58,900 --> 00:43:10,900
+Öncelikle, freestart kollision doesn't necessarily mean that the hash function is broken.
+
+235
+00:43:10,900 --> 00:43:23,900
+It just shows or it just indicates that there should be more research to be done in terms of analyzing these hash functions.
+
+236
+00:43:24,467 --> 00:43:31,467
+ve
+
+237
+00:43:31,467 --> 00:43:34,467
+diğerlerle anlatacağım.
+
+238
+00:43:50,099 --> 00:44:10,827
+Bu, bu
+
+239
+00:44:11,891 --> 00:44:34,987
+Ama bu,
+
+240
+00:44:35,284 --> 00:44:59,596
+Bu, bu, birçok birçok birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştuğumuzda birçok oluştu
+
+241
+00:44:59,699 --> 00:45:23,820
+Aç function is broken, but there is possibility with more research. As I mentioned, the papers who have done these researches and who have succeeded to break some of these algorithms, here we have Wang and Yu with the paper, How to Break MD5. They did it in to the bar of 39 complexity.
+
+242
+00:45:24,884 --> 00:45:49,612
+ve ve
+
+243
+00:45:50,871 --> 00:45:53,871
+İlginç
+
+244
+00:45:50,099 --> 00:45:55,099
+İlginçlerle anlatacağım.
+
+245
+00:45:55,099 --> 00:46:00,099
+İlginçlerle, İP-EMD,
+
+246
+00:46:00,099 --> 00:46:03,099
+bu dağlar arasında,
+
+247
+00:46:03,099 --> 00:46:08,099
+kollisyonu attıksiyonu bu kadar dağlar yaratılma.
+
+248
+00:46:08,099 --> 00:46:14,099
+Ve pre-imajı attıksiyonu bu kadar dağlar.
+
+249
+00:46:14,996 --> 00:46:20,895
+Bu dağılık 158.
+
+250
+00:46:23,596 --> 00:46:34,895
+Bu dağılık 169.
+
+251
+00:46:34,895 --> 00:46:42,895
+Ve diğer sessizdeğe bir sessizde.
+
+252
+00:46:43,699 --> 00:46:48,699
+Şah 2 ve Şah 3,
+
+253
+00:46:48,699 --> 00:46:54,699
+they are not really very susceptible to collision attacks,
+
+254
+00:46:54,699 --> 00:46:56,699
+but pre-image attacks.
+
+255
+00:46:56,699 --> 00:47:03,699
+But they also need a lot of machine power and resources to be broken.
+
+256
+00:47:06,699 --> 00:47:08,395
+So...
+
+257
+00:47:12,275 --> 00:47:33,003
+İlginç
+
+258
+00:47:33,940 --> 00:48:00,672
+Ama de
+
+259
+00:48:00,672 --> 00:48:46,923
+Bu, bu
+
+260
+00:48:47,123 --> 00:48:49,963
+Doğru telaffuz ediyor muyum ismini bu arada?
+
+261
+00:48:49,963 --> 00:48:50,963
+[öğrenci].
+
+262
+00:48:50,963 --> 00:48:53,923
+[öğrenci], tamam. Bende de ben diyoruz.
+
+263
+00:48:53,923 --> 00:48:54,963
+Yazıldığı gibi.
+
+264
+00:48:54,963 --> 00:48:56,843
+Yazıldığı gibi, tamam.
+
+265
+00:48:56,843 --> 00:48:59,843
+Nere dersin sen [öğrenci]?
+
+266
+00:48:59,843 --> 00:49:02,163
+Ben [kişisel bilgi].
+
+267
+00:49:02,163 --> 00:49:04,523
+Evet, tamam. Te gireceğim.
+
+268
+00:49:04,523 --> 00:49:07,923
+Evet, arkadaşlar var mı sorunuz [öğrenci]'e?
+
+269
+00:49:09,763 --> 00:49:10,763
+Yok.
+
+270
+00:49:17,331 --> 00:49:27,711
+Ben de özür diliyorum öksürüm ve teslim için. O zaman sıradaki arkadaşlar devam edelim. Çok teşekkür ediyoruz. Ben zaten raporunu inceleyeceğim senin. Daha henüz bakma fırsatım olmadı.
+
+271
+00:49:28,751 --> 00:49:29,331
+Tamamdır.
+
+272
+00:49:31,271 --> 00:49:39,432
+Evet, kim var şu an listede olup da bugün sunum yapması gereken ve henüz yapmamış olan arkadaş var mı aramızda şu an?
+
+273
+00:49:42,900 --> 00:50:05,539
+Yok mu kimse? Aslında bu liste bayağı kalabalık ama süremiz çok oldu. Peki şu an sunumu göndermiştim. Herkes gönderdi zaten. Önümüzdeki hafta için. Şimdiden ben sunumu yapmak istiyorum diyen var mı aranızda? Hafta yerdi normalde takvimim ama şimdi yapabilirim diyen varsa onu sunumuna alalım.
+
+274
+00:50:08,467 --> 00:50:12,607
+Hocam, ben biraz takılabilirim ama prova yapmadığım için ama sunabilirim isterseniz.
+
+275
+00:50:13,147 --> 00:50:14,287
+Yani sen karar ver.
+
+276
+00:50:15,847 --> 00:50:18,267
+Şu an bayağı bir cesaret geldi, sunayım hocam.
+
+277
+00:50:19,047 --> 00:50:24,307
+Tamam, sen o zaman sun bakalım [öğrenci], tamamdır. [öğrenci] mi diyoruz, [öğrenci] mi diyoruz sana?
+
+278
+00:50:24,887 --> 00:50:26,347
+İkisini de kullanabilirsin hocam.
+
+279
+00:50:26,367 --> 00:50:28,607
+İkisini de kullanabilirim, tamam. [öğrenci] diyeyim o zaman.
+
+280
+00:50:29,460 --> 00:50:31,139
+Hemen ekran paylaşıyorum.
+
+281
+00:50:31,440 --> 00:50:31,780
+Tamam.
+
+282
+00:50:32,380 --> 00:50:35,460
+Hocam, bu sunumdan sonra derse devam edecek misiniz acaba?
+
+283
+00:50:35,880 --> 00:50:40,320
+Yok, sunumlar bitince bugün kapatacağız. Bu kadar olacak. Haftaya görüşeceğiz.
+
+284
+00:50:40,599 --> 00:50:43,440
+Ben biraz rahatsızladım. Malum müsaadenizi istesem olur mu?
+
+285
+00:50:43,700 --> 00:50:44,139
+Tabii ki.
+
+286
+00:50:45,619 --> 00:50:46,780
+Sizle de çok geçmiş olsun.
+
+287
+00:50:46,920 --> 00:50:48,460
+Teşekkür ediyorum. Görüşmek üzere.
+
+288
+00:50:48,460 --> 00:50:50,280
+Çok kolay gelsin. Görüşmek üzere.
+
+289
+00:50:51,619 --> 00:50:56,159
+Şimdi [öğrenci], blockchain için algoritmalar ve hash fonksiyonları konu tamamdır.
+
+290
+00:50:56,724 --> 00:50:58,724
+Buyur sütü sana bırakıyorum.
+
+291
+00:50:58,724 --> 00:51:00,172
+Tamam.
+
+292
+00:51:00,403 --> 00:51:28,403
+Merhabalar herkese. Ben [öğrenci]. Bugün sizlere blockchain için algoritmalar ve hash fonksiyonlarını anlatıyor olacağım. Şimdi sunumun içeriği genel olarak şöyle ilerleyecek. Biraz dağıtık defterden yani distributed ledger'ın ne olduğundan bahsedeceğim. Sonra hash fonksiyonlarından biraz bahsedeceğim. Blockchain'de hangilerini kullanıyoruz vs. Biraz blockchain'in mimarisinden sonra konsensus yapılarından daha sonra dijital imza akıllı sözleşmelerden ve gelecek çalışmalarından.
+
+293
+00:51:28,403 --> 00:51:29,844
+Çalışmalarından vs. bahsedeceğim.
+
+294
+00:51:30,356 --> 00:51:48,416
+Şimdi Distributed Ledger'dan başlayalım. Şimdi Blockchain dediğimiz şey aslında bir Distributed Ledger yapısı. Yani bir Distributed Defter yapısı ve bu Distributed Defter yapısı giderek büyüyen bir yapıya sahip. Yani sürekli içine yeni işlemlerin eklendiği bir yapı.
+
+295
+00:51:56,947 --> 00:52:23,028
+Merkezi yapıda merkezin çökmesi halinde sistemin tamamının çökmesi gibi bir sorun olabiliyor. Yani single point of failure diyebiliriz buna. Bir de merkeziyetsiz yapılar var. Merkeziyetsiz yapıda da bir merkez olmadığı için aslında bir yerin çökmesi sistemin tamamının çökmesi anlamına gelmiyor. Yani sistem hala çalışmaya devam ediyor. Distributed yapı da biraz daha verinin kendisiyle ilgili. Yani bu verinin dağıtık olmasıyla ilgili bir durum.
+
+296
+00:52:24,947 --> 00:52:26,907
+Bir kopyasının herkeste bulunması demek.
+
+297
+00:52:27,427 --> 00:52:31,947
+Altta Centralized Ledger ile Distributed Ledger arasındaki farkı görüyorsun.
+
+298
+00:52:32,068 --> 00:52:35,927
+Mesela Centralized Ledger'da, mesela ortadakini bir banka gibi düşünün.
+
+299
+00:52:35,988 --> 00:52:38,927
+Banka sizin tüm paralarınızı vesaire tutuyor.
+
+300
+00:52:38,927 --> 00:52:43,327
+Ama bankanın çökmesi halinde hepinizin fail olma durumu oluyor.
+
+301
+00:52:44,407 --> 00:52:47,927
+Sağdaki yapıda ise herkes herkesin ne kadar...
+
+302
+00:52:48,596 --> 00:53:16,596
+Paraya sahip olduğunu ya da veriye sahip olduğunu, ne veriye sahip olduğunu biliyor. Peki bunun güvenliğinden nasıl emin olabiliyoruz? Aslında bunun güvenliği, atağa karşı nasıl güvenliği olabiliyor? Bunun güvenliği aslında herkesin birbirinin menfaati koruması üzerine oluyor. Ya ben birine yanlış yapmayayım, biri de bana yanlış yapmasın üzerine gelişen bir yapı bu. Dolayısıyla aslında network'ün %51'inden fazla kötü niyetli kişi olursa network'ün kontrolünü de ele geçirmiş olabiliyor.
+
+303
+00:53:16,596 --> 00:53:22,196
+Böyle bir dezavantajı da var ama %50 artı birinin üstüne geçmek o kadar da kolay olmuyor genelde.
+
+304
+00:53:22,976 --> 00:53:26,256
+Şimdi biraz hash fonksiyonlarından bahsedeyim. Hash fonksiyonları neydi?
+
+305
+00:53:27,216 --> 00:53:33,376
+Şimdi elimizde bir input var. Bu inputu sabit uzunlukta bir çıktı ya. Karakter dizisine dönüştürüyoruz.
+
+306
+00:53:34,496 --> 00:53:40,916
+Tabii belirsiz input dediğim, her hash fonksiyonun mutlaka kendine göre bir input size sınırı vardı.
+
+307
+00:53:40,916 --> 00:53:44,456
+Mesela şahı 256'da 200'leri 64-1.
+
+308
+00:53:44,596 --> 00:53:47,884
+olacak şekilde bir input alıyor. Bu da...
+
+309
+00:53:47,987 --> 00:54:03,188
+Blockchain'de kullanılan farklı hash fonksiyonları var. Kecek var, Blake 2 var, ŞA3 var. Kecek yanlış hatırlamıyorsam ŞA256'nın biraz daha değiştirilmiş versiyonuydu. Ben genel olarak ŞA256 üzerinden ilerleyeceğim.
+
+310
+00:54:04,648 --> 00:54:15,927
+Önemli, burada bulunduğumuz hash fonksiyonların önemli özelliği ise çarpışmaya karşı direncinin olması. Neydi çarpışmaya karşı direnci? İki tane input'un bir output'u göstermesini biz istemiyoruz.
+
+311
+00:54:15,987 --> 00:54:24,708
+Yani buna karşı bir direnç gösteriyoruz. Bunu ifade ediyor. Bir de dövülemezlik var. Bu non-valiability. Aslında dövülemezlik diye Türkçe'ye çeviriliyor.
+
+312
+00:54:25,967 --> 00:54:35,527
+Ya inputla output arasında bir ilişkinin tam olarak olması. Yani mesela bir x inputum var. x inputumdan bir hash fonksiyonu aldım.
+
+313
+00:54:38,896 --> 00:54:45,315
+İmput verdiğimde çıktığı öngörememem lazım. Bunun üzerine bir özellik bu da.
+
+314
+00:54:45,695 --> 00:54:49,476
+Doğrulamadıysam. Şimdi biraz blockchain mimarisinden bahsedeyim.
+
+315
+00:54:50,175 --> 00:54:54,416
+Şimdi blockchain aslında gerçekten ismi gibi block ve chainlerden oluşan bir yapı.
+
+316
+00:54:54,936 --> 00:55:00,956
+Nedir bunlar? Mesela sağ taraftaki görselde görüyorsunuz block i-1, block i-1, block i-1.
+
+317
+00:55:00,956 --> 00:55:07,715
+Her bir block bir önceki block işaret edecek şekilde birbirlerine bağlılar.
+
+318
+00:55:08,175 --> 00:55:09,576
+Şimdi bunlar nasıl birbirine bağlı?
+
+319
+00:55:10,900 --> 00:55:38,500
+Her bir blokta dikkat ederseniz header'ında hashprev diye bir değer var. Şimdi bu hashprev bir önceki bloğun header'ın hash değerini içeriyor. Yani bir önceki bloğu işaret ediyor. Her bir bloğu böyle bu şekilde birbirine bağlıyoruz. Difficulty değerimiz var. Bu biraz konsensus mekanik masasıyla ilgili. Onu biraz ileride konsensus anlatırken bahsedeceğim. Nonse değer de aynı şekilde. Bir timestamp'imiz var. Timestamp bloğun ilk oluştuğu andaki zaman damgasını içeriyor.
+
+320
+00:55:38,900 --> 00:56:05,780
+Bulon ne zaman oluştuğu hakkında bize bilgi veriyor. Bir de Merkle root'umuz var. Onu da birazdan bahsedeceğim. Transaction'larımız var. Transaction aslında iki kişinin birbirine gönderdiği, mesela ne örnek olabilir? Ali'nin Ayşe'ye o 5 Bitcoin gönderdiği değer bir işlemi içeriyor aslında. Transaction dediğimiz şey bundan ibaret. Transaction kısmı da bunların hepsinin içerdiği bir liste.
+
+321
+00:56:06,143 --> 00:56:20,143
+Merkle Root'tan biraz bahsedelim. Merkle Root aslında Merkle Tree'nin kök kısmı. Şimdi nedir bu Merkle Tree? Merkle Tree bizim işlemlerimizin değişmemesini sağlayan...
+
+322
+00:56:20,628 --> 00:56:48,348
+Bir trim imarisi nasıl sağlıyor bunu? Şimdi sağda gördüğünüz T1, T2, T3 ve T4 işlemlerimiz olsun, transakşınlarımız olsun. Şimdi bunların her birinin ayrı ayrı hash'lerini alıyoruz. H1, H2, H3 ve H4 değerlerini elde ettik. Sonra H1 ile H2'yi birleştirip bir daha hash'ini alıyoruz. H1, H2 elde ettik. H3 ile H4'ü birleştirip bir daha hash'ini aldık. H3, H4'ü elde ettik. Sonra bu ikisini bir daha birleştirdik. H1, H2, H3, H4'ü elde ettik. Böylece Merkle root'u elde ettik.
+
+323
+00:56:48,628 --> 00:57:00,708
+Ne işe yarayacak? Düşünün ki T4'ü değiştirdiniz. T4'ü değiştirirseniz T4'ün H'i bozulacak. H4 değişecek. H4 değişirse H3 4 değişecek. H3 4 değişirse de H1 2 3 4 değişecek.
+
+324
+00:57:00,708 --> 00:57:16,028
+Yani Merkle Rout'u tutarak listedeki herhangi bir transakyonda bir işlemin yanlış değiştirilmesi hakkında bir fikir sahibi olabiliyorsunuz. Bu işe yarıyor Merkle Rout'u. O yüzden blockchain'de kullanılıyor. O yüzden önemli.
+
+325
+00:57:16,724 --> 00:57:19,244
+Şimdi konsersus mekanizmalarından biraz bahsedeyim.
+
+326
+00:57:20,052 --> 00:57:45,152
+Şimdi konsensus, blockchain'de bir, aslında konsensusun Türkçe anlamıyla bahsedersek, bir fikir birliğine varma mekanizması diyebiliriz. Ne işe yarıyor yani bu fikir birliği? Blockchain'de herkesin aynı stakede olmasını sağlıyor. Yani herkesin bu blok doğrudur, buradan devam edebiliriz dememizi sağlıyor aslında konsensus mekanizması. Farklı kullanılan konsensus mekanizmaları var, proof of work.
+
+327
+00:57:46,271 --> 00:58:13,552
+Proof of Stake, Delegated Proof of Stake gibi yapılarımız var. Şimdi ben biraz Proof of Work'tan bahsedeceğim. Bir de konsensus mekanizmalar tabii bloğa, zincire yeni bir bloğun eklenmesine karar verecek bir mekanizma. Yani kim bunu ekleyecek? Buna karar vereceğimiz bir mekanizma. Şimdi Proof of Work'tan başlayalım. Proof of Work şöyle çalışıyor. Şimdi sizin şu an iyinci bloğu oluşturduğumuzu varsayalım. Uluşturmaya çalıştığımızı varsayalım.
+
+328
+00:58:14,271 --> 00:58:21,452
+Herkes gibi. Şimdi bir önceki bloğumuz oluştu zaten. Bir önceki bloğun header'ın hash'ini aldık. Hashprev kısmına ekledik.
+
+329
+00:58:21,940 --> 00:58:28,299
+Şimdi bir difficulty değerimiz var. Bu difficulty değeri, zorluk değeri, network tarafından belirlenen, otomatik olarak belirlenen bir değer.
+
+330
+00:58:28,420 --> 00:58:36,699
+Onu da nasıl hesaplandığından birazdan bahsedeceğim. Bir timestamp değerimiz var. Bloğu oluşturmaya başladığımız andaki zaman damgası değeri.
+
+331
+00:58:37,059 --> 00:58:45,940
+Nance değerimiz var. Ondan birazdan bahsedeceğim. Şimdi Mercury Route'umuz, network transaction pool'umuz var. İşlemlerimizden oluşan bir pool.
+
+332
+00:58:49,940 --> 00:59:10,019
+Bu işlemi yapan kişiye minor deniyor. Genel olarak bu mesela Proof of Work algoritmasını işleten kişiye minor deniyor. Minor istediği gibi transactionları networkten alabilir. Tamamen kendi tercihi. Transaction'da bir takım transactionları tam bloğun içine sığabilecek kadar maksimum ölçüde aldığını varsayalım.
+
+333
+00:59:16,148 --> 00:59:35,468
+Proof of Work şu şekilde çalışıyor. Şimdi elimizde difficulty değerimiz var, Merkle Rout'umuz var, timestamp'imiz var, bir de hash, brev değerimiz var, bir de nons değerimiz yok. Şimdi nons değeri birden başlayarak iteratif bir şekilde artan sayılardan oluşan bir değer aslında. Şimdi neye göre karar vereceğiz bu nons değeri?
+
+334
+00:59:38,804 --> 00:59:51,304
+Şah 256'yi kullanıyordu en son. Şimdi Nance değeri şöyle olsun. Biz buraya bir Nance değeri ekleyelim ve bu header'ın hash'ini aldığımızda bize baştan bir miktar sıfır olsun.
+
+335
+00:59:51,304 --> 01:00:00,000
+Yani hash değerimizde baştan bir miktar sıfır olsun. Mesela şurada bir tane örnek vermişim. Üstteki hash için...
+
+336
+01:00:00,000 --> 01:00:16,219
+Bir nance değeri bulmak alttaki hash'e göre daha kolay. Neden? Çünkü baştaki sıfırları sabit tutuyor olmak aslında daha zor. Çünkü itaratık bir şekilde nance değerini arttırmam gerekiyor. Her arttığımda da tamamen rastgele bir çıktı elde ediyorum.
+
+337
+01:00:17,983 --> 01:00:45,983
+Dolayısıyla Nance değerini bulmak tamamen rastgele bir şey. Bir de olabilir. Network'ta bir milyonuncu değer de olabilir. Aslında difficulty de bunu ifade ediyor. Network tarafından mesela Bitcoin'de her 10 dakikada bir, her bir blok her 10 dakikada bir mine edecek şekilde ayarlanmış. 2016 blokta bir de kontrol edilir. 10 dakika içinde mine edilmediyse genel olarak bloklar bu baştaki sıfır değerini...
+
+338
+01:00:45,983 --> 01:01:01,384
+Mesela 5 iken 10'a çıkartıyoruz. Daha da zorlaştırıyoruz işlemi. Bu sefer minerlerin mine etmek istediği bloğu bulmak daha da zor hale geliyor. Bunu ifade ediyor aslında. Tamamen bu şekilde çalışıyor. Niye bu?
+
+339
+01:01:02,132 --> 01:01:30,132
+Grup of Work'ı çalıştırıyoruz. Bunun sebebi de aslında bizim de bundan bir menfaat elde ediyor olmamız. Mesela Bitcoin'de her bir bloğu bulduğunuzda bloğu bulan kişi bir bloğu rewardla ödüllendirilir. Mesela Bitcoin'de şu anda yanlış hatırlamıyorsam 6.25 Bitcoin alıyorsunuz her bir bloğu bulduğunuzda. Bir de transakşonlar arasında transakşonları kaydederken size bir fee değeri ödeniyor. Yani bunu siz...
+
+340
+01:01:30,132 --> 01:01:38,931
+Kendiniz mesela biz birine bankada bir işlem yani bir FET yaptığımızda FET ücreti alınır değil mi? Tamamen FET ücreti gibi düşünülebilir bu kısım.
+
+341
+01:01:40,471 --> 01:01:52,851
+Şimdi dijital imza kısmına gelelim. Şimdi dijital imzada her bir transaction'ın yani işlemin değişip değişmediğini kontrol yani değişip değişmediğini ya doğru olduğunu aslında değişip değişmediğinden ziyade doğru olduğunu kontrol etmemize yarayan bir mekanizma.
+
+342
+01:01:52,851 --> 01:01:56,971
+Şimdi elimizde bir transaction'ımız olsun. Solda mavi kısım.
+
+343
+01:01:57,876 --> 01:02:14,416
+Masum görünüyordur umarım. Şimdi onun hash'ini alıyoruz. Daha sonra kullanıcı private key ile bu hash'i enkript ediyor. Şimdi elimizde bir enkript edilmiş değer var. Bir de transaction'ın kendisi var. Şimdi network'te miner bunu onaylanmak istiyor. Bunu da şöyle yapıyor.
+
+344
+01:02:16,128 --> 01:02:33,688
+İlk önce enkript edilmiş şeyi dekript ediyor. Bir hash değeri elde ediyor. User'ın public'iyle. Daha sonra transaction'ı da kendisi hash'ini alıyor. Daha sonra bu iki hash'i birbiriyle karşılaştırıyor. Bu iki hash de birbiriyle karşılaşınca, yani denk olunca işlemimiz doğru diyoruz.
+
+345
+01:02:35,284 --> 01:02:49,664
+Akıllı sözleşmelerden biraz bahsedeyim. Akıllı sözleşmeler, Ethereum'da birlikte ortaya çıkan bir mekanizma. Neydi buna? Aslında bizim yazdığımız kodun Ethereum Network'u üzerinde çalışması gibi düşünebiliriz. Blockchain Network'ünde çalışıyor gibi düşünebiliriz.
+
+346
+01:03:03,284 --> 01:03:05,483
+if-else gibi yapılardan oluşan bir mekanizma.
+
+347
+01:03:07,644 --> 01:03:14,384
+Bu oluşturduğumuz yapıyı da Ethereum bytecode'lara çevirip daha sonra Ethereum virtual machine de çalışıyor.
+
+348
+01:03:14,523 --> 01:03:16,423
+Tam önce baya benziyor aslında biraz da.
+
+349
+01:03:17,264 --> 01:03:23,864
+Burada da aslında akıllı sözleşmelerin kodun değişip değişmediğini kontrol ettiğimiz kısımda da dijital imzaları kullanıyoruz aslında.
+
+350
+01:03:25,003 --> 01:03:26,543
+Burada gelecek çalışmalar var.
+
+351
+01:03:31,188 --> 01:03:51,188
+Proof of Work'ı mesela daha hızlı yapabileceği için buna daha da dirençli hash fonksiyonları oluşturmaya çalışıyoruz. Enerji tasarrufu var. Bu Proof of Work'ı çalıştırmaya başladığınızda aslında muazzam bir işlem gücü harcıyorsunuz. Sizinle birlikte binlerce kişi aynı şeyi...
+
+352
+01:03:51,760 --> 01:04:12,320
+İşleme yapmaya çalışıyor. Bu da muazzam bir enerji israfı demek. Ya aslında en son Bitcoin'in kullandığı toplam enerji maliyeti, şu an Türkiye'nin toplam kullandığı enerji maliyetinden daha fazla. Blockchain'i kullandığımız alanlar var. VR, AR, arttırılmış gerçeklik, sanal gerçeklik vesaire. Bir de Metaverse gibi kavramlar da karşımızda çıkıyor.
+
+353
+01:04:14,291 --> 01:04:35,552
+Sistemin güvenliğini ve bütünlüğünü sağlamak için daha da gelişen eş fonksiyonları oluşturmak zorundayız. Çünkü sürekli bunlara karşı bir atak mevcut. Dolayısıyla daha güçlü mekanizmalar oluşturuyoruz. Biraz önce aslında şeyden bahsetmiştim de, Collision Resistance neden bizde önemli, ondan bahsetmeyi unuttum. Hemen geri dönüm, ondan da bahsedeyim.
+
+354
+01:04:42,291 --> 01:04:57,652
+Önceki blok değil de, daha doğrusu bir önceki bloğu da işaret ediyor. Aynı zamanda bu başka bir bloğu da işaret ediyor. İşte bu Collision Resistment bu yüzden bizim için önemli. Genel olarak söyleyeceklerim bu kadar. Soru varsa alabilirim.
+
+355
+01:04:58,972 --> 01:05:08,831
+Evet, teşekkür ederiz. Var mı soru arkadaşlar? Önceli allattığın için de teşekkür ederiz. Biraz daha.
+
+356
+01:05:09,619 --> 01:05:11,460
+Tevkeler bir şey oldu süreler.
+
+357
+01:05:12,820 --> 01:05:13,360
+İşaret ederim.
+
+358
+01:05:15,900 --> 01:05:18,059
+Soru yok bu arkadaşlar kimsede.
+
+359
+01:05:20,240 --> 01:05:24,940
+Peki, bu hafta anlatacak kimse var mı? Kaldı mı şu an?
+
+360
+01:05:26,679 --> 01:05:30,360
+Bakıyorum ama gördüklerim hep iki cevap şey gibi sanki.
+
+361
+01:05:32,139 --> 01:05:34,280
+Tek tek takip edeyim. Tamam.
+
+362
+01:05:35,956 --> 01:05:44,956
+Arkadaşlar, o zaman haftaya devam edeceğiz. Bu haftayı böyle kapatalım. Hepinize çok teşekkür ediyorum. Hem geldiğiniz için, hem sunumlarınız için, raporlarınız için.
+
+363
+01:05:46,579 --> 01:06:09,799
+Ben şimdi önümüzdeki haftada normal 9'da başlatacağım diye bir mail atmıştım ama onu belki güncelleyip tekrar 10'a çekebilirim. Çünkü beklediğim kadar çok yoğunluk olmayabilir. Bununla alakalı size mail atacağım tarihini. Eğer yine 9'da başlayacak olursam 9-10 seyasi için müdün olduğu gibi yine size link atarım ya da 10'da başlatırız.
+
+364
+01:06:10,547 --> 01:06:22,507
+Kağıtlarınızı da bu hafta okumayı planlıyorum. Daha başlayamadım. Ondan sonra önümüzdeki hafta görüşeceğiz zaten. Sonra bir hafta dersimiz kalıyor. Var mı bana sormak istediğiniz bir şey?
+
+365
+01:06:26,900 --> 01:06:38,700
+Yok. Tamam. O zaman haftaya yine online olacak şekilde sadece. Görüşüp diğer arkadaşların sunumu da sabırsızla bekliyorum. Sabırsızlıkla. Hadi görüşmek üzere arkadaşlar. Hoşçakalın.
+
+366
+01:06:39,000 --> 01:06:40,480
+Görüşmek üzere. Geçmiş olsun hocam.
+
+367
+01:06:40,600 --> 01:06:41,040
+Sağ olun.
