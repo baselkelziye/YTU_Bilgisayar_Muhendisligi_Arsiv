@@ -1,0 +1,2899 @@
+1
+00:05:12,564 --> 00:05:13,124
+Good afternoon.
+
+2
+00:05:23,156 --> 00:05:24,716
+Sesimi görüyor musunuz?
+
+3
+00:05:27,656 --> 00:05:28,956
+Evet hocam.
+
+4
+00:05:29,475 --> 00:05:30,055
+Güzel.
+
+5
+00:05:52,339 --> 00:05:54,339
+Evet, etanlı bir şey.
+
+6
+00:06:14,803 --> 00:06:18,223
+Okay, we continue where we left.
+
+7
+00:06:23,083 --> 00:06:26,723
+The second method was block analysis.
+
+8
+00:06:28,723 --> 00:06:33,723
+Local multiple sequence align problems.
+
+9
+00:06:37,923 --> 00:06:41,723
+Blocks are similar to...
+
+10
+00:06:41,875 --> 00:06:51,695
+Profiles in the sense that they represent locally conserved regions within a multiple sequence alignment.
+
+11
+00:06:53,536 --> 00:06:57,235
+We last time mentioned profiles, but now we have the blocks.
+
+12
+00:06:58,875 --> 00:07:06,735
+The difference between the profiles and the block is that blocks,
+
+13
+00:07:09,235 --> 00:07:14,395
+İlk, İnsert, İndelit, which is shortly, we call it indence.
+
+14
+00:07:17,635 --> 00:07:22,875
+But in terms of the character placement, we say the gaps.
+
+15
+00:07:24,575 --> 00:07:31,795
+So there will be no insert and delete positions in the sequences in this respect when we consider blocks.
+
+16
+00:07:33,855 --> 00:07:36,195
+Blocks will have no gaps.
+
+17
+00:07:40,372 --> 00:07:47,412
+Instead, every column will include only matches and mismatches.
+
+18
+00:07:47,412 --> 00:07:53,572
+No gaps past the difference between blocks and profiles.
+
+19
+00:07:53,572 --> 00:08:04,172
+These blocks can be determined either by performing a multiple sequence alignment or...
+
+20
+00:08:05,524 --> 00:08:10,764
+...bizde searching the database for similar sequences of the same length.
+
+21
+00:08:18,483 --> 00:08:25,123
+So, this summarize general determined by performing multiple alignments first.
+
+22
+00:08:28,243 --> 00:08:34,003
+As I already mentioned, ungept regions are then separated into blocks.
+
+23
+00:08:38,259 --> 00:08:44,259
+There are many algorithms for searching blocks basically.
+
+24
+00:08:45,259 --> 00:08:56,259
+Again, as I said before, for multiple sequence alignment in general, all of these algorithms are aristical algorithms.
+
+25
+00:08:56,259 --> 00:09:00,203
+They are not optimal algorithms.
+
+26
+00:09:06,868 --> 00:09:12,328
+There are some statistical approaches to finding the master-like sequences.
+
+27
+00:09:15,288 --> 00:09:24,928
+There might be many more, but we'll be talking about two of them in a couple of minutes.
+
+28
+00:09:25,548 --> 00:09:29,508
+The first one is known as expectation maximization algorithm.
+
+29
+00:09:31,508 --> 00:09:33,508
+The other one is...
+
+30
+00:09:34,067 --> 00:09:37,147
+GYPS sampler, or GYPS sampler.
+
+31
+00:09:39,587 --> 00:09:42,587
+These are two widely used algorithms
+
+32
+00:09:42,587 --> 00:09:47,067
+for finding the master-like sequences.
+
+33
+00:10:17,620 --> 00:10:38,124
+Bu, bu
+
+34
+00:10:39,316 --> 00:10:41,816
+Global Multiple Sequence Alignment.
+
+35
+00:10:42,096 --> 00:10:50,836
+Once you have this Global Multiple Sequence Alignment, you can determine some of the blocks in which there is no gap.
+
+36
+00:10:58,611 --> 00:11:04,552
+There are usually two widely used programs or packages for this.
+
+37
+00:11:04,651 --> 00:11:07,172
+These are already used programs.
+
+38
+00:11:07,371 --> 00:11:08,672
+One is known as blocks.
+
+39
+00:11:10,011 --> 00:11:11,451
+The other one is emotive.
+
+40
+00:11:11,451 --> 00:11:15,611
+I do not really know what algorithm they implement,
+
+41
+00:11:15,851 --> 00:11:24,192
+but these are extensively used packages to be already mentioned.
+
+42
+00:11:26,163 --> 00:11:42,923
+Bu, bu
+
+43
+00:11:48,884 --> 00:12:12,716
+So, just to give you a simple example, next we see 10 tünketid kinasez proteins. Tünketid means the cut down basically, not through Russian, but a subset of these proteins.
+
+44
+00:12:13,620 --> 00:12:16,859
+There are approximately 75 residues in length.
+
+45
+00:12:19,980 --> 00:12:34,859
+So, a protein kinase is a kinase enzyme that modifies other proteins by chemically adding phosphate groups to them, which is known as phosphorylation.
+
+46
+00:12:37,971 --> 00:12:48,831
+Human genomes will contain about 500 protein kinase genes, and they constitute about 2% of all human genes.
+
+47
+00:12:50,111 --> 00:13:03,231
+So up to 30% of all human proteins made modified by kinase activity, and kinases are known to regulate the major of cylinder pathways, especially.
+
+48
+00:13:30,868 --> 00:13:33,868
+İzmir, biochemistry.
+
+49
+00:13:39,796 --> 00:13:52,268
+Bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örne
+
+50
+00:13:57,107 --> 00:14:01,227
+Algorithms will be using such data, basically.
+
+51
+00:14:02,027 --> 00:14:02,867
+Characterized.
+
+52
+00:14:08,747 --> 00:14:09,747
+Okay.
+
+53
+00:14:09,747 --> 00:14:10,667
+And here is.
+
+54
+00:14:14,187 --> 00:14:17,307
+Multipli-aligned potency masses.
+
+55
+00:14:35,731 --> 00:14:40,771
+ve sonra, bu multiple-second serment
+
+56
+00:14:44,820 --> 00:14:52,380
+Bu bir bloc var.
+
+57
+00:14:52,380 --> 00:14:56,259
+Bloc server, bir bloc var.
+
+58
+00:14:56,259 --> 00:15:10,140
+Bu bir bloc var.
+
+59
+00:15:12,275 --> 00:15:16,955
+Obviyacılıkları var, ama bu ne kadar da var.
+
+60
+00:15:25,971 --> 00:15:48,779
+Bu, bu
+
+61
+00:15:56,980 --> 00:16:03,980
+Bu birçok alınmaktı, bu birçok alınmaktı, bu birçok alınmaktı.
+
+62
+00:16:06,779 --> 00:16:10,980
+Bu birçok alınmaktı, bu birçok alınmaktı.
+
+63
+00:16:12,980 --> 00:16:14,980
+Bu birçok alınmaktı.
+
+64
+00:16:16,980 --> 00:16:21,980
+Birçok alınmaktı.
+
+65
+00:16:22,868 --> 00:16:34,868
+Bu konceptı bir bloc.
+
+66
+00:16:34,868 --> 00:16:37,868
+Bu bir bloc.
+
+67
+00:16:37,868 --> 00:16:42,868
+Bu bir bu konceptı.
+
+68
+00:16:47,120 --> 00:16:51,480
+A-link alignments in this local multiple sequence alignments.
+
+69
+00:16:53,480 --> 00:17:05,440
+Commonly used methods for rotating motifs are, as already said, expectation maximization algorithm and Gibbs sampling.
+
+70
+00:17:05,440 --> 00:17:09,720
+We'll be talking about these two approaches in a minute.
+
+71
+00:17:17,491 --> 00:17:28,592
+Expectation maximization algoritma, has been used extensively to identify both,
+
+72
+00:17:28,592 --> 00:17:37,951
+conserved domains in unaligned proteins and protein binding sites in unaligned DNA sequences,
+
+73
+00:17:40,771 --> 00:17:44,552
+even including some sites that may include gaps.
+
+74
+00:17:46,804 --> 00:17:51,284
+In this expectation maximization algorithm,
+
+75
+00:18:10,195 --> 00:18:22,315
+İntiyel, a guess is made as to the location and size of the site of interest in each of the sequences.
+
+76
+00:18:23,995 --> 00:18:29,915
+This is usually done randomly. An initial location is determined.
+
+77
+00:18:38,451 --> 00:18:41,771
+İzlal sitesi alın alın.
+
+78
+00:18:44,912 --> 00:18:50,192
+So, but before starting, an approximate length of signal must be given.
+
+79
+00:18:54,483 --> 00:19:00,483
+So then, randomly, we assign locations of this motif in each sequence.
+
+80
+00:19:07,763 --> 00:19:24,203
+As name implies, expectation maximization algorithm consists of two steps, which are repeatedly consecutively, sequentially.
+
+81
+00:19:25,563 --> 00:19:33,243
+The first step is expectation, the second step is maximization.
+
+82
+00:19:34,763 --> 00:19:35,143
+Okay.
+
+83
+00:19:35,663 --> 00:19:45,263
+in the expectation step background residue frequencies are calculated based on
+
+84
+00:19:45,263 --> 00:19:54,063
+was residues that are not in the initially aligned sites once we turn it blocks okay we have blocks
+
+85
+00:19:54,063 --> 00:20:00,000
+we want the background and we have the block the
+
+86
+00:20:00,163 --> 00:20:04,163
+İzlediğiniz için,
+
+87
+00:20:00,000 --> 00:20:05,199
+Residue frequencies are basically the number of the residues.
+
+88
+00:20:06,259 --> 00:20:13,179
+By residue, we mean, in fact, in reality, it's characters in a character array.
+
+89
+00:20:15,019 --> 00:20:21,440
+It is either DNA or amino acid sequences.
+
+90
+00:20:22,880 --> 00:20:27,079
+In amino acid sequence case, we have 20 characters.
+
+91
+00:20:27,743 --> 00:20:31,063
+In the DNA case, we will have four characters.
+
+92
+00:20:32,343 --> 00:20:33,343
+Frequency.
+
+93
+00:20:34,823 --> 00:20:43,583
+By frequency, we mean the number of residues or characters in terms of the data array.
+
+94
+00:20:50,583 --> 00:20:52,235
+Then...
+
+95
+00:20:55,923 --> 00:20:57,923
+İzlediğiniz için,
+
+96
+00:20:54,195 --> 00:21:00,675
+Colum-specific residuos are calculated for each position in the initial motif alignments.
+
+97
+00:21:01,275 --> 00:21:08,995
+Once we determine a block, obviously we will have rows and columns in the form of a matrix.
+
+98
+00:21:10,715 --> 00:21:19,875
+Then, after determining the background residue frequency, we will determine the column-wise
+
+99
+00:21:21,044 --> 00:21:23,044
+Residue frequencies,
+
+100
+00:21:25,044 --> 00:21:28,044
+for each position in the initial motif alignment.
+
+101
+00:21:31,044 --> 00:21:33,044
+Then using this information,
+
+102
+00:21:35,044 --> 00:21:44,044
+initial frequency values will be converted to the probability of finding the site at any position in the sequences.
+
+103
+00:21:45,107 --> 00:21:50,107
+ve some probability values will be calculated from this frequency information.
+
+104
+00:21:51,107 --> 00:21:57,107
+Actually, these probability values will be simple ratios of the frequencies.
+
+105
+00:21:58,107 --> 00:22:09,107
+As an example, if we have, for example, a dataset known as Fruid,
+
+106
+00:22:32,596 --> 00:22:55,339
+Açık, filogenetik ağaçlar ve gençlerle
+
+107
+00:22:55,571 --> 00:23:16,843
+ve 6'ı 12'e 11'e
+
+108
+00:23:20,115 --> 00:23:27,115
+As we said, resmius, which are not in a motif, are background.
+
+109
+00:23:31,115 --> 00:23:40,115
+Frequencies are used to determine probability of finding size at any position in a sequence to fit motif model.
+
+110
+00:23:41,115 --> 00:23:45,115
+As I already described, basic, the frequency will be.
+
+111
+00:23:45,940 --> 00:24:08,428
+Bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebep
+
+112
+00:24:37,587 --> 00:24:43,587
+Bu, bu ciklisinin çoğunluğunu devam edebilecek.
+
+113
+00:24:58,387 --> 00:25:24,427
+...
+
+114
+00:25:31,604 --> 00:25:33,884
+Multiple-aligned sequences.
+
+115
+00:25:37,619 --> 00:25:41,659
+ve a random determined block,
+
+116
+00:25:42,819 --> 00:25:48,219
+in which the block length is six, as we see here.
+
+117
+00:25:48,219 --> 00:25:56,019
+These blocks are formed by these highlighted
+
+118
+00:25:57,859 --> 00:26:01,659
+sub-sequences of each seconds.
+
+119
+00:26:02,067 --> 00:26:23,372
+Bu ilk bir
+
+120
+00:26:23,476 --> 00:26:44,236
+Seqücüsü 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26.
+
+121
+00:26:45,811 --> 00:26:47,811
+29.
+
+122
+00:26:47,811 --> 00:26:55,811
+Bu, bu, basically a block of 29 x 6.
+
+123
+00:26:55,811 --> 00:27:03,811
+You can consider as a matrix of 29 rows and 6 columns.
+
+124
+00:27:03,811 --> 00:27:07,811
+We begin with an initial random alignment.
+
+125
+00:27:07,811 --> 00:27:08,811
+This is okay.
+
+126
+00:27:08,811 --> 00:27:11,811
+This is randomly choosing regions.
+
+127
+00:27:21,748 --> 00:27:24,667
+Alignment, we have already seen.
+
+128
+00:27:25,548 --> 00:27:31,627
+The frequency of each base is calculated.
+
+129
+00:27:31,627 --> 00:27:35,387
+Now we see how these frequencies are calculated.
+
+130
+00:27:36,307 --> 00:27:42,387
+In this case, the motif we are searching for is six bases wide, as I already said.
+
+131
+00:27:42,387 --> 00:27:46,988
+The motif is six.
+
+132
+00:27:47,220 --> 00:27:50,220
+29 sekundes.
+
+133
+00:27:50,220 --> 00:27:52,220
+Ve bu seferinde
+
+134
+00:28:12,372 --> 00:28:21,312
+Now, if we calculate the total counts of frequencies, we get the following matrix or information.
+
+135
+00:28:21,312 --> 00:28:34,452
+Now, what we have in this table, I would say table, we have the nucleotide, this is a DNA sequence.
+
+136
+00:28:35,112 --> 00:28:37,472
+These are nucleotide ACGT.
+
+137
+00:28:38,836 --> 00:28:59,635
+Bu bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde, bir bölümde.
+
+138
+00:29:11,220 --> 00:29:11,940
+basically
+
+139
+00:29:11,940 --> 00:29:14,000
+each column
+
+140
+00:29:14,000 --> 00:29:16,980
+for example
+
+141
+00:29:16,980 --> 00:29:20,900
+total number of residues
+
+142
+00:29:20,900 --> 00:29:21,700
+in the
+
+143
+00:29:21,700 --> 00:29:24,380
+total number of A's
+
+144
+00:29:24,380 --> 00:29:28,480
+in the row
+
+145
+00:29:34,996 --> 00:29:37,675
+ve total number of c's etc.
+
+146
+00:29:37,675 --> 00:29:41,436
+Bu, mesela bu, total number of zeros
+
+147
+00:29:41,436 --> 00:29:43,195
+10046,
+
+148
+00:29:43,195 --> 00:29:46,476
+ve total number of
+
+149
+00:29:48,996 --> 00:29:51,076
+resoluyesi in this
+
+150
+00:29:51,715 --> 00:29:53,276
+first column etc.
+
+151
+00:29:53,276 --> 00:29:56,356
+Let's see and go back how to calculate
+
+152
+00:29:56,356 --> 00:29:59,036
+how to fill this table.
+
+153
+00:30:12,019 --> 00:30:20,779
+Sel bir, or sorry, nükleot, is in,
+
+154
+00:30:25,107 --> 00:30:29,087
+Position 1, you got it.
+
+155
+00:30:32,660 --> 00:30:35,084
+Çünkü, daha kolayca
+
+156
+00:30:41,044 --> 00:30:49,463
+I go to the block and determine the number of a's in position one.
+
+157
+00:30:49,923 --> 00:30:51,364
+This is the first one.
+
+158
+00:30:52,723 --> 00:30:54,144
+Let me change the color.
+
+159
+00:30:59,443 --> 00:31:04,563
+Position 1, searching.
+
+160
+00:31:07,124 --> 00:31:13,284
+Position 1 again, A.
+
+161
+00:31:15,364 --> 00:31:20,403
+Position 1, A.
+
+162
+00:31:21,971 --> 00:31:27,971
+ve 1,2,3,4,5,6
+
+163
+00:31:27,971 --> 00:31:31,971
+ok, birerde de 6
+
+164
+00:31:31,971 --> 00:31:35,971
+ve nisinde de c'e in position 1
+
+165
+00:31:35,971 --> 00:31:45,971
+ve 1,1,1,1,1,1,1,1
+
+166
+00:31:45,971 --> 00:31:47,723
+etc.
+
+167
+00:31:48,339 --> 00:31:55,339
+Next cell will be number of c's, then next cell will be other letters.
+
+168
+00:31:55,339 --> 00:32:00,339
+Then for the position, we do the same thing.
+
+169
+00:32:00,339 --> 00:32:04,339
+3, 4, 5, 6.
+
+170
+00:32:04,339 --> 00:32:08,339
+Then for the background, we will come for the background.
+
+171
+00:32:08,339 --> 00:32:13,339
+Background piece, basically, the old...
+
+172
+00:32:15,763 --> 00:32:45,312
+Açık
+
+173
+00:32:38,612 --> 00:32:43,112
+Etc. Ok, this is how these frequencies are determined.
+
+174
+00:32:45,372 --> 00:32:51,451
+So, at the end, we have such a table.
+
+175
+00:32:54,271 --> 00:32:58,612
+This is what we mean by determining the frequencies.
+
+176
+00:32:59,332 --> 00:33:02,672
+Now, we have all the numbers.
+
+177
+00:33:34,003 --> 00:33:36,003
+Numerical or categorical.
+
+178
+00:33:39,003 --> 00:33:42,003
+Categorical in nature, which is nominal,
+
+179
+00:33:44,003 --> 00:33:46,003
+not even ordinal.
+
+180
+00:33:46,003 --> 00:33:52,003
+Then we convert this nominal data type, categorical data type,
+
+181
+00:33:52,003 --> 00:33:54,003
+into a numerical one,
+
+182
+00:33:55,003 --> 00:33:56,003
+using frequency.
+
+183
+00:33:56,003 --> 00:33:58,003
+This is the first step.
+
+184
+00:33:58,003 --> 00:34:00,003
+This is the data.
+
+185
+00:34:01,428 --> 00:34:03,428
+size, real point.
+
+186
+00:34:08,307 --> 00:34:36,939
+Bu, bu
+
+187
+00:34:41,523 --> 00:34:42,523
+Ok.
+
+188
+00:34:44,523 --> 00:34:50,523
+In terms of the observed frequencies, covalentik ağaçlar.
+
+189
+00:34:50,523 --> 00:34:58,523
+And this is basically, and now the table we obtained after the conversion.
+
+190
+00:35:06,804 --> 00:35:13,804
+ve
+
+191
+00:35:13,804 --> 00:35:29,804
+bu
+
+192
+00:35:56,659 --> 00:35:57,659
+Şöööö.
+
+193
+00:36:02,240 --> 00:36:09,240
+bu
+
+194
+00:36:01,492 --> 00:36:28,588
+Bu, bu
+
+195
+00:36:30,036 --> 00:36:35,179
+İzledi bir nükleotitler ve gen ifadesi konuları
+
+196
+00:36:38,835 --> 00:36:40,076
+İntişiz.
+
+197
+00:36:43,443 --> 00:36:51,844
+279 divided by 1046.
+
+198
+00:36:54,724 --> 00:36:59,755
+Okay, if you just do this.
+
+199
+00:37:03,731 --> 00:37:11,412
+279 divided by 1046.
+
+200
+00:37:11,412 --> 00:37:22,931
+We have almost 0.2667, this is around 0.267.
+
+201
+00:37:22,931 --> 00:37:25,891
+And for the rest of it,
+
+202
+00:37:26,996 --> 00:37:37,996
+İzlediğiniz için, c2080, 1046, 125, 1046, 1060, 1046, et cetera.
+
+203
+00:38:20,115 --> 00:38:22,115
+Ağır,
+
+204
+00:38:25,115 --> 00:38:26,795
+sometimes
+
+205
+00:38:31,635 --> 00:38:39,135
+Bu approach can create problems if we have some sometimes zero pounds.
+
+206
+00:38:43,827 --> 00:39:07,211
+Bu, eksempel, birçok olarak 0'a 0'
+
+207
+00:39:14,420 --> 00:39:21,300
+A number which is known as pseudo-counts are introduced to the observed counts.
+
+208
+00:39:24,480 --> 00:39:24,820
+Okay.
+
+209
+00:39:26,880 --> 00:39:40,600
+In this case, the frequency of nükleotit A in column C becomes or can be calculated by using the following formula.
+
+210
+00:39:42,579 --> 00:39:53,859
+Instead of directly number of A's, number of total residues ratio, we have slightly modified ratio.
+
+211
+00:39:53,859 --> 00:40:02,960
+We simply add B, C, A and B, C values to actual N, C, A and N, C.
+
+212
+00:40:08,052 --> 00:40:12,052
+PCA is power of reach of resubri A in column C.
+
+213
+00:40:13,052 --> 00:40:21,052
+NC is count of AC in column C. BC is pseudo count of AC in column C.
+
+214
+00:40:25,052 --> 00:40:32,052
+NC is total count in column C. BC is total pseudo count in column C.
+
+215
+00:40:35,635 --> 00:40:41,695
+Çoğuzi'nin a pseudocount is arbitrary, there is no specific rule for it.
+
+216
+00:40:42,655 --> 00:40:49,855
+For example, assuming that four nucleotides have equal probabilities,
+
+217
+00:40:50,855 --> 00:40:56,175
+if the total pseudocount is chosen as one,
+
+218
+00:41:02,516 --> 00:41:05,115
+Bc'ı bölgeye 4,
+
+219
+00:41:05,296 --> 00:41:07,496
+çünkü eşitliğiyle
+
+220
+00:41:07,496 --> 00:41:09,576
+ve eşitliğiyle
+
+221
+00:41:09,576 --> 00:41:20,576
+eşitliğiyle
+
+222
+00:41:20,576 --> 00:41:23,576
+eşitliği
+
+223
+00:41:23,576 --> 00:41:34,339
+bu
+
+224
+00:41:32,755 --> 00:41:38,076
+Bu, eksempel, bu konuda,
+
+225
+00:41:40,955 --> 00:41:45,675
+bu konuda, bu konuda,
+
+226
+00:41:46,355 --> 00:41:57,675
+bu konuda,
+
+227
+00:41:58,675 --> 00:42:28,615
+bu
+
+228
+00:42:24,052 --> 00:42:28,052
+Bu da bu da aynı,
+
+229
+00:42:28,052 --> 00:42:32,052
+ama bu da aynı,
+
+230
+00:42:32,052 --> 00:42:36,052
+bu da aynı,
+
+231
+00:42:36,052 --> 00:42:38,052
+bu da aynı.
+
+232
+00:42:38,052 --> 00:42:42,052
+Bu da aynı,
+
+233
+00:42:42,052 --> 00:42:44,052
+bu da aynı,
+
+234
+00:42:44,052 --> 00:42:46,052
+bu da aynı.
+
+235
+00:42:46,052 --> 00:42:51,756
+Bu da aynı.
+
+236
+00:43:07,827 --> 00:43:14,708
+Ok, this is the second step, formating to probability values.
+
+237
+00:43:16,708 --> 00:43:23,268
+First, frequency are determined, then formating to probabilities.
+
+238
+00:43:27,027 --> 00:43:37,287
+So, in the expectation step, the residue frequencies for the motif are used to estimate the composition of the motif site.
+
+239
+00:43:39,148 --> 00:43:48,887
+So, actually, this step attempts to maximally discriminate between sequins within and not within the site.
+
+240
+00:43:50,387 --> 00:44:01,188
+Bu, each segment, each possible motif location is considered in order to find the most probable location, given the current motif.
+
+241
+00:44:02,787 --> 00:44:06,188
+Let's consider the first sequence.
+
+242
+00:44:08,787 --> 00:44:09,787
+This one.
+
+243
+00:44:10,987 --> 00:44:14,387
+If we just go back, review.
+
+244
+00:44:20,019 --> 00:44:25,519
+İlk bir sekundi, bu bir yüze, bu bir yüze.
+
+245
+00:44:26,519 --> 00:44:34,519
+İlk bir sekundi, filogenetik ağaçlar ve gen ifadesi konuları.
+
+246
+00:44:46,356 --> 00:44:53,356
+İzlediğiniz için, bu kadar da, 36 kısımda.
+
+247
+00:45:35,092 --> 00:45:40,592
+If we consider this eight site, C-A-G-T-T-A,
+
+248
+00:45:41,332 --> 00:45:52,092
+which is the number of eight sequences in the multiply-aligned sequences,
+
+249
+00:45:53,092 --> 00:45:56,872
+in order to calculate site spot,
+
+250
+00:45:58,771 --> 00:46:02,331
+Observed frequency table is used.
+
+251
+00:46:02,331 --> 00:46:06,132
+We start with observed frequency tables.
+
+252
+00:46:06,132 --> 00:46:14,371
+And by using this table, we calculate sites for.
+
+253
+00:46:14,371 --> 00:46:24,132
+And here is the table to use, basically.
+
+254
+00:46:33,235 --> 00:46:41,963
+Bu, bu
+
+255
+00:46:45,940 --> 00:46:53,099
+Here is the score of C, A, G, T, T, A.
+
+256
+00:46:54,899 --> 00:46:58,099
+Probabiliteti of C.
+
+257
+00:47:03,987 --> 00:47:10,048
+Probabiliteliğe C at position 1, at position 1, we have C.
+
+258
+00:47:10,708 --> 00:47:17,447
+Probabiliteliğe C at position, sorry, Probabiliteliğe A at position 2.
+
+259
+00:47:18,027 --> 00:47:19,527
+This is the previous table.
+
+260
+00:47:20,387 --> 00:47:24,728
+Probabiliteliğe C in this probability table.
+
+261
+00:47:26,612 --> 00:47:30,871
+At position 1, determined to be 0.263.
+
+262
+00:47:31,652 --> 00:47:32,811
+And we take X.
+
+263
+00:47:33,552 --> 00:47:37,972
+Probabilitiyoğf A, because in the second position we have A.
+
+264
+00:47:39,411 --> 00:47:41,192
+This taken from here.
+
+265
+00:47:43,231 --> 00:47:45,552
+This is taken from here.
+
+266
+00:47:46,032 --> 00:47:47,311
+Probabilitiyoğf G.
+
+267
+00:47:48,731 --> 00:47:50,572
+At the respective position.
+
+268
+00:47:51,572 --> 00:47:53,871
+And this one is taken from here.
+
+269
+00:47:54,835 --> 00:48:01,195
+Bu bir şekilde, bu bir şekilde,
+
+270
+00:48:01,195 --> 00:48:22,155
+bu şekilde,
+
+271
+00:48:24,532 --> 00:48:28,532
+bu
+
+272
+00:48:28,532 --> 00:48:45,675
+bir
+
+273
+00:48:53,684 --> 00:48:56,684
+Now in this table, we have...
+
+274
+00:49:02,840 --> 00:49:10,840
+bir
+
+275
+00:49:02,483 --> 00:49:17,324
+Bu, bu
+
+276
+00:49:21,523 --> 00:49:28,523
+ve
+
+277
+00:49:28,523 --> 00:49:31,523
+bu
+
+278
+00:49:31,523 --> 00:49:45,675
+çok
+
+279
+00:49:47,059 --> 00:50:00,059
+Now for CAG's, the scores, we check the scores we obtain and we realize that this one is the maximum score, comparing to the other scores.
+
+280
+00:50:02,059 --> 00:50:12,059
+So once we give for all sequences, we take,
+
+281
+00:50:35,728 --> 00:50:38,923
+çok
+
+282
+00:50:35,380 --> 00:51:05,003
+Bu, bu
+
+283
+00:51:10,132 --> 00:51:22,532
+A subseqüence with maximum score and we choose this one for the next one. We do this for each sequence in this multiple alignment.
+
+284
+00:51:27,891 --> 00:51:41,355
+Bu, bu
+
+285
+00:51:44,884 --> 00:51:49,884
+Çünkü bir nil block var,
+
+286
+00:51:49,884 --> 00:51:55,284
+ilk yüzeyken, ilk yüzeyken,
+
+287
+00:51:55,284 --> 00:51:57,083
+nil block var.
+
+288
+00:51:57,083 --> 00:52:02,284
+Nil frequency var,
+
+289
+00:52:02,284 --> 00:52:04,724
+ve o zaman,
+
+290
+00:52:08,916 --> 00:52:13,416
+Expectation maximization cycle will be repeated.
+
+291
+00:52:14,115 --> 00:52:18,815
+Until the results converge on a set of motifs.
+
+292
+00:52:19,315 --> 00:52:29,016
+If we say for example, we did some 50 cycles, at the end of 50 cycles,
+
+293
+00:52:30,215 --> 00:52:34,115
+you are always finding the same blocks.
+
+294
+00:52:34,420 --> 00:52:41,420
+Bu, BLAST do not change, FASTABiyoenformatiğine,
+
+295
+00:53:01,588 --> 00:53:02,148
+şey
+
+296
+00:53:09,204 --> 00:53:09,884
+Bir form.
+
+297
+00:53:14,003 --> 00:53:35,531
+İzlediğiniz için, bu,
+
+298
+00:53:36,115 --> 00:53:40,115
+Bu bir şekilde.
+
+299
+00:53:40,115 --> 00:53:42,115
+Ve bu bir şekilde.
+
+300
+00:53:42,115 --> 00:53:46,115
+Ve 29 seçenek için.
+
+301
+00:53:46,115 --> 00:53:48,115
+Ve bu 29 seçenek için.
+
+302
+00:53:48,115 --> 00:53:50,115
+Ve bu bir şekilde.
+
+303
+00:53:50,115 --> 00:54:02,115
+Bir şekilde.
+
+304
+00:54:04,275 --> 00:54:07,675
+Expectation-maximization-ergon.
+
+305
+00:54:14,036 --> 00:54:18,036
+Evet, şimdi
+
+306
+00:54:18,036 --> 00:54:21,771
+paketlerle altyazı.
+
+307
+00:54:28,628 --> 00:54:31,148
+We will mention these packages later.
+
+308
+00:54:31,788 --> 00:54:35,588
+Just let me give a break here.
+
+309
+00:54:36,108 --> 00:54:36,907
+10 years break.
+
+310
+01:04:17,972 --> 01:04:26,292
+Ok, we said several available programs which use expectation maximizations.
+
+311
+01:04:26,292 --> 01:04:29,292
+One is...
+
+312
+01:04:35,027 --> 01:04:49,727
+Meme program, which uses expectation maximization algorithms, as explained, this is the core approach they use.
+
+313
+01:04:49,727 --> 01:05:00,427
+This Meme, meaning stands for multiple expectation maximization formative and station.
+
+314
+01:05:03,092 --> 01:05:10,092
+Bu program developed that uses any EM algorithm.
+
+315
+01:05:10,092 --> 01:05:19,092
+Variations to this software, which is para-MEME.
+
+316
+01:05:19,092 --> 01:05:23,092
+Searches for blocks using EM algorithm.
+
+317
+01:05:23,092 --> 01:05:29,092
+Meta-MEME searches for profiles using hidden micro-models.
+
+318
+01:05:30,547 --> 01:05:43,347
+Hidem-Marco model, another statistical approach, which we will mention very soon.
+
+319
+01:05:46,347 --> 01:05:56,747
+Basically, this MEAM algorithm of case one or more ungept happens in a single DNA protein sequence or in a series of sequences.
+
+320
+01:05:58,900 --> 01:06:07,140
+A search is conducted on a variety of moives with, in order to determine the most likely width for the profile,
+
+321
+01:06:08,900 --> 01:06:19,140
+is likely, who is based on the log likely width score calculated after the EM algorithm, which we have already mentioned.
+
+322
+01:06:27,699 --> 01:06:36,019
+Bu, motif-based sequence analysis tools, as you mentioned, is the block diagram of these algorithms.
+
+323
+01:06:36,019 --> 01:06:47,539
+I am not going to describe each blocks or whatever, but it is just to give you how these algorithms are constructed,
+
+324
+01:06:47,539 --> 01:06:53,699
+and just idea about how these algorithms are constructed.
+
+325
+01:06:57,907 --> 01:07:04,715
+ve daha fazla bilgi verilmiştir.
+
+326
+01:07:11,731 --> 01:07:36,619
+Bir de
+
+327
+01:07:37,427 --> 01:07:44,827
+Z is edit to the previous one, 0 or 1 expected occurrence per sequence.
+
+328
+01:07:44,827 --> 01:07:50,228
+Is it some sort of generalization of the oops or working basically?
+
+329
+01:07:50,228 --> 01:07:55,427
+Assumes 0 or 1 motif occurrences per data sequence.
+
+330
+01:07:55,427 --> 01:08:01,291
+And the other one is TCN2 component mixture model.
+
+331
+01:08:01,427 --> 01:08:57,771
+Bu, bu
+
+332
+01:08:59,444 --> 01:09:03,884
+ve diğer approach var Gibbs'in sampling.
+
+333
+01:09:48,532 --> 01:09:50,532
+ve goviz,
+
+334
+01:09:51,652 --> 01:10:02,451
+to find most probable pattern by sampling from motive probabilities to maximized model to background probability ratio.
+
+335
+01:10:29,939 --> 01:10:37,979
+Olamazı, bu şekilde de
+
+336
+01:10:37,979 --> 01:10:40,939
+ve
+
+337
+01:11:21,363 --> 01:11:23,363
+İçeride bir şekilde,
+
+338
+01:11:26,163 --> 01:11:30,563
+model probability to background probability ratio
+
+339
+01:11:30,563 --> 01:11:32,963
+is normalized and weighted.
+
+340
+01:11:34,963 --> 01:11:38,763
+Motive start position choosing based on a random sampling
+
+341
+01:11:38,763 --> 01:11:40,563
+with the given weights.
+
+342
+01:11:41,763 --> 01:11:46,763
+This part is different than expectation maximization algorithm.
+
+343
+01:11:51,220 --> 01:11:58,220
+Bu sürençlik,
+
+344
+01:11:58,220 --> 01:12:15,220
+ve gençlik,
+
+345
+01:12:18,228 --> 01:12:45,068
+Bu, bu
+
+346
+01:12:45,268 --> 01:13:11,948
+...
+
+347
+01:13:13,043 --> 01:13:17,823
+A range of motif sizes can be explored in Gipsetmint as well.
+
+348
+01:13:17,823 --> 01:13:28,323
+Gipsetmint can also be extended to search for multiple motifs in the same set of sequences,
+
+349
+01:13:29,144 --> 01:13:33,343
+or to find a pattern in only a fraction of the sequences.
+
+350
+01:13:34,463 --> 01:13:40,064
+Additionally, certain model-specific parameters can be enforced.
+
+351
+01:13:41,684 --> 01:13:44,684
+Angev, such as anevan sequençüsü,
+
+352
+01:13:45,684 --> 01:13:47,684
+which is called DNA sequençüsü.
+
+353
+01:13:48,684 --> 01:13:53,684
+We mentioned hidden Markov models.
+
+354
+01:14:01,427 --> 01:14:07,587
+Hidden Markov Models are programmaskid models for studying seconds of symbols, basically.
+
+355
+01:14:11,347 --> 01:14:15,868
+Actually, Hidden Markov Model has its roots in speech processing.
+
+356
+01:14:16,028 --> 01:14:22,827
+Originally, it was popularized in speech processing applications.
+
+357
+01:14:23,699 --> 01:14:30,219
+Hidden Markov Models can model matches, mismatches, insertions, and deletions of symbols.
+
+358
+01:14:32,680 --> 01:14:39,420
+So as I said, it's basically people rooted in speech recognition problems.
+
+359
+01:14:40,420 --> 01:14:43,639
+In speech recognition, the problem is the phonemes.
+
+360
+01:14:45,539 --> 01:14:49,579
+Of these words that have been spoken in a particular time frame.
+
+361
+01:15:53,747 --> 01:16:02,747
+İdiagland-Special Commission is to take in a spoken word and to try to fit it to a specific model of possible words.
+
+362
+01:16:02,747 --> 01:16:05,747
+So that's the İdiagland-Special Commission.
+
+363
+01:16:06,747 --> 01:16:12,747
+This is basically very close to what the brain does.
+
+364
+01:16:14,747 --> 01:16:17,747
+Problems in sequence analysis are similar.
+
+365
+01:16:21,011 --> 01:16:26,612
+Bu, amino acid sequins may want to determine the protein family to which it belongs.
+
+366
+01:16:28,451 --> 01:16:34,572
+The amino acid sequins can be treated similarly to the speed signal in a given queen,
+
+367
+01:16:35,051 --> 01:16:38,251
+and the amino acids can be treated as the conyums.
+
+368
+01:16:39,072 --> 01:16:40,851
+We make an analogy here.
+
+369
+01:16:42,931 --> 01:16:52,152
+A probabilistic model, which generates a sequence where the probability of a symbol depends upon the previous symbol.
+
+370
+01:16:54,032 --> 01:16:58,832
+Eptrafic light is an example of a Markov chain, basically.
+
+371
+01:17:00,951 --> 01:17:06,692
+A Markov chain can be used to model a random DNA sequence where there are four states.
+
+372
+01:17:07,252 --> 01:17:24,716
+İzlediğiniz için, birçok
+
+373
+01:17:26,195 --> 01:17:53,420
+Bir sonraki bir şekilde, bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir
+
+374
+01:17:56,467 --> 01:17:59,167
+Next, we have an example.
+
+375
+01:18:00,167 --> 01:18:02,167
+This is Michael chain.
+
+376
+01:18:02,967 --> 01:18:07,568
+For this DNA sequences.
+
+377
+01:18:09,167 --> 01:18:10,768
+And we have four
+
+378
+01:18:13,467 --> 01:18:17,368
+Sequences here and possible transitions.
+
+379
+01:18:18,967 --> 01:18:23,167
+It looks like a state diagram basically for...
+
+380
+01:18:23,283 --> 01:18:25,843
+Sequential digital circuit design.
+
+381
+01:18:26,724 --> 01:18:31,323
+Here are four states and these are the possible transitions shown here.
+
+382
+01:18:33,224 --> 01:18:36,423
+Even next one could be A to A.
+
+383
+01:18:37,503 --> 01:18:38,743
+After the start,
+
+384
+01:18:40,743 --> 01:18:49,243
+position next to A to A or A to N or A to C or A to G.
+
+385
+01:18:49,844 --> 01:18:58,380
+Bu, G'de bu,
+
+386
+01:19:01,747 --> 01:19:15,407
+Bu bir şeyin de bu bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir
+
+387
+01:19:41,716 --> 01:19:45,596
+SP'ye deyde deyde de sadece bir birçok birçok.
+
+388
+01:20:20,307 --> 01:20:27,708
+İzlediğiniz için, cegi çok çok popular, cegi.
+
+389
+01:20:27,708 --> 01:20:30,247
+Yani cegi.
+
+390
+01:20:30,247 --> 01:20:35,247
+İzlediğiniz için cegi.
+
+391
+01:20:35,247 --> 01:20:43,768
+Cegi isimli, cegi isimli, cegi isimli, cegi isimli, cegi isimli, cegi.
+
+392
+01:20:45,395 --> 01:20:49,216
+İndi, yöpul, sekundes, hizalama, diğer region.
+
+393
+01:20:50,435 --> 01:20:57,775
+Here, p-sim indicates that C and G are connected by a phosphodiester bond.
+
+394
+01:20:59,216 --> 01:21:03,376
+C and G are bonded by phosphodiester.
+
+395
+01:21:05,155 --> 01:21:08,395
+C, P, G means actually C, G, but...
+
+396
+01:21:35,283 --> 01:21:37,443
+cpg ismektor nol.
+
+397
+01:21:38,563 --> 01:21:41,763
+As a result, there will be an overabundance of the
+
+398
+01:21:41,763 --> 01:21:45,763
+tnucleotide tg and an underabundance of the
+
+399
+01:21:45,763 --> 01:21:47,763
+tnucleotide cg.
+
+400
+01:21:48,963 --> 01:21:51,603
+If we ignore the start and end states,
+
+401
+01:21:51,603 --> 01:21:56,963
+for now we can see that there are 16 different transitions.
+
+402
+01:21:58,771 --> 01:22:06,771
+A study of regions of genomic ENA has determined normal genomic transition polarities following,
+
+403
+01:22:08,771 --> 01:22:18,771
+where the from node is labeled along the rows to the left and the two node is labeled along the problem.
+
+404
+01:22:19,771 --> 01:22:22,771
+This is the typical table.
+
+405
+01:22:24,564 --> 01:22:27,724
+State Table, basically, Markov için State Table.
+
+406
+01:22:28,524 --> 01:22:30,564
+From, kanalı iti yaratı.
+
+407
+01:22:39,252 --> 01:22:54,692
+A to A, A to C, this is from to to A to G, A to T, then C to A, C to C, etc.
+
+408
+01:22:54,932 --> 01:22:56,352
+These transition probabilities.
+
+409
+01:23:09,011 --> 01:23:17,332
+Bu model shown here, can then assign these ways to the edges of the graphs.
+
+410
+01:23:17,332 --> 01:23:36,332
+We have graphs here, excluding these start greens and reds, when we exclude these green transitions from start to the end, we have total 16, 2 here.
+
+411
+01:23:37,395 --> 01:23:53,315
+2, 4, 6, 8, 10, 12, 13, 14, 15, 16 transitions.
+
+412
+01:24:04,340 --> 01:24:12,800
+On this arrows, for example, A to A will be 0.3, et cetera.
+
+413
+01:24:14,979 --> 01:24:20,920
+Okay, and this is basically Marco, Schoen, and Mawo.
+
+414
+01:24:21,460 --> 01:24:27,880
+In some regions of the genome, such as the combative region of genes, methylation is suppressed.
+
+415
+01:24:28,756 --> 01:24:33,796
+İzlediğiniz için, deniklerotit Cg is found in greater quantities.
+
+416
+01:24:34,855 --> 01:24:40,096
+In fact, deniklerotit Cngr are found to a greater degree than elsewhere in the genome.
+
+417
+01:24:41,176 --> 01:24:51,855
+So, a study of regions of gen with DNA where Cdg is not exist and determined the transition colorities to be the following.
+
+418
+01:24:53,476 --> 01:24:55,096
+This is another one.
+
+419
+01:24:58,963 --> 01:25:06,963
+A nev model, just like the one above Ken Harris' transition properties assigned according to nev cable.
+
+420
+01:25:06,963 --> 01:25:08,463
+This is nev cable.
+
+421
+01:25:08,463 --> 01:25:12,963
+The values are different than the other one, as you noticed.
+
+422
+01:25:13,963 --> 01:25:17,963
+Now, we have two different models.
+
+423
+01:25:17,963 --> 01:25:22,963
+The first, in which CPGI's lens are absent.
+
+424
+01:25:22,963 --> 01:25:23,963
+The first one.
+
+425
+01:25:37,235 --> 01:25:45,235
+İlk model olarak, non-CPG model, ve 2.cpg model olarak, cpg model olarak,
+
+426
+01:25:45,235 --> 01:25:49,235
+ve hizmetik bir şekilde nasıl birleştirebiliriz?
+
+427
+01:25:49,235 --> 01:25:54,235
+Bu, non-CPG model olarak cpg model olarak,
+
+428
+01:25:54,235 --> 01:25:56,235
+ve birçok model olarak,
+
+429
+01:25:56,235 --> 01:26:04,715
+birçok model olarak,
+
+430
+01:26:05,076 --> 01:26:10,155
+Bence only on the previous symbol S at position, S p minus 5.
+
+431
+01:26:14,739 --> 01:26:20,860
+İzlediğiniz için, bu, birçok, birçok, birçok.
+
+432
+01:26:38,195 --> 01:26:43,195
+ve genelize, as multiplication, formula.
+
+433
+01:26:43,195 --> 01:26:51,195
+As remember, this pi is a multiplication formula, sequential multiplication.
+
+434
+01:26:51,195 --> 01:26:53,195
+Sigma is addition.
+
+435
+01:26:53,195 --> 01:26:57,195
+P is multiplication.
+
+436
+01:26:57,195 --> 01:27:02,195
+In which...
+
+437
+01:27:02,739 --> 01:27:09,360
+A is the probability from residue at position e-1 to the residue at position i.
+
+438
+01:27:15,859 --> 01:27:29,859
+Let's consider for now that in the non-CPG models, probability of A and probability of T found to be 0.3, probability of C and probability of G found to be 0.2.
+
+439
+01:27:29,859 --> 01:27:39,619
+By taking these probabilities, we say that A and T are more probable in this respect.
+
+440
+01:27:44,083 --> 01:27:50,523
+Çünkü her probabilisinin eşit, her probabilisinin 1'e
+
+441
+01:27:50,523 --> 01:28:01,564
+ve her probabilisinin 0.25'e
+
+442
+01:28:10,804 --> 01:28:18,804
+The probability for this sequence is simply multiplication of all probabilities.
+
+443
+01:28:25,108 --> 01:28:32,108
+Bu non-CPG model, bu kadar küçük bir numar var.
+
+444
+01:28:36,108 --> 01:28:44,108
+Bu CPG model, bu kadar küçük bir numar var.
+
+445
+01:28:52,756 --> 01:28:56,756
+More, the CPG model, rather than the CPG model.
+
+446
+01:29:01,395 --> 01:29:15,775
+So here, one thing to notice is that if we have a longer say, sequence, it will be much, much, much smaller.
+
+447
+01:29:15,775 --> 01:29:23,515
+Because it is multiplication of fractional numbers, numbers, fractional numbers less than zero.
+
+448
+01:29:24,136 --> 01:29:26,395
+So it will easily...
+
+449
+01:29:30,484 --> 01:29:36,884
+bu kadar 0'e bu kadar 0'e bu kadar
+
+450
+01:29:36,884 --> 01:29:40,084
+bir noktaların bir noktalarına baktığınızda
+
+451
+01:29:43,315 --> 01:29:44,139
+Evet.
+
+452
+01:29:48,564 --> 01:29:53,084
+Bu sorunla, nasıl farklı bir cpg ve cpg modelleri var,
+
+453
+01:29:53,084 --> 01:29:54,684
+birbirine birbirine var.
+
+454
+01:29:54,684 --> 01:29:56,684
+Bu sorunla,
+
+455
+01:29:56,684 --> 01:30:02,844
+bu sorunla,
+
+456
+01:30:02,844 --> 01:30:05,004
+bir model olarak,
+
+457
+01:30:05,004 --> 01:30:05,356
+bir cpg modelleri var.
+
+458
+01:30:32,819 --> 01:30:40,819
+Bu birçok birçok.
+
+459
+01:30:41,819 --> 01:30:49,819
+Bu birçok.
+
+460
+01:30:53,844 --> 01:31:06,699
+Bu tabla, bu tabla, bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir
+
+461
+01:31:19,475 --> 01:31:26,595
+Another important matrix we use is a position-specific scoring matrix.
+
+462
+01:31:29,315 --> 01:31:32,755
+In this position-specific scoring matrices,
+
+463
+01:31:36,180 --> 01:31:46,180
+Information query in order to gain a measure of how much information is contained within each column of a node alignment is impropriated.
+
+464
+01:31:48,180 --> 01:31:57,180
+The information contained within a PSSN is a logarithmic transformation of the frequency of each raised-bind motif.
+
+465
+01:31:58,228 --> 01:32:08,188
+Bir problem with creating the model of a sequence alignment that is then used to serve databases is that there is a bias toward training data.
+
+466
+01:32:09,547 --> 01:32:16,408
+Some residues may be underrepresented, therefore there might be some bias.
+
+467
+01:32:17,268 --> 01:32:19,547
+Or other columns may be too conserved.
+
+468
+01:32:23,412 --> 01:32:30,412
+İzlediğiniz için, çöndromsler için kullanımlı, çöndromsler için kullanımlı.
+
+469
+01:32:48,532 --> 01:33:10,699
+Bu kerti estimator PECA'i FCA'i
+
+470
+01:33:11,347 --> 01:34:59,020
+Bu, bu
+
+471
+01:35:26,323 --> 01:35:31,643
+İlop, 24, 24, 24, 24.
+
+472
+01:35:57,779 --> 01:36:10,539
+Bu da bir anonelde
+
+473
+01:36:15,028 --> 01:36:23,948
+A measure of uncertainty, probably guessed from the definitions, is basically entropy.
+
+474
+01:36:53,332 --> 01:36:57,332
+Bu konceptı bir konceptı bir konceptı.
+
+475
+01:37:00,332 --> 01:37:03,332
+Bu konceptı bir konceptı,
+
+476
+01:37:03,332 --> 01:37:07,332
+ve konceptı bir konceptı,
+
+477
+01:37:07,332 --> 01:37:11,332
+ve konceptı bir konceptı.
+
+478
+01:37:12,332 --> 01:37:14,332
+Bu konceptı,
+
+479
+01:37:14,332 --> 01:37:18,332
+konceptı bir konceptı.
+
+480
+01:38:05,140 --> 01:38:09,500
+Just let me give you what a sequence logon is.
+
+481
+01:38:09,500 --> 01:38:15,580
+And we finalize with a local multiple sequence alignment.
+
+482
+01:38:15,580 --> 01:38:18,580
+Subject.
+
+483
+01:38:18,580 --> 01:38:30,140
+Sequence logos are one way to do this visualization by illustrating the information in each form of a motif.
+
+484
+01:38:31,731 --> 01:38:38,731
+Açık bir graph can indicate, ve residu ve kolumlari yöntemler ve en önemli konuları,
+
+485
+01:38:38,731 --> 01:38:42,731
+ve en önemli konuları, ve en önemli konuları,
+
+486
+01:38:59,956 --> 01:39:04,956
+As the amount by which uncertainty has been decreased.
+
+487
+01:39:07,956 --> 01:39:21,956
+If the frequency in the column is less than the frequency in the background, then a negative relative entropy can be computed, which can be shown by an inverted character in the logo.
+
+488
+01:39:22,956 --> 01:39:26,956
+Here is a second logo. Basically the height.
+
+489
+01:39:51,796 --> 01:39:52,735
+13 günlük.
+
+490
+01:40:14,484 --> 01:40:16,984
+Ok, this is the sequence logos.
+
+491
+01:40:16,984 --> 01:40:25,484
+We have the relative information on L, E, much more information on W, etc.
+
+492
+01:40:25,484 --> 01:40:30,484
+This is the concept of sequence logos.
+
+493
+01:40:31,484 --> 01:40:34,484
+Some sort of a visualization.
+
+494
+01:40:35,484 --> 01:40:39,484
+This is another example to sequence logos.
+
+495
+01:40:39,484 --> 01:40:41,484
+This is another example.
+
+496
+01:40:44,467 --> 01:41:12,268
+Bu, bu
+
+497
+01:41:40,115 --> 01:41:42,615
+All links are intact or not.
+
+498
+01:41:43,435 --> 01:41:46,076
+Some of them may not be available anymore,
+
+499
+01:41:46,076 --> 01:41:48,636
+but most of them are available.
+
+500
+01:41:48,975 --> 01:41:50,595
+These are some sequence editors.
+
+501
+01:41:53,916 --> 01:41:57,275
+We already mentioned in the past
+
+502
+01:41:57,275 --> 01:42:00,255
+formats of the sequence files.
+
+503
+01:42:00,576 --> 01:42:03,355
+This is just a reminder of the same concept.
+
+504
+01:42:04,756 --> 01:42:29,548
+Yani, aslında DNA'nın adıcısını alınan alın
+
+505
+01:42:29,555 --> 01:42:56,811
+Bu konuda birçok bir
+
+506
+01:42:58,484 --> 01:42:59,124
+Evet.
+
+507
+01:43:06,292 --> 01:43:09,931
+Nükleotites.
+
+508
+01:43:12,192 --> 01:43:19,152
+Any other character represents an error that will not be tolerated by nearly all sequence analysis programs.
+
+509
+01:43:24,627 --> 01:43:28,627
+Bu, z'inno'ya kullanılıyor.
+
+510
+01:43:28,627 --> 01:43:31,627
+Z'inno'ya kullanılıyor.
+
+511
+01:43:39,315 --> 01:44:02,315
+Bu, bu
+
+512
+01:44:02,996 --> 01:44:12,996
+A sequence in FASTA format is its first line at the scripted beginning with this greater than character.
+
+513
+01:44:14,996 --> 01:44:22,996
+If you remember we mentioned this at the very early beginning, the preceding lines contain the sequence,
+
+514
+01:44:23,996 --> 01:44:29,996
+area nucleotide-regolaminase sequences using standard one-meter symbols.
+
+515
+01:44:31,188 --> 01:44:33,188
+Bu bir şekilde kullanılıyor.
+
+516
+01:44:33,188 --> 01:44:57,188
+Bu şekilde kullanılıyor.
+
+517
+01:44:58,003 --> 01:45:03,003
+Actual sequence is the one given by green color.
+
+518
+01:45:05,003 --> 01:45:09,003
+The blue ones are just metadata about the sequence.
+
+519
+01:45:12,003 --> 01:45:13,003
+Okay.
+
+520
+01:45:16,003 --> 01:45:21,003
+And we already described these fields.
+
+521
+01:45:24,659 --> 01:45:27,659
+Here is the example FASTA-Sequence Higgen.
+
+522
+01:45:31,988 --> 01:45:39,068
+GEMBANK, bu
+
+523
+01:45:39,068 --> 01:45:47,628
+genBANK, bu
+
+524
+01:46:01,011 --> 01:46:10,952
+Information in this database organize into fields, each with an identifier justfied to the farthest left column.
+
+525
+01:46:11,532 --> 01:46:14,731
+Some identify additional subfields.
+
+526
+01:46:16,091 --> 01:46:25,731
+Sequence data lies between identifier origin and, you know, QD's Baxter's is with signals the end of a gen-mark record.
+
+527
+01:46:26,912 --> 01:46:28,112
+Here is an example.
+
+528
+01:46:30,484 --> 01:46:31,484
+Bu da bu.
+
+529
+01:46:39,220 --> 01:46:45,220
+Bu bir diğer bir, ASM1, Uptrack Simitax Notation.
+
+530
+01:46:45,220 --> 01:46:48,220
+Bu bir formu de description language,
+
+531
+01:46:58,804 --> 01:47:06,124
+Bu format contains all the other information in other formats basically.
+
+532
+01:47:35,988 --> 01:47:37,047
+Do you have any questions?
+
+533
+01:47:51,636 --> 01:47:53,676
+You can see either yes or no.
+
+534
+01:48:01,619 --> 01:48:04,520
+Ne söyleyeyim bir ade, RNA, RNA. Orada mısınız?
+
+535
+01:48:24,148 --> 01:48:36,148
+Aftaya bize, bize Aftaya...
+
+536
+01:48:41,747 --> 01:48:45,927
+Bize bu anlattığım konunun sonuna kadar olacak.
+
+537
+01:48:47,967 --> 01:48:54,927
+Bizeyle ilgili konuşursak, şey, Multiple Sequence Sanalizinin sonuna kadar.
+
+538
+01:49:24,659 --> 01:49:26,579
+Ok, next subject.
+
+539
+01:49:34,228 --> 01:49:37,967
+Bu, bu, bu, bu, genetik.
+
+540
+01:50:00,000 --> 01:50:04,492
+ve
+
+541
+01:50:07,796 --> 01:50:20,336
+If you remember, in the past lectures, we mentioned this filogenetik frequently.
+
+542
+01:50:21,256 --> 01:50:32,556
+And we always refer to the features, saying that we will discuss this and we will discuss this because many techniques use this filogenetik.
+
+543
+01:50:34,260 --> 01:50:50,260
+ve gen etik.
+
+544
+01:50:59,188 --> 01:51:07,568
+Filogenetik is the study of evolutionary relationships in organisms.
+
+545
+01:51:08,568 --> 01:51:16,568
+This is basically one part of the larger field of systematics, which also includes axonomi.
+
+546
+01:51:17,788 --> 01:51:23,488
+Here, important keywords are highlighted basically by using the blue color.
+
+547
+01:51:27,220 --> 01:51:36,520
+The term taxonomy here connotes the process and methodology for the naming and classification of organisms.
+
+548
+01:51:38,740 --> 01:51:43,000
+So we use sometimes to work taxa or taxonm.
+
+549
+01:51:44,220 --> 01:51:46,700
+We mentioned systematics.
+
+550
+01:51:52,083 --> 01:51:59,603
+It is the branch of biology that deals with classification of nomenklatörs.
+
+551
+01:52:03,988 --> 01:52:04,768
+Tradicional.
+
+552
+01:52:10,036 --> 01:52:16,036
+The context of evolution in biology is filogenetik.
+
+553
+01:52:18,536 --> 01:52:30,036
+Which means the connections between all groups of organisms as understood by ancestor-descendant relationships.
+
+554
+01:52:34,963 --> 01:52:42,963
+Organisms studied strongly suggest that all organisms on earth have a common ancestor.
+
+555
+01:52:44,963 --> 01:52:54,956
+So, the species are related to each other by the virtue of having evolved from the same common ancestor.
+
+556
+01:52:55,891 --> 01:53:09,731
+Such a relationship of species is called filogenetik, and its graphical representation is called a filogenetik tree, or filogenetik tree.
+
+557
+01:53:16,467 --> 01:53:18,047
+Now we have an example.
+
+558
+01:54:12,532 --> 01:54:39,307
+Bu, bu
+
+559
+01:54:39,923 --> 01:54:45,163
+Filogenetik, 3 şoğsas.
+
+560
+01:54:49,427 --> 01:54:52,787
+Let's talk about etymology,
+
+561
+01:54:52,787 --> 01:54:57,188
+the origin of the word basically,
+
+562
+01:54:57,188 --> 01:55:03,427
+from which language it comes from.
+
+563
+01:55:03,427 --> 01:55:07,188
+I give you this concept and we finalize for today.
+
+564
+01:55:09,948 --> 01:55:13,987
+Philo means basically,
+
+565
+01:55:18,771 --> 01:55:20,771
+Latin or from Greek,
+
+566
+01:55:21,771 --> 01:55:25,771
+VOT is filon, or 5NU or filon,
+
+567
+01:55:25,771 --> 01:55:27,771
+Oizyon of the word is this.
+
+568
+01:55:27,771 --> 01:55:29,771
+As I mentioned earlier,
+
+569
+01:55:30,771 --> 01:55:32,771
+In modern science,
+
+570
+01:55:32,771 --> 01:55:35,771
+Almost all names,
+
+571
+01:55:36,771 --> 01:55:38,771
+All-centric names
+
+572
+01:55:40,771 --> 01:55:43,771
+Are produced by using either
+
+573
+01:55:44,180 --> 01:55:47,180
+Latin or Greek language.
+
+574
+01:55:48,180 --> 01:55:54,180
+These two languages are used to create a new world.
+
+575
+01:55:56,180 --> 01:56:05,180
+Basically, filo means the tribe, race or filo.
+
+576
+01:56:07,180 --> 01:56:11,180
+This tribe, race or...
+
+577
+01:56:11,408 --> 01:56:18,408
+A group of species, filogenetik ağaçlar ve gen ifadesi. Filogenetik ağaçlar ve gen ifadesi konuları
+
+578
+01:56:18,408 --> 01:56:22,408
+filogenetik ağaçlar ve gen ifadesi konuları
+
+579
+01:56:26,515 --> 01:56:34,675
+Genetics, we mentioned this before, it is combination of genetic and ICS.
+
+580
+01:56:37,155 --> 01:56:38,595
+Edition, okay.
+
+581
+01:56:41,215 --> 01:56:50,055
+It comes from Greek, geneticos, which is, it comes from genesis, which means origin.
+
+582
+01:56:56,948 --> 01:57:00,948
+Bu, eğer, laws of origination in 1972.
+
+583
+01:57:00,948 --> 01:57:04,948
+Study of heredity from 1891.
+
+584
+01:57:04,948 --> 01:57:08,948
+This is what mean by genesis or genetik of genetics.
+
+585
+01:57:11,948 --> 01:57:14,948
+Origin is Greek word.
+
+586
+01:57:17,948 --> 01:57:19,948
+Genetics.
+
+587
+01:57:19,948 --> 01:57:20,948
+Genesis.
+
+588
+01:57:22,948 --> 01:57:24,588
+Filogenetik.
+
+589
+01:57:40,916 --> 01:57:43,916
+Filogenetik, or phylogenetik,
+
+590
+01:57:43,916 --> 01:57:49,916
+is a branch of science that deals with phylogenium.
+
+591
+01:57:54,163 --> 01:57:55,163
+Ok?
+
+592
+01:58:22,484 --> 01:58:47,484
+If we just mention a brief history of molecular filogenetik, in early 90s, immunochemical studies were performed, is basically cross-reactions, and these studies it's found that cross-reactions are stronger for closely related organisms.
+
+593
+01:58:48,340 --> 01:58:52,539
+Orijinal studies done by Nuktağ in 1902.
+
+594
+01:58:53,539 --> 01:58:58,719
+So according to this study, AIDS are closest relatives to humans.
+
+595
+01:58:59,539 --> 01:59:01,960
+Okay, this is the study anyway.
+
+596
+01:59:04,099 --> 01:59:11,899
+In between 60s and 70s, protein sequencing methods
+
+597
+01:59:12,435 --> 01:59:19,435
+DnA, DNA, hizalama, polimerizasyon, ve gen ifadesi,
+
+598
+01:59:37,332 --> 02:00:02,380
+Bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönemde bu dönem
+
+599
+02:00:02,515 --> 02:00:05,515
+Divergence of Fireland Kingdom,
+
+600
+02:00:05,515 --> 02:00:10,515
+which was done, the study was done in 1907 Marius.
+
+601
+02:00:10,515 --> 02:00:15,515
+Many true of life projects were completed,
+
+602
+02:00:15,515 --> 02:00:18,515
+or underway to be completed.
+
+603
+02:00:18,515 --> 02:00:25,515
+So, this is a short, very short history.
+
+604
+02:00:30,355 --> 02:00:38,195
+So, if I give you a comparison between molecular data, morphology and physiology,
+
+605
+02:00:40,435 --> 02:00:52,916
+molecular data, stripte irritable antitiz, morphology and physiology can be influenced by environmental factors.
+
+606
+02:00:54,595 --> 02:00:57,796
+So, molecular data is a basic meaning.
+
+607
+02:01:00,948 --> 02:01:28,396
+İngilizce
+
+608
+02:01:56,960 --> 02:01:58,540
+İmkoloji ve füzeye,
+
+609
+02:01:56,212 --> 02:01:57,792
+Slightly elongated.
+
+610
+02:02:02,484 --> 02:02:29,612
+Bu da
+
+611
+02:02:53,747 --> 02:02:58,747
+Ama in morphology ve physioloji, homology is difficult to assess.
+
+612
+02:02:58,747 --> 02:03:06,747
+Relâceship of distanced related to enzymes can be inferred from molecular data,
+
+613
+02:03:06,747 --> 02:03:14,747
+but only close relationships can be confidently inferred from physiolojical or morphological data.
+
+614
+02:03:21,971 --> 02:03:27,731
+ve PCR seçenek ve molekular data approach.
+
+615
+02:03:27,731 --> 02:03:30,532
+Fasiyonlar ve füze olu
+
+616
+02:03:30,532 --> 02:03:31,992
+ve problemlis
+
+617
+02:03:56,275 --> 02:04:02,395
+Now, we mentioned many times, filogenetik tree, filogenetik,
+
+618
+02:04:02,395 --> 02:04:08,395
+filogenetik, or what we were, pandoblabs, et cetera.
+
+619
+02:04:08,395 --> 02:04:20,395
+So, how to interpret and what components, or what constituents a filogenetik tree has?
+
+620
+02:04:20,395 --> 02:04:22,235
+Let's describe it.
+
+621
+02:04:22,239 --> 02:04:23,239
+Şartlı.
+
+622
+02:04:23,239 --> 02:04:25,239
+This is a typical theory, okay?
+
+623
+02:04:35,956 --> 02:05:01,835
+Şimdi soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru
+
+624
+02:05:05,011 --> 02:05:10,171
+Asit, information content, which is related to time.
+
+625
+02:05:14,651 --> 02:05:20,771
+Usually, at the left part, depending on how you draw this tree, but
+
+626
+02:05:20,771 --> 02:05:30,771
+usually, for this example, left part represents time in the past.
+
+627
+02:05:31,123 --> 02:05:41,867
+Bu da bu
+
+628
+02:05:46,931 --> 02:05:55,611
+Usually, physical positioning tree is not meaningful.
+
+629
+02:06:02,804 --> 02:06:07,804
+Swiveling can only be done at the nodes.
+
+630
+02:06:07,804 --> 02:06:14,804
+Ok, we have used actually several terminology here.
+
+631
+02:06:16,804 --> 02:06:22,731
+For example, we mentioned the node here.
+
+632
+02:06:26,036 --> 02:06:28,036
+ve gen ifadesi konularını işlemiyorma.
+
+633
+02:06:29,395 --> 02:06:31,076
+İzlediğiniz için,
+
+634
+02:06:33,395 --> 02:06:36,036
+birçok,
+
+635
+02:06:40,467 --> 02:06:50,068
+İlginç bir şey.
+
+636
+02:07:15,060 --> 02:07:18,060
+So, only three structure matters, bu yüzden.
+
+637
+02:07:21,060 --> 02:07:24,060
+Now, after swimming, this is...
+
+638
+02:07:28,948 --> 02:07:33,948
+Milt-3, but giving the same information.
+
+639
+02:07:49,332 --> 02:07:53,731
+Tamam, şimdi let's go over the terminology.
+
+640
+02:07:57,555 --> 02:08:04,555
+Büyük bir bu konuda,
+
+641
+02:08:04,555 --> 02:08:26,128
+bir konuda,
+
+642
+02:08:21,332 --> 02:08:35,332
+Bu konumlu bir şey, bu konumlu bir şey.
+
+643
+02:08:35,332 --> 02:08:44,332
+Bu konumlu bir şey.
+
+644
+02:08:44,332 --> 02:08:47,332
+Bir şey, bir şey.
+
+645
+02:08:47,923 --> 02:08:49,923
+ve grama,
+
+646
+02:08:49,923 --> 02:08:56,363
+bu
+
+647
+02:08:56,363 --> 02:08:58,923
+bir
+
+648
+02:09:00,851 --> 02:09:05,211
+Dendrogram, a tree diagram, basically,
+
+649
+02:09:06,811 --> 02:09:14,572
+which is frequently used to illustrate the arrangement of the clusters produced by hierarchical clustering.
+
+650
+02:09:15,211 --> 02:09:18,011
+We'll be discussing this technique later.
+
+651
+02:09:18,171 --> 02:09:23,332
+Probably we have already learned it in other cursors,
+
+652
+02:09:24,412 --> 02:09:28,332
+whether it's data mining or machine learning.
+
+653
+02:09:37,619 --> 02:09:50,800
+Pendrograms are often used in computational biology to illustrate the plastic of genes or samples, sometimes on top of heat maps.
+
+654
+02:09:53,460 --> 02:09:54,020
+Enidur.
+
+655
+02:09:57,844 --> 02:09:59,963
+3 is known as clodogram.
+
+656
+02:10:00,804 --> 02:10:07,123
+Again, it's a type of filogenetik tree that only shows 3 topology.
+
+657
+02:10:11,043 --> 02:10:17,844
+Basically, the shape, it is the shape indicating the relatedness, this topology.
+
+658
+02:10:20,307 --> 02:10:27,307
+İçine, say, humans'e daha fazla related to a çimpanzee tamamen, boynmas, etç.
+
+659
+02:10:27,307 --> 02:10:31,307
+But not the time or genetic distance between the species.
+
+660
+02:10:31,307 --> 02:10:36,307
+There is no time information and genetic distance information in pladograms.
+
+661
+02:10:36,307 --> 02:10:44,307
+Again, it is a combination of Greek plados, which means trunch and klamagvaronik.
+
+662
+02:10:44,307 --> 02:10:46,091
+Good.
+
+663
+02:10:46,707 --> 02:10:51,707
+Topoloji, bu da branching structure, bu da tree, bu da.
+
+664
+02:10:53,707 --> 02:11:02,707
+As you already said, branching pattern is called the trees topoloji. Trees can be represented in several terms.
+
+665
+02:11:03,707 --> 02:11:06,707
+Either a rectangle photogram,
+
+666
+02:11:07,707 --> 02:11:10,707
+which is shown here,
+
+667
+02:11:10,707 --> 02:11:13,323
+or slanted photograms.
+
+668
+02:11:15,775 --> 02:11:33,775
+bir
+
+669
+02:11:15,155 --> 02:11:36,460
+Bu da diğer birçok
+
+670
+02:11:37,268 --> 02:11:46,648
+Flagram, Rekkenberg, Flagram, Slumpet, Flagram, Circle, Flagram, Circle, Flagram, Radial, Flagram, Antradial, Flagram.
+
+671
+02:11:47,228 --> 02:11:49,528
+These are simply visualizations.
+
+672
+02:11:51,368 --> 02:11:54,507
+Now, coming back to tree terminology.
+
+673
+02:11:56,327 --> 02:12:03,427
+These are operational taxonomic units, as well as taxa, A, B, C, D, E, F.
+
+674
+02:12:03,923 --> 02:12:07,923
+ve in the data mining terminology
+
+675
+02:12:07,923 --> 02:12:11,923
+it is known as end nodes or leaves
+
+676
+02:12:13,923 --> 02:12:16,923
+these are internal nodes
+
+677
+02:12:17,923 --> 02:12:21,923
+in data mining literature
+
+678
+02:12:21,923 --> 02:12:28,923
+these are as I said these end nodes or leaves
+
+679
+02:12:30,739 --> 02:12:31,899
+Keremem lazım.
+
+680
+02:12:36,404 --> 02:12:48,876
+İntiyel mod, bu
+
+681
+02:12:52,979 --> 02:13:20,267
+Ve bu,
+
+682
+02:13:25,363 --> 02:13:29,363
+Bu, farklı birçok tesis.
+
+683
+02:13:30,363 --> 02:13:40,363
+Birçok tesis, birçok tesis.
+
+684
+02:13:40,363 --> 02:13:43,363
+Birçok tesis, birçok tesis,
+
+685
+02:13:43,363 --> 02:13:46,363
+birçok tesis, birçok tesis.
+
+686
+02:13:46,363 --> 02:13:49,363
+Birçok tesis, birçok tesis.
+
+687
+02:14:13,043 --> 02:14:21,363
+So, number of trees, number of rooted trees for n species can be found by this equation.
+
+688
+02:14:21,363 --> 02:14:29,043
+Number of unrooted trees for n species can be found by this equation.
+
+689
+02:14:29,043 --> 02:14:39,724
+So, this table gives the number of rooted trees for n species.
+
+690
+02:14:40,564 --> 02:14:52,564
+Bu, several species of BLAST2's and UNRAST2's in a number of datasets for 2, 1, 1.
+
+691
+02:14:52,564 --> 02:15:03,564
+If we have 2, we have 2, 2, 2, 2, and 1 UNRAST2. If we have 4, datasets we have 15.
+
+692
+02:15:17,939 --> 02:15:23,884
+Buna da bir anlamda, bu da bir anlamda.
+
+693
+02:15:33,076 --> 02:15:58,283
+İzlediğiniz için, birçok
+
+694
+02:15:58,739 --> 02:16:03,739
+...usually used to illustrate evolutionary relationships only.
+
+695
+02:16:05,739 --> 02:16:11,739
+Line up all terminal nodes and convey only the relative kinship
+
+696
+02:16:11,739 --> 02:16:18,739
+without making any representation regarding the number of changing steps separated.
+
+697
+02:16:18,739 --> 02:16:19,739
+Atın.
+
+698
+02:16:22,739 --> 02:16:24,523
+Here is mono...
+
+699
+02:16:25,140 --> 02:16:50,000
+Filetik groups, such as this one, this is an example, monofiletik groups, as then after a situation, for example, sattal-nurton, sattal-nurton, on marshal, all these subspecies or groups are the same type.
+
+700
+02:16:50,899 --> 02:17:18,891
+Bu, bu
+
+701
+02:17:20,659 --> 02:17:23,659
+Of course, these are just examples.
+
+702
+02:17:28,659 --> 02:17:33,659
+Becoming an ancestry is shared by other factions in the group and members do not form an issue of late.
+
+703
+02:17:34,659 --> 02:17:37,659
+This is known as para-filetic groups.
+
+704
+02:17:47,572 --> 02:17:56,572
+Gene trees and species trees on different type of trees.
+
+705
+02:17:57,332 --> 02:18:05,092
+In gene trees, filogenetik tree based on the divergence observed in a single homologous gene.
+
+706
+02:18:06,231 --> 02:18:13,972
+Such trees may represent the evolutionary history of a gene, but not necessarily of the species in which it is found.
+
+707
+02:19:08,020 --> 02:19:15,948
+Bord DNA and Propane Sequencesi'i example of data that describe a set of discrete character states.
+
+708
+02:19:19,572 --> 02:19:36,572
+Ok, after longish introduction to the terminology and general concepts, we can start discussing methods in filogenetik reconstruction.
+
+709
+02:19:36,572 --> 02:19:39,211
+So, in...
+
+710
+02:20:09,363 --> 02:20:12,283
+ve diğer gün sonra
+
+711
+02:20:12,283 --> 02:20:14,123
+bir gün sonra
+
+712
+02:20:15,884 --> 02:20:17,963
+İzlediğiniz için
+
+713
+02:20:17,963 --> 02:20:19,323
+ilgili de
+
+714
+02:20:19,323 --> 02:20:20,763
+bu konuda
+
+715
+02:20:20,763 --> 02:20:21,363
+ve
+
+716
+02:20:21,363 --> 02:20:23,484
+bu konuda
+
+717
+02:20:26,708 --> 02:20:31,068
+Şimdi, bu ne demek, bu ne demek, bu ne demek.
+
+718
+02:20:33,768 --> 02:20:45,708
+Yeni, bu ne demek, bu ne demek, bu ne demek, bu ne demek, bu ne demek, bu ne demek, bu ne demek.
+
+719
+02:21:14,932 --> 02:21:34,612
+Exam, will cover what I have covered today. Exam will be on the slide which is headed as methods in filogenetik reconstruction. Okay?
+
+720
+02:21:38,355 --> 02:21:42,515
+Anladınız değil mi? Sınav bıraktığım yere kadar.
+
+721
+02:21:44,675 --> 02:21:46,536
+Benim söylediğimi geri alıyorum.
+
+722
+02:21:49,576 --> 02:21:55,716
+Multiple Sequential Lament'ın sonuna kadar demiştim. Hayır, şimdi anlattığım konunun sonuna kadar.
+
+723
+02:22:08,788 --> 02:22:09,788
+Any questions?
+
+724
+02:22:15,507 --> 02:22:16,227
+Any comments?
+
+725
+02:22:25,556 --> 02:22:27,876
+Ben burada bitiriyorum. Çıkabilirsiniz.

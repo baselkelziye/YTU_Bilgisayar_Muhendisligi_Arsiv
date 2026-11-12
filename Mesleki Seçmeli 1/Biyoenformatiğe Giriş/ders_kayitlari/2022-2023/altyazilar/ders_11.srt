@@ -1,0 +1,3455 @@
+1
+00:03:16,883 --> 00:03:17,443
+Dr. Nun.
+
+2
+00:03:21,587 --> 00:03:22,647
+Sesini duyuluyor mu?
+
+3
+00:04:06,707 --> 00:04:07,907
+görebiliyor musunuz?
+
+4
+00:04:14,099 --> 00:04:17,839
+Görüntü var, Roja. Görüntü var, ne? Tamam.
+
+5
+00:04:25,939 --> 00:04:27,720
+Birkaç dakika bekleyin de.
+
+6
+00:06:58,963 --> 00:07:05,644
+Anyway, just to continue where we left last week.
+
+7
+00:07:07,903 --> 00:07:20,183
+Basically, once we collect data, the next step is to summarize it all to get a handle on the big picture.
+
+8
+00:07:23,963 --> 00:07:26,303
+To do this, basically,
+
+9
+00:07:55,444 --> 00:08:21,196
+Bu, bu
+
+10
+00:08:21,396 --> 00:08:23,396
+ve daha iyi bir anlamda.
+
+11
+00:08:45,727 --> 00:09:11,659
+...de nasıl bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için
+
+12
+00:09:14,004 --> 00:09:26,663
+Data representing counts or measurements need a different type of graph that either keep track of the numbers themselves or groups than numerical groupings.
+
+13
+00:09:27,943 --> 00:09:36,663
+For example, we can use line graphs, time series, display, or...
+
+14
+00:10:00,244 --> 00:10:03,244
+Şimdi de bu dağıtta,
+
+15
+00:10:03,244 --> 00:10:07,244
+bu dağıtta,
+
+16
+00:10:07,244 --> 00:10:19,628
+dağıtta,
+
+17
+00:10:20,916 --> 00:10:33,076
+The categorical data typically summarized using the number of individuals in each group, which is defined as the frequency usually.
+
+18
+00:10:34,296 --> 00:10:45,576
+This is a way to convert the categorical data into numerical one using frequencies, which we've seen these while we were discussing.
+
+19
+00:10:50,355 --> 00:10:53,816
+Múltiples sekunds.
+
+20
+00:10:59,251 --> 00:11:00,251
+Alignment.
+
+21
+00:11:00,251 --> 00:11:08,811
+The percentage of individuals in each group is known as relative frequency.
+
+22
+00:11:08,811 --> 00:11:22,251
+For example, assume that we have a group of items, total number of group of items, assume
+
+23
+00:11:22,251 --> 00:11:26,251
+that it's 20, say 5.
+
+24
+00:11:26,351 --> 00:11:29,271
+grup A, 15, grup B.
+
+25
+00:11:29,271 --> 00:11:34,351
+So, these are the 5 and 15 are the frequencies, basically.
+
+26
+00:11:34,351 --> 00:11:37,511
+Number of item 1, number of item 2.
+
+27
+00:11:37,511 --> 00:11:43,111
+Then, relative frequency would be basically a simple ratio.
+
+28
+00:11:43,111 --> 00:11:50,831
+The number of item 1 divided by total number of items.
+
+29
+00:11:51,687 --> 00:11:59,052
+dağıtta,
+
+30
+00:11:51,572 --> 00:11:58,572
+İtems 2 divided by total number of items.
+
+31
+00:12:02,740 --> 00:12:07,740
+5 divided by 20, 15 divided by 20.
+
+32
+00:12:11,900 --> 00:12:12,900
+dağıtta,
+
+33
+00:12:11,764 --> 00:12:17,764
+15 divided by 20.
+
+34
+00:12:17,764 --> 00:12:21,764
+Bu dağız bir frequency.
+
+35
+00:12:23,764 --> 00:12:27,764
+Numerical data represent measurements or counts
+
+36
+00:12:27,764 --> 00:12:31,764
+where the actual numbers have some meaning.
+
+37
+00:12:32,764 --> 00:12:34,764
+We already said.
+
+38
+00:12:37,748 --> 00:12:50,748
+So, by using these measurements or counts, these numbers, we can extract more features about data set or from the data.
+
+39
+00:12:50,748 --> 00:12:59,748
+The one measure is the measures of center or centroid, measures of spread.
+
+40
+00:13:00,755 --> 00:13:04,395
+Measures of the relationship between two variables.
+
+41
+00:13:04,576 --> 00:13:17,255
+If we have a couple of variables in dataset, we can measure the relationship between two variables in terms of the sum operations.
+
+42
+00:13:21,652 --> 00:13:44,172
+Buna baktığınızda, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları
+
+43
+00:13:51,283 --> 00:14:00,324
+Preliminary steps before analysis are defining the scientific question we try to answer.
+
+44
+00:14:02,644 --> 00:14:05,443
+These are the problem definitions.
+
+45
+00:14:07,524 --> 00:14:12,743
+Selecting a set of representative members from the population of interest.
+
+46
+00:14:12,743 --> 00:14:15,163
+This is basically sampling.
+
+47
+00:14:17,043 --> 00:14:21,995
+Şartlı bir sampling, bir şey, bir şey, bir şey.
+
+48
+00:14:25,427 --> 00:14:51,244
+Çeviri ve
+
+49
+00:14:53,139 --> 00:15:00,139
+İlk başta, birçok birçok birçok var.
+
+50
+00:15:00,139 --> 00:15:05,139
+Birçok var.
+
+51
+00:15:09,844 --> 00:15:16,844
+Ancak bir hizmetin var,
+
+52
+00:15:16,844 --> 00:15:22,844
+ve bu hizmetin var,
+
+53
+00:15:22,844 --> 00:15:28,844
+ve bu hizmetin var.
+
+54
+00:15:36,755 --> 00:15:40,716
+ve şükürlerle, at that point, at distribution,
+
+55
+00:15:41,716 --> 00:15:47,435
+shows the possible values, the chance of observing those values,
+
+56
+00:15:47,796 --> 00:15:54,435
+and how often we expect to see them in a random sample from the population.
+
+57
+00:15:58,355 --> 00:16:05,355
+Bu data-explorator metodları,
+
+58
+00:16:05,355 --> 00:16:14,355
+bu dağılıkları, bu dağılıkları,
+
+59
+00:16:14,355 --> 00:16:16,939
+bu dağılıkları,
+
+60
+00:16:21,460 --> 00:16:26,779
+Bu da bu da bilgisayar teknik ve summary statistik.
+
+61
+00:16:26,779 --> 00:16:32,940
+Data visualizasyon teknik ve summary statistik isimli bir variable depending on its type.
+
+62
+00:16:33,740 --> 00:16:40,340
+Again, we should recall that we can classify them into two general groups.
+
+63
+00:16:41,060 --> 00:16:47,060
+We already mentioned this numerical variables or quantitative variables.
+
+64
+00:16:47,539 --> 00:16:57,539
+ve altyazı
+
+65
+00:17:53,107 --> 00:17:57,107
+Ve bu bir simple formula.
+
+66
+00:18:22,360 --> 00:18:24,360
+ve gen ifadesi konuları
+
+67
+00:18:21,587 --> 00:18:27,587
+Numer of frequencies of an item divided by total number of observations.
+
+68
+00:18:28,587 --> 00:18:40,587
+Relative frequencies are sometimes present as percentages if basically this ratio is a number between 0 and 1.
+
+69
+00:18:42,587 --> 00:18:46,587
+The total ratio will be 1 anyway.
+
+70
+00:18:48,211 --> 00:18:55,932
+So, if we multiply this ratio by 100, it will be in terms of percentages.
+
+71
+00:18:55,932 --> 00:19:02,951
+Then that will be basically basis for pi chart.
+
+72
+00:19:11,635 --> 00:19:18,516
+Bu numaral variables, we are especially interested in two key aspects of distribution.
+
+73
+00:19:18,516 --> 00:19:25,635
+First, it's location, which refers to the central tendency of values.
+
+74
+00:19:27,316 --> 00:19:32,516
+That means it's the point around which most values are gathered.
+
+75
+00:19:32,516 --> 00:19:34,516
+This is the central tendency.
+
+76
+00:19:35,715 --> 00:19:37,548
+Then it's spread.
+
+77
+00:20:02,708 --> 00:20:18,412
+İzlediğiniz için, birçok
+
+78
+00:20:21,875 --> 00:20:48,331
+Bu, bu
+
+79
+00:20:49,460 --> 00:20:53,460
+Histogram is basically similar to a BART graph.
+
+80
+00:20:54,079 --> 00:21:02,460
+After the values of the variable are grouped, this grouping concept is known as binning.
+
+81
+00:21:03,460 --> 00:21:09,960
+In the finite number of non-overlaping intervals is known as bins.
+
+82
+00:21:10,579 --> 00:21:13,639
+Within bins, there will be a number of numerical values.
+
+83
+00:21:14,804 --> 00:21:21,804
+ve
+
+84
+00:21:21,804 --> 00:21:43,804
+X'i
+
+85
+00:21:42,451 --> 00:22:06,571
+Bir de bir
+
+86
+00:22:08,915 --> 00:22:10,056
+Dizembe.
+
+87
+00:22:14,387 --> 00:22:21,587
+Experimental rule, a suggestion, is known as Sturgis rule,
+
+88
+00:22:22,587 --> 00:22:29,987
+which can be used to estimate the number of beans and is given by the following equation.
+
+89
+00:22:30,987 --> 00:22:33,827
+n is being number of samples.
+
+90
+00:22:36,187 --> 00:22:39,947
+k is number of samples within a beam.
+
+91
+00:22:40,596 --> 00:22:43,596
+1 plus 3.3 log n.
+
+92
+00:22:43,596 --> 00:22:49,596
+K is the number of beans, and n is the number of samples.
+
+93
+00:22:49,596 --> 00:22:58,596
+This is the rough formula to determine the number of beans.
+
+94
+00:23:02,355 --> 00:23:06,355
+Bu bir typical bir histogram.
+
+95
+00:23:06,355 --> 00:23:11,355
+Bir histogram ile bir aşağı, aşağı, aşağı, aşağı ve aşağı.
+
+96
+00:23:27,124 --> 00:23:36,268
+Bu, bu
+
+97
+00:23:37,748 --> 00:23:48,528
+Next slide will illustrate a histogram for 1000 samples drawn from a normal distribution with mean 0 and standard deviation 1.
+
+98
+00:23:48,528 --> 00:23:57,488
+We haven't mentioned these mean and standard deviation, but you already know probably these concepts from other lectures.
+
+99
+00:23:58,327 --> 00:24:00,928
+This is a typical histogram.
+
+100
+00:24:07,316 --> 00:24:08,296
+Bir de kalma
+
+101
+00:24:08,296 --> 00:24:29,316
+ve kalma
+
+102
+00:24:30,163 --> 00:24:32,163
+ve bu şekli bir şekli.
+
+103
+00:24:54,163 --> 00:24:57,723
+Symmetrik means the shape is...
+
+104
+00:24:57,723 --> 00:24:59,723
+Let me plot it.
+
+105
+00:25:05,723 --> 00:25:07,723
+When you plot it...
+
+106
+00:25:10,683 --> 00:25:13,323
+Anyway, it is not very...
+
+107
+00:25:15,403 --> 00:25:17,723
+This is something symmetric.
+
+108
+00:25:17,723 --> 00:25:20,203
+This is skewed means either...
+
+109
+00:25:22,612 --> 00:25:27,332
+Skuylede towards positive or skeylede
+
+110
+00:25:29,892 --> 00:25:32,292
+distribution skeylede towards negative.
+
+111
+00:25:32,852 --> 00:25:35,731
+These two are skeylede distributions.
+
+112
+00:25:36,132 --> 00:25:37,892
+Or it could be
+
+113
+00:25:39,251 --> 00:25:41,332
+something by model.
+
+114
+00:25:45,044 --> 00:25:59,804
+Orada, if it has more than two peaks, then it could be considered multi-modal distribution.
+
+115
+00:26:02,804 --> 00:26:05,044
+Each has some meanings.
+
+116
+00:26:07,644 --> 00:26:12,848
+Depending on the shape of the histogram, we can...
+
+117
+00:26:24,084 --> 00:26:40,084
+Then we'll choose more appropriate descriptive statistics once we know the distribution of the data or shape of the histogram.
+
+118
+00:26:45,460 --> 00:26:50,500
+Histogram, bar height for each interval
+
+119
+00:26:50,500 --> 00:26:53,500
+could be set to its relative frequency
+
+120
+00:26:53,500 --> 00:26:56,500
+as given by this ratio
+
+121
+00:26:56,500 --> 00:26:58,500
+or the percentage
+
+122
+00:26:58,500 --> 00:27:00,900
+when you multiply this ratio
+
+123
+00:27:00,900 --> 00:27:03,940
+it will be in terms of percentage.
+
+124
+00:27:03,940 --> 00:27:06,579
+For histogram,
+
+125
+00:27:35,347 --> 00:27:41,347
+Relative frequency divided by the width of the, in each interval.
+
+126
+00:27:41,347 --> 00:27:47,347
+Actually, interval is this width basically.
+
+127
+00:27:49,347 --> 00:27:54,347
+This width divided by this one.
+
+128
+00:27:54,347 --> 00:28:00,268
+And it will give us density histogram.
+
+129
+00:28:13,523 --> 00:28:19,683
+Okay, the height of each bar in density histogram shows the density of the corresponding interval.
+
+130
+00:28:20,583 --> 00:28:26,183
+For each interval, see the area of the corresponding bar in the density histogram
+
+131
+00:28:26,183 --> 00:28:30,583
+is calculated as follows.
+
+132
+00:28:31,403 --> 00:28:33,103
+We already show.
+
+133
+00:28:33,103 --> 00:28:40,523
+Therefore, the area of each bar is the relative frequency for the corresponding interval, basically.
+
+134
+00:28:40,852 --> 00:28:58,764
+Bu, bu
+
+135
+00:29:10,420 --> 00:29:19,740
+Evet, şimdi, we mentioned skewed histograms, right skewed, left skewed.
+
+136
+00:29:21,740 --> 00:29:24,860
+We call them left skewed or right skewed.
+
+137
+00:29:27,340 --> 00:29:33,140
+This is an example of the left skewed histogram and right skewed histogram.
+
+138
+00:29:38,771 --> 00:29:42,771
+Ve alozu,
+
+139
+00:29:42,771 --> 00:29:43,771
+ve alozu,
+
+140
+00:29:43,771 --> 00:29:45,771
+unimodal histogram,
+
+141
+00:29:45,771 --> 00:29:48,771
+in terms of the number of peaks they have.
+
+142
+00:29:48,771 --> 00:29:52,771
+All these histograms have only one peak,
+
+143
+00:29:52,771 --> 00:29:55,771
+so these are unimodal histograms.
+
+144
+00:29:55,771 --> 00:29:59,771
+Some histograms have multiple modes.
+
+145
+00:29:59,771 --> 00:30:04,771
+We mentioned bimodal histograms.
+
+146
+00:30:05,556 --> 00:30:25,556
+Bu bir model histogram.
+
+147
+00:30:27,920 --> 00:30:36,079
+Bu da bir
+
+148
+00:31:05,364 --> 00:31:21,324
+Histogram is important. That's why we extensively try to cover, not very extensively, but we dedicated more time to tell about it.
+
+149
+00:31:25,460 --> 00:31:38,460
+Bu histograma is important because it serves as a rough estimate of the true probability density function or probability distribution of the underlying random process from which the samples are being connected.
+
+150
+00:31:39,460 --> 00:31:52,460
+The probability density function or probability distribution is a function that quantifies the probability of the random event x which occurs.
+
+151
+00:31:53,395 --> 00:33:08,011
+Bu, bu
+
+152
+00:33:08,084 --> 00:33:10,084
+FUTURES,
+
+153
+00:33:10,084 --> 00:33:12,084
+SIMPLE NUMERICAL FUTURES
+
+154
+00:33:12,084 --> 00:33:14,084
+OF DATA SET
+
+155
+00:33:14,084 --> 00:33:16,084
+WHICH ARE USED EXTENSIVELY
+
+156
+00:33:16,084 --> 00:33:19,084
+ALMOST IN ANY FIELD,
+
+157
+00:33:19,084 --> 00:33:21,084
+ANY ANALYSIS METHODS
+
+158
+00:33:21,084 --> 00:33:23,084
+MESHINMAN, CORVATO, VATO
+
+159
+00:33:23,084 --> 00:33:25,084
+VERY SIMPLE
+
+160
+00:33:25,084 --> 00:33:27,084
+BUT
+
+161
+00:33:27,084 --> 00:33:29,084
+ALWAYS
+
+162
+00:33:29,084 --> 00:33:32,084
+ANY ANALYSIS
+
+163
+00:33:32,084 --> 00:33:32,652
+STARTS
+
+164
+00:33:33,011 --> 00:33:37,071
+ve dekine, dekine, tenni ve dekine.
+
+165
+00:33:41,940 --> 00:33:49,940
+A central tendency is a central or typical value for a probability distribution,
+
+166
+00:33:49,940 --> 00:33:56,940
+which is also called a central or location of the distribution.
+
+167
+00:33:56,940 --> 00:34:03,660
+So, can anybody tell me what are the measures of a central tendency?
+
+168
+00:34:11,699 --> 00:34:28,427
+Bu da bir yöntemde kullanılıyor.
+
+169
+00:34:57,619 --> 00:34:58,460
+Orada mısınız?
+
+170
+00:35:23,059 --> 00:35:24,100
+Orada mısın canım?
+
+171
+00:35:26,920 --> 00:35:27,699
+Bir ses verin.
+
+172
+00:35:45,652 --> 00:35:46,532
+Yok musunuz?
+
+173
+00:35:47,572 --> 00:35:49,051
+Buradayız hocam, dinliyoruz.
+
+174
+00:35:49,311 --> 00:35:50,051
+Ama cevabını dinliyoruz.
+
+175
+00:35:50,051 --> 00:35:50,891
+Soru soruyoruz.
+
+176
+00:35:54,739 --> 00:35:55,659
+Yok mu cevap?
+
+177
+00:36:06,996 --> 00:36:07,996
+Tamam.
+
+178
+00:36:07,996 --> 00:36:10,996
+Bu konceptı çok simple.
+
+179
+00:36:10,996 --> 00:36:11,996
+Çünkü bu konceptı,
+
+180
+00:36:11,996 --> 00:36:12,996
+bu konceptı bir konceptı
+
+181
+00:36:12,996 --> 00:36:13,996
+veya
+
+182
+00:36:13,996 --> 00:36:15,996
+neyden bilgi veriyorlar.
+
+183
+00:36:15,996 --> 00:36:16,996
+Bu konceptı,
+
+184
+00:36:16,996 --> 00:36:18,996
+bu konceptı,
+
+185
+00:36:18,996 --> 00:36:19,996
+bu konceptı.
+
+186
+00:36:19,996 --> 00:36:20,996
+Bu konceptı,
+
+187
+00:36:20,996 --> 00:36:21,996
+bu konceptı,
+
+188
+00:36:21,996 --> 00:36:22,996
+bu konceptı.
+
+189
+00:36:22,996 --> 00:36:34,892
+Bu konceptı.
+
+190
+00:36:36,179 --> 00:36:41,179
+Bu bir albörü, bir albörü, bir albörü, bir albörü.
+
+191
+00:36:45,043 --> 00:36:47,043
+Orada farklı bir konfliktir,
+
+192
+00:36:47,043 --> 00:36:54,043
+oradan bir konfliktir,
+
+193
+00:36:54,043 --> 00:36:56,043
+oradan bir konfliktir.
+
+194
+00:36:59,043 --> 00:37:01,043
+Diyan,
+
+195
+00:37:01,043 --> 00:37:09,043
+oradan bir konfliktir,
+
+196
+00:37:09,043 --> 00:37:11,043
+ama aynı konfliktir.
+
+197
+00:37:11,347 --> 00:37:19,648
+Sample mean, you know how to determine sample mean. It's extremely simple measure.
+
+198
+00:37:21,447 --> 00:37:38,648
+Another, of course, although we say that sample mean is a simple to calculate measure, parameter, in many cases, it may be quite difficult to determine which.
+
+199
+00:37:39,219 --> 00:38:06,891
+...
+
+200
+00:38:37,108 --> 00:38:38,507
+Do you have any idea?
+
+201
+00:38:44,275 --> 00:38:48,475
+So, all three are used to represent central tendency.
+
+202
+00:38:48,475 --> 00:38:49,315
+Okay.
+
+203
+00:38:51,855 --> 00:39:09,956
+Say, we have n number of samples, and we want to find the central tendency of this n number of samples to represent as a feature in a machine learning algorithm.
+
+204
+00:39:10,771 --> 00:39:16,715
+Şimdi bu problemiyle bu sorunlarla
+
+205
+00:39:19,795 --> 00:39:26,395
+Metod to determine the central tendency, which one to choose, how you will decide.
+
+206
+00:39:40,244 --> 00:39:50,144
+İntiyel, you will blindly choose what others use, basically.
+
+207
+00:39:50,144 --> 00:40:05,144
+Simply, people are usually following each other in choosing some measures for...
+
+208
+00:40:05,184 --> 00:40:58,188
+Bu, bu
+
+209
+00:40:59,123 --> 00:41:06,863
+...of central tendency, whether it will be sample mean, or sample medium, or sample mod.
+
+210
+00:41:07,283 --> 00:41:13,923
+Even we will be able to choose which type of mean we will discuss in a minute.
+
+211
+00:41:13,923 --> 00:41:14,863
+Okay.
+
+212
+00:41:17,703 --> 00:41:23,003
+First, let's discuss mean in mathematics.
+
+213
+00:41:23,956 --> 00:41:28,376
+It has several different definitions depending on context.
+
+214
+00:41:31,155 --> 00:41:37,675
+In probability and statistics, mean and expected values are synonymous.
+
+215
+00:41:39,756 --> 00:41:41,615
+As I already said,
+
+216
+00:41:42,576 --> 00:41:47,516
+in case of a discrete probability distribution of random variable x,
+
+217
+00:41:47,516 --> 00:41:51,500
+the mean is equal to the sum of...
+
+218
+00:41:52,052 --> 00:41:58,692
+or every possible value weighted by the probability of that value.
+
+219
+00:42:00,612 --> 00:42:03,532
+Okay, this is probabilistic definition of
+
+220
+00:42:03,532 --> 00:42:07,452
+mean.
+
+221
+00:42:08,731 --> 00:42:10,731
+X is the
+
+222
+00:42:10,731 --> 00:42:12,771
+sample value.
+
+223
+00:42:13,892 --> 00:42:16,372
+Px is the probability of the
+
+224
+00:42:16,372 --> 00:42:18,172
+sample value.
+
+225
+00:42:19,155 --> 00:42:43,395
+Assuming that we have 10 samples in a dataset, from x0 to x9, px0 to px9 will have a value of 0.1, basically, because we have 10 values.
+
+226
+00:42:43,856 --> 00:42:53,195
+If each value has equal probability, we have 10 values, probability of each value will be 1 over 10, basically.
+
+227
+00:42:54,036 --> 00:43:04,356
+So that means, basically, in practice, you add all the sample values and divide by the number of samples.
+
+228
+00:43:07,356 --> 00:43:08,356
+Yeah, it's...
+
+229
+00:43:11,699 --> 00:43:16,179
+Bu, bu, meanin'in probabilistik approach.
+
+230
+00:43:19,139 --> 00:43:19,500
+Okay.
+
+231
+00:43:21,500 --> 00:43:30,099
+For a data set, the terms, the mean, the arithmetic mean,
+
+232
+00:43:31,219 --> 00:43:36,779
+or mathematical expectation on some times known as average.
+
+233
+00:43:40,275 --> 00:43:45,795
+There we use synonymously to refer to a central value of a discrete set of numbers.
+
+234
+00:43:45,795 --> 00:43:50,115
+Basically, this is for electrical signal.
+
+235
+00:43:51,036 --> 00:43:59,375
+This value corresponds to DC value or DC component of electrical signal.
+
+236
+00:44:01,855 --> 00:44:05,935
+In electrical engineering,
+
+237
+00:44:20,244 --> 00:44:21,228
+Okay.
+
+238
+00:44:27,987 --> 00:44:35,347
+If the data set were based on a series of observations obtained by sampling from a statistical population,
+
+239
+00:44:35,347 --> 00:44:38,667
+then the arithmetic mean is known as sample mean.
+
+240
+00:44:40,547 --> 00:44:45,268
+To differentiate it from the population mean.
+
+241
+00:44:45,427 --> 00:44:52,427
+Population mean is usually unknown, but population mean can be estimated by using the sample mean.
+
+242
+00:44:55,059 --> 00:45:00,319
+Arithmetic mean, or simply mean, is very simple.
+
+243
+00:45:00,319 --> 00:45:05,719
+All values are added and divided by number of samples.
+
+244
+00:45:06,719 --> 00:45:17,359
+It is used when the spread of the data is fairly similar or on each side of the midpoint.
+
+245
+00:45:17,659 --> 00:45:18,779
+This is important.
+
+246
+00:45:19,507 --> 00:45:24,827
+Şimdi, bu soru, ne zaman kullanılabilir mi?
+
+247
+00:45:24,827 --> 00:45:30,707
+Şimdi, bu konuda bir data setiyle,
+
+248
+00:45:30,707 --> 00:45:35,107
+ve bu konuda bir datasyonu ve
+
+249
+00:45:35,107 --> 00:45:38,707
+ve bu konuda bir datasyonu
+
+250
+00:45:38,707 --> 00:45:41,707
+ve bu konuda bir kaşık bir kaşık.
+
+251
+00:45:41,707 --> 00:45:45,707
+Bu, bu kaşık bir kaşık bir kaşık.
+
+252
+00:45:47,956 --> 00:45:58,436
+So in this case, to represent this data set in terms of some features, we can use a simple mean.
+
+253
+00:45:59,716 --> 00:46:00,716
+Rightly.
+
+254
+00:46:01,115 --> 00:46:12,235
+So we can determine the mean by taking average of data and we can use it as a feature.
+
+255
+00:46:16,307 --> 00:46:19,307
+A simple data reduction.
+
+256
+00:46:26,099 --> 00:46:29,420
+ve gen ifadesi normalde distribütüye.
+
+257
+00:46:51,123 --> 00:47:16,779
+Bu, bu
+
+258
+00:47:17,556 --> 00:47:22,135
+Measur of central tendency is simple aritmetik mean.
+
+259
+00:47:28,820 --> 00:47:29,820
+Okay.
+
+260
+00:47:32,820 --> 00:47:35,820
+There are some other mean definitions.
+
+261
+00:47:35,820 --> 00:47:38,820
+This is the arithmetic mean.
+
+262
+00:47:38,820 --> 00:47:41,820
+This is known as arithmetic mean, simplest one.
+
+263
+00:47:41,820 --> 00:47:43,820
+But there are other means.
+
+264
+00:47:43,820 --> 00:47:44,820
+The first...
+
+265
+00:47:50,963 --> 00:47:52,963
+Bir şey, aritmetik mean.
+
+266
+00:47:52,963 --> 00:47:54,524
+Ayrıca bir şey, bir şey,
+
+267
+00:48:15,347 --> 00:48:42,603
+Bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu da bir adım, bu
+
+268
+00:48:42,708 --> 00:48:49,708
+Bu bir şey, bu bir şey, bu bir şey, bu bir şey.
+
+269
+00:48:53,108 --> 00:48:55,907
+Bir şey, bir şey, bir şey.
+
+270
+00:48:58,648 --> 00:49:00,447
+Bu bir şey, bir şey.
+
+271
+00:49:02,528 --> 00:49:04,447
+Bir şey, bir şey, bir şey.
+
+272
+00:49:04,447 --> 00:49:09,007
+Bir şey, bir şey.
+
+273
+00:49:11,795 --> 00:49:38,860
+ve gen ifadesi konuları
+
+274
+00:49:26,612 --> 00:49:32,172
+ve ne kadar bir şey bulundur,
+
+275
+00:49:32,172 --> 00:49:38,652
+bir şey bulundur.
+
+276
+00:49:43,219 --> 00:50:09,259
+Bu, bu
+
+277
+00:50:09,876 --> 00:50:16,876
+Şimdi,
+
+278
+00:50:28,788 --> 00:50:37,148
+Ok, if distribution is symmetrical, we choose arithmetic mean.
+
+279
+00:50:37,148 --> 00:50:44,248
+If they are not symmetrical, we can either choose geometric mean or harmonic mean.
+
+280
+00:50:44,748 --> 00:50:53,347
+If, for example, it has some high values, extreme values, probably we can choose some harmonic mean.
+
+281
+00:50:54,643 --> 00:51:21,611
+Bu, bu
+
+282
+00:51:22,771 --> 00:51:30,092
+Arithmetic mean, Geometric mean, and Harmonic mean satisfy the following inequalities.
+
+283
+00:51:33,291 --> 00:51:39,211
+Geometric mean and Harmonic mean will be always less than arithmetic mean.
+
+284
+00:51:43,219 --> 00:51:53,719
+They will give us exactly the same value under a certain condition.
+
+285
+00:51:53,859 --> 00:51:56,159
+What is that condition? Can anybody tell me?
+
+286
+00:51:59,059 --> 00:52:05,079
+Arithmetic mean, geometric mean, and harmonic mean will be equal.
+
+287
+00:52:05,079 --> 00:52:06,519
+When?
+
+288
+00:52:21,844 --> 00:52:25,124
+When will day the echo?
+
+289
+00:52:27,604 --> 00:52:29,124
+Anybody has an idea?
+
+290
+00:52:40,724 --> 00:52:50,804
+Ok, when all values are equal, then all three means will be equal.
+
+291
+00:52:53,083 --> 00:53:01,204
+So, arithmetic mean is best used in situations where the data are not skewed, nor extreme outliers.
+
+292
+00:53:02,403 --> 00:53:07,943
+Individual data points are not dependent on each other. Data are independent.
+
+293
+00:53:08,724 --> 00:53:13,724
+Geometik mean should be used whenever the data are interrelated.
+
+294
+00:53:14,724 --> 00:53:23,724
+Harmonik mean is best to use when there is a large population where the majority of the values are distributed uniformly,
+
+295
+00:53:23,724 --> 00:53:28,724
+but where there are a few outliers with significantly higher values.
+
+296
+00:53:28,724 --> 00:53:29,724
+Okay.
+
+297
+00:53:35,219 --> 00:53:40,980
+So, although we said there are three types of mean, there is another type of mean as well.
+
+298
+00:53:40,980 --> 00:53:46,460
+So, it is probably worth mentioning.
+
+299
+00:53:46,460 --> 00:53:48,460
+Weighted alitabetic mean.
+
+300
+00:53:50,460 --> 00:53:55,179
+This is also used in different applications.
+
+301
+00:53:56,148 --> 00:54:08,048
+Bu aritmetik meanin is used if one wants to combine average values from samples of the same population with different sample sizes.
+
+302
+00:54:09,387 --> 00:54:11,508
+And it is given by this equation.
+
+303
+00:54:12,408 --> 00:54:23,408
+So each sample value is multiplied by a certain weight and divided by the total weights.
+
+304
+00:54:26,387 --> 00:54:28,387
+Bu da bu da olabilir.
+
+305
+00:54:30,387 --> 00:54:33,387
+Bu da, eğer,
+
+306
+00:54:33,387 --> 00:54:35,387
+bu da
+
+307
+00:54:35,387 --> 00:54:37,387
+etkileştirme
+
+308
+00:54:37,387 --> 00:54:38,387
+veya
+
+309
+00:54:38,387 --> 00:54:46,387
+daha
+
+310
+00:54:49,396 --> 00:54:56,316
+samples, you can give more weight to that sample and less weight to other samples
+
+311
+00:54:56,316 --> 00:55:02,316
+than simply find a weighted arithmetic meal.
+
+312
+00:55:02,316 --> 00:55:14,796
+In practice, it is used extensively as well in speech processing for example,
+
+313
+00:55:15,539 --> 00:55:24,539
+Doppler signal analysis, platform analysis, to determine mean frequency.
+
+314
+00:55:26,539 --> 00:55:30,539
+This weighted arithmetic mean is used.
+
+315
+00:55:39,635 --> 00:55:39,955
+Ok.
+
+316
+00:55:45,588 --> 00:55:48,588
+Another type of mean is power mean,
+
+317
+00:55:50,088 --> 00:55:54,588
+which is in the form of this equation.
+
+318
+00:55:55,588 --> 00:56:07,588
+Basically, this power mean can be rearranged to represent the other type of mean.
+
+319
+00:56:08,588 --> 00:56:10,588
+Minus m
+
+320
+00:56:11,764 --> 00:56:16,923
+Minus, this is the minimum value of this data sample.
+
+321
+00:56:17,983 --> 00:56:26,744
+M minus 1 is harmonic mean, M0 is geometric mean, M1 is arithmetic mean, M2 is root mean squared,
+
+322
+00:56:27,784 --> 00:56:31,824
+and infinite is maximum of the value, basically.
+
+323
+00:56:32,143 --> 00:56:38,704
+This is a very general mean, which is known as power mean, as we see quite a little.
+
+324
+00:56:39,411 --> 00:56:41,231
+İknişen Sok Mien.
+
+325
+00:56:47,603 --> 00:56:48,963
+Ok, Medin.
+
+326
+00:56:52,724 --> 00:56:56,972
+Bu, bu,
+
+327
+00:57:00,563 --> 00:57:09,363
+Has anybody an idea when the median is used to represent central tendency?
+
+328
+00:57:16,916 --> 00:57:23,436
+Ok, it is used to represent the average when the data are not symmetrical.
+
+329
+00:57:27,572 --> 00:57:29,516
+O, skir distribution.
+
+330
+00:57:36,403 --> 00:57:49,403
+For example, data as such a distribution, it can be used as a correct representation of central tendency.
+
+331
+00:57:58,099 --> 00:58:00,099
+So, if...
+
+332
+00:58:03,987 --> 00:58:29,707
+Bu, bu
+
+333
+00:58:31,731 --> 00:58:42,572
+midpoint as a median value of this dataset if the number of n or number of samples is odd.
+
+334
+00:58:43,492 --> 00:58:54,452
+If number of samples is even, then you take average of two midpoints as a median value.
+
+335
+00:58:54,452 --> 00:58:58,452
+This will be basically the central tendency of...
+
+336
+00:58:59,347 --> 00:59:01,099
+Bu konuda bu konuda.
+
+337
+00:59:05,139 --> 00:59:19,340
+So, when we compare to the sample mean, the sample median is less susceptible to outliers, or extreme value in a dataset.
+
+338
+00:59:22,643 --> 00:59:45,739
+İQR'ın birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birçok noktası ile ilgili birç
+
+339
+00:59:45,972 --> 01:00:03,659
+Bu, bu
+
+340
+01:00:06,675 --> 01:00:08,675
+The third one is MOD.
+
+341
+01:00:12,083 --> 01:01:01,643
+Bu, bu
+
+342
+01:01:06,612 --> 01:01:09,932
+So, just to compare mean, median, and mod.
+
+343
+01:01:11,212 --> 01:01:14,492
+Here is comparison.
+
+344
+01:01:15,132 --> 01:01:19,932
+When the data is symmetric, mod, median, and mean, they are...
+
+345
+01:01:20,892 --> 01:01:28,452
+So, when the distribution becomes more and more antisymmetric, or skew,
+
+346
+01:01:29,292 --> 01:01:33,932
+then we can see how the...
+
+347
+01:01:37,940 --> 01:01:40,720
+Central tendons representation changes.
+
+348
+01:01:46,195 --> 01:01:46,635
+Evet.
+
+349
+01:02:09,012 --> 01:02:14,012
+Bu, 420.
+
+350
+01:20:17,427 --> 01:20:26,788
+Okay, another feature to use in data reduction is the measures of variability.
+
+351
+01:20:31,796 --> 01:20:35,796
+Öncelerisinde, birçok birçok birçok birçok birçok birçok birçok birçok birçok.
+
+352
+01:20:35,796 --> 01:20:39,796
+Öncelerisinde, buçok birçok birçok,
+
+353
+01:20:39,796 --> 01:20:43,796
+buçok birçok,
+
+354
+01:20:43,796 --> 01:20:45,796
+birçok birçok.
+
+355
+01:20:45,796 --> 01:20:47,796
+Öncelerisinde,
+
+356
+01:20:47,796 --> 01:20:51,796
+buçok birçok,
+
+357
+01:20:51,796 --> 01:20:55,796
+birçok,
+
+358
+01:20:58,068 --> 01:21:04,408
+Sample standard deviation, these are related to each other, basically.
+
+359
+01:21:04,408 --> 01:21:08,667
+If you know the variance, you can easily find the standard deviation and vice versa.
+
+360
+01:21:09,408 --> 01:21:18,108
+And interquartile ranges, these are used to describe the variability, basically, of the data.
+
+361
+01:21:21,408 --> 01:21:23,968
+The two common summary statistics.
+
+362
+01:21:25,908 --> 01:21:52,368
+Bu, bu
+
+363
+01:21:52,368 --> 01:22:00,087
+X overburys mean, determined by one of the measures of the central tendency.
+
+364
+01:22:10,068 --> 01:22:16,068
+Bu, sampler variyansı da, common measure of expansion, based on the squared deviations,
+
+365
+01:22:18,068 --> 01:22:21,068
+which is given by this simple equation.
+
+366
+01:22:22,068 --> 01:22:26,068
+The square root of the variance is known as the standard deviation.
+
+367
+01:22:27,068 --> 01:22:27,564
+Ok.
+
+368
+01:22:31,380 --> 01:22:48,180
+Standard deviation, simply ST, is used for data which are normally distributed to provide information on how much the data vary around their mean.
+
+369
+01:22:48,800 --> 01:22:55,280
+Okay, this is important. Standard deviation is used for data which are normally distributed.
+
+370
+01:22:56,979 --> 01:23:05,979
+STD indicates how much set of values spread around the average range of 1, standard above and below.
+
+371
+01:23:05,979 --> 01:23:17,867
+The mean, which is abbreviated to plus minus 1 STD, includes 62.2% of the values.
+
+372
+01:23:18,868 --> 01:23:31,208
+Plus minus 2 SD includes 95.4% of the data and 3 SD, plus minus 3 SD will include 99.7% of data.
+
+373
+01:23:38,292 --> 01:23:44,852
+Some properties that can help me when interpreting a standard deviation are peyledik.
+
+374
+01:23:46,452 --> 01:23:52,212
+They can never be negative because of the squaring.
+
+375
+01:23:53,412 --> 01:23:54,891
+They are always positive.
+
+376
+01:23:55,891 --> 01:24:00,452
+Smallest possible value for the standard deviation is zero.
+
+377
+01:24:04,340 --> 01:24:13,340
+Standard deviation is affected by outliers as it is based on distance from the mean, which is affected by outliers basically.
+
+378
+01:24:15,100 --> 01:24:22,500
+Standard deviation has the same units as the original data, while variances in square units.
+
+379
+01:24:28,948 --> 01:24:43,068
+It is important to note that for normal distributions, sample mean and sample deviation are the only parameters needed to describe the statistics of the underlying phenomenon.
+
+380
+01:24:43,068 --> 01:24:55,068
+So if the distribution is symmetrical, any data has a symmetrical histogram, then as a future set, you can use sample mean.
+
+381
+01:24:55,572 --> 01:24:59,612
+Bu, aritmetik ve sampledeviasyon
+
+382
+01:25:00,172 --> 01:25:02,572
+bu dağılık bir şekilde
+
+383
+01:25:04,931 --> 01:25:06,532
+Bir de bir daha
+
+384
+01:25:06,532 --> 01:25:09,692
+bir daha normal distribuyebilmek için
+
+385
+01:25:10,891 --> 01:25:13,452
+bir daha dağılıklı bir şekilde
+
+386
+01:25:13,452 --> 01:25:15,452
+ve varansızın
+
+387
+01:25:15,452 --> 01:25:19,131
+bu dağılıklı bir
+
+388
+01:25:20,692 --> 01:25:33,692
+There are some other quantities. It's known as quantile. It comes from the word quantity. A quantile is where a sample is divided into equal size adjacent subgroups.
+
+389
+01:25:35,692 --> 01:25:44,684
+It is also known as fractile. It can also refer to dividing the probability distribution in travers of equal probability.
+
+390
+01:25:45,363 --> 01:25:48,443
+Quartiles are also quantiles.
+
+391
+01:25:49,343 --> 01:25:53,103
+They divide the distribution into four equal parts.
+
+392
+01:25:56,523 --> 01:25:59,263
+Percentiles are again quantiles.
+
+393
+01:25:59,683 --> 01:26:03,843
+They divide the distribution into 100 equal parts.
+
+394
+01:26:06,783 --> 01:26:09,043
+Dizis are again quantiles.
+
+395
+01:26:09,183 --> 01:26:10,223
+They divide...
+
+396
+01:26:10,239 --> 01:26:17,239
+ve gen ifadesi konuları
+
+397
+01:26:33,587 --> 01:27:00,363
+İzlediğiniz için, birçok
+
+398
+01:27:02,515 --> 01:27:11,175
+Median is known as, 2nd quartile, in terms of quartiles.
+
+399
+01:27:13,175 --> 01:27:14,675
+Shorty Q2.
+
+400
+01:27:15,855 --> 01:27:19,775
+Given Q2, we can find the first quartile, Q1,
+
+401
+01:27:21,456 --> 01:27:27,575
+by simply taking the median value of those samples that lie below the 2nd quartile,
+
+402
+01:27:29,747 --> 01:27:33,747
+We can also find the third quartile
+
+403
+01:27:35,747 --> 01:27:40,747
+by taking the median value of those samples that lie above the second quartile.
+
+404
+01:27:40,747 --> 01:27:44,747
+Quartiles can also be found in terms of percentiles.
+
+405
+01:27:44,747 --> 01:27:47,747
+First quartile is 25th percentile,
+
+406
+01:27:47,747 --> 01:27:50,747
+second quartile is 50th percentile
+
+407
+01:27:50,747 --> 01:27:53,747
+and third quartile is 75th percentile.
+
+408
+01:27:57,332 --> 01:28:05,332
+Here is a pictorial description of the Q1, Q2, and Q3 coins.
+
+409
+01:28:09,427 --> 01:28:11,427
+On distribution.
+
+410
+01:28:13,427 --> 01:28:28,427
+So, usually to represent a data set in terms of descriptive statistics, there are five features used.
+
+411
+01:28:28,427 --> 01:28:31,427
+They are known as five-number summary.
+
+412
+01:28:31,427 --> 01:28:36,427
+These are minimum of the data set.
+
+413
+01:28:37,492 --> 01:28:47,404
+Bu, bu
+
+414
+01:28:50,676 --> 01:29:01,275
+Maximum, which is the largest value of the variable in our sample, which is also known as the 1 quantile.
+
+415
+01:29:02,396 --> 01:29:12,376
+Minimum and maximum along with quartiles are known as 5 number sumare.
+
+416
+01:29:13,268 --> 01:29:18,268
+Minimum, Maximum, Q1, Q2, Q3.
+
+417
+01:29:18,268 --> 01:29:21,268
+These are known as five numbers simonet.
+
+418
+01:29:24,268 --> 01:29:28,268
+These are usually presented in the increasing order.
+
+419
+01:29:28,268 --> 01:29:32,939
+Minimum, 1st quartile, Median, 3rd quartile and Maximum.
+
+420
+01:30:01,492 --> 01:30:15,412
+The first one is the range, which is described as the difference between the maximum observed value and the minimum observed value.
+
+421
+01:30:16,072 --> 01:30:17,811
+This is known as range.
+
+422
+01:30:18,692 --> 01:30:25,672
+The other one is the interquartile range, or shortly I2R.
+
+423
+01:30:43,764 --> 01:30:44,764
+As well.
+
+424
+01:30:46,764 --> 01:30:47,764
+Okay.
+
+425
+01:30:49,764 --> 01:30:51,764
+We mentioned boxplots.
+
+426
+01:30:51,764 --> 01:30:55,764
+Boxplots are a visualization technique,
+
+427
+01:30:55,764 --> 01:30:58,764
+which uses the minimum,
+
+428
+01:30:58,764 --> 01:31:00,764
+first quarter,
+
+429
+01:31:00,764 --> 01:31:04,764
+median, second quarter, third quarter and maximum.
+
+430
+01:31:05,764 --> 01:31:09,764
+These five number summaries used to visualize
+
+431
+01:31:11,988 --> 01:31:14,747
+Data, features.
+
+432
+01:31:18,068 --> 01:31:18,448
+Okay.
+
+433
+01:31:22,448 --> 01:31:35,388
+By doing this, it will be quite efficient to determine if there are some outliers in a dataset or not.
+
+434
+01:31:39,828 --> 01:32:04,948
+The definition of outliers will be if we have once we determine the interquartile range, if there is any value above the Q2 which exceeds three times interquartile range,
+
+435
+01:32:06,676 --> 01:32:33,316
+is known as outlier. If there is any value below the q1 that exceeds 3 times eqr, also are considered as outliers. q3 plus 3 times iqr, q1 minus 3 times iqr.
+
+436
+01:32:36,948 --> 01:32:53,948
+And if this 3 becomes 1.5, then any values exceeding these can be considered as suspected outliers.
+
+437
+01:32:59,347 --> 01:33:02,948
+These are definitions of outliers in a dataset.
+
+438
+01:33:06,547 --> 01:33:10,587
+Before data analysis,
+
+439
+01:33:16,948 --> 01:33:21,948
+Data transformations are also used extensively.
+
+440
+01:33:22,948 --> 01:33:34,948
+Data transformations are basically processes which makes some features more apparent or some processes easier.
+
+441
+01:33:39,828 --> 01:34:03,828
+Bersi, we rely on data transformation techniques to reduce the influence of extreme values in our analysis, the reasons for data transformation to make the distribution of the data more normal or to create more informative graphs of the data for better outside identification.
+
+442
+01:34:31,604 --> 01:34:34,604
+Another concept is Coefficient of Variation.
+
+443
+01:34:34,604 --> 01:34:44,604
+In general, Coefficient of Variation is used to compare variables in terms of the dispersion when the means are substantially different,
+
+444
+01:34:45,604 --> 01:34:49,604
+possibly as the result of having different measurement units.
+
+445
+01:34:49,604 --> 01:34:57,579
+To quantify dispersion independent of units is used to use Coefficient of Variation.
+
+446
+01:34:57,908 --> 01:35:06,268
+Bu, standard deviation divided by the sample mean, assuming that the mean is a positive number,
+
+447
+01:35:07,028 --> 01:35:12,108
+which is given by this simple equation, the coefficient of variation.
+
+448
+01:35:14,628 --> 01:35:18,427
+Standard deviation divided by the sample mean.
+
+449
+01:35:23,060 --> 01:35:27,060
+Scaling then shifting variables can be used.
+
+450
+01:35:32,851 --> 01:35:41,012
+ve, obviously, birçok parametresi var. Bu, birçok parametresi var. Bu, birçok parametresi var.
+
+451
+01:35:45,524 --> 01:36:02,604
+When we multiply the observed values of a variable by a constant a, its mean, standard deviation and variance are multiplied by a, absolute value of a and a squared respectively.
+
+452
+01:36:07,956 --> 01:36:15,636
+y is multiplied by x, x is multiplied by a, then,
+
+453
+01:36:19,796 --> 01:36:32,176
+Mean will be this, standard deviation will be this, and variance will be this.
+
+454
+01:36:35,176 --> 01:36:43,716
+Coefficient of variation will not be affected by scaling and shifting process.
+
+455
+01:36:48,275 --> 01:37:11,055
+If we shift the observed value by B, which is shown here as x is shifted by B, then the mean, standard deviation and variation will be given as we stated here.
+
+456
+01:37:13,171 --> 01:37:28,171
+If you multiply the observed values by the constant A and then add the constant B to the result, then the respective parameters or measures will be shown here.
+
+457
+01:37:30,171 --> 01:37:34,171
+The coefficient of variation will change obviously.
+
+458
+01:37:40,916 --> 01:37:44,235
+Another method to use is variable standardization.
+
+459
+01:37:45,775 --> 01:37:48,315
+It's a simple linear transformation.
+
+460
+01:37:49,855 --> 01:37:59,855
+Where we subtract the sample mean x from the observed values and divide the result by the sample standard deviation.
+
+461
+01:37:59,855 --> 01:38:07,796
+This is one of the common methods used for variable standardization.
+
+462
+01:38:09,652 --> 01:38:11,912
+What will happen if we do this?
+
+463
+01:38:17,876 --> 01:38:26,556
+The mean will be shifted to the zero and standard deviation will be made equal to one by standardizing.
+
+464
+01:38:28,316 --> 01:38:35,376
+Here is the standardization. There are a couple of more standardizations but it's beyond the scope of this course.
+
+465
+01:38:37,595 --> 01:38:45,376
+This is variable standardization. You subtract mean from the data sample and divide by.
+
+466
+01:38:46,452 --> 01:38:48,452
+standard deviation.
+
+467
+01:38:50,852 --> 01:38:55,652
+Using such transformation is especially common in regression analysis and clustering.
+
+468
+01:38:56,452 --> 01:39:09,811
+It also gives you the possibility of designing a generalized analysis system which can take any value.
+
+469
+01:39:12,275 --> 01:39:14,275
+Givesi correct results.
+
+470
+01:39:15,275 --> 01:39:18,275
+Because it is independent of the scale of
+
+471
+01:39:19,275 --> 01:39:20,275
+Data.
+
+472
+01:39:20,275 --> 01:39:22,275
+Since it is normalized between
+
+473
+01:39:24,275 --> 01:39:26,028
+0 and 1.
+
+474
+01:39:31,028 --> 01:39:32,347
+1N-1.
+
+475
+01:39:38,452 --> 01:39:39,452
+Anyway, dedi
+
+476
+01:39:43,988 --> 01:39:44,988
+Ok.
+
+477
+01:39:49,011 --> 01:40:01,011
+Another analysis is to explore the relationship between variables.
+
+478
+01:40:03,011 --> 01:40:08,011
+If we have two numerical variables,
+
+479
+01:40:37,363 --> 01:40:41,863
+since the data come from an observational study.
+
+480
+01:40:42,863 --> 01:40:49,363
+Here we have an example to association relationship.
+
+481
+01:40:52,363 --> 01:40:59,363
+There is a positive linear relationship between these two variables.
+
+482
+01:41:00,863 --> 01:41:04,363
+What is this abdomen end?
+
+483
+01:41:05,684 --> 01:41:07,684
+Sehri-coefficient.
+
+484
+01:41:07,684 --> 01:41:08,684
+Anyway,
+
+485
+01:41:11,684 --> 01:41:16,684
+Here we have, for example, another relationship, which is negative relationship.
+
+486
+01:41:16,684 --> 01:41:22,684
+There is a linear negative relationship between two variables.
+
+487
+01:41:24,684 --> 01:41:26,684
+Let's say x and y variable.
+
+488
+01:41:28,684 --> 01:41:29,684
+Here,
+
+489
+01:41:31,091 --> 01:41:41,091
+There is no relation or very very small, assumed to be no relation.
+
+490
+01:41:43,091 --> 01:41:47,091
+In this one, there is a relation but it's nonlinear.
+
+491
+01:41:51,507 --> 01:42:00,427
+Bu birçok bir relation var, ama çünkü bu birçok bir relation var,
+
+492
+01:42:00,427 --> 01:42:03,427
+bu birçok bir relation var.
+
+493
+01:42:03,427 --> 01:42:07,547
+Eğer bu birçok bir birçok bir relation var,
+
+494
+01:42:07,547 --> 01:42:12,427
+bu birçok birçok bir relation var.
+
+495
+01:42:12,427 --> 01:42:17,427
+Bu birçok birçok bir relation var.
+
+496
+01:42:17,876 --> 01:42:21,876
+ve bu şekilde bu şekilde
+
+497
+01:42:21,876 --> 01:42:23,876
+ve bu şekilde
+
+498
+01:42:23,876 --> 01:42:24,876
+artık bu kadar
+
+499
+01:42:24,876 --> 01:42:25,876
+bir relation
+
+500
+01:42:25,876 --> 01:42:38,028
+bu
+
+501
+01:42:59,667 --> 01:43:14,107
+Koalition is basically a method to explore the relationship between two variables, one tattively.
+
+502
+01:43:19,155 --> 01:43:27,835
+If we consider a set of observed pair values, such as this one, x1, y1, x2, y2, etc.
+
+503
+01:43:28,915 --> 01:43:42,055
+For a sample of any observations, Pearson's correlation coefficient can be used as summary statistics, which is given in this equation.
+
+504
+01:43:44,783 --> 01:43:49,783
+bu
+
+505
+01:43:44,435 --> 01:43:48,435
+Bu da bu da analizde kullanılıyor.
+
+506
+01:43:54,484 --> 01:43:58,484
+to explore the relationship between two variables.
+
+507
+01:44:00,083 --> 01:44:06,484
+In this equation, Sx and Sy denotes the sample standard radiations.
+
+508
+01:44:06,484 --> 01:44:12,484
+The values of R are always between minus 1 and plus 1.
+
+509
+01:44:12,484 --> 01:44:17,484
+Plus 1 means...
+
+510
+01:44:20,532 --> 01:44:38,652
+Complete relationship, basically x and y are the same. Minus 1 means x and y are the same, but they have 180 degree phase shift.
+
+511
+01:44:42,163 --> 01:44:48,743
+Any value between minus 1 and plus 1 indicates a certain degrowth relationship.
+
+512
+01:44:52,115 --> 01:44:58,636
+If the correlation coefficient is positive, then relationship is positive.
+
+513
+01:45:00,636 --> 01:45:07,636
+When one value is linearly increasing, the other one also increasing.
+
+514
+01:45:08,996 --> 01:45:13,516
+If negative, that means relationship is negative.
+
+515
+01:45:13,896 --> 01:45:17,376
+One, while one is increasing, the other one is decreasing.
+
+516
+01:45:20,180 --> 01:45:34,439
+If the coefficient coefficient is greater than 0.5, usually it indicates that relationship is stronger.
+
+517
+01:45:43,500 --> 01:45:46,500
+bu
+
+518
+01:45:42,963 --> 01:45:44,963
+Evet
+
+519
+01:45:44,963 --> 01:45:48,963
+Öğrençlerle
+
+520
+01:45:48,963 --> 01:45:50,963
+İki numarik var
+
+521
+01:45:50,963 --> 01:45:52,963
+Bir diğer metodur
+
+522
+01:45:52,963 --> 01:45:54,891
+İki bir çorucu
+
+523
+01:45:59,923 --> 01:46:23,627
+Bu, bu
+
+524
+01:46:23,699 --> 01:46:27,380
+İstediğe, we can use cross-correlation.
+
+525
+01:46:27,920 --> 01:46:32,059
+It considers all possible relationships.
+
+526
+01:46:33,019 --> 01:46:40,720
+And by applying the cross-correlation rather than one value, you get a relationship distribution.
+
+527
+01:46:42,859 --> 01:46:43,279
+Thank you.
+
+528
+01:46:45,279 --> 01:46:46,224
+If...
+
+529
+01:46:46,224 --> 01:46:52,524
+X and Y are the same quantities. They are known as autocorrelation.
+
+530
+01:46:56,532 --> 01:47:00,532
+Algoritim for cross or autocorrelation
+
+531
+01:47:03,532 --> 01:47:04,532
+Can be
+
+532
+01:47:06,532 --> 01:47:08,532
+Given as
+
+533
+01:47:09,532 --> 01:47:11,532
+Two for loops
+
+534
+01:47:13,532 --> 01:47:14,532
+Which is
+
+535
+01:47:15,532 --> 01:47:17,532
+Quite time consuming
+
+536
+01:47:18,579 --> 01:47:22,579
+Algoritim, in terms of implementation.
+
+537
+01:47:22,579 --> 01:47:29,579
+There are alternative implementation known as fast correlation based on fast-breeo transform.
+
+538
+01:47:29,579 --> 01:47:35,579
+But it is beyond the scope of this course, describing this algorithm.
+
+539
+01:47:44,340 --> 01:47:49,940
+Another parameter to explore the relationship is sample covariance.
+
+540
+01:47:51,140 --> 01:47:56,940
+If the standard deviations are removed from the denominator in Pearson's correlation coefficient,
+
+541
+01:47:56,940 --> 01:48:03,460
+the statistics are called the sample covariance, which is given by this, is related to
+
+542
+01:48:09,844 --> 01:48:22,844
+bu
+
+543
+01:48:25,716 --> 01:48:39,716
+If we have two categorical variables, then relationships can be explored by using contingency tables.
+
+544
+01:48:41,716 --> 01:48:48,716
+This table is used to summarize the relationship between several categorical variables.
+
+545
+01:48:48,716 --> 01:48:52,716
+As a special type of frequency distribution table,
+
+546
+01:48:54,068 --> 01:49:01,068
+İki adı var, iki adı var, şunlalısıyla, kontingency tablalarını işleyeceğiz.
+
+547
+01:49:01,068 --> 01:49:05,068
+Bu bir örnek adı var, kontingency tablalarını işleyeceğiz.
+
+548
+01:49:21,520 --> 01:49:37,520
+bu
+
+549
+01:49:20,532 --> 01:49:27,532
+bu şekilde bir şekilde
+
+550
+01:49:27,532 --> 01:49:48,460
+bir şekilde
+
+551
+01:49:49,587 --> 01:50:15,403
+ve bu şekilde kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı
+
+552
+01:50:17,203 --> 01:50:26,844
+Proportion of people suffered from heart attack reduces by 0.0077 in aspirin group compared to the placebo group.
+
+553
+01:50:26,844 --> 01:50:38,683
+Or, if we determine the more meaningful measure for this, we say minus 45%.
+
+554
+01:50:40,787 --> 01:50:49,787
+Another common summary statistics for comparing sample proportions is the relative proportion, which is a ratio of these two proportions.
+
+555
+01:50:51,787 --> 01:50:59,787
+If these two are equal, the ratio will be 1, which has no relationship between the two categorical variables.
+
+556
+01:51:04,819 --> 01:51:09,259
+So, it is more common to compare the sample odds.
+
+557
+01:51:09,259 --> 01:51:16,259
+We already used this term odds in previous lectures,
+
+558
+01:51:16,259 --> 01:51:24,099
+which is determined as given this equation,
+
+559
+01:51:24,099 --> 01:51:28,979
+where p is the sample proportion for the event of interest.
+
+560
+01:51:29,619 --> 01:51:37,460
+Otsa, a heart attack in the placebo group O1 and in the aspirin group O2 can be determined as this one.
+
+561
+01:51:39,079 --> 01:51:45,859
+We usually compare the sample odds using the sample odds ratio, which is given by this one, 054.
+
+562
+01:51:47,460 --> 01:51:56,119
+If this OR is 1, it means there is no relationship between.
+
+563
+01:51:57,427 --> 01:52:00,427
+These two variables.
+
+564
+01:52:00,427 --> 01:52:10,123
+Values of or are away from one indicates strong relationships.
+
+565
+01:52:14,739 --> 01:52:26,739
+If we want to compare numerical and categorical variables, we can use dotplots to visualize this relationship,
+
+566
+01:52:26,739 --> 01:52:38,739
+it's also known as clipchart. Dotplots of ascorbic acid, for example, which is one form of vitamin C content.
+
+567
+01:52:38,863 --> 01:52:42,863
+Bu kultuvar, bir kategorik variable.
+
+568
+01:52:42,863 --> 01:52:44,863
+Ayrıca bir numarik variable.
+
+569
+01:52:44,863 --> 01:52:46,863
+Bu kategorik variable,
+
+570
+01:52:46,863 --> 01:52:48,863
+bir numarik variable,
+
+571
+01:52:48,863 --> 01:52:50,863
+bir numarik variable.
+
+572
+01:52:50,863 --> 01:52:52,863
+Bir numarik variable,
+
+573
+01:52:52,863 --> 01:52:54,863
+bir numarik variable.
+
+574
+01:52:54,863 --> 01:52:56,863
+Bu numarik variable.
+
+575
+01:52:58,863 --> 01:53:02,863
+Bu kategorik variable.
+
+576
+01:53:03,347 --> 01:53:06,807
+Categori 1, ve Categori 2.
+
+577
+01:53:11,604 --> 01:53:19,804
+Boxplots of the numerical variable for different values of the categorical variable can be also used.
+
+578
+01:53:20,804 --> 01:53:26,204
+Here, boxplots are used to compare two categorical variables.
+
+579
+01:53:29,779 --> 01:53:50,380
+Bu, bu
+
+580
+01:54:03,667 --> 01:54:08,827
+Ok, if there is a measure, there is always some sort of uncertainty.
+
+581
+01:54:08,827 --> 01:54:19,648
+In statistics, uncertainty is usually measured by using probability.
+
+582
+01:54:24,372 --> 01:54:31,872
+Plots and summary statistics are used to learn about distribution of variables and to investigate their relationship.
+
+583
+01:54:32,872 --> 01:54:41,836
+But as we said, there is always some sort of uncertainty and with Earth's uncertainty...
+
+584
+01:54:44,851 --> 01:55:01,291
+Can be measured by using the probability. Probability is a measure of uncertainty. If there is no uncertainty, there is no probability.
+
+585
+01:55:01,291 --> 01:55:07,291
+That means, which is deterministic.
+
+586
+01:55:13,108 --> 01:55:24,108
+So, in this respect, a phenomenon is called random if its outcome cannot be determined with certainty before it occurs.
+
+587
+01:55:25,108 --> 01:55:36,108
+The collection of all possible outcomes, as is called the sample space, in each possible outcome in the sample space, we assign a probability P.
+
+588
+01:55:36,884 --> 01:56:01,739
+Bu, bu
+
+589
+01:56:11,060 --> 01:56:30,420
+An event is a subset of the sample spaces. Of course, we are not intending to give you whole probability theory within these couple of hours, but we simply want to cover these subjects, just to remind you.
+
+590
+01:56:36,148 --> 01:56:42,328
+We denote the probability of event E as P, E probability of event E.
+
+591
+01:56:43,008 --> 01:56:51,168
+The probability of an event E is the sum of the probabilities for all individual outcomes included in the event.
+
+592
+01:56:51,488 --> 01:57:03,328
+For an event E, we define its complement, E complement, as the set of all outcomes that are in the sample space S, but not in E.
+
+593
+01:57:07,731 --> 01:57:17,891
+The probability of the complement event is simply 1 minus probability of event because the total will be 1.
+
+594
+01:57:22,228 --> 01:57:34,228
+The odds of an event shows how much more certain we are that the event occurs than we are that it does not occur.
+
+595
+01:57:34,228 --> 01:57:39,228
+For an event e, we calculate the odds as follows.
+
+596
+01:57:39,228 --> 01:57:49,228
+This is basically the same equations we define.
+
+597
+01:57:50,100 --> 01:57:57,100
+Açık bir dakika daha önceki kategorik variabler.
+
+598
+01:58:24,979 --> 01:58:31,139
+Bu, R'ın logic ve N'ın logic.
+
+599
+01:58:32,659 --> 01:58:35,819
+Sektör, you should remember the Sektör basically.
+
+600
+01:58:35,819 --> 01:58:38,279
+Bu, 11th turn.
+
+601
+01:58:39,399 --> 01:58:40,639
+Algebra as well.
+
+602
+01:59:08,532 --> 01:59:34,532
+İntro
+
+603
+01:59:36,087 --> 01:59:38,087
+İntekçinin bir
+
+604
+01:59:35,220 --> 01:59:45,059
+Probabiliter of event 1 plus probability of event 2 minus intersection of these two probabilities.
+
+605
+01:59:47,779 --> 01:59:49,059
+Two events.
+
+606
+01:59:55,283 --> 02:00:02,163
+Filums are called disjoint or mutually exclusive if they never occur together.
+
+607
+02:00:06,840 --> 02:00:10,840
+İntro
+
+608
+02:00:05,971 --> 02:00:09,971
+Bu önemli definiçilerin de parabiliyaz.
+
+609
+02:00:09,971 --> 02:00:13,971
+Bu parabiliyaz, denot edilmiştir
+
+610
+02:00:13,971 --> 02:00:36,807
+bu parabiliyaz,
+
+611
+02:00:27,283 --> 02:00:29,283
+Bu ekranı bir ekranı.
+
+612
+02:00:31,923 --> 02:00:33,423
+İki bir e1 ve e2 yüzeyde
+
+613
+02:00:33,423 --> 02:00:36,563
+yüzeyde yüzeyde
+
+614
+02:00:36,563 --> 02:00:38,243
+bir e1
+
+615
+02:00:38,243 --> 02:00:54,283
+yüzeyde
+
+616
+02:00:55,975 --> 02:00:56,975
+İçin bir
+
+617
+02:00:54,228 --> 02:01:07,347
+All intersections can be determined by simply multiplication by marginal probabilities of each event if they are independent.
+
+618
+02:01:15,507 --> 02:01:25,507
+So, according to Bayer's theorem or Bayer's rule, for two events e1 and e2, the polarity equation shows the relationship between
+
+619
+02:01:25,507 --> 02:01:32,507
+conditional probability of this one and conditional probability of this one.
+
+620
+02:01:32,507 --> 02:01:43,083
+It is probability of e2 condition on e1 and probability of e1 condition on e2.
+
+621
+02:01:44,095 --> 02:01:46,095
+yüzeyde
+
+622
+02:01:43,347 --> 02:01:55,948
+Bu, bu
+
+623
+02:02:02,068 --> 02:02:17,292
+Bu bir
+
+624
+02:02:23,155 --> 02:02:26,556
+Bu random phenomena can be observed repeatedly.
+
+625
+02:02:26,556 --> 02:02:31,355
+These repeated experiments or observations are called trials.
+
+626
+02:02:31,355 --> 02:02:39,755
+For such random phenomena, the probability of an event can be interpreted in terms of the relative frequency.
+
+627
+02:02:39,755 --> 02:02:45,355
+This interpretation of probability requires two important assumptions.
+
+628
+02:02:45,355 --> 02:02:50,956
+First, we assume that the probability of an event does not change from one trial to another.
+
+629
+02:02:56,444 --> 02:03:01,444
+Bir sonraki bir trial da bir bir trial da bir bir tereyağe görebilecek.
+
+630
+02:03:04,444 --> 02:03:07,444
+Bu bir çok kısmı bir bir tereğe.
+
+631
+02:03:09,444 --> 02:03:12,428
+Bir sonraki bir koncept.
+
+632
+02:03:13,555 --> 02:03:26,915
+Çünkü, if you remember, we use these probability concepts in many algorithms, bioinformatik algorithms.
+
+633
+02:03:30,195 --> 02:03:33,875
+Distributions, we frequently talk about distributions.
+
+634
+02:03:38,452 --> 02:03:41,452
+BASICALLY, there is the spread of data.
+
+635
+02:03:43,452 --> 02:03:46,452
+There is about the spread of the data.
+
+636
+02:03:47,452 --> 02:03:52,452
+The spread of data may be regular skewed, Gaussian, or other.
+
+637
+02:03:54,452 --> 02:04:00,452
+The Gaussian distribution is given by this exponential equation.
+
+638
+02:04:02,836 --> 02:04:12,736
+In this equation, nu is the true mean, population mean, and sigma is the true standard deviation of a very large number of measurements.
+
+639
+02:04:15,876 --> 02:04:23,816
+Here is the several distributions and relationship with standard deviation and mean.
+
+640
+02:04:26,868 --> 02:04:30,868
+Bu normal distribution, we already set this concept.
+
+641
+02:04:30,868 --> 02:04:37,868
+It is 60, almost 68 percent of the data lines between plus minus minus t, etc.
+
+642
+02:04:37,868 --> 02:04:49,868
+Alpha is the tail probability that x, s does not differ from u by more than sigma, delta, etc.
+
+643
+02:04:53,619 --> 02:05:02,619
+Poison Probability Distribution. Poison Probability, this density function is another type of distribution.
+
+644
+02:05:02,619 --> 02:05:13,619
+It can describe among other things the probability of radioactive decay events, cells flowing through a counter or the incidence of flight photons.
+
+645
+02:05:14,619 --> 02:05:20,395
+The probability that a particular number of events k will occur in a measurement
+
+646
+02:05:20,435 --> 02:05:28,596
+Averişim nükleotit, M is given by this equation. Bu, Poizondi probability.
+
+647
+02:05:28,596 --> 02:05:34,275
+Standard deviation of the Poizondi distribution is simply square M.
+
+648
+02:05:34,275 --> 02:05:44,836
+A typical Poizondi distribution for M3 is a discrete distribution.
+
+649
+02:05:51,956 --> 02:05:52,956
+Okay.
+
+650
+02:05:52,956 --> 02:05:55,956
+Another concept is parameter estimation.
+
+651
+02:05:55,956 --> 02:06:04,956
+The objective of statistics is to make inferences about the population based on information contained in a sample.
+
+652
+02:06:04,956 --> 02:06:17,956
+Populations are characterized by numerical descriptive measures called parameters in any data science algorithm or machine learning or artificial intelligence algorithms.
+
+653
+02:06:18,292 --> 02:06:23,292
+Deskriptive measures are used in terms of parameters.
+
+654
+02:06:23,292 --> 02:06:35,292
+Typical population parameters are mean, as we already mentioned, median, standard deviation, and proportion.
+
+655
+02:06:35,292 --> 02:06:43,948
+Most inferential problems can be formulated as an inference about one or more parameters of the population.
+
+656
+02:06:44,819 --> 02:06:51,139
+Metads for making confirmas about parameters fall into one of two categories.
+
+657
+02:06:53,159 --> 02:06:57,619
+The first is estimate the value of the population parameter of interest.
+
+658
+02:06:58,599 --> 02:07:03,059
+The second is test the hypothesis about the value of the parameter.
+
+659
+02:07:24,851 --> 02:07:29,851
+In testing the hypothesis, we are seeking an answer to the question,
+
+660
+02:07:29,851 --> 02:07:34,851
+does the population parameter satisfy a specified condition?
+
+661
+02:07:37,851 --> 02:07:45,851
+Estimation refers to the process of guessing the unknown value of the parameter.
+
+662
+02:07:48,851 --> 02:07:51,851
+The unknown value of parameter
+
+663
+02:07:52,500 --> 02:07:55,119
+Bu, say, for example, population mean.
+
+664
+02:07:55,539 --> 02:07:57,819
+We never know the real population mean.
+
+665
+02:07:58,359 --> 02:08:02,939
+But we can estimate it by using the sample mean.
+
+666
+02:08:04,619 --> 02:08:06,239
+Or observed data.
+
+667
+02:08:06,800 --> 02:08:06,939
+Okay.
+
+668
+02:08:07,719 --> 02:08:11,840
+For this, an estimator which is a statistic is used.
+
+669
+02:08:11,840 --> 02:08:15,479
+A statistic is a function of the observed data only.
+
+670
+02:08:16,199 --> 02:08:18,079
+It's a number of functions.
+
+671
+02:08:18,515 --> 02:08:22,515
+Sometimes we only provide a single value as our estimate.
+
+672
+02:08:22,515 --> 02:08:26,515
+This is called point estimation.
+
+673
+02:08:26,515 --> 02:08:33,515
+If we provide a single value, we call it point estimation.
+
+674
+02:08:33,515 --> 02:08:40,515
+Point estimates do not reflect our uncertainty when estimating a parameter.
+
+675
+02:08:41,203 --> 02:08:52,203
+We always remain uncertain regarding the true value of the parameter when we estimate it using a sample from the cocculation.
+
+676
+02:08:52,203 --> 02:08:59,203
+Because there will be always an error between real value and the estimated value.
+
+677
+02:08:59,203 --> 02:09:05,996
+To address this issue, we can present our estimates in terms of a range of possible values.
+
+678
+02:09:06,804 --> 02:09:10,644
+İntarval estimasyon.
+
+679
+02:09:13,403 --> 02:09:15,403
+So, we then...
+
+680
+02:09:20,003 --> 02:09:22,403
+Regarding the hypothesis testing...
+
+681
+02:09:24,804 --> 02:09:26,003
+The hypothesis...
+
+682
+02:09:28,403 --> 02:09:28,804
+Is a...
+
+683
+02:09:29,203 --> 02:09:34,904
+Testimle statement about the relationship between two or more variables.
+
+684
+02:09:38,612 --> 02:09:43,612
+A Proposed Explanation for some observed phenomena
+
+685
+02:09:43,612 --> 02:09:52,612
+In a scientific experiment or study, the hypothesis is a brief summation of the research's prediction of the study's findings,
+
+686
+02:09:52,612 --> 02:09:56,612
+which may be supported or not by the outcome.
+
+687
+02:09:56,612 --> 02:09:59,532
+Hypothesis testing is the...
+
+688
+02:10:00,051 --> 02:10:03,051
+bu metodur, bu metodur,
+
+689
+02:10:03,051 --> 02:10:19,243
+bu metodur,
+
+690
+02:10:40,275 --> 02:11:05,099
+Bu da, bu
+
+691
+02:11:05,171 --> 02:11:21,171
+...
+
+692
+02:11:22,068 --> 02:11:27,068
+In general, many scientific investigations start by expressing a hypothesis.
+
+693
+02:11:27,068 --> 02:11:35,068
+To evaluate a hypothesis, rely on estimators, their sampling distributions, and their specific values from observed data.
+
+694
+02:11:36,068 --> 02:11:37,068
+Briefly.
+
+695
+02:11:38,068 --> 02:11:42,068
+For example, anyway, I just skip this example.
+
+696
+02:11:47,252 --> 02:11:55,252
+Now in hypothesis testing, basically, there are two hypothesis used.
+
+697
+02:11:55,252 --> 02:12:01,252
+One is known as NUM and the other one is known as Alternative Hypothesis.
+
+698
+02:12:01,252 --> 02:12:08,252
+The NUM hypothesis usually reflects the status quo or nothing of interest.
+
+699
+02:12:10,252 --> 02:12:14,252
+In contrast, we refer to our hypothesis.
+
+700
+02:12:15,283 --> 02:12:24,603
+As the alternative hypothesis and is usually denoted as HA symbolically.
+
+701
+02:12:24,603 --> 02:12:29,683
+The null hypothesis is usually denoted as H0.
+
+702
+02:12:34,279 --> 02:12:46,279
+...
+
+703
+02:12:33,587 --> 02:13:18,827
+Bu, bu
+
+704
+02:13:45,971 --> 02:13:53,971
+We denote the probability of making type 1 error as alpha and the probability of making type 2 error as beta.
+
+705
+02:13:53,971 --> 02:14:02,971
+And here is the table for these types.
+
+706
+02:14:02,971 --> 02:14:12,971
+Basically extension of these errors with multiple parameters known as in machine learning or in...
+
+707
+02:14:13,119 --> 02:14:16,119
+Adikşin business on all data mining
+
+708
+02:14:17,119 --> 02:14:19,115
+What is the name anybody knows?
+
+709
+02:14:26,996 --> 02:14:28,300
+ModTable.
+
+710
+02:14:44,692 --> 02:14:45,212
+Ok.
+
+711
+02:14:53,203 --> 02:15:21,099
+İlk olarak, bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayarlarımızın bir ayar
+
+712
+02:15:52,724 --> 02:16:03,724
+To decide whether we should reject the null hypothesis, we quantify the empirical support against the null hypothesis using some statistics.
+
+713
+02:16:03,724 --> 02:16:12,492
+We use statistics to evaluate our hypothesis. We refer to this statistic as test statistics.
+
+714
+02:16:16,020 --> 02:16:26,020
+Bu, a statistic to be considered as a test statistic, its sampling distribution must be fully known under the null hypothesis.
+
+715
+02:16:26,020 --> 02:16:34,020
+We refer to the distribution of test statistics under the null hypothesis as the null distribution.
+
+716
+02:16:34,020 --> 02:16:36,020
+Ok.
+
+717
+02:16:43,860 --> 02:16:50,860
+Another commonly used method in statistical data analysis is regression analysis.
+
+718
+02:16:53,860 --> 02:17:09,860
+So obviously I am just reminding you these concepts or subjects in statistics or statistical data analysis because they are extensively used in bioinformatics as well.
+
+719
+02:17:11,507 --> 02:17:36,683
+Bu da bu
+
+720
+02:17:36,979 --> 02:17:47,979
+Anyway, let me talk about regression analysis. Regression analysis is basically some sort of...
+
+721
+02:17:47,979 --> 02:17:51,979
+...caus...
+
+722
+02:17:51,979 --> 02:17:58,979
+...trys to explore the causation analysis, basically.
+
+723
+02:17:59,763 --> 02:18:11,763
+The modeling of relationship between a response variable and a set of explanatory variables is one of the most widely used of all statistical techniques.
+
+724
+02:18:13,763 --> 02:18:25,763
+We have some variables, response variable or input variable and response variable, and there's a causation effect.
+
+725
+02:18:27,443 --> 02:18:47,763
+We refer to this type of modeling as regression analysis. Regression analysis is basically one of the most fundamental concepts also discussed under the artificial intelligence or machine learning concept.
+
+726
+02:18:51,476 --> 02:19:06,675
+A regression model provides the user with a functional relationship between the response variable and explanatory variables that allows the user to determine which of the explanatory variables have an effect on the response.
+
+727
+02:19:07,675 --> 02:19:09,076
+This is the causation effect.
+
+728
+02:19:09,756 --> 02:19:15,995
+It is not a simple relationship, but it's a causation effect.
+
+729
+02:19:16,884 --> 02:19:25,884
+The regression model allows the user to explore what happens to the response variable for specified changes in the explanatory variables.
+
+730
+02:19:28,884 --> 02:19:37,884
+The basic idea of regression analysis to obtain a model for the function relationship between a response variable.
+
+731
+02:19:39,884 --> 02:19:41,884
+It is sometimes...
+
+732
+02:19:42,324 --> 02:19:48,324
+ve dekendim variyable ve dekendim variyable ve dekendim variyable.
+
+733
+02:19:48,324 --> 02:19:52,324
+Ve dekendim variyable, dekendim variyable.
+
+734
+02:19:53,324 --> 02:19:58,324
+Regression models have a number of uses in practice.
+
+735
+02:19:58,324 --> 02:20:03,324
+The model provides a description of the major features of the dataset.
+
+736
+02:20:05,811 --> 02:20:13,851
+İzlediğiniz için, bir süreçte de
+
+737
+02:20:28,500 --> 02:20:44,819
+The equation relating the response variable to the explanatory variables produced from the regression analysis provides estimates of the response variable for values of the explanatory variables not observed in the study.
+
+738
+02:20:44,819 --> 02:20:49,619
+It will give you the future or it will estimate the future values.
+
+739
+02:21:18,708 --> 02:21:27,468
+Regression equation will provide estimates of the subject's response for those levels not included in the study.
+
+740
+02:21:28,108 --> 02:21:40,907
+In actual study, we have a couple of real measurements, recordings, and by using these recordings, you will construct a regression model.
+
+741
+02:21:44,500 --> 02:21:53,540
+Estimating future values, as if these dos were used.
+
+742
+02:21:54,680 --> 02:22:01,420
+In business applications, the prediction of future sales of a product is crucial to production planning.
+
+743
+02:22:02,040 --> 02:22:10,639
+So, if the data provide a model that has a good fit in relating current sales to sales in previous months,
+
+744
+02:22:11,040 --> 02:22:35,372
+Ayrıca geçen de sayesinde de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yöntemler için de yö
+
+745
+02:22:36,084 --> 02:22:42,724
+relationship equation here. This is a simple regression model basically.
+
+746
+02:22:43,724 --> 02:22:54,884
+Where alpha is the intercept here, intercept. Beta is this slope of the regression line. This is the linear regression.
+
+747
+02:22:57,484 --> 02:23:00,684
+Epsilon here is called the error term.
+
+748
+02:23:03,156 --> 02:23:27,820
+Bu, bu
+
+749
+02:23:30,100 --> 02:23:32,639
+Beta is called the regression coefficient,
+
+750
+02:23:35,020 --> 02:23:37,399
+specifically for the explanatory variable.
+
+751
+02:23:39,239 --> 02:23:46,579
+The process of finding the regression parameters is called fitting a regression model to the data.
+
+752
+02:23:50,708 --> 02:23:59,708
+BASICALLY, LINEAR REGRESSION MODELS ARE USED TO PREDICT UNKNOWN VALUES OF THE RESPONSE VARIABLE.
+
+753
+02:23:59,708 --> 02:24:10,708
+THAT'S WHY IT'S BASICALLY A SUBFIELD UNDER THE GENERAL HEADING OF SUPERVISED LEARNING.
+
+754
+02:24:10,708 --> 02:24:17,708
+ARTIFICIAL INTELLIGENCE IS ONE OF THE...
+
+755
+02:24:45,620 --> 02:24:57,740
+Çünkü, we used the previous data to build the model, therefore, it is supervised learning.
+
+756
+02:25:02,100 --> 02:25:05,020
+Considering the unsupervised learning,
+
+757
+02:25:06,700 --> 02:25:13,900
+building statistical models to identify the underlying structure of data is known as unsupervised learning.
+
+758
+02:25:14,900 --> 02:25:20,579
+An important class of unsupervised learning is clustering,
+
+759
+02:25:20,579 --> 02:25:29,579
+is the first method to come into mind when we talk about unsupervised learning in clustering.
+
+760
+02:25:31,412 --> 02:25:40,731
+BASICALLY, CLUSTERING is used to identify subgroups within a population.
+
+761
+02:25:40,731 --> 02:25:48,812
+In general, cluster analysis refers to the methods that attempt to divide the data into subgroups
+
+762
+02:25:48,812 --> 02:25:57,572
+such that the observations within the same group are more similar compared to the observations in different groups.
+
+763
+02:26:00,115 --> 02:26:09,595
+In clustering, usually as a metric, the distance is used.
+
+764
+02:26:10,355 --> 02:26:15,136
+Distance measure is the core concept in any cluster analysis.
+
+765
+02:26:17,956 --> 02:26:22,876
+Usually it is known as a similarity metric rather than similarity.
+
+766
+02:26:23,935 --> 02:26:26,435
+Obviously, it is...
+
+767
+02:26:26,739 --> 02:26:54,475
+Bu yüzden de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu şekilde de bu
+
+768
+02:26:54,611 --> 02:26:56,931
+Bu da bu kursa,
+
+769
+02:26:57,931 --> 02:27:00,412
+ve bu kursa,
+
+770
+02:27:00,412 --> 02:27:03,131
+bir deklamışı kullanabilirsiniz.
+
+771
+02:27:03,131 --> 02:27:05,051
+Bu kategorik var,
+
+772
+02:27:06,051 --> 02:27:07,211
+Tamiye'de,
+
+773
+02:27:07,211 --> 02:27:16,971
+bu kursa,
+
+774
+02:27:17,851 --> 02:27:18,771
+informatik.
+
+775
+02:27:19,131 --> 02:27:21,291
+Bu kursa,
+
+776
+02:27:21,471 --> 02:27:23,791
+Distances for numerical values.
+
+777
+02:27:23,791 --> 02:27:31,471
+For example, square distance given here is a distance metric used with numerical variables.
+
+778
+02:27:33,471 --> 02:27:38,671
+In this distance, the IG refers to the distance between observations, i and j,
+
+779
+02:27:38,671 --> 02:27:47,072
+xi is the value of the random variable x and xj is the value of the observation j of this law.
+
+780
+02:27:51,891 --> 02:28:06,972
+Similarity and dissimilarity are two concepts relevant to each other and very easily mixed up to metrics.
+
+781
+02:28:07,612 --> 02:28:15,772
+Similarity is a numerical measure of how alike to date objects are, is higher when objects are more alike.
+
+782
+02:28:16,531 --> 02:28:19,531
+0 and 1
+
+783
+02:28:19,531 --> 02:28:24,971
+ve bu
+
+784
+02:28:24,971 --> 02:28:42,131
+bu
+
+785
+02:28:41,139 --> 02:28:45,220
+Upper limit, it can be infinite. There is no limit.
+
+786
+02:28:48,059 --> 02:29:01,540
+Proximity refers to a similarity or dissimilarity. Proximity concept is an umbrella concept of this similarity and dissimilarity.
+
+787
+02:29:02,700 --> 02:29:07,380
+This similarity usually measured in terms of the distance.
+
+788
+02:29:09,172 --> 02:29:10,172
+Evet.
+
+789
+02:29:12,172 --> 02:29:15,172
+As I said, there are a couple of distances.
+
+790
+02:29:16,172 --> 02:29:21,172
+First, Aplıdian distance, very common,
+
+791
+02:29:21,172 --> 02:29:25,172
+which is defined as given here.
+
+792
+02:29:25,172 --> 02:29:30,172
+This square root of total square distances.
+
+793
+02:29:35,239 --> 02:29:39,239
+bu
+
+794
+02:29:34,675 --> 02:29:40,675
+Bu numarik
+
+795
+02:29:40,675 --> 02:29:53,131
+Diyan
+
+796
+02:29:57,459 --> 02:30:06,459
+İmkoskiye'de, depending on the parameter values, they take different names.
+
+797
+02:30:06,459 --> 02:30:15,459
+For example, for R, when R is 1, it is city local Manhattan taxibar, taxibar L1 norm distance.
+
+798
+02:30:15,459 --> 02:30:22,459
+If it is 2, it is Ophelian distance. If it is infinite, it is supermonitor distance.
+
+799
+02:30:25,448 --> 02:30:33,448
+Diyan
+
+800
+02:30:24,404 --> 02:30:29,404
+In general, if we measure p random variables x1 to xp,
+
+801
+02:30:29,404 --> 02:30:37,404
+the square distance between 12 diversity j and i and j in our sample is given by this.
+
+802
+02:30:37,404 --> 02:30:44,404
+This measure of this similarity is called the squared occlusion distance.
+
+803
+02:30:44,404 --> 02:30:48,404
+Of course, there are, as I said,
+
+804
+02:30:49,492 --> 02:31:01,492
+ve
+
+805
+02:31:11,667 --> 02:31:17,268
+is distance defined for the numerical variables can be used.
+
+806
+02:31:20,755 --> 02:31:31,195
+K-means-clustering. K-means-clustering is a simple algorithm that uses the squared or prudian distance as its measure of this similarity.
+
+807
+02:31:31,195 --> 02:31:45,755
+After randomly partitioning the observations into k-groups and finding the center or center of each cluster, K-means-algotim finds the best clusters by iteratively repeating the following steps.
+
+808
+02:31:46,195 --> 02:31:56,195
+Bu, each observation, find its square oculane distance to all k-centres, and assign it to the cluster with the smallest distance.
+
+809
+02:31:56,195 --> 02:32:02,195
+After regrouping all the observations into k-clusters, recalculate the k-centres.
+
+810
+02:32:04,195 --> 02:32:08,195
+These steps are applied until the clusters do not change.
+
+811
+02:32:08,195 --> 02:32:11,084
+So, that's the k-neast clustering algorithm.
+
+812
+02:32:13,971 --> 02:32:14,371
+Ok.
+
+813
+02:32:18,708 --> 02:32:44,396
+Bu, bu
+
+814
+02:32:46,195 --> 02:32:49,195
+Bir diğer konceptı hiyeraklılıklarımızın,
+
+815
+02:32:49,195 --> 02:32:53,195
+bu konceptı ile ilgili konceptı
+
+816
+02:32:53,195 --> 02:32:58,195
+ve genetik konceptı ile ilgili konceptı
+
+817
+02:33:02,708 --> 02:33:12,868
+K-Mean clustering. K-Mean clustering has some problems, but alternatif, hierarchical clustering can be used.
+
+818
+02:33:12,868 --> 02:33:22,988
+We have already covered hierarchical clustering in filogenetik trees, so that's why I just go fast.
+
+819
+02:33:22,988 --> 02:33:25,988
+There are two approaches, divisive...
+
+820
+02:33:26,995 --> 02:33:29,995
+Bu birçok yasak ve aglomeratiydi.
+
+821
+02:33:29,995 --> 02:33:40,995
+Bu birçok yasak.
+
+822
+02:33:43,995 --> 02:33:45,995
+Birçok yasak.
+
+823
+02:33:45,995 --> 02:33:46,995
+Bu yasak.
+
+824
+02:33:46,995 --> 02:33:51,995
+Yasak.
+
+825
+02:33:52,448 --> 02:33:56,488
+Bu da aslında, bu da mizde kursusunda,
+
+826
+02:33:56,488 --> 02:33:58,488
+ve machine learning kursusunda,
+
+827
+02:34:17,843 --> 02:34:20,843
+VGADE, DIFFERENT NEME, UPGMA.
+
+828
+02:34:20,843 --> 02:34:25,843
+İçinde bir klasitlik metodur, bir klasitlik,
+
+829
+02:34:25,843 --> 02:34:29,579
+ve censiyonluik klasitlik.
+
+830
+02:34:35,891 --> 02:34:55,891
+Ok. Ok, this is basically an illustration of these different methods used in forming these clusters. Ok, that's all.
+
+831
+02:34:57,891 --> 02:35:01,891
+Regarding the statistical data analysis and statistics.
+
+832
+02:35:29,924 --> 02:35:32,924
+Bu konceptsinizde,
+
+833
+02:35:32,924 --> 02:35:34,924
+ve
+
+834
+02:35:34,924 --> 02:35:37,924
+kullanılabilirsiniz.
+
+835
+02:35:37,924 --> 02:35:39,924
+Bu konceptsinizde
+
+836
+02:35:39,924 --> 02:35:41,924
+bir soru var.
+
+837
+02:35:41,924 --> 02:35:43,532
+Bir soru var.
+
+838
+02:35:48,180 --> 02:35:49,180
+Hocam bir şey sorayım.
+
+839
+02:35:49,720 --> 02:35:50,319
+Tabii buyurun.
+
+840
+02:35:51,139 --> 02:35:53,439
+Vize notlarını ne zaman açıklayacaksınız?
+
+841
+02:35:54,619 --> 02:35:58,500
+Vize notlarını sisteme girmem lazım.
+
+842
+02:35:58,799 --> 02:36:03,360
+Vize notları aslında final bittiğinde açıklanmıştı da.
+
+843
+02:36:03,720 --> 02:36:07,180
+Yani hesaplanmıştı ama doğru size açıklamadık.
+
+844
+02:36:07,899 --> 02:36:09,239
+Sisteme gireyim bir ara ona.
+
+845
+02:36:10,159 --> 02:36:11,380
+Tamam teşekkür ederim hocam.
+
+846
+02:36:13,439 --> 02:36:14,200
+Başka?
+
+847
+02:36:15,412 --> 02:36:16,612
+Başka soru var mı?
+
+848
+02:36:34,644 --> 02:36:40,524
+Okulun bitmesine ne kadar kaldı? 3 hafta mı? Bundan sonra yoksa 2 hafta mı?
+
+849
+02:36:43,344 --> 02:36:45,404
+Bu hafta hariç 3 hafta kaldı.
+
+850
+02:36:46,164 --> 02:36:55,544
+Bu hafta hariç 3 hafta. Geriye bir visualisation konusu kaldı o 2 hafta. Bir haftayı da belki revision yaparız.
+
+851
+02:36:56,384 --> 02:36:57,724
+Yollarda sonra. Tamam.
+
+852
+02:36:58,644 --> 02:37:03,004
+DNA değil, konuları kapışabilsem.
+
+853
+02:37:09,780 --> 02:37:11,900
+Unuttuğum bir konu vardı.
+
+854
+02:37:14,380 --> 02:37:16,659
+Şeyin uygulaması olarak mesela.
+
+855
+02:37:19,860 --> 02:37:22,700
+Ortalamanın uygulaması olarak. Ortalama...
+
+856
+02:37:26,451 --> 02:37:40,572
+konsepti bazı filtre olarak kullanılıyor. Bunlar mesela Moving Average Filtering diyorlar. Median da aynı şekilde. Moving, Median, Filtering varlar.
+
+857
+02:37:41,391 --> 02:37:46,171
+Neyse haftaya, onu da haftaya şey yapalım da öyle Visualization'a geçeriz.
+
+858
+02:37:47,252 --> 02:37:52,932
+Onları çünkü yaygın olarak kullanılıyor. İlk örnekle o şeyleri de vereyim.
+
+859
+02:37:53,907 --> 02:37:59,667
+Hatta o konsepti biz .loc'ta da kullandık, gösterdik.
+
+860
+02:37:59,667 --> 02:38:03,907
+.loc'taki gürültüleri elimine etmek için.
+
+861
+02:38:03,907 --> 02:38:06,907
+Bu Windows konsepti.
+
+862
+02:38:06,907 --> 02:38:07,907
+Afiyan.
+
+863
+02:38:07,907 --> 02:38:12,907
+Bir sorunuz yoksa bu haftalık bu kadar çıkabilirsiniz.
+
+864
+02:38:16,468 --> 02:38:17,548
+Teşekkürler hocam.

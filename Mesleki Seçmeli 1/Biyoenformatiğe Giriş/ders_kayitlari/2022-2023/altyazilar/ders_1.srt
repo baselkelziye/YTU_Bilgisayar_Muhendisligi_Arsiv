@@ -1,0 +1,3911 @@
+1
+00:07:09,939 --> 00:07:16,360
+Evet arkadaşlar, merhaba. Sesim geliyor mu? Önce onu test edelim.
+
+2
+00:07:16,860 --> 00:07:17,319
+Merhaba hocam.
+
+3
+00:07:17,379 --> 00:07:18,040
+Geliyor hocam.
+
+4
+00:07:18,040 --> 00:07:33,019
+Geliyor, tamam. Katılımcı sayısının, DS alanların sayısının diğer sığından fazla olması mümkün etkili. Artıyor, daha artıyor.
+
+5
+00:07:36,660 --> 00:07:48,160
+Yeni dönem hayırlı olsun. Bakalım bu dönem de online olacak ama sevmesek de artık bu şekilde başlayacağız. Belki de böyle bitireceğiz.
+
+6
+00:07:53,267 --> 00:07:56,347
+Şimdilik en azından bir ay böyle gidecek.
+
+7
+00:08:18,963 --> 00:08:23,983
+Evet, derslere başlamadan önce genel bir şey söyleyeyim.
+
+8
+00:08:29,076 --> 00:08:33,076
+İngilizce ediyorsunuz.
+
+9
+00:08:35,076 --> 00:08:41,076
+Biraz sonra dersi anlatmaya başarılıydım. İngilizce edileceğim.
+
+10
+00:08:46,740 --> 00:09:05,639
+Dersi anlatırken, İngilizce anlatırken, anlamadığınız bir şey olursa arada sorabilirsiniz. Mümkün olduğunuz zaten uzaktan yatıyorum. Ben uzaktan, aslında uzaktan yetim değil. Sadece online ders yapıyorum da.
+
+11
+00:09:06,360 --> 00:09:12,180
+Pek sevk vermiyorum, bana da vermiyor, size de vermiyor, biliyorum ama bir yeni bir durum var.
+
+12
+00:09:13,491 --> 00:09:25,491
+Öncelikle bu deflem yulayısıyla bu arada deflemden etkilenen bazı ekliği çoğunluğumuz etkilendi.
+
+13
+00:09:25,491 --> 00:09:27,491
+Öyle yani böyle.
+
+14
+00:09:27,491 --> 00:09:32,491
+Herkese geçmiş olsun diyeyim.
+
+15
+00:09:32,491 --> 00:09:36,203
+Herkese geçmiş olsun.
+
+16
+00:09:41,427 --> 00:09:46,687
+Allah bir daha bir şekilde bir felaketi yaşatmasın.
+
+17
+00:09:55,923 --> 00:10:02,923
+İngilizce anlatacağımdan bahsettim. Bunu biliyorsunuz zaten, direkt İngilizce açıyorum.
+
+18
+00:10:05,683 --> 00:10:10,644
+İlk birkaç hafta temellerden bahsedeceğiz.
+
+19
+00:10:16,644 --> 00:10:22,083
+Her zaman yaptığım gibi, bilgisayar günü istemiyorum.
+
+20
+00:10:24,179 --> 00:10:43,179
+Temelinin temeli olan bazı konulardan bahsedeceğiz. Daha sonra yavaş yavaş bioinformatik katmanındaki, tabii her şeyden bahsedemeyiz ama çok temel olan bazı programları bulundu. Belki de başka derslerde de görüntülebiliriz.
+
+21
+00:10:44,179 --> 00:10:50,179
+Muhakkak görmüşsünüzdük. Bu durumda küfe olacak. Konuda da bir konuda çalışacağız.
+
+22
+00:10:51,347 --> 00:10:53,827
+Anlatmaya çalışacağız, anlamaya çalışacağız.
+
+23
+00:10:57,187 --> 00:11:03,667
+Tabi bilmiyorum bu dersi neden aldım, belki mezguriyetten aldım, belki meraktan aldım bilmiyorum ama
+
+24
+00:11:03,667 --> 00:11:11,187
+her zaman öğrencinin sorduğu soru bu ders ne işe yarattı, kim işe yarattı sorular var.
+
+25
+00:11:12,407 --> 00:11:16,607
+Umarım bu ders bitkiyle ne işe yarattı anlamış olacağız.
+
+26
+00:11:18,323 --> 00:11:25,823
+Bu derste ben size programımı öğretmeyeceğim. Bizim amacımız programımı öğretmek değil.
+
+27
+00:11:25,823 --> 00:11:29,323
+Tabi bir programımıma dili kullanmış olacağız.
+
+28
+00:11:29,323 --> 00:11:39,323
+İlerine hem süreçte, yıllardır bu ders, hani daha programımıma dili kullanarak anlatmıştık.
+
+29
+00:11:39,323 --> 00:11:44,823
+Belki şimdi gene öyle anlatabilirim ama kısa sürede anlatıyorum.
+
+30
+00:11:45,203 --> 00:11:48,703
+Dili değiştirilmiyoruz. İnanam.
+
+31
+00:11:49,843 --> 00:11:54,443
+Lopet parçada fark etmiyor. Dili herhangi bir kullanan gösteriyor.
+
+32
+00:11:55,644 --> 00:12:01,103
+En tane dil varsa o en tanenin hangi dil kullanılabilir?
+
+33
+00:12:01,103 --> 00:12:06,703
+Assembler dahi. Burada anlatılan konuda Assembler'den de edebiliyorsunuz.
+
+34
+00:12:07,103 --> 00:12:09,103
+Sizin sahip olduğunuz.
+
+35
+00:12:14,515 --> 00:12:16,515
+Bilgilerle, niteliklerle.
+
+36
+00:12:20,515 --> 00:12:22,515
+Çayımız kaç oldu? Elginç olmuş, tamam.
+
+37
+00:12:24,515 --> 00:12:25,515
+İlk konular kayıda.
+
+38
+00:12:27,515 --> 00:12:29,515
+Örgünleri bekleyerek geçelim.
+
+39
+00:13:06,388 --> 00:13:08,388
+İkinci, pahayla şeyim.
+
+40
+00:13:13,683 --> 00:13:14,803
+verebiliyor musunuz?
+
+41
+00:13:20,115 --> 00:13:20,915
+Evet hocam.
+
+42
+00:13:21,536 --> 00:13:22,635
+Tamam efendim gözüküyor.
+
+43
+00:13:25,635 --> 00:13:28,175
+Sesimde bir sıkıntı yok.
+
+44
+00:13:33,748 --> 00:13:35,748
+Çok uzaktan geliyor hocam.
+
+45
+00:13:38,868 --> 00:13:40,788
+Tam bir yöntem taşıtalım bu topu.
+
+46
+00:13:41,168 --> 00:13:41,748
+Şimdi...
+
+47
+00:13:43,228 --> 00:13:43,928
+Biraz daha iyi.
+
+48
+00:13:44,468 --> 00:13:45,368
+Biraz daha iyi, tamam.
+
+49
+00:13:46,608 --> 00:13:48,508
+Arada öksüdebilir miyim? Kusura bakmayın.
+
+50
+00:13:48,688 --> 00:13:51,188
+Şöyle bir türlü yakamızı bırakmayan bir grip var.
+
+51
+00:13:53,208 --> 00:13:56,188
+Renkten renge giriyor ve bizi renkten renge sokuyor.
+
+52
+00:14:00,148 --> 00:14:02,988
+Umarım son aşamadır bu, yükselik aşaması.
+
+53
+00:14:04,988 --> 00:14:05,628
+Evet.
+
+54
+00:14:11,604 --> 00:14:16,244
+Ok, introduction to bioinformatics.
+
+55
+00:14:22,932 --> 00:14:30,932
+I have already mentioned several ideas about the course by Informatics.
+
+56
+00:14:30,932 --> 00:14:35,932
+That's the course called, you know, this main introduction to it.
+
+57
+00:14:35,932 --> 00:14:43,932
+This is three-credit general elective course at the level of undergraduate.
+
+58
+00:14:43,932 --> 00:14:46,932
+One thing is the...
+
+59
+00:14:49,491 --> 00:14:55,251
+The course materials are already on the webpage.
+
+60
+00:14:55,251 --> 00:14:57,491
+You see here.
+
+61
+00:14:59,491 --> 00:15:01,491
+It's...
+
+62
+00:15:03,491 --> 00:15:08,491
+The link, I think, exists in my webpage.
+
+63
+00:15:11,491 --> 00:15:12,255
+If...
+
+64
+00:15:12,255 --> 00:15:21,615
+If there is any modification or any new material, I will add to this webpage.
+
+65
+00:15:26,740 --> 00:15:38,519
+If there is any announcement, either I will email you by using your university emails through the system,
+
+66
+00:15:40,100 --> 00:15:47,779
+or I will announce in the web page and broadcast to show you if it goes.
+
+67
+00:15:53,203 --> 00:15:55,179
+Let me see.
+
+68
+00:16:15,604 --> 00:16:16,104
+Hmm.
+
+69
+00:16:54,227 --> 00:17:06,548
+İlk olarak, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde.
+
+70
+00:17:10,548 --> 00:17:15,268
+İlk olarak, bu bölümde, bu bölümde, bu bölümde.
+
+71
+00:17:16,548 --> 00:17:21,107
+Bu bölümde, bu bölümde, bu bölümde.
+
+72
+00:17:25,836 --> 00:17:27,456
+Bir de mağaz.
+
+73
+00:17:33,076 --> 00:17:33,396
+Ok.
+
+74
+00:17:39,859 --> 00:17:43,179
+Bu, bu e-mail, you already know it.
+
+75
+00:17:44,179 --> 00:17:46,779
+You can use either of them.
+
+76
+00:17:49,740 --> 00:17:52,659
+I regularly check both e-mails.
+
+77
+00:17:54,899 --> 00:17:56,219
+Although,
+
+78
+00:17:57,539 --> 00:18:00,419
+the assessment is given as this one,
+
+79
+00:18:00,980 --> 00:18:04,539
+this will change obviously because we will not have quiz,
+
+80
+00:18:04,539 --> 00:18:06,139
+it is most likely.
+
+81
+00:18:06,451 --> 00:18:08,451
+Bir midterm, bir midterm.
+
+82
+00:18:08,451 --> 00:18:10,451
+Bir homewalk,
+
+83
+00:18:10,451 --> 00:18:12,451
+birkaç bir homewalk.
+
+84
+00:18:12,451 --> 00:18:14,451
+Ve bir 40%,
+
+85
+00:18:14,451 --> 00:18:16,451
+birkaç bir 60%.
+
+86
+00:18:16,451 --> 00:18:20,451
+Birkaç bir 60%.
+
+87
+00:18:20,451 --> 00:18:26,451
+Birkaç bir participasyon.
+
+88
+00:18:26,451 --> 00:18:30,451
+Birkaç bir...
+
+89
+00:18:33,236 --> 00:18:49,236
+Normal, face-to-face edukasyon, I would have taken the attendance and I would have used it for evaluation as well, but in this case, I'm not sure what to do.
+
+90
+00:18:52,236 --> 00:18:53,236
+Okay.
+
+91
+00:18:55,236 --> 00:18:59,236
+I haven't changed this, but I will not use this anyway.
+
+92
+00:19:01,299 --> 00:19:27,219
+Hocam, sesim geliyor mu?
+
+93
+00:19:28,084 --> 00:19:28,624
+Evet.
+
+94
+00:19:29,164 --> 00:19:33,403
+Şey soracaktım, bu dönem sadece bir vize mi olacak?
+
+95
+00:19:36,164 --> 00:19:37,664
+İkinci vize olabilir.
+
+96
+00:19:38,324 --> 00:19:39,423
+Tamamdır, teşekkür ederim.
+
+97
+00:19:39,423 --> 00:19:48,824
+Bir vize zorunlu. Burada gördüklerimiz yüz yüze durumlar için. Şimdi değişebilir, onu da söyleyebilirim.
+
+98
+00:19:49,203 --> 00:19:54,483
+Tamam. Teşekkürler. Ama bir bize olacak en azından. Gerekirse ikinci bize de olabilir.
+
+99
+00:19:54,923 --> 00:20:00,284
+Veya ödeyler için. Bakacağız. En iyi değerlerinin mühentemi neyse ona gelir.
+
+100
+00:20:00,543 --> 00:20:02,144
+Sağ olun. Teşekkürler.
+
+101
+00:20:02,144 --> 00:20:10,203
+You already know these things. Okay. This honesty and cheating is not good.
+
+102
+00:20:11,284 --> 00:20:18,284
+Eğer bir homework yapabilirsiniz, bu için de bir eğlence,
+
+103
+00:20:18,284 --> 00:20:22,284
+ve eğlence, ve eğlence,
+
+104
+00:20:22,284 --> 00:20:26,284
+aslında, ben de olmadığınızda,
+
+105
+00:20:26,284 --> 00:20:30,284
+ve eğlence,
+
+106
+00:20:30,284 --> 00:20:33,284
+bir de bir arkadaşım,
+
+107
+00:20:33,284 --> 00:20:36,284
+veya internetten sonraki videoları,
+
+108
+00:20:39,316 --> 00:21:02,700
+Bu, bu
+
+109
+00:21:02,836 --> 00:21:07,836
+A more biological perspective.
+
+110
+00:21:07,836 --> 00:21:12,836
+This is another one. Biological sequence analysis.
+
+111
+00:21:12,836 --> 00:21:18,836
+This is another one. Algorithms.
+
+112
+00:21:23,763 --> 00:21:24,587
+Evet.
+
+113
+00:21:30,483 --> 00:21:30,983
+On.
+
+114
+00:21:34,451 --> 00:21:37,811
+Strings, trees and sequences.
+
+115
+00:21:41,683 --> 00:21:43,683
+Bir diğer book is,
+
+116
+00:21:43,683 --> 00:21:47,683
+çünkü we are using Perl,
+
+117
+00:21:47,683 --> 00:21:52,683
+Perl-Based Introduction
+
+118
+00:21:52,683 --> 00:21:57,683
+Bioinformatics Computer Skills.
+
+119
+00:22:09,428 --> 00:22:13,827
+It is a simple, very very basic book.
+
+120
+00:22:18,259 --> 00:22:24,779
+Genetik, çünkü bioinformatik is çok related to genetics.
+
+121
+00:22:24,779 --> 00:22:32,619
+And this is another source of understanding what are genes.
+
+122
+00:22:32,619 --> 00:22:41,059
+Bu dizi hizalama, bioinformatik for dummies, is a very basic reading book.
+
+123
+00:22:41,059 --> 00:22:45,059
+And there are many others.
+
+124
+00:22:48,243 --> 00:22:56,243
+Bu bir örneğin, bu bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin.
+
+125
+00:23:02,324 --> 00:23:29,228
+Bu da bu
+
+126
+00:23:29,811 --> 00:23:37,811
+Let me describe some of the terminologies to clarify the concept of bioinformatics.
+
+127
+00:23:37,811 --> 00:23:49,811
+There are many terms starting with bio and I will try to explain them here.
+
+128
+00:23:50,483 --> 00:23:57,603
+Bu, obviously you have heard biomedical engineering, or sure, medical engineering concept.
+
+129
+00:23:58,703 --> 00:24:02,663
+You have heard bioengineering concepts.
+
+130
+00:24:04,063 --> 00:24:07,243
+You have heard biotechnology.
+
+131
+00:24:08,763 --> 00:24:13,423
+Another relevant concept is clinical or medical engineering.
+
+132
+00:24:14,324 --> 00:24:30,864
+Medical Technology, Healthcare Technology, Healthcare Informatics, Health Informatics, Bioinformatics, Computational Biology, Systems Biology, etc. etc.
+
+133
+00:24:30,864 --> 00:24:33,124
+There are many relevant concepts.
+
+134
+00:24:36,184 --> 00:24:38,744
+Let me start with Medical Engineering.
+
+135
+00:24:40,084 --> 00:24:50,084
+Medical Engineering is a field which uses engineering concepts and technology for development of instrumentation,
+
+136
+00:24:50,084 --> 00:25:00,084
+actually instruments used in hospitals, some diagnostic and therapeutic devices.
+
+137
+00:25:01,844 --> 00:25:29,580
+ve diğerleri de
+
+138
+00:25:31,347 --> 00:25:36,748
+Medical, ara, bakın.
+
+139
+00:25:38,307 --> 00:25:50,887
+The role of medical engineers are to examine some portion of biology and medicine to identify ara in which advanced technology might be advantages.
+
+140
+00:25:50,887 --> 00:25:55,027
+And so the developer according to me.
+
+141
+00:25:55,307 --> 00:25:55,507
+Okay.
+
+142
+00:25:56,487 --> 00:25:57,748
+Very relevant.
+
+143
+00:25:58,259 --> 00:26:04,859
+Bu konceptı, biomedical engineering, which we also have a department, this name.
+
+144
+00:26:06,859 --> 00:26:13,359
+It is a growing and expanding interdisciplinary profession.
+
+145
+00:26:13,659 --> 00:26:21,059
+Here is an important feature of biomedical engineering, it is interdisciplinary in nature.
+
+146
+00:26:21,683 --> 00:26:49,387
+İntro, İntro
+
+147
+00:26:50,324 --> 00:26:54,003
+Therefore, it's an interdisciplinary profession.
+
+148
+00:26:56,224 --> 00:27:10,844
+I'm concerned with the application of engineering, mathematics, computing, and science methodologies to the analysis of biological and physiological problems.
+
+149
+00:27:11,604 --> 00:27:37,932
+Bu, bu, biraz daha
+
+150
+00:27:40,980 --> 00:27:51,599
+Another relevant concept is clinical engineering, which uses engineering management concept and technology.
+
+151
+00:27:51,599 --> 00:27:57,599
+Now, in addition to engineering, we have a management...
+
+152
+00:28:03,796 --> 00:28:06,736
+...management concept here.
+
+153
+00:28:08,736 --> 00:28:12,736
+...just to improve healthcare in hospitals...
+
+154
+00:28:12,736 --> 00:28:17,736
+...to provide better patient care at minimum cost...
+
+155
+00:28:17,736 --> 00:28:20,036
+...through the application of technology.
+
+156
+00:28:21,096 --> 00:28:23,736
+The role of this clinical engineering...
+
+157
+00:28:24,395 --> 00:28:30,736
+...is to provide services directly related to patient care together with others.
+
+158
+00:28:31,188 --> 00:28:40,188
+Healthcare Professionals ve Problems Oregulantı Klinikal Enviroment.
+
+159
+00:28:42,188 --> 00:28:47,188
+Hospital Management, Patient Management, Health Management,
+
+160
+00:28:47,188 --> 00:28:52,748
+comes under this umbrella, clinical engineering.
+
+161
+00:28:54,291 --> 00:29:08,791
+Clinical engineers are responsible for equipment effectiveness and electrical safety medical instrumentation, systems and power supply.
+
+162
+00:29:10,131 --> 00:29:14,791
+All these are responsibilities of clinical engineers.
+
+163
+00:29:40,339 --> 00:29:46,339
+Bu, diğer bir konceptı, bio-engineering.
+
+164
+00:29:50,483 --> 00:30:02,483
+It refers to basic research-oriented, actively, related to biotechnology and genetic engineering,
+
+165
+00:30:02,483 --> 00:30:13,867
+which means modification of animal or plant cells to improve, plants or animals to develop, remove microorganisms.
+
+166
+00:30:17,011 --> 00:30:41,995
+Bu, bu
+
+167
+00:30:43,028 --> 00:30:47,028
+Yildi
+
+168
+00:30:47,028 --> 00:30:49,028
+İlcudur
+
+169
+00:30:49,028 --> 00:30:49,528
+Many
+
+170
+00:30:49,528 --> 00:30:51,028
+Subfields
+
+171
+00:30:51,028 --> 00:30:52,028
+Bu
+
+172
+00:30:52,028 --> 00:30:53,028
+Oblacılık
+
+173
+00:30:53,028 --> 00:31:10,380
+İlcudur
+
+174
+00:31:11,144 --> 00:31:13,144
+İlçin,
+
+175
+00:31:10,996 --> 00:31:25,996
+İngiltere, bilologik, materials, processes, implants, devices, informatics, bilologik, materials, processes,
+
+176
+00:31:33,779 --> 00:31:38,779
+İmklamatik, deviser, ve informatik approach,
+
+177
+00:31:38,779 --> 00:31:42,779
+ve ilk başta, aslında, the skills you have.
+
+178
+00:31:42,779 --> 00:31:49,779
+We will mention, maybe next week, we will talk about informatik.
+
+179
+00:31:49,779 --> 00:31:56,779
+For the prevention, diagnosis, and treatment of disease,
+
+180
+00:31:56,779 --> 00:32:00,779
+for patient rehabilitation, and for improving art.
+
+181
+00:32:04,084 --> 00:32:18,084
+Şimdi, if we consider bioengineering as an umbrella, and now we see what it covers.
+
+182
+00:32:18,084 --> 00:32:31,084
+Okay, the first under this umbrella comes biomaterials, as we said. Biomaterials is agents, some nanoparticles.
+
+183
+00:32:31,476 --> 00:32:34,855
+Biocompatibility, which is very important.
+
+184
+00:32:34,855 --> 00:32:46,915
+Some chemical composites to create new, say for example, orthopedic devices or some implants or whatever.
+
+185
+00:32:46,915 --> 00:32:56,996
+These are very active research fields, biomaterials under the bioengineering umbrella.
+
+186
+00:32:57,395 --> 00:33:22,016
+İmaging. İmaging is probably biomaterials that are not very much related to your experiences or your current position. You will become a computer engineer and you will probably, I don't know if you can find some.
+
+187
+00:33:22,759 --> 00:33:24,759
+İlcudur
+
+188
+00:33:22,612 --> 00:33:26,612
+İmizde, bu konuda, bu konuda, çok iyi bir şey var.
+
+189
+00:33:27,612 --> 00:33:33,612
+Ama imajin, bu konuda, bir de bir alanlar için,
+
+190
+00:33:33,612 --> 00:33:41,612
+bir iş yapmak için,
+
+191
+00:33:49,587 --> 00:33:53,587
+Açıkları, birçok farklı modelleri.
+
+192
+00:34:14,032 --> 00:34:19,032
+Bu, birçok birçok birçok
+
+193
+00:34:19,032 --> 00:34:22,032
+ve son olarak
+
+194
+00:34:22,032 --> 00:34:40,032
+son olarak
+
+195
+00:34:39,123 --> 00:34:44,123
+İmaging, ve daha sonra İmaging Modelsi.
+
+196
+00:35:05,172 --> 00:35:12,771
+Biyomechanik. Biyomechanik, basically, deals with the inputs and artificial organs.
+
+197
+00:35:12,771 --> 00:35:22,771
+It is relevant to rehabilitation engineering, mostly, because rehabilitation engineering is...
+
+198
+00:35:22,771 --> 00:35:28,771
+...basically, engineering applications to provide...
+
+199
+00:35:34,580 --> 00:35:35,580
+son olarak
+
+200
+00:35:33,780 --> 00:35:36,580
+...to improve the patient's life.
+
+201
+00:35:36,580 --> 00:35:38,980
+Usually biomechanics...
+
+202
+00:35:38,980 --> 00:35:40,660
+...dealsi bir şey...
+
+203
+00:35:40,660 --> 00:35:42,460
+...artificial organs...
+
+204
+00:35:42,460 --> 00:35:43,980
+...artificial arm, leg...
+
+205
+00:35:43,980 --> 00:35:45,180
+...or whatever.
+
+206
+00:35:45,180 --> 00:35:46,580
+Or...
+
+207
+00:35:46,580 --> 00:35:48,300
+...chemical...
+
+208
+00:35:48,300 --> 00:35:50,140
+...some chemicals...
+
+209
+00:35:50,140 --> 00:35:51,980
+...to form artificial...
+
+210
+00:35:51,980 --> 00:35:54,180
+...bon...
+
+211
+00:35:54,180 --> 00:35:58,660
+...or some other...
+
+212
+00:35:58,660 --> 00:36:00,300
+...organ, basically.
+
+213
+00:36:02,708 --> 00:36:12,043
+Bu, bu
+
+214
+00:36:15,284 --> 00:36:21,963
+İzlediğiniz için, bu, ilerlerle ilgili bir şekilde kullanmak istiyorsan, bu.
+
+215
+00:36:25,244 --> 00:36:29,724
+İzlediğiniz için, bu, ilerlerle ilgili bir ilerlerle ilgili.
+
+216
+00:36:43,027 --> 00:36:47,787
+Bu, medical engineering, biomedical engineering, signal processing means,
+
+217
+00:36:48,947 --> 00:36:55,688
+any techniques, or any algorithms, or any electronics, or sensors, or whatever,
+
+218
+00:36:56,907 --> 00:37:01,787
+to acquire physiological signals and to process them.
+
+219
+00:37:02,467 --> 00:37:08,467
+For the extraction of information about,
+
+220
+00:37:09,364 --> 00:37:14,844
+Tissue or body part which comes from, this signal comes from, okay.
+
+221
+00:37:15,384 --> 00:37:20,684
+For example, ECG is, anybody remembers what is ECG?
+
+222
+00:37:22,663 --> 00:37:23,764
+Electrocardiogram.
+
+223
+00:37:24,764 --> 00:37:36,604
+Electrocardiogram is a signal which is used to study electrical activities of art.
+
+224
+00:37:37,588 --> 00:37:44,588
+Bu nedenle de çalışan bu elektrikal artı bir şeyin de altyazı.
+
+225
+00:38:05,396 --> 00:38:30,284
+Daha sonra bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi verenlerle ilgili bilgi veren
+
+226
+00:38:32,083 --> 00:38:58,827
+...
+
+227
+00:38:59,123 --> 00:39:03,063
+ve bu, micro ve nanosystems.
+
+228
+00:39:25,972 --> 00:39:29,472
+...which could be implanted...
+
+229
+00:39:30,472 --> 00:39:32,972
+...in the body.
+
+230
+00:39:33,472 --> 00:39:37,972
+Another theory is sensors, developing novel sensors...
+
+231
+00:39:37,972 --> 00:39:41,472
+...to sense more biological...
+
+232
+00:39:41,472 --> 00:39:43,972
+...or physiological signals.
+
+233
+00:39:43,972 --> 00:39:45,972
+SOC is...
+
+234
+00:39:45,972 --> 00:39:48,472
+Anybody knows what is SOC?
+
+235
+00:39:49,472 --> 00:39:50,472
+Have you heard it?
+
+236
+00:39:54,327 --> 00:40:01,231
+İmklamat edinim,
+
+237
+00:40:00,000 --> 00:40:01,600
+Bu, sistem-on-chip.
+
+238
+00:40:05,000 --> 00:40:08,680
+Bu, there are relevant subjects such as lab-on-chip,
+
+239
+00:40:08,680 --> 00:40:10,480
+or platform-on-chip.
+
+240
+00:40:12,039 --> 00:40:15,519
+A system-on-chip is,
+
+241
+00:40:15,519 --> 00:40:18,600
+basically you have a computing system,
+
+242
+00:40:18,600 --> 00:40:25,000
+but the system-on-chip tries to integrate everything on one chip,
+
+243
+00:40:25,000 --> 00:40:27,480
+including sensors, processors.
+
+244
+00:40:54,512 --> 00:41:00,512
+Bir de bir çalışma, bir de bir çalışma,
+
+245
+00:41:00,512 --> 00:41:15,512
+bir çalışma, bir çalışma,
+
+246
+00:41:15,512 --> 00:41:18,512
+bir çalışma,
+
+247
+00:41:19,987 --> 00:41:35,768
+Once you implement the system, if you need to communicate and implant into your body, and you need to communicate or exchange data with the system, you need to do it wirelessly.
+
+248
+00:41:35,768 --> 00:41:40,768
+You can, of course, too, use wires, but you will always...
+
+249
+00:42:07,927 --> 00:42:20,927
+Altho, we do not have some courses on systemon chip, bu isimli çok önemli olan için kontrol engineers.
+
+250
+00:42:20,927 --> 00:42:25,927
+It's basically chip design, low-power chip design.
+
+251
+00:42:28,563 --> 00:42:36,563
+Ve bilgi, yine de bu konulma, bizimlektronik ve computing.
+
+252
+00:42:38,563 --> 00:42:42,563
+Bir diğer birçok yöntemizde,
+
+253
+00:42:42,563 --> 00:42:50,563
+ve Diagnosis ve Simulation, Modeling ve Instrumentation.
+
+254
+00:42:50,563 --> 00:42:54,563
+Simulation ve Modeling
+
+255
+00:42:59,827 --> 00:43:09,827
+Bu konceptsiyonların çok önemli olan bir soru var.
+
+256
+00:43:12,827 --> 00:43:18,827
+Bu konceptsiyonların çok ilginçleri ve algoritmasını bulabilirsiniz.
+
+257
+00:43:21,827 --> 00:43:27,711
+Bir de önemli bir konceptsiyonlarının bir konceptsiyonu var.
+
+258
+00:43:50,099 --> 00:44:16,268
+Bu, bu
+
+259
+00:44:18,739 --> 00:44:31,299
+E-finance, E-government, E-debt, E-biz, and there's E-health as well. E-health, what do you understand by E-health? Electronic health.
+
+260
+00:44:43,987 --> 00:44:54,987
+Evet, hep son.
+
+261
+00:44:54,987 --> 00:45:17,175
+Hep son.
+
+262
+00:45:00,947 --> 00:45:05,947
+Bu telefonla, ama şimdi internetten sonra bir konuda verirseniz bir konuda.
+
+263
+00:45:05,947 --> 00:45:18,947
+Bu, e-Nabuz'un listede.
+
+264
+00:45:18,947 --> 00:45:23,947
+E-Nabuz'un listede.
+
+265
+00:45:23,947 --> 00:45:26,947
+Bu, e-Nabuz'un listede.
+
+266
+00:45:28,692 --> 00:45:36,112
+Another relevant field is telemedicine and DNA segment analysis.
+
+267
+00:45:36,112 --> 00:45:52,552
+We will be usually discussing the relevant computational concepts around DNA or amino acid segment analysis under bioinformatics.
+
+268
+00:45:57,076 --> 00:46:04,076
+bu kursa
+
+269
+00:46:04,076 --> 00:46:07,076
+ve
+
+270
+00:46:07,076 --> 00:46:09,076
+çalışanım
+
+271
+00:46:09,076 --> 00:46:12,076
+ve
+
+272
+00:46:12,076 --> 00:46:17,076
+sistem
+
+273
+00:46:17,076 --> 00:46:19,076
+wireless
+
+274
+00:46:19,076 --> 00:46:20,076
+detection
+
+275
+00:46:20,076 --> 00:46:21,076
+estimasyon
+
+276
+00:46:21,076 --> 00:46:23,052
+ve
+
+277
+00:46:23,443 --> 00:46:25,664
+ve en instrumentation as well.
+
+278
+00:46:25,664 --> 00:46:29,824
+I almost accept this.
+
+279
+00:46:32,664 --> 00:46:40,443
+And this one, okay, I already implemented this ingestible capsule.
+
+280
+00:46:40,443 --> 00:46:47,384
+So I can say that personally, I have almost dealt with all these fields.
+
+281
+00:47:10,103 --> 00:47:12,103
+Bu, bu?
+
+282
+00:47:20,788 --> 00:47:28,307
+If you haven't looked at slides before, you can have a guess.
+
+283
+00:47:28,427 --> 00:47:29,807
+Graf gibi.
+
+284
+00:47:31,588 --> 00:47:33,668
+Graf gibi. What about this one?
+
+285
+00:47:36,467 --> 00:47:38,347
+Uzayda da data pointler gibi duruyoruz.
+
+286
+00:47:40,027 --> 00:47:41,987
+Uzaydaki yıldızlar falan.
+
+287
+00:47:42,648 --> 00:47:44,708
+Yok, data pointleri gibi yani.
+
+288
+00:47:44,708 --> 00:47:46,648
+Okey, okey.
+
+289
+00:47:48,628 --> 00:47:56,628
+Connectivity of the internet, from Wikipedia, I have taken this, Connectivity of the internet.
+
+290
+00:47:59,628 --> 00:48:06,628
+This one is a map of human protein interactions.
+
+291
+00:48:07,628 --> 00:48:12,628
+Well, we have proteins, okay, different proteins and all these proteins.
+
+292
+00:48:13,652 --> 00:48:15,652
+İntro bir soru var.
+
+293
+00:48:15,652 --> 00:48:20,652
+Bu bir soru var.
+
+294
+00:48:20,652 --> 00:48:23,652
+Protayla protayla ilişkiler.
+
+295
+00:48:23,652 --> 00:48:40,652
+Bir soru var.
+
+296
+00:48:41,235 --> 00:48:45,275
+Biyoinformatik, büyük bir bilimde, büyük bilimde,
+
+297
+00:48:45,275 --> 00:48:48,556
+bir bilimde, çok farklı.
+
+298
+00:48:49,996 --> 00:48:50,996
+Bu,
+
+299
+00:48:52,115 --> 00:48:54,315
+Biyoinformatik, aslında,
+
+300
+00:48:54,315 --> 00:49:02,956
+Biyoinformatik,
+
+301
+00:49:04,563 --> 00:49:08,563
+And these tools are mostly computational tools.
+
+302
+00:49:08,563 --> 00:49:17,563
+Of course there is chemistry or other relevant studies or fields,
+
+303
+00:49:17,563 --> 00:49:25,563
+but we will be dealing with, or we are interested in computational tools
+
+304
+00:49:25,563 --> 00:49:31,563
+to make some things much faster and easier.
+
+305
+00:50:01,780 --> 00:50:04,780
+İzlediğiniz için bir soru.
+
+306
+00:50:27,923 --> 00:50:29,923
+İzledi aynı kaptır.
+
+307
+00:50:30,923 --> 00:50:36,923
+Bir sonraki günlerden bir kaptır, bu 259 milyon.
+
+308
+00:50:37,923 --> 00:50:40,923
+Ve 0.48 sınır.
+
+309
+00:50:41,923 --> 00:50:44,923
+Evet, bir yıl farklı bir yıl.
+
+310
+00:50:46,923 --> 00:50:53,923
+Ve daha önceki yılan hizalama, ama daha önceki yılan hizalama hizalama, ama daha önceki yılan hizalama hizalama.
+
+311
+00:50:55,443 --> 00:51:16,748
+Bu, bu
+
+312
+00:51:16,947 --> 00:51:22,947
+Bazen bazıları kullanabilirsiniz, bazıları kullanabilirsiniz.
+
+313
+00:51:22,947 --> 00:51:26,347
+Çünkü bazıları çok çok iletişimle ilgili birçok
+
+314
+00:51:26,347 --> 00:51:31,347
+ve bazıları kullanabilirsiniz.
+
+315
+00:51:31,347 --> 00:51:41,347
+Bazıları kullanabilirsiniz.
+
+316
+00:51:43,411 --> 00:52:08,619
+Biyo-Biyo
+
+317
+00:52:10,931 --> 00:52:19,851
+So, bioinformatik can be defined as the study of how information is represented.
+
+318
+00:52:20,891 --> 00:52:33,012
+Here the keyword is information first, therefore I highlight it as blue, and transmit it in biological systems starting at the molecular level.
+
+319
+00:52:33,012 --> 00:52:37,391
+Therefore, it's computational molecular biology.
+
+320
+00:53:01,204 --> 00:53:04,604
+What do you think of this command?
+
+321
+00:53:08,563 --> 00:53:10,563
+Ne söyleyebilir mi?
+
+322
+00:53:33,427 --> 00:53:43,527
+Kağıtlara şeyler çiziyorlardı. Sonra elle yazıyorlardı. Bu A'dır, bu D'dir, bu C'dir, bu G'dir falan bile. Aynen gördüm. Onu öyle yapıyorlardı.
+
+323
+00:53:43,527 --> 00:53:59,527
+This is what we mean. Basically, this really does not require a computer. But if you do not use the computer, considering the amount of the data nowadays you obtain, it will take...
+
+324
+00:54:00,403 --> 00:54:05,043
+Yüz, to extract some information.
+
+325
+00:54:06,264 --> 00:54:10,244
+The main reason we use computer
+
+326
+00:54:10,244 --> 00:54:17,623
+to extract information as soon as possible.
+
+327
+00:54:18,824 --> 00:54:26,744
+Ideally, instantly, we will mention in a minute, what is the...
+
+328
+00:54:27,699 --> 00:54:48,587
+Bu, bu
+
+329
+00:54:59,159 --> 00:55:05,159
+ve gençlerle
+
+330
+00:54:58,547 --> 00:55:13,427
+Bir ara verelim isterseniz. Şimdi bu ara hemen bir iki şey var da. [öğrenci]'ı soran oldu mu bilmiyorum ama dokümanları paylaşıyor musunuz? Nedir? Yani dokümanları paylaşıyor musunuz derken?
+
+331
+00:55:15,567 --> 00:55:17,927
+Hocam çok zaman oldu. Ben onu en başta sormuştum da.
+
+332
+00:55:19,219 --> 00:55:27,819
+Yok, şimdi sorma. Şimdi biliyorum, bunu başta sordun da. Tamam, ben zaten söyledim. Web sayfasında bu hepsi.
+
+333
+00:55:28,719 --> 00:55:29,639
+Evet, evet hocam, sağ olun.
+
+334
+00:55:30,839 --> 00:55:40,059
+Yani benim bütün materyallerim, biraz eski olabilir bazıları ama hepsi web sayfasında erişilebiliyor durumda. Yani anonim.
+
+335
+00:55:41,279 --> 00:55:42,479
+Tamam, ona şey ver.
+
+336
+00:55:47,603 --> 00:55:50,884
+Bir ara verelim hemen de şöyle bir 10 dakika falan.
+
+337
+01:04:50,612 --> 01:05:17,331
+Definition for informatics is research, development, or application of, here is relevant concept, computational tools and approaches for expanding the use of biological, medical, behavioral, or health data, including those to require
+
+338
+01:05:18,260 --> 01:05:44,260
+...
+
+339
+01:05:43,315 --> 01:05:47,755
+Computer engineers, or computer scientists develop.
+
+340
+01:05:47,755 --> 01:05:51,755
+The approaches, algorithms you develop.
+
+341
+01:05:51,755 --> 01:05:58,076
+Biological, medical, behavioral, or health data.
+
+342
+01:05:58,076 --> 01:06:07,476
+Data is what you write algorithms or programs to work on, to operate on, or to process.
+
+343
+01:06:08,724 --> 01:06:34,380
+İçerisinde,
+
+344
+01:06:34,675 --> 01:06:43,796
+Many systems to obtain the raw data and convert into the digital ones.
+
+345
+01:06:43,796 --> 01:06:45,916
+We will mention later.
+
+346
+01:06:49,916 --> 01:06:56,916
+So analysis is just to develop algorithms to extract information and visualize this.
+
+347
+01:06:57,556 --> 01:07:02,556
+Just visualization is a field of computer science anyway.
+
+348
+01:07:03,556 --> 01:07:10,556
+We use the techniques to convert the raw data into visual information.
+
+349
+01:07:13,556 --> 01:07:20,556
+So we see that many aspects of bioinformatics are directly related to computer engineers.
+
+350
+01:07:24,820 --> 01:07:46,820
+As I already mentioned, the related discipline of computational biology is the development and application of data analytical and theoretical methods, mathematical modeling, and computational simulation techniques to the study of biological behavioral social systems.
+
+351
+01:07:46,820 --> 01:07:49,820
+Basically short, bioinformatics is...
+
+352
+01:07:50,356 --> 01:08:17,087
+Açıklıkları, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cümleler, cüm
+
+353
+01:08:17,087 --> 01:08:23,087
+Konkule, databases, and algorithms to facilitate and expedite biological research.
+
+354
+01:08:23,087 --> 01:08:27,087
+Anyway, just skip this.
+
+355
+01:08:27,087 --> 01:08:33,087
+Another definition by National Human Genome Research Institute.
+
+356
+01:08:33,876 --> 01:08:45,876
+Filogenetik is the branch of biology that is concerned with the acquisition of the sperm analysis of the information found in nucleic acid and protein sequence data.
+
+357
+01:08:45,876 --> 01:08:49,876
+DNA sequences and amino acid sequences.
+
+358
+01:08:49,876 --> 01:08:53,876
+Here, nucleic acid and protein sequence data.
+
+359
+01:08:53,876 --> 01:09:01,644
+There are two other definitions.
+
+360
+01:09:03,731 --> 01:09:28,332
+...
+
+361
+01:10:00,659 --> 01:10:08,659
+DNA is, if transcribed into RNA,
+
+362
+01:10:08,659 --> 01:10:15,659
+then we have the protein and some cellular phenotype.
+
+363
+01:10:19,891 --> 01:10:24,131
+Bu ilk perspektifle in the field of bioinformatics,
+
+364
+01:10:25,652 --> 01:10:26,711
+which is cell.
+
+365
+01:10:27,231 --> 01:10:29,412
+You know this cell, what a cell is,
+
+366
+01:10:30,131 --> 01:10:33,231
+in terms of the biology.
+
+367
+01:11:23,731 --> 01:11:27,731
+Genes, RNA-trancırı, RNA-trancırı,
+
+368
+01:11:27,731 --> 01:11:30,211
+ve cotekin products,
+
+369
+01:11:30,211 --> 01:11:32,771
+oran individual organism,
+
+370
+01:11:32,771 --> 01:11:34,332
+oran informatics.
+
+371
+01:11:34,332 --> 01:11:37,692
+Tools can therefore be applied to describe
+
+372
+01:11:37,692 --> 01:11:40,572
+changes to development of time,
+
+373
+01:11:40,572 --> 01:11:42,771
+changes across body regions,
+
+374
+01:11:42,771 --> 01:11:45,532
+and changes in a variety of
+
+375
+01:11:45,532 --> 01:11:49,692
+physiological or pathological states.
+
+376
+01:11:50,739 --> 01:12:00,739
+Here are some trees, we will mention later how to obtain these trees.
+
+377
+01:12:00,739 --> 01:12:06,739
+These are some bacteria, alphea, and nuclear are shown here.
+
+378
+01:12:10,739 --> 01:12:16,739
+Relevant existing things in terms of the trees.
+
+379
+01:12:19,315 --> 01:12:26,315
+Bu, 3rd perspective of the field of bioinformatics, is represented by the tree of life.
+
+380
+01:12:28,315 --> 01:12:41,315
+The scope of bioinformatics includes all of life on Earth, including the three major branches of bacteria, archaea, and nükleotis.
+
+381
+01:12:42,292 --> 01:12:49,292
+İzlediğiniz için, bu,
+
+382
+01:12:52,292 --> 01:12:54,292
+Bu, bu,
+
+383
+01:12:54,292 --> 01:12:57,292
+ve,
+
+384
+01:13:08,595 --> 01:13:17,595
+ve genişle ilişki verenlerlebilirsiniz.
+
+385
+01:13:35,840 --> 01:14:00,844
+Bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle
+
+386
+01:14:00,979 --> 01:14:08,979
+Bioinformatik may orten help to understand this process as well.
+
+387
+01:14:13,979 --> 01:14:16,979
+Anyway, we have some more definitions.
+
+388
+01:14:16,979 --> 01:14:25,979
+From a practical sense, bioinformatik is a science that involves collecting, manipulating, analyzing, transmitting huge quantities of data.
+
+389
+01:14:28,115 --> 01:14:35,976
+A collection, manipulation, analysis, and transmission of data, the first computing system.
+
+390
+01:14:36,976 --> 01:14:40,136
+Anyway, when we describe the computing system,
+
+391
+01:14:42,216 --> 01:14:48,496
+any, we describe the computing system as a digital system,
+
+392
+01:14:49,496 --> 01:14:51,896
+which
+
+393
+01:14:53,332 --> 01:14:58,652
+Tazwat, who will tell me how we define a computing system?
+
+394
+01:15:00,852 --> 01:15:05,252
+What is a computer? Anybody can tell me?
+
+395
+01:15:27,091 --> 01:15:29,131
+Can you describe me in one sentence?
+
+396
+01:15:49,971 --> 01:15:51,971
+What are the functions of computer?
+
+397
+01:16:00,275 --> 01:16:04,716
+Bu ne? Ok, we'll probably talk later about it.
+
+398
+01:16:05,716 --> 01:16:07,155
+So, this...
+
+399
+01:16:09,755 --> 01:16:15,275
+...action, say, collection, manipulation, analysis, transmission,
+
+400
+01:16:15,275 --> 01:16:19,835
+are very much relevant to functionalities of the computing system.
+
+401
+01:16:21,115 --> 01:16:23,115
+I will make correction later.
+
+402
+01:16:26,155 --> 01:16:27,155
+Ok.
+
+403
+01:16:33,619 --> 01:16:59,279
+I will give you some more definitions. An interdisciplinary field that develops methods and software field for understanding biological data. It combines computer science. First, bioinformatics combines computer science. Statistics. Statistics is extensively used in bioinformatics as well.
+
+404
+01:17:00,180 --> 01:17:02,300
+Statistik is used anywhere.
+
+405
+01:17:03,540 --> 01:17:08,239
+Anyway, bioinformatik as well is extensively.
+
+406
+01:17:10,000 --> 01:17:12,739
+Matematik is extensively used again.
+
+407
+01:17:14,680 --> 01:17:23,100
+Engineering concepts are used to analyze and interpret biological data.
+
+408
+01:17:25,716 --> 01:17:28,716
+Now we have several terminologies.
+
+409
+01:18:07,060 --> 01:18:10,380
+Ok, it is Latin for in silicon.
+
+410
+01:18:11,320 --> 01:18:16,120
+It is an expression used to mean performed on computer or via computer simulation.
+
+411
+01:18:17,900 --> 01:18:18,500
+In silicon.
+
+412
+01:18:21,120 --> 01:18:26,520
+Primary goal is to increase the understanding of biological processes, as you already said.
+
+413
+01:18:26,700 --> 01:18:31,800
+Procursus on developing and applying computation in terms of techniques to achieve this goal.
+
+414
+01:18:33,524 --> 01:18:43,524
+Tekniks used include pattern recognition, data mining, machine learning, algorithms, and visualization.
+
+415
+01:18:44,524 --> 01:18:56,524
+Analyzing biological data to produce unique information involves writing and learning software programs that use algorithms from graph theory.
+
+416
+01:18:57,203 --> 01:19:05,203
+Artificial Intelligence, Soft Computing, Data Mining, Simul Processing, English Processing, and Compute Simulation.
+
+417
+01:19:05,203 --> 01:19:10,203
+All are relevant to your skills in the field.
+
+418
+01:19:12,203 --> 01:19:17,203
+The algorithms in turn depend on theoretical foundations such as discrete mathematics.
+
+419
+01:19:17,203 --> 01:19:23,203
+You have already studied. You have a dedicated course on this.
+
+420
+01:19:25,011 --> 01:19:30,572
+Control theory, you should be aware of control theory.
+
+421
+01:19:30,572 --> 01:19:35,051
+Probably you don't have a course on this, but you know what it is.
+
+422
+01:19:36,131 --> 01:19:45,251
+System theory, information theory, you have extensive skills on information theory, statistics.
+
+423
+01:20:29,619 --> 01:20:30,619
+Skoop.
+
+424
+01:20:32,380 --> 01:20:34,380
+Genetic code.
+
+425
+01:20:34,739 --> 01:20:38,380
+You can have experimental results from various sources.
+
+426
+01:20:38,500 --> 01:20:44,859
+Some patient statistics such as age, weight, whatever, temperature, whatever.
+
+427
+01:20:45,059 --> 01:20:47,059
+Or the...
+
+428
+01:20:47,180 --> 01:20:49,380
+Some other knowledge.
+
+429
+01:20:50,300 --> 01:20:54,460
+And scientific literature, which refers to...
+
+430
+01:20:54,899 --> 01:20:55,699
+basically
+
+431
+01:20:55,699 --> 01:20:59,019
+extensive usage of
+
+432
+01:20:59,019 --> 01:21:00,811
+uh
+
+433
+01:21:04,787 --> 01:21:13,787
+Computing techniques to extract information from some textual data.
+
+434
+01:21:13,787 --> 01:21:16,787
+This is natural language processing.
+
+435
+01:21:20,787 --> 01:21:26,787
+Research in bioinformatics includes method development for storage.
+
+436
+01:21:56,180 --> 01:22:17,708
+Bölümün
+
+437
+01:22:18,975 --> 01:22:22,975
+Bir sürü çöpçü.
+
+438
+01:22:18,003 --> 01:22:24,123
+İzlediğiniz için, masyarak da altyazı, analiz edin ve altyazı.
+
+439
+01:22:40,659 --> 01:22:52,659
+On the building plans of proteins and of the temporal and spatial organization of the air expression on the cell encoded by DNA.
+
+440
+01:22:52,659 --> 01:23:00,659
+Third, there is a strong analogy between the DNA sequence and the concave program.
+
+441
+01:23:06,884 --> 01:23:10,884
+DnA'nın turing machine.
+
+442
+01:23:10,884 --> 01:23:17,884
+DnA'nın information storing system, aslında.
+
+443
+01:23:17,884 --> 01:23:22,884
+Turing machine, bu da oğlan turing.
+
+444
+01:23:22,884 --> 01:23:27,884
+Bu, bu dağlan turing.
+
+445
+01:23:28,884 --> 01:23:33,604
+BASICALLY, BASICY CAN SIMULATE ANY COMPUTING SYSTEM
+
+446
+01:23:33,604 --> 01:23:36,884
+BASIC ELEMENTS
+
+447
+01:23:36,884 --> 01:23:39,884
+1 CONTROL INIT
+
+448
+01:23:39,884 --> 01:23:41,884
+1 TAPE
+
+449
+01:23:41,884 --> 01:23:44,884
+AND A READ-WRITE HEAD
+
+450
+01:23:44,884 --> 01:23:45,884
+OK?
+
+451
+01:23:45,884 --> 01:23:46,884
+AS SHOWN HERE
+
+452
+01:23:46,884 --> 01:23:49,739
+THIS IS THE TURING MACHINE
+
+453
+01:23:50,036 --> 01:23:57,036
+ve rehydrator muz along the tape and transmits information to and from the control unit.
+
+454
+01:24:00,036 --> 01:24:05,036
+And let's look at the central dogma of molecular biology.
+
+455
+01:24:06,036 --> 01:24:15,036
+We have the code in DNA, which is the couples, known as coding strand.
+
+456
+01:24:15,891 --> 01:24:22,891
+Ve bu
+
+457
+01:24:22,891 --> 01:24:24,891
+ve
+
+458
+01:24:24,891 --> 01:24:27,891
+DNA
+
+459
+01:24:27,891 --> 01:24:28,891
+n-RNA
+
+460
+01:24:28,891 --> 01:24:30,891
+ve
+
+461
+01:24:30,891 --> 01:24:32,891
+bu
+
+462
+01:24:32,891 --> 01:24:33,891
+protein
+
+463
+01:24:33,891 --> 01:24:34,891
+ve
+
+464
+01:24:34,891 --> 01:24:35,891
+protein
+
+465
+01:24:37,652 --> 01:24:39,652
+İntro, moleküresi, or whatever in the body.
+
+466
+01:24:39,652 --> 01:24:43,652
+It is the central dogma of molecular biology.
+
+467
+01:24:47,652 --> 01:24:56,460
+Here there is an information law as well, which is very similar to conceptually to Turing machine.
+
+468
+01:25:00,180 --> 01:25:17,340
+Ok, to have a good bioinformatician, first, of course, we should have an exposure to biology, learn basic biology.
+
+469
+01:25:17,340 --> 01:25:23,340
+You have already probably learned in high school, basic biology, you should just...
+
+470
+01:25:52,948 --> 01:26:03,948
+Tool users and tool generators. You are computer engineers, so you will be most likely tool generators.
+
+471
+01:26:04,948 --> 01:26:11,948
+Fourth, learn the computer programming language. You have already know several languages.
+
+472
+01:26:13,948 --> 01:26:17,948
+Perl, Python, Java, MATLAB, whatever it is.
+
+473
+01:26:18,452 --> 01:26:23,952
+Fizik, experiment on your computer and learn different programming techniques.
+
+474
+01:26:23,952 --> 01:26:27,952
+You already know many programming techniques.
+
+475
+01:26:29,452 --> 01:26:37,952
+You are already half bioinformatician, I think, considering the part of bioinformatics.
+
+476
+01:26:41,452 --> 01:26:45,952
+You almost have half of the skills.
+
+477
+01:26:46,387 --> 01:26:48,387
+Bu bir bioinformatik.
+
+478
+01:27:11,923 --> 01:27:20,243
+BOLINFORMATICS is extensively used to shorten drug design life cycle.
+
+479
+01:27:22,083 --> 01:27:27,163
+Toxicology, toxicology is zehir bilim.
+
+480
+01:27:30,443 --> 01:27:38,844
+Molecular evolution, basically to understand how features evolved historically.
+
+481
+01:27:40,340 --> 01:27:47,899
+Biosensörs, to develop biosensörs, bioinformatics extensively used as well.
+
+482
+01:27:48,899 --> 01:27:52,720
+To develop biomaterials, again bioinformatics is used.
+
+483
+01:27:53,760 --> 01:28:05,399
+Biological computing models, probably you are not aware of, but there are some computing models, such as known as DNA computing.
+
+484
+01:28:06,068 --> 01:28:13,467
+Bu model DNA'nın da bir sistemde kullanılıyor.
+
+485
+01:28:13,467 --> 01:28:20,068
+Bu DNA'nın da bir sistemde kullanılıyor.
+
+486
+01:28:25,068 --> 01:28:27,068
+DNA'nın da bir sistemde kullanılıyor.
+
+487
+01:28:31,060 --> 01:28:58,380
+Bu, bu
+
+488
+01:29:01,908 --> 01:29:05,908
+Ok, scope of computational biology.
+
+489
+01:29:07,908 --> 01:29:11,908
+Now we define the scope of computational biology or bioinformatics.
+
+490
+01:29:11,908 --> 01:29:19,908
+We have computational biology overall scope, and under it we have bioinformatics.
+
+491
+01:29:19,908 --> 01:29:26,908
+Although computational biology and bioinformatics are used interchangeably,
+
+492
+01:29:27,604 --> 01:29:33,604
+Computational Biology is much more an umbrella concept.
+
+493
+01:29:33,604 --> 01:29:37,604
+Because it covers the informatics.
+
+494
+01:29:42,420 --> 01:30:00,699
+Bioinformatics covers genomics, proteomics, proteomics covers structural bioinformatics, and intersection between proteomics and genomics.
+
+495
+01:30:04,243 --> 01:30:30,523
+A field which is much more difficult than the structural bioinformatics exists, which is functional genomics. Functional genomics deals with how biological structures functions rather than structurally how they are formed.
+
+496
+01:30:32,532 --> 01:30:32,952
+Okay.
+
+497
+01:31:20,148 --> 01:31:38,768
+I know these definitions are quite lengthy and maybe quite verbal, but before we start bioinformatics course, it is really important. Therefore, I try to give you all the definitions.
+
+498
+01:31:39,887 --> 01:31:46,608
+Okay, let's go over these subfields of bioinformatics. We mentioned genomics.
+
+499
+01:31:47,828 --> 01:31:53,108
+Genomics is the study of the genome.
+
+500
+01:31:55,408 --> 01:32:08,468
+This ICS, when it comes to the end of the concept, that means it's study of that concept.
+
+501
+01:32:08,468 --> 01:32:11,328
+So, genomics is the study of the genome.
+
+502
+01:32:12,968 --> 01:32:14,284
+Genomics is...
+
+503
+01:32:14,387 --> 01:32:22,188
+Bersi, bu da, genetik material, DNA, present in an organism.
+
+504
+01:32:40,895 --> 01:32:51,336
+Bioinformatik, etmesin, involves in developing many algorithms or genomic studies.
+
+505
+01:32:56,180 --> 01:32:59,180
+Bu genomics'in de gençlerinde,
+
+506
+01:32:59,180 --> 01:33:01,180
+yaslıyorsan,
+
+507
+01:33:01,180 --> 01:33:07,180
+gençlerinde,
+
+508
+01:33:07,180 --> 01:33:09,180
+20, 30 yıl önce,
+
+509
+01:33:09,180 --> 01:33:11,180
+çok önemli bir konu,
+
+510
+01:33:11,180 --> 01:33:19,467
+gençlerinde,
+
+511
+01:33:44,595 --> 01:33:51,075
+Proteomics, again, is large-scale study of proteomes.
+
+512
+01:33:52,075 --> 01:33:53,315
+Okay, what is the proteome?
+
+513
+01:33:54,035 --> 01:34:09,315
+Is a set of proteins produced in an organism, system, or biological context through the implementation of...
+
+514
+01:34:14,228 --> 01:34:17,228
+Biologic central dogma of biology.
+
+515
+01:34:17,228 --> 01:34:18,228
+Okay.
+
+516
+01:34:20,228 --> 01:34:27,228
+We may refer to, for instance, the proton of a species or an organ.
+
+517
+01:34:28,228 --> 01:34:34,228
+Okay. Proton of a species as a somo-sacling sort and organ as a liver.
+
+518
+01:34:34,228 --> 01:34:38,228
+They have different proteins, proton and so on.
+
+519
+01:35:07,087 --> 01:35:11,087
+gençlerinde,
+
+520
+01:35:05,876 --> 01:35:08,756
+Central Dogma of Biology,
+
+521
+01:35:09,756 --> 01:35:13,876
+Proces of Transcription, Translation etc.
+
+522
+01:35:13,876 --> 01:35:15,556
+Protein Synthesisi.
+
+523
+01:35:16,195 --> 01:35:18,596
+At the end, we have
+
+524
+01:35:19,316 --> 01:35:22,836
+all different proteins exist.
+
+525
+01:35:23,076 --> 01:35:26,956
+They are not the same or not the constant.
+
+526
+01:35:28,396 --> 01:35:33,516
+To some degree, the protein reflects the underlying transcript form.
+
+527
+01:35:34,355 --> 01:35:43,796
+However, protein activity is also modulated by many factors in addition to the expression level of the lemon juice.
+
+528
+01:35:45,235 --> 01:35:58,415
+This is much more difficult to study than what other factors affect in protein synthesis or protein activity.
+
+529
+01:36:01,395 --> 01:36:14,795
+Proteomics is used to investigate when and where proteins are expressed, rates of protein production, degradation and steady-state abundance, how proteins are modified,
+
+530
+01:36:16,735 --> 01:36:27,475
+the movement of proteins between sub-cellular compartments, the involvement of proteins in metabolic pathways, how proteins interact with one another.
+
+531
+01:36:28,435 --> 01:36:35,435
+Bu konumlar için, bu konumlar için, bu konumlar için,
+
+532
+01:36:35,435 --> 01:36:50,435
+bu konumlar için,
+
+533
+01:36:53,435 --> 01:36:55,435
+Bu konumlar için,
+
+534
+01:36:56,851 --> 01:37:00,332
+Genomics is the branch of bioinformatics.
+
+535
+01:37:02,171 --> 01:37:09,391
+This is the easy part of the bioinformatics, basically.
+
+536
+01:37:10,311 --> 01:37:20,291
+It is related to the analysis and prediction of the three-dimensional structure of biological macromolecules, such as proteins, RNA, and DNA.
+
+537
+01:37:26,579 --> 01:37:41,579
+ve
+
+538
+01:37:52,627 --> 01:37:58,627
+...değil altyazıları da...
+
+539
+01:38:01,876 --> 01:38:14,876
+programlar, to deal with bioinformatik data, you need some basic knowledge of these biological structures.
+
+540
+01:38:18,876 --> 01:38:25,836
+I mentioned that functional genomics is much more difficult than the structural genomics.
+
+541
+01:38:26,003 --> 01:38:33,003
+Structural genomics is almost a very developed field, but still functional genomics are developing.
+
+542
+01:38:33,003 --> 01:38:45,003
+It is a field of molecular biology, which attempts to make use of the vast world of data given by genomic and transcriptomic projects
+
+543
+01:38:45,003 --> 01:38:51,003
+to describe gene and protein functions and interactions.
+
+544
+01:38:53,844 --> 01:39:01,844
+Hottopikin, still Hottopikin, bioinformatik filiç, protein-to-protein, or gene-to-gene interaction.
+
+545
+01:39:10,844 --> 01:39:13,844
+These interactions and...
+
+546
+01:39:19,380 --> 01:39:24,380
+İzlediğiniz için çok önemli bir şey.
+
+547
+01:39:24,380 --> 01:39:31,380
+İzlediğiniz için, say, birçok, cancer development, veya diğer birçok, veya birçok.
+
+548
+01:39:47,347 --> 01:39:49,347
+Parma-tramatik.
+
+549
+01:39:49,347 --> 01:39:55,347
+Bu, genelik, transkripti, transkripti,
+
+550
+01:39:55,347 --> 01:39:57,347
+genelik, gene expression,
+
+551
+01:39:57,347 --> 01:40:00,347
+protein-protein interactions.
+
+552
+01:40:14,420 --> 01:40:29,420
+Bu, bioinformatik is still hot subject for the reasons of supply and demand reasons.
+
+553
+01:40:29,420 --> 01:40:38,283
+Still, there are very few people adequately trained in both biology and computer science.
+
+554
+01:40:38,547 --> 01:40:44,787
+Genom-sequenç, microarrays et cetera, led to large amounts of data to be analyzed.
+
+555
+01:40:44,787 --> 01:40:47,987
+There is big, big amount of data.
+
+556
+01:40:47,987 --> 01:40:52,867
+It also falls under the big data concept.
+
+557
+01:40:52,867 --> 01:41:02,147
+Because our informatic data is not only in terms of the byte.
+
+558
+01:41:02,676 --> 01:41:29,676
+...
+
+559
+01:41:52,340 --> 01:42:02,779
+Genetic diseases and inherited diseases, FASTABiyoenformatiğe, can help in this field as well.
+
+560
+01:42:02,779 --> 01:42:17,260
+So, such as, for example, diabetes, viral diseases, again, understanding the structure of the virus and to develop this antivirus.
+
+561
+01:42:20,467 --> 01:42:27,867
+Medicine, again, involves in using expensive bioinformatics concepts.
+
+562
+01:42:29,367 --> 01:42:39,567
+We have already experienced this COVID-19 viral pandemic.
+
+563
+01:42:40,967 --> 01:42:45,867
+So bioinformatics was extensively used to understand.
+
+564
+01:42:46,804 --> 01:43:37,804
+Bu, bu
+
+565
+01:43:41,844 --> 01:43:48,264
+Bu bir drugi, ilk bir süreç, 2-10 yılı,
+
+566
+01:43:48,264 --> 01:43:54,564
+Bu bir süreçte bir süreçte kullanılıyor.
+
+567
+01:43:58,564 --> 01:44:02,703
+Bir süreçte kullanılıyor.
+
+568
+01:44:10,076 --> 01:44:13,515
+Ve bu
+
+569
+01:44:13,515 --> 01:44:22,675
+ve bu
+
+570
+01:44:22,675 --> 01:44:31,635
+bu
+
+571
+01:44:32,079 --> 01:44:46,079
+Then in Phase 1, which takes almost one year, this drug candidate is tested on 20 to 30 health volunteers.
+
+572
+01:44:50,079 --> 01:44:58,079
+Then next two years in Phase 2 is...
+
+573
+01:44:58,707 --> 01:45:20,843
+Bu, bu
+
+574
+01:45:22,996 --> 01:45:27,115
+Phase 3, bu
+
+575
+01:45:27,115 --> 01:45:29,536
+1000-5000
+
+576
+01:45:29,536 --> 01:45:31,935
+ve all the reactions
+
+577
+01:45:31,935 --> 01:45:34,235
+of patients to use medicine
+
+578
+01:45:34,235 --> 01:45:36,256
+is monitored
+
+579
+01:45:36,256 --> 01:45:39,376
+for long-term use.
+
+580
+01:45:40,155 --> 01:45:40,935
+It's already
+
+581
+01:45:40,935 --> 01:45:42,956
+10-12 years.
+
+582
+01:45:46,956 --> 01:45:47,716
+Then
+
+583
+01:45:49,043 --> 01:46:01,083
+At that stage, it needs to be approved by authorities.
+
+584
+01:46:01,083 --> 01:46:10,923
+In the USA, it's FASTA, Federal Drug Agency, or in fact, maybe Sağlık Bakanlığı, I am not sure.
+
+585
+01:46:38,804 --> 01:47:32,300
+Bu, bu
+
+586
+01:48:00,148 --> 01:48:04,148
+Açıkçı dağlar ve gen ifadesi konularını işlemedik.
+
+587
+01:48:44,884 --> 01:49:11,307
+Bu, ben
+
+588
+01:49:11,796 --> 01:49:23,796
+Phase I, 30% past Phase II, 80% past Phase III, ve 1 vatapur.
+
+589
+01:49:53,844 --> 01:50:10,283
+Okay, this is the killer application. Personalized medicine means you have the condition, health condition, you go to the doctor and the doctor prescribes you a certain type of medicine, let's say medicine.
+
+590
+01:50:10,684 --> 01:50:21,323
+The other guy has the same problem maybe, but because he's another person, there might be different reason.
+
+591
+01:50:21,743 --> 01:50:23,743
+Bu da aynı durumda,
+
+592
+01:50:23,743 --> 01:50:27,743
+ve o da aynı durumda
+
+593
+01:50:27,743 --> 01:50:29,743
+bir diğer durumda
+
+594
+01:50:29,743 --> 01:50:31,743
+bir durumda.
+
+595
+01:50:31,743 --> 01:50:33,743
+Bu ideal
+
+596
+01:50:33,743 --> 01:50:35,743
+bir durumda,
+
+597
+01:50:35,743 --> 01:50:37,743
+bir de bir durumda
+
+598
+01:50:37,743 --> 01:50:39,743
+bir durumda,
+
+599
+01:50:39,743 --> 01:50:41,743
+bir durumda bir durumda
+
+600
+01:50:41,743 --> 01:50:43,743
+bir durumda bir durumda.
+
+601
+01:50:43,743 --> 01:50:45,743
+Bu,
+
+602
+01:50:45,743 --> 01:50:47,743
+bu da aslında
+
+603
+01:50:47,743 --> 01:50:49,003
+bir durumda.
+
+604
+01:50:49,140 --> 01:50:52,700
+Modern medicine, personalized medicine.
+
+605
+01:50:53,520 --> 01:50:56,120
+I'm not going to mention too much.
+
+606
+01:50:56,920 --> 01:51:02,380
+For this, of course, you need a lot of infrastructure.
+
+607
+01:51:03,580 --> 01:51:13,240
+For personalized medicine, you have the patient, you have the tissue sample, you have the gene expression of this person.
+
+608
+01:51:13,779 --> 01:51:15,779
+Bu, medical relevans,
+
+609
+01:51:15,779 --> 01:51:17,779
+some therapeutic information
+
+610
+01:51:17,779 --> 01:51:19,779
+and some references
+
+611
+01:51:19,779 --> 01:51:21,779
+all goes to pattern
+
+612
+01:51:21,779 --> 01:51:23,779
+metodonizer, which is a computing
+
+613
+01:51:23,779 --> 01:51:25,779
+system. We have the
+
+614
+01:51:25,779 --> 01:51:27,779
+microarray from
+
+615
+01:51:27,779 --> 01:51:29,779
+you have the
+
+616
+01:51:29,779 --> 01:51:31,779
+tissue sample and through
+
+617
+01:51:31,779 --> 01:51:33,779
+microarray you have
+
+618
+01:51:33,779 --> 01:51:35,779
+information about
+
+619
+01:51:35,779 --> 01:51:37,779
+patient and instant
+
+620
+01:51:37,779 --> 01:51:39,779
+track designed for
+
+621
+01:51:39,779 --> 01:51:41,359
+this.
+
+622
+01:51:41,359 --> 01:52:08,907
+Bu, bu
+
+623
+01:52:09,140 --> 01:52:16,780
+So, within a reasonable time, drug or personalized drug should be ready.
+
+624
+01:52:22,515 --> 01:52:25,435
+So, I just skip this first.
+
+625
+01:52:31,796 --> 01:52:57,804
+Bu, bu
+
+626
+01:53:05,492 --> 01:53:11,492
+Yani, aslında, ne kadar da bir şey yok.
+
+627
+01:53:33,395 --> 01:53:36,775
+Trial, what can you do? What can you suggest?
+
+628
+01:53:40,035 --> 01:53:46,615
+If you want to implement this personalized drug system, what can be done?
+
+629
+01:53:47,935 --> 01:53:49,175
+Anybody has an idea?
+
+630
+01:54:04,404 --> 01:54:05,404
+What can you do?
+
+631
+01:54:19,475 --> 01:54:26,475
+Bu nedenle, bu
+
+632
+01:54:26,475 --> 01:54:29,475
+bu
+
+633
+01:54:35,507 --> 01:54:59,884
+Bu, bu
+
+634
+01:55:00,148 --> 01:55:04,148
+Bu, yine, you need to use a very high-performance, protein system.
+
+635
+01:55:09,779 --> 01:55:37,099
+Bu bir örneğin, bu bir örneğin, bu bir örneğin, bu bir örneğin, bu bir örneğin, bu bir örneğin, bu bir örneğin, bu bir örneğin, bu bir örneğin, bu bir örneğin, bu bir örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu ör
+
+636
+01:55:38,100 --> 01:55:44,100
+Web-based, geographical user interfaces.
+
+637
+01:55:46,900 --> 01:55:53,100
+Common line, usually, and this is on Linux systems.
+
+638
+01:55:57,235 --> 01:56:04,275
+Usually, web-based geografik user interfaces are for tool users.
+
+639
+01:56:04,275 --> 01:56:14,796
+And usually tool developers prefer to work in common line systems, tool developers.
+
+640
+01:56:16,796 --> 01:56:24,155
+There are many web-based geografik user-based tools.
+
+641
+01:57:00,847 --> 01:57:04,408
+Bu nefes to use bioinformatik's,
+
+642
+01:57:05,008 --> 01:57:12,328
+Concepts in their analysis and they are not familiar with the computing concepts, they use the tools.
+
+643
+01:57:13,008 --> 01:57:14,568
+They are tool users.
+
+644
+01:57:16,048 --> 01:57:16,887
+Okay.
+
+645
+01:57:24,275 --> 01:57:38,275
+As I said, command line interfaces are used mainly for tool developers because they do not provide easy... ...in-computer interaction.
+
+646
+01:57:41,275 --> 01:57:43,275
+For this, we have to have very...
+
+647
+01:58:17,747 --> 01:58:24,747
+Here we see some of the information such as Biomar, Genome, Wolfgang, BLAST, or...
+
+648
+01:58:26,747 --> 01:58:30,747
+We will mention some of them in the future.
+
+649
+01:58:31,747 --> 01:58:37,747
+And there are also common language software but you can also develop your own.
+
+650
+01:58:39,747 --> 01:58:40,971
+So...
+
+651
+01:58:45,811 --> 01:58:54,511
+Tool-users, are basically public health informatics, medical informatics, and bioinformatics skills.
+
+652
+01:58:54,511 --> 01:59:02,412
+Tool-makers are basically computer scientists and usually computer scientists, computer engineers.
+
+653
+01:59:11,087 --> 01:59:17,771
+ve gençler de
+
+654
+01:59:22,771 --> 01:59:32,351
+Ok, these are general guidelines to learn programming for bioinformatik.
+
+655
+01:59:32,351 --> 01:59:47,612
+You already know the programming. I do not need to tell these things to you, but just to mention, you make a plan, be selective, organize your learning environment.
+
+656
+01:59:48,115 --> 01:59:54,115
+Do the readings, this is important. Do the exercises is also important.
+
+657
+01:59:57,115 --> 02:00:11,115
+Because this is a proverb attributed to konfidcus, but it might be Chinese proverb as well.
+
+658
+02:00:23,380 --> 02:00:34,940
+I memorized, I forgot, I saw, I remembered, I did, I learned.
+
+659
+02:00:36,160 --> 02:00:45,460
+So, making experiment is ultimate method for learning by heart.
+
+660
+02:01:12,884 --> 02:01:14,884
+Üzerine, bu işçeriniz.
+
+661
+02:01:14,884 --> 02:01:17,884
+Öğrençler, bir şey yapmalı.
+
+662
+02:01:17,884 --> 02:01:37,884
+Bir şey yapmalı.
+
+663
+02:01:38,387 --> 02:01:42,387
+Bu bir şekilde bir şekilde devam edebilirsiniz.
+
+664
+02:01:42,387 --> 02:01:45,387
+Bu bir başka önemli bir şey
+
+665
+02:01:45,387 --> 02:01:47,387
+Bu,
+
+666
+02:01:47,387 --> 02:01:52,387
+programmanın skizde de kullanımlar.
+
+667
+02:01:52,387 --> 02:01:53,387
+Çünkü,
+
+668
+02:01:53,387 --> 02:01:56,387
+programmanın bir language
+
+669
+02:01:56,387 --> 02:01:59,387
+bir metadata,
+
+670
+02:01:59,387 --> 02:02:00,387
+ve bir metadata olarak
+
+671
+02:02:00,387 --> 02:02:02,387
+bir kodak.
+
+672
+02:02:05,043 --> 02:02:18,043
+ve bu programı için bir programı ve sonra bir programı bekliyoruz.
+
+673
+02:02:18,043 --> 02:02:22,043
+Bir sonraki programı bekliyoruz.
+
+674
+02:02:22,043 --> 02:02:28,043
+Bir programı bekliyoruz.
+
+675
+02:02:28,043 --> 02:02:32,043
+Bu programı bekliyoruz.
+
+676
+02:02:33,011 --> 02:02:36,311
+So, documentation is important always.
+
+677
+02:02:37,992 --> 02:02:42,831
+That was an example of the importance of the documentation
+
+678
+02:02:42,831 --> 02:02:44,751
+while we were program.
+
+679
+02:02:45,412 --> 02:02:51,771
+Documentation is important for any sort of data recording.
+
+680
+02:02:53,412 --> 02:02:57,811
+Be realistic about your expectations for what you can learn.
+
+681
+02:02:59,796 --> 02:03:04,296
+İzor, olgurapar, ve gen ifadesi, dizi hizalama.
+
+682
+02:03:08,307 --> 02:03:14,188
+Here are some links for further reading.
+
+683
+02:03:19,947 --> 02:03:24,047
+We have a 10-minute break.
+
+684
+02:03:25,987 --> 02:03:27,768
+10 dakikada ara verelim yine.
+
+685
+02:12:49,555 --> 02:12:49,875
+Ok.
+
+686
+02:12:55,731 --> 02:12:58,731
+İnanın bilimformatik, ama
+
+687
+02:12:58,731 --> 02:12:59,851
+ne kadar
+
+688
+02:12:59,851 --> 02:13:01,291
+çalışan
+
+689
+02:13:01,291 --> 02:13:07,731
+birçok
+
+690
+02:13:07,731 --> 02:13:08,731
+ne kadar
+
+691
+02:13:08,731 --> 02:13:23,211
+birçok
+
+692
+02:13:24,979 --> 02:13:31,979
+Bir sonraki bir şekilde, bir başka bir şey, bir başka bir şey, bir başka bir şey,
+
+693
+02:13:31,979 --> 02:13:37,979
+bir başka bir şey, bir başka bir şey,
+
+694
+02:13:37,979 --> 02:13:41,979
+bir şey, bir şey,
+
+695
+02:13:41,979 --> 02:13:48,979
+bir şey,
+
+696
+02:14:17,300 --> 02:14:39,884
+Bu da bu
+
+697
+02:14:41,811 --> 02:14:45,811
+A work flow should be well documented, as I said.
+
+698
+02:14:46,811 --> 02:14:53,811
+To facilitate your work, information stored on a country should be well organized.
+
+699
+02:14:53,811 --> 02:14:57,811
+This is the database.
+
+700
+02:14:57,811 --> 02:15:00,811
+Data should be made available to others.
+
+701
+02:15:00,811 --> 02:15:05,811
+Data should be available freely in an understandable format.
+
+702
+02:15:09,971 --> 02:15:21,971
+Metadata, is important as well. Anybody can tell me what a metadata is?
+
+703
+02:15:27,155 --> 02:15:28,155
+Bu ne?
+
+704
+02:16:02,804 --> 02:16:05,683
+bu da file ile
+
+705
+02:16:23,252 --> 02:16:49,963
+İzlediğiniz için birçok
+
+706
+02:16:53,139 --> 02:17:18,139
+Ok, what are the bioinformatics search areas? We already mentioned some of them, just to summarize. Bioinformatics, genomics, transcriptomics, protomics, epigenetics, interactomics, protein analysis and structure prediction, next generation sequencing technology.
+
+707
+02:17:18,708 --> 02:17:25,708
+Comparative secondary synapses, systems biology, text mining, and information extraction.
+
+708
+02:17:25,708 --> 02:17:37,708
+These are the fields one can do research or work on the easy way.
+
+709
+02:17:40,708 --> 02:17:45,708
+Where can we learn more? There are many sources on the internet.
+
+710
+02:17:46,804 --> 02:18:11,948
+Bu da bu
+
+711
+02:18:12,340 --> 02:18:15,340
+Bu, en iyi şekilde, en iyi şekilde,
+
+712
+02:18:15,340 --> 02:18:21,340
+çok fazla bilgi veren çok bilgi veren çok bilgi.
+
+713
+02:18:21,340 --> 02:18:24,340
+Bu, çok videoları açıklayan,
+
+714
+02:18:24,340 --> 02:18:27,340
+çok bilgi verenlerle ilgili.
+
+715
+02:18:39,987 --> 02:18:42,987
+Program ve software.
+
+716
+02:18:42,987 --> 02:18:45,987
+You already know this.
+
+717
+02:18:45,987 --> 02:18:51,987
+Any questions regarding the informatics now?
+
+718
+02:18:51,987 --> 02:18:53,987
+What is it?
+
+719
+02:18:53,987 --> 02:18:57,987
+Do you have a clear understanding?
+
+720
+02:18:57,987 --> 02:19:00,987
+Or still you have some...
+
+721
+02:19:02,987 --> 02:19:06,987
+Hocam, sesiniz çok az geldi ders boyunca.
+
+722
+02:19:07,956 --> 02:19:10,995
+İkincisi, tamam.
+
+723
+02:19:11,815 --> 02:19:17,595
+İkincisi, do you have any information about what bioinformatics is or what it is not?
+
+724
+02:19:18,275 --> 02:19:22,236
+Or do you still have some doubts about it?
+
+725
+02:19:24,615 --> 02:19:26,655
+Are there any unclear things?
+
+726
+02:19:28,195 --> 02:19:31,056
+Is it good for you as a course or not?
+
+727
+02:19:31,115 --> 02:19:32,396
+You decide after this.
+
+728
+02:19:34,324 --> 02:19:48,884
+Yani, istiyorsanız bırakabilirsiniz. Bana göre değil diyebilirsiniz. Veya o enteresan bir şey. Devam edersiniz. Var mı bir soru, koment?
+
+729
+02:19:53,427 --> 02:20:09,667
+Bazı şeyleri bilerek tanımları falan da söyledim ki iyi iş olsun. Farklı farklı şekillerde, farklı kaynaklardan alıp şey yapmaya çalıştık. Kim, nasıl anlıyor, neyi nasıl anlamamız gerekir?
+
+730
+02:20:10,227 --> 02:20:18,427
+Yani özet olarak neyin ne olduğunu, neler gerektiğini, yani bilinformatikte çalışmak için hangi alanlarda biraz hani…
+
+731
+02:20:19,252 --> 02:20:24,011
+Kapı vermek gerektiğini anladığınız diye sanıyorum.
+
+732
+02:20:26,092 --> 02:20:34,471
+Gördüğünüz gibi, daha önce gördüğünüz gibi bir sürü desten, kavramları, konseptleri birleştiren bir konu.
+
+733
+02:20:35,851 --> 02:20:43,912
+Yani verimadenciliği var, yapaylık var, istatistik var, biyoloji var, kimya var, yeri geldiğinde.
+
+734
+02:20:45,647 --> 02:20:48,347
+Doğal dil işleme var, dil bilimi var.
+
+735
+02:20:50,847 --> 02:20:51,247
+Gibi.
+
+736
+02:20:52,047 --> 02:20:52,987
+Yani bu işin içinde.
+
+737
+02:21:07,347 --> 02:21:10,268
+Sanırım anlaşıldı bu giriş.
+
+738
+02:21:17,523 --> 02:21:20,623
+Evet, işte, narika bir giriş yapıp
+
+739
+02:21:24,020 --> 02:21:30,800
+Şimdi esas konulara girmeden önce yeni.
+
+740
+02:21:31,920 --> 02:21:46,060
+Her dersten önce, benim diğer dersteğim olanlar bu konuları görmüşlerdir ama her derste bu konuları tekrar tekrar hatırlatıyorum.
+
+741
+02:21:49,716 --> 02:21:57,476
+Bilgi teknolojileri konseptleri. Bir önceki söylediklerimi biraz açıklayan bazı şeyler de var.
+
+742
+02:22:00,036 --> 02:22:01,736
+Ona bir bakalım.
+
+743
+02:22:01,736 --> 02:22:02,275
+Okay.
+
+744
+02:22:15,956 --> 02:22:18,956
+...baziciler, computing systems.
+
+745
+02:22:18,956 --> 02:22:26,956
+Let me first introduce the concept of informatics.
+
+746
+02:22:26,956 --> 02:22:34,956
+Because the course name is introduction to bioinformatics.
+
+747
+02:22:34,956 --> 02:22:39,956
+We have already mentioned bioinformatics, but let's...
+
+748
+02:23:08,084 --> 02:23:30,584
+But in informatics, we do not limit ourselves to just a computing system, because creating, storing, finding, manipulating, and sharing information can also be done by hand as well, by some other means, through pen and pencil or whatever.
+
+749
+02:23:31,283 --> 02:23:38,743
+Therefore, we are not limiting ourselves at that moment by an electronic computing system.
+
+750
+02:23:38,743 --> 02:23:45,183
+But, these definitions greatly refers to a computing system as well.
+
+751
+02:23:50,772 --> 02:24:09,772
+In terms of the etimology, informatics first was coined by German computer scientist Karl Steinbach in 1956.
+
+752
+02:24:13,772 --> 02:24:14,772
+Basically...
+
+753
+02:24:17,172 --> 02:24:26,492
+İzlediğiniz için, informatik, word informatik, to refer to the automatic information processing.
+
+754
+02:24:27,492 --> 02:24:32,092
+Informatik, meaning processing information automatically.
+
+755
+02:24:33,092 --> 02:24:43,452
+There's a French term informatik, as well, which was coined by Philip Dreyfus in 1962.
+
+756
+02:24:46,739 --> 02:24:53,739
+Bu termi de bir
+
+757
+02:25:14,899 --> 02:25:23,659
+Do you see parallel between science of automatic information interactions and programming?
+
+758
+02:25:27,956 --> 02:25:32,076
+Of course, we do this through programming.
+
+759
+02:25:36,244 --> 02:25:45,244
+ve bilgilerin informasyonu ile ilgili bilgilerin programları ile ilgili birçok ilişkilerin.
+
+760
+02:26:07,219 --> 02:26:11,659
+School of Informatics, or Department of Informatics.
+
+761
+02:26:11,659 --> 02:26:26,860
+Some universities have computer science or computer engineering programs under the name of the School of Informatics or just the Department of Informatics.
+
+762
+02:26:27,939 --> 02:26:29,619
+So there's a great relationship.
+
+763
+02:26:33,492 --> 02:26:41,811
+İzlediğiniz için, informatik morphology, informasyon plus ICS.
+
+764
+02:26:43,492 --> 02:26:45,092
+Informasyon.
+
+765
+02:27:54,868 --> 02:28:04,167
+Data is known as unprocessed facts.
+
+766
+02:28:10,644 --> 02:28:15,144
+ve figürlerle, without any added interpretation or analysis.
+
+767
+02:28:15,144 --> 02:28:24,443
+For example, you have an ECG system, you connect it to a patient,
+
+768
+02:28:24,443 --> 02:28:38,144
+and the signals collected by ECG system from the heart of the patient is recorded in a hard disk.
+
+769
+02:28:38,195 --> 02:28:43,536
+As a row of five is data, simple data.
+
+770
+02:28:44,436 --> 02:28:48,056
+So, what is the data then in this respect?
+
+771
+02:29:24,659 --> 02:29:28,059
+Why we record this data, ECG data?
+
+772
+02:29:35,636 --> 02:29:38,416
+Bu bizim için de bu konuları?
+
+773
+02:30:01,012 --> 02:30:03,332
+Bu, bu doğru doğru.
+
+774
+02:30:03,332 --> 02:30:05,332
+Bu doğru doğru.
+
+775
+02:30:27,443 --> 02:30:36,283
+We do not record data to process it, but we do record the data to extract information.
+
+776
+02:30:37,443 --> 02:30:40,503
+To be able to extract information, we process it.
+
+777
+02:30:42,043 --> 02:30:47,283
+So we have to put everything in the right position.
+
+778
+02:30:47,963 --> 02:30:53,563
+So the purpose is not to process, but to extract the information.
+
+779
+02:30:54,579 --> 02:30:56,579
+bu data'a da kullanılıyor.
+
+780
+02:30:56,579 --> 02:31:01,579
+Bu, data'a da kullanılıyor.
+
+781
+02:31:01,579 --> 02:31:04,579
+Ancak bir bilim var,
+
+782
+02:31:04,579 --> 02:31:09,579
+ve bir bilim var.
+
+783
+02:31:09,579 --> 02:31:14,579
+Bu, bu bilim var.
+
+784
+02:31:14,579 --> 02:31:18,579
+Bu bilim var.
+
+785
+02:31:19,443 --> 02:31:45,547
+Bu, bu
+
+786
+02:31:52,084 --> 02:31:57,084
+Bu, eksempel, krued oil'a 80 TL'ye kadar.
+
+787
+02:31:57,084 --> 02:32:04,084
+Bu, eksempel, krued oil'a kadar.
+
+788
+02:32:04,084 --> 02:32:07,084
+Bu, eksempel,
+
+789
+02:32:07,084 --> 02:32:10,084
+bu, eksempel,
+
+790
+02:32:35,891 --> 02:33:02,603
+Bu da bu
+
+791
+02:33:07,059 --> 02:33:31,819
+Then there is a third concept, there's knowledge. Knowledge is something more than information. It's a combination of already extracted information, past experiences, and insight. That may benefit individual or the organization.
+
+792
+02:33:34,227 --> 02:33:37,007
+Bu, bu üçüncü konceptı.
+
+793
+02:33:58,804 --> 02:34:02,884
+Bu, bu, not only information, but also some experience as well.
+
+794
+02:34:06,304 --> 02:34:12,184
+Insight means the capacity to gain an accurate and deep understanding of someone or something.
+
+795
+02:34:12,703 --> 02:34:14,564
+An accurate and deep understanding.
+
+796
+02:34:14,564 --> 02:34:18,324
+This is the dictionary definition of insight.
+
+797
+02:34:22,260 --> 02:34:26,760
+Bazen insanların daha iyi bir insanların daha iyi bir insanların daha iyi.
+
+798
+02:34:26,760 --> 02:34:28,760
+Bazen insanların daha iyi bir insanların daha iyi.
+
+799
+02:34:30,760 --> 02:34:35,260
+Ok, bu konferençler için konferençler için bilgiler.
+
+800
+02:34:35,260 --> 02:34:38,260
+Bu konferençler için çok fazla zaman.
+
+801
+02:34:38,760 --> 02:34:42,760
+Bu konferençler için bilgiler, bilgiler, bilgiler ve bilgiler.
+
+802
+02:34:42,760 --> 02:34:48,260
+Bu konferençler için bilgiler.
+
+803
+02:34:49,620 --> 02:34:51,620
+Evet.
+
+804
+02:36:05,108 --> 02:36:10,108
+...to process it basically, because we process it to extract the information.
+
+805
+02:36:12,108 --> 02:36:18,108
+To be useful, data must satisfy a number of conditions.
+
+806
+02:36:18,108 --> 02:36:23,108
+So it must be relevant to the specific purpose.
+
+807
+02:36:23,108 --> 02:36:27,108
+It must be complete.
+
+808
+02:36:27,108 --> 02:36:30,108
+It must be accurate.
+
+809
+02:36:30,108 --> 02:36:32,108
+It must be timely.
+
+810
+02:36:34,899 --> 02:36:45,291
+Bu, bu
+
+811
+02:36:48,595 --> 02:36:50,595
+Bu da aynı kriteria,
+
+812
+02:36:50,595 --> 02:36:52,595
+bu da aynı şey.
+
+813
+02:36:52,595 --> 02:36:54,595
+Bu da aynı şey.
+
+814
+02:36:54,595 --> 02:37:00,595
+Bu da bu koncept inisiydi.
+
+815
+02:37:00,595 --> 02:37:04,595
+Bu da bu konceptin,
+
+816
+02:37:04,595 --> 02:37:10,595
+ve bu konceptin,
+
+817
+02:37:10,595 --> 02:37:14,059
+bu konceptin,
+
+818
+02:37:16,147 --> 02:37:24,647
+At the end, it is important to get the right information and to get the information right.
+
+819
+02:37:24,647 --> 02:37:30,647
+So that's the important concept of data and information.
+
+820
+02:37:33,147 --> 02:37:34,647
+I just skip this.
+
+821
+02:37:45,652 --> 02:37:48,652
+Anyway, data and information is important.
+
+822
+02:37:51,652 --> 02:37:57,652
+Because without data, all processing are meaningless.
+
+823
+02:38:02,227 --> 02:38:14,227
+So, we frequently mention systems, we talk about systems, so I just want to remind you what a system is.
+
+824
+02:38:15,227 --> 02:38:29,003
+And because we started by saying the information system, so in bioinformatic, we were able to...
+
+825
+02:38:48,084 --> 02:38:53,084
+İzlediğiniz için dek bilgisayar ve informatik, data ve informatik.
+
+826
+02:38:53,084 --> 02:38:57,084
+Şimdi, bu konceptı sistem.
+
+827
+02:38:57,084 --> 02:39:13,084
+Systeme çok çok kullanılıyor ve kontrol teoriyelerde, kontrol sistem teoriyelerde.
+
+828
+02:39:14,260 --> 02:39:17,260
+Ama genelde, her yerden bir yer.
+
+829
+02:39:43,956 --> 02:39:51,775
+People from different engineering disciplines have different perspectives of what a system is.
+
+830
+02:39:51,775 --> 02:40:01,556
+For example, software engineers often refer to an integrated set of compute programs as a system.
+
+831
+02:40:03,335 --> 02:40:10,475
+Electrical engineers might refer to a complex integrated circuit or an integrated set of electrical unit.
+
+832
+02:40:10,832 --> 02:40:12,832
+as a system.
+
+833
+02:40:12,832 --> 02:40:16,832
+We also refer to computer as a system as well.
+
+834
+02:40:21,139 --> 02:40:34,099
+From all these things, from the skinless system depends on one's perspective and the integrated set of elements that accomplish a defined objective.
+
+835
+02:40:35,840 --> 02:40:38,459
+So this is an appropriate definition.
+
+836
+02:40:40,759 --> 02:40:45,739
+A system is an assembly of parts where the parts or components are connected together.
+
+837
+02:40:48,020 --> 02:40:50,159
+...in an organized way.
+
+838
+02:40:52,100 --> 02:40:58,159
+The parts or components are affected by being in the system and they...
+
+839
+02:40:59,360 --> 02:41:01,400
+...also affect system.
+
+840
+02:41:07,987 --> 02:41:15,808
+The assembly does something. The assembly has been identified by a personal leave of special interest.
+
+841
+02:41:16,747 --> 02:41:27,667
+Any arrangement which involves the handling, processing, or manipulating of resources of whatever type can be represented as a system.
+
+842
+02:41:28,788 --> 02:41:33,547
+There are some definitions on online dictionaries. You can check them.
+
+843
+02:41:34,004 --> 02:41:36,404
+But I'm not going to elaborate anymore.
+
+844
+02:41:42,164 --> 02:41:52,704
+We can talk about many systems, class systems, school system, economic system, political system, traffic system, system system.
+
+845
+02:41:53,623 --> 02:42:00,644
+But in all these definitions, there's always several components.
+
+846
+02:42:07,195 --> 02:42:12,195
+Şimdi, in terms of the control theory,
+
+847
+02:42:12,195 --> 02:42:17,195
+systems have inputs, processes and outputs.
+
+848
+02:42:17,195 --> 02:42:22,123
+And there is a feedback.
+
+849
+02:42:24,371 --> 02:42:48,395
+Bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde, bu sistemde
+
+850
+02:42:48,468 --> 02:43:14,891
+Kontrol Teori'ye bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir
+
+851
+02:43:15,028 --> 02:43:20,188
+Bu, eksempel, bir sistem, bir sistem, bir sistem.
+
+852
+02:43:39,924 --> 02:43:46,924
+Ve bu şekilde üzerinde deyzeyde ve
+
+853
+02:43:46,924 --> 02:43:51,924
+ve bu şekilde üzerinde deyzeyde ve
+
+854
+02:43:51,924 --> 02:43:54,924
+deyzeyde deyzeyde deyzeyde
+
+855
+02:43:54,924 --> 02:44:01,740
+ve bu şekilde
+
+856
+02:44:01,876 --> 02:44:05,876
+Bazen sonra, küçük bir şeyin yerleştiği yerleştiği ve
+
+857
+02:44:05,876 --> 02:44:10,316
+ve bu
+
+858
+02:44:10,316 --> 02:44:12,316
+normal bir şeyin ve
+
+859
+02:44:12,316 --> 02:44:15,316
+bir şeyin.
+
+860
+02:44:16,595 --> 02:44:21,876
+Bu sensör sende
+
+861
+02:44:21,876 --> 02:44:23,435
+ve o brain
+
+862
+02:44:23,435 --> 02:44:25,435
+ve o brainin
+
+863
+02:44:25,435 --> 02:44:26,916
+ve o zaman
+
+864
+02:44:26,916 --> 02:44:27,835
+acta
+
+865
+02:44:28,979 --> 02:44:32,979
+Şimdi, şimdi, bu şekilde,
+
+866
+02:44:32,979 --> 02:44:35,979
+ve bu şekilde,
+
+867
+02:44:35,979 --> 02:44:38,979
+bir şey yapıyoruz,
+
+868
+02:44:38,979 --> 02:44:40,979
+ve bu şekilde,
+
+869
+02:44:40,979 --> 02:44:42,979
+ve tekrar,
+
+870
+02:44:42,979 --> 02:44:46,979
+ve bu şekilde,
+
+871
+02:44:46,979 --> 02:44:47,979
+tamamen,
+
+872
+02:44:47,979 --> 02:44:53,979
+bu şekilde,
+
+873
+02:44:55,731 --> 02:44:59,731
+ve model pairs, just, izi hizalama.
+
+874
+02:45:02,963 --> 02:45:19,884
+So, coming back to information systems, it can be defined as the ways that organizations store, move, organize, process.
+
+875
+02:45:20,755 --> 02:45:21,956
+...dear information.
+
+876
+02:45:22,556 --> 02:45:26,735
+This is basically the definition of a computing system.
+
+877
+02:45:27,115 --> 02:45:28,615
+We will see in a minute.
+
+878
+02:45:29,135 --> 02:45:31,036
+Information technology.
+
+879
+02:45:33,755 --> 02:45:38,536
+This refers to components that implement information systems.
+
+880
+02:45:40,376 --> 02:45:42,216
+First hardware.
+
+881
+02:45:45,155 --> 02:45:46,091
+Still...
+
+882
+02:45:46,324 --> 02:45:52,804
+Hardware refers to not only computer, but also low-tech things such as pen and paper.
+
+883
+02:45:53,684 --> 02:46:01,123
+We have software. Software is changeable instructions for the hardware.
+
+884
+02:46:01,404 --> 02:46:07,864
+We have the people as part of information system.
+
+885
+02:46:09,864 --> 02:46:10,864
+People.
+
+886
+02:46:12,084 --> 02:46:18,904
+ve proçedörler için, bu
+
+887
+02:46:38,739 --> 02:46:41,739
+Let me introduce the digital system first.
+
+888
+02:46:43,239 --> 02:46:52,360
+A digital system can be described as a system which takes a set of discrete information
+
+889
+02:46:52,360 --> 02:47:00,319
+and discrete internal information and generates a set of discrete information outputs.
+
+890
+02:47:00,979 --> 02:47:04,659
+Now, the important property of a digital system is
+
+891
+02:47:05,040 --> 02:47:15,240
+Information, or data basically, just discrete, is the first property of the ecosystem.
+
+892
+02:47:15,240 --> 02:47:19,640
+It has inputs, internal system states and outputs.
+
+893
+02:47:19,640 --> 02:47:23,040
+Feed forward and feedback systems of your data.
+
+894
+02:47:23,860 --> 02:47:31,240
+Bu, önemli bir şey, bu, all the information, or data, bu sistem, is diskret.
+
+895
+02:47:31,240 --> 02:47:33,440
+Bu, sorunlu, ne?
+
+896
+02:47:35,440 --> 02:47:38,240
+At that point, can I ask you?
+
+897
+02:47:41,427 --> 02:47:45,087
+Just to answer me, what is discrete?
+
+898
+02:47:52,564 --> 02:47:54,103
+İlk, bir şey, bir şey, bir şey.
+
+899
+02:48:11,252 --> 02:48:13,252
+Bu ne demek bu, bu ne demek?
+
+900
+02:48:13,252 --> 02:48:19,252
+Bu ne demek?
+
+901
+02:48:19,252 --> 02:48:25,252
+Bir sorun.
+
+902
+02:48:25,252 --> 02:48:27,252
+İndir,
+
+903
+02:48:43,123 --> 02:48:44,344
+So, what do you think?
+
+904
+02:48:47,243 --> 02:48:48,183
+Any answer?
+
+905
+02:48:50,463 --> 02:49:04,563
+Zaman düzlemi sonsuz parçaya bölünebileceği için biz bilgisayara bilgi girerken o parçalara, yani sonsuz bilgi giremeyeceğimiz için zamanı bölüyormuşuz gibi aslında.
+
+906
+02:49:04,563 --> 02:49:06,783
+Okay, that's a good answer.
+
+907
+02:49:10,752 --> 02:49:35,819
+Eğer bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden bir data ile deyden
+
+908
+02:49:37,459 --> 02:49:48,699
+As a human being, we do not have infinite amount of life, so infinite amount of power and infinite amount of place to store them.
+
+909
+02:49:48,699 --> 02:49:55,459
+So we need to have finite number of information.
+
+910
+02:49:56,579 --> 02:50:01,139
+So therefore, data must be discrete.
+
+911
+02:50:04,915 --> 02:50:12,036
+Bu, certain time we have a corresponding value, but in most of the time we do not have a value.
+
+912
+02:50:12,036 --> 02:50:27,635
+This is the script. Next we will be describing basically how to convert a data with infinite information into a data with a finite amount of information.
+
+913
+02:50:27,635 --> 02:50:29,635
+Okay.
+
+914
+02:50:31,059 --> 02:50:33,979
+Bu önemli bir şey.
+
+915
+02:50:34,979 --> 02:50:38,539
+Bu bir sistem.
+
+916
+02:50:39,180 --> 02:50:44,219
+Ataşı bir sistemde bir sistemde bir digital computer kullanılıyor.
+
+917
+02:50:44,219 --> 02:50:47,420
+Bu, her zaman.
+
+918
+02:50:48,779 --> 02:50:55,579
+Bu, bu, keyboard, mouse, modem, microphone, her zaman.
+
+919
+02:50:58,388 --> 02:51:24,332
+Bu, bu
+
+920
+02:51:26,484 --> 02:51:30,024
+Okay, this is a typical measurement system.
+
+921
+02:51:31,623 --> 02:51:39,744
+We have a physiological or external energy in terms of the continuous variable.
+
+922
+02:51:41,584 --> 02:51:46,744
+The first step in most general...
+
+923
+02:51:53,172 --> 02:52:04,396
+Bu bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde
+
+924
+02:52:08,244 --> 02:52:15,244
+İzlediğiniz için, bu
+
+925
+02:52:29,620 --> 02:52:40,500
+So, we have the temperature and we want to store the temperature into a range of temperatures into computing system.
+
+926
+02:52:43,060 --> 02:52:45,540
+Or music or speech.
+
+927
+02:53:01,683 --> 02:53:03,563
+beni en iyi answer.
+
+928
+02:53:12,628 --> 02:53:17,828
+What is the output of, type of the output here?
+
+929
+02:53:27,388 --> 02:53:30,388
+Bir de, say, tempratür.
+
+930
+02:53:30,388 --> 02:53:32,388
+Bir de, say, transducer.
+
+931
+02:53:32,388 --> 02:53:35,388
+Bu, say, fizikli bir quanta, say.
+
+932
+02:53:38,932 --> 02:53:42,444
+30 derece ve bu, bu da
+
+933
+02:53:46,227 --> 02:53:48,227
+Bu tür enerjiyi görmek için.
+
+934
+02:53:48,227 --> 02:53:49,227
+Bu,
+
+935
+02:53:51,427 --> 02:53:52,427
+hedefler.
+
+936
+02:53:52,427 --> 02:53:54,427
+Hedefler.
+
+937
+02:53:54,427 --> 02:53:55,227
+Bu,
+
+938
+02:53:55,227 --> 02:53:56,011
+hedefler.
+
+939
+02:53:59,347 --> 02:54:01,347
+Anybody can answer.
+
+940
+02:54:10,036 --> 02:54:18,115
+Elektrikal enerji, voltage or current at the output of the translusor.
+
+941
+02:54:19,136 --> 02:54:35,296
+The first step in converting an analog variable, whether it is temperature, heat, pressure, air pressure, or whatever, acoustic or whatever, or light, first step is pass through a translusor.
+
+942
+02:54:37,332 --> 02:54:40,211
+Sensor, bu bir kısımda,
+
+943
+02:54:40,211 --> 02:54:42,891
+bu kısımda bir kısımda ve
+
+944
+02:54:42,891 --> 02:54:45,012
+elektrik enerjiye girişim.
+
+945
+02:54:45,012 --> 02:54:48,811
+Bu ilk bir kısımda.
+
+946
+02:54:48,811 --> 02:54:50,852
+Öncelikle,
+
+947
+02:54:50,852 --> 02:54:53,371
+bir kısımda ve
+
+948
+02:54:53,371 --> 02:54:55,811
+kısımda bir kısımda.
+
+949
+02:54:55,811 --> 02:54:56,612
+Evet,
+
+950
+02:54:56,612 --> 02:54:58,612
+bu mikrofon ve
+
+951
+02:54:58,612 --> 02:55:00,051
+kısımda,
+
+952
+02:55:00,051 --> 02:55:01,852
+bu kısımda,
+
+953
+02:55:01,852 --> 02:55:03,891
+ve elektrik enerjiye girişim.
+
+954
+02:55:03,924 --> 02:55:12,844
+Then next step is amplification of this energy because usually the output of a transdistor is very small.
+
+955
+02:55:12,844 --> 02:55:14,644
+We need to amplify it.
+
+956
+02:55:15,664 --> 02:55:31,024
+Then we use a specific device called analog digital converter to convert these continuous signals into digital ones.
+
+957
+02:55:31,731 --> 02:55:38,731
+ve store, signal ve data ve
+
+958
+02:56:24,788 --> 02:56:29,828
+ve bu konversion için bu konversion için
+
+959
+02:56:29,828 --> 02:56:34,548
+bu konversion için
+
+960
+02:56:34,548 --> 02:56:43,188
+konversion için
+
+961
+02:56:45,188 --> 02:56:46,188
+ok
+
+962
+02:57:20,084 --> 02:57:29,444
+İmput transdursus, and output transdursus are known as sensors, and output transdursus are known as actuators.
+
+963
+02:57:32,324 --> 02:57:41,684
+Okay, if I stop here and we continue next week with some fundamental concepts on...
+
+964
+02:57:42,227 --> 02:57:49,227
+ve
+
+965
+02:57:49,227 --> 02:58:11,227
+bir
+
+966
+02:58:09,747 --> 02:58:14,747
+Any questions? Any comments?
+
+967
+02:58:16,747 --> 02:58:19,659
+On this or your own.
+
+968
+02:58:31,443 --> 02:58:32,427
+[öğrenci].
+
+969
+02:58:42,708 --> 02:58:44,028
+Ok, stop chat.
+
+970
+02:58:48,147 --> 02:58:51,968
+Bir soru yoksa çıkabilirsiniz.
+
+971
+02:58:53,887 --> 02:58:55,028
+Afkaya görüşmek üzere.
+
+972
+02:58:56,327 --> 02:58:57,147
+Sağ olun hocam.
+
+973
+02:58:57,548 --> 02:59:00,368
+Henüz konuya girmedik.
+
+974
+02:59:00,427 --> 02:59:01,307
+Konuyu söyleyeyim.
+
+975
+02:59:01,468 --> 02:59:03,147
+Yani bu girişseldir aslında da.
+
+976
+02:59:03,827 --> 02:59:05,407
+Daha esas şeye gelmedik.
+
+977
+02:59:07,007 --> 02:59:08,487
+Görüşmek üzere haftaya.
+
+978
+02:59:10,708 --> 02:59:11,587
+Görüşürüz hocam.
