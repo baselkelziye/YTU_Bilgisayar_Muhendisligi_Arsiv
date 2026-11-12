@@ -1,0 +1,1143 @@
+1
+00:03:41,460 --> 00:03:42,740
+Merhaba arkadaşlar.
+
+2
+00:03:44,780 --> 00:03:45,700
+Günaydın.
+
+3
+00:03:46,800 --> 00:03:47,800
+Merhaba hocam.
+
+4
+00:03:48,060 --> 00:03:48,320
+Merhaba.
+
+5
+00:03:48,640 --> 00:03:48,879
+Tamam.
+
+6
+00:03:50,379 --> 00:03:51,879
+Benim sesim kapalıymış da.
+
+7
+00:03:53,400 --> 00:03:56,640
+Şimdi bugün anlatacağım konu önemliydi.
+
+8
+00:03:56,800 --> 00:03:59,340
+Ders yapalım dediler ama gelmemiş arkadaşlarınız.
+
+9
+00:03:59,400 --> 00:04:00,400
+Çok az kişisiniz.
+
+10
+00:04:01,879 --> 00:04:03,300
+İki dakika daha bekleyeyim.
+
+11
+00:04:03,960 --> 00:04:05,360
+Başlayalım ondan sonra biz.
+
+12
+00:04:09,364 --> 00:04:13,364
+Var mı bir sorunuz sizin bu arada ödev vesaire?
+
+13
+00:04:15,364 --> 00:04:16,303
+Genel.
+
+14
+00:04:25,204 --> 00:04:27,663
+Hocam, ödevle alakalı bir soru sormak istiyorum da ben.
+
+15
+00:04:28,223 --> 00:04:29,184
+Tamam, dinliyorum.
+
+16
+00:04:30,064 --> 00:04:35,064
+Bu son haftanız mailde eğitim ve test performansını gözleyin demişsiniz ya.
+
+17
+00:04:35,444 --> 00:04:49,064
+Ben onu yanlış söylemişim. Pardon tabii. Size tekrar mail atacak. Eğitim performansını değil, test performansını. Tekrar eğitim yapın demek istemedim.
+
+18
+00:04:49,984 --> 00:04:51,283
+Tamam hocam, teşekkürler.
+
+19
+00:04:57,043 --> 00:04:58,584
+Hocam, ben de bir şey sorabilir miyim?
+
+20
+00:04:59,063 --> 00:05:00,084
+Tabii, evet, dinliyorum.
+
+21
+00:05:01,123 --> 00:05:11,084
+Bazı pikselleri karıştırın demiştiniz. Ben de kitaptaki piksellere göre karıştırdım. Orada da bir dediğiniz örnek var.
+
+22
+00:05:11,324 --> 00:05:12,084
+Vardı, değil mi?
+
+23
+00:05:12,644 --> 00:05:21,003
+Oradaki örneklere göre karıştırdım ancak aldığım sonuçlar kitaptakinden farklı çıktı. Bu normal mi acaba? Yani karıştırılan harfler değişik oluyor.
+
+24
+00:05:23,860 --> 00:05:25,900
+Yani seçtiğimiz parametrelere göre değişiklik.
+
+25
+00:05:25,900 --> 00:05:45,040
+Yani kısmen normal neden karıştığını görebildin mi peki harflerin? Yani karıştırılan harfler farklı olabilir de mesela şunu demek istiyorum. Aralarındaki fark, karıştırdığın harflerin aralarındaki fark işte kitaptaki örneğine benzer orandadır.
+
+26
+00:05:46,139 --> 00:05:48,580
+Yok onu göremedim, ona bakıyorum hocam.
+
+27
+00:05:49,235 --> 00:05:52,175
+Ona bakarsan zaten şey yapabilirsin.
+
+28
+00:05:52,956 --> 00:05:53,456
+Tamam hocam.
+
+29
+00:05:53,515 --> 00:05:56,555
+Ne olduğunu görebilirsin oransal olarak diyeyim en azından.
+
+30
+00:05:57,295 --> 00:06:01,456
+Yani sen A ile B'yi karıştırmışsın. Aralarında işte 5 piksel fark vardır.
+
+31
+00:06:03,076 --> 00:06:05,235
+O farklarda özellikle hani fontun...
+
+32
+00:06:06,004 --> 00:06:13,824
+Farklılıkları olan yerlerdedir. Öbürü B ile C'yi karıştırmıştır. Yine aralarında 5 piksel fark vardır.
+
+33
+00:06:13,824 --> 00:06:30,664
+Bir piksel fark vardır o karışma oranında. Muhtemelen fark vardır diye tahmin ediyorum. Eğer çok farklı şeylerse o zaman tekrar bir koduna bakılır. Ama ihtimalle benzer çıkacak.
+
+34
+00:06:37,331 --> 00:06:43,752
+Peki ben biraz başlayayım. Bugün kısa yapacağım dersi. Benim de aslında birkaç bir şeyim var.
+
+35
+00:06:46,391 --> 00:06:54,012
+Size hem haftaya belki bir Sercan hocanız uygulamalı bir şeyler anlatacak.
+
+36
+00:06:54,012 --> 00:06:58,692
+Bir de ben de aslında video göstermek istiyorum da bir türlü hazırlayamadım.
+
+37
+00:07:02,067 --> 00:07:28,067
+Zaten bir telafi dersi falan da yapacağım. Şimdi multilayer perseptronlardan ve backpropagation'dan biraz bahsetmemiz gerekiyor. Bu haftadan sonra bir ödeviniz bununla ilgili olacak. Bu haftadan sonra da deep learning ile ilgili şeylere geçeceğiz ama zaten backpropagation algoritmasını her zaman kullanıyor olacaksınız. Onun için bu kısım...
+
+38
+00:07:28,723 --> 00:07:32,543
+Daha önemli, daha aktif kullanacağınız bir şey.
+
+39
+00:07:33,843 --> 00:07:40,843
+Şimdi çok katmanlı yapay sinir ağları daha geniş problemlere çözüm üretebilir.
+
+40
+00:07:41,004 --> 00:07:42,324
+Azıcık bir söylemiştik.
+
+41
+00:07:43,004 --> 00:07:52,343
+Ama ağırlık kombinasyonunun bulunmasında fazlaca parametre olduğu için işlemler daha karmaşık hale geliyor.
+
+42
+00:07:54,644 --> 00:07:59,204
+Öğrenme için biraz daha özel bir şeyler kullanmamız gerekiyor.
+
+43
+00:07:59,843 --> 00:08:10,543
+Optimizasyon algoritmalarından bahsettik. Gradiyan Düşüm ve Newton veya Hessian'a bakarak nasıl minimum buluruzdan bahsettik.
+
+44
+00:08:10,543 --> 00:08:21,903
+Back Propagation algoritması da aslında Gradiyan Düşüm algoritmasına dayanan bir yöntem. Hatayı minimize etmeye çalışacağız.
+
+45
+00:08:22,516 --> 00:08:43,915
+Şimdi 1969'da Bryson-Wahow Backpropagation'ı bir eğitim metodu olarak geliştirmiş hatalardan öğrenme için ve Adaline'da da kullandığımız genişletilmiş veya genelleştirilmiş delta kuralını kullanmış.
+
+46
+00:08:45,107 --> 00:09:00,087
+Ağın çıktısının toplam hatasını minimize etmek için gradiyan düşümü kullanacağız. Arkadaşlar, size ses geliyor mu? Ben bir camımı kapatabilir miyim? Dışarıda bir şeyler yapıyorlar galiba. Geliyorum hemen.
+
+47
+00:09:16,467 --> 00:09:20,427
+Herkes evde olunca ortalık çok gürültülü olmaya başladı galiba.
+
+48
+00:09:22,207 --> 00:09:26,748
+Şimdi ağın çıktısının toplam hatasını minimize etmeye çalışıyoruz.
+
+49
+00:09:26,748 --> 00:09:38,988
+Dolayısıyla ağın çıktısını veya hatayı bir fonksiyon gibi düşünürsek aslında hata fonksiyonunun minimumunu bulmak istiyoruz.
+
+50
+00:09:39,567 --> 00:09:43,107
+Radyan düşünme yöntemi de bu iş için uygun bir yöntem.
+
+51
+00:09:43,475 --> 00:10:00,000
+Doğru yanıt ve ağın yanıt verme yeteneği arasında bir denge kurmaya çalışacağız aslında. Ne demek istiyorum? Sonuçta ne kadar çok nöronlu bir...
+
+52
+00:10:00,000 --> 00:10:27,079
+Ağ kursak bile belki bütün örneklerimizi genellemeyi beceremeyebilir. Dolayısıyla belli bir yeteneği var. Problemimiz için belli bir ölçüde uygundur. Dolayısıyla bunun en iyi sonucu vermesini, kurduğumuz ağın en iyi sonucu vermesi için en uygun ağırlıkları bulma isteğindeyiz.
+
+53
+00:10:27,539 --> 00:10:54,119
+Üç aşamada gerçekleşiyor Backpropageşin algoritması. Önce eğitim desenlerini ileri doğru besliyoruz. Nasıl ileri doğru besliyoruz? Her zaman yaptığınız şeyi yapıyorsunuz. Başlangıç ağırlık değerleri seçiyorsunuz. Bir örneği alıyorsunuz. Ağırlıkla çarpıp, toplayıp bir nöronun girdisini hesaplıyorsunuz. Nöronda aktivasyon fonksiyonu var. Onu uyguluyorsunuz.
+
+54
+00:10:54,416 --> 00:11:17,796
+Bu şekilde bütün bağlantıların üzerinden geçecek şekilde bütün örneklerinizi gösteriyorsunuz. Arkasından beklediğiniz değerle genişletilmiş delta kuralına göre hesapladığınız değerin arasındaki farkı hesaplıyorsunuz. Yani hatayı hesaplıyorsunuz.
+
+55
+00:11:18,096 --> 00:11:22,516
+Ve ondan sonra geriye doğru bu hatayı yayıyorsunuz.
+
+56
+00:11:22,516 --> 00:11:31,016
+Bu hatayı yayarken de gradiyan düşüm ayı görütmesinden yararlandığımız için aslında hatanın türevini alıp,
+
+57
+00:11:31,072 --> 00:11:48,572
+Hatada her bir bağlantı ağırlığının etkisi ne kadarsa ona göre üçüncü aşamada ağırlıkları tekrar ayarlıyoruz. Biraz sonra sayısal olarak gördüğünüzde daha anlamlı gelecek söylediklerim. Ama bu şekilde üç tane aşama var.
+
+58
+00:11:59,072 --> 00:12:08,831
+Ağırlıkları farklı metotlarla, farklı oranlarla ayarlamamıza olanak vermesi.
+
+59
+00:12:09,392 --> 00:12:14,951
+Yani artık sabit bir şekilde bütün ağırlıkları aynı şekilde değiştirmiyoruz.
+
+60
+00:12:15,532 --> 00:12:20,591
+Her ağırlığı hata fonksiyonuna olan katkısı oranında değiştiriyoruz.
+
+61
+00:12:20,591 --> 00:12:26,591
+En son bu şekilde ağırlıklarımızı ayarlayıp eğitimi bitirdiğimizde,
+
+62
+00:12:26,831 --> 00:12:46,632
+Artık hesaplama yaparken, yani yeni bir örnek için test yaparken sadece Fit Forward aşamasını uygulamış oluyoruz. Artık ağırlıklarla oynama gibi bir durumumuz yok. O da klasik şu anda da yaptığınız tek katmanlı perseptron içinde aynı şeyi yaptığınız durum gibi.
+
+63
+00:12:47,124 --> 00:13:12,944
+Birden fazla gizli katman genellikle kullanıyoruz ama çoğunlukla bir tanenin üzerine çıkmıyoruz. Yani çok fazla gizli katman kullanmak ağın başarısını çok fazla artırmıyor. Aksine hesaplamaları biraz daha kompleksleştiriyor. Çoğunlukla bir veya iki gizli katman kullanılıyor.
+
+64
+00:13:15,508 --> 00:13:36,908
+Ana fikrimiz dediğim gibi gözlediğimiz gizli katmanlar arasında gözlediğimiz hataları çıktığa yansıtarak hata fonksiyonunu hesaplamak, geri yönde yayılım sırasında da katmanların ağırlıklarını doğru şekilde güncellemek.
+
+65
+00:13:37,248 --> 00:13:45,228
+Hatanın azalmasını en iyi, en hızlı şekilde yapabilmek için de sürevden veya gradiyandan yararlanıyoruz.
+
+66
+00:13:45,988 --> 00:13:51,508
+Şimdi şu şekilde bakarsanız yine her zaman biyaslarımız var.
+
+67
+00:13:51,903 --> 00:14:07,883
+Bu üç kat giriş ve çıkışı da bir sayarsam, üç katmanlı, tek gizli katmanı olan bir tane çok katmanlı ağ. X'lerle gösterdiğimiz girişlerimiz, en tane girişimiz var.
+
+68
+00:14:08,272 --> 00:14:20,152
+Gizli katmanda nöronlarımız var. Genellikle bu nöronun kaç tane olduğunu da söyleyeceğiz. Girdinin logaritması kadar.
+
+69
+00:14:21,460 --> 00:14:39,199
+Çok gözlemsel bir çıkarım yine ama daha fazla nöron koymak. Yani ağınız başarısız olduysa işte buradaki nöronları çok artırayım, bir tane daha gizli katman, bir tane daha gizli katman koyayım şeklinde bir yola gitmek çok fazla sonucu değiştirmiyor.
+
+70
+00:14:39,648 --> 00:15:05,888
+Aşağı yukarı M tane girdiğiniz varsa log-en kadar da gizli katmanda nöron koymanız sizin için yeterli olacaktır. Bir de çıkış katmanınız var. Beklediğiniz probleminize göre M tane çıkışı temsil eden M tane nöronun olduğu çıktı katmanı olacak. Genellikle Bias'ları ortak kullanabiliyorsunuz.
+
+71
+00:15:06,224 --> 00:15:09,544
+Bir tane biyaz değeri olsa yeterli.
+
+72
+00:15:09,971 --> 00:15:17,012
+Yine her şey birbirine bağlı. Bütün nöronlar birbirine bağlı. İleri doğru bağlılar.
+
+73
+00:15:18,351 --> 00:15:28,851
+Fit Forward aşamasında işte X'den gelen değere ve bağlantı ağırlığına göre bütün Z'lerin girdilerini hesaplıyoruz.
+
+74
+00:15:29,451 --> 00:15:35,132
+Aktivasyon fonksiyonunu uyguluyoruz. Oradan çıkan değeri de Y'lere yansıtıyoruz.
+
+75
+00:15:35,132 --> 00:15:36,971
+Yine ağırlıklarla çarparak.
+
+76
+00:15:37,971 --> 00:15:56,971
+Aktivasyon fonksiyonlarını hesaplayıp bir çıkış hesaplamış oluyoruz. Çıkışı beklediğimiz değerlerle, elimizdeki eğitim derisinde beklediğimiz değerlerle kıyaslıyoruz. Bir hata fonksiyonu oluşturuyoruz. O da karesel hata. O karesel hata fonksiyonunun...
+
+77
+00:15:57,152 --> 00:16:06,572
+Türevini bu sefer geriye doğru yayarak bu ağırlıkların her birini bireysel olarak ayarlıyoruz.
+
+78
+00:16:07,451 --> 00:16:17,471
+Tekrar örneğimizi besliyoruz. Ne zamana kadar bu hatamız, çıktı da elde ettiğimiz hatamız belli bir seviyeye düşene kadar.
+
+79
+00:16:23,892 --> 00:16:30,272
+Algoritmayı durdurmak için EPOC sayısı da yine bir durma kriteri olarak düşünülebilir.
+
+80
+00:16:34,035 --> 00:16:39,475
+Peki. Aktivasyon fonksiyonumuzu seçerken dikkat etmemiz gerekiyor.
+
+81
+00:16:40,015 --> 00:16:47,935
+Fonksiyonumuzun karakteristikleri temel olmazsa olmayan şeyler sürekli bir fonksiyon olması lazım.
+
+82
+00:16:48,495 --> 00:16:50,795
+Türevlenebilir bir fonksiyon olması lazım.
+
+83
+00:16:50,795 --> 00:16:54,275
+Ve monoton azalmayan bir fonksiyon olması lazım.
+
+84
+00:16:54,735 --> 00:17:01,995
+Bu da türev aldığımızda başımıza gelebilecek problemler, gradiyanın kaybolması gibi problemleri.
+
+85
+00:17:02,035 --> 00:17:19,135
+Biraz önüne geçmek için istediğimiz bir şey. Dolayısıyla ağınız başarısızsa aktivasyon fonksiyonunuzun seçimi yanlış olabilir. Çok sık karşılaşabileceğiniz bir durum.
+
+86
+00:17:19,135 --> 00:17:28,135
+Tabi burada seçtiğiniz fonksiyon hem sürekli hem türevlenebilir hem monoton azalmayan olsa dahi.
+
+87
+00:17:28,276 --> 00:17:44,115
+Çıkışta beklediğiniz değerlere uygun değerler üretebilen bir fonksiyon değilse bu da bir sıkıntı. Dolayısıyla çıkışta bekleyeceğiniz, çıktı olarak bekleyeceğiniz değerlerin aralığıyla seçtiğiniz fonksiyonun uyumluluğuna da yine bakmanız lazım.
+
+88
+00:17:44,855 --> 00:17:53,115
+Demin şekilde gösterdiğim gibi ileri doğru bütün hesaplamalarınızı yapıyorsunuz, cevabı oluşturuyorsunuz ve...
+
+89
+00:17:53,200 --> 00:18:12,840
+En son oluşan hatayı da Backprop'la geriye doğru aktarıyorsunuz. Genel olarak kullandığımız aktivasyon fonksiyonları sigmoid fonksiyonu var. Bunun binary sigmoid ve bipolar sigmoid versiyonları çok yaygın kullanılıyor.
+
+90
+00:18:17,844 --> 00:18:22,544
+Bu şekilde binary sigmoid fonksiyonunu kullanıyorsunuz.
+
+91
+00:18:23,244 --> 00:18:30,164
+Şimdi e üzeri x diye bir terim var. Bu x'in önüne bir katsayı da koyabilirsiniz.
+
+92
+00:18:30,164 --> 00:18:31,684
+Dolayısıyla şu aralığı.
+
+93
+00:18:32,243 --> 00:18:57,804
+Şu anki haliyle binary sigmoid olduğu için 0 ve 1 arasında bir değer üretecek. Şu aralığı değiştirebiliyorsunuz. İlla sadece 0-1 arasında değer üretmek zorunda değil. Bipolar sigmoid ise eksi 1 ve 1 arasında değer üreten bipolar sigmoid fonksiyonunu kullanıyoruz. Onun ifadesi de bu şekilde.
+
+94
+00:18:58,324 --> 00:19:19,204
+Fonksiyonlarımızın türevlenebilir olması lazım demiştik. Zaten aslında yaptık daha önce bunu. Binary Sigmait'in türevine baktığımız zaman fonksiyonun türevi aslında fonksiyonun kendisi çarpı bir eksi fonksiyonun kendisi şeklinde şuydu hatırlarsanız.
+
+95
+00:19:19,567 --> 00:19:46,688
+Bipolar sigmoitte de fonksiyon artı bir, bir eksi fonksiyon çarpıyoruz ve bir bölü ikiyle. Şu türevleri kendiniz alırsanız da zaten bunları bulacaksınız. Bize lazım olan bu türevler, çünkü hata şu fonksiyonlara bağlı olarak oluşan bir fonksiyon olacak. Onun türevini alırken de bu türevleri kullanmamız gerekecek.
+
+96
+00:19:56,051 --> 00:20:05,891
+Burası çok okunabilir değil. Ben bunu geçeyim. Örnek üzerinden adım adım gideriz.
+
+97
+00:20:07,891 --> 00:20:16,779
+Şimdi heavy-on learning'den hatırlarsak, heavy-on learning'de sadece input ile output'u çarparak...
+
+98
+00:20:16,915 --> 00:20:44,436
+Ağırlık değerinin yeni halini hesaplıyorduk veya ağırlıkta yapacağımız değişimi hesaplıyorduk. Sonra Perseptron Learning'de bir adım daha iyileştirme yaptık. Hedeflenen değerle input'u çarpıyorduk. Bir de öğrenme katsayısı koyarak ağırlıkla değişimin hem biraz daha yavaş, kontrollü ve hem de biraz daha anlamlı olmasını sağlamıştık.
+
+99
+00:20:44,915 --> 00:21:01,275
+Sonra Adana Ayında Delta Kuralından bahsetmiştik. Delta Kuralında birazdan yapacağımıza benzer şekilde aslında hedeflediğimiz değerle hesapladığımız değerin farkını dikkate almaya başlamıştık.
+
+100
+00:21:01,652 --> 00:21:20,451
+Öğrenme kat sayımız yine vardı. Çıkışta beklediğimiz ve hesapladığımız değer farkıyla input'u çarpıp yine öğrenme kat sayısını kullanarak ağırlık değerinde ne kadar değişim yapacağımızı belirliyorduk.
+
+101
+00:21:24,564 --> 00:21:43,224
+Geldiği yeri söylemiştim. Şu binary sigmoide geri döneyim. Binary sigmoidin türevinin fx çarpı 1-fx olduğunu hatırlayın. Sonra delta kuralının nasıl geldiğine tekrar bakalım.
+
+102
+00:21:43,224 --> 00:21:52,124
+Bir nöronun girdisini hesaplarken yaptığım şey neydi? Bütün inputlar çarpı ağırlıkları topluyordu.
+
+103
+00:21:52,884 --> 00:22:10,304
+Ondan sonra buna aktivasyon fonksiyonumu uyguluyordum. Eğer aktivasyon fonksiyonu bipolar veya binary sigmoid ise uygulayacağım fonksiyonu demin gösterdiğim fx gibi.
+
+104
+00:22:19,551 --> 00:22:45,751
+Aktivasyon fonksiyonu uygulanmış haliyle şu çıktığıya türevini alıyordum. Şuradaki ifade, girdinin türevini alma ifadesi bizim aslında şuradaki aktivasyon fonksiyonunun türevini almamız hikayesine benziyor.
+
+105
+00:22:46,483 --> 00:23:06,463
+Dolayısıyla delta kuralı aslında oradan oluşmuştu. Şimdi nöronun inputunu hesapladık. Hata fonksiyonumuzu yazalım. Hata fonksiyonumuzu nasıl yazacağız? Karisel hata olarak hesaplayacağız dedik. Target ile hesapladığımız değer arasındaki...
+
+106
+00:23:06,463 --> 00:23:23,443
+Park'ın karesini alarak yazacağız. Onu da böyle yazdık. Şimdi hatanın türevini alacağız. Neden türevini alacağız? Gradiyan düşüm uygulayacağız dedik ya. Hatanın türevi bize lazım ki onun tersi yönde gidelim. Gradiyan öyle yapıyordu. Gradiyan düşüm algoritması.
+
+107
+00:23:32,307 --> 00:23:54,107
+Target Eksi Y'in. Ondan sonra içinin türevi. Kime göre türev alıyorum? Diyelim ki V1'e göre türev alıyorum. O zaman şuraya bakın. X çarpı V'ler var burada. V1'in dışındaki çarpanlar gider. Değil mi? Sadece X1, V1 terimi kalır şurada.
+
+108
+00:23:59,508 --> 00:24:24,788
+X1-V1'in türevi nedir? Sadece ne kaldı? X1 olarak kaldı. O da şuraya gelecek. Şu türevi alıyorum. Dolayısıyla benim çıktım. Şu eksi de yine şuradaki X1-V1'in önündeki negatiften geldi.
+
+109
+00:24:25,395 --> 00:24:35,375
+Benim hatamın türevi, V1'e göre türevi, eksi 2, T eksi, Y'in çarpı X1 şeklinde oluyor.
+
+110
+00:24:36,655 --> 00:24:47,955
+Şimdi, buradaki bir de öğrenme kat sayısı kullanacaktım ya, buradaki eksi 2'yi öğrenme kat sayısının içine katabilirim.
+
+111
+00:24:47,955 --> 00:24:49,596
+Sonuçta sabit bir çarpan.
+
+112
+00:24:50,036 --> 00:25:05,576
+Çok fazla önemi yok. Ve hatamı ne kadar değiştireceğime, ne kadar gradiyan düşün kullanıyorsam, şu gradiyan kadar değiştirmem lazım. Ne kadar değiştireceğimi tespit ederim.
+
+113
+00:25:06,316 --> 00:25:13,776
+Tabii bu hatayı değiştirmemin bir de yönü vardı. Onu da gradiyanın tersi şeklinde kullanacağız.
+
+114
+00:25:13,776 --> 00:25:17,376
+Şu türev kısmında anlaşılmayan bir şey var mı?
+
+115
+00:25:18,067 --> 00:25:21,908
+Hocam, eksi 2'deki eksi nereden geldi? Onu tekrar söyleyebilir misiniz?
+
+116
+00:25:21,908 --> 00:25:33,908
+İçinin türevini aldık ya, şurası eksi x1 v1. Onun eksisini dışarı aldım. Şurada bak, şu dy in dx v1 var ya.
+
+117
+00:25:36,648 --> 00:25:37,728
+Tamam hocam.
+
+118
+00:25:37,868 --> 00:25:43,528
+dy in'in eşitliği şurası, oradan x1 v1 var sadece elimde.
+
+119
+00:25:44,339 --> 00:26:09,819
+Tamam değil mi? Önündeki eksi de var. Onu da kullanmam lazım. O eksi oradan geldi. Dışarıya aldık. İki zaten üstten gelmişti. Kendinizle alırsanız elinizde tekrar şey yaparsınız, görürsünüz zaten alırken. Şu y'ni v1'e göre sadece yazarsanız x1 v1 diye ben biraz kısa yazmışım. Zaten göreceksiniz.
+
+120
+00:26:11,071 --> 00:26:27,751
+Bu aslında şuradaki terimi bir de irdeleyelim. E'nin hatanın V1'e göre türevi dediğim zaman aslında sözlü olarak ifade ettiğimde şunu demiş oluyorum. Hatanın V1'e göre değişimi.
+
+121
+00:26:28,500 --> 00:26:51,759
+Değil mi? Türev değişimdir sonuçta. Hatanın W1 veya W1 ağırlığına göre değişimini hesapladım ben. Bu aynı zamanda ne demek? W1'in hataya olan etkisi demek. E'nin hatanın değişiminde W1'in ne kadar etkisi var?
+
+122
+00:26:52,468 --> 00:27:02,667
+Dolayısıyla ben aslında spesifik olarak V1'in hatadaki payı, etkisi hesapladım.
+
+123
+00:27:02,667 --> 00:27:10,028
+Ve bu miktar kadar V1 ağırlığını update edersem daha doğru bir ayarlama yapacağım.
+
+124
+00:27:10,147 --> 00:27:13,167
+Gradyan düşümün mantığına da uygun olarak.
+
+125
+00:27:15,632 --> 00:27:32,271
+Ve radyanı kadar ağırlıkta değişim yaparsam, o ağırlıkta değişim yaparsam aslında ben parametrelerimi daha hızlı ve daha istikrarlı bir şekilde hatayı minimize edecek şekilde ayarlamış olurum.
+
+126
+00:27:32,692 --> 00:27:41,392
+Dolayısıyla V1 için hata değişimini böyle hesapladığım gibi V2 için de hatanın V2'ye göre türevine bakıp,
+
+127
+00:27:41,460 --> 00:27:55,839
+Ona göre değişiklik yapacağım vs. Yani eskisi gibi sabit her ağırlığı aynı şekilde değiştirelim gibi bir şey yapmamış oluyoruz bir açıdan.
+
+128
+00:28:05,779 --> 00:28:26,980
+Ağırlık değeri olması lazım elimizde. Dengeli olması için ağırlık ve biyazları başlangıçta eksi 0,5 ile 0,5 arasında veya eksi 1 ile 1 arasında bir değere set ediyoruz veya rastgele olarak başlatıyoruz. Bir başlangıç ağırlığı belirliyoruz bu şekilde.
+
+129
+00:28:27,731 --> 00:28:46,912
+Ondan sonra eğitime başlıyoruz. İleri besle, hatayı hesapla, hatayı geri yay şeklinde üç adımlı eğitimimizi yapacağız. Bu sırada da durma için bu eğitimin nereye kadar devam edeceğine karar vermek için de
+
+130
+00:28:47,347 --> 00:29:14,087
+Belli bir epok sayısı veya hata oranı tespit etmemiz lazım. Burada dikkat etmemiz gereken nokta, eğer ağı çok fazla eğitirsek, yani istediğiniz kadar hata düşmüyor ama siz yine de algoritma yüz binlerce epok devam etsin, belki biraz daha hata düşer diye zorlarsanız, bu sefer ağın ezberleme.
+
+131
+00:29:14,528 --> 00:29:33,928
+Eğilimine girmesi söz konusu. Sadece göster, yani hatayı düşürürsünüz belki ama artık sadece gösterdiğiniz örnekleri bilebilecek hale gelir. Yeni bir örnek gösterdiğinizde başarılı olmayabilir. Buna ezberleme diyoruz.
+
+132
+00:29:35,539 --> 00:29:45,179
+Ezberlemeden genelleyebilme yeteneğini kaybetmemesi için eğitim süresinin çok fazla uzatılması da iyi değil.
+
+133
+00:29:45,179 --> 00:29:56,179
+Tabii eğitim sürelerimiz kısa değil. Normalde bir backpropagation ağında öyle 10 epok, 5 epok gibi rakamlarla eğitmiyoruz.
+
+134
+00:29:56,259 --> 00:30:01,039
+Binlerle eğitiyoruz ama hatanın gidişatını gözlememiz lazım.
+
+135
+00:30:01,491 --> 00:30:25,631
+Hatanın düşüşü çok yavaşladığında, ki gradyan düşüm algoritmasında da onu yapıyorduk hatırlarsanız, bir noktada artık hatanın düşüşü yavaşlıyordu. Çok yavaşladığında artık eğitimi durdurmak lazım. Yani hatada çok önemli bir değişim olmuyorsa, boşu boşuna eğitime devam ederseniz ağı ezberletmiş olursunuz.
+
+136
+00:30:25,631 --> 00:30:28,131
+Peki.
+
+137
+00:30:28,819 --> 00:30:35,019
+Hocam, bir şey sorayım. Ödevde biz %100 başarı elde ediyoruz. Dolayısıyla ezberletmiş mi oluyoruz?
+
+138
+00:30:35,940 --> 00:30:38,819
+Hayır, kaç epokta o başarı elde ettik?
+
+139
+00:30:38,819 --> 00:30:41,819
+Yani binari input ile perceptron da...
+
+140
+00:30:41,903 --> 00:30:45,183
+12 epokta %100 ölmüyor.
+
+141
+00:30:45,903 --> 00:30:49,243
+12 epok çok fazla bir eğitim miktarı değil.
+
+142
+00:30:49,763 --> 00:30:57,663
+Onu çizdirirseniz eğer hatanın değişimini orada, zaten göreceksiniz hep düşüş gösteren bir grafik şeklinde olacak.
+
+143
+00:30:57,663 --> 00:31:02,344
+Benim bahsettiğim şimdi mesela düşmüş düşmüş, masumu görebiliyor musunuz bilmiyorum.
+
+144
+00:31:03,023 --> 00:31:06,124
+Şu çözüm bulacağım ama geç olacak herhalde.
+
+145
+00:31:06,663 --> 00:31:08,163
+Ekrana bir şeyler yazıp çizmeye.
+
+146
+00:31:08,576 --> 00:31:35,096
+Hatanız düştü, düştü, düştü bir düzlüğe geldi. Artık böyle çok minimal oynuyor. Sizin durumunuzda öyle olmuyordur. Çünkü probleminiz o kadar karışık değildi. Harfler birbirinden nispeten kolaylıkla ayrılabilir örneklerdi. Dolayısıyla zorlamadan zaten gerçekten %100 çözülebilir bir problem olduğu için.
+
+147
+00:31:35,519 --> 00:31:48,119
+O %100 başarıya ulaştınız. Probleminiz kötü olsaydı veya elinizdeki örnekler yetersiz ve kötü olsaydı, o %100 başarıya ulaşamayacaktınız.
+
+148
+00:31:48,119 --> 00:32:00,879
+12 epokla yetinmeyip 5 bin, 10 bin, 100 bin epok yapmaya çalışsaydınız o zaman ezberleme olacaktı. Sizin durumunuzda 12 epokla ezberleme falan olmuş olmuyor.
+
+149
+00:32:02,099 --> 00:32:03,839
+Bilmem, anlatabildim mi?
+
+150
+00:32:04,599 --> 00:32:05,359
+Tamam hocam.
+
+151
+00:32:05,440 --> 00:32:20,539
+Yani hatanın değişimi kritik. Hatanın değişimi her zaman çizilmenizde, şimdi zaten backprop ödevini de isteyeceğim çizerek de. Şu anda da yapsanız çok güzel olur. Hata grafiği, yani targetla beklediğiniz değer arasındaki fark olarak alabilirsiniz onu.
+
+152
+00:32:20,980 --> 00:32:44,799
+Çizdirdiğiniz hata değeri hep düşüyor, düşüyor, düşüyor olacak. 12 epok boyunca sürekli düşme eğiliminde olacak. Eğer 5-6 epok düştü, ondan sonra 6 epok sürekli bir düzlükte kalıyor gibiyse, fayda değerli bir fark, bir değişim oluşmuyor gibiyse, o zaman ezberlemeye doğru gidiyorsunuz demektir.
+
+153
+00:32:46,836 --> 00:32:49,716
+Örneğinizde öyle bir durum yok sizin durumunuzda.
+
+154
+00:32:51,236 --> 00:33:04,135
+Şimdi genel olarak ağırlık sayımız büyük W ile gösterdiğimiz miktarsa hesaplayacağımız bağlantı ağırlığı sayısı.
+
+155
+00:33:04,135 --> 00:33:10,135
+P de bizim elimizdeki eğitim için kullanacağımız örnek sayısı ise.
+
+156
+00:33:10,208 --> 00:33:19,367
+E de bizim istediğimiz doğruluk oranı, yani %1-2'yi kabul edebileceğimiz hata doğruyuz.
+
+157
+00:33:19,763 --> 00:33:39,463
+Doğruluğu ise aralarındaki ilişki bu şekilde hesaplanmış. Yani aslında şöyle diyeyim, ulaşabileceğiniz doğruluk oranı, buradan da bakabiliriz mesela, elinizdeki desen sayısı bölü bağlantı miktarı ile orantılı.
+
+158
+00:33:47,663 --> 00:34:05,504
+Bu örneğin doğruluğu öngörebilirsiniz. Yine söyleyeyim, bu kesin sayılar hesaplayabiliriz demek değil bu şekilde. Ama aşağı yukarı bana ne kadar örnek lazım kısmında bir cevap bulabilirsiniz buraya.
+
+159
+00:34:06,423 --> 00:34:13,384
+Sizin durumunuza dönüyorum. Elinizde 63 örnek mi vardı? Öyle bir şeydi değil mi? Karakterlerden.
+
+160
+00:34:14,931 --> 00:34:27,051
+Yani P'nin 63 olduğu durum. İşte V'nin de bağlantı sayısının da 63 pardon örneğiniz 63 değil.
+
+161
+00:34:27,072 --> 00:34:28,291
+21 örnek var hocam.
+
+162
+00:34:28,692 --> 00:34:33,871
+21 örnek. Bağlantı sayınız kaçtı? 21 input 7 output muydu?
+
+163
+00:34:34,804 --> 00:34:38,903
+Pardon, input 63 dediğin gibi. 63 piksel var ama 21 tane.
+
+164
+00:34:39,524 --> 00:34:47,203
+Yok, örnek sayısını kastediyorum. Farklı harf sayısı elinizde 21 tane örnek vardı.
+
+165
+00:34:47,679 --> 00:35:11,399
+63 input'tan 63 çarpı 7 gibi bir bağlantı vardı. Dolayısıyla P bölü V'den veya daha doğrusu E'yi şuraya alırsam o bağlantı sayısı bölü 21 örnek sayınızdan ulaşabileceğiniz doğruluk oranını kabaca görebilirsiniz.
+
+166
+00:35:11,399 --> 00:35:15,439
+Tabii sizinkisi dediğim gibi örnekleriniz güzeldi.
+
+167
+00:35:15,679 --> 00:35:29,639
+Birbirine karışacak bir şey yoktu. Dolayısıyla bağlantı ağırlığı sayısı arttıkça size daha çok örnek lazım olacak ki şu hata düşük olsun.
+
+168
+00:35:40,436 --> 00:35:55,155
+Bir gibi düşünürseniz örnek sayısı arttıkça da sıfıra yaklaşır hatanız. Derin ağlarda zaten o yüzden hep daha fazla örneğe ihtiyacımız oluyor. Çünkü çok daha fazla bağlantı var.
+
+169
+00:35:57,556 --> 00:36:16,676
+Bu formül dediğim gibi sayısal olarak birebir tutacak değil ama ilişkiyi gösteren veya bağlantı ağırlığı çok fazla hesaplanacak. Örneğe ihtiyacımızın fazla olduğunu söyleyen bir gözlemsel oluşturulmuş bir formül aslında.
+
+170
+00:36:17,972 --> 00:36:44,472
+Şimdi, gradiyan düşüm algoritması, tabii ben size örnek yaparken ne yaptık? İkinci derece bir denklemin üzerinden örnek yapmıştık. Çok boyutlu problemlerde de gradiyan düşüm algoritması kullanabiliyoruz. Yapay sinir anda da aslında durumumuz böyle. Elimizdeki problem çok boyutlu non-linear bir problem.
+
+171
+00:36:44,980 --> 00:36:59,659
+Dolayısıyla çünkü şurada düşünün her hesaplayacağınız her tespit etmeniz gereken ağırlık değeri aslında size bir boyut oluşturuyor.
+
+172
+00:36:59,659 --> 00:37:12,179
+Ağırlık fonksiyonunun bir boyutunu oluşturuyor. Benim hesaplayacak 5-10 tane ağırlığım olduğunda 10 boyutlu uzayda fonksiyonu minimize etmeye çalışacağım demektir.
+
+173
+00:37:12,755 --> 00:37:28,496
+En adet ağırlığımız var, en boyutlu bir uzayımız var demektir. Her gözlenen hata için bir boyut düşünebiliriz.
+
+174
+00:37:31,027 --> 00:37:57,007
+Bizim bulmak istediğimiz şey minimum nokta. Bütün ağırlıklarımız, bütün boyutlarımız için bu fonksiyonun minimum olduğu yeri bulmaya çalışıyoruz. Buradaki gradiyan düşünde istediğimiz veya kullanım şeklimiz bu şekilde. Daha yüksek boyutları çizmedim. Onları da gradiyan düşünde göstermiştim aslında. Biraz daha çok boyutlu bir şey ama.
+
+175
+00:37:57,440 --> 00:38:07,119
+Onları da göstereyim tekrar. Hani bu şekilde görselleştiremeyeceğimiz için derinlik haritasıyla göstereceğim.
+
+176
+00:38:07,119 --> 00:38:11,539
+Şimdi... Pardon.
+
+177
+00:38:15,219 --> 00:38:33,279
+Backpropagation algoritmasının çalışmasına bakacak olursak, hedeflediğimiz değerle... Ben kendime çok sinir oluyorum. Şu her seferinde notasyonda farklılıklar var.
+
+178
+00:38:33,748 --> 00:38:54,067
+Öncelikle hesapladığımız değerle oradaki alt dediğim şey, hedeflediğim değer arasındaki farkı bir hata olarak tanımladım. Hatanı da karesel hata olarak tanımladım. Yani şu farkın karesini aldım. Ondan sonra her bir aslında…
+
+179
+00:38:54,675 --> 00:39:06,935
+Gizli birim, input birimi için hatayı hesaplamam lazım ve ondan sonra da her bir bağlantı için hatanın türevinden minimize etmem lazım.
+
+180
+00:39:08,455 --> 00:39:15,516
+Burayı geçeceğim. Gösterim çok iyi olmadığı için. Başka bir şekilde kullanmak istiyorum.
+
+181
+00:39:22,867 --> 00:39:27,228
+Bir başka doküman açayım arkadaşlar. Oradaki notasyonlar iyi değil.
+
+182
+00:39:47,891 --> 00:39:54,652
+Artık size bir şey demiyorum paylaşacağım diye ama bu dokümanı veya bunun linkini de paylaşacağım sizle inşallah.
+
+183
+00:39:55,711 --> 00:40:06,711
+Temel yapı şöyle bir şey. Burada input ve gizli katmanlarda ve çıkışta da hepsinde ikişer nöron varmış gibi düşünmüşüz ama.
+
+184
+00:40:07,155 --> 00:40:28,675
+Tabii nöron sayısı değişebilir. İki tane input nöronum var farz edelim. İki tane gizli katmanda nöronum var. Bir tane gizli katmanım var tabii bu arada. İki tane de çıktım var. Bunların arasındaki bağlantıları çizdiğim zaman da sekiz tane ağırlığım var.
+
+185
+00:40:29,364 --> 00:40:52,284
+Biaslarım da var. Aslında Bias ağırlıklarının da hesaplanması lazım. Dolayısıyla 10 tane ağırlık değeri hesaplayacağız diye düşünebilirsiniz. Başlangıçta bunlara ağırlık değerlerini istersek eksi 1-1 arasında, 0-5, eksi 0-5 arasında veya tamamen rastgele
+
+186
+00:40:52,788 --> 00:41:09,307
+Atayabiliriz dedik. Bu 8 tane ağırlığın bir başlangıç değeri atandığını varsayarak şöyle olduğunu düşünelim. Her birine rastgele bir değer atanmış. Başlangıç ağırlıklarımız belli.
+
+187
+00:41:09,744 --> 00:41:22,224
+Şu 0.05 ile 0.1 bizim bir tane örneğimiz. Yani eğitim için kullanacağımız bir örnek. Bu rastgele atadığım bir şey değil. Elimdeki örneklerden.
+
+188
+00:41:22,224 --> 00:41:34,563
+Ve 0.05'e 0.1 girdiğinde outputta oluşmasını beklediğim değerler de yani target değerlerim de 0.01 ile 0.99'muş.
+
+189
+00:41:35,284 --> 00:42:01,103
+Biyasa ağırlıkları da rastgele atandı. Onlar da 0.35 ile 0.60. Şu şekle bir bakın şöyle. Herhangi anlamsız gelen bir şey var mı? Mavi ile gösterdiğim input ve outputlar benim bir örneğim. Ölçmüşüm, elimde var herhangi bir şeyi temsil eden, inputumu temsil eden.
+
+190
+00:42:01,715 --> 00:42:21,015
+Bir örneğim. Ağırlıkları rastgele atadım. Böyle denk gelmiş. Bias ağırlıklarında aynı şekilde. Elimizde böyle bir A var. Bu multilayer perseptron. Bir tane gizli katmanım var. Bir tane input, bir tane de output'um var.
+
+191
+00:42:24,371 --> 00:42:40,911
+Amacımız ağırlıkları öyle ayarlayayım ki hem bu örneğim için hem de diğer örneklerim için çıkışta olması gerekene en yakın, en doğru sonucu versin.
+
+192
+00:42:40,911 --> 00:42:46,371
+Bütün örneklerim için benzer şekilde en iyi sonucu versin istiyorum.
+
+193
+00:42:46,804 --> 00:42:58,523
+Şimdi Backpropagation algoritması uygulayacaksam öncelikle bir ileri doğru fit forward adımını gerçeklemem lazım.
+
+194
+00:42:58,523 --> 00:43:12,384
+Orada yaptığımız şeyde i1 çarpı v1 artı i2 çarpı v2 başberin inputunu oluşturacak.
+
+195
+00:43:13,139 --> 00:43:25,059
+İ1, V3, İ2, V4, H2'nin... Arkadaşlar, birinin mikrofonu açık kaldı herhalde.
+
+196
+00:43:27,199 --> 00:43:37,059
+İ2 çarpı V4, İ1 çarpı V3 de H2'nin inputunu oluşturacak. Sonra burada aktivasyon fonksiyonunu uygulayacağım. Outputları...
+
+197
+00:43:37,940 --> 00:43:53,840
+V6 ile V5 ile çarpıp O1'i, H1'i V7 ile H2'yi V8 ile çarpıp O2'yi hesaplayacağım. Oradaki aktivasyonu uygulayacağım ve O1 ile O2'nin nihai çıkış değerlerini bulmuş olacağım.
+
+198
+00:43:53,840 --> 00:44:04,580
+Pit Forward adımında yaptığımız şey bu. H1'e giren, şu nörona giren değerleri hesapladım. Söylediğim gibi.
+
+199
+00:44:05,492 --> 00:44:14,732
+Şu formül, V1-İ1, V2-İ2. Diyası da unutmuyoruz. Ondan sonra yerine sayısal değerlerini koydum.
+
+200
+00:44:15,699 --> 00:44:29,279
+Ondan sonra yaptığım şey aktivasyon fonksiyonunu uygulamak. Aktivasyon fonksiyonumuzda bizim sigmoid fonksiyonumuzu kullanacağız.
+
+201
+00:44:30,339 --> 00:44:38,279
+Sigmoid'in özel bir hali lojistik fonksiyon. 1 artı e üzeri x şeklinde, e üzeri eksi x şeklinde.
+
+202
+00:44:44,179 --> 00:44:56,559
+Ara katman için benim x'im girdim şunlarken i1, i2 iken output katmanı için girdim nedir? h1 ile h2'dir değil mi? Öyle düşünün.
+
+203
+00:44:56,559 --> 00:45:10,459
+Dolayısıyla i1'den h1'e gelen şey burayı hesaplarken x'tir aktivasyon fonksiyonuna girerken buranın çıktısı burayı hesaplarken.
+
+204
+00:45:11,827 --> 00:45:36,807
+Yani aktivasyon fonksiyonunun üstündeki değer aslında o düğüm için, ilgili düğüm için ne giriyorsa odur. H1 düğümüne giren şey net H1 dediğimiz şu toplam. Onu koyaraktan aktivasyon fonksiyonunu uyguladıktan sonra nöronun çıktısı ne olacak onu hesaplıyoruz.
+
+205
+00:45:37,556 --> 00:45:47,435
+Aynı şeyleri H2 nöronu için yapıyoruz. Yani şu şekilde giren değerleri hesaplıyoruz. Aktivasyonu uyguluyoruz ve çıktığı hesaplıyoruz.
+
+206
+00:45:47,435 --> 00:45:54,695
+H1 ve H2'nin çıktısı şu ikisi. Bakayım şurada bir şey yapabiliyor muyum? Pek de yapamıyorum.
+
+207
+00:45:55,855 --> 00:46:00,215
+H1'in çıktısı ve H2'nin çıktısı.
+
+208
+00:46:02,275 --> 00:46:03,875
+Hiçbir şeye yaramadı.
+
+209
+00:46:04,467 --> 00:46:24,967
+O 1'in, şuradaki outputların, H1'in, H2'nin çıktısı belli ise, O 1'in girdisi ve O 2'nin girdisini hesaplayabilirim. Nasıl? Şu ağırlıklarla çarparak. O 1'in ve O 2'nin girdisini hesaplayayım.
+
+210
+00:46:25,427 --> 00:46:41,527
+O1'in girdisi H1'den ne çıktıysa onu V5 ile çarpmışım. H2'den geleni V6 ile çarpmışım. Biası eklemişim. O1'in girdisini şu şekilde 1,105 şeklinde bulmuşum.
+
+211
+00:46:50,771 --> 00:47:02,411
+Çıktığı hesaplamışım. O1 nöronunun çıktısını hesaplamışım. Aynı şeyi O2'nin nöronu için girdileri hesaplayacağım. Lojistik fonksiyonunu uygulayacağım. Çıktığı hesaplayacağım.
+
+212
+00:47:02,411 --> 00:47:14,152
+Ve artık elimde O1'in çıktısı 0.75, O2'nin çıktısı 0.77 gibi bir değer oluştu. Bakalım.
+
+213
+00:47:14,579 --> 00:47:40,139
+Benim beklediğim neydi? Şu değerleri kullanarak yaptım sonuçta hesaplamalarımı. 0-1 bekliyordum, 0-0-1 bekliyordum hatta. 0-75 çıktı. Öbürü 0-99 bekliyordum, 0-77 çıktı. Hadi bu yine bir derece yakın, 0-77-0-99'a diğerine göre daha yakın diyebilirim.
+
+214
+00:47:40,532 --> 00:48:00,172
+Ama şurada ciddi bir hata var değil mi? 0,01. Benim hesapladığım 0,75. Dolayısıyla hatamı hesaplayacağım şimdi. Bununla benim hesapladığım arasında oluşan farktan hatayı hesaplamam lazım.
+
+215
+00:48:02,692 --> 00:48:07,352
+Hedeflediğim değer neydi? Hesaplanan değer neydi? Onların karesini alıp.
+
+216
+00:48:07,599 --> 00:48:27,959
+Karesel hatayı hesaplıyorum. Önce O1 için hatayı hesaplayacağım. Hedeflediğim değer 0,01. Hesapladığım değer 0,75. Farklarını aldım, karesini aldım. Şu kadar bir hata oluşmuş 0,27.
+
+217
+00:48:28,755 --> 00:48:42,815
+Aynı şeyi O2 için hesaplarsam, yine aynı formüllerle, orada oluşan hata 0,023. Tahmin ettiğimiz gibi daha düşük bir hata. Çıkan değer daha yakındı.
+
+218
+00:48:43,735 --> 00:48:55,815
+En son çıkış nöronunuz kaç tane ise her nöron için bu hatayı hesaplıyorsunuz bireysel olarak ve sonra da toplayıp bir toplam hata hesaplıyorsunuz.
+
+219
+00:48:56,115 --> 00:49:07,315
+Tamam. Toplam hatayı hesaplamak için işte O1'in hatasıyla O2'nin hatasını topladım. Toplamda da 0,29 kadar bir hatam varmış.
+
+220
+00:49:17,364 --> 00:49:27,823
+Update etmem gereken ağırlık için türevini hesaplayıp gradiyanın tersi yönde hata değişimini sağlamak.
+
+221
+00:49:28,663 --> 00:49:37,123
+Arkadaşlar, ara vermiyorum. Azıcık daha bir şey anlatıp bitireceğim bugün. O yüzden ara vermiyorum. Şu konuyu toparlayayım olur mu?
+
+222
+00:49:39,243 --> 00:49:41,243
+Bu arada sayınız artmış ama.
+
+223
+00:49:42,228 --> 00:50:07,028
+Neyse, şimdi V5 ağırlığının mevcutta bir değeri vardı. Bir bakalım V5 neresi? V5 şurası, H1 ile O1 arasındaki bağlantı 0.40'dı değeri. O1'in çıkışında, O2'nin çıkışında da zaten bir hata oluştuğu için V5'in değerini güncellemem gerekecek eğitim sırasında.
+
+224
+00:50:07,519 --> 00:50:12,699
+V5'in hataya etkisi ne kadar diye bakıyorum.
+
+225
+00:50:16,699 --> 00:50:18,339
+Özür dilerim.
+
+226
+00:50:19,980 --> 00:50:21,839
+Şu, kastettiğim şey bu.
+
+227
+00:50:22,839 --> 00:50:24,879
+V5'in hataya etkisi.
+
+228
+00:50:26,439 --> 00:50:29,439
+Toplam hatada V5'in payı ne kadar?
+
+229
+00:50:29,619 --> 00:50:34,219
+Veya toplam hatanın değişiminde V5'in payı ne kadar?
+
+230
+00:50:34,835 --> 00:50:56,235
+V5 diye hesaplamam lazım. Dolayısıyla bunu hesaplamak için, şimdi şöyle bir durdum burada. E-Total'in V5'e göre türevini alacağım. Ama E-Total'in ifadesine bakıyorum. Burada V5 diye bir değişken yok.
+
+231
+00:51:02,356 --> 00:51:14,836
+Onların aslında içinde dolaylı olarak V5'e bağlı ifadeler var. Dolayısıyla ben aslında o zaman bu türevi alırken zincir kuralını uygulayacağım.
+
+232
+00:51:14,836 --> 00:51:27,656
+Yani V5'e bağlı veya en son V5'e indirgeyecek kadar içerideki değişkenlerinde türevini almam gerekecek. Zincir kuralını hatırlayın.
+
+233
+00:51:28,307 --> 00:51:33,407
+Daha doğrusu sonradan tekrar da yaparak hatırlayın.
+
+234
+00:51:33,887 --> 00:51:39,728
+Şimdi amacım E-Total'in V5'e göre türevini hesaplamaktı.
+
+235
+00:51:40,327 --> 00:51:45,067
+Fakat E-Total dediğim şey AUT-O1'e bağlı sadece.
+
+236
+00:51:46,187 --> 00:51:48,667
+O zaman AUT-O1'e göre türevini alabilirim.
+
+237
+00:51:48,980 --> 00:52:11,180
+A6O1 kime bağlı? NetO1'e bağlı. Onun da NetO1'e göre türevini alırım. NetO1 dediğim şey işte o V5'e bağlı. Onun da V5'e göre türevini alırsam zincir kuralıyla E totalin V5'e göre türevini şu soldaki ifadeyle, soldaki çarkımla yazabiliriz.
+
+238
+00:52:12,180 --> 00:52:16,980
+Zincir kuralıyla bu türevi açarak yazmanız gerekiyor.
+
+239
+00:52:16,980 --> 00:52:42,240
+Şu üç tane türevi almanız gerekiyor. Şimdi ne yapacağız? Bu türevlerin her birini ayrı ayrı alacağım. E-Total'in V5'e göre türevini hesaplayacağım. O işlemleri haftaya tekrar üstünden geçeceğim için hızlıca bırakıyorum. Üç tane türevi ayrı ayrı zincir kuralındaki türevi ayrı ayrı almışız.
+
+240
+00:52:42,867 --> 00:52:53,108
+Şimdi ikinci türev bu, üçüncü türev de bu. Üçünü çarptık. Şu E-total'in V5'e göre türevini bulduk.
+
+241
+00:53:04,112 --> 00:53:24,211
+Bu şekilde delta kuralında kullanmam lazım. Delta kuralım ne diyordu? En başta türev olarak göstermiştim size. Hedeflediğim değerle hesapladığım değerin farkı şurası aktivasyon fonksiyonumdan geliyor.
+
+242
+00:53:29,684 --> 00:53:51,104
+Bu türde çıkıyor. Şöyle düşünün. Şu türevlerin, bir saniye. Şu türev mesela bakın aktivasyon fonksiyonunu kendisi alt kutu hesaplarken onun türevini aldım. Buradan gelen ifade bu. Üç tane zincir kuralındaki türevimiz vardı ya.
+
+243
+00:53:51,539 --> 00:53:56,539
+Onların ifadeleri bunlar aslında. Hatamı bu şekilde oluşturdum.
+
+244
+00:53:58,360 --> 00:54:08,760
+Ve ben artık ağırlık değerimi, V5'in değerini şu kadar, E-total'in V5'e etkisi kadar değiştireceğim.
+
+245
+00:54:16,788 --> 00:54:32,627
+E-Total'in V5'e göre türevi yani gradiyan kadar ve buradaki eksi çıkartma işlemi olarak düşünmeyin, yön olarak düşünün. Gradiyanın tersi yönde.
+
+246
+00:54:33,652 --> 00:54:42,131
+Eski V5 değerini değiştir. Ne kadar değiştir? V5e totali ne kadar etki ediyorsa o kadar değiştir.
+
+247
+00:54:42,131 --> 00:54:48,951
+Böyle düşünürseniz formülleri falan ezberlemenize gerek kalmaz. Aklınızda kalması daha kolay olur.
+
+248
+00:54:50,331 --> 00:55:00,131
+Yeni V5 değerini ayarlarken eski V5 değerini V5'in hataya oranı kadar değiştir.
+
+249
+00:55:00,628 --> 00:55:26,688
+Ve Gradiyanın tersi yönde değiştir. Yani buradaki eksi de oradan geliyor. Bir de öğrenme katsayım var şurada. Öğrenme katsayısı da öğrenmenin hızını ayarlamak için veya bu değişimin hızını ayarlamak için kullandığım parametre. Bu şekilde yaparsam V5'in yeni değerini hesaplamış oluyorum. Önceden 0.4'tü. Şimdi V5'in yeni değeri 0.35.
+
+250
+00:55:27,284 --> 00:55:45,364
+Bu şekilde bütün ağırlıkların yeni değerlerini hesaplayabilirsiniz. Ara katman için de benzer şekilde ara katmandan da geriye doğru olan şu bağlantı ağırlıkları var. V1, V2, V3, V4.
+
+251
+00:55:46,036 --> 00:55:53,955
+Onları da benzer şekilde zincir kuralını kullanarak ne kadar değiştireceğimizi belirleyip hesaplayabilirsiniz.
+
+252
+00:55:53,955 --> 00:56:03,435
+Ve en sonunda da bir tur backprop yaptığımız için, bütün ağırlıkları değiştirdiğimiz için yeni bir örnek alıp,
+
+253
+00:56:04,340 --> 00:56:30,960
+Gitmeyeyim fazla, şuradan gideyim. İşte bunun türevine göre buradaki ağırlıkları değiştirdim. Ondan sonra buradaki türevlere göre, V1'e göre türevine göre V1'i değiştirdim. V2'ye göre türevine göre V2'yi değiştirdim falan. Şu ağırlıkları değiştirdim. Ayarlamalarım bitti. Bütün ağırlıklarımın yeni değerini hesapladım. Hatamla ilişkili olarak.
+
+254
+00:56:31,456 --> 00:56:38,251
+Gradiyanın tersi yönde. Artık ne yapacağım? Yeni bir örnek gösterip...
+
+255
+00:56:38,260 --> 00:57:02,080
+Tekrar ileri doğru hesaplama yapacağım. İleri doğru hesaplayacağım. Hatayı belirleyeceğim. Hatanın türevini alacağım. Karasel hatanın. Geriye yansıtacağım. Yeni bir örnek göstereceğim. Tekrar ileri doğru hesaplayacağım. Ne zamana kadar? Hatam belli bir orana düşene kadar veya belli bir epok sayısı kadar bu işi tekrarlayacağım.
+
+256
+00:57:05,588 --> 00:57:30,228
+Eğitildiğine, artık test için hazır olduğuna ikna olduğunda ağırlıklarım artık daha fazla değişmeyecek bir noktaya geldiyse, hatam belli bir değere düştüyse artık ağırlıklarımı en son değerleriyle sabitleyeceğim ve yeni test edilecek örnekler için kullanıma hazır olmuş olacak.
+
+257
+00:57:31,027 --> 00:57:36,128
+Burada durayım arkadaşlar. Sorunuz varsa söyleyin.
+
+258
+00:57:40,947 --> 00:57:42,107
+Hala burada mısınız?
+
+259
+00:57:45,327 --> 00:57:46,287
+Buradayız hocam.
+
+260
+00:57:46,867 --> 00:57:54,287
+Peki, tamam. Var mı bir soru? Şu zincir kuralları vs. bunları elinizle uygulamanız gerekecek, onu söyleyeyim ben.
+
+261
+00:57:54,987 --> 00:58:03,987
+Buradan bakarken olmuyor o iş. Haftaya her ne kadar bir daha ben size yaparım sayısal örnek ama ya da Sercan hocanız yapar.
+
+262
+00:58:04,335 --> 00:58:09,096
+Ama yani sizin de bir elinizle yazarak yapmanız gerekiyor bu örnekleri.
+
+263
+00:58:11,355 --> 00:58:13,055
+Soru var mı arkadaşlar?
+
+264
+00:58:16,035 --> 00:58:18,735
+Peki ben burada bir tane daha söyleyeceğim.
+
+265
+00:58:20,335 --> 00:58:21,835
+Kilit nokta var.
+
+266
+00:58:22,215 --> 00:58:24,315
+Daha doğrusu iki tane şey var.
+
+267
+00:58:25,556 --> 00:58:42,736
+Ben şu anda size anlatırken böyle yapıyorum ama her biri için tek tek işlem yapıyorum ama sonuçta aslında burada V5'e göre TREV alırken, V6'ya göre TREV alırken bunların formüllerinde parametreler ortak.
+
+268
+00:58:42,736 --> 00:58:47,016
+Onu şu şekilde bir katsayı şeklinde ifade edebiliyoruz.
+
+269
+00:58:47,280 --> 00:59:04,060
+Siz matriz şeklinde işlem yapacaksınız. Normalde bilgisayarda kodladığınızda bu şekilde gitmeniz gibi bir şey söz konusu değil. Sistematik bir şekilde ifade etmek lazım. Şu anda sadece anlayın diye böyle yaptım.
+
+270
+00:59:04,384 --> 00:59:18,104
+İkinci söyleyeceğim kilit nokta da türev meselesi. Şimdi ben burada aktivasyon fonksiyonu olarak bu lojistik fonksiyonu kullandığım için onun türevi...
+
+271
+00:59:18,420 --> 00:59:36,300
+Bu şekilde ve formül olarak bunu kullanıyorum. Yani genelleştirme yaptığınızda daha sonra bilgisayarda programlarken genelleştirme yaptığınızda da şunu bir ortak kat sayı olarak kullanacaksınız.
+
+272
+00:59:36,300 --> 00:59:42,300
+Ama eğer benim fonksiyonum değişik olsaydı türev ifadem bu olmayacaktı.
+
+273
+00:59:42,880 --> 00:59:53,440
+Dolayısıyla, buradaki kullanacağım formüller de, şurası mesela, buradaki bu ifade başka bir şey olacaktı.
+
+274
+00:59:53,920 --> 00:59:58,360
+Kullandığım fonksiyon her neyse onun türevi olacaktı.
+
+275
+00:59:58,800 --> 01:00:03,579
+Yani delta kuralında da, onu bir ara söyledim ama kaçmış olabilir.
+
+276
+01:00:04,079 --> 01:00:24,579
+Delta kuralında da aslında yazarken böyle fx, birekse, fx gibi yazıyoruz ama aslında o noktada varsaydığımız fonksiyon, lojistik fonksiyon olduğu için aman aman orada kullandığınız aktivasyon fonksiyonu ne olduğunu dikkatten kaçırmayın.
+
+277
+01:00:24,579 --> 01:00:29,579
+Ona göre şu update denkleminiz.
+
+278
+01:00:29,684 --> 01:00:57,184
+Ağırlığı değiştirme denkleminiz değişecek. Şunu bir şekilde bilgisayarda kodlarken hazır bir şey olarak, tekrarlayan bir şey olarak kullanacaksınız. Ama bunun ne olduğu, şuradaki parametresinin ne olduğu tamamen sizin kullandığınız aktivasyon fonksiyonu ile ilgili onun türevi olduğu için burası.
+
+279
+01:00:57,844 --> 01:01:09,564
+Her soruda, her problemde böyle kullanabilirim veya bunu bir delta kuralı olarak bunu varsayabilirim demek değil bu.
+
+280
+01:01:11,503 --> 01:01:15,144
+Peki, var mı arkadaşlar başka bir sorunuz?
+
+281
+01:01:20,403 --> 01:01:35,804
+Tamam. Artık utanıyorum söz vermeye ama inşallah size videolu videolu daha güzel bir şeyler hazırlayacağım. Slides'leri de paylaşacağım. Ben yine bir kere daha söz vereyim de artık tutamazsam benim ayıbım olsun.
+
+282
+01:01:41,139 --> 01:01:48,079
+Sorunuz yoksa bitireyim. Varsa şimdi zamanıdır.
+
+283
+01:01:52,211 --> 01:01:59,592
+Peki, o zaman haftaya görüşmek üzere diyorum. Sınavlarınızda kolaylıklar sınav oluyorsanız.
+
+284
+01:02:00,051 --> 01:02:00,692
+İyi günler hocam.
+
+285
+01:02:00,711 --> 01:02:01,231
+Teşekkür ederim.
+
+286
+01:02:01,311 --> 01:02:04,051
+İyi günler, sağ olun. Hoşçakalın.
