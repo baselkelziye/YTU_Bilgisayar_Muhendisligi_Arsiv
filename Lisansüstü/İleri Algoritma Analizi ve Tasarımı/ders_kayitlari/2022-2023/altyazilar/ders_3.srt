@@ -1,0 +1,3055 @@
+1
+00:03:53,907 --> 00:04:18,947
+Merhaba arkadaşlar, hoş geldiniz. Bu haftaki dersimizde kaldığımız yerden devam edeceğiz. Öncelikle temel algoritma sınıflarından bahsetmiştik geçen hafta karmaşıklık açısından. Şimdi de Brute Force algoritması, Divareten Compure algoritması, bunların türevleri ve efficiency'leriyle alakalı olacak dersimiz.
+
+2
+00:04:25,108 --> 00:04:35,247
+Şimdi Brute Force'la başlayalım. Kaba kuvveti algoritmaları. Başladığımızdan beri bilgisayar bilimlerine aslında ilk karşılaştığımız örnekler Brute Force örnekleri oluyor.
+
+3
+00:04:35,247 --> 00:04:49,148
+Brute Force algoritmalarının özelliği aslında çalışma gücünü bilgisayarın donanımından almaları esasında. Yani bilgisayarın çalışma hızı Brute Force algoritmalarının işlevselliğini arttırıyor.
+
+4
+00:04:49,588 --> 00:05:04,968
+Dolayısıyla aslında genelde küçük veri boyutları için uygun olduğunu bu çözümlerin söylemek mümkün. Çok görünen bariz çözüm metotlarını uygulamış oluyorsunuz genelde brute force uyguladığınız vakit.
+
+5
+00:05:06,228 --> 00:05:19,228
+Ama bir noktadan sonra veri boyutu büyüdüğünde Brute Force algoritmaları artık karmaşıklıklarından dolayı uygulanabilir olmaktan çıkmaya başlıyor. Dolayısıyla daha akıllıca çözümler bulmak gerekebiliyor.
+
+6
+00:05:21,008 --> 00:05:24,908
+Örneğin burada A üzeri N hesaplamak için.
+
+7
+00:05:25,779 --> 00:05:43,819
+Standart formülümüzü kullanan bir brute force algoritması düşünelim. A çarpı A çarpı A diye gidip bunu en kez tekrarlayan bunun karmaşıklığı O en olacak. Aslında bunu daha kısa bir şekilde çözmeniz mümkün. Örneğin A üzeri 16'yı bulmak için A üzeri 8'den faydalanmak gibi.
+
+8
+00:05:43,819 --> 00:05:52,579
+Şimdi burada brute force algoritmalarıyla alakalı birkaç örnekten bariz örnekten bahsedeceğiz. Biraz daha kafanıza sınıfın yeri otursun diye.
+
+9
+00:05:55,923 --> 00:06:05,524
+Şimdi en önemli de karşılaştığımız BruteForce problemleri sıralamada, aramada, matrix çarpımlarında, string aramada BruteForce algoritmalarını kullanıyoruz.
+
+10
+00:06:06,343 --> 00:06:11,123
+BruteForce algoritmalarının dizayn maliyetleri çok düşük aslında.
+
+11
+00:06:11,524 --> 00:06:17,063
+Genellikle en bariz çözümü kodlamaya aktarmış oluyorsunuz bir BruteForce algoritması kullandığınızda.
+
+12
+00:06:17,823 --> 00:06:21,063
+Ama dediğim gibi problem boyutu büyüdüğünde.
+
+13
+00:06:21,747 --> 00:06:44,788
+Efektif olmaktan çıkıyor. Dolayısıyla eğer küçük bir probleminiz varsa, küçük boyutlu bir veriyle uğraşıyorsanız eğer brute force algoritmalarını kullanmanız mantıklı. O zaman hakikaten eğer her örneğinizde, her seferinde küçük boyutlu veriyle çalışmaya devam edecekseniz o zaman daha böyle maliyeti düşürmek adına tasarım maliyetini brute force kullanmak mantıklı hale geliyor.
+
+14
+00:06:51,283 --> 00:06:55,864
+Örnek Brute Force algoritmaları, Matrix Multiplication.
+
+15
+00:06:57,524 --> 00:07:19,723
+Geçen derste Matrix Multiplication'ın karmaşıklığına bakmıştık birlikte. Enküptü hatırlarsanız. Çünkü iki ayrı matriz üzerinde gezmeniz gerekiyordu ve bir de bunların karşılıklı hücrelerini diğer bir matrizde yerleştirmeniz gerekiyordu. Enküptü karmaşıklığı vardı. Bunu BruteForce'da yaparsanız. Bunun farklı metodları mümkün.
+
+16
+00:07:20,180 --> 00:07:47,399
+Bubble Sort, Standart, Enkare'de çalışıyordu. Sequential Search, BruteForce Argo Eğitiması. Burada bakın Sequential Search'ın PISODO kodunu görüyorsunuz. En elemanlı bir adres üzerinde bir key'yi arıyorum. 0 ile n-1 arasında geçen. Eğer bu key'yi bulursam ne ala yerini döndüreceğim. Bulamazsam x'e 1'i döndüreceğim.
+
+17
+00:07:48,180 --> 00:08:06,000
+Bu algoritmanın ne oluyor karmaşıklığı? Bütün elemanları tek tek yazdığı için n oluyor. Standart bir Brut Sort algoritması. Selection Sort. Bu da tipik bir Brut Sort algoritması.
+
+18
+00:08:12,915 --> 00:08:22,915
+Sırasız bir dizi var, en eksi bir elemalı olan. Bunu sort edeceksiniz. Nasıl çalışıyor? Dizi üzerinde before döngüsü ile dönmeye başlıyorsunuz.
+
+19
+00:08:22,915 --> 00:08:29,915
+Bir minimum buluyorsunuz. Taradığınız an içerisinde bir minimum buluyorsunuz.
+
+20
+00:08:32,115 --> 00:08:38,915
+Ardından bulunca o anki elemanınızla bu dizinin minimum elemanının yerini değiştiriyorsunuz.
+
+21
+00:08:39,435 --> 00:08:45,755
+Ve ikinci adımda dizinin ikinci elemanından başlayarak, son eksi bir elemanı tarayarak yine devam ediyorsunuz minimumu bulmaya.
+
+22
+00:08:45,875 --> 00:08:48,796
+En küçük elemanıyla ikinci elemanın bu kez yerini değiştiriyorsunuz.
+
+23
+00:08:48,796 --> 00:08:50,255
+Ve bu bu şekilde gidiyor.
+
+24
+00:08:50,995 --> 00:09:01,935
+Burada dönüş sayısını hesaplamak için kullanacağımız toplam formüllerinin örüntüsü de bakın şöyle oluyor bildiğiniz gibi bir hatırlatma yapmış oluyorum.
+
+25
+00:09:12,211 --> 00:09:30,211
+bir kez karşılaştırma yapıyorsunuz. Dolayısıyla formülleri uyguladığımız vakit n-1 çarpı n böyle ikilik bir karmaşık karşımıza çıkıyor. Dolayısıyla Selection Sort'un bir go notasyonda n kare olduğunu söyleyebiliriz.
+
+26
+00:09:37,043 --> 00:09:47,644
+komputation olarak pahalı bir işlem. Swap işleminin yapılış sayısı şuradaki for ile bağlantılı. Buradaki for ile değil. Buradaki kompleksite aslında en kare ama
+
+27
+00:09:47,644 --> 00:09:57,844
+Swap işlemi şu for'dan sonra yapıldığı için en kare olan yine karmaşıklığı diğer ergoizmalara göre tercih edilebilir bir opsiyon selection sort.
+
+28
+00:10:01,844 --> 00:10:19,604
+String Matching İşlemi. BruteForce'a String Matching'i nasıl yapıyoruz? İki tane String'imiz var. T ve P String'leri. Burada T içerisinde P'yi arıyoruz. T'nin N elemanı var, P'nin M elemanı var.
+
+29
+00:10:26,836 --> 00:10:32,756
+İndeksini döndüreceğim. Bulamazsam eksi bir döndüreceğim. Nasıl çalışıyor?
+
+30
+00:10:34,155 --> 00:10:43,016
+En eksi eme kadar tarama yapıyorsunuz. T'nin içerisinde P'yi aradığınız için. T'nin eninci elemanına kadar arama yapmanız gerekiyor mu? Hayır gerekmiyor.
+
+31
+00:10:43,552 --> 00:10:55,552
+Sonuna yerleşmiş olma ihtimalini göz önünde bulundurarak, aradığınız paternin tekstin sonuna yerleşme ihtimalini göz önünde bulundurarak, o kısmı sığacağı noktaya kadar, en eksiyeme kadar tarama yapıyorsunuz.
+
+32
+00:10:55,552 --> 00:11:05,491
+Ve her seferinde taradığınız her eleman için paternin ilk elemanına başlangıç noktası alarak karşılıklı karşılaştırma yapmanız gerekiyor.
+
+33
+00:11:06,531 --> 00:11:10,491
+Birbirine eşit mi diye bakıyorsunuz. Birbirine eşit olduğu sürece,
+
+34
+00:11:11,028 --> 00:11:20,508
+ve aynı zamanda da karşılıklı elemanlar birbirine eşit olduğu sürece, aynı zamanda da paternin indeksini aşmadığınız sürece ilerlemeye devam ediyorsunuz.
+
+35
+00:11:20,508 --> 00:11:24,627
+Çıktığınız vakit neden çıktığınızı test etmeniz lazım.
+
+36
+00:11:24,627 --> 00:11:30,228
+Eğer sonuna kadar ulaşabilmişseniz paternin yani J'niz M'e ulaştıysa bulmuşsunuz demektir.
+
+37
+00:11:30,228 --> 00:11:37,508
+İyi döndürüyorsunuz, aksi taktirde eksi 1 döndürüyorsunuz. Standart bir brute force algoritması örneği.
+
+38
+00:11:45,716 --> 00:11:50,216
+BruteForce algoritmasının karmaşıklığıyla alakalı bana nasıl söyleyebilirsiniz?
+
+39
+00:11:55,539 --> 00:11:56,619
+Yazabilirsiniz.
+
+40
+00:11:58,759 --> 00:12:02,259
+Ya da paylaşabilirsiniz. Ya da chatten yazabilirsiniz.
+
+41
+00:12:05,200 --> 00:12:07,000
+Var mı bakayım bana bir şey yazan?
+
+42
+00:12:11,731 --> 00:12:17,831
+Kimse yok mu? Bir tane geldi çok mutlu. O n kare geldi bir tane. N çarpı m geldi.
+
+43
+00:12:22,067 --> 00:12:24,248
+[öğrenci] ve [öğrenci]'e çok teşekkür ediyorum.
+
+44
+00:12:27,008 --> 00:12:28,288
+Evet, yok mu başka?
+
+45
+00:12:31,508 --> 00:12:32,028
+Bakayım.
+
+46
+00:12:34,668 --> 00:12:35,548
+Tamam.
+
+47
+00:12:36,327 --> 00:12:40,508
+Şimdi, pardon hemen devam edeyim.
+
+48
+00:12:42,148 --> 00:12:44,427
+Paylaşımı galiba duraklattım bir şekilde.
+
+49
+00:12:45,307 --> 00:12:45,968
+Niye olmadı?
+
+50
+00:12:52,980 --> 00:13:05,019
+Şimdi arkadaşlar, bunun karmaşıklığı nasıl oluyor? Dışarıda en eksi eme kadar giden bir döngünüz var. İçeride eme kadar giden bir döngünüz var. Tabii bu kötü durum senaryosu için.
+
+51
+00:13:05,500 --> 00:13:17,932
+Kötü durum senaryosunda nasıl oluşur kötü durum senaryosu? Aradığınız paternle teksti karşılaştırıyorsunuz ve aradığınız paternin son elemanına gelinceye kadar sürekli bir meç yakalıyorsunuz. Son elemanında...
+
+52
+00:13:17,940 --> 00:13:36,419
+Meç'i kaybediyorsunuz. Dolayısıyla kötü durum senaryosunda o bir goda en çarpı emlik bir karmaşıklığı var bunun. Ama iyi durum senaryosunda nasıl olur? İyi durum senaryosunda ya başta bakıp çıkarsınız bir olur. Aslında bir olur. Kötü durum senaryosunda en çarpı em olur.
+
+53
+00:13:39,860 --> 00:13:42,539
+Ortalama durum senaryosu için de söyleyebiliriz.
+
+54
+00:13:44,148 --> 00:14:03,728
+Genelde string matchlerinde ilk birkaç karakterden sonra uygun olmadığı anlaşılır. Tabi bu sizin domeninize, bu string match işlemini uygulayacağınız domeneğine göre de değişiklik gösterir ama. Dolayısıyla aslında ortalama durum senaryosu worst case'den çok best case'e daha yakın da diyebiliriz.
+
+55
+00:14:07,764 --> 00:14:10,944
+Peki, şimdi şu örneklere bakalım. Bunlar Brute Force algoritmaları mı?
+
+56
+00:14:12,184 --> 00:14:19,124
+Algoritm Confuse hesap. İkareleri hesaplayan bir algoritma.
+
+57
+00:14:21,064 --> 00:14:32,164
+Bir dizi içerisinde maksimimin değerleri arasındaki farkı hesaplayan ya da bir matrişin simetrik olup olmadığını hesaplayan algoritmalar.
+
+58
+00:14:32,884 --> 00:14:34,464
+Bunlar Brute Force algoritmaları mı?
+
+59
+00:14:35,379 --> 00:14:48,639
+Aslında öyle. Uygulama şekline göre daha akıllıca şeyler tabii yapabilirsiniz ama eğer örneğin birincisi için birdenene kadar gidiyorsanız ve her seferinde kare sınavı topluyorsanız, evet bir Brute Force harfet olması yazmış oluyorsunuz.
+
+60
+00:14:56,884 --> 00:15:06,783
+Eğer straightforward bir algoritmamız varsa, iterasyonlar içerisinde computation yapıyorsanız ya da karşılaştırma yapıyorsanız genel olarak bunun brute force olduğunu söylemek mümkün.
+
+61
+00:15:06,783 --> 00:15:09,783
+Şimdi biraz...
+
+62
+00:15:10,272 --> 00:15:28,452
+Elinize kalem alıp uğraşın istiyorum. İyice otursun kafamızda. İteratif algoritmaların analizliğiyle alakalı bilgi otursun kafamıza istiyorum. Çünkü bundan sonra ilk örneğe alakalı analizlerde birazcık daha detaya ineceğiz. Şimdi şöyle bir örneğimiz var. Buna biraz vakit ayıralım.
+
+63
+00:15:30,292 --> 00:15:35,492
+Network Topoloji örneğimiz olsun. Üç tane. Ring Star ve Fully Connected Mesh Topolojileri.
+
+64
+00:15:35,492 --> 00:15:44,392
+Şimdi bunların matriz şeklinde ifade edilmiş şekillerinin size verildiğini düşünün.
+
+65
+00:15:44,472 --> 00:15:49,572
+Bunun matrizler veriliyor size. Sıfır ve birlerden oluşan ve birbirleriyle bağlantılı olan.
+
+66
+00:15:49,936 --> 00:16:10,356
+İçerideki nodlar için matrisinizde ilgili not numarasının satır ve sütun da birleştiği noktada bir görüyorsunuz. Bir bağlantılı olmayan notları için sıfır görüyorsunuz. Bu üç topoloji için üç tane ayrı size matris verilmiş olsun. Her biri için bir brute force algoritması tasarladığınızı düşünün.
+
+67
+00:16:10,932 --> 00:16:18,032
+Nasıl algoritmalar tasarlarsınız ve her biri için hazır tasarladığınız bu brute force algoritmasının komplekslisi ne olacak diye soracağım.
+
+68
+00:16:18,032 --> 00:16:25,451
+Algoritmalar amacı, belirlen bir topolojinin bu üçünden hangisine ait olduğunu bulmak.
+
+69
+00:16:25,908 --> 00:16:51,848
+Bu şekilde düşünerek de tasarlayabilirsiniz. Verilen yani bir çeşit, burada classification yapan bir topoloji de tasarlayabilirsiniz. Ya da elinize bir topoloji geldiği vakit bunun ring olup olmadığını verify eden, star olup olmadığını verify eden gibi bir topoloji de tasarlayabilirsiniz. Her iki keyif içinde düşünmenizi istiyorum. Matrislerini bir yazın. Nodlara birer verip isim.
+
+70
+00:16:52,340 --> 00:16:56,720
+Biraz elinizi bulaştırın. Karmaşıklıklarına dair fikirlerinizi bekliyorum.
+
+71
+00:16:57,100 --> 00:17:00,100
+Soru var mı bu arada? Bu uğraşırken size soruları alayım.
+
+72
+00:17:04,500 --> 00:17:05,380
+Ne var bu soru arkadaşlar?
+
+73
+00:17:08,980 --> 00:17:33,480
+Uzaktan ders vermeye kötü bir tarafı sizin tepkilerinizi hiçbir şekilde anlayamıyor olmam. Hızlı gidiyor muyum, yavaş gidiyor muyum anlayamıyorum. Bir espri yapsam hoşunuza gitti mi gitmedi mi onu da anlayamıyorum. Sizden bir geri bildirim almak önemli benim için. Bakayım biri bir şey yazmış. Teşekkür ediyorum. Evet burada olan arkadaşlara teşekkür ediyorum.
+
+74
+00:17:34,163 --> 00:17:59,723
+Tamam, o zaman şimdi elinize kalem kağıt alın arkadaşlar. Bu üç topoloji için... Aha, size bir tanesinin cevabını mı gösteriyorum şu an? Evet, birinin cevabını görüyorsunuz. Hadi bunu size göstermiş olayım. Bakın bu bir örnek olsun. Ring topolojisi. Nasıl bir madres oluşmuş bunun için? Her bir mod için bir harf verdim A, B, C, D, E, F. Birbirleriyle bağlantılı olan.
+
+75
+00:18:00,211 --> 00:18:05,971
+noktalar için bir koyuyoruz. A'yı B'yle bağlantılı olduğu için A'nın satır B'nin sütunda bir var.
+
+76
+00:18:08,011 --> 00:18:16,011
+A'nın bir de F'le bağlantısı var. Dolayısıyla son sütunda bir var. İki taraflı bir graf bu.
+
+77
+00:18:16,011 --> 00:18:26,412
+Bir daha yaşamlı bir graf. Elimizde böyle bir ring topolojisi için böyle bir boğul matriks verildiğinde bunun ring olup olmadığını anlayan
+
+78
+00:18:26,932 --> 00:18:33,971
+Bir algoritmanız olsa, basit olarak algoritmanızı tasarlarsınız ve karmaşıklığı ne olur?
+
+79
+00:18:34,811 --> 00:18:37,012
+Bir iki dakika size süre vereyim bununla ilgili, tamam mı?
+
+80
+00:18:47,443 --> 00:18:48,623
+Sonra üzerinden geçeceğiz.
+
+81
+00:20:35,155 --> 00:20:55,056
+Şimdi arkadaşlar, nasıl bir bakış açımız var? Ya verification yapacağım, ya identification yapacağım. Eğer verification yapıyorsa, diğer topolojilerden ayırmayla alakalıysa bunu çözdüm mü? O zaman şunu yapabilirim. Her bir satır için birinci satırla yani ilk satırla sol satır.
+
+82
+00:20:55,571 --> 00:21:05,571
+Biraz böyle tam çevrimizin geldiği noktalara denk geldiği için kural dışı kalıyor gibi görünüyor ama onu da bir mod alma işlemiyle çözmeniz mümkün. Orta satırlar için konuşuyorum.
+
+83
+00:21:07,011 --> 00:21:18,351
+Bulunduğunuz satırın bir eksiği ve bulunduğunuz satırın bir fazlası modene göre bir olacak ve diğerleri sıfır olacak şekilde bir dizilim söz konusu.
+
+84
+00:21:18,351 --> 00:21:22,411
+Bunu satır satır taramanız mümkün. Böyle yaptığımız vakit.
+
+85
+00:21:22,836 --> 00:21:31,836
+diğerlerinden ayrılıp ayrılmadığını görebiliyorsunuz. Dolayısıyla Big Theta'da enlik bir karmaşıklıkla bu işi çözebiliyorsunuz.
+
+86
+00:21:31,836 --> 00:21:39,531
+Satırları kontrol edip sadece o satır için ilgili bir olması gereken alanları bulup
+
+87
+00:21:39,539 --> 00:21:54,639
+olup olmadığını anlayabilirsiniz ve bunun tabii ki her seferinde belki en kez önerken bir kauntörünüz olacak. Kaç kere bu işi yaptığınızda bulmuş olacaksınız. Identification'ın için ise bütün matrisi taramanız lazım. Dolayısıyla en karelik bir karmaşıklık orada sizi bekleyecek.
+
+88
+00:21:54,639 --> 00:22:01,220
+Şimdi bakalım diğer topolojimize. Ring topolojisi.
+
+89
+00:22:08,531 --> 00:22:12,791
+Pardon Star'a geçtik. Star topolojisi için nasıl bir maddisimiz oluşur?
+
+90
+00:22:15,731 --> 00:22:19,632
+Star topolojisinde bakın maddis şöyle oluşuyor.
+
+91
+00:22:22,011 --> 00:22:23,391
+Nasıl bir pataynı var bunun?
+
+92
+00:22:23,391 --> 00:22:34,172
+Burada hangi numaraya ortadakini, ortadaki nodu verdiğinizin bir önemi olmaksızın bir kolon boyunca
+
+93
+00:22:34,324 --> 00:22:45,403
+Birler, yine bir satır boyunca birler görüyorsunuz. Çünkü örneğin C'nin ortada olduğu bu durum için AC ile bağlantılı, BC ile bağlantılı, DC ile bağlantılı.
+
+94
+00:22:45,403 --> 00:22:50,316
+Tabii ki karşılığında da CB ile CA ile bağlantılı. Dolayısıyla...
+
+95
+00:22:50,483 --> 00:23:09,824
+Bir artı şeklinde bir paten var burada. Ortadaki case'in olduğu cc için örneğin sıfır görmek koşuluyla. Şimdi burada da yine tasarımınıza göre tabii değişecek ama genel olarak big data enlik bir bunun karmaşıklığı olduğunu söyleyebilirim.
+
+96
+00:23:09,824 --> 00:23:15,543
+Çünkü mesela nasıl bir şey yapabilirim? Eğer bir verification yapıyorsam birinci satırda geziyorum.
+
+97
+00:23:15,951 --> 00:23:31,311
+İlk biri gördüğüm yerde, o birinin bulunduğu sütün boyunca aşağıya iniyorum. Aynı şekilde onun bulunduğu satır boyunca kayıyorum. Dolayısıyla enlik bir işlem karmaşıklığıyla bunun ring star olup olmadığını kontrol edebiliyorum.
+
+98
+00:23:32,592 --> 00:23:35,672
+Peki Fully Connected Mesh'e gelirsek ne söyleyebiliriz?
+
+99
+00:23:36,339 --> 00:24:03,179
+Burada bütün nodların birbiriyle bağlantısı var. Dolayısıyla diagonalin 0 olduğu, diğer nodların bağlantılarının 1 olduğu bir form var karşımızda. Bu tabii star ile karışabilir bir durumda. Çünkü aslında içinde starları barındırıyor. Dolayısıyla star topolojisini verifki etmek için kullandığınız algoritma bunda da çalışacak eğer ekstra kontroller koymazsanız. Bunda da yine en karelik.
+
+100
+00:24:03,584 --> 00:24:10,944
+Yani tam olarak doğru olduğunu anlamak için tüm matris kollarını gezmeniz gerekecek. En karelik bir karmaşıklık sizi bekliyor olacak.
+
+101
+00:24:13,264 --> 00:24:16,844
+Soru varsa alabilirim. Yoksa devam edeyim.
+
+102
+00:24:22,579 --> 00:24:41,359
+Diğer konumuz Excessive Search. Bu aslında yorucu arama anlamına geliyor. Bir Brute Force Algoritması. Ama kombinasyonu kullanıldığı problemler için özelleşmiş bir isim. Dolayısıyla aslında M-faktörü ile doğru giden Brute Force Algoritmaları bu gruba giriyor.
+
+103
+00:24:50,067 --> 00:25:08,468
+Ortaya koyuyor öncelikle. Sonra da bunlardan gerekli koşulları sağlayanı seçiyor. Dolayısıyla tüm çözümleri ortaya koymak, tüm opsiyonları ortaya koymak dediğiniz şey kombinasyon içeren kısmı bunun. Karmaşıklık da buradan geliyor. Napsack problemi işte biliyorsunuz sırt çantası problemi.
+
+104
+00:25:09,076 --> 00:25:34,435
+Bu neydi? Elinizde bulunan bir takım ağırlıklar var, birim ağırlıklar ve bunların değerleri var. Bunları bir çantaya yerleştirmeye çalışıyorsunuz. Maksimum değerli olacak şekilde. Dolayısıyla bir sürü farklı opsiyonunuz var. Bu opsiyonları tek tek ortaya koyup, her birinin values'unu hesaplayıp, en efektif olanı, en iyi olanı seçmek şeklinde bir çözüm olabilir.
+
+105
+00:25:37,076 --> 00:25:47,615
+Asignment problem, biraz sonra bir örneğini göstereceğim. Kişileri joblara atamayla alakalı bir problem. Traveling Salisman problem, bununla da alakalı bir küçük örneğimiz olacak.
+
+106
+00:25:47,615 --> 00:26:03,056
+Beliyorsunuz, yine graf problemlerinden biri. Belirli notlar üzeri varken elimizde tamamını gezmek için en efektif şekilde nasıl bir yol izlemeliyiz gibi. Bu tarz problemler örnek gösterilebilir.
+
+107
+00:26:04,980 --> 00:26:18,520
+Şimdi assignment problemle başlayalım. Ne anlatıyor bize assignment problem? En kişi var ve bunları en job'a assign etmeniz gerekiyor. Her kişiye bir job veriyorsunuz.
+
+108
+00:26:18,520 --> 00:26:26,460
+Ve bunun için sizin elinizde bir maliyet tablosu var. İnsanların bu jobları yapmayla alakalı.
+
+109
+00:26:27,380 --> 00:26:42,740
+Maliyet. Minimum maliyeti bulmak üzerine aslında algoritma kurulu. Tablo şöyle, birinci insana birinci job atarsanız maliyeti dokuz, ikincisini atarsanız iki, üçüncüsünü atarsanız yedi gibi gidiyor.
+
+110
+00:26:42,740 --> 00:26:54,940
+Şimdi burada sizin elinize bu bilgi verildiğinde en iyi sıralamayı bulmanızı bekliyor bu algoritma.
+
+111
+00:27:01,428 --> 00:27:22,748
+Şimdi şöyle bir çözüm üretiyorsunuz. Öncelikle en tanelik bir parametre desteğinizde var. Aşağıda verilen maliyet tablosu için örneğin, eğer sizin elinize 2, 3, 4, 1 sıralaması verildiyse, sayımatlara ilişkin, bunun anlamı şu aslında.
+
+112
+00:27:29,428 --> 00:27:49,288
+İkinci kişi üçüncü göreve atanmış. Üçüncü kişi dördüncü göreve atanmış gibi. Elinize sıralama verildiği vakit 2, 3, 4, 1. Buradaki sıralamadaki aslında indis, sizin kişiniz ve dizinin içerisindeki eleman da atandığı görevi gösteriyor.
+
+113
+00:27:51,188 --> 00:27:55,288
+Şimdi böyle bir bilgi verilecek size. Nasıl bir çözüm üretirsiniz?
+
+114
+00:27:56,019 --> 00:28:11,900
+Exo-Astit Search ile bu işi yapacak olsanız nasıl bir çözüm üretirsiniz? Ne demiştim size? Tüm olasılıkları sıralamanız gerekiyor. Tüm olasılıkları sıralayacaksınız ve optimum olanı bulacaksınız.
+
+115
+00:28:17,460 --> 00:28:39,559
+İteratif bir şekilde verdiysem ki öyle veriyorum. Az önce bahsettiğim şuradaki en parametrelik girişi J1'den N'e kadar gider. Bu N'e kadar bulunan sayıları içerdiği için aslında size bu sayıların permutasyonunu bulmanız demek, tüm opsiyonları listelemeniz demektir.
+
+116
+00:28:42,771 --> 00:28:57,572
+İlk başta yapacağınız şey, bu sayıların permutasyonlarını, sıralamalarının opsiyonlarını yani ortaya dökmek. Ne gibi? 1, 2, 3, 4, 1, 2, 4, 3, 1, 3, 2, 4 gibi ilerlemeniz gerekiyor.
+
+117
+00:28:57,572 --> 00:29:09,572
+Her assignment opsiyonu için cost hesaplayacaksınız ve en sonunda da en ufak costa sahip olan assignment'ı seçeceksiniz.
+
+118
+00:29:10,483 --> 00:29:28,443
+Bakın burada örneği var. Cost matrisi buradayken. 1-2-3-4, 1-2-4-3, 1-3-2-4 gibi giden assignmentlar var. Tabii hepsini buraya yazmadım. Birkaç tanesi görünüyor. Her biri için bir cost hesaplıyorsunuz. 1-2-3-4 dediğimiz vakit aslında şunu söylemiş oluyorsunuz.
+
+119
+00:29:29,343 --> 00:29:37,023
+İndisleri, insanları, içerisindekilerde jobları gösteriyordu hatırlarsanız. O yüzden bu demek oluyor ki birinci insana birinci görevi verdim.
+
+120
+00:29:37,683 --> 00:29:57,743
+İkinci insana ikinci görevi verdim. Birinci insana birinci görevi verdiğim vakit kostu 9. İkinci insana ikinci görevi verdiğim vakit kostu 4. Üçüncü insana üçüncü görevi verdiğim vakit kostu 1. Böyle gidiyor. Bu kostları topladığımız zaman birinci opsiyonun total kostu 18 olmuş oldu.
+
+121
+00:29:58,363 --> 00:30:00,000
+İkinci olasılık 1-2-4.
+
+122
+00:30:00,000 --> 00:30:22,179
+Dört üç diye gidiyor. Yani yine birinci insana birinci görevi verdim. Dokuz maliyetim. İkinci insana ikinci görevi verdim. Maliyeti dört. Üçüncü insana dördüncü görevi verdim. Maliyeti sekiz gibi gidiyor.
+
+123
+00:30:24,788 --> 00:30:30,788
+Bu kostları topladığınızda, en ufak seçtiğinizde o optimal esayimiyeti bulmuş oluyorsunuz.
+
+124
+00:30:30,788 --> 00:30:34,788
+Tabii ki dolayısıyla karmaşıklık ne olmuş oluyor burada?
+
+125
+00:30:39,124 --> 00:31:04,923
+Karmaşıklık, bütün opsiyonları bulmanız için permutasyon işlemi yapıyorsunuz. Dolayısıyla bir n-faktöriyallık karmaşıklığımız oraya gidiyor. Sonra üzerinde bir de tüm kostları hesapladıktan sonra minimumunu bulmak için bir search yapıyorsunuz. Bunun karmaşıklığı da n oluyor. Ama n-faktöriyallık, overall'da n-faktöriyallık diyebiliriz bunun yaklaşık karmaşıklığına. Var mı soru arkadaşlar?
+
+126
+00:31:14,291 --> 00:31:17,811
+Tamam, devam edelim. Bakayım, soru var mı dedim ama bir soru çıktı.
+
+127
+00:31:17,811 --> 00:31:25,631
+Çok teşekkür ediyorum arkadaşlar. Cevap almak güzel bir şey.
+
+128
+00:31:26,731 --> 00:31:28,412
+Şimdi devam ediyorum.
+
+129
+00:31:31,291 --> 00:31:33,571
+Diğer örneğimize geçelim.
+
+130
+00:31:39,028 --> 00:31:42,028
+Şimdi bakalım. Burada aslında aşağıdaki...
+
+131
+00:31:46,324 --> 00:32:09,964
+Örnekten önce yukarıdaki üzerine bir gidelim. Bir sort problemi için bu exhaustive search'ı nasıl uygularsınız? En azıcık da bir sort problemi var. BruteForce'da çözdük biliyoruz. Ama exhaustive search ile çözecek olsanız bunu nasıl yaparsınız? Var mı fikri olan? Herhangi bir sort problemine.
+
+132
+00:32:12,948 --> 00:32:30,588
+Nasıl yaparsınız? Dizideki tüm elemanlar için az önceki o bir ile ne kadar olan sayıların permutasyonlarını hesapladığım gibi tüm olası sıralamaların hesaplamanız gerekir. Yani en faktör yerlik bir permutasyon hesabı yapmanız gerekir.
+
+133
+00:32:39,796 --> 00:33:06,076
+Hakikaten sıralı olup olmadığını tespit etmeniz gerekir. Doğru mu? Bunun için de eksi birlik bir dönüşünüz olacak. N eleman için. N faktör yerlik permutasyon hesabınız. N eksi birlik de bir order kontrolü işiniz olacak. Dolayısıyla N faktör yer çarpı N eksi birlik bir effecientiniz olacak.
+
+134
+00:33:08,660 --> 00:33:10,380
+Tamam? Şimdi...
+
+135
+00:33:14,355 --> 00:33:23,435
+Peki size şeyi sorayım. n-1'lik bir algoritmanız varsa bunun bigo notasyonda karşılığının ne olduğunu söyleyebilirsiniz.
+
+136
+00:33:24,615 --> 00:33:29,336
+Biliyorsunuz bigo notasyonun nasıl bir formalizasyon olduğunu hatırlıyorsunuz değil mi?
+
+137
+00:33:29,336 --> 00:33:38,135
+Eğer ben gen'nin karmaşıklığına dair bir asymptotic notation bigo'da yazmak istiyorsam, gen küçük eşittir, on olacak şekilde.
+
+138
+00:33:38,559 --> 00:34:04,639
+Düşünüyordum ve OAN'ın yerine bu şartı eşitsizliği sağlayacak bir fonksiyon belirliyordum. Şimdi eğer ben E-Faktöriyellik bir permutasyon hesabı ve bir de en eksi birlik şey yapıyorsam, bunun üzerine divide kontrol işlemi yapıyorsam ne olacak benim neticede bu eksoristif search ile sort yapmamın maliyeti?
+
+139
+00:34:07,476 --> 00:34:08,476
+En faktör ya.
+
+140
+00:34:12,340 --> 00:34:36,140
+Şimdi aslında şöyle olacak. Ben şuraya yazayım mesaj kısmına. Şimdi n-faktöriyellik bir permutasyondan gelen maliyetim var. Her oluşan dizi sıralaması için n-1'lik kontrol yapıyorum. n-faktöriyellik çarpı n-1 oluyor. Doğru mu?
+
+141
+00:34:36,724 --> 00:34:38,403
+Şimdi şöyle bir şey yazabilir miyim?
+
+142
+00:34:38,984 --> 00:34:44,423
+n faktör yer, n-1 faktör yerle çarptım.
+
+143
+00:34:46,423 --> 00:34:47,264
+Küçüktür.
+
+144
+00:34:49,604 --> 00:34:51,403
+n artı 1 faktör yer.
+
+145
+00:34:55,507 --> 00:35:12,967
+Doğru mu? Doğru. Çünkü aslında n faktör yerden biraz daha büyük bir probleminiz var sizin. Her seferinde n-1 ile çarpıyorsunuz. Eğer bir tane sıralama yapıp, az önceki cost fonksiyonun da öyleydi. n faktör yer kadar opsiyonum vardı. Her biri için bir tane...
+
+146
+00:35:13,184 --> 00:35:30,884
+oluşan samım vardı ve bu samları kontrol etmek için üzerinden geçmiştim. Ama şu an en faktöryel tane farklı dizili için, her bir dizi içinde bir kontrol mekanizması işletmek zorundayım. Dolayısıyla aslında en artı bir faktöryel demek, bigo notasyonda bu iş için doğru olacaktır.
+
+147
+00:35:33,024 --> 00:35:35,864
+Şimdi aşağıdaki örneğe geçelim. Soru var mı?
+
+148
+00:35:38,344 --> 00:35:40,403
+Okey. Aşağıdaki örneğe geçelim.
+
+149
+00:35:41,331 --> 00:35:46,291
+Şimdi bu aslında Traveler Sedgment probleminin bir sub problemi gibi.
+
+150
+00:35:47,291 --> 00:35:54,831
+Bir Hamiltonian circuit oluşturacaksınız. Bunun nedir özelliği?
+
+151
+00:35:55,652 --> 00:36:02,271
+Hamilton yolu olabilmesi için bir petin bir kere geçilen bir kenardan tekrar geçilmemesi gerekiyor.
+
+152
+00:36:02,271 --> 00:36:08,612
+Ve ayrıca yolun üzerindeki tüm düğümlerin de birer kere diyalet edilmesi gerekiyor.
+
+153
+00:36:09,235 --> 00:36:19,855
+Eğer bir Hamilton yolu başladığı yerde sonlanıyorsa, tüm notları geziyorsanız o zaman bu döngüyü tamamlamış oluyorsunuz.
+
+154
+00:36:19,855 --> 00:36:28,155
+Şimdi en düğümlü bir böyle bir graf için ben exhaustive search kullanarak bu işi nasıl yapabilirim onu bir düşünmenizi istiyorum.
+
+155
+00:36:30,596 --> 00:36:33,956
+Tamam. [öğrenci]'e de tekrar teşekkür ediyorum geri bildirim için.
+
+156
+00:36:35,764 --> 00:36:40,463
+Bakın bakalım ne yapmam gerekiyor ve karmaşıklık ne olacaktır?
+
+157
+00:36:45,460 --> 00:36:46,699
+Problem anlaşıldı değil mi?
+
+158
+00:36:56,211 --> 00:37:19,811
+En tane düğümüm var. Her bir düğüm için, eğer ekstremi soruşta çözeceksen bu işi, her bir düğüm için bu düğümü başlangıç olarak kabul ederek tüm turları içeren permutasyonları hesaplamam gerekiyor öncelikle. Dolayısıyla buradan bir enfaktör yerlik iş hüküm geldi.
+
+159
+00:37:20,436 --> 00:37:32,136
+Sonra da bu her bir hesapladığım PET için birbiriyle bitişik olan nodlar arasında bağlantı olup olmadığını kontrol etmeliyim.
+
+160
+00:37:32,136 --> 00:37:39,076
+Ve yine başlangıç nodu ile bitiş nodu arasında da bağlantı olup kapalı bir çevirime dönüp dönmediğini de kontrol etmeliyim aynı zamanda.
+
+161
+00:37:39,615 --> 00:37:44,136
+Dolayısıyla buradan da yine aynı sortta olduğu gibi en eksi birlik bir...
+
+162
+00:37:44,851 --> 00:38:11,171
+Bu kontrol geldi. Dolayısıyla aslında yine o en artı bir faktör yerle biten bir kompleksitim var. Yukarıdaki problemime benzer şekilde. Var mı sorun? Bunların daha konveks oldu öyle. Bunların daha optimum çözümlerini tabii göreceğiz. Şu an ben egzoastik storti ile bu iş yapıtsaydı ne olurdu? Üzerine gidiyorum.
+
+163
+00:38:11,603 --> 00:38:37,863
+Şimdi burada, Exvasive Search'te de aslında brute force için güzel bir örnek bu. Ne gördük? İmplemente etmesi kolay bir algoritmayı tasarlayabiliyorsunuz bu iş için. Eğer küçük notlarla uğraşıyorsanız, minik dizilerle uğraşıyorsanız çok kısa bir şekilde sizi sonuca götürür. O yüzden bunları yararını bir kenara atamayız. Yani bunları kullanmayı alın diyemeyiz. Burada önemli olan probleminize uygun bir çözüm bulmanız.
+
+164
+00:38:40,755 --> 00:38:42,376
+Tamam, bunu da geçiyorum.
+
+165
+00:38:42,376 --> 00:38:43,315
+O halde.
+
+166
+00:38:49,364 --> 00:39:09,543
+Şimdi Decrease and Concure. Decrease and Concure teknolojisi nedir? Burada yaptığımız şey, verilen bir problemin bir örneğine ait çözüm ile daha küçük bir alt örneğine ait çözüm arasındaki görüntü ilişkiyi ortaya koymak.
+
+167
+00:39:09,972 --> 00:39:18,852
+En azıcık bir problem var. Büyük ve küçük versiyonlarının çözümleri arasında bir ilişki gözünüze çarpıyor. Bu ilişkiden yola çıkarak genel bir çözüm üretmeye çalışıyorsunuz.
+
+168
+00:39:19,012 --> 00:39:27,892
+Teknik Üniversitesi Konkür Algoritmalarının yaptığı şey bu. Top Down ya da Bottom Up uygulanabiliyor. Top Down uygulanmaları Recursive olanlar ki bunlarla ilgileniyor olacağız.
+
+169
+00:39:28,788 --> 00:39:47,108
+Decrease by a Constant, Decrease by a Constant Factor ve Variable Size Decrease diye üç tane çeşidi var. Bu Divide and Conquer'dan farklı bir mekanizma. Yani Divide and Conquer'un bir altı değil bu aslında. Farklı bir mekanizma. Şimdi örneklerini verdikçe, nevden bahsettiğimi de rahat anlatacağım size.
+
+170
+00:39:54,867 --> 00:40:15,087
+By One, aslında Decrease and Conqueror'un bir azaltarak her seferinde gittiğiniz hale bir probleminiz var. Bunun her seferinde bir azaltıyorsunuz. En eksi biri olan alt problemine bir çözüm getiriyorsunuz. Ve sonra tamamı için çözümü genelleştiriyorsunuz.
+
+171
+00:40:22,387 --> 00:40:29,467
+Aslında a üzeri n problemi a üzeri n-1'in çözümü ve bunun a ile çarpımı ile çözülebilecek bir iş.
+
+172
+00:40:38,068 --> 00:40:53,628
+Şöyle bir relation yazabilirim. Fn eşittir, fn eksi bir çarpı a. If n büyüktür sıfır. If n eşittir sıfır, then one. İşte bu recursive hali. Decreased by one'a bir örnek.
+
+173
+00:41:03,251 --> 00:41:11,692
+Eğer bunu bottom up çözecekseniz, A çarpı A çarpı A ile çözmüş oluyorsunuz. Zaten standart brute force'a dönüyor.
+
+174
+00:41:11,692 --> 00:41:18,091
+Peki, Decrease by half ile çözülecek. Şunun için ne söyleyebiliriz karmaşıklığını?
+
+175
+00:41:18,091 --> 00:41:22,711
+En aslında burada. Yani recursive yapmanız size...
+
+176
+00:41:22,927 --> 00:41:28,387
+Bu örnek için Efficiency sağlamıyor. Yine en kere bu işi tekrarlamış oluyorsunuz.
+
+177
+00:41:28,728 --> 00:41:33,787
+Şimdi ikiye bölerseniz Decrease by Half and Concur mesela. Bu da diğer bir seçenek.
+
+178
+00:41:34,207 --> 00:41:42,268
+Burada belirli bir Constant Factor ile küçülttüğünüz için Decrease by Constant Factor grubuna giriyor bu.
+
+179
+00:41:42,835 --> 00:41:57,175
+Eğer ikiye bölüyorsanız örneğin, problemi iki parçaya ayıracaksınız. Burada her bir n olan parçalara ayrılmış n bölü ikilik kısmını çözüyorsunuz. Buna bir çözüm getiriyorsunuz ve genelleştiriyorsunuz.
+
+180
+00:41:57,175 --> 00:42:06,115
+Mesela bu örnekte a n aslında a üzeri n bölü ikinin ikinci kuvveti olacak.
+
+181
+00:42:06,612 --> 00:42:30,551
+Dolayısıyla şöyle bir relation yazabilirim. Eğer a üzeri n bölü 2 üzeri 2 olacak çözümüm. Eğer n çift bir sayıysa ve pozitifse. Yok eğer n tek bir sayıysa o zaman n-1 a üzeri n-1 bölü 2'nin üstü 2'yi alacağım. Bir de a'yı sonuna çarparak eklemem gerekecek. Yok eğer n sıfırsa çözümüm 1 olacak.
+
+182
+00:42:33,907 --> 00:42:35,907
+Akış üzerinden hareket etmem mümkün.
+
+183
+00:42:35,907 --> 00:42:37,771
+Peki burada
+
+184
+00:42:38,739 --> 00:42:53,039
+Parmaşıklık için de söyleyebilirim. Eğer her seferinde ikiye böldüğüm bir yapım varsa, bunun örneklerini geçen derste görmüştük hatırlarsanız, bu logaritmik bir şey oluyor. Dolayısıyla aslında bu örnek için Big Data Login'de ben bu işi çözebiliyorum.
+
+185
+00:42:53,039 --> 00:43:06,279
+Şimdi bunun Divide and Concure algoritmalarından bir farkı var. Divide and Concure'da da bizim şimdiye kadar gördüğümüz örneklerinde ikiye bölerek çalışmıştık ama bunda aslında siz veriyi bölmüyorsunuz.
+
+186
+00:43:06,739 --> 00:43:12,379
+parçayla bütün arasındaki ilişkiyi kullanıyorsunuz. O yüzden ikisini birbirine karıştırmamak lazım.
+
+187
+00:43:12,379 --> 00:43:29,519
+Şimdi diğer bir örnek, Variable Size Decrease. Yani burada yaptığımız şey, az öncekilerden farklı olarak her bir bölüm için azaltma miktarımız sabit değil.
+
+188
+00:43:29,967 --> 00:43:46,607
+İterasyonel iterasyonu bu azaltma miktarı değişebiliyor. Bunun güzel bir örneği Öklüdağ çözümü büyük ortak böleni bulabilmek için. Eğer ben U ile V arasındaki en büyük ortak böleni bulmak istiyorsam.
+
+189
+00:43:46,960 --> 00:43:59,480
+Bunun ispatına isterseniz bakarsınız. Bu şekilde yazarak, aslında bu eşittir. V ile U mod V'nin en büyük ortak böleni diyebiliriz.
+
+190
+00:43:59,800 --> 00:44:05,680
+Ve her seferinde burada görünen bu ilişkiden yararlanarak küçülte küçülte problemimizin sonucu ulaşabiliriz.
+
+191
+00:44:06,547 --> 00:44:16,467
+Örneğin eğer 180 ile 146 arasında ki en büyük ortak belirini bulmak istiyorsam o zaman ne yapıyorum? İkinci parametre 146.
+
+192
+00:44:17,364 --> 00:44:45,143
+U mod ve yüz seksen mod, yüz kırk altı, otuz dört. Yani aslında yüz seksen ile yüz kırk altının en büyük ortak bölünün yüz kırk altı ile otuz dördünkinin en büyük ortak bölününe denk geliyor. Bir sonraki iterasyonda otuz dört ile onun ki on yüz kırk altı ile otuz dört arasındaki mod ilişkisinden dolayı ortak bölünün. Bir sonraki iterasyonda onunla dördün ortak bölünün. Dolayısıyla her iterasyonda aslında value'ya ait
+
+193
+00:44:45,364 --> 00:44:52,403
+Azaltım miktarım sabit değil. O yüzden bu güzel bir örnek. Burada da PISODO kodunu görüyorsunuz.
+
+194
+00:44:57,172 --> 00:45:04,051
+Şimdi bir sonraki konum, Decrease by a Constant Factor ile alakalı Binary Search algoritması.
+
+195
+00:45:05,172 --> 00:45:10,751
+Ama bu biraz bölünmeden anlatmak istiyorum. İsterseniz bir 10-15 dakika ara verelim, sonrasında devam edelim.
+
+196
+00:45:11,271 --> 00:45:13,072
+Sorunuz varsa alayım öncesinde.
+
+197
+00:45:15,539 --> 00:45:18,860
+Tamam, o zaman görüşmek üzere arkadaşlar. Var mı soru?
+
+198
+00:45:19,360 --> 00:45:19,679
+Evet.
+
+199
+00:45:20,219 --> 00:45:20,599
+Buyurun.
+
+200
+00:45:21,420 --> 00:45:27,219
+Dikmiş by constant factor şeyden farklı demiştiniz, divide and conquer'den.
+
+201
+00:45:27,539 --> 00:45:27,799
+Evet.
+
+202
+00:45:28,539 --> 00:45:32,559
+Onun farkını tam olarak anlamadım, siz verdiniz örnek.
+
+203
+00:45:32,559 --> 00:45:38,400
+Tamam, şimdi divide and conquer'un birkaç saat sonra anlatacağım. Orada belki daha iyi anlamak mümkün olabilir.
+
+204
+00:45:43,284 --> 00:45:47,604
+Ayrı bir işlem uyguluyorsunuz ve o işlemlerin sonuçlarını ölç ederek
+
+205
+00:45:47,956 --> 00:46:15,056
+Total sonucu ulaşıyorsunuz. Ama Decrease by Constant Factor'da, örneğin şu örnek için. Aslında burada parça bütün arasındaki ilişkiyi kullandınız. Yani şöyle yaptınız. Dediniz ki 2 üzeri 8'i bulmak için 2 üzeri 4 üzerinden gidebilirim. 2 üzeri 9'u bulmak için 2 üzeri 4'ü 2 üzeri 4 ile çarparım ve buna bir kere daha 2'yi çarparım. Yani parçalara bölüp her biri için bir kod çalıştırıp sonuçları ölç etmediniz de.
+
+206
+00:46:15,731 --> 00:46:25,751
+İlişkinin görünürlüğünden yararlandınız. Aslında Divayet & Concure ile alakalı örnekleri gördüğünüz vakit anlayacaksınız bundan tam olarak farkının ne olduğunu.
+
+207
+00:46:27,452 --> 00:46:27,711
+Tamam.
+
+208
+00:46:28,152 --> 00:46:32,791
+Yani diziyi bölmediniz. Divayet & Concure'de örneğin genelde bir dizi varsa o dizi bölünür.
+
+209
+00:46:33,331 --> 00:46:55,431
+Bir matriz varsa, matriz multiplication yapıyorsanız onu dörde bölersiniz. Her bir sap parçası için problemi çalıştırırsınız. Burada bir bölme yapmadınız. Burada matematiksel bir ilişkiyi kullanıp algoritmanızı ona göre formülüze ettiniz. Anlatabildim mi? Anladım. O zaman aradan sonra görüşmek üzere. Ben de bir soru soracağım ama. Tabii buyurun.
+
+210
+00:46:56,052 --> 00:47:16,451
+Hamilton Circuit'te en faktöyellik bir karmaşıklıktan bahsettik ama orada en faktöyellik bir dizilim söz konusu oluyor mu? Çünkü her bir not her bir nota bağlı değil aslında. En faktöyellik bir dizilim mümkün değil ki burada.
+
+211
+00:47:16,451 --> 00:47:23,572
+Şöyle, zaten Excercer Search'un amacı, amacı demeyeyim de çalışma prensibi brute force olduğu için.
+
+212
+00:47:24,115 --> 00:47:48,396
+En böyle basit uygulanabilir haliyle ben bu işi nasıl yaparımın listesini dökmek. Şimdi siz bu algoritmanızı tasarlarken sadece birbiriyle bağlantılı olanlar üzerinden seçeneklerim ne olabilir gibi kodlarsanız o zaman tabii ki en faktör yerden daha az opsiyon karşınıza çıkacak. Ama bunu kodlamak için ne yapmanız gerekecek? Ekstra kontroller yapmanız gerekecek. Doğru mu?
+
+213
+00:47:52,115 --> 00:48:17,916
+Bu 6 tane node için 6'ya kadar olan sayıların permutasyonlarını bilgisayar gücünden yararlanarak çat çat çat döküp sonra bunların connection'larını kontrol edebilirim. Ama siz öyle yapmak yerine her seferinde bağlı olma seçeneklerine bakarak permutasyon işletirsiniz. Biraz daha kontrollü bir yere çekersiniz. Seçenekleriniz azalır. Ama neticede benim algoritmam da sonucu ulaşıyor. Sizin algoritmanız da sonucu ulaşıyor.
+
+214
+00:48:20,115 --> 00:48:43,876
+Dediğim gibi biraz daha böyle fazla opsiyonu değerlendireyim bilgisayar gücülü. İmplementasyon beni uğraştırmasın. Yaklaşımını tercih ettiğiniz durum için ben en faktör yer söyledim. Tabii ki birbiriyle bağlı olmayanları. Ama burada zaten birbiriyle bağlantısı bakayım hepsinin var mı? Yok. Evet. Birbiriyle bağlantılı olmayanlar var. Ama ben burada size çözüm yolunu anlatmak için en faktör yer dedim. Anlatabildim mi?
+
+215
+00:48:44,756 --> 00:48:45,496
+Ben anladım hocam.
+
+216
+00:48:45,796 --> 00:48:47,636
+Tamam. Var mı soru?
+
+217
+00:48:50,003 --> 00:48:52,104
+Geri dönüşe 11 beslek olur mu hocam?
+
+218
+00:48:52,744 --> 00:48:57,423
+Geri dönüş için saat verelim. 11'i 5 geçe yapalım. Olur mu?
+
+219
+00:49:00,423 --> 00:49:01,923
+Tamam. Hadi görüşmek üzere.
+
+220
+01:01:35,155 --> 01:01:42,835
+Merhaba arkadaşlar, tekrar Binary Search ile devam edelim. Binary Search, tipik bir Decrease by Constant Factor uygulaması.
+
+221
+01:01:43,855 --> 01:01:50,255
+İkiye bölerek search yapıyoruz. Bir hatırlayalım nasıl çalışıyordu. Sonra karmaşıklık analizi üzerine gideceğiz.
+
+222
+01:01:52,055 --> 01:01:58,955
+Şimdi elimizde kralı bir dizimiz var, A dizisi. Bunun içerisinde bir K'yi arıyoruz.
+
+223
+01:02:02,452 --> 01:02:16,072
+İndeksini k'nin bulamazsak da yine eksi bir dönecek bir akış çizeceğiz. Şurada bir örneğimiz var. A'nın 0 ve n-1 rinci indisleri arasında değişen elemanları gösterilmiş.
+
+224
+01:02:20,239 --> 01:02:42,739
+Her seferinde ikiye bölüp, ilgili noktada sağa yala sola kayarak aramaya devam ettirmek. Önce ikiye bölüp ortadaki indisle aradığım ki'yi karşılaştırıyorum. Eğer aradığım ki'yi büyükse, o zaman diyorum ki benim aradığım eleman bu dizinin sağ tarafında konuşulanmıştır. Sağ tarafta aramayı yapıyorum.
+
+225
+01:02:43,155 --> 01:03:03,315
+Şimdi Pistodokodu inceleyelim. Başlangıçta benim arama yapacağım dizi segmentinin başlangıç ve bitiş noktalarını temsil edecek indekslerine iki değişken ihtiyacım var. Bunları L ve R diye isimlendirdim. Şu an tüm diziyi gösteriyorlar. Dolayısıyla sıfır ve en eksi bir olacak bunların değerleri.
+
+226
+01:03:04,115 --> 01:03:21,436
+Yapacağım şey, bu iki baş ve son arasında eleman kaldığı sürece ben bu işi devam ettireceğim. Dolayısıyla bir while içerisine böyle bir şart yazıyorum. Ve baş ve son arasındaki noktayı belirlemem gerekiyor. M'yi belirliyorum, toplayıp ikiye bölerek.
+
+227
+01:03:27,027 --> 01:03:40,688
+Bu M. indisi de olup olmadığına bakıyorum. Eğer öyleyse ne hala? Buldum demektir. Fonksiyonumdan çıkacağım. M'yi döndürerek. Eğer bulamadıysam şunu kontrol ediyorum. Diyorum ki aradığım K elemanı.
+
+228
+01:03:41,012 --> 01:03:51,392
+Şu an bulunduğum AM'den küçük mü büyük mü? Eğer küçükse o zaman bu demektir ki ben sol tarafta, sol yarıda aramama devam ettirmek zorundayım.
+
+229
+01:03:51,392 --> 01:03:58,512
+Sol yarıda aramaya devam ettireceksem buradaki parçanın rengi L ve R tarafından belirlenmeli.
+
+230
+01:03:58,972 --> 01:04:05,152
+L sıfır olarak kalacak ama R'yi M'in bir altı seçecek şekilde güncellemem gerekiyor.
+
+231
+01:04:05,592 --> 01:04:08,932
+Yok eğer aramaya sağ taraftan devam edeceksem yani K büyük.
+
+232
+01:04:09,012 --> 01:04:14,392
+O zaman da R sabit kalacak, sonu gösterecek ama L'yi güncelleyeceğim.
+
+233
+01:04:14,892 --> 01:04:22,812
+Şimdi bunu bulana kadar ya da arama yapacağım range oluşmayana, artık eleman kalmayana kadar kontrol ettiriyorum.
+
+234
+01:04:23,412 --> 01:04:26,512
+Şimdi böyle bir algoritma için karmaşıklığım ne olur?
+
+235
+01:04:27,772 --> 01:04:30,292
+Algoritmayı zaten biliyorsunuz, kısaca hatırlamış olduk.
+
+236
+01:04:30,752 --> 01:04:33,292
+İyi durum senaryosu ilk atışta bulurum.
+
+237
+01:04:33,907 --> 01:04:51,607
+Kötü durum senaryosu bulamam. Böyle böyle gitmem gerekir. Böyle böyle ikiye böyle böyle gittiğimiz vakit biliyorsunuz Logo Etme 2 tabanında n'e denk geliyordu. Bunu niye aşağıya yuvarladım ve bir ekledim? Küçük bir sayı üzerinde eğer analizini yaparsanız göreceksiniz.
+
+238
+01:04:58,739 --> 01:05:13,420
+Aşağı yuvarlanıp, artı bir şeklinde ifade edilebilir. Dolayısıyla burada karmaşıklığı ben log n olarak söylüyorum. Yani binary search'un karmaşıklığı log n diyorum. Şimdi diyelim ki
+
+239
+01:05:16,916 --> 01:05:19,916
+Şöyle bir elimde...
+
+240
+01:05:23,027 --> 01:05:39,287
+Dizim var. Bu dizideki herhangi bir elemanı yakalayabilmek için yapabileceğim en fazla komparizm sayısı ne olabilir? Buna dair bir yorumunuz var mıdır?
+
+241
+01:05:42,900 --> 01:05:43,900
+O nasıl?
+
+242
+01:05:47,188 --> 01:06:11,268
+Tabii ki şöyle buluruz. Formülümüz belli. Logaritma 2n, çünkü en kötü durum senaryosunu soruyorum. Artı 1'de. Benim 13 tane elemanım var. n yerine 13 koyuyorum. Dolayısıyla bu beni 3 artı 1'den 4'e götürüyor. Şimdi kötü durum senaryosu rakamsal olarak eğer 13 için ilgileniyorsam bu.
+
+243
+01:06:17,300 --> 01:06:28,840
+Peki, şimdi ben bu dizi içerisinde hangi elemanları ararsam en fazla komperizm yapmak zorunda kalırım diye size sorsam o zaman bunu nasıl çözer?
+
+244
+01:06:29,400 --> 01:06:36,840
+Diyeceğim ki bana söyleyin şu şu şu elemanları ararsanız komperizmini en fazla yapmak zorunda kalacaksınız.
+
+245
+01:06:38,180 --> 01:06:43,080
+Bunu büyük bir dizi için tabii düşünün gözle bakmak yerine. Bulmanın kolay yolu nedir?
+
+246
+01:06:44,820 --> 01:06:45,820
+Var mı?
+
+247
+01:06:47,820 --> 01:06:51,820
+Max ve min değerleri mi en çok uğraştıracak?
+
+248
+01:06:51,820 --> 01:07:00,820
+Şöyle, en çok uğraştıracak olanlar aslında yerlerine bağlı olarak birazcık değişiyor.
+
+249
+01:07:00,820 --> 01:07:09,820
+En fazla uğraştıracak olan elemanlar birden fazla aslında. Max ve min dışında aynı şekilde aynı comparison sayısıyla sizi uğraştıracak elemanlar var.
+
+250
+01:07:10,195 --> 01:07:29,135
+Bu noktada Max ve Min değil. Burada önemli olan yerleşimleri bunu tespit etmenin kolay bir yolu da bunu bir triye dökmek. Aslına bakarsanız. Binary search triye dökmek. Binary search triye bunu nasıl yerleştiriyoruz? Biraz daha detaylı ileriki zamanlarda görüyoruz ama temel olarak şöyle yapıyoruz aslında.
+
+251
+01:07:30,228 --> 01:07:42,327
+Elimde bir dizi varken ortadaki elemanı ruta yerleştirerek, yani tam olarak yerleşim yerinde nasıl ortadan aramaya başlıyorum, aradığım ortadaki elemanı ruta yerleştirerek başlıyorum.
+
+252
+01:07:42,739 --> 01:07:52,199
+Her seferinde yine örneğin 55 için 55'den büyük olan elemanlar yani dizinin sağ tarafının ortadaki elemanı 55'in sağına yuruta yerleştiriyorum.
+
+253
+01:07:52,199 --> 01:07:58,399
+Dizinin sol tarafındaki ortadaki elemanı bizim örneğimizde 20'yi de sola yerleştiriyorum.
+
+254
+01:07:59,079 --> 01:08:01,059
+Sonra tekrar dallanmaya devam ediyorum.
+
+255
+01:08:01,699 --> 01:08:10,199
+81 sonrasında dizinin en sağında kalan kısımlar için ortadaki eleman 93 olacak şekilde. Keşke buraya şeyi koysaydım.
+
+256
+01:08:10,483 --> 01:08:22,103
+Listeyi koysaydım. Olmadı size listeyi koyayım. Bir dakika. Şuradan. Nerede liste? Şuradan yanına. Yan yana görün.
+
+257
+01:08:28,979 --> 01:08:30,459
+Şöyle koyarsam.
+
+258
+01:08:35,123 --> 01:08:36,123
+Ben dışarı mı koydum?
+
+259
+01:08:36,123 --> 01:08:42,123
+Şimdi yerleşim bu şekilde.
+
+260
+01:08:42,612 --> 01:09:08,891
+55'i ruta koydum. Sağ taraftakiler için ortada yine 81 var, 81 ruta. Sağ taraf için ortada 93 var, 93 ruta. Son içinde aynı şeyler geçerli. Dallanarak bunu oluşturdum. Şimdi bunun farklı data yapılarında farklı şekilde tutmak mümkün. Basit bir şekilde bizi de tutuyorsanız örneğin, boş kalan sıfır olan bir sürü elemanınız olacak.
+
+261
+01:09:10,095 --> 01:09:26,195
+Link Liste Çekli'ni tutabilirsiniz vs. Şimdi bu triye bunu döktüğünüz vakit ne görüyorsunuz? En alttaki yani yapraklara yerleşmiş olan nodlar sizin en fazla komperizmine ihtiyacı duyduğunuz nodlar. Çünkü aramaya bu yolu takip ederek
+
+262
+01:09:26,576 --> 01:09:52,456
+Gidiyorsunuz. Örneğin 98'i bulacaksanız 55'den 81'i oradan 93'i oradan 98'i. 74'ü bulacaksanız 55'den 81'i oradan 70'i oradan 74'e zıplamanız gerekiyor. Yani daha doğrusu bu yolu takip etmeniz gerekiyor. Dolayısıyla yaprakları oluşturan kısım sayılar aslında sizin en fazla komple hızın yapmanızı gerektirecek sayılar ve bunlara ulaşma kompleksiyetiniz de aynı.
+
+263
+01:09:52,927 --> 01:09:56,948
+14, 31, 42, 74, 85 ve 98 için.
+
+264
+01:10:01,779 --> 01:10:02,779
+Şimdi
+
+265
+01:10:07,667 --> 01:10:26,967
+Diyelim ki sizin bu elemanlara ulaşma ihtimaliniz aynı. Hani bir average senaryoda, average case efficiency hesaplamıştık ilk dersimizde. Probabilitelerini de göz önünde bulundurarak çünkü dağılım önemliydi.
+
+266
+01:10:28,627 --> 01:10:32,547
+Bunu göz önünde bulundurarak şöyle bir şey yapabilir miyiz?
+
+267
+01:10:37,268 --> 01:10:48,148
+Ortalama olarak, başarılı bir search varsa eninde sonunda elemanı bulacaksanız, ortalama olarak kaç tane key comparison yaparsınızı bulabilir miyiz?
+
+268
+01:10:48,507 --> 01:10:51,968
+Bulabiliriz de, bulur musunuz? diye soruyu güncelleyeyim.
+
+269
+01:10:52,847 --> 01:10:58,968
+Böyle bir search dream var. Seviyesi belli. Başarılı bir search yapacağımı biliyorum.
+
+270
+01:10:59,828 --> 01:11:05,208
+Ortalama olarak bir aradığım bir sayıyı bulabilmek için kaç key comparison yaparım.
+
+271
+01:11:09,652 --> 01:11:10,412
+Nasıl bulursunuz?
+
+272
+01:11:11,272 --> 01:11:12,532
+Logan olabilir mi?
+
+273
+01:11:12,952 --> 01:11:13,391
+Nasıl?
+
+274
+01:11:14,432 --> 01:11:14,891
+Logan.
+
+275
+01:11:15,512 --> 01:11:16,832
+Logan olabilir mi?
+
+276
+01:11:17,452 --> 01:11:25,211
+Yani şöyle, login olabilir tabii ama aslında ben ona sonra geçecektim de sayı olarak sormak istemiştim.
+
+277
+01:11:25,891 --> 01:11:28,652
+Nasıl buluruz? Bakın şöyle buluruz. Sonra o kısımda...
+
+278
+01:11:33,043 --> 01:11:59,304
+O kısımda tekrar üzerinden geçeriz. Şöyle yapıyoruz bakın. Her bir seviye için o seviyede kaç tane nodu var ve her bir nodu bulabilmek için kaç komperizm yapıyorum? Bunu hesaplıyorum. Birinci seviyede bir tane nodum var. Beş. Bir komperizm da buluyorum. İkinci seviyede iki tane nodum var. Ve bu iki nodu bulabilmek için iki komperizm yapmam gerekiyor.
+
+279
+01:12:01,395 --> 01:12:17,515
+Dört tane nodum var. Üç komperizm yapmam gerekiyor. Burada şu an 6 tane nodum var ama tabii bu full dolu bir tri olsaydı o zaman o sekize çıkacaktı. Şu an 6 tane nodum var ve 4 komperizm da buluyorum.
+
+280
+01:12:18,003 --> 01:12:26,443
+Bunların sayısını toplam noda böldüğüm vakit ortalama olarak bir nod için kaç komparizm elde ederim? Görüyorum. 3.15.
+
+281
+01:12:27,144 --> 01:12:35,884
+Şimdi bunu formalizasyona dökmek isterseniz. Arkadaşınızın söylediği logen aslında doğru. Peki bunu tam olarak nasıl hesaplarız? Ona bakalım.
+
+282
+01:12:36,884 --> 01:12:40,003
+Hocam hesaplamaya geçmeden önce...
+
+283
+01:12:40,083 --> 01:12:55,064
+Aradığım sayıyı bulabilmek için 4 node varken 3 comparison. Anlıyorum, tamam. Aslında orada da var soru da 6 tane node varken 4 comparison'ı aradığım sayıyı nasıl bulabileceğini anlamıyorum.
+
+284
+01:12:56,703 --> 01:13:03,083
+Yani minimum 5 yapmam lazım zaten. 5 tane yaparım, 5. de değilse 6.dır derim.
+
+285
+01:13:03,324 --> 01:13:04,443
+5 tane yaparım.
+
+286
+01:13:04,443 --> 01:13:06,724
+Bakalım bir soru çekacağını garanti ediyorum diyorsunuz.
+
+287
+01:13:07,667 --> 01:13:14,447
+Şöyle, şimdi şurada karmaşıklığını hatırlıyor musunuz? Nasıl bulmuştuk? Şuradaki Pisto de koddan yola çıktığım vakit.
+
+288
+01:13:14,931 --> 01:13:22,931
+Eğer eleman sayı nense, şuradaki aşağıya doğru yuvarlayarak Logi GNA-T1 demiştik ya, burayı hatırlıyorsunuz değil mi? Bu aslında...
+
+289
+01:13:23,531 --> 01:13:34,951
+Evet, evet. Aradığım bir sayıyı hangi karmaşıklıkta bulabileceğimi anlıyorum. Ama burada üstte hesabı yaparken işte en tepede bir eleman var birinci seviyede.
+
+290
+01:13:35,291 --> 01:13:36,611
+Bir konferenasında buldun onu.
+
+291
+01:13:36,611 --> 01:13:42,931
+Evet. İkinci seviyede tamam ama üçüncü seviyede daha sonrasını anlamıyorum. Yani dört eleman...
+
+292
+01:13:42,931 --> 01:14:00,652
+3 comparison yaparsam kesinlikle. Neden 3 comparison yapıyorum? 55'e gittim. 81'e gittim, 70'e gittim, 3 oldu. 55'i comparison, 81, 73. Tamam tamam. Ben seviyedeki bütün elemanlarla bir kıyaslatacaksınız diye düşünüyorum. Bir tane peti takip ediyorum ya. Anlaşıldı tamamdır.
+
+293
+01:14:01,811 --> 01:14:16,691
+Mesela 85 için 55, 1, 81, 2, 93, 3, 85, 4. 98'in 85'in şeyi aynı zaten, komplezın sayısı. Şimdi bakın burada formül şuna dönüyor. Neye dönüyor aslında?
+
+294
+01:14:18,131 --> 01:14:27,631
+Ağaç seviyesi, her ağaç seviyesi için şu da hesaplamanız gerekiyor. O notta kaç tane eleman var ve o nodu için kaç komperizm yapıyorum?
+
+295
+01:14:28,531 --> 01:14:41,311
+Bulunan eleman sayısı şu iki üzeri i-1 ile ifade edilebilir. Kaç komperizm yapıyorum? Kaçıncı seviyedeyim? O da aslında kaç komperizm yapıyorum'a denk geliyor. O da i ile gösterilebilir.
+
+296
+01:14:46,131 --> 01:15:06,131
+Şuradaki şu çıkarımımı genelleştirmem mümkün. Değil mi? Mesela i1 için 1 çarpı 2 üzeri 0'dan 1 olacak. Şunu elde ediyorum. İkinci seviyede 2 üzeri 1, 2 çarpı 2 olacak. Bunu ifade ediyor bu bana. Peki ama şurada...
+
+297
+01:15:06,547 --> 01:15:27,487
+Bütün ağacın dolu olduğunu düşündüğünüz zaman bu iş çalışıyor. En eşitlik 2 üzeri k olduğu zaman için çalışıyor. Şu an çünkü yerleştirmeden önce hangi notların boş olacağını bilemem. Bu dengeli bir ağaç olmaya da bilirdi. Sıralı bir ağaç olsaydı örneğin ne olurdu? Yani verilen sayılar sıralı verilseydi aşağı doğru gidecek bir şey olurdu. Dengeli bir ağaç olduğunu düşünerek.
+
+298
+01:15:27,823 --> 01:15:46,003
+Hareket edersem, o zaman bu beni logaritma iki üzerlerine götürüyor. Genel formülünü çıkartmış olduk. Aslında formül çıkartmak için bir genel bakış elde etmek gerekiyor ya fonksiyonlara. Biraz böyle rakam koyup formül üzerinde görmek. Genel bakış çıkartmanıza, genel bir bakış elde etmenize yarıyordu. Onu yapmış olduk burada.
+
+299
+01:15:48,384 --> 01:15:54,644
+Şimdi, yoksa soru Divay'dan Konkür Algoritmalarına geçelim. Var mı soru?
+
+300
+01:15:57,011 --> 01:16:02,072
+Yok, peki. Şimdi, Dikriz'den Konkür yaptık.
+
+301
+01:16:02,868 --> 01:16:25,847
+Neydi? Aslında problemin bütünüyle alt problem arasındaki matematiksel ilişkiyi kullanmıştık. Her bir parça için ayrı bir kod parçası çalıştırıp bunları merge etmenimizin gerektiği, her seferinde recursive çalışmasının gerektiği bir durum söz konusu değil orada. Divide and Conquer o açıdan ayrılıyor. Burada problemleri al problemleri ayırıyorsunuz. Aynı tipte.
+
+302
+01:16:26,271 --> 01:16:30,752
+Ve yapabiliyorsanız eşit miktarda. Ama her zaman mümkün olmayabilir.
+
+303
+01:16:31,432 --> 01:16:35,072
+Sonra bunları genellikle recursive olarak çözüyorsunuz.
+
+304
+01:16:37,551 --> 01:16:41,012
+Sonunda da bunları birleştirmeniz gerekiyor.
+
+305
+01:16:41,092 --> 01:16:45,512
+Orijinal probleme ait çözümü elde edebilmek için.
+
+306
+01:16:46,512 --> 01:16:47,792
+Genel yapısı şöyle.
+
+307
+01:16:48,792 --> 01:16:52,932
+Sabaca ifade edersek problemi parçalara böldünüz.
+
+308
+01:16:53,524 --> 01:17:03,543
+Birinci problem için çözüm ürettiniz, ikinci problem için çözüm ürettiniz ve sonuç için bunları merge ettiniz. Size probleminizin genel çözümünü vermiş oldum.
+
+309
+01:17:16,756 --> 01:17:37,216
+Şimdi örneğin eğer ben en eksi 1'e kadar olan sayıları toplamak istiyorsam, ikiye bölüp yarısını toplama işlemini bir fonksiyonda, diğer yarısını toplama işlemini yine aynı şekilde identikli bir fonksiyonda yapıp, bunları ölç ederek bu işi çözebilir miyim? Çözebilirim.
+
+310
+01:17:37,756 --> 01:17:42,216
+Basitinden. Peki bu benim için efisiyent bir iş midir? Efficient bir iş değildir.
+
+311
+01:17:42,655 --> 01:17:55,475
+Divaret and Concure Algoritmaları her zaman Efficient olmuyor ama bunu paralel olarak bu işlemleri sürdürmek istiyorsanız, tabii bu toplama işlemi için konuşmuyorum, o zaman Efficient bir işe doğru gitmiş oluyorsunuz.
+
+312
+01:18:03,796 --> 01:18:11,396
+Divide and Concure algoritmalarının parmaşıklıklarını hesaplamak standart recursive algoritmaları kadar kolay olmuyor bazen.
+
+313
+01:18:11,536 --> 01:18:18,376
+Geçen hafta geriye dönük Backward Substitution ile bunları nasıl hesaplarız recursive algoritmalarının parmaşıklıklarına bakmıştık.
+
+314
+01:18:19,416 --> 01:18:25,775
+Divide and Concure algoritmaları yapıları gereği biraz daha tricky olabiliyor.
+
+315
+01:18:25,916 --> 01:18:29,056
+Dolayısıyla master teoremi burada kullanmak bize fayda sağlıyor.
+
+316
+01:18:31,507 --> 01:18:45,567
+Genel olarak söylediği şey şu aslında. Sizin böldüğünüz parçalarınızı bölmek için ya da ölç etmek için kullandığınız bir fonksiyonunuz varsa bu fonksiyon aslında sizin genel karmaşıklığınızda büyük oranda etki edecektir.
+
+317
+01:18:53,747 --> 01:19:06,967
+En bölü B'lik problemleri ayırıyorsanız, her birinin sayısı en bölü B olan problemleri ayırıyorsanız ve bu problemlerden A tanesini çözecekseniz, her zaman tüm problemleri çözmek zorunda da değilsiniz.
+
+318
+01:19:06,967 --> 01:19:17,487
+Bazen elemeniz gerekebilir, bazı sap problemleri. Bir tanesinin üzerinden gitmeniz gerekebilir. Eğer bunların A tanesini çözecekseniz o zaman karmaşıklığınız şu şekilde.
+
+319
+01:19:19,380 --> 01:19:32,960
+Recurrence of the running time tiyeni bu şekilde ifade edebiliriz. Şimdi bununla alakalı şöyle bir formülümüz var. Bu bizim için önemli. Pek çok yerleşimimizi kolaylaştıracak.
+
+320
+01:19:34,539 --> 01:19:46,360
+T'nin order of growth'u A'ya, B'ye ve bunları merge etmek ya da ayırmak için kullandığınız Fm fonksiyonuna bağlıdır.
+
+321
+01:19:46,963 --> 01:20:09,583
+Dolayısıyla şöyle bir ilişki var aralarında çıkarılmış olan. Big O notasyonda tuttuğu gibi Omega ve Big O'da da bu tutuyor. Şöyle diyebilirsiniz. Eğer şunu tabii analiz etmeniz gerekiyor. Efe'nin karmaşıklığını bulmanız gerekiyor. Efe'nin karmaşıklığı örneğin en üzeri D ise D'nin tabii sıfırdan büyüke de eşit olduğu durum için.
+
+322
+01:20:10,452 --> 01:20:30,592
+A ve B'nin ve D'nin ilişkisine bakarak T'nin karmaşıklığının eğer A B üzeri D'den küçükse en üzeri D olduğunu, A B üzeri D'ye eşitse en üzeri D log N olduğunu, A eğer B üzeri D'den büyükse en üzeri B tabanında A olduğunu söylüyoruz diyoruz.
+
+323
+01:20:30,652 --> 01:20:33,712
+Masra teorem bize bunu söylüyor. Çok da kullanışlı bir teorem.
+
+324
+01:20:35,347 --> 01:20:38,368
+Şimdi bunu nasıl uyguluyoruz? Birkaç örnek de görelim.
+
+325
+01:20:43,283 --> 01:20:53,183
+Şimdi en tane elemanın toplanmasıyla alakalı örnek vermiştim. Bakalım bunu master teoremle karmaşıklığı için ne söyleyebiliriz?
+
+326
+01:20:54,983 --> 01:21:03,503
+Şimdi tl eşittir. Şu benim relation'ım. a çarpı tl bölü b artı fm.
+
+327
+01:21:04,692 --> 01:21:22,811
+Efe'nin karmaşıklığında, Big Ted'e de en üzeri D olacaktı. Burada A'yı, B'yi ve f(n)'in karmaşıklığını çözmem gerekiyor. Bu problem için benim Recurrence Relation'ım şöyle. İki parçaya bölüyorum.
+
+328
+01:21:32,467 --> 01:21:42,087
+Her bir parça işin işlem yapmak zorundayım. Ama burada borç etmek için ya da ayırmak için yapacağım işlemin karmaşıklığı F'er.
+
+329
+01:21:43,368 --> 01:21:51,307
+Dolayısıyla diyorum ki A2, B2 çünkü iki parçaya bölüyorum ve ikisiyle de işlem yapıyorum. O yüzden A da 2.
+
+330
+01:21:52,752 --> 01:22:06,532
+Bir sıfır çünkü constant time'da işlem yapıyorum. Dolayısıyla şuradaki, bakayım o formülü buraya koymamışım. Şuradaki formülden yola çıkarak diyorum ki,
+
+331
+01:22:17,555 --> 01:22:28,435
+Teta n'e yani en üzeri log 2 tabanında 2 o da eşitti. Teta n'e denk geliyor. Yani n'e bağlı bir şekilde ben bu işi doğrudan çözebiliyorum diyorum. Master teoremi kullanarak.
+
+332
+01:22:30,435 --> 01:22:41,796
+Şimdi bir başka örnekle bunu biraz daha nasıl çözeriz bakalım. Biraz daha kompleks bir örnekle. Mesela Merge Sort'la.
+
+333
+01:22:41,796 --> 01:22:44,995
+Şimdi Merge Sort nasıl çalışıyordu onu bir hatırlayalım önce.
+
+334
+01:22:47,347 --> 01:22:49,347
+Merge Sort şöyle çalışıyor.
+
+335
+01:22:52,347 --> 01:22:53,347
+Pardon.
+
+336
+01:22:55,347 --> 01:22:57,347
+Pardon, özür dilerim. Şuradayım.
+
+337
+01:22:59,347 --> 01:23:02,315
+Şimdi Merge Sort, şunun yaptığı şey aslında...
+
+338
+01:23:06,163 --> 01:23:06,923
+Benim elimde
+
+339
+01:23:11,188 --> 01:23:19,388
+İki tane sıralı eleman var. Çok üzüldüm, bir dakikanızı alabilir miyim?
+
+340
+01:23:23,636 --> 01:23:23,956
+Pardon.
+
+341
+01:23:26,956 --> 01:23:28,756
+Slipede bir sıkıntı olmuş gibi.
+
+342
+01:24:06,355 --> 01:24:10,115
+Pardon arkadaşlar, kusura bakmayın. Şimdi tekrar paylaşıyorum ekranı.
+
+343
+01:24:10,115 --> 01:24:14,275
+Neye paylaşıyorum?
+
+344
+01:24:21,460 --> 01:24:22,460
+Oturma.
+
+345
+01:24:26,963 --> 01:24:28,963
+geldi değil mi arkadaşlar?
+
+346
+01:24:32,963 --> 01:24:39,963
+geldi tamam. Şimdi elimde benim bir dizim var. Merge Sort'da yaptığım şey, öncelikle bunu parçalara ayırmak.
+
+347
+01:24:40,963 --> 01:24:51,724
+Diziyi, dizinin ilk yarısını bir B dizisine, ikinci yarısını ikinci bir diziye atıyorum. Ve bunu sürekli tekrarlıyorum.
+
+348
+01:24:52,595 --> 01:25:02,135
+Tekrar Recursive olarak kendisini çağırarak bir yarısını bir ciddiye, diğer yarısını ikinci ciddiye. Bunu eleman sayısı birden büyük olduğu sürece yapıyorum.
+
+349
+01:25:03,315 --> 01:25:06,775
+Sonrasında Merge işlemiyle Sortumu tamamlamış olacağım.
+
+350
+01:25:06,775 --> 01:25:10,775
+Şimdi bakalım. Kodu üzerinden gidelim.
+
+351
+01:25:14,612 --> 01:25:40,032
+Merge Sort'taki Sort kısmı aslında bölmeyi içeren bir işlem. Burada Merge birazcık daha işin rengini belirliyor. Merge'in Pisa dokuodu üzerinden gidelim. Benim elimde iki tane dizi var. Bir tanesi B, bir tanesi de C dizisi. Bunların ikisi de sıralı. Bu takdirde ben A'yı bunları birleştirerek elde edeceğim.
+
+352
+01:25:41,011 --> 01:25:44,311
+Üç tane indisi üzerinden gidiyorum.
+
+353
+01:25:44,752 --> 01:25:50,332
+Bunlardan bir tanesi B'yi, bir tanesi C'yi tarıyor.
+
+354
+01:25:51,112 --> 01:25:56,252
+A'daki yerleştiği noktanın ilgili elemanını ise K ile ilişkilendiriyorum.
+
+355
+01:25:57,272 --> 01:26:06,512
+İki dizi üzerinde, B ve C üzerinde karşılıklı elemanları karşılaştırarak hangisinin A'yı önce yerleşmesi gerektiğini bulmam gerekiyor.
+
+356
+01:26:06,512 --> 01:26:11,472
+Dolayısıyla diyorum ki B'yi C'yi den küçük mü?
+
+357
+01:26:12,752 --> 01:26:37,292
+Çünkü küçükten büyüye sıralı bir dizi var elimde. A'ya ilk yerleştirmem gereken eleman B'yi elemanım. Dolayısıyla bunu B'yi al K'ya koyup İ'yi arttırabilirim. Eğer öyle değilse C'deki eleman daha küçükse o zaman A'ya C'yi yerleştireceğim ve J'yi arttıracağım. Ve bunu yaptıktan sonra da K'daki yani A'daki sıradaki iğnesi yerleştirmek için geçmem gerektiğinden K'yi bir arttırıyorum.
+
+358
+01:26:38,515 --> 01:26:46,855
+Bu işlemi teratik olarak yapıyorum. Eğer sona ulaştığım vakit, İ eğer P'ye varmışsa,
+
+359
+01:26:47,891 --> 01:27:00,412
+Yani sırasında eğer bu karşılaştırmada bir tanesi bittiyse, örneğin B'nin elemanları bittiyse ve hala C'nin elemanları kaldıysa dışarıda, o zaman A'nın sonuna C'yi ependetmem gerekiyor.
+
+360
+01:27:00,791 --> 01:27:07,072
+Aynı şekilde B için de durum aynı. B'yi A'nın sonuna ependetmem gerekiyor. C'deki elemanların hepsini yerleştirdiysen.
+
+361
+01:27:07,072 --> 01:27:15,452
+Şimdi genel akış böyle. Bunu merge işlemi, merge sortu merge işlemiyle beraber dizi üzerine nasıl çalıştığına bir bakalım.
+
+362
+01:27:15,891 --> 01:27:33,832
+Şuradaki akışta ne yapıyordum? Her seferinde bölüyorum. A'yı ikiye bölerek bir süre gidiyorum, gidiyorum, gidiyorum. Sonrasında da birleştirme işine başlıyordum. Bire ulaşınca. İşte yaptığı şey bu. Öncelikle elimde bir dizi var.
+
+363
+01:27:36,819 --> 01:28:02,440
+8, 3, 2, 9, 7, 1, 5 ve 4 dizisini 2'ye ayırdım. 8, 3, 2, 9, 7, 1, 5, 4 diye. Bunu 2'ye ayırdım, bunu 2'ye ayırdım, bunu 2'ye ayırdım. Sürekli 2'ye ayırarak ilerledim. Tahtaki birer eleman elde edene kadar. Şimdi birer eleman elde ettikten sonra burada constant time'da zaten bunları birleştirmeye başlıyorum artık şu noktadan sonra. İki elemanım var sadece. Bir tek komple hızımda hangisinin önde olduğunu belirleyebildim.
+
+364
+01:28:04,819 --> 01:28:27,819
+2, 9, 1, 7 ve 4, 5 değerlerine sahip iki elemanlı dört tane dizi oluştu. Bunları tekrar ikişer birleştiriyorum. Dolayısıyla elimde artık 2, 3, 8, 9, 1, 4, 5, 7 ve tamamen sıralanmış dizi var. Şimdi merge sortu bir hatırladık. Bundan sonra bunun kavuşlukluğuyla alakalı analizimize geçelim.
+
+365
+01:28:32,467 --> 01:28:36,948
+Şimdi bu işlemlerin tamamında n'in ikinin kuvveti olduğunu düşünelim.
+
+366
+01:28:40,724 --> 01:29:01,004
+Şimdi burada c merge n'in merge işlemi için merge işlemi esnasındaki key comparison sayım olduğunu kabul ediyorum. O zaman benim cn'deki karmaşıklığıma dair yazabileceğim reşim bu.
+
+367
+01:29:04,275 --> 01:29:18,235
+İkisi için de işlem yapıyorum. Her biri için n bölü 2'lik bir eleman üzerinden işlemlerimi devam ettiriyorum. Ve merge için ise cn'lik bir işlem yapıyorum. Bunu cn'in birden büyük olduğu değerler için yapıyorum.
+
+368
+01:29:18,235 --> 01:29:25,716
+Şimdi worst case senaryosunda, kötü durum senaryosunda merge işlemi n-1'lik.
+
+369
+01:29:26,644 --> 01:29:43,264
+işleme denk geliyor. Bu niye böyle? Eğer elimde şöyle örneğin iki tane dizim varsa, 1, 3, 5, 7 ve 2, 4, 6, 8. Her seferinde bir elemanı, iki elemanı karşılaştırdım örneğin. Biri ve ikiyi karşılaştırdım. Küçük olanı aldım bir.
+
+370
+01:29:43,796 --> 01:29:59,736
+2 ile 3'ü karşılaştırdım, küçük olanı aldım 2. 3 ile 4'ü karşılaştırdım, küçük olanı aldım 3. Her seferinde sıradaki bir ön yani değişen bir şekilde bir diziden ve diğer diziden, bir diziden ve diğer diziden elemanı alacak şekilde switch etme durumu ortaya çıktı.
+
+371
+01:30:00,083 --> 01:30:25,363
+Bir tanesini bitirip de diğerleri üzerinden hareket edemedim. İşte bu kötü durum senayosundaki karşılaştırma için gerektiği komperizmini ifade ediyor ki o da en eksibere denk geliyor. Sekiz tane elemanım varken burada gördüğünüz gibi bir, iki, üç, dört, beş, altı, yedi tane komperizmine döndüğü için. Şimdi bu durumda bu ifade için master teoremi nasıl uygularız ona bakacağız. Sonuç itibariyle şu relation ile alakalı aklımızda bir soru var mı?
+
+372
+01:30:27,891 --> 01:30:42,471
+Ben buna baktığım zaman aşina olduğum için ikiye bölünme işlemleriyle ilgili karmaşıklığa dair log ikilik bir işi olduğunu bildiğim için şöyle bir çıkarımda bulunabiliyorum.
+
+373
+01:30:43,351 --> 01:30:49,211
+n-logen-n-1 diye. Şimdi bunu master teoremde nasıl çıkarırız ona bakalım.
+
+374
+01:30:51,828 --> 01:31:12,968
+Şu benim az önce bahsettiğim relation'ım. Worst case'de n-1'e c-merge'in eşit olduğunu biliyorum. Bu da o n'e tekabül ediyor. Dolayısıyla benim burada a2, b2 ve d'nin de 0 olduğu.
+
+375
+01:31:22,515 --> 01:31:25,515
+Yanlışlıkla yapmışım rivayet yapıyorum.
+
+376
+01:31:36,500 --> 01:31:42,780
+Tabi yanlışlık var gibi arkadaşlar ya. Çünkü birleştirmek için, CMR ölçü için kullandığım şey en eksi bir.
+
+377
+01:31:47,764 --> 01:32:06,043
+D'nin 0 olmasını bekliyorum. D 0 olduğu zaman da... Şunu bir kontrol edeceğim arkadaşlar. Siz aradan sonra bununla alakalı bir yanlışlık varsa döneceğim. Şu an büyük atladığım bir şey var herhalde. Buna döneceğim.
+
+378
+01:32:07,884 --> 01:32:12,684
+Buna bakacağız. Aradan sonra konveks dolu devam edelim şimdi.
+
+379
+01:32:13,587 --> 01:32:15,587
+Çok özür dilerim aşağıdan da.
+
+380
+01:32:30,804 --> 01:32:34,164
+Kusura bakmayın, ona bakacağım. Size döneceğim. Yanlış, yanlış olabilirim bir şeylere.
+
+381
+01:32:34,724 --> 01:32:37,304
+Konveksol'a devam edelim şimdi. Konveksol problemiyle.
+
+382
+01:32:38,623 --> 01:32:41,904
+Bu çok konveksol biliyorsunuz.
+
+383
+01:32:43,364 --> 01:32:44,564
+İnli bir problem.
+
+384
+01:32:45,484 --> 01:32:46,824
+Ne yapıyor konveksolda?
+
+385
+01:32:47,423 --> 01:32:52,083
+En tane bir play'inde, en tane bize doğru nokta verilmiş durumda.
+
+386
+01:32:52,844 --> 01:32:55,744
+Bu noktalar içerisinde kapalı bir çevrim oluşturuyoruz.
+
+387
+01:32:56,532 --> 01:33:03,072
+Ama bu kapalı çevrimin tüm noktaları kapsayacak şekilde çizilmesi ve dışarıda nokta bırakmaması gerekiyor.
+
+388
+01:33:03,872 --> 01:33:07,592
+Burada çözümde yine kolaylık açısından bazı kabullerimiz var.
+
+389
+01:33:08,532 --> 01:33:16,851
+Aynı koordinatta sahip, aynı x ya da y koordinatta sahip iki tane doğru nokta olmadığını kabul ederek çözümlerimizi yapıyoruz.
+
+390
+01:33:20,112 --> 01:33:45,431
+Data yapısı olarak nasıl saklayabiliriz? Çift taraflı double link list kullanarak örneğin tanımlayabilirsiniz bir konveks olup P'den Q'ya, Q'den R'ye, R'den S'ye gibi böyle bir kapalı çevrim elde edebilirsiniz. Normalde her bir nokta için o noktanın koordinat sistemindeki yeri üzerinden ben tamamlamış olacağım. Buradaki kapalı çevrimi sağlayacak en küçük poligonu bulmaya çalışıyoruz. Amacımız bu.
+
+391
+01:33:45,939 --> 01:33:55,519
+Konveksol Probleminin kullanım alanları oldukça fazla biliyorsunuz. Graf Teorisi'nde, Paternil Cognition'da, Geo-Rabic Information Sistemler'de vs. kullanılıyor.
+
+392
+01:33:57,179 --> 01:34:06,199
+Şimdi bunu konveksol problemi için Brute Force bir şey yapacak olsak nasıl yaparız?
+
+393
+01:34:07,339 --> 01:34:10,679
+Önce bir onu konuşalım. Yani en böyle aklımıza ilk gelen çözüm.
+
+394
+01:34:11,604 --> 01:34:14,983
+En basit, implementasyonu en basit olan çözüm nedir?
+
+395
+01:34:18,523 --> 01:34:32,943
+Implementasyonu en basit olan çözüm, şuradaki örneğin P noktası için tüm olası noktalar, doğrulardan bir küme oluşturmak.
+
+396
+01:34:35,315 --> 01:34:41,435
+Doğru oluşturdum. Q ve R için şöyle bir doğru oluşturdum. R ve S için böyle bir doğru oluşturdum gibi.
+
+397
+01:34:41,435 --> 01:34:45,435
+Şimdi eğer siz bir doğru oluşturduğunuzda bu doğrunun...
+
+398
+01:34:46,420 --> 01:35:05,340
+Her iki tarafında, sadece bir tarafında daha doğrusu noktalar varsa, her iki tarafına doğru, sağına ve sonuna ya da yukarısına ve aşağısına, iki sayına yayılmış noktalar yoksa elinizde, o zaman bunun konveksol parçası olduğunu, konveksol üzerinde bir segment olduğunu söyleyebilirsiniz.
+
+399
+01:35:05,340 --> 01:35:11,680
+Bu en basit akla gelen çözüm, brute force ile konveksolu çözmek için kullanılacak bir çözüm.
+
+400
+01:35:12,100 --> 01:35:13,819
+Şimdi bunu ben matematiksel olarak nasıl?
+
+401
+01:35:15,315 --> 01:35:25,836
+Bu konuyu gerçekliyorum. Şimdi benim iki tane noktam varsa x1, y1 ve x2, y2 diye bunların arasından geçen bir doğru oluşturacaksam eğer.
+
+402
+01:35:30,547 --> 01:35:35,227
+Bu doğrunun da eklemi şöyle oluyor. AX artı B'ye o da eşittir C oluyor.
+
+403
+01:35:38,107 --> 01:35:46,807
+Şimdi A'yı ve B'yi ve C'yi buradaki kat sayıları kullanarak oluşturduğumuz zaman
+
+404
+01:35:46,807 --> 01:35:52,227
+eğer herhangi bir noktayı bu doğrunun üzerinde oturttuğumuzda
+
+405
+01:35:54,644 --> 01:36:09,484
+Tüm noktaları aslında bu doğruya oturttuğunuzda elde ettiğiniz C'lerin sayınları birbirinden farklıysa o zaman siz diyebilirsiniz ki bu doğrunun iki tarafında bu seçtiğim noktalar aynı tarafta değil, farklı taraftalar.
+
+406
+01:36:09,484 --> 01:36:21,404
+Çünkü sayınları birbirinden farklı. O zaman bu seçtiğim doğru X1, Y1, X2, Y2 doğrusu konveksol üzerinde bir doğru değildir. Bunu eleyebileyim diyebilirsiniz.
+
+407
+01:36:22,484 --> 01:36:28,164
+Akış çizme şansınız var. Peki böyle bir akış çizerseniz bunun karmaşıklığı ne olacak?
+
+408
+01:36:30,104 --> 01:36:42,184
+Şimdi şöyle olacak. En tane noktam var. Bu en nokta için edge'lerin en kare edge olasılığım var. Bu en kare edge'i bulacağım.
+
+409
+01:36:42,184 --> 01:36:49,444
+Her bir en kare edge bulduktan sonra her bir edge için sistemdeki en noktayı test edeceğim.
+
+410
+01:36:49,876 --> 01:36:54,996
+O tarafında mı, bu tarafında mı diye. Bu dolayısıyla bana en küplük bir kompleksiti getirecek.
+
+411
+01:36:56,016 --> 01:37:04,496
+Tabii bunu farklı algoritmalarla daha az kompleksitiyle tabii ki yapmanız mümkün.
+
+412
+01:37:04,496 --> 01:37:08,936
+Ben brute force için en kaba olan çözüm üzerinden şu an size bunu anlatıyorum.
+
+413
+01:37:09,736 --> 01:37:13,056
+Zaten az sonra bunun divide and conquer ile nasıl çözüldüğünü göreceğiz.
+
+414
+01:37:15,076 --> 01:37:15,876
+Var mı soru?
+
+415
+01:37:16,275 --> 01:37:22,595
+Problemin temasıyla alakalı. Devam edeyim çözüme eğer soru yoksa.
+
+416
+01:37:23,415 --> 01:37:35,835
+Hocam, soruyu anladım ama noktaların içeride kalıp kalmadığını nasıl kontrol ediyoruz? Ben tam anlamadım. Yani aynı tarafta olabilir ama içeride olup olmadığını garanti edebilir miyiz ki öyle?
+
+417
+01:37:36,855 --> 01:37:40,095
+Şöyle, zaten şimdi şurada bir nokta olduğunu farz et yukarıda.
+
+418
+01:37:40,564 --> 01:37:46,024
+Kontrol ettiğin şey senin tüm noktaların buradaki düzlemin bir tarafında olması.
+
+419
+01:37:46,364 --> 01:37:58,524
+Şimdi içeride bir nokta varsa, şurada daha doğrusu dışarıda şu masumun olduğu yerde PQ doğrusu için bu tarafta bir tane nokta varsa, bu tarafta da bir tane nokta varsa her iki tarafta da noktaya sahipsin demektir.
+
+420
+01:37:58,524 --> 01:38:08,524
+Ve onu evleyeceksin. Ama tüm noktalar bu taraftaysa zaten o zaman problemin yapısından dolayı ya iki tarafta nokta yoksa.
+
+421
+01:38:08,564 --> 01:38:15,244
+Burada hiç nokta yoktur. O zaman PQ gerçekten bir konveksiyonluğa ait segment oluyor. Bunu mu sormuştun?
+
+422
+01:38:16,604 --> 01:38:27,824
+Yok, ben o kısmı anladım da. Her ikisi dışarıda kaldığında da içeride olduğunu garanti etmiyor. Ama her ikisi aynı işaretle olmuş oluyor. Demek istediğimi anlatabildim. Bilmiyorum ama.
+
+423
+01:38:28,627 --> 01:38:54,427
+Ben de sana demek istediğimi anlatamamışım demek ki. Çünkü senin demek istediğini anladığımı düşündüm ama bir daha anlatayım. Şimdi sen bunu biraz büyük bir problem olarak düşün. Senin burada test etmen gereken şey P ile Q'nun, U ve V'nin P ve Q'nun bu tarafında kaldığını, her ikisinin de içeride kaldığını anlamak değil test etmen gereken şey. Test etmen gereken şey P ve Q doğrusunun bu tarafında veya tüm diğer noktalar için deneyimlediğim vakit.
+
+424
+01:38:54,931 --> 01:39:06,631
+Bütün noktaların P ve Q sistemine, onun için oturttuğum doğru modeline parametre olarak verdiğinde hep aynı sayını, pozitif ya da negatif sayını almış olmayı test ediyorsun.
+
+425
+01:39:07,131 --> 01:39:14,071
+Şimdi P ve Q için bir line oluşturdun. Doğru denklemin elinde var. T, U, V, S ve R için denedin.
+
+426
+01:39:14,547 --> 01:39:31,667
+Hepsi için aynı sayını aldın mı? Baktın. Hepsi için aynı sayını aldıysan sorun yok zaten. Şurada bir tane daha nokta olsaydı o zaman hepsi için aynı sayını alamayacaktın. Oldu mu şimdi? Evet, evet. Ben sadece içeridekileri alıyormuşum gibi bir an düşündüm de. Şu an söyleyince mantıklı olacaktım.
+
+427
+01:39:31,667 --> 01:39:38,667
+Tamam, okey. Şimdi en kare tane ecim oluşuyor. En taneyle test ediyorum.
+
+428
+01:39:39,087 --> 01:39:48,347
+En küp kompleksitim var. Bunu nasıl daha iyi yaparım? Divide and Conqueror ile bunu nasıl yaparım ona bakacağız. Başka soru yok değil mi? Tamam.
+
+429
+01:39:49,607 --> 01:40:03,927
+Hocam, bu en küp nasıl oluyor? İçen derslerde iki tane kompleksiti varsa en uygun içeriliği oluyor gibisinde konuşmuştuk sanki.
+
+430
+01:40:06,416 --> 01:40:13,816
+Buradaki en küp, etçleri oluşturmak için dönüş sayı en kare. Orayı anladın değil mi?
+
+431
+01:40:14,396 --> 01:40:22,076
+Çünkü benim en tane... Tamam, onda sorun yok. Şimdi benim en tane pasıbım, doğrum var bu noktalardan geçebilecek.
+
+432
+01:40:22,696 --> 01:40:25,596
+Diyelim ki ben bu noktalardan TO'yu seçtim.
+
+433
+01:40:26,131 --> 01:40:42,691
+Bu doğruyu seçtim. Bu doğrunun denklemini oluşturdum. İki noktası bilinen bir doğrunun denklemini oluşturabiliyorum ya. Bu doğrunun denklemini oluşturduktan sonra elimdeki tüm noktaları bu doğru denklemini koyuyorum ve bana negatif mi pozitif mi komuç üreteceğine bakıyorum.
+
+434
+01:40:43,104 --> 01:41:09,663
+Şimdi P'yi, P'yi, keşke tahtada olsa işte böyle olmuyor. Neyse, P'yi şu doğru denklemine koyduğumda üretilen sonuçla V'yi bu değerde denklemine koyduğumda üretilen sonuç aynı olmayacak. Çünkü farklı saytalar. O zaman ben bunu eleyeceğim. Tüm hepsi için bakıp son noktada eleyecek bir şey bulabilirim. Yani hemen P'yi başta eledim ama hepsi bu tarafta olsaydı V'yi, R'yi, S'yi, T'u için deneyecektim.
+
+435
+01:41:10,068 --> 01:41:22,768
+Hepsi aynı tarafta. T-U belki de konveks olum bir parçasıdır diyecektim. Q'yu denediğimde hop hayır, öbür taraftaymış. O zaman bunu konveks olum bir parçası olmadığını T-U'nun anladım diyecektim.
+
+436
+01:41:32,595 --> 01:41:45,935
+Her bir noktayı bu doğru için test ettiğinizden en tane test yapmanız gerekiyor. Her bir doğru için, en kare doğrumuz var, her bir doğru için tüm noktaları test ettiğimden en kare çarpı enden en küpli kompleksi de elde etmiş oldum.
+
+437
+01:41:47,135 --> 01:41:47,535
+Anladım.
+
+438
+01:41:47,895 --> 01:41:54,055
+Anladın mı? Aslında şu, mesela TV'yi çizdiğimiz vakit şekli ikiye bölüyor.
+
+439
+01:41:54,707 --> 01:42:06,728
+UV'yi çizdiniz şekli ikiye bölüyor. SU'yu çizdiniz şekli ikiye bölüyor. Bunlar problem. Şekli ikiye bölmemesi gerekiyor. Bunu test ediyorum aslında bir yandan da. Yani o ona denk geliyor. Anlatabildim mi?
+
+440
+01:42:08,207 --> 01:42:08,827
+Evet hocam.
+
+441
+01:42:09,068 --> 01:42:09,908
+Geçiyorum o zaman.
+
+442
+01:42:12,948 --> 01:42:18,188
+Şimdi, Divide and Concur ile bu işi yaparsam nasıl yaparım?
+
+443
+01:42:19,731 --> 01:42:25,412
+Bunu böyle dikkatli anlatmaya çalışacağım. Hatta size paint mühendisliği yapacağım. Paint üzerinde göstereceğim.
+
+444
+01:42:26,052 --> 01:42:26,892
+Adımlarım şöyle.
+
+445
+01:42:30,832 --> 01:42:37,572
+X koordinatlarına göre bir sorting yapıyorum. Bir kere değil de. Tüm noktaları.
+
+446
+01:42:39,192 --> 01:42:40,392
+Sort ettikten sonra.
+
+447
+01:42:41,011 --> 01:42:54,831
+Konveks olu ikiye ayırıyorum. Tüm konveks olu iki parçaya ayırıyorum. Her iki parça içinde konveks olu hesaplıyorum ve bunları sonra birleştiriyorum.
+
+448
+01:42:54,831 --> 01:42:59,831
+Konveks olu yani şöyle örneğin.
+
+449
+01:42:59,831 --> 01:43:02,891
+Hatta bunu hemen ben şeye geçeyim.
+
+450
+01:43:02,891 --> 01:43:04,831
+Pardon şimdi size.
+
+451
+01:43:06,331 --> 01:43:07,411
+Bir dakika.
+
+452
+01:43:10,612 --> 01:43:20,912
+Üzerinden anlatacağım artık. Daha hala teknik setup'ımı kuramadım ama arkadaşlar, bir dahaki derste inşallah halledeceğim. Şimdi, şunu bekleyin, paylaşayım tekrar size.
+
+453
+01:43:23,712 --> 01:43:35,271
+Şunu. Şimdi görüyorsunuz değil mi? Gördünüz mü? Şimdi bu benim örnek konveks olum. Normalde bu tek bir parça halindeydi.
+
+454
+01:43:38,260 --> 01:44:04,900
+B2'ye, B3'ü, A3'e gelen. Tabii böyle olduğunu bilmiyorum. Şu an elimde sadece noktalar var. Böyle bir noktalar kümesi var. Burada konveksiyonu bulmaya çalışıyorum. Divide and Concure'la yapıyorum. Divide and Concure'la yapmak demek ne demek? Bunu her seferinde parçalayacağım. Bu parçalarımın sayısı eşit olmayabilir. Ki şu an zaten eşit olmayacak. Nasıl parçalıyorum? Öncelikle şu noktaların hepsini, bütün noktaları X'e göre sort ettim.
+
+455
+01:44:05,971 --> 01:44:10,471
+ve birbirine sort ettikten sonra birbirine
+
+456
+01:44:16,212 --> 01:44:42,652
+En yakın iki noktadan yola çıkarak bu noktanın bu tarafındaki ve bu tarafındaki noktaları iki ayrı konveks kol hesabı kullanmak üzere ayırıyorum. Tamam mı? Ayırdım. Şimdi bu ikisi arasından şu şu A1 ve B1 birbirine en yakın olan noktalar X'e göre sort ettikten sonra bu ikisinin arasından geçecek bir doğru çiziyorum.
+
+457
+01:44:43,764 --> 01:45:03,564
+Şöyle bir doğru çiziyorum. Tamam. L doğrusu. Şimdi bu L doğrusunu çizdikten sonra bu L'nin sağında kalan noktalar için ve solunda kalan noktalar için tekrar bölme işlemi yapacağım. Sürekli böleceğim.
+
+458
+01:45:04,180 --> 01:45:18,120
+Burada iki ayrı parçadan oluşan bir setimi bulmak için bu parçaları ikiye böleceğim ve ikiye böldüğüm zaman oluşan noktalar kümesi üzerinden konveks olaraması yapacağım. Burada da bunu yapacağım. Bu işlemleri nereye kadar devam ettiriyorum?
+
+459
+01:45:21,220 --> 01:45:23,080
+Nereye kadar devam ettirmem mantıklı?
+
+460
+01:45:27,636 --> 01:45:52,436
+Sabit bir zamanda, ene bağlı olmayan, constant time'da bu konveks olup bulabileceğim noktaya kadar bu bölmeleri yapmam gerekiyor. Dolayısıyla burada bir sayı belirleyeceğim. Diyeceğim ki 5 point olana kadar bunu yap, 3 point olana kadar bunu yap. 3 point olduğunda zaten eğer sizin elinizde böldüğünüzde, böldüğünüzde buradaki örnek gibi 3 point'lik bir şey ortaya çıktıysa zaten otomatikman konveks olup bulmuş oldunuz.
+
+461
+01:45:52,884 --> 01:45:57,084
+Dolayısıyla sonuna kadar gitmek zorunda değilsiniz. Bunun için kendinize bir sınır belirleyeceksiniz.
+
+462
+01:45:57,604 --> 01:46:04,224
+Şimdi ilk etapta ben bu kısmı, bu kocaman noktalar kümesini her seferinde ikiye bölüyorum.
+
+463
+01:46:04,744 --> 01:46:10,284
+İkiye böldükten sonra da ikiye böldüğüm noktaya göre birbirine yakın olan iki noktayı seçiyorum.
+
+464
+01:46:10,284 --> 01:46:14,963
+Bunlar üzerinde arama yapacağım.
+
+465
+01:46:18,547 --> 01:46:25,488
+Şimdi, aslında burada bölme işlemlerini yaptınız, yaptınız, yaptınız.
+
+466
+01:46:26,195 --> 01:46:54,175
+Constant Time'a gelene kadar yaptınız. Diyelim ki şurada şu üçgeni buldunuz. Burada bunu buldunuz. Belki bu da bir üçgende bilmiyorum. Burada önemli olan bölmekten çok aslında birleştirme adımı. Şimdi bunun üzerine gideceğiz. Çünkü bölmede sorun yok ama nasıl birleştiririm? Öyle birleştirmelisiniz ki bulduğunuz küçük konveksollar totalde doğru bir konveksol oluştursun. Üç tane noktanız varken küçük bir doğru konveksol bulmakta zaten sorun yaşamıyorsunuz. Önemli olan bunları birleştirecek mekanizmayı bulabilmek.
+
+467
+01:46:54,195 --> 01:47:00,895
+Şimdi bu mekanizmayı nasıl bulabiliriz? Örneğin şöyle bulabiliriz.
+
+468
+01:47:08,340 --> 01:47:09,800
+Derim ki...
+
+469
+01:47:16,372 --> 01:47:17,612
+Şöyle anlatayım size.
+
+470
+01:47:21,052 --> 01:47:30,532
+Benim iki tane noktayı birleştirdiğimde bu noktaların L çizgisiyle kesiştiği nokta benim için önemli.
+
+471
+01:47:37,492 --> 01:47:51,251
+Peki bu çizgiyi diğer noktaları birleştirmek için oluşturduğum opsiyonların hiçbiri aslında üst seviyeyi geçmemeli.
+
+472
+01:47:51,351 --> 01:47:53,711
+Yani şöyle sözlerle anlatırsam daha doğru olacak.
+
+473
+01:47:54,271 --> 01:47:59,331
+Benim bu konveksol için upper ve lower kenarları bulmam gerekiyor.
+
+474
+01:47:59,331 --> 01:48:01,591
+Şu iki kenarı bulmak istiyorum. Amacım bu.
+
+475
+01:48:05,203 --> 01:48:10,503
+Bağlantılı olduğu için konvekslerin iki konveksi birleştireceğim. Bunu nasıl yapıyorum?
+
+476
+01:48:16,595 --> 01:48:17,615
+Şöyle yapıyorum.
+
+477
+01:48:27,315 --> 01:48:33,635
+Tüm çiftler için A'daki ve B'deki tüm nokta çiftleri için bir doğru oluşturuyorum.
+
+478
+01:48:33,996 --> 01:48:37,155
+Ve bu doğrunun L'yi kestiği noktayı işaretliyorum.
+
+479
+01:48:37,155 --> 01:48:48,515
+En büyük kesişim noktasına Y açısından en yüksekteki kesişim noktasını veren nokta çifti benim için üst kenar oluyor.
+
+480
+01:48:48,996 --> 01:48:50,996
+Örneğin şöyle başladım.
+
+481
+01:48:54,355 --> 01:49:12,355
+İşaretledim. Bu ikisinin kesişim noktasını gördüm. Bakın şurada. Bunu YİJ'yi diyelim. Şuraya bir YİJ'yi yazacağım sizin için. YİJ'yi. Aslında Y11.
+
+482
+01:49:16,884 --> 01:49:27,923
+A ve B noktasını birleştirdim. A ve B noktasının L ile kesiştiği yere Y11 dedim. Bunun Y üzerindeki değeri, yani yüksekliği belli.
+
+483
+01:49:27,923 --> 01:49:38,684
+Şimdi, şuraya tekrar yazayım çok özür dilerim. İyi bir paint mühendisli değilim demek ki.
+
+484
+01:49:43,188 --> 01:49:56,928
+Şimdi ikinci seçeneğime bakıyorum. İkinci seçeneğim A1 ile B2'yi karşılaştırmak. O da bana bir kesişim noktası verdi. O kesişim noktasını da şuraya yazıyorum.
+
+485
+01:50:00,000 --> 01:50:17,559
+Buradaki birinci indiz, A noktasının indisi, ikincisi B noktasının indisi. Yani A grubunun, A konveksyonun ilgili noktasının numarasıyla B konveksyonun ilgili noktasının numarası.
+
+486
+01:50:18,100 --> 01:50:24,600
+A1'e kesişim yerini, L ile kesiştiği yerdeki noktanın ismini oluşturuyor.
+
+487
+01:50:24,920 --> 01:50:29,060
+Şimdi A1 ile bu sefer B3'ü oluşturdum. Daha aşağıda bir yer tuttum.
+
+488
+01:50:29,500 --> 01:50:31,600
+Bu şekilde bir maksimizasyon işlemi yapıyorum.
+
+489
+01:50:32,600 --> 01:50:37,760
+Mesela bunu da geçtim. A2'ye bakıyorum. A2 ile B1, Y1-2'den büyük mü değil?
+
+490
+01:50:37,760 --> 01:50:42,760
+Devam ediyorum. A2 ile B2, şu an Y1-2 en büyük, büyük mü değil?
+
+491
+01:50:43,475 --> 01:51:01,575
+A2 ile B3 büyük mü değil? A3'e geçtim. Büyük mü değil? Büyük mü? Muhtemelen değil. Büyük mü değil? A4'e geçtim. Büyük mü değil? Büyük mü? Evet büyük.
+
+492
+01:51:01,575 --> 01:51:10,815
+İşte burada ben iki konveks olu birleştirmesi gereken noktaları bulmuş oldum. Tabi devam edeceğim search'e. Büyük mü değil? Tüm noktaları tamamladım.
+
+493
+01:51:11,231 --> 01:51:22,271
+Burayı Upper Tangent olarak seçtim. Alt tarafta da aynı işlemleri Lower için bu sefer yayı minimize edecek Payer'ı bulmak üzere yürütüyor olacağım.
+
+494
+01:51:22,271 --> 01:51:33,252
+Sandart en rahat görünen Brute Force bakış açısıyla iki tane konveksi birleştirmek için işlenecek yol bu.
+
+495
+01:51:33,908 --> 01:51:51,688
+Bunun üzerine daha iyi nasıl yaparız ona bakacağız. Bununla alakalı soracağınız bir şey var mı? A ve B için her birinde enal point olduğunu örneğin düşünseydik, bu birleştirme işinin bize maliyeti ne olacaktı? Var mı soru?
+
+496
+01:52:02,612 --> 01:52:17,612
+Bunun L ile kesişimine bakıyorum. Ve bunu tüm nokta çiftleri için yapıyorum ve maksimize edecek çifti bulmaya çalışıyorum. Dolayısıyla en karelik bir işlem karmaşıklığı içerisinde ben bu work işlemini, merge işlemini yaptım.
+
+497
+01:52:23,028 --> 01:52:36,528
+Şimdi bakalım, bunu Master Teorem'de analiz edersem karşıma ne çıkacak? Hemen şimdi Slide'a geri döneceğim.
+
+498
+01:52:42,547 --> 01:52:43,167
+Ah, Dom.
+
+499
+01:52:56,404 --> 01:53:17,044
+Şimdi formülüm şuydu. Master Teoremin buydu. Relation'ım nasıl? Benim iki parçayı ayırdığım bir durum söz konusu. İki parçayı ayırıyorum ve iki parçayla da ilgilenmem gerekiyor. Birleştirmek için ise en karelik bir ölç işlemi yapıyorum.
+
+500
+01:53:17,652 --> 01:53:28,452
+Dolayısıyla değerleri yerine koyduğum vakit T'nin değeri bir kende n kareye denk geliyor. Bu zaten bizim de analizde kolayca anlayabileceğimiz bir sayı.
+
+501
+01:53:31,431 --> 01:53:34,692
+Şimdi bunu nasıl daha iyi hale getiririz ona bakalım.
+
+502
+01:53:36,811 --> 01:53:42,771
+Şimdi bunun için bir güzel bir algoritma var.
+
+503
+01:53:43,667 --> 01:53:51,227
+Bu algoritmayı anlatacağım size. Ama yine bu algoritmayı şekil üzerinde anlatmak daha mantıklı olacak.
+
+504
+01:53:51,227 --> 01:54:00,427
+Şimdi ben burada şekle, şunları silip şu şekle geçiş yapacağım. Yanına da algoritmayı daha rahat görün diye koyayım.
+
+505
+01:54:00,427 --> 01:54:03,907
+Şimdi buradan...
+
+506
+01:54:29,524 --> 01:54:32,524
+Şimdi size tekrar ekran paylaşımı update edeceğim.
+
+507
+01:54:39,315 --> 01:54:44,915
+Şimdi, ben bu merge işlemini nasıl daha akıllıca yaparım? Şöyle bir akış kullanabilirim.
+
+508
+01:54:49,108 --> 01:54:58,967
+Normalde ne yapıyordum? Bu taraftaki tüm noktalarla bu taraftaki tüm noktalar arasındaki olası bağlantıları kurup bu olası bağlantıların L ile olan kesişim noktalarını hesaplıyordum.
+
+509
+01:54:58,967 --> 01:55:07,127
+Ve bu kesişimi maksimum eden çifti AB çiftini upper limit olarak seçiyordum.
+
+510
+01:55:07,948 --> 01:55:13,188
+Hepsine bakmak yerine şöyle bir iş yapabilirim.
+
+511
+01:55:16,724 --> 01:55:32,243
+A tarafında ve B tarafında olan konvekslerin saat yönü ve saat yönünün tersi göz önünde bulundurulduğunda artan Y değerlerine sahip olduğunu bildiğim için konveks olduğundan dolayı bunlar.
+
+512
+01:55:32,243 --> 01:55:35,344
+Bu algoritma düzgün çalışıyor. Şöyle işliyor.
+
+513
+01:55:36,264 --> 01:55:43,743
+Şimdi öncelikle birbirine yakın olan A1 ve B1 olarak isimlendirdiğim birbirine en yakın olan 2.x koordinatı açısından.
+
+514
+01:55:44,595 --> 01:55:55,416
+Seçmiştim bunları. Şimdi İ'ye ve J'ye bir diyorum. Şuraya E eşittir bir, J eşittir bir ile akışıma başladım.
+
+515
+01:55:57,836 --> 01:56:04,135
+Şimdi yaptığım şey şu. A1, B1 çizgisi burada.
+
+516
+01:56:08,500 --> 01:56:25,440
+B konveks olu için saat yönünde, A konveks olu için saatin ters yönünde ilerleyip her seferinde karşılaştığım AB çiftinin şu ana kadar belirlediğim maksimum kesişimden daha büyük bir YİJ verip vermediğine bakıyorum.
+
+517
+01:56:25,440 --> 01:56:28,900
+Tüm seçeneklere bakmaktansa.
+
+518
+01:56:29,427 --> 01:56:46,707
+Saat yönünde B ve saat yönün tersinde A giderek bunu yapıyorum. Nasıl yapıyorum? A1, B1 işaretledim. İlk başta seçeneğim bu. Y, İ, J. Bana verdiği kesişin noktası şurada. Yine buraya hemen Y11 yazalım.
+
+519
+01:56:50,612 --> 01:56:59,872
+İyi görüyor musunuz bu yazdıklarım arkadaşlar? Küçük mü kalıyor? Anlaşılıyor mu? Tamam, anlaşılıyor herhalde.
+
+520
+01:57:01,652 --> 01:57:17,851
+Şimdi var ile girdim. Var da ya İ'yi sabit tutup, yani A tarafındaki noktayı sabit tutup, B'yi arttırarak ortaya çıkan yeni pair'ın L ile kesişimine bakacağım.
+
+521
+01:57:18,452 --> 01:57:38,452
+Bu bir öncekinden, Y, İ, G'den büyük mü diye bakacağım. Eğer öyleyse zaten var içerisinde işlemleme devam edeceğim. Ya da şu çifte B'yi sabit tutup A üzerinde hareket edeceğim. Ama A üzerinde hareket ederken saatin tersi yönde bir şöyle bir...
+
+522
+01:57:38,707 --> 01:57:59,367
+kontrol mekanizması işlemem gerekiyor. Bunu da model olarak yapıyorum. Böyle gidiyorum. Buna bakacağım. Her seferinde birini sabit tutup diğerine bakarak daha yüksek mevcut maksimumdan yüksek bir maksimum elde ediyor muyum diye bakıyorum. Şimdi işleyiş şöyle. Bu sete göre hareket edelim. Buna baktım. Y1-1 yerini belirledim.
+
+523
+01:58:06,547 --> 01:58:32,787
+A1-2, Y-İ-J'den büyük mü? Evet, büyük. Zaten or var burada. İkinci keyidi çalıştırmama gerek yok. Aşağıdaki if statementına girdim. Y-İ-J artı bir Y-İ-J'den büyük mü? Bu yüzden mi çıktın [öğrenci]? Evet, doğru. O zaman J'yi bir arttırıyorum. Yani J'yi tabii ki modal olarak. Çünkü biliyorsunuz burada kapalı bir çevrim var. J'yi bir arttırdığım vakit J artık iki oldu.
+
+524
+01:58:33,264 --> 01:59:00,443
+A, dolayısıyla benim maksimum noktam da Y1-2 oldu. Şimdi onu şuraya Y1-2 yazalım. Y1-2 Yeri Tam burada tabii koymak zor olmakla birlikte şöyle bir şey. Ne yaptım? İ hala bir, J'yi bıraktırdım.
+
+525
+01:59:01,492 --> 01:59:07,712
+Şu an Y1-2 benim lokal maksimumu. Bunun üzerinden search'e devam ediyorum.
+
+526
+01:59:10,712 --> 01:59:18,972
+Şöyleydi. Tekrar döndüm. Diyorum ki, bununla neyi karşılaştırıyorum?
+
+527
+01:59:19,772 --> 01:59:26,472
+B'yi bir arttırdığım durumu, yani şunu. Y1-2, Y1-3'ten küçük mü?
+
+528
+01:59:27,380 --> 01:59:33,520
+Hayır değil. Peki o zaman bunu sabit tutup, şuna bakarsam karşıma ne çıkar?
+
+529
+01:59:34,800 --> 01:59:40,060
+A5B2, yani İ'yi saat yönün tersine mod aldığımda 5'e varacak.
+
+530
+01:59:40,199 --> 01:59:44,520
+Çünkü A5B2, Y12'den büyük mü? Evet büyük.
+
+531
+01:59:44,520 --> 01:59:52,520
+O zaman benim İF'e tekrar girmem ve ikinci S kolundan dolayı da İ'yi azaltarak...
+
+532
+01:59:52,948 --> 01:59:58,828
+Yoluma devam etmem ve lokal maksimumu Y52 olarak güncellemem gerekiyor. Güncelleyelim.
+
+533
+02:00:11,060 --> 02:00:36,440
+Tamam. Şuraya da yazalım. Y'yi 5 yaptım, J'yi değiştirmedim. Şimdi devam ediyorum Sörçe. Buradaydım. Geri geldiğim vakit diyor ki A'yı sabit tutup J'yi arttırırsan, yani şöyle yaparsan, Y'yi C'den büyük bir noktadan geçme şansın var mı? Hayır yok.
+
+534
+02:00:36,819 --> 02:00:57,359
+O zaman B'yi sabit tutup A'yı küçültelim. O zaman, yani aşağı yukarı böyle işte. O zaman lokal maksimumdan daha yüksek bir yerden geçiyor muyum? Evet geçiyorum. Bu durumda yine benim Y iliciğim lokal maksimum güncellenecek. Şurası yeni değerim. Y4-2.
+
+535
+02:01:00,979 --> 02:01:10,460
+Şimdi bu noktadan sonra, şurayı bulduktan sonra, Sörçüme while'da iki tarafta da hiçbir true ile karşılaşmadığım sürece devam etmek zorundayım.
+
+536
+02:01:11,139 --> 02:01:16,779
+A'yı sabit tutup bu tarafa gidiyorum. Büyük bir şey ile karşılaştım mı? Hayır, karşılaşmadım.
+
+537
+02:01:17,340 --> 02:01:25,359
+B'yi sabit tutup saat tersine bu tarafa gidiyorum. Büyük bir şey ile karşılaştım mı? Hayır, karşılaşmadım. Artık while'da daha fazla dönemem.
+
+538
+02:01:26,163 --> 02:01:47,503
+Dolayısıyla algoritmamı burada sonlandırıyorum. Anlaşıldı mı? Sorun var mı? Bunu yaptığım zaman az önce en kara olan karmaşıklık, üst limiti bulabilmek için en kara olan karmaşıklık şu an neye inmiş oldu? En eğilmiş oldu. İşleri oldukça kolaylaştırmış oldum.
+
+539
+02:01:48,723 --> 02:01:52,243
+Bakalım şimdi master teoremli bunun ispatına.
+
+540
+02:01:56,627 --> 02:01:58,907
+Şuradan yine sizinle bu konuyu paylaşayım.
+
+541
+02:02:10,068 --> 02:02:18,928
+Şimdi ne yaptım? İki parçaya böldüm. İki parçayla da ilgilendim. Ama Merge için gerekli işlemim n'de bitti.
+
+542
+02:02:19,828 --> 02:02:31,408
+Fn'de bitti. Dolayısıyla d teta en üzeri 1 olduğu için 1. Bu da beni master teoreminden n logene götürüyor.
+
+543
+02:02:31,408 --> 02:02:33,828
+A eşittir, b üzeri d olduğu için.
+
+544
+02:02:37,011 --> 02:02:37,811
+Var mı soru arkadaşlar?
+
+545
+02:02:41,779 --> 02:03:02,060
+Şimdi ben bunu daha rahat nasıl çözerim? Elimde şöyle bir noktalar var. A1, B1, A1, B2 vs. bakmak yerine daha rahat çözmemi sağlayacak bir yol var mı? Mesela acaba diyebilir miyim ki zaten üst sınırı bulmaya çalışıyorum.
+
+546
+02:03:02,060 --> 02:03:09,420
+Her iki konveks olumda en yüksekteki noktalarını birleştirsem bunu constant time'da çözebilir miyim?
+
+547
+02:03:10,484 --> 02:03:11,384
+Çözebilir miyim?
+
+548
+02:03:20,212 --> 02:03:33,652
+Çözebilir miyim sizce? Çözemeyebilirim. Şansesleri çözedebilirim. Dolayısıyla çözemem. Niye çözemem? Mesela şöyle bir keyiz oluşabilir.
+
+549
+02:03:34,132 --> 02:03:41,992
+Bakın burada da iki tane konveksolum var. İkisi de aslında kendi içinde doğru işaretlenmiş konveksollar.
+
+550
+02:03:48,032 --> 02:03:57,892
+A4'ın noktalarını üst sınır olarak belirleyecek olsaydım, o zaman A4, B2'yi birleştirerek bu konveks olumu ölç etmiş olacaktım.
+
+551
+02:03:58,892 --> 02:04:02,352
+Ama aslında değil. Aslında A3 ile B1 birleştirmem gerekiyor.
+
+552
+02:04:02,792 --> 02:04:10,472
+Dolayısıyla benim sadece üst limitlere bakarak üst sınırı oluşturmam ya da sadece en alttaki noktalara bakarak alt sınırı oluşturmam mümkün değil.
+
+553
+02:04:12,512 --> 02:04:14,052
+Soru var mı arkadaşlar?
+
+554
+02:04:15,347 --> 02:04:22,268
+Var hocam, benim bir sorum var. L doğrusu bir nokta üzerinden geçiyorsa ne yapacağız?
+
+555
+02:04:23,847 --> 02:04:41,427
+L noktası bir nokta üzerinden geçiyor olamaz. Çünkü konuşurken hani dedik ya, ikisi iki noktanın assumption olarak X ve Y düzlemlerinde aynı yerde olmadığını konuştu. İki noktadan geçiyordan kastını telen, L noktası üzerinde iki tane nokta varsa değil mi? Doğru anladım soruyor.
+
+556
+02:04:42,036 --> 02:04:56,916
+Yok, bu noktalar bütününde herhangi bir noktanın üzerinden geçebiliyor. Çünkü biz bu L doğrusunu A1 ve B1 ortasını, en yakın noktaların ortasından ikiye ayırmak için kullanıyoruz ya, yukarıda herhangi bir yerde başka bir nokta da olabilir.
+
+557
+02:04:56,916 --> 02:05:05,515
+Şimdi şöyle, eğer senin söylediğin şey, mesela şu cursor'un ucundaki nokta B1'de olsa, bir de şurada bir nokta olsa mesela mı diyorsun?
+
+558
+02:05:07,380 --> 02:05:09,619
+Yok herhangi bir nokta yani şu anda.
+
+559
+02:05:09,619 --> 02:05:19,619
+Şu an L'nin üzerinde herhangi bir nokta olsaydı şu görüntüye göre zaten o senin B1'in olacaktı.
+
+560
+02:05:20,579 --> 02:05:25,619
+X'i sağ tarafta, X'i en düşük olan nokta olduğu için. O zaman senin L noktan altta şuraya gelecekti.
+
+561
+02:05:28,199 --> 02:05:28,880
+Anlatabildim mi?
+
+562
+02:05:30,139 --> 02:05:34,279
+Sen birbirine en yakın iki tane konveksin var ya, iki konvekste.
+
+563
+02:05:34,771 --> 02:05:41,132
+A1'i sol taraftaki konvekste X'in en yüksek olduğu noktayı A1 olarak.
+
+564
+02:05:41,592 --> 02:05:49,271
+Sağ taraftaki konvekste en küçük X'in olduğu noktayı da B olarak seçip ortasından geçirdiğim için bunun üzerinde zaten nokta olma şansı yok.
+
+565
+02:05:50,012 --> 02:05:51,612
+O zaman senin L burada olacaktı.
+
+566
+02:05:51,612 --> 02:05:58,492
+Şurada bir nokta olsaydı, yani B'den daha küçük X'e sahip bir nokta, L şuradan bir yerden geçecekti.
+
+567
+02:05:58,543 --> 02:06:09,983
+L'nin üzerinde iki tane nokta zaten olamaz. Çünkü biraz işlem karmaşıklığını düşürmek adına X ve Y'nin aynı olmadığı noktalar kümesi üzerinde çalıştığımızı estimation olarak kullandık.
+
+568
+02:06:10,023 --> 02:06:16,803
+O zaman benim dediğim nokta zaten şu komikselerden benimle dahil olmuş olacaktı zaten. O yüzden olamaz.
+
+569
+02:06:17,903 --> 02:06:25,803
+Dediğin noktanın yerini bana söylersen dediğin şeyi verifiye edebilirim. Şu an tam dediğin nokta dediğin noktanın nerede olduğunu anlayamadım. Mesela şurada olsa mıydı diyorsun?
+
+570
+02:06:26,644 --> 02:06:28,564
+Çizmeye çalışacağım bir saniye.
+
+571
+02:06:36,884 --> 02:06:41,384
+A4'ün üzerinde bir yerde olsa mıydı? Şu an kırmızıyla çizdiğin yer mi?
+
+572
+02:06:55,923 --> 02:06:59,463
+Şu son çizdiğim. Tam çizemedim. İlki yanlış yerlere gitti.
+
+573
+02:06:59,603 --> 02:07:03,803
+Şu an üç tane şey görüyorum. B'nin, B yazısının hemen altındaki noktayı mı söylüyorsunuz?
+
+574
+02:07:03,803 --> 02:07:05,683
+O da olabilir, onun yanındaki de olabilir.
+
+575
+02:07:06,523 --> 02:07:12,063
+Ha işte mesela B'nin hemen altındaki nokta olsaydı orada, bu B'nin içerisinde öyle bir nokta olsaydı,
+
+576
+02:07:12,063 --> 02:07:16,503
+senin konveks yolunda o mesela B4 noktası olarak görünecekti.
+
+577
+02:07:17,003 --> 02:07:21,443
+Ve bunun X koordinatı B1'inden daha düşük olduğu için,
+
+578
+02:07:22,195 --> 02:07:33,536
+Senin L'in zaten burada olmayacaktı. Bir tık daha solda olmayacaktı. Ve o da dediğin gibi zaten konveks olun, B konveks olun bir parçası olacaktı. Ve bu search işlemlerinde onu da dikkate alman gerekecekti.
+
+579
+02:07:34,576 --> 02:07:35,416
+Anladım hocam. Tamam.
+
+580
+02:07:37,895 --> 02:07:39,016
+Ben teşekkür ederim.
+
+581
+02:07:39,596 --> 02:07:41,456
+Şimdi bundan sonra bir de media filtri.
+
+582
+02:07:43,155 --> 02:07:54,756
+Media Finding problemi var. Yine Divaret & Concure ile çözülen. Biraz daha böyle dikkat gerektiren bir iş. İsteydiniz bir ara verelim yine. Ondan sonra devam edelim. Olur mu? Bir 10 dakika ara verelim.
+
+583
+02:07:56,876 --> 02:07:59,515
+Soru var mı bu konuyla alakalı arkadaşlar? Aradan önce alayım.
+
+584
+02:08:02,296 --> 02:08:04,296
+Tamam. O zaman görüşmek üzere 10 dakika sonra.
+
+585
+02:08:05,043 --> 02:08:12,444
+Yani 10 dakika, 20 geçe şey yapalım. 12-20'de. 8 dakika oldu şu an aramız. 12-20'de buysa.
+
+586
+02:17:00,691 --> 02:17:24,851
+Arkadaşlar, şurada bir hata vardı. Şurayı yazarken A'ya 2B'ye 2 merge sort'ta, D'ye 2 yazmışım. Aslında n-1 olduğu için ttn bunun karmaşıklığı. Dolayısıyla n aslında 1.
+
+587
+02:17:25,427 --> 02:17:36,667
+Pardon, D aslında bir. Enlogene varıyor. Az önce buraya yanlışlıkla iki yazmıştım. Kafam karıştı o an. Hatırlayamadım. Kusura bakmayın. Doğrusu bu. Şimdi devam edelim kaldığımız yerden.
+
+588
+02:17:40,404 --> 02:18:00,524
+Medyan bulma. Medyan bulma biliyorsunuz, klasik bir problem. En tane numaramız varken, bu sıralı olmayan, bu sayılar içerisinde aslında sadece meydan olarak adlandırmak değil de, verilen renkteki yani beşinci sayı, onuncu sayı, en küçük sayı, en büyük sayı.
+
+589
+02:18:00,863 --> 02:18:09,863
+Eğer n elemanın varsa n artı bir bölü ikinci sayı meydana denk geliyor. Bulalım dediğimiz vakit bunu sıralama yaparak aslında bulmanız kolay.
+
+590
+02:18:09,863 --> 02:18:19,863
+Sıralama yapıyorsunuz. Örneğin işte word sort yapıyorsanız n logende sıraladınız. Sonra constant term'da istediğiniz elemana zaten ulaşıyorsunuz.
+
+591
+02:18:19,863 --> 02:18:23,863
+Peki bunu daha hızlı nasıl yapabiliriz? Şimdi ona bakalım.
+
+592
+02:18:27,252 --> 02:18:54,312
+Bu işi çözmek mümkün medyam bulurken. Aslında şöyle çalışıyor. Elimde benim şöyle bir S dizisi var. Sıralı değil. Bu dizi içerisinden bir tane eleman seçiyorum. Bunu seçmenin yolu aslında algoritmanın efficiency'sini doğrudan ilgilendiriyor. Bunu daha sonra anlatacağım size.
+
+593
+02:18:54,995 --> 02:19:08,915
+Bu X'i seçiyorum. Seçtikten sonra bu X'in bu dizideki yerini düşünüyorum, buluyorum. Aslında bu kompüt edilecek bir şey değil ama K'nın da bunun yeri olduğunu, indisi olduğunu düşünelim.
+
+594
+02:19:11,115 --> 02:19:17,815
+Burada X'den büyük ve küçük olan elemanları bulmam ve bunları iki ayrı diziye yerleştirmem gerekiyor.
+
+595
+02:19:18,451 --> 02:19:23,971
+İşlem kolaylığı açısından yerleştirmek diye anlatıyorum size. Kendi data yapınıza göre düzenleyebilirsiniz bunu.
+
+596
+02:19:25,592 --> 02:19:30,731
+Yerleştirirken yerleştirilen elemanların sıralı olması gibi bir şey söz konusu değil. Sıralı yerleştirmiyorsunuz.
+
+597
+02:19:30,791 --> 02:19:36,471
+Sadece her bir elemana bakıyorsunuz. X'den eğer büyükse bu eleman. O zaman onu C'ye yerleştiriyorsunuz.
+
+598
+02:19:36,471 --> 02:19:44,631
+Yok X'den küçükse B'ye yerleştiriyorsunuz. Dolayısıyla elinizde K-1 elemanla K-X'in yeri olmak üzere
+
+599
+02:19:45,236 --> 02:19:53,416
+Ve tüm dizide h tane eleman varsa h-k elemanlı iki tane diziniz oldu.
+
+600
+02:19:53,416 --> 02:19:58,416
+Şimdi bu diziler elinizdeyken bakıyorsunuz.
+
+601
+02:19:58,416 --> 02:19:59,716
+İyi bu arada.
+
+602
+02:20:00,000 --> 02:20:08,000
+Bu sizin iteratif olarak, rekürsivli olarak fonksiyonunuza gelen bir parametre, bu sizin bulmak istediğiniz sıralamayı gösteriyor.
+
+603
+02:20:08,000 --> 02:20:17,000
+Yani eğer medyan bulacaksanız, işte n artı 1 bölü 2 gibi bu sıralamayı gösteriyor. Bu da şu an ilgilendiğiniz diziyi gösteriyor.
+
+604
+02:20:17,000 --> 02:20:24,780
+Seçtiğiniz x'in indisi, aradığınız indisi ile aynıysa harika.
+
+605
+02:20:24,884 --> 02:20:50,824
+Buldunuz istediğiniz sayıyı, döndürdünüz ve çıktınız. Yok eğer aynı değilse, bakıyorsunuz, diyorsunuz ki benim aradığım indis seçtiğim elemanın indisinden küçük mü? Eğer öyleyse benim aradığım sayı x'in sol tarafında, küçükler arasında olmalı diyorsunuz ve bu select fonksiyonunu yani medyen bulmak için kullandığınız fonksiyonu tekrar çağırıyorsunuz.
+
+606
+02:20:51,156 --> 02:21:07,676
+Ve çağırırken bu tarafı gönderiyorsunuz. Bir de yine aradığınız elemanın indisini gönderiyorsunuz. İyi. Bu taraf sıfırdan başladığı için B'nin indisleri, S'nin indisleriyle aynı şekilde gittiğinden burada bir sıkıntı yok. B'yi ve E'yi gönderdiniz.
+
+607
+02:21:11,347 --> 02:21:24,648
+İndisinin daha büyük olduğunu görürseniz o zaman C üzerinde arama yapmak zorundasınız demektir. Bu takdirde ne yapıyorsunuz? C'ye iteratif bir şekilde Recurgeon'a gönderdiniz ama indisi de güncelliyorsunuz.
+
+608
+02:21:29,876 --> 02:21:37,115
+S üzerindeki yerini değil, C üzerindeki yerini göndermeniz gerekiyor rikursif olarak. Dolayısıyla i-k diye gönderdiniz.
+
+609
+02:21:37,115 --> 02:21:49,195
+Şimdi bunu iteratif olarak yapıyorsunuz ve bu şekilde buluyorsunuz medyanını. Bu zaten eninde sonunda bulunuyor.
+
+610
+02:21:49,675 --> 02:21:55,175
+İyi durum senaryosunda bir hamlede bulurken kötü durum senaryosunda karmaşıklığı az sonra göreceğiz.
+
+611
+02:21:55,572 --> 02:21:59,051
+Sonuna kadar diziyi bölerek gitmeniz gerekiyor.
+
+612
+02:21:59,051 --> 02:22:11,031
+Şimdi daha rahat anlayalım akışı diye. Çünkü analiz yaparken akışı anlamak ve en önemlisi bu ikisi seçerken nasıl bir metod izlemek gerektiğini anlamak açısından akış önemli.
+
+613
+02:22:13,951 --> 02:22:18,791
+Şimdi o yüzden size şöyle ufak bir dizi üzerinde bir analiz yapayım istiyorum.
+
+614
+02:22:21,236 --> 02:22:26,536
+Minik böyle hızda problemi bir anlayalım. Nasıl çözüldüğünü.
+
+615
+02:22:31,603 --> 02:22:42,883
+Bu arada medyan problemini şimdiye kadar aldığım derslerde recursive olarak divide and conquer ile çözmüş olan, karşılaşmış olanlar bana yazabilir mi?
+
+616
+02:22:49,683 --> 02:22:51,984
+Ben de bu arada ekran paylaşılma yapayım.
+
+617
+02:23:02,963 --> 02:23:18,243
+Şu. Kimse çözmedi mi bu zamana kadar herhangi bir derste bunu? Tamam. Şimdi arkadaşlar, küçük bir örnek için analizini yapacağız ama bir yandan da sizin bu şeyi de görmeniz lazım, Pistodokodu.
+
+618
+02:23:30,995 --> 02:23:34,795
+Biraz da küçültürsem de konuya devam edersin.
+
+619
+02:23:34,795 --> 02:23:35,435
+[öğrenci] Bey.
+
+620
+02:23:38,595 --> 02:23:41,376
+Şimdi görünüyor değil mi arkadaşlar?
+
+621
+02:23:41,536 --> 02:23:42,175
+Rahat bir şekilde.
+
+622
+02:23:42,995 --> 02:23:44,655
+Takip edeceğimiz bir sodokod bu.
+
+623
+02:23:47,715 --> 02:23:49,235
+Biraz şöyle bitelim.
+
+624
+02:23:52,564 --> 02:24:18,324
+Burada ne yapıyorum? Elimde bir tane dizim var, S dizisi. Sıfırdan başlıyorum indisleri. Bu akış ona göre ayarlanmış durumda. On bir tane elemanı var. Ben burada medianı bulmak istiyorum. İlk olarak bir tane X seçiyorum. Bu X'i random da seçebilirim. Efficient bir şekilde bu arada çalışıyor bu algoritma random seçtiğimde de. Diyelim ki şuradan 7'yi seçtim. Bu benim şu an X'm.
+
+625
+02:24:20,659 --> 02:24:21,579
+Bunu boyayalım.
+
+626
+02:24:23,639 --> 02:24:24,739
+Bunu seçtim.
+
+627
+02:24:29,012 --> 02:24:46,912
+Şimdi akışa göre bana bu select fonksiyonunu ilk çağırdığımda neler geldi? Bir kere iyi belirlemem gerekiyordu. Hangi rengi yani kaçıncı elemanı bulmaya çalışıyorum da iyi biliyorsunuz.
+
+628
+02:24:50,131 --> 02:25:10,332
+Olduğu için bu dizi. Ben burada beşinci elemanı bulmaya çalışıyorum. Sıfırıncı indisten başladığım için. Aradığım eleman bu. Meydanı bulmak istiyorsan bunu böyle işaretlemek zorundayım. Peki x'im ne? x'im yedi. Bunu kendim seçtim. k'ne? k'da x'in indisi. O da dört. Bunu da belirledim.
+
+629
+02:25:17,584 --> 02:25:18,904
+Ayırmam gerekiyor.
+
+630
+02:25:23,059 --> 02:25:24,779
+Şöyle yapalım.
+
+631
+02:25:28,915 --> 02:25:30,915
+Şurayı altına...
+
+632
+02:25:32,915 --> 02:25:33,835
+...yolmadı.
+
+633
+02:25:37,043 --> 02:25:38,731
+Ne?
+
+634
+02:25:44,979 --> 02:25:46,220
+Ne yapıştırma.
+
+635
+02:25:49,683 --> 02:25:51,523
+Ha, pardon. Kaç kere yapışmıştır?
+
+636
+02:26:05,203 --> 02:26:15,783
+Arkadaşlar, gerçekten tatlım günleri çok özlüyorum. Hadi şimdi onu sattık. Neyse, başaracağım.
+
+637
+02:26:17,283 --> 02:26:31,463
+Şimdi, X'i seçtim. Burada X'in X'den küçük elemanları ve X'den büyük elemanları sağda ve solda topladığımı düşünüyorum.
+
+638
+02:26:47,188 --> 02:27:06,668
+B ile ilgileniyorum öncelikle. Niye B ile ilgileneceğim? Daha doğrusu buraya sadece ben B'yi çizeyim. Diğer taraflı uğraşmayayım şu an. Burada benim aradığım elemanın indisi İ5. X'in indisi ise K4.
+
+639
+02:27:10,868 --> 02:27:21,227
+Bu demektir ki benim aradığım eleman şu an sağ tarafta olması gerekiyor. Yani x'in sağ tarafında olması gerekiyor.
+
+640
+02:27:22,347 --> 02:27:28,227
+Ya da önce şey yapayım tamam kusura bakmayın böyle bir iyi organize olamamış bir şekilde çıkmak istemezdim karşınıza.
+
+641
+02:27:28,227 --> 02:27:31,128
+Şunları bir ayarlayalım. Yediden küçük olanları bu tarafa bir alalım.
+
+642
+02:27:38,835 --> 02:28:04,896
+Üç. Atladığım bir şey var mı? Yok galiba. Hediden büyükler de şurada. On üç. Yirmi bir. Dokuz. On dört. Hocam sekiz sağ tarafta olmayacak mıydı? Sekize atladım. Özür dilerim. Ben de bir yanlışlık olduğunu. Şimdi fark ettim. Buraya bir şey mi eksik o zaman yazdım? Yedi şuraya geliyor galiba değil mi? Şurada yedi olmalı çünkü.
+
+643
+02:28:06,355 --> 02:28:28,376
+Tamam, şurada üç olmalı. Şurada sekiz olmalı. Tamam, şunu şey yapalım. Oldu mu şimdi? Beş, üç, altı, yedi. Bu tarafta olanlar. Sekiz, dokuz, vesaire. Şu üç burada kalmış. Bir numarayı unuttum. Hangisi unuttum?
+
+644
+02:28:29,916 --> 02:28:30,756
+On iki.
+
+645
+02:28:31,443 --> 02:28:34,623
+12 yazmamış mı? 12. Şimdi ikiye böldüm.
+
+646
+02:28:38,164 --> 02:28:47,664
+B ve C'yi oluşturdum. Şu tarafın büyük olanları tutuyor. Bu taraf küçük olanları tutuyor. Şu taraf B, bu taraf C.
+
+647
+02:28:49,744 --> 02:29:03,944
+K'yi ile karşılaştırıyorum. İ benim aradığım eleman. Beşinci elemanı arıyorum. Ve 7'yi seçtim. 7'yi seçtiğim için K'yi den büyük mü diye bakıyorum.
+
+648
+02:29:04,755 --> 02:29:06,236
+Şuraya yazalım hemen.
+
+649
+02:29:08,236 --> 02:29:09,036
+Şuraya yazalım.
+
+650
+02:29:09,495 --> 02:29:13,335
+K'yi'den büyük mü? K4, İ5, İ büyük.
+
+651
+02:29:13,795 --> 02:29:20,195
+O zaman aradığım elemanları benim sağ tarafta aramaya devam etmem gerekiyor demektir.
+
+652
+02:29:20,635 --> 02:29:24,355
+Şu dizi üzerinde aramaya devam edeceğim.
+
+653
+02:29:24,675 --> 02:29:26,855
+B dizisi üzerinde aramaya devam edeceğim demektir.
+
+654
+02:29:26,915 --> 02:29:28,175
+Şuraya B dizisini alalım.
+
+655
+02:29:34,868 --> 02:29:59,808
+B dizisini buraya aldım. Şimdi B dizisini aldıktan sonra fonksiyonu tekrar çağırıyorum. Bu sefer hangi parametreler için çağırıyorum? B dizisi için çağırıyorum. B dizisi değil, C dizisi için çağırıyorum. Arkadaşlar, niye uyarmıyorsunuz? C dizisi için çağırıyorum.
+
+656
+02:30:00,435 --> 02:30:13,355
+c dizisi için çağırırken i-k üzerinden işlem yapmam gerekiyor biliyorsunuz. Dolayısıyla c 5-4'den 1 için çağırdım.
+
+657
+02:30:15,036 --> 02:30:23,536
+Şimdi tekrar çağırmış oldum. Yine burada adım olarak ilk adımımda yine bir x belirlemem gerekiyor.
+
+658
+02:30:23,536 --> 02:30:26,015
+Diyelim ki bunu yine random belirliyorum.
+
+659
+02:30:29,363 --> 02:30:38,583
+Şimdi bunu şu ikisinin biraz böyle şey olsun diye yerlerini değiştireceğim arkadaşlar. Şöyle 13 yapayım şunu.
+
+660
+02:30:41,403 --> 02:30:48,304
+Şunu 21 yapayım. Niye değiştiriyorum? Sonlandığı kısımı düzgün olsun istiyorum.
+
+661
+02:30:49,324 --> 02:30:57,003
+Şimdi bunu değiştirdiğimde tabi bunlar indisleri, bunlar da değişiyor. Sıfır. Yeni bir diziyi aldım ya artık bunlar yeni indisler. Dört.
+
+662
+02:30:57,183 --> 02:31:05,523
+Beş, bu da altı. Yeni dizimin hali bu. Yeni bir X seçtim. Diyelim ki şunu seçtim.
+
+663
+02:31:11,443 --> 02:31:16,004
+Bunu seçtikten sonra 13'ü seçtim. Kontrollerime başlıyorum.
+
+664
+02:31:21,652 --> 02:31:36,612
+İ burada bana ne olarak geldi? Çağrı esnasında 1 olarak geldi. X neydi? 13 olarak seçtim. X'in renki şu an 3. Bunlar elime geldi.
+
+665
+02:31:36,612 --> 02:31:42,972
+Bu belgeler elimdeyken tekrar kontrol edeceğim.
+
+666
+02:31:49,716 --> 02:32:05,015
+Diyeceğim ki, K ile İ'yi kontrol ediyorum. Çünkü nasıl gidiyordu? Seçtikten sonra K'i'ye eşit mi? Hayır değil. K'i'den büyük mü? Bakıyorum. K3, İ1, K'i'den büyük. O zaman select B'i diyeceğim.
+
+667
+02:32:05,015 --> 02:32:13,596
+Yani aradığım indise sahip olan eleman, X'den daha küçük bir elemanmış. O yüzden aramama B üzerinden devam edeceğim.
+
+668
+02:32:14,324 --> 02:32:23,283
+B üzerinden devam edeceğim. B üzerinden devam etmek demek aslında şu kısmıyla devam etmek demek.
+
+669
+02:32:24,564 --> 02:32:25,904
+Şunlar olmadan.
+
+670
+02:32:30,739 --> 02:32:33,180
+Hocam tekrar sıralamayacak mıydık yukarıda?
+
+671
+02:32:35,279 --> 02:32:37,840
+Sıralayacağız haklısın. Sıralama opsiyonunun şeyini atladım.
+
+672
+02:32:38,399 --> 02:32:40,979
+13'e göre sıralamamız gerekiyor. Onu söylemeyi unuttum size.
+
+673
+02:32:41,680 --> 02:32:43,919
+13'e göre sıraladığım vakit şuraya 12 geliyor.
+
+674
+02:32:45,379 --> 02:32:50,319
+Şuraya 13 geliyor. Şuraya 14 geliyor. Bir şey katırırsam gözler lütfen uyarı.
+
+675
+02:32:50,319 --> 02:32:55,115
+Şuraya 14 geliyor. Şuraya...
+
+676
+02:32:55,476 --> 02:33:22,996
+21 geliyor. Şuraya 16 geliyor. Oldu mu şimdi? Sıraladım. Sıraladıktan sonra karşılaştırmamı yaptım. Aradığım elemanın indisi küçük olduğu için bu sefer sol tarafta aramaya devam edeceğim dedim. Sol tarafı B olarak aldım. Şu kısmı buraya koydum.
+
+677
+02:33:23,443 --> 02:33:29,684
+B dizi böyle. Çünkü üç birden büyüktü. O yüzden böyle çağırdım.
+
+678
+02:33:31,123 --> 02:33:38,743
+Şimdi bunun üzerinde tekrar bir çağrı yaptım. Bu B ve bir için direkt fonksiyonumu çağırdım.
+
+679
+02:33:40,884 --> 02:33:47,283
+Bu bunun sonucu. Şimdi bunun üzerinden tekrar bir şurada X belirliyorum.
+
+680
+02:33:47,283 --> 02:33:49,623
+Diyelim ki belirlediğim X dokuz olsun.
+
+681
+02:33:52,724 --> 02:34:19,224
+Şimdi benim iyi değerim ne olur? Aradığım değer 1. Belirlediğim x'im 9. x'imin indisi 1. Şimdi şu kontrole bakıyorum. Sıralamam gerekiyor tabii önce de. Sıraladığım zaman aynı şeyi elde edeceğim yine. Sonra kontrole bakıyorum ki eşit mi? Evet eşit. Sonunda buldum medyanı.
+
+682
+02:34:20,051 --> 02:34:30,971
+Sizi inşallah sıkmadım arkadaşlar. Biraz tahminimden böyle şey oldu. Akışı biraz geçişi zor oldu. Şimdi akışı anladıysa, algoritmanın akışının analiz üzerinden devam edelim. Var mı soru?
+
+683
+02:34:35,379 --> 02:34:55,899
+Şimdi, şuradan devam ediyorum. Bunu anladık. Şimdi şu konularda bir konuşalım. X'i nasıl seçmeliyim? İyi durum senaryosunda ne olur? Kötü durum senaryosunda bu iş nasıl ilerler? Bunlarla alakalı var mı? Benle bir tane paylaşmak isteyen.
+
+684
+02:35:01,716 --> 02:35:24,476
+Balans bir şekilde ayıracak şekilde seçmek zorundayım. Çünkü aslında yaptığım şey her seferin dizinin belirli bir kısmını atmak. Belirli bir kısmı search dışında bırakıyorsunuz, elimine ediyorsunuz. İyi durum senaryosunda bir hamlede buluyorsunuz. Kötü durum senaryosu için nasıl bir x seçmeniz gerekir?
+
+685
+02:35:27,252 --> 02:35:28,731
+En küçük ya da en büyük.
+
+686
+02:35:29,031 --> 02:35:35,112
+Aynen öyle. Her seferinde en küçük, her iterasyonlu ya da en büyük seçerseniz kötü durum senaryosu oluşmuş olur.
+
+687
+02:35:36,051 --> 02:35:38,971
+Buna master teoremi uygulayabilir miyiz? Bu da son başlığımız olacak.
+
+688
+02:35:39,932 --> 02:35:44,711
+Şimdi master teoremi uygulayabilmemiz için problemin sayısı hakkında bir bilgi sahibi olmamız gerekiyor.
+
+689
+02:35:44,711 --> 02:35:51,912
+Master teoremini uygulatsaydık, uygulayabilseydik ve biz bunu her seferinde ikiye böldüğümüzü, bu problemi.
+
+690
+02:35:52,211 --> 02:35:58,932
+kabul etsek, o zaman nasıl bir çözüm, nasıl bir karşımıza karmaşıklık çıkar?
+
+691
+02:35:59,851 --> 02:36:07,711
+Şimdi pretend diyorum, tam olarak ikiye böldüğümü, çünkü X burada önemli ya, X'in seçim şekli benim algoritmamın karmaşıklığını değiştiriyor.
+
+692
+02:36:07,711 --> 02:36:16,711
+Tam olarak böyle bölsem zaten birinci şeyi de bulacağım, o ayrı. Balans bir şekilde böldüğümü kabul edersem,
+
+693
+02:36:17,172 --> 02:36:20,652
+O zaman benim master teoremim karmaşıklığım hakkında ne söylemiş olacak?
+
+694
+02:36:21,192 --> 02:36:27,272
+Şimdi normalde biz recursive olarak ikiye bölmeyle alakalı işlem yaptığımızda genelde şuraya iki yazıyorduk hatırlarsanız.
+
+695
+02:36:27,272 --> 02:36:33,412
+Buna çok benziyordu karmaşıklığımızla ilgili denklememiz ama şuraya iki yazıyorduk.
+
+696
+02:36:33,512 --> 02:36:38,292
+Burada iki tane parça ile birden ilgilenmiyorum. Bir tanesini tamamen elimine ediyorum.
+
+697
+02:36:38,632 --> 02:36:42,792
+Dolayısıyla aslında burada kaç sayım benim? Bir. A bir. İkiye bölüyorum.
+
+698
+02:36:43,167 --> 02:37:00,308
+Birleştirme işlemi yapmamız gerekiyor. Burada aslında birleştirmeden ziyade bölme benim karmaşıklığımı etkileyen bir şey. Çünkü ikiye bölüyorum. Bütün elemanları gezmem gerekiyor. Dolayısıyla o örnek burada bir karmaşıklık var.
+
+699
+02:37:00,308 --> 02:37:09,747
+Burada eğer master teoremini uygulayabilseydim, tam olarak şunu bilebilseydim, o zaman benim karmaşıklığım o örne denk gelecekte. Doğru mu? Bir kere.
+
+700
+02:37:10,224 --> 02:37:15,083
+Başlayacaktım. Bir kere bunları ayıracaktım. Bulacaktım. Çıkacaktım zaten. Ama bunu yapamıyorum.
+
+701
+02:37:17,183 --> 02:37:19,224
+Şimdi ikiye bölmek yerine...
+
+702
+02:37:19,379 --> 02:37:43,919
+İkiye Bölebilecek Balans bir şekilde x'i bulabilmek yerine tam ikiye bölmeyen bir çözüm üretmiş olsaydım hala o yan karmaşıklığında kalır mıydım? Şimdi normalde ben bencanı bulmak için enlogen ile bu işi zaten sort yaparsam çözüyorum bunu. Biliyorsunuz altına düşmeye çalışıyorum. Diyelim ki tam olarak ikiye bölemedim. Bulduğum parça yarıma yakın bir parça olsun. Yediren bölü on diyelim ki.
+
+703
+02:37:44,564 --> 02:37:54,103
+7N bölü 10'luk bir kısmını her seferinde aldım. Bunun üzerinden Rikosyon'u yapmaya devam ettim. O zaman benim karmaşıklığım ne olur?
+
+704
+02:37:54,708 --> 02:38:19,648
+Master Teorem'de ben bunu sabitleyebilseydim, işte o zaman karmaşıklığım böyle olacaktı. A yine 1 çünkü bir tane sub problemim var. Sub problemimin size n bölü b'ydi biliyorsunuz. Burada her birinin elemanı 7n bölü 10 olduğu için b ters bölmede var biliyorsunuz. Ters düşünürseniz 10 bölü 7 olacak b. d ise 1 olacak çünkü zaten benim burada ayırmak için karmaşıklığım belli.
+
+705
+02:38:22,708 --> 02:38:44,188
+10 bölü 7 birden büyük olduğu için ve de 1 olduğu için yine benim enlik bir karmaşıklığım var. Tam olarak ikiye bölemesem bile karmaşıklığım ende kalıyor. Bunu anlıyorum ben. Dolayısıyla yapmam gereken şey mümkün olduğunca balans bölebilecek bir algoritma bulabilmek.
+
+706
+02:38:44,659 --> 02:38:55,260
+Peki, kötü durum senaryosu için en küçük ya da en büyük seçersen kötü durum senaryosu gerçekleşmiş olur. Doğru gerçekleşmiş olur. Peki, o zaman karmışlık ne olur?
+
+707
+02:39:10,835 --> 02:39:20,695
+Şimdi şöyle düşünelim. En küçük ya da en büyüğü seçmiş olsaydık. O zaman Relation'ım nasıl olacaktı?
+
+708
+02:39:21,876 --> 02:39:49,876
+Her seferinde bir tane seçecektim. Arkadaşınızın da söylediği gibi. Geriye kalan kısım üzerinden recurrence'larımı devam etmek zorunda kalacaktım. N-1'lik bir bilgim olacaktı elimde. Bunlar için yine bölmek için O'yan gitmek zorunda kalacaktım. A1 olacaktı, Bn bölü N-1 olacaktı. N bölü B'lik size'lara sahip olduğu için her bir problem. D'de N'den dolayı 1 olacaktı. Şu an yine O'yan oluyor mu? Hayır olmadı.
+
+709
+02:39:49,876 --> 02:40:07,536
+Aslına bakarsanız n² oluyor. Düşününce neden böyle oluyor? En küçük elemanı seçtiniz. Bu eleman için ikiye ayırma işlemini zaten n tuttu. Sonra n-1 için tekrar recurrence çağırdınız.
+
+710
+02:40:07,968 --> 02:40:28,368
+Tekrar o n-1 için bölme işlemi yaptınız. n-2 için recurrence çağırdınız. Tekrar bölme işlemi yaptınız. Aslında n-2 bölüyor. Biraz altına düşüyor küçüldükçe dizi. Ama o n-2'ye tekabül eden bir running time'ınız var. Şimdi bu problemi yaşamamanız gerekiyor. Dolayısıyla mümkün olduğunca balans bir şekilde bu işi çözmelisiniz.
+
+711
+02:40:34,484 --> 02:40:54,844
+Şöyle bir metot kullanabilirim. Öncelikle S dizimi her biri 5 eleman alan dizilere bölüyorum. 5 tane elemanı olan kolonlar oluşturuyorum. Bu kolonların sayısı m bölü 5 oluyor.
+
+712
+02:40:55,283 --> 02:41:19,324
+Tabi bunu yukarı doğru yuvarıyorsunuz. Çünkü kolonlardan bir tanesi, beşe tam bölünebilen bir sayı yoksa elimde, kolonlardan bir tanesi beşten az eleman içenecek. Her kolonu sort ediyorum. Şimdi burada sort var. Zaten sorttan kaçınmak için bu işi yaptım diye aklınıza gelebilir. Ama her bir kolonun eleman sayısı beş olduğu için sortunuzu constant time'de yapabiliyorsunuz.
+
+713
+02:41:19,700 --> 02:41:45,200
+Toplarınızı yaptınız. İkisi bulabilmek için medyanların medyanını bulmanız gerekiyor. Burada aslında aynı fonksiyonu tekrar çağırmanız gereken bir durum var. Şimdi bir şekil üzerinde görüp anlayalım. Diyelim ki benim elimde şöyle bir dizi var. Ben bunu şey yapmamış mıyım ya? Pardon slide sunum aldığını daha büyük görüyorum. Benim elimde şöyle bir dizi var. Bunu öncelikle kolonlarına ayırıyorum.
+
+714
+02:41:46,899 --> 02:41:54,959
+1, 8, 9, 3, 15, 5, 18, 4, 6 diye sırayla 5 elemanlı dizileri ayırdım. Birinci işlemin sonucunda.
+
+715
+02:41:56,000 --> 02:42:01,939
+Şimdi bunlar için, bu diziler için sort işlemi kendi içerisinde yapacağım.
+
+716
+02:42:02,840 --> 02:42:06,939
+Mesela birincisi 1, 8, 9, 3, 15 olan 1, 3, 8, 9, 15 oldu.
+
+717
+02:42:07,700 --> 02:42:11,760
+İşte 5, 18, 4, 6 olan 4, 5, 6, 18, 35 oldu.
+
+718
+02:42:12,211 --> 02:42:25,112
+Bunları constant time'da yapabiliyorum. Elimde her birinin medyanı var artık. 8, 6, 14 ve 7. Tüm bunların medyanını bulmak istiyorum. Tüm bunların medyanını bulmak için bunları sıralasaydım.
+
+719
+02:42:25,652 --> 02:42:30,551
+Yine orada n'e bağlı bir değer üzerinden, yani n bölü 5 çünkü kolon var.
+
+720
+02:42:30,952 --> 02:42:33,832
+Karmaşıklık, orada sorting yine devreye girecekti.
+
+721
+02:42:33,912 --> 02:42:39,731
+Bunu yapmak yerine, sort yapıp sıralamak yerine burada az önce yazdığım fonksiyonu, yazacağım fonksiyonu kullanacağım.
+
+722
+02:42:40,191 --> 02:42:46,031
+Dolayısıyla bunları medyanını bulduğum vakit, medyanların medyanını bulduğum vakit karşıma 7 çıkacak.
+
+723
+02:42:46,031 --> 02:42:49,031
+Şimdi 7'yi...
+
+724
+02:42:49,780 --> 02:42:57,180
+Bu tüm dizi için X olarak seçmek, Recurrence'ı o an çağırdığım dizi için 7'yi X olarak seçmek bana ne sağlayacak?
+
+725
+02:42:58,400 --> 02:43:04,920
+Şurada kırmızıyla gördüğünüz kısım 7'den küçük olanlar. Bunların 7'den küçük olduğunu garantilemiş oluyorsunuz.
+
+726
+02:43:04,920 --> 02:43:08,908
+Burada 6'da dahil aslına bakarsınız. Şu taraftakiler ise...
+
+727
+02:43:09,363 --> 02:43:17,243
+7'den büyük olanlar. Bunların da 7'den büyük olduğunu garantilemiş oluyorsunuz. Çok büyük bir miktarda zaten ayırmış oluyorsunuz güzel bir şekilde.
+
+728
+02:43:19,003 --> 02:43:26,463
+Şimdi sort işlemini de yine yazacağım programla bulmaya çalışacağım.
+
+729
+02:43:26,463 --> 02:43:31,463
+Ama buraya baktığınız zaman diyorsunuz ki bu Pisa da kod üzerinden hareket ederseniz.
+
+730
+02:43:32,308 --> 02:43:57,688
+Bir tane dedi parçası ve istediğim renk için çalıştırıyorum fonksiyonumu. X'i seçmemi bekliyor. Tamam. X'i seçerken tekrar kodu çalıştıracakmışım. Tekrar medyam bulacağım. Yine bu pik X dediği şey bir fonksiyonsa bunun içinde yine selekli çalıştıracağım. Bir daha selekli çalıştıracağım. Bu bir kendi içerisinde sonsuza gelen bir döngü oluşturacak. Bundan kaçınmak için bu Pesodio kodu nasıl update etmeliyim?
+
+731
+02:44:01,012 --> 02:44:02,132
+Sorum anlaşıldı mı?
+
+732
+02:44:11,987 --> 02:44:12,628
+Fikir.
+
+733
+02:44:16,027 --> 02:44:24,247
+Şimdi biz bir recursive fonksiyon yazarken neye dikkat ediyoruz her seferinde? Hangi dilde kodlarsanız kodlayın.
+
+734
+02:44:24,747 --> 02:44:26,887
+Çıkışının belirli olması gerekir.
+
+735
+02:44:28,147 --> 02:44:32,507
+Çıkış keyizini mutlaka karşılaşacağı bir keyiz olarak belirlemeniz gerekir.
+
+736
+02:44:32,567 --> 02:44:35,308
+Yoksa sonsuza giden bir durum söz konusu olur.
+
+737
+02:44:35,768 --> 02:44:38,147
+İşte burada çıkışı belirleyecek olan şey.
+
+738
+02:44:38,592 --> 02:44:42,592
+Sıralayacağınız, medyanını bulacağınız elemanların...
+
+739
+02:44:50,963 --> 02:45:02,963
+Belirli bir miktarın altına düşmesi gerekiyor ki artık orada computational olarak constant time'da ben bu x'i median of medianları bulabileyim.
+
+740
+02:45:03,644 --> 02:45:06,543
+Şuraya şöyle bir ekleme yapmanız gerekiyor.
+
+741
+02:45:08,024 --> 02:45:15,224
+Diyeceksiniz ki eğer serinin eleman sayısı belirli bir reasonable bir constantın altındaysa o zaman normal bir şekilde sort edebilirsin.
+
+742
+02:45:16,084 --> 02:45:26,783
+Ve sonrasında da döndürürsün. Aslında burada S'i döndürür, yani sort edip döndürebilirsin. Sort edip döndürdüğü zaman artık bu noktada.
+
+743
+02:45:27,316 --> 02:45:55,316
+Medyanını bulmak kolaylaşacaktır. Yani bir noktadan sonra artık recursive halden çıkmış olmanız gerekiyor. Çıkmak için size bir condition gerekiyor. İşte o condition belirli bir belirlediğiniz bir constantın altına inmesi eleman sayısının. Belirli bir constant altına indiğinde örneğin 5 de diyebilirsiniz buna. 10 da diyebilirsiniz. Sabit bir şekilde ben bunu bulabilirim. Ondan sonra artık median of median bulmak yerine kendimi sort edip medianını bulurum ve onu...
+
+744
+02:45:55,316 --> 02:46:01,956
+X olarak seçerim ve gönderirim diyebilirsiniz. O zaman burada bu sonsuz döngüden kurtulmuş oluyorsunuz.
+
+745
+02:46:06,164 --> 02:46:09,884
+Şimdi peki bunun komplekslisi için ne söyleyebiliriz?
+
+746
+02:46:11,424 --> 02:46:21,044
+Şimdi şu kırmızılar noktalar benim az önce sayılarla size sütunlara yazdığım sayıların her biri.
+
+747
+02:46:21,044 --> 02:46:25,724
+O örnekte küçükten büyüğe doğru sıralanmış bir örnekte. Onun üzerinden anlatmıştım.
+
+748
+02:46:26,104 --> 02:46:30,724
+Burada büyükten küçüğe doğru sıralanmış bir örnek var.
+
+749
+02:46:31,224 --> 02:46:32,044
+Şimdi burada benim...
+
+750
+02:46:32,564 --> 02:46:54,283
+Yazmaya çalıştığım şey aslında bunu relation'la yazacağım. Sonrasında mahsır teoremle bu işi ispatlayamayacağımız için mathematical induction'la substitution yapacağız ama onu bu hafta girmeyeyim artık. Bunun sadece relation'ını yazalım. Nasıl yazmamızı görelim. Haftaya devam edelim.
+
+751
+02:46:55,379 --> 02:47:10,919
+Benim elimde böyle kolonlar var. Kaç tane kolon var? Eğer n ise benim eleman sayım, n bölü 5, çok özür dilerim, n bölü 5 tane kolonum var. Şimdi bu kolonlardan, bunlar yani şöyle devam ediyor, bu tarafa doğru devam ediyorlar, bu tarafa doğru devam ediyorlar.
+
+752
+02:47:10,919 --> 02:47:22,979
+X'i seçtim. Buradaki elemanların şu kısmı X'den büyük, bunu garanti edebilirim. Bu kısmı da X'den küçük, bunu da garanti edebilirim.
+
+753
+02:47:24,084 --> 02:47:50,564
+X'i seçtiğimde. Şimdi şöyle diyorum. Diyorum ki yan yana n bölü 5 sütun varken bunların yarısı x bölü 10'u yani x bölü 5'in yarısı x bölü 10 olduğu için x'in sağında. Bunlardan ikisi hariç şu ve şu. Diğer kolonlarda 3'er eleman var hepsinde. Medyan 3. eleman olduğu için. Bunların böyle ilerlediğini düşünün.
+
+754
+02:47:50,963 --> 02:48:11,463
+O yüzden şöyle bir relation yazabiliyorum recurrence'a dair. Diyorum ki yine burada bir reasonable constant vermeniz gerekiyor. Bunların aslında neler olduğunu yine önümüzdeki hafta neden bunları seçtiğimizi söyleyeceğiz ama çok da aslında şey değil, belirli bir sınırın üzerinde olması yeterli. Çok da kritik değil.
+
+755
+02:48:18,368 --> 02:48:44,907
+Zaten constant time'de bu işi yapıyorum. Benim karmaşıklığım o bile düşüyor. Yok eğer bunun üzerindeyse o zaman recurrence çalıştırmam gerekiyor. Çalıştırdığım recurrence aslında iki yerde recurrence çalıştırıyorum. Birincisi medyanların medyanını bulmak için recurrence çalıştırıyorum. Aynı select fonksiyonunu. İkincisi sonraki işlemleri yapabilmek için recurrence çalıştırıyorum. Bölüp bölüp gidebilmek için recurrence çalıştırıyorum.
+
+756
+02:48:46,195 --> 02:49:04,236
+Şimdi benim en bölü 10 tane x'in bu tarafında kolonum olduğunu düşündüm. Bu kolonlardan iki tanesinde şunda ve şunda iki eleman var. Diğerlerinde üçer eleman olduğunu düşündüm.
+
+757
+02:49:10,324 --> 02:49:36,943
+Eksi 6 tane elemanım benim. Bir tarafta mutlaka var. Şimdi eğer bunu tamamından çıkartırsam, 7 bölü 16 tane elemanımın en fazla olduğunu görürüm. Recurrence yapabilmek için elimde. Böldüğüm vakit böyle bir şey elde edeceğim. Dolayısıyla ben bu kadar eleman için bir tane tarafı elimine ettim. Bu kadar eleman için recurrence'ı çalıştırıyorum. Her seferinde select fonksiyonumu.
+
+758
+02:49:37,523 --> 02:49:56,883
+Her seferinde meydan of meydanı bulmam gerekiyor. Meydan of meydanı bulabilmek için de 5'e böldüğüm için n'e, n bölü 5 tane kolonum olduğu için bu kadar. Bunun için çalıştırmam gerekiyor. Burada da böyle bir karmaşıklık var. Bir de buna o n'e eklemem gerekiyor. Bunu niye ekliyorum?
+
+759
+02:50:00,788 --> 02:50:07,808
+Ayırmak zorunda kaldığım için diziyi, eleman üzerinden. Bunu da eklemek zorunda kalıyorum.
+
+760
+02:50:08,108 --> 02:50:09,528
+Şimdi bu benim Recurrence Dation'ım.
+
+761
+02:50:10,848 --> 02:50:17,188
+Burada bunu artık elimizdeki hafta Mathematical Induction'la nasıl çözebiliriz? Başka nasıl şeyleri bununla çözebiliriz?
+
+762
+02:50:17,808 --> 02:50:21,108
+Onları yapıyor olacağız. Sorunuz var mı buraya kadar?
+
+763
+02:50:26,835 --> 02:50:41,695
+Web üzerinden kayıtları izleyebiliyorsunuz sanırım. Ama üzerinde yazarak çalışırız falan dersiniz diye. Ben yine web sites üzerinden şeyleri paylaşıyor olurum. Slides'leri. O zaman haftaya görüşmek üzere diyeyim eğer sorunuz yoksa.
+
+764
+02:50:47,603 --> 02:50:50,483
+Teşekkür ediyorum arkadaşlar katıldığınız için. Görüşmek üzere.
