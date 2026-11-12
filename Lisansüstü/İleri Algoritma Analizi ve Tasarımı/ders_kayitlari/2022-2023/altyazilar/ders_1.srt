@@ -1,0 +1,575 @@
+1
+00:06:40,500 --> 00:06:53,060
+Merhabalar arkadaşlar, günaydın. Hoş geldiniz. 18 kişiyle başlıyoruz. Zamanında derse gelen 18 öğrencimle. Sesim geliyor değil mi? Bir sıkıntı var mı?
+
+2
+00:06:54,004 --> 00:07:11,824
+Evet hocam, diliyorum. Günaydın. Günaydın. Öncelikle geçmiş olsunla başlayalım. Yüz yüze yapamıyoruz dersimizi deprem sebebiyle. Var mı aranızda bilmiyorum. Deprem bölgesinde ailesi ya da yakını olan hepimizin yakını sonuçta. Oradaki insanlar çok geçmiş olsun demek istiyorum.
+
+3
+00:07:11,824 --> 00:07:21,864
+Bugün biraz böyle giriş yapacağız sadece birbirimizi tanımak için. Dersin içeriğinde neler olacak? Bunun üzerinden bir hızlıca geçeceğiz.
+
+4
+00:07:22,004 --> 00:07:49,104
+Kısa bir ön ders yapmak istedim. Zaten şu an katılımımız düşük. Ders seçimleri de hala devam ediyor mu çok bilmiyorum. Bir giriş yapıyor olacağız. İrem Türkmen benim ismim. Bu dönem beraber olacağız bu derste. Şu an aslında hali hazırda izindeyim hala. Dolayısıyla bölüm içerisinde olmuyorum. Yazışmalarımızı, görüşmelerimizi online yapıyor olacağız bir süre.
+
+5
+00:07:50,387 --> 00:07:52,387
+Şimdi bu derste kullandığım...
+
+6
+00:07:53,043 --> 00:08:17,623
+Kaynaklar bunlar. Tabii internette bolca kaynak var. Siz zaten artık belirli bir noktadasınız. Biliyorsunuz nasıl araştırma yapılır, nereden güvenilir, kaynaklardan yararlanılabilir ama burada özellikle ilk kitap çok güzel bir şekilde organize edilmiş. Ben de bunlardan sıklıkla faydalanıyor olacağım. Nasıl bir yol izleyeceğiz grading için?
+
+7
+00:08:18,548 --> 00:08:35,488
+Aslında biliyorsunuz bir bilinmez dönem var karşımızda. Hibrite geçecek mis vesaire belirli değil. Şimdiki planım bir vize, bir final ve bir proje şeklinde ilerlemek. Ama bunu biraz zaman ilerledikçe belki oturtacağız.
+
+8
+00:08:36,648 --> 00:08:38,307
+Şimdi neler bekliyor bizi bu derste?
+
+9
+00:08:46,836 --> 00:09:03,216
+Temel kavramları hatırlatarak başlayacağım. Şimdi farklı okullardan geliyorsunuz. Farklı disiplinlerle yetiştiniz. Dolayısıyla belirli bir bez dahiline oturtmak istiyorum. Hatırlatmalarla o yüzden gitmek istiyorum. Hep bildiğimiz şeyler aslında Big O, Big Theta, Big Omega bunlardan bahsedeceğim.
+
+10
+00:09:05,440 --> 00:09:14,360
+Ve Recursive ve Non-Recursive algoritmaları nasıl analiz ederiz? Recurrence Relation nedir? Nasıl çıkarırız?
+
+11
+00:09:14,880 --> 00:09:22,420
+İşte Backward Substitution'la bir Initial Value için bu kapalı formülünü Recurrence Relation'a nasıl buluruz? Bunları hatırlatıyor olacağım.
+
+12
+00:09:24,560 --> 00:09:28,268
+Sonra Divide and Concur algoritmalarına...
+
+13
+00:09:28,371 --> 00:09:43,971
+Giriş yapmayı düşünüyorum. Burada önce Brute Force ve Excessive Search gibi algoritmalardan biraz bahsedip, bunları çünkü Divide and Conquer algoritmalarıyla karşılaştırarak analizleri üzerinde yorumlar yapacağız.
+
+14
+00:09:44,651 --> 00:09:52,851
+Birkaç Divide and Conquer benzeri, Decrease and Conquer, Transform and Conquer gibi algoritmalar var. Onlardan bahsediyor olacağım.
+
+15
+00:09:53,312 --> 00:10:00,611
+Bunları zaten data yapıları algoritmalar dersi ve algoritma analizi dersleri. Bu tarz bevzer dersler programımızda vardır.
+
+16
+00:10:01,392 --> 00:10:04,991
+Yani bir şekilde aşina olduğunuzu, hatırladığınızı düşünüyorum.
+
+17
+00:10:04,991 --> 00:10:12,872
+Biraz açıkçası sizden gelen yorumlar üzerine bu temel konuları geçme hızımızı ayarlıyor olacağız.
+
+18
+00:10:13,011 --> 00:10:16,892
+O yüzden interaktif olmasını da ilk dediğim bir ders. Onu rica edeceğim sizden.
+
+19
+00:10:20,596 --> 00:10:35,995
+algoritmaları var sonrasında. Burada da Open Ashing, linkli listelerden faydalanmamız ya da Close Ashing. Bunlara değineceğiz. Bunları tabii tüm bu algoritmalar aslında her seferinde karmaşıklık açısından da irdeliyor olacağız.
+
+20
+00:10:36,155 --> 00:10:39,375
+Algoritmayı anlatıp karmaşıklığı üzerine konuşuyor olacağız.
+
+21
+00:10:39,840 --> 00:10:54,880
+Dinamik programlama kavramı sonra karşımıza çıkıyor. Burada biliyorsunuz programın ilk badesi aslında planlamayı temsil eden bir kelime. Dinamik programlamanın içerisinde sap problemler tanımlı bu problemleri çözüyor olacağız.
+
+22
+00:10:55,312 --> 00:11:11,971
+Bir takım örnekler var. Dinamik programlamayı rahat anlamamızı sağlayacak. Bu örnekler üzerinden anlatıyor olacağım. Sonrasında da normalde dinamik programımı biliyorsun optimizasyon problemleri için kullanılan bir çeşitli yöntem.
+
+23
+00:11:11,971 --> 00:11:21,912
+Ve hangi tür problemle karşılaştığımızda bunu dinamik olarak çözmeliyiz, dinamik programlamayla daha doğrusu çözmeliyiz, araştırıyor olacağız.
+
+24
+00:11:23,508 --> 00:11:42,948
+Sonrasında grid algoritmalar, açgözde algoritmalar var. Grid algoritmalar ne yapıyor biliyorsunuz? O anki en iyi çözüm üzerinden ilerliyor. Grid algoritmaların da yine anlamak için nasıl çalıştığını, Activity Selection Problem üzerinden gideceğiz.
+
+25
+00:11:45,519 --> 00:12:10,279
+Çözme Tekniklerine Bakacağız. Ve yine sonrasında grid algoritmalarla alakalı bilgi oturduğunda, grid stratejileri ne zaman kullanmalıyız? Hangi özellikleri olmalı? Bir problemin bu şekilde çözülebilmesi için diye konuşacağız. Muhtemelen 8. hafta gibi bir yerde bir vizeniz olacak. Sonrasında amortiz analize geçiyoruz.
+
+26
+00:12:10,836 --> 00:12:22,536
+Bu zaman karmaşıklığına dair bir metot. Bugün ben size worst case, best case, average case kompleksiklerden biraz bahsedeceğim hatırlatmak için. Amortize analiz de aslında.
+
+27
+00:12:23,379 --> 00:12:40,400
+Bunlardan biraz daha worst case'in pesimistik olduğunu düşünüp, bunu birazcık daha iyileştirmek, daha gerçeğe yakın bir sonuç elde edebilmek için önerilen bir analiz metodu. Uygulamak için kullanılan aggregate analiz, accounting metod var. Bunlardan bahsedeceğiz.
+
+28
+00:12:40,620 --> 00:12:51,279
+Dynamic table'lar, amortize analizin kullanılmasına çok uygun bir problem olarak karşımıza çıkıyor. Dynamic table'lar üzerindeki işlemler. Bunlar üzerinden de uygulama örnekleri veriyor olacağım.
+
+29
+00:12:51,379 --> 00:13:03,759
+Şimdi, muhtemelen önümüzdeki hafta Data Structure'ları nelerdir? Belki sizi hatırlatmak için birkaç slide hazırlıyor olurum.
+
+30
+00:13:03,759 --> 00:13:13,000
+Ama aslında Advanced Data Structure dediğimiz, yani bu zamana kadar karşılaşmamış olabileceğiniz yapılardan biraz bahsetmek istiyorum.
+
+31
+00:13:13,423 --> 00:13:30,423
+İşte Balance Search Tree, AVI Tree, yani Self Balancing Bir Binary Search Tree aslında gibi, Fibonacci Hip gibi. Bunları genişletmek mümkün. Bunlardan bahsedeceğim. Belki bunu bir iki hafta gibi de uzatabiliriz.
+
+32
+00:13:40,416 --> 00:13:55,916
+Graf algoritmalarında search yapabilmek için işte Bread First Search, Depth First Search, Topological Search bunları bir hatırlatacağım size. Sonrasında bu hafta yine esnek buna beraber karar veririz.
+
+33
+00:13:56,207 --> 00:14:11,207
+Sunumlar şeklinde aslında bir süreç geçirmek istiyorum. Çok farklı algoritmalar var. Hepsine değinmemiz mümkün değil. Belki benim atadığım, belki sizin seçtiğiniz bu algoritmalar üzerinden sunumlar yapalım istiyorum.
+
+34
+00:14:12,347 --> 00:14:18,347
+Sonrasında yine devam edecek olduğumuz zaman da derslerimizde string matching konusu karşımıza çıkıyor.
+
+35
+00:14:19,700 --> 00:14:47,000
+String Matching niçin önemli biliyorsunuz? Örneğin bir DNA sekansınız var. Burada belirli bir paterne arıyorsunuz. Ya da internet search yapıyorsunuz. Alakalı web page'lerini bulmaya çalışıyorsunuz gibi. Bunun için BruteForce String Matching algoritmaları neyi kullanılabilir? Ya da işte farklı algoritmalar var. RubinCard falan gibi. Bunlar üzerinde örneklendirme yapalım istiyorum.
+
+36
+00:14:47,827 --> 00:15:08,867
+Ve bir de Approximation Algoritmaları var. Bunlar NP-Konglet problemler için. Yani aslında yaptığı şey near optimal solution'lar bulabilmek. Bunun üzerine geliştirilmiş algoritmalar var. Bunları birkaç farklı problem üzerinden yine konuşuyor olacağız.
+
+37
+00:15:11,700 --> 00:15:25,060
+Şimdi bir Hello World tadında bir algoritma nedir diye üzerinden geçecek olursak, biliyorsunuz aslında bir algoritmanın tanımı karmaşıklığa muhal vermeyecek Instructionlar dizisini.
+
+38
+00:15:26,035 --> 00:15:40,296
+Bir problemi çözebilmek için ve ne olduğu sınırları belli, yasal bir input kullanarak bu işi yapmak için oluşturulmuş bir yapı aslında. Yani bir instruction lacisi ve bir sonuç üretiyor.
+
+39
+00:15:42,436 --> 00:15:50,296
+Şimdi bir algoritmayı nasıl zaman iyi olarak adlandırırız? Efficient olması gerekir.
+
+40
+00:15:51,316 --> 00:16:11,476
+Tabi ki bu dersin de konusu Time ve Space üzerinde analiz etmek gerekiyor. Problemi genelleştirebilmeli, basitçe çözebilmeli mümkün olduğunca doğru sonuç verebilmeli. Bunları arıyoruz. Daha düşük karmaşıklığı olan, daha optimum algoritmaların daha iyi olduğunu söylüyoruz.
+
+41
+00:16:19,316 --> 00:16:23,016
+Büyük adımlar atmamızı sağladı. Space açısından o kadar değil ama.
+
+42
+00:16:24,176 --> 00:16:27,136
+Bu algoritma, bir algoritma da bunları arıyor oluyoruz.
+
+43
+00:16:27,196 --> 00:16:31,156
+Tabi burada objektif olarak bunları değerlendirmek aslında bir yandan da bu dersin konusu.
+
+44
+00:16:32,083 --> 00:16:48,523
+Şimdi çözeceğimiz örnekler temel data yapıları üzerine kurulu ve bunlardan biraz daha karmaşık yapılar var. Dolayısıyla bu data yapılarını hatırlamak gerekiyor. Mutlaka lisans eğitiminizde bunlardan implement etmişsinizdir.
+
+45
+00:16:54,964 --> 00:17:06,183
+Belki bir hatırlatmaya kendi açınızdan ihtiyaç duyuyorsanız, bu haftayı hızlıca bunları bir hatırlayarak geçirebilirsiniz. Dediğim gibi ben önümüzdeki hafta muhtemelen hatırlatacağım zaten size.
+
+46
+00:17:09,144 --> 00:17:11,304
+Şimdi bir algoritmanın çalışma hızı neye bağlı?
+
+47
+00:17:11,859 --> 00:17:35,119
+Birincisi, sistem bağımsız olan etkenler var ki bu dersin yine konusu olan algoritmanın kendisi. Bir de sistem bağımlı etkenler var. Donanımımız, yazılımımız ve üzerinde çalıştığımız kompallerimiz gibi bunların bir bütünü halinde algoritmanın efektifliği şekilleniyor.
+
+48
+00:17:37,556 --> 00:17:49,436
+Bir algoritmanın aslında çalışma zamanının ölçmek istediğimizde input size karşımıza çıkıyor. En önemli etken parametre olarak.
+
+49
+00:17:54,867 --> 00:17:57,807
+Çalışma zamanınızı çok etkiliyor, doğrudan etkiliyor.
+
+50
+00:17:58,208 --> 00:18:06,887
+Ya da bir polinomu değerlendiriyorsanız, bir polinomun sonucunu verilen bir kastayla için hesaplıyorsanız, polinomun digrisi önemli oluyor.
+
+51
+00:18:06,887 --> 00:18:14,168
+Şimdi burada TN çalışma zamanı olmak üzere, N'e bağımlı olarak.
+
+52
+00:18:14,827 --> 00:18:18,288
+Bunun aşağı yukarı, yani yaklaşık eşiti.
+
+53
+00:18:22,003 --> 00:18:35,543
+C-Op çarpı C-N ile bulunuyor. Buradaki C-Op aslında oradaki algoritmadaki Basic Instruction'ın implementa yani run edilebilmesi için geçen süresi.
+
+54
+00:18:36,543 --> 00:18:47,043
+C-N ise bu algoritmayı temsil eden aslında fonksiyon, n'e bağımlı olarak. Bir temel bir fonksiyon var, onun çalışma süresi C-Op.
+
+55
+00:18:47,220 --> 00:19:01,559
+Ve bu algoritmada bunun kaç kere yapılacağına dair bilgiyi de CN bize veriyor. Bu ikisini çarptığımız vakit running time'ı buluyoruz. Tabii ki approximate bir şekilde yani kesin bir şekilde değil. Neredeyse eşit bir şekilde buluyoruz.
+
+56
+00:19:01,559 --> 00:19:13,420
+Şimdi burada şöyle bir şey yapıyoruz. CN'in tabii bunların nasıl çıkarıldığını size yine önümüzdeki derslerde anlatacağım. Örneğin 1 bölü 2n n-1 olduğunu farz edelim.
+
+57
+00:19:14,483 --> 00:19:33,943
+Bu durumda eğer ben n'i iki katına çıkartırsam çalışma zamanım nasıl değişir? Bunu analiz etmek istiyorum. Şimdi c n'i vermiş zaten bize. Bir bölü iken n-1. Bunu önce bir açıp biraz sadeleştirmek gerekiyor. Bir bölü 2n kare eksi bir bölü 2n şeklinde açabiliriz.
+
+58
+00:19:34,675 --> 00:19:40,816
+Yine önümüzdeki hafta bahsedeceğim. Burada iki tane n'e bağlı terim var ve bir tanesinin üstü yüksek.
+
+59
+00:19:41,235 --> 00:19:43,576
+Bunu baz almak bize bir şey kaybettirmiyor.
+
+60
+00:19:44,016 --> 00:19:50,016
+Çünkü aslında n'in sonsuza giderkenki halindeki etkilenmeyi ölçmeye çalışıyoruz.
+
+61
+00:19:50,115 --> 00:19:55,235
+Dolayısıyla buradaki ifadede 1 bölü 2 n kareye sadeleştirme yapabiliyoruz.
+
+62
+00:19:55,936 --> 00:20:00,000
+Şimdi iki kat arttırdığımız vakit çalışma zamanı nasıl etkileniyor?
+
+63
+00:20:00,000 --> 00:20:19,279
+Bu örneğe buluyoruz ki buna order of growth deniyor. Bunu bulabilmek için T2 yani T'nin oranını hesaplamamız gerekiyor. Yukarıdaki formülden COP'la C2'ye çarptığımızda ya da C'ye çarptığımızda elde ettiğimiz sonuçları orantıladığımızda şu eşitliğe geliyoruz.
+
+64
+00:20:19,796 --> 00:20:41,175
+1 bölü 2 2n², bölü 1 bölü 2n². Şimdi burada 1 bölü 2'ler birbirini götürdü, n²'ler de birbirini götürdü ve elimde 4 kaldı. Bunu niye anlatıyorum? Bu bizim için aslında neyin önemli olduğunu gösteren bir dizi işlem oldu. Biz burada sabit çarpanlarla ilgilenmiyoruz.
+
+65
+00:20:41,652 --> 00:20:47,652
+Biz burada bir basic operasyonun işte run edilmesi için gerekli zamanla da ilgilenmiyoruz.
+
+66
+00:20:48,012 --> 00:20:57,311
+Biz burada aslında yani input size büyüdüğünde ne kaç kat artar bizim bu yapacağımız işlem?
+
+67
+00:20:57,851 --> 00:21:01,692
+Bununla ilgileniyoruz. Dolayısıyla bunun üzerinden analizlerimizi yapıyor olacağız.
+
+68
+00:21:02,652 --> 00:21:03,632
+Var mı soru arkadaşlar?
+
+69
+00:21:06,331 --> 00:21:07,592
+Yok herhalde.
+
+70
+00:21:09,011 --> 00:21:32,511
+Şimdi, temel bir takım algoritmalar için order of growth'lar nedir? Bir örnekle iki katından çıkarttığımız zaman neye dönüşür? gösteren bir tablomuz var. Örneğin tek bir statementımız var. A eşittir, B artı C statementı. Burada constant bir order of growth var.
+
+71
+00:21:33,172 --> 00:21:51,992
+Eğer logaritmik bir fonksiyondan bahsediyorsanız, örneğin Binary Search gibi, temel pods satırları burada, üçüncü kolonda karşımızda. Her seferinde hatırlıyorsunuz ikiye bölerek işlem yapıyoruz. O zaman logaritmik bir fonksiyon karşımıza çıkıyor. Logan olacak.
+
+72
+00:21:52,531 --> 00:22:14,611
+Basit bir dizi üzerinde sequential bir search yapıyorsak, linear bir şekilde artan bir fonksiyonumuz var. Dolayısıyla iki katına çıkıyor örneğin. Input side iki katına çıkartırsam çalışma zamanı. Divaytan Conqueror algoritmalarından merge search örneğin. En logenlik bir order of growth var.
+
+73
+00:22:15,155 --> 00:22:34,895
+Kuvadratik bir fonksiyonumuz varsa, yani örneğin bir dizi içerisinde birbiriyle aynı olan çiftleri bulmak için iki tane çiçefor kullanıyorsanız, o zaman dört katına çıkacak iki katı arttırdığınız vakit input. Kübik bir fonksiyonumuz varsa iki katına çıkarttığımızda sekiz katına çıkacak gibi.
+
+74
+00:22:41,971 --> 00:23:00,791
+Tercihimiz logaritmik olması. Olmadı, linear olması belki. En kareye de kabul edilebiliyor ama bir süre sonra çok hızlı bir şekilde büyümeye başlayacak. Enin artışıyla beraber çalışma zamanları. İki katına çıkmak değil de on katına çıkmak, yüz katına çıkmak gibi belki değerlendirmek gerekiyor. Dolayısıyla eksponansiyel olduktan sonra...
+
+75
+00:23:01,107 --> 00:23:13,387
+Artık mutlaka üzerinde bir optimizasyon yapılması gereken ya da sadece çok küçük input size için kullanıldığında kullanışlı halde değerlendirilebilecek algoritmalar karşımıza çıkıyor.
+
+76
+00:23:16,288 --> 00:23:24,427
+Şimdi worst case, best case ve average case kavramları var. Bunları bir hatırlatmak istiyorum size.
+
+77
+00:23:27,508 --> 00:23:47,088
+Yaptığımızı düşünelim. Yani bir dizimiz var elimizde ve bu dizi içerisinde verilen bir key'yi arıyoruz. Bunu tek tek elemanlara bakarak yapıyoruz. Bir while içerisinde hareket ediyoruz. Dizinin sonuna gelene kadar ya da bulana kadar. Çıktığımız vakit niye çıktığımızı kontrol ediyoruz.
+
+78
+00:23:48,088 --> 00:23:53,608
+Ve eğer bulduysak indisini bulamadıysak da ekseveri döndürüyoruz. Standard bir sequential search.
+
+79
+00:23:54,132 --> 00:24:11,772
+Burada worst case dediğimiz şey kötü durum senaryosu. Kötü durum senaryosunda bizim karmaşıklığımız en olacaktır. Yani bu işlem en kere tekrar edecek. Çünkü tüm diziyi arayacak ve bulamayacak ya da sonunda bulacak.
+
+80
+00:24:21,268 --> 00:24:42,268
+Bir de Average Case durum var. Şimdi Best Case ve Worst Case ne zaman kullanışlı? Daha çok Worst Case dikkate alınıyor aslına bakarsanız. Ama bu Best Case'in kullanışsız olduğu anlamına da gelmez. Örneğin Instruction Sort yapıyorsanız, neredeyse sıralı bir dizi varsa elinizde, o zaman...
+
+81
+00:24:42,612 --> 00:24:47,331
+Bu, Best Case senaryo daha çok gerçekleşmiş oluyor.
+
+82
+00:24:48,291 --> 00:25:01,372
+Dolayısıyla elinizde nadesi sıralı bir dizi üzerine sorting yapma ile alakalı bir probleminiz varsa ve o zaman bunu Best Case'i değil de Best Case'ini değerlendirmek ve ben bunu seçmeliyim demek daha faydalı olacaktır.
+
+83
+00:25:02,071 --> 00:25:07,092
+Şimdi bir de Average Case var. Average Case biraz daha gerçekçi bir sonuç bulmayı hedefliyor.
+
+84
+00:25:07,796 --> 00:25:15,976
+Worse Gaze'in fazla karamsar olduğunu düşünerek. Şimdi bu Secure Search için Average Gaze'i nasıl hesaplayabiliriz?
+
+85
+00:25:17,576 --> 00:25:26,076
+Şimdi Average Gaze hesaplarken, bununla alakalı belki bir örnek daha çözeriz. Average Gaze hesaplarken bir takım assumptionlarımız var, yapmamız gereken.
+
+86
+00:25:26,076 --> 00:25:33,536
+Bu örnek için iki tane assumptionımız var. Bunlardan bir tanesi başarılı bir search.
+
+87
+00:25:33,968 --> 00:25:49,448
+Olma olasılığına P olduğunu söylüyorsunuz. Yani bu sözcüğün sonuçlandığını, aradığımız elemanın içinde olduğu durum. Bunun olasılığını belirliyorsunuz ve buna P dediniz. 0 ile 1 arasında 0 ya da 1 olabilecek şekilde.
+
+88
+00:25:49,448 --> 00:26:00,868
+Ve aynı zamanda tüm hindislerde bulunma olasılığı aradığımız elemanın eşit olduğunu, uniform olduğunu.
+
+89
+00:26:01,652 --> 00:26:26,971
+kabul ediyorsunuz. Bu iki bilgiye dayanarak average keyedini hesaplıyoruz. Nasıl hesaplıyoruz? Şöyle yapıyoruz. Elemanımızın bulunma olasılığı P demiştim. Ve tüm indislerde de aynı olasılıkta olduğunu söylemiştim. Bu durumda her indis için ayrı ayrı işlem yapacağız. Ve birinci indis için bu indiste
+
+90
+00:26:27,796 --> 00:26:49,096
+Bu elemanın bulunma olasılığı P bölü N olacak. İkinci indis için bu indisde bulunma olasılığı yine P bölü N olacak. Tüm indisler için bu P bölü N olacak. Birinci indisde bulunma olasılığı P bölü N. Bu işlemi, yani buradaki elemanı bulana kadar yapılan işlem sayısı 1. Bunu birinci terim için hesapladık. İkinci terime geçiyorum. Bulunma olasılığı P bölü N.
+
+91
+00:26:49,440 --> 00:27:03,000
+Bulunana kadar iki kere val döngüsü içerisinde dönmeniz gerekiyor. İki ile çarpıyorsunuz. Artı, üç için üç çarpı p bölüen. İyinci indiste bulunma olasılığı yine p bölüen. İyinci indiste gelene kadar i kere dönüyorsunuz.
+
+92
+00:27:03,000 --> 00:27:11,819
+Tüm bu terimler için dizideki bu çarpımları topladığınız vakit, sonuncusu için p bölüen çarpı en olmak üzere.
+
+93
+00:27:13,491 --> 00:27:27,892
+Bu key'nin bulunmasıyla alakalı işlem sayısını bulmuş oldunuz. Tabi bir de bulunmama durumu var. Bu da 1-P. 1-P ile de bulamamak için, n kere dönmeniz gerektiği için n'i çarpıyorsunuz.
+
+94
+00:27:27,892 --> 00:27:33,791
+Şimdi bu size bir formül verdi. Bunu birkaç adım sadeleştirerek.
+
+95
+00:27:34,195 --> 00:28:00,815
+Evliğinizde işim yapabilirsiniz. Birkaç adım sadeleştirerek daha böyle anlaşılır bir formülü haline getirebilirsiniz. İşte bizim Average Case'imiz böyle hesaplanıyor. Bu Worst Case ve Basic Case'e göre bir tık daha karmaşık hesaplaması. Ama aslında burada onu hesaplamaktan ziyade bizi ilgilendiren şey P'nin durumu. Yani bu Average Case'den bir payda sağlamak için P'nin durumunu iyi değerlendirmeniz lazım.
+
+96
+00:28:01,683 --> 00:28:22,564
+Şimdi bakalım. Eğer P'nin durumu ne olursa nereye doğru gidecek bu karmaşıklık? Örneğin eğer P1 ise yani mutlaka bulacaksa o zaman nereye doğru gidecek oluyor? Average case ne oluyor?
+
+97
+00:28:23,380 --> 00:28:35,080
+İsterseniz kağıt kalemle yapabilirsiniz. N artı bir bölü iki. Yani eğer mutlaka bulacaksa ortalama olarak dizinin ortalarına geldiğinde bulacak bunu. Dolayısıyla n artı bir bölü iki diyebiliyoruz biz buna.
+
+98
+00:28:49,332 --> 00:28:54,872
+n'e doğru gitmiş olacak. Köşeli parantezler içerisindeki kısım sıfır olacağı için.
+
+99
+00:28:54,872 --> 00:29:04,052
+Şimdi burada aslında p'yi seçerken dizinin distribution'ını göz önünde bulundurmalısınız.
+
+100
+00:29:04,652 --> 00:29:07,152
+Örneğin Gauss'a göre dağılmış bir diziniz varsa.
+
+101
+00:29:07,859 --> 00:29:21,939
+Belki bunu gözlerinde bulundurmalısınız. Her bir item için ayrı ayrı P'ler belirlemek yerine diziyi küçük parçalara ayırıp her bir slot için bir P belirleyip çözüme gidebilirsiniz.
+
+102
+00:29:21,939 --> 00:29:30,519
+Tüm bunlar sizin ne kadar başarılı bir analiz sonucu elde ettiğinizi değiştirecek şeyler olacak.
+
+103
+00:29:31,347 --> 00:29:37,347
+Bugünkü anlatmak istediklerim bu kadar. Sizin sorularınız, yorumlarınız varsa onu almak isterim.
+
+104
+00:29:47,667 --> 00:29:51,627
+Bekliyorum. [öğrenci]'in mikrofonu açık. Bir şey mi söylemek istiyor acaba?
+
+105
+00:29:55,796 --> 00:29:59,175
+Yok hocam, açıklatıyorum da.
+
+106
+00:29:59,996 --> 00:30:15,675
+Şimdi arkadaşlar, ben yüz yüze ders vermenin avantajları çok, hoca açısından. Sınıfı görebiliyorsunuz, ne hissettiklerini belki anlayabiliyorsunuz. Şu an onu göremiyorum ama [öğrenci] bir şey söylemek istiyor.
+
+107
+00:30:19,796 --> 00:30:43,536
+Öncelikle hocam, merhabalar. Ben şeyim aslında, öncelikle ben elektrik ve elektronik mezunuyum. Dolayısıyla da önceki yıl itibariyle de bilimsel ha ha ha.
+
+108
+00:30:44,915 --> 00:31:09,435
+Hazırlığı bitirdim. Benim aslında merak ettiğim iki şey var. Öncelikle ders içeriğinde acaba ben öncesinde veri yapılarını gördüm ama algoritma analizini görmedim acaba ders içeriği açısından algoritma analizine çok bağlı mı?
+
+109
+00:31:12,915 --> 00:31:24,076
+Proje ödevleri için herhalde bir de sunum da istiyorsunuz. Sunum açısından acaba zamanlama...
+
+110
+00:31:24,500 --> 00:31:42,519
+Kısıtlaması var mı? Çünkü fark ettiğiniz gibi ben bir kekeme bir bireyim ve zamanlama açısından açıkçası biraz sorun yaşadığım için ondan herhangi bir sorun var mı diye merak etmiştim.
+
+111
+00:31:42,519 --> 00:31:52,439
+Evet, şimdi önce ilk sorunu anlatayım. Şöyle, algoritma analizi dersini alıyor olmak avantaj sağlar.
+
+112
+00:31:52,500 --> 00:32:10,939
+Ama ben bu içeriği oluştururken, lisansta bu dersi veren arkadaşlarla da iletişim halinde olup, birkaç hafta onlara paralel farklı örnekler çözerek size almadıysanız öğrenmiş olacaksınız, aldıysanız da hatırlamış olacaksınız.
+
+113
+00:32:10,939 --> 00:32:20,139
+Bu anlamda zaten bir vakit ayırıyorum. İçerik o şekilde. Dolayısıyla ilk haftaları iyi takip ettiğim vakit sıkıntı çıkaracağını zannetmiyorum ben.
+
+114
+00:32:20,531 --> 00:32:45,811
+O anlamda için rahat olsun. Ben orada en basit Secure and Recursive öğretmaların nasıl analiz edildiğinden başlayarak adım adım anlatıyor olacağım. Belki bunu onlar gibi tüm döneme yaymayacağım ama. O yüzden problem yaşamayacağını düşünüyorum. Dediğim gibi kitapları takip edersen zaten sıkımsız bir dönem geçiririz. İletişim halinde de oluruz.
+
+115
+00:32:46,259 --> 00:32:51,259
+Burada dediğim gibi farklı okullardan da belki arkadaşlar var. Belki çalışan arkadaşlar var.
+
+116
+00:32:51,859 --> 00:33:19,839
+Dolayısıyla iletişim halinde olup çözeriz diye düşünüyorum. İkinci konu da proje konusu. Şimdi hakikaten bu konu benim kafamda da tam olarak oturmuş değil. Sebebi de dediğim gibi önümüzdeki haftalarda, aylarda nasıl bir durumla karşılaşacağımızı bilmemem. Normalde proje vermek istiyorum. Sunum olsun da istiyorum. Belki bunu grup halinde sunmanız gerekebilir. Çünkü yaklaşık 50 kişisiniz. Şu an ne kadarı devam edecek bu arada onu da bilmiyorum. Bir haftalar geçti.
+
+117
+00:33:19,859 --> 00:33:21,859
+Bu konuda çok büyükçe bazen katılımcılar da azalabiliyor.
+
+118
+00:33:23,059 --> 00:33:50,559
+Sunumla alakalı olarak onu dert etme. Tek başına da yapman gerekse onu hallederiz. Bana anlatırsın gerekirse, nasıl kendini rahat hissediyorsan hiç sorun değil. Belki implementasyon ağırlıklı bir şey olabilir. Benim şu anki istediğim aslında bir algoritmayı, burada anlatmadığım bir data yapısını ya da bir algoritmayı araştırmanız ve arkadaşlarınıza da bunu anlatmanız ama dediğim gibi belki grup projesi olur.
+
+119
+00:33:51,059 --> 00:33:56,779
+Belki bir implantasyon ağırlıklı bir şey olur. Onun zaman geçince tekrar seninle konuşalım. Tamam mı?
+
+120
+00:33:59,559 --> 00:34:05,700
+Tamamdır hocam. Bir bilgilendirdiğiniz için de çok sağ olun.
+
+121
+00:34:06,500 --> 00:34:08,319
+Rica ederim görevim. Çok teşekkür ederim.
+
+122
+00:34:10,804 --> 00:34:31,824
+Var mı arkadaşlar? Burada şu an Yıldız Teknik, ben şöyle iki senedir falan bölümde değilim. O yüzden buradaki arkadaşların bir kısmını bizim bölümümüzden mezunlarsa da tanımıyor olabilirim. Burada bizden mezun kimler var şu an? Bana oraya el kaldırıp ya da en azından görebilir miyim? [öğrenci].
+
+123
+00:34:34,099 --> 00:34:42,380
+Sayıyı bir almaya çalışıyorum yazarsanız. Çünkü tekrar olsun istemiyorum. Dört kişi mi şu an?
+
+124
+00:34:48,244 --> 00:34:59,144
+Dört kişi sadece. Yıldız mezunu dört kişi var şu an, öyle mi? Okey. Bu arkadaşlar soru sormak mı istiyorlardı? Onun için merak aldırdılar. Yok değil, okey.
+
+125
+00:35:03,635 --> 00:35:19,556
+Peki. [öğrenci], bir şey mi sormak istiyorsun? Yok hocam, sorduğunuz için kimler? Tamam. Okey, tamam. [öğrenci] da aynı şekilde herhalde. Okey.
+
+126
+00:35:23,764 --> 00:35:44,264
+Ama arkadaşlar, bana sormak istediğiniz başka bir şey var mı dersle alakalı? Peki öneriniz var mı? Mesela hocam şöyle bir şey de dersini planına katabilir miyiz? Gibi. Size de biraz zaman vereyim o zaman ben. Tamam. Peki.
+
+127
+00:35:45,427 --> 00:36:05,407
+Önümüzdeki hafta itibariyle yoklamada alarak, gerçi yoklama konusunda galiba rektörlüğün de bir kararı var mı? Çok emin değilim. Ona da bir bakacağım. Daha iyi değerlendirerek vaktimizi derslerimizin açılışımızı yapalım inşallah. Bu arada da sormak istediğiniz bir şey olursa e-mail'le ulaşabilirsiniz bana.
+
+128
+00:36:06,447 --> 00:36:06,768
+Hocam?
+
+129
+00:36:07,487 --> 00:36:07,967
+Efendim?
+
+130
+00:36:09,228 --> 00:36:11,367
+Kusura bakmayın, kaldıramadım ama.
+
+131
+00:36:11,568 --> 00:36:12,728
+Kim konuşuyor onu öğreneyim.
+
+132
+00:36:13,119 --> 00:36:13,979
+Ben [öğrenci].
+
+133
+00:36:14,380 --> 00:36:15,800
+[öğrenci]. Evet [öğrenci].
+
+134
+00:36:16,279 --> 00:36:19,059
+Dersin slide'ları herhangi bir yerde var mı acaba?
+
+135
+00:36:19,779 --> 00:36:23,760
+Yok. Şöyle, dersi sürekli slide üzerinden işlemeyebilirim.
+
+136
+00:36:24,148 --> 00:36:43,548
+Böyle formüllerin olduğu kısımlar var özellikle. Bunu bir introduction olarak hazırladım ama belki size yazarak anlatıyor olacağım tablet üzerinden. Dolayısıyla şu an için yok. Takip etmeniz gerekecek. Eğer tablet üzerinden yazıyor olursam da not almanız gerekecek. Ama bu ilk slide'ı paylaşırım.
+
+137
+00:36:45,508 --> 00:36:46,168
+Teşekkür ederim.
+
+138
+00:36:46,428 --> 00:36:47,488
+Ben teşekkür ederim.
+
+139
+00:36:51,539 --> 00:37:04,579
+Tamamdır. O zaman sizlerin de çalıştığınızı vesaire düşünüp eğer sorunuz yoksa bu haftalık bu kadar diyelim arkadaşlar. Haftaya inşallah görüşmek üzere.
+
+140
+00:37:05,199 --> 00:37:10,779
+Teşekkür ederim. Görüşmek üzere. Hoşçakalın.
+
+141
+00:37:11,099 --> 00:37:11,920
+Dağ olun. Güle güle.
+
+142
+00:37:13,920 --> 00:37:15,360
+Hoşçakalın arkadaşlar.
+
+143
+00:37:15,599 --> 00:37:15,779
+Dağ olun.
+
+144
+00:37:16,380 --> 00:37:17,460
+Ben teşekkür ederim.
