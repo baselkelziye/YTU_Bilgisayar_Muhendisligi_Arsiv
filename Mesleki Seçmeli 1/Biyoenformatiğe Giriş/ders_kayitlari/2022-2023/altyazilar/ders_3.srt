@@ -1,0 +1,4439 @@
+1
+00:01:23,540 --> 00:01:24,600
+Evet, merhaba arkadaşlar.
+
+2
+00:01:27,620 --> 00:01:28,620
+Merhaba hocam.
+
+3
+00:01:29,400 --> 00:01:30,840
+Bu sefer ses nasıl geliyor?
+
+4
+00:01:32,780 --> 00:01:33,520
+İyi geliyor hocam.
+
+5
+00:01:34,300 --> 00:01:42,240
+İyi değil mi? Yani bir iki şey vardı, derimden geliyordu hiç. Çünkü kameranın mikrofonunu kullanıyordum, biraz uzak duruyordu.
+
+6
+00:01:43,600 --> 00:01:47,920
+Başka bir mikrofon seçti ki iyiyse mesele yok.
+
+7
+00:01:47,920 --> 00:01:48,920
+Tamam.
+
+8
+00:01:51,284 --> 00:01:53,463
+Kaldığımız yerden devam edelim.
+
+9
+00:01:59,603 --> 00:02:00,563
+Başlatalım.
+
+10
+00:02:16,372 --> 00:02:18,292
+Ekranı paylaşalım.
+
+11
+00:02:26,388 --> 00:02:30,788
+Ekranı görebiliyorsun değil mi?
+
+12
+00:02:33,028 --> 00:02:33,668
+Evet hocam.
+
+13
+00:02:34,207 --> 00:02:36,328
+Tamam.
+
+14
+00:02:36,328 --> 00:02:37,588
+Tamam, we can start now.
+
+15
+00:02:54,900 --> 00:02:55,400
+Okay.
+
+16
+00:02:58,680 --> 00:03:07,159
+If you remember from last week, we discussed about data representation in a computing environment.
+
+17
+00:03:10,680 --> 00:03:17,039
+Basically, we talked about fundamental data types.
+
+18
+00:03:17,491 --> 00:03:38,347
+Bu da ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin il
+
+19
+00:03:40,436 --> 00:03:47,436
+Bu konceptörlerle ilgili birçok konceptı var.
+
+20
+00:04:53,012 --> 00:04:58,012
+Bu da DNA veya proteinsin.
+
+21
+00:04:58,012 --> 00:05:05,012
+Bu da birçok.
+
+22
+00:05:05,012 --> 00:05:09,012
+Bu da birçok birçok birçok birçok birçok birçok birçok.
+
+23
+00:05:09,012 --> 00:05:16,012
+Bu da, mesela, blood samplesa ve diğer birçok birçok birçok.
+
+24
+00:05:16,012 --> 00:05:20,875
+Birçok birçok birçok.
+
+25
+00:05:21,812 --> 00:05:24,652
+ve some sort of medical images as well.
+
+26
+00:05:24,652 --> 00:05:31,052
+So, there could be one-dimensional signals or two-dimensional medical image data,
+
+27
+00:05:31,052 --> 00:05:34,812
+even three-dimensional video data.
+
+28
+00:05:36,412 --> 00:05:44,492
+Now, these are extensively being used in medical field.
+
+29
+00:05:46,492 --> 00:05:48,292
+There might be some...
+
+30
+00:05:49,267 --> 00:06:05,067
+Unconventional data, such as text, basically, from journals or some bibliographic references, etc., which might be useful for diagnosing a patient.
+
+31
+00:06:06,087 --> 00:06:13,327
+Basically, these journal articles or references may include some information.
+
+32
+00:06:14,132 --> 00:06:33,420
+Bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilimde bu bilim
+
+33
+00:06:33,620 --> 00:06:36,600
+DNA'ın konfiktor programı.
+
+34
+00:06:36,600 --> 00:07:02,876
+Bu konfiktor programı.
+
+35
+00:06:58,100 --> 00:07:03,100
+We use 8 bits to represent a text file.
+
+36
+00:07:06,100 --> 00:07:09,100
+Basically ASCII code itself is 7 bits
+
+37
+00:07:09,100 --> 00:07:13,100
+and 1 bit is used for parity encoding
+
+38
+00:07:13,100 --> 00:07:16,100
+or error detection basically.
+
+39
+00:07:17,684 --> 00:07:26,804
+We can represent base sequences as letter sequences or long strings, which is either as character or string.
+
+40
+00:07:27,924 --> 00:07:41,944
+Another way to represent such sequences is to represent each nucleotide or base, sometimes nucleotide, sometimes base is used as a symbol in a list.
+
+41
+00:07:45,427 --> 00:07:50,108
+Then entire sequence becomes a list of symbols.
+
+42
+00:07:51,108 --> 00:07:56,888
+Basically, in terms of the competing data type, it's list of characters.
+
+43
+00:07:57,587 --> 00:07:59,587
+And it looks like something like this.
+
+44
+00:08:00,908 --> 00:08:04,967
+As you see, it is a simple list of characters.
+
+45
+00:08:04,967 --> 00:08:09,967
+Or in one view, it could be a string.
+
+46
+00:08:10,867 --> 00:08:21,187
+This is basically the presentation of a DNA code in terms of the ASCII character array.
+
+47
+00:08:23,987 --> 00:08:35,587
+So basically, some of the techniques in bioinformatics deals with such a data. This is basically a text.
+
+48
+00:08:37,235 --> 00:08:42,635
+Or, character array. Text is a character array. Or, text is a string.
+
+49
+00:08:46,635 --> 00:08:56,235
+There are large digital data repositories containing information about proteins.
+
+50
+00:08:59,235 --> 00:09:02,635
+These are some well known.
+
+51
+00:09:02,868 --> 00:09:05,788
+Uniprod, or SwissProd.
+
+52
+00:09:07,788 --> 00:09:13,528
+This is basically a project of the Swiss Institute of Bioinformatics.
+
+53
+00:09:13,768 --> 00:09:19,208
+They have a great amount of the data in this database.
+
+54
+00:09:21,807 --> 00:09:28,248
+Uniprod data can be downloaded in a variety of formats.
+
+55
+00:09:29,043 --> 00:09:32,875
+Bu da
+
+56
+00:09:36,179 --> 00:09:42,879
+We just go to this website and let's see if link works.
+
+57
+00:09:50,035 --> 00:10:03,051
+...
+
+58
+00:10:08,563 --> 00:10:15,563
+TopShare and Share.
+
+59
+00:10:15,563 --> 00:10:16,563
+Share.
+
+60
+00:10:18,563 --> 00:10:19,563
+Webpage.
+
+61
+00:10:24,824 --> 00:10:38,824
+...
+
+62
+00:10:24,340 --> 00:10:31,340
+Şimdi İspazi'de bu
+
+63
+00:10:31,340 --> 00:10:51,692
+Bu dağbası
+
+64
+00:10:53,395 --> 00:10:57,395
+...to get access to this great amount of data.
+
+65
+00:11:00,395 --> 00:11:08,171
+Ok, let's continue with the presentation.
+
+66
+00:11:23,668 --> 00:11:33,788
+Next slide, we show an abbreviated excerpt from a Swiss protein 340 precursor protein
+
+67
+00:11:33,788 --> 00:11:36,888
+from which human insibin is formed.
+
+68
+00:11:38,228 --> 00:11:46,748
+Here is an excerpt from the data.
+
+69
+00:11:50,035 --> 00:11:52,575
+There are some abbreviations here.
+
+70
+00:11:53,435 --> 00:11:53,975
+Basically,
+
+71
+00:12:00,596 --> 00:12:09,255
+To understand what all these fields or abbreviations are about, you can consult the X-PASI website.
+
+72
+00:12:10,216 --> 00:12:14,475
+There will be extensive explanations for all these fields.
+
+73
+00:12:15,655 --> 00:12:20,196
+We may, for example, give you some of the fields.
+
+74
+00:12:20,196 --> 00:12:24,535
+For example, DR records are cross-references.
+
+75
+00:12:26,355 --> 00:12:36,075
+In this case, gene ontology, this is the cross-reference to the gene ontology.
+
+76
+00:12:39,075 --> 00:12:43,635
+I just skipped this. DFT records are feature descriptions.
+
+77
+00:12:46,323 --> 00:13:02,315
+Bu da, bu
+
+78
+00:13:04,532 --> 00:13:09,412
+The names following the FT tags are the feature types.
+
+79
+00:13:09,871 --> 00:13:14,432
+The numbers are the sequence start and end points for each feature.
+
+80
+00:13:17,871 --> 00:13:24,272
+So finally, the SQ section contains the actual sequence of amino acids.
+
+81
+00:13:25,052 --> 00:13:26,491
+One letter for each.
+
+82
+00:13:26,491 --> 00:13:31,072
+If we just go back and we see the format again.
+
+83
+00:13:32,563 --> 00:13:36,283
+Now I ask a question.
+
+84
+00:13:37,063 --> 00:13:39,183
+What do we call all these data?
+
+85
+00:13:41,183 --> 00:13:42,264
+Up to here.
+
+86
+00:13:48,052 --> 00:13:56,052
+Anybody can tell me what sort of data is, is section in this database?
+
+87
+00:13:59,331 --> 00:14:03,012
+Actual data is here, just letters.
+
+88
+00:14:05,652 --> 00:14:09,091
+What are all this information called?
+
+89
+00:14:14,100 --> 00:14:16,100
+Anybody can tell me?
+
+90
+00:14:20,211 --> 00:14:25,211
+What sort of data is this information here?
+
+91
+00:14:27,211 --> 00:14:30,211
+Here for example, this information.
+
+92
+00:14:31,211 --> 00:14:33,211
+This one.
+
+93
+00:14:35,211 --> 00:14:39,211
+Data is only here, it starts here.
+
+94
+00:14:43,091 --> 00:15:05,867
+Bu, bu
+
+95
+00:15:07,091 --> 00:15:10,831
+Nature of this data, future of this data. Data is here.
+
+96
+00:15:11,971 --> 00:15:24,711
+When you want to process this data file, you need to strip this section and process the remaining amino acid data.
+
+97
+00:15:25,711 --> 00:15:27,312
+For basic method.
+
+98
+00:15:32,436 --> 00:15:34,283
+İlkaçın.
+
+99
+00:15:41,203 --> 00:16:04,403
+Many proteins function as enzymes, as we mentioned before. Enzymes are chemical compounds that facilitate chemical reactions. Enzymes are basically initiators of the chemical reactions in a sense. Many biologically important reactions.
+
+100
+00:16:05,107 --> 00:16:10,107
+Do not proceed without the presence of the corresponding enzymes.
+
+101
+00:16:11,707 --> 00:16:15,107
+It's some sort of an igniter.
+
+102
+00:16:17,107 --> 00:16:22,107
+So an important piece of information about the protein is its function.
+
+103
+00:16:25,107 --> 00:16:31,107
+That protein is an enzyme and what type of enzyme is it? That's important.
+
+104
+00:16:32,436 --> 00:16:36,495
+If it is an enzyme, what reactions does it facilitate?
+
+105
+00:16:38,596 --> 00:16:48,615
+Here in the next slide, we show an example, which is a small x excerpt from the enzyme database.
+
+106
+00:16:49,615 --> 00:16:52,436
+Again, from the same website.
+
+107
+00:16:53,896 --> 00:16:55,796
+This is a typical enzyme database.
+
+108
+00:16:58,899 --> 00:17:26,239
+Now, there are several fields here. ID, D, V, A, N, C, A, C, C, P, R, E, D, R, whatever. These are the abbreviations to indicate the fields. Now, the line beginning with ID is the enzyme commission number. This is unique to each entry. The DE line is the official name which we see here.
+
+109
+00:17:28,276 --> 00:17:34,336
+D in whatever, marathi dehydrogen is.
+
+110
+00:17:35,336 --> 00:17:44,776
+Then the AN lines are alternative names or synonyms of this description.
+
+111
+00:17:46,155 --> 00:17:48,816
+There might be more than one names.
+
+112
+00:17:51,296 --> 00:17:51,976
+Okay.
+
+113
+00:17:53,476 --> 00:17:53,976
+Then
+
+114
+00:17:59,796 --> 00:18:09,996
+The NAD+, and NADH molecules are coenzymes, which are molecules that participate in the reaction.
+
+115
+00:18:11,556 --> 00:18:24,436
+Reaction catalyzed by malade dehydrogenase is described in a kind of stylized symbolic form in the line beginning with CA.
+
+116
+00:18:30,420 --> 00:18:38,599
+Then CC line is a comment, an explanation here, CC line.
+
+117
+00:18:45,480 --> 00:18:56,320
+Basically, this comment as in any programming language, it is not meant or used by a computer program.
+
+118
+00:18:57,140 --> 00:19:01,260
+PR line is a cross-reference to the PROSITE database,
+
+119
+00:19:03,019 --> 00:19:05,860
+which has other information about proteins.
+
+120
+00:19:06,640 --> 00:19:12,960
+DR line is a set of cross-references to entries in the SwissProt database.
+
+121
+00:19:13,800 --> 00:19:15,800
+SwissProt is another database.
+
+122
+00:19:27,412 --> 00:19:36,771
+Now, we might want to study one gene, protein, DNA molecule, or other type of objects in a database.
+
+123
+00:19:37,672 --> 00:19:49,771
+For example, for human beta-glugin, there is a gene, which is HPV, a protein sequence, a protein structure, and entries for various kinds of variations.
+
+124
+00:19:51,412 --> 00:20:03,612
+Basically, we can think about large groups such as all the globin genes in human genome or all the non-HPD variants.
+
+125
+00:20:05,552 --> 00:20:17,612
+Or we might want to study a set of 100 genes previously implicated in a disease such as autism to assess their variation in patient samples.
+
+126
+00:20:18,963 --> 00:20:23,963
+Bu da farklı bir şekilde düşüncelerde düşüncelerde.
+
+127
+00:20:23,963 --> 00:20:26,963
+Bu da birçok birçok birçok birçok.
+
+128
+00:20:26,963 --> 00:20:28,963
+Bu da birçok birçok.
+
+129
+00:20:28,963 --> 00:20:39,963
+Bu da birçok.
+
+130
+00:20:44,819 --> 00:20:48,819
+Okay, how much DNA sequenced is stored in public databases?
+
+131
+00:20:50,980 --> 00:20:52,819
+This is an important question.
+
+132
+00:20:53,380 --> 00:20:54,900
+Where are the data stored?
+
+133
+00:20:56,339 --> 00:21:05,299
+There are three main sites that have been responsible for storing nucleotide sequenced data from 1982 to the present date,
+
+134
+00:21:06,500 --> 00:21:09,299
+which I will show in the next slide.
+
+135
+00:21:10,420 --> 00:21:26,300
+Gen Bank at the National Center for Biotechnology Information, which is short NCBI, of the National Institute of Health in Batista.
+
+136
+00:21:28,040 --> 00:21:35,080
+European Molecular Biology Laboratory, short the EMBL, Nucleotide Sequence Database.
+
+137
+00:21:35,827 --> 00:21:40,228
+Avrupa Nucleotype Archibe
+
+138
+00:21:40,228 --> 00:21:45,827
+Avrupa Biyoinformatics Institute in Hingston, England
+
+139
+00:21:45,827 --> 00:21:50,228
+DNA Database of Japan
+
+140
+00:21:50,228 --> 00:21:53,427
+DDBG
+
+141
+00:21:53,427 --> 00:21:58,228
+International Institute of Genetics in Mishima, Japan
+
+142
+00:21:58,228 --> 00:22:00,228
+Ok
+
+143
+00:22:05,011 --> 00:22:10,092
+As we said, IMSDC, Coordinate Sequence Data.
+
+144
+00:22:11,011 --> 00:22:17,912
+Here is the International Nuclear-Tite Sequence Database Collaboration Structure.
+
+145
+00:22:17,912 --> 00:22:23,132
+We have GenBank, DNA, DDBG.
+
+146
+00:22:23,652 --> 00:22:27,092
+This is the three database sources.
+
+147
+00:22:28,731 --> 00:22:32,432
+Japanese, European, and American.
+
+148
+00:22:33,907 --> 00:22:51,907
+Unikleotit, collections of gene bank at NCBI, EMBL bank at European Bioinformatics Institute, and DVDBG at DNA data one of Japan are all coordinated by...
+
+149
+00:23:09,844 --> 00:23:13,744
+Here is a structure of the NCBI.
+
+150
+00:23:17,940 --> 00:23:26,980
+İçin, it houses Gimbank as part of its antres system of 40 molecular and literature databases.
+
+151
+00:23:29,620 --> 00:23:38,100
+The trace archive stores sequence traces and the sequence read archive stores next generation sequence data.
+
+152
+00:23:41,395 --> 00:23:49,475
+GenBank'in
+
+153
+00:23:49,475 --> 00:24:03,475
+Basically, when you do some sort of informatic studies, you can access the data, the relevant data in these databases through their respective webpages.
+
+154
+00:24:03,475 --> 00:24:07,475
+EBI
+
+155
+00:24:08,384 --> 00:24:11,984
+Bu, European Bioinformatics Institute.
+
+156
+00:24:12,163 --> 00:24:15,004
+Bu, EBI Database.
+
+157
+00:24:41,811 --> 00:24:48,811
+ve enbri banki, bu da aynı raw segment data as gene bank at NCBI.
+
+158
+00:24:50,811 --> 00:24:55,811
+Similar data also housed in the trace archive and SRI.
+
+159
+00:24:57,811 --> 00:25:02,811
+And here is structure of the Japanese database.
+
+160
+00:25:06,811 --> 00:25:07,811
+It also includes
+
+161
+00:25:09,172 --> 00:25:11,172
+ve SLA.
+
+162
+00:25:11,172 --> 00:25:20,172
+Its traditional division shares the same raw sequence data with GenBank and EMBLbank on a daily basis.
+
+163
+00:25:20,172 --> 00:25:28,172
+All these various databases can be accessed by web browsing or via programs such as eDirect.
+
+164
+00:25:28,172 --> 00:25:33,172
+This is basically a command line program.
+
+165
+00:25:46,355 --> 00:25:52,596
+So, DNA sequencenin repositories grow every day.
+
+166
+00:25:52,596 --> 00:25:56,836
+And this is a typical growth rate of most databases.
+
+167
+00:25:56,836 --> 00:25:59,955
+These growth goes always up.
+
+168
+00:25:59,955 --> 00:26:11,155
+Even advanced developments in DNA sequencing will increase this growth.
+
+169
+00:26:11,155 --> 00:26:12,995
+It will not decrease.
+
+170
+00:26:18,132 --> 00:26:23,731
+Here is an example of the scale of DNA base pairs.
+
+171
+00:26:27,763 --> 00:26:37,463
+Bay space, unit is one base pair, abbreviation 1BP in the future, when you see 1BP, that means one base pair.
+
+172
+00:26:38,303 --> 00:26:40,603
+Thousand is one kilobase pair.
+
+173
+00:26:43,263 --> 00:26:46,383
+One million is one megabase pair.
+
+174
+00:26:48,163 --> 00:26:50,000
+Ten to nine is...
+
+175
+00:26:50,000 --> 00:27:03,160
+Gigabase pair, 10 to 12 is one terabase pair, abbreviated as one TV, 10 to 15 is one petabase pair, which is just one PV.
+
+176
+00:27:04,540 --> 00:27:15,300
+In this respect, the human genome is 3 billion base pairs, or 3 billion base pairs.
+
+177
+00:27:24,307 --> 00:27:26,307
+You already know this.
+
+178
+00:27:28,948 --> 00:27:37,268
+I just want to remind you this concept. Byte is just one byte, single text. Kilobyte, one kilobyte.
+
+179
+00:27:38,067 --> 00:27:51,084
+This is wrong. I specifically wanted to show you. It says 1000 karakter. It's 10 to 3. You see this is from basically...
+
+180
+00:27:51,923 --> 00:28:02,316
+ve bu ve bu ve bu ve bu ve bu bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgiler
+
+181
+00:28:05,523 --> 00:28:23,044
+If you remember, when I was talking about this concept, some books give as kilo, 1 kilobyte is not 10 to 3. It is wrong. 1 megabyte is not this one.
+
+182
+00:28:23,044 --> 00:28:31,044
+Okay, five sizes. 1 megabyte is not this one. And I just reminded that I got this from...
+
+183
+00:28:31,796 --> 00:28:34,715
+A book's PPT presentations.
+
+184
+00:28:34,715 --> 00:28:37,115
+So, this is wrong.
+
+185
+00:28:37,115 --> 00:28:43,675
+And this is wrong as well.
+
+186
+00:28:43,675 --> 00:28:55,675
+So, please be careful when you read a book or when you download a PPT presentation from a webpage.
+
+187
+00:28:56,531 --> 00:29:09,515
+Bu, bu
+
+188
+00:29:16,115 --> 00:29:17,115
+Can you tell me?
+
+189
+00:29:18,316 --> 00:29:19,875
+2 to the power of 10.
+
+190
+00:29:19,935 --> 00:29:28,495
+Ah, exactly. 2 to the power of 10, 2 to the power of 20, 2 to the power of 30, 2 to the power of 4, etc.
+
+191
+00:29:29,635 --> 00:29:31,275
+These are the correct ones.
+
+192
+00:29:32,175 --> 00:29:33,495
+This is the...
+
+193
+00:29:33,495 --> 00:29:39,435
+You must be careful when you read these books, because sometimes...
+
+194
+00:29:39,604 --> 00:30:02,796
+Bu, bu
+
+195
+00:30:37,587 --> 00:30:42,087
+Metazor, et cetera, viruses, et cetera.
+
+196
+00:30:42,087 --> 00:30:44,187
+This sort of information exists.
+
+197
+00:30:45,187 --> 00:30:48,387
+These are the classes of living things.
+
+198
+00:30:49,387 --> 00:30:56,687
+For example, fungis, mantalas, bacteria, et cetera.
+
+199
+00:30:57,187 --> 00:31:00,887
+These are just the classes of living things.
+
+200
+00:31:05,044 --> 00:31:08,904
+Specifically, this taxa is plural of taxon.
+
+201
+00:31:09,864 --> 00:31:14,584
+We will be talking or using this expression later.
+
+202
+00:31:16,484 --> 00:31:25,244
+Basically, taxa means any group of rank in a biological classification into each related organisms are classified.
+
+203
+00:31:25,244 --> 00:31:26,984
+They are called taxa.
+
+204
+00:31:33,683 --> 00:31:49,643
+Types of data and examples of these databases, as I said, DNA is or protein or RNA, messenger RNA or other type of RNAs.
+
+205
+00:31:50,403 --> 00:31:56,163
+These are just text information, textual information or character arrays.
+
+206
+00:31:57,563 --> 00:31:59,963
+The protein structures.
+
+207
+00:32:12,884 --> 00:32:14,724
+Anyway, we can skip this.
+
+208
+00:32:19,508 --> 00:32:26,407
+Bu, top 10 organism for which express sequenced ticks have been sequenced.
+
+209
+00:32:26,407 --> 00:32:39,668
+Human, mouse, maize, pig, cattle, tailcrest, zebrafish, soybean, wheat, russet, float, frog, etc.
+
+210
+00:32:39,668 --> 00:32:46,028
+These are organisms and these are common names and there is a number of ESPs.
+
+211
+00:32:48,692 --> 00:32:51,612
+Express Seqluse Text, ESCs.
+
+212
+00:32:54,432 --> 00:32:56,791
+Uni gen database,
+
+213
+00:32:57,632 --> 00:33:00,672
+it includes clusters of ESCs sequences,
+
+214
+00:33:00,672 --> 00:33:02,291
+for example here.
+
+215
+00:33:02,291 --> 00:33:05,991
+Anyway, I'm not going to spend time on these things,
+
+216
+00:33:05,991 --> 00:33:08,652
+just to show you what sort of data exists.
+
+217
+00:33:17,076 --> 00:33:21,395
+So, I just go over.
+
+218
+00:33:23,816 --> 00:33:31,456
+Well, in NCBI databases, you can access this database via taxonomy browser.
+
+219
+00:33:32,456 --> 00:33:35,556
+It is a specific browser, basically.
+
+220
+00:33:37,155 --> 00:33:39,216
+Or you can try this later.
+
+221
+00:34:11,603 --> 00:34:18,643
+NCBI includes databases that contain information on DNA, RNA, or protein sequences.
+
+222
+00:34:19,763 --> 00:34:27,323
+As we mentioned before, they have accession numbers.
+
+223
+00:34:28,763 --> 00:34:34,283
+Accession numbers are labeled used to identify as sequence.
+
+224
+00:34:35,764 --> 00:34:41,244
+A string of letters and or numbers that corresponds to molecular seconds.
+
+225
+00:34:41,583 --> 00:34:42,963
+Here are some examples.
+
+226
+00:34:44,423 --> 00:34:47,484
+This is gene-bound genomic DNA seconds.
+
+227
+00:34:47,663 --> 00:34:49,123
+This is genomic contik.
+
+228
+00:34:49,604 --> 00:34:52,744
+This is single-lyptorotype polymorphism references.
+
+229
+00:34:52,984 --> 00:34:55,804
+These are accession numbers, et cetera.
+
+230
+00:34:58,384 --> 00:34:59,704
+This is DNA.
+
+231
+00:34:59,944 --> 00:35:00,503
+This is RNA.
+
+232
+00:35:00,503 --> 00:35:01,744
+And this is protein.
+
+233
+00:35:09,684 --> 00:35:24,124
+Yeni, RefSec, which is accessible via the main page of NCBI, provides an expertly curated accession number that corresponds to the most stable agreed upon reference version of the sequence.
+
+234
+00:35:25,204 --> 00:35:28,904
+These RefSec identifiers include the following formats.
+
+235
+00:35:29,404 --> 00:35:31,804
+This is the complete genome, it starts as NC.
+
+236
+00:35:32,644 --> 00:35:36,144
+Complete chromosome, it starts as, again, NC, and whatever.
+
+237
+00:35:36,724 --> 00:35:47,884
+genomic contig NT, mRNA, DNA, protein, m, m, m, m, protein, m, p.
+
+238
+00:35:55,155 --> 00:36:06,475
+NCBI gene, basically, is a great starting point because it collects key information on each gene protein from major databases.
+
+239
+00:36:07,956 --> 00:36:10,395
+It covers all major organisms.
+
+240
+00:36:12,095 --> 00:36:16,076
+RefSec provides a curated optimal accession number for each DNA.
+
+241
+00:36:21,588 --> 00:36:29,588
+A typical example of query for beta-glogin, you know, when you access this NCDI webpage, you can...
+
+242
+00:36:35,860 --> 00:36:42,619
+Beterglogein ve search it and it will give you all sorts of information.
+
+243
+00:36:44,079 --> 00:36:46,579
+Again, we continue this.
+
+244
+00:36:48,020 --> 00:36:51,980
+You just go to these webpages and just play with them.
+
+245
+00:36:51,980 --> 00:36:54,520
+And this is the only way to get used.
+
+246
+00:36:57,220 --> 00:37:02,659
+Here is another interface from the NCDI database.
+
+247
+00:37:08,596 --> 00:37:29,900
+Bu bir normalde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir
+
+248
+00:37:31,923 --> 00:37:38,244
+There are genome browsers to browse the contents of genomes and features of genomes.
+
+249
+00:37:39,043 --> 00:37:47,043
+These are versatile tools designed to visualize chromosomal positions with annotation facts.
+
+250
+00:37:49,443 --> 00:37:56,644
+They are useful to explore data related to some chromosomal feature of interest such as a gene.
+
+251
+00:37:57,715 --> 00:38:02,715
+Prominent browsers are the Ensembl, UEC, SC, and NCBI.
+
+252
+00:38:03,715 --> 00:38:08,715
+Many hundreds of specialized genome browsers basically exist.
+
+253
+00:38:09,715 --> 00:38:12,715
+Some for particle organisms or molecule types.
+
+254
+00:38:15,715 --> 00:38:24,715
+These are from University of California, Santa Clara, I think.
+
+255
+00:38:28,179 --> 00:38:40,683
+Bu bir
+
+256
+00:38:44,724 --> 00:38:47,824
+And these are some interfaces.
+
+257
+00:38:50,824 --> 00:38:51,244
+Okay.
+
+258
+00:38:56,019 --> 00:38:58,019
+Yani
+
+259
+00:38:58,019 --> 00:39:20,427
+Birleşik
+
+260
+00:39:22,739 --> 00:39:27,239
+Some searches are quite challenging and difficult.
+
+261
+00:39:29,019 --> 00:39:32,799
+You can use Boolean operators to limit the search results.
+
+262
+00:39:33,699 --> 00:39:36,319
+Boolean operators are AND, OR, etc.
+
+263
+00:39:40,659 --> 00:39:54,579
+For example, searching for HIV-1 proteins, you should note that there are vast numbers of protein and DNA results, but there is only one RefSec accession for this HIV-1.
+
+264
+00:39:55,840 --> 00:40:04,359
+These are the usefulness of the RefSec projects, basically. These are software projects based search engines.
+
+265
+00:40:07,188 --> 00:40:16,567
+So, the field of bioinformatics is still growing constantly.
+
+266
+00:40:16,567 --> 00:40:21,768
+In part, because of the introduction of vast amounts of sequence data,
+
+267
+00:40:21,768 --> 00:40:32,228
+we have really the data obtained through these bioinformatics kinetics studies can really be considered as big data.
+
+268
+00:40:33,748 --> 00:40:40,168
+There are many databases that store genomic data and many approaches to extracting information.
+
+269
+00:40:41,328 --> 00:40:45,068
+You can go to this webpage and see this.
+
+270
+00:40:49,847 --> 00:40:53,847
+Birleşik
+
+271
+00:40:48,755 --> 00:40:53,555
+Bu bir simple ve çok basit bir introduktu
+
+272
+00:40:53,555 --> 00:40:57,115
+ve bioinformatik
+
+273
+00:40:57,115 --> 00:40:59,755
+ve
+
+274
+00:40:59,755 --> 00:41:16,755
+bu
+
+275
+00:41:15,476 --> 00:41:21,236
+Profesional life in bioinformatik spirit.
+
+276
+00:41:22,596 --> 00:41:24,716
+Okay, do you have any question?
+
+277
+00:41:30,931 --> 00:41:39,972
+Of course, this is not our main purpose, but it's just to introduce you these existing databases.
+
+278
+00:41:39,972 --> 00:41:48,132
+We will be talking some of these data later, when we discuss actual algorithms.
+
+279
+00:41:50,291 --> 00:41:51,411
+Do you know any?
+
+280
+00:41:53,731 --> 00:41:56,452
+If you know any other databases, you check them.
+
+281
+00:41:58,356 --> 00:42:05,356
+ve yeni bir
+
+282
+00:42:05,356 --> 00:42:17,259
+ve
+
+283
+00:42:15,507 --> 00:42:16,708
+Do you have any question?
+
+284
+00:42:23,379 --> 00:42:25,771
+ve
+
+285
+00:42:23,027 --> 00:42:25,387
+Ok, if you don't, we can have a break.
+
+286
+00:42:34,952 --> 00:42:39,148
+ve
+
+287
+00:42:33,844 --> 00:42:38,804
+Okay, we have a 15 minutes break. Come back at 4 o'clock.
+
+288
+00:57:19,724 --> 00:57:21,724
+ve
+
+289
+00:57:18,420 --> 00:57:30,619
+Okay, in this set of lectures, basically, I will introduce the programming environment we will be using in bioinformatics.
+
+290
+00:57:30,619 --> 00:57:37,619
+I will also, traditionally, I was completely...
+
+291
+00:58:05,268 --> 00:58:05,768
+Ok.
+
+292
+00:58:18,951 --> 00:58:19,951
+bu
+
+293
+00:58:18,099 --> 00:58:48,248
+Evet.
+
+294
+00:58:41,588 --> 00:58:45,708
+There are three C's, Constance, Command & Conditions.
+
+295
+00:58:45,708 --> 00:58:47,028
+These are important.
+
+296
+00:58:47,028 --> 00:58:49,588
+And use of variable containers.
+
+297
+00:58:52,588 --> 00:58:55,588
+Particular being pattern matching or...
+
+298
+00:59:00,500 --> 00:59:04,260
+some Perl Operators for the pattern matching.
+
+299
+00:59:05,400 --> 00:59:10,440
+Basically, it is a build on the regular expressions.
+
+300
+00:59:11,340 --> 00:59:12,340
+Okay.
+
+301
+00:59:17,076 --> 00:59:27,396
+The objective of this course is to enable students to acquire an understanding of and admitting programming language.
+
+302
+00:59:27,396 --> 00:59:34,755
+We will be using Perl and partially Python.
+
+303
+00:59:40,788 --> 00:59:45,788
+As we have discussed before, and you already know,
+
+304
+00:59:45,788 --> 00:59:51,788
+Actors are organized around two main components.
+
+305
+00:59:51,788 --> 00:59:54,788
+What are these two main components?
+
+306
+00:59:58,291 --> 00:59:59,692
+Anybody can turn me?
+
+307
+01:00:06,324 --> 01:00:11,603
+What is the two main components of a computer system?
+
+308
+01:00:18,452 --> 01:00:19,291
+Are you there?
+
+309
+01:00:22,572 --> 01:00:24,771
+Say, it says CPU and GPU.
+
+310
+01:00:37,940 --> 01:00:43,760
+If you remember our discussion in the past about computing systems,
+
+311
+01:01:08,692 --> 01:01:12,552
+The body of a computer is, we call it hardware.
+
+312
+01:01:16,724 --> 01:01:21,144
+Okay, what is the soul of the computer then?
+
+313
+01:01:23,184 --> 01:01:29,064
+We used an analogy saying that without what?
+
+314
+01:01:31,184 --> 01:01:34,204
+A computer is an electronic junk.
+
+315
+01:01:43,539 --> 01:02:08,043
+Bu, bu
+
+316
+01:02:10,996 --> 01:02:15,996
+Bu konumlar için, bu konumlar için,
+
+317
+01:02:15,996 --> 01:02:20,996
+bu konumlar için,
+
+318
+01:02:20,996 --> 01:02:24,996
+ve çok çok farklı bir konumlar için,
+
+319
+01:02:24,996 --> 01:02:27,996
+bu konumlar için,
+
+320
+01:02:33,268 --> 01:02:37,007
+Açık bir computer
+
+321
+01:02:37,007 --> 01:02:41,947
+does what exactly you tell it to
+
+322
+01:02:41,947 --> 01:02:43,947
+what to do.
+
+323
+01:02:44,467 --> 01:02:47,907
+It's just you program it and it will work accordingly.
+
+324
+01:02:50,188 --> 01:02:53,827
+All computers given enough time and memory
+
+325
+01:03:23,092 --> 01:03:33,612
+Okay, if you run a specific program on PDA, you will get the result.
+
+326
+01:03:34,152 --> 01:03:37,292
+You run it on workstation, you will get the same result.
+
+327
+01:03:37,912 --> 01:03:41,492
+You run it on super computer, you will get again same result.
+
+328
+01:03:44,092 --> 01:03:49,172
+This is one fact about the computing systems.
+
+329
+01:04:00,851 --> 01:04:12,231
+In theory, a computer can compute anything that's possible to compute if you give enough time and memory to that computing system.
+
+330
+01:04:12,231 --> 01:04:22,291
+So, in practice, solving problems involves computing under some constraints.
+
+331
+01:04:22,911 --> 01:04:24,711
+What are these constraints?
+
+332
+01:04:29,619 --> 01:04:31,083
+Önce, tine.
+
+333
+01:04:38,420 --> 01:04:49,139
+Ok, that means if you want to forecast weather or animation, these are time dependent.
+
+334
+01:04:49,699 --> 01:04:55,380
+You need to have enough time to get a certain result.
+
+335
+01:04:55,380 --> 01:04:57,380
+The cost...
+
+336
+01:04:58,804 --> 01:05:02,744
+ve cilfon, ve cilfon, ve cilfon, ve cilfon, et cetera.
+
+337
+01:05:18,036 --> 01:05:20,596
+You have the time, cost.
+
+338
+01:05:23,596 --> 01:05:25,296
+Anybody can guess.
+
+339
+01:05:29,940 --> 01:05:31,940
+Power.
+
+340
+01:05:31,940 --> 01:05:32,940
+Okay?
+
+341
+01:05:32,940 --> 01:05:42,940
+This is another important constraint, especially for cell phone or mobile applications.
+
+342
+01:05:42,940 --> 01:05:46,940
+Power is an important constraint.
+
+343
+01:05:52,403 --> 01:06:18,987
+Açık bir computer kanıtlaması bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde
+
+344
+01:06:20,052 --> 01:06:23,052
+İzlediğiniz için, bu koncepts.
+
+345
+01:06:25,052 --> 01:06:27,052
+Operating system,
+
+346
+01:06:27,052 --> 01:06:28,052
+basically,
+
+347
+01:06:30,052 --> 01:06:33,052
+interact directly with the hardware.
+
+348
+01:06:33,052 --> 01:06:37,052
+Operating system is there to control the resources of the
+
+349
+01:06:39,052 --> 01:06:41,052
+computing system,
+
+350
+01:06:42,052 --> 01:06:47,052
+which makes it easy for users to interact with.
+
+351
+01:06:47,539 --> 01:06:49,539
+Haldur.
+
+352
+01:06:51,539 --> 01:06:53,539
+Bu,
+
+353
+01:06:53,539 --> 01:07:10,347
+bu,
+
+354
+01:07:11,188 --> 01:07:37,836
+Ve de
+
+355
+01:07:39,284 --> 01:07:48,003
+We have the CPU, we have the basic physics, basically, semiconductor physics in terms of the electronic circuits.
+
+356
+01:07:49,764 --> 01:08:01,124
+We have problems. Problems are coded into algorithms. Algorithms are basically expressed in languages.
+
+357
+01:08:02,547 --> 01:08:08,847
+Then these expressions are converted into instruction set architecture.
+
+358
+01:08:10,007 --> 01:08:16,047
+Then instruction set architecture is implemented in terms of the microarchitecture.
+
+359
+01:08:16,147 --> 01:08:17,987
+There are different microarchitectures.
+
+360
+01:08:20,127 --> 01:08:24,147
+And there is specific circuit implementations.
+
+361
+01:08:24,147 --> 01:08:26,467
+It could be CMOS.
+
+362
+01:08:27,091 --> 01:08:36,471
+Komplementary metal oxides, semiconductors, PTR, transistör logik, or any other technology, basically.
+
+363
+01:08:37,191 --> 01:08:41,171
+Then we have the physical level in terms of the devices.
+
+364
+01:08:54,963 --> 01:09:02,963
+As we have shown, a systematic sequence of transformations between layers of obstructions required.
+
+365
+01:09:02,963 --> 01:09:04,963
+We have problem.
+
+366
+01:09:04,963 --> 01:09:17,963
+Then we design it in terms of the software, we choose an algorithm and data structure to represent the data.
+
+367
+01:09:17,963 --> 01:09:19,963
+Okay.
+
+368
+01:09:20,659 --> 01:09:22,659
+Then we have the programming.
+
+369
+01:09:23,659 --> 01:09:27,659
+For programming, we use a specific language to express design.
+
+370
+01:09:29,659 --> 01:09:31,659
+We create a program.
+
+371
+01:09:32,659 --> 01:09:43,659
+Then there's compiling or interpreting stage depending on the environment we use or language we use.
+
+372
+01:10:03,412 --> 01:10:08,851
+Then machine instructions will use specific instruction set architecture.
+
+373
+01:10:12,500 --> 01:10:19,420
+...of the processor on which a program is going to run.
+
+374
+01:10:21,100 --> 01:10:29,819
+We can go deeper and deeper obviously. Instruction set architecture might have a specific processor design.
+
+375
+01:10:34,220 --> 01:10:39,899
+As I already said, specific logic or circuit implementing here.
+
+376
+01:10:43,956 --> 01:10:50,956
+ve farklı bir
+
+377
+01:11:02,515 --> 01:11:09,636
+I just go over again quickly in problem statement.
+
+378
+01:11:10,195 --> 01:11:15,995
+Basically, if you state it using natural language as we speak, we have such a problem.
+
+379
+01:11:18,075 --> 01:11:23,115
+Then in terms of the algorithms, these are step-by-step procedures.
+
+380
+01:11:24,495 --> 01:11:25,915
+Guaranteed to finish.
+
+381
+01:11:26,115 --> 01:11:26,995
+There is no...
+
+382
+01:11:31,699 --> 01:11:33,699
+...doubt about this.
+
+383
+01:11:33,699 --> 01:11:35,699
+It must start and finish.
+
+384
+01:11:35,699 --> 01:11:37,699
+It must be definite.
+
+385
+01:11:39,699 --> 01:11:41,699
+OK.
+
+386
+01:11:41,699 --> 01:11:43,699
+And...
+
+387
+01:11:43,699 --> 01:11:45,699
+...vexpress targeting
+
+388
+01:11:45,699 --> 01:11:47,699
+...usin a computer language.
+
+389
+01:11:47,699 --> 01:11:50,699
+And we call these computer languages
+
+390
+01:11:50,699 --> 01:11:53,699
+...usually high-level languages.
+
+391
+01:11:53,699 --> 01:11:55,699
+We can also code.
+
+392
+01:11:56,532 --> 01:12:22,252
+Anadolu'da kullanılan birçok
+
+393
+01:12:23,060 --> 01:12:28,060
+İmplemeni problemi, birçok birçok birçok birçok.
+
+394
+01:12:28,060 --> 01:12:30,060
+Birçok birçok.
+
+395
+01:12:45,779 --> 01:12:49,739
+Aşkı sistemlerine, eğer
+
+396
+01:12:54,771 --> 01:13:21,739
+Bu birçok
+
+397
+01:13:22,547 --> 01:13:24,787
+These are different numerical approaches.
+
+398
+01:13:25,887 --> 01:13:28,528
+Now you have to determine which approach to use,
+
+399
+01:13:28,627 --> 01:13:32,688
+which mathematical or numerical approach to use to solve an equation.
+
+400
+01:13:34,367 --> 01:13:37,547
+Let's assume that we have chosen the Gaussian elimination.
+
+401
+01:13:38,587 --> 01:13:39,407
+Now we have
+
+402
+01:13:39,407 --> 01:13:44,547
+different
+
+403
+01:13:48,452 --> 01:13:57,452
+Bu, ekran, bu, ekran, C++, Java, Python,
+
+404
+01:13:57,452 --> 01:13:58,452
+ve 3D olarak,
+
+405
+01:13:58,452 --> 01:13:59,452
+bu, ekran, bu, ekran,
+
+406
+01:13:59,452 --> 01:14:01,452
+ve bu, ekran,
+
+407
+01:14:01,452 --> 01:14:13,324
+bu, ekran,
+
+408
+01:14:15,028 --> 01:14:24,028
+Now, the next level, we have this time, choice of architecture.
+
+409
+01:14:24,028 --> 01:14:40,028
+We can choose a computing system based on either PowerPC, Intel architecture, or a microcontroller, or something else. We can increase these options.
+
+410
+01:14:42,804 --> 01:14:45,844
+Assume that we have chosen Intel architecture.
+
+411
+01:14:46,203 --> 01:14:53,344
+Now we have different family members of Intel architecture.
+
+412
+01:14:53,884 --> 01:14:56,844
+We can choose Sentinel, Pantium 4, Zone.
+
+413
+01:14:57,043 --> 01:15:05,644
+These are obsolete, but we can choose say I3, I5, I7, I9, whatever.
+
+414
+01:15:07,123 --> 01:15:10,684
+İzlediğiniz için, Pantium 4'ye seçenek için,
+
+415
+01:15:10,684 --> 01:15:12,684
+şimdi,
+
+416
+01:15:12,684 --> 01:15:14,684
+birerimde,
+
+417
+01:15:14,684 --> 01:15:18,684
+adition bir şekilde.
+
+418
+01:15:18,684 --> 01:15:20,243
+Öncelikle,
+
+419
+01:15:20,243 --> 01:15:22,163
+RIPPOOL-CARY-ADDER
+
+420
+01:15:22,163 --> 01:15:25,163
+adır,
+
+421
+01:15:25,163 --> 01:15:28,123
+ve kolay,
+
+422
+01:15:28,123 --> 01:15:31,003
+ve daha fazla
+
+423
+01:15:33,460 --> 01:15:43,680
+CPU, RNA, or you can choose an implementation of Pentium 4 with a FASTA adder,
+
+424
+01:15:43,680 --> 01:15:50,840
+which is based on Kerylook Add Adder. Assume that we have chosen Kerylook Add Adder,
+
+425
+01:15:50,840 --> 01:16:00,579
+then we have now options to choose from which semiconductor technology.
+
+426
+01:16:27,872 --> 01:16:36,432
+Or, if we want a faster implementation, we do not care about power, we can choose bipolar implementation.
+
+427
+01:16:37,152 --> 01:16:43,992
+If we need very high performance, then we can choose calyum arsenide implementation.
+
+428
+01:16:45,192 --> 01:16:49,231
+There is always a trade of which one to choose, okay?
+
+429
+01:16:50,032 --> 01:16:53,032
+There are many options to use from.
+
+430
+01:17:03,347 --> 01:17:03,667
+Ok.
+
+431
+01:17:07,796 --> 01:17:17,136
+So, we represent a computer system in terms of the hierarchy, level hierarchy.
+
+432
+01:17:18,935 --> 01:17:23,056
+There are seven levels at least.
+
+433
+01:17:23,275 --> 01:17:30,175
+We use the high-level language, assembly language, systems of the machine level, control level, or the logic level.
+
+434
+01:17:30,655 --> 01:17:32,796
+We already mentioned this.
+
+435
+01:17:35,891 --> 01:17:43,692
+Software is basically a program or collection of programs.
+
+436
+01:17:43,692 --> 01:17:44,471
+You know this.
+
+437
+01:17:44,891 --> 01:17:47,311
+It enables the hardware to process data.
+
+438
+01:17:53,108 --> 01:17:55,948
+What these names reminds you?
+
+439
+01:17:57,868 --> 01:17:59,347
+What are these names?
+
+440
+01:17:59,488 --> 01:18:02,087
+CFO, Trun, other, Azif, Java.
+
+441
+01:18:10,836 --> 01:18:13,636
+Obviously, these are programming languages.
+
+442
+01:18:14,636 --> 01:18:18,636
+There are many different classifications of programming languages.
+
+443
+01:18:18,636 --> 01:18:32,636
+And one classification is in terms of the compiling or not compiling.
+
+444
+01:18:32,636 --> 01:18:37,420
+For example, C, Fortran, Ada, Java.
+
+445
+01:18:38,068 --> 01:18:40,068
+Can be compiled.
+
+446
+01:18:40,068 --> 01:18:45,068
+And this type of languages are called compiled languages.
+
+447
+01:18:45,068 --> 01:18:51,068
+In C, Fortran, other etc.
+
+448
+01:18:51,068 --> 01:19:01,068
+After compilation process, what we obtain is an executable code.
+
+449
+01:19:05,011 --> 01:19:10,271
+Java, after completion, we obtain a bytecode.
+
+450
+01:19:12,091 --> 01:19:15,912
+Then we need to interpret this bytecode.
+
+451
+01:19:16,572 --> 01:19:18,752
+And there are some languages such as BASIC.
+
+452
+01:19:19,031 --> 01:19:21,152
+They are called interpreted languages.
+
+453
+01:19:24,152 --> 01:19:29,431
+At the interpretation level.
+
+454
+01:19:30,323 --> 01:19:41,724
+We have a sequence of binary numbers in terms of the actual instruction set architecture of the specific processor.
+
+455
+01:19:42,804 --> 01:19:54,043
+Then we implement this algorithm by using a number of hardware implementations.
+
+456
+01:19:56,564 --> 01:20:00,604
+Bu bireride kodelerde,
+
+457
+01:20:00,604 --> 01:20:02,684
+BASICLAR,
+
+458
+01:20:02,684 --> 01:20:09,564
+ASTLAR,
+
+459
+01:20:12,180 --> 01:20:24,180
+We said that programming is basically, metodologies for creating computer programs that perform a desired function. Fil is a definition of programming.
+
+460
+01:20:31,119 --> 01:20:38,412
+ASTLAR,
+
+461
+01:20:30,420 --> 01:20:34,539
+Bu bir şekilde problemiyle ilgili bir şekilde
+
+462
+01:20:34,539 --> 01:20:38,412
+ve programı ile ilgili bir şekilde
+
+463
+01:20:44,675 --> 01:20:53,675
+ASTLAR,
+
+464
+01:20:44,467 --> 01:20:45,467
+Şimdi,
+
+465
+01:20:47,387 --> 01:20:48,467
+bu konvert algorithm
+
+466
+01:20:48,467 --> 01:20:50,467
+into machine instructions.
+
+467
+01:20:51,967 --> 01:20:53,467
+Through these processes
+
+468
+01:20:53,467 --> 01:20:55,467
+we use debugging.
+
+469
+01:20:55,467 --> 01:20:57,467
+Basically debugging is how
+
+470
+01:20:57,467 --> 01:20:59,467
+do you figure out why
+
+471
+01:20:59,467 --> 01:21:01,467
+a program didn't work
+
+472
+01:21:01,467 --> 01:21:03,467
+if it did not work.
+
+473
+01:21:03,467 --> 01:21:05,099
+Okay.
+
+474
+01:21:05,747 --> 01:21:10,107
+Debugging programı anlamına rağmenin registrası, memory,
+
+475
+01:21:10,107 --> 01:21:12,407
+etk.
+
+476
+01:21:12,407 --> 01:21:14,747
+Bu hardware'in önemli değil.
+
+477
+01:21:16,347 --> 01:21:22,188
+Bence, if we spend time on the first stage,
+
+478
+01:21:23,307 --> 01:21:27,307
+we can reduce the time spent on the second stage.
+
+479
+01:21:27,307 --> 01:21:29,907
+And this is possible through debugging.
+
+480
+01:21:30,931 --> 01:21:36,551
+Step 5 is refinement, is also known as systematic decomposition.
+
+481
+01:21:37,332 --> 01:21:39,371
+Start with first problem statement.
+
+482
+01:21:40,631 --> 01:21:44,451
+We can decompose task into a few simple subtasks.
+
+483
+01:21:45,811 --> 01:22:02,531
+Decomposite subtasks into smaller subtasks and these into even smaller subtasks, et cetera, until we get to the machine instruction level. So you will be able to identify problem if exist.
+
+484
+01:22:03,611 --> 01:22:11,291
+Because problem statements are written in English, they are sometimes ambiguous and or incomplete.
+
+485
+01:22:14,195 --> 01:22:16,195
+Var is file located?
+
+486
+01:22:16,195 --> 01:22:20,195
+This is one of the questions to answer.
+
+487
+01:22:20,195 --> 01:22:22,195
+How big is it?
+
+488
+01:22:22,195 --> 01:22:26,195
+How do I know when I have reached the end?
+
+489
+01:22:26,195 --> 01:22:29,195
+How should final count be printed?
+
+490
+01:22:29,195 --> 01:22:32,195
+Is it a decimal number or not?
+
+491
+01:22:32,195 --> 01:22:34,195
+If the character is a letter,
+
+492
+01:22:34,195 --> 01:22:38,195
+should I count both upper-case and lower-case occurrences?
+
+493
+01:22:39,636 --> 01:22:41,976
+How do you resolve all these issues?
+
+494
+01:22:44,036 --> 01:22:52,736
+Basically, we can ask the person who wants the problem solved or make a decision and document it.
+
+495
+01:22:53,636 --> 01:23:03,148
+In a programming language, in a classical programming language, there are three basic constructs.
+
+496
+01:23:04,659 --> 01:23:07,659
+Anybody can tell me what are these constructs?
+
+497
+01:23:11,507 --> 01:23:16,707
+When you write a program, what type of constructs you use?
+
+498
+01:23:35,252 --> 01:23:36,492
+Temelibadansır.
+
+499
+01:23:40,340 --> 01:23:48,043
+You can use loop, exactly. You can use if statement, which is conditional, then...
+
+500
+01:23:52,083 --> 01:23:58,844
+You have linear statements, just simple statements with no condition or no log.
+
+501
+01:23:58,844 --> 01:24:05,443
+These are three basic constructs you use to form a program.
+
+502
+01:24:05,963 --> 01:24:08,344
+Okay, let's go over this.
+
+503
+01:24:08,844 --> 01:24:10,963
+We have basically three constructs.
+
+504
+01:24:13,483 --> 01:24:15,764
+First, linear.
+
+505
+01:24:19,319 --> 01:24:21,319
+İzlediğiniz için, birçok
+
+506
+01:25:10,323 --> 01:25:35,823
+So, same if subtask 1, subtask 2, subtask 3 are exactly the same, instead of listing them sequentially, we can have a loop, we can have a basic construct, a core construct, and we can run this many times. These are iterative.
+
+507
+01:25:37,492 --> 01:26:05,260
+Bu da bu
+
+508
+01:26:05,587 --> 01:26:11,347
+Bu bir örnek var, ama çok fazla fazla zaman var.
+
+509
+01:26:14,579 --> 01:26:17,579
+İndirilere, ileriyatörde bir şekilde.
+
+510
+01:26:17,579 --> 01:26:21,579
+İteriyatörde, bir şekilde.
+
+511
+01:26:21,579 --> 01:26:24,579
+Bir şekilde.
+
+512
+01:26:24,579 --> 01:26:26,579
+Ve bu şekilde.
+
+513
+01:26:29,579 --> 01:26:30,579
+Bu, aslında,
+
+514
+01:26:30,579 --> 01:26:34,579
+bu programın,
+
+515
+01:26:40,275 --> 01:26:42,275
+Bu da bir hendimde yapabilirsiniz.
+
+516
+01:26:42,275 --> 01:26:44,275
+Bu da programlar için.
+
+517
+01:26:44,275 --> 01:26:52,275
+Programlar için bir hendimde bir hendimde.
+
+518
+01:26:56,275 --> 01:27:00,275
+Programlar için, bu hendimde bir hendimde.
+
+519
+01:27:00,275 --> 01:27:03,595
+Bu da, bu hendimde ve bu hendimde bir hendimde.
+
+520
+01:27:04,627 --> 01:27:09,167
+Rhyme, we run the same analysis on lots of similar data files.
+
+521
+01:27:09,587 --> 01:27:12,147
+So this is the automation, basically.
+
+522
+01:27:14,007 --> 01:27:18,967
+Analyze data, make decisions, create new analysis methods, etc.
+
+523
+01:27:19,867 --> 01:27:24,447
+Now the question, we said that we will be using Herd.
+
+524
+01:27:25,387 --> 01:27:30,907
+And nowadays, more and more Python is used in...
+
+525
+01:27:31,347 --> 01:27:55,819
+Bu da kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birçok kullanımlı birç
+
+526
+01:27:56,659 --> 01:28:00,739
+There are many powerful functions for working with text.
+
+527
+01:28:00,739 --> 01:28:03,239
+This is one of the main reasons
+
+528
+01:28:03,239 --> 01:28:05,960
+TORR is extensively used.
+
+529
+01:28:05,960 --> 01:28:09,619
+The main data type in bioinformatics
+
+530
+01:28:09,619 --> 01:28:12,960
+is basically text, character or string.
+
+531
+01:28:12,960 --> 01:28:17,420
+So searching or extracting or modifying
+
+532
+01:28:17,420 --> 01:28:22,359
+or combining these two is very easy with TORR.
+
+533
+01:28:22,420 --> 01:28:24,960
+Bu da, many powerful functions for it.
+
+534
+01:28:26,059 --> 01:28:29,260
+It can control other programs as well.
+
+535
+01:28:29,380 --> 01:28:37,619
+It is free and available for all operating systems, most popular language in bioinformatics.
+
+536
+01:28:38,300 --> 01:28:42,239
+There are many public modules, there is extensive libraries.
+
+537
+01:28:45,123 --> 01:28:47,123
+Programming için teşekkür ederim.
+
+538
+01:28:47,123 --> 01:28:51,123
+Programming için çok platform compatible.
+
+539
+01:28:51,123 --> 01:28:53,123
+Basically, if you remember,
+
+540
+01:28:53,123 --> 01:28:57,123
+I mentioned the languages
+
+541
+01:28:57,123 --> 01:28:59,123
+in one sense can be
+
+542
+01:28:59,123 --> 01:29:01,123
+classified either as
+
+543
+01:29:05,123 --> 01:29:07,123
+compiled or interpreted language.
+
+544
+01:29:09,268 --> 01:29:14,568
+Perl is somehow in between, can be compiled or interpreted.
+
+545
+01:29:16,208 --> 01:29:19,768
+So it gives a flexibility.
+
+546
+01:29:20,028 --> 01:29:27,068
+You can use Perl as scripting language, as an interpreted language,
+
+547
+01:29:27,068 --> 01:29:36,448
+or you can write programs as combinationly as other languages.
+
+548
+01:29:38,899 --> 01:29:47,939
+Now we said that Python is also becoming very popular nowadays, especially in big data or data science.
+
+549
+01:29:47,939 --> 01:29:55,420
+Artificial intelligence, Python is extensively used.
+
+550
+01:29:57,019 --> 01:29:59,859
+It is easy to learn and use as well.
+
+551
+01:29:59,859 --> 01:30:05,219
+Now it is matured and supportive in the supportive Python community.
+
+552
+01:30:06,003 --> 01:30:14,003
+Bu konuda birçok.
+
+553
+01:30:30,771 --> 01:30:55,855
+Bu, bu
+
+554
+01:30:55,855 --> 01:31:09,175
+We are not going to discuss our language, but equally our language can also be used in more informatics and extensively used.
+
+555
+01:31:11,347 --> 01:31:27,819
+Bu, bu
+
+556
+01:31:31,028 --> 01:31:37,507
+Here is the basic philosophical approach to Perl and Python.
+
+557
+01:31:39,507 --> 01:31:47,028
+Perl is basically an acronym for Practical Extraction and Report Language.
+
+558
+01:31:50,068 --> 01:31:54,468
+Because it has powerful text manipulation functions.
+
+559
+01:31:54,804 --> 01:31:59,804
+Her name reflects this practical extraction and report language.
+
+560
+01:31:59,804 --> 01:32:17,804
+Originally written by Larry Wall at NASA's JPM Jet Propulsion Laboratory to process his own mails on Unix systems.
+
+561
+01:32:17,804 --> 01:32:19,804
+Therefore, it combines...
+
+562
+01:32:20,756 --> 01:32:27,355
+Bu konceptsiyonun uygulama çok farklı bir konceptsiyonun uygulama.
+
+563
+01:32:27,355 --> 01:32:28,936
+Bu konceptsiyonun uygulama bir
+
+564
+01:32:28,936 --> 01:32:32,516
+alışkanı olarak kullanarak bir şekilde
+
+565
+01:32:32,516 --> 01:32:35,636
+ve mail'in uygulama bir şekilde
+
+566
+01:32:35,636 --> 01:32:39,516
+e-mail mesajı.
+
+567
+01:32:41,108 --> 01:32:49,228
+Eventually, it is extended by a lot of people and many biologists because it is some sort of text manipulation.
+
+568
+01:32:49,927 --> 01:32:52,427
+Manus are basically text string.
+
+569
+01:32:53,887 --> 01:32:59,507
+And according, it has powerful features to process this text and language.
+
+570
+01:33:00,328 --> 01:33:05,868
+Because main data type in bioinformatics is text and character.
+
+571
+01:33:27,923 --> 01:33:30,804
+More than one way to do it.
+
+572
+01:33:31,003 --> 01:33:33,043
+There are alternatives, you understand.
+
+573
+01:33:33,463 --> 01:33:35,683
+But there is not only one solution.
+
+574
+01:33:36,063 --> 01:33:40,583
+There might be usually more than one solution for a specific problem.
+
+575
+01:33:45,823 --> 01:33:47,703
+Python is not an acronym.
+
+576
+01:33:49,703 --> 01:33:53,503
+It is named after the comedy group Monty Python.
+
+577
+01:33:55,380 --> 01:33:58,060
+Bu da
+
+578
+01:34:01,268 --> 01:34:27,268
+Bu bir anacronim.
+
+579
+01:34:59,028 --> 01:35:07,307
+Simple is better than complex, therefore the Python programs are more understandable than many other languages.
+
+580
+01:35:10,288 --> 01:35:15,188
+Complex is better than complicated. These are two different words.
+
+581
+01:35:15,408 --> 01:35:22,368
+Complex is something that allows you to implement many difficult tasks easily, but they are not complicated.
+
+582
+01:35:23,667 --> 01:35:27,427
+Readability counts. Readability is important.
+
+583
+01:35:27,427 --> 01:35:35,487
+Basically, when you look at a code, it should be easy to understand what this code is for.
+
+584
+01:35:36,107 --> 01:35:36,967
+Say what it does.
+
+585
+01:35:39,427 --> 01:35:45,807
+These are basically explanations of these two languages.
+
+586
+01:35:52,243 --> 01:35:57,243
+Bu cgi programın kapabiliyazı.
+
+587
+01:35:59,243 --> 01:36:01,243
+Common gate interface.
+
+588
+01:36:06,899 --> 01:36:08,899
+İlhamdülillah,
+
+589
+01:36:09,899 --> 01:36:11,899
+genelik webpages.
+
+590
+01:36:13,899 --> 01:36:14,899
+As we said,
+
+591
+01:36:14,899 --> 01:36:18,899
+it has a powerful text processing capability.
+
+592
+01:36:21,899 --> 01:36:24,899
+It allows you to extract data from one source
+
+593
+01:36:24,899 --> 01:36:28,899
+and translating it into another format.
+
+594
+01:36:30,899 --> 01:36:32,899
+It provides
+
+595
+01:36:34,195 --> 01:36:41,195
+Bu dağmenin
+
+596
+01:36:41,195 --> 01:36:46,195
+internet programı çok kolay. Bu dağmenin
+
+597
+01:37:00,564 --> 01:37:04,123
+İlk olarak çok text processing library
+
+598
+01:37:04,123 --> 01:37:07,564
+ve
+
+599
+01:37:07,564 --> 01:37:09,524
+İlk olarak
+
+600
+01:37:09,524 --> 01:37:12,564
+ve
+
+601
+01:37:12,564 --> 01:37:13,884
+sistem
+
+602
+01:37:13,884 --> 01:37:14,564
+ve
+
+603
+01:37:14,564 --> 01:37:15,564
+İlk olarak
+
+604
+01:37:15,564 --> 01:37:20,564
+ve
+
+605
+01:37:27,923 --> 01:37:32,323
+How to download and install these two languages?
+
+606
+01:37:32,323 --> 01:37:36,724
+Probably you already installed Python, you already know it.
+
+607
+01:37:38,923 --> 01:37:42,003
+For Python, there is World Wide Web Python.
+
+608
+01:37:42,003 --> 01:37:46,323
+Or again, for Perl, there is World Wide Web Perl ORG.
+
+609
+01:37:48,724 --> 01:37:50,923
+For both languages...
+
+610
+01:37:51,252 --> 01:37:56,612
+They have basic, basically for both languages, you don't need any either.
+
+611
+01:37:57,212 --> 01:37:59,712
+What you need is just only a text editor.
+
+612
+01:38:00,712 --> 01:38:16,612
+You just simply write program using this text editor and save as their defined extensions.
+
+613
+01:38:18,387 --> 01:38:20,387
+called perm-hpm,
+
+614
+01:38:23,307 --> 01:38:24,307
+basically.
+
+615
+01:38:38,676 --> 01:38:44,756
+BOT, LANGUAGE'İS'AZ, POWERFUL HELP FACILITIES.
+
+616
+01:39:04,655 --> 01:39:20,735
+Bu bir help and if you go to the help prompt and you can type function and you will get the expected information and if Python and Perl is slightly different in this respect.
+
+617
+01:39:22,315 --> 01:39:29,155
+In Perl you can give a specific keyword with Q directive.
+
+618
+01:39:33,395 --> 01:39:34,695
+Etc. Anyway.
+
+619
+01:39:37,336 --> 01:39:42,416
+So in this respect, we already said that Perl and Python both.
+
+620
+01:39:43,215 --> 01:39:48,595
+What do you think? Are they interpretive language or compiled languages?
+
+621
+01:40:00,819 --> 01:40:09,939
+Ok, you can use as interpreted language or compiled language as well.
+
+622
+01:40:13,079 --> 01:40:22,439
+Burn and Python are in between is two, similar to Java, but Java is different. Java produces a bytecode.
+
+623
+01:40:22,815 --> 01:40:26,336
+But in Perl and Python, they do not produce a bytecode.
+
+624
+01:40:26,556 --> 01:40:34,115
+They directly produce the code relevant to respective instructions set architecture.
+
+625
+01:41:02,036 --> 01:41:10,716
+So, probably you already know how to write codes in Python, but I will just go over how to write codes in Perl.
+
+626
+01:41:11,356 --> 01:41:16,036
+You form a working folder, open any text editor.
+
+627
+01:41:17,615 --> 01:41:23,936
+You can simply type Perl or Python code.
+
+628
+01:41:25,011 --> 01:41:51,979
+...
+
+629
+01:41:53,300 --> 01:42:07,300
+Perl, you can simply type Perl and the PL file and just hit enter and it will run.
+
+630
+01:42:07,300 --> 01:42:17,300
+For Python, you will simply type Python and write the name of the file and it will run again.
+
+631
+01:42:20,467 --> 01:42:22,827
+İntekreğinde, development environment.
+
+632
+01:42:27,380 --> 01:42:34,260
+...to run codes directly, to write your codes and run directly from this idea.
+
+633
+01:42:34,260 --> 01:42:35,260
+Okay.
+
+634
+01:42:38,139 --> 01:42:40,819
+Here is the first FAIR program.
+
+635
+01:42:43,380 --> 01:42:47,139
+You simply open a file and...
+
+636
+01:42:49,859 --> 01:42:53,139
+...file this code and save.
+
+637
+01:42:54,771 --> 01:43:21,484
+...
+
+638
+01:43:23,252 --> 01:43:24,252
+End of line.
+
+639
+01:43:25,752 --> 01:43:26,252
+Whenever
+
+640
+01:43:26,252 --> 01:43:31,312
+a computer program encounters
+
+641
+01:43:31,312 --> 01:43:32,732
+is within a string,
+
+642
+01:43:32,932 --> 01:43:34,052
+next
+
+643
+01:43:34,052 --> 01:43:39,012
+sentence will start
+
+644
+01:43:39,012 --> 01:43:41,852
+from the next line.
+
+645
+01:43:44,552 --> 01:43:45,532
+Okay.
+
+646
+01:43:47,091 --> 01:43:52,091
+Bu bir programı çok farklı bir programı.
+
+647
+01:43:52,091 --> 01:43:57,091
+Bir de bu programı.
+
+648
+01:43:57,091 --> 01:44:09,091
+Bir programı.
+
+649
+01:44:09,876 --> 01:44:47,948
+Bu, bu
+
+650
+01:44:51,028 --> 01:45:05,568
+We mentioned debugging. In writing a program and getting this program run correctly, debugging is an important stage.
+
+651
+01:45:07,708 --> 01:45:13,368
+In development, you have to use debug to identify problems easily.
+
+652
+01:45:18,420 --> 01:45:21,920
+Basically, debugging is finding errors and fixing them.
+
+653
+01:45:22,220 --> 01:45:26,880
+It is a specialized skill and it takes practice to become good at it.
+
+654
+01:45:26,880 --> 01:45:33,760
+You have to be very familiar with the programming language and the concepts of program and algorithm.
+
+655
+01:45:43,220 --> 01:45:45,659
+Python as well and many other languages.
+
+656
+01:45:46,659 --> 01:45:51,260
+Basically, it's best to tell you where the error is.
+
+657
+01:45:52,099 --> 01:46:02,159
+Compilers or interpreters will have built-in some capabilities for identifying the errors.
+
+658
+01:46:04,460 --> 01:46:09,019
+So if there is an error, it will give you a message.
+
+659
+01:46:11,891 --> 01:46:23,411
+Tying to solve an error while you write the program, the first thing to do is read the error message carefully.
+
+660
+01:46:24,491 --> 01:46:35,411
+Understand what it tells you and it will shorten your time to spend on identifying the error and solving the problem.
+
+661
+01:46:35,923 --> 01:46:39,604
+Çünkü, in many cases, when somebody sees an error,
+
+662
+01:46:43,684 --> 01:46:50,804
+he or she starts trying to solve the problem without leaving even what an error message is.
+
+663
+01:46:51,604 --> 01:46:53,443
+So, this is the first thing to do.
+
+664
+01:46:55,604 --> 01:46:58,323
+Sometimes, it gives multiple line errors.
+
+665
+01:46:59,444 --> 01:47:18,804
+You should go to the first line number and try to see the error. Try to look at an earlier line 2 if the error happening at the beginning will also cause some errors in the next lines.
+
+666
+01:47:20,944 --> 01:47:21,804
+Okay.
+
+667
+01:47:24,083 --> 01:47:33,683
+After fixing the first error, run the script again and the next errors may have gone away. So that's the first thing to do.
+
+668
+01:47:37,163 --> 01:47:41,403
+In turn, now I will leave.
+
+669
+01:48:06,484 --> 01:48:15,904
+As I said, debugging in Perl can be done using some specific switches.
+
+670
+01:48:17,244 --> 01:48:21,144
+You should use the C switch, basically.
+
+671
+01:48:21,484 --> 01:48:23,544
+C is for check.
+
+672
+01:48:25,144 --> 01:48:25,504
+Okay?
+
+673
+01:48:26,044 --> 01:48:27,864
+To check for possible errors.
+
+674
+01:48:29,140 --> 01:48:34,640
+By entering the command, such as this one, per C, some script name.
+
+675
+01:48:38,355 --> 01:48:44,975
+You make Perl to try to compile your script without actually running it.
+
+676
+01:48:44,975 --> 01:48:55,315
+If there is any problem with your code, it will warn you.
+
+677
+01:48:55,535 --> 01:49:00,015
+The Cs which compiles the script without invoking the warning features.
+
+678
+01:49:01,455 --> 01:49:05,015
+For example, if you write...
+
+679
+01:49:05,876 --> 01:49:30,156
+print, merhaba, n whatever, in a program. This is a simple one line program. And you simply try to run it using C-switch. It will not generate the result, but it will tell you that the syntax is okay.
+
+680
+01:49:32,051 --> 01:49:35,771
+Şimdi, it's checking, it is another view.
+
+681
+01:49:47,475 --> 01:50:13,483
+Bu, bu
+
+682
+01:50:14,003 --> 01:50:19,264
+Evet, bu kodakta bir kodakta başlayan ve kodakta bir kodakta başlayan.
+
+683
+01:50:19,264 --> 01:50:23,703
+Bu kodakta bir kodakta başlayan.
+
+684
+01:50:23,703 --> 01:50:27,703
+Kodakta bir kodakta başlayan ve kodakta başlayan.
+
+685
+01:50:27,703 --> 01:50:31,203
+Ve bu kodakta başlayan bir kodakta başlayan.
+
+686
+01:50:31,203 --> 01:50:38,091
+Bu kodakta başlayan.
+
+687
+01:50:43,412 --> 01:51:14,039
+Evet.
+
+688
+01:51:08,724 --> 01:51:27,788
+bu bir
+
+689
+01:51:28,051 --> 01:51:33,171
+There are two main type of errors in programming, so not computing systems.
+
+690
+01:51:33,171 --> 01:51:40,211
+In writing programs, we can encounter two types of errors.
+
+691
+01:51:41,431 --> 01:51:46,971
+The one is syntax error and the other one is semantics error.
+
+692
+01:51:48,251 --> 01:51:54,211
+A Perl program may be syntactically correct, but semantically correct.
+
+693
+01:51:54,868 --> 01:51:55,868
+İngorrekt.
+
+694
+01:51:55,868 --> 01:52:14,868
+So many languages provide extensive resources to identify syntax error, but very few provide resources for semantics.
+
+695
+01:52:16,627 --> 01:52:20,087
+Basta, semantik has to do with meaning of language.
+
+696
+01:52:20,507 --> 01:52:28,947
+This means that the program satisfies the rules and regulations of language, but does not do what you expect it to do.
+
+697
+01:52:29,667 --> 01:52:34,347
+A simple semantically incorrect curl script can be given here.
+
+698
+01:52:35,087 --> 01:52:37,887
+Basically, we have an extra semicolon here.
+
+699
+01:52:37,887 --> 01:52:43,347
+It is semantically correct, but semantically not.
+
+700
+01:52:43,828 --> 01:52:48,068
+It will do nothing basically when you run.
+
+701
+01:52:49,148 --> 01:52:49,768
+Let's see.
+
+702
+01:52:50,028 --> 01:52:51,128
+It's okay.
+
+703
+01:52:51,608 --> 01:52:57,148
+But when you run it, you will not get the correct result.
+
+704
+01:52:57,148 --> 01:53:09,908
+To be able to identify at least some semantic errors, we can use this W switch, which stands for WARM.
+
+705
+01:53:13,171 --> 01:53:40,555
+Bu konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir
+
+706
+01:53:42,323 --> 01:53:50,043
+Anyway, it has some built-in features for semantic, identifying semantic problems as well.
+
+707
+01:53:51,963 --> 01:53:58,203
+You can combine switches. You can combine C and W switches.
+
+708
+01:54:00,203 --> 01:54:00,963
+Okay.
+
+709
+01:54:09,203 --> 01:54:13,463
+Sintax is okay, but there is some sort of problem in semantics.
+
+710
+01:54:18,484 --> 01:54:40,083
+You can apply striker rules for fel programs. For this view the strict pragma, we can make rules stricter by using view strict.
+
+711
+01:54:40,851 --> 01:55:02,847
+Bu, bu
+
+712
+01:55:02,847 --> 01:55:12,607
+Before writing your algorithms, you have to declare the variables, such as in C or Java or whatever.
+
+713
+01:55:13,647 --> 01:55:17,607
+Before writing actual code, you have to declare variables.
+
+714
+01:55:18,427 --> 01:55:20,167
+But in Perl, you don't have to.
+
+715
+01:55:20,567 --> 01:55:22,467
+We will discuss this concept later.
+
+716
+01:55:22,467 --> 01:55:27,467
+But if you use strict, then...
+
+717
+01:55:28,564 --> 01:55:39,164
+bu
+
+718
+01:55:39,164 --> 01:55:41,164
+ok
+
+719
+01:55:41,164 --> 01:55:44,003
+in python
+
+720
+01:55:44,003 --> 01:55:45,844
+for debugging
+
+721
+01:55:45,844 --> 01:55:49,384
+you have to use
+
+722
+01:55:49,384 --> 01:55:50,764
+built-in debugger
+
+723
+01:55:50,764 --> 01:55:52,884
+which is known as pdd
+
+724
+01:55:52,884 --> 01:55:54,244
+python debugger
+
+725
+01:55:55,060 --> 01:55:58,540
+Bu bir simple utility ile bir command line interface
+
+726
+01:55:58,540 --> 01:56:01,460
+Bu main job is how you invoke
+
+727
+01:56:01,980 --> 01:56:03,980
+BBB
+
+728
+01:56:07,604 --> 01:56:21,524
+And here are some PVB comments in Python to use for debugging. I'm not going to spend much time on these things. Let's come back to Perl again.
+
+729
+01:56:24,244 --> 01:56:30,804
+This statement in our first program...
+
+730
+01:56:35,188 --> 01:56:42,188
+bu
+
+731
+01:56:47,412 --> 01:56:49,012
+İngorad by Perl.
+
+732
+01:56:49,612 --> 01:56:54,312
+When you want to write a comment, you will start by hash.
+
+733
+01:56:54,812 --> 01:56:57,672
+But this first one is different.
+
+734
+01:56:58,532 --> 01:57:07,252
+This is basically, when you combine with this exclamation mark together at the start of the first line,
+
+735
+01:57:08,152 --> 01:57:12,992
+you are telling a unique system how the file should be run.
+
+736
+01:57:14,003 --> 01:57:16,003
+Bu bir ünitsi.
+
+737
+01:57:16,003 --> 01:57:40,003
+İki ünitsi.
+
+738
+01:57:39,252 --> 01:57:42,032
+Where the Perl interpreter is.
+
+739
+01:57:44,432 --> 01:57:47,532
+Within Perl and almost all other programming languages,
+
+740
+01:57:48,132 --> 01:57:51,632
+each line in a program is known as statement.
+
+741
+01:57:51,932 --> 01:57:54,512
+Obviously, we have started with this one.
+
+742
+01:57:56,472 --> 01:58:04,052
+Perl statements end with end are separated from any other statements by a semicolon, which is this one.
+
+743
+01:58:08,627 --> 01:58:10,627
+Bu bir program, bir program.
+
+744
+01:58:10,627 --> 01:58:12,627
+Bir program, bir program.
+
+745
+01:58:12,627 --> 01:58:14,627
+Print, bir simply print function.
+
+746
+01:58:14,627 --> 01:58:18,627
+Bu bir program.
+
+747
+01:58:18,627 --> 01:58:22,627
+İlginç verilir.
+
+748
+01:58:22,627 --> 01:58:27,627
+Text inside the code, double quotes,
+
+749
+01:58:27,627 --> 01:58:30,627
+is not interpreted as code.
+
+750
+01:58:30,627 --> 01:58:32,627
+This is string.
+
+751
+01:58:32,627 --> 01:58:36,587
+Obviously you know this from other languages.
+
+752
+01:58:36,724 --> 01:58:42,484
+n is, basically, a directive to start a new line.
+
+753
+01:58:46,484 --> 01:58:54,644
+So, if you write this and run, you will get this, obviously.
+
+754
+01:58:56,644 --> 01:59:01,923
+Here is another version of this program. You can simply...
+
+755
+01:59:04,212 --> 01:59:13,432
+Write such a program, which is, or which look like stronger, and you type it and it will generate exactly the same output.
+
+756
+01:59:14,252 --> 01:59:15,472
+These are simple things.
+
+757
+01:59:17,992 --> 01:59:20,612
+Bir ara verelim, bir on dakika ara verelim.
+
+758
+01:59:25,332 --> 01:59:26,692
+On geçe, dördü on geçe.
+
+759
+01:59:28,652 --> 01:59:29,952
+Dördü on geçe.
+
+760
+01:59:30,952 --> 01:59:31,572
+Geri gelirsiniz.
+
+761
+02:08:44,372 --> 02:08:49,631
+Üzelteyim, beşi ongeçeklerine gelin derken, diyecekken dörden geçeleyin.
+
+762
+02:08:51,652 --> 02:09:01,791
+Anyway, we have talked about the linear statement and iteration and loop etc.
+
+763
+02:09:01,791 --> 02:09:11,211
+In per, iteration is implemented by using wild construct.
+
+764
+02:09:13,235 --> 02:09:15,735
+Bu format of while construct.
+
+765
+02:09:16,975 --> 02:09:20,695
+Bu simple Perl program to implement.
+
+766
+02:09:22,355 --> 02:09:23,935
+In while construct,
+
+767
+02:09:23,935 --> 02:09:27,695
+the iteration take place
+
+768
+02:09:27,695 --> 02:09:31,835
+while the expression
+
+769
+02:09:31,835 --> 02:09:33,695
+within these parentheses are true.
+
+770
+02:09:35,036 --> 02:09:35,956
+It's true, okay.
+
+771
+02:09:40,340 --> 02:09:52,680
+You can run this program and it will run forever, basically, until you hit control-brake.
+
+772
+02:09:52,680 --> 02:09:54,800
+This basically.
+
+773
+02:09:54,800 --> 02:09:57,340
+Obviously,
+
+774
+02:10:10,899 --> 02:10:12,939
+Okay, here's an infinite loop.
+
+775
+02:10:13,459 --> 02:10:14,899
+You can have basically...
+
+776
+02:10:18,644 --> 02:10:28,644
+A control to prevent a loop fall into infinite iteration.
+
+777
+02:10:28,644 --> 02:10:32,644
+We can use constants basically.
+
+778
+02:10:32,644 --> 02:10:36,644
+If we introduce such a constant for example,
+
+779
+02:10:41,684 --> 02:10:47,824
+Perl 3, it's a value of 1 as true and 0 as false.
+
+780
+02:10:49,384 --> 02:10:58,104
+A constant in Perl is a container within a program whose value cannot be changed under any circumstance.
+
+781
+02:10:58,543 --> 02:11:00,484
+This is also valid for all languages.
+
+782
+02:11:00,884 --> 02:11:02,064
+This is known as a constant.
+
+783
+02:11:02,384 --> 02:11:07,764
+You cannot change at any stage of the program, basically.
+
+784
+02:11:10,195 --> 02:11:20,396
+Yani, Perl, usually the convention is to give constants all uppercase names.
+
+785
+02:11:20,396 --> 02:11:27,115
+This is not required, by the way, because Perl is case-sensitive.
+
+786
+02:11:28,175 --> 02:11:31,576
+Some languages are case-insensitive.
+
+787
+02:11:32,175 --> 02:11:34,435
+You have to be careful if.
+
+788
+02:11:35,028 --> 02:11:38,148
+A language is case sensitive or not.
+
+789
+02:11:42,588 --> 02:11:49,288
+For example, this true is a different than the small letter true.
+
+790
+02:11:55,796 --> 02:12:01,536
+The opposite of constant in any language is variable container.
+
+791
+02:12:01,536 --> 02:12:05,296
+It is, okay, or simply variable.
+
+792
+02:12:06,716 --> 02:12:11,416
+A variable's value can change over the lifetime of the program.
+
+793
+02:12:14,176 --> 02:12:21,216
+When you need to change the value of an item, we should use a variable container.
+
+794
+02:12:24,931 --> 02:12:26,931
+Perl'e bu tarifler için teşekkür ederim.
+
+795
+02:12:26,931 --> 02:12:28,931
+Bu tarifler için teşekkür ederim.
+
+796
+02:12:28,931 --> 02:12:32,931
+Bir sonraki tarifler için teşekkür ederim.
+
+797
+02:12:46,292 --> 02:13:11,532
+Scalors can hold a number, a word, a sentence, or a completely disk file. You can assign a scalar variable, a simple integer or plot, or a word string, or a complete disk file. This is very flexible.
+
+798
+02:13:12,500 --> 02:13:19,619
+İl-Perl program, skaters are given a name, prefix with a dollar sign.
+
+799
+02:13:20,900 --> 02:13:22,659
+Here are some examples.
+
+800
+02:13:24,020 --> 02:13:28,940
+Dollar, whatever name, address, whatever, whatever it is.
+
+801
+02:13:29,140 --> 02:13:32,220
+If it starts with dollar, that means it's a scatter variable.
+
+802
+02:13:32,520 --> 02:13:36,900
+We haven't talked about variables, but we will be using this variable.
+
+803
+02:13:37,079 --> 02:13:38,260
+That's why we introduced.
+
+804
+02:13:39,988 --> 02:13:48,648
+So, if we change our loop, include variables, we define how many constant.
+
+805
+02:13:49,648 --> 02:13:53,828
+By using use constant how many, we assign 10.
+
+806
+02:13:54,188 --> 02:13:59,928
+That means our loop will be limited by 10 iterations.
+
+807
+02:14:02,668 --> 02:14:03,448
+Okay.
+
+808
+02:14:06,899 --> 02:14:23,899
+...
+
+809
+02:14:25,652 --> 02:14:31,851
+Perl has a number of rules that are applied to the first usage of a variable container.
+
+810
+02:14:33,572 --> 02:14:42,351
+For example, Perl sets a scalar to zero if it is first used within a numeric context.
+
+811
+02:14:43,832 --> 02:14:48,292
+This feature can be very convenient in many cases.
+
+812
+02:14:50,644 --> 02:14:55,804
+However, it is always a good practice to give a variable container
+
+813
+02:14:55,804 --> 02:15:05,703
+an explicit starting value as it indicates precisely what the intentions for the variable are.
+
+814
+02:15:14,676 --> 02:15:20,216
+Selekti, which means basically conditional.
+
+815
+02:15:20,976 --> 02:15:26,056
+One of the basic building blocks of programming is selection or condition.
+
+816
+02:15:26,276 --> 02:15:37,496
+To use of a selection mechanism allows a program to choose one of a number of possible courses of action or how to proceed.
+
+817
+02:15:38,579 --> 02:15:42,279
+Here is the general form of the selection statement.
+
+818
+02:15:43,079 --> 02:15:44,439
+Obviously, this is if.
+
+819
+02:15:44,859 --> 02:15:46,299
+The other name is conditional.
+
+820
+02:15:47,239 --> 02:15:53,399
+It is very similar to the other languages in this respect.
+
+821
+02:15:54,460 --> 02:15:55,839
+We have some condition.
+
+822
+02:15:56,479 --> 02:15:59,460
+If it is true, do the next statement.
+
+823
+02:15:59,659 --> 02:16:02,319
+If it is not, then do the other statement.
+
+824
+02:16:04,148 --> 02:16:09,148
+So, this is how if construct is used within this loop.
+
+825
+02:16:10,788 --> 02:16:25,148
+Okay, now this while loop has used much more control over the iteration
+
+826
+02:16:26,588 --> 02:16:27,588
+to the programmer.
+
+827
+02:16:29,408 --> 02:16:30,408
+So, there are...
+
+828
+02:16:31,923 --> 02:16:40,824
+As we said, the motto of the curlies is more than one way to meet.
+
+829
+02:16:47,159 --> 02:16:55,159
+...
+
+830
+02:16:45,332 --> 02:17:07,948
+Bu bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir ör
+
+831
+02:17:34,995 --> 02:17:52,475
+Another version, this is shorter, and it uses the basically modulo operation. Modulist operator is one.
+
+832
+02:17:54,355 --> 02:18:02,275
+When you run it, it will run correctly. And this is the third program to implement this even.
+
+833
+02:18:02,963 --> 02:18:10,884
+or even program now within print statement you have actually these model operations
+
+834
+02:18:13,363 --> 02:18:21,515
+this is much shorter than the other two outputs of all these programs will be the same
+
+835
+02:18:27,028 --> 02:18:34,347
+Evet, bu, in bioinformatik, you will be working on data files.
+
+836
+02:18:36,347 --> 02:18:41,587
+You should know how to read a data file into PERL programs.
+
+837
+02:18:41,587 --> 02:18:52,528
+So, input operator in PERL is this, what is shown here, greater and smaller together.
+
+838
+02:18:54,036 --> 02:18:56,036
+Sadece bir şey
+
+839
+02:18:58,515 --> 02:18:59,515
+Yani
+
+840
+02:19:03,076 --> 02:19:12,492
+İntro
+
+841
+02:19:14,131 --> 02:19:22,211
+When Perl encounters this operator within a program, it looks for and returns a line of input from standard input.
+
+842
+02:19:23,932 --> 02:19:29,471
+Basically, which is the name given to the mechanism that is currently providing input data to program.
+
+843
+02:19:31,971 --> 02:19:40,471
+Default input mechanism is the keyboard, but you can change where...
+
+844
+02:19:41,652 --> 02:19:43,531
+İput data from.
+
+845
+02:19:44,452 --> 02:19:45,292
+You can.
+
+846
+02:19:48,292 --> 02:19:50,412
+Input data from a file.
+
+847
+02:19:51,832 --> 02:19:52,971
+If you do not.
+
+848
+02:19:55,051 --> 02:19:57,172
+State a specific input.
+
+849
+02:19:57,811 --> 02:19:59,072
+Then it will be keyboard.
+
+850
+02:20:01,832 --> 02:20:03,211
+So if.
+
+851
+02:20:04,211 --> 02:20:06,231
+Perl encounter this.
+
+852
+02:20:06,644 --> 02:20:12,123
+A program takes a line of data from the keyboard whenever the input operator is used.
+
+853
+02:20:13,224 --> 02:20:15,384
+Let's consider the following statement.
+
+854
+02:20:16,443 --> 02:20:24,804
+What it does, if you have a line in your program, such as this one, what will happen?
+
+855
+02:20:31,860 --> 02:20:33,079
+Can you simply tell me?
+
+856
+02:20:45,363 --> 02:20:52,683
+So, it will wait you to enter something from the keyboard.
+
+857
+02:20:53,563 --> 02:21:01,943
+Once you enter anything, a text or number or whatever, a string or whatever and hit enter,
+
+858
+02:21:03,223 --> 02:21:10,503
+whatever you entered will be assigned to scatter variable.
+
+859
+02:21:11,827 --> 02:21:13,007
+called line.
+
+860
+02:21:14,507 --> 02:21:16,827
+See, it is the...
+
+861
+02:21:23,636 --> 02:21:32,396
+Here I have a small program for get lines that explores the program statement in the previous slide.
+
+862
+02:21:33,855 --> 02:21:34,136
+Okay.
+
+863
+02:21:35,615 --> 02:21:41,216
+This program will get a line from you and print it on the screen.
+
+864
+02:21:43,355 --> 02:21:44,376
+From the keyboard.
+
+865
+02:21:56,819 --> 02:22:10,979
+İntParl, again, in addition to using numerics to represent trend 4, strings also have a truth value. A string with no characters is false, otherwise it is true.
+
+866
+02:22:10,979 --> 02:22:24,540
+İntParl, in addition to standard inputs, Perl also has a standard output, which is basically the terminal screen.
+
+867
+02:22:24,979 --> 02:22:30,799
+Bu bir defa
+
+868
+02:22:30,799 --> 02:22:31,879
+Error
+
+869
+02:22:31,879 --> 02:22:32,879
+Bu defa
+
+870
+02:22:32,879 --> 02:22:37,760
+Error
+
+871
+02:22:37,760 --> 02:22:38,659
+Önestold
+
+872
+02:22:38,659 --> 02:22:39,239
+Atherviz
+
+873
+02:22:39,239 --> 02:22:39,719
+Perl
+
+874
+02:22:39,719 --> 02:22:55,811
+Önestold
+
+875
+02:22:48,340 --> 02:22:53,680
+So to many things, convenience, standard input, standard output, and standard error.
+
+876
+02:22:54,280 --> 02:22:58,239
+So by this short end being standard, standard output, standard error.
+
+877
+02:22:58,639 --> 02:23:00,040
+This is very much similar.
+
+878
+02:23:06,195 --> 02:23:07,635
+C-langıç, basically.
+
+879
+02:23:10,335 --> 02:23:14,015
+Let's consider the following common plan statements.
+
+880
+02:23:14,835 --> 02:23:15,896
+What does it do?
+
+881
+02:23:18,896 --> 02:23:20,515
+Anybody can tell me?
+
+882
+02:23:32,404 --> 02:23:33,283
+Ayrıdağır.
+
+883
+02:23:34,943 --> 02:23:35,584
+Orada mısınız?
+
+884
+02:23:40,948 --> 02:23:42,067
+Ses edeyim, da.
+
+885
+02:23:55,763 --> 02:23:57,583
+Okay, what this statement does?
+
+886
+02:23:59,663 --> 02:24:02,343
+Or what was it?
+
+887
+02:24:07,028 --> 02:24:10,747
+Basically, this is what it does.
+
+888
+02:24:12,247 --> 02:24:17,168
+If you remember this getLines program, which was this one.
+
+889
+02:24:20,328 --> 02:24:23,548
+GetLines, very simple program.
+
+890
+02:24:24,148 --> 02:24:27,388
+It reads something and assigns to a line and it prints.
+
+891
+02:24:29,028 --> 02:24:33,907
+So, if you run this using this one.
+
+892
+02:24:34,420 --> 02:24:48,799
+İzledi, getLinesProgram, this time we read the contents of this odd-even program and print, assign it to the line, scalar variable and it will print it.
+
+893
+02:24:50,459 --> 02:24:59,799
+Now in this case what happened, we changed the input device or...
+
+894
+02:25:00,500 --> 02:25:03,059
+Açık bir kibar ve bir data file.
+
+895
+02:25:07,619 --> 02:25:12,180
+Bu bir kibar var.
+
+896
+02:25:12,340 --> 02:25:18,779
+Bir kibar var.
+
+897
+02:25:19,459 --> 02:25:20,500
+Ve bir kibar var.
+
+898
+02:25:24,051 --> 02:25:25,051
+Evet.
+
+899
+02:25:25,051 --> 02:25:29,051
+As the GetPens program uses standard input.
+
+900
+02:25:29,051 --> 02:25:38,051
+It uses the keyboard by default, but when used in association with a named disk file,
+
+901
+02:25:38,051 --> 02:25:45,551
+it uses the contents of the disk file as input and there can be more than one named disk
+
+902
+02:25:45,551 --> 02:25:48,051
+file to read from.
+
+903
+02:25:48,051 --> 02:25:50,987
+A disk file will be read and...
+
+904
+02:25:51,123 --> 02:26:17,067
+Altyazı altyaz
+
+905
+02:26:17,459 --> 02:26:25,659
+This language within a language makes extensive use of Perl's regular expression and pattern matching technology.
+
+906
+02:26:27,079 --> 02:26:35,319
+The Perl 1 line documentation defines a regular expression to be simply a string that describes a pattern.
+
+907
+02:26:35,319 --> 02:26:39,219
+The pattern identifies what it is hoped to match.
+
+908
+02:26:42,388 --> 02:26:48,188
+of finding the pattern is taken care of by the current program
+
+909
+02:26:54,932 --> 02:27:05,292
+A programing language that allows the programmer to specify what is required is often referred to as a iterative language.
+
+910
+02:27:05,292 --> 02:27:14,231
+This is another classification of languages in which the programmer declares what is required and the technology works out to the files.
+
+911
+02:27:17,747 --> 02:27:31,187
+A programming language that allows the programmer to specify exactly how the result is to be arrived at is often referred as a procedural language.
+
+912
+02:27:33,363 --> 02:27:58,827
+Bu tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarif
+
+913
+02:28:01,203 --> 02:28:13,683
+Again, in this respect, TURL could be one of these languages, TICT, VALT, PROCEDURAL, or BOT, basically.
+
+914
+02:28:15,543 --> 02:28:23,564
+We said TURL is some sort of in-between languages interpreted or compiled.
+
+915
+02:28:24,243 --> 02:28:27,783
+It can be BOT. In this respect as well, it can be BOT.
+
+916
+02:28:33,716 --> 02:28:41,716
+Bu, regular expressioni ile ilgili programı kullanıyoruz.
+
+917
+02:28:45,716 --> 02:28:50,716
+Bu programı çok farklı bir programı ile ilgili bir programı var.
+
+918
+02:29:00,595 --> 02:29:04,095
+But in this case, we have an if statement here.
+
+919
+02:29:04,095 --> 02:29:12,095
+Print line if line equals tilde.
+
+920
+02:29:12,095 --> 02:29:15,095
+And we have limiters within even.
+
+921
+02:29:15,095 --> 02:29:20,095
+Now we have some sort of comparison here.
+
+922
+02:29:20,095 --> 02:29:28,095
+And now this is a very basic structure for...
+
+923
+02:29:28,884 --> 02:29:31,324
+Patins, okay.
+
+924
+02:29:32,544 --> 02:29:33,963
+This one now here.
+
+925
+02:29:36,504 --> 02:29:40,244
+This is the English equivalent of this line.
+
+926
+02:29:41,504 --> 02:29:54,884
+Display the contents of the scalar variable line if and only if the scalar called line contains the pattern even.
+
+927
+02:29:55,956 --> 02:30:07,371
+Bu, bu
+
+928
+02:30:17,971 --> 02:30:36,299
+Bu bir
+
+929
+02:30:40,691 --> 02:30:46,371
+Binding cooperatif, basically, compars something against a pattern.
+
+930
+02:30:47,011 --> 02:30:50,851
+And this something is a variable container, basically.
+
+931
+02:30:55,251 --> 02:31:05,811
+The pattern here is defined as any sequence of characters surrounded by this forward-linic slash character.
+
+932
+02:31:06,835 --> 02:31:14,956
+Bu, bu
+
+933
+02:31:18,675 --> 02:31:27,956
+What we say is the contents of line contains the pattern even anywhere in the line, then it is set to match.
+
+934
+02:31:29,916 --> 02:31:43,175
+When programmers refer to a character that surrounds something of interest, such as the forward leaning slash surrounding the patterns in the section, this pattern is called
+
+935
+02:31:44,884 --> 02:31:50,884
+A
+
+936
+02:31:50,884 --> 02:31:52,884
+Delimeter.
+
+937
+02:31:52,884 --> 02:31:56,884
+That character is delimeter.
+
+938
+02:31:56,884 --> 02:32:02,884
+The character delimits the sampling of interest.
+
+939
+02:32:02,884 --> 02:32:06,884
+In this record.
+
+940
+02:32:08,691 --> 02:32:15,412
+Backslash, karakteri, the default telemetre or regular expression, patensin tarp.
+
+941
+02:32:19,491 --> 02:32:34,991
+When you try to run this patens program with this polaring data file, in this case, this terrible PL program is treated as data file.
+
+942
+02:32:35,540 --> 02:32:42,020
+Bu ne yapacağı bir match, bu ne yapacağı bir match.
+
+943
+02:32:55,316 --> 02:33:17,996
+ve bu bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir
+
+944
+02:33:19,028 --> 02:33:23,548
+So, you can get more information on regular expressions.
+
+945
+02:33:23,548 --> 02:33:38,948
+Our subject or main purpose is not to introduce everything, just to give a basic idea what is the strong side of the pearl.
+
+946
+02:33:39,948 --> 02:33:45,668
+It has very powerful functions.
+
+947
+02:33:48,020 --> 02:33:50,459
+ve pattern matching.
+
+948
+02:33:51,659 --> 02:33:53,579
+Ve regular expressions.
+
+949
+02:33:57,940 --> 02:34:06,340
+İmput-Output is very similar to other languages. İmput-Output in Perl.
+
+950
+02:34:11,156 --> 02:34:16,556
+Data entering a program is referred to as its input.
+
+951
+02:34:18,796 --> 02:34:23,996
+Data produced by a program is known as its output.
+
+952
+02:34:25,656 --> 02:34:25,856
+Okay.
+
+953
+02:34:27,296 --> 02:34:31,116
+Shorthand usually is IO, obviously we know this.
+
+954
+02:34:33,096 --> 02:34:33,416
+Okay.
+
+955
+02:34:34,556 --> 02:34:38,296
+Input-output facilities are often referred to as streams.
+
+956
+02:34:40,147 --> 02:34:43,447
+İndir input stream or output streams.
+
+957
+02:34:44,447 --> 02:34:51,487
+As a minimum, every PERL program has three standard streams available to it.
+
+958
+02:34:53,007 --> 02:34:55,787
+Standard stream, standard output, standard error.
+
+959
+02:34:55,907 --> 02:34:57,187
+We mentioned this before.
+
+960
+02:34:59,947 --> 02:35:04,887
+Standard stream, standard input stream is the default place.
+
+961
+02:35:05,780 --> 02:35:15,180
+From which data enters a program, typically standard-in. Standard-in is the keyword as we mentioned before, but it can also be a disk file.
+
+962
+02:35:16,139 --> 02:35:22,600
+To read data from standard-in, we use the input operator, which is this one.
+
+963
+02:35:23,979 --> 02:35:31,540
+We mentioned this, or simply this one. These two are the same basically.
+
+964
+02:35:34,131 --> 02:35:35,131
+Ok?
+
+965
+02:35:37,131 --> 02:35:39,131
+This is a simple program.
+
+966
+02:35:43,156 --> 02:35:54,156
+Now, you read something from the keyboard, and you read another input.
+
+967
+02:35:54,156 --> 02:36:00,156
+And as I said, first one assigns to sculler A, the second one is assigned to sculler B.
+
+968
+02:36:00,156 --> 02:36:09,868
+Now, after these two is a strange line here, say chomp.
+
+969
+02:36:10,036 --> 02:36:37,155
+A, and chunk $b. This basically removes the end of line character. When you enter something and hit the carriage return, you also introduce this end of line statement here. So it is attached to the whatever you entered. And this is
+
+970
+02:36:37,620 --> 02:36:47,080
+remove from this because pearl variables are just you can mix anything.
+
+971
+02:36:48,420 --> 02:36:55,440
+Then you can implement if you enter two numbers you can simply implement an addition and get the result.
+
+972
+02:36:56,520 --> 02:37:02,760
+You should not forget to use this to chomp if you enter two.
+
+973
+02:37:03,311 --> 02:37:04,791
+Scalar variables
+
+974
+02:37:04,791 --> 02:37:05,971
+And we should
+
+975
+02:37:05,971 --> 02:37:09,652
+Remove this end of line character
+
+976
+02:37:18,804 --> 02:37:42,188
+Bu, bu
+
+977
+02:37:43,283 --> 02:37:51,144
+The standard output, we mentioned this, it is screen obviously, or it can be a disk file.
+
+978
+02:37:52,783 --> 02:37:55,783
+This is the format, both are the same.
+
+979
+02:38:05,332 --> 02:38:26,059
+Bu programın altyazıda bu programı kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak
+
+980
+02:38:26,164 --> 02:38:31,664
+ve direct to output text file rather than to the screen.
+
+981
+02:38:31,664 --> 02:38:40,443
+When you run this program with this redirection operator, the result will be printed in this output text file.
+
+982
+02:38:45,172 --> 02:39:08,907
+İlginç altyazı altyaz
+
+983
+02:39:09,075 --> 02:39:12,835
+When finished you should all the file handle.
+
+984
+02:39:12,835 --> 02:39:18,435
+File handle is very similar to file handles in C.
+
+985
+02:39:22,835 --> 02:39:24,755
+This is an example.
+
+986
+02:39:27,876 --> 02:39:34,876
+You simply open output text file.
+
+987
+02:39:36,211 --> 02:39:43,092
+Then you print file handle into this text file and you just close it.
+
+988
+02:39:44,092 --> 02:39:47,092
+Slightly different than the...
+
+989
+02:39:50,291 --> 02:39:55,291
+Bu bir örneğin bir örneğin bir örneğin bir örneğin.
+
+990
+02:39:57,291 --> 02:39:58,291
+Öncelikle ÖPEN.
+
+991
+02:40:03,924 --> 02:40:07,924
+A data file as index.html.
+
+992
+02:40:11,700 --> 02:40:18,700
+Then you print these lines into this data file and close it.
+
+993
+02:40:19,640 --> 02:40:25,920
+Now when you open index.html, the content will be basically this.
+
+994
+02:40:43,252 --> 02:40:59,731
+A file handle obviously is a special type of variable that is associated with an output destination. You know this file handle from other programs. You can open a file for reading.
+
+995
+02:41:02,412 --> 02:41:07,092
+And either by using this one or alternatively using this one.
+
+996
+02:41:11,219 --> 02:41:15,599
+You can open a file for writing.
+
+997
+02:41:16,759 --> 02:41:17,919
+So this one.
+
+998
+02:41:21,523 --> 02:41:25,603
+Or you can open a file for appending.
+
+999
+02:41:26,283 --> 02:41:31,884
+You can already open an existing file, add something and close it.
+
+1000
+02:41:32,324 --> 02:41:35,344
+And this is for appending.
+
+1001
+02:41:35,344 --> 02:41:48,344
+In C, instead of this, for reading use R letter R for writing W or...
+
+1002
+02:41:48,948 --> 02:41:50,888
+Appending is A.
+
+1003
+02:41:51,948 --> 02:42:05,148
+But in Perl, this changes to greater or smaller or greater sign or these two of them together will be used for appending.
+
+1004
+02:42:06,528 --> 02:42:12,048
+This is an example for reading and writing.
+
+1005
+02:42:13,236 --> 02:42:16,756
+You open a data file
+
+1006
+02:42:20,756 --> 02:42:21,756
+for copying
+
+1007
+02:42:22,836 --> 02:42:24,836
+and just simply
+
+1008
+02:42:27,716 --> 02:42:31,115
+open a file known as DNA
+
+1009
+02:42:31,115 --> 02:42:32,996
+and copy to DNA copy.
+
+1010
+02:42:36,468 --> 02:42:42,468
+So, we already mentioned while statement, format of while statement.
+
+1011
+02:42:47,316 --> 02:42:48,316
+Okay.
+
+1012
+02:42:48,316 --> 02:42:53,316
+Now, if you have an error, you can use die function.
+
+1013
+02:42:53,316 --> 02:42:59,316
+This is the for error handling.
+
+1014
+02:42:59,316 --> 02:43:08,876
+If you cannot find a file, this will return an error.
+
+1015
+02:43:14,036 --> 02:43:15,036
+Okay.
+
+1016
+02:43:18,036 --> 02:43:26,036
+Another relevant function to handle FASTABiyoenformatiğ
+
+1017
+02:43:26,036 --> 02:43:31,036
+is one statement
+
+1018
+02:43:33,036 --> 02:43:34,956
+for handling errors.
+
+1019
+02:43:38,899 --> 02:43:43,420
+Okay, these are, these were some,
+
+1020
+02:43:52,244 --> 02:43:59,044
+Koncepts for file handling, writing bloops, or linear statements, or whatever.
+
+1021
+02:44:00,644 --> 02:44:05,684
+They are not very different than the other languages, very similar.
+
+1022
+02:44:05,684 --> 02:44:09,444
+Anyway, Perl borrows from many different languages.
+
+1023
+02:44:10,963 --> 02:44:16,564
+We mentioned about Perl variables. Perl is basically
+
+1024
+02:44:18,675 --> 02:44:22,675
+A typeless language.
+
+1025
+02:44:23,835 --> 02:44:32,056
+A typeless language that doesn't force the programmer to distinguish between the types of data stored in a variable.
+
+1026
+02:44:32,056 --> 02:44:42,655
+When I say typeless, for example, what next one will give you the example in C language.
+
+1027
+02:44:44,595 --> 02:44:51,155
+Before writing any program, we have to declare variables and the type of the variables.
+
+1028
+02:44:51,935 --> 02:44:57,236
+For example, you can have three variables such as ABC.
+
+1029
+02:44:59,056 --> 02:45:01,576
+A is declared integer.
+
+1030
+02:45:03,095 --> 02:45:05,355
+B is declared as plot.
+
+1031
+02:45:05,835 --> 02:45:08,456
+C is declared as character, for example.
+
+1032
+02:45:08,979 --> 02:45:16,680
+Now, when you write the program, you cannot assign A to a float because it's an integer.
+
+1033
+02:45:16,680 --> 02:45:21,559
+If you try to assign float to an integer, it will give you an error.
+
+1034
+02:45:22,299 --> 02:45:24,579
+But in Perl, this is not the case.
+
+1035
+02:45:24,880 --> 02:45:28,260
+You can assign basically anything to a variable.
+
+1036
+02:45:30,619 --> 02:45:35,180
+In this respect, Perl is pi plus language.
+
+1037
+02:45:36,020 --> 02:45:40,020
+Perl provides three built-in variable types.
+
+1038
+02:45:40,020 --> 02:45:44,020
+First one we have already seen, which is Scatter.
+
+1039
+02:45:44,020 --> 02:45:46,020
+The second one is Array.
+
+1040
+02:45:46,020 --> 02:45:50,020
+Third one is known as Hash variable.
+
+1041
+02:45:52,020 --> 02:46:00,020
+Scatter variables, this is the most basic one, which we have already mentioned about it.
+
+1042
+02:46:01,587 --> 02:46:06,688
+It holds a single value, just one single value.
+
+1043
+02:46:07,768 --> 02:46:19,887
+Value can be any kind of data, including but not limited to string, integer, plot, object, and reference to other variables or sets of variables.
+
+1044
+02:46:19,887 --> 02:46:28,948
+Even you can, as I mentioned before, you can assign a complete data file to a single variable.
+
+1045
+02:46:33,075 --> 02:46:35,995
+It is basically preceded by a dollar sign.
+
+1046
+02:46:40,659 --> 02:46:46,659
+Bu konuda alphanumerik karakteriyle almanıya kullanılır.
+
+1047
+02:47:07,860 --> 02:47:09,120
+This is an integer.
+
+1048
+02:47:10,639 --> 02:47:14,979
+This is another integer.
+
+1049
+02:47:15,540 --> 02:47:17,100
+This is an operation.
+
+1050
+02:47:19,180 --> 02:47:21,620
+This is another integer.
+
+1051
+02:47:22,479 --> 02:47:24,080
+This is again string.
+
+1052
+02:47:25,460 --> 02:47:29,960
+This is a sentence, a string, etc.
+
+1053
+02:47:31,159 --> 02:47:31,540
+Okay.
+
+1054
+02:47:32,979 --> 02:47:48,299
+Array variable as name implies it includes more than one sequence or data in variable.
+
+1055
+02:47:50,439 --> 02:47:57,520
+This is simply referred as is ampersand sign.
+
+1056
+02:48:00,020 --> 02:48:08,180
+Any variable starts with this character is interpreted as an array.
+
+1057
+02:48:09,180 --> 02:48:14,080
+You can initialize an array variable by giving a list of values,
+
+1058
+02:48:15,560 --> 02:48:20,840
+each separated with comma inside the parentheses, such as this one.
+
+1059
+02:48:23,924 --> 02:48:31,044
+At least, this variable includes just strings.
+
+1060
+02:48:32,044 --> 02:48:34,564
+This is just integer array.
+
+1061
+02:48:35,364 --> 02:48:38,004
+And this is a mixture, basically.
+
+1062
+02:48:38,404 --> 02:48:42,123
+You have the scatter values, integers.
+
+1063
+02:48:45,075 --> 02:48:52,515
+You can also create an arbitrary array and later reassign it element using a bracket operator.
+
+1064
+02:48:56,468 --> 02:49:06,868
+If you refer to individual elements of an array, each are basically equals to a scalar array, a scalar variable, sorry.
+
+1065
+02:49:09,587 --> 02:49:15,268
+This is decimal zero, for example.
+
+1066
+02:49:16,084 --> 02:49:26,484
+I said B, whatever. This was an array and this is basically a member of an array and it is a scalar variable.
+
+1067
+02:49:30,260 --> 02:49:36,260
+Dizide içerisinde de sqürede bracketsı, bu arada araylar index, bu arada araylar index.
+
+1068
+02:49:36,260 --> 02:49:39,115
+Index starts from 0.
+
+1069
+02:49:49,492 --> 02:50:03,132
+As I mentioned, in a programming language such as C1, the array elements must be the same type, but in per, you can mix them up.
+
+1070
+02:50:04,132 --> 02:50:13,011
+You know, just the first element of array can be string, the second element can be integer, third element can be plot.
+
+1071
+02:50:14,548 --> 02:50:18,128
+Fifth element can be just a complete file, whatever.
+
+1072
+02:50:19,268 --> 02:50:25,368
+There are many sub-functions of this array manipulation.
+
+1073
+02:50:25,708 --> 02:50:28,648
+You can append elements to an array.
+
+1074
+02:50:36,084 --> 02:50:45,084
+You can use this one to append an element or this one or you can simply use this push statement.
+
+1075
+02:50:46,644 --> 02:50:48,283
+All are the same.
+
+1076
+02:50:49,424 --> 02:50:52,084
+Third one is hash variable.
+
+1077
+02:50:53,244 --> 02:50:55,844
+This is known as associative arrays.
+
+1078
+02:50:56,204 --> 02:51:00,244
+Basically, it is equivalent to array of arrays in other languages.
+
+1079
+02:51:03,667 --> 02:51:10,667
+ve
+
+1080
+02:51:26,355 --> 02:51:31,855
+You generate keys yourself and you can refer to those values with those keys.
+
+1081
+02:51:33,716 --> 02:51:37,975
+This anything starts with this percent sign.
+
+1082
+02:51:39,256 --> 02:51:42,736
+Is interpreted as hash variable.
+
+1083
+02:51:43,655 --> 02:51:45,775
+This is an example to hash variable.
+
+1084
+02:51:45,775 --> 02:51:48,135
+This is an empty hash variable.
+
+1085
+02:51:48,975 --> 02:51:49,775
+This is...
+
+1086
+02:51:51,924 --> 02:51:54,844
+Not empty hash variable.
+
+1087
+02:51:54,844 --> 02:52:05,124
+We have name, surname, name, first, last name, first name, email, and so on, whatever.
+
+1088
+02:52:05,124 --> 02:52:08,284
+Birth date, anything you can include, basically.
+
+1089
+02:52:08,284 --> 02:52:09,924
+Age, age.
+
+1090
+02:52:11,924 --> 02:52:12,556
+Okay.
+
+1091
+02:52:13,492 --> 02:52:20,132
+You can access the values of columns of the table individually using these curly brackets.
+
+1092
+02:52:22,632 --> 02:52:32,211
+Just like any array we use, not this person sign, but dollar to refer to individual variables.
+
+1093
+02:52:32,211 --> 02:52:37,452
+They are equivalent to the other variables, such as this one.
+
+1094
+02:52:37,811 --> 02:52:40,131
+There are many hash-related functions.
+
+1095
+02:52:40,272 --> 02:52:41,912
+You can get the keys, values.
+
+1096
+02:52:41,912 --> 02:52:53,811
+You can delete or inquire if a key exists or not, et cetera.
+
+1097
+02:52:58,675 --> 02:53:05,795
+You can compute string lengths with length function.
+
+1098
+02:53:06,915 --> 02:53:16,915
+You can determine the position of a character in a string with r-index function.
+
+1099
+02:53:17,915 --> 02:53:24,115
+And there are alternative ways. You can convert a string into an array.
+
+1100
+02:53:25,587 --> 02:53:28,507
+Array into string, vice versa.
+
+1101
+02:53:29,547 --> 02:53:31,268
+And here is an example.
+
+1102
+02:53:33,087 --> 02:53:38,268
+We have this amino acid sequence of human ubiquity.
+
+1103
+02:53:39,367 --> 02:53:49,167
+And you take it and you convert into basically string into array.
+
+1104
+02:53:49,788 --> 02:53:52,507
+This is an example to know this in this second.
+
+1105
+02:54:26,131 --> 02:54:27,252
+Bir soru var mı arkadaşlar?
+
+1106
+02:54:29,412 --> 02:54:30,491
+Eşiğin doğrusu.
+
+1107
+02:54:31,211 --> 02:54:33,152
+Orada olup olmadığınızda bilmiyoruz ya.
+
+1108
+02:54:47,603 --> 02:54:49,384
+Bir soru yoksa çıkabilirsiniz.
+
+1109
+02:54:52,979 --> 02:54:54,219
+İyi akşamlar hocam.
+
+1110
+02:54:54,279 --> 02:54:57,099
+İyi akşamlar. Niye ses vermiyorsunuz ya? Soruyoruz, soruyoruz.

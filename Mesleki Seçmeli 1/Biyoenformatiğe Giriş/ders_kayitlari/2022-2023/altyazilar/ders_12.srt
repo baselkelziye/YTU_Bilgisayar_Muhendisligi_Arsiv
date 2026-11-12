@@ -1,0 +1,3291 @@
+1
+00:10:51,379 --> 00:10:51,700
+Merhaba.
+
+2
+00:10:58,548 --> 00:10:59,628
+Merhaba hocam.
+
+3
+00:11:02,008 --> 00:11:04,508
+Neyse, on kişi oldu galiba, on üç kişi.
+
+4
+00:11:05,347 --> 00:11:10,567
+Yani bu yüz on kişi var, derse kaydı. On beş kişi katılıyor.
+
+5
+00:11:12,567 --> 00:11:18,508
+Biraz aşırı ilgisizlik gözüküyor, neyse.
+
+6
+00:11:26,035 --> 00:11:36,795
+Bu arada ses ve görüntüsü var mı?
+
+7
+00:11:39,275 --> 00:11:40,435
+Yok hocam.
+
+8
+00:11:41,315 --> 00:11:42,875
+Tamam, ses iyi geliyor, tamam.
+
+9
+00:11:42,875 --> 00:11:43,415
+Tamam, tamam.
+
+10
+00:11:47,415 --> 00:11:47,915
+Tamam.
+
+11
+00:11:56,211 --> 00:12:05,072
+We frequently use this proverb, a picture is worth a thousand words.
+
+12
+00:12:06,231 --> 00:12:08,611
+We've used this several times in the past.
+
+13
+00:12:09,611 --> 00:12:22,812
+Basically, the main idea of this presentation is basically this proverb, a picture is worth a thousand words.
+
+14
+00:12:23,827 --> 00:12:51,692
+Çünkü bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve bilgi ve
+
+15
+00:12:52,596 --> 00:13:10,347
+Bu, bu
+
+16
+00:13:14,419 --> 00:13:17,899
+So, we'll be discussing the concept of visualization.
+
+17
+00:13:18,240 --> 00:13:23,819
+Basically, visualization itself is an important subject in computer science.
+
+18
+00:13:24,639 --> 00:13:33,579
+As usual, we'll start with some definitions, explanations, and discussion of the related concepts.
+
+19
+00:13:34,139 --> 00:13:34,339
+Okay.
+
+20
+00:13:38,611 --> 00:13:47,091
+As we already said, visualization is an important field in computer science.
+
+21
+00:13:48,551 --> 00:13:53,351
+It is also a very important part of bioinformatics.
+
+22
+00:13:55,851 --> 00:14:03,031
+As we know, the increasing amounts of data together with its associated complexity
+
+23
+00:14:04,500 --> 00:14:30,443
+Yani daha iyi bir daha
+
+24
+00:14:55,187 --> 00:14:57,187
+aile systemde
+
+25
+00:14:57,187 --> 00:14:59,187
+ve
+
+26
+00:14:59,187 --> 00:15:01,048
+konumad
+
+27
+00:15:01,048 --> 00:15:02,187
+ve
+
+28
+00:15:02,187 --> 00:15:03,187
+tekrar
+
+29
+00:15:03,187 --> 00:15:04,187
+data
+
+30
+00:15:04,187 --> 00:15:06,187
+to
+
+31
+00:15:06,187 --> 00:15:07,187
+transmit
+
+32
+00:15:07,187 --> 00:15:08,187
+the
+
+33
+00:15:08,187 --> 00:15:09,187
+data
+
+34
+00:15:09,187 --> 00:15:10,187
+to
+
+35
+00:15:10,187 --> 00:15:11,187
+long
+
+36
+00:15:11,187 --> 00:15:12,187
+distances
+
+37
+00:15:12,187 --> 00:15:13,187
+ok
+
+38
+00:15:13,187 --> 00:15:14,187
+this is the purpose of
+
+39
+00:15:14,187 --> 00:15:15,187
+processing
+
+40
+00:15:23,120 --> 00:15:29,120
+ve gen ifadesi hizalama,
+
+41
+00:15:22,995 --> 00:15:37,995
+As we know that probably we haven't seen these flat disks, or whatever. We haven't seen them because we are too young.
+
+42
+00:15:37,995 --> 00:15:46,987
+When I was a student at that time, it was the only media which we could see the data.
+
+43
+00:15:50,740 --> 00:15:56,339
+Now, the amount of data is huge to say or to process.
+
+44
+00:15:58,339 --> 00:16:12,339
+In the modern bioinformatics world, much more effective presentation systems are required and they usually need to provide extra interactive capabilities.
+
+45
+00:16:14,339 --> 00:16:17,139
+Okay, after this soft introduction...
+
+46
+00:16:19,220 --> 00:16:31,860
+Let's see the dictionary definitions of the word to visualize, or the termination visualization.
+
+47
+00:16:34,860 --> 00:16:41,420
+The word to visualize has the following meanings.
+
+48
+00:17:14,996 --> 00:17:16,916
+Merlin-Webster,
+
+49
+00:17:20,256 --> 00:17:21,236
+more or less
+
+50
+00:17:21,236 --> 00:17:24,416
+has the same meaning
+
+51
+00:17:24,416 --> 00:17:27,796
+to form a mental visual image
+
+52
+00:17:27,796 --> 00:17:33,635
+in Concise Oxford Dictionary.
+
+53
+00:18:01,683 --> 00:18:10,667
+A little bit more open, comprehensive definition of word to visualize.
+
+54
+00:18:21,779 --> 00:18:36,900
+So, after giving this dictionary definition of words to visualize, now let's introduce the concept of visualization.
+
+55
+00:18:38,339 --> 00:18:48,819
+So, looking back to the definition of the word to visualize, now visualization is regeneration.
+
+56
+00:18:49,076 --> 00:19:01,155
+ve presentiyonu, pictures, that help people understand the particular future of a dataset, making data mean something to people.
+
+57
+00:19:03,956 --> 00:19:11,476
+Okay, this definition of visualization looks like a little bit too specific.
+
+58
+00:19:13,476 --> 00:19:15,076
+As pictures.
+
+59
+00:19:36,596 --> 00:19:42,276
+İlk defiyo, bir daha bir fikir-oriented defini.
+
+60
+00:19:46,387 --> 00:19:56,807
+But in more technical terms, it is a graphical representation of data or concepts, whether it's picture or not.
+
+61
+00:19:58,807 --> 00:19:59,727
+Okay.
+
+62
+00:20:06,579 --> 00:20:32,460
+Bu, bu
+
+63
+00:20:32,531 --> 00:20:36,011
+İlif, concept, perception.
+
+64
+00:20:38,051 --> 00:20:42,072
+What do you understand by perception, if I ask you?
+
+65
+00:20:44,152 --> 00:20:45,711
+What does it mean?
+
+66
+00:20:49,364 --> 00:20:50,503
+Do you have an idea?
+
+67
+00:20:53,503 --> 00:20:55,443
+What the perception is?
+
+68
+00:21:25,683 --> 00:21:28,963
+Anybody has an idea of what the perception is?
+
+69
+00:21:41,875 --> 00:21:42,875
+No?
+
+70
+00:21:44,875 --> 00:21:45,875
+Anyway.
+
+71
+00:21:46,875 --> 00:21:47,875
+So...
+
+72
+00:21:53,715 --> 00:22:05,875
+Perception, basically, the perception concept refers to our sensory experience of the world.
+
+73
+00:22:07,955 --> 00:22:16,295
+Again, it can have several definitions and we can define it as
+
+74
+00:22:17,652 --> 00:22:42,731
+Bu, bu
+
+75
+00:22:43,443 --> 00:22:45,443
+ve bu anlamda,
+
+76
+00:22:45,443 --> 00:22:47,443
+bu anlamda,
+
+77
+00:22:47,443 --> 00:22:49,443
+insanın sensin.
+
+78
+00:22:49,443 --> 00:22:51,443
+Biologiyle,
+
+79
+00:22:51,443 --> 00:23:01,443
+bu anlamda,
+
+80
+00:23:01,443 --> 00:23:03,443
+bir anlamda,
+
+81
+00:23:03,443 --> 00:23:06,988
+bu anlamda,
+
+82
+00:23:07,955 --> 00:23:10,895
+understood or interpreted.
+
+83
+00:23:11,235 --> 00:23:21,015
+The perception can be defined as the way in which something is regarded, understood or interpreted.
+
+84
+00:23:29,523 --> 00:23:36,523
+Perception'a
+
+85
+00:23:40,980 --> 00:24:03,211
+Bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örne
+
+86
+00:24:05,236 --> 00:24:09,696
+Biasa, biologiyle, bu kognitive functions
+
+87
+00:24:09,696 --> 00:24:14,596
+are the functions related to the functionality of the brain.
+
+88
+00:24:19,076 --> 00:24:24,276
+Biologically, we have some regions in the brain
+
+89
+00:24:24,276 --> 00:24:28,216
+that enables us to remember some places
+
+90
+00:24:28,216 --> 00:24:31,096
+or remember some words.
+
+91
+00:24:54,067 --> 00:24:57,228
+Through the perception process,
+
+92
+00:24:58,508 --> 00:25:06,668
+we are able to both identify and respond to environmental stimuli.
+
+93
+00:25:07,668 --> 00:25:12,807
+Stimuli is just some effects from the environment
+
+94
+00:25:12,807 --> 00:25:19,307
+to induce a response.
+
+95
+00:25:26,132 --> 00:25:52,587
+Bu, bu, bir de sensin bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insan
+
+96
+00:26:22,612 --> 00:26:31,552
+O zaman, biologik olarak, 5 sensin
+
+97
+00:26:31,552 --> 00:26:36,032
+receiving environmental stimuli,
+
+98
+00:26:36,032 --> 00:26:39,032
+sometimes, I probably always say that,
+
+99
+00:26:39,032 --> 00:26:44,372
+we also have something called 6 sensin or whatever.
+
+100
+00:26:47,604 --> 00:27:02,539
+Bu tür sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sensin yoksa bir sens
+
+101
+00:27:05,811 --> 00:27:23,500
+Bu bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir sene de bir s
+
+102
+00:27:26,900 --> 00:27:28,580
+İlizal, zah.
+
+103
+00:27:30,019 --> 00:27:31,360
+Consider S.
+
+104
+00:27:46,867 --> 00:28:05,387
+Now, this environmental stimuli reaches to human cognitive system through some perception processes.
+
+105
+00:28:08,387 --> 00:28:10,387
+Considering the...
+
+106
+00:28:12,115 --> 00:28:23,436
+Our sight, sense of sight, the following steps summarizes the perception process.
+
+107
+00:28:24,076 --> 00:28:30,336
+The first step in this perception process is environmental stimulus.
+
+108
+00:28:55,508 --> 00:29:19,756
+O zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o
+
+109
+00:29:20,403 --> 00:29:31,723
+Bu, bu
+
+110
+00:29:34,867 --> 00:29:38,208
+Stimulus generated by specific stimulant.
+
+111
+00:29:44,435 --> 00:29:52,435
+However, because we are considering the visual perception,
+
+112
+00:29:55,731 --> 00:29:59,331
+...perception processing ve our sense of sight.
+
+113
+00:30:00,811 --> 00:30:02,771
+The third step will be...
+
+114
+00:30:03,971 --> 00:30:06,051
+...an image formation on the retina.
+
+115
+00:30:08,011 --> 00:30:10,331
+Basically, the corner and lens...
+
+116
+00:30:12,051 --> 00:30:13,451
+...iris, etc.
+
+117
+00:30:13,891 --> 00:30:18,451
+...together to project an inverted image onto the retina.
+
+118
+00:30:18,900 --> 00:30:22,900
+İmkilerin bir ilişki bilgilerin.
+
+119
+00:30:22,900 --> 00:30:29,900
+Bu bilgilerin bir bilgilerin bir bilgilerin.
+
+120
+00:30:33,491 --> 00:30:40,092
+Bu, or the next stage is transduction.
+
+121
+00:30:41,692 --> 00:30:47,692
+Transduction, basically, is the process of converting this
+
+122
+00:30:49,491 --> 00:30:56,092
+inverted image into some electrical pulses to be transmitted to the brain,
+
+123
+00:30:56,692 --> 00:30:58,291
+to be interpreted.
+
+124
+00:30:58,892 --> 00:31:01,291
+This transduction process
+
+125
+00:31:27,731 --> 00:31:36,011
+A woman being called woman brain to perceive the environment, okay?
+
+126
+00:31:43,059 --> 00:31:54,159
+Then the process following the neural processing is the perception.
+
+127
+00:31:56,999 --> 00:32:00,579
+We already defined what the perception is.
+
+128
+00:32:00,959 --> 00:32:06,659
+Basically at this point, we become consciously aware of the stimulus.
+
+129
+00:32:08,692 --> 00:32:29,324
+Bu, bu
+
+130
+00:33:02,036 --> 00:33:09,036
+İzlediğiniz için,
+
+131
+00:33:09,036 --> 00:33:29,036
+ve gen ifadesi,
+
+132
+00:33:30,579 --> 00:33:33,879
+And final step is usually an action.
+
+133
+00:33:35,779 --> 00:33:41,279
+This is some type of motor activity that occurs in response to the piercing stimulus.
+
+134
+00:33:49,779 --> 00:33:51,779
+Action could be many forms.
+
+135
+00:33:51,779 --> 00:33:56,279
+If say for example you are inspecting an artwork,
+
+136
+00:33:56,279 --> 00:33:59,679
+it could be a pleasure as a result of art.
+
+137
+00:33:59,679 --> 00:34:05,779
+Or if you see something, say for example,
+
+138
+00:34:05,779 --> 00:34:08,279
+a car is coming towards you,
+
+139
+00:34:08,279 --> 00:34:11,779
+you take action to save yourself or whatever.
+
+140
+00:34:11,779 --> 00:34:13,779
+Some type of motor activity.
+
+141
+00:34:13,779 --> 00:34:15,779
+Motor activity will just...
+
+142
+00:34:16,115 --> 00:34:43,851
+ve bazı
+
+143
+00:34:50,900 --> 00:34:52,220
+Okay, we said that.
+
+144
+00:34:58,260 --> 00:35:06,940
+Human beings perceive information through the human senses.
+
+145
+00:35:09,900 --> 00:35:18,700
+Name the sight, hearing, smell, touch, taste. We explored sixth sense.
+
+146
+00:35:18,700 --> 00:35:23,140
+Basically, to interact with physical environment.
+
+147
+00:35:30,083 --> 00:35:35,083
+Bir de bu bilgilerin,
+
+148
+00:35:36,083 --> 00:35:45,083
+bu bilgilerin,
+
+149
+00:35:45,083 --> 00:35:48,043
+bilgilerin,
+
+150
+00:35:53,748 --> 00:35:54,748
+Doğru, ben ne?
+
+151
+00:36:27,251 --> 00:36:33,612
+İzlediğiniz için, bu da
+
+152
+00:36:33,612 --> 00:36:35,251
+ve
+
+153
+00:36:35,251 --> 00:36:54,251
+bir
+
+154
+00:36:55,188 --> 00:36:57,188
+...
+
+155
+00:37:11,923 --> 00:37:18,155
+20%'i çöğledim,
+
+156
+00:37:21,748 --> 00:37:24,668
+TASTE, TOUCH, ve SMEL.
+
+157
+00:37:24,668 --> 00:37:32,028
+So if we look at these ratios here, so almost 80% SIGHT, 10% HEARING,
+
+158
+00:37:32,028 --> 00:37:42,028
+maybe 5% SMEL.
+
+159
+00:37:46,068 --> 00:37:53,268
+3% touch and 2% taste.
+
+160
+00:37:54,188 --> 00:37:55,508
+Information rule.
+
+161
+00:37:58,387 --> 00:37:58,828
+PC.
+
+162
+00:38:01,028 --> 00:38:05,228
+Of course, this is for a normal adult.
+
+163
+00:38:07,028 --> 00:38:08,868
+There are exceptions.
+
+164
+00:38:09,508 --> 00:38:11,788
+Considering the human life,
+
+165
+00:38:14,132 --> 00:38:16,311
+Ah, mm-mm.
+
+166
+00:38:19,795 --> 00:38:26,795
+Aferin, a human being is born in the mother's home,
+
+167
+00:38:26,795 --> 00:38:41,795
+probably most of the information an unborn baby receives would be true taste, maybe.
+
+168
+00:38:41,795 --> 00:38:43,795
+Even no touch.
+
+169
+00:38:49,347 --> 00:38:54,347
+Ama sonra, birçok ayın başında, en çok ilk günlerden,
+
+170
+00:38:54,347 --> 00:38:58,347
+ve en çok bilgi verenlerden bir şey var.
+
+171
+00:38:58,347 --> 00:39:02,347
+Ve en çok bilgi verenlerden bir şey var.
+
+172
+00:39:02,347 --> 00:39:06,347
+Çünkü, bir şey var.
+
+173
+00:39:06,347 --> 00:39:14,347
+Ve en çok bilgi verenlerden bir şey var.
+
+174
+00:39:16,436 --> 00:39:23,436
+Sonra, later stagesin, bu kadar da bir şeyin bir şeyin var.
+
+175
+00:39:23,436 --> 00:39:26,436
+Bir şeyin bir şeyin var.
+
+176
+00:39:28,436 --> 00:39:32,436
+Sonra, bir şeyin bir şeyin var.
+
+177
+00:39:32,436 --> 00:39:37,436
+Ve o bir şeyin bir şeyin bir şeyin var.
+
+178
+00:39:37,436 --> 00:39:42,436
+Bu, bu, bu, bu, bu, bu, bu, bu.
+
+179
+00:39:44,115 --> 00:39:49,355
+Information perception in a normal adult.
+
+180
+00:39:52,851 --> 00:40:00,171
+Öğren, bu information, perception, distribution may değiştirebilirim.
+
+181
+00:40:00,171 --> 00:40:06,971
+Bu age, or the physical condition of the person.
+
+182
+00:40:07,431 --> 00:40:18,271
+If somebody is blind, most of the perception will be through hearing and other senses.
+
+183
+00:40:20,211 --> 00:40:30,652
+If deaf, he or she, will not get any information to hearing, etc.
+
+184
+00:40:31,851 --> 00:40:36,912
+Or doesn't have arms, will not have sense of touch at all.
+
+185
+00:40:38,532 --> 00:40:39,872
+But these are exceptions.
+
+186
+00:40:46,387 --> 00:40:50,507
+So, what we see in this slide,
+
+187
+00:40:52,387 --> 00:40:55,627
+a human being, normal human being,
+
+188
+00:40:56,807 --> 00:41:00,947
+receives the most of the information through sight.
+
+189
+00:41:01,947 --> 00:41:05,947
+So, makes this...
+
+190
+00:41:11,411 --> 00:41:15,411
+Visualizasyon concept is very important.
+
+191
+00:41:28,532 --> 00:41:35,532
+Tamam, şimdi, şimdi, let me introduce some definitions of visualization.
+
+192
+00:41:35,532 --> 00:41:41,532
+There are quite a number of definitions.
+
+193
+00:41:41,532 --> 00:41:43,340
+So, first...
+
+194
+00:41:43,635 --> 00:42:00,275
+Visualization can be defined as a method of computer science to transform the symbolic into the geometry to form a mental model and foster unexpected insights. This is an important definition.
+
+195
+00:42:04,820 --> 00:42:15,060
+Just a symbolic concept transformed into geometric to form a mental model and foster unexpected insight.
+
+196
+00:42:15,060 --> 00:42:20,659
+We use visualization to extract more information.
+
+197
+00:42:23,500 --> 00:42:31,659
+Another definition is finding the artificial memory that best supports our natural means of perception.
+
+198
+00:42:37,972 --> 00:42:39,972
+Bu bir an interesting definisi.
+
+199
+00:42:39,972 --> 00:42:40,972
+Bu,
+
+200
+00:42:41,972 --> 00:42:43,972
+bir dekçüden informasyonu
+
+201
+00:42:43,972 --> 00:42:45,972
+ve spatial
+
+202
+00:42:45,972 --> 00:42:47,972
+ve graphical
+
+203
+00:42:47,972 --> 00:42:49,612
+representatiyon.
+
+204
+00:42:54,099 --> 00:43:21,771
+Bu, bu
+
+205
+00:43:22,547 --> 00:43:25,947
+Cognitive skill or change detection.
+
+206
+00:43:33,940 --> 00:43:46,940
+Evet.
+
+207
+00:43:46,940 --> 00:43:54,940
+Tamam.
+
+208
+00:43:59,380 --> 00:44:00,619
+Change Detection
+
+209
+00:44:00,619 --> 00:44:04,619
+Is
+
+210
+00:44:04,619 --> 00:44:07,960
+Another Cognitive Skill
+
+211
+00:44:07,960 --> 00:44:11,420
+So
+
+212
+00:44:15,764 --> 00:44:23,467
+Bu, bu
+
+213
+00:44:28,659 --> 00:44:42,659
+Bu, basically, there is no conceptual reason why the other human senses, such as smell, taste, touch, or urine, cannot be used as a representation of biological data.
+
+214
+00:44:44,659 --> 00:44:48,659
+However, there are some very practical limitations.
+
+215
+00:45:15,699 --> 00:45:22,699
+Could we hear DNA in transplicy sites or smell microarray plastik results?
+
+216
+00:45:23,699 --> 00:45:34,699
+By the way, some animals have much more developed smelling,
+
+217
+00:45:41,811 --> 00:45:48,092
+Açıklıklar ve bu
+
+218
+00:46:07,123 --> 00:46:17,803
+Bu, bu
+
+219
+00:46:24,052 --> 00:46:29,052
+Tamamen, ve
+
+220
+00:46:29,052 --> 00:46:31,052
+ve
+
+221
+00:46:31,052 --> 00:46:33,052
+birçok önemli
+
+222
+00:46:33,052 --> 00:46:38,052
+altyazı
+
+223
+00:46:45,907 --> 00:46:52,907
+Buna bit of the other sensors has an effect.
+
+224
+00:46:52,907 --> 00:47:05,907
+Basically, the bandwidth is the amount of information that can be communicated per unit time.
+
+225
+00:47:05,907 --> 00:47:11,692
+The amount of the information transferred to...
+
+226
+00:47:13,427 --> 00:47:19,108
+Sama, or some other unit per unit time, in seconds say, for example.
+
+227
+00:47:20,667 --> 00:47:28,667
+In this context, the visual sensing has the highest bandwidth.
+
+228
+00:47:30,587 --> 00:47:39,068
+We have already seen that 8% of information is perceived through visual senses.
+
+229
+00:47:42,003 --> 00:47:43,003
+Evet.
+
+230
+00:47:43,003 --> 00:47:45,563
+Bu problemiyle kullanılan diğer sensin
+
+231
+00:47:45,563 --> 00:47:46,403
+Bu bizimle
+
+232
+00:47:46,403 --> 00:47:47,043
+BGN system
+
+233
+00:47:47,043 --> 00:47:48,043
+İminsin
+
+234
+00:47:48,043 --> 00:47:48,603
+Bu
+
+235
+00:47:48,603 --> 00:47:48,983
+Hikângel
+
+236
+00:47:48,983 --> 00:48:06,699
+Bu
+
+237
+00:48:26,387 --> 00:48:46,207
+So, another motivation of presenting data, in many cases, it is to summarize information and provide for the identification of patterns.
+
+238
+00:48:47,284 --> 00:49:00,403
+A human visual system, in this respect, excels at paten dekognition, as there has been constant passion of millions of years to select for this ability.
+
+239
+00:49:01,784 --> 00:49:08,403
+For humans and their ancestors, a good vision system was essential for survival.
+
+240
+00:49:10,184 --> 00:49:14,284
+Bu
+
+241
+00:49:09,780 --> 00:49:31,692
+Bu, bu
+
+242
+00:49:35,347 --> 00:49:43,788
+Bu da aynı visual system is also excellent for analyzing abstract diagrams derived from biological datasets,
+
+243
+00:49:43,788 --> 00:49:48,667
+hence the popularity of visual representations within the biosenses.
+
+244
+00:49:52,692 --> 00:50:04,692
+Bir soru, bir soru, neden? Bir soru, neden? Bir soru, çünkü insanlar önemli.
+
+245
+00:50:16,307 --> 00:50:33,228
+İndi, real world, it is people alone who are truly creative, it is people who know when they have an idea, it is people who have resources for scientific development and people on the take time.
+
+246
+00:50:42,675 --> 00:50:46,675
+ve gen ifadesi kullanan bir şey.
+
+247
+00:51:03,987 --> 00:51:10,987
+İzlediğiniz için,
+
+248
+00:51:39,987 --> 00:51:45,247
+A perception of a pattern can often be the basis of an alien site.
+
+249
+00:51:45,987 --> 00:51:58,607
+You should remember the statistical data analysis concepts we discussed in Arbicius, or we just discussed last week.
+
+250
+00:51:58,607 --> 00:52:00,607
+Statistics.
+
+251
+00:52:02,187 --> 00:52:06,607
+We always said that it is always good to start.
+
+252
+00:52:08,467 --> 00:52:21,347
+An analysis, first by visualizing the data, because visualization will give you a rough idea about the data.
+
+253
+00:52:23,627 --> 00:52:31,227
+So this is the always suggested procedure. Start with visual analysis.
+
+254
+00:52:31,227 --> 00:52:33,287
+Okay.
+
+255
+00:52:34,132 --> 00:52:39,132
+Visualizasyon often enables problems with the data to become immediately apparent.
+
+256
+00:52:43,860 --> 00:53:02,507
+Bu, bu
+
+257
+00:53:03,860 --> 00:53:12,059
+A histogram, which is a visual technique to visualize the distribution of the data and see the distribution.
+
+258
+00:53:13,059 --> 00:53:18,579
+Then determine the methods to summarize your data.
+
+259
+00:53:20,360 --> 00:53:27,059
+Depending on the type of the histogram, you will choose.
+
+260
+00:53:27,956 --> 00:53:50,796
+Bu, bu
+
+261
+00:53:54,900 --> 00:54:02,900
+Bu, an appropriate visualization, errors and artifacts in the data often will be apparent.
+
+262
+00:54:03,900 --> 00:54:09,900
+For example, if you plot a scatter plot of a beta, you will be able to see...
+
+263
+00:54:13,900 --> 00:54:15,884
+...out tires, etc.
+
+264
+00:54:17,172 --> 00:54:23,612
+Bu yüzden, visualizasyon kanıdık ve kaliteli kontrol etse.
+
+265
+00:54:43,539 --> 00:54:51,916
+ve gen, bu
+
+266
+00:55:04,724 --> 00:55:13,724
+So, to give formal definitions of data visualization and information visualization,
+
+267
+00:55:13,724 --> 00:55:26,604
+after this introduction to the visualization, specifically data visualization is the presentation of data in a pictorial or graphical format.
+
+268
+00:55:35,443 --> 00:55:55,643
+So, the presentation of data in a pictorial or graphical format enables decision makers to see analytics presented visually so they can grasp difficult concepts or identify new patterns.
+
+269
+00:56:28,179 --> 00:56:30,739
+We should not mix them up.
+
+270
+00:56:35,860 --> 00:56:45,679
+So, it is information visualization is the study of visual representations through data visualization.
+
+271
+00:56:45,679 --> 00:56:46,679
+Evet.
+
+272
+00:56:48,259 --> 00:56:52,500
+Hence, it is very important for decision making.
+
+273
+00:56:54,500 --> 00:56:56,500
+Information visualization.
+
+274
+00:57:03,731 --> 00:57:15,251
+So, to reiterate with different wording, a data visualization is a graphical representation of quantifiable data,
+
+275
+00:57:15,251 --> 00:57:22,371
+used by means of well-known chart, graph, or map types, these visualization techniques.
+
+276
+00:57:25,588 --> 00:57:47,948
+Bu, bu
+
+277
+00:57:48,083 --> 00:57:53,083
+Mümayet paketçi, maplak, bir programı,
+
+278
+00:57:53,083 --> 00:57:57,083
+birçok da bilgilerin ve bilgilerin bilgilerin.
+
+279
+00:58:03,699 --> 00:58:07,259
+An-information visualization,
+
+280
+00:58:07,259 --> 00:58:11,339
+which is sometimes known as infographic,
+
+281
+00:58:11,339 --> 00:58:14,859
+is a graphical representation that
+
+282
+00:58:14,859 --> 00:58:20,179
+combines one or more data visualizations
+
+283
+00:58:20,179 --> 00:58:23,099
+with other non-data elements,
+
+284
+00:58:23,099 --> 00:58:26,139
+such as graphics or text.
+
+285
+00:59:00,179 --> 00:59:15,179
+So infographic requires the application of a creative process with some understanding of the underlying data and its context to the data visualization.
+
+286
+00:59:24,563 --> 00:59:46,603
+Bu, bu
+
+287
+00:59:47,347 --> 01:00:10,380
+Bu konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir
+
+288
+01:00:10,420 --> 01:00:20,639
+Perceptual systems were designed specifically for survival in an understanding of the surrounding extended environment.
+
+289
+01:00:23,700 --> 01:00:26,500
+It's not abstract objects and images.
+
+290
+01:00:40,755 --> 01:00:48,355
+So, visual analysis is becoming an essential component of medical visualization.
+
+291
+01:00:48,355 --> 01:01:03,955
+There to be rapidly growing broader availability of complex multi-dimensional time-marrying mixed modalities simulation and multi-subject datasets.
+
+292
+01:01:35,219 --> 01:02:03,179
+So, to summarize, purposes of information visualization is to help explore, explore, or calculate, analyze, reason about the information, to communicate, again, to explain, and make decisions, and...
+
+293
+01:02:10,132 --> 01:02:16,043
+Bu da
+
+294
+01:02:25,108 --> 01:02:29,628
+Ok, these are goals of information visualization.
+
+295
+01:02:31,928 --> 01:02:36,108
+Exploration, calculation, communication and declaration.
+
+296
+01:02:46,099 --> 01:02:48,720
+Okay, let's have a 10-minute break.
+
+297
+01:14:16,948 --> 01:14:20,948
+Ok, the goals of information visualization.
+
+298
+01:14:25,779 --> 01:14:32,779
+Basically, visualization should make large datasets coherent.
+
+299
+01:14:35,779 --> 01:14:40,779
+Coherence means to present huge amounts of information compactly.
+
+300
+01:14:45,779 --> 01:14:49,779
+Present information from various viewpoints.
+
+301
+01:15:14,195 --> 01:15:17,956
+Siyahat, visual comparisiyors.
+
+302
+01:15:18,915 --> 01:15:24,915
+We can compare one visualisation to another one.
+
+303
+01:15:26,195 --> 01:15:28,595
+Tell stories about the data.
+
+304
+01:15:29,315 --> 01:15:33,796
+It enables you to summarize data.
+
+305
+01:15:36,755 --> 01:15:39,876
+To create stories about the data.
+
+306
+01:15:40,979 --> 01:15:43,979
+Bu nedenle de bu işlemiyorsan.
+
+307
+01:15:45,979 --> 01:15:48,979
+Bu işlemiyorsan bir şey için,
+
+308
+01:15:48,979 --> 01:15:52,979
+bu işlemiyorsan iyi bir şeyle alın.
+
+309
+01:16:08,051 --> 01:16:10,051
+ve orientation.
+
+310
+01:16:12,051 --> 01:16:14,051
+And obviously, texture.
+
+311
+01:16:15,051 --> 01:16:20,051
+Length, shape, orientation, and texture.
+
+312
+01:16:21,051 --> 01:16:25,051
+This is the means of comparisons.
+
+313
+01:16:28,051 --> 01:16:33,051
+We can have animation to show changes over the time.
+
+314
+01:16:33,051 --> 01:16:35,051
+Basically, animation is...
+
+315
+01:16:35,956 --> 01:16:48,876
+Some sort of three-dimensional graphs, third dimension is time, graphs are changing, pictures are changing over the time, is known as animation.
+
+316
+01:16:54,100 --> 01:16:56,100
+So, we use color,
+
+317
+01:16:58,100 --> 01:17:01,100
+which helps to make distinctions
+
+318
+01:17:02,100 --> 01:17:04,100
+about the objects.
+
+319
+01:17:07,100 --> 01:17:09,100
+We use aesthetics
+
+320
+01:17:11,100 --> 01:17:14,100
+to make the process more appealing.
+
+321
+01:17:15,100 --> 01:17:18,100
+So, these are the...
+
+322
+01:17:58,131 --> 01:18:21,131
+So, if we discuss the relationship of the visualization with cognition process, let's discuss verbal information versus visual information, how verbal information and visual information is interpreted.
+
+323
+01:18:23,283 --> 01:18:48,747
+İlk olarak bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin, olfaktor bilgilerin
+
+324
+01:18:49,908 --> 01:18:51,908
+İndir, bilgi, bilgi, bilgi.
+
+325
+01:18:53,548 --> 01:18:59,228
+So, this is the subject of perception,
+
+326
+01:18:59,228 --> 01:19:01,908
+numemikosok, perception bilgi.
+
+327
+01:19:04,068 --> 01:19:06,648
+Now, do coding theory.
+
+328
+01:19:11,155 --> 01:19:37,131
+Bu, bu
+
+329
+01:19:37,171 --> 01:19:44,971
+At 10, when we see the word 3, this is the verbal information, we understand.
+
+330
+01:19:49,395 --> 01:19:54,855
+Bir şey, bir şey, bir şey, aynı şey.
+
+331
+01:19:56,055 --> 01:20:00,376
+Ama bu şey, bu bir şey, bir şey.
+
+332
+01:20:09,332 --> 01:20:11,332
+They are representing
+
+333
+01:20:14,515 --> 01:20:21,515
+ve gen ifadesi konuları,
+
+334
+01:20:21,515 --> 01:20:26,555
+bu problem known as
+
+335
+01:20:26,555 --> 01:20:28,715
+semantik ambiklity
+
+336
+01:20:28,715 --> 01:20:32,515
+of our natural language.
+
+337
+01:20:32,515 --> 01:20:35,515
+Now we have two pictures here.
+
+338
+01:20:35,515 --> 01:20:40,515
+One is running nose,
+
+339
+01:20:49,140 --> 01:20:57,140
+Bu nedenle birçok.
+
+340
+01:20:57,140 --> 01:21:02,140
+Çünkü 1 numaral machinesi yaratıcı birçok.
+
+341
+01:21:02,140 --> 01:21:06,140
+Birçok birçok birçok birçok birçok.
+
+342
+01:21:06,140 --> 01:21:09,140
+Bu birçok birçok.
+
+343
+01:21:11,380 --> 01:21:37,579
+Nowadays, it is becoming more and more common to artificial intelligence, more human-like approaches to computing, but still, we are far from reaching the human ability to interpret this sort of semantic abilities.
+
+344
+01:21:38,612 --> 01:21:40,971
+Ambiguity is confusion.
+
+345
+01:21:45,332 --> 01:21:55,435
+Biasa, a computurum da bilgi
+
+346
+01:21:58,836 --> 01:22:05,876
+However, one solution lies in obvious artificial intelligence and machine learning approaches,
+
+347
+01:22:06,076 --> 01:22:10,076
+where we can train the machines to learn the context.
+
+348
+01:22:11,155 --> 01:22:14,015
+Nowadays, it's getting better and better.
+
+349
+01:22:19,380 --> 01:22:36,060
+But in standard approaches, you cannot make a computer to differentiate between the concept of having cult, concept of running north as a graph of cult, or even an argument of running north.
+
+350
+01:22:42,644 --> 01:22:51,324
+There are many examples to this cognitive, so this semantic ambiguity.
+
+351
+01:22:53,363 --> 01:23:00,224
+The next slide, in the next slide we see the title page of the journal SEL.
+
+352
+01:23:02,771 --> 01:23:24,108
+Bu, bu
+
+353
+01:23:24,243 --> 01:23:32,243
+A huge problem with verbal information is that we are confronted with semantics on the weekend.
+
+354
+01:23:32,243 --> 01:23:37,243
+This is the problem in the computational side.
+
+355
+01:23:41,684 --> 01:23:55,423
+Semantic ambiguity, basically, what we mean is that a world has often more than one meaning, so this creates problem for normal computing systems.
+
+356
+01:24:02,771 --> 01:24:06,771
+Bu sel, bu sel, çok farklı bir anlamı.
+
+357
+01:24:08,771 --> 01:24:11,771
+Şimdi, bu sel, farklı anlamı.
+
+358
+01:24:12,771 --> 01:24:17,771
+Bu, genel,
+
+359
+01:24:18,771 --> 01:24:21,771
+bu, bioloji,
+
+360
+01:24:22,771 --> 01:24:23,771
+bu,
+
+361
+01:24:28,340 --> 01:24:41,559
+Mobile phone cell, this is the matrix cell, this is the blood cell, this is the cell unit of the gene, this is the mathematical topology, etc.
+
+362
+01:24:41,559 --> 01:24:43,020
+Except for the story.
+
+363
+01:24:45,000 --> 01:24:51,979
+Journal, basic building block of life, battery cell, warone cell, mathematical topology.
+
+364
+01:24:53,043 --> 01:24:55,363
+Business, et cetera, et cetera.
+
+365
+01:24:55,763 --> 01:24:57,943
+So, there are many other users.
+
+366
+01:25:31,956 --> 01:25:42,836
+Bu, a better understanding, it is useful to review more details in the already learned human information processes.
+
+367
+01:25:44,956 --> 01:25:48,836
+According to the tutorial of multimedia learning by Mayer,
+
+368
+01:26:16,659 --> 01:26:26,659
+Onlu if there is a certain amount of attention, the pictures will become represented within the working memory.
+
+369
+01:26:29,659 --> 01:26:36,659
+Once the working memory is full of image pieces, which means this cognitive overload,
+
+370
+01:26:36,659 --> 01:26:44,555
+the next active cognitive processing involves organizing those pieces into a coherent structure.
+
+371
+01:26:45,300 --> 01:26:50,819
+Resulting knowledge representation is a pictorial model,
+
+372
+01:26:52,399 --> 01:26:58,159
+which is the person, build, and organized visual representation
+
+373
+01:26:58,159 --> 01:27:00,680
+of the main parts of the picture, basically.
+
+374
+01:27:02,020 --> 01:27:05,039
+This is some sort of big compression in the brain.
+
+375
+01:27:05,380 --> 01:27:09,559
+Finally, active cognitive processing is required to connect
+
+376
+01:27:09,559 --> 01:27:12,440
+this need representation with previous knowledge.
+
+377
+01:27:13,587 --> 01:27:20,047
+If this happens, then the picture will be memorized in the long-time memory.
+
+378
+01:27:22,327 --> 01:27:25,487
+Now taking into account the written text.
+
+379
+01:27:26,788 --> 01:27:31,288
+This is basically written natural language, which is words.
+
+380
+01:27:32,387 --> 01:27:33,643
+These are...
+
+381
+01:27:36,884 --> 01:27:45,884
+İmizde, birçok, birçok, birçok, birçok, birçok, birçok.
+
+382
+01:27:45,884 --> 01:27:54,884
+Birçok, birçok, birçok, birçok, birçok, birçok, birçok, birçok, birçok, birçok.
+
+383
+01:27:57,395 --> 01:28:28,007
+...
+
+384
+01:28:21,908 --> 01:28:31,908
+All the words are presented visually so they are initially perceived through the eyes and thus brought into working memory as image.
+
+385
+01:28:31,908 --> 01:28:39,908
+They must be mentally processed by the auditory part of the working memory thus processed like spoken words.
+
+386
+01:28:42,515 --> 01:29:00,515
+Konsequen, bir verbal material must enter through the visual channel, the works must take the complex route through the system and must also compete for attention with images, which might be to see in parallel to the visual channel.
+
+387
+01:29:10,931 --> 01:29:14,931
+Mörele ve Meyrede 1999.
+
+388
+01:29:14,931 --> 01:29:19,931
+D-modalty principle states that low-experienced learners
+
+389
+01:29:19,931 --> 01:29:27,931
+more successfully understand information that uses narration rather than on-screen text.
+
+390
+01:29:27,931 --> 01:29:31,931
+It is important, low-experienced learners
+
+391
+01:29:32,467 --> 01:29:39,787
+ve daha çok ilişkiler, bilgi veren informasyonu kullanıcı, daha da on-screen text.
+
+392
+01:29:43,572 --> 01:29:48,572
+Natural language can also be received directly as spoken words.
+
+393
+01:29:51,572 --> 01:29:54,572
+This is spoken text rather than written text.
+
+394
+01:29:55,572 --> 01:30:01,572
+Consequently, it directly auditory processed.
+
+395
+01:30:02,572 --> 01:30:04,572
+With the auditory process system.
+
+396
+01:30:04,572 --> 01:30:08,572
+In this case, the piece of text is picked up as sound.
+
+397
+01:30:09,408 --> 01:30:14,968
+ve her tempera ve her sensörlerle
+
+398
+01:30:19,699 --> 01:30:33,699
+If the person pays attention to the sounds coming into the ears, some of the incoming sounds will be selected for inclusion in the so-called word sound base.
+
+399
+01:30:33,699 --> 01:30:43,699
+The words in the word base are disorganized fragments, so the next epistle build them into a human mental structure.
+
+400
+01:30:44,020 --> 01:31:07,212
+Bu, bu
+
+401
+01:31:08,212 --> 01:31:20,492
+ve
+
+402
+01:31:23,956 --> 01:31:28,336
+So, again, question, is a picture really worth a thousand volts?
+
+403
+01:31:29,996 --> 01:31:33,775
+In this case, we are not very comfortable to say yes.
+
+404
+01:31:34,996 --> 01:31:36,736
+Listen, it depends, really.
+
+405
+01:31:37,656 --> 01:31:44,176
+Some researchers are arguing that sometimes a picture might be worth a billion volts.
+
+406
+01:31:46,963 --> 01:31:52,423
+Some others are arguing that sometimes text is better than an image.
+
+407
+01:31:53,564 --> 01:32:01,043
+It really depends on the situation we have already seen.
+
+408
+01:32:03,060 --> 01:32:24,204
+Bu, bu
+
+409
+01:32:28,724 --> 01:32:35,043
+Bu bir image is a good example on how a picture can explain a complex idea.
+
+410
+01:32:36,684 --> 01:32:42,244
+This is a ribbon diagram, also known as Richardson diagram.
+
+411
+01:32:43,244 --> 01:32:47,164
+It is a standard method of schematic coating representation.
+
+412
+01:32:48,444 --> 01:32:52,484
+So basically, the ribbon.
+
+413
+01:32:54,323 --> 01:33:22,091
+Şehir, ve genişliğe,
+
+414
+01:33:22,739 --> 01:33:41,439
+Alfa-alists are shown as curly ribbons, fetastrans as aros, which is here, these aros, these curly ribbons and aros, and teal nines for non-repetitive cohesor groups, these teal nines.
+
+415
+01:33:42,639 --> 01:33:44,340
+Of course, this is visualization.
+
+416
+01:33:45,619 --> 01:33:52,619
+Bu şekilde de polipeptide kıyasla
+
+417
+01:34:22,292 --> 01:34:29,132
+Semiotik is the study of signs and symbols as a significant part of communication.
+
+418
+01:34:30,492 --> 01:34:35,252
+These are again some terminology relevant to the utilization.
+
+419
+01:34:39,764 --> 01:34:47,804
+As a gift from linguistics over semiotik soldier of studies in non-linguistic sign systems.
+
+420
+01:34:50,604 --> 01:34:54,184
+Semiotik is often divided into three branches.
+
+421
+01:34:54,524 --> 01:35:02,604
+The first is semantics, which discusses the relation between signs and the things to which they refer.
+
+422
+01:35:03,324 --> 01:35:04,904
+They have signified meanings.
+
+423
+01:35:07,412 --> 01:35:19,952
+Syntaktik, which refers to the relations among or between signs in thermal structures and the term is pragmatics.
+
+424
+01:35:21,832 --> 01:35:30,072
+Which is relevant to a relation between signs and sign using agents or interpreters.
+
+425
+01:35:34,931 --> 01:35:43,692
+3.0% de languages which claim to be visual can be given here.
+
+426
+01:35:45,291 --> 01:35:51,011
+Now we have 3.0% de languages.
+
+427
+01:35:54,484 --> 01:36:00,963
+The left one is a cave painting.
+
+428
+01:36:02,963 --> 01:36:03,404
+Okay.
+
+429
+01:36:04,484 --> 01:36:08,404
+But it conveys information from say,
+
+430
+01:36:10,724 --> 01:36:11,924
+be from the history.
+
+431
+01:36:12,404 --> 01:36:14,703
+Maybe, I don't know, 2000 years old.
+
+432
+01:36:18,003 --> 01:36:42,123
+Bu, bu
+
+433
+01:36:47,060 --> 01:36:49,060
+Evet, bu da bir şey.
+
+434
+01:37:01,779 --> 01:37:27,403
+Bu, bu
+
+435
+01:37:32,948 --> 01:37:38,488
+You should be aware of these concepts, mathematical concepts to be able to interpret this.
+
+436
+01:37:40,408 --> 01:37:43,988
+By the way, anybody knows what this hizalama?
+
+437
+01:37:50,323 --> 01:37:59,323
+Bu ne?
+
+438
+01:37:59,323 --> 01:38:04,715
+Bir şey.
+
+439
+01:38:11,188 --> 01:38:17,307
+Bu, bir metrik olarak,
+
+440
+01:38:17,307 --> 01:38:19,115
+entropi.
+
+441
+01:38:30,868 --> 01:38:32,868
+Bu bir matematik bir eğitim.
+
+442
+01:38:32,868 --> 01:38:34,868
+Ve yine, bu bir eğitim.
+
+443
+01:38:38,739 --> 01:38:45,639
+Lengu, bu yüzden, it conveys information about some mathematical concepts.
+
+444
+01:38:47,680 --> 01:38:49,340
+I will determine one here.
+
+445
+01:38:57,395 --> 01:39:01,395
+The third one is telling the story again.
+
+446
+01:39:01,395 --> 01:39:07,395
+So, the third one is a schematic diagram which shows a virtual environment
+
+447
+01:39:09,395 --> 01:39:14,395
+and human-cultural interaction on a fairly abstract level.
+
+448
+01:39:17,395 --> 01:39:20,395
+This virtual 3D image where
+
+449
+01:39:20,543 --> 01:39:25,543
+Optikal link to the eyes and we have the head checker.
+
+450
+01:39:25,543 --> 01:39:28,543
+We have the device controller, graphic controller,
+
+451
+01:39:28,543 --> 01:39:31,543
+probably a game controller, whatever.
+
+452
+01:39:31,543 --> 01:39:35,543
+This is a good example of human control interaction.
+
+453
+01:39:39,539 --> 01:39:40,539
+3D.
+
+454
+01:39:43,539 --> 01:39:44,539
+Lari de viz.
+
+455
+01:39:46,539 --> 01:39:49,539
+An example to submit a jury.
+
+456
+01:39:54,996 --> 01:39:55,996
+So,
+
+457
+01:39:58,996 --> 01:40:02,996
+Computur science lacks a reliable concept of the human mind.
+
+458
+01:40:03,996 --> 01:40:04,996
+Still,
+
+459
+01:40:04,996 --> 01:40:09,996
+although there are quite recent developments in artificial intelligence,
+
+460
+01:40:09,996 --> 01:40:10,996
+still,
+
+461
+01:40:10,996 --> 01:40:14,996
+Computur science lacks a reliable concept of the human mind,
+
+462
+01:40:14,996 --> 01:40:17,996
+whereas the psychological science lacks
+
+463
+01:40:17,996 --> 01:40:22,859
+solid concepts of algorithms and data structures.
+
+464
+01:40:23,988 --> 01:40:29,708
+Psychological science is not mathematical or algorithmic science.
+
+465
+01:40:33,844 --> 01:40:40,084
+Consequently, there is a need for a theory in which what domains find a place.
+
+466
+01:40:44,595 --> 01:40:46,975
+İntek-Base 2 sites.
+
+467
+01:40:52,532 --> 01:41:02,131
+İlk olarak, physical, which is also known as signifier, ve psychological, which is known as signified.
+
+468
+01:41:04,131 --> 01:41:12,131
+In this respect, semiotik is the study of science and therefore can talk about representations.
+
+469
+01:41:17,235 --> 01:41:29,435
+Algorithmiz ve data-structurası, a signifier ve interpretasyonu by end-users, a signifier.
+
+470
+01:41:33,652 --> 01:41:58,220
+Bu, bu
+
+471
+01:41:58,228 --> 01:42:04,467
+Visualizasyon is a method of computer science to transform the symbolic into the geometric,
+
+472
+01:42:05,287 --> 01:42:14,407
+how we mentioned about symbols or whatever science, to support the formation of a mental model and foster insights.
+
+473
+01:42:15,807 --> 01:42:20,947
+As such, it is an essential component of the knowledge discovery process.
+
+474
+01:42:21,971 --> 01:42:36,151
+Information visualization is the interdisciplinary study of the visual representation of large-scale collections of non-numerical data, such as files and software, databases, networks, etc.
+
+475
+01:42:37,051 --> 01:42:42,971
+To allow users to see, explore and understand the information at once.
+
+476
+01:42:48,787 --> 01:43:02,427
+Konvensional Computer Science Subjects, such as Datapires, Software Database Networks ve Link to Information Resolution.
+
+477
+01:43:06,228 --> 01:43:17,228
+Data visualization is the visual representation of complex data to communicate information clearly and effectively, making data useful and visible.
+
+478
+01:43:17,228 --> 01:43:27,724
+Visual analytics propuses on analytical reasons of complex data facilitated by interactive visual interfaces.
+
+479
+01:43:29,492 --> 01:43:35,551
+Content Analytics is a general term addressing so-called unstructured data.
+
+480
+01:43:36,811 --> 01:43:46,072
+Basically unstructured data, an example, is known in text, by using mixed methods from visual analytics and business intelligence.
+
+481
+01:43:46,911 --> 01:43:54,652
+So you can see the relations to the other fields of puncture science, visual.
+
+482
+01:43:56,564 --> 01:43:59,404
+ve
+
+483
+01:44:03,988 --> 01:44:08,668
+Visualization is basic, typical human-comptured interaction.
+
+484
+01:44:08,668 --> 01:44:15,368
+Topic human-comptured interaction is a very important core subjects of the compter size.
+
+485
+01:44:18,068 --> 01:44:26,284
+Human-comptured interaction, large-scale, high-dimensional data visualization is...
+
+486
+01:44:26,323 --> 01:44:49,131
+Bu, bu
+
+487
+01:44:49,716 --> 01:45:13,963
+Bu videoları da bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgilerin bir bilgiler
+
+488
+01:45:16,435 --> 01:45:35,015
+Now in this respect, interactive visualization, this type of visualization, provide the ability to comprehend data and to interactively analyze information properties on the fly.
+
+489
+01:45:39,539 --> 01:46:00,139
+n n
+
+490
+01:46:01,524 --> 01:46:17,387
+Bu, bu
+
+491
+01:46:18,355 --> 01:46:31,956
+Novist medical students learning theoretical concepts, processes, relationships, as well as invasive procedural skills, which is extremely important in using clinical exposure.
+
+492
+01:46:33,235 --> 01:46:41,956
+Basically, simulations are just software that creates...
+
+493
+01:46:42,931 --> 01:46:48,851
+ve gerçek bir environment
+
+494
+01:46:48,851 --> 01:46:52,252
+ve ve
+
+495
+01:46:52,252 --> 01:47:02,931
+ve
+
+496
+01:47:06,804 --> 01:47:17,064
+I'm not sure I have a link here, but this link can work or not to show you.
+
+497
+01:47:45,876 --> 01:47:47,876
+Ok, let me see.
+
+498
+01:47:48,676 --> 01:47:50,476
+You will not be able to see it.
+
+499
+01:48:02,547 --> 01:48:05,347
+Bir şey, Ski'n benziyor.
+
+500
+01:48:35,655 --> 01:48:44,655
+ve
+
+501
+01:48:35,091 --> 01:49:01,835
+Bir de
+
+502
+01:49:02,131 --> 01:49:04,131
+İntrachtiyiz, izi hizalama.
+
+503
+01:49:06,131 --> 01:49:08,131
+İzisimple,
+
+504
+01:49:09,131 --> 01:49:11,131
+Graphical,
+
+505
+01:49:11,131 --> 01:49:13,131
+Presentation.
+
+506
+01:49:13,131 --> 01:49:39,835
+Ok.
+
+507
+01:50:00,916 --> 01:50:06,916
+The process of data visualization includes four basic stages,
+
+508
+01:50:08,916 --> 01:50:13,916
+with some feedback loops.
+
+509
+01:50:15,916 --> 01:50:18,916
+First is collection and storage of data.
+
+510
+01:50:18,916 --> 01:50:22,916
+This is an obvious step.
+
+511
+01:50:23,916 --> 01:50:26,916
+You need to collect data and store them.
+
+512
+01:50:29,108 --> 01:50:52,332
+Bu, bu
+
+513
+01:50:52,467 --> 01:51:03,127
+Therefore, a co-processing stage designed to transform the data into something that is easier to manipulate.
+
+514
+01:51:05,127 --> 01:51:11,067
+You can use some data cleaning, data normalization.
+
+515
+01:51:13,971 --> 01:51:22,051
+İzlediğiniz için, bu da
+
+516
+01:51:22,051 --> 01:51:27,532
+ve bu da
+
+517
+01:51:41,971 --> 01:51:45,835
+Beta-reduksiyon tekniklerine,
+
+518
+01:51:51,283 --> 01:51:58,163
+So, data exploration techniques may also be used.
+
+519
+01:52:05,939 --> 01:52:15,579
+The third step is mapping from the selected data to a visual representation.
+
+520
+01:52:19,699 --> 01:52:22,699
+ve gen ifadesi yapıcı.
+
+521
+01:52:46,899 --> 01:52:52,399
+Bu, bu, genelde de, on user's own computer.
+
+522
+01:52:54,899 --> 01:52:56,899
+Bu, computasyonun.
+
+523
+01:52:58,899 --> 01:52:59,899
+Ve,
+
+524
+01:53:02,899 --> 01:53:06,399
+bu, human perception and cognitive system.
+
+525
+01:53:07,399 --> 01:53:08,899
+Bu, bu, stage.
+
+526
+01:53:09,399 --> 01:53:11,899
+Bu, bu, basically.
+
+527
+01:53:31,155 --> 01:53:47,155
+Ok, taking all these in consideration into account, interactive visualizations, a typical women's country interaction task, as we mentioned before, and can be represented graphically as shown here.
+
+528
+01:53:54,228 --> 01:53:59,268
+İzlediğiniz için, bu da,
+
+529
+01:53:59,268 --> 01:54:17,228
+ve
+
+530
+01:54:22,547 --> 01:54:31,547
+We have the visual mappings, taniye interpretation, visual and cognitive processing.
+
+531
+01:54:32,547 --> 01:54:43,547
+This is the end-user human factor, human component of the human interaction system.
+
+532
+01:54:52,627 --> 01:55:18,411
+Bu, bu, bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir kümle bir küm
+
+533
+01:55:20,532 --> 01:55:25,231
+Test the interaction, ve de komple side ve de hemen side.
+
+534
+01:55:32,243 --> 01:55:32,683
+Okay.
+
+535
+01:55:46,228 --> 01:55:56,307
+Interactive making data understandable for the end users is known as typical human-computer interaction ask.
+
+536
+01:55:58,688 --> 01:56:09,188
+So we can compute that visualization is the common denominator of computational sciences.
+
+537
+01:56:09,984 --> 01:56:19,984
+ve bu
+
+538
+01:56:19,984 --> 01:56:24,984
+ve
+
+539
+01:56:24,984 --> 01:56:38,984
+bu
+
+540
+01:56:39,028 --> 01:56:41,028
+İmizde sannes,
+
+541
+01:56:43,948 --> 01:56:45,148
+ve'l record it,
+
+542
+01:56:46,748 --> 01:56:49,547
+so we can record it in this way.
+
+543
+01:56:50,188 --> 01:56:51,868
+We have the symbol structures,
+
+544
+01:56:52,948 --> 01:56:55,627
+beta process transformations,
+
+545
+01:56:56,587 --> 01:57:00,148
+interactive devices such as keyboard, mouse, etc.
+
+546
+01:57:01,228 --> 01:57:04,387
+And interactions between these two domains.
+
+547
+01:57:15,572 --> 01:57:21,572
+Visualization can be viewed as a knowledge listing process as well.
+
+548
+01:57:21,572 --> 01:57:23,572
+So we have the...
+
+549
+01:57:28,243 --> 01:57:29,083
+Differen.
+
+550
+01:57:39,315 --> 01:57:41,315
+Mental Models
+
+551
+01:57:43,315 --> 01:57:45,315
+Models can be seen as
+
+552
+01:57:45,315 --> 01:57:47,315
+Obstructions of Visualizations
+
+553
+01:57:47,315 --> 01:57:50,315
+The first step between Mental Models
+
+554
+01:57:50,315 --> 01:57:52,315
+And Internal Representation
+
+555
+01:57:52,315 --> 01:57:54,315
+Is Internalization
+
+556
+01:57:54,315 --> 01:57:57,260
+Internalize it
+
+557
+01:57:59,783 --> 01:58:07,783
+Mertel model,
+
+558
+01:58:26,100 --> 01:58:29,660
+Rehabilitim, ve hümeti-septü ve visual processing
+
+559
+01:58:29,660 --> 01:58:30,980
+a three-stage model.
+
+560
+01:58:32,060 --> 01:58:36,540
+Parallel processing to extract low-level properties
+
+561
+01:58:36,540 --> 01:58:37,860
+of the visual scheme.
+
+562
+01:58:41,939 --> 01:59:07,083
+ve
+
+563
+01:59:08,051 --> 01:59:12,051
+İkonomik stof.
+
+564
+01:59:16,051 --> 01:59:19,051
+Pattern Perception
+
+565
+01:59:19,051 --> 01:59:25,051
+Bu visual field
+
+566
+01:59:25,051 --> 01:59:28,051
+Bu region ve patterns
+
+567
+02:00:01,939 --> 02:00:13,819
+As you know, the test stage image is very shortly stored, you know, very biologically stored.
+
+568
+02:00:16,319 --> 02:00:17,291
+This is...
+
+569
+02:00:17,811 --> 02:00:28,112
+Bu, bu, an object, an object, an object will stay there for a short time.
+
+570
+02:00:28,112 --> 02:00:30,112
+Bu, an object, an object, an object will stay there for a short time.
+
+571
+02:00:30,112 --> 02:00:32,112
+Bu, an object, an object will stay there for a short time.
+
+572
+02:00:32,112 --> 02:00:35,403
+Bu, an object will stay there for a short time.
+
+573
+02:00:40,372 --> 02:00:40,731
+Okay.
+
+574
+02:00:44,851 --> 02:00:50,351
+So, now question is, how many visualization methods do exist?
+
+575
+02:00:50,351 --> 02:01:02,851
+Since we said that this is a field in computer science field, there must be many methods.
+
+576
+02:01:02,851 --> 02:01:10,851
+So, there are, of course, this course is not visualization course and this is...
+
+577
+02:01:15,907 --> 02:01:22,907
+Bu, an object will stay there for a short time.
+
+578
+02:01:11,699 --> 02:01:35,659
+Bu, bu
+
+579
+02:01:36,500 --> 02:01:42,719
+Summary of the visualization methods in a compact way.
+
+580
+02:01:42,859 --> 02:01:55,819
+Again, we use visualization technique here to convey the existing methods in a compact form.
+
+581
+02:01:59,283 --> 02:02:01,283
+Or, let me...
+
+582
+02:02:02,563 --> 02:02:07,563
+Okay, you are not able to see this because this is a link to the web page.
+
+583
+02:02:08,703 --> 02:02:12,863
+Let me share this with you.
+
+584
+02:02:39,539 --> 02:02:40,539
+Share it.
+
+585
+02:02:43,539 --> 02:02:44,539
+Can you see it?
+
+586
+02:02:47,539 --> 02:02:52,539
+Okay, this is a periodic table of visualization methods. If you go to this web page,
+
+587
+02:02:56,275 --> 02:03:23,819
+Bu, bu
+
+588
+02:03:24,787 --> 02:03:31,287
+Bu, continuum type visualisiyon.
+
+589
+02:03:31,287 --> 02:03:37,787
+Bu, bu, text type,
+
+590
+02:03:37,787 --> 02:03:40,787
+in terms of the tables.
+
+591
+02:03:40,787 --> 02:03:43,787
+Bu, cartesian co-ordinator,
+
+592
+02:03:43,787 --> 02:03:46,787
+some scenario matrix.
+
+593
+02:03:46,787 --> 02:03:49,787
+Bu, bu, for example,
+
+594
+02:03:52,307 --> 02:03:54,307
+Pi chart.
+
+595
+02:03:55,907 --> 02:03:57,907
+This is some sort of line chart.
+
+596
+02:04:01,492 --> 02:04:17,492
+Bar chart, area chart, histogram, scuttle plot, 2K box plot, or this box and disto spot we discussed before.
+
+597
+02:04:18,100 --> 02:04:29,480
+ve açıklarla, bu iki-dimensional plot, say, eğer, birçok, time-frequence analysis.
+
+598
+02:04:46,323 --> 02:04:58,323
+Green ones, light green ones are information visualization, for example, radar charts, is known as radar charts.
+
+599
+02:04:58,323 --> 02:05:01,323
+This is parallel-lobed RAM.
+
+600
+02:05:05,363 --> 02:05:09,363
+Bu birçok birçok birçok birçok.
+
+601
+02:05:09,363 --> 02:05:13,363
+Birçok birçok.
+
+602
+02:05:13,363 --> 02:05:29,227
+Birçok.
+
+603
+02:05:31,667 --> 02:05:57,667
+This is PetriNet, Flowchart. Flowcharts are used in extensive name, algorithm design, for example, and clustering type information visualization, datamaps, keymaps.
+
+604
+02:05:58,836 --> 02:06:14,156
+3.3, bu sistem, dynamic simulation, data flow diagrams, semantik networks, et cetera.
+
+605
+02:06:14,156 --> 02:06:17,076
+Then there is concept visualization.
+
+606
+02:06:17,076 --> 02:06:22,596
+There are many different types for concept visualization.
+
+607
+02:06:22,596 --> 02:06:25,956
+As we see, visualization is a very big field.
+
+608
+02:06:27,347 --> 02:06:29,131
+ve
+
+609
+02:06:32,819 --> 02:06:37,319
+Bu, there are many different types of concepts, reservations, okay?
+
+610
+02:06:37,319 --> 02:06:43,319
+Nail, chart, pulse effect, change.
+
+611
+02:06:47,796 --> 02:06:51,796
+ve metafor visualizations, strateginiz visualizations,
+
+612
+02:06:51,796 --> 02:06:55,796
+eğer örneğin strateginiz visualizations,
+
+613
+02:06:55,796 --> 02:06:59,796
+ve farklı farklı birçok.
+
+614
+02:06:59,796 --> 02:07:04,796
+Proces visualizations, strateginiz visualizations,
+
+615
+02:07:04,796 --> 02:07:08,796
+overreğe ve detaylar visualizations,
+
+616
+02:07:08,796 --> 02:07:12,796
+divergent thinking, convergent thinking,
+
+617
+02:07:38,387 --> 02:07:45,387
+ve
+
+618
+02:07:48,692 --> 02:07:57,592
+Bu bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey.
+
+619
+02:07:57,592 --> 02:08:01,592
+Bir şey, bir şey, bir şey.
+
+620
+02:08:16,051 --> 02:08:16,411
+Ok?
+
+621
+02:08:26,387 --> 02:08:34,788
+Ve bu web site'e ve bu türler gibi bu tariflerimiz var.
+
+622
+02:08:42,836 --> 02:08:48,836
+Ok, ikonunutin, verçak.
+
+623
+02:09:04,051 --> 02:09:07,051
+Bu da aynı şey.
+
+624
+02:09:07,051 --> 02:09:10,051
+İntiracılığıyla,
+
+625
+02:09:10,051 --> 02:09:12,492
+bu da iyi bir şey
+
+626
+02:09:12,492 --> 02:09:14,492
+bu da aynı şey.
+
+627
+02:09:14,492 --> 02:09:18,492
+Bu da aynı şey.
+
+628
+02:09:18,492 --> 02:09:20,492
+Bu da linki.
+
+629
+02:09:22,811 --> 02:09:24,011
+Bu da,
+
+630
+02:09:24,011 --> 02:09:28,371
+bu da,
+
+631
+02:09:28,787 --> 02:09:56,651
+Bu da bu
+
+632
+02:09:56,787 --> 02:10:04,787
+Bu tür visualisiyorsan çok kullanılıyor.
+
+633
+02:10:04,787 --> 02:10:08,787
+Programmanlar için kullanılıyor.
+
+634
+02:10:08,787 --> 02:10:13,787
+Programmanın en çok noktası,
+
+635
+02:10:20,787 --> 02:10:25,787
+Results of your program may be one of these visualizations.
+
+636
+02:10:25,787 --> 02:10:32,787
+Therefore, we should be aware of the visualization techniques.
+
+637
+02:10:32,787 --> 02:10:35,787
+Pycharts, for example.
+
+638
+02:10:35,787 --> 02:10:40,787
+When to use Pycharts, what sort of data?
+
+639
+02:10:43,123 --> 02:10:51,123
+Bu, in data analysis part, we mentioned about the type of data, data types.
+
+640
+02:10:51,123 --> 02:10:57,123
+You might have different data types, categorical data, or numerical data.
+
+641
+02:10:57,123 --> 02:11:06,123
+Could be, if it is categorical data, it could be just an ordinary categorical data, or the data of...
+
+642
+02:11:10,387 --> 02:11:12,387
+nominal data.
+
+643
+02:11:12,387 --> 02:11:15,387
+If your data is nominal,
+
+644
+02:11:15,387 --> 02:11:17,387
+for example,
+
+645
+02:11:17,387 --> 02:11:22,387
+so you want to,
+
+646
+02:11:22,387 --> 02:11:26,387
+you are interested in to visualize
+
+647
+02:11:26,387 --> 02:11:32,387
+the percentages of some
+
+648
+02:11:32,787 --> 02:11:46,047
+Kategorikal data within a total number of data, for example, if you have n number of different categories, you want to see the amount of these categories.
+
+649
+02:11:47,188 --> 02:11:49,967
+So then you can use file chart, for example.
+
+650
+02:11:50,887 --> 02:11:59,188
+So the normal steps, processing would involve to determine the frequencies of these categories.
+
+651
+02:12:01,171 --> 02:12:10,171
+Then you determine the percentages or ratio of normalized frequencies.
+
+652
+02:12:10,171 --> 02:12:17,171
+Then you convert into percentages and you plot as a pie chart, for example.
+
+653
+02:12:18,171 --> 02:12:24,171
+Or you can also represent as a bar chart the amount of the all categories.
+
+654
+02:12:24,171 --> 02:12:28,171
+Depends on what you want to convey.
+
+655
+02:12:28,851 --> 02:12:37,851
+Bu, end user, bu, type of the visualization you will use, basically,
+
+656
+02:12:37,851 --> 02:12:47,851
+the type of visualization will be determined by the type of the data you want to visualize in many cases.
+
+657
+02:12:47,851 --> 02:12:52,851
+So, you can use ARIA charts or line graphs.
+
+658
+02:12:58,963 --> 02:13:01,963
+Kategorik ve data line graphs
+
+659
+02:13:03,963 --> 02:13:10,963
+will not be an appropriate visualization techniques.
+
+660
+02:13:10,963 --> 02:13:15,963
+However, we use line graphs for numerical data, et cetera.
+
+661
+02:13:15,963 --> 02:13:22,963
+We have to make choice according to data types.
+
+662
+02:13:22,963 --> 02:13:23,963
+Okay.
+
+663
+02:13:26,420 --> 02:13:31,420
+Bu tarzı visualizasyonlar.
+
+664
+02:13:35,155 --> 02:13:37,935
+As I said, we'll depend on the data tab.
+
+665
+02:13:44,083 --> 02:13:47,083
+At that time you will be able to...
+
+666
+02:13:51,507 --> 02:13:57,068
+Konveri information, concisely to the end user.
+
+667
+02:13:58,627 --> 02:14:11,507
+So, if you want to use information visualization, then you can use semantic words or tree maps.
+
+668
+02:14:19,123 --> 02:14:23,903
+Bir de
+
+669
+02:14:23,903 --> 02:14:26,123
+ve
+
+670
+02:14:26,123 --> 02:14:40,123
+bir
+
+671
+02:14:46,931 --> 02:15:01,451
+Bu, bu
+
+672
+02:15:08,467 --> 02:15:12,907
+As you already seen, the concept visualization,
+
+673
+02:15:15,907 --> 02:15:19,467
+we've seen some examples in this web page,
+
+674
+02:15:19,467 --> 02:15:26,467
+this concept map or, for example, Gantt Chart is a concept visualization,
+
+675
+02:15:26,467 --> 02:15:29,467
+famous Gantt Chart or Path Chart.
+
+676
+02:15:30,667 --> 02:15:34,467
+In Gantt Chart, you are visualizing
+
+677
+02:15:34,720 --> 02:15:39,720
+All-Wheel System Development Life Cycle Concepts, basically.
+
+678
+02:15:40,720 --> 02:15:53,548
+These are methods to elaborate qualitative concepts, ideas, plans and analysis through the part of real-time tracking procedures.
+
+679
+02:15:56,435 --> 02:16:23,147
+İngilizce, ve bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bil
+
+680
+02:16:23,891 --> 02:16:27,891
+Bu, bir konusundan bir şekilde.
+
+681
+02:16:27,891 --> 02:16:35,891
+Bir diğer metafor visualisiyonu var.
+
+682
+02:16:39,891 --> 02:16:42,891
+Metromerge ve story template.
+
+683
+02:16:44,979 --> 02:16:53,219
+Bu metafor visualizations can be used as effective and simple templates to convey complex insights.
+
+684
+02:16:54,219 --> 02:17:02,219
+So you cannot draw complex in macro maps on one page view.
+
+685
+02:17:02,219 --> 02:17:11,739
+You can use simple drawings basically to represent.
+
+686
+02:17:11,920 --> 02:17:38,219
+...
+
+687
+02:17:38,260 --> 02:17:42,720
+The key characteristics of the metaphor that is employed.
+
+688
+02:17:48,691 --> 02:18:00,691
+The other type of visualization was compound visualization, which consists of several of the aforementioned formats.
+
+689
+02:18:00,691 --> 02:18:06,635
+This is the combination of the other visualizations.
+
+690
+02:18:08,084 --> 02:18:22,084
+They can be complex knowledge maps that contain the dramatic and metaphoric elements, conceptual cartoons with quantitative charts or wall-sized infomurals.
+
+691
+02:18:22,084 --> 02:18:29,084
+Infomural is a visual engaging representation of or geomotor.
+
+692
+02:18:33,172 --> 02:18:44,172
+DAZ, tippitli, designates, the complementary use of different graphic representation formats in one single small frame.
+
+693
+02:18:47,172 --> 02:18:55,172
+The result from two or more spatially distinct different data representations,
+
+694
+02:18:55,172 --> 02:18:58,172
+each of which can operate independently.
+
+695
+02:19:12,500 --> 02:19:17,899
+Tamam, there are many, many different techniques.
+
+696
+02:19:17,899 --> 02:19:23,739
+If you go and just play with a graphic package,
+
+697
+02:19:23,739 --> 02:19:29,579
+you will see many of these concepts there,
+
+698
+02:19:29,579 --> 02:19:33,260
+maybe hundreds of different techniques
+
+699
+02:19:33,260 --> 02:19:37,100
+of the visualization tool.
+
+700
+02:19:37,100 --> 02:19:39,299
+It's up to you to play with them.
+
+701
+02:19:43,528 --> 02:19:44,139
+Tamam, tamam.
+
+702
+02:19:42,963 --> 02:19:43,963
+So,
+
+703
+02:20:03,636 --> 02:20:07,675
+So, there are some principles, vizal principles.
+
+704
+02:20:20,308 --> 02:20:23,308
+Bir sonraki bir grafiklerimizin?
+
+705
+02:20:34,388 --> 02:20:37,548
+Of course, there are different types of graphs.
+
+706
+02:20:40,427 --> 02:20:48,988
+And these graphs may have different properties, such as alternative properties.
+
+707
+02:20:52,979 --> 02:21:19,340
+ve ve
+
+708
+02:21:20,180 --> 02:21:29,180
+Visualization can also cause some sort of lying basically.
+
+709
+02:21:31,180 --> 02:21:34,180
+Manipulating the truth.
+
+710
+02:21:38,388 --> 02:21:46,388
+We mentioned that a graph is a visual display that illustrates one or more relationships among antithis.
+
+711
+02:21:46,388 --> 02:21:50,388
+It is a shorthand way to represent information.
+
+712
+02:21:50,388 --> 02:21:58,252
+It allows a trend, pattern or comparison to be easily apprehended.
+
+713
+02:22:04,659 --> 02:22:07,440
+A graph, a framework.
+
+714
+02:22:09,579 --> 02:22:12,659
+This basically sets the stage.
+
+715
+02:22:13,659 --> 02:22:18,659
+And what kind of measurement scale except that will be used.
+
+716
+02:22:19,159 --> 02:22:21,659
+It has a content.
+
+717
+02:22:23,443 --> 02:22:32,743
+It could be marks, points, symbols, lines, areas, bars, and it will have some sort of labels.
+
+718
+02:22:34,523 --> 02:22:37,463
+Title, axis, tick marks, etc.
+
+719
+02:22:42,355 --> 02:22:52,907
+Bu, bu
+
+720
+02:23:01,139 --> 02:23:07,139
+There are graphs, as you know, usually...
+
+721
+02:23:14,656 --> 02:23:17,156
+Bir de bu.
+
+722
+02:23:17,156 --> 02:23:36,716
+Bu.
+
+723
+02:23:49,716 --> 02:24:16,396
+Bu, bu
+
+724
+02:24:19,860 --> 02:24:21,860
+ÇAR'ı,
+
+725
+02:24:21,860 --> 02:24:23,860
+BASICALLY,
+
+726
+02:24:23,860 --> 02:24:27,860
+IF YOU HAVE DISCRETE ENTITIES,
+
+727
+02:24:27,860 --> 02:24:29,860
+IT GIVES DISCRETE LATIOS
+
+728
+02:24:29,860 --> 02:24:31,860
+AMONG THESE DISCRETE ENTITIES.
+
+729
+02:24:31,860 --> 02:24:33,860
+STRUCTURE
+
+730
+02:24:33,860 --> 02:24:35,860
+RELATES ENTITIES
+
+731
+02:24:35,860 --> 02:24:37,860
+TO ONE ANOTHER
+
+732
+02:24:37,860 --> 02:24:39,860
+AND LINES AND
+
+733
+02:24:39,860 --> 02:24:41,860
+RELATIVE POSITION SERVE
+
+734
+02:24:41,860 --> 02:24:43,275
+AS LINKS.
+
+735
+02:24:58,739 --> 02:25:09,939
+Maps, are basically internal relations determined in part by the spatial relations of what is pictured.
+
+736
+02:25:11,520 --> 02:25:15,479
+Labels basically paired with locations.
+
+737
+02:25:16,759 --> 02:25:24,039
+Examples are map of census data or topographic maps.
+
+738
+02:25:25,363 --> 02:25:43,371
+Bu bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir ör
+
+739
+02:25:47,956 --> 02:25:55,476
+Bu, mesela, figürler gibi, ilustrasında,
+
+740
+02:26:23,316 --> 02:26:26,896
+We have already discussed basic data types.
+
+741
+02:26:26,896 --> 02:26:34,316
+So we need to remind because basically visualizations are found on this data.
+
+742
+02:26:34,316 --> 02:26:38,316
+So we need to be aware data types.
+
+743
+02:26:40,316 --> 02:26:46,316
+If you know the type of the data, then you can choose the correct visualization.
+
+744
+02:26:46,316 --> 02:26:50,316
+So there are nominal.
+
+745
+02:26:51,059 --> 02:27:17,867
+Diyanlar, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağda, bu dağ
+
+746
+02:27:41,268 --> 02:27:44,268
+Interval, bu bir plan tetecik data.
+
+747
+02:27:45,768 --> 02:27:51,768
+Bu bir plan tetecik.
+
+748
+02:27:51,768 --> 02:27:52,768
+Ok.
+
+749
+02:27:55,956 --> 02:27:59,835
+Her yeri sorm, uh, common rough pipes.
+
+750
+02:28:08,404 --> 02:28:26,744
+Number of accesses in terms of the line graph, number of accesses in terms of the dot plot, length of page, length of access, length of page, for example, short, medium, long, long.
+
+751
+02:28:28,184 --> 02:28:30,504
+Now, you can guess the data types here.
+
+752
+02:28:31,404 --> 02:28:33,524
+Number of accesses over the days.
+
+753
+02:28:35,860 --> 02:28:40,860
+Numer of accesses, accessed webpages, etc.
+
+754
+02:28:42,860 --> 02:28:46,860
+Which webpages accessed how many times?
+
+755
+02:28:51,924 --> 02:28:53,924
+There are stethylplots.
+
+756
+02:29:02,772 --> 02:29:29,804
+Bu, bu
+
+757
+02:30:17,971 --> 02:30:18,371
+Ok.
+
+758
+02:30:29,396 --> 02:30:55,564
+Bu, bu
+
+759
+02:30:58,675 --> 02:31:04,175
+Scutterplots are the oldest point-based techniques and projects.
+
+760
+02:31:04,775 --> 02:31:12,675
+Data from an n-dimensional space into an arbitrary k-dimensional display space.
+
+761
+02:31:14,164 --> 02:31:34,636
+İzlediğiniz için, birçok
+
+762
+02:31:41,236 --> 02:31:46,736
+Bu bir diğer birçok de kullanımda.
+
+763
+02:31:47,476 --> 02:31:51,736
+Parallel Coördin, or TCP'de de
+
+764
+02:31:51,736 --> 02:31:53,236
+daha iyi birçok de kullanımda
+
+765
+02:31:53,236 --> 02:31:57,236
+birçok de kullanımda
+
+766
+02:31:57,236 --> 02:32:01,236
+ve bu birçok de kullanımda
+
+767
+02:32:03,736 --> 02:32:05,100
+Bu birçok de kullanımda
+
+768
+02:32:05,747 --> 02:32:11,307
+Radial Coordinate Visualization, Radbiz, çöplettik.
+
+769
+02:32:11,307 --> 02:32:14,108
+Bu, four-striven point layout technique,
+
+770
+02:32:32,755 --> 02:32:42,755
+Radar chart, visualizasyon, FASTABiyoenformatiğ, poligraf, poligraf, poligraf, poligraf, poligraf, poligraf, poligraf, all refer to the same concept.
+
+771
+02:32:42,755 --> 02:32:45,755
+This is a radio axis technique.
+
+772
+02:32:49,396 --> 02:32:56,996
+This is basically known as heat map and it is extensively used in many fields.
+
+773
+02:32:56,996 --> 02:33:03,796
+This is a terminal display technique using color instead of figures for gen titis.
+
+774
+02:33:10,164 --> 02:33:18,324
+Bu, GLEF'in bir
+
+775
+02:33:37,363 --> 02:33:41,863
+ve many different, many more different techniques.
+
+776
+02:33:44,863 --> 02:33:49,664
+Of course, when to use, which type is important?
+
+777
+02:33:51,363 --> 02:33:52,664
+Line graph.
+
+778
+02:33:56,915 --> 02:33:59,915
+X-axis
+
+779
+02:33:59,915 --> 02:34:03,876
+requires a quantitative variable
+
+780
+02:34:03,876 --> 02:34:05,695
+to form line graphs
+
+781
+02:34:05,695 --> 02:34:06,775
+if we have
+
+782
+02:34:06,775 --> 02:34:08,915
+numerical data.
+
+783
+02:34:11,155 --> 02:34:11,876
+Variables
+
+784
+02:34:11,876 --> 02:34:13,755
+have
+
+785
+02:34:13,755 --> 02:34:15,115
+contiguous values.
+
+786
+02:34:19,956 --> 02:34:26,956
+İzlediğiniz için, ifade, konuları ve genel olarak kullanıyoruz.
+
+787
+02:34:26,956 --> 02:34:31,956
+İzlediğiniz için, barıgraflarla,
+
+788
+02:34:40,084 --> 02:34:52,283
+Relative point of variance, you can use bar graph, scatter plots, basically conveying our relation of relationship between two variables.
+
+789
+02:34:56,915 --> 02:34:59,915
+Piy-chart,
+
+790
+02:34:59,915 --> 02:35:04,915
+emphaziziz differences in proportion among the fifth numbers.
+
+791
+02:35:04,915 --> 02:35:10,915
+As I already gave you the example, we have the categorical data,
+
+792
+02:35:10,915 --> 02:35:18,915
+we want to determine the proportions of the members of these categories in this Piy-chart.
+
+793
+02:35:28,755 --> 02:35:29,755
+So,
+
+794
+02:35:33,012 --> 02:35:37,012
+Samağlı classikasyonun can also be given as follows.
+
+795
+02:35:37,012 --> 02:35:46,012
+Graphs, tables, numerical tables, graphical tables, charts, time-dependent charts, network charts,
+
+796
+02:35:46,012 --> 02:35:57,012
+structure diagrams, network diagrams, maps, cartograms, icons, pictures.
+
+797
+02:35:58,932 --> 02:36:34,664
+ve gen ifadesi konuları
+
+798
+02:36:16,404 --> 02:36:20,844
+There are some interesting findings about the visualizations.
+
+799
+02:36:20,844 --> 02:36:26,043
+The first, auto-realistic images were least informative.
+
+800
+02:36:28,763 --> 02:36:35,763
+ECHOS results in ICON studies, better to use less complex, more schematic images.
+
+801
+02:36:35,763 --> 02:36:43,164
+Graphs and tables are the most self-similar categories. Results in literature.
+
+802
+02:36:43,183 --> 02:36:46,183
+Comparing these are inconclusive.
+
+803
+02:36:47,183 --> 02:36:51,183
+Cartograms were hard to understand.
+
+804
+02:36:52,183 --> 02:36:55,183
+These are basically results of some studies.
+
+805
+02:36:56,183 --> 02:36:58,183
+ECHOS are the results.
+
+806
+02:36:58,183 --> 02:37:05,183
+Better to put points into a framed rectangle to each special separation.
+
+807
+02:37:05,183 --> 02:37:10,183
+Temporal data more difficult to show than slide data.
+
+808
+02:37:10,772 --> 02:37:23,596
+Bu, bu
+
+809
+02:37:30,324 --> 02:37:35,324
+Evet, bugün bu konuda başlayalım.
+
+810
+02:37:35,324 --> 02:37:48,324
+Ve sonraki videoda görüşmek üzere.
+
+811
+02:37:52,244 --> 02:37:53,264
+İyi günler hocam.
+
+812
+02:37:53,783 --> 02:37:54,804
+Do you have any questions?
+
+813
+02:37:55,524 --> 02:37:56,304
+It's all around, no?
+
+814
+02:37:59,891 --> 02:38:00,891
+Var mı bir soru?
+
+815
+02:38:02,752 --> 02:38:03,391
+Yok hocam.
+
+816
+02:38:04,211 --> 02:38:09,731
+Yani biz, özet olarak, visionization aslında çok çok önemli her şeyde kullanılıyor.
+
+817
+02:38:09,731 --> 02:38:14,992
+Yani genelde bizim misralatlara eksik olan bir konu bu.
+
+818
+02:38:15,272 --> 02:38:17,932
+Binin kontrolü, intrasyon ve görselleştirme.
+
+819
+02:38:18,912 --> 02:38:25,191
+Orada burada destekli bir bahsediyorum da, bunun tek başına bir breş olması lazım.
+
+820
+02:38:26,164 --> 02:38:41,164
+Algoritmik teknikleri var, yenerce birine ilgisi var, görselleştirme şeyleri var bir sürü diğer alanlardan daha ne? Matematik falan var içinde.
+
+821
+02:38:41,164 --> 02:38:48,164
+Ancak tabii bizim amacımız bu şeylere girmek değil de onun önemini anlatmak.
+
+822
+02:38:48,164 --> 02:38:53,164
+Bazı temel konseptleri de anlatmış olduk. Haftaya görüşmek üzere.
+
+823
+02:39:08,724 --> 02:39:09,504
+Çıkalım mı hocam?

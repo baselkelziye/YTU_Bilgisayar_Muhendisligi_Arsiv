@@ -1,0 +1,4467 @@
+1
+00:05:31,444 --> 00:05:34,824
+Sesim geliyor mu?
+
+2
+00:05:43,668 --> 00:05:45,088
+Geliyor hocam ama az geliyor.
+
+3
+00:05:46,088 --> 00:05:46,747
+Az mı geliyor?
+
+4
+00:05:50,420 --> 00:05:53,580
+Şimdi nasıl? Şimdi iyi hocam.
+
+5
+00:05:54,460 --> 00:05:57,639
+Tamam, mikrofonu iyice çenimize yanaştıralım o zaman.
+
+6
+00:05:58,400 --> 00:05:59,439
+Şimdi iyi herhalde.
+
+7
+00:06:03,475 --> 00:06:04,615
+Evet, iyi hocam, iyi.
+
+8
+00:06:04,836 --> 00:06:10,896
+Tamam, tamam. Birkaç dakika daha bekleyeyim de başları sonra.
+
+9
+00:07:30,675 --> 00:07:32,216
+Okay, good afternoon again.
+
+10
+00:07:33,315 --> 00:07:39,175
+We continue from where we left last week.
+
+11
+00:07:43,036 --> 00:07:50,355
+Operators in Perl is almost the same as C or any other language, basically.
+
+12
+00:07:51,735 --> 00:07:53,635
+There is nothing fancy here.
+
+13
+00:07:54,495 --> 00:07:57,435
+We have, as usual, arithmetic operators.
+
+14
+00:07:58,867 --> 00:08:02,108
+To perform some sort of mathematical functions.
+
+15
+00:08:02,807 --> 00:08:08,788
+And these are the common operators and corresponding functions.
+
+16
+00:08:09,707 --> 00:08:18,687
+Plus, minus, multiplication, division, modulus, exponent, etc.
+
+17
+00:08:18,867 --> 00:08:23,247
+These are very similar to the operators in other languages.
+
+18
+00:08:27,636 --> 00:08:32,536
+You will use as you have been using with other languages as well.
+
+19
+00:08:35,456 --> 00:08:45,256
+As an example, it is a typical Perl statements, including some operators.
+
+20
+00:08:45,256 --> 00:08:53,096
+This is assignment, addition and assignment of two scalar variables.
+
+21
+00:08:56,211 --> 00:09:04,611
+We have assignment operators, obviously, to assign some values to some variables.
+
+22
+00:09:06,211 --> 00:09:08,371
+This is normal assignment.
+
+23
+00:09:10,072 --> 00:09:13,991
+Again, very similar to the other languages.
+
+24
+00:09:14,192 --> 00:09:15,971
+This is add and assign.
+
+25
+00:09:17,052 --> 00:09:23,572
+This is subtract and assign, multiply and assign, divide and assign.
+
+26
+00:09:24,371 --> 00:09:27,051
+Take modulus and assign.
+
+27
+00:09:28,131 --> 00:09:30,491
+Take exponent and assign.
+
+28
+00:09:30,491 --> 00:09:34,211
+There is also increment decrement
+
+29
+00:09:36,331 --> 00:09:38,411
+functions, operators.
+
+30
+00:09:38,971 --> 00:09:46,971
+This is increment, that means add one or decrement subtract one.
+
+31
+00:09:48,971 --> 00:09:50,971
+There are string operators.
+
+32
+00:09:53,043 --> 00:10:00,364
+Dot is concatenation. Dot and equals concatenate and assign.
+
+33
+00:10:02,364 --> 00:10:12,364
+This is a simple example to show how to use this concatenation and assignment functions.
+
+34
+00:10:16,467 --> 00:10:25,847
+There are some numeric comparisiyors, operators to compare numeric values.
+
+35
+00:10:27,467 --> 00:10:31,907
+Here are some of them. This is double equation.
+
+36
+00:10:32,687 --> 00:10:38,768
+The double equal signs is equal to, it is different than the other one.
+
+37
+00:10:41,172 --> 00:11:05,100
+Bu, bu
+
+38
+00:11:54,451 --> 00:11:58,451
+Okay, string comparison operators.
+
+39
+00:11:59,451 --> 00:12:02,111
+This is obviously equal to again.
+
+40
+00:12:02,292 --> 00:12:03,831
+It's different than the other one.
+
+41
+00:12:04,351 --> 00:12:05,611
+Not equal to.
+
+42
+00:12:06,032 --> 00:12:07,971
+Greater than, less than,
+
+43
+00:12:09,111 --> 00:12:12,672
+greater than or equal to, less than or equal to, etc.
+
+44
+00:12:16,672 --> 00:12:20,412
+I just skip these explanations because
+
+45
+00:12:21,139 --> 00:12:28,039
+Probably you have encountered similar operators in other languages as well.
+
+46
+00:12:28,039 --> 00:12:32,799
+So there are logical operators.
+
+47
+00:12:34,019 --> 00:12:41,139
+This is logical and, logical or, logical not.
+
+48
+00:12:42,599 --> 00:12:48,159
+This is an example per statement.
+
+49
+00:12:52,532 --> 00:12:54,731
+There are functions in Perl.
+
+50
+00:12:55,292 --> 00:12:59,711
+Sometimes these functions are called subroutines in other languages.
+
+51
+00:13:01,092 --> 00:13:04,971
+And some languages also call function.
+
+52
+00:13:06,352 --> 00:13:11,112
+Functions are basically a collection of code or statements,
+
+53
+00:13:11,612 --> 00:13:15,072
+which can be easily configured by passing list of arguments.
+
+54
+00:13:15,711 --> 00:13:18,731
+Once you create a function, then you simply call
+
+55
+00:13:19,155 --> 00:13:28,435
+name of this function and pass some new parameters and get new results.
+
+56
+00:13:33,175 --> 00:13:35,775
+Functions in Perl are called subroutines.
+
+57
+00:13:36,695 --> 00:13:39,175
+This is the general syntax of a subroutine.
+
+58
+00:13:40,175 --> 00:13:41,815
+It starts with sub.
+
+59
+00:13:41,975 --> 00:13:44,655
+We have list of arguments to pass to the function.
+
+60
+00:13:45,395 --> 00:13:48,755
+Then we have the statements and some return values.
+
+61
+00:13:50,755 --> 00:13:57,975
+Here is an example to find area of triangle.
+
+62
+00:14:02,855 --> 00:14:04,535
+This is a function.
+
+63
+00:14:04,775 --> 00:14:11,535
+Then next you can call simply these functions or subroutines.
+
+64
+00:14:14,436 --> 00:14:16,436
+Bu,
+
+65
+00:14:16,436 --> 00:14:19,436
+ve
+
+66
+00:14:19,436 --> 00:14:20,436
+bu
+
+67
+00:14:20,436 --> 00:14:22,436
+aland1
+
+68
+00:14:22,436 --> 00:14:24,436
+var.
+
+69
+00:14:24,436 --> 00:14:28,436
+Şimdi
+
+70
+00:14:28,436 --> 00:14:30,436
+bu
+
+71
+00:14:30,436 --> 00:14:32,436
+ve
+
+72
+00:14:32,436 --> 00:14:33,436
+bu
+
+73
+00:14:33,436 --> 00:14:34,436
+pearl
+
+74
+00:14:34,436 --> 00:14:35,436
+ve
+
+75
+00:14:35,436 --> 00:14:37,436
+bu
+
+76
+00:14:38,067 --> 00:14:40,187
+Matching and substitution.
+
+77
+00:14:43,587 --> 00:14:43,968
+Okay.
+
+78
+00:14:44,867 --> 00:14:50,387
+I just skip these explanations and come to the subject.
+
+79
+00:14:52,008 --> 00:14:53,788
+For the matching.
+
+80
+00:14:54,707 --> 00:15:00,387
+This is basically under the general framework of regular expression.
+
+81
+00:15:02,676 --> 00:15:07,615
+Ok, regular expression is a field in computer science.
+
+82
+00:15:08,656 --> 00:15:15,016
+Perl has very strong functions and capabilities to implement regular expressions.
+
+83
+00:15:15,016 --> 00:15:19,776
+The first one we've seen last week is binding operator.
+
+84
+00:15:20,776 --> 00:15:22,076
+We'll discuss.
+
+85
+00:15:24,307 --> 00:15:29,288
+When you do a pattern match, we need three things.
+
+86
+00:15:29,447 --> 00:15:40,087
+First, the text we are searching through, the pattern we are looking for, and the way of linking the pattern with the search text.
+
+87
+00:15:40,548 --> 00:15:42,867
+This is the basis of pattern match.
+
+88
+00:15:42,867 --> 00:15:51,008
+As a simple example, we've seen a similar structure last week.
+
+89
+00:15:51,827 --> 00:15:59,327
+Şimdi, bu şekilde bir String variyable ile ilgili bir valiyette var.
+
+90
+00:15:59,327 --> 00:16:02,827
+Bu şekilde, bu şekilde, bu şekilde,
+
+91
+00:16:02,827 --> 00:16:06,827
+ve bu şekilde, bu şekilde,
+
+92
+00:16:06,827 --> 00:16:12,827
+Bu şekilde, String variyable var.
+
+93
+00:16:14,611 --> 00:16:39,371
+Then we have an if statement for the comparison. An important thing here, if the word matches is success, this is demilited here. This was the matching cooperator and this was the binding cooperator.
+
+94
+00:16:41,716 --> 00:16:45,716
+It will print found success somehow.
+
+95
+00:16:45,716 --> 00:16:46,155
+Okay.
+
+96
+00:16:48,216 --> 00:16:51,936
+If not, then did not find success.
+
+97
+00:16:52,196 --> 00:16:53,655
+It's a simple comparison.
+
+98
+00:16:54,276 --> 00:16:57,355
+Now this is the matching operation here.
+
+99
+00:16:59,576 --> 00:17:02,596
+This is the binding operator, EQUILS.
+
+100
+00:17:02,816 --> 00:17:07,276
+And this tilde is known as binding operator.
+
+101
+00:17:08,531 --> 00:17:16,371
+It binds the string being searched with the pattern that specifies this search.
+
+102
+00:17:17,692 --> 00:17:22,531
+The pattern is within these backslashes.
+
+103
+00:17:25,491 --> 00:17:25,931
+Okay.
+
+104
+00:17:27,491 --> 00:17:34,411
+This M, backslash, success and backlash.
+
+105
+00:17:35,188 --> 00:17:38,268
+X-lash construct is the matching cooperator.
+
+106
+00:17:40,948 --> 00:17:44,307
+Binding cooperator and matching cooperator.
+
+107
+00:17:46,748 --> 00:17:49,888
+Basically, M stands for matching.
+
+108
+00:17:52,888 --> 00:17:55,368
+Abbreviation of the word matching.
+
+109
+00:17:56,448 --> 00:18:01,608
+The slash characters are the delimiters.
+
+110
+00:18:02,259 --> 00:18:08,000
+We talked about this binding and matching cooperator last week.
+
+111
+00:18:10,519 --> 00:18:21,420
+In the example given previously, M-success means the matching cooperator is looking for a match of the letter sequence success.
+
+112
+00:18:22,220 --> 00:18:25,880
+That's binding and matching cooperator.
+
+113
+00:18:25,880 --> 00:18:27,880
+This matching cooperator...
+
+114
+00:18:32,884 --> 00:18:38,463
+Binding operator combination will give us pattern matching basically.
+
+115
+00:18:43,403 --> 00:18:53,604
+Here, if the value of the matching statement returns 1, if there was a match, otherwise it will return 0.
+
+116
+00:18:55,724 --> 00:18:58,983
+It is also possible to have a negative matching.
+
+117
+00:19:02,355 --> 00:19:07,355
+ve gen ifadesi konuları, nefesli bir nefesli bir nefesli.
+
+118
+00:19:08,355 --> 00:19:13,355
+Ve gen ifadesi konuları, bu nefesli bir nefesli.
+
+119
+00:19:55,092 --> 00:19:58,092
+This is the negative matching.
+
+120
+00:20:01,092 --> 00:20:05,092
+You can use parentheses to group some pattern elements.
+
+121
+00:20:07,092 --> 00:20:18,092
+Then asterisk here means that the preceding character element or group of elements may occur zero times, one time or many times.
+
+122
+00:20:20,788 --> 00:20:25,268
+There are many options, but I will mention several of them.
+
+123
+00:20:26,307 --> 00:20:35,748
+For much more functions for matching cooperator, you should consult basically Perlmanual.
+
+124
+00:20:38,947 --> 00:20:43,947
+A plus means that the preceding element or group of elements must occur at least once.
+
+125
+00:20:43,947 --> 00:20:47,347
+A question mark matches 0 or 1 times.
+
+126
+00:20:47,824 --> 00:20:50,824
+So, here are some examples.
+
+127
+00:21:14,548 --> 00:21:19,548
+Front and back, but it will not match this FRND, et cetera.
+
+128
+00:21:19,548 --> 00:21:22,548
+There are many, many possibilities basically.
+
+129
+00:21:22,548 --> 00:21:30,548
+Using these combinations, you can do anything you want basically to search or to match or whatever.
+
+130
+00:21:31,548 --> 00:21:37,548
+There are some other things. Square brackets, for example, match a class of single characters.
+
+131
+00:21:38,548 --> 00:21:42,476
+This one, for example, match any single digit.
+
+132
+00:21:42,867 --> 00:21:45,627
+This is the same as this one.
+
+133
+00:21:48,048 --> 00:21:51,627
+This one matches any sequence of one or more digits.
+
+134
+00:21:52,627 --> 00:21:54,887
+This will match any lowercase word.
+
+135
+00:21:54,987 --> 00:21:57,427
+This will match any uppercase word, etc.
+
+136
+00:21:57,607 --> 00:22:00,007
+There are many other possibilities.
+
+137
+00:22:00,327 --> 00:22:07,587
+This one, for example, matches characters that are not like this.
+
+138
+00:22:09,844 --> 00:22:22,604
+Bu, bu
+
+139
+00:22:26,036 --> 00:22:32,635
+There are curly braces, which allow more precise specification of repeated fields.
+
+140
+00:22:32,635 --> 00:22:35,036
+These are some examples.
+
+141
+00:22:37,036 --> 00:22:42,036
+Matches any sequence of 6 digits, for example, this one.
+
+142
+00:22:42,036 --> 00:22:47,036
+This one matches any sequence of 6 to 10 digits.
+
+143
+00:22:47,036 --> 00:22:51,036
+Possibilities are endless, basically.
+
+144
+00:22:51,955 --> 00:23:17,963
+Bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydiklerle bu çeydikler
+
+145
+00:23:18,516 --> 00:23:20,216
+Here are some examples.
+
+146
+00:23:23,796 --> 00:23:39,396
+Backslash, means other characters simply match themselves, but some characters, such as this one and usually this backslash, must be escaped with a backslash to be taken literally.
+
+147
+00:23:39,396 --> 00:23:45,796
+Because these are used as special characters.
+
+148
+00:23:45,872 --> 00:23:57,872
+If we want to display or search for these special characters, then they must be escaped with a backslash.
+
+149
+00:24:03,443 --> 00:24:05,443
+These are some examples.
+
+150
+00:24:11,443 --> 00:24:12,443
+Okay.
+
+151
+00:24:13,844 --> 00:24:18,443
+A simple, for example, backslash s specifies whitespace.
+
+152
+00:24:19,443 --> 00:24:24,443
+And these are familiar constructs from other languages.
+
+153
+00:24:24,443 --> 00:24:30,155
+This is T for blank, T for tab, this is for...
+
+154
+00:24:30,324 --> 00:24:35,324
+tab, nil line, carriage return, form feed, et cetera.
+
+155
+00:24:37,324 --> 00:24:49,324
+A character may be specified in hexadecimal by using this construct, x-x, followed by two hexadecimal digits.
+
+156
+00:24:50,324 --> 00:24:53,324
+Okay, this is specific with the escape character.
+
+157
+00:24:54,324 --> 00:24:57,324
+A vertical bar specifies for
+
+158
+00:24:59,347 --> 00:25:01,168
+As it is in most languages.
+
+159
+00:25:08,692 --> 00:25:14,692
+So, all pattern matching in PEARL is based on the concept of regular expressions.
+
+160
+00:25:16,692 --> 00:25:26,380
+As I said, regular expressions are an important part of computer science and there are entire books devoted to the topic.
+
+161
+00:25:31,476 --> 00:25:39,476
+These regular expressions form a standard way of expressing almost any text button unambiguously.
+
+162
+00:25:41,476 --> 00:25:46,476
+This is a mechanism to select specific strings from a set of character strings.
+
+163
+00:25:47,476 --> 00:25:51,476
+A set of character, meta characters and operators
+
+164
+00:25:51,476 --> 00:25:56,476
+that define a string or group of strings in a search button is
+
+165
+00:26:00,663 --> 00:26:01,604
+Bu,
+
+166
+00:26:05,203 --> 00:26:07,203
+Bir sonraki adım,
+
+167
+00:26:07,203 --> 00:26:11,203
+Regexp
+
+168
+00:26:17,763 --> 00:26:19,203
+Bir sonraki adım,
+
+169
+00:26:19,203 --> 00:26:21,203
+ve bu adım,
+
+170
+00:27:34,612 --> 00:27:45,572
+As we said, Perl allows you to be used variables before they are declared.
+
+171
+00:27:45,572 --> 00:27:57,991
+So in many languages, before using a variable, we have to declare type of variable before program starts.
+
+172
+00:27:58,675 --> 00:28:24,268
+Bu, bu
+
+173
+00:28:27,059 --> 00:28:30,219
+before they are used.
+
+174
+00:28:32,740 --> 00:28:35,480
+This is the same for subloutines as well.
+
+175
+00:28:37,219 --> 00:28:39,659
+If you remember from C for example,
+
+176
+00:28:40,159 --> 00:28:42,319
+you have to declare all functions
+
+177
+00:28:42,319 --> 00:28:45,179
+and variables at the beginning.
+
+178
+00:28:45,920 --> 00:28:47,519
+But in Perl you don't have to.
+
+179
+00:28:48,579 --> 00:28:53,279
+But if you use the strictness construct,
+
+180
+00:28:53,279 --> 00:28:54,359
+then you have to declare.
+
+181
+00:29:01,428 --> 00:29:05,107
+In turn, all variables are global by default.
+
+182
+00:29:06,488 --> 00:29:14,548
+The use of my variables turns a global variable into a lexical one.
+
+183
+00:29:17,387 --> 00:29:24,448
+It lives from the place where it was declared using the my keyword till the end of the current block.
+
+184
+00:29:25,076 --> 00:29:29,235
+By default, the use of my variables is optional.
+
+185
+00:29:31,155 --> 00:29:37,556
+However, it is possible to help Perl insist on the use of my variables,
+
+186
+00:29:38,435 --> 00:29:41,556
+making their use mandatory.
+
+187
+00:29:43,395 --> 00:29:48,395
+This insistence is referred to as strictness.
+
+188
+00:29:50,420 --> 00:30:15,468
+Bu da bu da ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın adına ekranın ad
+
+189
+00:30:18,291 --> 00:30:26,152
+All subroutines should be declared or defined before they are invoked and functions as well.
+
+190
+00:30:28,152 --> 00:30:38,652
+As programs get bigger, they become harder to maintain and it is always safer to use street construct.
+
+191
+00:30:41,291 --> 00:30:44,551
+Okay, I can...
+
+192
+00:30:45,172 --> 00:30:47,172
+İlk bir örnek verici.
+
+193
+00:30:47,172 --> 00:30:49,172
+Bu örnek verici.
+
+194
+00:30:49,172 --> 00:30:53,172
+Öncelikle de bu programı.
+
+195
+00:30:53,172 --> 00:30:55,172
+İlk başta, uStrik,
+
+196
+00:30:55,172 --> 00:30:57,172
+ve bu örnek verici.
+
+197
+00:30:57,172 --> 00:31:01,172
+İlk başta,
+
+198
+00:31:01,172 --> 00:31:10,443
+bu mesele,
+
+199
+00:31:16,435 --> 00:31:19,316
+ve an attempt is made to execute
+
+200
+00:31:21,475 --> 00:31:23,475
+the program we have just seen,
+
+201
+00:31:24,195 --> 00:31:28,596
+Perl will complain that the strictness rules have been broken.
+
+202
+00:31:30,435 --> 00:31:34,035
+Okay, you will get a message, so it will not run.
+
+203
+00:31:34,836 --> 00:31:38,275
+These completion errors are fixed by declaring the message,
+
+204
+00:31:38,596 --> 00:31:41,395
+ScalarS and my variable at the beginning.
+
+205
+00:31:41,395 --> 00:31:42,035
+So...
+
+206
+00:31:43,155 --> 00:31:59,655
+When you rerun the corrected code, it will be run without any message or error.
+
+207
+00:32:01,655 --> 00:32:06,655
+There is also use subs directive.
+
+208
+00:32:08,980 --> 00:32:15,980
+Bu birçok.
+
+209
+00:32:15,980 --> 00:32:20,980
+Bu birçok birçok birçok birçok birçok.
+
+210
+00:32:24,980 --> 00:32:26,980
+Birçok birçok birçok.
+
+211
+00:32:26,980 --> 00:32:30,980
+Bu birçok birçok birçok birçok.
+
+212
+00:32:30,980 --> 00:32:32,980
+Birçok birçok birçok.
+
+213
+00:32:32,980 --> 00:32:34,923
+Birçok birçok.
+
+214
+00:32:35,923 --> 00:32:38,163
+Ok, this is the structure.
+
+215
+00:32:41,183 --> 00:32:44,743
+We have already said this. W is warning.
+
+216
+00:32:47,123 --> 00:32:47,923
+Ok.
+
+217
+00:32:49,743 --> 00:32:59,883
+Another switch which we have not mentioned is which checks whether a module installed correctly or not.
+
+218
+00:33:03,635 --> 00:33:06,635
+Öğrençlerle modelleri
+
+219
+00:33:06,635 --> 00:33:32,635
+Öğrençlerle
+
+220
+00:33:52,019 --> 00:34:08,460
+Okay, so there is one thing if you remember, we mentioned that Hurl is also a scripting language.
+
+221
+00:34:08,460 --> 00:34:13,460
+You can use it as a compiled language or you can use it as an...
+
+222
+00:34:19,284 --> 00:34:20,524
+Scripting Language.
+
+223
+00:34:23,104 --> 00:34:26,043
+You can write scripts and run.
+
+224
+00:34:35,347 --> 00:34:39,967
+There are some constructs which is known as Perl one-liners.
+
+225
+00:34:41,648 --> 00:34:53,648
+This is for example, you can simply type and you write this within single quotes, print hello from Perl one-liner.
+
+226
+00:34:54,148 --> 00:34:58,807
+When you invoke this line, command line,
+
+227
+00:34:59,731 --> 00:35:10,603
+ve bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde
+
+228
+00:35:19,027 --> 00:35:21,027
+Bu bir diğer örnek.
+
+229
+00:35:21,027 --> 00:35:25,027
+Bu bir örnek.
+
+230
+00:35:25,027 --> 00:35:27,027
+Ve bu örnek.
+
+231
+00:35:27,027 --> 00:35:29,027
+Bu bir örnek.
+
+232
+00:35:31,027 --> 00:35:41,027
+Bu örnek.
+
+233
+00:35:56,980 --> 00:36:12,779
+Bu şekilde kullanmak için e-switch kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için bir
+
+234
+00:36:16,115 --> 00:36:19,275
+We have some more examples here.
+
+235
+00:36:20,155 --> 00:36:20,336
+Okay.
+
+236
+00:36:21,336 --> 00:36:23,076
+Another useful switch is N.
+
+237
+00:36:24,855 --> 00:36:26,916
+Which when used with E,
+
+238
+00:36:27,255 --> 00:36:31,175
+creates the one-liner as if it is enclosed with a loop.
+
+239
+00:36:33,456 --> 00:36:36,456
+Let's consider this one.
+
+240
+00:36:38,536 --> 00:36:38,936
+Perl.
+
+241
+00:36:42,132 --> 00:37:06,412
+DASH NE, print if, is an if statement within this single quote. A character string here. Then we have EMBL data. This is basically equivalent of this while statement.
+
+242
+00:37:19,699 --> 00:37:26,420
+When the one-liner is executed, this is the output generated.
+
+243
+00:37:29,699 --> 00:37:37,699
+The same function, as we said before, Perl borrows heavily from Unix and C language.
+
+244
+00:37:37,699 --> 00:37:44,420
+This same function can also be implemented using grep function in Unix.
+
+245
+00:37:45,204 --> 00:37:51,204
+This is the almost equivalent of the this pearl one liner.
+
+246
+00:37:54,204 --> 00:37:55,115
+This one.
+
+247
+00:37:59,188 --> 00:37:59,568
+Okay.
+
+248
+00:38:02,148 --> 00:38:11,188
+When the N switch is combined with P, the loop has a print statement added to the N as well.
+
+249
+00:38:11,188 --> 00:38:12,467
+So now.
+
+250
+00:38:19,155 --> 00:38:31,416
+Here is an example. This is one liner that prints only those lines from the EMBL data disk file that do not end in four digits, for example.
+
+251
+00:38:33,555 --> 00:38:46,255
+So when you run this, it will print whatever necessary this condition provides.
+
+252
+00:38:49,076 --> 00:39:03,947
+Bu bir
+
+253
+00:39:07,251 --> 00:39:10,652
+Bu konceptı is known as Perl 1-miner.
+
+254
+00:39:11,251 --> 00:39:17,351
+You can also use this construct when you write classical programs as well.
+
+255
+00:39:17,851 --> 00:39:26,851
+Instead of using this wild structure, which is traditional programming approach, you can simply use these 1-liners.
+
+256
+00:39:27,851 --> 00:39:31,051
+They have much more shorter programs.
+
+257
+00:39:36,083 --> 00:39:47,523
+Okay, however, this one is slightly harder to implement in Unix using Krepp function.
+
+258
+00:39:47,523 --> 00:39:55,043
+You have to write all these things in Unix to get the same result.
+
+259
+00:40:00,628 --> 00:40:21,628
+There are obviously many more options about these one-liners. To learn more about these, you have to consult Perl Help files or manuals, basically.
+
+260
+00:40:21,628 --> 00:40:27,628
+When executed, the above program.
+
+261
+00:40:40,563 --> 00:40:45,804
+The above one-liner is equivalent to this program, basically, as I have already shown.
+
+262
+00:40:51,668 --> 00:40:55,268
+There are many other command line options.
+
+263
+00:40:55,268 --> 00:40:58,548
+Here are some of them.
+
+264
+00:40:58,548 --> 00:41:08,548
+These, for example, Octol, Autosplit, Enables to Listed Unicode Features, Check Syntax, Run Program
+
+265
+00:41:08,548 --> 00:41:10,628
+Under Debugger, etc.
+
+266
+00:41:14,739 --> 00:41:23,595
+Bu da bu
+
+267
+00:41:29,300 --> 00:41:33,720
+You can run other programs from Perl as well.
+
+268
+00:41:35,140 --> 00:41:39,020
+There are two main ways to do this.
+
+269
+00:41:39,760 --> 00:41:44,160
+First, by invoking the program in such a way that after execution,
+
+270
+00:41:45,020 --> 00:41:50,420
+the calling program can determine whether the call program successfully executed or not.
+
+271
+00:41:52,980 --> 00:41:55,880
+This is basically behavior of the...
+
+272
+00:41:56,275 --> 00:41:59,115
+Built-in system subroutines.
+
+273
+00:42:00,555 --> 00:42:09,536
+Another reason, by invoking the program in such a way that after execution, any results from the call program are returned to the calling program.
+
+274
+00:42:11,355 --> 00:42:18,255
+This is a BATX and QX operator, basically.
+
+275
+00:42:23,507 --> 00:42:35,547
+İzlediğiniz için, bu da
+
+276
+00:42:35,547 --> 00:42:40,507
+DOS-utiliti dizi, bu da
+
+277
+00:42:40,507 --> 00:42:43,507
+İzlediğiniz için, bu da
+
+278
+00:42:43,507 --> 00:42:48,507
+DOS-operating system,
+
+279
+00:42:48,507 --> 00:42:48,907
+DOS-
+
+280
+00:42:49,811 --> 00:42:56,112
+DOS has a function, which is known, which is DIR.
+
+281
+00:42:56,711 --> 00:43:02,931
+It is abbreviation of directory, basically.
+
+282
+00:43:03,152 --> 00:43:06,851
+It gives you the contents of current directory.
+
+283
+00:43:06,851 --> 00:43:13,411
+When you simply type, you can do this in Windows Common Prompt.
+
+284
+00:43:15,923 --> 00:43:23,483
+You simply type di varf and it will list the files already within this directory.
+
+285
+00:43:23,483 --> 00:43:27,224
+Okay, this is a dos comment.
+
+286
+00:43:28,443 --> 00:43:40,804
+Here is an example, basically a couple of examples how to invoke a program from within the Perl program.
+
+287
+00:43:41,203 --> 00:43:43,443
+This is the first one, system.
+
+288
+00:43:45,076 --> 00:43:50,176
+Diy, R, and these wildcards.
+
+289
+00:43:51,076 --> 00:43:51,275
+Okay.
+
+290
+00:43:52,056 --> 00:43:55,256
+It will list all the files under the directory.
+
+291
+00:43:59,380 --> 00:44:01,039
+This is another one.
+
+292
+00:44:07,795 --> 00:44:14,495
+Here, there is one important point. This will work, but this will not work.
+
+293
+00:44:16,255 --> 00:44:25,195
+And this is another option. As I already said, QX, DIRF, will also give you the same result.
+
+294
+00:44:26,055 --> 00:44:32,495
+Next, when you run this, I think...
+
+295
+00:44:35,123 --> 00:44:37,623
+Let me see if I have an output.
+
+296
+00:44:39,063 --> 00:44:39,903
+Okay, here.
+
+297
+00:44:41,963 --> 00:44:45,063
+This is what happens when you run this program.
+
+298
+00:44:45,063 --> 00:44:49,903
+Three times the director is listed.
+
+299
+00:44:52,403 --> 00:44:59,843
+All these three different way of calling different programs within Perl.
+
+300
+00:45:00,192 --> 00:45:07,192
+Bu da aynı result. Bu da bir örneğe bir örneğe bir örneğe.
+
+301
+00:45:09,192 --> 00:45:15,352
+You can recover from errors. It gives you the control over the program.
+
+302
+00:45:17,832 --> 00:45:23,992
+Somehow, if your program runs into an error problem,
+
+303
+00:45:25,876 --> 00:45:31,615
+You can recover from that error without actually exiting from the program.
+
+304
+00:45:31,615 --> 00:45:36,416
+So for this, die function can be used.
+
+305
+00:45:37,735 --> 00:45:40,615
+This is referred to as exception handling.
+
+306
+00:45:41,755 --> 00:45:44,655
+This is an example code for this.
+
+307
+00:45:47,115 --> 00:45:52,635
+When you execute the code, this is what you get.
+
+308
+00:45:56,403 --> 00:46:22,956
+Öncelikle, bu konuda bir disk file ödülen, bu konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda
+
+309
+00:46:25,523 --> 00:46:30,343
+This is exception handling by using evaluation function.
+
+310
+00:46:34,547 --> 00:46:35,339
+So...
+
+311
+00:46:38,579 --> 00:46:46,819
+Ok, sorting is another important concept used extensively.
+
+312
+00:46:48,339 --> 00:47:00,259
+Basically, when you start learning a programming language, this is one of the earlier concepts you are required to learn.
+
+313
+00:47:00,679 --> 00:47:03,539
+Sorting, how to sort. There are many sorting.
+
+314
+00:47:04,148 --> 00:47:16,728
+Algoritim, and usually in exams, algorithm exams, always there will be one or two questions relevant to sorting.
+
+315
+00:47:18,208 --> 00:47:24,048
+So, Perl also has some strong functions for sorting.
+
+316
+00:47:25,508 --> 00:47:28,768
+These two, sort and reverse,
+
+317
+00:47:30,260 --> 00:47:39,180
+...can be used to sort list of strings or numbers into ascending order, descending order or any other customized order.
+
+318
+00:47:40,220 --> 00:47:41,980
+I think the sort and reverse.
+
+319
+00:47:41,980 --> 00:47:49,080
+Here we have some examples about sort and reverse.
+
+320
+00:47:51,100 --> 00:47:54,980
+In the following program...
+
+321
+00:47:55,668 --> 00:48:02,548
+A list of four short DNA sequences is assigned to an array called seconds,
+
+322
+00:48:04,007 --> 00:48:08,507
+which is then printed to standard out to the screen.
+
+323
+00:48:10,007 --> 00:48:14,648
+So let's see how it is used and we will see here, okay.
+
+324
+00:48:17,048 --> 00:48:18,987
+This is the before sorting.
+
+325
+00:48:22,612 --> 00:48:28,932
+We have these strings before sorting.
+
+326
+00:48:30,072 --> 00:48:33,811
+Then first we have sort function.
+
+327
+00:48:35,652 --> 00:48:40,372
+We have sort from B to A. This is the descending order.
+
+328
+00:48:42,932 --> 00:48:44,692
+We have reverse sort.
+
+329
+00:48:47,092 --> 00:48:48,932
+This is just reverse sort.
+
+330
+00:48:52,083 --> 00:48:55,083
+Ve bu resulta.
+
+331
+00:48:59,731 --> 00:49:26,539
+Bu, bu
+
+332
+00:49:27,923 --> 00:49:30,483
+Reverse order will be just reverse.
+
+333
+00:49:33,144 --> 00:49:36,324
+Then this is alternative reverse order.
+
+334
+00:49:40,483 --> 00:49:45,804
+In first one, we use descending from B to A.
+
+335
+00:49:45,923 --> 00:49:47,784
+We can also use A to B.
+
+336
+00:49:49,864 --> 00:49:52,523
+Or simply use reverse sort.
+
+337
+00:49:53,556 --> 00:49:58,036
+There is always some alternatives to implement the same concept.
+
+338
+00:49:59,556 --> 00:49:59,895
+Okay?
+
+339
+00:50:06,612 --> 00:50:11,452
+Bu formatı ve U.S. sort.
+
+340
+00:50:15,507 --> 00:50:16,507
+Bunctions.
+
+341
+00:50:18,507 --> 00:50:21,507
+Here is another example for sorting.
+
+342
+00:50:25,204 --> 00:50:27,844
+I just skip these examples.
+
+343
+00:50:28,844 --> 00:50:33,516
+When you run it, this time the...
+
+344
+00:50:39,027 --> 00:50:41,947
+Sörtüme operasyonu implementen on numbers.
+
+345
+00:50:41,947 --> 00:50:47,307
+The previous one was implemented on characters or strings.
+
+346
+00:50:47,307 --> 00:50:50,588
+This one was implemented on numbers.
+
+347
+00:50:50,588 --> 00:51:01,148
+Obviously, the sorting in characters also work on numbers because each character is represented by a number basically, a final number.
+
+348
+00:51:01,148 --> 00:51:05,148
+So sorting will be according to all this thing.
+
+349
+00:51:12,755 --> 00:51:25,875
+Okay, this is the, you can get more information about sorting by invoking the manual, per manual from command line.
+
+350
+00:51:31,443 --> 00:51:35,443
+Bu bir example sortfile programı,
+
+351
+00:51:35,443 --> 00:51:37,443
+I just skip this.
+
+352
+00:51:37,443 --> 00:51:39,443
+And...
+
+353
+00:51:41,443 --> 00:51:45,443
+What I did, I used the sortfile program
+
+354
+00:51:46,443 --> 00:51:50,443
+to operate on a poem.
+
+355
+00:51:51,443 --> 00:51:53,443
+It is a famous poem.
+
+356
+00:51:55,443 --> 00:51:56,443
+When you run it...
+
+357
+00:51:59,092 --> 00:52:01,372
+Obviously, there are some Turkish characters.
+
+358
+00:52:01,652 --> 00:52:09,872
+It does not display correctly, but when you run it by using sort file, this is what happens to poetry.
+
+359
+00:52:10,771 --> 00:52:14,852
+It destroys the structure of the poetry anyway.
+
+360
+00:52:17,492 --> 00:52:18,172
+Okay.
+
+361
+00:52:27,284 --> 00:52:31,523
+Mertse ve break. Bir ara verelim. Sonra devam ediyoruz.
+
+362
+01:05:23,411 --> 01:05:24,391
+Evet, tekrar merhaba.
+
+363
+01:05:28,307 --> 01:05:39,068
+Ses nasıl arkadaşlar? Ses boğup falan diye şimdi çete baktım da öyle mi geliyor? Ama başta öyleydi.
+
+364
+01:05:43,251 --> 01:05:44,251
+İyi hocam şimdi.
+
+365
+01:05:44,672 --> 01:05:46,511
+İyi değil mi? Tamam.
+
+366
+01:05:48,172 --> 01:05:51,672
+Hocam, biraz daha mikrofonu yaklaştırabilirseniz daha iyi olurum.
+
+367
+01:05:51,711 --> 01:05:58,612
+Valla mikrofon çenemin altında da bu kullandığım mikrofondan mı kaynaklanıyor mü değilim?
+
+368
+01:05:58,612 --> 01:06:02,532
+Şimdi tam ağzımın karşısında tutmam lazım. Şimdi iyi mi?
+
+369
+01:06:04,491 --> 01:06:06,011
+Şimdi daha net hocam.
+
+370
+01:06:06,579 --> 01:06:10,999
+Çünkü tam ağzımın yanına getirdim, o yüzden. Böyle tutayım madem.
+
+371
+01:06:13,359 --> 01:06:13,739
+Okey.
+
+372
+01:06:22,003 --> 01:06:23,003
+Bir dakika arkadaşlar.
+
+373
+01:07:07,251 --> 01:07:17,471
+Ok, consider the requirement to display a text on screen in exactly the format shown from within a program.
+
+374
+01:07:17,471 --> 01:07:34,031
+Ok, here, to be able to display the text exactly as within the program, we use here documents, a concept in Perl.
+
+375
+01:07:36,148 --> 01:07:43,148
+ve genişliğine,
+
+376
+01:07:43,148 --> 01:07:46,148
+ok?
+
+377
+01:07:46,148 --> 01:07:50,148
+Let's discuss this.
+
+378
+01:07:50,148 --> 01:07:59,148
+This could be done by using a sequence of print statements as follows, for example.
+
+379
+01:07:59,148 --> 01:08:01,148
+That was the text to display.
+
+380
+01:08:03,860 --> 01:08:10,660
+...to print exactly to see as shown before this one for example.
+
+381
+01:08:10,660 --> 01:08:11,060
+Okay.
+
+382
+01:08:12,119 --> 01:08:12,900
+As this is.
+
+383
+01:08:14,019 --> 01:08:20,720
+Now you can use this print, print, print, print, print statements in normal programs.
+
+384
+01:08:23,319 --> 01:08:24,500
+That could be done.
+
+385
+01:08:24,860 --> 01:08:26,800
+And this is the output when you run it.
+
+386
+01:08:28,440 --> 01:08:28,819
+Okay.
+
+387
+01:08:32,564 --> 01:08:37,324
+Ama, if you use here documents, this is a better way to do this.
+
+388
+01:08:38,744 --> 01:08:42,144
+Here is the mechanism for this.
+
+389
+01:08:42,623 --> 01:08:46,744
+Use my shotgun message and then endshot message.
+
+390
+01:08:47,504 --> 01:08:54,484
+Start shotgun sequencing and this is, you include this and then at the end you have print.
+
+391
+01:08:55,796 --> 01:09:01,676
+Bu bir şekilde bir skalar var.
+
+392
+01:09:01,676 --> 01:09:03,736
+Bu bir skalar var.
+
+393
+01:09:03,736 --> 01:09:07,576
+Bu bir şekilde aynı.
+
+394
+01:09:07,576 --> 01:09:09,796
+Bu bir daha daha iyi.
+
+395
+01:09:09,796 --> 01:09:14,615
+Bu bir şekilde kullanmak için.
+
+396
+01:09:14,615 --> 01:09:16,615
+Bu bir format.
+
+397
+01:09:43,123 --> 01:09:54,123
+Evet, ben de göstereceğimizle göstereceğimizle göstereceğimizle göstereceğimizle göstereceğimizle göstereceğimizle.
+
+398
+01:10:22,163 --> 01:10:45,996
+Bu da bazıları da altyazı al
+
+399
+01:10:46,323 --> 01:11:14,059
+Apelle'nin hizalama,
+
+400
+01:11:41,619 --> 01:11:54,380
+Data loss is the remote connection, but if it is local, then this is more reliable.
+
+401
+01:11:54,380 --> 01:12:06,860
+Then stability, another feature, or useful aspect of downloading dataset, flexibility, obviously, and security, since you are not on the internet.
+
+402
+01:12:07,412 --> 01:12:14,412
+Bu nefesine ilgilenme, ve
+
+403
+01:12:21,268 --> 01:12:28,148
+Of course, everything has advantages and disadvantages as well.
+
+404
+01:12:28,148 --> 01:12:34,728
+When you want to download and store dataset locally, you can have a stale data.
+
+405
+01:12:38,488 --> 01:12:44,927
+The local copy is a one-time snapshot of the dataset at a particular point of time.
+
+406
+01:12:45,188 --> 01:12:48,167
+You may not have an up-to-date data.
+
+407
+01:12:49,811 --> 01:12:56,412
+Storage, you need extra storage if database is too big,
+
+408
+01:12:56,412 --> 01:12:59,912
+then you need extra space in your local disk.
+
+409
+01:13:01,011 --> 01:13:03,871
+This is a disadvantage and performance as well.
+
+410
+01:13:06,271 --> 01:13:13,051
+Sometimes the remote servers have much more better facilities
+
+411
+01:13:13,051 --> 01:13:15,371
+and parallel processing systems.
+
+412
+01:13:16,884 --> 01:13:26,404
+There might be faster, higher-performance computing systems to be used.
+
+413
+01:13:29,183 --> 01:13:35,043
+Downloading datasets can be accomplished in a number of ways.
+
+414
+01:13:35,703 --> 01:13:41,663
+First, by using established sequence analysis programs.
+
+415
+01:13:42,203 --> 01:13:44,064
+This is the off-the-shelf programs.
+
+416
+01:13:45,108 --> 01:13:56,908
+As I mentioned before, there are many programs, dedicated programs, and there are also programs for downloading, mboss, one of such programs.
+
+417
+01:13:57,887 --> 01:13:59,327
+This is the website for this.
+
+418
+01:14:01,208 --> 01:14:04,908
+These are specific methods for performing downloads.
+
+419
+01:14:08,007 --> 01:14:10,387
+Another one is vgetprogram.
+
+420
+01:14:11,475 --> 01:14:24,435
+This is a Linux function, basically. Any Linux will have this. You can use vget, wget.
+
+421
+01:14:26,576 --> 01:14:30,675
+This is a free software, basically.
+
+422
+01:14:38,228 --> 01:14:45,547
+So here I included some information how to use this VGET, but I just skip this.
+
+423
+01:14:45,547 --> 01:14:58,967
+If you are interested in to download databases using this VGET, you just, if you have Linux, you go to the Linux and get this program and just play with it.
+
+424
+01:15:01,448 --> 01:15:04,108
+I just skip this section.
+
+425
+01:15:05,779 --> 01:15:06,779
+Müzik
+
+426
+01:15:11,764 --> 01:15:15,923
+So, my purpose is not to teach Linux anyway.
+
+427
+01:15:19,804 --> 01:15:23,764
+But I include this information in my slides.
+
+428
+01:15:45,427 --> 01:15:48,779
+Bu, bu, bu, bu, bu, bu, bu.
+
+429
+01:16:11,252 --> 01:16:15,412
+I just kept these slides for completeness.
+
+430
+01:16:20,404 --> 01:16:27,364
+Çünkü, several times we mentioned about this data for bioinformatics.
+
+431
+01:16:32,764 --> 01:16:34,284
+I just skip.
+
+432
+01:16:41,716 --> 01:16:43,936
+This protein data bank.
+
+433
+01:16:51,220 --> 01:16:55,220
+We have some information on data files which I mentioned before.
+
+434
+01:16:55,220 --> 01:16:59,220
+Example structures.
+
+435
+01:16:59,220 --> 01:17:04,220
+And some databases.
+
+436
+01:17:14,228 --> 01:17:16,228
+Filti in databases.
+
+437
+01:17:21,619 --> 01:17:21,979
+Ok.
+
+438
+01:17:34,260 --> 01:17:37,260
+Bu da data science, aslında.
+
+439
+01:17:37,260 --> 01:17:46,640
+Bu da data mining, data curation, data cleaning, etc.
+
+440
+01:17:46,640 --> 01:17:51,260
+Bu da redondances ve
+
+441
+01:18:00,275 --> 01:18:10,296
+Mining or data science cursors, if you have taken the for data, it is also valid for these bioinformatic databases.
+
+442
+01:18:12,935 --> 01:18:19,876
+So I just skip this because I have already included some information on data.
+
+443
+01:18:29,427 --> 01:18:41,167
+Okay, probably we should mention some concepts from databases because in bioinformatics we are dealing with extensive databases.
+
+444
+01:18:41,167 --> 01:18:56,028
+We should remember some basic concepts. Anybody can tell me what is a database?
+
+445
+01:18:58,515 --> 01:19:02,876
+You probably studied extensively this concept of database, but
+
+446
+01:19:02,876 --> 01:19:08,536
+when we call
+
+447
+01:19:08,536 --> 01:19:13,675
+a group of data, database
+
+448
+01:19:20,627 --> 01:19:40,171
+Evet, birçok bir arayla da ve bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir arayla da bir ar
+
+449
+01:19:53,235 --> 01:19:57,416
+A collection of created tables.
+
+450
+01:19:58,195 --> 01:20:01,435
+One key word here is table, basically.
+
+451
+01:20:01,935 --> 01:20:03,115
+Okay, databases.
+
+452
+01:20:08,627 --> 01:20:11,728
+A collection of one or more related tables.
+
+453
+01:20:12,007 --> 01:20:14,587
+This is the one important keyword.
+
+454
+01:20:14,788 --> 01:20:19,667
+It must be some sort of in the form of tables.
+
+455
+01:20:20,448 --> 01:20:22,127
+Then we have table.
+
+456
+01:20:22,467 --> 01:20:25,448
+It is a collection of one or more rows of data.
+
+457
+01:20:27,327 --> 01:20:30,448
+So then row is...
+
+458
+01:20:31,796 --> 01:20:38,615
+BASICALLY A COMBINATION OF OR A COLLECTION OF ONE OR MORE DATA ITEMS ARRANGED IN COLUMNS.
+
+459
+01:20:38,615 --> 01:20:40,615
+SO THIS IS STRUCTURES.
+
+460
+01:20:40,615 --> 01:20:47,976
+RELATIONSHIP BETWEEN THESE DIFFERENT ANTIETIES TO FORM A DATABASE.
+
+461
+01:20:47,976 --> 01:20:48,976
+OKAY.
+
+462
+01:20:48,976 --> 01:20:54,936
+MOST DATABASES IS A TABLE.
+
+463
+01:21:20,083 --> 01:21:24,863
+Okay, then question here, what is a database system?
+
+464
+01:21:32,212 --> 01:21:39,212
+Şimdi, bu da bir
+
+465
+01:21:39,212 --> 01:21:47,819
+bir
+
+466
+01:21:46,963 --> 01:21:47,304
+Ok.
+
+467
+01:21:54,644 --> 01:21:59,644
+Bu bir örnek tablası, tablası tablası.
+
+468
+01:21:59,644 --> 01:22:03,644
+Bu tablası tablası, tablası tablası.
+
+469
+01:22:03,644 --> 01:22:19,644
+Bu tablası tablası tablası.
+
+470
+01:22:29,811 --> 01:22:32,112
+So, what is a database system then?
+
+471
+01:22:40,948 --> 01:22:43,247
+Just to remind you some concepts.
+
+472
+01:22:47,828 --> 01:22:59,288
+I'm not going to spend much more time on this database because it is out of scope, but just because it is relevant, I just want to remind you some concepts.
+
+473
+01:23:01,168 --> 01:23:06,768
+There's different type of database structure, database, relational database, etc.
+
+474
+01:23:07,668 --> 01:23:09,408
+Object-oriented databases.
+
+475
+01:23:09,548 --> 01:23:15,128
+There are many different types of databases, but this is not interesting.
+
+476
+01:23:17,684 --> 01:23:22,484
+System which controls the data or controls the databases.
+
+477
+01:23:22,943 --> 01:23:26,804
+Basically, the database system is a software.
+
+478
+01:23:27,984 --> 01:23:29,463
+That's correct.
+
+479
+01:23:30,384 --> 01:23:41,363
+It's a software to control data, to basically to create databases and to manipulate databases.
+
+480
+01:23:46,771 --> 01:23:59,652
+A database system is a computer program or group of programs that provides a mechanism to define and manipulate, to create and manipulate one or more databases.
+
+481
+01:24:00,811 --> 01:24:09,391
+So a database system allows databases, tables and columns to be created and named and structures to be defined.
+
+482
+01:24:10,451 --> 01:24:11,592
+So, please.
+
+483
+01:24:15,507 --> 01:24:21,148
+Bu da bu sistem sistemde,
+
+484
+01:24:21,148 --> 01:24:27,148
+bu sistemde,
+
+485
+01:24:27,148 --> 01:24:29,148
+bu da tablisinde,
+
+486
+01:24:29,148 --> 01:24:44,228
+bu da,
+
+487
+01:24:43,220 --> 01:24:47,059
+Next question is, what are the available database systems?
+
+488
+01:24:49,639 --> 01:24:59,300
+So since database system is a collection of software programs, can you give me some examples?
+
+489
+01:25:07,539 --> 01:25:12,579
+Oracle, Apex, XR. Yes, these are some database examples.
+
+490
+01:25:13,260 --> 01:25:21,920
+But generally, rather than giving individual database names, we can classify databases.
+
+491
+01:25:23,780 --> 01:25:29,420
+Of course, database systems using different criteria.
+
+492
+01:25:29,420 --> 01:25:31,243
+But one criteria is...
+
+493
+01:25:31,731 --> 01:25:41,672
+I just go through. We can talk about personal databases, personal database systems,
+
+494
+01:25:42,271 --> 01:25:54,152
+which are designed to run on PCs, personal computers. These are small-scale programs.
+
+495
+01:25:56,851 --> 01:26:03,851
+ve
+
+496
+01:26:03,851 --> 01:26:22,851
+bu
+
+497
+01:26:23,695 --> 01:26:27,296
+Bu sadece personal computası.
+
+498
+01:26:29,935 --> 01:26:33,335
+Bu da personal database system,
+
+499
+01:26:33,335 --> 01:26:38,135
+bu da enterprise-level database system,
+
+500
+01:26:47,891 --> 01:26:52,711
+As name implies, it is enterprise database systems.
+
+501
+01:26:53,612 --> 01:27:00,252
+It is usually big companies, big firms can afford to buy this.
+
+502
+01:27:00,871 --> 01:27:07,351
+They usually cost millions of dollars or at least thousands of dollars.
+
+503
+01:27:09,192 --> 01:27:11,531
+It goes over a million dollars.
+
+504
+01:27:12,148 --> 01:27:16,028
+ve büyük bir ücreti konularını işleyeceğiz.
+
+505
+01:27:39,699 --> 01:27:41,699
+ve a third class.
+
+506
+01:27:43,199 --> 01:27:44,699
+Can anybody guess?
+
+507
+01:27:51,155 --> 01:27:53,735
+Birçok birçok birçok.
+
+508
+01:27:53,735 --> 01:27:54,735
+Birçok birçok.
+
+509
+01:27:55,876 --> 01:27:57,956
+Postgres, Cloud.
+
+510
+01:27:58,895 --> 01:27:59,895
+Birçok birçok.
+
+511
+01:27:59,895 --> 01:28:15,056
+Birçok.
+
+512
+01:28:15,891 --> 01:28:21,531
+You have already used probably in your small projects or whatever.
+
+513
+01:28:22,671 --> 01:28:28,351
+These are free and usually very common in Linux systems.
+
+514
+01:28:30,171 --> 01:28:35,791
+There are obviously PC versions as well, but one thing is free.
+
+515
+01:29:03,667 --> 01:29:11,608
+Classification, based on the scale of the database, and cost of the database, basically.
+
+516
+01:29:11,608 --> 01:29:16,347
+And type of the computing platform, they are based on.
+
+517
+01:29:16,527 --> 01:29:21,967
+These PCs, personal, enterprise, very powerful.
+
+518
+01:29:22,387 --> 01:29:30,087
+It requires obviously powerful computing platforms, and very huge memory.
+
+519
+01:29:30,739 --> 01:29:37,699
+ve open-source could be PCs, Linux-based workstations, computers, whatever it is.
+
+520
+01:29:37,699 --> 01:29:45,940
+So, then the choosing database obviously depends on the type of the...
+
+521
+01:29:45,940 --> 01:29:56,899
+Choosing database system will depend on the type of the several factors basically, such as the amount of data.
+
+522
+01:29:58,612 --> 01:30:00,612
+Bu da bilgi verilir,
+
+523
+01:30:00,612 --> 01:30:02,612
+bu da bilgi verilir,
+
+524
+01:30:02,612 --> 01:30:06,612
+bir çalışmaların bir çalışmaların bir çalışmaların bir çalışmaların.
+
+525
+01:30:08,612 --> 01:30:10,612
+Bu da bilgi verilir,
+
+526
+01:30:10,612 --> 01:30:16,612
+bu bilgi verilir,
+
+527
+01:30:16,612 --> 01:30:20,612
+3 milyonlarlarlarla bir bilgi verilir.
+
+528
+01:30:20,612 --> 01:30:22,612
+Bu da bilgi verilir.
+
+529
+01:30:24,724 --> 01:30:32,623
+Obviously, the imports are important concepts in a database or database systems.
+
+530
+01:30:32,984 --> 01:30:46,904
+The first language of database, which already you know is SQL, Structured Queer Language, which defines data.
+
+531
+01:30:52,340 --> 01:30:57,840
+SQL-structured query language provides two facilities.
+
+532
+01:30:58,840 --> 01:31:06,340
+First, a database definition language, which is shortly known as DDL.
+
+533
+01:31:08,840 --> 01:31:17,840
+It provides a mechanism whereby databases can be created for the creation of databases. DDL is used.
+
+534
+01:31:19,091 --> 01:31:36,412
+And a data manipulation language, DML, which provides a mechanism to work with data in tables to modify it, to delete it, to append it, whatever it is.
+
+535
+01:31:36,851 --> 01:31:37,152
+Okay?
+
+536
+01:31:37,431 --> 01:31:38,572
+Use DML.
+
+537
+01:31:40,467 --> 01:31:47,368
+Öncelikle bu koncept, Perl'in de çok
+
+538
+01:31:47,368 --> 01:31:53,007
+yardımcı bir support için
+
+539
+01:31:53,007 --> 01:31:56,368
+manipulatabilirsiniz.
+
+540
+01:31:56,368 --> 01:31:59,407
+Bu koncept,
+
+541
+01:31:59,407 --> 01:32:02,467
+ve edicilerin
+
+542
+01:32:02,467 --> 01:32:04,467
+ve
+
+543
+01:32:07,939 --> 01:32:09,939
+Ama sadece
+
+544
+01:32:09,939 --> 01:32:11,939
+anlatım
+
+545
+01:32:11,939 --> 01:32:13,939
+nasıl
+
+546
+01:32:13,939 --> 01:32:15,939
+install it,
+
+547
+01:32:15,939 --> 01:32:17,939
+at least
+
+548
+01:32:17,939 --> 01:32:19,939
+İzlediğiniz için
+
+549
+01:32:19,939 --> 01:32:23,939
+birçok
+
+550
+01:32:23,939 --> 01:32:25,939
+ve
+
+551
+01:32:25,939 --> 01:32:27,939
+bu
+
+552
+01:32:39,923 --> 01:32:46,923
+Ve bu
+
+553
+01:32:46,923 --> 01:33:01,923
+Bu
+
+554
+01:33:09,056 --> 01:33:13,056
+ve
+
+555
+01:33:07,507 --> 01:33:12,827
+One of the modules is this module shown here with blue font.
+
+556
+01:33:14,028 --> 01:33:19,747
+There are many modules basically can be downloaded see upon website.
+
+557
+01:33:21,347 --> 01:33:24,347
+MySQL and this.
+
+558
+01:33:27,547 --> 01:33:32,188
+DBI module, database interface module.
+
+559
+01:33:42,871 --> 01:33:50,871
+Bu
+
+560
+01:33:42,323 --> 01:34:03,755
+Bu, bu
+
+561
+01:34:04,275 --> 01:34:07,595
+You can program databases with DBI.
+
+562
+01:34:07,595 --> 01:34:12,755
+It has many functions, useful functions to manipulate databases.
+
+563
+01:34:15,655 --> 01:34:21,615
+So, there are also sequence retrieval systems.
+
+564
+01:34:21,815 --> 01:34:28,695
+These are the tools basically used by bioinformaticians.
+
+565
+01:34:29,695 --> 01:34:30,595
+But as I...
+
+566
+01:34:59,188 --> 01:35:03,328
+Sınırma, many things are based on web systems.
+
+567
+01:35:04,507 --> 01:35:07,408
+We should also talk about web technologies.
+
+568
+01:35:10,648 --> 01:35:16,667
+World Wide Web was invented in 1991 by Tim Berners-Lee.
+
+569
+01:35:17,844 --> 01:35:43,020
+Bu da benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken benziyken ben
+
+570
+01:35:44,884 --> 01:35:59,923
+We'll mention the web technologies. Of course, this is another big subject and this is again out of scope, but I just want to remind you the fundamental web technologies.
+
+571
+01:36:02,423 --> 01:36:09,543
+A web development infrastructure includes what?
+
+572
+01:36:15,636 --> 01:36:20,976
+We want to develop web infrastructure. What do you need first?
+
+573
+01:36:35,572 --> 01:36:37,952
+So, they just tell me the answer.
+
+574
+01:36:54,868 --> 01:37:19,988
+HOSTĞ, ne? HOSTĞ, ne? HOSTĞ. HOSTĞ is correct, but what we call it? More formal name. Backhand database. We need database. That's correct. But first you need a server first. Server. We need a server first.
+
+575
+01:37:20,467 --> 01:37:42,788
+Ok, then what we need, ok, we have the server. If we have the server, server will serve to who? Client. Obviously, we have the client then. Ok, the server and client will talk. How they will talk?
+
+576
+01:37:47,412 --> 01:37:48,572
+Do you need a protocol?
+
+577
+01:37:52,467 --> 01:37:54,427
+HTTP, exactly.
+
+578
+01:37:55,827 --> 01:37:57,768
+Then what else do you need?
+
+579
+01:37:59,628 --> 01:38:02,007
+They need to understand each other.
+
+580
+01:38:10,579 --> 01:38:20,579
+HTML, okay? Hypertext trans... HTML.
+
+581
+01:38:21,079 --> 01:38:25,000
+Then you already mentioned database, obviously. There should be a database.
+
+582
+01:38:25,720 --> 01:38:32,260
+These are usually the components to form a web infrastructure.
+
+583
+01:38:33,260 --> 01:38:38,039
+So just we go over. Now I can go over.
+
+584
+01:38:38,515 --> 01:38:40,515
+We need a web server.
+
+585
+01:38:40,515 --> 01:38:43,515
+And this is basically a program.
+
+586
+01:38:47,515 --> 01:38:48,515
+Okay.
+
+587
+01:38:49,515 --> 01:38:53,515
+And these are some examples of these programs.
+
+588
+01:38:53,515 --> 01:38:55,515
+We need web client.
+
+589
+01:38:55,515 --> 01:38:58,515
+And we are very familiar with clients.
+
+590
+01:38:58,515 --> 01:39:01,515
+This is basically a web browser.
+
+591
+01:39:02,387 --> 01:39:06,067
+Chrome, Mozilla, Explorer, whatever.
+
+592
+01:39:06,847 --> 01:39:09,768
+And we need some transport protocol.
+
+593
+01:39:10,108 --> 01:39:14,947
+This is HTTP hypertext transport protocol.
+
+594
+01:39:16,047 --> 01:39:25,747
+There needs to be a handshake between server and clients and the content of the web.
+
+595
+01:39:26,188 --> 01:39:28,627
+Basically, this hypertext markup language.
+
+596
+01:39:29,171 --> 01:39:31,171
+HTML.
+
+597
+01:39:31,171 --> 01:39:34,171
+Then obviously data.
+
+598
+01:39:34,171 --> 01:39:43,171
+There are some additional components, client-side programming, server-side programming, etc.
+
+599
+01:39:43,171 --> 01:39:54,171
+These are usually components of a web technology infrastructure.
+
+600
+01:39:56,148 --> 01:40:14,327
+So, we mentioned, of course, it is useful to remind ourselves the ways how to create webpages.
+
+601
+01:40:14,327 --> 01:40:17,947
+There are three different ways to create webpages.
+
+602
+01:40:18,739 --> 01:40:20,920
+You can create web page manually.
+
+603
+01:40:20,920 --> 01:40:28,600
+If you are confident with HTML language, then you can use it by using any text editor.
+
+604
+01:40:28,819 --> 01:40:35,920
+You can write your web page in HTML format and you publish it simply.
+
+605
+01:40:36,720 --> 01:40:40,479
+Or you can use off-the-shelf.
+
+606
+01:40:41,140 --> 01:40:45,500
+Program, such as Dreamweber, you can visually create a web page.
+
+607
+01:40:45,940 --> 01:40:51,820
+Even you can use Microsoft tools to create static web pages.
+
+608
+01:40:53,320 --> 01:40:56,240
+And the third way is just web programming.
+
+609
+01:40:56,620 --> 01:41:01,200
+You need to, you must program to create dynamic web pages.
+
+610
+01:41:01,200 --> 01:41:04,200
+If somehow the...
+
+611
+01:41:04,787 --> 01:41:15,347
+Web page content must change or should change by time, then you need to create web pages dynamic and you need to program it.
+
+612
+01:41:15,747 --> 01:41:25,228
+You can use any language basically, such as PHP or even Python or Perl to create web pages.
+
+613
+01:41:26,148 --> 01:41:26,327
+Okay.
+
+614
+01:41:28,127 --> 01:41:32,207
+And this is the, so this is simple.
+
+615
+01:41:32,756 --> 01:41:34,195
+HTML page.
+
+616
+01:41:34,815 --> 01:41:41,336
+We have some examples to create manually or dynamic program.
+
+617
+01:41:42,895 --> 01:41:44,496
+Dynamic may buy programming.
+
+618
+01:41:47,256 --> 01:41:56,216
+To connect with Perl, Perl has extensive support for creating dynamic webpages or static or dynamic webpages.
+
+619
+01:42:00,275 --> 01:42:05,275
+Bu da simple web page creation using Perl.
+
+620
+01:42:07,275 --> 01:42:10,275
+Sadece here's document, which we mentioned.
+
+621
+01:42:10,275 --> 01:42:15,275
+You can simply write your HTML code
+
+622
+01:42:15,275 --> 01:42:19,275
+and it will generate the simple HTML document
+
+623
+01:42:19,275 --> 01:42:21,003
+and you will publish it.
+
+624
+01:42:22,996 --> 01:42:34,155
+Another way of creating HTML is possible by using PerStandardCGI Module, Common Gate Interface, I think it stands for.
+
+625
+01:42:34,155 --> 01:42:41,876
+And it has useful functions for creating webpages.
+
+626
+01:42:43,015 --> 01:42:44,435
+And here are some examples.
+
+627
+01:42:49,684 --> 01:42:53,024
+You can simply start html and end html.
+
+628
+01:42:53,944 --> 01:43:04,804
+Within these two starting and ending functions, you can write your body of web page.
+
+629
+01:43:05,724 --> 01:43:11,204
+This is a simple file produced by the program.
+
+630
+01:43:16,787 --> 01:43:21,507
+We already mentioned static creation of the webpages.
+
+631
+01:43:21,507 --> 01:43:24,307
+We don't want to spend too much time on this.
+
+632
+01:43:26,947 --> 01:43:30,067
+I already mentioned dynamic webpage programming.
+
+633
+01:43:30,067 --> 01:43:33,667
+We need server-side programming for this.
+
+634
+01:43:36,787 --> 01:43:43,667
+This is a simple example of a web page, dynamic web page, in which date and time changes.
+
+635
+01:43:44,307 --> 01:43:50,528
+Every time you invoke this web page, you will see the current time.
+
+636
+01:43:50,688 --> 01:43:53,788
+So you need a dynamic web page for this.
+
+637
+01:43:53,847 --> 01:43:55,847
+And this is the example.
+
+638
+01:43:57,088 --> 01:44:03,047
+When you type this what time program, then you will get current time.
+
+639
+01:44:03,168 --> 01:44:03,807
+Next time.
+
+640
+01:44:04,372 --> 01:44:07,771
+ve actual time değiştirecek.
+
+641
+01:44:07,771 --> 01:44:10,692
+Yani, you need dynamic programming
+
+642
+01:44:10,692 --> 01:44:13,332
+or dynamic web page for this,
+
+643
+01:44:13,332 --> 01:44:15,572
+web programming in this case.
+
+644
+01:44:20,612 --> 01:44:26,851
+Another important point
+
+645
+01:44:26,851 --> 01:44:31,971
+when we consider web page is security.
+
+646
+01:44:34,804 --> 01:44:40,563
+ve internet ve internetinize çok önemli.
+
+647
+01:44:40,563 --> 01:44:45,844
+Perl, bu konuları da bazı bir konuları da kullanmak için,
+
+648
+01:44:59,828 --> 01:45:05,468
+Bu programın birçok birçok birçok birçok birçok birçok birçok.
+
+649
+01:45:06,668 --> 01:45:10,828
+Bu, bu programın birçok birçok birçok.
+
+650
+01:45:10,828 --> 01:45:13,948
+Bu, bu moda bu moda.
+
+651
+01:45:18,963 --> 01:45:28,043
+Ok, it provides you some facilities to be more secure on the web.
+
+652
+01:45:31,043 --> 01:45:33,524
+Just, it is better to know.
+
+653
+01:45:40,659 --> 01:45:42,539
+Anyway, I just skip this.
+
+654
+01:45:43,340 --> 01:45:45,500
+It gives you some suggestions.
+
+655
+01:45:51,988 --> 01:45:53,988
+Bu bir example.
+
+656
+01:45:53,988 --> 01:45:57,988
+Bu bir cgi'e ufak veri.
+
+657
+01:45:57,988 --> 01:45:59,988
+Perl.
+
+658
+01:46:05,427 --> 01:46:07,427
+İki videoda da bir örnek verici.
+
+659
+01:46:09,028 --> 01:46:11,427
+Bir diğer koncept isim web automation.
+
+660
+01:46:13,427 --> 01:46:16,427
+Bu ne demek bu web automation?
+
+661
+01:46:16,427 --> 01:46:17,427
+İmkini bu.
+
+662
+01:46:18,228 --> 01:46:21,427
+İmkini, 100 seçenek için bir şey verici.
+
+663
+01:46:22,427 --> 01:46:25,427
+Bir çalışmaların bir programı çalışmaların.
+
+664
+01:46:25,427 --> 01:46:28,427
+Bir şey verici.
+
+665
+01:46:28,427 --> 01:46:29,427
+Bu ne?
+
+666
+01:46:35,399 --> 01:46:40,399
+Bir sonraki bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte.
+
+667
+01:46:40,399 --> 01:46:44,399
+İzlediğiniz için 100 süreçte bir süreçte bir süreçte.
+
+668
+01:46:44,399 --> 01:46:46,399
+Bu süreçte bir süreçte.
+
+669
+01:46:50,036 --> 01:46:56,496
+Bu, Perl provides you, again, a module, which is known as Mechanize.
+
+670
+01:46:56,496 --> 01:47:00,855
+It allows programmer to automate interactions with any website.
+
+671
+01:47:03,376 --> 01:47:10,836
+Say, for example, you want to download or open some remote data files 100 times,
+
+672
+01:47:10,975 --> 01:47:16,496
+so you can create a simple mechanism to automate it by using this Mechanize.
+
+673
+01:47:17,652 --> 01:47:21,652
+ve bu zaman zamanlar.
+
+674
+01:47:43,743 --> 01:48:02,251
+Bu, bu
+
+675
+01:48:06,836 --> 01:48:11,336
+Bu da bu PURL.
+
+676
+01:48:13,836 --> 01:48:16,836
+Bu da PURL?
+
+677
+01:48:16,836 --> 01:48:18,836
+Bu da bir soru?
+
+678
+01:48:22,676 --> 01:48:31,256
+Çünkü it has some different concepts than the programming languages you are familiar with.
+
+679
+01:48:31,836 --> 01:48:34,016
+So I wanted to talk about them.
+
+680
+01:48:34,316 --> 01:48:36,116
+So do you have any questions?
+
+681
+01:48:44,979 --> 01:48:45,859
+Ağır, comment?
+
+682
+01:49:08,372 --> 01:49:10,631
+FUNCTIONALITIES OF THE LANGUAGE
+
+683
+01:49:20,724 --> 01:49:24,204
+What do you mean? Could you please reply the question?
+
+684
+01:49:54,756 --> 01:49:56,756
+Depends on how we get on.
+
+685
+01:50:44,239 --> 01:51:11,779
+Fasilik, any competing platform or programming language provides you with, you know, just, you all know the classical programming approaches, but it is possible that some languages might have some unconventional approaches to make things easier. Just use them.
+
+686
+01:51:22,003 --> 01:51:27,563
+You understand the environment platform you are using, then things will be much easier.
+
+687
+01:51:28,763 --> 01:51:34,103
+That's the final lesson you should basically take out of these talks.
+
+688
+01:51:36,103 --> 01:51:42,363
+And you try to find out the best language for your purpose.
+
+689
+01:51:42,723 --> 01:51:44,103
+You don't have to...
+
+690
+01:51:47,796 --> 01:52:06,252
+Bir de bir
+
+691
+02:05:45,587 --> 02:05:46,587
+Tamam.
+
+692
+02:05:51,988 --> 02:05:55,188
+As a first subject in bioinformatics,
+
+693
+02:05:55,188 --> 02:06:06,908
+for next coming or two weeks probably, we'll be discussing pairwise sequence alignment,
+
+694
+02:06:07,208 --> 02:06:10,668
+concept of pairwise sequence alignment.
+
+695
+02:06:32,467 --> 02:06:38,087
+Bu, bu, ilk önce ilk önce, ilk önce,
+
+696
+02:06:38,087 --> 02:06:42,647
+ve bu koncept,
+
+697
+02:06:42,647 --> 02:06:43,967
+sonra,
+
+698
+02:06:43,967 --> 02:06:45,768
+ve bu koncept,
+
+699
+02:06:45,768 --> 02:06:48,567
+paray-wise,
+
+700
+02:06:48,567 --> 02:06:50,087
+bir koncept,
+
+701
+02:06:50,484 --> 02:06:53,484
+Tekniks for pairwise sequence alignment.
+
+702
+02:06:54,144 --> 02:06:56,164
+We will introduce these techniques.
+
+703
+02:06:56,784 --> 02:06:59,423
+These are computational approaches, basically.
+
+704
+02:06:59,923 --> 02:07:03,404
+So this is very much relevant to your skills.
+
+705
+02:07:08,204 --> 02:07:17,404
+Concept of dot matrix, scoring matrices, gap penalties, some dynamic programming approaches.
+
+706
+02:07:24,336 --> 02:07:24,436
+Ok.
+
+707
+02:07:26,496 --> 02:07:29,056
+In molecular biology,
+
+708
+02:07:30,916 --> 02:07:36,436
+a common question is to ask whether or not two sequences are related.
+
+709
+02:07:37,096 --> 02:07:37,616
+Why?
+
+710
+02:07:37,616 --> 02:07:38,256
+So,
+
+711
+02:07:41,256 --> 02:07:46,336
+assume that we have information on
+
+712
+02:07:46,963 --> 02:07:50,963
+Bir de species'in formasyonu,
+
+713
+02:07:52,963 --> 02:07:55,963
+bir genetik code,
+
+714
+02:07:56,963 --> 02:07:58,963
+DNA sequences.
+
+715
+02:07:58,963 --> 02:08:02,963
+Bir de kodik sequences
+
+716
+02:08:02,963 --> 02:08:04,963
+bir species,
+
+717
+02:08:04,963 --> 02:08:06,963
+ve bilgiler.
+
+718
+02:08:06,963 --> 02:08:08,963
+Ve bilgiler,
+
+719
+02:08:08,963 --> 02:08:10,963
+bir species'in
+
+720
+02:08:10,963 --> 02:08:12,963
+bir şey,
+
+721
+02:08:15,699 --> 02:08:18,699
+...vekli bir şeyde.
+
+722
+02:08:18,699 --> 02:08:23,699
+Bir de yasak yapışı bir şeyde.
+
+723
+02:08:23,699 --> 02:08:37,699
+...vekli bir şeyde.
+
+724
+02:08:37,699 --> 02:08:40,699
+Bu, bu bir şeyde.
+
+725
+02:08:40,699 --> 02:08:42,635
+...vekli bir şeyde.
+
+726
+02:08:42,931 --> 02:09:08,843
+Bu, bu
+
+727
+02:09:15,828 --> 02:09:16,387
+Okay.
+
+728
+02:09:18,007 --> 02:09:23,887
+The question here is, first, are two sequences related?
+
+729
+02:09:25,887 --> 02:09:27,608
+Or they are same?
+
+730
+02:09:27,988 --> 02:09:30,368
+If not, are they related?
+
+731
+02:09:32,047 --> 02:09:36,007
+In what respect they are related?
+
+732
+02:09:36,307 --> 02:09:38,148
+Are they related structurally?
+
+733
+02:09:38,427 --> 02:09:40,108
+Are they related functionally?
+
+734
+02:09:41,408 --> 02:09:41,728
+So,
+
+735
+02:09:42,355 --> 02:10:00,000
+Bu, bu
+
+736
+02:10:03,956 --> 02:10:27,243
+Bu, selimunca sadece bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-residu ile ilgili bir adım veri-res
+
+737
+02:10:27,412 --> 02:10:29,511
+or amino acid database.
+
+738
+02:10:30,212 --> 02:10:37,092
+So therefore, when we started, we emphasized that text manipulation is very important.
+
+739
+02:10:37,092 --> 02:10:41,172
+So therefore, her language was extensively used.
+
+740
+02:10:41,811 --> 02:10:47,511
+Of course, any other language can be used, Y, A, R, C, or whatever.
+
+741
+02:10:53,032 --> 02:10:53,752
+Okay.
+
+742
+02:10:55,283 --> 02:11:02,803
+BASICALLY, THE SECOND SALIMENT IS A FUNDAMENTAL TOOL IN BIOINFORMATICS.
+
+743
+02:11:25,908 --> 02:11:32,988
+As an example, let's take these two words, per and ter.
+
+744
+02:11:35,828 --> 02:11:38,828
+Or tier, per and tier, okay.
+
+745
+02:11:58,515 --> 02:12:01,495
+You say no, why? Why not?
+
+746
+02:12:10,676 --> 02:12:19,596
+Why not? I'm just guessing. But when you say no, you have to give a reason why they are not related.
+
+747
+02:12:23,604 --> 02:12:26,604
+Well, in terms of what they represent...
+
+748
+02:12:30,292 --> 02:12:31,452
+They are not related.
+
+749
+02:12:33,872 --> 02:12:35,752
+Here is a fruit.
+
+750
+02:12:36,952 --> 02:12:37,592
+Here is
+
+751
+02:12:37,592 --> 02:12:40,692
+just a liquid.
+
+752
+02:12:40,852 --> 02:12:43,412
+Maybe it's just your eyedrop.
+
+753
+02:12:44,392 --> 02:12:44,692
+Okay.
+
+754
+02:12:46,652 --> 02:12:47,292
+They are
+
+755
+02:12:47,292 --> 02:12:48,792
+totally
+
+756
+02:12:48,792 --> 02:12:50,832
+they are not same.
+
+757
+02:12:50,952 --> 02:12:52,992
+They do not represent the same thing.
+
+758
+02:12:52,992 --> 02:12:55,552
+Obviously we have a criteria.
+
+759
+02:12:55,852 --> 02:12:57,072
+Okay. Different meanings.
+
+760
+02:12:57,716 --> 02:13:09,536
+Ama, if you were writing a poem and use these two words, they are related in terms of the sounds.
+
+761
+02:13:09,836 --> 02:13:11,756
+You know, they sound very similar.
+
+762
+02:13:13,195 --> 02:13:20,996
+Although they have different meanings, but when you emphasize this harmony in a poet, a poem,
+
+763
+02:13:23,699 --> 02:13:27,260
+Poetry, then they sound very similar.
+
+764
+02:13:27,579 --> 02:13:28,880
+They form a rhyme.
+
+765
+02:13:29,260 --> 02:13:32,420
+So you can say in this respect they are similar.
+
+766
+02:13:34,960 --> 02:13:44,239
+At least if you compare them letter by letter, they have three letters out of four common.
+
+767
+02:13:45,920 --> 02:13:49,380
+So they are also very similar in this respect.
+
+768
+02:13:49,971 --> 02:13:59,152
+As you see, it depends on your point of view, you know, just to decide whether they are similar or not.
+
+769
+02:13:59,152 --> 02:14:02,891
+The concept is very, very similar.
+
+770
+02:14:03,652 --> 02:14:08,851
+The similarity concept is very similar to that approach in bioinformatics.
+
+771
+02:14:09,652 --> 02:14:15,992
+So all algorithms or techniques we will be studying later.
+
+772
+02:15:07,520 --> 02:15:13,520
+İzlediğiniz için,
+
+773
+02:15:06,100 --> 02:15:13,940
+We know from biology that similar biological sequences tend to be related somehow.
+
+774
+02:15:15,619 --> 02:15:25,868
+So, according to evolution theorem, sometimes some species...
+
+775
+02:15:26,355 --> 02:15:38,535
+may come from a common ancestor and so they have similar biological sequences and this information lets us to believe that they are related.
+
+776
+02:15:42,868 --> 02:16:10,155
+Bu, bu konuda bilgilerin bir bilgilerin altyazı al
+
+777
+02:16:11,380 --> 02:16:13,760
+Or structural information.
+
+778
+02:16:15,560 --> 02:16:18,199
+Or and structural information.
+
+779
+02:16:18,199 --> 02:16:21,199
+Or and evolutionary information.
+
+780
+02:16:23,800 --> 02:16:24,159
+Okay.
+
+781
+02:16:24,539 --> 02:16:26,619
+These similarity studies.
+
+782
+02:16:27,359 --> 02:16:28,539
+Basically.
+
+783
+02:16:29,640 --> 02:16:32,340
+Can extract information about functionality.
+
+784
+02:16:33,043 --> 02:16:39,324
+Structure of the sequences or species or evolutionary relationship.
+
+785
+02:16:40,064 --> 02:16:51,963
+These are two, three reasons for sequence similarity studies.
+
+786
+02:17:10,355 --> 02:17:27,216
+Homo-logu sequences, usually, they are the, I don't know if you remember from biology or not, even I do not remember some of these concepts, but homologs basically are derived from a common ancestor.
+
+787
+02:17:27,216 --> 02:17:32,216
+If they come from a common, two separate species, if they come to...
+
+788
+02:17:32,468 --> 02:17:38,228
+They come from common ancestors and they are called homolog.
+
+789
+02:17:38,388 --> 02:17:44,188
+And sequences belonging to these species are known as homologous sequences.
+
+790
+02:17:49,139 --> 02:17:52,039
+Okay, in this respect, there are homologs.
+
+791
+02:17:53,259 --> 02:17:56,159
+Let me remind you some biological concepts.
+
+792
+02:17:56,899 --> 02:18:02,459
+These are similar sequences in two different organisms derived from a common ancestor sequence.
+
+793
+02:18:03,159 --> 02:18:04,879
+There are orthologs.
+
+794
+02:18:06,119 --> 02:18:13,419
+Again, similar sequences in two different organisms that have arisen due to a speciation event.
+
+795
+02:18:14,611 --> 02:18:16,831
+Functionality is retained here.
+
+796
+02:18:18,611 --> 02:18:18,991
+Okay.
+
+797
+02:18:20,911 --> 02:18:21,951
+And there are paradox.
+
+798
+02:18:22,851 --> 02:18:31,171
+And these are the similar sequences within a single organism that have arisen due to a gene duplication event.
+
+799
+02:18:32,591 --> 02:18:37,051
+This is different classes of similarities in sequences basically.
+
+800
+02:18:37,051 --> 02:18:40,051
+And there are xenologs.
+
+801
+02:18:40,564 --> 02:18:53,783
+Which are similar sequences that have arisen out of horizontal transfer events, which is known as symbiosis or viruses, etc.
+
+802
+02:18:55,364 --> 02:19:04,564
+So, of course, these things all are biological or some chemical.
+
+803
+02:19:05,556 --> 02:19:17,456
+Or electrochemical or whatever processes which takes place in organisms.
+
+804
+02:19:20,976 --> 02:19:21,156
+Okay.
+
+805
+02:19:23,276 --> 02:19:32,216
+This slide shows some relationships of these homologs, orthologs, paralogs.
+
+806
+02:19:32,724 --> 02:19:37,984
+Ok, in terms of the tree.
+
+807
+02:19:41,683 --> 02:19:49,403
+BASICALLY, FOR SIMILARITY SEARCHES, PROTEIN SEQUENCES OR DNA SEQUENCES ARE USED.
+
+808
+02:19:52,283 --> 02:19:58,403
+DNA SEQUENCES TEND TO BE LESS INFORMATIVE THAN PROTEIN SEQUENCES.
+
+809
+02:19:59,004 --> 02:20:08,683
+BASICALLY, SOME SPECIES CAN BE EXPRESSED IN TERMS OF THE DNA SEQUENCES OR PROTEIN SEQUENCES.
+
+810
+02:20:09,236 --> 02:20:15,876
+But according to some studies, DNA sequences tend to be less informative than protein sequences.
+
+811
+02:20:17,276 --> 02:20:29,076
+DNA bases, they have four bases, as we know, but protein sequences are formed by using 20 amino acids.
+
+812
+02:20:30,296 --> 02:20:33,836
+In this respect, there is less chance of similarity.
+
+813
+02:20:38,260 --> 02:20:41,479
+Similarity of amino acids can be scored.
+
+814
+02:20:43,040 --> 02:20:47,659
+We'll see later these scoring schemes.
+
+815
+02:20:50,060 --> 02:21:02,299
+Number of mutations in terms of the number of mutations, chemical similarity, or we will be talking about these score matrices later.
+
+816
+02:21:03,680 --> 02:21:04,940
+For example, PEM.
+
+817
+02:21:05,492 --> 02:21:06,492
+Matrices
+
+818
+02:21:10,131 --> 02:21:14,531
+Protein databanks are much smaller than DNA databanks.
+
+819
+02:21:14,791 --> 02:21:17,612
+These are advantages of using protein sequences.
+
+820
+02:21:19,731 --> 02:21:22,831
+So there is less random match.
+
+821
+02:21:24,492 --> 02:21:29,072
+Similarity is determined by pairwise alignment of different sequences.
+
+822
+02:21:29,072 --> 02:21:32,191
+So these are introductory comments.
+
+823
+02:21:32,819 --> 02:21:46,039
+Some concepts here may not be familiar with you, but we will get you familiar with these concepts eventually.
+
+824
+02:21:48,680 --> 02:21:54,360
+Okay, the concept of pairwise alignment is this.
+
+825
+02:21:56,819 --> 02:22:08,200
+Alignment of these two sequences, whether it is DNA or protein, is a relatively easy, straightforward computational problem.
+
+826
+02:22:14,564 --> 02:22:16,564
+Bu konumun için kolaylaştırma.
+
+827
+02:22:16,564 --> 02:22:20,564
+Bir seksesler için çok kolaylaştırma.
+
+828
+02:22:28,564 --> 02:22:30,564
+Bir seksesler için alınmaktadır.
+
+829
+02:22:30,564 --> 02:22:32,564
+Bu konumun için alınmaktadır.
+
+830
+02:22:32,564 --> 02:22:36,564
+Bu konumun için farklı bir şey.
+
+831
+02:22:38,675 --> 02:22:44,495
+Alignment, significance of this alignment needs to be evaluated as well.
+
+832
+02:22:45,175 --> 02:22:46,896
+We'll be talking about later.
+
+833
+02:22:50,195 --> 02:22:55,475
+Sequence alignments have to be scored to determine what we said.
+
+834
+02:22:55,556 --> 02:22:59,576
+There are a lot of possible alignments given two sequences.
+
+835
+02:22:59,576 --> 02:23:03,576
+We can have many different alignments, but the best alignment...
+
+836
+02:23:05,907 --> 02:23:26,731
+...sorunca bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde
+
+837
+02:23:28,147 --> 02:23:34,387
+As we said, often there is more than one solution with the same score.
+
+838
+02:23:37,971 --> 02:23:40,891
+We will be again talking about later.
+
+839
+02:23:43,311 --> 02:23:47,072
+The concept of alignment is basically,
+
+840
+02:23:50,072 --> 02:23:53,191
+is a mutual arrangement of two sequences.
+
+841
+02:23:55,092 --> 02:24:15,948
+Bu, parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili bir parçası ile ilgili
+
+842
+02:24:44,371 --> 02:24:47,051
+Bu da bu da, aslında.
+
+843
+02:25:01,299 --> 02:25:05,379
+So, there are some terminologies, in terms of sequence comparison.
+
+844
+02:25:05,379 --> 02:25:18,159
+We can talk about sequence identity, which means exactly the same amino acid or nucleotide in the same position.
+
+845
+02:25:18,819 --> 02:25:20,579
+This is the sequence identity.
+
+846
+02:25:22,899 --> 02:25:24,779
+They are the same, basically.
+
+847
+02:25:49,268 --> 02:26:14,108
+Letters or residues align. And there are some differences. Possibly due to some substitutions with similar chemical properties. Because these are chemical substances, these residues, DNA residues or amino acid residues. One substance.
+
+848
+02:26:14,868 --> 02:26:16,988
+Bu bir diğer bir diğer bir.
+
+849
+02:26:17,648 --> 02:26:19,568
+Bu bir mutasyon,
+
+850
+02:26:19,568 --> 02:26:20,328
+bir
+
+851
+02:26:20,328 --> 02:26:23,247
+deletiyorsan,
+
+852
+02:26:23,247 --> 02:26:25,048
+ve biraz daha farklı.
+
+853
+02:26:26,328 --> 02:26:27,368
+İngilizce
+
+854
+02:26:27,368 --> 02:26:29,087
+aynı sekundas,
+
+855
+02:26:29,208 --> 02:26:29,488
+ama
+
+856
+02:26:29,488 --> 02:26:37,868
+bir
+
+857
+02:26:37,868 --> 02:26:38,347
+sekundas
+
+858
+02:26:38,347 --> 02:26:38,907
+similarity.
+
+859
+02:26:41,396 --> 02:26:46,096
+Another concept is sequence homology. We already mentioned what a homology is.
+
+860
+02:26:47,096 --> 02:26:53,316
+This is the general term that indicates evolutionary relatedness among sequences.
+
+861
+02:26:53,316 --> 02:26:55,976
+They were coming from a common ancestor.
+
+862
+02:27:00,691 --> 02:27:01,091
+Ok.
+
+863
+02:27:02,572 --> 02:27:05,191
+Things to consider in sequence alignment.
+
+864
+02:27:07,611 --> 02:27:13,891
+To find the best alignment, one needs to examine all possible alignments.
+
+865
+02:27:15,191 --> 02:27:21,251
+To reflect the quality of the possible alignments, one needs to score them.
+
+866
+02:27:23,188 --> 02:27:39,867
+There can be different alignments with the same highest score, as I mentioned before. Variations in the scoring scheme may change the ranking of alignments. Variation in the scoring scheme is similar to the example I gave you about parent-er.
+
+867
+02:27:40,987 --> 02:27:44,867
+Your point of view, if it is meaning, then...
+
+868
+02:27:45,139 --> 02:27:47,180
+The result will be totally different.
+
+869
+02:27:47,419 --> 02:27:55,079
+If it is just sounds, they sound very similar or common letters, they will be very close.
+
+870
+02:27:55,079 --> 02:28:00,059
+The scoring schemes basically represents this point of views.
+
+871
+02:28:01,699 --> 02:28:05,840
+We will be discussing the scoring schemes later.
+
+872
+02:28:12,180 --> 02:28:13,860
+We talked about evolution.
+
+873
+02:28:15,819 --> 02:28:21,459
+Let's consider an ancestral sequins as ABCD.
+
+874
+02:28:21,459 --> 02:28:25,020
+This is, of course, a fictional sequins.
+
+875
+02:28:25,260 --> 02:28:25,380
+Okay.
+
+876
+02:28:26,420 --> 02:28:30,459
+And its amino acid contents includes ABCD.
+
+877
+02:28:32,819 --> 02:28:34,299
+Or the sequins.
+
+878
+02:28:36,619 --> 02:28:39,371
+Let's consider two sub...
+
+879
+02:28:40,979 --> 02:28:47,340
+A-C-C-D.
+
+880
+02:28:47,340 --> 02:28:49,500
+A-B-D.
+
+881
+02:28:50,239 --> 02:28:51,459
+A-C-C-D.
+
+882
+02:28:52,260 --> 02:28:55,739
+B in ancestral seconds
+
+883
+02:28:55,739 --> 02:28:58,180
+changed into C
+
+884
+02:28:58,180 --> 02:29:00,459
+and it resulted in
+
+885
+02:29:00,459 --> 02:29:01,020
+a new
+
+886
+02:29:01,020 --> 02:29:04,119
+subspecies seconds.
+
+887
+02:29:04,299 --> 02:29:05,279
+A-C-C-D.
+
+888
+02:29:06,439 --> 02:29:08,439
+And the other one
+
+889
+02:29:09,236 --> 02:29:33,236
+As a shorter sequence, one residue shorter than the ancestral sequence, probably C was deleted or somehow chemically removed, a substance was removed, probably due to a mutation or something, and it resulted in a different...
+
+890
+02:29:33,907 --> 02:29:55,907
+Species. Now, this is the concept. Now, we call this mutation. The other one is deletion. Mutation, one substance, chemical substance, change into the other one. Deletion is one chemical substance is somehow removed from the original chemical structure.
+
+891
+02:30:00,000 --> 02:30:05,880
+A-C-C-D, comparisyon is done in such ways.
+
+892
+02:30:06,000 --> 02:30:14,639
+For example, first one is A-C-C-D is compared with A-B-D in this way.
+
+893
+02:30:15,639 --> 02:30:18,739
+This is one possible alignment.
+
+894
+02:30:27,956 --> 02:30:34,355
+Bu bir alimle.
+
+895
+02:30:37,556 --> 02:30:41,556
+Bu alimle.
+
+896
+02:30:41,556 --> 02:30:43,556
+Alimle.
+
+897
+02:30:43,556 --> 02:30:47,556
+Bu alimle.
+
+898
+02:30:47,556 --> 02:30:49,556
+Alimle.
+
+899
+02:30:49,556 --> 02:30:53,556
+Bence.
+
+900
+02:30:55,956 --> 02:30:57,456
+Optimum alignment.
+
+901
+02:30:58,076 --> 02:31:02,195
+Basically, this sequence alignment is an optimization problem.
+
+902
+02:31:02,756 --> 02:31:08,335
+We want to determine the optimum alignment according to some criteria.
+
+903
+02:31:09,536 --> 02:31:09,716
+Okay.
+
+904
+02:31:10,416 --> 02:31:12,556
+This is the concept of pairwise alignment.
+
+905
+02:31:15,756 --> 02:31:19,695
+One is more likely than the other one.
+
+906
+02:31:19,695 --> 02:31:21,644
+Both may be...
+
+907
+02:31:21,971 --> 02:31:24,432
+Possible, or maybe correct.
+
+908
+02:31:26,291 --> 02:31:31,912
+This total depends on the criteria we evaluate these alignments.
+
+909
+02:31:37,876 --> 02:32:04,427
+Bu, bu
+
+910
+02:32:04,979 --> 02:32:13,979
+ve protein sequins 2. Ve en bazıları yerleştirme, bu dağları yerleştirme.
+
+911
+02:32:13,979 --> 02:32:28,979
+Bu dağları yerleştirme, bu dağları yerleştirme.
+
+912
+02:32:29,620 --> 02:32:32,620
+ve in-dels
+
+913
+02:32:32,620 --> 02:32:40,620
+in-dels
+
+914
+02:32:43,620 --> 02:32:44,620
+here
+
+915
+02:32:44,620 --> 02:32:47,620
+if we evaluated this
+
+916
+02:32:47,620 --> 02:32:49,620
+alignment
+
+917
+02:32:49,620 --> 02:32:51,620
+the first thing we can do
+
+918
+02:32:51,620 --> 02:32:53,620
+is just to count
+
+919
+02:32:53,620 --> 02:32:56,620
+matching letters
+
+920
+02:32:56,879 --> 02:33:00,200
+or residuos, amino asit residuos.
+
+921
+02:33:01,719 --> 02:33:04,200
+This one is a match.
+
+922
+02:33:04,719 --> 02:33:08,439
+This one is match.
+
+923
+02:33:08,959 --> 02:33:11,919
+Again, all star ones are match here.
+
+924
+02:33:13,599 --> 02:33:19,719
+By the way, I am also giving you the terminology of the second cell alignment.
+
+925
+02:33:19,719 --> 02:33:23,239
+If two letters in this...
+
+926
+02:33:23,520 --> 02:33:27,540
+Pairwise sequence alignment are the same. We call it a match.
+
+927
+02:33:28,560 --> 02:33:38,220
+If there is, as I already said, some dashes, these are result of insertions or deletions. We call them indels.
+
+928
+02:33:38,979 --> 02:33:49,780
+If letters differ, they are different, then we call these mismatches.
+
+929
+02:33:50,772 --> 02:33:57,852
+We have matches, mismatches, and indels in pairwise sequence alignment problem.
+
+930
+02:33:58,752 --> 02:34:03,632
+This is a mismatch.
+
+931
+02:34:04,551 --> 02:34:07,012
+Everything without star are mismatched.
+
+932
+02:34:07,852 --> 02:34:08,012
+Okay.
+
+933
+02:34:10,412 --> 02:34:14,832
+Here is a typical DNA sequence alignment.
+
+934
+02:34:16,244 --> 02:34:20,144
+DNA sequence, as you know, is formed by four letters.
+
+935
+02:34:21,364 --> 02:34:26,544
+This is the first sequence, and this is the second sequence with some indels.
+
+936
+02:34:27,943 --> 02:34:35,904
+Again, any letters in two sequences, if they are the same, then these are match.
+
+937
+02:34:36,904 --> 02:34:42,204
+If they are different, such as this one, this is a mismatch, this is a mismatch.
+
+938
+02:34:43,476 --> 02:34:47,976
+Let me indicate these mismatches using this sign.
+
+939
+02:34:49,156 --> 02:34:56,015
+And these are indels again as we have already mentioned here.
+
+940
+02:35:00,244 --> 02:35:04,584
+Okay, all stars here indicates a match.
+
+941
+02:35:06,144 --> 02:35:18,524
+Now my question is, if you want to evaluate this pairwise alignment, what can you suggest me to use?
+
+942
+02:35:22,260 --> 02:35:30,020
+We will be discussing but I am asking you what can we use to objectively evaluate these sequences?
+
+943
+02:35:31,239 --> 02:35:34,979
+What sort of criteria you can use?
+
+944
+02:35:39,700 --> 02:35:42,000
+What sort of metric you can use?
+
+945
+02:35:45,556 --> 02:35:48,996
+I know you don't know yet these concepts, but
+
+946
+02:35:51,435 --> 02:35:57,275
+these are basically two strings or two character arrays.
+
+947
+02:35:57,756 --> 02:36:01,596
+If you want to see these character arrays
+
+948
+02:36:02,355 --> 02:36:05,756
+are similar or not, what metric you can use?
+
+949
+02:36:06,275 --> 02:36:08,355
+You should remember something from
+
+950
+02:36:08,691 --> 02:36:11,572
+O da kursos, such as, I don't know.
+
+951
+02:36:11,891 --> 02:36:14,412
+Okay, you can use edit distance, for example.
+
+952
+02:36:15,572 --> 02:36:18,151
+Is a good answer, correct answer.
+
+953
+02:36:18,912 --> 02:36:20,631
+You can use some metrics.
+
+954
+02:36:20,811 --> 02:36:29,252
+Basically, the concepts we'll be using is very similar to the concepts we use in data mining or machine learning, whatever.
+
+955
+02:36:30,391 --> 02:36:34,252
+You can use simply, first, you have to...
+
+956
+02:36:34,932 --> 02:36:37,312
+Ases the type of the data.
+
+957
+02:36:38,172 --> 02:36:44,532
+What sort of data are these two sequences?
+
+958
+02:36:45,812 --> 02:36:49,712
+Amino acid sequences, protein sequence or DNA sequence?
+
+959
+02:36:49,832 --> 02:36:54,452
+What sort of data they are in terms of the data types?
+
+960
+02:36:56,152 --> 02:37:01,872
+You studied in many different courses, basically, data types in statistical data analysis.
+
+961
+02:37:02,528 --> 02:37:04,968
+ve data mining, machine learning.
+
+962
+02:37:05,608 --> 02:37:09,688
+We always start with discussion on data types.
+
+963
+02:37:10,547 --> 02:37:13,688
+What sort of data these DNA sequences are?
+
+964
+02:37:21,043 --> 02:37:22,403
+Anybody can tell me?
+
+965
+02:37:29,043 --> 02:37:30,984
+String is what sort of data?
+
+966
+02:37:32,203 --> 02:37:35,603
+No, not supervised or unsupervised, but type of the data.
+
+967
+02:37:37,164 --> 02:37:38,443
+Is it numerical?
+
+968
+02:37:43,731 --> 02:37:45,311
+No, then what?
+
+969
+02:37:48,012 --> 02:37:51,972
+It is not numerical. If it is not numerical, then what sort of data is it?
+
+970
+02:37:56,340 --> 02:38:03,000
+In general, how many data types exist in any data science context?
+
+971
+02:38:06,040 --> 02:38:08,180
+Two types, two general types.
+
+972
+02:38:08,299 --> 02:38:11,940
+What are these two data types?
+
+973
+02:38:14,600 --> 02:38:16,000
+You forgot the name.
+
+974
+02:38:16,240 --> 02:38:17,420
+I already said one.
+
+975
+02:38:17,500 --> 02:38:17,940
+Numerical?
+
+976
+02:38:26,388 --> 02:38:33,228
+Or, quantitatif, numerical or quantitatif.
+
+977
+02:38:33,228 --> 02:38:39,868
+Another one is, qualitative or, categorical.
+
+978
+02:38:43,443 --> 02:38:48,384
+Numerical data types have two subtypes. Anybody can remember?
+
+979
+02:38:53,268 --> 02:38:54,927
+Discrete and continuous.
+
+980
+02:38:57,468 --> 02:38:59,668
+Then the categorical ones.
+
+981
+02:39:01,528 --> 02:39:03,507
+Nominal and ordinal.
+
+982
+02:39:04,108 --> 02:39:09,688
+Okay, what sort of data these two sequence types are, amino acid sequences?
+
+983
+02:39:16,819 --> 02:39:29,700
+Categorical data. Okay. You probably discussed in data mining course if you have taken the metrics to be used, numerical data and metrics to be used for categorical data.
+
+984
+02:39:32,520 --> 02:39:43,399
+The first metric which comes to mind is edit distance. Somebody already said we can use
+
+985
+02:39:43,924 --> 02:39:56,564
+Edit distance to assess the similarity degree or to quantify the similarity of these two sequences.
+
+986
+02:39:58,024 --> 02:40:07,424
+So we use some sort of metric and this metric is distance obviously, one of the metrics obviously, or simplest one.
+
+987
+02:40:08,788 --> 02:40:13,788
+Another approach is, if data, if we want to use...
+
+988
+02:40:17,876 --> 02:40:42,476
+Quantitative approaches to evaluate, somehow we need to convert these sequences into categorical sequences into numerical sequences, then we can use the other metrics or the techniques which can be used on numerical data.
+
+989
+02:40:43,924 --> 02:41:09,740
+Ama kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanman
+
+990
+02:41:11,796 --> 02:41:12,796
+Tamam.
+
+991
+02:41:16,564 --> 02:41:43,072
+Bu, bu
+
+992
+02:41:43,072 --> 02:41:45,272
+Basically is measured by what?
+
+993
+02:41:53,843 --> 02:42:04,644
+By counting, by counting, matches, mismatches or indels.
+
+994
+02:42:08,308 --> 02:42:09,927
+Ok, this is test question.
+
+995
+02:42:11,768 --> 02:42:22,768
+Coming or edit distance is found by counting, matching, mismatching or index.
+
+996
+02:42:23,048 --> 02:42:23,587
+Which one?
+
+997
+02:42:33,396 --> 02:42:37,236
+Okay, let's come back to concept of distance.
+
+998
+02:42:39,155 --> 02:42:45,876
+What kind of measure is a distance?
+
+999
+02:42:46,796 --> 02:42:47,976
+Anybody can tell me?
+
+1000
+02:42:51,924 --> 02:42:55,324
+You learned, obviously, you know the concept of distance.
+
+1001
+02:42:56,704 --> 02:43:05,724
+When we use distance to evaluate what, to assess what, we use distance to assess what.
+
+1002
+02:43:12,244 --> 02:43:22,644
+We have two sequences, two categorical data to evaluate what?
+
+1003
+02:43:26,515 --> 02:43:28,495
+We use distance.
+
+1004
+02:43:33,459 --> 02:43:36,019
+You said similarity of the sequences. No.
+
+1005
+02:43:37,459 --> 02:43:45,699
+Distance is a measure to assess dissimilarity of the sequences.
+
+1006
+02:43:47,619 --> 02:43:51,299
+There is a difference between similarity and dissimilarity.
+
+1007
+02:43:51,299 --> 02:43:55,859
+What do we use to assess similarity of two sequences?
+
+1008
+02:44:26,863 --> 02:44:31,043
+Whether it is categorical or numerical.
+
+1009
+02:44:36,147 --> 02:44:50,468
+No, no, no. We use correlation. Correlation is metric for similarity. Distance is metric for dissimilarity.
+
+1010
+02:44:52,308 --> 02:45:00,468
+The difference between correlation and dissimilarity is...
+
+1011
+02:45:05,652 --> 02:45:14,311
+If we use humming or edit distance, okay, we need to, somebody said here, counting different characters.
+
+1012
+02:45:14,311 --> 02:45:24,711
+That means my earlier question, answer to my earlier question, we basically count mismatches in humming distance.
+
+1013
+02:45:26,072 --> 02:45:26,332
+Okay?
+
+1014
+02:45:27,531 --> 02:45:28,311
+If...
+
+1015
+02:45:29,523 --> 02:45:38,023
+Number of mismatches is zero. That means distance is zero. What it means? They are exactly the same.
+
+1016
+02:45:40,743 --> 02:45:53,023
+So in humming distance, we simply count number of different letters, which is mismatches. We called it mismatches.
+
+1017
+02:45:54,644 --> 02:46:10,904
+In terms of our earlier example, if we take this parent ter, we simply find humming distance of these two words, which is one.
+
+1018
+02:46:13,184 --> 02:46:19,384
+Basically, the humming distance is defined by minimum number of letters by which two words differ.
+
+1019
+02:46:19,840 --> 02:46:27,479
+So, in this case, per and ter has a humming distance of 1.
+
+1020
+02:46:28,340 --> 02:46:31,500
+We simply have a metric now.
+
+1021
+02:46:31,580 --> 02:46:35,299
+We can say that, okay, this is humming distances, just 1.
+
+1022
+02:46:35,500 --> 02:46:36,400
+That's a metric.
+
+1023
+02:46:39,040 --> 02:46:40,819
+Okay, it's simple.
+
+1024
+02:46:41,940 --> 02:46:43,319
+It's similarity metrics.
+
+1025
+02:46:48,275 --> 02:47:12,256
+Now, of course, in this case, we simply align these two letters by writing it in two rows and just pairing these two letters for each row.
+
+1026
+02:47:14,164 --> 02:47:22,144
+But we can also have an alignment that it has gaps. This is known as gapped alignment.
+
+1027
+02:47:24,623 --> 02:47:34,084
+This gapped alignment happens if two sequences to be aligned have different lengths.
+
+1028
+02:47:36,963 --> 02:47:37,844
+Or
+
+1029
+02:47:38,004 --> 02:47:42,444
+They have regions that have been inserted or deleted over time.
+
+1030
+02:47:43,764 --> 02:47:51,623
+So, this type of sequences will result in an alignment with some gaps.
+
+1031
+02:47:52,104 --> 02:47:53,524
+This is known as gap alignment.
+
+1032
+02:47:56,024 --> 02:47:58,412
+So, therefore, the...
+
+1033
+02:47:59,059 --> 02:48:10,559
+Dashes, which we showed in previous alignments as dashes, the notion of gaps represented by these dash characters.
+
+1034
+02:48:13,172 --> 02:48:18,731
+Okay, let's consider the words alignment and ligament.
+
+1035
+02:48:19,272 --> 02:48:21,252
+Again, these are two different words.
+
+1036
+02:48:21,372 --> 02:48:22,332
+One is alignment.
+
+1037
+02:48:23,112 --> 02:48:27,231
+Ligament is, I think, some part of body.
+
+1038
+02:48:29,051 --> 02:48:35,332
+These are two different words, but an alignment could be something like this.
+
+1039
+02:48:35,432 --> 02:48:37,912
+Now we have a gap here.
+
+1040
+02:48:38,211 --> 02:48:39,231
+This is known as gap.
+
+1041
+02:48:39,763 --> 02:48:54,563
+or indes, or indes, or indes, simply, probably, from this original word, A is deleted and ligament was resulted in.
+
+1042
+02:48:54,563 --> 02:49:05,043
+So when you align them, a replace corresponds to A, just replace a dash. This is known as gap alignment.
+
+1043
+02:49:07,763 --> 02:49:18,723
+We can also use to evaluate this humming distance or edit distance.
+
+1044
+02:49:18,723 --> 02:49:29,463
+Simply edit distance for this type of alignments are the same as the previous one.
+
+1045
+02:49:35,188 --> 02:49:38,567
+Letters, or simply count number of mismatches.
+
+1046
+02:49:38,988 --> 02:49:45,227
+For this alignment, edit distances, what in this case?
+
+1047
+02:49:46,968 --> 02:49:50,128
+For this alignment, what is edit distance?
+
+1048
+02:49:55,188 --> 02:49:56,347
+Anybody can tell me?
+
+1049
+02:50:01,043 --> 02:50:05,899
+Bu ne kadar ilişkilerin dizi hizalama, ilişkilerin dizi hizalama, ilişkilerin dizi hizalama?
+
+1050
+02:50:09,363 --> 02:50:09,763
+Bu?
+
+1051
+02:50:15,316 --> 02:50:16,316
+Bu da 2?
+
+1052
+02:50:21,043 --> 02:50:24,984
+Just you count mismatches. Is there any mismatches?
+
+1053
+02:50:28,103 --> 02:50:29,504
+Yes, of course.
+
+1054
+02:50:30,543 --> 02:50:30,903
+One.
+
+1055
+02:50:39,092 --> 02:50:44,731
+L-L-I-I-G-G-N-A-M-M-E-E-N-N-T.
+
+1056
+02:50:44,932 --> 02:50:45,452
+It's one.
+
+1057
+02:50:45,572 --> 02:50:46,092
+That's two.
+
+1058
+02:50:47,252 --> 02:50:47,572
+Okay.
+
+1059
+02:50:48,851 --> 02:50:49,963
+This is the...
+
+1060
+02:50:53,620 --> 02:50:58,200
+Alignment score, when we use humming distance.
+
+1061
+02:50:59,460 --> 02:51:02,100
+But what we have here,
+
+1062
+02:51:04,880 --> 02:51:06,060
+a gap alignment.
+
+1063
+02:51:07,060 --> 02:51:10,580
+To consider gap alignment, another
+
+1064
+02:51:10,580 --> 02:51:15,280
+distance metric was
+
+1065
+02:51:18,260 --> 02:51:22,860
+Proposed, which is known as Levenstein distance.
+
+1066
+02:51:25,500 --> 02:51:31,159
+Levenstein distance also considers the gaps to be counted.
+
+1067
+02:51:32,159 --> 02:51:43,020
+In terms of the Levenstein distance, the alignment score for these two words with gap alignment is 2.
+
+1068
+02:51:46,004 --> 02:51:47,664
+We also count this.
+
+1069
+02:51:49,324 --> 02:51:56,004
+The mismatches plus gaps will give us Lerenstein.
+
+1070
+02:51:56,004 --> 02:51:58,904
+I think it's written something like this.
+
+1071
+02:52:01,164 --> 02:52:02,004
+Lerenstein.
+
+1072
+02:52:05,804 --> 02:52:06,564
+Distance.
+
+1073
+02:52:06,804 --> 02:52:07,123
+Anyway.
+
+1074
+02:52:09,064 --> 02:52:09,443
+Okay.
+
+1075
+02:52:10,724 --> 02:52:12,763
+Whenever we need, we can.
+
+1076
+02:52:13,396 --> 02:52:25,396
+...seğe farklı metriksiyonu...
+
+1077
+02:52:25,396 --> 02:52:27,396
+...bettir.
+
+1078
+02:52:27,396 --> 02:52:27,916
+OK.
+
+1079
+02:52:32,211 --> 02:52:36,092
+So to summarize, an alignment can produce one of the following.
+
+1080
+02:52:36,092 --> 02:52:38,092
+A match between two characters.
+
+1081
+02:52:38,252 --> 02:52:40,491
+I have already described this.
+
+1082
+02:52:40,531 --> 02:52:41,592
+This is known as match.
+
+1083
+02:52:41,951 --> 02:52:49,511
+A mismatch between two characters, which is resulted by substitution or mutation.
+
+1084
+02:52:49,991 --> 02:52:57,752
+It represents biological substitution or mutation, which we studied in biology.
+
+1085
+02:52:58,675 --> 02:53:12,155
+A gap in the first sequence, which can be thought of as the deletion of a character in the first sequence or removal of a chemical substance from original species.
+
+1086
+02:53:12,695 --> 02:53:19,675
+Or a gap in the second sequence, which can be thought of as the insertion of a character in the first sequence.
+
+1087
+02:53:20,979 --> 02:53:36,619
+Or, adition of some chemical substance in the first sequence, biologically, these are possible residue alignments, you know, what, basically what is represented in these alignments.
+
+1088
+02:53:42,355 --> 02:53:48,815
+Okay, time is up. We will continue this concept next week.
+
+1089
+02:53:55,156 --> 02:54:00,276
+Or simply, we see the next to just fortify the concepts we have discussed.
+
+1090
+02:54:00,276 --> 02:54:03,916
+Let me give you these two sequences and see.
+
+1091
+02:54:04,476 --> 02:54:07,996
+These are following our two valid alignments.
+
+1092
+02:54:10,356 --> 02:54:14,716
+One is this one with some gaps and the other one is this one.
+
+1093
+02:54:14,796 --> 02:54:17,536
+The question is, which one is better alignment?
+
+1094
+02:54:19,896 --> 02:54:21,276
+Which alignment is the...
+
+1095
+02:54:22,291 --> 02:54:23,051
+BES.
+
+1096
+02:54:24,731 --> 02:54:26,191
+What do we need?
+
+1097
+02:54:28,531 --> 02:54:38,691
+We need to evaluate before answering first or second, we need to evaluate it by using a criteria.
+
+1098
+02:54:38,971 --> 02:54:46,151
+The criteria we have seen so far is we will use Hamidt distance or Levenstein distance.
+
+1099
+02:54:47,151 --> 02:54:47,432
+Okay.
+
+1100
+02:54:48,691 --> 02:55:01,171
+Of course, it depends on what we need to calculate, but for the time being, assume that we have these edit distances, selection or decision criteria.
+
+1101
+02:55:01,171 --> 02:55:15,171
+You will simply determine the Hamming distance or Blumenstein distance and you will decide which score is better according to...
+
+1102
+02:55:16,020 --> 02:55:30,819
+So, according to this Hamming distance, we can determine one or we can use another scoring metric.
+
+1103
+02:55:32,279 --> 02:55:37,720
+We will continue next week, okay, on this subject.
+
+1104
+02:55:39,799 --> 02:55:41,340
+Any question?
+
+1105
+02:55:47,860 --> 02:56:06,203
+Do you have any question?
+
+1106
+02:56:10,195 --> 02:56:11,195
+Var mı bir soru?
+
+1107
+02:56:28,308 --> 02:56:40,228
+Ah, when will we have quizzes? Whenever necessary. I do not give you a time for quizzes. We can have any time.
+
+1108
+02:57:00,724 --> 02:57:02,724
+Bu, bu konuda, online konuda olmalı.
+
+1109
+02:57:02,724 --> 02:57:04,724
+Ama bilmiyorum.
+
+1110
+02:57:04,724 --> 02:57:06,724
+Belki,
+
+1111
+02:57:06,724 --> 02:57:08,724
+biz de
+
+1112
+02:57:08,724 --> 02:57:12,724
+bir eğitim var.
+
+1113
+02:57:12,724 --> 02:57:14,724
+Çok iyi.
+
+1114
+02:57:29,556 --> 02:57:37,636
+Okay, if you don't have a question then or comment, you can leave.
+
+1115
+02:57:56,531 --> 02:58:03,191
+Well, if they decide that education will be face to face, then I don't know.
+
+1116
+02:58:10,835 --> 02:58:12,995
+Ama bu konuda, bu konuda da olmalı.
+
+1117
+02:58:24,852 --> 02:58:26,612
+Okay, then see you next week.
