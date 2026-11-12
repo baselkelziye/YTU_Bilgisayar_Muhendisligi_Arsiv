@@ -1,0 +1,2639 @@
+1
+00:10:53,812 --> 00:10:54,432
+Good afternoon.
+
+2
+00:11:06,676 --> 00:11:15,436
+Okay, we were discussing filogenetik trees some two weeks ago, before the midterm.
+
+3
+00:11:16,316 --> 00:11:21,216
+We will continue with this discussion on filogenetik trees.
+
+4
+00:11:21,475 --> 00:11:31,216
+Just to remind you, the last subject we discussed, basically there are two types of...
+
+5
+00:11:35,539 --> 00:11:40,959
+Filogenetik trees in terms of the gene or species.
+
+6
+00:11:43,099 --> 00:11:57,000
+In gene tree, a filogenetik tree is created based on the divergence observed within a single homologous gene.
+
+7
+00:12:27,220 --> 00:12:54,540
+Bu, bu
+
+8
+00:12:54,548 --> 00:12:55,687
+3-Generation.
+
+9
+00:13:19,412 --> 00:13:31,412
+Another classification of trees are based on the matrix, used matrix basically.
+
+10
+00:13:31,412 --> 00:13:44,412
+One tree is based on the character, another tree based on the distance.
+
+11
+00:13:50,836 --> 00:13:57,836
+İndi, karakter-based filogenetik türler, bu karakteristik bir şeydir.
+
+12
+00:13:57,836 --> 00:13:59,836
+Karakteristik bir şeydir.
+
+13
+00:13:59,836 --> 00:14:13,836
+Bir şeydir.
+
+14
+00:14:14,355 --> 00:14:40,139
+Bu, bu
+
+15
+00:14:41,971 --> 00:15:08,331
+İzlediğiniz için, birçok
+
+16
+00:15:08,851 --> 00:15:35,947
+Bir de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu
+
+17
+00:15:39,539 --> 00:15:46,539
+Bu DNA ve proteinlerle
+
+18
+00:15:46,539 --> 00:16:04,299
+ve proteinlerle
+
+19
+00:15:51,251 --> 00:16:01,371
+So, methods in filogenetik reconstruction can be grouped as follows.
+
+20
+00:16:01,371 --> 00:16:03,831
+The first, distance-based methods.
+
+21
+00:16:11,132 --> 00:16:15,132
+ve proteinlerle
+
+22
+00:16:09,524 --> 00:16:17,524
+İçin, we calculate pairwise distances between sequences and group sequences that are most similar.
+
+23
+00:16:21,491 --> 00:16:28,091
+Bu birçok bir approach ile ilgili birçok birçok birçok birçok birçok.
+
+24
+00:16:28,091 --> 00:16:32,131
+Bu, bu birçok birçok birçok.
+
+25
+00:16:36,532 --> 00:16:46,532
+The other method is character-based methods. It is also known as maximum parsimony.
+
+26
+00:16:47,532 --> 00:16:58,379
+This method assumes that shared characters in different entities result from common descent.
+
+27
+00:17:04,756 --> 00:17:20,016
+Grupçüden on the basis of such shared characters and the simplest explanation for the evolution of characters is taken to be the correct or most parsimonious one.
+
+28
+00:17:23,443 --> 00:17:31,623
+The third class of filogenetik construction methods is known as probabilistic methods.
+
+29
+00:17:31,623 --> 00:17:34,623
+It is also known as maximum likelihood.
+
+30
+00:17:38,996 --> 00:17:48,996
+in which we compute the probability that a dataset fits a tree derived from that dataset
+
+31
+00:17:49,996 --> 00:17:53,996
+given a specified model of sequence evolution.
+
+32
+00:17:56,996 --> 00:18:01,868
+So before we discuss the methods in detail,
+
+33
+00:18:02,644 --> 00:18:09,804
+Let's simply compare these methods in terms of some characteristics.
+
+34
+00:18:10,644 --> 00:18:18,804
+Now, we mentioned distance-based methods, maximum parsimony, and maximum likelihood.
+
+35
+00:18:20,304 --> 00:18:26,564
+The distance-based methods uses only pairwise distances.
+
+36
+00:18:32,211 --> 00:18:36,971
+Maximum parsimony uses only shared derived characters.
+
+37
+00:18:38,132 --> 00:18:42,451
+Maximum likelihood uses all data.
+
+38
+00:18:45,451 --> 00:18:51,331
+Distance based method maximizes distance between nearest neighbors.
+
+39
+00:18:52,331 --> 00:18:57,092
+Maximum parsimony method maximizes total distance.
+
+40
+00:18:57,652 --> 00:19:05,332
+ve maximum likelihood maximizes 3 likelihood given specific parameter values.
+
+41
+00:19:07,332 --> 00:19:13,251
+In terms of the speed, distance-based methods are very fast.
+
+42
+00:19:13,812 --> 00:19:20,372
+Maximum parsimony is slow compared to distance-based methods.
+
+43
+00:19:20,915 --> 00:19:27,275
+Maksimum-likelihyo-methodin, bu da
+
+44
+00:19:27,275 --> 00:19:28,315
+bir deyizde.
+
+45
+00:19:28,315 --> 00:19:29,875
+Çok çok.
+
+46
+00:19:34,483 --> 00:19:48,283
+So, distance-based method can easily be trapped in local optima, so it is less likely to give you the optimum solution.
+
+47
+00:19:49,483 --> 00:19:55,483
+In maximum parsimony methods, assumptions fail when evolution is rapid.
+
+48
+00:19:56,483 --> 00:20:00,000
+In maximum likelihood, the method...
+
+49
+00:20:00,000 --> 00:20:26,892
+Bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu
+
+50
+00:20:27,155 --> 00:20:33,975
+Bu, bu, 13'e
+
+51
+00:20:33,975 --> 00:20:37,855
+ve maximum likelihood
+
+52
+00:20:37,855 --> 00:20:39,935
+model is very good
+
+53
+00:20:39,935 --> 00:20:42,036
+for very small data sets
+
+54
+00:20:42,036 --> 00:20:44,455
+and for testing trees
+
+55
+00:20:44,455 --> 00:20:46,635
+built using other methods.
+
+56
+00:21:04,948 --> 00:21:11,988
+So, distance-based methods we said.
+
+57
+00:21:19,539 --> 00:21:24,539
+We use basically pairwise distances,
+
+58
+00:21:26,539 --> 00:21:30,539
+which is basically a measure of dissimilarity.
+
+59
+00:21:32,539 --> 00:21:34,539
+So in these distance-based methods,
+
+60
+00:21:36,539 --> 00:21:40,539
+we use a sequence alignment concept
+
+61
+00:21:40,539 --> 00:21:46,539
+and we calculate the pairwise distances.
+
+62
+00:21:52,084 --> 00:21:59,463
+So, basically, we create a distance or dissimilar to matrix.
+
+63
+00:22:02,463 --> 00:22:04,804
+We'll see with some examples.
+
+64
+00:22:08,423 --> 00:22:17,963
+A filogenetik tree is then calculated by using some clustering algorithms.
+
+65
+00:22:37,683 --> 00:23:02,571
+Bu, bu
+
+66
+00:23:14,259 --> 00:23:34,799
+Basically, any clustering algorithm, which presumably you studied in a data mining course or in machine learning course, can be utilized in constructing filogenetik three using distance-based methods.
+
+67
+00:23:36,948 --> 00:23:47,887
+Some examples, such example algorithms are known as UPGMA, which we mentioned before,
+
+68
+00:23:50,628 --> 00:23:58,108
+which stands for Unweighted Pale Group Method Using Arithmetic Coverages,
+
+69
+00:24:03,059 --> 00:24:05,899
+Enabild joining clustering method.
+
+70
+00:24:06,920 --> 00:24:11,159
+Or any other clustering method can also be used.
+
+71
+00:24:12,219 --> 00:24:18,559
+The R purpose is not to give you all the methods used in clustering,
+
+72
+00:24:18,559 --> 00:24:29,159
+but how to use clustering approach to build a filogenetik tree.
+
+73
+00:24:37,299 --> 00:24:52,659
+Okay, in UPGMA, as we said, it stands for Unweighted Payable Method with Arithmetic Mean, as name implies.
+
+74
+00:24:53,379 --> 00:24:55,699
+It uses some sort of arithmetic mean.
+
+75
+00:24:57,319 --> 00:25:00,719
+It uses some pairing group method.
+
+76
+00:25:02,259 --> 00:25:03,211
+This is...
+
+77
+00:25:03,731 --> 00:25:08,032
+Bu, oldest, and simplest distance matrix method.
+
+78
+00:25:08,872 --> 00:25:12,152
+It's very easy to implement and very easy to understand.
+
+79
+00:25:14,892 --> 00:25:26,912
+It was proposed originally in the early 1960s to help with the evolutionary analysis of morphological characters.
+
+80
+00:25:49,268 --> 00:25:57,428
+İçeride data, genetik distansı ile ilgili bir
+
+81
+00:26:20,723 --> 00:26:27,683
+It assumes that the pairwise distances between each of the texts are given in the following matrix.
+
+82
+00:26:29,124 --> 00:26:29,324
+Okay.
+
+83
+00:26:30,604 --> 00:26:35,023
+Considering this in our example we have.
+
+84
+00:26:38,516 --> 00:26:42,115
+4 species as A, B, C, D.
+
+85
+00:26:42,836 --> 00:26:45,436
+Now for these 4 species,
+
+86
+00:26:48,155 --> 00:26:53,875
+平-wise distance matrix is something similar to what we see here.
+
+87
+00:27:04,852 --> 00:27:11,432
+In this matrix, we have rows and columns.
+
+88
+00:27:14,692 --> 00:27:22,172
+We list species on row A, B, C and B, C, D.
+
+89
+00:27:23,932 --> 00:27:27,012
+We don't need to paste in here.
+
+90
+00:27:28,092 --> 00:27:31,492
+Now, we each cell.
+
+91
+00:27:32,531 --> 00:27:38,331
+In this matrix indicates a distance measure.
+
+92
+00:27:41,511 --> 00:27:52,951
+DAB, first set, indicates the distance between species A and species B.
+
+93
+00:27:52,951 --> 00:27:55,951
+Or to say...
+
+94
+00:28:21,491 --> 00:28:36,912
+This DAB or DBA, doesn't matter, will be basically a number based on assumed distance metric.
+
+95
+00:28:42,324 --> 00:29:07,884
+DAC is distance between A and C. DAD is distance between A and D. DDD, distance between seconds B and seconds D. And DVC, distance between seconds C and seconds B. And finally, DCD will be distance between seconds C and seconds D.
+
+96
+00:29:13,428 --> 00:29:13,748
+Ok?
+
+97
+00:29:23,092 --> 00:29:30,592
+Bu ilk başta, bu bir distanç matriks.
+
+98
+00:29:30,592 --> 00:29:34,092
+Bir anlayan bir example,
+
+99
+00:29:34,092 --> 00:29:36,892
+bu bir anlayan bir anlayan.
+
+100
+00:29:45,971 --> 00:30:08,364
+UBGMA'yı birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için birleştirmek için
+
+101
+00:30:16,019 --> 00:30:27,879
+We assume that the smallest value in the distance matrix corresponds to DAB, in which case species A and B are the first to be grouped.
+
+102
+00:30:32,596 --> 00:30:49,855
+After the first clustering, a near-distance matrix is computed with the distance between the near group and species C and D, which was translated as
+
+103
+00:30:52,819 --> 00:31:00,240
+Average between two distances, for example, distance between group A, B and C,
+
+104
+00:31:01,579 --> 00:31:10,079
+will be found as the average of distances between A and C and B and C.
+
+105
+00:31:12,099 --> 00:31:19,519
+That's why name comes with average in UPGMA.
+
+106
+00:31:23,251 --> 00:31:27,251
+D, A, B, buçukla ad ve tüketi
+
+107
+00:31:27,251 --> 00:31:33,251
+ve buçukla adı ve buçukla adı ve buçukla adı ve buçukla adı.
+
+108
+00:31:34,251 --> 00:31:39,251
+Bu çekeşe buçukla adı ve buçukla adı ve buçukla adı.
+
+109
+00:31:40,251 --> 00:31:49,251
+Bu çekeşe buçukla adı ve buçukla adı ve buçukla adı ve buçukla adı.
+
+110
+00:31:56,819 --> 00:32:21,387
+Bu, bu
+
+111
+00:32:21,619 --> 00:32:27,619
+Aranjı points are positioned at a distance halfway between each of the species being put,
+
+112
+00:32:29,619 --> 00:32:36,619
+such as d1d d2 for the first plus 3, etc.
+
+113
+00:32:40,276 --> 00:32:45,176
+Bu sadece UPEGMA approach.
+
+114
+00:32:45,176 --> 00:32:50,956
+Şimdi bu approach ile bir örneğin bir örneğin bir örneğin.
+
+115
+00:33:00,723 --> 00:33:08,723
+Let's consider the following alignment between five different DNA sequences.
+
+116
+00:33:10,723 --> 00:33:13,723
+A, B, C, D, E, B, F, 5.
+
+117
+00:33:16,723 --> 00:33:20,723
+Different sequences and these sequences are aligned here.
+
+118
+00:33:26,420 --> 00:33:37,100
+Each group has 10 sequences, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, another 10, another 10, another 10.
+
+119
+00:33:37,100 --> 00:33:43,080
+Total, we have 50 residues here and they are aligned.
+
+120
+00:33:46,559 --> 00:33:50,759
+So to form a distance matrix,
+
+121
+00:33:56,019 --> 00:33:58,700
+Bu bir distans matrix.
+
+122
+00:33:58,700 --> 00:34:03,019
+Bu bir A, B, C, D ve
+
+123
+00:34:03,019 --> 00:34:07,019
+ve B, C, D ve
+
+124
+00:34:07,019 --> 00:34:11,019
+A, B, C, D ve
+
+125
+00:34:11,019 --> 00:34:13,019
+A, A, A
+
+126
+00:34:13,019 --> 00:34:15,019
+A, A
+
+127
+00:34:15,019 --> 00:34:23,340
+A
+
+128
+00:34:24,307 --> 00:34:34,307
+Sel, which indicates distance between sequence A and sequence B, can be worked out like this to be 1.
+
+129
+00:34:34,307 --> 00:34:51,307
+Basically, metric used here is monik distance, which was the number of differences in...
+
+130
+00:34:52,711 --> 00:34:54,711
+A
+
+131
+00:34:52,532 --> 00:34:54,532
+Parabasalignment
+
+132
+00:34:56,532 --> 00:34:58,532
+Bu bir
+
+133
+00:34:59,532 --> 00:35:00,532
+2
+
+134
+00:35:05,235 --> 00:35:05,735
+Tüüü.
+
+135
+00:35:20,947 --> 00:35:35,147
+3, 4, 5, 6, 7, 8, 9.
+
+136
+00:35:35,147 --> 00:35:41,228
+We continue to see if any two letters differ.
+
+137
+00:35:42,307 --> 00:35:48,188
+Ok, we have totaled 9 as a distance.
+
+138
+00:35:49,076 --> 00:35:59,336
+Valle, between A and C, we compare between A and C, we just compare again, sequence A and C.
+
+139
+00:35:59,336 --> 00:36:06,336
+When you do this, we have one here, 10, 10, 10, 10.
+
+140
+00:36:12,532 --> 00:36:13,532
+Tö...
+
+141
+00:36:43,347 --> 00:36:51,007
+B, C, B, D, and B, E, C, D, and C, E, and finally D, E.
+
+142
+00:36:52,608 --> 00:36:56,467
+And this is known as pairwise distance matrix.
+
+143
+00:36:56,648 --> 00:36:57,568
+To start with,
+
+144
+00:37:04,211 --> 00:37:19,731
+Bu, u, p, g, m, a.
+
+145
+00:37:24,403 --> 00:37:31,103
+So that means the first group to form is D and E.
+
+146
+00:37:34,835 --> 00:37:37,055
+Çünkü bu kadar dağılma.
+
+147
+00:37:40,563 --> 00:37:51,283
+So, species D and species C are grouped to form the first part of three.
+
+148
+00:37:59,059 --> 00:38:02,099
+ve bu, şimdi,
+
+149
+00:38:03,219 --> 00:38:25,940
+bu,
+
+150
+00:38:26,996 --> 00:38:38,076
+[öğrenci]
+
+151
+00:38:51,188 --> 00:39:16,715
+A'ı
+
+152
+00:39:16,820 --> 00:39:43,648
+Db'ye deyde
+
+153
+00:39:43,648 --> 00:39:50,648
+10, 13. Bu nef-reduced.
+
+154
+00:39:54,260 --> 00:39:55,500
+Distanç Matrix
+
+155
+00:39:59,507 --> 00:40:11,407
+İteriyat, yine, we will determine the smallest distance, which is apparently 8.
+
+156
+00:40:13,407 --> 00:40:16,587
+And the next group will be AC.
+
+157
+00:40:16,587 --> 00:40:18,327
+Okay.
+
+158
+00:40:22,867 --> 00:40:29,807
+We have DE first and next we have AC.
+
+159
+00:40:29,807 --> 00:40:48,867
+Now again we will rework new distances by taking the average of distances AB and BC.
+
+160
+00:40:52,436 --> 00:40:54,436
+10.
+
+161
+00:41:19,956 --> 00:41:39,115
+Bu, bu
+
+162
+00:41:39,764 --> 00:41:45,844
+AC and DE are closest to each other.
+
+163
+00:41:46,463 --> 00:41:49,463
+Then AC is closer to D.
+
+164
+00:41:49,604 --> 00:41:54,904
+Then finally, these two, three groups are closest.
+
+165
+00:41:54,904 --> 00:42:02,963
+So this is basically how to create a filogenetik tree based on U2GMA.
+
+166
+00:42:30,356 --> 00:42:34,396
+So, we said that we can estimate branch lengths.
+
+167
+00:42:38,931 --> 00:42:43,831
+Basically, this tree describes the relatedness of sequences.
+
+168
+00:42:45,911 --> 00:42:56,831
+It is possible for the topology of filogenetik trees to convey information about the relative degree to which sequences have diverged.
+
+169
+00:42:57,751 --> 00:43:02,051
+Hence, failed trees that convey that information.
+
+170
+00:43:03,059 --> 00:43:07,059
+Oyunun, gen ifadesi, çladogram.
+
+171
+00:43:07,059 --> 00:43:12,059
+We mentioned what a çladogram was before.
+
+172
+00:43:12,059 --> 00:43:24,779
+In the çladogram, the length of branches correspond to the inferred amount of time that the sequences have been accumulating substitutions independently.
+
+173
+00:43:29,076 --> 00:43:37,096
+The relative length of each branch in a cladogram can be calculated using the information in a distance matrix.
+
+174
+00:43:38,215 --> 00:43:46,855
+In the example we've seen, the DE distance is 5 or was 5.
+
+175
+00:43:49,155 --> 00:43:54,936
+If you remember the distance matrix, the smallest distance was 5.
+
+176
+00:43:55,635 --> 00:44:21,612
+...
+
+177
+00:44:22,612 --> 00:44:41,052
+2.5 units long on its view, with scale branch lengths. A and C should be connected to their common ancestor by branches that are, again, divided by 2 or 4 units long because distance between A and C was 8.
+
+178
+00:44:43,059 --> 00:44:49,219
+Bence bu bölümde A, C ve B'ye deyde
+
+179
+00:44:49,219 --> 00:44:50,819
+Bence bu bölümde
+
+180
+00:44:53,460 --> 00:44:56,899
+Bence bu bölümde bu bölümde
+
+181
+00:44:56,899 --> 00:45:00,579
+Bence bu bölümde 6.25 binin
+
+182
+00:45:01,380 --> 00:45:02,579
+Bence bu bölümde
+
+183
+00:45:03,699 --> 00:45:07,059
+Bence bu bölümde bölümde
+
+184
+00:45:08,083 --> 00:45:16,844
+4 of the species depicted in previous slide, could be shown here.
+
+185
+00:45:24,083 --> 00:45:27,764
+Branch lengths are shown next to each branch here.
+
+186
+00:45:29,443 --> 00:45:33,503
+We have basically 4, 4, 2.5, 2.5, etc.
+
+187
+00:45:34,703 --> 00:45:38,283
+It also indicates time in this filogenetik tree.
+
+188
+00:45:43,380 --> 00:45:49,380
+Branches are also drawn to scale to reflect the amount of differences between all species.
+
+189
+00:45:51,380 --> 00:46:04,380
+This very simple approach by estimating branch lengths actually allows UPGMA to intrinsically generate rooted filogenetik trees.
+
+190
+00:46:04,380 --> 00:46:07,380
+They love the UPGMA or
+
+191
+00:46:07,503 --> 00:46:18,123
+Ivarca plasturin, I mentioned, can be used to generate rooted filogenetik trees.
+
+192
+00:46:18,623 --> 00:46:28,583
+You should remember that we classified these filogenetik trees, construing different criteria.
+
+193
+00:46:28,583 --> 00:46:34,583
+One of the criteria was whether the filogenetik tree has a root or not.
+
+194
+00:46:34,976 --> 00:46:39,976
+Bu iki tane, birçok ve birçok birçok.
+
+195
+00:46:39,976 --> 00:46:42,976
+Birçok birçok.
+
+196
+00:46:42,976 --> 00:46:45,976
+Birçok.
+
+197
+00:47:01,204 --> 00:47:08,204
+ve
+
+198
+00:47:08,204 --> 00:47:29,004
+bu
+
+199
+00:47:41,684 --> 00:47:42,043
+Ok.
+
+200
+00:47:46,900 --> 00:47:50,900
+Do you have any question regarding this method?
+
+201
+00:48:04,244 --> 00:48:07,164
+Bu bir simple metod, bu bir şey.
+
+202
+00:48:07,164 --> 00:48:09,224
+Bir şey, bir şey,
+
+203
+00:48:12,024 --> 00:48:15,624
+sonra alınmelerde,
+
+204
+00:48:31,092 --> 00:48:33,511
+You could also use Levenstein distance.
+
+205
+00:48:33,511 --> 00:48:35,112
+In the example,
+
+206
+00:48:40,244 --> 00:48:47,264
+We did not have any jab, but some alignments will have japs.
+
+207
+00:48:47,264 --> 00:48:49,864
+We could have used Lelenstrand distance.
+
+208
+00:48:52,224 --> 00:49:01,984
+Or if we had sequences converted to numerical values,
+
+209
+00:49:02,104 --> 00:49:06,024
+then we could have used distances.
+
+210
+00:49:06,996 --> 00:49:32,012
+Bu,
+
+211
+00:49:36,947 --> 00:49:37,307
+Tamam.
+
+212
+00:49:41,556 --> 00:49:52,976
+Determine branch lengths for a scale tree is only slightly more complicated when it cannot be assumed that evolutionary rates are the same for all languages.
+
+213
+00:50:06,775 --> 00:50:10,775
+Bu,
+
+214
+00:50:06,291 --> 00:50:14,491
+Here we have an example of tree.
+
+215
+00:50:15,051 --> 00:50:18,032
+This is the simplest tree whose branch lengths
+
+216
+00:50:18,032 --> 00:50:20,431
+might have some meaningful information.
+
+217
+00:50:21,791 --> 00:50:24,751
+This one with just three species here.
+
+218
+00:50:24,831 --> 00:50:26,632
+We have A, B, B and C.
+
+219
+00:50:26,632 --> 00:50:33,692
+And one branch point such as the one shown here is one.
+
+220
+00:50:38,612 --> 00:50:52,032
+On such a tree, the length of each of the three branches can be represented by a single letter as shown here, A, B, and C, or which we know the following must be true.
+
+221
+00:50:55,532 --> 00:51:05,791
+Distance between A and B is basically A plus B in terms of the branch lengths.
+
+222
+00:51:06,739 --> 00:51:12,119
+Distance between B and C is basically B plus C.
+
+223
+00:51:13,079 --> 00:51:17,399
+Distance between A and C is A plus C.
+
+224
+00:51:17,579 --> 00:51:18,440
+This is very similar.
+
+225
+00:51:18,679 --> 00:51:22,159
+It is very similar to geometry basically.
+
+226
+00:51:56,947 --> 00:52:02,027
+We already have given you the distances in terms of the branch lengths.
+
+227
+00:52:05,619 --> 00:52:16,059
+Now, the relationship of the distance matrix can be given as this one.
+
+228
+00:52:17,940 --> 00:52:23,759
+This is the distance matrix between sequence A, B, and C.
+
+229
+00:52:26,291 --> 00:52:33,411
+Bence between A and B will be A plus B. Bence between B and C will be B plus C.
+
+230
+00:52:33,411 --> 00:52:36,211
+In terms of the branch lengths.
+
+231
+00:52:41,588 --> 00:52:43,588
+İmput here is
+
+232
+00:52:44,788 --> 00:52:48,588
+Distance AD, Distance BC, Distance AC
+
+233
+00:52:48,588 --> 00:52:50,588
+For three sequences
+
+234
+00:52:51,188 --> 00:52:54,188
+These are the pairwise distances
+
+235
+00:52:54,188 --> 00:53:00,108
+And output is basically punch lengths now
+
+236
+00:53:01,619 --> 00:53:14,659
+In terms of the distances, branch length can be determined as distance AB plus distance AC minus distance BC divided by 2.
+
+237
+00:53:18,099 --> 00:53:26,480
+B could be distance AB plus distance BC minus distance AC divided by 2.
+
+238
+00:53:31,411 --> 00:53:39,671
+C, distance AC plus distance BC minus distance AB divided by 2.
+
+239
+00:53:43,507 --> 00:54:10,507
+Now, this is three. Now, have distance AB. Now, this is A to determine A. Now, we have the distance AB basically in the matrix. Distance AB plus distance AC minus
+
+240
+00:54:11,219 --> 00:54:14,219
+Bc'e
+
+241
+00:54:14,219 --> 00:54:15,219
+Şimdi
+
+242
+00:54:15,219 --> 00:54:40,431
+Bc'e
+
+243
+00:54:38,996 --> 00:55:02,596
+A plus B plus A plus C minus B minus C.
+
+244
+00:55:03,155 --> 00:55:10,235
+At the end, we have C and C, B and B, çeşitli birçok, 2A.
+
+245
+00:55:12,576 --> 00:55:13,815
+Divided by 2.
+
+246
+00:55:14,955 --> 00:55:18,495
+Divided by 2, which is basically A.
+
+247
+00:55:19,855 --> 00:55:22,596
+This is simple geometry, basically.
+
+248
+00:55:33,204 --> 00:55:33,644
+Tamam.
+
+249
+00:55:40,628 --> 00:55:58,628
+So, distance matrix of three sequences and the element unrooted tree, by the way, the tree here is an unrooted tree for three species.
+
+250
+00:55:59,628 --> 00:56:00,548
+Okay.
+
+251
+00:56:04,211 --> 00:56:09,711
+Şimdi, bu şekilde A, B, C'ye görebilirsiniz.
+
+252
+00:56:23,284 --> 00:56:31,564
+ve, simply, you work out the ABC values.
+
+253
+00:56:31,564 --> 00:56:33,564
+Evet.
+
+254
+00:56:33,564 --> 00:56:40,164
+So, final, unroot of 3,
+
+255
+00:56:40,164 --> 00:56:48,484
+with relevant distances on...
+
+256
+00:56:50,068 --> 00:56:56,948
+Bunçs can be determined as shown here for the example.
+
+257
+00:57:06,771 --> 00:57:12,932
+Do you have any questions regarding the subjects we have discussed so far?
+
+258
+00:57:16,291 --> 00:57:17,572
+The method is simple,
+
+259
+00:57:20,932 --> 00:57:22,211
+very straightforward,
+
+260
+00:57:23,892 --> 00:57:26,852
+completely annotated. We start with
+
+261
+00:57:28,771 --> 00:57:33,731
+simple distant matrix and we apply simple miracle plastering.
+
+262
+00:57:34,387 --> 00:57:46,188
+Ve bu şekilde arayacak birçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve buçok ve bu
+
+263
+01:12:38,387 --> 01:12:48,708
+Okay. RNA-Versilasyon method is another popular variant of the UPGMA method.
+
+264
+01:12:50,547 --> 01:13:01,987
+It emphasizes pairing species in such a way that a tree is created with the smallest possible branch length overall.
+
+265
+01:13:06,323 --> 01:13:16,484
+On any unrooted tree, pairs of species that are separated from each other by just one internal molars have to be neighbors.
+
+266
+01:13:22,195 --> 01:13:34,595
+Topoloji of a filogenetik tree, such as the one shown here, gives rise to some useful algebraic relationships between neighbors.
+
+267
+01:13:40,115 --> 01:13:50,916
+If the tree shown here is a true tree for which additivity holds, then the following should be true.
+
+268
+01:13:53,015 --> 01:13:53,275
+Okay.
+
+269
+01:13:55,956 --> 01:14:01,636
+B, A, C, distance between A and C plus distance.
+
+270
+01:14:02,387 --> 01:14:04,608
+B and D
+
+271
+01:14:04,608 --> 01:14:09,047
+A and D
+
+272
+01:14:09,047 --> 01:14:15,167
+B and C
+
+273
+01:14:15,167 --> 01:14:18,988
+A plus B
+
+274
+01:14:18,988 --> 01:14:20,427
+C plus D
+
+275
+01:14:20,427 --> 01:14:21,747
+plus 2E
+
+276
+01:14:23,572 --> 01:14:30,051
+Şimdi bu şekilde, DAB plus DCB plus 2E.
+
+277
+01:14:45,300 --> 01:14:52,300
+İzlediğiniz için, A, B, C ve B ve
+
+278
+01:15:11,699 --> 01:15:12,699
+Seğiniz.
+
+279
+01:15:14,500 --> 01:15:16,739
+There is no root in this tree.
+
+280
+01:15:20,756 --> 01:15:24,015
+So, here is the distance matrix as well.
+
+281
+01:15:24,015 --> 01:15:25,796
+The 11th distance matrix.
+
+282
+01:15:41,747 --> 01:15:50,699
+İlk bir bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden bir deyden
+
+283
+01:16:01,971 --> 01:16:12,731
+In this method, the following conditions, which are known together as the four-point condition, will also be true.
+
+284
+01:16:14,811 --> 01:16:25,731
+DAB plus DCV should be less than DAC plus DVC, and DAB plus DCV should be less than DAB plus DVC.
+
+285
+01:16:27,667 --> 01:16:34,667
+İzlediğiniz için, bir neybirli alınç,
+
+286
+01:16:34,667 --> 01:16:46,667
+ve gençli bir araynı,
+
+287
+01:16:51,731 --> 01:17:09,811
+Fransz-langıç on a filogenetik tree should be additive and while it is not especially sensitive to departures from that assumption, data sets that are not additive can cause this method to generate a tree with an incorrect topology.
+
+288
+01:17:12,572 --> 01:17:15,532
+Let's see an example.
+
+289
+01:20:02,868 --> 01:20:05,108
+Hocam, mikrofonunuz kapalı sanırım.
+
+290
+01:20:12,051 --> 01:20:22,211
+Evet, doğru kapaymış. Baştan başlayayım.
+
+291
+01:20:35,123 --> 01:20:38,123
+Let's consider the disalignment.
+
+292
+01:20:41,123 --> 01:20:48,123
+The distance between these sequences can be shown as a distance table.
+
+293
+01:20:48,123 --> 01:20:50,123
+Given here.
+
+294
+01:20:50,123 --> 01:20:56,123
+Basically, I just repeat how distances are worked up. Very easy.
+
+295
+01:20:56,123 --> 01:21:00,123
+The distance between A and B is 3.
+
+296
+01:21:00,123 --> 01:21:02,091
+1, 2, 3.
+
+297
+01:21:02,484 --> 01:21:08,484
+İzlediğiniz için çok kolay bir şekilde vermek istedik.
+
+298
+01:21:08,484 --> 01:21:19,484
+Ve aynı şey yaptık A ve C, A ve D, B ve C ve C ve D.
+
+299
+01:21:29,268 --> 01:21:30,507
+Distance Matrix
+
+300
+01:21:34,739 --> 01:21:44,099
+So, to create an unrooted tree, we need to work out the branch lengths.
+
+301
+01:21:44,099 --> 01:21:47,979
+We need to estimate the branch lengths.
+
+302
+01:21:52,212 --> 01:21:55,412
+Bu nebos relation method.
+
+303
+01:21:58,231 --> 01:22:02,032
+If we want to construct a root tree,
+
+304
+01:22:02,972 --> 01:22:06,712
+the approach is the first one with UPGMA.
+
+305
+01:22:08,731 --> 01:22:12,192
+If we want to construct unroot tree,
+
+306
+01:22:12,412 --> 01:22:14,112
+we estimate the branch lengths.
+
+307
+01:22:16,532 --> 01:22:35,659
+Bu, bu
+
+308
+01:22:40,083 --> 01:22:42,523
+Bu ne için ne için ne için ne için ne için.
+
+309
+01:22:42,523 --> 01:22:51,083
+İçin
+
+310
+01:22:51,083 --> 01:22:55,684
+bu
+
+311
+01:22:57,524 --> 01:23:12,744
+So, using the information given in this matrix, distance information, we can easily work out the A, B, C, D and E values.
+
+312
+01:23:18,228 --> 01:23:23,948
+I live with you to find determine these values.
+
+313
+01:23:29,971 --> 01:23:35,931
+Şimdi, A ve B'ye görebilecek, 3.
+
+314
+01:23:35,931 --> 01:23:39,771
+Ok, let's see. 2 plus 1 is 3.
+
+315
+01:23:39,771 --> 01:23:46,451
+Distance between A and C is 7. 2, 6 and 7.
+
+316
+01:23:46,451 --> 01:23:57,011
+Distance between A and D is 8. 2, 4. 2 plus 4 plus 2, 8.
+
+317
+01:23:57,716 --> 01:24:14,336
+Distanca between B and D is 7. 4 plus 1 plus 2, 7. Distanca between C and D is 3. 2 plus 1, 3, basically.
+
+318
+01:24:14,336 --> 01:24:20,896
+So, this 3 fits with this table well.
+
+319
+01:24:26,996 --> 01:24:32,835
+Yeni, bu birçok ve simple approach to construct unrotot trees.
+
+320
+01:24:42,579 --> 01:24:50,579
+Enabar joining method is a simple variant of neighbor lines, an aglomerative tree.
+
+321
+01:24:51,579 --> 01:24:58,579
+And so I played choosing equation. Basically in this iteration we build the tree from the bottom up.
+
+322
+01:25:00,579 --> 01:25:05,579
+Start with a star-like tree with all species coming off.
+
+323
+01:25:07,091 --> 01:25:10,411
+A single central model regardless of the number.
+
+324
+01:25:12,231 --> 01:25:19,451
+Nabors are then sequentially found that minimize the total length of the branches on the tree.
+
+325
+01:25:23,764 --> 01:25:28,083
+İmput is an n times n dissimilarity distance matrix.
+
+326
+01:25:29,684 --> 01:25:36,224
+In the first iteration, the n leaves are all in their own clusters.
+
+327
+01:25:37,783 --> 01:25:42,543
+Each cluster forms a set of leaves, but the clusters are distant.
+
+328
+01:25:43,623 --> 01:25:50,023
+At the beginning of each iteration, the tags are partitioned into clusters and for each cluster,
+
+329
+01:25:50,612 --> 01:26:13,612
+İteriyat, a pair of clusters is selected to be made siblings. This results in the trees or the two clusters being merged into a larger rooted tree by making their roots siblings.
+
+330
+01:26:18,163 --> 01:26:25,064
+ve 3 subtrees are merged into a tree on all the taxa bar adding the new node R,
+
+331
+01:26:25,064 --> 01:26:31,163
+and making the roots of the 3 subtrees adjacent to R.
+
+332
+01:26:32,363 --> 01:26:39,163
+We should note that these descriptions suggest that maple joining produces a root root.
+
+333
+01:26:40,152 --> 01:26:54,152
+bu
+
+334
+01:26:39,444 --> 01:26:40,444
+3.
+
+335
+01:26:40,444 --> 01:26:42,444
+4.
+
+336
+01:26:42,444 --> 01:26:44,444
+5.
+
+337
+01:26:44,444 --> 01:26:46,444
+6.
+
+338
+01:26:46,444 --> 01:26:48,444
+7.
+
+339
+01:26:48,444 --> 01:26:50,444
+8.
+
+340
+01:26:50,444 --> 01:26:53,444
+9.
+
+341
+01:26:53,444 --> 01:27:04,608
+10.
+
+342
+01:27:04,608 --> 01:27:05,963
+11.
+
+343
+01:27:03,028 --> 01:27:05,963
+Bu, bu
+
+344
+01:27:18,355 --> 01:27:19,355
+Ok.
+
+345
+01:27:20,755 --> 01:27:26,755
+We mentioned the character-based methods of filogenetik, the second approach.
+
+346
+01:27:29,755 --> 01:27:36,355
+First one, or first group, we want the distance-based methods.
+
+347
+01:27:37,755 --> 01:27:42,956
+Of course, there are more varieties, but it is beyond the scope of this course.
+
+348
+01:27:49,524 --> 01:27:54,524
+İndi, bu karakter-bizde metad, or what we call is maximum parsimony,
+
+349
+01:27:54,524 --> 01:28:03,524
+the concept of parsimony is at the very heart of all karakter-bizde metadsof filogenetik reconstruction.
+
+350
+01:28:05,524 --> 01:28:16,524
+Okay, probably you are wondering what parsimony is.
+
+351
+01:28:16,916 --> 01:28:25,076
+If something is parsimonious, it means someone who was especially careful with the spending of their money.
+
+352
+01:28:29,996 --> 01:28:37,676
+Okay, what is the corresponding Turkish word then if someone who was especially careful with the spending of their money?
+
+353
+01:28:39,416 --> 01:28:40,956
+What do you call it Turkish?
+
+354
+01:29:18,868 --> 01:29:21,448
+What do you call someone if...
+
+355
+01:29:34,579 --> 01:29:35,460
+Olmamışsınız?
+
+356
+01:29:40,756 --> 01:29:41,756
+Ah, cimri, okay.
+
+357
+01:29:43,935 --> 01:29:49,195
+Asim Anous is someone who is very hesitant to spend money.
+
+358
+01:29:49,416 --> 01:29:50,355
+That's okay, cimri.
+
+359
+01:29:57,108 --> 01:29:59,347
+A better word is tutumlu, tutumlu.
+
+360
+01:30:01,927 --> 01:30:22,007
+So, in a biological sense, parsimony is used to describe the process of attaching preference to one evolutionary pathway over another on the basis of which pathway requires the inlocation of the smallest number of mutational events.
+
+361
+01:30:24,435 --> 01:30:41,195
+So, testi corresponde, biological meaning of parsimony. Filogenetik trees represent theoretical models that depict the evolutionary history of two or more sequences.
+
+362
+01:31:38,372 --> 01:31:39,372
+11.
+
+363
+01:31:39,372 --> 01:31:42,372
+12.
+
+364
+01:31:42,372 --> 01:31:43,372
+13.
+
+365
+01:31:43,372 --> 01:31:45,836
+14.
+
+366
+01:31:38,228 --> 01:31:45,836
+Bu, bu konuda, bilgilerin ve bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin
+
+367
+01:31:49,587 --> 01:31:55,108
+So given the sequences and respective positions,
+
+368
+01:31:57,987 --> 01:32:02,788
+the short four-way multiple-sequence alignment shown here
+
+369
+01:32:06,067 --> 01:32:15,268
+contains position that fall into two categories in terms of the information content for a parsimony analysis.
+
+370
+01:32:45,011 --> 01:33:09,811
+Now, position one, all four sequences have the same character here in position one, which is a G, and the position is therefore said to be invariant, because all are G, so invariant.
+
+371
+01:33:10,515 --> 01:33:24,815
+Invariant sites are clearly uninformatif because each of the three possible trees that describe the relationship of the four sequences invokes exactly the same number of mutations.
+
+372
+01:33:29,015 --> 01:33:30,015
+14.
+
+373
+01:33:28,979 --> 01:33:54,635
+Bu, bu
+
+374
+01:33:54,771 --> 01:34:00,771
+4 sekundasın, 3 farklı anadolu trees.
+
+375
+01:34:00,771 --> 01:34:06,771
+Bu, 3 farklı anadolu trees.
+
+376
+01:34:16,467 --> 01:34:30,347
+Now in position two, this is also uninformatif from a parsimony perspective because one mutation occurs in all three of the possible trees.
+
+377
+01:34:36,467 --> 01:34:38,380
+Bu, only one mutation.
+
+378
+01:34:44,307 --> 01:34:55,907
+In position tree, it is considered uninformatik because all tree trees require two mutations.
+
+379
+01:35:01,268 --> 01:35:06,747
+Poussation 4 is uninformatik, because all 3-trees require 3-mutations.
+
+380
+01:35:07,747 --> 01:35:21,628
+Poussation 5 is considered to be informative because one of the 3-trees in which only one mutation and the other 2-alternative-trees both require 2-mutations.
+
+381
+01:35:24,627 --> 01:35:39,188
+So, in position 6, it's also considered as informative because one of the three trees involves only one mutation and the other two alternative trees both require two mutations.
+
+382
+01:35:41,987 --> 01:35:43,268
+As shown here.
+
+383
+01:35:44,387 --> 01:35:51,587
+In general, for a position to be informative regardless of how many sequences are aligned, it has
+
+384
+01:35:51,859 --> 01:36:00,359
+Bu, iki tane nucleotide var.
+
+385
+01:36:00,359 --> 01:36:05,359
+Bu, iki tane parçamalık.
+
+386
+01:36:43,583 --> 01:36:50,663
+Substantial differences in the calculations reached by both types of approaches.
+
+387
+01:36:52,663 --> 01:37:03,043
+Once uninformatif-seit selden, identified and discarded implementation of the past money approach in its simplest form can be straightforward.
+
+388
+01:37:04,064 --> 01:37:08,144
+Every possible tree is considered individually for each informative site.
+
+389
+01:37:09,108 --> 01:37:17,847
+A running telly is maintained for each tree that keeps track of the minimum number of substitutions required for each position.
+
+390
+01:37:18,907 --> 01:37:32,167
+After all informative sites have been considered, the tree that needs to invoke the smallest total number of substitutions is labeled the most parsimonious.
+
+391
+01:37:33,768 --> 01:37:35,427
+Here is the...
+
+392
+01:37:36,212 --> 01:37:37,632
+A11 reference.
+
+393
+01:38:10,543 --> 01:38:16,543
+İzledi, several ekranal filogenetik ağaçlar ve gen ifadesi konuları izledi.
+
+394
+01:38:16,543 --> 01:38:22,543
+İzledi, bir örnek, bir örnek, bir örnek, bir örnek.
+
+395
+01:38:39,539 --> 01:38:44,539
+Let's use the concept in the next example.
+
+396
+01:38:48,532 --> 01:38:57,172
+Maximum parsimani methods predict the evolutionary tree that minimizes the number of steps required to generate the observed variation in the sequences.
+
+397
+01:38:57,731 --> 01:39:01,451
+First, a multiple sequence alignment must first be obtained.
+
+398
+01:39:02,832 --> 01:39:14,252
+For each aligned position phylogenetic trees that require the smallest number of evolutionary changes to produce the observed sequence, changes are identified.
+
+399
+01:39:15,604 --> 01:39:41,195
+Bu, bu
+
+400
+01:39:42,068 --> 01:39:51,244
+Bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örne
+
+401
+01:39:55,572 --> 01:40:05,551
+1 yıl, 1 yıl, 1 yıl, 1 yıl
+
+402
+01:40:09,747 --> 01:40:22,539
+Bu bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de
+
+403
+01:40:25,619 --> 01:40:31,440
+The left tree is preferred over the right tree because this is more parsimonious.
+
+404
+01:40:34,676 --> 01:40:40,676
+Assuming there are four sequences, there are three possible trees as shown here.
+
+405
+01:40:41,676 --> 01:40:47,676
+1,2,3,4, 1,3,2,4, 1,4,3,2.
+
+406
+01:40:47,676 --> 01:40:51,676
+These are three possible ameliyat trees.
+
+407
+01:41:24,948 --> 01:41:42,220
+Bu, bu
+
+408
+01:41:46,836 --> 01:41:49,076
+Consider the following sequences.
+
+409
+01:41:49,636 --> 01:41:50,275
+First,
+
+410
+01:41:51,316 --> 01:41:55,076
+Secunds 1, CACCCCT.
+
+411
+01:41:55,556 --> 01:41:58,836
+Secunds 2, AACCCCT.
+
+412
+01:41:59,956 --> 01:42:01,316
+And Secunds 3,
+
+413
+01:42:03,076 --> 01:42:05,876
+CACTGCTT.
+
+414
+01:42:05,876 --> 01:42:07,076
+And Secunds 4,
+
+415
+01:42:08,435 --> 01:42:12,435
+AACTGCTA.
+
+416
+01:42:15,123 --> 01:42:18,943
+S1, S2, S3, S4, S3.
+
+417
+01:42:20,783 --> 01:42:33,783
+It has two changes, zero changes, zero changes, one change, one change again, one change and one change.
+
+418
+01:42:33,904 --> 01:42:36,503
+Total number of changes sits here.
+
+419
+01:42:37,783 --> 01:42:40,923
+The other three, S1, S3, S2, S4.
+
+420
+01:42:43,604 --> 01:42:48,043
+Amount of changes is work out as seven.
+
+421
+01:42:49,043 --> 01:42:53,404
+Then S1, S4, S2, S3, S3.
+
+422
+01:42:53,404 --> 01:42:56,404
+Amount of the changes is seven.
+
+423
+01:42:59,164 --> 01:43:03,844
+And this is the choosing one.
+
+424
+01:43:03,844 --> 01:43:06,244
+This is the maximum possible.
+
+425
+01:43:10,484 --> 01:43:11,484
+So...
+
+426
+01:43:28,851 --> 01:43:31,631
+Bu konceptı, maximum-parcinol.
+
+427
+01:43:40,243 --> 01:43:43,083
+Ok, the third group of...
+
+428
+01:43:47,091 --> 01:43:51,091
+Methods was, maximum likelihood. Method.
+
+429
+01:43:55,507 --> 01:44:07,547
+ve bu
+
+430
+01:44:14,644 --> 01:44:23,304
+İçin bir modeli de evolutyon, bu da farklı ratesi de transition-transversion ratios can be used.
+
+431
+01:45:06,707 --> 01:45:11,108
+A concept known as tree confidemes is used.
+
+432
+01:45:11,907 --> 01:45:14,867
+All filogenetik trees represent.
+
+433
+01:45:15,867 --> 01:45:21,307
+Hypothesis regarding the evolutionary history of the sequence that make up a data set.
+
+434
+01:45:25,555 --> 01:45:34,975
+Like any good hypothesis, it is reasonable to ask two questions about how well it describes the underlying data.
+
+435
+01:45:35,195 --> 01:45:42,675
+The first question is, how much confidence can be attached to the overall tree and its component parts,
+
+436
+01:45:44,055 --> 01:45:46,595
+which is basically its component parts of branches.
+
+437
+01:46:38,036 --> 01:46:47,036
+Statistik, it is any test or metric that relies on random sampling with replacement.
+
+438
+01:46:48,836 --> 01:46:53,036
+It falls in the broader class of resampling methods.
+
+439
+01:46:54,612 --> 01:47:20,716
+İçin veren birçok
+
+440
+01:47:20,884 --> 01:47:29,884
+A specific cluster is given by the fraction of trees based on the recent data containing that clusters.
+
+441
+01:47:30,884 --> 01:47:36,884
+In the next slides we have an illustration of this approach.
+
+442
+01:47:39,884 --> 01:47:46,884
+Illustration, in this illustration, basically,
+
+443
+01:47:48,180 --> 01:47:52,659
+Bu birçok test for a dataset that is 10 characters long.
+
+444
+01:47:55,460 --> 01:47:59,620
+In each character is considered as a position.
+
+445
+01:48:02,836 --> 01:48:07,195
+posisyon 1-10 ve ver.
+
+446
+01:48:11,507 --> 01:48:14,507
+5 seçenek isim.
+
+447
+01:48:14,507 --> 01:48:18,507
+Evet, in this seçenek isim.
+
+448
+01:48:18,507 --> 01:48:21,507
+1-5 in roman numeros.
+
+449
+01:48:24,507 --> 01:48:32,507
+The original dataset is shown in A.
+
+450
+01:48:32,507 --> 01:48:37,507
+It's in most parsimonious tree as well.
+
+451
+01:48:37,507 --> 01:48:38,412
+This one.
+
+452
+01:48:38,579 --> 01:49:04,268
+İngilizce alın al
+
+453
+01:49:04,372 --> 01:49:11,244
+bu
+
+454
+01:49:18,420 --> 01:49:36,320
+A consensus tree for the tree recent data set is shown with circle values indicating the fraction of those step trees that report the clustering for sequences 1 and 2 and sequences 4 and 5.
+
+455
+01:49:40,884 --> 01:49:41,604
+Seemli.
+
+456
+01:49:54,515 --> 01:50:00,996
+Computational method to estimate the confidence level of a certain flogenetik tree is known as bootstrapping.
+
+457
+01:50:01,715 --> 01:50:06,956
+As we have a sample here.
+
+458
+01:50:07,255 --> 01:50:12,036
+This is another example to show bootstrapping.
+
+459
+01:50:13,496 --> 01:50:21,376
+Some DNA sequence information from red, human, turtle, field, fly, or duck, field, etc.
+
+460
+01:50:23,636 --> 01:50:32,636
+Then we have infertree based on this alignment.
+
+461
+01:50:35,636 --> 01:50:50,636
+So according to this alignment, infertree would show us that red and human side was related than turtle with fire and the orphaned tahrin.
+
+462
+01:50:53,971 --> 01:50:57,471
+Bu, bu, SodaSample 1,
+
+463
+01:51:22,579 --> 01:51:27,579
+Ve bu bölümde varlığı varlığı,
+
+464
+01:51:42,547 --> 01:51:47,047
+Bu konceptı birçok birçok yapıştırma.
+
+465
+01:51:47,047 --> 01:51:50,448
+Now, diğer parametri test,
+
+466
+01:51:50,448 --> 01:51:53,047
+ancak parçamonu,
+
+467
+01:51:53,047 --> 01:51:58,547
+birçok birçok noktası var.
+
+468
+01:51:58,547 --> 01:52:02,547
+Bu, birçok noktası var.
+
+469
+01:52:06,100 --> 01:52:19,820
+A common question is, how much more likely is the most parsimonious tree than a particular alternative that has previously been put forward to describe the relationship between these taxa?
+
+470
+01:52:21,480 --> 01:52:29,280
+One of the first parametric tests was to answer such questions for parsimonious analysis is that of H.
+
+471
+01:52:34,899 --> 01:52:43,899
+Yishino and M. Hasegewa, these are the authors to describe this parametric test method.
+
+472
+01:52:43,899 --> 01:52:53,899
+In their test, it is assumed that informative sites within an alignment are both independent and equivalent
+
+473
+01:52:53,899 --> 01:52:59,627
+and uses the difference in the maximum number of substitutions involved by two trees.
+
+474
+01:53:00,916 --> 01:53:10,916
+D, as a test statistic. A value for the variance, V of D, is determined by constrainin
+
+475
+01:53:10,916 --> 01:53:18,916
+each of the informative sites separately as follows, in which M is the number of informative sites.
+
+476
+01:53:23,380 --> 01:53:37,880
+A pair t-test, this is a statistical test, basically, with n-1 degrees of freedom, can then be used to test the new hypothesis that the two trees are not different from each other.
+
+477
+01:53:39,320 --> 01:53:45,220
+This is the t-test. You should remember this from the statistical data analysis process.
+
+478
+01:53:46,515 --> 01:53:54,695
+Alternatif parametri testler var, bu da
+
+479
+01:54:10,612 --> 01:54:20,612
+Üniversal Tree of Life, using RNA sequences.
+
+480
+01:54:20,612 --> 01:54:29,612
+Üniversal Tree of Life, it's able to study the relationship of uncultuated organisms obtained from a hot-screen in yellow stormyation path.
+
+481
+01:54:29,612 --> 01:54:36,612
+So that's basically some trees.
+
+482
+01:54:37,492 --> 01:54:41,992
+Şöyleşim, relationship of the species.
+
+483
+01:54:44,992 --> 01:54:51,992
+And the symbiosis, this is basically origin of the mother Chomsian and poroplast.
+
+484
+01:54:53,692 --> 01:55:04,992
+Again, this is an example of application of molecular filogenetics.
+
+485
+01:55:26,228 --> 01:55:31,228
+Möğren is better in filogenetik construction.
+
+486
+01:55:31,228 --> 01:55:39,228
+Errors in filogenet may be caused by a small dataset and or limited sampling.
+
+487
+01:55:39,228 --> 01:55:44,228
+This was true for the modern data science.
+
+488
+01:55:44,228 --> 01:55:52,228
+If you have more in time, you have better.
+
+489
+01:55:53,043 --> 01:56:20,043
+...
+
+490
+01:56:19,539 --> 01:56:22,199
+A bad filogenetik construction.
+
+491
+01:56:29,076 --> 01:56:38,715
+Mutations, basically duplications, inversions, insertions, deletions, et cetera, can give inaccurate signals or genomic hotspots.
+
+492
+01:56:39,496 --> 01:56:43,076
+These are small regions of rapid evolution are not easily detected.
+
+493
+01:56:44,376 --> 01:56:46,475
+Homoplasia is another problem.
+
+494
+01:56:46,895 --> 01:56:53,895
+İçinlikle, nefretik değişiklikler,
+
+495
+01:57:14,195 --> 01:57:22,380
+Bu, bu
+
+496
+01:57:27,155 --> 01:57:31,276
+problem, filogenetik, tree reconstruction.
+
+497
+01:57:36,435 --> 01:57:50,987
+Bu, bu
+
+498
+01:58:09,076 --> 01:58:10,076
+No?
+
+499
+01:58:10,076 --> 01:58:13,076
+We have another 10 minutes break.
+
+500
+01:58:15,076 --> 01:58:17,836
+Please come back at 5.10.
+
+501
+02:12:37,268 --> 02:12:49,427
+Ok, in this set of slides, it will be a revision of statistics because statistics is extensively used in bioinformatics.
+
+502
+02:12:49,427 --> 02:13:02,688
+Just to remind you some concepts on statistics, this is some sort of reminder information on statistics.
+
+503
+02:13:03,604 --> 02:13:04,124
+Ok.
+
+504
+02:13:18,003 --> 02:13:20,003
+Büyük bir şey,
+
+505
+02:13:20,003 --> 02:13:26,083
+bu da
+
+506
+02:13:26,083 --> 02:13:29,003
+ve
+
+507
+02:13:29,003 --> 02:13:33,003
+bu da
+
+508
+02:13:33,003 --> 02:13:46,927
+da
+
+509
+02:13:40,051 --> 02:14:07,179
+ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve ilişkilerin ve
+
+510
+02:14:07,444 --> 02:14:11,604
+Arkadaşlar, DNA, analizis.
+
+511
+02:14:14,283 --> 02:14:21,963
+So, again, data analizis can be categorized into several categories.
+
+512
+02:14:23,163 --> 02:14:33,123
+The first is narrative, second is descriptive, then statistical mathematical, and audio optical.
+
+513
+02:14:34,612 --> 02:14:36,931
+ve diğer metodlar.
+
+514
+02:14:58,355 --> 02:15:00,795
+Mastı research and analysis adapt.
+
+515
+02:15:02,135 --> 02:15:03,795
+The first three, basically.
+
+516
+02:15:04,135 --> 02:15:08,035
+The second and third are most popular in Pew, applied on social sciences,
+
+517
+02:15:08,035 --> 02:15:11,175
+which is more relevant to us, as I said.
+
+518
+02:15:17,615 --> 02:15:24,535
+Statistical methods are methods, basically, developed to do something with statistics.
+
+519
+02:15:27,155 --> 02:15:36,076
+Statistics is the meaningful quantities about a sample of object, things, persons, events, corona, etc.
+
+520
+02:15:36,635 --> 02:15:40,715
+This is known as statistics, widely used in many fields.
+
+521
+02:15:41,815 --> 02:15:43,795
+Therefore, we cover here.
+
+522
+02:15:44,555 --> 02:15:53,235
+It is also used extensively in bioinformatics, as we see in other slides or in the lectures.
+
+523
+02:15:55,315 --> 02:16:02,895
+Bu, simple to complex issues related to statistics, we will try to cover some of them.
+
+524
+02:16:03,155 --> 02:16:11,576
+For example, correlation, or ANOVA, MANOVA, et cetera, regression, modeling, et cetera.
+
+525
+02:16:12,576 --> 02:16:16,055
+There are two main categories in statistics.
+
+526
+02:16:16,055 --> 02:16:18,716
+The first one is descriptive.
+
+527
+02:16:23,507 --> 02:16:25,507
+Inferential statistics.
+
+528
+02:16:28,448 --> 02:16:31,507
+We'll first introduce descriptive statistics,
+
+529
+02:16:31,507 --> 02:16:35,507
+then we'll also introduce inferential statistics.
+
+530
+02:16:37,507 --> 02:16:43,507
+Descriptive statistics basically can be described
+
+531
+02:16:43,507 --> 02:16:49,507
+use of sample information to explain made abstraction of population phenomena.
+
+532
+02:16:51,443 --> 02:17:14,063
+Common phenomena could be association, tendency, or causal relationship, effect and causal relationship, or trend, or some sort of patterns, or dispersion, or range.
+
+533
+02:17:16,819 --> 02:17:38,956
+Bu, bu
+
+534
+02:17:41,396 --> 02:17:46,396
+Descutif statistics is used in non-parametric analysis.
+
+535
+02:17:47,396 --> 02:17:52,396
+For example, G2, T, T, Kürver, etc.
+
+536
+02:17:52,396 --> 02:17:56,012
+Considering the inferential statistics,
+
+537
+02:18:00,691 --> 02:18:07,691
+İzlediğiniz için, bu,
+
+538
+02:18:07,691 --> 02:18:09,011
+ve
+
+539
+02:18:09,011 --> 02:18:25,163
+bir
+
+540
+02:18:25,203 --> 02:18:53,131
+Bir bir
+
+541
+02:19:19,603 --> 02:19:47,467
+Bu, bu
+
+542
+02:19:48,020 --> 02:19:53,739
+We evaluate various techniques that can do similar things with respect to research problem.
+
+543
+02:19:54,540 --> 02:19:58,899
+We should know what technique does and what it doesn't.
+
+544
+02:20:00,979 --> 02:20:06,020
+Obviously, we should consult people who knows better.
+
+545
+02:20:07,700 --> 02:20:10,860
+We can pilot some data and evaluate results.
+
+546
+02:20:12,260 --> 02:20:15,319
+There are some principles of analysis.
+
+547
+02:20:17,236 --> 02:20:41,675
+A goal of analysis to explain cause and effect phenomena, or relate research with real-world events, or predict or forecast real-world phenomena based on research, or find answers to a particular problem, make conclusions about real-world events based on the problem, or learn a lesson from the problem.
+
+548
+02:20:43,891 --> 02:20:51,891
+So, data cannot talk, an analysis contains some aspects of scientific reasoning argument,
+
+549
+02:20:51,891 --> 02:21:03,891
+such as define, interpret, evaluate, illustrate, discuss, explain, clarify, compare, contrast
+
+550
+02:21:03,891 --> 02:21:08,876
+of data or certain, izi hizalama.
+
+551
+02:21:09,716 --> 02:21:18,076
+An
+
+552
+02:21:18,076 --> 02:21:19,076
+Analyseist must have four elements.
+
+553
+02:21:19,076 --> 02:21:22,076
+The first element is data or information.
+
+554
+02:21:22,076 --> 02:21:26,076
+The second is scientific reasoning, argumentation.
+
+555
+02:21:26,076 --> 02:21:36,515
+And finding, the results basically, and lesson and conclusions, deductions basically.
+
+556
+02:21:37,299 --> 02:21:37,799
+Ok.
+
+557
+02:21:42,131 --> 02:21:46,131
+Bu tarzı açıkçası.
+
+558
+02:21:46,131 --> 02:21:47,131
+Bu tarzı açıkçası,
+
+559
+02:21:47,131 --> 02:21:48,131
+bu tarzı açıkçası.
+
+560
+02:21:48,131 --> 02:21:49,131
+Bu tarzı açıkçası,
+
+561
+02:21:49,131 --> 02:21:52,131
+bu tarzı açıkçası.
+
+562
+02:21:52,131 --> 02:22:05,387
+Bu tarzı açıkçası.
+
+563
+02:22:06,835 --> 02:22:08,835
+Bu da çok önemli.
+
+564
+02:22:08,835 --> 02:22:13,835
+Visualize the expected answers, visualizations.
+
+565
+02:22:13,835 --> 02:22:18,835
+We will cover visualization a couple of weeks
+
+566
+02:22:18,835 --> 02:22:24,835
+after the statistical discussions on statistics.
+
+567
+02:22:28,211 --> 02:22:32,531
+Obviously, we need to validate the answers with data.
+
+568
+02:22:34,291 --> 02:22:38,871
+We should not tell something not supported by data.
+
+569
+02:22:39,471 --> 02:22:40,851
+That means objectivity.
+
+570
+02:22:43,991 --> 02:22:53,371
+When analyzing, we need to be objective, we need to be accurate, we need to be true.
+
+571
+02:23:07,987 --> 02:23:18,147
+Statistics is about making statements about a population from data observed from a representative sample of population.
+
+572
+02:23:21,747 --> 02:23:35,187
+Basically, in reality, in practice, statistics or methods or approaches, algorithms, statistical algorithms are implemented on.
+
+573
+02:23:58,291 --> 02:24:24,139
+Onlar, bir samplerin bir bölümününün bir bölümününün bir bölümününün bir bölümününün bir bölümününün bir bölümününün bir bölümününün bir bölümününün bir bölümününün bir bölümününün bir bölümününün bir bölümününün bir bölümününün bir bölümününün bir bölümününün bir bölümünününün bir bölümünününün bir bölümünününün bir bölümününününün bir bölümün
+
+574
+02:24:25,172 --> 02:24:45,484
+Bu, bu
+
+575
+02:24:51,572 --> 02:25:10,951
+Obviously, the wrong terminology is a parameter. A parameter is a numerical value that describes a characteristics of a population. So, a statistic.
+
+576
+02:25:12,564 --> 02:25:19,283
+is a numerical measurement that describes a characteristic of a sample
+
+577
+02:25:22,084 --> 02:25:27,283
+we use statistic to infer something about the parameters
+
+578
+02:25:32,500 --> 02:25:36,060
+Data exploration is a concept,
+
+579
+02:25:37,340 --> 02:25:39,899
+after collecting data,
+
+580
+02:25:42,380 --> 02:25:44,180
+taking samples basically,
+
+581
+02:25:44,180 --> 02:25:45,779
+after sampling to data,
+
+582
+02:25:46,779 --> 02:25:50,220
+about population,
+
+583
+02:25:50,540 --> 02:25:55,060
+the next step towards statistical inference and decision making is
+
+584
+02:25:55,819 --> 02:25:59,500
+to perform data exploration.
+
+585
+02:26:00,147 --> 02:26:11,147
+ve bu da
+
+586
+02:26:11,147 --> 02:26:26,147
+bu da
+
+587
+02:26:25,716 --> 02:26:34,716
+Sample and the observed characteristics, or in other senses measured characteristics.
+
+588
+02:26:36,716 --> 02:26:50,716
+To make data more manageable, we need to further reduce the amount of information in some meaningful ways so that we can focus on the key aspect of the data.
+
+589
+02:26:53,200 --> 02:26:56,120
+ve data reduction in data science.
+
+590
+02:26:58,000 --> 02:26:59,560
+Ve apply some
+
+591
+02:27:02,760 --> 02:27:04,120
+per-analyses
+
+592
+02:27:04,120 --> 02:27:05,800
+or data
+
+593
+02:27:05,800 --> 02:27:07,800
+training or data
+
+594
+02:27:07,800 --> 02:27:09,319
+manipulation
+
+595
+02:27:09,319 --> 02:27:10,880
+to extract
+
+596
+02:27:10,880 --> 02:27:14,319
+some characteristics, some features
+
+597
+02:27:14,319 --> 02:27:17,800
+so we deal with less data.
+
+598
+02:27:21,043 --> 02:27:27,963
+Bu, in simple descriptive statistics, summary statistics are used.
+
+599
+02:27:27,963 --> 02:27:35,083
+Basically, summary statistics includes a number of statistical parameters
+
+600
+02:27:35,083 --> 02:27:43,164
+to represent the information in a dataset.
+
+601
+02:27:47,156 --> 02:27:53,036
+Using data exploration techniques, we can learn about the distribution of a variable.
+
+602
+02:27:57,811 --> 02:28:15,592
+Distibition of variable will tell us the possible values it can take, the chance of observing these values, how often we expect to see them in a random sample from the population.
+
+603
+02:28:16,152 --> 02:28:24,432
+Through data exploration, we might detect previously unknown patterns and relationships that are worth further investigation.
+
+604
+02:28:26,040 --> 02:28:29,040
+bu da
+
+605
+02:28:25,427 --> 02:28:52,716
+Bu konuda da
+
+606
+02:29:14,131 --> 02:29:17,992
+We want to estimate the unknown population average.
+
+607
+02:29:18,871 --> 02:29:23,531
+Basically, to do this, we use samples, as I always said.
+
+608
+02:29:24,452 --> 02:29:35,272
+If we use samples, not all population, we always introduce some sort of uncertainty in our estimations.
+
+609
+02:29:35,932 --> 02:29:39,851
+Uncertainty in our estimations is in the form of error, basically.
+
+610
+02:29:41,971 --> 02:29:47,971
+İçin, statistical inference, there is always some uncertainties,
+
+611
+02:29:47,971 --> 02:29:53,971
+which lets to the probability, concept of probability.
+
+612
+02:29:53,971 --> 02:30:04,971
+Mathematical tool to address uncertainty in statistics is basically probability.
+
+613
+02:30:30,100 --> 02:30:51,724
+Bu bilgiler, bilgiler ve bilgilerin bilgilerin bilgilerini
+
+614
+02:31:02,036 --> 02:31:06,036
+which are subject and data analysis
+
+615
+02:31:12,051 --> 02:31:20,612
+Basically, the types of data collected in a study determine the type of statistical analysis that can be used,
+
+616
+02:31:22,371 --> 02:31:28,471
+and which hypotheses can be tested, and which model we can use for prediction.
+
+617
+02:31:29,752 --> 02:31:33,432
+These are basically based on the types of data.
+
+618
+02:31:35,252 --> 02:31:36,871
+In this respect,
+
+619
+02:31:37,587 --> 02:31:42,128
+Bu data can be classified into two major types.
+
+620
+02:31:42,427 --> 02:31:46,087
+We already know this, categorical and quantitative.
+
+621
+02:31:53,268 --> 02:32:00,468
+İndir birçok, birçok, birçok, birçok, birçok, birçok, birçok, birçok, birçok.
+
+622
+02:32:00,468 --> 02:32:06,907
+Bu, bu, birçok, birçok, birçok.
+
+623
+02:32:12,435 --> 02:32:19,315
+Categorical data can be subgrouped into categories based on some qualitative traits.
+
+624
+02:32:21,315 --> 02:32:25,216
+Resulting data are mainly in labels or categories.
+
+625
+02:32:26,935 --> 02:32:31,536
+So, for example, gender or ethnicity.
+
+626
+02:32:32,691 --> 02:32:56,491
+Bu, bu
+
+627
+02:32:56,691 --> 02:32:59,691
+DNA sequenyi, amino acid sequenyi,
+
+628
+02:32:59,691 --> 02:33:01,691
+are categorical data types
+
+629
+02:33:01,691 --> 02:33:03,691
+and they are nominal data types.
+
+630
+02:33:03,691 --> 02:33:08,691
+Depending on the analysis we perform,
+
+631
+02:33:08,691 --> 02:33:11,691
+these data types can be converted
+
+632
+02:33:11,691 --> 02:33:15,691
+to numerical data types
+
+633
+02:33:15,691 --> 02:33:19,691
+or even ordinal data types.
+
+634
+02:33:19,691 --> 02:33:21,691
+There are examples,
+
+635
+02:33:21,691 --> 02:33:23,691
+but originally...
+
+636
+02:33:37,843 --> 02:34:01,843
+Nominal data, obviously you know it, when there is no nature of order of the categories, you call this data nominal, not just black or yellow or it has no order. So this is a nominal data for example. In ordinal data,
+
+637
+02:34:02,868 --> 02:34:12,868
+ve
+
+638
+02:34:24,051 --> 02:34:27,912
+Median pain or more pain on extremely high pain.
+
+639
+02:34:28,131 --> 02:34:29,131
+We have an ordo.
+
+640
+02:34:29,272 --> 02:34:35,112
+So pain in this case could be or is it an ordinal data.
+
+641
+02:34:36,511 --> 02:34:40,311
+We have at least some levels and orderings.
+
+642
+02:34:40,891 --> 02:34:47,871
+If an orderings is possible, this data will be classified as ordinal data.
+
+643
+02:34:50,227 --> 02:34:53,227
+Quantitative or numerical data.
+
+644
+02:34:55,227 --> 02:35:04,227
+Basit, there are numerical measurements where the numbers are associated with the scale measure rather than just with simple labels.
+
+645
+02:35:05,227 --> 02:35:11,227
+Again, they fall in two categories, discrete and continuous.
+
+646
+02:35:14,963 --> 02:35:19,963
+Dikkat edip, numerik data, ve
+
+647
+02:35:19,963 --> 02:35:23,723
+a finite or countable number of possible values,
+
+648
+02:35:23,723 --> 02:35:26,963
+when data represent counts, they are discrete.
+
+649
+02:35:26,963 --> 02:35:31,963
+Quantity is quantitative, data are real numbers,
+
+650
+02:35:31,963 --> 02:35:35,963
+which are continuous with more gaps.
+
+651
+02:35:36,788 --> 02:35:41,568
+Fizikonajı ile quantesine, lang, volume, mass, etk.
+
+652
+02:35:41,688 --> 02:35:44,847
+Bu, genelde considerin continuos.
+
+653
+02:36:10,611 --> 02:36:13,591
+Büyük bir katkıda da arayacak,
+
+654
+02:36:13,591 --> 02:36:15,591
+arayacak bir katkıda da arayacak,
+
+655
+02:36:15,591 --> 02:36:19,591
+ve katkıda da arayacak bir katkıda da arayacak.
+
+656
+02:36:21,591 --> 02:36:30,591
+Bu, bu katkıda da arayacak bir katkıda da arayacak bir katkıda da arayacak.
+
+657
+02:36:30,591 --> 02:36:33,451
+İzlediğinizde katkıda da arayacak bir katkıda da arayacak.
+
+658
+02:36:34,548 --> 02:36:40,247
+Quantitatif, data typik, asumayguzim, averages or means.
+
+659
+02:36:49,396 --> 02:36:52,096
+Okay, I'll stop here and we'll continue next week.
+
+660
+02:36:53,916 --> 02:37:01,716
+Do you have any questions regarding the subjects we discussed today?

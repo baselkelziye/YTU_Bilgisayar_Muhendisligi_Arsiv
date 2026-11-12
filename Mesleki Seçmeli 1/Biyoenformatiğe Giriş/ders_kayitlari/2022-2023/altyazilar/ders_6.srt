@@ -1,0 +1,3235 @@
+1
+00:05:20,244 --> 00:05:20,744
+İşte.
+
+2
+00:05:31,348 --> 00:05:32,548
+Geliyor gömsesiniz.
+
+3
+00:05:33,127 --> 00:05:37,048
+Şimdi yalnız şeyden geliyor. Nasıl uzaktan mı geliyor, yakından mı?
+
+4
+00:05:39,508 --> 00:05:40,948
+Normal gibi geldi.
+
+5
+00:06:06,004 --> 00:06:08,924
+Şimdi normal mi geliyor?
+
+6
+00:06:10,384 --> 00:06:12,004
+Evet hocam.
+
+7
+00:06:16,004 --> 00:06:17,764
+Kulaklıkta bile gerek yok.
+
+8
+00:06:18,724 --> 00:06:19,244
+Tamam.
+
+9
+00:07:22,740 --> 00:07:23,240
+Okay.
+
+10
+00:07:24,439 --> 00:07:28,759
+Just to remind you, the last subject we discussed.
+
+11
+00:07:28,759 --> 00:07:39,160
+We discussed three variants of the dynamic programming approach for sequence alignment.
+
+12
+00:07:40,280 --> 00:07:42,759
+The first one was...
+
+13
+00:07:47,348 --> 00:07:50,908
+Diyanik Programming for Global Alignment.
+
+14
+00:07:50,908 --> 00:07:52,108
+We also...
+
+15
+00:07:54,187 --> 00:07:58,508
+...todd the Needleman and Greenish Alboritim.
+
+16
+00:08:02,803 --> 00:08:04,803
+Initialization
+
+17
+00:08:07,043 --> 00:08:10,803
+was done by using the get penalty and index
+
+18
+00:08:11,603 --> 00:08:15,443
+for row and for first row and first column
+
+19
+00:08:16,483 --> 00:08:19,043
+and recurrence following is just
+
+20
+00:08:20,403 --> 00:08:24,563
+maximum mod is three values as we discussed before.
+
+21
+00:08:26,883 --> 00:08:27,683
+We have the
+
+22
+00:08:29,716 --> 00:08:49,716
+sel to determine, 20 of the sel to determine, and we have the upper corner sel, the upper sel and the left side sel.
+
+23
+00:08:53,652 --> 00:08:58,652
+ve maksimum için.
+
+24
+00:08:58,652 --> 00:09:03,652
+Bu ikinci birçok birçok birçok birçok.
+
+25
+00:09:03,652 --> 00:09:06,652
+Programmanın alındı,
+
+26
+00:09:06,652 --> 00:09:11,652
+ve de SLEEP-WATERMAN algoritma.
+
+27
+00:09:11,652 --> 00:09:14,652
+İntilinizde birçok olarak
+
+28
+00:09:14,652 --> 00:09:20,652
+yaptığımız ilk bölüm ve ilk bölümden birçok olarak
+
+29
+00:09:21,460 --> 00:09:34,460
+Recurrence formula is the same as the global alignment, but with an addition of zero, just reset value, reset to zero.
+
+30
+00:09:35,460 --> 00:09:46,259
+So in this type of alignment, we do not allow negative values for the cells.
+
+31
+00:09:48,436 --> 00:09:51,756
+A minimum, cell value could be zero.
+
+32
+00:09:52,756 --> 00:09:54,436
+The third type of
+
+33
+00:09:57,236 --> 00:09:58,355
+Alignment class
+
+34
+00:10:00,676 --> 00:10:01,956
+or alignment
+
+35
+00:10:05,476 --> 00:10:10,556
+This is somehow a combination of global and local.
+
+36
+00:10:10,916 --> 00:10:15,956
+We start as local but we continue as global.
+
+37
+00:10:19,539 --> 00:10:29,539
+İntializasyon is done by setting first row and first column to zero.
+
+38
+00:10:29,539 --> 00:10:36,539
+But recurrence is same as the global alignment.
+
+39
+00:10:38,539 --> 00:10:43,539
+There are some other variants but in literature but for...
+
+40
+00:10:45,107 --> 00:10:49,607
+Bu nedenle, bu stream'in ve bu stream'in çok iyi.
+
+41
+00:10:53,299 --> 00:11:11,500
+Okay, we noticed that determining the optimal alignment in pairwise sequence alignment very much depends on the scoring scheme we choose, the metric we use basically.
+
+42
+00:11:15,347 --> 00:11:42,027
+Bu, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu
+
+43
+00:12:03,764 --> 00:12:10,764
+ve bu dağılıkları, filmenin matrizesi ve denizde,
+
+44
+00:12:10,764 --> 00:12:14,635
+ve bu dağılıklarına alınmaktan.
+
+45
+00:12:18,611 --> 00:12:42,891
+Bu, bu, çok farklı
+
+46
+00:12:44,467 --> 00:12:59,788
+Pairwise sequence alignment, requires much more meaningful scoring schemes, than the simple scoring schemes, match mismatch score.
+
+47
+00:13:01,971 --> 00:13:19,275
+Bu, bu
+
+48
+00:13:36,307 --> 00:13:38,307
+Yani aslında, naturelindeki,
+
+49
+00:13:38,307 --> 00:13:46,307
+adıcısısıslar,
+
+50
+00:13:46,307 --> 00:13:48,307
+DNA'sı
+
+51
+00:13:48,307 --> 00:14:04,172
+adıcısıslar,
+
+52
+00:14:30,740 --> 00:14:57,419
+Bu, bu
+
+53
+00:15:12,628 --> 00:15:15,628
+ve previously mentioned this.
+
+54
+00:15:16,827 --> 00:15:17,827
+We use
+
+55
+00:15:19,628 --> 00:15:21,628
+three basic parameters
+
+56
+00:15:22,827 --> 00:15:24,228
+in seconds alignment.
+
+57
+00:15:24,428 --> 00:15:26,228
+This is just a reminder.
+
+58
+00:15:28,428 --> 00:15:30,228
+We use scoring systems.
+
+59
+00:15:32,628 --> 00:15:38,028
+In this scoring system, each symbol pairing is assigned a numerical value.
+
+60
+00:15:40,211 --> 00:15:44,211
+Bu bir sürüdü, bir sürüdü, bir sürüdü.
+
+61
+00:15:44,211 --> 00:15:48,211
+Bu sürüdü, bir sürüdü.
+
+62
+00:15:48,211 --> 00:15:50,211
+Ve bir sürüdü.
+
+63
+00:15:50,211 --> 00:15:58,211
+Ben de bir sürüdü.
+
+64
+00:15:58,211 --> 00:16:06,091
+Bir sürüdü.
+
+65
+00:16:06,964 --> 00:16:11,824
+Numerical values, minus 5, minus 2, or whatever.
+
+66
+00:16:12,824 --> 00:16:19,144
+But in practice, there are better approaches for get-conalties.
+
+67
+00:16:19,384 --> 00:16:21,283
+For example, for openings,
+
+68
+00:16:51,412 --> 00:16:56,940
+Bu da bu
+
+69
+00:17:01,971 --> 00:17:07,971
+Ok, we'll first introduce DNA-scoring systems.
+
+70
+00:17:07,971 --> 00:17:13,572
+This is basically much simpler than the amylacid-scoring systems.
+
+71
+00:17:14,371 --> 00:17:20,692
+Because in DNA sequences we have four letters, A, G, C, T.
+
+72
+00:17:21,731 --> 00:17:25,731
+And what we see here, it is a simple.
+
+73
+00:17:27,124 --> 00:17:29,124
+Diner scoring scheme.
+
+74
+00:17:29,124 --> 00:17:44,124
+If the letters of resibus, if we use the normal terminology for sequences, if resibus match, we score as 1.
+
+75
+00:17:44,124 --> 00:17:53,036
+If resibus do not match, then we score as 0.
+
+76
+00:17:54,228 --> 00:17:56,307
+So, this is here.
+
+77
+00:18:13,203 --> 00:18:18,884
+Bu birçok, bu birçok, DNA, birçok, ama çok kolay.
+
+78
+00:18:22,900 --> 00:18:29,600
+AA'ı 1, GG'ı 1, CC'ı 1, TP'ı 1,
+
+79
+00:18:29,600 --> 00:18:31,400
+OTHERWISE'ı 0.
+
+80
+00:18:32,780 --> 00:18:35,400
+Bu bir simple matriksiyon.
+
+81
+00:18:35,400 --> 00:18:37,900
+Bu birçok birçok birçok birçok.
+
+82
+00:18:38,900 --> 00:18:42,900
+Bu, bu birçok birçok birçok.
+
+83
+00:18:43,731 --> 00:19:38,219
+Bu, bu
+
+84
+00:19:38,836 --> 00:19:45,836
+...biyological, bioteleliğe...
+
+85
+00:19:45,836 --> 00:19:48,836
+...interactions.
+
+86
+00:19:49,836 --> 00:19:55,836
+Şimdi, bir örneğin bir örneğin, protein-scorring sistem.
+
+87
+00:20:00,000 --> 00:20:00,500
+izi var.
+
+88
+00:20:03,955 --> 00:20:08,955
+A portion of protein scoring matrix.
+
+89
+00:20:10,955 --> 00:20:23,955
+Normalde 20 protein letters representing each amino asit will be here and 20 will be here.
+
+90
+00:20:24,955 --> 00:20:26,955
+For example, if...
+
+91
+00:20:27,763 --> 00:20:35,183
+There is a match of C's, C matches with C, and the score will be 9.
+
+92
+00:20:36,443 --> 00:20:40,864
+If S matches with an S, score will be 4.
+
+93
+00:20:41,784 --> 00:20:47,583
+Different scoring, different values.
+
+94
+00:20:48,692 --> 00:20:54,711
+If t matches with t, then that will be 5.
+
+95
+00:20:54,852 --> 00:20:55,932
+For example, this one.
+
+96
+00:20:56,332 --> 00:21:03,112
+If t matches with p, and if it's here, t matches with p,
+
+97
+00:21:04,332 --> 00:21:07,632
+a value of 7 will be assigned.
+
+98
+00:21:09,692 --> 00:21:15,632
+If there is a mismatch, now we do not have a fixed or...
+
+99
+00:21:15,988 --> 00:21:17,988
+S ve G'ye bir mishmash var.
+
+100
+00:21:17,988 --> 00:21:21,988
+Ve bu var var.
+
+101
+00:21:21,988 --> 00:21:23,988
+Bu, bu var var.
+
+102
+00:21:23,988 --> 00:21:39,988
+S ve G'ye bir mishmash var.
+
+103
+00:21:39,988 --> 00:21:41,988
+G'ye bir mishmash var.
+
+104
+00:21:43,923 --> 00:21:54,583
+Ok, we'll assign here 0 to determine the score of all this pairwise alignment.
+
+105
+00:21:56,703 --> 00:22:03,764
+For example, k and e, ok, we don't have k and e here to get further down.
+
+106
+00:22:05,903 --> 00:22:09,403
+But we can p and r.
+
+107
+00:22:33,619 --> 00:23:01,259
+bu
+
+108
+00:23:01,587 --> 00:23:04,587
+Bu bir parçalık matriksiyonu,
+
+109
+00:23:25,172 --> 00:23:28,491
+Now, the logic behind this is this.
+
+110
+00:23:33,364 --> 00:23:45,364
+Let's consider amino acid properties shown in this slide.
+
+111
+00:23:45,364 --> 00:23:54,364
+Basically, amino acid, we will see this information a couple of times.
+
+112
+00:24:01,172 --> 00:24:08,172
+Amin-asit, bu, biotemik ve fizikliğe ve
+
+113
+00:24:08,172 --> 00:24:16,172
+ve
+
+114
+00:24:16,172 --> 00:24:19,172
+20
+
+115
+00:24:21,248 --> 00:24:32,748
+Now, we can have, this is amino acids, this one group of some chemical, biotchemical substances, okay, amino acids.
+
+116
+00:24:33,968 --> 00:24:41,008
+But within this single amino acid group, there are subgroups.
+
+117
+00:24:41,907 --> 00:24:48,907
+Ok, such as, some amino acids are tiny in terms of the physical protein.
+
+118
+00:24:48,907 --> 00:24:51,907
+They are very very small.
+
+119
+00:24:51,907 --> 00:24:55,907
+They weigh much less than the others only.
+
+120
+00:24:55,907 --> 00:24:58,907
+Some are just small.
+
+121
+00:25:00,907 --> 00:25:04,907
+Some are aliphatic, some are aromatic.
+
+122
+00:25:04,907 --> 00:25:08,907
+These two are some...
+
+123
+00:25:09,587 --> 00:25:36,971
+...
+
+124
+00:25:36,980 --> 00:25:38,420
+Alipatik.
+
+125
+00:25:39,519 --> 00:25:42,980
+FYWHR aromatik.
+
+126
+00:25:43,099 --> 00:25:44,640
+Some are hydrophobic.
+
+127
+00:25:45,960 --> 00:25:47,319
+They are afraid of water.
+
+128
+00:25:48,839 --> 00:25:50,160
+Not water friendly.
+
+129
+00:25:50,900 --> 00:25:52,700
+Some are hydrophilic.
+
+130
+00:25:53,299 --> 00:25:54,019
+Water friendly.
+
+131
+00:25:54,559 --> 00:25:59,500
+Some are positive, some are negative, some are polar, some charged, etc.
+
+132
+00:26:00,115 --> 00:26:25,996
+Bu, bu
+
+133
+00:26:26,387 --> 00:26:39,339
+bu
+
+134
+00:26:44,211 --> 00:26:57,067
+Ok, birçok birç
+
+135
+00:27:00,564 --> 00:27:02,564
+Bu, bu,
+
+136
+00:27:06,403 --> 00:27:07,124
+nabesinde
+
+137
+00:27:08,324 --> 00:27:10,564
+mutasyonun ve
+
+138
+00:27:11,284 --> 00:27:12,564
+diğer
+
+139
+00:27:12,564 --> 00:27:13,084
+chemical
+
+140
+00:27:13,084 --> 00:27:14,084
+similarity.
+
+141
+00:27:18,900 --> 00:27:30,900
+More similar proteins are likely to connect in charge.
+
+142
+00:27:30,900 --> 00:27:43,900
+So these frequencies or mutation frequencies are then connected to some log odds matrices.
+
+143
+00:27:44,276 --> 00:28:11,019
+Bu, bu
+
+144
+00:28:29,140 --> 00:28:31,400
+There is FEM matrices.
+
+145
+00:28:36,147 --> 00:28:43,267
+PEN is an acronym for percent accepted mutations.
+
+146
+00:28:44,267 --> 00:28:50,827
+Just P for percent, A for accepted and mutations for M.
+
+147
+00:28:51,387 --> 00:28:53,407
+Shortly known as PEN matrices.
+
+148
+00:28:54,267 --> 00:28:57,087
+There are several versions of these PEN matrices.
+
+149
+00:28:57,447 --> 00:28:59,047
+We will be using some of them.
+
+150
+00:29:01,047 --> 00:29:02,927
+Basically, it is derived.
+
+151
+00:29:04,115 --> 00:29:08,115
+Global Alliance of Protein Families.
+
+152
+00:29:09,115 --> 00:29:14,115
+In this global alliance,
+
+153
+00:29:14,115 --> 00:29:19,115
+family members share at least 85% identity.
+
+154
+00:29:19,115 --> 00:29:24,971
+And first to introduce this, Maitis Yelal Beyhoff.
+
+155
+00:29:32,915 --> 00:29:44,755
+BASICALLY, TO DETERMINE THIS VALUES OF METROSIS, SOME PYLOGENETIK TREES ARE USED.
+
+156
+00:29:44,755 --> 00:29:47,755
+WE WILL BE DISCUSSING PYLOGENETIK TREES LATER.
+
+157
+00:30:16,564 --> 00:30:25,564
+The number of replacements were used to compute, as you all call it PEM1 matrices, PEM1.
+
+158
+00:30:28,564 --> 00:30:36,564
+The PEM1 matrix reflects an average change of 1% of all amino acid positions.
+
+159
+00:30:36,564 --> 00:30:41,564
+This one indicates 1% of all amino acid positions.
+
+160
+00:30:43,892 --> 00:30:46,892
+Bu, larger evolutiyelistances,
+
+161
+00:30:51,892 --> 00:30:52,892
+basically,
+
+162
+00:30:54,892 --> 00:31:00,892
+some PEM matrices can be extrapolated from the PEM1 matrix by multiplication.
+
+163
+00:31:02,892 --> 00:31:03,892
+For example,
+
+164
+00:31:03,892 --> 00:31:08,892
+250, 250 mutations per 100 resumers.
+
+165
+00:31:10,387 --> 00:31:36,076
+Bu ne?
+
+166
+00:31:52,531 --> 00:31:55,531
+In this matrix, we see some zeros.
+
+167
+00:31:55,531 --> 00:31:59,531
+The values of zero indicates the frequency of alignment is random.
+
+168
+00:31:59,531 --> 00:32:03,531
+Otherwise, there are some probabilities.
+
+169
+00:32:03,531 --> 00:32:08,531
+And this is how these values are determined.
+
+170
+00:32:10,531 --> 00:32:14,531
+Logar, kimof, n-nob, obviously.
+
+171
+00:32:14,531 --> 00:32:20,460
+Frequency observed frequency divided by expected frequency.
+
+172
+00:32:31,476 --> 00:32:38,276
+So, these different PEMS are used for different evolutional distances.
+
+173
+00:32:46,132 --> 00:32:49,072
+Yani bu ne kadar bir şey bulunduğu,
+
+174
+00:32:49,072 --> 00:32:54,952
+bir de bu bir de bu bir de bu bir de bu.
+
+175
+00:32:58,952 --> 00:33:04,952
+Bir de bu bir de bu bir de bu bir de bu.
+
+176
+00:33:04,952 --> 00:33:12,231
+Bir de bu, bir de bu, bir de bu.
+
+177
+00:33:13,011 --> 00:33:32,619
+Bu, bu
+
+178
+00:33:33,172 --> 00:33:41,572
+And this matrix was derived from alignments of domains of distance related proteins.
+
+179
+00:33:43,311 --> 00:33:46,352
+And then we propose this.
+
+180
+00:33:48,072 --> 00:33:53,672
+Opportunities of each amino acid period in each column of each block.
+
+181
+00:33:54,771 --> 00:33:56,352
+Alignment is counted.
+
+182
+00:34:18,132 --> 00:34:45,260
+Bu, bu
+
+183
+00:35:11,923 --> 00:35:38,315
+...
+
+184
+00:35:40,436 --> 00:35:43,356
+Blossomatisis would be better.
+
+185
+00:35:44,396 --> 00:35:53,396
+When comparing closely related proteins, one should use lower-femol, higher-blossomatisis.
+
+186
+00:35:58,260 --> 00:36:23,980
+Bu, bu
+
+187
+00:36:25,108 --> 00:36:33,452
+Bu bu bir tüm bu çoğun bir çoğun
+
+188
+00:36:42,996 --> 00:37:10,572
+Şimdi, bu
+
+189
+00:37:10,675 --> 00:37:37,291
+Bu, bu
+
+190
+00:37:37,396 --> 00:37:38,396
+Numeriz.
+
+191
+00:37:38,396 --> 00:37:41,396
+Now, the...
+
+192
+00:37:41,396 --> 00:37:44,396
+There are two types of...
+
+193
+00:37:44,396 --> 00:37:49,396
+...exchanges...
+
+194
+00:37:49,396 --> 00:37:53,396
+...or mutation, basically.
+
+195
+00:37:53,396 --> 00:38:01,396
+If the substance, chemical stuff, sorry, mutate acid changes into another one.
+
+196
+00:38:01,396 --> 00:38:03,396
+This is known as mutation.
+
+197
+00:38:04,016 --> 00:38:06,016
+Bu bir tür mutasyonlar var.
+
+198
+00:38:06,016 --> 00:38:08,016
+Bir bir tür mutasyonlar var.
+
+199
+00:38:08,016 --> 00:38:28,016
+Bir tür mutasyonlar var.
+
+200
+00:38:28,307 --> 00:38:30,688
+Pyramidin changes into pyramidin.
+
+201
+00:38:30,688 --> 00:38:32,688
+This is the transitional mutation.
+
+202
+00:38:33,747 --> 00:38:36,867
+That is A in terms of the character.
+
+203
+00:38:37,487 --> 00:38:43,667
+A changes to G, or T changes into C or Y-savage.
+
+204
+00:38:43,747 --> 00:38:46,728
+So G changes into A, C changes into T.
+
+205
+00:38:47,891 --> 00:38:53,771
+The other mutations, transversional or transversional mutation.
+
+206
+00:38:53,771 --> 00:39:08,831
+In this type of mutation, which is less likely, pyrin changes into pyrin or pyrin changes into pyrin.
+
+207
+00:39:10,271 --> 00:39:13,211
+A changes into T or C.
+
+208
+00:39:13,972 --> 00:39:32,524
+G'de t'e t
+
+209
+00:39:36,371 --> 00:39:47,251
+A slightly better scoring scheme could be used for nucleotide plus DNA sequelsi.
+
+210
+00:39:50,996 --> 00:40:13,452
+Bu, bu
+
+211
+00:40:14,068 --> 00:40:18,648
+A, G was given 0, G, G was given 1, etc.
+
+212
+00:40:19,908 --> 00:40:34,888
+Instead now, A, A is given 20, G, G is given 20, A, T is given 20, C, C is given 20.
+
+213
+00:40:36,248 --> 00:40:39,068
+That means a match score is 20.
+
+214
+00:40:43,795 --> 00:40:47,115
+Ama, mismatch scores are different.
+
+215
+00:40:48,735 --> 00:40:58,635
+If A and G mismatch happens, a score of 10 is given.
+
+216
+00:40:59,456 --> 00:41:03,996
+When we look at A and G, it's transition type mutation.
+
+217
+00:41:04,536 --> 00:41:10,536
+Transition type mutation has a score of 10, obviously not.
+
+218
+00:41:11,155 --> 00:41:14,555
+A match score, but this is a mismatch score.
+
+219
+00:41:15,235 --> 00:41:20,635
+Our transversional mutation
+
+220
+00:41:20,635 --> 00:41:26,996
+or a mismatch of say T and G
+
+221
+00:41:26,996 --> 00:41:30,295
+or T and A
+
+222
+00:41:30,295 --> 00:41:33,615
+which is transversional type mutation
+
+223
+00:41:33,615 --> 00:41:36,315
+between to pyramidal mutation
+
+224
+00:42:03,539 --> 00:42:08,539
+buçaklık yapıcı daha iyi.
+
+225
+00:42:08,539 --> 00:42:21,539
+Bu, buçaklık yapıcı olarak kullanılıyor.
+
+226
+00:42:27,923 --> 00:42:31,923
+So, as we already said,
+
+227
+00:42:32,923 --> 00:42:36,923
+this is known as angust exchange matrix.
+
+228
+00:42:36,923 --> 00:42:46,923
+They are not equal, some are easily substituted because they have similar physical chemical properties and structures.
+
+229
+00:42:46,923 --> 00:42:52,492
+And the probability of substitution is higher in this case.
+
+230
+00:42:52,820 --> 00:42:58,820
+Some mutations between agonases, buğrafimle eti, simul konos.
+
+231
+00:43:03,443 --> 00:43:23,596
+Bu, bu
+
+232
+00:43:29,460 --> 00:43:29,779
+Ok.
+
+233
+00:43:35,155 --> 00:43:39,155
+Properties of nucleotides are not the same as well.
+
+234
+00:43:39,155 --> 00:43:41,155
+Nucleotases.
+
+235
+00:43:45,155 --> 00:43:51,155
+So, considering these properties, we have different matrices.
+
+236
+00:43:51,155 --> 00:43:57,155
+This one is Lossam 62 matrix.
+
+237
+00:43:57,155 --> 00:44:02,155
+Here, how these properties are used.
+
+238
+00:44:29,972 --> 00:44:35,372
+Biochemical or physiochemical properties of these substances.
+
+239
+00:44:44,532 --> 00:45:11,659
+Bu tablidin var, bu konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu bir konumlu
+
+240
+00:45:28,467 --> 00:45:35,467
+As Golan said, BLAST, MUTAST, VAR, DEMİST,
+
+241
+00:45:35,467 --> 00:45:40,467
+these are basically interpolations of...
+
+242
+00:45:44,884 --> 00:45:50,384
+Bu elaboration on this subject, I'll do not repeat them.
+
+243
+00:46:18,068 --> 00:46:31,068
+Hire glosan matrisi, similar to lower termatrisi. Hire glosan matrisi, similar to higher termatrisi.
+
+244
+00:46:31,068 --> 00:46:37,068
+They represent, for example, more divergent relationships.
+
+245
+00:46:47,572 --> 00:46:52,012
+To give more information is this person accepted mutation.
+
+246
+00:46:55,012 --> 00:47:02,492
+A lady introduced these matrices, Margaret Bayhoff.
+
+247
+00:47:04,612 --> 00:47:08,572
+It represents amino acid substitutions.
+
+248
+00:47:15,123 --> 00:47:17,243
+Alignment of a common protein sequence.
+
+249
+00:47:20,683 --> 00:47:33,323
+Around 1572 amniose substitutions, 71 groups of protein is reflex 85% similarity.
+
+250
+00:47:34,723 --> 00:47:40,803
+Accepted mutations do not negatively affect the protein's fitness.
+
+251
+00:47:44,019 --> 00:47:50,519
+Similar sequences organized into filogenetik trees. We will be discussing filogenetik tree later.
+
+252
+00:47:50,519 --> 00:47:55,519
+Number of aggressive changes counted.
+
+253
+00:47:55,519 --> 00:48:06,519
+Zellati mutabili trees or mutabili properties are evaluated.
+
+254
+00:48:10,291 --> 00:48:15,851
+20 x 20 amino acid substitution matrix is calculated.
+
+255
+00:48:16,851 --> 00:48:22,891
+As we have 20 different amino acids, 20 in row, 20 in column.
+
+256
+00:48:24,331 --> 00:48:29,092
+Then the values in the cells.
+
+257
+00:48:33,748 --> 00:48:36,947
+We have already discussed this.
+
+258
+00:48:38,947 --> 00:48:41,347
+Matrices, different PEM matrices.
+
+259
+00:48:44,068 --> 00:48:56,548
+In PEM1 matrix, normalize probability is multiplied by 10,000 and these matrices of things. This is the PEM1 matrix.
+
+260
+00:49:04,307 --> 00:49:17,707
+Logon matrices, basically, pem matrices, pem matrices, pem matrices, are converted to logon matrices.
+
+261
+00:49:20,407 --> 00:49:27,307
+Here, the odds ratio for each substitution is calculated.
+
+262
+00:49:35,027 --> 00:49:42,627
+If we take the sporesin periose matrix and divide by frequency of amino acid,
+
+263
+00:49:44,827 --> 00:49:53,627
+then it is converted ratio to log 10 and multiply by 10.
+
+264
+00:49:55,427 --> 00:50:02,027
+You take average of log-o's ratio for converting A to B and converting B to A.
+
+265
+00:50:02,579 --> 00:50:05,279
+Result is a symmetric matrix.
+
+266
+00:50:09,759 --> 00:50:15,000
+Is a penkenin 50-long-oğuz matrix.
+
+267
+00:50:19,092 --> 00:50:23,092
+ve gen ifadesi konuları izledi.
+
+268
+00:50:31,795 --> 00:50:47,115
+So, if we say for example, if we use dynamic programming, say for global alignment of two sequences,
+
+269
+00:50:50,579 --> 00:50:57,579
+ve
+
+270
+00:50:57,579 --> 00:51:07,579
+if you are asked to use PAM-TAML-50-Logos matrix to determine the values of this dynamic programming matrix cells,
+
+271
+00:51:11,579 --> 00:51:13,579
+what we are doing will
+
+272
+00:51:14,291 --> 00:51:23,291
+Determine the values of the cells using the match and mismatch scores given this table.
+
+273
+00:51:23,291 --> 00:51:31,291
+If it is say for example a match of C and C, then we will take it as 12.
+
+274
+00:51:31,291 --> 00:51:36,291
+If it is S and C, we will be using this 0 here.
+
+275
+00:51:36,980 --> 00:51:38,980
+İçeride bir şey.
+
+276
+00:51:38,980 --> 00:51:41,980
+Bu, P'c'e
+
+277
+00:51:41,980 --> 00:51:43,980
+Bu, minus 2.
+
+278
+00:51:47,380 --> 00:51:51,539
+İ2, say, P, minus 2.
+
+279
+00:51:54,539 --> 00:51:56,380
+O zaman, Smith-Waterman,
+
+280
+00:52:01,043 --> 00:52:02,184
+Uuuuh!
+
+281
+00:52:06,579 --> 00:52:14,251
+Bu, bu
+
+282
+00:52:21,523 --> 00:52:22,664
+Bizi seneler,
+
+283
+00:52:27,956 --> 00:52:33,956
+DNA-Sporing Matrix Approaches
+
+284
+00:52:34,956 --> 00:52:37,956
+Bu aynı concept is given here
+
+285
+00:52:43,347 --> 00:52:51,507
+Transition and Transversion type mutations are represented here.
+
+286
+00:52:51,507 --> 00:52:58,148
+This is transition type and these are transversion type.
+
+287
+00:53:02,996 --> 00:53:28,684
+Bu, bu
+
+288
+00:53:28,692 --> 00:53:34,692
+İzlediğiniz için, alfa, birçok birçok birçok.
+
+289
+00:53:34,692 --> 00:53:36,692
+Bu birçok birçok.
+
+290
+00:53:43,956 --> 00:53:46,876
+Kimura model as well.
+
+291
+00:53:48,076 --> 00:53:52,556
+In this alpha is rate of transitions, beta is rate of transversions.
+
+292
+00:54:02,739 --> 00:54:06,139
+Bu farklı beta, farklı alpha var.
+
+293
+00:54:06,139 --> 00:54:09,619
+Bu da bu DNA,
+
+294
+00:54:26,387 --> 00:54:33,387
+Bu modeliyle uniform mutasyonun
+
+295
+00:54:33,387 --> 00:54:57,112
+Y-uniform
+
+296
+00:54:49,972 --> 00:55:11,884
+3.4.3.4
+
+297
+00:55:16,820 --> 00:55:23,820
+This is another example, Uniform Mutation Breits.
+
+298
+00:55:28,340 --> 00:55:32,460
+bu
+
+299
+00:55:32,460 --> 00:55:33,900
+ve
+
+300
+00:55:33,900 --> 00:55:34,560
+3-4
+
+301
+00:55:34,560 --> 00:55:35,960
+5-3
+
+302
+00:55:35,960 --> 00:55:37,800
+6-6
+
+303
+00:55:37,800 --> 00:55:41,867
+7-6
+
+304
+00:55:59,507 --> 00:56:00,507
+Bu ne?
+
+305
+00:56:04,179 --> 00:56:04,679
+Hoca.
+
+306
+00:56:35,555 --> 00:56:40,555
+8-6
+
+307
+00:56:40,555 --> 00:56:44,555
+9-6
+
+308
+00:56:44,555 --> 00:56:51,055
+10-6
+
+309
+00:56:35,123 --> 00:56:59,243
+Bu, bu
+
+310
+00:57:01,972 --> 00:57:06,012
+Siyer, intendenizler.
+
+311
+01:12:34,868 --> 01:12:35,188
+Ok.
+
+312
+01:12:40,756 --> 01:12:57,876
+Now, we said that in an alignment, there are three parameters to consider, metscore, mismetscore, and gaps.
+
+313
+01:12:59,316 --> 01:13:07,316
+We already discussed more appropriate or better scoring schemes.
+
+314
+01:13:07,956 --> 01:13:30,604
+Bu, bu
+
+315
+01:13:31,475 --> 01:13:36,235
+biophysical properties of amino acids and nucleic acids.
+
+316
+01:13:37,395 --> 01:13:40,595
+It will give us more meaningful alignments.
+
+317
+01:13:42,095 --> 01:13:47,075
+We also have gaps in many cases to consider.
+
+318
+01:13:48,495 --> 01:13:54,595
+So far, we consider simple linear gaps.
+
+319
+01:13:54,595 --> 01:13:56,475
+Hocam, slide.
+
+320
+01:13:57,876 --> 01:14:02,536
+Devam ettiriyor musunuz? Bir tane ekranda kalmış da.
+
+321
+01:14:02,816 --> 01:14:04,256
+Yok yok, henüz değilim.
+
+322
+01:14:05,115 --> 01:14:05,456
+Tamam.
+
+323
+01:14:05,816 --> 01:14:06,435
+Henüz değilim.
+
+324
+01:14:06,916 --> 01:14:07,416
+Tamam.
+
+325
+01:14:12,275 --> 01:14:18,416
+Next, we'll discuss this gap issue.
+
+326
+01:14:18,416 --> 01:14:20,695
+Okay.
+
+327
+01:14:30,836 --> 01:14:34,836
+So far, we assumed linear gap penalty.
+
+328
+01:14:34,836 --> 01:14:43,836
+That is, if there is a gap, we use a fixed score, say, minus 2, 3, 3, 5, 4, whatever.
+
+329
+01:14:43,836 --> 01:14:47,532
+And for each gap, we use this.
+
+330
+01:14:48,724 --> 01:15:01,264
+However, over evolutionary time, it is more likely that a contiguous block of residues has become inserted, deleted in a certain region.
+
+331
+01:15:02,764 --> 01:15:10,804
+So, there might be more than one gap inserted.
+
+332
+01:15:11,731 --> 01:15:17,291
+ve residus ve substancı ısırtık ve delet edil.
+
+333
+01:15:30,515 --> 01:15:43,735
+So, in this case, a better scoring scheme could be used to represent gaps.
+
+334
+01:15:43,735 --> 01:15:57,876
+For example, for initial gap opening, we can have a higher penalty for extending these gaps.
+
+335
+01:15:58,739 --> 01:16:10,411
+Bu, bu
+
+336
+01:16:14,323 --> 01:16:17,995
+Ok, GAPS have been modeled as DINAS.
+
+337
+01:16:21,460 --> 01:16:24,460
+Bu birçok birçok birçok birçok birçok.
+
+338
+01:16:24,460 --> 01:16:26,460
+Bu birçok birçok.
+
+339
+01:16:26,460 --> 01:16:48,684
+Birçok birçok.
+
+340
+01:16:49,235 --> 01:16:54,475
+But in other approach, one gap of length carry.
+
+341
+01:16:56,595 --> 01:17:00,075
+Scoring scheme should penalize mill gaps more.
+
+342
+01:17:01,075 --> 01:17:07,216
+So in this respect, a fine gap penalty can be considered.
+
+343
+01:17:08,716 --> 01:17:15,395
+This is a simple, a fine gap penalty scoring scheme.
+
+344
+01:17:16,275 --> 01:17:35,655
+If W, X is part of GAP penalty, G is GAP opening penalty, R is GAP extend penalty, X is GAP length.
+
+345
+01:17:43,731 --> 01:17:52,731
+Gap penalty, çoğun aki-çor matrix. Gaps not excluded, caps not over included.
+
+346
+01:17:52,731 --> 01:18:00,731
+Typical values in applications, g is minus 12, r is minus 4.
+
+347
+01:18:00,731 --> 01:18:04,731
+This is the typical value.
+
+348
+01:18:04,731 --> 01:18:11,403
+So, by using this affine gap penalty, you will have
+
+349
+01:18:26,579 --> 01:18:32,579
+...
+
+350
+01:18:59,060 --> 01:19:21,708
+Bu, bu
+
+351
+01:19:25,268 --> 01:19:26,548
+M-I-J
+
+352
+01:19:30,484 --> 01:19:32,004
+is determined by
+
+353
+01:19:32,004 --> 01:19:38,043
+this recursion equation. Now we have
+
+354
+01:19:38,043 --> 01:19:40,043
+B
+
+355
+01:19:40,043 --> 01:19:44,824
+M and I
+
+356
+01:19:44,824 --> 01:19:48,463
+is determined as
+
+357
+01:19:48,463 --> 01:19:50,404
+maximum of
+
+358
+01:19:50,404 --> 01:19:51,844
+B
+
+359
+01:19:51,844 --> 01:19:53,604
+IJ
+
+360
+01:19:53,604 --> 01:19:54,844
+maximum of
+
+361
+01:19:54,844 --> 01:19:57,363
+this value
+
+362
+01:20:08,819 --> 01:20:16,199
+I is determined, I is determined by using this formula.
+
+363
+01:20:17,939 --> 01:20:23,420
+This M is match matrix in this recursion equation.
+
+364
+01:20:24,319 --> 01:20:28,479
+B is delete matrix and I is insert matrix.
+
+365
+01:20:33,140 --> 01:20:49,140
+Ok, you have more matrices to calculate. You can see the problem of calculating dynamic matrix gets complicated.
+
+366
+01:20:51,780 --> 01:20:57,140
+Anyway, we are not going to give you this algorithm much more than time.
+
+367
+01:20:58,771 --> 01:21:25,387
+Şimdi, bir algoritma altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir altyazıları da bir
+
+368
+01:21:25,939 --> 01:21:27,939
+Altyazı M.D.
+
+369
+01:21:38,323 --> 01:21:43,323
+Can anybody tell me the advantage of dynamic programming now so far we discussed?
+
+370
+01:21:57,652 --> 01:21:58,532
+Mözef.
+
+371
+01:22:05,268 --> 01:22:08,524
+bu
+
+372
+01:22:40,467 --> 01:22:42,467
+ve optimal alignment
+
+373
+01:22:42,467 --> 01:22:48,467
+bu iyi optimizasyon altyazı kullanarak
+
+374
+01:22:48,467 --> 01:22:52,467
+ve bu 2.0 altyazı kullanarak
+
+375
+01:22:52,467 --> 01:22:54,467
+bu optimal alignment
+
+376
+01:22:56,467 --> 01:23:00,467
+bu bir scoring scheme
+
+377
+01:23:00,467 --> 01:23:02,467
+testi bir adlandıcı
+
+378
+01:23:02,467 --> 01:23:04,467
+ama
+
+379
+01:23:05,203 --> 01:23:09,203
+Every approach has its own disadvantages as well.
+
+380
+01:23:10,203 --> 01:23:14,203
+Two main drawbacks, disadvantages,
+
+381
+01:23:16,203 --> 01:23:19,203
+dynamic programming approaches.
+
+382
+01:23:19,203 --> 01:23:20,203
+The first one,
+
+383
+01:23:22,203 --> 01:23:26,203
+their compute and memory intensive.
+
+384
+01:23:35,796 --> 01:23:44,796
+Bu, aslında, birçok birçok birçok birçok birçok birçok birçok birçok birçok.
+
+385
+01:23:44,796 --> 01:23:51,796
+Birçok birçok birçok birçok birçok birçok.
+
+386
+01:23:51,796 --> 01:24:01,796
+Bu, aslında, birçok birçok birçok birçok birçok.
+
+387
+01:24:02,676 --> 01:24:06,676
+Ve bu konumlar için diğer bir şey var.
+
+388
+01:24:25,587 --> 01:24:32,747
+ve çünkü, as you Erbilan said, is called back option, you have to traceback, basically.
+
+389
+01:24:32,747 --> 01:24:36,247
+Traceback to determine the alignments.
+
+390
+01:24:36,247 --> 01:24:40,747
+You need memory to save the...
+
+391
+01:24:40,747 --> 01:24:53,247
+At least, if even you do not save the old compound, old subvalues, you need to save at least the...
+
+392
+01:24:53,908 --> 01:24:59,908
+Sel-Values, which determines the other Sel-Values.
+
+393
+01:25:03,699 --> 01:25:16,139
+Bu, bu
+
+394
+01:25:19,412 --> 01:25:31,275
+Bu bir de
+
+395
+01:25:38,547 --> 01:25:39,547
+So...
+
+396
+01:25:42,899 --> 01:26:02,399
+There are some approaches to reduce the effects of these drawbacks to dynamic programming in airspace algorithms, for example, in this.
+
+397
+01:26:02,707 --> 01:26:10,747
+İngiltere
+
+398
+01:26:28,115 --> 01:26:42,315
+So basically in this linear space algorithm approaches in dynamic programming we have a complete matrix cells to calculate and to find to fill in.
+
+399
+01:26:42,315 --> 01:26:45,315
+Now in linear space algorithms.
+
+400
+01:26:45,743 --> 01:26:57,743
+We do not consider all of the cell values, but rather we determine a linear space and do the calculations within this linear space.
+
+401
+01:26:57,743 --> 01:27:04,743
+Of course, once you do this, what happens to your first command?
+
+402
+01:27:06,743 --> 01:27:07,743
+This one.
+
+403
+01:27:07,743 --> 01:27:10,743
+When you use some linear space algorithms,
+
+404
+01:27:13,043 --> 01:27:16,043
+We modify this first comment.
+
+405
+01:27:17,043 --> 01:27:23,043
+Anyone can suggest a modification to first comment?
+
+406
+01:27:32,148 --> 01:27:38,868
+Bu, basic grammatical modification will be, if you use some linear space approaches,
+
+407
+01:27:40,948 --> 01:27:49,747
+in dynamic programming, then we can say that dynamic programming approaches using linear space algorithms
+
+408
+01:27:51,347 --> 01:27:57,908
+may give you the optimal alignment between two sequences given a scoring skill. May give you.
+
+409
+01:27:59,667 --> 01:28:26,699
+Bu, bu
+
+410
+01:28:36,275 --> 01:28:39,735
+Evet, let's see alternative approaches.
+
+411
+01:28:42,735 --> 01:28:48,956
+Unire-space algorithms, such as Miller-Miller, Meyers-Miller, as we said,
+
+412
+01:28:49,136 --> 01:28:54,615
+the other one is similar approach, what known as bond dynamic programming,
+
+413
+01:28:54,615 --> 01:29:01,216
+or some potential sub-bonded.
+
+414
+01:29:02,915 --> 01:29:03,775
+Bonds.
+
+415
+01:29:04,532 --> 01:29:26,284
+or bandit, sınırlandırılmış, dynamic programming, or the asam ad-hoc algorithms such as dynamic package, they use this speed up.
+
+416
+01:29:26,579 --> 01:29:33,579
+ve
+
+417
+01:29:33,579 --> 01:29:38,579
+bu,
+
+418
+01:29:38,579 --> 01:29:41,579
+geneliyizdik,
+
+419
+01:29:41,579 --> 01:29:45,579
+bu,
+
+420
+01:29:55,028 --> 01:30:00,068
+Özellikle Bayer-Miller algoritma ve bilgilerin
+
+421
+01:30:19,475 --> 01:30:23,475
+ve nasıl çalışanlar, ne yapıyorlar, ne yapıyorlar
+
+422
+01:30:25,475 --> 01:30:27,475
+İzlediğiniz için bir örnekler
+
+423
+01:30:46,260 --> 01:31:01,639
+Preparar a report, 3, 4, 5-page report on bounded or bounded dynamic programming used in bioinformatics.
+
+424
+01:31:05,011 --> 01:31:05,771
+Evet.
+
+425
+01:31:16,692 --> 01:31:23,192
+So, now we know that we can use dynamic programming for tail-wise sequence alignment.
+
+426
+01:31:23,192 --> 01:31:29,992
+We have the appropriate scoring scheme.
+
+427
+01:31:29,992 --> 01:31:34,692
+We can use an appropriate gap penalty.
+
+428
+01:31:34,692 --> 01:31:37,692
+We know or FI gap penalty.
+
+429
+01:31:37,692 --> 01:31:42,192
+Now we have actual alignment, tail-wise alignment.
+
+430
+01:31:42,192 --> 01:31:44,192
+Now the question is,
+
+431
+01:31:46,195 --> 01:31:50,195
+Alignment we found is meaningful or not?
+
+432
+01:31:51,195 --> 01:31:53,195
+Or significant or not?
+
+433
+01:31:55,195 --> 01:32:03,195
+How do you test or how do you assess the significance of alignment?
+
+434
+01:32:04,195 --> 01:32:06,195
+What do you think?
+
+435
+01:32:06,195 --> 01:32:12,195
+What can you do to assess the alignment of significance?
+
+436
+01:32:21,971 --> 01:32:32,891
+If you are given as a hormone, what would you consider to assess its significance?
+
+437
+01:32:35,011 --> 01:32:36,771
+Anyone has an idea?
+
+438
+01:32:41,492 --> 01:32:44,612
+Most profil iskadi, statistical data analysis.
+
+439
+01:33:29,140 --> 01:33:31,140
+We can use some distributions.
+
+440
+01:33:37,427 --> 01:33:50,427
+Ok, in assessing this significance of alignment, a distribution known as Gumbel-Gumbel extreme value distribution has been used.
+
+441
+01:33:51,427 --> 01:33:52,427
+Ok.
+
+442
+01:33:57,300 --> 01:34:04,300
+İzlediğiniz için,
+
+443
+01:34:04,300 --> 01:34:12,300
+ve
+
+444
+01:34:12,300 --> 01:34:14,300
+ileriyat
+
+445
+01:34:14,300 --> 01:34:16,300
+ve
+
+446
+01:34:16,300 --> 01:34:24,288
+ileriyat
+
+447
+01:34:18,484 --> 01:34:25,484
+So, at 10, we will give you an example, but let's go for some theoretical concepts.
+
+448
+01:34:25,484 --> 01:34:44,484
+Sequence 1 has length of n, sequence 2 has length of n, random sequences, these are two random sequences, okay.
+
+449
+01:34:45,011 --> 01:34:53,791
+When two segments of length m and m are not obviously similar but show an alignment.
+
+450
+01:34:56,671 --> 01:35:01,492
+So we need to assess the significance of this alignment.
+
+451
+01:35:01,492 --> 01:35:05,832
+If they are exactly the same or very very very similar we don't need.
+
+452
+01:35:06,228 --> 01:35:31,051
+Bu, bu
+
+453
+01:35:50,260 --> 01:35:53,644
+Ve ilişkilerin için teşekkür ederim.
+
+454
+01:35:54,003 --> 01:35:57,123
+If the characters or letters
+
+455
+01:35:57,123 --> 01:35:59,764
+match exactly the same in two sequences,
+
+456
+01:35:59,764 --> 01:36:03,523
+you don't need it, but in many cases, it will not.
+
+457
+01:36:06,003 --> 01:36:10,083
+So, the alignment of scores of random sequences
+
+458
+01:36:10,083 --> 01:36:14,403
+follows the Gamble-Extremory distribution.
+
+459
+01:36:14,403 --> 01:36:17,363
+This is the Gamble-Extremory distribution.
+
+460
+01:36:17,363 --> 01:36:21,363
+Basically, it's not exactly symmetrical as Gaussian.
+
+461
+01:36:22,420 --> 01:36:47,307
+Bu, bu
+
+462
+01:36:49,076 --> 01:36:57,076
+Bu bazı resurslar için daha fazla bilgilerin verici bilgilerin.
+
+463
+01:37:00,180 --> 01:37:08,180
+So, if you use this Gumbach-Stream-Wine distribution,
+
+464
+01:37:08,180 --> 01:37:19,300
+the expected number of alignments it has scored at least s is given by this equation.
+
+465
+01:37:21,780 --> 01:37:27,059
+Expected value is defined as e, e-value.
+
+466
+01:37:28,083 --> 01:37:47,724
+K, M, M, E, power minus lambda, S. S being the score. Now the other parameters, M, M, lengths of the sequences. K and lambda are some statistical parameters.
+
+467
+01:37:49,324 --> 01:37:54,724
+Dependent on scoring system and background residue frequencies.
+
+468
+01:37:59,988 --> 01:38:00,988
+Evet.
+
+469
+01:38:02,587 --> 01:38:06,988
+Bu bir şekilde
+
+470
+01:38:06,988 --> 01:38:07,988
+bir şekilde
+
+471
+01:38:07,988 --> 01:38:08,988
+alımlar.
+
+472
+01:38:08,988 --> 01:38:10,988
+İlgili bilgiler,
+
+473
+01:38:10,988 --> 01:38:11,988
+bu şekilde
+
+474
+01:38:11,988 --> 01:38:12,988
+alımlar.
+
+475
+01:38:12,988 --> 01:38:14,988
+Bu şekilde
+
+476
+01:38:14,988 --> 01:38:16,988
+alımlar.
+
+477
+01:38:16,988 --> 01:38:18,220
+Bu şekilde
+
+478
+01:38:21,619 --> 01:38:28,619
+S'eqliotik ağaçlar ve gen ifadesi konuları,
+
+479
+01:38:49,524 --> 01:39:00,524
+İzlediğiniz için, birçok, birçok, birçok, birçok, birçok, birçok, birçok.
+
+480
+01:39:06,847 --> 01:39:07,847
+alımlar.
+
+481
+01:39:06,579 --> 01:39:13,380
+Bu konuda normal score to bitscores.
+
+482
+01:39:15,380 --> 01:39:17,779
+Bu bir formula.
+
+483
+01:39:17,779 --> 01:39:21,380
+Bu bir bit.
+
+484
+01:39:21,380 --> 01:39:24,779
+Bir logaritma 2.
+
+485
+01:39:25,979 --> 01:39:31,579
+Delta S minus nmk divided by nm2.
+
+486
+01:39:34,003 --> 01:39:42,484
+Bu, obviously, previous one was in log 10, but to convert in log 2, this is the formula to use.
+
+487
+01:39:44,463 --> 01:39:50,604
+The e-valid corresponding to a given bit score, 10 then we calculated as this one.
+
+488
+01:39:51,384 --> 01:39:56,804
+We have mn to all minus s in bit scores.
+
+489
+01:39:58,163 --> 01:39:59,123
+Very simple.
+
+490
+01:40:02,547 --> 01:40:18,547
+Konverting to a net is similar, however we just substitute e for 2 in double equations because natural logarithm is based on e-value which is 2.76 something type of height.
+
+491
+01:40:23,636 --> 01:40:32,296
+Programatik
+
+492
+01:40:32,296 --> 01:40:34,296
+Şimdi
+
+493
+01:40:34,296 --> 01:40:38,896
+P-value
+
+494
+01:40:38,896 --> 01:40:40,136
+P-
+
+495
+01:40:40,136 --> 01:40:42,476
+Probability
+
+496
+01:40:42,476 --> 01:40:44,236
+P-value
+
+497
+01:40:44,236 --> 01:40:45,956
+Probability
+
+498
+01:40:45,956 --> 01:40:48,355
+Gibbons
+
+499
+01:40:48,627 --> 01:40:58,228
+İçin bir
+
+500
+01:41:02,579 --> 01:41:08,880
+Bu, bu, basically, tanda-approximated, s is 1.
+
+501
+01:41:12,500 --> 01:41:16,500
+We use more simplified equations.
+
+502
+01:41:19,300 --> 01:41:22,800
+If a scoring matrix has been squared to beat scores,
+
+503
+01:41:22,800 --> 01:41:28,500
+then it completely determines whether or not an alignment is significant.
+
+504
+01:41:29,971 --> 01:41:38,531
+A typical amino acid-scoring matrix, k equals 0.1, and lambda depends on the values of the scoring matrix.
+
+505
+01:41:38,531 --> 01:41:44,571
+These are the scoring matrix-dependent parameters as we discussed before.
+
+506
+01:41:45,711 --> 01:41:51,651
+If a PEM or BLOSOM matrix is used, then lambda is recomputed.
+
+507
+01:41:53,043 --> 01:42:12,363
+For example, if the log-oats matrix is in units of bits, then the lambda can be determined as, filogenetik, log eq, and the significance cutoff can be calculated as log q m n.
+
+508
+01:42:15,363 --> 01:42:17,884
+It is very simple.
+
+509
+01:42:21,011 --> 01:42:45,099
+Tamam, bu da bu
+
+510
+01:42:45,460 --> 01:42:54,460
+Bu, nörting 2x will give us bits of information. As we mentioned before, log e x will give us lots of information.
+
+511
+01:42:54,460 --> 01:43:04,460
+This is similar, basically. A quick calculation would be if bit-scoring system is used, significant happen is this.
+
+512
+01:43:04,460 --> 01:43:09,460
+I just summarized what I have said so far. Log 2 and n.
+
+513
+01:43:11,460 --> 01:43:12,460
+So...
+
+514
+01:43:13,747 --> 01:43:14,927
+As an example,
+
+515
+01:43:34,003 --> 01:43:48,403
+So, in such a problem, the significance cutoff will be simply, log 2, 250x250x250x250x16 bits.
+
+516
+01:43:52,115 --> 01:43:54,115
+3.2.2. Fikon sıkı katılır.
+
+517
+01:43:57,652 --> 01:44:06,532
+M and M are, each filogenetik is sequence 1 ile ilgili M, sequence 2 ile ilgili N.
+
+518
+01:44:07,891 --> 01:44:17,332
+Both are filogenetik and log to filogenetik times filogenetik will give us 16 bits in terms of 2 bits.
+
+519
+01:44:21,460 --> 01:44:25,460
+Pantone 50,
+
+520
+01:44:26,460 --> 01:44:29,460
+following alignment is found.
+
+521
+01:44:29,460 --> 01:44:31,460
+This is the
+
+522
+01:44:34,460 --> 01:44:37,460
+result of a dynamic programming.
+
+523
+01:44:38,460 --> 01:44:39,460
+Okay.
+
+524
+01:44:39,460 --> 01:44:40,460
+I'm sorry.
+
+525
+01:44:40,460 --> 01:44:42,460
+This one.
+
+526
+01:44:44,460 --> 01:44:48,460
+Dynamic programming resulted in
+
+527
+01:44:48,640 --> 01:44:51,640
+İzalama, is an example of course.
+
+528
+01:44:54,640 --> 01:45:02,640
+You can determine actually what is the total score of this alignment by using FAMP-Morfin P-Matrix.
+
+529
+01:45:02,640 --> 01:45:10,412
+Or F, we will have metscore, metscore, mismetscore, metscore.
+
+530
+01:45:10,899 --> 01:45:20,920
+mismatch score, metscore, etc. from the table PEM250 and you can find the actual score, protein score.
+
+531
+01:45:23,079 --> 01:45:37,059
+Anyway, using this PEM250 matrix, actual score was found to be 73 as indicated here.
+
+532
+01:45:39,731 --> 01:45:48,231
+Now we have an S-value. We remember the formula we have discussed so far.
+
+533
+01:45:50,532 --> 01:46:03,932
+We need to convert this into the pan-permative matrix to determine the values of these matches and mismatches and find out the total score.
+
+534
+01:46:08,500 --> 01:46:17,679
+So, we continue. S is in 10 log 10 x. So, this should be converted to the Bitsch curve.
+
+535
+01:46:18,639 --> 01:46:29,779
+Because what we said, 10 matrices are basically matrices determined by using this equation.
+
+536
+01:46:38,323 --> 01:46:39,323
+Sells
+
+537
+01:46:39,323 --> 01:46:40,323
+Determined
+
+538
+01:46:40,323 --> 01:46:42,323
+By using this equation
+
+539
+01:46:42,323 --> 01:46:45,323
+This is the original matrix values
+
+540
+01:46:45,323 --> 01:46:49,323
+But in Pem matrices
+
+541
+01:46:49,323 --> 01:46:52,323
+So now we will be using
+
+542
+01:46:52,323 --> 01:46:54,323
+A simple conversion
+
+543
+01:46:54,323 --> 01:46:56,323
+Which was this one
+
+544
+01:46:56,323 --> 01:46:59,323
+S10 log 10x
+
+545
+01:47:02,515 --> 01:47:07,035
+So, S divided by 10 log 10x.
+
+546
+01:47:08,635 --> 01:47:19,555
+So, S divided by 10 log 10x times log 2, 10 log 2, 10.
+
+547
+01:47:21,055 --> 01:47:25,975
+We are converting to log 2 bits both.
+
+548
+01:47:27,091 --> 01:47:31,091
+So, finally, S is determined to be...
+
+549
+01:47:35,988 --> 01:47:39,248
+Approximately, this one.
+
+550
+01:47:40,328 --> 01:47:44,608
+1 over 3S.
+
+551
+01:47:50,323 --> 01:47:52,323
+1 by 3S.
+
+552
+01:47:55,203 --> 01:47:56,203
+So,
+
+553
+01:47:58,563 --> 01:48:00,323
+this is the approximate
+
+554
+01:48:02,563 --> 01:48:06,883
+scoring bits, 73 divided by 3,
+
+555
+01:48:08,963 --> 01:48:16,723
+almost 24 bits, just, this is actually simple approximation, you see what has been done here, it's simple.
+
+556
+01:48:58,579 --> 01:48:59,560
+Bir şey mi dediniz?
+
+557
+01:49:04,595 --> 01:49:06,015
+Ok, gav.
+
+558
+01:49:10,323 --> 01:49:13,443
+So, the significance cutoff is?
+
+559
+01:49:17,460 --> 01:49:20,460
+16 minutes we calculated as before.
+
+560
+01:49:20,859 --> 01:49:23,059
+Now these are cutoff value.
+
+561
+01:49:23,059 --> 01:49:30,859
+Now, we say since the alignment score is above the significance cutoff,
+
+562
+01:49:31,859 --> 01:49:37,859
+we consider this alignment is a significant local alignment.
+
+563
+01:49:38,659 --> 01:49:42,859
+If the...
+
+564
+01:49:43,572 --> 01:49:48,572
+BİT score was less than 16,
+
+565
+01:49:50,211 --> 01:49:55,931
+then we would consider this alignment is not a significant alignment.
+
+566
+01:50:06,260 --> 01:50:17,260
+Bu konceptı, simple statistik, to assess the significance of the environment.
+
+567
+01:50:19,260 --> 01:50:27,260
+Mikrofonlar açık sıktı katabilir misiniz? Ancak direkt ilin açarsınız.
+
+568
+01:51:50,420 --> 01:51:50,779
+Ok.
+
+569
+01:51:55,667 --> 01:51:58,667
+Bu bir simple example,
+
+570
+01:51:58,667 --> 01:52:01,827
+to show how to assess
+
+571
+01:52:01,827 --> 01:52:03,827
+the significance of alignment
+
+572
+01:52:04,467 --> 01:52:06,907
+using simple statistical approach.
+
+573
+01:52:06,907 --> 01:52:07,907
+Anyway,
+
+574
+01:52:08,188 --> 01:52:10,347
+to estimate E and P,
+
+575
+01:52:10,907 --> 01:52:12,627
+we mentioned that
+
+576
+01:52:12,867 --> 01:52:15,907
+when a PEM 250 scoring matrix
+
+577
+01:52:15,907 --> 01:52:17,307
+is being used,
+
+578
+01:52:17,811 --> 01:52:24,251
+K is estimated to be 0.09, while lambda is estimated to be 0.29.
+
+579
+01:52:24,251 --> 01:52:32,251
+This is, we said, K and lambda was the scoring matrix depending parameters.
+
+580
+01:52:32,251 --> 01:52:40,971
+For N, 250, K is 0.09 and lambda is 0.29.
+
+581
+01:52:40,971 --> 01:52:42,311
+We know this.
+
+582
+01:52:42,452 --> 01:52:46,452
+Şimdi bu şekilde bir şekilde bir şekilde bir şekilde veriyor.
+
+583
+01:52:50,452 --> 01:52:52,452
+Bu şekilde bir şekilde.
+
+584
+01:52:57,619 --> 01:53:21,619
+Ağustor var 73, Lambda var 299, B410, 250, minus logarithm, n, nature logarithm, 0.09, which was k, n, 250, n, 250, n, 250.
+
+585
+01:53:23,796 --> 01:53:29,796
+ve 8.09 bits, 10 bits.
+
+586
+01:53:34,707 --> 01:53:47,667
+P was determined to be 1-P e-x.
+
+587
+01:53:50,667 --> 01:53:52,395
+So that's...
+
+588
+01:54:01,395 --> 01:54:11,627
+3.1 x 10 x 12
+
+589
+01:54:15,283 --> 01:54:25,184
+Therefore, we see that the probability of observing an alignment with a gidscore greater than n.09 is about 3 in thousand.
+
+590
+01:54:36,851 --> 01:54:43,871
+Gap alignments make use of the same statistics as un-gap alignments in determining the statistical significance.
+
+591
+01:54:45,731 --> 01:54:55,011
+However, in this case, in gap alignments, the values for lambda and k cannot be easily estimated.
+
+592
+01:54:55,271 --> 01:54:58,311
+It is much more difficult to determine lambda and k.
+
+593
+01:54:59,507 --> 01:55:07,707
+Some empirical estimations and yet scores have been determined by looking at the alignments of randomized sequences.
+
+594
+01:55:11,507 --> 01:55:20,507
+So, of course, the statistics is extensively used in bioinformatics as well.
+
+595
+01:55:21,507 --> 01:55:38,507
+So, in this respect, we see, we will be talking about statistics later, maybe what, for the time, we need to mention Bayezine statistics approaching.
+
+596
+01:55:45,203 --> 01:55:57,203
+So, as you know from statistics or statistical data analysis courses, Bayesian statistics are based on conditional probabilities.
+
+597
+01:56:00,203 --> 01:56:06,203
+That are used to derive the joint probability of two even-soil conditions.
+
+598
+01:56:06,203 --> 01:56:12,203
+Now I assume that we know the concepts of...
+
+599
+01:56:13,007 --> 01:56:21,007
+Buna şiddetli, join probability, condition of probability of whatever.
+
+600
+01:56:28,115 --> 01:56:43,236
+This symbolik, the probability of B, A given, is the probability of B given condition A is true.
+
+601
+01:56:43,236 --> 01:56:54,396
+This is the showing probability. Probability B is the probability of condition B, independent probability.
+
+602
+01:56:56,851 --> 01:57:00,391
+It does not depend on any condition.
+
+603
+01:57:09,844 --> 01:57:20,844
+Probability A, B is joint probability of A and B are being simultaneously together.
+
+604
+01:57:24,844 --> 01:57:26,844
+These are joint probabilities.
+
+605
+01:57:27,844 --> 01:57:32,844
+You should remember these concepts from statistics.
+
+606
+01:57:37,908 --> 01:57:46,007
+Well, suppose that A can have two states, A1 and A2, B can have two states, B1 and B2.
+
+607
+01:57:47,148 --> 01:57:54,628
+Again, suppose that probability of B1 is 0.3 is 0.
+
+608
+01:57:58,931 --> 01:58:12,751
+Therefore, probability B2 will be just 1 minus 0.3, which is 0.7.
+
+609
+01:58:14,171 --> 01:58:19,071
+Because normally probability B1 plus B2 should make up 1.
+
+610
+01:58:23,155 --> 01:58:28,155
+So, these probabilities are known as marginal probabilities.
+
+611
+01:58:28,155 --> 01:58:33,155
+Again, you should remember from this concept of statistics.
+
+612
+01:58:35,155 --> 01:58:43,155
+Now, what we would like to determine is the probability of A1 and B1 are filling together,
+
+613
+01:58:44,155 --> 01:58:49,100
+which is denoted by P A1, B1.
+
+614
+01:58:49,427 --> 01:58:56,427
+ve bu
+
+615
+01:58:56,427 --> 01:59:11,427
+bu
+
+616
+01:59:11,252 --> 01:59:27,551
+But if more information about joint occurrence of A1 and B1 are given, then the joint probabilities may be derived using Bayer's rule, which is this one I shall know.
+
+617
+01:59:29,452 --> 01:59:38,492
+Probability of A1 and B1, joint probability of A1 and B1 can be returned by using the probabilities of
+
+618
+01:59:38,836 --> 01:59:45,015
+Marginal probability of B1 and conditional probability of E1.
+
+619
+01:59:46,015 --> 01:59:48,095
+Provided that B1 is true.
+
+620
+01:59:52,856 --> 01:59:59,856
+bu
+
+621
+01:59:52,020 --> 02:00:10,668
+A1 ve B1'in aile ve A1'in aile ve A1'in aile ve B1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'in aile ve A1'
+
+622
+02:00:15,824 --> 02:00:22,824
+A1'i deklarar ve gen ifadesi konuları
+
+623
+02:00:13,971 --> 02:00:18,971
+Let's go on an example to clarify the concept.
+
+624
+02:00:19,971 --> 02:00:25,971
+Suppose that we are given this probability as 0.8.
+
+625
+02:00:27,971 --> 02:00:33,971
+Conditional probability of A1 conditioned by B1 is 0.8.
+
+626
+02:00:34,971 --> 02:00:40,971
+Then, since there are only two different possible states for A,
+
+627
+02:00:42,228 --> 02:00:47,648
+A2, condition by B1, is 1-3.8.
+
+628
+02:00:53,427 --> 02:01:17,963
+Bu, bu, bu, A1'e 1'e
+
+629
+02:01:20,372 --> 02:01:29,372
+If we are also given probability of A2 conditioned by B2 as 0.7,
+
+630
+02:01:32,372 --> 02:01:39,372
+then probability of A1 conditioned by B2 will be 0.3.
+
+631
+02:01:42,931 --> 02:01:45,931
+Bu, aynı zamanda, çünkü total must be 1.
+
+632
+02:01:49,427 --> 02:01:57,427
+Bu, Bias'a rule, bu, probabilitelerin A1 ve B1 ve B2'yi de aynı zamanda,
+
+633
+02:01:57,427 --> 02:02:01,427
+bu, B2'yi de aynı zamanda,
+
+634
+02:02:01,427 --> 02:02:08,427
+bu,
+
+635
+02:02:29,203 --> 02:02:36,263
+Bu, diğer diğer
+
+636
+02:02:57,555 --> 02:03:04,155
+So, another concept in probability is posterior probabilities.
+
+637
+02:03:04,155 --> 02:03:09,555
+You should remember this again from statistical gate analysis.
+
+638
+02:03:14,195 --> 02:03:21,136
+Calculation of joint probabilities basically gives posterior probabilities.
+
+639
+02:03:22,136 --> 02:03:24,676
+That means not known initially.
+
+640
+02:03:27,695 --> 02:03:32,735
+And calculated by using prior probabilities.
+
+641
+02:03:35,096 --> 02:03:39,655
+These posterior and prior probabilities, prior probabilities are known.
+
+642
+02:03:41,395 --> 02:03:43,395
+İntiyel informasyon.
+
+643
+02:03:44,395 --> 02:03:53,395
+Then, you determine, using prior probabilities and initial information, you determine or find the posterior probabilities.
+
+644
+02:03:54,395 --> 02:03:56,395
+Which is not known, mutil.
+
+645
+02:03:58,395 --> 02:04:07,395
+So, biasing statistics, as I said, is extensively used in bioinformatics.
+
+646
+02:04:08,819 --> 02:04:15,819
+Bu, ekranal
+
+647
+02:04:39,412 --> 02:04:47,412
+As a final comment on KY-Seconds alignment, there are programs.
+
+648
+02:04:49,412 --> 02:05:01,412
+I did not check recently if these programs exist or not because sometimes they are obsolete and they abandoned to use it.
+
+649
+02:05:01,412 --> 02:05:05,412
+It's up to you to check these programs. One is middle.
+
+650
+02:05:06,192 --> 02:05:11,192
+İlginç, global alignment, on dizi hizalama ve gen ifadesi.
+
+651
+02:05:11,192 --> 02:05:19,192
+İlginç, water, it implements local, Smith-Waterman alignment.
+
+652
+02:05:19,192 --> 02:05:23,192
+And last two sequences.
+
+653
+02:05:23,192 --> 02:05:32,192
+So, there are NCBI, World-Based Sequence Alignment, approaches.
+
+654
+02:05:33,427 --> 02:05:38,427
+İzlediğiniz için, ilerlerle alın, ilerlerle alın, ilerlerle alınmaktadır.
+
+655
+02:05:50,355 --> 02:06:04,675
+YS2 genomic to protein, seen for alliance expressed DNA to genomic sequences, SPI-V, alliance, messenger RNAs to genomic sequence.
+
+656
+02:06:04,675 --> 02:06:08,075
+There are many other algorithms.
+
+657
+02:06:08,075 --> 02:06:13,655
+RASP genomic, alliance, DSTs to genomic sequences, etc.
+
+658
+02:06:14,835 --> 02:06:15,515
+There might be.
+
+659
+02:06:32,051 --> 02:06:41,963
+Ok, do you have any questions regarding the objects we discussed today, exploring what it says?
+
+660
+02:06:46,676 --> 02:06:47,396
+Gets.
+
+661
+02:06:49,396 --> 02:06:50,696
+Do you have any questions?
+
+662
+02:06:56,692 --> 02:06:57,872
+Do you have any comments?
+
+663
+02:07:13,076 --> 02:07:14,076
+Buğun comentari.
+
+664
+02:07:32,404 --> 02:07:33,004
+Ok.
+
+665
+02:07:35,004 --> 02:07:37,564
+Let me introduce you.
+
+666
+02:07:44,756 --> 02:07:50,356
+New subject and finish for today.
+
+667
+02:09:08,948 --> 02:09:11,948
+Ve sonra,
+
+668
+02:09:30,883 --> 02:09:36,643
+Şimdi, pay-wise-sequence alignment, bu çok önemli.
+
+669
+02:09:36,643 --> 02:09:38,763
+Bu çok önemli.
+
+670
+02:09:42,123 --> 02:09:48,763
+Bence pay-wise-sequence alignment ve programlar için bir şekilde kullanıyoruz.
+
+671
+02:09:51,731 --> 02:09:53,811
+We know what it is, how to use.
+
+672
+02:09:54,952 --> 02:10:01,252
+We know when to use which DP programing,
+
+673
+02:10:01,912 --> 02:10:08,152
+local, global, overlap, or semi-global different types.
+
+674
+02:10:08,152 --> 02:10:12,371
+We need to know which one to use.
+
+675
+02:10:14,032 --> 02:10:17,832
+But in practice, in reality,
+
+676
+02:10:22,068 --> 02:10:39,807
+There are, in many cases, there are usually more than two sequences to align, to study what, to find out what they are, how different sequences are related.
+
+677
+02:10:39,807 --> 02:10:46,807
+Okay, so this requirement lets...
+
+678
+02:10:48,692 --> 02:10:53,192
+As the concept of multiple seconds alignment.
+
+679
+02:10:55,692 --> 02:10:56,692
+So if
+
+680
+02:11:00,148 --> 02:11:23,500
+ve nümdüm
+
+681
+02:11:49,332 --> 02:11:52,252
+Ok, here is the outline.
+
+682
+02:11:52,252 --> 02:11:56,731
+We'll introduce the multiple sequence alignment concept.
+
+683
+02:11:56,731 --> 02:12:03,532
+Ok, we'll have basically...
+
+684
+02:12:03,532 --> 02:12:08,932
+Then we'll discuss the methods of multiple sequence alignment,
+
+685
+02:12:08,932 --> 02:12:14,932
+namely progressive global alignment, iterative methods.
+
+686
+02:12:16,115 --> 02:12:20,155
+Alignment based on local-conserve patterns.
+
+687
+02:12:21,155 --> 02:12:22,796
+There are several methods.
+
+688
+02:12:23,515 --> 02:12:26,636
+By the way, all these methods are ad hoc methods.
+
+689
+02:12:27,055 --> 02:12:31,475
+They are not optimal methods.
+
+690
+02:12:31,475 --> 02:12:35,615
+For the reasons which we'll discuss in a minute.
+
+691
+02:12:36,956 --> 02:12:43,155
+So why we want to align sequences multi-clean?
+
+692
+02:12:43,731 --> 02:12:50,731
+Bu, similar gens can be conserved across species that form similar identical functions.
+
+693
+02:12:50,731 --> 02:12:58,731
+Of course, there are more than two in this respect.
+
+694
+02:12:58,731 --> 02:13:03,731
+There are many species, 11 species, not only two species.
+
+695
+02:13:03,731 --> 02:13:08,684
+So, multiple sequence, concept of multiple sequence logical.
+
+696
+02:13:09,011 --> 02:13:13,931
+Many genes are represented in highly preserved forms across organisms.
+
+697
+02:13:16,731 --> 02:13:25,691
+By performing a simultaneous alignment of multiple sequences having similar or identical functions,
+
+698
+02:13:26,991 --> 02:13:35,211
+we can gain information about which regions have been subject mutations over evolutionary time.
+
+699
+02:13:36,659 --> 02:13:43,659
+bu nedenle de bu nedenle
+
+700
+02:13:53,971 --> 02:14:02,971
+Such knowledge will tell us which regions or domains of gene are critical to its functionality.
+
+701
+02:14:02,971 --> 02:14:11,971
+Basically, functional evolutions or functional informatics are little bit based on this.
+
+702
+02:14:13,971 --> 02:14:18,971
+Sometimes genes that are similar in sequence can be mutated.
+
+703
+02:14:19,119 --> 02:14:21,680
+or we arrange to perform
+
+704
+02:14:21,680 --> 02:14:24,960
+without that function so we need to see it
+
+705
+02:14:25,960 --> 02:14:30,519
+by looking at multiple alignments of such sequences
+
+706
+02:14:30,920 --> 02:14:34,760
+we can tell which changes in the sequence
+
+707
+02:14:34,760 --> 02:14:38,199
+and cause a change in the functionality
+
+708
+02:14:39,199 --> 02:14:42,639
+for this multiple sequence alignment
+
+709
+02:14:45,587 --> 02:15:10,768
+Merti-sequence alignment will yield information concerning the structure and function of proteins and can have led to the discovery of important sequence domains or motive sleep, biological significance, while at the same time uncovering evolutionary relationships among genes.
+
+710
+02:15:11,412 --> 02:15:23,092
+So, in multiple sequence alignment, the idea is to take three or more sequences and align them appropriately.
+
+711
+02:15:23,771 --> 02:15:30,592
+So that the greatest number of similar characters are aligned in the same problem of the alignment.
+
+712
+02:15:35,091 --> 02:15:50,411
+Difficulty with multiple sequence alignment is that now there are a number of different combinations of matches, insertions, and deletions.
+
+713
+02:15:53,091 --> 02:15:58,411
+That must be considered when looking at several different sequences.
+
+714
+02:15:59,731 --> 02:16:07,451
+Şimdi, bu
+
+715
+02:16:16,435 --> 02:16:18,435
+İdeas yapıp,
+
+716
+02:16:18,435 --> 02:16:20,095
+oraya
+
+717
+02:16:20,095 --> 02:16:21,435
+optimizde
+
+718
+02:16:21,435 --> 02:16:22,095
+oraya
+
+719
+02:16:22,095 --> 02:16:23,435
+to determine
+
+720
+02:16:23,435 --> 02:16:24,435
+these alignments.
+
+721
+02:16:26,435 --> 02:16:29,435
+By first looking at the approach
+
+722
+02:16:29,435 --> 02:16:31,435
+we have already discussed
+
+723
+02:16:32,435 --> 02:16:34,435
+for the sequence alignment.
+
+724
+02:16:40,755 --> 02:16:45,795
+Ok, metastik garantisi de yüksek
+
+725
+02:16:45,795 --> 02:16:46,795
+değil.
+
+726
+02:16:46,795 --> 02:16:47,295
+Why?
+
+727
+02:16:51,700 --> 02:16:55,020
+Bu nedenle, bu nedenle, bu nedenle,
+
+728
+02:16:55,020 --> 02:16:57,260
+ve progörü ve programı için,
+
+729
+02:16:59,020 --> 02:17:02,700
+bu nedenle,
+
+730
+02:17:02,700 --> 02:17:05,579
+bu nedenle, bu nedenle,
+
+731
+02:17:05,579 --> 02:17:05,579
+bu nedenle, bu nedenle?
+
+732
+02:17:49,811 --> 02:17:51,132
+Anybody has an idea?
+
+733
+02:17:54,072 --> 02:17:54,592
+No?
+
+734
+02:18:03,507 --> 02:18:04,007
+Çok sevdi.
+
+735
+02:18:08,404 --> 02:18:11,404
+We will discuss in a minute why it's not feasible.
+
+736
+02:18:13,804 --> 02:18:18,603
+Because the optimum algorithm is not feasible,
+
+737
+02:18:18,603 --> 02:18:25,404
+approximation methods or ad hoc methods are used basically in multiple sequence alignment.
+
+738
+02:18:28,204 --> 02:18:34,404
+That means the alignments we have obtained may not be optimal.
+
+739
+02:18:36,340 --> 02:18:37,340
+Evet.
+
+740
+02:18:38,340 --> 02:18:55,340
+Let me give you some example of multiple sequence alignments to give you the concept before introducing the dynamic programming, multiple sequence alignment.
+
+741
+02:18:56,340 --> 02:19:02,340
+Here is an example of multiple sequence alignment. This is what we mean by multiple sequence alignment.
+
+742
+02:19:02,995 --> 02:19:09,995
+Bu program, basically a screen capture.
+
+743
+02:19:09,995 --> 02:19:13,995
+Here, how many sequences?
+
+744
+02:19:13,995 --> 02:19:25,995
+1, 2, 2, 4, 5, 6, 7, 8 sequences are aligned, basically, using some gaps.
+
+745
+02:19:26,512 --> 02:19:53,355
+Bu, bu
+
+746
+02:19:58,036 --> 02:20:10,036
+İmuno-globulin-seqücesi, multiple alignment of eight immunoglobulin-seqücesi.
+
+747
+02:20:12,036 --> 02:20:21,036
+Immuno-globulin-seqücesi, ili, class F protein, is present in the cellul and cells of the immune system,
+
+748
+02:20:21,036 --> 02:20:25,036
+which function as artificial.
+
+749
+02:20:27,700 --> 02:20:29,700
+ve gen ifadesi.
+
+750
+02:20:34,804 --> 02:20:40,564
+Bu bir diğer örneğe, bu bir örneğe, daha fazla ilişkiler.
+
+751
+02:20:42,324 --> 02:20:46,804
+Ve bir örneğe, daha fazla ilişkiler.
+
+752
+02:20:58,100 --> 02:21:13,100
+You see, we mentioned about the file gaps now. You can use k gaps of length 1 approach of...
+
+753
+02:21:19,956 --> 02:21:25,956
+Gap of K len.
+
+754
+02:21:27,155 --> 02:21:33,956
+It is or if I get, this is what we mean by this first one will be counted as
+
+755
+02:21:34,956 --> 02:21:39,956
+Gap opening then later Gap extended panoquel.
+
+756
+02:21:39,956 --> 02:21:43,956
+If you want to determine a score we can use
+
+757
+02:21:44,948 --> 02:21:47,988
+get, fi get penalty in this case.
+
+758
+02:21:50,988 --> 02:21:55,448
+Anyway, that was just a reminder of the previous subject.
+
+759
+02:22:00,147 --> 02:22:08,647
+Of course, for multiple-sequence alignment, filogenetik analysis is quite important.
+
+760
+02:22:08,647 --> 02:22:16,567
+There is a great deal of relationship of multiple-sequence alignment and filogenetik analysis.
+
+761
+02:22:16,887 --> 02:22:19,667
+We will be discussing filogenetik analysis later.
+
+762
+02:22:21,887 --> 02:22:23,587
+Once the...
+
+763
+02:22:23,827 --> 02:22:27,628
+Bu, I shortly use MSA, MSE Alignment.
+
+764
+02:22:28,628 --> 02:22:29,827
+MSA'ın bilgi veren,
+
+765
+02:23:06,515 --> 02:23:29,036
+N-Y-L-S, N-Y-L-S, N-K-Y-L-S, these are original sequences to compare, to align, N-K-Y-L-S, N-F-S, N-F-S-N-S-NOT, mark the sequence alignment, we try to align this.
+
+766
+02:23:58,260 --> 02:23:59,500
+ve
+
+767
+02:24:02,772 --> 02:24:30,092
+Yani bu şekilde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde deklerinde
+
+768
+02:24:50,611 --> 02:25:02,291
+Filogenetik analysis, again, we will be discussing this in detail, but we need to introduce it because MSA, where to rely on filogenetik analysis.
+
+769
+02:25:03,572 --> 02:25:05,891
+This is a filogenetik two of life.
+
+770
+02:25:11,636 --> 02:25:21,796
+Bacteria is one plus, one Taksa, Arke is another Taksa, İtkanya is another Taksa, and some very relevant species.
+
+771
+02:25:23,756 --> 02:25:32,316
+After introducing this concept, here is a general block diagram of MAD-Shekhin-Solayman method.
+
+772
+02:25:37,876 --> 02:26:05,675
+Bu, bu
+
+773
+02:26:07,252 --> 02:26:13,252
+If it is yes, then we perform global alignment of sequences.
+
+774
+02:26:16,252 --> 02:26:26,252
+Then we check if the alignment we found is meaningful or not.
+
+775
+02:26:26,252 --> 02:26:31,252
+If it is yes, then are there a large number of sequences?
+
+776
+02:26:31,987 --> 02:26:34,987
+Evet, bu bir model.
+
+777
+02:26:34,987 --> 02:26:59,884
+Bu bir model.
+
+778
+02:27:00,115 --> 02:27:05,115
+İlk olarak kullanırsanız.
+
+779
+02:27:05,115 --> 02:27:09,115
+Büyük bir programı kullanırsanız.
+
+780
+02:27:09,115 --> 02:27:17,515
+İlk olarak kullanırsanız.
+
+781
+02:27:21,843 --> 02:27:25,863
+Bu birçok birçok birçok birçok.
+
+782
+02:27:27,023 --> 02:27:28,843
+Bu, bu,
+
+783
+02:27:28,843 --> 02:27:29,843
+bu,
+
+784
+02:27:29,843 --> 02:27:31,843
+birçok birçok alamantı.
+
+785
+02:27:31,843 --> 02:27:32,843
+Bu,
+
+786
+02:27:32,843 --> 02:27:41,843
+bu,
+
+787
+02:27:54,708 --> 02:28:01,268
+So, there are many approaches to multiple sequence alignment,
+
+788
+02:28:01,268 --> 02:28:06,708
+using several at-hoc approaches.
+
+789
+02:28:06,708 --> 02:28:12,708
+In the past decade, many dozens of programs have been introduced,
+
+790
+02:28:12,708 --> 02:28:20,203
+which can be studied or seen in this reference.
+
+791
+02:28:22,291 --> 02:28:24,011
+In literature, there are many.
+
+792
+02:28:25,072 --> 02:28:35,311
+We will only consider our approaches in this course, multiple sequential alignment.
+
+793
+02:28:37,491 --> 02:28:46,231
+Exact methods, which is based on dynamic programming, progressive alignment,
+
+794
+02:28:48,724 --> 02:28:53,984
+İterative alignment and statistical model approaches.
+
+795
+02:28:54,623 --> 02:29:01,083
+These are general classes of statistical multiple sequence alignments.
+
+796
+02:29:01,984 --> 02:29:08,724
+Of course, as I said, if you study the subject literature, there might be
+
+797
+02:29:08,724 --> 02:29:14,384
+10 sort of algorithms discussed.
+
+798
+02:29:15,572 --> 02:29:17,067
+bu koncept.
+
+799
+02:30:06,760 --> 02:30:10,220
+bu,
+
+800
+02:30:05,940 --> 02:30:10,220
+ve bu çok
+
+801
+02:30:17,459 --> 02:30:23,599
+Bu da sik of integrity of the subjects, we'll discuss these methods next week.
+
+802
+02:30:27,123 --> 02:30:28,623
+Okay, do you have any questions?
+
+803
+02:30:32,564 --> 02:30:41,564
+Şimdi, ikinizde de konceptı, RATIOLANA ve RASER ve MOTİVASI ile ilgili müngele-seqücüsü alaymanı.
+
+804
+02:31:01,907 --> 02:31:04,927
+Do you have any comments, any questions?
+
+805
+02:31:21,620 --> 02:31:22,560
+İşe almışlar mı?
+
+806
+02:31:28,955 --> 02:31:34,955
+bu,
+
+807
+02:31:28,915 --> 02:31:31,615
+Zavallıçı kablosunuz.
+
+808
+02:31:36,275 --> 02:31:45,456
+Çıkınla bakalım kimler varmış, kimler yokmuş bir göreyim. İlgisayarın ucunda, diğer ucunda kimler var.
+
+809
+02:31:52,180 --> 02:31:54,180
+Bu haftanın bu kadar çıkabilirsiniz.
