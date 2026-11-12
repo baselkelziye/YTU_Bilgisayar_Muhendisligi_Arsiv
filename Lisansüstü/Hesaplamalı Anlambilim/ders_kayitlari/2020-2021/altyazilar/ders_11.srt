@@ -1,0 +1,2931 @@
+1
+00:00:34,707 --> 00:00:38,347
+Hoş geldiniz arkadaşlar. Hoş bulduk hocam.
+
+2
+00:00:39,027 --> 00:00:39,707
+Merhabalar hocam.
+
+3
+00:00:39,948 --> 00:00:40,787
+Nasılsınız, iyisiniz?
+
+4
+00:00:42,787 --> 00:00:43,948
+Merhaba hocam.
+
+5
+00:00:45,927 --> 00:00:47,507
+Sağ ol hocam, siz nasılsınız?
+
+6
+00:00:48,647 --> 00:00:49,647
+Teşekkür ederim.
+
+7
+00:00:51,867 --> 00:01:00,707
+Şimdi bugün ilk önce sizin sunumlarla başlayalım. Ondan sonra geçen hafta...
+
+8
+00:01:02,771 --> 00:01:13,451
+Cevaplama sistemlerinde anlatmadığım, haftaya anlatırım dediğim birkaç konu kalmıştı. Onları bir toparlamaya çalışırım ben de sizin sunumlarınızın ardından.
+
+9
+00:01:14,652 --> 00:01:21,711
+Şimdi, peki önce katılım az ama bilmiyorum neden öyledir. İlk önce bir kimden sunum yapacak? Onu alalım.
+
+10
+00:01:22,231 --> 00:01:23,831
+Benle [öğrenci] yapacağız hocam.
+
+11
+00:01:25,211 --> 00:01:26,111
+Ben de yapacağım hocam.
+
+12
+00:01:26,111 --> 00:01:26,891
+Bir dakika.
+
+13
+00:01:27,972 --> 00:01:29,371
+[öğrenci] yapacak.
+
+14
+00:01:30,164 --> 00:01:56,304
+Sonra [öğrenci], [öğrenci] [öğrenci]. [öğrenci], [öğrenci] [öğrenci]. [öğrenci], [öğrenci] [öğrenci]. Başka? Ben de varım hocam. [öğrenci] [öğrenci]. [öğrenci] yapacak. Tamam. Başka? [öğrenci]? [öğrenci]? Hocam biz de yapacağız. Beraber mi? Evet.
+
+15
+00:01:56,784 --> 00:01:59,224
+[öğrenci] ile ben.
+
+16
+00:02:01,724 --> 00:02:09,524
+[öğrenci] yapacak. Peki, tamam. Bu zaman dört tane sunumumuz var bugün. Tamamdır.
+
+17
+00:02:10,524 --> 00:02:18,564
+Peki, ilk önce [öğrenci] söyledi. Onlardan başlayalım. [öğrenci] ve [öğrenci]. Sizi dinliyoruz.
+
+18
+00:02:19,564 --> 00:02:21,564
+Paylaşıyorum hocam. Ekranın bir saniye.
+
+19
+00:02:31,987 --> 00:02:33,548
+Şu anda gözüküyor mu hocam ekranım?
+
+20
+00:02:34,127 --> 00:02:35,148
+Evet, gördüm.
+
+21
+00:02:35,728 --> 00:02:36,288
+Tamamdır.
+
+22
+00:02:37,148 --> 00:02:45,687
+Merhaba herkese. [öğrenci]'le ben Markov Chain yöntemiyle en gram ile cümle oluşturma üzerine gittik.
+
+23
+00:02:46,828 --> 00:02:53,848
+Hocam, sizin derlemlerinizdeki roman derlemleri bölümünde Nazan Bekiroğlu'nun Cam Irmağı Taş Gemi romanını kullandık.
+
+24
+00:02:54,528 --> 00:02:59,468
+Ve karşılaştırmak için de Markov Chain 1 gram ve 2 gram yöntemlerini kullandık.
+
+25
+00:03:02,003 --> 00:03:10,024
+Şöyle hocam, aslında Elistiyem'le de biraz denemeler yaptık fakat pek tutarlı sonuçlar elde edemedik. Ulaşamadık daha doğrusu sonuca.
+
+26
+00:03:12,024 --> 00:03:13,743
+[öğrenci], geliyor mu sesim?
+
+27
+00:03:14,283 --> 00:03:15,024
+Evet, geliyor şimdi.
+
+28
+00:03:15,024 --> 00:03:23,823
+Tamam. Şimdi burada roman derlemleri demişsin, sonra Markov Chain demişsin, sonra Markov Chain demişsin. Şimdi bunun üçü neyi ifade ediyorlar? Ben orasını anlayamadım.
+
+29
+00:03:24,123 --> 00:03:30,003
+Data şey olarak hocam, Korpus olarak şeyi kullandık. Bu roman derlemlerini kullanmak.
+
+30
+00:03:30,003 --> 00:03:36,623
+Bunu anladım. Ahtakiler ne? Markov çayın 1 gram ve 2 gramı kullandık cümle üretmek için.
+
+31
+00:03:39,364 --> 00:03:42,704
+Yani derdim olarak bunu kullandınız, yöntem olarak diyorsun.
+
+32
+00:03:42,963 --> 00:03:46,644
+Evet, yöntem olarak. Yöntem olarak Markov çayınları kullandınız.
+
+33
+00:03:46,644 --> 00:03:47,644
+Evet, evet.
+
+34
+00:03:49,063 --> 00:03:54,323
+Ama sıralama, neyse tamam sonucu göreceğiz. Tamam, peki. Devam edebilirsin.
+
+35
+00:03:56,532 --> 00:04:03,572
+Burada da algoritma adımlarını belirttik. İlk olarak korpus içerisinden rastgele 3 kelime seçtik.
+
+36
+00:04:04,243 --> 00:04:22,103
+Kelimelerden birisiyle Markov Chain'i başlattık. İkinci kelimeyi bulmak için başlayıp bir gram yöntemini kullandık. Yöntem iki gram olduğunda, yani sonraki iki kelime olarak devam ettiğinde cümledeki son iki kelimeyi verip sonraki kelimeyi tahminledik. Cümleleri maksimum iki yüz kelimeye kadar oluşturduk.
+
+37
+00:04:22,103 --> 00:04:31,103
+Ve oluşturulan kelimelerden üçü de cümlede bulunmuyorsa, kelime üçlüsü ve cümleyi bulunuyorsa, kelime üçlüsü ve cümleyi kaydettik. Eğer bulunmuyorsa...
+
+38
+00:04:31,732 --> 00:04:36,672
+Yeni bir kelime üçlüsü belirleyip o kelime üçlüsüyle cümle yaratma üzerine.
+
+39
+00:04:37,103 --> 00:05:05,103
+İşlem adımları. Sonra burada elde edilen bazı cümleleri paylaşmak istedik. Üç tane örnek koyduk zaten. Böyle baktığımız zaman Markov Chain bir gramda genelde pek mantıklı cümleler elde edemedik. Hatta şöyle bir durum da vardı. En gramı ikiyle yani iki gramla elli kelime üçlüsü içinde örnek oluşturabilmişken bir gram için bazı kelime üçlüsü içinde örneğin oluşturulamadığı durumlar da oldu. Bunu bir sonraki slide'da zaten...
+
+40
+00:05:05,103 --> 00:05:14,203
+Örneğin burada gecenin kadar ve bir de şunu da belirteyim. Biz datada bağlaçtır vesaire bu tarz şeyleri temizlemedik.
+
+41
+00:05:15,091 --> 00:05:20,771
+Bu sebeple V veya işte D gibi bazen şeyleri de kelime olarak aldı.
+
+42
+00:05:20,991 --> 00:05:25,911
+[öğrenci], şey soracağım ama şimdi burada kelime üçlüsünü veriyorsunuz sisteme.
+
+43
+00:05:25,911 --> 00:05:26,231
+Evet hocam.
+
+44
+00:05:26,331 --> 00:05:26,531
+Değil mi?
+
+45
+00:05:26,631 --> 00:05:27,091
+Evet.
+
+46
+00:05:27,331 --> 00:05:30,691
+Daha sonra birinci kelimeyi kullanarak başlatıyorsunuz.
+
+47
+00:05:30,871 --> 00:05:31,091
+Evet.
+
+48
+00:05:31,971 --> 00:05:33,751
+Sonra chain ilerliyor.
+
+49
+00:05:34,651 --> 00:05:40,531
+Peki bu ikinci ve üçüncü kelimelerin bunun içerisinde olması gerektiğini nasıl söylüyorsunuz sisteme?
+
+50
+00:05:42,740 --> 00:05:44,740
+Hocam, pardon ben...
+
+51
+00:05:44,740 --> 00:05:54,019
+Birisiyle başlattıktan sonra aslında şeyi yapamadığımızı fark ettik. Yani üç kelime vereyim, bana bunlardan bir cümle oluştur diyemediğimizi fark ettik.
+
+52
+00:05:54,319 --> 00:06:01,240
+Yani baştırdık. Arko Çay'ın da birisiyle başlattık. Genelde ilk kelimeyle başlatıyoruz. Yani test amaçlı diğerleriyle de bir durumlar oldu.
+
+53
+00:06:01,779 --> 00:06:09,199
+Daha sonra cümle oluşturmaya devam ediyor. İki yüz kelime sınırımız var. İki yüz kelimeye kadar cümle oluşturuyor ve biz bu sırada kontrollerimizi yapıyoruz.
+
+54
+00:06:09,199 --> 00:06:10,740
+İkinci kelime veya üçüncü kelime...
+
+55
+00:06:10,740 --> 00:06:16,740
+cümlenin içerisinde var mı? Üçünü de bulduğu durumdan sonra cümleyi tamamlayana kadar devam ettiriyoruz.
+
+56
+00:06:17,139 --> 00:06:25,539
+Aslında siz bir tane kelime veriyorsunuz, onunla bir tane cümle ürettiriyorsunuz. Daha sonra da içinde ikinci ve üçüncü kelime var mı diye kontrol ediyorsunuz.
+
+57
+00:06:26,067 --> 00:06:32,807
+Evet ama sadece bir cümle üretmiyor hocam. Yani bunu bağlamaya çalışıyor. Mesela gecenin kelimesini kadara bağlamaya çalışıyor.
+
+58
+00:06:32,908 --> 00:06:35,447
+Onu nasıl yapmaya çalışıyorsunuz?
+
+59
+00:06:35,728 --> 00:06:47,267
+Onu kontrollerle yapıyoruz içerisinde hocam. Yani bu varsa, işte bulunduysa daha sonra devam et gibi. Ama şeyi yapmadık onu soruyorsanız. Yani ilk önce kadarı bul, sonra V'yi bul demedik. Sıralamayı vermedik.
+
+60
+00:06:47,267 --> 00:06:53,848
+Hani bağlamaya çalışmıyor. Aslında ürettiğinin içerisinde onlar var mı yok mu diye kontrol ediyorsunuz. Ben yanlış anlıyorum.
+
+61
+00:06:54,067 --> 00:06:56,067
+Evet, doğru anlıyorsunuz hocam. Daha doğru ifade ettiniz.
+
+62
+00:06:57,528 --> 00:06:59,408
+Tamam, anladım. Devam edebiliriz.
+
+63
+00:07:00,244 --> 00:07:28,244
+Evet, ama örneğin işte Markovç'in iki gramda daha anlamlı cümleler var. Örneğin şu benim sarıyla işaretlediğim cümle, korpusta bulunmayıp algoritmanın kendi oluşturduğu cümlelerden birisi. Ama onlar bu zayıflığı aşılmaz zannedileni aşmış olanlara mahsus birer zafer elbisesi gibi taşırlardı gövdelerinde. Ve bu birkaç öncü gücü bir de karanlık kaldı gibi. Evet, sonuna doğru biraz anlamsızlaşmış ama yani totaliyle bu cümleyi korpusta herhangi bir...
+
+64
+00:07:28,244 --> 00:07:32,944
+Benzer şeyi olmadan kendisi oluşturmuş algoritma. Bu çok dikkatimizi çekmişti.
+
+65
+00:07:34,644 --> 00:07:39,244
+Peki, şey var mı? Hani diğer cümleler...
+
+66
+00:07:40,084 --> 00:07:42,784
+Mesela var mı Korpus'ta? Ona baktınız mı?
+
+67
+00:07:43,244 --> 00:07:55,884
+Hocam bazılarını evet alabiliyor. Bazı yerlerini direkt alabiliyor. Burada olan var mıydı tam olarak hatırlamıyorum ama bazı cümlelerde mesela şey romanın içerisinde bir kalıbı örneğin alabiliyor.
+
+68
+00:07:56,044 --> 00:08:05,584
+Veya işte cümleyi başlatırken kalıbı alıp veya işte sonunda bir kalıbı kullanmış olabiliyor. Ama mesela bu cümlede yoktu bir de çok güzel gelmişti. O yüzden bunu öncelikli olarak belirtmek istedik.
+
+69
+00:08:06,304 --> 00:08:07,184
+Anladım. Tamam.
+
+70
+00:08:08,660 --> 00:08:21,680
+Örneğin bana 10 ve uzun kelime üçlüsünde Marko Oçay'ın bir gram cümleyi oluşturamadı burada. Oluşturamadığı noktayı da burada belirtmek istedik. En azından oluşturamadı örneklerden birinde.
+
+71
+00:08:22,300 --> 00:08:23,660
+Oluşturamadı demek ne demek?
+
+72
+00:08:24,080 --> 00:08:27,480
+Cümleyi oluşturamıyor hocam. O kelime üçlüsüyle cümleyi oluşturamıyor.
+
+73
+00:08:27,900 --> 00:08:29,820
+Hocam aslında 200 kelime sınırımız var.
+
+74
+00:08:29,820 --> 00:08:31,240
+Evet, 200 kelime sınırından dolayı.
+
+75
+00:08:31,300 --> 00:08:36,660
+Evet, yani 200 kelimeyi büyütürsek bu 3 kelimeyle cümle oluşturuyor. Ama 200 kelimeye kadar Marko...
+
+76
+00:08:36,659 --> 00:08:39,059
+Bir gram oluştururken bir gram da oluşturamadığımız durumlar oldu.
+
+77
+00:08:39,879 --> 00:08:44,519
+Peki, hani böyle tekrarlı tekrarlı denediniz. Kaç kez tekrar ediyor?
+
+78
+00:08:45,159 --> 00:08:52,279
+Aslında bu üç kelimeli tek seferde şeyi denedik hocam. Çünkü Markov iki gramla tek seferde buluyor. Yani karşılaştırma birebir olsun diye.
+
+79
+00:08:52,279 --> 00:08:54,220
+Evet, elli üçlü içinde tek seferde buluyordu.
+
+80
+00:08:54,659 --> 00:09:01,159
+Evet, birebir olsun diye denemedik. Ama dediğiniz gibi birkaç fark tekrar yaparsak matris değişeceği için muhtemelen bulur. Ama çok uzun sürede bulabilir.
+
+81
+00:09:01,539 --> 00:09:02,139
+Veya kelimesi.
+
+82
+00:09:02,139 --> 00:09:02,759
+Peki, tamam.
+
+83
+00:09:05,844 --> 00:09:17,884
+Yine burada hem zulmüyle ve bir kelimeleri için birer örnek cümle bıraktık burada. Cümleleri okumuyorum hocam, çok uzar diye okumadım ama okuyabilirim.
+
+84
+00:09:20,264 --> 00:09:20,484
+Alo?
+
+85
+00:09:21,443 --> 00:09:22,344
+Yok, gerek yok.
+
+86
+00:09:22,344 --> 00:09:23,044
+Tamam.
+
+87
+00:09:23,572 --> 00:09:45,091
+Sonuç olarak da bizim fark ettiğimiz şeylerden bahsetmek istedik. Burada biz birkaç şey denerken şey denedik hocam, bu roman derlemlerinden üç tanesini, bir Oğuz Atay'ın romanını, bir Nazan Bekiroğlu'nun romanını, bir de Sifillerdi sanırım tam hatırlamıyorum. O üç romanı birleştirip bir derlem oluşturduk. Burada 200 kelimeden oluşturulan cümlelerin oluşma süreleri ciddi oranda arttı.
+
+88
+00:09:51,572 --> 00:10:00,000
+15.000 seviyelerindeyken 3 derlemde toplam token 435.000'lere, Distinct token da 78.000'lere çıkıyor. Bu da cümle ulaştırılıyor.
+
+89
+00:10:00,000 --> 00:10:21,920
+Cümle oluşturma süresini uzatıyor. Sonra biz şeyi denedik hocam, 20 kelime sınırıyla cümle oluşturmayı denedik. Fakat burada da hani daha böyle cümle, tek cümle üzerinden gidelim diye. Ama burada hem işlem çok uzun sürdü hem de geneliyle çok anlamsız cümlelerle karşılaşıldı. Aşağıya da biz biraz daha en azından diğerlerine göre anlamlı olan örneklerden birini koyduk.
+
+90
+00:10:22,720 --> 00:10:27,980
+Buradaki cümle oluşturma işlemi çok uzun sürdü demek ne demek? Onu anlamadım. 20 kelime sınırı.
+
+91
+00:10:28,000 --> 00:10:43,279
+20 kelimeyle hocam, çünkü buradaki 3 kelimeyi bağlamaya çalışıyor ya, yine şey olarak eklemeye çalışıyor ya, burada anladığımız kadarıyla arama işlemini daha yavaş yapıyor ya da daha zor buluyor gibi düşünüyoruz.
+
+92
+00:10:43,279 --> 00:10:49,560
+Şimdi demek istiyorum, 20 kelime sınırıyla 200 kelime sınırının arasında nasıl bir fark var?
+
+93
+00:10:49,759 --> 00:10:53,580
+Şöyle bir fark var hocam, 3 kelimeyi biz rastgele seçiyoruz korupsun içerisinde.
+
+94
+00:10:53,759 --> 00:10:53,960
+Tamam.
+
+95
+00:10:56,000 --> 00:11:24,000
+200 kelimeyi bağlayabilerek bulma olasılığı daha yüksek. Yani 20 kelimeyi bu üçünü bağlayamıyor. Dolayısıyla 20 kelimeyi bitirdikten sonra bir sonraki üçlü kelime üretiyor. Bir daha deniyor ama 20 de çoğunu bağlayamıyor. Yani 20 kelime sınırı olduğu zaman bu üç kelime. Yani çok uzun sürüyor olması hani öyle bir cümleyi bulmak olasılığı düşüyor. Dolayısıyla daha fazla deneme yapmanız gerekiyor. Evet. Anladım. Yeni üçlü kelimeye geçiyor yani. Anladım. Daha fazla deneme yapmanız gerekiyor.
+
+96
+00:11:27,539 --> 00:11:41,479
+Buradaki cümlede bir düşün, korkunç ölüm laneti var. Bugüne kadar çocukları korkutmaktan başka bir ismi taşıyan iki yabancı olarak yaşıyoruz. Aynı evde yaşadı diye bir cümle vardı. Diğer genel cümlelere göre daha mantıklı bir cümleydi. Bunu koyduk.
+
+97
+00:11:41,779 --> 00:11:55,499
+İki gramla bir gramla karşılaştığında genelde dediğimiz gibi iki gramda hem cümle türetememe gibi bir problemle karşılaşmadık hem de iki gramda üretilen örnekler daha anlamlıydı. Örneğin orijinal metinde.
+
+98
+00:11:55,539 --> 00:12:07,539
+Körle kötürümün yoldaşlığı gibi bir iş için değil, cümlesi orijinal cümleyken algoritmanın oluşturduğu cümle, körle kötürümün yoldaşlığı gibi bir gerçek vardı, oldu.
+
+99
+00:12:08,692 --> 00:12:31,591
+Son olarak da biz bunu nasıl daha geliştirebiliriz gibi düşündüğümüzde kelime üçlülerini rastgele seçtiğimiz için bu oluşturulan cümlelerin çoğunda anlam bozuklukları vs. olabiliyor. Daha anlamlı kelime üçlüleri eğer seçip veya biz bu kelime üçlülerini önceden belirleyip korkusun içinden rastgele seçerek yapmasaydık sonuçlarda daha iyi örneklerle karşılaşabileceğimizi düşündük.
+
+100
+00:12:32,320 --> 00:12:57,960
+Bir de dediğiniz gibi hocam belki kelime sayılarını arttırsaydık en gram birde de vesaire karşılaşmamadığınız oluşturulamadığıyla karşılaşmama gibi durumumuz yoktu. Ama belirttiğiniz gibi hani şey olsun diye iki gram hepsini oluşturduğu için direkt bu şekilde biz de eşit karşılaştırma sağlayabilelim diye o konuyu belirtmedik. Bizi dinlediğiniz için teşekkür ederiz.
+
+101
+00:12:59,059 --> 00:13:01,239
+Varsa bir soru olabiliriz.
+
+102
+00:13:07,059 --> 00:13:18,619
+Teşekkürler arkadaşlar. Şey soracağım, bu bir cümle, bir kelimeden sonra, yani programımız deterministik mi? İlk önce onu sorayım.
+
+103
+00:13:20,628 --> 00:13:29,028
+Hocam aslında olasılıksal çalışıyor dediğiniz gibi. İlk kelimeden sonra bir sonrakine bağlamaya çalışmıyor. Ben şimdi biraz da şey yaptım da anladım demek istediğinizi.
+
+104
+00:13:29,668 --> 00:13:30,628
+Ama onu da şöyle bir şey...
+
+105
+00:13:30,628 --> 00:13:38,388
+Şunu demek istiyorum. İlk bilmeyi verdiğinizde, aynı kelimeyi verdiğinizde programı defalarca çalıştırdığınızda farklı farklı sonuçlar alabiliyor musunuz?
+
+106
+00:13:38,468 --> 00:13:39,368
+Evet, alabiliyoruz hocam.
+
+107
+00:13:39,408 --> 00:13:40,068
+Ne sağlıyor?
+
+108
+00:13:40,628 --> 00:13:46,528
+Bunu içerideki matrisin ağırlıkları sağlıyor hocam. Her kelime verildikten sonra kullanılan kelimenin matrisde ağırlığı değiştirdiği için.
+
+109
+00:13:47,548 --> 00:13:48,888
+Nasıl değişiyor onu anlamadım.
+
+110
+00:13:49,608 --> 00:13:53,307
+Ya Marko'mtan şey değilim hocam da anlatamayabilirim.
+
+111
+00:13:54,008 --> 00:13:55,927
+Kodu kim yazdın?
+
+112
+00:13:56,628 --> 00:14:01,048
+Kodu aslında ben internetten [öğrenci]'le birlikte copy paste olarak hazırladık gibi söyleyebilirim.
+
+113
+00:14:01,048 --> 00:14:03,687
+Yani şey olarak değil. Algoritmayı komple kendimiz yazmadık.
+
+114
+00:14:04,148 --> 00:14:05,408
+Evet siz siz yazdınız.
+
+115
+00:14:06,035 --> 00:14:24,335
+Aslında biz sadece Markovçey'ni oluştururken adımları kendimiz, yani ilk kelimeyi bul, ikinci kelimeyi nasıl bulabiliriz gibi böyle kısımları kendimiz yazdık. Sorduğunuz soruya şöyle cevap verebilirim. Transition matriz başta oluşturuluyor korpus içerisinden. Daha sonra olasılıklar dağılımında.
+
+116
+00:14:25,039 --> 00:14:34,759
+İlerleme kaydediliyor şeyler, state'ler arasında. Mesela insan kelimesiyle başladık. İnsandan sonra gelebilecek state'lerin olasılıklarına binaen…
+
+117
+00:14:34,759 --> 00:14:37,079
+Tamam, bir tanesi seçiliyor. Anladım.
+
+118
+00:14:37,619 --> 00:14:42,659
+Bir sonraki seçimde aynısı seçilmiyor. Random olarak seçiliyor hocam. O olasılıklar arasından.
+
+119
+00:14:42,879 --> 00:14:43,779
+Weighted choice diye.
+
+120
+00:14:44,219 --> 00:14:47,059
+Yani en yüksek olasılıkların içerisinden rastgele bir tanesi seçiliyor.
+
+121
+00:14:47,319 --> 00:14:47,619
+Evet.
+
+122
+00:14:48,539 --> 00:14:49,679
+Anladım. Tamam.
+
+123
+00:14:52,083 --> 00:14:52,644
+Peki.
+
+124
+00:14:53,363 --> 00:14:54,223
+Teşekkürler.
+
+125
+00:14:58,100 --> 00:15:21,879
+Merhaba hocam. Merhaba [öğrenci]. Sen de sunum yapacak mısın? Evet hocam yapacağım. Geç kaldım biraz. Özür dilerim. Tek başına mısın? Evet hocam tekim. [öğrenci]? Selam hocam. Ben de tekim, ben de sunum yapacaktım. Arkadaşlar başlıyor. Tamam. [öğrenci]? Hocam ben yine ödev yapmadım. Peki tamam.
+
+126
+00:15:28,211 --> 00:15:30,011
+Peki o zaman [öğrenci]'a onlara devam edelim.
+
+127
+00:15:34,067 --> 00:15:36,067
+Teşekkürler.
+
+128
+00:15:51,635 --> 00:16:07,475
+Merhabalar. Hepimizin de dediği gibi konumuz. Üç tane kelimeyi verip bunlardan bir cümle üretim üzerine bir sistem kurmakla ilgiliydi. Ben bu bağlamda Markov Chain, LSTM bir de farklı bir V sesinde.
+
+129
+00:16:13,748 --> 00:16:29,228
+Bir NLG dataset'i kullanarak bir T5 modelin denemesi üzerine bir çalışma yaptım. Onlardan ufak çok komislerinden bahsedeyim ve nasıl elde ettim ben komislerimi.
+
+130
+00:16:29,648 --> 00:16:47,387
+Markov Çay'ımda izleticilerin seyince benzer hatayı benim de yaptığımı fark ettim. Burada şöyle bir şey yaptım ben de. Bir cümleyi üretmek için dediği gibi bu üç tane kelimenin birlikte bulunma durumlarını aslında üretmeye çalıştım Markov Çay'ımda.
+
+131
+00:16:47,387 --> 00:16:56,387
+LSEAN'da biraz daha farklı bir çalışma yaptım. Şöyle, LSEAN'da da bir mesela Kaan'la ilgili bir cümle oluşturduk.
+
+132
+00:16:56,655 --> 00:17:08,775
+Kaan'ın oluşturduğu cümleyi mesela Türksel veya ondan bir cümle oluşturup, bunları birleştire birleştire bütün bir cümle oluşturmaya çalışmak şeklinde oldu.
+
+133
+00:17:09,175 --> 00:17:10,976
+Nasıl? Yanlış sormayın sadece.
+
+134
+00:17:11,576 --> 00:17:13,036
+Ben anlayamadım.
+
+135
+00:17:13,115 --> 00:17:20,115
+Evet, fark ettim. Bir dakika. Şöyle, Kaan'la mesela bir cümle oluşturdum diyelim. Rastgele birkaç kelime ekleyerek.
+
+136
+00:17:20,435 --> 00:17:23,096
+Kaan'dan birkaç tane kelime üretiyorsun sonrasına doğru.
+
+137
+00:17:23,096 --> 00:17:24,536
+Evet, onu istiyorum.
+
+138
+00:17:24,655 --> 00:17:30,875
+Şimdi ürettiğim cümleye on veya Türksel'i ekliyorum. On veya Türksel'i ekleyip bir cümle üretiyorum.
+
+139
+00:17:31,295 --> 00:17:38,675
+Araya ekliyorsun yani. O cümleden sonra zorla oraya bir tane kelime sokuyorsun. Ondan sonra devam etmesini istiyorsun.
+
+140
+00:17:38,935 --> 00:17:48,115
+Aynen. Aslında bunları devam etmeyecektim. Şöyle yapacaktım. Bu kombinasyonunu bulup Markov Key'in cümlelerin olasılıklarını hesaplayıp en yüksek olasılıklı cümleyi bastıracaklar.
+
+141
+00:17:50,387 --> 00:18:07,727
+Bu şekilde sonuçlarda. İşte burada Markovç'in bir kısıt şöyle oldu, zorluk şöyle oldu. Hep sonraki kelimeyi asaplayıp sonraki kelimeden sonra gelen kelimeler şeklinde gittiği için, üçünün birlikte bulunma olasılıkları da çok az olduğu için cümle uzunlukları gerçekten çok büyük oldu.
+
+142
+00:18:09,547 --> 00:18:17,087
+Engramlar bazında baktığımızda da aslında anlamlı daha kısa örnekleri en büyüdükçe gördük.
+
+143
+00:18:17,523 --> 00:18:26,523
+Yani birlikte bulunmaları daha üçlülerde, ikillilerde daha birlikte bulunmuş olduğu örnekler vardı. Sonuçlar bu şeklinde.
+
+144
+00:18:30,579 --> 00:18:32,219
+Çok fazla örnek eklemedim.
+
+145
+00:18:33,819 --> 00:18:34,879
+Zaten benzer şeyler.
+
+146
+00:18:36,579 --> 00:18:37,979
+İndilenmek isterse durabilir.
+
+147
+00:18:38,420 --> 00:18:45,480
+Şöyle, ben nasıl yaparım? Zaten zamanlı çoğu bununla geçti. Ödeve başladığımda.
+
+148
+00:18:46,440 --> 00:18:51,640
+NLG Dataset. Şöyle T5 algoritması var bildiğimizde burada.
+
+149
+00:18:52,140 --> 00:18:57,700
+T5 algoritması genelde taslıktı, spesifik bir eğitim yaptığımızda sonuçlarını veriyor.
+
+150
+00:19:06,420 --> 00:19:14,279
+Biz mesela TURAN diyelim, şu tarihte doğduğu şu kadar kişiye sahip falan gibisinden şeyle eğitiyoruz bir veriyi.
+
+151
+00:19:14,279 --> 00:19:16,779
+TBS algoritmasında, TAS-TÜB olarak.
+
+152
+00:19:17,660 --> 00:19:22,960
+Ve sonucunda da mesela üç kelime verdiğimizde bu üç tane kelimeden çok anlamlı bir sonuç çıkarıyordu.
+
+153
+00:19:23,580 --> 00:19:31,799
+Ben de şöyle dedim, acaba bunu Türkçe'de yapabilir miyim diye araştırmayla yaklaşık iki günüm gitse veri ses özel zaten oluşturamadım.
+
+154
+00:19:32,060 --> 00:19:33,720
+Zaten çok fazla veri gerekiyormuş.
+
+155
+00:19:34,324 --> 00:19:43,544
+Ama İngilizce'de en azından var olan bir modeli yükleyip bir deneme yapayım dedim. Gerçekten de sonuçları incelediğimde küçük bir denediğimde.
+
+156
+00:19:44,403 --> 00:19:48,824
+Ama dur yanılmıyorsa bir tane multilingual T5 var.
+
+157
+00:19:48,824 --> 00:19:57,844
+Evet, onu denedim hocam ben de. Onu bizde denemeye çalıştık. Türkçe'de yapmaya çalıştık. Başarılı olamadım. O da benim el dolaşmam gerekiyordu.
+
+158
+00:19:58,204 --> 00:19:59,784
+Neden başarılı olamadın?
+
+159
+00:20:00,000 --> 00:20:01,960
+Veri seti oluşturma noktasında.
+
+160
+00:20:02,220 --> 00:20:03,220
+Hocam orada veri seti...
+
+161
+00:20:03,220 --> 00:20:05,460
+Yok yok eğitilmiş diyorum. Yok eğitmek değil.
+
+162
+00:20:06,540 --> 00:20:09,400
+Eğitilmişi pretre etmek gerekmiyor mu hocam Türkçe bir veride?
+
+163
+00:20:10,867 --> 00:20:11,548
+Evet.
+
+164
+00:20:12,347 --> 00:20:24,807
+İşte o veriyi elde edemede başarılamadı. Bildiğim kadarıyla T5'te eğitimi yapmak için şöyle bir verisi ihtiyacı var. Cümle ve cümleden çıkartması gereken amacın olması gerekiyor.
+
+165
+00:20:24,807 --> 00:20:38,427
+Bu da şöyle bir cümle ifade eder. Mesela Türksel şirketinde 400 tane çalışan vardır. Target üstünde da şöyle bir şey olacak. Türksel şu kadar çalışan sayısı.
+
+166
+00:20:38,867 --> 00:20:44,707
+Aralarda or işareti var. İşte 500. Benim böyle birkaç tane cümle üretmem gerek.
+
+167
+00:20:44,707 --> 00:21:03,127
+Öyle değil mi? Olabilir mi? Sadece fikir olarak soruyorum. Mesela inputta bir tane cümleyi alırsın. Rastgele bir cümle. Bu cümlenin içerisinden rastgele üç tane kelimeyi alırsın. Bunlar senin üç tane kelimen input sekansın olur.
+
+168
+00:21:03,667 --> 00:21:07,968
+Output Sekans'ın ise orijinal cümlenin kendisi olur. Böyle olmaz mı?
+
+169
+00:21:08,667 --> 00:21:13,807
+Olur. Olur muydu? Ama hocam orada sanki arada ilişkiyi de koymak gerekiyor.
+
+170
+00:21:16,307 --> 00:21:24,048
+İlişki değil de Sekans to Sekans üretmiyor mu? Yani T5'ın bütün görevleri şey değil mi? Sekans to Sekans değil mi?
+
+171
+00:21:24,748 --> 00:21:25,827
+Evet. Evet hocam.
+
+172
+00:21:26,175 --> 00:21:32,675
+Dolayısıyla hani input sekansı üç kelime, output sekansı ise o üç kelimenin birlikte geçtiği cümle.
+
+173
+00:21:33,435 --> 00:21:36,615
+Aslında evet. Doğru diyorsunuz yani. Ama peki doğsaydı doğru.
+
+174
+00:21:38,056 --> 00:21:39,215
+Peki, tamam.
+
+175
+00:21:39,816 --> 00:21:44,836
+Doğrusu onun yönden bakmadım. Hep mevcut BSD'nin benim çıkarımı yapmak için çalıştım.
+
+176
+00:21:44,836 --> 00:21:51,875
+Ama yani olasılısal modelleri gibi T5 gerçekten çok anlamlı sonuçlar üretiyordu.
+
+177
+00:21:53,584 --> 00:22:02,763
+Biliyorsunuz bu sonuçları. En azından İngilizce'de yapayım dedim. Benim soruşlarımdan bu şekilde. Sormak istediğim soru varsa alabilirim.
+
+178
+00:22:03,483 --> 00:22:10,804
+Yani Markov'u denedin, T5'ı denedin, İngilizce üzerinde bunu deneyebildin, Türkçe'yi yapamadın. Başka?
+
+179
+00:22:11,024 --> 00:22:12,403
+Elestiyen'i denedim bir de hocam.
+
+180
+00:22:12,703 --> 00:22:17,284
+Elestiyen benim sonuçlarım nasıl? Yani sonuçları bir bize şey yapsan, yorumlasan, onunla dair bir...
+
+181
+00:22:17,284 --> 00:22:18,403
+Hemen yorumlayayım.
+
+182
+00:22:20,276 --> 00:22:45,716
+Onunla ilgili bir slide ekleyemedim yetiştirdim ama hemen incelediğim sonuçlar üzerinden bir değerlendirme yapabilirim. Şöyle, LSTM'le sonuçları ürettiğimizde, mesela ben ilk Markov'da denediğim çözümü LSTM'de yaptığımda, LSTM'de mesela bir türlü üç tane kelimenin birlikte gelmedi. Belki de daha fazla eğitim yapsaydım o mümkün olabilirdi.
+
+183
+00:22:46,175 --> 00:23:08,115
+Markov'da zaten mevcut veri seçimden ne yapıyor? Mesela A'dan sonra D'den gelmiş gibisinden bir transi için maddi üzerinden gittiğim için. Markov'da genelde korpusu çok benzeyen cümleler üretiyordu. Zaten sonuna kadar gelse bütün korpusu yazıcak da bıraksaydım.
+
+184
+00:23:09,216 --> 00:23:12,336
+Peki bir şey soracağım. Burada LST'nin inputu ne, outputu ne?
+
+185
+00:23:12,788 --> 00:23:28,208
+LSP'nin inputu, bizim mevcut olan korpusun her bir mesela 25 kelimelik yaptık. 25 kelimeden sonraki bir kelime ile target olarak yani next word prediction olayı var ya.
+
+186
+00:23:28,307 --> 00:23:30,988
+Tamam, o şekilde eğittin. Tamam, sonra?
+
+187
+00:23:31,567 --> 00:23:37,928
+Input olarak da benim kelime sekansı verdiğimde bu kelime sekansı sonra gelen kelime ve kelime şeklinde.
+
+188
+00:23:37,928 --> 00:23:38,907
+Tamam.
+
+189
+00:23:40,788 --> 00:24:00,788
+Mesela kelime sayısını verdiğimde ne yapıyor benim? Mesela bu Vodafone Arena'yı verdim. Diyorum ki Vodafone Arena'dan sonraki kelimeyi bu Beşiktaş. Ondan sonra Vodafone Arena ile Beşiktaş'ı birleştirip Vodafone Arena Beşiktaş'tan sonra ne geliyor? Taşıdığım. Hani bu şekilde bu şekilde. Ama bu şekilde ben ne yaptım? Araları bizim kelimeleri koyup işte bu kelimeleriyle birlikte de...
+
+190
+00:24:01,152 --> 00:24:06,491
+Ulus sonraki sonucunu ver şeklinde ilerlesin. Hesliyemi öyle bir trikle kullandı.
+
+191
+00:24:06,971 --> 00:24:10,531
+Anladım. Yani şöyle bir şey doğru mu anlıyorum?
+
+192
+00:24:10,892 --> 00:24:11,031
+Hayır.
+
+193
+00:24:11,451 --> 00:24:16,352
+Yani üç kelimeyi de içerecek şekilde sonuçlar ürettirebiliyorsun o zaman. Ben yanlış mı anlıyorum?
+
+194
+00:24:16,672 --> 00:24:17,291
+Evet, doğru.
+
+195
+00:24:17,759 --> 00:24:19,660
+Demin hani üretmedi falan dedin.
+
+196
+00:24:20,259 --> 00:24:33,759
+Şöyle, Markov'da derediğim yöntemle üretmedi. Markov'da direkt ben o üç tane kelimenin birlikte bulunmasını, bulanıma kadar yap dedim. Hani o şekilde üret dedim. Ama Alestiyem'de daha farklı bir yöntem izledim.
+
+197
+00:24:33,759 --> 00:24:42,819
+Anladım. Sunumda yaptıkların çok net gözükmüyor [öğrenci]'da. Yani hani sunuma çok vakit ayıramamışın geri. Peki.
+
+198
+00:24:43,988 --> 00:24:45,567
+Teşekkürler [öğrenci].
+
+199
+00:24:46,028 --> 00:24:46,628
+Ben de teşekkür ederim.
+
+200
+00:24:46,628 --> 00:24:49,228
+Peki, [öğrenci] seninle devam edelim.
+
+201
+00:24:50,768 --> 00:24:51,448
+Merhabalar.
+
+202
+00:24:52,268 --> 00:24:52,648
+Merhaba.
+
+203
+00:24:56,276 --> 00:25:09,135
+Benim sunum yapma fırsatım olmadı ama şekilde bir tablo yaptım. Size buradan sunacağım. Yöntemimi anlatayım sözlü olarak.
+
+204
+00:25:10,387 --> 00:25:24,647
+Ben karakter tabanlı elestiyem ve kelime tabanlı Markov Zincir modeliyle tahmin yaptım ve bunları karşılaştırdım.
+
+205
+00:25:26,267 --> 00:25:28,987
+Cümleleri oluşturmak için şöyle bir yöntem izledim.
+
+206
+00:25:30,347 --> 00:25:35,187
+Üç kelimenin birini seçerek cümlenin başına koydum.
+
+207
+00:25:35,551 --> 00:25:54,971
+Ondan sonra Markov's Intermodeli için en fazla üç sözcük olacak şekilde sözcükler ürettim. Sonra buna ikinci sözcüğü ekledim. Bu şekilde üç sözcüğü de kullanmış oldum. Biraz zorlama bir şekilde cümle ürettim.
+
+208
+00:25:57,471 --> 00:26:02,971
+Birer kelime üretecek şekilde, boşluklardan keserek.
+
+209
+00:26:03,344 --> 00:26:26,604
+Karakter tabanlı elestiyemde. Yine kelimeleri kendim araya ekleyerek ve o eklediğim karakter dizisini vererek yine ürettim cümleleri. O şekilde şeyi kullandım hocam. Sizin paylaştığınız altyazılar veri kümesini kullandım.
+
+210
+00:26:31,092 --> 00:26:41,412
+İki modeli de bu şekilde eğittim. Ondan sonra da üçer kelimeli cümleleri oluşturdum.
+
+211
+00:26:42,612 --> 00:26:47,132
+Peki Markov'un varsayımı kaç? Markov'u nasıl oluşturdun?
+
+212
+00:26:47,992 --> 00:26:52,032
+Hocam, bir önceki sözcüğe bakarak...
+
+213
+00:26:52,032 --> 00:26:53,292
+Markov bir yani.
+
+214
+00:26:53,663 --> 00:27:13,063
+Evet, arkadaşlarım bir gram dayattığı gibi oldu benim bu Marco Zindir'i modelim. Sonuçları incelediğimde elistiyemde her zaman mantıklı sözcükler dahi ortaya çıkmayabiliyor. Siz de görebilirsiniz mesela burada.
+
+215
+00:27:13,619 --> 00:27:22,619
+Ekler vesaire doğru olamayabiliyor. Ama belki daha fazla verili eğitsem, yani başarımları farklı da olabilir.
+
+216
+00:27:22,619 --> 00:27:38,759
+Daha başarılı da olabilirdi diye düşünüyorum. Mesela şöyle sözcükler var. Direy gibi mesela. Ama şu an baktığımda, Marko Zincir'in de anlamlı değil tüm cümleler.
+
+217
+00:27:39,092 --> 00:28:01,912
+Ama ikili, üçlü, dörtlü kelime grupları anlamlı oluyor. Örneğin LSTM'de ikili kelime gruplarının bile anlamlı olması zor. Mesela araştırmacının bir biyometrik diyor ama bu çok bir şey değil. Sadece bir eklemiş arasına. Üçlü anlamlı bir kelime grubu diyebiliriz belki de zaten iki sözcüğü ben veriyorum.
+
+218
+00:28:02,963 --> 00:28:28,923
+O nedenle benim değerlendirmeme göre bu Marco Zincir modeli daha başarılı oldu benim denememde. Daha başarılı kelime grupları üretti en azından. Ama işte bir tanesi karakter tabanlı bir tanesi kelime tabanlı olduğu için az veri kullandığım gibi düşünüyorum. Eğitim uzun sürdüğü için ben de bu kadar kullanmak zorunda kaldım ama.
+
+219
+00:28:29,364 --> 00:28:39,224
+Yani kelime tabanlı modeli birazcık şey oldu, avantajlı oldu benim bu deneme şeklim diye düşünüyorum. O yüzden de iyi çıkmış olabilir.
+
+220
+00:28:39,224 --> 00:28:52,624
+Yani LSTM'de de kelime tabanlı kullansaydın da aralarındaki farkı gerçekten şey. Şimdi buradaki sıkıntı dediğin gibi karakterlerden kelimeleri tam üretmeyi öğrenememiş. En azından yanındaki korpus yetmemiş buna. Böyle gözüküyor.
+
+221
+00:28:53,284 --> 00:28:56,444
+Ya da eğitim süresi yetmemiş. Hani belki biraz daha eğitim bir şeyler olabilir.
+
+222
+00:28:57,344 --> 00:29:01,484
+Ama bir taraf karakter, bir taraf kelime olunca tam böyle birebir şey yapamadık.
+
+223
+00:29:01,704 --> 00:29:05,104
+Hani karşılaştırma olamıyor gibi sanki. Değil mi?
+
+224
+00:29:05,264 --> 00:29:10,404
+Evet. Ben farklı olsun özellikle diye düşündüm. Neden öyle düşündüm bilmiyorum.
+
+225
+00:29:10,404 --> 00:29:19,464
+Daha güzel bir kıyaslama olabilir diye düşündüm ama yöntemlerin farklı olması bir yandan o kıyaslamayı daha zorlaştırdı yani.
+
+226
+00:29:19,764 --> 00:29:22,644
+Peki, peki. Başka bir şey var mı?
+
+227
+00:29:24,048 --> 00:29:24,888
+Yok hocam.
+
+228
+00:29:25,208 --> 00:29:26,668
+Peki, teşekkürler [öğrenci].
+
+229
+00:29:27,268 --> 00:29:28,188
+Ben teşekkür ederim.
+
+230
+00:29:30,048 --> 00:29:31,388
+[öğrenci] ve [öğrenci]'i dinleyelim.
+
+231
+00:29:35,796 --> 00:29:37,756
+Hemen ekran paylaşıyorum.
+
+232
+00:29:52,596 --> 00:29:53,796
+Ekranım geldi mi?
+
+233
+00:29:54,496 --> 00:29:55,076
+Geldi.
+
+234
+00:29:55,856 --> 00:30:13,236
+Tamamdır. Biz de Marko Chain ile LSD modellerini kullandık. İçindekiler kısmında kullanılan derlenler ve yöntemleri, ön işleme adımlarını, kullanılan yöntemlerin karşılaştırılması ve çıkarımlardan bahsedeceğiz.
+
+235
+00:30:20,564 --> 00:30:21,564
+Yorum kullandık.
+
+236
+00:30:21,564 --> 00:30:23,564
+1500 yorum kullandık.
+
+237
+00:30:23,564 --> 00:30:27,564
+Bunun işte 57.000'i pozitif yorum, 25.000'i negatif yorum.
+
+238
+00:30:27,564 --> 00:30:34,564
+Birinci uygulamada Mark Conchain cümle üretimi, ikinci uygulamada da LSTM cümle üretimini yaptık.
+
+239
+00:30:34,564 --> 00:30:38,564
+[öğrenci] şeyi anlamadım, bir öncekine görmesin.
+
+240
+00:30:38,564 --> 00:30:41,564
+1500 yorum mu?
+
+241
+00:30:41,564 --> 00:30:42,564
+Evet.
+
+242
+00:30:42,564 --> 00:30:45,564
+Aşağıda 57.000 pozitif diyor.
+
+243
+00:30:45,779 --> 00:30:56,799
+Hocam, onların arasından seçtik. Pozitifliğine ve negatifliğine bakmadan, çünkü süre ve RAM, memori hatalar aldığımız için bu kadarlık veriyle yapabildik açıkçası.
+
+244
+00:30:56,939 --> 00:31:00,599
+Anladım. Yani şey demek istiyorsan, genel kullandığımız...
+
+245
+00:31:00,599 --> 00:31:03,759
+İçerisinden 1500 tane yorum aldık, kullandık.
+
+246
+00:31:04,179 --> 00:31:04,839
+Evet, evet hocam.
+
+247
+00:31:04,899 --> 00:31:06,259
+Anladım. Tamam, tamam.
+
+248
+00:31:06,804 --> 00:31:29,423
+Ön işleme adımları, iki yöntem içinde bir küçük harf dönüşümü, linklerin, hashtaglerin kaldırılması, noktalama işaretinin özel karakterlerin kaldırılması, fazla boşlukların silinmesi, Türkçe karakter, İngilizce karakterleri dönüşümü, daha sonra da işte five şey sonundaki satır sonu karakterlerin kaldırılması gibi ön işlemleri yaptık.
+
+249
+00:31:29,811 --> 00:31:37,291
+Mark On Chain'de ön işlem adımları, cümleleri tokenlarına ayırdık. Tokenları bir Word listesinde tuttuk.
+
+250
+00:31:37,971 --> 00:32:01,831
+DataFrame üzerinde Words ve Words artı bir şey ve Freq sunlarını oluşturduk. Burada işte cümle içerindeki ilk kelimeyi daha sonra ikinci kelimeyi olmak üzere bu işte şey bir önceki kelimeye bakacak şeklinde bir DataFrame oluşturduk. Daha sonra bunları da kelime ikillerini grup by yaparak frekanslarını frekans sunumunda tuttuk.
+
+251
+00:32:02,163 --> 00:32:12,283
+Aynı satırlar bulunabileceği için. Doğru mu anlıyorum? O zaman siz de yine Marko bir gram, yani daha doğrusu sadece ardıçlık kelimelere baktınız değil mi?
+
+252
+00:32:13,124 --> 00:32:18,124
+Evet hocam, bir öncekine baktık. İkili şeklinde. İkililere baktınız sadece. Anladın.
+
+253
+00:32:18,124 --> 00:32:28,243
+Evet. Aynı satırları kaldırdık. Daha sonra indeksleri, word, sütunları da word artı bir olan pivot bir table oluşturduk.
+
+254
+00:32:28,627 --> 00:32:55,967
+Geçme sıklıklarına göre olasılıkları hesapladık ve bunu pivot table'da tuttuk. Yani şöyle diyelim ki cümlemiz Ali Top oynadı. Ali Top bir satırda frekansı. Diyelim ki Top oynadı ikinci sırada ve frekansı olacak şeklinde. Ali Top eğer cümle içinde 6 kere geçiyorsa, Top oynadı da 4 kere geçiyorsa bunların olasılığı 0-6-0-4 olacak şeklinde dağılacak.
+
+255
+00:32:56,627 --> 00:33:06,747
+Daha sonra cümle sonu fiilleri bir listede tuttuk. Bunları da kullanacağımız aşağıdaki algoritmada kullanacağımız için hazırladık.
+
+256
+00:33:07,443 --> 00:33:35,443
+Kullanıcıdan üç kelime alıyoruz yöntemde. Sonra boş bir cümle listesi oluşturuyoruz. İlk kelimeyi Word'te atıyoruz. Yani ilk kelimeden başlıyoruz tahminlemeyi. Daha sonra tahminleme yaparak Pivot Tablosu'ndan ilk kelimeye bakarak sonra gelecek kelimeleri olasılıklarına göre seçiyoruz. Bu da bizim next word'ümüz oluyor. Bu şekilde ilerliyoruz.
+
+257
+00:33:35,443 --> 00:34:03,003
+Daha sonra bu üç kelimeyi aynı cümle içerisinde üretebilmek için gerçekten çok uzun cümlelere doğru gidiyordu. Bazen de gerçekten sonlanmıyordu. O yüzden biz de bir mantık kurup 15 uzunluğundan fazla cümle uzunluğu 15 kelimeden fazla olmayacak şekilde yaptık. Tabi bunları iyileştirmek için değiştirdiğimiz örnekler oldu.
+
+258
+00:34:03,476 --> 00:34:22,456
+Orada da işte cümle uzunluğu eğer mod 10'u sıfır eşitse işte son kelimeyi cümleye ekle. İşte mod 5'i sıfır eşitse ortadaki kelimeyi cümleye ekle şeklinde gittik. Ama bunlar tabii ki şeyde eğer hani o cümle içerisinde bizim kelimelerimiz bulunmuyorsa hani gibi hani sonlandırabilmek için böyle bir mantıkla ilerledik.
+
+259
+00:34:23,016 --> 00:34:31,275
+Kelime eğer cümle sonu fiiller içindeyse ve cümle uzunluğu alttan büyükse cümleyi üretmeyi bitir yöntemi kullandık.
+
+260
+00:34:31,476 --> 00:34:50,576
+Kelime eğer cümle sonu filetinde değil ise Word'a next Word'a atayarak döngüye devam et şeklinde ilerledik. Bu şekilde bir yöntem kullandık. Yani karşılaştırabilmek için aynı algoritmayı LSTM'in cümle üretimi kısmında da kullandık. Orada o yüzden detaylı şeklinde yazmadım.
+
+261
+00:34:51,507 --> 00:35:14,247
+LSTM'de de gene ön işlemler, cümleleri tokenlara ayırma, tokenlar versiyonunda tutma ve bir kelime hazinesi ve kablör oluşturma. Daha sonra da bu kelime hazinesinden cümle listeleri oluşturduk. LSTM'e verebilmek için. Burada da diziler ve sonraki kelimeler olmak için iki tane ereğimiz olmakta.
+
+262
+00:35:19,507 --> 00:35:47,507
+Sıfırıncı ve dokuzuncu, diyelim biz orada on seçtik cümlenin dizinin uzunluğuna. O dizi içerisinde, cümle içerisinde, cümle içerisindeki sıfırla dokuzuncu indistekini bir dizinin ilk elemanına attık. Sonra onuncu indisinden gelenkinin sonraki kelimeye atadık. Daha sonra ikinci dizinin indisi için de bir kaydırarak bir ile onuncu indisini dizinin ikinci elemanı, on birinci de sonraki kelimenin ikinci elemanı.
+
+263
+00:35:47,507 --> 00:36:15,147
+şeklinde bir yapı oluşturduk. Bu yapıyı da daha sonra LSM modeline verebilmen için bir matriks yapısı oluşturduk. Hem diziler için hem de sonraki kelimeler için olmak üzere. Daha sonra bu matriks de LSM modeline verdik. LSM modelinin özellikleri de Optimizer'da Add-in'i kullandık. Activation Function'da Softmax'ı kullandık. Lost Function'da Categorical Cross Entropy kullandık.
+
+264
+00:36:15,507 --> 00:36:19,728
+Daha sonra bu oluşturduğumuz maddes yapısıyla model eğitimi gerçekleştirdik.
+
+265
+00:36:19,728 --> 00:36:30,728
+Model eğitimi gerçekleştirdikten sonra da buradaki anlattığım yapıyla aynı ilk kelimeyi vererek bir cümle, sözcük tahminleme ve buna göre de cümle üretimi oluşturduk.
+
+266
+00:36:32,127 --> 00:36:36,927
+50 tane de örneği burada biz koyduk. Üzerinden geçebilirim.
+
+267
+00:36:38,579 --> 00:36:46,720
+Burada mesela işte Markov çiçeğini LSTM arasında karşılaştırırsak, burada güzel bir örnek oluştu yani diğerlerine nazaran.
+
+268
+00:36:47,443 --> 00:37:12,304
+Güzel robot ve son kelimelerini verdiğimizde, güzel olursa olsun ama robot taklidi yapanların kavgasıydı. Ben de son zamanlarda izlediğim gibi daha LSD'ime göre daha tutarlı sonuçlar geldi açıkçası. LSD'm de de güzel de, yine de dünyasını istiyorsanız robot şaşırtıcı ve ayrıca kocaman son puan gibi LSD'me göre Mark Bonchain daha iyi sonuçlar verdi.
+
+269
+00:37:12,784 --> 00:37:37,804
+Şurada bir örnek verebilirim. Film güzel, iyi olarak. Film tavsiye etmem. Filmlerini güzel işte. Mafya karakterini oynayan adam iyi olabilirmiş. Mikael iyi, helal olsun gibi bir örnek var. Elestian'da de film güzel, yanında işleyen sahneler, sözleri yaşanır, çok dava, tebrik, iyi, sevdiğim gibi oluşuyor. Hocam daha fazla örnek verebilirim.
+
+270
+00:37:38,579 --> 00:37:40,180
+Buradan şey yapabiliriz.
+
+271
+00:37:40,180 --> 00:37:46,280
+Bir yorum yaptı. Yok yok. Yani yorumlasan iyi olur. Tamam böyle bir sürü örnekler var. Güzel.
+
+272
+00:37:47,200 --> 00:37:57,320
+50 tane örnek koyduk hocam orada. Çıkarımlarımızı söyleyebilirim. Mark On Chain'e cümle üretimi, yöntemi işte LSTM'e göre daha iyi cümle üretmiştir.
+
+273
+00:37:57,320 --> 00:38:05,019
+İşte bunun nedeni Mark On Chain'de model eğitimi olmaması ve işte ikili olasılıkları, dili daha iyi modellemesi olduğunu düşünüyoruz.
+
+274
+00:38:06,579 --> 00:38:28,460
+Bu öğrenme modeli olduğu için biz çok az veride eğittik. O nedenle de iyi sonuç veremediğini düşünüyoruz. Belki daha büyük bir veri set kullansak, daha fazla, daha uzun süreler eğitseydik daha iyi sonuçlar verebilirdi. Belki kelimeler arasındaki ilişkiyi daha iyi çıkarabilirdi.
+
+275
+00:38:28,847 --> 00:38:39,268
+Bir de diğer şeyimiz, bir arkadaşımız yapmış anladığım kadarıyla karakter bazı elestem kullanılsaydı daha iyi sonuç alınabilirdi diye çıkarımlarımız da bunlar hocam.
+
+276
+00:38:41,968 --> 00:38:44,788
+Peki, çok teşekkürler arkadaşlar.
+
+277
+00:38:45,528 --> 00:38:47,068
+Ben bir soru sorabilir miyim acaba?
+
+278
+00:38:47,367 --> 00:38:47,588
+Tabii.
+
+279
+00:38:48,508 --> 00:38:50,407
+Bir örneğe gelebilir misiniz?
+
+280
+00:38:51,148 --> 00:38:52,448
+Herhangi bir.
+
+281
+00:38:52,867 --> 00:38:54,028
+İlkine geleyim.
+
+282
+00:38:55,123 --> 00:39:18,363
+Burada mesela LSTM için soruyorum. Mesela güzel robot son için güzel de yine de dünyasını istiyorsanız robot şaşırtıcı ve ayrıca kocaman son puan üretirken güzelden bir cümle üretip daha sonra robottan bir cümle üretip daha sonra da sondan bir cümle üretip mi birleştirdiniz? Yoksa burada nasıl bir yol izlediniz? Tam anlayamadım.
+
+283
+00:39:18,835 --> 00:39:46,835
+Şöyle, diyelim ki güzelden sonra işte kelime tahminlemesi yapıyoruz. Aslında cümle üretme değil de sözcük tahminlemesi. İşte güzelden sonra olasılıksal baktığımızda en yüksek hangisi gelir? O şekilde. Yani şöyle ilerleyebilirdik elestiyemde ama işte cümleler çok uzun kaldığı için ya da işte güzel robot ve sonuk, zaten veri setimiz de küçük. Orada güzel robot ve sonun olasılıkları birbirine yakın, olasılıkları yüksek.
+
+284
+00:39:46,835 --> 00:39:59,835
+Birbirini tahmin ederek nasıl anlatsam işte sonuna ekleyerek bulmak biraz zor olacağı için biz de orada bir algoritma yaptık. Hani güzelliğinden sonra diyelim ki işte o algoritma...
+
+285
+00:40:00,000 --> 00:40:17,720
+Eğer robot gelmiyorsa, biz orada onu kesip robotu ekledik gibi. Daha sonra robottan sonra, bizim Next World'ümüz artık robot oluyor. Robottan sonra da robota göre Next World üretimi oldu.
+
+286
+00:40:18,380 --> 00:40:21,940
+Aslında aynı şey, Marko Öçen'de de aynı şekilde üretmediniz.
+
+287
+00:40:22,356 --> 00:40:29,976
+Orada da aynı şekilde hocam. İkisinin cümle üretme mekanizmaları aynı aslında. Öyle değil mi? Evet hocam.
+
+288
+00:40:29,976 --> 00:40:38,156
+O şeyde de aynı şeyi yapıyorsunuz, LSM'de de aynı şeyi yapıyorsunuz. Cümle üretme mekanizması senin herhalde beşinci saatinin sonunda gözüken kısım.
+
+289
+00:40:38,596 --> 00:40:46,816
+Evet, şurası hocam. Burada sadece LSM üzerinde sorduğu için orayı anlattım hocam. Yoksa ikisi de aynı şekilde yani aynı makinizmayı kırdık.
+
+290
+00:40:46,816 --> 00:40:50,356
+Ben de LSM kullandım da ben de bir farklı şekilde...
+
+291
+00:40:50,356 --> 00:40:53,576
+O yüzden merak ettim. Teşekkürler sana.
+
+292
+00:40:53,756 --> 00:40:56,056
+Ben de bir soru sorabilir miyim?
+
+293
+00:40:56,696 --> 00:40:57,256
+Tabii ki.
+
+294
+00:40:57,736 --> 00:41:09,436
+Marco şeyinde ve LSTM'de kullandığınız yöntemde aslında robot kelimesi gelmediği zaman siz aslında elle ekleyip yeni bir robotla başlayan cümle üretmiş oluyorsunuz. Robottan sonraki kısımda öyle değil mi?
+
+295
+00:41:09,916 --> 00:41:11,856
+Cümle üretmiş olmuyoruz aslında.
+
+296
+00:41:12,236 --> 00:41:12,496
+Evet.
+
+297
+00:41:13,108 --> 00:41:15,327
+Yani sözcük tahminlemesine o şekilde ediyoruz.
+
+298
+00:41:15,327 --> 00:41:17,568
+Kelime tahminlemesine devam ediyoruz, evet.
+
+299
+00:41:18,188 --> 00:41:24,688
+Yani robot gelmiş gibi yani hani devam ediyoruz ama hani bir cümle cümle uğratıp birbirine mörç etme gibi bir durum yok.
+
+300
+00:41:24,827 --> 00:41:26,448
+Aynen, kelime bazı.
+
+301
+00:41:27,448 --> 00:41:33,748
+Anladım, şey diye anladım çünkü tabii hani güzelle oluşturup robot gelene kadar, robot gelmezse robotla başlayıp...
+
+302
+00:41:33,748 --> 00:41:34,208
+Yok yok.
+
+303
+00:41:35,288 --> 00:41:36,788
+Tamam, anladım, teşekkür ederim.
+
+304
+00:41:39,635 --> 00:41:41,396
+Peki, başka soru var mı?
+
+305
+00:41:46,068 --> 00:41:50,028
+Peki, teşekkür ediyoruz tekrardan. [öğrenci] [öğrenci], seninle devam edelim.
+
+306
+00:42:00,052 --> 00:42:01,211
+Ekran geldi mi hocam?
+
+307
+00:42:02,132 --> 00:42:02,432
+Evet.
+
+308
+00:42:04,252 --> 00:42:09,172
+Ben İlkin hocam ödevi çok daha kompleks bir yapıda anladım.
+
+309
+00:42:09,972 --> 00:42:17,972
+Ama şimdi arkadaşların sunumlarını da görünce aslında sonradan en son yapayım diye yaptığım şeyle aynı olduğunu gördüm.
+
+310
+00:42:17,972 --> 00:42:29,972
+Ben de LSTM kullandım hocam. LSTM farklı iki modeli karşılaştırma adına da kullandığım embellik katmanı da kullandığım yöntemi değiştirdim.
+
+311
+00:42:29,972 --> 00:42:34,972
+Birinde World2Vac ile üretilmiş pre-trained ağırlıkları kullandım. Birinde de Fast-Tex'tim.
+
+312
+00:42:35,059 --> 00:42:37,699
+Ağırlıkları kullandım.
+
+313
+00:42:38,579 --> 00:43:06,059
+Veri seti de Mevlana'nın mesnevisini kullan. Bunu seçmemin nedeniyle geçtiğimiz hafta siz de derste söylemiştiniz. Bu cümlelerin üretiminde normal bir metinden ürettiğimiz zaman bunun şey olduğu daha anlaşılıyordu. Yapay olduğu ama bir şiir olduğu zaman mesela şiir benzeri bir şey biraz daha böyle sanki orada derin bir anlam bırakılmış gibi olduğu için.
+
+314
+00:43:06,579 --> 00:43:10,500
+Ben de dedim buna benzer ne olabilir? Mesnevi var. Mesnevi'de de böyle.
+
+315
+00:43:11,411 --> 00:43:39,411
+Satır satır sanki şiir gibi gittiği için bunu aldım, bu mesneveyi kullandım. Eğitim verisletini oluştururken kelime bazlı çalıştım LSM'de. Örneğin benim göçme zamanı geldi diye cümlem varsa ben bunun göçme zamanını, şu iki tane kelimeyi train x'ime geldiydi. Bunlardan sonra geldiği için etiketime...
+
+316
+00:43:39,411 --> 00:43:45,612
+Tren Y'ye koydum. Bu şekilde oluştu. Bu versiyeti üzerinde çalıştım.
+
+317
+00:43:46,612 --> 00:44:14,231
+Modele ettikten sonra aslında benim cümle üretim yerim biraz arkadaşlarımkine göre farklı. Burada üç tane kelimeden biz bir cümle üretimi yapmamızı istemiştiniz. Ben oluşturduğum derlemden rastgele üç tane kelime seçiyorum. Bunlar tamamen random bir şekilde geliyor. Burada mesela bu örnekte hakim, hayır ve kötülükle kelimeleri gelmiş.
+
+318
+00:44:14,612 --> 00:44:21,612
+Daha sonra bu kelimelerin herhangi biriyle bir...
+
+319
+00:44:22,931 --> 00:44:47,851
+Çerçeve oluşturmam gerekiyor. Ben 10 kelimeyle sınırlandırdım cümlelerimi. Yani fremimi, daha doğrusu çerçevemi. Bunun için de şöyle bir şey kullandım. Yani bunların hangisi olsun diye hep hakim olmasın veya hep hayır birinci kelime, ikinci kelime olmasın diye değerlendim. En çok geçen kelimeyi aldım. Yani frekans değerlerine baktım aslında bu kelimelerin.
+
+320
+00:44:48,659 --> 00:45:10,699
+Örneğin buradaki frekans değeri en yüksek olan kelime hayır. Hayır kelimesi çok fazla geçmiş benim derlemim içerisinde. Bununla bir şey oluşturursam eğer, çerçeve oluşturursam bunların aslında çok daha fazla geçtiği için bu hayır kelimesiyle daha fazla cümle olduğu için bunların bu hayırla oluşturduğum cümlenin içerisinde olma ihtimalleri daha da artacaktı.
+
+321
+00:45:16,659 --> 00:45:23,379
+Çerçeve oluşturdum. Bu çerçeveyi burada görebiliyorsunuz. Mesela hayır dedi ki yemek tasavvuf saatinden.
+
+322
+00:45:24,275 --> 00:45:41,215
+Kulağından biten kurdun, sevdikleri kışı. Bu oluşturduğum şeyi, tabii yine modeli kullanarak oluşturuyorum. Model ettikten sonra oluşturuyorum. Bu iki tane kelimeyi yine modeli kullanarak acaba bunların içerisinde bağlayabilir miyim diye düşündüm.
+
+323
+00:45:51,923 --> 00:46:07,463
+Korpus'ta bulunan bütün yünük kelimelerim için bana bir olasılık değeri veriyor. Yani bir tahmin değeri veriyor. Prediction değeri veriyor. Bu prediction değerine göre de ben bu kelimeleri buraya en alakalı yer nereyse oraya koyabilirim diye düşündüm.
+
+324
+00:46:07,463 --> 00:46:19,923
+Yani diyelim ki hakim kelimesini buraya yerleştirmek istiyorum. Geliyorum hayırdan sonra hakim gelme ihtimali ne? Dedikiden sonra hakim gelme ihtimali ne? Yemekten sonra hakim gelme ihtimali ne?
+
+325
+00:46:19,923 --> 00:46:36,304
+Bunların hepsine bakıyorum. En yüksek olan hangisi ise gidip oraya ben o kelimeyi yerleştiriyorum. Burada aslında ben her türlü bir arama yapmıyorum. Arkadaşlar genelde öyle yapmış. Benimkinde bir arama yok. Bir oluşturulan cümle var.
+
+326
+00:46:37,139 --> 00:47:03,479
+Daha sonra da bu cümlenin içerisinde benim eğittiğim modeli yine kullanarak en anlamlı yere bu kelimeleri nasıl yerleştirebilirim? Bununla alakalı. Bu bütün kelimeyi tarıyorum aslında. Daha sonra da en anlamlı yere yerleştiriyorum. Burada da mesela en son benim generic text fonksiyonumu verdiği kelime şu şekilde. Hayır, dedi ki hakim yemek tasavvuf zatından doğan biten kurdun sevdiklere kötülükle kışı.
+
+327
+00:47:04,019 --> 00:47:10,200
+Bu şekilde ben cümlemi elde ediyorum.
+
+328
+00:47:10,980 --> 00:47:12,019
+Burada da...
+
+329
+00:47:12,628 --> 00:47:40,608
+Elde ettiğim sonuçlar var. İlk baştaki şu iki tanesi benim random olarak buluşturduğum. Yani hakim, hayır, kötülükle, derman, nanker, tenkele, mağara. Bunlar random olarak gelen. Şu iki tanesi de ben kendim verdim. Biraz daha birbirleriyle alakalı kelimeler verirsem, acaba daha iyi şeyler üretebilir mi diye bunları inceledim. Burada da iki tane dediğim gibi bir word to work, bir de fast text yöntemi.
+
+330
+00:47:40,628 --> 00:47:48,628
+Bu ekorpsi, pre-trained weightleri kullanarak elde edip, nasıl sonuçlar elde edebiliyorum onları incelettim.
+
+331
+00:47:49,844 --> 00:48:17,844
+Bu kelimeleri rastgele seçtiğim zaman birbiriyle çok alakasız kelimeler de gelebiliyor. Bu nedenle çok cümleler üretemeyebiliyor. Ama ben kendim verdiğim zaman dışarıdan mesela şu peygamber dost lütfet diye bakıp şeyden korkusundan bunlar birbiriyle biraz daha alakalı, daha şey geçer diye. Bunları verdiğim zaman mesela şu...
+
+332
+00:48:17,844 --> 00:48:31,983
+Hatta geçen hafta sizin de yaptığınız gibi şiirsel falan da okuduğunuz zaman peygamber dedi ki cefalarla amelleri lütfet, hayrına hükmeti avlamaktan dost fani çıkar düşmanlık.
+
+333
+00:48:32,340 --> 00:48:38,239
+Bu festeks yöntemi şeye göre biraz daha kötü çalışıyor.
+
+334
+00:48:38,719 --> 00:48:44,679
+Peygamber sallallahu kar hayalimi bilse anlaşılması öğretsem merhametle boğazıma hütfet.
+
+335
+00:48:44,880 --> 00:48:46,079
+Aklının dost yoktur.
+
+336
+00:48:47,679 --> 00:48:49,320
+Bir de şurada vardı.
+
+337
+00:48:49,940 --> 00:49:08,860
+Zulüm döker keçi, benden çocukluktan herkes nerededir? 3 sırada gözyaşı, imtihana büyücü olmuş gibi sonuçlar var. Bunların 50 tanesini de göstereceğim şimdi. Karşılaştığım bazı bu ikisini kastırdığım zaman problemler var. Bunları söyleyeyim.
+
+338
+00:49:09,876 --> 00:49:31,816
+Birincisi Festex'te kullandığım zaman birbirlerini tekrar eden, yani mesela şu örnekte görebiliyoruz. Mesela Galip İsten Yeni verdiğim zaman şu Galip Yeni Nisten bu en şeye gelmiş. Daha sonra otomatik kopardığı işlerin şu yapıyı mesela birden fazla şeyde görmek mümkün.
+
+339
+00:49:31,816 --> 00:49:37,876
+Birden fazla verdiğim farklı şeyde kelime üçlüsünde görmek mümkün.
+
+340
+00:49:37,876 --> 00:50:00,000
+Bu örneğe bakalım.
+
+341
+00:50:00,000 --> 00:50:11,439
+Gruplarının çok birbiriyle alakalı olmasa bile bir yerde toplandığını görüyorduk. Burada da acaba bu kelime grupları ile bu kelime... Çünkü hepsinde olmuyor. 50 tanenin hepsinde değil. Bazı kelimeler de oluyor.
+
+342
+00:50:11,871 --> 00:50:34,991
+Bu kelimeler de acaba bu şekilde toplanmış mı diye düşündüm. İkinci problem olarak gördüğüm şey de aslında benim cümle verilen kelimelerden biriyle başlamak zorunda. Yani benim üç tane kelimem varsa cümle kesinlikle bu üçünün biriyinden başlamak zorunda diye ben problem olarak düşünüyordum ama çok da problem değilmiş diğer çalışmalarda gördüğüm zaman.
+
+343
+00:50:39,699 --> 00:51:07,699
+Görmek burada mümkün. İncelediğim zaman, Word2Vac kullandığım zaman, Pestex'e göre daha anlamlı şeyler ürettiğini gördüm. Bir de arkadaşları dinledikten sonra şey yaptım. Mesela burada 10 tane değil de, benim şurada oluşturduğum şeyi 10 değil de, daha fazla yapsaydım, mesela 20 kelimeden oluşan bir cümle oluştursaydım, büyük ihtimalle bu kelimeleri daha...
+
+344
+00:51:07,699 --> 00:51:28,659
+Daha anlamlı yerlere yerleştirebilecektim. Burada da aslında ilk başta kendim biraz daha birbirleriyle yakın kelimeler verdiğim zaman daha nispeten, rastgele olanlara nispeten daha anlamlı şeyler ürettiğini gördüm. Bu şekildeydi hocam benim yaptığım çalışma. Varsa sorularınızı alabilirim.
+
+345
+00:51:29,876 --> 00:51:43,775
+Teşekkürler [öğrenci]. Sonuç olarak şey, bu World2Wake'in FES80 en azından bu task için daha iyi olduğunu göstermişsin. Bu güzel bir yorum olmuş bence.
+
+346
+00:51:50,483 --> 00:51:58,203
+Yeterince iyi olabilmesi için aslında o cümle üreten kısmın çok iyi çalışıp ondan sonra aralara kelimeler ekliyorsun çünkü.
+
+347
+00:51:58,608 --> 00:52:10,608
+Mesela hayırdan sonra bir cümle üretiyorsun. O cümlenin kendisi çok iyi olmalı ki, ondan sonra araya bir şeyler sokarak onu bozacaksın.
+
+348
+00:52:10,848 --> 00:52:19,088
+Çünkü bir şekilde bozacaksın, öyle söyleyeyim. Ama buraya baktığımızda tabii muhtemelen derlen büyüklüğünün de bayağı bir etkisi var diye tahmin ediyorum.
+
+349
+00:52:19,768 --> 00:52:23,008
+Buradaki mesela cümle tek başına çok böyle şey değil.
+
+350
+00:52:23,008 --> 00:52:24,428
+Anlamlı değil.
+
+351
+00:52:24,548 --> 00:52:26,608
+Anlamlı değil. Anlamlı olmayınca da araya bir şey...
+
+352
+00:52:26,608 --> 00:52:54,608
+Dediğim gibi orada daha fazla...
+
+353
+00:52:54,608 --> 00:53:06,648
+Arkadaşlar, inputtaki window'un biraz daha büyük olsa ve dolayısıyla derlemin de büyük olsa bunu yapabilmek için daha iyi cümleler muhtemelen üretilebilir. Peki, teşekkürler [öğrenci]. Soru soran var mı?
+
+354
+00:53:06,968 --> 00:53:07,808
+Gördüm hocam.
+
+355
+00:53:11,923 --> 00:53:19,384
+Peki, [öğrenci], seni bir ara verelim. Ondan sonra alalım seni. Tamam mı?
+
+356
+00:53:19,384 --> 00:53:20,143
+Hocam, tabii.
+
+357
+00:53:21,423 --> 00:53:26,123
+Şimdi saat 1.53, bir 10 dakika ara verelim arkadaşlar. Şöyle yazayım.
+
+358
+00:53:32,947 --> 00:53:39,707
+10 dakika sonra [öğrenci]'la başlayacağız. Sonra benimle devam edeceğiz arkadaşlar. Az sonra görüşmek üzere.
+
+359
+01:03:21,619 --> 01:03:27,079
+Arkadaşlar, tekrardan. Evet [öğrenci], seninle devam edebiliriz.
+
+360
+01:03:28,199 --> 01:03:29,759
+Tamamdır hocam, bir kan paylaşayım.
+
+361
+01:03:34,260 --> 01:03:36,420
+Görebiliyor musunuz? Evet.
+
+362
+01:03:37,700 --> 01:03:49,960
+Hızlıca başlayayım hocam. Ben iki farklı yöntem kullandım. Bunlardan bir tanesi hep diğer arkadaşlarımızla kullandığı LSTM tabanlı bir sonraki kelimeyi tahmin edebilen yapay sindira mimarisi.
+
+363
+01:03:51,180 --> 01:04:00,560
+Diğeri ise ben burada biraz farklı bir yaklaşım kullandım sanırım. FastText kullanarak yaptım sadece. Yöntem şu şekilde çalışıyor.
+
+364
+01:04:02,099 --> 01:04:19,960
+Bir de diğer arkadaşlarımdan farklı olarak ben şunu yaptım. Aralara kelime serpiştirmek yerine ilk üç kelimeyi seed gibi kabul edip bunlardan devam ettirdim. Aralara koymakla uğraşmadım. Daha sonra onlara çalışmadım. Başlangıç üç kelime ve devamı şeklinde geliyor benim çalışmamda.
+
+365
+01:04:20,860 --> 01:04:25,119
+Korpus olarak yarışma veriseti vardı, yarışma eğitim veriseti.
+
+366
+01:04:25,780 --> 01:04:50,780
+Buradan Fast-Tex modelini oluşturdum öncelikle bu kelimelerden, bu korpustan. Ardından bu seedteki her bir kelimenin vektörlerini alıp, toplayıp daha doğrusu yeni bir vektör oluşturdum. Bu oluşturduğum vektörün de kelime havuzundaki en yakın kelimesini bularak seed'e ekleyerek devam ettim. Yani üç kelimeyi al.
+
+367
+01:04:51,411 --> 01:05:02,951
+Bu üç kelimenin vektörünü hesapla, ortalama vektörünü. Sonra bu oluşan vektöre en yakın kelime hangisi? Bu kelimeyi al, c'de ekle, c'de bu şekilde büyüt şeklinde bir yaklaşımdı bu.
+
+368
+01:05:03,811 --> 01:05:11,611
+Yani Markov vs. kullanmadım burada. Hani tamamen vektörleri uçucuya ekleyerek bir şeyler çıkartabilir miyiz diye düşünmüştüm, elestiyemden farklı olarak.
+
+369
+01:05:12,820 --> 01:05:22,820
+Bir diğer yöntem Elestiem'di zaten. Elestiem çok defa anlatıldı. En tane gerideki kelimeyi vererek bir sonraki kelimeyi tahmin eden bir yapay sinir aramadığım modeli.
+
+370
+01:05:23,539 --> 01:05:42,379
+Burada sonuçlara bakacak olursak ilginç sonuçlarla karşılaştım bazı yerlerde. Onlardan bahsedeyim. Mesela LSTM Sequence tabanlı olduğu için bir sonraki kelimeyi tahmin edelim. Bir sonraki kelimeyi tahmin edelim gibi keyzlerle daha iyi çalışıyor. Mesela Mahmut Tuncer ve Turkcell istediği reklamı yapsın.
+
+371
+01:05:42,963 --> 01:05:54,623
+Gibi böyle cümleler oluşturdu. Ama Fastex'e baktığımızda Mahmut Tuncer ve Fax Adet Kablotezi. Çünkü bunlar çok fazla bir sequence oluşturamadı Fastex tarafında.
+
+372
+01:05:57,623 --> 01:06:05,195
+Örneğin burada da mesela hayvan çocuk hava birbirinden farklı böyle alakasız kelimeler verince de.
+
+373
+01:06:05,204 --> 01:06:25,724
+FASTX'in bir tık daha iyi çalıştığını gördüm. Çünkü orada bir anlam ilişkisi zaten yok. Rastgele seçilmiş üç kelime. Bunlara yakın kelimeleri ekleye gittiği için böyle bir çalışma yapmış oldum genel olarak bu şekilde. Hızlıca anlatayım dedim. Sizin sormak istedikleriniz varsa.
+
+374
+01:06:32,724 --> 01:06:34,463
+Alıyorsun ilk önce. Değil mi?
+
+375
+01:06:34,824 --> 01:06:36,784
+Evet. Sonra bunlardan prediktelere de gidiyorum hocam.
+
+376
+01:06:37,684 --> 01:06:39,403
+O şekilde ilerliyorsun.
+
+377
+01:06:41,084 --> 01:06:48,864
+Anladım. Genel olarak hani bekleneceye üzerine LSM daha başarılı olacaktır. En azından hani ardışıklıkları bir şekilde içine kalktığı için.
+
+378
+01:06:48,864 --> 01:06:57,244
+Veri kümesi olarak diyorsunuz şey bu tweetleri kullandım herhalde. Olumsuz nötr tweetler vardı. Onları kullandım.
+
+379
+01:06:57,619 --> 01:07:01,780
+Evet, aslında yeni tweetler üretilmiş oldu. Bunların hepsi yeni tweet gibi düşünülebilir.
+
+380
+01:07:03,719 --> 01:07:04,139
+Evet.
+
+381
+01:07:04,860 --> 01:07:06,599
+Şu üçlüleri verip.
+
+382
+01:07:08,920 --> 01:07:13,860
+Mesela çok yetersiz geldi, çok yetersiz geldi Türk serbayisindeyim hizmetleri etkinliğine.
+
+383
+01:07:16,440 --> 01:07:18,599
+Gibi böyle cümleleri oluşturabiliyor.
+
+384
+01:07:20,500 --> 01:07:22,400
+Bu şekilde hızlıca anlatayım dedim.
+
+385
+01:07:22,800 --> 01:07:27,800
+Anladım. Peki. Teşekkürler [öğrenci]. Soru soran var mı arkadaşlar [öğrenci]?
+
+386
+01:07:38,068 --> 01:07:39,748
+Peki, teşekkürler.
+
+387
+01:07:39,748 --> 01:07:40,488
+Teşekkürler.
+
+388
+01:07:47,603 --> 01:07:55,603
+Peki arkadaşlar, o zaman benim kısma başlayıp gideriz. Şimdi geçen hafta...
+
+389
+01:07:57,283 --> 01:08:03,263
+Hocam, başlamadan bir şey sorabilir miyim? Ödev notlarını paylaşacak mısınız acaba?
+
+390
+01:08:04,123 --> 01:08:10,883
+Paylaşırım. Şu ana kadar görmediniz mi hiç ödev notlarını? Ben görmedim hocam.
+
+391
+01:08:13,396 --> 01:08:21,095
+Tamam, yani onu bir sonraki derste paylaşırım. Ama yani ödev yaptıysanız çok çok kötü değildir diye tahmin ediyorum. Tamam.
+
+392
+01:08:21,836 --> 01:08:23,676
+Tamam hocam, teşekkürler. Rica ederim.
+
+393
+01:08:28,692 --> 01:08:40,051
+Peki. Şimdi geçen hafta uygulama alanlarından bahsetmiştik. Soru cevaplama sistemlerine bakıyorduk. Şimdi şöyle bir konudan bahsetmiştik hatırlarsanız.
+
+394
+01:08:47,507 --> 01:09:11,807
+Çıkarım yapabiliyor mu sistemler? Bunu ölçebilmek için bir veri kümesi oluşturulmuş demiştik bu Bobby kümesi. Facebook'ta, Facebook'un araştırma laboratuvarında. Şimdi bu veri kümesi işte şöyle mesela yedi tane cümle var. Daha sonra biz bir soru soruyoruz. O sorunun cevabının hangi kelime olduğunu bulmaya çalışıyor.
+
+395
+01:09:15,028 --> 01:09:16,847
+Hani, lisanınca bu bir meh.
+
+396
+01:09:18,739 --> 01:09:46,659
+Sistemler Rizimlik yapabiliyor mu, yapamıyor mu? Onu ölçebilmek için oluşturulduğundan bahsetmiştik. Burada bilinçli olarak aslında çok küçük bir şey kullanılmış, sözlük boyutu oldukça küçük, çok basit bir gramer var. Yani şu yukarıdakiler orijinalleri, şu aşağıdakiler de onların Türkçe'ye çevrilmiş halleri. Burada baktığınızda işte dediğim gibi 100 civarında falan farklı kelime sayısı var maksimum.
+
+397
+01:09:46,739 --> 01:10:12,039
+Dediğim gibi çok da basit yapılarda olan cümleler. Zaten bu şeyler, bu eğitim hükümeleri ve test hükümelerin örnekle zaten otomatik olarak generate ediliyorlar. Yani bir yerlerden toplanmış falan bir şeyler değiller. Veli kurallar dahilinde bunlar oluşturuluyorlar. Yani bu eğitim ve test hükümelerini oluşturan kodlar zaten var. Daha sonra bu acaba bu iki cevabı bulabilir mi?
+
+398
+01:10:13,203 --> 01:10:24,623
+Bulunabilir mi? Farklı yöntemler nasıl sonuçlar verebilir diye çalışmalar yapılmış. Bunlardan, burada bir de input olarak şey vardı. Nebel, ona hangi cümle?
+
+399
+01:10:24,975 --> 01:10:34,835
+Şu cevaba erişmek için hangi cümlelerin, buradaki cümleler, hangi cümlelerin kullanılması gerektiğine dair de bir inputun sisteme sağlayabildiğinden bahsetmiştik.
+
+400
+01:10:35,376 --> 01:10:42,855
+Şimdi burada memory networklerin kullanıldığını konuşmuştuk ama bunların iç yapısına dair herhangi bir şey konuşmamıştık.
+
+401
+01:10:43,376 --> 01:10:47,575
+Bu hafta buna dönebiliriz demiştik. Şimdi onları birazcık incelemeye başlayalım.
+
+402
+01:10:48,916 --> 01:10:54,716
+Şimdi Memor Networkler, şurada gördüğünüz üzere 2014'te yayınlanmış.
+
+403
+01:10:55,220 --> 01:11:16,960
+Bir yapay sinir al ve bir memory mimarisi var. Fakat buradaki memory mimarisi sadece yazılıp okunan bir değiştirme mekanizması yok burada. Şimdi buradaki M diye ifade ettiğimiz değişken hikayenin tutulduğu memory. Yani hikaye dediğimiz şeyde şuradaki kısım, şurada gördüğünüz kısım M mi ifade ediyor. M İ'ler her bir satırını ifade edecekler.
+
+404
+01:11:17,652 --> 01:11:35,112
+MO1 ve MO2 diye ifade ettiğimiz şeyler memoninin cevabı üretecek parçaları. Yani şuradaki mesela işte burada 3 tane var ama 2 tanesini burada almış. Mesela 2 taneli olduğunu düşünürsek MO1 ve MO2 buradaki şeylerin mesela 5 ve 6 diyelim ki indisleri parçaları.
+
+405
+01:11:35,112 --> 01:11:44,112
+X'imiz soru, bir soru geliyor. R dediğimiz şey ise tek kelimelik bir cevap, yani bir tane cevap üretiliyor. Şimdi buradaki...
+
+406
+01:11:44,500 --> 01:11:49,600
+Yapı şurada gördüğümüz şekilde onları teker teker konuşacağız.
+
+407
+01:11:50,032 --> 01:12:16,851
+Bunun içerisinde bir U matrisleri var ki bu U matrisleri öğreniliyorlar. Eğitim datasından öğreniliyorlar. Bunlar temelde similarity'yi hesaplamak için kullanılan M-Bedding matrisleri. Eğitim datasından bu U matrisleri öğreniliyoruz. Bu U matrisleri daha doğrusu U çarpı n'lik bir matris. Hem O için ayrı bir şey hem de R için ayrı bir şey. Şimdi onları teker teker göreceğiz.
+
+408
+01:12:18,032 --> 01:12:23,631
+Burada gördüğünüz şu teta fonksiyonu bir stringi d çarpı bir boyutlu gösterme çeviriyor.
+
+409
+01:12:23,711 --> 01:12:30,731
+Back of verse diye düşünün. Şimdi burada sözlük boyutu oldukça küçük olduğu için d'nin 100 civarında falan bir şey olduğunu düşünebilirsiniz.
+
+410
+01:12:31,332 --> 01:12:35,912
+Yani one head encoding şeklinde yaptığını düşünebilirsiniz şuradaki yapımın.
+
+411
+01:12:35,912 --> 01:12:41,516
+Şimdi ilk önce şuradaki s'e bakalım, s fonksiyonuna bakalım. Şimdi bu s fonksiyonu bir x ve y...
+
+412
+01:12:42,260 --> 01:12:52,427
+String'i alıyor aslında. Buradaki ilk aldığı string'i teta fonksiyonu gönderip onun bir...
+
+413
+01:12:52,435 --> 01:13:09,476
+One-Head Encoding'ini oluşturuyor. Ve aynı zamanda Y'yi de yine gönderip, onunla bir One-Head Encoding'ini oluşturuyor. Ama arada şöyle bir şey var, U madresi var. U'nun transpozı çarpı U ile çarpılıyorlar. Şimdi burasını birazcık düşünürsek nasıl bir şey ortaya çıkıyor diye bakalım.
+
+414
+01:13:13,908 --> 01:13:30,368
+Şu kısmın, yani teta x'in çıkışı d çarpı birlik bir şey. Bunun transpozu 1 çarpı d'lik bir şey olacak. Onu yavaş yavaş altta yazalım. Mesela 1 çarpı d'lik bir şey olacak. Onu şöyle kenara çekelim.
+
+415
+01:13:33,268 --> 01:13:40,268
+Yani şu s çarpı, yani s'in dışarıya nasıl bir yapı çıkarttığını ortaya koymaya çalışıyoruz. Şimdi transpozu aldığımızdan dolayı 1 çarpı d oldu. Sonra
+
+416
+01:13:40,720 --> 01:14:02,479
+U'nun transpozu, U normalde n çarpı d'lik bir şey. Bunun transpozu alırsak d çarpı n'lik bir şey olacak. Daha sonra kendisini alıyoruz. Bu n çarpı d'lik bir şey. Buradan da en sonunda ne var? Y'nin teta'dan çıkışı var. O da yine şey gibi. Teta'dan çıkışı her zaman d çarpı birlikte. Transpoz yok. d çarpı bir.
+
+417
+01:14:02,912 --> 01:14:19,092
+Dolayısıyla bunun alt bütünü düşündüğünüz zaman aslında nasıl bir şey? Bir çarpı bir iki. Yani bir. Bir tane sayı. Tek bir tane sayı çıkıyor. Yani aslında buradaki esim yaptığı şey buna verilen şu X string ile Y string'inin.
+
+418
+01:14:19,507 --> 01:14:25,688
+S birbirine benzerliğini bir şekilde ölçen bir sayı elde ediyor burada S dediğimizde.
+
+419
+01:14:26,047 --> 01:14:29,047
+Tabii arada bir U diye bir şey var ki o U'lar öğreniliyorlar.
+
+420
+01:14:29,047 --> 01:14:36,567
+Şimdi burada S'in farklı kullanımlarını göreceğiz. S, O'lar için U'lar aynı. Mesela U, O diye bir şey öğreniliyor.
+
+421
+01:14:37,127 --> 01:14:41,208
+R için de ayrı bir U öğreniliyor. Ama temel olarak yaptıkları işler aynı.
+
+422
+01:14:41,788 --> 01:14:45,047
+Şimdi bakalım nasıl bir mekanizma varmış. Şimdi buraya baktığımızda...
+
+423
+01:14:45,460 --> 01:14:50,680
+Ark Max diyor. Ark Max demek ne demek arkadaşlar? Diyor musunuz? Ark Max.
+
+424
+01:14:57,203 --> 01:14:58,463
+Şöyle tutayım.
+
+425
+01:15:01,463 --> 01:15:05,984
+Hocam, X'in en büyük yapan değeri herhalde seçiyor.
+
+426
+01:15:06,583 --> 01:15:07,403
+Bir daha söyleyelim.
+
+427
+01:15:08,603 --> 01:15:12,603
+X'in en büyük değerini veren, i değerini mi seçiyor orada?
+
+428
+01:15:13,804 --> 01:15:18,503
+SO fonksiyonunun içerisine X ve mi giriyor. Tamam.
+
+429
+01:15:19,123 --> 01:15:45,724
+Şimdi burada artmak istediğimiz şey bu artmakın yanındaki şu fonksiyonun yani SOX,MI fonksiyonunun değerini en yüksek yapan i değerini bu seçiyor. Bu i değeri de nelerden oluşuyor? Birden n'e kadar ki sayılardan oluşuyor. Yani m dediğimiz, şuradaki n dediğimiz şey, büyük n dediğimiz şey bizim memorimizdeki yani şuradaki şu yapıyı düşünürsek buradaki memorideki şey sayısı, cümle sayısı.
+
+430
+01:15:46,996 --> 01:15:59,695
+Dolayısıyla argmax dediğimiz şey bu altında yazan değerlerin içerisinden bir tanesini seçiyor. Neye göre seçiyor? Buradaki fonksiyonun değerini maksimum yapmaya göre. Yani argmin yaparsan buranın minimum yapan...
+
+431
+01:16:01,555 --> 01:16:16,555
+Bu fonksiyonun minimumuna eriştiren i değerini seçiyor. Ark, maks yaparsam bu fonksiyonun maksimine ulaştıran i değerini seçiyor. Dolayısıyla şimdi buraya baktığımızda ark, maks ile yapılan şeyi anladık. Şimdi SO diyor, X, MI. Yani buraya bakarsak...
+
+432
+01:16:17,363 --> 01:16:33,703
+S, O yani buradaki O'nun sadece şu O şey kısmını değiştiriyor. Yani U'nun yapısını değiştiriyor. X virgül MI. Yani X ile MI arasında bir benzerlik buluyor. Daha doğrusu X'e en çok benzeyen MI'yi buluyor. Değil mi?
+
+433
+01:16:44,404 --> 01:17:03,724
+Şu süt nerede sorusuna. Buradaki bu yedi tane memory bloğunun içerisinden hangisinin en çok benzediğini bize getiriyor? Mesela işte üç diyor, beş diyor. Yani şuradaki O1 dediğimiz şey onu ifade ediyor. En çok benzeyen. Tamam mı? Şimdi ikincisine bakalım. O2.
+
+434
+01:17:04,532 --> 01:17:18,412
+Şimdi burada tabii şunu da söyleyeyim. Bu konfigürasyon iki tane cümleyi kullanarak sonuca gitmeyi sağlayan yapı için geçerli. Yani şuraya baktığımızda, mesela ikili bir şey olduğunu düşünüyorum.
+
+435
+01:17:20,212 --> 01:17:48,212
+Yani bu süt neredenin sonucuna bu sorunun cevabı olan bahçeye gitmek için bize lazım olan memori bloklarının sayısının 2 olduğunu varsayarak bu mimariyi şu anda anlatıyorum. Daha fazla da olursa burada O2 değil, O3, O4, O5 şeklinde ilerleyebilir. Ama O1 dediğimiz şey ne yapıyor? X'de, yani X'e en yakın en iyi oluyor. Şimdi O2'ye bakalım bunu yaptığı şey mi? Arkmax yine bir...
+
+436
+01:17:48,212 --> 01:18:14,891
+İndisi bulacak. Neyin indisini? Yine M'in bir indisini. Öyle bir M'in indisi bulacak ki bu sefer neye benzetecek? Bakın. X virgül MO1. Bu ikisini birden bir string olarak alıyor. Bakın. Şurası. Tamam. İkisi yani soru ve o soruya demin en yakın olarak buldu. Mesela burasını düşünürsek. Sallıyorum. Mesela şu. Tamam. Süt nerede? Ve Sandra oradaki sütü aldı. Diyelim ki. Bu ikisini birleştiriyor.
+
+437
+01:18:15,344 --> 01:18:27,363
+Bu ikisini birleştiriyor. Ve bu ikisine birden en çok benzeyen Mİ'yi bulmaya çalışıyor bu sefer. Tamam mı? Anlaşıldı mı? Mekanizması.
+
+438
+01:18:28,443 --> 01:18:29,064
+Evet hocam.
+
+439
+01:18:29,304 --> 01:18:40,443
+Tamam. Sonra en sonunda da artık cevabı bulacak. Şu anda aslında kabaca neyi bulmuş oldu? O1 ve O2 dediğimiz şeyler neler olması gerekiyor? Sistem iyi çalışırsa. Burada verilmiş olan 5 ve 6 olması gerekiyor.
+
+440
+01:18:41,076 --> 01:19:04,475
+Tamam. O1 ve O2'nin şeyleri bunlar. En son olarak da cevabı bulacak. Şimdi cevapta da ne yapıyor? Bakın yine ArcMax var. Bu sefer W seçmek istiyor. Fakat bu W nereden seçilecek? Büyük W'dan. Büyük W dediğimiz şey bizim sözlüğümüz. Yani sözlüğün içerisindeki her kelimenin değerini alabilir buradaki küçük W. Sözlüğün içinden öyle bir kelime seçecek ki…
+
+441
+01:19:05,076 --> 01:19:10,236
+O kelimeyi şuradaki buraya koyduğumuzda burasının değerini maksimum yapacak.
+
+442
+01:19:11,416 --> 01:19:22,675
+Dolayısıyla buraya baktığımızda hem X hem EO1 hem MO2 bunların üçünün birden hepsine birden en çok benzeyen bu sefer kelimeyi bulmaya çalışıyor.
+
+443
+01:19:23,136 --> 01:19:24,775
+Bu kelime de dediğim gibi nereden geliyor?
+
+444
+01:19:25,395 --> 01:19:40,315
+Bizim sözlük boyutumuzdan geliyor. Bütün kelimelerin içerisinden bu x, mo1, mo2, y buna en çok benzeyen kelimeyi bulmaya çalışıyor.
+
+445
+01:19:40,315 --> 01:19:48,275
+Şimdi şurayı düşündüğünüzde aslında bu stringle bu string ya da işte bu stringle bu string birbirine benzeyecekler. Bu stringler normal değil.
+
+446
+01:19:48,671 --> 01:19:58,891
+Ben One-Head Encoding'ler, her iki tarafta da One-Head Encoding var. Şurada ortada bir U matris var. Şimdi bu U matrisi anlamsal olarak bunları birbirine benzetmeye çalışıyor.
+
+447
+01:20:00,000 --> 01:20:12,579
+Direkt bunu yaparsanız, içinde aynı kelimeler varsa, yani U-T'ler olmasa elinizde, sadece bunların ikisinin Dark Product'ını alsanız mesela, aynı kelimeler içeriyorlarsa olacaktır.
+
+448
+01:20:12,579 --> 01:20:24,339
+Burada birazcık da anlamsal bir şey katmaya çalışıyoruz. Şurada embering yapıyor aslında. Bizim standart Word2Vac'de ya da FastEx'te yaptığımız gibi, hatırlayın, Word2Vac'i hatırlayın.
+
+449
+01:20:24,399 --> 01:20:27,479
+Word2Vac'in yaptığı şey neydi? Bir kelimenin temsilini nasıl buluyordu?
+
+450
+01:20:28,000 --> 01:20:52,339
+Bir One-Head Encoding temsil ile bir W maddesini çarparak buluyordu hatırlarsanız. Burada da yaptığı şey dediğim gibi her ikisiyle de aslında çarpıyor. Bunların ikisini birbirine de çarparak ne yapmış oluyor? Birbirine ne? Benzerliğini oluşturmuş oluyor. Benzerliğini hesaplamış oluyor. Var mı burası ile alakalı bir şey? Net bir şekilde oluştu mu kafanıza nasıl ilerlediği?
+
+451
+01:21:00,851 --> 01:21:10,791
+Peki. Şimdi bunlar dediğim gibi aslında programın eğitimi bittikten sonra olan şeyler. Şurası.
+
+452
+01:21:11,796 --> 01:21:39,735
+Program eğitim, daha doğrusu mimari model eğitiliyor. Eğitim bittikten sonra artık yeni bir tane X geldiğinde bunun cevabı olan R'yi bulmak için yapılan işlemler bunlar. İlk önce O1 bulunuyor, sonra O2 bulunuyor, sonra O1, O2 ve X'i kullanarak da R'yi bizim karşımıza getiriyor. Burası dediğim gibi test zamanında üretilen işlem. Peki eğitimde nasıl bir şey gerçekleştirilmesi gerekiyor? Yani eğitim yaparken bir loss fonksiyonu tanımlamanız lazım.
+
+453
+01:21:40,307 --> 01:22:08,307
+O loss fonksiyonuna göre sizin modelinizi ağırlıklarını güncellemeniz gerekiyor. Ki burada öğrenmeniz gereken şey mesela şuradaki U matrisi en azından lazım. Şimdi bakarsak loss fonksiyonu şurada gördüğümüz şey 3 satırlı bir yapıdan oluşmuş. Bu 3 satırlı yapı yine aslında değişebilir. Neden değişebilir diyorum. Burada yine 2 adımlı bir yapıda yani şuradaki cümle sayısının destekleyen yer.
+
+454
+01:22:08,307 --> 01:22:17,148
+Yani cevapla erişmek için gerekli olan cümlesinin iki olduğu varsayarak oluşturulmuş bir loss fonksiyonu. İlk ikisinde bakalım neler varmış.
+
+455
+01:22:17,148 --> 01:22:18,868
+Şimdi S, O, M.
+
+456
+01:22:19,828 --> 01:22:44,427
+O1 diyor. Şimdi burası X virgül MO1 dediğimiz şey. Bakalım bir dakika. X'in MO1 ile olan benzerliği. Şurasını görüyorsunuz. Şuradaki şeyler sıfıra gitmesin diye oluşturan eklenen kısımlar. Şuradaki kısım ise bakın. X virgül F.
+
+457
+01:22:44,884 --> 01:22:46,884
+F üstü diyor. Şimdi bir F üstü var.
+
+458
+01:22:51,891 --> 01:23:07,911
+F' üssü diyelim tamam. Bir de R' üssü olsun tamam. Şimdi buradaki F üssü eğitimdeki gerçekler haricindeki tüm halleri. Bunlar gerçek halleri. Bunlar ise gerçeğin haricindeki bütün hepsi.
+
+459
+01:23:16,307 --> 01:23:36,387
+Bütün durumlardaki değerler var burada. Burada da yine aynı şekilde, burada da aynı şekilde. Yani R'nin gerçek R olmadığı, işte MO2'nin gerçek MO2 olmadığı durumlardaki halleri, dolayısıyla bizim loss fonksiyonumuzda buradaki şu U'ları bulmak için kullanılan loss fonksiyonumuz olarak tasarlanmış.
+
+460
+01:23:41,395 --> 01:23:53,163
+End-to-end Memory Networkler ortaya tılmış. Yani bir sene sonra kablayacak. Şimdi burada fark ettiyseniz eğitim kümesinde...
+
+461
+01:23:53,524 --> 01:24:10,324
+Cevabın bulunabilmesi için gerekli olan şu 5 ve 6 noğlu indislerin sisteme verilmesi gerekiyor eğitim kümesine. Teste gerek yok. Zaten çünkü teste gördüğünüz gibi kendisi buluyor ama eğitimde bunların verilmesi gerekiyor. Ona göre yapılıyor. Bu kısıtı ortadan kaldırmışlar.
+
+462
+01:24:10,771 --> 01:24:22,771
+Yine benzer bir veri kümesi üzerinde, tasklar üzerine geçen hafta konuşmuşu, 22 sürü tane task vardır. Bu tasklardan bir tanesi. İki tane cümleyi kullanarak cevabın bulunabildiği.
+
+463
+01:24:23,572 --> 01:24:44,351
+Bu bir task. Bunun gibi bir sürü task'lar var. Birisi var, üçküsü var. Ya da başka yapılarda olanları var. Hepsi bu yapıya evriliyorlar en sonunda. Şimdi burada şu şeylerin, bu indistlerin eğitim kümesine verilmese de acaba biz bunları yine eğitimde sadece şunlar var yani. Şurada gördüğünüz kısım var.
+
+464
+01:24:44,688 --> 01:24:51,827
+Bu kısım yok. Normal standart şurada, memori networklerde var. Çünkü loss'u onları kullanarak hesaplıyor.
+
+465
+01:24:52,847 --> 01:24:59,667
+Bu yapıda ise cevap ilişkili cümlelerin işaretlenmesi gerektiğini ortadan kaldırmışlar.
+
+466
+01:25:00,287 --> 01:25:08,207
+Softmax'i hepiniz biliyorsunuzdur. Sonuçta toplamı birader olasılıklar oluşturmaya yapıyor.
+
+467
+01:25:09,087 --> 01:25:22,627
+Yarıyor. Şu Pİ'lerin hepsinin toplamı 1. MI dediğimiz şeyler bizim memory slotlarımız yine. Deminki Mİ'lerle aynı. U sorunun embeddingi. Yani şuradaki U bizim sorumuz. Şuradaki soru.
+
+468
+01:25:25,127 --> 01:25:36,627
+Sorunun embeddingi ile MI'nin çarpımı üzerinden bir Pİ hesaplamış. Bu Pİ dediğimiz şey ne olacaktır? Bizim...
+
+469
+01:25:36,979 --> 01:26:03,079
+Dolayısıyla olasılıklarımız olacak. Ne olasılıkları bunlar? Memorideki şu mi'lerin her birinin soruyla olan benzerliklerine göre bir değer verecek bize. U hepsi için aynı. Mi'lerle çarpıyorsunuz her birini. Dolayısıyla hangi mi'nin soruyla benzerliği yüksekse onun pi değeri de o kadar yüksek olacaktır.
+
+470
+01:26:03,636 --> 01:26:22,676
+Soruya benzeyen birkaç tane cümle olabilir. Bu cümlelerin hariciliklerin hepsinin olasılıkları sıfırlar ama benzeyen birkaç tanesinin olasılıkları sıfırdan daha büyükler. Ama toplamları yine en diyen içinde bir edecek şekilde. Softmax nasıl hesaplanıyor biliyorsunuzdur.
+
+471
+01:26:30,836 --> 01:26:49,436
+Şu sol tarafa bir bakalım. Sol tarafta yapılan geliştirdikleri mimari şu şekilde çalışıyor. Şimdi bir question'ımız var. Question ile One-Head Encoding. Daha sonra onu bir embelling madresle çarpıp istediğimiz boyuta indirgiyoruz. Bu bizim U'umuz oluyor. Embelling madresle çarpılmış olan question bir U'yu oluşturuyor.
+
+472
+01:26:54,292 --> 01:27:22,292
+Bir MI ile inner product'a sokuyor. Ne demek şimdi bu? İlk önce şurasına bir odaklanalım tekrardan. Şimdi cümlelerimiz var one head encoding halinde. Bunları bir A matris ile yine o öğrenilen bir matris. A matris ile çarpıp bütün cümlelerin hepsini mesela şu hale getirmişler. Bu hal demek ne demek? Bir sürü cümleniz var elinizde. 7 tane cümle var diyelim ki ama burada biraz daha bak desem. 50 tane cümle olduğunu düşünüyorum. 50 tane cümlenin her biri bir çarpı.
+
+473
+01:27:22,292 --> 01:27:34,452
+D boyutlu bir vektör haline gelmiş. Daha sonra şu mi'leri, buradaki bütün mi'leri şu u ile çarpıyor. Inner product yapıyoruz. Yani inner product dediğimiz şey şurası.
+
+474
+01:27:37,171 --> 01:27:57,371
+Şuradaki şu PI'yi yapmak, yani şurası in de burada, konumuzu denir de Softmax uyguluyor. Dolayısıyla bizim elimde bir PI'ler oluşuyor. Şuradaki PI'ler, yani şuradaki hesapladığımız PI, şurada gördüğümüz PI, şuradaki PI. Şimdi bu PI'nin içerisinde bir sürü sıfır var, bir de sıfırdan daha büyük olan bazı değerler var. Şimdi bu sıfırdan daha büyük olan bazı değerlerin anlamı şu.
+
+475
+01:27:57,811 --> 01:28:09,692
+Bu gelmiş olan soruya, memorilerin içerisindeki bu cümlelerin içerisinden en fazla benzeyenler, işte buradaki bu gördüğünüz siyah yakın yani beyazdan uzak olan kısım bu.
+
+476
+01:28:10,172 --> 01:28:14,052
+Şimdi bunları aynı zamanda bir de bu sentence'ları, bir de embedding C'yi oluşuyor.
+
+477
+01:28:14,192 --> 01:28:18,952
+Yani bu embedding A var, bir de embedding C var. İki tane embedding space'ı oluşturuyor aynı cümleler için.
+
+478
+01:28:19,532 --> 01:28:25,792
+Daha sonra bu P ilerli C'yi'leri çarparak weighted sum yapıyor ve buradan yine tek bir tane vektör oluyor.
+
+479
+01:28:25,811 --> 01:28:39,212
+O vektörün adı da O vektör. En sonunda şurada O ile U'yu topluyor ve bunu yine daha sonra öğreneceğimiz bir W maddesiyle çarparak softmax oluşturuyor ki bu bizim A hatimiz oluyor.
+
+480
+01:28:39,311 --> 01:28:44,811
+Şimdi A hatimizin anlamı aslında bizim prediktive answer'ımız. Yani tahmin ettiğimiz cevap.
+
+481
+01:28:45,967 --> 01:29:02,087
+Softmax dediğimiz şey, sonuçta bütün sözlerin üzerinden oluşturulan bir yapı. Yani bütün kelimelerin her birinin ne kadar cevap olma olasılıklarını aslında şuradaki Softmax bize döndürüyor.
+
+482
+01:29:03,315 --> 01:29:13,315
+Şurada P-İ gibi bir yapı aslında orası da düşünürseniz. Ama bunun sayısı mesela bu P-İ dizisindeki eleman sayısı...
+
+483
+01:29:14,515 --> 01:29:31,555
+Hikayedeki cümle sayısı ama buradaki olasılık yani şu softmax'in çıkışı kelimelerin sayıken sözlük boyutu öyle söyleyeyim. Sözlük boyutlu bir şey yine vektör. Vektörün yine en yüksek olan elemanı hangisi ise onu da ahet olarak bize buluyor.
+
+484
+01:29:31,555 --> 01:29:42,515
+Şimdi bu standart yapısı tek adımlı. Yani burada şöyle bir şey yapılıyor. Bir tane soru var. O soruya en çok benzeyen memory bloğu bulunuyor. Daha sonra o memory bloğuyla...
+
+485
+01:29:42,515 --> 01:29:57,575
+Hoca düşünürsek, memori bloğunun çeşitli bir temsiliyle bizim sorumuzu da kullanarak bu memori bloğu ve bu soru geldiğinde cevabın ne olması gerektiğine dair bir tahminde bulunuyor.
+
+486
+01:29:57,575 --> 01:30:07,535
+Yani tek bir memori bloğunu kullanarak bu işlemi gerçekleştiriyor. Ama biz daha önce gördük ki mesela şurada, hatırlıyorsunuz, birden fazla memori bloğunu kullanmamız gerekebilir.
+
+487
+01:30:07,655 --> 01:30:09,795
+Çünkü şimdi şu yapıyı düşünürseniz sadece bu yapıyı.
+
+488
+01:30:10,228 --> 01:30:17,248
+Burada tek bir memori kullanılıyor ve onu kullanıyor. Ama bunu mesela üçlü bir hale getirmişler. Üçlü halde nasıl bir şey?
+
+489
+01:30:17,684 --> 01:30:41,984
+Şurada gördüğümüz, ilk önce mesela Question'a göre en çok benzeyen birinci şeyi bulmuş. Ne derler ona? Mİ'yi bulmuş. Daha sonra bunu kullanıp M ikinciyi bulmuş. Onu da kullanıp üçüncüyü bulmuş. Dolayısıyla mesela burada üçlü bir yapıyla, yani üç tane hikayenin içerisinde üç tane solutu seçerek bunu gerçekleştirmeyi düşünmüşler.
+
+490
+01:30:45,684 --> 01:31:13,543
+Bu arada aslında aynı anda birden fazla EMI kullanılabilir. Neden? EMI işin içine katılabilir. Neden? Şurasını düşünürseniz, PI tek bir tane değerden oluşmuyor. Tek bir tane değer, diğerlerinin hepsi sıfır diye bir şey yok. Burada mesela 05, ne bileyim bir tane 05, bir tane 04 falan diğerleri de böyle çok küçük bir şeyler olduğunu düşünün. Bu ikisini birden içine kattığınız zaman aslında iki tane EMI'yi birden kullanarak da şey yapma imkanınız var.
+
+491
+01:31:13,684 --> 01:31:40,104
+Birden fazla en iyiliği gerektirdiği, cevabın bulmasının gerektirdiği durumları da tek adımlı yapıyla çözme imkanınız var. Ama burada biraz daha şey yapmışlar, daha fazla imkan sağlamak için buna üçlü bir hale getirmişler. Üçlü yapıda tek değişen şey şuradaki A ve C matrisleri yerine A1, C1, A2, C2, A3, C3 matrislerinin oluşturulması ve bunların öğrenilmesi süreci.
+
+492
+01:31:40,884 --> 01:32:06,043
+Şimdi en tüent networklere baktığımızda üç adımlı bir yapı var. Memor networklerde eğitim dışarıdan verilen M0'ları bu yapı kendisi seçiyor. Tek adımlı yapı tek bir M0 kullanımına karşılık geliyor. Ama dediğim gibi içinde birden fazla eminlik kullanması mümkün aslında. Üç adımlı da üç tane M0 kullanımına karşılık geliyor. Her adımda farklı AC embedding matrisleri var şuradaki üç adımlı yapıda.
+
+493
+01:32:06,739 --> 01:32:10,380
+Bunun sonuçlarına, pardon şuraya gelelim.
+
+494
+01:32:12,307 --> 01:32:30,247
+Bunun kritik kısımlarından bir tanesi şurası. Entryment Memory Network'lerde cümlemiz var. İkinci cümle entarne kelimeler oluşsun. Şimdi cümlelerin temsilinde iki tane yol var. Bir tanesi daha önce aslında birazcık gördük. Bu Bag of Words değil mi? Bag of Words'ü görmüştük. One-head encoding yapıyordu.
+
+495
+01:32:40,564 --> 01:32:44,864
+Mesela şurada öğrendiğimiz şu U matrizlerine karşılık geliyorlar.
+
+496
+01:32:44,944 --> 01:32:48,644
+Ya da şurada, pardon, şurada öğrendiğimiz U matrizlerine karşılık geliyorlar.
+
+497
+01:32:49,268 --> 01:33:12,847
+Şurası. Bununla çarpılarak bir ME temsili bulunuyor. Yani iyinci cümle ME'ye çevriliyor. Nasıl? One head encoding haliyle buradaki bu A madresini çarparak siz aslında sıfır olmayan X, E, J'leri kullanarak onların ortalamasını, daha doğrusu toplamlarını almış oluyorsunuz. Ortalama deminim toplamlarını almış oluyorsunuz. Buradaki de embedding boyutu, V ise sözlük boyutu.
+
+498
+01:33:14,707 --> 01:33:26,047
+A'ın karşılıklarının toplamı. En iyi dediğimiz şey, D çarpı bir boyutlu bir yapı. X'in içerideki kelimelerin A'daki D boyutlu karşılıklarının toplamı.
+
+499
+01:33:26,047 --> 01:33:35,567
+Yani o cümlenin içerisindeki kelimelerin A matresindeki, mesela orada Word2Vac gibisinden bir şey de kullanabilirsiniz, hazır.
+
+500
+01:33:36,032 --> 01:33:57,892
+Direkt orada onu kullanabilirsiniz. Onun içerisindeki karşılıkların toplamı haline geliyor. Şimdi tabii bu yapının, Web of Words'ün büyük bir sıkıntısı ne? Yani böyle bir A maddesi zenginleştirirseniz bile problem şu. Mesela ben X'in içerisindeki kelimelerin yerlerini değiştirsem, buradaki elde edeceğim en iyi değişir mi?
+
+501
+01:34:11,731 --> 01:34:13,032
+Sesim geliyor mu arkadaşlar?
+
+502
+01:34:15,952 --> 01:34:17,032
+Geliyor hocam aslında.
+
+503
+01:34:18,271 --> 01:34:24,891
+Evet, sorumumu tekrarlıyorum o zaman. Ben şu x'in içerisindeki kelimelerin yerlerini değiştirsem, elde edeceğim en iyi değişir.
+
+504
+01:34:36,083 --> 01:34:37,064
+Değişmez hocam.
+
+505
+01:34:37,663 --> 01:34:43,104
+Değişmez değil mi? Burada düşünürsenize yani şurada ne yapılıyor? X'in içerideki alınır D boyutlu karşılıklığının toplamı.
+
+506
+01:34:43,104 --> 01:34:48,884
+Değil mi? Bir şeyleri topluyorsunuz siz burada. Vektörleri topluyorsunuz. Vektörlerin yerlerini değiştirirseniz toplamın değeri değişir mi?
+
+507
+01:34:49,652 --> 01:35:17,472
+3 artı 5 eşittir, 5 artı 3 değil mi? Dolayısıyla sıranın hiçbir önemi burada yok. Ama cümlelerde sıranın önemi olabilir. O yüzden burada daha sonra başka başka yerlerde de göreceğimiz Position Embedic'ler önerilmiş. Bu End-to-end Memory Network'lerin önemli bir şey, özellikle Position Embedic'leri içerik olmalı. Daha önce bu Position Embedic'leri nerede gördük?
+
+508
+01:35:29,460 --> 01:35:48,019
+Transformer'larda vardı değil mi arkadaşlar? Berkler'de falan bunların içlerinde. Bu pozisyon embedingler vardı. Çünkü onlar da tek seferde alıyorlardı. Tek seferde aldıkları için bunların sırasının önemi kalmıyordu. Onu önleyebilmek için pozisyon embedinglerle topluyorlardı temsilleri.
+
+509
+01:35:48,019 --> 01:35:53,859
+Şimdi burada yapılan işler şu. Farkına bakarsak en iyi burada şuydu.
+
+510
+01:35:54,515 --> 01:36:14,355
+Burda ise şu, yani arada bir E, J gelmiş. Şimdi buradaki çarpı operatörü element bazlı çarpma zaten. Şimdi N'ye eşittir, toplam J. L, J diyor. Şimdi L, J dediğimiz şey aslında K'de bir tane parametremiz olacak, kaçıncı kelime olduğunu gösteren.
+
+511
+01:36:15,175 --> 01:36:19,735
+Buna göre şöyle bir matris oluşturulacak. Bu matrisin oluşturulması şuradaki formül.
+
+512
+01:36:22,003 --> 01:36:36,363
+Yani, basitçe şöyle söyleyeyim. Mesela birinci kelime, yani X, Y, Y'nin birinci kelimesi bu matrisin birinci sütunuyla çarpılıyor. Bakın, birinci sütunuyla çarpılıyor.
+
+513
+01:36:36,783 --> 01:37:04,604
+Mesela ikinci kelimesi ikinci sütunuyla çarpılıyor. Üçüncü kelimesi üçüncü sütunla çarpılıyor. Yirmi beşinci kelimesi yirmi beşinci sütunla çarpılıyor. Şimdi burada şu matrisin bu şekilde yani D eşittir yüz yirmi sekiz ve C eşittir yirmi beşti mesela burada öyle yapılmış. Yani maksimum cümle uzunluğun yirmi beş için ve D'nin de yüz yirmi sekiz olduğu durumda şöyle bir matris oluşturuyor. Bu Position Embedding'lerde kullanılmak üzere bu bir kez oluşturulan bir şey. Yani bu öğrenilen eğitilen falan bir şey değil.
+
+514
+01:37:04,783 --> 01:37:22,443
+Bu sadece ve sadece cümlelerinin sıra bilgisini de, pardon kelimelerin cümle içindeki sıra bilgisini de işin içine katabilmek için. Buraya baktığımızda ardışık olan kelimelerin, yani işte birinci kelimeleri, ikinci kelimeleri, üçüncü kelimeleri, beşinci kelimeleri, yirmi üçüncü kelimeleri, yirmi dördüncü kelimeleri.
+
+515
+01:37:22,804 --> 01:37:41,783
+Burada bu iki kelimenin, yani yakın olan kelimelerin, pozisyon değerlerinin birbirlerine yakın olduklarını görüyoruz. Yani mesela işte şöyle düşünün, birinci sütunla ikinci sütun düşün, birbirine yakınlar. Ya da on ikiyle on üçü düşün, birbirine yakınlar. Yirmi dört ile yirmi beşi düşün, birbirlerine yakınlar. Değil mi? Birinci ve sonunculara bakın.
+
+516
+01:37:43,060 --> 01:37:52,012
+Oldukça birbirinden uzaklar değil mi? Mesela birincisi ve yirmi beşincisine bakın birbirinden oldukça uzaklar. Dolayısıyla burada birbirine yakın olan kelimelerin...
+
+517
+01:37:52,148 --> 01:38:18,927
+Bu, pozisyonlarının benzer olduğu, birbirinden uzak olan kelimelerin pozisyonlarının birbirinden uzak olduğu bir yapı elde edilmiş. Bu, Berk'te sinüs ve kosmüslerle elde ediliyordu. Bu entranet moment networkler de bu şekilde bir yapıyla elde edilmiş. Ama temel mantık dediğim gibi aynı. Dolayısıyla pozisyon emberinkler bu makalenin önemli sonuçlarından bir tanesi kullanım açısından diyebiliriz.
+
+518
+01:38:20,564 --> 01:38:45,364
+Daha sonra işte burada üzerine çalışılan görevler var. Görüyorsunuz. Bu görevlerde oldukça iyi başarı edilmiş. Şimdi buradaki mavi olan kısımlar, şuradaki mavi olan kısımlar, her bir hopta, 3 hop çalıştırılmış, yani şuradaki yapı çalıştırılmış, bakın şu yapı çalıştırılmış. Her 3 hopta hangisinin aktivasyonu yüksek olduğu? Mesela şu ilk cümleyi düşünelim.
+
+519
+01:38:49,076 --> 01:38:50,676
+Şeyi, o ekleyeyim.
+
+520
+01:38:51,123 --> 01:39:18,303
+Mesela burada şu olmuş. Burada mesela şu ikisi varmış. Sonra bir sonrakinde buna geçmiş, bir sonrakinde buna geçmiş. Mesela burada hep sürekli aynı kalmış. Burada işte birinci adımda şu üçü şey, support. Ama şunlar daha sonraki adımlarda değişmişler. Dolayısıyla hoplar arasında yani şuradaki şu hoplar arasında farklı memori bloklarını seçebildiklerini burada gösteriyorlar aslında. Aynen kaldığı durum da var tabii.
+
+521
+01:39:19,123 --> 01:39:20,983
+Hepsinde aynı da kalmış olabiliyor.
+
+522
+01:39:22,123 --> 01:39:23,843
+Şeye göre neden ona?
+
+523
+01:39:26,068 --> 01:39:40,648
+Mesela burada soru var. Bu sorunun cevabının işte belki burada sadece tek şey var. Hani gerekli olan tek bir yer var. Mesela aynı yerde kalmış ama birden fazla yere gitmesi gerekiyorsa birden fazla yere erişebildiğini göstermişler.
+
+524
+01:39:54,068 --> 01:40:03,648
+Bu değerlere oldukça yakın değerlere olduğunu, yani bunları vermeseniz de bunların sistem tarafından ortaya konabildiğini ortaya çıkartmışlar.
+
+525
+01:40:08,884 --> 01:40:24,124
+Bu harika sonuçlar falan demiştik. Daha sonra bu harika sonuçlara itiraz gelmişti. Bunu zaten geçen hafta konuşmuştuk. Aslında kabaca birazcık yine söylemek gerekirse şöyle bir duruma denk geliyor.
+
+526
+01:40:27,731 --> 01:40:47,051
+Bu makine öğrenmesi algoritmalarına ne yapması gerektiğini söyleyebilirsiniz. Yani input ve output veriyorsunuz çünkü. Öyle bir şekilde düşünün. Yani şöyle bir input geldiğinde ya da buna benzer bir input geldiğinde şöyle bir output üret ya da bundan benzer bir output üret. Bütün mekanizmayı aslında bu şekilde düşünebilirsiniz SuperVisik'ta.
+
+527
+01:40:48,627 --> 01:41:08,627
+Böyle bir input geldi, böyle bir output verdi. Yani ne yapmasını istediğini söyleyebilirsiniz. Ama nasıl yapmasını istediğinizi söyleyemezsiniz. Nasıl yapmasını istediğinizi söyleyemezsiniz, kötü bir şey değil bir açıdan baktığınızda. Neden? Çünkü nasıl yapmasını istediğinizi söylerseniz, söyleyebiliyorsanız...
+
+528
+01:41:09,587 --> 01:41:37,387
+Zaten oturup onu kendiniz kodlarsınız. Yani standart bir algoritmayla ne yapabilirsiniz, nasıl yapması gerektiğini söylüyorsanız zaten o söylediğinizi koda çevirip kendiniz yaparsınız. Yani bir şey öğrenmesine falan gerek kalmaz. Buradaki olay ne? Bir şekilde bunu söyleyemediğimiz durumlarda kullanmak. Yani ne bileyim işte bir kişi geldiğinde bunun kim olduğunu söyle. Bir ses sinyali duyduğunda bunun ne olduğunu bana.
+
+529
+01:41:37,587 --> 01:42:04,947
+Tekst olarak üret. Burada bunun nasıl yapılacağını bilmediğimiz için aslında yani kodlayamadığımız için bilgisayar olarak kodlayamadığımız için böyle yapılara ihtiyacımız var. Bunların aslında gerçekten nasıl yapıldığını biliyor olsak, biliyorsak zaten bu tarz mimarilere hiç ihtiyacımız olmaz. Input Output Mapping'in nasıl yapılması gerektiğini bildiğimiz durumlarda zaten makine öğrenmesi arasındaki kullanmanızı bir anlamı yok. İki sayı toplamak için makine öğrenmesi arasındaki kullanmanıza gerek yok. Kullanabilirsiniz.
+
+530
+01:42:05,587 --> 01:42:20,007
+Saçmadır, şudur, budur falan. Oraları tartışmadır. Ama mesela iki tane sayı toplamak için gidip makine önermesi algılması geliştirmezsiniz. Çünkü biliyorsunuz nasıl toplandığını ya da çarpılması için o tarz bir şey geliştirmezsiniz. Buradaki olay ne? Nasıl yapılacağını bilmediğimiz durumlar.
+
+531
+01:42:20,212 --> 01:42:33,732
+Fakat bunun sıkıntılı tarafı neresi? Yani nasıl yapılacağını söyleyemiyor olmamızın sıkıntılı tarafı algoritmanın hiç de aklımıza gelmeyen, gerçekten hiç de aklımıza gelmeyen bir yolla problemi arka kapıdan çözebiliyor olabilir.
+
+532
+01:42:33,732 --> 01:42:48,212
+Ki bu bazı heseflerde gerçekleşmişti hatırlarsanız. Geçen hafta bunun üzerine konuşmuştuk. Çok iyi sistemler, çok başarılı sistemler var ver hükümesi üzerinde. Fakat bu ver hükümesindeki testteki mesela.
+
+533
+01:42:48,212 --> 01:43:09,492
+Mesela bazı bir şeyleri dışarı çıkarttığımızda bile sistemler hala çok iyi sonuçlar verebiliyorlar. Dolayısıyla o zaman istediğimiz şeyi, hani işte reasoning yapmak gibi yapmıyor bunlar. Aslında çok küçük ipuçlarından bizim farkına varmadığımız ipuçlarını kullanarak yapıyorlar. İşte Entrainment için de geçen hafta örnek vermiştik. Şeyler neredeydi o?
+
+534
+01:43:12,595 --> 01:43:23,595
+Evet, evet. Şuydu mesela. Cümle 1, cümle 2 de sınıf. Burada mesela Entailment'ta parkta oynayan kediler var. Parkta oynayan hayvanlar var. Mesela geniş...
+
+535
+01:43:23,923 --> 01:43:48,264
+Şeyleri içeren bir ifade varsa bunu direkt entayment'a atan gibisinden böyle arka kapılar kullanabildiklerini görmüştük. Dolayısıyla bu bir şey, ne derler ona? Gerçekten bir problem. Ama bunu çözmek de çok da kolay bir şey değil dediğim gibi. Ama buradaki önemli olan nokta ne?
+
+536
+01:43:51,923 --> 01:44:05,203
+Yani algoritması çalıştığımız tamam çalışıyor, kara kutu şeklinde bırakmak yerine bunun nasıl çalıştığını dair ipuçları elde etmek, böyle arka kapılar kullanıyor mu, kullanmıyor mu bunları görmek lazım.
+
+537
+01:44:05,644 --> 01:44:12,264
+Tabii buradaki bir diğer husus da veri kümelerinin buna imkan verip vermemesi.
+
+538
+01:44:12,655 --> 01:44:31,615
+Yani veri kümesi buna imkan veriyorsa mesela buradaki gibi yapıyı düşünün. Burada algoritma zaten bunu çok kolay bir şekilde ne yapacak? Bir şey bulacak. Bir arka kapı bulacak. Dolayısıyla veri kümelerinin oluşturulması zamanında ve oluşturduktan sonra bile...
+
+539
+01:44:31,615 --> 01:44:52,956
+Yani sizde mesela zaten var olan bir veri kümesi üzerinde böyle algoritoklar var mı yok mu? Bunları ne yaptırabilirsiniz? Test edebilirsiniz. Bu tarz yayınlar da ortaya çıkmaya başladı. Yani işte herkesin sıklıkla kullandığı algorit şeylerin, benchmark veri hükümelerinin aslında çok da bir benchmark veri hükümesi olmadığına dair.
+
+540
+01:44:59,615 --> 01:45:11,876
+Hükümesini içerisinde böyle arka kapılar var mı yok mu bunları anlamak için geliştirilmiş sistemler de yavaş yavaş ortaya çıkmaya başlıyor diyelim.
+
+541
+01:45:12,595 --> 01:45:18,336
+Peki, bu kısmını zaten geçen haftanın çok küçük bir özeti olarak görmüş olalım.
+
+542
+01:45:21,076 --> 01:45:24,615
+Şimdi arkadaşlar, bir saniye.
+
+543
+01:45:43,859 --> 01:46:08,159
+Yine küçük bir ara verelim arkadaşlar. 12, 12, 14, 56. 10 dakikalık bir ara daha verelim arkadaşlar. Ondan sonra bu Quest Chanceling Netler'de devam edeceğiz. Bu da yine ileriye doğru güzel sonuçlar veren.
+
+544
+01:46:11,380 --> 01:46:20,639
+Yani içindeki parçaların daha sonrakiler tarafından kullanıldığı güzel çalışmalardan bir tanesi. Onu inceleyeceğiz birazdan. Peki, 10 dakika sonra görüşmek üzere arkadaşlar.
+
+545
+01:56:32,500 --> 01:56:37,020
+Tekrardan merhaba arkadaşlar. Sesim geliyor değil mi?
+
+546
+01:56:39,819 --> 01:56:40,420
+Evet, tamam.
+
+547
+01:56:40,480 --> 01:56:41,060
+Evet, tücem geliyor.
+
+548
+01:56:41,600 --> 01:56:50,239
+Tamamdır. Şimdi bu Question Answer Netler, mimarisi nasıl bir şey.
+
+549
+01:56:51,159 --> 01:56:57,039
+Şimdi hiç önce buradaki problem, demek ki problem gibi değil. Yani demek ki problemimizde ne vardı?
+
+550
+01:56:58,676 --> 01:57:10,775
+Şöyle bir şey vardı, bir soru vardı ve bunun içerisindeki hangi kelimenin cevap olduğunu bulmak bir şey vardı.
+
+551
+01:57:12,716 --> 01:57:20,735
+Şimdiki problemimiz ise biraz daha farklı. Squat ver hükümesi mesela böyledir.
+
+552
+01:57:21,536 --> 01:57:25,716
+Şimdi bir paragrafınız var. Paragrafa karşı bir tane soru var.
+
+553
+01:57:27,252 --> 01:57:34,652
+İstenilen şey şu, bu sorunun cevabı bu paragrafın kaçıncı kelimesinde başlıyor, kaçıncı kelimesinde bitiyor?
+
+554
+01:57:34,652 --> 01:57:52,591
+Yani bu paragrafın kelimelerinin her birinin cevabın başlangıç olma olasılığını ve cevabın bitme olasılığı olduğunu bulmak istiyoruz.
+
+555
+01:57:53,235 --> 01:58:14,735
+Yani en tane kelime var burada. Bu en tane kelimenin her biri için başlangıç olma olasılıklarını bulacağız. Bir de aynı şekilde her birinin en tane kelimenin son olma olasılığını bulacağız. Ve buradan da diyeceğiz ki şu başlangıç ve şu son arasındadır. Bu istenilen, şuradaki sorulan sorunun cevabı.
+
+556
+01:58:21,235 --> 01:58:27,955
+Bayağı bir şey var. Nasıl ifade edelim?
+
+557
+01:58:29,332 --> 01:58:57,332
+Örnek var. Yani oldukça büyük bir veri kümesi. Yanlış hatırlamıyorsam haberler ve Wikipedia paragraflarından oluşturulmuş bir veri kümesi olması lazım. Şimdi bu mimari şurada genel olarak gözüküyor. Bir kontekstimiz var ki kontekstimiz bizim paragrafımız aslında. Şu kontekst. Bir de question'ımız var. Şuradaki sorumuz. Bunlar işte one head encoding, daha sonra embedding. Burada hem globe hem de...
+
+558
+01:58:57,332 --> 01:59:09,632
+Ve karakter bazlı, yani glow bazlı 200 hem de karakter bazlı 200 olmak üzere karakter bazlı tabii one head encoding şeklinde toplam 500 boyutlu bir embedding haline getirmiş her bir kelime.
+
+559
+01:59:09,632 --> 01:59:15,632
+Neyin kelimeleri? Hem context'in kelimeleri hem de question'in kelimeleri. Yani bir tane kelimenin...
+
+560
+01:59:16,500 --> 01:59:36,380
+Kelime bazlı globe vektörü 300 boyutlu. Bir de karakter bazlı şeyi, ne derler ona? Bu da mesela normalizasyon kelimesinin karakter bazlı one head encoding nasıl bir şey olacaktır? İçinde kaç kez neye geçmiş, içine kaç kez o geçmiş, içine kaç kez m'ye geçmiş şeklinde 200 tane farklı karakter var.
+
+561
+01:59:37,840 --> 02:00:01,180
+Sözlük boyutu, karakter sözlüğü boyutu 200 mesela. Dolayısıyla 200 boyutlu bir vektör. Bu 200 boyutlu vektörün içerisindeki sıfırdan büyük olanlar o kelimenin içerisinde o karakterin kaç kez geçtiğini gösteriyorlar. Dediğim gibi 300 artı 200 her bir kelimenin 500 boyutlu bir emberingini kullanmışlar. Hem Glove'da anlamsal yapıyı tutmaya çalışmışlar hem de sentaktik benzerlikler içinde.
+
+562
+02:00:01,876 --> 02:00:20,216
+OneHead karakter enkoding yapmışlar. Şimdi burası işte 500 boyutlu hali. Burada Stake Embedding Encoder bloklar var. Aynen Berth'te olduğu gibi. Burada her bir kelime 128 boyutlu enkoding haline getiriyor. Her bir kelime bakın.
+
+563
+02:00:20,623 --> 02:00:27,043
+Aynı şey, kontekstin her bir kelimesi için bu işlem yapılıyor, aynı şey questionin her bir kelimesi için yapılıyor.
+
+564
+02:00:27,684 --> 02:00:34,804
+Şimdi şu ortada bir context core attention mekanizası var. Bu attention lafını daha önce zaten duymuştuk.
+
+565
+02:00:35,684 --> 02:00:39,423
+Buradaki context core attention, self-attention değil.
+
+566
+02:00:40,144 --> 02:00:44,684
+Şimdi self-attention bir şeyin kendi içindeki parçalarının birbirleriyle ilişkisiydi.
+
+567
+02:00:47,380 --> 02:01:01,920
+Tahmin edebileceğiniz gibi bu iki parçanın yani buradaki en tane kelimenin buradaki en tane kelimeyle olan ilişkilerini ortaya, yani maksimum hangi kelimeler hangi kelimelerle ilişkili bunu ortaya çıkartan bir yapı.
+
+568
+02:01:02,840 --> 02:01:13,000
+Bunun yapısı aslında şurada gördüğümüz şeyde gözüküyor. Şuradaki A ve B hesapları var, onu konuşuruz şimdi.
+
+569
+02:01:13,000 --> 02:01:15,380
+Daha sonra bu A ve B hesaplarından şu yapı.
+
+570
+02:01:15,380 --> 02:01:39,199
+ortaya çıkartıyor. C vektörü, A vektörü, C dot product A vektörü, C dot product B vektörü şeklinde. Burada 4 çarpı D, yani D çarpı N zaten bizim şeyimiz. Ne derler ona? D'imiz dediğim gibi şey, şuradaki şu 500.
+
+571
+02:01:40,307 --> 02:01:59,819
+M dediğimiz şey ise bizim şuradaki N'imiz. Yani paragrafımızda kaç tane kelime oldu. Bu yapıyı ortaya çıkarttıktan sonra yine Stacked Encoder modelleri geliyor. Daha sonra bunların şu ikisindeki çıkışları alıp bir taraftan...
+
+572
+02:01:59,891 --> 02:02:22,231
+Her bir kelimenin start probabilitesini hesaplıyorlar. Aynı şekilde bir de her bir kelimenin end probabilitesini hesaplıyorlar. Şunun içerisinde hem paragraf kısmı C hem de sorunun Q'yu burada direkt zaten görmüyoruz ama o Q nerede işin içine giriyor? Bakın şurada işin içine giriyor.
+
+573
+02:02:22,231 --> 02:02:27,891
+Şimdi şuraya bir bakalım. Şuna aslında daha rahat olacaktır. C dediğimiz şey bizim paragraf...
+
+574
+02:02:27,891 --> 02:02:46,412
+Bu tarafımızın ifadesi yani D çarpı enlik şey ki burada her bir kelime o hale getirdikten sonra C haline geliyor. Daha sonra A dediğimiz şey şuradaki A. Bu A neymiş ona bir bakalım. S üstü çarpı QT demiş. Q dediğimiz şey dediğimiz gibi soru.
+
+575
+02:02:46,963 --> 02:03:08,223
+Sorunun transpozu çarpı S'in üstü. Şimdi S üstü demek ne demek? Bir satır normalizasyonundan bahsediyor. Softmax ile neyin satır normalizasyonu? S diye bir matrisi. Peki bu S matrisi ne? Şöyle bir matris. S matrisi. Paragrafın i'inci kelimesinin sorunun j'inci kelimesine benzerliğini hesaplıyor.
+
+576
+02:03:08,532 --> 02:03:26,752
+Nasıl buluyor bu SEG'yi? Bakın, bir W0 matrisimiz var. Bu öğrenilen bir matris. C virgül Q, şuradaki C virgül Q virgül C dot product P. Şunu kullanıp ve aynı zamanda şuradaki W0 matrisini kullanıp
+
+577
+02:03:27,123 --> 02:03:41,663
+N'e M'lik bir matris oluşturuyor. N'e M'lik matris, sizin dediğim gibi satırı bizim sorumuzun, paragrafın kelimelerini ifade ediyor. Her bir satır. Her bir sütun ise sorunun kelimelerini ifade ediyor.
+
+578
+02:03:41,663 --> 02:03:47,659
+Şimdi burada softmax ile satır normalizasyonu yaptığımızda bu S matrisinin üzerine satır normalizasyonu yaparsanız,
+
+579
+02:03:48,180 --> 02:04:00,180
+Satırdaki benzerlikleri normalize ediyor. Yani satır satır normalize ediyor. Satır satır normalize ettiğimde aslında neyi görmüş oluyorsunuz? Birinci satır neyi ifade ediyorduk? Sorunun birinci kelimesinin...
+
+580
+02:04:02,355 --> 02:04:23,255
+Pardon sorun değil mi? Paragrafın birinci kelimesinin sorunun işte her bir kelimesinde olan benzerliklerini ifade ediyor. Tamam mı? Şuradaki S üssü olan bunu ifade edecek. Normalizasyonu yaptığınızda daha da belirgin hale getirecek. Yani maksimum olanlar bire ekliğe bir şeyler olacaklar. Yani bir normalizasyon işlemi.
+
+581
+02:04:30,452 --> 02:04:50,092
+Her bir sütunun da yani o matrisin her bir sütununda normalizasyon yapmak. Bu durumda da aslında bu normalizasyon neyi ifade edecek? Her bir sütun neydi? Birinci sütun sorunun birinci kelimesinin paragrafın her bir kelimesiyle olan benzerliğini ifade edecek.
+
+582
+02:04:50,448 --> 02:05:04,320
+Bunların çarpımıyla A ve B vektörleri elde ediyor ve A ve B vektörleri ile de şuradaki çarpımdan gerçekleştirilerek temsiller oluşturuyor. Bu temsiliğin içinde hem soru var hem...
+
+583
+02:05:04,319 --> 02:05:24,720
+Şimdi soru, pardon hem paragraf var hem A maddesinin içinde ne var? Bakın A'nın içerisinde S ve Q. S dediğimiz şey neydi? Benzerlikler. Q dediğimiz şey soruydu. Yani soruyla paragrafın çarpımı ki çarpımı bize neyi verecek? En çok benzeyen kısımlarını bize gösterecek.
+
+584
+02:05:31,731 --> 02:05:49,371
+Ve S üstünün ve S'in iki üstünün CT ile çarpım. Tabi bunlar oldukça şeyler, nasıl ifade edeyim. Biraz etok yapılar. Derin öğrenme mimarlarının çok büyük problemli olan kısmı aslında birazcık o.
+
+585
+02:05:49,371 --> 02:05:59,371
+Yani etok dediğimiz şey gelişigüzel, mantıklı ama gelişigüzel şeyler. Mesela burada bu yapıyı bu şekilde oluşturmuşlar. Başka türlü oluşturduklarında...
+
+586
+02:05:59,731 --> 02:06:19,631
+Bu yapıdaki kadar başarılı olamamışlar. Nerede? O veritilmesi üzerinde. Ama başka bir veritilmesi üzerinde buradaki yapı aynen diğer yapılardan daha başarılı olacak diye bir şey söylemek birazcık güç. Ama buradaki çok kabaca kritik olan mevzuyu şu attention mekanizması.
+
+587
+02:06:23,028 --> 02:06:40,967
+Yani input'u ve output'un arasındaki attention'ı burada ifade ettiklerini görüyorsunuz. Bu dediğim gibi bu BERT mimarilerinde daha sonra neye evrildi? Self-attention'lara evrildi. Yani self-attention'lar da işin içine katıldı daha doğrusu. Bu şekilde çalışman gerçekleştirildi.
+
+588
+02:06:41,587 --> 02:06:58,228
+Burada işte P1 ve P2 her bir kelimenin, dediğim gibi şuradaki start probability kısmı orası, her bir kelimenin başlangıç kelimesi olma olasılıkları ve P2 ise bitiş kelimesi olma olasılıkları. Burada yine öğrenilen çeşitli matrizler var.
+
+589
+02:06:58,228 --> 02:07:07,228
+Buradaki M0 ve M1 deminki hikayelerdeki M1 ve M0'ları değil, şuradaki vektörleri temsil ediyorlar.
+
+590
+02:07:08,467 --> 02:07:11,028
+Bunları kullanarak gerçekleştirmişler.
+
+591
+02:07:12,047 --> 02:07:15,128
+Ve payları arttırma için çeşitli yapılar kullanmışlar vs.
+
+592
+02:07:15,128 --> 02:07:22,547
+Şimdi burada şöyle bir genel resmi düşünelim.
+
+593
+02:07:22,547 --> 02:07:26,828
+Önce memory networklerden bahsettik.
+
+594
+02:07:26,828 --> 02:07:34,828
+Memory networklerin iyi bir amaç için oluşturulduğunu, daha sonra bunun içerisinde problemli yerler olduğunu görülmesi.
+
+595
+02:07:36,047 --> 02:08:00,248
+Daha sonra ortaya çıktı ama ilk önce memonetörler var, ondan sonra entranetörler var. Bunlar kabaca bazı iyi çalışmalar şöyledir. Kendisi tamamı çok iyi bir çözüm sunmaz sisteme ama onun içindeki bazı parçalar ileriye yönelik araştırmacılara esin kaynağı olurlar.
+
+596
+02:08:00,756 --> 02:08:17,636
+Burada mesela position embeddingler, attentionlar çok kabaca ileriye yönelik hep çalışmaları etkilemiş şeyler. Kendileri çok büyük başarı elde edememiş olsalar bile daha sonraki araştırmacılara güzel açılımlar yapmış, kazandırmış paperlar bunlar.
+
+597
+02:08:18,163 --> 02:08:33,963
+Yoksa hani reasoningi çözüyorlar falan gibisinden bir şey değil. Ya da bir paragrafı artık bilgisayarlar anlayabiliyor falan gibisinden şeyler, hiç de gerçekçi konkluşunlar değiller çok temel olarak düşündüğünüzde.
+
+598
+02:08:34,612 --> 02:08:47,931
+Ama dediğim gibi bu tarz konkürsünlere gitmektense bu tarz güzel, mimarların güzel olan yanlarını alıp daha sonraki çalışmalarda kullanılması hoş olan kısımları.
+
+599
+02:08:47,931 --> 02:08:53,912
+Bu yapılarında seçilme sebepleri, burada birazcık daha detaylı anlatmaya çalışmamın sebebi de bunlardı.
+
+600
+02:08:54,452 --> 02:09:09,771
+Şimdi, geçen hafta şiir üretiminden falan bahsetmiştik. Bunları görmüştük bu şeyleri hatırlarsanız. Herhalde şurada falan kalmıştık diye hatırlıyorum ama yanılıyor muyum? Bu sohbet sanatçıların uygulamalarına gelmedik değil mi? Konuşmadık bunlardan.
+
+601
+02:09:13,235 --> 02:09:39,655
+Konuşma, tamam. Peki, şimdi buradan devam etmeyi planlıyorum. Şimdi buradan devam edeceğim. Gidendiğiniz yere kadar gideriz zaten. Önümüzdeki hafta, şimdi okulların kapanması herhalde, önümüzdeki hafta bitiyor değil mi dersler? Yanlış hatırlamıyorum. Yani bizim bir tane dersimiz kaldı. Yanılmıyorum değil mi arkadaşlar? İkisi bugün, dokuzu, evet.
+
+602
+02:09:42,996 --> 02:09:53,735
+Önümüzdeki haftada bölüm 7'yi ümit ediyorum geçeriz. Orası da işin birazcık görsellik kısmı var orada. Ona odaklanabiliriz diye ümit ediyorum.
+
+603
+02:09:53,735 --> 02:10:03,655
+Yani burada gidebildiğimiz yere kadar gideriz. Tamamlayamadım. Olursa da zaten sizler, burada bazı yerleri hızlı hızlı geçerim zaten. Bu saati bugün tamamlarız diye ümit ediyorum.
+
+604
+02:10:04,456 --> 02:10:04,676
+Şimdi.
+
+605
+02:10:05,216 --> 02:10:10,676
+Gelelim bilgisayardan bir uygulama alanı olarak sohbet ve sanal sistem uygulamalarına.
+
+606
+02:10:11,456 --> 02:10:15,436
+Şimdi sohbet uygulaması başka bir şey, sanal sistem uygulaması başka bir şey.
+
+607
+02:10:15,436 --> 02:10:21,496
+Sohbet dediğimiz şey bir sistemle sizin sohbet edebilmeniz anlamında olan bir şey.
+
+608
+02:10:21,576 --> 02:10:25,956
+Bir amacı yok. Ya da amacı varsa da hoşça vakit geçirmek. Öyle söyleyeyim.
+
+609
+02:10:26,615 --> 02:10:32,016
+Böyle çok kolay ölçülebilen, sayısal ölçülebilen bir karşılığı yok iyiliğini, kötülüğünü.
+
+610
+02:10:32,724 --> 02:10:49,163
+Dolayısıyla bunlar genel sohbet amaçlı. Ve bunlar arkadaşlar gerçekleştirmenin çok zor olduğu sistemler. Yani gerçekten birisiyle sohbet edebilen bir sistem geliştirebilmek korkunç zor bir şey.
+
+611
+02:11:01,140 --> 02:11:21,899
+Asistanlar bizim için çok daha önemliler. Şimdi bu hedefi olan kısımlarda bir ürünü, bir hizmeti bulmak, almak için kullanabileceğiniz asistanlardan bahsediyoruz. Bir şeyleri aramak isteyebilirsiniz ya da yardım almak isteyebilirsiniz. Probleminiz var, çözmek isteyebilirsiniz vs. vs. Bunların hepsinin ortak şeyi şu, bunların hedefi var.
+
+612
+02:11:22,452 --> 02:11:38,452
+Hedefinin olması uzayı ne yapıyor arkadaşlar? Kısıtlıyor. Yani kullanıcının söyleyebileceği şeylerin uzayını, öyle söyleyebilirim, kısıtlıyor. Ne bileyim ben, şöyle düşünün, yani sohbet amaçlı bir botla konuşurken söyleyebileceğiniz şeyler...
+
+613
+02:11:39,347 --> 02:12:03,708
+Çok fazladır. Yani botu kandırmak isteyebilirsiniz, botu kızdırmak isteyebilirsiniz vs. bir sürü çok geniş bir uzayda hareket edebilirsiniz. Ama şöyle bir şey düşünün. Mesela banka hesabınızdan, kendi hesabınızdan başka birinin hesabına havale yapmak istiyorsunuz. Bunun için bir sanatçı sını kullanıyorsunuz. Bu durumda sistemin yanlış çalışmasını hiç istemezsiniz.
+
+614
+02:12:04,275 --> 02:12:32,115
+Yani sizin hesabınızdan başka birisinin hesabına para aktaracaksınız. Diyorsunuz ki şu kişiden şu kişiye şöyle aktar falan. Sizden çok iyi çalışmasını istersiniz. Dolayısıyla hani onu kandırmaya çalışayım, şunu yapayım, bunu yapayım gibisinden triklere çok da fazla girmezsiniz. Tamam mı? Ama tabii para transferi değil de başka bir şeylerse biraz da hani olayın sizin için önemine, sonuçlarının kritiklerine bağlı olarak değişebilir bu söylediğim şey. Ama en nihayetinde uzayın kısıtlandığı bir gerçek.
+
+615
+02:12:32,275 --> 02:12:41,996
+Her türlü sünde. Dolayısıyla daha kolay sistemler, sohbet amaçlı sistemlere göre çok daha kolay olarak bu sistemleri ifade edebiliriz.
+
+616
+02:12:42,615 --> 02:12:50,996
+Şimdi, sohbet amaçlı geliştirilen ilk sistem, belki de ilk chatbot diye ifade edebiliriz bunun.
+
+617
+02:12:50,996 --> 02:12:59,136
+Elisa, 65 yılı oldukça eski bir terapisi simüle ediyor. Yani siz bir terapiste gitmişsiniz, bir şeyler söylüyorsunuz, o da size bir şeyler geri söylüyor.
+
+618
+02:13:00,020 --> 02:13:05,340
+Şimdi burada kırmızı ve siyahları bir inceleyen hangisi insan olabilir sizce?
+
+619
+02:13:18,355 --> 02:13:19,735
+Kırmızı İnsan herhalde hocam.
+
+620
+02:13:21,876 --> 02:13:26,275
+Evet, Kırmızı İnsan diyorsun. Başka ters fikirde olan var mı?
+
+621
+02:13:37,587 --> 02:13:49,728
+Peki, evet tahmininiz doğru. Kırmızı olan insan. Şimdi bu Eliza, 1965 yılında yapılmış bir şey dediğim gibi, çok klasik bir mekanizması var.
+
+622
+02:13:50,260 --> 02:14:10,260
+Tabii şey var, 1965 yılında kandırabildiği falan insanlar olmuş mu? Ama çok da anlamlı değil. Çalışmanızın adına baktığımız tüm etkileceğini biraz kaybediyor. Yattığı şey aslında şu, eğer yanlış şablon varsa dönüşüm müydü? Yolara cevabı ver. Dönüşüm kuralları var. Belli şablonları var şurada gördüğünüz gibi. Şöyle bir şey gelirse şöyle bir şey. Şöyle bir şey gelirse şöyle bir şey. Yani...
+
+623
+02:14:10,479 --> 02:14:25,359
+Tamamen refleks mimarisinde tanımlanmış bir şey ama birazcık şablonlar, esnekler. Yani işte I remember it diyor, why do you remember it just now diyor. Böyle bir şey söylerse böyle bir şey söyler. Böyle bir şey derse böyle bir şey de. Mantığı anladınız.
+
+624
+02:14:26,131 --> 02:14:43,891
+Eğer bunlardan herhangi biri yoksa, tabii buradaki gibi dört tane şablon yok, daha fazla şablon var da, bunlar örnek şablonlar. Bu dört tane ya da işte oradaki tanımlanmış şablonların herhangi birine uyan bir cümle değilse kullanıcını söylemiş olduğu o zaman genel maçlı cevaplarından bir tanesini veriyor. Rastgele onlar içerisinden bir şey seçip çalışıyor.
+
+625
+02:14:54,452 --> 02:15:15,311
+Kişinin söylediklerini ona geri söyleme diye ifade ediyor. Kişi başkasının ağzından duyduğunda olayı daha farklı algılayabiliyormuş. Neyse, dediğim gibi psikoterapi tekniklerinden bir tanesi. Daha sonra 71'de Peri, bu bir paranoyak. Eliza'ya benziyor ama bir kişi bir ruh hali var. Bunlar değişiyor. Bir state'i var yani daha doğrusu.
+
+626
+02:15:21,908 --> 02:15:35,307
+Sistemin ya da sistemin söylemiş olduğu şeyler, daha sonra söyleyeceklerini ya da kullanıcının daha önce söylemiş olduğu, yani o anda değil de daha önce söylemiş olduğu şeyler, yani geçmişi yok Eliza'nın o manada düşünürseniz.
+
+627
+02:15:35,648 --> 02:15:44,807
+Anlık yapılar var. Peri'de ise bundan farklı olarak, varsayılan bir kişiliği ve bir ruh var. Bu kullanıcının söylediği şeylere göre değişiyor.
+
+628
+02:15:45,716 --> 02:16:13,716
+Oluşturmak için gerçekten bayağı bir uğraşılmış. Şurada yapısı var, nasıl bir şey duyarsa bunu nasıl algılayacak, buna göre cevapları nasıl değişecek vs. Ama yine kural tabanlı bir yapı. Ama dediğim gibi çok fazla, şablon tabanlı, kural tabanlı bir yapı ama içinde çok fazla değişken yapılar da var. Bu sayede bir state yapısına da kavuşturmuş.
+
+629
+02:16:13,716 --> 02:16:25,816
+Yani aynı şeyi farklı zamanlarda söylediğinizde bunun etkisi farklı olabiliyor. Hesa'nın tersine sistemi bir histirisi var şeklinde düşünebiliriz.
+
+630
+02:16:26,416 --> 02:16:29,996
+Şimdi bunlar dediğim gibi böyle erken dönem çalışmalar.
+
+631
+02:16:32,056 --> 02:16:40,976
+Şimdi mesela çok basit olarak şöyle bir şey düşünelim. Böyle bir yapı yani genel amaçlı sohbet içinde olabilir. Bu başka şeyler içinde olabilir. Konuşuruz.
+
+632
+02:16:41,556 --> 02:17:06,916
+Diyalog derlemleri kullandım ama kuralları oluşturmak ve yönetmek pahalı bir şey. Yani şurada gördüğünüz gibi şöyle kurallar tanımlayalım, bunları oluşturmak ve yönetmek de arkadan pahalı. Onun yerine acaba basit yollar kullanabilir miyiz? Mesela Twitter'daki ya da WhatsApp'taki diyalogları ya da film dizilerin içerisindeki diyalogları ne yapabilirsiniz? Bir derlem olarak kullanabilirsiniz.
+
+633
+02:17:07,603 --> 02:17:22,903
+Mesela buradaki WhatsApp mesajlarını herhalde bir yerlerle indiremiyoruz ama Twitter'dan mesela veri indirmek mümkün herhalde. Film dizilerin altyazıları var. Onları kullanmak mümkün. Birisi bir şey söylüyor. Onun karşı da başka birisi bir şey söylüyor.
+
+634
+02:17:23,403 --> 02:17:34,123
+Dolayısıyla şöyle bir şey yapmak mümkün kısa yoldan. Derlemde, ki buna D diyelim. Kullanıcının söylediğine, ki buna Q diyelim. En benzeyen ifadeyi bulalım.
+
+635
+02:17:34,772 --> 02:17:57,012
+Derlemle kullanıcının söylediğine benzer. Şimdi derleminiz nasıl bir şey? Şöyle bir şey. Satır satır, her bir satır bir öncekine cevap olarak yazılmış şeklinde bir diyaloğun böyle ilerlediğini düşünün. A konuşmuş, B konuşmuş, A konuşmuş, B konuşmuş, A konuşmuş, B konuşmuş şeklinde bir diyalog olduğunu düşünün. Bu derlemin içerisinde kullanıcının söylemiş olduğu şuye en benzeyen ifadeyi bulalım. Şimdi buradaki arkum atısının ne olduğunu hatırlıyorsunuz. Anla, konuştuk demin.
+
+636
+02:17:58,644 --> 02:18:26,224
+Öyle bir t bulacak ki, ki ona t üstü diyeceğiz. Bu t'yi d'den seçecek. D dediğimiz şey derlemin içerisindeki bütün cümleler. Bu t'nin hangi t'yi seçecek? Şurayı maksimum yapalım. Şimdi burası ne bakın? Q ile t'nin arasındaki kosyonist distansı buluyor. Pardon, kosyonist similarity buluyor. Şimdi Q, t ile t'nin çarpımı altta da Q'ların ve t'nin normları var zaten.
+
+637
+02:18:26,608 --> 02:18:41,667
+Hepsi için yaptığınızda şurasını almanız şartta olmayabilir. Neyse, takılmayın oraya şiddet. Olay ne? Kullanıcının söylemiş olduğu şeye en benzeyen, yani Q'ye en benzeyen derlemdeki cümleyi bulguyu. Q bizim, şu T üstümüz.
+
+638
+02:18:42,355 --> 02:19:09,475
+Cevap olaraksa, yani size bir şey söylüyor kullanıcı. Cevap olaraksa T'ye cevap olarak verilen ifadeyi ne yapabilirsiniz? Kullanabilirsiniz. Eğer birden fazla cevap varsa T için, o durumda onlardan bir tanesini rastgele kullanabilirsiniz. Derlem olarak diyaloglar yerine kitap, ansiklopedin vesaire bir sürü bir şeyler de kullanabilirsiniz. Olabilir bu tarz enteresan. Oldukça direkt düz bir yapıyla bunu gerçekleştirmek mümkün. Mesela yine bunun yapılabileceği basit şeyler nedir? Siz sıkça sorulan sorular.
+
+639
+02:19:10,260 --> 02:19:27,299
+Elinizde sorular ve cevaplar derleme olduğunu düşünüyorum. Kullanıcıların sorduğu sorular var, bir de cevaplar var. Bunların cevapları var. Sizin elinizde böyle bir şey var. Ama insanlar durmadan, bu sıkça sorulan soruları okumadan soruları soruyorlar. İnsanlara yönlendiriyorlar. Ki buradaki sıkıntı ne?
+
+640
+02:19:27,763 --> 02:19:42,903
+Sizin bu sıkça sorulan sorular listeniz bin tane şeyden oluşuyorsa burada kimse gidip de önceden bu soru sorulmuş mu? Bu sıkça sorulan sorunun içerisinde bu cevap var mı yok mu? Diye kimse arama zahmetine girmiyor. Direkt soruyorlar insanlar.
+
+641
+02:19:43,636 --> 02:20:00,000
+Ve bu durumda da otomatik bir mekanizma olarak şu mekanizmayı kullanmak olunca rahatlatıcı olabilir. Yani elinizde bin tane soru ve cevap çifti olsun. Kullanıcı bir soru sordu. O soruya en benzeyen soruları bulursunuz. O soruya en benzeyen sorunun bir eşit değeri olur. O eşit değeri...
+
+642
+02:20:00,000 --> 02:20:16,860
+En üstündeyse benziyordur, yeterince benziyordur ve onun cevabını direkt verirsin. Ama benzemiyorsa, en benzeyeni bile yeterince benzemiyorsa, o durumda gerçek bir insana bunu yönlendirmek mümkün olabilir. Çünkü sıkça sorulan sorular arasında yok bunun cevabı gibisinden düşünebilirsiniz.
+
+643
+02:20:17,620 --> 02:20:36,639
+Burada Cosinus Distance'ın yerine, çünkü şunlar şuradaki Q ve T diye ifade ettiğimiz şeyler One Head Encoding üzerinden çalışıyorlar. Ve daha önceki derslerde bahsettiğim üzere hiç anlamsal yapıları hiç de kale alamıyorlar. Cimbom kazandı, aslan yendi.
+
+644
+02:20:37,299 --> 02:20:46,739
+Bunlar şey değil, ne derler ona? Makine açısından birbirinden tamamen farklı iki tane cümle. Bunlar anlamlı olarak birbirine yakınlar. Spor manşetinde geçiyor.
+
+645
+02:20:47,479 --> 02:20:59,079
+Şimdi bunları yakalayabilmek için kosünüsü soft hale getirebilirsiniz. Bu ne demek? Şimdi standart yapı şuydu. Kosünüs mesafesi bu şekilde hesaplanıyor. Yani şurada gördüğümüz şey.
+
+646
+02:20:59,700 --> 02:21:18,280
+Şunun için ne gösteriyor burada aslında? O kadar. Yani aslında bu şöyle bir dot product. Peki, şuradaki parça. Softcos'un ne? Softcos'un da bu ikisinin çarpımının arasında bir M matrisi geliyor. Hem altta hem üstte. Bu M matrisi.
+
+647
+02:21:19,860 --> 02:21:31,920
+Her bir kelimenin her bir kelimeye benzerliğini aynen bu şeylerdekine benziyor. Demin konuştuğumuz QAnet'teki paragraftaki her bir kelimenin sonundaki her bir kelimeye benzerliğine oluşturmaktan bahsetti.
+
+648
+02:21:31,920 --> 02:21:37,804
+Buradaysa öyle değil. Buradaysa dernemdeki her bir kelimenin dernemdeki her bir kelimeye...
+
+649
+02:21:37,907 --> 02:22:02,667
+Neyi bulabilirsiniz? Benzerliğini bulabilirsiniz. Bunun için, bu M maddesini oluşturmak için, işte work-to-vek vektörleri gibi vektörler oluşturabilirsiniz. Ya da kelime arzuları edit distance'ı kullanabilirsiniz. Ya da bunları bir şekilde birleştirip kullanabilirsiniz. Aynen mesela FastEx'te de falan bu tarz bir şey var. Yapı var aslında. Yani edit distance da work-to-vek distance'ı ağırlıklandırarak bulmak gibi.
+
+650
+02:22:03,667 --> 02:22:08,567
+Bu şekilde bunu yapabilirsiniz. Bunun problemi ne? Şu M maddesinin boyutları...
+
+651
+02:22:10,260 --> 02:22:27,159
+Sözlük çarpı sözlük. Yani sözlüğün boydu kaçsa o kadar o kadar bir matriz. Buna handle etmek falan hesaplamak şudur. Birazcık sıkıntılı şeyler olabilirler. Ama ne bileyim en önemli 5000 kelimeyi seçtinizde belki 5000'e 5000'lik bir matrizse handle edip bunu yapmanız mümkün.
+
+652
+02:22:27,159 --> 02:22:37,979
+Bu gerçekten şeyde işe yarıyor. Yani şu Postnum Distance'a göre bu soft postnum. Basit yöntemlerle yapmak istediğiniz uygulamalarda dediğim gibi.
+
+653
+02:22:38,260 --> 02:22:40,960
+Fayda sağladığını daha önce görülmüş.
+
+654
+02:22:44,435 --> 02:23:04,095
+Aynı yapıyı, yani aynı derlemek, öyle söylüyorum, yine diyalog derlemek kullanarak arayanlarla diyalog ürettirebilirsiniz. Bu da çok klasik bir şey aslında. Sekans to Sekans mimari. Sekans to Sekans mimarinin diyaloglar için de uygun olduğunu tahmin edebilirsiniz. Neler gibi? Machine Translation gibi bir cümle veriyorsunuz, o da bir cümle üretiyor.
+
+655
+02:23:12,435 --> 02:23:33,295
+Çok klasik RNN mimarları ya da bunların daha sofistiki halleriyle bunları yapabilmek mümkün. Burada dediğim gibi kullanıcının bütün söylediği şeyler tek bir tane vektöre indirgenmiş. Daha sonra bu vektör hem ilk kelimeyi tahmin ederken hem de daha sonraki kelimeleri tahmin ederken sisteme verilmiş.
+
+656
+02:23:34,131 --> 02:23:43,572
+Yapıda görüyorsunuz. Bu dediğim gibi, mesela şunu verdiğinde şunu söylesin, şunu verdiğinde şunu söylesin gibi bir veri kümesi oluşturularak eğitilen yapılar.
+
+657
+02:23:46,391 --> 02:23:52,611
+Microsoft'un TAI isimli sohbet robotu var.
+
+658
+02:23:53,007 --> 02:24:08,587
+Bunun güzel tarafı, iyi niyetli tarafı şu. Kullanıcılarla yaptığı diyaloglardan da öğrenen bir sistem. Yani eğitildiği derlemi kendinizi genişletiyor. Yani ben mesela işte sistem çalışmaya başladıktan sonra da eğitimi devam ediyor.
+
+659
+02:24:09,075 --> 02:24:25,335
+Nasıl bunu sağlıyorsunuz? Kullanıcılarla konuşuyor. Kullanıcılarla konuşuyor şeyler de aslında bir diyalog derlemini dönüşüyor ve onları da eğitim kümesine katıyorsunuz. Fakat bunu yapmışlar. Açıdıktan olan saat sonra kapatılmış bu Microsoft'un takipleri sistemi. Neden olabilir?
+
+660
+02:24:30,675 --> 02:24:32,495
+Örkçü söylemlerde bulunuyordu galiba.
+
+661
+02:24:33,915 --> 02:24:34,555
+Efendim?
+
+662
+02:24:35,095 --> 02:24:38,815
+Örkçü söylemlerde bulunuyordu galiba. İnsanlar onları farklı yönlere yönlendiriyordu.
+
+663
+02:24:38,995 --> 02:24:47,975
+Evet, evet. Sistemi böyle sizde konuştuklarını öğreniyor falan deyince insanlara, insanlar ona çok farklı şeyler öğretmişler.
+
+664
+02:24:48,755 --> 02:24:52,495
+Yani şöyle bir şeyden de şöyle bir şey diyecek falan. Hani onu öğreniyor.
+
+665
+02:24:52,495 --> 02:24:58,175
+Dolayısıyla oldukça kötü öğrenilmiş bir derleme dönüşmüş.
+
+666
+02:24:58,543 --> 02:25:26,543
+Bu tarz kullanıcı etkileşimlerinden öğrenmenin iyi tarafları kesinlikle var tabii ki. Ama bu tarz kötü tarafları da var. Yani kötü niyetli kullanıcılar mevzusu oldukça kritik bir mevzu. Sistemleri kandırmaya, sistemleri yanlış yönlendirmeye çalışan kullanıcıların da olduğu bir gerçek olacaktır her zaman. Kararları özellikle dediğim gibi makyamlar biraz biraz bir şeyler kararları vermeye başladığında onları kandırmaya başladığında.
+
+667
+02:25:26,543 --> 02:25:37,164
+Yönül girişimler hiçbir zaman durmayacaklar. Dolayısıyla bunlar da dediğim gibi önemli bir husus olarak karşımıza çıkmıştı.
+
+668
+02:25:37,164 --> 02:25:53,083
+Bu muhtiyon saptay örneğinde. Şimdi bu Riyakadarkilerin hepsi şeydi, kabaja, genel amaçlı sistemlerdi. Bundan sonraki kısımlar ise birazcık görev tabanlı sistemler olacaklar. Görev tabanlı sistem derken,
+
+669
+02:25:53,683 --> 02:26:20,043
+Şuraya bakalım. Goal Oriented, Task Based ya da Frame Based gibi geçiyor. Bunların genel yapısı arkadaşlar 1977'den beri değişmedi. Bunların Boost deniyor. Mesela bir uygulama için yardımcı sistemler bunlar. Takviminizi yönetmek, bilet bulmak, öneride bulunmak, banka işlemleri yapmak vs. vs. Şimdi burada bütün yapıların hepsinin orta güzelliği uygulamaya bağlı olarak tabii değişebilirler ama
+
+670
+02:26:20,691 --> 02:26:31,071
+Uygulama bağımsız olarak yapılan işlemler şunlar. Kullanıcının yapabileceği işlemlerin türleri belirlemeyin. Yani bir kullanıcı bu sistemle sohbet ettiğinde neler yapabilir?
+
+671
+02:26:31,647 --> 02:26:59,587
+Şunları yapabilir. Bunlar belirleniyor. Peki bu işlemler için ne tür bilgiler gerekir her birisi için? Bunlara stoklar diyeceğiz. Ve bunların türleri de belirleniyor. Yani işte ne bileyim işte pizza ısmarlayacak birisi. Pizza ısmarlama sürecinin tamamlanması için kullanıcıların hangi bilgileri almak gerekir? Bunlar belirleniyor. Ve bu bilgilerin türleri belirleniyor. Daha sonra bu bilgileri almak için sorular belirleniyor. Yani nasıl sorular soracağız? Sonra da sırayla bilgiler alınıyor. Sürecin içerisinde problemler olursa da...
+
+672
+02:26:59,647 --> 02:27:04,067
+Ve belli yönlerde geriye dönülüyor. Bütün yapı aslında bu şekilde.
+
+673
+02:27:04,067 --> 02:27:08,587
+İşte uçak biletini falan düşünürseniz burada slot type question denmiş.
+
+674
+02:27:08,727 --> 02:27:12,747
+Yani şuradaki gibi gerekli olan slotlar, type'lar ve sorular.
+
+675
+02:27:14,324 --> 02:27:42,324
+Origin City ve yani soltığımız orijin tipi City, bunu almak için kullanıcıya hangi soruyu sormalıyız? Destination City hangi soruyu sormalıyız? Şeklinde işte departure time, departure date, airline, hangi havaya olur vesaire vesaire. Bu çok basit bir uçak bileti uygulamasında. Yani kullanıcı sanatısını kullanarak uçak bileti alacak. Bu durumda bizim ondan neleri öğrenmemiz gerekir? Tabi buraya ek bir sürü şeyler yazıyor. Kredi kartıdır, şudur budur, kullanıcının ismi, yaşı, cins.
+
+676
+02:27:42,324 --> 02:28:10,324
+İntisiyeti vs. bir sürü şeylere eklenebilir ama genel yapı böyle bir şey. Şimdi böyle genel bir yapı çerçeve oluşturulmasının sebebi ne? Ticari uygulamalarda bu tarz çok kısıtlı yapılar kurmak zorundasınız. Yani kullanıcının neler yapabileceğini o sistemini kullanarak çok rahat şey yapmalısınız. Ne derler ona? Hiçbir şeyi muhak bırakmamanız lazım kullanıcının yapabileceği şeyleri. Dolayısıyla burada böyle çok strikt çerçeveler oluşturuluyor ve bu çerçeveler planlanıyor.
+
+677
+02:28:10,324 --> 02:28:31,204
+Peki, bu planların içerisinde makine öğrenmesi ya da doğal bir işleme neresinde bunun diye sorabilirsiniz. Burada neler var? Şimdi birincisi şu, kullanıcının niyeti ne? Yani hani kullanıcı yapmak istediği, yapabileceği bir sürü bir şeyler var. Fakat hangisini yapmak istiyor?
+
+678
+02:28:32,020 --> 02:29:00,000
+Bunu anlamak önemli. Kullanıcı ifadelerine stopları ve değerlerini belirlemek kısmı, yani kullanıcı bir şeyler söylemiş. Mesela işte, salı sabah Ankara'ya giden uçları gösterebilir misin diye bir şey söylemiş. Mesela burada kullanıcı niyetine uçuş sorgulama. Şimdi buraya gidip cevap vermek yetmez, ona bir şeyleri söylemek de gerekir. Niyeti ne? İşte uçuş sorgulama. Peki tamam, bu sorguların için bana neler lazım? Kalkış şehri, kalkış tarihi, kalkış samanı, varış şehri gibisinde.
+
+679
+02:29:00,020 --> 02:29:05,020
+Bunların hepsini biliyor muyum ben? Sadece bunu söylemiş...
+
+680
+02:29:06,324 --> 02:29:34,324
+Kullanıcının şehri neresi? İstanbul. Belki kullanıcının nerede olduğunu biliyorsanız siz, ne bileyim işte Sanlı Asistan sizin yanınızdaki cep telefonunuza falan çalışıyor olabilir. Böyle varsayınlarda bulunabilirsiniz ya da teyit etmek için sorular sorabilirsiniz. İstanbul diyor. Salı diyor, bugünden sonraki salı neyse o zaman. Kalkış zamanı diyor, salı sabaha dediğine göre sabah işte aşağı yukarı şu değerler arasında bir şeyler diye ifade edilir. Varışehir, Ankara. Yani bütün slotlar dolu. O zaman ben kullanıcıya bunları ne yapabilirim?
+
+681
+02:29:34,324 --> 02:29:37,283
+Db'ye sorular gönderip cevabı cümleye çevirebilirim.
+
+682
+02:29:37,744 --> 02:29:43,224
+Tabii Ankara'ya giden uçuşlara hangileri diye bir şey sorsa mesela, şuradakinden, salı sabah değil de.
+
+683
+02:29:44,564 --> 02:29:47,984
+Niyet bu aynı ama işte bazıları yok. O zaman biz ne yapmamız gerekiyor?
+
+684
+02:29:48,043 --> 02:29:51,043
+Onları sormak için hangi tarih için uçuş arıyorsunuz?
+
+685
+02:29:51,364 --> 02:29:54,024
+Ya da İstanbul'dan Ankara'ya hangi tarih için uçuş arıyorsunuz?
+
+686
+02:29:54,024 --> 02:30:00,000
+Gibisinden de sorarak hem kullanıcının söylemediği ama bizim demin çıkarttığımız...
+
+687
+02:30:00,000 --> 02:30:27,840
+Kullanıcımız şeyi teyit etmek için kullanıcıdan ne yapabilirsiniz? Bunu sorabilirsiniz. Bu şekilde değil, bu şekilde sorabilirsiniz. Bu şekilde sorarsanız ve kullanıcı bize direkt bir şeyler söylerse demek ki İstanbul'muzu kullanabilirsiniz. Ama kullanıcı bunu gördüğünde hayır İstanbul'dan değil, ben İzmir'den Ankara'ya gitmek istiyorum falan gibisinden bir uyarıyı da bize dönebilir. Bu uyarıyı da verdiğini ne yapmanız lazım? Sizin anlamanız lazım. İşte bu tarz yerlerde makine öğrenmesi, algoritma ya da NLP.
+
+688
+02:30:28,000 --> 02:30:51,560
+tarzı sistemler kullanılabiliyor. Burada restoran bulma, dilatör yönetmek. Neyse, buralar çok kabaca kullanıcıya anlaşıldığını hissettirmeniz lazım. Kullanıcı anlaşıldığını hissetmezse ya da yanlış anlaşıldığını hissederse problem. Mesela şöyle bir şey var. Kullanıcı demiş ki, 3 büyük boy karışık pizza istiyorum.
+
+689
+02:30:52,959 --> 02:30:58,399
+Buna cevap olarak siz başka isteğiniz diye bir cevap verirseniz, şimdi ne oldu acaba?
+
+690
+02:30:58,739 --> 02:31:24,540
+Şimdi kullanıcı düşünüyor. Yani acaba benim istediğim şeyi anladı mı? Gönderecek mi? Yani ne oldu? Parayı çekti mi? Çekmedi mi? Vesaire vesaire. Yanında promosyon gelecek mi falan bir sürü soru işareti var. Ama mesela şöyle bir şey dediğimde, 3 bu istiyorum. 3, anladığınızı ifade etmek için soruyor mu? Yoksa bunu yaparsanız kötü bir şey olur. Yani kötü derken yanlış anladıysanız öyle söylüyor.
+
+691
+02:31:24,884 --> 02:31:45,243
+Üç küçük karışık pizza mı istiyorsunuz? Üç büyük boy karışık pizza siparişleri alınmıştır, başka isteğiniz gibi, buradakiler gibi cevaplar üretmek daha mantıklı. Yani anladığınızı karşıya göstermek, sistemin anladığını karşıya göstermek.
+
+692
+02:31:46,804 --> 02:32:01,644
+Hiçbir şey hissettirmeden direkt bir sonraki next state, yani ne bileyim ödeme, şu dur budur gibisinden ya da başka isteğini alma kısmına direkt atlamak yerine ilk önce işte bir teyit, ondan sonra bununla uzun sürece devam etmek daha makul bir hareket.
+
+693
+02:32:02,067 --> 02:32:25,987
+Anlaşılmadığını hissetmek kısmen anlaşılmam ve tamamen anlaşılmam olur. Kullanıcı böyle bir şey yazdı. Ne diyor bu yani? Ama kısmen mesela işte böyle bir şey yazdı. Burada belki ne diyebilirsiniz? Salı gün nereye gitmek istiyorsunuz diyebilirsiniz. Anladıklarınızı söyleyip şunu anlamazsanız. Ama bunu da Ankara'ya diye tahmin ederseniz mesela şu şekilde düzeltip sorabilirsiniz. Bunlar dediğim gibi böyle alt alt küçük küçük konular.
+
+694
+02:32:27,700 --> 02:32:46,920
+Yanlış anlaşılan bir şey düzeltmek istediğim, bunu fark etmeliyiz. Bu oldukça kritik şeklinde. Burada şeyler var. Birçok firmanın şeyleri var. Bu tarz sanalistanı oluşturmak için ticari uygulamalar var. Çok kolay bir şekilde, flow şeklinde bunlar çünkü.
+
+695
+02:32:47,636 --> 02:33:00,296
+Bunları kullanarak kendi et ticaret sitenizi için ne için yapacaksınız. Bir türlü amacı olabilir. Bunlar dediğim gibi incelemeniz için buraya linklerini koydum.
+
+696
+02:33:00,296 --> 02:33:11,036
+Benim bunu geçen sene herhalde bakmıştım en son bunlara. Belki yenileri de daha çıkmıştır. Şu diyalog flow yanlış hatırlamıyorsam Google'un satın aldığı bir firma.
+
+697
+02:33:11,507 --> 02:33:28,847
+Amazon'u biliyorsunuz, evet AI başka, IBM'in var yine Watson'ın şeyleri, eklentileri, Watson Engine'in eklentileri. Diyalog verikimeleri de bulabiliyorsunuz. Ya da dediğim gibi internet üzerinden crawl edip şeyler yapabilirsiniz.
+
+698
+02:33:31,347 --> 02:33:36,768
+Pizza ısmarlamayı neden ben şey yapayım, neden ona? Sonal asistanla yapayım.
+
+699
+02:33:37,172 --> 02:33:39,391
+diyebilirsiniz. Yani yazmak varken.
+
+700
+02:33:39,827 --> 02:34:07,768
+Ya da uçak bileti almayın. Tabii burada sesli kontroller çok ön plana çıkıyor. Evdeyken ya da arabadayken sesle bu sanatistanlara komut verebiliyorsunuz. Çünkü işin güzel bir tarafı var. Speech to Text teknolojileri iyi olduğu için bu iyi bir alternatif. Yani klavyeden bir şeyleri yazmak yerine bu güzel. Bir de diğer durum, yüzlerce seçeneğin olduğu durumlar var. Yani işte bir çok basit bir arayüz üzerinde yapmaya kalktınız.
+
+701
+02:34:07,827 --> 02:34:15,387
+255 tane çeşit bir şeyden birini seçmeniz gerekiyorsa mesela, kullanıcının onların hepsini okuması falan onlar birazcık küçük işler.
+
+702
+02:34:15,387 --> 02:34:24,387
+O yüzden kullanıcı bir şey istediğinde, yani söylediğinde onun sizin olası seçenekleri içerisinde hangisine en yakın olduğunu bulmanız mümkün.
+
+703
+02:34:25,347 --> 02:34:33,007
+Seçenekleri ifade etmenin çok sayıda yolu var. Bu tarz yerlerde dediğim gibi bu sanal asistanları kullanmak oldukça makul.
+
+704
+02:34:34,004 --> 02:34:58,684
+Çoğu görevde insan performansının çok gerisindeyiz. Türkçe için veri hükümelere uygulamalar talep var. Ama üretilen şey, büyük bir boşluk var piyasada öyle söyleyeyim. Mevcut uygulamalarda dediğim gibi belli kısımlarda şeyleri var, ne derler ona, başarılı sağlayan kısımları var, çok strikt olan kısımlarda.
+
+705
+02:34:59,152 --> 02:35:16,912
+Ne bileyim şimdi sanal anlasına gidip dolar bugün kaç lira dediğinizde size çok iyi cevap veriyor. Onda herhangi bir sıkıntı yok. Ama daha kompleks bir şeyler söylediğinizde doğal olarak daha problemli çalışabiliyorlar. Bu problemli çalışma da gayet normal. Normal derken...
+
+706
+02:35:18,932 --> 02:35:38,852
+Çünkü ticari mevzular da kullanıcının tam olarak ne istediğini çok iyi anlamış ve tam olarak onu yapıyor olmanız lazım. O yüzden biraz, ne derli ona, çok rahat davranamıyor tasarımcılar ya da biznesçiler. Öyle söyleyeyim biznes tarafındaki kısımlar. Yoksa doğal işlemcilere bırakırsanız onlar her şeyi yaparlar.
+
+707
+02:35:40,755 --> 02:35:49,975
+Yapabilir bir şeyler yaparlar ama bu tarz sistemlerde, ticaret kısımlarda sistemin doğru çalışma oranının çok yüksek olması gerekliliğinden dolayı.
+
+708
+02:35:50,484 --> 02:36:16,324
+Yanlış bir işlem yapılması çok büyük sıkıntı. O yüzden çok daha çekinerek bu işlemlere yaklaşıyorlar. Çok fazla böyle kural setleri oluşturuyor. Benim bildiğim öyle birçok uygulama var. Şöyle şöyleyse, şöyle şöyleyse, şöyle şöyleyse diye diye diye. Bunlar dediğim gibi uygulamanın kullanılabilirdiğini birazcık zorlaştırabiliyor. Ne yapayım diyenlere vesaire vesaire. Orası çok da kritik değil. Burada faydalı bağlantılar var aklınıza.
+
+709
+02:36:17,843 --> 02:36:30,843
+Sorulara dönün. Diyalogların dersi varmış burada. Mesela bir tane diyalogları tamamlığı chatbotlar. Hedef olan diyalog üretmek, metin üretiminde tekrarlamaları engellemek, dil modellerinin kararlılığını aracılığı vs.
+
+710
+02:36:30,843 --> 02:36:39,103
+Burada dediğim gibi ilgilenirseniz bu alandaki çeşitli uygulamaları da burada var. Neyse, iyi güzel şeyle tamamlayabildik.
+
+711
+02:36:40,371 --> 02:37:02,951
+Süreci burada çok fazla teknik bir şey de yoktu zaten. Genel olarak konseptlerden bahsettim. Bir tek şurası kritiktir herhalde. Yani şu yapı dediğim gibi hala aynı. Malum sebepler dediğim, business'tan dolayı çok fazla şey yapılamıyor. Geniş yapılar kurulamıyor. Peki, soru soran var mı arkadaşlar?
+
+712
+02:37:12,884 --> 02:37:22,943
+Dönem projelerini ne zaman sunacaktık? Onunla ilgili bir şey paylaştık. Bir daha söylerse? Dönem projelerini ne zaman sunacaktık? Onunla ilgili bir takvim paylaşmış mıydı?
+
+713
+02:37:22,943 --> 02:37:27,664
+Dönem projelerimizi, önümüzdeki hafta ders yapacağız zaten.
+
+714
+02:37:29,343 --> 02:37:46,583
+Dersin finali açıklanacak. Final programı açıklanacak ya bölümün. Şu günde hesaplamalı anlam bilim dersinin şu saatte şu günde finali vardır diyor. O gün yapılacak. Final programı.
+
+715
+02:37:46,995 --> 02:37:48,515
+Deadline aynı gün mü?
+
+716
+02:37:48,876 --> 02:37:50,435
+Aynı gün.
+
+717
+02:37:50,736 --> 02:37:54,376
+Şu anda Deadline biraz geride herhalde yanlış hatırlamıyorsam.
+
+718
+02:37:54,815 --> 02:37:57,315
+12'si falan diye ben set etmiştim.
+
+719
+02:37:57,315 --> 02:38:02,876
+Final programı açıklandığında o Deadline'i güncelleyeceğim.
+
+720
+02:38:03,355 --> 02:38:10,755
+O ders başlayana kadar döndelim yapabilirsiniz.
+
+721
+02:38:11,275 --> 02:38:13,515
+Deadline şu anda 16'sı gözüküyor hocam.
+
+722
+02:38:14,388 --> 02:38:37,488
+Tamam, yani ya da geri çekelim eğer hemen birinci pazartesi gününe falan alınırsa, final şeyi. Dediğim gibi orada şey yapacağım, güncelleme yapacağım. Ama temel olan dediğim gibi bölümün final programındaki bu ders için gün ve saat. Deadline on. O gün, o saatte başlayacağız. Yani bir uygulama, bir de şey yapacağım böyle Zoom üzerinden. Hepinize davet göndereceğim.
+
+723
+02:38:38,004 --> 02:38:42,804
+Onun üzerinden uzuma girerek gerçekleştireceğiz. Tamam mı?
+
+724
+02:38:43,084 --> 02:38:46,904
+Doğru, çok teşekkür ederim. Rica ederim. Başka soru olan var mı?
+
+725
+02:38:52,531 --> 02:39:17,151
+Peki, şimdi bir tavsiyede bulunayım. Önümüzdeki hafta bildiğiniz gibi dersimiz var. Tabii aralarda yani mailde de sorabilirsiniz, ondan çekinmeyin. Önümüzdeki hafta konu anlatımının ardından bir şey seçimde yapabiliriz. Projelerinize ne haldesiniz? Projelerinize düşükle karşılaştığınız ne yapayım? Falan gibisinden böyle problemlerle karşılaşırsınız ki bence şimdiden kesinlikle başlayın.
+
+726
+02:39:20,531 --> 02:39:21,531
+Evet.
+
+727
+02:39:22,004 --> 02:39:44,964
+Orada size böyle kestirme yollar, orasını öylediği de şöyle yap falan vesaire gibisinden öyle tavsiyelerde bulunabilirim diye düşünüyorum. O yüzden önümüzdeki haftaki dersin sonunda öyle bir projelerdeki ilerlemelerimizi anlatacağınız bir şey hazırlamaya çalışın. Yani işte neler yaptım, şu anda nasıl gidiyor, problem alan noktalar şuralar olabilir gibi görünüyor.
+
+728
+02:39:50,004 --> 02:40:06,504
+Bu konuda gerçekleştiririz. Hani dediğim gibi yani belki çıkmaz yollara falan düştüyseniz oradan böyle daha kestimli bir şeyler söyleyebilirim. Belki başkasının aklına başka bir şeyler gelir. O noktada bir proje seçini yaparız önümüzdeki final dersimizin sonunda. Tamam mı?
+
+729
+02:40:08,404 --> 02:40:16,804
+Peki arkadaşlar, hepinize teşekkür ediyorum katıldığınız için. Kısmetse önümüzdeki hafta.
+
+730
+02:40:16,959 --> 02:40:19,819
+Aynı gün aynı saatte görüşmek üzere diyorum. Hoşçakalın.
+
+731
+02:40:20,500 --> 02:40:21,520
+Görüşürüz hocam.
+
+732
+02:40:22,899 --> 02:40:23,739
+İyi günler hocam.
+
+733
+02:40:24,199 --> 02:40:24,840
+İyi günler.
