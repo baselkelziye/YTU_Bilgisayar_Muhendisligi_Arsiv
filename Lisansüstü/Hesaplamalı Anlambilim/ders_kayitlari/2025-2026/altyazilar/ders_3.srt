@@ -1,0 +1,4487 @@
+1
+00:00:05,299 --> 00:00:08,820
+Merhaba arkadaşlar. Sesim geliyordur umarım.
+
+2
+00:00:10,500 --> 00:00:11,539
+Günaydın hocam geliyor.
+
+3
+00:00:19,123 --> 00:00:26,124
+Bildiğiniz gibi dersimizin birinci ödeme sunumu yapacaksınız.
+
+4
+00:00:26,124 --> 00:00:34,124
+Şimdi tabii yine kalabalık bir ekipsiniz.
+
+5
+00:00:34,124 --> 00:00:44,123
+Zamanı iyi değerlendirmek adına şöyle bir şey söyleyeceğim.
+
+6
+00:00:47,188 --> 00:01:02,188
+Ödevin, ödevde ne yapıyorduk vesaire vesaire gibisinden kısımları, introduction diye ifade edebileceğimiz kısımları atlarsınız. Zaten herkes o kısma vakıf.
+
+7
+00:01:02,188 --> 00:01:04,188
+Dolayısıyla...
+
+8
+00:01:04,852 --> 00:01:20,932
+Sizin kendi yaptığınız kısma ve sizin değerli yorumlarınıza temelde vaktinizi, zamanınızı, sununuzu o parçasına odaklanırsanız sevinirim. Bu şekilde ilerlersek eğer de.
+
+9
+00:01:21,343 --> 00:01:27,343
+Ders arati içerisinde.
+
+10
+00:01:27,343 --> 00:01:32,343
+Şimdi, tabi ki kişi yapanlar var, tek başına yapanlar var vs.
+
+11
+00:01:32,343 --> 00:01:38,343
+Şimdilik şöyle bir şey, bir de tabi zaman da tamamlaması lazım.
+
+12
+00:01:46,611 --> 00:02:11,851
+Herhalde 5-6 dakika yeterli olur diye düşünüyorum yaptıklarınızı anlatmak için. Eğer o süreyi aşarsanız ben size uyaracağım. Bazen insan dalıp gidebiliyor. Çünkü yaptığınızı doğal olarak anlatmak istiyorsunuz heyecanda, heveste. Yani biraz süre aşılırsa ben orada bir uyarıda bulunacağım.
+
+13
+00:02:12,979 --> 00:02:29,659
+O zaman hazırsanız başlayalım sunumlara. Ben bende iki liste üzerinden gideceğim. İki kişiyseniz kimler olur zaten söylerik ilerlersiniz. İlk önce [öğrenci]'le başlayalım. [öğrenci].
+
+14
+00:02:31,219 --> 00:02:37,719
+Günaydın hocam, merhaba. Merhabalar [öğrenci]. Evet, sendeyiz. Olur hocam, paylaşayım ben.
+
+15
+00:02:44,243 --> 00:02:45,484
+Geldi galiba değil mi?
+
+16
+00:02:47,204 --> 00:02:48,424
+Evet, geldi.
+
+17
+00:02:49,404 --> 00:02:55,944
+Günaydın tekrardan selamlar. Ödevimizi ben ve [öğrenci] arkadaşımızla beraber yaptık.
+
+18
+00:02:56,144 --> 00:02:57,243
+[öğrenci] burada mı?
+
+19
+00:02:58,564 --> 00:02:59,804
+Evet hocam, merhaba, buradayım.
+
+20
+00:03:00,463 --> 00:03:04,524
+Merhabalar [öğrenci]. Peki tamamdır, başlayabilirsin.
+
+21
+00:03:05,004 --> 00:03:06,824
+Tamamdır, beraber anlatacağız ödevimizi.
+
+22
+00:03:07,551 --> 00:03:33,291
+İlk başta ajandayla başlıyoruz. Burada kullanılan modelleri ve kendi bulduğumuz TQAT datasetini ben anlatacağım. Ardından da sözü [öğrenci] arkadaşımıza vereceğim. O da Patient-Doctor-Doctor dataseti ile 6 farklı modelin analizini yapacak ve sonuçları karşılaştırmalı olarak gösterecek. Kodlarımızı da GitHub'a koyduk. En sonunda da orada kaynaklıkları göstermiş olacağız.
+
+23
+00:03:35,412 --> 00:03:49,632
+6 farklı dil modeli kullandık bu çalışmamızda. Ödevde belirtildiği gibi M.D.Liderboard'da ilk %5 model 1 milyar parametrenin altında ve bir tane de ITU-CE Cosmos modelini kullandık.
+
+24
+00:03:50,163 --> 00:04:04,103
+İki farklı veri seti üzerinden her bir soru cevap çifti için soru cevap, cevap soru üzerinden tabirle tab 5 başarı ölçümünü yaptık ve TCNA ısı harfasını çıkartıp karşılaştırma olduğu tab olarak sizlere sunmak istedik.
+
+25
+00:04:04,903 --> 00:04:13,144
+Parametre olarak 1 milyarın altında olanları seçtik bu seçimi yaparken ve emdette yukarı 3 sıralarda olanları kullandık.
+
+26
+00:04:14,771 --> 00:04:24,692
+MultiLanguage E5 Large Instruct, BGE, i5 Large, MultiLanguage Mini V1, Alibaba ve IT Cosmos'u bulmuş olduk.
+
+27
+00:04:25,891 --> 00:04:29,172
+İlk datasetimiz Tquad dataset.
+
+28
+00:04:29,427 --> 00:04:37,427
+Türkçe doğal dil işleme modellerinin okuduğunu anlama ve soru cevaplama yeteneklerini eğitmek veya test etmek için kullanılan bir veri seti.
+
+29
+00:04:37,427 --> 00:04:44,427
+Toplamda 8.3K, yani 8300 adet soru cevap çifti var bu data setimizde.
+
+30
+00:04:44,427 --> 00:04:52,427
+Ama biz daha efektif olması için karışık olarak 1000 adetini seçtik ve bunların üzerine çalışmamızı yaptık.
+
+31
+00:04:52,427 --> 00:04:55,427
+Burada örnek soru cevap çiftleri var.
+
+32
+00:04:56,339 --> 00:05:08,159
+Görüldüğü gibi soru uzunluğu ve cevap uzunluğu ortalama olarak bu şekilde. Bunlar da sonuçlara yansımalarını ileriki slide'larda yorumluyor olacağız.
+
+33
+00:05:10,599 --> 00:05:22,620
+Bu dataset'in de burada çalışma künyesini ve sonuçları gösterdik. Python dilini kullandık. Bin karışık data ve açı benzerlik ölçümsüzünü kullanmış olduk.
+
+34
+00:05:23,156 --> 00:05:44,156
+Buradaki çalışmalarda en yüksek eküransiye sahip modelin Cosmos modeli olduğunu gördük. Aslında Cosmos modeli de çok yüksek değil. Yani taht bir başarısı mesela soru cevap için yüzde on beş olmuş. Taht beş başarısı yüzde otuz bir olmuş. Normalde...
+
+35
+00:05:45,363 --> 00:06:02,363
+Çok yüksek rakamlar değil bunlar. Bunların sebebi olarak da aslında soru cevapların biraz daha kısa olması veya soruyla cevap arasındaki bağlantının çok kuvvetli olmamasını göstermiş olduk.
+
+36
+00:06:02,363 --> 00:06:11,019
+Sıralama bu şekilde oldu açıkçası. En düşük de 6.8'de Calm Embedded Mutual Language Mini modeli oldu.
+
+37
+00:06:14,163 --> 00:06:23,943
+Burada ısı haritamızdan bahsedeceğiz. T-Quad Data Settin'in de 6 farklı model için 6 farklı ısı haritası çıktı.
+
+38
+00:06:23,943 --> 00:06:27,943
+Burada BG-M3 ve...
+
+39
+00:06:28,403 --> 00:06:47,463
+Türk iç E5 LARCH dediğimiz Cosmos modeli, yani dördüncü ve beşinci sıradakiler biraz daha iç içe geçmişken, pardon birinci ve beşinci sıradakiler biraz daha iç içe geçmişken, diğerlerinde daha ayrık bir, daha kümelenme olduğunu görmüş olduk. Question and Answer çiftleri için.
+
+40
+00:06:48,211 --> 00:06:56,211
+Buradaki sonuçları ve kalan konuları [öğrenci] arkadaşımız anlatıyor olacak.
+
+41
+00:06:58,211 --> 00:07:00,992
+Tamamdır. Ben de ekran paylaşımı yapayım o zaman.
+
+42
+00:07:02,672 --> 00:07:03,752
+Olur ben durdurayım.
+
+43
+00:07:10,291 --> 00:07:15,411
+Tekrar da şey edeyim. X62'ye hemen paylaşıyorum.
+
+44
+00:07:19,668 --> 00:07:21,208
+Sanırım geldi ekranım.
+
+45
+00:07:22,004 --> 00:07:24,004
+Evet, evet. Görüyoruz.
+
+46
+00:07:50,004 --> 00:07:57,084
+1500'e düşürüp bu çalışmamızı altı model üzerinde yaptık. Aldığımız sonuçlara gelecek olursak,
+
+47
+00:07:58,548 --> 00:08:18,048
+Buradaki sonuçlar daha yüksek çıktı. Yani sıralama hemen hemen aynı. Birinci sırada yine Türk İş 5 Large var. Cosmos tarafından üretilmiş model. Multilanguage diye gidiyor. Instruct modeli. GT, sonra Multilanguage, Calm diye gidiyor.
+
+48
+00:08:23,060 --> 00:08:44,940
+Şöyle bir şey söyleyebiliriz aslında burada. Yani neden bu dataset de yüksek çıktı, diğerinde daha düşük çıktı? Yani bizim bu iki dataset'ten çıkartmış olduğumuz yorum şöyle oldu. Zaten az önceki soru-cevap çiftlerinden de görüldüğü üzere bu dataset'te genel olarak soru ve cevaplar benzer uzunlukta. Hatta cevaplar daha uzun oluyordu genel olarak.
+
+49
+00:08:51,059 --> 00:09:05,459
+Daha iyi oldu diye düşündük. Diğer data sette, az önce arkadaşlarımın anlatmış olduğu sette, cevaplar genel olarak bir cümle iki cümlelik gidiyordu. Burada da modeller bağlamsa olarak çok fazla yakalayamadı gibi bir sonuç çıkarttık biz.
+
+50
+00:09:15,648 --> 00:09:26,148
+Neredeydi bizim modeli? Turkish E5 Large olsun işte efendime söyleyeyim GT Multi Language olsun. Bunların
+
+51
+00:09:26,272 --> 00:09:32,272
+sorularla cevapların iki boyutlu uzayda birbirine yakın olduğunu gördük.
+
+52
+00:09:32,272 --> 00:09:42,272
+Mesela Kalm modeli, en düşük model, bunda kümelendiğini gördük veya diğer en düşük olan modelinde bu şekilde soru ve cevaplarının ayrıldığını gördük.
+
+53
+00:09:42,272 --> 00:09:51,272
+Genel olarak ısaret ısıtası da bu, görseli de bu şekilde. Kısaca hemen sonuçları söyleyeyim ben.
+
+54
+00:09:52,115 --> 00:09:55,115
+Az önce söyledim zaten. Soru-cevaplarını anamsal olarak da birbirine yerleştirelim.
+
+55
+00:09:55,115 --> 00:09:57,816
+[öğrenci]'i de hızlandırabilirsem birazcık.
+
+56
+00:09:58,416 --> 00:10:00,000
+Aynen. Başarıyı arttırdım.
+
+57
+00:10:00,000 --> 00:10:27,759
+Bu modelin yerel dildeki anlamsal ilişkileri yakalamada başarısından daha yüksek olduğunu gördük. İki modelde de bunu gördük. Ayrıca model performansı sadece modeli değil, kullanılan veri setin yapısına ve çevrdiği semantik zenginliğe de bağlıdır. İki data setten bunu görmüş olduk. Gene aynı şekilde model başarısı sadece parametreye bağlı değil. Bunu da şuradan görmüş olduk aslında. GTE modeli en düşük parametreli model olmasına rağmen.
+
+58
+00:10:28,000 --> 00:10:31,080
+Kendisinden daha yüksek parametreli modelleri geçmiş.
+
+59
+00:10:31,320 --> 00:10:33,639
+Mesela burada 3. sırada yer almış.
+
+60
+00:10:33,879 --> 00:10:38,240
+Burada da sadece model başarısında parametrenin etken olmadığını,
+
+61
+00:10:38,240 --> 00:10:41,320
+eğitim mimarisinin de etken olduğunu görmüş olduk.
+
+62
+00:10:41,560 --> 00:10:43,620
+Instraq modelinde yine aynı şekilde
+
+63
+00:10:43,879 --> 00:10:47,720
+iki veri setinde de kendisiyle aynı mimaride olan
+
+64
+00:10:47,960 --> 00:10:50,019
+diğer modeli geçmiş olduğunu gördük.
+
+65
+00:10:50,240 --> 00:10:59,960
+Evet, teşekkür ediyorum dinlediğiniz için. Kaynak kodları da GitHub adresinden public olarak paylaşmış olduk. Link olarak da koymuştuk hocam.
+
+66
+00:11:01,160 --> 00:11:02,779
+Teşekkürler, elinize sağlık.
+
+67
+00:11:02,860 --> 00:11:03,600
+Teşekkür ederim.
+
+68
+00:11:04,240 --> 00:11:05,960
+Evet, [öğrenci] sen de devam edelim.
+
+69
+00:11:08,660 --> 00:11:09,720
+[öğrenci].
+
+70
+00:11:10,320 --> 00:11:11,019
+Sesim geliyor mu?
+
+71
+00:11:12,019 --> 00:11:13,379
+Evet, geliyor [öğrenci].
+
+72
+00:11:13,639 --> 00:11:20,399
+Bu arada hocam, sohbetten gönüllü olarak önden sunmak isteyenler vardı ama onlarınki daha acilse onlar da sunabilirler.
+
+73
+00:11:20,499 --> 00:11:23,479
+Benim de aslında toplantım var ama fark etmez sunabilirim.
+
+74
+00:11:24,399 --> 00:11:26,519
+Sen başla, onu sonra değerlendirelim.
+
+75
+00:11:27,599 --> 00:11:28,159
+Tamamdır.
+
+76
+00:11:32,851 --> 00:11:33,851
+Paylaştım.
+
+77
+00:11:33,851 --> 00:11:34,851
+Evet.
+
+78
+00:11:34,851 --> 00:11:38,851
+Püzik ve püzik ve tamamdır.
+
+79
+00:11:38,851 --> 00:11:39,851
+Tamamdır.
+
+80
+00:11:43,316 --> 00:12:03,515
+Merhabalar. Bu ön kısımları hemen hızlıca sürenize çok kalmadan geçiyorum. Amacımız aslında farklı dataset'lerde farklı emirik modellerinin performanslarını incelemek. Ben 3 dataset üzerinde incelemelerimi yaptım. Birisi GCM8KTR, diğeri TQA2, diğeri de Wikipedia.
+
+81
+00:12:04,307 --> 00:12:12,707
+Burada aslında GSM 8K'nın Türkçeleştirilmiş versiyonu bulunuyor. Her birinden 3000'er tane alarak ilerledim.
+
+82
+00:12:12,707 --> 00:12:16,168
+Bu arada bunu güncellemiştim ama eksik kalmış.
+
+83
+00:12:17,812 --> 00:12:39,792
+Kullandığım modellerde bu şekilde. Aslında ilk yüzdeki farklı parametrelerde, farklı embedding size'larda farklı modeller bulabildiğini seçmeye çalıştım. Q13, Multilingual E5 Large, Embedding Gamer 300 milyon parametrelik modelini aldım. Son aşamada bir tane Kanbini Instra 100 milyonluk bir parametre daha ekledim.
+
+84
+00:12:40,596 --> 00:12:56,895
+En sonunda da ek olarak Turkish E5 Large'ı da koydum. Genel olarak veride herhangi bir hata vs. karşılaşmamak için büyük harfleri küçük harfe çevirme, I'yi iyi yapma gibi işlemler gerçekleştirdim.
+
+85
+00:12:56,895 --> 00:13:04,936
+Ve modeli özel taktına istek, işte Question'ın başında Question veya Answer gibi taklar vs. tasları belirterek ilerledim.
+
+86
+00:13:05,556 --> 00:13:19,896
+Burada doğrudan aslında sonuçları gösteriyorum. İlk datasetimiz Tevkuat 2'de genel olarak aslında bir önceki arkadaşlarımızın da bahsettiği gibi performans skorların daha düşük olduğunu gözlemledim.
+
+87
+00:13:19,896 --> 00:13:32,396
+İşte %3'den %27'ye göre değişen skorlarda bulunuyor. Soru cevap yönünde Türkçe'ye 5'lar daha iyiyken, yani minimum 2 kat farkla daha iyiyken cevap soru yönünde.
+
+88
+00:13:32,831 --> 00:13:41,632
+Maltingle E5 Large daha iyi geldi. Benim seçtiğim 3000'lik seride. Ama buradaki fark o kadar fazla değil en azından.
+
+89
+00:13:44,372 --> 00:13:56,812
+Burada şunu da gözlemledim aynı zamanda. BGE M3 modeli 1 milyar parametre modeli iken 300 milyonluk GEMA modeli çok daha yüksek, çok daha performanslı sonuç verdiğini gördüm.
+
+90
+00:14:00,831 --> 00:14:28,272
+Son olarak daha yüksek skorlar elde ettiğimi gözlemledim. Zaten bunların sebebini biraz sonraki örnek soru cevaplardan bakıyor olacağız. Burada da Turkish E5'ler tüm soru cevap ve cevap soru yönlerinde çok daha yüksek skorla birinci gelmiş. Burada aslında fark ettiğim Turkish E5'ler üzerinde eğitilmiş olmasına rağmen Maltaling E5'ler burada daha düşük skor vermiş. En düşük o vermiş.
+
+91
+00:14:30,292 --> 00:14:49,832
+Bir diğeri de Wikipedia Türkçü'ye idi. Burada da yine bir önceki gibi Türkçü'ye 5'ler hepsinde tüm yönlerde daha yüksek skor vermiş. Burada genel dağılım biraz daha aslında %30-%60 civarında olduğunu görüyoruz.
+
+92
+00:14:50,803 --> 00:15:06,803
+Burada birkaç soru örnek. Hepsinde Turkish E5larş daha iyi geldiği için Turkish E5larş üzerinden örnekler koymaya çalıştım. En başarılı dataset'imiz aslında en yüksek skorların geldiği dataset CSM8KTR idi. Burada gözlemlediğim zaman aslında...
+
+93
+00:15:07,539 --> 00:15:31,240
+Soruyla cevap arasında ilişkinin daha yüksek olduğu bir dataset olduğunu gördüm. Dolayısıyla burada aslında modeller genel olarak daha yüksek skorlar elde ediyorlar. Sağ tarafta da mesela eğer bir bağlantı daha zayıfsa bunu getirmede daha zorlandığını da daha hatalı sonuç getirdiğini gözlemledim.
+
+94
+00:15:35,539 --> 00:15:51,259
+Cevaplar tek kelimelik ve sorudan bazen bağımsız kontekstinde olmayan cevaplar olduğu zaman bunlar da genel olarak hatalı sonuçlar getiriyordu ki bu yüzden de aslında genel olarak başarı düşüktü.
+
+95
+00:15:51,259 --> 00:15:59,859
+Burada mesela sorunun içerisinde de yer aldığı için mesela bu tarz örneklerde daha yüksek başarı getirdiğini inceledim.
+
+96
+00:16:00,620 --> 00:16:02,199
+Bir diğer taraftan son.
+
+97
+00:16:03,539 --> 00:16:10,579
+Ve de Türk İşkaya'da ise aslında yine her ikisinden de örneklerin olduğunu gördüm.
+
+98
+00:16:10,699 --> 00:16:23,339
+Yani hem tekli doğrudan cevabın beklendiği kontekste soruda olmayan örneklerin hem de aynı zamanda cevapla da sorunun bir kısmının yer aldığı örneklerin olduğunu gördüm.
+
+99
+00:16:24,403 --> 00:16:35,723
+Bu da aslında onun örneğiydi. Burada aslında hitmap'ler koydum. Burada daha koyu renkler daha yüksek başarıya hit ediyor ama az önceki tablolarımız zaten bunu gösterdiği için buraları hızlıca geçmiş olayım.
+
+100
+00:16:35,723 --> 00:16:40,303
+Son aşamada da bunların aslında t-sne ile iki boyutlu görselleştirmelerini yapmaya çalıştım.
+
+101
+00:16:40,659 --> 00:16:51,519
+Burada da aslında noktalar arası uzaklık ne kadar fazlaysa, ne kadar bir kümelenme, ayrı kümelenme varsa bu bizim için daha başarısız model anlamına geliyor.
+
+102
+00:16:52,460 --> 00:17:03,360
+Genel olarak GSM 8KTR datasetinde çok daha yüksek başarılar elde ettiğimiz için her modelde sol tarafta daha nokta nokta bir arada olan şeyler görüyoruz.
+
+103
+00:17:03,360 --> 00:17:08,639
+Ama diğer datasetlerde özellikle Telequat 2'de daha ayrı kümelenmeler gözlemledim.
+
+104
+00:17:08,660 --> 00:17:12,780
+Örneğin bizim doğrudan Türkçe'ye 5 larcı açarsak.
+
+105
+00:17:13,299 --> 00:17:30,480
+Burada özellikle CSM8KTR'de neredeyse tek nokta şeklinde görüyorum. Ama tabii farklılıklar da var. En iyi Taekkuat 2'de de en azından diğerlerine göre çok daha iyi bir grafik çıkarttığını gözlemledim.
+
+106
+00:17:30,480 --> 00:17:39,480
+Gün sonunda aslında Turkish Air 5.0 bizim için en başarılı moda geldi. Burada da parametreden veya embedding size'dan bağımsız olarak...
+
+107
+00:17:40,084 --> 00:17:47,844
+Dile özel fine tune edilmiş modellerin daha yüksek performans getirebildiğini gözlemledim.
+
+108
+00:17:48,544 --> 00:17:58,564
+Ve dataset'ler arasında da eğer cevap soruyla alakalı bir konteks bağlantısı içerdiği zaman genelde o dataset'lerde daha yüksek başarıların elde edildiğini gördüm.
+
+109
+00:17:58,564 --> 00:18:07,744
+Bununla JSM 8KTR. Eğer daha az bağlam varsa da daha düşük skorlar genel olarak elde ediyoruz. Bu da TQR2'ye aslında bir hit ediyor.
+
+110
+00:18:08,084 --> 00:18:13,344
+Bu şekilde genel yorumlarımı söyleyebilirim. Kod vesaire direkt izliip içerisinde göndermiştim oradan.
+
+111
+00:18:14,164 --> 00:18:16,204
+Teşekkürler. Enine sağlık.
+
+112
+00:18:17,024 --> 00:18:17,744
+Teşekkür ederim.
+
+113
+00:18:18,684 --> 00:18:23,744
+Peki, benden sunum yapmaysam. [öğrenci] var. [öğrenci], seni ineyelim.
+
+114
+00:18:26,444 --> 00:18:28,884
+Elim bıldıracağım. Herhalde şu an ses vardır diye.
+
+115
+00:18:29,524 --> 00:18:30,504
+Her şey var.
+
+116
+00:18:31,144 --> 00:18:32,204
+Tamam, sana sağ olun.
+
+117
+00:18:32,692 --> 00:18:47,731
+Önce sunumdan başlayayım. İlk öncelikle hocam kullanmış olduğum veri setleri içerisinde farklı bir biçimde sorulan sorunun hangi konu içerisinde var?
+
+118
+00:19:00,307 --> 00:19:14,067
+Sorulduğu bilgisi de var. İkincisinde de birbirinden farklı örneğin futbol gibi Sovyet Rusya hakkındaki gibi birbirinden farklı.
+
+119
+00:19:14,740 --> 00:19:32,480
+Konular hakkında soru ve cevaplar var. Yalnız burada özellikle ikincisinde, hani şu QS'in cümlelerin ilk başlangıçları çok benziyor. Bundan ötürü de herhalde büyük ihtimalle sonuçlar biraz kötü gelmişti orada.
+
+120
+00:19:32,480 --> 00:19:42,039
+Her bir tanesi için toplam 1040 tane hamplum var. Toplam 8 tane.
+
+121
+00:19:42,996 --> 00:19:59,895
+Patigorim var her bir tanesi için. Veri setlerini almış olduğum link adresleri de aşağıda var. Kullanmış olduklarım dil modelleri de bunlar. Doğrudan konuşları atlayayım.
+
+122
+00:20:02,384 --> 00:20:13,463
+Özellikle hocam, Kozmoz'da dil modeli özellikle Türkçe'ye özgü olarak fine tune edildiği için aslında beklenildiği üzere,
+
+123
+00:20:13,463 --> 00:20:21,463
+bunda diğer dil modellerine fiyazda daha da yüksek başarı bekliyorduk.
+
+124
+00:20:22,044 --> 00:20:23,463
+Şu son kolondaki...
+
+125
+00:20:26,644 --> 00:20:39,604
+Etiket bilgisiyse hocam, şöyle hesapladım. Veri setlerimin içerisinde 8 tane farklı bilgileri vardı.
+
+126
+00:20:39,604 --> 00:20:48,624
+Hani bu veri seti örneklemleri gruplar olarak ardışıklar.
+
+127
+00:20:49,663 --> 00:21:11,632
+Embedding vektörünün similaritiesini hesapladığımda şayet en yüksek, örneğin 65. aradakiyse, buradaki ardışık olduğu için 65. nin kadın doğum olduğunu...
+
+128
+00:21:11,632 --> 00:21:26,092
+Biliyorum. Bunu bilerek aslında bir nevi sınıflandırma gibi, hastane verileri içerisinde hangi bölümden bu soru gelmiştir diye kendi içerisinde biz sınıflandırmadık.
+
+129
+00:21:26,451 --> 00:21:40,371
+Bu attım. Cevabı verip soruları hesaplamak istediğimde de tekrardan Kozmos'unkisi diğer dil modellerine kıyasla daha da üstün geldi.
+
+130
+00:21:41,291 --> 00:21:47,511
+İkincisinde ise şöyle bir şey var. Aslında küliseler oldukça az.
+
+131
+00:21:47,511 --> 00:21:54,451
+Burada ilk slide'da anlattığım gibi aslında buradaki soru ve cevap...
+
+132
+00:21:54,451 --> 00:22:01,031
+Buradaki soru cümlelerinin başlangıçları çok ortak. Belki bundan ötürüdür.
+
+133
+00:22:02,331 --> 00:22:07,451
+Buradaki etiket bilgisindeki yüzde...
+
+134
+00:22:08,884 --> 00:22:22,943
+96'ların olmasındaki de aslında şöyle, birinci veri seti içerisinde hepsi hastaneyle ilgili iken ikincisinde aslında bunların başlık bilgileri tamamıyla birbirinden farklı.
+
+135
+00:22:25,748 --> 00:22:39,768
+O modellerin hepsi etiket bilgisi olarak doğru grubu gösteriyor. Ama o grup içerisindeki hangi cevap olduğu kısmında hataları var. Yani böyle söyleyeyim.
+
+136
+00:22:41,044 --> 00:23:03,044
+Bilirim. Görselleştirmede de kod üzerinden aktaracağım. Görselleştirmede hocam ben üç yaptım. İlk veri seti için kozmozunkisinde. Aslında soru ve cevaplar kendi içerisinde hani bir iç iç şeyler ama genellikle merkezde...
+
+137
+00:23:03,988 --> 00:23:23,367
+Sevaplar var, etrafında da sorular var. Ben bunu aynı bir biçimde etiket bilgisi kırılımında da inceledim. Hastane özelinde her biri sağlıkla ilgili olsa da aslında örneğin gözle ilgili.
+
+138
+00:23:24,048 --> 00:23:32,768
+Kornea gibi bazı özel terimlerden ötürüp, belki bunlar da kendi içerisinde böyle hafifçe bir kütümelenmişler.
+
+139
+00:23:33,587 --> 00:23:40,807
+Onun haricinde hem soru cevap hem de etiket bilgisi kırılımında da inceledim.
+
+140
+00:23:42,228 --> 00:23:50,688
+Harmaşık olduğu için bazılarını örtsek daha iyi olur gibi hızlıca şunları kapatalım.
+
+141
+00:23:51,367 --> 00:23:53,028
+HBB üzerinden aktaralım.
+
+142
+00:23:53,347 --> 00:24:00,228
+Aslında soru sevapları da incelediğimizde, hani örneğin HBB içerisinde...
+
+143
+00:24:02,099 --> 00:24:15,079
+KBB içerisinde de soru cevap cümlelerinin kendi içerisinde böyle tamamıyla bölünmemişler de yine iç içeler diye bir sonuç elde ettim.
+
+144
+00:24:15,079 --> 00:24:19,139
+İkinci veri kümesinde ise şöyle bir şey vardı.
+
+145
+00:24:22,451 --> 00:24:38,451
+Sorulardan ziyade hevaplar bir ortak merkezdeyken sorular farklı bölgelerde kümelenmişler. Bunun da konu başlık etiket bilgisi olarak...
+
+146
+00:24:39,347 --> 00:25:03,467
+Böldüğümde burada beklenildiği gibi her etiket aslında farklı bir kümede. Çünkü birinci veri seti hastaneyle ilgiliydi. Hepsinin mutlaka hastalık gibi benzer kelimeler kullanılıyordu ama ikinci veri kümesindeki şu etiketlerin hepsi birbirinden farklı olduğu için zaten kümelenmesini bekliyorduk. Böyle sonuç elde ettim.
+
+147
+00:25:07,155 --> 00:25:24,495
+Vapem'de sıralımda da inceledim. Geriye kalanların üç D'leri var. Ancak bunları elde etmek için tekrar çalıştırmak lazım. Ona da ihtiyaç yok diye onları şu anlık gösteremiyor.
+
+148
+00:25:25,055 --> 00:25:27,115
+Toparlayalım yavaş yavaş [öğrenci].
+
+149
+00:25:27,735 --> 00:25:30,355
+Bağlantısında en sonunda var. Bitti hocam.
+
+150
+00:25:30,675 --> 00:25:33,775
+Tamam, çok teşekkürler. Erine sağlık.
+
+151
+00:25:34,455 --> 00:25:35,816
+Sağ olun hocam, teşekkür ederim.
+
+152
+00:25:37,296 --> 00:25:38,435
+[öğrenci] [öğrenci].
+
+153
+00:25:41,235 --> 00:25:44,515
+Merhaba hocam. [öğrenci]'le sunum yapacağız bugün.
+
+154
+00:25:45,955 --> 00:25:46,435
+Geçelim.
+
+155
+00:25:46,435 --> 00:25:48,536
+Hemen ekranımı paylaşıyorum hocam.
+
+156
+00:25:49,296 --> 00:25:49,615
+Tamam.
+
+157
+00:25:55,615 --> 00:25:57,135
+Bir saniye.
+
+158
+00:26:10,355 --> 00:26:13,496
+Ekran şu an gözüküyor değil mi? Evet, görüyoruz.
+
+159
+00:26:14,056 --> 00:26:25,556
+Tamam. Merhaba herkese. Bugün [öğrenci] arkadaşımla birlikte Türkçe soru cevap veri hükümelerine model karşılaştırması yapacağız. Buraları biraz daha hızlı geçiyorum.
+
+160
+00:26:27,076 --> 00:26:37,816
+Araştırma amacımız iki farklı Türkçe veri hükümesinde altı farklı dil modelini soru cevap eşleştirme, cevap soru eşleştirme başarısı açısından karşılaştırmak.
+
+161
+00:26:39,731 --> 00:27:07,031
+İki tane veri seti kullandık. Bu veri setlerimiz Hugging Face sitesinde bulunan open source veri setleri. İlk veri kümemiz AXR Turkish QA. İçinde 1139 soru cevap çifti barındırıyor. Teknoloji, sağlık, yazılım ve verileri alanlarda sorular içeriyor. Ortalama soru uzunluğu yaklaşık 7 kelime, cevap uzunluğu ise yaklaşık 13 kelime.
+
+162
+00:27:08,051 --> 00:27:32,391
+İkinci veri setimiz ise IP Pro Turkish Law. Bu da 2325 soru cevap çifti içeriyor. Ama biz ilk 1000 örneklemini alarak modellerimizi daha hızlı bir şekilde eğitmek istedik. Bu veri kümesinde de hukuk Türkiye Cumhuriyeti Anayasası'na yönelik soru cevap çiftleri bulunuyor.
+
+163
+00:27:33,619 --> 00:27:53,239
+Soru uzunluğu yaklaşık 9 kelime, cevap uzunluğu ise 17 kelime. Burada değinmek istediğim nokta şu, veri seti araştırması yaparken özellikle ilave bir bağlamdan bağımsız, yani context independent sorulara ihtiyacımız vardı.
+
+164
+00:28:00,127 --> 00:28:25,847
+Sorunun kendi başına bir anlamı olması gerekir. Yani ek bir cümle veya ek bir paragrafa ihtiyaç duymadan sadece özneyi ve nesneyi kendi içinde barındıran sorulara ihtiyaç duyuyorduk. Bu sayede modellerin sadece kelimelerden ziyade anlamsal anlamda bir eşleştirme yapmasının buna amaçladık yani. Bu şekilde modellerimizi test etmiş olduk.
+
+165
+00:28:26,259 --> 00:28:45,459
+Kullandığımız modellerden bahsedecek olursam, yine YTE-Cosmos Turkish E5'lılarcı kullandık. Bunun dışında MTB'de ilk yüze giren 4 tane modeli aldık ama bir tane daha model ilave etmek istedik. Bu model PPLX M-BED modeli.
+
+166
+00:28:51,316 --> 00:29:17,475
+Bizim için önemli bir metrik olan Retrieval sıralamasında. Genelde 14. sırada. 1 milyar parametreden küçük modeller arasında da ise 1. sırada. Bunun sebebi de Retrieval metriği ile alakalı. Yani aslında Retrieval bilgi getirme anlamına geliyor. Yani bir soru için doğru cevap çiftlerini nokta atışı bir şekilde bulması.
+
+167
+00:29:17,807 --> 00:29:35,807
+Bu mu başarı metriği? Bu başarı metriği bizim için önemli olduğundan dolayı, böylesine yüksek bir retrieval başarısına sahip modeli de karşılaştırmamıza dahil etmek istedik.
+
+168
+00:29:35,807 --> 00:29:41,708
+Yine başarı ölçütlerinden de biraz bahsedecek olursak, posinus benzerliğini kullandık.
+
+169
+00:29:41,811 --> 00:29:43,811
+Bu yöntem modellerin metinleri...
+
+170
+00:29:44,511 --> 00:29:47,731
+Buraları biraz hızlı geçelim istersen.
+
+171
+00:29:48,451 --> 00:29:58,771
+Tamam. Yine kosinus benzerliğini kullandık. Soru-cevap, cevap-soru şeklinde ölçümleri modellerimizde eğittik.
+
+172
+00:29:59,332 --> 00:30:03,771
+TAP1 başarısı modelin en yüksek benzerlik bulduğu ilk sonucun doğru eşleşme olma oranı.
+
+173
+00:30:03,771 --> 00:30:09,740
+TAP5'te 5 tane aday soru arasında doğru...
+
+174
+00:30:10,548 --> 00:30:18,208
+Sorunun veya doğru cevabın yer alma oranı. Ben buradan sonrası için yine sözü arkadaşım [öğrenci]'e devrediyorum.
+
+175
+00:30:18,208 --> 00:30:19,448
+Bu şekilde.
+
+176
+00:30:20,147 --> 00:30:25,267
+Merhaba hocam. Eşleştirme sonuçları da var burada. Her birini kısa kısa bahsedeceğiz.
+
+177
+00:30:25,827 --> 00:30:32,247
+Tab 1'de soru-cevafta baktığımızda Kozmoz'un modeli ve Perfect Steel'in modeli aslında en üst modeller çıkıyor.
+
+178
+00:30:32,867 --> 00:30:38,767
+Hem genel hem de hukuk virüs etlerinde aslında, eksirle hukuk virüs etlerinde.
+
+179
+00:30:39,287 --> 00:30:48,147
+Bir de bunun üzerine Tab 5'e geçersek eğer, Tab 5'te de benzer şekilde yine Perfect Steel'de Kozmoz'un modelleri en üst.
+
+180
+00:30:48,147 --> 00:31:05,347
+Bu süre çıkarken özellikle Küven ve Ali Baba'nın modelleri, GT Multidinjil Base biraz daha geride kalıyor. Bir de bunun tam zıtına geçersek, yani cevap ve soruya geçersek de yine aslında benzer bir sağırma bizim karşımıza çıkıyor. Yine Cosmos'la Perfektist'i öndeyken yine Küven gibi modeller arkada kalıyor.
+
+181
+00:31:05,844 --> 00:31:18,044
+Son olarak da Cevap Sword'a da Top 5'te de yine çok çok çok benzer sonuçlar alıyoruz burada. Genel olarak aslında Cosmos modeli çoğu metikte birinci oluyor.
+
+182
+00:31:20,627 --> 00:31:36,827
+Örnek olması açısından da, e-kisir versiyonu üzerinde biz bunu uyguladık. Burada genel olarak modellerin iç içe geçirebilmesinin biraz iyi olduğunu gördük. Yalnız bazı modellerde detaylı baktığımızda kümeleme kısmının ayrıştığını gördük.
+
+183
+00:31:36,827 --> 00:31:45,228
+Ama özellikle Cosmos modelinde ve Perfect City modellerinde dağılımın biraz daha iç içe geçtiğini gördüğümüz için genel olarak aslında performanslarından memnun olduk.
+
+184
+00:31:47,476 --> 00:32:15,176
+Son olarak ise bahsettiğim gibi Cosmos genel olarak en iyi model çıktı. Yalnız tab bir soru cevap metriyinde, hukuk tarafında Perplexity modelinin birinci olduğunu gördük. Ufak bir farkla. Bu yüzden de aslında karar alma seviyesinde düşünürsek, o Veristin'de biraz daha Perplexity'nin bir tık daha önde olduğunu söyleyebiliriz. Production seviyesinde düşünürsek eğer. Veristin'de ise genel olarak E-XR biraz daha başarı alındı.
+
+185
+00:32:15,476 --> 00:32:24,336
+Çünkü hukuk verisine baktığımızda cümleler çok birbirine benziyordu. Atıyorum cümlelerin çoğu şeyle başladı. Türkiye Cumhuriyeti'nin anayasına göre vs. vs. diye başladı.
+
+186
+00:32:25,336 --> 00:32:35,676
+Burada da biraz daha ayetleyebileceği, zor olabileceğini düşündük. Yön farkında da diğer arkadaşlarımız da bahsettiği gibi genel olarak aslında cevap soru biraz daha başarılı oluyor.
+
+187
+00:32:35,676 --> 00:32:43,396
+Ve zaten [öğrenci]'in bahsettiği analizde de cevapların biraz daha uzun olduğunu gördük. Zaten daha uzun olduğu için daha fazla semantik sinyal yakalayabiliyor.
+
+188
+00:32:43,476 --> 00:32:49,296
+Bu yüzden de bunun gelmesini normal gördük. Bu kadar da bizim de sunumumuz. Teşekkür ederiz.
+
+189
+00:32:50,956 --> 00:32:53,596
+Teşekkürler arkadaşlar. Yerinize sağlık.
+
+190
+00:32:56,816 --> 00:32:58,615
+Evet, [öğrenci] senle devam edelim.
+
+191
+00:32:59,336 --> 00:33:02,456
+Olur hocam buradayım. Ekranımı paylaşıyorum ben de hemen.
+
+192
+00:33:05,296 --> 00:33:06,296
+Sesim geliyor mu hocam?
+
+193
+00:33:06,756 --> 00:33:07,476
+Geliyor evet.
+
+194
+00:33:09,875 --> 00:33:12,615
+Ekranımı da görüyor olmanız lazım. Evet görüyorum.
+
+195
+00:33:13,619 --> 00:33:26,579
+Tamam, başlıyorum. Şimdi ben hızlıca Dataset seçimlerinden başlayacağım. Benim ilk veri setim Bezir veri seti. Bu Türkçe sınav sorularından oluşan bir veri seti ve çok geniş konuları kapsıyor aslında.
+
+196
+00:33:27,240 --> 00:33:35,019
+Buraya birkaç tane örnek koydum. Bu veri setinde gözlemlediğim şey genelde sorudaki kelimeler cevaplarda da gözlemleniyor.
+
+197
+00:33:41,619 --> 00:33:56,099
+Güdünün tanımından bahsetmiş. Akıl ve düşücüsüden bağımsız diyerek cevabın içinde de geçmiş. O yüzden aslında ben daha skor almadan bu veri setinin biraz yüksek bir skor verebileceğini düşünmüştüm. Bu yüzden ikinci veri setini biraz daha zor bir veri seti olarak seçtim.
+
+198
+00:33:57,019 --> 00:34:09,619
+Burada da Ali Bayram Hukuk Soru Cevap Seti. Burada kullanıcıların hukukla ilgili soruları var ve buna yönelik cevaplar verilmiş ama burada sorular ve cevaplar arasında hem stil olarak bir fark var.
+
+199
+00:34:09,619 --> 00:34:37,619
+Bu da çok farklı fark var. Hem de kelimeler doğrudan aslında sonradaki kelimeler cevaplarda geçmiyor. Mesela ikiz çocuklarım anne yanında işte görüştürme vesaire demiş. Cevapta şahsi ilişki tesisi kurmanızları bile dava açabilirsiniz gibi daha profesyonel bir şekilde. Bu yüzden bunda daha zor bir verisleti olarak seçtim. Burada modellerim var. BGM3 modeli, güven 3 MBD 06 milyar parametreli model, snowflake arktik MBD.
+
+200
+00:34:37,619 --> 00:34:53,119
+Bu modeli. Embedding Gema 300 milyar parametreli model. Son iki modelim de Multilingual E5 Large ve Turkish E5 Large modeli. Burada genelde 1024 boyutlu embeddinglere sahip modellerim. Sadece Google Embedding Gema 768 boyutlu.
+
+201
+00:34:55,315 --> 00:35:02,315
+Evet, aslında genel olarak böyle özleyebilirim modellerimi. Burada deney düzenliğinde de her iki
+
+202
+00:35:02,315 --> 00:35:09,195
+dataset'ten biner örnek aldım. 6 model MaxLeng 512 olacak şekilde. Model sayfasında nasıl belirtiyorsa
+
+203
+00:35:09,195 --> 00:35:14,875
+o şekilde kullandım. Instruction kullanıyorsa o şekilde. Instruction'ın dili yine önerilen şekilde.
+
+204
+00:35:14,875 --> 00:35:18,875
+Benzerlik ölçümü, Cosinus Top 1, Top 5.
+
+205
+00:35:18,992 --> 00:35:23,652
+Önce deney sonuçlarını burada kısaca göstereceğim ama grafiklerden anlatacağım.
+
+206
+00:35:24,112 --> 00:35:34,331
+Soru cevap yönünde hem Bezir veri setinde hem de Ali Bayram veri setinde hem Top 1 hem Top 5 metriklerinde Cosmos modeli en yüksek skora aldı.
+
+207
+00:35:34,331 --> 00:35:46,992
+Cevap soru yönünde de Multiligal 5 Large modeli ile Yücece Cosmos Türkçe 5 Large modeli yine bir arada aslında en üst.
+
+208
+00:35:46,992 --> 00:35:56,471
+Bu sıralarda oldular ama ben buradan göstereceğim. Şimdi Bezir Datasetine baktığımızda aslında zaten bahsetmiştik. Yüksek skor beklediğimizi söylemiştim.
+
+209
+00:35:56,884 --> 00:36:13,384
+Burada skorlar genel olarak çok yakın. Sadece benim burada ne dikkatimi çekti? Google Embedded Gema modeli, Güven 3.06 modeli, bariz bir şekilde top 1 skoru düşük.
+
+210
+00:36:13,384 --> 00:36:24,884
+Bunu önce sebebinin mimari farkı olabileceğini düşündüm. Çünkü bu Güven 3 modeli decoder tabanlı bir model, diğerleri encoder tabanlı bir model. Ama biraz instruction diliyle de oynadık.
+
+211
+00:36:24,884 --> 00:36:52,824
+Ben Instruction dilinde İngilizce Türkçe yapınca mesela bu 0.79 olan 0.91'e çıktı. Ama yine de diğerlerinin mertebesine ulaşamadı. 0.97, 0.98 mertebesine ulaşamadı. O açıdan böyle bir dikkatimi çeken nokta var. Diğer bir nokta da burada modellerin embedding game'i hariç genelde 570-600 milyon parametre seviyesinde. Embedding game'i neredeyse yarı boyutta. Ama buna rağmen yine yakın bir skora.
+
+212
+00:36:52,884 --> 00:37:08,484
+Bu şekilde sahip olmuş. Cevap soru yönünde de yine skorları oldukça yüksek olarak görüyoruz. En iyi model, Enfluglar, Multilingar, Five Large modeli. Yine, Küven 3 modeli de burada da biraz daha geride kalmış diye geçiyorum.
+
+213
+00:37:08,820 --> 00:37:36,820
+Bu hukuk veri seti, daha zor olduğunu düşündüğüm veri seti. Skorlarda da gerçekten öyle oldu. Burada 0-4-0-6 mertebesinde genelde skor aldım. Bunun sebebi de işte sorudan cevabın ya da cevaptan sorunun seçmenin daha zor olması. Mesela diyelim kiracı ev sahibiyle ilgili bir soru sorulmuş. Bunun cevapları genelde benzer olabiliyor. Ama cevaptan soru yönüne gittiğimizde aslında daha kolay bulabiliyoruz. Çünkü cevap genelde...
+
+214
+00:37:36,820 --> 00:37:51,820
+Genelde daha profesyonel bir dille ve aslında bariz bir bilgiyi orada vermeye yönelik bir düzende. Burada da yine Yütüceye Kozmos Türk İş Five Flarç modeli önde. Burada Fine Tune bir avantaj olabilir.
+
+215
+00:37:51,820 --> 00:38:03,820
+Yani avantajdan kasıt da burada soru ve cevap arasında o stil farkını ya da işte doğrudan aynı kelimeleri içermese de oradaki bağlama yakalama anlamında Türkçe özel Fine Tune edilmesi.
+
+216
+00:38:04,179 --> 00:38:23,739
+Öne geçirmiş gibi gözüküyor. Burada da cevap soru yönünde aslında aynı veri setinin. Az önce de söylediğim gibi sorular kişiye özel, spesifik ama cevaplar daha genel. Burada da en iyi modeller Multilingual AFLarge ile yine Turkish AFLarge olarak görüyoruz.
+
+217
+00:38:23,739 --> 00:38:31,299
+Şimdi hızlıca TSM'lere geçeceğim görsellerine. Burada önce görselleri hızlıca bir göstereceğim sonra yorumlayacağım.
+
+218
+00:38:32,179 --> 00:38:40,179
+Bezir veriseti yani daha kolay olarak nitelendirdiğimiz genel soru cevap verisetlerinde ben neredeyse her modelde benzer bir dağılım gördüm.
+
+219
+00:38:40,179 --> 00:38:53,159
+Soldakilere bakalım önce. Hızlıca göstereyim. Soru ve cevaplar birbiriyle nispeten daha homojen dağılım gösterecek şekilde tüm modellerde bir dağılım göstermiş.
+
+220
+00:38:53,639 --> 00:38:56,699
+Ama aynısı hukuk verisetinde geçerli değil.
+
+221
+00:38:58,452 --> 00:39:14,692
+Sırayla gidiyorum. Burada biraz daha kümelenme görüyoruz. Özellikle bazı modellerde mesela küven 3 modelinde ya da embedding yeme modelinde artık çok daha bariz bir tarafta neredeyse sorular diğer tarafta cevaplar olacak şekilde yoğun bir kümelenme görüyoruz.
+
+222
+00:39:16,152 --> 00:39:26,452
+Snowflake'de çok o kadar bir kümelenme yok ama bu hukuk veri setinde yüksek skor alan modellerde bu kümelenmenin biraz daha az bir kümelenme.
+
+223
+00:39:26,452 --> 00:39:42,272
+Yine tabiki bezir veri setindeki kadar dağılım olmasa da en azından şuradaki yama modeli kadar bariz bir şekilde ayrışmadığını görüyoruz. Türkisch E5 Large modeli de yine bu şekilde. Burada da bunun analizlerine geçelim.
+
+224
+00:39:43,251 --> 00:39:58,692
+Ve zirveresetinde soru kısa, bilgi talebi, cevap doğrudan açıklama ve kavramlarda tekrar var. Bu yüzden aslında soru ve cevap arasında ortak konu sinyali çok daha güçlü gibi gözüküyor. Ve aynı anlamsal yerde modeller genelde değerlendirebilmiş.
+
+225
+00:40:00,000 --> 00:40:07,980
+Dili farkı çok bariz. Zaten sorularda çok daha böyle yerel bir dille. Hatta imla hataları, noktalama hataları, yazım hataları da vardı.
+
+226
+00:40:07,980 --> 00:40:18,731
+Bu yüzden ben biraz da araştırdım. Embedding modeli konu ayrımının yanında stil ayrımına da tepki vermiş gibi gözüküyor. Özellikle gemi modelinde mesela çok bariz bir...
+
+227
+00:40:18,900 --> 00:40:46,880
+Kümelenme görüyorduk. Burada tabii Embedic GEMO modelinde hem query hem de doküment için farklı yani her eksinde aslında bu bir doküman, bu bir cevap, bu bir soru şeklinde prompt veriyor. Bunun da aslında etkisi olabilir. Çünkü model aslında hangi belgeyi gördüğünü biliyor. Ve tabii dil yapısı da farklı olduğu için bu rol ayrımını görmüş oluyoruz. Yütüce, Kozmos Türkçe, Fiflerç.
+
+228
+00:40:46,900 --> 00:41:07,659
+Bu modelinde de başarı. Kümerlenme yine gösterdiğim gibi o kadar bariz değil. Soru üslubuyla cevap üslubu ya da gündelik değil, resmi dil farklarının öğrenilmiş olabilir. Soruyla cevaplar arasındaki semantik fark o yüzden diğer modeller kadar çok daha uzaklaşmamış gibi gözüktü. Benim anlatacaklarım da bu kadardı.
+
+229
+00:41:08,460 --> 00:41:10,539
+Mücadırlar, [öğrenci], [öğrenci], Sağlık.
+
+230
+00:41:11,319 --> 00:41:12,259
+Rica ederim hocam.
+
+231
+00:41:12,947 --> 00:41:15,687
+Bazılar [öğrenci] Zekaya.
+
+232
+00:42:14,675 --> 00:42:16,675
+Evet.
+
+233
+00:42:16,675 --> 00:42:18,675
+[öğrenci].
+
+234
+00:42:20,675 --> 00:42:24,675
+[öğrenci], if I may request, may I present in English, please?
+
+235
+00:42:24,675 --> 00:42:27,675
+Of course, yeah. Of course.
+
+236
+00:42:27,675 --> 00:42:30,480
+Okay. Thank you very much.
+
+237
+00:42:30,480 --> 00:42:38,480
+Bawza, benim için benzerim. Bawza, benimle başlamak için bu projeler.
+
+238
+00:42:38,480 --> 00:42:38,639
+Çok quickly, biz de bu sebeple semantik retrievali farklı modelleri onlarının Türkçes'in
+
+239
+00:42:38,639 --> 00:42:43,639
+ve bu tariflerine geçelim.
+
+240
+00:42:43,639 --> 00:42:50,840
+Öncelikle, bu tariflerine geçelim.
+
+241
+00:42:50,840 --> 00:42:54,880
+Bu tariflerine geçelim, bu tariflerine geçelim, bu tariflerine geçelim,
+
+242
+00:42:54,880 --> 00:42:58,079
+ve bu tariflerine geçelim, bu tariflerine geçelim.
+
+243
+00:42:58,516 --> 00:43:02,516
+Bu konuda bir konuda seçim var.
+
+244
+00:43:02,516 --> 00:43:04,516
+Bir konuda X-Qor data,
+
+245
+00:43:04,516 --> 00:43:08,516
+bir konuda soruları soruları
+
+246
+00:43:08,516 --> 00:43:11,516
+ve Wikipedia'a genelde enzyklopadiyelde
+
+247
+00:43:11,516 --> 00:43:13,516
+ve internet'in internet'a
+
+248
+00:43:13,516 --> 00:43:20,516
+bir konuda bir konuda
+
+249
+00:43:20,516 --> 00:43:21,516
+bir konuda
+
+250
+00:43:21,516 --> 00:43:23,516
+bu konuda
+
+251
+00:43:23,516 --> 00:43:25,516
+ve bu konuda
+
+252
+00:43:26,324 --> 00:43:35,244
+Bu konuyu örneğe, 8-12 words in the questions and 2-6 words in the answer.
+
+253
+00:43:35,244 --> 00:43:39,084
+Sometimes it even contained just one word in the answer or...
+
+254
+00:43:39,092 --> 00:44:06,539
+Bu, bu
+
+255
+00:44:33,235 --> 00:44:41,235
+Bu modelleri kullanılan bu modelleri, A5, GINA, NANO, CHI, OCTEM.
+
+256
+00:44:56,079 --> 00:45:16,576
+Bu, bu
+
+257
+00:45:16,576 --> 00:45:39,967
+Bu da bir model olarak, bu da bir model olarak daha büyük bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi bir model olarak daha iyi
+
+258
+00:45:39,967 --> 00:45:50,148
+Ama burada, bu kadar çok yaklaşık. Bu, ilk olarak çok yaklaşık. Bu, aynı zamanda top 5. Bu, bu kadar çok yaklaşık.
+
+259
+00:46:00,307 --> 00:46:05,867
+Bu tSNE'de bir tSNE'de bir çoğun bir çoğun bir çoğun bir çoğun.
+
+260
+00:46:05,867 --> 00:46:10,188
+Bir çoğun bir çoğun bir çoğun bir çoğun.
+
+261
+00:46:10,188 --> 00:46:14,748
+Bu çoğun bir çoğun bir çoğun bir çoğun.
+
+262
+00:46:14,748 --> 00:46:20,547
+Bu çoğun bir çoğun.
+
+263
+00:46:20,576 --> 00:46:26,356
+Bu nedenle bu nedenle, bu da bu da farklı bir yöre
+
+264
+00:46:26,356 --> 00:46:28,436
+bu da bu da setiyle isimdeki.
+
+265
+00:46:28,436 --> 00:46:33,275
+Bu da bu da setiyle isimdeki Wikipedia adıcılıkları
+
+266
+00:46:33,275 --> 00:46:36,956
+da bu da etkiliyordu.
+
+267
+00:46:36,956 --> 00:46:39,516
+Bu da farklı yöre,
+
+268
+00:46:39,516 --> 00:46:41,576
+bu da English, German.
+
+269
+00:46:41,576 --> 00:46:45,336
+Bu da, bu da setiyle isimdeki bu da etkiliyordu.
+
+270
+00:46:45,336 --> 00:46:48,476
+Bu da setiyle hiç bir soru var.
+
+271
+00:47:19,923 --> 00:47:30,923
+İnano modeli de aynı zamanda, bu da aynı zamanda. İnano modeli de aynı zamanda.
+
+272
+00:47:30,923 --> 00:47:33,923
+İnano modeli de aynı zamanda.
+
+273
+00:47:33,923 --> 00:47:40,923
+However, in terms of the results that we achieved, it wasn't ranking.i, but the graph looks quite good.
+
+274
+00:47:47,123 --> 00:48:15,123
+Bu bir example, bu sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorunlarımızın bir sorun
+
+275
+00:48:20,123 --> 00:48:35,123
+Bu, bu dağda.
+
+276
+00:48:35,123 --> 00:48:42,443
+Bu dağda.
+
+277
+00:48:42,675 --> 00:48:51,076
+Bu modelde de farklı birçok
+
+278
+00:48:51,076 --> 00:48:55,916
+ve bu konuyu görmek için çok büyük bir konu. Bu yüzden bu konuyu görmek için kolaylaştırma.
+
+279
+00:48:55,916 --> 00:49:01,076
+Fresnau, Fresnau, Fresnau, bir daha.
+
+280
+00:49:01,235 --> 00:49:06,775
+İngilizce, İngilizce, [öğrenci], [öğrenci], Amazon.
+
+281
+00:49:06,775 --> 00:49:07,775
+Amazon.
+
+282
+00:49:07,775 --> 00:49:14,195
+Yani, bu da görüntü, bu da aslında bu kısımları da kullanıyor.
+
+283
+00:49:14,195 --> 00:49:16,195
+Ve...
+
+284
+00:49:16,195 --> 00:49:19,195
+[öğrenci], biraz hızlı olabilir misin?
+
+285
+00:49:19,347 --> 00:49:36,248
+Okay, okay, okay. So, the same thing we see when we check the answer to question flipside. The models are hypersensitive to mirroring. That is, they repeat the same root words and grammar if they find it in the question and answer.
+
+286
+00:49:37,715 --> 00:49:44,715
+Bu ikinci data set, bu ikinci data,
+
+287
+00:50:00,000 --> 00:50:03,960
+Ve bu mutluluklar modeli,
+
+288
+00:50:03,960 --> 00:50:05,880
+bu mutluluklar modeli,
+
+289
+00:50:05,880 --> 00:50:07,679
+bu modeli turkish E5,
+
+290
+00:50:07,679 --> 00:50:09,599
+bu çok interesting.
+
+291
+00:50:11,400 --> 00:50:13,639
+Bu da bu da,
+
+292
+00:50:14,920 --> 00:50:17,599
+Bu da,
+
+293
+00:50:22,224 --> 00:50:30,424
+Türk E5-langıç model kullanıyor çünkü Türk data'a da uygulamalar.
+
+294
+00:50:41,588 --> 00:50:48,588
+Ve bu A5'in
+
+295
+00:50:48,588 --> 00:51:08,588
+Bu sorunlarla
+
+296
+00:51:11,764 --> 00:51:39,644
+All right, this is... Okay, lastly, in our data, we had some questions that contained other languages. For example, this question, we can see that it contains another language. And then, because it is an exam question, it is asking that Jumlinin Tukcheka, Shiliya, Shida, Klaida, Angisidir. And we find the answer here. But the multilingual was able to connect these two because it understood the context of this data.
+
+297
+00:51:39,764 --> 00:51:50,764
+Bu yüzden bu türkisinin e5'i yapabilecek. Bu türkisinin e5'i yapabilecek. Bu türkisinin e5'i yapabilecek. Bu aynı şekilde görmek istedik.
+
+298
+00:51:50,764 --> 00:51:54,668
+Bu aynı şekilde görmek istedik.
+
+299
+00:51:56,659 --> 00:52:10,300
+Bu, çok iyi bir soru var. Bu, bu modelden daha iyi bir soru var. Bu, bu modelden daha iyi bir soru var. Bu soru var.
+
+300
+00:52:10,300 --> 00:52:19,139
+Bu MMLU data, bu konuyu ufak verilmeyi ve kullanmak için bir münneper bir soru var.
+
+301
+00:52:19,139 --> 00:52:24,659
+Bu, bu soru var. Bu soru var.
+
+302
+00:52:24,659 --> 00:52:38,768
+Ve soru
+
+303
+00:52:38,768 --> 00:52:43,088
+Bu dağda bir modeli de aynı şekilde, Türk E5 modeli de aynı şekilde,
+
+304
+00:52:43,088 --> 00:52:45,887
+sorunlu bir sorunlu bir sorunlu.
+
+305
+00:52:45,887 --> 00:52:48,128
+Bu modeli sadece iki modeli.
+
+306
+00:52:48,128 --> 00:52:51,847
+Bu modeli de çok önemli bir modeli de kullanmak için,
+
+307
+00:52:51,847 --> 00:52:53,807
+bir modeli de kullanmak için,
+
+308
+00:52:53,807 --> 00:52:56,648
+sadece Türk modeli de kullanmak için Türkçe.
+
+309
+00:53:27,092 --> 00:53:30,652
+Ve bu şekilde bir kısım ve struktural bir kısım var.
+
+310
+00:53:30,652 --> 00:53:33,532
+Ve sonrasında, kodistik bir kısım var.
+
+311
+00:53:33,532 --> 00:53:37,492
+Bu durumda farklı bir kısım var.
+
+312
+00:53:37,492 --> 00:53:40,811
+Bir kısım var ve Türkçe kısım var.
+
+313
+00:53:41,271 --> 00:53:46,391
+Bu şekilde, modeli nasıl performans edilmiştir.
+
+314
+00:53:47,192 --> 00:53:49,072
+Bu da benim için. Çok teşekkür ederim.
+
+315
+00:53:50,572 --> 00:53:51,532
+Teşekkürler.
+
+316
+00:53:51,931 --> 00:53:52,652
+Bağızlar.
+
+317
+00:53:53,711 --> 00:53:54,572
+Eline sağlık.
+
+318
+00:53:55,347 --> 00:53:56,108
+Teşekkür ederim.
+
+319
+00:53:58,168 --> 00:53:59,688
+[öğrenci], seninle devam edelim.
+
+320
+00:54:01,947 --> 00:54:04,407
+Merhaba hocam. Hemen paylaşıyorum.
+
+321
+00:54:34,387 --> 00:54:37,728
+Evet, geldi ekranında. Başlayabilirsin.
+
+322
+00:54:37,728 --> 00:54:39,967
+Şimdi kaldırayım.
+
+323
+00:54:40,887 --> 00:54:42,567
+Ben [öğrenci].
+
+324
+00:54:45,684 --> 00:55:03,844
+PDF'e çevirmiştim de ben. İki tane Türkçe veri seti seçtim hocam. Bunları Hugging Face'ten buldum ben. İlk veri setim daha genel konular, tarih, genel kültür gibi. Veri setimden çok kısa örnekler göstereceğim nasıl göründüğüyle alakalı.
+
+325
+00:55:05,331 --> 00:55:19,511
+İlkinde 4997 tane vardı. Bunların içinden 1000 tanesini ayırdım. İkinci verisletim tıp alanıyla ilgili. Bu biraz daha zor olduğu için zaten şeyleri de düşük çıktı performansı da.
+
+326
+00:55:20,340 --> 00:55:33,260
+Tıp hastalıklar patoloji ve tedavileriyle ilgili mesela apne nedir diye soruyor. Onun cevabını alıyor gibi. Orada da 6478 tane soru cevap ikilisi vardı.
+
+327
+00:55:34,132 --> 00:55:59,092
+Bunlardan bin tane rastgele örnekten seçtim. İlk yaptığımda böyle üç sütunlu görünüyordu. Önce verinin içine baktım. Nasıl düzenlemem gerektiğiyle alakalı. Sonradan bunu question and answer olarak ikiye indirdim. Bakarsak mesela genel kültürde Şehzade Selim kiminle akrabaydı gibi. Burada sorun tamamı görünmüyor ama aşağıda tamamı göründüğü de var.
+
+328
+00:56:00,628 --> 00:56:08,748
+Apse tedavisi nedir gibi medikal tarafta da direneğe devam eden cevabı var.
+
+329
+00:56:11,428 --> 00:56:19,928
+Daha net sorular burada görünüyor hocam. Random 3 tanesini birinin içi nasıl görünüyor diye bakmak için seçmiştim.
+
+330
+00:56:21,331 --> 00:56:44,992
+Ben modelleri kullanırken siz ilk yüze girmiş 5 tane ve Cosmos'un kendi çalışmanızı istemiştiniz. Onları parametrelerine göre ve boyutuna göre aslında sıraladım. Şurada şey yapmışım. Burada E5 Small, Base ve Large diye gidiyor. E5 Small 12 katmanla, Base de öyle ama boyutu Base'in daha büyük.
+
+331
+00:56:46,804 --> 00:57:05,824
+Tatmana da boyutu da daha büyük. Bu Bici olan da Beijing Akademi'ye ait bir elelemmiş. Bu MPNet de Microsoft'undu hocam. Bu TR-E5'te Kozmoz Yıldız Teknik Üniversitesi'nin çalışması.
+
+332
+00:57:09,364 --> 00:57:29,364
+E5 tabanlı modellerde test tekst eklemek için hani query ve pasaj ekledim. Ama MP, net gibi şeylerde onları eklememe gerek olmadan devam ettim. Burada kısım üst benzerliğini hesapladık. Burada benzerliğe bakarken de bir...
+
+333
+00:57:29,679 --> 00:57:49,859
+Tahmini en doğru olan diye ilk tahmindeki doğruluk. Top 5'in içinde o doğruluk oranına girmiş mi? Top 5'e girmiş mi doğru cevap diye baktım. Önce question to answer, sonra da answer the question. Yani sorudan cevaba cevaptan soruya şeklinde baktım.
+
+334
+00:57:51,635 --> 00:58:08,135
+Önce sorulardan bahsedip sonra çok kısa şurada göstereceğim. Benim modellerimde bu Beijing modeli zaten genel Türkçe'de onu algılaması daha kolay oldu. Soru cevapları da güzel karıştırdı.
+
+335
+00:58:08,947 --> 00:58:19,647
+Tıp alanında olan da soru cevapları çok ayrıştırdığı için biraz eşleşme problemi yaşadım. O yüzden bu kadar şeyler farklı ve düşük.
+
+336
+00:58:21,687 --> 00:58:27,827
+Genel olarak performansları iyi çıktı Türkçe dilinde. Onu da şuradan gösterirsem.
+
+337
+00:58:28,500 --> 00:58:54,347
+Hesaplamalı Anlambilim dersi.
+
+338
+00:58:54,931 --> 00:59:10,512
+Türkçe modelinki de gayet güzel çıktı. Hatta Top 5'te ve Answer the Question'da da en çok performansı yüksek olan model o. Aynı şekilde medikal veride de aynı çıktı.
+
+339
+00:59:11,851 --> 00:59:19,931
+Kozmoz'un verisi en iyi sonucu vardı. Onu da şöyle gösterirsem. Bunu bir tane örnek yapmıştım soruya.
+
+340
+00:59:20,403 --> 00:59:25,643
+Hangi cevapların yüzdesi ve onların indeksinin nerede olduğunu göstersin diye.
+
+341
+00:59:27,723 --> 00:59:31,943
+Burada maviler, sorular, turuncular, cevaplar hocam.
+
+342
+00:59:32,043 --> 00:59:38,343
+Önce E5'lere baktım. Burada modelin boyutu büyüdükçe nasıl bir farklılık görünüyor diye.
+
+343
+00:59:39,263 --> 00:59:41,883
+Burada modelin boyutunun büyümesi bir tık daha iyi oldu.
+
+344
+00:59:41,883 --> 00:59:47,783
+Burada small modelde bayağı bir soru cevapları ayrıştırmıştı medikalde.
+
+345
+00:59:49,012 --> 01:00:03,291
+TR için tüm modeller iyi aslında sonuç verdi. Burada bu biraz daha yakın, eşleşme oranı daha yüksek gibi ufak bir farklılık var. Şöyle bakarsak.
+
+346
+01:00:03,632 --> 01:00:26,371
+%97'ymiş mesela E5 Small'da. Laç'ta da 97.6 çıkmış. Tap 5'te de 98.7'ye, 99.2'ye yükselmiş. Medikal daha karmaşık ve termolojisi de zor olduğu için muhtemelen soru cevapları net ayırdı ama birbirleriyle eşleştiremedi.
+
+347
+01:00:27,699 --> 01:00:38,859
+Small'da 6.9 iken Large'da bu 13.5'e çıkmış. O katman ve parametre sayısının artması muhtemelen daha iyi bir sonuç verdi diye yorumladım.
+
+348
+01:00:41,279 --> 01:00:48,979
+Yıldız Teknik'in, yani Kozmoz'un modelini ayrı tuttum. Onun dışında kalan modellerin hepsini aynı yerde göstermeye çalıştım.
+
+349
+01:00:49,679 --> 01:01:02,099
+Burada yine üst tarafta medikali görüyoruz. Bu birbirlerine uzak olması zaten sonuçların iyi olmadığı yönünde bir çıkartım yapacağız.
+
+350
+01:01:04,679 --> 01:01:09,940
+Kozmozunkine bakarsak o medikalde de diğerlerine göre daha iyi sonuçlar verdi.
+
+351
+01:01:09,940 --> 01:01:15,940
+Zaten TRD'de de iyi harmanlanmış.
+
+352
+01:01:16,692 --> 01:01:27,811
+Diyebilirim. Sonuç soru ve cevapları bulma ihtimali, eşleşme ihtimali diğerlerinden daha yüksekti. Medikal'de de %33 gibi.
+
+353
+01:01:28,208 --> 01:01:40,648
+Bir şeydi sanırım. Şuradan hemen bakayım hocam. Top 1'de %18'de bulurken, top 5'de %37'ye çıkmış. Bu diğer modellerden daha yüksek.
+
+354
+01:01:41,168 --> 01:01:48,648
+Türkçe dinine özgü bir model olduğu için tip alanındaki verileri de daha iyi algıladı diyebilirim.
+
+355
+01:01:50,768 --> 01:01:53,028
+Benim sunumum bu kadar hocam.
+
+356
+01:01:55,155 --> 01:01:57,815
+Teşekkürler [öğrenci]. Eline sağlık.
+
+357
+01:01:59,496 --> 01:02:00,395
+Rica ederim hocam.
+
+358
+01:02:00,735 --> 01:02:03,875
+Evet, [öğrenci]'den sonra [öğrenci] ile devam edelim. [öğrenci].
+
+359
+01:02:08,500 --> 01:02:18,900
+Merhaba Hocam. Merhaba [öğrenci]. Biraz böyle uzaktan geliyor ama.
+
+360
+01:02:25,811 --> 01:02:29,811
+Biraz daha gür bir sesle konuşursan herhalde çok sıkıntı olmaz.
+
+361
+01:02:30,811 --> 01:02:36,811
+Hocam kültüphaneden başka bir yer bulamadım da o yüzden bireysel odada ancak ne kadar uyuracak.
+
+362
+01:02:38,811 --> 01:02:42,811
+Yani mikrofonsuz konuşsan daha iyi olabilir.
+
+363
+01:02:43,811 --> 01:02:45,420
+Tamam bir saniye.
+
+364
+01:02:50,931 --> 01:02:53,931
+Şimdi daha iyi mi? Evet daha iyi.
+
+365
+01:02:57,931 --> 01:03:04,931
+Şimdi öncelikle benim kullandığım veri setleri şu şekildeydi.
+
+366
+01:03:05,931 --> 01:03:09,931
+Avometre veri setini seçtim ilk olarak.
+
+367
+01:03:16,340 --> 01:03:28,640
+Soru ve cevaplardan oluşan bir veri seti. Ama soru ve cevaplar genellikle aynı kelimeleri içeriyor ve biraz daha eşleşmeyi kolaylaştıran bir veri seti.
+
+368
+01:03:28,640 --> 01:03:37,240
+Diğer veri seti ise T-Quad. Bunda ise örnek olarak bu şekilde sorular var.
+
+369
+01:03:41,204 --> 01:03:52,824
+Soru-cevap eşleşmeleri daha az. Cümleler birazcık daha farklı. O nedenle biraz daha zor bir veri seti.
+
+370
+01:03:54,903 --> 01:04:04,903
+Modellerim ise sizin dediğiniz şekilde ilk yüz içerisinden seçtim bunları da.
+
+371
+01:04:05,684 --> 01:04:30,524
+Bazılarının özel yönergeye ihtiyacı var. Onlara query passage şeklinde prefixler verdim. Sadece Cosmos modelinde Instruct istiyordu. Diğerlerinde yoktu benim seçtiğim modellerden.
+
+372
+01:04:33,556 --> 01:04:44,996
+Burada uyguladığım adımları anlatmak istedim. Öncelikle metin temizleme yaptım. Böylelikle daha kolay test edebilirim diye düşündüm.
+
+373
+01:04:44,996 --> 01:04:58,275
+İşte boşlukları normalize etme gibi şeyler yaptım. Daha sonra da modeli özgü prefiks atamalarını yaptım.
+
+374
+01:05:00,371 --> 01:05:01,971
+Öğneğin.
+
+375
+01:05:05,844 --> 01:05:21,844
+Burada feyiz kütüphanesini kullanmıştım. Onun belli ayarlamaları vardı. Mesela float32 ayarını yapmam gerekiyordu. Daha sonra...
+
+376
+01:05:24,500 --> 01:05:44,019
+Contiguous sanırım. Öyle bir belleklerin düzgün belirlikteki belirlerin düzgün sıralı olması gerekiyordu falan gibi ayarlar yaptım. Bu kütüphanede döküman havuzunun ilk çarpım uzayında indekslenmesi için kullandım.
+
+377
+01:05:47,155 --> 01:05:53,956
+Index Flat IP diye bir sınıf var. Bu sınıfta inner product kullanılıyor.
+
+378
+01:05:55,476 --> 01:06:08,235
+Bunda da ben şey yaptım, Mühendisliği normalize ettim ve böylelikle Cosin Simility yapabilmiş oldum. Yani Cosinus benzerliği uygulayabilmiş oldum.
+
+379
+01:06:10,235 --> 01:06:14,755
+Daha sonra iki yönlü
+
+380
+01:06:15,123 --> 01:06:18,443
+Top 5 araması yaptım ben de aynı şekilde.
+
+381
+01:06:18,963 --> 01:06:22,803
+Sorudan, cevaplardan sorulara.
+
+382
+01:06:25,363 --> 01:06:32,523
+Daha sonra da birebir string eşleşmesi üzerine doğruluk ölçümü yaptım.
+
+383
+01:06:34,843 --> 01:06:41,743
+Burada bir de büyük harf, küçük harf olayına dikkat etmek istedim.
+
+384
+01:06:43,699 --> 01:07:09,939
+Burada da biraz kosünüs benzerliğinden bahsetmiştim. Buraya geçebilirim. Sonuçlarım şu şekildeydi. Vg modelinde ilk olarak TSNI grafiği ile gösterdiğimizde Avometre dataset'inde daha fazla
+
+385
+01:07:10,708 --> 01:07:19,108
+Homojen bir dağılgımı gözlemledim. Diğer zor olan modelimde ise daha fazla ayrışma olduğunu gözlemledim.
+
+386
+01:07:19,108 --> 01:07:33,347
+Diğer Multilingual E5 Large modelimde de aynı şekilde. Fakat biraz daha T-Quad'da biraz daha ayrışma gözlemledim.
+
+387
+01:07:35,059 --> 01:07:46,059
+E5 Bass'de de aynı şekilde. Avometre'de daha homojen bir dalım ve diğerinde daha semantik ayrışma gözlemledim.
+
+388
+01:07:50,195 --> 01:08:06,695
+Möjlingü Mpnets Base V2 modelimde ise yine aynı şekilde birinde homojen, birinde semantik ayrışma var ama birazcık daha başarılı bir sonuç görüyoruz ikinci sınavlara baktığımızda.
+
+389
+01:08:08,536 --> 01:08:10,695
+Snowflake'de ise...
+
+390
+01:08:11,347 --> 01:08:19,347
+Daha fazla ayrışma gözlemliyoruz. Diğerinde yine homojen. En başarılı Kozmoz modeli oldu.
+
+391
+01:08:19,347 --> 01:08:25,347
+Kozmoz modelinde birazcık daha homojen değerler elde edebildim ikisinde de.
+
+392
+01:08:25,347 --> 01:08:34,347
+Bir de sorudan cevabı şeklinde de göstermek istedim. Burada da şunu gözlemledim.
+
+393
+01:08:39,731 --> 01:08:59,131
+Burada da şunu gözlemledim. Sorudan cevaba ve cevaptan soruya baktığım şeklinde bazı farklılıklar olduğunu gözlemledim. Cevaptan soruya olduğunda modeller daha iyi sonuç verdi.
+
+394
+01:09:07,764 --> 01:09:12,744
+Cümleler içerdiği için diye düşündüm bunu ya öyle yorumladım.
+
+395
+01:09:17,363 --> 01:09:33,743
+Avometre de de bu şekilde. Bu şekilde sorudan cevaba daha iyi bir sonuç var. Cevaptan sonra da birazcık daha düşük bir sonuç aldım.
+
+396
+01:09:46,292 --> 01:09:52,292
+Metinden uzun ve bağlamsal soru köküne ulaşmak bilgi kaybı nedeniyle biraz daha zor oluyor.
+
+397
+01:09:52,292 --> 01:10:01,292
+Sonuçlarım da şöyle. Farklı modeller arasında bilgin performans farklılıkları var.
+
+398
+01:10:01,292 --> 01:10:08,292
+Şöyle, Kozmoz modelinde Türkçe...
+
+399
+01:10:11,123 --> 01:10:17,484
+Türkçe verileri daha iyi anladım, gözlemledim.
+
+400
+01:10:26,195 --> 01:10:31,195
+Bir de Instruction ve Tasker modeller için daha başarılı olduğunu gözlemledim.
+
+401
+01:10:33,195 --> 01:10:43,195
+Daha sonra sorudan cevaba ve cevaptan soruya modellerde de yine farklılık gözlemledim.
+
+402
+01:10:44,195 --> 01:10:50,195
+Bazı modellerin Tab 1 doğru düşük olsa Tab 5 için de daha başarılı olduğunu gözlemledim.
+
+403
+01:10:53,235 --> 01:11:03,095
+Bir de veri kümesine bağlı olarak hepsinde başarı kabiliyetinin değiştiğini gözlemledim.
+
+404
+01:11:03,095 --> 01:11:20,095
+Veri kümesi daha eşleşmeye uygun olduğu zaman, sorular ve cevaplar içerisinde daha aynı kelimeler bulunduğu zaman daha başarılı sonuçlar gözlemledim.
+
+405
+01:11:22,292 --> 01:11:24,932
+Bu kadar da dinlediğiniz için teşekkür ederim.
+
+406
+01:11:25,972 --> 01:11:27,552
+Teşekkürler [öğrenci].
+
+407
+01:11:33,939 --> 01:11:35,819
+[öğrenci].
+
+408
+01:11:37,140 --> 01:11:38,220
+Buradayım.
+
+409
+01:11:39,500 --> 01:11:40,260
+Paylaşıyorum.
+
+410
+01:11:49,652 --> 01:11:53,412
+Direkt veri kümesinden başlıyorum.
+
+411
+01:11:54,471 --> 01:11:55,332
+Tamamdır.
+
+412
+01:11:56,471 --> 01:12:06,692
+İlk veri kümesi hukukla ilgili.
+
+413
+01:12:07,091 --> 01:12:08,752
+Bu veri kümesinde...
+
+414
+01:12:09,684 --> 01:12:28,703
+Yargıtay kararları, mevzuat ve hukuki makalelerden derlenmiş 18.305 çift soru-cevap çifti var. Bundan bin tanesini seçtim ve bu veri kümesinin özelliği de resmi ve teknik bir dile sahip olması.
+
+415
+01:12:38,100 --> 01:12:57,860
+Soru cevap olarak yine 6396 çift var. Bunda da ek olarak bir sütun daha vardı soru tipi diye. Onda da işte kontekstü, analitik, faktü diye çeşitli sorular var.
+
+416
+01:13:04,948 --> 01:13:24,188
+Hani soruda ve cevapta genelde aynı kelimeler geçiyor. Mesela işte istihkak davasının amacı nedir? İşte istihkak davasının amacı haksız olarak elde bulundurulan malın geri alınmasıdır diye bir cevap vardı.
+
+417
+01:13:29,876 --> 01:13:48,276
+Mustafa Kemal Paşa neden Kula'dan Bursa istikametinde harekete mecbur kalmıştır diye. Onun cevabı da biraz daha uzun. Burada sorular daha kısa, cevaplar daha uzun. Seçtiğim modeller de bu şekilde.
+
+418
+01:13:49,908 --> 01:14:06,568
+Burada E5 ailesinde bir prefiks vermemiz gerekiyor. Modelin ne olduğunu anlamamız için. En sonundaki de zaten Türkçe üzerinde fine-tune edilmiş bir model.
+
+419
+01:14:08,167 --> 01:14:15,568
+Yöntem olarak da önce veriyi hazırladık. Sonra da vektörlere dönüştürüyoruz.
+
+420
+01:14:15,920 --> 01:14:33,559
+Prefiks gerekenlere prefiksi ekliyoruz ve benzerliği ölçüyoruz. Daha sonra da bu cevap gerçekten doğru cevap mı veya gerçek cevap ilk beşte var mı? Daha sonra da grafikleri oluşturdum.
+
+421
+01:14:35,500 --> 01:14:43,239
+Bu Love Veri Set'inin sonucu, şurada grafiklerden göstereyim.
+
+422
+01:14:44,020 --> 01:14:55,739
+Burada genelde yüksek, bayağı bir yüksek ve benzer sonuçlar var. Çünkü direkt soruda geçen kelime cevapta da geçiyor.
+
+423
+01:14:56,739 --> 01:15:04,600
+Ve cümle yapıları da benzer resmi ve teknik bir dil kullanıldığı için böyle yüksek sonuçlar elde ettim.
+
+424
+01:15:04,600 --> 01:15:10,619
+Yalnız şu parafraze denilen modeller biraz daha düşük kaldı.
+
+425
+01:15:12,467 --> 01:15:27,087
+Hani bunlar soru-cevap görevine değil de cümleleri başka kelimelerle ifade etme görevine daha uygun modeller, profrez modelleri. O yüzden bunlar biraz düşük kaldı.
+
+426
+01:15:28,368 --> 01:15:37,728
+Nutuk daha biraz buna göre düşük çünkü nutukta daha eski kelimeler geçiyor ve
+
+427
+01:15:38,228 --> 01:15:47,648
+Cevapları da sorulara göre daha uzun. Bu parafrazler de az önce dediğim nedenden dolayı daha düşük kaldı.
+
+428
+01:15:48,827 --> 01:16:03,787
+Buraya baktığımız zaman da genelde zaten sonuçlar da yüksek çıktığı için şu kahverengi olanlar üst üste gelmesi demek oluyor. Şu mavilerle sarları.
+
+429
+01:16:05,427 --> 01:16:24,947
+Bazı yerlerde belirgin bir kümelenme olabilmiş ama onlar da işte benzer kelimelerden, aynı kelimelerden dolayı zaten sonuçlar da yüksek çıktığı için böyle bir üst üste gelmesi de beklediğimiz bir şeydi.
+
+430
+01:16:29,747 --> 01:16:45,927
+Hatta çoğunda böyle ayrı ayrı bir kümelenmeler gördüm. Bunun sebebi de şey olabilir, aynı konu mesela Kurtuluş Savaşı konusuyla ilgili sorular ve cevaplar ayrı bir yere kümelenmiş gibi düşünebiliriz.
+
+431
+01:16:47,108 --> 01:16:56,327
+Yorumlara bakacak olursak da neden bu low sonuçları Nutu'a göre daha iyi çıktı, bunu da aslında söyledim.
+
+432
+01:16:57,300 --> 01:17:07,580
+Çünkü hukuk veri setinde her soru genellikle özgün bir hukuki kavramı cevaplıyor.
+
+433
+01:17:08,320 --> 01:17:19,000
+Nutuk'ta ise aynı tarihi olaya dair birden fazla soru sorulmuş ve savaş, cephe mücadele gibi kelimeler pek çok soru da ve cevap da geçiyor.
+
+434
+01:17:19,604 --> 01:17:28,884
+Bu yüzden de doğru çifti ilk sırada bulamayabiliyoruz. Yani bu hukukla ilgili olan verisi de daha ayırt edici.
+
+435
+01:17:29,964 --> 01:17:33,884
+Model mimarisi etkisine baktığımızda da...
+
+436
+01:17:34,515 --> 01:17:58,755
+Bu parafraze modelleri daha doğrusu daha düşük başarı verdiler. Çünkü aynı anlama gelen ama farklı ifade edilmiş cümleleri eşleştirmek için eğitilmiş modeller bunlar. Bizim istediğimiz, yani bizim bu ödevdeki görevimiz soruyla cevabı eşleştirmek olduğu için.
+
+437
+01:18:01,076 --> 01:18:20,555
+Düşük sonuç verdiler. Türkçe'ye özel model etkisine baktığımızda da, Notuk'ta bu Türkçe'ye özel model daha yüksek bir sonuç verdi.
+
+438
+01:18:21,555 --> 01:18:48,435
+Nutuk'ta ne kadar eski kelimeler geçse de günümüzde kullandığımız kelimeler de yoğun ve bunun Türkçe'ye özel eğitim bir model kullanmak da işimize yaradı. Ama her Türkçe'ye özel model de domeyne göre iyi sonuç verebilirdi. Sonuncusu da prefiks etkisi.
+
+439
+01:18:49,971 --> 01:18:59,071
+Yani biz bu prefiks modele verdiğimizde modelin zaten o metni nasıl anlayacağını biraz söylemiş oluyoruz.
+
+440
+01:19:00,251 --> 01:19:09,731
+Model boyutu etkisi olarak da, Lauda, i5, Large ve i5-base aynı skoru verdi.
+
+441
+01:19:10,611 --> 01:19:13,692
+Yani hani illa daha büyük bir model.
+
+442
+01:19:15,536 --> 01:19:29,896
+İlla en büyük, yani çok büyük bir modeldi. İlla onu seçmemize gerek yok. İşimize göre daha küçük bir modeli de seçmemiz daha uygun olabilir.
+
+443
+01:19:31,416 --> 01:19:40,876
+Soru-cevap veya cevap-soru olarak baktığımızda da bazı durumlarda cevaptan soruya kategorisi daha yüksek sonuç verdi.
+
+444
+01:19:41,300 --> 01:19:52,460
+Bu da cevaplar sorulardan uzun olduğu için daha uzun metinde daha fazla bilgi içeriyor ve bu sayede daha ayırt edici oluyor.
+
+445
+01:19:53,720 --> 01:19:55,680
+Benim anlatacaklarım bu kadardı.
+
+446
+01:19:58,420 --> 01:20:00,100
+Teşekkürler [öğrenci].
+
+447
+01:20:02,240 --> 01:20:06,300
+Evet, bir başka [öğrenci]'ya geçiyoruz. [öğrenci].
+
+448
+01:20:08,787 --> 01:20:09,887
+Merhabalar hocam.
+
+449
+01:20:10,407 --> 01:20:10,907
+Merhaba.
+
+450
+01:20:11,648 --> 01:20:12,527
+Paylaşım yapıyorum.
+
+451
+01:20:21,908 --> 01:20:25,488
+Arkadaşım [öğrenci] ile birlikte sunacağız.
+
+452
+01:20:29,043 --> 01:20:37,083
+Merhaba. Bir [öğrenci] daha. Madallere geçebiliriz istersen.
+
+453
+01:20:41,555 --> 01:20:47,755
+Hocam, şimdi ilk başta modellerden hızlıca bahsedeyim. Hangi modelleri tercih ettik?
+
+454
+01:20:48,355 --> 01:20:55,815
+1 milyar parametrenin aşağısında retrieval problemlerinde başarılı sonuçlar vermiş olan E5 modelleri.
+
+455
+01:20:55,815 --> 01:21:00,835
+Türk İş E5'ler, ondan sonra Multilingual E5'ler modelleri var.
+
+456
+01:21:01,795 --> 01:21:05,215
+Parafraz Multilingual MP'nin bir modülü var.
+
+457
+01:21:05,715 --> 01:21:09,555
+QVAN'in ve bir de BG M3 modellerin.
+
+458
+01:21:09,555 --> 01:21:19,555
+örneğe deney kapsamında kullanmış olduk. Türk İş E5 Cosmos'un Türkçe üzerinde özelleştirdiği, fine tune ettiği bir model. Buna bir görev ataması yaparak aslında
+
+459
+01:21:20,467 --> 01:21:39,328
+ilgili sorudan ilgili cevabı getirmesini istedik. Onun dışında çok dilli E5, Large ve Base modeller var. Bu da yine aslında parametre açısından karşılaştırma yapmamızı sağladı ve çok dilli modellere örnek olarak kullanmak istedik.
+
+460
+01:21:39,328 --> 01:21:47,507
+Parafraz Multilingual modelinde ise semantik anlam benzerliğine esas alan bir model söz konusu burada. Espart olan.
+
+461
+01:21:48,467 --> 01:21:59,387
+Bu küvende de yine Embedding modeli, küven 3'ün Embedding modeline 0.6 milyonluk, yani 600 milyon parametreli modelini kullanmış olduk.
+
+462
+01:22:00,328 --> 01:22:07,488
+Bir de sonuncu olarak da yine BGE modelin M3'te multilingual olan şeyi kullandık.
+
+463
+01:22:07,488 --> 01:22:15,088
+Buradaki M3 ifadesi çok dilli, çok işlevsel, çok boyutlu, biraz daha farklı bir model diğerlerinden karşımıza çıkıyor.
+
+464
+01:22:16,083 --> 01:22:25,043
+Bu modeller üzerinde veri kümelerinde 3 tane veri kümesi kullandık. Hali hazırda çalıştığım veriler de zaten üzerinde.
+
+465
+01:22:25,724 --> 01:22:39,064
+Türk Hizquid, Wikirektr ve Wikipedia veri kümeleri. Buradan aslında 2 tane veri kümesi almamızı söylemiştiniz ama ben merak ettim sonuçlar nasıl olacak diye biner tane veri alıp üzerine deneysel çalışmalarımızı yaptık.
+
+466
+01:22:39,684 --> 01:22:43,384
+Türk Hizquid veri seti zaten Türkçe üzerinde özelleşmiş.
+
+467
+01:22:44,083 --> 01:22:58,083
+Bu, eksel verilerden, soru cevap verilerinden oluşan veri hükümesi. Wikipedia bildiğimiz gibi geniş kapsamlı, genel Wikipedia verilerinden oluşmuş, retrieval problemlerinde kullanılan bir veri hükümesi.
+
+468
+01:22:58,083 --> 01:23:04,083
+Wikireg'de ise biraz daha farklı olarak burada aslında retrieval problemlerinde kullanılan bir veri hükümesi.
+
+469
+01:23:04,083 --> 01:23:08,083
+Olar karşımıza çıkıyor. Aslında bunu da eklemek güzel oldu.
+
+470
+01:23:12,083 --> 01:23:13,899
+sağlamış oldu.
+
+471
+01:23:14,355 --> 01:23:41,855
+Onun dışında yöntemlerimiz TAP1, TAP5 var. TAP1 modelin ilgili sorun cevabını direkt birinci sırada bulabiliyor mu, eşleşebiliyor mu bunu bize gösteriyor. TAP5'te ilk 5 sonuç içerisinde bizim doğru cevabımız var mı bunu göstermiş oluyor. Bir de yine sorudan cevaba, cevaptan soruya semantik tutarlılık sağlanıyor mu? Yine aynı şekilde iki yönlü olarak bunu sağlayabiliyor muyuz?
+
+472
+01:23:42,355 --> 01:23:44,655
+Deneylerini gerçekleştirmiş olduk.
+
+473
+01:23:46,003 --> 01:24:10,224
+Bir de şurada bu sonuçlar kısmında ilk başta bizim bir skor tablolarımız var. Sonra görselleştirmelerimiz var. [öğrenci] arkadaşım burada devam edecek ama ben burada 3 veri kümesini kullandığımızdan bahsetmiştim ve bir veri kümesi biraz daha farklıydı. Sonuçlarda da daha bariz bir farklılık elde ettik. O da Vekirek veri kümesi üzerinde yapılmış olan şeylerde.
+
+474
+01:24:10,899 --> 01:24:28,119
+Deneylerde model fark etmeksizin hepsinde çok iyi sonuç aldık. Hem de böyle 99-100 civarı sonuçlar aldık. Onun dışında diğerlerine baktığımız zaman çok daha farklı sonuçlar alındığını görüyoruz. Biraz daha Wikipedia yüksek olsa da yine modeller arasında belirleyici farklılıklar var.
+
+475
+01:24:38,899 --> 01:24:55,079
+Bize çok steril bir ver hükümesi sunmuş oluyor. Nasıl yani? Bizim zaten sorularımız veya cevaplar sorularla direkt ilintili şeyler olduğu için, semantik olarak veya farklı bağlamlarda benzerliği çok yüksek olduğu için,
+
+476
+01:24:55,079 --> 01:25:06,479
+zaten retrievalı çok daha kolay bir şekilde ilgili soruya ilgili cevap çok çabuk bulunmuş oluyor. Bu da diğer ver hükümelerinden farklı olarak.
+
+477
+01:25:06,899 --> 01:25:20,640
+Bizim deneylerde gördüğümüz farklılık. Bunların tabii ki de Mbidinkleri de birbirine çok yakın şekilde seyredecek. Bunu diğer veri kümeleri ile de aslında karşılaştırdığımız zaman sonuçlarını göreceğiz. Ben de [öğrenci] arkadaşıma bırakayım.
+
+478
+01:25:23,828 --> 01:25:34,468
+Merhabalar. Şimdi genel olarak tabloya baktığımızda, Türkis Quad ve özellikle Wikipedia'da Türkçe E5larç modelinin diğer modellere bir üstünlük sergildiğini görüyoruz.
+
+479
+01:25:35,008 --> 01:25:39,948
+Burada bunun nedeni de [öğrenci]'in de bahsettiği gibi Türkçe için özelleştirilmiş model olması diyebiliriz.
+
+480
+01:25:39,948 --> 01:25:49,088
+Diğer multilingual modellerin Türkçe için spesifik olarak özelleştirilmiş dil konularında daha sınırlı kaldığı görülüyor.
+
+481
+01:25:51,828 --> 01:26:09,668
+Baktığımızda tabbir ve tabbeş, qa tabbir ve eq tabbir başarılarına bir düşüş olan modeller var. Bunun nedeni ise, az sonra question'a geçişte cevap metnin daha geniş bir bağlam sunması modelin aynı cevaptan çok tane soru oluşturulabilmesi.
+
+482
+01:26:10,927 --> 01:26:14,907
+Nedeniyle işte modelin zorlanması, zorlanabileceği anlamına geliyor.
+
+483
+01:26:15,847 --> 01:26:23,787
+Aslında genelde modeller basit bir sorunun yoğun bir metni semantik özünü anlaması amacıyla, eşleştirmesi amacıyla eğitiliyor.
+
+484
+01:26:24,207 --> 01:26:28,027
+Dolayısıyla Question Answer'da bu modeller daha başarılı olabiliyor.
+
+485
+01:26:28,447 --> 01:26:36,307
+Çünkü öte yandan Answer'dan Question'a bakıldığında yoğun metinden yola çıkarak sade bir soruya yakın seçmek vektör konumu olarak modeller zorlanabiliyor.
+
+486
+01:26:38,927 --> 01:26:55,107
+ve kıvam modellerinde burada bir olumlu yönde iyileşme gözlemleniyor. Bunun nedeni ise örneğin BGM3'ün Answered and Question'a da bakabilme özelliğine kaynaklanıyor. Yani model çoklu vektör yapılarıyla eğitildiği için bu ona avantaj sağlıyor burada.
+
+487
+01:26:56,227 --> 01:27:06,927
+Ayrıca uzun olan Answered metnin daha geniş özellik seti kullanarak da kodlayabilme yeteneğine sahip bu model. Ki az önceki metinde de bu modelin...
+
+488
+01:27:06,927 --> 01:27:16,947
+Kısa girdiden uzun girdiğe kadar gir metin yani girdilere daha iyi eşleyebilme yeteneğinden, işleyebilme yeteneğiyle ön plana çıkan bir model.
+
+489
+01:27:17,555 --> 01:27:36,376
+olduğunu söyleyebilirim. Yani bazı modeller soruyu merkeze alıp onun etrafında cevap ararken ki bu simetrik bir yön oluyor. BGM3 günü modeller ise asimetrik yönden de bakabiliyor. Bu yetenekleri ön plana çıkıyor. Wikipedia'ya baktığımda ise M-Phrase ve QWAM modellerinde
+
+490
+01:27:38,036 --> 01:27:49,376
+Bir olumlu yönde artış gözlemleyebiliyoruz. Burada QN3 modelinin yapısı itibariyle zaten bağlama anlamında güçlü bir model olarak ön plana çıktığı görülüyor.
+
+491
+01:27:49,756 --> 01:27:56,636
+MPNet'in ise yine iki metin arasındaki benzerliği yön bağımsız olarak güçlü bir şekilde yapabildiğini görebiliyoruz.
+
+492
+01:27:56,996 --> 01:28:05,636
+Ayrıca burada MPNet'in ön plana çıkmasının bilgisayar nedeni de Wikipedia veri setinin daha dengeli yapıda olmasını...
+
+493
+01:28:06,036 --> 01:28:25,876
+Söyleyebilirim. Onun dışında Turisquat'ta ise modellerin daha başarısız olmasının nedeni ise tarihsel metinlerden kaynaklı olduğunu söyleyebiliriz. Çünkü bu metinler dil ve içerik bakımından daha karmaşık olabiliyor ve modeller burada etersiz kalabiliyor. Başka TCNA'ları göstereyim hocam hızlıca.
+
+494
+01:28:27,764 --> 01:28:53,503
+Şurada genel olarak modellerin bu veri setinde soru ve cevapların vektöre olarak yakın konumlandırmada zorlandıklarını görüyoruz. Wikipedia'da ise daha dengeli bir yapı söz konusu oluyor. Wikirak'ta ise en iyi eşleşmeyi sergilediğini gözlemleyebiliyoruz. Bu kadar söyleyebilirim hocam. Daha fazla bir şey gelmedi aklıma açıkçası.
+
+495
+01:28:53,503 --> 01:28:55,764
+Teşekkürler. Elinize sağ olun.
+
+496
+01:29:03,315 --> 01:29:04,576
+[öğrenci] ile devam edelim.
+
+497
+01:29:10,163 --> 01:29:13,063
+Merhaba hocam, sesim geliyor mu? Geliyor [öğrenci].
+
+498
+01:29:14,063 --> 01:29:15,163
+Bir saniye.
+
+499
+01:29:27,764 --> 01:29:45,764
+Ekranımı görüyor musunuz acaba? Evet geldi. Başlayabiliriz. Başlar hızlı hızlı geçiyorum. Ben iki veri set olarak T-Quad ve X-Quad'ın TR halini kullandım. İngilizce'den çok çeşitli bir hali. Yine klasik vektörsel...
+
+500
+01:29:47,188 --> 01:29:48,427
+Vektör dönüştürme.
+
+501
+01:29:48,427 --> 01:29:49,528
+Buraları geçebilirsin.
+
+502
+01:29:49,788 --> 01:29:51,047
+Buraları geçiyorum.
+
+503
+01:29:52,208 --> 01:29:59,047
+Burada modellerim var. Zaten bir çoğunu arkadaşlarımda kullandı. Tekrardan açıklamadan ilerliyorum.
+
+504
+01:30:00,000 --> 01:30:17,159
+Top 1 ve Top 5 başarıları bu şekilde T-Quad ve X-Quad veri setlerinde. T-Quad veri seti biraz daha spesifik bir konuda olduğu için sanırım başarısı biraz daha düşük gözüküyor X-Quad'a göre. X-Quad'da direkt daha basit soru-cevaplar şeklinde devam ediyordu.
+
+505
+01:30:28,000 --> 01:30:50,199
+T-quad veri setindeki TSN grafiklerini görmektesiniz benim çalışmamda. Yıldızdaki Cosmos E5 modeli diğerlerine göre daha homojen bir sonuç çıkardı.
+
+506
+01:30:51,731 --> 01:31:09,971
+Bilgisayar olarak, istatistik olarak sonuçlarına da yansımış durumda gördüğümüz kadarıyla. Burada iç içe bir dağılım görüyoruz. Multilangül E5'te de şöyle keskin bir ayrım var gibi. Sol tarafta tamamen sorular ve sağ tarafta tamamen cevaplar şeklinde.
+
+507
+01:31:10,836 --> 01:31:20,136
+Burada prefiks sinyali, az önce bahsettiğim E5'lerde kullanılması gereken prefiks sinyali, anlamsal içeriğin önüne geçmiş gibi daha çok.
+
+508
+01:31:20,136 --> 01:31:29,036
+Ve model konu değil, soru ve cevap şeklinde kategorize ediyor biraz buradaki vektörleri.
+
+509
+01:31:29,036 --> 01:31:35,636
+BGE M3 modelinde de yine bu ortada bir iç içe geçme söz konusu.
+
+510
+01:31:35,680 --> 01:31:40,180
+Ama yine aynı şekilde sol tarafta izole bir kırmızı ve sağ tarafta izole bir mavi var.
+
+511
+01:31:42,180 --> 01:31:49,180
+MPNet modelinde de burada aslında biraz izole, hani iç içe geçme, homojen bir dağılım gibi duruyor ama
+
+512
+01:31:49,180 --> 01:31:58,180
+şuradaki mesela cevap kümesi ve hepsinin böyle iç içi olması burada aslında MPNet modelinin biraz başarısını etkiliyor gibi.
+
+513
+01:31:58,180 --> 01:32:01,180
+Yine genel bir ayrılışıma belirgin.
+
+514
+01:32:02,003 --> 01:32:14,844
+Tilyus Multiling Yolu modelinde de aslında baktığımız zaman diğerlerine göre daha sert bir ayrışma var. Şu şekilde ve ortada biraz boşluk da var. Sorular ve cevaplar birbirinden belli bir şekilde ayrı.
+
+515
+01:32:15,323 --> 01:32:21,524
+Lapse modelinde de yine aynı şekilde sol, mavi, sağ, kırmızı yapısı var ama yine aralarda homojen bir dağılım söz konusu.
+
+516
+01:32:24,692 --> 01:32:33,131
+Bu da X-Quad veri setinde. Yine az önceki ne benzer şekilde, bir önceki slide'da ne benziyor aslında dağılımlar.
+
+517
+01:32:33,131 --> 01:32:39,791
+X-Quad-TR veri setinde de yine aynı şekilde en homojen dağılım GT-Cosmos-E5 modelinde.
+
+518
+01:32:42,868 --> 01:32:54,568
+Xquad'ın biraz veri seti yapısından ötürü kısa entity cevapları soruları dışa itmiş gibi gözüküyor. En dış çeperde daha çok sorular var, mavi noktalar var.
+
+519
+01:32:54,568 --> 01:33:03,368
+Multilingual Y5'te yine Tquad'dakine benzer şekilde iki blok yapısı mevcut. Belirgin bir kütle ayrışması var.
+
+520
+01:33:08,243 --> 01:33:28,243
+Homojen bir dağılım var ama ilk TakeWatt'taki kadar değil. Aynı şekilde MPNet ile devam edeyim. Burada yine görmüş olduğunuz gibi sıfır sıfır bölgesinde bir cevap yığılması söz konusu. Bu homojen gibi gözüküyor ama bu modelin başarısını çok düşüren bir şey olduğunu düşünüyorum. Çünkü...
+
+521
+01:33:28,787 --> 01:33:36,447
+Sayısal olarak Top 1 ve Top 5 skorları biraz daha düşük geliyor bunun. Bu homojen gözükmesine rağmen.
+
+522
+01:33:37,547 --> 01:33:45,107
+Digitalus'da da yine aynı şekilde belirgin bir ayrışma var. Hatta burada ayrı bir cevap kömesi de mi çıktı ortaya?
+
+523
+01:33:46,727 --> 01:33:50,327
+Labse modelinde de yine az öncekine benzer bir sonuç elde ettik.
+
+524
+01:33:51,767 --> 01:33:55,367
+Burada X-Quad veri setindeki cevaplar biraz daha kısa olduğu için.
+
+525
+01:33:55,988 --> 01:34:03,667
+Cevapları çok yakın vektörleriz vektörüze etmiş gibi.
+
+526
+01:34:03,667 --> 01:34:12,228
+Şimdi Cosmos A5 açık ara birinci çıkıyor zaten şurada da gördüğümüz gibi.
+
+527
+01:34:12,228 --> 01:34:15,948
+Model Türkçe ile eğitildiği veya faytun edildiği için sanırım.
+
+528
+01:34:15,948 --> 01:34:20,387
+[öğrenci], sorudan cevabı cevaptan soruya nerede?
+
+529
+01:34:23,123 --> 01:34:28,123
+Slide'a koymalım hocam ama çalışmasını yapmıştım onunla.
+
+530
+01:34:28,123 --> 01:34:31,123
+Niye koymadın?
+
+531
+01:34:31,123 --> 01:34:33,123
+Bilmiyorum hocam.
+
+532
+01:34:33,123 --> 01:34:39,123
+Bir şey. Tamam. Son olarak söyleyeceklerini alalım.
+
+533
+01:34:39,123 --> 01:34:45,123
+Burada hani Multilingual Y5'in...
+
+534
+01:34:46,612 --> 01:35:08,612
+TSN'de daha kötü ama skoru biraz daha, hani burada verdiği skorun ortalarda olmasının sebebini biraz araştırdım. Biraz çelişkisel geldi bana. TSN'ye bakınca model kötü gözüküyor. Ama soru ve cevaplar tamamen ayrı bölgelerde düşmüş ama Tapman skorunda...
+
+535
+01:35:08,948 --> 01:35:33,288
+İkinci sırada geliyor bu model. Bunun sebebin şu olduğunu düşündüm. Model de model E5 olduğu için query ve passage prefiksini anlıyor ve aynı konudaki cevapları biraz daha kendi içerisine kümeliyor gibi geldi bana. Yani doğru cevabı tam olarak bulamasa bile en azından doğru konu kümesinin içerisinden seçip top 5'ını kurtarıyor biraz gibi geldi sonuçların. Bu şekildeydi.
+
+536
+01:35:36,467 --> 01:35:37,948
+Teşekkürler [öğrenci].
+
+537
+01:35:45,939 --> 01:35:47,059
+[öğrenci]
+
+538
+01:35:55,891 --> 01:35:58,231
+Paylaştım hocam ekranını. Görüyor musun hocam?
+
+539
+01:35:59,431 --> 01:36:03,511
+Geliyor herhalde. Evet, geldim burada. Başlayabilirsin.
+
+540
+01:36:04,811 --> 01:36:10,731
+Benim seçtiğim iki tane veri seti var burada. Bir iki tarım veri seti, bir de iklim değişik.
+
+541
+01:36:11,931 --> 01:36:16,451
+Sadece özel olarak bu iki konuyu hakkında olan...
+
+542
+01:36:17,555 --> 01:36:24,555
+Devrimi içeriyor bu setler. Böylece modelleri daha iyi test edebiliriz.
+
+543
+01:36:24,555 --> 01:36:30,555
+Kulandığım modeller ise bunlar.
+
+544
+01:36:30,555 --> 01:36:35,555
+Aslında Pugging Fakes'in bir yeri.
+
+545
+01:36:35,555 --> 01:36:44,555
+Tarım veri setinde modelleri çalıştırdığımızda soru cevap.
+
+546
+01:36:45,779 --> 01:36:57,180
+Topline, soru-cevap Topline, Enson, Plays, Çet, Cevap, Soru şeklindeki gibi yönlerde çalıştırdım bu modelleri.
+
+547
+01:36:57,180 --> 01:37:12,363
+Sonuç olarak en yüksek bizim Yıldız'ın Kozmoz modeli çıktı. Yani en yüksek değerlidir Kozmoz'la aldım.
+
+548
+01:37:13,171 --> 01:37:26,671
+Görselleştirmelere baktığımızda da, yıldızınki yine belli noktalar da ayrışmış olsa da yine de homojen gibi.
+
+549
+01:37:26,671 --> 01:37:39,171
+Zaten tarım verilse ki burada görüldü. Başarılı olanları düşün. Çünkü soruyla cevap arasında doğrudan bir ilişki çok fazla olmadığı için modeller...
+
+550
+01:37:39,380 --> 01:37:56,380
+Modellerin tahmin etmesi birazcık daha zorlaştı. Diğer modellerinde, dağlamalarını burada görüyoruz. Bazıları daha tetrojen, bazıları daha onlayacak.
+
+551
+01:38:01,524 --> 01:38:08,003
+M-Bag'in uzayında yaklaştırılmış yaklaştırılama döneminde.
+
+552
+01:38:10,003 --> 01:38:14,323
+İttiğim değişikliği veri setinde ise aldığım sonuçlar bu şekilde oldu.
+
+553
+01:38:14,323 --> 01:38:20,403
+Burada bu veri setinde sorularla cevaplar arasında ciddi ilişki vardı.
+
+554
+01:38:20,403 --> 01:38:28,083
+Yani sorularda şu nedir diyor mesela, cevapları da işte şudur şeklinde devam ettiği için modellerin tahmin etme...
+
+555
+01:38:28,307 --> 01:38:42,628
+Olasılığı bu derste konuyla çok daha yüksekli. Burada da yine çoğunlukla Cosmos modeli öne çıktı. Bir de sadece doğru cevap kısmından topfayda multi-linear.
+
+556
+01:38:42,628 --> 01:38:51,028
+Key five darknessler burada bir miktar çok ufak bir farkla üstte çıktı.
+
+557
+01:38:51,507 --> 01:39:06,707
+Burada da yine M-Bediklerini inceledikleri de Yıldız'ınki yine gayet homojenli. Diğer bazı modellerin çok daha ilişki konuda uzak kaldıklarını görüyoruz.
+
+558
+01:39:06,707 --> 01:39:18,707
+E5'inkide yine kısmen daha yakında dediğim gibi. Bu cevapların daha iyi yaklaştıklarını görmüştü aslında.
+
+559
+01:39:19,604 --> 01:39:32,604
+Ama ben yine de burada OzMod'u daha başarılı buluyorum çünkü daha homojen görünüyor bence OzMod'un görselleştiğimiz.
+
+560
+01:39:32,604 --> 01:39:41,604
+Yani OzMod'u daha şey gibi hani Top5'da hani birazcık denk gelmiş gibi yani.
+
+561
+01:39:41,604 --> 01:39:46,604
+O bu şekilde de başarı elde etmiş.
+
+562
+01:39:47,507 --> 01:39:51,707
+İzledim verdim ama. Bu şekilde.
+
+563
+01:39:53,987 --> 01:39:57,887
+Teşekkürler [öğrenci]. Elinle sağlık.
+
+564
+01:39:59,487 --> 01:40:02,607
+Evet, şimdi [öğrenci] ile devam edelim.
+
+565
+01:40:03,647 --> 01:40:06,387
+Buradayım hocam. Arkadaşım paylaşacak şimdi ekran.
+
+566
+01:40:28,595 --> 01:40:29,615
+Ekran geldi ama.
+
+567
+01:40:30,815 --> 01:40:32,576
+İlk slide'a gelebilir miyiz?
+
+568
+01:40:34,076 --> 01:40:34,336
+[öğrenci].
+
+569
+01:40:38,963 --> 01:40:40,304
+Düzeltiyorum hemen.
+
+570
+01:40:49,492 --> 01:40:51,231
+İngilizce bilgisayar bir katılımıza.
+
+571
+01:41:01,076 --> 01:41:02,956
+Sorun varsa ben de paylaşabilirim.
+
+572
+01:41:04,056 --> 01:41:04,816
+Geldi galiba.
+
+573
+01:41:04,856 --> 01:41:06,376
+Geldi, evet. Tamam, teşekkür ederim.
+
+574
+01:41:08,056 --> 01:41:14,016
+Merhaba, ben [öğrenci]. [öğrenci]'le birlikte yaptık ödevimizi. Bir kısma kadar ben anlatacağım. Daha sonra ona bırakacağım.
+
+575
+01:41:17,296 --> 01:41:19,956
+Cosmos modeli dışında beş tane model seçtik.
+
+576
+01:41:19,956 --> 01:41:27,236
+Dina, Kven, Inflaten Multilingual modeli, CodeFuse AI, HitTMG modellerinden seçtik.
+
+577
+01:41:29,716 --> 01:41:38,195
+ilk veri setimiz TQAD. Daha önce bahseden arkadaşlar da oldu. 14 kategoride 1000 tane soru cevap ikilisi seçtik buradan.
+
+578
+01:41:40,819 --> 01:42:05,099
+Veri setini anlamak açısından 10 tane örnek soru cevap ikilisi koyduk buraya. Cevaplar daha kısa ve sorularla bağlantısı zayıf cevaplar aslında. Soruda geçen ifadeleri tekrarlamayan yani bağlantısını kurması zor cevaplar. O yüzden başarısının düşük olmasını beklediğimiz bir veri set oldu bu.
+
+579
+01:42:07,891 --> 01:42:13,771
+Burada embedding vektörlerinin görselleştirmesini de aslında gözlemledik.
+
+580
+01:42:13,771 --> 01:42:20,171
+Mavi noktalar sorular olacak şekilde belli noktalarda kümelendiklerini gördük.
+
+581
+01:42:20,171 --> 01:42:27,091
+İçinde ifade tekrarı olan soruların olduğunu gösterdiğini düşünüyoruz onların.
+
+582
+01:42:29,140 --> 01:42:36,400
+İkinci veri seti AIXR. Burada da 40 kategoride 1000 tane soru cevap ikilisi seçtik.
+
+583
+01:42:38,804 --> 01:42:46,463
+Burada da kısmen daha uzun cevaplar ve sorularla daha bağlantılı cevaplar var.
+
+584
+01:42:47,024 --> 01:42:53,884
+Sorularda örneğin ilk satırda kontrast maddeler ifadesi geçiyor ve cevabında da kontrast maddeler geçtiği için,
+
+585
+01:42:54,663 --> 01:43:00,304
+tekrarlayan ifadeleri olduğu için bağlantısının daha kolay olacağını düşündüğümüz bir versetiydi.
+
+586
+01:43:03,028 --> 01:43:16,448
+Burada Mühendisliği vektörlerinin görsellerinde de aslında gözlemlendiği üzere soru ve cevaplar aslında eşleşmiş gibi daha iç içe bir görüntü gözlemledik.
+
+587
+01:43:19,328 --> 01:43:23,868
+Buradan sonra ben devam edeceğim. Başarı metriklerini incelediğimizde.
+
+588
+01:43:24,532 --> 01:43:34,532
+QS'in asfır yönlü. En başarılı modelin Cosmos modeli olduğunu görüyoruz. En başarısız model ise TQAD veriseti için HIT modeli.
+
+589
+01:43:34,532 --> 01:43:42,532
+AIXR veriseti için ise QM modeli ama aralarında zaten çok fazla fark yok. Mesela QM ve HIT'in arasında binde birlik neredeyse bir fark var.
+
+590
+01:43:42,532 --> 01:43:47,275
+İlk sitasında en düşük iki veriseti olarak karşımıza çıkıyor.
+
+591
+01:43:47,828 --> 01:44:08,307
+Yine Ans for Question yönü baktığımızda da yine en başarısız iki model değişmiyor. Küven ve HIT modeli. En başarılı model de yine Cosmos modeli. Burada Ans for Question yönlü metrikleri tam tersi olan QA yönlü metrikleri fiyatı %6'lık daha bir artış gösterdiğini gözlemledik. %88'de %94'de çıkmış.
+
+592
+01:44:08,968 --> 01:44:14,528
+Bunları detaylı incelediğimizde bu şekilde Ticolat Verisletin top 1 başarı grafiği var elimizde.
+
+593
+01:44:14,576 --> 01:44:33,796
+Burada, az önce göstermiştik zaten TSN grafiğinde. Soru-cevap ve kütülleri birbirinden belirgin şekilde ayrışıyordu bu data set 1 için. Sorular kendi içerisinde benzerken, cevaplar kendi içerisinde benzerdi ama kendileri de farklı kutuplara gitmiş gibi belli yerlere ihtimlenmişlerdi.
+
+594
+01:44:34,319 --> 01:44:48,639
+Bu verset için baktığımızda hep QA yönlü başarının daha yüksek olduğunu görüyoruz top 1 başarısında. Top 5 başarısında yine CodeFuse modeli dışında hepsi için yine QA yönlü başarı daha yüksek sonuç verdiği ekürsisi.
+
+595
+01:44:49,268 --> 01:45:04,488
+Özellikle Kozmoz modeli için AQ yönlü başarı 16'da kalırken, QA yönlü başarı 27'ye çıktı. Bu da yine aslında TSN'de gördüğümüz şeyi destekliyor. Çünkü şu şekilde sorular daha kümelenmişti. Cevaplar da yine merkezi bir yerde.
+
+596
+01:45:05,716 --> 01:45:30,916
+Toplanmış gibi. Birbirine benzer cevaplar vardı zaten. Üniversite örneğinde bakmıştık. Atıyorum yıl cevapları var, isim cevapları var ama bir sürü yıl var. Yine sorularda hep aynı kişinin ismi geçiyor mesela. O yüzden aslında bir cevaptan soruya gitmek daha zor. Çünkü işte şeylerin aslında soruların, cevapların ayırt ediciliği daha yüksek. O yüzden sorudan cevaba gidiş daha kolay ve zaten başarılı. O yüzden bu da daha yüksek.
+
+597
+01:45:32,372 --> 01:45:53,712
+Bunlardan bahsettim. Tam tersi diğer bir setin için, ikinci bir setin için tam tersi sonuç elde ettik. Burada QA değil, hep AQ yönlü başarı daha yüksek. Tüm modeller için böyle. Top 5 başarısı için de aynı şekilde. Burada en belirgin artışı HIT-TMG modelinde görüyoruz. %76'dan 86'ya %10'a yakın bir artış var.
+
+598
+01:45:54,387 --> 01:46:00,568
+Bu da aslında şu şekilde haritasına baktığımızda destekleniyor. Onu da buradan göstereyim.
+
+599
+01:46:00,568 --> 01:46:11,108
+Bu AIXRV setinde baktığımızda HitTMG modeline, cevapların merkezi bir yerde toplandığını ve soruların etrafında dağılık şekilde yer aldığını görüyoruz.
+
+600
+01:46:13,460 --> 01:46:29,199
+Cevaplar ve daha dağınık sorular olması soruların ayırıcılığını daha yüksek hale getiriyor. Diğer veri setinden farklı olarak. Dolayısıyla cevaplardan sorulara ulaşmak daha kolay olduğu için ekürüs metrikleri burada AQ yönlü daha yüksek oluyor.
+
+601
+01:46:29,739 --> 01:46:39,199
+Burada tek mekanetimizden farklı çıkan sonuç benzer haritaya sahip olan infuat modeliydi. Burada infuat modelinin...
+
+602
+01:46:39,952 --> 01:46:47,312
+Farklı olarak şu şekilde özellikle küven modeliyle bir incelemesine baktığımızda, küven modeli sanki haritası daha örtüşüyormuş gibi dururken,
+
+603
+01:46:47,692 --> 01:46:54,492
+yani infuat modeli daha az örtüşüyormuş gibi duruyor. Ama ekürizmetiklerine baktığımızda sonuç tam tersi.
+
+604
+01:46:54,552 --> 01:47:05,372
+İnfuat modeli küven modeline göre daha başarılı sonuç verdi. Bunun sebebi muhtemelen burada eşleşme olarak gözükenlerin yanlış eşleşmeler olması, yanlış hükümelerle yanlış cevaplarla eşlenmesi olabilir.
+
+605
+01:47:05,876 --> 01:47:19,256
+Tek farklı sonuç o oldu. Şu şekilde devam etmemiz gerekirse son olarak da Kozmoz modelinin, yani en başarılı modelin, QA metriklerinin ve AQ metriklerinin ve veri seti üzerinde karşılaştırmaları var.
+
+606
+01:47:19,416 --> 01:47:31,056
+Burada yapabileceğimiz en önemli yorum, Türkçe veri setleri üzerine çalıştığımız ve deneyler yaptığımız için, Türkçe veri setleriyle eğitilen Kozmoz modelinin diğer 5 modeli kıyasla en büyük sonucu verdiğini gördük.
+
+607
+01:47:31,923 --> 01:47:52,363
+Yine Ansburg-Köns'ün yönünde en yüksek başarı %94 ile AI-XR verisletinde alındı. Yine en çıkın başarı da TÜTÜAK verisletinde %6.4'lük bir başarı olarak Ansburg-Köns'ün yönünde aynı yönlü alındı. Bu şekilde dinlediğiniz için teşekkürler.
+
+608
+01:47:55,988 --> 01:48:00,688
+Teşekkürler [öğrenci], teşekkürler. Güzel bir çalışmamış. Elinize sağlık.
+
+609
+01:48:01,788 --> 01:48:02,828
+Teşekkür ederiz hocam.
+
+610
+01:48:04,728 --> 01:48:07,468
+Şimdi [öğrenci] [öğrenci]'dan.
+
+611
+01:48:08,788 --> 01:48:09,928
+Hocam sesini biliyor mu?
+
+612
+01:48:10,608 --> 01:48:11,548
+Giyiyorum [öğrenci].
+
+613
+01:48:12,508 --> 01:48:14,948
+Tamamdır hocam. Şimdi paylaşıyorum ekranıma.
+
+614
+01:48:14,948 --> 01:48:15,268
+Evet.
+
+615
+01:48:20,028 --> 01:48:23,528
+Şimdi hocam biliyor mu kanma ekranı?
+
+616
+01:48:25,492 --> 01:48:29,391
+Yeni yıl daha yolda geldi.
+
+617
+01:48:29,391 --> 01:48:30,992
+Şimdi hocam.
+
+618
+01:48:30,992 --> 01:48:37,492
+Buradan soracağım hocam. Ben zaten söyleyeceğim de şimdi. Başlatıyorum hocam.
+
+619
+01:48:37,492 --> 01:48:39,192
+Tamamdır.
+
+620
+01:48:41,192 --> 01:48:47,404
+1 milyardan az parametreli doğal dil işleme modellerini...
+
+621
+01:48:47,412 --> 01:48:53,412
+Türkçe soru cevap eşleştirilmesi üzerinden karşılaştırılması. Projemiz zaten buydu hocam.
+
+622
+01:48:53,412 --> 01:49:00,212
+Burada girişte ne yaptığımızı açıkladım. Projede 6 adet transformer tabanlı dil modelini iklade Türkçe verseti üzerinden,
+
+623
+01:49:00,212 --> 01:49:03,712
+ki sonraki slide'larda bahsedeceğim bunu dataset'lerde ve modellerden.
+
+624
+01:49:03,712 --> 01:49:10,412
+23.000 soru cevap çifti üzerinden, birisi 8000'di, birisi 15000'di soru.
+
+625
+01:49:10,963 --> 01:49:20,764
+Setsenetinden oluşuyor. Ben bu slide'ı söyleyeceğim. Açısal mesafe bazlanarak ölçtük. Dokümanda bahsedildiği gibi. Üzerine ben bir limitization testi de yaptım.
+
+626
+01:49:20,764 --> 01:49:34,963
+Bunu projede yazmıyordu ama bir skoru yükseltebilir miyim diye yaptım da onu sonra zaten bahsedeceğim şimdi. Öncelikle web seti olarak burada tquad.tlpqa.dataseti kullandım.
+
+627
+01:49:35,796 --> 01:49:40,796
+Training versiyonunu kullandım. Bu TechnoFest 2008'de kullanılmış bir versiyeti.
+
+628
+01:49:41,996 --> 01:49:47,296
+Burada 8308 soru cevap çifti var. Linki burada. Türk İslam bilim tarihi hakkında.
+
+629
+01:49:47,296 --> 01:49:56,296
+IYEYUB var bir tane de. Türk İş LLPQA Dataset diye. Bu da Türkiye'deki tarih mekandan ve turistik yerler hakkında 15.000 soru cevap çiftinden oluşuyor.
+
+630
+01:50:00,000 --> 01:50:09,000
+Kendi kitap linkinde de, şuradakinde de yazıyor zaten. Bu birazcık önemli bir konu çünkü sonuçlardan bahsederken buradan bahsedeceğim bu gemilerden.
+
+631
+01:50:09,000 --> 01:50:18,000
+Modeller burada kullandım. Zaten proje dokümanında belirtildiği gibi YTC Cosmos Türkçe 5'lerci kullandım.
+
+632
+01:50:18,000 --> 01:50:24,000
+Sayfasında önermiş olan given a Turkish search query, relevant passages, written in Turkish, best answer to query.
+
+633
+01:50:24,372 --> 01:50:35,372
+Task'ı ile kullandım. Sitesinde de en çok bu tavsiye ediliyordu. Burada linkler var yine. Multilingual'a 5lar için struct kullandım. Aynı task cümlesiyle birbiri. O da bir task cümlesiyle iliştiriyordu.
+
+634
+01:50:36,271 --> 01:50:49,511
+Centers Transformers'ın labzesi özel bir talimat gerektirmedi. Direkt soruları ve cevapları yüklediğimde çalıştı. Burada önemli bir şey. Ben burada da bir ileteceğim soruşlar hakkında.
+
+635
+01:50:50,931 --> 01:50:57,431
+Yine aynı Instruction'ı kullandım. Tüm Instruction'ları aynı tuttum aralarındaki performans farkını ölçebilmek için.
+
+636
+01:50:57,431 --> 01:51:05,931
+Google Embedding modellerini kullandım. Bu modellerin hepsi 1 milyar parametreden az.
+
+637
+01:51:05,931 --> 01:51:11,884
+Burada zaten açısal mesafenin işlerinin nasıl çözüldüğünü vesaire açıkladım.
+
+638
+01:51:12,020 --> 01:51:19,020
+Burada işlerin MPPY değerlerine bölünmesi. TorchroPK fonksiyonuyla top 1 ve top 5'leri aldım. Şimdi sonuçlara gelecek olursak.
+
+639
+01:51:19,020 --> 01:51:28,020
+En önemli kısım. TQV setinde bu sonuçları aldım. En büyük performans YTRC, Cosmos E5 Large modeli aldı.
+
+640
+01:51:28,020 --> 01:51:37,020
+%7.79 ve %18 ile birlikte. TQV cevaptan sonra ise 578 ve 13.60 aldım.
+
+641
+01:51:38,003 --> 01:52:01,003
+Diğer modeller arasında da, diğer çok dilli modeller arasında da, soru-cevap da F2LLM en büyük performans gösterdi. 3.68 ve 8.67 ile. Multilingual R5 Large Instruct ise cevap soru arasında en büyük performans gösterdi. En kötü performans genel olarak labze gösterdi. Bunun nedenini kendi grafis sayfasında açıklayacağım.
+
+642
+01:52:06,355 --> 01:52:17,355
+%4.80 ve %9.88 ile ama önceki slide'lar F2LLM ikinci en iyi performans gösteren veri setiydi modelde.
+
+643
+01:52:18,159 --> 01:52:41,680
+Ancak IAEUV versetinin Gemini tarafından geliştirilmiş olmasını iletirdiği bir etki olarak, ki ben genel olarak en azından böyle bir tahminde bulunuyorum. Model ve verset arasında bir uyum olmasına ötürü. Embedding Gemma çok dilli modeller arasındaki en büyük performansı gösterdi. Ama cevaptan soruya bulunma konusunda yine en büyük performansı multilingual M5 Large Instruct modeliyle aldım.
+
+644
+01:52:42,676 --> 01:52:50,115
+Aynı zamanda burada F-Türer LLM ve Ember Ingram adı IA-Yup'un cevap sorusunda tabbe sonucu olarak bunları aldı.
+
+645
+01:52:52,615 --> 01:52:59,536
+Genellikle GTR-C Cosmos Turkish E5 Large modelinde ise TSN-E grafikleri de burada görülebiliyor.
+
+646
+01:52:59,895 --> 01:53:07,336
+Burada gördüğümüz gibi daha çok bir kümelenme değil de daha bir bulut performansı var. İçinin de şey olması nedeniyle.
+
+647
+01:53:07,604 --> 01:53:18,644
+Bu dürüst başa sonuçları göstermesi nedeniyle ancak Ay-Yeyup kendi arasında gruplanırken biraz daha T-Quart kendi içinde birleşmiş bir durumdaydı.
+
+648
+01:53:18,644 --> 01:53:31,644
+Şurada çeçek kesişmeler var ve bunların da nedenini sorulardaki sultan, Türk İslam bilim tarihi ve turistik yerlerden mesela bahsedilince...
+
+649
+01:53:32,212 --> 01:53:38,212
+Türk figürlerinden ötürü bir kesişme olduğunu en azından tahmin ediyorum bu konularda.
+
+650
+01:53:39,212 --> 01:53:47,212
+Türkçe metinlerle fine-cune edilmesi nedeniyle en iyi performansı gösteren model de Türk E5 Large oldu.
+
+651
+01:53:48,212 --> 01:53:55,212
+Multilingual E5 Large Instruct ise genel olarak cevaptan soruya dönmek konusunda en iyi sonucu gösterdi.
+
+652
+01:53:57,395 --> 01:54:02,395
+Tam bir şey olmasa da bir ayrım durumu mevcut. Yine IAU Platyquad arasında.
+
+653
+01:54:03,535 --> 01:54:21,395
+Sentes Transformers'ı labzı ise aralarındaki en kötü performansı gösterdi. Burada da görebildiğiniz gibi tüm metinler şuralarda yeşil ve mor noktalar vs. zaten şu mouse ile gösterdiğim yerlerde en düşük performansı labzı gösterdi ki bunun nedenini...
+
+654
+01:54:22,003 --> 01:54:43,123
+Labzenin bir çevir asistanı, bu Labzenin normalde eğitildiği şey, Bilingual Translation'ları bulmak konusunda, cümlelerin, işte birbirlerinin çevrelerini bulmak konusunda eğitilmiş Google tarafından. Bu nedenle Labze özellikle bu cins bir performansda çok hani düşük bir performans başladı.
+
+655
+01:54:48,051 --> 01:55:14,051
+Burada şeyleri gösterdi. F2L MC genel olarak soru cevap görevlerinde T4V setinde en iyi ikinci performansı gösterdi. Burada biraz daha genel olarak ama bulut sorunları var. Q1 3 MPD'nin aslında MTAP leaderboardunda en yüksek modeldi ve en çok parametreli modellerden birisi olması nedeniyle daha çok bir performans bekliyordum ama ikinci en başarısız model oldu genel olarak. Burada da görebildiğiniz gibi özellikle...
+
+656
+01:55:15,123 --> 01:55:26,744
+IEU tarafında çok fazla bir dağılma var. Sorular ve cevaplar birbirinin içine geçmiş durumda. Özellikle TQAT'ta da bir tümelenmeden ziyade çok ayrı bir durumlar mevcut.
+
+657
+01:55:28,064 --> 01:55:33,944
+Google Ambed'in Gemma ise IEU özelinde çok en iyi ikinci performansı gösterdi.
+
+658
+01:55:34,783 --> 01:55:39,623
+Nedenin yine dediğim gibi Google Gemini tarafından ceneret edilmiş olması olduğunu düşünüyorum.
+
+659
+01:55:39,723 --> 01:55:46,403
+Google arkasına ceneret edildiği için ortak bir model veri uyumu olabilir diye bir tahminde bulunuyorum.
+
+660
+01:55:47,463 --> 01:55:54,803
+Ve burada da görebildiğiniz gibi çok ayrı, ayrılmış durumdalar. Cevaplar bir arada, sorular bir arada.
+
+661
+01:55:55,403 --> 01:55:58,043
+Aya yokken olarak TQAT tarafından ayrılmış durumda.
+
+662
+01:56:01,011 --> 01:56:27,851
+Ancak rastlada soru testinde de şöyle bir şeye rastladım. Bu şimdi TQAD versetinde bulunan bir soru. Arif Mülfid Manselli'nin ders verdiği klasik arkeoloji kürsüsünü kim kurdu? İstanbul Üniversitesi Edebiyat Fakültesinde. Ki cevap kendi. Normalde versetinde bu cevap kendi diye. Çok kısa bir cevap. Ancak Yeteri C.E.K.Mosmos E5'larc modeli A.Mülfid Manselli aslında burada doğru cevabı vermiş durumda.
+
+663
+01:56:28,340 --> 01:56:42,340
+Ve üçüncü cevapta ise ünlü Alman arkeoloğu Theodor Wiergand'ın mesafesi 0.359. Theodor Wiergand ile Arif Müfit Mahsel'i birbirine bağlamış durumda ki Arif Müfit Mahsel'in eğitiminde...
+
+664
+01:56:43,283 --> 01:56:51,764
+Yani Almanya'ya gidip eğitim görmesinde Theodor Wiergang'ın verdiği bursdan ötürü gidip okuyabilmiş bir site Arif Müfit Mansell.
+
+665
+01:56:51,863 --> 01:56:56,403
+Onunla onu birbirine bağlamış durumda Y4CE Cosmos modeli.
+
+666
+01:56:57,043 --> 01:57:02,604
+Ancak Sentence Transformers'ın labzini de burada görebildiğiniz gibi arkeoloji, klasik arkeoloji bilim dalında.
+
+667
+01:57:02,604 --> 01:57:09,304
+İstanbul Arkeoloji Müzeleri Müdürlüğü, New York Üniversitesi'nde klasik çağ profesörlüğü ve aphrodiziyas kazılarının başkanlığı gibi.
+
+668
+01:57:10,131 --> 01:57:27,271
+İlkisi olmayan cümleler, ilgisi olmayan cevaplar veriliyor. Burada ise biraz daha semantik, anlamsal birleşimler de mevcut. Aynı zamanda burada kök çözümleme de yaptım. Ancak kök çözümlemenin etkisi çok da etkili olmadı. Burada kök çözümlemeyi biraz daha skorları pozitif etkileyebilir miyim diye yaptım.
+
+669
+01:57:27,271 --> 01:57:38,131
+Ancak buradaki genel etki çok dilli modellerin tabbe sonuçlarında pozitif bir etkide bulunurken tabbe sonuçlarında ise negatif bir etkide bulundu. Labze haricinde. Labze tamamen...
+
+670
+01:57:38,131 --> 01:58:01,531
+Aynı performansı gösterdi. Ancak 4-5'laştaysa burada tam tersi bir performans gösterdi. 4-5'laştık ölç çözümleme yaptığımda performansın bir düşüşünü gördüm. Az da olsa. Bunun nedeninin ise performans gelişiminin olmaması hatta bazı durumlarda düşmesinin nedeninin de bu modellerin kontekstla ve bağlanma farkında olması ve aradaki bazı kelimelerin etlerini kaldırdığımızda
+
+671
+01:58:02,003 --> 01:58:16,003
+Anlam kayıpları yaşaması nedeniyle başarısızlıklar yaşadığını düşünüyorum. Burada da grafiğiyle gösterdik ve evet burada da görebileceği gibi performans negatif etkilenmiş durumda. Bu YTRC-EBH Kozmos'un 2000...
+
+672
+01:58:18,003 --> 01:58:23,003
+Tabii başarı artırmak için neler yapılabilirdi onu da bir araştırdım ve bu iki fil...
+
+673
+01:58:23,828 --> 01:58:51,828
+Fikri buldum daha çok. İlk aşamalı geri getirme. ToStageRetival ki Top5 ve Top5 yerine Top5 ve Top100'lü ByEncoder modelleriyle, şu anda kullandığımız modelleri kullanıp, CrossEncoder kullanarak bunu daha iyi bir sonuç alabilirdik. Top5 ve Top5 için CrossEncoder kullanarak. Google gibi şirketler günümüzde arama sonuçlarını gösterirken böyle çözümleri kullanıyorlar. Aynı zamanda kelime tabanlı arama modelleriyle, vektör tabanlı arama modelleriyle,
+
+674
+01:58:51,828 --> 01:58:55,148
+O modellerini birleştirerek sorgularda daha iyi performans alınabilirdi.
+
+675
+01:58:57,428 --> 01:59:01,828
+Proje sonuçlarında ise genel olarak evet gördüğümüz gibi, burada bahsettiğim gibi,
+
+676
+01:59:01,828 --> 01:59:07,828
+Dile Özel Fight Tuning, YTRC, Cosmos 4K'e 5T modelinin en iyi performansı göstermesinin nedeni.
+
+677
+01:59:08,372 --> 01:59:18,372
+Dile özel Türkçe metinlerle fine tune edilmesinin sonucunda da en iyi performans gösteriyor. İki katın üstünde bir performans. Kendisinden sonraki en iyi modeli.
+
+678
+01:59:18,372 --> 01:59:24,372
+Tüm modeller Ay'a yük V setinde ise gösterdiği düşük performanslı kodasyon cevap sayısıyla açıklayabiliyoruz.
+
+679
+01:59:24,372 --> 01:59:33,056
+V setinin büyüklüğünün performans etkisini bu sayede görebiliyoruz. Aynı zamanda vermiş olduğu kısa kısa cevaplar olmasının nedeniyle de...
+
+680
+01:59:33,055 --> 02:00:00,000
+O yuvasları sonra da gördüğümüz gibi kendi diyor ama A'lık müfidmansel mesela oradaki asıl cevap kendisi. Orada her ne kadar model yanlış olarak kaydese de aslında doğru bir performans gösteriyor burada. Aynı zamanda evet burada bahsettiğim gibi Cemil A ile bir ortak bir veriseti model uyumu var ve burada kök çözümlemenin etkisi ise genel olarak performans tahmin edilenden daha az etkiledi ve bunun nedeni ise modellerin...
+
+681
+02:00:00,307 --> 02:00:04,667
+Artık bağlama dayalı olarak olmasıyla açıklayabiliyor. Kaynaklarımın hepsi burada.
+
+682
+02:00:06,127 --> 02:00:17,347
+Da isteyenler bakabilir. Dinlediğiniz için teşekkür ederim hocam. Ben sunumu ve kodu link olarak paylaştım. Aynı zamanda kodu da dosya olarak da paylaştım. Ödev olarak sundum.
+
+683
+02:00:18,228 --> 02:00:21,387
+Teşekkürler [öğrenci]. Ellerine sağlık. Güzel bir çalışma olmuş.
+
+684
+02:00:21,947 --> 02:00:23,367
+Teşekkür ederim hocam. Çok sağ olun.
+
+685
+02:00:23,367 --> 02:00:24,067
+Sağlısın.
+
+686
+02:00:24,724 --> 02:00:41,203
+Arkadaşlar, saat 11.35. Bir 10'da 2 kalıp bir ara verelim. 11.45'te devam edelim. Yani sunumu kapatmayacağım. Buradan devam edelim. Efendim?
+
+687
+02:00:41,203 --> 02:00:43,543
+Ben bir şey soracaktım.
+
+688
+02:00:45,811 --> 02:00:52,671
+Bu fedattı yani bu paylaştığınız ders planında bu hafta ikinci ödevi söylüyordu da bu hafta paylaşacak mısınız yoksa haftaya mı?
+
+689
+02:00:54,192 --> 02:00:55,771
+Muhtemelen haftaya paylaşırım.
+
+690
+02:00:56,911 --> 02:01:04,072
+Anladım. Biz çıkabilir miyiz? Bir arkadaş sormuş ama sunum yapanlar çıkabilirler. Tabii kalabilirsiniz.
+
+691
+02:01:04,911 --> 02:01:06,711
+Anladım hocam. Teşekkür ederim. Sağ olun.
+
+692
+02:01:06,711 --> 02:01:10,411
+Rica ederim. İyi günler. 11.45'e devam ediyoruz arkadaşlar.
+
+693
+02:10:35,604 --> 02:10:38,043
+Evet arkadaşlar, devam edebiliriz.
+
+694
+02:10:46,739 --> 02:11:10,299
+[öğrenci]. Buradayım hocam. Evet dinliyoruz [öğrenci] seni. Ben ekran paylaşayım. Şimdi kalan süre ve kişi sayısına baktığımda kişi anlamlı süre vermek için 4 dakika süre vereceğim. Tamam mı? Mümkün olduğu kadar.
+
+695
+02:11:11,775 --> 02:11:36,555
+Kompakt anlatırsanız sevinirim. Tamam mı? Ekranım geldi mi hocam? Geldi. Evet. Başlayacağız. Başlayayım hemen. Buraları geçeyim. Datasetinden bahsedeceğim. Sadece kullandığım. İki farklı dataset'i kullandım. Birisi simetrik cevaplar ve sorular. İkisi de kısa. Birbirine benziyor. Diğerinde sorular kısa ama cevaplar uzun paragraflar halinde. Biraz da simetrik bir dataset'i.
+
+696
+02:11:37,203 --> 02:11:56,163
+Burada günlük dil kullanılmış ve çeçipti yazdırılmış bütün veri seti. Diğerinde akademik okuma paragrafları var. Squad'ın çevirisi zaten kullanılan bir veri seti. Kullandığım modellerde 3 gruba ayırdım parametre sayısına göre.
+
+697
+02:12:03,988 --> 02:12:12,448
+Mini LM. E5'in bir üst daha parametresi yüksek Base modelini kullandım.
+
+698
+02:12:12,448 --> 02:12:19,588
+Ve farklı bir MPNT mimarisi kullandım orada. Aynı parametre sayısına sahip.
+
+699
+02:12:19,588 --> 02:12:27,588
+Arsiklet'te de sizin kullanmamızı istediğiniz E5 Large Turkish ve BGM3 modellerini kullandım.
+
+700
+02:12:28,115 --> 02:12:43,396
+Aslında beklenildiği gibi ilk random olan ve sorulara kısa cevaplar verilen veri setinde Hemen Hemenemsi çok iyi sonuçlar verdi. En iyi sonuçları Türk İşe'ye 5'ler çıverdi.
+
+701
+02:12:55,923 --> 02:13:21,323
+Sonuçları verdi. Diğerleri de yüksekti ama hafif farklarla özellikle tab 5'te 99.7 ve 99.4'e kadar gitti. Burada sadece değinmek istediğim şu kısım var. Mesela i5 small parametre sayısı olarak düşük ama mpnet base ondan yüksek olmasına rağmen mimari farkıyla daha iyi tab 1 sonuçları verdiğini gördüm burada.
+
+702
+02:13:22,771 --> 02:13:39,271
+İkincisinde, bağlam biraz daha farklı olduğu için soru ve cevapları arasındaki kısa sorular, uzun paragraflı cevaplar olduğu için daha düşük sonuçlar ortaya çıktı. En azından tabbir cevaplar da %49.5'a kadardır.
+
+703
+02:13:39,956 --> 02:14:04,956
+Bu konuda Kozmoz'un modeli düştü. Tam tersi durumunda Enstitlanko-Escan'a da %35.5'a kadar düştü sonuçlar tabbirlerde. Burada ben yorum olarak şunu düşündüm. Neden bu kadar düştü ne dair? Cevaplar çok uzun olduğu için bunları bir vektöre sıradırdığında anlam kaybolması yaşanabiliyor. Bu anlam kaybolmasından da farklı...
+
+704
+02:14:05,716 --> 02:14:30,616
+Sonuçlar ortaya çıkabiliyor ve yanlış cevaplar verilebiliyor diye yorumladım. Bir de burada iki durum arasındaki farkı değinmek istedim. Özellikle ikinci veritabanı için sorudan cevabı ve cevaptan soruya kısımlarında farklı sonuçlar ortaya çıktı. Performans kaybı var. Bu da yine asimetrik olmasından kaynaklı.
+
+705
+02:14:31,412 --> 02:14:51,731
+Bu cevap daha uzun paragraflar olduğu için oradan bir soruyu bulmanın daha kolay olduğu ama kısa bir sorudan uzun bir cevap bulmanın daha zor olduğunu yorumladım. Bundan kaynaklı olduğunu düşünüyorum bu farkın.
+
+706
+02:14:53,731 --> 02:14:55,731
+TSN'de de...
+
+707
+02:14:56,595 --> 02:15:05,535
+TSN'ler üzerinden de yorumlayabilirim. Burada yakınlaştırdım ama sizle de yakınlaştığımı bilmiyorum. Kare olarak göstermek istedik.
+
+708
+02:15:05,535 --> 02:15:06,895
+Evet, biz de yakınlaştık.
+
+709
+02:15:06,895 --> 02:15:20,747
+Onun dağılımları daha çok TSN analizinde köşeleri doğru dağılıyor. Modellere göre değişiyor tabii. İlk random key olan daha çok analizin ortasında...
+
+710
+02:15:20,979 --> 02:15:27,779
+Dağınık şekilde birbirinden hemen hemen eşit uzaklıklarlar. Bir kümelenme yok ama diğer
+
+711
+02:15:27,779 --> 02:15:40,539
+Squat TR'de kümelenmeler var ve grafin köşelerine doğru dağılmış durumdalar. Daha iyi modellerde bu ikisi arasındaki iki
+
+712
+02:15:40,539 --> 02:15:47,679
+ve çizitli arasında çok daha ayrıcı bir görüntü var. Modeller iyileştikçe. Mesela burada
+
+713
+02:15:48,020 --> 02:16:09,520
+E5'in Beyzinde şu kısımda ilk veri seti dağılmış durumda. Ama köşelerde ikinci veri seti dağılmış durumda. Bu yazının dilinden ve biraz soru cevap arasındaki asimetri simetri farkından kaynaklı diye yorumladım. Özellikle Yütür Kozmoz modelinde bu daha da açıkça şu orta kısımda.
+
+714
+02:16:09,971 --> 02:16:17,171
+İlk modelin soru ve cevaplarını yan kısımlarda, köşelerde de ikinci modeli görebiliyoruz.
+
+715
+02:16:18,511 --> 02:16:21,671
+Kısaca bu şekilde hızlıca anlatmaya çalıştım hocam.
+
+716
+02:16:22,431 --> 02:16:24,951
+Teşekkürler [öğrenci]. Sağ olasın.
+
+717
+02:16:26,571 --> 02:16:27,891
+Teşekkür ederim.
+
+718
+02:16:29,231 --> 02:16:31,511
+Şimdi [öğrenci].
+
+719
+02:16:33,311 --> 02:16:35,151
+Merhaba hocam, buradayım.
+
+720
+02:16:36,275 --> 02:16:40,076
+Evet seni dinliyoruz. Hemen paylaşıyorum Eki Hanım'a.
+
+721
+02:17:30,131 --> 02:17:32,131
+Arkadaşlar, göremiyoruz ama...
+
+722
+02:17:38,804 --> 02:17:40,804
+Teknik ekran faal ettin mi?
+
+723
+02:17:54,515 --> 02:17:57,835
+Hocam, pardon. Düştüm. Hemen paylaşıyorum tekrar.
+
+724
+02:17:59,755 --> 02:18:00,556
+Sesim geliyor mu?
+
+725
+02:18:01,376 --> 02:18:02,455
+Evet, sesim geliyor.
+
+726
+02:18:03,135 --> 02:18:03,455
+Tamam.
+
+727
+02:18:11,572 --> 02:18:13,912
+X-Slide geldi diye tahmin ediyorum.
+
+728
+02:18:14,391 --> 02:18:16,772
+Evet, X-Slide'ın da geldi. Dört sekinden başladı.
+
+729
+02:18:17,172 --> 02:18:18,752
+Tamam. Herkese selamlar.
+
+730
+02:18:19,796 --> 02:18:47,796
+Bu şuralara geçtim. Ben veri seti olarak TR Extractive QA5K veri setimi kullandım. Diğer veri setimiz de zaten Cosmos'taki bu matemeksel işlemlerin olduğu veri setiydi. Ben şu veri setin seçim amacım şuydu. İlk veri seti uzun, sorular ve cevaplar uzun ve çok açıklayıcı bir şekilde belirtilmişti. Bu veri seti ise sorular da direkt ve cevaplar da çok kısa bir şekilde.
+
+731
+02:18:47,796 --> 02:19:00,615
+İşte mesela Türkiye'nin başkenti neresi? Ankara. Anıtkabir nerede? Ankara'da. Bu tarz hem tarihsel, bilimsel, doğal şeklinde soru cevapların olduğu bir veri setini seçtim.
+
+732
+02:19:02,036 --> 02:19:30,036
+Model olarak da bu Massive Text Embedded Benchmark'taki ilk 100 model arasından 5 tanesini seçtim. Zaten kullanmak zorunda olduğumuz bu Turkish i5 Large modeli. Aslında şu Matilingücel i5 Large ve bu modelden fine tune edildiği için Türkçe'ye özel bir ana modelde acaba nasıl bir sonuç gösterir bunu merak ettiğim için bunu seçtim. Bir de bu Turkish i5 Large modeli.
+
+733
+02:19:30,036 --> 02:19:43,096
+Bu modelinde yapı olarak task description eklendiği için bunun large instruction modelini de denemek istedim. Bu ikisi acaba nasıl fark gösterecek? Türkçe üzerinde daha bir iyileşme olacak mı diye.
+
+734
+02:19:48,691 --> 02:19:59,471
+Bir de Beijing Yapay Zeka Akibinin oluşturduğu bir model var. Bir de bu Alibaba NLP'nin oluşturduğu General Text Embedding modeli var.
+
+735
+02:20:00,000 --> 02:20:24,000
+Bu üç model herhangi bir şey almıyor. İşte question, answer şeklinde yapıları yok. Bir tane de paraphrase modelini seçtim. Bu diğer beş modelde şöyle bir şey fark ettim ben. Bunların hepsi de constructive learning yapısıyla oluşturulduğu için bu modeller. Acaba bu paraphrase embedik yani mining yöntemine nasıl bir...
+
+736
+02:20:24,147 --> 02:20:29,268
+Sonuç üretecek. O yüzden özellikle buna bir düşük sonuç bekliyordum. Bunu kullanmak istedim.
+
+737
+02:20:29,268 --> 02:20:32,587
+Yapısına gelince de bu
+
+738
+02:20:33,268 --> 02:21:01,087
+Turkish E5 Large aslında Large Instruction tarafındaki yapıyla aynı yapıyı oluşturuyor. Soruların başına query, cevapları ise passage şeklinde prefiksel eklenmiş ve bunlara ekstradan da bir tane instruction ekleniyor. O da şöyle bir şey. Sen benden ne bekliyorsun? Yani diyor ki biz instructor olarak give a Turkish question, retrieve the most relevant answer şeklinde bir instruct verdiğimizde.
+
+739
+02:21:01,268 --> 02:21:10,308
+Senin görevin soru ve cevap eşleştirmelerinde en uygun cevabı bul şeklinde bir prompt tarzı bir diskretion girersek sonuç nasıl etkilenir?
+
+740
+02:21:10,308 --> 02:21:15,968
+Bunu ölçen bir şey. Diğer üç şeyde de zaten modelde herhangi bir parametre almıyor.
+
+741
+02:21:17,492 --> 02:21:37,112
+Buraya geçiyorum. Sonuçlar şu şekilde geldi. Benim en iyi sonucum aslında ML-E5 Large Instruct modelinden aldım ben bu veri seti için. Aslında en iyisi derken de kıyaslamak da çok doğru olmuyor. Çünkü aralarındaki fark çok az bunda da. Türkçe-E5 Large ile birlikte.
+
+742
+02:21:45,492 --> 02:22:01,932
+Burada beklediğim gibi en kötü sonuç para MLMP netten geldi. Bunun sebebi de şey aslında bu araştırdığında multipozitif kognitif learning yaptıkları için bu diğer modeller bunda direkt şey yapmış.
+
+743
+02:22:04,948 --> 02:22:25,407
+Soru ve cevaplar arasındaki ilişkiye bakmaktansa semantik anlamı en yakın olan vektörlere eşleştirmiş. Yani buna soru cevap şeklinde bir özelleştirme bir yapısı eklenmediği için bunun çok da iyi sonuç vermesini beklemiyordum açıkçası. Öyle de geldi. Modal karşılaşmalarını da zaten buradan görebiliriz.
+
+744
+02:22:25,407 --> 02:22:27,128
+[öğrenci] birazcık hızlanabilir misin?
+
+745
+02:22:27,567 --> 02:22:51,027
+Tabi, hemen geçiyorum hocam. Şimdi TRX Active Question en son kısmında da başarı oranımız en iyisi burada Türkçe tarafından geldi. Bu da şöyle, Türkçe tarafından, bu aynı yapıyı kullandığı için bu ikime öder. Türkçe tarafından özelleştirilmiş dil tarafı kısa cevaplarda daha da iyi, az da olsa daha iyi performans gösteriyor şeklinde yorum yapabiliriz.
+
+746
+02:22:52,435 --> 02:23:10,815
+Burada da histogram dağılımlarını görebiliriz. Buradan zaten TSN görüntülerine geldiğimizde de şu maviler soru kırmızılarda cevapları gösteriyor. Aslında şu birbirlerine çakışmaları kırmızıyla mavinin aslında çok da iyi bir şey değil. Biz biraz kümeleme dağılımına bakmaya çalışıyoruz.
+
+747
+02:23:11,600 --> 02:23:39,340
+Burada yine de diğer veri setine göre daha başarılı bir ayrıştırma, kümeleme var. Burada iç içe geçme daha fazla. Ve şey fark edilseniz, burada kırmızı noktalarda kümelemeler daha fazla. Çünkü mesela Ankara'nın, cevap olarak Ankara'nın birçok soruda cevabı olarak kullanıyor. Yani şehirler falan bir arada bir kümelemeye sebep oluyor. Bu da cevap kısmını bulurken probleme sebep oluyor. Yani doğru şeyi bulamıyor, cevabı bulamıyor.
+
+748
+02:23:39,600 --> 02:24:04,040
+Bu BGM N3 modelinin için çıktıkları yine bu çok başarılı değil bir öncekine göre. Yine iç içe geçme daha fazla. Bunda da dağılım çok fazla. Kümeleme düşük. Şeyden kaynaklı. Bu sorular ve cevaplar birbirleriyle semantik olarak yaklaşık olmadığı için açıklayıcı bir bağlılığı olmadığı için daha uzak bir kümeleme gözükmüyor.
+
+749
+02:24:05,427 --> 02:24:13,427
+Bu GT zaten başarısı en düşüktü. İç içe geçme yine çok fazla bunlarda. Para faizdaysa en fazla olan...
+
+750
+02:24:13,427 --> 02:24:18,867
+Yalnız bu iç içe geçmenin kötü bir şey olduğunu burada söylemek birazcık zor.
+
+751
+02:24:19,572 --> 02:24:40,551
+Şu manada soru, mesela sen burada bir soru alıyorsun, orada bir nokta alıyorsun değil mi? O noktaya en yakın noktaları bulmaya çalışıyorsun. Dolayısıyla sorular ve cevaplar birbirlerine çok uzak olsalar, o soruya doğru cevabın bulunma olasılığı epey bir düşer değil mi? Yani sorular ve cevapların birbirlerine aynı sorunun aynı cevabı, yani doğru çiftlerin birbirlerine yakın olması gerekir. Öyle değil mi?
+
+752
+02:24:40,927 --> 02:24:58,087
+Evet, yakın olması gerekir ama mesela kümeleme çok fazla ya, bu soruyla üst üste sorular arasında da bir şey olması lazım, bir kümeleme birliği olması gerekirken, burada soruyla cevap arası çok fazla yaklaştığı için aslında problemi görüyorum.
+
+753
+02:24:59,367 --> 02:25:03,988
+Doğru soruyla doğru cevabın birbirine yakın olması lazım zaten.
+
+754
+02:25:04,531 --> 02:25:09,031
+Evet, evet ama burada üst üste binmeler çok fazla. Ondan bahsediyorum hoca.
+
+755
+02:25:09,471 --> 02:25:10,351
+Tamam, peki.
+
+756
+02:25:11,092 --> 02:25:14,051
+Devam edebilirsin. Artık toparlarsan sevinirim.
+
+757
+02:25:14,532 --> 02:25:38,952
+Burada görebiliriz. Buradan yaptığımız çıkarım da şu. GMA8'deki benzersiz sayısal veriler olduğu için kolay eşleştirme oldu. TRQED'de kısa ölçüşen cevaplar olduğu için zor eşleştirme oluyor. Instruction Tuning'in tutarlı bir yararını görüyoruz. 6-7 puan arttı. Sorudan cevaba her zaman cevaptan sonra 2-3 puan daha başarılı oldu benim kullandığım yöntemde.
+
+758
+02:25:39,092 --> 02:25:56,172
+Top 5 oranlarıyla, top 1'e göre yine %16 ile 20 puan daha yüksek oldu. İlk birinci sırada bulamasa da ilk 5 arasında bulabildi. Burada da işte bir ranking ile performans açı gösterebiliyoruz. Teşekkürler.
+
+759
+02:25:57,632 --> 02:25:59,752
+Teşekkürler [öğrenci] sunumun için.
+
+760
+02:26:02,100 --> 02:26:04,319
+Ben teşekkür ederim hocam dinlediğiniz için.
+
+761
+02:26:04,760 --> 02:26:07,299
+Rica ederim. [öğrenci] sunmuştu zaten.
+
+762
+02:26:08,079 --> 02:26:09,360
+Merhaba hocam, ben de galiba.
+
+763
+02:26:11,799 --> 02:26:13,540
+Evet [öğrenci], seni dinliyoruz.
+
+764
+02:26:14,479 --> 02:26:15,900
+Tamamdır, paylaşıyorum hemen.
+
+765
+02:26:18,400 --> 02:26:20,380
+Gelmiştir umarım hemen.
+
+766
+02:26:20,900 --> 02:26:21,659
+Geldi, evet.
+
+767
+02:26:23,139 --> 02:26:24,420
+Dört dakikan başladı.
+
+768
+02:26:24,880 --> 02:26:27,100
+Tamamdır, ben de çok hızlıca...
+
+769
+02:26:27,731 --> 02:26:48,731
+Öncelikle veri kümelerinden bahsedeyim. İki farklı dil tarzında veri kümesi seçmeye çalıştım. Bir tanesi daha günlük kullanım diline yakın IMDB film yorumları üzerinden kullanıcıların yorumlarını içeren bir veri kümesi. Diğeri de X-Quad adı verilen, zaten arkadaşlar da biraz bahsetmişlerdi. Ansiklopatik bir veri, Wikipedia'nın Türkçe çevresi verisi.
+
+770
+02:26:49,183 --> 02:27:07,463
+Burada IMDB'den bahsedecek olursam, aslında 32.000 satır veri var ama ben içeriden tabii örneklemi aldım. Burada resmi bir dil yok dediğimiz gibi. Biraz daha aslında kullanıcılara özgü ifadeler var o yüzden ve film türleri de işin içine gireceği için hani yönetmenler vesaire açıkçası böyle kümelenmeler bekliyordum modellerde.
+
+771
+02:27:07,863 --> 02:27:16,283
+Bu ise birazcık daha ansiklopatik veri olduğu için çok fazla uzun uzun cevapları var ama kısa sorular var. Buralarda işte asimetriler görüyoruz veri kümesinde.
+
+772
+02:27:17,183 --> 02:27:28,163
+Birazcık aslında model seçiminde de bu verikümelerini seçmek etkili oldu. Ben de bazı parafriyiz modelleri seçmeyi istedim. Burada nasıl aldığımdan birazcık benzerlik matrisinden falan bahsediyor. Geçebilirim buraları.
+
+773
+02:27:29,108 --> 02:27:57,108
+Ben de YouTube Cosmos'u ek BGM3'ü kullandım ve parafraz modellerden de seçmek istedim aslında. Şöyle gösterebilirim. BGM3 ve Multilingual E5 modelleri ve Cosmos biraz daha aslında bizim Retrieval odaklı modeller. Buralardan başarılarının yüksek gelmesini bekliyoruz. Ama diğer tarafta parafraz modeller. Arkadaşların da biraz bahsettiği gibi aslında içerideki anlamsal yakınlığı, birbirinin yerine geçebilecek kelimeleri gözeten modeller olduğu için biraz daha format bağımlı modeller.
+
+774
+02:27:57,108 --> 02:28:07,907
+Bunların sonuçlarını da ve rükümelerini de görmeyi düşünüyordum. O yüzden bir eklemek istedim bunları. Bunların başarısı ne gelecek? Acaba daha iyi olabilir mi yukarıdakilerden diye. Bir tanesi beni şaşırttı gerçekten.
+
+775
+02:28:08,384 --> 02:28:27,304
+Tab 1, tab 5 değerlerine baktım diğer arkadaşlar gibi zaten ben de. Burada veri kümelerinin sonuçları, modellerin implemente edildiği sonuçlarda soruların cevaplara gitme kısımları bu IMDB kümesinde biraz daha aslında cevaplardan soruya ziyade daha düşük. Yani cevaptan soruya gitmek daha yüksek oldu.
+
+776
+02:28:35,572 --> 02:28:48,427
+Soru kısa, cevaplar yine yorumlar da kısa olabiliyor ya da uzaya da biliyor. Burada çok fark etmiyor ama içeride aynı şekilde ben de task test ekledim arkadaşlar gibi ve E5 içinde...
+
+777
+02:28:48,564 --> 02:29:04,824
+Prefiks ekledim. Yani pasaj ve işte prefiks ekledim. Diğer tarafta, diğer modellere baktığım zaman orada zaten bir anlamsal bir çıkarım noktasında zayıf olacaklarını biliyorduk başarı oranı olarak da.
+
+778
+02:29:05,152 --> 02:29:21,772
+Bunlar iki veri kümesinde de aslında kendini fark ettirdi. Sadece bu XQR, XQAT veri setinde multilingü MP net birazcık şaşırtan bir oran oldu. Aslında burada BGM3'den yüksek gelmesi ve diğer...
+
+779
+02:29:23,123 --> 02:29:44,304
+E5'ten de yüksek gelmesi. Yani çok fazla virgül farklılıkları var ama aslında beklemediğim bir şeydi. Buralarda E5'in birazcık manipüle edildiğini TSN'den daha iyi anlatabilirim hatta orada. E5'in birazcık, şöyle TSN grafiğine geçeyim. Şuradaki E5'i en altta görüyorsunuz ortada.
+
+780
+02:29:44,783 --> 02:30:07,043
+Burada aslında bıçakla kesilmiş gibi, yani soruları, cevapları çok farklı ayırmış. Aslında burada biraz sanırım o formata odaklanma kısmı bu verdiğim pasaj kısmından da sebep oldu. İşte bu kuyeridir, bu pasajdır diye bir yönlendirme verdiğimden sebep. Aslında yani instruction kısmında da hani öneri kısmında da bu tarz bir kullanım öneriyorlardı. Ama o biraz şaşırtıcı oldu benim için.
+
+781
+02:30:07,424 --> 02:30:17,292
+Onun dışında Kozmoz'un daha spesifik, homojen bir şekilde tespitler yapabildiğini görüyoruz. Diğer tarafta da yine...
+
+782
+02:30:18,515 --> 02:30:44,036
+Bir saniye. Yine parafraz modeli beni burada şaşırtan demiştim. MPNet. Onun da TSN-Grafi birazcık daha aslında bulunabilirliği daha yüksek diğer parafraz modellere göre. Hatta E5'e ve BGM3'e göre de. BGM3 de çok fazla sektörde de kullanılan bizim de kullandığımız modellerden. O yüzden bu ayrımı parafraz modelin daha iyi yapması biraz şaşırttı açıkçası beni bu veri kümesi özelinde.
+
+783
+02:30:44,852 --> 02:30:49,712
+Onun dışında ben birazcık şeyden şu şeyi de göstereyim.
+
+784
+02:30:50,420 --> 02:31:14,420
+IMDB'nin TSN'sini de göstereyim. Bir de veri kümesinin bazı örneklerini çıkardım. Onlardan biraz yorum yapacağım. Bu IMDB'de biraz aslında kümeleme durumlarını hani türden olsun, işte yönetmen yorumları vesaire gruplanmaları olsun bekliyorduk aslında bu tarz adacıkların oluşmasını. Ben bekliyordum yani. Burada yine Kozmoz'un biraz daha aslında içeride mor noktaları oluşturduğunu, biraz daha soruların, cevapların üzerine çöktüğünü görebiliyoruz.
+
+785
+02:31:18,420 --> 02:31:46,420
+Burada zaten dediğim gibi ben birazcık daha aslında işte parafriyaz modelli diğer retrieval modeller arasında fark olabilir mi? Ve işte bu günlük dil ile kıyasla diğer ansiklopatik veri arasında nasıl farklar olabiliyor? Biraz bunları görmek istemiştim. Buradaki kısımda da. Biraz örneklerden de gitmek isterim. Hani ne gibi mesela top 1'de başarılı olamayanlar top 5'te nasıl başarılı?
+
+786
+02:31:46,420 --> 02:31:59,199
+Burada aslında gerçek cevabı bulabildiği şeyler, keyizler var ama diğer vektörün uzunluğu ve içerisinde yakın kelimeler geçmesi bu paraferiz modelleri şaşırtmış durumda.
+
+787
+02:32:00,852 --> 02:32:24,492
+Diğer taraftan da, mesela Yitikozmoz'un da bir tab 5'te doğru bulduğu, bu en alttaki örnekte görüyorsunuz. Tab 5'te doğru ama ilk bulduğu cevap yanlış. Burada mesela Cambridge ve kampüs kısımlarından üniversite bulması gerektiğini düşünerek aslında öyle bir yola çıkıp onu ilk sıraya koyuyor ama diğerinde de bir mekan olabildiğini, bir yakınlık seziyor kendince ve onu da tab 5'te bulabiliyor.
+
+788
+02:32:24,492 --> 02:32:28,812
+Aynı şekilde partiler arasında da yani bir parti bulması gerektiğini bağlamın farkında aslında.
+
+789
+02:32:28,852 --> 02:32:34,912
+Bu Multilingual E5'te ama partiyi aslında kör bir seçimle verebiliyor.
+
+790
+02:32:35,343 --> 02:32:53,563
+Diğerinde de buhar kelimesine odaklandığı için aslında ilk başta buharı seçiyor. Bunlar da biraz aslında çeldiriciler, zorlu çeldiriciler dediğimiz sıkıntıya da giriyor. Buralarda da tabii ki Reranker gibi böyle cross-embedirlerle birazcık bu durumu çözmek gerektiğini biliyorum.
+
+791
+02:33:03,343 --> 02:33:20,003
+Yanlış bir puanı tercih etmiş. Yine bir multilingual model. Burada aslında dediğim gibi birazcık o kısımlarda spesifik entity kaybedebiliyor. Hangi entity aradığını kaybedebiliyor. Buralarda biraz da cross-encoderler işin içine girmesi gerekiyor. Gördüğüm itibariyle.
+
+792
+02:33:21,043 --> 02:33:42,943
+Diyerek aslında çok uzatmayayım. En yüksek performansları da bir sıralamaya çalıştım IMDB yönünden de. Kozmoz bende de daha büyük. Bende dediğim gibi veri kümesinin aslında türüne göre birazcık sorudan mı cevap daha iyi tahmin ediliyor, cevaptan mı soru biraz değişebiliyor. Asimetrik veri kümesi var diyelim de ama birazcık aslında türlere göre değişti bu tahmin edilebilirlik.
+
+793
+02:33:45,523 --> 02:33:48,523
+Burada da aslında bu kadar yani sunum.
+
+794
+02:33:48,948 --> 02:33:59,808
+Teşekkürler. Enine sağlık [öğrenci]. Teşekkür ederim. Evet, [öğrenci] ile devam edelim. Evet, buradayım hocam. Paylaşıyorum ekranı.
+
+795
+02:34:10,835 --> 02:34:12,275
+4 dakikam başladı.
+
+796
+02:34:12,275 --> 02:34:38,835
+Tamam hocam. Önce ödevde kullandığım veri setlerinden bahsetmek istiyorum. İki veri seti kullandım. İkisini de Hugging Face web sitesinden temin ettim. Birincisi hukuk alanında 1844 soru cevap metin çiftinden oluşan bir veri setiydi. Diğeri ise medical article small veri seti. Bu da medikal alanda 4470 adet soru cevap metin çiftinden oluşmaktı.
+
+797
+02:34:38,835 --> 02:34:39,563
+Bu da
+
+798
+02:34:39,891 --> 02:35:04,411
+Burada ödevde kullandığım modeller görülmektedir. Parametre sayıları, maksimum ve vektör boyutu özellikleriyle birlikte. Mesela Codefuse modelinin farklı versiyonlarını kullandım. Biri 600 milyon, biri 160 milyon. Aynı şekilde i5 modelleri için de öyle. Burada belki parametre sayısı başarım oranı ne kadar etkiliyor onu görebilmek için bu şekilde tercih ettim.
+
+799
+02:35:07,891 --> 02:35:11,971
+Bu da sorudan cevaba başarım oranları görünmektedir.
+
+800
+02:35:12,659 --> 02:35:26,760
+Buraya baktığım zaman aslında bütün modellerde tıp alanındaki, medikal alandaki veri setinin, hukuk alanındaki veri setine göre daha fazla başarım oranına sahip olduğu görülmektedir.
+
+801
+02:35:27,459 --> 02:35:33,340
+Model olarak da baktığımızda Cosmos'un modeli bütün modellerden daha yüksek başarım oranına sahiptir.
+
+802
+02:35:33,340 --> 02:35:38,260
+Hukuk alanındaki aslında düşüklüğün sebebi veri setinden de bakmak istiyorum.
+
+803
+02:35:40,659 --> 02:35:50,299
+Bir soru sorulduğunda, burada asıl cevap Cumhuriyet iken, burada devlet geçen cevapları yüksek skorla top 5 için almıştır.
+
+804
+02:35:50,299 --> 02:36:00,299
+Yani aslında hukuk alanında metinlerin daha karmaşık ya da aynı kavramın farklı birbirlerine yakın...
+
+805
+02:36:00,628 --> 02:36:26,728
+Kelimelerle ifade edilmesi gibi seçenekler burada hukuk alanındaki başarım oranını düşürmektedir. Bir de şöyle bir şey dikkatimi çekmişti. Burada Codius modellerinde başarım oranı düşüktü. Fakat hukuk veri tabanındaki TAP1 başarısıyla TAP5 başarı oranları diğer modellerde de öyle. Arasındaki fark daha yüksek çıkmıştır.
+
+806
+02:36:28,628 --> 02:36:49,427
+Burada dediğim gibi şuradaki şekilde aslında devlet geçenler TAP5 içine giriyor ama bulamadığı için aynı şekilde mesela Cumhurbaşkanı hangi organ tarafından seçilir? TBMM ama TAP5'i daha yakın, daha büyük bulmasının sebebi birbirine yakın olanları buluyor ama tam isabeti gerçekleştiremediği için.
+
+807
+02:36:51,379 --> 02:37:13,099
+Cevaptan soruya olan başarı oranlarına baktığımızda ise burada başarı oranları sorudan cevaba göre bir tık daha düşmüştür. Bunda da aslında çıkarım ve yorumun biraz daha fazla olmasından kaynaklı olabilir. Ama her halükarda Turkish i5 Larch modeli yine en yüksek değerlere sahip olmuştur başarı oranlarında.
+
+808
+02:37:15,891 --> 02:37:28,091
+Gösterim yapmıştım. Burada görüldüğü gibi hem modeller hem de veri setleri gösteriliyor. %99.26 ile tıp veri setinde sorudan cevaba
+
+809
+02:37:28,091 --> 02:37:41,091
+sorudan cevaba top 1, top 5 skoru en yüksek seviyeye sahiptir Cosmos modelinde. Bunları ayrı ayrı göstermiştim ama tek bir grafik üzerinden göstereceğim.
+
+810
+02:37:43,796 --> 02:37:49,255
+Bu slide'da aslında modellerin ürettiği vektörlerin uzayda nasıl konumlandığı gösterilmektedir.
+
+811
+02:37:49,335 --> 02:37:51,796
+Tabi vektör boyut azaltımı yaptırılarak.
+
+812
+02:38:02,260 --> 02:38:15,399
+Burada en yüksek başarı oranları i5 Large ve i5 Small, i5 Base aralarında değişirken. Siz şey görebiliyor musunuz hocam? Benim ekranda şu kişiler göz...
+
+813
+02:38:15,860 --> 02:38:19,480
+Gözüküyor mu yoksa direkt PowerPoint gözüküyor değil mi hocam?
+
+814
+02:38:19,520 --> 02:38:20,620
+PowerPoint gözüküyor evet.
+
+815
+02:38:20,840 --> 02:38:23,960
+Tamam ben anlatırken böyle önüme geldi de anlatamadım birden.
+
+816
+02:38:24,200 --> 02:38:34,060
+Burada hocam aslında yayılım önemli. Bu Turkish i5 large modeline baktığımız zaman evet şu maviler hukuk veri setini gösteriyor.
+
+817
+02:38:34,260 --> 02:38:38,460
+Kırmızılarda tıp veri setini gösteriyor. Ben aynı grafik üzerine göstermek istedim.
+
+818
+02:38:38,460 --> 02:38:43,380
+Hem veri modelli veri setlerini de birbirinden keskin bir şekilde ayırmış.
+
+819
+02:38:43,860 --> 02:38:50,840
+Çiçek içimi yok. Burada sorular ve cevaplar birbirlerine düzgün bir şekilde yayılması önemli.
+
+820
+02:38:50,840 --> 02:38:53,620
+Yani eğer mesela şurada olduğu gibi.
+
+821
+02:38:56,979 --> 02:39:11,959
+Mesela burada olduğu gibi parçalı bir şekilde cevaplar soruların içine yayıldığında ya da diğerleri belli bir yerde kümelendiğinde şu cevaba ait, şuradaki soruların en yakın tap 5'i aslında bu cevap olacaktır.
+
+822
+02:39:12,039 --> 02:39:18,719
+Ve burada da belli hatalar meydana gelecektir. O yüzden yayılımın da düzgün olması gerekmektedir.
+
+823
+02:39:18,719 --> 02:39:24,559
+Yani yayılım olduğunda kümelenme şeklinde değil de daha homojen bir şekilde iç içe yayılımın olması önemlidir.
+
+824
+02:39:24,979 --> 02:39:25,920
+Bu şekilde hocam.
+
+825
+02:39:27,719 --> 02:39:28,819
+Teşekkürler.
+
+826
+02:39:29,819 --> 02:39:30,579
+[öğrenci].
+
+827
+02:39:31,599 --> 02:39:32,479
+Eline sağlık.
+
+828
+02:39:33,739 --> 02:39:34,959
+Teşekkürler hocam.
+
+829
+02:39:35,639 --> 02:39:37,939
+Şimdi [öğrenci]'la devam ediyoruz.
+
+830
+02:39:39,979 --> 02:39:41,420
+Merhaba hocam. Sesim geliyor mu?
+
+831
+02:39:45,236 --> 02:39:49,516
+Geliyor. Tamamdır. Paylaşıyorum ekranımı.
+
+832
+02:39:57,108 --> 02:40:17,108
+Ekran geldim acaba. Geldi. Dört dakikan başladı. Tamam hocam. Hemen başlıyorum. Ben burada size attığım ödemde küçük bir yanlışlık yapmışım. Sabah düzelttim bunu. Burada da belirteyim. Ben multilingüel modellerle çalıştım ama iki tanesini...
+
+833
+02:40:17,780 --> 02:40:31,360
+İki tanesi multilingual değilmiş. Onlar yerine Granite ve Sentence Paraphraser modellerini de ekledim. Bu iki modeli. Bu sebeple iki tane daha fazladan sonuç göstereceğim size.
+
+834
+02:40:32,435 --> 02:40:43,136
+İlk veri setim AXR. Bu veri seti biraz şey yani 3'e bölünüyor aslında. Yazılım geliştirme soruları var. Radyoloji soruları var ve tıbbi görüntüleme soruları var.
+
+835
+02:40:43,136 --> 02:40:58,876
+[öğrenci] sunum moduna çekebilir misin? Ekranın kapanıyor da. Şu ekstra şey yine kapanıyor. Şu yanda kişiler var ya onu bir kaldırabilir misin oradan? Küçült vesaire vesaire. Ekranın başka bir tarafını al. Şu anda oldu tamamdır. Şu anda giyin.
+
+836
+02:40:59,515 --> 02:40:59,996
+Tamamdır.
+
+837
+02:41:00,724 --> 02:41:18,023
+A-X'ir veri seti aslında 3'e 4'e bölünüyor. Yazılım geliştirme ve tıpta birkaç dal şeklinde. Burada benzer, yani direkt aynı şeyler vardı. Ben bunları RegEx ile şey yaptım. Essiz olanları buldum sadece. Essiz olarak 982 kayıt vardı burada.
+
+838
+02:41:20,023 --> 02:41:21,384
+Veriye de bakarsak.
+
+839
+02:41:21,664 --> 02:41:48,284
+Görüldüğü gibi aslında soruların içinde, yani sorular cevaplarla daha yakın sözcükler içeriyor. İkinci veri ise Turkish Law. Zaten birkaç arkadaşımız da bunu göstermişti. Burada da 1844 soru cevap ikilisi var. Burada ise diğer veriden farklı olarak sorularla, yani genel yapısı itibariyle sorularla cevaplar arasında çok büyük eşleniklikler yok.
+
+840
+02:41:48,819 --> 02:41:59,979
+Bunu da o yüzden tercih ettim. Direkt sonuçlara gelecek olursam, bende de Cosmos en yüksek sonuçları verdi. İki veride de.
+
+841
+02:42:09,747 --> 02:42:35,427
+Altı yüz milyon tane parametresi var. Kalan dört modelimin üç yüz milyon parametresi var. Bir de Snowflake çok küçük bir model seçtim. Bunda da yirmi üç milyar milyon parametre var. Zaten biraz beklendiği gibi yüksek parametre sayıları olanlar en yukarıda çıktı. İki sonuçta da.
+
+842
+02:42:36,468 --> 02:42:58,248
+Ardından multilingüel olan 300 milyon parametreli olanlar geldi. Onları da multilingüel olmayanlar takip etti. En aşağıda ise sanırım multilingüel olsa da parametre sayısının çok az olması sebebiyle Snowflake'in X-Molt modeli oldu.
+
+843
+02:42:59,283 --> 02:43:14,252
+Burada ilginç bir şey var. İlginç bir sonuç var. GTE, large modeli multilingual değil ama sentence transformers ve parametre sayıları da aynı. Geçmiş durumda. Burada biraz sentence paraphrase...
+
+844
+02:43:14,868 --> 02:43:33,568
+Sentence Transformers'ın parafraz modelinin yapısından kaynaklanıyor. Az önce de arkadaşımızın bahsettiği gibi parafrazler anlamsal yakınlığa bakıyorlar. Soru ve cevap arasında anlamsal yakınlığı bulamayınca low verisetinde aslında multilingüel olmayan bir şeyin altında kaldı.
+
+845
+02:43:33,927 --> 02:43:41,148
+Kozmos'un diğerlerinden neden daha iyi olduğu konusundaki yorumun ise tabii ki Türkçe olarak fine tün edilmiş olması.
+
+846
+02:43:41,652 --> 02:43:51,471
+Bu da ona özellikle top 5 hem answer'da hem question'da top 5 alanında diğerlerini yüksek farklar atmasını sağlıyor.
+
+847
+02:43:54,891 --> 02:43:57,012
+Şöyle yine sonuçların olduğu ekran.
+
+848
+02:43:57,412 --> 02:44:02,652
+TSN grafiklerini ben tüm veri setlerini aynı grafiğin üzerine aynı vektör...
+
+849
+02:44:03,407 --> 02:44:21,407
+Bu konularda soruları olan veri seti. Çarpı olanlar ise hukuk veri setinden geliyor. Burada başarılı modellerde göreceğimiz üzere...
+
+850
+02:44:21,652 --> 02:44:31,172
+Hukukun vektoral alandaki yeri net bir şekilde gözüküyor ve yazılım ve radyolojiden çok net bir şekilde ayrılmış, ayrıtmış şey.
+
+851
+02:44:31,692 --> 02:44:34,172
+Turkish Large Model'i Cosmos'un.
+
+852
+02:44:35,772 --> 02:44:40,612
+Aynı zamanda muhtemelen şuranın yazılım olduğunu tahmin ediyorum.
+
+853
+02:44:41,132 --> 02:44:43,632
+Dediğim gibi üç adet konu vardı.
+
+854
+02:44:44,115 --> 02:45:11,884
+Bu tarafın yazılım olduğunu, şu tarafın ise radyoloji ve tıbbi sorular olduğunu düşünüyorum. Radyoloji ve tıbbi sorular kendi aralarında birazcık karışmışlar. Bunu burada gözlemleyebiliyoruz. Aynı paternleri diğer başarılı modellerimizle de görebiliyoruz. Burada kozmosa farklı olarak çeşitli kümelemeler olmuş. Şöyle geleyim, kümelemelerle sebep olmuş. Daha kümeli görüyorum bunu. Yani daha aslında...
+
+855
+02:45:12,115 --> 02:45:24,956
+Rigid yerlere koymuş diyebilirim. Kozmos daha esnek davranabiliyor. Özellikle Red Gable olduğu için bu daha ona katkı sağladığını düşünüyorum. Onun özelliklerine.
+
+856
+02:45:26,536 --> 02:45:36,316
+Aynı şekilde küvende de benzer bir paten. Gittikçe, başarı düştükçe zaten tıp ve yazılım, hukuk vs. bunlar gittikçe yakınlaşmaya başlıyorlar.
+
+857
+02:45:37,316 --> 02:45:38,956
+Şunları da gördüğünüz gibi.
+
+858
+02:45:39,763 --> 02:45:46,763
+Yine daha da yaklaşıyorlar. GT zaten multilingüel bile değildi.
+
+859
+02:45:47,763 --> 02:45:48,763
+Ulaştırmış.
+
+860
+02:45:49,763 --> 02:45:53,763
+Burada şöyle bir şey tespit etmiştim.
+
+861
+02:45:54,763 --> 02:45:59,763
+Hem multilingüeli olan Xmol Snowflake modelinde...
+
+862
+02:46:00,115 --> 02:46:22,075
+Hem de Mixed Bread modelinde. Mixed Bread modeli zaten Türkçeyi tanımadığı için aslında soru yapılarından, yani dilin yapılarından ilerliyor gibi. O yüzden soruları daha yakın olduğunu gözlemliyorum. Aynı şekilde cevapların da yapısal olarak daha yakın olduğu için onları daha yakın konumlandırdığını görebiliyorum.
+
+863
+02:46:22,804 --> 02:46:49,523
+Burada ise Snowflake'te bu çok daha belli oluyor. Hep üst üste binmişler soru-cevaplar. Bunun da parametre sayısının azından dolayı, hani görüntü işlemeden hatırlayacaktır insanlar, görüntünün ilk önce kenarlarını, köşelerini bulur. Burada da Snowflake X-Small modelinin ilk önce o cümlenin yapılarını keşfettiğini yorumladım bu grafikten.
+
+864
+02:46:51,316 --> 02:47:10,456
+Onun dışında burada yanlış cevaplara birkaç örnek göstermişim. Aslında görüldüğü üzere neredeyse yanlış olan cevaplarda sorular çok yakın. Cevaplar da birbirine yakın. Bu şekilde. Böyle dört dakikaya sığdırmaya çalıştım hocam.
+
+865
+02:47:10,899 --> 02:47:29,100
+Ama olmadı. Süre olmadı. Teşekkürler [öğrenci]. Eline sağlık. Şimdi [öğrenci], pardon [öğrenci]. [öğrenci], evet evet. [öğrenci]'la devam ediyoruz.
+
+866
+02:47:35,347 --> 02:47:37,347
+Hocam hemen açıyorum.
+
+867
+02:47:37,347 --> 02:47:38,347
+Aha.
+
+868
+02:47:58,804 --> 02:48:00,604
+4 dakikam başladı [öğrenci].
+
+869
+02:48:01,444 --> 02:48:05,324
+Tamamdır. Herkese merhaba. [öğrenci] ben.
+
+870
+02:48:06,604 --> 02:48:09,184
+Şimdi öncelikle başlık ve problem tanımından bahsedeceğim.
+
+871
+02:48:10,944 --> 02:48:13,283
+Buraları geçebiliriz [öğrenci].
+
+872
+02:48:14,404 --> 02:48:17,623
+Metodoloji veri setleri kısmında 2 veri seti kullandım.
+
+873
+02:48:17,924 --> 02:48:22,024
+Yani çoğu arkadaşımın da kullandığı veri setleri aslında bunlardı.
+
+874
+02:48:22,703 --> 02:48:26,463
+Birincisi IMDB Türküçküye, ikincisi TRSOR'u cevap.
+
+875
+02:48:26,675 --> 02:48:42,995
+Bu ikiliden sadece biner sample aldım. Bu ikisini seçme sebebim, açıkçası ikisi de asimetrik yapılar. Aşağıda da beşer tane, beşten fazla sağdakindi ama örnekleri göstermek istedim.
+
+876
+02:48:52,468 --> 02:49:07,428
+Gözlemlediğimiz zaman sorudaki içerik ile cevaplaki içerik birbiri oranlarda ortak. Buradan da şunu öngörmüştüm zaten. Bunun performansı kesinlikle sağdaki veri setene göre.
+
+877
+02:49:08,051 --> 02:49:22,251
+Daha başarılı olacağı burada öngörülebiliyor zaten. Mesela sağdaki veri setinde bir sorunun cevabı 6.3. Burada muhtemelen modeller embedding aşamasında bir sıkıntı yaşayacağını zaten buradan öngörebiliyoruz.
+
+878
+02:49:24,991 --> 02:49:28,251
+Bu hesaplama yöntemimde sağ üstte bir...
+
+879
+02:49:29,459 --> 02:49:43,951
+Debugging Mod'da bir veri yapısının örneklemesini aldığım anlık olarak. Burada top 1 ve top 5'i oluştururken yaptığım şey aslında, model tarafının embedding oluşturduktan sonra ilk 5...
+
+880
+02:49:43,951 --> 02:50:02,951
+Sıralama gerçekleştiriyorum. Burada zaten bu telesoru cevap datasetinden olan bir örnek bu. Performansı da zaten burada göreceğimiz üzere inanılmaz yüksek bir performans vermişti. O yüzden top 1 performansını da açıkça buradan gözle görebiliyoruz. Hepsi top 1'de. Sıfırıncı sorunun...
+
+881
+02:50:03,476 --> 02:50:16,376
+Yanıtı 0'da birinci sorunun yanıtı 1'de 999'a kadar böyle top 1 skoru neredeyse %100'e yakın olduğunu zaten burada gözlemleyebiliyoruz. Top 5 skorunu da böyle aslında 3'e 5 yukarı görebiliyoruz.
+
+882
+02:50:18,260 --> 02:50:21,880
+Burada da direkt tablo şeklinde bunu daha rahat görüntüleyebiliriz.
+
+883
+02:50:22,620 --> 02:50:28,500
+Sol tarafta sorudan cevabı, sağda da cevaftan soruya, top 1 ve top 1 skorlarına görüntülüyoruz.
+
+884
+02:50:29,620 --> 02:50:32,760
+Kullandığım modelleri de burada görüntülüyorum zaten.
+
+885
+02:50:33,800 --> 02:50:39,260
+Yukarıdaki en yüksek performans veren model, aşağı doğru performansı kötüleşiyor gibi düşünebilirsiniz.
+
+886
+02:50:39,360 --> 02:50:40,819
+Öyle bir sıralama gerçekleştirdim.
+
+887
+02:50:41,500 --> 02:50:46,220
+Burada bold karakterde etiketlemiş olduklarım en yüksek performans.
+
+888
+02:50:46,260 --> 02:51:02,880
+Burada gördüğümüz üzere Top 1'de Cosmos modeli ciddi bir performans gösteriyor. Genel olarak yakınlar açıkçası 3 aşağı 5 yukarı. Şu en alttaki modeller zaten eski mimarilerle geliştirilmiş modeller olduğu için daha düşük bir performans gösteriyorlar.
+
+889
+02:51:02,880 --> 02:51:13,700
+Ama Infloat, Multilingual, Base, Small, E5, Small ve Base modeli ciddi bir performansa gösteriyorlar. Hatta Top 5'de Cosmos modelinden.
+
+890
+02:51:14,260 --> 02:51:16,460
+Daha iyi bir performans gösteriyor.
+
+891
+02:51:17,427 --> 02:51:35,768
+Aynı bir Turkish QA tarafında ise performanslar başta öngördüğüm üzere dramatik bir düşüş gösterdiler. Ancak yine burada Turkish E5 Large Cosmos'un modelinin performansı diğer modellere oranla daha yüksek olduğunu görüntüleyebiliyoruz.
+
+892
+02:51:35,768 --> 02:51:42,988
+Bunun sebebinden en son slide'da bahsedeceğim zaten. Şimdi TCNA görselleştirilmesinden.
+
+893
+02:51:43,476 --> 02:52:09,536
+Bir bahsetmek istiyorum. Burada görüldüğü üzere zaten performans değerleri yüzdelik olarak çok yüksekti top 1 ve top 5 değerleri. Yani böyle bir grafik açıkçası bekliyordum zaten. Yani burada mavili kırmızı ayırt edilemiyor gibi. Hepsi üst üste binmiş. Böyle pembe ve morumsu bir görüntü ortaya çıkmış genel hatlarıyla. Yani çok belirgin bölgelerde sadece kırmızı ve mavi yani soru ve cevap ayırt edilebiliyor.
+
+894
+02:52:10,195 --> 02:52:37,036
+En kötü modelde bunlar daha ayrıt edilebilir, daha ayrıtlaşmış, daha ayrı kümelenmiş şekilde gözlemlenebiliyor. Bu tabii ki de ilk veri seti için. IMDB veri setinin zaten değerlerinin kötü olduğundan böyle bir sonuç çıkıyor karşımıza. Daha kümelenmiş sorular ve cevaplar ayrı yerlerde kümelenmiş şekilde. Üst üste binmeler daha azalmış şekilde gözlemleniyor.
+
+895
+02:52:38,195 --> 02:52:58,275
+Burada hepsinde analiz ettiğimizde ortaya çıkan sonuç Cosmos modeli daha iyi bir performans gösteriyor. Bunun nedeni Türkçe korpus ile eğitilmesi ve test konditioning gerçekleşmesi. Ayrıca high tuning gerçekleşmiş olması olduğunu düşünüyorum. Top 1 eşleşmede zaten yüksek skora elde ettiğini görmüştük.
+
+896
+02:53:06,195 --> 02:53:14,636
+Diyalog tipine geçtiğimizden dolayı asimetri arttığı için %40'lık dramatik bir düşüş yaşandığını burada görüyoruz.
+
+897
+02:53:14,636 --> 02:53:27,636
+Onun haricinde eski mimarilerle eski mimarilere inan dil modellerinde rekabetteki zaten en geride kaldığını iki farklı verisiyetinde de gözlemlemiştik.
+
+898
+02:53:29,907 --> 02:53:36,907
+Top 1 konusunda sıkıntı yok açıkçası Koldoğlu tarafında ama...
+
+899
+02:53:45,556 --> 02:53:54,096
+Top 5 skorlarının daha yüksek olduğunu, yalnız top 1'i de daha düşük olduğunu zaten ikinci tabloda görmüştük. Bilgisayar Mühendisliği için teşekkür ederim.
+
+900
+02:53:54,956 --> 02:53:56,996
+Teşekkürler [öğrenci], [öğrenci].
+
+901
+02:53:59,736 --> 02:54:02,435
+Şimdi [öğrenci] ile devam edelim.
+
+902
+02:54:03,236 --> 02:54:05,016
+Merhaba hocam, paylaşıyorum ekranımla.
+
+903
+02:54:11,763 --> 02:54:35,123
+İlk başta kullandığım modellerden bahsedeyim. İlk başta Mutlilingue A5 Large, BGM3, QN3 Embedding, Jina Embedding V5, Paraphrase Mutlilingue MPNet ve Türk işe A5 Large kullandım tabii ki. Bunlardan sadece Paraphrase daha az parametre sayısında. Diğerleri az çok aynı gibi.
+
+904
+02:54:36,340 --> 02:54:47,640
+Şimdi kullandığım virüs setlerine geleyim. İlk olarak Climate Change QA kullandım. Bu sadece iklim değişikliği şeylerinden oluşuyor. Soruları bu soru cevaplarından oluşuyor.
+
+905
+02:54:47,640 --> 02:55:03,640
+TR Extractive QA'de genel kültür ve tarih sorularından oluşuyor. Burada göreceğimiz şekilde Climate Change QA'de sorular birbirine benzer kelimeleri kullanıyorlar iklim değişikliği.
+
+906
+02:55:04,180 --> 02:55:22,359
+Orman, su. TR Extractive'de de sorular birbirinden oldukça farklı. Farklı tarih soruları var. Her soru birbirinden farklı kelimeleri kullanıyor. Bunun sonucunu biraz sonra göreceğiz.
+
+907
+02:55:25,180 --> 02:55:30,939
+Şimdi ilk olarak Climate Change Örke'nin sonuçlarına gelelim.
+
+908
+02:55:32,020 --> 02:55:48,920
+Sorudan cevabı en yüksek Jina sonuç aldı. 41 ve 67 top 1 top 5 sonuçlarıyla. Cevaptan soruya ise Cosmos modeli daha yüksek sonuç aldı.
+
+909
+02:55:50,080 --> 02:55:58,140
+Diğer 3 model az çok benzer soru, benzer performans gösterdiğini görüyoruz ama parafraz modeli.
+
+910
+02:55:58,451 --> 02:56:06,251
+Hem az parametreli hem de bir paraphrase modeli olduğu için baya düşük oluş verdiğini görüyoruz.
+
+911
+02:56:06,251 --> 02:56:25,251
+TSN sonuçlarına bakarsak, çoğu böyle homojen doğmuş gibi gözüküyor. Yani kümelenmiş gibi gözüküyor ama BGM3 modelinde burada soru ve cevabın bariz bir şekilde ayrıldığını görüyoruz.
+
+912
+02:56:26,260 --> 02:56:44,840
+Bu ayrılmada cevaplar soruları bir hilal şekilde sarmış gibi. Bunun sonucunda ise sorudan cevaba performansı, cevaptan soruya performansından alt puan daha yüksek gibi.
+
+913
+02:56:52,500 --> 02:57:02,659
+Açıda gidiyor ama cevaptan soruya sorular kümelendiği için soruları birbirinden ayırmak zorlaşıyor.
+
+914
+02:57:03,840 --> 02:57:11,600
+Diğer modellere bakarsak az çok belirli kümeler oluşturduğunu görüyoruz.
+
+915
+02:57:12,628 --> 02:57:23,368
+Farah Face düzgün dağılmış gözüküyor ama dikkatli bakarsak bu kümelerin birbiriyle bağıntısız olduğunu görüyoruz. Onun için düşük performans sağlamış.
+
+916
+02:57:25,247 --> 02:57:37,888
+Gina ve Yeti C. Cosmos en iyi modellerden belirli bir şekilde kümelenmiş ve kümeler doğru bir şekilde dağılmış.
+
+917
+02:57:39,603 --> 02:58:06,303
+TR-TV'ye geldiğimizde burada çok daha yüksek performanslar sağladığını görüyoruz. Çünkü Climate Change'in aksine burada çok daha farklı soru çeşitleri var. Climate Change'de kullanılan kelimeler, sorular birbirine çok benzer olduğu için modeller ayırt etmekte zorlandı. Ama burada daha kolay ayırt ettiğini görüyoruz.
+
+918
+02:58:06,835 --> 02:58:22,395
+Burada modellerimizin sonuçları az çok aynı gibi. Sadece paraphrase modelimiz yine düşük kalmış ve YTC Cosmos modelimiz en yüksek sonuçları almış hem sorudan cevabı hem de cevaptan soruya.
+
+919
+02:58:24,175 --> 02:58:28,335
+TSN sonuçlarına geldiğimizde bu sefer...
+
+920
+02:58:28,335 --> 02:58:29,995
+Biraz hızla övlenmeyiz.
+
+921
+02:58:32,020 --> 02:58:50,260
+Burada oldukça homojen daldığını görüyoruz. Burada sadece parafraz modeli biraz ayrıtı edebiliyoruz. Onun haricinde üst üste sonuçlar oturmuş durumda. Bu kadar hocam. Dinlediğiniz için teşekkürler.
+
+922
+02:58:52,100 --> 02:58:53,440
+Teşekkürler [öğrenci].
+
+923
+02:58:53,440 --> 02:58:58,200
+Evet şimdi [öğrenci].
+
+924
+02:58:58,835 --> 02:59:00,835
+[öğrenci]'la devam edelim.
+
+925
+02:59:00,835 --> 02:59:02,835
+Sesim geliyor mu?
+
+926
+02:59:02,835 --> 02:59:04,835
+Geliyor [öğrenci].
+
+927
+02:59:10,963 --> 02:59:17,963
+Ben de iki tane veri seti seçtim. İlki işte az önce arkadaşlar da bahsetmişti aslında.
+
+928
+02:59:21,716 --> 02:59:43,396
+Hukuk üzerine bir veri seti, bir soru cevap. Aşağıda da bir örneği var aslında. Burada da şunu sadece söylemeyi istiyorum. Genel olarak soru ve cevaplar bu şekilde. Çok benzer yapıları var. İşte istekat davası geçmiş burada. Burada da yine aynı şekilde bir yapı geçiyor. Soru cevaplarının geneli bu şekilde.
+
+929
+02:59:44,340 --> 03:00:06,700
+İkincisi ise daha genel bir domeni kapsayan Turkish Köye isimli veri seti. Bu da işte burada görülen domenlerde çeşitli soru ve cevaplar sunuyor. Modeller ise ilk olarak Cosmos, sonra E5 Small Octane Embedding kullanıyorum. Daha sonra Jine AI ve QN3 ve BGE M3 kullanıyorum.
+
+930
+03:00:07,347 --> 03:00:23,028
+Hızlıca sonuçlara da geçtiğim zaman, burada ilk gösterdiğim hukuk dataset'inde en yüksek şeyi BGM3 alıyor. Bu da az önce bahsettiğim durumdan dolayı olduğunu düşünüyorum.
+
+931
+03:00:23,028 --> 03:00:34,028
+Aslında bu model en küçük ve Türkçe'ye fine-tune edilmiş bir model de değil. Çoklu dille sahip bir model. Bunun ardından ise...
+
+932
+03:00:35,123 --> 03:00:51,863
+Kozmoz 3. sırada gelmiş. Burada da aslında bu grafik üzerine sundum bu kısmı. Burada top 1 ve top 5 sonuçları olacak şekilde. Top 5'lerin hepsi zaten daha yüksek sonuç vermiş beklediğimiz gibi.
+
+933
+03:00:52,915 --> 03:01:07,895
+Tabbirler de burada görülebiliyor. TSN'lere baktığımız zaman genel olarak bir kutuplaşma bulunmuyor. Sorular ve cevaplar birbirine yakın olarak konumlanmış. Burada da yine görülebildiği şekilde.
+
+934
+03:01:16,564 --> 03:01:36,203
+Tab 1 sonuçları baya bir düştü. Tab 5 ise yine öncekine yakın ama o kadar yüksek değildi. Burada en yüksek sonucu da Kozmoz aldı. Tab 1'de 0.606 soru cevapta. Cevap soru da 0.673 aldı. Soru cevap daha yüksek çıkmış.
+
+935
+03:01:36,755 --> 03:01:48,515
+Tab 5'te ise 0.8 ve 0.9 şeklinde sonuç almış. Burada da yine grafik üzerinde de göstermek istedim.
+
+936
+03:01:48,515 --> 03:01:56,195
+İşte görüldüğü şekilde Tab 5'ler oldukça yüksek ama Tab 1 0.5-0.6 civarında kalmış.
+
+937
+03:01:56,691 --> 03:02:12,592
+TSN çizimlerinde bir önceki dataset kadar olmasa da yine bir kümelenme en azından bulunmuyor burada. Bu şekilde yine aslında soru ve cevap noktaları birbirine yakın olarak çıkmış TSN çizimlerinde.
+
+938
+03:02:24,691 --> 03:02:48,752
+Aslında başarı da ciddi bir avantaj sağladığını görmüş olduk. Ve işte top 1'de direkt olarak sonucu bulamasa da top 5'de çok yüksek oranla 0.9 %90 oranla soru ve cevap birbirine benzeyen soru ve cevapları bulabiliyor. Anlatacaklarım bu kadardı. Dinlediğiniz için teşekkür ediyorum.
+
+939
+03:02:52,435 --> 03:03:04,556
+Teşekkürler, [öğrenci]. [öğrenci]. Merhaba hocam. İyi günler. Umarım gününüz iyi geçiyordur.
+
+940
+03:03:07,695 --> 03:03:11,415
+Hocam tüm ekranımı paylaşıyorum şimdi. Geldim hocam.
+
+941
+03:03:11,415 --> 03:03:13,655
+Geldi.
+
+942
+03:03:20,340 --> 03:03:45,140
+Hocam şimdi başlamadan önce iki şey söylemek istiyorum. Birincisi ben ödev verildiği gün bir yere not almıştım yapacaklarımı ve orada sorudan cevabı not almışım ama cevaptan soruyu not almamışım. Bir daha da hiç ödevin şeyini okumadım. O yüzden benim eksik oldu o açıdan. Onu söylemek istiyorum. Sadece sorudan cevaba statları almış oldum. Yani cevaptan soruları tekrardan almadığım için o kısım yarım olacak. Kusura bakmayın şimdiden.
+
+943
+03:03:46,804 --> 03:04:02,404
+Hemen veri setlerimle başlıyorum. Seçtiğim veri setlerimle. Ben şöyle bir şey yapmayı amaçlıktım hocam burada. İki tane farklı veri seti yerine bir bu kim yönelik olmak ister sorusunun veri setleri. İşte Türkçe için Türkçe kim yönelik olmak programının.
+
+944
+03:04:03,059 --> 03:04:24,619
+Olmak İstel programının soru ve cevaplar 4 ışıktan ben doğru ışıkları bulup soru cevap ikilleri oluşturdum. Veri seti 1'de genel kültür sorularını koydum sadece. Yani modellerin çok genele yayılan bir spektrumda nasıl başarı vereceğini, anlamsız olarak gibiden uzak soru ve cevaplarda nasıl vereceğini bulmak istedim. İkincisinde ise alt kategorilerden kullanarak...
+
+945
+03:04:25,075 --> 03:04:36,135
+Örneğin bilim, edebiyat, sanat gibi. Mesela bir sanat sorusunu acaba sanat cevaplarını bulabiliyor mu? Yani anlamı anlayabiliyor mu en azından? Kategorisel olarak bunu görmek istedim. O yüzden böyle iki veri seti kullandım.
+
+946
+03:04:36,855 --> 03:04:42,195
+Anlamadım. İki tane, yani veri hükümeti bir tane ondan iki tane mi çıkarttım? Onu anlayamadım.
+
+947
+03:04:42,855 --> 03:04:46,255
+Yok hocam, altı bin tane, üç bin beş yüz tane falan soru vardı.
+
+948
+03:04:46,815 --> 03:04:47,355
+Hangisinde?
+
+949
+03:04:48,255 --> 03:04:51,395
+Bir tane veri seti vardı hocam. Kim bilinen olmak ister?
+
+950
+03:04:52,020 --> 03:04:53,380
+Tamam, o hükmesinde.
+
+951
+03:04:54,600 --> 03:04:56,860
+Evet, tek veri setinden ben şöyle bir şey yaptım.
+
+952
+03:04:56,920 --> 03:04:58,819
+3.500 sorudan 1000 tane genel kültür aldım.
+
+953
+03:04:58,899 --> 03:05:02,219
+Genel bağlamda nasıl cevap verdiğini bilmek için anlayayım.
+
+954
+03:05:02,639 --> 03:05:04,300
+Soruların birbiriyle hiç alakası yok neredeyse.
+
+955
+03:05:04,399 --> 03:05:08,360
+Atıyorum sabah oynayınca günaydın denilir falan gibi sorular var işte.
+
+956
+03:05:09,079 --> 03:05:10,579
+Diğeri de bilimsel sorular var mesela.
+
+957
+03:05:10,680 --> 03:05:12,399
+Yine aynı veri setinden ama sadece bilime özel.
+
+958
+03:05:12,600 --> 03:05:13,840
+Onları birleştirmiş oldum ben.
+
+959
+03:05:13,840 --> 03:05:17,836
+Bir veri setinden 2 tane biner soru cevaplık oluşturdum.
+
+960
+03:05:18,067 --> 03:05:35,188
+İki farklı tamamen konu yapmak yerine, çünkü onunla mesela bin tane bilim sorusu olacaktı. Ya da bin tane yine genel sorular olacaktı. Ben böyle bir genel sorular bir verisiyetimde olsun. Diğerinde de işte alana yönelik sorular da olsun diye aynı verisiyetimden bilimle alakalı soruları mesela iki yüz tanesini koydum, iki yüz tane edebiyat koydum gibi.
+
+961
+03:05:36,608 --> 03:05:41,228
+Yani genel kültürün içerisinde o bilim soruları falan gibisinden şeyler yoklar, öyle mi?
+
+962
+03:05:41,847 --> 03:05:42,608
+Yok hocam, hayır.
+
+963
+03:05:43,247 --> 03:05:44,567
+Peki, tamam devam edelim.
+
+964
+03:05:46,899 --> 03:06:10,500
+Modelleri de burada görebiliyoruz. QN3 06B ve diğerlerini de burada görebiliriz. Vektör boyutları olarak da 1024-1024. Diğerlerinin hepsi 1024. Dediğimiz şartlara da bakarak ben de aldım. Sonra metrik uygulama kısmına geçiyorum. Metrikler zaten top 1 ve top 5 bizden beklenen de ben üstüne MRR.
+
+965
+03:06:10,899 --> 03:06:17,619
+Ortalama Güven Skor ve Kategori Uyumu diye bir şey koydum. Bu da benim kategorisel bir veri istetim var ya. Orada mesela 5 cevap buldu.
+
+966
+03:06:17,619 --> 03:06:23,939
+Bulduğu cevapların kaçı soruyla aynı kategoride? Bunun istatistiğini koydum ekstra bunların yanında.
+
+967
+03:06:23,939 --> 03:06:28,419
+Burada sonuçları göreceğiz şimdi. Veri isteti 1 ve veri isteti 2 için.
+
+968
+03:06:28,419 --> 03:06:37,619
+Bu arada hocam şöyle de bir şey var. Instruction olarak Benemsini ZeroShot yaptım. Sadece Türk İşe'ye 5 hariç. O yüzden yani...
+
+969
+03:06:38,036 --> 03:06:56,496
+Şeyleri bilmiyorlar. Mesela bazı arkadaşları gördüm sonlarında atıyorum sana şu verilecek, şu cevap ekleniyor gibi şeyler koymuşlar. Belki o başarı etkileyebilir de hepsini ziraşat yaptım. Burada sonuçları görebiliyoruz. Kalm ve Gemma hiç bulamadı neredeyse. Burada teknik bir hata olduğunu düşünmüyorum. Tekrar kodları inceledim ama.
+
+970
+03:06:57,172 --> 03:07:24,311
+Bunlar sıfıra yakın oldu. Onun harici Kıven, Multilingual ve Türkçe 5 %3'ler, %10'larda, %12'lerde genel kültürde. Bunun da şöyle neden olduğunu şöyle düşünüyorum. Veri setinde genel kültür olduğu için ve bu Türkçe, pardon hocam, kimliğinden olmak ister yarışmasının soruluğu ve cevapları olduğu için mesela cevaplar genelde hep tek kelimeli ve genel kültür sorularında mesela çok özel isim sorma, özel şehir sorma ve anlamsal olmayan
+
+971
+03:07:24,724 --> 03:07:41,764
+Birbirinden bağımsız soru cevap ikilleri çok fazla var. O yüzden aynı sorunun zaten anlamından uzak cevapları olduğu için bir de doğru cevabı bulması gerçekten çok zorlaşıyor bu M-Belik modellerinin. Yine Türkçe üzerine eğitim aldığı için bu alanda diğerlerinden daha iyi oldu.
+
+972
+03:07:42,484 --> 03:07:45,123
+[öğrenci] şeyi soracağım. O MR skorunu nasıl hesaplıyorsun?
+
+973
+03:07:46,504 --> 03:07:47,664
+Hocam şöyle hesapladım.
+
+974
+03:07:48,048 --> 03:08:04,188
+1 ise, yani doğru cevap mesela top 1'de ise 1 oluyor onun skoru. 2'ye geldiğinde 1 bölü 2 oluyor. 3'e geldiğinde 1 bölü 3 oluyor. 4'e geldiğinde 1 bölü 4 ve 1 bölü 5. Sonra onların ortalamalarına alınıyor. Eğer hiçbirinde yoksa 0 oluyor zaten.
+
+975
+03:08:05,648 --> 03:08:08,007
+O zaman maksimum kaç olabilir MRR skoru?
+
+976
+03:08:12,115 --> 03:08:27,695
+Hocam, toplaya toplaya gidiliyor. Mesela sıfırsa, atıyorum sıfır oluyor. Bin olabilir. Onu da yüzdelik açısından döldüğümüzde yüzde on yedi olmuş. Mesela burada yani yüz yetmiş olmuş oluyor. Yanlış mı olmuş hocam arası?
+
+977
+03:08:28,716 --> 03:08:30,896
+Bilmiyorum nasıl hesaplığını ben soruyorum sana zaten.
+
+978
+03:08:31,636 --> 03:08:51,216
+Hocam şöyle yaptım. Mesela birinci, hiç bulamadıysa sıfır zaten hemen. Bin tane soru var. Eğer birinci şıkta bulduysa bir puan alabiliyor o sorudan. Ortalama yapmadım, toplamını yaptım. Onu yanlış söyledim. Yani bir puan aldı mesela. Atıyorum yüz yetmiş tane soruyu buldu. Yüz yetmiş bölü binden yüzde on yedi puan almış oluyor.
+
+979
+03:08:53,716 --> 03:08:55,716
+Bir de bulamadı, iki de buldu o zaman.
+
+980
+03:08:56,371 --> 03:08:58,691
+0-5 puan almış oldu hocam oradan.
+
+981
+03:08:58,691 --> 03:08:59,691
+3
+
+982
+03:08:59,691 --> 03:09:02,691
+İşte 1-3, 1-4, 1-5
+
+983
+03:09:02,691 --> 03:09:04,691
+Kaça kadar gidiyorsun?
+
+984
+03:09:04,691 --> 03:09:07,651
+5 tane olduğu için 1-5'e kadar gidiyor.
+
+985
+03:09:09,491 --> 03:09:13,571
+Peki, anladım. Tamam. Bu ortalama güven skonu nasıl hesaplıyor peki?
+
+986
+03:09:13,571 --> 03:09:18,931
+Hocam, bunda da birincinin benzerliğinden ikincinin benzerliği çıkarılarak bulunuyor.
+
+987
+03:09:18,931 --> 03:09:23,251
+Bunun aslında çok doğruluğa bir etkisi olmadığını sonradan gördüm ben de.
+
+988
+03:09:23,347 --> 03:09:32,548
+Koyayım dedim. Anladım. Anladım. Bir anlamı olmadığını çıkardım. Başarıyı ölçmüyor. Kategori uyumunu da az önce anlatmıştım zaten. Bu da ortalamaları alınıyor. Tamam tamam. Devam edelim.
+
+989
+03:09:33,108 --> 03:09:49,288
+Karmı verisiyetine geçtiğimizde ise mesela bu genel spektrum birazcık daha küçüldüğü için mesela bir bilim sorusunu en azından bilim olarak burada zaten göreceğiz. Mesela bilim olduğunu falan anlayabiliyor en azından modeller. O yüzden başarılar da genel verisiyetine göre çok geniş spektrumlu verisiyetine göre artıyor.
+
+990
+03:09:50,067 --> 03:09:54,927
+Burada hepsinin genelde arttığını görüyoruz. Mesela burada iki katını çıkıyor. Burada yine artış var.
+
+991
+03:09:55,447 --> 03:10:01,067
+Genel olarak özelleşmiş veri alanında olan şeyler bir arada bulduğunda,
+
+992
+03:10:01,587 --> 03:10:07,987
+bilim soruları tarihten daha uzaklaşabildiği için modeller bunları daha iyi anlamış diye yorumladım.
+
+993
+03:10:08,884 --> 03:10:31,884
+Yorumları geçiyorum. Burada da bir tane daha örnek koydum. Mesela karma veri setiyle sadece bilim arasında ortalamaları alınan nasıl oluyor? Burada işte bilim veri setinde mesela bilim sonuçları üzerinden yorumlar var. Yani bir bilim sorusunu, 200 tane bilim sorusunu mesela %20'sini bulabilmiş. Karma'da ise %15. Demek ki bilimi genel olarak karma'dan daha iyi biliyor gibi bir yorum yapabildim buna. O yüzden bunu koydum.
+
+994
+03:10:32,788 --> 03:10:39,987
+Genel kültür de, ikiyüzlü genel kültür ve bu 1000 tane genel kültür olduğu veri sete. Bu 200 tane genel kültür olduğu veri sete.
+
+995
+03:10:40,288 --> 03:10:43,987
+Burada da en iyi 4 modeli koydum. Diğerleri çok kötü olduğu için, onu da söyleyeyim.
+
+996
+03:10:44,188 --> 03:10:53,188
+Burada da 1000 tane genel kültür sorusundansa, 200 genel kültür ise 200 tane fark dikkatörde olan sorularda top 1'lerin artış gösterdiğini görebilirsiniz her şeyde, modelde.
+
+997
+03:10:53,587 --> 03:10:55,387
+Bunu da belirtmek istedim.
+
+998
+03:10:56,788 --> 03:10:58,987
+Hemen geçeyim TSN'e de göstereyim.
+
+999
+03:11:00,468 --> 03:11:17,468
+Burada bir model için 1000 soru 1000 cevabı toplam 4000 tane vektör var. 4000 vektörün ikiye boyuta indirilmesiyle TSN'i yaptım. Burada kategorilere göre renklendirdim. Sorular yıldız, cevaplar yuvarlak. Burada zoom yaptığımızda...
+
+1000
+03:11:18,932 --> 03:11:25,932
+Türk İşe E5 modeli bir kere şunu görebiliyoruz. Genel kültür mavi olduğu için 1200 tane ve hepsinin dağıldığını görebiliyoruz.
+
+1001
+03:11:26,252 --> 03:11:34,492
+Mesela ama morlar neymiş hemen bakayım morlara. Coğrafya alanının burada olduğunu anlayabiliyor. Anlamsız olarak nerede olduğunu yoğunlaşabiliyorlar.
+
+1002
+03:11:35,252 --> 03:11:41,432
+Burada soru cevaplar çok karışmış. Hani soru cevap hangisi soru hangisi cevap model çok iyi anlayamamış. Genelde dağılım görülmüş.
+
+1003
+03:11:42,067 --> 03:12:02,987
+Yine az önce dediğim gibi yeşiller yine sağ altta bulmuş. Yani Türkçe E5 modeli kategoriyi anlayabiliyor anlamsal duzayda. E5 multilingü gönderajı en başarılı ikinci model olduğu için onu da buraya koydum. Bu da daha iyi. Yani soru ve cevapları daha iyi anlayabilmiş. Mesela sorular buraya yoğunlaşarken cevaplar birazcık daha buraya yoğunlaşmış. En azından sorular burada daha fazla. Yine maviler genel olarak yayılımda.
+
+1004
+03:12:03,407 --> 03:12:27,528
+Gördüğünüz gibi mollar yine bir yerde bütünleşmişler. Yeşiller de mesela bir yerde bütünleşmişler. Demek ki bu da domeni iyi anlayabiliyor anlamını çıkardım buradan. Diğer grafikler de var burada. Yine modellerin oluşturduğu grafikleri de koydum. En kötü mesela model buydu. Onda da baktım. Soru ve cevapları çok iyi anlamış. Mesela bu gözüme çarptı gemmada. Soru ve cevap şeyini bayağı yayırmış. Bu bayağı kötü.
+
+1005
+03:12:28,255 --> 03:12:32,456
+Bilmiyorum, kodları falan değil ama bir arıza olduğunu düşünmüyorum. Belki bir yanlışlık yapmışımdır.
+
+1006
+03:12:34,175 --> 03:12:48,555
+Son olarak, tabi burada özetleri koydum. Veri setinin sadece tek cevaplardan oluşması ve çok genel bir anlamda olması, çok fazla özel isim bulundurması, çok fazla Türkçe üzerine lokalleşmesi mesela, çok fazla Türkçe ile alakalı, Türkiye ile alakalı soru olması baya başarıyı düşürdü.
+
+1007
+03:12:49,971 --> 03:13:14,871
+Bir de şeyde, bu iki kat, işte veri seti birinin genel olması, veri seti iki de alt kategorilerin olması. Ondan da şunu anladık. Eğer kategoriler ve sorular birbirinden uzak olursa, model tabii ki de anlam olarak daha yakını bulmakta daha iyi çalışıyor. Daha çok fazla genel olmasından özelleşmiş sorulara daha iyi ulaşabiliyor. Bu iki sorununu çıkardım bu çalışmadan. Bu kadardı hocam benim çalışmam. Teşekkür ederim dediğiniz için.
+
+1008
+03:13:15,216 --> 03:13:18,175
+Teşekkürler [öğrenci]. Eline sağlık.
+
+1009
+03:13:18,995 --> 03:13:19,415
+Tamamdır.
+
+1010
+03:13:19,415 --> 03:13:21,735
+[öğrenci].
+
+1011
+03:13:24,515 --> 03:13:25,716
+Evet hocam.
+
+1012
+03:13:26,796 --> 03:13:27,935
+Evet sendeyiz.
+
+1013
+03:13:29,855 --> 03:13:31,275
+Tamam hocam hemen paylaşıyorum.
+
+1014
+03:13:52,147 --> 03:14:14,407
+Evet [öğrenci], hızlı bir sunum bekliyorum senden. Tamam hocam, hemen başlıyorum. Burada kullandığım modeller, QN3, F2LLM, BGM3, JINA, CALM ve Turkish E5 Large Modellerini kullandım. Burada da aktif parametrelerini görüyoruz.
+
+1015
+03:14:15,028 --> 03:14:35,347
+Veri seti olarak da iki farklı veri seti kullandım. TKVT ve Türk İş Histori Kovat. TKVT da Türk ve İslam bilim tarihi üzerine olan bir veri seti. 8300 soru cevap çeşitinden rastgele 1000 tanesini seçtim. Burada Kutbettin Şirazi kimden ders almıştır gibi sorular var.
+
+1016
+03:14:42,835 --> 03:15:01,655
+Soru-cevap çiftinden 1000 tanesini burada aldım. Sonuçta geçecek olursam eğer, burada şunu görüyoruz. Türk E5 Large modeli büyük bir farkla daha iyi sonuçlar üretti.
+
+1017
+03:15:03,636 --> 03:15:10,636
+Onun dışında diğer modellerde aşağı yukarı benzer sonuçların olduğunu görüyoruz.
+
+1018
+03:15:10,636 --> 03:15:21,636
+Onun dışında burada da cevaptan sonra olan sonuçları görüyoruz.
+
+1019
+03:15:26,067 --> 03:15:38,688
+verdiğini gözlemliyoruz. Ama tabii ki işte sordan cevaba olan sonuçlarda karşılaştıracak olursak sordan cevaba olanlara da daha iyi sonuçlar vermiş.
+
+1020
+03:15:39,407 --> 03:15:50,268
+TSN analizine baktığımızda da Türkçeye Beşilerç'ta soru ve cevapların birbirleriyle daha iç içe girdiğini görüyoruz.
+
+1021
+03:15:54,260 --> 03:16:10,800
+Bu şekilde sorular bir tarafa, cevaplar bir tarafa olacak şekilde ara ara şeyleri gözlemliyoruz. Bazı noktalarda iç içe olduğunu gözlemliyoruz. Ama genel olarak sınıfsal bir ayrım var gibi olduğunu görüyoruz.
+
+1022
+03:16:10,800 --> 03:16:16,300
+Buradan da sonucu çıkarttım.
+
+1023
+03:16:17,075 --> 03:16:24,935
+Türkçe Y5 Large modeli Türkçe veri setiyle Fine Tuning yapıldığı için daha iyi sonuçlar vermiş olabilir.
+
+1024
+03:16:24,935 --> 03:16:28,935
+Bunun dışında TQAT veri seti de sonuçlara baktığımızda...
+
+1025
+03:16:28,935 --> 03:16:30,935
+TQAT veri seti...
+
+1026
+03:16:33,203 --> 03:16:58,484
+Türk History Quad'a göre daha iyi sonuçlar vermiş. Buradan da şu çıkartımı yaptım. Veri setini incelediğimde TQAD'daki cevaplar daha uzun cevaplardı. Derste de gördüğümüz üzere, S-T-Vert ve Vek'te vs. Daha uzun cevaplar olduğu zaman yanındaki kelimelerle de bağlan ilişkisini öğrenebildiğinden dolayı daha iyi temsiller üreten.
+
+1027
+03:16:59,219 --> 03:17:05,260
+Embedik vektörlerinin oluşturduğunu düşünüyorum. Sonuçlarım da bu şekilde hocam.
+
+1028
+03:17:07,799 --> 03:17:09,860
+Teşekkürler [öğrenci], en ne sağlık.
+
+1029
+03:17:10,500 --> 03:17:11,219
+Teşekkürler hocam.
+
+1030
+03:17:11,979 --> 03:17:13,100
+[öğrenci].
+
+1031
+03:17:13,559 --> 03:17:15,100
+Merhaba hocam, sesim geliyor mu?
+
+1032
+03:17:15,459 --> 03:17:15,899
+Geliyor.
+
+1033
+03:17:16,559 --> 03:17:18,059
+Hemen paylaşmamı yapıyorum.
+
+1034
+03:17:22,739 --> 03:17:39,459
+Evet. Hızlıca ilerleyecek olursam burada iki tane veri seti seçtim. Burada seçtiğim veri setlerinden AXR Türkçüköy'i zaten bazı arkadaşlarımız da kullanmıştı. Burada üç tane alandan sorular ve cevaplar var.
+
+1035
+03:17:40,739 --> 03:17:47,940
+Wikirek TRD'de de Wikipedia'dan alınmış genel sorular bulunmakta. Burada çoğunlukla birbirinden bağımsız sorular var.
+
+1036
+03:17:48,852 --> 03:18:15,572
+Örnek olarak bu şekilde sor ve cevaplar. Seçtiğim modelleri de gösterecek olursam, burada MTB sıralamasında ilk yüzde olan ve 1 milyar parametreden daha az ve multilingü olan modelleri seçtim. Burada bir tane 300 milyon parametre, diğerleri 500-600 arasında değişen parametreler var.
+
+1037
+03:18:18,067 --> 03:18:25,487
+Bu Pipeline'ın bu şekilde sonuçlara gelecek olursak sorudan cevap bulma konusunda.
+
+1038
+03:18:25,487 --> 03:18:31,127
+AXR veri setinde top 1 bu şekilde top 5 bu şekilde.
+
+1039
+03:18:31,127 --> 03:18:38,287
+Wikirac'te de sağdaki gibi. Burada Wikirac ile AXR arasında bir fark olduğunu görebiliyoruz.
+
+1040
+03:18:38,287 --> 03:18:42,907
+Bunun da nedeniyle ilgili biraz daha biraz sonra açıklama yapacağım.
+
+1041
+03:18:43,763 --> 03:18:51,763
+Bu da cevaptan soruya şeklinde ilerlediğimiz zaman. Burada ekürisiler biraz daha yükseliyor.
+
+1042
+03:18:51,763 --> 03:19:00,763
+Burada da cevapların aslında daha fazla bilgi içerdiğini ve bu sayede soruları bulmakta daha başarılı olduğunu görebiliyoruz.
+
+1043
+03:19:00,763 --> 03:19:05,763
+Burada bir dikkat çekmek istediğim şey de mor olan yani GT Multi.
+
+1044
+03:19:06,388 --> 03:19:13,388
+modelinin en düşük skoru verdiği, bu da 300 milyon parametreli olan modelimiz.
+
+1045
+03:19:13,388 --> 03:19:25,088
+Sonuçları burada tabloda gösterecek olursam, çoğunlukla Türkçe 5 Large modeli daha iyi, en iyi sonuçları verdiğini görebiliyoruz. Sadece...
+
+1046
+03:19:25,087 --> 03:19:35,247
+Sorudan cevaba kısmında F2LLM modeli daha iyi bir sonuç vermiş. Ancak TÜRKŞ5'li harçta çok yakın sonuçlar verdiğini görebiliyoruz.
+
+1047
+03:19:36,608 --> 03:19:44,808
+Daha sonra burada tezheniyi görselleştirmesinde AXR veri setinin bütün modeller üzerindeki şeylerini görebiliyoruz.
+
+1048
+03:19:45,363 --> 03:19:56,123
+Burada Türk İş E5 Large en iyi sonuçlardan birini vermişti zaten. Burada homojen bir dağılım, neredeyse homojen bir dağılım olduğunu görebiliyoruz.
+
+1049
+03:19:56,123 --> 03:20:09,083
+Üst üste bilen. Burada GTE multi en kötü sonucu vermişti. Burada sorular ve cevaplar arasında kümeleşmeler olduğunu görüyoruz. Bu da olumsuz sonuçlar olduğunu gösteriyor.
+
+1050
+03:20:10,644 --> 03:20:22,884
+Burada bu sonuçlar Türk İşi E5larj modelinden soru ve cevapların görseldeki yerlerini gösteriyor. Aslında mesafelerini çoğunlukla birbirine yakın sonuçlar olduğunu görebiliyoruz.
+
+1051
+03:20:23,664 --> 03:20:35,963
+Soru ve cevapların. Bu da GT modelinin sonuçları. Burada yine aynı sorular ve cevapları göstermeye çalıştım ve birbirleri arasında çok fazla mesafe olduğunu görebiliyoruz.
+
+1052
+03:20:37,236 --> 03:20:52,936
+Burada bir örnek olarak AXR modelinin, AXR verisletinin Türk İşe 5 larcındaki sonuçlarını gösterdim. Burada en iyi sonuç olarak bulmuşlar top 1 olarak. Ancak sorular ve cevapların aslında birbirine ne kadar yakın olduğunu görebiliyoruz.
+
+1053
+03:20:52,936 --> 03:21:01,996
+Burada C dilinde hafıza bloklarının nasıl yönetilir, C dilinde bellek yönetimi nasıl yapılır gibi birbirine çok benzer sorular ve cevaplar olduğu için.
+
+1054
+03:21:03,252 --> 03:21:05,252
+Sonuçlar biraz daha düşük geldi.
+
+1055
+03:21:07,252 --> 03:21:19,252
+Burada VikiRag için görselleştirmeyi yaptığımız zaman çoğunlukla birbirinin üstünde binen ve güzel bir şekilde dağılmış olduğunu görebiliyoruz çoğu modelimizde.
+
+1056
+03:21:19,252 --> 03:21:27,244
+Sadece GT modelinde özellikle şuralarda mesela cevaplar dağılmış sorulardan ayrı bir şekilde.
+
+1057
+03:21:28,051 --> 03:21:44,791
+İlerleyecek olursam, burada Türkşehir 5'in VTREG üzerindeki sonuçlarını görüyoruz. Burada hemen hemen zaten dipdip olduklarını, aralarında herhangi bir neredeyse mesafe olmadığını görebiliyoruz. Sadece burada bir mesafe var.
+
+1058
+03:21:46,100 --> 03:21:57,779
+Burada yine GT modelinin sonuçlarında yine burada kümelenme olduğunu söylemiştim biraz önce. Birbirinden uzak olduğunu görebiliyoruz cevaplar ve soruların bazı kısımlarda.
+
+1059
+03:21:57,779 --> 03:22:10,779
+Burada bir kirek Türk işte sonuçları görüyoruz. Bir tane soruda sadece sorudan cevaba kısmında cevabı bulamamış. Burada da yani içerisinde geçen...
+
+1060
+03:22:11,316 --> 03:22:22,956
+Başka bir tane daha cevap olduğu için aslında ondan bulamamış. Yoksa çoğunlukla birbirinden farklı konular olduğu için doğru bir şekilde tabirde buluyordu sonuçları.
+
+1061
+03:22:23,736 --> 03:22:32,684
+Genel bir yorum yapacak olursak veri kümesindeki bu veri kümesinin içindeki dağılımın...
+
+1062
+03:22:32,724 --> 03:22:51,904
+Sonuçları nasıl etkilediğini görebiliyoruz. Birbirinden farklı konular varken %99'a yakın başarı gösteriyorken Aixar'da farklı aynı 3 tane konudan sorular olduğu için burada ekürisimiz düşüyor.
+
+1063
+03:22:52,783 --> 03:22:59,183
+Türkçe modelimiz, Türkçe'ye özel fine-tune edilmiş modelimiz daha iyi sonuçlar verdiğini görebiliyoruz genel anlamda.
+
+1064
+03:23:00,180 --> 03:23:12,899
+Sorudan cevaba, cevaptan soruya kısmında da cevaptan soruya da cevabın daha fazla semantik bilgi içerdiği için soruyu bulma konusunda daha iyi sonuçlar verdiğini gördük.
+
+1065
+03:23:13,700 --> 03:23:19,100
+Parametre sayısı da burada en iyi performansı etkileyen şey olmadığını gördük aslında.
+
+1066
+03:23:19,100 --> 03:23:24,360
+Çünkü GT Multi en düşük sonucu verdi, en düşük parametre sayısına sahip olduğu için.
+
+1067
+03:23:25,072 --> 03:23:32,652
+QN3 modelde çok iyi sonuçlar vermedi. En yüksek parametre sayısına sahip olmasına rağmen diyebilirim.
+
+1068
+03:23:34,311 --> 03:23:40,672
+Burada da genel bahsettiğim şeylerin sonuçları var. Bu şekildeydi benim sunumunda. Teşekkürler.
+
+1069
+03:23:40,672 --> 03:23:47,032
+Teşekkürler [öğrenci]. Görselleştirmeler iyi olmuş bence. Sağ olasın.
+
+1070
+03:23:47,924 --> 03:23:49,224
+Teşekkür ederim hocam.
+
+1071
+03:23:49,804 --> 03:23:52,504
+Evet, [öğrenci], sendeyiz.
+
+1072
+03:23:52,624 --> 03:23:54,044
+Merhaba hocam, sesim geliyor.
+
+1073
+03:23:54,064 --> 03:23:55,364
+Merhaba, geliyor [öğrenci].
+
+1074
+03:23:55,904 --> 03:23:58,044
+Tamam, ekranım geldi mi?
+
+1075
+03:23:58,664 --> 03:23:59,224
+Geldi.
+
+1076
+03:24:00,224 --> 03:24:00,524
+Tamam.
+
+1077
+03:24:01,544 --> 03:24:03,644
+Ben de hızlıca bitireyim hocam.
+
+1078
+03:24:04,084 --> 03:24:04,404
+Tamam.
+
+1079
+03:24:05,684 --> 03:24:09,364
+Multilingual'un Large Base ve Small modellerini kullandım.
+
+1080
+03:24:09,364 --> 03:24:13,584
+Bunlar asimetrik olan ve simetrik olarak da paraphrase ile.
+
+1081
+03:24:14,195 --> 03:24:25,955
+L-A-B-S, bir de sizin belirlediğiniz modeli kullandım. Burada verisiyetler olarak Ali Bayram'ın hukuk soru cevap verisiyeti, bir de sağlık verisiyeti kullandım.
+
+1082
+03:24:26,415 --> 03:24:38,415
+Hani sağlık verisiyeti de biraz daha bağlamaz. Sorular kısa, cevaplar da yine aynı şekilde kısa. Şu nedir, bu nedir diye ve aynı paragraf üzerinden benzer sorular üretmişler.
+
+1083
+03:24:38,995 --> 03:24:44,716
+Hukukta biraz daha uzun bağlamlı ve uzun cevaplı sorular var.
+
+1084
+03:24:44,716 --> 03:24:51,716
+Bunu geçiyorum. Yine bunu da geçiyorum. Direkt cevaplara geçeyim sonuçlara.
+
+1085
+03:24:51,716 --> 03:25:04,435
+Hukuk verilerinde yine Türk İşe 5'ler için en yüksek cevabı veriyor ve bu simetrikler daha kötü cevap veriyor.
+
+1086
+03:25:04,724 --> 03:25:20,884
+Bu simetriklerde şey var. Doğrudan bir prefiks yok. Cümle cümle veriyoruz. Ancak bu diğerlerinde cümle soru ve cevabı bu şekilde etiketlediğimiz için daha yüksek sonuçlar veriyorlar.
+
+1087
+03:25:20,884 --> 03:25:30,724
+Bu sorudan cevabı %1'lik başarıydı. Bu %5'lik başarı. Bu ikisini karşılaştırdığımızda...
+
+1088
+03:25:31,763 --> 03:25:33,003
+Bariz bir şekilde.
+
+1089
+03:25:34,063 --> 03:25:37,423
+%1'lik başarı demek, %5'lik başarı demek ne demek?
+
+1090
+03:25:38,403 --> 03:25:42,323
+Şöyle, bunda doğru cevabı bulabildik mi diye bakıyoruz.
+
+1091
+03:25:42,863 --> 03:25:51,143
+%5'te de doğru cevabımız bu en çok benzer doğru cevabın içerisinde var mı diye bakıyoruz.
+
+1092
+03:25:51,143 --> 03:25:55,763
+O yüzden bu daha yüksek bir sonuç vermesi normal aslında.
+
+1093
+03:25:56,308 --> 03:26:01,308
+Çünkü ikinci de bulsa, üçüncü de bulsa doğru cevabı yine saymış oluyor.
+
+1094
+03:26:04,308 --> 03:26:11,308
+Burada cevaptan soruya gitmeyi yine aynı şekilde gösterdim.
+
+1095
+03:26:11,308 --> 03:26:18,308
+Ve burada da karşılaştığında yine bu %5'likler daha yüksek olduğu belli oluyor.
+
+1096
+03:26:18,912 --> 03:26:42,812
+Burada garip olan Türk işin multilingülden daha düşük kalmış olması. Aslında beklentim bunun daha yüksek olmasıydı ama muhtemelen çok fazla Türkçe'ye özel bir veri set olmadığı için çünkü hem sağlıkta hem de vukukta bilmiyorum. O yüzden ikisi de benzer sonuç vermesi normal diye düşündüm. Burada şeyi karşılaştırdım.
+
+1097
+03:26:43,412 --> 03:27:10,131
+Hem sorudan cevabı hem cevaptan soruya karşılaştırınca. Aslında beklediğim sonuç ilk üçü gibi olmasıydı. Sorudan cevabı daha rahat ulaşmaktı ama anlamadığım şekilde yakın çıkmalarına rağmen multilingolar da cevaptan soruya daha yüksek oranda çıktı. Yine benzer şekilde.
+
+1098
+03:27:11,040 --> 03:27:13,360
+%5'lik olanlarda da bu şekilde.
+
+1099
+03:27:17,427 --> 03:27:24,427
+Bence daha edebi ya da bir veri seti kullanmış olsaydım, Türk işin daha yüksek çıkabileceğini düşünüyordum.
+
+1100
+03:27:24,427 --> 03:27:33,427
+Burada sağlık verilerini de karşılaştırdığımda, burada çok daha düşük sonuçlar elde ettim hukuka kıyasla.
+
+1101
+03:27:33,427 --> 03:27:40,427
+Çünkü dediğim gibi bağlam daha düşüktü. Tek kelimelik cevaplar ve daha kısa sorular olduğu için.
+
+1102
+03:27:42,164 --> 03:27:50,564
+Yine bu ikisini karşılaştırdığınızda %5'liğin en iyi olanı bulmakta daha iyi olduğunu görebiliyoruz.
+
+1103
+03:27:51,943 --> 03:27:57,683
+Burada da cevaptan soruya geçme şeklinde kıyaslaması da bu şekilde.
+
+1104
+03:27:58,963 --> 03:28:08,484
+Burada fark ettiğim şey ise aslında simetrik olanların bazılarından daha yüksek çıkmış olması.
+
+1105
+03:28:08,819 --> 03:28:14,280
+Beklediğim, etiketlenmiş olanların daha yüksek sonuç vermesiydi.
+
+1106
+03:28:14,280 --> 03:28:21,360
+Ancak yine ben de veri setinin daha kötü bir veri set olmasına bağlıyorum.
+
+1107
+03:28:21,360 --> 03:28:27,760
+Burada yine istediğim olmuş gibi oldu.
+
+1108
+03:28:27,760 --> 03:28:34,760
+Şöyle, sorudan cevabına baktığımızda yüzdeler daha yüksek çıktı.
+
+1109
+03:28:34,899 --> 03:28:38,219
+Cevaptan soruya baktığınızda daha düşük çıktı.
+
+1110
+03:28:40,539 --> 03:28:57,439
+Bu yüzden şuna gelecek olursam, başarı oranı hukuk ve sağlık verilerinde hukukta bariz bir şekilde daha yüksek çıkmasının sebebi bence dediğim gibi bağlamsal özelliklerin hukukta daha yüksek olması ancak sağlıkta daha düşük şeylerin gelmesi.
+
+1111
+03:28:58,579 --> 03:29:00,839
+Yine bunu TAP 5'te de benzer şekilde.
+
+1112
+03:29:01,332 --> 03:29:26,652
+Ve Türk İş Eves Laç bariz bir şekilde baskın gelmiş. Evet, burada bunu açıkladım zaten. Bir de sağlık verisinde aynı paragraftan birden fazla soru-cevap oluşturdukları için benzer sorular, benzer cevaplar ve kısa bağlamda olduğu için daha kötü sonuçlar verdi.
+
+1113
+03:29:27,860 --> 03:29:34,760
+Burada zaten kötü sonuç olduğu için bariz bir şey olmasını beklemiyordum. Eşleşme olmasını.
+
+1114
+03:29:34,760 --> 03:29:44,159
+Ve gördüğü üzere iki farklı veri kümesine ayrılmış. Zaten modelin doğruluğu 4, 5, 10 civarlarındaydı.
+
+1115
+03:29:44,159 --> 03:29:52,560
+O yüzden böyle olması normal diye yorumladım. Yine baktığın zaman hukuk verilerinde biraz daha...
+
+1116
+03:29:53,108 --> 03:30:15,268
+Biraz daha fazla bir eşleşme görünüyor. Beni şaşırtan kısım şey olmuştu. Yine burada hukuk verileri daha iyi ama paraphrasede ikisinin de eşleşmiş gibi görünüp ancak en kötü sonuçlar da yine bu vermişti diye hatırlıyorum.
+
+1117
+03:30:15,327 --> 03:30:21,507
+Sonuçta eşleşmişler ama doğru şeylerle doğru şeyler mi eşleşmişler acaba?
+
+1118
+03:30:21,768 --> 03:30:33,487
+Evet, aynen. Yanlış eşleştirmiş ama o yüzden TSN'e çok da doğru sonuçlar vermedi. Bu şekilde hocam benim de sunumum.
+
+1119
+03:30:33,527 --> 03:30:34,947
+Peki, teşekkür eder.
+
+1120
+03:30:34,947 --> 03:30:36,847
+Ben teşekkür ederim.
+
+1121
+03:30:37,492 --> 03:30:44,872
+Tamam da o zaman arkadaşlar, dersi kapatıyorum. Önümüzdeki hafta kısmı ile görüşmek üzere diyorum. Tamam mı?
+
+1122
+03:30:44,872 --> 03:30:46,872
+Görüşürüz hocam.
