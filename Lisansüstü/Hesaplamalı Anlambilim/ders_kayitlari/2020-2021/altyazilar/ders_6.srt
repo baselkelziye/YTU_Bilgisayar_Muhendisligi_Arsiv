@@ -1,0 +1,2943 @@
+1
+00:00:03,443 --> 00:00:05,184
+Merhaba arkadaşlar, sesim giriyor mu?
+
+2
+00:00:12,660 --> 00:00:21,699
+Gelmiyor mu? Geliyor hocam. Ses geliyor. Tamam. Süper. Şükür bakmayın. Birazcık geciktim. Önceki toplantı gitmedi.
+
+3
+00:00:24,260 --> 00:00:33,980
+Toplantı sayıları toplantıların kolay yapılabilir olması sebebiyle böyle bayağı bir artışlar. Sizler de nasıldır?
+
+4
+00:00:33,980 --> 00:00:35,719
+Şimdi.
+
+5
+00:00:53,524 --> 00:00:58,924
+Bugünkü planımız nedir arkadaşlar? Siz söyleyin bakalım. Ne yapacağız bugün ilk önce?
+
+6
+00:01:00,444 --> 00:01:01,724
+Sunumlardı galiba hocam.
+
+7
+00:01:01,724 --> 00:01:15,603
+Evet, bugün sunumlara başlayacağız ilk önce. Ondan sonra vaktimiz kalırsa makine öğrenmesinde yeni problemler. Yani çok çok daha aşırı derecede yeni değiller ama.
+
+8
+00:01:16,659 --> 00:01:25,319
+En azından son zamanlarda çıkmış problemler, yaklaşımlarla alakalı bir slide var. Onu sizlere anlatmayı planlıyorum.
+
+9
+00:01:27,079 --> 00:01:30,340
+Peki, şimdi kimler sunum yapacak? İlk önce onu alalım.
+
+10
+00:01:31,439 --> 00:01:33,219
+Biz yapabiliriz ilk hocam isterseniz.
+
+11
+00:01:33,219 --> 00:01:37,119
+Şimdi [öğrenci], [öğrenci] ve kim?
+
+12
+00:01:37,459 --> 00:01:40,299
+[öğrenci] hocam, [öğrenci] [öğrenci]. Biz beraber.
+
+13
+00:01:40,539 --> 00:01:42,420
+[öğrenci], evet. Başka kim var?
+
+14
+00:01:42,900 --> 00:01:44,920
+[öğrenci] [öğrenci]. Buyurun.
+
+15
+00:01:45,380 --> 00:01:46,159
+Buyurun hocam.
+
+16
+00:01:46,880 --> 00:01:49,040
+[öğrenci] Tekbaşı mısın?
+
+17
+00:01:49,260 --> 00:01:51,219
+Yok hocam, [öğrenci] ile yaptım.
+
+18
+00:01:52,359 --> 00:01:56,659
+[öğrenci]. Evet, başka?
+
+19
+00:01:57,880 --> 00:02:00,620
+Ben yapabilirim hocam. [öğrenci] [öğrenci].
+
+20
+00:02:01,200 --> 00:02:05,840
+[öğrenci]. Evet, başka? Tekbaşı mısın?
+
+21
+00:02:05,840 --> 00:02:08,319
+Evet hocam, teki.
+
+22
+00:02:08,756 --> 00:02:09,695
+Tamam, [öğrenci].
+
+23
+00:02:10,396 --> 00:02:11,396
+Evet hocam, ben de tekim.
+
+24
+00:02:11,675 --> 00:02:12,935
+Sen de tek başınasın.
+
+25
+00:02:13,435 --> 00:02:17,455
+Hocam, biz de yapabiliriz. [öğrenci] ile [öğrenci].
+
+26
+00:02:18,756 --> 00:02:23,716
+[öğrenci] ve [öğrenci].
+
+27
+00:02:24,735 --> 00:02:26,635
+[öğrenci], tekim hocam.
+
+28
+00:02:26,635 --> 00:02:27,235
+[öğrenci].
+
+29
+00:02:29,075 --> 00:02:30,635
+[öğrenci] tek misin sen de?
+
+30
+00:02:31,015 --> 00:02:31,955
+Evet hocam, tekim.
+
+31
+00:02:32,555 --> 00:02:33,355
+Peki, başka?
+
+32
+00:02:38,036 --> 00:02:46,415
+Başka kimse gözükmüyor. Gerçi [öğrenci] bağlanıyor diyor ama. Bakalım o da bir bağlansın.
+
+33
+00:02:51,123 --> 00:02:54,883
+Sesim iyi geliyor mu arkadaşlar? Bir sıkıntı var mı? Mikrofonda benim.
+
+34
+00:02:55,683 --> 00:02:56,603
+Yok canım hocam.
+
+35
+00:02:57,703 --> 00:02:58,923
+Geliyor yani değil mi net ses?
+
+36
+00:03:03,219 --> 00:03:04,059
+Evet hocam geliyor.
+
+37
+00:03:04,659 --> 00:03:19,979
+Tamam, iyi bir şey. Neyse [öğrenci] hala bağlanıyor. Peki, şimdi o zaman buradaki sırayla ilerleyelim bakalım. [öğrenci] ve [öğrenci]'in [öğrenci]'i dinleyelim ilk önce.
+
+38
+00:03:20,839 --> 00:03:21,639
+Tamamdır hocam.
+
+39
+00:03:29,331 --> 00:03:31,771
+Paylaşıyorum hocam şu an ekranı. Geldi mi bilmiyorum.
+
+40
+00:03:31,891 --> 00:03:33,092
+Geldi, evet geldi.
+
+41
+00:03:37,683 --> 00:03:45,424
+Hocam, biz Fast, Text, Bert ve Word2Eck modellerini seçtik ve bu modelleri kullanarak bir Türkçe duygu analizi yapmaya çalıştık.
+
+42
+00:03:47,924 --> 00:03:51,444
+Önce veri ve proje hakkında bir bilgilendirme yapmadım.
+
+43
+00:03:51,524 --> 00:03:59,604
+E-ticaret sitelerine ait kullanıcı yorumlarının pozitif ve negatif taglerinin bulunduğu iki adet derlem üzerinde çalışma yaptık.
+
+44
+00:03:59,704 --> 00:04:04,484
+Bu derlemlerden bir tanesi sizin bizimle paylaştığınız bu derlem havuzundaki koment nokta rardı.
+
+45
+00:04:05,075 --> 00:04:21,355
+Öbüründe biz internetten bulduk. Onu da yüklediğimiz yerde kaynakçı olarak zaten belirtmiştik bir TXT dosyasının içerisinde. Derlemlerin içerisinde toplamda birinde 373.187, öbüründe de 19.022 adet veri bulunuyor toplamda negatif ve pozitif olarak.
+
+46
+00:04:22,295 --> 00:04:31,896
+Biz FastExpert ve Word2Web yöntemlerini kullanarak yorumlarının pozitif ve negatif olma durumlarını, yani olumlu veya olumsuz yorum olma durumunu inceledik.
+
+47
+00:04:33,012 --> 00:04:40,692
+Önce verileri ön işleme adımlarından geçirdik. Türkçe harfleri yok etmeye çalıştık. Veriyi tekilleştirmek.
+
+48
+00:04:40,792 --> 00:04:44,651
+[öğrenci], ilk önce bir şey söyleyebilirim. Bir öncekine gelebilir misin?
+
+49
+00:04:45,891 --> 00:04:46,151
+Tabii.
+
+50
+00:04:47,072 --> 00:04:55,951
+Şimdi derlem ve veri hükümesi birbirinden farklı şeyler. İlk önce onu söyleyeyim. Ne demek istiyorum?
+
+51
+00:04:56,531 --> 00:05:17,532
+Derlem dediğimiz şey temelde etiketsiz bir şeydir. Etiketini bilmediğimiz genelde öyle olur. Bununla biz şöyle bir şey de derlem haline getirebilirsiniz. Bir veri hükümesi var elinizde etiketli. Etiketleri atıp...
+
+52
+00:05:17,716 --> 00:05:44,175
+Tamam, bu benim derleğim olacak diyebilirsiniz. Ama şimdi derlemlerle sistemler ilk önce bir pretrain edilir. Tamam mı? Ondan sonra da pretrain edilmiş model kullanılarak o model etiketli verilerle de fine tune edilir. Tamam, etiketli verilerle fine tune edilir. Yani ilk önce etiketsiz verilerle pretrain yapılıyor. Onun ardından ise etiketli verilerle fine tune ediliyor. Tamam mı?
+
+53
+00:05:44,399 --> 00:05:52,239
+Hani o şeyi ayrımı ifade edeyim dedim mi? Sanki burada birazcık birbirinin içine girmişler gibi geldi bana da.
+
+54
+00:05:52,239 --> 00:05:56,759
+Evet hocam. Olabilir biraz. İleride daha da iç içe girebilirler hocam o zaman.
+
+55
+00:05:56,779 --> 00:05:57,139
+Öyle mi?
+
+56
+00:05:57,139 --> 00:06:01,519
+Evet. Yani biz şöyle yaptık hocam. Örneğin sizin parzun.
+
+57
+00:06:01,559 --> 00:06:12,039
+Benim buradaki amacım hani etiketi olmayan büyük değerlemler var elimizde mesela diyelim ki. Bir de etiketli olan küçük bir veriklimesi var. Tamam mı?
+
+58
+00:06:12,319 --> 00:06:22,759
+Derleme göre küçük. O durumda farklı değerlemler kullanmanın ve üstüne fine tune etme mevzusunun nasıl yapıyorsanız.
+
+59
+00:06:23,283 --> 00:06:29,544
+Onun farklı değerlemleri nasıl bir etkisi olur acaba bu sürecin içerisinde? Onu birazcık görmekle.
+
+60
+00:06:29,924 --> 00:06:30,884
+Peki tamam, devam edelim.
+
+61
+00:06:30,903 --> 00:06:33,884
+Bizim de çok hocam hakim olduğumuz yöntemler değildi.
+
+62
+00:06:34,004 --> 00:06:41,184
+[öğrenci]'de benim de ilk kez çalışma yaptığımız yöntemler oldukları için biraz araştırma yapmıştık.
+
+63
+00:06:41,264 --> 00:06:45,603
+Genelde insanların ilerledikleri yollar üzerinden biz de ilerlemeye çalıştık.
+
+64
+00:06:45,603 --> 00:06:49,504
+O tarz bir şekilde bir yordam.
+
+65
+00:06:49,839 --> 00:07:10,779
+Görmedik herhalde ki bu şekilde ilerledik. Biz şöyleydi sanırım sizin hocam zaten paylaştığınız biri de evet tagli değildi ama hani pozitif ve negatif olarak bu ayrı CSV dosyaların içerisindelerdi. Biz ondan sonra onları şey yapıp biz ondan sonra işte onları alıp tek CSV halinde pozitif ve negatif olarak tag verdik biz sadece onlara.
+
+66
+00:07:11,220 --> 00:07:36,540
+Anladık. İşte mesela orada hiç pozitif negatif tek falan vermeden o iki tane dosyayı birleştirdik mesela. İçinde pozitif ve negatifler oluyor ama pozitif ve negatif ne olduğunu bilmiyorsun. Anlatabildim mi? Mesela bu bir adet etiket. Yani bunun içinde ne var? Yorumlar var. Bu kadar. Yani etiketlenmemiş hiçbir şekilde bilmiyoruz. Mesela diyelim böyle senin eline bir milyon tane olabilir. Tamam mı?
+
+67
+00:07:37,012 --> 00:07:43,291
+Ama bir yandan da bir tarafta da elinde şöyle bir şey olabilir. Ne bileyim ben işte 10 bin tane pozitif, 10 bin tane negatif var elinde sadece.
+
+68
+00:07:43,752 --> 00:07:48,012
+Siz şey diyorsunuz, 10 bin negatif, 10 bin pozitif eğitimi yapın yine ama...
+
+69
+00:07:48,651 --> 00:07:58,771
+Ama onun öncesinde pretrain kısmında o etiketi olmayan işte bir milyon tane mesela pozitif, negatif mi bilmiyorsunuz. Sadece sistem onlarla pretrain yapılıyor. Anlatabildim mi?
+
+70
+00:08:01,204 --> 00:08:23,384
+Yani derlemi kullanarak, işte o 1 milyonluk derlemi kullanarak bir train yapacaksınız. Ondan sonra modeli elinizdeki 10 binlik mesela datayla ya da 20 binlik artık neyse, onu fine tune ederek sistemdeki test performansını ölçeceksiniz. Hani o 1 milyon değil de mesela başka bir veri hükümesi, başka bir derlem olduğunu, mesela haberleri aldığını varsayalım. Mesela bu durumda daha kötü olacaktır.
+
+71
+00:08:24,500 --> 00:08:38,779
+Yorumları kullanmak derlem olarak haberleri kullanmaya göre daha iyidir. Neyi de? İşte burada dediğiniz gibi sentiment analizi yapmak için. Anlatabildim mi? Haberleri kullansanız mesela daha kötü bir sonuç elde edersiniz. Tretrain için demek istiyorum.
+
+72
+00:08:38,919 --> 00:08:39,379
+Evet, doğru.
+
+73
+00:08:39,759 --> 00:08:41,240
+Tamam, anlatabildim mi?
+
+74
+00:08:41,559 --> 00:08:42,779
+Evet, tamam. Teşekkür ederim.
+
+75
+00:08:42,779 --> 00:08:43,599
+Devam edelim.
+
+76
+00:08:45,844 --> 00:09:01,284
+Ondan sonra verileri tekileştirmek için Türkçe karakterleri kaldırdık. C falan yapma olayı. Noktalama işaretlerini kaldırdık. Ondan sonra bu Türkçe durma kelimelerini kaldırdık veriden, temizledik.
+
+77
+00:09:02,067 --> 00:09:25,827
+Ondan sonra az önce de bahsettiğim gibi tek dosyada birleştirip negatif ve pozitif bilgi taglerine ait label'lar ekledik. Ben siz hocam derste anlattığınızda da şey olarak algılamıştım. Biz bunu Berthetat'ta sonrasında biraz yaşadık. Sonrasında bu özellikle 373 binlik veride biraz uzun sürdüğü için eğitim. Biz verilerin 12.500 adetini aldık. 10.000 veriyi eğittim. 2500 adet veriyi de test için kullandık.
+
+78
+00:09:27,087 --> 00:09:28,467
+Yaptığımız çalışmada.
+
+79
+00:09:30,100 --> 00:09:56,020
+Burada işte BERT modelinden bahsettik aslında. Hepimiz şey yapmadık diye üstün körü. Burada isminden de anlaşılacağı özel diğer modellerden farklı olarak cümleyi hem soldan sağ hem de sağdan sola olarak değerlendiriyormuş BERT modeli. Bu sayede anlamı ve kelimelerin birbiriyle olan ilişkilerini daha iyi çıkartmayı amaçlıyor. Sonra işte Fast Text modeliyle duygu analiz edildik. Fast Text modeli de Metin Sınıflandırması amacıyla geliştirilmiş bir kütüphane Fast Text.
+
+80
+00:09:57,043 --> 00:09:59,683
+Buraları geçebiliriz.
+
+81
+00:10:00,043 --> 00:10:13,483
+Şu CBO Skipgram konusunda da biz genelde Skipgram yöntemini kullandık. Ondan bahsedebilirim. Buradan da geçebilirim. En son o zaman projenin sonuçlarına gelirsek hocam. Projenin sonuçlarında da BERT modeli için biz Tekipok tercih ettik.
+
+82
+00:10:14,384 --> 00:10:29,264
+Genelde şeyi de araştırdık hocam. Sanırım Bert kütüphanesi aslında şey, altında birçok veri bulunan ve eğitilmiş aslında bir kütüphaneydi bizim anladığımız kadarıyla. Yani eğitilmiş değil de daha doğrusu çok fazla kütüphane data bulunuyormuş.
+
+83
+00:10:29,264 --> 00:10:36,103
+Yok yok öyle değil. Bert'in boş hali bir mimari sadece.
+
+84
+00:10:36,628 --> 00:10:59,228
+Bunu büyük miktarda derlemlerle eğitip her dil için yayınlıyorlar. Tamam mı? Mesela Türkçe için Bertürk'ü yayınlamışlar. Mesela örnek vermek istiyorum. Ya da işte başka bir şey. Burada hani Bert'i eğitilmiş, Bert'i kullanmak değil buradaki hikaye. Bert'i eğitmek.
+
+85
+00:10:59,679 --> 00:11:11,359
+Asıl kısım. Ya da işte FastX'i hazır mesela hazır FastX modellerini kullanmak değil. FastX için de mesela Türkçe için ya da işte 150 tane dil için hazır FastX vektörleri var. Değil mi?
+
+86
+00:11:11,359 --> 00:11:12,439
+Evet.
+
+87
+00:11:12,980 --> 00:11:28,860
+Orada gidip hazır F-Sex vektörlerini kullanmanız değildi buradaki amaç. O F-Sex vektörlerini eğitiminde, o F-Sex vektörlerini oluşturmada farklı değerlemler kullanmanın etkisiydi. Anlatabildim mi demek istediğimi?
+
+88
+00:11:28,960 --> 00:11:29,960
+Evet, anladım hocam.
+
+89
+00:11:29,960 --> 00:11:40,980
+Siz burada anladığım kadarıyla yanlış anlamadıysam, hazır vektörleri aldınız. Berk'te de, F-Sex'te de, Berk'te de herhalde.
+
+90
+00:11:40,980 --> 00:11:43,680
+Hayır, hazır vektora anladım.
+
+91
+00:11:44,211 --> 00:12:10,011
+Biz hocam, burada [öğrenci]'in söylemeye çalıştığı şu araştırdığımız konuda, Bert'te yani şuydu. Bert'in içerisinde bir sürü milyonlarca parametre var deniyor. Bu parametrelerle de bunları kullanarak derlemleri yani veri setinizi eğittiğiniz zaman fazla ipok sayılarında, hatta fazla bile değil, 4-5'te artık modelin başarısı düşmeye başlıyor deniyor. Bundan dolayı da 1-2 ipok yeterlidir Bert içindenmiş. Biz burada aslında bunu söylemeye çalıştık.
+
+92
+00:12:12,211 --> 00:12:17,871
+İki tane eğitim var. Bir türe train var. Bir de işte bu fine tune kısmındaki eğitim var. Tamam mı?
+
+93
+00:12:18,771 --> 00:12:27,692
+Şimdi yapay sinir ağlı, yani berhte bir yapay sinir ağlı. Rastgele başlangıç verileriyle başlıyor. Tamam mı?
+
+94
+00:12:28,312 --> 00:12:32,371
+Daha sonra siz bunu bu derlemle eğittikten sonra bunlar belli bir hale geliyorlar.
+
+95
+00:12:32,371 --> 00:12:39,572
+Siz o işte anladığım kadarıyla gidip şeyi almışsınız.
+
+96
+00:12:39,988 --> 00:12:53,168
+Bu, hani işte bir şekilde eğitilmiş bert vektörlerini almışsınız, değil mi? Ondan sonra onun üzerinde fine-tune işlemi gerçekleştirmişsiniz. Öyle değil mi?
+
+97
+00:12:54,868 --> 00:13:21,088
+Yani etiketsiz bir veriyle derte eğittiniz mi hiç? Öyle söyleyeyim size. Yok dediğiniz gibi o zaman hocam. Değil mi? Yani fine tune işlemi yapmışsınız burada. FastX için ne yaptınız peki? Aynı şekilde hocam. Orada da hazır vektörleri aldınız yani. Öyle değil mi? Evet. Hazır vektörlerini aldınız. Onları kullandınız. Evet. Biz fine tune kısmını yaptık aslında. Doğru diyorsunuz. Peki.
+
+98
+00:13:22,355 --> 00:13:23,475
+Peki sonuçlar nasıl?
+
+99
+00:13:24,516 --> 00:13:35,115
+Sonuçlar da hocam bu sağdaki işte tabloda paylaştığım gibi çıktı. BERT modelinde derlen 1 için, daha doğrusu Dataset 1 için %90, Dataset 2 için %91 çıktı.
+
+100
+00:13:35,256 --> 00:13:43,355
+Fastex modelinde en yüksek sonucu da Fastex modelinde Dataset 2 için aldık. En düşük sonucu da hocam, Word2Vec'de kullandığımız...
+
+101
+00:13:44,083 --> 00:14:04,484
+Gauş Sinay Bayez yöntemiyle aldık. Orada büyük ihtimalle bir hatamız vardı ama çözemedik. Biz yine de yazalım dedik bunu da. Çok düşük bir sonuç aldık orada da. Ama daha çok vaktimiz olsaydı büyük ihtimalle şey yapabilirdik ama çözemedik. Bu dün akşamda direkt zaten yükledik. O yüzden şey yapamadık. Sonra da birkaç tane de son sayfaya da hocam şöyle örnekler koyduk.
+
+102
+00:14:05,203 --> 00:14:14,743
+Örneğin, bu en sol üstteki BERT model Dataset 2 için olan da, ya bir gidin böyle bir ürün olmaz arkadaşlar yorumunu negatif olarak algılıyordu.
+
+103
+00:14:15,572 --> 00:14:36,631
+Ama sonrasında şu bu fırsat kaçmaz arkadaşlar cümlesinde şöyle bir sıkıntı yolaştık. Bu fırsat kaçmaz arkadaşlar cümlesi Dataset 2 için negatif olarak algılanıyordu. Ama örneğin Dataset 1'de bu cümleyi pozitif olarak algılıyordu. Bu da anladığımız kadarıyla Datasetlerdeki şey farkından kaynaklı, veri farkından kaynaklı.
+
+104
+00:14:40,755 --> 00:14:57,435
+Datasetlerde veya değerlemlerde edilgen fiillerdi. Etmiyorum'u gayet negatif olarak ayırabilirken edemiyorum, yapamıyorum gibi edilgen fiillerdi. Biraz daha onları pozitif olarak algılıyordu, negatif olarak algılamıyordu.
+
+105
+00:14:58,259 --> 00:15:19,000
+Aynı şekilde Fast Text'te de bu fırsat kaçmaz arkadaşlar cümlesini denediğimizde o da Dataset 1'de doğru geliyordu. Buradaki Label 1 pozitif sınıfını, Label 0'da negatif sınıfını temsil ediyordu. Kesinlikle uzak durunu negatif olarak algılarken aşağıdakileri kesinlikle tavsiye ediyorum da pozitif olarak doğru bir şekilde algılıyordu.
+
+106
+00:15:21,172 --> 00:15:24,831
+Ama dediğiniz gibi biz orada şeyi yanlış anlamışız biraz hocam.
+
+107
+00:15:25,272 --> 00:15:28,231
+Peki, teşekkür ediyoruz arkadaşlar. Sağ olun.
+
+108
+00:15:28,792 --> 00:15:30,451
+Teşekkür ederiz hocam, kusura bakmayın.
+
+109
+00:15:30,851 --> 00:15:34,471
+Estağfurullah, ne demek. Evet, [öğrenci] ve [öğrenci]'yi dinleyelim.
+
+110
+00:15:35,132 --> 00:15:36,951
+Merhaba, hepine ekranımı paylaşıyorum.
+
+111
+00:15:36,951 --> 00:15:37,831
+Tamam.
+
+112
+00:15:43,283 --> 00:15:44,163
+Ben şey...
+
+113
+00:15:56,083 --> 00:15:57,963
+Egan'ım geldi herhalde.
+
+114
+00:15:58,183 --> 00:15:58,963
+Geldi, evet.
+
+115
+00:16:00,264 --> 00:16:07,883
+Tamam. Merhabalar, biz de duygu durum analizi yaptık. Ben [öğrenci], ekip arkadaşım [öğrenci].
+
+116
+00:16:08,980 --> 00:16:32,659
+Sunum içeriğinden başlayayım. Kullanılan araç ve teknolojilerden bahsedeceğiz ilk olarak. Sonra kullanılan veri setleri, yapılan ön işlem adımları. Bu ön işlem adımları sonucunda iki farklı veri setinde oluşan farklı sunumlar için kelime bulutlarını indireceğiz. Ondan sonra da kullandığımız üç farklı embedding yönetimi, Word2Vac, Facebook, Word2Vac ve eline alınan sonuçlar ufak bir demo yapıp sunumumuzu bitireceğiz.
+
+117
+00:16:33,087 --> 00:16:38,891
+Kullandığımız araçlar ve teknolojiler bu şekilde kullandığımız kütüphaneler gençliğin bütün...
+
+118
+00:16:39,187 --> 00:16:56,908
+Döktü VEK, Festex ve Work2VEK eğitimleri için Gensin kütüphanası kullanıldı. Ön işleme adımları için genelde RGX, Nafi, Pandas veri işlemleri için, Saykut Learn modelleri, sırflandırma modelleri kullanıldı ve performans üniversitesi almak için.
+
+119
+00:16:56,908 --> 00:17:03,828
+Metodli görselleştirilmesi ile beraber NLTK da ön işleme adımları için.
+
+120
+00:17:04,160 --> 00:17:19,980
+Streamlit sahnede frontend geliştirmesi için kullanıldı. İki farklı veri seti kullanıldı. Bunlardan birincisi Türkçe Twitter veri seti, ikincisi Türkçe film yorumları, ikincisi. Bunun kaynakları da, kaynakçı da ekledim.
+
+121
+00:17:20,372 --> 00:17:32,192
+Türkçe verisesinden bahsedelim. Veri analizini aldığımızda toplamda 13.832 tane eğitim verisesinden bahsediyoruz. İkisi ayrı.
+
+122
+00:17:32,731 --> 00:17:39,432
+Tane satır var. Bulman sınıf, ticis sınıf ve sentimen sınıf var. Üç farklı sınıfa ait örnekler içeriyor.
+
+123
+00:17:39,852 --> 00:17:48,152
+Üç tane farklı sınıf verilerin dağılır bu şekilde. Görüldüğü gibi en fazla toplu görünmüyor olabilir. Olumsuz sınıfa ait örnek veriyor.
+
+124
+00:17:48,372 --> 00:17:54,452
+İstiklalyaları yok gördüğü gibi yüzde sıfır.
+
+125
+00:17:54,768 --> 00:18:16,668
+Türkçe film yorumları veresetine baktığımızda, Türkçe vereseti film yorumlarında her filme ait olan pointler vardı. Bu pointler de genelde filmlerin puanlamaları. Bu şekilde incelediğimizde biz 3.5'dan yukarısını olumlu, 3.5'dan aşağısını olumsuz olarak alıp dengeli bir vereseti oluşturmaya çalıştık.
+
+126
+00:18:17,680 --> 00:18:31,059
+Toplamda 83.183 tane satır var burada. Şunlar da veri sesindeki bir şekilde. Bu şekilde görüldüğü gibi iki sınıfı dengeli hale getirmeye çalıştık.
+
+127
+00:18:31,279 --> 00:18:38,200
+Çeşitmişlikten fazla büyük olan pointlerin olumlu ve küçük olanların ise olumsuz olduğunu düşünerekten.
+
+128
+00:18:39,028 --> 00:18:56,048
+Yapılan ön işlem adımları, küçük harfe dönüştürme, emoji duygu dönüşümleri. Emojiler, iki noktası parantez, bunların pozitif olduğu veya slash çekildiğinde bu negatif olduğu gibi dönüşümlerin yapılması. Özellikle TV severlerinde çok şey aradı.
+
+129
+00:18:56,048 --> 00:18:59,207
+Software sharing aldırılması, Türkçe karakter dönüşümleri.
+
+130
+00:18:59,827 --> 00:19:11,667
+Küçükçe karakter dönüşümleri, hiperlinklerin kaldırılması, rakamların kaldırılması, noktalama işaretlerinin kaldırılması, özel karakterlerin kaldırılması ve iki kutup olan kelimelerin kaldırılması.
+
+131
+00:19:12,167 --> 00:19:14,708
+Bilhassa steamer yöntemini kullanmadık.
+
+132
+00:19:15,048 --> 00:19:24,887
+Yani kelime vektörlerini çıkardığımızda kelimeler arasındaki semantik ilişkiyi yakalaması için böyle bir daha iyi olacağını düşündüğümüz için steamer uygulamadık.
+
+133
+00:19:25,523 --> 00:19:46,643
+Kelime bulutlarını incelediğimizde pozitif sınıf için en fazla geçen kelimeler var burada. 200'den fazla frekanslı olanları incelediğimizde. Gördüğünüz gibi emojipoz yani emojipozitif olanlar. Sağolsun canım. Teşekkürler.
+
+134
+00:19:46,643 --> 00:19:51,803
+Şey soracaktım [öğrenci]'a burada bu emojipozları kural tabanlı olarak oluşturduğunuz herhalde değil mi?
+
+135
+00:19:51,823 --> 00:19:52,903
+Aynı hocam, regeksi.
+
+136
+00:19:53,395 --> 00:20:00,336
+Regis'i oluşturduğum. Tamam. Bunları eğitim gibi. Tamam. İkisini de yapmış oldunuz. Testleri yapmış oldunuz.
+
+137
+00:20:00,336 --> 00:20:13,736
+Aynen. İkisini de yapmış oldunuz. Burada görüldüğü gibi seviyorum. İyi var. Olumlu kelimeler bu şekilde. Olumsuz sınıfına ait kelimeler internet çekmiyor.
+
+138
+00:20:14,516 --> 00:20:22,736
+Bir de şöyle bir şey ekleyeyim. Biz Software'ları TürkSel, SuperOnline, Aveya, Vodafone gibi operatör isimlerini de çıkardık.
+
+139
+00:20:24,339 --> 00:20:36,879
+Neredeyse bütün sınıflarda en çok Türk sınıflar, süper online gibi kelimeler, yani operatör isimleri geçiyordu. Bunları da birbirleri sınıflar arasında benzerlik göstermesin diye, ilişki kurmasın diye onları da çıkardık.
+
+140
+00:20:45,971 --> 00:21:01,531
+Çok fazla örnek içerisinde. Emapos'ta yani pozitif emojileri de içeriyor. Bunlar da bu şekilde. Aynı şekilde film yorumları verizdeki için de kelime buluşu sardık.
+
+141
+00:21:02,991 --> 00:21:11,872
+Tavsiye edelim. Gerçekten. Gerçekten gibi böyle olumlu bir kelimeler var. Bunlar da olumsuz bir durum için.
+
+142
+00:21:12,468 --> 00:21:33,208
+Şimdi virtual veckle yaptığımız, kullandığımız hiperparametrelere bahsedeyim. Vektör uzunluğu, her kelimeden ifade edileceği vektörün boyut sayısı, window, burada çerçeve boyutu uzunluğu, skip, grambaya çaba iki yöntemden biri, alfada learning page, başlangıç learning page parametresi, epoch da epoch iterasyon sayımız.
+
+143
+00:21:35,220 --> 00:21:36,660
+Üç farklı deneme yaptık.
+
+144
+00:21:38,340 --> 00:21:41,060
+[öğrenci], derlem ne burada?
+
+145
+00:21:42,860 --> 00:21:51,120
+Her ikisinin içinde yaptık. Etiketlerini dediğiniz gibi çıkarıp bütün bir veikümesiyle eğitim gerçekleştirdik. İkisini ayrı ayrı.
+
+146
+00:21:51,500 --> 00:21:53,519
+Eğitim kümesini mi kullandınız?
+
+147
+00:21:53,519 --> 00:21:56,600
+Yok hocam, Twitter verileri için.
+
+148
+00:21:56,759 --> 00:22:01,380
+Twitter ve test ayrı iki tane ekra dosyasıydı. Bunları birleştirdik etiketlerinden ayırıp.
+
+149
+00:22:01,423 --> 00:22:14,243
+Ondan sonra bunlarla eğitimini gerçekleştirdik. İkinci olarak da filmyör, yani bundan bağımsız. İkincisi de moviler için gene dediğim gibi etiket verisini çıkarıp tamamen...
+
+150
+00:22:14,483 --> 00:22:35,723
+komentler üzerinde bir eğitim gerçekleştirdik. Anladım ama test kümesindeki örnekler de derlemin içerisine girdiler yani. Etiketsiz de olsa. Aslında onları çıkarmış olsanız daha iyi olurdu bence. Testi örnekleri.
+
+151
+00:22:36,403 --> 00:22:50,824
+Tamam, doğru da aslında bunu yapabiliriz. Ama şey oluyordu, virtue vektörü de yok diyor.
+
+152
+00:22:51,144 --> 00:22:53,943
+Tabii o gerçek bir problem de o yüzden bunu söylüyorum zaten.
+
+153
+00:22:54,644 --> 00:23:05,024
+Yani unknown vektörler, çünkü test zamanında eğitim küresinde olmayan kelimeler de gelirler. Tamam mı? O yüzden.
+
+154
+00:23:05,024 --> 00:23:07,704
+Tamam. Peki tamam, devam edelim.
+
+155
+00:23:08,264 --> 00:23:08,844
+Tamam hocam.
+
+156
+00:23:10,984 --> 00:23:21,804
+Learning Rates'i dört farklı değer için Windows ve Vestel'lere sabitleyerek dört farklı değer için değerleri aldık.
+
+157
+00:23:22,387 --> 00:23:34,968
+Windows 3.5.7 için alfa ve retorsize tabikleriyle eklerleri aldık. Yani 3 farklı parametre, hiperparametre için bir fayetim işlemi gerçekleştirdik.
+
+158
+00:23:36,756 --> 00:23:58,655
+Virtual Activity Verisatı sonuçları bir şekilde. İncelediğimizde burada Learning Rate Parametri 0.05 ve 0.01'de en yüksek sonuçları verdiğini görüyoruz. Burada Logistic Regreson ve Random Forest'ı amacımız bu olmadığı için hiçbir sünün işlemi orada gerçekleştirmedik. Direktif old parametreleriyle eğitim gerçekleştirdik.
+
+159
+00:24:01,364 --> 00:24:08,043
+Gördük 0.05 ve 0.1 de bu TV seviyesinin daha başarılı olduğu gözlemlerinde.
+
+160
+00:24:08,043 --> 00:24:20,403
+Anladım. Şeyi soracağım burada da. Bir saniye. Kelimelerin vektörlerinden sonra tweetin vektörünü nasıl elde ediyorsunuz? Ortalama olarak mı?
+
+161
+00:24:21,463 --> 00:24:23,423
+Ortalama, evet. Ortalama olarak.
+
+162
+00:24:23,443 --> 00:24:24,063
+Ortalama olarak.
+
+163
+00:24:25,875 --> 00:24:29,516
+Aynen, Sentence'daki bütün kelimelerin vektörlerinin ortalaması.
+
+164
+00:24:29,556 --> 00:24:30,796
+Ortalaması da var, tamam.
+
+165
+00:24:35,115 --> 00:24:41,756
+Windows Size'da, görüldüğü gibi Windows Size arttığında başarımın arttığını gözlemledik.
+
+166
+00:24:42,756 --> 00:24:51,696
+Vector Size'da da aynı şekilde, kelimenin ifade derece vektör büyüklüğü arttığında başarımın yükseldiğini fark ettik.
+
+167
+00:24:52,852 --> 00:25:06,231
+Film yorumları veriseti için de aynı anlendikleri yaptık. Benzer bir şekilde 0.05 ve 0.1'de diğerlerin oranına daha başarılı ama çok fazla değişmeyen sonuçları aldığımızı gözlemledik.
+
+168
+00:25:06,711 --> 00:25:16,491
+Windows Size'da Twitter verisetinde de gözlemlediğimiz üzere Windows Size uzunluğu arttığında başırımların yükseldiğini gözlemledik.
+
+169
+00:25:16,799 --> 00:25:28,799
+Vektör size için de değerlendirdiğimizde random forest da olmasa bile en azından logistik regülasyon için konuştuğumuzda vektör büyüklüğü arttığında başarılımların arttığını gözlemliyoruz.
+
+170
+00:25:28,799 --> 00:25:39,799
+Dr. TrueVec için, Dr. TrueVec'in farklı olarak kelimeleri değil, doküman bazında yani sentence bazında bir vektör elde edebiliyor olmamız.
+
+171
+00:25:39,799 --> 00:25:43,799
+Gene Gelsin Library'i kullanıldı. Kullanan parametreler bu şekilde.
+
+172
+00:25:43,988 --> 00:25:49,407
+Yine VertiVek ile aynı hiperparametrelerin testleri yapıldı.
+
+173
+00:25:50,488 --> 00:25:59,668
+Twitter verisesini incelediğimizde VertiVek ile benzer bir şekilde 0.05 ve 0.1 değerlerinde başarının yüksek olduğu gözlemlerdi.
+
+174
+00:26:02,836 --> 00:26:21,615
+Windows Sizer'ı arttığında yine başarının yükseldiği gözlemlendi. Aynı şekilde Vector Sizer'ı boyutu arttığında da başarının yükseldiği gözlemleniyor. Film yorumları ve sesi içinde sonuçları incelediğimizde sonuçlar bu şekilde. Tekrar etmeyeyim.
+
+175
+00:26:24,355 --> 00:26:30,115
+Yediye doğru yükseldiğinde yine arttığında başarının yükseldiği gözlemleniyor. Ve Vector Sizer'ı da aynı.
+
+176
+00:26:31,988 --> 00:26:52,428
+F-Stacks gerçekten eğitim uzun sürdü. Yani başarımı da çok fazla değiştiğini söyleyemeyeceğim. Ama gene artları da bitir. Vector Size, kelimelerin ifade edileceği vektör boyu sayısı. Diğerlerinden aynı aslında. Min ve min ve min ve min ve max n burada diğerlerinden farklı olan iki tane hiper parametre. Min ne?
+
+177
+00:26:53,236 --> 00:27:00,736
+Karakter en gram için minimum uzunluk. Max ne ise? Max length yani maksimum karakter uzunluğu.
+
+178
+00:27:02,740 --> 00:27:14,819
+Engram'lardaki denemelerimiz şu şekilde oldu. Burada Learning Grade parametresi yerine min ve max değerlerini değiştirerek bir sonuç aldık.
+
+179
+00:27:15,480 --> 00:27:22,480
+2, 4, 3, 6 ve 4, 8 için 4, 3 farklı eğitimler şekillendirilmiş sonuçlar alındı.
+
+180
+00:27:24,100 --> 00:27:26,840
+Twitter ve listesi sonuçlarına baktığımızda.
+
+181
+00:27:27,988 --> 00:27:38,048
+Windows Size, F6, VertiVac ve DöktüVac'den farklı olarak. Burada Windows Size'ları küçükken daha başarılı sonuçlar elde edildi.
+
+182
+00:27:39,968 --> 00:27:54,928
+Burada da 3-6. Bu VTS'nin değişikliği bir durum olduğu için fazla genelleme yapamayacağım ama burada 3 minimum, maksimum 6 karakter uzunluğunda daha başarılı sonuçlar alındığı gözlemlendi.
+
+183
+00:27:55,412 --> 00:28:14,612
+Vektör büyüklükleri görüldüğü gibi 25-50'de değerlerine oranla daha fazla. Film yorumları vesleti için sonuçları incelediğimizde de mesela burada 4 minimum 8 karakterle engramlarla alınan sonuçların daha başarılı olduğu gözlemlerdi.
+
+184
+00:28:16,012 --> 00:28:19,072
+Burada da incelediğimizde vektör büyüklüklerini.
+
+185
+00:28:20,307 --> 00:28:35,327
+75-50'de daha yüksek konular alındığı gözlemende. Windows Size'lere üzerinde baktığımızda çok fazla farklılık görünmüyor ama Windows Size 5 için diğerlerine oranla daha yüksek olduğunu görüldü.
+
+186
+00:28:35,859 --> 00:28:54,499
+Sonuçları şöyle özetlemek gerekirse, VertueVec ve DöktueVec için gerçekten sonuçlar birbirlerine yakın değerler çıktı. Her parametre aralıklarında. LearningDate 0.05 geniyken, Windows Size arttırdığı ve daha iyi sonuçlar verildi, görüldü.
+
+187
+00:28:55,159 --> 00:29:01,759
+Her algoritma için Vector Büyükte Artıkçı genellikle sonuçların iyiliştiği gözlemlerinde.
+
+188
+00:29:02,324 --> 00:29:12,024
+F6 için, evet iki farklı kurs için min ve max engram karakter sayıları farklı değerlerde iyi sonuçları verilir gözlemlerinde.
+
+189
+00:29:12,531 --> 00:29:38,091
+FASTX için window boyutunda iki farklı. Aynı şekilde bu da. En iyi sonuçlar gene FASTX ile kelime ve kölenin elde edilmesiyle elde edilen sonuçlarda daha iyi olduğu gözlemlendi. Ama eğitim süresini düşündüğümüzde çok büyük bir fark gözlemlenmedi. Onu da belirtmek istiyorum. Ve ufak bir demo var. Sorunuz varsa alabiliriz.
+
+190
+00:29:39,796 --> 00:29:47,396
+Yani test teksin eğitim süresi uzun ama değecek bir iyileşme oluşturmuyor diyorsun. Yani dinliktar var.
+
+191
+00:29:48,296 --> 00:30:02,276
+Çok ciddi değil. Evet çok ciddi değil. Yüzde üç yüzde. Hani bu şeyde bağlı değişebilir. Problem özelinde o yüzde ikinin yüzde üç gün ne kadar şeyi ifade ettiği de tabii oradaki posta da bağlı.
+
+192
+00:30:03,059 --> 00:30:20,380
+Bir de kullandığınız sınıflandırıcı bölgüsünden baktığımız zaman da sanki şey gibi birazcık, Twitter'da Random Forest biraz daha iyi gibi, Movie kısmında Logistik Regresyon daha iyi gibi.
+
+193
+00:30:21,000 --> 00:30:21,579
+Evet, doğru.
+
+194
+00:30:22,500 --> 00:30:23,840
+Doğru hocam, evet.
+
+195
+00:30:23,840 --> 00:30:26,840
+Evet, model üzerinde bakmadık ama genelleme yaptığımızda zor.
+
+196
+00:30:28,692 --> 00:30:33,612
+Aslında SVM'de daha iyi sonuçlar veriyordu ama SVM'i bekle bekle sonuç vermiyor.
+
+197
+00:30:33,852 --> 00:30:36,332
+Bari şey yapayım, uğraşmayayım.
+
+198
+00:30:37,152 --> 00:30:39,051
+Devamınızı da bu şekilde hemen.
+
+199
+00:30:39,592 --> 00:30:43,112
+Mesela bir tane küçük film test alı uygun durum analizi yapalım baştan sonra.
+
+200
+00:30:43,511 --> 00:30:45,551
+Şu train verim seçimini kula merak ediyorum.
+
+201
+00:30:46,471 --> 00:30:50,031
+İçeride %80-120 olacak. Ayrıca test verimliyoruz.
+
+202
+00:30:50,451 --> 00:31:05,672
+Bu şekilde Data Quality Report'ını oluşturabiliyoruz. Burada yapacağımız her bir progresist işlemi için sonuçların değişimini de inceleyebiliriz. Hiperparametre tuning yapabiliriz.
+
+203
+00:31:05,672 --> 00:31:07,511
+Lower yapalım.
+
+204
+00:31:17,076 --> 00:31:19,636
+Ön etkini yapalım. Tamam buraya bakalım.
+
+205
+00:31:21,436 --> 00:31:22,716
+Ön etkini yapalım.
+
+206
+00:31:25,776 --> 00:31:31,156
+Burada hangi embedding yöntemini kullanacağımızı seçiyoruz. Burada para hiperparametre ile giriyoruz.
+
+207
+00:31:35,827 --> 00:31:39,067
+[öğrenci] şu anda eğitim kümesini mi verdik ona? Nasıl yaptık?
+
+208
+00:31:39,168 --> 00:31:45,627
+Sadece eğitim kümesi hocam. Tesvirisini ayrıca eklemeyi eklemedim. İçeride kendi içinde bölüyor. Oranı da almadık.
+
+209
+00:31:45,627 --> 00:31:56,968
+Burada hiperparametre tuning ve buradaki yapılan ön işlemlere göre performans, buradaki sonuçların nasıl değiştiğini gözlemlemek istiyorlar.
+
+210
+00:31:59,443 --> 00:32:03,804
+Test kümesinin içinden rastgele %80'i seçilerek yapıyorlar.
+
+211
+00:32:04,104 --> 00:32:05,183
+Aynen testi evet.
+
+212
+00:32:05,384 --> 00:32:05,683
+Anladım.
+
+213
+00:32:07,683 --> 00:32:10,064
+Efek sayımız 5 olsun inşallah uzun süre.
+
+214
+00:32:10,064 --> 00:32:12,024
+2 binin de az.
+
+215
+00:32:15,827 --> 00:32:19,548
+Oradaki ön proseslerin her birini ayrı ayrı mı uygulayacak?
+
+216
+00:32:20,067 --> 00:32:24,268
+Evet, her birini buraya işleme soktuğumuz sırayla uyguluyor.
+
+217
+00:32:25,768 --> 00:32:28,567
+Her birini ayrı ayrı, öncekinden bağımsız olarak değil mi?
+
+218
+00:32:29,067 --> 00:32:34,368
+Evet hocam. Hepsine ayrı ayrı. Birinin çıktısı, diğerinin input şeklinde.
+
+219
+00:32:36,852 --> 00:32:44,052
+Bir dakika. İlk önce mesela lower uyguluyor, onun üstüne remove hyperlink'i uyguluyor falan. O şekilde mi?
+
+220
+00:32:44,372 --> 00:32:51,252
+Aynen, o şekilde hocam. Bunun çıktısı, bunun girdisi. O yüzden ben şey de önemli, ifade edeyim.
+
+221
+00:32:51,652 --> 00:32:58,272
+Mesela burada remove stop versa, stop versa'yla Türkçe karakterler var mesela ve lower case ifade ediyorlar.
+
+222
+00:33:04,852 --> 00:33:06,211
+Bu da çıkarmamış olsa.
+
+223
+00:33:06,732 --> 00:33:14,112
+Yani ne bileyim, burada punctuation'ları kaldırdığımızda, handle-yiburcu yaptığımızda bir anlam ifade etmeyecek gibisinden bir şeyler de var yani.
+
+224
+00:33:19,188 --> 00:33:22,108
+Bunun çıkardıklarımızın birbirine baktığınızda.
+
+225
+00:33:27,635 --> 00:33:34,556
+Buradaki Epoch sayısı şeyin Word2Week'in eğitimi için olan Epoch sayısı.
+
+226
+00:33:34,796 --> 00:33:35,375
+Doğru hocam.
+
+227
+00:33:40,915 --> 00:33:42,855
+Aslında bu kadar yavaş değil. Ben de yandım.
+
+228
+00:34:13,108 --> 00:34:19,708
+Burada sürekli seslen sonraki veri de gözaltmıyor.
+
+229
+00:34:19,708 --> 00:34:22,507
+Sansımar sütüye seçiyoruz.
+
+230
+00:34:22,507 --> 00:34:27,692
+Gönlükte, bu şekilde tamam.
+
+231
+00:34:47,956 --> 00:34:50,816
+Tamam, belki Epo'k sayısını artırsak daha iyi.
+
+232
+00:34:54,396 --> 00:34:55,556
+Teşekkür ederim.
+
+233
+00:34:58,176 --> 00:35:00,676
+Zaten bu kadar sorunuz varsa da geliyorum.
+
+234
+00:35:00,676 --> 00:35:02,636
+Tamamdır. Ellerinize sağlık.
+
+235
+00:35:02,636 --> 00:35:03,556
+Çok güzel.
+
+236
+00:35:08,676 --> 00:35:13,636
+Evet, [öğrenci], sen de gelmişsin. Seni en sona bırakıyorum, tamam mı?
+
+237
+00:35:15,092 --> 00:35:15,952
+Tamamdır hocam.
+
+238
+00:35:17,231 --> 00:35:19,011
+Peki, şimdi [öğrenci]'ı dinleyelim.
+
+239
+00:35:31,795 --> 00:35:33,275
+Sesim geldi mi acaba?
+
+240
+00:35:34,375 --> 00:35:35,036
+Evet, geldi.
+
+241
+00:35:35,775 --> 00:35:37,335
+Merhabalar herkese.
+
+242
+00:35:38,996 --> 00:35:46,496
+Ben de bu Twitter'daki verileri kullanarak karşılaştırma yaptım hocam.
+
+243
+00:35:46,496 --> 00:35:49,996
+Sizin istediğiniz gibi olmamış olabilir benimkisi de.
+
+244
+00:35:51,195 --> 00:35:57,335
+Şu yarışma eğitim Excel dosyasını kullandım. Etiketli olan hepsi.
+
+245
+00:35:57,775 --> 00:36:22,895
+Oradan 3000 tanesini test olarak ayırdım. Diğerlerini eğitim için kullandım. Bu şekilde anlatacağım modellerle testler yaptım. Etiketli verileri kullanarak duygu analizi yapıp 3 farklı yöntemi karşılaştırdım. İyi ki FastText Python Agresini kullandım. Çok fazla ön işleme yapmadan.
+
+246
+00:36:23,315 --> 00:36:48,535
+FASTX'e verip sonuçları aldım. İkincisinde şu sayı kitle Örneğe Count Vectorizer'ını kullandım. Burada doküman yerine bizim örneklerde geçen sözcükler için bir vektör oluşuyor. Kaç tane geçtiği ile ilgili. Örnek sayısı çarpı 3386 tipinde bir matris oluştu burada.
+
+247
+00:36:50,164 --> 00:37:00,724
+Üçüncü yöntemde de TF-IDP, Time Frequency, Universe Document Frequency vektör oluşturdum. Bunu kullanarak SVM...
+
+248
+00:37:00,724 --> 00:37:07,524
+Ama [öğrenci], bu son söylediğin iki tanesi anlamsal uzaylar değiller, değil mi?
+
+249
+00:37:09,164 --> 00:37:14,044
+Değiller hocam. Yani değiller herhalde.
+
+250
+00:37:15,044 --> 00:37:17,164
+Peki, FastFex'i eğittin mi?
+
+251
+00:37:17,583 --> 00:37:19,983
+Yoksa hazır vektörleri mi aldın kullandın?
+
+252
+00:37:19,983 --> 00:37:32,023
+Yok hocam, hazır vektörleri almayın dediğiniz için onları kendim eğitim olarak ayırdığım işte 11 bin tane veriyle eğiterek sonuçları aldım.
+
+253
+00:37:32,123 --> 00:37:33,223
+Nasıl eğittin onları?
+
+254
+00:37:34,183 --> 00:37:35,463
+Hiç eğitilmemiş hocam.
+
+255
+00:37:36,163 --> 00:37:37,483
+Nasıl eğittim işte on sefer?
+
+256
+00:37:38,663 --> 00:37:40,203
+Nasıl eğittim hocam?
+
+257
+00:37:41,715 --> 00:37:48,076
+Yani şey de eğittim hocam, normal APC ile kullanarak eğittim benim etiketli verilerden.
+
+258
+00:37:49,956 --> 00:37:52,735
+Etiketli verilerden derdi, etiketleri de verdin mi ona?
+
+259
+00:37:53,195 --> 00:37:57,215
+Verdim, etiketleri de verdim hocam. Test ederken etiketleri vermedim.
+
+260
+00:37:57,815 --> 00:38:03,936
+Bir dakika, etiketleri nasıl veriyorsun ki eğitime? Etiketler verilemez. Nasıl veriyorsun?
+
+261
+00:38:05,275 --> 00:38:07,596
+Yani ya da yanlış anladım hocam.
+
+262
+00:38:08,016 --> 00:38:09,915
+Şu şekilde gösterebilirim.
+
+263
+00:38:12,135 --> 00:38:23,715
+Hocam onun bir dosya formatı var diye yazıyordu. Etiket ve veri şeklinde. Bu şekilde bir dosya yer verip oradan eğittim ama.
+
+264
+00:38:26,335 --> 00:38:27,596
+Peki, tamam. Devam edelim.
+
+265
+00:38:30,076 --> 00:38:31,155
+Bu şekilde hocam.
+
+266
+00:38:33,396 --> 00:38:37,135
+Dosyayı kullandım. Elde ettiğim sonuçlar da bu şekilde.
+
+267
+00:38:38,796 --> 00:38:48,816
+Hocam yanlışlıkla aslında dokumentasyonu okudum ama Fastex'in eğitilmiş olarak aldığımı düşünmüyorum ama yanlışlıkla şey yapmış olabilirim.
+
+268
+00:38:50,164 --> 00:38:59,164
+Yaptığım testlerde en başarılı FastEx çıktı. Ondan sonra bu SVM'de olan sonra da...
+
+269
+00:38:59,164 --> 00:39:02,284
+FastEx'in vektörlerini ne yapıyorsun daha sonra?
+
+270
+00:39:04,424 --> 00:39:13,564
+Yani hocam, FastEx'in vektörlerini kullanmadım. Sonra yine sınıflandırma şeklinde yaptım test verilerinde.
+
+271
+00:39:13,564 --> 00:39:15,584
+Nasıl yapıyorsun sınıflandırmayı?
+
+272
+00:39:16,884 --> 00:39:29,564
+Yani tahmin edebiliyor hocam. Benim kullandığım arayüzde Festex modeli. Benim verdiğim örneğin ne olduğuna dair işte. O şekilde ben de...
+
+273
+00:39:29,564 --> 00:39:32,524
+Orada mesela nasıl bir sınıflandırıcı falan var arka tarafında onun?
+
+274
+00:39:33,764 --> 00:39:34,464
+Efendim hocam?
+
+275
+00:39:34,964 --> 00:39:37,804
+Mesela nasıl bir sınıflandırıcı falan var orada? Ona bakabilir miyim?
+
+276
+00:39:38,291 --> 00:39:46,371
+Hocam, okuduğum kadarıyla anladığım o vektörlerin ortalamasını alarak yapıyor ama onları çok detaylı incelemedim.
+
+277
+00:39:46,371 --> 00:39:48,012
+Sonra sonrasında ne yapıyor?
+
+278
+00:39:51,012 --> 00:39:59,371
+Anladığım kadarıyla hocam, okuduğum kadarıyla o kelimelerin, predict dediğim de şeylerini...
+
+279
+00:40:00,000 --> 00:40:06,280
+Vektörlerin ortalamasını alıyor. Ona göre bizim 3 sınıftan bir tanesini seçiyor.
+
+280
+00:40:10,780 --> 00:40:16,780
+Evet, güzel bir soru hocam. Hocam o kadar çok detaylı bilmiyorum.
+
+281
+00:40:18,400 --> 00:40:25,360
+Peki gelin [öğrenci]. Burada count vektörler için YSA demişin, TFI'de için SVM demişin. Niye bunlar birbirinden farklı var?
+
+282
+00:40:26,547 --> 00:40:37,367
+Hocam o denedim yani. Hangisi iyi çıkarsa onu kullandım. Hepsi için çoğu modeli denedim. Karar araçlarını falan da denedim mesela. Bunda o iyi çıktı.
+
+283
+00:40:37,367 --> 00:40:50,347
+Şunu demek istiyorum. Count Vector artı YSA'nın sonucu şöyle değil mi? Mesela burada yazmış. Ne bileyim? Decision Tree'nin sonucu şöyle. SBA'nın sonucu şöyle. Onları da böyle raporlarsan.
+
+284
+00:40:50,612 --> 00:40:58,692
+Neyi neden buraya koyduğuna daha iyi bir şey olur. Sonuçta elde etmiştin sonuçlar, öyle değil mi?
+
+285
+00:40:59,712 --> 00:41:04,252
+Tabii tabii. Ya ben karışık durmasın diye şey yaptım hocam. Tamam bir dahakine öyle yaparım.
+
+286
+00:41:04,752 --> 00:41:08,312
+Böyle de çok yorumlanamaz oluyor. Anlatabildim mi?
+
+287
+00:41:08,892 --> 00:41:09,992
+Anladım, anladım hocam.
+
+288
+00:41:10,052 --> 00:41:12,132
+Tamam. Peki, başka var mı bir şey?
+
+289
+00:41:12,852 --> 00:41:13,432
+Yok hocam.
+
+290
+00:41:13,872 --> 00:41:15,392
+Peki, teşekkürler [öğrenci].
+
+291
+00:41:15,812 --> 00:41:16,752
+Ben teşekkür ederim.
+
+292
+00:41:17,840 --> 00:41:19,840
+[öğrenci], tahtacıya geçti.
+
+293
+00:41:19,840 --> 00:41:20,840
+Selamlar hocam.
+
+294
+00:41:20,840 --> 00:41:21,840
+Merhaba.
+
+295
+00:41:21,840 --> 00:41:23,756
+Tekrar paylaşayım hemen.
+
+296
+00:41:27,603 --> 00:41:45,603
+Görebilir musunuz şu an ekranını? Evet. Tamamdır. Hocam, öncelikle ben yaptığım şey şuydu. Fastex, World2Wake ve GloVe'u iki farklı derlemle eğitip sentimat anlendiği senaryosunda kıyaslamak üzerine bir çalışmaydı bu.
+
+297
+00:41:47,864 --> 00:41:52,723
+Rapor şeklinde hazırlamıştım. Bir sunumum yok ne yazık ki. O yüzden böyle rapor üstünden anlatayım hızlıca.
+
+298
+00:41:53,492 --> 00:42:00,492
+İki tane farklı değerlem kullandım. Bunlardan bir tanesi 42.000 haber sizin vermiş olduğunuz bir diğer de comment adı altındaki değerlem.
+
+299
+00:42:01,992 --> 00:42:08,464
+Burada bu değerlemlerin sonuçlarına bir sentiment analizini uygulayacağım için aslında şunu arıyordum burada, şuna cevap arıyordum.
+
+300
+00:42:08,463 --> 00:42:12,143
+Haber derleminin de mi daha iyi çıkacak? Comment derleminin de mi daha iyi çıkacak?
+
+301
+00:42:12,143 --> 00:42:20,463
+Haber derlemi, commente göre biraz daha büyük bir derlemdi. Bir milyondan fazla token vardı içerisinde. Comment'da da 300 bin tane falandı galiba.
+
+302
+00:42:20,463 --> 00:42:24,183
+Üçte bir oranındaydı neredeyse. Aslında sorguladığımız şey şuydu.
+
+303
+00:42:24,183 --> 00:42:32,943
+Haber derleminin büyük bir derlemde, büyük ve alakasız bir derlemde mi daha iyi çalışıyor? Küçük ve alakalı bir derlemde mi sentim analizi daha başarılı?
+
+304
+00:42:32,943 --> 00:42:36,063
+Bunu test etmeye çalıştım.
+
+305
+00:42:36,788 --> 00:42:56,208
+Burada üç farklı model eğitim demiştim kelime vektörizasyonu için. Aslında Elmo'yu da denemek istedim. Elmo için de baya bir çalıştım özellikle. 2-3 gün çalıştım. Ancak 2080'li bir makinem var burada. Onu da hesapladığımda iki haftadan fazla sürüdü eğitim. Hani sıfırdan, proteine olmadan.
+
+306
+00:42:56,916 --> 00:43:05,916
+eğitim yapma çok uzun süreceği için sadece böyle istatistiksel ve aslında nöralinatör kullanan üç farklı modeli inceledim.
+
+307
+00:43:05,916 --> 00:43:17,916
+Burada aslında WorkToWork ve FastTag'in aralarındaki fark, en büyük farklardan bir tanesi, FastTag'in dikişlerde bulunmama problemine getirdiği çözüm.
+
+308
+00:43:18,516 --> 00:43:37,635
+Word ve Glow arasındaki fark ise biri istatistiksel modeller kullanırken BDN'in yapay sinir ağa kullanması. Aslında incelediğim parametreler bunlardı burada. Sözlükte bulunmama ne kadar büyük bir problem. Veyahut bir yapay sinir ağa etmekle istatistiksel modeller kullanmak arasındaki matematisel işlem nasıl fark ediyor bunu bulmaya çalıştım.
+
+309
+00:43:39,476 --> 00:43:48,476
+İsterseniz sonuçta, uyguladığım veri, sendim atarizmde uyguladığım veri, yarışma eğitim veri seti aslında. Bunu 80-20 olarak ayırdım.
+
+310
+00:43:48,476 --> 00:43:55,340
+Bunlar çeşitli ön işlem adımları yaptım zaten standart. Şeyleri silme.
+
+311
+00:43:55,443 --> 00:44:00,443
+Büyük harfleri, küçük harfleri çevirme, rakamları silme, noktalama işaretlerini silme gibisinden.
+
+312
+00:44:00,443 --> 00:44:07,443
+Ardından her bir kelime için, her bir cümle için daha doğrusu vektörlerin ortalamasını buldum.
+
+313
+00:44:07,443 --> 00:44:13,443
+Aritematik ortalama yaptım aslında. Ve her bir cümleyi bir tane n boyutlu bir vektör haline çevirdim.
+
+314
+00:44:13,443 --> 00:44:20,235
+Ve bu vektörleri de bir tane en sonunda 3 katmanlı multi-layer perceptörünü verdim.
+
+315
+00:44:20,371 --> 00:44:29,371
+Bu Multi-Lay Perceptron da aslında olumlu olumsuz verilme tür olacak şekilde üç tane çıktısı olan bir tane Softmax Regressor aslında.
+
+316
+00:44:29,371 --> 00:44:41,371
+Elde ettiğim sonuçlarda şunu gördüm. Fast-Tex yöntemi her iki değerlemle eğitilmesine, eğitim durumunda da diğer yöntemlere göre çok fazla yüksek başarı veriyor.
+
+317
+00:44:41,371 --> 00:44:44,371
+Birinde %71.5, yerinde %74.
+
+318
+00:44:44,500 --> 00:45:02,180
+Bu da bize şunu sağlıyor. Yorum yapmamızı sağlıyor. Sözlükte bulunmama problemi büyük bir problem. Fastex'in bize getirmiş olduğu bu avantaj diğer yöntemlere göre aslında çok daha iyi sonuç vermesine sebep oluyor.
+
+319
+00:45:02,180 --> 00:45:09,300
+Bir diğer yandan çıkarttığım öteki bir sonuç da şuydu. Büyük derlem, büyük ve alakasız bir derlem.
+
+320
+00:45:09,523 --> 00:45:13,723
+Küçük ve alakalı bir derleme göre daha yüksek başarı elde etti. Ben bunu beklemiyordum aslında.
+
+321
+00:45:15,643 --> 00:45:23,543
+Burada da şeyi anladım. Ne kadar çok veri bulabilirsek o kadar daha iyi sonuçlar elde edebiliriz gibisinden bir yorum mu oldu burada da?
+
+322
+00:45:24,043 --> 00:45:25,423
+Genel olarak yaptığım çalışma bu şekilde.
+
+323
+00:45:27,563 --> 00:45:33,643
+Belki şey yapabilirdin. İki derlemi birleştirip bir üçüncü derlem oluşturabilirdin.
+
+324
+00:45:33,940 --> 00:45:47,440
+Evet. O tersine takmak geldi ama. Belki oradaki başarı daha da yüksek olacaktır. Peki şeyi sorayım. Buraya yazmamışsın ama belki yazmıştın bunu görmedim. FastSex, World2Bag ve Gloobie'nin eğitim süreleri ne kadar oldu bu derlemlerinde?
+
+325
+00:45:47,440 --> 00:46:00,539
+Süreleri ölçmedim. Ancak hepsini GPU'lu makinede eğittiğim için hani çok kısa sürmüştü benim için hani karşılaştırılmayacak şekilde hızlı bir serverde eğittim bunları aslında. Onları da benchmark'a koymadım.
+
+326
+00:46:00,739 --> 00:46:01,679
+Anladım, anladım.
+
+327
+00:46:01,940 --> 00:46:20,260
+Artık olarak Elmo ile uğraştığım için, bu süreçten, Elmo'yu yapayım, Transformer'ı iteyim istiyordum aslında bu öderin en büyük çıklısının olmasını bekliyordum kendim için. Ama dediğim gibi araştırdığımda Elmo'nun training süresinin çok uzun, çok uzayacağını gördüm. Bu derlemle Elmo'ya itmek istiyordum aslında veya Bertha'ya itmek istiyordum.
+
+328
+00:46:20,340 --> 00:46:34,680
+Orada Bert'e eğitmek herhalde daha kısa süre. Evet, Bert biraz daha kısa süreydi. Ama ben Elmoy'a bir bakmıştım çünkü Elmoy'a bir süreti takip ediyorum bu şeyle alakalı olduğu için. Kontekste birlikte vektörü oluşturabildiği için.
+
+329
+00:46:36,755 --> 00:46:48,815
+Elma mı yoksa şirket adamı olduğunu çıkartabiliyordu. Böyle ilginç sonuçları vardı aslında. Merak edeyim dedim. Fazla vakit kaybettim sanırım orada biraz. Dolayısıyla biraz daha kolay eğitilebilen bu üç modeli tercih ettim.
+
+330
+00:46:49,235 --> 00:46:52,435
+Tamam. Tamam. Peki. Ömerine sağlık [öğrenci]. Teşekkürler.
+
+331
+00:46:52,456 --> 00:46:53,815
+Teşekkür ederim hocam. Deneyiniz.
+
+332
+00:46:55,815 --> 00:46:59,415
+Şimdi bir küçük ara verelim arkadaşlar.
+
+333
+00:47:08,340 --> 00:47:21,519
+Az sonra görüşmek üzere arkadaşlar. Sırada [öğrenci] ve [öğrenci] olacak. Sonra [öğrenci], sonra [öğrenci]'dan. O sırada gideceğiz. Az sonra görüşmek üzere.
+
+334
+01:02:38,228 --> 01:02:46,248
+Evet arkadaşlar, tekrardan merhaba. Hazırsa [öğrenci] ve [öğrenci] sunumlarına başlayabilirler.
+
+335
+01:02:49,007 --> 01:02:52,168
+Tamam, hemen ekran paylaşıyorum hocam.
+
+336
+01:02:52,208 --> 01:02:52,847
+Tamamdır.
+
+337
+01:03:00,148 --> 01:03:04,568
+Ekran geldi mi? Geldi.
+
+338
+01:03:07,268 --> 01:03:14,528
+Bu çalışmada [öğrenci]'le beraber çalıştık. Önce içindekiler kısmını anlatacağım.
+
+339
+01:03:14,528 --> 01:03:25,968
+Kullanılan derlenler ve uygulamamız, ön işleme adımları, makine öğrenme ve derin öğrenme algoritmaları kullandıklarımızı, kullanılan yöntemlerini karşılaştırılması ve çıkarımlar.
+
+340
+01:03:26,420 --> 01:03:52,500
+Derlem uygulamalar kısmında derlemde birincisi sizin paylaştığınız comments derlemini kullandık. İkincisinde movie comments kullandık. Uygulamamızda duygu analizi. Commons'de pozitif yorumlarda 340 bin pozitif yorum, 50 bine yakın negatif yorum. Movie comments'da 57 bine yakın pozitif yorum, 25 bine yakın negatif yorum bulunmakta.
+
+341
+01:03:53,876 --> 01:04:05,516
+Ön işleme adımlarında büyük küçük harf dönüşümünü kullandık. Linklerin ve eşteklerin kaldırılması, noktalı minşartların özel karakterlerin kaldırılması, fazla boşlukların silinmesi.
+
+342
+01:04:06,336 --> 01:04:16,996
+Movie Command'de slash M ve slash R satır sunu karakterleri vardı. Onları kaldırdık. Daha sonra kullandığımız Movie Command etiketli bir veri değildi.
+
+343
+01:04:21,876 --> 01:04:40,735
+Fakat ayırabilmemiz için bir full out dönüşüm yapmamız gerekiyordu. Onları yaptık. Daha sonra 2.5'dan aşağı olanları olumsuz olarak 2.5'dan yukarı olanları da 1 olarak etiketlendirdik. Daha sonra işte kullandığımız bu comment derleminde.
+
+344
+01:04:41,652 --> 01:04:53,231
+İki tane kontrol yaptık. Kendimiz belirlediğimiz thresholdlarla işte şey komentlerde de reyting sınırı vardı. Orada da işte bir şey sıfırla yüz arasındaydı.
+
+345
+01:04:54,012 --> 01:05:07,372
+Kırktan aşağı olup işte etiketi bir olanlara baktık. Öyle yanlış etiketlendirme yoktu açıkçası. Diğerinde de işte elliden büyük olup ama negatif işaretlenen satırlar var mı diye baktık.
+
+346
+01:05:07,372 --> 01:05:09,231
+Orada da on dix bin elli dört tane.
+
+347
+01:05:09,652 --> 01:05:27,532
+Etiketlenmiş veri vardı. Örneğin şöyle bir yorum vardı. Küçük çocuğu olan herkese öneririm. Ratingi atmış ama etiketi sıfır olarak işaretlendirmiş. Biz de bunları çıkaralım diye düşündük ve çıkardığımızda da sonuçların iyileştirdiğini gördük.
+
+348
+01:05:27,532 --> 01:05:29,572
+Daha sonra pozitif ve negatif...
+
+349
+01:05:29,572 --> 01:05:35,251
+Şey soracaktım. Duygu durum analizi için dataset ne kullandınız?
+
+350
+01:05:35,795 --> 01:05:41,096
+Şey, Movie Commons kullandık. Bir de sizin paylaştığınız Commons kullandık hocam.
+
+351
+01:05:43,795 --> 01:05:52,775
+Yok, yani duygu analizi yapmak için, yani hani şey mi yaptınız siz de? Yani derlem olarak kullandığınız şeyleri aynı zamanda veri kümesi olarak da mı kullandınız?
+
+352
+01:05:53,695 --> 01:05:53,976
+Evet.
+
+353
+01:05:59,188 --> 01:06:18,188
+Yani normalde hani dediğim gibi öyle bir şey yapmanızda çok fazla şey yok. En başta zaten anlatım, onları dinlemişsiniz de değil mi? Bir daha tekrarlamıyorum aynı şeyleri. Dolayısıyla hani burada pozitif, negatif yani hani derlemdeki şeylerin negatifliği ya da pozitifliğin hiçbir önemi yok aslında. Yani zaten hani o...
+
+354
+01:06:18,739 --> 01:06:26,399
+Derlem dediğin şey etiket olmadan toplayabildiğimiz kadar data toplayıp içeriye atmak demek aslında bir açıdan düşünürsek.
+
+355
+01:06:26,980 --> 01:06:33,579
+Hocam biz şeyleri verirken sadece commens kısmını verdik. Target kısımlarını yani label kısımlarını vermedik vektörleri oluştururken.
+
+356
+01:06:34,159 --> 01:06:43,219
+Yok tamam doğru anladım orasını ama bazılarını sildik veren dedin ya mesela. Onları silmeye gerek yok aslında derlemde öyle değil mi?
+
+357
+01:06:43,960 --> 01:06:44,419
+Evet.
+
+358
+01:06:45,523 --> 01:07:01,583
+Yani onlar sizin uygulamadaki performansı bir şekilde değiştirebilecek şeyler belki. Yani yanlış etiket eklemeler aslında. Dolayısıyla derleme üzerinde o tarz bir şeyleri çıkılmaya gerek yok. Peki devam edelim.
+
+359
+01:07:02,123 --> 01:07:09,703
+Tamam. Daha sonra pozitif ve negatif örneklendiselerin dengesiz olmasından dolayı undersampling yaptık hocam.
+
+360
+01:07:12,500 --> 01:07:15,939
+Makine öğrenme, derin öğrenme algoritmaları. Word2Vac için.
+
+361
+01:07:16,519 --> 01:07:21,659
+Şeyi söyleyeceğim, under sampling'te de o zaman derlemleri de mi küçülttünüz?
+
+362
+01:07:22,159 --> 01:07:24,439
+Evet, küçülttük. Yani pozitif.
+
+363
+01:07:28,039 --> 01:07:35,819
+Hocam aslında orada şey aşamasında yaptık onu. Duygu analizinde şeyleri, makine öğrenmesi, derin öğrenme algoritmalarını eğitirken yaptık onu.
+
+364
+01:07:37,972 --> 01:07:44,332
+Tamam, yani şeyde değil mi onlar? Hani derlemin kısmını, yani derlemin içerisinde kaç tane pozitif negatif attınız o zaman?
+
+365
+01:07:45,732 --> 01:07:51,872
+Atmadık, aksine eksilttik. Yani negatif sayısı elli bin taneydi, diğerinden de pozitiften de elli bin tane aldık.
+
+366
+01:07:53,132 --> 01:07:55,752
+İşte hepsini birden niye almadınız? Derlem için demek istiyordun.
+
+367
+01:07:55,952 --> 01:07:56,812
+Derlem ben mi asla?
+
+368
+01:07:56,812 --> 01:08:03,192
+Anladım hocam, biz orada o ayırımı tam yapamamışız, derlem ve verikümesi. Hepsini verikümesi olarak değerlendirdik.
+
+369
+01:08:03,352 --> 01:08:04,692
+Tamam, tamamdır.
+
+370
+01:08:05,427 --> 01:08:06,148
+Teşekkürler.
+
+371
+01:08:06,900 --> 01:08:34,899
+Tamam. VertiVec için kullandığımız makine öğrenmesi ve derin öğrenme algoritmalarında önce Dizil Sentri'yi denedik. Orada sonuçların kötü aldığını fark ettiğimizde SVM denedik. SVM'de de çalıştırdık ama 6 saat beklemenize rağmen hala bitmediği için onu da vazgeçtik. Sonra LSTM'i denedik. LSTM'de de %50'ye yakın bir sonuç aldık. Daha sonra da Random Forest'ı denedik.
+
+372
+01:08:34,899 --> 01:08:50,119
+Random Forest'ta da maksimum depth parametresi üzerinde oynamalar yaptık. Orada da şöyle bir şeyle karşılaştık. Mulu Comment'ta depth parametresini arttırdığımızda ekürüsünün arttığını, Comment'ta de ekürüsünün şey.
+
+373
+01:08:50,579 --> 01:09:07,239
+Ekürüsünün pardon, maksimum D parametrisini arttırdığımızda %50'ye yakın yani yarı yarıya ekürüsünün düştüğünü gördük. O yüzden benzer parametrelerle kullanamayacağımızı düşünüp o yüzden logiklik regresyon denecek. Logiklik regresyonu daha iyi sonuçlar aldık.
+
+374
+01:09:09,203 --> 01:09:28,984
+Burada da yöntemlerimiz FastTech, Word2Vac ve WordMDiplier kullandık biz. FastTechs'te Command Dataset'te %90'a yakın ekürüsü aldık. Movie Commons'te de ekürüsü %78 aldık. Belki buradaki farkını düşünebiliriz.
+
+375
+01:09:29,203 --> 01:09:36,923
+Command Dataset'ine baktığımızda 100 bine yakın kelime, unique kelime olduğunu, Movie Commons'a baktığımızda 300 bine yakın.
+
+376
+01:09:37,203 --> 01:09:45,304
+İşte şey kelime, unique kelime olduğunu gördük. Bu farktan ber kaynaklı olabileceğini düşündük.
+
+377
+01:09:45,824 --> 01:09:53,283
+Word2V kısmında da ekürüsü de %62, Movie Commons'da da %79 ekürüsü aldık.
+
+378
+01:09:54,283 --> 01:10:00,000
+Burada da işte Movie Commons ve Commons datasetlerini incelediğimizde Movie Commons'daki yorumlar...
+
+379
+01:10:00,000 --> 01:10:28,000
+Bu örneğe bakalım.
+
+380
+01:10:28,000 --> 01:10:36,520
+Bundan önce de işte BERT kullanmıştık. BERT'de de işte Huggins Face'de olan daha önce train edilmiş modelleri kullandık.
+
+381
+01:10:36,520 --> 01:10:47,760
+Yani kullanmıştık. Daha sonra da işte onu kendi değerlerimizle eğittiğimizde yani loss değerinin çok düştüğünü ve ekürüsünde %100'e yakın bir değer aldığını gördük.
+
+382
+01:10:47,840 --> 01:10:56,000
+Ama işte train edilmiş modelleri kullanmamız gerektiği için onu bıraktık. Daha sonra GLOW'u kullandık. GLOW'da da işte vektörleri...
+
+383
+01:10:56,000 --> 01:11:12,879
+Oluşturduktan sonra da, kendi derlemimizden, oluşturduktan sonra da onların işte bu bir kelimeyi verip sinonimlerine baktığımızda, yani sonuçları çok beğenmediğimiz için o yüzden aslında diğer yöntemleri denedik.
+
+384
+01:11:13,819 --> 01:11:17,899
+Burada Fast Text'te kullandığımız şeyleri biraz açıklayacağız.
+
+385
+01:11:17,899 --> 01:11:18,899
+Önce işte bu...
+
+386
+01:11:19,488 --> 01:11:35,768
+Şimdi Undersampling yapmadan önce FastEx'de çalıştırdığımızda yine Default parametrelerle sürekli sonuçlarda ne verirsek, hangi kelimeyi denersek deneyelim, çok bariz kötü olan yorumları versek bile sürekli bir dediğini gördük.
+
+387
+01:11:35,768 --> 01:11:47,488
+Daha sonra o Undersampling yaptıktan sonra Default parametrelerle beraber %49'a ulaştık. Daha sonra parametrelerle oynayarak bu değerleri arttırmaya çalıştık.
+
+388
+01:11:47,488 --> 01:11:59,488
+Burada işte mesela işte Learning Rate'i 0-1, Epox sayısı 50 ve Word 100 gramsı 2 iken Ayşek'te Epox sayısını işte iki katına çıkardığımızda yüzde işte...
+
+389
+01:12:00,051 --> 01:12:22,751
+Yüzde yedilik. Learning Rate'ini iki katı azalttığımızda ve diğerlerini sabit tuttuğumuzda yüzde üçlük bir artış olduğunu gördük. Daha sonra Learning Rate ve Vertengren'i sabit tutup Epoch sayını arttırmaya başladığımızda da Accurity'nin arttığını ancak bir süre sonra bu hızın da düştüğünü gördük.
+
+390
+01:12:28,051 --> 01:12:49,011
+Yorumu negatif olan satırları sildikten sonra da %90'a çıktığını gördük. Çıkarımlarımızda Fastest için Learning Rate değeri düşürüldükçe Epox sayısı arttıkça Ecurus değerinin de artmış olduğunu, artış hızında bir süre sonra düşmeye başladığını gözlemledik.
+
+391
+01:12:49,011 --> 01:12:56,011
+Comment derleminde yanlış etiketlendirme tespit edilmiş. Yani bu etiketlendirme kullanılan yöntemlerin doğruluk derlemi...
+
+392
+01:12:56,051 --> 01:13:10,731
+Devletlerinin düşürdüğünü gördük. Undersampling yapıldıktan sonra doğruluk değerinde artış saptanmıştır. Comment değerlemi için Fastex'in en iyi sonuç verdiğini, Movie değerlemi için de en iyi sonucu VertiVec verdiğini gördük.
+
+393
+01:13:11,371 --> 01:13:22,611
+Doğruluk değerinde Movie değerleminin yöntemlere karşı sonuçları birbirine daha yakın olduğunu, Comment değerlemine göre başarım oranlarının daha yüksek olduğunu gördük.
+
+394
+01:13:23,060 --> 01:13:26,560
+Bu kadar hocam. Soru varsa alabilirim.
+
+395
+01:13:28,540 --> 01:13:32,300
+Peki, şeyde bu tablo vardı ya, biraz geri gelsek.
+
+396
+01:13:32,920 --> 01:13:33,280
+Burası.
+
+397
+01:13:33,280 --> 01:13:39,020
+Mesela, buradaki mesela FastEx'teki bu başarılar hangi sınıflandırıcıda elde edildiler?
+
+398
+01:13:40,560 --> 01:13:49,360
+Biz direkt hocam şeyi kullandık. FastEx'in train superset hapisini kullandık.
+
+399
+01:13:49,939 --> 01:13:51,920
+Supervised diye bir apisi var.
+
+400
+01:13:52,139 --> 01:13:53,079
+Pardon, supervised.
+
+401
+01:13:53,539 --> 01:13:55,219
+Onu kullanalım. WordTweck'te?
+
+402
+01:13:57,079 --> 01:14:01,879
+WordTweck'te şey kullandık. Buradaki sonuçlar hocam şey, logiclik regresyonu.
+
+403
+01:14:02,879 --> 01:14:04,359
+WordEmbeddingPayer.
+
+404
+01:14:04,359 --> 01:14:05,799
+Onu söylemişim.
+
+405
+01:14:06,292 --> 01:14:22,731
+Orada Hocam, ilk şeyde, orada da Keras'ın embeddinkini kullandık. Custom ve Word embeddink geliştirdik. OneHot'larını çıkardıktan sonra sentence'ların ilk katmana embeddink'i verdik. Ardından da tekrar işte o modeli şeyler ekledik. Dance Layer'lar ekleyip o şekilde bir eğitim gerçekleştirdik.
+
+406
+01:14:23,072 --> 01:14:23,652
+Evet Hocam.
+
+407
+01:14:23,792 --> 01:14:26,872
+Peki oradaki ilk initial değerleri nereden aldınız?
+
+408
+01:14:28,180 --> 01:14:47,200
+Enmediği tercih mi? Hocam cümleleri içerisindeki kelimeleri tek tek gezdik ilk başta. Ondan sonra sentence'larda da her bir sentence'ı one hata verdik ve oradan vektörleri çıkardık. Onları verdik ilk initial değer olarak. O vektörleri verdik direkt.
+
+409
+01:14:48,340 --> 01:14:59,539
+Şunu demeye çalışıyorum. Mesela test text ile öğrenilmiş olan kelime vektörlerini, mesela Word Embedding Layer'a ilk initial değerleri olarak vermek gibisinden bir şey yaptınız mı?
+
+410
+01:14:59,700 --> 01:15:02,399
+Yok, yapmadık. Aklımıza gelmedi.
+
+411
+01:15:02,479 --> 01:15:06,840
+Anladım. Tamam, tamam. Peki, teşekkür ediyorum size de arkadaşlar.
+
+412
+01:15:07,200 --> 01:15:10,300
+Rica ederiz hocam. Rica ederiz hocam. Rica ederiz.
+
+413
+01:15:11,120 --> 01:15:13,539
+Peki, [öğrenci] [öğrenci] şimdi seni dinleyelim.
+
+414
+01:15:14,579 --> 01:15:15,300
+Merhaba hocam.
+
+415
+01:15:27,188 --> 01:15:46,288
+Ekran geldi mi hocam? Geldi, geldi ekran geldi. Ben hocam Text Generation yapmaya çalıştım. Bu şeyde de Python programlama dilini kullandım. Kullandığım kütüphaneler, Keras, TensorFlow, NLTK, Gensin, Keras'ı bir daha yazmışım şurada.
+
+416
+01:15:46,963 --> 01:16:00,963
+Kullandığım yöntemlerde kelime vektörlerini çıkarmak için Word2Vec ve FastEx kullandım. Üçüncü bir yöntemim yok benim. Bayağı uğraştım. Elma'ya da baktım, Bert'e de baktım, Glow'a da baktım.
+
+417
+01:16:00,963 --> 01:16:10,963
+Ama kodlayamadım. Bert'in vektörleri vardı ama hazır almamak için, kendim yapamadığım için kullanmadım bunları.
+
+418
+01:16:11,699 --> 01:16:22,699
+Derlem olarak sizin sitenizde bulunan 42.000 haber derlemini kullandım. Oradaki her konudan 730 tane haber aldım.
+
+419
+01:16:22,699 --> 01:16:31,699
+730 olmasının nedeni de en düşük yaşam da vardı sanırım. Her kategoriden 730 tane aldım.
+
+420
+01:16:31,699 --> 01:16:37,699
+Köşe yazarları vardı bir de. Oradan da 30 tane köşe yazılarına ait köşe yazılarını aldım.
+
+421
+01:16:40,884 --> 01:16:50,884
+Yöntemleri değerlendirirken kendi içlerinde skip gram ve CBO parametrelerine göre karşılaştırdım. Yani değiştirdiğim hiper parametreler bunlar.
+
+422
+01:16:51,884 --> 01:17:06,783
+Oluşturduğum vektör uzaylarını daha iyi karşılaştırmak için önceden iki tane kelime seçtim. Aslında bu üçte ama çok fazla grafik oluyor diye sonradan Filistin'i çıkardım.
+
+423
+01:17:07,119 --> 01:17:13,520
+Ama aşağıdaki deneylerde Yunanistan, Filistin...
+
+424
+01:17:14,068 --> 01:17:17,788
+Yerine Yunanistan'a sınmışım geldiği zaman söyleyeceğim zaten.
+
+425
+01:17:17,788 --> 01:17:41,788
+Hem yapmak istediğim aslında mesela buradaki iki kelimenin vektör uzaylarını çıkarıp kendilerine olan en yakın kelimeler ve en uzak kelimeler neler bunlara bakıp daha sonra bu kelimelerle alakalı text generation yaptığım zaman bu vektör uzayları ile ne kadar ilintili bir sonuç verecek bunu hizmetlemek istiyorum.
+
+426
+01:17:42,068 --> 01:18:05,068
+Bu konuda bir de defut olarak sekiz tane kelime seçtim. Bu kelimelerin bu iki kelimeye olan vektör üzerinde ne gibi şey var? Uzaklık, yakınlık, nasıl? İlişkili mi, değil mi? Bunlara baktım. Bunlar da Avrupa Başbakan Terör Savaşı saldırı erkek kadın.
+
+427
+01:18:06,579 --> 01:18:25,260
+Kelime uzaylarını çıkardığım zaman bu yukarıdakiler 442.000 haber için çıkardığım uzaylar. Yukarıdakiler C-Ball ile elde edilmiş vektörler. Aşağıdakiler de Skipgram ile elde edilmiş vektörler.
+
+428
+01:18:28,372 --> 01:18:44,412
+En baştaki şey en yakın 10 nokta. Mavi olanlara en yakın 10 noktanı içeriyor. Yeşiller de benim dışarıdan verdiğim kelimeler. En yakın 20 noktada ise bu kelimeye en yakın 20 nokta neler onları bitirmeye çalıştım.
+
+429
+01:18:51,283 --> 01:19:01,443
+Geliyor ama diğer kelime bulutuyla karşılaştırdığım zaman aslında çok da alakalı değilmiş gibi geliyor şu en yakın 20 noktayla.
+
+430
+01:19:02,163 --> 01:19:11,644
+Şurada da en yakın ve en uzak 10 noktayı karşılaştırdım. Burada maviler benim en yakın noktalarım, yeşiller de en uzak noktalarım.
+
+431
+01:19:17,439 --> 01:19:18,939
+Kendim de tecrübe ettim.
+
+432
+01:19:19,604 --> 01:19:43,043
+Örtürek'te biraz daha unik kelimeler gelirken, mesela şurada biraz daha doğrusu biraz daha anlamlı kelimeler gelirken, şurada Festex'te özellikle skip program yönteminde kelime artık harf bazında da baktığı için sanırım, mesela Türkiye'ye benzer Suriye var, Refiyye var, İkiye, Ürkiye, Kürsiye.
+
+433
+01:19:47,604 --> 01:19:59,984
+En yakın noktaları olarak. Burada dediğim gibi bunu hepsi için inceledim. Şurada da Yunanistan'a ait şeyler var. Özellikle Yunanistan.
+
+434
+01:20:00,000 --> 01:20:05,500
+Şurada en yakın 10 noktayı incelediğimde birbiri içerisinde neredeyse geçmiş.
+
+435
+01:20:05,619 --> 01:20:19,260
+Bunun nedeni de Festex'te bu İstan'dan dolayı işte Macaristan, Yunanistan, Özbekistan, Ermenistan gibi şeyler olduğu için, kelimeler olduğu için.
+
+436
+01:20:21,079 --> 01:20:23,020
+Buraları geçeyim isterseniz hocam.
+
+437
+01:20:23,100 --> 01:20:24,199
+Hepsi aynı aslında.
+
+438
+01:20:25,500 --> 01:20:27,279
+Bu da köşe yazılarına ait olan.
+
+439
+01:20:28,435 --> 01:20:46,435
+Bu kelime uzaylarını çıkardıktan sonra bunları LSTM ile Text Generator yapmak için kullandım. Bunları LSTM'in bir katmanına pre-trained model olarak, vektör olarak verdim.
+
+440
+01:20:46,435 --> 01:20:54,435
+Daha sonra bunu eğittiğim zaman, dediğim gibi yukarıda da Türkiye ile Yunanistan olması gerekiyordu ama...
+
+441
+01:20:54,996 --> 01:21:04,996
+İlsting almış. Bu şeyden 20 kelime uzunluğunda bir cümle üretmeye çalıştım.
+
+442
+01:21:05,996 --> 01:21:12,996
+Burada 20'yi poplay ettiğim zaman biraz daha... Ha bir de şurada şöyle bir şey var. Onu da şimdi bakarken...
+
+443
+01:21:13,971 --> 01:21:26,971
+Daha doğrusu, daha detaylı bakma şansı bulunca fark ettim. Ben buradaki şeyi siz de söyledikten sonra şey yaptım. Burada 42.000 haberin hepsini eğitiyorum ama...
+
+444
+01:21:27,923 --> 01:21:51,523
+Şurada Text Generation yaparken sadece dünya kategorisine ait haberleri aldım. Ama o hatayı sanırım ben de yapmışım. Yani bu en yukarıda kelime vektörlerini çıkarırken bu dünya haberleri de var onun içerisinde. Sanırım bunu yapmasam daha iyi olurdu.
+
+445
+01:21:51,731 --> 01:21:57,711
+Olabilir. Burada eğitim verisini nasıl hazırlıyorsun?
+
+446
+01:21:57,711 --> 01:22:14,352
+Eğitim verisini söyleyecektim hocam. Normalde benim verim etiketli falan değil. Ben şöyle yapıyorum. Markov modeline benziyor hocam aslında. Orada ama olasılıksal bir yöntem var. Ben burada olasılıksal değil. Tamamen kelimelerin yerine göre bir şey yapıyorum.
+
+447
+01:22:18,739 --> 01:22:45,699
+Parametrem var. Maksimum uzunlukta cümlelere bölüyorum. Ardından bu cümlelerin, mesela en sonundaki, mesela diyelim ki 10 boyutlu, 10 uzunlukta cümlelere böldüm bunu diyelim. En sonundaki kelimeyi ben label olarak alıyorum. Onun öncesindeki bütün kelimeleri bunun tıreini olarak alıyorum. Yani benim label'ım atıyorum burada belirtiyor.
+
+448
+01:22:46,176 --> 01:22:57,176
+Bunun tireini Türkiye Dekka Tepkileri Lider Nükleer Çorap Çözümü tirein eğitimi bu. Burada benim maksimum lentim 10'du.
+
+449
+01:22:57,176 --> 01:23:10,092
+Şimdi bundan arada bakmaya imkanım oldu. Marka o modeline de baktım biraz. Sonra alan hakkımdan geldi. Bunu 10 değil de 3 yapsam.
+
+450
+01:23:10,579 --> 01:23:15,899
+Üç tane de bir alsam daha iyi olurmuş. Belki biraz daha...
+
+451
+01:23:15,899 --> 01:23:18,719
+Çok daha fazla eğitim kümen olurdu.
+
+452
+01:23:18,719 --> 01:23:38,507
+Evet, çok daha fazla eğitim kümen olurdu. Hem de daha alakalı gelirdi diye düşünüyorum. Hatta bir iki tane dayadım ama sonradan slide eklemeyin dedim şimdi karıştırmasın diye. Burada çok alakalı şeyler gelmedi açıkçası. Dünya Haberi'nde de, şeyde de...
+
+453
+01:23:38,804 --> 01:23:56,283
+Köşe yazılarında da. Yüz ekli kopya ettiğim zaman yine biraz daha birbirleriyle alakalı geldi ama ben buradaki şeyi yanlış seçmişim. Bunları yaptıktan sonra fark ettim. Bunu mesela üç seçseymişim veya dört seçseymişim. Markov modelinde de vardı aslında böyle bir problem ama.
+
+454
+01:23:56,756 --> 01:24:19,096
+Sanırım daha yeni baktığım için bu konuya tam hakim olamadım, şey yapamadım. Sonradan aklıma geldi. Bu 10 olduğu için çok şey gelmedi. Yukarıdakileriyle paralel gelmedi. Ama biraz daha küçüksem bu çerçeveyi sanırım daha iyi olurdu. Böyle bir şey yapmaya çalıştım hocam. Evet, bu kadar yapabilirim.
+
+455
+01:24:20,176 --> 01:24:22,615
+Peki. Teşekkürler [öğrenci] [öğrenci].
+
+456
+01:24:22,935 --> 01:24:23,876
+Rica ederim hocam.
+
+457
+01:24:29,844 --> 01:24:31,703
+Evet, [öğrenci].
+
+458
+01:24:36,564 --> 01:24:37,703
+Evet hocam buradayım.
+
+459
+01:24:38,524 --> 01:24:40,024
+Evet, seni dinleyebiliriz.
+
+460
+01:24:40,644 --> 01:24:49,324
+Hemen ekranımı paylaşayım. Bu arada hocam ben Eduron'dan bağlanıyorum. Arada bir bağlantı gidiyor. Gittiği zaman ben maksimum 8-10 saniye sonra geri gelmiş olacağım.
+
+461
+01:24:50,064 --> 01:24:51,024
+Peki, tamam.
+
+462
+01:24:54,604 --> 01:25:00,703
+Şöyle ben öncelikle çok bir sunum hazırlayamadım. Ödevi de tam istediğim yere kadar getiremedim zaten.
+
+463
+01:25:01,363 --> 01:25:05,363
+Ama en azından yaptığım yerler kadarını göstereyim.
+
+464
+01:25:06,523 --> 01:25:13,984
+Sunumu dün gece en son yetiştirebildiğim için sadece başlığı atıp biraz da uygulamamın içinden bir örnek gösterdim.
+
+465
+01:25:14,863 --> 01:25:17,564
+Verdiğimiz kelimeye yakın kelimeleri sadece buluyor.
+
+466
+01:25:17,564 --> 01:25:22,403
+Benim amacım şey yapmaktı, öneri sistemi oluşturmak.
+
+467
+01:25:22,963 --> 01:25:27,484
+Yani bu modellerle eğitilmiş bir, bu derlemlerle eğitilmiş modellerin.
+
+468
+01:25:28,724 --> 01:25:55,024
+Ürün önerme sistemini oluşturmakta ama dediğim gibi çok şey yapamadım ama en azından modellerimi eğittim ve test edebiliyorum. Sayısal olarak karşılaştırmadım. Diğer sayfalarda kodlar var. Ben kodları şeyden de gösterebilirim. O yüzden şöyle geçeyim, sadece uygulamayı göstereyim. Ondan sonra kodları gösterirsem daha güzel olacak. Burada yine sunuma yazmayı unutmuşum. Derlem olarak.
+
+469
+01:25:55,444 --> 01:26:18,444
+Ben sizin yine verdiğiniz 42 bin haberi kullandım. Onun dışında da onlar güncel olmadığı için şöyle bir karşılaştırmak istedim. 2003'te sanırım öyle yazıyordu en son o derlem güncellenmiş. Ben de geçen sene Onedio'dan çektiğim 2014'ten 2020'ye kadar tüm haberleri çekmiştim. Onların sadece...
+
+470
+01:26:18,739 --> 01:26:40,220
+42 bin habere denk gelsin diye megabayt olarak karşılaştırıp yaklaşık 40 megabayt son bölümden aldım. Yani daha güncel bir derleme olarak yaptım. İkisini karşılaştırırken özellikle şimdi burada uygulaman burada bu şekilde çalışıyor. Uygulamanın çalışır hali bu.
+
+471
+01:26:44,479 --> 01:26:55,859
+Bu 42.000 Haber Derneği. 42.000 Haber Derneği'nde YouTube ve benzeri güncel şeylerde biraz daha farklı şeyler çıkabiliyordu.
+
+472
+01:26:57,439 --> 01:27:08,699
+Ama bir de orada şey demiştiniz hocam, 42.000 Haber'in yanlış hatırlamıyorsam dediğim gibi başlığında 2003'te en son güncellenmiş ama Facebook gibi kelimeler de vardı orada.
+
+473
+01:27:10,963 --> 01:27:25,364
+Yani onu şey yapamadım. Ama genel olarak yine de şeyin, yani Onedio'nun derlemine göre daha güncel kelime, benzer daha güncel kelimelerle benzer kelimeleri çıkarıyor.
+
+474
+01:27:25,364 --> 01:27:35,503
+Öyle bir fark var. Derlemler üzerinde önce ön temizlik, çok kısa bir ön temizlik yaptım.
+
+475
+01:27:35,859 --> 01:27:52,779
+Şöyle kod sayfasını paylaşayım. Bu tarafta göstereceğim başka bir şey yok. Burada denemek istediğiniz kelime varsa onu yazabilirim hocam. Yoksa kod tarafını göstermeye gerek yok. Uygulamayı anlatman yeterli.
+
+476
+01:27:52,779 --> 01:28:00,880
+Çok kritik değil. Şimdi burada bir test text var, bir word to back var, bir de glovy var. Doğru mu anlıyor?
+
+477
+01:28:00,880 --> 01:28:01,420
+Evet.
+
+478
+01:28:02,068 --> 01:28:03,308
+Evet hocam, aynen öyle.
+
+479
+01:28:04,108 --> 01:28:09,228
+Şimdi bir de iki tane de derlem var. Bir tanesi S0, bir tanesi de S1 mi? Nasıl?
+
+480
+01:28:11,528 --> 01:28:24,128
+Hocam, onlar skip gram'ın açık olduğu ve kapalı olduğu. Yani SIBO ve skip gram olarak yaptıklarımı S1'ler skip gram, şey SIBO'lar, S0'lar skip gram.
+
+481
+01:28:24,659 --> 01:28:33,539
+O zaman şimdi bakalım. 42.000 haberde Fastex var, VertuBak var, Glove var. Onedio'da ne var? Fastex var, VertuBak mı var sadece?
+
+482
+01:28:34,480 --> 01:28:47,680
+Glove'da var hocam. Hepsinde hepsi var. 10 tane oluyor zaten. Glove ikisinde de var. Orada SkipCram ve Sibov olarak ayırmadım. Glove'da ikisi de var. Şu en altta Onedio'nun Glove derlemi.
+
+483
+01:28:50,771 --> 01:28:57,851
+Peki, burada şimdi bunlar hangisi diğerinden daha iyi, daha kötü? Bunu nasıl anlayacağız?
+
+484
+01:28:57,851 --> 01:29:16,411
+İşte hocam ben şey kısmına kadar gelemediğim için hocam öneri sistemini oluşturunca ortaya çıkacaktı. Hangisi hangisinden daha iyi ama burada en azından görsel olarak yaklaşık çıkan kelimeleri sadece gözle şey yapabiliyor. Yani sayısal bir şey oluşturmadım.
+
+485
+01:29:19,123 --> 01:29:41,123
+Dün, saat 23'e kadar uğraştım dün hocam. Buraya kadar getirebildim ama derlemleri... Birçok arkadaşın hazır derlem kullanma şeyini ben öyle yapmadım. Ben tamamen sıfırdan kendi derlemimle hem FastTex'i, hem World2.2 hem de Glove'u tamamen kendi derlemlerimle oluşturdum.
+
+486
+01:29:42,123 --> 01:29:44,043
+Ama göremiyoruz.
+
+487
+01:29:44,051 --> 01:29:53,192
+Evet, yani şey olarak görsel olarak aradaki şeyi görebiliyoruz. Sayısal bir sonucumuz yok herhalde.
+
+488
+01:29:54,471 --> 01:29:56,551
+Peki, tamam. Teşekkürler.
+
+489
+01:29:57,612 --> 01:29:58,332
+Rica ederim hocam.
+
+490
+01:30:08,467 --> 01:30:22,747
+Peki, şimdi arkadaşlar daha vaktimiz var. Güzel. Başka sunum yapacak olan yoktur. Zaten buradaki herkes yaptı. Şimdi o zaman araba anonimize de gelirse zaten daha yeni işletti. Geçebiliriz.
+
+491
+01:30:37,492 --> 01:30:44,192
+En son, anlamsal uzayları bitirmiştik herhalde.
+
+492
+01:31:00,340 --> 01:31:09,340
+Bir dakika arkadaşlar, şimdi bu slide'lar... Böyle daha iyi mi?
+
+493
+01:31:11,340 --> 01:31:13,340
+Bayağı atacağım. Tamam.
+
+494
+01:31:14,340 --> 01:31:21,195
+Şimdi slide'lar makine vermesi versiyon 2 diye geçiyor. Yani dediğim gibi biraz daha...
+
+495
+01:31:21,524 --> 01:31:32,964
+Güncel problemler, problem türleri aslında onları ifade ediyor. Bunların kavramsız olarak neye karşıt geldiklerini size birazcık anlatmaya çalışacağım bu hafta ve önümüzdeki hafta.
+
+496
+01:31:33,684 --> 01:31:43,324
+İşlerim ve bazıları için kodlar da var. O kodları yine dersin sayfasından erişebilirsiniz. Onda herhangi bir şeyimiz yok.
+
+497
+01:31:44,924 --> 01:31:46,084
+Sıkıntımız yok.
+
+498
+01:31:48,692 --> 01:31:52,792
+Aktif öğrenme, yöre ötürü öğrenme. Bunları her birine teker teker göreceğiz.
+
+499
+01:31:54,771 --> 01:31:59,492
+Şimdi ilk konumuz aktif öğrenme. Aktif öğrenme ne demek?
+
+500
+01:32:00,092 --> 01:32:06,652
+Eğitim örneklerinin etiketlerinin başta belli olmadığı, algoritmanın etiketini istediği örnekleri seçmesi.
+
+501
+01:32:07,532 --> 01:32:11,832
+Şimdi bu ne demek? Başlangıçta tabii, yani böyle bir şey niye yaparsınız?
+
+502
+01:32:11,832 --> 01:32:14,932
+Bir etiketlem ayetini azaltmak.
+
+503
+01:32:15,315 --> 01:32:38,315
+Veri etiketlerinden maliyeti dediğimiz şey şöyle bir şey. Şimdi mesela bir sentiment anlınız için düşünelim. Sentiment anlınız için çok miktarda veriye ihtiyaç var. Ama bir tane verinin elde edilmesinin maliyeti tahmin edersiniz ki çok çok yüksek değil. Yani 10 bin tane veriyi elde etmeniz birazcık daha yüksek olabilir ama belki binler.
+
+504
+01:32:39,347 --> 01:32:55,288
+Bin dolar civarlarında ben herhalde yeterli bir hükümesini birilerine, insanlara etiketletebilirsiniz. Bunda herhangi bir sıkıntı olmaz. Dolayısıyla sentimentalize belki böyle çok kritik bir şeymiş gibi görünmeyebilir etiket maliyeti. Etiketleme maliyeti.
+
+505
+01:32:55,288 --> 01:33:04,347
+Ama şöyle bir şey düşünün. Mesela ilaç tasarımında, şu anda oldukça popüler ilaç, aşı, bunların tasarımı problemlerini düşündüğünüzde.
+
+506
+01:33:04,819 --> 01:33:27,139
+Orada mesela şöyle durumlar ortaya çıkıyor. Belki moleküller var. Bu moleküller, mesela bir hastalık için bir ilaç geliştiriyorsunuz diyelim ki. Bunlar biraz moleküller. Bu moleküller, aday moleküller var. Bu moleküllerle ne yapacaksınız? Etiketleme yapacaksınız. Moleküller etiketleyeceksiniz. Neye göre etiketleyeceksiniz mesela?
+
+507
+01:33:27,663 --> 01:33:34,863
+İnsanlarda yan etki ne kadar oluşturuyora göre etiketleyeceksiniz. Elinizde belli moleküller var.
+
+508
+01:33:35,583 --> 01:33:46,603
+Şimdi bu durumda nasıl bir süreç gerekiyor arkadaşlar? O molekülün insanlarda yan etki gösterip göstermediğine dair bir etiketleme yapmak için.
+
+509
+01:33:53,844 --> 01:33:55,844
+Nasıl etkileyeceksiniz bu molekülleri?
+
+510
+01:34:05,971 --> 01:34:21,032
+Sesim geliyor mu bu arada? Geliyor hocam. İnsan üzerindeki etkisini test etmemiz gerek yok. İnsanlara verip, insanlara da yan etki oluşturuyor mu, oluşturmuyor mu bakmanız lazım değil mi? Evet. Bu kadar basit. Bu kadar basit söyledim ama bunun maliyeti ne kadar?
+
+511
+01:34:22,931 --> 01:34:24,931
+İnsan hayatıyla bile sonlanabilir.
+
+512
+01:34:25,391 --> 01:34:34,431
+Çok yüksek değil mi? Yani sonuçta bu işler parayla yapılan işler ve insanlar böyle büyük ürünlerin altına 3-5 dolara falan girmiyorlar.
+
+513
+01:34:36,692 --> 01:34:52,032
+Büyük miktarda deneklere para veriliyor. Dolayısıyla belli durumlarda bir verinin etiketlenmesi, tek bir verinin etiketlenmesi bile binlerce dolar belki on binlerce dolara mal olabiliyor.
+
+514
+01:34:53,092 --> 01:34:59,112
+Şimdi, dolayısıyla veri etiketleme maliyeti yüksek olabiliyor. Tamam mı?
+
+515
+01:34:59,539 --> 01:35:13,119
+Peki bu durumdan kaçınmak için neler yapabiliriz? Elimizde verilerin ne olduğunu düşünün. Yani etiketli olmayan veriler var elimizde. Buradaki amacımız şu. Acaba ben bu verilerin hangilerinin etiketini isteyeyim?
+
+516
+01:35:14,163 --> 01:35:28,983
+Tamam, fikir bu. Yani ben bütün verilerin etiketini kullanmadan acaba iyi bir şeyler yapabilir miyim? Yani etiketini bilmeme gerek olmayan örnekler varsa onlara hiç maliyet harcamayayım, onlarla hiç bu uçlu uçlu uğraşmayayım.
+
+517
+01:35:28,983 --> 01:35:33,603
+Şimdi bu noktada zaten nasıl söyleyelim?
+
+518
+01:35:34,771 --> 01:35:58,212
+Fikir az çok ortaya çıktı gibi, etiketini zaten iyi tahmin edebileceğinizi düşündüğünüz şeylerin etiketini öğrenmeye fazladan para harcamak istemezsiniz. Dolayısıyla da ne yapmanız gerekiyor? Aslında her bir örneğinizin, acaba o örneğin etiketini ben ne olasılıkla tahmin edebilirim? Yani ne olasılıkla tahmin ederim değil.
+
+519
+01:35:58,612 --> 01:36:05,271
+Bu konuda ne olsa tahmin edebilirim. Doğru tahmin edebilirim tabii ki. Ona odaklanmamız gerekiyor.
+
+520
+01:36:06,271 --> 01:36:11,332
+Yöntem dediğimiz tüm eğitim seti yerine bir kısmı kullanmak. Belirli bir test seti üzerinde mesela.
+
+521
+01:36:11,992 --> 01:36:18,011
+Tüm eğitim setini kullanmış olmamıza da benzer ya da kabul edilebilir derecede düşük ya da daha yüksek başarı elde etmek.
+
+522
+01:36:18,612 --> 01:36:22,412
+Yani bir test kümesi var. Bu test kümesi üzerindeki performansı ne yapmak istiyorsunuz siz?
+
+523
+01:36:22,868 --> 01:36:49,648
+İyi yapmak istiyorsunuz. Mesela bütün verileri kullansanız, eğitim seçimindeki bütün verileri kullansanız etki ettiği halleriyle bu bir miktar bir sonuç elde edeceksiniz buradan. Ama acaba hepsine değil bir kısmını kullansak benzer, yakın ya da kabul edilebilir derecede düşük sonuçlar elde edebilir miyiz? Amacımız da bu. Yani bütün verileri kullanmadan, bütün verilerini kullanmadan, bütün verilerin etiketini kullanmadan öyle söyleyelim. Çünkü onlar elimizde yoklar normalde.
+
+524
+01:36:50,100 --> 01:37:13,440
+Daha iyi sonuçlar elde etmeye çalışıyoruz. Şimdi nasıl bir şey yapacağız? Sıraş nasıl başlıyor? Birinci adım A adımın küçük bir eğitim setiyle başlıyoruz. Bu rastgele olabilir. Yani diyelim ki sizin elinizde bin tane örnek var ama bunların hiçbir etiketini bilmiyorsunuz. Başlangıçta diyebilirsiniz ki rastgele, yani hani ne bileyim işte minimum sparing tree falan çalıştırıp birbirine uzak noktaları falan seçebilirsiniz belki.
+
+525
+01:37:13,971 --> 01:37:32,231
+Öyle bir başlangıçta yapılabilir. Ama rastgele bir örnekler seçiyoruz. Diyoruz ki bana bu 10 tane örneğin etiketini söyle. Bana bu 10 tane etiketi söylüyor. Bu etiketleri kullanarak bir model üretiyorum.
+
+526
+01:37:34,387 --> 01:37:55,828
+Şimdi bu modele göre, bu modeli ürettim. Artık model ne yapabilen bir model arkadaşlar? Tahmin yapabilen bir şey. Yani 10 tane de eğitilmiş olsa bile yine de tahmin yapılabilen bir şey. Kötü tabii ki. Çok iyi bir şey yapamaz bu temelde ama tahmin yapabilir. Bu modele göre etiketsiz eğitim örneklerine dair tahminlerini üret.
+
+527
+01:37:57,395 --> 01:38:14,135
+Ne diyor? Bakın bu modele göre etiketsiz. Yani elinizde 990 tane de ne var? 1000 tane vardı ya başlanmışlar. 1000 taneden. 10 tanesini rastgele seçtiniz. Ondan etiketlerini öğrendiniz. 10 tane etiketi kullandınız. Yani 10 etiketleme maliyeti harcadınız. Öyle düşünüyorum.
+
+528
+01:38:20,884 --> 01:38:38,043
+Şimdi tahminler üreteceğiz. Yani 990 tanesini sisteme vereceğiz ve sistem tahminleri üretecek. Ama biz bunların gerçeklerle ne olduklarını bilmiyoruz. Ama bu tahminlere bakıp biz acaba bu örneklerin içerisinden bir kısmını seçebilir miyiz?
+
+529
+01:38:38,043 --> 01:38:46,583
+Şimdi burada tahmin varyasyonu diye bir şey var. Tahmin varyasyonu derken şöyle bir şey kullanılabilir. Örnek olarak diyelim.
+
+530
+01:38:47,060 --> 01:38:55,940
+Mesela yapay sınağların son katmanını düşünün. Yapay sınağların son katmanı, softmax gibi, softmax olduğunu düşünün.
+
+531
+01:38:55,940 --> 01:39:03,539
+Softmax'in output'u nedir arkadaşlar? Sınıf olasılıklarıdır.
+
+532
+01:39:03,667 --> 01:39:28,687
+Yani bir örneğin her bir sınıfa ait olma olasılıklarını bir der ki mesela işte %60, %30, %10. Üç sınıfın problemimiz var. A sınıfının %60 diyor, B sınıfının %30 diyor, C sınıfının %10 diyor. Başka bir tane örnek olsun. Bir tanesi böyle örnektir. Mesela A sınıfına ait olma olasılığı %5, B sınıfına ait olma olasılığı %90, C sınıfına ait olma olasılığı %5.
+
+533
+01:39:29,460 --> 01:39:37,940
+Başka bir örnek olsun. A sınıfın ait olma olsadığı %30, B sınıfın ait olma olsadığı %30, C sınıfın ait olma olsadığı %40.
+
+534
+01:39:39,300 --> 01:39:49,080
+Şimdi bu elimizdeki üç tane örneği düşünelim. Yani birinci örnekte aralarında çok çok büyük farklılıklar yok ama ikinci örnekte mesela B sınıfına çok yüksek bir olasılık vermiş.
+
+535
+01:39:49,080 --> 01:39:53,860
+Üçüncü örnekte ise sınıflar arasında çok çok küçük farklılık yani bir tanesi 30-30-40 gibi bir sinemmiş.
+
+536
+01:39:54,420 --> 01:40:15,099
+Şimdi acaba soru şu. Ben bu örneklerden hangisinin etiketini öğrenmek isterim? Ne dersiniz? Hangisinin etiketini öğrenmek daha iyi olabilir? Eş olasılıklı olanlar. Eş olasılıklı değil mi? Eş olasılıklı olanlar zaten sınıflar birilerine yakınlarmış o bölgede muhtemelen.
+
+537
+01:40:15,604 --> 01:40:33,003
+Dolayısıyla biz burada bu tahminlerin varyasyonu, entropi falan her şey kullanabilir. Orada ne yapıyoruz? Örnekleri sıralıyoruz. Neye göre sıralıyoruz? Tahmin edilebilirliği az olanlara, azlıklarına göre.
+
+538
+01:40:42,739 --> 01:41:08,960
+10 tane daha seçiyoruz mesela. Ne oldu bu sefer? 20 tane eğitim örneğimiz oldu. Geriye kalan 980 tanesi hala etketsiz. Ondan sonra ne yapacağız? Şimdi bu 20 taneyle yeni bir model eğiteceğiz. Bu 20 modele göre geri kalan 980 tanesini tahmin edeceğiz. Yine tahminler üzerinde sıralamaları yapacağız. Tahmin variyat sonlarına göre.
+
+539
+01:41:09,408 --> 01:41:19,212
+Ve buradan bu şekilde ilerleyeceğiz. Ümidimiz o ki, mesela bin tane örneğin hepsini kullanmaya göre ya da...
+
+540
+01:41:19,220 --> 01:41:40,200
+Hepsini birden kullanmaya göre belki 500 tane de şey yapabileceğiz. Hepsini birden kullanmayla benzer başarılar elde edebileceğiz. O zaman da zaten 1000 tanesine ihtiyacımız yok gibisinden bir şey olabilir. Ama şunu zaten hiçbir zaman bilemeyiz. 1000 tanemiz örnek olsaydı performansımız ne olurdu?
+
+541
+01:41:40,608 --> 01:42:01,188
+Gerçek dünyada bunu bilemezsiniz. Ama bizim üzerinde çalıştığımız veri hükümelerinde bunu bilebilirsiniz. Zaten tren kümesini kendiniz belirliyorsunuz vs. Ama gerçek dünyada biraz şey yapmanız lazım. Yani hani performans iyileşti, iyileşti. Bu kadar yeter. Hani daha da iyileşmesine gerek yok gibisinden bir şey olacaktır.
+
+542
+01:42:08,608 --> 01:42:28,547
+Lira harcayarak saldırıyorum. O kadar bütçeniz vardı. Yüzde seksenlere çıkarttınız. Belki daha da fazla para harcatsanız, daha da yükseklere falan çıkması mümkün. En fazla çıkabileceği yeri biliyor musunuz? Bilmiyorsunuz. Çünkü elinize o kadar etiketli veriyor. Yani eğitim kümesi kocaman olsaydı ne olur diye bilemiyorsunuz.
+
+543
+01:42:29,619 --> 01:42:40,380
+Etiketli eğitim hesef kocaman olsa gibi. Ama dediğim gibi burada amacımız çok fazla veri etiketlemeden de benzer performanslar elde edebiliriz.
+
+544
+01:42:40,380 --> 01:42:43,079
+Şimdi burada var mı o?
+
+545
+01:42:48,627 --> 01:43:03,487
+Mesela tüm eğitim kümesi, mevcut eğitim kümesi üçgenlerle gösterilmiş. Seçilen örnekler O'larla gösterilmiş. O seçimi nasıl yapabileceğimizi birazcık konuştuk aslında. Bakacağız ona.
+
+546
+01:43:04,527 --> 01:43:09,987
+Şimdi, E'deki örneklerin sınırlandığı problemlerine tahmin varyasyonu nasıl hesaplanır?
+
+547
+01:43:09,987 --> 01:43:13,127
+Şimdi şöyle bir şey düşünelim.
+
+548
+01:43:15,475 --> 01:43:32,395
+Mesela yapay sinyalarında bir softmax diye bir katman var. Geçen sene, geçen dönem daha doğrusu kolektif öğrenme dersini alan arkadaşlar da hatırlarlar belki. Mesela karar ağaçlarında bunu nasıl hesaplamak mümkün olabilir?
+
+549
+01:43:40,532 --> 01:43:45,211
+Bir karar acil mesela o sınıf tahminlerini hesaplamanın mümkün olabilir mi?
+
+550
+01:43:52,627 --> 01:44:12,887
+Olabilir. Yani onun en son düştüğü yaprağın içerisine düşen diğer örneklere bakıp onların sınıf dağılımları üzerinden bir şey yapmak mümkün olur. Peki, regresyon problemlerinde bunu nasıl ölçebiliriz? Regresyon problemi dediğimiz şey ne? Sınıf tahmin etmiyoruz da bir sayı tahmin ediyoruz.
+
+551
+01:44:13,939 --> 01:44:31,779
+Yani bir şey tahmin ediyor sistem. 3.42 diyor mesela. Şimdi bu 3.42'nin güvenini, yani güvenini demeyelim mi? Deminki gibi bir durum yok burada. Sınıflara dağılımları yoklar. Hani outputta da öyle bir şey yok. Mesela orada nasıl bir şey yapılabilir? Regresyon problemlerini nasıl ölçebiliriz acaba?
+
+552
+01:44:33,919 --> 01:44:35,479
+Eklif bir olan var mı?
+
+553
+01:44:37,011 --> 01:44:40,412
+Hocam, o eğriye olan uzaklık olabilir mi?
+
+554
+01:44:41,011 --> 01:44:41,992
+Eğriye bilmiyoruz ki.
+
+555
+01:44:46,228 --> 01:44:52,967
+Hocam bir threshold belirleyip ondan yukarıları şu sınıfa ata, onların aşağısındakileri diğer sınıfa ata şeklinde olabilir mi?
+
+556
+01:44:54,047 --> 01:44:58,847
+Bir threshold nasıl, neye göre threshold belirleyiniz? Yani gerçek bilgiyi bilmiyoruz zaten. Onu unutmayın.
+
+557
+01:45:00,268 --> 01:45:05,188
+Yani gerçeğe ne kadar yakın olduklarını falan biliyor olsak zaten tamam da ama bilmiyoruz.
+
+558
+01:45:05,268 --> 01:45:09,347
+Yani biz sadece bir sayı tahmin ediyoruz bir örnek için. Elimizde de şey yok.
+
+559
+01:45:09,779 --> 01:45:19,079
+Gerçek yok. Çünkü etiketini o örneğin isteyeceğiz mi, istemeyeceğiz mi? Gerçeklerini isteyeceğiz mi, istemeyeceğiz mi? Ona karar vermemiz gerekiyor. Anlatabiliyor muyum?
+
+560
+01:45:22,100 --> 01:45:22,860
+Ne yapıyoruz?
+
+561
+01:45:23,900 --> 01:45:27,260
+Daha önce öğretilmiş verilerin ortalamasından uzaklığa bakız.
+
+562
+01:45:27,560 --> 01:45:28,320
+Efendim?
+
+563
+01:45:29,120 --> 01:45:33,400
+Daha önce tahmin edilmiş verilerin ortalamasından olan uzaklık.
+
+564
+01:45:34,620 --> 01:45:39,100
+Yani bir sistem düşünelim, montana tahmin yapıyor ve bunların ortalaması 75 olsun.
+
+565
+01:45:39,100 --> 01:45:45,360
+Bir sonraki olan tahmin 200 geldiyse, değerini bir daha ver diyebiliriz bize.
+
+566
+01:45:47,859 --> 01:45:53,140
+Ama onların aynı örnek üzerinde tahminler yapmış olmaları iyi olabilir mi?
+
+567
+01:45:56,019 --> 01:46:09,979
+Çünkü farklı farklı yerlerde mesela düşün, şimdi ortalamadan uzaklığa göre yapsan, yani bütün örneklerin üzerinden ortalama alıp yapıyor olsan o çok iyi olmaz. Ama aynı örnek için farklı farklı tahminler üretebilirsen mesela, değil mi?
+
+568
+01:46:10,260 --> 01:46:21,560
+Aynı örnek için farklı tahminler üretsek, o zaman onların mesela varyansına bakabiliriz. Aynı örnek için farklı tahminler üretebilirsek. Aynı örnek için farklı tahminler nasıl üretilebilir?
+
+569
+01:46:22,900 --> 01:46:24,539
+Epok mantığıyla olabilir mi?
+
+570
+01:46:24,752 --> 01:46:47,612
+Epok'la olabilir, farklı başlangıç yerleriyle olabilir, farklı mimarilerle olabilir, farklı algoritmalarla olabilir vs. vs. bir sürü farklı. Yani aynı örnek için birden fazla tahmin üretir. Bu tahminlerin varyansı ne kadar büyükse o kadar nedir? Tahmin edilemez bir şeydir. Ama hepsi aynı şeyi söylüyorlarsa, benzer bir şeyler söylüyorlarsa o zaman zaten onun etiketini öğrenmeye gerek yok. Hani öyle bir şey varsayabiliriz.
+
+571
+01:46:48,916 --> 01:46:54,536
+Tahmin varyasyonu çok mu az mı olan örnekleri seçmeliyiz ya da etiketlerini istemeliyiz.
+
+572
+01:46:56,692 --> 01:47:14,632
+Mantıken düşündüğümüzde varyasyonun çok olduğunu almak daha mantıklı görünüyor. BVC adımları tekrar ne zaman durmalı? BVC adımları neydi? Şuradaki model üretip yeni eğitim firmasına eklenecek örneklerin seçim kısmı. Ne zamana kadar bunları devam edeceğiz?
+
+573
+01:47:23,380 --> 01:47:51,140
+Bitene kadar, yani daha önceden belirlenmiş bir etiketli eğitim sayısına erişene kadar devam edebilirsiniz. Tabii biz akademik dünyada bunu en sona kadar da götürebiliriz. En sonunda zaten ne olacaktır en son noktada? Bütün örneklerin hepsi alınacaktır. Ve dolayısıyla zaten performansı şeyle, bütün eğitim örnekleri kullanılmış haliyle aynı hale gelecektir. Ama önemli olan bundan daha önceki kısımlar.
+
+574
+01:47:51,380 --> 01:47:58,380
+Şimdi şurada kod zaten yukarıda görüyorum.
+
+575
+01:47:58,380 --> 01:48:02,380
+Mesela önce kolay örnekleri alalım demişiz.
+
+576
+01:48:02,380 --> 01:48:09,380
+Önce kolay bir tanrı kastım şu sınıf dağılımları birbirine şey olsun.
+
+577
+01:48:09,380 --> 01:48:11,380
+Ne derler ona?
+
+578
+01:48:11,380 --> 01:48:13,380
+Onu nasıl ifade etmişim?
+
+579
+01:48:13,380 --> 01:48:15,380
+Var ya stüsyonu?
+
+580
+01:48:15,667 --> 01:48:38,327
+Az olanları kolay demişiz. Varyasyonu az olanlar... Tamam, ona birazdan düşünün. Şimdi bir random diye bir şey yazıyor arkadaşlar gördüğünüz gibi. Bir de aktif önce kolay yazıyor. Önce kolay örnekleri seçersek.
+
+581
+01:48:43,604 --> 01:48:46,644
+Şimdi burada ilk önce sahil işe odaklandım.
+
+582
+01:48:54,612 --> 01:48:56,872
+Sadece şuraya odaklanalım.
+
+583
+01:48:57,392 --> 01:48:59,332
+Şimdi buraya bakarsanız bir trend görüyorsunuz.
+
+584
+01:48:59,392 --> 01:49:00,472
+Bu trend neyin trendi?
+
+585
+01:49:00,472 --> 01:49:11,472
+Şimdi bu sağ, bak pardon, x ekseni bizim şeyimiz, ne derler ona, etiketli veri sayımızın artışı.
+
+586
+01:49:12,452 --> 01:49:20,112
+Etiketli veri sayımızın, hani B ve C adımlarını tekrar ediyoruz ya, onu kaç kez tekrar ettiririniz gibi düşünebiliriz.
+
+587
+01:49:22,036 --> 01:49:31,355
+En sonunda vardığımız yer, şuradaki şu 20 diye ifade ettiğimiz yer, bütün veriler elimizde var iken, bakın bütün veriler elimizde varken erişeceğimiz nokta aslında.
+
+588
+01:49:32,176 --> 01:49:40,576
+Yani bizim elimize bütün veriler varken ulaşacağımız maksimum kısım bu segment data setinde mesela şöyle bir şeymiş.
+
+589
+01:49:40,576 --> 01:49:48,515
+Şimdi biz bu sonuca, şimdi random olarak etiketli verileri eklesek,
+
+590
+01:49:49,011 --> 01:50:00,611
+Şöyle bir şey izliyor, görüyorsunuz. Şöyle bir şey izliyor. Aktif learning kullandığımızda ise daha aşağıdan bir şey gitmiş mesela burada.
+
+591
+01:50:02,951 --> 01:50:11,851
+Mesela şöyle gösterebiliriz. Şöyle sonlara doğru biraz daha yukarıya doğru çıkmış gibi gözüküyor.
+
+592
+01:50:13,203 --> 01:50:31,603
+Şimdi bizim için güzel olan şey ne olur? Yani güzel olan görüntü nasıl bir şey olur? Güzel olan görüntü aslında şöyle bir şey. Mesela şu random kolayları aldığımızda tabii çok iyi bir şey elde edememiz. Bir dakika şunları bir sileyim de.
+
+593
+01:50:33,283 --> 01:50:36,063
+Güzel olan örnekler zorda var.
+
+594
+01:50:47,572 --> 01:50:50,551
+Mesela şuraya bir bakalım.
+
+595
+01:51:00,916 --> 01:51:19,996
+Şuraya bakalım, şu yeşil kısmı. Şimdi burada bakın, önce zor olanlar, yani hani demin dedik ya, zor dediğimiz şeyini tahmin etmenin zor olduğu, yani sınıf olasılıkları birbirlerine çok yakınlar. Zor örnekler onlar. Kolay olanlar mesela işte %90, %5, %5. Mesela bu kolay bir örnek.
+
+596
+01:51:20,319 --> 01:51:37,859
+Onları ilk önce seçersek deminki gibi sonuçlar vardır. Şimdi önce zorları seçiyoruz. Önce zorları seçtiğinde mesela şu tabloya baktığımızda nasıl bir şey görüyoruz? Bu bize ne anlatıyor? Şimdi tabii random ve önce zorun birbirinden çok çok büyük bir farkı olmamış. Mesela burada birazcık daha iyi gibi gözüküyor.
+
+597
+01:51:42,612 --> 01:51:49,332
+Varacağımız başarı aşağı yukarı şuralarda falan bir yerlerde. Bütün verilerin hepsini etiketlersin.
+
+598
+01:51:50,036 --> 01:51:54,716
+Şimdi şurası sınav baktığımızda verilerin hepsini kullanmadan da şuraya bakın.
+
+599
+01:51:54,716 --> 01:52:00,935
+İşte 5-6 yani en son diyelim ki 20 full dataset olduğunu düşünelim.
+
+600
+01:52:01,456 --> 01:52:06,336
+Full dataset %5, %25, %30 falan gibisinden bir şey düşünün.
+
+601
+01:52:06,695 --> 01:52:12,115
+Yani %30 civarında bir veriyi kullandığımızda da ne olmuş burada arkadaşlar? Neyi görüyoruz?
+
+602
+01:52:14,076 --> 01:52:16,235
+%30 civarında bir veriyi kullandığımızda da.
+
+603
+01:52:16,819 --> 01:52:19,759
+Tüm dataset'in doğruluk değerine ulaşmışız aslında.
+
+604
+01:52:19,779 --> 01:52:27,199
+Ulaşabiliyoruz yani. Öyle bir durum var. Ama tabii bu rastgele seçimle de ulaşıldığı için şu anda bunun çok fazla bir anlamı yok.
+
+605
+01:52:27,339 --> 01:52:36,819
+Yani rastgele seçim de zaten aynı yere erişebiliyor. Yani verin içerisinden rastgele %30'unu seçtiğiniz zaman burada eğitim kümesi oldukça...
+
+606
+01:52:37,716 --> 01:53:01,235
+Tipik, kolay bir eğitim verisi. Çok fazla örneğe ihtiyacınız yok. Rastgele bir parçasını da alsanız yetiyor burasına baktığınızda. Ama mesela şu üstteki segmente bakalım. Şimdi segmentte kırmızı olan random. Yani rastgele seçtiğiniz zaman mesela yine bunlar ikisi de aşağı yukarı en sonunda şuraya erişiyorlar görüyorsunuz. Tam şu noktaya varıyorlar.
+
+607
+01:53:01,779 --> 01:53:18,239
+Yani bütün verileri kullandığınızda. Rastgele seçtiğinizde mesela şöyle bir yükselme eğrisi var. Ama önce zorları seçtiğinizde daha yukarıdan giden bir öğrenme eğrisi var gördüğünüz gibi.
+
+608
+01:53:18,639 --> 01:53:25,699
+Dolayısıyla mesela bunun anlamı şu. Verilerin mesela ben yarısını seçsem, bakın yarısını seçsem, şöyle diyelim.
+
+609
+01:53:26,064 --> 01:53:42,164
+Önce zorları seçtiğimde en sonunda varacağım şeye ne yapabiliyorum? Varabiliyorum. Rastgele seçimde mesela o pek mümkün değil. Rastgele seçimde hala 78'den 74'e falan değil ama önce kolayları seçtiğimde oldukça iyi bir sonuç elde edebiliyorum.
+
+610
+01:53:51,984 --> 01:54:10,963
+Her data sette, öyle söyleyelim, daha iyi çalışacak bir şey yok. Mesela odyolojiye bakalım. Burada da fena değil. Hatta bu odyolojide biraz daha enteresan bir durum var. Bütün verileri kullanmaya göre, mesela bakın, random işte şöyle bir eğri izlemiş.
+
+611
+01:54:10,963 --> 01:54:19,963
+Ama şeye bakarsak, önce zorları seçtiğimizde o daha yukarılara çıkıp inebilmiş. Yani daha yukarılara çıkabilmiş olması işte %50.
+
+612
+01:54:19,984 --> 01:54:44,812
+%60'lara falan çıkabiliyorsunuz burada performansı. Yani bu sonda eklenenler ne yapmışlar arkadaşlar? Performansı bozmuşlar değil mi? İlla aynısı olacak diye bir şey yok. Daha yukarılara çıkmak da mümkün. Rastgelelerle daha yukarılara çıkmak tam mümkün olabilir. Yani hani verinizin içerisinde gürültü vardır vs. vs. ama...
+
+613
+01:54:44,884 --> 01:54:55,204
+İstenen yapı aslında mümkün olduğu kadar şu yukarıdaki, şu çizgimiz var ya bizim, şu çizgi, mümkün olduğu kadar hızlı oraya varabilmek.
+
+614
+01:54:55,204 --> 01:55:01,504
+Ve tabii random'dan da daha yukarıda bir şekilde varabilmek, yani şuradaki gibi diyelim.
+
+615
+01:55:01,904 --> 01:55:06,964
+Çünkü random zaten yapabiliyorsa, yani sizin önce kolay ya da önce zor seçmenizin hiçbir anlamı yoktur.
+
+616
+01:55:07,024 --> 01:55:11,544
+Veriklimesinin içerisinde rastgele bir seçim zaten daha iyi iş görüyor demektir, random daha iyi.
+
+617
+01:55:11,988 --> 01:55:35,847
+Randam'ın olmasının anlamı o. Ama random'ın genelde yapacağı şey nedir? Kabaca biraz lineer bir yapıda adım adım adım yükselerek en son noktaya ulaşmaktır. Ama önce zorları seçtiğimizde daha hızlı yükselen, performansı daha hızlı yükselen bir sonuç elde etmemiz mümkün olabilir.
+
+618
+01:55:49,011 --> 01:55:50,612
+Hocam bir şey sorabilir miyim?
+
+619
+01:55:51,152 --> 01:55:51,591
+Evet.
+
+620
+01:55:52,371 --> 01:55:55,652
+Bir önceki yere gelebilir misin hocam? Önce zor olanı.
+
+621
+01:55:57,791 --> 01:56:04,211
+Burada hocam, odyoloji veri setinde biz önce zorları veriyoruz, daha sonra da kololojimi veriyoruz.
+
+622
+01:56:04,591 --> 01:56:06,311
+Yani aslında bizim...
+
+623
+01:56:06,311 --> 01:56:08,032
+Daha sonra zorları veriyoruz.
+
+624
+01:56:09,731 --> 01:56:10,572
+Önce zorları...
+
+625
+01:56:10,572 --> 01:56:14,551
+Şöyle, yok yok şöyle. Veri hükümesi giderek büyüyor burada. Tamam mı?
+
+626
+01:56:14,899 --> 01:56:22,599
+Bir hükümesi başlangıçta 10 tane, sonra 20 tane, sonra 30 tane giderek büyüyor. Ama başlangıçta ekleme yaparken ilk öne zorları veriyor.
+
+627
+01:56:25,479 --> 01:56:32,839
+Ondan sonra yani öyle şey yok. Atıyorum zordan kolaya doğru gitmiyor. Öyle bir şey değil.
+
+628
+01:56:33,395 --> 01:56:55,456
+Oradan kolaya doğru gitmiyor derken veri kümesini direkt büyütüyoruz burada. Yani başlangıçta 10 tane var, sonra 20 tane var, sonra 30 tane var. 500'e kadar gidiyor mesela sallıyorum. 500 adım boyunca veri kümesini büyütüyorsun. Ama veri kümesinin başlangıç aşamalarında daha zor örnekleri önce veriyorsun. Sonlara doğruysa daha kolayları veriyorsun.
+
+629
+01:57:00,916 --> 01:57:16,396
+Daha doğru tahmin ettiğimiz, öyle varsaydığımız şeyler olduğu için burada doğruluğu düşürmesi biraz garip olmamış mı? Bunun nedeni şey olabilir mi? Zorluk kolaylığa neye göre karar verdik? Orada biraz hata olmuş olabilir mi acaba?
+
+630
+01:57:17,176 --> 01:57:24,256
+Olabilir. Çünkü burada şöyle bir şey yapıyoruz. Burada zorluk kolaylığa neye göre karar veriyoruz? Bir önceki modelin performansına bakıyoruz.
+
+631
+01:57:26,316 --> 01:57:28,256
+Yani şurada, nerede o?
+
+632
+01:57:30,131 --> 01:57:52,811
+Şurada. Şimdi bir model üretti ve bu modele göre etkisiz eğitim örneklerine dair tahminlerini üretti diyoruz ya, bu tahminlere göre bir seçim yapıyoruz. Dolayısıyla yani buradaki tahminler o anki eldeki veri kümesine bağlı olarak üretilen modelle oluşturuluyor. Bunlar çok iyi olabilir, çok kötü olabilir. Yani bu mümkün. Hani orada üretilen modelin şeyi.
+
+633
+01:57:53,332 --> 01:58:01,172
+O düşüş o zaman bununla alakalı bir şeyler. Olabilir. Evet, olabilir. Onu sormak istedim. Sağ olun. Rica ederim.
+
+634
+01:58:03,811 --> 01:58:19,351
+Evet, başka sorular mı arkadaşlar? Önce kolayları aldığımızda böyle şeyler olmuş. Önce zor örnekler de böyle. Bazılarında daha kolayları önce almanın da iyi olduğu şeyler görebiliyoruz.
+
+635
+01:58:19,667 --> 01:58:36,047
+Mesela buraya bakarsak, şu segmente bakalım. Önce kolayları aldığımızda, mesela random'dan daha kötü bu. Bu iyi bir şey değil. Yani random mesela daha yukarıda seyrediyor değil mi? O zaman burada kolayları almak kötü bir şey aslında. Bu bariz bir şekilde gözüktü.
+
+636
+01:58:47,667 --> 01:58:52,868
+Aksi örneklerimiz var mı acaba? Mavinin daha yukarıda olabildiği böyle bir şeyler var mı?
+
+637
+01:58:53,876 --> 01:59:19,895
+Eh, yani çok çok da öyle bir şeyler pek göremiyoruz. Yani şurada birazcık belki mavi biraz daha bir tık daha belki yukarıda sayılır ama çok da stabil bir şey değil zaten bu. Yani başta neyse sonda da olmuş. O yüzden çok önemselecek bir durum yok orada bence. Zor örneklerde en azından daha stabil bir şey var. Yapı gözüküyor. Tamam mı?
+
+638
+01:59:21,011 --> 01:59:36,191
+Önce kolay örnekleri vermek iyileştirmiyor. Önce zor örnekleri vermek demenin yararlı olduğu verikümeleri var. Randıma göre. Bazı verikümelerin de tüm eğitim örnekleri yerine daha az örnekte daha yüksek test başarılardan erişilebiliyor. Hani kabaca onu görmüş olduk.
+
+639
+01:59:37,331 --> 01:59:44,151
+Şimdi bu kısma anladık mı arkadaşa aktif öğrenmenin ne demek olduğunu? Amacının ne olduğunu?
+
+640
+01:59:44,151 --> 01:59:45,651
+Evet.
+
+641
+01:59:47,636 --> 01:59:55,356
+Şimdi gelelim yine başka bir yöntem. Yarı eğiticili öğrenme. Semisupervised Learning.
+
+642
+01:59:56,456 --> 02:00:06,476
+Şimdi burada deminkiden farklı bir şey yapacağız. Burada şöyle bir şey. Modelin oluşturulmasında bakın modelin oluşturulmasında etiketli verilerin yanında etiketsiz verilerin de kullanıldığı problemler.
+
+643
+02:00:08,136 --> 02:00:12,115
+Temel fikir şu. Elimizde hem etiketli hem de etiketsiz veriler var.
+
+644
+02:00:12,627 --> 02:00:29,387
+Hem etiketli veriler var, mesela evimizde 1000 tane etiketli veri var ama 100.000 tane de etiketsiz veri var. Acaba biz sadece etiketli verileri kullanmak yerine bu etiketsiz verileri de kullanarak test kümesi üzerindeki performansımızı acaba iyileştirebilir miyiz?
+
+645
+02:00:29,844 --> 02:00:45,003
+Yani test kümemiz sabit. Mesela işte bin tane etiketli var. Bu etiketli verileri kullandığımızda test kümelesi üzerine bir performans ediliyoruz. Ama bir de yüz bin tane etiketsiz bir şeyler var dediğimizde. Bunlar acaba bize fayda sağlar mı? Bunun amacı.
+
+646
+02:00:45,003 --> 02:00:52,444
+Şimdi bunun çok klasik bir görüntü şöyledir. Mesela elinizde sade etiketli veriler varsa şöyle bir model olduğunu düşünün.
+
+647
+02:00:52,851 --> 02:01:14,912
+Sadece etiketli veriler olduğunda mesela böyle bir model çizebilirsiniz. Bunları birbirine ayıran mesela eskiyen gibisinden bir yapı kurulun mesela böyle bir şey yapabilirsiniz. Ama şu gri olanlar da elinizde olsa ama onlar gri'ler bakın. Etiketlerinin ne olduklarını bilmiyorsunuz. Bu durumda mesela böyle bir şey yapmak yerine şöyle bir şey yapmak belki daha iyi olabilir. Değil mi?
+
+648
+02:01:17,811 --> 02:01:42,851
+Bunun etiketini bilmiyorsunuz dediğim gibi. Ama böyle bir şey yapmak belki de daha iyi olabilir. Fitri üzerinden gideceğiz. Peki şimdi ne yapacağız? Etiketsiz örneklerin, yani bir model eğiteceğiz biz. Bu modelde etiketli verileri zaten kullanabiliyoruz modellerin içerisinde ama etiketsiz verileri modellerde ne yapmamız direkt kullanamıyoruz. O zaman ne yapabiliriz? Etiketsiz örneklerin tahmini sınıflarında bizim bir hesaplamamız gerekiyor.
+
+649
+02:01:43,699 --> 02:01:49,460
+Tahmini sınıflarından bahsediyorum. Bakın sınıflarını bilmiyoruz zaten. Tahmini sınıfları nasıl hesaplarız?
+
+650
+02:01:50,400 --> 02:02:00,199
+Bir soru sorsam. Etiketsiz örnekleri. Elinizde etiketli az miktarda veri var. Şunların, şu grilerin sınıflarını nasıl hesaplayabilirsiniz?
+
+651
+02:02:05,268 --> 02:02:07,667
+Kaynen gibi bir şey yapabilir miyiz hocam?
+
+652
+02:02:08,347 --> 02:02:32,167
+Kaynen diye bir şey yapabiliriz ama şimdi mesela şöyle bir şey yapacağım. Burada kaynen yapsak, şurada. Kaynen yapsak nasıl bir şey olur? One nearest neighbor olacak değil mi burada? One nearest neighbor yaptığımızda aynen şu çizgiye göre, şu çizginin bu tarafındakilerin hepsi ne olur? Beyaz olur. Bu tarafındakilerin hepsi siyah olur değil mi?
+
+653
+02:02:32,851 --> 02:02:49,811
+O zaman kainan belki çok direkt böyle birebir yaptığımızda çok işe yarar gibi gözükmüyor. Ama olabilir yani kainan yapabilirsiniz ama çok işe yaramaz muhtemelen. Regresyon problemlerinden nasıl hesaplanabilir demişiz. Hadi onu geçelim.
+
+654
+02:02:49,811 --> 02:02:56,391
+Şimdi asıl oradaki kritik olan nokta şu. Etiket tahminlerini tek seferde mi iteratif mi yapalım?
+
+655
+02:03:00,756 --> 02:03:16,276
+İteratif yapmak bu durumda daha makul gözüküyor değil mi? Tek seferde yapmak çünkü aslında çok da fazla bir şey bize kazandırmıyor. Tek seferde yaptığınızda bunların hepsine birden aynı anda etiket tahmin etmekten bahsedeyim. Ama iteratif yaparken mesela şöyle bir şey yapabilirsiniz.
+
+656
+02:03:16,756 --> 02:03:38,636
+Elinizdeki mevcut noktalara en yakın noktalar için tahminler üretirsiniz. Daha sonra o tahminleri kullanarak yine onlara daha yakın noktalar için bir şeyler üretirsiniz. İteratif bir şekilde ilerlerseniz muhtemelen ilk modelden daha farklı modeller oluşturmak mümkün olabilir.
+
+657
+02:03:39,796 --> 02:03:59,355
+İteratif gitmek sanki daha iyi gibi gözüküyor. İteratifler bir itirasyon etiketlerin ne kadarını tahmin edelim? Yani kaç tane burada nokta katacağız şeyin içerisine? Etiketsiz verileri ne kadarını etiketli hale getireceğiz? Onu düşünebiliriz. Soru olarak düşünebiliriz.
+
+658
+02:04:06,287 --> 02:04:07,768
+Nasıl hesaplayabiliriz?
+
+659
+02:04:09,587 --> 02:04:13,068
+Bir tane de regresyon modeli kurarak direkt hesaplayabiliriz aslında.
+
+660
+02:04:13,068 --> 02:04:24,068
+Ama yine orada da tek seferde bütün etiketsizlerin hepsinin çıkışlarını tahmin etmek yerine iteratif bir şekilde ilerlemek muhtemelen daha iyi olacaktır.
+
+661
+02:04:24,692 --> 02:04:40,511
+Şimdi burada mesela Semisupervised Learning'de orijinal etiketler var. Şurada orijinal etiketler. Orijinal ve batch Semisupervised tahmin var. Bir de orijinal artı iteratif Semisupervised tahmin var. Yani iteratif olarak yaparsak ne olur? Tek seferde yaparsak ne olur? Onu gösteriyor.
+
+662
+02:04:40,511 --> 02:04:47,511
+Şimdi şurada şeyi görüyorsunuz mesela şu bölgeye birbirlerine yakınları ama mesela batchle yaptığınızda şurası sarılar bu tarafa da.
+
+663
+02:04:47,807 --> 02:05:13,408
+Ama iteratif bir şekilde yaparsanız parça parça yaptığınızda şuradaki şu kırmızı kısımların da hala şeyde olduğunu görebiliyorsunuz. Sonuçta olduğunu görebiliyorsunuz. Gerçek etiketler, orijinal etiketler böyleymiş. Bunların kollarını dediğim gibi şey yaparak etiketi dahil edilen örnekler şunlar. Etiket eğitim örnekleri de şu yıldızlar. Elinizde sadece şu yıldızlar var bakın.
+
+664
+02:05:13,971 --> 02:05:18,492
+Sadece şu yıldızlar var elinizde. Kaç tane var? 1, 2, 3, 4.
+
+665
+02:05:19,347 --> 02:05:42,108
+5, 6, 7, 8, 9, 10. 10 tane mesela etiketli veri var elimizde. Şu mavi yıldızlar, kırmızı yıldızlar ve sarı yıldızlar. Bunları kullanarak tek seferde tahmin yaparsanız şöyle bir şeyler çıkıyor. İteratif bir şekilde tahmin yaparsanız da şu şekilde etiketler ürettirebiliyorsunuz. Şuradaki yuvarlaklar.
+
+666
+02:05:42,804 --> 02:05:48,344
+Yalnız etiketini bilmiyoruz. Onları tahmin ediyoruz. Bunları da tahminleriz zaten.
+
+667
+02:05:51,784 --> 02:06:02,524
+Yarı eğitici de öğrenme de, batch ve iteratifin nasıl sonuçlar elde edebildiği. Şimdi yukarıda bir mavi çizgi var. Supervised'ı gösteriyor.
+
+668
+02:06:07,859 --> 02:06:25,879
+Yukarıda bakın bir mani çizgi var. Bu süpervaziyet eğitimleri. Yani süpervaziyet eğitimden kastımız ne? Elimizde bütün verilerin hepsi etiketli bir şekilde varlar. Şimdi bunu geçmek pek kolay bir şey olmayacaktır. Elimizdeki verilerin hepsi birden etiketliymiş gibi düşünüyorlar.
+
+669
+02:06:27,859 --> 02:06:52,859
+Beç ve iteratif semi-supervisedda ise tabii Beç'te de tek bir adımda sonuçlara erişiyorsunuz. Beç'te de farklı bir durum yok. Ama iteratifte adım adım erişiyorsunuz. Dolayısıyla Beç'in ve superviseddikiler tek bir çizgi halinde gözüküyorlar. Tek seferde erişilen şeyler olduğu için ama iteratif dalgalanan bir şey. Onu görebiliriz burada. Mesela burada, bu segment data setinde...
+
+670
+02:06:52,927 --> 02:06:59,927
+Bu bir şeyde hiç fena olmayan bir sonuç elde etmiş. Batch'te bayağı iyi sonuç elde etmiş.
+
+671
+02:06:59,927 --> 02:07:05,927
+Weecle'a bakalım. Weecle dataset'inde, Batch mesela şu kırmızı.
+
+672
+02:07:06,256 --> 02:07:19,336
+Mavi olan Superwise hali şu görüyorsunuz. Mesela burada iteratif daha başarılı genel olarak. Şuralarda bir miktar düşmesi var ama genel manada bakarsak batch'e göre daha yukarıda.
+
+673
+02:07:19,336 --> 02:07:34,016
+Ancak otosta da hatta burada otosta şey bile geçilmiş, işte Superwise yapı bile geçilebilmiş. Burada şeyler üst üste yani iris yani şurada mavi çok belli olmuyor ama mavi birazcık yukarıda kırmızının.
+
+674
+02:07:34,256 --> 02:07:51,836
+Tam koordinat ekseninde gibi düşünebilirsiniz. İteratif işte böyle böyle ilerlemiş. Tabi burada biraz şey görebiliyorsunuz. İlla ki bütün her şeyi tahmin etmeye çalışmak iyi bir şey değil aslında.
+
+675
+02:07:59,764 --> 02:08:08,144
+En son neyi ifade ediyor aslında? Bütün verilerin hepsinin etiketinin alındığı durumu ifade ediyor ki hepsi zaten yukarıda bitiriyordu. Hatırlıyorsunuz değil mi şeyleri?
+
+676
+02:08:09,144 --> 02:08:10,464
+Şunu demek istiyorum.
+
+677
+02:08:16,344 --> 02:08:23,144
+Şuraya bakın. Buralarda hep yukarıda bitiriyorlar. Yukarıda derken şeyle...
+
+678
+02:08:24,948 --> 02:08:46,208
+Yani giderek aşağıya, çünkü örnek sayısı artıyor giderek. Etiketli örnek sayısı giderek artıyor. O yüzden daha yukarıda hep bitiriyorlardı. Zaten burada düz bir çizgi çizmeye kalksak, en sonu süpervaysi düşünürseniz şöyle düz bir çizgi şurada yer alacak. Oraya varacaklar en nihayetinde. Ama burada farklı bir durum var bakın.
+
+679
+02:08:46,608 --> 02:09:10,468
+Burada yukarı aşağı hareketler var. Burada yukarıdan başlayıp aşağı doğru gidiyor olması demek ne demek? Şimdi bu yukarıdakilerle aşağıdakiler nasıl bir fark şu. Şimdi bu yukarıdakiler elinizde yani sağa doğru gittikçe veri kümesindeki gerçek olmayan etiketli verilerin oranı artıyor.
+
+680
+02:09:11,412 --> 02:09:28,631
+Tamam mı? Yani başlangıçta mesela eğitim kümenizde 10 tane örneğiniz var ve siz onun üzerine 10 tane daha ekliyorsunuz, 10 tane daha ekliyorsunuz, 10 tane daha ekliyorsunuz ama bu 10 tane ekledikleriniz gerçek etiketli veriler mi? Değiller. Bunların hepsi tahmini etiketliler.
+
+681
+02:09:29,332 --> 02:09:54,872
+Gerçekten onların etiketlerini almıyorsunuz, kullanmıyorsunuz. Tamam mı? Dolayısıyla buradaki bu dalgalanmalar oldukça normal şey. Yani niye bu en tepede en sona doğru varmıyor? Çünkü zaten bu en sona varmasının anlamı şu. Bütün etiketsiz verilerin hepsinin etiketlerini tahmin etmişim ve kullanmışım. Bu da hiç de iyi bir şey olmamış. Mesela burasına bakarsak, buraya bakarsak ya da mesela buraya bakarsak.
+
+682
+02:09:55,188 --> 02:10:21,208
+Mesela burada fena değil. Burada yine kötü mesela. Mesela yukarıda bir yerde başlayıp aşağı doğru giden bir senaryo birazcık şunu söylüyor aslında. Çok fazla emin olduklarını kullan. Emin olmak demek şu demek. Modelin ilk tahminlerinden üretilenleri kullan ama daha da tahminlerden tahminler, tahminlerden tahminler gibisinden çok da ilerlediğin zaman işi bozuyorsun sen. Tamam mı?
+
+683
+02:10:21,555 --> 02:10:28,895
+O yüzden hani şuradaki başlangıçta yüksek bir yerden başlayıp genel olarak aşağı doğru bir düşüşün anlamı.
+
+684
+02:10:29,492 --> 02:10:54,212
+Çok da fazla itirasyon gitmemek gerekiyor. Çünkü tahminlerden tahminler üretiyorsunuz, tahminlerin tahminlerinden yeni tahminler üretiyorsunuz gibi gibi gidiyor. O da her durumda başarıyı olumlu bir şekilde etkilemiyor. Olumlu etkilediği durumlar da var. Mesela işte balans skele baktığımızda %68'lerden mesela her şeyi böyle tahmin etmeye kalktığınızda nakılmazlar kötü yerlere varılabildiğini görebiliyorsunuz.
+
+685
+02:10:54,452 --> 02:11:10,712
+Mesela burada en başta geçilmiş 5 ama iterasyonlara devam ettiğimiz zaman oldukça kötü bir hale getirebilmişiz. Ya da burasına bakın mesela. SuperVis'i geçmiş 5 ama onun da üstünde sadece tek bir iterasyonu yani etiketli veriler arttı.
+
+686
+02:11:11,104 --> 02:11:22,524
+Bir set etiketsiz veriyi tahmin edip kullanmak oldukça diğerinden daha başarılı bir sonuç, hepsinden daha başarılı bir sonuç elde ettirebilmiş bize.
+
+687
+02:11:26,739 --> 02:11:27,639
+Bu zaman mazı.
+
+688
+02:11:31,731 --> 02:11:39,912
+Ama tabii hepsini kullanmak durumlarında iyi sonuçlar verdiği örnekler gördüğünüz gibi var. Genel bir şey söylemek zor.
+
+689
+02:11:44,692 --> 02:11:56,572
+Tahmin etiketleri hiç kullanmamanın da tek seferde tahmin etmenin de, iteratif tahminin de diğerlerinin iyi olduğu sonuçlar var. İteratif tahminde ama nerede bulacağının çok büyük etkisi olduğunu görebiliyoruz. Yani çok fazla salınmalar var.
+
+690
+02:11:57,108 --> 02:12:14,288
+Tabaca en direkt şey belki ifade edilebilir. Bu çok fazla salınma iyi bir şey değil. Çok stabil olmayan modeller üretmenize sebep oluyor. Dolayısıyla mümkün olunca fazla miktarda tekrarlı tahminler derken.
+
+691
+02:12:16,564 --> 02:12:24,644
+Çok sayıda model eğitip kullanmak sonuçlardan emin olmak lazım. Tek bir şey var bu karar vermek yanıltıcı olabilir.
+
+692
+02:12:27,104 --> 02:12:36,584
+Şimdi öğrenmenin transferi. Bu aslında sizin ikinci ödevinizin konusuydu.
+
+693
+02:12:37,395 --> 02:13:03,715
+Bir problemi çözdükten sonra benzer bir başka problemi sıfırdan çözmek diye ne önceki verileri, modelleri, parametreleri gerekiyorsa dönüştüre, kullanmak denilen şey öğrenmenin transferi. Yani yeni bir problemi sıfırdan çözmeye göre daha az maliyetli dair çözüm bulmak. Bunu neler transfer edilebiliyor? Veriler transfer edilebilir. Yani oradaki verileri bir de Atoset'teki verileri başka bir de tabii uygunlarsa aktarabilirsiniz. Üzerine değişiklikler yaparak aktarabilirsiniz.
+
+694
+02:13:04,372 --> 02:13:21,072
+Tüm modeli aktarabilirsiniz. Yani tüm modeli, eğitilmiş modeli gönderebilirsiniz. Onun üzerinde hareket edilebilir. İşte metinler için kemer vektörleti, resimler için CNN filtreleri. Bunların hepsi transfer edilebilir yapılar. Bunları kullanarak biz ne yapabiliyoruz?
+
+695
+02:13:31,252 --> 02:13:53,311
+Bir model oluşturduğunuzda bir sonuç elde ediyorsunuz. Ama mesela şöyle bir şey yaparsanız daha iyi olabiliyor. Elinizde etiketsiz milyonlarca data var. O etiketsiz datalarla bir modeli derlemi self-supervised bir yaklaşımına, self-supervised yaklaşımının ne olduğunu daha sonra konuşacağız ama yine çok kısaca ifade edeyim.
+
+696
+02:13:55,604 --> 02:14:19,604
+Etiketli bir eğitim, yani input ve outputları üretiyorsunuz, oluşturuyorsunuz ama bunun için insan müdahalesine gerek yok. Misal, nasıl etiketli veri üretiyorum da insan müdahalesine gerek yok. Mesela şöyle bir örnek verelim. Bir sonraki cümleyi tahmin et, pardon bir sonraki kelimeyi tahmin etmek bir metin içerisindeki. Elinize bir derleme olduğunu düşünün. Bu derleme kullanarak siz bir sonraki...
+
+697
+02:14:20,500 --> 02:14:46,260
+Kelimeyi tahmin eden bir görev için eğitim kümesi hazırlamanız oldukça kolay olur değil mi? Yani zaten sıralı elinizde şeyler var, derlem var. O derlemi kullanarak böyle bir şey yapabilirsiniz. Burada etiket dediğimiz şey bir sınıf falan değil. Yani bir sınıf değil derken bir konu anlamında işte bir insan etiketlemesine ihtiyaç duyulan bir şey yok ortada. Dolayısıyla bu self-supervised bir şey oluyor. Ya da mesela...
+
+698
+02:14:46,612 --> 02:15:06,192
+Bir resmin içerisindeki bir bölgeyi kapatarak orasını tahmin etmek. Bu da self-supervice olarak eğitilebilecek bir şey. Neden? Elinize resimler varsa etiketsiz. Siz onların içerisinden rastgele bir yerleri kapatıp onlar input. Outputta da neresi o kapalı yerin.
+
+699
+02:15:07,060 --> 02:15:21,640
+Olmadığı durum ya da sadece kapalı yerin içi şeklinde düşünmebilirsiniz bunu. Buna hep self-supervised yaklaşımlar. Makine öğrenmesine özellikle bu pretrain modellerin hem şey kısmında ne derler ona?
+
+700
+02:15:25,108 --> 02:15:53,088
+Görüntü verikümeleri üzerinde olan predtrain modeller hem de metin verileri üzerinde olan predtrain modeller hep bu tarz self-supervised yaklaşımlarla eğitiliyorlar. Çünkü çok büyük miktarda veriyle eğitilmeleri gerekiyor ve bunların da etiketlenmesi zaten çok anlamlı bir şey değil. Daha doğrusu etiketlenmeden de self-supervised yapılarla da başarılı sonuçlar anılabildiği görüldükten sonra burası oldukça büyük bir önem kazanmış durumda.
+
+701
+02:15:53,108 --> 02:16:05,668
+Tabi orada bambaşka şeylerde bir şey. Resimler için farklı şeyler de düşünmebilirim. Mesela resimlerde şey falan da yapmıyor. Resmi alıp karıştırıyorlar sonra onu mesela şey gibi.
+
+702
+02:16:06,163 --> 02:16:32,203
+Scramble gibi resmi parçaları ayırıp, mesela işte 16 tane parça ayırıyor, 16 kare ayırıyor, sonra onları karıştırıyor ve sonra onları düzeltiyor. Mesela bu da bir şey. Yine self-supervised olarak üretilebilecek bir tas. Ve bu şekilde farklı farklı taslarla oldukça gerçekte işimize yarayacak bilgileri elde edinmek mümkün hale gelebiliyor.
+
+703
+02:16:34,164 --> 02:16:43,783
+Daha sonra konuşacağız. Cümle içerisinden bazı kelimeleri kapatıyorsunuz. O kapatılan kelimeleri tahmin etmeye çalışıyorsunuz. Gibi gibi. Ama o da yine self-supervised bir yaklaşım.
+
+704
+02:16:45,224 --> 02:16:58,364
+Yani on-supervised bunlar aslında. Çünkü insan etiketlemesine ihtiyaç duymuyorlar. Ama input ve output'lar R'ı aslında siz üretiyorsunuz. O yüzden de self-supervised'ler ama kendi kendine üretiliyor gibi delikümesinden düşünürsek bu da.
+
+705
+02:16:59,891 --> 02:17:04,731
+Servis-Üpervasti isimlendiriliyor. Şimdi öğrenmenin transferi ne zaman işe yarar?
+
+706
+02:17:05,531 --> 02:17:13,271
+Eldeki yeni problem için yeterli veri yoksa, elinizdeki yeni problem için yeterli veri varsa zaten transfere ihtiyacınız yoktur.
+
+707
+02:17:13,271 --> 02:17:23,432
+O verilerle eğitim zaten. Ama yoksa anlamlı. Bir de eski ve yeni problem ilgiliyse, şimdi eski ve yeni problem birbiriyle çok alakasız ise,
+
+708
+02:17:27,263 --> 02:17:37,583
+Mesela resimdeki kadın, resimdeki kişi kadın mı erkek miyi bulan bir şey eğiteceksin, model eğiteceksiniz.
+
+709
+02:17:38,644 --> 02:17:48,583
+Burada mesela daha önceden gidip de resimdeki nesne kedi mi köpek mi...
+
+710
+02:17:49,012 --> 02:18:03,652
+Öğrenen bir modeli alıp, onu buraya transfer edip, onun üzerine fine-toon yapmanın çok fazla bir anlamı yoktur. Ama mesela self-supervised bir şekilde, ne bileyim, kapalı parçasını tahmin et, veren gibisinden, göreve has olmayan...
+
+711
+02:18:04,115 --> 02:18:13,096
+Bir şeyle üretilmiş, eğitilmiş, sınıfa has olmayan bir şeyle eğitilmiş bir modelin ağırlıklarını kullanmak.
+
+712
+02:18:13,416 --> 02:18:22,916
+O anlamlı. Dolayısıyla sınıflandırma problemini bir yerden bir yere transfer edecekseniz, bu ikisi birbiriyle alakalı olsalar iyi olur.
+
+713
+02:18:23,280 --> 02:18:42,380
+Ama self-supervised için bu geçerli değil. Self-supervised'ler zaten eski problem diye bir şey değil. Bir sınıflandırma problemi değil. Eski problemden kastımız şey. Ne der? Self-supervised bir yapı. Self-supervised yapılar da oldukça jenerikler. Demin konuştuğumuz gibi.
+
+714
+02:18:49,471 --> 02:19:03,572
+Farklı NLP uygulamasında, hiç o uygulamaların kendileriyle alakalı olmayan self-supervised pretrainler oldukça başarılı sonuçlar bize almamızı sağlıyorlar.
+
+715
+02:19:04,271 --> 02:19:09,891
+Hagrasif çok var yola bilgi transferi benzer bir karakteristikleri eğiticili öğrenme için de söylenebilir.
+
+716
+02:19:15,283 --> 02:19:38,024
+Şimdi arkadaşlar, buraya şimdi geçmeyelim. Şu çok görevli eğitimi olacağız. Bugünlük burada duralım. Tamam, tam şu şeyde kaldığımızı düşünelim. Şu çok görevli eğitimde. Önümüzdeki hafta buradan itibaren devam edeceğiz. Bunun gibi böyle bir sürü farklı farklı yaklaşımları göreceğiz. Ondan sonra da işte herhalde şey kısmına geçiyoruz.
+
+717
+02:19:38,768 --> 02:19:51,268
+Tamam da dil modellerine geçeceğiz. Bu RNN'ler nasıl çalışıyorlar, hayatlar nasıl çalışıyorlar falan vesaire onları iki hafta sonra görmeye başlayacağız diye tahmin ediyorum.
+
+718
+02:19:52,108 --> 02:19:54,188
+Peki arkadaşlar, soru soran var mı?
+
+719
+02:20:03,667 --> 02:20:04,788
+Yok herhalde.
+
+720
+02:20:05,007 --> 02:20:07,948
+Hocam, pardon. Ödev bir sonraki hafta mı vereceksiniz?
+
+721
+02:20:09,467 --> 02:20:10,387
+Plan bir sonraki hafta.
+
+722
+02:20:10,687 --> 02:20:12,147
+Planda yazılı olması lazım.
+
+723
+02:20:12,768 --> 02:20:14,027
+Dersinin planına bakayım.
+
+724
+02:20:14,927 --> 02:20:16,847
+Ben bakmadım. İsterseniz ben de bakabilirim.
+
+725
+02:20:19,047 --> 02:20:20,987
+Oradakini uyguluyorum zaten.
+
+726
+02:20:21,608 --> 02:20:23,367
+Tamam. Ben orayı kontrol edeyim hocam.
+
+727
+02:20:26,367 --> 02:20:29,128
+Ödev 3-28 Nisan'da verecekmişim.
+
+728
+02:20:30,675 --> 02:20:31,855
+İki hafta sonra yani.
+
+729
+02:20:32,435 --> 02:20:32,915
+Tamamdır.
+
+730
+02:20:33,075 --> 02:20:36,195
+Haftaya ödev vermiyorum. Ondan sonraki hafta.
+
+731
+02:20:39,036 --> 02:20:40,155
+Teşekkürler hocam.
+
+732
+02:20:40,515 --> 02:20:50,455
+Teşekkür ederim. Peki arkadaşlar, hepinize geldiğiniz için, sunumlarınız için çok teşekkür ediyorum. Hafta kısmetse görüşmek üzere diyorum. Sağlıcakla kalın.
+
+733
+02:20:51,455 --> 02:20:52,475
+Görüşürüz hocam, iyi günler.
+
+734
+02:20:52,935 --> 02:20:54,135
+Görüşmek üzere hocam.
+
+735
+02:20:55,155 --> 02:20:55,876
+İyi günler.
+
+736
+02:20:55,876 --> 02:20:56,995
+İyi günler hocam.
