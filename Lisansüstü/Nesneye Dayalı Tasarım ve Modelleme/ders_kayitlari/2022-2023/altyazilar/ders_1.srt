@@ -1,0 +1,2243 @@
+1
+00:00:29,364 --> 00:00:35,176
+Teşekkürler.
+
+2
+00:01:18,260 --> 00:01:23,180
+Bu hız demek oluyor. Biraz daha beklememiz gerekebilir belki ama neyse bakalım.
+
+3
+00:02:47,283 --> 00:02:51,063
+Evet, kaç şıklık? 10.000'da. Biraz daha artarız bakalım.
+
+4
+00:02:51,823 --> 00:02:53,703
+O zaman 5 dakika daha dileyelim.
+
+5
+00:02:53,703 --> 00:02:54,983
+11.000'da.
+
+6
+00:03:29,556 --> 00:03:30,276
+Çıkkı altık.
+
+7
+00:05:55,827 --> 00:06:03,467
+Bir kişiyi daha getirdik bu arada. 5 dakika başlangıcı ötüleyerek neyse bakacağız. 2 dakika daha bekleyelim.
+
+8
+00:07:15,156 --> 00:07:15,836
+İkizaydı.
+
+9
+00:08:14,675 --> 00:08:15,895
+Evet, pekala. Saati.
+
+10
+00:08:17,896 --> 00:08:20,995
+Şimdi böyle şey yaptık. Yavaş yavaş başlayabiliriz.
+
+11
+00:08:33,908 --> 00:08:36,687
+2, bir dakika sıfır sıfırı değiştirdik.
+
+12
+00:08:36,687 --> 00:08:39,408
+Medin mi? Yoksa adım mı?
+
+13
+00:08:39,408 --> 00:08:43,908
+Aa evet, hayal var. Bu da seksik karşıt. Hayalden başlıyoruz.
+
+14
+00:08:43,908 --> 00:08:47,908
+O zaman şimdi şöyle yapıyoruz.
+
+15
+00:08:59,827 --> 00:09:04,548
+Evet arkadaşlar, ne hoş geldiniz.
+
+16
+00:09:04,548 --> 00:09:06,548
+Bu dönem...
+
+17
+00:09:07,668 --> 00:09:30,268
+Ders notlarımı güncelledim. Bu konuda az bir çalışmam kaldı. Epey bir içeriği güncelledim. Bir düzelteceğim kısım kaldı. Onu da düzelttıktan sonra bu ders notlarını sayfamda paylaşacağım. Sizler de indirebileceksiniz. Şu an Amelis sayfamda ders notlarının eski bir hali var.
+
+18
+00:09:31,379 --> 00:09:49,480
+Değişiklik örneklerde. Örneklerin nasıl kodlandığında ve tasarlandığında bazı değişiklikler var. Bütüncül örnek değişikliğini ise state kadınına düşünüyorum. Bakalım inşallah kısa süre içerisinde onu yetiştirebiliyorum. Notlarını günceleyeceğim.
+
+19
+00:09:52,628 --> 00:09:59,427
+Ön gereksinim olarak Nesneye Dayalı programlama konusunda bilgi sahibi olunmasını bekliyoruz.
+
+20
+00:10:00,548 --> 00:10:07,828
+Çünkü bu dersin temel içeriği nasıl Nesneye Dayalı tasarım bir biçimde yapılır?
+
+21
+00:10:07,828 --> 00:10:14,187
+Bu sorunun yanıtını öğrenmek ve bunu uygulama biçerisi kazanmaktır dersin amacı.
+
+22
+00:10:16,755 --> 00:10:21,956
+Daha çok haftasında tasarım kalıpları üzerine çalışacağız.
+
+23
+00:10:22,395 --> 00:10:28,295
+Geng of Ford diye geçen dörtlü çetenin klasik tasarım kalıpları üzerinden çalışacağız.
+
+24
+00:10:28,935 --> 00:10:32,935
+Tasarım kalıpları bu işi nasıl doğru yapacağınızı gösterir.
+
+25
+00:10:33,344 --> 00:10:37,364
+Ama bir de insanın yanlış yanından da öğrenmesi söz konusudur.
+
+26
+00:10:37,884 --> 00:10:44,544
+Derslerin 2-3 haftalık, en fazla 3 haftalık kısmında ise kod kusurları ve kod yeniden düzenleme.
+
+27
+00:10:44,544 --> 00:10:47,204
+Yani kod simersen ve factoring konusunu göreceğiz.
+
+28
+00:10:47,704 --> 00:10:51,224
+Bu da kodlamaya tasarım yaparken daha doğrusu.
+
+29
+00:10:51,711 --> 00:11:16,331
+Nesneye Önelemin yanlış kullanım örneklerini adlandırarak gösterecek size. Böyle bir yanlış kullanımla karşılaştığımızda nasıl düzeltebileceğimizi geriye doğru uyumluluğu koruyaraktan, çünkü nefaktörünün tanımı odur, geriye doğru uyumluluğu koruyaraktan nasıl daha yaptığımız tasarım hatasını düzelteceğimizi konuşuyor olacağız.
+
+30
+00:11:19,711 --> 00:11:24,711
+Kod sınav konusunda ise...
+
+31
+00:11:25,908 --> 00:11:40,707
+Kullandığımız kaynak kitaptaki bütün kod simerler üstünden çalışmayacağız. Fakat kendi içerisinde en fazla interconnected bağlaşmış olan kod simer ve refactoring kısımlarını, yani bir seçme kümesini görüyor olacağız.
+
+32
+00:11:40,707 --> 00:11:52,008
+İşte ilk kısmın tasarım kalıplarının esas ana kaynağı kitabı, 4.3 etenim, 94 yılında hazırladığı Design Patterns, Elements of Reusable Object-Erended Software kitabıdır.
+
+33
+00:11:53,908 --> 00:12:18,207
+Online olarak da erişebiliyorsunuz birazdan. Kampüse gelmeye gerek kalmadan kendi evlerinizden nasıl bu kaynaklara erişebileceğinizi de göstereceğim. Bu temel kitap. Fakat tasarım kalıpları mesleğimizde çok önemli olduğu için bu konuda çok fazla ek kitap görebilirsiniz. Yüzlerce.
+
+34
+00:12:44,303 --> 00:13:07,943
+Ondan sonra bu tasarım kalıbının bir probleme uyarlanmasını göreceğiz. Ama bunu yaparken en az iki farklı uyarlama göreceğiz. Birincisi probleme kafadan rast gelebilir çözüm. Bugünü kurtaran bir çözüm olacak. Sonra o çözümde ufak bir değişiklik yapılması gerektiğinde işlerin nasıl santa sandığını göreceğiz.
+
+35
+00:13:12,303 --> 00:13:38,364
+Tasarım kalıbını uygulayacağız ve böylece kazandığımız avantajları göreceğiz. Bu arada bazı dezavantajlar da ortaya çıkmış olabilir. Zaten bütün bunların hepsinin ders kapsamında iniş ediyor olacağız. Ki dört üç ete de zaten tasarım kalıbını anlattıktan sonra avantajlar ve dezavantajlar ve tartışma kısmında anlatmaktadır. Çünkü hani bir sihirli değnek çözümü yoktur hiçbir zaman. Her çözümün.
+
+36
+00:13:38,836 --> 00:13:53,155
+Farklı avantaj ve dezavantajları vardır. Biz de elimizdeki problemlere belki yakın zamanda olacak değişikliklere göre ya da nelerden değişiklik beklediğimize göre en uygun çözümü seçmeye çalışacağız.
+
+37
+00:13:55,508 --> 00:14:08,587
+Öbür kısımda ise, Code Sumer and Refactoring kısmında ise kullandığım temel kaynak Martin Fowler'ın Refactoring kitabı, Refactoring, Implementing the Design of Existing Code. O da Edison Vesley ile açıkmış, 99 tarihli.
+
+38
+00:14:08,587 --> 00:14:13,728
+Fowler, Nesneye'nin elinin üstünde çalışmış bir pratisyen.
+
+39
+00:14:15,091 --> 00:14:43,091
+Nesne'inlik danışmanlık çalışmaları yürütüyor. Kendi web sitesi üzerinden de aynı zamanda bu çalıştığı konularda ilgili birçok yargı kaynak sunuyor. Temel olarak bu iki kitabı kullanmış olacağız. Yani ders notları derste çalışmanız için yeterli olacaktır. Fakat bu konuda daha fazla işlem harcamak istiyorsanız, en nesne kaynaklar son derece geniş. Yeter ki ulan.
+
+40
+00:14:43,091 --> 00:15:09,531
+Bu tasarım kalıpları üstüne ek kaynaklar olarak ben şimdilik bir iki üç yört beş tane ek kitap yazdım. Bu kitapları yazmanın nedeni tasarım kalıplarına verdiğim örnekleri bu kitaplardan birinden almak oluyor. Ya doğrudan almış oluyorum ya da biraz uyarlayarak almış oluyorum. Bazı örnekleri de tamamen ben kendim düşünüp oluşturmuş oluyorum.
+
+41
+00:15:10,899 --> 00:15:28,899
+Bu şekilde. Şurada yazdıklarımın, ben de pdf olarak bir şekilde eriştim. Elimde var. Ve sizin de bulabileceğiniz ve hatta rica ediyorum yararı bulursanız bana da öneleceğiniz kaynaklar çok.
+
+42
+00:15:30,932 --> 00:15:58,932
+Ders gereksinlerinden bahsetmiştim ama çok girmemiştim. Şimdi daha ayrıntılı anlatayım. Yani herhangi bir güncel Nesne programlama dilimine hakimiyet gerekmektedir. Güncel diyerek mesela Small Talk gibi Nesne'nin ilk zamanlarında ortaya çıkan, kendine has ve gayet ilginç ve hatta üst seviye başka dillerde olmayan özellikleri de olan bir dil örneği Small Talk. Fakat çok yaygın bir kullanım görmek.
+
+43
+00:15:58,932 --> 00:16:15,572
+O yüzden onu bir kenara bırakırsak, güncel nesnelik diler olarak ne diyebiliriz? C++ diyebiliriz, Java diyebiliriz, C Sharp diyebiliriz. Bu gibi diller olabilir. Ben bu derste konu örneklerini Java dili üzerinden vereceğim.
+
+44
+00:16:26,932 --> 00:16:36,032
+Çok zorlanacağını sanmıyorum. Çünkü bu tasarım ve modelleme çok temel bir konu ve herhangi bir dilin ek özelliklerine ihtiyaç duyan bir konu değil.
+
+45
+00:16:36,932 --> 00:16:50,711
+Bazı kalıplarda bazı dillerin bazı özelliklerinin çok kullanış olabileceği anlar oluyor. O durumda dört dışı zaten bunu belirtiyor ama onun dışında başka dillerle de o işe yapılamayacağı diye bir kural söz konusu değil.
+
+46
+00:16:50,711 --> 00:16:54,872
+Yapılır yani. Bu da önemli olan temel nesne yönelimin ve bunun gereçlerini.
+
+47
+00:16:54,932 --> 00:17:12,271
+İyi bilmek. Özellikle kalıptın ve çok biçimliliğin getirdiği avantajları birden fazla kalıpta kullanıyor olacağız. Yani neredeyse kalıptın ve çok biçimliliği kullanmayan kalıp yok gibi bir şey. En temel gereksinimimiz bu arkadaşlar.
+
+48
+00:17:12,720 --> 00:17:37,940
+İkinci gereksinim müzesi, UML sınıf şamalarına hakimiyetti. Bunları bilmektir. Daha önce hiç UML şamaları üstüne çalışmadıysanız bu çok problem değil. UML üzerine de birçok kitap var arkadaşlar. Yani tasarım kalıplarından daha mı fazladır, daha azdır bilemiyorum ama o da UML'de yazılım sektöründe şu an defacto olarak kullanılan teknik dokumentasyon dili UML.
+
+49
+00:17:40,720 --> 00:18:02,779
+Önemli bir konu olduğu için kaynakta çok. Fakat yine de bu konuda biraz eksik öğrenciler de olabiliyor. Ben iki tane örnek verdim. Birincisi yine Martin Ford'un yazdığı UML Distilled adlı bir kitap. Ben zamanında o kitaptan öğrenmiştim.
+
+50
+00:18:06,932 --> 00:18:20,451
+Danıtılmış, özürütlenmiş anlamında. Belki elektronik olarak bulmakta zorlanabilirsiniz ama ki ben de zamanında bir yerden fıkır çekmiştim öyle elektronik olarak benim de elimde yok.
+
+51
+00:18:20,451 --> 00:18:31,451
+Fakat bulursanız güzel bir kitap. Sadece işte video amaçlı bası şöyle çiziliyor, şu bileşen şu anlamındadır demekle kalmıyor. Anlatılan kavramın...
+
+52
+00:18:32,051 --> 00:18:52,391
+Bu nasıl modellemede, nasıl doğru ve düzgün kullanılacağı hakkında da bilgi veriyor. O yüzden sadece UML değil, Nesneye Dayalı modellemeyi de bir noktaya kadar öğreten bir kitap. O yüzden sevdim bir kitap. Onun dışında çok kaliteli başka kitaplar da var elbette. Örneğin Nat Şahes serisinin UML için olanı da var.
+
+53
+00:19:00,051 --> 00:19:09,711
+Şunu söylemek istiyorum. UML standartları tasarım kalıplarından daha sonra oturtulmuş bir standart.
+
+54
+00:19:09,711 --> 00:19:17,751
+Şimdi buradaki U, Unified'den geliyor. Unified Modellip'den geçiyor. UML standartı oturana kadar birden fazla ekol vardı.
+
+55
+00:19:18,111 --> 00:19:24,711
+Nesneye yönelik tasarımı şematize etmeye yönelik. Bunların en güçlü yanlarını alıp...
+
+56
+00:19:24,948 --> 00:19:48,288
+Bazı şekillerde geliştirerekten UMR standartı oluşturuldu. Dörtlü Çetenin kitabı da UMR standartından önce yazılmış bir kitap olduğu için Dörtlü Çetenin tasarım kalıplarının çizimindeki kullandığı UMR standartı örneklerde kullandığımız ve benim sınavlarda sizden çizmenizi isteyeceğim güncel standarttan farklı.
+
+57
+00:19:48,852 --> 00:20:15,132
+Ben de asıl şengeç bir adam olduğum için dörtlü çetenin şamalarını birebir kullandım. Yeni şama şeklini çevirmedim. İlk bir iki şama üstüne gördüğünüz zaman ben ufak tefek bir iki farkını anlatacağım. Ve siz zaten eski biçimde değil, yeni biçimde anlatmanızı istiyor olacağım. Ki ben de kendi bütün örneklerimde zaten yeni standartı kullanmış durumdayım.
+
+58
+00:20:16,211 --> 00:20:34,352
+Temel olarak durum bu arkadaşlar. Bence hiç Nesneye'nin çalışmamış arkadaşlar. Bu derste önemli bir dezavantaja sahipler. O yüzden bu dersi almamalarını, bırakmalarını tavsiye ederim. Hiç daha önce Nesneye'nin programlama çalışmamışsınız.
+
+59
+00:20:41,428 --> 00:20:45,788
+Bu konuda bir miktar deneyim ise çok şey kazanılacak bu ders kapsamında.
+
+60
+00:20:48,488 --> 00:20:50,748
+Evet, şimdi biz ne yapacağız?
+
+61
+00:20:50,748 --> 00:20:52,568
+Tabii şimdi bu tarihleri güncellemem lazım.
+
+62
+00:20:52,768 --> 00:20:57,688
+Yeni ders başlama haftamıza göre unutmuşum ben özür dilerim.
+
+63
+00:20:57,688 --> 00:21:00,148
+Şimdi bugün 6 Ekim, Perşembe ilk haftamız.
+
+64
+00:21:00,648 --> 00:21:02,708
+14 haftalık bir süremiz var.
+
+65
+00:21:03,128 --> 00:21:05,688
+Bu 14 haftalık süre içerisinde...
+
+66
+00:21:06,355 --> 00:21:28,715
+Çünkü bir küçük sınav yükleyeceğim sisteme. Bunun bir not ağırlığı olmayacak. Bunu online yıldızda bir ödev olarak yüklereceğim. Ama herhangi bir puan katkısı olmayacak. Acaba yöna sınıf şimdelerine ve Nesneye Nelik programlamaya ne kadar hakimsiniz? Biraz o konuda kendinizi görebileceğiniz, sesleyebileceğiniz bir sınav olacak.
+
+67
+00:21:33,940 --> 00:21:40,340
+20 Ekim oluyor.
+
+68
+00:21:40,852 --> 00:22:05,251
+İki tane yazılı sınav yapacağım arkadaşlar. Birincisi sekizinci haftada. Bu üniversitenin standart vize haftasıdır. İkinci vize ise her derste olmak zorunda değildir. Lisansta ve yüksek lisansında. Ben yapmayı tercih ediyorum bu ders kapsamında. Bunu da on ikinci haftada yapacağız. On ikinci haftada oluyor ki yirmi iki alarak perşembe.
+
+69
+00:22:10,708 --> 00:22:21,428
+Bir dakika. Şu 22'ye aklımdayken düzelteyim. Ondan sonra 8. haftamızda 24 Kasım oluyor.
+
+70
+00:22:27,412 --> 00:22:39,632
+Bu iki sınav, bir kere bütün sınavlar yüz yüze olacak, onu söyleyeyim. Mesajımda, toplu mesajımda da belirttiğim üzere ders online geçireceğiz, ama sınavları yüz yüze yapacağız arkadaşlar.
+
+71
+00:22:40,632 --> 00:22:52,892
+Vize sınavlarımız, dönüm içi etkinliklerimiz yüzde altmış olarak notlandırılıyor. Yüzde otuz, yüzde otuz ağırlığı olan iki tane vize sınavını, ara sınavını klasik usul yapacağız arkadaşlar.
+
+72
+00:22:53,172 --> 00:22:55,412
+İkisinin de konusu tasarım kalıpları.
+
+73
+00:22:55,412 --> 00:23:12,791
+Bu soru olacak. Burada genel soru şeklim şu şekilde olacak. Sınav iki sorudan oluşacak. İki soruda elli şer puanlık. Çünkü benzer formatta sorular olacak. Bizim bu ders kapsamında yaptığımız gibi
+
+74
+00:23:13,248 --> 00:23:33,907
+Bir örnek verip daha sonra onu bir tasarım kalıbına göre tasarladığınız gibi olacak her iki soruda. Doğal dille yazılmış bir problem vereceğim. Bu problemi çözmek için hangi tasarım kalıplarını kullanırsınız? İngilizce orijinal isimleriyle söyleyin diyeceğim.
+
+75
+00:23:34,291 --> 00:23:51,551
+Daha sonra bu kalıbı neden seçtiğinizi veya başka bir değişiklikle bu kalıbın bu problemin çözümüne neden uygun olduğunu açıklayayım diyeceğim. Ardından tasarımınızı bir UMS sınıf işlemesi ile çizin, gösterin, anlatın diyeceğim. Bu konuda kod yazmayacaksınız.
+
+76
+00:23:53,011 --> 00:24:11,672
+İstemiyorum kesinlikle. Yani yazarsız anlayacağım demek şeklinde anlamayın ama tasarımınızı bir UMR sınıf şıması ve ek olarak belki çok küçük küçük birkaç metotta önemli bir ayrıntı varsa tasarım kalıbıyla ilgili o zaman belki ufak kod parçacıkları yazabilirsiniz bir iki metot ile ilgili.
+
+77
+00:24:12,243 --> 00:24:21,384
+Benim kafamdaki sözümlerde genelde koda hiç gerek olmuyor. Güzel bir sınıf çıbasıyla tasarımınızı anlatabiliyorsunuz.
+
+78
+00:24:21,680 --> 00:24:29,880
+Ve tabii bu sınıf çamanızı da çizerken bir sınıf çamanız tasarım kalıbının çizmasına ne derecede örtüşüyor?
+
+79
+00:24:29,880 --> 00:24:36,519
+Hem de çözülecek problemin gereksinimlerine ne kadar yanıt veriyor? Ona da bakıyor.
+
+80
+00:24:36,680 --> 00:24:41,000
+Yani bir sorun kendi içerisinde dört ayrı not bileşeni var.
+
+81
+00:24:41,660 --> 00:24:44,740
+Doğru kalıbı mı seçtiniz? Kalıbı doğru mu savundunuz?
+
+82
+00:24:45,215 --> 00:24:55,556
+Ve tasarımınızı yaparken kalıbı doğru mu aktardınız ve problemin için gerekli bütün metot ve üye alandığı da tasarımınıza yansıtabildiniz mi?
+
+83
+00:24:56,115 --> 00:25:15,115
+Bunların da A hakkı birbirine yakın oluyor diyelim ki. Ama tabii doğru kalıbı seçmeye kısım olmak daha önemli. 50 puanlık sorunun diyelim ki o sorunun %60'ını doğru kalıbı seçip bunu anlatmak, %40'ını da tasarımı doğru çizip problem alanına uygun şekilde...
+
+84
+00:25:15,827 --> 00:25:37,367
+Bu kalıbı göstermek oluşturuyor. Yanlış kalıbı seçtiniz ne oldu? Diyelim ki çok uymayan bir kalıbı seçmeniz ama kalıbı savunurken öyle bir anlattınız ki bu kalıbı ölçü arası şu nedenle problemin şurasına uygundur. Belki de tamamen doğru bir çözüme gittiniz. Ben de yanıtınızı, savunmanızı yani seçmenizi okuyunca anlayacağım.
+
+85
+00:25:37,367 --> 00:25:43,827
+Bak bu kalıbı da olabilir şu nedenle. Ben bunu düşünmemişim diyeceğim ve bunu da doğru cevaplar arasına katacağım. O zaman...
+
+86
+00:25:43,827 --> 00:25:45,827
+Ya da...
+
+87
+00:25:46,387 --> 00:26:11,327
+Belki özünü tam yakalayamamış olabilirsiniz problemin. Fakat gerçekten de seçeceğiniz kalıp problemin tamamında değil de bir kısmında belki kısmı olarak yarar sağlık yaptı. O zaman o kısımdan kısmı not alacaksınız. Yani soru tamamen gitmemiş oluyor. Bu şekilde iki sınav yapmış olacağız. Sekizinci ve on ikinci haftalarda klasik usül olarak.
+
+88
+00:26:14,387 --> 00:26:33,567
+Dünyanın bin bir türlü hara var. Belki bu haftalarda değişiklik olur. O yüzden lütfen hem bölüm sayfasını takip edin, bölüm ana sayfasını. Hem OBS hesaplarınıza sık sık girin, bakın. Hem de yıldızı posta adreslerinizi de izleyin. Böylece bütün gelişmelerden haberdar olursunuz arkadaşlar.
+
+89
+00:26:35,604 --> 00:26:43,683
+Bu iki sınavdan birine haklı bir nedenle giremeyenler için 14. haftada ara sınav telafisi düzenleyeceğim.
+
+90
+00:26:48,423 --> 00:26:58,683
+Bu arada, bu bir lisansüstü dersi olduğu için, dersten geçilmesi için Yüksek Lisan Söğrencilerinin CB...
+
+91
+00:26:58,932 --> 00:27:25,131
+Doktor öğrencilerinin ise BB alması gerekmektedir. Lisansta geçme notu C, C'dir. Yüksek lisansla bir kademe üstü C ve doktor da bir kademe üstü BB. Bu yüzden ben son haftayı ilk iki sınırlardan birinde diyelim ki düşük almış olmakla birlikte yine de not yükseltme şansı kuvvetli olan arkadaşları da kabul edeceğim.
+
+92
+00:27:26,932 --> 00:27:35,531
+Böylece genelde şöyle yapıyorum. Üç sınavın en yüksek ikisini dikkate alıyorum. O şekilde hesaplıyorum. Ara sınav notunu.
+
+93
+00:27:36,432 --> 00:27:43,756
+Bizelerimiz bu şekilde olacak. Notlamanın %60'ını oluşturacak. Uygulamaya baktığımızda ise...
+
+94
+00:27:43,827 --> 00:27:57,908
+Şimdi burada konuları yazmamışım ama genelde şuradaki 14 haftanın birinci haftası tanıtım falan oluyor. İkinciden itibaren sayarsam 1, 2, 3, 4, 5, 6.
+
+95
+00:27:58,836 --> 00:28:26,836
+6-7 haftayı tasarım kalıpları oluşturuyor. 2 ya da 3 haftayı da kod smel and refactoring konusu oluşturuyor. Böyle baktığımızda derste işlediğimiz konuların ağırlığına da baktığımızda %60 tasarım kalıplarından ara sınavı dönem içi etkinlikleri olarak, %40'ının da kod smel and refactoring içerikli olarak %40 ağırlıkla notlanması...
+
+96
+00:28:26,836 --> 00:28:49,695
+Bu konusunda ise şöyle yapacağız. Yine klasik usul olacak tabii ki. Ben size ne kadar? Tercihan A4 sayfasının 10 puntoyla bir yüzünü, hadi bilemediniz bir buçuk sayfasını kapsayacak bir kod veriyor olacağım.
+
+97
+00:28:53,971 --> 00:29:19,991
+Derste gördüğümüz literatürdeki orijinal isimleriyle yazınız. İşaretleyiniz, nerede olduğunu işaretleyiniz ve yazınız. Bunları düzeltmek için hangi refaktörün eylemlerin uygulanacağı tek tek yazınız. Daha sonra bu işlemleri tek tek yapmayın da tasanın nihai en son düzeltilmiş halini yine bir yana asıl çıcamasıyla izin diyor olacak. Bu da final sınavını oluşturmuş olacak.
+
+98
+00:29:20,884 --> 00:29:33,964
+Temel kavram bu şekilde olacak. Yine bu sınavların tarihleri yaklaştıkça, dersler denerdikçe falan tekrar hatırlatırız bunları. Sizlerin sorularıyla da zaten daha fazla ayrıntılandırırız.
+
+99
+00:29:34,336 --> 00:29:43,536
+Şeyler bunlar, durumlar bunlar. İnşallah bu sene artık daha fazla salgın koşulları olmaz da inşallah rahat rahat çalışırız.
+
+100
+00:29:43,536 --> 00:29:53,696
+İçerimizi yaparız. Ama yine de tekrarlıyorum. Bütün olası değişiklikler duyurlar için lütfen sayfamızı izleyiniz. Mail kutularınıza bakınız.
+
+101
+00:29:54,355 --> 00:30:00,000
+Şimdi buraya kadar epey konuştum. Öncelikle buraya kadar söylediklerim...
+
+102
+00:30:00,000 --> 00:30:03,460
+Sizlerin sorularınız varsa buyurun onları almak isterim.
+
+103
+00:30:13,428 --> 00:30:14,768
+Hocam merhabalar.
+
+104
+00:30:15,587 --> 00:30:15,908
+Merhaba.
+
+105
+00:30:16,067 --> 00:30:18,627
+Benim bir sorum vardı.
+
+106
+00:30:19,488 --> 00:30:24,548
+Daha önceden kodlardan vereceğim, onları düzelteceksiniz sınavda demiştiniz.
+
+107
+00:30:25,148 --> 00:30:29,307
+Burada düzeltmemiz gereken kodlar Pisi doku üzerinden mi olacak?
+
+108
+00:30:29,847 --> 00:30:32,188
+Yoksa bir belli program modülü seçtiniz mi?
+
+109
+00:30:32,884 --> 00:31:00,843
+Onu da Java kodu üstünden vereceğim ama çok karmaşık o bir şey olmayacak yani. Tutup Java'ya özel yetenekli olan mesela generic smoothlardan bahsetmeyecek, lambda expressionlardan bahsetmeyecek. Ne bileyim, belki hani bir iki satır dosya işlemi kodu olabilir ama onu da mesela şöyle bir örnek vereyim. Göreceğimiz kod kusurlardan biri duplicate kodu mesela. Bir kodun, çok benzer bir kod bulunu bizden fazla yadet.
+
+110
+00:31:00,884 --> 00:31:25,063
+Tekrarlanması. Çünkü hepimiz biliyoruz ki bu şekilde kopyalı yapıştık programlarından kaynaklanan bu kodda bir bakım kabusu oluşturmaktadır. Siz de tam olarak ne olduğunu anlamasanız bile bu kodun aynı olduğunu görüp, ha bak burada dıp dıp dıp kod vardı. Onun için de uygulanacak refactoring eylemi olarak artık hangisi en uygunsa, move metot mu olabilir, extract metot mu olabilir, bir tanesini yazacaksınız, gide.
+
+111
+00:31:26,583 --> 00:31:28,104
+Peki hocam, teşekkür ederim.
+
+112
+00:31:30,036 --> 00:31:32,455
+Buyurun, başka var mı?
+
+113
+00:31:40,147 --> 00:31:58,347
+Peki, şimdi sizlerden bir şey daha rica edeceğim. Çoğumuz pratik olarak sektörde çalışıyorsunuzdur. Ve anınızda aktif olarak yazılım geliştirme ekiplerinde görev yapan arkadaşlarımız varız. Veya şu anda yapmıyorsanız ne? Yakın geçmişte yapmışsınız.
+
+114
+00:32:08,147 --> 00:32:17,187
+Örneği tartıştıktan sonra siz de bu kalıbı bilerek veya bilmeyerek kullandıysanız lütfen anlatın.
+
+115
+00:32:17,523 --> 00:32:45,503
+Değil mi? İşte hocam şöyle bir projede şu kalıbın yaptığına benzer bir şey yapmıştım. Bize şunu kazandırdı, şunu kaybettirdi değil mesela. Veyahut da ben bu kalıptan haberdardım, şu projemde kullandım, şöyle iyi oldu, şöyle rezavantaj oluştuğundu gibi deneyimlerinizi benimle ve sınıfla paylaşırsanız daha etkileşimli, daha zevkli bir ders geçmiş olur arkadaşlar. Onu da sizlerden.
+
+116
+00:32:45,523 --> 00:33:04,223
+Önemli rica ediyorum. Birbirimize katkınız, yarınız olmuş olsun. Öte yandan ayrıca genel olarak anlatırken herhangi bir şeyi anlamadığınız veyahut da kafanıza yatmayan veyahut da alternatif çözüm yolları üstünde tartışmak için lütfen söz alın, buyurun.
+
+117
+00:33:04,723 --> 00:33:13,344
+Hocam deyin, dikkatimi çekin. Ondan sonra üstünde konuşalım, tartışalım. Ben bundan memnun olurum. Ders böylece daha zenginleşmiş.
+
+118
+00:33:13,523 --> 00:33:20,844
+Daha etkileşimli, daha dinamik bir şekilde yürümüş olur. Bunları sizden hassasiyette rica ediyorum.
+
+119
+00:33:22,003 --> 00:33:28,023
+Peki abi, şimdi dersin genel tanıtım bu. O zaman yavaş yavaş başlayalım.
+
+120
+00:33:28,468 --> 00:33:56,407
+Öncelikle biraz yazılım kalitesi ve tasarım konuları üstünde bir konuşalım. Bu arada şu ekranları kullandığım pencereler falan onların kritik noktalarını kapatıyor. O yüzden bir şeyleri bir taraflara taşıyorum ediyorum. Belki siz o anda onları görmüyorsunuz ama yaptığım hareketler onlara yönelik.
+
+121
+00:33:56,468 --> 00:33:58,907
+Peki şimdi bakalım bakalım.
+
+122
+00:34:00,647 --> 00:34:02,208
+Evet, sonunda da geçelim.
+
+123
+00:34:03,380 --> 00:34:22,440
+Şimdi genel bir giriş yapalım Nesneye Dayalı Tasarım ve Modelleme'yi. Şimdi hedefimiz nihayetinde daha iyi, daha kaliteli bir yazılım ortaya çıkarmak. Bu konularla üzerinde uğraşmamızın sebebi buna. Peki nedir iyi bir tasarım veya neye kaliteli bir yazılım deriz?
+
+124
+00:34:27,507 --> 00:34:45,847
+Yazım kalitesinin çok farklı farklı birleşenleri var. İso'nun ve farklı farklı grupların bu konuda farklı farklı tanımları da var. Başlı başlı bir konu. Ama biraz daha dar ve tasarım kalıplarına odaklı konuşmak istersek şöyle bir tanımımız var. İyi bir tasarım için.
+
+125
+00:34:46,675 --> 00:34:59,655
+Üstünde çalıştığımız problem hangi düzeyde parçalara ayrılıyorsa bizim tasarımımız da aynı düzeyde parçalanabildiği takdirde o zaman iyi bir tasarım yapmışız demektir diyebiliriz.
+
+126
+00:35:00,275 --> 00:35:03,195
+Şimdi bu güzel bir tanım. Seviyorum bu tanımı.
+
+127
+00:35:03,668 --> 00:35:14,568
+Fakat burada bir belirsizlik var. Bu düzeyi nasıl ölçeceğiz? Neye göre ölçeceğiz? Nasıl tanımlayacağız?
+
+128
+00:35:15,380 --> 00:35:23,000
+Bir bu var, bu tanımın kendi içerisinde. İkincisi, biraz daha geniş olarak kalite kavramını nasıl ayırt edeceğiz?
+
+129
+00:35:23,500 --> 00:35:28,779
+Onun da farklı farklı gruplar ve kullanım, farklı kategoriler ve menleri olduğundan bahsetmiştik.
+
+130
+00:35:28,779 --> 00:35:37,720
+Ben şu gruplamayı çok seviyorum. Kalite ölçülerini, iç kalite ölçüleri ve dış kalite ölçüleri şeklinde gruplamayı seviyorum.
+
+131
+00:35:38,820 --> 00:35:42,779
+Basit ve akıda kalıcı bir gruplama var çünkü bu. Dış kalite özellikleri.
+
+132
+00:35:43,380 --> 00:36:06,140
+Yazılımın kullanıcısına yönelik, iç kalite özellikleri ise yazılımı geliştirene yönelik olan ölçütlerdir. Örneğin, bir yazılımın doğru çalışması, sistem kaynaklığının etkin kullanarak çalışması, kullanımın kolay olması gibi kalite ölçütleri kullanıcının işini kolaylaştıracak ölçütlerdir.
+
+133
+00:36:11,123 --> 00:36:27,523
+Yeniden kullanılabilirlik, yazdığınız bir kısım konum başka projelerinde de yeniden kullanılarak yazılım geliştirme çabasını ve masrafını azaltması ise yazılımı geliştirenlerin işini, hayatını kolaylaştıracaktır. O yüzden bir iç kalite özelliğidir.
+
+134
+00:36:39,123 --> 00:36:44,123
+Yeniden kullanılabilirliğini getirdiği kazanımın, karın...
+
+135
+00:36:45,012 --> 00:37:07,012
+En fazla %30'a kadar çıktı. Sağ çalışmalarıyla görülmüş. Ben bu aranın daha yüksek olmasını beklerdim. İlk başta %30'a küçük bir rakam olarak geldi. Çalışmalar okuduğunda şu nedenle okudum. Anladım ki yeniden kullanılabilir bir kod yazmak için ekstra çaba harcıyorsunuz.
+
+136
+00:37:08,467 --> 00:37:32,307
+Olası daha fazla değişikliğe karşı dayanıklı kodu yazıyorsunuz. Sadece şu an elinizdeki gereksinleri değil, kısa ve orta vadede de olabilecek değişiklikleri düşünerekten kodu yazıyorsunuz. Bu yüzden daha fazla zaman harcıyorsunuz, daha fazla emek harcıyorsunuz, sınamasını daha ayrıntılı yapıyorsunuz vs. vs. Bütün bunlar ek çaba ve ek masraf demek olduğunda yeniden kullanılabilir.
+
+137
+00:37:36,467 --> 00:38:02,188
+Bulunduğunda en fazla %30 gibi bir kar getirdiği görülmüştür. Ama %30 da tabii ki hiç yabana atılacak bir mali bedel değil aslında. Hele ki yazılmayanların işlerinin zor olduğu dönemlerde en ufak kazanç bile makbule geçiyor yani nihayetinde. O yüzden çok da abartmayalım ama yine de işe yarar olduğunu bilelim yine.
+
+138
+00:38:02,835 --> 00:38:15,635
+Ki tasarım kalıpları da zaten özellikle bakım aşamasında yapılan işlemleri kolaylaştırmak suretiyle bize yarar sağlamaktadır.
+
+139
+00:38:15,956 --> 00:38:21,295
+Tabii ki bir tasarım kalıbını kurmak ve uygulamak biraz daha fazla çaba gerektirecek.
+
+140
+00:38:21,295 --> 00:38:26,123
+Fakat bu çaba kendisini bakım aşamasında misliyle...
+
+141
+00:38:26,132 --> 00:38:36,431
+Amorti edecektir ve daha kar ettirecektir aslında. Bu nedenle tasarım kalıplarını çalışacağız. İlgi alanlarının ayrılması.
+
+142
+00:38:36,431 --> 00:38:43,252
+Şimdi bu biraz kaliteli, iyi tasarımın tanımıyla da ilgili.
+
+143
+00:38:45,523 --> 00:38:58,943
+Problemimizin ilgi alanları ne düzeyde ayrılabiliyorsa, tasarımımız da aynı düzeyde sorumlulukları içeren sınıflara ayrılmış olması iç kalite özelliklerinin içerisindedir.
+
+144
+00:38:59,563 --> 00:39:07,764
+Esneklik yani yaptığımız tasarımı benzer başka problemlere de uyarlayabilmenin kolay olmasını anlatmaktadır.
+
+145
+00:39:07,764 --> 00:39:13,523
+Taşınabilirlik, belirli bir platform için yazdığımız yazılımın başka platformda da çalışabilmesi...
+
+146
+00:39:13,523 --> 00:39:41,523
+Bu örneğe bakalım.
+
+147
+00:39:41,523 --> 00:39:59,823
+Doğrudan derlenen diye yorumlanarak bir sanal makine üstünde çalıştırılan diler olmasının o şekilde tasarlanmasının en önemli nedenini cross platform, farklı platformlarda uyarlanabilme kolaylığı olduğunu düşünüyorum.
+
+148
+00:40:00,823 --> 00:40:01,683
+Önemli bir etken.
+
+149
+00:40:02,963 --> 00:40:30,683
+Sonra okunabilirik ve anlaşılabilirik. Şimdi bakım çalışmaların hayatımızın bir gerçeği ve bir yazılım projesinde harcadığımız çabanın rahat yüzde ellisi bakım aşamasında harcanılıyor aslında. Bu yüzden bakımı kolaylaştıran her şey işte dediğim gibi bize yararlı olacak. Okuyup anlayamadığımız konu da zaten bakım çalışmalarının üstünde rahat yapamayız. İşimizi zorlaştırmış. O yüzden okunabilirik ve anlaşılabilirik çok önemli.
+
+150
+00:40:30,963 --> 00:40:58,963
+Hatta kod sınav konusuna girdiğimizde bir üye alanın veya bir metodun adının açık ve net şekilde adlandırılmasını bile bir refactoring eğilimi olarak değerlendireceğiz. Çünkü anlaşılabilirliği önemli oranda arttırıyor olacak. Sonra işte sınanabilirlik. İllaki bir hatalar çıkacak kodumuzda. Önemli olan acaba biz yazdığımız kodun ne kadar...
+
+151
+00:40:58,963 --> 00:41:07,963
+Kolay sınayabiliyoruz. Yazdığımız kodu kolay sınayamıyorsak veya aklımıza takılan bir sorunun sınaması için...
+
+152
+00:41:08,831 --> 00:41:26,931
+Birden fazla noktaya bakmamız gerekiyorsa o zaman biz herhalde bunu doğru tasarlayamadık ki sınamaya çalıştığımızda da çok farklı farklı yerlerden farklı farklı şeyleri bir araya getirmeye çalışıyoruz. Galiba biz sorumlulukları da doğru atayamadık diye bir soru işareti olmalıdır zaten.
+
+153
+00:41:36,831 --> 00:41:42,251
+O zaman problem var demektir diyor. Arkadaşlar, iki dakika mola rica ediyorum.
+
+154
+00:42:18,164 --> 00:42:41,144
+Ne diyorduk? Sığına bilirki tam bahsetmiştik. Bakım kolaylığı zaten aslında bu da benzer noktaya getirecek bir tartışmadır bizi. Ve çok daha fazlasını konuyla ilgilenen arkadaşlar sayabilir. Bizim amacımız iç kaliteli özelliklerini daha iyi taşımak olacak.
+
+155
+00:42:44,083 --> 00:43:00,083
+Siz de zaten birebir şahit oluyorsunuz ki yazılım projeleri önemli olan da başarısızlığa. Şimdi burada başarının tanımını iyi yapmak lazım. Başarının en katı tanımı şu. Bir yazılım projesini...
+
+156
+00:43:00,851 --> 00:43:27,532
+Bir, belirlenen işlevleri, belirlenen gereksinimleri. İki, belirlenen süre içerisinde. Üç, belirlenen bütçe içerisinde karşılayacak şekilde tamamlanmasıdır. Yani bir yazım projesi ısırda anlaşılan gereksinimler belgesiyle belgelendirilen tüm gereksinimleri karşılamalı.
+
+157
+00:43:28,019 --> 00:43:44,440
+Bunu önceden belirlenen süre içerisinde proje tamamlanarak yapılmış olmalı ve önceden belirlenen bütçe dahilinde kalarak proje tamamlanmış olmalı. Bu üç sac ayağı üzerine oturuyor bir projenin başarısı.
+
+158
+00:43:45,972 --> 00:43:59,832
+Gerek uluslararası, gerek ulusal çalışmalarla bu başarı oranının yaklaşık yüzde elli olduğu görünüyor. Yani iki projeden bir başarısızlığa uğruyor diyebilirim.
+
+159
+00:43:59,832 --> 00:44:13,832
+Fakat bu başarı tanımını biraz daha esnekleştirdiğimizde, yani bu üç olgudan birisi de geri kalınsa, diğer ikisinin de başarılı olursa proje başarılıdır diye tanımıyoruz.
+
+160
+00:44:13,972 --> 00:44:40,112
+Yani örneğin, gereksinlikle hepsi karşılandı ve planlanan zaman içerisinde yapıldı ama bütçe aşıldı. Yenide projeyi kısmi başarılı sayabiliriz mesela. Veya diğer iki bileşen tamam, ötekisinde sarkma oldu. Bugün de kısmi başarılı olarak diye niselendirdiğimiz projeler ise daha yüksek başarı olanları görüyoruz.
+
+161
+00:44:41,972 --> 00:44:52,472
+Bu konuda biraz ders notlarından yaparak etkile göstermek istiyorum size.
+
+162
+00:44:52,472 --> 00:44:56,052
+Onu şuradan göstereceğim.
+
+163
+00:45:01,619 --> 00:45:03,699
+Şuradan göstereceğiz.
+
+164
+00:45:05,480 --> 00:45:06,840
+Şu olsa gerek.
+
+165
+00:45:12,211 --> 00:45:12,751
+Evet.
+
+166
+00:45:14,228 --> 00:45:41,528
+İki bu önçü yapılmış çalışma ama yani 60'larda, 70'lerde de aynı şeylerden bahsediyoruz. 80'de de bahsediyoruz, 90'da da bahsediyoruz. İki bu önçü de bahsediyoruz. Şu anda da durum böyle. Keza ben de hem Yıldız Teknokent, Yıldız Teknopark'ın hakem havuzu içerisindeyim. Hem doktorumun İTÜ'den olması nedeniyle İTÜ Arı Teknokent proje hakem havuzu içerisindeyim. Hem TDP proje hakem havuzu içerisindeyim.
+
+167
+00:45:42,228 --> 00:45:44,847
+Sanayi Bakanlığı Hakem Havuzu içerisine de dahil oldum.
+
+168
+00:45:45,228 --> 00:45:50,228
+Lisansım İstanbul Üniversitesi'nden çok seyrekli de olsa oranın teknoparkından da...
+
+169
+00:45:50,579 --> 00:46:16,259
+Hakemlik verebilir gelmekte. Yani epey bir sayıda projeyi izlemişliğim ya da değerlendirmişliğim var. Sık sık süre uzatma başvurdu geliyor önüme. Kıbul ediyoruz hepsini. Ama yani bu başarının üç ayağı olan gereksinler, zaman ve bütçe açısında zaman da illaki esneme gerekebiliyor birçok başarı.
+
+170
+00:46:18,579 --> 00:46:33,619
+Dr. Dubs'ın 2013 araştırmasında projelerinizin yüzde kaç oranda başarılı oluyor diye şekilde anket çalışması yapılmış.
+
+171
+00:46:34,132 --> 00:46:55,912
+Ve tabii bu projelerin hangi yazım geliştirme modeliyle yürütüldüğü de notu alınmış. Geleneksel yani şelale modeliyle, ardışıl şelale modeliyle, waterfall modeliyle yapılan projelerin katı başarı tanımına göre başarısı %50 oranında. İki projeden biri başarısız oluyor.
+
+172
+00:46:56,239 --> 00:47:03,739
+Yani tekrar ediyorum, proje hayata geçmiş olabilir ama bütçeyi yaşamışsa başarısızdır şeklinde sıkı tanımlar.
+
+173
+00:47:06,599 --> 00:47:18,959
+Bu esnetilmiş başarı dersek, şartlı başarıya da zorlanılmış şeklinde söylüyorlar. O ölçükte baktığımızda o zaman biraz daha iyi. Yüzde seksen beşleri falan bulabiliyor.
+
+174
+00:47:24,239 --> 00:47:49,099
+O anda aklımıza gelen çözümle ilerlediğimiz aslında bir yöntem yok ama kişilerin çalışma alışkanlıkları ve düzenleri var. Ona göre gidiliyor. O modelin başarısı geleneksel modelle hemen hemen aynı. Zorlanılmış başarıda sanki bir yüzde beş kadar bir iyilişleşme bile var sanki. Ne bileyim işte böyle bir şey çıkmış.
+
+175
+00:47:52,239 --> 00:48:11,219
+Yüzde altmış beş lira falan kadar çıkmış. Yani bu önemli bir avantaj bence. Diğer çeşitli iteratif yazım geliştirme süreçleri de benzer başarıyı sağlıyor. Linsoftware'de o konuda benim pek bir bilgim yok. Biraz daha iyi bir sonuç ortaya çıkarmış.
+
+176
+00:48:11,219 --> 00:48:20,239
+Şu yüzde yetmiş miymiş? Evet, yetmişten biraz daha farklı. Üstü yerdinci rakam söylemesi. Mesela şu neymiş? Başarısız yüzde on sekiz. Zorlanılmış otuz iki.
+
+177
+00:48:20,239 --> 00:48:24,719
+Ama bunu 49'un üstüne koyuyorsunuz.
+
+178
+00:48:24,779 --> 00:48:26,399
+49, 32 daha 81.
+
+179
+00:48:29,399 --> 00:48:31,099
+Durum bu arkadaşlar.
+
+180
+00:48:31,603 --> 00:48:47,943
+Bir de ülkemizdeki durumuna bakalım. Madem çevik yazım gelişme süreçleriyle önemli bir başarı artışı sağlanabiliyor, 2014'te sunulan bir çalışmada ise, ulusal bir çalışmada, çeşitli yazım evlerini sormuşlar.
+
+181
+00:48:55,443 --> 00:49:13,344
+Anlam şu, şuradaki sayılar 2, 4, 5 gibi bu yanıt veren sayısıdır. Yüzde ise o toplamda o sayının oranıdır. Şöyle bakalım. Eğer biz başarı eşiğimize…
+
+182
+00:49:13,344 --> 00:49:25,364
+%50 koyarsak eğer, %50, o zaman bu bizi %50'ye götürecek sayıları topladığımızda %20, %32.
+
+183
+00:49:26,708 --> 00:49:45,128
+Bir dakika, öyle dememeliydik. Ortana baktığımızda da zaten şuradaki şekil bize söylüyor. Yüzde yetmiş beş falan biz başarıya biraz zor alsak ulaşabiliyoruz.
+
+184
+00:49:45,128 --> 00:49:54,708
+Yani nihayetinde günün sonunda işimiz zor bir iş. Daha hala belki çok fazla yarame kaydedemedik ama ben bunun nedeni...
+
+185
+00:49:54,708 --> 00:49:56,907
+Şu olduğunu düşünüyorum.
+
+186
+00:49:58,688 --> 00:49:59,708
+Bilgi sistemlerinde...
+
+187
+00:50:00,000 --> 00:50:18,599
+Ve hep sürekli daha yükseğe çekiliyor çıta ister istemez. Kullanıcılar bilgi sistemlerinin işgahlerini kolaylaştırdığı, verimleştirdiğini gördükçe, etkide daha büyük problemlerin çözümü için yazılım projeleri içerisine giriyorlar.
+
+188
+00:50:19,599 --> 00:50:26,840
+Hedef çıta yükseldikçe bizim de daha fazla çalışmamız gerekiyor. O yüzden geride kalma durumu olabilir.
+
+189
+00:50:28,000 --> 00:50:35,219
+Bunu düşünmezsek ya 1960'lardan beri yazılımlarınızı yazılımlarınızı boşuna mı çaba sarf ediyoruz?
+
+190
+00:50:35,599 --> 00:50:40,460
+Kırtlar nasıl olsa olsun diye düşünülebilirim ama bu yanlış bir düşünceye şekli olacak.
+
+191
+00:50:40,800 --> 00:50:44,059
+İlerleme kaydediyoruz ama problemlerimiz de sürekli ilerliyor.
+
+192
+00:50:44,239 --> 00:50:48,199
+O yüzden çalışmaya, çabalamaya devam edelim demek istiyorum.
+
+193
+00:50:50,228 --> 00:51:06,728
+Peki. Şimdi bir dakika neredeyse şurada yazılım projelerinin önemli olan da başarısızlık uğrumasından bahsetmiştim. İşte %50 tarz başarı %80'lere falan çıkabiliyor esnetilmiş başarı.
+
+194
+00:51:18,228 --> 00:51:46,228
+Bu örneğe bakalım.
+
+195
+00:51:46,228 --> 00:52:10,807
+Daha işin başında adımlarımızı sağlam atmamız gerekiyor. Bunun için de tasarım kalıpları gibi bizi daha iyiye götürecek çözümleri bilmek ve kod kusurları gibi bize ileride çeşitli bakım problemleri çıkaracak hatalara daha erkenden düşmemek şeklinde çalışmak bize önemli yara sağlayacaktır.
+
+196
+00:52:12,115 --> 00:52:21,895
+Ve bir on dakikalarımızı verdikten sonra en temel iki ilkeden bahsedeceğiz. Bizi daha iyi bir tasarıma götürecek olan.
+
+197
+00:52:21,895 --> 00:52:36,835
+Şimdi saat on üç elli beş bir on dakika ara vermek demek oluyor ki. Şöyle bir on dakika ara verirsek. On üç elli beş ile on dört sıfır beş arasında.
+
+198
+00:52:38,643 --> 00:52:39,683
+10 dakika ara.
+
+199
+01:05:19,923 --> 01:05:29,923
+Evet arkadaşlar, kaldığımız yerden başlayabiliriz. Özür dilerim. İki dakika geçecektim. Beş geçeyi biraz esnetmiş oldum. Özür dilerim. Kaldığımız yerden devam edelim.
+
+200
+01:05:31,244 --> 01:05:39,384
+Ki o da en önemli iki iç kalite ölçüsünden bağlaşım ve uyum.
+
+201
+01:05:39,731 --> 01:06:07,731
+Bağlaşım, coupling, uyum, cohesion, bağlaşımın düşük, uyumun ise yüksek olması istenmektedir. Low coupling ve high cohesion bizim amacımız. Bir de azıcık bahsetmiş olduğum ilgi alanların ayrılması ülkesi de var ki aslında bu ilk iki ilkiye uyulduğunda o da kendiliğinden özellikle uyuma daha yakın olmak üzere onlar için açıklanabilen bir şey. O yüzden bağlaşım ve uyumu...
+
+202
+01:06:07,731 --> 01:06:15,152
+Bir inceleyelim. Bağlaşım demek bir parçanın diğer parçalara bağımlılık oranı.
+
+203
+01:06:15,795 --> 01:06:42,855
+Şimdi gerçi bu şekilde bir olgunun tanımını verirken o tanımın içerisinde olgunun kendisinin ya da yakın bir varyasyonun şeklini kullanması biraz sonsuz döngü gibi oluyor. Veya yumurta tanımlık döngüsü gibi oluyor. O yüzden bağımlılık demeyelim de isterseniz şöyle diyebilirsiniz. İlişkide olma oranı. Bir parçanın sistemdeki diğer parçalarla ilişkide olma oranı diyelim.
+
+204
+01:06:43,284 --> 01:06:48,584
+İlişik olma oranı da diyebiliriz. Aynı katıya çıkıyor aslında.
+
+205
+01:06:49,940 --> 01:07:06,720
+Nesneye'lik bir tasarımdan bahsettiğimiz ise bunu en somut olarak sınıf düzeyinde parçalar üstünden düşünürüz. Biz de örneklerimizi o düzeyde vereceğiz ama isterseniz bu bağlaşımı art sistem düzeyinde veya paket düzeyinde de tanımlayabilirsiniz.
+
+206
+01:07:17,940 --> 01:07:32,420
+Çalışma prensiplerinden haber eder ise veya özelleşme-genelleşme ilişkisi içerisinde ise, ki bu kalıtım demektir. Kalıtım ilişkisi içerisinde ise bir sınıf diğerine bağımlıdır demiş oluyoruz.
+
+207
+01:07:45,940 --> 01:08:08,720
+Oklar yönlüdür. Tek yönü ya da çift yönlü ilişkiler var. İki sınıf arasında herhangi bir ok varsa bu bir bağlaşım demektir. Bu bir bağımlılık demektir. Burada önemli olan ilişkinin niteliği, niceliği değil. İlişkide olan, olunan diğer sınıfların sayısı arttıkça bağlaşım oranı da artmaktır.
+
+208
+01:08:09,364 --> 01:08:15,884
+Düşük bağlaşım ise bize yeniden kullanılabilirliği ilişkilerde bulunmaktadır.
+
+209
+01:08:15,884 --> 01:08:28,043
+Ayrıca bir sınıfta yaptığımız değişikliğin diğer sınıflarda daha az yan etki çıkarma olasılığı getirmesidir.
+
+210
+01:08:28,203 --> 01:08:32,144
+Bu yüzden bağlaşımın düşük olması istenmektedir.
+
+211
+01:08:32,448 --> 01:08:52,788
+Şimdi burada şöyle bir örnek yapalım. Evet, önce bağlaşım dedik. Bağlaşımın bir örneğini yapalım. Ben şimdi kendim bir YMAS tüm şaması çizarken, Why the two YMAR diye bir gereç var. Onu kullanmayı seviyorum. Hızlıca YMAS şamaları çizebiliyorsunuz.
+
+212
+01:08:53,140 --> 01:09:03,680
+Bunun içerisinde Yuskes Diagramlar, Class Diagramlar, Object Diagramlar, State Diagramlar, Activities ve Secures Diagramlar kolaylıkla çizebiliyorsunuz.
+
+213
+01:09:03,680 --> 01:09:12,920
+Class Diagramı çekeyim şimdi. Aynı probleme yönelik iki farklı tasarım yapmak istiyorum.
+
+214
+01:09:15,412 --> 01:09:21,891
+Paletten bileşiğini seçip tıkladıkça bileşiğini koyuyorsunuz çizim alanınıza.
+
+215
+01:09:22,632 --> 01:09:30,192
+Şimdi sahiplik ilişkisi, Asseturation kurayım her ikisinde de. Şöyle bir ilişki olsun.
+
+216
+01:09:31,604 --> 01:09:38,484
+Herhangi bir birleşini seçmek için size şuradan paletten selek it atasıyorum. Ki bu da aslında basit bir jar dosyası.
+
+217
+01:09:38,484 --> 01:09:52,003
+Şimdi kağıt, yani yüzde sınav yapacağız. O yüzden sizin bu ders kapsamında şama çizmeniz, yani bilgisayarda şama çizmeniz gerekmeyecek ama merak eden arkadaşlar için şey etmiş olayım, söylemiş olayım.
+
+218
+01:09:52,503 --> 01:09:59,604
+Bu aslında bir küçük bir jar dosyası. Kurulduğum yere baktığınızda görüyorsunuz jar dosyası.
+
+219
+01:10:00,083 --> 01:10:22,943
+İndirenebilirsiniz. Aslında ikonu bildirin canım klasik kahveç değil. Fakat ben bir, yani valid menekşe yemek, küçük bir menekşe resmini ikon dosyası haline getirip buna Windows'dan girip, daha doğrusu zaten şuradan işte, simge değiştirip şu ikonu atamış durumdayım sevdiğim için bu programı.
+
+220
+01:10:23,824 --> 01:10:28,083
+Çalışması için, yani özel bir kurulum gerektirmiyor. JDK kuruluysa.
+
+221
+01:10:28,083 --> 01:10:34,743
+Hatta daha doğrusu JRE, Javaranta Menvah, Kul Rizimler, Tıklarımızda çalışıyor yani çok basitçe.
+
+222
+01:10:34,743 --> 01:10:42,603
+Ve işlemaları kaydedip daha sonra resim dosyası olarak da eksport edebiliyorsunuz.
+
+223
+01:10:42,644 --> 01:10:48,243
+Böylece İskinc'e koyabiliyorsunuz. Küçük ama kullanışlı bir program.
+
+224
+01:10:49,163 --> 01:10:55,083
+Şimdi bir A sınıfım olsun. Bir B sınıfım olsun.
+
+225
+01:10:56,307 --> 01:10:59,488
+Ve de bir C sınıfı olsun.
+
+226
+01:11:00,548 --> 01:11:06,568
+Şimdi şu düz çizgi ve ucu açık ok, bilmeyenler için söyleyeyim, sahiplik ilişkisi demektir.
+
+227
+01:11:06,568 --> 01:11:10,468
+Bu da demek oluyor ki, mesela nicelikleri de yazalım isterseniz.
+
+228
+01:11:10,788 --> 01:11:12,028
+Birebir diyelim mesela.
+
+229
+01:11:12,807 --> 01:11:17,827
+A sınıfından bir nesne, B sınıfından bir nesneye bağımlıdır.
+
+230
+01:11:18,148 --> 01:11:21,888
+Veya başka bir değişle o türden bir üye alana sahiptir.
+
+231
+01:11:22,131 --> 01:11:36,572
+KB adlı B türünden private, eksik private anlamına gelmektedir. Bir üyeye sahip. Yani ben şu oku çizdiğimde üye alan olarak A sınıfında B türünden bir tane üye alan olduğunu anlamış oluruz.
+
+232
+01:11:40,948 --> 01:11:58,807
+Ama burada bağlaşım olarak baktığımızda A'dan B'ye ok olduğu için bir A nesnesi ister bir B nesnesiyle ilişkili olsun ya da diyelim ki bir A nesnesi gerekirse en adet B nesnesiyle ilişkili olsun.
+
+233
+01:11:58,807 --> 01:12:03,988
+O çok da yıldız ile gösterilir yönelde. Sıfır ya da daha fazla.
+
+234
+01:12:04,500 --> 01:12:20,239
+Bu ilişkinin bir alt sınırı verilmesi gerekiyorsa, en az bir, yani bir ile en arasında diyelim ki, o zaman iki noktaya yan yana kullanılır. Sol tarafa niceliğin alt sınırı, sağ tarafa da niceliğin üst sınırı yazılır.
+
+235
+01:12:20,239 --> 01:12:32,239
+Burada A ile B arasında birebir sahiplik ilişkisi varken, A'da B türünden bir üye alan varken, burada A sınıfında B türünden birden fazla üye alan var demektir. Bu da demek oluyor ki ya A sınıfı...
+
+236
+01:12:32,500 --> 01:12:43,139
+B türünden bir dizi vardır. Veyahut da belki bir jenerik liste falan gibi bir söz konusudur.
+
+237
+01:12:46,195 --> 01:13:04,755
+B gibi böyle bir şey söz konusudur. Ama yani bu çoklu sahiplik ilişkisi şeklinde ben Türkçe söylemeyi tarz ediyorum. Böyle bir durum var. Ama burada önemli olan her iki durumda da yani sol taraftaki sistemde değil, buna bir numara da sistemliyim.
+
+238
+01:13:07,935 --> 01:13:34,475
+Öteki yerine iki numaralı sistem, iki numaraları tasarımımız diyeyim. Bir numaralı tasarımda da, iki numaralı tasarımda da A ile B'nin arasındaki bağlaşım aynıdır. İster B tarafında yıldız olsun, ister bir olsun fark etmez. A'dan B'ye oku var mı? Var. O zaman bağlaşım var şeklinde saymalıyız, ifade etmeliyiz.
+
+239
+01:13:34,868 --> 01:13:56,828
+Peki, şimdi aksini yazmadığım takdirde de o klasın her iki tarafında da bir demektedir diyelim. Şimdi olası farklılıkları devre dışı bırakmak için şeyleri yazmıyorum, nicelikleri yazmıyorum. Hepsini birebir kabul edelim diyelim. Şunları da sileyim.
+
+240
+01:14:01,876 --> 01:14:03,695
+Orada şu C sınıfımız olsun.
+
+241
+01:14:05,756 --> 01:14:22,476
+Şimdi, bağlaşım düşüklüğü açısından baktığımızda, acaba aynı amaca hizmet eden iki tasarımda soldaki bir numaralı tasarımımı tercih etmeliyiz, sağdaki iki numaralı tasarımımı tercih etmeliyiz.
+
+242
+01:14:22,476 --> 01:14:25,275
+Size soruyorum. Biraz bir düşünün bakalım.
+
+243
+01:14:29,235 --> 01:14:30,896
+İki numaralı tasarım hocam.
+
+244
+01:14:31,595 --> 01:14:34,496
+Peki, neden iki numara? Söyleyin lütfen.
+
+245
+01:14:36,115 --> 01:14:50,456
+Çünkü bir numarada A-B arasında bir ilişki var, C bağımlılığı var. Ama iki numarada B ile C'nin bir bağımlılığı yok. O açıdan düşününce iki daha mantıklı gibi.
+
+246
+01:14:50,927 --> 01:14:58,068
+Tamam, mantıklı. Bir numaralı sistemin avantajı varsa ondan bahsetmek isteyen arkadaşım var mıdır?
+
+247
+01:15:05,300 --> 01:15:20,480
+Şimdi bakalım bir oylama yapabilecek miyim? Ona bakmak istiyorum. Şu tel çubuğu şöyle alayım. Bakalım çalışıyorum. Bir ara çalışmıyordu. İnşallah düzeltmişlerdi.
+
+248
+01:15:24,756 --> 01:15:40,356
+Bu site şöyle iyiydi. Çok basit bir anket hazırlıyordunuz birkaç seçenekli. Yöneri paylaşıyordunuz. Hemen notlamayı alabiliyordum. Böyle bir anket yapayım dedim. Birinci sistem, ikinci sistem.
+
+249
+01:15:42,515 --> 01:16:03,875
+Stoppers'ın olmadığı. Böyle basit bir şey için Google anketlerde anket tasarlamakta bilmiyorum ne kadar verimli olduğunu diye düşünüyorum. Böyle bu kadar lightweight bir çözüm bilen arkadaşım varsa söylesin, chatten yazsın. Daha sonra bu şey istedi onu kullanmaya başlarız.
+
+250
+01:16:08,916 --> 01:16:33,076
+Nesneye Dayalı Tasarımcı inşallah. Peki. Evet, o zaman şey söyleyeyim, yapalım. Gerçi şöyle bir şey de yapılabiliyor. Mesela bütün katılımcıları şöyle bir ekranda görüp el kaldırma usulü yapabilirim ama onu da saymak zor oluyor. Neyse, peki. Şöyle yapalım o zaman.
+
+251
+01:16:33,652 --> 01:16:55,231
+Şu eski haline getireyim. Katılımcı pencere. Şöyle yapalım şimdi. Yavaş yavaş sayalım. Bir hesaplamalar yapmaya çalışalım şimdi. Birinci sıra bakalım. Şimdi A, B'ye bağlı. B de C'ye bağlı. Önce isterseniz bir tek tek bağlaşımlara bakalım. Bir numaralı sistemde.
+
+252
+01:16:56,083 --> 01:17:17,083
+A sınıfının bağlaşımı 1. A, B'ye bağımlı. Bu arada B'de A'ya bağımlı değil. B, C'ye bağımlı. Okun yönü önemli. Ok varsa ok aynı zamanda bağımlılık yönünü de göstermektedir. Çift yönde bağımlılık olsaydı sistem genelinde saydığımızda bunu 2 olarak sayacaktık.
+
+253
+01:17:17,083 --> 01:17:22,483
+Şimdi birinci sistemde A'nın bağlaşımı 1. B'ye bağlı çünkü.
+
+254
+01:17:22,868 --> 01:17:43,488
+Bağlaşım B, o da bir C'ye bağlı. Bağlaşım C ise sıfır. Sistemin geneline baktığımızda toplam bağlaşım, bir numaralı sistemin toplam bağlaşımı ise iki olarak gözüküyor.
+
+255
+01:17:49,684 --> 01:18:10,224
+Çekeyim biraz aşağıya. Bağlaşım A eşittir. A hem B'ye bağlı hem C'ye bağlı. O yüzden iki. Sonra bağlaşım B'ye bakıyorum. Sıfır hiçbir şeye bağlı değil. Bağlaşım C'ye bakıyorum. Sıfır. O da hiçbir şeye bağlı değil.
+
+256
+01:18:14,355 --> 01:18:17,715
+Toplam bağlaşım, iki numara bir sistem. O da iki.
+
+257
+01:18:21,011 --> 01:18:49,011
+Sitenin bütünü olarak değerlendirdiğimizde ikisinin de bağlaşımı iki çıkıyor. Yani birinin ötekini bariz olarak üstün kılanan bir şey bu aşamada gözükmüyor. Fakat modellemini biraz daha ayrıntılandıralım bakalım. Arkadaşım dedi ki iki numara sistemde B'nin ve C'nin başka bağlaşımları yok. Bu bir avantaj kazandırıyor albette. Çünkü B ve C'yi başka projelerimizde tekrar kullanmak istesek o sınıf kurdu.
+
+258
+01:18:49,011 --> 01:19:10,031
+O zaman başka, yani B'ye ihtiyacımız var. B'yi aldık. Yanında başka hiçbir şey almamıza gerek yok. Fakat bir numaralı tasarımda B'yi almamız gerektiğinde, tekrar kullanmamız gerektiğinde, ister istemez C'yi de tekrar kullanmak zorunda kalacağız. Onu da almamız gerekecek. Çünkü B, C olmadan kullanılamıyor. B, C'ye bağımlı.
+
+259
+01:19:17,011 --> 01:19:20,652
+Çıkarsak mı diye düşünüp şu aklıma geliyor.
+
+260
+01:19:20,652 --> 01:19:23,371
+Şimdi özellikle...
+
+261
+01:19:23,539 --> 01:19:50,440
+Neydi adam? John Nash'ti galiba, bir matematikçi. Sıfır toplamlı oyunlarda kazanma stratejisi üstünde çalışmaları var. Hollywood filmi de oynadı o filmin. A Beautiful Mind diye. Oynayan da şey, adı aklından gitti. Artist in Gladiator'da oynayan Oscar Ludlow adamdı işte. O oynuyordu. Seymiştim filmi, enteresan bir filmdi. A Beautiful Mind.
+
+262
+01:19:51,539 --> 01:20:00,000
+Neyse, konuyu çok dağıtmayalım. Bu çeşitli riskli durumlarda, örneğin dış işlem veya savaş stratejisinin...
+
+263
+01:20:00,000 --> 01:20:18,760
+Şirketlerin olası riskli kararlarında kullanılan bir yöntemdir. Olası bütün senaryoların sonuçlarına bakıp eğer hepsinde kaybediliyorsa en az kayıtla kapatacağımız senaryo nedir? Onu seçelim şeklinde hareket edilir.
+
+264
+01:20:18,760 --> 01:20:26,559
+Buna bakıldığında bir maksimum bağlaşım diye bir ölçütü düşünelim. Oradan bir değerlendirelim.
+
+265
+01:20:28,000 --> 01:20:42,319
+Sistemde maksimum bağlaşım bir numaralı sistem. Burada en yüksek bağlaşım değerine sahip olan sınıf nedir? A ve B eksinde bir. Yani burada maksimum bağlaşım birdir diyebiliriz bir numaralı sistem.
+
+266
+01:20:42,804 --> 01:21:08,764
+İki numaralı sisteme baktığımızda ise maksimum bağlaşım 2 diye baktığımızda ikinci sistemin orada en büyük rakam A'nın bağlaşımlı olarak görüyoruz. O da 2 çıktığı için sistem düzeyinde baktığımızda maksimum bağlaşım üzerinden baktığımızda bu sefer bir numaralı sistemi tercih etmemiz, bir numaralı tasarımı tercih etmemizin daha yararlı olabileceğini düşünüyoruz.
+
+267
+01:21:10,100 --> 01:21:24,420
+Fakat daha bitmedi, daha didik diyebiliriz bunu. Şimdi şu bir numara sistemde A B'ye bağlı, B de C'ye bağımlı. Bu demek değil mi? Aslında A da C'ye bağımlı, dolaylı olarak da. Evet.
+
+268
+01:21:25,363 --> 01:21:45,663
+A'yı kullanacaksak sadece B'yi almamız yetmiyor. B'yi alacağımız için C'yi almamız gerekmiyor. Bu yüzden A'yı alacaksak C'yi de almamız gerekmektedir. Şimdi dolaylı ilişkileri de hesaba katalım o zaman. O şekilde yaptığımızda A'nın bağlaşımı, ha bu arada dolaylı ilişkileri de bir mi sayacağız?
+
+269
+01:21:53,363 --> 01:22:07,183
+A'nın bir metodu içerisinde C türünden bir geçişi değişken nesne oluşturulup kullanılıyordu anlamına taşımaktadır. O yüzden aslında böyle keskinli çizgi koymam doğru değil. O yüzden bunun şimdi bir anlamını yazayım.
+
+270
+01:22:07,183 --> 01:22:21,363
+Yama'da herhangi bir şama bileşenini varsayılan anlamı dışında kullandığınızda o anlamı belirtmek için stereotayp işareti kullanırsınız. Stereotayp işaretini klavyeden veya şuradan doğrudan koymak için.
+
+271
+01:22:21,363 --> 01:22:36,003
+Yöntemi yok. O yüzden bir tane interfez koyup ondan sonra o interfeze girip adını şuradaki kelimeyi silip iki büyüktür. Ama bunlar her bir karakter. Bu şekilde elde etmiş oluyorum.
+
+272
+01:22:36,003 --> 01:22:42,943
+Buna düşünüyorum. Dolaylı ilişki diyeyim mesela. Şimdi şuradan kestim.
+
+273
+01:22:43,311 --> 01:22:50,432
+Anlatma şunu da sileyim. Çünkü sıkıştırdım. Ben dolaylı hata bağlaşım diyeyim. Dolaylı bağlaşım.
+
+274
+01:22:52,391 --> 01:22:56,871
+Dolaylı bağlaşım diyeyim.
+
+275
+01:22:57,811 --> 01:23:25,752
+A'dan C'de C'de dolaylı bağlaşım. Peki, dolaylı bağlaşımları nasıl hesaba katalım? Doğrudan olmadığı için 1 diye saymak belki haksızlık oldu ama en azından 0.5 yarım diye sayabiliriz. Yani A'dan C'ye dolaylı yani yarım bağlaşım var diyebiliriz. O şekilde hesapladığımda ise o zaman bir numarada sistemin bütün rakamları değişiyor. O yüzden yanına ikinci bir kutu olarak yazayım.
+
+276
+01:23:25,811 --> 01:23:44,431
+A'nın bağlaşımı 1,5 oluyor. B'nin bağlaşımı 1'de kalıyor. C'ninki 0. Toplam bağlaşım 2,5 oluyor. Maksimum bağlaşım da 1,5'a terfi etmiş oluyor. Fakat ikinci sistemde dolaylı hiçbir ilgi olmadığı için ölçüm sonuçlarını yenilememe gerek yok.
+
+277
+01:23:53,108 --> 01:24:14,847
+Toplam bağlaşım olarak iki numaralı sistem daha küçük olduğu için iki numara sistemi tercih edebilirim. Fakat maksimum bağlaşım olarak baktığımda hala yine maksimum bağlaşımın bir buçuk olarak ağda olaraktan o açıdan birinin yine avantajlı gözüktüğünü görüyoruz.
+
+278
+01:24:14,847 --> 01:24:19,128
+Yani günün sonunda aslında bu sorunun çok net bir yanıtı yok.
+
+279
+01:24:19,764 --> 01:24:46,764
+Her ikisi tercih edilebilir durumda. O yüzden bir diyenlerin de önemli savunma noktası var. İki diyenlerin de önemli savunma noktası var. Aynı ismi kullanacağız. Şöyle de diyebilirsiniz. Ya hocam Allah'a sayesinde A ne B ne C ne şunları bir ne öğrenelim derseniz haklısınız. En doğrusunu siz söylüyor oluyorsunuz. Şimdi bir problemi çözmek için yapıyoruz bu tasarımı. A ne B ne C ne.
+
+280
+01:24:47,764 --> 01:25:15,564
+Bu varlıkların aralarındaki ilişki problem alanında nasılsa tasarımda da biz onu seçmek durumundayız. Eğer bu varlıkların arasındaki ilişki bir numaralı sistemdeki gibiyse o zaman biz hangi avantaj için olursa olsun iki numaralı tasarımı yaptığımızda yanlış bir iş yapmış oluruz. Aslında belki en başta bunu söylemeliyiz. Ama bağlaşım, inceleme ve örnekleme açısından bu daha önemli tarzı.
+
+281
+01:25:15,764 --> 01:25:21,724
+Kola da aktım ki biraz daha heyecanlı bir şekilde bu bağlaşım konularını inceleyebilelim diye.
+
+282
+01:25:21,724 --> 01:25:29,724
+Evet, baktığımızda her dolaylı ilişkileri de hesaba kattığımız zaman o zaman...
+
+283
+01:25:30,644 --> 01:25:45,524
+Daha tartışmalı hale geliyor. Dolaylı ilişkileri sabah katmadığınızda birinin biraz daha avantajı var gibi gözüküyor. Ama ikinin de kendine has avantajlarını göze adı etmeksizim. Bunu söylemiş oluyorum.
+
+284
+01:25:47,004 --> 01:25:50,084
+Peki, yani şey bu bağlaşım ile ilgili.
+
+285
+01:25:50,836 --> 01:25:58,996
+Çünkü bir şeyi ölçmede, bir şeyi ölçerken, değer verilirken kullandığımız ölçütler, literatürde çok fazla sayılı ölçüt var.
+
+286
+01:25:59,396 --> 01:26:07,716
+Hepsinin bu düzeyde ince ayrıntıları var. O ayrıntılara göre, kullandığımız ölçüte göre ölçüm sonuçlarımız değişebilecektir.
+
+287
+01:26:07,716 --> 01:26:16,636
+Bunu da parantez içerisinde söylemiş olayım. Peki, bağlaşımı şimdi kapatalım. Burada da uyuma geçelim bakalım.
+
+288
+01:26:19,444 --> 01:26:20,428
+Teşekkürler.
+
+289
+01:26:26,612 --> 01:26:53,051
+Ha bu arada tabii şeyden, kalıtımdan da bahsetmedik. Bu arada kalıtım sahiplik ya da parça bütün gibi ilişkilerden daha ağır sıklet bir ilişki. Çünkü bir kere kalıtım ilişkisini kurduğunuzda bunu değiştiremezsiniz. Ama mesela şu örneğimizde, tasarımımızda diyelim. Belirli bir A nesnesine önce bir B nesnesi, belirli bir B nesnesi koymuşsunuzdur. İlişkiler demişsiniz, B1 nesnesi diyelim. Sonra onun yerine B2 nesnesini koyabilirsiniz mesela.
+
+290
+01:26:54,612 --> 01:27:05,612
+Herhangi iki sınıf arasında kalıtım ilişkisi kurduğumuz zaman, mesela kişi ve çalışan...
+
+291
+01:27:08,756 --> 01:27:19,736
+Bu aslında daha katı bir ilişkidir. Bir çalışan her zaman için bir kişidir. Çalışan olmayan bir kişi nesnesi diye bir durum söz konusu değildir.
+
+292
+01:27:19,736 --> 01:27:34,556
+Veya bir kişi çalışan için çalışan nesnesi oluşturduğunuzda, daha sonra bu kişi emekli olduğunda, onun çalışan nesnesi olmaktan kişi nesnesi olmaya rahat taşıyamazsınız.
+
+293
+01:27:36,756 --> 01:27:44,376
+Kişiyle ilgili kalıltına gelen bilgileri alıp o bilgileri kullanmaktan yeni bir kişi nesnesi aslında oluşturmanız gerekecektir.
+
+294
+01:27:44,376 --> 01:27:54,096
+Bu şekilde ek işler yapmanız gerekecek ve nesnenin kimliği, yani Universal Unique Identifier'ı farklı olacaktır.
+
+295
+01:27:54,176 --> 01:28:04,515
+Yani bir kişi, bir insan, çalışan bir insan, çalışanlığını bırakıp kişi olduğunda bellekte çalışan nesnesi olarak simgelendiği haliyle
+
+296
+01:28:04,756 --> 01:28:30,615
+Tamamen farklı, bambaşka bir nesne olacaktır. Emekli kişi olarak sistemde oluşturan diğer kişi nesnesi. Bu nedenle kalıltım ilişkisini daha ağır sıklet bir ilişki olarak düşünür. Bağlaşımda bunu iki veya bir buçuk gibi bir kat sayıyla da saymak isteyebilirsiniz. Bu da tabii ki bütün hesaplamaları da ona göre değiştirecektir. Onu da parantez içerisinde söylemiş olayım.
+
+297
+01:28:32,756 --> 01:28:53,756
+Bu çalış kullanımı da son derece olası olabilir. Zaten tasarım kalıtlarında hatalı çözüm örneklerine bakarken genelde bu sınıf kalıtım ilişkisini kurmayı yanlış yaptığımızda genelde işlerin sarpa sardığını görüyor olacağız. Neyse, çok fazla dallanmayalım. Bağlaşımla devam edelim.
+
+298
+01:28:57,171 --> 01:29:19,211
+Uyum ise bir parçanın sorumluluklarının birbiriyle uyumlu olma olası. Yine burada uyum içerisinde uyumluluktan bahsediyoruz. Şöyle de söyleyebilirim. Bir parçanın sorumluluklarının birbirlerine yakın alanlarda olması, birbirlerine zıt görevler içermiyor olması şeklinde de tanımlayabiliriz.
+
+299
+01:29:22,612 --> 01:29:41,372
+Yüksek uyum bize neler sağlar? Bir kere sınıfın anlaşılma kolaylığı artar. Bir sınıfın sorumlulukları birbirine yakın ise onu daha kolay anlayabiliriz. Sorumlulukları birbirinden farklı ise o zaman farklı farklı konularda bilgi birikimimiz olması gerekiyor ki o sınıfın ne yaptığını anlayabiliyelim.
+
+300
+01:29:42,612 --> 01:29:58,792
+Yüksek uyum da yeniden kullanılabilir ve arttırıyor. Yüksek uyum bir sınıf demek, belirli bir problemin çözümüne odaklanmış ve uzmanlaşmış bir sınıf demektir. Ve aynı ya da çok benzerli problemlerle karşılaştığımızda o sınıfı çok rahatlıkla yeni projemizde kullanabiliriz anlamına gelmektedir.
+
+301
+01:30:06,003 --> 01:30:33,944
+Değişen gereksinimler karşısında uyumu yüksek olan bir sınıfta küçük bir hedef oluşturacaktır. Daha az farklılıkta gereksinimleri karşıladığında, herhangi bir gereksinim değiştiğinde o gereksinimin bu sınıfın üstlendiği sorumluluklarla ilgili olma olasılığı da azalmaktadır. Bu nedenle bakım kolaylığı da atmaktadır ve değişiklikten etkilenme olasılığı düşmektedir diyor.
+
+302
+01:30:34,003 --> 01:30:59,884
+Ve genelde de düşük bağlaşımı getiren bir tasarım yüksek uyumu veya yüksek uyumlu bir tasarım düşük bağlaşımı getirmektedir. Yani birbirini olumlu olarak etkilemektedir verdiğimiz kararla. Tam tersi de söz konusu olabilir. Kötü olarak yüksek bağlaşımı getiren bir tasarım yanında düşük uyumu da yine olumsuz olarak beraberinde getirmektedir. Öbür yönden de okuyabiliriz.
+
+303
+01:31:02,003 --> 01:31:10,304
+Düşük uyumuna sahip bir tasarım yanında yine kötü olarak yüksek bağlaşımla getirmektedir. Genelde de durum böyledir.
+
+304
+01:31:10,688 --> 01:31:21,528
+Burada da şimdi peki uyumu nasıl ölçebiliriz? Bu konuda uyumu ölçmeyene biraz daha zor arkadaşlar.
+
+305
+01:31:33,279 --> 01:32:00,000
+2009 evet, doğru ilk zamanlar. Oya Hocam'la birlikte, onun bir yüksek istansör enerjisiyle birlikte bir uyum ölçütü üstünde, bir uyum ölçütü önerme ve değerlendirme üstünde bir çalışmamız olmuştu. Biraz oradan da biliyorum. Uyum ölçütleri biraz daha önerilmesi zor ölçütler oluyor. Bağlaşımı ölçen ölçütlere göre tasarlanması ve ölçülmesi daha zor ölçütler oluyor.
+
+306
+01:32:01,279 --> 01:32:18,600
+Temel olarak iki, şöyle düşünülebilir. İster bağlaşım ister uyum olsun. Az önce bağlaşımda sizinle birlikte yaptığımız gibi sınıf tasarım ya da kaynak kod üzerinden hesaplanabilecek, statik kod analizi üzerinden hesaplanabilecek ölçüler var.
+
+307
+01:32:27,796 --> 01:32:42,196
+O kaynak kod içerisindeki yorumların dil bilimsel açısından, lingüistik olarak inceleyen, doğal dil işleme ve makine öğrenmesi yöntemleri kullanan ölçütler de önerilmeye başlandı.
+
+308
+01:32:42,196 --> 01:32:53,876
+Uyum ile ilgili. Ama onların başarısının kod analizi ile gelen, önerilen ölçütlerin başarısından çok da farklı olmadığını görmüştük.
+
+309
+01:32:55,539 --> 01:33:07,079
+Hala durum aynı mı bilmiyorum. Bir iteratür taramamı, bir yenilemem lazım. Ama dengelerin çok değişiklerini sanmıyorum. Desef bir şekilde kulağıma gelirdi diye tahmin ediyorum.
+
+310
+01:33:07,079 --> 01:33:20,240
+Ama şöyle bir şeyler yapılabiliyor. Özellikle kod analizi açısından baktığımızda. Şimdi onu nasıl göstereyim? Bir sınıf işlemesi oluştum. Şöyle göstereyim.
+
+311
+01:33:22,996 --> 01:33:27,096
+Şimdi, tabii şimdi burada farklı aşamalar çizemiyorum.
+
+312
+01:33:27,776 --> 01:33:31,096
+PowerPoint'in bir çizem.
+
+313
+01:33:35,252 --> 01:33:45,872
+Evet, şimdi mesela boş bir kan nasıl üstünde çalışmak istiyorum.
+
+314
+01:33:45,872 --> 01:33:56,912
+Şimdi, çizdiğim güvarlaklar benim bin sınıf için üye alanlarım olsun.
+
+315
+01:33:58,771 --> 01:34:02,712
+Kopya yapıştırmak yine en hızlı olacak diyelim ki.
+
+316
+01:34:03,828 --> 01:34:18,868
+Dört tane üye alanım olsun. Üstüne yazabiliyorum. Tamam. Alan biz, alan iki, alan üç ve alan dört olsun. Ve metotlarım olsun.
+
+317
+01:34:28,212 --> 01:34:33,192
+Metod 2, 3, 4, 5, 10.
+
+318
+01:34:45,524 --> 01:34:48,524
+Çok da önemli değil aslında büyük olması da.
+
+319
+01:34:51,764 --> 01:34:53,504
+Daha kolay oluyor.
+
+320
+01:34:54,344 --> 01:35:03,344
+Peki, şimdi hangi metodun hangi alanları kullandığını kaynak kod içerisinde bir çizelim.
+
+321
+01:35:03,344 --> 01:35:07,884
+Şöyle düzgün çizme şeklinde gelelim.
+
+322
+01:35:08,304 --> 01:35:09,344
+Mesela diyelim ki,
+
+323
+01:35:12,500 --> 01:35:38,820
+A1'i ve A2'yi kullansın. M2, A2'yi kullansın. M3 de A2'yi kullansın ve A3'ü kullansın. Şöyle yapalım diyelim ki.
+
+324
+01:35:39,199 --> 01:35:58,320
+M1 metodu A1 üye alanı ve A2 üye alanı kodu içerisinde kullansın. M2, A2'yi kullansın. M3 metodu ise A2 ve A3 üye alanlarını kullansın. Sonra M4 metodumuz ve M5 metodumuz ise A4 üyesini kullanıyor olsun.
+
+325
+01:36:00,320 --> 01:36:06,640
+Şöyle genelde metrikler şu şekilde kullanılıyor. Uyumu ölçmek için.
+
+326
+01:36:07,060 --> 01:36:25,620
+Bir kere bu üye alanlar ve üye metodlar hepsini kullansaydı. Yani her üye metod bütün üye alanları kullanıyor olsaydı, başka bir değişiklikle bu bizim grafımız fully connected olsaydı, tam bağlı olsaydı kaç ilişki tanımlanabilirdi?
+
+327
+01:36:25,620 --> 01:36:32,440
+5 tane metod, 4 tane üye alan, 4 kere 5, 20. 20 ilişki kullanabilirdi en fazla.
+
+328
+01:36:32,916 --> 01:36:59,896
+Bu ilişkinin yoğunluk oranı uyumla doğru orantılıdır teorisi üzerine kurulmuştur birçok uyum ölçütü. Bu da demek oluyor ki şu tasarımınla bütün bunlar M1'den M1'e kadar olan üye alanla üye metotlar ve A1'den A4'e kadar olan üye alanla aynı sınıfa aitler ise o zaman benim buradaki
+
+329
+01:37:00,916 --> 01:37:10,196
+Şimdi burada kaç ilişki var?
+
+330
+01:37:10,196 --> 01:37:22,076
+7 bölü, fully connected olsaydı 4 kere 5, 20 demiştim. 7 bölü 20 çıkıyor. O da kaç ediyor?
+
+331
+01:37:24,196 --> 01:37:26,596
+7 bölü, 7.
+
+332
+01:37:27,283 --> 01:37:41,123
+Böyle 20. 0.35 çıkıyor. 0.35. %35 diyebiliriz buna. Çünkü böyle bir hesap bana her zaman 0 ile 1 arasında bir sonuç çıkartacaktır.
+
+333
+01:37:41,203 --> 01:37:48,743
+Pındık kondektif ise 1, hiçbir kondektif yoksa 0. Bu da % olarak çok kolaylıkla yorumlanabilecek bir ölçüktür.
+
+334
+01:37:49,543 --> 01:37:54,783
+Böyle hesapladığımızda bizim bağlaşımımız %35 gibi bir sonuç çıkıyor.
+
+335
+01:37:55,380 --> 01:38:12,300
+Şimdi, bunu da sevdiği şu büyük olasılıkla. Bu sınıfa biz iki farklı sorumluluk yüklemişiz büyük ihtimalle. Çünkü ben bu grafı tam şu noktadan ikiye bölebilirim arkadaşlar.
+
+336
+01:38:20,851 --> 01:38:24,252
+Bu iki ayrı sınıfın bağlaşımlarını tekrar hesaplayalım bakalım.
+
+337
+01:38:26,252 --> 01:38:37,532
+Şimdi, sol taraftaki sınıf için 3 üye alan, 3 üye metot, 3 kere 3, 9 toplam ilişki kurulabiliriz.
+
+338
+01:38:37,931 --> 01:38:42,192
+Burada kaç tane ilişki var? 1, 2, 3, 4, 5. 5 bölü 9.
+
+339
+01:38:44,011 --> 01:38:46,511
+O da demek oluyor ki 5 bölü 9.
+
+340
+01:38:47,315 --> 01:38:49,076
+0.55, 0.56 derim.
+
+341
+01:38:49,416 --> 01:38:50,255
+0.56
+
+342
+01:38:54,228 --> 01:39:03,507
+Ötekisi, öteki sınıfına baktığımda burada iki bağdaşım olabilir en fazla ve ikisi de kurulmuş durumda.
+
+343
+01:39:03,507 --> 01:39:17,292
+2 bölü 2, o da eşittir. 1, 1, 0, 0. Yani 100. Ortalamaya baktığımda, ortalama bile düşünsem 0, 56 ile 1'in ortalaması...
+
+344
+01:39:17,587 --> 01:39:38,167
+1,56 bölü 2. Ne diyor? 0,78 gibi bir sonuç çıkıyor ikisinin bir arada. O zaman kontrol, z kontrol ve şuraya. Burada ortama bağlaşım 0,80'e yakın bir şey. Neydi? 78.
+
+345
+01:39:41,684 --> 01:39:51,684
+Bir sınıfı ikiye ayırmakla bağlaşımı nasıl iyileştirmiş olduk? Bu da bir refactoring eylemi olmuş oldu aslında.
+
+346
+01:39:56,184 --> 01:40:01,204
+Genelde bağlaşım hesaplamamız... Uyum ya, bağlaşım diyorum çok hızlı.
+
+347
+01:40:04,404 --> 01:40:08,104
+Toplu düzenleme yapabiliyor muyum? Yok bu Word dosyası diye. Uyum.
+
+348
+01:40:09,268 --> 01:40:20,047
+Yani şey, uyarlanan bir metodun bağımlılığından hesapladık ya, o yüzden hep artık Kur'an Bağ derken Bağ Bağ sonunda öyle oldu yani.
+
+349
+01:40:24,372 --> 01:40:24,832
+Evet.
+
+350
+01:40:25,511 --> 01:40:25,811
+Peki.
+
+351
+01:40:26,323 --> 01:40:54,303
+Yani daha çok düşük olan uyumu daha iyi bir hale getirmiş oldum. Bu altın örneğe yatan nedenle bu sınıfı ikiye bölebildiğimde, yani hiçbir şeyleri kesme ikiye bölebiliyorum. Bu da demek oluyor ki arka planında aslında ben bu sınıfa birbirine yakın olmayan, birbirine uzak iki sorumluluk eklemişim. Birinci sorumluluğum M1, M2, M3 metotlarıyla yanına getiriliyor. Öbür sorumluluğum M4, M5 metotlarıyla.
+
+352
+01:40:54,323 --> 01:41:08,383
+Ben bir sınıfa iki ayrı sorumluluk atamaktansa, iki ayrı sınıfa birer odaklanmış sorumluluk atadığımda benim sonuçlarımın çok daha iyiye gittiğini örneklemiş olduk bu şekilde.
+
+353
+01:41:08,383 --> 01:41:14,383
+O yüzden bağdaşım da önemli, uyum da önemli. Ve genelde birbirlerini...
+
+354
+01:41:16,500 --> 01:41:24,479
+Olumlu olarak veya yani olumluyken ötekini olumlu ya da olumsuzken ötekini de olumsuz etkileme eğiliminde de tasarımlanırız.
+
+355
+01:41:24,979 --> 01:41:35,519
+Şimdi madem öyle, şöyle bir şey çizmek istiyorum. Az önceki yaptığımız tartışmada diyelim ki şu bir numaralı sistemi seçtik diyelim ki.
+
+356
+01:41:35,519 --> 01:41:42,340
+Bunu seçmeye karar verdik. Çünkü diyelim ki varlıklar arasındaki ilişki de bu şekilde olmuş olsun diyelim.
+
+357
+01:41:45,587 --> 01:41:48,627
+Şimdi kopyalıyorum. Şöyle yapıştırıyorum.
+
+358
+01:41:50,127 --> 01:42:00,367
+Şimdi tamam bizim bu varlıklarımız var ama bu varlıkların bilgileri veri tabanında veyahut da işte ne bileyim serileştirilip bir disk dosyasında bir yerde tutulacak.
+
+359
+01:42:00,367 --> 01:42:01,427
+Tutulması gerekiyor.
+
+360
+01:42:07,447 --> 01:42:11,608
+Veri tabanının simgesi yerleştiremeyeceğim. Yerler aşamasında öyle bir simge yok.
+
+361
+01:42:15,283 --> 01:42:24,783
+Fakat, ha şöyle yazayım ya ne olacak? Bir interfazı koyayım. Bu aslında database olsun. Tamam, database olsun.
+
+362
+01:42:26,783 --> 01:42:38,783
+Aynısını şurada koyayım. Şimdi, soldaki bir numaralı tasarımın, sağdaki de iki numaralı tasarımın olacak.
+
+363
+01:42:43,572 --> 01:42:52,072
+Bu problem alanımızdaki ABC varlıklarının veri tabanına yazılması veya veri tabanına okunması işlemlerinin nasıl gerçekliği?
+
+364
+01:42:52,072 --> 01:43:06,532
+Bu sorumlulukları nesnelerin kendisine verirsek eğer, kendilerini database'e yazma sorumluluğunu ABC nesnelerin kendisine verdiğimizi düşünelim birinci senaryomuzda.
+
+365
+01:43:10,515 --> 01:43:20,955
+Şimdi database'e teşitli varlıkları yazmak veya database'den yüklemek sorumluluğunu oluşturacağımız yeni bir sınıfa verelim.
+
+366
+01:43:20,955 --> 01:43:26,875
+Ve tabii ki bakın şunlar tabii oraya da yeni bir şey koymam lazım.
+
+367
+01:43:29,015 --> 01:43:30,775
+Sıratak koymam lazım.
+
+368
+01:43:32,135 --> 01:43:32,855
+Şuraya.
+
+369
+01:43:33,876 --> 01:43:44,056
+DbOps, tamam mı? Şu çizdim, O-class, Database Operations anlamında.
+
+370
+01:43:49,427 --> 01:43:54,287
+Evet. Şurda, DTB's Operation Sardesli, Şurda.
+
+371
+01:43:55,028 --> 01:44:17,988
+Ama tabii ki bu D sınıfı, A, B, C, D sınıflarından nesneleri database yazma veya oradan okuma sorumluluğu varsa, sahiplik olmasa bile en azından A, B, C, D nesnelerini kullanacak metotlar içerecek. Şu yazdığım kesikli çizgisi gerçekten Yemar'daki sahibi olmadan kullanma ilişkisini göstermektedir.
+
+372
+01:44:23,028 --> 01:44:41,988
+Sistemimi tercih edelim. İki numaralı sistemimi tercih edelim. Ne düşünüyorsunuz? Nesne, veri tabanına yazma, veri tabanına okuma sorumlulukları nesne kendilerine mi verelim? Yoksa bundan bu işi yapacak yeni bir sınıftan nesne bir oluşturalım. Ne dersiniz?
+
+373
+01:44:49,043 --> 01:44:52,304
+Hocam, ikinci daha hızlı çalışır gibi geliyor bana ama.
+
+374
+01:44:53,083 --> 01:44:54,083
+Tamam, neden sanırım?
+
+375
+01:44:54,963 --> 01:45:04,903
+Çünkü database connection ne kadar az yaratılırsa o kadar daha verimli ve hızlı çalıştığını düşünüyorum.
+
+376
+01:45:05,523 --> 01:45:15,923
+Doğru, tabii ki haklısınız. Yani her bir yeni bir database connection açıyor, normal bir kanal masrafı var falan. Doğru, haklısınız. Başka neden söyleyecek olan var mı? Ya da siz söyler misiniz?
+
+377
+01:45:23,155 --> 01:45:28,175
+Bir katkıda bulmak isteyen arkadaşım var galiba ama ses hiç gelmiyor neredeyse.
+
+378
+01:45:34,292 --> 01:45:59,412
+Peki, şimdi biz hani bir bağlaşıma bakmıştık ya, acaba bağlaşım açısından incelensek ne olacak? Şimdi bakıyorum, bu bir numaralı sisteminin bağlaşımını biz hangisinden kullanırsak kullanalım. Dolarla ilişkileri de saymıyorduk diyelim ki. Toplam bağlaşım iki, maksimum bağlaşım bir olarak seçtik diyelim ki.
+
+379
+01:46:01,844 --> 01:46:18,903
+Bir numaralı sistemde. İki numaralı sistemde ben aynı şeyi hesaplamaya kalktığımda, şimdi D sınıfını da koyduğum ikin, D sınıfından A sınıfına ilişkiler söz konusu olduğu için, bunu isterseniz sahiplik gibi yine bir olarak sayabilirsiniz.
+
+380
+01:46:18,903 --> 01:46:29,844
+Veya bu tam bir sahiplik ilişkisi değil, sadece kullanma ilişkisi olduğu için onları da yarım kullanmayı seçebilirsiniz. Ama hangisini seçerseniz seçin, hadi yarımları kullanalım diye.
+
+381
+01:46:29,844 --> 01:46:54,804
+Şimdi bağlaşım D çıktı işin içerisini. Yarım olarak bile sarsak A'ya, B'ye ve C'ye 3, 2'ye böl, 1.5. 1.5 bağlaşım çıktı ek olarak. Toplam bağlaşım 3.5 oldu. Maksimum bağlaşım yine şu D sınıfı nedeniyle 1.5 oldu diyelim.
+
+382
+01:46:55,252 --> 01:47:15,072
+Bu arada, [öğrenci] demiş ki, soldakinin bağlaşımı daha az ama uyum da az gibi diyor. Evet, aynen öyle. [öğrenci] doğru noktaya parmak bastı. Ben de birazdan onu söyleyecektim. Tamam, bağlaşımı çok fazla attırmış olduk. Neredeyse bir misli, %75'i attırmış olduk belki toplam bağlaşımında.
+
+383
+01:47:16,159 --> 01:47:21,800
+YUM ilkesini göz ardı etmiş olduk bir numaralı sistemde.
+
+384
+01:47:22,300 --> 01:47:31,720
+Şimdi biz diyelim ki bunu bir sistemlik gibi yaptık diyelim ama database olarak diyelim ki Microsoft SQL Server kullanıyoruz.
+
+385
+01:47:32,359 --> 01:47:42,559
+İstermiş sayımız attı, lisans maliyetleri artacak. O yüzden Microsoft SQL Server'dan MySQL'e veya PostgreSQL'e geçmeyi.
+
+386
+01:47:42,963 --> 01:47:56,643
+İstedik diyelim ki. Her ne kadar ikisi de SQL üstünden, standart bir dil üstünden ulaşılıyor olsa da, gerçek hayatta illaki bazı kod değişiklikleri yapmak zorunda olacağız.
+
+387
+01:47:57,003 --> 01:48:05,663
+Hele kaldı ki store prosedürleri yaptıysak işler orada iyice değişecek. Neyse, store prosedürleri database tarafında yapabiliriz. Nesneler tarafında olan şeye odaklanalım.
+
+388
+01:48:10,963 --> 01:48:16,363
+Nesne katmanını, iş mantığı katmanını hep inceliyor, konuşabiliyor olacağız genelde.
+
+389
+01:48:18,503 --> 01:48:25,403
+Database koduyla ilgili değişiklikleri bir numara sistemde bütün sınıflarda tekrarlanmamız gerekecek.
+
+390
+01:48:25,403 --> 01:48:34,143
+Ama halbuki iki numara sistemde database işlemleriyle ilgili kodu sadece D sınıfında değiştirmeniz yeterli olacak.
+
+391
+01:48:35,252 --> 01:48:47,332
+Bu akıllı insan bir işi bir defa yapar. Bizden fazla kere yapmaz. Bir numara sistemde bir iş için bizden fazla yerli değişiklik yapmak yanlış bir karar vermiş olduğumuzun göstergesi.
+
+392
+01:48:55,636 --> 01:49:07,676
+Yeni bir sorumluluk olan bir tamamı işlemlerini ayrı bir sınıfta gerçeklemek en doğru karar olacaktır. Bu da net bir şekilde ikinin daha doğru bir seçim olduğunu söyleyebilirim.
+
+393
+01:49:07,676 --> 01:49:15,736
+Şurada ikinin hesabı, ikinin yeni hesabıydı ama yine de doğru çözümün bu ikinci olduğunu söyleyebilirim.
+
+394
+01:49:17,971 --> 01:49:26,032
+Doğru çözüm. Çünkü bu bize aynı zamanda katmanlı bir çözüm de sunmuş oluyor. Katmanlı çözüm.
+
+395
+01:49:26,387 --> 01:49:31,747
+Burada D sınıfı kendi içerisinde veri tabanın katmanını oluşturmaktadır.
+
+396
+01:49:32,247 --> 01:49:38,188
+Şimdi Zoom'un şu özelliğini seviyorum. Çizgi çizebiliyorsunuz ekran üzerine.
+
+397
+01:49:38,188 --> 01:49:40,167
+Ama şimdi bu tabi biraz kötü bir şey.
+
+398
+01:49:40,387 --> 01:49:52,948
+Şimdi şöyle ayırdığımda ABC sınıfları benim iş mantığı, tabi burada güzel hiç yazıyor bilmiyorum ama iş mantığı, gerçi tekstüleri de vardı ama neyse.
+
+399
+01:49:54,387 --> 01:50:06,127
+Katmanını oluştururken D sınıfı da benim veritabanı katmanını oluşturuyor olacak. Bu nedenle daha...
+
+400
+01:50:06,127 --> 01:50:34,047
+Bu nedenle daha katmanlı bir çözüm olan.
+
+401
+01:50:34,127 --> 01:50:40,728
+Uyumu daha yüksek olan çözümü seçmemiz her zaman için yararımızdadır demek istiyorum.
+
+402
+01:50:42,268 --> 01:50:49,448
+Peki hala. Şimdi, soru varsa buyurun veya ek görüş belirtmek isteyen arkadaşım varsa buyursunlar.
+
+403
+01:50:57,108 --> 01:51:15,047
+Hocam, burada ben bir şey sormak istiyorum. Bu ikinci modeli anladık, doğru olması gereken bu ama hani bu düşük bağlaşım ve yüksek uyum kriterine baktığımız zaman o zaman yüksek uyum aslında her türlü düşük bağlaşımı geçiyor.
+
+404
+01:51:15,475 --> 01:51:21,075
+Her ne kadar bağlaşımlı düşük de olsa, eğer uyum yüksekse bir modelde mutlaka oraya mı yönelmemiz lazım?
+
+405
+01:51:21,575 --> 01:51:31,215
+Doğru, doğru. Uyum biraz daha ağırlığa sahip. Ben bunu şu şekilde söylemek istiyorum aslında.
+
+406
+01:51:33,332 --> 01:51:49,212
+İyi bir tasarımın tanımında sizin probleminiz hangi düzeyde parçalara ayrılıyorsa o düzeyde parçalara ayrılan bir tasarım demiştik ya. Şimdi o düzeyin aslında ne olması gerektiğinin çok da kolay anlaşılamaya biliniyor bazı durumlarda.
+
+407
+01:51:49,212 --> 01:52:01,332
+Ve bağlaşımımızın sistem düzeyinde baktığımızda o probleme özgü olmak üzere aslında bir olması gereken düzeyli var.
+
+408
+01:52:01,332 --> 01:52:23,592
+Bu düzeyi keşfetmek kolay bir şey değil ama bir numaralı sistem için düşündüğünüzde tamam bağlaşımı çok daha düşük ama aslında olması gereken bağlaşım bu iki numara sistemdeki gibi üç, üç, üç düzeylerinde olması gerekiyor. Biz onu daha fazla düşünerek çok da iyi bir iş yapmadık aslında gibi de düşünebilirsiniz bunu.
+
+409
+01:52:23,592 --> 01:52:29,332
+Aynı şeye varıyoruz, aynı noktaya varıyoruz. Ben genelde bu şekilde...
+
+410
+01:52:29,332 --> 01:52:46,332
+Anlatıyorum. Sizin anlattığınız söyleme ifade şekliniz de hoşuma gitti. Evet, bağlaşım ile uyum arasında bir çelişki olduğu zaman uyum tarafından gitmek daha tercih edilir diyebiliriz. Evet, teşekkür ederim. Başka?
+
+411
+01:52:56,787 --> 01:52:58,787
+Peki.
+
+412
+01:53:04,500 --> 01:53:07,960
+Tamam peki. Sonra bunu kapatabilirim o zaman. Temizle.
+
+413
+01:53:09,500 --> 01:53:11,199
+Daha tüm kişisini temizle.
+
+414
+01:53:13,000 --> 01:53:18,500
+Tamam peki. Bunun üstünde de anlaştığımıza göre...
+
+415
+01:53:46,676 --> 01:53:50,476
+Zaten mutlaka kullanmanız gereken bir şey olacak bu.
+
+416
+01:53:51,416 --> 01:53:56,735
+Şimdi bir dakika, bir şeye bakmak istiyorum. Bir paylaşım kısa bir süre durdurdum.
+
+417
+01:53:57,460 --> 01:54:15,920
+Şey görmek istedim. Kaydediliyor simgesini görmek istedim. Biraz geç jeton düştü ama zaten bizim sistem otomatik kaydediyor ama uzunca bir sürede araya satıya girdi. Online ders yapmadık. Hatırlamak, uyum sağlamak kolay olmayabiliyor. Tekrar ekran paylaşımından geçeyim.
+
+418
+01:54:15,920 --> 01:54:22,579
+Tamam. Şimdi şunu şöyle alayım.
+
+419
+01:54:24,372 --> 01:54:29,972
+Normalde kütüphane adresimize girdiğinizde, kütüphane sayfamızdan.
+
+420
+01:54:31,572 --> 01:54:59,572
+Elektronik kaynaklarımız var. Elektronik dergi veri tabanları ki bunlar sizin özellikle tez çalışmalarınızdaki, literatür araştırması çalışmalarınızda kullanacağınız dergi makaleleri ve konferans bildirilerini içeren veri tabanlarıdır bunlar. Ama elektronik kitaplarımız da var. Onlar da söz konusu. Bunlara bu link üstünden, buradaki linkler üzerinden ancak kampüs içerisindeki bilgisayarlardan gelişebiliyorsunuz.
+
+421
+01:54:59,572 --> 01:55:17,652
+Kampüsünüzdeki Yıldız Net kabloslarına bağlanıp, oradan üniversite içerisinden bir IP numarası alarak erişebiliyorsunuz. Çünkü bu kaynaklar ücretli abonelik gerektiren kaynaklardır. Ve abonelik ücretleri de hiçli düşük miktarlar değildir.
+
+422
+01:55:19,984 --> 01:55:32,544
+Üniversiteler ve araştırma kurumları olarak bir araya girip konsorsiyum kurduk. 90'lı yılların sonlarında, 2000'li yılların başlarında gibi.
+
+423
+01:55:40,979 --> 01:55:57,420
+Abonelik ücretleriyle bu kaynaklara erişebiliyor hale geldik. Ben bu süreçin hem bir akademisyen olarak, doktor öğrencisi, yüksek istansı ve akademisyen olarak kullanmak ihtiyacı nedeniyle takip ediyordum.
+
+424
+01:55:57,420 --> 01:56:08,979
+Hem de ben İTÜ'de doktora yaparken, yüksek istansı doktora yaparken aynı zamanda kütüphane bilgi işlem sorunlusu olarak da çalışıyordum bir yandan. Ve o yüzden bu süreçlerin içerisinde bir insandım. Biraz da...
+
+425
+01:56:22,359 --> 01:56:32,339
+Ve bu artan olanakla birlikte ülkemizde ortaya çıkaran akademik yayın sayısı önemli bir zıplama gösterdi bu aboneliklerle birlikte.
+
+426
+01:56:34,484 --> 01:56:49,624
+Ama o zamanlar bu kadar belki elektronik kaynaklarımız, daha doğrusu haberleşme ağları falan yaygın değildi. İlla kampüse girip araştırma yapmak gerekiyordu. Salgınla birlikte evden çalışmanın önemi ve oranı da başladı.
+
+427
+01:57:17,779 --> 01:57:31,179
+Orak kalmışken de zor bir şeydi. Her internet bağlantımız için kütüphanede kaynaklı çok da fazla olmayan bir proksesörer üstünden açılmamız gerekiyordu. Hiç verimli değil. Direkt VETS'i kullanın arkadaşlar.
+
+428
+01:57:33,679 --> 01:57:43,179
+Tabii VETS'i kullanabilmeniz için kütüphane üyeliğinizin kayıtlı ve aktif olması gerekiyor. Çünkü tıklayınız dediğinizde...
+
+429
+01:57:44,895 --> 01:57:53,315
+Sisteme giriş yapmaya çalıştığınızda öğrenciler için öğrenci numarası, akademik personel için sicil numarası kullanıcı atılır.
+
+430
+01:57:53,315 --> 01:57:55,315
+Eğer...
+
+431
+01:57:55,956 --> 01:58:17,336
+Kütüphane hesabınız aktif değilse bile şu şifreni unuttun üzerinden ilerleyebiliyorsunuz. Kayıt olurken Fembilimleri Enstitüsü'ne geçerli cep telefonu numarasını verdiyseniz eğer o zaman sizin öğrenci numaranızla telefon numaranız eşleşeceği için telefon numaranızla sizin şifreniz SMS ile gelebiliyor.
+
+432
+01:58:20,467 --> 01:58:28,227
+Sistem sorumluluşuna ulaşın üzerinden veya bir gün kütüphaneye uğrayıp, bu sorununuzu çözün arkadaşlar.
+
+433
+01:58:39,627 --> 01:58:47,227
+Buradan bizim meslekle ilgili olan nereler var? Bir göstereyim size hızlıca.
+
+434
+01:58:48,051 --> 01:59:10,671
+Bir kere ACM. Şimdi kısaltmadan belki anlaşılmayabilir ama uzun açının adında baktığınızda Association for Computing Machinery anlamında. Bu bizim için önemli bir veri tabanı, önemli bir kaynak. Sonra ETSUK'u daha çok işletme falanla ilgili. IEEE Explore. IEEE bizim önemli bir meslek kuruluşumuz. O önemli.
+
+435
+01:59:11,507 --> 01:59:37,507
+Web of Science özet arama yapar ama diğer bahsettiklerim tam metin yayınlara ulaşabileceğiniz kaynaklardır. Sonra biraz daha aşağı inelim. Science Direct'de de mühendislik odaklıdır. Sadece bilgisayar mühendislik odaklı değildir ama önemli bir bilgisayar mühendislik koleksiyonlarına sahiptir Science Direct. Buraya da mutlaka bakmanızı istiyorum.
+
+436
+01:59:38,163 --> 01:59:59,923
+Keza Schüpringer, o da bizim için önemlidir. Şimdi burada aslında bakın şöyle birkaç tane, beş ayrı Schüpringer var diyor ama bunların hepsi aslında tek bir abonelik arkadaşlar. Linkler sadece bizi aranacak veri kaynaklarında ilgili koleksiyonlar işaretlenmiş şekilde bir ekrana gönderiyor. Yoksa Schüpringer tek.
+
+437
+02:00:00,000 --> 02:00:23,239
+Sadece. Şüplinger hariç, daha önce söylediğim kaynaklar daha çok dergi süreli yayın, dergi makameleridir. Ama ITP'nin konferansları da çok. Orada hem dergi hem konferans şeklinde. Şüplinger de özellikle e-kitap ve konferans yöntem daha basan bir veri tanımadır.
+
+438
+02:00:25,332 --> 02:00:29,332
+Ama hepsi de bizim için yararlı kaynaklardır.
+
+439
+02:00:30,731 --> 02:00:44,452
+Tiller'da çok bir şey yok. Ve de Wiley. Wiley de bizim için önemli. Hem dergi hem kitap şeklinde Wiley'nin yayınları var. Başka bir şey yoktu herhalde. Tamam, pekala.
+
+440
+02:01:05,171 --> 02:01:10,471
+Bütün kaynaklarımızda. Önce bütün kaynaklarda aramayı göstereyim. Ondan sonra tek tek bir iklimizin içerisine gireriz.
+
+441
+02:01:21,811 --> 02:01:25,811
+Toplu arama da ayrı bir hizmet alımı aslında.
+
+442
+02:01:25,811 --> 02:01:27,551
+EFCO üzerinden.
+
+443
+02:01:31,347 --> 02:01:31,787
+Bakalım.
+
+444
+02:01:32,148 --> 02:01:41,028
+Patron dizayn değil. Bu arada şeyde söyleyeceğiz ama yani patrona geçmiş haftaya söyleyeceğiz.
+
+445
+02:01:41,328 --> 02:01:46,368
+Dizayn patron kelimesi aslında tanımı, terimi. Mimarlıktan bize geçmiş bir kavme.
+
+446
+02:01:46,927 --> 02:01:51,427
+Bilgisayar mühendisi ve daha özelinde yazım mühendisleri nispeten daha yeni bir disiplin.
+
+447
+02:01:51,688 --> 02:01:55,927
+O yüzden daha eski disiplinlerden terim ödünç aldığımız oluyor.
+
+448
+02:01:56,627 --> 02:02:00,148
+Tasarım kalıplara doğru ben de gelmiş aslında mimari kökenli.
+
+449
+02:02:00,148 --> 02:02:13,268
+Ve bu da galiba evet grafik sanatlar, tekstil tasarımlarından gelmiş bir kitap. Aslında biz yazın manisi anlamında tasarım kanıtlarından bahsediyoruz.
+
+450
+02:02:13,967 --> 02:02:25,268
+Mesela şey, mimariler der ki içinde en az bir kişinin bir saatten fazla zaman geçireceği her odanın mutlaka güneş ışığı alacak penceresi olmalıdır.
+
+451
+02:02:28,148 --> 02:02:43,028
+Tasarım kalıplara yönlendirecek tasarım şablonlarıdır. Örüntüleridir tasarım kalıpları. Biz de benzer şekilde sık karşılaşılan modelleme problemlerini iyi çözümüne yönelik önerilerdir tasarım kalıpları.
+
+452
+02:02:43,028 --> 02:02:55,068
+Şimdi bakalım bu konferans tergisi. Biz şimdi kitaplara bakmak istiyoruz bakalım. Bakın bu bir iyi bu kitap. Go Design Patterns, Go dilinde tasarım kalıplarının nasıl kullanılacağını falan.
+
+453
+02:02:56,148 --> 02:02:59,507
+Daraltalım biz. Diyelim ki e-kitaplarla ilgileniyoruz.
+
+454
+02:02:59,507 --> 02:03:20,748
+Diyelim ki şurada, bakın nerede? Bu biraz nispeten yeni bir hizmet. Şu an çok şey değilim. Çok fazla hakim değilim. Bunun bir filtresi olması. Ha, gelişmiş alanda. Şurada küsüldü. Ha, gelişmiş alanda. Şey söylemiyor. Şey tipinden bahsetmiyor.
+
+455
+02:03:21,140 --> 02:03:25,960
+Neyse, buradan çok ulaşamadım ama belki de şöyle yapalım.
+
+456
+02:03:26,539 --> 02:03:27,460
+Design practice.
+
+457
+02:03:27,680 --> 02:03:28,699
+Bu uzun adı ne yazın?
+
+458
+02:03:29,359 --> 02:03:32,939
+Bu arada aslında otomatik modu kaynaklarda da varmış.
+
+459
+02:03:33,479 --> 02:03:34,340
+Ara diyelim, tamam.
+
+460
+02:03:37,395 --> 02:04:00,015
+Ama tabii bu bana şeyi sarmıyor. Tasarım kalıpları örnek veren diğer kitapları aramamız konusunda bize şey vermiyor, yönlendirmiyor gerçi. Bakın şey şu yani. Bir şu ama bakayım şu bana biraz grip geldi. Ama neyse. Şu da olabilir. Gerçi aynı yere götürüyor galiba. Evet 95. Bakalım.
+
+461
+02:04:05,395 --> 02:04:16,496
+Tamam, bir dakika.
+
+462
+02:04:20,455 --> 02:04:30,595
+Peki, buradan aramayalım arkadaşlar. Şuradan aramak istiyorum ben. Kütüphane katalogundan aramak istiyorum.
+
+463
+02:04:31,507 --> 02:04:40,407
+Orada elektronik kaynaklar, basılı kitaplar falan daha iyi olabilir. Hatta şuradan almak istiyorum. Tüm kaynaklar buradan da alabiliyorsunuz.
+
+464
+02:04:45,844 --> 02:05:01,984
+Ama şu an ben evde olduğum için buradaki link doğrudan çalışmayabilir. Hani online gelişmiş hangi link üstünden biraz da erişim göstereceğim. Burada tüm kaynaklar da yine beni buraya götürüyor. Tamam şöyle yapıyorum şimdi. Buradan vazgeçiyorum. Katalogdan saracağım.
+
+465
+02:05:11,731 --> 02:05:14,731
+Getirdim, getiriyorum. Getiriyorum. Şöyle tekrar geçeceğim.
+
+466
+02:05:20,731 --> 02:05:21,731
+Evet.
+
+467
+02:05:22,731 --> 02:05:23,731
+Geçelim.
+
+468
+02:05:27,731 --> 02:05:29,731
+Kitap alıyorum.
+
+469
+02:05:30,163 --> 02:05:46,963
+E-Kaynakları dahil etme diyorum. Topluka Katalığı dahil etme. Yayın tarihi değil. Şurada daha fazlası yok mu? E-Kitap ve Kitap. Önce Kitap olarak göstereyim, sonra E-Kitap'ı göstereyim.
+
+470
+02:05:52,020 --> 02:05:56,940
+Kitap olarak baktığımızda, Design Patterns'lar yeri ama yazılımın ailesi Design Patterns için.
+
+471
+02:05:57,440 --> 02:06:02,180
+Introduction to Design Patterns in C++ with QT4 var.
+
+472
+02:06:02,940 --> 02:06:05,420
+Evet, klasik kitabımız da var basılı olarak.
+
+473
+02:06:05,900 --> 02:06:08,539
+Design Patterns, Elements of Rays, Object-Orient Software.
+
+474
+02:06:09,140 --> 02:06:11,000
+Merkez Kütüphanemizde.
+
+475
+02:06:11,720 --> 02:06:13,960
+Eksi birinci kat okuma salonunda, Yrafta.
+
+476
+02:06:13,960 --> 02:06:19,820
+Bunu fiziksel olarak alıp ödünç almak istiyorsanız eğer, şu yer bilgisinin numarası önemli.
+
+477
+02:06:20,020 --> 02:06:21,680
+00.5.2.
+
+478
+02:06:23,507 --> 02:06:51,467
+Arf kata indiğinizde kütüphane raflarının kenarına o rafta yer alan kitapların şu katalog numarası yer almaktadır. Siz başında 005 yazan rafı arayacaksınız. O raflar da kendi içerisinde sıralıdır. 005 rafını bulduğunuzda büyük kitapların tek tek raflarına bakıp orada şu 12 rakamına doğru gelip kitabı elinizle koymuş gibi çok rahat.
+
+479
+02:06:51,507 --> 02:07:08,507
+Bu basılı dersiyon için. Başka bir şey tabii ki. Bu da Designed Pattern değil. Şu mesela Java 2 Antiparişi uygulama yazarken sizin...
+
+480
+02:07:08,560 --> 02:07:20,720
+Kullanabileceğiniz çekirdek kalıplar. Bunlar yine dörtlü çetenin kalıpları değil. Başka konularda da Dizemblatör'ın önerilebilir. Biz şu an dörtlü çetenin kitaplarına bakıyorum.
+
+481
+02:07:22,820 --> 02:07:32,380
+Hossman'ın şu kitabı da fena değildir. Ayrıca tavsiye ederim. Peki bu kadarmış. Şimdi kitabı değil de e-kitap olarak bakalım şimdi.
+
+482
+02:07:34,228 --> 02:07:58,188
+1149 E kitap var. Ama bunların içerisinde şaşırı konferans proselin kitapları da var. Ben kapaklarımdan hemen tanıyorum. Biraz alışkanlığım olduğu için diyelim şunlar. Bakalım daha nasıl acaba bir şey yapabiliriz, çiftlenme yapabiliriz bir bakalım. Yıl değil de zaten hepsi İngilizce.
+
+483
+02:08:07,188 --> 02:08:31,328
+Yani geçmeyenler diye bir seçenek yapınca tek tek seçilmesi gerekiyor. Biraz inelim bakalım. Biraz aşağıya kayalım. Başka ne gibi şeylerimiz var. Bu arada yalnız tüm de title da geçecek şekilde diye ararsak belki daha iyi olacaktır. Şurada düzeltiyorum. Eser adı içerisinde Design Patterns geçsin diyorum.
+
+484
+02:08:31,988 --> 02:08:43,427
+Şimdi daha manageable yönetilebilir sayıda şeyimiz var. Ve bakalım ne seçiliği? E-kitap. 18 değil mi? Şu an hepsi var. Tamam peki. Hadi E-kitaplara bakalım.
+
+485
+02:08:48,180 --> 02:09:08,119
+Open Source Software Design Patterns. Bu bizim şu an tam konumuzla ilgilidir. Cloud Computing'de Design Patterns. Bu da tam öyle şeklidir. Modern Draman Design. Bu da başlı başına bir yazın geliştirme yöntemidir. Onu düşünüyoruz ki bu da öyle bir şey. Human Computer Interface. Tasarımdaki tasarım kalıpları ne olabilir? Onu geçiyoruz.
+
+486
+02:09:16,180 --> 02:09:33,619
+Tam olarak size bahsettiğim tasarım kalıpları uygulama örneklerini içeren bir kitap olmayabilir bu. Scala kodu yazmıyoruz. Bu da değil. Göbün sisteme de odaklamıyoruz. Web application tasarımı da şey istemiyoruz. İkinci sayfaya bakalım.
+
+487
+02:09:35,444 --> 02:10:00,000
+Tek saklanmış. Bu da değil. Tamam peki. Burada çok fazla şey bulamadık. O zaman biraz daha alternatif kaynaklardan aramaya yönlendireceğim sizi. Ama acaba burada mı daha az hit elde ettik? Yoksa tek tek şu kaynaklara tek tek eriştiğimizde acaba daha başka bir şeyler bulabiliriz?
+
+488
+02:10:00,000 --> 02:10:18,879
+Bilir miyiz diye merak ediyorum. Mesela bir Wiley'e bakmak istiyorum. Mesela şurada. Aynı zamanda kitap olarak da çok yayınları da var ya Wiley'in. O yüzden Wiley olanlar biri. Şuradaki Vatis üstünden girdiğimdeki erişim için tıklayın linkine tıklayarak da bittiyorum. Dikkat ederseniz şimdi birazdan gelecek.
+
+489
+02:10:48,051 --> 02:10:49,051
+Bu aslında.
+
+490
+02:10:49,511 --> 02:10:51,672
+Baş başına geliyorum. Nesmi yeni sekmede aç.
+
+491
+02:11:15,844 --> 02:11:19,644
+Ve şuradan design patterns demek istiyorum.
+
+492
+02:11:26,707 --> 02:11:37,467
+E-kitabı olup biri e-kitap bulamazsam bile hızlıca en azından çeşitli yayınlara, dergi makalelerine ya da konferans bildirilerine tam mutlu olarak erişebileceğimi göstermek istiyorum size.
+
+493
+02:11:41,524 --> 02:11:45,284
+Artık kalmış. Bakın, Nesneye, Jonas Bux. Bakalım.
+
+494
+02:11:50,931 --> 02:12:09,071
+Yüzünün ilgili büyük bir rakam. Kitap chapter'lara da geliyor. Peki. Bakın Applying Design Patterns. Gayet güzel kitap var. Sanki chapter diyor sanki ama dur bakalım neymiş bulacağız.
+
+495
+02:12:18,068 --> 02:12:20,068
+Advertis notu sadece.
+
+496
+02:12:23,859 --> 02:12:30,139
+Kitabın kendisine. Şöyle tıklarsam. Kitabın kendisine gelecek. Bir dakika.
+
+497
+02:12:34,519 --> 02:12:37,059
+Şu herhalde. Tamam. Bu reklam değil.
+
+498
+02:12:37,059 --> 02:12:39,179
+Bu bir bölüm var değil. O ufak bir yazı.
+
+499
+02:12:39,923 --> 02:12:43,463
+Profesional Stikler Asus kitabındaki bir chaptermış.
+
+500
+02:12:43,463 --> 02:12:54,403
+Ben bütüncül olarak design pattern'a yönelik bir kitap olarak şey bakayım dedim ama buradan çok da fark edilecek.
+
+501
+02:12:54,503 --> 02:13:03,863
+Ama şu PDF'i tıkladığımda bana bu kitabın, bu chapter'unun tam meyve olarak PDF dosyasına ulaşım sağlayacak.
+
+502
+02:13:05,971 --> 02:13:18,971
+Peki, atanama yaparken tam aboneliğimizin olduğu kaynaklar şeklinde seçenek seçmeliydim. Arada tam metin eleşeğimizin olmadığı kaynakları da listelemiş oldu. O zaman şöyle yapacağım, geri gideceğim.
+
+503
+02:13:32,372 --> 02:13:48,872
+Ve şey, şuradaki seçeneklerini tam Metin, şey, Vali'den çok iyi göremedim onu. Neyse peki, Vali'yi vazgeçiyorum. Artık direkt oradan gideceğim. Oradan örneklemek istiyorum.
+
+504
+02:14:02,655 --> 02:14:04,296
+Daha yaptım.
+
+505
+02:14:12,916 --> 02:14:21,956
+Evet, bakın şu EYKL logosunu şunu daha net görebiliyorsunuz. Yanında da Access Provided by BlackBand University Yazı Teknik Üniversitesi şeklinde görüyorsunuz.
+
+506
+02:14:26,931 --> 02:14:27,931
+Tamam, patoğız.
+
+507
+02:14:32,404 --> 02:14:37,083
+Evet, şimdi ben diyelim ki konferans kitap der ki standartlar.
+
+508
+02:14:39,163 --> 02:14:39,884
+Şek.
+
+509
+02:14:40,627 --> 02:15:01,447
+Journal Akademik Dergiler, Magazin, hani Artıklı, Spektrum falan gibi daha biraz popüler bir türlü dergiler oluyor. Early Access. Early Access bir makale yayın için kabul edilmiş ama henüz yayınlanmamış. Basılı olarak yayınlanmamış. Sadece online anlamına geliyor. Hadi kitap gelin bakalım. Buguna göre Appline kabile çıkacak.
+
+510
+02:15:10,355 --> 02:15:24,175
+Tabii içine dizayn geçen, elektronik dizayn falan gibi de şeyler çıktı tabii ki. Anten tasarım falan kitap olarak baktığımızda. Şöyle yapalım o zaman. Advanced Search'e bir gidelim bakalım.
+
+511
+02:15:36,884 --> 02:15:51,884
+Ve diyelim ki Seyde, başlıkta geçsin. Hatta, şimdi bir de başka seçeneğim var mı? Yıl belirtelim. Çok da fazla bir şey...
+
+512
+02:16:01,747 --> 02:16:03,887
+Şimdi bakın şurada şunu göstermek istiyorum.
+
+513
+02:16:04,087 --> 02:16:11,787
+Bakın subscribe content. Yani tam metin erişim hakkı aldığımız yayınları sadece gösteriyorum.
+
+514
+02:16:12,327 --> 02:16:13,908
+Böylece tam metin erişebileceğiz.
+
+515
+02:16:13,908 --> 02:16:20,648
+Onun dışında bakın şimdi publication topics. Ha bakın şimdi. Topikste de çoğun mu var?
+
+516
+02:16:21,235 --> 02:16:33,935
+Anten manten şeylerini ayırt etmek için Object Oriented seç, Object Oriented, Software Architecture seç, Reelability seç, Engines'in Maintains, Software'la ilgili olanları yazalım. Pattern Recognition değil.
+
+517
+02:16:33,935 --> 02:16:39,335
+Java yazı kısıtlamayalım kendimizi mesela. Hadi ekleyelim Java, UML'i yazalım bakalım.
+
+518
+02:16:39,335 --> 02:16:48,435
+Bunlar herhalde. App'lar edelim. Daha istenilmiş türden yayınlar girecek şimdi.
+
+519
+02:16:49,172 --> 02:16:59,412
+Evet. Ve bu şu an bu arada, bu arada bunların içerisinde kitap yok. Bakın seçenekler konferans, jorunu veya magazin falan. Neymiş bakalım şimdi mesela?
+
+520
+02:17:05,051 --> 02:17:11,632
+Bakın en çok ilgimi çeken, hızlı ilgimi çeken, daha çok ilgilenen, bunların hepsi ilgili de konusunda bizim design patternlarla ilgili.
+
+521
+02:17:13,940 --> 02:17:22,040
+Avukatörü ilginç bir konu. Dizem periyatı uygulamadan önce kaynak kodu incelerek dizem periyatı tespit etme.
+
+522
+02:17:22,040 --> 02:17:23,360
+Evet, ilginç bir şeymiş aslında.
+
+523
+02:17:24,528 --> 02:17:26,528
+O da ayrı bir araçlığına konusu.
+
+524
+02:17:34,528 --> 02:17:36,528
+Ayrı bir konuya tasarım kalıplarına uygulayalım.
+
+525
+02:17:39,528 --> 02:17:40,528
+Tamam, pekala.
+
+526
+02:17:41,528 --> 02:17:44,528
+Do Structure Design Patterns Promot Design Stability.
+
+527
+02:17:44,528 --> 02:17:52,528
+Bakın da ilginç bir konu. Tasarım kalıplarını kendi arasında üç ayrı kategoriye grupladığımızı...
+
+528
+02:17:52,528 --> 02:17:56,523
+Görüşeceğiz. Statualist, behavioral, bir de...
+
+529
+02:17:56,788 --> 02:18:24,468
+Rational yazı şartlarımızda. Şuna bakalım bakalım. Gerçekten tasarım kalıplarını uygulamak tasarımı daha stabil hale getiriyor mu? Yani bir tasarımın stabil olması demek zaman içerisinde, bakım aşamasında tasarımın mümkün olduğu kadar az değişikliğe uğramışsa o kadar stabildir diyoruz mesela. Bu şu an en çok ilgini çekti. Ve buna tam metin olarak şu an ilk başta abstrakt olarak görüyorum ama.
+
+530
+02:18:24,788 --> 02:18:39,747
+Aşağıda tam metinle okumaya başlıyorum. Bunu daha sonra okumak istiyorsanız PDF şeklinde. Bakın ikonu şurada. Ben şu an Firefox browser kullanıyorum. Firefox browserda bu ikon çok güzel çıkmamış.
+
+531
+02:18:39,747 --> 02:18:48,968
+Sadece şu an haberi geldiğimde ikonumun el halini aldığını görüyorsunuz. Şimdi üstüne tıklarsam erişebileceğim PDF dostu olarak bu tam metinle.
+
+532
+02:18:50,644 --> 02:18:54,904
+Evet ve kaydedebilirim bunu. Kaydedelim.
+
+533
+02:18:57,904 --> 02:19:01,844
+Tasarım modelleme diye kaydedelim bakalım şimdi.
+
+534
+02:19:05,283 --> 02:19:08,103
+Şurada bir şeye dikkatinizi çekmek istiyorum.
+
+535
+02:19:16,244 --> 02:19:26,264
+Bu dosyanın altına indiğimde önemli bir ek var.
+
+536
+02:19:27,360 --> 02:19:42,659
+Otoraret ederseniz, ULAKBİM, Yıldız Teknik Üniversitesi şu tarihte, şu saatte indirilmiştir diyor. Bu bir görünür watermark işaret. Bu dosyanın kendi içerisinde görünmeyen watermark da var.
+
+537
+02:19:55,360 --> 02:20:08,780
+İndirdiği beliriz. Ben bu dosyayı eğer eşime, dostuma tanıdığına sağa sola dağıtılsam o zaman telif haklarına aykırı bir iş işlemiş olurum ve başım derdi girer.
+
+538
+02:20:09,203 --> 02:20:28,543
+Fakat ben bu makaleye diyelim ki başka bir meslektaşıma, bölümden başka bir hocama yollasam veya örneğin işte İstanbul Teknik Üniversitesi'ndeki bir tanıdığım hocaya yollasam o zaman bir problem olmaz. Çünkü onlar da zaten bu kaynaklara üye. Onlar kendileri de indirebilirdi bunu.
+
+539
+02:20:34,004 --> 02:20:50,804
+İçinlikle gönderebilirsiniz. Hiç problem değil. Çünkü kendilerinin de bu şekilde girip indirebileceği kişilere gönderebilirsiniz. Ama unutup da mesela işyerinizde çalıştığınız, başka bir arkadaşınızı, amirinize falan gönderdiğiniz zaman suç işlemiş oluyorsunuz.
+
+540
+02:20:51,103 --> 02:21:08,523
+Telif haklarını ihra etmiş oluyorsunuz. Ben bahsettiğim gibi hem kütüphane bilgi işlem sorumlusu olarak hem de bir akademisyen olarak geçirdiğim süre içerisinde bu şekilde davranıp başa derde giren öğrenciler ve akademisyenler olduğuna...
+
+541
+02:21:08,852 --> 02:21:22,832
+Gördüm, duydum. Bu nedenle bu konuda sizlere bir uyarmak istiyorum. Erişim hakkı olan kişilerle paylaşabilirsiniz. Başka kişilerle paylaşmayınız diyorum. Önemli bir yasal uyarı şeklinde.
+
+542
+02:21:23,200 --> 02:21:37,200
+Evet, ben bunu daha sonra istediğim zaman okuyabilirim, inceleyebilirim filan. Evet bakın, adapter, bridge, composite, fasad bunlar bizim her birini tek tek göreceğimiz tasarım kalıpları önümüzdeki haftalarda.
+
+543
+02:21:38,579 --> 02:22:01,639
+Evet, durumlar bunlar arkadaşlar. Bu tip kaynaklarla ilgili. Dersi biraz uzattım. Özür dilerim. Ona daha fazla ilerletmeyeceğim. Yani bugünlük bu kadar diyorum ders işleri olarak. Haftaya yine online devam edeceğiz ve artık tasarım kalıplarının üstüne bizzat çalışmaya başlayacağız önümüzdeki haftadan itibaren.
+
+544
+02:22:01,639 --> 02:22:04,639
+Sorularınız varsa buyurun bekliyorum.
+
+545
+02:22:05,172 --> 02:22:14,992
+Bakın, soğbete [öğrenci]. Diyor ki, ekstra kontenjan açılacak mı ders için? Benim pek bir bilgim yok bu konuda.
+
+546
+02:22:16,915 --> 02:22:26,036
+Bölüm Başkan Yardımcılarıyla görüşün lütfen. Eğer bu konuda talep varsa değerlendirir öğrenci sayısına göre.
+
+547
+02:22:26,036 --> 02:22:44,615
+Eğer derslerin kontenjanlar arasında bir adaletsiz dağıtlım yoksa ben göremiyorum. Biz bireysel hocalar göremiyoruz. Eski sistemde görüyorduk kaç ders, kaç kişilik kontenjanlar açılmış ve ne kadarı dolmuş onu görebiliyorduk en azından eski sistemde. Yeni sistemde göremiyoruz.
+
+548
+02:22:44,915 --> 02:22:50,915
+Bilgiye bölüm başkanlığı, başkan yardımcıları, bölüm sekreterleri haiz bu bilgiye.
+
+549
+02:22:51,055 --> 02:22:52,015
+Onunla görebiliyor.
+
+550
+02:22:52,435 --> 02:23:03,695
+Eğer birçok ders 50 kontenjan, 50'si de dolmuş ama 3-4 tane derste 20 kontenjan sadece var, 30'u boş gibi şeyler varsa o zaman yapmayabilirler.
+
+551
+02:23:03,695 --> 02:23:12,695
+Ama derslerde genel bir doluluk oranına, çok sayıda derste doluluk oranına çok yaklaşılmışsa o zaman ek kontenjan tanımlarına...
+
+552
+02:23:12,915 --> 02:23:40,075
+Bilmiyorum. Bana sorarlar aslında hocam, siz dersiniz 50'den 55'e ya da 60'a çıkartalım mı? O zaman ben olumlu yanıt veririm. Olur, hay hay derim. Benim için problem yok derim. Çünkü bir şey yani, ne bileyim bir rabatuvarda birebir işlemimiz gereken bir ders değil bu. Yani müsait ders biraz daha fazla katılımcıya. O yüzden bence okeydir.
+
+553
+02:23:40,915 --> 02:23:52,536
+Bunun için başvurmanız gereken bence bölüm başkanlığıdır. Bölüm başkanı Nizamettin Hocamıza, Başkan Yardımcılarımız, Kırkan Bilgin, Mehmet Aktaş Koçarı'ndan bir soru.
+
+554
+02:23:54,695 --> 02:23:59,975
+Kamuoyu baskısı oluşturan bir plan. O şekilde belki açılabiliriz.
+
+555
+02:24:00,895 --> 02:24:01,295
+Durum bu.
+
+556
+02:24:02,195 --> 02:24:13,915
+Tamam. Başka soru soran. Gerek bunun gibi, gerek dersle ilgili, gerek yakından veya uzaktan ilgili olabilir. Sonra varsa duyun. Sözü de sorabilirsiniz, çekten yazabilirsiniz.
+
+557
+02:24:40,531 --> 02:24:43,451
+Peki, o zaman soru yoksa bu kadar diyeceğiz.
+
+558
+02:24:44,595 --> 02:24:56,575
+Kadın arkadaşlarına teşekkür ederim. Şimdi her ne kadar ben OVS'den uyurmaya çalışsam da yine de duyuru ulaşmamış öğrencilerden var olduğunu fark ettik.
+
+559
+02:24:56,575 --> 02:25:07,635
+Ama bugün çok özel ders konusunda çok özel bir şey yapmadık. Zaten kayıtlarda da her istenildiği zaman dersin kayıtları seyredebilebiliyor. O konuda bir problem yok.
+
+560
+02:25:08,015 --> 02:25:11,075
+Kaçın arkadaşlar kayıtlardan seyredebilirler tekrar.
+
+561
+02:25:12,595 --> 02:25:21,995
+Teşekkür ederim. Bugünlük bu kadar. Haftaya görüşmek üzere. Sağlıcakla kalın diyorum herkese. Oturmak atabilirim artık.
