@@ -1,0 +1,2535 @@
+1
+00:03:00,307 --> 00:03:13,747
+Evet arkadaşlar, hoş geldiniz. Hepinize güzel bir hafta diliyorum. Dördüncü haftadayız. Saat iki, beş geçiyor. Yaklaşık otuz kişi divarındayız. Belki tonradan eklenen arkadaşlarımız olacaktır.
+
+2
+00:03:14,507 --> 00:03:27,447
+Kayra arkadaşımızın bir sorusu var. Geçen haftaki sunumlarla ilgili PDF'leri paylaşacak mısınız diye sormuş. Evet, dersin duvarından önümüzdeki haftaya kadar paylaşmış olurum.
+
+3
+00:03:28,147 --> 00:03:39,168
+İlk hafta ve ikinci hafta yaptığımız bir sunum vardı. Bir de geçtiğimiz haftanın bir sunumu vardı. İki sunumu PDF olarak sizlerle paylaşacağım.
+
+4
+00:03:41,328 --> 00:03:46,807
+Önümüzdeki bir hafta, iki hafta içerisinde de dönem projenizi vermiş olmayı planlıyorum.
+
+5
+00:03:48,168 --> 00:03:53,768
+Konuştuğumuz gibi bir tane de ödeviniz olacak. Onu muhtemelen iki, üç hafta sonra vereceğim.
+
+6
+00:03:55,792 --> 00:04:01,551
+Daha önce topluyor olacağım. Dönem projenizi dönemin sonunda alıyor olacağım. O yüzden dönem projeniz biraz daha kapsamlı olacak.
+
+7
+00:04:04,132 --> 00:04:09,611
+Genel olarak dersin gidişatıyla ilgili bir sorusu ya da yorumu olan varsa ders başında alabilirim.
+
+8
+00:04:10,432 --> 00:04:15,292
+Katkıda bulunmak isteyen varsa. Yoksa bu haftaki sunumumuza geçiyor olacağım.
+
+9
+00:04:20,276 --> 00:04:29,156
+Peki, o zaman sanırım sorunuz yok. Bu haftaki sunumumuza geçebiliriz.
+
+10
+00:04:31,615 --> 00:04:33,995
+Sesimiz geliyor mu hocam? Kayra abi soru sormuştu da.
+
+11
+00:04:35,436 --> 00:04:36,056
+Cevap verdim.
+
+12
+00:04:37,156 --> 00:04:41,115
+Yok, bugün kod yazacak mıyız diye sordu herhalde az önce. Sesli sordu.
+
+13
+00:04:41,776 --> 00:04:43,056
+Ses bana ulaşmadı.
+
+14
+00:04:45,056 --> 00:04:47,776
+Bugün kod yazacak mıyız? Evet, bugün kod yazacağız.
+
+15
+00:04:49,108 --> 00:04:51,528
+Şu an ekranını görebiliyor musunuz?
+
+16
+00:04:55,187 --> 00:04:55,987
+Gözükeceğim.
+
+17
+00:04:56,668 --> 00:05:15,867
+Tamam. Kayra senin sesini duymadım o yüzden kusura bakma lütfen. Bugün kod yazacağız. Bir tane giriş seviyesinde bir aktivite, iki aktiviteyle başlayacağız. O yüzden dersin ikinci bölümünü kod yazmayı ayırmayı planlıyorum.
+
+18
+00:05:17,327 --> 00:05:19,028
+Şimdi isterseniz başlayalım.
+
+19
+00:05:21,459 --> 00:05:28,360
+Aktiviteleri tanıyacağız bu hafta daha yakından. Aktivite Lifecycle'a biraz daha detaylı olarak bakacağız.
+
+20
+00:05:30,360 --> 00:05:37,519
+Tabi ilerleyen haftalarda aktiviteler arasındaki ilişkiyi de konuşuyacağız bu hafta biraz değindikten sonra.
+
+21
+00:05:39,139 --> 00:05:44,219
+Bir aktivitenin bir ekranı temsil ettiğini geçtiğimiz hafta söylemiştik.
+
+22
+00:05:44,627 --> 00:05:50,427
+Tabii her uygulamanın bir başlangıç aktivitesi genellikle oluyor. Launcher App.
+
+23
+00:05:51,060 --> 00:05:59,960
+Daha doğrusu Launcher Activity dediğimiz bir aktivitesi oluyor ama bir uygulamaya mutlaka oradan dahil olmanız gerekmiyor.
+
+24
+00:06:00,639 --> 00:06:04,500
+Bir user bir uygulamayı farklı kanallardan tetikleyip kullanıyor olabilir.
+
+25
+00:06:05,100 --> 00:06:08,579
+Bir user bir uygulamanın farklı aktivitelerini kullanıyor olabilir.
+
+26
+00:06:08,579 --> 00:06:12,740
+O yüzden aslında bu hikaye biraz non-deterministik bir hikaye.
+
+27
+00:06:12,840 --> 00:06:18,579
+Event-driven programlamada özellikle desktop'taki programlamadan mobil uygulamanın...
+
+28
+00:06:19,060 --> 00:06:23,039
+Ayrılmasını güzel temsil eden bir örnek bu.
+
+29
+00:06:23,659 --> 00:06:38,060
+Bir uygulamaya çalıştırdığınızda e-mail'larınızı gördüğünüz bir uygulamanın başka bir uygulama tarafından çalıştırıldığında bir e-mail göndermek için kullanılan aktivitesine ulaşabiliyorsunuz.
+
+30
+00:06:47,060 --> 00:06:55,299
+Bu bilgiyi gönderebilecek, bu bilgiyi paylaşabilecek, bu aktiviteye sahip, bu yeteneğe sahip uygulamaların listesi geliyor.
+
+31
+00:06:55,439 --> 00:06:58,399
+İşte WhatsApp olur bu, Twitter olur vesaire.
+
+32
+00:06:59,199 --> 00:07:10,939
+Bu yüzden bir uygulamanın birden fazla aslında giriş noktası bizim için var ve aktivitelerde aslında en temel yapı taşı mobil uygulamaların.
+
+33
+00:07:13,779 --> 00:07:29,779
+Bağımsız birer iş yapan uygulamalar, küçük uygulamalar olarak da görebilirsiniz. Aslında birbirleriyle uyumlu olarak çalışan ama birbirleriyle bağlılığı minimum seviyede olan yapılar. Bu yüzden bir uygulama...
+
+34
+00:07:31,156 --> 00:07:37,235
+Onun üzerinde aktiviteye sahipken sadece birkaç aktivitesi çok daha yoğun kullanılıyor olabilir.
+
+35
+00:07:37,596 --> 00:07:40,635
+Hem kendi içerisinden hem de başka uygulamalar tarafından.
+
+36
+00:07:41,656 --> 00:07:47,475
+İzlenecek yolda söylediğim gibi kullanıcının ihtiyacına göre değişkenlik gösterebiliyor.
+
+37
+00:07:48,019 --> 00:08:01,419
+Son yıllarda özellikle ekranların büyümesi doğrultusunda bir ekranın birden fazla aktivite tarafından kullanılması da artık mümkün.
+
+38
+00:08:01,419 --> 00:08:03,419
+Bu sayede...
+
+39
+00:08:03,923 --> 00:08:09,843
+Gördüğünüz ekranda, işte Single User Interface diyorduk şu ana kadar aktiviteler için.
+
+40
+00:08:10,643 --> 00:08:20,183
+Bir ekranı ikiye bölerek gerektiğinde birden fazla aktivitenin aynı anda çalışmasını sağlayabiliyorsunuz birbirlerinden bağımsız olarak.
+
+41
+00:08:20,183 --> 00:08:28,183
+Tabii aktiviteler içerisinde fragmentlar da var. Bir aktivitenin alt işlerini...
+
+42
+00:08:29,235 --> 00:08:35,235
+İki ya da üç Fragment'a bölerek o aktiviteyi yönetme şansına sahip olabiliyorsunuz.
+
+43
+00:08:36,724 --> 00:08:46,764
+Ancak bu tabii ihtiyaç dahilinde değerlendiriliyor. Uygulamanıza ve uygulamanızın kullanılacak cihazlarına bağlı olarak bu değişkenlik gösteriyor.
+
+44
+00:08:47,423 --> 00:08:52,144
+Mutlaka bir tane giriş aktiviteniz oluyor. Main activity olarak adlandırılan.
+
+45
+00:08:52,144 --> 00:09:00,524
+İsmi illa main activity olmak zorunda değil ama kullanıcı uygulamanızı ilk açtığında karşılaştığı aktivite launcher.
+
+46
+00:09:01,107 --> 00:09:10,788
+Activity olarak da adlandırılıyor. O yüzden mutlaka bir uygulamanızın genelde bir başlangıç aktivitesi var.
+
+47
+00:09:11,387 --> 00:09:23,367
+Ama diğer bütün aktivitelerde olduğu gibi o aktivite istenildiği takdirde devreye giren bir aktivite ya da uygulama açıldığında devreye giren bir aktivite.
+
+48
+00:09:23,367 --> 00:09:27,907
+Onun dışında bütün aktiviteler herhangi bir noktadan erişilebilir olarak karşınıza çıkıyor.
+
+49
+00:09:31,604 --> 00:09:40,084
+Tabii bir aktivite yarattığınızda, yani bir aslında modül yarattığınızda bunu manifest'e tanımlamanız gerekiyor.
+
+50
+00:09:40,084 --> 00:09:47,424
+Bunun için bir application tag'ının içerisinde aktivitelerinizi tanımlıyorsunuz.
+
+51
+00:09:47,464 --> 00:09:49,056
+Burada...
+
+52
+00:09:49,056 --> 00:09:53,156
+XML sintaksında yazılan bir aktivite görüyorsunuz.
+
+53
+00:09:53,156 --> 00:09:58,696
+Sadece ismi belirtilen üst örnekteki yazım stilinde.
+
+54
+00:10:00,052 --> 00:10:08,991
+İki tane aktivite tagi açıp bir tanesini açmak, diğerini kapamak için kullanmayıp aynı blok içerisinde hem açma-kapama işlemi yapılmış.
+
+55
+00:10:09,852 --> 00:10:18,052
+Aşağıdaki örneğe indiğimizde birden fazla özellik tanımlayacağınız zaman da işte bir açma tagi var, bir de kapama tagi var.
+
+56
+00:10:28,052 --> 00:10:30,932
+Otomatik olarak ürettiğinizi zaten sistem tanımlıyor.
+
+57
+00:10:30,932 --> 00:10:37,932
+Ama başka kaynaklardan bir kok parçası projenize dahil ettiğinizde o...
+
+58
+00:10:38,611 --> 00:11:02,651
+Aktivitenin ismini mutlaka manifesto tanımlamanız lazım. Yani mesela işte ne diyelim A aktivitesi, B aktivitesi aldınız ve projenizi eklediniz. Bunu eklediğinizde projenin içinde yaratmadığınız için yeni bir dosya ürettiğiniz zaman manifesto tanımlamış olmuyorsunuz. Buraya manifesto özel olarak bunu tanımlayıp gerekli isim değişikliklerini yapmanız sizden bekleniyor.
+
+59
+00:11:06,611 --> 00:11:13,331
+Bu konferi yapıyorsanız, manifestin içerisinde bu yeni eklediğiniz aktiviteleri de mutlaka tanımlamanız gerekiyor.
+
+60
+00:11:13,451 --> 00:11:19,011
+Peki, aktivite çok basit haliyle ismine de tanımlanabilir.
+
+61
+00:11:19,511 --> 00:11:23,091
+Ama bu aktiviteyle ilgili bir ikon kullanıyorsanız, ikon tanımlayabilirsiniz.
+
+62
+00:11:23,091 --> 00:11:29,091
+Ya da bu aktivitenizin bir yeteneği varsa, ki işte...
+
+63
+00:11:29,395 --> 00:11:39,516
+Çokça örnek veriyoruz. Bir e-mail gönderebilme yeteneği varsa o zaman bu yeteneği Intent, Intent Filter ile tanımlama şansına sahipsiniz.
+
+64
+00:11:39,516 --> 00:11:47,516
+Intent Filter şunu söylüyor sisteme, ben şu aksiyonu, şu kategorideki...
+
+65
+00:11:48,464 --> 00:12:10,464
+Uygulamalar için, şu veri tipi için yapabilirim demek bu. Bu sayede siz sisteme bunu manifest ile tanıttığınızda artık sizin yazdığınız uygulama, bir instant messaging uygulaması da olabilir. Bir share talebi geldiğinde başka bir uygulamadan sizin uygulamanızda bir alternatif...
+
+66
+00:12:11,124 --> 00:12:15,124
+Bu aksiyonu gerçekleştirebilecek listeye girmiş oluyor.
+
+67
+00:12:15,663 --> 00:12:24,324
+Bu yüzden aktivitenizin başka uygulamalara da hizmet etmesini istiyorsanız ve böyle bir yeteneği varsa o aktivitenin,
+
+68
+00:12:24,324 --> 00:12:31,180
+o zaman onunla ilgili bir intent filter tanımlıyorsunuz manifestin içerisine ve bu sayede...
+
+69
+00:12:31,892 --> 00:12:47,892
+Sizin uygulamanızda 20 tane aktivite var diyelim. Bazı aktiviteleriniz bazı görevleri yerine getirebilmek için sisteme register olmuş oluyor. Bu sayede de ilgili isteklere karşılık verebilecek listede kendine yer bulabiliyor.
+
+70
+00:12:51,668 --> 00:13:01,148
+Şimdi gelelim bu noktada bizim için aktiviteler hangi life cycle'da hangi adımlardan geçiyorlar.
+
+71
+00:13:01,148 --> 00:13:02,700
+Dediğim gibi bunu daha önce...
+
+72
+00:13:03,251 --> 00:13:06,991
+Mesaca konuşmuştuk, üzerinden bir kez daha geçmekte fayda var.
+
+73
+00:13:06,991 --> 00:13:27,831
+Bir aktivite launch edildiği zaman, yani siz uygulamayı ikona tıklayıp açtığınızda ya da bir servis üzerinden aktivite çağrıldığında ya da başka bir uygulama üzerinden aktivite launch edildiğinde onCreate.
+
+74
+00:13:28,224 --> 00:13:43,224
+Metodu çalışıyor. Bunların tek tek içeriklerini konuşuyor olacağız. OnCreate'den sonra OnStart, OnStart'dan sonra OnResume ve Activity artık çalışır bir halde. Kendine foregroundda yer buluyor.
+
+75
+00:13:54,995 --> 00:14:17,899
+Fark etmeden de bu moda geçmiş olabilir. OnPause'a giriyor sıra ile arkasından OnStop'a giriyor. OnPause'a girip arka planda görünür kalırsa, kısman da olsa tekrar OnResium'dan kaldığı yerden devam edebilir ya da biraz önce söylediğim gibi aktivite tamamen durur ve görüntüden çıkar. O zaman OnStop'a geçer. OnStop'tan...
+
+76
+00:14:18,004 --> 00:14:26,903
+Eğer dönecekse geri, onRestart üzerinden tekrar aktivite çalışır hale geliyor.
+
+77
+00:14:27,484 --> 00:14:35,244
+Bu noktada onStop'a gelmesi demek şu demek, işte siz back tuşuna bastınız diyelim.
+
+78
+00:14:35,764 --> 00:14:43,583
+Ya da Home tuşuna bastınız. Ki burada Back ile Home tuşu birbirinden ayrılıyor ama biraz sonra o detayı göreceksiniz.
+
+79
+00:14:44,283 --> 00:14:53,563
+Ya da o anda o aktiviteden başka bir aktiviteye geçtiniz. Örneğin fotoğraf çekeceksiniz. Başka bir aktiviteyi çağırdınız.
+
+80
+00:14:54,063 --> 00:15:00,524
+O zaman tamamen görüntüden çıkan ilgili uygulamanızdaki aktivite OnStop moduna geçiyor ve OnStop...
+
+81
+00:15:01,039 --> 00:15:07,580
+Moduna geçtiği anda da bu callback vasıtasıyla on-stop metodu çalışıyor.
+
+82
+00:15:08,200 --> 00:15:14,820
+Bu metotlar çalıştığında da sizler tarafından tanımlanmış olan işlerin yapılması bekleniyor.
+
+83
+00:15:15,360 --> 00:15:16,039
+Nedir bunlar?
+
+84
+00:15:16,899 --> 00:15:21,580
+İşte o anda eğer kullanılmıyorsa kaynakların re-rease edilmesi.
+
+85
+00:15:22,096 --> 00:15:30,456
+O anda kullanılmıyorsa, sensörlere register olunuyor ve dinlenmesi gerekmiyorsa onların unregister edilmesi gibi.
+
+86
+00:15:32,755 --> 00:15:48,775
+Hatta veri saklanması gerekiyorsa, mesela onstopa geçtiniz, onstopa geçerken belli verilerin kalıcı bir şekilde berleğe yazılması gerekiyor, diyelim ikincili berleye ya da veri tabanına yazılması gerekiyor. Bu işlemlerin buralardan yürütülmesi gerekiyor.
+
+87
+00:15:58,772 --> 00:16:07,052
+O çalışma sırasında yapılması uzun sürecekse bir ne diyelim interakşında bir sorun yaratabilir.
+
+88
+00:16:07,152 --> 00:16:16,772
+Çünkü kullanıcı aynı zamanda ekran üzerinde tıklama işlerini devam ederken uzun sürecek bir aktiviteyi arka plan...
+
+89
+00:16:19,028 --> 00:16:30,408
+İçin kullanılan özel API'ler ile, metotlar ile çalıştırmazsanız, o zaman kullanıcının ekranında donmalar söz konusu oluyor.
+
+90
+00:16:30,528 --> 00:16:33,867
+4-5 saniyelik bir iş yapıyorsunuz diyelim, o sırada hızlıca yapmaya çalışıyor.
+
+91
+00:16:34,467 --> 00:16:42,707
+Siz hem çalışırken kullanıcısına aldığınız aksiyonları takip edip, hem de o uzun sürede işi main thread'de yapmaya kalkarsanız,
+
+92
+00:16:47,028 --> 00:16:57,028
+Kullanıcı memnuniyetsizliği de sonuçlanır. O yüzden uzun sürecek işler için genellikle farklı bir thread yapısı kullanmak ya da işte...
+
+93
+00:16:57,491 --> 00:17:07,271
+Arka planda çalışabilecek olan çeşitli yapılar var. Onları kullanmak öneriliyor. Bunu background tasklarda detaylı olarak konuşuyor olacağız.
+
+94
+00:17:07,791 --> 00:17:17,831
+Gelelim OnDistro'ya. Artık Activity tamamlanacaksa bu sizin kodu yazan geliştirici tarafından belirlenen bir finish komutuyla da olabilir.
+
+95
+00:17:18,483 --> 00:17:24,344
+Sizin back tuşuna basma sebebiyle artık o aktiviteden tamamen çıkmanızdan da kaynaklanabilir.
+
+96
+00:17:24,983 --> 00:17:30,743
+Ya da sistem tarafından bir kaynak ihtiyacından dolayı da aktivitenin sonlandırılıyor olabilir.
+
+97
+00:17:30,743 --> 00:17:41,743
+Bu doğrultuda onstop'tan farklı olarak özellikle Android 11 ve öncesinde tamamen bellekten...
+
+98
+00:17:42,228 --> 00:18:05,228
+O aktiviteye ait bilgilerin kaldırılmasıyla sonuçlanıyordu. 12 ve sonrasında ise daha yeni bir yaklaşım getirdiler. O da şu, onDistroy'a geçen proses aslında kil ediliyor ama sistemde var olduğu, yani yer var olduğu sürece bilgileri saklanıp bir...
+
+99
+00:18:05,779 --> 00:18:20,159
+Cold Start yapmak yerine, yani uygulamayı yeniden çalıştırmak yerine Warm Start dediğimiz en son halinden tekrar launch edilmesi sağlanarak eğer duruyorsa biraz daha hız kazanılmış oluyor.
+
+100
+00:18:21,019 --> 00:18:26,279
+Bunu aslında Android task'lara bir back task.
+
+101
+00:18:26,740 --> 00:18:30,160
+Scheduling mantığında, yani bir stack mantığında saklıyor.
+
+102
+00:18:30,780 --> 00:18:34,599
+Her çalıştırdığınız task bir siteye push edilir gibi push ediliyor.
+
+103
+00:18:35,200 --> 00:18:53,820
+Üstüne yeni tasklar açtıkça bu bahsetmiş olduğumuz daha önce açtığınız tasklar alt kısımda kalıyorlar ve işte back yaptıkça siteyin üzerinden sizin eski tasklarınız yavaş yavaş önünüze gelmeye başlıyor.
+
+104
+00:18:54,820 --> 00:18:57,039
+Genellikle bu sistematik kullanılıyor.
+
+105
+00:18:59,092 --> 00:19:03,272
+Genel yapı bu. Şimdi biraz özeline bakalım burada.
+
+106
+00:19:05,612 --> 00:19:09,892
+Tabii oraya geçmeden önce küçük bir şey söylemek lazım.
+
+107
+00:19:10,452 --> 00:19:17,251
+Aktivite, Lifecycle'ını bilmek ve metotları doğru kullanmak neden önemli bir oraya bakalım.
+
+108
+00:19:22,836 --> 00:19:34,396
+Uygulamazsanız bu lifecycle'a göre, mesela bir telefon konuşması için bir telefonunuz çaldığında uygulamanız crash edebilir ya da başka bir uygulamaya geçtiğinizde yine aynı sorunla karşılaşabilirsiniz.
+
+109
+00:19:35,056 --> 00:19:42,296
+Keza bu lifecycle'ı iyi kullanmadığınız takdirde gereksiz sistem kaynaklarını meşgul edebilirsiniz.
+
+110
+00:19:43,576 --> 00:19:49,296
+State'lere uygun olarak release etmezseniz kaynakları, arka plana geçen...
+
+111
+00:19:49,503 --> 00:20:03,403
+Her uygulamanın bunu yönetmediğini düşündüğünüzde daha fazla enerji tüketir, daha fazla kaynak tüketir. Bu bir yerden sonra yönetilemez hale gelir. Bu nedenle uygulama geliştiricilerin bunu dikkate alması gerekir.
+
+112
+00:20:05,903 --> 00:20:15,403
+Tabii lifecycle'ı zaman içerisinde daha yakından öğreneceksiniz ve bu lifecycle'larda şunu yapma şansımız var. Her bir state için...
+
+113
+00:20:16,019 --> 00:20:24,519
+O state'e ne zaman geçildi? O state ile ilgili bir sorun var mı? Ya da orada yapılan işler ne kadar sürede yapılıyor?
+
+114
+00:20:24,940 --> 00:20:37,019
+Buna ilgili log mekanizmasını kullanıp o state'lere log mesajları koyabilirsiniz ve bir nevi aktivitenizin her state değiştirdiğinde bir mesaj üreterek aslında...
+
+115
+00:20:38,867 --> 00:20:57,668
+Sistem çalıştığı sürece nelerden geçtiğini ve ne kadar zaman harcadığını görme şansına sahipsiniz. O yüzden LogCat dediğimiz Android Studio'da sizler tarafından ya da çalıştırdığınız aktivite tarafından üretilen mesajları takip etme şansına sahipsiniz.
+
+116
+00:20:57,668 --> 00:21:02,768
+Bu LogCat aynı zamanda hatanın nereden kaynaklandığını da size söylüyor.
+
+117
+00:21:04,756 --> 00:21:22,016
+Uygulama çağırıyorsunuz diyelim. Uygulama crash ediyor. İşte bu aktivitenin ismini yanlış yazdığınız için olabilir. Manifeste aktiviteyi tanımlamadığınız için olabilir. Bu yüzden Logcat üzerinden hem mesajları takip etmek ve anlamaya çalışmak size çok şey kazandıracak.
+
+118
+00:21:32,756 --> 00:21:38,556
+Hedeflerle aslında sağlamış olacaksınız. O yüzden bu da dikkat edilmesi gereken önemli bir nokta.
+
+119
+00:21:40,796 --> 00:21:53,796
+OnCreate, açıkçası OnCreate, çok pardon, şu açıdan önemli. OnCreate'de sistem ilk defa aktiviteyi yaratıyor.
+
+120
+00:21:54,355 --> 00:22:08,816
+Ve burada aslında bütün bu initial değerleriniz, aktiviteyle ilgili oluşturulması gereken ilklendirmeler bu metot içerisinde gerçekleşmiş oluyor.
+
+121
+00:22:08,816 --> 00:22:17,175
+O yüzden aslında ilklendirmenin yapıldığı bizim için bir metot.
+
+122
+00:22:20,692 --> 00:22:35,572
+Ara yüzle ilişkilendirilmesi bir sonraki adımda gerçekleşiyor ve onStart ile birlikte artık ara yüzle olan bu bağlantı gerçek hayatta karşımıza çıkıyor.
+
+123
+00:22:36,032 --> 00:22:48,451
+OnCreate'in içerisinde layouttaki XML file ile ilişkiyi kuruyorsunuz, işte butonlarla ilişkiyi kuruyorsunuz ama asıl foreground'a aktivitinin gelmesi ve görselleşmesi işlemi
+
+124
+00:22:48,692 --> 00:22:55,272
+Ve kullanıcıyla interaksiyonun başladığı adım onStart'ta gerçekleşiyor.
+
+125
+00:22:55,731 --> 00:23:00,332
+O yüzden onCreate'de evet, single user interface yarattığınız bütün bu.
+
+126
+00:23:00,852 --> 00:23:25,852
+XML ile olan ilişkiyi kurdunuz ki bugün onu yapacağız ilk kodu yazdığımız noktada. Bu ilişkilerin hepsinin tanımlamasını, ilklendirmelerini burada yaptınız. Yani resource file'larınızla source file'larınızdaki değişkenlerin ilişkisi R dosyası üzerinden onCreate'de kuruldu. Ama onCreate'de bütün bu yaratmış olduğunuz...
+
+127
+00:23:26,804 --> 00:23:34,064
+İlişkiyi kullanıcı ile interaksiyona geçirdiğiniz kısım onStart sayesinde gerçekleşiyor.
+
+128
+00:23:34,644 --> 00:23:41,024
+Ve artık bu noktadan itibaren kullanıcıdan gelen aksiyonları da takip etmeye başlıyorsunuz.
+
+129
+00:23:42,864 --> 00:23:49,884
+O yüzden sadece onCreate ile hareket etmek aslında aksiyonları takip etmek için yeterli değil.
+
+130
+00:23:53,428 --> 00:23:54,316
+Şöyle bir şey.
+
+131
+00:23:58,132 --> 00:23:58,956
+Ö
+
+132
+00:24:03,667 --> 00:24:15,807
+Şimdi starttan sonra onPause'dan ya da onStop üzerinden döndüğünüz noktada bir onResume metodumuz var.
+
+133
+00:24:15,807 --> 00:24:25,407
+Ve burada tekrar arka plana düşen bir aktivitenin ön plana alınması.
+
+134
+00:24:26,132 --> 00:24:41,132
+Noktasında yapılması gerekenlerin yazıldığı kod. Bu ne demek? Mesela bir sensörü register etmiştiniz onCreate'de ama onPouse'a düştüğü zaman da unregister ettiniz.
+
+135
+00:24:41,132 --> 00:24:52,652
+Yani dediniz ki ben uygulama açık değilken takip etmeyeceğim dediniz. Güzel, o sırada telefonla konuşuyorsunuz. Telefon konuşmanız bitti. Ya da bildirimi gördünüz tekrar.
+
+136
+00:24:53,119 --> 00:25:12,699
+Tamamıyla sizin aktivitenizde döndü sistem. O zaman onPause'dan running moduna geçerken onResume çağrıldığında unregister ettiğiniz sensörü register etmezseniz ilk onPause'a ya da onStop'a geçtiği anda bir daha sensörü takip etmemiş olursunuz.
+
+137
+00:25:12,799 --> 00:25:18,579
+O yüzden onPause'da yaptığınız işin tam tersini onResume'da yapmanız sizden bekleniyor.
+
+138
+00:25:19,056 --> 00:25:25,316
+Bu anlamda onResume ile onPause, Mirror ayna görevi görüyorlar.
+
+139
+00:25:25,716 --> 00:25:28,836
+Aynı şey onStop ile onRestart arasında var.
+
+140
+00:25:29,836 --> 00:25:37,096
+OnStop'ta yazdıklarınızın tam tersinde onRestart tarafında gerçeklemeniz sizden bekleniyor.
+
+141
+00:25:41,748 --> 00:25:48,208
+Tabii onPause hangi şartlarda gerçekleşiyor diye onlara bakalım.
+
+142
+00:25:49,067 --> 00:25:58,788
+Mesela işte sistemsel gelen bütün interaplar uygulamanın durdurulmasına sebebiyet verebilecek her şey.
+
+143
+00:25:59,388 --> 00:26:02,448
+Uygulamanızın arka plana görünür.
+
+144
+00:26:02,900 --> 00:26:09,560
+Vaziyette geçtiği, arka planı geçtiği durumların hepsinde aktiviteniz onPause alıyor.
+
+145
+00:26:10,400 --> 00:26:14,400
+Tabii Multi Window Mod'dan bahsettik büyük ekranlar için.
+
+146
+00:26:14,400 --> 00:26:21,720
+Aynı anda birden fazla uygulamanın çalıştığı Multi Window Mod'da bu iki ya da daha fazla olabilir.
+
+147
+00:26:22,400 --> 00:26:30,336
+Siz bir uygulamaya odaklanmış o uygulama üzerinde interaksiyon içerisindeyseniz ekranda bulunan diğer...
+
+148
+00:26:30,336 --> 00:26:45,876
+Uygulamalar ekranda olmalarına rağmen arka plana on-pause moduna geçiyorlar. Aktif olarak kullandığınız uygulamanın dışındaki uygulamalar. Bu da yine on-pause metodunun çağrılması anlamına geliyor.
+
+149
+00:26:47,355 --> 00:26:50,416
+Veya uygulamanız bir dialog box.
+
+150
+00:26:50,963 --> 00:27:13,703
+Ön plana getirdiğinde ya da bir bilgilendirme mesajı için alert mesajı ürettiğinde yine kısa süreli ya da bir interaksiyonlu yine evet, hayır bir butona tıklayarak ya da bir yere tıklayarak ortadan kaybolana kadar aktiviteniz aslında on-pause moduna geçmiş oluyor.
+
+151
+00:27:14,228 --> 00:27:32,448
+Bu sıradaki temel amaç sistem kaynaklarının, işte burada GPS'ten bahsediliyor, çok özellikle yüksek enerji tüketen kaynakların boşluşuna pil tüketmemesi için mutlaka bu süreçte arka plana alınması gerekiyor.
+
+152
+00:27:36,288 --> 00:27:53,627
+Telefon geldiği zaman konuşmaya devam ettiğinizde konuşmanız uzun sürebilir ve bu yüzden sizin aslında bu süreç boyunca boş boşuna arkada uygulamanız çalışmadığı sürece kaynakları tüketmeniz gerçekten anlamsız oluyor.
+
+153
+00:27:53,708 --> 00:27:59,847
+Bir saat boyunca bir şeyin veri toplamaya devam etmesi anlamlı olmayabilir. Bunlara dikkat etmek gerekiyor.
+
+154
+00:28:02,900 --> 00:28:24,099
+Bir soru gelmiş Kayra'dan. OnPause'da sadece kaynak iadesi mi yapılıyor? Hayır, sadece kaynak iadesi olarak bakmamak lazım. OnPause moduna geçtiğiniz zaman o andaki belirli bilgilerin saklanmasıyla ilgili işlemler de yapabilirsiniz. Shared Preferences'a bir şeyi yazmak.
+
+155
+00:28:24,500 --> 00:28:31,500
+Saklamak anlamına gelebilir. OnStop'da keza aynı şekilde bir database'de yazılması gereken bir bilgi varsa...
+
+156
+00:28:33,556 --> 00:28:47,316
+Kalıcı bir bilgiyse eğer bu, o anda sistemin kreş etme ihtimaline karşı, çünkü siz telefonla konuşurken kullanılmadığı için bu onPouse'da bulunan aktivite belli bir süre sonra onStop'a geçecektir.
+
+157
+00:28:47,316 --> 00:28:58,915
+Arka plana düştüğü için ve onStop'ta da uzunca bir süre konuştuğunuzda kaynak tüketimine bağlı olarak belki sistem onu onDistroy ile bir şekilde distroy edecektir.
+
+158
+00:29:01,556 --> 00:29:08,355
+State'lerine geçtiğinizde aslında bir nevi veriyi saklamak için de size fırsat çıkmış oluyor.
+
+159
+00:29:08,515 --> 00:29:10,255
+Tabii burada şöyle bir durum var.
+
+160
+00:29:11,836 --> 00:29:17,895
+Büyük bir veriyi saklayacaksanız on pause ya da on stop aşamasında bunu yapmak çok iyi bir fikir değil.
+
+161
+00:29:17,895 --> 00:29:27,316
+Çünkü uzun sürecek bir saklama aksiyonu bu metot çağrıldığında başlayıp
+
+162
+00:29:27,892 --> 00:29:31,832
+Yine main thread'e bağlı olarak devam etmemesi gerekiyor.
+
+163
+00:29:31,912 --> 00:29:37,892
+Mümkün olduğu kadar hızlı bir saklanacak bir bilginin...
+
+164
+00:29:39,155 --> 00:30:04,435
+Özellikle arka planda işleminin tamamlanmasını bekliyoruz. Buna dikkat etmek gerekiyor. Daha büyük boyutta cloud'a aktarımlar ya da veri tabanına daha büyük boyutta bir bilgi aktarımı söz konusu ise onu ayrı bir threadle daha çok running sırasında handle etmekte fayda var ki bunların içerisinde en kötü zamanlama onDistroy'da bir şeyleri kaydetmeye çalışmak.
+
+165
+00:30:05,935 --> 00:30:32,635
+Çok kısa bir sürede sistemin aktiviteyi devre dışı bırakması demek. O yüzden onPause ve onStop veriyi depolamak adına daha uygun noktalar. OnDistroy'da bunu mümkün olduğunca yapmamanız sizden bekleniyor. Çünkü bir garantisi yok. Saklamaya çalıştığınız veriyi yazamadan aktiviteniz ortadan kaldırılabilir.
+
+166
+00:30:36,948 --> 00:30:46,588
+İşte onStop'un artık aktivitenin gözükmediği noktada devreye girdiğini söylemiştik. Sistem tarafından bu callback çağrılıyor.
+
+167
+00:30:49,488 --> 00:30:56,867
+İşte siz Home butonuna basmış olabilirsiniz ve size uygulamalarınızın olduğu ekran gelebilirim.
+
+168
+00:30:57,227 --> 00:31:00,488
+Back butonuna basmış olabilirsiniz ki önce onStop çağırılır.
+
+169
+00:31:01,087 --> 00:31:05,087
+Yani daha doğrusu onPause, onStop ve onDistro'ya gider.
+
+170
+00:31:05,347 --> 00:31:06,207
+Back butonuna bastığınız.
+
+171
+00:31:06,268 --> 00:31:07,347
+Çünkü Back şu demektir.
+
+172
+00:31:07,447 --> 00:31:08,907
+Ben artık bu aktivitede işim bitti.
+
+173
+00:31:09,508 --> 00:31:10,627
+Başka aktiviteye geçiyorum.
+
+174
+00:31:11,067 --> 00:31:14,508
+O yüzden Back butonu ile Home butonu ayrıdır.
+
+175
+00:31:16,884 --> 00:31:25,084
+O anda bir başka uygulamaya geçmek için gittiğinizi aslında söylersiniz. Hızlıca geri dönüp aynı uygulamadan devam edebilirsiniz.
+
+176
+00:31:27,923 --> 00:31:44,423
+Back butonuna bastığınızda artık o aktiviteyle işiniz olmadığını söylemiş olduğunuz için bu hikayenin sonu OnDistro'ya gider. İkisi birbirinden farklıdır. Home butonuna basmakla Back butonuna basmak arasında böyle bir farklılık vardır.
+
+177
+00:31:52,339 --> 00:32:03,799
+kullanılmayan bir uygulama için en az enerji harcayacak ve kaynak harcayacak şekilde konumlandırılması yapılır on-stop metoduyla.
+
+178
+00:32:06,799 --> 00:32:08,799
+Burada işte...
+
+179
+00:32:09,236 --> 00:32:28,476
+CPU, Intensive Shutdown Operationları da yürütebileceğinizden bahsediyor. Bu şu demek, dediğim gibi, OnDestroy'da geçmeden OnStop tarafında belli başlı, biraz daha uzun sürecek işleri yapabilirsiniz. Ama bunun da bir sınırı var.
+
+180
+00:32:28,864 --> 00:32:39,304
+Her şeyi burada halledemeyebilirsiniz. Bu nedenle Shutdown sırasında, evet, Destroy'e göre daha uzun bir zamanınız var.
+
+181
+00:32:41,124 --> 00:32:45,884
+Ve burada o işleri halletmek mümkün olabilir. Ama yine de dikkatli olmak gerekiyor.
+
+182
+00:32:47,464 --> 00:32:51,864
+OnDestroy. OnDestroy iki şekilde gerçekleşiyor. Biri...
+
+183
+00:32:52,435 --> 00:32:57,535
+Kullanıcı aksiyonu ya da işte ne diyelim?
+
+184
+00:32:58,003 --> 00:33:04,463
+Sistem dışında geliştirici tarafından üretilmiş bir sebeple uygulamanın tamamlanması.
+
+185
+00:33:05,003 --> 00:33:11,723
+Bir de sistemde belirtmiş olduğumuz herhangi bir yapılan değişiklikten kaynaklı.
+
+186
+00:33:11,723 --> 00:33:14,044
+Bu configuration change olarak adlandırıyor genelde.
+
+187
+00:33:14,124 --> 00:33:20,564
+Device'in döndürülmesi, multi-window moda geçilmesi, keyboard ile ilgili bir setting değişikliği yapılması gibi.
+
+188
+00:33:26,003 --> 00:33:35,604
+Bir felsefe ortaya koyuyor ve diyor ki, device ile ilgili bir şey değişiyorsa, o zaman benim yeni bir aktivite oluşturmam gerekir.
+
+189
+00:33:35,683 --> 00:33:43,903
+Çünkü ekran görüntüsünü dike ya da yatay aynı aktiviteyle sağlamam, kullanıcı memnuniyet sizliliğine sebebi olur.
+
+190
+00:33:43,903 --> 00:33:52,584
+O yüzden telefonu döndürdüğünüz zaman, eğer laklamadıysanız bu özelliği, benim buna daha uyumlu hale gelmem için,
+
+191
+00:33:53,236 --> 00:34:06,596
+Mevcut aktiviteyi öldürüp yeni aktivite yaratmam uygun olur diyor ve o yüzden genelde iyi uygulamalarda yatay ve dikey ekran için birden fazla ekran tasarlandığını göreceksinizdir.
+
+192
+00:34:17,556 --> 00:34:24,096
+Türkçe dilinin İngilizceye dönüştürülmesi, İtalyanca'ya dönüştürülmesi gibi gereklilik doğuyor.
+
+193
+00:34:24,216 --> 00:34:30,096
+Bu yüzden de aktivitenin destroy edilmesi ve yeni bir aktivitenin invoke edilmesi önemli.
+
+194
+00:34:30,935 --> 00:34:34,076
+Keza M6.000'de olmadığı için de aynı şeyler geçerli.
+
+195
+00:34:37,076 --> 00:34:40,635
+Şimdi tabii burada önemli bir nokta var.
+
+196
+00:34:42,483 --> 00:34:51,423
+Android işletim sistemi ihtiyaç duyduğunda tüm çalışan uygulamalarınızı sonlandırma hakkına sahip.
+
+197
+00:34:51,423 --> 00:35:01,423
+Ama burada bir hiyerarşi gözetiyor. En öndeki aktivitenizi doğal olarak ilk yok edilecek olan...
+
+198
+00:35:01,523 --> 00:35:17,344
+Hedef olarak belirlemiyorum. Onun için en son hedef, en önde kullandığınız aktivite. Daha sonra belli oranda arka planda gözüken ama odak noktasında olmayan bir aktivite. Yani aslında on-pause modunda ya da on-start modunda.
+
+199
+00:35:19,476 --> 00:35:26,916
+Arka planı aldığınız gözükmeyen ama daha yeni kullandığınız bir Activity bir sonraki öncelik olarak geliyor.
+
+200
+00:35:27,376 --> 00:35:33,256
+En yüksek önceliğe sahip olan da ondan kurtulma ve kaynakları boşaltma noktasında.
+
+201
+00:35:33,256 --> 00:35:44,976
+Destroy edilmiş olan ki biraz önce bahsetmiştim aslında 11 ve öncesinde Android'de Destroy edilen bir prosesin tüm.
+
+202
+00:35:45,492 --> 00:36:05,492
+Kaynakları release ediliyordu ama 12 ve sonrasında bu Cold Start ve Warm Start arasındaki fark kullanıcı deneyimini iyileştirdiği için yer varsa destroy edilmiş aktiviteyi de bir ne diyelim hareketsiz...
+
+203
+00:36:06,164 --> 00:36:22,044
+Canlı diyelim modunda saklıyor bellekte ve bir talep geldiğinde sıfırdan başlatmak yerine o noktadan başlatarak bir avantaj sağlamış oluyor. Kendisine 12 ve üzerindeki sürümlerde bunu destekliyor.
+
+204
+00:36:26,099 --> 00:36:48,519
+Şimdi tabii burada özellikle User Interface tarafında ve Activity tarafında o andaki bulunan state gereği bir oyunda oynuyorsanız, bir formla dolduruyorsanız, o user'a ait son durumu, Activity yok olmadan önce
+
+205
+00:36:49,619 --> 00:37:03,559
+Mutlaka saklamak gerekiyor. Sebebi, siz cihazı döndürdüğünüz anda kullanıcıya ait bir bilgi ya da o andaki ekrandaki bir bilgi kaybolursa tekrar yüklediğinizde bu kullanıcıyı mutsuz eder.
+
+206
+00:37:03,559 --> 00:37:10,559
+Bunun için de Android tarafında şu söyleniyor, mutlaka belirli sunulan...
+
+207
+00:37:10,880 --> 00:37:23,059
+Yöntemleri tercih ederek, user tarafından ya da sistem tarafından aktivitenin sonlanması durumunda yeni aktivitenin kaldığı yerden devam edebilmesi için
+
+208
+00:37:25,139 --> 00:37:37,079
+Kişiye ait ya da o ekrana ait bazı bilgilerin mutlaka saklanmasını ve tekrar yüklenmesini planlamanızı öneriyor Android tarafı.
+
+209
+00:37:37,800 --> 00:37:42,820
+User, işte initiated işler neler olabilir?
+
+210
+00:37:53,300 --> 00:38:05,180
+Çöp kutunuzu, aktivitelerinizde ait çöp kutunuzu temizlemek gibi. Çünkü kaldıkları sürece telefonunuz belli oranda aksiyon almakta yavaşlıyor.
+
+211
+00:38:05,180 --> 00:38:17,740
+İşte uygulamalar arasında, aktiviteler arasında geçiş yaparsanız ya da işte ayarlar ekranından uygulamayı yok ederseniz veya geliştirici.
+
+212
+00:38:18,192 --> 00:38:23,152
+Bir noktada artık bu yapılan işlemler sonucunda da bu aktivite kendi kendini sonlandırır.
+
+213
+00:38:24,152 --> 00:38:40,771
+Kodunu yazdıysa ve bu çağrıldıysa bunlar User Initiated dediğimiz kullanıcı tarafından yapılan aksiyonlar tarafından aktivitenin sonlandırıldığı örnek işlemler olarak karşımıza çıkıyor.
+
+214
+00:38:49,300 --> 00:39:12,300
+Tabii burada sistemin kreş etmesi, sistemin kaynak nedeniyle aktivitenin hayatını sonlandırması gibi veya sistemin kendi kendine restart olması gibi durumlar söz konusu olabilir. Bunların hepsi aslında sistem tarafından...
+
+215
+00:39:13,076 --> 00:39:23,896
+Oluşturulan case'ler. Buna biraz önce user'ın sebep olduğu ama sistemin kuralı gereği oluşan ekranın dikey yatayda konumlandırılması dahi sayılabilir.
+
+216
+00:39:24,076 --> 00:39:28,576
+Bunların ikisinin ayrılma sebepleri var. O sebepleri şimdi burada göreceksiniz.
+
+217
+00:39:28,576 --> 00:39:40,815
+Bir tanesi buradaki kullanılan UI state'leri saklamak için ViewModel, bir diğer alternatif, SavedInstanceState dediğimiz bir bundle objesi var.
+
+218
+00:39:41,076 --> 00:39:44,936
+O bundle objesiyle aktiviteye ait bilgilerin saklanması.
+
+219
+00:39:45,516 --> 00:39:57,876
+Bir de aktivitede alınan bilgilerin tamamen kalıcı bir bölgeye, bu bir internal storage olur, external storage olur ya da network tarafında bir alan olur, buraya yazılması.
+
+220
+00:39:57,876 --> 00:40:04,956
+Şimdi burada bu üç durumun farklı case'ler için.
+
+221
+00:40:05,311 --> 00:40:30,032
+Ele alındığını görüyoruz. Şu anda saat 14.42. Şimdi bunu biraz anlatması zaman alacağından dolayı küçük bir ara verelim. 14.42'den 14.55'e kadar. 14.55'te kaldığımız yerden bunun detayını vererek anlatmaya devam edelim. Evet arkadaşlar, 14.55'te tekrar görüşmek üzere.
+
+222
+00:52:43,155 --> 00:52:51,476
+Evet arkadaşlar, yeniden merhaba. Kaldığımız yerden devam edelim. Hemen slaytları paylaşayım.
+
+223
+00:52:53,556 --> 00:53:05,135
+Şimdi biraz önce UI state'lerdeki bilgileri, Activity'nin değişimlerden sonra tekrar yüklendiğinde kaldığı yerden aynı bilgiyle devam edebilmesi için
+
+224
+00:53:05,588 --> 00:53:09,668
+İçerisindeki bilgilerin nasıl saklanacağını konuşacağız demiştik.
+
+225
+00:53:09,728 --> 00:53:11,508
+Üç temel yaklaşım var demiştik.
+
+226
+00:53:12,328 --> 00:53:24,968
+Burada V model yapısı oluşturursanız, V model yapısı kompleks bilgileri limit dahilinde bir berlek bölgesinde saklama yeteneğine sahip.
+
+227
+00:53:25,264 --> 00:53:44,204
+Ve bunu ancak konfigürasyon değişikliği söz konusu ise yapıyor. Böyle bir kısıtı var. Ama sistem tarafından proses kil edildiyse, öldürüldüyse o zaman aynı zamanda yine işte…
+
+228
+00:53:44,563 --> 00:53:53,844
+User tarafından onFinish noktasında yani Activity.Finish çağrılarak öldürüldüyse burada V-Model işe yaramıyor.
+
+229
+00:53:53,923 --> 00:54:02,724
+Aslında V-Model'in temel bize sağladığı nokta herhangi bir konfigürasyon değişikliğini hızlıca oradaki bilgilerin saklanması.
+
+230
+00:54:06,387 --> 00:54:17,788
+Bugün de biraz sonra göreceğiniz örnekler de var. Bundle objesiyle onSaveInstanceState metodunu çağırarak bilgileri saklamak.
+
+231
+00:54:17,788 --> 00:54:20,788
+Buradaki fark view modele göre...
+
+232
+00:54:21,139 --> 00:54:40,559
+Özellikle bilginin bellekte değil, disk bölgesinde ve serialize edilerek saklanılması. Bu da şu demek, serialize etme işlemi söz konusu olduğu için ilgili saklanması istenen verilerin primitif veriler olması, basit veriler olması.
+
+233
+00:54:42,452 --> 00:54:51,332
+Ön koşul olarak söylenmiş. Burada tabii string bir obje olmasına karşılık basit string bilgilerini de saklayabiliyorsunuz.
+
+234
+00:54:51,872 --> 00:54:57,452
+Buradaki güzellik şu, aktiviteniz sadece konfigürasyon değişikliğine uğradığında değil,
+
+235
+00:54:57,552 --> 00:55:03,452
+aynı zamanda sistem tarafından herhangi bir sebeple durdurulup destroy edildiğinde de
+
+236
+00:55:04,072 --> 00:55:10,452
+tekrar aktivite inişiyet edildiği zaman onCreate ile kaldığınız noktadan...
+
+237
+00:55:10,452 --> 00:55:16,092
+O bilgileri yükleyerek Bundle Objesi'nindeki bilgileri alıp devam edebiliyorsunuz.
+
+238
+00:55:16,292 --> 00:55:18,012
+Vee modele göre böyle bir artısı var.
+
+239
+00:55:18,712 --> 00:55:24,372
+O yüzden genelde Bundle Objesi üzerinden saklamayı tercih ediyorlar uygulama geliştirenler.
+
+240
+00:55:25,172 --> 00:55:31,812
+Her iki duruma karşılıkta eğer saklanacak verilerin yapısı komplekste ise iyi bir çözüm olarak gözüküyor.
+
+241
+00:55:38,452 --> 00:55:55,012
+Özellikle kod içerisindeki finish ile sonlandırılma durumu var ki o zaman zaten bundle objesi devreye girmiyor. Bu bir bilinçli sonlandırma olduğu için herhangi bir şey saklama hamlesi gerçekleşmiyor.
+
+242
+00:56:04,096 --> 00:56:07,096
+Sondanmadan önce yazıyor olmanız önemli.
+
+243
+00:56:08,596 --> 00:56:32,776
+Bell'le erişim daha hızlı ama diski ve network tarafından erişim daha uzun süreli olduğu için biraz daha yavaş gerçekleşiyor. O yüzden çok büyük boyutlarda veriyi bundle objesiyle saklama şansına orada da sahip olamıyorsunuz. Özellikle serialization ve deserialization adımları da işin yavaşlatmasına sebebiyet veriyor.
+
+244
+00:56:34,867 --> 00:56:42,108
+Şimdi burada bu bahsettiğimiz, aslında konuştuklarımızın bir örneğini göreceksiniz.
+
+245
+00:56:42,268 --> 00:56:51,588
+Şimdi genel olarak hem kodun üzerinden ilerleyelim hem de biraz önce konuştuğumuz bundle objesi nasıl kullanılıyor ona bir bakalım.
+
+246
+00:56:51,588 --> 00:56:57,668
+Burada bir main activity var. Bir activity kılasından türetilmiş.
+
+247
+00:57:01,715 --> 00:57:04,756
+ilgili kütüphaneler import ediliyor.
+
+248
+00:57:05,316 --> 00:57:11,256
+İşte View, Button, TextView, Toast, Activity gibi kütüphaneler import ediliyor.
+
+249
+00:57:11,256 --> 00:57:12,456
+Bunlar otomatik yapılıyor.
+
+250
+00:57:12,896 --> 00:57:25,215
+Zaten ilgili kütüphane yoksa bir uyarı işareti çıkıyor kullandığınız komponentle ilgili ve size default olarak öneride bulunuyor şunu import etmen gerekir diye.
+
+251
+00:57:25,735 --> 00:57:28,976
+Burada mesela View.View yazılmış.
+
+252
+00:57:29,715 --> 00:57:33,916
+Button, widget.textview yazılmış. Daha önce size anlatmıştım.
+
+253
+00:57:34,316 --> 00:57:39,115
+Widget.yıldız da denilebilirdi. Ama biz sadece kullanacaklarımızı import ediyoruz.
+
+254
+00:57:39,256 --> 00:57:41,596
+Kodumuzu şişirmek istemiyoruz bu anlamda.
+
+255
+00:57:42,956 --> 00:57:49,036
+Aktivitenin içerisine girdiğinizde önce kullanılacak olan Source File tarafında,
+
+256
+00:57:50,776 --> 00:57:56,976
+XML tarafındaki UI komponentlerini temsil edecek olan
+
+257
+00:57:57,331 --> 00:58:16,411
+tanımlamalar yapılıyor. Yani bir buton tanımlamasına ihtiyaç var. Çünkü ekranda gördüğünüz gibi burada bir tane buton var. TextView'a ihtiyaç var. Çünkü bir TextView var. Bir de ayrıca böyle bizim kodlama sırasında ihtiyaç olduğu, duyduğumuz lokal değişkenler, işte counter gibi tanımlamalar yapılıyor.
+
+258
+00:58:17,907 --> 00:58:27,907
+İlk adımda bu tanımlamalar tamamlandıktan sonra artık o aktiviteye ait lifecycle içerisinde...
+
+259
+00:58:29,012 --> 00:58:44,792
+Olabileceği, bulunabileceği case'ler için tanımlamalar yapıyoruz. OnCreate olmazsa olmaz bir tanımlama. Çünkü burada XML dosyası ile, XML dosyasındaki UI komponentleri ile ilişkinin kurulduğu aşama.
+
+260
+00:58:44,792 --> 00:58:56,792
+Önce default olarak bir OnCreate overwrite ediliyor ve ondan sonra SetContentView ile sizin tasarlamış olup...
+
+261
+00:58:57,012 --> 00:59:15,292
+Bu, Source File'e uygun olan kıyafet yani XML dosyası ilişkilendiriyor. Layout'ta Activity Main olarak tanımladığınız dosya, SetContentView ile diyorsunuz ki artık bu aktivitenin görselini temsil edecek dosya budur.
+
+262
+00:59:15,764 --> 00:59:30,524
+Bu arada onCreate'e bir bundle objesi gönderiyorsunuz. SavedInstanceState ismiyle bunu yapabilirsiniz ama bu zorunlu değil. Bu sadece böyle alışılagelmiş olduğu için böyle kullanılıyor.
+
+263
+00:59:31,699 --> 00:59:52,139
+İlk ilişkilendirmeyi yaptıktan sonra da biraz önce anlattığımız eğer bilgileri Saved Instant State objesiyle saklayacaksanız, bunun sıfırdan mı yaratıldığı bu aktivitenin yoksa bir destroy sonucunda mı çağrıldığını bilmediğiniz için mutlaka bir bundle objesi null mı değil mi diye kontrol ediyorsunuz.
+
+264
+00:59:52,139 --> 00:59:56,519
+Null ise zaten biliyorsunuz ki bu ilk defa.
+
+265
+00:59:57,204 --> 01:00:23,444
+Bu yüzden muhtemelen yaratılmış bir aktivitedir. O zaman herhangi bir aksiyon almıyorsunuz, aşağıya da alıyorsunuz. Null değil ise, yani içinde bir bilgi taşıdığını tespit ettiyseniz, o zaman o bilgileri ilgili objenin metotlarıyla getString, getFloat vs. gibi kendi tarafınıza, yani aktivitenin içerisine çekebiliyorsunuz.
+
+266
+01:00:25,076 --> 01:00:28,655
+Orada bir aksiyon alınması gerekiyorsa burada olduğu gibi, Toast,
+
+267
+01:00:30,708 --> 01:00:35,488
+Sınıfını kullanarak kullanıcıya bir bilgilendirme yapma şansına sahip olabiliyorsunuz.
+
+268
+01:00:36,428 --> 01:00:40,688
+Burada iki tane bilgi alınıyor bundle objesinden.
+
+269
+01:00:40,827 --> 01:00:45,648
+Bir tanesi işte bir string bilgisi, diğeri de bir tane counter bilgisi.
+
+270
+01:00:46,228 --> 01:00:52,568
+Bu iki bilgi aktivitenin içerisindeki iki değişkene aktarılıyor.
+
+271
+01:00:53,488 --> 01:00:58,708
+If bloğundan çıktıktan sonra, if bloğ olsa da olmasa da mutlaka yazılmasa...
+
+272
+01:00:58,708 --> 01:01:03,708
+Bu konusu gereken kısımlara geliyoruz. Nedir bu? Şudur, burada...
+
+273
+01:01:04,275 --> 01:01:12,935
+Activity'nin layout'unda yer alan UI komponentlerinin source file'da da temsil edilmesi gerekiyor.
+
+274
+01:01:13,695 --> 01:01:23,095
+Burada görüyorsunuz r.id.button var. Bu layout tarafındaki komponent. Bu taraftaki komponent de button olarak tanımlanmış.
+
+275
+01:01:23,095 --> 01:01:32,095
+Bunların arasındaki ilişkiyi kurmak için find view by id diyorsunuz ve bu sayede XML tarafındaki butonlar...
+
+276
+01:01:32,275 --> 01:01:46,855
+Sourcesfile tarafındaki butonu ilişkilendirmiş oluyorsunuz. Yine TextView için de aynı şeyi yapıyorsunuz. Böylece aslında layout ile asıl işin yapılacağı business logic arasındaki köprüyü oluşturmuş oluyorsunuz.
+
+277
+01:01:50,708 --> 01:02:00,507
+İlişkiyi oluşturduktan sonra bu objeler üzerinden ilgili metotları çağırarak da arayüz üzerindeki değişiklikleri yapma şansına sahip oluyorsunuz.
+
+278
+01:02:00,507 --> 01:02:07,367
+Burada TextView'da bir değer vardı. Countup ile sayıldı. 1, 2, 3, 4, 5, 6, 7, 8 diye düşündün.
+
+279
+01:02:07,867 --> 01:02:12,788
+Kişi 8'e kadar getirmişti Countup butonuna basarak.
+
+280
+01:02:18,708 --> 01:02:22,027
+Bu aktiviteniz tekrar inişe edildi.
+
+281
+01:02:22,367 --> 01:02:33,027
+8'den devam edebilmesi için Bundle objesine bunu kaydetmiş olmanız ve Bundle objesinden bunu tekrar aktivite yüklendiğinde geri getiriyor olmanız lazım ki
+
+282
+01:02:33,027 --> 01:02:40,427
+burada da görüyorsunuz TextView, SetText dedikten sonra Counter'ı set ediyorsunuz.
+
+283
+01:02:42,643 --> 01:02:47,583
+Diyebilirsiniz ki Counter'dan ne geldiğini, yani Counter'da bir şey de olmayabilirdi.
+
+284
+01:02:48,343 --> 01:02:53,463
+Yani Bundle objesi gelmemiş olabilir. O zaman Default değeri 0 olarak set ediliyor.
+
+285
+01:02:56,043 --> 01:03:06,403
+Aşağıya devam ediyorum. Burada onCreate'nin içerisinde bir de buton objesinin bir şekilde tetiklenmesi durumunda yapılması gerekenler var.
+
+286
+01:03:09,684 --> 01:03:12,816
+Tıklanmayı takip eden bir...
+
+287
+01:03:12,815 --> 01:03:21,695
+Metot var. Bir tane Anonymous Class tanımlanıyor. NewView.onClick listener'la. Bunun farklı yapılma şekilleri var.
+
+288
+01:03:22,275 --> 01:03:31,295
+XML filin içerisine onClick özelliği koyarak, buraya kod yazmadan da bunu yapabilirsiniz ama burada Source filin içerisine konulmuş durumda.
+
+289
+01:03:31,795 --> 01:03:40,815
+Her tıklandığında counter'ı bir arttıracak bir kod yazıyoruz. Aynı zamanda bunun da ekranda güncellemesini TextViewSetText ile...
+
+290
+01:03:40,815 --> 01:03:54,536
+Sağlıyoruz. Buradaki temel mantık onClick'te yapılacakları buraya yerleştirmek ve bu sayede butona her tıklandığında kaç defa tıklandıysa ekrandaki sayı güncelleniyor.
+
+291
+01:03:55,496 --> 01:04:01,315
+Gelelim bizim için kritik olan onSaveInstanceState metoduna.
+
+292
+01:04:08,851 --> 01:04:16,511
+Destroy edilirken bir aktivite bundle objesine bilgiler nerede yazılmalı? Burada onu görüyorsunuz.
+
+293
+01:04:16,891 --> 01:04:25,451
+OnSaveInstanceState, siz pausa ya da stopa geçtiğiniz zaman çağrılan metot.
+
+294
+01:04:25,451 --> 01:04:30,291
+Bunun ismi değişmiyor. OnSaveInstanceState olarak karşınıza geliyor.
+
+295
+01:04:34,099 --> 01:04:44,679
+Herhangi bir şekilde aktivitenizde bir şey olduğu anda ekrandaki count up değeri kaçta ise ki ayrıca ekstradan bir mesajla saklanmış çok gerek de yoktu.
+
+296
+01:04:44,679 --> 01:04:48,739
+O iki bilgiyi bundle objesine yazıyorsunuz.
+
+297
+01:04:49,239 --> 01:04:59,679
+Bundle objesine yazdığınız zaman bu bundle objesi bir sonraki aktivitenin yüklendiği noktada eğer aktivite gerçekten...
+
+298
+01:05:00,947 --> 01:05:08,007
+Herhangi bir şekilde user tarafından sonlandırılmadıysa tekrar yaratıldığında buradaki kaldığı noktadan devam ediyor.
+
+299
+01:05:09,687 --> 01:05:13,707
+Sağ üst köşede de onRestoreInstanceState'i görüyorsunuz.
+
+300
+01:05:14,407 --> 01:05:23,227
+Bu biraz önce SaveInstanceState null'dan farklı mı diye kontrol ettiğimiz noktadaki işlerin aynısını yapıyor.
+
+301
+01:05:25,652 --> 01:05:34,411
+Ne diyelim? Alternatifleri. İster, ilk onCreate'de Bundle Objesini kontrol edip ilgili bilgileri çekebiliyorsunuz.
+
+302
+01:05:34,931 --> 01:05:40,831
+İsterseniz if kodunu hiç yazmıyorsunuz. Diyorsunuz ki onRestoreInstanceState yazayım ben.
+
+303
+01:05:41,684 --> 01:05:49,444
+Activity, Bundle objesinde bir şey varsa zaten onRestoreInstantState'i çağıracaktır ve buradaki işleri yapacaktır diyorsunuz.
+
+304
+01:05:49,884 --> 01:05:56,204
+Yani onRestoreInstantState ile Null olup olmadığını kontrol ettiğiniz kod parçası aslında birbirlerinin alternatifi.
+
+305
+01:05:56,684 --> 01:06:02,364
+İkisinin aynı anda implement edilmesine gerek yok. Birinden birini tercih edebiliyorsunuz.
+
+306
+01:06:03,144 --> 01:06:04,624
+Buraya kadar sorusu olan var mı?
+
+307
+01:06:15,891 --> 01:06:20,711
+Genel yazımla ilgili ya da konuşmuş olduğumuz bilgilerin saklanmasıyla ilgili.
+
+308
+01:06:21,911 --> 01:06:24,431
+Hocam ben sorabilir miyim? Biraz bunun alakasız da.
+
+309
+01:06:24,771 --> 01:06:31,672
+Destroy var ya hocam, Destroy olurken, şimdi hani döndürülünce ekran Destroy oluyordu.
+
+310
+01:06:32,311 --> 01:06:34,311
+İşte o zaman tekrardan ışık çaldıyordu vesaire.
+
+311
+01:06:34,911 --> 01:06:37,532
+Mesela biz YouTube'da döndürünce falan şey olmuyor.
+
+312
+01:06:37,891 --> 01:06:40,351
+Hani kaldığımız yerden devam falan edebiliyoruz ya.
+
+313
+01:06:40,632 --> 01:06:42,391
+Onunla alakalı yeni aktivite oluşturuluyor bu arada.
+
+314
+01:06:42,996 --> 01:06:49,655
+Yani yoksa bilgiler kaydedilip tekrardan en baştan ekranma oluşturuyor kaydedilen bilgilerde.
+
+315
+01:06:50,936 --> 01:07:01,356
+YouTube'da yani YouTube gibi uygulamalarda siz Android cihazlar üzerinde bir konfigürasyon değişikliği yaptığınız zaman aynı kuramlar orası için de geçerli.
+
+316
+01:07:02,036 --> 01:07:10,076
+Onlar da aynı hassasiyeti gözeterek kaldığınız yerden devam edilmesini sağlamakla yükümlüler.
+
+317
+01:07:10,900 --> 01:07:27,639
+Bunlar çok ne diyelim bakıldığında sanki çok fazla bilgi kaydediliyormuş ve saklanıyormuş gibi gözüküyor olabilir ama onlar burada bazı sadeleştirmeler yaparak çok kısa süre içerisinde kaldığımız yerden devam etmenizi sağlıyor.
+
+318
+01:07:28,039 --> 01:07:35,639
+Ama her halükarda aktivite tüm bu bahsettiğimiz uygulamalar için geçerli yok ediliyor ondan sonra tekrar yaratılıyor.
+
+319
+01:07:36,639 --> 01:07:37,420
+Anlanmıyor sağ olun.
+
+320
+01:07:38,324 --> 01:07:43,683
+Evet, peki. Devam edelim başka soru olmadığına göre.
+
+321
+01:07:44,683 --> 01:07:48,983
+Burada bir tane Activity Main Examili görüyorsunuz.
+
+322
+01:07:49,643 --> 01:08:01,764
+Bu Activity Main Examili içerisinde, bu biraz önceki Main Activity koduna ait bir tane Edit Text'iniz var, bir tane TextView'unuz var, bir tane de butonunuz var.
+
+323
+01:08:04,052 --> 01:08:17,971
+komponentine ait özellikler tanımlanabiliyor. Match, Parrot dediğinizde genişliğini kendisine içerisinde bulunduğu komponanta göre konumlandırsın diyorsunuz.
+
+324
+01:08:21,876 --> 01:08:43,935
+Büyüklüğüne, uzunluğuna göre belirlensin diyorsunuz. İşte bir phone number yazısını silik olarak oraya koyarak oranın aslında bir ya da bazen phone sintaksini koyarak ne tür bir bilgiyle nasıl doldurulması gerektiğini ipucu olarak verebiliyorsunuz.
+
+325
+01:08:49,395 --> 01:08:56,215
+Örneğin karakter yazılmasını engelleyebiliyorsunuz. Bu kontrollerin otomatik yapılmasını Android tarafından sağlayabiliyorsunuz.
+
+326
+01:08:56,275 --> 01:09:03,255
+Bu tür tüm özellikleri, bahsettiğimiz UI'ların alabileceği tüm özellikleri set edebiliyorsunuz.
+
+327
+01:09:03,255 --> 01:09:13,115
+Burada bir tanımlama yapacağınız zaman add artı id yazarak ona bir isim veriyorsunuz.
+
+328
+01:09:16,051 --> 01:09:20,672
+TextView'dan çok daha farklı isimler veriyoruz. Çünkü birden fazla TextView yarattığımız ekranlar var.
+
+329
+01:09:21,451 --> 01:09:25,851
+Burada işte ne diyelim buraya bir password diyebilirsiniz, username diyebilirsiniz.
+
+330
+01:09:25,851 --> 01:09:35,851
+Yani o UI komponentinin biraz önce ilişkilendirme yaparken, RID.ismini verirken...
+
+331
+01:09:36,243 --> 01:09:53,103
+Ne kullanılması gerekiyorsa buraya onu ilk tanımlamada yazıyorsunuz. Tanımlama için Add artı ID yazılması gerekiyor. Refer etmek için yani referans vermek için sadece Add işareti yazılması yeterli. Artı ID yazılmasına gerek yok. Buna dikkat etmeniz gerekiyor.
+
+332
+01:10:04,212 --> 01:10:11,592
+OnClick adımı yapıldığında çağrılması gereken metodun ismini yazabiliyorsunuz.
+
+333
+01:10:12,132 --> 01:10:17,212
+Biraz önce yazdığımız konu yerine bunları yapma şansınız var ve bunları bir layout içerisinde veriyorsunuz.
+
+334
+01:10:17,292 --> 01:10:19,512
+Bu relatif layout olabilir, linear layout olabilir.
+
+335
+01:10:20,072 --> 01:10:25,912
+Bunların zaman içerisinde nasıl kullanıldıklarıyla ilgili çeşitli örneklerle karşılaşıyor olacaksınız.
+
+336
+01:10:31,028 --> 01:10:44,728
+Tabii biz bir aktiviteyi konuştuk. Bir aktivitenin başka bir aktiviteyle ve bir uygulamanın başka bir uygulamayla interakşına girmesinden daha doğal bir şey olamaz. Bunu sıklıkla yaşıyoruz.
+
+337
+01:10:48,372 --> 01:10:59,952
+Kendi uygulamanın içerisinde bir aktiviteden başka bir aktiviteye geçiyorsunuz ya da başka bir uygulamadaki aktiviteden diğer bir uygulamadaki aktiviteye atlıyorsunuz. Genel olarak sistematik böyle ilerliyor.
+
+338
+01:10:59,952 --> 01:11:08,952
+Bunun için de ilgili diğer aktiviteyi çağırabilmek için biz genellikle intent...
+
+339
+01:11:09,747 --> 01:11:21,288
+Komponentini kullanıyoruz. Intent üzerinden çağırma işini gerçekleştiriyoruz. Intent üzerinden aktaracağımız bilgileri diğer aktiviteye aktarıyoruz.
+
+340
+01:11:29,587 --> 01:11:38,228
+Bilgi almak istiyorsak, geri dönsün istiyorsak o zaman StartActivityForResult gibi bir metot daha var. Onu çağırıyoruz.
+
+341
+01:11:39,347 --> 01:11:44,528
+Peki, intentlerin başka türleri de olmasına karşın ileride göreceğiz.
+
+342
+01:11:45,307 --> 01:11:48,368
+İşte broadcast intentler var, sticky intentler var.
+
+343
+01:11:48,368 --> 01:11:55,087
+Ama temelde intentler iki gruba ayrılıyorlar. Biri implicit intent, diğer de explicit intent.
+
+344
+01:11:56,020 --> 01:12:08,900
+Explicit Intent, sizin yapmak istediğiniz, özellikle uygulama için bir sonraki adımın belli olduğu bir iş var ve o işi kimin yapacağı belliyse,
+
+345
+01:12:21,971 --> 01:12:28,871
+Geçiş yapacağınız ekrana sistemi yönlendiriyorsunuz. Buna explicit intent kullanımı deniyor.
+
+346
+01:12:29,332 --> 01:12:37,871
+Herhangi bir aktivitenin başlatılması, bir broadcast receiver'ın start edilmesi, background servisin çalıştırılması gibi durumlar için rahatlıkla bunu söyleyebiliriz.
+
+347
+01:12:37,871 --> 01:12:48,711
+Ancak her zaman durum böyle olmuyor. Yani özellikle bu uygulama için yapılan aktiviteler arası geçiş, bazı durumlarda
+
+348
+01:12:49,492 --> 01:13:02,612
+Doğrudan bir aktiviteyi çağırmak gibi değil, bir iş yaptıracaksınız. O işi yapacak olan aktiviteleri çağırdığınız bir senaryoyla gerçekleşebiliyor.
+
+349
+01:13:02,692 --> 01:13:11,012
+Örneğin, telefonda arayacaksınız. Bir web sayfasında numara gördünüz. Numaranın telefon numarasının üzerine uzun süreli bastınız.
+
+350
+01:13:11,391 --> 01:13:15,752
+Uzun süreli bastığınızda o numarayı aramayla ilgili bir opsiyon çıktı.
+
+351
+01:13:16,496 --> 01:13:27,316
+O opsiyona tıkladığınızda o aramayı yapabilecek olan bir başka uygulamanın içerisinde yer alan aktivite genelde çağrılıyor.
+
+352
+01:13:27,316 --> 01:13:39,136
+Ya da bir adres bilgisi var, bunun haritada gösterilmesi gerekiyor. O adres bilgisinin haritadaki lokasyonunu, pozisyonunu göstermek için işte Google Maps.
+
+353
+01:13:39,764 --> 01:13:47,283
+Apple'ın Maps uygulaması, Yandex gibi uygulamalar size hizmet vermek için bekliyorlar.
+
+354
+01:13:47,684 --> 01:13:49,524
+Onun ilgili aktivitesi çağrılıyor.
+
+355
+01:13:50,564 --> 01:13:56,984
+Toparlayacak olursak, yaptıracağınız bir iş var ve buna kimler yapabilir?
+
+356
+01:13:56,984 --> 01:14:06,984
+Ben bunu ortaya söylüyorum. Bana alternatifler verilisin diyorsanız, o zaman implicit intent ile...
+
+357
+01:14:07,184 --> 01:14:15,363
+Yani yapmak istediğinizi Intent'e ekleyip gönderiyorsunuz. Sistem de size bakıyor, diyor ki Intent filter'lardan kontrol ediyor.
+
+358
+01:14:15,963 --> 01:14:21,084
+Tamam diyor, sen bir data paylaşmak istiyorsun. O zaman şu şu uygulamalar aracılığıyla paylaşabilirsin.
+
+359
+01:14:21,224 --> 01:14:28,064
+Mail göndermek istiyorsun. Mail client'ları neler var? Hemen önünüze bunları getiriyor ve siz onlardan birini seçiyorsunuz.
+
+360
+01:14:31,988 --> 01:14:34,747
+Login butonuna bastınız.
+
+361
+01:14:35,847 --> 01:14:42,988
+Eğer yapmış olduğunuz, girdiğiniz şifre ve kullanıcı adı doğruysa...
+
+362
+01:14:43,283 --> 01:14:55,423
+Bir sonraki ekran neyse oraya sizi yönlendiriyor. Yanlış bir iş yaptıysanız ya pop-up ile bir mesaj alıyorsunuz ya da sizi başka bir ekrana yönlendiriyor.
+
+363
+01:14:55,523 --> 01:15:03,463
+Yine Explicit Intent de diyor ki bu sefer işte wrong password olduğu için sizi register ekranına yönlendirdim.
+
+364
+01:15:03,463 --> 01:15:11,279
+Buradan kayıt olabilirsiniz diyor. Bir tanesinde doğrudan bir aktivite hedefleniyor. Diğerinde...
+
+365
+01:15:11,279 --> 01:15:16,219
+Yapılacak iş söyleniyor. Buna uygun olan aktivitelerin listelenmesi sağlanıyor.
+
+366
+01:15:18,920 --> 01:15:22,279
+Burada yine bu bahsettiklerimin özetini görüyorsunuz.
+
+367
+01:15:22,960 --> 01:15:24,840
+İşte birinde source code'un.
+
+368
+01:15:25,300 --> 01:15:28,979
+İsmini söylerken diğer tarafta bir hedef belirtmiyorsunuz.
+
+369
+01:15:29,380 --> 01:15:34,440
+Yapmak istediğiniz işi belirtiyorsunuz ve o ilgili intente özellikleri ekliyorsunuz.
+
+370
+01:15:34,440 --> 01:15:52,220
+Burada çeşitli örnekler var. Mesela bir numara aramak istiyorsanız, diyorsunuz ki işte URI, Uniform Resource Identifier üzerinden ilgili aranmasını istediğiniz numarayı
+
+371
+01:15:53,235 --> 01:16:05,195
+Bunu yapabilecek olan aktiviteye pas etmek için URI.Pars metodu ile paylaşmak üzere bir ön işlemden geçiriyorsunuz.
+
+372
+01:16:05,555 --> 01:16:15,796
+Sonra ilgili intenti tanımlayıp intentin konstruktörüne hangi aksiyonu talep ettiğinizi ki burada dial işlemi var.
+
+373
+01:16:15,796 --> 01:16:17,796
+Bunu söylemezseniz.
+
+374
+01:16:18,323 --> 01:16:29,231
+Sistem ne yapacağınızı anlamayacaktır. O yüzden mutlaka yapmak istediğiniz işi belirtmeniz gerekiyor ve o işi yapabilecek olan...
+
+375
+01:16:29,231 --> 01:16:35,631
+Bu aktiviteye de hangi numarayı araması gerektiği bilgisini mutlaka göndermeniz gerekiyor.
+
+376
+01:16:36,051 --> 01:16:49,131
+Doğal olarak bu işi yapacak aktivitenin de o numarayı kendi kodlarını çalıştırmaya başladığı noktada bir get intent metoduyla alması gerekiyor ki onu birlikte görüyor olacağız.
+
+377
+01:16:49,131 --> 01:16:56,572
+İşte yine çok sık ortak yapılan işlerden bir tanesi bir lokasyon bilgisinin.
+
+378
+01:16:57,231 --> 01:17:04,711
+Harita üzerinde görsel olarak konumlandırılması. Bunun için ActionView aksiyonu talep ediliyor.
+
+379
+01:17:04,711 --> 01:17:15,852
+Yine bir adresin web browser üzerinde açılması için siz URI parse metodu ile adresi paylaşın.
+
+380
+01:17:16,159 --> 01:17:41,079
+Gerekli ön işlemin yapılmasını sağlıyorsunuz. Sonra da işte biraz önce yukarıda ActionView vardı. Oraya lokasyon bilgisi pastladınız. Şimdi burada ActionView var gene ama bu sefer bir browser, bu bir Firefox olabilir, Safari olabilir, Chrome olabilir. Bunlardan birinin açabileceği adres bilgisini paylaşıyorsunuz intent üzerine yükleyerek.
+
+381
+01:17:47,604 --> 01:17:56,884
+Bir uygulama içinde bir linke tıkladığımızda şununla aç seçeneği explicit intent mi oluyor? [öğrenci] bunu sesli sorabilir misin?
+
+382
+01:18:25,427 --> 01:18:25,907
+Alo.
+
+383
+01:18:26,868 --> 01:18:27,207
+Buyur.
+
+384
+01:18:27,247 --> 01:18:28,307
+Geliyor mu sesim?
+
+385
+01:18:28,667 --> 01:18:28,927
+Evet.
+
+386
+01:18:29,627 --> 01:18:31,288
+Hocam, benim demek istediğim şey şuydu.
+
+387
+01:18:31,288 --> 01:18:44,788
+Bir mobil uygulama için bir web linkine tıkıldığımızda mesela o cihaz içindeki bütün işte Google Chrome olur ya da o cihazdaki default gelen tarayıcı olur.
+
+388
+01:18:44,927 --> 01:18:47,948
+Bunlardan bizim seçim yapmamızı istemesi.
+
+389
+01:18:48,467 --> 01:18:49,167
+Bu bir internet.
+
+390
+01:18:49,728 --> 01:19:10,228
+Implicit Intent'tır. Burada siz sisteme diyorsunuz ki benim bir web browser açmaya ihtiyacım var. Bunu benim için kim açabilir? Implicit Intent bu. Ben bir iş yapmak istiyorum. İşim şudur. Bu işi benim adıma kim yapabilir? Explicit Intent tam tersi. Ben işimi şu aktivitenin yapmasını istiyorum.
+
+391
+01:19:12,248 --> 01:19:14,347
+Tamam hocam. Tamam. Çok teşekkür ederim.
+
+392
+01:19:18,260 --> 01:19:29,120
+Tabii biz biraz önceki örneklerde çok küçük bilgiler gönderdik ve bazen daha fazlasını paylaşmanız gerekebilir.
+
+393
+01:19:29,587 --> 01:19:31,587
+Burada da bu örnekleri görüyorsunuz.
+
+394
+01:19:32,228 --> 01:19:36,587
+İşte bir e-mail seçeneği sundunuz ekranınızda.
+
+395
+01:19:37,487 --> 01:19:43,307
+Kullanıcı ilgili subject'i yazdı, gönderilecek kişiyi vesaire yazdı.
+
+396
+01:19:43,827 --> 01:19:49,747
+Ama sizin uygulamanızın bir e-mail ne diyelim gönderme yeteneği yok.
+
+397
+01:19:50,355 --> 01:20:09,716
+Çünkü arka planda Pop3 bağlantıları, Send, IMAP bağlantıları vs. bunların organize edilmesi gerekiyor. Ama bir Gmail client'ının var. Çalıştığınız kurumun size sunduğu email application'ın böyle bir yeteneği var.
+
+398
+01:20:17,203 --> 01:20:40,203
+İşte web adresi göndermiştik. Burada artık e-mail subject'i yazdığınız, text bilgisi, kullanıcıdan neyi aldıysanız özellikle burada put extra metodunu çağırarak ilgili değişkenlere kullanıcının girdiği bilgileri çekerek burada...
+
+399
+01:20:40,692 --> 01:20:55,832
+Aslında hardcoded bir şekilde yazılmış ama EditText'den gelen bilgileri alarak hepsini intentin içerisine koyup ilgili e-mail hangi client'a seçtiyseniz oraya aktarılmasını sağlıyorsunuz.
+
+400
+01:20:57,876 --> 01:21:01,996
+Dediğinizde sadece aklınıza bir iki tane bilginin gönderildiği bir yapı gelmesin.
+
+401
+01:21:02,536 --> 01:21:16,476
+Intentin içerisine ihtiyaç duyulan tüm bilgileri burada olduğu gibi yükleme şansına sahipsiniz ki aşağıda da bir kalender uygulamasına kullanıcının bir eventini kaydetmek için
+
+402
+01:21:18,836 --> 01:21:34,095
+Action Insert özelliği gösteren herhangi bir kalender uygulamasına buradaki bilgileri gönderip, şu gün, şu saatte, şu başlıkta, şu detaydaki eventin kaydedilmesini isteyebilirsiniz.
+
+403
+01:21:46,515 --> 01:21:54,507
+İşte storage bölgesine bu bilgileri ekleyecektir. Ama sizin kendi uygulamanızdan...
+
+404
+01:21:54,771 --> 01:22:12,452
+Çıkarken öteki tarafa bunları taşımanız gerekiyor. Unutmamız gereken nokta bu. Bunlar kendiliğinden taşınmıyor. Siz ne götürürseniz karşıdaki uygulama o kadarını alabilir ve o kadarını işleyebilir. Bunlar otomatikman işte Intent o anda sayfadaki her şeyi alır, benim adıma gönderir diye bir senaryo yok.
+
+405
+01:22:12,452 --> 01:22:21,652
+Tek tek kendinizin bu bilgileri, gerekli olan bilgileri Intent'in içine yüklemeniz, Intent'e ait özellikleri tanımlamanız gerekiyor.
+
+406
+01:22:22,771 --> 01:22:24,852
+Dikkat edilmesi gereken nokta bu.
+
+407
+01:22:27,992 --> 01:22:30,152
+Buraya kadar sorusu olan var mı başka?
+
+408
+01:22:39,444 --> 01:22:40,396
+Evet.
+
+409
+01:22:47,923 --> 01:23:09,224
+Şimdi tabii genelde yaptırmak istediğimiz işler, temel işler olduğunda bunun karşılığında bir telefon etmek istediğinizde, mail göndermek istediğinizde, takvim uygulamasına bir kayıt atmak istediğinizde buna karşılık verebilecek olan aktivitelerin bulunduğu uygulamalar vardır.
+
+410
+01:23:09,224 --> 01:23:12,404
+Çok aksi bir durum olmalı söyleyecek.
+
+411
+01:23:15,667 --> 01:23:29,127
+Sizin yaptırmak istediğiniz işi yapabilecek olan bir aktivitenin herhangi bir uygulamada bulunmaması durumunda eğer bunu kontrol etmezseniz sisteminiz hata üretebilir.
+
+412
+01:23:30,207 --> 01:23:33,608
+Burada da aslında bu slide'da da buna dikkat çekiliyor.
+
+413
+01:23:42,612 --> 01:24:07,612
+O intentte sunduğunuz talebiyi karşılayabilecek olan hiçbir aktivite var mı yok mu bir kontrol edin. Bunu da burada gördüğünüz kod parçasıyla ya da zaman içerisinde bunlar da güncellemeler oluyor. Bu tarz bir kod parçasıyla mutlaka kontrol edin ki hiç kimse size bir şey dönmezse programınız...
+
+414
+01:24:08,979 --> 01:24:17,399
+Bunu listeleyemediği için patlamasın ya da çatlamasın. Bu noktaya dikkat etmek gerekiyor. Bunu da aklınızda bulunmasında fayda var.
+
+415
+01:24:22,996 --> 01:24:36,476
+Şimdi burada tabii bir intenti biraz önce oluşturduk. Bu intenti oluşturduktan sonra nasıl pas ediyoruz? Bunu görüyoruz.
+
+416
+01:24:36,476 --> 01:24:48,476
+İşte istiyoruz ki bir adres var. Bu adresi bir harita uygulaması üzerinde gösterelim. Bunu ilk kısımda üst tarafta...
+
+417
+01:24:48,560 --> 01:25:00,500
+Daha önceki kop parçalarında da vardı. MapIntent'e yükledik. Sonra bir kontrol ettik. Buna karşılık gelebilecek bir uygulama ya da uygulamalar var mı diye.
+
+418
+01:25:01,600 --> 01:25:12,760
+Sonrasında bizim bu Intent'i StartActivity metoduna, eğer herhangi bir bilgi geri dönmeyecekse karşı aktiviteden, pas etmemiz gerekiyor.
+
+419
+01:25:15,539 --> 01:25:22,539
+Sağ alt köşede gördüğünüz seçenekler karşınıza çıkıyor. Bu seçenekler karşınıza çıktığı zaman...
+
+420
+01:25:23,252 --> 01:25:42,971
+Hangisini açmak istediğinizi belirliyorsunuz ve burada işte bir defa bir defaya mahsus bunu seçiyor olabilirsiniz ya da her zaman bununla aç da diyebilirsiniz. Böyle bir şey yaptığınızda sistem settinglerinde sürekli olarak ilgili uygulamayla açılmasını da sağlama şansına sahip olabiliyorsunuz.
+
+421
+01:25:51,252 --> 01:26:03,051
+İşte Intent'i pas etmeniz önemli. Ya da işte oradan bir değer dönecekse Start Activity for Result'ı çağırmanız bekleniyor.
+
+422
+01:26:05,551 --> 01:26:17,492
+Burada bazı durumlarda kişiler uygulama geliştirirken seçeneklerim mutlaka her seferinde
+
+423
+01:26:18,003 --> 01:26:37,003
+Kullanıcıya gösterilmesini istiyor. Bunun için işte bir liste oluşturuyor ve bu listenin kullanıcı tarafında da her seferinde gösterilmesi sağlanabiliyor. Bu tamamen sizin tercihiniz. İsterseniz böyle bir şeyde kendi...
+
+424
+01:26:37,555 --> 01:26:47,096
+Özel chooser ekranınızda yapabilirsiniz. Bir tarafta işte sistemin size sunmuş olduğu sisteme ait bir ekran.
+
+425
+01:26:47,536 --> 01:27:11,775
+Default kullanılabilirken, öteki tarafta her zaman sizin seçtiğiniz formatta ve her seferinde sorulmak üzere de bir chooser ekranı getirmeyi, hatta bunu kendi özelinizde bir defaya bahsus bundan sonraki süreçlerde evet şeklinde seçtirme şansına da sahipsiniz. Bu da bir başka dikkat çekilmesi gereken nokta.
+
+426
+01:27:18,003 --> 01:27:26,043
+Evet, şimdi başka bir aktiviteden bir bilgi alınma senaryosu var ama oraya geçmeyeceğiz.
+
+427
+01:27:26,743 --> 01:27:33,363
+Şimdi bir ara vereceğiz saat 15.29. 15.40'da bir araya geleceğiz.
+
+428
+01:27:34,363 --> 01:27:40,783
+Android tarafına, Android Studio tarafına geçeceğiz. Bir login ekranı ile başlayacağız.
+
+429
+01:27:41,216 --> 01:27:57,716
+Blog'in ekranı nedir, aktiviteyi nasıl yazıyoruz, ne yapıyoruz bir kod parçası paylaşacağım sizlerle. Bundan sonra sizden de aynısını geliştirmenizi ve ilk uygulamanızı yazmanızı istiyor olacağım. O yüzden yaklaşık 10 dakika sonra görüşmek üzere diyorum arkadaşlar. Teşekkür ediyorum.
+
+430
+01:38:02,579 --> 01:38:22,300
+Evet arkadaşlar, yeniden merhaba. Şimdi dersin üçüncü ve son bölümüne geçiyoruz. Bu bölümde Android Studio üzerinde yazılmış bir kod parçasını beraber inceleyeceğiz. Sonra benzer bir kod parçasını kendi tarafınızda implemente etmenizi bekliyor olacağım.
+
+431
+01:38:27,764 --> 01:38:33,984
+Kodlama işinin nasıl yapıldığını biraz daha yakından görmek ve bir giriş yapmak.
+
+432
+01:38:35,744 --> 01:38:37,924
+Şöyle ekran paylaşımı yapayım size.
+
+433
+01:38:44,659 --> 01:38:47,579
+Evet, sanırım şu an görebiliyorsunuz diye tahmin ediyorum.
+
+434
+01:38:48,779 --> 01:38:55,500
+Burada bir proje structure'ını görüyorsunuz. Burada bir login, basit bir login uygulamasının kod parçaları var.
+
+435
+01:38:56,420 --> 01:39:07,819
+Manifest dosyalarının bulunduğu kısım, source dosyalarımızın bulunduğu iki tane activity ekranı olan login ve user olmak üzere iki tane activity ekranı var.
+
+436
+01:39:07,819 --> 01:39:10,300
+Bu aktiviteler'e ait layout'lar.
+
+437
+01:39:10,963 --> 01:39:14,344
+Burada XML dosyaları olarak konumlandırılmış durumda.
+
+438
+01:39:15,024 --> 01:39:17,743
+Şimdi bunlardan login ekranını açalım.
+
+439
+01:39:17,743 --> 01:39:23,743
+Buradaki login ekranı aslında...
+
+440
+01:39:23,743 --> 01:39:35,743
+Login ekranı burada görmüş olduğunuz XML ekranıyla doğrudan...
+
+441
+01:39:36,595 --> 01:39:59,955
+Aslında ilişkilendirilecek birazdan kod parçalarıyla. Burada ne var? Burada bir relative layout kullanılmış. Relative layout değişkenlik gösterebilir. Bir tane TextView var içerisinde. Ardından bir başka TextView var. İkinci UI komponent. Bu TextView'lara ait olarak bir tanımlama söz.
+
+442
+01:40:00,000 --> 01:40:07,520
+konusu, add artı id ile işte t ve login ismi verilmiş bu komponante.
+
+443
+01:40:08,180 --> 01:40:14,500
+Ve bu komponantin tek tek bütün spesifik özellikleri burada define edilmiş.
+
+444
+01:40:14,960 --> 01:40:17,220
+Olmak zorunda değil, bu density piksel'e denk geliyor.
+
+445
+01:40:17,844 --> 01:40:19,844
+dp ifadesi.
+
+446
+01:40:19,844 --> 01:40:24,844
+İsminde ne yazacağı TextView'un burada belirlenmiş.
+
+447
+01:40:24,844 --> 01:40:29,844
+İşte kullanılacak olan family set edilmiş, font family.
+
+448
+01:40:29,844 --> 01:40:37,844
+Yine text size'ın hangi boyutta olacağı burada, pixel size olarak belirtilmiş.
+
+449
+01:40:38,228 --> 01:40:44,867
+Yine aynı şekilde bir başka TextView'umuz var. Bu sefer username ile ilgili olan yazının olduğu TextView.
+
+450
+01:40:44,867 --> 01:40:55,967
+Bunun konumlandırılması yapılırken hangi komponentin bulunduğu pozisyona göre konumlandırılacağı bilgisi buraya girilmiş.
+
+451
+01:40:58,148 --> 01:41:01,827
+Hemen altında TextView'lar, sabit bilgi.
+
+452
+01:41:02,292 --> 01:41:23,352
+Paylaşan UI komponentler, EditTextler ise genellikle Editable isminden geliyor. İçine bilgi girilebilecek olan yapılar. Bunlarla ilgili de tanımlamalar yapılmış. Yine Password ile ilgili bir Password ismi ve altında da EditText komponenti konumlandırılmış. Bir de bir login butonu var.
+
+453
+01:41:23,828 --> 01:41:37,568
+Tabi bu login butonuna biz başka butonlar da ekleyebiliriz. Clear butonu ekleyip burada yazılan ifadelerin silinmesini sağlayabiliriz.
+
+454
+01:41:37,568 --> 01:41:44,388
+İşte bir register butonu koyup başka bir sayfaya yönlendirebiliriz gibi aksiyonlar düşünülebilir.
+
+455
+01:41:44,988 --> 01:41:50,088
+Şimdi gelelim bu eczemal faydanın bu taraftaki karşılığına.
+
+456
+01:41:50,612 --> 01:42:03,051
+Burada işte iki tane Edit Text, bir tane buton ismi görüyorsunuz. Bu tanımlamalar yapılıyor ki karşıdaki XML dosyası ile ilişkilendirme yapılabiliriz.
+
+457
+01:42:04,032 --> 01:42:16,231
+Burada ilk etapta onCreate kısmında SetContentView ile layout olarak Activity Login examleri ile ilişkinin kurulduğunu siz ilk kodlamanız gereken bilgi bu.
+
+458
+01:42:16,671 --> 01:42:32,032
+Burada XML uzantısını kullanmıyorsunuz ve bu ifadeyi yazdığınız zaman artık sistem şunu biliyor, eşleşme ActivityLoginExaml ile Login Java kodu arasında gerçekleşecek.
+
+459
+01:42:32,872 --> 01:42:37,452
+Hemen arkasından buradaki isimlendirmeleri eşleştiriyorsunuz.
+
+460
+01:42:37,452 --> 01:42:41,572
+İşte öbür tarafta ET-Yusörneği, MT-Password olarak adlandırılan.
+
+461
+01:42:42,195 --> 01:42:54,036
+Şurada gördüğümüz Edit Textleri öbür tarafta yine aynı isimle konumlandırıyoruz ki bunu aslında şöyle dizayn edersek.
+
+462
+01:42:57,811 --> 01:43:00,231
+Birbirinden farklı olmaları faydalı olacaktır.
+
+463
+01:43:01,231 --> 01:43:09,951
+User name, login aktivitesi içerisindeki değişken olarak temsil ediliyor. Password da öyle.
+
+464
+01:43:10,471 --> 01:43:15,111
+ET username ise, XML dosyasındaki değişkenlere refer ediyor.
+
+465
+01:43:15,111 --> 01:43:18,111
+Ve bu ilişkiyi FindViewById ile...
+
+466
+01:43:18,579 --> 01:43:19,819
+Gerçekleştiriyoruz.
+
+467
+01:43:20,899 --> 01:43:24,739
+Şurada tabii isimler değiştiği için kırmızıya boyadı.
+
+468
+01:43:25,100 --> 01:43:26,119
+Onları düzeltelim.
+
+469
+01:43:28,060 --> 01:43:30,220
+Bir buton tanımladık.
+
+470
+01:43:30,980 --> 01:43:34,380
+Butonun ismini de login diyelim.
+
+471
+01:43:35,579 --> 01:43:36,439
+Şunu değiştirelim.
+
+472
+01:43:38,539 --> 01:43:40,880
+Şuradaki ismini de değiştirelim.
+
+473
+01:43:42,963 --> 01:43:50,963
+Şuradaki btn login, XML filindeki değişkenin ismi, ilişkilendirdiğimiz bu tarafta onu temsil edecek olan değişkenin ismi de login oldu.
+
+474
+01:43:51,503 --> 01:44:03,143
+Artık bu sütten sonra aralarındaki interaction, findView by ID ile ilişki kurulduğu için login tarafında, login ismiyle devam ediyoruz ve login.setonclicklisnir diyoruz.
+
+475
+01:44:09,011 --> 01:44:14,032
+Ki takibi yapacak olan Listener'ı aslında aktive etmiş oluyoruz.
+
+476
+01:44:14,032 --> 01:44:17,891
+Ve bundan sonra bir tane Anonymous Class yaratıyoruz.
+
+477
+01:44:18,572 --> 01:44:25,451
+Ve bu Class'ın içerisinde bir OnClickView metodu oluşturduktan sonra artık yapacağımız işe odaklanıyoruz.
+
+478
+01:44:25,532 --> 01:44:26,791
+Nedir? Username.
+
+479
+01:44:28,340 --> 01:44:50,520
+Buradaki username. Dolayısıyla git, şuradaki bilgiyi al demek oluyor. GetText. Oradaki bilgiyi alıyorsunuz. ToString. Sonra admin'e eşit hissediyorsunuz. Burada tabii kod bu şekilde yazılmış. İşte kullanıcı adı admin, şifre admin girilirse, True call'ına gidecek. Herhangi bir aksi bir durumda, Else call'ına gidecek.
+
+480
+01:44:56,372 --> 01:45:12,412
+Bilgiyi birden fazla kişi sisteme girebilecek şekilde bir user class'ı oluşturup o user class'ından yeni objeler yaratıp bu objelerin olup olmadığına göre kontrol etmeniz beklenecek.
+
+481
+01:45:16,079 --> 01:45:29,480
+İlk yaratıldığında ya da register ekranı tasarlayacaksınız. O register ekranından yeni kullanıcılar yaratacaksınız ve bu kullanıcı ve şifreyle doğru mu değil mi diye bunun kontrolünü yapmanız bekleniyor olacak.
+
+482
+01:45:29,480 --> 01:45:35,480
+Bir kişi mesela şifreyi 3 kez yanlış girdiğinde işte...
+
+483
+01:45:36,051 --> 01:45:51,051
+Login butonunu disable edebilirsiniz. Böyle bir özellik koyabilirsiniz. Bunları ilerleyen zamanlarda konuşuyor olacağız ama bugün ilk etapta bu yapıyı anlamanız ve yavaş yavaş bir işte şuradan...
+
+484
+01:45:51,167 --> 01:45:58,307
+Şöyle gösterelim. New deyip buradan yeni klaslar, yeni ekranlar ekleyebiliyor olmanız gerekiyor.
+
+485
+01:45:58,688 --> 01:46:06,648
+Bu şu anda gösterdiğim Android Studio ekranının üzerine çıkan yazıları görebiliyor musunuz? Menü.
+
+486
+01:46:08,268 --> 01:46:09,327
+Evet hocam.
+
+487
+01:46:09,327 --> 01:46:10,188
+Tamam.
+
+488
+01:46:15,188 --> 01:46:17,028
+Şimdi burada çok zor bir şey yok aslında.
+
+489
+01:46:18,248 --> 01:46:27,908
+Ama bazı arkadaşlarınız ilk etapta biraz zorlandıkları için özellikle böyle daha çok kolay bir örnek üzerinden başlıyoruz.
+
+490
+01:46:27,908 --> 01:46:32,108
+İşte kontroller sonunda admin, admin olursa tos.
+
+491
+01:46:32,884 --> 01:46:40,884
+MakeText ile bir tane mesaj üretiyorsunuz ve diyorsunuz ki username and password is correct diyorsunuz.
+
+492
+01:46:41,203 --> 01:46:49,764
+Burada parametreler şunu söylüyor, işte ne kadar süreyle ekranda gözükecek, hangi konumda gözükecek bunları belirliyorsunuz.
+
+493
+01:46:49,764 --> 01:46:52,764
+Önce MakeText ile...
+
+494
+01:46:53,844 --> 01:47:06,003
+Vereceğiniz mesajı üretiyorsunuz. Sonra nokta show ile vereceğiniz mesajı ekranda gösteriyorsunuz. Genelde default'u ekranın alt kısmında kısa süreli olarak bir 3 ile 5 saniye gözükecek şekilde oluyor.
+
+495
+01:47:06,543 --> 01:47:15,104
+Sonrasında bir intent var. Intent yaratıyorsunuz. Genelde get application context'te bulunduğunuz context alıyorsunuz.
+
+496
+01:47:19,764 --> 01:47:36,184
+Çağırmak istediğiniz explicit intent kullanımı söz konusu. Sınıfın ismini yazıyorsunuz ki burada user aktivitesine gideceğiz. Orada bir ekran var ve ekranda Welcome Administrator yazıyor. Onun egzemeli de şu şekilde.
+
+497
+01:47:37,076 --> 01:47:45,275
+TextView'un bir tanesinde Welcome yazıyor. Biraz daha büyük kumpalarla yazılmış. Biraz daha küçük kumpalarla da Administrator yazılıyor.
+
+498
+01:47:45,435 --> 01:47:52,235
+Ve siz böyle bir Welcome Administrator yazan bir ekrana yönlendiriyorsunuz kullanıcıyı.
+
+499
+01:47:55,796 --> 01:48:04,716
+Ve doğal olarak StartActivity ile Intent'i pas ettiğinizde arka planda şunu yapıyor.
+
+500
+01:48:05,036 --> 01:48:13,596
+Gidiyor, User isimli activity'yi çağırıyor ve onun egzamelinde ne yazıyorsa ya da içinde ne yapılıyorsa onu yapıyor.
+
+501
+01:48:13,596 --> 01:48:21,456
+Ama burada çok bir şey yok. Sadece egzameldeki ilgili görselleri göstermek için böyle basit bir şey yapmış durumdayız.
+
+502
+01:48:23,859 --> 01:48:33,039
+Eğer password yanlışsa da ekrana username or password is incorrect deyip bunu bastırıyoruz.
+
+503
+01:48:34,000 --> 01:48:41,039
+Manifeste bakacak olursak, manifest'te iki tane aktiviteden bahsediyoruz.
+
+504
+01:48:42,000 --> 01:48:50,979
+Bir tanesi mutlaka olması gereken bir aktivitenin main ve launcher olması gerekiyor ki o uygulama ilk açıldığında hangi aktivitenin çalışacağı belli olsun.
+
+505
+01:48:52,916 --> 01:48:56,276
+Diğer aktivite ile ilgili böyle bir tanımlama yapmanıza gerek yok.
+
+506
+01:48:57,976 --> 01:48:59,756
+Bu arada şunu da değiştirelim.
+
+507
+01:49:01,756 --> 01:49:02,596
+Yeni yarattığımız.
+
+508
+01:49:04,716 --> 01:49:06,356
+Activity'nin ismini verelim.
+
+509
+01:49:11,956 --> 01:49:19,556
+Burada herhangi bir şekilde bir intent filter ile ilgili özel bir action stand yapabilir, bir tanımlama yapmadık.
+
+510
+01:49:19,976 --> 01:49:22,916
+İlerleyen haftalarda yapıyor olacağız.
+
+511
+01:49:23,576 --> 01:49:26,516
+Böylece bir application içerisinde iki tane aktivite tanımladık.
+
+512
+01:49:27,576 --> 01:49:33,256
+Bu bir aktivitenin başlangıç aktivite olduğunu da buraya belirtmiş olduk.
+
+513
+01:49:35,347 --> 01:49:38,228
+Şimdi geriye kalan bunu çalıştırmak oluyor.
+
+514
+01:49:39,648 --> 01:49:45,288
+Bir ekranımı, yani fiziksel telefonumun ekranını göstermek için bir uygulama kurmam gerekiyor.
+
+515
+01:49:46,248 --> 01:49:52,887
+Birazdan size ilgili çalıştığı zaman nasıl gözüktüğüne dair ekranı gösteriyor olacağım.
+
+516
+01:49:52,887 --> 01:49:59,568
+Şimdi sizden istediğim bu login işlemini yapabilecek olan uygulamayı tasarlamanız.
+
+517
+01:50:00,000 --> 01:50:07,579
+Ben şimdi bu ekranı açık bırakıyor olacağım. Buradan faydalanarak kendi tarafınıza tanımlamaları yapıyor olacaksınız.
+
+518
+01:50:07,680 --> 01:50:11,539
+Tabii nereden başlamalısınız? Neyim diyeceksiniz, Neyim Project diyeceksiniz.
+
+519
+01:50:12,700 --> 01:50:18,240
+Bu projekte hangi device için uygulama geliştirdiğinizi seçmeniz gerekiyor.
+
+520
+01:50:18,707 --> 01:50:32,187
+Oradan Basic Activity'yi seçebilirsiniz, Empty Activity'yi seçebilirsiniz. Bunları adım adım ilgili ekranları seçerek buradaki implementasyonu yapmaya başlayabilirsiniz.
+
+521
+01:50:33,987 --> 01:50:36,867
+Sorusu olan varsa tabii sorusu olana alabilirim.
+
+522
+01:50:38,996 --> 01:50:41,195
+Hücum bir tane buton, iki tane edit text mi olacak şimdi?
+
+523
+01:50:41,735 --> 01:50:42,136
+Efendim?
+
+524
+01:50:42,476 --> 01:50:45,195
+Login ekranında bir buton, iki tane edit text olacak değil mi?
+
+525
+01:50:45,195 --> 01:50:47,195
+Şu an için böyle başlayabilirsiniz.
+
+526
+01:50:47,836 --> 01:50:51,396
+Ama hani register ekranı da tasarlayacaksınız.
+
+527
+01:50:51,956 --> 01:50:57,195
+Register ekranında işte ad, soyad, resim vesaire bilgileri de alıyor olacaksınız ileride.
+
+528
+01:50:57,896 --> 01:51:02,195
+O yüzden login ekranında aklınıza gelen...
+
+529
+01:51:02,420 --> 01:51:07,859
+Yani şu an burada bulunmayan ama bir login ekranında olması gerektiğini düşündüğünüz butonları da işte.
+
+530
+01:51:07,859 --> 01:51:12,980
+Mesela login var, bir tarafta sign-in var, diğer tarafta sign-up var.
+
+531
+01:51:14,500 --> 01:51:18,960
+Sign-in'e bastığınızda ilgili bilgileri alıp kontrol yapacak.
+
+532
+01:51:19,239 --> 01:51:23,079
+Sign-up'a bastığınızda diğer ilgili register sayfasını çağıracak.
+
+533
+01:51:23,260 --> 01:51:29,539
+Bu tür yapılması gereken işleri düşünüp de tasarlayabilirsiniz login ekranınızı.
+
+534
+01:51:41,460 --> 01:51:49,880
+Bunu geliştirirken sormanız gereken bir soru olursa chatten ya da buradan sorabilirsiniz. Ben de o sırada ilgili yüklemeleri yapayım.
+
+535
+01:52:55,604 --> 01:53:04,124
+Şimdi ekran paylaşımıyla size şöyle göstersem görebiliyor musunuz?
+
+536
+01:53:08,051 --> 01:53:09,291
+Evet hocam, biliyoruz.
+
+537
+01:53:09,471 --> 01:53:10,011
+Evet hocam.
+
+538
+01:53:10,011 --> 01:53:25,531
+Benim telefonumdaki gözüken ekran, admin, admin yazıyorum, login diyorum, gördüğünüz gibi ikinci bir aktiviteye, Welcome, admin, state'in yazan bir aktiviteye yönlendiriyor.
+
+539
+01:53:26,631 --> 01:53:32,051
+Tabii buradaki kullanılan arayüz çok sempatik değil.
+
+540
+01:53:33,235 --> 01:53:51,376
+Çok daha farklı tasarımlar yapabilirsiniz. O yüzden buradaki önemli olan işlevselliğini görmeniz. Bu anlamda daha iyi bir ekran tasarımı yaparsanız uzun vadede işimize yarayacaktır bu. Bunu da hatırlatmış olayım.
+
+541
+01:53:52,796 --> 01:53:54,456
+Şimdi tekrar koda dönüyorum.
+
+542
+01:53:55,859 --> 01:54:00,719
+Buraya login'in yanına bir işte dediğim gibi sign in yazıp buraya sign up yazabilirsiniz.
+
+543
+01:54:00,839 --> 01:54:02,359
+Bahaseleri değiştirdiğinizde nasıl oluyor?
+
+544
+01:54:02,459 --> 01:54:19,419
+Mesela burada bu bilgiyi göstermek için bir tane ufak bir işte ne diyelim widget koyup, UI komponant koyup ona tıkladığınızda buradaki password'ın görülebilir olmasını sağlayabilirsiniz.
+
+545
+01:54:20,059 --> 01:54:22,359
+Bu tür değişik aksiyonlar yapabilirsiniz.
+
+546
+01:54:37,747 --> 01:54:51,127
+Bugün burada tamamlayamasanız da önümüzdeki haftaya kadar mutlaka bir Sign-in ekranı, mutlaka bir Sign-up ekranı tamamlıyor olmanız önemli.
+
+547
+01:55:02,100 --> 01:55:15,100
+Yükleyebilme özelliği. Bunların ekran üzerinden alınması ve ilgili data modellere yüklenmesini sizden rica edeceğim.
+
+548
+01:55:28,595 --> 01:55:32,995
+Kaydedildikten sonra signing yapılırken kontrol edilmesini bekliyor olacağım.
+
+549
+01:55:33,535 --> 01:55:39,175
+Tabii bunları veritabanına, dosyaya yazma zorunluluğunuz yok ilk etapta ama yazmak isteyenler,
+
+550
+01:55:39,655 --> 01:55:47,275
+bulduğu örnek kodla bu tür antrenmanlar yapmak isteyenler yapabilir ama ben ilk etapta bu data modelleri oluşturmanızı
+
+551
+01:55:47,275 --> 01:55:52,515
+ve uygulama çalıştıkça bu bilgilerin saklanmasını bekliyorum.
+
+552
+01:55:55,807 --> 01:55:56,947
+Yapmanız.
+
+553
+02:00:51,155 --> 02:01:17,855
+Şimdi arkadaşlar, şöyle bir uygulamaya doğru gitmek güzel olabilir. Buradan bir mezun bilgi sistemine doğru gidebiliriz. Bu ne demek? Bir kişi bu mobil uygulamayı kullanarak, Yıldız Tekniversitesi Bilgisayar Mühendisinden mezun olmuş kişi, sisteme kayıt olabilir. Burada ad soyad bilgisi.
+
+554
+02:01:18,644 --> 02:01:40,583
+İlginç okula giriş yılı ve mevcut yiyeti yılı, bir fotoğraf, cinsiyet bilgisi, hangi öğrenim tipinde üniversitede bilgisayar öğrencisi okuduğu, yani lisans, lisans, üstü yüksek lisans ve doktora olmak üzere üç seçenek, e-mail ve cep telefonu bilgileri saklanabilir.
+
+555
+02:01:45,108 --> 02:01:48,807
+Hazırlığınızı yaparsanız sayfada güzel olur.
+
+556
+02:01:50,628 --> 02:01:56,028
+Rejister ekranınızı da, sign up ekranınızı da buna göre lütfen dizayn edin.
+
+557
+02:01:56,028 --> 02:02:05,088
+Hatta şimdiden bu bilgileri kalıcı olarak saklamak için bir tasarım üzerinden de ilerleyebilirsiniz.
+
+558
+02:02:05,828 --> 02:02:06,668
+Faydalı olacaktır.
+
+559
+02:02:08,756 --> 02:02:21,076
+Sonrasında siteme login olduktan sonra doğru kullanıcı adı ve şifre ile, ki kullanıcı adı ve şifre kısmını da unutmayalım, sign up kısmında.
+
+560
+02:02:24,996 --> 02:02:35,436
+Sisteme girdikten sonra da bir form doldurtabiliriz. Öğrenim deneyimi ile ilgili bu bir tasarım yapılabilir.
+
+561
+02:02:35,920 --> 02:02:41,800
+Onun dışında bazı bilgileri opsiyonel olarak ondan talep edilebilir.
+
+562
+02:02:43,239 --> 02:02:48,500
+İlgili duyuruların ulaştırılması vs. konusunda da bazı düzenlemeler yapabiliriz.
+
+563
+02:02:49,619 --> 02:02:53,239
+Böylece faydalı bir uygulama üzerinde de çalışmış oluruz diye düşünüyorum.
+
+564
+02:03:03,220 --> 02:03:04,739
+Hocam bir şey sorabilir miyim?
+
+565
+02:03:05,220 --> 02:03:05,420
+Tabii.
+
+566
+02:03:06,000 --> 02:03:11,851
+Bu login ekranında sign up butonu koyarsak, sign up butonuna tıkladığımız zaman başka bir ekranın...
+
+567
+02:03:11,988 --> 02:03:16,888
+Yine onCreate şeklinde başka bir yer oluşturmamız gerekiyor değil mi?
+
+568
+02:03:17,408 --> 02:03:20,368
+Aynen öyle. Burada UserJava'da olduğu gibi.
+
+569
+02:03:20,988 --> 02:03:28,528
+Biz burada login butonuna tıkladığımızda StartActivity ile Intent'i buraya yönlendiriyoruz.
+
+570
+02:03:28,528 --> 02:03:39,988
+UserJava burada çok bir şey yok tabii. Sadece ekrana egzemele gömülmüş olan mesajlar var ama sizin ekranınız, sign up ekranınız burada oluşacak ve buraya yazacak.
+
+571
+02:03:39,988 --> 02:03:40,748
+Kodunuzu.
+
+572
+02:08:44,340 --> 02:09:07,340
+Bir sonraki adımda bu mezun bilgis sisteminde ilerlerken kendi telefonlarından geçmiş yıllara ait okul dönemine ait fotoğraflar paylaşılmak istendiğinde bu fotoğrafların bir ekran vasıtasıyla seçilip galeriden...
+
+573
+02:09:07,536 --> 02:09:16,935
+Onların bir noktada konumlandırılması ortak bir noktada ve o ortak noktadaki konumlandırılan fotoğraflarında istenen kişiler tarafından,
+
+574
+02:09:17,975 --> 02:09:24,295
+işte geçmiş yıllara ait fotoğrafların, işte bu yıldızın eski hali olur, Davutbaşı'nın eski hali olur vesaire,
+
+575
+02:09:24,836 --> 02:09:31,055
+görülebilmesini sağlayan bir ekran tasarlamak noktasında bir son iki adımda ilerliyor olacağız.
+
+576
+02:09:35,380 --> 02:09:44,319
+Bu sisteme ekleyecek bir sürü değişik fikirler de var ama ilerlemek isteyenler neye bakabiliriz, neyi araştıralım diye soranlar olabilir.
+
+577
+02:09:44,319 --> 02:10:02,319
+Kendilerini geliştirmek adına sign-up ekranı, sign-in ekranı tasarladıktan sonra bu verileri kalıcı şekilde saklama yönünde belirli çalışmalar yaptıktan sonra bir ekrandan...
+
+578
+02:10:02,547 --> 02:10:10,467
+Galeriden fotoğraf seçme ve bunun belirli bir lokasyona yüklenmesi noktasında da çalışmalarını devam ettirebilirsiniz.
+
+579
+02:10:12,027 --> 02:10:20,327
+Bu sayede hem yapacağınız proje ya da ödevle ilgili birazcık önden çalışma imkanınız olur.
+
+580
+02:10:20,407 --> 02:10:24,327
+Hem de kendinizi geliştirebilirsiniz. Şimdiden onu da paylaşmış olayım.
+
+581
+02:10:34,612 --> 02:10:50,532
+Burada fotoğraf seçmek için mesela uygulamanız doğrudan galeri uygulamasını çağırıp galeri uygulamasındaki seçilen resimlerin sizin uygulamanıza geri döndürülmesi bir seçenek olarak düşünülebilir.
+
+582
+02:10:50,532 --> 02:10:55,532
+Bu döndürülen resimlerinde işte upload dediğiniz...
+
+583
+02:10:56,051 --> 02:11:07,612
+Seçtiğiniz bir bölgeye, bu Firebase olabilir ya da başka bir alan olabilir. İlgili formatta saklanması anlamına gelir. Bunlarla ilgili şimdiden çalışmalara başlayabilirsiniz.
+
+584
+02:11:17,492 --> 02:11:18,912
+Hocam bir şey sorabilir miyim?
+
+585
+02:11:19,412 --> 02:11:19,612
+Tabii.
+
+586
+02:11:20,412 --> 02:11:29,212
+Şimdi ben USB ile cihazımı bağladım fakat bu Android Studio'yu herhangi bir şekilde baştan başlatmam gerekiyor mu? Çünkü cihazı görmüyor şu an.
+
+587
+02:11:30,412 --> 02:11:39,311
+USB debugging modunu aktif hale getirmek gerekiyor. Bunun için telefon üzerinde, telefonla ilgili hakkında kısmı var.
+
+588
+02:11:39,764 --> 02:11:55,344
+Bu Yield Version numarasına 7 kez tıkladığınızda Developer Option'ı önce aktif ediyorsunuz. Sonra da Developer seçeneği aktif olduktan sonra Debugging modunu aktif ederek telefonunuzu tanımasını sağlayabilirsiniz.
+
+589
+02:12:11,283 --> 02:12:17,764
+Başka bir ekran paylaşmamı isteyen var mı? Yani bütün mevzu burada olduğu için herhangi bir başka bir ekranı açmadım.
+
+590
+02:12:18,264 --> 02:12:21,684
+Eczamel dosyasını yaratmak da çok zor değil aslında.
+
+591
+02:12:23,363 --> 02:12:31,003
+Ya da sorusu olan var mıdır? Hani takıldığınız bir nokta varsa ya da ben burayı anlayamadım dediğiniz bir nokta varsa sorabilirsiniz.
+
+592
+02:19:23,507 --> 02:19:26,407
+Bu arada tabii sign-up'ı konuştuk.
+
+593
+02:19:28,288 --> 02:19:39,167
+Sign-up'ı olduğunuz zaman doğru bir şekilde giriş yapıldığında o kişinin sign-up sırasında verdiği bilgileri gösteren bir künye,
+
+594
+02:19:39,167 --> 02:19:46,167
+yani mezuniyetine ait bilgiler ve kendisiyle ilgili bilgilerin sign-up'ı olduğunuz zaman açıdan sayfada...
+
+595
+02:19:46,804 --> 02:20:09,083
+Gözükmesi de güzel olur diye düşünüyorum. O yüzden sayenin olunduğunda çağrılacak sayfa, password ve username doğruysa orada bir resim, resmin yanında kullanıcıyla ilgili ad, soyad bilgileri, mezuniyet yılı, giriş yılı gibi bilgileri de gösteren bir sayfa olursa çok iyi olur diye düşünüyorum.
+
+596
+02:20:10,363 --> 02:20:12,923
+Bu da üçüncü sayfa olarak karşımıza çıkıyor.
+
+597
+02:20:13,523 --> 02:20:24,083
+Sign-in sayfası, Sign-up'a tıkladığınızda bilgilerin girildiği sayfa, sign-inden sonra gelebilecek sayfalardan bir tanesi.
+
+598
+02:20:24,183 --> 02:20:28,023
+Bunlar zaman içerisinde değişebilir ama bunların hazırlığını yapmakta fayda var.
+
+599
+02:20:28,783 --> 02:20:40,324
+Bir de bir ekran, yine bir aktivite üzerinden bir fotoğrafın telefondan seçilip, karşı taraftaki bir alanı, bu bir Firebase alanı bulur.
+
+600
+02:20:40,688 --> 02:20:44,547
+Yüklenebiliyor olması şu an için ilk hedeflerimiz arasında.
+
+601
+02:20:47,328 --> 02:20:49,368
+Hocam bu örneği paylaşacak mısınız?
+
+602
+02:20:50,007 --> 02:20:50,628
+Hangi örneği?
+
+603
+02:20:51,528 --> 02:21:01,648
+Şu anda login örneğini, sizin baktığınız ekranındaki login örneğini, hani XML dosyası ve login Java User, Java Activity User hepsini birlikte paylaşacak mısınız yoksa?
+
+604
+02:21:02,048 --> 02:21:03,148
+Biz mi?
+
+605
+02:21:04,108 --> 02:21:13,668
+Bunu kendinizin oluşturmasını istiyorum çünkü sebebi şu, yani bu paylaşımı yaptığım zaman açıkçası pek bir denemede bulunmuyor öğrenciler.
+
+606
+02:21:14,408 --> 02:21:19,008
+Ve hani bunu isterseniz siz de bulabilirsiniz tabii ki. Bir sakıncası yok.
+
+607
+02:21:19,568 --> 02:21:24,408
+Kendi tarafınıza import edip ya da işte uygun yöntemlerle aktarabilirsiniz.
+
+608
+02:21:25,068 --> 02:21:30,048
+Ama bunları dahi yapmanızın size katkı sağlayacağını düşünüyorum. Yoksa ben projeyi paylaşırız.
+
+609
+02:21:30,048 --> 02:21:36,248
+sat, otomatikman hiçbir şey yapmadan geçmiş olacaksınız bu noktaları. O yüzden şu an için bu projeyi paylaşmayacağım.
+
+610
+02:21:42,291 --> 02:21:50,731
+Buna benzer bir sürü örnek var. Yazabilirsiniz. İşte GitHub, Login and Register, Sample Codes diye. Onları inceleyebilirsiniz.
+
+611
+02:21:51,412 --> 02:21:57,772
+Oradaki kodları kendi tarafınıza import edebilirsiniz. Bugları bulup, hataları bulup çözmeye çalışabilirsiniz.
+
+612
+02:21:58,471 --> 02:22:04,691
+Onunla ilgili de önümüzdeki hafta bir konuşabiliriz. Çünkü şöyle sıkıntılarla karşılaşacaksınızdır muhtemelen.
+
+613
+02:22:10,291 --> 02:22:27,971
+İlgili uyumsuzluklar söz konusu olabilir. Bununla ilgili işte JDK ile ilgili uyumsuzluklar söz konusu olabilir. Bunları aşmak için bazı böyle teknik çözümler var. Onları da haftaya bana hatırlatırsanız size paylaşıyor olacağım.
+
+614
+02:22:28,628 --> 02:22:36,008
+Sonuçta her bir geliştirilen kod farklı zaman dilimlerinde geliştiriliyor ve farklı API'ler için geliştiriliyor.
+
+615
+02:22:36,008 --> 02:22:48,468
+Farklı build versiyonlarıyla Gradle'ın değerleniyor. Bu nedenle kendi ortamınıza bu kodu import etmeye çalıştığınızda hatalar alıyor olacaksınız.
+
+616
+02:22:50,168 --> 02:22:52,668
+Bununla ilgili bir deneyim yaşamanızda faydalı olur diye düşünüyorum.
+
+617
+02:22:55,347 --> 02:23:01,328
+Çünkü günün sonunda tüm kodları sıfırdan yazmayacaksınız tabii ki ilerleyen zamanlarda.
+
+618
+02:23:01,868 --> 02:23:06,648
+Şu an tamamen bir adaptasyon olması açısından böyle bir şey yapıyoruz.
+
+619
+02:23:07,247 --> 02:23:13,648
+İlerleyen zamanlarda bununla ilgili belki en azından geriye dönük olarak paylaşımları yapabilirim.
+
+620
+02:23:14,131 --> 02:23:24,592
+Fakat önce sizin birazcık bu konuda araştırmacı olmanız, biraz ortamı öğrenmeye çalışmanız benim için daha değerli.
+
+621
+02:25:39,379 --> 02:25:50,959
+Şimdi arkadaşlar, yavaş yavaş bugünün sonuna geliyoruz. Bir konuyu da şöyle hani daha motive edici hale getirmek adına sizinle paylaşayım.
+
+622
+02:25:50,959 --> 02:26:06,299
+Bu derslerde yaptığımız, konuştuğumuz aktivite, kod çalışmalarını benimle paylaşan olursa tamamladığı zaman bunu isim paylaşmadan
+
+623
+02:26:07,123 --> 02:26:32,123
+Kodu bir sonraki derste üzerinden geçip neler daha iyi olabilir, neler farklı olabilir diye değerlendirebiliriz. Bu anlamda iyi kötü örnek ya da farklı örnekler nasıl olabiliyor? Herkesin değişik tarzdaki yazımlarını da görme şansınız olur. O yüzden benim size tavsiyem...
+
+624
+02:26:33,620 --> 02:26:43,620
+Bir kısmını tamamladığınızda kendinizce çalıştığını test ettikten sonra benimle paylaşırsanız ben de bunu memnuniyetle yorumlamak isterim.
+
+625
+02:26:44,620 --> 02:26:53,459
+Bu noktada belki ilerleyen zamanlarda bir teşvik edici bir puanlamada yapabiliriz duruma bağlı olarak sizden ne kadar ilgi alaka geleceğine bağlı olarak.
+
+626
+02:26:53,907 --> 02:27:14,948
+O yüzden önümüzdeki haftaya kadar bu konuştuklarımızdan fotoğraf dışındaki kısımları tamamlayıp paylaşanlar olursa önümüzdeki hafta bu kodlardan en azından bir ya da iki tanesiyle ilgili bir gösterim yapıp diğer arkadaşlara da yazan kodu arkadaşa da bir geri bildirim yapma imkanımız olabilir.
+
+627
+02:27:16,527 --> 02:27:20,547
+Başka sorusu olan var mı bugünlük dersle ilgili?
+
+628
+02:27:25,940 --> 02:27:31,319
+Evet [öğrenci], dil olarak Kotlin kullanabilirsiniz herhangi bir sakınca yok.
+
+629
+02:27:36,659 --> 02:27:46,779
+Bu hafta Activity Life Cycle'ı, aktivitelerin genel olarak oluşturulduğunda hangi adımlardan geçtiğini konuştuk.
+
+630
+02:27:50,288 --> 02:28:02,347
+State'leri nasıl saklayacağımızdan ve hangi durumlarda aktivitelerin bulunabileceğinden ve buna bağlı olarak saklamamız gereken bilgilerden bahsettik.
+
+631
+02:28:03,468 --> 02:28:06,828
+Ve bunu hangi şartlarda, nerelerde saklamamız uygun olur ondan bahsettik.
+
+632
+02:28:07,388 --> 02:28:12,567
+Intent nedir, neler yapabiliriz intentlerle, farklı türleri nelerdir onları konuştuk.
+
+633
+02:28:12,912 --> 02:28:32,572
+Bir de ilk defa Android tarafında bir kod yazmak için yola çıktık. Bir login ekranı nasıl oluşturulur? Kısaca, Examen ile Source Code arasında nasıl ilişki kurulur? Ondan bahsettik. Start Activity ile başka bir aktiviteye nasıl geçiş yapılır? Intent aracılığıyla onları konuştuk.
+
+634
+02:28:35,507 --> 02:28:51,768
+Haftalara ait bir mezun bilgi sistemi üzerinde çalışırken hangi ekranlara ihtiyaç duyacağız? Biraz onlardan bahsettik. Umarım sizlere faydalı olmuştur. Katıldığınız için çok teşekkür ediyorum. Güzel bir hafta diliyorum hepinizi. Önümüzdeki hafta görüşmek dileğiyle. Hoşçakalın.

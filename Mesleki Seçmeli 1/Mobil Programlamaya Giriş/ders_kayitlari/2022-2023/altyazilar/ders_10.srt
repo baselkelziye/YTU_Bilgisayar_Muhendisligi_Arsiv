@@ -1,0 +1,1959 @@
+1
+00:11:25,556 --> 00:11:37,376
+Arkadaşlar, hoş geldiniz. Kayıtla ilgili bir sorun var sanırım. Bir saniyemizi rica edeceğim. Ayarlara bakalım.
+
+2
+00:11:43,475 --> 00:11:47,115
+Sizin kayıtıyla ilgili bir sorun olmaması için. Sesimiz de geliyor mu bu arada?
+
+3
+00:11:49,676 --> 00:11:50,216
+Geliyor hocam.
+
+4
+00:11:51,235 --> 00:12:00,915
+Tamam, kayıtın sessiz olarak alınma durumu söz konusu da yanlış okumadıysam bir problem olmaması için bakıyorum.
+
+5
+00:12:27,155 --> 00:12:27,475
+Oops.
+
+6
+00:12:36,980 --> 00:12:45,039
+Problem gözükmüyor. Bir an sanki kayıtı sessiz al gibi bir seçenek gördüm ama umarım öyle bir durum yoktur.
+
+7
+00:12:45,427 --> 00:13:05,048
+Şimdi öncelikle tekrar hoş geldiniz. 8. haftadayız. Haftaya vize haftanız var. Önümüzdeki birkaç gün sonra da bayram var. İyi bayramlar diliyorum hepinize. Sevdiklerinizle güzel bir bayram geçirirsiniz umarım. Önümüzdeki haftada vize haftasındaki sınavlarınızda başarılar diliyorum.
+
+8
+00:13:05,488 --> 00:13:23,888
+Bugün girişte birkaç yorum yapacağım. Gerek sorusu olan arkadaşlara cevap vererek hem de sınavla ilgili birkaç şey söyleyerek. Öncelikle sizinle paylasmak istediğim bu dersin silibisini dönem başında bir paylaşmıştık. Üzerinden bir geçelim istiyorum.
+
+9
+00:13:30,528 --> 00:13:47,947
+Dünyadaki terminoloji üzerine biraz konuşmuştuk ve bazı terminleri size anlatmıştım. Sonra mobil cihazlar üzerine konuştuk, mobil işletim sistemleri üzerine konuştuk, normal işletim sistemlerinden, farkından bahsettik. Mobil uygulama geliştirme tekniklerinden ve dillerinden konuştuk.
+
+10
+00:13:50,964 --> 00:14:01,144
+Araçları tanıdık, ortamlardan bahsettik, sonra Android mimarisine giriş yaptık. Android tarafında bir Application Lifecycle, bir Activity Cycle.
+
+11
+00:14:01,519 --> 00:14:28,480
+Nasıl gerçekleşiyor? Bunları anlattık. İnternetleriyle layoutları konuştuk. Komponentlerden bahsettik. Sonra aktivitelerin birbirleriyle haberleşmesi için hangi yollar var? Onları konuştuk. User Interface komponentlerinden bahsettik. Sonra veri nasıl saklanır? Hangi yollar vardır? Bunlara değindik. En son veriyi nasıl topluyor telefonlar ve işliyor? Hangi kaynaklardan alıyorlar? Nasıl değerlendiriyorlar?
+
+12
+00:14:29,519 --> 00:14:35,139
+Bugün de Broadcast Receiver'ları anlatacağız. Bu konu çok uzun bir konu değil.
+
+13
+00:14:35,604 --> 00:14:52,544
+Hem uzun olmadığı için hem de birkaç tane farklı örnek görebilmeniz için 2-3 tane kod üzerinden örnek gösteriyor olacağım. Önümüzdeki haftada buraya kadar geldiğimiz konulardan sorumlu olacaksınız.
+
+14
+00:14:52,544 --> 00:15:03,544
+Sınavdan sonraki haftada duruma bağlı olarak background task'lar bir önceki haftaya alabilirim. Bir kontrol edeceğim durumu çünkü aslında broadcast risk...
+
+15
+00:15:03,604 --> 00:15:18,584
+Receiver, Background Task'ların bir parçası. Genelde burada yazdığım sırada anlatıyorum ama bu sene belki Background Task'ları yakına çekmek daha faydalı olabilir. O yüzden 10 ve 11. hafta konularının yerleri değişebilir.
+
+16
+00:15:19,444 --> 00:15:29,580
+Location-based services'ler ve mapler aslında birbiriyle bağlantılı ve 2 hafta bu konuları detaylı olarak işliyor olacağız. Son hafta da...
+
+17
+00:15:29,812 --> 00:15:42,172
+Teknik olarak bir uygulamayı tamamladığınızda, markete yüklemek istediğinizde ne tür kurallar var, nelere dikkat etmek gerekiyor bu süreçlerden bahsederek dönemi kapatıyor olacağız.
+
+18
+00:15:57,039 --> 00:16:14,179
+Buradaki kaynakları değerlendiriyor olmanızı tavsiye ederim. Çünkü bazı detay bilgiler konuşurken dikkatten kaçmış olabilir. O yüzden özellikle konu başlıklarını takip ederek burayı bir hazırlık aracı olarak görebilirsiniz.
+
+19
+00:16:21,792 --> 00:16:31,312
+Şıklı sorular, biraz boşluk doldurma, biraz kod verilip kodla ilgili bazı sorular karşınıza çıkabilir.
+
+20
+00:16:32,771 --> 00:16:41,951
+Çok uzun bir süre açıkçası planlamıyorum. Belki iki ayrı seksiyon düşünülebilir ama şu an netleştirmedim.
+
+21
+00:16:41,951 --> 00:16:44,951
+Ama günün sonunda...
+
+22
+00:16:45,812 --> 00:16:51,231
+Çok çok uzun bir sınav sizi beklemiyor olacak. Belki kod sorularından dolayı biraz daha süre uzayabilir.
+
+23
+00:16:51,892 --> 00:16:59,632
+Bilginizi burada gördüğünüz bazı konuları öğrenip öğrenmediğinizi ölçecek bir sınav hazırlamaya gayret edeceğim.
+
+24
+00:17:00,192 --> 00:17:09,711
+Ezberlemenizi beklemiyorum ama tabii ki bazı bilgileri konusunda da haberdar olmanız konusunda hazırlıklı olmanızı öneririm.
+
+25
+00:17:10,127 --> 00:17:23,087
+Ezberden çok o bilgiyi kullanabilmek ya da onun karşılığında bir kod geliştirirken ihtiyaç duyduğunuz o bilgilere hızlıca erişebilmek için.
+
+26
+00:17:23,923 --> 00:17:28,543
+Ne tür yollardan geçeceğiniz noktasında hazırlıklı olmanızda fayda var.
+
+27
+00:17:29,824 --> 00:17:32,124
+Sınavın ağırlık oranı %20 olacak.
+
+28
+00:17:32,364 --> 00:17:33,663
+Dönem başında konuştuğumuz gibi.
+
+29
+00:17:34,364 --> 00:17:37,824
+Ödevinizi, dokümanını bu hafta yayınladım.
+
+30
+00:17:38,443 --> 00:17:41,223
+Geçtiğimiz hafta derste anlatmıştım.
+
+31
+00:17:41,652 --> 00:18:09,652
+Kısaca %15 oranı var. 7 Mayıs son tarih kesinlikle uzama olmayacaktır. Dönem projesi 29 Mayıs'ti galiba yine kesinlikle uzama olmayacaktır. Çok önceden verdiğim için bu noktada daha sonra bir talepte bulunmayın lütfen. Ve sadece sistem üzerinden kurallara uygun olarak gönderilen ödevleri kabul edeceğim. Final sınavınız da %100'e olacak. %40 bir oranı var. Bunları...
+
+32
+00:18:09,652 --> 00:18:17,692
+Hatırlatmış olmak istedim. Sorusu olan varsa, şimdi sizin sorularınızla devam edelim. Ondan sonra konumuza geçelim.
+
+33
+00:18:18,211 --> 00:18:22,731
+Hocam ben bir şey sorabilir miyim? Sesim geliyor değil mi hocam?
+
+34
+00:18:23,172 --> 00:18:23,632
+Duyuyorum.
+
+35
+00:18:24,112 --> 00:18:27,344
+Tamam. Şey hocam, bu proje hakkında şimdi...
+
+36
+00:18:27,344 --> 00:18:31,784
+Ama demiştiniz ya, Studio Zeditörü ile bitmesi lazım mailin, ona göre bir doğrulama yapması lazım.
+
+37
+00:18:32,864 --> 00:18:37,644
+Hocam, Firebase, benim Studio öğrenci mailime göndermiyor yani mail.
+
+38
+00:18:37,844 --> 00:18:42,344
+Yani normal Gmail'i falan gönderiyor, onaylama yapıyorum da öğrenci mailime gelmiyor yani bir şekilde.
+
+39
+00:18:43,224 --> 00:18:49,344
+Şöyle yapabilirsiniz, böyle bir sıkıntı varsa ikinci bir mail alın kullanıcılardan.
+
+40
+00:18:50,384 --> 00:19:06,744
+Yani kontrolü STD yıldız.tr adresi üzerinden gerçekleştirin. Kontrollen kastettiğim kullanıcının böyle bir gerçekten hani tanımlı adresi varsa oraya girebilecek. O yüzden istiyorum. İkinci adresi de maillerin gönderimi için, onaylanması için kullanırsınız.
+
+41
+00:19:07,443 --> 00:19:12,703
+Peki şeyi nasıl kontrol edeceğiz hocam? Öyle bir adres gerçekten o kullanıcıya ait mi değil mi?
+
+42
+00:19:13,683 --> 00:19:14,844
+O müladesi.
+
+43
+00:19:14,923 --> 00:19:28,423
+Şu an için böyle bir zorunluluk yok. Eğer böyle bir mail bizim sunucumuzun tarafına ulaşmıyorsa, hani ben bir alternatif çözüm olarak soruyorum ama hatanın neyden kaynaklandığını şu anda bilmiyorum.
+
+44
+00:19:29,223 --> 00:19:37,663
+Hani niye Gmail üzerinden bu mail alışveriş yapılabiliyor, Yıldız.tr üzerinden yapılamıyor. Orayı hani bir görmek ona göre konuşmak isterim.
+
+45
+00:19:38,003 --> 00:19:41,563
+Tamamdır hocam. İstersen bir şey yapabilirim, mail atabilirim size bu şekilde soruları.
+
+46
+00:19:41,563 --> 00:19:48,823
+Bir arkadaşınız Firebase'le ilgili bir sıkıntı yaşanmış, mail atmış. Sen de onun gibi yapabilirsin tabii ki.
+
+47
+00:19:51,963 --> 00:19:55,743
+Sanırım Osmanlı, Osmanlı'da cevap veriyor olacağım.
+
+48
+00:19:57,523 --> 00:20:02,183
+Evet, başka sorusu olan var mı? Ödev veya dönem projesi ya da sınavla ilgili.
+
+49
+00:20:06,324 --> 00:20:08,483
+Peki, duyamıyorum.
+
+50
+00:20:09,923 --> 00:20:10,884
+Ben soru sorabilirim.
+
+51
+00:20:11,284 --> 00:20:13,663
+Biraz yüksek ses, çok kısık geliyor sesim.
+
+52
+00:20:14,624 --> 00:20:16,943
+Tamam, bir saniye hemen sesi ayarlayayım.
+
+53
+00:20:18,544 --> 00:20:20,423
+Şimdi hocam, şeyle alakalı soru soracaktım da ben.
+
+54
+00:20:22,704 --> 00:20:27,423
+Şimdi bu ödevde mezun profil bilgileri eklesi, günceldiği bir...
+
+55
+00:20:28,307 --> 00:20:29,907
+Seksüel ayarlamışsınız.
+
+56
+00:20:30,407 --> 00:20:36,867
+Orada şimdi biz ilk başta kullanıcı kayıt olurken ismini, e-mailini, şifresini falan alıyoruz, fotoğraf falan alıyoruz.
+
+57
+00:20:36,867 --> 00:20:46,427
+Ama onun dışında bir de kullanıcının yüksek lisans mı olduğunu, ondan sonrasında iletişim bilgilerini de göstermemiz isteniyor.
+
+58
+00:20:46,907 --> 00:20:51,867
+Şimdi biz ilk başta kullanıcı kayıt olurken sadece ismini ne bileyim size...
+
+59
+00:20:52,147 --> 00:20:58,688
+Mail inşifesini alacağız ama aynı zamanda uygulama içerisinde de diğer bilgilerini mi alacağız kullanıcılarını yoksa bunun hepsini ilk kayıt ekranına mı alacağız?
+
+60
+00:20:59,188 --> 00:21:06,107
+[öğrenci], aynı söylediğin gibi bu tür uygulamalarla çok karşılaşmışsındır. Sign up sırasında bütün bilgilerini alan uygulamalar da vardır.
+
+61
+00:21:06,587 --> 00:21:13,047
+Ya da kısaca sign up adımını hızlandırmak için temel bilgileri alır, sonra profil bilgilerini uygulama içerisinde alır.
+
+62
+00:21:13,047 --> 00:21:20,127
+Ben bunu ikiye ayırdım ödevde. Giriş sırasında en temel bilgilerini içeri girdikten sonra da o bahsetti.
+
+63
+00:21:20,147 --> 00:21:40,487
+İzlediğiniz detay bilgileri kullanıcıdan almanız gerekiyor. Benim oraya yazdıklarım bu arada benim aklıma gelenler. Bunlar içerisinde birkaç tane ekleme yapıp kendinizi zenginleştirebilirsiniz. İlla oradaki bilgilere tam anlamıyla sadık kalmak zorunda değilsiniz. Kendinizin katabileceği uygulamaya her türlü fikre de açığım bu arada.
+
+64
+00:21:41,172 --> 00:21:53,492
+Tamamdır hocam. Bir diğer soru hocam. Şimdi son tarihi geçen düğünün silinmesinden bahsetmişsiniz. Orada duyuruyu eklerken biz bir son tarihi mi belirleyeceğiz? Yoksa hani öyle bir şey belirleyeceğiz tamamdır.
+
+65
+00:21:53,492 --> 00:22:09,172
+Evet. Başka türlü mümkün değil. Bunun amacı da yani mezun bir duyuru yayınlanmasını istediğinde teknik olarak onun hani bir süresi vardır. İşte ne bileyim bir belki kurs için bilgi veriyordur. O kursun başlangıcına kadar olan süre.
+
+66
+00:22:09,172 --> 00:22:15,072
+Daha sonra insanlar o süre geçtikten sonra otomatik olarak o duyuruyu görmeyecekler.
+
+67
+00:22:15,592 --> 00:22:27,172
+Tamamdır. Hocam bir de şey, derste anlatırken duyuruyla alakalı olarak mesela fotoğraf falan eklemeden bahsetmiştim ama şeyde ödevde göremedim. Olmak zorunda mı yoksa olmasa da olur mu? Sadece başlık, içerik yeterli mi?
+
+68
+00:22:27,571 --> 00:22:40,311
+Fotoğrafın da olmasını istiyorum. Oraya atlamışım herhalde koymayarak. Ama derste bunu istedim ve kontrolünde de olacak. O yüzden dersin takip edilmesi noktası da bu anlamda önemli.
+
+69
+00:22:40,311 --> 00:22:55,311
+Derste bahsettiğimiz özelliklerin burada olmasını bekliyorum. Böyle bir iki tane şey varsa bana hatırlatın. Dokümanını da güncelleriz ama fotoğrafın olması şu açıdan önemli. Yani bir duyuru listesini çok daha...
+
+70
+00:22:55,571 --> 00:23:00,152
+Düzgün gözükmesini sağlayan bir araç olduğu için fotoğrafın olmasını istiyorum.
+
+71
+00:23:00,831 --> 00:23:08,371
+Tamamdır hocam. Bir de son olarak, duygulardan ayrıca fotoğraf ve video ekleme diye bir ekstra yeni bir özel eklenmiş.
+
+72
+00:23:08,720 --> 00:23:22,019
+Vardı zaten. Derste bahsetmiştim, fotoğraf eklenmesini istiyorum. Mezunlar, mezuni oldukları dönemle ilgili ya da işte üniversitede geçirdikleri yıllarla ilgili fotoğraf paylaşabilecekler ve bunu görüntüleyebilecekler diye derste söylemiştik bunu.
+
+73
+00:23:22,380 --> 00:23:28,320
+Tamam, o zaman ben kaçırmışım ama hocam bunlar duyuruların gösterdiği ekranla aynı ekran mı olacak yoksa bu tamamen bizim bırakıldık?
+
+74
+00:23:28,320 --> 00:23:36,180
+Başka bir ekrandan bahsediyoruz. Duyuru ekranı sadece bir kişinin etkinlik takibi açısından ve haber takibi açısından önemli.
+
+75
+00:23:36,720 --> 00:23:53,260
+Onun ötesinde resim ekranı tamamen bir galeri aktivitesi gibi düşünün. Oradan belki onu tarih bilgisini de alarak kullanıcından hangi yıla ait olduğu bilgisini böylece yıllara göre gruplama şansı da yaratabilirsiniz.
+
+76
+00:23:53,260 --> 00:24:04,720
+Ben oraya koymadım ama aklıma gelen bir fikir olması açısından söylüyorum. Fotoğraflar karışık bir şekilde gözükeceğine, işte 2010 yılına ait bir fotoğrafsa fotoğrafı ya da videoyu alırken yılını da alırsanız böyle bir...
+
+77
+00:24:04,720 --> 00:24:07,059
+Hani sıralarken kolaylık olur.
+
+78
+00:24:07,840 --> 00:24:08,660
+Tamamdır hocam, sağ olun.
+
+79
+00:24:09,480 --> 00:24:10,039
+Rica ederim.
+
+80
+00:24:12,140 --> 00:24:13,519
+Evet, başka sorusu olan var mı?
+
+81
+00:24:14,519 --> 00:24:20,320
+Ya da ödev ya da dönem projesiyle ilgili bir eleştiri getirmek isteyen ya da bir yorum yapmak isteyen var mı?
+
+82
+00:24:25,332 --> 00:24:29,632
+Peki, o zaman ya aşağıya dersimize geçebiliriz. Önce ekranı kapatayım.
+
+83
+00:24:31,492 --> 00:24:39,312
+Şunu özellikle belirtmek isterim. Son haftalarda bütün derslerde aynı şekilde diğer hocalarla da konuşuyoruz.
+
+84
+00:24:39,852 --> 00:24:44,352
+Katılım oldukça düşük bir noktaya gelmiş durumda. Bugün de 15 kişi var derste.
+
+85
+00:24:45,172 --> 00:24:48,392
+Totalde 100 kişi alıyor dersi. Mutlaka sonradan dinleyenler vardır.
+
+86
+00:24:50,332 --> 00:24:50,988
+Ama...
+
+87
+00:24:51,284 --> 00:25:12,423
+Şöyle bir gerçek var ki, dersteki bilginin ne kadar sizin tarafınıza geçtiğini takip etmek özellikle zor oluyor. Bu noktada sizler açısından eğer bir şekilde dersi takip edebiliyorsanız ve dersiden bir şeyler öğrenebiliyorsanız ya da dersi geçebilecek noktaya gelebiliyorsanız hiçbir sorun yok.
+
+88
+00:25:12,751 --> 00:25:36,971
+En azından benim açımdan bu sizin tercihiniz. Ama birçok ders var ve bu derslerde daha önce online dönemde yaşanan sıkıntıları biliyoruz. O nedenle özellikle bayramdan sonraki süreçte bu konuda sınavların yüz yüze olduğu dönemde, final döneminde olacağı için biraz daha dikkatli olmanızı öneririm sonradan çeşitli sürprizler oluşmaması adına.
+
+89
+00:25:40,751 --> 00:25:45,271
+Yapabileceğim bir şey varsa bunu benimle paylaşırsanız da sevinirim ama gördüm.
+
+90
+00:25:46,031 --> 00:25:51,183
+Hemen hemen birçok derste ve birçok hocada bu durum artık bayağı hani...
+
+91
+00:25:51,183 --> 00:26:12,804
+Üst noktaya ulaşmış durumda dersin takibi noktasında. Sizler için bir sorun yoksa, dediğim gibi benim için de bir sorun yok ama son bir kez size bu konuda söylemek istedim. Çünkü bayramdan sonra yeni bir süreç başlayacak. Gelmek isteyenler vardı. O konuda nasıl bir durumla karşılaşacağız bilmiyorum ama dersi bu konsepte götürmeye devam edeceğiz.
+
+92
+00:26:19,183 --> 00:26:25,644
+Şu açıdan bu ders pratik yaparak öğrenilebilecek ve kurcalayarak öğrenilebilecek bir ders.
+
+93
+00:26:26,124 --> 00:26:34,163
+Özellikle ödevi ve dönem projesini uğraşarak yapmaya çalışırsanız bence birçok konuda eksiğinizde kapatma şansınız olur.
+
+94
+00:26:34,683 --> 00:26:39,244
+O yüzden orada göstereceğiniz performansı önemsiyorum.
+
+95
+00:26:40,084 --> 00:26:45,104
+Umarım sınavda da bir sorun olmadan iyi notlar alırsınız deyip bu kısmı kapatalım.
+
+96
+00:26:46,067 --> 00:26:56,427
+Ekran paylaşımı noktasında size slide'ların 3. ve 4. haftasını da duvara yükledim dersin duvarına.
+
+97
+00:26:57,168 --> 00:27:07,587
+Bugünkü slide'ları da tamamladığımızda dersin duvarına yükleyeceğim ve tüm bugüne kadar gördüğünüz slide'lara ders duvarından erişebiliyor olacaksınız.
+
+98
+00:27:10,132 --> 00:27:15,291
+Evet, bu hafta Broadcast Receiver'ları konuşacağımızı söylemiştik.
+
+99
+00:27:16,211 --> 00:27:29,852
+Broadcast Receiver'lar aslında Android işletim sisteminde bizim için PC ortamındaki inter-app'ları temsil ediyor diyebiliriz.
+
+100
+00:27:29,852 --> 00:27:36,852
+Bu da şu demek, sistem seviyesinde veya uygulama düzeyinde gerçekleşen değişikliklerin,
+
+101
+00:27:37,811 --> 00:27:47,672
+Diğer uygulamalar tarafından haberdar edilmesi ya da diğer uygulamaların bu değişikliklerden haberdar olmasını sağlayan temel yapı taşları.
+
+102
+00:27:48,339 --> 00:27:56,159
+Bir uygulamaya bir başka açıdan giriş noktası, daha önce aktivitelerle entry point'lerden bahsetmiştik.
+
+103
+00:27:56,259 --> 00:28:07,959
+Broadcast Receiver'larda gerçekleşen sistem ya da uygulama değişiklikleri sonrasında o uygulamada bir kodun aktive edilmesini bize mümkün kılıyor.
+
+104
+00:28:08,599 --> 00:28:11,019
+Buradaki design pattern'i publish and subscribe.
+
+105
+00:28:11,019 --> 00:28:12,539
+Bu da şu demek.
+
+106
+00:28:15,827 --> 00:28:23,628
+Sistem düzeyinde ya da farklı uygulamalarda gerçekleşen değişiklikler ana bir merkez noktasına bildiriliyor.
+
+107
+00:28:24,407 --> 00:28:30,967
+Bunu takip etmek isteyen uygulamalar da bu değişiklik gerçekleştiğinde haberdar oluyor.
+
+108
+00:28:32,048 --> 00:28:36,608
+Temelde aslında iki tip broadcast'tan bahsediyoruz.
+
+109
+00:28:36,768 --> 00:28:40,008
+Biri sistem broadcast'ları, diğer de custom broadcast'lar.
+
+110
+00:28:40,627 --> 00:28:46,907
+Sistem Broadcast'leri, sistemsel değişiklikleri bizlere aktarmada kullanılıyor.
+
+111
+00:28:47,027 --> 00:29:00,747
+Custom Broadcast'ler ise uygulamalara özel değişikliklerin diğer uygulamalara ya da uygulama içine haber verilmesi noktasında kullanılan aslında intentler.
+
+112
+00:29:01,747 --> 00:29:08,207
+Burada üç temel aslında yol var.
+
+113
+00:29:08,692 --> 00:29:26,692
+Bir tanesi bu Broadcast'lerin diğer uygulamalardan paylaşımı, bir diğeri bu Broadcast'lerin sistem tarafından paylaşımı, bir de işte Local Broadcast Manager ile gerçekleşen uygulamanın kendi içindeki bir değişikliğin...
+
+114
+00:29:27,508 --> 00:29:36,947
+Bir aktivitede belki gerçekleşen, diğer aktivitelere, uygulamanın diğer bileşenlerine bildirilmesini içeren üçüncü yöntem.
+
+115
+00:29:37,028 --> 00:29:47,488
+Yani teknik olarak sistemden, diğer uygulamalardan ve uygulama içi gelen broadcastlerle biz bugün bu ders kapsamında ilgileniyor olacağız.
+
+116
+00:29:50,288 --> 00:30:08,288
+Gösterimi şuraya alayım bir tane kaymış slide. Burada neleri kastediyoruz? Bir telefonun şarja takılması, Airplane moda geçmesi, reboot edilmesi. Bunların hepsi sistemsel değişiklikler ve...
+
+117
+00:30:08,655 --> 00:30:18,915
+Uygulamaların yeri geldiğinde önemsediği ve bu değişiklik olduğunda kendilerini buna göre konumlandırdığı aslında önemli inter-up noktaları.
+
+118
+00:30:19,347 --> 00:30:34,887
+Örneğin bir telefon şarja takıldığı anda işletim sistemi seviyesinde şöyle bir konfigürasyonla işte %50'nin üstündeyse şarj ya da telefon şarja takıldıysa orada bir update işlemi gerçekleşiyor.
+
+119
+00:30:45,587 --> 00:30:49,367
+Ağına bağlanıldığında bunu yapmayı tercih edebiliyorlar.
+
+120
+00:30:49,927 --> 00:30:52,867
+Hücresel ağdaki kotaları dolmasın diye.
+
+121
+00:30:53,427 --> 00:31:01,427
+Yine bunu gece vakti, belli bir saatte, gün değiştiğinde yapmayı,
+
+122
+00:31:02,008 --> 00:31:06,367
+yani telefonun daha az meşgul olduğu dönemde yapmayı isteyen uygulamalar,
+
+123
+00:31:06,528 --> 00:31:10,307
+bunların hepsi sistemsel değişikliklerin takip edilmesini gerektiriyor.
+
+124
+00:31:10,963 --> 00:31:21,143
+Burada iki tip aslında receiver, yani bu işleri takip edeceksiniz, sistemsel ya da uygulamasal değişiklikleri receiver tanımlı yapıyorsunuz.
+
+125
+00:31:21,183 --> 00:31:27,683
+Bir manifest tarafında deklar edilmiş, diğeri de ilgili konteks tarafında rejistir edilen receiver'lar.
+
+126
+00:31:28,403 --> 00:31:37,123
+Biri statik, diğeri dinamik. Daha önce bunun örneklerini farklı konularda aslında görmüştünüz.
+
+127
+00:31:37,647 --> 00:31:45,667
+Bunun önemli bir aslında kısmı da burada bizim Broadcast Receiver'larda karşımıza çıkıyor.
+
+128
+00:31:45,767 --> 00:31:56,087
+Sebebi şu, manifest deklarasyonu ile takip eden Receiver'lar bunu uygulama kapalı olduğu zaman da
+
+129
+00:31:56,384 --> 00:32:10,744
+ilgili değişikliklerin takip edilmesini mümkün kılarken, Context Registered Receiver'lar sadece uygulama ya da ilgili aktivite destroy edilmediği sürece takibin gerçekleşmesini sağlıyor.
+
+130
+00:32:11,564 --> 00:32:13,403
+Tabii belli kurallar var.
+
+131
+00:32:13,855 --> 00:32:21,615
+Her sistem aktivitesini manifest deklarasyonuyla sürekli takip edemiyorsunuz.
+
+132
+00:32:21,996 --> 00:32:23,875
+Buna Android belli kısıtlar getirdi.
+
+133
+00:32:24,375 --> 00:32:34,855
+Bunun temel sebebi de ne kadar çok uygulama ya da aktivite bir değişikliği takip etmek isterse o kadar sistem kaynağı tüketiyor.
+
+134
+00:32:34,855 --> 00:32:36,655
+Çünkü sonuçta...
+
+135
+00:32:36,655 --> 00:32:47,715
+Her şey manifest tarafında deklare edildiğinde takip edilebilseydi, o zaman herkes her şeyi kafasına göre etmek istediğinde telefonun kaynaklarını çok hızlı bir şekilde tüketebilirdi.
+
+136
+00:32:48,215 --> 00:32:53,335
+Bunu engellemek için de Android zaman içerisinde, versiyonlar içerisinde buna kısıtlar getirdi.
+
+137
+00:32:54,015 --> 00:32:58,655
+Eskiden sadece manifest'te deklare edilirken bugün birçok...
+
+138
+00:32:59,251 --> 00:33:14,911
+Permission özelliği de dahil olmak üzere birçok özellik. Artık runtime sırasında iş ihtiyaç duyulduğu sürece tanımlamanın yapılıp sonra unregister işleminin gerçekleştirilmesi bekleniyor.
+
+139
+00:33:15,851 --> 00:33:18,531
+Sistem Broadcast'lar 200 küsur tane.
+
+140
+00:33:19,059 --> 00:33:43,899
+Bunların bazıları burada işte baterinin durumu değiştiğinde, belli bir seviyenin altına düştüğünde, cihazınız yeniden başladığında, bir güç kaynağına takıldığında, uçuş modunuza geçtiğinizde, screen açık ya da kapalı duruma geçtiğinde, bir SMS ulaştığında, bir telefon geldiğinde gibi sistemsel seviyede gerçekleşen birçok değişikliği.
+
+141
+00:33:44,564 --> 00:33:47,044
+Takip etmek için register olabiliyorsunuz.
+
+142
+00:33:47,504 --> 00:33:55,744
+Tabii dediğim gibi bu register olmanın bir maliyeti var ve gerçekten ihtiyaç duyuyorsanız register olmakta fayda var.
+
+143
+00:33:57,744 --> 00:34:08,744
+Broadcast Receiver'lar biraz önce konuştuğumuz gibi manifest tarafında deklare edildiklerinde, tanımlandıklarında sistem...
+
+144
+00:34:09,460 --> 00:34:22,820
+seviyesinde uygulama çalışmasa bile o uygulamanın aktif olarak o değişikliği takip edebilecek konuma gelmesini sağlıyorsunuz.
+
+145
+00:34:23,119 --> 00:34:25,440
+Yani sizin bir uygulamanız var.
+
+146
+00:34:26,195 --> 00:34:42,956
+O uygulama install edildiği andan itibaren manifest'te takip etmek istediği bir sistem seviyesindeki bir değişiklik kodlanmışsa ve bu API seviyesine uygunsa,
+
+147
+00:34:43,440 --> 00:34:49,539
+Uygulamanızı açmasanız bile install edildiği andan itibaren uygulama bunu takip etmeye başlıyor.
+
+148
+00:34:50,119 --> 00:35:02,380
+Ve bu değişiklik gerçekleştiğinde onReceive metodunda bu değişikliğin sonucuna göre yapılması istenen şeyin kodu onReceive metodunda yazılıyor.
+
+149
+00:35:10,516 --> 00:35:24,516
+Yani doğrudan application tarafından adreslenmeyen, hedeflenmeyen broadcastlerin, sistem seviyesinde olan broadcastlerin bazılarının ancak...
+
+150
+00:35:25,215 --> 00:35:40,935
+API 26'dan sonra tanımlanabildiğini manifest'te, bazılarınız artık izninin verilmediğini belirtiyor ifade. Bunun listesi var, bunu ezberlemek zorunda değilsiniz. Ama bu konuda bir fikir sahibi olmakta fayda var.
+
+151
+00:35:53,215 --> 00:36:01,355
+takip edeceğini belirtiyorsunuz ve bunun hangi aksiyonu takip edeceğini belirtiyorsunuz. Burada iki tane aksiyon var.
+
+152
+00:36:01,956 --> 00:36:15,215
+BootCompeted ve InputMethodChanged. Buraya daha fazla da koyabilirsiniz. Bir Broadcast Receiver birden fazla aksiyonu takip edebilir. Gerekirse...
+
+153
+00:36:15,731 --> 00:36:34,971
+Birden fazla aksiyon için aynı işi yapabilir. Gerekirse gelen aksiyonun türüne bağlı olarak farklı işleri gerçekleştirebilir. Bugünkü örneğimizde bunları da göreceğiz ama buraya baktığınız zaman ilk kodlarda manifeste yazılmış üst tarafta yer alması gereken bir receiver kodu var.
+
+154
+00:36:43,668 --> 00:36:47,248
+Özel yazdığınız My Broadcast Receiver sınıfı var.
+
+155
+00:36:47,860 --> 00:37:04,420
+Bunun da bir onReceive metodu var. Bu onReceive metodunda siz gelen bir bilgi varsa, Intent üzerinden bu bilgiyi alıyorsunuz ve bu bilgiyle ilgili gerekli gösterimleri Locked seviyesinde ve Toast mesajı olarak ekrana yazdırıyorsunuz.
+
+156
+00:37:04,920 --> 00:37:15,260
+Daha fazla şeyler de onReceive metodunda çağrılabilir. Ama burada önemli olan şey şu. Hep söylüyoruz, bir UI thread var, bir main thread var.
+
+157
+00:37:16,115 --> 00:37:26,775
+Receiver'ınız bu değişiklik karşısında herhangi bir iş yaparken bu işin saniyeler mertebesinde genellikle sürmemesi gerekiyor.
+
+158
+00:37:26,855 --> 00:37:38,395
+Milli saniyeler mertebesinde en fazla saniyeye yakın mertebede tamamlanması gerekiyor ki sizin uygulamanız açıkken ya da herhangi bir sebeple arka plandayken
+
+159
+00:37:38,768 --> 00:37:52,368
+Yapılan iş çok uzun sürecekse onReceive metodu mainTrad'ı bloklamasın. Buna dikkat etmek gerekiyor. O yüzden onReceive'de yer alacak kodların çok uzun sürecek işler yapmaması isteniyor.
+
+160
+00:37:55,827 --> 00:38:08,307
+OnRecy ve bir işte arka planda bir servis bağlayabilirsiniz. Servis start etmesini sağlayabilirsiniz ama bunun da çeşitli dikkat edilmesi gereken başka önemli noktaları var.
+
+161
+00:38:08,307 --> 00:38:13,307
+Şimdi manifeste tanımlamayı konuştuk. Bir de...
+
+162
+00:38:13,460 --> 00:38:19,840
+Runtime sırasında Receiver'ı, Register nasıl ederiz ona bakalım. Context Registered Receiver'ları konuşalım.
+
+163
+00:38:20,960 --> 00:38:27,000
+Bir Broadcast Receiver objesi tanımlıyoruz. Bir tane Intent Filter tanımlıyoruz.
+
+164
+00:38:31,936 --> 00:38:42,516
+Takip edeceğini Add Action ile buraya ekliyoruz. Yani biraz önce yukarıdaki örnekte Action'ı XML taginin içerisine yazmıştık.
+
+165
+00:38:43,036 --> 00:38:53,416
+Burada ise bunu Source kodumuzun içerisine burada Java sintaksini kullanarak, Java dilini kullanarak ekleme işini gerçekleştirdik.
+
+166
+00:38:56,916 --> 00:39:06,155
+Receiver'ımızı ve takip etmesini istediğimiz Intent Filter'ımızı parametre olarak pas ediyoruz.
+
+167
+00:39:06,155 --> 00:39:09,716
+Burada kritik nokta şu.
+
+168
+00:39:10,356 --> 00:39:16,936
+Bir receiver'ı register ediyorsanız mutlaka unregister etmelisiniz ki işiniz bittiğinde kaynaklar release olsun.
+
+169
+00:39:17,056 --> 00:39:22,096
+Yoksa manifest'ten bir fark kalmaz ve daha fazla kaynak tüketirsiniz.
+
+170
+00:39:24,036 --> 00:39:26,096
+Diğerlerinden farklı olarak...
+
+171
+00:39:27,603 --> 00:39:38,344
+Şu öneriliyor, gerçi diğerlerinde de aynı, hani register işlemlerinde söz konusu ama, onStart'ta eğer register ettiyseniz onStop'ta unregister etmeniz öneriliyor.
+
+172
+00:39:38,344 --> 00:39:45,344
+OnResume'da register ettiyseniz onPause'da unregister etmeniz öneriliyor.
+
+173
+00:39:45,823 --> 00:39:52,123
+OnCreate'de register ettiyseniz onDistroy'da unregister etmeniz öneriliyor.
+
+174
+00:39:52,735 --> 00:40:02,456
+Birbirine, birebir karşılık gelen Lifecycle'larda bu işlemleri yapmanızın daha verimli olduğu Android tarafından tanımlanmış.
+
+175
+00:40:03,096 --> 00:40:11,155
+Context Register Receiver'lar o kontekste kaldığınız sürece takip etmeye devam ediyorlar.
+
+176
+00:40:11,155 --> 00:40:12,155
+O yüzden...
+
+177
+00:40:12,307 --> 00:40:24,847
+Siz bir Activity kontekstinde register tanımladıysanız, başka bir ekrana geçtiğinizde, uygulama içerisinde, o artık Broadcast Receiver'ınız takibi bırakıyor.
+
+178
+00:40:24,847 --> 00:40:36,847
+Ama Application kontekstinde register ettiyseniz, o zaman uygulamanız ayakta kaldığı sürece başka aktivitelere de geçseniz, o...
+
+179
+00:40:37,268 --> 00:40:43,668
+Broadcast Receiver'ı takip etme işlemi uygulama çalıştığı sürece devam ediyor.
+
+180
+00:40:44,868 --> 00:40:46,248
+Buraya kadar sorusu olan var mı?
+
+181
+00:40:53,331 --> 00:40:55,672
+Peki, o zaman devam edelim.
+
+182
+00:40:58,511 --> 00:41:07,112
+Şimdi burada aslında ilerleyen haftalarda konuşacağımız konulardan bir tanesini, kodunu görüyorsunuz.
+
+183
+00:41:07,112 --> 00:41:09,172
+Bir Broadcast Receiver var.
+
+184
+00:41:10,692 --> 00:41:13,112
+Ama Broadcast Receiver...
+
+185
+00:41:13,684 --> 00:41:35,184
+Bir state'i yakaladığında, bir değişikliği tespit ettiğinde subscribe olduğu, onReceive metodunda bir pending aslında intent üzerinden yapabileceği işi burada bir async task üzerinden gerçekleştiriyor.
+
+186
+00:41:35,615 --> 00:41:43,135
+Bu da bir asenkron aslında işin yürümesi için kullandığımız yapı taşlarından bir tanesi.
+
+187
+00:41:43,603 --> 00:41:48,543
+Bunun bize sağladığı şey şu, size az önce bahsetmiştim.
+
+188
+00:41:49,063 --> 00:42:00,523
+OnReceive'de daha uzun sürecek bir iş söz konusu ise, bir mesela dosyayı yüklüyorsunuz, bir resim bitmek üzerinde işlem yapacaksınız.
+
+189
+00:42:01,083 --> 00:42:04,403
+Bunlar görece saniyeler mertebesinde sürebilirler.
+
+190
+00:42:04,403 --> 00:42:11,403
+Bu noktada bir async task yaratarak bunun execute edilmesini ve mevcut main thread'ten...
+
+191
+00:42:11,603 --> 00:42:20,804
+Bu yüzden ayrılarak ayrı bir arka planda yapılan işin devamını sağlayabiliyorsunuz.
+
+192
+00:42:21,283 --> 00:42:34,863
+O yüzden de bu arka plan tasklarının nasıl çalıştığını önümüzdeki sınav haftasından sonra konuştuğumuzda buradaki receiverlarla ilgili de bağlantıyı biraz daha iyi kuruyor olacaksınız.
+
+193
+00:42:34,923 --> 00:42:35,943
+Bunu da hatırlatmış olalım.
+
+194
+00:42:37,876 --> 00:42:56,155
+Temelde receiver'lar gönderilen broadcast intentleri takip ediyorlar dedik ve uygulamalarınızın takip etmek istedikleri olayları ya manifestla ya da runtime süresinde deklara etmeleri gerekir dedik.
+
+195
+00:42:58,643 --> 00:43:07,703
+Siz herhangi bir şeyi takip etmiyorsunuz. Aynı zamanda siz de uygulamanızda Broadcast mesajlar yayınlama hakkına sahipsiniz. Broadcast Intent'ler gönderebiliyorsunuz.
+
+196
+00:43:07,703 --> 00:43:24,703
+Üç şekilde Broadcast Intent gönderme şansınız var. Birincisi, DirectSend Broadcast ile tüm Receiver'ların herhangi bir order gözetmeden karışık bir şekilde bu...
+
+197
+00:43:25,492 --> 00:43:28,972
+Sizin gönderdiğiniz mesajı alabilmesini sağlıyor Send Broadcast.
+
+198
+00:43:29,412 --> 00:43:44,492
+Lokal Broadcast Manager üzerinden gönderdiğiniz Send Broadcast'ı uygulama içindeki aktivitelerin ve birimlerin birbirlerinden haberdar olmasını sağlıyor ve işletim sistemi düzeyine çıkmadan...
+
+199
+00:43:45,088 --> 00:43:56,608
+Mesajın iç döngüde aktiviteler arasında paylaşılmasını sağlıyor ki bu aslında kaynak tüketimi açısından oldukça efisiyent.
+
+200
+00:43:56,748 --> 00:44:12,168
+Yani sizin başka bir uygulamayı bilgilendirmek gibi bir niyetiniz yoksa, kendi uygulamanız içerisindeki başka stankleri ya da aktiviteleri bilgilendirmek istiyorsanız o zaman lokal broadcast manager üzerinden gitmek çok çok sağlıklı ve çok çok daha efektif.
+
+201
+00:44:12,692 --> 00:44:16,051
+Buna dikkat etmek gerekiyor.
+
+202
+00:44:16,051 --> 00:44:28,612
+Son olarak da Send Ordered Broadcast dediğimiz Receiver'ların belirli sıra ile intenti alabildiği bir yöntem var.
+
+203
+00:44:28,771 --> 00:44:31,751
+Bu şu amaçlı ortaya atılmış bir yaklaşım.
+
+204
+00:44:33,376 --> 00:44:52,256
+Bir daha fazla receiver sizden gelecek mesajı dinliyor diyelim. İstiyor, register olmuş, onları takip etmek istiyor. Ama sizin de öncelikle ulaşmasını istediğiniz bir receiver var ve o receiver'ın yapacağı işe göre diğer receiver'ın bir şey yapıp yapmayacağına karar vermek istiyorsunuz.
+
+205
+00:44:59,860 --> 00:45:10,827
+Aşamada bu mesajı alması gerekiyorsa, send ordered broadcast ile intentinizi gönderiyorsunuz ki bu ordera göre...
+
+206
+00:45:10,900 --> 00:45:28,019
+İlgili receiver'a ya da ilgili receiver'lara sırayla uğraşsın. Bir nevi önceliklendirme yapmış oluyorsunuz. Çok sık karşılaşıyor muyuz? Hayır. Ama ihtiyaç duyduğunuzda hayat kurtarabilecek bir yaklaşım olduğu için de bunu bilmenizde fayda var.
+
+207
+00:45:37,139 --> 00:45:50,420
+Bir Broadcast Receiver'dan kendi Receiver'ınızı ekstend ederek oluşturmuşsunuz ve onReceive metodunda da bir intent yaratılıyor ve bu intent aracılığıyla bir servis başlatılıyor.
+
+208
+00:45:50,920 --> 00:45:57,059
+Aslında teknik olarak diyorsunuz ki şöyle bir değişiklik olduğunda sen bu servisi başlat.
+
+209
+00:45:57,260 --> 00:45:59,960
+Bu değişiklik neymiş? Yan taraftaki kop parçasına bakalım.
+
+210
+00:46:00,628 --> 00:46:13,768
+Buradan bu değişikliğin Receiver taglerine gittiğimizde, Action'a baktığımızda, cihazın tekrardan başlatıldığı anı yakalamak istediğini görüyoruz kod seviyesinde.
+
+211
+00:46:13,768 --> 00:46:26,768
+Ve buraya manifeste tanımlanmış olan bu aksiyona subscribe olma işlemi sonrasında, telefon ne zaman sıfırdan başlarsa, buradaki...
+
+212
+00:46:27,443 --> 00:46:37,683
+Servisin de bu uygulama vasıtasıyla çalıştırılmasına vesile oluyorsunuz ve arka planda bu servis çalışmaya başlıyor.
+
+213
+00:46:38,283 --> 00:46:47,763
+Şimdi background tasklarda arka plan servislerinden, long running servislerden mümkün olduğunca uzak durmanız istendiğini çokça konuşacağız.
+
+214
+00:46:53,744 --> 00:47:16,444
+Arka planda çalıştırmanız gerekebiliyor. Bu bir yakın gelecekte makine öğrenmesi telefonlara daha yaygın kullanıldığında işte belli başlı değişikliklerin bilgiler alındıkça arka planda model üzerinde çalıştırılması şeklinde de olabilir. Bunları servis şeklinde de çalıştırmanız gerekebilir.
+
+215
+00:47:21,487 --> 00:47:26,027
+Entry Point'i de tetikleme şansına sahipsiniz.
+
+216
+00:47:27,947 --> 00:47:31,767
+Belirli izinlerin alınması gerektiğini de hatırlatalım.
+
+217
+00:47:32,527 --> 00:47:39,947
+Örneğin, bazı takip etmek istediğiniz sistem seviyesindeki işler için mutlaka izin almanız gerekiyor.
+
+218
+00:47:40,067 --> 00:47:47,867
+Burada da işte BootCompleted, yani cihazın başlayıp başlamadığını takip etmek için bu izin yukarıda users permission ile alınmış buna.
+
+219
+00:47:48,351 --> 00:48:04,711
+Mutlaka dikkat etmeniz gerekiyor. Bazen ilgili izin yoksa onu takip edemeyeceğiniz için size hata mesajı verebiliyor ya da herhangi bir aksiyon gerçekleştiğinde onu takip etme şansınız oluşmayabiliyor.
+
+220
+00:48:06,851 --> 00:48:12,711
+Burada da bir başka örnek var. Sol tarafta Broadcast Receiver'ı görüyorsunuz.
+
+221
+00:48:16,724 --> 00:48:33,884
+Gelen intent bilgisi içerisinden telefon state'inin ne olduğu, telefon çalıyor mu, arayan numara hangisi vesaire gibi bilgileri bir telefon araması.
+
+222
+00:48:34,320 --> 00:48:55,179
+Sizin telefonunuza geldiğinizde, sizin uygulamanız bununla ilgileniyorsa bunu takip edebiliyorsunuz. Örneğin zamanında telefon servisleri de henüz yokken size operatörler sizi telefonunuz kapalı iken arayan numaraları mesaj olarak gönderiyordu.
+
+223
+00:48:58,195 --> 00:49:01,655
+Sadece telefon numarası yazıyordu sizin rehberinizi bilmediği için.
+
+224
+00:49:02,195 --> 00:49:11,135
+Ve siz o telefon numarasını gördüğünüzde ezberi bilmediğinizde yabancı biri mi aradı yoksa sizin telefon fiilistinizdeki biri mi aradı bunu bilemiyordunuz.
+
+225
+00:49:11,135 --> 00:49:14,255
+O dönem biz küçük bir uygulama geliştirmiştik.
+
+226
+00:49:15,415 --> 00:49:19,135
+Bu uygulama arka planda bir SMS receive ettiğinde...
+
+227
+00:49:19,956 --> 00:49:34,456
+SMS'in içini açıyordu. O telefon numarasını arayıp adres firiste bakıp adres buka bakıp kime aitse telefon firistinde onun adını SMS'in içerisine koyuyordu.
+
+228
+00:49:34,456 --> 00:49:47,256
+Ve işte sizi şu saatte XX isim ne kişi aramıştır şeklinde mesajı modifiye ediyordu. O yüzden böyle gelen bir SMS'i yakalamak, bir telefon numarasını işlemek.
+
+229
+00:49:47,956 --> 00:50:05,215
+Telefon istatistiği tutuyorsanız, daha detaylı bir bilgi oluşturmak istiyorsanız ya da telefon geldiğinde o anda yapılması gereken bir iş varsa, mesela bir numarayı sessize almak istiyorsunuz vs.
+
+230
+00:50:05,215 --> 00:50:12,175
+Bu tür Broadcast Receiver'larla değişiklik yaparak gelen aramalar...
+
+231
+00:50:12,175 --> 00:50:19,496
+Giden mesajlar vs. gibi bunlar üzerinde sistemsel seviyede takip edip değişiklik yapabiliyorsunuz.
+
+232
+00:50:19,556 --> 00:50:35,936
+Tabii ki ilgili izinleri almak kaydıyla örneğin her uygulama sizin telefonunuzun state'ini takip edebiliyor olsaydı izinsiz o zaman hiç haberiniz olmadan birçok uygulama arka planda bütün sistemsel seviyedeki değişikliklerinizi takip eder.
+
+233
+00:50:36,335 --> 00:50:49,775
+Ve bununla ilgili telefonunuza ya da size zarar verme potansiyeli taşırdı. Bugün günümüzde bu izinleri almadan Broadcast Receiver'larla takip yapmanız neredeyse mümkün değil diyebiliriz.
+
+234
+00:50:50,855 --> 00:51:01,675
+Buraya kadar sorusu olan var mı? Peki. 14.44, 14.55'e kadar ara veriyoruz. Görüşmek üzere.
+
+235
+01:01:40,916 --> 01:01:48,536
+Evet arkadaşlar, yeniden merhaba kaldığımız yerden devam edelim. Dersin ikinci bölümündeyiz. Slide paylaşalım.
+
+236
+01:01:53,012 --> 01:02:00,532
+Broadcast Receiver'ları konuşuyorduk. En son gelen aramaları takip etmek için bir Register Receiver'ı konuştuk.
+
+237
+01:02:01,268 --> 01:02:11,788
+Tabii, receiver'ları nasıl registre ettiğimizi konuşurken, sending, broadcast, intent kısmında da neler var bir oraya kısaca bakalım.
+
+238
+01:02:12,148 --> 01:02:29,268
+Bugün göreceğiniz kod örneklerinde de bu durumu daha yakından değerlendiriyor olacağız ama bir uygulamanızın intent paylaşmasını, yani bir aksiyon olduğunda diğer uygulamaları ya da uygulama için bilgilendirme yapmasını istiyorsanız bir intent tanımlıyor.
+
+239
+01:02:29,268 --> 01:02:42,268
+Onun aksiyonu neyse diğerleri tarafından takip edilecek. O aksiyonu set action ile bilgi olarak belirtiyorsunuz.
+
+240
+01:02:43,152 --> 01:02:55,612
+Ve eğer bir bilgi paylaşımı söz konusuysa da PutExtra'ya bu bilgiyi yerleştirerek Send Broadcast metodu üzerinden Intent'i aslında gönderiyorsunuz.
+
+241
+01:02:55,612 --> 01:03:00,612
+Burada şunu da söylemek gerekiyor.
+
+242
+01:03:10,228 --> 01:03:20,867
+Intenti bir aksiyonu diğerlerinin eğer subscribe oldularsa haberdar olmalarını sağlamak için bu Intenti paylaşıyorsunuz.
+
+243
+01:03:21,268 --> 01:03:26,728
+Start Activity'deki gönderdiğiniz Intent de buradaki Intent birbirinden aslında teknik olarak farklı.
+
+244
+01:03:27,527 --> 01:03:29,527
+Bunu hatırlatmakta fayda var.
+
+245
+01:03:35,155 --> 01:03:48,155
+İlgili izinlerin paylaşılması ve bunu takip eden kişilerin bu izne sahip olması da önemli. Bu ne demek? Biraz önce send broadcast yaparken set action demiştik. Aynı zamanda karşı tarafın...
+
+246
+01:03:50,099 --> 01:04:10,099
+Diyelim ki takip ettiği aksiyonla ilgili send SMS özelliğine kullanıcıdan iznini almış olması gerekiyorsa o zaman broadcast mesajınızın içerisine parametre olarak bu permission ne ise onu da parametre olarak pastıyorsunuz.
+
+247
+01:04:11,092 --> 01:04:29,312
+Bunun karşılığında da karşı tarafın bu izne sahip olması gerekiyor. Burada gönderen tarafın hangi izne sahip olması gerektiğini belirtmesi gerekiyor. Karşı tarafında bu izni ilgili kullanıcıdan almış olması gerekiyor.
+
+248
+01:04:31,347 --> 01:04:52,227
+Son versiyonlarda, API'lerde daha sık ön plana çıkan bir kullanım şekli. Bu sayede herkesin herhangi bir broadcaste kafasına göre talip olmamasını sağlıyorsunuz. Eğer o izni almamış bir uygulamaysa boşu boşuna sistem kaynaklarında israf etmesinin önüne geçmiş oluyorsunuz.
+
+249
+01:04:59,284 --> 01:05:03,164
+Broadcast mesajı paylaşabiliyorsunuz.
+
+250
+01:05:04,804 --> 01:05:09,923
+Burada bir basit bir tane örnek var.
+
+251
+01:05:10,644 --> 01:05:13,764
+Bir işte buton var.
+
+252
+01:05:14,003 --> 01:05:20,983
+Bu butona 10 defa bastığınızda Broadcast Receiver'ın bunu yakalaması isteniyor.
+
+253
+01:05:21,744 --> 01:05:26,423
+Burada sağ tarafta XML arayüzünü görüyorsunuz.
+
+254
+01:05:27,507 --> 01:05:40,827
+Bu noktada da bir alarm mesajı var ve bu alarmın üretilmesi sayesinde aslında ileride gerçekleşecek bir aksiyonu da set etme şansına sahip oluyorsunuz.
+
+255
+01:05:40,827 --> 01:05:42,087
+Bu ne demek?
+
+256
+01:05:44,112 --> 01:05:54,032
+Aslında arka planda gerçekleşen bir görev ve arka plan tasklarını gerçekleştiren yapılardan belli oranda ayrışıyor.
+
+257
+01:05:54,412 --> 01:06:06,092
+Bir özelliği var. Bunun sebebi arka plandaki işlerin tam istenilen exact zamanda yapılıp yapılmaması ile ilgili belli bir ayrım var.
+
+258
+01:06:13,119 --> 01:06:30,219
+Alarm gerçekleşmesi, beklenen işleri aslında yönetmek için kuruluyor. Normalde işte kurduğumuz telefondaki alarmlara baktığınızda işte saat 8.30 uyandırma servisi diye kurabilirsiniz ve mutlaka o 8.30'da o alarmın devreye girmesi gerekiyor.
+
+259
+01:06:41,119 --> 01:07:03,759
+Bu yüzden yapılması gereken işi set etmeniz için kullandığımız bir yapı. İleride gerçekleşecek bir iş içinde pending intentlerden faydalanıyoruz. Örneğin ileride gerçekleşecek iş ne demek? Broadcast Receiver'larda bir sistem değişikliğinin ne zaman gerçekleşeceğini bilmiyorsunuz.
+
+260
+01:07:09,119 --> 01:07:35,179
+3 defa, 10 defa tıkladıktan sonra bu iş gerçekleşecek diyelim. 3 saniye sonra mı 10 defa tıklayacak yoksa 3 dakika sonra mı 10 defa tıklayacak bunu bilmiyorsunuz. O yüzden bir intent tanımlarken bunu pending intent statüsünde gerçekleştiriyorsunuz ve diyorsunuz ki bu 10 defa tıklandığında benim için bunu takip edecek olan bir intent.
+
+261
+01:07:35,695 --> 01:07:52,555
+Application konteksti gözeterek oluşturmanı istiyorum sisteme ve bu intent de Alarm Manager üzerinden görevini gerçekleştirsin ve ilgili Alarm Manager devreye girsin ve yapılması gereken işi tamamlasın diyorsunuz.
+
+262
+01:08:01,523 --> 01:08:10,344
+Hem takip etmeyi mümkün kılıyorsunuz hem de ona bir aksiyon alınmasını sağlamış oluyorsunuz.
+
+263
+01:08:11,884 --> 01:08:20,344
+Burada bu biraz önceki Alarm Manager'a farklı olarak bir örnek...
+
+264
+01:08:22,036 --> 01:08:39,876
+Düşünecek olursanız, yani onReceive metodunu yazacak olursanız, çünkü burada hatırlarsanız My Broadcast Receiver'ı vardı. Bu My Broadcast Receiver'ı yazdığınızda diyorsunuz ki işte 10 defa bastığında Don't Panic, But Your Time Is Up mesajını, Toast mesajıyla gönder.
+
+265
+01:08:40,304 --> 01:08:47,863
+Aynı zamanda vibrator aracılığıyla da telefonun 2 saniye boyunca titremesini sağlar diyorsunuz.
+
+266
+01:08:47,943 --> 01:08:50,764
+Bunu çok sıklıkla notification'larda yaşıyoruz.
+
+267
+01:08:50,884 --> 01:08:59,504
+Notification geldiğinde işte telefonunuz bazen ses çıkartıyor, bazen işte titriyor.
+
+268
+01:08:59,504 --> 01:09:06,064
+Aynı şekilde uygulamanızda da yaptığınız bir aksiyon sonucunda kullanıcının
+
+269
+01:09:06,612 --> 01:09:17,712
+Bu tarz bir bilgilendirmeye maruz kalmasını istiyorsanız ki bazen biliyorsunuz telefonunuzun şarjı %20'nin altına düştüğünde bir pop-up çıkıyor.
+
+270
+01:09:18,712 --> 01:09:23,612
+Keza bu uygulamanıza özel eğer %20'nin altında...
+
+271
+01:09:24,083 --> 01:09:34,423
+Çok kısa sürede enerjiniz tükenecekse uygulamanın şu özelliğini kapatıyorum şeklinde kullanıcıya bilgi vermenizde mümkün kılabilecek aksiyonları almanızı sağlayabilecek.
+
+272
+01:09:42,163 --> 01:09:58,503
+Kullanılmıyor. Sebebi bunlar özellikle Android 5'e kadar olan dönemde tekrar tekrar aynı intentin veya işte gelişmenin takip edilmesini sağlıyordu.
+
+273
+01:10:02,292 --> 01:10:09,211
+Bir aksiyon gerçekleştikten sonra sistemden temizlenen intent yeniden yaratılıyordu.
+
+274
+01:10:09,872 --> 01:10:19,772
+Artık böyle bir özellik yok çünkü bu güvenlik açıklarına sebebiyet veriyor ve Android bunun kullanımını şu an için size vermiyor.
+
+275
+01:10:19,772 --> 01:10:24,072
+Bunun da en azından varlığından haberdar olmamızda fayda var.
+
+276
+01:10:25,772 --> 01:10:26,772
+Gelelim...
+
+277
+01:10:27,380 --> 01:10:31,860
+Değişen durumlara her bir sürümde yenilikler geliyor.
+
+278
+01:10:31,860 --> 01:10:42,579
+İşte Android 7'de Action New Picture ve Action New Video ile ilgili, medya ile ilgili artık sistem broadcastleri paylaşılmamaya başlandı.
+
+279
+01:10:42,680 --> 01:10:52,940
+Çünkü bu çok fazla uygulamanın takip ettiği bir değişiklik olduğu için sistem kaynaklarını gereksiz tükettiğini düşünen Android 7'den itibaren bunu devre dışı bıraktı.
+
+280
+01:10:53,020 --> 01:10:55,340
+Bununla ilgili bir sistem broadcasti de artık yayınlamıyor.
+
+281
+01:10:55,380 --> 01:11:12,159
+8 ile birlikte size bahsettiğim Manifest Dikleted Receiver'larla ilgili yeni kısıtlamalar geldi ve bazı sistem broadcastlerin context registered olarak
+
+282
+01:11:12,576 --> 01:11:29,576
+Sisteme tanımlanmasının dışında manifeste tanımlanma ihtimali ortadan kaldırıldı. Bu sayede yine sürekli takip uygulama ayakta değilken bile arka planda buna takip için enerji harcamasındansa...
+
+283
+01:11:29,747 --> 01:11:34,707
+Uygulama kullanılırken sadece bu değişikliklerin takip edilebileceği söylendi.
+
+284
+01:11:34,707 --> 01:11:49,047
+Yine güvenlik amaçlı Network State Change Action Broadcast'i artık size kullanıcının lokasyonuyla ilgili ve onu tanımlayabilecek herhangi bir bilgiyi sunmuyor.
+
+285
+01:11:49,747 --> 01:12:10,467
+Bunun başka bir yolu var. GetConnectionInfo'yu kullanıyorsunuz ama o da çeşitli izinlere tabi. Bu sayede aslında sadece Wi-Fi'den hücresel ağa, hücresel ağdan Wi-Fi'ye geçiş yaptığınızı yine takip edebiliyorsunuz ama burada bir lokasyon bilgisi alma imkanınız olsadan kalkmış oluyor.
+
+286
+01:12:17,108 --> 01:12:24,108
+Bu API seviyesine sahip telefonlar için uygulamanızın hedef kitlesine bağlı olarak...
+
+287
+01:12:26,612 --> 01:12:35,872
+Herkesi kapsayacak çözümleri kodunuzun içerisine yerleştirmeniz gerekiyor ki burada ilgili API levelına bakarak daha önceki kodlarda da görmüştünüz.
+
+288
+01:12:36,912 --> 01:12:48,271
+Çeşitli önlemler alma şansınız var. Bu değişiklikleri de Android versiyonlarındaki gelen yenilikleri de yakından takip etmek gerekiyor.
+
+289
+01:12:48,912 --> 01:12:52,592
+Her telefonda başka bir durumla karşılaşmamak için.
+
+290
+01:12:55,475 --> 01:13:02,876
+Son olarak, Local Broadcast Manager noktasında şunu söylemekte fayda var.
+
+291
+01:13:03,895 --> 01:13:13,915
+Uygulama içerisinde kalacaksanız, mesajları sadece aktiviteler arasında ya da değişiklikleri paylaşacaksanız mutlaka Local Broadcast Manager kullanın.
+
+292
+01:13:14,315 --> 01:13:15,715
+Biraz sonra örnekte göreceksiniz.
+
+293
+01:13:16,376 --> 01:13:21,876
+Bu birinci dikkat etmeniz gereken durum Broadcast Receiver'lere alternatif.
+
+294
+01:13:22,260 --> 01:13:40,260
+Bir diğeri de arka planda özellikle Job Scheduler özelliğinden faydalanarak arka plandaki işinizi mutlaka bir Job Scheduler'a emanet edip onun sizin burada...
+
+295
+01:13:41,140 --> 01:13:53,100
+Uzun süreli devam ettirmeniz beklenen işleri devre alması ve Broadcast Receiver tarafından bir sistem değişikliği fark edildiğinde onu devreye sokmanız sizden bekleniyor.
+
+296
+01:13:53,100 --> 01:13:57,640
+Şimdi örnek kodlar üzerine geçeceğiz.
+
+297
+01:13:59,260 --> 01:14:04,860
+Öncelikle burada ayarlamalarımı yapayım.
+
+298
+01:14:09,300 --> 01:14:11,760
+Bir kolp parçası ile başlayacağız.
+
+299
+01:14:22,452 --> 01:14:22,852
+Evet.
+
+300
+01:14:37,779 --> 01:14:41,819
+Çünkü ben ekran paylaşacağım.
+
+301
+01:15:02,036 --> 01:15:03,816
+Sanırım görebiliyorsunuzdur.
+
+302
+01:15:08,083 --> 01:15:19,083
+Şimdi burada bir ekran geldi. Bu noktada uçak moduna giriş çıkış özelliğini enable edeceğim.
+
+303
+01:15:19,804 --> 01:15:24,703
+Gördüğünüz gibi Airplane Mode is On mesajını, Toast mesajı olarak gördük.
+
+304
+01:15:25,423 --> 01:15:28,064
+Tekrar uçak modundan çıkayım.
+
+305
+01:15:29,716 --> 01:15:43,536
+Airplane Mode is off şeklinde tost mesajı ilgili uygulamanın ilgili aktivitesinde ekrana görüntülendi. Bir kez daha yapalım. Çok basit bir örnek. Tekrar görmeniz açısından yapıyorum. Airplane Mode is on.
+
+306
+01:15:48,659 --> 01:15:53,340
+Airplane Mode is off. Bunu nasıl yaptık? Bir buna bakalım.
+
+307
+01:15:56,600 --> 01:16:00,119
+Burada Android Studio'yu açalım.
+
+308
+01:16:05,524 --> 01:16:11,384
+Airplane Mode Activity ve Airplane Mode Change Receiver.
+
+309
+01:16:12,164 --> 01:16:18,144
+Şimdi Airplane Mode Change Receiver bir Broadcast Receiver'ı aslında extend ediyor.
+
+310
+01:16:18,144 --> 01:16:30,944
+OnReceive metodunda Airplane Mode'unu, Application Context özelinde gidip burada tanımlı sistem settinglerinden
+
+311
+01:16:31,891 --> 01:16:52,811
+Çok özür dilerim, tekrar geri gelelim. Şurada settings.global.airplane.mod.on'dan kontrol ederek bize geri döndürüyor. Bunun sonucunda Airplane.mod.on olduysa, tost mesaj olarak Airplane.mod.on yazmasını istiyoruz. Off olduysa, off yazmasını istiyoruz. Ama bunu tetikleyen ne? Benim.
+
+312
+01:16:53,363 --> 01:17:08,643
+Airplane moda geçişim, Airplane moddan çıkışım. Yani bu uygulama benim bu moda girip çıktığımı takip etmek istediğini belirtmiş ve bunun için gerçekleştiğinde neler yapacağını da onRecyve metoduna yazmış.
+
+313
+01:17:08,643 --> 01:17:12,643
+Peki, aktivite tarafına bakalım. Aktivite tarafında...
+
+314
+01:17:13,844 --> 01:17:19,363
+Normal onCreate'e kıyafetin giydirilmesi layout ile ilgili kısım yazılmış.
+
+315
+01:17:19,363 --> 01:17:32,203
+Bir receiver tanımlanmış ve bu receiver'a denmiş ki, new intent filter, yani bir intent filter tanımlıyoruz.
+
+316
+01:17:32,323 --> 01:17:37,083
+Çünkü burada yaptığımız şey context registered receiver tanımlıyoruz.
+
+317
+01:17:38,899 --> 01:17:53,399
+Çünkü bir intent filter ve aynı zamanda arkasından da bir register receiver yaparak hangi receiver'ın takip edeceğini söylüyoruz ve hangi filter'ın takip edeceğini söylüyoruz, hangi intent'i.
+
+318
+01:17:54,039 --> 01:17:58,639
+Buraya da takip etmek istediğimiz aksiyon parametre olarak pas etmiş oluyoruz.
+
+319
+01:17:58,639 --> 01:18:06,639
+OnStart'ta register receiver etmiştik, OnStop'ta da unregister receiver ederek aslında...
+
+320
+01:18:06,931 --> 01:18:16,871
+Çok basit bir şekilde Airplane Mode'a geçip geçmediğimizi mesaj bildirerek kullanıcıya söylemiş oluyoruz.
+
+321
+01:18:17,531 --> 01:18:18,412
+Sorusu olan var mı?
+
+322
+01:18:35,283 --> 01:18:39,623
+Peki. O zaman devam ediyorum. Bunları kapatın.
+
+323
+01:18:43,444 --> 01:18:50,963
+OnStart'ta Recycler ettiğimiz için OnStop'ta Unregister ettik. Ama bunu OnResume, OnPause'ta da yapabilirdik.
+
+324
+01:18:54,899 --> 01:18:58,879
+[öğrenci] bir sorusu olmuştu. Ona istinaden cevap verdim.
+
+325
+01:19:02,199 --> 01:19:04,680
+Bir sonraki, o zaman örneğimize geçelim.
+
+326
+01:19:08,180 --> 01:19:18,260
+Bir sonraki örneğimizde aslında bir tane farklı aksiyon takip etmek istediğimizi söyleyeceğiz.
+
+327
+01:19:20,884 --> 01:19:33,023
+Şimdi burada iki farklı aksiyon takip etmek istediğimizi aktivite kısmında söylüyor olacağız ama bir Broadcast Receiver tanımladık.
+
+328
+01:19:33,023 --> 01:19:45,904
+Bu Broadcast Receiver öncelikle bir intent yani kendisi o aksiyon gerçekleştiğinde çağrıldığında bir intent ulaştığını Toast mesajıyla ekranında gösterecek.
+
+329
+01:19:47,731 --> 01:19:55,032
+Hangi aksiyonun gerçekleştiğine bağlı olarak, hani size daha önce söylemiştim, birden fazla aksiyon takip edebilirsiniz diye.
+
+330
+01:19:55,791 --> 01:20:02,951
+Gelen Intent'ten aksiyon bilgisini alacak. Action 1 mi, Action 2 mi bunun kontrolü yapacak.
+
+331
+01:20:02,951 --> 01:20:04,951
+Eğer Action 1 ise...
+
+332
+01:20:05,043 --> 01:20:08,523
+Ekrana, We Received an Intent for Action 1 diyecek.
+
+333
+01:20:09,184 --> 01:20:15,564
+Eğer Action 2 ise de, Action 2 ile ilgili bilgiyi aldığını yine Toast Mesajı'ndan ekrana yansırıyor olacak.
+
+334
+01:20:16,503 --> 01:20:21,064
+Peki, gelelim esas aktivitenin olduğu koda.
+
+335
+01:20:23,064 --> 01:20:25,863
+Burada iki tane aktivite tanımlıyorum.
+
+336
+01:20:26,023 --> 01:20:30,023
+Bir tanesi statik aktivite olacak, bir tanesi dinamik aktivite olacak.
+
+337
+01:20:30,496 --> 01:20:36,076
+Bunların isimlerini farklı şekillerde tanımlayabilirsiniz, önemli değil.
+
+338
+01:20:36,816 --> 01:20:46,576
+Bir Receiver tanımlıyorsunuz aktivitenizi ve aktivitenizin içerisinde bu Receiver sınıfına ait bir obje yaratıyorsunuz.
+
+339
+01:20:47,576 --> 01:20:51,576
+Sonra bir butonunuz var ki aslında...
+
+340
+01:20:52,127 --> 01:21:02,528
+Şöyle yapalım, olayın nasıl gerçekleştiğini göstermek için. Stop Share diyeyim. Size biraz önce olduğu gibi uygulamayı göstereyim.
+
+341
+01:21:04,647 --> 01:21:06,307
+Share Screen diyeyim.
+
+342
+01:21:15,155 --> 01:21:18,755
+Burada nasıl takip ediyoruz onu, neleri takip ediyoruz onu göreceğiz.
+
+343
+01:21:23,155 --> 01:21:30,155
+Bir saniye, şunu değiştirmedim tabii. Loginden çağırılan sınıfı değiştirmem gerekiyor.
+
+344
+01:21:43,699 --> 01:21:46,220
+İntekar, çeşit
+
+345
+01:22:01,427 --> 01:22:03,028
+Gördüğünüz gibi iki tane buton geldi.
+
+346
+01:22:04,327 --> 01:22:09,347
+Send static intent'e tıkladığımda Receipt an Intent, Receipt an Intent for Action 1 dedik.
+
+347
+01:22:10,467 --> 01:22:16,167
+Yani bu buton Action 1 intent'inin gönderilmesini sağlıyor.
+
+348
+01:22:16,728 --> 01:22:24,188
+İkinci butona tıkladığımda ise yine bir Receipt an Intent, bu sefer bir Receipt an Intent for Action 2 şeklinde mesaj görüyoruz.
+
+349
+01:22:27,347 --> 01:22:34,327
+Tıklandığında başka bir aksiyon yaratıyorsunuz. Diğer buton tıklandığında da başka bir ikinci aksiyon yaratıyorsunuz.
+
+350
+01:22:34,887 --> 01:22:40,028
+Ve bu aksiyonlara göre de Receiver hangisi geldiyse onunla ilgili mesajı ekrana yazdırıyor.
+
+351
+01:22:40,028 --> 01:22:44,028
+Şimdi tekrar şu...
+
+352
+01:22:54,452 --> 01:23:09,731
+Android Studio'yu açalım. Tekrar buradan ilerleyelim. Şimdi dedik ki, şuraya da bir aşağı indireyim. Bir butonum var. Onun set onclick listener'ına, onclick özelliğine.
+
+353
+01:23:20,435 --> 01:23:24,415
+Kodumun bulunduğu package'ın ismini yazıyorum.
+
+354
+01:23:24,815 --> 01:23:28,595
+Çünkü bu package aracılığıyla karşı tarafa göndermem gerekiyor.
+
+355
+01:23:30,335 --> 01:23:35,295
+Şu anda bunu karşı tarafa tanıtabilmemin yolu bu.
+
+356
+01:23:36,215 --> 01:23:43,395
+Bunun dışında başka uygulamaların takip etmesini istersem o zaman bu package'ı bu şekilde set etmeme gerek yok.
+
+357
+01:23:43,775 --> 01:23:46,135
+Ya da karşı tarafa bu package bilgisini vermem gerekiyor.
+
+358
+01:23:46,868 --> 01:23:57,828
+Ve Send Broadcast Intent'i göndererek de aslında ben Broadcast işini tamamlamış oluyorum.
+
+359
+01:23:57,828 --> 01:24:11,507
+Bu Broadcast işlemi gerçekleştikten sonra bu butona tıklandığında diyoruz ki buradan gelen aksiyon biri al.
+
+360
+01:24:11,935 --> 01:24:16,995
+Ve bu aksiyon 1 ile ilgili mesajı ekrana yazdır diyoruz.
+
+361
+01:24:16,995 --> 01:24:30,195
+Şimdi, bu noktada baktığınız zaman iki tane buton var ve ikisi içinde buraya intent tanımı gerçekleştirdik.
+
+362
+01:24:31,195 --> 01:24:37,995
+Ama aşağıya indiğinizde bir tane Register Receiver tanımladığımızı görüyorsunuz.
+
+363
+01:24:39,060 --> 01:24:42,840
+Bir tane Unregistered Receiver tanımladığımızı görüyorsunuz.
+
+364
+01:24:43,480 --> 01:24:53,260
+Bu noktada iki buton için farklı yollardan tanımlanmış iki tane aksiyon söz konusu.
+
+365
+01:24:53,260 --> 01:24:59,760
+Bu aksiyonları acaba hangisini, statik hangisini dinamik olarak gerçekleştirdik?
+
+366
+01:25:14,068 --> 01:25:23,148
+Action 2 kod parçasına baktığımızda hangisini statik olarak manifeste koyduk, hangisini dinamik olarak?
+
+367
+01:25:24,808 --> 01:25:27,847
+Action 2 dinamik olmalı çünkü register ve unregister yapıyoruz.
+
+368
+01:25:28,308 --> 01:25:34,408
+Doğru. Peki, Action 2 şu kısmı görmeseydiniz, sadece bu kısım olsaydı,
+
+369
+01:25:41,300 --> 01:25:45,480
+Dinamik olarak tanımlandı, Action 1 statik olarak tanımlandı derdimiz.
+
+370
+01:25:51,060 --> 01:26:06,640
+Buradaki sorum şu, hatırlarsanız Broadcast Receiver'larda ilgili aksiyonları manifestede yazabiliyordunuz ya da ilgili source kodun içerisine de kontekste bağlı olarak register edebiliyordunuz.
+
+371
+01:26:10,996 --> 01:26:19,935
+Baktığımızda şu andaki kok parçasına. Action 1 mi manifestı tanımlandı, Action 2 mi manifestı tanımlandı diye sorduğumuzda Action 1 diyoruz.
+
+372
+01:26:20,296 --> 01:26:24,655
+Statik olarak tanımlandı. Neye dayanarak bunu söylüyor olabiliriz?
+
+373
+01:26:35,891 --> 01:26:41,211
+64. satırda kontekste bağlı olarak bir broadcast gözüküyor. Bakalım.
+
+374
+01:26:41,211 --> 01:26:55,211
+64. Evet, çok güzel. Doğru. Aynı zamanda buradaki lokal broadcast manager ifadesinden de bu ilgili tanımlamanın...
+
+375
+01:26:55,636 --> 01:27:00,756
+Aslında manifest seviyesinde değil, ne seviyesinde gerçekleştiğini söylüyorsunuz.
+
+376
+01:27:01,096 --> 01:27:03,195
+Konteks seviyesinde gerçekleştiğini söylüyorsunuz.
+
+377
+01:27:03,195 --> 01:27:18,076
+Çünkü yukarıda eğer kodun bu parçasında, eğer Local Broadcast Manager, send broadcast iyi derseniz, onu comment out ederseniz, bu şekilde çalıştırırsanız kodunuzu,
+
+378
+01:27:24,020 --> 01:27:50,320
+Sistem seviyesinde tanımlanan hatta burada kodların içerisinde de yorum olarak since it is registered as a global diyor. Use send broadcast metodunu kullan diyor. O global seviyede tanımlamış olduğunuz aksiyon lokal broadcast manager ile yayınlandığı için sistem tarafından algılanmayacak ve sizin beklediğiniz onRecy metodu da çalışmayacaktır.
+
+379
+01:27:52,020 --> 01:28:06,340
+Burası kritik. Dediğim gibi eğer Action bir manifest seviyesinde tanımlandıysa statik olarak bu bütün herkesin görebileceği seviyede tanımlanmış demektir. Herkese açık demektir.
+
+380
+01:28:19,539 --> 01:28:34,239
+Aksiyon yakalanamayacaktı. O yüzden de burada Local Broadcast Manager ile değil, Stent Broadcast ile gönderiyoruz. Bu da statik ve dinamik aksiyon tanımımı arasındaki önemli farklardan bir tanesi.
+
+381
+01:28:39,891 --> 01:28:55,532
+Tabii buradaki aksiyon eğer takip sistem seviyesinde olsaydı, sistem seviyesindeki bir broadcast'ı takip edebilmek için yine context registration yapabilirdiniz. Bunda bir sorun yok.
+
+382
+01:29:01,876 --> 01:29:12,832
+Kendiniz ürettiğiniz ve send broadcast yaptığınız için bunu lokal broadcast olarak yaparsanız, manifeste tanımlamış olduğunuz, takip etmek istediğiniz işi...
+
+383
+01:29:12,832 --> 01:29:30,332
+Üst seviyede sistem göremiyor. Sistem üst seviyede göremediği için bu broadcast yapıldığında, üst seviyeden takip ettiği için doğal olarak onRecy metodunda çalışmıyor. Siz lokalde bir mesaj göndermiş oluyorsunuz ama takibi...
+
+384
+01:29:30,576 --> 01:29:41,335
+Global'de yapmış oluyorsunuz. Bu nedenle de ilgili onRecy metodundaki yapılması gerekenler herhangi bir şekilde gerçekleşmemiş oluyor.
+
+385
+01:29:45,043 --> 01:29:53,564
+Diğer aşağıda yaptığımız özellikler de Registered Receiver'da ve Unregistered Receiver'da zaten bildiğiniz değişiklikler.
+
+386
+01:29:55,724 --> 01:29:56,963
+Buraya kadar sorusu olan var mı?
+
+387
+01:30:00,532 --> 01:30:03,512
+Kodlar üzerinde soru sormak isteyen var mı?
+
+388
+01:30:09,524 --> 01:30:12,804
+Peki, o zaman bir diğer örneğe geçelim.
+
+389
+01:31:03,539 --> 01:31:04,979
+Buradaki değişikliği yaptım.
+
+390
+01:31:08,199 --> 01:31:10,340
+Şimdi çalıştıralım bunu.
+
+391
+01:31:23,188 --> 01:31:28,268
+Bu zafer de telefonumun bateri statüsü ile ilgili takipteyim.
+
+392
+01:31:32,115 --> 01:31:56,076
+Şu anda telefonun bağlı olduğu için Status is Charging diyor. Şu anda tabii ekranı görebilmeniz için paylaştığım uygulama için kabloyu bağlamış durumdayım. İşte baterisinde %90 seviyesinde olduğunu ekranda görüyorsunuz. Kabloyu çektiğim anda Status is not Charging şeklinde değişmesi gerekiyor. Bunu nasıl yapıyoruz? Şimdi buna bakalım. Stop Share diyorum.
+
+393
+01:32:00,532 --> 01:32:04,332
+Şuradan yine Android Studio'yu paylaşayım sizlerle.
+
+394
+01:32:08,500 --> 01:32:10,059
+Power Status Activity.
+
+395
+01:32:11,799 --> 01:32:14,879
+Burada diğerlerinden farklı bir konsept göreceksiniz.
+
+396
+01:32:15,000 --> 01:32:28,840
+Birincisi, Receiver klasını da aynı source code'un içerisine koydum.
+
+397
+01:32:29,180 --> 01:32:34,199
+Bu genelde böyle yapılmaz ama kullanıldığı senaryolarla da karşılaşabilirsiniz.
+
+398
+01:32:34,931 --> 01:32:48,371
+Yukarıda Power Status Activity'im var. Bir ekranım bu. Burada bir TextView'um var ve bu TextView'da biraz önce gördüğünüz mesajları aslında gösteriyorum.
+
+399
+01:32:48,371 --> 01:32:54,492
+Bir tane baterinin durumunu değiştip takip eden bir intent filter tanımlıyorum.
+
+400
+01:32:55,155 --> 01:33:00,855
+Bu noktada batarya statüsü takip etmesi için Register Receiver diyorum.
+
+401
+01:33:01,416 --> 01:33:04,796
+Buradan bir değer döndürmesini bekliyorum.
+
+402
+01:33:04,796 --> 01:33:19,316
+Burada işte bataryenin o anda charging durumunda mı yoksa tam anlamıyla dolu mu bunların kontrolünü yapan ilgili değerleri aldığımda ekranda göstereceğim.
+
+403
+01:33:20,051 --> 01:33:29,131
+Burada bataryayla ilgili olarak seviyesi ile ilgili iki tane bilgi var. Bunları alıp ne kadarının dolu olduğu bilgisini hesaplıyorum.
+
+404
+01:33:29,971 --> 01:33:50,551
+Sonra da işte Status is Charging yazıyorum, Charging olma durumuna bağlı olarak ve bununla ilgili hesaplamış olduğum baterinin ne kadar bir şarja sahip olduğunu ve ne aracılığıyla Charging monumunda olduğunu ekrana yazdırmış oluyorum.
+
+405
+01:33:51,551 --> 01:33:54,752
+Gelelim bu aksiyonları tanımlamaya.
+
+406
+01:33:55,539 --> 01:34:01,840
+Intent filtrumda, Action, Intent Action'da Action Power Connected, Power'a bağlı olduğunu anlamam gerekiyor.
+
+407
+01:34:02,720 --> 01:34:04,640
+Buna subscribe olmuşum.
+
+408
+01:34:05,280 --> 01:34:10,100
+Power Disconnected, size söylediğim gibi kabloyu çekersem, Not Charging yazacak.
+
+409
+01:34:10,260 --> 01:34:11,520
+Bu durumun anlaşılması gerekiyor.
+
+410
+01:34:11,600 --> 01:34:14,440
+Her statü değiştiğinde bunu bize bildirmesini istiyorum.
+
+411
+01:34:15,200 --> 01:34:21,579
+Yine başka bir Action, Battery Low olduğunda, yani %90, burada Battery Low yanlış hatırlamıyorsam, telefonlarda genellikle %20.
+
+412
+01:34:22,228 --> 01:34:29,427
+%20'nin altına düştüğünde, battery layout olduğunda bana bir broadcast üretecek sistem.
+
+413
+01:34:30,068 --> 01:34:38,948
+Ve battery istenilen %80 ise bu seviye, %80'in üzerine çıktığında battery OK durumunu takip ediyor olacak.
+
+414
+01:34:39,207 --> 01:34:45,047
+Bu state değişikliklerini takip etmek üzerine aksiyonları, intent filtrimi ekliyorum ve ilgili.
+
+415
+01:34:46,163 --> 01:35:12,963
+Register işlerini gerçekleştiriyorum. Burada da Unregister işlerini gerçekleştiriyorum. Receiver'ıma geldiğim zaman burada yaptığım şey, ilgili onReceive metodu içerisinde gerekli değişikliklerle ilgili mesajlarımı Locket'e yazmak, hesaplamalar noktasında burada aldığım bilgileri kullanmak ve
+
+416
+01:35:13,619 --> 01:35:31,000
+Burada, Battery Low ise, işte bilgi olarak böyle bir mesajı yazdırmak, Battery OK ise, Battery OK mesajını yazdırmak, Power Connected mesajını yazdırmak ve
+
+417
+01:35:32,275 --> 01:35:44,275
+Power Disconnected mesajını yazdırmak, bu bahsetmiş olduğun Receiver'ın takip etmek istediği ve takip ettiğinde yapması gereken işler.
+
+418
+01:35:44,275 --> 01:35:54,207
+Şimdi benim sizden istediğim ise, bugün yapacağımız örnek uygulamada geçtiğimiz hafta hatırlarsanız, telefonun...
+
+419
+01:35:54,207 --> 01:36:08,607
+Konumunu takip eden bir aslında sensörlerden aldığı verilerle uygulama yapmanızı rica etmiştim. Bu uygulamada telefon masa üstünde olabilir.
+
+420
+01:36:09,235 --> 01:36:20,676
+Telefon örnek veriyorum cepte olabilir ya da kişi hareket ediyor olabilir. Telefon cepte olabilir, kişi hareket etmiyor olabilir, çantada olabilir gibi versiyonları konuşmuştuk.
+
+421
+01:36:20,676 --> 01:36:33,756
+Burada sizden istediğim şey şu, uygulamanızın telefon şarja takıldığı zamanı anlamasını ve takip işini durdurmasını, sensörlerden veri alma işini.
+
+422
+01:36:33,823 --> 01:36:38,963
+Telefon şarjdan çekildiğinde takip işine devam etmesini sağlamanızı istiyorum.
+
+423
+01:36:45,108 --> 01:36:51,068
+Anlaşıldı mı? Geçtiğimiz haftaki sensör örneğini yapabilen var mı?
+
+424
+01:37:00,948 --> 01:37:04,768
+Evet, sorular gelmeye başladı. Hemen ayrılmalar da başladı.
+
+425
+01:37:06,768 --> 01:37:12,028
+Valla size soru sormaya korkar oldum. Geldiğimiz nokta hakikaten enteresan.
+
+426
+01:37:12,887 --> 01:37:16,208
+Bir soru soruyorum, hop bir kişi eksiliyor. Bir soru daha soruyorum, üç kişi daha eksiliyor.
+
+427
+01:37:17,728 --> 01:37:26,108
+Peki, sorun değil. O zaman isterseniz bir on dakika ara verelim.
+
+428
+01:37:26,108 --> 01:37:28,507
+15.31, 15.40'da dönelim.
+
+429
+01:37:29,140 --> 01:37:47,619
+15.40'da döndüğümüz zaman bu örnek kodların bir kısmını sizinle paylaşayım ve geçtiğimiz hafta sensör uygulamanızla ilgili yapmış olduğunuz ya da henüz yapmadığınız, yapacak olduğunuz değişiklikler ve bugün konuştuğumuz Broadcast Receiver'ın uygulamanızı eklenmesi noktasında biraz çalışalım.
+
+430
+01:37:48,039 --> 01:37:52,640
+Soruları olan varsa orada cevaplarım. Bir 10 dakika ara verelim.
+
+431
+01:47:21,587 --> 01:47:39,047
+Evet arkadaşlar, yeniden merhaba. Dersin uygulama kısmına geçiyoruz. Bugün Broadcast Receiver'ları konuştuk. Geçtiğimiz hafta yapmış olduğunuz ya da yapmanızı beklediğimiz bir sensör uygulaması vardı. Bu sensör uygulaması ışık sensörü ve hareket sensöründen faydalanıyordu.
+
+432
+01:47:39,536 --> 01:47:51,195
+Bu sensörlerden faydalanarak telefonunuz cebinizde mi yoksa masanın üzerinde mi duruyor, çantada mı, hareket halinde mi bunları algılamanız bekleniyordu.
+
+433
+01:47:51,195 --> 01:48:00,195
+Bugün geliştirmenizi istediğim özellik sizin telefonunuz...
+
+434
+01:48:00,564 --> 01:48:24,084
+Şarja takıldığı zaman, hareketsiz konumda olacağı için ve herhangi bir masanın üzerinde duracağı ya da bir yerde duracağı için, boşu boşuna bu sensörün takip yapmaması adına, bir Broadcast Receiver ile bu durumun anlaşılması ve sensör takibinin durdurulmasının implementasyonunu bekliyorum sizlerden.
+
+435
+01:48:27,828 --> 01:48:32,028
+Biraz önceki örnek kodlardan bir paylaşım yapayım size.
+
+436
+01:49:04,020 --> 01:49:12,800
+Aslında kolay olan örneğin kodlarını size göndereyim ki çok zorlanmadan hızlıca implemente edebilirim.
+
+437
+01:49:18,612 --> 01:49:20,831
+Kodları chat ekranı üzerinden gönderdim.
+
+438
+01:49:21,612 --> 01:49:23,331
+Hızlıca yapabileceğiniz bir örnek.
+
+439
+01:49:23,692 --> 01:49:30,031
+Dediğim gibi telefonunuzun şarjı takılıp takılmadığını takip edeceksiniz.
+
+440
+01:49:30,031 --> 01:49:37,711
+Şarjı takıldığı anda unregister ediyor olacaksınız sensör takibini.
+
+441
+01:49:38,391 --> 01:49:46,051
+Telefonunuzu şarjdan çektiğiniz zaman da tekrar takibe başlayacağınız için register ediyor olacaksınız onVisim metodu üzerinden.
+
+442
+01:49:50,963 --> 01:49:59,703
+Sırada geçtiğimiz haftayla ilgili, bu haftayla ilgili sorusu olan olursa da kodlar üzerinden yine açıp ilgili noktaları konuşabiliriz.
+
+443
+01:58:46,804 --> 01:58:51,024
+Soru soran var mı arkadaşlar? Takıldığı bir yer olan, tanışmak isteyen.
+
+444
+01:59:12,307 --> 01:59:17,247
+Emreceğim, mikrofonun açıksa, varsa açabilirsem sevinirim.
+
+445
+01:59:18,807 --> 01:59:23,247
+Hocam, geçen hafta iki tane sensör vardı, Light ve Linear Acceleration diye.
+
+446
+01:59:23,787 --> 01:59:30,427
+O iki sensörü kullanarak oradaki cihazın hareketli olup olmadığını veya kapalı olup olmadığını tam olarak onun mantığını,
+
+447
+01:59:31,167 --> 01:59:34,107
+daha sonra oradaki lojiyi söylemişsiniz de, onu tekrar söyleyebilir misiniz acaba?
+
+448
+01:59:34,727 --> 01:59:36,007
+Beraber konuşalım istersen.
+
+449
+01:59:36,767 --> 01:59:37,127
+Olur.
+
+450
+01:59:38,036 --> 01:59:42,676
+Telefonun cebinde ya da masada olduğunu nasıl anlarsın?
+
+451
+01:59:44,456 --> 01:59:45,975
+Ya da elinde kullanıp kullanmadığını?
+
+452
+01:59:46,456 --> 01:59:50,036
+Yani herhangi bir hareket yoksa sabit duruyordur.
+
+453
+01:59:52,256 --> 01:59:53,815
+Elindeyse, hareket varsa?
+
+454
+01:59:55,235 --> 01:59:57,095
+Işığı kapalı veya açık olmasına bağlı.
+
+455
+01:59:57,695 --> 01:59:59,055
+Evet, yani telefonun cebinde...
+
+456
+02:00:00,051 --> 02:00:03,411
+Yoksa masada mı, elinde mi olduğu ışıktan anlaşılıyor değil mi?
+
+457
+02:00:03,871 --> 02:00:04,131
+Evet.
+
+458
+02:00:04,692 --> 02:00:08,271
+Tamam. Işığı böyle kullanabilirsin. Peki hareketle neyi anlayabiliriz?
+
+459
+02:00:08,751 --> 02:00:14,971
+Eğer ışık varsa ve hareketliyse ya telefonu kullanıyorsundur ya da ne olabilir?
+
+460
+02:00:15,131 --> 02:00:20,731
+Başka herhangi bir şey olma otansiyeli yok. Telefonunu kullanıyorsundur anlamına geliyor.
+
+461
+02:00:20,951 --> 02:00:27,031
+Bunları logladığını düşünelim. Peki telefonun ışığı kapalıysa, hareketliysa?
+
+462
+02:00:27,731 --> 02:00:34,572
+Yani telefonun e-mail ölçülerinden bir şey geliyorsa, o zaman telefonla birlikte hareket ediyorsun demektir. Cebinde ve hareket ediyorsun demektir.
+
+463
+02:00:35,511 --> 02:00:35,711
+Evet.
+
+464
+02:00:37,271 --> 02:00:39,032
+Başka ne olabilir seçenek olarak?
+
+465
+02:00:42,032 --> 02:00:43,891
+Işığı var ama hareketsiz.
+
+466
+02:00:45,211 --> 02:00:47,711
+O zaman da masa üzerinde kullanıyoruzdur belki.
+
+467
+02:00:47,792 --> 02:00:54,952
+Masa üzerinde duruyordur demektir. Yani tabii ki orada da kullanabilirsin ama bizim amacımız o hassasiyette bir doğrulup beklemiyoruz ama temel prensip bu.
+
+468
+02:00:55,731 --> 02:00:56,791
+Sağ olun hocam, sağ olun.
+
+469
+02:00:57,192 --> 02:00:57,692
+Rica ederim.
+
+470
+02:01:43,188 --> 02:02:07,268
+Saat 15.55. 5 dakika daha size süre vermiş olayım. Eğer sorunuz yoksa dersi sonlandıracağım. Siz muhtemelen yapabiliyorsunuz diye tahmin ediyorum. O zaman bugün anlatacaklarımız bu kadar diyeceğiz saat 4'te. O zamana kadar soru sormak isteyen varsa ben sizden sorularınızı bekliyor olacağım.
+
+471
+02:02:46,131 --> 02:02:47,791
+Hocam ben bir şey sorabilir miyim?
+
+472
+02:02:48,291 --> 02:02:48,492
+Evet.
+
+473
+02:02:49,351 --> 02:02:53,631
+Şu anda bizim evde kullanabileceğim bir Android telefonum yok.
+
+474
+02:02:54,011 --> 02:02:56,431
+Yani fiziksel olarak bağlayıp da test edebileceğim.
+
+475
+02:02:56,952 --> 02:03:00,011
+[kişisel bilgi]
+
+476
+02:03:01,072 --> 02:03:05,131
+Hani o yüzden bu tarz egzersizleri mesela derste yapamıyorum.
+
+477
+02:03:05,131 --> 02:03:07,551
+Ve yani sonradan da şu ana kadar yapamadım.
+
+478
+02:03:08,351 --> 02:03:10,452
+Bunların hani ne kadar büyük bir önemi var?
+
+479
+02:03:11,091 --> 02:03:12,211
+Onu soracaktım.
+
+480
+02:03:12,231 --> 02:03:13,031
+Bir de söyleyeyim.
+
+481
+02:03:13,811 --> 02:03:17,411
+Burada sanırım sensörlerle ilgili bir tek sıkıntı olabilir.
+
+482
+02:03:18,251 --> 02:03:24,191
+Onun dışında telefonun şarja takılıp olup olmadığını emulatörle bildiğim kadarıyla simüle edebilirsiniz.
+
+483
+02:03:24,191 --> 02:03:27,391
+O state'lerini değiştirebiliyorsunuz emulatörde.
+
+484
+02:03:27,956 --> 02:03:46,436
+Başka bir state de olur. Çok kritik değil tabii ki. Sonuçta burada önemli olan mantıklı bir şey yapmak ve öğrendiklerinizi uygulamak. Zaten çok zor şeylerle şu anda uğraşmıyoruz. Elimizin alışması ve genel konsepti anlamanız için bu basitlikte kalmaya özen gösteriyoruz.
+
+485
+02:03:55,956 --> 02:04:03,516
+Mutlaka bir 5 dakika, bir 10 dakika telefonun edinme şansın olur. O zaman deneyebilirsin diye düşünüyorum.
+
+486
+02:04:03,676 --> 02:04:10,976
+Çok fazla test aşaması gerektirmediği için 5-10 dakikalık çözülecek bir olay olduğunu düşünüyorum.
+
+487
+02:04:11,615 --> 02:04:19,556
+Ödevlerle ilgili de özellikle mümkünse telefon üzerinden ödevim ve dönem projesinin gösterilmesini bekliyorum.
+
+488
+02:04:20,356 --> 02:04:21,436
+Tamam, tamam. Teşekkürler.
+
+489
+02:04:21,936 --> 02:04:22,396
+Rica ederim.
+
+490
+02:06:03,252 --> 02:06:23,172
+Evet arkadaşlar, sanırım başka sorunuz yok. Teşekkür ediyorum derste katıldığınız için. Hepinize iyi bayramlar diliyorum. Haftaya sınavlarınızda başarılar. Sınavda belki görüşme şansımız olmayacak uzaktan olacağı için ama iki hafta sonra görüşmek üzere diyorum. Kendinize çok iyi bakın. Hoşçakalın.

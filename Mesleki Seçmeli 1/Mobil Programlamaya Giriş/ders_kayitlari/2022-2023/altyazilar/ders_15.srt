@@ -1,0 +1,2135 @@
+1
+00:17:50,067 --> 00:17:53,087
+Evet, hoş geldiniz arkadaşlar. Hepinize güzel bir hafta diliyorum.
+
+2
+00:17:56,852 --> 00:18:06,492
+30 dakikalık gecikme ile derse başladık. Bunu sizlere e-post olarak göndermiştim. Umarım sizlere ulaşmıştır. Anlayışınız için teşekkür ediyorum.
+
+3
+00:18:07,632 --> 00:18:23,692
+Son iki haftaya giriyoruz. Bu haftayla birlikte. En son bize iletilen bilgi doğrultusunda final sınavınızda, yani final sınavlarınızın hepsi online gerçekleşecek. Herkese kararın hayırlı olmasını diliyorum.
+
+4
+00:18:24,211 --> 00:18:35,632
+Yanlış hatırlamıyorsam, final takvimi açıklandı. İlk pazartesi günü bu dersin sırasında olacaksınız.
+
+5
+00:18:37,092 --> 00:18:44,632
+Dönem projenizin testim zamanı geliyor. Yanlış hatırlamıyorsam o da 29 Mayıs günüydü.
+
+6
+00:18:47,092 --> 00:18:56,752
+Olasıyla ilgili soracağınız bir şey olursa ders içerisinde sorabilirsiniz. Bugün haritalar üzerine bazı bilgiler paylaşıyor olacağım.
+
+7
+00:18:57,752 --> 00:19:06,092
+Onun dışında sınav, pardon özür dilerim, dönem projesinden önce ödev noktamızı da açıkladık dün itibariyle.
+
+8
+00:19:08,435 --> 00:19:14,735
+Çok önemli sıkıntılar olmasa da bazı arkadaşlarınız beklediğimden düşük almış olabilirler.
+
+9
+00:19:15,435 --> 00:19:24,015
+Bunun temel sebebi bazılarınızda tasarım olarak eksiklikler var, bazılarınızda fonksiyonel net olarak eksiklikler var.
+
+10
+00:19:25,096 --> 00:19:30,715
+Bazılarınızda maalesef kodlar paylaşılmamız sadece APK paylaşılmış.
+
+11
+00:19:31,347 --> 00:19:37,927
+Gibi sorunlar sebebiyle beklediğiniz notları alamayan arkadaşlar olmuş olabilir.
+
+12
+00:19:39,927 --> 00:19:45,707
+Ama orada da çok kötü bir senaryo olmadığını söyleyebiliriz.
+
+13
+00:19:47,927 --> 00:19:49,988
+Benim ilk giriş için söyleyeceklerim bu kadar.
+
+14
+00:19:50,567 --> 00:19:56,427
+Sormak istediğiniz bir şey varsa, yanıtlamaya çalışayım ya da aktarmak istediğiniz bir bilgi varsa.
+
+15
+00:19:56,980 --> 00:19:58,420
+Sözü size bırakabiliyorum.
+
+16
+00:19:58,900 --> 00:20:01,480
+Hocam, dönem projesiyle alakalı sorun olacaktı da birkaç tane.
+
+17
+00:20:02,019 --> 00:20:02,240
+Tabii.
+
+18
+00:20:03,140 --> 00:20:06,400
+Bu haritalar kısmıyla alakalı ilk önce bir iki sorun var.
+
+19
+00:20:06,880 --> 00:20:13,180
+Harita kısmında neyi göstereceğimiz konusunda tam açıkçası dokumentasyonu birkaç defa kudum ama emin olamadım.
+
+20
+00:20:13,400 --> 00:20:17,140
+Yani burada evleri listeliyip diğer kullanıcıların evleri görmesini mi istiyoruz?
+
+21
+00:20:17,579 --> 00:20:19,099
+Yoksa kullanıcıların birbirini görmesini mi?
+
+22
+00:20:19,759 --> 00:20:20,559
+Birlikte bakalım.
+
+23
+00:20:20,559 --> 00:20:21,360
+Tamam.
+
+24
+00:20:22,132 --> 00:20:28,572
+Eksikliğimdir hemen cevap veriyorum sonuna. Şuradan dokümanı açayım.
+
+25
+00:20:39,731 --> 00:20:41,771
+Şu an sanırım gözüküyor diye tahmin ediyoruz.
+
+26
+00:20:43,331 --> 00:20:53,371
+Şimdi, ilgili aday öğrencilerin harita üzerinde konumlarına göre ikon ile gösterme ve ek bilgilerin ikon üzerine gidildiğinde paylaşılması.
+
+27
+00:20:54,228 --> 00:20:58,908
+Aday öğrenciden kastımız burada bütün öğrencilerin mi yoksa ev sahiplerin mi?
+
+28
+00:20:59,548 --> 00:21:01,008
+Yani orada çünkü...
+
+29
+00:21:01,008 --> 00:21:03,648
+Burada iki tane senaryo var biliyorsunuz.
+
+30
+00:21:04,048 --> 00:21:09,088
+Bir tanesi evi olan ve ev arkadaşı arayan bir kişi olabilir.
+
+31
+00:21:10,008 --> 00:21:13,928
+İkinci ev arayan bir kişi olabilir.
+
+32
+00:21:14,528 --> 00:21:16,347
+Yani ters iki senaryo var.
+
+33
+00:21:16,748 --> 00:21:18,368
+O yüzden hangisini sorduğunuza bağlı.
+
+34
+00:21:18,672 --> 00:21:41,432
+Aslında şöyle soruyu şöyle söyleyeyim hocam. Bizim uygulamamız sonuçta ev bulmak yani ev ya da ev arkadaşı bulmak üzerine kurulu olduğu için ev arkadaşlarının konumlarını görmenin bir anlamı yok uygulama açısından. Yani eve arkadaş arayan bir kimse. Arkadaş nerede şu an anlık olarak? Bunu bilmesine gerek yok. Ben şöyle düşündüm ama o yüzden işte sormak için, emin olmak için soruyorum. Sadece ev arayanlar...
+
+35
+00:21:42,163 --> 00:21:49,344
+Evlerin koyulan konumlarını görsün, sabit konumlarını kendilerinde harita üzerinde anlık görsün ama kendi konumları diğerleriyle paylaşılmasın.
+
+36
+00:21:49,443 --> 00:21:55,263
+Çünkü gizli bir bilgi, zaten adam alakasız bir yerde de olabilir, ev arıyor diye konum önemli de değil diğer kullanıcılar için.
+
+37
+00:21:55,304 --> 00:22:00,344
+Bu konuda haklısın, tabii ki o kişinin bilgisini paylaşmak doğru bir şey değil.
+
+38
+00:22:00,903 --> 00:22:05,104
+Ama kendi konumunu gösterdiğin noktada diğer olası adayları göstereceğiz ya.
+
+39
+00:22:06,195 --> 00:22:15,415
+Adayda şöyle işte, ev arayanlar siz, eve arkadaş arayanlar, ev arayanları görsün gibi mi? İfade ediyoruz oraya tam.
+
+40
+00:22:15,415 --> 00:22:25,096
+Şöyle, şunu demek istiyorum. Mesela bir eve çıkmak istiyoruz ya, olası evlerde konumları var harita üzerinde.
+
+41
+00:22:26,867 --> 00:22:36,147
+İşte Bostancı'da oturuyorum diyelim. Arayan kişi de Kadıköy civarında bir ev bakıyor. O zaman Bostancı'daki evin ona gözükmemesi lazım.
+
+42
+00:22:37,467 --> 00:22:45,987
+Yani haritada sadece evlerimi gösterelim. Yani buradan onu herkese gösterdiğimiz. Orayı çünkü. Dediğiniz biraz kısıtlamayla alakalı ama.
+
+43
+00:22:46,707 --> 00:22:50,427
+Şimdi [öğrenci] değil mi? [öğrenci]. Evet. Tamam.
+
+44
+00:22:50,963 --> 00:23:16,644
+Şimdi şunu söylemek istiyorum. Birincisi, burada herkesin birebir aynı implementasyonu yapmasını özellikle beklemiyorum ve istemiyorum. Herkesin kendi bakış açısına yansıtmasını istiyorum. İkincisi, ben olsam, kendim uygulamayı geliştiriyor olsaydım, şöyle düşünürdüm şu an, hani üzerine çok düşünmedim ama aklıma gelen ilk çözüm şu olurdu. Ben ev arıyorum ve bana bir kilometre içerisindeki evleri göster.
+
+45
+00:23:17,071 --> 00:23:29,551
+5 kilometre içerisindeki evleri göster. Ya da bir circle çizerdim. O circle'ın içerisinde kalan evleri gösterlerdim. Aday benim bakabileceğim bir ev arkadaşı olarak dahil olabileceğim. Anlatabildim mi şimdi?
+
+46
+00:23:30,491 --> 00:23:37,071
+Orayı anladım ama diğer kısmı sormuştum aslında. Eve arkadaşlayan kişi bir şey görecek mi o noktada? O biraz...
+
+47
+00:23:37,779 --> 00:23:53,059
+Önce bu kısmı netleştirelim. Çünkü bu kısmı özellikle sorduğum için bu kısmı netleştirmiş olalım. Arkadaş arayan birinin kimin nerede oturduğunu teknik olarak görmesi çok da önemli değil aslında. Haklısın.
+
+48
+00:23:53,639 --> 00:24:02,059
+Yani ona bir itirazım yok. Şu an düşündüğüm zaman bana da mantıklı gelmiyor. Ama başka anlamda harita üzerinde bu bilgi kullanılabilir mi? Bir düşünmek lazım.
+
+49
+00:24:02,740 --> 00:24:19,779
+Bir de şeyi sorayım hocam. Bu kısmı aslında dediniz gibi biraz implementasyonuna göre değişiyor. Filtrelemeden kastımız ne? Mesela ilk A şıkkında, B şıkkında filtreleme yaparak harita üzerinden. Bu alanı filtrelemeyi mi kastediyoruz yoksa açık adres arama şeklinde mesela bir search box'tan?
+
+50
+00:24:20,127 --> 00:24:25,607
+Bu da yine kişinin nasıl implemente edeceğine bağlı bir yaklaşım. Şunu söylemek istiyoruz burada.
+
+51
+00:24:25,607 --> 00:24:42,167
+Şimdi mesela bir arama yaptığınızda örnek veriyorum bir ürün alacaksınız. Size belirli özellikleri filtrelediğinizde, markaya göre vesaire filtrelediğinizde ya da boyutuna göre belirli ürünler geliyor değil mi? Yoksa bin tane ürün geliyor.
+
+52
+00:24:42,544 --> 00:24:52,344
+Burada da eğer özel bir filtreleme yapabileceğiniz kriter varsa ne olabilir? Mesela kampüsü olan uzaklığı.
+
+53
+00:24:55,344 --> 00:25:02,403
+İşte aslında şöyle, o filtrelemeyi şey ekranda yapıyoruz zaten. O üçüncü galiba kısımda var.
+
+54
+00:25:03,059 --> 00:25:10,059
+Yani filtreleme kampüsü uzaklık diyor. Öğrenci ekranı da var zaten ama harita üzerindeki filtreleme aslında ayrı yeten bir özellikse onu sormak istemiştim.
+
+55
+00:25:10,059 --> 00:25:19,059
+Harita üzerinde de siz mesela bir şey göstereceksiniz ya. Yukarıdaki belirlediğiniz filtreyi uyguladığınızda...
+
+56
+00:25:19,327 --> 00:25:22,587
+O filtreye uymayanları haritada göstermeyeceksiniz.
+
+57
+00:25:23,008 --> 00:25:25,947
+Anladım. İki ekran birbiriyle entegre olsun şeklinde bir yaklaşım.
+
+58
+00:25:26,008 --> 00:25:37,188
+İşte bunu tamamen siz nasıl dizayn ederseniz, sonuçta örneğin bunu bir ayrı bir alandan filtreyi oluşturup o filtreye göre arattırırsanız her yerde aynı filtreyi kullanabilirsiniz.
+
+59
+00:25:37,188 --> 00:25:45,688
+Ya da o filtreyi bir yerde tanımlayıp diğerlerine getirip istenirse o ekranda sadece değiştirmek için onu bir opsiyon olarak sunarsanız yine olur.
+
+60
+00:25:46,208 --> 00:25:47,188
+Hani bunun bir...
+
+61
+00:25:47,327 --> 00:25:56,367
+Böyle hani 2 artı 2 bir matematiği yok. Siz de birçok uygulama kullanıyorsunuz ve aynı işi yapan uygulamalar birbirinden tamamen farklı stratejilerle bu işi yapabiliyorlar.
+
+62
+00:25:57,076 --> 00:25:58,796
+Anladım hocam. Teşekkürler.
+
+63
+00:25:59,276 --> 00:26:15,916
+Özel bir, hani, ya şu mutlaka filtreleme olarak olmalı dediğimiz bir şey değil. Önemli olan sizin bu uygulamayı tasarlarken gerçekten bizim bile aklımıza gelmeyen ya da herkesin aklına gelmesi gereken bir şey aklınıza geldi mi bunları görmek istiyoruz.
+
+64
+00:26:15,916 --> 00:26:23,816
+Yoksa biz derdik ki, şunlar, şunlar, şunlar filtrelenecek, böyle böyle olacak. Hani askeri usul ne yapacağını soru derdik, o da sizi geliştirmez.
+
+65
+00:26:24,208 --> 00:26:28,307
+Anladım hocam. Siz fonksiyonite istiyorsunuz. Nasıl yapılacağı kullanıcılara bağlı.
+
+66
+00:26:29,076 --> 00:26:30,976
+Tabii ki ama şunu da söylemek isterim.
+
+67
+00:26:30,976 --> 00:26:51,635
+Yani hani ya işte fonksiyon çalışıyor mu çalışıyor deyip hani hakikaten yapılması gereken birkaç şey varsa ve siz onu dikkate almayıp hani yani orada sadece dostlar alışverişliği görsün diye bir modül koyarsanız o da tabii ki puan anlamında size birazcık negatif yansır.
+
+68
+00:26:51,755 --> 00:26:52,796
+Hani onu da söylemek isterim.
+
+69
+00:26:53,056 --> 00:26:55,195
+Her şeyi desteklememesi gerektiğini düşünmüyorum.
+
+70
+00:26:55,195 --> 00:26:57,036
+Ama baktığınızda ediyordu düz.
+
+71
+00:26:57,076 --> 00:27:06,076
+Bu işi yapan bir programla rekabet edecek düzeyde olmalı. Çünkü sonuçta iki aylık bir süre vardı. En azından böyle olması gerektiğini düşünüyorum.
+
+72
+00:27:06,612 --> 00:27:26,652
+Hocam, son bir sorum olacak. Eşleşme ile alakalı bir, biraz daha kısa bir soru. Şu eşleşme kısmında talep yollanıyor. Yani oradaki senaryoyu aslında biraz kafamda tam oturtamadım. Şimdi iki tarafta birbirine talep yollayabiliyor. Doğru mu anladım burayı? Yani hem ev arayanlar ev arkadaşlarına talep yollayabiliyor, uygun gördüklerine. Hem de ev arkadaşı, yani olası ev arkadaşları ev sahiplerine talep yollayabiliyor. Tamam.
+
+73
+00:27:27,112 --> 00:27:34,612
+Talep yolladıktan sonra onaylamayı diğer taraf yapıyor ya da reddediyor. Onaylarsa tam orada ne olduğunu açıkçası hani şey yapamadım.
+
+74
+00:27:34,612 --> 00:27:37,312
+netleştiremedim. Yani onayladığı an...
+
+75
+00:27:37,312 --> 00:27:42,672
+Sende ne olması gerekir onayladığı an? Karşılıklı onaylaştığı an? Ondan sonraki ilk olması gereken şey nedir?
+
+76
+00:27:43,132 --> 00:27:47,452
+Ya bilgilerini hani göstermek herhalde. C şıkkında öyle bir ifade var. İletişim bilgilerini sunmak tarzı.
+
+77
+00:27:47,572 --> 00:27:52,032
+Ama ondan sonraki aşama biraz daha merak ettim. Yani orada bir daha bir aşamadan bekliyoruz.
+
+78
+00:27:52,032 --> 00:27:57,972
+Ben ev arkadaşımı bulmuşum. Tamam mı? Benim ondan sonra ilanımın orada olması gerek var mı?
+
+79
+00:27:59,052 --> 00:27:59,412
+Yok.
+
+80
+00:27:59,923 --> 00:28:08,923
+Yok ama şöyle, belki kesinleşme edebilir. Şu an o netleşmedi. İletişim geçmekle anlaşma sağlanması aynı şey değil biraz. Orada biraz.
+
+81
+00:28:09,423 --> 00:28:18,784
+Yani şimdi seni o kadar iyi hatırlıyorum ki, seni görmesem de şu anda, ses tonunda. Veri yapılır dersinde de ayrıntılı soruyordum. Ya da algoritmanınız dersinde.
+
+82
+00:28:19,667 --> 00:28:47,607
+Evet, tamam. Şimdi hani ben burada sana bir sürü senaryo sunabilirim ama burada hani gerçekten hand-shaking mekanizması olsun, işte kesintisiz olsun bu iş, hatasız olsun gibi bir amacımız yok. Çünkü o zaten başın başına bir iş. Buradaki amacımız bir akışınız olsun. Bu akışta sizin belirlediğiniz bir kural olsun. Talep gönderildi, onaylandı karşılıklı. İki tarafta da onay bilgisi işte.
+
+83
+00:28:47,667 --> 00:28:54,647
+Bildirim olarak düştü. Neyse, kim nasıl yapıyorsa. İletişim bilgilerinden de yazışıldı. Belki de şöyle yapabilirsiniz.
+
+84
+00:28:55,527 --> 00:29:05,467
+Talep gönderdiğiniz, karşı taraf yazışalım dediği iletişim bilgilerini çıkarttınız. İletişimde yazıştınız, anlaştınız. Ondan sonra talebi onaylayabilir karşılıklı iki kişi.
+
+85
+00:29:05,467 --> 00:29:13,687
+Bu akış tamamen sizin kontrolünüzde. Nasıl yaptığınızı anlatacaksınız. O yüzden zaten adını koymuyoruz.
+
+86
+00:29:14,612 --> 00:29:20,552
+Anladım hocam. Yani katı kurallar yok ama o akışı bir şekilde doğru ve uygun bir şekilde sağlamamız gerektiğini söylüyorsunuz.
+
+87
+00:29:20,572 --> 00:29:32,352
+Mantıklı bir çözüm bizim kabulümüz. Yani bu talebin önce mi onaylandığı iletişimden yoksa hani iletişimin opsiyonel olarak mı sunulduğu bu tamamen sizin tercihiniz.
+
+88
+00:29:33,272 --> 00:29:38,012
+Ama bu yeteneklerinin uygulamanın olması lazım ve belli bir akışta olması lazım.
+
+89
+00:29:39,012 --> 00:29:40,211
+Anladım hocam. Teşekkür ederim.
+
+90
+00:29:40,852 --> 00:29:43,432
+Rücelerim. Umarım kendim dolu olmuştur.
+
+91
+00:29:44,092 --> 00:29:45,472
+Benim de sorum var, müsaadeniz varsa.
+
+92
+00:29:45,972 --> 00:29:47,012
+Ne demek [öğrenci], bilir.
+
+93
+00:29:47,412 --> 00:29:53,332
+Hocam, durum kısmında hani üç tane ihtimal var ya, aramıyor, ev arıyor, arkadaş arıyor diye.
+
+94
+00:29:53,812 --> 00:29:57,132
+Bir dördüncü durum eklememiz sıkıntı yaratır mı? Hani ev buldu diye.
+
+95
+00:29:57,632 --> 00:29:59,372
+Çünkü aramıyorla ilgili bir planlamam var.
+
+96
+00:29:59,372 --> 00:29:59,892
+Yaratmaz.
+
+97
+00:30:00,147 --> 00:30:23,288
+Bu da güzel bir soru. Şöyle cevaplayayım bunu da. Buradaki senaryolarda ihtiyaç duymanız durumunda ek bir katkı sağlıyorsanız ve bu mantıklıysa ve siz bunu yapmaktan çok büyük bir vakit kaybı yaşamıyorsanız biz memnuniyet duyuyoruz. Çünkü bizim buraya koymadığımız, aklımıza gelmeyen güzel bir özelliği ya da opsiyonu sunuysanız ne güzel.
+
+98
+00:30:24,788 --> 00:30:42,168
+Onun dışında hocam, şimdi kampüse istenen ve paylaşabileceği süreyle ilgili iki aylı değişkenimiz var ya, bunları defa otolarak kullanıcıların her türlü mesafeyi ve her türlü süreyi kabul edecek şekilde başlangıç olarak kaydolduğuna giriyorum.
+
+99
+00:30:43,467 --> 00:30:49,407
+Örnek olarak kullanıcı daha sonra isterse sadece 10 kilometre mesafedeki evleri, sadece 20 kilometre mesafedeki evleri.
+
+100
+00:30:49,824 --> 00:31:00,224
+İstiyorsa, düzenlemesini istiyorum. Bunda bir sakınca yok değil mi? Default olarak sıfır girildiğinde veya hiçbir şey girilmediğinde bütün evleri kabul ettiğini varsayıyorum.
+
+101
+00:31:01,011 --> 00:31:05,051
+Ya bunu böyle yapabilirsiniz ya da bunu şöyle yapabilirsiniz.
+
+102
+00:31:05,711 --> 00:31:07,931
+Kullanıcıya bir ayar menü ekranı vardır.
+
+103
+00:31:08,571 --> 00:31:11,291
+Oradan default değerleri kullanıcıdan alırsınız.
+
+104
+00:31:11,431 --> 00:31:15,451
+Yani default siz 0 koyarsınız sonra kullanıcı onu oradan ayarlayabilir.
+
+105
+00:31:15,451 --> 00:31:19,411
+Ya da default olarak 5 kilometre koyarsınız.
+
+106
+00:31:19,511 --> 00:31:21,391
+Kullanıcı ondan sonra onu daha düşürebilir.
+
+107
+00:31:21,971 --> 00:31:25,211
+Hani bu ikisi de mümkün, yapılabilir.
+
+108
+00:31:27,152 --> 00:31:28,451
+Tamamdır hocam. Teşekkür ederim.
+
+109
+00:31:29,011 --> 00:31:31,172
+Rica ederim. Başka soru sola.
+
+110
+00:31:35,316 --> 00:31:39,175
+Peki, o zaman bu dokümanı bir kapatalım.
+
+111
+00:32:02,003 --> 00:32:04,784
+Şimdi, bu haftaki sunumumuzun dökülenmeyi açalım.
+
+112
+00:32:24,276 --> 00:32:27,376
+Evet, sanırım geliyordu diye tahmin ediyorum ekran vermişsini.
+
+113
+00:32:28,516 --> 00:32:34,076
+Bu hafta haritaları konuşacağız. Geçen hafta lokasyon servislerini konuşmuştuk.
+
+114
+00:32:34,396 --> 00:32:40,155
+Kısmen de örnek üzerinde, bir harita üzerinde de aldığımız konum bilgisini göstermiştik.
+
+115
+00:32:40,155 --> 00:32:47,696
+Şimdi harita nesnelerini konuşacağız bugün, yeteneklerini konuşacağız.
+
+116
+00:32:48,160 --> 00:33:02,539
+İki farklı API üzerinden gerçekleştirileceğiz. Google Map ve Map Fragment üzerinden. Mutlaka Google Play Services SDK ve Maps SDK'yi yüklemeniz sizden bekleniyor.
+
+117
+00:33:03,360 --> 00:33:16,160
+Google Maps Activity'yi seçerek ve sonra da API Key'i sisteminize olması gereken Android Manifest'teki noktaya...
+
+118
+00:33:16,160 --> 00:33:17,900
+Yüklerek aslında işlemi tamamlıyorsunuz.
+
+119
+00:33:17,940 --> 00:33:29,160
+Yani buradaki kritik nokta şu, haritalarla çalışıyorsanız, bu SDK'ları, Google Play Services, Maps'i, SDK gibi ek olarak Android...
+
+120
+00:33:31,731 --> 00:33:37,432
+Software, Development Kit'e ek olarak bu SDK'ları da mutlaka kurmanız gerekiyor.
+
+121
+00:33:38,012 --> 00:33:44,072
+Bir de platforma bağlanarak bir API key üretmeniz sizden bekleniyor.
+
+122
+00:33:44,152 --> 00:33:47,251
+Bu API key'in bir aslında anlamı var.
+
+123
+00:33:48,192 --> 00:33:55,412
+Yani sizden bir mesela kredi kartı bilgisi ister ama herhangi bir ücret talep etmez.
+
+124
+00:33:56,092 --> 00:33:59,731
+Size belirli bir kredi karşılığında bir API key üret.
+
+125
+00:33:59,731 --> 00:34:24,412
+Bu konuda bir fikri olan var mı?
+
+126
+00:34:28,563 --> 00:34:31,103
+Hocam, fikrimi belirteyim isterseniz.
+
+127
+00:34:31,543 --> 00:34:31,943
+Sevinirim.
+
+128
+00:34:32,884 --> 00:34:37,463
+Haritaları, yani herhangi bir doğrulama yöntemi gibi aslında bir keyword sistem.
+
+129
+00:34:38,243 --> 00:34:41,543
+Bu herhangi bir siteye giriş yaptığımızda bir token veriyor mesela.
+
+130
+00:34:41,663 --> 00:34:45,923
+Onun mantığında o bizi doğrulamak için aslında işlemler bizim üzerimizden gerçekleşti.
+
+131
+00:34:45,983 --> 00:34:47,543
+Hem de belli kısıtları var mesela.
+
+132
+00:34:47,983 --> 00:34:52,123
+Ücretsizde belli kısıtlar var ya da ücretliyse bile ona göre işlem maliyeti var.
+
+133
+00:34:52,788 --> 00:35:17,248
+Yani şimdi bunu herkes kullanıyor olsaydı, bir key üzerinden gerçekleşmeseydi ve sayıda bir limit olmasaydı, şu anda muhtemelen aklına gelen herkes canının istediği bir harita sorgulaması yaptığında çok fazla sayıda istek geleceği için bunu bu platformun yönetmesine büyük sıkıntılar çıkacaktı.
+
+134
+00:35:17,248 --> 00:35:20,788
+O nedenle bunu kontrol altına tutabilmek için...
+
+135
+00:35:20,788 --> 00:35:23,668
+Aslında iki tip ki var.
+
+136
+00:35:24,063 --> 00:35:39,983
+Bunlardan bir tanesi işte debug olarak bir tanesi de release key olmak üzere ikiye ayrılıyor. Debug key zaten çok kritik değil. Debug key, release key de kullanamıyorsunuz. Buna da dikkat etmek gerekiyor.
+
+137
+00:35:40,123 --> 00:35:50,983
+Günün sonunda aldığınız key, metadata bilgisi adı altında manifestin içerisine, application tag'inin içerisine eklemeniz gerekiyor haritayı.
+
+138
+00:35:52,063 --> 00:35:57,384
+Uygulamanızda kullanabilmeniz için bu önemli noktalardan bir tanesi.
+
+139
+00:35:58,123 --> 00:36:07,083
+Tabii bununla ilgili Android Studio üzerinden Build Gradle ile yapmamız gereken çeşitli plugin ayarları var.
+
+140
+00:36:07,203 --> 00:36:11,144
+Bu pluginleri ekleyerek ancak kullanabiliyorsunuz.
+
+141
+00:36:15,956 --> 00:36:23,775
+Güvenli bir şekilde harita API'yına, kütüphanelerine ulaşmasını sağlamış oluyorsunuz.
+
+142
+00:36:24,155 --> 00:36:31,275
+Bu eklemeleri yapmadan alacağınız hatalar muhtemelen bunlarla ilgili olacaktır diye burayı kapatalım.
+
+143
+00:36:32,235 --> 00:36:42,976
+Biraz önce konuştuğumuz başlıklara bakarsanız Application Restriction ve API Restriction olmak üzere iki başlık göreceksiniz burada.
+
+144
+00:36:43,507 --> 00:36:52,627
+Bir tanesi API keyin, işte farklı alanlardan gelen istekler noktasında bir kullanım kısıtı oluşturuluyor.
+
+145
+00:36:54,516 --> 00:37:12,036
+Kullandığınız key üzerinden çok sayıda istek geldiğinde belirli bir noktadan itibaren bu hizmet engelleniyor ve kullanım noktasında kötü niyetli kullanıcılara bir aslında önlem olarak karşımıza çıkıyor.
+
+146
+00:37:12,036 --> 00:37:18,416
+Aynı şekilde hangi API üzerinden kullanıldığına bağlı olarak.
+
+147
+00:37:18,751 --> 00:37:37,471
+O API'ye gelen isteklerin belirli bir sayısı var ve o API gelen istekler noktasında çok sayıda istek geldiğinde yine paylaşıyor ve belli bir talepten sonra artık kullanımı mümkün olmuyor.
+
+148
+00:37:37,471 --> 00:37:45,811
+Bu tür kısıtlamalara aslında farklı alanlarda biraz önce arkadaşınızın da bahsettiği token.
+
+149
+00:37:46,255 --> 00:37:49,416
+Bu kullanımıyla benzetirsek, RAS diyoruz.
+
+150
+00:37:51,215 --> 00:37:56,255
+Burada işte Kine aslında sizin tarafınızda bir...
+
+151
+00:37:56,592 --> 00:38:13,332
+Hashlenmiş değeri var. Bu hashlenmiş değeri aslında kullanıyorsunuz. Dolayısıyla bir başka güvenlik seviyesi oluşturarak da açık kullanımı engellemiş oluyorsunuz. Bu da bir diğer dikkat edilmesi gereken nokta.
+
+152
+00:38:22,036 --> 00:38:30,516
+Tertifika alabileceğiniz iki farklı kanaldan ilerleyebileceğiniz sizinle paylaşılıyor bilgi olarak.
+
+153
+00:38:30,516 --> 00:38:44,516
+Bir tanesi hepimizin yaptığı, bilgisayarımızın üzerinde kurulu olan Android Studio üzerinden herhangi bir uygulama geliştirdiğimizde doğru da...
+
+154
+00:38:45,427 --> 00:38:59,827
+O uygulamanın imzalanması üzerine sertifika oluşturuyorsunuz. Bir diğeri de aslında o uygulamada markete çıkacağı noktada imzalama işlemi. Bunun için de Re-Sortificate'a ihtiyaç duyuyorsunuz.
+
+155
+00:39:01,188 --> 00:39:13,427
+Ama günün sonunda herkes için de bir sertifikat üretilmesi sizden bekleniyor. Birini diğeri için kullanamıyorsunuz. O yüzden iki ayrı yoldan ilerleyelim.
+
+156
+00:39:13,427 --> 00:39:16,268
+...şarplara bağlı olarak önemli.
+
+157
+00:39:17,768 --> 00:39:21,427
+Şimdi gelelim bizim aslında...
+
+158
+00:39:23,107 --> 00:39:28,427
+...hangi noktalardan haritaları kullanacağımız kısmına...
+
+159
+00:39:29,108 --> 00:39:43,427
+Üst kısımdaki yer alan kod parçası bir XML layout dosyasına ait ve burada bir map fragment tanımlanmış durumda ve bu map fragment'a da bir ID verilmiş durumda.
+
+160
+00:39:43,427 --> 00:39:55,296
+Map isimli bir ID ve siz bunu aslında aktivitenizin içerisindeki layout'a konumlandırıyorsunuz ve böylece burada bir...
+
+161
+00:39:55,295 --> 00:40:04,895
+Bu fragment üzerinde map, ne diyelim, aktivitelerinin gerçekleşeceğini tanımlamış oluyorsunuz.
+
+162
+00:40:04,895 --> 00:40:15,895
+Öte yandan, tabi bu layout'u tanımlarken, map activity içerisinde support map fragment tanımını yapıyorsunuz.
+
+163
+00:40:19,699 --> 00:40:37,800
+Fragment'imizi layout tarafındaki fragment ile program tarafındaki aslında ilişkilendiriyorsunuz. Daha önce bunu işte biliyorsunuz UI objeleri için de yapmıştık. Butonlar için yapmıştık. TextView'lar için yapmıştık. EditText'ler için yapmıştık.
+
+164
+00:40:37,800 --> 00:40:47,300
+Aynı şeyi burada önce setContentView layout'u eğer tek bir fragment varsa ki birden fazla fragment olabilir.
+
+165
+00:40:47,699 --> 00:40:55,039
+Örneğin, geliştireceğiniz uygulama içerisinde, dönem projenizde ekranı ikiye bölmüş olabilirsiniz.
+
+166
+00:40:55,679 --> 00:40:59,779
+Bir Fragment'ta kullanıcıdan aldığınız bilgiler, bir Fragment'ta da harita bilgileri olabilir.
+
+167
+00:41:00,460 --> 00:41:13,899
+Genelde tüm ekranın kullanılması tercih ediliyor ama tablet vs. söz konusu o zaman ekranı iki parçaya bölerek hareket etmek daha ekranı verimli kullanmak açısından faydalı olabiliyor.
+
+168
+00:41:14,431 --> 00:41:33,151
+Günün sonunda bu aktivite aynı zamanda OnMapReadyCallback isimli interfejsi imkanlar ediyor. Bu sayede harita üzerindeki aksiyonları da yapılacak işlemleri de kontrol ediyorsunuz.
+
+169
+00:41:33,151 --> 00:41:41,931
+İşte ona ait olan OnMapReady metodu var ve bu metoda bir Google Map objesi pas ediliyor.
+
+170
+00:41:42,431 --> 00:42:00,391
+Bu Google Map objesi pas edildikten sonra bunun üzerinde tanımlanması gereken markerlar ve onların ilgili özellikleri altta gördüğünüz son uç satırdaki kod parçalara tanımlanıyor.
+
+171
+00:42:04,307 --> 00:42:10,667
+Lokasyon bilgisi nereye işaretleyeceksiniz, markerı nereye koyacaksınız onu tanımlıyorsunuz.
+
+172
+00:42:11,228 --> 00:42:21,307
+Arkasından o markerı tanımlayıp biraz önce onun bilgisini oluşturduğunuz objeyi Position metoduna aktarıyorsunuz.
+
+173
+00:42:22,307 --> 00:42:25,927
+O markera bir isim veriyorsunuz Startin metodunu çağırarak.
+
+174
+00:42:32,148 --> 00:42:42,956
+O dünya üzerinde belirlediğiniz nokta neresiyse kameranın oraya belirli bir zoom seviyesiyle...
+
+175
+00:42:43,347 --> 00:42:54,047
+Ortalamasını ve o bölgeyi göstermesini sağlıyorsunuz ki açıldığı zaman bazen harita size bir ülke bazında ölçekte gözükebilir.
+
+176
+00:42:54,627 --> 00:42:58,148
+Türkiye'ye odaklanması gerekiyorsa Türkiye ölçeğinde gözükür.
+
+177
+00:42:58,867 --> 00:43:07,427
+Bazen Türkiye'de spesifik bir şehir seçtiyseniz ve Zoom seviyesini ayarladıysanız o şehre özgü olarak bunların ayarlarını ayarlayarak
+
+178
+00:43:11,539 --> 00:43:18,259
+Bu bahsetmiş olduğumuz operasyonları yürütüp haritanızın konumlanmasını sağlarsınız.
+
+179
+00:43:18,420 --> 00:43:28,960
+Tabii bunları kullanabilmeniz için bahsettiğimiz metotları, interfaisleri ya da sınıfları bunları import etmeniz gerekiyor.
+
+180
+00:43:28,960 --> 00:43:36,039
+Burada göreceksiniz Camera Update Factory, Google Map, OnMap Ready Callback, Support Map Fragment.
+
+181
+00:43:36,431 --> 00:43:49,171
+Marker Options gibi tek tek ilgili Google Package'ın altında bulunan ihtiyaçlılıklarınızı aslında import ediyorsunuz.
+
+182
+00:43:49,532 --> 00:43:59,211
+Yine Yıldız kullanılmıyor. Hangisine ne kadar ihtiyaç duyduysanız sadece onların isimlerini buraya yazmanız yeterli oluyor.
+
+183
+00:44:00,052 --> 00:44:11,891
+Şimdi burada iki tane aslında farklı senaryo görüyorsunuz. Bir tanesi statik olarak aslında map.
+
+184
+00:44:12,340 --> 00:44:35,440
+pin eklenmesi. Bir diğeri ise dinamik olarak eklenmesi. Sol taraftaki parça egzaman kodunu da statik olarak bir ekleme yaparken sağ tarafta map fragment'ınızı dinamik olarak oluşturup bunu kendi Activity'nizin içerisinde komit ederek ve add konutuyla ekleyebiliyorsunuz.
+
+185
+00:44:37,492 --> 00:44:49,492
+Eğer statik olanı tercih ettiyseniz, o zaman altta yer alan FindFragmentById'yi biraz önce görmüş olduğunuz komutta sadece layout tarafındaki ilişkilendirmeyi yapıyorsunuz.
+
+186
+00:44:49,972 --> 00:44:58,052
+İkisi birbirinden teknik olarak farklı. Ne zaman böyle bir şey ihtiyaç duyabilirsiniz, statik ve dinamik?
+
+187
+00:44:58,852 --> 00:45:04,132
+Üzerine bir düşüncek olursak, hangi türlü statik ve dinamiği tercih edersiniz?
+
+188
+00:45:09,139 --> 00:45:14,659
+Satip olması gerekir ama eklenmesi yine bir koşula duyulur mu şu an sesim hocam?
+
+189
+00:45:15,119 --> 00:45:16,859
+Biraz kesitli geldi, bir daha söyler misin?
+
+190
+00:45:17,800 --> 00:45:23,859
+Harita ekranın önemli bir parçasıysa, yani sabit bir parçasıysa, mesela işimiz haritaysa ya da navigasyonsa,
+
+191
+00:45:24,179 --> 00:45:29,779
+statip olması daha mantıklı ama koşula bağlı olarak ya da belli durumlarda harita gösterecekse, belki dinamik seçebiliriz.
+
+192
+00:45:29,779 --> 00:45:33,119
+Evet, tamam, istediğimiz cevap hakikaten arkadaşınızın söylediği.
+
+193
+00:45:34,420 --> 00:45:45,460
+Burada önemli olan gerçekten odak noktamız haritaysa ve o aktivitede biz tamamen harita üzerinde bir şeyler yapacaksak o zaman statik olarak tanımlamak daha akıllıca.
+
+194
+00:45:45,460 --> 00:45:56,139
+Ama belirli kezler çerçevesinde haritanın açılması ve onun üzerine bir şeyler yapılmasını bekliyorsak ve bu ağırlıklı bir durum değilse ya da...
+
+195
+00:45:56,211 --> 00:46:06,652
+Her an haritayı açma ihtiyacımız yoksa o zaman dinamik olarak bu fragmentı yaratıp onun üzerinde haritayı kullanmak daha akıllıca.
+
+196
+00:46:10,996 --> 00:46:29,176
+Şimdi tabii Map objesi bizim Map SDK üzerinden hizmet aldığımız bir obje ve üzerinde çok farklı işler yapabiliriz.
+
+197
+00:46:29,176 --> 00:46:36,596
+İşte zaman içerisinde ilk başta sadece konumumuzu gösterirken uygulamaların çoğu.
+
+198
+00:46:36,943 --> 00:46:54,943
+Zaman içerisinde POI dediğimiz, Point of Interest, işte benzinlikler, okullar, alışveriş merkezleri gibi bugün günümüzde...
+
+199
+00:46:55,860 --> 00:47:07,199
+Birçok uygulamanın pazarlama amaçlı da ya da insanların yönlendirilmesine katkıda bulunmak amaçlı da kullandıkları ikonlar kullanıyor harita üzerinde.
+
+200
+00:47:07,680 --> 00:47:16,736
+Tabii bu ikonların hepsi clickable değil. Bazıları sabit sadece orada bilgi amaçlı duruyor. Bazıları üzerinden...
+
+201
+00:47:16,735 --> 00:47:40,715
+Clickable olanlar üzerinden ekstra bilgi alıyorsunuz tıkladığınızda. Bazılarını da üzerine tıkladığınızda bambaşka bir iş yapma şansınız oluyor. Bu nedenle aslında biz bugünkü ders içerisinde de göreceksiniz. Map SDK üzerindeki en önemli kullanacağımız map objesi, Google Map objesi ve...
+
+202
+00:47:40,947 --> 00:47:48,688
+Onun üzerinden birçok harita üzerindeki aksiyonumuzu gerçekleştiriyor olacağız.
+
+203
+00:47:49,688 --> 00:48:00,268
+Ve haritayı sadece görsel anlamda konum bulmak için değil, çok daha efektif bir şekilde kullanıyor olacaksınız.
+
+204
+00:48:00,987 --> 00:48:06,747
+Ve bunun için de iki tane aslında seçeneğimiz var. Biri MapFragment, biri de MapView.
+
+205
+00:48:07,987 --> 00:48:15,987
+Google Map Objesi bizim açımızdan aslında birçok...
+
+206
+00:48:16,659 --> 00:48:26,420
+Bağlantıyı da içerikliyor. Örneğin, Map Service'ler ile bağlantıyı sağlayan ve oradan gelen bilgiyi taşıyan amca.
+
+207
+00:48:26,420 --> 00:48:37,420
+Aynı zamanda haritaların üzerindeki bu görmüş olduğunuz tile olarak adlandırılan parçaların sizin...
+
+208
+00:48:37,523 --> 00:48:53,903
+Telefonunuza indirilmesi konusunda görev oluyor bu sınıf. Bu neden önemli? Siz aslında ilk etapta bir uygulamada tüm dünyanın ayrıntılarını, tüm dünya haritasının ayrıntılarını indirmiyorsunuz.
+
+209
+00:48:58,739 --> 00:49:13,739
+Ayrıntıya kadar girmesini sağlıyorsunuz veya belli bir dünyadaki bölgenin bilgisine ulaşmasını, yani zoom out ettiğinde o bölgenin dışına çıkmamasını sağlıyorsunuz. Bunlar önemli noktalar çünkü bu...
+
+210
+00:49:15,539 --> 00:49:28,539
+Detay bilgiyi ya da sizin ihtiyaç duymadığınız dünyanın başka noktasındaki bir harita bilgisini kullanıcıya indirtmek telefonuna hem gereksiz bir veri kaybı hem de zaman kaybı.
+
+211
+00:49:28,539 --> 00:49:31,539
+Bunları düşündüğünüzde...
+
+212
+00:49:32,371 --> 00:49:36,011
+Bu tile yapısının daha da önemli hale geliyor.
+
+213
+00:49:36,831 --> 00:49:43,131
+Bu bahsettiğimiz bilgi alışverişinin yönetimi Google Maps sınıfı üzerinden gerçekleşirken,
+
+214
+00:49:43,531 --> 00:49:50,231
+aynı zamanda bunların ekran üzerinde gösterilmesi, bunların üzerinde zoom in zoom out yapılması
+
+215
+00:49:50,231 --> 00:50:00,000
+ya da bir navigasyon uygulamasında gördüğünüz üst noktadan bakan bakış açısından...
+
+216
+00:50:00,000 --> 00:50:12,920
+değişmesi, işte daha yatayda haritayı görmeniz gibi bütün bu gesture olarak adlandırdığımız işler Google Map sınıfı üzerinden aslında yönetiliyor.
+
+217
+00:50:17,331 --> 00:50:30,251
+Temelde bizim Google Map üzerinden, objesi üzerinden hareket ederken ilk yaptığımız tanımlamalardan bir tanesini görürsünüz şu anda ekranda.
+
+218
+00:50:30,952 --> 00:50:36,431
+Burada haritanızın tipinin ne olacağını belirliyorsunuz bu sınıf üzerinden.
+
+219
+00:50:36,431 --> 00:50:37,731
+Bu neden önemli?
+
+220
+00:50:38,952 --> 00:50:43,431
+İşte haritanız acaba sadece yolları...
+
+221
+00:50:43,764 --> 00:51:05,764
+Ve insanların aktif olarak kullanacağı özellikleri mi size gösterecek? Yoksa uydu görüntüsünü sizle paylaşacak? Yoksa daha topografik bir veri mi paylaşılmasını istiyorsunuz ki ona göre daha farklı bir...
+
+222
+00:51:06,291 --> 00:51:18,291
+Kişiye bilgi mi sağlamaya çalışıyorsunuz? Buna göre değişkenlik gösteriyor. Biz genelde alışık olduğumuz, işte normal modunda çalışıyoruz ama bazı uygulamalar...
+
+223
+00:51:19,092 --> 00:51:28,472
+Bazen tercihe bağlı olarak, bazen de kendi seçimleri olarak size farklı harita görünümlerini gösteriyorlar.
+
+224
+00:51:28,472 --> 00:51:39,472
+Topografik bir haritayı daha önceden biliyorsunuzdur, daha çok yükseltilerin biraz daha...
+
+225
+00:51:40,211 --> 00:51:50,211
+Renklendirme usulüyle düz yerlerin ve yüksek yerlerin birbirinden ayrıldığı şekilde bir haritadan, coğrafi bir haritadan bahsediyorken,
+
+226
+00:52:04,927 --> 00:52:27,268
+Yerleşim yerlerinin ya da bir deprem sonrasında çekilen fotoğrafta oradaki yıkılan binaların daha net görülebildiği uydu fotoğrafları üzerinden de özellikle yol ve detay bilgilerin olmadığı bir fotoğraftan bahsediyoruz.
+
+227
+00:52:27,768 --> 00:52:31,107
+Bunu sizin uygulamanıza bağlı olarak tercih edebiliyorsunuz.
+
+228
+00:52:33,043 --> 00:52:51,663
+Burada işte bu farklı harita türlerine örnek olması açısından seçilmiş görüntüler var. Bu görüntüler üzerinden farklı map görüntülerini ihtiyaç duymanız lazım.
+
+229
+00:52:51,920 --> 00:53:13,920
+Bazı detayları dahil olarak, bazı detayları dışarıda bırakarak gösterebiliyorsunuz. Ortada bir uydu görüntüsü görüyorken, sağ ve sol tarafta, sağdaki daha detaylı olmak üzere, belirli bir bölgedeki daha çok konum açısından size bilgi sağlayacak yol alternatiflerini görüyorsunuz.
+
+230
+00:53:19,920 --> 00:53:33,620
+Bölgeleri net bir şekilde görebiliyorsunuz. Ama ucu görüntüsüne geçtiğiniz takdirde daha detay bilgi size akıyor ve daha fazla bilgi telefonunuza indirilmiş oluyor.
+
+231
+00:53:37,427 --> 00:53:43,987
+Tabii bir de hep biz dış mekanları konuştuk harita ifade ederken.
+
+232
+00:53:45,067 --> 00:53:55,327
+Aslında artık uzun aslında yıllardır büyük binaların iç yapılarına dair bilgileri de paylaşıyor Google sizinle.
+
+233
+00:53:55,327 --> 00:54:00,807
+Ve siz isterseniz o sınıf üzerinden set indoor enabled.
+
+234
+00:54:01,364 --> 00:54:11,743
+Seçeneğiyle true ya da false diyerek haritanızın üzerinde kişilerin bina detayına da erişmesini mümkün hale getirebiliyorsunuz.
+
+235
+00:54:11,783 --> 00:54:23,203
+Tabi bu da yine ek bir bilgi demek. Bunların hepsi size ekstra o bölgedeki bilgilerin daha detaylı olarak indirilmesi anlamına geliyor.
+
+236
+00:54:25,588 --> 00:54:30,588
+Birçok binanın içerisinde de böyle gezme şansına sahipsiniz.
+
+237
+00:54:30,968 --> 00:54:37,260
+Detayları görmek açısından o binanın içerisindeki bir alışveriş merkesi ise mesela...
+
+238
+00:54:37,588 --> 00:54:44,788
+Hangi markaların olduğunu, hangi restoranların olduğunu görebilecek noktada oluyorsunuz.
+
+239
+00:54:45,088 --> 00:54:49,968
+Bu da yine farklı uygulamaların kullanıldığı alternatif çözümlerden bir tanesi.
+
+240
+00:54:49,968 --> 00:54:55,228
+Ama bu detayları bilgi kullanmak istemiyorsunuz ki birçok yerde kullanmıyoruz aslında.
+
+241
+00:54:55,708 --> 00:55:00,968
+Set, indoor, enabled noktasında false diyerek bunu direkt olarak...
+
+242
+00:55:02,164 --> 00:55:04,984
+Desable etme şansına sahipsiniz.
+
+243
+00:55:06,604 --> 00:55:13,204
+İşte onun dışında kat planı özelinde de ayarlamalar yapabiliyorsunuz.
+
+244
+00:55:13,304 --> 00:55:18,304
+Indoor Level Picker Enabled noktasında da yine müdahil olabiliyorsunuz.
+
+245
+00:55:18,304 --> 00:55:20,304
+Binaya fokuslanabiliyorsunuz.
+
+246
+00:55:21,844 --> 00:55:26,604
+Bu tür o detayda bilgileri de Maps SDK size sağlamış oluyor.
+
+247
+00:55:28,371 --> 00:55:44,491
+Günümüzde çok sık kullanılan ve bazı haritalarında faydalanıldığı ama buraya çok müdahil olamadığınız sadece bir layer olarak size transfer edilen bir bilgi olarak düşünebilirsiniz.
+
+248
+00:55:44,491 --> 00:55:50,155
+Burada trafiğin son durumu bilgisini alıp...
+
+249
+00:55:50,195 --> 00:56:15,096
+kullanıcılarınızla paylaşabiliyorsunuz. Bu da yine Google'ın aslında servis olarak sunduğu hizmetlerden bir tanesi ama bu harita üzerinde herhangi bir iş, ne diyelim, renklendirmeyle ilgili ya da onun verdiğiyle ilgili bir şey yapmış şansınız yok. Size çünkü bir beğen olarak aktarılmış oluyor.
+
+250
+00:56:21,108 --> 00:56:33,448
+Tabii haritalarla ilgili bir initial state ayarlaması yapmak gerekiyor. Yani ilk açıldığında harita nereye gösterecek, hangi zoom seviyesinde olacak, hangi açıyla olacak bunlar çok önemli.
+
+251
+00:56:33,448 --> 00:56:43,568
+Çünkü biliyorsunuz bazen bir nokta işaretliyorsunuz ama haritayı öyle bir açıyorsunuz ki o nokta haritanın alanında yok.
+
+252
+00:56:46,708 --> 00:57:13,347
+Düşük yani, çözünürlük o kadar düşük ki siz o noktayı çok genel görüyorsunuz ve aslında çok da işinize yaramıyor. O yüzden bu ilk ayarları aslında kullanıcıya sunmak oldukça önemli. Bu noktada çeşitli ne diyelim metotlar var ve bu metotlar üzerinde haritanın açıldığında hangi bilgileri göstereceğini siz initiate edebiliyorsunuz.
+
+253
+00:57:14,003 --> 00:57:26,663
+Şimdi saat 15.09 bir ara verelim. Saat 15.20 itibariyle yani 11 dakika sonra kaldığımız yerden devam edelim.
+
+254
+01:08:34,931 --> 01:08:36,311
+Evet, yeniden merhaba arkadaşlar.
+
+255
+01:08:37,891 --> 01:08:40,332
+Dersin ikinci bölüm. İkinci bölümdeyiz.
+
+256
+01:08:43,572 --> 01:08:52,332
+En son bir harita için Initial State'i nasıl oluşturmalıyız? Bunları konuşuyorduk.
+
+257
+01:08:53,092 --> 01:08:55,711
+Ben şimdi tekrar bir paylaşım yapayım.
+
+258
+01:09:07,507 --> 01:09:09,387
+Evet, sanırım şu anda görebiliyorsunuzdur.
+
+259
+01:09:11,147 --> 01:09:17,788
+Şimdi burada dedik ki kameranın pozisyonu önemli, nereye odaklandığı, hangi açıyla baktığı, zoom seviyesi.
+
+260
+01:09:17,788 --> 01:09:28,067
+Ve tabii burada kullanıcıya bunları değiştirmek için hak verip vermediğiniz de önemli ya da ne kadar limitlediğimiz de önemli.
+
+261
+01:09:28,500 --> 01:09:33,059
+Sonuçta buna karar verecek olan geliştirici olarak sizsiniz.
+
+262
+01:09:33,720 --> 01:09:49,979
+Belirli bir zoom seviyesinin üstünü, altını müsaade etmiyorsanız, kullanıcıda bunu görme şansı yok ya da haritayı doğrudan belirli bir konuma sadece görmesi için açtıysanız, yine çok fazla bir şey yapamayacaktır.
+
+263
+01:09:49,979 --> 01:09:56,500
+Bu gesture'ları kullanıcıya eklemek ya da çıkarmak tamamen sizin kontrolünüzün de olduğunu tekrarlayabiliriz.
+
+264
+01:09:56,500 --> 01:09:57,520
+Tekrar hatırlatmış olalım.
+
+265
+01:09:58,039 --> 01:10:00,739
+Tabi burada bunu iki türlü yapabiliyorsunuz.
+
+266
+01:10:00,800 --> 01:10:07,420
+Bir tanesi de eczema retribütler ile bunu set edebiliyorsunuz ki map type'ı bile bu şekilde yapabiliyorsunuz.
+
+267
+01:10:07,420 --> 01:10:14,347
+İşte target latitude, target longitude, zoom seviyesi vesaire tilt açısı keza...
+
+268
+01:10:14,612 --> 01:10:32,612
+Zoom kontrolünün olup olmadığı, bunların hepsi ilgili settingler altında enable ya da disabled edilerek kullanıcıya sunulabiliyor. Bir de Light Mode var. Light Mode'da da daha çok haritanın bir bitmap resim olarak sunuldu ve...
+
+269
+01:10:33,247 --> 01:10:48,247
+API'nin birçok özelliğinin disable edildiği haliyle kullanılabiliyor. Bunu da mümkün hale getirebilirsiniz. Bu da size önemli bir kaynak tüketimi anlamında katkı sağlayacaktır.
+
+270
+01:10:48,247 --> 01:10:52,247
+Burada bir map fragmentını görüyorsunuz. Bu fragment içerisinde...
+
+271
+01:10:52,787 --> 01:10:59,787
+Zoom seviyesinden tutun, açıların ne olacağına kadar hepsini layout içerisinde set edebiliyorsunuz.
+
+272
+01:11:00,967 --> 01:11:05,507
+Bunu biraz sonra göreceğiniz kod parçalarıyla dinamik olarak da yapabiliyorsunuz.
+
+273
+01:11:05,507 --> 01:11:16,319
+Ve bu biraz önce konuştuğumuz senaryodaki gibi hiç değişmeyecekse Fragment'a koymakta hiçbir sakınca yok ama kullanıcının...
+
+274
+01:11:16,319 --> 01:11:34,359
+Bunun üzerinde belirli değişiklikler yapması ya da seçimlere bağlı olarak harita üzerinde kameranın bölgesinin değişmesi ya da zoom'unun değişmesi ya da açısının değişmesi söz konusuysa o zaman daha çok Java ya da Kotlin üzerinden bunu yapıyoruz.
+
+275
+01:11:39,152 --> 01:11:55,152
+seçeneklerinin nasıl değiştirilebileceğini görüyorsunuz. Google Map Options isimli bir aslında objemiz var ve bunun üzerinden map tipini işte burada bir...
+
+276
+01:11:55,796 --> 01:12:19,496
+Aslında kompas olacak mı, olmayacak mı pusula ya da herhangi bir dönüş yeteneğine sahip olacak mısınız? Çünkü haritayı döndürmek de bir aksiyon olduğu için. Bunları burada disable etmiş, false özelliği vererek. Bu şekilde options üzerinden, Google Map Options üzerinden set edebiliyorsunuz.
+
+277
+01:12:23,796 --> 01:12:29,656
+oluşturmak için New Instance metoduna, Constructor'ına Google Map Options'ı gönderebilirsiniz.
+
+278
+01:12:30,015 --> 01:12:37,615
+Map View kullanıyorsanız da, Context'i ve Google Map Options'ı Constructor'a pas ederek her ikisini de kullanabiliyorsunuz.
+
+279
+01:12:37,976 --> 01:12:40,396
+Map View ile Map Fragment arasındaki fark nedir?
+
+280
+01:12:40,935 --> 01:12:45,656
+Bunu biraz önce böyle konuştuk konuştuk ama, herindeki farkı sorayım.
+
+281
+01:12:55,956 --> 01:12:58,015
+Mutlaka kullanan olmuştur diye tahmin ediyorum.
+
+282
+01:13:02,036 --> 01:13:17,036
+Peki, bir tanesi aktivite ile ilişkilendiriliyor, MapView. MapFragment ise aktivitenin altındaki fragmentlarla ilişkilendiriliyor. Yani aktivitenin aslında teknik olarak...
+
+283
+01:13:17,072 --> 01:13:37,752
+Bağımsız olabilir. Aktivitenizin içerisindeki fragment sayısına bağlı olarak. İkisi de kullanılabiliyor. İhtiyacınızı hangisi karşılayacaksa ona göre tercih etmek gerekiyor. Genelde fragmentı tercih ediyorlar.
+
+284
+01:13:44,800 --> 01:14:11,680
+OnMapReady metodu üzerinden ekleniyor ve tanımlanıyor. Bu markerlar aslında sizin gördüğünüz o POI'lar, Point of Interest'ler. Gerek bir okulun konumu olsun, gerek bir kişinin konumu olsun. Bu markerlar üzerinden aslında harita üzerinde ilişkileri kuruyoruz.
+
+285
+01:14:40,095 --> 01:15:02,255
+Oradan bakarak yapabilirsiniz. Bugün çoğunu burada konuşacağız ama daha çok biz kod parçaları halinde konuşuyoruz. Siz tüm kodu indirdiğinizde bir bütünlük olarak görmenizde ayrı bir katkı sağlayacaktır. Burada üç farklı lokasyonun adres bilgileri konumsal olarak oluşturulmuş.
+
+286
+01:15:02,688 --> 01:15:11,688
+Ve bir tane MapFragment üzerinden de bu bilgiler aslında harita üzerine yerleştirilecekler.
+
+287
+01:15:12,208 --> 01:15:18,268
+İlk iki tane Interface implement ediliyor. Bir tanesi OnMarketClickListener, bir tanesi OnMapReadyCallback.
+
+288
+01:15:20,212 --> 01:15:27,752
+Bir tanesi haritanın oluştuğu sırada gerçekleşirken, diğeri markerlara klik edilmesi noktasında gerçekleşiyor.
+
+289
+01:15:27,832 --> 01:15:33,811
+OnMapReady'ye baktığınız zaman, OnMapReady'de biraz önceki küçük kod parçasında olduğu gibi,
+
+290
+01:15:34,292 --> 01:15:41,672
+buraya markerları ekliyorsunuz ve pozisyonlarının ne olduğu belisini değişken üzerinden pas ediyorsunuz.
+
+291
+01:15:41,672 --> 01:15:46,292
+Ve ilgili şehirlerin isimlerini ekranda gösterebiliyorsunuz.
+
+292
+01:15:46,332 --> 01:15:48,212
+Aynısını, siz kendi uygulamanın...
+
+293
+01:15:48,212 --> 01:16:05,231
+O kişinin ismi neyse, markerın üzerine gittiğinizde ev arkadaşı arayan kişinin ismini ya da rumuzunu gösterebilirsiniz. Belki birkaç tane ek özelliğini de gösterebilirsiniz. Bu da mümkün olabilir.
+
+294
+01:16:13,235 --> 01:16:20,095
+Bu ev aramayla ilgili önemli bir özellik varsa yine orada konumlandırabilirsiniz özel olmayan bir bilgiye.
+
+295
+01:16:20,095 --> 01:16:38,095
+Burada üç tane farklı marker ekleniyor ve bir set on markerlikli sınırda set edilerek bu markerların üzerine kullanması noktasında neler yapılacağı.
+
+296
+01:16:39,699 --> 01:17:01,819
+kodlanıyor. Burada da onLark'ı klik metodu var. Burada klik count üzerinden kaç defa kliklendiği bilgisi sayılıyor buradaki kod parçasında ve bu bir tost mesajı olarak her klik sonrasında kaçıncı kez kliklendiği gösteriliyor.
+
+297
+01:17:03,988 --> 01:17:19,728
+Burada çok çağ değişik şey yapabilirsiniz ama genel konsept onMarkerClick metodu ve onMarkerClicklis'in üzerinden bu interakşının takip edilmesi olarak söylenebilir.
+
+298
+01:17:21,208 --> 01:17:28,788
+Markerların bir de draggable olanları var. Yani taşınabilir olanları, sürükle bırak mantığıyla.
+
+299
+01:17:31,220 --> 01:17:43,659
+Bu ihtiyaca bağlı olarak kullanılabiliyor. Bir yeri işaretleyecekseniz bu markerı elle tıkladığınız noktaya eklemesini ve sonra bunu sürükle bırak yapmasını sağlayabiliyorsunuz.
+
+300
+01:17:43,659 --> 01:17:54,280
+Ama tabii bunu ne kadar uygulamanızı isterseniz bu tartışılır. Point of Interestler normalde sürüklenemeyen.
+
+301
+01:17:54,931 --> 01:17:58,931
+noktalar olması gerekiyor ki bilgi karmaşıklığına sebebiyet vermesin.
+
+302
+01:18:00,771 --> 01:18:17,631
+Genellikle draggable özelliği false olarak karşınıza çıkar standart bilgiler için ama onun dışında sizin bir noktaya not düşmek istiyorsanız o zaman tabii ki onun draggable olmasına fayda var.
+
+303
+01:18:17,631 --> 01:18:21,631
+Yani işte gezdiğiniz yerleri TripAdvisor uygulamasında...
+
+304
+01:18:22,323 --> 01:18:37,323
+Olduğunuzu düşünün. Oraya bir not düşeceksiniz. Oraya bir tane markerı drag ediyorsunuz. O marker daha sonra sizin kendi özel...
+
+305
+01:18:39,475 --> 01:18:53,315
+alanınızda saklanıyor ve gezdiğiniz yerlere böylece eskiye dönüp bakarak da hangi noktaları işaretlediniz ya da bir daha o şehre giderseniz nerelere gitmek istediğinizi böylece takip edebiliyorsunuz. Bu da güzel bir özellik.
+
+306
+01:18:56,315 --> 01:19:01,895
+Şimdi markerların doğal olarak kastımaz edilmesi de beklenen bir özellik.
+
+307
+01:19:06,547 --> 01:19:14,847
+Tipini değiştirerek, icon'ın rengini değiştirerek, default bir marker kullanarak hepsini yapabiliyorsunuz. Bunlar çok güzel özellikler.
+
+308
+01:19:14,927 --> 01:19:21,227
+İşte ilk top parçasında rengi değiştirmiş ama default marker kullanmış.
+
+309
+01:19:21,227 --> 01:19:30,147
+İşte bir sonraki marker'a baktığımızda burada marker ile ilgili alfa özelliğini set etmiş.
+
+310
+01:19:30,560 --> 01:19:42,240
+Bir sonraki kod parçası da baktığımızda yeni bir ikon kullanmış, default marka kullanmamış bir tane drawable'dan seçtiği bir...
+
+311
+01:19:42,239 --> 01:20:01,319
+İkonu kullanmış. O yüzden ikon değiştirme şansınız da var. Markerlarla ilgili çok çeşitli ayarlar yapabiliyorsunuz. Üzerine gittiğiniz zaman bir bilgi çıkmasını sağlayabiliyorsunuz. Tıklandığında bir bilgi çıkmasını sağlayabiliyorsunuz gibi. Markerları istediğiniz gibi customize edebiliyorsunuz.
+
+312
+01:20:07,028 --> 01:20:22,087
+Customize edilmesine ek olarak, biraz önce gördüğünüz drag özelliğine ve click özelliğine ek olarak, çıkan window üzerinde de click özelliklerini takip edebiliyorsunuz.
+
+313
+01:20:22,247 --> 01:20:34,388
+Bu üç tane temel kullanıcı aksiyonunu izlemeniz sizin harita üzerinde çok daha fazla etkin.
+
+314
+01:20:34,868 --> 01:20:44,688
+Kullanım yapmanızı sağlıyor. Çünkü bu markerlar genelde küçük noktalar ve orada çok fazla yazı gözükmesini istemiyorsunuz default'ta.
+
+315
+01:20:44,688 --> 01:20:53,007
+Çünkü zaten ekranınız küçük ve her markerın default'ta bir bilgi verdiğini düşünürseniz bu çok akıllıca olmayacaktır.
+
+316
+01:20:53,068 --> 01:20:58,448
+O yüzden ya üzerine gittiğinizde ya tıkladığınızda bir bilgi çıkması çok daha efektif olanı.
+
+317
+01:20:59,308 --> 01:21:01,648
+Bu yüzden de genellikle bu.
+
+318
+01:21:02,064 --> 01:21:04,963
+Marka eventler üzerinden takip ediyorlar.
+
+319
+01:21:12,627 --> 01:21:20,647
+Şimdi burada Custom Info windowlarla ilgili çeşitli örnekler görüyorsunuz.
+
+320
+01:21:20,647 --> 01:21:26,688
+3 tane pencere var. Bir tanesinde markera kliklenmeyi zaman açılan bir pencere.
+
+321
+01:21:29,167 --> 01:21:35,547
+Default bir bilgi verilmiş. Diğerine resim konulmuş. Diğerine de çerçeve çizilmiş. 3 tane farklı.
+
+322
+01:21:36,064 --> 01:21:50,424
+Opsiyon var. Burada bu infoların gösterilip gösterilmeyeceğini, saklanıp saklanmayacağını, info windowlarının, show info window ya da hide info window diyerek sağlayabiliyorsunuz.
+
+323
+01:21:51,244 --> 01:22:01,244
+Bir tarafta snippet dediğimiz, üzerine gidildiğinde çıkan default bir bilgilendirme penceresi.
+
+324
+01:22:01,684 --> 01:22:13,104
+Ya da bilgi kutucu varken sol tarafta, sağ tarafta doğrudan bir pencerenin orada konumlandırıldığını görüyorsunuz.
+
+325
+01:22:13,644 --> 01:22:17,764
+Bunlar hep sizin uygulamanıza özel yapabileceğiniz tasarımlar.
+
+326
+01:22:18,724 --> 01:22:24,524
+Dediğim gibi kendi dönem projenizde de sizin için uygun olanı tercih edebilirsiniz.
+
+327
+01:22:27,796 --> 01:22:34,956
+Şimdi önemli noktalardan bir tanesi de haritalar üzerinde çizim yapabiliyor olmanız.
+
+328
+01:22:34,956 --> 01:22:45,736
+Ve bunu Google Maps API üzerinden ilgili shape'leri üreterek harita üzerini konumlandırabiliyorsunuz.
+
+329
+01:22:46,636 --> 01:22:49,195
+Şöyle yapayım, şurası biraz dışarıda kalmış.
+
+330
+01:22:52,851 --> 01:23:00,671
+Polyline, Polygon ve Circle olmak üzere şekiller oluşturabiliyorsunuz.
+
+331
+01:23:00,731 --> 01:23:08,731
+Polyline'ler birbirine bağlı olan doğru parçalarıyla oluşturabildiğiniz şekiller.
+
+332
+01:23:09,451 --> 01:23:14,791
+Polygonlar bu şekillerin kapalı versiyonu olarak karşınıza çıkıyor.
+
+333
+01:23:14,871 --> 01:23:17,691
+Bu bir kare olabilir, bir dörtgen, üçgen olabilir.
+
+334
+01:23:18,239 --> 01:23:20,399
+Bir de Circle'ımız var.
+
+335
+01:23:21,579 --> 01:23:28,239
+Polyline Options üzerinden yaratabiliyorsunuz ilgili şekli.
+
+336
+01:23:29,899 --> 01:23:36,000
+Ya da ne diyelim uzun bir eğri parçasını.
+
+337
+01:23:37,199 --> 01:23:40,119
+Bu da çok basit bir şekilde yapılabilen bir özellik.
+
+338
+01:23:40,119 --> 01:23:42,119
+Burada...
+
+339
+01:23:42,579 --> 01:24:01,420
+Oli'yle aynı customization ile ilgili işte aslında haritaların üzerine birçok trafik uygulamasında gördüğünüz renkli ve belirli bir tipteki doğru parçaları oturtabiliyorsunuz.
+
+340
+01:24:02,020 --> 01:24:06,719
+Burada görüyorsunuz işte kırmızı olan, trafiğin yavaş aktığı yer.
+
+341
+01:24:07,167 --> 01:24:21,627
+Vesaire bu bilgileri paylaşabiliyorsunuz ya da bu polyline'lerin üzerine yine gidildiğinde bir bilgi çıkmasını mümkün hale getirebiliyorsunuz. Bunlar önemli özellikler.
+
+342
+01:24:34,195 --> 01:24:40,036
+Kalisli bir parçamı bunlara karar verip ekleme yapabiliyorsunuz. Bunların renklerini değiştirebiliyorsunuz.
+
+343
+01:24:40,536 --> 01:24:50,195
+Renk geçiş kendini sağlayarak işte Gradient bu yıllar üzerinden bir renkten diğer renge geçişi gösterebiliyorsunuz.
+
+344
+01:24:51,655 --> 01:24:59,855
+Böylece harita üzerinde o gördüğünüz aslında cafcaflı şekillerin nasıl oluştuğunu da burada.
+
+345
+01:25:00,336 --> 01:25:02,195
+Üzerinden geçmiş oluyoruz.
+
+346
+01:25:03,115 --> 01:25:06,576
+Burada da bir tane Circle üretebiliyorsunuz.
+
+347
+01:25:06,775 --> 01:25:14,916
+Siz belki kendi yapacağınız uygulamada bu Circle üzerinden ilerleyebilirsiniz.
+
+348
+01:25:15,655 --> 01:25:18,076
+Circle Options merkezi neresi olacak?
+
+349
+01:25:18,916 --> 01:25:20,476
+Çapı ne olacak?
+
+350
+01:25:22,855 --> 01:25:27,336
+Kullandığınız çemberin çizgisinin...
+
+351
+01:25:27,775 --> 01:25:38,636
+Kalınlığı ne olacak, rengi ne olacak vs. vs. içini dolduracak mısınız? Clickable olacak mı? Bütün hepsini set edebiliyorsunuz.
+
+352
+01:25:40,956 --> 01:25:52,956
+Buna ek olarak tıklanması durumunda set on circle click list sınırda neler olacak onu da belirleyebiliyorsunuz. Bunlar yine önemli kullanılan şekillerden bir tane serata üzerinde.
+
+353
+01:25:56,564 --> 01:26:06,304
+Burada da bir aslında Avustralya'da bir uçağın uçuşunu gösteren bir line olarak da düşünebilirsiniz.
+
+354
+01:26:07,224 --> 01:26:22,164
+Buradaki önemli noktadan bir tanesi bu çizgilerin kalınlığını vesairesi kendinize göre belirleyip rengini vesaire belirleyerek işte bazen Flytradar uygulamasında da görürsünüz.
+
+355
+01:26:22,804 --> 01:26:38,104
+Uçuşların rotalarını ya da uçakta seyahat ettiğinizde size çizilen bir rota vardır. Bunlar hep aynı mantıkla kendi uygulamanızda harita üzerinde rahatlıkla yapabileceğiniz özellikler.
+
+356
+01:26:38,104 --> 01:26:45,104
+O yüzden bunu kendinizin çizebileceği gibi...
+
+357
+01:26:46,036 --> 01:27:13,036
+Google Maps üzerinden de, SDK üzerinden de özellikle yollar noktasında bilgi alınırsınız. Bu önemli. Çünkü bir noktadan bir noktaya gitmek için rotalama yapmanız gerekiyor. Sizde o noktaların bilgisi olmayabilir. Ama Google Maps üzerinden A noktasından B noktasına gidilecek yolu rahatlıkla çizdirebiliyorsunuz. Haritanızın üzerinde gösterebiliyorsunuz.
+
+358
+01:27:13,408 --> 01:27:21,427
+Bu da ek bir bilgi olarak söyleyebileceğim eklenti.
+
+359
+01:27:21,427 --> 01:27:37,427
+Şimdi harita üzerinde şekil çizebildiğiniz, çizgi çizebildiğiniz, harita üzerine farklı hitle markerlar bırakabildiğiniz ve bunları...
+
+360
+01:27:39,283 --> 01:27:47,603
+Event Listener'la ekleyebildiniz. Çok rahatlıkla harita üzerinde bunları gerçekleştirebilirsiniz. Kodlar üzerinden.
+
+361
+01:27:48,123 --> 01:27:56,103
+Gelelim harita açıldığında kameramızın nereyi, hangi açıyla nasıl göstereceğini.
+
+362
+01:27:56,103 --> 01:28:03,884
+Şimdi temel bir düzleme oturttuğunuzda kamerayı, şunu göreceksiniz.
+
+363
+01:28:05,332 --> 01:28:18,952
+Burada bir tilt açısı var. İlk başlangıçta bu tilt açısı, yani dikey ile yapılan bu açı, sıfır olarak sizin tarafınızdan genelde haritalarda görülür.
+
+364
+01:28:18,952 --> 01:28:31,711
+Birçok uygulamaya baktığınızda tilti sıfırla başlatır ve bu demek ki en tepeden yukarıdan aşağıya dik bir şekilde baktığınız anlamına gelir.
+
+365
+01:28:32,180 --> 01:28:53,460
+Bazı uygulamalardaysa siz işte navigasyon uygulamasında A noktasına B noktasına git dediğinizde artık yolun hizasında gitmeniz şeklinde bir bakış açısıyla daha rahat takip edebilmeniz için birazcık bir yatay açı verilir.
+
+366
+01:28:53,460 --> 01:28:55,620
+O da şurada gördüğünüz gibi.
+
+367
+01:28:56,095 --> 01:29:11,595
+Weaving Angle dediğimiz açı. Burada defaultta siz baktığınızda, diyelim ki 0 derece ile bakıyordunuz. Buradaki açı 45 derece seviyesine.
+
+368
+01:29:12,819 --> 01:29:25,319
+İndirgenir ve biraz daha size yakın olan kısımlar daha büyük olacak şekilde ileri doğru bir perspektifle gösterilir.
+
+369
+01:29:26,939 --> 01:29:32,879
+Bu da aslında özellikle navigasyon uygulamalarının çok tercih ettiği bir gösterim şeklidir.
+
+370
+01:29:38,131 --> 01:30:00,000
+Kendinize kâteriz olarak aldığınız bir kuzey kutbu noktasında kuzey yönü vardır. Bu kuzey yönü Bearing Angle olarak geçer ve ilk etapta gene haritaların default'ta aşağıdan yukarıya doğru dünyayı bir dikdörtgen harita olarak düşüyoruz.
+
+371
+01:30:00,000 --> 01:30:06,239
+Yükarı doğru bir gösterimle konumlandırdığını görürsünüz.
+
+372
+01:30:06,960 --> 01:30:19,540
+Ama bu Bearing Angle zaman zaman sıfır, ağırlık olarak sıfır olsa da zaman zaman sağdan soldan sizin özellikle gesture hareketlerinize döndürülerek değişkenlik gösterebilir.
+
+373
+01:30:23,540 --> 01:30:24,440
+Zoom.
+
+374
+01:30:25,203 --> 01:30:29,423
+Bu biraz önceki konuştuğumuz konulardan biraz daha kritik aslında.
+
+375
+01:30:29,724 --> 01:30:43,743
+Daha önemli çünkü Zoom seviyesi ilk etapta sizin ne kadarlık bilgiyi telefonunuza indireceğinizi ve aynı zamanda ne detayda kullanıcıya bilgi göstereceğinizi belirler.
+
+376
+01:30:53,332 --> 01:30:57,012
+Ekranınızda görecek şekilde bir konumlandırma yapılır.
+
+377
+01:30:58,672 --> 01:31:07,952
+İşte B seviyesine çıktığınızda kıta boyutunda bir alan gösterilecek şekilde haritanız ayarlanır.
+
+378
+01:31:08,032 --> 01:31:15,112
+Zoom seviyesi, 10 seviyesi City, 15 seviyesi Street ve 20 seviyesi Bina noktasında ayarlanır.
+
+379
+01:31:15,439 --> 01:31:24,439
+Burada aşağıdaki kod parçasına baktığınızda Google Map tarafında Set Min Zoom Preferences ve Set Max Zoom Preferences diyerek aslında...
+
+380
+01:31:26,612 --> 01:31:41,912
+Sınırları belirlemiş oluyorsunuz. Bunu yapma hakkınız var. Kullanıcı bundan memnuniyet duymayabilir uygulamanızda daha yukarı ya da daha aşağı inmek istiyorsa ama buna karar verecek olan sizsiniz. Kullanıcının ihtiyaçlarını da göz önünde bulundurulmalısınız.
+
+381
+01:31:41,912 --> 01:31:54,371
+Tabi bu ayarlar açısından önemli ama bizim operasyonunu yürüttüğümüz yani bu işi yapmasını sağladığımız sınıfsa kamera update.
+
+382
+01:31:54,612 --> 01:32:05,492
+Onun üzerinden Zoom in ve Zoom out metotlarını çözdeştirerek kamera yöntüsünün burada konumlanmasını sağlıyorsunuz. Hangi seviyede konumlanacağına karar veriyorsunuz.
+
+383
+01:32:09,452 --> 01:32:15,131
+Bu kamerayla, animate kamera arasında da ufak bir farklılık var.
+
+384
+01:32:15,539 --> 01:32:40,659
+Bu kamera dediğimizde geçici olarak bir noktadan kamerayı alıp ani bir şekilde başka bir noktaya götürüyorsunuz. Yani herhangi bir smooth bir geçiş olmuyor. Tam tersi animation yapmak istediğimiz, animate kamera dediğimizde ani bir geçiş yerine o animasyonun, o geçişin.
+
+385
+01:32:41,460 --> 01:32:48,239
+Belirli bir süreyle gerçekleşmesini mümkün kalıyorsunuz. Bu daha smooth ve daha şık bir görüntü sağlıyor.
+
+386
+01:32:49,360 --> 01:33:04,180
+Tabii bunun yine bir maliyeti var görsel bir rendering yapıldığı için ama temel farklılığı birinde direkt ani bir geçiş, diğerinde ise biraz daha smooth bir geçiş söz konusu olabiliyor.
+
+387
+01:33:12,372 --> 01:33:37,372
+Burada isterseniz kendi konumunuzu sürekli olarak ekranda görmesi gereken bir uygulama geliştiriyorsanız, bir tane işte My Location metodu üzerinden, SetMyLocation metodu üzerinden kendi konumunuzu görebileceğiniz ve tıkladığınızda yine...
+
+388
+01:33:37,684 --> 01:33:44,684
+Konumu güncelleyecek bir tane default ikonu haritanızın üzerine konumlandırabiliyorsunuz.
+
+389
+01:33:45,904 --> 01:33:56,644
+İşte tıklandığında ekstra bir şey yapılmasını istiyorsanız da, Toast Mesajı ile ya da başka bir şekilde ekranda onunla ilgili işlem yaptığına şansınız oluyor.
+
+390
+01:34:00,384 --> 01:34:07,564
+Her tıkladığınızda sizin konunuzun güncellenmesini ve harita üzerinde gösterilmesini sağlıyor.
+
+391
+01:34:08,003 --> 01:34:21,344
+Burada gördüğünüz haritadaki mavi noktanın etrafındaki daire, size daha önce de aktarmıştım, ne kadar büyük olursa oradaki kesinlik seviyesi o oranda düşük.
+
+392
+01:34:21,747 --> 01:34:24,587
+O dairenin herhangi bir yerinde olabilirsiniz anlamına geliyor.
+
+393
+01:34:24,687 --> 01:34:29,268
+Daire ne kadar küçükse tahminin o derece doğru olduğunu gösteriyor.
+
+394
+01:34:30,007 --> 01:34:32,567
+Bunu da bir kez daha hatırlatmış olalım.
+
+395
+01:34:33,347 --> 01:34:34,627
+Buraya kadar sorusu olan var mı?
+
+396
+01:34:41,203 --> 01:34:46,103
+Peki ben bir soru sorayım. Şu ana kadar harita üzerinde işlem yapan var mı dönem projesinde?
+
+397
+01:34:49,144 --> 01:34:49,943
+Daha en başta.
+
+398
+01:34:51,463 --> 01:34:53,963
+Peki. Başka?
+
+399
+01:35:00,500 --> 01:35:00,960
+Tamam.
+
+400
+01:35:06,676 --> 01:35:18,796
+Burada bu bahsettiğimiz Point of Interest'lerle ilgili onların üzerine tıklandığında bilgilerin alınmasıyla ilgili metodu görüyorsunuz.
+
+401
+01:35:18,796 --> 01:35:33,836
+Google Map yine sınıfı üzerinden onPoE'yi ClickListener'ı implement ediyorsunuz ve o PoE'lere tıklandığı zaman aksiyon alınmasını istiyorsanız PoE objesinin içerisindeki bilgileri kullanarak
+
+402
+01:35:34,159 --> 01:35:50,159
+karşı tarafı bilgilendirebiliyorsunuz. Bu size Google Map objesi içerisinde gelen bütün bu ek bilgilerin aynı zamanda sizin uygulamanızın içerisinde de kullanılmasını sağlıyor. Böylece ekstradan...
+
+403
+01:35:51,444 --> 01:35:59,524
+Dünyadaki ya da bulunduğumuz bölgedeki o ilerleyinerek ekstra bir çalışma yapmanıza gerek kalmıyor.
+
+404
+01:36:01,123 --> 01:36:06,984
+O bilgileri herhangi bir Google Maps vurgulamasına geçmeden de kullanabiliyorsunuz.
+
+405
+01:36:08,804 --> 01:36:15,004
+Burada LightMode ile ilgili bilgiler var. Neleri kullanabiliyorsunuz, neleri kullanılmıyorsunuz maknasında.
+
+406
+01:36:15,572 --> 01:36:21,872
+Özellikle Map Style ve Marker'larla ilgili çeşitli kısıtlar var.
+
+407
+01:36:22,412 --> 01:36:28,572
+Onun dışında Default özelliklerini kullanabildiğinizi burada görebiliyorsunuz.
+
+408
+01:36:31,932 --> 01:36:39,432
+Yine bu daha çok aksiyonlarla ilgili Position, Zoom, Animation, Map Event'ler.
+
+409
+01:36:40,020 --> 01:36:59,340
+Bunlarla ilgili kullanım kısıtlarınız var. Ama öte yandan esas kullanamadığınız noktalar, indoor map'lar, traffic layer, ground overlay, yani bir haritanın üzerine başka bir resim giydirme yeteneği.
+
+410
+01:36:59,796 --> 01:37:22,716
+Vera Ground Overlay. Buna da bakabilirsiniz. Bu da aslında önemli bir özellik. Bir harita üzerine bir başka bitmap oturtabiliyorsunuz. Yine Tile Overlay, Gesture'lar ve Street View, Light Mode'un üzerinde yok. Bu aslında niye Light Mode'dan birini de anlatıyor.
+
+411
+01:37:23,220 --> 01:37:35,380
+Bu yükü onun üzerine alıyorsunuz ve birçok temel özellikle kullanıcının ihtiyaç duymayacağı ekstra özellikleri kütüphanenizden çıkartmış oluyorsunuz. Bu da önemli bir nokta.
+
+412
+01:37:39,060 --> 01:37:44,120
+Koordinat sistemleri Latitude ve Longitude kullanıyoruz.
+
+413
+01:37:44,120 --> 01:38:01,120
+Evet, ve burada Google konumlandırma harita üzerinde referans noktası seçerken özellikle World Coordinate Sistem'de size...
+
+414
+01:38:02,131 --> 01:38:19,751
+Karşınıza gelen matrisin sol üst köşesinden sağ tarafa doğru bir x ekseni ve aşağı doğru bir y ekseni çekmiş şekilde eksi 180 ile 180 ve eksi 85 ile 85 arasında bir konumlandırma yapmamızı sağlıyor.
+
+415
+01:38:29,235 --> 01:38:41,216
+Bir boylam üzerinde dikeyde enlemlerde eksi 90 artı 90, 180 tane hareket ediyoruz normalde.
+
+416
+01:38:41,216 --> 01:38:54,255
+Ama bu kutuplar bölgesindeki hassasiyet nedeniyle açtığınızda oluşan haritayı 3 boyuttan 2 boyuta indirgediğinizde eksi 85 ile 85 aralığını size sunuyor.
+
+417
+01:38:56,659 --> 01:39:13,539
+Burada Word Koordinat üzerinde ilerlerken, işte aldığınız Longtitude ve Latitude, ellen boylan bilgilerini kendi buradaki X ve Y ekseninde dönüşümü yaptırarak harita üzerinde size gösteriyor.
+
+418
+01:39:14,319 --> 01:39:18,539
+Piksel koordinatı geçtiğiniz zaman aslında belirli bir...
+
+419
+01:39:18,931 --> 01:39:26,931
+Zoom seviyesindeki koordinat bilgisini sizin için tutuyorum. Normalde bir...
+
+420
+01:39:27,891 --> 01:39:37,051
+Seviye belirlediğinizde, yani Zoom seviyesini sıfır olarak belirlediğinizde, Zoom Level'ı 2 üzeri 0'dan 1 değerini elde ediyorsunuz.
+
+421
+01:39:37,051 --> 01:39:42,372
+Hatırlarsanız 1 değeri için demiştik ki tüm dünya gösteriyor, tüm dünya haritası var demiştik.
+
+422
+01:39:42,891 --> 01:39:50,051
+Bu haritayı da 256'ye 256 olacak şekilde telefonunuzun...
+
+423
+01:39:50,644 --> 01:39:52,604
+ekranına konumlandırıyor.
+
+424
+01:39:53,084 --> 01:40:02,944
+Tabii ki buradaki piksel seviyesi density piksel olarak geçiyor ve telefonunuzdaki piksel yoğunluğuna bağlı olarak bu 256-256'lık bölme işlemini yapıyor.
+
+425
+01:40:02,944 --> 01:40:12,927
+Siz bir seviye yukarı çıktığınızda bu sefer 512-512'lik bir aslında...
+
+426
+01:40:12,927 --> 01:40:35,607
+TikTok Coordinate elde etmiş oluyorsunuz. Sonra bir seviye daha yukarı çıktığınızda, 1024'e 1024'lük, bu sayede Zoom yaptığınız leveldaki detay bilgilere erişiyorsunuz ve bu şekilde konumlandırmadaki detay bilgiler her Zoom levelda sizin tarafınıza ulaşmış oluyor.
+
+427
+01:40:36,372 --> 01:40:57,471
+Tile Coordinate açısından da dünya haritası çeşitli bölgelere ayrılıyor ve aslında Google Maps'in uygulamalara sağladığı bu detay harita bilgileri de bu tile'larla sizin tarafınıza aktarılıyor.
+
+428
+01:40:59,859 --> 01:41:04,739
+Sıfıra sıfır bölgesine bakıyorsanız, geri kalan taylar sizin tarafınıza gelmiyor.
+
+429
+01:41:05,519 --> 01:41:10,999
+Bu sayede boşu boşuna gereksiz bir bilginin de sizin tarafınıza indirilmesini engellemiş oluyorsunuz.
+
+430
+01:41:11,459 --> 01:41:17,839
+Google bu mantıkla Zoom yaptıkça o bölge içerisindeki detayı size getiriyor.
+
+431
+01:41:17,839 --> 01:41:25,039
+Tüm dünyayı istemediyseniz, belirli bir konumdan başladıysanız, oranın sadece bilgilerini aktararak ilerliyor.
+
+432
+01:41:26,547 --> 01:41:41,067
+Burada bir bilgi vermek gerekirse mesela Amerika'da, Chicago'da, Illinois bölgesinde gösterdiği noktanın neresi olduğu bilgisini görüyorsunuz.
+
+433
+01:41:41,067 --> 01:41:48,867
+41.80 ve 87.65. Zoom level'ı 3. Yani aslında oldukça detaydan yoksun bir seviye.
+
+434
+01:41:49,264 --> 01:41:53,043
+World Coordinate olarak geçiyor burası.
+
+435
+01:41:53,203 --> 01:42:01,543
+Kendi biraz önce görmüş olduğunuz Y ekseninde ve X eksenindeki konumunu size...
+
+436
+01:42:01,555 --> 01:42:12,455
+yazıyor. Fixel koordinat dediğinizde buradaki satır ve sütün sayısına bağlı olarak hangi satırda, hangi sütünde olduğu bilgisi size aktarılmış oluyor.
+
+437
+01:42:12,455 --> 01:42:29,155
+3 seviyesine çıktığınızda 0 seviyesinde 256, 256 idi. 1 seviyesinde 512, 512. 2 seviyesinde 1024, 1024. 3 seviyesine çıktığınızda 2048'e 2048'lik bir.
+
+438
+01:42:29,536 --> 01:42:40,196
+Satır ve sütun sayısı düşündüğünüzde 525. satır 761. sütun olarak konumlandığını görüyorsunuz.
+
+439
+01:42:40,196 --> 01:42:52,047
+Taile koordinat olarak da 2'ye 2'lik bir taile koordinat'e sahip. Kaça böldüyse dünya haritasını size onun...
+
+440
+01:42:52,047 --> 01:43:07,587
+Koordinatini bilgi olarak getiriyor. Bu detaylı bilgileri de yarın ve bugün haritalar üzerinde kullanmanız gerekebilir. O yüzden bir farkındalık yaratmak adına sizlerle bu bilgileri paylaştım.
+
+441
+01:43:08,627 --> 01:43:13,967
+Evet, bugün benim bilgi olarak size aktaracaklarım bu kadar sorusu olan var mıdır?
+
+442
+01:43:16,907 --> 01:43:18,247
+Haritalarla ilgili olarak.
+
+443
+01:43:24,564 --> 01:43:36,024
+Peki, o zaman şimdi eğer yapabilirsek, başka bir bilgisayarda olduğum için deneyeceğim.
+
+444
+01:43:38,604 --> 01:43:41,623
+Android Studio üzerinden bir kod parçası paylaşacağım.
+
+445
+01:44:40,916 --> 01:45:05,735
+Evet, şimdi yüklüyor projeyi. Muhtemelen birazdan paylaşıyor olacağım. Bu proje geçen hafta yaptığımızın bir tık daha ileri versiyonu. Çok büyük bir değişiklik yok ama burada konum bilgisini sürekli olarak alan ve harita üzerinde sürekli o konum bilgisini güncelleyen bir örnek kod parçası bulacaksınız.
+
+446
+01:45:07,828 --> 01:45:23,347
+Aslında doğrudan belki kişinin konumunu sürekli takip etmek sizin projenizin içerisinde yer almıyor ama böyle bir uygulama yaptığınızda neler olduğunu da görmüş olacaksınız.
+
+447
+01:45:27,796 --> 01:45:29,456
+O yüzden biraz sizi bekleteceğim.
+
+448
+01:45:30,796 --> 01:45:34,596
+Bu sırada herhangi bir soru soran varsa ya da yorum yapmak isteyen varsa sorabilir.
+
+449
+01:47:11,220 --> 01:47:15,620
+Şimdi ekranımı paylaşacağım sizinle.
+
+450
+01:47:20,115 --> 01:47:23,315
+Birçok hata aldım farklı bir platformda gösterdiğim için.
+
+451
+01:47:24,675 --> 01:47:28,935
+Bağlantıyı koparıp tekrar diğer bilgisayardan da şu anda bağlanmak istemiyorum.
+
+452
+01:47:30,275 --> 01:47:32,115
+Sizin de vaktinizi alana kadar.
+
+453
+01:47:32,235 --> 01:47:33,895
+Nasıl olsa kod üzerinden ilerleyeceğiz.
+
+454
+01:47:33,895 --> 01:47:40,455
+Bu kodu ben diğer bilgisayarda çalıştırdığım için çalıştığını da biliyorum.
+
+455
+01:47:50,068 --> 01:47:52,348
+Bu arada şu konuyu konuşmadık, onu unuttum.
+
+456
+01:47:53,248 --> 01:48:07,948
+Bir adres translation yapmanız gerektiği zaman bir adres verip longitude ve latitude bilgisi almak istediğinizde ya da tam tersi longitude ve latitude bilgisi verip adres almak istediğinizde hangi yapıyı kullanıyorsunuz biliyor musunuz?
+
+457
+01:48:14,739 --> 01:48:15,899
+Yaşçıyabilirsiniz belki.
+
+458
+01:48:19,764 --> 01:48:21,483
+Hangi API üzerinden yapacaksınız?
+
+459
+01:48:28,532 --> 01:48:29,912
+Sorduğum soruyu anlayabilirsiniz mi?
+
+460
+01:48:32,231 --> 01:48:33,832
+Hocam soruyu tekrar eder misiniz?
+
+461
+01:48:35,431 --> 01:48:44,771
+Soru şuydu, bir konum bilgisi verdiğinizde adres bilgisi almak, adres bilgisi verdiğinizde konum bilgisi almak için hangi API'yi kullanacaksınız?
+
+462
+01:48:45,051 --> 01:48:47,511
+GeoLequation vardı galiba ama yanılmıyorsam.
+
+463
+01:48:47,872 --> 01:48:49,492
+GeoCoding API.
+
+464
+01:48:49,692 --> 01:48:50,011
+Coding.
+
+465
+01:48:50,532 --> 01:48:59,971
+Evet, GeoCoding'i kullanacaksınız. Bu her iki yönde de size bilgi sağlayabiliyor. O yüzden buna bakmanızı öneririm.
+
+466
+01:49:05,652 --> 01:49:10,771
+Farklı versiyonları var. Bu bahsettiğimiz API.
+
+467
+01:49:12,252 --> 01:49:14,271
+Hani isim olarak benzer API'ler de var.
+
+468
+01:49:14,771 --> 01:49:19,532
+O yüzden şu anda ben de şeyden emin olmak istedim, doğruyu mu söylediğine bir bakıyorum.
+
+469
+01:49:21,431 --> 01:49:24,591
+Geocoding API aslında ücretli olan versiyonmuş.
+
+470
+01:49:24,591 --> 01:49:26,752
+Şu anda ben de onu gördüm.
+
+471
+01:49:27,952 --> 01:49:31,311
+Geocoder. Yanlış söylemişim, onu düzelteyim.
+
+472
+01:49:31,832 --> 01:49:32,391
+Geocoder.
+
+473
+01:49:32,916 --> 01:49:49,376
+API. Bu size ihtiyaç duyduğunuz dönüşümü sağlayacak Android tarafından, Google üzerinden verilen hizmet. Bunun dışında özel API'ler de var biraz önce söylediğim gibi. Şimdi ekran paylaşımı yapayım.
+
+474
+01:50:03,188 --> 01:50:05,447
+Sanırım görebiliyorsunuz diye tahmin ediyorum.
+
+475
+01:50:08,827 --> 01:50:22,567
+Şimdi burada, şöyle baktığımızda, şu sınıfların mutlaka import edilmesi gerekiyor, önemli.
+
+476
+01:50:22,567 --> 01:50:24,907
+Bunu zaten default yapıyor ama.
+
+477
+01:50:25,264 --> 01:50:27,304
+Farkında olmanız açısından söylüyorum.
+
+478
+01:50:27,304 --> 01:50:33,363
+Yani zaten bunları otomatik olarak yapıyoruz ama bunları tek tek eksik oldukça import ediyoruz.
+
+479
+01:50:33,844 --> 01:50:40,043
+Bunlar zaten default'ta bizim birçoğu kullandığımız kütüphaneler.
+
+480
+01:50:40,743 --> 01:50:47,743
+Fakat Location Manager, GeoCoder gibi ekstra ihtiyaç duyduğumuz kütüphaneler var.
+
+481
+01:50:48,943 --> 01:50:50,083
+Şuraya gelelim.
+
+482
+01:50:52,435 --> 01:51:10,935
+Burada implement edilen OnMapReadyCallback, Google API Client ConnectionCallback, OnConnectionFailedListener ve LocationListener olmak üzere burada farklı interfazeler implement edilmiş durumda.
+
+483
+01:51:11,975 --> 01:51:15,695
+Yine bunlarla ilgili tanımlamaları yapıyorsunuz.
+
+484
+01:51:15,695 --> 01:51:17,655
+Marker, LocationRequest.
+
+485
+01:51:18,131 --> 01:51:33,652
+Google API Client gibi. Onlardan obje yaratıyorsunuz. Arkasında onCreate'de bir tane fragmentımız var. Şurada göstereyim hemen.
+
+486
+01:51:42,515 --> 01:51:45,796
+Resources in Altında, layout in Altında.
+
+487
+01:51:51,028 --> 01:51:55,248
+Geçen hafta tanımladığımız Fragment'in aynısı, hiç bir farkı yok.
+
+488
+01:51:58,468 --> 01:52:07,028
+Bu Fragment'la ilişkiyi kurmak adına FindFragmentById üzerinden tanımlama yapıyorsunuz.
+
+489
+01:52:08,368 --> 01:52:13,847
+Ve buradaki GetMapAsync üzerinden de ilgili bilgilerin transferini sağlıyorsunuz.
+
+490
+01:52:14,387 --> 01:52:17,427
+OnMapReddy, Google Map.
+
+491
+01:52:18,387 --> 01:52:24,607
+Objemiz geldi. Hangi sitdeki haritayı istediğinizi belirliyorsunuz.
+
+492
+01:52:25,507 --> 01:52:28,747
+Zoom Control Enable, Zoom Gesture Enable.
+
+493
+01:52:29,467 --> 01:52:35,648
+Birinde artı eksiyle hareket edebilirken diğerinde parmaklarla iki parmağınızla hareket edebiliyorsunuz.
+
+494
+01:52:35,688 --> 01:52:37,007
+İkisi de enable edilmiş durumda.
+
+495
+01:52:37,007 --> 01:52:38,859
+Ve aynı zamanda...
+
+496
+01:52:39,220 --> 01:52:46,579
+Usulada, burada enable edilmiş durumda. Bu ayarları yapıyorsunuz, UI Settings metodu üzerinden.
+
+497
+01:52:47,579 --> 01:52:52,220
+Sonra gerekli izin kontrolleri, gerekli izinler alınmış mı, alınmamış mı?
+
+498
+01:52:56,243 --> 01:53:12,743
+Arkasından Google API Client'ınızı oluşturuyorsunuz. SetMyLocationEnabled'ı through diyerek o size bahsetmiş olduğum yukarıdaki GPS ikonunu enable ediyorsunuz ve tıkladığınızda ona otomatikman size konumunuzu gösteriyor.
+
+499
+01:53:18,292 --> 01:53:27,252
+Burada Google API Client üzerinden connection callbackleri ve connection failed listenerları çağırıyorsunuz.
+
+500
+01:53:28,212 --> 01:53:31,812
+Ve API Client üzerinden connection'ı kuruyorsunuz.
+
+501
+01:53:32,252 --> 01:53:35,932
+Connection sağlandığında location request objenizi oluşturuyorsunuz.
+
+502
+01:53:36,012 --> 01:53:40,512
+Geçen hafta görmüş olduğunuz set interval, set fastest interval bunları tanımıyorsunuz.
+
+503
+01:53:41,043 --> 01:53:47,724
+Ne düzeyde bir doğrulukla bilgi istediğinizi set priority ile belirliyorsunuz.
+
+504
+01:53:48,224 --> 01:53:58,304
+Sonra yine gerekli izinlerin kontrolü yapıldıktan sonra burada Request Location Updates'i çağırıyorsunuz.
+
+505
+01:53:58,704 --> 01:54:05,244
+Ve buraya API client'ınızı ve location request bilgilerini saklanan objenizi has ediyorsunuz.
+
+506
+01:54:05,652 --> 01:54:29,152
+Lokasyon değiştiğinde ki bunu onLocationChanged ile takip ediyorsunuz. İşte burada haritayla ilgili işleriniz başlıyor. Öncelikle naldan farklı bir bilgi size döndüyse default markanızı remove ediyorsunuz. Yeniden konumlandıracaksınız çünkü.
+
+507
+01:54:29,876 --> 01:54:55,836
+Latitude, Longitude bilgisi alıyorsunuz location objesinden. Marker options oluşturabilmeniz için bir tane obje yaratıyorsunuz. Position bilgisini pastlıyorsunuz. Daha önce bunu tek bir obje üzerinden arka arkaya nokta metotları çağırarak yapıyorduk. Burada tek tek yapıyoruz. Location Manager üzerinden location servisiyle bağlantı kuruyorsunuz burada.
+
+508
+01:55:04,564 --> 01:55:06,784
+Yine gerekli izin kontrolleri yapılıyor.
+
+509
+01:55:09,604 --> 01:55:16,064
+Burada en son bilinen lokasyon bilgisi alınıyor.
+
+510
+01:55:16,984 --> 01:55:29,084
+Ve burada bununla ilgili provider liste, bunu sağlayan tüm provider'ların listesi alındıktan sonra longitude ve latitude bilgileri kaydediliyor.
+
+511
+01:55:30,484 --> 01:55:45,044
+Bu Longitude ve Latitude bilgilerini aldıktan sonra size bahsettiğim J-A-Coder hatırlarsanız adres bilgisini alabilmeniz için ki Marker'ın üzerine gittiğinizde bu adres bilgisini gösterecek.
+
+512
+01:55:45,044 --> 01:55:51,044
+Çünkü normalde Latitude ve Lottitude'u gösterseydiniz sayısal bir değer görecektiniz ama buradaki...
+
+513
+01:55:52,467 --> 01:55:58,947
+Jokadur üzerinden ilgili adres bilgisini alma şansınız oluyor.
+
+514
+01:56:00,307 --> 01:56:09,287
+Ve buraya görmüş olduğunuz bilgilerin State, Country gibi bilgilerin akmasını sağlıyorsunuz.
+
+515
+01:56:09,287 --> 01:56:19,927
+Ve Marker Options'a bu bilgileri ekliyorsunuz title'ına ve üzerine gittiğiniz zaman bu bilgileri görebiliyorsunuz telefonun üzerinde.
+
+516
+01:56:20,979 --> 01:56:23,979
+Yine ikonu rengini değiştirmiş burada.
+
+517
+01:56:25,479 --> 01:56:34,139
+En sonunda biraz önce remove ettiğimiz markerı yeniden add marker özelliği metoduyla oluşturuyoruz.
+
+518
+01:56:34,139 --> 01:56:40,279
+Ve bunu oluştururken de biraz önce tanımladığınız marker options'lar özelinde yaratılmasını istiyoruz.
+
+519
+01:56:40,759 --> 01:56:43,219
+Kamerayı konumlandırıyoruz.
+
+520
+01:56:45,376 --> 01:57:00,456
+Konumumuzun neresi olduğuna bağlı olarak ve Zoom seviyesini 11 olarak veriyoruz. Mümkün olduğunca sizin bulunduğunuz lokasyona ortalama bir seviyede Zoom yapacak şekilde bu işlemi yapıyoruz.
+
+521
+01:57:02,195 --> 01:57:12,275
+Google API Client'ın alınmasında Remove Location Update istiyoruz ve boşu boşuna herhangi bir şekilde devam etmemesini sağlıyoruz.
+
+522
+01:57:14,915 --> 01:57:18,375
+Lokasyon Update bilgisinin sorgulanmasını.
+
+523
+01:57:20,315 --> 01:57:28,355
+Ve burada da işte default kontroller yapıyoruz ve permission'dan sağlanmadan bağlı olarak ekranda bir bilgilendirme.
+
+524
+01:57:28,752 --> 01:57:29,912
+Yapmış oluyoruz.
+
+525
+01:57:30,452 --> 01:57:32,032
+Şimdi bu kodu size göndereceğim.
+
+526
+01:57:33,772 --> 01:57:34,852
+Şöyle stop diyelim.
+
+527
+01:57:35,792 --> 01:57:37,012
+Hemen buradan paylaşayım.
+
+528
+01:58:13,395 --> 01:58:16,235
+Bu bir tanesi. Bir de eczema kozumlendireyim.
+
+529
+01:58:19,891 --> 01:58:26,652
+Aslında hepsi egzamer kodunu göndermemeyerek yok. Çünkü sizde zaten aynısı var. Sadece isim değiştiği yapmanız gerekiyor.
+
+530
+01:58:26,652 --> 01:58:36,811
+Bu kod üzerinden çalıştırdığınızda telefonunuzda göreceksiniz. Sizin konumunuz ve hareket ettikçe konumunuzun değiştiğini ve harita üzerinde güncellendiğini göreceksiniz.
+
+531
+01:58:39,612 --> 01:58:47,112
+Herhalde çok anlaşılmayan bir şey yoktur diye tahmin ediyorum. Kod parçası içerisinde. Sorusu olan var mı?
+
+532
+01:58:54,515 --> 01:59:06,815
+Peki, o zaman teşekkür ediyorum katıldığınız için. Bu haftalık dersimiz bu kadar. Güzel bir hafta diliyorum hepinize. Haftaya buluşmak dileğiyle. Kendinize iyi bakın. Hoşçakalın arkadaşlar.
+
+533
+01:59:09,555 --> 01:59:10,295
+İyi günler hocam.
+
+534
+01:59:11,775 --> 01:59:12,335
+Teşekkürler.
