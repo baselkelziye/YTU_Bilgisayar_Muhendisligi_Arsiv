@@ -1,0 +1,2367 @@
+1
+00:00:57,235 --> 00:00:59,076
+Günaydın arkadaşlar, sesim gidiyorum.
+
+2
+00:01:03,060 --> 00:01:03,859
+Geliyor hocam.
+
+3
+00:01:06,260 --> 00:01:08,260
+Beş dakika sonra başlayalım o zaman.
+
+4
+00:01:24,915 --> 00:01:26,015
+Görüşmek üzere.
+
+5
+00:05:48,244 --> 00:05:50,004
+Evet, günaydın arkadaşlar.
+
+6
+00:05:52,984 --> 00:05:54,104
+Günaydın hocam, merhaba.
+
+7
+00:05:55,744 --> 00:05:57,864
+Nasılsınız, iyisiniz?
+
+8
+00:05:59,384 --> 00:06:00,104
+Günaydın hocam.
+
+9
+00:06:27,156 --> 00:06:45,076
+Bugün 20 Mart. Anlamsal Uzaylar Dilma Adalcı bunlardan bahsedeceğiz. Bir de Ödevi 1'in Normandiya veriliş tarihi önümüzdeki haftaydı ve geri isteme tarihinde ondan sonraki haftaydı.
+
+10
+00:06:45,076 --> 00:06:54,096
+Size biraz daha zaman tanımak açısından Ödevi 1'in veriliş tarihini bugüne çektim.
+
+11
+00:06:54,483 --> 00:07:06,863
+Biraz daha vaktiniz olsun diye. Teslim tarihli bir iş yok. Şu anda online yıldız edutörde ödevi erişebiliyor olmanız lazım. Bir kontrol eder misiniz?
+
+12
+00:07:15,507 --> 00:07:16,647
+Evet hocam görünüyor.
+
+13
+00:07:17,288 --> 00:07:18,067
+Tamam, güzel.
+
+14
+00:07:19,867 --> 00:07:21,307
+Görüyorsunuz, tamam, güzel.
+
+15
+00:07:22,247 --> 00:07:25,367
+Ona dediğim gibi daha sonra bakacağız.
+
+16
+00:07:25,367 --> 00:07:26,767
+Daha sonra doğru.
+
+17
+00:07:28,967 --> 00:07:31,408
+Şimdi geçelim.
+
+18
+00:07:36,788 --> 00:07:41,608
+Geçen hafta hayat bilgisini bitirmiştik. Başlamış mıydık anlamsal özellere?
+
+19
+00:07:45,300 --> 00:07:48,000
+Hayır hocam, bitmemişti. 10. slide'da kalmıştık.
+
+20
+00:07:48,180 --> 00:07:48,500
+Hayır.
+
+21
+00:07:50,960 --> 00:07:55,040
+Bir dakika. 10. slide'da kalmıştık dediğiniz şeyle mi onda kaldık?
+
+22
+00:07:55,899 --> 00:07:59,779
+Aslında anlamsal uzaylara başladık ama bitirmedik. En son marka var.
+
+23
+00:07:59,779 --> 00:08:00,220
+Tamam, tamam.
+
+24
+00:08:01,120 --> 00:08:10,340
+Tamam, yani şey, harf bilgisi kısmını tamamlamıştık. Anlamsal uzaylara da başlamıştık. Bunları görmüştük, değil mi?
+
+25
+00:08:12,723 --> 00:08:38,864
+Şuraya kadar. Bir saniye. Bakayım ben de. Şimdi paylaşayım size. Kolay anlaşırız. Tamam. Markov'dan bahsetmiştik. İşte bu K seçiminin bir ikilem olduğundan bahsetmiştik. Değil mi? Bunlardan bahsettik diye hatırlıyorum.
+
+26
+00:08:39,316 --> 00:08:48,556
+Evet, evet. Tamam. Şunları görmüştük. Şunları da görmüştük. Herhalde şurada mı kalmıştık?
+
+27
+00:08:51,176 --> 00:08:55,456
+Yalnız ki olabilir. Yani yanılıyor olabilirim arkadaşlarım. Yanlışsa düzelttim.
+
+28
+00:08:57,115 --> 00:09:04,076
+14. slide'da. Ben geçen hafta yoktum hocam. O videodan seyrettiğim kadarıyla 14. slide'da kalmıştık.
+
+29
+00:09:04,076 --> 00:09:05,516
+Sınav dişledik hocam. Evet.
+
+30
+00:09:05,940 --> 00:09:29,080
+Bu saati gördük değil mi? Evet, evet. Bu saati gördük. Bu dil modellerini değerlendirmek kısmında kaldık diye biliyorum ama. Tamam, tamam, tamam. Ama şundan sonra size bir soru sormuşum herhalde değil mi? Evet hocam, 20 kelime verilse anlamlı bir cümle nasıl kurarsınız diye. Tamam, tamam, tamam, çok güzel.
+
+31
+00:09:31,091 --> 00:09:35,792
+Evet, şimdi kaç kişiyiz? Bakalım.
+
+32
+00:09:38,172 --> 00:09:40,912
+19, 20, 20, 20, 20, 20 çıkarsak 18.
+
+33
+00:09:41,611 --> 00:09:47,991
+18 kişi oluyor. Fikirlerinizi duymak isterim bu konuda.
+
+34
+00:09:52,307 --> 00:09:55,827
+Bu 20 tane kelime olsa elinizde.
+
+35
+00:09:56,668 --> 00:10:00,748
+Buradan anlamlı bir dizi nasıl kurmaya çalışırdınız?
+
+36
+00:10:02,587 --> 00:10:06,207
+İkili olarak biz kelimeden sonra hangi kelime geliyor?
+
+37
+00:10:06,827 --> 00:10:09,367
+Onların frekanslarını saydırmak lazım sanırım.
+
+38
+00:10:10,127 --> 00:10:11,187
+İlk aklıma gelen o.
+
+39
+00:10:12,179 --> 00:10:21,879
+Bir kelimeden sonra hangi kelime geliyor? Hangi kelime ikilisi falan geliyor? Hepsini saydıramayız arda arda diye düşünüyorum. Çok maliyetli olur.
+
+40
+00:10:22,539 --> 00:10:34,399
+Yani şunu demek istiyorsunuz. Şimdi burada üç tane kelime için biz üç faktöriyel tane böyle hesaplamayı yapabildik. Ama yirmi faktöriyel için bunu yapmamız pek mümkün olmaz diyorsun.
+
+41
+00:10:34,399 --> 00:10:38,639
+Evet, orada da en fazla gelenlerle başlayıp.
+
+42
+00:10:39,668 --> 00:10:44,567
+Çok manalı olur mu bilmiyorum ama o şekilde bir yirmili bir gün de kurmam.
+
+43
+00:10:45,087 --> 00:10:47,548
+Nasıl olacak şimdi? İkileri yapacağım. Sonra?
+
+44
+00:10:49,347 --> 00:10:57,648
+Sonra en fazla başlayan hangisi ise onu ilk kelime olarak koyabiliriz gibi geliyor bana.
+
+45
+00:11:00,028 --> 00:11:04,427
+İlk kelime olarak koydun. En fazla başlayan ilk kelime olarak koydun. İkinci kelimeyi ne yapacaksın?
+
+46
+00:11:05,268 --> 00:11:10,908
+Ondan sonra hangisi en fazla geliyorsa onunla. Bu şekilde yani. Çok basit bir mantıkla.
+
+47
+00:11:11,788 --> 00:11:22,428
+Yani cümle başında en çok geçen en başa alırım diyorsun. Sonra ondan sonra, birinciden sonra en fazla geleni alırım. O şekilde ilerlerim.
+
+48
+00:11:23,428 --> 00:11:23,688
+Peki.
+
+49
+00:11:24,288 --> 00:11:28,807
+Diye geldi aklıma. En basiti bu gibi ama tabii çok mantıklı mı onu bilmiyorum.
+
+50
+00:11:29,364 --> 00:11:34,124
+Burada Markov'u aslında bir olarak kullanıyorsun. Doğru mu?
+
+51
+00:11:34,484 --> 00:11:35,264
+Evet hocam.
+
+52
+00:11:36,484 --> 00:11:37,624
+Peki, başka?
+
+53
+00:11:38,644 --> 00:12:06,584
+Ben de benzer bir şey düşünmüştüm. Belki burada sadece bir veya iki gibi marku o şekilde kıslamak çok kıslanmayacak modeller var mı? Biraz ona bir bakmaya çalıştım ama çok büyük bir korpus üzerinde eğitebileceğimiz model olursa o korpusta zaten bir ile ikili, üçlü farklı kombinasyonlarda cümleyi kurabileceğimiz bir modeli eğittiğimizde.
+
+54
+00:12:06,644 --> 00:12:16,183
+Elimizdeki kelimelerden sıralayarak en yüksek olasılık hangisiyse en yüksek olasılığa göre sıralayıp kelimeleri yan yana izleyebiliriz.
+
+55
+00:12:16,484 --> 00:12:17,984
+Anlamlı bir cümleye gidebiliriz.
+
+56
+00:12:18,283 --> 00:12:21,923
+Ben tam anlayamadım. Neyin olasılığını sıralayacağım?
+
+57
+00:12:21,923 --> 00:12:26,703
+Yani şeylerin olasılıklarına bakarak, kelimelerin yan yana gelme olasılıkları.
+
+58
+00:12:27,864 --> 00:12:31,244
+İlk önce bir model eğitmekten bahsettin.
+
+59
+00:12:31,283 --> 00:12:31,903
+Aynen, aynen.
+
+60
+00:12:34,644 --> 00:12:54,943
+Marko model olabilir orada. Ama orada şey, her bir kelimelere tek tek bakmak, belki birden fazla uzunluklarına da ikili, üçlü farklı uzunluklarda şeylerin yanına getirmeye çalışmak da şey olabilir. Orada bizi kurtarabilir diye düşünüyorum.
+
+61
+00:12:56,484 --> 00:12:59,324
+Peki, teşekkürler. Başka fikir?
+
+62
+00:13:01,076 --> 00:13:02,975
+Bu dağın, ney var?
+
+63
+00:13:04,056 --> 00:13:04,855
+Ne, orada?
+
+64
+00:13:06,548 --> 00:13:34,347
+Hocam, ben şöyle düşündüm. Şimdi bu 20 kelime değil, daha fazla da olabilirdi. Hani karşımıza daha fazla da çıkabilirdi. Burada ilk başta söylediğiniz gibi hani 20 en ya da işte 20 en faktörü ya da 20 faktörü hesaplama maliyeti yüksek olacağı için ben burada bir atıyorum machine learning, deep learning gibi bir uygulamanın ardından çıkan olasılıksal sonuçları
+
+65
+00:13:34,548 --> 00:13:42,467
+Ne demek o anlayamadım ben. O söylediğin, yani diplonik gibi bir uygulama ne yapacak onu anlayamadım.
+
+66
+00:13:43,528 --> 00:13:47,887
+Hocam hani kelimelerin yan yana gelme olasılıklarının bulunması amacıyla.
+
+67
+00:13:47,887 --> 00:13:51,447
+Hı hı tamam. Ne yapacak kelimenin yan yana gelme olasılıklarını?
+
+68
+00:13:52,211 --> 00:14:05,152
+Bu modelin sonucunda elde ettiğimiz istatistiklerle de bir sort işlemi geldi aklıma. Merge sort gibi olabilir.
+
+69
+00:14:06,271 --> 00:14:16,971
+Ama bir dakika, bir şeyi anlayamadım ben. Bir tane bir model olacak diyorsun elimde. Ben onun içerisine bir kelime sırası vereceğim. O bana kelime olasılığını söyleyecek. Doğru mu?
+
+70
+00:14:18,355 --> 00:14:22,216
+Evet hocam, kelimelerin yan yana gelme olasılığını almış olacağım.
+
+71
+00:14:23,076 --> 00:14:32,175
+Tamam ama sonuçta hangilere bakacaksın? 20 faktör yer tane şey var burada, olası durum var. Onların her birine o modele mi vereceğim?
+
+72
+00:14:34,675 --> 00:14:37,675
+Orayı tam şu anda çıkaramayacağım hocam.
+
+73
+00:14:39,860 --> 00:14:55,539
+Sonrasında da aklıma ağaç yapısı olarak geldi. Merge Sort gibi. Oradan mesela bu kelimeden sonra şu veya şunlar gelebilir şeklinde mantıklı, anlamlı cümle kurmamızı istediğiniz için bu şekilde gelmişti.
+
+74
+00:14:57,019 --> 00:14:59,440
+Peki, teşekkürler. Başka?
+
+75
+00:15:01,043 --> 00:15:18,223
+Hocam, ilk başta şöyle düşünmüştüm. Bizim cümle başlangıç olarak, cümle başlangıç sembolümüz olacak cümlede. Sonrasında, bygramları yani K2 olarak kabul edersem, benim elimde onlara ilgili stisikler olursa şunu yapmayı düşünmüştüm.
+
+76
+00:15:23,764 --> 00:15:34,844
+Şu an cümleye eklediğin sembolden sonra en olası 100 tanenin içinde, 100 token'ın içinde, 100 by bigron'un içinde hangisi geçiyorsa.
+
+77
+00:15:35,264 --> 00:16:03,084
+Onlardan bir tane alacağım. Şimdi benim elindeki kelimelerden hiçbirisi o ilk yüzün içinde geçmiyorsa o zaman o yüzü ikinci kelime olarak kabul edip bunlardan önce gelen kelimeleri alacağım. Bunlar için bu sefer bilgisayarlar bakacağım. Yani başlangıçta cümle başlangıcı sembolü var. Ondan sonra o kelimelerden önce gelen kelimelerden herhangi biri geliyor mu onlar için de bakacağım. İlk yüzün içinde, en olası ilk yüz token'ın içinde yani cümle başlangıcından sonra gelebilecek.
+
+78
+00:16:03,264 --> 00:16:21,204
+İki yüzün içinde bir şey gelene kadar bu şekilde genişleteceğim. Sonra oradan işte rastgele bir şekilde onlardan bir tane seçeceğim. Sonra diğerine bakacağım, diğerine bakacağım. Diğer yani cümle başlangıç sembolü için nasıl bir işlem uyguladıysam diğerleri için aynı işlemi devam ettireceğim.
+
+79
+00:16:21,204 --> 00:16:23,924
+Tahtaki elimdeki kelimeler bitene kadar.
+
+80
+00:16:23,944 --> 00:16:25,104
+Tüketene kadar diyorsun.
+
+81
+00:16:26,484 --> 00:16:31,004
+Peki, teşekkürler [öğrenci]. Başka var mı Fikir?
+
+82
+00:16:32,464 --> 00:16:35,604
+Hocam, bir şey daha ekleyebilir miyim?
+
+83
+00:16:36,544 --> 00:16:36,904
+Evet.
+
+84
+00:16:37,744 --> 00:16:43,304
+Hocam, aslında şey, [öğrenci]'in dediği mantıkla paralel de düşüncem, Merge Sort'tan kastım.
+
+85
+00:16:43,484 --> 00:16:51,684
+Mesela bir Merge Sort gibi başlangıç değeri olacak ve eğer bu kelimeden sonra diğer kelime gelecekse bunu sağına ekleyeceğiz.
+
+86
+00:16:52,111 --> 00:17:01,671
+O kelimeden önce gelebilme ihtimali olan bir kelime ise de sağına ekleyeceğiz gibi ya da işte öncesine ekleyeceğiz gibi.
+
+87
+00:17:02,191 --> 00:17:04,371
+Bir şekilde anlamlı cümle kurabiliriz.
+
+88
+00:17:04,711 --> 00:17:06,152
+Peki.
+
+89
+00:17:07,380 --> 00:17:19,660
+Teşekkürler [öğrenci]. Evet, başka biri şey söylüyordu ama. Evet hocam, ben daha basit düşünüyorum. İsim, sıfat analizi yapardım mı? İsim, sıfat. Ne analizi?
+
+90
+00:17:20,211 --> 00:17:38,892
+İsim ve sıfat, yani sıfat olarak önemli bir hareket derken, bu da biraz daha fonksiyonel bir ayrım yaptıktan sonra, bir statistiksel bir veriyle yine kullanım sıklığına göre bir şey yapabiliriz. Önemli bir hareket ilmesini çıkartabilirsiniz. Biraz daha basit düşünüyorum.
+
+91
+00:17:43,539 --> 00:17:48,539
+İsim, sıfat, fiil diye kelimeleri ayırdım falan diyorsun ilk önce. Doğru mu anlıyorum?
+
+92
+00:17:48,639 --> 00:17:56,220
+Evet, evet. Mesela önemli ve bir sıfat olarak kullanılabilir. Harekette onlardan sonra gelmektir.
+
+93
+00:17:56,880 --> 00:17:57,559
+İsim.
+
+94
+00:17:59,699 --> 00:18:08,559
+Sıfat ve isim. Bunların da kullanım istatistiğine göre bir...
+
+95
+00:18:09,071 --> 00:18:17,951
+Sıralama yapardım. Önemli bir hareket. Bir önemli hareket. Önemli bir hareket biraz daha mantıksal olurdu. Ona göre bir sonuç çıkartıyorum.
+
+96
+00:18:17,951 --> 00:18:24,991
+Anladın mı? 20 tane kelime olduğu zaman elinde bir sürü sıfat olacak, bir sürü isim olacak, bir sürü fiil olacak mesela. Orada ne yapardın?
+
+97
+00:18:28,151 --> 00:18:32,051
+Burada belki istatistiksel olarak ilerleyebiliriz diye düşünüyorum.
+
+98
+00:18:34,631 --> 00:18:35,192
+Peki.
+
+99
+00:18:36,788 --> 00:18:39,988
+Teşekkürler. Evet, başka fikir?
+
+100
+00:18:42,048 --> 00:18:44,788
+Hocam, benim aklıma gelen bir şey...
+
+101
+00:18:44,816 --> 00:19:00,076
+Şöyle bir şey vardı da, 20 kelimelik bir cümle, bir cümlenin 20 kelime olması bile zaten çok uzun bir şey olduğundan dolayı 2 veya 3 cümlenin birleşiminden oluşmuş bir cümle gibi olabilir diye düşünüyordum.
+
+102
+00:19:00,076 --> 00:19:07,076
+O yüzden hani V veya V o tarz bir bağlak şeylerin binden fazla cümleyi bağlayan bir...
+
+103
+00:19:07,248 --> 00:19:20,467
+Keremeler olduğunu düşünebiliriz. Böyle düşünüp onları önce bulan bir şey olup ondan sonra diğer küçük cümleleri…
+
+104
+00:19:20,467 --> 00:19:22,467
+Nasıl oluşturacağım küçük cümleleri?
+
+105
+00:19:22,548 --> 00:19:42,587
+Küçümleri de işte hani bu V veya gibi şeyleri önce belirledikten sonra K değerini de hani özne, hümlek, yüklem gibi hani şey olarak düşünürsek K değerini 3 veya 4 gibi bir şey vererek belki daha mantıklı bir hale getirmek çalışabiliriz gibi düşünüyorum ama.
+
+106
+00:19:42,587 --> 00:19:44,587
+Peki.
+
+107
+00:19:45,428 --> 00:19:48,508
+Bazı varsayımlar yaparız diyorsun yani.
+
+108
+00:19:48,968 --> 00:19:49,168
+Evet.
+
+109
+00:19:52,028 --> 00:19:57,528
+Varsayımlar yapmak genelde, yani çoğunuzun fikrinde o var.
+
+110
+00:19:57,768 --> 00:20:00,000
+Yani belli varsayımlarda bulunup aramak...
+
+111
+00:20:00,000 --> 00:20:15,340
+Arama uzayını epey bir daraltmak. Çünkü arama uzayı bu kadar kocaman bir şey olduğunda orada bütün her yere bakmak pek mümkün değil. Ama diyebilirsiniz ki şöyle kelimeler başlarda olur, şöyle kelimeler sonlarda olur gibi gibi.
+
+112
+00:20:15,340 --> 00:20:24,300
+Ya da işte ikili, üçlü birleştirip birleştirip bir şekilde onları daha sonra birleştirmek yaraşık bir şekilde. O tarz şeyler olabilir. Peki başka fikir var mı?
+
+113
+00:20:29,779 --> 00:20:52,340
+Peki, hepinize çok teşekkürler. Dediğiniz gibi belli varsayımlar arama uzaylarını küçültmek için kullanabileceğimiz şeyler bunlar. Elimizdeki probleme ne kadar uygun ise o kadar hızlandırma etkisi yüksek ve doğru.
+
+114
+00:20:52,884 --> 00:21:14,563
+Sonuç bulma olasılığımız da o kadar fazla oluyor. Ama işte o varsayınları bulmak vesaire gibisinden orada birazcık kafa yormak gerekiyor. Peki. Şimdi, geçen haftaki basit sorumuzu biraz ölçeklenebilir hale getirdiğimizde işlerin karmaşıklaşabileceğini çok kabaca görüyoruz aslında.
+
+115
+00:21:19,955 --> 00:21:31,355
+Kısa K'lar için pek olası olduğunu ama uzun K'lar için, biri bir şeyler için pek de kolay olmadığını aslında birazcık görebiliyoruz.
+
+116
+00:21:33,135 --> 00:21:40,635
+Devam edelim. Şimdi evimizde iki tane dil modeli olsun.
+
+117
+00:21:41,619 --> 00:22:05,199
+İki tane dil modeli. Şimdi buradaki dil modelinden kastığımız arkadaşlar, şu ana kadar istatistiksel dil modellerinden bahsediyoruz. Sinsel yapıları geçmeyiz. Şu anda sadece istatistiksel dil modellerinden bahsediyoruz. İki tane dil modeli var. Hangisini daha iyi olduğunu bulmak istiyoruz. Böyle bir amacımız var. Burada genelde kullanılan iki tane yaklaşım var.
+
+118
+00:22:05,811 --> 00:22:25,911
+Bu iki yaklaşım aslında şu anda bahsettiğimiz istatistikler dil modellerini birbiriyle karşılaştırmak için de kullanılabilirler. Ama harici olarak herhangi iki dil modeli, yani sinneser de olabilir, onları istiyorum. Onları karşılaştırmak için de kullanılıyorlar. İki tane temel yaklaşım var. Bir tanesi dahil yöntem, bir tanesi harici yöntem.
+
+119
+00:22:26,371 --> 00:22:32,692
+Harici yöntem dediğimiz şey, her iki dil modelinde farklı görevlerde kullan o görevlerdeki performanslarına göre.
+
+120
+00:22:33,811 --> 00:22:53,571
+Yöntemden kastımız, dil modelini kendisinin bir temsil yöntemi olarak kullanıp, elinizde başka bir uygulama, makine çevirisi olur, şu olur, bu olur vs. bir sürü bir şey olabilir. Bunlardan herhangi bir tanesi üzerindeki performansları üzerinden karşılaştırabilirsiniz. İki tane dil modelini yapabileceğiniz bir şey bu.
+
+121
+00:22:54,391 --> 00:22:56,611
+Diğeri dahili yöntem bu içeride.
+
+122
+00:22:59,604 --> 00:23:06,264
+Derlemi eğitim ve test cümesi olarak ayırmaktan bahsediyoruz. Eğitim ve test cümesi olarak derlemi ayırmaktan bahsediyoruz.
+
+123
+00:23:07,804 --> 00:23:23,024
+Şimdi bu dil modellerinin yapmaya çalıştıkları şey ne? Yapabildikleri şeyler bir tanesi daha doğrusu çok temel. Bir cümlenin olasılığını bulabiliyorlar. Bu cümlenin bu derlemde geçme olasılığını bulabiliyorlar.
+
+124
+00:23:23,604 --> 00:23:48,604
+Bunun sinirsel din modellerinin karşılığı da var. Perflex diye geçiyor. Sonuçta bir olasılık değeri bulurlar. Böyle bir cümlenin oluşma olasılığı. Şimdi elimizdeki derleminin içerisinden belli bir kesim aldık ve onun tespimesi olarak ayırdık diyelim ki. Burada tabii ki şeye çok çok dikkat etmek gerekiyor. Derleminiz çok büyük olduğunda...
+
+125
+00:23:49,395 --> 00:23:56,355
+Derlem çok büyük olduğunda ve özellikle webten vesaire bir yerlerden topladığınızda bu derlemi.
+
+126
+00:23:59,816 --> 00:24:10,435
+Eğitim ve tez kümesi diye ayırma. Yani onun içerisinden bir tez kümesi seçmek çok çok kolay bir iş değil. Neden? diye sorsam.
+
+127
+00:24:12,715 --> 00:24:16,076
+Yani iyi bir tez kümesi seçmek kolay değil, öyle söyleyeyim.
+
+128
+00:24:16,367 --> 00:24:26,127
+Tez kümesi tabii ki seçersiniz, rastgele bir şekilde seçersiniz de. Rastgele seçtiğiniz de çok iyi bir şey yapmamış olabilirsiniz. Niye öyle olabilir acaba?
+
+129
+00:24:29,147 --> 00:24:39,048
+Cümlelerin uzunlukları birbirinden farklı. Yani içerikleri birbirinden farklı olur. Yani her bir şeydeki, tez kümesindeki, eğitim kümesindeki.
+
+130
+00:24:43,567 --> 00:24:56,087
+Bir gigabyte tekst. Tamam mı? Bunun içerisinden rastgele bir parça aldım ben. Bu da benim teşküman olsun dedim. Bunu yaptığımda çok iyi bir hareket yapmayabilirim muhtemelen. Niye?
+
+131
+00:24:56,567 --> 00:25:03,927
+Hep isimler gelebilir, hep fiiller gelebilir rastgele olarak. Ondan bir cümle oluşturmak da zor olabilir.
+
+132
+00:25:05,940 --> 00:25:19,359
+Yok, tam olarak o değil istediğim. Dediğin şey olabilir. Kalite anlamında kötü bir yere denk gelebilir falan diyorsun belki. Ama tam değil benim istediğim şey.
+
+133
+00:25:19,359 --> 00:25:31,200
+Ama şey ise, buradaki problemimiz örnekler seçmek olaysa, cross-validation sadece one shot değil de birden fazla kez örnekler seçmek istedik.
+
+134
+00:25:33,395 --> 00:25:58,596
+Tam cross-frontation olmaz. O da muhtemelen birden fazla test kümesi oluşturmak iyi bir şey olabilir ama burada belki şöyle bir şey. Test kümesini normal standart yapıda alırsın elindeki veri kümesini ona bölersin falan iş yaparsın ya. Burada onu yapmaya bir imkanımız yok. Değil mi?
+
+135
+00:26:00,596 --> 00:26:01,415
+Nie yok.
+
+136
+00:26:08,307 --> 00:26:28,107
+Yani şöyle bir şey düşünün. Elinde işte bir gigabyte şey var. Text datası var. Tamam mı? Bunu ona böldün. Her biri işte 100 megabyte'ın parçaların var diyelim ki. Bir eğitim kümesini alacağım. 900 megabyte bunu eğiteceğim. Ondan sonra 100 megabyte'ın üzerini test edeceğim. Değil mi? Öyle olacak. Doğru mu? Bu pratikte pek kolay mı?
+
+137
+00:26:33,236 --> 00:26:37,956
+Yani makine kapasitesine geldiği için sanki iyi makineniz varsa belki kolay olabilir.
+
+138
+00:26:38,635 --> 00:26:41,115
+Hiç yaptın böyle bir şey mi? Merak ettim daha sonra.
+
+139
+00:26:41,715 --> 00:26:49,036
+Yok, o kadar büyük şey yapmadım ama şey, yani Pre-Train modeller üzerinde şey, fine tuning yaptığım oldu.
+
+140
+00:26:49,495 --> 00:26:54,415
+Yok, Pre-Train modellinden bahsetmiyorum. Yani böyle 900 MB'lik bir datayı eğitim olarak kullandım mı hiç?
+
+141
+00:26:54,935 --> 00:27:03,755
+Eğitim olarak, hani, yani, Stuxed datalarda kullandım. Evet, hani 900 MB'lik data. Hani çok büyük değil Stuxed datalar için. Ama tabii text veriler için.
+
+142
+00:27:05,587 --> 00:27:31,907
+Tekst verisinde 9 megaway tane sıfırdan eğitmenler daha küçük. Uzun sürüyor. Tamam, en basitinden öyle söyleyeyim. Epey bir uzun sürüyor. Dolayısıyla bunu 10 kez falan yapmamız pek kolay değil. Tamam, evet başka. Neyden bahsediyorum ben peki o zaman? İçerikler aynı olabilir mi? İçerikler aynı olabilir. Evet, bu çok basit. Demin şey fark ettiyseniz, internetten topladığınız veriler.
+
+143
+00:27:33,076 --> 00:27:45,355
+Yani test kümesi diye seçtiğiniz şeyin içeriği, eğitim kümesinin içerisinde yer alması iyi bir durum mu? İsteyeceğimiz bir durum mu?
+
+144
+00:27:45,796 --> 00:27:48,955
+İsteyeceğimiz bir durum değil.
+
+145
+00:27:49,475 --> 00:27:58,276
+Kesinlikle isteyeceğimiz bir durum değil değil mi? Birebir onun içeriğin aynısının o eğitim kümesinin içerisinde olması isteyeceğimiz bir durum temelde değil.
+
+146
+00:27:58,836 --> 00:28:18,796
+Çünkü neden? İşte kopya çekilir. Dolayısıyla ama şeyden emin olmak da kolay da değil. Onu demeye çalışıyorum. Hani böyle rastgele bir parça alayım. O rastgele parçanın üzerine testlerimi yapayım. Çünkü yani eğitim hükümesinin içerisinde hakikaten olabiliriz o seçtiğiniz şey. Test hükümesi olarak seçtiğiniz kısım.
+
+147
+00:28:18,796 --> 00:28:26,276
+Yani ne bileyim, haberleri düşünün. Yani bir tane haberi alıyorsunuz, o haber 30 tane haber sitesinde aynı şekilde geçiyor. Değil mi?
+
+148
+00:28:27,284 --> 00:28:50,663
+Ya da çok çok benzer, aşı derecede benzer. Kırpılmış ben halim. Ya da işte bir ürün var, satıcılar satıyorlar. Aynı şey, durmadan tekrardan, webde tekrarlı veri çok fazla var. O manada demek istiyorum. Dolayısıyla yani yederlemenizi oluştururken buna çok dikkat falan etmiş olmanız gerekiyor. Ya da test güvenizi oluştururken biraz dikkatli bir şekilde oluşturmak gerekiyor. Onu söylemeye çalışıyorum. Anlaşıldı mı demek istediğim?
+
+149
+00:28:52,663 --> 00:28:53,223
+Evet.
+
+150
+00:28:54,132 --> 00:29:08,492
+Peki. Evet hocam. Tamam. Çünkü bu bizim başımıza daha önce çok geldi. Onun için istiyorum. Yani test kümesi üzerine çalışıyoruz. Mükemmel sonuçlar alıyorsunuz. Nasıl bu kadar mükemmel olur falan. Bakıyorsunuz hakikaten AŞ'de varmış. Eğitim kümesinde varmış.
+
+151
+00:29:09,683 --> 00:29:32,683
+Bu da çok sağlam bir şey sağlıyor modele. Performans artışı sağlıyor. Peki şimdi test kümesiniz var elinizde diyelim ki. Bir şekilde ayırdınız. Şimdi bu A ve B modeli eğitim üzerine oluşturuyorsunuz. Yani elinizdeki derden üzerine eğittiniz. Şimdi test edeceksiniz. Şimdi testte derdimiz ne? Bu modelin...
+
+152
+00:29:33,044 --> 00:29:43,004
+Test cümleleri üzerinde yüksek performans, yani yüksek olasılık vermesin. Yani böyle bir cümle vardır, karşılığının yüksek olması.
+
+153
+00:29:44,284 --> 00:29:49,564
+Şimdi dil modelleri neyi yapıyorlar? Çok temel olarak bir cümlenin oluşma olasılığını.
+
+154
+00:29:49,564 --> 00:29:58,124
+Şimdi test cümleleriniz de sizin gerçek cümleler aslında. Böyle gerçek cümlenin oluşmuş olasılığını yüksek olmasını istiyorsunuz, değil mi?
+
+155
+00:30:00,000 --> 00:30:16,740
+Bunu yapamayan yüksek olasılık verirse. Şimdi test kümesindeki cümleler hangisi daha yüksek olasılık veriyorsa o daha iyidir. Bu bir yaklaşım. Ya da şunu da diyebilirsiniz. Gerçek olmayan cümlelere hangisi daha düşük olasılık veriyorsa o daha iyidir diyebilirsiniz.
+
+156
+00:30:17,332 --> 00:30:29,052
+Yani bir cümle var. O cümle gerçek bir cümle değil mesela. Onu siz kendiniz elle oluşturmuşsunuz, var olanları karıştırmışsınız falan birbirine sokmuşsunuz.
+
+157
+00:30:29,556 --> 00:30:47,655
+Ne bileyim, iki tane cümleyi almışsınız, ortadan kesmişsiniz, birinin başını, birinin sonunu vermişsiniz ya da bunu dörtlü beşi falan yapmışsınız. Böyle abdik bir şeyler oluşturmuşsunuz. Bunu verdiğinizde bu dil modelinin çok yüksek bir olu, yani böyle cümle mi olur demesi lazım. Her şeye tamam mı, her şeye tamam falan dememesi lazım. Onu demeye çalışıyorum.
+
+158
+00:30:48,115 --> 00:31:05,175
+Dolayısıyla gerçek cümleler üzerindeki performansının yüksek ama fake cümleler üzerindeki performansının, olasılığının verdiği olasılığının düşük olması lazım. Başka bir cümlenin başı verdiğinde sonunu doğru tahmin ediyorsa o daha iyi. Bu da zaten modelin yapabildiği bir şey temelde.
+
+159
+00:31:08,675 --> 00:31:15,516
+Bir tane şey yapıyorlardı, olasılıklı olarak. Zaten devamlı olmak da olasılık.
+
+160
+00:31:16,147 --> 00:31:23,147
+Çünkü ne demek? Şu ilk kelimelerden sonra gelecek olan…
+
+161
+00:31:24,852 --> 00:31:34,972
+Ne gelir bundan sonra? Aslında orada ne gelir bundan sonra dediğiniz sonuç olarak sözlük boyutlu bir dağılımdan bahsediyoruz.
+
+162
+00:31:35,211 --> 00:31:41,312
+Anlatıyorum işte 40 bin tane kelimeniz varsa o 40 bin tane kelimenin her biri için bir olasılık buluyorsunuz aslında.
+
+163
+00:31:41,872 --> 00:31:49,332
+Şu sekansdan sonra şu kelimelerin gelme olasılıkları diye bir dağılım buluyorsunuz.
+
+164
+00:31:51,188 --> 00:32:06,208
+İki görev de öyle söylüyor. Bir cümlenin olasını bulmak da, bir sekansdan sonrasını tahmin etmeyip de ikisi de aynı mekanizmayla çalışıyorlar. Aynı verilerle çalışıyorlar.
+
+165
+00:32:07,796 --> 00:32:27,016
+Bu gövde Markov varsayımında K-0 seçimi nasıldır? Bir cümlenin başı veriminde sonunu tahmin etme. Evet, burada Markov'un K kullanılırsız pek de iyi bir şey de elde edemezsiniz. İki dil modeli de birbirine aynı soru herhalde. Aynı şeyse, derlemecimle eğitildi dersin. Peki, devam edelim.
+
+166
+00:32:30,483 --> 00:32:57,883
+Şimdi, dil modelleriyle, yani istatistikler dil modelleriyle cümle ya da dizilim, sekans üretimi yapılabilir mi? Evet, yapılabilir. Burada yapacağımız şey, K için belli şeyleriniz olabilir tabii ki de. K'ya göre farklı hareketler yapmanız gerekecektir ama genel şeyimiz şu an, bir tane bir kelime seçeceğiz. Bundan sonra gelecek kelimeleri, dil modeliyle belirleyeceğiz.
+
+167
+00:32:58,336 --> 00:33:13,536
+Mesela A'dan sonra B'yi seçtik. Ondan sonra AB'yi verip, bu AB'den sonra ne geleceğini tahmin edeceğiz. Onu C diyecek mesela. Sallıyorum. Sonra ABC'yi verip, ABC'den sonra ne geleceği tahmin edecek. Yani, nasıl, onu otorogresif mi diyorlar?
+
+168
+00:33:15,604 --> 00:33:28,644
+Yani kendi tahminini inputuna ekleyeceğiz. Anlatabildim mi? Böyle bir şey. Şimdi bir ilk kelime seçip bundan sonraki belirleriyeyim. Karşıları sıfır için her zaman en yüksek olasılığı seçersek aynı kelime zaten tekrar edecektir.
+
+169
+00:33:29,875 --> 00:33:57,316
+Yani sonraki kelimeyi tahmin ederken k eşittir sıfırı kullanırsanız eğer, zaten hiçbir kelime kendisinden önceki kelimelere bağlı olmayacağından dolayı her kelime tekil bir olası da herhangi bir bağlı olası da sahip olmayacak. Dolayısıyla her bir kelimenin kendi başına olası zaten değişmeyecek. Öncedeki kelimelere göre değişmeyecek. O zaman da zaten en yüksek olasılıklı kelimeyi seçersek hep.
+
+170
+00:33:57,811 --> 00:34:08,251
+Hep aynı kelimeyi tekrar edeceğiz. Karşı tepriz için her zaman en yüksek olasılığı seçersek bir kelimeden sonra hep aynı kelime gelecek. Karşı tepriz için de bu geçerli. Bunu aşmanın iki tane yolu var. Tekrar tekrarlardan.
+
+171
+00:34:08,851 --> 00:34:26,572
+En yüksek olasılıklı T taneden bir tanesini rastgele seçmek. Yani şu sekanstan sonra gelecek en yüksek olasılıklı şu kelimeler var. Bu kelimelerden her zaman en yüksek olasılıklı olanı seçmeyelim de, onların içerisinden rastgele bir tanesinden. En yüksek olasılıklı T taneden bir tanesini rastgele seçmek.
+
+172
+00:34:27,311 --> 00:34:36,072
+Ya da hepsi için olasılıklara göre seçim yapmak. Yani şunu demek istiyorum. En yüksek T taneden seçim yapmak değil de.
+
+173
+00:34:36,563 --> 00:34:52,783
+Rastgele seçim yapmak değil de, atıyorum 100 tane kelimeniz var. Bu 100 tane kelimenin seçilme olasılıkları birbirleriyle, yani şeyleri var, olasılıkları var. O olasılıkları kullanarak direkt seçim yapabilirsiniz.
+
+174
+00:34:52,783 --> 00:35:00,724
+Yani hani seçilme olasılıkları en yüksek olan 5 taneden rastgele seçim yapmak yerine.
+
+175
+00:35:01,056 --> 00:35:05,655
+Olasılık değerlerini kullanarak direkt seçim yapabilirsiniz.
+
+176
+00:35:05,655 --> 00:35:08,855
+Ne demek istiyorum?
+
+177
+00:35:09,956 --> 00:35:10,996
+Şunu demek istiyorum.
+
+178
+00:35:28,947 --> 00:35:30,247
+Yani bu kelime olsun.
+
+179
+00:35:39,380 --> 00:35:40,279
+Pesos.
+
+180
+00:35:52,211 --> 00:36:12,811
+Atıyorum. W1, W2, W3 sekansı var. Bundan sonra gelecek olan kelimeyi bulmak istiyorsunuz. Tamam mı? Elinize de diyelim ki bundan sonra, yani sözünüzün boyutu da 100 olsun. Tamam mı? 100 tane kelimeniz var. Atıyorum bu W1 olacak, W2 olacak, W3 olacak.
+
+181
+00:36:34,195 --> 00:36:37,875
+Peki, şöyle gördüm. Altına satır ekle.
+
+182
+00:36:39,335 --> 00:36:43,795
+Altına satır ekle.
+
+183
+00:36:43,915 --> 00:36:44,115
+Evet.
+
+184
+00:36:46,415 --> 00:36:50,095
+Şimdi, diyelim ki yüz tane kelimeniz var. Tamam mı?
+
+185
+00:36:50,215 --> 00:36:51,735
+Yani sözlüğünüzde yüz tane kelime var.
+
+186
+00:36:52,715 --> 00:36:57,015
+Bütün derleminiz yüz tane kelimeden, tekil kelimeden oluşuyor.
+
+187
+00:36:57,155 --> 00:37:01,536
+Tabii ki derlemin kendisi çok daha uzun bir şey ama kelime sayınızın yüz olduğunu varsayalım.
+
+188
+00:37:02,612 --> 00:37:04,252
+Çok basit bir diliniz var.
+
+189
+00:37:05,331 --> 00:37:19,731
+Bu da V99. Şimdi burada bu olasılıklarımız var. Mesela bu sekansdan sonra V1'in olası 0.001 olsun, bunun olası 0.002 olsun.
+
+190
+00:37:19,731 --> 00:37:33,331
+Böyle gidiyorlar. En sonunda belki 0.003 var. 0.02 var. Biraz yüksek bir şey. Böyle şeylerinizin olduğunu düşünelim. Hatta V3'ümüz de olsun.
+
+191
+00:37:33,331 --> 00:37:33,831
+Sağ olun.
+
+192
+00:37:46,260 --> 00:38:13,780
+Şimdi burada yapabileceğimiz bir şey şu. Bundan sonra gelecek olan kelimeyi tahmin ederken olasılıklı seçim yapıp biraz farklı şeyleri reddirmek istiyoruz. Olasılıklı seçim yaparken de yapabileceğimiz birincisi şu. Elimizdeki 100 tane kelimeyi olasılıklarına göre sıralayıp bir şekilde onların içerisinde en yüksek K taneyi seçip o K tanenin içerisinde rastgele bir seçim yapmak.
+
+193
+00:38:14,228 --> 00:38:20,907
+Tamam, bu bir. İkincisi, zaten şu P dediğimiz şey, şuradaki arkadaşların hepsinin toplamı ne olacak arkadaşlar?
+
+194
+00:38:25,907 --> 00:38:27,507
+Oradaki P'lerin toplamı ne olur?
+
+195
+00:38:27,507 --> 00:38:28,507
+Bir.
+
+196
+00:38:28,507 --> 00:38:29,907
+Bir olacak değil mi?
+
+197
+00:38:29,907 --> 00:38:32,107
+Dolayısıyla bu bir olasılık dağılımı.
+
+198
+00:38:32,107 --> 00:38:35,907
+O zaman zaten bunu kullanıp seçim yapabilirim ben zaten. Anlatabildim mi?
+
+199
+00:38:35,907 --> 00:38:45,507
+En yüksek olasılıklıyı direkt seçmek gibisinden bir şey yerine bu olasılıkları kullanıp şu olasılıklarla seçim yaptırabilirim.
+
+200
+00:38:45,507 --> 00:38:51,507
+İkisinin de kendisine göre avantajları var. Yani şu ikisi de yapılabilecek şeyler.
+
+201
+00:38:51,891 --> 00:39:03,751
+Ne zaman duracağız? İstediğimiz sayıda kelime ya da cümle ürettiğimizde ya da cümle sonunu ifade eden bir tokenımız varsa ona eriştiğimizde falan gibisinden bir şey de olabilir.
+
+202
+00:39:05,451 --> 00:39:16,791
+Şimdi burada bir örnek göreceğiz. Bunun koduda dersin sitesinde var. Bir gram yani K-1. Herkes kendisinden bir öncesine sadece bağlı. Onu kullandığımızı.
+
+203
+00:39:17,268 --> 00:39:42,528
+En yüksek olasılıkları T'ten bir tanesini seçiyor bu. Bu T dediğimiz şey 5 mesela. T'yi ne kadar kısarsanız metinlerden kopya çekme olasılığı yani aynı sekansı üretme olsa o kadar artıyor. Ama ona kadar da büyütürseniz anlamlı şeyler oluşturma olasılığı o kadar azalıyor. Öyle de bir şey var. Şimdi burada bin tane ekonomi haberiyle bir derlem oluşturmuş. Bin tane sadece.
+
+204
+00:39:43,039 --> 00:39:55,639
+Yani haber metinleri bunlar, gazete haberleri. Bin tane ekonomi haberiyle bu istatistikler bir modeli oluşturulmuş ve KHT-1 ile biz şey yapacağız şimdi, ne derdi? Metin üreteceğiz.
+
+205
+00:39:56,579 --> 00:39:59,679
+Yani ekonomi haber metni üreteceğiz. Tamam mı?
+
+206
+00:40:00,960 --> 00:40:02,039
+Şimdi...
+
+207
+00:40:02,831 --> 00:40:18,532
+Buraya baktığımıza bakın, fonların %5'te bu konuda son 10'ında çok sayıda Türk Telekom gibi çok önemli olduğunu belirten Bakan Şimşek 2012'nin herhangi bir şeyler yazılmış.
+
+208
+00:40:18,631 --> 00:40:24,952
+Bu aşağıda baktığımızda bunları görüyoruz. Bunlar ayrı ayrı şeyler, haber metinleri.
+
+209
+00:40:24,952 --> 00:40:30,831
+Şimdi burada Kağan eşittir 1 olduğunu...
+
+210
+00:40:30,831 --> 00:40:46,511
+Direkt görebiliyoruz. Ne demek istiyorum? Yani şimdi ben size böyle metinler versem, bu metinler desem ki bunlar istatistiksel bir dil modeliyle üretilmişler. Ve bu istatistiksel dil modeli bana K derini söyleyin desem, bana bunu söyleyebilir misiniz?
+
+211
+00:40:46,511 --> 00:40:57,511
+Şimdi K'ş'tir bir olduğunun güzel bir kanıtı şu aslında. Bakın, ardışık kelimeler anlamlılar.
+
+212
+00:40:58,003 --> 00:41:19,063
+Ama ardışık üçlüler anlamlı değiller. Mesela bakın burada. Mesela yüzde on. Kendi başına anlamlı bir şey mi? Bakın yüzdeden sonra on gelme ihtimali çok yüksek mi? Olabilir değil mi? Hiç de anlamlı bir şey değil. Ama mesela on yıldanın yüksek mi? On yıldanın. Evet, o da yüksek. Ama yüzde on yılda.
+
+213
+00:41:21,556 --> 00:41:22,316
+Düşük.
+
+214
+00:41:22,696 --> 00:41:23,936
+O çok düşük yani.
+
+215
+00:41:23,936 --> 00:41:29,436
+Ama hikayeden işte yüzdeden sonra onu bulmaya çalışıyor. Ondan sonra yıldaya bakmaya çalışıyor.
+
+216
+00:41:29,536 --> 00:41:33,436
+Yani yüzdeden sonra onun gelme ihtimali evet doğru ama ondan sonra yıldanın gelme ihtimali o da tamam.
+
+217
+00:41:33,736 --> 00:41:37,675
+Ama yüzde ondan sonra yılda diye bir şey gelmez. Değil mi?
+
+218
+00:41:38,456 --> 00:41:42,056
+Ya da mesela bakın yer aldığı bir yer. Mesela yer aldığı anlamlı.
+
+219
+00:41:42,056 --> 00:41:46,155
+Ya da işte aldığı bilgiye o da anlamlı ama yer aldığı bilgiye.
+
+220
+00:41:47,092 --> 00:42:00,291
+Anlamsız. Anlatabildim mi? Yani kanun ne olduğu, şuradaki şeyleri incelediğinizde, örnekleri incelediğinizde karşınıza çıkabilir. Anlayabilirsiniz. Onu demeye çalışıyorum. Mümkün.
+
+221
+00:42:01,072 --> 00:42:05,431
+Şimdi buraya baktığımızda bu çok çok iyi değil belki. Sonra bakalım. İkincisi.
+
+222
+00:42:06,099 --> 00:42:29,859
+Trigran bakın, şimdi K2 yapmıştır. Bu sefer şey var, ne derler? Ardışık üçler birazcık daha şey, devamlı ucuz bilet satıyoruz. İyi yani. Türkiye'de üretilen fazlasını belirterek. Tabii şimdi burada mükemmel, ötesi falan bir şey beklemek çok da doğru değil ama ekonomi haberi gibi görünüyor mu? Birazcık belki ona bakmak lazım.
+
+223
+00:42:33,300 --> 00:42:44,539
+Ortada ne var sadece aslında? Ardışık anlamlı üçlüler var. Ortada bir haber, bir cümle yok aslında farkında mısın? Cümle dediğiniz şey nedir?
+
+224
+00:42:46,804 --> 00:43:10,463
+Bir birlikteliktir. Hepsi birlikte bir şey oluşturur değil mi? Yani bir cümlenin bütün parçaları birlikte birbirlerine bağlıdırlar. Bir cümlenin anlamı odur kabaca. Ama burada sadece artık üçlüler var. Tamam mı? Hiç de böyle bir cümle falan da söz etmemiz burada mümkün değil. İçinde şans eseri güzel ifadeler geçebilir mi buralarda? Geçebilirler.
+
+225
+00:43:10,900 --> 00:43:36,400
+Ama dediğim gibi, buradaki gördüğünüz şeyler cümleye benzemiyorlar. En iyi ihtimalle üç tane kelimenin anlamlı birliktelikleri. Ama bir cümle, topluluk manasında bir şey yok. Tabii kaynağın yapmanız lazım öyle şeyler elde edebilmeniz için daha da fazla arttırmanız lazım. Peki, Bin Ekonomik haberi de böyle çıkmış sonuçlar. Bin Magazin haberi de böyle çıkıyor mu? Bakalım.
+
+226
+00:43:37,460 --> 00:43:56,699
+Oyuncuların eğitimi yoktu ama hep başka şeyler yapmak için bu arada bu arkadaşlar benim dönüşüm benim gibi tabii ki oldu ama devam çok adam bir almaz sevgilisiyle. Neyse, magazin haberi arıyor bunlar. Dizilin vesaire vesaire. Bunlar da dediğim gibi tamamen her şey aynı. Mekanizma aynı. Sadece derlem değişmiş.
+
+227
+00:44:06,356 --> 00:44:20,996
+Şimdi burada farklı bir şey yapmışız. Dil modeli term document'ta. Olasılık hesabında ardışık geçme yerine, yani şundan sonra şunun geçmesi yerine aynı dokümanda geçmeyi kullansak.
+
+228
+00:44:20,996 --> 00:44:28,636
+Yani şunu demek istiyorum. Şu kelimeden sonra şu kelimenin gelme olasılığını biz o iki kelimenin birlikte arka arka geçişi değil de.
+
+229
+00:44:29,172 --> 00:44:49,711
+Elimizde bir sürü döküman olsun. Kaç tane dökümanda bunlar bir arada oluyor? Bir arada derken aynı dökümanın içinde farklı yerlerde de olsalar kabul edeceğiz yani. Bu durumda da bunlar birlikte geçmişlerdir. Ardaşık değiller ama birlikte geçmişlerdir diye hareket edebiliriz. Yani aynı dökümanda geçmeyi kullansak. Ardaşık geçmek yerine aynı dökümanda geçmeyi.
+
+230
+00:44:50,356 --> 00:45:15,856
+Burada frekansı çok yüksek kelimelerine atmak gerekli. Yoksa her kelimeye en benzeyen kelimeler onlar olacak. Çünkü bütün kelime, bütün metinlerde onlar geçtikleri için onları atmak lazım. K eşittir 1 ve T eşittir 15 üretilen cümle nasıl bir şey var? Faiz oranında yüksek yönetim kuruluk. Burası hiç de istediğimiz bir şey yok. Cümlenin üretimi için çok da manalı bir şey değil. Birlikte geçen kelimeler. Ardışık geçen değil de.
+
+231
+00:45:17,556 --> 00:45:41,355
+Burada gördüğünüz kelimeler, genelde öyle söyleyelim, aynı dökümanda bulunma olasılığı yüksek olan kelimeler. Ardışık kelimeler. Anlatabildim mi? Direkt bire bir şundan sonra şu geçiyor falan gibisinden bir şey değil. Burada hep şeyi görebiliyorsunuz. Sanki şeye benziyor bu biraz.
+
+232
+00:45:44,179 --> 00:46:06,539
+Keyword, extraction falan gibisinden bir metin vardı. O metnin içerisinde asıl ana noktalar nelerdir? Onları çıkartmak gibi bir şeye dönüşmüş şuradaki yapı. Mesela faize en çok benzeren kelime, merkez, kredi bankası, oranı, ticari. Bu faizden önce gelen sonra gelene göre hesaplanan bir şey değil bakın.
+
+233
+00:46:06,996 --> 00:46:31,275
+Yani faize en benzeyen kelimeler ondan sonra gelen kelimelerdir ya da ondan önce gelen kelimelerdir şeklinde hesaplanmıyor burada. Faize en benzeyen kelimeler, faiz de en çok aynı dökümanın içinde geçmiş olan kelimeler. Buraya baktığınızda gayet makul gözüküyor. Yani faiz kelimesine benzeyen, anlamsal olarak bir şekilde, bir şekilde benzeyen bir şey.
+
+234
+00:46:31,764 --> 00:46:39,044
+Benzer anlamı sahip kelimeleri bulmak için bu aynı dokümanda geçmekten faydalanacağız.
+
+235
+00:46:39,244 --> 00:46:39,864
+Yani de göreceğiz.
+
+236
+00:46:45,619 --> 00:47:08,859
+Şimdi küçük bir şey söyleyelim, ondan sonra zaten bir ara veririz. Şu noktada benzerlik noktasından kelime benzerliğine geçiyoruz. Bu istatistiksel dil modelleri bize bir kelimenin bir kelimeye benzerliği noktasında çok da fazla bir şey söylemiyorlar. Ne üzerinden çalışıyorlar bunlar? Çok kabaca. Ardışık olma.
+
+237
+00:47:09,300 --> 00:47:21,160
+Üzerinden çalışıyorlar. Şu sekanstan sonra şu ne gelir, bundan bahsediyorlar şu anki halleriyle. Şimdi bu noktadan sonra da biraz şeye bakmaya çalışacağız.
+
+238
+00:47:21,160 --> 00:47:34,300
+Yani elimizde iki tane kelime var. Bu iki kelimenin benzerliğini bulmak için neler yapılabilir? Neler yapılmış bugüne kadar? Birazcık onlara bakmaya çalışacağız. Bunlardan ilki işte karakter benzerliği, edit distance.
+
+239
+00:47:34,847 --> 00:47:50,788
+Standart yaklaşımlar. Yani işte bir kelimeyi diğer kelimeyi dönüştürmek için kaç kez klavye tuşuna dokunmak gerekir? Elite Distance dediğimiz şey bu. Ya da işte Leminschlein Distance dediğimiz şey onun birazcık da ağırlıklandırılmış. Ağırlıklandırılmış demek ne demek? Ne bileyim işte bir karakter.
+
+240
+00:47:51,539 --> 00:48:05,299
+Silmenin ağırlığı şöyleyken karakter eklemenin ağırlığı şudur ya da yanlışı düzeltmenin ağırlığı şudur falan gibisinden böyle ağırlıklandırmalar yapabiliyorsunuz oralarda. Örnekleri dediğim gibi yine oradan bakarsınız dersin sayfasında.
+
+241
+00:48:05,299 --> 00:48:19,299
+Bizi başka ilgilenen şeylerden bir tanesi de anlamsal benzerlik. İşte burada karakter benzerliğinin hiçbir şekilde işimize yarayamadığı ama biz bir şekilde biliyoruz ki mesela Cimbom'la Galatasaray'ın arasında bir şey var ama bunlara baktığımızda.
+
+242
+00:48:19,539 --> 00:48:26,739
+Aralığında karakter benzerliği anlamda hiçbir şey yok. Levinstein Distance'a baktığınızda burada bunların arası uçuklar.
+
+243
+00:48:26,739 --> 00:48:32,099
+Ama gerçekte öyle değiller mesela. Bunun gibi bir sürü dolu örnek verebilirsiniz.
+
+244
+00:48:32,099 --> 00:48:40,019
+Peki, şimdi buna devam edeceğiz. Şimdi o zaman bir ara verelim arkadaşlar. Saat 9.48.10'a kadar bir ara verelim.
+
+245
+00:48:40,019 --> 00:48:43,860
+Tamam. Stop diyeyim, chat'e yazayım.
+
+246
+00:48:46,068 --> 00:48:49,068
+Z8 demiş. Neye 6 demiş acaba?
+
+247
+00:48:53,068 --> 00:48:54,068
+Svayet hocam.
+
+248
+00:48:55,068 --> 00:48:58,068
+Tamam, teşekkür ederim.
+
+249
+00:49:05,139 --> 00:49:06,639
+Az sonra görüşmek üzere arkadaşlar.
+
+250
+01:02:30,547 --> 01:02:33,227
+Merhaba arkadaşlar, sesim geliyor değil mi?
+
+251
+01:02:35,187 --> 01:02:35,947
+Evet hocam geliyor.
+
+252
+01:02:38,027 --> 01:02:39,367
+Slide da geldi.
+
+253
+01:02:40,867 --> 01:02:41,047
+Evet.
+
+254
+01:02:43,987 --> 01:02:48,367
+Şimdi bu anlamsal benzerlik mevzusuna yavaş yavaş yıkayalım.
+
+255
+01:02:49,460 --> 01:03:11,519
+Şimdi burada bugün anlatacağım şeyler birazdan bugüne daha doğrusu hani şimdiki yöntemlere gelene kadar nerelerden geçilmiş, nasıl hareket edilmiş bir tarihçe aslında bir açıdan baktığınızda.
+
+256
+01:03:11,519 --> 01:03:14,000
+O anlamda önemli.
+
+257
+01:03:14,720 --> 01:03:15,160
+Nerede?
+
+258
+01:03:15,599 --> 01:03:38,959
+Ne türlü bir problemi nasıl çözmeye çalışmışlar? Getirdikleri çözüm ne kadar etkili olmuş, neyi kapatmış, neyi kapatamamış? Onları birazcık incelemek, anlamak önemli. Çünkü bu tarz işler bir öncekinin belli eksiklikleri üzerine bir şeyleri bina etmek.
+
+259
+01:03:39,956 --> 01:03:54,336
+İlerliyor. Dolayısıyla böyle bir tarihsel bir akışı birazcık göreceğiz. Buradaki yöntemlerin sırası birebir tarihsel sırası değil ama benzerler. Yani öyle söyleyeyim.
+
+260
+01:03:56,436 --> 01:04:06,896
+Şimdi karşımıza ilk olarak göreceğimiz yöntem Latin Semantic Indexing diye kullanılan yöntem.
+
+261
+01:04:08,115 --> 01:04:20,056
+Şimdi kelimenin ardındaki saklı kavramları ortaya çıkarıp, dokümanları bu kavramlar uzayında temsil et. Şimdi bu ifadenin ne demek istediğini birazcık anlatmaya çalışayım.
+
+262
+01:04:21,175 --> 01:04:29,795
+Şimdi elimizde bir doküman turn maddesi var. Doküman turn maddesi dediğimiz şey şöyle bir şey aslında, hepiniz zaten aşinasınızdır.
+
+263
+01:04:29,995 --> 01:04:32,375
+Değil mi? Doküman turn maddesini anlatmama gerek var mı?
+
+264
+01:04:34,324 --> 01:04:37,483
+Yani bu madresin içerisindeki her bir hücrenin anlamı ne demek?
+
+265
+01:04:46,420 --> 01:04:51,280
+Pek bir söz çıkmadı. Peki o zaman söylemeye çalışayım.
+
+266
+01:04:51,280 --> 01:04:57,920
+Şimdi diyelim ki sizin elinizde bir metin olsun.
+
+267
+01:05:03,260 --> 01:05:05,740
+Metinler olsun daha doğrusu.
+
+268
+01:05:08,500 --> 01:05:21,199
+Metinlerimiz, tokenlarımız olsun. Tokenlara bölmüştür. Kelimeler olabilir, başka bir şeyler olabilir. Alt kelimeler olabilir, karakterler olabilir vs. vs. bir sürü bir şeyler olabilir ama tokenlarımızı biz W'de ifade edelim.
+
+269
+01:05:21,199 --> 01:05:27,739
+W1 var, W3 var, W5 var, W4 var. Bu bir metin. Dört kelimelik bir.
+
+270
+01:05:28,159 --> 01:05:38,159
+Sonra W2 ile başlayan başka bir şey var. W4 gelmiş, W5 gelmiş. Böyle bir şey var. Sonra başka bir cümle var. W8 gelmiş.
+
+271
+01:05:41,159 --> 01:05:45,159
+Sonra W3 gelsin. Mesela böyle bir şey olsun elimizde.
+
+272
+01:05:47,159 --> 01:05:51,159
+Şimdi bunlar benim dokümanlarım.
+
+273
+01:05:51,159 --> 01:05:54,059
+Tamam mı? Doküman bunlar.
+
+274
+01:05:55,027 --> 01:06:22,407
+Şimdi ben bu şeyi kullanıp, dokümanları kullanıp bir sözlük oluşturuyorum. Bu sözlüğümde şu W1 başına, W2 var, W3 var, W4 var, W5 var, W6 var, W7. O zaman 7'yi de bir yere ekleyelim mesela. Odası da W.
+
+275
+01:06:22,927 --> 01:06:38,708
+7 olsun. W7 var, W8 var. O bizim söylediğimiz. Şimdi bunu kullanarak bir matriz oluşturacağım. Bu bilgileri kullanarak bir matriz oluşturacağım. Nasıl bir matriz olacak bu?
+
+276
+01:06:56,019 --> 01:06:57,019
+Teşekkürler.
+
+277
+01:07:14,547 --> 01:07:19,747
+Doküman 1, Doküman 2, Doküman 3, Doküman 4 olsun bunlar.
+
+278
+01:07:23,764 --> 01:07:25,764
+Şuraya bir şey istemiyorum.
+
+279
+01:07:55,284 --> 01:07:56,284
+Şunlar budurdu.
+
+280
+01:08:04,788 --> 01:08:31,128
+W6, W7, W8 olsun. Şimdi D1 dokümanının içinde geçen kelimeleri işaretleyeceğim. Bu geçmiş, W2 yok, W3 geçmiş, W5 geçmiş, W4 geçmiş. Peki, doküman 2'ye bakalım. Şurada şöyle.
+
+281
+01:08:32,115 --> 01:08:40,115
+Doküman 1 bu, Doküman 2 bu, Doküman 3 bu. Tamam mı?
+
+282
+01:08:40,115 --> 01:08:48,115
+Bir de Doküman 4'ü mü? Peki artık, uygun hale getirelim. W2, W3, W4 diyeceğiz.
+
+283
+01:09:00,115 --> 01:09:20,956
+Sonra doküman 2'yi işaretleyelim. Doküman 2'de W1 geçmiş, W4 geçmiş, W5 geçmiş. Sonra doküman 3'ü işaretleyelim. 6 geçmiş, 8 geçmiş, 3 geçmiş, 7 geçmiş, 3 geçmiş, 4 geçmiş.
+
+284
+01:09:22,804 --> 01:09:42,584
+Şimdi bu yazdığım, oluşturduğum tablo benim term document matrisi. Yani her bir hücrenin değeri, i, j hücresinin değeri, i'inci terim, j'inci dokümanda kaç kez geçmiş ya da geçmiş mi, geçmemiş mi?
+
+285
+01:09:42,884 --> 01:09:47,904
+Bir sıfırla kadar kopyalayabilirsiniz. Birden fazla kez de geçmiş olabilir bir kelime. Onun sayısını da yazabilirsiniz.
+
+286
+01:09:49,076 --> 01:10:00,636
+İkisi de mümkün yaklaşımda. Şimdi tördöküman plantısından kastımız bu. Şimdi buraya baktığımızda bu matrisin gerçek halini birazcık hayal etmenizi istiyorum.
+
+287
+01:10:01,816 --> 01:10:14,876
+Yani mesela demin ki haber metinlerini düşünelim. Elimizde ben dört tane haber metini alsam, bu dört tane haber metniyle bir sözlük oluştursam ve bu matrisi oluştursam nasıl bir matris olur bu?
+
+288
+01:10:30,292 --> 01:10:35,811
+Can matrisin boyutu bayağı büyük olur. Yani nasıl matris derken acaba boyutunu sormak istediniz?
+
+289
+01:10:36,532 --> 01:10:43,492
+Evet, evet. Yani büyük derken neresi büyük olur? Yine dört tane haber metni olsa.
+
+290
+01:10:44,492 --> 01:10:46,192
+Bu sefer kelime sayıları fazla olacak.
+
+291
+01:10:46,192 --> 01:10:50,452
+Kelime sayıları, kelime sayısı acayip fazla olur değil mi? Kelime sayısı acayip fazla olur.
+
+292
+01:10:50,452 --> 01:10:53,452
+Peki, belki işte...
+
+293
+01:10:53,492 --> 01:10:59,492
+500 tane farklı kelime geçecek değil mi? 4 tane haber metnin içerisinde 500'e 4'lük bir matris olacak.
+
+294
+01:11:02,712 --> 01:11:05,492
+Ya da işte bir...
+
+295
+01:11:06,492 --> 01:11:07,792
+Şekten de yazanlar.
+
+296
+01:11:08,512 --> 01:11:13,792
+Sparse matris. Evet. Sparse matris diye ifade edeceğiz bunu.
+
+297
+01:11:15,971 --> 01:11:19,572
+İçindeki birilerin sayısı oldukça nadir olur değil mi?
+
+298
+01:11:20,020 --> 01:11:45,800
+Buradaki şey o aslında, hikaye o. Yani şimdi sözlük boyutumuzun çok kolaylıkla binlere, on binlere çıkabileceğini tahmin edebilirsiniz. Sözlük boyutumuzdan bahsediyorum. Ve her bir dökümanın içerisinde bu on bin taneden işte mesela çok azı yer alacaktır. Yani belki içerisinde tekil olarak iki yüz, üç yüz tane kelime olacak. O dökümanlar bahsediyorum.
+
+299
+01:11:46,323 --> 01:11:57,603
+Dolayısıyla oldukça spars matrisinden kastığımız bol miktarda sıfır içeren matris demek. Seyrek demek. Spars'ın anlamında seyrek. Böyle bir matris olacak.
+
+300
+01:11:58,463 --> 01:12:11,603
+Şimdi, retensimantik indeksik ne yapıyor? Ondan bahsedeceğim. Retensimantik indeksikin şeyle bir alakası yok. Ne derler ona kelime? Doğaldır işlemeyle direkt birebir alakalı bir...
+
+301
+01:12:13,876 --> 01:12:27,416
+Daha doğrusu Latent Semantic Indexing SVD'nin, Singular Value Decomposition'ın NLP değil, NLP uygulanması aslında öyle ifade edebilirim.
+
+302
+01:12:27,796 --> 01:12:37,876
+Dolayısıyla Latent Semantic Indexing evet NLP ile alakalı bir kavram ama kullandığı yöntemin kendisi tamamen matematiksel bir şey, enerji bir yöntem.
+
+303
+01:12:41,268 --> 01:12:55,827
+Bir matrisi çarpanlarına ayırma işlemi aslında singular value decomposition dediğin tekil değer ayrıştırma diye de geçiyor.
+
+304
+01:12:55,827 --> 01:13:05,688
+Aslında bizim şu anda kelimelerimizin her biri, bakın kelimelerimizin her biri,
+
+305
+01:13:07,347 --> 01:13:16,167
+Şöyle hayal edebilirsiniz. Bu kelime dört boyutlu uzayda bir nokta.
+
+306
+01:13:17,652 --> 01:13:42,652
+Birinci boyutunun değeri bir, ikinci boyutunun değeri sıfır, üç dört, onlar da sıfırlar. İkinci kelimem yine dört boyutlu uzayda bir nokta, onun da ikinci boyutu sadece bir, diğer bütün boyutları sıfır. Üçüncü kelimem de yine o da dört boyutlu aynı, bunların hepsi aynı uzayda yeri olarak görüyorsunuz, hepsi aynı uzaydalar. Dört boyutlu uzaydalar ve ben burada...
+
+307
+01:13:43,699 --> 01:14:00,479
+Bunu bu şekilde düşünebilirim. Ya da bu anlambilim dersin transpozunu düşünün. Transpozunda bu sefer benim dökümanlarım, sözlük boyutum neyse ki burada sekiz, sözlük boyutlu uzayda bir noktalar.
+
+308
+01:14:03,539 --> 01:14:20,520
+Bu iki rakamın da çok büyük olduğunu görebiliyorsunuz. Olabileceğini tahmin edebilirsiniz rahatlıkla. Buradaki çok basit örneğimiz için belki öyle gözükmüyor ama gerçek bir şeye dönüştürdüğünüzde, yani içinde yüz binlerce haber metnini, yüz binlerce web sayfasının falan olduğu dev bir derlem düşünün.
+
+309
+01:14:20,520 --> 01:14:30,879
+Bunun içerisinde bu durumda hem de sayınız, yani doküman sayınız hem korkunç boyutlara ulaşacaktır hem de sözlük boyutunuz korkunç boyutlara ulaşacaktır. İkisi de korkunç boyutlara ulaşacaklar.
+
+310
+01:14:31,539 --> 01:14:42,399
+Her iki boyuttan da baktığınızda, her iki boyuttan da baktığınızda, yani dokümanları temsil ettiğiniz uzayda korkunç, büyük boyutlu bir uzay ve oldukça seyrekli bir uzay olacak.
+
+311
+01:14:46,771 --> 01:14:59,992
+Düşünebileceğiniz uzay da yine korkunç büyük bir boyutlu bir uzay olacak ama içerisinde yine belki frekansı özellikle düşük olan kelimeler için yine spars bir şey olacak.
+
+312
+01:14:59,992 --> 01:15:04,992
+Şimdi bu kocaman matrisi...
+
+313
+01:15:05,747 --> 01:15:30,287
+Biz çarpanlarını ayırabilir miyiz? Matematik dediğim gibi bunu yapmanın yolu işte bu Singular Valley Decomposition. Yani bir matrisi, şu A matrisini üç tane çarpanına ayırıyor aslında. Bu üç tane çarpan yani A matrisini şu turn document kısımlarını hiç görmezseniz bu tamamen matematiksel bir işlem. M'e enlik bir matris var. Kare olmayan bir matris. Kare olmayan matrisleri de uydanabiliyor SVD. Güzel tarafı orası zaten.
+
+314
+01:15:32,532 --> 01:15:44,612
+Sadece kare matrisleri çarpanlar ayırmak için de yöntemler vardı ama SVD'nin güzel tarafı dediğim gibi bu tarafa kullanılabilmesinin güzel tarafı kare olması gerekmiyor matrisin çarpanlar ayırması için.
+
+315
+01:15:45,292 --> 01:15:56,692
+M çarpı enlik bir matrisi M çarpı R'lik bir matris çarpı R'lik bir matris R çarpı enlik bir matrise dönüştürüyor. Şu üç tane matrise dönüştürüyor.
+
+316
+01:15:57,043 --> 01:16:10,043
+Yaptığı şey çok temelde bu. Ve ben eğer ki bu yaptığım iş, ki yapmaya çalıştığı şey de aslında bu maddesin içindeki bütün değişkenliği...
+
+317
+01:16:10,100 --> 01:16:27,079
+İfade edebilecek çok daha alt uzaylı bir temsil bulmaya çalışıyor. Termleri döküman sayısı boyutlu bir uzaydan çok daha küçük boyuta indirgemeye çalışan bir yaklaşım bulmaya çalışıyor.
+
+318
+01:16:27,079 --> 01:16:35,540
+Ki şuradaki D diye ifade ettim, şu R çarpı R'lik kısım bizim bu terimlerimizin yer aldığı uzayı temsil ediyor.
+
+319
+01:16:36,079 --> 01:16:37,600
+Şimdi terimlerimizin yer aldığı uzay.
+
+320
+01:16:38,100 --> 01:16:59,740
+R'ye baktığımızda R çarpı R'lik bir şey zaten. M çarpı R çarpı R çarpı R çarpı R çarpı N şeklinde. Ben bu R'yi çok daha küçük bir hale getirebiliyorum. K gibisinden bir şey indirgeyebiliyorum. K gibisinden bir şey indirgedeyim de o zaman işte şeyler ne derler ona. Hem dökümanlarıma hem de terimlerimi çok daha küçük boyutlu yani burada mesela işte.
+
+321
+01:17:00,180 --> 01:17:15,239
+Döküman sayısı boyutlu bir uzay ya da sözlük boyutu boyutlu bir uzay gibisinden dev uzaylar yerine çok daha küçük uzaylarda temsil edebiliyorum. Eğer ki yeterli verim varsa elimde. Öyle söyleyeyim.
+
+322
+01:17:16,500 --> 01:17:23,139
+Şimdi dediğim gibi bu matematikte kullanılan bir yaklaşımın enerjiye uygulanması. Ne asıl gerçekleşiyor? Mesela burada bir tane şey var.
+
+323
+01:17:26,484 --> 01:17:42,604
+Bir matrisim var. Bu matrisin sütunlarında şu anda şeyler var. Sözlük kelimelerim var. Satırlarda ise dökümanları olduğunu düşünün. Ve bu dökümanların da ben sınıflarını bildiğimi düşünüyorum. Yani bilmiyorum ama buraya yazmışım.
+
+324
+01:17:43,963 --> 01:17:49,784
+SVD sonuçta şey değil. Ne derler onu? Superwise bir şey. Yani sınıf bilgisine falan hiç ihtiyacı yok o noktada düşünürsek.
+
+325
+01:17:50,228 --> 01:18:05,467
+Şimdi şurada bakın bir döküman varmış. Bu dökümanın içerisinde kedi, miau kelimeleri geçiyormuş ve bu kedi sınıfından bir şeymiş. Kedi ve süt geçiyormuş. Bu yine kedi sınıfından bir şeymiş. Dört tane kedi sınıfından dökümanım var ve dört tane de köpek sınıfından dökümanım var.
+
+326
+01:18:05,823 --> 01:18:18,384
+Ben şu anda bu döküman terim madresi, bakın satırlarda dökümanlar var, sütunlarda kelimeler var. Bu döküman terim madresini tersine çevireceğim ki terim döküman madresi haline getireyim.
+
+327
+01:18:20,223 --> 01:18:29,063
+Tersini çevirdim, madresini kelime döküman haline getirdim. Daha sonra SVD'ye verdim. SVD bana işte bu demin bahsettiğim üç tane çarpanı kabaca veriyor.
+
+328
+01:18:29,488 --> 01:18:56,507
+Bu çarpanlar SUV'leri kullandığımda, bu aslında D dediğimiz şey 9 çarpı 8'i bir kelime döküman maddesiydi. Bunun U dediğimiz şey kelime kavram maddesini ifade ediyor. S dediğimiz şey singular value'ları ifade ediyor. V dediğimiz şey ise döküman kavramları ifade ediyor, geçişleri ifade ediyor. Ama bunlar NLP'deki yorumlanışları, öyle söyleyeyim.
+
+329
+01:18:57,939 --> 01:19:09,199
+Temeldeki iş dediğim gibi, yani principal component anis gibi bir işlem buradaki yapılan işlem. Matematiksel anlamda demek istiyorum. Energiye yorumlarsanız bu halde yorumlayabilirsiniz.
+
+330
+01:19:09,199 --> 01:19:14,199
+Şimdi bunu kullanmaya kalktığımızda biz normal halin, yani bunun...
+
+331
+01:19:14,612 --> 01:19:31,612
+Svd'nin kendisini direkt şu U, Sv'nin kendisini de kullanabiliriz. Ya da onu daha düşük bir anda koyabiliriz. Yani mesela R'yi 5 veren seçip işlem yapabilir. R'yi 5 seçip işlem yapmak demek ne demek? U'nun, S'nin ve V'nin gerekli olan sadece ilk kısımlarını işe katmak demek.
+
+332
+01:19:32,612 --> 01:19:41,371
+Principal Component anınızı hatırlarsanız belki şuradaki şu Singular Value'lar büyükten küçülüyor. Yani Aygün Value'lar daha doğrusu. Bu bir şey bir matriz.
+
+333
+01:19:43,507 --> 01:20:06,688
+Şu iki tarafı sıfırlarla dolu olan bir matris bu. Şu orta tarafı, yani diagonal bir matris. Diagonal bir matrisin içerisinde en uçta, sol üst köşede en büyük rakam yer alıyor. Oradan aşağı doğru küçülüyor, küçülüyor, küçülüyor, küçülüyor. Sonra buralarda belki bir sürü sıfırlar var. Şu diagonalın şurası sıfırlardan dolu olabiliyor. İşte orada bir sürü sıfırlar varsa bunun anlamı şu demek.
+
+334
+01:20:07,155 --> 01:20:24,456
+Sen burada K çarpı K'lık bir uzayda bunu temsil edeceğine, onu çok daha küçük bir uzayda da, ne bileyim ben, işte 100 tane senin K'nı 100 olsun diyelim ki, ama bunun son 30 tane sıfırlardan oluşuyor. O zaman sen bunu işte 70 boyutlu bir uzayda temsil edebilirsin.
+
+335
+01:20:25,108 --> 01:20:51,427
+Kabaca hikaye bu. Ve bu işlemi gerçekleştirdiğimizde, yani mesela şurada onu yapmışız, beşi almışız sadece, beş tane ünlü almışız. Yeni döküman maddesini oluşturmuşuz yine bunların çarpımlarıyla. Bunu gerçekleştirdiğimizde şurada şeyi görebiliyoruz, ne derler ona, dökümanların birbirleriyle olan uzaklıklarını görmüşüz. Sekiz tane şey var burada, pardon yanlış, şey yapmayayım da.
+
+336
+01:20:52,212 --> 01:20:53,252
+Söylemeyeyim de.
+
+337
+01:20:57,352 --> 01:21:00,032
+Evet, sekiz tane dokümanımız var.
+
+338
+01:21:05,300 --> 01:21:15,212
+Orijinal uzayda baktığınızda şu halde bunlar. Dokümanlarımız. Ben bunları bir alta çektiğimde, alta dediğim hani...
+
+339
+01:21:15,220 --> 01:21:36,880
+9 boyuttan 5 boyuta indirgediğimde çok daha şey görebiliyorum. Ne derli? İyi görebiliyorum aralarındaki benzerlikleri. Aralarındaki benzerlikleri görmekten kalsın burada herhangi bir sınıf bilgisi falan yok. Ama mesela 1, 4, 2, 3 birlikteler. İşte 5, 7, 8, 6 falan onlar birlikteler. Bu 5, 7, 8, 6 falan neyi ifade ediyorlar aslında şu şeye bakarsak.
+
+340
+01:21:37,167 --> 01:22:00,167
+Mesela 1-2-3-4'ün, şurada görüyorsunuz, kedi sınıfını. Ama bakın şeyi kullanmadım hiç ben. Şu bilgiyi kullanmadım. Bunlar kedi sınıfıyla alakalı bir şey, bunlar kepek sınıfıyla alakalı bir şey diye sisteme hiçbir şey vermedim. Bilgi vermedim. Sadece burada yazıyor. Ama SVD'ye falan böyle bir şey, unsupervised bir yaklaşım, onu söylemiştim. Ona rağmen fena olmayan bir şekilde bunları şey yapabiliyor, yeterli bunu bulabiliyor.
+
+341
+01:22:00,560 --> 01:22:12,300
+Güzel, hani bu işe yarar gibi gözüküyor. Başka ne var bunun gibi? Bunu şeyde yaparsak, büyük ölçekliği yaparsak, bunu biraz büyüteyim daha rahat şey yapılır.
+
+342
+01:22:15,120 --> 01:22:23,300
+Kodunu falan görebilirsiniz. Tabii buradaki hani 8 kelime, 9 doküman falan gibisinden bir şey değil de. İrice bir...
+
+343
+01:22:23,712 --> 01:22:27,532
+Ver hükümesi üzerinde bunu gerçekleştirirsek nasıl bir şeyler çıkıyor karşımıza?
+
+344
+01:22:27,912 --> 01:22:33,632
+Kelimelerin koordinatlarını, iki boyuttaki koordinatlarını alıp buraya yazdırmışım ama tabii çok iyi gözükmüyor.
+
+345
+01:22:33,692 --> 01:22:35,172
+Onları biraz büyütmüştür şurada.
+
+346
+01:22:35,652 --> 01:22:37,392
+Buradaki kelimelerin koordinatlarını görüyorsunuz burada.
+
+347
+01:22:38,612 --> 01:22:46,452
+Elimizdeki, metindeki kelimelerin koordinatları. İki-iki koordinatları tabii. İki-iki koordinatları. Yoksa daha tam şeyi hatırlamıyorum.
+
+348
+01:22:46,452 --> 01:22:53,952
+Bu kelimeler herhalde gerçekte kaç koordinatlar ama iki-iki koordinatlarına bakıyorum. Buraya baktığımızda işte mesela şu bölgeyi birazcık büyütmüşüm.
+
+349
+01:22:54,352 --> 01:23:06,612
+İşte başrol, demet, intikam, duygu, aksu, biraz magazinsel falan bir şeyler var mesela şu bölgede. Şu bölgeye baktığımızda şu mavi bölgeye baktığımızda enerji, gaz, şirket, ekonomiyle falan alakalı bir şeyler var.
+
+350
+01:23:06,612 --> 01:23:30,992
+Bu da haber metinleri kullanmışlar herhalde burada yine. Magazin haberlerine dair kelimelerin koordinatları, ekonomi haberlerindeki kelimelerin koordinatlarından belli bir miktar ayrıldığını görebiliyorsunuz. Çok süperdir dildi falan, orası ayrı bir hikaye. Ama kelimeler burada gördüğünüz gibi neye dönüşmüşler?
+
+351
+01:23:31,444 --> 01:23:58,684
+Koordinatlara dönüşmüşler. Zaten kelimeler koordinatlara dönüşmüşler. Yani şunu demek istiyorum. Biz şurada, şu yaptığımız iş aslında kelimeleri, şu kelimeleri görüyorsunuz. Bu kelimeler aslında bir koordinat sistemindeler. Ama bu koordinat sistemi aşırı derece spars bir koordinat sistemi. Yani içerisinde belki sadece birlerden ve sıfırlardan oluşuyor. Çok büyük uzaylı bir şey. Buradan W1 ile W2'nin birbirine benzerliğini hesaplamak çok...
+
+352
+01:23:58,960 --> 01:24:25,940
+Makul bir şey değil, hareket değil. Ama ben bunları çok daha küçük bir uzaya sıkıştırdığımda, yani W'larım, tokenlarımın temsil uzayını 20-30 bin boyuttan örneğin, burada sadece ilk iki boyutunu verdiğim belki 50 felandır burada. Tam şimdi direkt rakamı hatırlarım, kodun içerisine girip bakabilirsiniz.
+
+353
+01:24:26,420 --> 01:24:38,199
+Oraya sıkıştırdığımda kelimelerin koordinatlarını, mesela ilk iki koordinatını alsak bile fena olmayan böyle anlamsal yakınlıklar falan birazcık gözümüze çarpmaya başlıyor.
+
+354
+01:24:40,243 --> 01:24:58,863
+Bunlar oynayabilirsiniz istediğiniz gibi. Başka ne var? Yine buna çok benzeyen, işte Vatan Triklet Allocation diye bir yöntem var. Bu da işte dokümanlar içindeki konulardan oluşur, konular içindeki kelimelerden oluşur, dönüşen bu SVD'nin bir, ne diyeyim?
+
+355
+01:25:01,747 --> 01:25:18,347
+Üçlü hali, iççe geçmiş üçlü hali gibi değerlendirebiliriz bunu da. Bu da çok benzer bir şey gerçekleştiriyor. Bizim elimizde şöyle birazcık büyütürsem. Topikler var. Bu topiklerin içinde kelimeler var ve dokümanlar da bu topiklerden oluşuyor.
+
+356
+01:25:18,347 --> 01:25:29,747
+Yani burada bir şey var, bir metin var. O metnin içerisinde belli konular var. Her metnin içinde belli konular. O konuların her biri de belli kelimelerden oluşuyor. Bu kelimelerin her birinin o topiğe ait olma olsak.
+
+357
+01:25:29,747 --> 01:25:51,747
+Bu da böyle üçlü bir yapıyla bunu gerçekleştiriyor. Bu bir ara bayağı bir popüler olmuştu ama dediğim gibi daha sonra çok çok şey olmadı. İyi gitmedi ama hızlı işlem yapmak için elinizi çok korkunç büyük boyutlarda değerlendiriniz falan yoksa hızlı işlem yapmak için.
+
+358
+01:25:52,112 --> 01:26:16,992
+S.V.D. gibi çıktılar alabileceğiniz öyle söyleyeyim. Ama fazlası fazlalık olarak bir de size S.V.D. ise kelimelerin yani dokümanların sadece kelimelerden oluşuyor. Kelimeler birlikteliklerinden oluştuklarından bahsediyor ama L.D.E. ise bir fark var.
+
+359
+01:26:17,908 --> 01:26:34,908
+Konuları oluşturuyor, konular dokümanları oluşturuyor. Öyle bir farkı var. Bir kelime de işte bu topiklerden bir tanesine ya da birden fazlasına ait olabiliyor vesaire vesaire. Mesela işte burada belli eldeyi çalıştırdığınızda topikler ve topiklerin…
+
+360
+01:26:36,148 --> 01:27:01,708
+İçindeki en fazla o topiği temsil eden kelimeleri görebiliyorsunuz. Mesela burada şu topik herhalde magazinle alakalı bir konuymuş. Burada ekonomiyle falan alakalı bir şey çıkmış. Belki burada dünya falan, burada otomobil, şirket, burada birazcık ekonomiyle alakalı işler çıkmış herhalde. Bunlar elde edilebiliyorlar. Öyle söyleyeyim.
+
+361
+01:27:02,323 --> 01:27:22,743
+Şimdi bu yaklaşımlar, şurada ne kadarki yaklaşımlar da aslında birazcık terimlerimizin çok çok büyük boyutlu spars uzaylardan daha dens, yoğun.
+
+362
+01:27:23,123 --> 01:27:43,043
+Bu konuya tekrardan geri döneceğiz. Yani bir kelimenin bir koordinat sistemindeki bir noktayla temsil edilmesi hususuna tekrardan döneceğiz.
+
+363
+01:27:43,507 --> 01:27:52,567
+Ama ondan önce tarihsel olarak birazcık daha geçmişte bu işler nasıl yapılıyorduya dair birkaç bir şeylerden bahsetmek istiyorum.
+
+364
+01:27:54,347 --> 01:28:03,927
+Şimdi bu noktada eskiden diyelim kavramsal ağaçlar kullanılmış.
+
+365
+01:28:03,927 --> 01:28:06,927
+Şimdi kavramsal ağaç dediğimiz şey aslında...
+
+366
+01:28:07,636 --> 01:28:20,836
+Elimizdeki bütün kavramların hepsinin bir, şu bir tür şudur, şu bir tür şudur şeklinde birbirine bağlandığı bir ağaç düşünün.
+
+367
+01:28:20,836 --> 01:28:30,996
+Yani bu ağacın en tepesinde belki şey var, onun altında belki somut şeyler ve soyut şeyler var.
+
+368
+01:28:31,604 --> 01:28:54,584
+Onun altında altında altında altında. Bütün her şey, elimizdeki bütün kavramların böyle bir ağacın içerisinde olduğunu düşünüyorum. Bunun içinde kedi de var, köpek de var, kuş da var, ne bileyim televizyonda var, bilgisayarda var vesaire. Her şey şeyin içerisinde var, ağacın içerisinde var ve ağacın yapısı tamamen şuna bağlıdır. Şu bir tür şudur. Tamam mı?
+
+369
+01:28:55,091 --> 01:29:12,031
+Yani hayvanların altında alt kategorileri var, onların altında alt kategorileri var, eşyalar var, eşyaların altında alt kategorileri var, onların alt kategorileri var. Böyle bir dev bir ağaç düşünün. Böyle bir ağaç elimizde olsa biz iki tane kelimenin arasındaki anlamsal benzerliği bulabilir miyiz?
+
+370
+01:29:12,627 --> 01:29:32,087
+Bunun için iki tane geçmişte yaklaşım gelişimleri. Bir tanesi işte bu sadece ağacı kullanarak hareket etmek, bir tanesi ise ağacı ve bir de harici olarak bir derlemi kullanarak hareket etmek. Derlemlerin önlemi gördüğünüz gibi geçmişten beri epey biliniyor.
+
+371
+01:29:32,659 --> 01:29:50,819
+Şimdi 98 yılından bahsediyorum. 98 yılında Nikok ve Chodorov'un böyle bir kavramsal ağaçı kullanarak iki tane, buradaki C1 ve C2 bizim kavramlarımız, C1 ve C2 kavramları arasındaki anlamsal benzerliği ölçmek için önerdikleri formül.
+
+372
+01:29:51,460 --> 01:29:58,139
+Bu formül nasıl bir şey diyor ki C1, C2, iki sin set arasında, burada sin set diye bir kavram geçiyor. Şimdi sin set demek ne demek?
+
+373
+01:30:00,000 --> 01:30:24,280
+Sinset aslında WordNet diye bir şey var. Ne diyeyim? Bir sözlük var. Tamam mı? Bu sözlük ama bilgisayarlarca daha kolay işlenebilir bir sözlük.
+
+374
+01:30:27,699 --> 01:30:39,039
+İçinde daha önceki haftalarda konuşmuştuk. Şu kavramla şu kavramın arasında şöyle bir ilişki vardır diye üçlülerimiz falan vardı ya.
+
+375
+01:30:39,039 --> 01:30:49,119
+Bu WordNet'te bu üçlüler halinde bulunuyorlar ama kavramlar kendi başlarına bulunmuyorlar da.
+
+376
+01:30:49,555 --> 01:31:09,555
+Sinset denilen, yani sinonim set, sinset ve sinonim setin kısaltılmışı eş anlamlı kümeler içerisinde bulunuyorlar. Yani birbiriyle aynı anlama sahip kelimeler bir küme. O kümelerin idleri var.
+
+377
+01:31:12,083 --> 01:31:32,563
+Şununla şunun arasında şöyle bir ilişki vardır dediğimizde sinsetler arasında bir ilişki kuruluyor. Sinsetler arasında bir ilişki kurulması sayesinde aslında birazcık yerden kazanıyorsunuz. Çünkü onun içindeki her birinin, öteki taraftaki her biriyle o ilişkiye sahip olduğunu söylemek ayrı ayrı kazanıyorsunuz.
+
+378
+01:31:33,043 --> 01:31:58,884
+Ama tabii şey kısmı da var. Bir tane kelime birden fazla sinsetin içerisinde de çok rahatlıkla bulunabiliyor. Çünkü bir kelimenin birden fazla anlamı varsa her bir anlamını ifade eden kümenin içerisinde yer alıyor. Sonuçta uzatmayalım. Hikayemiz WordNet'in kavramsal ağacının üzerinden ilerliyor. İki tane sinset arasındaki en kısa yolun uzunluğu.
+
+379
+01:32:00,819 --> 01:32:06,860
+Yani o noktadan o noktaya o ağacın üzerinde en az kaç adımda gidebiliyorsunuz?
+
+380
+01:32:07,779 --> 01:32:11,060
+L dediğimiz şey bu. L dediğimiz şey de tüm taksonin yani ağacın derinliği.
+
+381
+01:32:11,060 --> 01:32:16,400
+Bu aşağıya karışışıyor. Bunun eksilisi üzerinden bir similarity. Yani eksiyi kullanmazsanız bu distance olur.
+
+382
+01:32:18,484 --> 01:32:35,124
+Dolayısıyla yaptığı şey ağacın üzerinde ben ne kadar hızlı o noktadan o noktaya gidebiliyorsam bunların arasındaki anlamsal bağ o kadar güçlü. Düşündüğünüzde evet yani kediyle köpek ki bu ağacın üzerindeki yerlerini düşünün. Bir de kediyle anahtarı düşünün.
+
+383
+01:32:35,507 --> 01:32:57,627
+Bir tanesi nerede, bir tanesi nerede olacak ama kedide köpek çok fazla yukarıya çıkmadan aşağıya inip birleştirilebilecek bir şeyler o kavramsal yapımın içerisinde. Dolayısıyla Linkock ve Chodorov'un yaklaşımı bu. Bu ve Palmer'ın 94'te önerlikleri yaklaşımıyla yine buna çok benziyor. Bu bizim işte deminki bahsettiğim kavramsal ağacımız olsun. Bunlar bizim sinsetlerimiz.
+
+384
+01:32:58,739 --> 01:33:15,595
+C1 ve C2 arasında şöyle bir şey vardır diyor. Anlamsal benzerlik vardır, sayısal bir benzerlik vardır. Burada n1, n2, n3 diye kavramlar var. N1 ve n2 dediğimiz şey C1 ve C2'nin en yakın ortak üst sinisetlerine iz'e bağlayıp uzaklıkları. Yani şuradaki bakın C1 ve C2 bizim kavramlarımız. Yani aralarındaki anlamsal...
+
+385
+01:33:15,604 --> 01:33:29,444
+Yakınlığı ölçmek istediğimiz kavramlarımız C1 ve C2. Şu LCS C1-C2 bakın şurası. Onun anlamı ne? En yakın ortak üst sin set. Yani bu ikisinin ortak olan.
+
+386
+01:33:30,036 --> 01:33:45,931
+Kendilerine en mesela şuradaki şu gördüğümüz şey de aslında bu ikisi için ortak bir üst sin set. Çünkü bu zaten bunların hepsi bu tür olduğu için bunların hepsinin de bu da ortak bir üst sin set. Ama bunlara en yakın ortak üst sin set şu kırmızı olan. Tamam mı? Dolayısıyla...
+
+387
+01:33:46,260 --> 01:34:04,099
+LCS diye ifade ettiğimiz kısım işte N1 ve N2'nin bu LCS'ye olan uzaklıkları. Yani pardon N1 ve N2, C1 ve C2'nin bu LCS, C1-C2'ye olan uzaklıkları. C1'in bu LCS'ye olan uzaklığı N1, C2'nin buna uzaklığı N2. Buna ne kadar yakın oldularsa o kadar iyi bir şey.
+
+388
+01:34:06,355 --> 01:34:33,595
+Bu en yakın ortak üst sinsetlerinin kök sinseti, yani bu kök dediğim gibi şey falan gibisinden bir şey oluyor genelde. Buna olan uzaklığı. Şimdi bunu düşünürsek, şu en yakın ortak üst sinset köke yakın olsa mı bunların anlamları birbirlerine yakın olur? Yoksa kökten ne kadar uzak olursa mı bu iki tane C1 ve C2 anlamları birbirine o kadar yakın olur? Ne dersiniz?
+
+389
+01:34:38,644 --> 01:34:40,024
+Kökten uzak olursa?
+
+390
+01:34:40,944 --> 01:35:04,804
+Kökten ne kadar uzak olursa o kadar spesifik bir anlamdan bahsediyor. Kökten ne kadar yakın olursa o kadar büyük bir kavram kümesinden bahsediyor oluruz. Dolayısıyla kökten uzak olmak iyi ki burada N3'ü görüyorsunuz, simericiyle doğru orantılı. N1 ve N2 de temelde, şu aşağıdaki normalizasyon için, N1 ve N2'nin de o kadar.
+
+391
+01:35:06,036 --> 01:35:16,476
+Küçük olması gerekir. Ortak üst sinisetlerine bunlar yakın olsunlar. Ne kadar uzak bir yerde birleşirlerse o kadar bunlar bu derden uzak olurlar zaten. Bu vakı aldığının yaklaşımı da bu.
+
+392
+01:35:17,811 --> 01:35:32,152
+Şimdi, Jin, Jiang ve Konrad ve Lin ikisi birbirine çok yakın şeyler söylüyor. Daha doğrusu ikisi birlikte bir şey söylüyor. Lin onlardan sonra bir şey söylüyor da. İkisi birbirine çok yakın bir şeyler söylüyor. O yüzden ikisini birlikte burada vereceğim.
+
+393
+01:35:32,152 --> 01:35:42,332
+Bunların ikisinin de kullandıkları şey, şu anda bakın bu 94 ve 97, 98 yaklaşımların her ikisi de sadece ve sadece şu ağaçtan bahsediyor. Bu ağacın üzerinde hareket ediyordu.
+
+394
+01:35:42,899 --> 01:35:59,399
+Ağacın harcına başka hiçbir bilgi kullanmadılar. Şimdi bir derlemden bahsedeceğiz. Bu derleme kullanırken bir olasılıktan bahsedeceğiz. Bir kavramın bir korpustaki olasılığından bahsedeceğiz.
+
+395
+01:36:00,880 --> 01:36:08,331
+Sanki bu şeye biraz benziyor. Bir kelimenin bir derlemde geçme olasılığından bahsedeceğiz ama burada...
+
+396
+01:36:08,404 --> 01:36:20,003
+Biraz farklı bir şey yapacak. Şöyle bir şey yapıyor bakın. Ağacı da kullanarak bu olasılığı hesaplıyor. Herhangi bir kavramın bir korpustaki olasılığı diyor.
+
+397
+01:36:22,144 --> 01:36:33,243
+P konsept, yani bu kavramın olasılığı. Frekans konsept bölü frekans root diyor. Şimdi frekans konsept dediği şey, frekans konsept dediği şey.
+
+398
+01:36:33,779 --> 01:36:45,099
+Bu konsept, bu kavramın frekansı. Ama bir frekans, bakın frekans X, korpusta X sinsetinin tepesinde bulunduğu tüm sinsetlerin frekanslarının toplamı.
+
+399
+01:36:45,099 --> 01:36:59,539
+Yani şunu düşünün, şudaki X'in frekansı kendisi ve onun altındaki bütün alt sinsetlerdeki bütün kavramların hepsinin
+
+400
+01:37:00,692 --> 01:37:27,392
+Bizim korpusumuzda kaç kez tekrar ettiklerinin toplamı. Yani mesela çok basit bir örnek. Mesela eşya diye bir kavramın frekansı, eşyanın altında bulunan bütün her şeyin işte çanaktır, kömlektir, kaşıktır, televizyondur, araçtır falan filan bunların hepsinin olasılıklarını, pardon olasılıklarını diyorum.
+
+401
+01:37:27,956 --> 01:37:47,916
+Frekansların toplamıyla bulunuyor. Yani o kelimenin geçme sayısından bahsetmiyor sadece, o kelimenin altındaki her şeyin geçme sayısını birlikte düşünüyor. Anlatabildim mi? Farkı. Dolayısıyla şuradaki şu frekans X dediğim şey bakın. Fx artı Fx artı 1, Fx 2, Fx 2 1, 2 2. Şunlardan bahsediyor.
+
+402
+01:37:52,979 --> 01:37:59,159
+Frekans root. Frekans root demek ne demek? Şuranın root'un frekansı. Root'un frekansı demek ne demek?
+
+403
+01:38:10,868 --> 01:38:12,868
+Juntum frekansı da simshows.
+
+404
+01:38:19,188 --> 01:38:23,728
+Hocam, tüm ağaçtaki kelimelerin frekanslarının toplamı değil mi? Rout'un frekansı.
+
+405
+01:38:24,087 --> 01:38:29,387
+Aynen öyle. O da derlemimizdeki muhtemelen bütün kelime sayısına falan geliyordu.
+
+406
+01:38:29,387 --> 01:38:35,007
+Eğer ki şey karşılıyorsa aşağı yukarı derlemle ağacımız birini karşılıyorsa.
+
+407
+01:38:35,768 --> 01:38:39,488
+Dolayısıyla bunun buna bölümü bizim bir P konseptimizi veriyor. Tamam mı?
+
+408
+01:38:39,823 --> 01:38:46,823
+Yani bir kavramın olasılığı kendisinin frekansı bölü, rutun frekansıyla gerçekleştiriyor.
+
+409
+01:38:47,144 --> 01:38:51,564
+Dolayısıyla bir kavram ne kadar genel bir kavramsa onun olasılığı o kadar ne olacak?
+
+410
+01:38:52,564 --> 01:38:54,823
+Yüksek bir şey olacak. Tamam mı?
+
+411
+01:38:55,144 --> 01:38:56,123
+Şey bu, fikir bu.
+
+412
+01:38:56,684 --> 01:39:03,024
+Şimdi bu P konsepti kullanıp şu iki arkadaş iki tane farklı yaklaşımdan bahsedecekler.
+
+413
+01:39:03,024 --> 01:39:03,915
+Ama...
+
+414
+01:39:03,988 --> 01:39:18,847
+İkisi birbirinden korkunç farklı değiller. Nasıl iki? Bir tanesi, Jiang ve Konrad'ın dediği şey A-B, Lin'in söylediği şey ise A bölü B. Yani A ve B birbirinin aynısı burada, öyle söyleyeyim. Bir tanesi A-B'den bahsediyor, bir tanesi A bölü B'den bahsediyor.
+
+415
+01:39:29,376 --> 01:39:47,136
+B dediğimiz şey ise kendileri üzerinden bir kısım. Birbirlerinin üstlerine ne kadar yakınlarsa, uzaklarsa onun üzerinden bir hesap çıkartıyor. Bu ise işte bu üsttekinden, LCS'nin alttakilerin ikisini toplamlarına bölün. İkisi de kabaca, öyle söyleyeyim.
+
+416
+01:39:48,564 --> 01:40:10,764
+Çok benzer işlemler yapıyorlar. A dediğimiz şey, her iki kavramda içeren en spesifik kavramı ifadeleyeceğiz. B dediğimiz şey de iki kavramda herhangi birini içeren döküman sayısına benzer. Bunları kullanarak yaklaşımlar geliştirmişler. Çeşitli ölçümler yapılmış bunların üzerinde burada. Tabii çok küçük bir bir hükümesi üzerinde bu ölçümler yapılmış. Ama birbirlerinden böyle korkunç falan farkları yoklar.
+
+417
+01:40:11,252 --> 01:40:25,580
+Ama dediğim gibi çok küçük verikümeleri üzerinde bu işlemler gerçekleştirilmiş. O zamanlarda insanlara vermişler, sormuşlar, demişler, bununla bunun arasında ne kadar benzerlik görüyorsun, onlar da bir şeyler söylemişler. Onların söyledikleriyle...
+
+418
+01:40:25,876 --> 01:40:50,456
+Bu sistemlerin buldukları rakamların korrelasyonlarına bakmışlar. İşte burada korrelasyon değerleri böyle çıkmışlar. Ama dediğim gibi aralarında böyle korkunç büyük bir şey. Jean-Claude Cornet'in dediği 90-83 civarlarında falan bir şey çıkmış. Linink de 82 çıkmış. Yani şu ikisi birbirinden o kadar da şey değiller. Büyük farklı oluşmuşlar. Dematomist-Örgünün benzer bir şey yapmıyor.
+
+419
+01:40:53,363 --> 01:41:11,163
+Dediğim gibi bu kavramsal ağaç elinizde varsa bu tarz işlemler gerçekleştirebilir misiniz? Evet, gerçekleştirebilirsiniz. Peki, başka neler var? 2009'da ne varmış elimizde? Birbiri yerine kullanılan kelimeler.
+
+420
+01:41:13,684 --> 01:41:41,384
+Bu aslında daha sonra gireceğimiz daha eski bir konunun uygulaması ama elinizde şöyle iki tane metin olduğunu düşünün bakın. Yani W1, W2, X1, W3, W4 böyle bir metin var elinizde. Bir de şöyle bir metin olsun. W1, W2, X2, W3, W4. Şimdi buradaki bakın şu X1 ve X2 kelimesinin her ikisinin de önceki iki kelimesiyle sonraki iki kelimesi birbirisinin aynı var. Tamam mı?
+
+421
+01:41:42,195 --> 01:41:55,979
+Böyle kelimeler bulsak biz, yani kendilerinden önceki iki kelime ve kendilerinden sonraki iki kelimenin aynı olduğu kelimeler bulsak. Tamam mı? Bu kelimeler aslında...
+
+422
+01:41:56,500 --> 01:42:16,559
+Aynı bağlam içine, bağlam dediğim şey şunun etrafındaki yani kendilerinin haricindeki aynı bağlamın içerisinde bunlar kullanılmış gördüğünüz gibi. Demek ki aralarında bunların bir ilişki var, bir anlamsal bir şey var. O zaman biz X1 ve X2 kaç kez aynı bağlamda kullanıldayız, aralarındaki bağ o kadar güçlü, oralarında birbirinden o kadar benzerdirler gibisinden bir yaklaşım düşünebiliriz.
+
+423
+01:42:19,699 --> 01:42:43,340
+Şöyle bir şey çıkmış mesela. Dolar ve YT'yle bu ikisi 939 kere şöyle bir şeyin içerisinde bulunmuşlar. İlişkinin içinde bulunmuşlar. Bakın. Yani 939 tane farklı bağlamda öyle söyleyeyim. Şöyle. W1, W2, W3, W4. 939 tane farklı bu dörtlü de.
+
+424
+01:42:44,020 --> 01:43:00,340
+Birbirlerinin yerine kullanılan işler. Bulun ve olmak kullanılır. Avro, Euro, Kanun, Yasa, Oyna, Yap, Dolar, Lira, Milyar, Milyon. Meclis, TBM, Belirlemek, Kaydetmek muhtemelen artık. Futbol, Oyun, Artmak, Azalmak.
+
+425
+01:43:01,939 --> 01:43:15,939
+Avro YTL vs. vs. Haziran, Nisan. Bunlar hep şöyle birbirinin yerine kullanılabilecek kelimeler. Tabii birbirinin yerine kullanılabilecek kelimeler burada. Daha sonra da yine göreceğiz bunu.
+
+426
+01:43:15,939 --> 01:43:27,179
+Word Tüvek'ten bahsederken. Her zaman aynı tür bir anlamsal ilişkiyi ortaya koymuyor. Görüyor musunuz?
+
+427
+01:43:28,948 --> 01:43:52,507
+Ne demek istiyorum? Mesela bazı durumda dolar ve YTL bir ift kavramın altındaki iki kardeş kavramdan bahsediyor aslında. Para bir mi bunlar değil mi? Şurada dolar ve YTL'yi düşünürsek. YTL yeni Türk lirası, Türk lirasından 6 sıfır atıldığı zaman TL'den YTL'ye geçirmişti. Sonra tekrar TL'ye geçirmişti.
+
+428
+01:43:53,171 --> 01:44:06,992
+Mesela dolar ve YTL arasında bir üst kavramın altındaki iki tane kardeş kavramı gibi bunu düşünebilirsiniz. Ama her yerde bunu göremiyorum. Mesela kanun ve yasa aslında eş anlamlı bir şeyler.
+
+429
+01:44:06,992 --> 01:44:20,692
+Tamam mı? Yani bir aynı üst kavramın alt iki tane kardeş kavramı değil ya da avro, dolar mesela yine şunun gibi kardeş kavramlar. Dolar, euro, milyar, milyon.
+
+430
+01:44:21,076 --> 01:44:31,775
+Şimdi bunlar eş anlamlı falan değil. Mesela bunlar eş anlamlı ama bunlar eş anlamlı ya da bunlara eş anlamlı diyemezsiniz. Öyle bir şey yok. Hatta şuraya bakalım mesela. Art-azal diyor. Artmak-azalmak.
+
+431
+01:44:32,787 --> 01:44:57,387
+Bunlar birbirlerinden ters anlamlılar. Bunların arasında ilişki var mı? Evet, var. Doğru. Ama bu ilişkiler birbirleriyle aynı türden ilişkiler değiller. Bunu burada rahatlıkla görebilirsiniz. Bu durum zaten şu yapıyı kullanan World2Vac'te de geçer.
+
+432
+01:45:00,467 --> 01:45:21,507
+Şimdi arkadaşlar, küçük bir ara verelim. Tamam. 45 geçiyor. Çünkü devam edersem bir de ödeviniz de olacak. O yüzden küçük bir ara verelim. 10 dakika kadar. Ondan sonra devam edeceğiz.
+
+433
+01:45:21,507 --> 01:45:24,087
+Şimdi şöyle durdurayım.
+
+434
+01:45:27,796 --> 01:45:31,796
+10.55'ye kadar ara veriyorum.
+
+435
+01:45:31,796 --> 01:45:34,796
+10 dakika sonra görüşmek üzere.
+
+436
+01:55:19,699 --> 01:55:22,020
+Evet, merhaba arkadaşlar tekrardan.
+
+437
+01:55:25,587 --> 01:55:35,047
+Geldi mi? Slide. Evet hocam. Tamam. Şimdi...
+
+438
+01:55:38,195 --> 01:55:39,136
+Çelik memerli.
+
+439
+01:55:39,923 --> 01:56:04,783
+Kümelemek de yapılabilecek şeylerden bir tanesi ama tabii hani bu kümelemelerin sayısı ne olacak? Yani kümelemekten kasıt şey hani anlamsız olarak kümelemek. Hani öyle kümeler oluşturacağız ki biz bu kümenin içerisine düşen kelimeler birbirleriyle benzer anlamlara bir şekilde sahip olacaklar. Böyle bir şey yapmak mümkün. Burada bahsettiğimiz gibi belli kriterleri kullanarak bu işi yapmak mümkün.
+
+440
+01:56:04,783 --> 01:56:07,923
+Şimdi işte birazcık daha tepeden bakmaya kalkar.
+
+441
+01:56:07,923 --> 01:56:28,184
+Anlamsal uzay diye ifade edeceğimiz bir kavram var. Bu, anlamsal uzaydan kastımız, kelimelerin anlamsal benzerliklerinin bir temsili aslında bu uzay. Kavramların anlamsal yakınlıklarına göre yer aldıkları bir uzay. Yani kelimelerin ya da kavramların ya da tokenların artık elinizdeki birinin neyse.
+
+442
+01:56:28,528 --> 01:56:43,008
+Onların bir şekilde bir koordinat sisteminde, ki bu koordinat sistemine anlamsal uzay diyoruz, bu koordinat sisteminde belli noktalara karşılık geldiklerini karşı getirmeye çalışacağız.
+
+443
+01:56:43,008 --> 01:56:50,008
+Ve dilediğimiz şey de, bu koordinat sisteminde birbirine yakın olan şeyler, birbirine anlamsal olarak da yakın olacaklar.
+
+444
+01:56:50,428 --> 01:56:52,888
+Bakın burada hep anlamsal yakınlıktan bahsediyoruz.
+
+445
+01:56:55,123 --> 01:57:21,684
+Konusu birazcık daha güç bir konu. Aralarındaki anlamın, anlamsal benzerliğin türü nedir? Orası biraz daha güç bir konu. Demin orada şu kısımda onu birazcık anlatmaya çalıştım aslında. Bunlar hep anlamsal birbirine yakın şeyler. Tamam mı? Yakınlar, doğru. Ama hani aralarındaki ilişki hepsinde aynı değiller. Yani artmak veya azalmak anlamsal birbirine ilişkililer. Evet, kesinlikle.
+
+446
+01:57:22,899 --> 01:57:27,279
+Bu ikisinin arasındaki ilişkiyle bu ikisinin arasındaki ilişki kesinlikle aynı değil. Değil mi?
+
+447
+01:57:29,811 --> 01:57:50,472
+Şimdi bu koordinatları nasıl oluştururuz? Koordinatları oluşturmak için dediğim gibi daha önce işte LSI'den bahsettik, LDI'den bahsettik. Birlikte geçme matrislerinden birazdan bahsedeceğiz ve ondan sonra da sinirsel dil modellerinden bahsedeceğiz. Bugüne yetişmez muhtemelen ama sinirsel dil modelleri hani kabaca şöyle söyleyeyim.
+
+448
+01:57:52,724 --> 01:58:12,724
+Bu ölçeklenebilir şekilde çözmenin bir yolu aslında. Yani biz kelimeleri koordinatlara çevirmek istiyoruz ve bu koordinatlar sisteminde işte şey olsunlar, koordinat sisteminde yakın olan şeyler, gerçek hayatta da yakın olsunlar falan bunu istiyoruz. Ama bu problemi böyle çok büyük derlemlerde çalışan…
+
+449
+01:58:13,427 --> 01:58:25,488
+Bir versiyonu aslında, yani bunu ölçeklenebilir bir çözüm ortaya koyuyor şu sinirsel dil modelleri. Onlara geleceğiz muhtemelen önümüzdeki hafta.
+
+450
+01:58:26,676 --> 01:58:35,376
+Şimdi şu birlikte geçme matrislerinden bir bahsedelim. Çünkü her şeyin temeli birazcık ona dayanıyor.
+
+451
+01:58:36,196 --> 01:58:40,776
+Paris, bu bir dil bilimci, birlikte kullanılan kavramlar birbirlerine anlamsız olarak benzerler diyor.
+
+452
+01:58:40,776 --> 01:58:46,476
+Bu birlikte kullanılan kasıt aynı cümlenin içinde kullanılması olabilir.
+
+453
+01:58:46,996 --> 01:59:05,796
+Aynı metin, aynı dökümanın içinde kullanılması olabilir. Aynı paragrafın içinde kullanılması olabilir. Sabit bir kelime penceresinde kullanılması olabilir. Yani diyebilirsiniz ki bir pencere tanımlarsanız o pencerenin boyutu vardır. İşte on boyutlu bir pencere. On boyutlu pencerenin içerisinde bunlar birlikte geçmişler. Bunları sayacağız aslında.
+
+454
+01:59:06,399 --> 01:59:27,459
+Bununla alakalı bir örnek. 2006 yılında bizim yaptığımız bir şey. Şöyle bir şey, iki kelimenin internette yer alan sayfaların kaçında yan yana kullanıldıkları bulunmak. Yani şuradaki şu aynı metinde derken onu biz aynı web sayfası içinde diye algılamışız. Öyle kullanmışız daha doğrusu.
+
+455
+01:59:30,387 --> 01:59:57,947
+Bu kelime bir kelime bir sorgusunu gönderip gelen sonuç sayfasındaki sonuç sayısı. Hani Google ya da Yahoo'ya beskli zamanları düşünürsek. Siz bir sorgu gönderdinizde hemen orada hala altında da şey yazar. Şu kadar sonuç diye döner. Böyle bazen çok büyük sonuçlar falan dönüyor vesaire. O sonuç sayısı aslında şey demek. Bu senin yazdığın şeyi ben şu kadar tane web sayfasında buldum.
+
+456
+01:59:58,387 --> 02:00:03,387
+Ve onları ben sana şu şekilde bir şekilde sıralayıp sana 10 tanesini gösteriyorum diyor. Tamam mı?
+
+457
+02:00:04,027 --> 02:00:04,967
+Hepsini göstermiyor.
+
+458
+02:00:04,967 --> 02:00:18,787
+Neyse. Dolayısıyla buradaki olay iki tane kelimenin kaç tane web sayfasında birlikte geçtiğini bulmak için arama motorlarını kullanabilir miyiz?
+
+459
+02:00:19,627 --> 02:00:20,608
+Kullanabiliriz.
+
+460
+02:00:21,007 --> 02:00:27,667
+Bunu yaptığımızda, bunu yapmak için daha doğrusu ilk önce şöyle elle şöyle bir şey hazırlamıştık vakti zamanında.
+
+461
+02:00:28,867 --> 02:00:36,228
+Üç tane veri kümesi. Bu birinci veri kümesi şöyle şeyler var. Berber, bakkal, kuaför, hastane, otel, okul ve diğer iş yerleri.
+
+462
+02:00:36,595 --> 02:00:52,076
+Yer isimleri daha doğrusu, hayvan isimleri, taşıt isimleri, böyle mesela veri kümesinde bunlar var. İkinci veri kümesinde ev eşyaları, hayvanlar giyecekler. Üçüncüsünde de bunların hepsi biriden var. Her birinden çeşitli sayılarda örnekler var elimizde.
+
+463
+02:01:03,731 --> 02:01:21,612
+Şekilde yani, şu şekilde aratıp her bir kelimeyi her bir kelimeyle aratıyorsunuz, öyle söyleyeyim. Bunun şeyi var mı burada? Yok. Ama kabaca olan şey şu. Şimdi burada bakayım, 30 tane kelime var.
+
+464
+02:01:31,859 --> 02:01:47,940
+Birleştirip Google'a sorgu olarak gönderdik. Gönderdiğimizde bizim karşımıza bir rakam geldi. O rakamın anlamı şu. Mesela 78 geldi. 78'in anlamı şu. Bu iki tane kelime 78 tane web sayfasında birlikte geçmiş.
+
+465
+02:01:48,692 --> 02:01:59,531
+Ya da sıfır geldi. O zaman bu iki elimi hiç geçmemiş. Burada bir birlikte geçme matrisi olacak. Bu birlikte geçme matrisinin aslında boyutları nasıl bir şey? Kaça kaçlık bir şey olacak bu birlikte geçme matrisi.
+
+466
+02:02:05,140 --> 02:02:07,140
+Neresiniz? Kaça kaçlık bir şey olacak?
+
+467
+02:02:10,707 --> 02:02:11,927
+Şubi Hükümesi 1 için.
+
+468
+02:02:24,083 --> 02:02:26,243
+Kelime sayısı çarpı kelime sayısı.
+
+469
+02:02:27,003 --> 02:02:33,304
+Evet, aynen öyle. Yani burada mesela bu görüntümesi bir için 30'a 30'luk bir matris olacak bu değil mi? 30'a 30'luk bir matris.
+
+470
+02:02:34,144 --> 02:02:42,864
+Şimdi bu matrisi elde ettiğimde bu matris bana, bu matrisdeki yüksek değerler neyi ifade ediyor?
+
+471
+02:02:44,524 --> 02:02:50,304
+Büyük değerler. Onlar çok birlikte geçmişler. İşte küçük olan şeyleri pek birlikte geçmemişler.
+
+472
+02:02:52,692 --> 02:03:06,091
+Şimdi bu n çarpı n'lik matrisi kullanarak ben, o zamanlar bir tane matematikte bir yöntem var, Multidimensional Scaling diye.
+
+473
+02:03:09,192 --> 02:03:17,591
+Multidimensional Scaling'in yaptığı şey şu, elinizde belli objeler var, belli nesneler var.
+
+474
+02:03:17,967 --> 02:03:25,228
+Bu nesnelerin birbirlerine olan uzaklıklarını biliyorsunuz ve bunun bir matris olarak elinizde var. Uzaklık matrisi var elinizde.
+
+475
+02:03:27,667 --> 02:03:36,908
+Multidimensional scanning uyguladığınızda ki o da yine principal component analize benzeyen bir şey, size o nesnelerin koordinatlarını dönüyor.
+
+476
+02:03:36,908 --> 02:03:43,908
+Bu döndüğü koordinatlar sizin ona vermiş olduğunuz uzaklık matrisiyle uyumlu olan koordinatlar.
+
+477
+02:03:45,140 --> 02:04:06,920
+Tabii döndürmeye karşı robust bir sonuçlar döndürmüyor. Temel olarak sizin ona vermiş olduğunuz mesafe matrisine uygun koordinatlarını dönüyor nesnelerin. Yaptığı şey bu.
+
+478
+02:04:07,859 --> 02:04:27,420
+O zaman vakti zamanında bunu niye kullanmıyoruz? Kullanalım ve sonuçta bu elimizdeki n çarpı n'lik matrisi, ki bu bir benzerlik matrisiydi, onu bir distance matrisine çevirip, bunu da ki bir bölüsünü falan alarak yapmıştık.
+
+479
+02:04:28,640 --> 02:04:32,980
+Yani değeri bir bölüsünü alarak yapmıştık. İşte bir ekleyip falan, smooth yapıp.
+
+480
+02:04:34,836 --> 02:04:51,876
+Ve verdiğimizde, multi-dimensional scaling'e bize koordinatları dönüştür. Koordinatlar yine iki boyutlu koordinatları var burada, kavramları. Burayı incelediğimizde şey görebiliyoruz, hayvan isimleri bir yerlerdeler.
+
+481
+02:04:52,340 --> 02:05:18,220
+Yer isimleri bir yerlerdeler. Taşıt isimleri bir yerlerdeler. Hatta burada enteresan birkaç bir şey var. Ahır mesela, bizon ve atta birazcık yakın durmuşlar. Görüyor musunuz? Ahır mesela onlara birazcık daha yakın bir şey. Bakkal ve büfe baya birbirine yakın olmuş. Limuzin ve tren birbirine yakın olmuşlar. Niye bunlar yakın olmuşlar birbirlerine?
+
+482
+02:05:19,891 --> 02:05:36,372
+Limuzin ve trenliye yakınlardı bir yerine. Bir yerlerde birileri yazmış işte. Tren gibi limuzin gördüm, şudur budur falan. Mesela anlatabildim mi? Dolayısıyla ama aynı şey mesela trenli otomobil için o kadar görünmemiş. Onların aslında birazcık daha mesafe var. Tamam mı?
+
+483
+02:05:44,724 --> 02:06:06,264
+Şunlar yer ismidir, şunlar hayvan ismidir, şunlar taşıt ismidir falan gibisinden hiçbir bilgiyi sisteme vermiyorum. Yaptığım şey sadece şu 30 tane kelimeyi vermek. Ve bu 30 tane kelime karşılığında bana döndürmüş olduğu şey bu. Koordinat sistemi bu. Ki bu sadece birinci ve ikinci koordinatı. 13, 14, 15 falan diye bu gidiyor.
+
+484
+02:06:07,188 --> 02:06:33,427
+Başka bir hükümesi, buraya baktığımızda burada da yine fena hayvanlar var burada, eşyalar var, kıyafetler var. Burada da mesela bitle divan mesela. Eskiden divanlarda bit falan olurmuş. Muhtemelen onunla alakalı bunlar birbirlerine yakın çıkmışlar. Dolayısıyla ama işte hayvanlar bir arada bulunuyorlar, eşyalar bir arada bulunuyorlar, kıyafetler bir arada bulunuyorlar vesaire vesaire.
+
+485
+02:06:34,036 --> 02:06:55,296
+Fena olmayan sonuçlar. Verikülmesi üçte birazcık daha baktığımızda yine ortada işte fena olmayan sonuçları elde edebiliyoruz. Burada sınıflandırma, yani bunu süpervaz bir yapıya dönüştürmeye kalkarsak yani verikülmesi biri, sınıflandır falan dediğimiz zaman epey yüksek süpervaz yaklaşımlarda 90 üstünde sonuçları elde edebiliyorduk.
+
+486
+02:06:55,891 --> 02:06:59,952
+Bunu birazcık daha yani 30-40 kelime falan değil de birazcık daha büyük hale getirelim.
+
+487
+02:07:00,032 --> 02:07:02,791
+967 tane terim üzerinden bu hareket edelim.
+
+488
+02:07:02,871 --> 02:07:13,032
+Şimdi 967 tane terim üzerinden bu işlemi yapmaya kalktığımızda biz Google'da benzerlik maddesini oluşturmak için Google'ı kullanmak yerine
+
+489
+02:07:13,032 --> 02:07:19,971
+internetten web scraping ile 15 bin tane web sitesi toplamıştık vakti zamanında onların üzerinden bunları hesapladık.
+
+490
+02:07:19,971 --> 02:07:22,612
+Niye böyle bir şey yapmış olabiliriz sizce?
+
+491
+02:07:28,916 --> 02:07:37,615
+Google'u kullansak daha iyi sonuçlar ederdik, onu biliyoruz. Ama Google'u kullanmadık. Onun yanına bu web sitelerini kullandık.
+
+492
+02:07:40,576 --> 02:07:41,636
+Niye olabilir acaba?
+
+493
+02:07:48,756 --> 02:07:54,756
+Daha anlamlı olması için olabilir mi? Google'da evet sayı artacaktı ama belki nicelik azalacaktı.
+
+494
+02:07:54,756 --> 02:07:55,756
+Yok, değil.
+
+495
+02:07:58,579 --> 02:08:02,399
+Google Okutarsol Google isteği atmanıza izin vermez.
+
+496
+02:08:03,420 --> 02:08:11,519
+Aynen öyle. Şimdi bunu yapmak için ne yapmanız lazım? Bakın 967 diyor ya, 967 tane terimin her birini her biriyle değil mi?
+
+497
+02:08:12,019 --> 02:08:16,720
+Yani bine binlik falan bir maddesden bahsediyoruz. Hadi şeyini göndermeyelim yani.
+
+498
+02:08:16,720 --> 02:08:22,279
+A, B'yi gönderdik, B, A'yı göndermediğimizi varsayalım. Yine 500 bin tane sorgudan bahsediyoruz.
+
+499
+02:08:22,859 --> 02:08:26,579
+Şurada 30 tane kelime için bunu yapmak mümkün.
+
+500
+02:08:26,579 --> 02:08:51,559
+30-40 tane kelime için ama 1000 tane kelimeyle ne yapamıyorsunuz? Bu işi yapamıyorsunuz ama 1000 kelimeyle Google kullanamıyorsak başka bir şey yapamaz. Yapabiliriz, ne yapabiliriz? Kendi derlemimizi oluştururuz ki bu 15 bin tane web sitesiymiş sadece. Bunun üzerinden bunu gerçekleştirdiğimizde yine burada koordinatları görüyorsunuz. Kavrama, buradaki noktalar her biri birer kavram. Şunu aslında biraz büyüteyim.
+
+501
+02:08:52,467 --> 02:09:10,967
+Şey olsun. Arkaya göndereyim. Şimdi bakın şuradaki her bir nokta ya da artı ya da yuvarlak bunların her birer kavram. İlk iki koordinatlarını gösteriyor bunların.
+
+502
+02:09:10,967 --> 02:09:19,967
+Ve buradaki renklendirme ve işaretlendirmeler tamamen daha sonradan yapılan işlemler. Bakın bunların hiçbiri...
+
+503
+02:09:20,692 --> 02:09:28,831
+Google'a da, yani Google'ı zaten kullanmadık, bizim web sitelerini sorguladığımız sisteme de, MDS'e de hiçbir şekilde verilmiyor.
+
+504
+02:09:30,072 --> 02:09:42,532
+Koordinatlar bulunduktan sonra renkli işaretlemek için, yani şunlar mesela diyoruz ki, MEDİS tıp terimlerini siyah artıyla göster.
+
+505
+02:09:43,315 --> 02:09:59,775
+Anlatabildim mi? Ya da işte edebiyata dair terimleri yeşil noktayla göster. Anlatabildim mi yapılan işlemi? Böyle baktığınızda sonuçlar iyi gözüküyor mu sizce?
+
+506
+02:10:19,412 --> 02:10:21,972
+Evet hocam ama teknik konular var daha çok.
+
+507
+02:10:24,612 --> 02:10:37,771
+Evet, yani şimdi buraya baktığımızda bakın hiçbir sınıf bilgisi kullanmadan bile bunların epey bir sınıf içlerinde iyi temsil edilebildiklerini görebiliyoruz.
+
+508
+02:10:37,771 --> 02:10:38,771
+Bu oldukça...
+
+509
+02:10:38,912 --> 02:10:58,612
+Hoş bir sonuç. Aynen şuradakiler, 30-40 tane kelimelere yaptığımız şeyi 1000 tane kelimelere yaptığımızda da epey iyi sonuçlar elde edebiliyoruz. Ama tabii bunu bu kadar iyi yapabiliyor olmamızın sebebi ne? [öğrenci]'in dediği gibi aslında bunların hepsi teknik terimler.
+
+510
+02:11:06,931 --> 02:11:28,171
+Sosyoloji terimiyle zooloji teriminin birlikte geçme olasılığı epey bir düşüktür. Dolayısıyla zoolojilerle sosyoloji teriminin birbirlerinden uzakta olacaklar. Ve doğal olarak zooloji terimlerinin birbirleriyle geçme olasılığı, kendi içinde geçme olasılığı çok daha yüksek olacaktır.
+
+511
+02:11:29,716 --> 02:11:41,716
+Ve buradaki sonuçların iyi çıkmasının sebebi, yani daha jenerik bir şeylerle yapsanız bu kadar süper bir şey elde edemeyebilirsiniz. Ama yine epey işe yarayan sonuçlar elde edebiliyorsunuz.
+
+512
+02:11:42,756 --> 02:11:47,896
+Onunla küçük bir örneğini görelim. Yani böyle teknik terimlerle değil de haber metinleriyle bu işi yaptığımızda.
+
+513
+02:11:49,756 --> 02:11:55,976
+5 tane haber sınıfında 230'lar tane terim, PC, Kimole, kelime köklerini almışız, öyle söyleyeyim.
+
+514
+02:11:57,427 --> 02:12:23,007
+4500 tane kavramımız olmuş. 4500 tane kavramı yine 15 bin tane siteden şeyini elde etmişiz. Ne derli ona? Birlikte geçmem adı siteni elde etmişiz. Ondan sonra işte uzaklığı yakınlığa dönüştürüp Multidimensional Scaling'de ilk 100 boyutu ve ilk 10 boyutu kullanmışız. Burada ilk iki boyutu gözüküyor sadece haber metinlerinin. Şimdi burada önemli olan bir nokta şu.
+
+515
+02:12:23,604 --> 02:12:42,944
+Şimdi burada kelimelerin koordinatlarıydı bunlar değil mi? Kelimelerin koordinatları. Ama ben şimdi bu yaklaşımı haber sınıflandırmada, yani metin sınıflandırmada kullanmak istiyorum. Kelimelerin koordinatlarını elde edebiliyorum ama benim elimde henüz haberlerin koordinatlarını veren bir şey yok. Burada yapılabilecek en basit olan işlem nedir?
+
+516
+02:12:44,051 --> 02:12:56,731
+Bir metnin içerisindeki kelimelerin koordinatlarını biliyorsak bu koordinatların ortalaması o metnin koordinatıdır diyebilirsiniz.
+
+517
+02:12:58,351 --> 02:13:06,192
+Yani birinci boyutların ortalaması, o metnin içindeki kelimelerin birinci boyutlarının ortalaması o metnin birinci boyutunu.
+
+518
+02:13:06,899 --> 02:13:22,819
+Dolayısıyla kelimelerin ikinci boyutların ortalaması o metnin ikinci boyutunu şeklinde düşünebilirsiniz. Burada metinden içerikleri kelimelerin koronatların ortalaması diye ifade edilen şey bu. Metinlerle kelimeler aynı boyutludar yani.
+
+519
+02:13:24,051 --> 02:13:50,951
+Yani bir metnin içerisinde çok sayıda da kelime olsa, az sayıda da kelime olsa biz onların hepsini aynı sayıda boyutla ifade edebiliyoruz ortalama aldığımız için. Burada bir ve ikinci boyutlar vermiş. Yine fena değiller. Şurada görüyorsunuz ekonomi, magazin, sağlık, politika ve spor diye beş tane haber sınıfı varmış. Onların bilgileri var. Bakın burada yine şeyler yok elimizde.
+
+520
+02:13:52,051 --> 02:14:01,051
+Görselleştirmede bu koordinatlar bulunmuş, koordinatlar bulunduktan sonra renkler sonradan işlenmiş üzerine.
+
+521
+02:14:01,731 --> 02:14:08,411
+Yani sınıf bilgisi kullanılarak bu koordinatlar bulunmuyor. Anlatabildim mi? Şimdi güzel tarafı orası zaten.
+
+522
+02:14:10,411 --> 02:14:18,091
+Sadece dediğim gibi sınıf bilgisi kullanmadan, metinleri kullanarak bunları elde edebiliyorsunuz.
+
+523
+02:14:18,899 --> 02:14:32,619
+Sınıflandırma performansları falan da hiç de fena değiller. Burada yüksek başarı vs. Var mı başka bir şey? Bunun güzel bir tarafında dilden bağımsız bir yaklaşım bu. Hiç de fena değil.
+
+524
+02:14:32,619 --> 02:14:45,451
+S sesi kelimelerin durumu kötü mü? Evet kötü. S sesi kelimelerin durumu. Ki buna daha sonra geleceğiz. Bağlam farkında modellere vardığımız zaman. Yani...
+
+525
+02:14:45,939 --> 02:15:02,379
+Şu ana kadar gördüğümüz bu yöntemler, ki daha sonra göreceğimiz işte, FastText, Word2Vector vs. Bunların hepsi kelimeler için sabit koordinatlar buluyorlar. Ama bazı kelimeler var ki o kelimelerin birden fazla anlamı var.
+
+526
+02:15:02,899 --> 02:15:24,619
+Birden fazla anlamı olduğu zaman iki tane olması gereken anlam var ama senin kullanabileceğin bir tane bir yer var. O zaman bu aşağı yukarı o iki anlamın ortasına falan denk geliyor gibi sıkıntılar oluşuyor. Yani etrafındaki kelimelere göre koordinatı değişmiyor bizim kelimelerimizin.
+
+527
+02:15:25,684 --> 02:15:47,044
+Bunların nasıl yapıldığını daha sonra ileride göreceğiz. Ama şu anda buradaki dediğim gibi bahsettiğim kısımda da önümüzdeki hafta bahsedeceğimiz word to back vesaire gibilerde de hep kelimelerin sabit koordinatları var. Sabit koordinatlarda özellikle şurada bahsettiğimiz gibi birden fazla anlamı olan kelimelerde sıkıntı oluşturuyor.
+
+528
+02:15:47,044 --> 02:15:51,423
+Tamam mı? Evet, diyelim ve burada duralım.
+
+529
+02:15:51,923 --> 02:16:03,264
+Şimdi bunu haftaya konuşuyoruz. Şimdi bunu durdurayım. Şimdi gelin ödevinize. Ödevinizde arkadaşlar... Bir saniye.
+
+530
+02:16:13,235 --> 02:16:27,536
+Ödemeniz biraz alıştırma gibi. Alıştırma derken nasıl söyleyeyim? Daha önce yapmadıysanız bunu yapın anlamında. Yaptıysanız daha kolay olur sizin için.
+
+531
+02:16:28,115 --> 02:16:54,975
+Şimdi yapacağımız şey şu, anlamsal uzayların karşılaştırması. Anlamsal uzayları karşılaştırmak. Ne der o? Dört tane anlamsal uzayların en az iki tane sinirsel dil modeli olmasını istiyorum. Bunlar işte Berttır, GPT'dir artık neyse. İki tane sinirsel dil modeli olacak. En az dört tane anlamsal uzay yöntemini karşılaştıracaksınız. Bir tane konu sınıflandırma, iki tane konu sınıflandırma harcında toplam üç tane veri kümesi üzerinde sınıflandırma performansları açısından karşılaştıracaksınız.
+
+532
+02:16:56,979 --> 02:17:19,979
+Bakın, bir konu sınıflandırma, işte demin bahsettiğim, haber metinleri falan gibisinden bir şey olabilir. Bir de iki tane de konu sınıflandırma haricinde. O da üç tane ver hükümeniz olacak. Bu üç tane ver hükümesi üzerinde dört tane anlamsal uzayı ve TF, TF, IDF'i karakter engramları bazında. Bunların ne demek olduğunu biliyorsunuz, biliyorsunuz zaten. Bilmiyorsanız biraz araştırın, tamam mı?
+
+533
+02:17:20,272 --> 02:17:44,832
+Bakın karakter engramından bahsediyorum. Kelime engramından bahsetmiyorum. Tamam mı? Karakter engramı. İki, altı arasında. Bunları yapmanız çok zor işler değiller. Dolayısıyla aslında altı tane yöntem olacak. Dört tane anlamsa olursak bir tane TF, bir tane TF-IDF. Altı tane yöntem. Üç tane veriklmesi üzerine karşılaştıracaksınız. Beş volt cross-validation'dan ortalama standart sapmaları oluşturacaksınız, raporlayacaksınız.
+
+534
+02:17:45,971 --> 02:18:08,652
+Sonra, anlamsız uzayların ikili birleştirilmesi, yani yan yana birleştirilmek ya da önereceğiniz başka bir yöntemle birleştirmek için de denemeler yapacaksınız. Dolayısıyla 6 yöntemle, 3 tane de 9 tane yöntem olacak. Raporlayacaksınız sonuçları. Derse sunmak üzere. Yorumlarınız burada oldukça önemli. Yorumlarınız yani ne demek istiyorum?
+
+535
+02:18:09,427 --> 02:18:37,427
+Tabloyu oluşturduğunuz, tabloyu verdiniz yetmiyor. Tabloya dair yorumlarınız olmalı. Yorumlarınız kesin doğru olur, şu olur, bu olur falan. Baktığımızda görebileceğimiz şeyler olmalı tabii ki yorumlarınız. Ama dediğim gibi yorumlamayı öğrenmeniz lazım. Sonuçlar bunlar çıktı, bitti olmamalı. Elde ettiğiniz sonuçları yorumlamalısınız. İstediğim şeyi yorumlamalısınız.
+
+536
+02:18:37,427 --> 02:18:41,567
+Yorumlarınızın önemli dediğim kısım bu. Farklı var mısınızdır? Önemli.
+
+537
+02:18:41,567 --> 02:18:49,747
+Sınıfta sunum yapmayanlar, yani burada sınıfta sunum yapacaksınız haftaydı ondan sonraki hafta. Teslim tarihlerindeki 3 Nisan günü.
+
+538
+02:18:50,087 --> 02:19:00,768
+En fazla %50 yani gönderirseniz sadece %50 alabilirsin ki %50 iyi olmuyor. Herkes tek başına çalışacak. Kod ve sunumu bana göndereceksiniz.
+
+539
+02:19:01,136 --> 02:19:16,396
+Dersin başlamasından bir dakika öncesine kadar göndermiş olmanız gerekiyor. Online Yıldız Eri TR üzerinden gönderiyorsunuz ödevlerinizi. Anlaşıldı mı arkadaşlar? Var mı sorusu olan?
+
+540
+02:19:18,195 --> 02:19:25,495
+Hocam, karşılaştırmayı dersin başında bahsettiğimiz harici ve dahili yöntemler arasından bir yöntem seçip mi yapacağız?
+
+541
+02:19:26,056 --> 02:19:32,636
+Yok, şu üç tane veri kümesi dedim ya, üç tane kümesi üzerine sınıflandırmak. Yani harici yöntem olacak aslında.
+
+542
+02:19:37,971 --> 02:19:41,252
+Tamam, sınıflandırma performansı üzerinden karşılaştıracaksınız.
+
+543
+02:19:45,523 --> 02:19:46,283
+Evet, başka?
+
+544
+02:19:54,291 --> 02:20:01,691
+Kusura bakmayın hocam, tekrardan soracağım da. İki tane konu sınıflandırma harici karşılaştırma.
+
+545
+02:20:04,191 --> 02:20:12,412
+Bir tanesi mesela haberler, konularına göre sınıflandırmak var ya, mesela bu konu sınıflandırmak, tamam mı? Bu bir şey.
+
+546
+02:20:13,811 --> 02:20:37,971
+Konu sınıflandırma haricinde olan bir şey, yani yine bir metin sınıflandırma yapabilirsiniz. Mesela diyebilirsiniz ki ben olumlu yorumları olumsuz yorumlardan ayıran bir veri hükümesi kullanacağım. Tamam mı? Mesela konu sınıflandırma harici bir şey. Tamam mı? Ya da ne bileyim ben hani içinde nefret söylemi var yok gibisinden bir şey yapacağım. Anlatabildim mi?
+
+547
+02:20:37,971 --> 02:20:39,252
+Anladım hocam. Anladım hocam.
+
+548
+02:20:39,252 --> 02:20:41,311
+Tamam. Konu haricinde bir şey yani.
+
+549
+02:20:43,252 --> 02:20:47,711
+Hocam, 6 yöntem dediğimiz 4 allamsal sistem.
+
+550
+02:20:47,992 --> 02:20:50,772
+Evet, 2 tanesi de TF ve TF-IDF.
+
+551
+02:20:50,772 --> 02:20:52,932
+Tamam, teşekkür ederim.
+
+552
+02:20:54,772 --> 02:20:59,772
+Hocam, allamsal uzayların ikili birleştirilmesi derken...
+
+553
+02:20:59,772 --> 02:21:04,072
+Ne dedim, neyi kastettim? Mesela şöyle bir şey düşünelim.
+
+554
+02:21:05,932 --> 02:21:09,592
+World2Vac size 300 boyutlu bir temsil veriyor.
+
+555
+02:21:10,291 --> 02:21:31,131
+Diyelim ki o elinizdeki haber metni için ya da elinizdeki metin için. Bir de mesela diyelim ki Berk'tes'de 768 boyutlu bir uzay veriyor. Bu ikisini yan yana koyup konkatenet edip ne bileyim 1000 boyutlu bir uzay elde edebilir misiniz?
+
+556
+02:21:31,131 --> 02:21:34,551
+Konkatenet edip, yan yana koyup.
+
+557
+02:21:37,971 --> 02:21:39,451
+Anlatabildim mi demek istediğimi?
+
+558
+02:21:40,171 --> 02:21:40,412
+Evet.
+
+559
+02:21:41,611 --> 02:21:46,391
+Öyle yapabilirsiniz. Mesela bir örnek, birleştirme, yani yan yana dediğim şey bu.
+
+560
+02:21:47,011 --> 02:21:47,451
+Tamam mı?
+
+561
+02:21:48,951 --> 02:21:54,791
+Ya da mesela Bert'in temsilini, GPT'nin temsilini birleştirebilir misiniz? Birleştirebilirsiniz yan yana koyup mesela.
+
+562
+02:21:56,011 --> 02:22:00,311
+Daha sonra bu ikisinin yan yana konmuş halini belki başka bir şey vereceksiniz.
+
+563
+02:22:00,592 --> 02:22:04,311
+SGM vereceksiniz falan ya da başka bir yapay sinir alana vereceksiniz. Şeyi bulmak için.
+
+564
+02:22:05,587 --> 02:22:09,527
+Sınıflandırma yapmak için bunlar olabilirler.
+
+565
+02:22:10,527 --> 02:22:10,987
+Anladım.
+
+566
+02:22:11,987 --> 02:22:12,987
+Rica ederim.
+
+567
+02:22:13,567 --> 02:22:23,067
+Hocam, peki veri setini de bu modellerin oluşturulduğu metinlerden seçmememiz mi gerekiyor yoksa fark etmemiz?
+
+568
+02:22:23,067 --> 02:22:26,367
+Mesela Wikipedia'dan alıp kullanabilir miyim ben direkt?
+
+569
+02:22:28,275 --> 02:22:33,796
+Eğer seçeceğim modeller Wikipedia'daki metinlerden eğitildiyse.
+
+570
+02:22:34,456 --> 02:22:40,916
+Yani şimdi şöyle bir şey söyleyeyim. Bundan kaçış şu noktada var mı? Çok fazla yok belki. Tamam mı?
+
+571
+02:22:40,916 --> 02:22:52,995
+Yani bundan tamamen emin olabilme ihtimaliniz var mı? Anca şöyle bir şey olabilir yapacağınız şey.
+
+572
+02:22:53,940 --> 02:23:15,600
+Tamamen kaçmak istiyorsanız, elinizde bir tamamen mesela Bert'i kullanacaksınız diyelim ki. Bert'in hangi sürümünü kullanıyorsunuz? Ne bileyim, 2022 Mart'ta yayınlanmış bir sürüm var mesela, tamam mı? 2022 Mart'tan sonra yayınlanmış bir şeyleri kullanmanız falan gerekir. Anlatabildim mi? Çok çok emin olabilmek için belki.
+
+573
+02:23:16,275 --> 02:23:25,775
+Onun bir de garansisi yok da. Dolayısıyla ondan kaçınmanız pek mümkün değil. Anlatabildim mi? Maalesef.
+
+574
+02:23:25,775 --> 02:23:34,695
+Anladım. Peki hepsinin ortaklanmış bir veri kümesi gibi bir şey kullansak, ortalama bir sonuç almak gibi mi?
+
+575
+02:23:35,700 --> 02:23:38,580
+Anlayamadım ne demek istediğini.
+
+576
+02:23:38,580 --> 02:23:50,180
+Şöyle mesela Bert'in eğitildiğim modelle veya başka bir tane model kullandım. İkisinin eğitildiği veri kümelerini birleştirip veri kümesi mi oluştursak?
+
+577
+02:23:52,540 --> 02:23:55,020
+Bir dakika, veri kümesinden kastımız bizim burada.
+
+578
+02:23:55,020 --> 02:23:56,500
+Şöyle, Metin, Metin hocam.
+
+579
+02:23:57,040 --> 02:24:01,159
+Yani derlemden bahsetmiyorum bak, bunların eğitildiği derlemler falan var ya.
+
+580
+02:24:01,652 --> 02:24:08,632
+Oradan bahsetmiyorum. Oralarda zaten bir şey yapmayacaksınız. Oralar sizi ilgilendirmiyorsunuz. Burada pretren edilmiş modelleri alıp kullanacaksınız.
+
+581
+02:24:10,432 --> 02:24:24,092
+Evet ama şunu diyorum işte. Hani bu önceden eğitilmiş ya, dediğiniz gibi bir tane, bir en tane metinden eğitilmiş. Yani ben bu metinleri, hani eğitildiği metinleri bu adamın karşısına sunmayayım, bu modelin karşısına sunmayayım diyorum.
+
+582
+02:24:24,500 --> 02:24:30,420
+Anladım. Sunmamak için elinden geleni yap ama tamamen kaçmam birazcık zor olur. Onu demeye çalışıyorum.
+
+583
+02:24:33,780 --> 02:24:34,340
+Anladım.
+
+584
+02:24:34,940 --> 02:24:47,080
+Tamam, yani yapabiliyorsun. Onun için ne yaptığını falan da anlatırsın. Onda da bir sıkıntı yok. Ama hani tamamen kaçmak da çok kolay bir şey değil herhalde. Anca demin bahsettiğim gibi falan bir şey de olur.
+
+585
+02:24:50,675 --> 02:24:51,475
+Teşekkür ederim.
+
+586
+02:24:51,695 --> 02:24:52,235
+Rica ederim.
+
+587
+02:24:53,775 --> 02:24:55,216
+Başka soru var mı arkadaşlar?
+
+588
+02:24:56,556 --> 02:24:59,615
+Hocam, metinlerin dilleri önemli mi?
+
+589
+02:24:59,835 --> 02:25:03,915
+Değil. İstediğinizi kullanabilirsiniz.
+
+590
+02:25:11,059 --> 02:25:11,639
+Başka?
+
+591
+02:25:20,115 --> 02:25:32,456
+Peki. Peki o zaman arkadaşlar, bugün bu kadar dersimiz. Önümüzdeki hafta aynı gün aynı saatte görüşmek üzere diyorum. Hepinize geldiğiniz için teşekkürler.
+
+592
+02:25:34,076 --> 02:25:39,416
+Teşekkürler.
