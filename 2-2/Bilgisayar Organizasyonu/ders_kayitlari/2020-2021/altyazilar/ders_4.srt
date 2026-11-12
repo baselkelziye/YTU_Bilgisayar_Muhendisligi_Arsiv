@@ -1,0 +1,2283 @@
+1
+00:04:25,012 --> 00:04:48,271
+Arkadaşlar, günaydın. Bugün yine geçen haftadan kaldırdığı noktadan devam edeceğiz. Geçen hafta hatırlayacak olursanız, senkron, ardışıl devrelerle ilgili olarak blok yapıları incelemiştik. Sonrasında da bu haftanın temel konusu olan programlanabilir dizi lojiklerine bakacağız.
+
+2
+00:04:48,800 --> 00:05:04,360
+PAL, PLA, PLD gibi cihazlar. Yine burada da vaktimiz kalırsa FPGA konusuna değineceğiz biraz yine. Şu ana kadar gördüğümüz bazı blog yapılarının FPGA kod örneklerini Verilog üzerinden vermeye çalışacağım.
+
+3
+00:05:06,220 --> 00:05:13,480
+Dersin başında da söylemiştim, Verilog kısmından sorumlu değilsiniz ama ilgilenmek isteyenler için.
+
+4
+00:05:14,196 --> 00:05:20,796
+Bahsetmiş olacağım. Daha önceki haftalarda söylemiştim. Icarus Verilog programını kullanacağım.
+
+5
+00:05:21,996 --> 00:05:30,676
+FPC tarafında. Yine PLD cihazlarıyla ilgili olarak bu hafta WinCouple isimli bir program var.
+
+6
+00:05:33,376 --> 00:05:41,475
+PLD cihazlarını hem derlemek için, bu cihazlara kod derlemek için hem de cihazlara kod yüklemek için kullanılan bir program.
+
+7
+00:05:41,939 --> 00:06:01,899
+Öğrenciliğim zamanında da kullanmıştım. Bir de ondan bahsedeceğim. Sonrasında da saat 11 itibariyle kısa sınavımız başlayacak. Toplam 50 dakika süremiz olacak. Sınavla ilgili olarak Google Classroom'dan duyuru yapmıştım. Herkes görmüştür diye umut ediyorum. Google Classroom'daki duyuru da şöyle diyordu.
+
+8
+00:06:06,675 --> 00:06:18,915
+DEL çalıştırılabilir halini oraya eklemiştim. Programı indirmenizde fayda var. Sınav sorusu ile birlikte yine programda kodun içerisinde veya soruların içerisinde daha cizip içerisinde.
+
+9
+00:06:20,555 --> 00:06:32,115
+Ama bu aşamaya kadar ilk duyuru yaptığım zamandan bu yana konu ile ilgili olarak yani lojistimi kullanma ile ilgili olarak biraz hani bağlantılar nasıl yapılıyor, simülasyon nasıl çalıştırılıyor, input output nasıl.
+
+10
+00:06:32,788 --> 00:06:45,148
+veriliyor, sağlanıyor. Ayrıyeten devre, lojik kapılar nasıl çekilir, workbench'e nasıl konulur, nasıl bağlantı yapılır gibi konulara bakmış olmanızı bekliyordum.
+
+11
+00:06:46,347 --> 00:06:57,788
+Yine sınav sırasında lojisim için, lojisim tarafında şablon bir dosyamız olacak. Bu şablon dosya üzerine gerçeklemenizi, yapmanızı bekliyoruz. Dolayısıyla...
+
+12
+00:06:58,163 --> 00:07:25,543
+Sınav sonunda, 50 dakika sonunda, ekstra bir süre yok. 50 dakika içerisinde hem çözümlerinizi hem de yüklemenizi bitirmeniz lazım. Dikkat edin lütfen. 50 dakika içerisinde hem elle çözümünüzü, yani teorik çözümünüzü hem de lojisim dosyasındaki gerçeklediğiniz tasarımı online yıldız editarıya yüklemenizi bekliyoruz. Puanlama bunlar üzerinden olacak. Eğer lisansüstü bilimsel hazırlık öğrencisiyseniz,
+
+13
+00:07:26,132 --> 00:07:50,711
+Sizin için özel bir durum var. Sadece elle yapmış olduğunuz çözümü yüklemeniz yeterli. Sizi lojisim tarafından muaf tuttuk. Her iki grupta da sınav aynı anda başlayacak. Aynı sorular sorulacak. Sınavın tabii ki doğal olarak bu bir sınav olduğu için bireysel çalışmayı, bireysel çalışmanızı ve çözümünüzü içermesi gerekiyor.
+
+14
+00:07:51,187 --> 00:07:57,528
+Aksi durumda itinayla tespit edip gerekli yaptırımları da uygulayabiliriz.
+
+15
+00:07:59,927 --> 00:08:02,728
+Kendi çalışmanız olsun arkadaşlar. Ona dikkat edin.
+
+16
+00:08:04,307 --> 00:08:05,687
+Hocam kaç tane soru var?
+
+17
+00:08:06,768 --> 00:08:11,388
+Kaç tane soruyu duyuruda söylemiş miyim? Bir kontrol edeyim. Eğer söylememişsem şimdi de söylemeyeceğim.
+
+18
+00:08:22,100 --> 00:08:45,240
+Bir duyuru da söylemedim diye hatırlıyorum. Evet, şimdi sürpriz de olsun ama şöyle söyleyeyim. Bonus bir soru var. Ekstra bonus bir soru var. İsterseniz onu da yapabilirsiniz. Onun dışında bir de normal, yani şöyle söyleyeyim. İki soru var. Bir tanesi asıl yapmanızı beklediğim bir soru. Ek olarak bir tane de bonus soru var.
+
+19
+00:08:45,683 --> 00:08:53,523
+Süre gayet yeterli. Her ikisini de yapmak için gayet yeterli. Siz kendinize göre ayarlayıp yapın. Cevaplarınızı yükleyin.
+
+20
+00:08:54,183 --> 00:09:08,043
+Aslında bakacak olursanız, tek soruyu yapmayı tercih eden için de, iki soruyu da tercih eden için de benzer şekilde geniş geniş tasarımınızı yapmak ve soruları çözmek için uygun vakit var.
+
+21
+00:09:09,043 --> 00:09:12,124
+Kendinize göre bakarsınız. Dediğim gibi iki soru var. Birisi bonus.
+
+22
+00:09:16,692 --> 00:09:22,692
+Bu haftaki dersin genel akışı bu şekilde olacak.
+
+23
+00:09:26,951 --> 00:09:36,731
+Genel bir giriş itibariyle bu P-PAL, P-L-A veya programlanabilir lojik cihazlara geçmeden önce kısacık bir hafıza elemanlarından bahsedelim.
+
+24
+00:09:37,511 --> 00:09:42,692
+Bu defa de karşımıza gelecek. İki iki kere daha bu konu üzerinden geçeceğiz ama şimdi...
+
+25
+00:09:42,995 --> 00:09:56,015
+PAL cihazlarına geçmeden önce hemen öncesinde ROM ile bir programlama nasıl yapılır ondan bahsediyor olacağız. Dolayısıyla hemen öncesinde de RAM ve ROM cihazlarının genel iç yapısı nedir kısacık bir bahsedelim. Ondan sonra programlanabilir cihazlara geçelim.
+
+26
+00:09:57,395 --> 00:10:09,775
+Önce ROM'dan başlayalım. ROM yapısı aslında arkadaşlar temel olarak Read Only Memory yani çalışması sırasında sadece okunabilir bir bellek.
+
+27
+00:10:10,451 --> 00:10:24,531
+Bu bellek yapısı içerisinde saklanan değerler aslında enerji kesildiğinde de kaybolmuyor. Sistem enerji kesilse ve yeniden enerji versek aynı adreslerden aynı değerleri okuyabiliyoruz.
+
+28
+00:10:25,511 --> 00:10:30,432
+Genel blok yapısına baktığımız zaman sadece okumayla ilgili olarak çalıştığı için bu cihaz.
+
+29
+00:10:30,899 --> 00:10:44,319
+Adres uçları, data uçları ve okuma kontrol ucu mevcut. Bir de cihazı aktif eden chip select ucu mevcut. Onu da söylemiş olalım. O eksik kalmış burada ama. Bir de cihazı aktif etmek üzere chip select ucu mevcut.
+
+30
+00:10:45,491 --> 00:11:08,471
+Cihaz nasıl bir yapı? Cihaz aslında M adet adres ucuyla toplam 2 üzeri M adet hafıza gözü oluşturabilen veya adresleyebilen bir cihaz. Her bir hafıza gözünde de burada görebileceğiniz üzere N adet bit saklıyor. Dolayısıyla bu ROM cihazının kapasitesinin kabaca 2 üzeri M çarpı N olduğunu söyleyebiliriz. Bu kadar bit kapasitesinde olduğunu söyleyebiliriz.
+
+31
+00:11:08,799 --> 00:11:22,799
+Buradaki kapasite hesabı bu şekilde yapılıyor. M adet adres ucu varsa 2 üzeri M adet adres gözü vardır içeride. Her bir adres gözünde de M adet bit tutuluyor, saklanıyor. Böyle bir yapı. İç yapısına baktığımız zaman aslında...
+
+32
+00:11:23,187 --> 00:11:45,187
+Adres uçları bir dekodere bağlı. M çarpı iki üzeri M'lik bir dekodere bağlı. Dolayısıyla M adet adres ucuyla iki üzeri M adet hafıza gözünü bu şekilde seçiyoruz dekoder üzerinden. Dolayısıyla her bir adres gözünde de M adet bitten bahsedebiliriz. Burada programlama temel olarak şu şekilde çalışıyor.
+
+33
+00:11:45,652 --> 00:12:01,332
+Her bir hafıza gözü için sigortalar mevcut. Bu sigortaları elektriksel olarak yakarak veyahut da float ederek yani elektriksel olarak konumu da değiştirebiliyor veyahut da fiziki olarak yakılarak da olabiliyor.
+
+34
+00:12:02,272 --> 00:12:08,852
+ROM'un çeşidine göre farklılık gösteriyor bu. Her bir hafıza biteni programlamamız mümkün oluyor.
+
+35
+00:12:09,364 --> 00:12:22,504
+Sadece okuma yönlü olarak çalıştığı için sadece okuma yönlü olarak bir kontrolümüz var. Eğer okuma kontrolümüz aktifse, cihaz seçildikten sonra ve adres değeri uygulandıktan sonra bu satırlardan sadece bir tanesi aktif olacak.
+
+36
+00:12:22,504 --> 00:12:35,124
+Bu arada her bir sütun kendi içerisinde birbiriyle bağlantılı. Dolayısıyla burada sadece dekoderden de gelecek adres değerine göre sadece bir tane satır seçileceği için
+
+37
+00:12:35,456 --> 00:12:40,496
+Bizim bu yapımız verilen adrese göre herhangi bir satır aktif etmeyi sağlamış oluyor.
+
+38
+00:12:41,796 --> 00:12:45,936
+Bu stunları arasındaki bağlantı da herhangi bir biti dışarı çıkmamı sağlıyor.
+
+39
+00:12:46,536 --> 00:12:57,155
+Dolayısıyla read kontrolücüyle de tri-state bufferların aktif edilip kapatılmasıyla veya yüksek enfedans göstermesiyle dış dünyaya veri çıkmayı veyahut da bu cihazın veri yolundan koparılmasını
+
+40
+00:12:59,668 --> 00:13:07,307
+Koparılması gibi etki yapacak şekilde yüksek empedans göstermesini sağlamış oluyoruz. Dolayısıyla cihazın genel yapısını bu şekilde ifade edebiliriz.
+
+41
+00:13:08,628 --> 00:13:12,548
+RAM yapısına bakacak olursak RAM yapısında da benzer bir durum söz konusu.
+
+42
+00:13:14,367 --> 00:13:23,548
+Fakat bu Random Access Memory olarak geçen yapı hafıza değerine, hafıza gözüne...
+
+43
+00:13:23,731 --> 00:13:44,412
+Rastgele olarak erişimi imkan kılıyor. Eğer bir şey rastgele erişim varsa bir de sıralı erişim olabilir. Sıralı erişim örneği de aslında belki görmemişsinizdir ama veri kasetleri vardı veya bant şeklinde. Bu yapılar aslında seri veri erişiminin sağlandığı durumlardı.
+
+44
+00:13:45,268 --> 00:13:55,467
+REM yapısında dolayısıyla yine benzer bir mantık söz konusu ROM'daki gibi. Fakat veri okunabilir ve yazılabilir. Geçici bir hafıza. Enerjisi kesildiğinde üzerinde saklanan veriler kayboluyor.
+
+45
+00:13:56,148 --> 00:14:14,028
+M adet adres ucu var. Dolayısıyla içeride 2 üzeri M adet adres gözü var. Her bir adres gözü en adet bitten oluşuyor. Yazma ve okuma kontrolüne göre ben bu hafıza gözüne seçmiş olduğum adresiyle seçmiş olduğum hafıza gözüne dış dünyadan veri aktarabilir veya burada saklı veriyi dış dünyaya aktarabilirim.
+
+46
+00:14:14,707 --> 00:14:19,648
+Burada data in ve data out yapıları iki farklı bas olarak verilmiş olmakla birlikte.
+
+47
+00:14:20,176 --> 00:14:28,936
+Günümüzde pratik olarak bunlar tristate bir kontrol üzerinden aynı bas üzerinden çalışıyor. Yani tek bir data in data out bası var.
+
+48
+00:14:29,331 --> 00:14:41,532
+Okuma yönünü ayarlamışsak dış dünyaya veri aktaracak şekilde, yazma yönünü ayarlamışsak da dış dünyadan veri okuyacak şekilde çalışan bir kontrol mantığı tek bir bas üzerinde mevcut oluyor.
+
+49
+00:14:41,532 --> 00:14:53,392
+Yine iç yapısını inceleyecek olursak, M adet adres ucuna karşılık 2 üzeri M adet seçim oluşturabilmek ve 2 üzeri M adet adres gözünü seçebilmek için.
+
+50
+00:14:53,875 --> 00:15:16,875
+ME2 üzeri M'lik dekoder yine burada da söz konusu. Okuma ve yazma mantığını sağlamak adına giriş yönlü ve çıkış yönlü Tristate Buffer mantıkları söz konusu. Dolayısıyla kabaca bu yapıyı da RAM yapısı olarak gözümüzün önünde canlandırabiliriz. Burada asıl aklımızda kalması gereken RAM ve ROM yapılarında adres uçlarına karşılık seçimi sağlayan bir dekoder kullanıldığı mantığı.
+
+51
+00:15:22,035 --> 00:15:27,916
+Şimdi PAL ve benzeri cihazların, programlanabilir cihazların yapılarını incelemeye çalışalım.
+
+52
+00:15:29,196 --> 00:15:34,155
+Temel olarak programlanabilir cihazlardan kastet şu.
+
+53
+00:15:35,056 --> 00:15:36,735
+Pardon, yukarıdan başlayacaktık.
+
+54
+00:15:37,375 --> 00:15:41,936
+Programlanabilir cihazlarla kastettiğimiz programlanabilir lojik cihazlar.
+
+55
+00:15:41,936 --> 00:15:43,936
+Bunlar ROM yapısı.
+
+56
+00:15:44,659 --> 00:15:51,139
+PAL yapısı, PLA yapısı ve PLD yapısı olarak ortaya çıkıyor. Bir de FPGA var tabii bunların en gelişmiş hali.
+
+57
+00:15:53,879 --> 00:16:02,580
+Aslında programlanabilir olmalarıyla şunu kastediyoruz. Bu cihazlar geldiği vakit veya üretim halinden geldiği haliyle
+
+58
+00:16:02,995 --> 00:16:20,276
+İçerilerinde rastgele bir takım değerler tutuyor veya sıfır şeklinde değerler tutuyor olsun. Biz bunları programladığımız zaman aslında belirli girişlere karşılık istediğimiz çıkışları üretecek şekilde bunları içerisine bir kod gömmüş oluyoruz aslında.
+
+59
+00:16:20,536 --> 00:16:30,416
+Bunu yaparken mesela ROM yapısını nasıl ifade ediyoruz? ROM yapısı için şeyi hatırlayalım. Bir lojik tasarım yapmak istediğimiz zaman.
+
+60
+00:16:30,995 --> 00:16:38,716
+Doğruluk tablosu yapıyorduk. Bu doğruluk tablosundan da lojik fonksiyonu elde etmek istediğimiz zaman ilk izleyeceğimiz yol çarpımlar toplamı şeklinde bunu yazmak.
+
+61
+00:16:38,716 --> 00:16:53,716
+Yani doğru min termleri yazmak bu lojik fonksiyonu ifade ediyordu. Burada görmüş olduğunuz cihazların her birisinde çarpım ve toplam terimlerini oluşturmak üzere katlar var veya kapı katları var.
+
+62
+00:16:54,227 --> 00:17:12,288
+Bu cihazları birbirinden ayıran durum ise mesela ROM yapısı için ROM yapısında AND BLOCK yani çarpım terimlerini üreten BLOCK'da ve benzer şekilde OR tarafında da OR kapısı katında da bir takım özellikler mevcut.
+
+63
+00:17:12,288 --> 00:17:18,607
+Bu farkı şöyle ifade edebiliriz. ROM yapısında bütün çarpım terimleri üretiliyor.
+
+64
+00:17:19,412 --> 00:17:29,271
+Bu şu anlama geliyor. AND katı fixed, sabit. Orayı programlayamıyoruz. Dolayısıyla AND katında bütün çarpım terimlerini üretiyoruz.
+
+65
+00:17:29,391 --> 00:17:42,751
+Yani ROM yapısına baktığımız zaman sıfırıncı min-turn, birinci min-turn, ikinci min-turn, kaç bitlik bir ROM'sa, 2 üzeri m-1'lik, 2 üzeri m-1'inci min-turn'e kadar bütün min-turn'ler üretiliyor anlamına geliyor bu.
+
+66
+00:17:43,471 --> 00:17:45,672
+OR katının programlanabilir olması ne demek?
+
+67
+00:17:46,048 --> 00:17:52,107
+Bu min termlerden biz istediğimiz kadarını birleştirip bundan bir fonksiyon üretebiliriz.
+
+68
+00:17:52,168 --> 00:17:55,327
+Yani end katı için bütün olasılıklar üretilmiş.
+
+69
+00:17:55,487 --> 00:18:02,887
+Biz bu min termlerin istediğimiz bir kısmını bir araya getirerek or kapılarıyla birleştirerek buradan bir lojik fonksiyon elde edebiliyoruz.
+
+70
+00:18:03,859 --> 00:18:29,359
+Her bir or kapısının çıktısı aslında bir fonksiyon çıktısı. Dolayısıyla ROM yapılarını düşünelim. ROM yapısında ne vardı? M adres ucu, Manisa'nın M'si. Nidenin N'si kadar da data ucu vardı. Dolayısıyla aslında bu ROM yapısıyla biz M girişli, yani Manisa'nın M'si M girişli olmak üzere Nide, N'ye kadar fonksiyon gerçekleyebiliriz. Bu önemli bir özellik ROM yapısı için.
+
+71
+00:18:29,811 --> 00:18:56,971
+Yine bu cihazların farkını söylemek adına devam edecek olursak programlanabilir. Array logic mantığında ise end katı programlanabilir. Yani biz istediğimiz çarpım terimlerini üretebilecek oluyoruz. Fakat burada or katı fixed. Yani bütün olası fonksiyonları üretmemiz mümkün değil. Sadece belirli bir sayıda kaç tane çıktı veriyorsa, kaç tane or katı varsa.
+
+72
+00:18:57,491 --> 00:19:01,471
+OR katında kaç tane kapı varsa o kadar lojik fonksiyon üretebiliyoruz.
+
+73
+00:19:01,951 --> 00:19:09,192
+Fakat bu herhangi bir OR kapısına bağlayabileceğimiz min term sayısı veya bunlar min term de olmak zorunda değil.
+
+74
+00:19:09,771 --> 00:19:17,351
+Çarpım terimi en genel anlamıyla çarpım terimlerinin hangilerinin üretileceği bizim yazdığımız programa bağlı olarak ortaya çıkıyor.
+
+75
+00:19:18,324 --> 00:19:34,364
+PLA tipi cihazlarda ise arkadaşlar, hem üreteceğimiz çarpım terimlerini hem de bu çarpım terimlerini ne şekilde bir araya or kapısıyla bir araya getireceğimizi biz kendimiz programlayabiliyoruz.
+
+76
+00:19:37,044 --> 00:19:43,024
+Dolayısıyla hem end katı hem de or katının bu cihazlarda programlanabilir olduğunu söyleyebiliriz.
+
+77
+00:19:43,024 --> 00:19:59,524
+Şimdi dikkat edecek olursanız temel bir fark ROM'da end katında bütün min termler üretiliyor ve min term olarak üretiliyor. Çarpım terimleri min term olarak üretiliyor. PAL'da dikkat edecek olursanız çarpım terimleri bizim istediğimiz şekilde üretiliyor.
+
+78
+00:19:59,604 --> 00:20:03,524
+Yani burada illaki min term olarak bir çarpım terimi üretmek zorunda değiliz.
+
+79
+00:20:03,839 --> 00:20:12,440
+Tıpkı KarnoMap'te bir arada parantez içerisine aldığımız terimler gibi indirgenmiş bir takım çarpım terimleri olabilir bunlar.
+
+80
+00:20:13,880 --> 00:20:16,440
+Aynısı PLA içinde geçerli.
+
+81
+00:20:17,799 --> 00:20:22,199
+Bir başka yapıda arkadaşlar kompleks PLD ve FBJ mantıkları.
+
+82
+00:20:22,799 --> 00:20:24,880
+Bunlar daha karmaşık cihazlar.
+
+83
+00:20:27,604 --> 00:20:50,284
+İnşa bloklarından bahsedebiliriz. Bu inşa blokları aslında yaptığımız programlamaya göre farklı fonksiyonlar gösterebilir. Bu bir hafıza elemanından bir AND kapısına kadar veya bir look-up table'a, bir hafıza biriminden look-up table'a kadar farklı fonksiyonları gösterebilecek kabiliyete sahip olan tasarım bloklarından oluşan cihazlar bunlar.
+
+84
+00:20:50,867 --> 00:20:59,527
+Bugün de eğer birazcık vaktimiz kalırsa FPGA ile ilgili olarak Verilog dili üzerinden bir takım örneklere de bakmaya çalışacağız.
+
+85
+00:21:00,852 --> 00:21:19,412
+Şimdi görsel olarak bu 3 cihaz ROM, PAL ve PLA arasındaki farkı ifade etmek istersek, ROM için dediğimiz gibi OR katı programlanabilir, PAL için AND katı programlanabilir, PLA için de 2 katın da programlanması mümkün.
+
+86
+00:21:24,692 --> 00:21:43,152
+ROM cihazıyla ilgili olarak bakacak olursak, burada vermiş olduğumuz tanım az önceki mantıkla benzer fakat sadece notasyon biraz değişmiş. Girdi ve adres uçlarıyla ilgili olarak N ve M'in yeri değişmiş fakat geçerli durum. Aynı şey burada da geçerli.
+
+87
+00:21:47,827 --> 00:21:52,967
+Bir dekoder inputların, adres uçlarının bir dekodardan geçirilmiş haliydi.
+
+88
+00:21:53,527 --> 00:21:57,447
+Ve daha sonrasında da biz burada programlamayı nasıl yapacağız?
+
+89
+00:21:58,627 --> 00:22:09,207
+Aslında bunun or katı dediğimiz kat, bütün min term'lerin şurada tek bir çizgi olarak ifade edilmiş durum var ya, onu birazcık büyüterek çizecek olursam arkadaşlar, daha anlaşılır olur.
+
+90
+00:22:09,527 --> 00:22:11,367
+Onu bir çizeyim isterseniz önce.
+
+91
+00:22:11,367 --> 00:22:13,087
+Yalnız şöyle yapacağım.
+
+92
+00:22:29,428 --> 00:22:40,087
+Bizim burada mevcut olan dekoderimizde 0'dan M-1'e kadar toplam M adet adres ucumuz mevcut.
+
+93
+00:22:41,587 --> 00:22:45,087
+Bu da M çarpı 2 üzeri M'lik bir dekoder.
+
+94
+00:22:46,208 --> 00:22:55,968
+Dekoderin çıktılarına baktığımız zaman Y0.y2 üzeri M-1 toplamda.
+
+95
+00:22:56,660 --> 00:23:05,340
+2 üzeri M adet çıkış var. Bu dekoderin özelliği olarak ne diyorduk arkadaşlar? Hatırlıyor musunuz? Dekoderin her bir çıktısı neye eşitti?
+
+96
+00:23:15,635 --> 00:23:21,515
+Dekoder nasıl çalışıyordu? Dekoder nasıl çalıştığını hatırlayalım.
+
+97
+00:23:21,596 --> 00:23:27,576
+Girdiğimiz input'a göre ilgili bölüm 1 olacaktı hocam. Diğerleri 0 olacaktı.
+
+98
+00:23:27,576 --> 00:23:36,576
+Evet. Giriş tarafında vermiş olduğumuz değerin decimal karşılığı neyse o numaralı çıkış aktif olacak. Diğerleri aktif olmayacaktı.
+
+99
+00:23:37,471 --> 00:23:58,031
+Aktif olmayı da şöyle tanımlamıştık. Aktif sıfır ve aktif bir cihazlar şeklinde tanımlamıştık. Aktif sıfır cihazlarda aktif olan uç sıfır değerini alır. Aktif bir cihazlarda aktif olan uç bir değerini alır. Bu durumda şuradaki çizime bakacak olursak bu cihaz aktif bir çıkışlı bir dekoder.
+
+100
+00:24:01,779 --> 00:24:09,640
+Bu durumda bizim giriş tarafına vermiş olduğumuz adres değeri neyse bunun desimal karşılığı olan uç örneği şu ucu çekmiş olsun.
+
+101
+00:24:09,740 --> 00:24:12,240
+Bir olacak. Diğer uçlarımız sıfır olacaktı.
+
+102
+00:24:12,720 --> 00:24:22,960
+Dolayısıyla bunu mesela Yİ çıkışı için girişler cinsinden girişleri de input diyelim.
+
+103
+00:24:24,948 --> 00:24:33,968
+Nokta nokta nokta input m-1 şeklinde diyelim. M adet giriş cinsinden yazdığımız zaman yi neye eşit oluyordu? Hatırlıyor muyuz bunu?
+
+104
+00:24:35,387 --> 00:24:45,867
+Sadece bir tane satır 1. Bundan doğruluk tablosu yapsak, yani bütün inputlara karşılık yi çıktısının bir doğruluk tablosu yapsak, bu doğruluk tablosunun sadece bir satır 1. O da hangisini seçmişse.
+
+105
+00:24:46,587 --> 00:24:50,288
+Dolayısıyla bu yi çıkışı inputlar cinsinden neye eşittir?
+
+106
+00:24:56,339 --> 00:24:58,079
+Minitörmler toplamına eşit oluyor.
+
+107
+00:24:59,519 --> 00:25:08,779
+Minitörmler toplamı şekli ama şöyle bakalım. Minitörmler toplamı dersek aslında yani sıfırlar gittiği için doğru olan.
+
+108
+00:25:09,159 --> 00:25:23,379
+Tamam. Doğru olan sadece bir tane var. Bu da demek ki iğninci minitörm. Buna eşit oluyor. Bunu arıyordum aslında. Dolayısıyla bu dekoderin her bir çıktısı iğninci minitörm'e eşit. Sıfırıncı minitörm.
+
+109
+00:25:23,663 --> 00:25:32,864
+İşte i'ninci min turn, 2 üzeri m-1. min turn şeklinde burada min turnlerimiz var zaten. Biz zaten fonksiyonu yazmak istediğimiz zaman ne diyorduk?
+
+110
+00:25:32,864 --> 00:25:50,564
+F i çarpı mi diyorduk. Mi min turn, i'ninci min turn. F i de fonksiyonun çıktısı. En genel anlamda mesela 2 bit karşılaştırıcı.
+
+111
+00:25:52,852 --> 00:25:57,192
+Böyle bir lojik fonksiyonu yapmak istersek, bunun doğruluk tablosunu yapıyorduk.
+
+112
+00:25:57,271 --> 00:26:01,932
+Doğruluk tablosunun çıktı sıtınında bu fi'lere karşılık gelecek.
+
+113
+00:26:02,532 --> 00:26:06,172
+MI'lerde her bir satırdaki terime karşılık gelen min term olacak.
+
+114
+00:26:06,392 --> 00:26:10,112
+Dolayısıyla fonksiyonu en gelen anlamda herhangi bir lojik fonksiyonu böyle yazabiliyorduk.
+
+115
+00:26:10,692 --> 00:26:15,951
+Dekoderle lojik fonksiyon gerçeklemeye baktığımızda da elimizde min termlerin olduğunu görüyoruz.
+
+116
+00:26:16,892 --> 00:26:18,412
+Elimizde bütün min termler var.
+
+117
+00:26:18,768 --> 00:26:31,567
+Şimdi şeye bakalım. Bu lojik olarak göstermiş olduğumuz bu or kapıları ne anlam ifade ediyor? Mesela 3'e 8'lik bir dekoderimiz olsun.
+
+118
+00:26:43,955 --> 00:27:09,776
+Şimdi şekilde gördüğünüz haliyle bakın or kapısında sanki tek bir kablo bağlıymış gibi gösteriliyor. Fakat bu aslında bir basitleştirilmiş gösterim. Bunun aslı şu. Gerçeği şu şekilde. Burada bir or katımız var. Ama bu or katının girişlerine bütün dekoder çıkışları bağlı. Şu şekilde bunların hepsi nokta nokta nokta nokta. Hepsi buraya bağlı.
+
+119
+00:27:11,508 --> 00:27:37,048
+Bağlanma ihtimali var veyahut da öyle söyleyelim bağlantı var. Şu bağlantı noktaları birer sigortadan oluşuyor. Şu bağlantı noktaları birer sigortadan oluşuyor. Eğer ki biz bu sigortayı korursak bu sigorta yerine çarpı işareti koyarak bunu ifade ediyoruz. Eğer sigortayı yakacaksak herhangi bir işaret koymuyoruz. Dolayısıyla bunu basit bir şekilde ifade etmek istersek şöyle bir gösterim oluyor.
+
+120
+00:27:38,804 --> 00:27:45,403
+Sanki or kapısına tek bir giriş bağlı gibi görünmesine rağmen aslında bunun eş değeri şurada çizmiş olduğum yapı.
+
+121
+00:27:45,764 --> 00:27:56,084
+Herhangi bir dekoder çıkışıyla bu or'un girişlerini çarpıyla işaretlemem demek de buradaki bağlantının korunduğu anlamına geliyor.
+
+122
+00:27:56,644 --> 00:27:58,024
+Bağlantı yakılırsa ne demek?
+
+123
+00:27:58,524 --> 00:28:06,144
+Mesela bu or katına 5 numaralı min term dahil değil, 6 numaralı min term dahil değil, 7 numaralı min term dahil değil.
+
+124
+00:28:06,804 --> 00:28:28,064
+0. min term bu or kapısına bağlanmış. Bu şekilde bunu ifade edeceğiz. Veya burada da şöyle bir yapı kurarsak bu or kapısının çıktısı şu olacak. Buradaki değerlerimizde A, B, C sırasında X, Y, Z şeklindeyse en anlamlı çıkışımız X olmak üzere.
+
+125
+00:28:28,480 --> 00:28:51,820
+Öncelikli olarak şu min termi yazalım. Bu sıfırıncı min termümüz. X üstü, Y üstü, Z üstü min termine karşılık gelir. Bu min term X üstü, Y üstü, Z, X üstü, Y, Z üstü, X üstü, Y, Z, X, Y üstü, Z üstü, X, Y üstü, Z, Z.
+
+126
+00:28:53,523 --> 00:29:19,903
+X, Y, Z üstü, bu da X, Y, Z terimine karşı gelir. Şu çarpıları korumak demek, bu sıfırıncı min törümü buraya aldık. Demek ki buradaki çıkan F fonksiyonumuz, sıfırıncı min törm burada var. Yani X üstü, Y üstü, Z üstü artı, şu min törm var, X, Y üstü, Z üstü artı, bir de yedinci min törm, X, Y, Z terimi olduğu anlamına gelecek.
+
+127
+00:29:20,336 --> 00:29:30,756
+Bu gösterim bu anlama gelecek. Sigortaları yakmak da pratikte aslında ilgili uçta yüksek bir gerilim oluşturmakla eşdeğer durum.
+
+128
+00:29:32,144 --> 00:29:52,144
+Programlanabilir ROM'lar için bu şekilde sigorta yakılarak ama günümüzde artık siz de farkındasınızdır. Bu şekilde geri dönülemez ROM'lar yok. Tekrar programlanabilir ROM'lar var. Bunlar da elektriksel olarak tekrar programlanabilir ROM'lar olarak geçiyor. E-Kare Prom şeklinde geçiyor.
+
+129
+00:30:00,000 --> 00:30:21,779
+Dolayısıyla elektriksel bir gerilim potansiyel uygulanarak ilgili sigortanın veya bağlantının yapılması veya koparılması sağlanmış oluyor. Tekrar ters yönde bir gerilim verildiğinde yine bu ilgili bağlantıyı ters yönde açmak kapamak da mümkün olmuş olacak. Dolayısıyla ROM ile ilgili yapmış olduğumuz gösterimi bu şekilde düşünmekte fayda var.
+
+130
+00:30:23,220 --> 00:30:43,060
+İç yapısı ve bağlantı ve programlama kısmı bu anlama geliyor. Yani baktığımız zaman ROM yapısında bütün çarpım terimleri üretildiği için, buraya bir müdahalemiz olmadığı için, çarpım terimleriyle ilgili olarak çarpım terimler tarafı veya AND array tarafı fixed olmuş oluyor.
+
+131
+00:30:43,060 --> 00:30:49,680
+Yani baktığımız zaman ama şurada bir şey var, ben burada hiçbir AND kapısı görmüyorum. AND array nerede sizce?
+
+132
+00:30:57,332 --> 00:31:11,192
+Dedik ya, ROM'da hem AND array hem OR array var. AND array kısmı fixed. OR array kısmı programlanabilir. OR kısmını programladık. İlgili sigortayı yaktık veya koruduk. Ama AND array katını göremiyorum ben burada. Nerede acaba?
+
+133
+00:31:15,316 --> 00:31:18,415
+Dekoder mu sağlıyor hocam aslında o end array kitleyi?
+
+134
+00:31:18,895 --> 00:31:26,675
+Evet, kesinlikle. Zaten bakın burada çıktılar çarpım terimleri. Dolayısıyla dekoderin iç yapısında bu end array burada mevcut.
+
+135
+00:31:26,935 --> 00:31:37,375
+Dolayısıyla dekoderin iç yapısını önceki derslerimizden hatırlayacak olursanız aslında burada end kapılarından oluşan, end ve not kapılarından oluşan bir blok vardı, logic blok vardı.
+
+136
+00:31:37,375 --> 00:31:40,096
+Dolayısıyla end array katımız bunun içerisinde.
+
+137
+00:31:40,448 --> 00:31:49,048
+Or tarafının programmasından kastedilen de bu. İlgili bağlantıları yani dekoder çıktılarını korumak veya yakmak şeklinde oluyor.
+
+138
+00:31:49,908 --> 00:31:56,168
+Şimdi bir adım daha ilerleyelim. Elimizdeki ROM cihazımız şöyle bir şey olsa bunu nasıl gösteririz?
+
+139
+00:31:59,284 --> 00:32:13,764
+Çok basit bir ROM yapısı olsun. Bunlar adres uçlarımız. 3 tane olsun. A0, A1, A2 şeklinde. Bunlar da bizim data uçlarımız olsun. Data uçlarımız da 4 tane olsun. D0, D1, D2, D3.
+
+140
+00:32:16,403 --> 00:32:29,884
+Bu yapıyı, bu blok yapıyı, iç yapısını gördüğümüz bu blokla oluşturmak istersek dışarıdan gelen A1, A0, A2 bağlantıları, D0, D1, D2, D3 bağlantıları nasıl oluşturulur sizce?
+
+141
+00:32:31,283 --> 00:32:36,183
+Yani şunun içerisini burada görmüş olduğunuz blokla oluşturmak istiyoruz.
+
+142
+00:32:37,003 --> 00:32:43,863
+O zaman A0, A2'ye kadar, D0, D3'e kadar olan uçlar nelerde sizce?
+
+143
+00:32:52,276 --> 00:32:54,076
+Adres uçlarını nereye bağlarız?
+
+144
+00:32:56,895 --> 00:32:57,836
+Basit olan bu.
+
+145
+00:32:57,855 --> 00:32:58,276
+Dekodera.
+
+146
+00:32:59,056 --> 00:33:01,655
+Dekodera bağlarız ama anlam sırasını koruyarak.
+
+147
+00:33:01,756 --> 00:33:03,195
+A0 burada en düşük anlamlı.
+
+148
+00:33:03,875 --> 00:33:07,175
+Burada da A, dekoderin A seçim ucu en düşük anlamlı.
+
+149
+00:33:07,236 --> 00:33:11,855
+Dolayısıyla A0, A1, A2 şeklinde bağladık.
+
+150
+00:33:11,935 --> 00:33:14,316
+Peki D0, D1, D2, D3 nerede?
+
+151
+00:33:16,836 --> 00:33:18,476
+Onları da V'ya kapılarından.
+
+152
+00:33:44,692 --> 00:34:00,212
+Ben bunlardan hangisini ne şekilde programlamışsam her birisi buna göre ayrı bir fonksiyon gerçekliyor. Burada D0, D1, D2 ve D3 şeklinde de bunu ifade etmemiz mümkün. Dolayısıyla özellikle şunu görelim diye bunu söyledim.
+
+153
+00:34:02,259 --> 00:34:20,739
+Bu data sayısı kadar or kapısı var ve bunların girdileri aslında birbirinden bağımsız. Yani hangi min termler bunlara bağlanmış? Buradaki bağlanan min termler buradaki bağlananlardan bağımsız. Hepsi elimizde mevcut. Ben istediğimi, istediğim çıkışa bağlayabiliyorum. Böyle bir durum söz konusu.
+
+154
+00:34:20,739 --> 00:34:23,599
+Şimdi bir adım geri dönelim.
+
+155
+00:34:28,788 --> 00:34:31,387
+Bu MinTur meselesinden bahsetmiştik.
+
+156
+00:34:32,987 --> 00:34:34,947
+Tasarımla ilgili durum var mı?
+
+157
+00:34:39,443 --> 00:34:44,884
+ROM çeşitlerinden bahsedelim arada.
+
+158
+00:34:45,684 --> 00:34:49,744
+ROM çeşitleri arkadaşlar üretim teknolojisine göre farklı tiplerde olabiliyor.
+
+159
+00:34:50,903 --> 00:34:56,623
+Maskelenmiş ROM, maskelenmiş ve programlanmış ROM olarak ifade edilen yapı üretim aşamasında programlanıyor.
+
+160
+00:34:57,284 --> 00:34:59,984
+Daha sonra tekrar programlamak mümkün değil.
+
+161
+00:35:01,083 --> 00:35:04,104
+Programlanabilir ROM, P-ROM dediğimiz yapı ise
+
+162
+00:35:04,596 --> 00:35:16,576
+Bunlar aslında üretim aşamasında programlanmıyor fakat kullanıcı tarafından bir kere programlanabilir ve bu şekilde kullanılabilir bir yapı. E-Prom ise silinebilir.
+
+163
+00:35:18,036 --> 00:35:38,936
+Programlanabilir ROM'lar. Bunlar aslında görmüşsünüzdür. Çipin üzerinde küçük bir pencere var. Bu pencere üzerinden çipe eğer ki ultraviyole ışık uzun bir süre, yeterince bir süre tutulursa cihaz üzerindeki program silinmiş oluyor. Yapısı bu şekilde. Dolayısıyla ultraviyole ışıkla silinebilen bir ROM yapısı.
+
+164
+00:35:38,936 --> 00:35:45,436
+E-Kareb ROM ise elektriksel olarak silinebilen ve yazılabilen ROM'ları ifade ediyor bunlar.
+
+165
+00:35:46,036 --> 00:36:00,735
+Burada ROM'un adres ve data uçları dışında çeşitli program koşullama uçları var. Bu program koşullama uçlarına uygun şekilde uygun elektrik seviyeleri verildiğinde artık bu cihazı yeniden programlamak, silmek mümkün oluyor.
+
+166
+00:36:00,735 --> 00:36:08,735
+Bir de flash hafızalar var. Flash hafızalarda yine E-Kare Prom'a benzeyen yapılar. Fakat burada...
+
+167
+00:36:09,427 --> 00:36:18,288
+Blog olarak yazma, okuma gibi veya silme gibi bir durum söz konusu teknoloji itibariyle. Dolayısıyla ROM yapılarını bu şekilde ifade edebiliriz.
+
+168
+00:36:26,036 --> 00:36:28,396
+Bu örnek neydi ona bir bakmaya çalışıyorum.
+
+169
+00:36:37,619 --> 00:36:44,579
+Bu örneğe biraz sonra döneceğim. Kendimiz bir örnek tasarlayalım. Şunu tekrar kaydırabiliyor muyuz bakalım.
+
+170
+00:36:53,300 --> 00:36:55,300
+Örneğimiz şöyle bir yapı olsun.
+
+171
+00:37:01,844 --> 00:37:03,724
+1 bitlik tam toplayıcıyı
+
+172
+00:37:10,324 --> 00:37:11,824
+Uygun büyüklükteki
+
+173
+00:37:18,068 --> 00:37:21,548
+Uygun büyüklükte bir ROM cihazı ile gerçekleyiniz.
+
+174
+00:37:29,268 --> 00:37:44,447
+Sorumuz böyle bir soru olsun. Bir bitlik tam toplayıcı yapacağız. Bunun için uygun büyüklükteki bir ROM cihazını gerçeklememiz isteniyor. Bunun için bu cihazı nasıl programlarız? Hangi füyüzler veya sigortalar korunur? Hangileri yakılmalıdır? Böyle bir sorumuz olsun.
+
+175
+00:37:45,568 --> 00:37:52,547
+Bunun için öncelikli olarak uygun büyüklükte dediğine göre uygun büyüklüğümüz nedir? Bunu söyleyebilir miyiz? Burada kullanmamız gereken ROM yapısı için.
+
+176
+00:38:00,532 --> 00:38:07,792
+Ama ROM'la yapacağız şimdi. ROM'un içerisindeki dekoderi söylemeyelim. ROM'un özelliğini söylüyorum. ROM'ları nasıl tanınıyorduk?
+
+177
+00:38:08,532 --> 00:38:13,832
+N çarpı, pardon 2 üzeri N çarpı, yanlış yazdım bir düzelteyim şunu.
+
+178
+00:38:15,532 --> 00:38:21,692
+2 üzeri M çarpı N'lik ROM'lar olarak ifade ediyorduk kapasiteyi. Şu N ve N sayısı ne?
+
+179
+00:38:21,692 --> 00:38:27,032
+N dediğimiz şey buradaki adres ucu sayısı. N dediğimiz de buradaki data ucu sayısı.
+
+180
+00:38:28,019 --> 00:38:38,239
+Romları bu şekilde ifade ediyordu. Dolayısıyla bu problemi çözebilmek için minimum büyüklükteki rom değerleri nedir? N ve M açısından.
+
+181
+00:38:42,164 --> 00:38:43,804
+3'e 2 olmaz mı hocam?
+
+182
+00:38:45,384 --> 00:38:46,024
+3'e 2.
+
+183
+00:38:46,024 --> 00:38:46,624
+AB ve E.
+
+184
+00:38:47,264 --> 00:38:47,564
+Evet.
+
+185
+00:38:47,884 --> 00:38:48,043
+İkinci.
+
+186
+00:38:48,684 --> 00:38:49,304
+Kesinlikle.
+
+187
+00:38:49,304 --> 00:38:50,704
+SUM ve FIYAT.
+
+188
+00:38:51,404 --> 00:38:52,184
+Kesinlikle.
+
+189
+00:38:52,384 --> 00:38:55,764
+Dolayısıyla bizim yapacağımız iş bu şuydu hatırlayacak olursanız.
+
+190
+00:38:56,684 --> 00:39:02,304
+Bunları toplayıp çıktı olarak da bir CERRIOUT ve SAM binary sayısını oluşturuyorduk.
+
+191
+00:39:02,724 --> 00:39:06,204
+Dolayısıyla bunlar girdilerimiz, bunlar çıktılarımız.
+
+192
+00:39:06,900 --> 00:39:27,619
+Girdi olarak 3 tane girdi var. Demek ki M değerimiz 3. 2 tane çıktığımız var. N değerimiz de bu durumda 2 oluyor. Dolayısıyla bizim kullanacağımız ROM minimum olarak, tabi bu hipotetik bir şey, 2 üzeri 3 çarpı 2'lik bir ROM olmak durumunda. 2 üzeri 3 çarpı 2'lik bir ROM'a baktığımız zaman bu ROM'un iç yapısını da şöyle görmemiz lazım.
+
+193
+00:39:27,619 --> 00:39:30,359
+Evet, hakikaten.
+
+194
+00:39:31,155 --> 00:39:34,655
+3x8'lik bir dekoder içeride var.
+
+195
+00:39:35,735 --> 00:39:36,756
+Carry out yazdım işte.
+
+196
+00:39:46,516 --> 00:39:56,416
+Burada A, B, C dekoderin çıktıları. Y0, Y1, Y2, Y3, Y4, Y5, Y6, Y7 diye çıktılarımız var.
+
+197
+00:39:59,056 --> 00:40:07,096
+Bu ROM'un iki tane çıktısı olduğuna göre iki tane OR kapısı çıktısı var.
+
+198
+00:40:11,923 --> 00:40:13,764
+Tamam, yapımızı oluşturduk.
+
+199
+00:40:13,983 --> 00:40:18,483
+Şimdi bizim A, B ve carry in girişlerimiz var. Bunları da şöyle bağlayalım.
+
+200
+00:40:18,644 --> 00:40:20,823
+A, B ve carry in şeklinde bağlayalım.
+
+201
+00:40:21,344 --> 00:40:23,724
+Şu bizim Cout'umuz olsun, bu da sum'umuz olsun.
+
+202
+00:40:24,203 --> 00:40:26,144
+Şimdi bunu, bu ROM'u nasıl programlayacağız?
+
+203
+00:40:26,943 --> 00:40:32,743
+Bunu programlayabilmek için arkadaşlar yapacağımız iş aslında şu olacak temelde.
+
+204
+00:40:32,743 --> 00:40:36,743
+Doğruluk tablosunu oluşturacağız. A, B ve carry in'e karşılık.
+
+205
+00:40:37,268 --> 00:40:40,367
+Carryout ve sum değerlerimizi oluşturacağız.
+
+206
+00:40:51,027 --> 00:41:13,927
+8 farklı değerimizi oluşturduk. ABC'yi topladım. Eldesi 0, kendisi 0. Eldesi 0, kendisi 1. Eldesi 0, kendisi 1. Eldesi 1, kendisi 0. Eldesi 0, kendisi 1. Eldesi 1, kendisi 0. Eldesi 1, kendisi 1. Şimdi bunları programlamayı nasıl yapacağız?
+
+207
+00:41:19,443 --> 00:41:29,244
+Biz Cout'u F, A, B ve Cary'in cinsinden yazmak istesek bu durumda ne diyecektik? Doğru mintermler diyecektik değil mi?
+
+208
+00:41:30,324 --> 00:41:43,104
+Doğru mintermler diyecektik. Burada doğru mintermler bakın hangisi? 3 numaralı minterm, 5 numaralı minterm, 6 numaralı minterm ve 7 numaralı minterm oluşturuyor bunları.
+
+209
+00:41:43,104 --> 00:41:46,384
+Doğru mintermleri. Bunları OR kapısına sokmamız lazım.
+
+210
+00:41:46,900 --> 00:42:06,760
+3, 5, 6 ve 7. Dolayısıyla programlamayı şöyle yapacağız. 3 numaralı minitörmün or kapısı bağlantısını sağla. 5 numaralıyı da sağla. 6 ve 7'yi de sağla. Bunu yaptığımız zaman careout şunların şu minitörmlerin toplamına eşit olacak. Bu bağlantıyı yaptığımızda careout'u yazalım.
+
+211
+00:42:12,659 --> 00:42:24,960
+A, B üstü, C in artı A, B, C in üstü artı A, B, C terimine eşit olmuş oluyor. Buradaki carry out fonksiyonumuz.
+
+212
+00:42:25,719 --> 00:42:30,859
+Dolayısıyla pratik bir yapı. Doğruluk tablosunu yap, bir olan satırları işaretli.
+
+213
+00:42:32,460 --> 00:42:39,079
+Benzer şekilde SAM için ne yapacağız? SAM için bir numaralı min turn, iki numaralı min turn,
+
+214
+00:42:40,724 --> 00:42:55,324
+4 numaralı min term ve 7 numaralı min term'in toplama katılması lazım. Dolayısıyla bu da bu ilgili sıradaki min term'lerin toplamı olmuş olacak. Yani bu bağlantıyı yaptığımız zaman sam şuna eşit olacak. Bu da zaten aradığımız şey.
+
+215
+00:43:04,244 --> 00:43:20,463
+A üstü B keriğin üstü artı A B üstü keriğin üstü son olarak da A B C terimine eşit olmuş oluyor. Dolayısıyla ROM ile tasarımı bu şekilde ifade etmemiz mümkün.
+
+216
+00:43:21,384 --> 00:43:24,103
+Şimdi sunumdaki örneğe bakalım bir.
+
+217
+00:43:31,635 --> 00:43:40,655
+Buradaki örnekte yine 3 adres 3'lü 4 çıkışlı bir ROM yapısı olduğunu varsayalım.
+
+218
+00:43:41,295 --> 00:43:46,375
+Burada bizden istenen şu adres değeri için çıktığının bu şekilde üretilmesi.
+
+219
+00:43:46,556 --> 00:43:52,395
+Yani bunu okuyup okuyamadığımızı göreceğiz.
+
+220
+00:43:52,831 --> 00:44:05,531
+Verilen bağlantı bu şekilde. Burada ROM'un programlandığını görüyoruz. Bu programın ne olduğunu çıkartmak mümkün. F3'ü şuradaki min turn'lerin toplamı şeklinde, F2'yi buradaki min turn'lerin toplamı şeklinde yazmak mümkün.
+
+221
+00:44:05,991 --> 00:44:13,231
+Dolayısıyla tasarımdan, yani bu gördüğümüz şematikten arka plandaki lojik fonksiyona gidebiliriz.
+
+222
+00:44:13,583 --> 00:44:25,683
+Burada bizden istenen giriş adres uçlarına vermiş olduğumuz belirli bir değere karşılık çıkış değerimizin ne olduğunu görebiliyor muyuz? Bir bu. İkincisi de bu lojik fonksiyonları yazabilir miyiz?
+
+223
+00:44:26,543 --> 00:44:33,703
+Şimdi öncelikli olarak şuna bakalım. Bizden istenen 001 durumunun çıktısı ne oluyor diye bakacağız.
+
+224
+00:44:38,996 --> 00:44:50,375
+A2, 0, A1, 0, A0, 1 olacak şekilde. Bu durumda en düşük anlamlı değerimiz, bunu yanlış mı vermişiz bakalım.
+
+225
+00:44:52,596 --> 00:44:58,516
+Ben şuraya bir şey yazmışım herhalde, sonra da kaydetmişim onu örnek için. Orada kalmış.
+
+226
+00:45:00,115 --> 00:45:06,476
+Dersteki 0, 1, 1'i kontrol edeyim bir de. 0, 1, 1, 3'ten çıkacak. 3'te de boş.
+
+227
+00:45:09,108 --> 00:45:10,448
+O zaman ne dergo.
+
+228
+00:45:21,523 --> 00:45:27,223
+Birden çıkması lazım. Tamam, buymuş. Tamam, sıkıntı yok.
+
+229
+00:45:28,423 --> 00:45:35,603
+001 girişlerini uyguladığımız vakit, yani bu soruyu şöyle düşünün. ROM önceden programlanmış olarak geliyor.
+
+230
+00:45:36,364 --> 00:45:40,304
+Biz adres uçlarına karşılık çıktı değerlerini kontrol etmeye çalışıyoruz.
+
+231
+00:45:41,344 --> 00:45:47,324
+Toplamda 3 girişimiz olacağı için A2, A1, A0 şeklinde adres uçlarımız bunlar.
+
+232
+00:45:47,956 --> 00:46:01,916
+0, 1, 2, 3, 4, 5, 6, 7 ve 8, 8 yok zaten pardon, 0'dan 7'ye kadar olan adres uçları için F3, F2, F1 ve F0 çıktılar ne olur? Bakabiliriz herhalde.
+
+233
+00:46:02,596 --> 00:46:09,516
+Adres ucu olarak 0 değerini uygulamak demek ne demek? Adres uçları, dekoderin girişlerine 0, 0, 0 değerini vermek.
+
+234
+00:46:14,003 --> 00:46:34,423
+Hangi numaralı çıkış aktif olacak? D0 numaralı çıkış aktif olacak. Bu çıkışlardan hareketle 0-0-0 durum için F3, F2, F1 ve F0'ın çıktıları ne olur? Bunu söyleyebilir miyiz? Şimdi seçim ucu olarak 0-0-0 uygulandığı için D0 aktif oldu. Aktif olması demek burada 1 olması demek.
+
+235
+00:46:38,132 --> 00:46:43,032
+Burada 1, diğerlerinde de 0 var anlamına geliyor bu. Başka bir bakış açısıyla.
+
+236
+00:46:44,172 --> 00:46:46,132
+F3 için baktığımızda F3...
+
+237
+00:46:46,931 --> 00:46:48,152
+D7'de 1 değil mi?
+
+238
+00:46:48,471 --> 00:46:48,971
+Hangisi?
+
+239
+00:46:49,692 --> 00:46:51,471
+D7'de 1 gözüküyor sanki.
+
+240
+00:46:52,492 --> 00:46:57,791
+D7'de şöyle ama. Bu bizim dekoderimiz ya. 3x8 dekoderimiz.
+
+241
+00:46:58,351 --> 00:47:02,851
+Bunun giriş uçlarına ben adres uçlarına 0, 0, 0 verirsem seçim uçlarına.
+
+242
+00:47:03,532 --> 00:47:05,431
+Dekoderin D0 aktif olmaz mı?
+
+243
+00:47:05,907 --> 00:47:26,648
+Doğru, anladım hocam. Tamam, yani buradaki sıfırlar, bu sadece dekoderle ilgili. Şuraya hiç bakmadık daha. Bu çarpılara daha hiç bakmadık. Bu çıktığımız bir, diğerleri sıfır. Mesela F3'e ne bağlı? Şu anda sıfır olan min termler bağlı. Dolayısıyla sıfırın bağlantısı yok. O zaman F3'ün değeri sıfır.
+
+244
+00:47:28,596 --> 00:47:45,175
+F2'nin değeri, bu uçta 1 var, 1 ucu buraya bağlanmış. Diğerlerinde bir tane 0 olan yerde de bağlantı var ama 0 artı 1 şeklinde bir sonuç olacak. Or kapısı ya bu. Dolayısıyla ben burada bir tane 1 bağlantısını yakalarsam bunun çıktısının 1 olduğunu kesin söyleyebiliyorum.
+
+245
+00:47:45,655 --> 00:47:54,596
+Benzer şekilde D0 aktifken, burada 1 varken buradaki sigortamız yakılmış, korunmamış. Dolayısıyla buradaki çıkışım da 0.
+
+246
+00:47:55,219 --> 00:48:11,239
+F0 için baktığımda buradaki çıkışım da 0. Dolayısıyla 0 adresinin hafıza içeriği desimal olarak 4'e karşılık geliyor. O zaman 1'in içeriği ben adres ucu olarak 1 uygularsam yani 0, 0, 1 uygularsam neye karşılık geliyor bakalım.
+
+247
+00:48:20,211 --> 00:48:29,592
+Dolayısıyla 1 olan bu satıra yapılan bağlantılar çıkışta 1 üretecek. O zaman bunun çıkışının 0011 olduğunu söyleyebiliriz.
+
+248
+00:48:30,972 --> 00:48:39,132
+2 bağlantısı yaptığımızda 2 numaralı minterm aktif olacak. Burada bağlantı korunmuş. Dolayısıyla 100000 olacak.
+
+249
+00:48:41,272 --> 00:48:46,132
+7 numaralı minterm'e bakalım. Yani adres uçlarına 111 verdiğim durumda.
+
+250
+00:48:46,804 --> 00:49:02,443
+Bu sefer burası aktif olacak. Dolayısıyla buradan 7 numaralı min term ile bağlantısı olan çıkış katları 1 çıkışı verecek. O zaman bunun çıkışı da 1-1-0-1 olacak. 1-1-0-1 şeklinde tanımlamış olacağız.
+
+251
+00:49:04,820 --> 00:49:19,340
+ROM'un içerisinde yazılı olan veriyi okumuş olduk veya ortaya çıkartmış olduk. Bize bir de buradaki fonksiyonları yazabilir miyiz diye soruluyor. Bu yazma işinde şöyle daha önce yaptığımız haliyle düşünelim. Şunu bir tuturalım burayı.
+
+252
+00:49:22,675 --> 00:49:46,496
+Fonksiyonu doğrudan, az önce yaptığımız gibi doğruluk tablosu oluşturmadan direkt yazabiliriz. Ne şeklinde yazabiliriz? Yine min-turner cinsinden yazabiliriz. Biz biliyoruz ki bunların her birisi min-turn. Sıfırıncı min-turn yani A üssü, B üssü, C üssü, nokta nokta nokta, A, B, C şeklindeki min-turnlerin hepsi burada oluşturulmuş.
+
+253
+00:49:49,108 --> 00:50:14,068
+F0 fonksiyonunu ABC cinsinden yazabilir miyiz? Birinci min term olacak. Yani A üstü B üstü C artı 5 numaralı min term olacak. AB üstü C artı bir de yeni 7 numaralı min term ABC terimleri. F0'ın fonksiyonu bu. İndirgenmiş hali değil, çarpımlar toplamı şeklinde yazılmış hali. İstersek bunu bir adım daha ileri götürüp.
+
+254
+00:50:14,675 --> 00:50:29,815
+daha indirgenmiş bir fonksiyon elde ediliriz. F1 için bakalım. Yine A üstü, B üstü, C artı, dört numaralı mintern, A, B üstü, C üstü terimi şeklinde. Bu toplam şeklinde bunu yazmamız mümkün.
+
+255
+00:50:30,175 --> 00:50:40,855
+F2'ye bakalım. F2, A üstü, B üstü, C üstü artı, A, B, C terimi. F3'e baktığımızda da 3 tane toplam terim var.
+
+256
+00:50:41,396 --> 00:50:58,116
+3 tane çarpım terimini toplayacağız. Dolayısıyla bu A üstü B C üstü artı A B üstü C artı A B C teriminden oluşan bir fonksiyon olarak bunu yazmamız da mümkün.
+
+257
+00:50:58,675 --> 00:51:21,175
+Dolayısıyla burada ROM'a hangi değerleri yazmamız gerekiyor bir tasarım aşamasında bunu görmüş olduk. Aynı zamanda da ROM'daki programlanmış olan değerleri nasıl anlamlandırırız, nasıl okuruz? Tersten bakarak onu da görmüş olduk bu sayede. Dolayısıyla ROM'la ilgili programlama mantığının bu şekilde olduğunu söyleyebiliriz.
+
+258
+00:51:23,096 --> 00:51:24,775
+[öğrenci] bir şey sorabilir miyim?
+
+259
+00:51:25,016 --> 00:51:25,355
+Buyurun.
+
+260
+00:51:25,844 --> 00:51:34,224
+Bu programlarken sigorta yakma olayını ben anlamadım. Anlattınız mı? Nasıl yakıyoruz? Yakıyoruz derken ne yapıyoruz?
+
+261
+00:51:35,224 --> 00:51:41,583
+Yakmak, sigorta yakmak aslında şöyle. Hemen göstereyim, ifade etmeye çalışayım.
+
+262
+00:51:42,623 --> 00:51:50,983
+Aslında şuradaki bağlantı yani D7 ucuyla bu or kapısı arasındaki bağlantıyı sağlayan şey şöyle bir.
+
+263
+00:51:54,324 --> 00:51:57,483
+Transistör. Bu aradaki bağlantıyı sağlayan bu.
+
+264
+00:52:01,063 --> 00:52:08,483
+Örneğin bu D7 ucuna gidiyor. Bu da OR kapısına giden taraf. Burada görmüş olduğunuz eleman bir sigorta elemanı.
+
+265
+00:52:10,403 --> 00:52:11,023
+Evet hocam.
+
+266
+00:52:11,327 --> 00:52:31,327
+Eğer ki biz bu sigortaya, yani transistörün çalışma mantığı nasıldı? Ben burada uygun gerilim değerini oluşturursam bu bağlantı sağlanacak değil mi? Bu şekilde çalışıyor. Ama ben burada sigortaya yani şu uca yüksek bir gerilim verirsem buradan çekilen akımla aslında bu sigorta çalışıyor. Yani bu sigortanın bir maks...
+
+267
+00:52:32,052 --> 00:53:00,052
+Akım değeri mevcut. Bu akım değerini açtığımız zaman yanıyor. Dolayısıyla ben burada transistörü bozmayacak şekilde baz ucundan, bu transistörün baz ucundan bağlı olan sigortaya uygun miktarda max I'dan daha yüksek bir akım sağlayacak olursam buradaki sigorta yanmış oluyor. Bu sigorta yandığı zaman D7 bağlantı neydi bu? Dekoder çıktısıyla or kapısı arasındaki bağlantı koparılmış oluyor. Buradaki sigortalının her birisi bu şekilde yakın.
+
+268
+00:53:00,052 --> 00:53:18,331
+Bunlar programlanabilir ve geri dönülemez yapılar. Ama geri dönülebilir yapılarda ise elektriksel yapı, burada BJT tipi transistör olarak düşün. Diğer taraftan MOSFET tipi yapılarda ise
+
+269
+00:53:18,719 --> 00:53:45,199
+Buradaki gerilim seviyesini belirli bir değerde tutarak veya bunu release ederek aslında oradaki gerilim seviyesini açıp kapatmak mümkün. Dolayısıyla bu da gate'in float edeceği gibi bir durum oluşturuyor. Yani burada sigortayı sonsuz olarak yakmıyoruz, kalıcı olarak yakmıyoruz. İstediğimiz zaman açıp kapatabilecek bir senaryo da elde etmemiz mümkün oluyor. Bu da programlanabilir. ROM'ların durumuna karşılık gelmiş oluyor kabaca.
+
+270
+00:53:46,579 --> 00:53:47,739
+Anladım hocam. Sağ olun.
+
+271
+00:53:49,800 --> 00:54:03,199
+Şimdi ROM yapısı bu şekilde. Bir sonraki cihazımız PLA cihazları. Ama oraya geçmeden önce bir kısa ara verelim arkadaşlar. 10 dakika kadar. Daha sonra da PLA cihazlarına geçeriz. Tamam mı?
+
+272
+00:54:03,440 --> 00:54:09,519
+Buraya kadar olanlarla ilgili sormak istediğiniz bir şey varsa sorabilirsiniz. Yoksa ara vermiş olalım.
+
+273
+00:54:18,036 --> 00:54:27,656
+Bu arada herkes lojisimi indirdi değil mi? Lojisimi indirdik mi? İndirmeyen varsa indirsin mutlaka Google Classroom'da verdiğim linkten.
+
+274
+00:54:32,371 --> 00:54:47,171
+Sınav sırasında çünkü çözümünüzü hem elle çözüm yükleyeceksiniz hem de lojisim tasarımınızı yükleyeceksiniz. Zip yapıp yükleyebilirsiniz, önemli değil. Ama ikisini de yüklemenizi bekliyoruz.
+
+275
+00:54:48,451 --> 00:54:57,031
+Eğer lisansüstü bilimsel hazırlık öğrencisiyseniz sadece elle çözüm yapmanız yeterli. Ama lisans öğrencileri her ikisini de çözmüş olacak.
+
+276
+00:54:57,940 --> 00:55:02,400
+Bir deneme fırsatı oldu mu lojisimle ilgili? Lojikte kullandınız diyebiliyorum.
+
+277
+00:55:03,759 --> 00:55:06,599
+Hocam, lablarda geçen sene kullandık bayağı.
+
+278
+00:55:07,559 --> 00:55:14,259
+Tamam, tamam. O yüzden dolayı ben de lojisimi seçtim ama şimdi bazı transfer öğrencileri olabilir.
+
+279
+00:55:14,860 --> 00:55:21,519
+Eğer kullanmadılarsa da eşit bir durum oluşsun diye öncesinde duyurmuş olmak istedik.
+
+280
+00:55:22,259 --> 00:55:24,019
+Tekrar tekrar o yüzden uyarıyorum yani.
+
+281
+00:55:24,788 --> 00:55:47,668
+Tamam, öyleyse tasarımı arkadaşlar proje dosyası olarak yükleyeceksiniz. Yani lojisimin uzantısı CIRC oluyor galiba, circuitten gelen. O CIRC uzantılı dosyayı yükleyeceksiniz ki ben onu burada çalıştırıp test edebileyim. Cevabınızı bu şekilde de test edeceğiz. Hem de tasarımınıza da bakacağız.
+
+282
+00:55:51,380 --> 00:55:57,820
+Proje dosyası olarak kaydedeceksiniz. Onu da özellikle belirttim. Lojisim dosyasını da yükleyeceksiniz diye. Tamam. Dikkat edin ona.
+
+283
+00:56:00,440 --> 00:56:04,480
+Nasıl isterseniz. Yani tek bir dosya olarak yüklemeye izin veriyor galiba.
+
+284
+00:56:05,139 --> 00:56:15,659
+Elle çözümünüzü işte fotoğraf telefonla çekip veya bilgisayar üzerinde bir yazı uygulamasıyla hangisi kolayınıza gelirse yapın.
+
+285
+00:56:16,115 --> 00:56:21,096
+Çözümünüzü de yine Lojisim'de implement ettikten sonra ikisini birden zipleyip yükleyebilirsiniz.
+
+286
+00:56:26,068 --> 00:56:30,428
+Başka bir sorumuz yoksa şimdilik o zaman bir 10 dakika ara verelim. Daha sonra devam ederiz.
+
+287
+00:56:31,948 --> 00:56:44,468
+Nasıl isterseniz. Elle çözümün ne olduğu önemli değil. Boyut sınırını çok zorlamayalım. Yani böyle 20 MB'lık bir çözüm yüklemeyelim. Eğer resim de olsa, PDF de olsa.
+
+288
+00:56:46,771 --> 00:56:55,211
+Çözünürlüğünü değiştirip okunabilir bir seviyede kalmak şartıyla çözünürlüğünü değiştirip anlamlı bir boyuta getirip yüklersek sevinirim.
+
+289
+00:56:57,672 --> 00:57:01,491
+Peki, şimdi ara verelim. 10 dakika sonra devam edeceğiz arkadaşlar.
+
+290
+01:07:13,844 --> 01:07:16,023
+Arkadaşlar, devam edelim kaldığımız yerden.
+
+291
+01:07:20,003 --> 01:07:28,784
+3 farklı yapıdan bahsetmiştik programlanabilir lojik cihazlar olarak. Birincisi ROM'du. ROM'da ORCAT'ı programlanabilir yapıdaydı.
+
+292
+01:07:28,903 --> 01:07:39,463
+Şimdi ikinci göreceğimiz cihaz, şuradan ifade edelim, PLA cihazları. Burada C ile ifade ettik ama. Şimdi sırada PLA cihazları var.
+
+293
+01:07:39,987 --> 01:07:54,367
+Programlanabilir, lojik diziler. Ona bakalım şimdi. PLA cihazlarında arkadaşlar temel bir özellik neydi? Hem AND katının hem de OR katının programlanabilir olmasıydı.
+
+294
+01:07:54,963 --> 01:08:08,744
+Bununla birlikte aslında end katı için mümkün olan tüm mintörmleri üretmediğini göreceğiz. Yani ROM'da hani 3 girişli bir ROM için 8 adet end katı çıktısı üretiliyordu ya.
+
+295
+01:08:10,543 --> 01:08:23,923
+Bir dekoder çıktısı yok. Bütün min termler end kapıları ile üretilmemiş durumda. Sadece yarısı kadarı üretilmiş. Yani şöyle görebiliriz. 3 girişli bu PLA'nın iç yapısı.
+
+296
+01:08:24,923 --> 01:08:37,324
+PLA cihazının iç yapısı. Burada A, A üssü, B, B üssü, C, C üssü değerlerimiz mevcut olmakla birlikte 4 kat, 4 adet end kapısıyla.
+
+297
+01:08:38,452 --> 01:08:46,652
+Toplam üretebileceğimiz çarpım teriminin sınırlı, dörtlü sınırlı olduğunu görüyoruz. Yani burada bütün minitermler üretilmiyor.
+
+298
+01:08:47,220 --> 01:09:09,860
+Bu bizim için sıkıntı mı? Yani bazı minitörleri üretmeyeceğiz. Yani o fonksiyonları hiç gerçeklemeyecek miyiz? Hayır. Bunu devam ettirdiğimiz zaman or katında da bir programlama katı var. Or katında da istediğimiz çarpım terimlerini toplama işlemine sokabiliyoruz. Ama burada da önemli olan son çıkış katında bir XOR katı var. PLA cihazınız. Pardon.
+
+299
+01:09:10,452 --> 01:09:22,811
+Evet, PLA cihazının son katında bir XOR çıkışı var. Bu XOR çıkışı ise örneğin OR katında sadece bir tane çarpım terimini bağladığımızı düşünelim. Buraya kadar bir tane çarpım terimi geldi.
+
+300
+01:09:23,296 --> 01:09:40,775
+Burada yine XOR kapısına bağlayacağımız değerin ikinci girişin 0 veya 1 olmasını seçebiliyoruz. Onu da programlayabiliyoruz. Bu programlama sayesinde gelen çarpım teriminin değilini veya olduğu gibi geçmesini sağlayabiliyoruz.
+
+301
+01:09:41,140 --> 01:09:54,880
+Dolayısıyla burada herhangi bir çarpım teriminin değilini alabiliyor olmak demek de aslında geri kalan 8 tane min term'i içeren veya 8 tane çarpım terimini içeren fonksiyonları gerçekleyebilmek anlamına geliyor kabaca pratik olarak.
+
+302
+01:09:55,739 --> 01:10:00,000
+Gördüğünüz gibi hem end katı hem or katı programlanabiliyor.
+
+303
+01:10:00,000 --> 01:10:15,299
+As sayıda end kapısı kullandığı ve bütün min termleri üretmediği için çıkış katında bir XOR katı olmak durumunda. XOR katı da ilgili OR çıktısının değilinin veya olduğu gibi geçmesini sağlayan bir durumu oluşturmuş oluyor.
+
+304
+01:10:18,836 --> 01:10:44,615
+Aynı alanı kaplayan, chip olarak aynı alanı kaplayan ROM ve PLA cihazı açısından düşündüğümüzde PLA cihazının çok daha geniş bir input uzayını desteklediğini söyleyebiliriz. Aynı alan için. Aynı chip alanı için. Dolayısıyla ROM ile gerçeklemenin çok pratik olmayacağı, çok girişli lojik fonksiyonları gerçeklemek adına kullanılabilecek bir cihaz olarak ortaya çıkmış oluyor.
+
+305
+01:10:45,492 --> 01:10:54,832
+Bunun haricinde ne söyleyebiliriz? Genel olarak özelliğimiz bunlar.
+
+306
+01:11:03,539 --> 01:11:17,500
+Burada programlanmış hazır olarak programlanmış bir cihaz olduğunu varsayacak olursak bu cihaz üzerinde gerçeklenen fonksiyonlar nelerdir? Yani bu programın analizini yapacak olsak ne diyebiliriz? Ona bakalım.
+
+307
+01:11:17,500 --> 01:11:27,239
+Yine burada daha önceki derste görmüş olduğumuz notasyon geçerli. Bu notasyon da aslında şöyle bunu alıp diğer tarafa mı kopyalasam?
+
+308
+01:11:52,692 --> 01:12:01,391
+Şimdi bu şekilde programlanmış bir cihazımız var ve burada görmüş olduğunuz notasyon aslında yine ROM'da gördüğümüz yapıya benzer bir yapı.
+
+309
+01:12:01,391 --> 01:12:06,391
+Tek bir çizgiyle ifade edilmiş olmasına rağmen buradaki 6 adet tel ile...
+
+310
+01:12:06,804 --> 01:12:28,164
+Tek tek 6 girişli bir end kapısına bağlantılar var ama pratik olması açısından, çizim kolaylığı açısından tek bir çizgi olarak gösterilmiş. Şuraya çarpı koymam demek ne bu mesela? A teriminin bu end kapısına bağlandığı anlamına geliyor. Yine şuradaki çarpı da B üstü teriminin bu end kapısının girişlerinden birine bağlı olduğu anlamına geliyor ikinci olarak.
+
+311
+01:12:28,164 --> 01:12:34,804
+Şu an Edefi'yi görüyoruz. Pardon böldüm ama. Tamam çok iyi söyledin. Ben ekran paylaşım.
+
+312
+01:12:34,804 --> 01:12:37,703
+Bunu sadece PDF olarak yapmışım. Uyardan için teşekkür ederim.
+
+313
+01:12:40,144 --> 01:12:41,543
+Tekrar söyleyeyim o zaman.
+
+314
+01:12:42,103 --> 01:12:46,744
+Burada görmüş olduğunuz notasyon daha önceki ROM'da görmüş olduğunuz yapıya benziyor.
+
+315
+01:12:47,155 --> 01:13:07,155
+6 tane girdi dizisini, telini, AND'in 6 girişine bağlayan bir yapı ama pratik olarak bu şekilde gösterilmiş. Şurada koymuş olduğumuz çarpı işareti A girdisinin AND kapısının bir girişine bağlı olduğunu, buradaki çarpı işareti de B üstü değerinin AND kapısına bağlı olduğunu gösteriyor.
+
+316
+01:13:11,220 --> 01:13:18,840
+A terimi ile B üstü teriminin çarpımı. Diğer terimler eklenmemiş. Dolayısıyla A, B üstü terimine karşılık gelmiş oluyor.
+
+317
+01:13:19,220 --> 01:13:29,220
+Yani birinci endin çıkışı bu. İkinci endin çıkışı C çarpı A terimine denk geliyor. Üçüncü endin çıkışı ise C çarpı A.
+
+318
+01:13:29,583 --> 01:13:41,243
+B terimine karşılık geliyor. Son olarak dördüncü kapı için C üstü, B ve A üstü çarpım terimini elde etmiş oluyoruz. Daha sonrasında ise
+
+319
+01:13:41,615 --> 01:14:08,716
+Bu end çıkışlarının yani 4 tane çıkışın bir or dizisinde bağlanma yapısını görüyoruz. Bundaki program mantığını görüyoruz. Yine burada da az önceki durum geçerli. 4 girişli bir or kapısı var. Bunun her bir girişi bir tane end kapısının çıkışına bağlı ama pratik göstermek adına tek bir çizgi olarak göstermişiz burada. Dolayısıyla şu çarpı ve şu çarpı terimi bu or kapısının çıktısını şu şekilde ifade ediyor.
+
+320
+01:14:09,615 --> 01:14:33,916
+Numaralı çıkışım BC'ydi. Artı AC terimi. CA terimi burada or kapısının çıktısı olarak elde ettiğimiz değer. Şu kapının çıktısını nasıl yazabiliriz? Yine burada da 3 tane terim var. Bunlar AB üstü artı AC artı A üstü B, C üstü terimi şeklinde. 3 tane terimin toplamı.
+
+321
+01:14:34,579 --> 01:14:58,059
+Şimdi XOR katına baktığımızda da şunu görüyoruz. Buradaki XOR, bir numaradan başlayalım. Bu bir numaralı XOR için girişin sıfır olduğunu görüyoruz. Burada sıfır bağlantısı yapılmış bu XOR için. Dolayısıyla şu uçta sıfır var. XOR'un bir ucunun sıfır olması demek diğer uçtaki giriş neyse karşı tarafa aktarılması. Zaten XOR'u şöyle hatırlayalım.
+
+322
+01:15:06,547 --> 01:15:19,387
+Bu girişlerden birisi sıfır olmuş olsaydı sıfırın değili B artı sıfır çarpı B üstü. Bu da şurası sıfır. Bu bir olacağı için bir çarpı B, B'ye karşılık gelecek.
+
+323
+01:15:19,387 --> 01:15:23,387
+Demek ki diğer terim olduğu gibi karşı tarafa aktarıyor. Tıpkı bunu...
+
+324
+01:15:24,083 --> 01:15:31,923
+Tam toplayıcı bir entegreden tam çıkarıcı yaptığımız durumdaki gibi 1'e tümleyen almak için bu XOR katlarını kullanmıştık hatırlayacak olursanız.
+
+325
+01:15:32,003 --> 01:15:40,543
+Dolayısıyla bu F1 fonksiyonunun çıkışı AB üstü artı AC artı A üstü B C üstü şeklinde ifade ettiğimiz yapı.
+
+326
+01:15:41,064 --> 01:15:46,263
+Şimdi diğer XOR katına bakalım. Yani iki numaralı XOR'a bakalım. Burada bir bağlantısı yapılmış.
+
+327
+01:15:46,263 --> 01:15:51,363
+Bir bağlantısı yapıldığı vakit yine burada fonksiyon olarak A'ya bir verirsek.
+
+328
+01:15:51,859 --> 01:16:15,519
+1'in değili B artı 1 çarpı B'nin değili. Şurası sıfır olduğu için bu terim sıfırlanır. Bu bir etkisiz elema. Dolayısıyla B üstü oluyor. Diğer girişin değili olacak. Diğer girişin değiliğinde CB artı CA'nın değili olarak ifade edebiliriz. Onu da düzenleyecek olursak.
+
+329
+01:16:16,020 --> 01:16:40,739
+CB'nin değili çarpı CA'nın değili tekrar düzenleyecek olursak C üstü artı B üstü çarpı C üstü artı A üstü tekrar toparlayacak olursak da C üstü artı C üstü A üstü artı B üstü C üstü artı A üstü B üstü şeklinde
+
+330
+01:16:41,395 --> 01:16:53,475
+Bir terim olarak bu F2 çıktısını da elde etmiş oluyoruz. Dolayısıyla bu analizimizi PLA kullanarak yapılmış olan programlamanın analizi olarak bu şekilde ifade etmemiz mümkün.
+
+331
+01:16:57,844 --> 01:17:12,043
+Şurada çıkış katı niçin önemliydi? Bütün olası çarpım terimlerini üretmediğimiz için dolayısıyla bize esneklik sağlama adına bu XOR katı mevcut.
+
+332
+01:17:12,431 --> 01:17:35,152
+Dolayısıyla bazı fonksiyonları XOR katı olmadan da gerçekleyebiliriz. O da sıfır bağlantısı yapılan XOR'lar kullandığımız durumlar oluyor mu? Evet oluyor. Ama sağlamak istediğimiz fonksiyonlar açısından belki değil almamız gerekecek. Dolayısıyla XOR katı olmadan herhangi bir fonksiyonu burada gerçekleyemeyeceğimizi söylememiz gerekiyor.
+
+333
+01:17:40,020 --> 01:18:06,120
+İki tane fonksiyonumuz var. A, B ve C girdileriyle tanımlı olan bu fonksiyonlar doğruluk tablosu yapıldığında örneğin F1 fonksiyonu 3, 5, 6 ve 7 numaralı min termler doğru min termler oluyormuş. Bu doğruluk tablosunda F2 fonksiyonun içinde 1, 2, 3 ve 7 numaralı min termler doğru min termler oluyormuş. Bu gösterim zaten lojikten hatırlayacağınız bir gösterim. Temel olarak da doğru min termleri bu şekilde ifade edebiliyorduk.
+
+334
+01:18:06,612 --> 01:18:22,152
+Bu yapıdan karnomöpe geçecek olursak, F1 fonksiyon için 0'a 1, 0, 0, 0, 1, 1, 1, 1, 0. Yani bir bit değişecek şekilde karnomöpe tablomuzu oluşturuyorduk. Şimdi değerlerimizi yerine yazalım.
+
+335
+01:18:27,007 --> 01:18:51,887
+Biz fonksiyonun ya değili üzerinden hareket edeceğiz veyahut da olduğu gibi geçireceğiz. Dolayısıyla burada olabildiğince ortak kapı bulmaya çalışmamız gerekiyor. Aslında bu ortaya çıkıyor. Olabildiğince çok ortak kapı bulmaya çalışmamız lazım. Dolayısıyla mantık şu olacak. Ya fonksiyonun değilini gerçekleseydim daha az kapı gerekir miydi diye analiz yapmam gerekecek. Bu da pratikteki karşılığı ne?
+
+336
+01:18:54,420 --> 01:19:08,680
+Zaten fonksiyonu olduğu gibi alacaksam, birler üzerinden, min termler üzerinden bir karnomep yapabilirim. Ama aynı zamanda şunu da yapmam gerekiyor. Hangi terim için mesela onu alalım?
+
+337
+01:19:12,724 --> 01:19:17,484
+Bir de fonksiyonun değilini düşündüğümüz zaman fonksiyonun değilini nasıl hesaplayabiliriz arkadaşlar?
+
+338
+01:19:17,703 --> 01:19:19,684
+Fonksiyonun değilini de şöyle hesaplayabiliriz.
+
+339
+01:19:20,344 --> 01:19:26,144
+Sıfır olan gözler birmiş gibi ele alırsak aslında fonksiyonun değilini hesaplamış oluruz.
+
+340
+01:19:26,844 --> 01:19:31,264
+Dolayısıyla fonksiyonun kendisini şu ikisini karıştırmayalım yani.
+
+341
+01:19:31,784 --> 01:19:33,804
+Fonksiyonu iki farklı şekilde hesaplayabiliriz ya.
+
+342
+01:19:33,804 --> 01:19:37,064
+Birincisi doğru min termleri karnomepe alarak.
+
+343
+01:19:37,395 --> 01:19:57,956
+İkincisi, yanlış max termleri karnomepe alarak hesaplayabiliriz. Bu ikisi fonksiyonun kendisini hesaplamak için. Fonksiyonun değilini hesaplamak istersek de sıfır gördüğümüz yerleri bir olarak ele alıp bunlar da sanki doğru min term'müş gibi hesapladığımızda fonksiyonun değilini hesaplarız.
+
+344
+01:19:57,956 --> 01:20:03,235
+Dolayısıyla burada siyahla işaretlenmiş olanlar fonksiyonun kendisini hesaplamak adına.
+
+345
+01:20:03,636 --> 01:20:17,656
+3, 5, 6, 7 numaralı min termleri doğru olarak işaretleyelim. 3, şurası, 5, şurası, 6, burası, 7, burası. Bu min termleri işaretledim.
+
+346
+01:20:18,195 --> 01:20:25,736
+Bunlara göre bir indirgeme yaptığımız zaman elde etmiş olduğumuz F1 fonksiyonunun orijinal hali şuradan hangi terim gidecek?
+
+347
+01:20:25,736 --> 01:20:28,775
+A terim gider, B, C terimi gelir. Şu terim geldi.
+
+348
+01:20:29,747 --> 01:20:55,327
+Şuradaki almış olduğumuz karnomapten mouse'u görüyor musunuz? Ondan bir şüphe ettim ama şöyle yapalım. Şu karnomapten dolayı BC terimi geldi. Şuradaki karnomapten dolayı hangi terim gelecek? B çarpı A terimi gelecek. Şu terim geldi. Şuradaki karnomapten dolayı da A çarpı ne geliyormuş? B çarpı A terimi geliyor.
+
+349
+01:20:57,235 --> 01:21:24,335
+A terimi geliyor. Hangisini yanlış söyledim ben? Şunu yanlış söyledim. Şunda ise A çarpı C terimi geliyor. Evet. A çarpı C. Burada A çarpı B. Burada da B C terimi geliyor. Fonksiyonun kendisini bu şekilde yazabiliriz. Fonksiyonun değilini nasıl yazabiliriz? Fonksiyonun değilini şu şekilde yazabiliriz. Sıfırları birmiş gibi ele alıp bunlar üzerinden bir karnomep oluşturabiliriz.
+
+350
+01:21:24,948 --> 01:21:32,948
+Burada amacımız ortak terimler oluşturmaya çalışmak. Ortak terimler oluşturmaya çalışacağız. Dolayısıyla burada...
+
+351
+01:21:34,948 --> 01:21:37,328
+Sorun mu var hocam?
+
+352
+01:21:37,840 --> 01:21:53,500
+Hocam, yanlış anlamış olabilirim ama biz sıfırları bir gibi saydığımız zaman değerini almak için. Ben mesela sıfır sıfır sıfır ve sıfır sıfır birdeki iki sıfırı tek grup halinde almıyoruz. Neden ayrı ayrı alıyoruz?
+
+353
+01:22:02,707 --> 01:22:10,807
+Her iki fonksiyon içinde, yani F1 ve F2 fonksiyonların ikisi içinde ortak çarpım terimleri üretmeye çalışıyoruz.
+
+354
+01:22:10,907 --> 01:22:14,487
+Dolayısıyla buradaki ile tutarlı bir yapı oluşturmaya çalışıyoruz.
+
+355
+01:22:14,567 --> 01:22:17,207
+Mesela ikisi de sıfırsa bu bir ortak terimdir.
+
+356
+01:22:18,467 --> 01:22:21,028
+Anlatabildim mi? Dolayısıyla bunu bir arada almışız.
+
+357
+01:22:21,028 --> 01:22:26,608
+Ama şu ikisini bir arada almamışız çünkü diğer fonksiyondan dolayı böyle bir terim gelmeyecek.
+
+358
+01:22:26,707 --> 01:22:27,768
+Birisi bir, birisi sıfır.
+
+359
+01:22:28,724 --> 01:22:29,884
+Anladım hocam, sağ olun.
+
+360
+01:22:29,904 --> 01:22:39,304
+Dolayısıyla bir yandan da kapı optimizasyonu yapmaya çalışıyoruz. Bundan dolayı olabilecek tüm şeyleri almamız mümkün olmuyor.
+
+361
+01:22:40,503 --> 01:22:42,304
+Dediğim gibi şuradaki...
+
+362
+01:22:42,899 --> 01:22:49,939
+Ve buradaki sıfırlar ortak olduğu için bunu ortak bir kapı oluşturacak şekilde fonksiyonu değilinde alabiliriz.
+
+363
+01:22:50,420 --> 01:22:52,599
+Geri kalan sıfırları ama tekil almak zorundayız.
+
+364
+01:22:52,599 --> 01:22:55,939
+Çünkü karşı taraftaki diğer fonksiyondaki karşılıklar 1.
+
+365
+01:22:56,279 --> 01:23:00,219
+Dolayısıyla 1, 2 ve 3 tane terim hesaplıyoruz burada.
+
+366
+01:23:00,819 --> 01:23:15,340
+Şu terimden gelen değerimiz bizim B üstü C üstü terimi. Sanki bunlar 1'miş gibi hareket ediyoruz. Dikkat edin. Sanki bunlar min term'miş, doğru min term'miş gibi hareket ediyoruz. Dolayısıyla 0'a 0 geldiği için bu noktada B üstü C üstü diye yazdım.
+
+367
+01:23:16,595 --> 01:23:28,775
+Şu terim için ne yazabiliriz? A üstü B üstü C. Bu terim için A üstü B, C üstü terimini yazabiliriz. Dolayısıyla fonksiyonun değilini de bu terim olarak ifade edebildik.
+
+368
+01:23:28,775 --> 01:23:42,995
+Diğer fonksiyona gelelim. Diğer fonksiyonda da benzer şekilde öncelikli olarak siyah karnomepleri ele alalım. Siyah karnomeplere baktığımızda fonksiyonun kendisini
+
+369
+01:23:43,539 --> 01:24:02,899
+A üstü B, A üstü B için yazacağımız terim şu, değil mi? Pardon bu değil. Bu ne? B, C terimi. Şuna baktığımızda A üstü B terimi, şuna baktığımızda da A üstü C terimi olmuş oluyor. Bu üç terim elde etmiş olduk.
+
+370
+01:24:05,300 --> 01:24:19,500
+Benzer bir mantığı yürüteceğiz. Burada da iki şey aynı aslında. Hangisi aynı? Sıfırları bir yaparak fonksiyonu değilini hesaplayabildiğimiz gibi, birileri sıfır yaparak da fonksiyonu değilini hesaplayabiliriz.
+
+371
+01:24:19,500 --> 01:24:29,500
+Burada birileri sıfır yaparak sanki yanlış maksimumler üzerinden hesap yaparmış gibi hesaplayacak olursak, örneğin şurada almış olduğumuz bunlar yanlış maksimum gibi düşünecek olsak,
+
+372
+01:24:30,387 --> 01:24:38,487
+A'lar gitti. B ve C açısından hangi terim kaldı? Bunu gene bir olarak mı almış? Bakalım.
+
+373
+01:24:43,572 --> 01:24:47,711
+Fonksiyonu değili olarak hesaplayacak olsaydık, tekrar bir bakıyorum.
+
+374
+01:24:51,391 --> 01:24:55,811
+Burada, tamam. Her iki fonksiyonun da değerini hesaplamak anlamlı değil.
+
+375
+01:24:56,612 --> 01:25:02,412
+Şundan dolayı, bir tanesinin değili diğerinin orijinaline eşit olacaktı.
+
+376
+01:25:02,492 --> 01:25:05,631
+Ama şu öyle bir terimlerimizi biz alıp bir kontrol edelim şimdi.
+
+377
+01:25:06,752 --> 01:25:10,272
+Şu terimi alacak olsak, bu terimden gelen değerimiz ne oluyordu?
+
+378
+01:25:10,771 --> 01:25:27,391
+A gitti, B üstü, B, C terimi. B üstü, C üstü. Buradan B üstü, C üstü gelecek. Daha sonra şunlar için, bunları tekil olarak alsak.
+
+379
+01:25:37,427 --> 01:25:47,028
+B, C üstü terimi gelecek. Dolayısıyla bu da bizim F2'nin üstüne eşit olacak. F2'nin değiline eşit olacak.
+
+380
+01:25:50,487 --> 01:25:55,167
+Hocam, bu ikinci yazdığımızda A'nın değil yazdık da A gelmeyecek mi?
+
+381
+01:25:55,868 --> 01:25:58,167
+İkincisi şu muydu? Bakalım.
+
+382
+01:25:58,407 --> 01:25:59,327
+Evet, onu aldık sanırım.
+
+383
+01:25:59,948 --> 01:26:02,228
+Evet, tamam. A1 olarak gelmiş.
+
+384
+01:26:03,444 --> 01:26:08,004
+AB üstü C terimi. Tamam. Üçüncüyü de kontrol edelim.
+
+385
+01:26:08,783 --> 01:26:14,283
+AB, C üstü terimi. Evet. Şimdi fonksiyonu bu şekilde yazabiliriz.
+
+386
+01:26:20,692 --> 01:26:25,172
+F fonksiyonda yine bu şekilde elimizde mevcut. Şimdi ortak kapı durumlarına bakalım.
+
+387
+01:26:26,091 --> 01:26:37,291
+Ortak kapı durumlarını incelediğimiz zaman AB teriminin her iki tarafta da ortak terimler hangilerinde var?
+
+388
+01:26:37,291 --> 01:26:38,771
+Önce onları bir işaretleyelim.
+
+389
+01:26:43,956 --> 01:27:11,336
+Şuradaki şeyi bir yanlış mı anlıyorum acaba? Şunu yazarken neye göre yazdık? Ha yine şey için yazdık. Tamam. Yani burada en indirgenmiş halini yazdık. Burada ise ortak kapı üretebilmek adına yine bir benzerlik oluşturmaya çalıştık. Şuradaki yapı birbiriyle uyumlu olduğu için alternatif yazışta bunu aldık.
+
+390
+01:27:11,859 --> 01:27:34,739
+0'a 1 olduğu için tekil olarak bıraktık. 0'a 1 olduğu için tekil olarak bıraktık. Her iki fonksiyonun değerini de hesaplasak aslında daha anlamlı bir optimizasyon olabilirdi ama burada bu aşamada bırakmış. Dolayısıyla biz aslında bir de F2 üstlüğü hesaplayıp yazmış olalım. Net olarak görmek adına birazcık yukarı kaydıracağım şimdi.
+
+391
+01:27:36,020 --> 01:27:37,280
+Yukarı kaydınca da gitti.
+
+392
+01:27:37,360 --> 01:27:39,840
+Hocam, ortaklık oluşturmayı ne için yapıyorduk?
+
+393
+01:27:40,800 --> 01:27:42,160
+Şundan dolayı yapıyoruz.
+
+394
+01:27:42,868 --> 01:28:00,288
+Şimdi bu ROM gibi değil ya, yani bütün olası min termler burada çıkmıyor veya bütün olası çarpım terimlerini burada üretemeyiz. Çünkü 3 tane giriş olduğuna göre olası tüm çarpım terimlerini üretebilmek için kaç tane end kapısına ihtiyacımız var bizim? 2 üzeri 3, 8 tane kapıya ihtiyacımız var.
+
+395
+01:28:07,376 --> 01:28:14,136
+sayısına sahip fonksiyonu gerçekleyebilmek adına AND kapısı sayısından feragat edilmiş durumda.
+
+396
+01:28:14,136 --> 01:28:19,756
+Dolayısıyla burada bütün çarpım terimlerini üretmek mümkün değil. Ne yapmış bunun yerine?
+
+397
+01:28:20,296 --> 01:28:24,736
+Çıkış katında fonksiyonun değilini alabilmek için bir XOR katı oluşturmuş.
+
+398
+01:28:25,216 --> 01:28:33,956
+O zaman biz şunu arayacağız. Burada bazı fonksiyonlar için üretmiş olduğumuz kapıları diğer fonksiyonun değilinde arayacağız ki
+
+399
+01:28:34,323 --> 01:28:58,343
+Bunu değilinde aramak ne demek? Eğer değilinde aramıyor olsaydık aynı kapı üzerinden üretilemeyecek fonksiyonlar, çarpım terimleri oluyor bunlar. Ama değilinde varsa birleştirebilirim. Aynı kapı çıktısını alıp daha sonrasında F1 ve F2 seviyesinde bunları natlayıp dışarı gönderebilirim. Dolayısıyla temel sebep ortak kapı aramadaki temel sebep bu.
+
+400
+01:28:58,804 --> 01:29:06,804
+AND katında bütün çarpım terimlerini üretecek kadar AND kapısı olmadığı için bundan dolayı ortak kapı aramaya koyuluyoruz.
+
+401
+01:29:08,364 --> 01:29:08,784
+Sağ olun.
+
+402
+01:29:10,584 --> 01:29:19,684
+Tamam. Şimdi en genel halinde bunu ifade edecek olursak, ben bu arada slide üzerinden anlatmaya çalışıyordum ama o sırada şeyi kapatmışım herhalde.
+
+403
+01:29:20,724 --> 01:29:21,924
+Neyse şöyle tekrar alalım.
+
+404
+01:29:23,252 --> 01:29:46,452
+Biz burada F1 için fonksiyonun kendini elde ettik. F1 üstü için elde ettik. F2 için elde ettik. F2'nin farklı bir yazımı için bunu elde ettik. Bir de tam olarak bütün uzayı anlayabilmek adına bir de F2'nin değili için bunu da yazmamız lazım. F2'nin değili için yazarken şuradan bir ortak kapı gelecekti. Onu az önce yazmıştık. Tekrar yazalım.
+
+405
+01:29:47,252 --> 01:30:14,172
+Buradaki değerimiz ne oluyordu? Sanki bunlar 1'miş gibi. F2'nin üstünü yazıyoruz çünkü. Buradan gelen değer B üstü C üstü olacak artı şu terimlerde boşta kaldığı için yani diğer tarafta herhangi bir paranteze alınmadığı için alınamayacağı için ortak kapı üretilemeyeceğimiz için tekil olarak alıyoruz. O da AB üstü C artı ABC üstü şeklinde bir terim olmuş oluyor.
+
+406
+01:30:14,612 --> 01:30:23,351
+Şimdi bu durumda hangi çifti seçersem, hangi yazım şeklini seçersem en fazla ortak kapı üretirim.
+
+407
+01:30:24,252 --> 01:30:35,372
+Burada bakıyoruz F1'i değiliyle kullansam, F2'yi de fonksiyonda şu ikinci yazmış olduğumuz haliyle alırsak ortak kapı sayımız en yüksek oluyor.
+
+408
+01:30:39,028 --> 01:30:59,128
+Her iki fonksiyonda da var. A üstü, B üstü, C üstü, A, B üstü, C üstü terimi her ikisinde de var. Farklı olanlar B üstü, C üstü ile BC terimleri. Dolayısıyla bu terimleri ortak olarak üreteceğiz. Fakat F fonksiyonunu bu çarpım terimlerinden üretip çıkışında değilini almam lazım.
+
+409
+01:31:04,500 --> 01:31:07,700
+En son katta, XOR katında değilini almam gerekiyor.
+
+410
+01:31:08,420 --> 01:31:19,440
+Yine belki farklı bir fonksiyonda F2'nin değiliyle F1 mesela ortak kapı sayı açısından bir ortak sonuç üretebilir.
+
+411
+01:31:20,500 --> 01:31:22,080
+Bunları analiz etmek lazım.
+
+412
+01:31:22,200 --> 01:31:26,360
+Dolayısıyla burada bir optimizasyon meselesi söz konusu.
+
+413
+01:31:26,360 --> 01:31:31,307
+Şimdi bu fonksiyonları gerçekleyebilmek adına...
+
+414
+01:31:31,796 --> 01:31:39,496
+Ortak kapılar yukarıda kalacak. Şöyle yapayım ben. Bunu şuraya aktarmışım. Evet, aktarmışız.
+
+415
+01:31:51,699 --> 01:31:54,159
+Başaramadım. Tekrar silerek yapacağım.
+
+416
+01:32:09,395 --> 01:32:13,315
+Bizde elde ettiğimiz ortak fonksiyon çıktısını şöyle alacağım.
+
+417
+01:32:14,515 --> 01:32:17,235
+Netice itibariyle aslında fonksiyonumuz şu olmuş oluyor.
+
+418
+01:32:18,855 --> 01:32:19,815
+Bunu da buraya alıp.
+
+419
+01:32:33,332 --> 01:32:39,252
+Bu fonksiyonumuzu burada nasıl gerçekleşeceğiz? Burada mavi çarpıları dikkate almıyoruz. Şimdi bu fonksiyon için çarpıları oluşturacağız.
+
+420
+01:32:39,832 --> 01:32:47,372
+Ortak kapı olanlar birinci sıradakiler, ikinci sıradakiler ortak kapı. Toplamda kaç kapıya ihtiyacım var bu fonksiyonu yapabilmek için?
+
+421
+01:32:48,500 --> 01:33:11,039
+A üstü, B üstü, C'ler ortak bir kapı. A üstü, B, C üstü ortak ikinci kapı. B üstü, C üstü üçüncü kapı. B, C, dördüncü kapı. Dört tane zaten benim çarpım terimiyle limitim vardı. Dolayısıyla maksimum dört tane farklı çarpım teriminde ben bu iki fonksiyonu bitirmek zorundayım. O yüzden dolayı da ortak kapı arıyoruz. Yani bir başka değiş açısı, başka bakış açısı da bu olur.
+
+422
+01:33:11,391 --> 01:33:37,231
+Şimdi birinci çarpım terimi olarak neyi üretecektik? A üstü B üstü C. Bunun için A üstü B üstü C için şu sadece kırmızı çarpıları dikkate alalım. A üstü B üstü C. Dolayısıyla buradan çıkan terimimiz artık A üstü B üstü C terimi oldu. İkinci kapı için A üstü B C üstünü alacağız. Şu A üstü sonra B terimini almamız lazım.
+
+423
+01:33:37,876 --> 01:33:59,235
+Şunu yanlış mı yapmışım? Şunu yanlış yaptık, evet. Yanlış kapıyı almışız. A üstü terimi burası, B üstü terimi şurası, bir de C terimini almamız lazım. C terimi burada, tamam şimdi oldu. Dolayısıyla bu kapının çıktısı A üstü, B üstü, C olacak.
+
+424
+01:34:04,591 --> 01:34:16,911
+Buradaki terimi alıyorum. B terimini alıyorum. Bir de C üstü terimini alıyorum. Dolayısıyla buranın çıktısı artık A üstü, B, C üstü oldu.
+
+425
+01:34:16,911 --> 01:34:29,331
+Şimdi üçüncü kapı ortak olmayan bir çıkış. B üstü C. B üstü şu ve C üstüyle bunu çarpacağız. Burası. Dolayısıyla buranın çıktısı.
+
+426
+01:34:30,100 --> 01:34:42,000
+B üssü, C üssü oldu. Son kapı çıktığımız için de BC terimine ihtiyacımız var. C burası, B terimi burası. Bunun çıktısı da buradan BC olarak elde edilmiş oldu.
+
+427
+01:34:42,660 --> 01:34:57,080
+Şimdi sadece kırmızılara dikkat ediyoruz. F1 fonksiyonu için birinci terim, ikinci terim ve üçüncü terime ihtiyaç var. O zaman F1 fonksiyonu şuydu. Birinci terim, ikinci terim ve üçüncü terime ihtiyacımız var.
+
+428
+01:34:58,131 --> 01:35:07,891
+Dolayısıyla şu fonksiyonun çıktısı A üstü B üstü C artı A üstü B C üstü artı B üstü C üstü olmuş oldu.
+
+429
+01:35:08,791 --> 01:35:22,131
+Diğer F2 fonksiyonu da birinci terim, ikinci terim ve dördüncü terime ihtiyaç duyuyor. O zaman bunun fonksiyonu da A üstü B üstü C artı A üstü B C üstü artı B C terimi olmuş oldu.
+
+430
+01:35:25,492 --> 01:35:35,992
+Bunun D'li şeklinde tanımlamış olduğumuz için F1'in D'liğini almamız gerekiyor. F1'in D'liğini alabilmek için burada XOR katında giriş olarak 1 vermemiz lazım.
+
+431
+01:35:36,632 --> 01:35:42,052
+F2 fonksiyonunu olduğu gibi geçireceğiz. Dolayısıyla orada da 0 bağlantısını yapmamız gerekiyor.
+
+432
+01:35:55,028 --> 01:36:19,007
+A üstü C üstü fonksiyonunun komple değil olmuş olduğu F2 fonksiyonunda A üstü B üstü C artı A üstü B C üstü artı B C fonksiyonu olarak yazılmış oldu. Şurada bir tanesini yanlış yazmış mıyım? Şunu A üstü B C üstü olarak okuyun. Bu C'nin üstündeki. Dolayısıyla fonksiyonunu bu şekilde yazmamız mümkün oldu. Kısıtımız ne?
+
+433
+01:36:19,572 --> 01:36:28,351
+Gerçekleyeceğimiz bütün fonksiyonlardaki çarpım terimleri toplamının dörtle sınırlı olması. Bu bizi bağlayan bir durum olmuş oluyor.
+
+434
+01:36:29,212 --> 01:36:42,652
+Bu yüzden dolayı bir fonksiyonu kendisi ve diğer fonksiyonun değiliğiyle yazıp, farklı şekilde karnomepleri alarak her iki fonksiyon içinde ortak kapılar oluşturmaya çalıştığımız bir durum senaryosu olmuş oluyor.
+
+435
+01:36:43,667 --> 01:36:55,427
+Dolayısıyla PLA cihazları için kısıtımız bu şekilde. PAL cihazlarına baktığımızda ise PAL cihazlarının arkadaşlar end katı programlanabilir. Or katı sabit.
+
+436
+01:37:03,028 --> 01:37:18,988
+Bununla birlikte iç yapısına bakacak olursak, genel iç yapısında bir takım kısıtlarımız var. Şu F11 yapıp göstermeye çalışalım. Genel iç yapısı bu şekilde. Genel iç yapıya baktığımızda temel bir sıkıntı nedir sizce?
+
+437
+01:37:21,787 --> 01:37:24,368
+Buna ilişkin kısıtımız nereden kısıt geliyor?
+
+438
+01:37:31,444 --> 01:37:38,163
+PLA cihazı için her iki fonksiyon için toplam kullanabileceğimiz çarpım derim sayısı limitliydi.
+
+439
+01:37:38,244 --> 01:37:39,404
+End kapısıyla limitliydi.
+
+440
+01:37:39,944 --> 01:37:41,444
+Buradaki limit neyle alakalı?
+
+441
+01:37:46,420 --> 01:37:47,220
+Or kapısı.
+
+442
+01:37:49,619 --> 01:37:56,019
+Or kapısı sadece belirli bir sayıda end kapısının girdisini kabul ediyor. Yine benzer bir şey yani.
+
+443
+01:37:56,159 --> 01:38:06,760
+Aslında burada da toplam terim, mesela çarpım terimlerini toplayacağız ya, kaç tane terimi toplayabiliriz? Bu da 3 ile sınırlı. Yapı olarak 3 ile sınırlı.
+
+444
+01:38:07,188 --> 01:38:33,247
+Bunu aşabilmek adına 3'ten fazla çarpım terimini toplamak istersek bunun için özel bir kat daha var. Bu kat W çıktısı aynı zamanda sisteme geri besleme olarak veriliyor. Bu durumda 3 tane terimin toplamı başka bir 3 terime 2 terime eklenebiliyor. Yani bu durumda 5 tane terim toplamı şeklinde fonksiyon yazma imkanına sahip oluyoruz. Yine de ama kısıt var.
+
+445
+01:38:33,908 --> 01:38:40,927
+Dolayısıyla bunun da özelliği bu şekilde. Özellikle kısık noktasına dikkat etmek açısından bunu söyledim.
+
+446
+01:38:45,876 --> 01:39:05,456
+Burada yine ortak toplam terimleri üretmemiz gerekiyor. Ortak toplam terimleri üretirsek, az önce dediğimiz meseleden dolayı, bir katın çıktısını diğerlerine toplam girdisi olarak eklememiz mümkün olabilir. Dolayısıyla böyle bir özel durum var.
+
+447
+01:39:06,115 --> 01:39:12,475
+Örneğin, yine doğru min termleri cinsinden ifade edilmiş bir fonksiyon yapımız var.
+
+448
+01:39:12,916 --> 01:39:20,576
+Bunlardan biz minimum fonksiyonları elde ettikten sonra bu 4 fonksiyon için elde ettiğimiz değerler bu şekilde oluşmuş olsun.
+
+449
+01:39:21,195 --> 01:39:27,735
+Burada dikkat edecek olursanız Z terimi 1, 2, 3, 4 tane terimin toplamından oluşuyor.
+
+450
+01:39:27,735 --> 01:39:37,435
+Fakat iç yapıya baktığımız zaman herhangi bir genel PAL katında en fazla 3 tane toplam terimi olabilir.
+
+451
+01:39:38,899 --> 01:39:51,619
+Bu kat için diğer çıkışların bir fonksiyon olarak yazabilmemiz lazım. Dolayısıyla şuradaki toplamları burada üretmemiz gerekiyor. En az iki terim için.
+
+452
+01:39:52,260 --> 01:40:00,000
+Baktığımız zaman şunu görüyoruz. Bu Z'nin ilk iki terimi aslında bizim fonksiyonumuz W fonksiyon.
+
+453
+01:40:00,000 --> 01:40:12,099
+Fonksiyonunun kendisine eşdeğer. Dolayısıyla aslında bunu W artı şeklinde iki tane çarpım terimi toplamı olarak ifade edersek burası da aslında üç tane terim toplamına indirgenmiş oluyor.
+
+454
+01:40:12,099 --> 01:40:26,099
+O zaman bizim burada yürüteceğimiz işlem örneğin W fonksiyonunu gerçeklemek istiyorsak A, B, C ve D ve bunların D'leri sisteme girdi olarak sağlanmışken
+
+455
+01:40:26,996 --> 01:40:35,776
+Mesela neydi? ABC üssü. ABC üssünü oluşturmak için şöyle yapalım bunu da eğer alabilirsem.
+
+456
+01:40:39,891 --> 01:40:41,652
+Diğer tarafı aktarmak adına.
+
+457
+01:40:53,684 --> 01:40:57,424
+Bir de fonksiyonlarımızı alalım. Buraya yazınca kaydırdığımda şey kayıyor.
+
+458
+01:41:07,667 --> 01:41:11,207
+Dolayısıyla fonksiyonlarımız bunlar. Şimdi bunları nasıl gerçeklediğimize bakalım.
+
+459
+01:41:14,587 --> 01:41:26,527
+Birinci terimimiz W terimi için A, B, C üssü, A terimi, B terimi ve C üssü terimlerini aldığımız vakit şurada elde ettiğimiz en kapısı çıktısı A, B, C üssü olmuş oluyor.
+
+460
+01:41:33,908 --> 01:41:38,228
+A üstü, B üstü, C, D üstü terimi. Üçüncü terim.
+
+461
+01:41:38,612 --> 01:41:58,551
+Yok. Dolayısıyla bunun bağlantısı yok. Bakın hiçbir bağlantısı yok. Hiçbir bağlantısı olmadığı zaman bunu devreden çıkartmışız gibi. Ve çıktısı her zaman sıfır üretiyormuş gibi kabul edebiliriz bunu. Çünkü or katında etkisiz eleman sıfır çıktısıydı. Dolayısıyla burada W çıktığımız bizim aradığımız fonksiyonu Eşler olarak elde edildi.
+
+462
+01:42:06,612 --> 01:42:27,271
+İstelik'le 3'ten daha fazla toplam terimlerini kullanabilelim. Dolayısıyla burada Z terimi için bakalım şimdi. Z terimi için şurası W'ye işte olacaktı. Z'nin W değerini kullanması gerekiyor. O yüzden dolayı W artı şeklinde devam eden bu kısmı oluşturmuş olduk. Bu bağlantıyla.
+
+463
+01:42:27,956 --> 01:42:42,896
+Z eşittir, W artı kısmını sağlamış olduk. Diğer terimler de zaten AC üstü D, A terimi, C üstü terimi ve D üstü terimi şu terim.
+
+464
+01:42:42,896 --> 01:42:49,155
+Ve ikinci terim olarak da A üstü, B üstü, C üstü, D terimi de toplamlara katılmış oluyor.
+
+465
+01:42:49,456 --> 01:42:51,736
+A, C üstü, D üstü artı.
+
+466
+01:42:52,079 --> 01:43:08,259
+A üstü, B üstü, C üstü, D terimi de, Z de elde edilmiş oluyor. Diğerleri, Y ve X için toplam terimleri sayısı birisinde 2, birisinde 3 olduğu için bunlar bu PAL cihazıyla gerçeklenebilir seviyelerde. Dolayısıyla bunları olduğu gibi kullanabiliriz.
+
+467
+01:43:13,108 --> 01:43:22,068
+Daha üst seviye bir optimizasyon gerekecektir ama burada genel olarak bu PAL cihazının çalışma mantığını bu şekilde ifade etmemiz mümkün.
+
+468
+01:43:24,328 --> 01:43:27,108
+Dolayısıyla 3 farklı yapıyı bu şekilde görmüş olduk.
+
+469
+01:43:27,268 --> 01:43:33,208
+Bir, PLD cihazına ilişkin olarak bir örnek vermek istiyorum şimdi. Onu hemen açayım.
+
+470
+01:43:39,539 --> 01:43:41,740
+Hocam bu slide paylaşacak mısınız acaba?
+
+471
+01:43:42,280 --> 01:43:45,560
+Paylaşacağım, evet. Hemen paylaşayım mı hatta?
+
+472
+01:43:49,427 --> 01:43:52,347
+Sınavda lazım olur falan hemen. Bir saniye.
+
+473
+01:43:54,568 --> 01:43:56,347
+Google Classroom'a koyuyorum yine.
+
+474
+01:44:01,684 --> 01:44:03,043
+4. hafta sunumu.
+
+475
+01:44:19,699 --> 01:44:21,219
+Tamamdır, ekledim.
+
+476
+01:44:24,199 --> 01:44:26,119
+İyi gösterecektim.
+
+477
+01:44:27,099 --> 01:44:31,019
+Şimdi PLD cihazlarıyla ilgili olarak bahsedecektik.
+
+478
+01:44:31,019 --> 01:44:40,219
+Şimdi PLD cihazlarıyla ilgili olarak kullanılan, ben de öğrenciliğimde kullanmıştım böyle bir cihazı.
+
+479
+01:44:41,079 --> 01:44:44,519
+Hemen paylaşarak göstereyim. Proteus da göstereceğim.
+
+480
+01:44:45,363 --> 01:44:55,275
+Gal 22V10 isimli bir PLD cihazı var. Bu PLD cihazı aslında içerisinde...
+
+481
+01:44:55,283 --> 01:45:07,123
+Az önce görmüş olduğunuz PAL, PLA ve ROM cihazlarından farklı olarak AND OR array'ler haricinde biraz daha karmaşık bir hafıza bloğu şeklinde veya lojik eleman bloğu şeklinde tasarlanmış.
+
+482
+01:45:07,663 --> 01:45:16,483
+Her bir blok içerisinde bir D flip flop ve ilgili lojik kapılarla programlanabilir genel bir lojik eleman olarak ortaya çıkıyor.
+
+483
+01:45:16,483 --> 01:45:23,283
+Burada bağlantı yapısını şu şekilde oluşturdu. Burada yapmak istediğimiz örnek özellikle.
+
+484
+01:45:23,283 --> 01:45:47,863
+Özellikle barrel shifter örneği, derste görmüştük hatırlayacak olursanız sağ ve sola döndürerek işlem yapan bir birimdi. Burada bu cihazdaki input ve output çıktılarını bu şekilde bağladıktan sonra arkadaşlar bu cihaz için bir program yazmamız gerekiyor. Bu programı Wink Couple isimli bir program üzerinden yazıyoruz.
+
+485
+01:45:50,804 --> 01:45:51,944
+Açarsa eğer.
+
+486
+01:45:53,644 --> 01:45:55,863
+İsmi bu. Gayet eski bir program.
+
+487
+01:45:56,724 --> 01:46:00,884
+Siz denemek isterseniz şöyle bir dosyayı açalım da tekrar.
+
+488
+01:46:02,304 --> 01:46:03,444
+Niye yüklemedi?
+
+489
+01:46:14,355 --> 01:46:38,335
+Siz denemek isterseniz şöyle bir durum oluyor. Bir bug'ı var. Burada Veeve'dan projekti kapatmanız gerekiyor. Yoksa derlerken pencere kapanıyor. Buradaki program yapısı aslında arkadaşlar içerideki flip-flop mantıklarını kullanarak veyahut da register mantıklarını kullanarak bir barrel shifter yapmaya dayanıyor. Burada tanımlamalar şu şekilde.
+
+490
+01:46:40,500 --> 01:46:43,199
+Hocam, şu an kod gösteriyorsanız onu görmüyoruz.
+
+491
+01:46:43,939 --> 01:46:49,239
+Öyle mi? Tekrar açayım o zaman. Yanlış şeyi mi paylaştım acaba? Şimdi görebiliyor musunuz?
+
+492
+01:46:50,139 --> 01:46:50,439
+Evet.
+
+493
+01:46:51,039 --> 01:46:58,519
+Tamam. Yani bu dediğim gibi zorunlu bir konu değil ama bilgi amaçlı olarak verdiğimi düşünün.
+
+494
+01:46:58,832 --> 01:47:18,952
+Burada arkadaşlar şunu yapabiliyoruz. Bakın gördüğünüz üzere bazı uçlar input olarak tanımlanmış, bazı uçlar output olarak tanımlanmış. Bunlara da riayet etmek üzere her cihazın mesela farklı PLD cihazlarına göre burada verebileceğimiz input ve output sayıları cihaza özel olarak değişiyor.
+
+495
+01:47:18,952 --> 01:47:24,952
+Burada şöyle yapıyoruz. Bir numaralı pini clock pini olarak belirledik.
+
+496
+01:47:25,684 --> 01:47:38,224
+Veya isimlendirdik diyelim. Cihazın veya entegrenin 2 ile 9 numaralı pinlerini D0, D7 şeklinde bir 8 bitlik bir değer olarak tanımladık.
+
+497
+01:47:39,043 --> 01:47:43,783
+Ve bunlara erişirken D0'dan D7'ye kadar bit bit erişebileceğiz. Örneğin D0.
+
+498
+01:47:44,212 --> 01:48:04,672
+Pin 2'ye karşılık gelecek gibi bunu düşünebiliriz. Veyahut da anlam sırası aynı olacak. Pin 2, D7'ye karşılık gelecek. Pin 9, D0'a karşılık gelecek. Bu tanımlama dolayısıyla. Burada 3 tane bitlik bir kontrol ucumuz var. Kontrol ucuda yapılacak olan shift işleminin nasıl olacağını belirliyor.
+
+499
+01:48:09,439 --> 01:48:20,899
+Öncelikle outputta göstermek adına bir enable ucu tanımlıyorduk bu 13 numaralı pinde ve 23 numaralı pinde de asenkron bir preset ucu tanımlamış olduk.
+
+500
+01:48:21,340 --> 01:48:30,380
+Çıktılarımız Q ile tanımlanmış, etiketlenmiş uçlar aslında fiziki olarak da entegrenin 15 ve 22 numaralı bacaklarına karşılık gelmiş oluyor sırasıyla.
+
+501
+01:48:32,020 --> 01:48:39,840
+Şimdi burada bit bit tanımlamış olduğumuz S2, S1 ve S0 3 bitlik yapısından bir data.
+
+502
+01:48:40,404 --> 01:49:00,564
+Strak yapısı oluşturmuş olduk. Bu da hani strak yapısına benzer bir durum. Ve bunu shift ile isimlendirdik. Yine D7'den D0'a kadar olan bit bit tanımladığımız değişkenleri birleştirerek alan olarak tanımlayıp bir strak yapısı gibi düşünebilirsiniz. Input olarak tanımladık. Yine Q'ları da birleştirerek output olarak tanımladık.
+
+503
+01:49:05,395 --> 01:49:14,555
+Shift isimli değişkenin değerine göre kaç bit shift edeceğimizi burada tanımlamış oluyoruz. Burada yazılan fonksiyon şu aslında.
+
+504
+01:49:14,555 --> 01:49:22,555
+D dizisini shift'in sıfır değeriyle sıfır olması durumuyla...
+
+505
+01:49:22,944 --> 01:49:34,404
+Ant'le ve daha sonra bunu bir olma durumuyla Ant'le. Aslında bu CASE'e karşılık geliyor. Bir CASE kontrolüne karşılık geliyor. Shift değeri 0 ise çıktı olarak bunu üret.
+
+506
+01:49:34,868 --> 01:49:51,568
+Shift değeri 1 ise çıktı olarak bunu üret. Shift değeri 2 ise çıktı olarak bunu üret anlamına karşılık geliyor. Bu da sıralama değişiyor. Bakın inputların sıralaması değişiyor ve bunları output'un datasına yazıyoruz. D'sine yazıyoruz. Output'un datasına yazdık.
+
+507
+01:49:52,608 --> 01:50:00,728
+Dolayısıyla girdileri ilgili şekilde vermiş olduğumuz shift komutunun durumuna göre döndürerek output'a vermiş oluyoruz.
+
+508
+01:50:01,300 --> 01:50:18,720
+Burada bir tane de preset fonksiyonumuz vardı. Bu presetler, output enable'lar aslında tanımlamış olduğumuz field'ın arka tarafta D flip flop'ların birer D flip flop'lardan oluşturulmuş olan 8 bitlik bir register'da saklanmasına karşılık geliyor.
+
+509
+01:50:19,380 --> 01:50:23,119
+Bu D flip flop dizisinde ben bunu bir register olarak kullanabiliyorum.
+
+510
+01:50:23,488 --> 01:50:43,208
+Ve burada sıfırlama, bu sıfırlamayı preset ucu üzerinden veya birlemeymiş burada, preset ucu üzerinden, çıktı sağlamak üzerine, output enable üzerinden veyahut da asenkron reset ucu üzerinden, D-Flip Lob'un asenkron reset ucu üzerinden bit bit manipüle etme imkanım oluyor.
+
+511
+01:50:50,068 --> 01:51:11,287
+Oluşan bir dosyamız var. Bu dosyanın ismi jet uzantılı bir dosya. Bu aşamada yine win-couple'ı kullanarak bu entegreyi programlamamız mümkün oluyor. Veyahut da simülasyon yapacağımız için Proteus tarafında edit properties deyip bu derlemiş olduğumuz banyede dosyayı yolunu göstererek yüklüyoruz.
+
+512
+01:51:16,307 --> 01:51:22,047
+Shift kontrollerimiz sıfır durumunda olduğu gibi karşıya geçirecekti. Mesela hepsini sıfırlayalım.
+
+513
+01:51:24,688 --> 01:51:28,208
+Clock işaretiyle birlikte senkron bir şekilde durum değişimi oldu.
+
+514
+01:51:28,208 --> 01:51:35,807
+Yine burada preset ucu 23 numaralıydı. 23 numaralı uca bastığımda değerlerimiz birleniyor.
+
+515
+01:51:36,448 --> 01:51:41,948
+Tekrar clock işareti geldiği zaman az önceki şurada oluşturmuş olduğum değer yüklenmiş oluyor.
+
+516
+01:51:42,515 --> 01:52:04,875
+Bunlar da shift işlemleriydi. Bir kere shift ettim. Hangisi düşük anlamlıydı? En düşük anlamlı shift işi bu. İşlemi bu. İki basamak kaydırdım. Üç basamak kaydırdım. Yedi basamak kaydırmış oldum. Orijinal değeri yedi basamak kaydırarak çıktığıya bunu gönderdim şeklinde. Bu barrel shifter'ı bu şekilde programlamış oluyoruz.
+
+517
+01:52:09,171 --> 01:52:11,811
+Ne varmış ona bir bakayım hemen kontrol edeyim şunlar.
+
+518
+01:52:14,072 --> 01:52:20,851
+Toplayıcı üzerinden yapabiliriz. 4 bitlik bir toplayıcı tanımlayarak bunu yapabiliriz. Program mantığı yine aynı.
+
+519
+01:52:23,188 --> 01:52:46,007
+Fiziki uçların label karşılıklarını tanımlıyoruz. X ve Y 4 bitlik sayılarımızı tanımladık. Bunlar ilgili pinler de hizalı. Çıktığımızı tanımladık. 4 bitlik bir çıktığımız var. Bir de her bir bit için olan carry işlemini tanımlıyoruz. Bir de 4 bitlik işlem sonucunda bir tane carry'yi de hesaplayıp bir pina atadık bu aşamada.
+
+520
+01:52:46,899 --> 01:52:56,479
+Bir fonksiyon tanımlıyoruz. Bu fonksiyon girdi olarak X sayısını, Y sayısını, carry in ve carry out'u girdi olarak kabul ediyor. Yaptığı işlem ne?
+
+521
+01:53:00,756 --> 01:53:07,336
+Cout fonksiyonu aslında X, Y ve carry ile bağlı olarak bu şekilde yazılabilir.
+
+522
+01:53:07,596 --> 01:53:13,896
+Fonksiyonunu yazmış. Benzer şekilde şu dolar işareti XOR'a karşılık geliyor burada.
+
+523
+01:53:15,456 --> 01:53:20,636
+Toplam değeri de sum değerimiz de bütün girdilerin XOR'una eşitti.
+
+524
+01:53:20,756 --> 01:53:24,376
+Dolayısıyla burada onun da çıktısını üretmiş oluyoruz.
+
+525
+01:53:24,376 --> 01:53:26,076
+Daha sonrasında ne yapıyor?
+
+526
+01:53:26,547 --> 01:53:35,908
+Daha sonrasında ise her bir bit için bu işlemleri birer bitlik toplayıcıları peş peşe ekleyerek sağlamış oluyor.
+
+527
+01:53:36,007 --> 01:53:49,547
+Dolayısıyla şurası bir bitlik toplayıcı, bir bitlik toplayıcı fonksiyonunu farklı inputlarla çağırıp en düşük anlamlı bit için buradan çıkan eldeği bir sonraki kaskat bağlı bit slice'ını aktarıp
+
+528
+01:53:52,564 --> 01:54:04,123
+Girdiğe bağlayıp yine dördüncü bit içinde işlemi tekrarlayıp toplam sonucunu üretmiş oluyor. Yine derlediğimiz zaman ilgili JET dosyası oluşacak. Onu daha önce derlemiştim.
+
+529
+01:54:05,963 --> 01:54:16,404
+JET dosyası olacak. JET dosyasını yine benzer şekilde cihaza aktarıp daha sonrasında simülasyonu başlatabiliriz.
+
+530
+01:54:18,644 --> 01:54:24,504
+X ve Y sayıları, en düşük anlamlı bitlerimiz aşağıdakiler, pardon bunlar değil miymiş?
+
+531
+01:54:24,764 --> 01:54:25,264
+Şunlar mı?
+
+532
+01:54:26,304 --> 01:54:28,424
+En düşük anlamlı bitlerimiz bunlar.
+
+533
+01:54:29,144 --> 01:54:31,444
+2 tane 1, 1 artı 1, 2 yapacak.
+
+534
+01:54:32,064 --> 01:54:33,504
+Toplam sonucumuzu elde ettik.
+
+535
+01:54:34,304 --> 01:54:36,504
+En yüksek anlamlı elde idi.
+
+536
+01:54:36,504 --> 01:54:37,804
+8 artı 8.
+
+537
+01:54:39,484 --> 01:54:42,304
+Taşan eldemizde bu bitte görülmüş oluyor.
+
+538
+01:54:42,703 --> 01:54:56,511
+Dolayısıyla bu cihazı da kombinasyonel lojik açısından bu şekilde programlayabiliyoruz. Bu cihazı kullanarak ardışıl devre tasarımı yapabilir miyiz? Sadece bu cihazı kullanarak ardışıl devre tasarımı yapamayız. Bunun yanında bir takım...
+
+539
+01:54:56,511 --> 01:55:17,031
+Flipflop entegrelerini de dahil etmemiz gerekiyor. Fakat bu cihazın gelişmiş versiyonları var. Bu gelişmiş versiyonlarında içeride lojik eleman olarak Flipflop'lar da mevcut. Rejister olarak kullanılanlar haricinde programlanabilen Flipflop'lar da mevcut oluyor. Dolayısıyla onları tekil olarak kullanmak mümkün oluyor.
+
+540
+01:55:22,996 --> 01:55:28,195
+Dolayısıyla PLD örneğimizi de bu şekilde kabaca bir vermiş olduk.
+
+541
+01:55:32,020 --> 01:55:33,708
+Son olarak bir de...
+
+542
+01:55:37,811 --> 01:55:52,592
+Verilog kısmına yine geçemeyeceğiz ama şöyle söyleyelim. Bir de bunun PLD cihazının bir gelişmiş versiyonu da artık günümüzde prototipleme aşamasında çok yaygın bir şekilde kullanılan FPGA çipleri.
+
+543
+01:55:55,572 --> 01:56:16,372
+VHDL veya Verilog programlama dilleri üzerinden kodlama yapılabiliyor. Size önermiş olduğum Icarus Verilog üzerinde derleme yapılıp modüller oluşturulabiliyor. Mesela burada geçen haftadan çok veremedik ama hangisinde vardı mesela bir bulmaya çalışalım.
+
+544
+01:56:21,140 --> 01:56:25,659
+Half-Weather'lardan gelmiş. Half-Weather'ın nerede?
+
+545
+01:56:28,640 --> 01:56:42,659
+Mesela burada gördüğünüz yapı aslında bir modül tanımı. Verilog'da bir modül tanımı. Burada modülün ismi cildileri tanımlı. Half-Weather dediğimiz yapı iki tane bir bitlik sayı alıyor ve bunların iki bitlik...
+
+546
+01:56:43,536 --> 01:57:09,716
+Bu sayıların toplamını 2 bitlik bir binary sayı olarak C ve S şeklinde üretiyor. Buradaki tasarım yapısı aslında built-in olarak gelen end ve xor primitive modüllerini kullanarak gerçekleme yapılmış durumda. Fakat biz bunu farklı mantıklarda da yapabiliriz. Örneğin dekoder için bakalım. Dekoder için baktığımız yapıda 3'e 8 bir dekoder yapısı bu.
+
+547
+01:57:10,163 --> 01:57:37,663
+Burada bir always blow içerisinde, bu ne demek? Always enable veya binary in değiştiği, yani giriş değerimiz değiştiği her anda veya enable ucumuz değiştiği her anda bir case kontrolü gerçekleştiriyor. Neye bakıyor? Binary in olarak vermiş olduğumuz değerin durumuna bakıyor. Bu değer 4 bitlik olarak tanımlı bir değer. Bakın burada 3 bit mi vermiş onu?
+
+548
+01:57:38,771 --> 01:57:48,692
+Şu 4 bit yanlış burada, bu 3 bit olacak. 3 bitlik bir girdi veriyoruz. Bu 3 bitlik girdinin decimal karşılığına göre çıkışta farklı değerler üretiyor.
+
+549
+01:57:56,148 --> 01:58:10,387
+Evet, sınav başlayacak. Ama bunu özellikle göstermek istedim. Dolayısıyla bu Always Blow'u, clock işaretinin yükselen kenarı, düşen kenarıyla birlikte senkron ardışlı devre tasarımında kullanılacak blok oluyor.
+
+550
+01:58:13,128 --> 01:58:22,648
+İşte bunu böyle parça parça da göstermeye çalışıyorum ama özel bir belki saat ayarlamak gerekecek. Tamam, sınav başlayacağı için o zaman şöyle yapalım.
+
+551
+01:58:23,380 --> 01:58:43,640
+Bu oturumu sonlandıralım ve dersimizi bitirmiş olalım bu hafta için. Sizler de arkadaşlar sınav oturumu için tekrar bağlantı sağlayın. Şu anda herkes online Yıldız Editeyarı'dan görüyor olması lazım. Sınavı gördünüz değil mi? Size tanımlanmış bir şekilde.
+
+552
+01:58:44,579 --> 01:58:45,399
+Gözüküyor hocam artık.
+
+553
+01:58:45,399 --> 01:58:50,720
+Tamam, peki o zaman. O zaman dersimizi bitirelim. Siz sınav bağlantısını sağlayın.
+
+554
+01:58:50,963 --> 01:59:16,963
+Herhangi bir sorunuz olursa bunu Google Classroom üzerinden sorabilirsiniz. Cevaplamaya çalışırım. 50 dakikalık bir sınav olacak. İki tane soru var. Bir tanesi bonus. Her iki soruyu da cevaplarsanız 150 puan alma imkanınız var. Birinci soru 100 puan, ikinci soru 50 puan bonus. Hem elle çözümünüzü hem de...
+
+555
+01:59:17,171 --> 01:59:22,491
+Lojisim dosyanızı yüklemenizi bekliyoruz.
+
+556
+01:59:22,691 --> 01:59:23,791
+Lisans öğrencileri için.
+
+557
+01:59:24,271 --> 01:59:27,031
+Yüksek lisans öğrencileri sadece elle çözümlerini yükleyecekler.
+
+558
+01:59:27,551 --> 01:59:28,871
+Hocam bir şey sorabilir miyim?
+
+559
+01:59:28,971 --> 01:59:29,671
+Hemen hızlıca.
+
+560
+01:59:30,211 --> 01:59:33,251
+Bu bonusu çözüp diğerini çözmemek gibi bir şey oluyor mu?
+
+561
+01:59:33,331 --> 01:59:34,011
+Hani çözemezsek.
+
+562
+01:59:34,451 --> 01:59:35,311
+50 puan alırsın.
+
+563
+01:59:35,831 --> 01:59:36,071
+Tamam.
+
+564
+01:59:36,251 --> 01:59:38,651
+Yani illa 100 olanı şey yapmak zorunda değiliz değil mi?
+
+565
+01:59:38,711 --> 01:59:40,051
+Yapamazsak 50'ye geçebiliriz.
+
+566
+01:59:40,471 --> 01:59:41,811
+Yapamazsak yapacak bir şey yok.
+
+567
+01:59:41,931 --> 01:59:42,731
+Yani 50 puan alırsın.
+
+568
+01:59:43,111 --> 01:59:43,651
+Tamam hocam.
+
+569
+01:59:43,771 --> 01:59:44,351
+Teşekkür ederim.
+
+570
+01:59:46,387 --> 02:00:11,387
+Evet arkadaşlar, o zaman dersi bitirelim. Siz de bağlantıyı sağlayın. Bir tane dosya var. Dosyayı indireceksiniz. Onun içerisindeki soruları inceleyin. Logisim simülasyon dosyalarında tasarımlarınızı yapacaksınız. Cevabınızı bir de tarayıp PDF veya resim olarak gönderebilirsiniz. Sıkıntı yok. Bu bütün cevabınızı bir tane zip dosyası yapıp sisteme yükleyin. Tamam. Sınavda başarılar. Görüşmek üzere.
+
+571
+02:00:14,836 --> 02:00:15,655
+İyi günler.
