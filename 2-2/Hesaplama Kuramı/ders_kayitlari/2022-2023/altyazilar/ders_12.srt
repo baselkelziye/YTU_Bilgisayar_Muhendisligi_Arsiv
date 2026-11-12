@@ -1,0 +1,4123 @@
+1
+00:06:02,132 --> 00:06:04,531
+Arkadaşlar ben ağabeyim, sesim geliyor mu?
+
+2
+00:06:07,591 --> 00:06:08,432
+Merhaba, ben geliyor hocam.
+
+3
+00:06:14,995 --> 00:06:19,755
+Sizi duyamadım. Sesimi kapatmışım acaba. Geliyor hocam. Geliyor hocam.
+
+4
+00:06:29,076 --> 00:06:40,216
+Geçen hafta deterministik kuştağın otomataya başlamıştık. Bu hafta tekrar baştan onu alalım.
+
+5
+00:06:44,819 --> 00:06:45,899
+Pushdown automata.
+
+6
+00:06:51,379 --> 00:06:56,060
+Non-deterministik idi bizim gördüğümüz kuştağın otomatı.
+
+7
+00:07:03,507 --> 00:07:05,507
+Hocam, başlamadan bir şey sorabilir miyim?
+
+8
+00:07:05,827 --> 00:07:06,827
+Tabi buyurun.
+
+9
+00:07:07,548 --> 00:07:10,027
+Hocam, bizim hafta ikinci vizimiz olacak değil mi?
+
+10
+00:07:10,347 --> 00:07:10,987
+Evet.
+
+11
+00:07:11,668 --> 00:07:12,668
+Tamam, teşekkürler.
+
+12
+00:07:15,732 --> 00:07:17,892
+Haftaya bu saatte ikinci vizeniz var.
+
+13
+00:07:27,475 --> 00:07:32,255
+Normal pushdown automata bizim gördüğümüz non-deterministik idi.
+
+14
+00:07:34,316 --> 00:07:38,076
+Bir de deterministik pushdown automata var.
+
+15
+00:07:39,435 --> 00:07:44,336
+Bugün ona, geçen hafta başlamıştık, bugün tekrar bakacağız.
+
+16
+00:07:45,156 --> 00:07:46,256
+Çok ilerlememiştik.
+
+17
+00:07:49,115 --> 00:07:51,915
+Formal tanımından başlamak istiyorum.
+
+18
+00:07:52,136 --> 00:07:53,975
+Çünkü formal tanımı güzel.
+
+19
+00:07:56,980 --> 00:08:09,560
+6 tapıldan oluşuyor diyor. Yani 6 tane şeyden oluşuyor. 6 şeyden oluşan bir liste. Tapul liste diye düşünebilirsiniz.
+
+20
+00:08:12,560 --> 00:08:21,780
+Öncelikle bir durum kümemiz var, Q. Yani durumların kümesi.
+
+21
+00:08:24,372 --> 00:08:31,372
+Sigma, girişlerin kümesi, giriş sembollerinin kümesi, yani alfabe.
+
+22
+00:08:33,632 --> 00:08:41,711
+Gamma, stack alfabesi, yani stack'da kullanabileceğiniz sembollerin kümesi.
+
+23
+00:08:45,299 --> 00:08:54,279
+Delta, her zamanki gibi transition function, geçiş fonksiyonu. Anlamaya çalışalım, ne diyor?
+
+24
+00:08:56,359 --> 00:09:08,539
+Delta, üç parametre alıyormuş. Birinci parametre, durumlardan geliyormuş. İkinci parametre, input.
+
+25
+00:09:09,620 --> 00:09:22,580
+Sembolleri kümesinden geliyor. Ama orada bir epsilon var. Ne demek? Artı epsilon. Yani epsilon da gelebiliyor. Normalde epsilon giriş kümesinde değil.
+
+26
+00:09:25,340 --> 00:09:31,160
+Gamma, üçüncü parametrede, stack.
+
+27
+00:09:32,755 --> 00:09:37,435
+Yığın kümesinden geliyor, bir de epsilon da gelebiliyor.
+
+28
+00:09:38,955 --> 00:09:42,175
+Bu üç parametreyi alıyormuş delta fonksiyonu.
+
+29
+00:09:43,735 --> 00:09:46,355
+Ne veriyormuş bu fonksiyon?
+
+30
+00:09:51,355 --> 00:09:59,235
+Bir ikili çıkartıyormuş, şöyle ki, yani bir tuple döndürüyormuş.
+
+31
+00:10:00,000 --> 00:10:21,940
+O listenin birinci elemanı, giriş kümelerinden, durumlardan geliyor. İkinci elemanı ise, nereden geliyor? Stak, yığın alfabesinden ve bir de epsilon olabilir.
+
+32
+00:10:27,475 --> 00:10:33,655
+Yani tabii bütün bu ikililer bir küme oluşturuyor. Değil mi?
+
+33
+00:10:36,576 --> 00:10:44,596
+Bu çarpmaz çarpım bize bir küme veriyor. Bu kümeden bir eleman döndürüyor. Veyahut neyi döndürüyor?
+
+34
+00:10:46,895 --> 00:10:53,956
+Birleşim, boş kümenin içinde boş küme var. Yani bir de boş küme döndürebiliyor.
+
+35
+00:10:55,475 --> 00:11:01,355
+Bu ne demek? Yani bunların ne olduğunu aslında pushdown automata'dan biliyoruz.
+
+36
+00:11:03,375 --> 00:11:14,115
+Bir state'deyken bir input okursa, stack'dan da bir stack değer kop edecek.
+
+37
+00:11:16,175 --> 00:11:21,355
+Sonra bir, ne olacak? Yeni bir duruma geçecek.
+
+38
+00:11:22,611 --> 00:11:26,692
+Staka'da bir input push edecek.
+
+39
+00:11:28,311 --> 00:11:29,291
+Boş küme ne demek?
+
+40
+00:11:31,451 --> 00:11:34,031
+Yok. Yani böyle bir geçiş yok.
+
+41
+00:11:34,791 --> 00:11:37,251
+Yani şu üçlü için bir geçiş yok demek.
+
+42
+00:11:40,991 --> 00:11:44,791
+Biraz karmaşık görünüyor ama aslında oldukça basit.
+
+43
+00:11:45,311 --> 00:11:47,652
+Yani çatraz çarpımlar bize bir küme veriyor.
+
+44
+00:11:48,179 --> 00:12:08,219
+Fonksiyonlar zaten kümeden kümeye taşıyor bizi. Bu da şu üçlülerin elemanı olduğu bir kümeden, bu ikililerin elemanı olduğu bir kümeye taşıyor bizi. O kümede fazladan bir de boş küme var.
+
+45
+00:12:12,019 --> 00:12:21,360
+Q0 her zamanki gibi başlangıç durumu F kabul durumlarının bir listesi.
+
+46
+00:12:24,220 --> 00:12:26,620
+Buraya kadar değişik bir şey yok.
+
+47
+00:12:27,899 --> 00:12:28,960
+Ama şurası güzel.
+
+48
+00:12:28,960 --> 00:12:30,731
+Şimdi diyor ki...
+
+49
+00:12:30,932 --> 00:12:40,092
+The transition function delta must satisfy the following condition. Yani delta için ek bir condition'dan bahsedecek.
+
+50
+00:12:40,092 --> 00:12:57,272
+Deterministik puştu automata da. Neymiş? Her bir Q durumu, A giriş sembolü ve X.
+
+51
+00:12:58,196 --> 00:13:17,915
+Stag sembolü için şunlardan tam olarak bir tanesi boş küme değil diyor. Tam olarak bir tanesi. Yani iki tanesi ne olamaz, sıfır tanesi olamaz. Tam olarak bir tanesi boş küme değildir diyor. Nedir bunlar?
+
+52
+00:13:25,331 --> 00:13:52,032
+durum hem durum kelimesini de gereksizce kullandım ama. Üçünün de olduğu giriş diyelim. Q durumu A girişi X. Stag pop etme. Diğeri Q durumu A girişi ama stag'tan hiçbir şey pop etmiyor. Diğeri Q durumu Q durumu
+
+53
+00:13:52,384 --> 00:14:02,783
+Hiçbir şey okumuyor, input, X pop etme, diğeri Q durumunda, hiçbir şey pop etme, hiçbir şey push etme, pardon.
+
+54
+00:14:03,963 --> 00:14:07,324
+Input'tan hiçbir şey okuma, stack'tan hiçbir şey pop etme.
+
+55
+00:14:07,324 --> 00:14:11,544
+Şimdi bu dört durumdan sadece bir tanesi,
+
+56
+00:14:15,251 --> 00:14:29,892
+Boş günle değil. Diğerleri boş günle. Boş günle demek ne demek? Yani geçiş yok. Böyle bir geçiş yok. Dolayısıyla geçişler bu dördünden biri olması gerekiyor.
+
+57
+00:14:37,524 --> 00:14:52,303
+Bu dördünden sadece biri olduğu için de deterministik oluyor. Çünkü her bir adımda ne yapacağın belli. Yani makinenin ikiye bölünmesine gerek yok.
+
+58
+00:15:03,796 --> 00:15:08,276
+İkiye bölünmeyi hiç burada karıştırmayayım. Onu geri alıyorum o sözüme.
+
+59
+00:15:09,716 --> 00:15:17,376
+Yetişler deterministlik. Yani biliniyor. Öyle mi olur, böyle mi olur durumu yok.
+
+60
+00:15:22,644 --> 00:15:27,403
+So, let me review, restart in English.
+
+61
+00:15:28,963 --> 00:15:32,844
+Today, we will start to Deteronistik Pushran Automaton.
+
+62
+00:15:34,364 --> 00:15:40,044
+And its formal definition is like that, like you see in the picture.
+
+63
+00:15:42,224 --> 00:15:45,324
+Deteronistik Pushran Automaton is a six tuple.
+
+64
+00:15:47,508 --> 00:16:12,331
+Q is the set of states, sigma is the input alphabet, gamma is the stack alphabet, delta is a function, and input of that function is a triple, and the first of the triple is a state, second is a...
+
+65
+00:16:12,851 --> 00:16:16,471
+input, from the input alphabet, plus null.
+
+66
+00:16:17,892 --> 00:16:25,831
+And the third input is the one, a symbol from the stack alphabet, plus null.
+
+67
+00:16:26,612 --> 00:16:27,932
+And what does this return?
+
+68
+00:16:29,231 --> 00:16:31,412
+It returns pairs.
+
+69
+00:16:33,012 --> 00:16:38,572
+First of the pair should come from Q, so it's a state.
+
+70
+00:16:39,251 --> 00:16:45,571
+Second is a stuck symbol, or nav.
+
+71
+00:16:47,391 --> 00:16:52,771
+Or, one of these pairs, or empty set.
+
+72
+00:16:53,751 --> 00:16:58,511
+And empty set will mean that there is no such transition.
+
+73
+00:16:58,771 --> 00:17:00,851
+We will not see that in the pictures.
+
+74
+00:17:04,660 --> 00:17:12,100
+Q0 is the start state and F is the set of accepting states, accept states.
+
+75
+00:17:14,160 --> 00:17:16,920
+So far, this is usual.
+
+76
+00:17:18,140 --> 00:17:23,440
+Pushdown automata, automatons actually, are described like this.
+
+77
+00:17:24,740 --> 00:17:30,180
+But here, the transition function has a special condition.
+
+78
+00:17:31,731 --> 00:17:36,351
+The transition function delta must satisfy the following condition.
+
+79
+00:17:36,351 --> 00:17:54,831
+For every state Q, input A and stack symbol X, exactly one of these values is not empty set.
+
+80
+00:17:55,211 --> 00:17:56,132
+And what are those?
+
+81
+00:17:57,076 --> 00:18:02,316
+All three are given, all three inputs are given.
+
+82
+00:18:04,376 --> 00:18:14,396
+Only state and input is given, input alfabet, input symbol is given.
+
+83
+00:18:15,496 --> 00:18:20,896
+And we don't care about copying something from the stack.
+
+84
+00:18:24,115 --> 00:18:36,315
+State is given, input symbol, we don't read anything from the input, and we pop X from the stack.
+
+85
+00:18:37,755 --> 00:18:42,996
+On the state is given, we don't read anything from the input, we don't pop anything.
+
+86
+00:18:43,675 --> 00:18:51,476
+Now, exactly one of these four transitions must exist.
+
+87
+00:18:52,211 --> 00:18:57,132
+meaning it must be non-empty set.
+
+88
+00:18:59,851 --> 00:19:07,112
+So since these four are different things, we can separate these four.
+
+89
+00:19:07,951 --> 00:19:10,751
+We can differentiate these four easily.
+
+90
+00:19:11,672 --> 00:19:18,372
+This makes these pushdown automata deterministic, even though they have null transitions.
+
+91
+00:19:20,468 --> 00:19:22,068
+Let's see some examples.
+
+92
+00:19:26,740 --> 00:19:27,619
+Let's see.
+
+93
+00:19:28,820 --> 00:19:32,539
+These are some examples of other transitions.
+
+94
+00:19:34,320 --> 00:19:35,159
+Let's see.
+
+95
+00:19:36,259 --> 00:19:45,679
+Now, in this case, these three and these three are different because of B and C.
+
+96
+00:19:47,980 --> 00:19:50,259
+No problem at all here.
+
+97
+00:19:51,519 --> 00:19:52,360
+Now here,
+
+98
+00:19:53,556 --> 00:20:04,936
+Again, these three and these three are different because of B and C. Again, these are allowed.
+
+99
+00:20:07,076 --> 00:20:14,496
+Now, example of transitions that are not allowed.
+
+100
+00:20:15,496 --> 00:20:16,155
+Now, here.
+
+101
+00:20:17,556 --> 00:20:24,695
+These three and these three are exactly the same, right?
+
+102
+00:20:25,536 --> 00:20:30,516
+Same state, same input, same stack symbol.
+
+103
+00:20:31,576 --> 00:20:35,396
+So this is not allowed in deterministic pushdown automata.
+
+104
+00:20:36,916 --> 00:20:40,996
+And here, this is important.
+
+105
+00:20:41,235 --> 00:20:42,516
+Look, what does this say?
+
+106
+00:20:45,364 --> 00:20:58,412
+Evet.
+
+107
+00:21:02,132 --> 00:21:07,492
+Only one of these is allowed from the formal definition, right?
+
+108
+00:21:07,872 --> 00:21:09,932
+What does formal definition say?
+
+109
+00:21:13,311 --> 00:21:18,251
+Only one of these and exactly one of these must be there.
+
+110
+00:21:19,851 --> 00:21:20,291
+So,
+
+111
+00:21:26,228 --> 00:21:45,548
+Even though, sorry, since B is same in both case and state is same, now this is A.
+
+112
+00:21:45,548 --> 00:21:50,847
+This could be something like D, but it cannot be null.
+
+113
+00:21:51,268 --> 00:21:52,208
+Here it is null.
+
+114
+00:21:53,395 --> 00:21:54,996
+So, this is not allowed.
+
+115
+00:21:57,675 --> 00:22:06,956
+Only one of, among these four, exactly one of one must be none and set.
+
+116
+00:22:06,956 --> 00:22:11,255
+So, we should see only actually exactly one of these.
+
+117
+00:22:15,915 --> 00:22:19,936
+And here, this is allowed because B and C are different.
+
+118
+00:22:20,980 --> 00:22:26,940
+Here, since B and B, this is not allowed.
+
+119
+00:22:28,940 --> 00:22:46,059
+An example of deterministic pushdown automata, these are very similar to non-deterministic pushdown automata in how they work, except those special conditions on transition function.
+
+120
+00:22:46,996 --> 00:23:04,556
+And let's look at the possibly problematic situations. On Q1, we get an A, and now there is pushdown A.
+
+121
+00:23:05,936 --> 00:23:13,876
+Here, Q1, B, input are different. A and B are different inputs. There is no problem here.
+
+122
+00:23:14,963 --> 00:23:31,083
+Let's look at here, on Q2, reading B, reading Null, and then reading, sorry, copying A, and copying Dollar.
+
+123
+00:23:31,083 --> 00:23:34,223
+So Dollar and A are different here.
+
+124
+00:23:35,043 --> 00:23:38,264
+So again, no problem here.
+
+125
+00:23:40,788 --> 00:23:43,647
+So, this is a deterministic pushdown automata.
+
+126
+00:23:48,768 --> 00:23:56,708
+Is this clear, the difference between deterministic and non-deterministic pushdown automata?
+
+127
+00:23:57,208 --> 00:23:58,248
+Is that clear?
+
+128
+00:24:00,788 --> 00:24:03,147
+Okay, let's move on.
+
+129
+00:24:04,627 --> 00:24:08,708
+So, there is a definition, what does it say?
+
+130
+00:24:08,708 --> 00:24:22,927
+A language L is deterministic context-free if there exists some deterministic PDA that accepts it.
+
+131
+00:24:22,927 --> 00:24:24,528
+So,
+
+132
+00:24:25,460 --> 00:24:33,139
+The language of these deterministic pushdown automata is called deterministic context-free.
+
+133
+00:24:34,340 --> 00:24:44,819
+And as an example, A to the N, B to the N, we just learn a pushdown, deterministic pushdown, DPDA for it.
+
+134
+00:24:45,339 --> 00:24:49,620
+So that means this language is deterministic context-free.
+
+135
+00:24:51,700 --> 00:24:52,660
+Right.
+
+136
+00:24:54,132 --> 00:24:55,072
+Um,
+
+137
+00:24:58,708 --> 00:25:04,208
+This is an example of non-deterministic pushdown automata.
+
+138
+00:25:05,588 --> 00:25:08,088
+Let's see what's problematic here.
+
+139
+00:25:10,708 --> 00:25:19,688
+We need to check states that have more than one transitions.
+
+140
+00:25:20,808 --> 00:25:24,968
+And Q0 has two transitions, in fact, three, right?
+
+141
+00:25:25,844 --> 00:25:30,403
+First transition, second transition, third transition.
+
+142
+00:25:30,403 --> 00:25:41,804
+And let's check between these two, A and B are different, so no problem here.
+
+143
+00:25:44,804 --> 00:25:50,244
+Now, between these three,
+
+144
+00:25:52,627 --> 00:25:57,488
+Q0, B, null, and here.
+
+145
+00:26:01,011 --> 00:26:14,412
+Q0, 0, 0. Remember that only one of them, exactly one of these two must be existing in a deterministic pushdown automata.
+
+146
+00:26:14,412 --> 00:26:25,612
+So these two transitions make this non-deterministic, make this automaton non-deterministic pushdown automata.
+
+147
+00:26:28,180 --> 00:26:32,019
+Is there a problem on this side?
+
+148
+00:26:32,660 --> 00:26:44,720
+Since just one problem makes it non-deterministic, but just in case, just to see, let's see, do we have a problem here?
+
+149
+00:26:45,460 --> 00:26:51,859
+We don't because stuck symbols are different on all three of these.
+
+150
+00:26:52,599 --> 00:26:54,339
+So there is no problem here.
+
+151
+00:26:55,316 --> 00:26:57,155
+On this side,
+
+152
+00:27:02,548 --> 00:27:09,667
+Q0, B, null, and Q0, null, null.
+
+153
+00:27:12,627 --> 00:27:24,007
+Only exactly one of these should be existing if this was a deterministic pushdown automata.
+
+154
+00:27:26,107 --> 00:27:29,307
+So, that's the problem.
+
+155
+00:27:31,796 --> 00:27:52,316
+Now, is that clear? Is this part clear? Okay. Now we will move on. Pushdown automatas have more power than deterministic pushdown automatas.
+
+156
+00:27:55,859 --> 00:28:03,859
+What does that mean? It means that set of deterministic context-free languages...
+
+157
+00:28:10,355 --> 00:28:19,836
+is a subset of set of context-free languages.
+
+158
+00:28:22,836 --> 00:28:27,836
+So, since every pushdown automata is also...
+
+159
+00:28:32,468 --> 00:28:42,648
+pushdown automata, this is true, but we will actually show that there are some context-free languages.
+
+160
+00:28:46,996 --> 00:28:48,236
+That are not
+
+161
+00:28:48,236 --> 00:28:52,736
+Deterministik.
+
+162
+00:29:00,147 --> 00:29:12,147
+So, set of DPDA is a subset, strictly subset of pushdown automata set, set of pushdown automata languages.
+
+163
+00:29:13,748 --> 00:29:16,307
+Hepsi birbirine karıştırdım.
+
+164
+00:29:16,988 --> 00:29:25,147
+Set of deterministic context-free languages is a strict subset of set of context-free languages.
+
+165
+00:29:28,339 --> 00:29:47,099
+Prove that, to prove that, we will show that there exists a context-free language L, which is not accepted by any deterministic pushdown automata.
+
+166
+00:29:49,839 --> 00:29:51,039
+Let's see.
+
+167
+00:29:53,639 --> 00:29:55,980
+The language we will...
+
+168
+00:29:56,948 --> 00:30:01,528
+The language we will use is this one.
+
+169
+00:30:03,788 --> 00:30:05,908
+A to the n, B to the n.
+
+170
+00:30:10,307 --> 00:30:14,008
+Union A to the n, B to the 2n.
+
+171
+00:30:14,488 --> 00:30:16,908
+And n is larger than or equal to 0.
+
+172
+00:30:18,028 --> 00:30:22,067
+It says that we will show that n is context-free.
+
+173
+00:30:22,771 --> 00:30:27,071
+And then at least not deterministic context-free.
+
+174
+00:30:31,476 --> 00:30:35,355
+So first, we need to show L is context-free.
+
+175
+00:30:36,875 --> 00:30:39,956
+And we can do that in two ways.
+
+176
+00:30:40,115 --> 00:30:50,175
+We can either supply a context-free grammar for L, or we can supply a pushdown automata, automaton.
+
+177
+00:30:53,175 --> 00:30:53,976
+Here,
+
+178
+00:30:56,115 --> 00:30:59,096
+We are supplying a context-free grammar.
+
+179
+00:31:00,375 --> 00:31:17,375
+And we have seen these grammars probably previously, but S1 is a context-free grammar for A to the N, B to the N.
+
+180
+00:31:18,740 --> 00:31:24,259
+S2 is a context-free grammar for A to the N, B to the 2N.
+
+181
+00:31:25,180 --> 00:31:31,279
+And we can see these grammars, how they work.
+
+182
+00:31:33,859 --> 00:31:42,400
+This part can create as much A's and B's we want and number of A's and B's will be same.
+
+183
+00:31:43,859 --> 00:31:48,920
+At the end, we can get rid of S1 using this null terminal.
+
+184
+00:31:51,440 --> 00:31:59,559
+And similarly, we can create as many As as we want.
+
+185
+00:32:00,400 --> 00:32:03,460
+Number of Bs will be twice of that.
+
+186
+00:32:05,079 --> 00:32:10,660
+And we can get rid of final S2 by replacing it with this.
+
+187
+00:32:11,124 --> 00:32:12,824
+terminal, null.
+
+188
+00:32:14,844 --> 00:32:17,084
+We see how these two work.
+
+189
+00:32:17,804 --> 00:32:25,764
+Now, we can combine these two grammars this way,
+
+190
+00:32:27,444 --> 00:32:31,924
+and that will be union, like or.
+
+191
+00:32:31,924 --> 00:32:33,804
+So,
+
+192
+00:32:38,036 --> 00:32:46,996
+A string that is in this set is either this or that, right?
+
+193
+00:32:48,036 --> 00:32:53,895
+So, this is like or here.
+
+194
+00:33:01,940 --> 00:33:10,019
+So, we can see that L is context-free. We can easily supply context-free grammar for it.
+
+195
+00:33:11,779 --> 00:33:18,120
+So, let's move on to the second part of this proof. What do we need to prove?
+
+196
+00:33:19,160 --> 00:33:26,319
+The language is not deterministic, context-free.
+
+197
+00:33:30,163 --> 00:33:49,163
+So, we need to show that there is no deterministic pushdown automata that access L, because deterministic context-free languages are defined in this way.
+
+198
+00:33:49,864 --> 00:33:54,923
+They are the languages that a deterministic pushdown automata access.
+
+199
+00:33:57,395 --> 00:34:01,495
+So, let's look at this proof.
+
+200
+00:34:02,995 --> 00:34:05,375
+This is a proof by contradiction.
+
+201
+00:34:05,375 --> 00:34:15,456
+So, for contradiction, we will assume that L is deterministic, context-free.
+
+202
+00:34:17,675 --> 00:34:24,555
+By that assumption, there must be a DPDA M.
+
+203
+00:34:25,652 --> 00:34:27,452
+That accepts L.
+
+204
+00:34:28,532 --> 00:34:30,431
+Okay, so far good.
+
+205
+00:34:33,072 --> 00:34:43,572
+Now, such a pushdown automata M must be something like this.
+
+206
+00:34:53,396 --> 00:35:01,456
+Like, it is the first part of A to the B and B to the 2N, right?
+
+207
+00:35:14,260 --> 00:35:17,320
+A to the N
+
+208
+00:35:22,452 --> 00:35:28,152
+B2N, and another B2N.
+
+209
+00:35:32,211 --> 00:35:37,011
+So, such a, such a,
+
+210
+00:35:41,300 --> 00:35:46,960
+Turing, pushdown automata, then must be like that.
+
+211
+00:35:47,100 --> 00:35:55,780
+So in like the first part of it, the first part of it must accept A to the B and B to the N.
+
+212
+00:35:57,640 --> 00:36:03,160
+And second part must accept the remaining B to the N.
+
+213
+00:36:07,507 --> 00:36:20,447
+Burada neden şey olmuyor arkadaşlar? Görebilenimiz var mı? Bu slide'ı ben de yeni anlamaya çalışıyorum.
+
+214
+00:36:23,188 --> 00:36:33,927
+Neden direkt şuradaki oradan dolayı şey yapmamış? Yani neden şu şekilde gitmiyor bu?
+
+215
+00:36:35,476 --> 00:36:55,556
+Üst tarafta da, üst tarafta A to the end, B to the end. Alt tarafta A to the end, B to the end, iki end şeklinde niye gitmiyor bu pushdown automata? Neden öyle olamıyor?
+
+216
+00:37:04,403 --> 00:37:13,823
+Birebir aynı geçiş olması gerekir. Bu şekilde orlamak için değil mi? O da non-deterministik yapar.
+
+217
+00:37:18,963 --> 00:37:22,663
+Bu şekilde olmayacaksa ne şekilde olacak?
+
+218
+00:37:26,612 --> 00:37:28,752
+Yani çatallanarak
+
+219
+00:37:32,916 --> 00:37:54,516
+Makine ikiye ayrılarak kabul etmeyecekse bu iki farklı yapıyı, A2N, B2N ve A2N, B2N'i nasıl kabul etmesi lazım? Seri olarak bir kısmının, önceki kısmının A2N, B2N'i, ikinci kısmının da B2N'i kabul etmesi lazım.
+
+220
+00:37:59,219 --> 00:38:01,539
+Okay, let's move on.
+
+221
+00:38:06,900 --> 00:38:10,900
+Such a path exists due to the determinism.
+
+222
+00:38:14,199 --> 00:38:14,840
+Now,
+
+223
+00:38:15,659 --> 00:38:20,360
+there is a fact
+
+224
+00:38:20,360 --> 00:38:23,000
+that says that
+
+225
+00:38:23,000 --> 00:38:25,940
+the language
+
+226
+00:38:25,940 --> 00:38:29,619
+A to the N, B to the N, C to the N
+
+227
+00:38:29,619 --> 00:38:31,239
+is not context-free.
+
+228
+00:38:32,884 --> 00:38:38,023
+This can be proved using pumping lemma.
+
+229
+00:38:41,023 --> 00:38:55,443
+And the second language, the language L union A to the N, B to the N, C to the N is not context-free.
+
+230
+00:38:58,164 --> 00:39:01,724
+L'ın orijinal set.
+
+231
+00:39:17,876 --> 00:39:24,195
+So, we will construct a pushdown automata that accepts.
+
+232
+00:39:31,315 --> 00:39:46,576
+This union, so L is this, L is here. So in a way, A to the N, B to the N, union, A to the N, B to the N, union, A to the N, B to the N, C to the N.
+
+233
+00:39:51,188 --> 00:39:53,188
+ve bu birçok birçok.
+
+234
+00:39:58,452 --> 00:40:00,851
+Buradaki Contradiction'ı görebildiniz mi?
+
+235
+00:40:40,179 --> 00:40:47,380
+Evet. Bu dil, yani şu dil, context-free değil.
+
+236
+00:40:51,956 --> 00:40:54,476
+Pumping lemma ile bunu ispat edebiliyoruz.
+
+237
+00:40:56,735 --> 00:40:58,695
+Context-free değil ama
+
+238
+00:40:58,695 --> 00:41:09,115
+bunu, bu dili kabul eden bir pushdown automata yazabiliyoruz.
+
+239
+00:41:10,596 --> 00:41:15,340
+Erle,
+
+240
+00:41:18,452 --> 00:41:25,172
+Bir Dito-Ninistik puştağın automata tarafından kabul edilseydi. Değil mi? Öyle mi gidiyor?
+
+241
+00:41:27,912 --> 00:41:36,832
+[kişisel bilgi] Evet, çatallanma olacak ne zaman dedin? Daha yeni demişsin.
+
+242
+00:41:42,643 --> 00:41:46,323
+Baştan başlayalım şimdi nasıl gidecek bu teorem.
+
+243
+00:41:49,663 --> 00:41:53,764
+Şimdi ne yapmak istiyoruz?
+
+244
+00:41:58,423 --> 00:42:08,563
+Deterministik kuşlağın otomatalarla kabul edilemeyen en azından bir tane dil olduğunu göstermek istiyoruz.
+
+245
+00:42:11,443 --> 00:42:16,764
+Yani buradaki amaç şu, deterministik kuştağın otomataların gücü daha az.
+
+246
+00:42:17,443 --> 00:42:18,523
+Güç burada ne demek?
+
+247
+00:42:20,304 --> 00:42:23,163
+Diğerinin kabul ettiği tüm dilleri kabul edemiyor.
+
+248
+00:42:23,623 --> 00:42:27,324
+Yani daha küçük bir set kabul ediyor.
+
+249
+00:42:27,644 --> 00:42:30,283
+O setin içindeki daha küçük bir seti kabul ediyor.
+
+250
+00:42:30,703 --> 00:42:31,764
+Alt kümeyi kabul ediyor.
+
+251
+00:42:33,764 --> 00:42:38,023
+Strictly, yani burada eşitlik yok.
+
+252
+00:42:38,483 --> 00:43:05,243
+Strictly subset. Bunun için direkt bir örnek, yani zıt örnek gösteriyor. Bu şekilde ispat edecek. Aha size L. Bu L, context-free ama bunu hiçbir deterministik pushdown automata kabul edemez. Bunu göstermesi lazım.
+
+253
+00:43:08,884 --> 00:43:13,324
+Context-free olduğunu kolaylıkla gösterebiliyoruz.
+
+254
+00:43:15,083 --> 00:43:21,743
+Mesele, deterministik pushdown automatonun bunu kabul edemeyeceğini göstermek.
+
+255
+00:43:24,684 --> 00:43:31,463
+Bunu da yine zıtlıkla olmayana ergiyle gösterecek.
+
+256
+00:43:32,692 --> 00:43:44,532
+Önce context-free kabul etti, dili. Dolayısıyla bunu kabul eden şöyle bir pushdown automata olmalı dedi.
+
+257
+00:43:48,340 --> 00:43:57,220
+Sonra, bu sefer bir başka dili kullanacak. A to the end, B to the end, C to the end. Bu dil context-free değil.
+
+258
+00:44:02,931 --> 00:44:18,411
+Context-free olmadığı için onunla, bu dil context-free değil, L ile birleşimi de context-free değil, pumping lemma ile ispat edilebilir diyor.
+
+259
+00:44:27,539 --> 00:44:32,699
+Bunu kabul eden bir pushdown automata yazabiliriz diyor.
+
+260
+00:44:34,239 --> 00:44:42,960
+Eğer L, L'yi kabul eden bir deterministik pushdown automata varsa.
+
+261
+00:44:45,599 --> 00:44:47,840
+Bakalım nasıl git devam edecek.
+
+262
+00:44:50,963 --> 00:45:06,243
+Deterministik puşlu automata yukarıda vardı zaten. Bunu modifiye edeceğiz. B'yi C ile değiştireceğiz diyor.
+
+263
+00:45:07,923 --> 00:45:17,683
+Yani A üzeri B'ye, A üzeri N, B üzeri N yerine, A üzeri N, C üzeri N ve C üzeri N olmak üzere.
+
+264
+00:45:19,188 --> 00:45:31,268
+Dili sadece B yerine C yazarak yeniden yazdı. Burada bir sıkıntı yok. Fark etmez yani. A, B kullanmışsın, C kullanmışsın.
+
+265
+00:45:45,679 --> 00:46:00,179
+Bir pushdown automata. Ne yapıyor? M'nin ve M üstünün kabul durumlarını birleştiriyor. Nal geçişlerle.
+
+266
+00:46:10,931 --> 00:46:16,751
+Nasıl olacak? Yukarıdaki A üzeri N, B üzeri N'e kadar geldi.
+
+267
+00:46:18,911 --> 00:46:19,231
+Değil mi?
+
+268
+00:46:21,251 --> 00:46:28,572
+Burada aşağıya geçip C üzeri N'i kabul edebilir değil mi?
+
+269
+00:46:29,791 --> 00:46:30,851
+Bu kuştağın automata.
+
+270
+00:46:38,291 --> 00:46:50,251
+Dolayısıyla A üzeri N, B üzeri N, C üzeri N'i kabul edebilir. Yani şunu kabul edebilir.
+
+271
+00:46:56,980 --> 00:47:06,900
+Bu kısımda şeyi kabul edebilmeli, şunu kabul edebilmeli. Zaten zıtlığa ermek için bunu kabul etmiştik yani.
+
+272
+00:47:10,420 --> 00:47:12,480
+Dolayısıyla ne olmuş oluyor burada?
+
+273
+00:47:14,639 --> 00:47:23,240
+Context-free olmayan bir dil için context-free olduğunu gösteren bir pushdown automata yazdık.
+
+274
+00:47:23,920 --> 00:47:24,740
+Bu da bir zıtlık.
+
+275
+00:47:25,980 --> 00:47:31,300
+Yani hiçbir pushdown automata'nın şu dili kabul edememesi lazım.
+
+276
+00:47:32,980 --> 00:47:35,380
+Ama edebilen bir dil yazdık.
+
+277
+00:47:35,891 --> 00:47:53,351
+Demek ki varsayımlardan bir şey yanlış. Burada zaten yaptığımız bir varsayım var, o da L'nin şu şekilde deterministik bir pushdown automata ile kabul edilebildiğiydi.
+
+278
+00:47:59,027 --> 00:48:03,007
+Let me re-re-re-tell this part in English.
+
+279
+00:48:08,052 --> 00:48:10,052
+Bu bir şeyin bir şey.
+
+280
+00:48:10,052 --> 00:48:34,052
+Bu bir şey.
+
+281
+00:48:35,668 --> 00:48:50,448
+We want to prove that. So, set of deterministic context-free languages is a strict subset. There is no equivalency of set of context-free languages.
+
+282
+00:48:52,588 --> 00:48:59,228
+And we will do, we will prove this by giving an example.
+
+283
+00:49:03,603 --> 00:49:12,423
+The example is this language, A to the N, B to the N union, A to the N, B to the 2N, N is larger than or equal to zero.
+
+284
+00:49:13,023 --> 00:49:26,783
+This language is context-free, but there cannot be a deterministic context-free, there cannot be a deterministic pushdown automata that excels it.
+
+285
+00:49:27,923 --> 00:49:31,663
+So, it is context-free, but it is not deterministic.
+
+286
+00:49:31,883 --> 00:49:41,763
+So, there is at least one language that is context-free, but not deterministic context-free.
+
+287
+00:49:43,823 --> 00:49:45,743
+We give an example here.
+
+288
+00:49:47,583 --> 00:49:50,743
+And to do that, first we show that...
+
+289
+00:49:51,795 --> 00:49:55,595
+The language is context-free by giving grammar.
+
+290
+00:49:57,395 --> 00:50:04,475
+Then, now we need to show that the language is not deterministic context-free.
+
+291
+00:50:08,475 --> 00:50:13,175
+We will use proof by contradiction for this subpart.
+
+292
+00:50:14,215 --> 00:50:17,515
+So we assume ALE is deterministic context-free.
+
+293
+00:50:18,387 --> 00:50:23,587
+So, there must be a pushdown, deterministic pushdown automata that accepts it.
+
+294
+00:50:24,867 --> 00:50:34,067
+And that deterministic pushdown automata must accept it this way, serially.
+
+295
+00:50:40,340 --> 00:50:49,260
+In the first part, somehow there must be a section that accepts A to the N, B to the N.
+
+296
+00:50:50,700 --> 00:50:55,180
+Then the rest must accept remaining B to the N.
+
+297
+00:50:55,180 --> 00:51:00,260
+We cannot use a non-deterministic that
+
+298
+00:51:00,260 --> 00:51:05,940
+Arkadaşınız çatal dedemme tücü in azı çekeceğiz.
+
+299
+00:51:11,188 --> 00:51:17,888
+The machine cannot separate into two in deterministic pushdown automata.
+
+300
+00:51:18,888 --> 00:51:25,948
+Or let me take what I said last back.
+
+301
+00:51:26,808 --> 00:51:34,708
+We cannot see exactly the same two transitions.
+
+302
+00:51:36,708 --> 00:51:37,708
+But...
+
+303
+00:51:38,356 --> 00:51:44,936
+The first part of A to the end, B to the end, and A to the end, B to the end is exactly the same.
+
+304
+00:51:45,936 --> 00:51:58,215
+So we cannot use this kind of or structure that will make this non-deterministic.
+
+305
+00:51:58,996 --> 00:52:04,396
+The only way a deterministic pushdown automata accepts
+
+306
+00:52:05,076 --> 00:52:06,576
+This language is
+
+307
+00:52:10,579 --> 00:52:12,119
+Let me clean this a bit.
+
+308
+00:52:13,940 --> 00:52:32,059
+The only way D, PDA, accepts these languages, the first part, there will be a first part with an accept state that accepts the first part and a second part that accepts the remaining.
+
+309
+00:52:38,420 --> 00:52:48,720
+Now, for the rest of the proof, we use this language, A to the end, B to the end, C to the end, which is not context-free.
+
+310
+00:52:49,639 --> 00:52:54,840
+This can be proved by pumping lemma for context-free languages.
+
+311
+00:52:56,659 --> 00:52:58,720
+And the...
+
+312
+00:52:59,027 --> 00:53:06,787
+The union of our language L and A to the N, B to the N, C to the N is again not context-free.
+
+313
+00:53:07,527 --> 00:53:10,747
+Again, this can be proved by pumping lemma.
+
+314
+00:53:12,807 --> 00:53:18,467
+Now, the thing is,
+
+315
+00:53:19,347 --> 00:53:27,288
+We can actually construct a pushdown automata that accepts this union.
+
+316
+00:53:29,327 --> 00:53:30,947
+And this is a contradiction.
+
+317
+00:53:31,768 --> 00:53:34,327
+So how can we construct it?
+
+318
+00:53:36,187 --> 00:53:40,527
+In the first step, let me, sorry.
+
+319
+00:53:42,367 --> 00:53:44,167
+Let me clean this part.
+
+320
+00:53:46,167 --> 00:53:46,768
+Okay.
+
+321
+00:53:49,652 --> 00:54:01,692
+First, we replace B with C and create a new pushdown automata.
+
+322
+00:54:01,692 --> 00:54:10,472
+This will be exactly the same with M, except instead of B, we will have C.
+
+323
+00:54:15,824 --> 00:54:17,824
+is deterministic.
+
+324
+00:54:18,364 --> 00:54:21,464
+Language of M' is also deterministic.
+
+325
+00:54:25,748 --> 00:54:26,288
+Now,
+
+326
+00:54:31,123 --> 00:54:54,667
+Bu, bu
+
+327
+00:54:54,739 --> 00:55:02,719
+For example, how can we accept A to the N, B to the N, C to the N in this machine?
+
+328
+00:55:04,279 --> 00:55:09,339
+A to the N, B to the N part can be accepted here.
+
+329
+00:55:10,339 --> 00:55:15,759
+The remaining C to the N can be accepted here.
+
+330
+00:55:22,324 --> 00:55:25,943
+We will move here using this null transition.
+
+331
+00:55:30,324 --> 00:55:34,963
+And L can be accepted in this part.
+
+332
+00:55:36,923 --> 00:55:37,264
+Right?
+
+333
+00:55:38,124 --> 00:55:44,184
+So this gives, this shows that this union.
+
+334
+00:55:45,300 --> 00:55:48,300
+Can be accepted by pushdown automata.
+
+335
+00:55:48,420 --> 00:55:50,140
+So it must be context-free.
+
+336
+00:55:51,920 --> 00:55:59,660
+But using pumping lemma, it can be shown that it is not context-free.
+
+337
+00:55:59,960 --> 00:56:03,720
+So we came to a contradiction.
+
+338
+00:56:03,980 --> 00:56:05,820
+We reached to a contradiction.
+
+339
+00:56:05,820 --> 00:56:09,820
+That means L is not.
+
+340
+00:56:10,547 --> 00:56:17,307
+Deterministic context-free, there is no pushdown automata that accepts it.
+
+341
+00:56:17,307 --> 00:56:30,787
+So that means Deterministic pushdown automata are less in power than non-deterministic pushdown automata.
+
+342
+00:56:31,411 --> 00:56:36,251
+Bu bir şey bir şey, ama bu bir şeyin de anlamı var.
+
+343
+00:56:36,251 --> 00:56:38,491
+Bu bir problem var mı?
+
+344
+00:56:42,291 --> 00:56:45,291
+Tamam, bir süreç bir süreç.
+
+345
+00:56:45,831 --> 00:56:48,871
+Bir süreç bir süreç.
+
+346
+00:56:48,871 --> 00:56:49,511
+10.00.
+
+347
+00:56:50,291 --> 00:56:51,831
+Ve sonra devam edelim.
+
+348
+01:11:13,011 --> 01:11:14,951
+Arkadaşlar, tekrar merhabalar.
+
+349
+01:11:21,076 --> 01:11:22,355
+Sesim geliyordur umarım.
+
+350
+01:11:25,155 --> 01:11:26,376
+Geliyor hocam.
+
+351
+01:11:26,855 --> 01:11:27,296
+Sağ olun.
+
+352
+01:11:28,655 --> 01:11:34,136
+Şimdi yeni bir konuya geçeceğiz. Turing makinelerine geçeceğiz.
+
+353
+01:11:41,460 --> 01:11:43,039
+Ekran paylaşımı yapayım.
+
+354
+01:12:06,547 --> 01:12:07,547
+Turing makinesi.
+
+355
+01:12:10,448 --> 01:12:15,627
+So, if we draw a language hierarchy,
+
+356
+01:12:20,627 --> 01:12:23,127
+At the bottom, we see regular languages.
+
+357
+01:12:26,047 --> 01:12:30,227
+And there are some languages that are not regular.
+
+358
+01:12:31,427 --> 01:12:36,827
+And some of these are called context-free languages.
+
+359
+01:12:37,827 --> 01:12:44,467
+But we just learned that there are some languages that are not context-free.
+
+360
+01:12:47,252 --> 01:12:52,752
+These, some of these are accepted by Turing machines.
+
+361
+01:12:53,971 --> 01:13:01,652
+So the most powerful machine we learned so far is Turing machine.
+
+362
+01:13:04,592 --> 01:13:11,492
+A Turing machine is similar to the other automaton we learned so far.
+
+363
+01:13:12,051 --> 01:13:20,711
+The main difference is, first of all, a Turing machine has a tape.
+
+364
+01:13:21,871 --> 01:13:28,611
+And this tape can be used for reading, but also for writing.
+
+365
+01:13:30,231 --> 01:13:36,231
+And also, this tape is infinite in both sides.
+
+366
+01:13:37,891 --> 01:13:38,111
+Okay?
+
+367
+01:13:38,676 --> 01:13:40,775
+There is infinite space.
+
+368
+01:13:42,396 --> 01:13:49,736
+This is very similar to the RAM of current computers.
+
+369
+01:13:50,956 --> 01:13:54,656
+Other than that, it has a control unit.
+
+370
+01:13:55,076 --> 01:14:04,615
+In that control unit, you have the usual states, transitions, rejecting states, accept states.
+
+371
+01:14:05,171 --> 01:14:08,371
+Initial state, et cetera.
+
+372
+01:14:10,591 --> 01:14:13,251
+This read right hat
+
+373
+01:14:13,251 --> 01:14:18,231
+can move
+
+374
+01:14:18,231 --> 01:14:21,611
+to the left or right.
+
+375
+01:14:22,271 --> 01:14:26,492
+In fact, it either moves left or right
+
+376
+01:14:26,492 --> 01:14:28,611
+on each time step.
+
+377
+01:14:33,619 --> 01:14:50,879
+So, what happens is, at each transition, right head reads a symbol, writes a symbol, and moves left or right.
+
+378
+01:14:52,879 --> 01:14:54,760
+Let's look at an example.
+
+379
+01:14:56,500 --> 01:15:07,260
+At time zero, we have this situation. On the tape, we have A, B, A, C. And red-right head is on this A.
+
+380
+01:15:08,340 --> 01:15:23,500
+Now, what will happen on time one? What happened? Let's try to understand here. It read this A.
+
+381
+01:15:31,188 --> 01:15:39,648
+So, this happens, does this happen on time 0 or time 1? I am a little confused here.
+
+382
+01:15:46,547 --> 01:15:48,747
+I think it happens on time zero.
+
+383
+01:15:55,572 --> 01:15:58,811
+between time zero and one, in fact, I guess.
+
+384
+01:15:59,891 --> 01:16:02,851
+So what happens is, read right hat,
+
+385
+01:16:05,451 --> 01:16:06,971
+reads this A,
+
+386
+01:16:09,692 --> 01:16:11,992
+and writes K there.
+
+387
+01:16:12,752 --> 01:16:14,791
+Now there is a K there, right?
+
+388
+01:16:15,971 --> 01:16:19,231
+And moves to the left.
+
+389
+01:16:23,091 --> 01:16:41,511
+Now, in time one, now reads this B, and apparently now we see in time step two F, that means it wrote F there, then moved back to right.
+
+390
+01:16:45,171 --> 01:16:50,951
+So, remember that in other automatons, we had an input string.
+
+391
+01:16:52,152 --> 01:17:01,851
+Now, here, input string is still there, but it will be in the tape.
+
+392
+01:17:03,231 --> 01:17:09,471
+And the read-write hat will show the beginning of this input string.
+
+393
+01:17:12,659 --> 01:17:17,180
+The state is infinite on both sides, right?
+
+394
+01:17:17,180 --> 01:17:23,359
+So how do we understand the end of this input string?
+
+395
+01:17:24,719 --> 01:17:29,319
+We understand using this special symbol.
+
+396
+01:17:30,039 --> 01:17:31,979
+It's called blank symbol.
+
+397
+01:17:32,979 --> 01:17:36,180
+So we assume that all these...
+
+398
+01:17:37,171 --> 01:17:44,332
+Everywhere except the initial input string is all blank symbols.
+
+399
+01:17:45,752 --> 01:17:47,591
+Okay, they are all blank symbols.
+
+400
+01:17:48,291 --> 01:18:03,011
+Using this blank symbol, we can understand that we reached to the end of input or we reached, if we go to the left, to the start of input string.
+
+401
+01:18:06,228 --> 01:18:12,268
+And at the very beginning, we will have this situation.
+
+402
+01:18:13,528 --> 01:18:18,667
+The head will show the first symbol in the input string.
+
+403
+01:18:19,667 --> 01:18:19,847
+Okay.
+
+404
+01:18:20,888 --> 01:18:22,368
+That will be time zero.
+
+405
+01:18:26,087 --> 01:18:30,908
+And when we draw the graph,
+
+406
+01:18:31,636 --> 01:18:39,376
+As usual, we will write these states, Q1 to Q2.
+
+407
+01:18:39,956 --> 01:18:46,056
+Now, remember, we read something, we write something, we move left or right.
+
+408
+01:18:46,195 --> 01:18:48,236
+So, we write those things here.
+
+409
+01:18:48,836 --> 01:18:52,056
+We read this symbol from the tape.
+
+410
+01:18:52,636 --> 01:18:57,536
+We read this symbol, we write, sorry, this symbol to the tape.
+
+411
+01:18:58,068 --> 01:19:02,248
+And then we move left, L for left.
+
+412
+01:19:02,248 --> 01:19:06,728
+If you move right, we write R.
+
+413
+01:19:06,988 --> 01:19:08,148
+So we write R.
+
+414
+01:19:12,688 --> 01:19:24,248
+And usually the current state is also written to the beginning of read, write, hat to make reading this.
+
+415
+01:19:25,300 --> 01:19:33,100
+EASIER, or giving this more powerful disrepresentation, making this representation more powerful.
+
+416
+01:19:33,100 --> 01:19:46,220
+So, this situation here is, when we are on Q1,
+
+417
+01:19:52,372 --> 01:20:13,291
+If we read A on the tape, what do we do? We write B and we move to right. So we will write B here and the head will come here and the state, new state will be Q2.
+
+418
+01:20:21,203 --> 01:20:21,923
+Pürtür.
+
+419
+01:20:25,716 --> 01:20:40,896
+So, we read A, we write B there, we move to Q, we move to right, and the state becomes from Q1 to Q2.
+
+420
+01:20:45,076 --> 01:20:52,396
+This is the same example, but moving to left.
+
+421
+01:20:53,684 --> 01:20:54,684
+Evet.
+
+422
+01:21:21,524 --> 01:21:43,164
+So, we read, when we are on Q1, if we read blank symbol, what do we do? We write G there and move right. So, we started maybe with a four symbol input. Now, we increased the size of input.
+
+423
+01:21:46,164 --> 01:21:47,043
+Now,
+
+424
+01:21:48,115 --> 01:21:50,496
+Turing makinesi are deterministic.
+
+425
+01:21:51,615 --> 01:21:52,775
+What does that mean?
+
+426
+01:21:54,115 --> 01:21:55,855
+For the same
+
+427
+01:21:55,855 --> 01:21:59,235
+these pair
+
+428
+01:21:59,235 --> 01:22:01,195
+state and input
+
+429
+01:22:01,195 --> 01:22:06,036
+we can do one thing.
+
+430
+01:22:06,755 --> 01:22:08,956
+So these must be different.
+
+431
+01:22:09,755 --> 01:22:10,636
+Q1A
+
+432
+01:22:10,636 --> 01:22:12,935
+Q1B. This is good.
+
+433
+01:22:13,876 --> 01:22:17,876
+İntetli, but here, there is a problem.
+
+434
+01:22:18,636 --> 01:22:18,956
+Why?
+
+435
+01:22:19,996 --> 01:22:22,796
+Q1A, Q1A.
+
+436
+01:22:24,095 --> 01:22:26,456
+We don't know what to do.
+
+437
+01:22:26,675 --> 01:22:27,775
+Which of these?
+
+438
+01:22:27,996 --> 01:22:28,716
+We don't know.
+
+439
+01:22:30,796 --> 01:22:32,435
+To allow this,
+
+440
+01:22:33,775 --> 01:22:36,935
+we must allow non-determinism.
+
+441
+01:22:37,471 --> 01:22:44,471
+Turing machines. Turing machines are deterministic.
+
+442
+01:22:44,471 --> 01:22:48,471
+Also null transitions are not allowed.
+
+443
+01:22:53,811 --> 01:22:56,731
+What does this say?
+
+444
+01:23:00,332 --> 01:23:04,051
+Partial transition function, what does this say?
+
+445
+01:23:09,051 --> 01:23:13,611
+Allowed no transition for input symbol C.
+
+446
+01:23:17,460 --> 01:23:21,380
+We are on Q1.
+
+447
+01:23:23,579 --> 01:23:33,239
+If we read A, right, we write B here and move to left, move to right.
+
+448
+01:23:33,899 --> 01:23:37,120
+So we come here, right?
+
+449
+01:23:39,120 --> 01:23:43,180
+We come here and state becomes Q2.
+
+450
+01:23:49,939 --> 01:23:51,639
+Burada ne demek istemiş anlamadım.
+
+451
+01:23:51,759 --> 01:23:52,759
+Alert falan demiş.
+
+452
+01:24:00,435 --> 01:24:01,995
+Burada zaten sıkıntı yok.
+
+453
+01:24:04,075 --> 01:24:05,015
+Farklı bu ikisi.
+
+454
+01:24:16,692 --> 01:24:21,152
+Aydın'ın ne demek istemiş bu slide'da anlayanınız var mı?
+
+455
+01:24:36,724 --> 01:24:57,944
+Yani şunu demek istiyor, hani, şeyi demek istiyor herhalde, deterministik kuştağın automata da ilk başlarda görmüştük. Her bir sembol için transition yazmamız gerekiyordu ya.
+
+456
+01:25:00,051 --> 01:25:11,572
+Yani Q1 state'inde A gelirse ne olur yazmışız, B gelirse ne olur yazmışız, C gelirse ne olur yazmamışız.
+
+457
+01:25:13,332 --> 01:25:21,511
+Sıkıntı yok diyor. Yani illa her geçişi göstermemize gerek yok. Onu da demek istiyor sanırım.
+
+458
+01:25:24,307 --> 01:25:28,768
+We can write the partial transition function or we can draw.
+
+459
+01:25:29,648 --> 01:25:39,408
+Normally in the term, if you remember, we need to show transitions for all alphabet symbols.
+
+460
+01:25:40,568 --> 01:25:43,247
+But in Turing machines,
+
+461
+01:25:43,663 --> 01:25:48,163
+You don't need to draw all symbols.
+
+462
+01:25:49,163 --> 01:25:52,884
+If there is no transition for C, you don't need to draw it.
+
+463
+01:25:55,343 --> 01:25:56,123
+Okay.
+
+464
+01:25:57,683 --> 01:26:01,384
+Now, there is the concept of halting.
+
+465
+01:26:01,384 --> 01:26:02,683
+Chetan.
+
+466
+01:26:09,268 --> 01:26:11,728
+So, there's a question about mid-turn two.
+
+467
+01:26:13,087 --> 01:26:17,907
+The date for mid-turn two is now.
+
+468
+01:26:18,327 --> 01:26:23,968
+It is next week at this hour at nine o'clock.
+
+469
+01:26:25,188 --> 01:26:30,208
+And all the subjects that we learned.
+
+470
+01:26:31,252 --> 01:26:35,551
+Up to today and including today will be in the exam.
+
+471
+01:26:35,551 --> 01:26:47,231
+From the start to the subjects and including the subjects today that we will learn today.
+
+472
+01:26:53,395 --> 01:27:17,155
+And the exam will be similar to previous exam, I guess. I am not sure. I will sit down to prepare that exam and we will see what happens. But I guess it will be similar. I also will use the same approach. If I do a test, I will subtract.
+
+473
+01:27:19,028 --> 01:27:28,628
+In fact, even if I don't do a test, I will subtract the time that you used from the exam point.
+
+474
+01:27:41,108 --> 01:27:42,128
+Ok, you're welcome.
+
+475
+01:27:48,115 --> 01:27:58,636
+OK, so in Turing machines, there is this concept of halting.
+
+476
+01:27:58,636 --> 01:28:08,716
+Now we say that the machine halts or stops in a state if there is no transition to follow.
+
+477
+01:28:08,716 --> 01:28:15,595
+As an example here, we are on Q1.
+
+478
+01:28:16,115 --> 01:28:20,775
+And there is no outgoing transition from Q1 at all.
+
+479
+01:28:21,496 --> 01:28:26,476
+That means on this state, the machine will halt.
+
+480
+01:28:31,416 --> 01:28:33,556
+This is another example.
+
+481
+01:28:34,435 --> 01:28:35,756
+We are on Q1.
+
+482
+01:28:36,396 --> 01:28:39,236
+There are some transitions out.
+
+483
+01:28:39,680 --> 01:28:44,860
+But there is no transition out for the symbol C.
+
+484
+01:28:46,420 --> 01:28:50,780
+Again, here, the machine halts at Q1.
+
+485
+01:28:53,280 --> 01:28:59,780
+Now, there is also...
+
+486
+01:29:03,028 --> 01:29:12,548
+Another halt situation, that is, when we come to an accepting situation, accepting state.
+
+487
+01:29:13,388 --> 01:29:27,548
+If we reach to an accepting state, the machine halts, but the halt, the fact that the machine halts does not mean it rejects.
+
+488
+01:29:28,467 --> 01:29:32,567
+Here, the machine halts and excels.
+
+489
+01:29:33,528 --> 01:29:41,547
+In our previous examples, the machine halted, but it rejected because state was rejecting.
+
+490
+01:29:42,448 --> 01:29:50,108
+So halting is different from rejecting, right? Halting is just stopping. The machine stops.
+
+491
+01:29:52,051 --> 01:30:03,211
+And then we need to check whether the state is accept or reject to finally decide whether the machine rejects or accepts.
+
+492
+01:30:04,691 --> 01:30:13,971
+And so the accepting states cannot have outgoing transitions.
+
+493
+01:30:13,971 --> 01:30:18,811
+They can obviously have inbound.
+
+494
+01:30:19,539 --> 01:30:22,539
+inbound transitions.
+
+495
+01:30:24,539 --> 01:30:25,539
+So,
+
+496
+01:30:26,539 --> 01:30:28,539
+acceptance is
+
+497
+01:30:28,539 --> 01:30:30,539
+if machine halts
+
+498
+01:30:31,539 --> 01:30:34,539
+and the state is accept,
+
+499
+01:30:37,539 --> 01:30:38,539
+the machine accepts.
+
+500
+01:30:39,539 --> 01:30:40,539
+Now,
+
+501
+01:30:41,300 --> 01:30:50,639
+If machine halts and the state is not accepted, again, then we reject.
+
+502
+01:30:50,639 --> 01:31:02,239
+Now, in Turing machines, there is another reason that machine can reject an input, and that's when machine enters an infinite loop.
+
+503
+01:31:03,300 --> 01:31:05,940
+Turing machines can enter infinite loops.
+
+504
+01:31:07,220 --> 01:31:13,440
+If you go into an infinite loop, the machine will never halt.
+
+505
+01:31:14,620 --> 01:31:21,059
+Since the machine never halts, we say that input is rejected.
+
+506
+01:31:54,771 --> 01:31:59,271
+So, again, in order to accept an input string,
+
+507
+01:32:01,792 --> 01:32:05,332
+yeah, now, this is a new, something new.
+
+508
+01:32:05,652 --> 01:32:11,932
+In order to accept an input string, it is not necessary to scan all the symbols.
+
+509
+01:32:13,391 --> 01:32:17,492
+You can just scan some symbols and accept that input.
+
+510
+01:32:21,747 --> 01:32:24,327
+Let's look at the Turing machine example.
+
+511
+01:32:26,007 --> 01:32:34,747
+This is a simple Turing machine with a simple alphabet with symbols A and B.
+
+512
+01:32:35,727 --> 01:32:39,487
+And it accepts the language A star.
+
+513
+01:32:40,608 --> 01:32:42,427
+So any number of A's.
+
+514
+01:32:43,867 --> 01:32:46,027
+Any number of A's.
+
+515
+01:32:47,887 --> 01:32:48,407
+Now,
+
+516
+01:32:49,011 --> 01:32:56,492
+As long as we read A's, what do we do?
+
+517
+01:32:58,051 --> 01:33:00,072
+We write back that A.
+
+518
+01:33:00,931 --> 01:33:04,172
+In a way, we don't touch A.
+
+519
+01:33:04,332 --> 01:33:06,771
+We read A, but we write back.
+
+520
+01:33:06,771 --> 01:33:11,291
+So it's like we skip A, right?
+
+521
+01:33:12,211 --> 01:33:15,051
+In a way, we skip A and move right.
+
+522
+01:33:15,539 --> 01:33:36,359
+Until then, when we move, when we see the blank symbol, and then we write back that blank symbol, we move back to left, but we also move to state, accept, multi-an accept state.
+
+523
+01:33:38,163 --> 01:34:02,103
+For any number of A, this machine will accept. Let's see how this works. For example, A, A, A. At time zero, we are on initial state Q0. And read-write-hat shows the first symbol. It's on the first symbol.
+
+524
+01:34:02,676 --> 01:34:08,556
+And we have these blank symbols on both sides of input string.
+
+525
+01:34:09,896 --> 01:34:13,336
+Now, we read this first A.
+
+526
+01:34:20,115 --> 01:34:25,476
+Put back A and move to right at time zero.
+
+527
+01:34:31,891 --> 01:34:43,191
+Bu şeyi bir türlü çözemedim. Bir gün kitaba falan bakıp şey yapmam lazım. Yani sıfırda mı okuyup yazıyor, birde mi okuyup yazıyor?
+
+528
+01:34:48,916 --> 01:34:51,236
+Veya sıfırla birin arasında mı?
+
+529
+01:34:53,695 --> 01:34:56,855
+Orada bir kafa karışıklığın var arkadaşlar.
+
+530
+01:34:58,576 --> 01:35:00,416
+Bu konuyu bileniniz var mı?
+
+531
+01:35:10,868 --> 01:35:15,068
+Neyse, çok önemli bir şey değil şu an için. Anlamamız için çok önemli değil.
+
+532
+01:35:15,768 --> 01:35:24,948
+So, at time 1, again, we read the next A. We are still on Q0 and move to right.
+
+533
+01:35:26,007 --> 01:35:34,968
+Now, at time 2, again, we read this A. We write back A and we go to right.
+
+534
+01:35:39,315 --> 01:35:41,395
+We read a null.
+
+535
+01:35:43,036 --> 01:35:45,315
+Actually, sorry, we read blank.
+
+536
+01:35:46,555 --> 01:35:48,235
+So we read a blank.
+
+537
+01:35:48,876 --> 01:35:56,235
+And when we are on Q0 and we read a blank, we write back that blank and move to left.
+
+538
+01:35:57,715 --> 01:36:02,795
+And we move to Q1, which is except.
+
+539
+01:36:03,444 --> 01:36:05,604
+So, we do that.
+
+540
+01:36:06,004 --> 01:36:11,684
+Now, since we reached to an accept state, we halt.
+
+541
+01:36:13,064 --> 01:36:24,424
+And since we halt and we are on an accept state, the machine will accept this example.
+
+542
+01:36:25,363 --> 01:36:40,483
+Now, let's look at a rejection example. On time zero, we are on A. We read that, write back, move to right. On time one, now we are on B.
+
+543
+01:36:43,003 --> 01:36:51,804
+State is Q zero. On Q zero, there is no transition that reads B.
+
+544
+01:36:52,435 --> 01:36:54,095
+That means we halt.
+
+545
+01:36:55,615 --> 01:36:59,716
+And we halt on Q0, which is a reject state.
+
+546
+01:37:00,335 --> 01:37:03,335
+That means the machine rejects.
+
+547
+01:37:06,315 --> 01:37:11,195
+We could have a simpler machine for the same language.
+
+548
+01:37:12,136 --> 01:37:13,415
+It's this language.
+
+549
+01:37:14,415 --> 01:37:15,775
+What does it do?
+
+550
+01:37:18,452 --> 01:37:36,452
+If in this case, obviously, alphabet is simpler. Alphabet can consist of only As. It cannot have Bs. Since there are no Bs in the alphabet, we can just write it here. And what does this do?
+
+551
+01:37:37,452 --> 01:37:45,731
+Immediately, it accepts. And it doesn't read anything, right? It doesn't care what the input is.
+
+552
+01:37:46,292 --> 01:37:50,292
+But we know that input can only have A's.
+
+553
+01:37:51,292 --> 01:37:54,292
+So it's either null or A's.
+
+554
+01:37:54,292 --> 01:38:01,292
+So we accept without even thinking or running anything.
+
+555
+01:38:02,292 --> 01:38:08,292
+So on time zero, we halt and we accept.
+
+556
+01:38:08,292 --> 01:38:10,292
+We don't even scan the input.
+
+557
+01:38:22,292 --> 01:38:25,692
+Now let's look at an infinite loop example.
+
+558
+01:38:30,172 --> 01:38:34,452
+This language, this machine is for this language.
+
+559
+01:38:36,212 --> 01:38:39,932
+So reads any number of A's.
+
+560
+01:38:41,292 --> 01:38:49,692
+Or reads a B than any number of A's or B's.
+
+561
+01:38:50,676 --> 01:38:51,115
+Okay.
+
+562
+01:38:52,316 --> 01:38:58,376
+So, it says that there can be an infinite loop here.
+
+563
+01:38:59,896 --> 01:39:01,916
+Let's look at this example.
+
+564
+01:39:02,436 --> 01:39:03,876
+Input is ABA.
+
+565
+01:39:05,655 --> 01:39:10,115
+Starting state is Q0.
+
+566
+01:39:11,436 --> 01:39:16,856
+At time 0, we read A, write back, move to write.
+
+567
+01:39:19,028 --> 01:39:27,428
+Now, at time B, we read B, right back, move to, left.
+
+568
+01:39:28,728 --> 01:39:31,128
+We came to where we start.
+
+569
+01:39:32,348 --> 01:39:44,128
+So with this, sorry, with this, on each state, you will be either in this or in this situation.
+
+570
+01:39:45,427 --> 01:39:47,688
+This will be an infinite loop.
+
+571
+01:39:48,607 --> 01:39:51,887
+This machine cannot halt, it cannot stop.
+
+572
+01:39:53,507 --> 01:39:56,947
+If it starts with this string.
+
+573
+01:39:57,228 --> 01:40:00,707
+For another string, it can halt.
+
+574
+01:40:01,947 --> 01:40:04,587
+But for this string, it cannot halt.
+
+575
+01:40:07,927 --> 01:40:10,967
+Now, because of this infinite loop,
+
+576
+01:40:11,828 --> 01:40:15,188
+Arkadaşlar, bu input string is rejected.
+
+577
+01:40:16,148 --> 01:40:18,208
+Arkadaşlar, the machine never alts.
+
+578
+01:40:19,408 --> 01:40:25,547
+Arkadaşlar, so we cannot accept, we can never reach to an accepting state.
+
+579
+01:40:27,847 --> 01:40:31,648
+Arkadaşlar, this is another Turing machine example.
+
+580
+01:40:31,847 --> 01:40:35,608
+Arkadaşlar, this is kind of more complicated.
+
+581
+01:40:36,884 --> 01:40:43,683
+It's for this language, A to the N, B to the N, N is larger than or equal to 1.
+
+582
+01:40:43,804 --> 01:40:49,884
+So there must be at least one A and one B.
+
+583
+01:40:50,344 --> 01:40:54,503
+So number of A's and number of B's should be same.
+
+584
+01:41:00,020 --> 01:41:03,239
+So, let's try to understand what's going on here.
+
+585
+01:41:03,380 --> 01:41:04,680
+It's kind of complicated.
+
+586
+01:41:05,239 --> 01:41:09,619
+Turing machine graphs are usually quite complicated.
+
+587
+01:41:10,520 --> 01:41:15,480
+Because of that, in later lectures, we will not draw them.
+
+588
+01:41:15,760 --> 01:41:22,520
+We will just write their basic idea or the algorithm they run.
+
+589
+01:41:28,212 --> 01:41:28,731
+Sorry.
+
+590
+01:41:37,587 --> 01:42:03,387
+A Turing machine is the most powerful machine we will see. We will see. It is so powerful that it can represent our current computers or laptops, PCs, whatever program we can write there.
+
+591
+01:42:04,372 --> 01:42:07,171
+Can be accepted by a Turing machine.
+
+592
+01:42:08,171 --> 01:42:09,372
+So they are very powerful.
+
+593
+01:42:11,511 --> 01:42:24,971
+And if a language is not accepted by a Turing machine, we cannot write a computer program that does it, that accepts that language.
+
+594
+01:42:26,591 --> 01:42:28,332
+So they are very powerful.
+
+595
+01:42:30,832 --> 01:42:31,511
+And
+
+596
+01:42:33,268 --> 01:42:51,028
+Also, did you learn what an algorithm is, what an algorithm is in previous classes you took? Daha önce aldığınız derslerde algoritma nedir? Öğrendiniz mi?
+
+597
+01:42:55,188 --> 01:42:57,667
+Algoritmanın bir tanımını verdiler mi size?
+
+598
+01:43:05,076 --> 01:43:25,596
+Vermiş olabilirler ama formal bir tanımı değildir muhtemelen. Yani işte algoritma bir programı yazmadan önce işte o programın ne yapacağını düşünürüz, adım adım yazarız, işte ona algoritma denilir falan gibi bir tarif vermişlerdir muhtemelen.
+
+599
+01:43:29,587 --> 01:43:44,488
+formal bir tanımını vereceğiz. O tanım da çok basit. Bir algoritma, bir Turing machine, Turing makinesi tarafından kabul edilen bir dildir.
+
+600
+01:43:53,876 --> 01:44:12,096
+Bir kısım instructionlara, bir kısım komutlara algoritma dememiz için o komutların bir Turing makinesince kabul edilebilmesi gerekiyor. Dolayısıyla Turing makineleri algoritmayı tamamlamış oluyor.
+
+601
+01:44:15,731 --> 01:44:26,792
+Dolayısıyla Turing makineleri son derece kompleks programları, dilleri kabul edebiliyor.
+
+602
+01:44:27,851 --> 01:44:33,472
+Biraz da grafikleri de o nedenle bayağı kompleks de olabiliyor.
+
+603
+01:44:37,672 --> 01:44:42,492
+O nedenle demeyelim de işte kompleks olabiliyor, bayağı kompleks olabiliyor.
+
+604
+01:44:43,188 --> 01:45:02,868
+Bu nedenle çok basit şeylerin grafiğini çizeceğiz. Biraz daha kompleks programlar için artık çizim yapmayacağız Turing makinelerinde. Ne yapacağız? Algoritmasını yazacağız.
+
+605
+01:45:09,779 --> 01:45:10,279
+OK.
+
+606
+01:45:14,039 --> 01:45:14,619
+Again,
+
+607
+01:45:16,699 --> 01:45:18,539
+let's look at this Turing machine.
+
+608
+01:45:19,699 --> 01:45:25,619
+It accepts this language and let's try to understand how does it accept.
+
+609
+01:45:27,339 --> 01:45:30,839
+Turing machine starts on state Q0.
+
+610
+01:45:32,099 --> 01:45:33,959
+When it reads an A,
+
+611
+01:45:34,931 --> 01:45:42,171
+It writes back an X and moves right and goes to Q1.
+
+612
+01:45:45,171 --> 01:45:48,171
+So, in a way, let's say...
+
+613
+01:45:51,988 --> 01:45:54,368
+MACHINRED and A.
+
+614
+01:45:55,768 --> 01:45:58,568
+And here we have the blank symbol.
+
+615
+01:45:59,948 --> 01:46:02,208
+And let's say MACHINRED and A.
+
+616
+01:46:03,328 --> 01:46:06,088
+It writes X here.
+
+617
+01:46:16,372 --> 01:46:21,891
+and state becomes Q1.
+
+618
+01:46:35,475 --> 01:46:47,395
+And on Q1, if there is a Y or there is an A, it writes them back and moves to the right.
+
+619
+01:46:47,395 --> 01:46:49,855
+So let's say there is an A here.
+
+620
+01:46:53,779 --> 01:46:58,699
+It just comes back to Q1.
+
+621
+01:47:00,420 --> 01:47:04,039
+As long as we have Ys or As.
+
+622
+01:47:05,039 --> 01:47:11,760
+Let's say this was originally A, A, B, B.
+
+623
+01:47:12,340 --> 01:47:18,320
+And let's try to understand what's going on here on this input.
+
+624
+01:47:26,003 --> 01:47:32,224
+Now, it skips these A's and Y's, so we skipped this A.
+
+625
+01:47:34,003 --> 01:47:35,543
+Let me clean this part.
+
+626
+01:47:36,864 --> 01:47:38,583
+And now we have a B here.
+
+627
+01:47:40,123 --> 01:47:52,083
+And if it reaches to a B on stage Q1, it writes Y there.
+
+628
+01:47:53,747 --> 01:47:55,387
+So, we have a why now.
+
+629
+01:48:01,716 --> 01:48:08,716
+ve bu
+
+630
+01:48:08,716 --> 01:48:11,716
+ve
+
+631
+01:48:11,716 --> 01:48:25,003
+bu
+
+632
+01:48:25,460 --> 01:48:30,880
+So, we had AA, AB, so we should have blank here.
+
+633
+01:48:32,060 --> 01:48:33,980
+Now, we are on Q2.
+
+634
+01:48:35,199 --> 01:48:42,319
+Q2, as long as it reads Ys or As, moves to left.
+
+635
+01:48:43,960 --> 01:48:44,619
+Right?
+
+636
+01:48:46,760 --> 01:48:47,372
+Uh...
+
+637
+01:48:51,380 --> 01:48:53,560
+So we have an A here.
+
+638
+01:48:54,140 --> 01:48:55,739
+So we run this.
+
+639
+01:48:56,880 --> 01:48:58,260
+We move to left.
+
+640
+01:49:00,539 --> 01:49:03,800
+State is still Q2.
+
+641
+01:49:04,899 --> 01:49:06,500
+Now Q2,
+
+642
+01:49:07,619 --> 01:49:10,199
+if reads an X,
+
+643
+01:49:10,779 --> 01:49:14,460
+again writes back that X and moves right.
+
+644
+01:49:18,036 --> 01:49:20,036
+But goes to Q0.
+
+645
+01:49:29,876 --> 01:49:31,756
+So what's the situation now?
+
+646
+01:49:34,135 --> 01:49:42,796
+We were here, we came back to A, but state is zero.
+
+647
+01:49:43,555 --> 01:49:45,536
+So this state should be zero now.
+
+648
+01:49:49,939 --> 01:49:54,100
+Now we came back, so there's a loop here, right? There's a loop here.
+
+649
+01:49:57,500 --> 01:50:02,539
+So in a loop, in a way, there is a, you can read this like repeat.
+
+650
+01:50:04,260 --> 01:50:14,859
+Now, here it reads this A and writes X instead of it. So this becomes X.
+
+651
+01:50:16,916 --> 01:50:24,536
+So anyway, it kind of here in this loop replaces A's with X's.
+
+652
+01:50:31,380 --> 01:50:44,819
+It replaces this x, moves to a with x, moves to right, so comes here, and state becomes q1.
+
+653
+01:50:50,452 --> 01:50:57,452
+Let me clean these parts so that it's easier to understand.
+
+654
+01:50:58,952 --> 01:51:00,831
+Let me also clean these.
+
+655
+01:51:05,876 --> 01:51:08,676
+Okay, so we are on Q1 now.
+
+656
+01:51:10,435 --> 01:51:12,456
+And we can read a Y.
+
+657
+01:51:13,595 --> 01:51:18,036
+If we read a Y, we move to R.
+
+658
+01:51:18,155 --> 01:51:19,956
+We don't change the Y.
+
+659
+01:51:21,576 --> 01:51:24,655
+We are still on 1, right?
+
+660
+01:51:26,456 --> 01:51:31,876
+Now here, there is a B, right?
+
+661
+01:51:32,372 --> 01:51:36,992
+So, we go back, we go to Q2, moon left.
+
+662
+01:51:39,452 --> 01:51:41,732
+And we write y there.
+
+663
+01:51:54,420 --> 01:51:55,639
+We were here.
+
+664
+01:51:58,239 --> 01:52:02,439
+So, instead of B, we write Y.
+
+665
+01:52:06,163 --> 01:52:15,103
+Ve move to left, and state is Q2.
+
+666
+01:52:23,731 --> 01:52:26,992
+So, what did we do so far in this loop?
+
+667
+01:52:28,052 --> 01:52:38,052
+We kind of made an A, X, moved to the rightmost B, made that Y.
+
+668
+01:52:38,712 --> 01:52:45,992
+We came back, we made an A, X, we moved to right...
+
+669
+01:52:47,123 --> 01:52:55,183
+ve rightmost, ve moved to the first B, let's say, leftmost B, and make that Y.
+
+670
+01:52:55,323 --> 01:53:02,963
+So, we made, we converted corresponding A's and B's into X's and Y's.
+
+671
+01:53:03,923 --> 01:53:10,763
+So far, that's what we did, or what this Turing machine did.
+
+672
+01:53:12,212 --> 01:53:39,532
+Now, we are here on Q2. We have a Y, so we should move left. And we don't touch Y, so we are here. And we are still on Q2. And we are on Q2, we saw an X.
+
+673
+01:53:40,532 --> 01:53:43,172
+So, we will use this transition.
+
+674
+01:53:44,632 --> 01:53:47,231
+We will move to left or right.
+
+675
+01:53:47,351 --> 01:53:53,652
+So, we come here, come back here, but the state becomes zero, Q0.
+
+676
+01:53:55,372 --> 01:53:57,068
+So, let me...
+
+677
+01:54:04,051 --> 01:54:06,851
+Ok, so we are on Q0.
+
+678
+01:54:08,311 --> 01:54:10,231
+Now we read a while.
+
+679
+01:54:14,452 --> 01:54:36,852
+We move this way. So far, up to this point, we were in this loop, right? So up to this point, we replaced leftmost A with X. We find a corresponding leftmost B and replace with Y.
+
+680
+01:54:39,891 --> 01:54:43,152
+Until there is no more As, right?
+
+681
+01:54:44,412 --> 01:54:52,032
+Since there is no A here now, when we are on Q0, and there is no As,
+
+682
+01:54:54,132 --> 01:55:06,832
+that means this A was, this was a D previously, but this was made Y.
+
+683
+01:55:07,264 --> 01:55:14,304
+So, number of X's and number of B's matched so far.
+
+684
+01:55:17,939 --> 01:55:30,819
+We go to Y, we move to the right as long as we read these Ys, and we accept.
+
+685
+01:55:30,819 --> 01:55:39,939
+So after we get out of this loop reading Y, basically we accept.
+
+686
+01:55:43,764 --> 01:55:47,923
+There are two situations where this may not exist.
+
+687
+01:55:47,923 --> 01:55:49,884
+For example,
+
+688
+01:55:53,779 --> 01:55:56,979
+If there was one more B here.
+
+689
+01:56:02,387 --> 01:56:04,768
+So, B's are more.
+
+690
+01:56:05,987 --> 01:56:13,147
+In this case, when we are on Q3, we will see a B.
+
+691
+01:56:15,327 --> 01:56:24,547
+And since Q3 cannot consume B, machine will halt and reject.
+
+692
+01:56:28,180 --> 01:56:35,579
+There is one way of this machine stops or rejects.
+
+693
+01:56:37,539 --> 01:56:48,979
+Another way this machine can reject is when there are more X's, so there are more A's.
+
+694
+01:56:49,979 --> 01:56:52,139
+So this situation is like this.
+
+695
+01:56:55,828 --> 01:56:58,988
+Let's say we have an A here too.
+
+696
+01:56:59,788 --> 01:57:02,347
+So there are three A's, two B's.
+
+697
+01:57:06,087 --> 01:57:11,788
+So the machine will first make this AX.
+
+698
+01:57:20,884 --> 01:57:22,884
+Then make this B, Y.
+
+699
+01:57:24,324 --> 01:57:29,884
+Then make this X, this A, X, make this B, Y.
+
+700
+01:57:30,884 --> 01:57:35,844
+Now, the machine will make this A, X, right?
+
+701
+01:57:37,844 --> 01:57:39,724
+It will come here.
+
+702
+01:57:42,524 --> 01:57:44,083
+But, um,
+
+703
+01:57:51,112 --> 01:57:56,112
+bu
+
+704
+01:57:50,899 --> 01:58:04,683
+Y'e y
+
+705
+01:58:09,971 --> 01:58:12,471
+And here, there will be a blank symbol.
+
+706
+01:58:13,271 --> 01:58:17,931
+Now, Q1 cannot consume a blank, right?
+
+707
+01:58:18,011 --> 01:58:20,551
+There is no transition for blank.
+
+708
+01:58:21,451 --> 01:58:25,831
+In this case, again, the machine will halt.
+
+709
+01:58:26,971 --> 01:58:31,491
+And since it will halt on Q1, it will reject.
+
+710
+01:58:33,331 --> 01:58:34,051
+Okay.
+
+711
+01:58:34,996 --> 01:58:41,435
+So, do you understand, do you see what algorithm this Turing machine basically does?
+
+712
+01:58:42,636 --> 01:58:53,695
+In a loop, it makes an ax, finds a corresponding b and makes a y, that b y.
+
+713
+01:58:55,296 --> 01:59:01,595
+So, if a's are more, it will not be able to find a b.
+
+714
+01:59:02,804 --> 01:59:10,283
+If these are more, there will be an unprocessed be here.
+
+715
+01:59:25,235 --> 01:59:32,115
+So basic idea here is, basic idea is to match A's with B's.
+
+716
+01:59:32,115 --> 01:59:40,635
+So what we do is we repeat, meaning in a loop, we replace leftmost A with an X.
+
+717
+01:59:41,635 --> 01:59:52,355
+We try to find a leftmost B and replace it with Y until there are no more A's or B's.
+
+718
+01:59:52,756 --> 01:59:56,516
+If there is a remaining A or B, reject.
+
+719
+01:59:57,796 --> 01:59:58,476
+Reject.
+
+720
+02:00:00,116 --> 02:00:04,756
+So that's the algorithm this applies.
+
+721
+02:00:05,156 --> 02:00:11,356
+And here the slide, in fact, the example is same, AABB.
+
+722
+02:00:11,736 --> 02:00:14,076
+The slide goes on the same example.
+
+723
+02:00:14,656 --> 02:00:18,396
+Let's move on it a little faster, quickly.
+
+724
+02:00:19,283 --> 02:00:45,983
+So, makes that X, move there, finds a B, makes it Y, returns back, finds an A, returns back, finds the next A, skips Y, finds the next B, and
+
+725
+02:00:46,515 --> 02:00:47,975
+A, A returns back.
+
+726
+02:00:50,155 --> 02:00:57,675
+Now, instead of A, it sees a while, so it gets out of the loop.
+
+727
+02:00:59,036 --> 02:01:03,796
+There is only y's and blank, so accept.
+
+728
+02:01:07,731 --> 02:01:20,731
+Bir observation is if you modify this machine that we learned a little earlier,
+
+729
+02:01:20,731 --> 02:01:25,731
+we can easily construct a machine for this language.
+
+730
+02:01:25,731 --> 02:01:29,731
+And remember, this was not context-free.
+
+731
+02:01:29,731 --> 02:01:34,572
+So context-free machines cannot accept this.
+
+732
+02:01:34,899 --> 02:01:39,099
+But a Turing machine can easily accept it.
+
+733
+02:01:42,547 --> 02:01:51,547
+So, there is formal, there is a, there is this formal definition for Turing machines.
+
+734
+02:02:03,636 --> 02:02:04,136
+Okay.
+
+735
+02:02:07,136 --> 02:02:08,015
+Let's
+
+736
+02:02:12,756 --> 02:02:14,655
+Should we give a break?
+
+737
+02:02:22,963 --> 02:02:28,043
+Let's not give a break. Let's finish up to machines. It will be too much.
+
+738
+02:02:35,475 --> 02:02:39,695
+Or, let's give a break. Let's give a 10-minute break.
+
+739
+02:02:41,015 --> 02:02:47,496
+We will start at, or 13 minutes. We will start at 11.15.
+
+740
+02:19:49,811 --> 02:19:55,231
+Tekrar merhabalar. Sesim geliyordu umarım.
+
+741
+02:20:00,000 --> 02:20:06,603
+Teşekkürler.
+
+742
+02:20:27,188 --> 02:20:29,448
+Bu slide'da kalmıştık.
+
+743
+02:20:32,884 --> 02:20:49,443
+A üzeri B üzeri C üzeri M. Bir önceki dersimizde bunun context-free olmadığını görmüştük ama şimdi ne gördük? Turing makineleri bunu kabul edebiliyor.
+
+744
+02:20:53,396 --> 02:20:55,396
+İlk makinalar çok düşün.
+
+745
+02:20:55,396 --> 02:21:03,396
+Ok, so let's move on to formal definitions for drink machines.
+
+746
+02:21:03,396 --> 02:21:06,396
+Formal definition.
+
+747
+02:21:06,396 --> 02:21:12,396
+So we have this transition function.
+
+748
+02:21:12,396 --> 02:21:17,396
+And first parameter is a state.
+
+749
+02:21:19,891 --> 02:21:23,011
+The tape symbol that we will read.
+
+750
+02:21:24,551 --> 02:21:31,051
+And the result will be another state or maybe same state.
+
+751
+02:21:34,111 --> 02:21:43,451
+What we write to the tape and the direction, left or right.
+
+752
+02:21:48,020 --> 02:22:00,659
+again this is same thing i think so how many we have here seven right we have seven tuples
+
+753
+02:22:00,659 --> 02:22:09,460
+states input alphabet sigma gamma with say tape alphabet
+
+754
+02:22:11,620 --> 02:22:13,620
+tape alphabet input alphabet
+
+755
+02:22:15,347 --> 02:22:17,507
+Aren't they the same thing?
+
+756
+02:22:26,579 --> 02:22:34,360
+Transition function, initial state, the blank symbol.
+
+757
+02:22:35,319 --> 02:22:37,459
+What do we use for blank?
+
+758
+02:22:38,099 --> 02:22:43,299
+In some books, they use this as blank.
+
+759
+02:22:44,939 --> 02:22:48,920
+So you can use another symbol as blank.
+
+760
+02:22:49,840 --> 02:22:52,860
+And list of accepting states.
+
+761
+02:22:55,796 --> 02:23:13,515
+I need to look at the book to understand what is the, understand the difference between input alphabet and tape alphabet, but it is not really important at this point. You can take a look yourself and see what's the difference.
+
+762
+02:23:15,096 --> 02:23:19,675
+Now, a configuration is this picture.
+
+763
+02:23:24,404 --> 02:23:28,144
+What is there in the tape?
+
+764
+02:23:29,524 --> 02:23:31,884
+What is the current state?
+
+765
+02:23:32,924 --> 02:23:36,844
+And what is the read-write-have-on?
+
+766
+02:23:38,283 --> 02:23:45,164
+This configuration can be written using this instantaneous description.
+
+767
+02:23:46,463 --> 02:23:49,804
+So notice that we have Q1 here.
+
+768
+02:23:49,804 --> 02:23:51,844
+So this is the state.
+
+769
+02:23:54,611 --> 02:24:05,291
+And right after Q1, comes the symbol that Reid-Wright had his own.
+
+770
+02:24:07,771 --> 02:24:10,291
+So in a way, we are kind of...
+
+771
+02:24:16,020 --> 02:24:17,020
+Sorry.
+
+772
+02:24:17,020 --> 02:24:25,020
+We are kind of dividing right here.
+
+773
+02:24:25,020 --> 02:24:31,020
+And this part is written after the state name.
+
+774
+02:24:31,020 --> 02:24:36,020
+This part is written before the state name.
+
+775
+02:24:36,020 --> 02:24:41,020
+And obviously blanks, we don't write them.
+
+776
+02:24:41,020 --> 02:24:42,667
+Blanks are not written.
+
+777
+02:24:47,763 --> 02:25:03,523
+Now, a move, a move is, it shows that from one description, you move to other description.
+
+778
+02:25:03,523 --> 02:25:14,363
+So at time four, this is the situation, Q2.
+
+779
+02:25:14,963 --> 02:25:17,123
+This is the beginning of the input.
+
+780
+02:25:18,404 --> 02:25:22,603
+So the state is at the beginning.
+
+781
+02:25:23,603 --> 02:25:28,884
+And that yields this description.
+
+782
+02:25:28,884 --> 02:25:34,384
+So this instantaneous description yields.
+
+783
+02:25:34,384 --> 02:25:36,524
+You can read that as yield.
+
+784
+02:25:37,184 --> 02:25:39,804
+Yields this description.
+
+785
+02:25:40,864 --> 02:25:41,103
+So.
+
+786
+02:25:41,811 --> 02:25:47,491
+Q0 is on this A, and state is Q0.
+
+787
+02:25:49,131 --> 02:25:49,851
+Like this.
+
+788
+02:25:51,171 --> 02:25:53,092
+And you can continue.
+
+789
+02:25:53,891 --> 02:25:56,771
+So this is the initial description.
+
+790
+02:25:57,171 --> 02:26:02,011
+That yields this, that yields this, that yields this.
+
+791
+02:26:02,011 --> 02:26:07,811
+So these descriptions.
+
+792
+02:26:08,915 --> 02:26:13,675
+Bu şekilde, bu şekilde,
+
+793
+02:26:13,675 --> 02:26:17,915
+bu şekilde,
+
+794
+02:26:17,915 --> 02:26:21,915
+birçok birçok birçok birçok.
+
+795
+02:26:21,915 --> 02:26:26,915
+Bu, birçok birçok birçok.
+
+796
+02:26:26,915 --> 02:26:29,915
+Bu, birçok birçok.
+
+797
+02:26:29,915 --> 02:26:32,747
+Birçok birçok.
+
+798
+02:26:41,108 --> 02:26:46,148
+One short cut notation is this.
+
+799
+02:26:47,028 --> 02:27:05,327
+Instead of showing all these middle descriptions, you get rid of them and you say that starting from this description, using some computation, we can get to this description.
+
+800
+02:27:08,659 --> 02:27:15,039
+And the initial configuration, you would notice that is this way.
+
+801
+02:27:15,860 --> 02:27:23,779
+Initially, the state name is at the beginning and all the input is after that.
+
+802
+02:27:26,520 --> 02:27:32,200
+And the accepted language is somehow
+
+803
+02:27:34,611 --> 02:27:38,072
+The state is some except state.
+
+804
+02:27:39,031 --> 02:27:43,051
+And there might be some string before it.
+
+805
+02:27:43,511 --> 02:27:45,371
+There might be some string after it.
+
+806
+02:27:45,491 --> 02:27:54,912
+But what is important is this state that we see here is an except state.
+
+807
+02:27:54,912 --> 02:28:02,111
+So for any Turing machine M, language of M is a set.
+
+808
+02:28:03,123 --> 02:28:06,123
+Of stringW's such that
+
+809
+02:28:06,123 --> 02:28:11,324
+When we start this description
+
+810
+02:28:11,324 --> 02:28:17,603
+Where we write the initial state and that string
+
+811
+02:28:17,603 --> 02:28:21,923
+We end up in a situation where
+
+812
+02:28:21,923 --> 02:28:25,603
+State is an except state
+
+813
+02:28:29,523 --> 02:28:30,923
+After some computation.
+
+814
+02:28:35,123 --> 02:28:45,384
+Now, if a language L is accepted by a Turing machine M, we say that that language is Turing recognizable.
+
+815
+02:28:46,963 --> 02:28:49,623
+There are other names for this.
+
+816
+02:28:51,684 --> 02:28:55,344
+So sometimes this is called Turing acceptable.
+
+817
+02:28:56,943 --> 02:28:58,824
+Sometimes this is called
+
+818
+02:28:59,347 --> 02:29:03,227
+Recusyumli, recusyumli, enumerable.
+
+819
+02:29:04,628 --> 02:29:06,708
+Recusyumli, enumerable.
+
+820
+02:29:10,308 --> 02:29:15,168
+All three names, you can come across to all of these three names.
+
+821
+02:29:15,948 --> 02:29:16,828
+They are all the same.
+
+822
+02:29:17,688 --> 02:29:20,708
+Just means that this language is Turing recognizable.
+
+823
+02:29:28,308 --> 02:29:31,148
+Any questions from Turing machines?
+
+824
+02:29:32,788 --> 02:29:33,648
+How this works?
+
+825
+02:29:37,652 --> 02:29:38,072
+No?
+
+826
+02:29:43,443 --> 02:29:46,884
+Let's look at some variations of Turing machines.
+
+827
+02:30:07,507 --> 02:30:10,092
+ve
+
+828
+02:30:14,324 --> 02:30:17,484
+This slide starts with Turing's thesis.
+
+829
+02:30:28,244 --> 02:30:38,924
+It says that any computation carried out by mechanical means can be performed by a Turing machine.
+
+830
+02:30:46,324 --> 02:31:03,756
+What does that mean?
+
+831
+02:31:07,219 --> 02:31:19,880
+Anything that happens in our computers can be performed by a Turing machine.
+
+832
+02:31:25,043 --> 02:31:27,824
+So, what do we do in our computers?
+
+833
+02:31:29,984 --> 02:31:36,543
+We write stuff to memory. We read from memory. We change stuff.
+
+834
+02:31:39,224 --> 02:31:44,423
+There are some registers, et cetera, et cetera. We change values of them.
+
+835
+02:31:47,484 --> 02:31:51,364
+All of these can be performed by a Turing machine.
+
+836
+02:31:55,763 --> 02:31:58,963
+And that also gives us a definition for algorithm.
+
+837
+02:32:01,963 --> 02:32:12,644
+So if an algorithm, so an algorithm for a problem is a Turing machine which solves the problem.
+
+838
+02:32:16,404 --> 02:32:39,204
+How does that mean? So an algorithm describes the steps of the mechanical means. So what do we do in mechanical terms? But those mechanical steps can easily be translated to Turing machine computation steps.
+
+839
+02:32:43,092 --> 02:32:56,112
+As a result, when we say there exists an algorithm for this problem, we mean there exists a Turing machine that executes that algorithm.
+
+840
+02:33:00,308 --> 02:33:08,008
+So, algorithm, execution of Turing machine, they are the same thing, very important.
+
+841
+02:33:10,968 --> 02:33:24,328
+There are some variations of the Turing machines, and they all have the same power, meaning set of languages they accept is same.
+
+842
+02:33:28,115 --> 02:33:30,876
+First, let's define a standard model.
+
+843
+02:33:32,576 --> 02:33:39,896
+Let's review the standard model because we will see variations of this.
+
+844
+02:33:41,275 --> 02:33:47,136
+In the standard model, there is an infinite tape.
+
+845
+02:33:47,136 --> 02:33:53,675
+It's infinite in both sides, in left and right.
+
+846
+02:33:54,868 --> 02:33:56,868
+ReadWriteHat
+
+847
+02:33:56,868 --> 02:34:15,948
+İlk adı
+
+848
+02:34:17,075 --> 02:34:20,915
+There is a Deterioristic Control Unit.
+
+849
+02:34:21,396 --> 02:34:22,615
+So this is standard.
+
+850
+02:34:30,675 --> 02:34:35,876
+Now, we will some variations.
+
+851
+02:34:38,395 --> 02:34:45,835
+We will see stay options, semi-infinite, multi-dimensional, and non-deterministic.
+
+852
+02:34:46,955 --> 02:34:50,155
+These are different print machine classes.
+
+853
+02:34:53,435 --> 02:34:55,915
+For all of these classes,
+
+854
+02:34:57,843 --> 02:35:00,843
+We will say that they have the same power.
+
+855
+02:35:02,103 --> 02:35:04,343
+When we say same power,
+
+856
+02:35:05,563 --> 02:35:11,484
+when we say two machine classes have same power,
+
+857
+02:35:12,123 --> 02:35:13,223
+that means
+
+858
+02:35:13,223 --> 02:35:17,623
+these classes of machines
+
+859
+02:35:17,623 --> 02:35:21,324
+accept the same set of languages,
+
+860
+02:35:22,283 --> 02:35:24,423
+exactly the same set of languages.
+
+861
+02:35:26,420 --> 02:35:37,619
+So, for each new variation, we will need to prove that that new class has the same power with the standard Turing machine.
+
+862
+02:35:38,900 --> 02:35:45,959
+So, they accept three, they accept the set of Turing recognizable languages.
+
+863
+02:35:51,603 --> 02:36:13,863
+If we say this in more mathematical terms, when we say two machine classes have the same power, that means for any machine M1 in the first class, there is a machine M2 in the second class.
+
+864
+02:36:16,724 --> 02:36:35,084
+M1'in m2'
+
+865
+02:36:38,932 --> 02:36:48,292
+So, for each machine M2 of second class, there is a machine M1 in the first class with the same language.
+
+866
+02:36:50,292 --> 02:36:50,972
+Now,
+
+867
+02:36:55,092 --> 02:37:06,212
+When we want to prove the fact that they have same power, we will use a technique called simulation.
+
+868
+02:37:09,971 --> 02:37:16,211
+We will simulate the machine of one class with the machine of the other class.
+
+869
+02:37:19,211 --> 02:37:25,811
+Let's say in the first class, you have a machine M1.
+
+870
+02:37:27,691 --> 02:37:33,432
+M1 is represented by this, let's say, this rectangle.
+
+871
+02:37:35,476 --> 02:37:46,195
+Now, in the second class, using the second class's properties, we will create a machine M2.
+
+872
+02:37:50,636 --> 02:37:57,756
+But that M2 somehow will simulate M1.
+
+873
+02:37:58,476 --> 02:38:00,076
+What does simulate mean?
+
+874
+02:38:00,495 --> 02:38:02,495
+It will do the same thing.
+
+875
+02:38:03,667 --> 02:38:23,147
+So if M1 reads a symbol and writes a symbol, M2 will read that symbol and write that symbol, et cetera. It will do the same thing. It will simulate what M1 does. It will simulate M1.
+
+876
+02:38:26,387 --> 02:38:29,387
+Now, to be more specific,
+
+877
+02:38:30,131 --> 02:38:57,131
+M1'in
+
+878
+02:38:58,004 --> 02:39:04,963
+M2, the new machine, will be same as the configurations of M1.
+
+879
+02:39:05,304 --> 02:39:08,764
+We will see same instantaneous descriptions.
+
+880
+02:39:11,884 --> 02:39:21,384
+Somehow same or somehow similar, it will correspond to those descriptions.
+
+881
+02:39:24,404 --> 02:39:29,404
+If in the original machine there is an accepting state,
+
+882
+02:39:35,572 --> 02:39:39,952
+Arkadaşlar, in the simulation machine, again, there will be an accepting state for that.
+
+883
+02:39:40,531 --> 02:39:47,311
+Arkadaşlar, we will say that language of M1 is same as language of M2.
+
+884
+02:39:51,092 --> 02:40:05,592
+The first such variation is called stay option, Turing machines with stay option or stay option Turing machines.
+
+885
+02:40:06,932 --> 02:40:15,311
+In this variation of a Turing machine, the head can stay in the same position.
+
+886
+02:40:16,147 --> 02:40:27,747
+So, in addition to left and right, there is an option to stay on the same place for head moves.
+
+887
+02:40:31,507 --> 02:40:32,507
+As an example,
+
+888
+02:40:42,804 --> 02:41:00,004
+If we are on Q1, we can read A, write B, and instead of going right or left, we can stay on this position.
+
+889
+02:41:01,004 --> 02:41:04,404
+So we will write S there for stay.
+
+890
+02:41:06,504 --> 02:41:07,603
+Now,
+
+891
+02:41:09,332 --> 02:41:18,632
+The theorem says, these stay-option machines have the same power with standard machines.
+
+892
+02:41:19,812 --> 02:41:27,632
+And to prove that, we will go through two steps.
+
+893
+02:41:27,632 --> 02:41:30,711
+In the first step,
+
+894
+02:41:31,379 --> 02:41:37,899
+We will show that stay option machines can simulate standard Turing machines.
+
+895
+02:41:39,459 --> 02:41:47,259
+And in the second step, standard Turing machines can simulate stay option machines.
+
+896
+02:41:48,899 --> 02:41:51,259
+Now, in the first step,
+
+897
+02:41:54,500 --> 02:41:57,355
+showing stay option machines
+
+898
+02:41:57,811 --> 02:42:01,592
+Can simulate standard Turing machines is unnecessary.
+
+899
+02:42:01,592 --> 02:42:10,471
+This is trivial because stay option machines has something additional, right?
+
+900
+02:42:10,992 --> 02:42:15,191
+It has everything that standard Turing machines have.
+
+901
+02:42:15,851 --> 02:42:19,351
+Additionally, it has a stay option.
+
+902
+02:42:20,351 --> 02:42:23,171
+So that means any...
+
+903
+02:42:23,860 --> 02:42:30,600
+Standard Turing machine is also a Stay Option Turing machine.
+
+904
+02:42:31,319 --> 02:42:33,479
+So this case is trivial.
+
+905
+02:42:33,680 --> 02:42:36,280
+We will not talk on this anymore.
+
+906
+02:42:38,260 --> 02:42:44,479
+Now the second case, Standard Turing machine can simulate Stay Option machine.
+
+907
+02:42:45,280 --> 02:42:47,420
+So what is the difference here?
+
+908
+02:42:48,940 --> 02:42:50,740
+Stay Option machines
+
+909
+02:42:51,219 --> 02:42:53,219
+bir şey var.
+
+910
+02:42:53,219 --> 02:43:18,923
+Bir şey var.
+
+911
+02:43:19,572 --> 02:43:24,572
+with stay option using the standard machine.
+
+912
+02:43:24,572 --> 02:43:33,012
+And for that, we will add these transitions.
+
+913
+02:43:33,012 --> 02:43:44,572
+For every possible tape symbol X, what will we do?
+
+914
+02:43:47,123 --> 02:44:09,644
+We will add this translation. We will add a new state. So let's say when we are on Q1, when we read A, we write B, we stay at the same place and we move to state Q2.
+
+915
+02:44:11,644 --> 02:44:13,743
+How do we simulate that?
+
+916
+02:44:19,603 --> 02:44:22,363
+We start with Q1 again.
+
+917
+02:44:23,363 --> 02:44:26,363
+The end for Q2 again.
+
+918
+02:44:30,923 --> 02:44:34,043
+We will add new states.
+
+919
+02:44:35,523 --> 02:44:37,843
+Intermediate states.
+
+920
+02:44:38,723 --> 02:44:39,644
+And.
+
+921
+02:44:41,923 --> 02:44:45,644
+What will we do when we are on Q1?
+
+922
+02:44:49,043 --> 02:44:55,852
+ve
+
+923
+02:45:01,523 --> 02:45:02,644
+Ve saw a mail.
+
+924
+02:45:05,603 --> 02:45:07,123
+Ve ve are here.
+
+925
+02:45:11,028 --> 02:45:26,087
+B, solenli. We write B, so we will write B here, instead of this A. We will move to left. So we will move to left.
+
+926
+02:45:31,860 --> 02:45:36,060
+And state will be Q. Here state will be Q.
+
+927
+02:45:39,260 --> 02:45:39,860
+Q1.
+
+928
+02:45:41,540 --> 02:45:47,500
+And here some additional state. I will just write Qx here.
+
+929
+02:45:48,700 --> 02:45:49,540
+Qx.
+
+930
+02:45:52,371 --> 02:45:58,611
+And now here, there can be some other, some other symbol.
+
+931
+02:45:58,951 --> 02:46:02,592
+There can be A, B, C, whatever in the alphabet.
+
+932
+02:46:03,451 --> 02:46:13,531
+Any possible value is, any, any, any, any symbol in the, any symbol in the alphabet is here.
+
+933
+02:46:14,572 --> 02:46:16,072
+Let's say there is X.
+
+934
+02:46:18,772 --> 02:46:29,172
+For all, for every possible tape symbol X, whatever can be here, we need to add this transition.
+
+935
+02:46:29,632 --> 02:46:35,500
+We will say, we will read X, write it back, and then...
+
+936
+02:46:38,804 --> 02:46:59,275
+...
+
+937
+02:47:06,355 --> 02:47:06,716
+Ah.
+
+938
+02:47:16,884 --> 02:47:19,684
+If the tape alphabet is, let's say, AB,
+
+939
+02:47:29,907 --> 02:47:32,687
+Here we will have two transitions.
+
+940
+02:47:34,547 --> 02:47:35,667
+For A.
+
+941
+02:47:39,860 --> 02:47:49,360
+Muz sorun yapıyor. E'yi okuduğum zaman E'yi yaz.
+
+942
+02:47:54,515 --> 02:47:56,056
+Sadece ek olarak
+
+943
+02:47:59,572 --> 02:48:01,691
+B için de bunu yazmamız lazım.
+
+944
+02:48:02,792 --> 02:48:13,371
+Yani sola gittiğimizde orada olabilecek tüm semboller için, yeniden sağa dönebilmemiz için, her biri için bu transition'ları eklememiz lazım.
+
+945
+02:48:14,191 --> 02:48:19,652
+Dolayısıyla B'yi gördüğümüzde yine B yaz.
+
+946
+02:48:19,652 --> 02:48:21,432
+So when we write B'yi.
+
+947
+02:48:22,004 --> 02:48:28,584
+When we read, we write back it and again move to right and the state will be Q2.
+
+948
+02:48:29,244 --> 02:48:44,804
+So a step-option machine with this transition can be simulated with these additional transitions.
+
+949
+02:48:48,247 --> 02:48:54,247
+...
+
+950
+02:48:47,219 --> 02:48:50,099
+and these additional states.
+
+951
+02:48:58,036 --> 02:49:01,795
+And for other transitions, nothing changes.
+
+952
+02:49:02,795 --> 02:49:06,195
+For left, we already have a corresponding left.
+
+953
+02:49:08,755 --> 02:49:11,315
+As an example of simulation,
+
+954
+02:49:13,315 --> 02:49:18,635
+we start with this description, with this description,
+
+955
+02:49:19,635 --> 02:49:24,876
+and we end up with this description.
+
+956
+02:49:25,427 --> 02:49:31,027
+A changed to B, but the machine stayed on the same place.
+
+957
+02:49:32,247 --> 02:49:39,427
+For that, to simulate that, we can start with the same description.
+
+958
+02:49:41,207 --> 02:49:52,167
+We end up with the same last description, but in between, in the standard machine, we have to go through this middle description.
+
+959
+02:49:56,115 --> 02:49:59,275
+And that's end of proof.
+
+960
+02:50:01,275 --> 02:50:02,636
+Let's finish here.
+
+961
+02:50:03,695 --> 02:50:09,275
+Up to this point, up to this point, everything is included in the class.
+
+962
+02:50:09,275 --> 02:50:14,815
+So stay option machines are included in the exam.
+
+963
+02:50:15,036 --> 02:50:16,976
+Sorry, in the second exam.
+
+964
+02:50:18,216 --> 02:50:19,175
+Bugün burada bitirelim.
+
+965
+02:50:20,456 --> 02:50:22,695
+Bu slide a kadar.
+
+966
+02:50:23,252 --> 02:50:28,891
+Yani stay option makineleri sınava dahil.
+
+967
+02:50:32,332 --> 02:50:34,832
+Gördüğünüz her şey sınava dahil.
+
+968
+02:50:35,752 --> 02:50:39,072
+Gelecek hafta saat 9'da başlayacak sınavımız.
+
+969
+02:50:39,252 --> 02:50:42,072
+Online Yıldız Edyo TR'den yine erişebilirsiniz.
+
+970
+02:50:43,351 --> 02:50:45,432
+Yine geçen haftaki gibi
+
+971
+02:50:47,443 --> 02:51:09,923
+Geçen sınavdaki gibi test yapmayı ve yine sınav başlangıcıyla sizin bitirişiniz arasındaki zamanı, zamanın bir kat sayıyla çarpımını, aldığınız ham puanın bir kat sayıyla çarpımını da çıkarmayı düşünüyorum.
+
+972
+02:51:10,963 --> 02:51:12,344
+Hiçbir şey kesin değil.
+
+973
+02:51:12,832 --> 02:51:17,072
+Kesin durumu sınavda görünce görürsünüz.
+
+974
+02:51:17,872 --> 02:51:22,472
+Hocam, o puan hesaplaması sizce ne kadar doğru oluyor?
+
+975
+02:51:22,632 --> 02:51:28,572
+Çünkü bazen kopya çekerken daha hızlı çözmüş oluyorsunuz, kendiniz çözsünüz, daha hızlı soruyor.
+
+976
+02:51:29,711 --> 02:51:33,051
+Ama sorular karmaşık geliyor ve geriye dönüş hakkı yok.
+
+977
+02:51:37,075 --> 02:51:43,075
+Öyle ama mesela kağıtta siz sonuca soruyu kağıda geçirip çözmeye çalıştığınızda daha fazla zaman kaybediyorsunuz.
+
+978
+02:51:44,275 --> 02:51:50,435
+Yani sınavın belirtilen süresi aslında ancak sınavı düzgün çözebilmek için yeterli oluyor.
+
+979
+02:51:50,435 --> 02:51:56,575
+Bir yandan da diğerleri mesela gruplar halinde çözdüğünde daha hızlı çözülmüş oluyor.
+
+980
+02:51:57,095 --> 02:52:01,235
+O yüzden de siz gerçekten çözdüğünüz zaman o zaman size haksızlık olmuş oluyor.
+
+981
+02:52:05,587 --> 02:52:09,108
+Böyle bir şey olduğu bilginiz var mı? Duyumunuz?
+
+982
+02:52:12,147 --> 02:52:20,727
+Yani hocam, bunu size yüzde yüz ben söylemem. Nasıl söyleyebilirim? Ama ben kendim...
+
+983
+02:52:20,727 --> 02:52:33,324
+Söylemenize gerek yok. Yani böyle bir şey olup olmadığı bilgisini istiyorum sana. Yoksa hadi [öğrenci] gel, kimdir bunlar? Bunun bir şey onun peşine...
+
+984
+02:52:33,843 --> 02:52:38,063
+Çünkü onun sonucu çıkmıyor zaten ya. Onun peşine gitmem.
+
+985
+02:52:39,443 --> 02:52:49,263
+Yani hocam çünkü şey, gerçekten oturup çözdüğümüzde ben mesela önce kağıdı yazıyorum soruyu, sonra çözmeye çalışıyorum. O zaman yani zaman kayboluyor.
+
+986
+02:52:51,507 --> 02:52:53,407
+Zamanı bol verdim aslında.
+
+987
+02:52:53,988 --> 02:53:03,547
+Yok, zamanı bol verdiniz ama biz o zamana göre hepsini çözmeye çalıştığımızda şey oluyor, daha önce bitirenler daha onda olmuş oluyor.
+
+988
+02:53:04,768 --> 02:53:11,087
+Yani hocam birisi on dakikada sınavı nasıl bitirebilir ki? Yani o nasıl oluyor? Ben anlamıyorum.
+
+989
+02:53:11,087 --> 02:53:17,047
+Yani ya da çok zeki bir insan, iki yüz IQ'su var, hızlı çözüyor, çok hızlı çözüyor.
+
+990
+02:53:17,407 --> 02:53:19,207
+Çünkü ben öyle çözemiyorum mesela.
+
+991
+02:53:21,207 --> 02:53:23,087
+Tekrar alanlar da vardır müziği.
+
+992
+02:53:24,288 --> 02:53:28,967
+[kişisel bilgi]
+
+993
+02:53:31,147 --> 02:53:37,167
+Zaten soruları şimdi sözel de yanlış hatırlamıyorsam yani okuyup işaretleyecek.
+
+994
+02:53:38,647 --> 02:53:40,667
+Kaç tane sözel olmayan soru vardı ki?
+
+995
+02:53:41,907 --> 02:53:44,867
+Sizmetler de bence de çok şey, aşırı hızlı yani.
+
+996
+02:53:46,291 --> 02:53:47,467
+Ö
+
+997
+02:53:53,203 --> 02:54:01,203
+Burada tabii mükemmel bir şey mümkün değil. Kötünün iyisini bulmaya çalışıyoruz. Yani ben çalışıyorum değilim.
+
+998
+02:54:01,203 --> 02:54:11,203
+Bu uygulamayla başlattım. Çok fazla da ağırlık vermiyorum. Maksimum 20 puan gidiyor.
+
+999
+02:54:11,203 --> 02:54:20,203
+Dolayısıyla ve biraz da çokça veriyorum. Mesela 70 dakika verdim geçen.
+
+1000
+02:54:20,244 --> 02:54:38,103
+Sınavı ama aslında bu otuz kırk dakikalık bir sınavdı. Yani bolca da vakitte verdim, bayağı bol vakit verdim. Yani normal bir öğrenciden çok fazla puanın gideceğini düşünmüyordum.
+
+1001
+02:54:41,075 --> 02:55:05,115
+Öbür türlü de şey oluyor, millet işte şey yapıyor, soruları geçiyor. İşte zaten screenshot almak falan kolay, grup kurmak falan da kolay, Zoom'dur falan. Öncelikle soruları hepsi bir üzerinden geçip, fikir birliğine varıp her sorudan son 10 dakikada hepsi birden öğrencilerin.
+
+1002
+02:55:06,131 --> 02:55:09,131
+İşaretliyor. Böyle çok fazla böyle gruplar var.
+
+1003
+02:55:13,971 --> 02:55:39,772
+Evet. Yani geçen yıllarda bunu gözlemledim ben. O zaman da öyle oluyor. Yani esasen bana bırakılsa bu işi yapmam. Yani online sınav yapmam. Ama sınavlar online olacak dememde.
+
+1004
+02:55:40,884 --> 02:55:43,664
+Bu nedenle öyle bir şey yapıyoruz.
+
+1005
+02:55:44,743 --> 02:55:45,324
+Anladım hocam.
+
+1006
+02:55:48,304 --> 02:55:51,824
+Hızlı bitirenlere ekse puan veriliyor mu demiş [öğrenci].
+
+1007
+02:55:53,664 --> 02:55:56,783
+Yani daha az puan kesildiği için avantajı oluyor.
+
+1008
+02:55:56,903 --> 02:56:02,703
+Yani eksadan bir puan verilmiyor da, şimdi 70 dakikada bitirenden 20 puan kesiliyor.
+
+1009
+02:56:04,243 --> 02:56:07,063
+8 dakikada bitirenden 8 bölü 70.
+
+1010
+02:56:07,796 --> 02:56:14,236
+Çarpı 20 puan kesiliyor. Doğru mu söyledim? Doğru söyledim böyle mi?
+
+1011
+02:56:19,355 --> 02:56:21,315
+Yani geçen öyle yapmıştım.
+
+1012
+02:56:22,796 --> 02:56:33,315
+Burada birazcık şeyi sağlamaya çalışıyorum ama bilmiyorum yani en azından şey gördüm hani 8 dakikadan 70 dakikaya kadar.
+
+1013
+02:56:34,388 --> 02:56:55,368
+Her türlü şeyi var, bitirme zamanı var. Öyle habire insanları bitirip, hep beraber bekleyip, bekleyip işaretlememişler. Her not da var. Yani bir tık daha iyi olabilir gibi geldiği için bu uygulamaya devam edeceğim.
+
+1014
+02:56:57,128 --> 02:56:59,087
+Hocam, bir şey de söyleyebilir miyim?
+
+1015
+02:56:59,468 --> 02:57:00,048
+Tabii, buyurun.
+
+1016
+02:57:00,595 --> 02:57:20,775
+Siz galiba mail atmışsınız ama benim gibi bazı diğer arkadaşlara o mail ulaşmamış. Ne postayı falan inceledim, gelmemiş bana. Gruba da sordum, benden başka diğer en az beş kişiye de bu şekilde ulaşmamış.
+
+1017
+02:57:22,916 --> 02:57:26,956
+O sistem şu anda hala mail göndermeye çalışıyor.
+
+1018
+02:57:27,763 --> 02:57:29,644
+Ekran paylaşımı yapayım size.
+
+1019
+02:57:32,123 --> 02:57:36,703
+Geçen bu dersini başında, ders arasında göndermiştim.
+
+1020
+02:57:40,308 --> 02:57:42,548
+Yani bu sistemi böyle yapmışlar.
+
+1021
+02:57:45,247 --> 02:57:49,788
+Normalde, yani beklersen gelebilir size.
+
+1022
+02:57:50,608 --> 02:57:52,548
+Bu pencereyi kapatmayı düşünmüyorum ben.
+
+1023
+02:57:54,388 --> 02:57:55,968
+Kendisi bakalım çalışsın.
+
+1024
+02:57:56,828 --> 02:57:58,548
+Size en üst sıra gelmemiş olabilir.
+
+1025
+02:57:58,747 --> 02:58:01,508
+Yani bunu arkada döngü içinde gönderiyordur.
+
+1026
+02:58:03,288 --> 02:58:05,848
+Dolayısıyla muhtemelen gelecektir size.
+
+1027
+02:58:06,388 --> 02:58:20,988
+Hiç gelmezse, mesela bunu ben kapatmam, yarın hala gelmedi. O zaman bilgi işleme başvurmanızı tavsiye ediyorum. Bana mailler gelmiyor, neden diye bir araştırırım.
+
+1028
+02:58:28,308 --> 02:58:29,268
+Amin, hocam. Seçkildim.
+
+1029
+02:58:29,927 --> 02:58:33,188
+Rica ederim. Başka soru var mı bu konuyla ilgili?
+
+1030
+02:58:37,332 --> 02:59:03,992
+Peki, haftaya görüşmeyiz herhalde. Başarılar dilerim sınavınızda. Bir sonraki hafta son bir dersimiz olur. Ondan sonra da zaten finalimiz olacak. Finali de umarım yüz yüze yaparız. Biraz daha adil bir notlama olur diyorum. Hepinize iyi haftalar diliyorum.
+
+1031
+02:59:04,564 --> 02:59:05,704
+Görüşünüz mü arkadaşlar.
