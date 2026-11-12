@@ -1,0 +1,1211 @@
+1
+00:00:16,948 --> 00:00:23,188
+Evet, biraz bekliyorum şey olsun diye, herkes gelsin diye.
+
+2
+00:00:57,107 --> 00:01:01,187
+Evet, 38 kişi var. Tamam, buradan devam ediyorum.
+
+3
+00:01:02,927 --> 00:01:05,007
+Şimdi, şöyle yapalım.
+
+4
+00:01:11,700 --> 00:01:21,060
+Önce şöyle yapayım o zaman daha gözümüzün önünde olsun. Şuraya bir örnek üzerinden zaten yapacağım ki görün.
+
+5
+00:01:31,475 --> 00:01:49,656
+4 tane eşya varmış. Ağırlıkları da 2, 1, 3, 2 kilo. Değerleri 12 lira, 10 lira, 20 lira, 15 lira. Ve bizim nefseyimizin ağırlığı da 5 kiloymuş.
+
+6
+00:01:49,656 --> 00:01:57,156
+Şimdi onun için o zaman, şimdi önce bir şuralara falan yapayım da yerimiz kalsın takım işler için.
+
+7
+00:01:57,843 --> 00:02:03,603
+0, 1, 2, 3
+
+8
+00:02:03,603 --> 00:02:06,603
+bir de şuraya yapacağım demek ki 4
+
+9
+00:02:10,548 --> 00:02:16,716
+3, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+10
+00:02:46,419 --> 00:03:14,419
+Şimdi bu benim P matrisim. Şöyle gidiyor tekrardan. İ'ler böyle gidiyor, itemler. V'ler böyle gidiyor, ağırlıklar. Ağırlıklar şeyi gösteriyor. O anki yani birebir noktası şey gösteriyor. Birinci item'a yani birinci item'a dahil olmak üzere birinci item'a kadar olan durum ve bir kiloyu, toplam bir kilo yük varken. Mesela şurası ikinci item'da toplam dört kilo yük var.
+
+11
+00:03:14,419 --> 00:03:22,819
+4 kilo yük varkenki kazancı gösteriyor. Yani P-I-J, P-I-V veya neyse, şeyi gösteriyor, bu durumu gösteriyor.
+
+12
+00:03:22,819 --> 00:03:42,019
+Şimdi şunu düşünelim. Sayı olarak söyleyeceğim. Diyelim ki ben item 1'i aldım. O zaman benim toplam ağırlığım 2 kilo şu anda. Toplam volume da 12 lira.
+
+13
+00:03:42,580 --> 00:03:55,680
+Şimdi item 2'yi alırsam toplam ağırlığım ne olacak? 3 kilo olacak. Toplam value ne olacak? 22 lira olacak değil mi? Bu olay budur.
+
+14
+00:03:58,060 --> 00:04:05,920
+Doğru mu arkadaşlar? 3'ü alırsam toplam ağırlığım 6 olacak.
+
+15
+00:04:08,500 --> 00:04:16,139
+şeyimde nedir, kazancımda 42 olacak. Peki, 1 ve 2 varken 3'ü alabilir miyim sizce?
+
+16
+00:04:23,411 --> 00:04:26,031
+Alabilir miyim? Bakın toplam ağırlık 5 kilo.
+
+17
+00:04:26,031 --> 00:04:27,831
+Alamayın hocam 6 kilo alıyor çünkü.
+
+18
+00:04:28,231 --> 00:04:33,551
+Harika. Bu sırt çantası maksimum 5 kilo taşıyor.
+
+19
+00:04:33,551 --> 00:04:42,551
+Tamam mı? Dolayısıyla ben 1 ve 2 varken çantada 3'ü alamam. Olay bu.
+
+20
+00:04:42,944 --> 00:05:08,903
+O zaman şimdi demek ki iki tane durum var. Hani burada şey dedik ya, 0-1 nevsek dedik, abandon veya select yani ya şeyi alacağım, eşyayı alacağım ya da vazgeçeceğim. İki tane durumum var. Şimdi o zaman bu iki durumun keyzlerini bir yazalım. Bu keyzleri yazarken aslında şimdi rekürans bağıntısını yazmış olacağız.
+
+21
+00:05:09,747 --> 00:05:11,067
+Mesela...
+
+22
+00:05:17,204 --> 00:05:45,036
+İkinci durumumuz şeyin, hırsızın iyinci ayetimi aldığı durum. Şimdi iyinci ayetimi aldığında ne oluyor aslında? PI ve iyinci ayetimi aldığındaki durum yani bu ayetim, bu da toplam weight aslında yani onu aldığındaki toplam weight.
+
+23
+00:05:45,043 --> 00:05:48,503
+Şimdi, bu neye eşit aslında?
+
+24
+00:05:49,423 --> 00:05:51,443
+i-1. item'da
+
+25
+00:05:57,812 --> 00:06:00,692
+Şeyin olduğu duruma eşit nedir?
+
+26
+00:06:02,292 --> 00:06:10,271
+İyince aytım yokken ki ağırlık neyse, onun olduğu durum artı ve iyiye eşit.
+
+27
+00:06:12,192 --> 00:06:16,112
+Yani bakın şöyle, şimdi şuradan göstereyim size.
+
+28
+00:06:17,331 --> 00:06:20,711
+Varsayalım ki üçüncü aytımı alabiliyor olsa idik.
+
+29
+00:06:25,459 --> 00:06:35,459
+6 diyecektik. Çünkü 3. item'ı aldığımızda toplam kilo 6 kilo olmuş olacaktı. Neye eşit olacaktı?
+
+30
+00:06:51,923 --> 00:06:55,204
+20 lirayı eklediğimiz durum. Yani şunu demek istiyorum.
+
+31
+00:06:58,024 --> 00:07:01,564
+Bir önceki durum, ikinci aytın varkenki durum. Doğru mu?
+
+32
+00:07:02,324 --> 00:07:05,824
+Bir önceki durum dediğim şey, ikinci aytın varkenki durum.
+
+33
+00:07:05,824 --> 00:07:10,824
+Bir önceki şey de, kiloda...
+
+34
+00:07:11,411 --> 00:07:27,111
+Bir önceki toplam kiloda, üçüncü item'ı eklemeden önceki kilo, üçüncü item üç kilo olduğuna göre, üçüncü item üç kilo olduğuna göre, onu eklemeden önce benim ağırlığım sırt çantasında üç kiloymuş.
+
+35
+00:07:28,111 --> 00:07:30,411
+Değer de, üçüncü item'ın...
+
+36
+00:07:30,836 --> 00:07:43,735
+Bu, değer eklenince olan toplam değer, yani eğer benim bir 6. sütunum olabilseydi, yani toplam ağırlığım diyelim ki 10 olsaydı alabileceğim, bu bu şekilde belirlenecekti.
+
+37
+00:07:44,096 --> 00:07:45,075
+Yani bu ne demek?
+
+38
+00:07:46,956 --> 00:07:53,635
+i ve i-1. durum, yani o item alınmadan önceki durumdaki
+
+39
+00:07:54,067 --> 00:08:17,067
+o item'ın ağırlığından, o alınmadığı için onun ağırlığı yok. O anki duruma bu item'ın değerini eklediğimde elde ettiğim durum. Bu anlaşıldı mı? Bir kere daha söyleyeyim mi? Bakın şöyle bir kere daha söylüyorum. Diyelim ki item 1'i aldınız. 2 kilo ve 12 liranız var. Item 2'yi alınca...
+
+40
+00:08:17,363 --> 00:08:33,043
+ne olacak? 3 kilo ve 22 liranız olacak. Yani şu PI-1 dediği bu item 1'i, pardon özür dilerim yanlış söyledim.
+
+41
+00:08:33,043 --> 00:08:42,443
+Şöyle düzeltiyorum. PI-1 dediği şu item 1'den bahsediyorum.
+
+42
+00:08:42,868 --> 00:08:55,428
+V-Vi dediği, o sırada 2 kiloydu elimdeki yük, o sırada 2 kiloydu. Yani şey var elimde, 2 kilo ağırlık var.
+
+43
+00:08:56,788 --> 00:09:06,508
+Ve Pi-1V-Vi yani şu değer 12'ye eşitti. Oldu mu?
+
+44
+00:09:07,475 --> 00:09:11,995
+Birinci itemdayken, 2 kilo yüküm varken 12 lira kazancım vardı.
+
+45
+00:09:13,495 --> 00:09:23,235
+Buna şeyi de ekleyince, bu ikinci itemin 10 şeyini de ekleyince, lirasını da ekleyince 22 lira kazancım oldu.
+
+46
+00:09:23,995 --> 00:09:31,895
+Toplam ağırlığımda 3 kilo oldu. Yani P2-3 eşittir 22 oldu. Bu anlaşıldı mı?
+
+47
+00:09:34,515 --> 00:09:36,775
+Hocam, anlaşıldı ama ben bir şey sorabilir miyim?
+
+48
+00:09:37,235 --> 00:09:37,915
+Sorabilirsin.
+
+49
+00:09:38,795 --> 00:09:44,515
+Dört tane itemimiz olmasına rağmen neden beşe beşlik matrizi oluşturmuştuk?
+
+50
+00:09:45,415 --> 00:09:51,275
+Çok güzel. Sıfır başlangıç durumunu gösteriyor. Ekleye ekleye gideceğiz ya, başlangıç durumu sıfır.
+
+51
+00:09:52,295 --> 00:09:59,995
+Sıfıra ekleriz ya, ed yaparken, normalde toplama yaparken sıfıra üzerine ekleye ekleye gideriz ya, yani şurası sıfır oldu.
+
+52
+00:10:00,000 --> 00:10:19,200
+Başlangıç durumu sıfır ekleyebilmek için. Güzel bir soru. Anlaşıldı mı arkadaşlar bu kısmı? Yani bir önceki durumdaki ağırlığımıza, yeni ağırlığımızı ekleyeceğiz. Burayı sildim çünkü burayı kullanmak istiyorum. Böyle kargaşa yaşanmasın. Bu sayfada görün istiyorum.
+
+53
+00:10:24,052 --> 00:10:32,932
+Bir önceki duruma ekliyoruz. Yani o zaman şunu da silersem şöyle
+
+54
+00:10:37,107 --> 00:10:50,387
+Şu benim item'ım, şu da weight'im ise, eğer ben eşyayı alırsam, bir önceki durumdaki ağırlığıma, inci ağırlığı eklemiş olacağım.
+
+55
+00:10:50,387 --> 00:10:54,527
+Ve bir önceki durumdaki kazancım P.
+
+56
+00:10:55,347 --> 00:11:15,127
+Profit P matrisindeki değeri göster, gösteriyor bir önceki durumdaki kazancı. Ona da iyinci eşyanın kazancını eklemiş olacağım. Alırsam durumum bu. Şimdi bu anlaşıldıysa ikinci duruma geçiyorum. İkinci durumda almazsam olacak durum.
+
+57
+00:11:31,379 --> 00:11:56,779
+Almazsam olacak olan durum. Şimdi o zamana bakalım, almazsam bir şey değişecek mi? Yani almama neden oldu? Mesela şurada gördünüz, 3'ü alamam ben. Çünkü 3'ü alırsam, 2, 1 daha 3, 3 daha 6, 6 kilo yüküm oluyor ve benim zaten 5 kilo kapasitem var. O zaman almazsam olacak olan şey, şunu da üzerine şey koyayım, aldım zannetmeyin, şöyle çizeyim şunu.
+
+58
+00:11:57,264 --> 00:12:09,264
+Alamam onu yani. O zaman almazsam olacak olan şey çok basit. Ne olacak almazsam? Bir önceki durum neyse onda kalacağım.
+
+59
+00:12:09,264 --> 00:12:20,264
+Yani üç kiloyu alamıyorsam eğer, üçüncü aytımı alamıyorsam eğer, o zaman ikideki durumun neyse onda kalacağım, yapabileceğim bir şey yok. Bu anlaşıldı mı?
+
+60
+00:12:20,264 --> 00:12:23,264
+Aldığımdan oldu, almadığımdan oldu.
+
+61
+00:12:23,264 --> 00:12:24,875
+Evet hocam.
+
+62
+00:12:24,980 --> 00:12:28,580
+Tamam, peki. Şimdi o zaman
+
+63
+00:12:31,220 --> 00:12:32,740
+alamama durumu
+
+64
+00:12:33,379 --> 00:12:34,980
+V iğnen
+
+65
+00:12:39,668 --> 00:12:48,088
+Şeyden büyük olması nedir? Ve şöyle diyeyim, şöyle yazarsam anlaşılacak.
+
+66
+00:12:54,100 --> 00:12:57,100
+Öğlet edersem yanlış anlayacaksınız, onu öyle demeyeyim.
+
+67
+00:12:57,100 --> 00:12:58,988
+Ve iğnen...
+
+68
+00:13:07,091 --> 00:13:09,091
+Hala yanlış anlaşılacak.
+
+69
+00:13:24,148 --> 00:13:41,967
+olması, yani şimdi benim kapasitem 5 kiloysa, 3 kilo yük almışsam, V i'nin 2'den küçük eşit olması gerekir, değil mi? Eğer V i 2'den büyük eşitse, yani 3 kilo toparlanmış eşya varken,
+
+70
+00:13:43,988 --> 00:14:06,148
+Nefs hekimin ağırlığı da 5 kilo iken, VI örneğin 8 kilo ise ben onu alamam demektir. Dolayısıyla benim alamama sebebim VI'nin kalan kilo miktarından büyük olması. Bu anlaşıldı mı? Anlaşılmıştır herhalde. Bunu artık anladığınızı tahmin ediyorum. Tamam mı?
+
+71
+00:14:06,464 --> 00:14:14,524
+Şimdi bu benim P matrisim. Şimdi buralar çok karıştığı için yeni sayfaya geçeceğim. Geçmemek istedim ama geçmemeye imkan yok. Çok karıştı çünkü.
+
+72
+00:14:14,524 --> 00:14:33,224
+Şimdi o zaman rekürans pahantımı yazabilirim. Bir noktadaki maksimum kazancı ait Pİ ve şeyini yazıyorum.
+
+73
+00:14:34,932 --> 00:14:44,652
+Şimdi şöyle, başlangıçta, az önce arkadaşınız çok güzel fark etti ve sordu, şey olması lazım.
+
+74
+00:14:47,652 --> 00:14:50,572
+Eğer İ0 ise, J0 ise,
+
+75
+00:14:53,844 --> 00:15:11,384
+sıfırıncı satırı ve sıfırıncı satırını sıfırlamam lazım. Niye? Çünkü üzerine ekleye ekleye gideceğiz ya, bir başlangıç noktasında sıfır olmalı ki onun üzerine ekleyerek gideyim. O yüzden o sıfır. İkincisi, pi-1 ve az önce yazdığım şeyi buraya yazıyorum.
+
+76
+00:15:38,292 --> 00:15:41,091
+Şimdi burada çok heyecanlı bir şey yapacağız.
+
+77
+00:16:19,508 --> 00:16:40,688
+Şimdi, buraya dikkat etmenizi rica edeceğim. Şimdi, eğer zaten ağırlık taşıyorsa, almayacağız, bunu anladık. Otherwise, yani ağırlık taşmıyorsa, o zaman şöyle bir şey yapmalıyım. Eğer bunu eklemem, yani bu şeyi alman bir fayda sağlıyorsa almalıyım.
+
+78
+00:16:40,960 --> 00:16:47,420
+eşyayı alman bir fayda sağlıyorsa almalıyım, sağlamıyorsa almamalıyım.
+
+79
+00:16:48,860 --> 00:16:52,200
+Şimdi bunun nasıl olduğunu şeyde daha iyi göreceksiniz.
+
+80
+00:16:52,960 --> 00:16:57,580
+Nedir? Çözümde daha iyi göreceksiniz, ne demek istediğimi.
+
+81
+00:16:57,960 --> 00:16:59,900
+Çözüm üzerinde göstermek istiyorum.
+
+82
+00:17:02,772 --> 00:17:05,771
+Az önceki tabloyu yeniden oluşturuyorum size.
+
+83
+00:17:05,771 --> 00:17:09,132
+1, 2 kilo 12 liraydı.
+
+84
+00:17:09,132 --> 00:17:12,132
+2, 1 kilo 10 liraydı.
+
+85
+00:17:12,132 --> 00:17:15,132
+3, 3 kilo 20 liraydı.
+
+86
+00:17:15,132 --> 00:17:18,331
+4 de 2 kilo 15 liraydı.
+
+87
+00:17:18,331 --> 00:17:21,811
+Bu şekilde olduğunda, şimdi onu görmek istiyorum.
+
+88
+00:17:21,811 --> 00:17:26,132
+0, 1, 2, 3, 4...
+
+89
+00:17:52,276 --> 00:17:59,276
+Bunu çok iyi dikkatli dinlemenizi istiyorum. Çünkü dinamik programlama gerçekten çok fazla uygulaması olan bir şey.
+
+90
+00:17:59,276 --> 00:18:11,276
+Mesela şeylerde çok kullanılıyor. Doğal dil işlemede, yanlış yazdığınızda düzeltiyor ya, yanlış yazdığınız şeyi size öneriyor mesela.
+
+91
+00:18:11,276 --> 00:18:20,276
+Yanlış bir kelime yazdığınızda doğru kelimeyi öneriyor size. O önermeler falan hep onlarda dinamik programlama kullanılıyor.
+
+92
+00:18:20,276 --> 00:18:25,115
+Dinamik programlama çok farklı alanlarda kullanılan bir yaklaşım.
+
+93
+00:18:25,216 --> 00:18:30,536
+Mesela eski ses tanıma yöntemleri Hidden Markov model kullanırlardı.
+
+94
+00:18:30,956 --> 00:18:32,996
+O da tamamen dinamik programlamadır.
+
+95
+00:18:33,576 --> 00:18:40,135
+O yüzden hala çok farklı bir alanda kullanıldığı için bu mantığını çok iyi anlamanız önemli.
+
+96
+00:18:40,655 --> 00:18:42,856
+Önümüzdeki haftada zaten devam edeceğiz.
+
+97
+00:18:43,936 --> 00:18:45,276
+Ondan sonra şey...
+
+98
+00:18:46,003 --> 00:19:03,763
+Yani dikkatle dinleyin, anlamaya çalışın. Anlayamazsanız sorun. Şimdi başlıyoruz. P11 ile başlıyoruz. P11 yani bu rekürans bağıntınıza bakarak başlıyoruz. P11 neye eşitmiş?
+
+99
+00:19:13,107 --> 00:19:37,107
+10'a eşitmiş. Neden? Çünkü şu anda benim ağırlığım 2 kilo ya, yani bunu sayamam ben. O yüzden sıfırla başlıyorum. Tekrardan söylüyorum. Şimdi ağırlığım 2 kilo olduğu için ben bunu sayamam şu anda. Benim şeyimin ağırlığı...
+
+100
+00:19:39,059 --> 00:19:58,699
+Şeyden büyük. Şunu o yüzden şöyle yazarsam belki şöyle daha rahat anlaşılır. Aynı mantık ama şu V, yani V şurası örneğin, iyi de şurası. Şimdi bu V şu anda bir, benim V'im, V1'im, iki kilo.
+
+101
+00:20:00,000 --> 00:20:07,460
+2 kilo, şuraya bakarsanız, birden büyük, yani benim ağırlığım 2 kilo zaten, o yüzden P11, 0.
+
+102
+00:20:08,559 --> 00:20:22,219
+P12, benim birinci aytumumun ağırlığı 2 kilo olduğu için, artık şey yapabilirim, buna bakabilirim.
+
+103
+00:20:24,339 --> 00:20:49,279
+BI artı yani 12 artı P sıfır sıfır veya P sıfır ikinin şeyine eşit. Bunlardan hangisi maksimum ise onunla eşit. Bu ne demek? Bu şu demek. Bakın bunu anlamaya çalışalım lütfen. Dikkat edelim.
+
+104
+00:20:49,844 --> 00:21:10,304
+Bunu almadan önce, nebseğimde 0 kilo vardı. O zamanki profit neyse, ona 12 lira ekleyeyim. Yani bunu aldığımdaki kazancım veya bunu almadığımdaki kazancım. Almasaydım belki daha çok kazancım olacaktı.
+
+105
+00:21:17,683 --> 00:21:24,683
+Bu almazsan hangisi daha kazançlıysa onu yapacağım. Çünkü neden? Yani illaki...
+
+106
+00:21:25,748 --> 00:21:49,428
+Ağırlığı uyuyor diye bütün eşyaları alırsam da zarara girerim değil mi? Belki 5 kiloluk bir tane eşyayı alacaktım. En yüksek kazancı oradan sağlayacaktım. İlla ki alabiliyorum diye her şeyi almaman lazım. O zaman burada P00, 0 olduğuna göre şuranın değeri 12, buranın değeri 0, o zaman 12.
+
+107
+00:21:53,748 --> 00:22:15,428
+eşyayı aldığımda 2 kilo yer tuttu ve 12 lira kazandım. Şimdi bundan sonra 3, 4 ve 5 içinde aynı durum olacak çünkü şu anda şeyi görmüyorsunuz, şurayı görmüyorsunuz, sadece bir numaralı eşya için hesap yapıyorsunuz.
+
+108
+00:22:15,539 --> 00:22:20,879
+Dolayısıyla, o mantıkla P13'te neye eşit olacak?
+
+109
+00:22:21,559 --> 00:22:41,039
+Maksimum 12 artı P-1 yani 0 eksi P13, 0 eksi V-i yani 3 eksi 2, 1 P-0, 1 veya P
+
+110
+00:22:43,635 --> 00:22:46,035
+0, 3'e eşit olacak.
+
+111
+00:22:47,235 --> 00:22:50,435
+Yani alsa aldığım durum, anladığım durum.
+
+112
+00:22:50,435 --> 00:22:52,435
+Şimdi P0, 1, 0'dı.
+
+113
+00:22:54,035 --> 00:22:55,836
+Buna 12 ekleyeceğim.
+
+114
+00:22:56,243 --> 00:23:11,263
+Veya yani P03-0, 12 o zaman ben bunu bu şekilde yaparak 12, diğerlerinde de 12 çünkü şu anda zaten bir tek şey var, elimde eşya var.
+
+115
+00:23:11,723 --> 00:23:15,303
+Yani elimde bir tek eşya varken kazancım 12 lira.
+
+116
+00:23:16,051 --> 00:23:34,131
+Şimdi böylece birinci eşya ile ilgili durumu bitirdik. Geldik ikinci eşyaya. Şimdi ikinci eşya için iki birden başladım. İkinci eşya bir kilo. Bir kere ikinci eşyayı alabilirim. Çünkü duyamıyorum.
+
+117
+00:23:39,220 --> 00:23:44,040
+Hakikaten hiç duyamıyorum. Acaba mikrofonun sesi mi kapalı?
+
+118
+00:23:44,040 --> 00:23:45,440
+Sıfırdan bir şey kapalı.
+
+119
+00:23:45,980 --> 00:23:52,180
+Peki şeye yazar mısın rica edeceğim? Söylediğimi duyamıyorum. Bir sıfırdan dediğini duyuyorum. Çete yazarsan oradan bakayım.
+
+120
+00:23:59,700 --> 00:24:02,700
+Sıfırdan üç neden geçtik? Ne demek bu?
+
+121
+00:24:07,220 --> 00:24:09,900
+Bir daha yazar mısın ne demek istediğini anlıyorum?
+
+122
+00:24:17,971 --> 00:24:31,751
+Bekliyorum yalnız, yani yazıyor musun? Tamam. Tabloda okla sıfırdan üçü işaretledim. Bak, ooo hiç hayatta anlamazdım ne demek istediğimi. Şimdi şunu yapmaya çalışıyorum. Şurada şey yazacağım.
+
+123
+00:24:33,236 --> 00:24:50,655
+Şimdi, birinci eşyam benim 2 kilo aslında ama bu bir matriz, şeylerde de birinci eşya için 3 kilo, 4 kilo ve 5 kilo, toplam 3 kilo, toplam 4 kilo ve toplam 5 kilo kazançlarını da hesaplamam lazım.
+
+124
+00:24:50,655 --> 00:24:58,855
+Aslında 2 kiloluk eşya var ama sadece birinci item'ı alsaydım şu anda neler oluyor onu görüyorum aslında.
+
+125
+00:25:01,236 --> 00:25:26,668
+1-3'ü nasıl hesapladığımıza bakalım. P-1-3 neye eşittir? Bu şey olduğuna göre, benim eşyamın ağırlığı 2 kilo olduğuna göre neye eşittir? P-1-1 artı V-İ veya P-1-1 artı V-İ veya P-1-1 artı V-İ veya P-1-1 artı V-İ.
+
+126
+00:25:27,220 --> 00:25:45,879
+1-3'ten hangisi maksimumsa ona eşittir. Yani bu aldığım durum, alırsam, bu da almazsam. Yani almazsam çünkü bir önceki durum, pardon sıfır çok özür dilerim, şurası sıfır, şurası da sıfır.
+
+127
+00:25:57,940 --> 00:26:25,940
+Alırsam da bu 2 kilo olduğu için bir önceki durumun 2 kilo eksik haline bakmalıyım. Yani P13 için neye bakmalıyım? 3-2 kilo P01'e bakmalıyım. Tamam mı? Anlaşıldı mı bunun sebebi? Çünkü bunu aldım alınca elimdeki 2 kilo arttı. Ben neye bakıyorum şu anda? P13'e bakıyorum. Yani toplam ağırlık 3 kilo.
+
+128
+00:26:25,940 --> 00:26:31,940
+1. ayetimdayken maksimum kazancın ne olabileceğine bakıyorum.
+
+129
+00:26:31,940 --> 00:26:40,940
+Şimdi zaten sadece 12 liralık eşyayı alabildiğime göre P13'te de olabilecek maksimum kazanç değişmeyecek.
+
+130
+00:26:40,940 --> 00:26:46,923
+O da 12 lira olacak. Çünkü başka alabileceğim bir şey yok. Anlatabildim mi? Niçin 0-1'den geliyor?
+
+131
+00:26:47,220 --> 00:27:05,220
+Yani bir önceki durum bu iki kilo olduğu için bir üç demek toplam üç kilo demek. Benim birinci eşyam iki kilo olduğu için iki kilo geriye gitmem lazım. Yani şuraya gelmem lazım, şuraya gelmem lazım. Ve bir olmayan durumda...
+
+132
+00:27:05,523 --> 00:27:16,003
+Şurası, sıfırıncı satır, şeyi gösteriyor, birinci itemden bir önceki durumu gösteriyor. O yüzden sıfıra birden geliyorum bir üçe. Şimdi anlaşıldı mı?
+
+133
+00:27:23,124 --> 00:27:31,364
+Yani şurası, yani şöyle, şurası, 3-2'den gelmem gerekiyor.
+
+134
+00:27:32,884 --> 00:27:57,884
+Pardon şöyle, 3-2'den gelmem gerekiyor. 3 kilo, 2 kilo bir önceki durumdaki ağırlığım. Çünkü benim birinci eşyam 2 kilo. Bir önceki durumda sıfırıncı, yani hiç kimsenin olmadığı durum. Ben şu anda birinci aytımdaysa çünkü sırayla ikinci aytıma geldiğimde, üçüncü aytıma geldiğimde, dördüncü aytıma geldiğimde. O yüzden 1-3, 0-1 artı...
+
+135
+00:28:00,435 --> 00:28:12,615
+şeyin birinci aytımın değerine eşit olacak veya hangisi daha pahalısı. Şimdi bu sıfır olduğuna göre, bu da on iki olduğuna göre on iki olacak.
+
+136
+00:28:14,155 --> 00:28:22,115
+Şimdi P2-1'e bakalım. Şimdi ikinci eşya bir kilo olduğuna göre onu alabilirim.
+
+137
+00:28:22,612 --> 00:28:30,452
+Çünkü şu anda şunu görüyorum aslında, P21 demek şu demek, ikinci item'a kadar, bir kiloya kadar olan durum demek.
+
+138
+00:28:30,452 --> 00:28:39,792
+Yani ikinci itemdayım, elimde bir ve ikinci itemler var ve şu anda bir kiloluk eşya alsam durumum ne olurdu? Bu demek.
+
+139
+00:28:40,252 --> 00:28:49,172
+Şimdi birincisi iki kilo olduğu için onu alamadım demektir bu, bir kiloluk durumu görmek istediğimde. Onu alamadım demektir.
+
+140
+00:28:50,612 --> 00:29:17,112
+O zaman buraya nasıl geleceğim? Maksimum ikincinin lirası 10 lira, bakın şuradan geliyorum, şuradan geliyorum, artı bunu almadan önceki durumum, bir önceki durum birinci ayetim varken durum, bir önceki ağırlık şu 1-1, bunun ağırlığı 1 ya, sıfırıncı, sıfır ağırlıktayken veya
+
+141
+00:29:18,324 --> 00:29:25,243
+Belki de 0'a 1, yani 1 kilo da belki daha iyi bir değer vardı.
+
+142
+00:29:25,864 --> 00:29:32,644
+Şimdi burası ne? 10, şurası 10, şurası ne? 0.
+
+143
+00:29:32,884 --> 00:29:40,003
+O zaman demek ki ben diyeceğim ki, şuradan geleceğim buraya.
+
+144
+00:29:40,788 --> 00:29:49,667
+Bir önceki durumum, hiçbir eşya yokken ki durum, bunu aldım bir kilo ve 10 liralık eşya almış oldum. Oldu mu?
+
+145
+00:29:49,667 --> 00:30:05,227
+Şu şeyden geliyor, şuradan geliyor şöyle, şuradan geliyor, şuradan, şuradan geliyor.
+
+146
+00:30:08,372 --> 00:30:10,491
+Şimdi P2-2'yi hesaplıyorum.
+
+147
+00:30:14,112 --> 00:30:16,632
+Şimdi bakın buna dikkat edin, bu önemli.
+
+148
+00:30:17,372 --> 00:30:22,451
+Şimdi P2-2'de hala 1'i alabilirim ama şuna dikkat etmeyin.
+
+149
+00:30:22,592 --> 00:30:25,132
+1'i alsam daha iyi, almasam mı daha iyi?
+
+150
+00:30:25,132 --> 00:30:26,392
+Şimdi nedir?
+
+151
+00:30:27,112 --> 00:30:34,932
+10 artı P1-1 veya P1-2.
+
+152
+00:30:35,892 --> 00:30:39,372
+Şimdi bakın, göreceksiniz anlatmak istediğim şeyi.
+
+153
+00:30:40,592 --> 00:30:47,592
+Ya bir önceki durum, yani P11'deki durum neyse, niye P11'e bakıyorum?
+
+154
+00:30:47,592 --> 00:30:51,772
+Çünkü şurası bunu almadan önceki durum.
+
+155
+00:30:51,932 --> 00:30:55,152
+Benim eşyam 1 kilo artı 1.
+
+156
+00:30:57,592 --> 00:31:02,212
+Bunu almadan önce aslında 1 kilo vardı.
+
+157
+00:31:02,996 --> 00:31:05,016
+Nebsi'nin içinde olabilir.
+
+158
+00:31:06,236 --> 00:31:09,816
+İçeride bir kilo varken ki durumu gösteriyor P11.
+
+159
+00:31:11,276 --> 00:31:13,016
+P11 ne aslında?
+
+160
+00:31:14,456 --> 00:31:15,536
+P11 sıfır.
+
+161
+00:31:15,675 --> 00:31:18,296
+Yani bir kilo için boştu.
+
+162
+00:31:18,395 --> 00:31:18,855
+Çünkü niye?
+
+163
+00:31:19,496 --> 00:31:22,776
+Birinci eşya iki kilo olduğu için alamamıştım daha.
+
+164
+00:31:23,355 --> 00:31:25,996
+O zaman burası 10.
+
+165
+00:31:26,556 --> 00:31:27,816
+Burası kaç? 12.
+
+166
+00:31:27,816 --> 00:31:29,875
+O zaman demek ki ne yapacağım?
+
+167
+00:31:33,044 --> 00:31:52,304
+Doğrudan şeyi alacağım, iki kilo için yani biri mi alayım, ikiyi mi alayım diye baktığımda biri almalıyım çünkü bir daha değerli. Toplam iki kilo için almam gereken şey birinci eşya çünkü o daha değerli. Anlaşıldı mı?
+
+168
+00:31:57,364 --> 00:32:03,864
+Hocam, P2-1'li satırda bir hata olabilir mi? Sağdaki P0-1 değildi, sanki P1-1 olması gerekiyor gibi bilmiyorum.
+
+169
+00:32:11,571 --> 00:32:15,231
+Evet, kesinlikle çok haklısın. Bir bir olacak yanlış yazmışım.
+
+170
+00:32:15,635 --> 00:32:22,435
+Oldu mu şimdi? Teşekkürler bir yardım için. Düzeltin böyle hata yaparsam. Bazen kayabiliyor dağılmaktan.
+
+171
+00:32:23,175 --> 00:32:34,056
+Şimdi 2-3'e bakalım birlikte. Şimdi öncelikle 2-3 olabilir mi? Yani 3 kilo olabilir mi? Olabilir 3 kilo. Neden? Çünkü 5 kiloya kadar yolu var.
+
+172
+00:32:34,796 --> 00:32:40,635
+Elimdeki ikinci eşyada 1 kilo olduğuna göre 3 kilo...
+
+173
+00:32:41,172 --> 00:32:48,872
+Olabilir. Yani bu şu demek çünkü ikinci eşyayı eklediğimde 3 kilo oldu demek. İkinci eşyada 1 kiloydu olabilir.
+
+174
+00:32:49,572 --> 00:33:02,951
+10 peki ne olacak? Alırsam eğer, 10 liraydı bu, almadığım durumda bir önceki durumdan 1 kiloyu çıkartırsam, bir önceki durumun 2 kiloluk hali
+
+175
+00:33:10,132 --> 00:33:34,652
+Bir önceki durumu 3 kiloluk hali almadığım durum. Yani hiç onu almayacağım. Hangisi daha pahalıysa onu almayacağım. Şimdi bu neye eşit? P1-2, 12'ye eşit olduğuna göre bu 22 lira, bu da 12 lira. O zaman demek ki ne yapmalıyım? Bunu almalıyım. Neden?
+
+176
+00:33:35,152 --> 00:33:41,612
+Çünkü zaten siz de farkındasınız. 3 kilo demek aslında hem 1'i hem 2'yi alabilirim.
+
+177
+00:33:42,251 --> 00:33:52,511
+1-2 kiloydu 12 lira, 2'de 1 kiloydu 10 lira. 3 kiloluk yüküm varken maksimum kazancımı 22 lira yapabilirim demek değil mi?
+
+178
+00:33:53,771 --> 00:33:58,511
+O zaman her ikisini de alabilirim demek. Anlaşıldı mı bu?
+
+179
+00:34:09,331 --> 00:34:14,331
+Anladınız mı? Tekrar anlatayım bir şeyleri. Aklınıza takılan varsa sorun lütfen.
+
+180
+00:34:18,036 --> 00:34:18,976
+Anlaşıldı hocam.
+
+181
+00:34:19,576 --> 00:34:30,176
+Tamam. Şimdi 2-4'te de aynı mantıkla, artık keseceğim hesaplamayı. 2-4'te de aynı mantıkla diyeceğiz ki 3'te de bir şeyleri hesaplarım aslında.
+
+182
+00:34:31,219 --> 00:34:40,059
+Maksimum diyeceğiz, 10 artı, çünkü hala yine 4 kilo içinde ikinci ağırlığı, ikinci eşyayı hala alabilirim.
+
+183
+00:34:40,059 --> 00:34:52,179
+Bir önceki durumda, 1 kilo eksikken ki durum, yani almasaydım, yani 1 kilo eksik olacak ya, ondan sonra ve bir önceki durumda yine 1 kilo eksikken ki durum.
+
+184
+00:34:52,319 --> 00:34:59,199
+Yani şu şeyi gösteriyor, alsam 10 lira eklemiş olacağım, almazsam 10 lira eklememiş olacağım.
+
+185
+00:34:59,219 --> 00:35:07,239
+Yani acaba alsam 10 lira eklesem bile bu daha avantajlıysa almam daha iyi. Buna karar vermeye çalışıyorum.
+
+186
+00:35:07,639 --> 00:35:17,119
+Tabi o da nedir? P13'e bakalım. 12 lira. 10 da bu. 22 lira. Öbürü 12 lira yukarıdan gelse o zaman alacağım.
+
+187
+00:35:17,420 --> 00:35:26,679
+Demek ki bu böyle. Bunu da böyle aslında. O da şuradan gelecek şöyle. P4 işte P24'den gelecek.
+
+188
+00:35:27,219 --> 00:35:38,639
+Böylece ikinci eşya için maksimum kazancım 22 lira. Yani bunun üstüne çıkamadım daha. Maksimum kazancım 22 lira.
+
+189
+00:35:39,123 --> 00:35:49,123
+Zaten öyle olmalıydı. Biri de ikiyi de alabilirim şu an için. Şimdi bakıyoruz, üçteki durumlara bak. Bakın bu bütün kombinasyonları görmemizi sağlayacak aslında.
+
+190
+00:35:50,323 --> 00:36:00,203
+Şimdi üçe bakalım. Üç, üç kilo. Dolayısıyla bir kilo için bu karbon almam gerekir. Yani bir kilo için üçü kullanamam.
+
+191
+00:36:00,672 --> 00:36:09,872
+sadece 1 kilo için kazancı görmek istediğinde bir önceki durumdaki kazanç neyse onu kullanmak zorundayım.
+
+192
+00:36:09,872 --> 00:36:16,351
+Aynı şekilde sadece 2 kilo için kazancı görmek istediğinde yine onu kullanmak zorundayım.
+
+193
+00:36:17,492 --> 00:36:26,872
+Şimdi şeye bakacak olursam, 3-3'e bakacak olursam, 3 kilo...
+
+194
+00:36:27,284 --> 00:36:49,284
+3 kilo ise şöyle bir şey yapmam lazım. 3-3 kilo olduğuna göre, pardon bir saniye kapı çalıyor. Mecburen bakmak zorundayım. Bir dakika ara veriyorum arkadaşlar.
+
+195
+00:38:57,811 --> 00:39:17,152
+Evet, buradan devam ediyorum arkadaşlar. Şimdi, P33, 3 kiloya kadar olan kazancı gösteriyor. Fakat benim item'ım eğer şey olsa, 3 kilo eklemek için şeye bakmam lazım.
+
+196
+00:39:25,568 --> 00:39:40,528
+bir bu var. 2-1'de 10 liraymış ve 3'ümde 20 lira. Ya bunu alacağım ya da P-2-3'tekini alacağım. Yani almazsam ne olur ona bakacağım, onu alacağım.
+
+197
+00:39:41,168 --> 00:39:48,248
+2-3'teki durumda 22 lira. Şimdi yani ya 1 kilo, 1 önceki durumda 1 kilo...
+
+198
+00:39:48,248 --> 00:39:49,848
+Hocam 30'u yanlış yazdınız galiba.
+
+199
+00:39:55,699 --> 00:40:00,699
+P2 birkaç? 10 ve 3 kaç?
+
+200
+00:40:04,307 --> 00:40:05,467
+Yanlış mı yazdın?
+
+201
+00:40:06,128 --> 00:40:09,208
+Yok hocam, doğru da, hani ağırlık normalde yetmiyor ya, o yüzden.
+
+202
+00:40:09,347 --> 00:40:11,648
+Hayır, hayır, hayır, şeyi yanlış yazdın.
+
+203
+00:40:12,188 --> 00:40:13,148
+Zaten kendisi...
+
+204
+00:40:13,148 --> 00:40:14,708
+İki bir yerine bir bir mi?
+
+205
+00:40:14,708 --> 00:40:21,448
+Şey olacak, iki sıfır artı, tamam tamam, şunu düzeltiyorum.
+
+206
+00:40:22,568 --> 00:40:25,807
+Ağırlığı yanlış yazdın, dikkatim dağıldı ya arkadaşlar, özür dilerim.
+
+207
+00:40:27,007 --> 00:40:29,708
+İşin kötüsü de yanlış çalınmış, yani ne saçma bir şey.
+
+208
+00:40:32,659 --> 00:40:42,739
+Yanlış çalan bir kişi özür de dilemedi. Yapmayın sakın kapıları yanlış çalarsanız, insanların vaktini alıyorsunuz, bir özür dileyin, pardon falan deyin.
+
+209
+00:40:45,399 --> 00:40:52,739
+Şimdi 3 kilo olduğu için kendisi zaten, şuradan 3 kilo olduğu için ya 2-0'a...
+
+210
+00:40:52,820 --> 00:41:20,420
+bunun değerini ekleyeceğiz. Yani 2.00'da 20 lira olacak. Ya da 2.3 neyse onu alacağız. 2.3 ne? 22. Demek ki tek başına 3. eşyayı almanın bir faydası yok. 3 kilo için maksimum kazanç 22. Bunu bu şekilde kullanabilirim.
+
+211
+00:41:20,820 --> 00:41:30,180
+Şimdi 3-4'te değiştireceğiz. 3-4'te durum değişecek. 3-4'te bu 3 kilo olduğu için ya bir önceki durumda 1 kiloya
+
+212
+00:41:30,579 --> 00:41:57,739
+Buna eklersem olan kazancı alacağım. Şimdi olacak bu. 2-1-10'du, 30 olacak. Ya da bir önceki durumu alıp kullanacağım. 2-4, 2-4'te 22. O zaman bunu alacağım. O zaman burası 30 olacak. Artık olayı anladınız diye tahmin ediyorum. 2-1'e yani şuradan geleceğim şöyle ve burası 30 olacak.
+
+213
+00:41:58,931 --> 00:42:17,551
+Aynı mantıkla P35'i hesaplarsam, orada 32 oluyor. Çünkü P35'de de 3 kilo çıkartırsak, P22'den P22'ye 20 ekleyeceğiz ve 32 olacak.
+
+214
+00:42:17,551 --> 00:42:21,231
+Şimdi şeye bakacak olursak,
+
+215
+00:42:22,387 --> 00:42:32,107
+4. ağırlığa bakacak olursak, artık bunu anladınız herhalde. Ne olacak? 2 kilo olduğu için 2 kiloya kadar bir önceki durumu almamız gerekir.
+
+216
+00:42:32,107 --> 00:42:39,927
+10. 2 kilo için bir önceki durum 12 lira, sadece onu alırsam 15 lira alıyorum.
+
+217
+00:42:40,628 --> 00:42:59,628
+3 kilo için eğer 3 birden gelirsem 25 lira, yukarıdan gelirsem 22 lira. O yüzden şunu şuradan aldım. Bunu buradan aldım.
+
+218
+00:43:05,076 --> 00:43:12,155
+Bu iki kilo olduğuna göre ikiden gelirsem 27 lira, o yüzden 30'a aldım.
+
+219
+00:43:12,755 --> 00:43:28,055
+4-5 için yukarıdan gelirsem 32 lira, bir önceki duruma 2 kilo eklemek demek, 3'ten gelmek demek, 37 lira o zaman 4-5'i de buradan aldım. Bu anlaşıldı mı?
+
+220
+00:43:29,139 --> 00:43:42,123
+Son satır. Dolayısıyla benim neps ekimin maksimum alabileceği eşyaların...
+
+221
+00:43:42,164 --> 00:44:08,164
+değeri 37 liraymış. Bakın burada aslında bütün kombinasyonları görüyoruz. Yani dördüncü ağırlığı alsam ne oluyor, almasam ne oluyor? İşte dört varken ikiye alsam ne oluyor, üçü alsam ne oluyor? Gördüğünüz gibi bu matriz bütün kombinasyonları görmenizi sağlıyor. Mesela şeyleri görmeniz...
+
+222
+00:44:08,980 --> 00:44:19,980
+Nedir? Birinci ağırlık varken ikinci ağırlık alınmış mı, alınmamış mı? Bunları görmeniz mümkün. Nasıl mümkün peki? Geriye doğru giderek mümkün.
+
+223
+00:44:19,980 --> 00:44:26,923
+Yani hangi şimdi 37 liralık malın var fakat hangilerini aldın? Bunu anlamak için de...
+
+224
+00:44:27,251 --> 00:44:52,492
+Geriye doğru giderek oluşturduğum tablo üzerinde geriye doğru giderek bakabilirim. Çünkü oluştuğu sırada anlamanız olamayacağı için önce tabloyu oluşturup arkasından yani o da mümkün de o da karmaşık. Önce tabloyu oluşturup arkadan geri geri gitmek lazım. Şimdi buraya kadar sorunuz var mı? Lütfen bakın anlayıp anlamadığınıza.
+
+225
+00:44:54,387 --> 00:45:01,887
+Yani mantığımız şunun üzerine kurulu. İki tane durum var.
+
+226
+00:45:08,851 --> 00:45:13,611
+Bir nesnenin, eşyanın alınması veya alınmaması durumu.
+
+227
+00:45:14,171 --> 00:45:21,171
+Alınmadıysa bir önceki i-1. adımdaki durumu devam ettiriyorsunuz.
+
+228
+00:45:22,251 --> 00:45:25,571
+Almaya da şöyle karar veriyorsunuz.
+
+229
+00:45:25,971 --> 00:45:34,871
+Alınabilir olsa bile, alsam mı daha iyi, almasam mı daha iyi ona karar veriyorsunuz.
+
+230
+00:45:35,155 --> 00:45:45,155
+Burası almazsanız kazancınız, burası alırsanız kazancınız. Hangisi daha iyiyse onu yapıyorsunuz.
+
+231
+00:45:47,155 --> 00:45:57,155
+Tamam mı? Yani şu not taken taken dersem şey kalacak aklınızda. Yani bu kesinlikle not taken, kesinlikle alamadığınız durum.
+
+232
+00:45:57,588 --> 00:46:11,367
+Öbüründe karar veriyorsunuz. Yani şunu da alsam mı, bu alsam mı, bu da almasam mı? Hangisi daha karlı? Buna karar veriyorsunuz. Çünkü her şeyi birden almamız zaten mümkün on sayıcı işlerle uğraşmaz.
+
+233
+00:46:12,448 --> 00:46:14,528
+Buraya kadar sormak isterseniz bir soru var mı?
+
+234
+00:46:16,008 --> 00:46:23,867
+Hocam, 37 burada sağ en altta çıktı ya. Bu bir tesadüf mü yoksa hani toplayarak gelip en büyüğüne sağ altta mı buluyoruz?
+
+235
+00:46:24,628 --> 00:46:40,628
+Tabii, en büyüğü hep sağ altta buluyoruz. Çünkü burası bize şunu gösteriyor. Şu, şu demek. Dördüncü item, beş kilo için maksimum kazanç demek. Yani artık en son durum.
+
+236
+00:46:41,139 --> 00:47:02,539
+Değil mi? Çünkü şurası ne demek? İkinci item 4 kilo için maksimum kazanç demek. Burası üçüncü item 3 kilo için maksimum kazanç demek. Bize ne lazım? Artık son itemde olabilecek maksimum kilodaki kazancı bilmemiz lazım. Değil mi? O yüzden en alt, yani en son sütunda toplandı.
+
+237
+00:47:06,452 --> 00:47:10,332
+Arada bir yerde onu bilemezsin değil mi? En sonunda anlarsın onu ancak.
+
+238
+00:47:12,672 --> 00:47:13,672
+Anladım, teşekkür ederim.
+
+239
+00:47:14,572 --> 00:47:15,212
+Rica ederim.
+
+240
+00:47:35,476 --> 00:47:38,476
+Peki, ha yok tam tersiymiş ayarlı.
+
+241
+00:47:40,676 --> 00:47:47,476
+Orası çok karvanç orman olduğu için hangi itemleri aldığımızı nasıl bulacağımızı buradan göstereceğim size.
+
+242
+00:47:48,476 --> 00:47:50,476
+Şimdi tabloyu bir kere daha yazıyorum.
+
+243
+00:48:01,940 --> 00:48:09,059
+Yanlış bir şey yazarsam düzeltin lütfen. Yoksa çok uğraşırız, gerçekten gereksiz bir iş olur.
+
+244
+00:48:10,880 --> 00:48:14,400
+Hocam, önceki sayfada bir formülle belki bir hata olabilir, ona bir bakar mısınız?
+
+245
+00:48:15,460 --> 00:48:16,019
+Bakarım.
+
+246
+00:48:20,628 --> 00:48:21,708
+Evet, bakıyorum.
+
+247
+00:48:22,188 --> 00:48:25,028
+En sağ altta P13 değil de P14 olabilir mi?
+
+248
+00:48:27,268 --> 00:48:27,987
+Şu mu?
+
+249
+00:48:29,548 --> 00:48:30,708
+Bu P24.
+
+250
+00:48:32,327 --> 00:48:33,487
+Nerede P13?
+
+251
+00:48:33,768 --> 00:48:35,447
+Evet, P24 için söylüyorum.
+
+252
+00:48:37,487 --> 00:48:41,208
+Bu maksimum ikinci eleman şey, P13 yazmışsınız da öyle mi olacak o?
+
+253
+00:48:41,788 --> 00:48:42,288
+Tabii tabii.
+
+254
+00:48:42,887 --> 00:48:45,608
+Şey, ikinci şey, bir kilo ya.
+
+255
+00:48:46,771 --> 00:49:01,891
+O yüzden onu eklediğimde 4 olacak. P13 artı, değil mi? Yani o yokken ki kazanç, 3 kiloyken ki kazanç. Değil mi? Önce boyadım orayı.
+
+256
+00:49:02,612 --> 00:49:06,511
+Diğerini söylüyorum, yandaki de 1-3 ya.
+
+257
+00:49:08,851 --> 00:49:12,291
+Haa, şurası mı 4 diyorsun? Tamam, burada haklısın, doğru da.
+
+258
+00:49:13,364 --> 00:49:21,403
+Teşekkür ederim, düzelttiğin için. Şurası dört arkadaşlar. Şurası dört. Tamam. Oldu mu?
+
+259
+00:49:23,804 --> 00:49:26,684
+Şimdi oldu. Tamam, teşekkürler.
+
+260
+00:49:27,795 --> 00:49:38,915
+Tamam, şimdi şeye bakıyoruz. Bir nesnenin alınıp, eşyanın alınıp alınmadığına bakıyoruz. O şeyleri de yazayım yine.
+
+261
+00:49:39,655 --> 00:49:51,495
+1, 2, 3, 4, 2 kilo 12 lira, 1 kilo 10 lira, 3 kilo 20 lira, 2 kilo 15 lira.
+
+262
+00:49:55,476 --> 00:50:02,376
+Şöyle bunları da yazdım. Şimdi bakın, şeyi nasıl yapacaksınız? Öncelikle,
+
+263
+00:50:02,376 --> 00:50:20,376
+n'e ve inci sücreden başlayacaksınız. Çünkü neden? En son benim artık son kararı verdiğim toplam maksimum kazancımın, şurası maksimum
+
+264
+00:50:21,940 --> 00:50:33,940
+kazancının olduğu yer. Tamam mı? Şimdi eğer yukarı gidildiyse, yani yukarıdan gelindiyse,
+
+265
+00:50:41,780 --> 00:50:43,780
+Itemınız alınmış demektir.
+
+266
+00:50:43,780 --> 00:50:45,780
+Eğer
+
+267
+00:50:49,876 --> 00:50:58,876
+Dümdüz yukarıdan geliyorsan, soldan geliyorsan alınmış demektir. Eğer dümdüz yukarıdan geliyorsan alınmamış demektir.
+
+268
+00:50:58,876 --> 00:51:09,876
+Dümdüz yukarıdan ne zaman gelmiş olursun? Şey olduğunda gelmiş olursun. Eğer eşitse iki değer bildiğine yukarıdan gelmiş olursun.
+
+269
+00:51:12,019 --> 00:51:37,480
+30-50'nin üstünde 32 var. Demek ki oradan gelmedik. 2 kilo olduğuna göre, 2 kilo geriye gidiyorum, 22'ye gidiyorum. Ondan sonra yukarıdan gelmediğime göre alınmış demektir. Yani bu yukarıdan gelseydi bir önceki durumu koruyorum demekti. O zaman bir kere 4'ü almışım. 4'ü almışım. Şimdi 3'teyim, şuradayım. 3'teyim.
+
+270
+00:51:37,907 --> 00:52:00,947
+3'te yukarıdaki değer aynı, oldu gibi inmiş. Demek ki 3'ü almamışım. Buradayım şimdi 2'deyim. 2'de yukarıdaki değer değişik. Demek ki 2'yi almışım. 2-1 kilo olduğuna göre buraya şuradan gelmiş olman lazım değil mi? 1 kilo geriden gelmiş olman lazım. Şimdi buradayım.
+
+271
+00:52:02,483 --> 00:52:28,563
+İkiyi de aldım. İki de iki kilo, ona da, yani yukarısı farklı zaten, aslında burada hiç bakmanıza bile gerek yok çünkü sıfırıncı sütun şey, initial durumu gösteriyor. Bu da buradan gelmiş. O zaman bunu da aldım. Bakın zaten iki kilo, bir daha üç, iki daha beş, toplam beş kilo. Bir, iki ve dördü almışım. Soru var mı?
+
+272
+00:52:35,572 --> 00:52:37,912
+Anlaşıldı mı bu, nasıl yaptığınız?
+
+273
+00:52:39,512 --> 00:52:40,731
+Hocam, bir şey söyleyebilir miyim?
+
+274
+00:52:41,132 --> 00:52:41,751
+Tabii ki.
+
+275
+00:52:42,152 --> 00:52:46,251
+Item numaranızla ilgili bir kural yoksa, burada...
+
+276
+00:52:46,516 --> 00:52:52,976
+İki tane, dörtten, bir tane ikiden alsak hem kiloyu sağlayıp hem de kötü bir değer bulmuyor muyuz?
+
+277
+00:52:53,556 --> 00:52:58,496
+Hayır. Yani sonuçta her şeyden birer tane var. Yani şey değil bu.
+
+278
+00:52:58,496 --> 00:53:00,176
+He, o tamam. Oraya kaçırmışım.
+
+279
+00:53:00,476 --> 00:53:08,356
+Yani şey olsaydı belki ağırlığı aynı ve değeri de aynı olan ikinci bir item'ı listeye eklemen gerekirdi.
+
+280
+00:53:08,356 --> 00:53:14,356
+Bunlar senin önünde alabileceğin olan bütün eşyaların ağırlıkları ve...
+
+281
+00:53:14,516 --> 00:53:35,756
+şeyleri fiyatları. Oldu mu acaba? Tamam hocam, teşekkür ederim. Rica ederim. Var mı aklınıza takılan başka bir şey? Bakın burada tekrardan aynı şeyi söylemek istiyorum. Yani burada bütün kombinasyonları denediniz. Aslında brute force yapıp iki üzere en kombinasyonla
+
+282
+00:53:37,523 --> 00:53:42,244
+Yani diyelim ki 10 itemınız varsa 1024 tane şeyi denemeniz gerekiyor.
+
+283
+00:53:43,043 --> 00:53:53,164
+Zaten 2 üzeri an dediğiniz şey non-deterministic polynomial, polinomsal zamanda çözülemeyen, gerçek zamanda çözülemeyen algoritmalar bunlar.
+
+284
+00:53:53,164 --> 00:54:02,664
+Ama bu şekilde matris formunda yaptığınız zaman ne oldu? Daha önceki ihtimalleri de korumuş oldunuz.
+
+285
+00:54:02,864 --> 00:54:05,523
+Yani 3'ü alsam ne oluyor? Almasam ne oluyor?
+
+286
+00:54:05,523 --> 00:54:28,523
+ne oluyor? Mesela ne bileyim işte, nerede 3'e aldığım durum var? Şurada 3'e aldığım durum var. Şu 22 aslında, değil mi? 3'e aldığım durum var mı ya? Şurada mı var? Bir dakika, 3'e aldığım bir durum bakalım. Evet, şurada var. Mesela burada sadece 1 ve...
+
+287
+00:54:29,972 --> 00:54:56,932
+2 ve 3'ü aldığımız durum bu. Mesela 2 ile 3'ü alsaydım 30 lira kazanacağımı görüyorum. Ama bir sonraki aşamada şeyi görüyorum. Yani 3'ü almasaydım daha iyi bir sonuç elde edebileceğimi görüyorum. Anlatabildim mi? Mesela şurada baktığınızda bu 3'ün alındığı durum sadece 1'i ve 3'ü aldığımız durum bu 30 lira kazandığımız.
+
+288
+00:54:57,972 --> 00:55:05,972
+Söyle geldiğimde, üçü almadan, bir ve iki varken, dördü alırsam ne olacağını görüyorum.
+
+289
+00:55:05,972 --> 00:55:12,972
+Mesela şurada, halbuki hala dört kiloda üçü almak daha iyi sonuç veriyor.
+
+290
+00:55:12,972 --> 00:55:16,972
+Ama en son aşamada bütün olasılıkları görebiliyorum bu şekilde.
+
+291
+00:55:16,972 --> 00:55:21,972
+Üçü almasam en iyi kazancı elde edebileceğini görmüş oluyorum.
+
+292
+00:55:21,972 --> 00:55:22,972
+Dolayısıyla...
+
+293
+00:55:23,764 --> 00:55:47,764
+Yani burada önemli olan şey, dinamik programlama da aslında hep bu sağlanıyor bize. Bütün durumları bir tablo üzerinde görüp değerlendirebilmemiz sağlanıyor. Böyle bir avantajı var. Önümüzdeki hafta şeyi anlatacağım o zaman. Bugün anlatmayı planlamıştım ama bugün herhalde artık doz olarak...
+
+294
+00:55:47,791 --> 00:55:53,251
+Ağır gelir diye düşünüyorum bu kadar şeyi dinledikten sonra, faydası olmaz gibi geliyor bana.
+
+295
+00:55:54,211 --> 00:55:57,911
+Edit distance ve longest subsequent şeyi anlatacağım.
+
+296
+00:55:57,911 --> 00:56:04,231
+İşte bu mesela diyelim ki size şey yapayım.
+
+297
+00:56:07,860 --> 00:56:19,300
+Öngösterim yapayım. Mesela işte Elif yazacağınıza, hızlı yazdınız. Elif de olmasın da sözlükte olan bir kelime olsun. Kalem yazacağınız yerde.
+
+298
+00:56:20,436 --> 00:56:41,176
+yazdınız mesela, o hemen düzeltiyor bunu, kalem diye düzeltiyor. Bu düzeltmeyi yapabilmesi için bu yanlış yazılmış kelimenin ne olabileceğini nasıl buluyor? Onun için kullanılan şeyleri anlatacağım, yaklaşımları anlatacağım. O zaman buraya kadar sorunuz yoksa haftaya devam ederiz.
+
+299
+00:56:47,923 --> 00:56:49,387
+Sorunuz yok mu arkadaşlar?
+
+300
+00:56:52,980 --> 00:56:54,980
+Herhalde yok diye anlıyorum ben buradan.
+
+301
+00:56:54,980 --> 00:57:00,980
+Peki o zaman size haftanın geri kalanında kolaylıklar diliyorum.
+
+302
+00:57:00,980 --> 00:57:02,980
+Haftaya görüşmek üzere.
+
+303
+00:57:02,980 --> 00:57:04,972
+İyi akşamlar.

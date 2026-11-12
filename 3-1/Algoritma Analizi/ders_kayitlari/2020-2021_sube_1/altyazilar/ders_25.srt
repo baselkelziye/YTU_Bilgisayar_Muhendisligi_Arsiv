@@ -1,0 +1,2047 @@
+1
+00:01:05,811 --> 00:01:07,131
+Arkadaşlar merhaba.
+
+2
+00:01:08,231 --> 00:01:13,712
+Bir iki dakika bekliyorum. Biraz sayı artsın, birazcık daha artsın diye. Onun için başlamadım.
+
+3
+00:01:16,111 --> 00:01:23,792
+Sanıyorum sınavlarınız varmış. Ondan herhalde bayağı bir şey katılmaz şu anda. Bir iki dakika bekleyelim.
+
+4
+00:03:39,955 --> 00:03:47,851
+Görünüşe göre bugün bu kadarız. Başlayalım o zaman. Ekran paylaşayım sizinle.
+
+5
+00:03:54,804 --> 00:04:05,204
+Artık sona yaklaştıkça siz de herhalde şey çok yoruldunuz. Sınavlar falan da varmış galiba bu hafta.
+
+6
+00:04:05,204 --> 00:04:21,403
+Bugün artık son olarak şeyden biraz kavram olduğunu bahsedeceğim. Algoritma değil de algoritma analizi yaparken bilinmesi gereken kavramlardan.
+
+7
+00:04:22,004 --> 00:04:29,644
+Polinomsal ve non-deterministik polinomsal kavramlarından bahsedeceğim size.
+
+8
+00:04:31,644 --> 00:04:36,464
+Şimdi bu çok duyduğunuz bir şey duyuyorsunuzdur sizde.
+
+9
+00:04:36,544 --> 00:04:43,144
+P NP algoritma diye duyuyorsunuzdur.
+
+10
+00:04:48,564 --> 00:04:54,764
+NP-in kısaltılmışı biliyor musunuz? Ekranı görüyorsunuz değil mi şu anda?
+
+11
+00:04:57,704 --> 00:05:00,364
+Non-deterministic polynomial olabilir mi?
+
+12
+00:05:00,403 --> 00:05:05,544
+Evet, şimdi burada bir yanlış şey vardır, kullanım vardır.
+
+13
+00:05:05,544 --> 00:05:07,744
+Sorry, there's nothing to repeat.
+
+14
+00:05:08,964 --> 00:05:13,544
+Anam, anam. Bunun genelde non-polynomial olarak...
+
+15
+00:05:14,836 --> 00:05:22,412
+kullanırlar değil halbuki bu P-polynomy, NP'de non-deterministik.
+
+16
+00:05:23,028 --> 00:05:34,208
+polinomi algoritma demek. Bugün bu kavramlardan bahsedeceğim. Ne olunca polinomsal oluyor, ne olunca non-deterministlik polinomsal oluyor. Bunlardan bahsedeceğim.
+
+17
+00:05:36,088 --> 00:05:46,168
+Öncelikle bir şeyden bahsedelim. Yani bir algoritma ne zaman kullanılabilir, çalıştırılabilir bir algoritma oluyor?
+
+18
+00:05:46,168 --> 00:05:51,028
+Yani efektif bir algoritma dediğimiz zaman ne anlamamız gerekiyor?
+
+19
+00:05:51,028 --> 00:05:52,048
+Bundan bahsedeceğim.
+
+20
+00:05:52,528 --> 00:06:01,687
+Şimdi eğer bir algoritma polinomsal zamanda çalışıyorsa, yani işte şey yaptığınız zaman, karmaşıklığını hesapladığınız zaman,
+
+21
+00:06:02,968 --> 00:06:16,028
+n, n kare, işte n küp gibi veya işte n log n gibi polinomsal zamanda olan bir karmaşıklığa
+
+22
+00:06:18,036 --> 00:06:19,468
+sahipse
+
+23
+00:06:23,603 --> 00:06:47,743
+Bu algoritma efektif algoritmadır. Çalışma zamanı, polinomsal zamanda olan algoritmalar efektif algoritmalardır. Nedir mesela bildiğimiz efektif algoritmalar polinomsal zamanda cüzden? İşte Merge Sort, ne bileyim işte Huffman Coding, Binary Search bunlar bu tür algoritmalardır.
+
+24
+00:06:49,172 --> 00:06:57,172
+Bir de bunları o zaman biz efektif algoritmalar diyebiliriz.
+
+25
+00:06:59,172 --> 00:07:05,964
+Bir de çalışma zamanı polinomusal olmayan algoritmalar var.
+
+26
+00:07:11,091 --> 00:07:36,011
+Çalışma zamanı efektif olmayan algoritmalar. Mesela en faktöryel, işte 2 üzeri n, 3 üzeri n dediğimiz eksponansiyel çözsel algoritmalar. Bunlar da yine ineffektif olan, inefficient olan algoritmalar. Ne var mesela çok meşhur böyle bilinen algoritmalar? Traveling salesman.
+
+27
+00:07:40,339 --> 00:07:51,219
+Geçen hafta backtracking'de gördüğümüz semintonian circuit bunlar şey algoritmalar.
+
+28
+00:07:52,259 --> 00:07:55,539
+Polinomsal zamanda aslında çözülemeyen algoritmalar.
+
+29
+00:07:55,620 --> 00:07:58,480
+Peki niye biz bunlara inefficient diyoruz?
+
+30
+00:07:58,480 --> 00:08:05,480
+Şundan ötürü, diyelim ki şöyle karmaşıklıkları n kareye.
+
+31
+00:08:07,156 --> 00:08:12,495
+N küp ve 2 üzeri N olan algoritmalarımız olsun.
+
+32
+00:08:12,495 --> 00:08:27,216
+N onken, yirmiyken ve elliyken aynı donanımda bunların ne kadar sürede çalıştığını bil.
+
+33
+00:08:28,403 --> 00:08:37,283
+ölçülmüş görelim. Yani ölçülmüş değil de hesaplanıyor tabii ne kadar söyle çalıştıkları. Bazılarını ölçmek mümkün olmayacak, göreceksiniz.
+
+34
+00:08:39,584 --> 00:08:52,543
+N10 iken, karmaşıklığı en olan bir algoritma işte 10'da, 100'de, 1000'de, 100.000'de bir saniye sürüyor. N20 iken
+
+35
+00:08:56,851 --> 00:09:00,211
+ve elliyken bu şekilde.
+
+36
+00:09:01,312 --> 00:09:03,872
+N-kare ise algoritmaların karmaşıklığı.
+
+37
+00:09:04,011 --> 00:09:12,132
+Şöyle çıkmış da, önce bir tanesiyle hesapladıktan sonra diğerlerini hesaplamak mümkün.
+
+38
+00:09:12,251 --> 00:09:12,751
+N-kare.
+
+39
+00:09:15,932 --> 00:09:19,652
+Bu da bu şekilde çıkmış saniye olarak.
+
+40
+00:09:21,172 --> 00:09:22,632
+N-küp de çok fena değil.
+
+41
+00:09:36,019 --> 00:09:40,619
+Ama iki üzere n'e geldiğimizde, bakın ne oluyor?
+
+42
+00:09:52,788 --> 00:09:54,028
+Şurda hataya vmiş.
+
+43
+00:10:01,716 --> 00:10:05,036
+şunun ellisi şöyle
+
+44
+00:10:19,124 --> 00:10:21,163
+21, 50'si
+
+45
+00:10:26,035 --> 00:10:33,515
+Şimdi bu durum şeyi anlatıyor herhalde, niye eksponansiyel algoritmaların inefficient olduğunu anlatıyor herhalde.
+
+46
+00:10:33,515 --> 00:10:38,715
+Yani burada gördüğünüz gibi daha da korkuncunu göstereyim size.
+
+47
+00:10:39,235 --> 00:10:47,195
+Mesela N60 olursa eksponansiyel algoritmanız şöyle hesaplanıyor.
+
+48
+00:10:50,899 --> 00:11:14,039
+Yüzyıl sürüyor. Yani küçük değerler için işte eniniz 10 sayı, 20 ise eksponansiyel karmaşıklıkta ki bir algoritma, yani bütün durumları denediğiniz bir algoritma, çözülebilir bir algoritma ama enin büyüyen değerleri için 50'ye bile dayanamıyor. Yani en 50 bile olduğunda 35.7 oluyor. Yani bu şekilde normal zamanda çözülemeyen algoritmalar.
+
+49
+00:11:14,451 --> 00:11:26,192
+Efektif olmayan algoritmalar. Bunları şey ise eğer polinomsal zamanda çözülebilen bir algoritma ise bunlara tractable algoritmalar deniyor.
+
+50
+00:11:28,892 --> 00:11:38,052
+Şey işte yani şey çalışma zamanı, polinomsal zamanı şey polinomsal algoritmaların şey olabilir yani gerçekte yapılabilir.
+
+51
+00:11:38,676 --> 00:12:02,475
+algoritmalar. Eğer polinomsal zamanda çözülemeyen algoritmalarsa, bunlara da Interactable veya Unsoldable algoritmalar deniyor. Neden? Çünkü enin büyüyen değerlerin için bunların çözümüne erişmeniz mümkün değil. Mesela işte bu hani Travelling Salesman probleminin karmaşıklığı.
+
+52
+00:12:07,443 --> 00:12:18,644
+n² çarpı 2 üzeri n. Dolayısıyla bu çözülebilir bir problem değil aslında. Normal zamanda çözülebilir bir problem değil.
+
+53
+00:12:19,403 --> 00:12:34,743
+Şimdi burada şeye tabii dikkat etmemiz gerekiyor. Polinomsal algoritma dediğimiz zaman aslında en üzeri 100 bin dediğimiz zaman bu da şey değil aslında.
+
+54
+00:12:35,443 --> 00:12:52,783
+Bu değil. Çünkü zaten enin bu kadar üstü büyüdüğü zaman bu da şey olabilecek, yani teknik olarak tractable ama aslında normalde gerçekte çok da çözülmesi mümkün olmayan bir algoritma olmuş oluyor.
+
+55
+00:12:52,927 --> 00:12:57,887
+Buraya kadar sormak istediğimiz bir şey var mı? Önce neyi anlamamız gerekiyor demek ki?
+
+56
+00:12:58,307 --> 00:13:08,647
+Neden biz polinomsal zamanda çözülemeyen algoritmaları çözüm olmayan algoritmalardır diyoruz?
+
+57
+00:13:08,728 --> 00:13:13,208
+Çünkü işte burada gördüğünüz gibi n'in küçük değerleri için tamam bir sıkıntı yok.
+
+58
+00:13:13,327 --> 00:13:15,687
+Bütün olasılıkları denedik, çözmeye çalıştık.
+
+59
+00:13:15,687 --> 00:13:20,687
+Ama n'in büyük değerleri için eksponansiyel çözüm gerektiren algoritmaların...
+
+60
+00:13:20,927 --> 00:13:24,588
+gerçek zamanda çözülebilmesi mümkün değil.
+
+61
+00:13:24,588 --> 00:13:29,588
+Şimdi bu şekilde interaktif problemler...
+
+62
+00:13:37,364 --> 00:13:40,244
+NP-non-deterministik
+
+63
+00:13:44,916 --> 00:13:57,636
+Polinomiyotur problemler. O zaman şimdi yeni bir kavram daha öğrenmemiz gerekiyor. Bundan deterministik denilen şey neymiş? Bunu bir öğrenmemiz gerekiyor.
+
+64
+00:14:08,340 --> 00:14:16,800
+Şimdi, deterministik algoritma dediğimiz şey, verilen bir giriş için her zaman aynı sonucu üreten algoritma.
+
+65
+00:14:16,900 --> 00:14:23,620
+Yani, işte 10 elemanlı bir dizi veriyoruz, diyoruz ki merge sort ile bunu sırala diyoruz.
+
+66
+00:14:24,320 --> 00:14:27,140
+Ondan sonra her zaman aynı şekilde sıralanıyor.
+
+67
+00:14:27,260 --> 00:14:32,120
+Yani bazen bir şekilde, bazen başka bir şekilde sıralanmasını beklemiyoruz.
+
+68
+00:14:32,200 --> 00:14:35,240
+Veya bir dizi veriyoruz, bir dizide bir elemanı arıyoruz.
+
+69
+00:14:35,240 --> 00:14:36,320
+Binary search.
+
+70
+00:14:36,340 --> 00:14:42,340
+çalışıyor ürünlerini kullanıyoruz ve her zaman aynı şekilde eleman varsa buluyor, eleman yoksa da bulamıyor.
+
+71
+00:14:42,340 --> 00:14:50,340
+Yani bunlar deterministik algoritmalar, deterministik makinelerde çalışan deterministik algoritmalar.
+
+72
+00:14:50,340 --> 00:15:03,340
+Non-deterministik algoritma dediğimiz şey, aynı giriş için bile farklı çalıştırmalarda farklı sonuçlar veren algoritmalar.
+
+73
+00:15:03,764 --> 00:15:12,163
+Şimdi non-deterministlik bir arama algoritması yazayım ben size.
+
+74
+00:15:19,251 --> 00:15:20,932
+Ne demek istediğimi?
+
+75
+00:15:26,100 --> 00:15:27,884
+Anlayacaksınız.
+
+76
+00:15:33,011 --> 00:15:47,572
+Şimdi bir x sayımız var aramak istediğimiz bir de a dizimiz var en elemanlı. Yapmak istediğimiz şey bu a dizinde bu x sayısını arayıp bulmak.
+
+77
+00:15:47,932 --> 00:15:52,072
+Şimdi non-deterministik bir algoritmanın çalışma şekli şöyle.
+
+78
+00:15:59,860 --> 00:16:02,100
+Önce bir yazayım anlatacağım şimdi size.
+
+79
+00:16:33,587 --> 00:17:01,548
+Non-deterministic algoritma şöyle yapıyor. Bir şey seçiliyor, J adresi seçiliyor, randomly bir J adresi seçiliyor. Eğer aradığım eleman A dizisinin J'inci gözündeyse, tamam buldum, elemanın yerini yazdırıyor. Değilse de bulamadım, failure, non-deterministic. Yani burada herhangi bir şekilde şansı mihaver giderse.
+
+80
+00:17:01,587 --> 00:17:17,347
+aradığım elemanı bulacağım, yaver gitmezse de bulamayacağım. Bunun da komplekslisi ne olur tahminen sizin için? O bir, yani burada bir döngü yok, bir şey yok. Sadece şansınızı deneme var.
+
+81
+00:17:25,652 --> 00:17:53,652
+Bu şekilde bir şey seçiyorsunuz, bir seçim yapıyorsunuz. O seçimin sonucuna göre başarılı veya başarısız oluyorsunuz. Dolayısıyla da bir tahmin süreciniz var, bir de doğrulama süreciniz var. Ondan sonra yani oluyorsa oluyor, olmuyorsa olmuyor. Bundan ötürü de her zaman aynı sonucu vermiyor. Attığım, randomde belirlediğim J adresi, X sayısının olduğu...
+
+82
+00:17:53,652 --> 00:18:00,132
+adresle çalışıyor, değilse de çalışmıyor. Şimdi bir tane de mandataministik sort gösteriyi.
+
+83
+00:18:00,132 --> 00:18:06,771
+Bir A sırasız dizisini
+
+84
+00:18:14,291 --> 00:18:18,291
+Sıralayarak D dizisine yerleştirmeye çalışalım.
+
+85
+00:18:31,604 --> 00:18:42,523
+Bu sefer döngümüz var ama bakın, normalde biz sıralama algoritmaları için hep şey konuşuruz, nedir?
+
+86
+00:18:42,604 --> 00:18:46,903
+Karmaşıklıkları en az ennogen olan algoritmalardır. Ama şimdi bakın ne olacak?
+
+87
+00:18:47,184 --> 00:18:56,903
+Şimdi başlangıçta D dizisini bir sıfırlıyoruz. Arkasından şöyle bir şey yapıyoruz. En defa dönüyoruz.
+
+88
+00:18:57,268 --> 00:19:05,408
+Yine bir adres seçiyoruz. Bir ile N arasında random bir adres seçiyoruz.
+
+89
+00:19:05,408 --> 00:19:14,408
+Eğer BG sıfırdan farklıysa...
+
+90
+00:19:14,408 --> 00:19:15,688
+Pardon.
+
+91
+00:19:26,644 --> 00:19:33,723
+Algoritma fail ediyor. Değilse B, J'yi A, I'yi yerleştiriyorum.
+
+92
+00:19:38,963 --> 00:19:40,748
+Ve sonra da şöyle bir şey yapıyorum.
+
+93
+00:20:20,915 --> 00:20:28,115
+Biraz buraya zor yazılıyor. Şimdi böyle ilginç bir yaklaşım bunlandeterministik algoritma yaklaşımı.
+
+94
+00:20:28,596 --> 00:20:34,195
+Başlangıçta B dizisini sıfırladım. Yani A dizisini sıralı olarak B dizisine yerleştirmeye çalışıyorum.
+
+95
+00:20:34,775 --> 00:20:42,155
+B dizisini sıfırladım. Arkasından randomli, en defa random bir adres seçiyorum.
+
+96
+00:20:42,275 --> 00:20:48,815
+Burada tabii şunu varsayıyorum. Aynı adresin birden fazla defa gelmediğin iyi bir random jeneratörümün olduğunu.
+
+97
+00:20:48,915 --> 00:20:51,675
+Aynı adresin bir defa geldiğini var sayıyorum.
+
+98
+00:20:54,804 --> 00:21:15,423
+Düzeltiyorum, birden fazla defa gelebilir. Özür dilerim. Toparlayabilir miyim? İyi bir random generator'ım var. Yani arka arkaya sürekli şey gelmemeli nedir? İşte iki adresi, iki adresi, iki adresi gelmemeli. Öncelikle bunu sağlamaya çalışıyorum.
+
+99
+00:21:15,423 --> 00:21:22,804
+Ama eğer gelirse, yani az sayıda gelirse o zaman ne olur? Daha önce şey olan bir...
+
+100
+00:21:22,804 --> 00:21:49,503
+adrese, yani daha önceden bir elemanın yerleştiği bir yer olur, eğer bir kere daha çıkmışsa bu adres. Eğer boşsa, anın iyinci elemanını o göze yerleştiriyorum. Ondan sonra da, eğer şanslıysam, ne olmuş oluyor? Dizi küçükten büyüğe sıralı bir şekilde yerleşmiş oluyor. Bunu da kontrol etmek için sadece şunu yapıyorum.
+
+101
+00:21:50,804 --> 00:22:05,604
+Bİ, Bİ artı birden küçükse dizinin bütün elemanları için dizi sıralı demektir. Şimdi ne demek istediğimi şurada göstermeye çalışayım. Diyelim ki dört elemanlı bir A dizimiz var. Bu da B dizimiz. Başlangıçta sıfır.
+
+102
+00:22:07,476 --> 00:22:15,796
+şey dediği için, birinci gözden bizi yerleştirdiği için, bir, iki, üç, dört şurası, bir, iki, üç, dört şurası.
+
+103
+00:22:16,236 --> 00:22:24,936
+Diyelim ki random ilk attığımız J, ikiydi. İkinci göze geldi, ikiyi yerleştirdi.
+
+104
+00:22:25,635 --> 00:22:35,076
+Ondan sonra random ikinci attığımız indis, diyelim ki bir, birinci göze geldi, üçü yerleştirdi.
+
+105
+00:22:35,476 --> 00:22:57,036
+İşte şey, çakışma olmadığını varsayıyorum. Bu turda çakışma olmadığını varsayacağım. İkinci örnekte çakışma göstereceğim. Bir daha attım. Yani Random Generator'ın iyi olduğu için çakışma yok diye varsayıyorum. Dört çıktı. Üçüncü gözdeki biri, pardon özür dilerim, biri dördüncü göze yerleştirdi.
+
+106
+00:22:59,263 --> 00:23:27,243
+Zaten işte bir sonra, sonra da üç kalmıştı. Üçüncü göz kalmıştı. Üçüncü göze de dördü yerleştirdim. Şimdi dizim şu şekilde oldu. Bakacağım sıralı mı diye. Yani önce yerleştirdim. Hiçbir iddiam yok. Bakacağım. B'yi, B'yi artı birden küçük olduğu sürece dönüyor burada. İkiden küçük olmadığı için başta fail edecek. Bu dizi sıralı değildir. Dolayısıyla iki, üç, bir, dört dizisini sıralayamadım.
+
+107
+00:23:27,263 --> 00:23:39,443
+Bu turda sıralayamadım. Ne olabilirdi? Çakışma olsaydı ne olacaktı? O da şöyle bir şey. Ve dizinizi şurada şöyle varsayalım.
+
+108
+00:23:40,435 --> 00:23:59,976
+Baştan sıfırladınız, J'yi attınız, J'yi ilk attınız, 3 çıktı, birinci gözlük 2'yi 3. göze yerleştirdiniz, J'yi bir daha attınız, yine 3 çıktı, random generator'ımız 3 buldu.
+
+109
+00:24:00,255 --> 00:24:04,755
+3. göze gittik, baktık, burası 0 değil dolu, o zaman o noktada fail ediyor.
+
+110
+00:24:04,755 --> 00:24:08,036
+Yani bir daha, işte bir daha dene falan gibi bir şey yapmıyor.
+
+111
+00:24:08,435 --> 00:24:35,615
+algoritma orada başarısız olmuş oluyor. Üçüncü durumda, yani iki tane fayda durumunu bu şekilde gösterdim. Üçüncü durumda da öyle şanslı miaverge diyor ki bütün elemanlar doğru sırayla yerleşiyorlar ve sırada bir dizim olmuş oluyor. Şimdi o zaman bu nandeterministik algoritmanın karmaşıklığı ne? Bunun da karmaşıklığı ne olacak o zaman sizce?
+
+112
+00:24:40,339 --> 00:24:41,819
+Nedir bunun karmaşıklığı?
+
+113
+00:24:44,059 --> 00:24:45,039
+O, N değil mi hocam?
+
+114
+00:24:45,539 --> 00:24:58,339
+Aynen öyle yani. Burada bir şey yok. Her zaman bunun karmaşıklığı O, N olacak. O zaman demek ki şey yani baktığımız zaman
+
+115
+00:24:59,731 --> 00:25:13,351
+Her zaman çalışmıyor ama çalıştığımda bazı zamanlarda o en karmaşıklıkla çözüm veren bir şeyim var, sıralama algoritmam var.
+
+116
+00:25:13,651 --> 00:25:20,851
+Şimdi o zamandan deterministik algoritmaların nasıl çalıştığına, mantığına bakacak olursak ne yapıyorsanız yapın.
+
+117
+00:25:27,763 --> 00:25:33,203
+şey kullanıyor, parça kullanıyor. Birincisi
+
+118
+00:25:37,779 --> 00:25:57,779
+Bir şey seçiyoruz. Mesela işte bu Search'ta ve Sort'ta şey seçtik. Nedir? İşte bir sayı seçtik. Mesela bir ile en arasında bir sayı seçtik. Yani bir seçim yapıyoruz. Ve seçim sonucunda bir...
+
+119
+00:25:59,380 --> 00:26:05,940
+şey döndürüyoruz, değer döndürüyoruz. İkinci olarak kullandığımız şey
+
+120
+00:26:08,531 --> 00:26:14,951
+Function, bir takım işlemler yaptıktan sonra başarılı bitti diyoruz.
+
+121
+00:26:15,331 --> 00:26:25,011
+Üçüncü olarak da eğer başarıyla sonuçlanırsa yaptığım şey, failure durumu. Failure da başarısız giderse.
+
+122
+00:26:26,011 --> 00:26:31,192
+Şeride de, işlem adımları da bir şeyimiz var.
+
+123
+00:26:31,604 --> 00:26:47,844
+Tahmin ettiğiniz şey var. İşte random bir sayı attınız. Ondan sonra ve bir diyelim ki search'te olduğu gibi dedik ki işte A'yı B'yı'yı eşit mi dedik. Bu guessing stage. Bu non-deterministic.
+
+124
+00:26:52,723 --> 00:26:59,483
+İkincisi de verification stage.
+
+125
+00:27:01,783 --> 00:27:03,343
+Bu deterministik.
+
+126
+00:27:08,203 --> 00:27:14,303
+Verification'da işte dizi sıralı mı diye kontrol ettik veya ix'de eşit mi diye kontrol ettik.
+
+127
+00:27:15,635 --> 00:27:32,435
+O zaman bizim den deterministik bir algoritmamız iki tane şeyden oluşuyor, ana adımdan oluşuyor. Bir tahmin yürütüyoruz bir şekilde işte ne bileyim sort için diyelim ki şey yapıyoruz işte random adresler belirliyoruz, diziyona göre yerleştiriyoruz.
+
+128
+00:27:33,011 --> 00:27:43,211
+Ondan sonra ikincisi şey yapıyoruz, verification'da elde ettiğim sonucu doğru mu yanlış mı olduğunu değerlendiriyoruz.
+
+129
+00:27:43,591 --> 00:27:46,851
+Çıkışta da doğru veya yanlış olduğunu söylüyoruz.
+
+130
+00:27:46,851 --> 00:27:53,132
+Şimdi non-deterministic polynomial algoritmalar dediğimiz şey,
+
+131
+00:27:59,700 --> 00:28:06,600
+aşaması polinomsal olan algoritmalar.
+
+132
+00:28:10,003 --> 00:28:23,003
+non-deterministik, polinomsal dediğimiz algoritmalar, verifikation aşaması polinomsal olan algoritmalar.
+
+133
+00:28:23,003 --> 00:28:34,003
+Yani eğer non-deterministik polinomsal algoritmalar,
+
+134
+00:28:37,748 --> 00:28:41,828
+makinede, polinomsal zamanda çözülebilir hale geliyorlar.
+
+135
+00:28:41,828 --> 00:28:44,628
+Yani işte aslında neden onun da sebebi?
+
+136
+00:28:44,988 --> 00:28:47,388
+Çünkü orada sadece bir doğrulama var.
+
+137
+00:28:47,628 --> 00:28:51,808
+Yani problemin çözmek için gerçek bir çözümle uğraşılmıyor.
+
+138
+00:28:52,308 --> 00:28:54,068
+Sadece doğrulama yapılıyor.
+
+139
+00:28:54,408 --> 00:28:56,348
+Yani dizi sıralı mı diye bakılıyor.
+
+140
+00:28:56,448 --> 00:28:57,828
+Yani burada biz diziyi...
+
+141
+00:28:58,163 --> 00:29:19,884
+sıralamak için ciddi bir şey yapmıyoruz. Sadece tahmin yürütüyoruz. Arkasından doğru muyu şey olarak, deterministik olarak yapıyoruz. Yani burada da aynı şekilde şunu deterministik olarak yapıyoruz. Dolayısıyla verification süreci deterministik olan algoritmalar, polinomsal algoritmalar.
+
+142
+00:29:23,059 --> 00:29:33,039
+şeylerde nedir? Sadece doğrulaması için polinomsal iş yapılmış oluyor. Şansınız varsa da polinomsal zamanda çözülmüş oluyor.
+
+143
+00:29:34,500 --> 00:29:42,980
+Şimdi o zaman demek ki doğrulamasının polinomsal zamanda olabilmesi demek şu demek.
+
+144
+00:29:42,980 --> 00:29:50,279
+Şimdi iki tür algoritma var aslında. Birincisi Optimization algoritmaları.
+
+145
+00:29:54,771 --> 00:29:58,591
+İkincisi de Decision algoritmaları.
+
+146
+00:30:00,192 --> 00:30:04,432
+Mesela eğer şey dersek, nedir?
+
+147
+00:30:04,951 --> 00:30:13,932
+Diyelim ki graf boyama probleminde komşu olan şeyler, düğümler aynı renge boyanmayacak.
+
+148
+00:30:14,451 --> 00:30:19,411
+Dersek ki bu graf en az kaç renge boyanabilir dersek.
+
+149
+00:30:26,900 --> 00:30:33,039
+Optimizasyon problemidir. Ama şey dersek, iki renge boyanabilir mi dersek,
+
+150
+00:30:33,875 --> 00:30:40,255
+Bu verification bakın, iki renge boyanabilir mi dersek, bu bir decision problemidir.
+
+151
+00:30:41,715 --> 00:30:49,135
+Bunu biz polinomsal zamanda yapabiliriz. Yani iki renge boyanabilir miyi polinomsal zamanda yapabiliriz.
+
+152
+00:30:49,215 --> 00:30:54,155
+Ama en az kaç renge boyanabilir dediğimiz zaman bu NP bir problemdir.
+
+153
+00:30:55,155 --> 00:31:01,875
+Non-deterministik polinomsal problemdir. Buradaki sıkıntı optimizasyon.
+
+154
+00:31:01,875 --> 00:31:27,875
+en iyi sonucu bulmak istiyorsunuz. Yani orada bütün olasılıkları denemek gibi bir şey var. Mesela iki renge boyanabilir mi? Hayırsa üç renge boyanabilir mi? Hayırsa dört renge boyanabilir mi? Böyle bütün seçenekleri, şunu söylemek istiyorum. Graph coloring problemi bu. Şöyle bir grafımız var diyelim ki.
+
+155
+00:31:28,915 --> 00:31:35,575
+Diyorsunuz ki, bunu ben en az, komşular aynı renkte olmayacak şekilde kaç renge boyayabilirim diyorsunuz.
+
+156
+00:31:35,575 --> 00:31:43,915
+Mesela burayı siyah boyadım, burayı mavi boyadım, bunu da mavi boyayabilirim.
+
+157
+00:31:44,615 --> 00:31:47,575
+Ama üçüncü bir renge ihtiyacım var çünkü...
+
+158
+00:31:48,395 --> 00:31:55,555
+Var mı üçüncü bir renge ihtiyacım? Yokmuş pardon. Şunu da mavi boyayabilirim, değil mi?
+
+159
+00:31:58,228 --> 00:32:05,907
+Bunu iki rengi boyayabilirim mesela. Yani iki rengi boyanabilir. Komşular aynı rengi... Ha şunu boyayamam, pardon yani hiç söylemiyorsunuz.
+
+160
+00:32:05,907 --> 00:32:08,147
+Hocam sağ üstü de sol altın ikisi de marronmadı mı?
+
+161
+00:32:08,147 --> 00:32:18,948
+Aynen, bunu boyayamam tabii ki. Dur. Hiç söylemiyorsunuz. Ben güzel güzel biliyorum çünkü onun boyanmayacağını al al. Dur nasıl boyandım.
+
+162
+00:32:21,491 --> 00:32:28,991
+Bunu ne yapmak zorundasınız? Bunu maviye boyadık üçüncü bir renkle boyamak zorundasınız.
+
+163
+00:32:30,420 --> 00:32:33,960
+Çünkü bunu ne siyahı boyayabilirsiniz, ne maviye boyayabilirsiniz.
+
+164
+00:32:34,099 --> 00:32:35,680
+Çünkü iki size komşusu olduğu için.
+
+165
+00:32:35,819 --> 00:32:39,160
+Mesela bunu en az üç renkte boyayabilirsiniz böyle bir grafı.
+
+166
+00:32:39,379 --> 00:32:47,000
+Şimdi burada optimization programı en az kaç rengi boyanabilir dediğiniz zaman böyle deneye deneye gitmeniz gerekiyor.
+
+167
+00:32:48,599 --> 00:32:57,559
+Az şeyiniz varsa, düğümünüz varsa, küçük bir grafınız varsa tamam ama büyük bir grafınız varsa bu polinomsal zamanla çözemez.
+
+168
+00:32:58,420 --> 00:33:08,759
+Bu graf iki rengi boyanabilir mi dersen sorulu olursa bu decision problemi haline geliyor. Yani burada şeye gerek yok. Nedir?
+
+169
+00:33:10,387 --> 00:33:20,288
+en iyi sonucu bulmaya gerek yok. O zaman bu çözülebilir bir hal oluyor. Polinomsal zamanda çözülebilir bir hal oluyor.
+
+170
+00:33:22,167 --> 00:33:31,468
+Şeyler, non-deterministik polinomiyon problemler aslında şey problemler, bu tür optimizasyon problemleri.
+
+171
+00:33:31,468 --> 00:33:38,387
+Mesela traveling salesman problemi, işte şeyler verilmiş, şehirler verilmiş, şehirler arasında...
+
+172
+00:33:38,387 --> 00:33:46,867
+Ortaş'ın daki mesafeler verilmiş. Burada deniyor ki her şehre bir defa uğrayarak en kısa bütün şehirleri nasıl ziyaret edersiniz deniyor.
+
+173
+00:33:47,288 --> 00:33:53,687
+En kısa nasıl ziyaret edersiniz dediğiniz zaman bu non-deterministlik polinomsal.
+
+174
+00:33:53,788 --> 00:33:59,107
+Bunun polinomsal zaman da çözümü yok. Yani optimizasyon bunun en iyiyi bulmanızı isteniyor.
+
+175
+00:33:59,107 --> 00:34:06,387
+Onun polinomsal zaman da çözümü yok veya şey dediğiniz zaman onun da polinomsal zaman da çözümü yok.
+
+176
+00:34:06,387 --> 00:34:25,827
+Poinomsal zamanda çözümü yok. Hamiltonian sorkupta başladığım yere, işte dönebiliyor muyum her düğümden bir kere geçerek dediğiniz zaman, o zaman onun da aslında şeyi yok. Poinomsal zamanda çözümü yok.
+
+177
+00:34:27,228 --> 00:34:29,387
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+178
+00:34:31,284 --> 00:34:36,064
+Hocam ben şöyle alakalı soracaktım da dersin başını kaçırdım. Bugün uygulama olacak mı?
+
+179
+00:34:37,724 --> 00:34:41,624
+Dersle ilgili sorun. Dersle ilgili sorun varsa cevap verin.
+
+180
+00:34:42,064 --> 00:34:50,104
+Yani tam şu anda non-polynomsal anlatırken dersin sonunu bekleyemeyecek kadar önemli bir soru bu.
+
+181
+00:34:50,463 --> 00:34:52,423
+Uygulama var mı yok mu sorusu sence?
+
+182
+00:34:53,300 --> 00:34:55,480
+Yok, önemli değil ama aklıma geldi.
+
+183
+00:34:55,480 --> 00:35:01,980
+Yani işte tam konuyu anlatıyorum. Bunun ortasında diyelim ki 10 dakika sana bununla ilgili açıklama yapman gerekir mi?
+
+184
+00:35:02,039 --> 00:35:06,000
+Yoksa dersin sonunda, teneffüsün başında falan aynı soru sorulabilir mi?
+
+185
+00:35:06,460 --> 00:35:08,580
+Tamam, o zaman ben araya doğru sorayım hocam.
+
+186
+00:35:08,700 --> 00:35:10,300
+Tamam, peki. Çok teşekkürler.
+
+187
+00:35:10,940 --> 00:35:12,300
+Peki, şimdi...
+
+188
+00:35:12,851 --> 00:35:29,731
+Polinomsal ve non-deterministik polinomsal dediğiniz zaman eğer çözüm polinomsal zamanda bulunuyorsa o zaman mı polinomsal bir şey olmuş oluyor?
+
+189
+00:35:33,748 --> 00:35:38,748
+Eğer çözüm polinomsal zamanda doğrulanabiliyorsa...
+
+190
+00:35:53,012 --> 00:35:57,512
+O zaman non-deterministik polinomsal olmuş oluyor.
+
+191
+00:35:57,932 --> 00:36:01,132
+Bu mantıkla da şeyler nedir?
+
+192
+00:36:02,012 --> 00:36:05,771
+Polinomsal algoritmalar şeyin bir alt kümesi aslında.
+
+193
+00:36:06,332 --> 00:36:11,972
+Baktığınız zaman non-deterministik polinomsalların bir alt kümesi aslında.
+
+194
+00:36:11,972 --> 00:36:13,832
+Şöyle diyebiliyoruz.
+
+195
+00:36:15,112 --> 00:36:17,532
+Fakat şeyi nedir?
+
+196
+00:36:18,212 --> 00:36:19,972
+Baktığınız zaman...
+
+197
+00:36:22,516 --> 00:36:35,655
+Şu soru P eşit midir NP sorusu. Daha çözümü ispatlanamamış soru. Bunun için 1 milyon dolarlık bir şey var.
+
+198
+00:36:36,052 --> 00:36:54,052
+ödül var bunun çözümünün ispatlanmasıyla ilgili. Yani polinomsal algoritmaların, non-deterministik polinomsal algoritmaların bir alt kümesi oldu. Yani şurada gördüğünüz gibi bu şey olmuş nedir?
+
+199
+00:36:54,195 --> 00:37:09,695
+kanıtlanabilen gördüğünüz gibi bir şey. Fakat polinomsal algoritmalarından deterministik polinomsal algoritmaları eşit sayılıp sayılamayacağı, yani şunun da olup olamayacağı kanıtlanmamış bir şey.
+
+200
+00:37:11,443 --> 00:37:24,443
+Clay Foundation diye bir vakıf tarafından bunun için şey konmuş, bir milyon dolar ödül konmuş bu problemin çözümü için, bir milyon dolar ödül konmuş durumda.
+
+201
+00:37:26,184 --> 00:37:28,644
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+202
+00:37:30,243 --> 00:37:30,543
+Peki.
+
+203
+00:37:30,703 --> 00:37:37,884
+Hocam, zaman geçtikçe ve yeni algoritmalar bulundukça P alına kümesi aslında büyümüyor mu giderek?
+
+204
+00:37:39,059 --> 00:37:41,059
+Nasıl yani, ne demek istedi?
+
+205
+00:37:41,059 --> 00:37:43,059
+Önceki sayfaya gelebilir misiniz?
+
+206
+00:37:43,059 --> 00:37:44,059
+Gelirim.
+
+207
+00:37:44,059 --> 00:38:01,059
+Mesela polinomal zamanında çözülebilen problemler, mesela şu anda non-polinomal olarak çözebildiğimizi düşündüğümüz şeyler, mesela başka birisinin şu anda mesela bizim aklımıza gelmeyen bir algoritmayla ya da bir yöntemle çözebildiği bir şey olduğu zaman polinomal kümesine dahil olmuyor mu?
+
+208
+00:38:01,059 --> 00:38:05,059
+Evet, evet. Yani öyle bir şey olabilir ama...
+
+209
+00:38:05,556 --> 00:38:17,815
+Genelde şu ana kadar verifiye edilebiliyor. Yani non-deterministik polinomsal zamanda çözülebildiği bilinen algoritmaların sadece doğrulaması yapılabiliyor.
+
+210
+00:38:17,935 --> 00:38:27,376
+Yani aslında mesela minimum spelling tree de NP-B algoritma. Yani biz orada genelde bir çözüm, hani geçen yıldan hatırlar mısınız minimum spelling tree'yi?
+
+211
+00:38:27,376 --> 00:38:33,376
+Orada da söylüyorduk. Yani bu iyi bir çözüm ama en iyisi olup olmadığı bilim...
+
+212
+00:38:33,556 --> 00:38:57,755
+bilmeyen bir çözüm diye. Orada aslında şeyde öyle bir algoritma nedir? Minimum spelling tree de NP bir algoritma. Şu anda şey yani öyle NP'den P'ye geçen pek algoritma yok ama zaman içerisinde dediğim doğru. Yani öyle bir şey olabilir.
+
+213
+00:38:59,731 --> 00:39:19,452
+Şimdi ama şu o şey, yani bütün P problemler aslında NP'nin bir alt başlığı olarak geçiyor. Fakat bütün NP'ler şey diye bir kural yok, nedir? P diye bir kural yok.
+
+214
+00:39:22,835 --> 00:39:36,475
+Bu şeyin de aslında NP problemlerinde şeyleri var, nedir? Çeşitleri var. Şimdi bundan bahsedeceğim.
+
+215
+00:39:36,475 --> 00:39:43,095
+Şimdi diyelim ki bu bizim problem uzayımız olsun.
+
+216
+00:39:47,251 --> 00:40:00,931
+şurada NP problemlerimiz var ve dedik ki polinomsal problemlerde aslında NP problemleri bir alt şeyi olarak kabul edilir.
+
+217
+00:40:00,931 --> 00:40:05,572
+Burada NP-hard problemler var.
+
+218
+00:40:05,572 --> 00:40:13,708
+Burada da NP-complete problemler var.
+
+219
+00:40:14,996 --> 00:40:37,876
+Ve buradaki şey şu, şimdi NP-problem dediğimiz şey aslında şey olan problemler nedir? Doğrulaması, polinomsal zamanda yapılabilen problemler.
+
+220
+00:40:42,576 --> 00:40:57,483
+Aslında o yüzden şey olan problemler, nandeterministik polinomsal problemlerde çözümü NP olup…
+
+221
+00:41:03,027 --> 00:41:04,707
+doğrulaması
+
+222
+00:41:04,707 --> 00:41:09,847
+pi olan problemler.
+
+223
+00:41:10,427 --> 00:41:12,728
+NP-hard problemler ise
+
+224
+00:41:12,728 --> 00:41:14,648
+bunların
+
+225
+00:41:14,648 --> 00:41:17,347
+polinomsal zamanda da
+
+226
+00:41:17,347 --> 00:41:20,648
+doğrulaması yok.
+
+227
+00:41:20,648 --> 00:41:21,087
+Yani
+
+228
+00:41:21,087 --> 00:41:24,148
+solution-ı NP ama
+
+229
+00:41:24,148 --> 00:41:27,188
+verification-ı
+
+230
+00:41:27,188 --> 00:41:28,327
+şey değil.
+
+231
+00:41:30,547 --> 00:41:32,363
+şöyle diyeyim hatta
+
+232
+00:41:43,668 --> 00:41:48,668
+Nomsal zamanda doğrulaması mümkün değil. Mesela şimdi...
+
+233
+00:41:50,420 --> 00:42:18,360
+Şey dediğiniz zaman, Traveling Salesman probleminde diyorsunuz ki işte bir graf verilmiş, işte bu grafta şeyler verilmiş, graftaki düğümler şehirleri gösteriyor. Ondan sonra her şehirden diğerine ne kadar zamanda gidilebileceği verilmiş ve size şey soruluyor, işte en kısa peti bu, bütün düğümlere uğrayarak gidilebilecek en kısa peti bu.
+
+234
+00:42:18,420 --> 00:42:33,340
+diye soruluyor. Şimdi burada şey diye sorarsak, bunun verification'ı ne olabilir? Bu önerdiğim PET en kısa PET mi olabilir?
+
+235
+00:42:34,452 --> 00:42:47,811
+Değil mi? Yani bunun verification'ı nedir? Ben işte diyelim ki bir pet söyleyeceğim. İşte diyeceğim şuradan çıktım, efendim buraya gittim, oradan da şuraya gittim. Bu en kısa pet midir diyeceğim mesela.
+
+236
+00:42:48,208 --> 00:43:07,208
+Bunu, yani bu verification'ı doğrulayabilmek için de polinomsal zamanda bir çözüm yok. Yani onun en kısa petrolup olmadığını bulmak için de polinomsal zamanda çözüm yok. O yüzden bu traveling seismem problemi NP-hard bir problem.
+
+237
+00:43:13,811 --> 00:43:25,311
+NP-complete dediğinizde ise aslında şey var, yani polinomsal zamanda şeyi var, verifikasyonu var.
+
+238
+00:43:25,471 --> 00:43:34,111
+Mesela şey dediğiniz zaman nedir? Hamiltonian Circuit'ta bir düğümden çıktım.
+
+239
+00:43:34,211 --> 00:43:37,871
+Bütün düğümleri gezerek başlangıç düğümüne dönebilir miyim? Soru bu.
+
+240
+00:43:37,871 --> 00:43:41,811
+Hatırlarsanız geçen haftadan. Şunu dediğim zaman...
+
+241
+00:43:41,811 --> 00:43:50,931
+Bu zaman, işte şu çözüm Hamiltonian Circuit'i sağlıyor mu dediğim zaman
+
+242
+00:43:51,411 --> 00:44:02,411
+Hemitonion circuit ne diyordu hatırlarsanız? Bir başlangıç düğümünden çıktım, ondan sonra bütün düğümlere uğrayacağım ve işte şeye dönmeye çalışacağım.
+
+243
+00:44:02,491 --> 00:44:07,351
+İşte şöyle gittim, mesela burada tıkandım kaldım, hemitonion circuit oluşturamıyorum.
+
+244
+00:44:08,391 --> 00:44:16,911
+Yani bu verilen grafun hemitonion circuit var mı yok mu dediğimizde bu aslında nandeterministik, polinomsal bir problem.
+
+245
+00:44:19,411 --> 00:44:31,751
+Şey dediğinizde, verify için, yani bu çözüm Hamiltonian Circuit mıdır dediğinizde, bu polinomsal bir şey. Niye? Burada sadece şeyi doğurluyorsunuz. Biri size diyor ki, işte ne bileyim.
+
+246
+00:44:32,340 --> 00:44:41,760
+şuradan mesela bu, buradan çıktım, buraya gittim, ondan sonra bu şey midir, Hamiltonian Sorkut mıdır, değil midir diyor.
+
+247
+00:44:41,840 --> 00:44:45,480
+Siz de bakıyorsunuz, değil diyorsunuz. Burada bir verification var.
+
+248
+00:44:45,480 --> 00:44:51,860
+Bunu polinomsal zamanda yapabiliyorsunuz. Tek yapmanız gereken şey size söylenen yolu izlemek.
+
+249
+00:44:52,180 --> 00:45:00,059
+Böyle olduğu zaman algoritmanız, yani verificationını polinomsal zamanda yapabildiğiniz zaman algoritmanız şey hale gelmiş oluyor.
+
+250
+00:45:00,340 --> 00:45:05,840
+Nedir? Non-deterministic polynomial complete hale gelmiş oluyor.
+
+251
+00:45:05,840 --> 00:45:14,340
+O zaman size iyi olacağını düşündüğüm bir tablo üzerinde ne demek istediğimi göstereyim.
+
+252
+00:45:14,340 --> 00:45:17,260
+Güzel özetlemesi açısından.
+
+253
+00:46:30,260 --> 00:46:55,260
+Şimdi bunlardan sadece P'ler şeyde çözülebiliyor, polinomsal zamanda çözülebiliyor. P, NP ve NP-complete'ler şeyde polinomsal zamanda verifay edilebiliyorlar. NP-hard'ın böyle bir özelliği yok. Dolayısıyla baktığınız zaman algoritmaların şey...
+
+254
+00:46:57,811 --> 00:47:04,411
+değerlendirmesine NP-hard problemler doğrulaması bile polinomsal zamanda yapılamayan problemler.
+
+255
+00:47:04,731 --> 00:47:06,811
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+256
+00:47:12,788 --> 00:47:14,788
+Peki, şimdi o zaman...
+
+257
+00:47:16,340 --> 00:47:41,340
+Aslında bu tabi ki bu kadar basit değil. Polinomsal, deterministik polinomsal kavramları bu kadar basit değil. Bunlarda işte redactionlar bilen bir sürü bir şeyler var. Fakat algoritmalarınızı dersi için bunu bu kadar anlatmak yeterli. Sizin bilmeniz gerektiği kadarı bu kadar temel bilgileri bilmeniz yeterli. O yüzden bu...
+
+258
+00:47:41,791 --> 00:47:44,911
+Bu kapsamda anlattım ben size.
+
+259
+00:47:44,911 --> 00:47:48,111
+Öbür sınıfta da aynı şekilde bu kapsamda anlatılacak.
+
+260
+00:47:50,387 --> 00:47:59,887
+Şimdi şeyle ilgili, algoritma analiziyle ilgili aslında bizim anlatacağımız konular bu konuyla birlikte tamamlandı.
+
+261
+00:48:01,027 --> 00:48:11,607
+Genel olarak ders boyunca birinci sınıftan beri size işte bilgisayar günlerine girişten başlayarak algoritma tasarımını anlatmaya çalıştık.
+
+262
+00:48:11,607 --> 00:48:18,387
+İşte ikinci sınıfta veri yapıları ve algoritmalar dersinde algoritmaların, özel algoritmaların araması...
+
+263
+00:48:18,387 --> 00:48:29,787
+Sıralamadır, sıralamadır gibi algoritmaları ve bunların probleminize göre hangi veri yapısıyla çözülmesinin daha uygun olacağını görmüştünüz.
+
+264
+00:48:29,927 --> 00:48:46,387
+Bu senede algoritma artık en son, algoritma analizi dersinde işte dinamik programlama, backtracking gibi farklı türde çözüm şeklinde böl ve yönet, işte azalt ve yönet.
+
+265
+00:48:46,387 --> 00:49:14,387
+yönet gibi farklı çözüm şekillerini de gördünüz. Burada bütün hedef aslında şeyi bilmeniz. Yani bir problemle karşılaştığınızda önce o problemin çözümü için en uygun veri yapısını bulmanız. Graf mı kullanacaksınız, ağaç mı, yığın mı, kuyruk mu artık her bir bir sistemi. Önce en uygun veri yapısını bulmanız. Arkasından da uygun veri yapısını bulmanız.
+
+266
+00:49:14,387 --> 00:49:27,907
+Bunun çözümü bulmamız. Şimdi bizim anlattığımız şeylerin bir kısmı klasik, ne bileyim işte, Redverse Search, Redverse Search vesaire yani böyle birtakım algoritmalar. Çok şey olan nedir?
+
+267
+00:49:28,788 --> 00:49:38,728
+klasik olan her yerde kullanabileceği, yani işte hashing dediğimiz zaman hash algoritmaları, her yerde kullanabileceğiniz algoritmalar.
+
+268
+00:49:38,728 --> 00:49:49,447
+Ama bu tabanı aldıktan sonra bilmediğimiz, hiç karşılaşmadığımız bir algoritmayı da artık belki çözebilecek alt yollarıya sahipsiniz.
+
+269
+00:49:49,827 --> 00:49:53,168
+Şimdi bununla ilgili size şunu söylemek isterim.
+
+270
+00:49:54,003 --> 00:49:55,923
+Ve yapmanızı da isterim.
+
+271
+00:49:56,403 --> 00:50:08,003
+Bugün bir şeye girseniz, diyelim ki işte Amazon'dur, Google'dur, Microsoft'tur, böyle büyük uluslararası...
+
+272
+00:50:09,460 --> 00:50:18,579
+şirketlerin mülakatlarına girseniz, oralarda temel olarak sorulan sorular hep algoritma soruları.
+
+273
+00:50:18,960 --> 00:50:25,880
+Neden? Çünkü hangi konuda çalışırsanız çalışın, seküretide çalışacak olsanız, yapay zekada çalışacak olsanız,
+
+274
+00:50:25,880 --> 00:50:32,700
+eğer bilgisayar mühendisi olarak çalışacaksanız, sizden bir takım algoritmik tasarımlar yapmanız bekleniyor.
+
+275
+00:50:33,200 --> 00:50:37,460
+Yani tool'lar var, evet, ben sizlerin de...
+
+276
+00:50:37,460 --> 00:50:41,420
+bu tool'ları iyi kullanabilir olmanızın önemli olduğuna inanıyorum.
+
+277
+00:50:42,579 --> 00:50:50,480
+Yani işte ne bileyim Python'daki bütün kütüphaneleri oturup da tek tek yazmanıza gerek yok.
+
+278
+00:50:50,480 --> 00:51:00,579
+Alırsınız, kullanırsınız veya işte derin öğrenmeyle ilgili TensorFlow'da size sağlanmış çok fazla hazır şey var kullanabileceğinize.
+
+279
+00:51:02,291 --> 00:51:18,987
+Bunun ötesinde, yani bilgisayar mühendisi olarak sizin parçaları Lego yapar gibi birleştiren kişiler olmanız değil, gerekli yerlerde algoritmik tasarımları yapabilir olmanız beklenir.
+
+280
+00:51:19,476 --> 00:51:38,576
+Dolayısıyla da mesela lisansı bitiren öğrencilerimizden bu şirketlere başvurularda yapıp mülakaplarına katılan katlar kazanıp mesela iki tane mezunumuz şu anda Amazon'da, biri Microsoft'da.
+
+281
+00:51:39,987 --> 00:51:48,447
+İkisi Microsoft'da, böyle farklı uluslararası büyük şirketlerde, yani başka yerlerde doğru bir çalışan mezunlarımız da var.
+
+282
+00:51:49,947 --> 00:51:58,387
+Hep sorulan temel sorular başlanmıştı, algoritmik sorular ki nasıl çözeceğinizi görüp ondan sonra uzmanlaşılacak alana göre devam ediyor.
+
+283
+00:51:58,387 --> 00:51:59,747
+Şimdi benim size sorunlayacağım.
+
+284
+00:52:00,340 --> 00:52:28,340
+O yüzden olaya o gözle bakın. Çünkü Türkiye'de de herhangi bir firmada çalışsanız bir fark yaratmamız gerekiyor. Çünkü çok fazla bilgisayar mayabüsü var. Ve pek çok aslında bu mezunlar bu araçları çok güzel kullanabiliyorlar. Bu da farklı tasarımlarınız var. Gökme tasarımlarınızı yaratabilirsiniz. Çünkü o değer yani onu yapabilen çok fazla siz sataja gittiğinizde...
+
+285
+00:52:28,340 --> 00:52:45,559
+Bu öğrencilerden geri gelen beslemedir, staj yapan öğrencilerden. Hep bundan bahsederler. Biz sorulan problemlerle ilgili algoritmaları çok rahat tasarlıyoruz ama diğer arkadaşlar bizim kadar rahat çözüm üretemiyorlar diye.
+
+286
+00:52:48,244 --> 00:53:10,244
+Bu bir fark yaratmaktır. Dolayısıyla şeyi önemseyin. Yani kendi kendinize iyi algoritma tasarlamayı, efektif algoritma tasarlamayı önemseyin. Yani burada şeyi gördünüz ama çalışıyor da ötesi o algoritmanın efektif çalışıp çalışmaması. Burada bir sınav puanınızı belki etkiliyor olabilir ama gerçek dünyada...
+
+287
+00:53:10,996 --> 00:53:21,536
+Yani müşterinin milisaniye mertebesinde hissettirmeden çalışan bir programı, saniyeler mertesinde çalışan programa tercih edeceğiz.
+
+288
+00:53:21,596 --> 00:53:30,376
+Ay şikayır zaten. O yüzden buna önem verin. Sizler de şeyden hiç çekinmeyin. Ben hep teşvik ediyorum öğrencilerinizi.
+
+289
+00:53:30,856 --> 00:53:35,176
+Yani o mülakatlara girip gayet güzel yapabilecek şeydesiniz.
+
+290
+00:53:36,403 --> 00:53:43,244
+seviyedesiniz. Buna inanıyorum. Yani ne bileyim, en azından...
+
+291
+00:53:43,699 --> 00:54:06,839
+Notu BA ve üzeri olan, veri yapılarında algoritma analizi dersinde notu BA ve üzeri olan normalde, şimdi tabii değişik bir dönemdeyiz, böyle ölçmeler de çok gerçekçi olmuyor belki ama bilgi seviyesi o seviyelerde olan öğrencilerin bu şeylerde çok rahatlıkla çalışabileceğine, işler çıkarabileceğine inanıyorum.
+
+292
+00:54:07,284 --> 00:54:14,284
+Bu yüzden buna önem vermemizin size uzun vadede fayda sağlayacağını düşünüyorum.
+
+293
+00:54:14,867 --> 00:54:42,847
+Devamında da bu üçüncü sınıfta sonuçta şeydir aslında, düz yarı yönündeyiz, bir de bahrımız var. Üçüncü sınıf aslında işe karar verdiğimiz dönemdir, uzmanlaşmaya karar verdiğimiz dönemdir. O yüzden bence tamam çok ters bir döneme denk geldiğimiz ikinci sınıftan böyle bir pandemiye yakalanıp online eğitime geçince birazcık tabii yüz yüze eğitim gibi avantajı da var.
+
+294
+00:54:42,867 --> 00:54:54,867
+kadar dezavantaj var, yüz yüz eğitim gibi olmuyor aslında. Bence şimdi yavaş yavaş şeye karar verin. Hangi konularla devam etmek istediğinize karar verin.
+
+295
+00:54:54,867 --> 00:55:00,867
+İşte yapay zeka mı olacak, security mi olacak, sistemci mi olacaksınız?
+
+296
+00:55:01,844 --> 00:55:28,123
+Neyin size daha yakın geldiğini, hangi konuyla daha çok ilgilenmenize veya daha yetenekli olduğumuza yani bir de öyle bir şey var. Mesela herkes network konularında çok başarılı olacak diye bir şey yok. Bir kısım daha başarılıdır. Bir kısım o kadar yatkın değildir gibi şeyi seçin. Ben yapay zeka konusunda çalışıyorum ama mesela yani yapay zeka iyi bilin ama
+
+297
+00:55:28,980 --> 00:55:56,839
+Herkesin yapay zeka konusunda çalışması da şu anda çok kalabalık olduğu bölge. Mesela şu anda bence security daha boş bir alan. Hani seviyorsanız o konuları hem önemli hem de daha boş olması açısından ihtiyacın fazla olduğu alan. Öyle bir şeylere yönelmek de güzel olabilir. Yani neyse, neyi seviyorsanız bence üçüncü sınıf buna karar vermez ama.
+
+298
+00:55:57,523 --> 00:56:25,523
+Tabii ki artık bu yaştan sonra 18 yaşını geçmiş kişiye öyle yap, böyle yap denmez. O yüzden bu şey bizi de çok duklatıyor. Sizin de bir kısmınıza bu kopya meselesi bilmem ne çok duklatıyor ama bu dönemde de yani bu pandemi ikinci dönemde büyük ihtimalle evden yapılacak gibi gözüküyor dersler. Bu dönemde de bunu lehinize çevirebilirsiniz. Mesela iyi ara bir bitirme projeleri alın. O projelerde şey...
+
+299
+00:56:25,523 --> 00:56:51,523
+Bir şey anlamaya çalışın. Yani kolay, hızlı, bitecek projeler değil bana sorarsanız. Size faydası olacak, gelişiminize katkı sağlayacak, ilme kazandıracak projeler seçmeye çalışın. Orada da mesela şey yapın yani işte çok kararsızsınız diyelim ki ara projede işte yapay zeka projesi alın, bitirmede de efendim security projesi alın diyelim ki.
+
+300
+00:56:53,523 --> 00:56:57,603
+Network'la ilgili bir proje alın, bitirme de yapay zeka ile ilgili bir proje alın gibi.
+
+301
+00:56:58,163 --> 00:57:04,163
+Yani eğer kararsızsanız, şu anda tam bir karar oluşturamamışsanız bunları deneyin.
+
+302
+00:57:05,503 --> 00:57:07,963
+Farkındaysanız kapanış konuşması yapıyorum haftaya.
+
+303
+00:57:08,103 --> 00:57:11,923
+Çünkü şimdi anlatacağım ders nasıl yapacağımızı.
+
+304
+00:57:12,824 --> 00:57:17,163
+Ondan sonra bunlara dikkat edin ve bence...
+
+305
+00:57:18,420 --> 00:57:45,260
+Eğer böyle hani şimdi bölümü bir kaza ara girenler vardır, işte falan burayı tutuyorduk, buraya girdim falan diye, bir de gerçekten bilgisayar mühendisli olmayı isteyerek girenler vardır. Üçüncü türde kaza ara girip çok istekli, yani memnun olup, severek devam edenler vardır. Yani mesleği seviyorsanız, sevdiyseniz bence bu ihtimalle şeyi veremelisiniz, yani tavsiyeli, yüksek lisansı.
+
+306
+00:57:46,420 --> 00:57:54,020
+Bir değil, lisans eğitimi, sabah da söylüyordum görüntü işleme dersinde, size temel bilgilerin kazandırıldığı eğitim.
+
+307
+00:57:54,420 --> 00:57:58,680
+Eskiden bu yeterli olabiliyordu, yani lisansı bitirdim, iş hayatına atıldım.
+
+308
+00:57:59,040 --> 00:58:05,760
+Hatta Türkiye'de bizim öğrenciler, yani bizim derken diğer üniversitelerdekiler de herhalde aynı şeyden şikayetçiydi.
+
+309
+00:58:06,380 --> 00:58:14,420
+Bir 10 yıl öncesinde şeyden yakınıyorlardı, yani bu aldığım eğitimin %25'ini bile kullanmıyorum, piyasada yapılan...
+
+310
+00:58:14,420 --> 00:58:29,420
+bilgisayar mühendisliği bilgisinin çok altında işler deniyordu. Fakat artık Türkiye'de de güzel çalışmalar, projeler yapılıyor. Yani her yerde olmasa bile iyi şeylerin yapıldığı.
+
+311
+00:58:29,780 --> 00:58:39,720
+firmalar var, iyi işlerin yapıldığı firmalar var. Dolayısıyla yüksek lisans eğitimi bence çok gerekli ki bir konuda uzmanlaşın.
+
+312
+00:58:39,880 --> 00:58:53,880
+Yani hani burada dört yıllık aldığımız eğitimle diyelim ki bir sistem konusunda, ne bileyim dağıtık sistemler konusunda veya işte security konusunda veya işte görüntü işleme konusunda uzmanlaşamazsınız.
+
+313
+00:58:54,800 --> 00:58:57,740
+Uzmanlaşabilmek için bir yüksek lisans eğitimi alma.
+
+314
+00:58:57,780 --> 00:59:25,780
+gerekli, mutlaka gerekli. Hatta dünyada iyi ARGE merkezlerinde çalışacak kişilerin doktora yapmış olması tercih edilen bir şey. Çünkü doktora da artık iyice uzmanlaşıyor. Yoksa o Google'da, Facebook'ta dinlenme o şeyler nasıl yapılacak? ARGE projeleri, şu anda günlük hayatta çok böyle verimli kullandığınız ürünler nasıl yapılacak? Onlar için gerçekten bayağı bir uzmanlık olmalı.
+
+315
+00:59:25,780 --> 00:59:50,720
+olması gerekiyor. Dolayısıyla, benim sizin tavsiye ederim bunlar. Üçüncü sınıf bir şeydir artık, böyle şekillenme zamandır. Bir de çok az meslek dersi görüyorsunuz. İki de bir temel oluşturuluyor size, işte aldığınız derslerde. Üçüncü sınıfta artık meslek bayağı meslek derslerini görür hale geliyor.
+
+316
+00:59:51,411 --> 01:00:05,211
+Dolayısıyla artık siz de kendi kendinize yavaş yavaş yolunuzu çizin. Buna da şeyle başlayın, iyi bir ara proje konusu alarak başlayın, oradan devam edin.
+
+317
+01:00:05,211 --> 01:00:14,211
+Benim söyleyeceklerim bu kadar. Şimdi az önce, kimdi tabi ben isimleri görmediğim için az önce birisi sordu şey diye.
+
+318
+01:00:17,268 --> 01:00:23,428
+şey nedir, uygulama yapacak mısınız diye. Şimdi ödevi pazara dediğimiz için teslimini tabii ki uygulama yapamayacağız.
+
+319
+01:00:23,668 --> 01:00:30,968
+Yani şimdi aslan arkadaşlar ödevi çözerlerse veya yani pazara kadar siz ne yapacaksınız değil mi?
+
+320
+01:00:31,008 --> 01:00:38,268
+O yüzden uygulama yapamayacak bugün. Önümüzdeki hafta için şey diye konuştuk. Yani yine...
+
+321
+01:00:39,827 --> 01:00:59,688
+Ders yapmayacağız, ders konularımız bitti zaten. Çünkü ikinci bize yapmadık. Kaynama da olmadı, derslerde bir eksik şey de olmadı. Dolu dolu bütün dersleri yapabildik. O yüzden şey diye düşündük, önümüzdeki hafta lab yapılsın diye düşündük.
+
+322
+01:00:59,775 --> 01:01:13,715
+Yine random ve bütün öğrencilere lab yapmak çok mümkün olmayacağı için random seçilen öğrencilere veya bilmiyorum onu bir konuşuruz belki bir şekilde herkese yapmak mümkün olur mu ama yüz küsur kişi de çok zor.
+
+323
+01:01:15,375 --> 01:01:22,335
+Sözlü şeklinde yapmak, diğerlerini ödevlerinden değerlendirmek şeklinde bir çözüm düşündük.
+
+324
+01:01:22,804 --> 01:01:33,003
+Olay budur. Ondan sonra bir de son olarak proje vereceğiz size. Yine kısa bir şey vereceğiz. Ona uzun süre vereceğiz.
+
+325
+01:01:33,003 --> 01:01:44,483
+Maksat yine dediğim gibi bir günde iki günde yapılabilir ama vaktiniz olduğunda yapın diye uzun bir süre vereceğiz. Böylece bu dönemki algoritma analizi dersini bu şekilde tamamlamış olacağız.
+
+326
+01:01:45,023 --> 01:01:47,864
+Şimdi genel olarak her türlü sorunuzu alabilirim.
+
+327
+01:01:50,036 --> 01:01:52,096
+Hocam, mazeret sınavı ne zaman olacak?
+
+328
+01:01:54,155 --> 01:02:00,335
+Mazeret sınavı olması için bize şey gelmesi lazım, bölümden bilekçe gelmesi.
+
+329
+01:02:01,588 --> 01:02:08,968
+Liste gelmesi lazım. Öyle bir liste gelmedi henüz. O yüzden gelmeden gelirse biz mazeret sınavı yapıyoruz çünkü.
+
+330
+01:02:09,808 --> 01:02:13,428
+Dilekçemi vermemiş olduğunu ümit etmek istiyorum.
+
+331
+01:02:13,868 --> 01:02:14,648
+Verdim hocam.
+
+332
+01:02:15,008 --> 01:02:19,948
+Tamam oldu. O zaman bu bölüm kurulundan geçiyor sizin mazeret dilekçeleriniz.
+
+333
+01:02:20,748 --> 01:02:25,248
+Bölüm kurulu bize yönlendiriyor işte şu öğrencileri mazeret sınavını alın diye.
+
+334
+01:02:25,788 --> 01:02:28,448
+O zaman yapıyoruz. Şu ana kadar bize bir bilgi gelmedi.
+
+335
+01:02:28,448 --> 01:02:29,448
+Eğer istersen...
+
+336
+01:02:29,588 --> 01:02:47,128
+Bunu bölüme bir sor. Bunlar da ne zaman değerlendirilecek, değerlendirildi mi falan diye oradan takip et istersen. Genelde şey olması lazım, mazara sınavı yapılacaksa önümüzdeki hafta yapılması lazım. Finallerden önce olması gerekiyor çünkü.
+
+337
+01:02:48,348 --> 01:02:48,888
+Tamam hocam.
+
+338
+01:02:51,288 --> 01:02:52,368
+Başka sorumuz?
+
+339
+01:03:02,931 --> 01:03:07,711
+Hocam, projede bir haftaya mı verilecek yoksa final dönemlerine de sarkacak mı?
+
+340
+01:03:07,711 --> 01:03:12,411
+Şey diye düşündük, ödevi vereceğiz.
+
+341
+01:03:12,411 --> 01:03:15,307
+İşte herhalde...
+
+342
+01:03:16,019 --> 01:03:43,440
+Cumaya falan veririz diye düşünüyorum. Yani en kötü ihtimalle cuma akşamına falan ödevi vermiş oluruz diye düşünüyorum. Kesin bir şey söylemiyorum. Çünkü ders iki kişi verdiğiniz için birlikte değerlendirme işinde aynı ortamda da olmayı için birazcık o işler zaman alabiliyor. Herhalde cumaya veririz diye düşünüyorum. Ama şey diye planladık. Yine ikimiz adına da konuşmak istemiyorum ama dedik ki süreyi uzun tutarız.
+
+343
+01:03:44,019 --> 01:03:51,440
+Finalleri yapmayı deneriz en azından, finale kadar falan deriz en azından.
+
+344
+01:03:52,740 --> 01:03:59,500
+Onu şimdi kesin bir şey söylemeyeyim ama böylece vakit bulduklarında yaparlardık ama tekrardan söyle.
+
+345
+01:03:59,579 --> 01:04:03,940
+Uzun bir şey sormayacağız. Yine bir iki günde hemen yapılabilecek bir şey söyleyeceğiz.
+
+346
+01:04:07,764 --> 01:04:13,764
+Hocam, final sınavı hangi tarzda olur? %1'e benzer mi?
+
+347
+01:04:16,764 --> 01:04:20,264
+Çok az duyabildim. Biraz daha yüksek sesle sorabilir misin?
+
+348
+01:04:21,104 --> 01:04:23,604
+Final sınavı hocam hangi tarzda olur?
+
+349
+01:04:24,628 --> 01:04:28,447
+Hiç bilmiyorum, kopya çekilemeyecek bir tarz bakıyoruz.
+
+350
+01:04:29,788 --> 01:04:35,387
+Çünkü bunu daha önce de konuşmuştuk, Gökten yazı geldi işte şey olmasın diye.
+
+351
+01:04:35,387 --> 01:04:47,387
+Yani çekilememesini sağlamanın çeşitli yolları oluyor ama hiç çözülemeyen yolu sınavda yerine başka birine sokma olduğundan olacağı.
+
+352
+01:04:47,967 --> 01:04:52,608
+Mesela şimdi en son hocalar şey yapar.
+
+353
+01:04:52,628 --> 01:04:59,927
+Sorularda geriye dönememe ve süreyi daha kısa tutma ile bayağı bir şeyi engellemişler.
+
+354
+01:05:00,007 --> 01:05:07,527
+Birlikte yapmayı engellemişler bu şekilde bir sonuç çıktı ama orada da şeyi hala çözmek mümkün değil.
+
+355
+01:05:07,648 --> 01:05:11,387
+Birisinin yerine girme problemini çözmek mümkün değil.
+
+356
+01:05:11,947 --> 01:05:14,387
+Şu anda bilmiyorum açıkçası onu nasıl yapacağımızı.
+
+357
+01:05:15,987 --> 01:05:16,527
+Hocam.
+
+358
+01:05:17,387 --> 01:05:17,807
+Buyurun.
+
+359
+01:05:18,648 --> 01:05:19,307
+[öğrenci] sen sorun.
+
+360
+01:05:19,648 --> 01:05:23,648
+Tamam, teşekkür ederim. Geri dönme kısmıyla ilgili bir şey söylemek istedim.
+
+361
+01:05:23,648 --> 01:05:32,648
+Çok büyük da yardımcı olabildiğini düşünüyorum böyle bir seçeneğinde ama öğrenciler için de aslında büyük bir problem oluşturuyor bu durum.
+
+362
+01:05:32,648 --> 01:05:37,648
+Çünkü önümüzdeki soruları bilemediğimiz için zaman yönetimi konusunda biraz problem yaşıyoruz da.
+
+363
+01:05:37,648 --> 01:05:43,648
+Eğer öyle bir planınız varsa, finalde test kısmında geri dönememe gibi, onu yapmam.
+
+364
+01:05:43,664 --> 01:05:44,364
+Öğrençler.
+
+365
+01:05:44,364 --> 01:06:11,284
+O konuda çok hak veriyorum. Şey de dert çünkü ben kendi adıma da şey yapıyordum yani her yaparım hala da her zaman yani daha gerçi bu ara ben tek sınava girmiyorum ama sınava girdiğim dönemlerde yani hızla okuyup buna vakit şu anda ayırmayayım önce çözebileceklerimi bitireyim sonra döner şeye bakayım dedim yani bu tarz böyle olmalı zaten test yapıyorsanız özellikle önce yapılır yani.
+
+366
+01:06:11,664 --> 01:06:23,664
+Klasikte de öyledir. Önce yapacağını yaparsın, sonra daha zor olanlara dönersin falan ama yani siz de takdir edersiniz ki olay bayağı çığırından çıkmış vaziyette.
+
+367
+01:06:23,664 --> 01:06:31,328
+Yani öyle bir ağ var. Bir ara şey vardı, hatırlar mısınız? Hadi diye, hadi miydi o oyun vardı? Bir oyun vardı.
+
+368
+01:06:31,327 --> 01:06:39,527
+soru soruyorlar, bilirseniz sonuna kadar devam ediyorsun. Hatırlıyor musunuz cep telefonlarında oynanan böyle bir şey vardı?
+
+369
+01:06:40,027 --> 01:06:43,608
+50 kişilik gruplar kuruyorlardı falan bir soruya cevap vermek için.
+
+370
+01:06:44,128 --> 01:06:51,248
+Şimdi burada da yani siz kendiniz biliyorsunuz aslında. Hatta bazı öğrenciler bize anlatıyorlardı nasıl.
+
+371
+01:06:51,679 --> 01:06:58,679
+Böyle şeyler var, aranızda köstebekler var arkadaşlar. Nasıl kopya çekildiği ile ilgili.
+
+372
+01:06:58,679 --> 01:07:04,679
+Yani çözümlerden birisi bu. Yani biz de çok çaresiziz. Çünkü şeyi korumak da gerekiyor.
+
+373
+01:07:04,679 --> 01:07:09,679
+Sorun şu, yani şey beni çok ilgilendirmiyor. Kopya çeker, çeksin.
+
+374
+01:07:09,679 --> 01:07:16,679
+Gerçek hayatta da herhalde şey, problemi çözemekle ilgili telefon hakkını kullanacak.
+
+375
+01:07:16,679 --> 01:07:19,679
+Yani bu en saçma şey aslında kopya çekmek.
+
+376
+01:07:19,679 --> 01:07:30,315
+Ama çekmeğini korumak gerekiyor. Çünkü çekmeyen mağdur oluyor burada. Yani çekmeyen kendi gücüyle, diyelim ki biz zamanı da çok...
+
+377
+01:07:31,251 --> 01:07:52,331
+Fazla fazla verdik, her şey çok iyi. Çekmeyen kendi gücüyle diyelim ki 50 alıyor, öbür tarafta 20 kişi birleşip 90 alıyor. Çekmeyen haksızlık oluyor. Yani benim bu da düşündüğüm tek grup çekmeyen, doğru düzgün, etik bir şekilde çalışan çocuklar. Onlar çok şikayetçi oluyorlar aslında durumdan.
+
+378
+01:07:57,907 --> 01:08:01,987
+sorunun cevabı oldu mu ama? Yani haklısın, hak veriyormuş ama.
+
+379
+01:08:02,727 --> 01:08:05,107
+Yok hocam, ben sadece görüş bildirmek istemiştim.
+
+380
+01:08:05,507 --> 01:08:10,227
+Yok yok, çok haklısın. Yani bence de o doğru bir şey. Ama şey bayağı önemli değil konuşuluyor.
+
+381
+01:08:10,227 --> 01:08:14,227
+Şey, hoca arkadaşlar arasında yani. Öyle olunca...
+
+382
+01:08:14,976 --> 01:08:22,015
+Çünkü şey görüyorduk mesela, geçen senekinde, ben bu sene bakmadım çözülürken de, geçen sene biz şunu görüyorduk.
+
+383
+01:08:22,115 --> 01:08:26,855
+Mesela aslanın son iki dakikasına kadar öğrenci hiçbir şeyi işaretlemiyor.
+
+384
+01:08:27,456 --> 01:08:30,935
+Son dakika tak diye bütün yirmi soruyu birden işaretliyor.
+
+385
+01:08:31,656 --> 01:08:35,236
+Ve bakıyorsun, bunu daha önce de ders başında konuşmuştuk sizinle.
+
+386
+01:08:35,756 --> 01:08:41,136
+Mesela gruplar var mesela. Kimler arkadaş anlayabiliyorsunuz.
+
+387
+01:08:41,136 --> 01:08:42,956
+Zeri yapılarında üç grup ders yapıyorlar.
+
+388
+01:08:42,975 --> 01:08:46,175
+Üç grubu birlikte değerlendirerek bakıyorduk.
+
+389
+01:08:46,675 --> 01:08:52,716
+Yani hani diyelim ki Amaç Bey'in veya Göksel Bey'in öğrencileriyle benimkileri birlikte değerlendirerek bakıyorduk.
+
+390
+01:08:53,115 --> 01:08:54,515
+Orada şey gruplarını görüyorsun.
+
+391
+01:08:54,695 --> 01:08:59,716
+Aynı 17 soruya doğru cevap verenler, aynı 19 soruya doğru cevap verenler.
+
+392
+01:09:00,136 --> 01:09:03,435
+Ve şeyi sınav sırasında takip ettiğinde de görüyorsun.
+
+393
+01:09:03,576 --> 01:09:05,956
+Yani son dakikaya kadar hiçbir şey işaretlemiyorlar.
+
+394
+01:09:06,376 --> 01:09:09,576
+Son dakika birden hepsi birden 19 soruyu işaretliyor falan.
+
+395
+01:09:10,068 --> 01:09:26,068
+O yüzden yani o şey çok üzücü tabii yani öyle bir durum çok üzücü. Biraz karışık işler. Bilmiyorum ben nasıl olacak yani ne yaparsak kopya çekilmesini önleyebiliriz. Onu hiç bilmiyorum gerçekten.
+
+396
+01:09:26,068 --> 01:09:34,068
+Yani en doğrusu herhalde şey sınıf ortalığında yapmak olur ki o da mümkün değil. Peki başka var mı aklınıza takılan?
+
+397
+01:09:37,811 --> 01:09:38,311
+Hocam.
+
+398
+01:09:39,152 --> 01:09:39,711
+Efendim?
+
+399
+01:09:40,711 --> 01:09:43,451
+Hocam hani süreyi kısıyoruz, kopya çekmeyi azaltmak.
+
+400
+01:09:43,451 --> 01:09:44,631
+Kısıyoruz değil, hala.
+
+401
+01:09:44,891 --> 01:09:48,252
+Süreyi, bana şimdi ona ben kendi adıma açıklık vereyim.
+
+402
+01:09:48,451 --> 01:09:51,451
+Diğer arkadaşlarım da aynı şeyi yapıyordur herhalde.
+
+403
+01:09:51,851 --> 01:09:54,391
+Süreyi kısmak değil, biz süreyi fazla veriyorduk.
+
+404
+01:09:54,492 --> 01:10:00,951
+Mesela bizim meşhurdun veri yapıları ve algoritma analizi sınavlarında biz iki saat süre veriyorduk.
+
+405
+01:10:01,076 --> 01:10:29,076
+Aslında normal bir öğrenci, yani onu da sınavda görürsün zaten, normal bir öğrenci diyelim ki bir buçuk saat sonra çıkar gider. Yani sınavın üçte biri rahatlıkla bitirir gider o soruları. Biz özellikle fazla veriyorduk. Kendi adımları konuşuyorum. Bizim diğer hoca arkadaşlarla da benzer şekilde konuştuğumuz için onlar adına da konuşabilirim. Bir kısmı adına, hepsi olmasa da. Fazla verildik süreyi ki öğrenci şey demesin, ay işte biraz daha zamanım olursa yapabiliriz.
+
+406
+01:10:29,076 --> 01:10:34,475
+kargın falan demesin. Biz bunu testlerde de böyle yapıyorduk. Fazla fazla süre veriyorduk.
+
+407
+01:10:34,475 --> 01:10:42,876
+Şimdi yapılan, yani biz yapmadık daha, yani birinci sınavda biz öyle bir şey yapmamıştık. İkinci sınavda yapmıyoruz zaten.
+
+408
+01:10:42,876 --> 01:10:51,076
+Şimdi yapılan şey şu, o sınav 20 dakikada mı yapılabilir? Tamam 20 dakika verelim. Yani fazla fazla vermeyelim.
+
+409
+01:10:51,076 --> 01:10:57,076
+Ondan sonra gerçek sürede ne yapıyorlarsa yapsınlar. Tekrardan söyleyeyim.
+
+410
+01:10:57,076 --> 01:11:10,556
+Bence işini doğru yapan öğrenci biraz sıkıntıya düşüyor ama genelin davranışı iyi niyet gösterilmesini engeller hale geliyor.
+
+411
+01:11:10,655 --> 01:11:16,995
+Yoksa burada şey yok, yani o sınav 20 dakikada yapılabilir, ben 15 dakika vereyim diye bir yaklaşım.
+
+412
+01:11:17,844 --> 01:11:33,144
+Çoğumuzda yok yani, benim konuştum hani geriye dönülmez ve süreyi şey tuttuk diyen arkadaşlarda da öyle bir şey yok. Yani çözülebilir süreye ek vermedik. Oradaki yaklaşım o, verilmemesi. Bilmiyorum cevap oldum ama.
+
+413
+01:11:36,083 --> 01:11:39,163
+Anladım hocam, sizin açınızdan da öyle tabii.
+
+414
+01:11:39,859 --> 01:11:46,459
+Yani ben kendi açımdan hani hiç kopya çekmeden kendi bilgimle de hani yetiştirememiştim birinci vizeyi.
+
+415
+01:11:47,399 --> 01:11:51,679
+Bizimkisi ne? Aa biz bir de süre hiç kısmadık bak onu söyleyeyim biz hiç kısmadık.
+
+416
+01:11:52,079 --> 01:11:54,079
+O zaman ben fazla yavaş kaldım.
+
+417
+01:11:54,079 --> 01:12:07,859
+Bak gerçekten bir de biz hatta bak şöyle bir şey oldu çünkü sürene kadar da hatırlamıyorum ama hesapladık hesapladık şunu şu kadar zamanda çözse bunu bu kadar zamanda çözse üzerine ek gerçekten ek koyarak vermiştik biz birinci.
+
+418
+01:12:07,859 --> 01:12:13,979
+Hatta şeyi hesapladık, şimdi birlikte yüklerken de bunalı yaşamasınlar falan filan diye.
+
+419
+01:12:14,519 --> 01:12:16,579
+Gerçekten öyle bir şey hiç yapmadık yani.
+
+420
+01:12:17,159 --> 01:12:23,039
+Ama işte diyorum ya, haberleşme süresini kesmek için birlikte çözenlerim falan.
+
+421
+01:12:23,239 --> 01:12:28,759
+Ya bilmiyorum, ya herkes diyecek ki valla billahi biz tövbe ettik, kurbe çekmeyeceğiz diyecek.
+
+422
+01:12:29,340 --> 01:12:31,340
+Biz de normal şartlara döneceğiz.
+
+423
+01:12:31,340 --> 01:12:35,859
+Çünkü şey bile artık biliyor musunuz öyle, eskiden biz teyko mevzem yapar.
+
+424
+01:12:35,859 --> 01:12:51,599
+bazı geldilerde. Tekom egzende öğrenciye bir soru verirsin ve dersin ki çözmüğünü ertesi güne getir. Maksat hani biraz daha böyle paniğe kapılmadan, telaş etmeden çözsün, öğrensin. Hele bu başka bir şey değil.
+
+425
+01:12:53,167 --> 01:12:59,268
+Ve hiç çekmezdi kimse yani herkes algoritmada çok anlaşılıyor zaten kopya çekildiğimi.
+
+426
+01:12:59,268 --> 01:13:02,027
+Herkes kendi kendine bir şeyler yapar getirirdi.
+
+427
+01:13:02,188 --> 01:13:06,867
+Yani şu anda ne olduysa birbemdere vahşi orman şeyine döndü.
+
+428
+01:13:07,268 --> 01:13:10,047
+Yani o zamanlar yani eskiden yaptığımızda kopya çekilmez.
+
+429
+01:13:10,127 --> 01:13:11,747
+Şimdi herkes çekmeye çalışıyor.
+
+430
+01:13:11,927 --> 01:13:13,947
+Yani çekmeyenleri tenzih ediyorum.
+
+431
+01:13:14,087 --> 01:13:21,107
+Bir grup tamam kabul ediyorum ama şu anda böyle bir vahşi orman kuralları geçerli.
+
+432
+01:13:21,167 --> 01:13:29,167
+Yani zor bizim için de zor sizin için de zor. Bilmiyorum nasıl olacak? Başka var mı? Nasıl takılan?
+
+433
+01:13:29,167 --> 01:13:40,167
+Hocam, arkadaşınız söylediğiyle ilgili ben de katılıyorum. Hem test bölümü vardı bizim vizede. Mesela panikten zaman çok azdı orada.
+
+434
+01:13:40,275 --> 01:13:42,915
+Biraz da düşünülmesi gereken sorulardı.
+
+435
+01:13:42,915 --> 01:13:47,275
+İşte algoritma sıralamalar hangisinde doğru şu ya da isimlendirmek gerekiyordu.
+
+436
+01:13:47,895 --> 01:13:50,075
+Zaman çok kısıtlı geldi test açısından.
+
+437
+01:13:50,995 --> 01:13:54,136
+Klasik kısmında bir saattir galiba zaman.
+
+438
+01:13:54,796 --> 01:14:03,435
+Ama kod yazmak olunca zaten o panikten belki normal zamanda oturup yapabileceğim bir şey.
+
+439
+01:14:03,956 --> 01:14:07,915
+Ben de hiç yani panik ve heyecanla...
+
+440
+01:14:08,275 --> 01:14:36,275
+şey oluyoruz hani zaman... Panik ve heyecan işte olmayın yani demek istediğim oydu. Biz o yüzden aslında öyle iki saat aslında hiç iki saatlik olmayan aslanlara iki saat vermenizin sebebi o panik ve heyecanı şey yapmak için yani o aklınızda öyle bir sıkıntı olmasın diye. Yani aslında oradaki olay şu bir kere şunu unutmayın her zaman için. Yüz almanız gerekmiyor. O yüzden yani ve şunu da bilin zaten yüz alan da çok...
+
+441
+01:14:36,275 --> 01:14:44,971
+çok fazla yani genelde bu normal distribüüsyona göre çok az alanlar, çok düşük alanlar ve çok yüksek alanlar azdır bir sınıfta.
+
+442
+01:14:45,011 --> 01:15:12,531
+Yani her şeyi en iyi şekilde çözeceğim diye odaklanmayın. Mesela orada bir tek o şey sorusu zordu. Hangi sorttur zorsu? O da zor değil. Bakınca anlaşılıyordu aslında. Çok basitçe bakarak anlayabiliyordunuz hangi sorttur. Böyle tek tek bütün düzeyi kontrol etmenize gerek yoktu. Çünkü o sortların zaten bir şeyi var. Ne bileyim, Selection Sort'ta zaten baktığınız zaman en küçük eleman en üste gelmiştir falan gibi böyle.
+
+443
+01:15:13,011 --> 01:15:23,551
+Bir takım trikler var zaten veya quicksort'da şeyi görüyorsun, pivot birinci eleman zaten ondan küçükler bir tarafta, büyükler bir tarafta ise o quicksort'u falan.
+
+444
+01:15:23,652 --> 01:15:30,471
+Onlar gözüküyordu aslında da bir tek o böyle birazcık alerjoludur gibi bir yerleri biliyorsan bu formdan cevaplayacağım.
+
+445
+01:15:30,832 --> 01:15:34,891
+Şeye odaklanmayın lütfen yani geçen sene biz bunu veri yapılarında da yaşadık.
+
+446
+01:15:35,231 --> 01:15:40,711
+Biz kod isteyince evde de yakınca herkes çalışan kod göndermeye çalışıyor.
+
+447
+01:15:41,011 --> 01:15:42,211
+Akadaşlar yani?
+
+448
+01:15:42,707 --> 01:16:10,407
+Onunla uğraşmayın. Çünkü çalışan kod göndermekiniz çok zor. Büyük bir ihtimalle şey deniyorlar, yani deniyorsunuz işte ben bunu bir yazdım makinada da bir deneyim çalışıyor mu falan. Öyle yaparsan gitmez tabii o. Mutlaka bir yerlerde kaçaklarınız var. Zaten bizde yerlendirikken işte o kaçakların derecesine göre, ne kadar problemi bozduğuna göre kıvam veriyoruz. Şey yapınca olmuyor ben onu biliyorum yani.
+
+449
+01:16:10,707 --> 01:16:21,707
+yetişmez o zaman sorular. Sİİ'de yazdım, derledim, çalıştırdım, çalışan şeyi göndermeye çalıştım derseniz altından kalkamazsınız. Şöyle yapmanız gerekir.
+
+450
+01:16:21,707 --> 01:16:32,707
+Oturursunuz onu normal, masada, üniversitede sınav ortalığında yapıyormuş gibi çözersiniz. Elinizde basit bir analizini yaparsınız. Neyse onu öyle gönderirsiniz.
+
+451
+01:16:33,779 --> 01:16:38,500
+Ona dikkat edin yani çalıştırmaya uğraşmayın bence o çok hatalı bir şey.
+
+452
+01:16:39,199 --> 01:16:41,099
+Ben öyle uğraşmıştım hocam mesela.
+
+453
+01:16:41,500 --> 01:16:42,539
+Uğraşmayın çünkü.
+
+454
+01:16:44,420 --> 01:16:46,500
+Hocam onu yazsanız olmaz mı?
+
+455
+01:16:47,155 --> 01:16:50,155
+Ay ne yazacağım ya o kadar mutlu.
+
+456
+01:16:50,155 --> 01:16:53,155
+Çünkü insanlar çalıştırmaya emin olmak istiyor.
+
+457
+01:16:53,155 --> 01:16:55,155
+Yani niye uğraşıyorsunuz arkadaşlar?
+
+458
+01:16:55,155 --> 01:17:01,155
+Soruda öyle bir şey mi var? Çalışmayan çalışırsayız, çalışmazsa sıfır diyor muyuz biz size?
+
+459
+01:17:01,155 --> 01:17:06,155
+Yani o sizin kendi birazcık şeyiniz olmuş.
+
+460
+01:17:06,155 --> 01:17:12,155
+Ben tabii tahmin ediyorum öyle olduğunu da, geçen sene veri yapılarından bu tecrübeyi kazanmış olmanız gerekirdi.
+
+461
+01:17:12,155 --> 01:17:15,155
+Çünkü o zaman da biz sizi uyarmıştık.
+
+462
+01:17:15,155 --> 01:17:21,956
+Can kod vermeye uğraşmayın diye. Burada da aynı şey devam ediyor. Yani onu yapmaya kalkarsanız şimdi.
+
+463
+01:17:22,956 --> 01:17:24,655
+Debugging'e gitti hocam işte zaman.
+
+464
+01:17:25,296 --> 01:17:27,896
+Yapmayın işte öyle bir şeye gerek yok yani.
+
+465
+01:17:28,095 --> 01:17:33,256
+Ben de çalıştırmaya çalışmıştım. Çünkü ilk vize de hocam bu şey sorusunda, kesişim kümesi sorusunda,
+
+466
+01:17:33,716 --> 01:17:38,355
+sonra da direkt tam programını main fonksiyonunu da dahil şekilde yazınız diye belirtmiştiniz.
+
+467
+01:17:38,796 --> 01:17:43,136
+Ben de dedim herhalde direkt çalışan bir kod isteniyor. O yüzden uğraşmıştım debug et.
+
+468
+01:17:43,155 --> 01:17:43,775
+Mek için falan.
+
+469
+01:17:45,524 --> 01:18:13,324
+Yok, yine de bak orada soruda şey yok yani çalışırsa yüz yöreceğiz, çalışmazsa yüz yöreceğiz yok. Onu öyle istememizin sebebi. Çünkü o zaman herkes kafasına göre yazıyor. Puanlamayı yaparken nasıl yapacağını bilemiyorsun. Mesela birisi bir function yazıyor. O function'u da düzgün yazsa o da tamam ama ne parametreler belli, ne ne olduğu gibi hiçbir şey belli değil. Öbürü yazık oturuyor, main'iyle en baştan itibaren yazıyor doğru.
+
+470
+01:18:13,524 --> 01:18:21,764
+Üzgün, yani tam puan, yani tam puan derken, puanlamada şey yapabilmek için, meyiniyle birlikte tam yazın dedik.
+
+471
+01:18:22,484 --> 01:18:26,784
+Çalıştırmıyor muyuz? Çalıştırıyoruz. Ne de çalıştırıyoruz? Onu da söyleyeyim ben size.
+
+472
+01:18:28,204 --> 01:18:31,904
+Bazılarımızınkisi, yani şu anda biz de o avantajı kullanıyoruz, onu söyleyeyim.
+
+473
+01:18:32,444 --> 01:18:37,604
+Çok karmaşık programlar oluyor. Yani normalde çok basit çözülebilecek bir şey için.
+
+474
+01:18:38,704 --> 01:18:41,504
+Çalışmıyor gibi gözüken çok karmaşık bir çözüm.
+
+475
+01:18:41,524 --> 01:18:49,524
+ne oluyor bazılarımıza? O zaman buna edip bakıyorum ben kendi adıma, diğer arkadaşlar böyle yapıyorlar.
+
+476
+01:18:49,524 --> 01:18:57,524
+Bu çalışıyor mu diye önce bir bakıyoruz. Çalışıyorsa o zaman şeyleri anlamaya çalışıyoruz.
+
+477
+01:18:57,524 --> 01:19:02,524
+O kargaşanın içerisinden nasıl puan çıkartabileceğinizi anlamaya çalışıyoruz.
+
+478
+01:19:02,524 --> 01:19:08,524
+O yüzden yoksa ben klasikte şey yapmıyorum, çalıştırmıyorum sadece dediğim gibi.
+
+479
+01:19:09,524 --> 01:19:20,344
+Karba karışık çözüm yapanlarda yapıyorum onu. [öğrenci] hani bir şey olmasın, belki de gerçekten ben görmüyorumdur da çalışıyordur falan diye yapıyorum.
+
+480
+01:19:21,083 --> 01:19:22,344
+Anladım hocam, teşekkür ederim.
+
+481
+01:19:22,784 --> 01:19:25,923
+Rica ederim. Var mı başka aklınıza takılan?
+
+482
+01:19:26,644 --> 01:19:30,484
+Hocam bir de ödev yüzdelerini, proje yüzdelerini duyuracağım demiştiniz.
+
+483
+01:19:30,844 --> 01:19:31,963
+Duymaklı biz onu.
+
+484
+01:19:32,244 --> 01:19:35,944
+Ben kaçırdım mı yoksa orayı? Ben hatırlamıyormuş, duyurdunuz da.
+
+485
+01:19:37,140 --> 01:19:44,180
+Duyurduk gibi de, duyurmadık mı? Hatırlamıyorum valla ya, o kadar çok derste bir sürü sayı duyurduk ki.
+
+486
+01:19:44,519 --> 01:19:51,279
+Duyurmadıksa şu anda kenara not aldım, şey yaparız, onu duyuralım diye ödev yüz yedir, teşekkür ederim.
+
+487
+01:19:52,739 --> 01:19:56,460
+Şu anda ben hatırlayamadım, duyurmadıysa duyuralım diye.
+
+488
+01:19:56,479 --> 01:19:59,819
+Hocam ben en son şey hatırlıyorum, siz demiştiniz ama çocuğa ile konuşacağım.
+
+489
+01:20:00,000 --> 01:20:01,000
+Ona göre bir ortak karar.
+
+490
+01:20:01,000 --> 01:20:09,000
+Konuştuk. Sonra kalmış mı o hala? Yine mi kalmış? Peki o zaman onu şey yaparız, duyururuz. Tamam, haklısın, özür dilerim buraya not aldım şimdi.
+
+491
+01:20:09,000 --> 01:20:20,000
+Duyururuz onu. Yani vize yapacağız. Sonuçta o ikinci vize olacak ama yüzlerini de duyururuz. Normalde proje birazcık daha ağırlıklıdır.
+
+492
+01:20:25,460 --> 01:20:49,340
+Peki, o zaman benim söyleyeceklerim bu kadar. Dediğim gibi aslında sonuçta temel bence ana nokta, az önce söylediğim, yani mezun olunca arkadaşınızı da yanınıza mı götüreceksiniz veya telefon hakkınızı mı kullanacaksınız? Kendinizi size geliştirmeye odaklanın. Yani notfani, şunu unutmayın, önce onu söyleyeyim.
+
+493
+01:20:49,908 --> 01:21:02,807
+Yarın öbür gün işte bir yere master'a başvuracağım dediğinizde veya çok böyle kompetitif bir yerlere iş için başvurmak istediğinizde ortalamanıza bakılıyor, bakılmıyor diyen doğru söyleniyor size.
+
+494
+01:21:02,807 --> 01:21:09,807
+O yüzden iyi bir şeyler, iyi bir yerlerde olmak isteyenlerin ortalamasını...
+
+495
+01:21:11,028 --> 01:21:29,768
+En az 2-8 ama aslında en az 3 yapması gerekir. Yani 2-8'in altı için tabii ki yine iyi şeyler mutlaka yaparsınız, şey yaparsınız ama bir lisans üstü eğitime başvurayım dediğinizde, iyi bir yerde yapmak istediğinizde en az bir 3 ortalama beklerler.
+
+496
+01:21:31,248 --> 01:21:39,028
+Bunu dikkat edin. Yani şu anda hala ortalamalarımızı yükseltebilecek durumdayken eğer birazcık düşükse yükseltmeye...
+
+497
+01:21:39,028 --> 01:21:49,608
+dikkat edin. Ortalaması 3.4'ün üzerinde olanlar, yurt dışında çok kolaylıkla burslu master, doktora imkanı bulabilirler.
+
+498
+01:21:50,248 --> 01:21:59,888
+Orada da yabancı dilimiz önemli. Yani bu nokta da o açıda bir nokta. Son sınıfın sonuna kadar hala yabancı dilimizi daha iyileştirebilirsiniz.
+
+499
+01:21:59,888 --> 01:22:07,028
+Bir sürü online free kurslar var. Ondan sonra işte tabii şu anda sizin şey dezavantajınız.
+
+500
+01:22:07,028 --> 01:22:17,168
+Erasmus, ISK-Staşı falan birazcık böyle belirsiz şu anda gidilebilir mi, gelinebilir mi falan filan diye ama bu imkanlarınızı da değerlendirin.
+
+501
+01:22:17,288 --> 01:22:29,408
+Yani kendinize yatırım yapın. Hani şu anda biliyorum bu böyle bir işte kopya çektim, yerime arkadaş soktum, onu yaptım, ne yaptım böyle bir furya var ama bu uzun vadede zarar getirebilecek bir furya.
+
+502
+01:22:29,408 --> 01:22:34,748
+Yani şu anda siz de takip ediyorsunuzdur. En çok konuşulan konu.
+
+503
+01:22:35,028 --> 01:22:45,028
+Esprisi yapılıyor ama gerçeğe dönüşme ihtimali yüksek. Pandemi döneminde öğrenci olanların iş hayatında işi zor olacak diye siz de duyuyorsunuzdur.
+
+504
+01:22:45,028 --> 01:22:50,028
+Bu konuşuluyor. Öyle olmamaya, aradan sıyırılmaya çalışmak da sizin elinizde.
+
+505
+01:22:50,420 --> 01:23:13,859
+Yani kendinize yatırım yapın. Zor bir sene oldu. Ben hepinize teşekkür ederim. Katılım genelde hep 50-55 arasındaydı derse. Bu zorluklarda, belki çok imkansız şartlarda derse katıldığınız, dinlediğiniz için, devam ettiğiniz için hepinize çok teşekkür ederim.
+
+506
+01:23:14,323 --> 01:23:18,323
+İnşallah emeklerinizin karşılığını alırsınız.
+
+507
+01:23:21,235 --> 01:23:47,575
+Önünüzdeki dönem ve sonrasında şartlar sizin için çok daha iyi olur. Hepinize final sınavlarında başarılar diliyorum. İnşallah bu yeni yılda, hani tabii ki 31 Aralık'tan beri ocağa adım atınca birden de dünya pembeleşmeyecek ama yeni yıl daha güzel gelsin, daha iyi bir yıl olsun. Hepinize teşekkür ederim katılımınız için.
+
+508
+01:23:49,235 --> 01:23:50,915
+Görüşmek üzere o zaman.
+
+509
+01:23:52,735 --> 01:23:53,815
+Teşekkürler hocam.
+
+510
+01:23:54,055 --> 01:24:02,575
+Çok teşekkür ederim hepinize.
+
+511
+01:24:03,295 --> 01:24:05,375
+O zaman dersi sonlandırıyorum.
+
+512
+01:24:05,515 --> 01:24:07,215
+Teşekkürler, iyi günler hepinize.

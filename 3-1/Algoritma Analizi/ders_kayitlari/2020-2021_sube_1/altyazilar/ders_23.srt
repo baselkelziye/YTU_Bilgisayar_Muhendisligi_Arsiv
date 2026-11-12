@@ -1,0 +1,2379 @@
+1
+00:00:31,539 --> 00:00:58,259
+Evet, merhaba arkadaşlar. Hoşgeldiniz. Birazcık kalabalıklaşana kadar ödev ve vesaire ilgili bir iki dakika konuşalım. Mesaj gelmiş, ne gelmiş? Merhaba, teşekkür ederim [öğrenci]. Şöyle arkadaşlar, birkaç tane şey geldi arkadaşlarımızdan, mail geldi.
+
+2
+00:00:58,735 --> 00:01:07,055
+Biz bir ödev bir projeye veririz demiştik. Ödev sayısını azaltabilir misiniz diye onunla ilgili bir ödev zaman yapmak istiyorum.
+
+3
+00:01:07,055 --> 00:01:16,135
+Şimdi normalde Aykutma analizinde biz iki bize bir de dört ödev bir proje veya üç ödev bir proje yapıyorduk.
+
+4
+00:01:16,135 --> 00:01:26,735
+O seneki tatillerin durumuna göre, bazen çünkü tatiller derse denk geldiği için mesela konularda kaymalar olabiliyordu. O yüzden yetiştiremiyordu.
+
+5
+00:01:26,736 --> 00:01:42,028
+Bu sene de şöyle bir fark var. Ödev sayısını arttırmadık. Fakat sizinle de daha önce konuştuğunuz gibi değerlendirmenin daha doğru olacağı ve en önemlisi.
+
+6
+00:01:45,427 --> 00:02:00,715
+Aslında daha çok pratik yaparak öğrenmeniz daha doğru, uzakta olduğu için çünkü sınıf ortamındaki gibi belki online eğitim efektif olmayabilir sizin için. O yüzden ne kadar çok...
+
+7
+00:02:00,724 --> 00:02:22,723
+ödevlerle vesaire tecrübe kazanırsanız o kadar öğrendikleriniz kalıcı olur diye düşündüğümüzde ikinci vizlerine bu ödevleri ve projeyi değerlendirmeye karar vermiştik. Şimdi işte bir ödevi yapmasak bir projeyle devam etsek ki arkadaşlarımız oldu. Onunla ilgili söyleyebileceğim şey şu, yine ilk defa bu döneme...
+
+8
+00:02:27,027 --> 00:02:46,467
+Daha önce daha böyle zaman alıcı, zaten sürelerinde de iki hafta falan tutuyorduk. Yani duruma göre değişiyordu bazen bir hafta, bazen iki hafta ama daha belki ağır ödevler yaptırırken ses sana kötü mü geliyor? Diğer arkadaşlar ne diyecekler? Kötü geliyor mu ses?
+
+9
+00:02:47,467 --> 00:02:54,008
+Hocam sesimiz çok böyle cızırtılı geliyor da. Anlaşılabiliyor ama benden mi kaynaklı acaba? Tam onu anlayamıyorum.
+
+10
+00:02:55,572 --> 00:03:14,352
+Yok, hiçbir yere temas etmiyor. Şey, duruyor yani. Yok, etmiyorum hareket falan. Oturuyorum, şey de masanın üzerinde duruyor. Sadece yerini değiştirdim şimdi. Bir sıkıntı olmasın diye. Hala cızırlıyor mu? Kısıldı. Allah Allah. Yani hiçbir şekilde mikrofonla oynamıyorum.
+
+11
+00:03:14,592 --> 00:03:15,672
+Şu an iyi hocam.
+
+12
+00:03:15,872 --> 00:03:16,892
+İyi mi? Tamam.
+
+13
+00:03:16,892 --> 00:03:17,192
+Hoş olsun.
+
+14
+00:03:18,252 --> 00:03:18,912
+Niye?
+
+15
+00:03:19,699 --> 00:03:22,519
+Sesiniz biraz kötü geliyor da hani, talsı değil mi?
+
+16
+00:03:23,059 --> 00:03:25,359
+Neyzeyim valla, anlaşılıyorsa çok güzel.
+
+17
+00:03:26,719 --> 00:03:29,199
+Evet, sonuçta yani endişe etmeyin.
+
+18
+00:03:29,579 --> 00:03:36,279
+Hedefimiz burada şey değil, sizi bir şekilde ne bileyim, çok zorlamak falan filan değil.
+
+19
+00:03:36,379 --> 00:03:41,159
+Tek istediğiniz gerçekten olabildiğince bu dersten maksimum faydayı sağlamanız.
+
+20
+00:03:41,159 --> 00:03:47,699
+O yüzden de sadece ödevlerde şeyi hedefliyoruz, derste anlatılan bir konuyu kendiniz gerçekliğe göre...
+
+21
+00:03:47,699 --> 00:03:59,699
+Zor, içinden çıkılmaz veya çok challenging bir ödev olmasın. Yeter ki adımları da belli olsun. Bir şeyleri siz kendiniz de gerçekleyerek görün.
+
+22
+00:03:59,699 --> 00:04:04,699
+O yüzden ödev sayısında, bu kadar uzun lafın kısası, ödev sayısında bir değişiklik yapmayacağız.
+
+23
+00:04:04,699 --> 00:04:10,699
+Şimdi backtracking ile ilgili bir ödev vereceğiz bu hafta sonu. Bir tane de küçük bir proje vereceğiz.
+
+24
+00:04:10,699 --> 00:04:15,699
+Eskiden projeleri de biz büyük yapıyoruz. Daha böyle zaman alıcı.
+
+25
+00:04:15,699 --> 00:04:42,720
+uzun projeler oluyorken, burada yine kısa sadece derste anlatılanları deneyebileceğiniz bir şey olmasına çalışacağız. Olay budur. Sorunuz varsa 13-6-4 dakika, yani en geç 13-10'a kadar tartışabiliriz. Cevaplayabilirim sorularınızı. Sonra derse geçeyim ki şey olmasın. Evet, varsa alayım sorularınızı. Ama o oradan bir sürü chatten geliyor.
+
+26
+00:04:43,220 --> 00:04:49,639
+Şu an kısılmıştı iyi dediniz. Peki, teşekkürler var mı sorunuz aklınıza takılan bununla ilgili?
+
+27
+00:04:50,380 --> 00:04:56,220
+Hocam, ödevlerle ilgili değil de, bugün lap saatinde yine üçüncü ödevin kontrolü tarzı bir kontrol olacak mı?
+
+28
+00:04:57,012 --> 00:05:18,632
+Şimdi üçüncü ders saatinde uygulama yapacağız, evet. Ama şey, kontrol ile ilgili bir şey yapmayacağız. Çünkü ödevler yeni geldiği için şeyler daha henüz hiçbir şeye bakamadılar. Esen arkadaşlar bir şeye bakamadılar. Belki o önümüzdeki hafta olabilir. Bu hafta öyle bir şey yapmayacağız. Yani bir sonraki ödev de belki olabilir. Şu anda öyle bir plan yok.
+
+29
+00:05:19,091 --> 00:05:20,571
+Anladım hocam, teşekkürler.
+
+30
+00:05:21,111 --> 00:05:25,251
+Rica ederim. Peki, o zaman sorunuz yoksa ekranımı paylaşarak.
+
+31
+00:05:25,611 --> 00:05:27,531
+Hocam, ben son bir şey sorabilir miyim?
+
+32
+00:05:28,211 --> 00:05:28,531
+Sorabilir.
+
+33
+00:05:28,711 --> 00:05:32,931
+Bu ödev ve projeler için ne kadarlık bir süre vermeyi planlıyorsunuz acaba?
+
+34
+00:05:33,971 --> 00:05:36,091
+Şey diye planladık, şimdi bu...
+
+35
+00:05:36,351 --> 00:06:02,771
+Tamam, ekranımı da paylaşıyorum. Kesin olmamakla birlikte çünkü son anda bir şeyler kaydında biz de mahcup duruma düşmeyelim. Yani ödev için yine bir günlük, iki günlük bir ödev ama bir hafta verelim dedik. Çünkü onda da şey türü istekler oluyor. İşte siz bir günlük veriyorsunuz ama o gün benim dersim vardı, başlayamadım vesaire diye. O yüzden uzun tutuyoruz. Farkındaysanız çok uzun değil ödevler.
+
+36
+00:06:04,351 --> 00:06:10,471
+Aynı mantıkta düşündük. Mümkünse şeyde bitmesini sağlayacağız projenin. O şekilde soracağız.
+
+37
+00:06:11,031 --> 00:06:19,611
+Finaller başlamadan bitecek şekilde çok büyük olmayan sadece değişik bir soru olacak şekilde bir proje yaptırmayı planlıyoruz.
+
+38
+00:06:19,611 --> 00:06:27,211
+Ama kesin bir şey söylemeyeyim. Çünkü bazen bizim kontrolümüz dışında bir şeyler kayarsa mahcup olmayalım. Plan bu.
+
+39
+00:06:27,636 --> 00:06:37,636
+Anladım hocam. Ben de şeyden dolayı sormak istedim. Çünkü başka ödevlerimiz de oluyor halinde. Bu arada biraz rom canadırız. O yüzden yani ne kadar ödevleriniz?
+
+40
+00:06:37,636 --> 00:06:52,636
+Çok haklısın. Biz dediğim gibi şey planladık. Yaptığınız ödevlerde de bunu fark etmişsinizdir. Aslında ödev diyelim ki bir günlük oluyor ama biz ona uzun bir süre veriyoruz ki aynı zamanda diğer ödevleri de yapıyorsunuz, işte derse giriyorsunuz, çıkıyorsunuz.
+
+41
+00:06:52,692 --> 00:07:05,132
+Zaman buldukça ödevle uğraşın diye. Ona özellikle dikkat ediyoruz. Yani süre gerçek ödevi yapma süresi değil. Yine öyle yapacağız. Yani yine ona dikkat edeceğiz.
+
+42
+00:07:06,872 --> 00:07:07,492
+Var mı başka?
+
+43
+00:07:07,512 --> 00:07:10,852
+Üçüncü ödevdeki bonus nereye eklenecek?
+
+44
+00:07:13,232 --> 00:07:18,412
+Üzerine 120 olacak. Yani bonusuyla birlikte düzgün yapmış olanlar 120 olacaklar.
+
+45
+00:07:21,908 --> 00:07:23,307
+Oldu mu cevap?
+
+46
+00:07:24,348 --> 00:07:25,728
+Oldu hocam, teşekkür ederim.
+
+47
+00:07:25,968 --> 00:07:30,627
+Rica ederim. Yani sonuçta ödevlerinizin ortalaması alınırken o yüz yeme olacak.
+
+48
+00:07:31,007 --> 00:07:34,487
+Şey sözü vermiştim ama onu bakamadık, onu ben size söyleyeceğim.
+
+49
+00:07:35,028 --> 00:07:40,288
+Oranlarını konuşacaktık ama fırsat bulup onu konuşamadık.
+
+50
+00:07:40,367 --> 00:07:42,187
+Onu size bildireceğim, merak etmeyin.
+
+51
+00:07:42,668 --> 00:07:44,147
+Var mı başka aklınıza takılan?
+
+52
+00:07:48,755 --> 00:08:16,755
+Evet, ikinci vize yok. Konuşmanın başını kaçıran arkadaş. Yalnız şey konusunda bilgi vereyim. YÖK'ten yazı geldi. Bütün üniversitelere dağıtılan bir yazı var. Sınavlarda kontrollerin şeye engel olacak şekilde yapılması konusunda bir yazı geldi. Nasıl bir önlem alınacak onu belirtmiyor ama yani hepimizin sizin ve bizim de şikayetçi olduğumuz kopya çekmek yerine başka birini sokmak.
+
+53
+00:08:16,755 --> 00:08:44,675
+gibi problemlerin önüne geçmek için bir önlem alınıyor şu anda. Nasıl yapılıyor? Tabii bize bildirilmedi ama üniversiteler arasında, yani bütün üniversitelerin ortak uygulayacağı bir takım kurallar konulacak sanıyorum. Çünkü YÖK'ten böyle bir yazı geldi. Evet, yani evet bu kamera mı? Kameraya olmaz demişlerdi. Bilmiyorum bakalım. Biz bize bildirileni uyguluyoruz inşallah.
+
+54
+00:08:44,755 --> 00:08:52,076
+şey olur yani bu çünkü artık öğrencileri de rahatsız etmeye başlamıştı. Öğrenciler şikayetçi oluyorlardı. Hani sadece biz
+
+55
+00:08:52,076 --> 00:09:02,275
+değil, kendileri de şikayetçi oluyorlardı. Bununla ilgili bütün üniversitelere yazı gönderilmiş. Böyle de bir bilgi vereyim ben size. Peki.
+
+56
+00:09:03,495 --> 00:09:05,115
+Hocam bir şey sorabilir miyim?
+
+57
+00:09:05,587 --> 00:09:06,147
+Tabii.
+
+58
+00:09:07,048 --> 00:09:11,507
+Vizelerin açıklanmasıyla ilgili, hani bilmiyorum konuştuysanız, ben biraz geç kaldım da.
+
+59
+00:09:11,507 --> 00:09:23,007
+Konuşmadık, şey diye konuştuk, Amaç Bey ile onu konuştuk, önümüzdeki haftaya yetiştirecek şekilde vize açıklamalarını yapacağız diye konuştuk.
+
+60
+00:09:23,507 --> 00:09:25,908
+Bir aksilik olmazsa önümüzdeki haftaya yetiştireceğiz.
+
+61
+00:09:26,740 --> 00:09:35,740
+Peki, şimdi o zaman başlayayım. Acele etmeye çalışıyorum. Çünkü üçüncü derste asistan arkadaşlarımız uygulama yapacaklar.
+
+62
+00:09:36,279 --> 00:09:46,639
+Şey olmasını da istemiyorum. O yüzden yarıda bırakıyor olmayı istemiyorum. Sizin açınızdan dersin ortada kalması birazcık sıkıntı oluyor tam ortaya yerinde bölünürse.
+
+63
+00:09:46,639 --> 00:09:52,919
+O yüzden başlamak istiyorum şimdi. Şimdi şöyle bir şey düşünelim.
+
+64
+00:10:00,083 --> 00:10:19,083
+Sekiz vezir problemini duymuşsunuzdur diye tahmin ediyorum. Bir zamanlar biz bunu programlama dillerinde falan böyle konu diye anlatırdık, nasıl çözüleceğini falan anlatırdık ama o zaman efektif yolla değil de daha böyle brute force yaklaşımlarla
+
+65
+00:10:21,011 --> 00:10:48,991
+çözülmesi için bir şey anlatırdık, yöntemler anlatırdık. Şimdi biz algoritmalarınızda hep şey yapmaya çalışıyoruz. Bir problemin, o problemin ihtiyaçlarına göre en elverişli şekilde nasıl çözeriz, onu bulmaya çalışıyoruz. Burada bunun için de işte farklı yöntemler, Recursion gördünüz, Divalden Concord gördünüz, dinamik programlama gördünüz. Bugün, geçen hafta başlamıştık aslında.
+
+66
+00:10:49,011 --> 00:10:57,471
+Aslında daha farklı bir yaklaşım, backtracking, geriye doğru giderek problemi çözmekle ilgili bir yaklaşım göreceğiz.
+
+67
+00:10:57,591 --> 00:11:05,371
+Şimdi diyelim ki, N-Queen problemini anlatayım size. Sekiz tane vezirdir aslında, bu sekiz vezir problemi diye geçer.
+
+68
+00:11:05,631 --> 00:11:15,011
+Öyle görürsünüz kaynaklarda. N tane veziriniz var ve bunları satranç tahtasına birbirini görmeyecek şekilde yerleştirmek istiyorsunuz.
+
+69
+00:11:17,011 --> 00:11:29,611
+Ezir'in hareket şekli nedir? Böyle bir satır boyunca gidebilir, sütun boyunca gidebilir veya diyagonal gidebilir.
+
+70
+00:11:33,971 --> 00:11:45,971
+Dolayısıyla bu en tane vezirin birbirini görmemesi demek, eğer ben bir veziri şuraya koyduysam ne olacak?
+
+71
+00:11:45,971 --> 00:11:50,795
+Buraya, buraya, buraya...
+
+72
+00:11:51,539 --> 00:12:05,479
+Yapamadım, kalemi çizmedi. Buraya başka bir vezir yerleştiremem demek değil mi? Yani birinci veziri oraya yerleştirirsen diğer vezirleri oraya yerleştiremem demek.
+
+73
+00:12:05,919 --> 00:12:15,659
+Şimdi bizim yapmamız gereken şey öyle bir algoritma tasarlayalım ki en uygun şekilde bu vezirleri buraya yerleştirsin.
+
+74
+00:12:16,148 --> 00:12:22,788
+Şimdi önce şöyle düşünelim. Birinci yaklaşımımız brute force olsun.
+
+75
+00:12:22,788 --> 00:12:28,948
+Yani hiçbir şey düşünmeden her şeyi deneyelim. Nedir her şeyi denemek?
+
+76
+00:12:28,948 --> 00:12:36,548
+Bu veziri buraya koyduysam, mesela ikinci veziri buraya koyabilir miyim diye bakalım.
+
+77
+00:12:36,788 --> 00:12:53,168
+Olmuyorsa buraya koyabilir miyim? Olmuyorsa buraya koyabilir miyim diye bakalım. Yani olası brute force ile yaklaşım nedir? Olası en temel şekliyle burada. Olası bütün çözümleri deneyelim.
+
+78
+00:13:04,307 --> 00:13:29,487
+Sekizli kombinasyonudur. Yani burada benim denemem gereken, şey yapmam gereken, kontrol etmem gereken şey, işlem miktarı, 64'un sekizli kombinasyonudur. Ona baktığım zaman, ne ediyor o zaman? 64 faktöriyel bölü değil mi?
+
+79
+00:13:29,823 --> 00:13:48,763
+64-8! çarpı 8!'den bunun sonucu şey çıkıyormuş, 4 milyar 426 bin 165 bin 368 tane
+
+80
+00:13:50,259 --> 00:13:57,199
+Seçenek var, 8 veziriniz varsa ve olası her durumu değerlendirmeye kalkarsınız.
+
+81
+00:13:58,039 --> 00:14:06,240
+8 tane, 4 milyar 426 bin, 426 milyon 165 milyon 368 tane seçeneğiniz var.
+
+82
+00:14:09,844 --> 00:14:17,784
+O zaman biraz daha tabii mantıklı düşünmeyi deneyebiliriz. Bu kadar 4 milyar 8'e 8'i taktığı için bu kadar iş yapacağımızı.
+
+83
+00:14:18,164 --> 00:14:29,084
+Biz zaten bakar bakmaz şunu görüyoruz. Diyoruz ki yani bir satıra bir tane vezir gelebilir. İkinci bir vezirin gelmesine imkan yok diyoruz.
+
+84
+00:14:29,144 --> 00:14:36,844
+O zaman her satıra bir vezir dersek ne kazanmış olacağız? Her satıra bir vezir dersek o zaman...
+
+85
+00:14:37,683 --> 00:14:53,123
+n üzeri n'den 8 üzeri 8 birdenbire 16.777.216.
+
+86
+00:14:56,436 --> 00:15:18,656
+216 karşılaştırma yapmaya girmiş olacağız. Şimdi bu ne oldu? Birdenbire şeye göre, brute force'a göre ciddi anlamda bir şey kazandık, zaman kazandık eğer sadece bir satırı kontrol edersen.
+
+87
+00:15:19,283 --> 00:15:43,323
+Yani şimdi belli ki bir sütuna da denk gelmeyecek. Değil mi? Yani bir satıra denk gelmediği için aynı vizi bir sütuna da denk gelmeyecek. Yani aynı sütuna da denk gelmeyecek. O zaman bunu şey haline getirirsek, her satıra ve her sütuna bir tane haline getirirsek, o zaman ne olacak?
+
+88
+00:15:44,563 --> 00:15:54,563
+O zaman da eğer her satıra bir tane, her sütuna bir tane dersek o da n-faktöryel olacak.
+
+89
+00:15:54,563 --> 00:16:00,563
+N-faktöryel dediğinizde buradan 8 fak... Pardon.
+
+90
+00:16:07,700 --> 00:16:08,700
+Sekiz fark.
+
+91
+00:16:09,427 --> 00:16:17,087
+Bazen kalemi yazmıyor ilginç bir şekilde sonuna kadar şarj olmuş olmasına rağmen. Artık dönem sonunda kalemde yoruldu herhalde.
+
+92
+00:16:18,107 --> 00:16:27,648
+8 faktörü elden bu sefer 40.320 pozisyona indiniz. Birdenbire bakın bu aslında şey açısından da güzel bir örnek.
+
+93
+00:16:27,648 --> 00:16:37,427
+Hani bazen şey biz yakındığımızda ama bu kadar karmaşık algoritma yazmaman gerekirdi dediğimizde.
+
+94
+00:16:37,427 --> 00:16:44,927
+İşte sizler de şey diyorsunuz ya, ama çalışıyor diyorsunuz ya, bakın bu ama çalışıyor ya çok güzel bir örnek.
+
+95
+00:16:44,927 --> 00:16:52,067
+Yani brute force yaptığımız algoritma da aslında çalışacakken 4 milyar işlem yapıyor.
+
+96
+00:16:52,927 --> 00:17:05,307
+Sadece her satıra bir tane koyacağım deyip birini yerleştirdim ve ikincisine geçersem 16.777, 16 milyon, bugün böyle oldu özür dilerim, 777 bin.
+
+97
+00:17:05,428 --> 00:17:29,428
+ne kadar iniyorsunuz birdenbire? Zaten her satıra bir tane olduğu gibi, her satıra da bir tane olması gerekir dediğinizde, bir anda 4320'ye iniyorsunuz. Peki ama daha iyisi olamaz mı? Daha iyisi olamaz mı? Daha iyisi bir de...
+
+98
+00:17:29,844 --> 00:17:40,344
+Artık umut olmadığını anladığım noktada işlem yapmayı kesip başka bir yol denersem de olabilir.
+
+99
+00:17:40,584 --> 00:17:45,903
+Yani sonuna kadar denemeyip tamam artık buradan umut yok.
+
+100
+00:17:46,684 --> 00:17:47,963
+Yani neyi demek istiyorum?
+
+101
+00:17:48,224 --> 00:17:50,483
+Mesela şöyle bir şey demek istiyorum.
+
+102
+00:17:53,483 --> 00:17:54,483
+Şimdi.
+
+103
+00:17:56,372 --> 00:18:19,412
+Diyelim ki bu durumdayken, birinci vezir buradayken, ikinci vezir şuraya yerleşir en iyi durumda. O zaman ikinci vezir buraya yerleşmişken, şimdi bakın, üçüncü vezir buraya, şöyle göstereyim size, şuraya yerleşebilir mi? Yerleşemez. Görüyorsunuz değil mi ışığı? Görüyor musunuz?
+
+104
+00:18:19,412 --> 00:18:19,991
+Evet hocam.
+
+105
+00:18:20,468 --> 00:18:27,428
+Buraya yerleşebilir mi? Yerleşemez. Buraya yerleşebilir mi? Yerleşemez. Buraya yerleşebilir mi? Yerleşemez.
+
+106
+00:18:27,708 --> 00:18:38,408
+Şimdi benim burada şeyi kesmem gerekiyor. Madem üçüncü veziri bu satıra yerleştiremedim, dördüncü satıra üçü yerleştirsem, dördüncü veziri yerleştiremeyeceğim.
+
+107
+00:18:38,408 --> 00:18:46,387
+Burada durup geri gitmem gerekiyor. Yani iki demek ki doğru yerde değil diye geri gitmem gerekiyor.
+
+108
+00:18:48,468 --> 00:18:55,208
+şeyden daha iyi bir yolum olabilir, bir satıra bir tane, bir sütuna bir taneden daha iyi bir yolum olabilir.
+
+109
+00:18:55,627 --> 00:19:02,708
+Tekrardan söylüyorum problemi. Şimdi burada ikinci veziri yerleştirdim ya, üç şimdi buraya yerleşemez.
+
+110
+00:19:03,028 --> 00:19:07,208
+Neden? Çünkü birinci vezir görüyor. Buraya da yerleşemez, ikinci vezir görüyor.
+
+111
+00:19:07,708 --> 00:19:11,708
+Buraya yerleşemez hem bir hem iki görüyor. Buraya yerleşemez iki görüyor.
+
+112
+00:19:11,708 --> 00:19:16,468
+O zaman şimdi şunu denemenin bir mantığı yok. Üçüncü veziri ben dördüncü satıra...
+
+113
+00:19:16,468 --> 00:19:38,708
+Satıra yerleştirmeyi deneyeyim demenin bir mantığı yok. Çünkü belli ki dördüncü vezir bir yere yerleşemeyecek. Bu noktada benim caymam gerekiyor. Yani bu çözüm uygun bir çözüm değil. Neyi değiştirmeliyim şu anda ben? Neyi değiştirmeyi denemeliyim sizce? Üçüncü veziri yerleştiremediysem neyi değiştirmeyi denemeliyim?
+
+114
+00:19:39,124 --> 00:19:40,183
+İkinci vezirin yerini.
+
+115
+00:19:40,224 --> 00:19:40,943
+İkinci hocam.
+
+116
+00:19:41,204 --> 00:20:00,000
+Harika. İkinci vezirin yerini değiştirmeyi denemeliyim. O zaman işte bu işlem, yani geriye doğru gidip bakarak bir şeyleri düzeltmeye çalışma işlemi, backtracking işlemi ve bu problemin backtracking ile ilerleyen...
+
+117
+00:20:00,000 --> 00:20:24,000
+çözmeye çalıştığımızda, adım sayısı 8 vezir için 2057'ye iniyormuş. 8 vezir için, bakın gördüğünüz gibi geldiğimiz noktada, yani Brutforce'da buradan başladık.
+
+118
+00:20:24,884 --> 00:20:48,463
+Backtracking'de 2057'ye geldik. Dolayısıyla işte bazı problemlerde eğer ki bir noktadan sonra artık çözüme ulaşamayacağınızı anlıyor iseniz, denemeye devam etmek yerine şey yaptığınızda durup da
+
+119
+00:20:49,491 --> 00:20:58,291
+Geriye doğru gidip düzeltmeye çalıştığınızda çözüm bulabilmek için bu yaklaşıma backtracking yaklaşımı deniyor.
+
+120
+00:20:58,551 --> 00:21:01,872
+Şimdi biz dinamik programlama gördük.
+
+121
+00:21:02,231 --> 00:21:12,471
+Dinamik programlamada bizim yaptığımız şey bir şeyin alt çözümlerini üretiyorduk.
+
+122
+00:21:12,471 --> 00:21:17,111
+Bir problemin alt çözümlerini üretiyorduk.
+
+123
+00:21:24,564 --> 00:21:36,163
+Şimdi backtracking'de yaptığımız şey ise, eğer bir noktada çözüme ulaşamayacağımızı anladıysak, oradan yola devam etmemek.
+
+124
+00:21:47,539 --> 00:22:05,039
+Demin gerçekten artık can çekişiyor. Yani oradan yolumuza devam etmiyoruz. Olay bu ve bu da bize şey kazandırıyor.
+
+125
+00:22:05,359 --> 00:22:28,119
+nedir? Zaman kazandırıyor. Ne yapıyoruz? Bunu geçen ders görmüştük sizinle. Şimdi şuradan çıktık. Ondan sonra işte iki tane yol vardı diyelim ki. Yollardan birini seçtik. Ondan sonra yine iki tane yol vardı. Üç de olabilir. Üç olsun. İşte birincisini seçtik.
+
+126
+00:22:30,451 --> 00:22:33,451
+Olmadı, geldik ikincisini denedik.
+
+127
+00:22:35,751 --> 00:22:37,792
+Şimdi onu yazayım.
+
+128
+00:22:37,912 --> 00:22:46,892
+Olmadı ise, buradan eğer yoksa, yol yoksa, en son çıktığımız noktaya dönüp deniyoruz.
+
+129
+00:22:47,072 --> 00:22:48,792
+Mesela işte bu da olmadı.
+
+130
+00:22:49,556 --> 00:22:58,256
+Artık buradan ileriye gitmiyoruz. En son çıktığımız noktaya gelip, işte bir sonraki seçeneği deniyoruz.
+
+131
+00:22:59,536 --> 00:23:10,056
+Hadi bu da olmadı, bayağı şanssızmışız diyelim ki. Ondan sonra işte buradan geri döndük, buraya geldik ve çözüm buradaymış mesela.
+
+132
+00:23:13,811 --> 00:23:26,131
+Şey bu, aslında mesela diyelim ki burada devam, yani devam, az önceki şeyi düşünün, satrançtaki gibi, yani burada belki başka çözümler de olabilecekti.
+
+133
+00:23:26,131 --> 00:23:36,371
+Ama yani buradan daha ileriye, hani dedik ya üçüncü satıra yerleştirmeyi denememizin bir anlamı var mıydı, şey dördüncü satıra? Yoktu, o zaman dedik geri dön.
+
+134
+00:23:36,791 --> 00:23:41,811
+Burada yapmaya çalışılan şey o, yani bir yerde umut olmadığını anladığın anda daha...
+
+135
+00:23:41,811 --> 00:23:53,491
+daha fazla bir şey denemeden oradan geri dönmek şeklinde. O zaman birlikte bu şeyi bir yapalım. 8 vezirde nasıl yapılacağına bakalım.
+
+136
+00:23:53,491 --> 00:24:04,531
+Sorunuz varsa lütfen arada sorun bana. Şeyi yan çevirsem nasıl olur acaba? Buraya sığmayacağım çünkü ama olsun.
+
+137
+00:24:09,940 --> 00:24:16,300
+Ondan sonra, sığamazsam yani sığamayacağım zaten de yana devam ederim.
+
+138
+00:24:17,620 --> 00:24:20,779
+Şimdi ne yaparsınız? Bir kere hiyerarşik gitmeniz gerekiyor.
+
+139
+00:24:20,779 --> 00:24:25,720
+Öyle kafanıza göre şeyi bir yere yerleştirerek.
+
+140
+00:24:26,720 --> 00:24:42,720
+Gitmek doğru bir şey değil. Herhangi bir yere random falan yerleştirmek gibi bir mantık yok. Dolayısıyla birinci göze yerleştirirsiniz. Yani birin birine yerleştirirsiniz ilk vezirinizi. Oradan denemeye devam edeceğiz. Arkasından...
+
+141
+00:24:47,443 --> 00:25:11,443
+Geldik ikinci veziri yerleştirmeye. Şimdi birin birine yerleştirdik. Pardon, şöyle yaparsam daha doğru olacak. Şunu sileyim bir saniye. Şöyle yaparsam daha doğru olacak. Onu şeyle gösterecektim ama anlaşılırlık açısından daha doğru olacak. Şimdi ikinci satırın birinci sütununa yerleştirebilir miyim ikinci veziri?
+
+142
+00:25:14,548 --> 00:25:16,807
+İkinci satırın birinci sütuna yerleşir mi?
+
+143
+00:25:18,248 --> 00:25:19,688
+Yerleşmez hocam.
+
+144
+00:25:19,948 --> 00:25:23,948
+Aynen öyle yerleşmez. İkinci satırın ikinci sütuna da yerleşmez.
+
+145
+00:25:26,288 --> 00:25:33,488
+O zaman ilk deneyeceğim şey, ikinci satırın üçüncü sütununu deneyeceğim.
+
+146
+00:25:34,008 --> 00:25:38,908
+Onu deniyorum. Yani deniyorum değil, yerleştiriyorum. Oraya yerleştirebilirim çünkü.
+
+147
+00:25:43,316 --> 00:25:58,076
+Geldi, ikinci satırın üçüncü sütununa yerleştirdim. Şimdi buradan devam ediyorum, üçüncü veziri yerleştirmeye çalışacağım. Şimdi üçüncü vezir, üçüncü satırın birinci sütununa yerleşir mi? Hayır.
+
+148
+00:25:58,592 --> 00:26:10,792
+Yani şuraya yerleşmez, şuraya da yerleşmez, üçüncü satırın ikinci sütuna da yerleşmez, üçüncü satırın üçüncü sütununa da yerleşmez, üçüncü satırın dördüncü sütununa da yerleşmez.
+
+149
+00:26:11,372 --> 00:26:15,892
+Yani şurada da onu şöyle yapayım isterseniz, bir ikiye yerleşmesi göstereyim.
+
+150
+00:26:16,392 --> 00:26:18,192
+O zaman benim ne yapmam lazım?
+
+151
+00:26:18,692 --> 00:26:24,652
+Buradan backtracking'de yaptığım şey, bir adım geriye dönmem lazım.
+
+152
+00:26:24,652 --> 00:26:26,312
+Bir adım gerisi burası.
+
+153
+00:26:26,592 --> 00:26:41,652
+Bir adım geride, ne yapacağım? İkinci vezirin yerini değiştireceğim. Burada yapmam gereken şey ikinci vezirin yerini değiştirmek.
+
+154
+00:26:47,155 --> 00:27:01,155
+Şimdi ikinci veziri burada şeye yerleştirmiştik, üçüncü sütuna yerleştirmiştik. O zaman şimdi nereye yerleştireceğiz? Kalan tek çözüm olan dördüncü sütuna yerleştireceğiz. İkinci veziri dördüncü sütuna yerleştirdik. Şimdi...
+
+155
+00:27:02,099 --> 00:27:24,399
+Üçü yerleştirmeye çalışıyoruz. O zaman üçü yerleştirmeye çalışıyoruz. Şimdi bire yine olmaz ve ikiye olur. O zaman şuradan ne yapacağız? Üçüncü vezire, üçüncü satırın ikinci sütununa yerleştireceğiz. Yapalım. Bu bir de, bu iki de.
+
+156
+00:27:29,011 --> 00:27:55,980
+ikinci sütuna yerleştirdik. Şöyle dur onu özellikle yazayım bir saniye. Şu bir kapandı, ikiye yerleştirdim. Şimdi buradan dördüncü satıra geçebilirim artık. Dördüncü satıra geçiyorum. Şimdi birinci sütuna yerleştirebilir miyim? Hayır. İkinci sütuna yerleştirebilir miyim? O da hayır. Üçüncü sütuna...
+
+157
+00:27:57,811 --> 00:28:23,251
+Yerleştirebilir miyim? Şöyle bir kere çizgi çizmiş bulundum. O da hayır. Dördüncü sütuna yerleştirebilir miyim? O şurada. O da hayır. Niye dörde yerleştirsem? İkinci vezir görüyor. Aynı zamanda birinci vezir de görüyor. O zaman şimdi ne yapmam lazım? Şimdi bir adım daha yukarı çıktım şöyle. Bir adım daha yukarı çıktığında şey oldu.
+
+158
+00:28:23,988 --> 00:28:51,988
+Nedir? İkinci veziri zaten son sütuna gelmişti. Gidebilecek başka yer kalmadı. O zaman bir adım daha yukarı çıkmam gerekiyor bu durumda. O zaman ne yapacağım? Şöyle biraz yana doğru geleyim. Birinci veziri bu sefer ikinci sütuna yerleştireceğim. Madem birinci sütunda çözüm alamadım, o zaman birinci veziri ikinci sütuna yerleştireceğim.
+
+159
+00:28:51,988 --> 00:29:06,748
+bunu ikinci sütuna yerleştirdim. Bunu ikiye yerleştirince ne oldu? Birinci sütuna ikinci veziri yerleştiremem. Birinci sütun kapalı. İkinci sütun kapalı. Üçüncü sütun kapalı.
+
+160
+00:29:11,892 --> 00:29:39,311
+Üçüncü sütun kapalı. O zaman dördüncü sütuna yerleştirmeyi deneyeceğim ki yerleşiyor zaten. Dördüncü sütuna yerleştireceğim. Buraya kadar sormak isteniriz bir şey var mı? O zaman bu burada, bunu da buraya yerleştireceğim. Tamam. O zaman şimdi gelelim şeye nedir? Üçüncü vezire, pardon.
+
+161
+00:29:41,811 --> 00:29:52,111
+Üçüncü vezire. Şimdi üçüncü veziri birinci sütuna yerleştirebiliyor muyum? Üçüncü veziri birinci sütuna yerleştirebiliyorum.
+
+162
+00:29:58,259 --> 00:30:05,500
+Şöyle bakacak olursam, bu burada, bu burada, üçü de bire yerleştirdim, o da burada.
+
+163
+00:30:05,960 --> 00:30:07,799
+Şimdi geldim dördü yerleştirmeye.
+
+164
+00:30:08,440 --> 00:30:10,220
+Birinci sütuna yerleşmiyor.
+
+165
+00:30:11,500 --> 00:30:13,759
+İkinci sütuna yerleşmiyor.
+
+166
+00:30:15,059 --> 00:30:16,980
+Üçüncü sütuna yerleşiyor mu?
+
+167
+00:30:17,240 --> 00:30:18,420
+Evet, yerleşiyor.
+
+168
+00:30:18,600 --> 00:30:21,279
+O zaman ne oldu?
+
+169
+00:30:30,067 --> 00:30:56,268
+Gayet kötü bir şöyle tahta çizdim de yani. Bu şekilde olması gereken sonucu bulmuş oldum. Şimdi bu şekilde çizdiğimiz ağaça biz state, space,
+
+170
+00:30:57,268 --> 00:30:58,548
+Tri diyoruz.
+
+171
+00:30:59,888 --> 00:31:01,268
+Yani durum...
+
+172
+00:31:02,932 --> 00:31:30,932
+uzayını gösteriyoruz. Yani bunların bir ağaç üzerinde genelde backtracking'de şeyi gösterme yolu, çözümü göstermek için kullanılan yapı bu şekilde bir state space tree'dir. Ve state space tree üzerinden çözümü gösteririz. Çünkü geri dönüşler vesaire olduğu için hani seçenekleri olabilir.
+
+173
+00:31:30,932 --> 00:31:36,612
+karar verirken seçenekleri denediğimizi bu şekilde StateSpaceTree üzerinde gösteririz.
+
+174
+00:31:36,971 --> 00:31:39,372
+Buraya kadar sormak istediğiniz bir soru var mı?
+
+175
+00:31:42,672 --> 00:31:56,731
+Peki, şimdi aslında burada yaptığımız şey tam olarak DepthFirstSearch.
+
+176
+00:31:57,811 --> 00:32:01,471
+Neden? Hatırlarsanız biz Left First Search'te de ne yapardık?
+
+177
+00:32:01,811 --> 00:32:25,811
+Gidebileceğimiz, başladığımız bir noktadan, gidebileceğimiz en son yere kadar gidip, ondan sonra en son geldiğimiz yere dönüp, işte oradan olabilecek başka bir yere gidip, ondan sonra işte olmuyorsa bir önce geldiğimiz yere dönüp, bu şekilde problemler...
+
+178
+00:32:25,811 --> 00:32:34,171
+çözerdik. Yani bu mantık, backtracking'de kullanılan mantık aslında depth-first search işlemi.
+
+179
+00:32:34,171 --> 00:32:36,692
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+180
+00:32:44,980 --> 00:33:11,680
+Peki. Şimdi ben normalde şeyin algoritmasını, 8 Vezir'in algoritmasını da anlatıyordum. Önceki yıllarda anlattım. Ama bu sefer şöyle bir şey istiyorum sizden. Her yerde var zaten ama bakmadan kendi kendinize bu ödev falan değil, sadece çalışma açısından, size faydası olması açısından.
+
+181
+00:33:13,395 --> 00:33:24,715
+şey istiyorum, yani bir çözmeye çalışın. Önce çünkü bu Death First Search mantığıyla çözülen, yani rekürsif aslında çözeceğiniz bir yaklaşım.
+
+182
+00:33:25,715 --> 00:33:34,895
+Şey yapmaya çalışın, kendi kendinizi çözmeye çalışın. Çözemezseniz zaten her yerde çok fazla sayıda şey var, kaynak var.
+
+183
+00:33:35,155 --> 00:33:40,735
+Bakarsınız ama kendiniz yaparsanız çok faydasını göreceğinize inanıyorum.
+
+184
+00:33:41,395 --> 00:33:43,076
+ders olmak istediğiniz bir şey var mı?
+
+185
+00:33:44,076 --> 00:33:47,475
+Hocam bu backtracking algoritmaları genelde recursive mi çözülüyor?
+
+186
+00:33:48,276 --> 00:34:03,056
+Backtracking algoritmaları genelde depth-first search mantığıyla çözlen algoritmalar. Şimdi hani özel bir şey vardır da çözülmez diyebilirim ama tabii ki o zaman da rekürsif çözüm uygun oluyor.
+
+187
+00:34:03,056 --> 00:34:16,275
+Yani çünkü şey ne yapıyorsun bir önceki yani stek kullanarak aslında stek kullanarak çözümler de rekürsif çözümler. Yani bir önceki yere geri dönmek yani lasting first out mantığıyla.
+
+188
+00:34:16,275 --> 00:34:35,935
+İşte ben şuraya gelmeden önce şuradaydım. En başa değil de buraya geri dönüp buradan bir sonraki çözümü denemek. Depth-first search ya, hatırlarsınız bunu. Geçen ders de zaten özellikle şey yaptım ben, graflar üzerinde Depth-first search, Bread-first search anlattım.
+
+189
+00:34:43,539 --> 00:34:48,260
+V veya Depth First Search mantığıyla çözülüyor. Var mı başka sorunuz?
+
+190
+00:34:51,260 --> 00:34:56,899
+Peki. O zaman bir tane daha örnek göstereyim.
+
+191
+00:35:05,268 --> 00:35:12,448
+Hamilton'ın Circuit diye bir şey var.
+
+192
+00:35:14,448 --> 00:35:20,667
+Nedir? Graf yapısı var. Burada hedef şu, diyelim ki şöyle bir grafımız olduğunu düşünelim.
+
+193
+00:35:35,507 --> 00:35:40,507
+Burada yapmak istediğimiz şey bir noktadan yola çıkıp...
+
+194
+00:35:41,231 --> 00:35:52,711
+Ondan sonra da şey olup olmadığına karar vermek, başlangıç noktasına ulaşılıp ulaşılmayacağına karar vermek.
+
+195
+00:35:52,872 --> 00:35:56,692
+Yani eğer öyleyse bu bir Hamiltonian circuit oluyor.
+
+196
+00:35:56,692 --> 00:36:07,572
+Eğer ben A noktasından çıktığımda her düğme sadece bir kere uğrayarak başlangıç noktasına geri dönebiliyorsam,
+
+197
+00:36:09,172 --> 00:36:13,091
+O zaman bu bir Hamiltonian circuit oluyor.
+
+198
+00:36:24,980 --> 00:36:28,980
+Veya van demek daha doğru herhalde.
+
+199
+00:36:28,980 --> 00:36:32,980
+Şimdi, bir kere önce şunu söyleyeyim.
+
+200
+00:36:33,811 --> 00:36:43,411
+Bir grafın Hamilton'ın sorkut olup olmadığını söylemek bir NP, non-deterministik polinomsal problem.
+
+201
+00:36:43,911 --> 00:36:55,751
+Yani bir graf şey midir değil midir, Hamilton'ın sorkut mıdır değil midir dediğiniz zaman bu bir şey problem, NP problem.
+
+202
+00:36:55,751 --> 00:37:01,811
+Ama şunu diyebiliriz, ben A'dan çıktığımda A'ya dönebiliyor muyum? O zaman MP'den çıkabilirim.
+
+203
+00:37:01,811 --> 00:37:13,571
+çıkartırsınız. Yani grafın tamamına bakmak, gene böyle bir şey dersek, A'dan çıktığında tekrar A'ya geri dönebiliyor muyum dersen, bu sorunun cevabı şey değil, NP değil.
+
+204
+00:37:14,356 --> 00:37:20,536
+Bunu da yapmak için kullanabileceğimiz yaklaşım yine backtracking ile.
+
+205
+00:37:21,336 --> 00:37:28,556
+Çünkü eğer bir yol çıkmıyorsa geri dönüp başka bir yolu deneyerek aslında bunu bulabilirsiniz.
+
+206
+00:37:29,456 --> 00:37:33,216
+Onun için de yine bir straight space tree kurabiliriz.
+
+207
+00:37:33,615 --> 00:37:35,696
+Nedir? A düğümünden yola çıktım.
+
+208
+00:37:42,547 --> 00:37:44,907
+B düğümüne geldim.
+
+209
+00:37:47,268 --> 00:37:50,527
+B'den çıktım, C'ye geldim. Bir sıkıntı yok şimdi.
+
+210
+00:37:50,907 --> 00:37:56,667
+Ne zaman sıkıntı olacak? Aynı düğüme bir kere daha ulaşmam gerekirse veya yol tıkanırsa sıkıntı olacak.
+
+211
+00:37:56,807 --> 00:37:58,187
+Şimdi şöyle bakalım.
+
+212
+00:37:58,788 --> 00:38:01,007
+Şurada A'dan çıktım, B'ye geldim.
+
+213
+00:38:01,867 --> 00:38:04,207
+B'den çıktım, C'ye geldim.
+
+214
+00:38:04,628 --> 00:38:13,887
+Ondan sonra C'den çıktım, D'ye geldim, D'den çıktım, E'ye, E'den F'ye, hop burada tıkandım.
+
+215
+00:38:13,988 --> 00:38:17,588
+Çünkü F'den gidebileceğim bir sonraki düğüm B düğümü.
+
+216
+00:38:17,867 --> 00:38:22,148
+Şimdi ona bakalım, o zaman A'dan B'ye, B'den C'ye, C'den D'ye.
+
+217
+00:38:23,068 --> 00:38:26,668
+Görüyor musunuz? Biraz kesikli yazıyor ama anlaşılır durumda mı?
+
+218
+00:38:29,188 --> 00:38:30,568
+Anlaşılıyor mu arkadaşlar?
+
+219
+00:38:33,012 --> 00:38:35,512
+Anlaşılıyor hocam.
+
+220
+00:38:35,932 --> 00:38:48,232
+Tamam, peki. Şimdi o zaman döne döne gitmem gerekiyor. Şimdi ne oldu? Burada şey yaptık, F'de takıldık. Burası bizim D dendimiz.
+
+221
+00:38:52,788 --> 00:38:54,788
+B dendimiz.
+
+222
+00:38:54,788 --> 00:38:56,748
+Şimdi...
+
+223
+00:38:57,076 --> 00:39:06,735
+F'den gidebileceğim yer B'ydi. O zaman demek ki burada bir F'den bir adım yukarı çıkmam gerekiyor. Yani buradan bir çarem yok.
+
+224
+00:39:07,295 --> 00:39:18,476
+E'den de gidebilecek bir zaten C vardı, F vardı, D vardı. Buradan da bir başka yol yok. Yani bir yukarı daha çıkmam lazım. Burası da çaresiz.
+
+225
+00:39:19,076 --> 00:39:24,455
+Yani şöyle aslında şeyleri söylemediğim için aslında karışmasın iş.
+
+226
+00:39:25,076 --> 00:39:32,955
+Şurada E'den aslında şöyle, E'den gidebileceğim. Önce C var, C'ye gidemem.
+
+227
+00:39:33,460 --> 00:39:59,460
+Sonra D var. D'ye de gidemem çünkü zaten oralara uğradım. Ondan sonra da E'den gidebileceğiniz F var. Dolayısıyla şimdi yapmanız gereken şey E'den bir adım yukarı çıkmak. Şimdi E'den yukarı çıktığınızda D'den gidebileceğiniz A vardı, A olmaz. Yani şöyle A vardı, A olmaz. C vardı, C olmaz.
+
+228
+00:40:00,000 --> 00:40:12,139
+Demek ki D'den de gidebileceğiniz bir yer yok, başka gidebileceğiniz yer yok. Oradan da yukarı çıkıyorum, C'ye çıkıyorum. Şimdi C'den gidebileceğiniz şey vardı.
+
+229
+00:40:12,851 --> 00:40:34,891
+Nedir? A vardı, A olmaz. B vardı, B olmaz. Yani bunlar zaten işaretli yerler. İşaretlenmiş yerlere gidemezsiniz. O zaman C'den ama E'ye gidebilirim. D'ye gittim, C'den E'ye gidebilirim. O zaman C'den E'den devam ediyorum.
+
+230
+00:40:40,851 --> 00:41:08,851
+C'ye, D'ye, F'ye gidebiliyor. Zaten C'den geldim. D'ye gidilmediği için D'ye gidebilirim. Ama şimdi D'ye gittiğimde D'den gidebileceğim neler var? A var, olmaz. E var, zaten oradan geldim, o da olmaz. Yine ne yapmam lazım? O zaman bir adım yukarıya çıkmam lazım. Yani E'den D'ye gitmem de bir çözüm değil. Ne yapabilirim? E'den gidebilirim.
+
+231
+00:41:08,851 --> 00:41:22,891
+Bir de F var. F'i deneyebilirim. Şimdi burası D'den, burası öldü. F de öldü çünkü...
+
+232
+00:41:23,443 --> 00:41:32,783
+F'den gidebileceğim bir B var, bir E var. Zaten E'den geldim, B'den işaretli. O zaman bu da olmuyor. O zaman ne yapmam lazım benim?
+
+233
+00:41:33,703 --> 00:41:41,443
+Buradan da, yani C'den de, C'den gidecek başka yer kalmadığı için bir yukarıya B'ye dönmem lazım.
+
+234
+00:41:41,563 --> 00:41:49,303
+Bak görüyor musunuz, burada da yine aslında, yani yine şey yapıyorsunuz, yani depth first search.
+
+235
+00:41:51,443 --> 00:42:08,743
+Gittiğim yerlerden geri dönüyorum şimdi. Şimdi B'den, aslında denemediğim işaretli olduğu için şurada nokta noktayla göstereyim. A vardı, visited olduğu için denemediğim. C'deydim zaten şu anda. Şöyle birazcık açarak geleyim.
+
+236
+00:42:09,311 --> 00:42:24,451
+Üçüncü seçeneğim F. F'ye gidebilirim. Şimdi F'deyken zaten B var. Hani göstermiyorum. Şurada bir B var. Gidemeyeceğim. Bizi tık çünkü. Şimdi E'ye gidebilirim. E'yi deneyeyim.
+
+237
+00:42:25,108 --> 00:42:48,947
+E'ye geldim. E'ye geldiğimde, şimdi işaretle olanları şöyle işaretleyeyim görün. Şimdi A'ya gitmiştim. A'dan çıktım yola zaten. B ve F şu anda şu vaziyetteyim. Ve E'ye geldim. E'nin gidebileceğiniz noktalar neler? Bir C'ye gidebilirsiniz. E'den C'ye gidebilirim. Tamam. C'deyim şu anda.
+
+238
+00:42:49,523 --> 00:43:17,443
+C'deyim. Ondan sonra C'den gidebilecekleri şey var, işte D var. Bir tek zaten gidebileceğim. A'ya gidilmiş. D'ye o zaman gidiyorum. Şimdi geldim o zaman şurada D'deyim. Zaten benim gitmek istediğim başlangıç noktasına gitmekti. Bitti. Yani bütün düğümlere uğradım ve D doğrudan A'ya bağlı olduğu için
+
+239
+00:43:17,523 --> 00:43:27,104
+A'ya geldim. O zaman ne oldu? Demek ki şöyle yaptığım zaman
+
+240
+00:43:27,104 --> 00:43:43,923
+A'dan B'ye, B'den F'ye, F'den E'ye, E'den C'ye, C'den D'ye
+
+241
+00:43:44,436 --> 00:43:56,816
+Ve D'den de A'ya dediğim zaman Hamilton'un Sorkut'u elde etmiş oldum. A'dan yola çıktım ve A'ya geri dönerek Hamilton'un Sorkut'u elde etmiş oldum. Bu anlaşıldı mı acaba?
+
+242
+00:43:57,748 --> 00:44:25,708
+Ne yaptığımız, nasıl yaptığımız? Yani yaptığımız şey çok basit. Olası bütün seçenekleri deniyoruz. Bir noktada, şurada gördüğünüz gibi, dedentme oluştu. Bir adım yukarısına dönüyoruz. Yapacak bir şey var mı? Yoksa bir adım yukarısına, bir adım yukarısına çözüm bulana kadar deniyoruz. Ama şey olduysa, bir noktada artık orada nereye gidemeyeceğimizi anladıysak.
+
+243
+00:44:25,748 --> 00:44:40,748
+Kesip hemen yukarıya dönüyoruz. Backtracking ile yani aslında dediğim gibi de first search mantığı bu. Backtracking ile problemi çözmüş oluyoruz. O zaman bu da...
+
+244
+00:44:45,844 --> 00:44:47,844
+Yine bir State Space Tree.
+
+245
+00:44:56,436 --> 00:45:01,375
+Hamiltonian Circuit için State Space Tree.
+
+246
+00:45:01,915 --> 00:45:08,195
+Peki, buraya kadar sormak istediğiniz bir şey yoksa ara vereyim, dinlenin, sonra devam edelim. Var mı sorunuz?
+
+247
+00:45:14,963 --> 00:45:15,783
+Soru var mı?
+
+248
+00:45:16,083 --> 00:45:17,043
+Hocam sesim geliyor mu?
+
+249
+00:45:17,603 --> 00:45:18,083
+Geliyor.
+
+250
+00:45:19,163 --> 00:45:22,063
+Az önceki grafı bir açar mısınız? Ufak bir şey soracaktım.
+
+251
+00:45:22,423 --> 00:45:22,683
+Tabii.
+
+252
+00:45:23,463 --> 00:45:28,384
+Burada A'nın bağlı olduğu üç tane düğüm var ya, biz bir tanesinden mecburen çıkıyoruz.
+
+253
+00:45:28,963 --> 00:45:33,523
+Bir tanesinden mecburen tekrar A'ya gelmek için bir tane düğme daha uğrayacağız.
+
+254
+00:45:35,364 --> 00:45:36,523
+Düğüm sayısını biliyorsak...
+
+255
+00:45:37,331 --> 00:45:43,852
+Son iki düğüm kalana kadar hiç ve C ve D'ye bakmasak, başka yerlere baksak daha verimli olmaz mıydı?
+
+256
+00:45:45,192 --> 00:45:46,112
+Nasıl yani?
+
+257
+00:45:47,412 --> 00:45:51,612
+Şimdi A üç tane düğüme bağlı. Bizim amacımız A'dan başlayıp tekrar A'ya dönmek.
+
+258
+00:45:52,512 --> 00:45:52,811
+Evet.
+
+259
+00:45:52,952 --> 00:45:55,552
+Aynı düğüme bir daha uğrayamıyoruz. A bir tanesinden çıkacak.
+
+260
+00:45:56,072 --> 00:45:56,592
+Tamam.
+
+261
+00:45:56,692 --> 00:45:58,632
+A'ya dönebildiğimiz iki tane düğüm olacak.
+
+262
+00:45:59,731 --> 00:46:01,472
+Ya D'den döneceğiz ya C'den döneceğiz.
+
+263
+00:46:01,887 --> 00:46:08,588
+Çok haklısın. Yani eğer B'ye uğradıysam ilk önce diyorsun ki ya C'den döneceksin ya diye evet.
+
+264
+00:46:09,188 --> 00:46:18,068
+Düğüm sayısını biliyorsak, bakmadığımız son iki düğüm kalana kadar biz C'ye ve D'ye bakmasak zaten hiç. O zaman çok fazla vakit kazanması olacağız.
+
+265
+00:46:19,219 --> 00:46:28,019
+Yok, bir kere çok fazla zaman vakit kazanmazsın da, yani orada şeyi de bilmen lazım, C'nin de D'ye bağlı olduğunu bilmen lazım.
+
+266
+00:46:28,019 --> 00:46:37,559
+Değil mi? Yani şu olabilirdi, C diyelim ki D'ye bağlı olmasaydı yine A'ya dönemezdim mesela.
+
+267
+00:46:38,319 --> 00:46:46,860
+Yani D'ye hiçbirisi, yani C'nin bağlı olduğu düğümlerden D'ye bağlı olan olmasaydı A'ya yine dönemezdim.
+
+268
+00:46:47,219 --> 00:46:55,480
+Orada son iki düğümün bir garantisi yok. Sadece son düğüm, uğradığın son düğümle o garantiyi anlatabildim mi?
+
+269
+00:46:55,819 --> 00:47:01,199
+Yani sen şimdi şurada şey var ya, şurada şöyle bir yapın var, C var, burada da D var.
+
+270
+00:47:01,360 --> 00:47:08,159
+Sen bunu gördüğün için şu anda bunu söyleyebiliyorsun. Diyorsun ki C'ye gelmişsem zaten A'ya da dönerim diyorsun.
+
+271
+00:47:08,159 --> 00:47:15,099
+Ama öyle bir şey olmaya da bilir. Yani D şuradadır şöyle, C bambaşka yerlere gidiyordur mesela.
+
+272
+00:47:15,219 --> 00:47:17,299
+O yine yukarı dönüyordur mesela falan.
+
+273
+00:47:17,880 --> 00:47:21,420
+Yani şöyle bir şey vardır mesela, böyle bir ağın vardır.
+
+274
+00:47:21,420 --> 00:47:24,420
+O yüzden onu her zaman söyleyemezsin.
+
+275
+00:47:24,900 --> 00:47:25,980
+Yani o olmaz öyle.
+
+276
+00:47:26,519 --> 00:47:31,059
+Bu bütün bağlar çok güzel olduğu için öyle gözüküyor.
+
+277
+00:47:31,987 --> 00:47:37,688
+Ben en başta A'nın bağlı olduğu düğümleri bir yere kaydedip ondan sonra öyle bir şey düşünmüştüm.
+
+278
+00:47:37,708 --> 00:47:45,788
+Ama bak, şuradan bak, A'nın kaydolduğu düğüm diyorum ki C ile D arasında bağlantı yok. Yani son iki düğüme bakarak bir şeyi anlayamazsın, onu demeye çalışıyorum.
+
+279
+00:47:46,127 --> 00:47:54,547
+Şimdi gezdim diyelim ki, geldim böyle, şurada C'deyim ama C'deyim'e bağlı değil ki yani son iki düğüm kaldığında diyemezsin.
+
+280
+00:47:59,987 --> 00:48:27,967
+bağlı olabilir. Anlatabildim mi? Yani onun garantisi hiçbir zaman yok ki. Son iki düğme kaldığımda mutlaka A'ya geri dönüyorum diye bir şey yok. Bir de yani son iki düğüm demek şey demek yani. Ha bu arada da Hamiltonian Circuit olmaya da bilir. O da var. Yani soru sana onu soruyor zaten. Var mı, yok mu diyor. Belki de yok yani. Mesela şu anda yok. Yani burada hiçbir zaman A'dan yola çıktığında diyor. A'dan yola çıktığında.
+
+281
+00:48:27,987 --> 00:48:41,268
+Hemetoin circuit yok. Çünkü D dışarıda kalıyor. D'den yola çıktığında olur muydu? Yine olmazdı. Burada yok mesela şu şeyde yapıda. Hemetoin circuit yok senin burada aslında.
+
+282
+00:48:42,148 --> 00:48:43,047
+Evet, sağ olun hocam.
+
+283
+00:48:43,443 --> 00:48:57,384
+Rica ederim. Ben teşekkür ederim. Güzel bir soruydu. Gerçekten güzel bir soruydu. Teşekkür ederim. Peki, o zaman 2-10 var. 10 dakika ara veriyorum ben. 2-10 devam ederiz. Başka bir şey anlatacağım 2-10.
+
+284
+01:00:34,099 --> 01:00:40,659
+Evet arkadaşlar, kaldığımız yerden devam edelim. Burada mısınız, duyuyor musunuz?
+
+285
+01:00:43,260 --> 01:00:43,800
+Evet hocam.
+
+286
+01:00:44,639 --> 01:00:46,260
+Güzel, ekranımı görüyor musunuz?
+
+287
+01:00:46,739 --> 01:00:47,920
+Evet, geldi şu anda.
+
+288
+01:00:50,579 --> 01:00:56,139
+Güzel, şimdi aynı mantıktaki algoritmalarla devam edeceğim ama bu sefer bir fark var.
+
+289
+01:01:00,371 --> 01:01:04,523
+Çok ilginç ya, niye bugün bu kadar sıkıntı oldu?
+
+290
+01:01:15,411 --> 01:01:16,172
+Allah Allah.
+
+291
+01:01:21,748 --> 01:01:25,607
+Branch and Bound algoritmalarını anlatacağım şimdi size.
+
+292
+01:01:29,387 --> 01:01:31,687
+Ekremi sistem fayvesi olur mu acaba?
+
+293
+01:01:41,876 --> 01:01:43,876
+Şimdi, Allah Allah.
+
+294
+01:01:47,016 --> 01:01:49,036
+Bir dakika, iki dakika durun.
+
+295
+01:01:49,676 --> 01:01:55,076
+Şey yapacağım, kalemi şey yapıp bir kere daha tanıtacağım.
+
+296
+01:02:43,603 --> 01:02:45,603
+Evet, şimdi bakayım ne olacak?
+
+297
+01:02:49,139 --> 01:02:57,419
+Yani çok iyi değil ama daha iyi gibi daha iyi bilemedim. Evet, görüyorsunuz değil mi ekranını?
+
+298
+01:02:59,559 --> 01:03:00,519
+Evet hocam, geldi yine.
+
+299
+01:03:01,399 --> 01:03:13,139
+Tamam. Şimdi buradaki prensip şu, yine bir takım şeyler yapmak istiyorum, kararlar almak istiyorum. Fakat bu sefer işin içerisinde...
+
+300
+01:03:13,748 --> 01:03:22,628
+Seçimlerimin şeyleri de var, bedelleri de var. Mesela nedir? İşte diyelim ki şunu yapmak istiyorum.
+
+301
+01:03:23,968 --> 01:03:29,708
+Bir, dört tane iş var. Bu dört iş için dördüne birden başvuran dört kişi var.
+
+302
+01:03:30,268 --> 01:03:36,328
+Ve hepsi bu iş için farklı şeyler istiyorlar, ücretler istiyorlar.
+
+303
+01:03:36,328 --> 01:03:40,328
+Ben bu dört kişiyi dört işe öyle yerleştirmeliyim ki.
+
+304
+01:03:40,735 --> 01:03:47,915
+En az parayı ödeyeyim bunlara veya işte nebsek problemini görmüştük.
+
+305
+01:03:48,395 --> 01:03:57,075
+Hani şeye nedir bir hırsızın eşya çalarken şeyinin çantasının alabileceği yük miktarı belli.
+
+306
+01:03:57,995 --> 01:04:07,995
+Eşyaları öyle seçsin ki hem çantaya sığsınlar hem de olabilecek en yüksek bedelli toplama elde etsin gibi.
+
+307
+01:04:08,735 --> 01:04:16,535
+Aslında işin içinde yine böyle bir takım seçimler yapmam gerekiyor az önce olduğu gibi ama işin içinde bir de bedel bu sefer.
+
+308
+01:04:16,535 --> 01:04:29,715
+Yani bir olabilecek en fazla, en az falan gibi bir en iyileme, optimizasyon da söz konusuysa o zaman nasıl çözeceğiz bundan bahsedeceğim.
+
+309
+01:04:29,715 --> 01:04:31,659
+Yani bir...
+
+310
+01:04:31,668 --> 01:04:51,128
+Burada bizim yaptımak istediğimiz şey, optimal solution yani olabilecek en iyi çözümü bulmak. Yani en çok işte gelir getiren veya en az para ödeyeceğim, işte en az zamanda giten vesaire gibi problemlerin çözümü için nasıl bir yol izleyeceğini belirlemek.
+
+311
+01:04:51,128 --> 01:04:57,387
+Şimdi şeyle başladığımız için isterseniz, az önce ona örnek verdiğim için.
+
+312
+01:05:00,851 --> 01:05:14,492
+Assignment problemiyle başlayayım. Söylediğim gibi dört tane iş var. Bu dört işe de başvuran dört kişi var. Diyelim ki şöyle, işte
+
+313
+01:05:20,563 --> 01:05:28,903
+Şurada da A, B, C ve D kişileri var. Bunların hepsinin istedikleri şeyler farklı, ücretler farklı işler için.
+
+314
+01:05:39,219 --> 01:05:58,219
+Şimdi ben öyle bir seçmek istiyorum ki olabilecek en düşük ücreti ödeyeyim. Şimdi burada sizin de aslında şey yapacağınız üzere, bileceğiniz, tahmin edebileceğiniz üzere şey var. Yani deneme yanılmayla yine gitmek zorundayım.
+
+315
+01:06:04,244 --> 01:06:31,784
+A kişisini ikinci işe yerleştireyim. İşte o zaman B kişisini de üçüncü işe yerleştireyim dersem. Bir adım sonra bakacağım ki aslında C kişisi üçüncü iş için daha az para istemiş. O zaman acaba C'yi mi şeye yerleştirmeliydim, üçüncü işe yerleştirmeliydim gibi böyle şey olacak. Yine burada eksponansiyel bir şey var.
+
+316
+01:06:32,244 --> 01:06:40,084
+var. Yani normalde yapılması gereken bütün olasılıkları denemeye kalkarsanız eksponansiyel hesap var. Şimdi
+
+317
+01:06:40,084 --> 01:06:52,604
+Brent-Camp Bound yaklaşımındaysa diyor ki sistem madem diyor şey nedir ne kadar istedikleri belli
+
+318
+01:06:53,215 --> 01:07:04,415
+O zaman diyor ben hepsini en mesela şeye yerleştirseydim, nedir, en az para istedikleri işe yerleştirseydim,
+
+319
+01:07:05,619 --> 01:07:13,440
+Ne olabilir de oradan başlayayım. Hiç bakmayayım. Aynı işe iki kişi birden yerleştirmişim, yerleştirmemişim gibi bir şey düşünmeyeyim.
+
+320
+01:07:13,980 --> 01:07:19,119
+Sadece şu an için şeye bakarak bir planlamaya başlayayım.
+
+321
+01:07:19,119 --> 01:07:24,679
+Şimdi şurada şöyle yapalım.
+
+322
+01:07:27,360 --> 01:07:31,320
+Şimdi başlangıçta, önce yazayım da.
+
+323
+01:07:36,820 --> 01:08:01,660
+Lower bound'umuz ne olabilir? Bakalım. 1'i 2'ye yerleştirebilirim, 2'yi 3'e yerleştirebilirim, 3'ü de 3'e yerleştirebilirim, 4'ü de 4'e yerleştirebilirim. Şimdi benim zaten şu anda ödeyebileceğim en az para 10 lira. Yani burada başka bir yolu yok.
+
+324
+01:08:02,260 --> 01:08:05,260
+Peki şimdi o zaman bir de şeye bakayım.
+
+325
+01:08:11,123 --> 01:08:18,923
+A'yı birinci işe yerleştirirsem kazanabileceğim, yani en az ödeyeceğim para ne olur ona bakayım şimdi.
+
+326
+01:08:19,043 --> 01:08:27,123
+A'yı birinci işe yerleştirirsem ona 9 lira ödeyeceğim. Bu şu demek, A'yı 1'e yerleştirdiniz mi artık B'ye...
+
+327
+01:08:27,572 --> 01:08:55,572
+C ve D asla bire yerleşemezler. Yani onu kesin bire yerleştirirsem ne olur ona bakıyorum. O zaman onlar diğer 2, 3 ve 4'e yerleşebilecekler ama şeye bakmıyorum yine. Yani ikisi aynı yere gelmiş. Mesela şurada olduğu gibi hem 2 hem 3, 3. işe yerleşmiş. Onunla ilgilenmiyorum. Ben sadece A'yı bire yerleştiriysem artık buraya başkası yerleşemez. Onu biliyorum. Ve şeyi görmeye çalışıyorum.
+
+328
+01:08:55,572 --> 01:09:00,692
+Yani A'yı 1'e yerleştirseydim en az kaç lira öderdim? Onu görmeye çalışıyorum.
+
+329
+01:09:01,092 --> 01:09:06,731
+Şimdi ona baktığımda 17 lira. A'yı 1'e yerleştirirsem, ona baktığımda 17 lira.
+
+330
+01:09:07,211 --> 01:09:12,032
+Peki A'yı 2'ye yerleştirirsem, okun yönünü yanlış yaptım şöyle.
+
+331
+01:09:12,711 --> 01:09:14,692
+A'yı 2'ye yerleştirirsem ne olacak?
+
+332
+01:09:15,131 --> 01:09:20,432
+Şimdi A'yı 2'ye yerleştirmek demek, 2 lira ödeyeceğim demek A'ya.
+
+333
+01:09:27,380 --> 01:09:37,380
+O zaman ödeyeceğim en düşük para. Az önceki durumla aynı. 10 lira. A'yı 2'ye yerleştireceğim. Başka kimse 2'ye yerleşemez.
+
+334
+01:09:37,880 --> 01:09:46,100
+Aynı mantıkla A'yı 3'e yerleştirirsem 20 lira. Çünkü 3'e yerleştirirsem bu şu demek.
+
+335
+01:09:48,620 --> 01:09:52,659
+Şöyle olacak demek. Hadi onu da yazayım. O da olsun elinizde.
+
+336
+01:09:54,036 --> 01:10:03,736
+A'yı 3'e yerleştirirsem, bakın bunu kesin görün, o 7 lira ama artık B'yi 3'e yerleştiremem, B'yi de 2'ye yerleştirebilirim en iyi.
+
+337
+01:10:04,515 --> 01:10:08,015
+C'yi de 3'e yerleştiremem, N'yi 1'e yerleştirebilirim.
+
+338
+01:10:09,236 --> 01:10:15,156
+D'de 4'te, o zaman 8, 13, 20 lira vermem gerekir.
+
+339
+01:10:18,323 --> 01:10:26,563
+O zaman A'yı da 4'e yerleştirirsem, A'yı 4'e yerleştirirsem, lower bound'um ne olacak bu sefer?
+
+340
+01:10:27,063 --> 01:10:36,543
+8 artı 3 artı 1, D'yi 4'e yerleştiremem 6, o da işte 8, 3 daha 4, 10, 18 lira olacak.
+
+341
+01:10:37,023 --> 01:10:42,804
+O da şöyle 18 lira olacak.
+
+342
+01:10:42,804 --> 01:10:45,443
+Şimdi buraya kadar anlaşılmayan bir şey var mı? Anladınız mı?
+
+343
+01:10:47,731 --> 01:10:50,231
+Şu anda şunu anlamaya çalışıyorum ben.
+
+344
+01:10:50,811 --> 01:10:53,152
+A'yı 1'e yerleştirdiğimde ne oldu?
+
+345
+01:10:53,791 --> 01:10:56,111
+A'yı 2'ye yerleştirdiğimde ne oldu?
+
+346
+01:10:56,623 --> 01:11:10,263
+A'yı 3'e yerleştirdiğimde ve A'yı 4'e yerleştirdiğimde. Yani bu şu demek, A'yı 1'e yerleştirdiyseniz kesin artık A 1'de olduğu için başka kimse 1'e yerleştiremez.
+
+347
+01:11:10,263 --> 01:11:19,263
+Bu tarafla ilgilenmiyorum. Yani 2'nin, 3'ün, 4'ün durumuyla ilgilenmiyorum. A kesinlikle 1'de olursa ben en az...
+
+348
+01:11:19,712 --> 01:11:28,712
+17 lira ödemek zorundayım. Kesinlikle 2'de olursa en az 10 lira ödemek zorundayım. O zaman şimdi burada mantıken...
+
+349
+01:11:28,712 --> 01:11:29,872
+Ben bir sorabilir miyim hocam?
+
+350
+01:11:30,212 --> 01:11:31,152
+Sorabilirsin evet.
+
+351
+01:11:31,631 --> 01:11:35,952
+En başında 10 yazdı dedik, en küçükleri hesaplayalım. Ondan sonra bir daha ayını hesaplıyoruz.
+
+352
+01:11:40,595 --> 01:11:47,595
+Aile, orada çakışan başka bir şey yoktu.
+
+353
+01:11:47,595 --> 01:11:50,595
+Niye benim kalemim olmuyor?
+
+354
+01:11:50,595 --> 01:11:53,595
+Aile çakışan başka bir şey yoktu.
+
+355
+01:11:53,595 --> 01:12:00,595
+Mesela şöyle olsaydı, çakışan başka bir şey olsaydı ben lower band 10 bulamazdım bu satırda.
+
+356
+01:12:01,716 --> 01:12:15,336
+Anlatabildim mi? Yani şurası mesela 3 olsaydı, B'deki en düşük fiyatlı yer burası olsaydı, ben bu 2'yi seçsem burayı seçemeyeceğim için burada 10 bulamazdım. Anlatabildim mi?
+
+357
+01:12:16,796 --> 01:12:21,175
+Bak bir daha şöyle gösterirsem anlayacaksın. 9, 2, 7, 8 tamam mı?
+
+358
+01:12:21,747 --> 01:12:39,827
+6, 3, 4, 7, 5, 8, 1, 8, 7, 6, 9, 4 olsun. Şimdi şu anda şu durum için lower bound kaç? 2, 5, 6, 10. Doğru mu? Şurası da. Evet.
+
+359
+01:12:40,340 --> 01:12:56,420
+Tamam, şimdi şurayı gösteriyorum. A'yı ikinci işe yerleştirdiğim zaman, A'yı ikiye yerleştirdiysen, o kesin yerleşti, şurası öldü demektir. B'yi o zaman buraya yerleştirebiliyorum en iyi ihtimalle, tamam mı?
+
+360
+01:13:08,340 --> 01:13:20,280
+Yot, ikinin olduğu yerde bu satırda en küçük yok. Yani B, C ve D için en küçük yok. O yüzden buradaki 10 ile buradaki 10 tuttu. Ama tutmayabilirdi. Anlatabildim mi şimdi?
+
+361
+01:13:20,739 --> 01:13:25,140
+O kısmı anladım da lower band ile benzer ya da yakın bir değer mi arıyor lower band?
+
+362
+01:13:26,239 --> 01:13:32,760
+Hayır, hayır. Şimdi bu, yani hiç kimsenin nerede durduğuna bakmazken olabilecek lower band'ın 10.
+
+363
+01:13:33,760 --> 01:13:34,079
+Tamam.
+
+364
+01:13:34,739 --> 01:13:47,579
+Bu A'yı kesinlikle 1'e yerleştirirsen olabilecek lower bound'u, bu A'yı kesinlikle 2'ye yerleştirirsen, A'yı kesinlikle 2'ye yerleştirmek demek, artık buraya kimse kullanamaz demek.
+
+365
+01:13:47,979 --> 01:13:53,279
+Ama bunlar çakışmış çakışmamış onunla ilgilenmiyorum, detaya girmiyorum. Ben sadece şunu bilmek istiyorum.
+
+366
+01:13:53,760 --> 01:13:55,739
+A'yı 2'ye yerleştirseydim...
+
+367
+01:13:56,404 --> 01:14:24,404
+Ben hani diğerlerinin başka yerlere yerleşmesi durumunda en az kaç lira ödeyecektim? Şimdi buradan aşağıya devam edeceğim, detayına bakacağım. Bu kimsenin nerede olduğuna bakmasaydım zaten en az 10 lira ödeyeceğimi gösteriyor. Burası A1 iken. Bunun 10 olması tamamen dediğim gibi tesadüf. Yani tesadüf değil de şans. Yani çünkü başka ikinci jobda en düşük parayı isteyen...
+
+368
+01:14:24,404 --> 01:14:26,664
+Kimse olmadığı için. Şimdi oldu mu acaba?
+
+369
+01:14:27,324 --> 01:14:27,584
+Yahu.
+
+370
+01:14:28,744 --> 01:14:41,564
+Tamam. Şurayı şey yapıyorum. Örnek orada dursun. Şimdi o zaman ben size soruyorum. O zaman bu aşamada kimi seçersiniz?
+
+371
+01:14:42,355 --> 01:14:44,595
+Yani nereden denemeye başlayalım?
+
+372
+01:14:44,595 --> 01:14:49,216
+Şimdi hani az önce şeyi konuştuk ya, her şeyi denememiz gerekiyor dedik.
+
+373
+01:14:49,555 --> 01:14:55,835
+Şimdi böyle bir tablo karşınıza çıktığında ilk denemeye nereden başlarsınız?
+
+374
+01:15:00,564 --> 01:15:27,764
+Duyamadım, var mıydı? A2 için olanı mı deneceğiz hocam? Aynen öyle. İlk denemeye şeyden başlarsınız. A'nın 2 olduğu durumdan başlarsınız. Neden? Çünkü eğer şansınız yaver giderse gitmeye de bilir. Yani buradan düşük bir çözümle en az parayı ödeyerek çıkabilirsiniz.
+
+375
+01:15:28,564 --> 01:15:32,804
+Yani buradan 10 liraya çıkabilme ihtimaliniz varken
+
+376
+01:15:33,264 --> 01:15:59,404
+Şimdi bakın ihtimal var, olur demiyorum. 17, 20 veya 18 seçeneklerini denemenin bir anlamı yok. O zaman buradan deniyorum. Şimdi A'yı 2'ye yerleştirdiysem, A kesin 2'de ya, ne olabilir? B nereye yerleşebilir? 1'e, 3'e veya 4'e yerleşebilir. Şimdi bunu deneyeceğim. B'yi 1'e yerleştirirsem, bir tek B'yi 1'e anlatacağım, geri kalanını artık yaparsınız diye düşünüyorum.
+
+377
+01:16:01,264 --> 01:16:15,884
+Yani 2. B'de 1'de olursa, yani 6, ne olur o zaman? C yerinde kalabilir, 1. D de yerinde kalabilir, 1. 8, 12, 13 olur burası.
+
+378
+01:16:16,684 --> 01:16:25,884
+Şimdi burada önemli olan şey şu, A ile B'nin yeri sabit, diğerleri yani...
+
+379
+01:16:26,676 --> 01:16:32,936
+CV'de ikinci işi ve birinci işi kullanamazlar ama diğer durumlarıyla şu anda ilgilenmiyorum.
+
+380
+01:16:33,115 --> 01:16:35,536
+Aynı işi yerleştirdim, yerleştirmedim.
+
+381
+01:16:36,016 --> 01:16:39,115
+Ben sadece olası en düşük...
+
+382
+01:16:39,115 --> 01:16:41,876
+Ne oldu şimdi?
+
+383
+01:16:44,115 --> 01:16:48,516
+Olası en düşük şeyi görmek istiyorum.
+
+384
+01:16:49,115 --> 01:16:50,556
+Parayı görmek istiyorum.
+
+385
+01:16:50,556 --> 01:16:52,556
+Şimdi o zaman B'yi...
+
+386
+01:16:53,427 --> 01:17:15,787
+3'e yerleştirebilirim. 2'ye A var çünkü yerleştiremem. B'yi 3'e yerleştirirsen o zaman 14 oluyor. Neden? Çünkü işte A2'de 2, B3'de 4, C'yi o zaman 1'e yerleştirebilirim. 5 daha 9. Ondan sonra
+
+387
+01:17:16,692 --> 01:17:19,452
+Dur, ne oldu? Bir daha yazayım şuraya, ben de karıştırdım.
+
+388
+01:17:20,032 --> 01:17:31,412
+A, ikinci işte iki. B, üçüncü işte üç. C'yi o zaman en iyi ihtimalle birinci işe yerleştirebilirim, beş.
+
+389
+01:17:32,492 --> 01:17:37,711
+D'yi de o zaman dördüncü işe yerleştirebilirim, dört. On dört. Oldu mu?
+
+390
+01:17:38,804 --> 01:17:50,724
+Tamam. Şimdi o zaman, bu da 14. Bir de üçüncü seçeneğimde B'yi dördüncü işe yerleştirme durumum. O zaman B'yi bir de dörde yerleştirelim.
+
+391
+01:17:52,404 --> 01:18:05,804
+Kalemi çok zor tutuyorum. İnşallah düzgün okuyabiliyorsunuzdur. Yazmıyor çünkü belli bir açıyla tutmam gerekiyor. O da çok sıkıntı. O zaman da 17 oluyor. B'yi dördüncü işe yerleştirmek demek şu demek.
+
+392
+01:18:05,804 --> 01:18:10,804
+A ikinci işte 2, B dördüncü işte 7.
+
+393
+01:18:11,828 --> 01:18:27,068
+A2, B7, C, 3. işe yerleşebilir, 1, D o zaman 2'ye yerleşemiyor, 1. işe yerleşebilir, 7, 14, 16, 17. Bu da böyle.
+
+394
+01:18:27,068 --> 01:18:39,068
+Şimdi o zaman, yine o zaman buradan neye gelirsiniz? Dersiniz ki, şuna bakarsınız. Bu şartlar altında A2'deyken,
+
+395
+01:18:40,595 --> 01:18:49,115
+B1'deyken 13 oluyormuş bir kere. Bunların en iyisi, yani şöyle bakalım, şeyi seçmeyeceğiniz aşikar.
+
+396
+01:18:51,235 --> 01:18:58,975
+Şunu seçmeyeceğiniz aşikar. Çünkü bir 13 var. Bunu da seçmeyeceksiniz. 14 var. Şey 13 var.
+
+397
+01:18:59,495 --> 01:19:06,036
+Peki şunu seçer misiniz? Şunu seçer misiniz? Yani yola nereden devam edersiniz?
+
+398
+01:19:09,619 --> 01:19:14,079
+Yani bunu mu seçersiniz, bunu mu, bunu mu, hangisini seçersiniz? Nereden?
+
+399
+01:19:14,079 --> 01:19:15,319
+A1 seçeriz hocam.
+
+400
+01:19:15,559 --> 01:19:16,239
+Efendim?
+
+401
+01:19:16,639 --> 01:19:17,880
+A1'den başlarız herhalde.
+
+402
+01:19:19,860 --> 01:19:21,960
+Dikkat et, duyamıyorum.
+
+403
+01:19:22,739 --> 01:19:27,960
+A'yı üçüncü iş, yani yediden devam etsek. Çünkü bir sonraki küçük şey o, sayı.
+
+404
+01:19:29,363 --> 01:19:36,503
+Hayır, şeyden devam edersiniz. A2, B1 iken 13 var elinizde. Bakın en küçük değer bu.
+
+405
+01:19:36,884 --> 01:19:40,423
+A2'den mi devam ediyoruz? Bir sonraki B'nin değeri için mi?
+
+406
+01:19:41,076 --> 01:20:00,000
+Tabii tabii çünkü A2, B1'deyken yani hepsi için bak buradaki elimdeki sayılar şunlar. Bir 17 var elimde, devam edebileceğim. Bir 13 var, bir 14 var, bir 17 var, bir 20 var, bir 18 var. Yani bu durum ben bunların içerisinden birinden...
+
+407
+01:20:00,000 --> 01:20:25,399
+devam etmeyi deneyeceğim. Niye? Çünkü eğer A2B'dirken ben belki 13 liraya bu işi çözersem hiç artık şu 17'yi, 14'ü, 17'yi, 20'yi, 18'i denememe gerek yok. Çünkü buralarda zaten olabilecek en iyi çözüm 17 ise ben 13'i halledebiliyorsam değil mi? Denememe gerek yoktur bu şeyi. Doğru mu?
+
+408
+01:20:27,539 --> 01:20:28,539
+Değil mi arkadaşlar?
+
+409
+01:20:28,539 --> 01:20:28,779
+Evet.
+
+410
+01:20:29,500 --> 01:20:29,979
+Tamam.
+
+411
+01:20:30,459 --> 01:20:34,399
+O zaman şimdi A2'deyse, B1'deyse ne olabilir?
+
+412
+01:20:34,879 --> 01:20:38,520
+C mecbur ya 3'e yerleşecek ya 4'e yerleşecek.
+
+413
+01:20:38,520 --> 01:20:43,920
+Eğer C3'deyse D4'e yerleşir.
+
+414
+01:20:44,520 --> 01:20:47,520
+O zaman kost...
+
+415
+01:20:47,828 --> 01:20:50,788
+Yani gerçekten lower bound falan değil artık.
+
+416
+01:20:50,988 --> 01:20:54,888
+Yani çünkü A'yı 2'ye, B'yi 1'e, C'yi 3'e, D'yi 4'e yerleştirdiniz mi?
+
+417
+01:20:55,328 --> 01:20:58,048
+Gerçekten artık maliyeti belirlediniz demektir.
+
+418
+01:20:58,507 --> 01:20:59,408
+Ne olacak o zaman?
+
+419
+01:20:59,988 --> 01:21:07,328
+2 artı 6 artı C'ye 3'e yerleşirse 1 artı D'de 4'e yerleşirse 4.
+
+420
+01:21:07,988 --> 01:21:08,748
+13 olacak.
+
+421
+01:21:09,208 --> 01:21:10,248
+Costumuz 13 olacak.
+
+422
+01:21:10,963 --> 01:21:19,543
+Eğer tersi olursa C'yi 4'e yerleştirirsek o zaman D de 3'e yerleşir. O zaman kostumuz ne olacak?
+
+423
+01:21:19,543 --> 01:21:34,943
+Artık kostumuz ne olacak? A 2 lira, B 6 lira, C 4'e yerleşirse 8 lira, D de 3'e yerleşirse 9 lira. O zaman kostumuz 25 olacak.
+
+424
+01:21:35,572 --> 01:21:55,391
+O zaman demek ki ne oldu? Bakın burada A2'deyken B1'i aldım, C3, D4'ü aldığımda 13 lira. Yani 13 lira gerçek maliyetimi buldum.
+
+425
+01:22:01,332 --> 01:22:28,231
+14'den, 17'den, 20'den, 18'den küçük, pardon çok özür dilerim, olduğu için bunları denememe gerek yok. Çünkü onlar da zaten olabilecek en iyi çözümler o kadar. Dolayısıyla ben çözümümü buldum. Demek ki ne olması gerekiyor baktığınız zaman? A2'ye yerleşecek.
+
+426
+01:22:28,916 --> 01:22:34,676
+B, 1'e yerleşecek, C, 3'e yerleşecek, D, 4'e yerleşecek.
+
+427
+01:22:34,796 --> 01:22:41,195
+Demek ki olması gereken şunu sileyim ki orada özellikle bir şey var zannetmeyin.
+
+428
+01:22:45,747 --> 01:22:48,307
+olması gereken çözüm bu.
+
+429
+01:22:48,307 --> 01:22:49,899
+O zaman...
+
+430
+01:22:49,908 --> 01:22:54,708
+Demek ki burada yine bir backtracking var, geriye doğru gitme var.
+
+431
+01:22:55,768 --> 01:23:07,188
+Ama burada önemli olan, aslında branch and bond'un söylemeye çalıştığı şey, bizim yapmaya çalıştığımız şey, bu sefer bizim bir takım şeylerimiz de var.
+
+432
+01:23:07,847 --> 01:23:10,908
+Optimizasyon yapılmasını gerektiren sınırlarımız da var.
+
+433
+01:23:11,068 --> 01:23:13,667
+Mesela en az, en çok vesaire gibi.
+
+434
+01:23:14,568 --> 01:23:17,908
+Bunlara göre problemi bu şekilde bir ağaç...
+
+435
+01:23:17,908 --> 01:23:25,708
+yapısıyla çözüyoruz. Yine bu bizim şeyimiz aslında, State Space Tree'miz.
+
+436
+01:23:34,899 --> 01:23:37,340
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+437
+01:23:39,439 --> 01:23:40,840
+Hocam burada...
+
+438
+01:23:40,840 --> 01:23:41,559
+Evet, buyurun.
+
+439
+01:23:42,899 --> 01:23:47,279
+Bulunduğumuz katmana mı bakıyoruz sadece yoksa üst katmana da bakıyoruz daha az olan var mı diye?
+
+440
+01:23:47,859 --> 01:24:15,859
+Çok güzel. Aslında şey olsaydı üst katmana bakacaktık. Yani mesela ne bileyim şöyle göstereyim. Burada ben 10 dedim ama mesela bu katmanda işte hani oldu öyle oldu. Burada 20 çıktı, burada 25 çıktı, burada bilmem kaç çıktı. Şu katta daha küçük değerler var. O zaman onları denemen lazım. Neden? Çünkü burada 20 çıkmış.
+
+441
+01:24:15,859 --> 01:24:27,100
+Sen biliyorsun ki yine burada bir dedent var. Yani ne yapsam daha iyisini, 17'den daha iyisini bulamazsın aslında. Onu biliyorsun aslında.
+
+442
+01:24:28,440 --> 01:24:29,459
+Anladım hocam. Teşekkür ederim.
+
+443
+01:24:29,920 --> 01:24:32,500
+Ben teşekkür ederim. Peki.
+
+444
+01:24:38,868 --> 01:24:43,328
+Peki. O zaman son bir tane de şey çözerek,
+
+445
+01:24:46,908 --> 01:24:53,268
+Napsack problemini bir minimum bulma yaptık, bir de maksimum bulma.
+
+446
+01:24:53,680 --> 01:25:18,279
+yaparak devam edelim. Şimdi Nebsek'teki problem de hatırlarsanız, aslında en iyi, en pahalıyı bulmaktı. Bu sefer de upper bound, yani aslında üst şeyi bulmaya çalışıyorduk, sınırı bulmaya çalışıyorduk. Bu sefer bunu böyle bir durumda nasıl çözeceğimizi bulmaya çalışalım.
+
+447
+01:25:19,123 --> 01:25:26,943
+Şimdi şöyle bir köşelere yapayım ki, okunuyor mu yazdığım? Rahat okuyor musunuz?
+
+448
+01:25:27,103 --> 01:25:28,023
+Evet hocam, okunabiliyorum.
+
+449
+01:25:28,903 --> 01:25:40,723
+Tamam, şimdi çünkü ağaç mağaç çizeceğim, şey olmasını istiyorum, öyle yarım olsun ki aynı sayfada kalayım, arkaya geçersem unutursunuz diye düşünüyorum.
+
+450
+01:25:41,603 --> 01:25:45,363
+Bir şey soracağım, telefondan takip edenler rahat görebiliyorlar mı?
+
+451
+01:25:51,252 --> 01:25:54,072
+Telefondan takip eden yok belki de bilemedim.
+
+452
+01:25:57,391 --> 01:26:00,731
+Yani o zaman çok zor oluyor çünkü farkındayım.
+
+453
+01:26:01,012 --> 01:26:02,672
+Şimdi diyelim ki şöyle bir durum olsun.
+
+454
+01:26:03,332 --> 01:26:04,891
+Dört tane şey var.
+
+455
+01:26:08,891 --> 01:26:13,036
+Eşya var seçmemiz gereken ve on kilo...
+
+456
+01:26:13,140 --> 01:26:41,000
+taşıyan bir şeyimiz var, sırt çantamız var. Bu eşyaların ağırlıkları ve kaç lira oldukları da bu şekilde verilmiş olsun. Bu sefer şey yapmaya çalışıyoruz, en çok parayı getirecek şekilde çantamızı doldurmaya çalışıyoruz. Daha önce biz bunu dinamik programlamayla görmüştük hatırlarsanız. Demiştik ki,
+
+457
+01:26:41,140 --> 01:26:42,500
+İç de...
+
+458
+01:26:42,612 --> 01:27:01,332
+şey yapalım, yani bütün olasılıkların nasıl sonuç verdiğini bir işte matris üzerinde, rekürans bandı ile matris üzerinde gösterelim. Böylece şeyi anlayabiliriz, yani 1'e aldım, 2'ye aldım, 3'ü almazsam ne oluyor, ne kadar kazanıyorum, bunu görebiliriz demiştik.
+
+459
+01:27:01,332 --> 01:27:10,332
+Şimdi branch and bound da bu sefer şey olmayacak, iyi çözüm getirmeyecek, yolları denemeyerek bu sefer...
+
+460
+01:27:10,612 --> 01:27:21,072
+Yani alt çözümlerde ucundan bir şey çıkmayacağı belli olan yollardan devam etmeyerek çözmenin nasıl olacağını.
+
+461
+01:27:21,391 --> 01:27:41,391
+deneyeceğiz. Şimdi burada şeyi kazanmak istiyoruz biz aslında. Yani en çok parayı kazanmak istiyoruz. O zaman bu sefer bu bir üst sınır belirlemeye dayalı bir problem. Şimdi burada şöyle bir...
+
+462
+01:27:45,492 --> 01:28:08,492
+Her ürünün değer-ağırlık ilişkisine göre ne kadar değerli bir birim değerini ölçmeye çalışıyoruz. Örneğin, birinci şey, 4 kilo ağırlık...
+
+463
+01:28:09,395 --> 01:28:13,975
+40 lira ağırlığı da 4 kilo. O zaman bunun birim değeri
+
+464
+01:28:14,448 --> 01:28:23,068
+10, ikincisi 42 lira, 7 kilo, 6, üçüncüsü 5, dördüncüsü 4 gibi.
+
+465
+01:28:23,888 --> 01:28:29,348
+Şimdi burada aslında bu böyle dizili, yani bu şekilde zaten yerleştirilmiş.
+
+466
+01:28:29,708 --> 01:28:32,468
+Bunları önce büyüktan küçüğe bir yerleştiriyoruz.
+
+467
+01:28:32,468 --> 01:28:40,808
+Yani en getirisi yüksek olan en üstte birim ağırlık olarak, birim değer olarak.
+
+468
+01:28:42,448 --> 01:28:57,208
+değer bölü ağırlıktan, birim değer olarak en getirisi yüksek olan, en üstte olacak şekilde önce bunları bir büyükten küçüğe yerleştiriyoruz. Arkasından mantıken yani şeyi düşünüyoruz.
+
+469
+01:28:58,771 --> 01:29:13,612
+Birim değeri en yüksek olan aslında en karlısı olabilir. İşe oradan başlamak iyi bir çözüm olabilir. Birinci kararımız bu. İkinci kararımız da...
+
+470
+01:29:13,779 --> 01:29:40,719
+şeye bakmak, sırasıyla her aldığımız eşya için maksimum ne kadar kazanabileceğimize bakmak. Yani bu şu demek, örneğin birinci eşyayı alsaydık, bunun birim değeri 10 lira ve benim nefseyim de 10 kilo alıyor, o zaman ben en fazla 100 lira kazanırdım.
+
+471
+01:29:43,475 --> 01:29:59,475
+Değil mi? Yani şu anda ben bunların birim değerini hesapladığıma göre bir kilosu on lira değerinde birinci eşyanın. Eğer nebseğim tamamen boşsa ve...
+
+472
+01:30:00,020 --> 01:30:13,380
+Birinci eşyada en fazla ne olabilir? Yani en fazla 10 kilo olabilir. Ben birinci eşya ile kazanabileceğim maksimum kazanç en fazla 100 liradır. Bunun üzerine çıkabilir miyim?
+
+473
+01:30:15,539 --> 01:30:43,539
+Çıkamam. Bu mantıkla hareket edeceğim bundan sonra. Yani işte şu anda bu nebseyi en fazla kazanabileceğim 100 lira. Ondan sonra işte diyelim ki birinciyi alırsan, eşyaların arasına birinciyi katarsam, birinci 4 kilo olduğu için geriye işte 6 kilo kalıyor. En fazla ne kadar kazanabilirim falan diye diye gideceğim. Şimdi bu anlaşıldıysa çözüme başlıyoruz.
+
+474
+01:30:43,539 --> 01:30:57,000
+Başlıyorum. En fazla, yani her adımda olabilecek en fazla kazancı vere vere gideceğim. Peki. Şimdi o zaman olabilecek en fazla kazanç, yani Applebound dediğimiz şey,
+
+475
+01:31:03,923 --> 01:31:31,503
+V benim şeyimi gösteriyor aslında. Mesela işte birinci eşyayı alırsam bunun V'yosu 40 lira, 40 lira kazanacağım. Bunu gösteriyor. Kazancım olabilecek upper bound V-V, V, V, I artı bir, V, I artı bir.
+
+476
+01:31:31,988 --> 01:31:38,568
+Şimdi şey üzerinden göstererek başlayayım. Çünkü böyle havaya anlatınca birazcık sıkıntılı oluyor.
+
+477
+01:31:39,648 --> 01:31:45,448
+Şimdi ilk durumdan başlayayım. Sonra anlayacaksınız orada ne demek istediğimi. Örnek sayı üzerinde gösterince.
+
+478
+01:31:45,968 --> 01:31:49,528
+Şimdi ilk durumda benim hiçbir şeyim yok.
+
+479
+01:31:49,528 --> 01:31:57,648
+Ve bu durumda upper bound'un nedir?
+
+480
+01:32:07,060 --> 01:32:22,060
+Aaa yapamadım ya. Pardon, bir saniye. Upper bound'um nedir? 10 lira artı, ondan sonra şey...
+
+481
+01:32:27,380 --> 01:32:37,460
+100, yani eğer bunu alırsam sadece, buradan benim kazanacağım değer 100 lira. Çünkü başlangıçta şu V0'a.
+
+482
+01:32:38,387 --> 01:32:42,327
+Niye yapamadım? Bir saniye arkadaşlar. Şöyle yaparsam şöyle olacak.
+
+483
+01:32:42,867 --> 01:32:57,747
+Şimdi başlangıçta V0 ise 0 artı şu anda elimdeki kazanç 0 ise 0 artı 10-0 çarpı bir sonra alabileceğim birinci eşya olduğu için 10.
+
+484
+01:32:57,747 --> 01:33:06,387
+İşe ilk başladığında kazancım 100 lira. Yani bu şu demek hiçbir şey yokken sadece birinci...
+
+485
+01:33:06,387 --> 01:33:23,688
+Birinci eşyayı alsam, o da maksimum 10 kilo olabileceği için en fazla benim kazanacağım para 100 lira demek. Şimdi birinci eşyayı alabilirim veya birinci eşyayı almayabilirim.
+
+486
+01:33:23,743 --> 01:33:29,403
+Değil mi? Bu hep böyleydi. Yani biz yaparken hep böyle gördük. Biri alsam, almasam falan diye gördük.
+
+487
+01:33:29,884 --> 01:33:34,804
+Şimdi birinci eşyayı alırsam, şimdi anlayacaksınız aslında ne demek istediğimi.
+
+488
+01:33:35,323 --> 01:33:43,423
+Birinci eşyayı alırsam çantamda 4 kilo yük olacak ve 40 lira kazanmış olacağım.
+
+489
+01:33:44,344 --> 01:33:49,104
+Bu durumda apur bandum şu olacak. Zaten 40 liram vardı.
+
+490
+01:33:50,515 --> 01:33:54,775
+Geriye 6 kiloluk eşya alabilirim.
+
+491
+01:33:56,135 --> 01:34:07,916
+Diyelim ki en yüksek getirisi olan şey olduğuna göre, ikinci item olduğuna göre, o da en fazla birin başına 6 lira getirdiğine göre,
+
+492
+01:34:07,916 --> 01:34:17,635
+ben birinci eşyayı aldığımda maksimum kazancım 76 lira olabilir. O anlaşıldı mı?
+
+493
+01:34:18,420 --> 01:34:19,980
+Bir daha anlatayım mı?
+
+494
+01:34:23,891 --> 01:34:24,891
+Anladınız mı?
+
+495
+01:34:27,271 --> 01:34:28,371
+Evet hocam.
+
+496
+01:34:29,031 --> 01:34:29,331
+Tamam.
+
+497
+01:34:29,591 --> 01:34:30,612
+Hocam bir daha söyler misiniz?
+
+498
+01:34:30,951 --> 01:34:43,951
+Tabii söylerim. Şimdi bak, şurası hiç kimse yokken, hiç kimse yokken 10 kilo eşya alacak kadar yerim var. Hiç kimse yok çünkü. Maksimum kapasite 10 kiloydu.
+
+499
+01:34:43,951 --> 01:34:48,652
+Ve en çok parayı birincisi getiriyor.
+
+500
+01:34:49,524 --> 01:35:01,644
+Sadece biri alsam, çünkü en fazla o, yani 10 kiloluk olarak biri alsam, zaten en fazla benim 100 lira kazancım olabilir. Yüzün üstüne çıkamam. Tamam mı?
+
+501
+01:35:02,292 --> 01:35:15,292
+Çünkü şey olsa olmayacak, yani 4 kilo bunu alsam, bilmem ne bunu alsam olmayacak. Toplam birim fiyatı en yüksek olan bu. 10 kilo onu alsam en fazla 100 lira kazanabilirim.
+
+502
+01:35:15,292 --> 01:35:25,292
+Şimdi oradan yola çıktım. Birinci seçeneğim, birinciyi alırsam maksimum kazancımın ne olacağı, ikinci seçeneğimde almazsam ne olacağı.
+
+503
+01:35:27,539 --> 01:35:45,719
+Biri aldığım anda, şu benim sepetim, burada bir var. Bir varsa birin ağırlığı 4 kilo ve değeri de 40 lira. O zaman ben daha fazla kaç kilo alabilirim?
+
+504
+01:35:46,068 --> 01:35:57,128
+10-4, 6 kilo alabilirim. 6 kiloyla bir sonraki en fazla değeri olan eşya 6 lira.
+
+505
+01:35:57,807 --> 01:36:19,747
+Yani en çok kâr o getirecek bana. Onu ansam, o da maksimum 6 kiloyu dolduruyor olsa, upper bound'um 76 lira olabilir. 40 vardı, 36 da ikinci eşyadan gelse en fazla 76 lira kazanabilirim. Peki, birinciyi almasam ne olur?
+
+506
+01:36:20,532 --> 01:36:33,052
+Birinciyi almazsam maksimum kazancım, şu an için bakıyorum, ne olacak? 10 kilonun tamamını ikinciden alacağım, 60 lira olur.
+
+507
+01:36:34,851 --> 01:36:44,652
+Tamam mı? Anlaşıldı mı? Birinciyi almazsam 10 kilo yerim var, birinciyi almadığına göre en iyi durum bu, ikincinin durumu.
+
+508
+01:36:46,996 --> 01:37:11,716
+şey, birim başına. O zaman ne olacak? 60 lira kazanabileceğim en fazla. Peki, buradan o zaman devam edeyim. Yani şurası, şu an için birden devam etmem daha karlı gözüküyor. Zaten onu tahmin ediyorduk yani. Şu an için öyle ama. Belki sonra bozulur. Şimdi, ikinci seçenek. Biri aldım, ikiyle devam etme.
+
+509
+01:37:12,136 --> 01:37:13,316
+Hocam, ben bir şey sorabilir miyim?
+
+510
+01:37:13,876 --> 01:37:14,476
+Sorabilirsin.
+
+511
+01:37:15,188 --> 01:37:19,928
+Hocam, şimdi ilk başta hiçbir şey almadan maksimum karımızı 100 olarak söyledik ya.
+
+512
+01:37:20,368 --> 01:37:20,648
+Evet.
+
+513
+01:37:21,168 --> 01:37:25,128
+Bunun 100 olabilmesi için, hani atıyorum, bunu şu açıdan söyledik.
+
+514
+01:37:25,248 --> 01:37:28,708
+Şimdi elimizde de hiçbir şey almadığımız için sadece ilk itemin bilgisi var.
+
+515
+01:37:29,168 --> 01:37:34,228
+Ve de 10'da hani ağırlığı karşısında ettiği para değeri 10.
+
+516
+01:37:34,448 --> 01:37:40,328
+Şimdi bizim 10 tane alan kaplayabilecek eşya alabileceğim için maksimum gelirimiz 100 oluyor.
+
+517
+01:37:40,328 --> 01:37:43,188
+Ama normalde bu nefsek problemlerinde...
+
+518
+01:37:43,188 --> 01:37:49,307
+hani itemi ölemiyorduk ya da bir şeyler yapamıyorduk ya, aslında mantıken maksimum yüze çıkmıyor galiba.
+
+519
+01:37:50,028 --> 01:37:50,828
+Çıkmıyor zaten.
+
+520
+01:37:51,128 --> 01:37:52,588
+Zaten iki buçuk tane almamız lazım.
+
+521
+01:37:52,992 --> 01:37:59,572
+Aynen öyle. Burada derdimiz o değil bizim. Biz şu anda şeyi anlamaya çalışıyoruz. Bak burada da onu yaptık aslında.
+
+522
+01:38:00,112 --> 01:38:08,172
+Yani mesela burada da aynı işe iki kişiyi koyamıyorsun aslında. Ama diyorsun ki, varsayalım ki her şey yolunda gitseydi.
+
+523
+01:38:08,312 --> 01:38:14,492
+Çünkü ilk durumda üçle bir aynı işe koymuşsun. Yani şurada bunu yapamazsın asla.
+
+524
+01:38:14,892 --> 01:38:20,771
+Diyoruz ki her şey şahane olsaydı en az ne kadar ödeyecektim. Bu da aynı mantıkla.
+
+525
+01:38:20,992 --> 01:38:42,012
+Yani sen diyor, en fazla zaten birin başına 10 lira kazanabiliyorsun. Yani bir kilo için en fazla kazancın 10 lira olabilir diyor. Diyelim ki 10 kilolukta eşya alıyorsun. Bunun tamamı 10 kilo olsaydın ne kazanırdın? En fazla 100 lira kazandın. Bir 5 dakika müsaade eder misiniz?
+
+526
+01:40:50,804 --> 01:40:53,984
+Evet arkadaşlar, devam edelim.
+
+527
+01:40:54,452 --> 01:41:03,971
+Tamam, yani bizim burada yapmaya çalıştığımız şey, upper bound'un en fazla nereye çıkabileceğini görerek bir yolu seçip seçmemeye karar vermek.
+
+528
+01:41:04,091 --> 01:41:17,192
+Yani biz burada ne yaptık? Dedik ki, bir olmasaydı zaten en fazla 60 lira kazanacağım, bir olduğunda 76 lira kazanabiliyorsam, önce bir varkenki durumları deneyelim dedik.
+
+529
+01:41:17,192 --> 01:41:22,452
+Şimdi, ama bir varken ikiyi alamıyorsunuz. Neden? Çünkü ikiyi yedik.
+
+530
+01:41:22,452 --> 01:41:36,131
+1'i eğer aldıysam, o 4 kilo, 2'de 7 kiloysa onu alamayacağım. Yani o kesin. O zaman 1'i aldıysam, ikinci durumda şeyle devam etmem lazım.
+
+531
+01:41:36,292 --> 01:41:43,992
+Bir daha o tiki. 2 yokken onunla devam etmem lazım. Şimdi 2 yokken, olabilecek apı bağında bakalım önce.
+
+532
+01:41:48,692 --> 01:42:15,051
+Alabilecek Upper Bound bu sefer ne olacak? Bir 40 liram vardı, 6 kilom var alabilecek ama 3. item'ı alabilirim. Dolayısıyla şimdi Upper Bound'um 70 oldu. Neden? Çünkü 3. item 5 kilo, birim fiyatı 5'ti, 1 kiloluk fiyatı 5'ti. 6 kilo olsa buradan benim maksimum kazancım 70.
+
+533
+01:42:16,692 --> 01:42:44,612
+Bir bakın bu 70 bu 60 olduğuna göre yine ben şeyden gitmeye devam etmeliyim. Bu yoldan gitmeye devam etmeliyim. Şimdi buradan gidiyorum. O zaman ikisiz yani bir ile ikisiz. Üç ile üç varken nasıl olacak şimdi ona bakalım. Şimdi üç varken ne oldu? Üçe bakıyorum. Üç beş kiloymuş. Ağırlığım dokuza çıktı. Bir vardı.
+
+534
+01:42:44,692 --> 01:43:06,072
+4 kilo, 3'ü de aldım, 5 kilo. Ağırlığım 9'a çıktı. Hem 1'i hem 3'ü aldıysam, elimdeki şeyin parası da, yükün parası da 65 liraya çıktı. Peki bu durumda upper bound'um ne olacak? Zaten 65 liram var.
+
+535
+01:43:06,771 --> 01:43:17,991
+1 kilom kaldı geriye. Çünkü 9 kiloluk yük var elimde. Ve dördüncü işte birim fiyatı 4 liraysa upper bound'um 69 olacak bu durumda.
+
+536
+01:43:20,152 --> 01:43:23,871
+Peki 3 olmasaydı ne olacak ona bakalım.
+
+537
+01:43:25,268 --> 01:43:34,028
+3 olmasaydı elimde sadece 1 var şu anda ve işte 4 kiloluk 40 liralık bir şey var.
+
+538
+01:43:34,967 --> 01:43:36,547
+Upper bound'um o zaman ne olacak?
+
+539
+01:43:37,268 --> 01:43:39,627
+40 lira vardı zaten elimde.
+
+540
+01:43:40,467 --> 01:43:41,927
+6 kilo kaldı geriye.
+
+541
+01:43:42,987 --> 01:43:46,747
+Birim kıyatı da 4 liraydı dördüncü işin.
+
+542
+01:43:47,188 --> 01:43:49,387
+Upper bound'um 64 olacak.
+
+543
+01:43:50,644 --> 01:44:13,684
+O zaman baktığınız zaman hala şey daha iyi gözüküyor. Şu yol, şöyle şu anda. Çünkü burası 69, apırbağında burası 65. Şimdi bakın hep şeye karar veriyorsunuz. Yani bin tane şeyi deneyeceğinize elinizdeki seçenekler içerisinden en uygununu deniyorsunuz.
+
+544
+01:44:18,644 --> 01:44:20,724
+Ne olacak? Oradan devam etmeliyim.
+
+545
+01:44:23,004 --> 01:44:28,504
+3 varken olabilecek bir çözüm 4'ün de olması.
+
+546
+01:44:29,204 --> 01:44:30,564
+Şimdi ona bakıyorum.
+
+547
+01:44:31,024 --> 01:44:33,504
+Zaten 3 varken 9 kilo yüküm vardı.
+
+548
+01:44:34,084 --> 01:44:37,564
+4'te 3 kilo, 9 artı 3, 12.
+
+549
+01:44:40,264 --> 01:44:41,664
+Şöyle yapayım çünkü.
+
+550
+01:44:43,828 --> 01:44:47,547
+Orası birazcık şey oldu, sıkıştı, göremeyebilirsiniz.
+
+551
+01:44:48,488 --> 01:44:54,148
+12, demek ki bunu yapamam, çünkü benim nefseyim 10 kilo yük alabiliyor.
+
+552
+01:44:54,707 --> 01:44:57,268
+O zaman şuna bakalım, bakalım bizi kurtaracak mı?
+
+553
+01:44:57,948 --> 01:45:00,608
+4 olmasaydı ne oluyordu?
+
+554
+01:45:00,608 --> 01:45:02,608
+4 olmasaydı...
+
+555
+01:45:04,532 --> 01:45:14,532
+O zaman bir önceki durumda kalıyorum aslında. 9 kilo yüküm var, 65 lira ediyor bu yük ve…
+
+556
+01:45:15,220 --> 01:45:43,220
+4'te yoksa upper bound'um 65'te kalıyor. Şimdi burada şuna bakıyorum o zaman. Şimdi artık bunu yapabilirim. Elimdeki çözümlere bakıyorum. Şimdi bu 65 liraydı ama diğer upper bound'lar neler? Şimdi burası 65'in altında kalıyor. Burayı iptal ettim. Yani bu şu demek çünkü yani biri almazsam zaten en fazla 60 lira kazanıyorum. O zaman bu taraf...
+
+557
+01:45:43,220 --> 01:46:11,220
+tarafı değerlendirmeme gerek yok. İkinci olarak ne yapabilirim? Deneyebileceğim, yola devam edebileceğim. Hani üçü almadım, dördü alayım mı falan diye buradan devam etmeye kalksam. Bunun da kurban da şey, 65'den az. Yani burada da şey nedir? 64 lira en fazla, yani en en iyi kazanabileceğim para 64 lira.
+
+558
+01:46:11,220 --> 01:46:24,840
+O zaman buna da bakmama gerek yok. Buralar zaten toplam ağırlığı geçtikleri için ölmüşlerdi. O zaman demek ki bizim çözümümüz nedir?
+
+559
+01:46:24,840 --> 01:46:31,039
+Şöyle baktığınız zaman
+
+560
+01:46:34,515 --> 01:46:54,675
+Bu nedir? Şöyle çıkarsak, bir alınmış, ondan sonra ve üç alınmış hali, bir ve üçün alındığı hali. Yani şu yol, şuradan geldi, ikiyi almadı, üçü aldı, dördü almadı. En iyi çözüm budur.
+
+561
+01:46:54,675 --> 01:47:02,496
+Buraya kadar sormak istediğiniz bir şey var mı arkadaşlar, aklınıza takılan? Anladınız mı ne olduğunu? Bakın tekrardan söylüyorum.
+
+562
+01:47:02,515 --> 01:47:15,036
+Upper bound size gerçek çözümü söylemiyor. Upper bound diyor ki, elimdeki durumda, hani kuralları hiçe saysaydım, yani mesela nedir?
+
+563
+01:47:15,855 --> 01:47:22,515
+İşte ben biliyorum ki zaten aslında birinci eşya dört kilo, yani bunun dört kilo ama...
+
+564
+01:47:35,220 --> 01:47:38,800
+Şimdi bitecek, bitince ben arayayım mı seni?
+
+565
+01:47:40,600 --> 01:47:42,140
+Tamam, oldu, tamam.
+
+566
+01:47:43,091 --> 01:48:00,832
+Öbür taraf bitirmiş anlaşılan dersi. Neyse bizimkisi de bitiyor. Yani upper bound size gerçek sonucu değil, şey yapsaydım, yani kurallara takılmasaydım, mesela birinci eşya 4 kilo değil de 10 kilo olsaydı ben maksimum ne kazanabilirdim onu gösteriyor.
+
+567
+01:48:01,231 --> 01:48:11,091
+Bu sayede ben neyi sağlamış oluyorum? Mesela biri almasaydım upper bound atmış olacaktı ya, yani bu yoldan devam etmemin bana bir şey...
+
+568
+01:48:11,091 --> 01:48:29,652
+getirip getirmeyeceğini görüyorum. Eğer elimde 65 varsa ben bu yola hiç girmem. Çünkü zaten burada maksimum 60 lira kazanabileceğim. Dolayısıyla Branch and Bound da bu şekilde bir şey yapısıyla bu da State Space Tree yine aynı şekilde.
+
+569
+01:48:38,868 --> 01:48:56,808
+Napsack için Branch and Bound-on State Space seriesi. Ondan sonra şeyi görmüş oluyorum. Devam etmemen gereken yolları görmüş oluyorum. Sormak istediniz bir şey var mı? Aklınıza takılan.
+
+570
+01:48:59,123 --> 01:49:24,724
+Peki, şimdi şöyle yapacağız. Üçüncü ders için öbür linkten devam edeceksiniz. Asistan arkadaşlarımızdan Fatma Nur size bu ödevde verdiğimiz soruların çözümünü anlatacak. Cumartesi sanıyorum koyacağız bir sonraki ödevi. Öyle konuştuk en son.
+
+571
+01:49:27,123 --> 01:49:45,884
+Özellikle bir şey rica ediyorum arkadaşlar. Bakın, şeylerde, sınavlarda, zaten sınav süresi bir saat, bir buçuk saatken, biz her ne kadar süreyi, ona göre, belge yükleme sürenizi de düşünerek hesaplıyoruz.
+
+572
+01:49:45,884 --> 01:49:51,824
+Yani onu hesaplamadığımızı zannetmeyin, belge yükleme sürenizi düşünerek hesaplıyoruz.
+
+573
+01:49:51,963 --> 01:49:55,123
+Ama o anda bir saatlik, bir buçuk saatlik sınavda bir aksesini...
+
+574
+01:49:55,123 --> 01:49:58,663
+yaşandığında bunu anlayışla karşılamak mümkün.
+
+575
+01:49:58,764 --> 01:50:05,743
+Ama ödev teslimlerinde yani bu sefer az oldu ama iki kişi de oldu sadece.
+
+576
+01:50:06,783 --> 01:50:09,623
+23.58'de denemeye başlayıp...
+
+577
+01:50:12,851 --> 01:50:40,132
+ne oldu, böyle oldu diye böyle adrenalin ne yüksek işlere kalkışmayın lütfen. Zaten size bir hafta süre verilmiş. Lütfen son dakikaya bırakmadan şeyi deneyin, ödevinizi upload etmeyi deneyin. Ondan sonra son dakikada işte 23.58'de başladım bilmem ne oldu diye sıkıntı yaşamayın. Çünkü
+
+578
+01:50:40,851 --> 01:50:47,952
+Şunu unutmayın, o şekilde yaptığımızda gerçekten sıkıntı mı oldu, ne oldu biz bilemiyoruz.
+
+579
+01:50:48,512 --> 01:51:01,992
+Ve kabul ettiğimizde de belki ödevini 5 dakika, 10 dakika sonra bitirecek fakat süre dolduğu için göndermemiş bir öğrencinin de hakkı yenmiş olabiliyor.
+
+580
+01:51:02,132 --> 01:51:08,851
+Ne olur birbirinize anlayış gösterin, birbirinizin haklarına saygı gösterin ve sizlerle bize yardımcı olun.
+
+581
+01:51:08,851 --> 01:51:13,851
+Çünkü bu süreçte biz de bu şeylerde çok sıkıntı çekiyoruz.
+
+582
+01:51:13,851 --> 01:51:17,851
+Diyebilirsiniz ki 10 dakika sonra, 15 dakika sonra olun.
+
+583
+01:51:17,971 --> 01:51:45,971
+Bunu yapmaya çalıştığımızda da, bunu özellikle geçen dönem çok yaşadık. Bu sefer 10-15 dakika ile bitmiyor, öbürü bir saat sonra gönderiyor. Bir başkası diyor ki, ama ben de bilseydim, ben de bir saat sonra gönderirdim. Çok büyük sıkıntı yaşanıyor. Burada önemli olan dediğim gibi, herkesin birbirinin hakkına saygı göstermesi, bu şekilde yani bizim de kimsenin hakkını yememiş olması.
+
+584
+01:51:45,971 --> 01:52:00,731
+Bu konuda yardımınızı rica ediyorum bir sonraki ödemin tesliminde. Peki, o zaman bugünlük bu kadar. Öbür şeyden devam edeceğiz, tamam mı? Öbür linkten. Sorunuz yoksa bitiriyor. Evet.
+
+585
+01:52:01,811 --> 01:52:13,171
+Benim ikinci ödevim sanırım sistemde yüklenmemiş. Yani o yüzden de sıfır olarak gözüküyor. Onu asistana söylesem bir şey yapabilir miyiz?
+
+586
+01:52:13,684 --> 01:52:19,244
+Artık yapamayız yani. O noktada niye sen hiçbir şekilde bir şey söylemedin?
+
+587
+01:52:19,924 --> 01:52:23,204
+Artık dediğiniz zaten çok geç açıklanıyor hocam.
+
+588
+01:52:24,284 --> 01:52:31,404
+Ne geç açıklanıyor? Yani iki öğrenci hemen şey yaptılar, iki dakika falan geçikerek şöyle oldu, böyle oldu.
+
+589
+01:52:31,864 --> 01:52:40,784
+Hayır, iki dakika değil. Yükledim ben çok ikinci ödedi de. Kontrol edilmemiş hiç.
+
+590
+01:52:42,323 --> 01:52:59,283
+Ha ödevin kontrol edilmemiş, ödevinin kontrol edilmemesiyle ilgili tabi ki mail yaz belki aktörü sorabilirler. Ne olduğuna baksınlar. Tabii ki sıkıntı yok. Benim ödevimin notum girilmemiş, kontrol edilmemiş yaz. Hemen baksınlar.
+
+591
+01:52:59,731 --> 01:53:00,712
+Peki hocam.
+
+592
+01:53:00,992 --> 01:53:03,012
+Yani onunla ilgili bir sıkıntı yok kesinlikle.
+
+593
+01:53:03,712 --> 01:53:06,412
+Peki o zaman öbür linkten devam edeceğiz.
+
+594
+01:53:07,332 --> 01:53:10,372
+Size güzel bir hafta diliyorum haftanın geri kalanında.
+
+595
+01:53:10,612 --> 01:53:11,372
+Görüşmek üzere.

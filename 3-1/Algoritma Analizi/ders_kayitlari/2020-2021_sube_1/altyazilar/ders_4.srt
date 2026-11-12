@@ -1,0 +1,1107 @@
+1
+00:00:28,884 --> 00:00:36,619
+Tamam, şimdi ekranımı da paylaşmış olmam gerekiyor. Şimdi geri döndüm. Şimdi arkadaşlar...
+
+2
+00:00:36,820 --> 00:00:44,879
+Bir kez daha söylüyorum. Bu da ne kadar da karışık olmuş ama takip ediyorsunuzdur herhalde. Ekranımı görüyor musunuz öncelikle?
+
+3
+00:00:45,500 --> 00:00:45,939
+Evet hocam.
+
+4
+00:00:46,640 --> 00:01:03,200
+Worst case'de dizi tersten sıralıysa ne olması gerekiyor? Her seferinde bir elemanı doğru yere yerleştirmek için en başa kadar gitmesi gerekiyor. Yani iyi defa gitmesi gerekiyor. O yüzden şeyin nedir?
+
+5
+00:01:03,567 --> 00:01:22,407
+Insortion Sort'un worst case'inde i eşittir birden n'e kadar en defa iyi karşılaştırma yapmamız gerekiyor. O yüzden bunun worst case'i n². O n² diyebiliriz şeye, karnı...
+
+6
+00:01:22,415 --> 00:01:50,415
+Çiftliğinden, Big-O notasyonuyla, worst case'inde o n kare diyebiliriz. Theta n kare de diyebiliriz. Yani bu da olabilecek bir şey. Çünkü worst case'de mutlaka n kare olacağı için ana Theta n kare de diyebiliriz. İkisi de mümkün. Yani şeyin, insertion sortun c worst'ünü şey olarak gösterebiliriz. O n kare.
+
+7
+00:01:50,415 --> 00:01:59,076
+n² veya Theta n² olarak gösterebiliriz. Yani ikisi de uygun. Şimdi gelelim Best Gaze'ine. Best Gaze'inde,
+
+8
+00:01:59,076 --> 00:02:10,576
+worst Gaze'inde benim dizim tersten sıralıysa karşılaşacağım durum. Worst Gaze'im bu. Best Gaze'inde dizim düzden sıralıysa karşılaşacağım durum.
+
+9
+00:02:10,576 --> 00:02:18,415
+Yani işte 7 için sadece bir karşılaştırma yapıyorum. Tamam ellemiyorum. 8 için sadece bir karşılaştırma yapıyorum.
+
+10
+00:02:18,415 --> 00:02:37,396
+karşılaştırma yapıyorum, ellemiyorum gibi. Yani aslında burada n tane i eşittir birden n-1'e kadar, şurada i eşittir birden n-1'e kadar giderken bir tane karşılaştırma yapıyorum. O zaman burada karmaşıklık n-1 oluyor değil mi?
+
+11
+00:02:37,907 --> 00:02:45,907
+Her seferinde bir karşılaştırma yapıyorum ve elemanın yeri değişmediği için daha fazla karşılaştırma yapmaya devam etmiyorum.
+
+12
+00:02:45,907 --> 00:02:48,907
+O zaman ne olmuş oluyor?
+
+13
+00:02:48,907 --> 00:02:55,907
+Insertion Tissort'un Best Case'inde kompleksitesi
+
+14
+00:02:57,460 --> 00:03:03,740
+Yine aynı şekilde O-N veya Theta-N ile gösterebilirsiniz. İkisi de doğru.
+
+15
+00:03:04,620 --> 00:03:09,460
+Şimdi burada Theta-N'i rahatlıkla söyleyebilirsiniz.
+
+16
+00:03:09,700 --> 00:03:14,220
+Yani diyebilirsiniz ki C best elemanıdır Theta-N. Niye?
+
+17
+00:03:14,700 --> 00:03:17,100
+Çünkü burada şöyle bir şey var.
+
+18
+00:03:17,920 --> 00:03:24,560
+Theta-N, best case karmaşıklığının N'den düşük olma ihtimali var mı?
+
+19
+00:03:29,651 --> 00:03:35,491
+Hocam, yok çünkü her şekilde biz bir kere tüm şeyi gezmemiz lazım. Doğru mu diye kontrol ediyoruz.
+
+20
+00:03:35,771 --> 00:03:47,131
+Aynen öyle. Bütün şeyi gezmeniz lazım. Dizi gezmeniz lazım. O yüzden bunun best case karmaşıklığına rahatlıkla Theta-N diyebilirsiniz.
+
+21
+00:03:47,811 --> 00:03:56,311
+Yani buralarda hepsi uygun aslında. Yani buna şey de deseniz olurdu. Omega-N de deseniz olurdu.
+
+22
+00:03:57,651 --> 00:04:21,771
+Halkoritmalarını işletmek için hangisi daha anlaşılır ona bakmanız önemli. Yoksa şey değil, nedir yanlış değil yani o demeniz, Theta demeniz çok yanlış değil. Ben şeyi anlatmaya çalışıyorum özellikle. Yani bir dizinin en büyük elemanını bulurken mesela dizinin en büyük elemanını bulma işlemini Theta Anne'le gösterebilirsiniz. Neden? Çünkü
+
+23
+00:04:24,019 --> 00:04:39,939
+Best case, worst case, average case birbirine eşit olduğu için onun bazı durumlarda şey işte bir sefer, bazı durumlarda en sefer diye çalışma durumu yok. Ama mesela insertion sortun karmaşıklığı nedir dersen.
+
+24
+00:04:43,572 --> 00:04:45,572
+Şunu diyebilir misiniz bana?
+
+25
+00:04:51,923 --> 00:04:53,923
+Teta'ın diyebilir misiniz?
+
+26
+00:04:58,867 --> 00:05:02,148
+Insurcion Sort'un karmaşıklığı, Theta, [öğrenci] diyebilir misiniz?
+
+27
+00:05:02,788 --> 00:05:05,067
+Her zaman en olmadığı için diyemeyiz sanırım.
+
+28
+00:05:05,567 --> 00:05:06,687
+Kesinlikle diyemezsiniz.
+
+29
+00:05:06,687 --> 00:05:07,828
+İnkaneler diyor çünkü.
+
+30
+00:05:08,307 --> 00:05:13,208
+Aynen öyle. Her zaman en olmadığı için diyemezsiniz.
+
+31
+00:05:14,487 --> 00:05:17,807
+Mesela şey diyebilir misiniz?
+
+32
+00:05:21,588 --> 00:05:28,588
+Öbürlerini dedik zaten, tamam. Peki. O zaman şimdi gelelim, average case'inin nasıl bulunacağına.
+
+33
+00:05:28,588 --> 00:05:44,588
+Şimdi hatırlarsanız, average case için dedik ki, yani şimdi şey bir dizi var, sırasız bir dizi var. Mesela şöyle bir diziniz olsun.
+
+34
+00:05:53,043 --> 00:05:57,203
+Şimdi ikiyi yerleştirmek için bir karşılaştırma yapıyorsunuz.
+
+35
+00:05:57,203 --> 00:05:59,203
+Yediyi yerleştirmek için...
+
+36
+00:06:01,235 --> 00:06:03,536
+Bir karşılaştırma yapıyorsunuz.
+
+37
+00:06:03,995 --> 00:06:08,435
+On biri yerleştirmek için, pardon, özür dilerim.
+
+38
+00:06:08,495 --> 00:06:10,036
+İki yerleştirmek için bir yapıyorsunuz.
+
+39
+00:06:10,075 --> 00:06:11,795
+Yedi yerleştirmek için iki yapıyorsunuz.
+
+40
+00:06:11,835 --> 00:06:13,795
+Hem dokuzu hem ikiyle karşılaştırdınız.
+
+41
+00:06:14,315 --> 00:06:17,615
+On biri yerleştirmek için bir karşılaştırma yapıyorsunuz.
+
+42
+00:06:18,615 --> 00:06:23,295
+Beşi yerleştirmek için bir, iki, üç karşılaştırma yapıyorsunuz.
+
+43
+00:06:23,295 --> 00:06:29,195
+Bu şu demektir, yani random birini, biri için bir karşılaştırma yaptınız ve bu.
+
+44
+00:06:29,235 --> 00:06:48,955
+için üç karşılaştırma yaptınız. Average case'den kasıt bu. Yani bizim elemanları ne küçükten büyüğe sıralı, ne büyükten küçüğe sıralı. Böyle rastgele yerlerde duruyor. Yani bizim yapmak istediğimiz şey rastgele
+
+45
+00:06:49,747 --> 00:06:57,747
+bir dizi verildiğinde, rastgele elemanlardan oluşan bir dizi gelindiğinde, bunun karmaşıklığını nasıl hesaplayacağız?
+
+46
+00:06:57,747 --> 00:07:03,747
+Şimdi size şu şeyi yazmak istiyorum, while döngüsünü yazmak istiyorum.
+
+47
+00:07:03,747 --> 00:07:06,747
+Onun üzerinden yapacağız çünkü.
+
+48
+00:07:06,747 --> 00:07:17,747
+Burada biz while döngüsünde dedik ki, j büyüktür 0 olduğu sürece ve tmp küçüktür a'nın j-1 olduğu sürece
+
+49
+00:07:22,803 --> 00:07:35,283
+Böyle birtakım işler dedik. Kontrolümüz buydu hatırlarsanız. İç döngüde yaptığımız şey buydu. Şimdi yavaşça anlatıyorum.
+
+50
+00:07:39,623 --> 00:07:47,923
+Diyelim ki K'ncı eleman için işlem yapacağız. Yani şurada bir dizim olsun.
+
+51
+00:07:58,451 --> 00:08:06,251
+Şimdi ben 4 için iş yapacağım. Bu benim K'nc elemanım. 3, 5 ve 7 yerleşmiş.
+
+52
+00:08:14,036 --> 00:08:17,036
+Jinci pozisyona getireceğim.
+
+53
+00:08:24,276 --> 00:08:26,276
+Şimdi J'de şurası.
+
+54
+00:08:27,776 --> 00:08:32,276
+Değil mi? 5'te 7 kayacak, 4'te buraya gelecek.
+
+55
+00:08:32,975 --> 00:08:41,776
+Şimdi, yani şöyle birinci elemandan başladım. J'inci elemana, şurada K'nci eleman. Böyle bir şey var.
+
+56
+00:08:43,276 --> 00:08:50,276
+Şimdi, J'inci elemana gelebilmesi için kaç karşılaştırma yapmam gerekiyor benim?
+
+57
+00:08:50,611 --> 00:08:56,611
+K-J artı bir karşılaştırma yapmam gerekiyor.
+
+58
+00:08:56,611 --> 00:09:05,599
+Yani çünkü bu K'ncı pozisyondu, 7 ile karşılaştıracağım.
+
+59
+00:09:05,600 --> 00:09:13,600
+5 ile karşılaştıracağım. Yani kaç karşılaştırma yapacağım j. pozisyonda duracaksam?
+
+60
+00:09:14,039 --> 00:09:23,740
+k-j artı 1 karşılaştırma yapacağım. Tamam mı? Yani şöyle düşünün. Diyelim ki şöyle bir sıralı dizimiz vardı.
+
+61
+00:09:29,524 --> 00:09:30,524
+de şu
+
+62
+00:09:34,067 --> 00:09:43,087
+0'ı getireceksiniz. Burası K'ıncı elemanı olsun. Onu buraya getireceksiniz J'yi. Kaç karşılaştırma yapacaksınız buraya kadar?
+
+63
+00:09:43,247 --> 00:09:50,907
+7 ile karşılaştıracaksınız. 7'den küçük, 3 ile karşılaştıracaksınız. 2 ile 1 ile. Yani böyle bütün buradakileri karşılaştırmanız gerekecek.
+
+64
+00:09:50,907 --> 00:10:00,000
+Dolayısıyla K'ıncı pozisyondaki bir elemanı J'inci pozisyona taşımak istiyorsanız, yeri orasıysa K-J artı 1 karşılaştırma.
+
+65
+00:10:00,000 --> 00:10:04,959
+karşılaştırma yapacaksınız. O zaman
+
+66
+00:10:04,959 --> 00:10:09,319
+ortalamada
+
+67
+00:10:21,299 --> 00:10:29,159
+Yapacağınız karşılaştırma sayısı ortalamada nedir?
+
+68
+00:10:31,860 --> 00:10:49,080
+J1'den K'ya geçe kadar olasılık olarak, niye? Çünkü J1. pozisyonda olabilir, 2. pozisyonda olabilir, 3. pozisyonda olabilir, 4. pozisyonda olabilir veya şey yazmadım özellikle, diziyi 0'dan değil de 1'den başlattım, 0'dan K-1'e kadar dersiniz o zaman.
+
+69
+00:10:49,620 --> 00:10:59,759
+Hesaplar daha basit olsun diye bu şekilde yaptım. Şimdi J nerede olabilir? J1 olabilir, J2 olabilir, J3 olabilir, J4 olabilir.
+
+70
+00:10:59,860 --> 00:11:10,039
+O zaman ortalamada olasılıksal olarak j'nin yeri 1, 2, 3, 4 olabilir. Ortalamada nedir?
+
+71
+00:11:11,720 --> 00:11:15,840
+Birden k'ya kadar k-j artı 1'in ortalamasıdır.
+
+72
+00:11:16,379 --> 00:11:17,580
+Bu da neye eşit olur?
+
+73
+00:11:24,851 --> 00:11:29,612
+K çarpı, K artı bir bölü iki,
+
+74
+00:11:31,700 --> 00:11:44,159
+Artı K'ya eşit olur. Neden? İşte şu K, J eşittir birden K'ya kadar K'ların toplamı dediğimiz şey, Ş'ye eşittir, K kareye eşittir.
+
+75
+00:11:44,659 --> 00:11:51,740
+İşte J eşittir birden K'ya kadar J'lerin toplamı dediğimiz şey, K çarpı K artı 1 bölü 2'ye eşittir.
+
+76
+00:11:51,740 --> 00:11:59,559
+J eşittir birden K'ya, birlerin toplamı dediğimiz şey de K'ya eşittir. Bunu birinci derste görmüştük bunların hepsini.
+
+77
+00:11:59,700 --> 00:12:10,620
+O zaman ortalama iç döngüde dönme olasılığın bir bölü K, K kare eksi K çarpı K artı bir bölü iki artı K.
+
+78
+00:12:11,080 --> 00:12:19,000
+O da işte herkes birbirini götürdüğü zaman ne olmuş oluyor? K artı bir bölü iki olmuş oluyor.
+
+79
+00:12:25,395 --> 00:12:37,455
+Ortalama dönme olasılığımız. Bu iç döngüde ortalama dönme olasılığımız. Şimdi bunun bir de dış döngüsü var.
+
+80
+00:12:51,283 --> 00:13:13,283
+N eleman için durumu var. Bu çünkü ne için? Bir eleman için durumu gösteriyor. Yani bir elemanı ararken doğru yere yerleştirmek için kaç karşılaştırma yapmanız gerektiğinin ortalamasını gösteriyor. Ama benim elimde N tane eleman var. O zaman N tane eleman var ise...
+
+81
+00:13:13,552 --> 00:13:18,711
+K eşittir 2'den n'e kadar, birden başlattım diziyi.
+
+82
+00:13:19,411 --> 00:13:24,991
+K eşittir 2'den n'e kadar, ne olmuş olacak?
+
+83
+00:13:26,871 --> 00:13:30,371
+K artı 1 bölü 2 olmuş olacak.
+
+84
+00:13:34,163 --> 00:13:35,564
+O da neye eşit?
+
+85
+00:13:36,444 --> 00:13:40,244
+K eşittir birden n-1'e kadar.
+
+86
+00:13:42,683 --> 00:13:45,683
+K artı 2 bölü 2.
+
+87
+00:13:46,344 --> 00:13:47,824
+O da 1 bölü 2.
+
+88
+00:13:48,903 --> 00:13:52,663
+N artı 1 çarpı n artı 2.
+
+89
+00:13:54,663 --> 00:13:55,344
+Bölü.
+
+90
+00:13:55,764 --> 00:14:14,723
+2, bunu açarsam, k eşittir 1'den n-1'e k artı 2'yi açtım. O ne olacak? n-1 çarpı n bölü 2 ama bu k artı 2 olduğu için n artı 1 çarpı n artı 2 bölü 2 olacak. O da neye eşit oldu? 1 bölü 4.
+
+91
+00:14:15,379 --> 00:14:18,600
+n² artı 3 bölü n-1.
+
+92
+00:14:18,600 --> 00:14:20,940
+Ve ne kadar sormak istediğiniz bir şey var mı?
+
+93
+00:14:21,060 --> 00:14:23,620
+Bakın, kısacık hemen özetliyorum.
+
+94
+00:14:24,639 --> 00:14:27,379
+Ortalama karmaşıklığı hesaplamak istedim.
+
+95
+00:14:27,780 --> 00:14:36,560
+O yüzden önce iç döngü için, şuradaki iç döngü için, ortalama karmaşıklığı ne olacağını hesaplıyorum.
+
+96
+00:14:37,040 --> 00:14:38,019
+İç döngü ne demek?
+
+97
+00:14:38,600 --> 00:14:41,639
+Sadece bir elemanı doğru yere taşımak demek.
+
+98
+00:14:41,639 --> 00:14:43,379
+İç döngüde yaptığım işlem.
+
+99
+00:14:43,379 --> 00:15:02,220
+Bu, dış döngüye geldiğim zaman ne olmuş oluyor? Bu da benim dış döngüm. En defa aynı işi tekrar etmiş oluyorum. Sadece bir elemanı doğru yere taşımak için yapmam gereken iş, Ka'ncı pozisyondan, J'inci pozisyona taşımam için yapmam gereken iş,
+
+100
+00:15:04,340 --> 00:15:23,180
+K'dan J'ye taşımak için K-J artı bir karşılaştırma yapmam gerekiyorsa, bunun ortalaması, yani K-J artı biri birden K'ya kadar toplayıp K'ya bölersen, ortalama iç döngüde kaç karşılaştırma yapmam gerektiğini bulurum.
+
+101
+00:15:24,148 --> 00:15:33,447
+K artı 1 bölü 2 çıkmış iç döngüde. Bunu n defa yapacağım. O zaman ikinci elemandan başlayıp n. elemana kadar
+
+102
+00:15:33,447 --> 00:15:39,648
+K artı 1 bölü 2 işini n defa yapmam, yani n eksi bir defa yapmam.
+
+103
+00:15:40,244 --> 00:15:53,884
+K1'den n-1'e kadar, K2 bölü 2. Bunu da açtığım zaman n cinsinden 1 bölü 4 n kare artı 3 n-1 oldu. O zaman average case de
+
+104
+00:15:58,964 --> 00:16:01,624
+Neye eşit oldu?
+
+105
+00:16:11,700 --> 00:16:14,700
+Neye eşit oldu? O da n²'ye eşit oldu.
+
+106
+00:16:18,000 --> 00:16:22,900
+Every case'de n eleman için o da n²'ye eşit oldu.
+
+107
+00:16:23,200 --> 00:16:27,400
+Şimdi o zaman, şunu sorayım.
+
+108
+00:16:29,000 --> 00:16:30,000
+Top'tan...
+
+109
+00:16:37,139 --> 00:16:56,011
+Insertion Sort'un birisi size time kompleksitesi nedir derse bunu söylemenin en anlaşılır yolu o n karedir. Neden? Çünkü o n kare...
+
+110
+00:17:02,419 --> 00:17:10,539
+N kareyi hem N'i kapsıyor. Şimdi biz neyi biliyoruz? Bu best case'de karmaşıklığı N,
+
+111
+00:17:10,996 --> 00:17:34,216
+Ve şeyde de nedir? Worst ve Average'da da karmaşıklığı en kare. O zaman ben Insurction Sort'un karmaşıklığının ne olduğunu karşı tarafa anlatabilmek için, Insurction Sort'un tamamı için Best Worst Average ayırt etmeden o en kare diyebilirim. Buna kadar anlaşılmayan bir şey var mı?
+
+112
+00:17:39,124 --> 00:17:46,943
+Şu ekranın en sağ tarafında O, parantez içinde N, parantezi kapatıp kare yaptık.
+
+113
+00:17:47,784 --> 00:17:50,744
+Ay pardon, onu bilerek yapmadım ben.
+
+114
+00:17:51,244 --> 00:17:51,584
+Tamam.
+
+115
+00:17:53,104 --> 00:17:57,503
+Dalgınlıkla yaptım. Teşekkür ederim düzelttiğim için. Onu düzelttiğim için.
+
+116
+00:17:59,084 --> 00:18:06,084
+Hocam, C-Evriç'te O-N kare dedik ya, ona aynı zamanda Theta-N kare de diyebilir miydik?
+
+117
+00:18:06,996 --> 00:18:30,996
+Everidge'da geri geliyorum Everidge'a. O n-kare dedim, Theta n-kare de diyebilirim. Theta n-kare de diyebilirim çünkü Average case'de... Şimdi orada şu var, onun için Theta n-kare denmiyor, onu söyleyeyim. Yani dersin, çünkü Average'da işte hesapladık, n-kare oldu ama her zaman n-kare olmayabilir ya...
+
+118
+00:18:31,443 --> 00:18:41,844
+Öyle bir denk gelir ki yani, Avruc'un n² ama Avruc'un üst sınırı n². Yani Avruc'de öyle bir denk gelir ki ne bileyim...
+
+119
+00:18:42,675 --> 00:18:50,675
+O average değil aslında, best case ama en kare olmaz mesela. En türünden bir şey kalabilir. O yüzden öyle demiyorlar.
+
+120
+00:18:50,675 --> 00:19:03,675
+Yoksa dersin aslında, yani onu dememde bir terslik yok. Ama şeyden eminsin, yani average case de en kötü ihtimalle en kare çıkacak. Ondan eminsin, o yüzden o en kare diyorsun.
+
+121
+00:19:03,675 --> 00:19:10,675
+Yani şu aslında, o yüzden de kitaplarda bu ayrımı çok iyi yapmıyorlar. Şunu anlatayım.
+
+122
+00:19:10,675 --> 00:19:35,675
+çalışıyorum ben. Bir kere daha üstünde durarak söyleyeyim. Mesela birden L'e kadar sayıları toplayın desem, öyle bir algoritma tasarlayın desem, bu best case, worst case, average case, her durumda bunun karmaşıklığı L'dir. Yani L'lik bir döngünüz var, sayıları topluyorsunuz. O durumda siz buna Theta L dediğiniz zaman
+
+123
+00:19:36,127 --> 00:19:49,768
+Çok doğrudur. Bu ergonetmanın karmaşıklığı, Theta'n dediğiniz zaman çok doğrudur. Çünkü başka yolu yok yani. Mutlaka ne olursa olsun her zaman en defa dolaşmanız gerekiyor. Anlatabildim mi?
+
+124
+00:19:49,768 --> 00:19:59,768
+Şimdi burada onunla ilgili bir şey var. Yani belki de şey olmayabilir, en kare olmayabilir yani.
+
+125
+00:20:00,000 --> 00:20:12,500
+Öyle denk gelir ki sayılarımız, karmaşıklık en kare olmayabilir. Anlatabildim ne demek istedim? Mesela iki matrisi çarpın desen, iki matrisin çarpımı en kötü müydü?
+
+126
+00:20:17,844 --> 00:20:19,364
+Evet, sordum, bekliyorum.
+
+127
+00:20:20,044 --> 00:20:21,084
+Nelerin çarpımı hocam?
+
+128
+00:20:21,864 --> 00:20:23,344
+İki matrisin çarpımı.
+
+129
+00:20:24,923 --> 00:20:25,923
+Evet, en küplü galiba.
+
+130
+00:20:27,524 --> 00:20:30,223
+Ben değilim, o yüzden yorum yapmak isterim.
+
+131
+00:20:32,524 --> 00:20:33,163
+Soruyorum.
+
+132
+00:20:40,051 --> 00:20:42,451
+Normalde kim? Efendim?
+
+133
+00:20:45,451 --> 00:20:46,911
+Evet hocam, [öğrenci].
+
+134
+00:20:47,631 --> 00:20:52,431
+Yani şöyledir aslında, Enkip'ten daha az yapıldığı şeyler de var.
+
+135
+00:20:54,771 --> 00:21:22,412
+İşlemler de var. Ama n-küptür iki matricesin çarpımı. Şimdi orada başka yani o klasik algoritmayı kullanırsanız ne yaparsan yap o iki matricesin çarpımının karmaşıklığı n-küpt çıkacak. Onda Theta n-küpt diyebilirsin. Yani anlatmaya çalıştığım şey ama bazı durumlarda bozuluyorsa, daha az veya daha çok oluyorsa o zaman Theta dememen gerekir. Kitaplarda genelde şey gösteriyorlar.
+
+136
+00:21:22,771 --> 00:21:29,011
+Bir algoritmanın karmaşıklığını gösterirken, o doğru değil mesela, o gösterim şekli.
+
+137
+00:21:29,412 --> 00:21:36,672
+Best case'i Big Omega ile, average case'i Big Theta ile, worst case'i de Big O ile gösteriyorlar.
+
+138
+00:21:36,771 --> 00:21:38,091
+O doğru bir şey değil.
+
+139
+00:21:39,071 --> 00:21:47,351
+Sizin dikkat etmeniz gereken şey, yani worst case'ine baktığınız zaman, her zaman worst case'de en kare oluyorsa,
+
+140
+00:21:47,351 --> 00:21:50,771
+ona şey diyebilirsiniz, Theta.
+
+141
+00:21:50,771 --> 00:21:52,251
+N-kare diyebilirsiniz.
+
+142
+00:21:53,011 --> 00:21:57,031
+Veya işte burada yaptığımız gibi, bilmiyorum anlatabiliyor muyum,
+
+143
+00:21:57,511 --> 00:22:02,811
+yani Insurgeon Sort'un tamamının karmaşıklığı nedir diye sorarlarsa,
+
+144
+00:22:03,451 --> 00:22:04,851
+o N-kare diyebilirsiniz.
+
+145
+00:22:04,991 --> 00:22:07,111
+Çünkü o N-kare dediğimiz zaman,
+
+146
+00:22:07,291 --> 00:22:13,051
+Insurgeon Sort'un karmaşıklığındaki N-kare ile elini içeriyor.
+
+147
+00:22:13,051 --> 00:22:17,051
+Insurgeon Sort'un karmaşıklığını sorduklarında,
+
+148
+00:22:18,771 --> 00:22:35,331
+Omega N'de diyebilirsiniz. O da çünkü şeyi söylüyor, Insultion Sault en iyi ihtimalle, en karmaşıklıkta olabilir, en alt sınırı, en olabilir bunu söylemiş oluyor.
+
+149
+00:22:37,711 --> 00:22:39,771
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+150
+00:22:41,771 --> 00:22:42,391
+Hocam.
+
+151
+00:22:43,091 --> 00:22:43,511
+Evet.
+
+152
+00:22:44,084 --> 00:22:52,923
+Siz worst, best ve average case için işte hani Theta, Omega ve Big-O kullanılınca yanlış olabilir dediniz ya.
+
+153
+00:22:53,604 --> 00:23:03,223
+Yanlış olur demiyorum, yanlış olabilir diyorum. Yani onu illa böyle garantili öyle kullanmak doğru değil. Yani söyle, devam et.
+
+154
+00:23:03,763 --> 00:23:08,624
+Onu soracaktım hani. Demek ki olduğu durum da olur, olmadığı da olur yani. O yüzden kesin bir ifade değil.
+
+155
+00:23:09,203 --> 00:23:19,844
+Yani mesela, mesela, şey, sequential search az önce konuştuk.
+
+156
+00:23:20,344 --> 00:23:24,064
+Sequential search'ın worst case'ine Theta'n diyebilirsin.
+
+157
+00:23:30,451 --> 00:23:57,431
+Niye? Çünkü sequential search'te biliyorsun ki aradığın eleman yoksa en sona kadar bakacaksın. Mutlaka bakmak zorundasın. Bakmamak gibi bir şansın yok. O yüzden worst case elemanın bulunmadığı durumsa, dizide bulunmadığı durumsa mutlaka en sona kadar bakman gerektiğin için sequential search'un worst case'ine tetan diyebilirsin. Böyle bir şeyin var.
+
+158
+00:23:58,451 --> 00:24:21,791
+Yani şansın var değil, bunu böyle söylemek daha anlaşılır olmasını sağlayabilir. Bu birazcık böyle karışık bir şey. Yani bir süre sonra buna alışıyorsunuz ama yani burada bunu kullanırım, burada bunu kullanırım diye. Yani yanlış yapacağınızı düşündüğünüz anda garantiye alın kendinizi, bir bol kullanın.
+
+159
+00:24:22,791 --> 00:24:23,511
+Hocam.
+
+160
+00:24:24,351 --> 00:24:24,811
+Buyurun.
+
+161
+00:24:25,364 --> 00:24:26,223
+Sorabilir miyim?
+
+162
+00:24:26,763 --> 00:24:27,583
+Tabii, dinliyorum.
+
+163
+00:24:28,384 --> 00:24:36,763
+Peki, o zaman bir dizideki en büyük elemanı bulma algoritmasının kompleksitesine Theta n diyebilir miyim?
+
+164
+00:24:38,144 --> 00:24:40,663
+Ne dedi? Bir dizideki...
+
+165
+00:24:40,663 --> 00:24:48,652
+Evet, bir dizideki en büyük elemanın bulmaya çalışan algoritmanın kompleksitesine...
+
+166
+00:24:49,107 --> 00:24:50,488
+Theta n diyebilir miyim?
+
+167
+00:24:50,748 --> 00:24:52,168
+Kesinlikle dersin.
+
+168
+00:24:52,648 --> 00:25:01,368
+Çünkü find maximum'da worst case'de n, best case'de n,
+
+169
+00:25:01,907 --> 00:25:04,227
+Çok güzel söyledi.
+
+170
+00:25:04,787 --> 00:25:07,467
+Average case'de de n.
+
+171
+00:25:07,627 --> 00:25:18,927
+Dolayısıyla bak 3'ü de tuttuğu için find maximum time complexity'sine genel ifade etmek için mutlaka Theta n diyebilirsin.
+
+172
+00:25:19,287 --> 00:25:25,607
+Yani çünkü her durumda n olduğu için onu Theta n olarak söyleyebilirsin.
+
+173
+00:25:26,567 --> 00:25:26,987
+Hocam.
+
+174
+00:25:27,747 --> 00:25:28,127
+Buyurun.
+
+175
+00:25:28,564 --> 00:25:43,024
+O zaman possibility yoksa, conditional bir durum yoksa, sadece iteration'a bakıyorsak, theta üzerinden gidebiliyoruz. Bu şey doğru mu? Çıkarın.
+
+176
+00:25:45,764 --> 00:25:46,764
+Bir daha söyleyeyim.
+
+177
+00:25:46,880 --> 00:26:12,779
+Evet, yani yok anladım söyledi. Yani tam böyle genel şey yapmayayım, belki olmadığı bir durumda denk düşüyordur ama yani Theta kesin eğer öyle olduğunu biliyorsan o şeyin karmaşıklığın yani ne alta iniyor ne üste çıkıyorsa Theta'y diyebilirsin. Mesela Insertion Sort'un Time Complexity'sine şey diyemezsin.
+
+178
+00:26:15,380 --> 00:26:27,140
+teta n² diyemezsin. Çünkü o işte best case'de n'e iniyor, worst case'de n'kareye çıkıyor falan. Bunu yapamazsın ama bunu yaparsın.
+
+179
+00:26:28,140 --> 00:26:33,140
+Hocam, insanın aklına şey gibi geliyor. Sanki if varsa, possibility varsa...
+
+180
+00:26:35,571 --> 00:26:36,971
+O peta...
+
+181
+00:26:36,971 --> 00:26:54,412
+Hayır, ona öyle deme. İf varsa, possibility varsa deme. While varsa bir kere de, yani iften çok while önemli orada. Yani kaç defa o işi yapacağı, yani çünkü döngüye girdikten sonra ifi zaten en defa yapıyorsundur. O if değil de while aslında senin söylediğin.
+
+182
+00:26:54,412 --> 00:26:59,412
+Yani genelde evet, while'a bağlı olarak...
+
+183
+00:27:00,627 --> 00:27:08,447
+Yani while varsa bir belirsizlik de olabildiği için, yani genelleme, algoritmaya bakarak bunu söyleyebilirsin.
+
+184
+00:27:08,967 --> 00:27:13,767
+Çünkü yani tam ona uymayan bir durumla karşılaşırsın, ha ben bunu böyle yapıyordum dersin.
+
+185
+00:27:13,827 --> 00:27:22,847
+O yüzden benim için ben olsam öyle yaparım, algoritmaya bakarak, ha işte bunun best'i böyle oluyor, worst'i böyle oluyor, evric'i böyle oluyor.
+
+186
+00:27:22,847 --> 00:27:28,528
+O zaman demek ki ben buna şöyle diyebilirim diye. Onun yolunu anlamamız benim açımdan önemli.
+
+187
+00:27:28,627 --> 00:27:30,587
+bu şekilde söyleyebilirsin.
+
+188
+00:27:31,667 --> 00:27:32,667
+Anladım, teşekkür ederim.
+
+189
+00:27:32,667 --> 00:27:34,307
+Ben teşekkür ederim.
+
+190
+00:27:35,747 --> 00:27:43,967
+Peki, şimdi o zaman, bugünlük bu kadar yeter herhalde, yeteri kadar şey gördük.
+
+191
+00:27:45,487 --> 00:27:49,607
+Bir tek şeyi söyleyerek bitirmek istiyorum.
+
+192
+00:28:04,307 --> 00:28:09,167
+Bir algoritmayı tasarlarken şuna dikkat etmeniz gerekiyor.
+
+193
+00:28:09,248 --> 00:28:25,327
+O algoritmanın karmaşıklığının n mi, n kare mi, log n mi olduğu çalışma süresini en sonsuza giderken çok etkileyen bir durum.
+
+194
+00:28:25,327 --> 00:28:30,528
+Şu n değeri olsun, log n, bir saniye şöyle yapayım, sığdıramayacağım oraya.
+
+195
+00:28:32,819 --> 00:28:40,180
+Bu şekilde şey kullanman, slide'dan daha iyi oluyor mu yazarken onu sorayım.
+
+196
+00:28:42,200 --> 00:28:43,400
+Yazarak anlatmam.
+
+197
+00:28:45,700 --> 00:28:46,400
+İyi mi, kötü mü?
+
+198
+00:28:47,019 --> 00:28:48,200
+Öyle de daha iyi gibi hocam.
+
+199
+00:28:48,200 --> 00:28:49,879
+Daha iyi hocam.
+
+200
+00:28:50,660 --> 00:28:54,000
+Evet, bana da daha iyi. Ben de çünkü slide'dan anlatırken çok sıkılıyordum.
+
+201
+00:28:59,700 --> 00:29:03,080
+Şu anda konuşan kim? Ben [öğrenci].
+
+202
+00:29:03,640 --> 00:29:07,580
+[öğrenci], senin mikrofonun, bugün sen birkaç defa daha konuştun değil mi?
+
+203
+00:29:11,347 --> 00:29:13,347
+Tamam, sıkıntı yok.
+
+204
+00:29:14,467 --> 00:29:16,347
+Biraz yaklaşıyorum şu an.
+
+205
+00:29:17,067 --> 00:29:18,747
+Tamam, gayet iyi. Yok, duyuyorum ben.
+
+206
+00:29:18,747 --> 00:29:23,227
+Seni şey diyecektim, yani ayarlanabilir bir şeyse mikrofona uzak duruyorsun diyecektim.
+
+207
+00:29:23,307 --> 00:29:24,907
+Ayarlanamıyorsa hiç problem değil.
+
+208
+00:29:25,447 --> 00:29:26,268
+Bir daha sor.
+
+209
+00:29:27,387 --> 00:29:30,167
+Hocam, defter tutarak mı gideceğiz bundan sonra?
+
+210
+00:29:30,288 --> 00:29:31,627
+Hep böyle, onu soracağım.
+
+211
+00:29:32,019 --> 00:29:38,879
+Bence algoritmada slide'dan anlatınca insanın uykusu geliyor ve konsantrasyonu bozuluyor.
+
+212
+00:29:39,099 --> 00:29:45,879
+Mesela sabah görüntü işlemi alanlar biliyorlar, orada slide'larda görüntü gösteriyorsun falan.
+
+213
+00:29:47,099 --> 00:29:55,579
+Görseli fazla olan bir ders o ders ama burada bence yaza yaza, yavaş yavaş anlatıldığında daha etkili oluyor diye düşünüyorum ben.
+
+214
+00:29:56,199 --> 00:29:58,059
+Kayıplar var nasılsa sizde.
+
+215
+00:30:00,000 --> 00:30:04,859
+Peki siz yazabiliyor musunuz ben şey yaparken?
+
+216
+00:30:06,039 --> 00:30:07,699
+Yazabiliyorum ben şahsen.
+
+217
+00:30:08,259 --> 00:30:14,279
+Hocam bazı böyle de nadir yerlerde çok hızlı geçiyorsunuz ama o da bir şekilde ekran görüntüsü alıp şey yapıyoruz.
+
+218
+00:30:14,639 --> 00:30:16,339
+Hayır hocam ekran görüntüsü alıyoruz.
+
+219
+00:30:16,619 --> 00:30:18,779
+Hızlı geçersem dur diyeyim arkadaşlar.
+
+220
+00:30:19,667 --> 00:30:36,287
+Yani ben fark etmiyorum bazen çünkü hızlı bittiğim doğru yani biz tahtaya yazarken beklerdik. Öyle bir durum vardı. O günleri unuttuk. Tabii ki burda yanlış yazdım. Peki şimdi yavaş yavaş konuşa konuşa gidelim. Bugün bitireceğim şimdi zaten.
+
+221
+00:30:36,980 --> 00:30:55,400
+Yani şeyin de çok efektif olmadığını düşünüyorum. Bu gibi algoritma analizi gibi biraz böyle işte matematiğe tasarımı dinlenmesi fazla bir dersin dört saat arka arkaya dinlenilmesi bana eziyet gibi geliyor. Ne kadar ders eğlenceli gibi olsa da benim açımdan.
+
+222
+00:30:55,796 --> 00:31:04,536
+O yüzden çok da uzatmak iyi olmayabilir konuların yerleşmesi açısından. Peki, devam ediyorum.
+
+223
+00:31:04,615 --> 00:31:05,916
+Hocam peki bir şey sorabilir miyim?
+
+224
+00:31:06,036 --> 00:31:06,416
+Buyurun.
+
+225
+00:31:06,896 --> 00:31:10,936
+Böyle yazıyoruz. Slideleri de paylaşacak mısınız? Yoksa sadece yazmayalım.
+
+226
+00:31:11,136 --> 00:31:11,156
+Yok ki.
+
+227
+00:31:11,956 --> 00:31:14,016
+Yok mu? Tamam. Ben var sanmıştım.
+
+228
+00:31:15,016 --> 00:31:18,355
+Bu tahta gibi bir şey yani. Yok benim...
+
+229
+00:31:18,420 --> 00:31:45,900
+Benden daha önce ders aldıysan, defterde böyle ders notlarım vardır, algoritma analizi ve veri yapıları dersim için. Ben oradan anlatırdım. Çünkü yani dediğim gibi pek slide'a gelen bir ders değil, böyle akış çiziyorsun falan. O yüzden slide'tan anlatmazdım hiçbir zaman zaten. Bir slide yok yani ortada. Bazı şeylerde slide'larım var. Onlar da slide'lardan zaten derste de o şekilde görürüz.
+
+230
+00:31:46,420 --> 00:31:59,140
+Şimdi şunu görmenizi istiyorum ve bütün bir ders boyunca, algoritma analizi dersi boyunca aslında üzerinde durmanız gereken şey şu arkadaşlar.
+
+231
+00:31:59,140 --> 00:32:09,320
+Bakın N10 iken bir algoritmanızın karmaşıklığı logaritma N ise binde 3 mikrosaniye sürüyor.
+
+232
+00:32:13,167 --> 00:32:19,487
+0.027 ss.
+
+233
+00:32:21,715 --> 00:32:34,215
+Yani çok da büyük bir fark yok aslında. N10 iken ve 100 milyon iken, logaritma N arasında çok büyük bir korkutucu bir şey yok aslında.
+
+234
+00:32:35,315 --> 00:32:46,535
+Ama şimdi şeye bakın, N10 iken, N elemanlı, N defa çalışan bir algoritmanız varsa 0.01 mikrosaniye sürüyor.
+
+235
+00:32:46,535 --> 00:32:49,695
+N çarpı logan, yani şimdi önce bunları yazayım.
+
+236
+00:32:49,715 --> 00:32:52,515
+Ondan sonra üzerinden konuşalım.
+
+237
+00:34:11,092 --> 00:34:20,592
+Evet, şunun en sonuncusunun değerini yazmamışım. Önemi yok, o da nereye gidiyor belli. Şimdi şöyle...
+
+238
+00:34:33,172 --> 00:34:40,771
+Evet, şu şeymiş, bir dakika, bunu da sileyim, şöyleymiş, bir dakika.
+
+239
+00:34:44,771 --> 00:34:57,112
+N eşittir 100 için 2 üzeri N 4 çarpı 10 üzeri 13 yılmış.
+
+240
+00:34:59,059 --> 00:35:08,180
+n eşittir 20 için n faktöryel 77.1 yılmış.
+
+241
+00:35:09,396 --> 00:35:28,456
+Şimdi, şunu görmenizi istiyorum, birlikte inceleyelim. Biz bir algoritmayı tasarlarken bundan sonra bu hesapları bilerek algoritma tasarımlarında bir algoritmanın diğerine göre ne kadar iyi olduğunu anlayabilmemiz açısından önemli olan bir bilgi.
+
+242
+00:35:28,456 --> 00:35:36,056
+Şimdi, N 10 için logaritma N binde 3 milisaniye.
+
+243
+00:35:36,467 --> 00:35:37,728
+Eeeh...
+
+244
+00:35:37,780 --> 00:35:50,400
+N karmaşıklıklı bir algoritma %1 milisaniye, N çarpı log N karmaşıklı bir algoritma %3 milisaniye, yani çok büyük bir şeyler olmuyor.
+
+245
+00:35:50,500 --> 00:35:58,840
+N fazla, 10 elemanınız varsa N faktörü yay karmaşıklıklı bir algoritma 3.66 milisaniye tutuyor.
+
+246
+00:35:59,500 --> 00:36:05,780
+Şimdi N 100 milyon 2N, logaritma N yine çok büyük bir fark yok.
+
+247
+00:36:05,780 --> 00:36:10,780
+Dikkat edin, bu şu açıdan önemli. Bakın, enin 10 olmasıyla 100 milyon olması arasında...
+
+248
+00:36:11,347 --> 00:36:30,947
+Çalışma süresi açısından çok ciddi bir fark yok. Dolayısıyla logaritma N karmaşıklıklı bir algoritma aslında iyi bir algoritma. Fakat şeyde saniye mertebesine yaklaştı. 0.1 saniye oldu. 100 milyon eleman için karmaşıklığı N olan bir algoritma.
+
+249
+00:36:31,507 --> 00:36:39,347
+Karmaşıklığı N-Logen olan bir algoritma, örneğin QuickSort, MergeSort, Hipsort gibi bir algoritma. N 100 milyonken...
+
+250
+00:36:39,347 --> 00:36:53,347
+1.66 saniye sürdü. Dikkat edin, örneğin Selection Sort, karmaşıklığı en kare olan Selection Sort, 100 milyon eleman için 115 günde sonuç verdi.
+
+251
+00:36:56,347 --> 00:37:03,347
+Şimdi 2 üzeri n ve n faktöriyel şey, polinomsal olmayan.
+
+252
+00:37:12,884 --> 00:37:20,123
+Aslında bunlar sonra non-deterministik polinomsal diye bunları göreceğiz aslında en son derste.
+
+253
+00:37:20,564 --> 00:37:22,384
+Polinomsal olmayan algoritmalar.
+
+254
+00:37:22,463 --> 00:37:34,764
+Aslında mesela x kare dediğiniz zaman bu polinomsal olarak geçen algoritma veya x üzeri 4 dediğiniz zaman öyle ama 2 üzeri n dediğiniz zaman bu non-deterministik polinomsal algoritmalar.
+
+255
+00:37:40,884 --> 00:37:47,104
+sonuçlanamayan algoritmalar, sizin de gördüğünüz için 100 milyonu bırakın, en 100 iken bile,
+
+256
+00:37:47,104 --> 00:37:54,503
+2 üzeri en karmaşıklıklı bir algoritma, 4 çarpı 10 üzeri 13 yıl çalışması gerekiyor.
+
+257
+00:37:54,963 --> 00:38:22,903
+4x10 üzeri 13 yıl. Yani böyle bir algoritmanın cevabını almak mümkün değil. Hele N-faktörü için durum daha da vahim. N-20 iken bile 77 yıl çalışması gerekiyor algoritmanın. O yüzden algoritma analizi dersinde biz öncelikle bu polinomsal zamanda çözülebilen algoritmalarla ilgileneceğiz.
+
+258
+00:38:22,963 --> 00:38:39,603
+Son derslerde de non-deterministik, polinomsal yani çözümü olmayan algoritmalar nelerdir? Bunlarla ilgili çözümü hakkında bir fikir yürütebilmek için ne yapmamız gerekir? Bunlardan bahsedeceğiz.
+
+259
+00:38:40,115 --> 00:39:04,256
+Burada şey ayırımını iyi görmeniz önemli. Özellikle sıralama algoritmalarında bir n-logen karmaşıklıklı algoritmayla n-kare karmaşıklıklı bir algoritma arasındaki farkın ne olduğunu özellikle şurada sayı 100 milyona çıktığında çok net olarak görebiliyorsunuz. Anlamanız ve görmeniz önemli. Buraya kadar sormak istediğiniz bir şey var mı?
+
+260
+00:39:10,132 --> 00:39:11,132
+Yok mu?
+
+261
+00:39:15,411 --> 00:39:17,632
+Evet, yaşıyor musun?
+
+262
+00:39:18,032 --> 00:39:18,612
+Evet hocam.
+
+263
+00:39:18,612 --> 00:39:19,152
+Evet, dinliyorum.
+
+264
+00:39:21,911 --> 00:39:25,652
+Evet, dinliyor musun? Bir şey soruyorsun galiba, soruyor musun?
+
+265
+00:39:25,971 --> 00:39:27,771
+Yok, hayır, yani bir şey sormuyoruz.
+
+266
+00:39:28,371 --> 00:39:34,211
+Tamam, peki oldu. Peki, o zaman ben hepinize...
+
+267
+00:39:34,356 --> 00:39:38,296
+şey için teşekkür ederim, dinlediğiniz için teşekkür ederim.
+
+268
+00:39:40,536 --> 00:39:44,576
+Şey, bir dakika, şey kısıklığın şeyleri stop edin öncelikle.
+
+269
+00:39:44,816 --> 00:39:45,276
+Tamam.
+
+270
+00:39:46,316 --> 00:39:51,416
+O zaman şey, önümüzdeki hafta tekrardan şey yapmak üzere, görüşmek üzere.
+
+271
+00:39:52,936 --> 00:39:54,316
+Dersi burada bitiriyorum.
+
+272
+00:39:55,056 --> 00:39:56,696
+Güzel bir gün diliyorum hepinize.
+
+273
+00:39:57,896 --> 00:39:59,196
+Haftaya görüşmek üzere.
+
+274
+00:39:59,196 --> 00:39:59,976
+Haftaya sanıyorum.
+
+275
+00:40:00,000 --> 00:40:04,000
+Benim de ilk ilk ödevi vereceğiz size. Var mı başka sormaksızın aklınıza takılan?
+
+276
+00:40:06,500 --> 00:40:09,179
+İyi günler, teşekkürler. Ben teşekkür ederim.
+
+277
+00:40:09,920 --> 00:40:11,400
+Sağ olun, görüşmek üzere.

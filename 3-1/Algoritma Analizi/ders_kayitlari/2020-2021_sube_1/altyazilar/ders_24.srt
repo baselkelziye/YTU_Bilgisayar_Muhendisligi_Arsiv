@@ -1,0 +1,1999 @@
+1
+00:01:41,843 --> 00:01:47,603
+Evet, arkadaşlar, birazcık bekledim şey olsun diye, sayı artsın diye.
+
+2
+00:01:48,963 --> 00:01:51,843
+Şimdi Fatma Nur Hoca size...
+
+3
+00:01:52,500 --> 00:02:13,500
+Ödev sorularının çözümünü anlatacak bu derste. İki gruba birden açık şu anda. Linki Amaç Bey ile de paylaştım. Amaç Bey de sizinle paylaşacak. İki gruba birden açık. Ödevle ilgili aklınıza takılan sorularınız olursa Fatma Nur Hoca ile paylaşarak çözebilirsiniz.
+
+4
+00:02:13,500 --> 00:02:20,079
+Fatma Nur sana şey verdim. Ekran paylaşma hakkını verdim.
+
+5
+00:02:20,500 --> 00:02:24,500
+Herkese verdim, sen değerlendirilmesin.
+
+6
+00:02:27,500 --> 00:02:29,500
+Şu anda da gözüküyor herhalde.
+
+7
+00:02:32,788 --> 00:02:36,008
+Kaç kişi olacak hocam? Biraz bekleyelim isterseniz.
+
+8
+00:02:36,148 --> 00:02:47,988
+Evet, zaten şöyle yapalım. Aslında açtık. 2-3 dakika daha bekleyelim. Çünkü öbür sınıf şimdi Amaç Bey'e linki gönderdim. O kendi öğrencileriyle paylaşacak falan.
+
+9
+00:02:48,548 --> 00:02:49,388
+Tamam, çok süper.
+
+10
+00:02:49,728 --> 00:02:52,168
+3 dakika sonra başlayalım, olur mu?
+
+11
+00:02:52,488 --> 00:02:53,148
+Tamam hocam.
+
+12
+00:02:53,508 --> 00:03:00,728
+Tamam, peki arkadaşlar. Size güzel bir gün diliyorum. Fatma durununa bırakıyorum ben şimdi. Kolay gelsin.
+
+13
+00:03:00,788 --> 00:03:02,788
+Teşekkür ederiz hocam, iyi günler size.
+
+14
+00:03:09,331 --> 00:03:12,312
+Birazcık bekleyelim o zaman sonra başlarız.
+
+15
+00:03:12,852 --> 00:03:16,672
+Yani bir iki dakika daha şey yapabilirsin, bekleyebilirsin.
+
+16
+00:03:16,932 --> 00:03:18,891
+Tam bir saat değil mi hocam süremiz?
+
+17
+00:03:19,712 --> 00:03:26,552
+Yok aslında burada bizim iki saat süremiz var ama önemli olan sen çözdüğünü kadar kullanabilirsin süreni.
+
+18
+00:03:26,572 --> 00:03:28,012
+Evet acele etmeyeyim o zaman.
+
+19
+00:03:29,012 --> 00:03:32,391
+Arkadaşlara da bir kez daha dersin başında ben söyledim.
+
+20
+00:03:32,812 --> 00:03:35,112
+Bu ödevde kontrol yapılmayacak.
+
+21
+00:03:35,312 --> 00:03:40,352
+Sadece size ödevle ilgili çözümler anlatılıp sorularınız cevaplanacak.
+
+22
+00:06:27,156 --> 00:06:32,915
+İki katı bir mevcudiyete ulaştık herhalde başlayabiliriz diye düşünüyorum.
+
+23
+00:06:39,124 --> 00:06:44,244
+İlk önce problemlerimizi hatırlayalım isterseniz. Zaten hatırlıyorsunuz ama yine bir üzerinden geçelim.
+
+24
+00:06:44,964 --> 00:06:47,544
+İlk sorumuz dinamik programlama sorusuydu.
+
+25
+00:06:50,932 --> 00:06:55,932
+A ve B takımları için içlerinden birinin en galibiyet alana kadar maç yapılacak.
+
+26
+00:06:56,552 --> 00:07:01,211
+A takımın bir maçı kazanma olasılığı her maç için P, kaybetme olasılığı da 1-P.
+
+27
+00:07:01,612 --> 00:07:03,732
+Dolayısıyla beraber ihtimali mevcut değil.
+
+28
+00:07:04,252 --> 00:07:08,132
+A takımının seriyi kazanmak için İ tane daha maç kazanması gerekiyor.
+
+29
+00:07:08,211 --> 00:07:12,331
+B takımının da seriyi kazanmak için J tane maç kazanması gereken durumda.
+
+30
+00:07:12,331 --> 00:07:17,072
+Bunu ifade eden, belirten ifademiz P-İ-J olacak.
+
+31
+00:07:17,875 --> 00:07:19,875
+Bunu nasıl değerlendirecek?
+
+32
+00:07:20,627 --> 00:07:27,487
+Eğer A takımı P ihtimalle bir maç kazanırsa, A takımının seriyi kazanması için gerekli maç sayısı ne olacak?
+
+33
+00:07:27,807 --> 00:07:31,607
+I-1 kadar kalacak değil mi? Ama B takımınki hala J olacak.
+
+34
+00:07:31,768 --> 00:07:43,668
+Yani 4'e 4 olarak düşündüğümüz zaman ikisinin de 7 maçlık bir seriyle ikisinin de maçı kazanmak için 4 tane maç kazanması gerekiyor seriyi elde edebilmek için.
+
+35
+00:07:43,668 --> 00:07:48,127
+Şimdi A takımın bir tane maç kazandığı zaman o zaman 3 tane maç kazanması gerekecek.
+
+36
+00:07:48,627 --> 00:07:55,627
+Nasıl ifade edeceğiz? P, 3, 4 şeklinde değil mi? I eşittir, 3, J eşittir, 4 şeklinde ifade edeceğiz.
+
+37
+00:07:56,707 --> 00:08:04,668
+Eğer A takımı bir eksi P ihtimalle bir maç kaybederse, seriyi kazanmak için A takımının hala iyi galibiyeti, B takımının da J-1.
+
+38
+00:08:04,768 --> 00:08:10,507
+Yani B takımı bir maç kazandığı için onun değerini bir azaltacağız. A takımı hala aynı olacak.
+
+39
+00:08:11,467 --> 00:08:15,288
+Bu şeyde ilk cevabımız, recursion bağıntımız.
+
+40
+00:08:17,108 --> 00:08:27,888
+Pij eşittir. P çarpı Pij-1j artı 1-P, Pij-1 şeklinde ifade edilecek.
+
+41
+00:08:27,888 --> 00:08:32,488
+İ ve J büyüktür sıfırdan olmak üzere. Çünkü bir tanesi sıfır olduğu anda
+
+42
+00:08:33,139 --> 00:08:38,579
+Ne olacak? Maçın seriyi kazananı belli olacak artık seriyi kazananı.
+
+43
+00:08:38,960 --> 00:08:44,639
+Şimdi A takımının kazanacak maç sayısı 0 olduğunda A takımı seriyi kazanmış demektir.
+
+44
+00:08:44,759 --> 00:08:53,460
+Yani aşağıda gördüğümüz ifadede P0 ve J'nin herhangi bir değeri için A takımı seriyi kazanmış demektir.
+
+45
+00:08:58,836 --> 00:09:18,836
+Bu olasılık 1 olacak. B takımının da kazanacak maç sayısı 0 olduğunda, A takımı seriyi her aniklerde kaybetmiş demektir. Bu yüzden de i'nin her değeri için eğer j 0 ise bu olasılık da 0 olacak. Tamam mı arkadaşlar?
+
+46
+00:09:25,268 --> 00:09:41,588
+haline geçiyoruz. Nasıl yaptık? Şimdi demin bahsettik ya, P, J değeri sıfırken, i'nin her değeri için olasılık sıfır olacak diye. Burada benim mouse'um görüyor musunuz bu arada? Şu anda gözüküyor herhalde.
+
+47
+00:09:42,740 --> 00:09:50,900
+J sıfırken i'nin her değeri için biz buraları sıfır yazdık demin. Söyledik bunu ifade ettik.
+
+48
+00:09:51,680 --> 00:09:59,640
+i'nin sıfır olduğu durumda da j'nin her değeri için 1 olacak çünkü i sıfırsa A takımı artık seriyi kazanmış demekti.
+
+49
+00:10:02,355 --> 00:10:03,875
+diğerlerini nasıl hesaplayacağız?
+
+50
+00:10:04,216 --> 00:10:06,716
+O bir bağıntı yazdık ya, o bağıntıdan devam edeceğiz.
+
+51
+00:10:06,816 --> 00:10:15,696
+Ben burada bir adım ilerisinde görelim diye i'nin bir, j'nin iki olduğu durumu inceledim.
+
+52
+00:10:16,155 --> 00:10:23,475
+Şimdi p1-2 için kazanma olasılığımız soruda 0.4 verilmiş olsun.
+
+53
+00:10:23,475 --> 00:10:23,996
+Tamam mı?
+
+54
+00:10:26,964 --> 00:10:36,324
+0.4 verilmiş olsun. Zaten bu örnekteki değer 0.4 verildiği zaman kaybetme olasılığımızda
+
+55
+00:10:42,676 --> 00:10:44,436
+Kalemimi ayarlayamadım.
+
+56
+00:10:45,855 --> 00:10:47,456
+Kazanma değerimiz.
+
+57
+00:10:47,892 --> 00:10:53,512
+0.4 olduğu zaman kaybetme olasılığımızda 0.6 olacak. 1-0.4'tan.
+
+58
+00:10:54,231 --> 00:11:05,471
+Şimdi 0.4 çarpı P'nin, bu neydi? Kazanma ihtimali çarpı P'nin i-1 değeri ve j'nin aynı değeri için hesaplayacaktık.
+
+59
+00:11:05,572 --> 00:11:08,992
+O da i-1 yaptığımız zaman 0 değerini elde ediyoruz.
+
+60
+00:11:09,372 --> 00:11:15,352
+j'de aynı kalacak. 2. Bu ihtimalle 0.4'ü çarpacağız ve
+
+61
+00:11:15,892 --> 00:11:33,152
+Kaybetme olasılığını da yine neyle ifade ediyoruz? Yani bir kaldığına göre ve maç sayısı B'nin kazanması için iki iken hala şu anda bir kaldığına göre demek ki maçı B kazandı, A kaybetti. Bunu ifade ediyor.
+
+62
+00:11:34,323 --> 00:11:46,323
+O zaman onu da kaybetme olasıyla çarpacağız. Şimdi P0.2 tablomuz da belli değil mi? Çünkü onu zaten initial olarak biz bu değeri atamıştık 0'a 2'yi. Bunun değeri 1 olacak.
+
+63
+00:11:46,323 --> 00:11:58,323
+Ama benim hesaplamam gereken P1.1 var değil mi? i'nin değeri 1 ve j'nin değeri 1 olan değeri hesaplamam lazım. O zaman ona bakacağız. Onu tekrar yazacağız yine aynı formülümüzden.
+
+64
+00:11:58,868 --> 00:12:11,048
+Kazanma olasılığı çarpı, i'nin kazandığı durum, p i eşittir 0 ve j eşittir 1 için. Bunun da değerini biliyoruz. Kaybetme olasılığı için de
+
+65
+00:12:11,360 --> 00:12:34,380
+Yine J'yi biraz azalttık. İyi aynı kaldı. 1'e 0'a bakacağız. 1'e 0'da da değerini biliyoruz. 0. O zaman bunu yazalım yerine. 0.4'ü kazanma olasılığımızı A takımının kazanma ihtimaliyle ve kaybetme ihtimaliyle yaptığımız zaman P1'e 1 0.4 çıkıyor. Burada geliyoruz. Tablomuzla bunu yazdık.
+
+66
+00:12:35,508 --> 00:12:42,028
+0.4 çıktı. 1-2'yi hesaplayabilmek için de benim bu ifadeyi hesaplamam gerekiyordu değil mi?
+
+67
+00:12:42,028 --> 00:12:47,188
+Hesapladım. Bu da değeri ne? 0.4. Yerine yazdığım zaman
+
+68
+00:12:47,923 --> 00:13:09,503
+0.4 çarpı 1 artı 0.6 çarpı 0.4'ten değerimiz 0.64 geliyor. Bu da buradaki değer, tablomuzdaki değer. Her bir değer bu bağıntılar sağlanarak hesaplanıyor. En sondaki A'nın kazanma ihtimalini gösteren değer de dörde dörtteki sonuç oluyor. Tamam mı?
+
+69
+00:13:24,019 --> 00:13:44,779
+Şimdi bir daha silebiliyor muyuz? Evet, sildik. Şimdi bunu da P-Sudo koduna bakalım. Bir N-galibiyetin kazanma olasılığını hesaplayan fonksiyonumuz WinSeries diye yazmışız. N ve P değerlerini alıyor. N değeri neymiş? Kazanmak için gerekli N-galibiyet sayısı.
+
+70
+00:13:46,451 --> 00:14:06,851
+Ve takımın maçı kazanma olasılığı, P değeri. Bu 0.4 olarak örnekte verilen değer. Bizim hesaplamamız gereken 0.6'lı olan sanırım. Örneğe ben 0.4'ü yazmışım. 0.6'lı da 0.7'li bir şey geliyordu diye hatırlıyorum.
+
+71
+00:14:07,851 --> 00:14:13,411
+Şimdi output'umuz ne olacak bizim bu fonksiyonun? Takımın seriyi kazanma olasılığını dönecek değil mi?
+
+72
+00:14:14,611 --> 00:14:19,672
+O zaman şimdi Q'muzda, yani kaybetme olasılığımız 1-P olacak değil mi?
+
+73
+00:14:19,751 --> 00:14:22,891
+P'yi girdiğini düşünelim şimdi fonksiyona.
+
+74
+00:14:23,711 --> 00:14:25,951
+Kazanma olasılığımızın girildiğini düşünelim.
+
+75
+00:14:26,771 --> 00:14:29,711
+Q'da kaybetme olasılığımız olacak 1-P'den.
+
+76
+00:14:30,591 --> 00:14:32,731
+Sonra initial değerlerimizi atıyoruz.
+
+77
+00:14:32,871 --> 00:14:35,231
+İlk başta tabloyu doldururken yaptığımız gibi.
+
+78
+00:14:35,231 --> 00:14:41,932
+J'nin 1'den N'e kadar, I'nin 0 olduğu bütün değerler için tablomuzda 1 yazıyoruz.
+
+79
+00:14:42,484 --> 00:14:54,504
+Ondan sonra yine J'nin 0 olduğu ve İ'nin 1'den N'e kadar olan bütün değerlerine de tabloda 0 değerlerini yazıyoruz. Bunların neden böyle olduğunu ilk soruyu anlatırken ifade etmiştim.
+
+80
+00:14:54,504 --> 00:15:09,704
+Sonra her bir J değeri için N'e kadar ne yapıyor? Ya daha doğrusu her bir İJ değeri için bu formülümüzü hesaplayacağız. Bu formülü de ilk başta yazdığımız bandı.
+
+81
+00:15:11,892 --> 00:15:15,292
+Bunu yaptıktan sonra sonuç olarak ne dönecek?
+
+82
+00:15:15,292 --> 00:15:21,091
+N-N'deki sonucu dönecek. Başarı olasılığı olarak. Tamam mı?
+
+83
+00:15:22,892 --> 00:15:28,292
+Birinci sorumuz bu şekildeydi. Soruyla alakalı sorunuz var mı?
+
+84
+00:15:28,292 --> 00:15:30,292
+Birinci soruyla alakalı.
+
+85
+00:15:38,515 --> 00:15:41,716
+Hocam, fonksiyon kullanmayan puan kıracak mısınız?
+
+86
+00:15:44,216 --> 00:15:45,196
+Nasıl yani?
+
+87
+00:15:45,995 --> 00:15:46,456
+Yani ben...
+
+88
+00:15:46,456 --> 00:15:48,556
+Teşekkürler hesaplarken sen nasıl yaptın?
+
+89
+00:15:48,556 --> 00:15:54,796
+Evet, ben direkt şey yani men içinde yaptım hesaplamaları ama şey fonksiyon çağrıyarak değil.
+
+90
+00:15:55,860 --> 00:16:07,299
+Onu hızlılarla konuştuktan sonra bir puanlama cepveli çıkartıyoruz. Şu an için bir şey söyleyemeyeceğim ama fonksiyon kullansaydın tabii ki daha iyi olabilirdi.
+
+91
+00:16:08,759 --> 00:16:09,820
+Tamam, teşekkürler.
+
+92
+00:16:10,100 --> 00:16:10,840
+Rica ederim.
+
+93
+00:16:13,860 --> 00:16:16,060
+Devam ediyorum o zaman ikinci problemden.
+
+94
+00:16:18,340 --> 00:16:22,639
+İkinci probleme de zaten aşina olduğunuz bir problemdi ikinci ödevinizden.
+
+95
+00:16:23,379 --> 00:16:41,379
+kullanıcı bir cümle girecek. Bu cümlede yanlış girilmiş kelimeler için hali hazırda kullandığımız dictionary'de bulunan kelimelere göre kontrol yapıldıktan sonra eğer yanlış bir kelime içeriyorsa cümle bu yanlış kelime için doğru kelimeler önerilecekti.
+
+96
+00:16:41,748 --> 00:16:50,748
+Edit Distance'ı kullanarak 1 ve 2 uzaklıktaki kelimeleri önce 1, sonra 2 uzaklıktaki kelimeleri kullanıcıya sunacaktık.
+
+97
+00:16:50,748 --> 00:16:58,700
+Kullanıcı bunlardan doğru kelimeyi seçtikten sonra sözlüğümüze kaydedeceğiz ve doğru cümleyi ifade edecektik.
+
+98
+00:17:00,596 --> 00:17:26,036
+Şimdi sözlük için ne demişiz? Ödevde kullanılacak sözlüğü hazırlamak için Small Dictionary TXT dosyasındaki sözlüğe ait kelimeler sözlük tablosuna bir kere yapılacak. Yerleştiriliyor bu kelimeler. Sonra her kelime için sözlük tablosunda kullanıcının girdiği demin ifade ettiğim gibi arayacağız. Eğer bu kelime sözlük tablosunda varsa kelime doğrudur.
+
+99
+00:17:26,579 --> 00:17:29,899
+Yoksa hatalı kelime tablosunu da arayacağız.
+
+100
+00:17:29,899 --> 00:17:37,339
+Şimdi tabloda biz kelimeyi nasıl arıyoruz buna bakalım.
+
+101
+00:17:37,339 --> 00:17:44,819
+Büyük küçük uyumunu kontrol ettikten sonra tablonun içerisinde bu kelime var mı yok mu buna bakıyoruz.
+
+102
+00:17:44,819 --> 00:17:52,419
+Eğer o indeksteki değer nula eşitse bulamıyor kelimeyi.
+
+103
+00:17:52,915 --> 00:17:57,915
+Rotation'da M1'den büyükse kelime yok demek ama...
+
+104
+00:17:59,220 --> 00:18:14,579
+O andaki tablodaki, indeksteki veriyle bizim compare ettiğimiz, pardon, compare ettiğimiz word değişkenindeki tutulan kelime birbiriyle uyumluysa zaten string compare fonksiyonu doğruysa sıfır dönüyor biliyorsunuz.
+
+105
+00:18:15,159 --> 00:18:21,900
+Eğer sıfıra eşitse bu kelime bulundu demek. O zaman fonksiyonumuz searchHatchTable bir dönüyor.
+
+106
+00:18:23,220 --> 00:18:26,360
+Yani bunu bulduğunu ifade ediyor tamam mı bu fonksiyonda?
+
+107
+00:18:27,923 --> 00:18:31,744
+Sonra, suggest word diye bir fonksiyon tanımladık.
+
+108
+00:18:32,531 --> 00:18:43,652
+Bu Suggestword fonksiyonu ne için kullanılacak? Eğer kullanıcı yanlış bir kelime yazdıysa, o kelime için doğrusunu önerebilmek için kullanacağımız fonksiyon.
+
+109
+00:18:44,211 --> 00:18:51,652
+Bunun parametreleri de hem doğru sözlük tablosunu alıyor, hem de yanlış kelimelerin tutulduğu tabloyu alıyor.
+
+110
+00:18:51,652 --> 00:18:57,692
+Aynı zamanda kullanıcının girdiği kelimenin doğru olup olmadığını kontrol etmek için de onu parametre olarak alıyoruz.
+
+111
+00:18:57,851 --> 00:19:00,531
+Yani cümledeki her bir kelimeyi bu fonksiyona gönderiyoruz.
+
+112
+00:19:00,531 --> 00:19:23,672
+Ne diyoruz? Öncelikle sözlük tablosunda bu kelimeyi arayacağız. Eğer kelime bu fonksiyon bir değeri dönerse, bir önceki fonksiyonu tanımlamıştık, bulduğu zaman bir değeri dönüyordu. O zaman bu Dictionary tablosunda bu sözcük var demek. O zaman ben zaten bunu buldum. Bunun için önerme işlemi yapmayacağım.
+
+113
+00:19:24,500 --> 00:19:35,799
+Bu fonksiyondan artık geri dönebilirim o kelime için. Ama eğer ben bunu sözlükte bulamazsam, bu elsin içine gireceğim. O zaman nerede arayacağım ben kelimeyi?
+
+114
+00:19:37,420 --> 00:19:46,139
+Hatalı söz tablosu içerisinde bu kelimeyi arayacağım. Eğer hatalı kelime tablosunda ben bu kelimeyi bulamazsam ne olacak?
+
+115
+00:19:47,859 --> 00:19:54,219
+Sözlük tablosundaki bir uzaklığındaki kelimeleri kullanıcıya önermeye başlayacağım değil mi?
+
+116
+00:19:55,259 --> 00:20:03,159
+Eğer bir uzaklığındaki kelimelerden kullanıcı tercih yapmazsa, iki uzaklıktaki kelimeleri kullanıcıya önereceğim.
+
+117
+00:20:04,211 --> 00:20:28,491
+seçtiği işlemden sonra da, önerdiğim kelimelerden birini seçtikten sonra da bunu tabloma ekleyeceğim. Cümlenin de doğru halini kullanıcıya göstermiş olacağım. Tamam mı? Şimdi burada get words with edit distance fonksiyonumuz var burada. Bu fonksiyonun da nasıl çalıştığını şimdi size göstereceğim ama genel itibariyle çalışamazsın. Bir sıkıntı var mı burada?
+
+118
+00:20:29,683 --> 00:20:33,063
+Önce bir fonksiyona bakalım, sonra buraya geri dönelim o zaman.
+
+119
+00:20:34,183 --> 00:20:35,183
+Bakalım geri dönelim.
+
+120
+00:20:38,703 --> 00:20:45,864
+Distance'ına bakarken, Levenstein, bir olanları ayrı yeten yapmadım herhalde, bir sorun olmaz.
+
+121
+00:20:47,183 --> 00:20:49,624
+Bir, iki, bir'i kontrol etmedin mi?
+
+122
+00:20:50,003 --> 00:20:53,683
+Sadece ikiden iki veya küçükse deyip, gösterdim yani.
+
+123
+00:20:54,963 --> 00:21:05,463
+Ya yine bu da doğru kabul edilebilir ama yine puanlama için ortak bir cetvel çıkartıyoruz. Şu an hani kendi kendime şöyle yaparız ya da sorun olmaz diye bir şey söyleyemeyeceğim tamam mı?
+
+124
+00:21:06,228 --> 00:21:27,888
+Hocam, ben başka bir şey anladım bu konuda. İşte birinci olarak yani bir distansla kelimeler önereceğim şeyini. Eğer bir distans yoksa iki distans önereceğim. Ben öyle anladım yani ikisini birden göstermeyeceğim, önermeyeceğim yani diye anladım.
+
+125
+00:21:29,688 --> 00:21:31,048
+Yine bir bakalım.
+
+126
+00:21:33,107 --> 00:21:38,728
+Evet hocam sanki öyle yazıyordu soruda. Yani bir uzaklıkta yoksa ikiyi öner diyordu.
+
+127
+00:21:38,987 --> 00:21:39,807
+Evet, öyle.
+
+128
+00:21:40,547 --> 00:21:41,268
+Ben de öyle yaptım.
+
+129
+00:21:41,268 --> 00:21:47,687
+Ben de öyle yaptım. İlk önce bir uzaklıkta olanları bakıyor, onu bulamazsa iki olanları öneriyor.
+
+130
+00:21:48,847 --> 00:21:50,087
+Bir saniye, hemen bakalım.
+
+131
+00:21:50,467 --> 00:21:52,387
+Ödevin açıklamasında öyle olması lazım.
+
+132
+00:22:04,051 --> 00:22:07,451
+Eğer öyleyse zaten kabul ederiz. Hemen bakacağım bir saniye.
+
+133
+00:22:11,316 --> 00:22:13,316
+Şu anda ekranımı görmüyorsunuz değil mi?
+
+134
+00:22:18,451 --> 00:22:19,211
+Aşkı
+
+135
+00:22:33,844 --> 00:22:49,184
+Üçüncü şeyin A maddesinde şey diyor, yani bir distanslı yoksa o zaman iki distanslı şey, iki mesafeli sözlükler önerilir diyor. Yoksa yani, bir mesafeli olan yoksa.
+
+136
+00:22:50,228 --> 00:22:52,628
+O zaman onu ben biraz kasmışım.
+
+137
+00:22:53,108 --> 00:22:55,488
+Yani üçün aşıkında öyle diyor, aynen öyle.
+
+138
+00:22:55,808 --> 00:23:01,168
+Yani eğer mesafesi bir olan yoksa mesafesi iki olan sözlü kelimeleri kullanıcıya öneriliyor.
+
+139
+00:23:01,508 --> 00:23:06,288
+Tamam. O zaman o şekilde orayı revize edebiliriz. Tamam, devam edelim o zaman.
+
+140
+00:23:08,528 --> 00:23:11,948
+Siz yani öyle yaptıysanız o doğru şekilde kabul edilecek tabii ki.
+
+141
+00:23:11,948 --> 00:23:16,948
+Ben onu o şekilde anlamışım.
+
+142
+00:23:21,236 --> 00:23:23,236
+paylaşıma devam edelim.
+
+143
+00:23:24,536 --> 00:23:31,736
+Hocam sizin gibi anlayanlar da oldu. Artık onu hocalarla konuştumdan sonra herhalde karar veriyoruz.
+
+144
+00:23:31,736 --> 00:23:33,736
+Aynen o şekilde değerlendiririz.
+
+145
+00:23:35,336 --> 00:23:36,636
+Şu an görüyorsunuz değil mi?
+
+146
+00:23:40,564 --> 00:23:42,564
+Evet, görünüyor hocam. Gel deyip ben.
+
+147
+00:23:44,564 --> 00:23:56,564
+Tamam. Bir mesafesi yoksa o zaman ikiden küçük şekilde ya sadece iki için gönderdiğinizde de olacaktır. Yani yukarıdaki if bloğunu hiç görmezden gelelim.
+
+148
+00:23:57,564 --> 00:24:05,564
+Mesafesi iki olarak değiştirdiğimizde tabii get verse fonksiyonu da belki değişiklik yapmamız gerekebilecek. Bakalım.
+
+149
+00:24:06,548 --> 00:24:15,907
+Nasıl yapmışız? Şimdi, kandın iki olduğunu varsayıyoruz. Kelimeler diye bir dizim var.
+
+150
+00:24:16,276 --> 00:24:27,456
+Eğer uzaklık verdiğim değerden küçük eşitse demişim, sadece 2 için gönderdiğimiz zaman, o zaman sizin dediğiniz gibi ödev dükmanındaki gibi bir sonuç elde edebileceğiz.
+
+151
+00:24:28,276 --> 00:24:36,556
+Elde edilen, hesaplanan uzaklık 2'den küçük veya 2'ye eşitse, kelimelerin bulunduğu diziye bu kelimeyi ekliyoruz.
+
+152
+00:24:36,816 --> 00:24:37,296
+Tamam mı?
+
+153
+00:24:38,115 --> 00:24:41,875
+Ondan sonra bu uzaklığa göre bu fonksiyon o diziyi elde ediyor.
+
+154
+00:24:43,155 --> 00:24:49,096
+Eğer hiç kelime bulamazsa, zaten dizi nul olarak dönüyor. Initial değeri nul olduğu için, tamam mı?
+
+155
+00:24:50,415 --> 00:24:58,435
+Ondan sonra, döndükten sonra ne demişiz? Kullanıcı seçimini yaptıktan sonra, girdiği kelimeyi hatalı tablosuna ekleyecek.
+
+156
+00:24:59,215 --> 00:25:08,195
+Eğer zaten iki kelime uzaklığında da kelime yoksa, o zaman bulamadı diye kullanıcıya bir uyarı yayınlayacağız, tamam mı?
+
+157
+00:25:13,172 --> 00:25:34,952
+Şimdi burada da bunu kullanırken de Edit Distance'ın hesaplandığı bir fonksiyon kullandım. Bu fonksiyonu da zaten siz de ödevlerinizde mutlaka kullanmanız gerekiyordu. Bunu tabloda da anlatacağım nasıl kullanıldığını. Burada Pisto kodunu da yazdık ama uygulama üzerinden görsek daha iyi anlaşılacağını düşünüyorum. Zaten derste de hocalarımız anlatmıştır.
+
+158
+00:25:35,859 --> 00:25:49,460
+Yine de birlikte bir örnek yapalım. Sizden de cevaplamanızı isteyeceğim. Şimdi bir hello kelimesi ile hell kelimesini karşılaştırdığımızı düşünelim bu edit distance mantığıyla.
+
+159
+00:25:49,460 --> 00:26:01,460
+İlk kutucuğumuz ne olacak? H ve H harfini karşılaştırdığım zaman ikisi de aynı harf. O zaman buradaki kutu değerim...
+
+160
+00:26:01,715 --> 00:26:06,175
+Cevabını da göstermiş olduk. Kutucuğumun değeri ne olmuş olacak benim?
+
+161
+00:26:11,251 --> 00:26:16,251
+Birbirine eşit harf olduğu için köşegendeki değeri alıyorum değil mi?
+
+162
+00:26:19,251 --> 00:26:23,251
+Bu arada çok küçük bir şekilde yazıyor cevabımı. Bunun boyutunu...
+
+163
+00:26:25,251 --> 00:26:27,251
+Baya küçük yazdı.
+
+164
+00:26:29,251 --> 00:26:31,251
+Nereden düzeltebilirim?
+
+165
+00:26:37,683 --> 00:26:39,983
+Neyse, şöyle yazmayı deneyeyim o zaman.
+
+166
+00:26:42,083 --> 00:26:46,163
+Masum da olmadığı için biraz böyle kargacık burgacık oluyor, kusura bakmayın.
+
+167
+00:26:46,643 --> 00:26:50,163
+Şimdi H ve E harfini karşılaştıracağız.
+
+168
+00:26:51,203 --> 00:26:54,283
+İkisi de birbirine eşit harfler değil değil mi?
+
+169
+00:26:54,863 --> 00:26:55,843
+O zaman ne yapacağım?
+
+170
+00:26:56,923 --> 00:27:02,263
+Eğer birbirlerine eş değilse bu komşu, 3 kutucuğu,
+
+171
+00:27:03,571 --> 00:27:11,191
+Yani üç komşu indeksini ben kontrol edeceğim. Bunların içerisinden en küçük değer hangisi? Sıfır.
+
+172
+00:27:11,191 --> 00:27:16,191
+En küçük değeri bulacağım ve onun bir artı değerini ben buraya yazmış olacağım.
+
+173
+00:27:17,671 --> 00:27:24,251
+Tamam mı? Aynı şekilde devam ediyorum. L ve H'ye bakıyorum. Yine birbirlerine eşit harfler değil.
+
+174
+00:27:24,471 --> 00:27:29,551
+O zaman yine üç komşuya bakıyorum. En küçük değer hangisiyse ki burada bir.
+
+175
+00:27:30,387 --> 00:27:34,467
+birin değerini bir arttıracağız. Bu şekilde
+
+176
+00:27:38,516 --> 00:27:49,635
+Devam etmiş olacağız. Şimdi, ikinci harfim için, e harfim için, h ve e'ye bakıyorum. Birbirlerine eşitler mi? Değiller. O zaman benim bu kutucuğumun değeri ne olacak?
+
+177
+00:27:54,003 --> 00:27:55,443
+Ne olacak arkadaşlar?
+
+178
+00:27:55,443 --> 00:27:57,443
+Üzgünardan gelecek bir olacak hocam.
+
+179
+00:27:57,443 --> 00:27:59,443
+Bir olacak değil mi?
+
+180
+00:27:59,443 --> 00:28:02,883
+Bir sonraki ne olacak?
+
+181
+00:28:06,291 --> 00:28:32,851
+E ve E eşit harfler olacak. Yine de bir hocam çünkü ikisi eşit, çaprazdaki alıp sıfır olacak. Aynen sıfır olacak çünkü birbirlerine eşit oldukları zaman diyagonaldekine bakıyoruz değil mi? Burada da eşitti. L ve E'ye bakıyoruz, eşit değil. O zaman en küçüğü bulacağım ki burada sıfır, bir arttıracağım.
+
+182
+00:28:35,604 --> 00:28:45,384
+L'ye bakıyorum, en küçüğü bulacağım, bir arttıracağım. O'ya bakıyorum, eşit değil, en küçüğü buldum, bir arttırdım. Sorun yok değil mi?
+
+183
+00:28:47,284 --> 00:29:00,604
+Şimdi bir sonraki harfimize bakalım, L ile karşılaştıracağız. H ve L'ye bakıyorum. Birbirlerine eşit değiller, o zaman yine üç komşuya bakıyorum. Hangisi en küçük? Bir. O zaman bunu...
+
+184
+00:29:01,460 --> 00:29:04,220
+1 arttırıyorum değil mi? Eşit değil çünkü.
+
+185
+00:29:05,500 --> 00:29:11,419
+E ve L'ye bakıyorum. Yine eşit değil. En küçük hangisi? 0. 1 arttırıyorum.
+
+186
+00:29:14,500 --> 00:29:19,299
+Ondan sonra L ve L'ye bakıyorum. Birbirlerine eşit. O zaman diagoneldeki geliyor.
+
+187
+00:29:20,299 --> 00:29:21,859
+0 gelmiş oldu.
+
+188
+00:29:23,059 --> 00:29:27,699
+L ve L birbirlerine eşit. O zaman diagoneldeki geliyor.
+
+189
+00:29:30,420 --> 00:29:35,019
+O ve L birbirlerine eşit değil, minimumunu buluyorum, bir arttırıyorum.
+
+190
+00:29:36,740 --> 00:29:38,580
+H ve L'ye bakıyoruz gene.
+
+191
+00:29:40,279 --> 00:29:45,320
+Ne olmuş oluyor? Birbirlerine eşit değiller. O zaman en küçüğü bulup bir arttırıyorum.
+
+192
+00:29:45,620 --> 00:29:46,320
+Ki o da üç.
+
+193
+00:29:47,539 --> 00:29:51,480
+E ve L'ye bakıyoruz. Eşit değil, en küçük artı bir yaptık.
+
+194
+00:29:52,059 --> 00:29:54,559
+L'ler birbirine eşit diye göneldeki geliyor.
+
+195
+00:29:56,059 --> 00:29:56,799
+Değil mi?
+
+196
+00:29:58,644 --> 00:30:03,763
+L ve L birbirine eşit diyor, geneldeki geliyor.
+
+197
+00:30:06,844 --> 00:30:11,703
+O ve L birbirine eşit değil, o zaman en küçük artı bir yapıyoruz.
+
+198
+00:30:18,612 --> 00:30:19,612
+Bir oluyor.
+
+199
+00:30:21,112 --> 00:30:28,952
+Şimdi, buradaki bu iki kelime arasındaki uzunluğu hangi şey veriyor? Değer. Aralarındaki uzaklığı.
+
+200
+00:30:30,952 --> 00:30:33,192
+Return olarak neyi döneceğim ben?
+
+201
+00:30:33,732 --> 00:30:34,172
+En son.
+
+202
+00:30:34,932 --> 00:30:41,532
+En sondakini döneceğiz. Aynen öyle. Şu değer benim iki kelime arasındaki uzaklığım.
+
+203
+00:30:45,556 --> 00:30:46,556
+Tamam.
+
+204
+00:30:49,940 --> 00:30:52,180
+Peki, şimdi bir bonus puanımız vardı.
+
+205
+00:30:54,180 --> 00:30:56,420
+Aynı değerleri bulmuşuz.
+
+206
+00:30:57,860 --> 00:30:59,300
+Clearlayalım.
+
+207
+00:31:02,660 --> 00:31:05,300
+Bir bonusumuz vardı. Neydi ödevde söylenen?
+
+208
+00:31:05,300 --> 00:31:13,300
+İşte K2 ve bu tabloyu hepsini hesaplamadan da, değere kadar hesaplarsak
+
+209
+00:31:13,683 --> 00:31:25,124
+Erkenden bu kelimelerin arasındaki uzaklık ikiden büyük, dolayısıyla bizim kuralımıza uymuyor, daha fazlasını hesaplamama gerek yok dediğimiz nokta neresi olacak?
+
+210
+00:31:29,044 --> 00:31:37,044
+Bunu hesaplayacağız şimdi. Bunu hesaplarken de görelim bakalım nerede durursak bize yeterli oluyor.
+
+211
+00:31:40,044 --> 00:31:48,044
+Şimdi A ile F arasına bakıyoruz. Bu arada siz de katılırsanız daha çabuk ilerleyelim. Tamam mı? Zaten bu son sorumuz.
+
+212
+00:31:48,044 --> 00:31:54,044
+F ile A'ya bakıyoruz. Eşit değiller ne yapacağız? Minimum artı 1 yapacağız.
+
+213
+00:31:54,804 --> 00:31:58,764
+Minimum ney? Ay bu çok kalınmış. Bunu geri alayım.
+
+214
+00:32:02,132 --> 00:32:26,152
+1 yazacağım değil mi? Çünkü minimumu 0, 1 arttırıyorum, 1. A ile R'ye bakıyorum, 2 olacak. A ile I'ye bakıyorum, 3 olacak. Minimum artı 1. E ile A'ya bakıyorum, ne olacak? 4 olacak. Minimum artı 1. Hepsiyle birbirinden farklı.
+
+215
+00:32:29,715 --> 00:32:31,515
+Bir şey yazamadım.
+
+216
+00:32:32,375 --> 00:32:35,175
+F ile R'ye bakıyoruz şimdi. İkinci harfimizdeyiz.
+
+217
+00:32:35,895 --> 00:32:39,155
+İkisi de yine birbirinden farklı. Minimum artı bir yapacağım. İki.
+
+218
+00:32:42,375 --> 00:32:46,315
+R ile R'ye bakıyorum. Birbirine eşit. O zaman diagoneldekini alacağım değil mi?
+
+219
+00:32:47,295 --> 00:32:48,035
+Buradan geldi.
+
+220
+00:32:50,375 --> 00:32:51,895
+I ile R'ye bakıyorum. Farklı.
+
+221
+00:32:53,215 --> 00:32:56,895
+Minimum artı bir yaptım. E ile R'ye bakıyorum. Farklı.
+
+222
+00:32:58,195 --> 00:33:13,835
+Minimum artı bir yapıyorum. Üç oldu yani. Bunlar da farklı. Minimum artı bir yaptım. Dört oldu. Tamam mı? Hata yaparsam söyleyin bu arada. Ezberden gidince bazen insanın gözünden kaçabiliyor.
+
+223
+00:33:14,435 --> 00:33:23,015
+Şimdi F ile T'ye bakıyoruz. Birbirinden farklı. Ne yapacağız? Minimum ne? İki. İki artı bir yaptık. Üç.
+
+224
+00:33:23,988 --> 00:33:42,927
+T ile R'ye bakıyoruz. Minimum artı 1 yapacağız çünkü farklı. 2 oldu. I ile T'ye bakıyorum. Birbirinden farklı. Ne olacak? 1 artı 1'den 2 etti. Ondan sonra şimdi E ile T'ye bakıyoruz. Gene farklı.
+
+225
+00:33:44,403 --> 00:33:49,963
+Minimum artı 1 yaptık, D'ye bakıyoruz, farklı, minimum artı 1 yaptık, 4 oldu.
+
+226
+00:33:50,703 --> 00:33:53,543
+Şimdi burada artık elde edeceğiz gibime geliyor.
+
+227
+00:33:53,864 --> 00:33:58,923
+F ile I'ye bakıyoruz, birbirinden farklılar, minimum artı 1 yapacağız, 4 oldu.
+
+228
+00:34:00,384 --> 00:34:03,344
+R ile I da farklı, minimum artı 1, 3 oldu.
+
+229
+00:34:03,844 --> 00:34:07,604
+I ile I birbiriyle aynı, o zaman diagöneldeki geliyor değil mi?
+
+230
+00:34:11,092 --> 00:34:19,592
+E ile I'ya bakıyorum. Birbirinden farklı. O zaman ne yapacağım? Minimum artı bir, üç oldu.
+
+231
+00:34:24,947 --> 00:34:45,367
+Şimdi, ben artık diyagonallerimi kontrol edersem, birinci diyagonalim bu, ikinci diyagonalim bu, üçüncü diyagonalim bu, dördüncü diyagonalim de bu, değil mi? Ben artık bu diyagonalde ikiden büyük bir değer gördüğüm zaman,
+
+232
+00:34:47,059 --> 00:34:54,880
+İkiden büyük değer gördüğüm zaman diyorum ki artık bu kelimenin ikiden fazla uzaklığa sahip olduğu anlaşıldı diyorum.
+
+233
+00:34:55,000 --> 00:35:01,400
+Bu satırı bitirdikten sonra, bu da kaç yapıyor?
+
+234
+00:35:03,519 --> 00:35:08,319
+Dört yapıyor. Artık buradan sonra ben bir sonraki satırı hesaplamama gerek yok.
+
+235
+00:35:08,880 --> 00:35:13,059
+Çünkü artık üçü elde ettim diyagünerde. Return yapabilirim.
+
+236
+00:35:15,572 --> 00:35:16,551
+Tamam mı arkadaşlar?
+
+237
+00:35:17,351 --> 00:35:18,592
+Hocam bir soru sorabilir miyim?
+
+238
+00:35:18,872 --> 00:35:19,251
+Evet.
+
+239
+00:35:20,211 --> 00:35:24,551
+Hocam ben bunu bu şekilde değil de sadece diagonalden ilerleyerek hesapladım.
+
+240
+00:35:24,551 --> 00:35:27,872
+Yani o diğer değerleri de doldurmadan bir şekilde hesapladım.
+
+241
+00:35:28,612 --> 00:35:31,471
+He, hiç diğerlerini doldurmadan sadece diagonele bakarım.
+
+242
+00:35:31,492 --> 00:35:35,372
+Diagonele ilerledim. Orada çıkabilecek ihtimallere göre ilerlemeye devam ettim.
+
+243
+00:35:35,551 --> 00:35:39,132
+Sadece ortadaki yer dolmuş oldu. Yani şu kenarlar dolmamış oldu.
+
+244
+00:35:39,572 --> 00:35:42,192
+Anladım. Üst taraflı, alt tarafım boş olmuş oldu.
+
+245
+00:35:42,612 --> 00:35:42,891
+Evet.
+
+246
+00:35:43,699 --> 00:35:45,699
+Yani kabul olurum bu şekilde.
+
+247
+00:35:45,699 --> 00:35:49,699
+Rekürsik yaklaşım izledim, o şekilde doldurdum böyle.
+
+248
+00:35:49,699 --> 00:35:53,699
+Diagonal üzerinden sadece ilerledim yani.
+
+249
+00:35:53,699 --> 00:35:56,699
+Ama şimdi şöyle bir şey söyleyeceğim sana.
+
+250
+00:35:56,699 --> 00:35:57,699
+Hani...
+
+251
+00:35:58,003 --> 00:36:04,203
+O diagonaldeki değeri de doldururken üç tane komşunun değerine bakıyoruz ya.
+
+252
+00:36:04,423 --> 00:36:07,804
+Hepsine baktım, hepsini hesaplayarak diagonali doldurdum.
+
+253
+00:36:07,863 --> 00:36:13,003
+Sadece diagonali doldurmak için ihtiyacın olan değerleri doldurdum.
+
+254
+00:36:13,023 --> 00:36:14,123
+Aynen o şekilde yaptım.
+
+255
+00:36:14,264 --> 00:36:18,523
+Ama onu elde edebilmek için de bir öncekinin üç tane...
+
+256
+00:36:18,523 --> 00:36:21,203
+Hepsine gerek yok hocam. Hepsine gerek kalmıyor.
+
+257
+00:36:21,623 --> 00:36:23,403
+Yani gerek olanları sadece kullandım.
+
+258
+00:36:25,108 --> 00:36:27,148
+Şimdi anlamaya çalıştığım şey şu.
+
+259
+00:36:30,168 --> 00:36:33,347
+Şimdi şöyle hocam, aynı olduğu sürece diagonal boyunca ilerledim.
+
+260
+00:36:33,468 --> 00:36:38,068
+Mesela diyelim F ve A aynı olsaydı 0, 0, 0, 0 şeklinde ilerleyecektim.
+
+261
+00:36:38,128 --> 00:36:40,528
+O kenardaki değerlere hiçbir zaman ihtiyacım olmayacaktı.
+
+262
+00:36:41,188 --> 00:36:43,708
+Aynı olduğu ihtimali düşünerek yaptım.
+
+263
+00:36:43,748 --> 00:36:46,168
+Evet, aynı olmadığı ihtimaldi 3'e dallanıyorum.
+
+264
+00:36:46,788 --> 00:36:48,408
+3 yoldan gidebiliriz bu sefer.
+
+265
+00:36:48,828 --> 00:36:50,807
+O 3 yol için hesaplama yapıyorum.
+
+266
+00:36:51,264 --> 00:36:56,264
+Sonrasında onun sonucuna göre yine üç yoldan hesaplama yapıyorum, üçer yoldan.
+
+267
+00:36:56,264 --> 00:37:01,264
+Ve zaten iki adım ilerlediğimiz için çok fazla işlem yapmamış oluyorum o yüzden.
+
+268
+00:37:01,264 --> 00:37:07,264
+Anladım. Bunu kontrol ederken yine değerlendirilir. Şimdi kafadan bir şey söylemiş olmayayım sana, tamam mı?
+
+269
+00:37:07,264 --> 00:37:08,264
+Tamam hocam.
+
+270
+00:37:08,264 --> 00:37:14,264
+Ama yine her ihtimalde, her case'de aynı sonucu elde ettiysen zaten doğrudur.
+
+271
+00:37:14,264 --> 00:37:17,264
+Evet hocam ettim aynı sonucu. Diğeriyle test ettim yani.
+
+272
+00:37:17,264 --> 00:37:19,052
+Tamam o zaman.
+
+273
+00:37:19,380 --> 00:37:21,200
+Hocam benim de bir sorum var da.
+
+274
+00:37:21,420 --> 00:37:21,700
+Evet.
+
+275
+00:37:23,020 --> 00:37:36,600
+Şu solda artist yazmışız. Artistin son iki harfi E, D olsaydı, iki ve iki sürekli sağ aşağıya devam edip en soğa altta iki kalacaktı ve cevabımız da iki gelecekti.
+
+276
+00:37:37,380 --> 00:37:40,880
+Hani bu ana diagonalden böyle ilerlemek doğru oluyor mu?
+
+277
+00:37:41,500 --> 00:37:43,100
+Ben de o aynısını soracaktım.
+
+278
+00:37:43,100 --> 00:37:46,140
+Ne söyledin? Bir daha söyle. Şimdi Friday'mız var.
+
+279
+00:37:46,612 --> 00:37:50,452
+Diğeri de artist değil de, son iki harfi artistin E ve D olsun.
+
+280
+00:37:51,492 --> 00:38:00,212
+Burada, diagonali baktığınız zaman, sağ alta giden diagonali, 2 ve 2 aynı şekilde ilerleyecek sağ alta kadar ve cevabımız 2 çıkacak.
+
+281
+00:38:01,771 --> 00:38:05,552
+İşte sadece diagonalden değil de, 3 farklı yoldan gidince oluyor.
+
+282
+00:38:07,072 --> 00:38:10,452
+Yani, farklı çıktığı durumda 3 farklı ihtimalimiz oluyor.
+
+283
+00:38:10,952 --> 00:38:12,632
+3 farklı diagonalden ilerliyorum.
+
+284
+00:38:13,235 --> 00:38:14,635
+O şekilde biz sistemler.
+
+285
+00:38:14,655 --> 00:38:20,115
+Şimdi şu E, D'yi bir yazalım, bir görelim sizin ne demek istediğinizi, bütün arkadaşlarımız görsün.
+
+286
+00:38:20,235 --> 00:38:23,775
+Tamam mı? Şunu diyorsun değil mi? S değil de burası E olacak.
+
+287
+00:38:24,355 --> 00:38:25,235
+Orası D olacak.
+
+288
+00:38:25,235 --> 00:38:26,295
+Burası D olacak.
+
+289
+00:38:27,015 --> 00:38:31,295
+Tamam, şimdi söyleyin, dolduralım tabloyu. Şu satırı zaten tamamladık.
+
+290
+00:38:33,215 --> 00:38:34,956
+F için, E için söyleyin.
+
+291
+00:38:36,275 --> 00:38:40,175
+Hocam, 5, 6, 7, 2.
+
+292
+00:38:41,268 --> 00:38:43,448
+Beş, altı.
+
+293
+00:38:43,608 --> 00:38:43,948
+Pardon.
+
+294
+00:38:44,188 --> 00:38:45,087
+Beş, beş.
+
+295
+00:38:45,507 --> 00:38:45,768
+Beş.
+
+296
+00:38:49,007 --> 00:38:50,268
+O da dört olacak, özür dilerim.
+
+297
+00:38:50,268 --> 00:38:52,648
+Şunu da çok çirkin yazdım, bir saniye.
+
+298
+00:38:55,488 --> 00:38:59,007
+Şimdi bu F, bu E olduğu zaman birbirinden farklı.
+
+299
+00:38:59,228 --> 00:39:01,148
+O zaman burası zaten beş oluyor.
+
+300
+00:39:02,068 --> 00:39:03,087
+Yan taraf dört oluyor.
+
+301
+00:39:06,291 --> 00:39:17,412
+Burası da minimumunu bulup artı bir dört aynen. I'ya bakıyoruz, üç oluyor burası. Değil mi? Evet. E'ye baktığım zaman eşit geliyor iki.
+
+302
+00:39:22,099 --> 00:39:31,359
+E ile D'ye bakıyorum. Birbirinden farklı. 2 artı. 1 yapacağım. 3. Yine 3'den devam ediyoruz. 2 kalmadı.
+
+303
+00:39:32,139 --> 00:39:41,559
+Hocam, sağ altta ama şimdi en sondaki D olduğu için yine sol üstteki köşeden alıyoruz ya. Aynıysa. Yine 2 gelecek sağ altta.
+
+304
+00:39:43,319 --> 00:39:48,279
+Devam edelim. Dediğin gibi olacak gibi geliyor bana da. Aynen eşit olduğu için 2 gelecek.
+
+305
+00:39:49,907 --> 00:40:12,407
+Şimdi iki geldiği zaman buradaki işlemlerimiz ne oluyor? E ve D için zaten aynı. Hani addition falan yapıyoruz ya ya da kelimeyi değiştiriyoruz. Buradaki işlemlerimiz ne? Bu da aynı oluyor. T'yi sil diyor.
+
+306
+00:40:17,748 --> 00:40:24,288
+Zaten aynı, ay da değiştir diyor. İki şeyde buna ulaşabiliyoruz gerçekten, doğru.
+
+307
+00:40:24,307 --> 00:40:35,788
+Biz yanlış satırda durdurduk. Dramik programlamada ekleye ekleye gittiğimiz için mantığımız her bir satırda eğer bizim sınırımızdan, bütün hücreler sınırımızdan büyükse o zaman durduruyoruz.
+
+308
+00:40:36,288 --> 00:40:40,028
+Yani şu an iki gördük, o satırda durmamamız lazım aslında.
+
+309
+00:40:41,248 --> 00:40:43,568
+Hangi satırda durmamız lazım diyorsun?
+
+310
+00:40:44,115 --> 00:40:48,056
+Bu örnek şu an cevap şey değil yani, üç değil.
+
+311
+00:40:50,036 --> 00:40:51,635
+Tamam, her satırda dururdu.
+
+312
+00:40:51,635 --> 00:40:53,516
+Devam edecektik, onu demek istiyorum.
+
+313
+00:40:53,695 --> 00:40:57,956
+Yani bu üçü hesapladık, şuradan bahsliyorsun değil mi? Kırmızı kutucuğumuzdan bahsliyorsun.
+
+314
+00:40:58,195 --> 00:41:02,016
+Üçte durduk aslında ama durmamamız lazım diyorsun.
+
+315
+00:41:02,516 --> 00:41:06,395
+Devam ettik, bunu da hesapladık. Nerede durmamız lazım o zaman? Erken bir demek için.
+
+316
+00:41:06,416 --> 00:41:10,036
+Öyle bir satır bulacağız ki, bütün hücreler bizim sınırımızdan büyük olacak.
+
+317
+00:41:10,515 --> 00:41:13,515
+Bu da demektir ki, ekliyoruz ya üzerine, ya ekliyoruz ya eklemiyoruz.
+
+318
+00:41:13,836 --> 00:41:17,475
+O zaman bütün satırlar üç ve üçten büyükse, o zaman o satırda durmalıyız.
+
+319
+00:41:18,036 --> 00:41:24,756
+Doğru söylüyorsun aslında. Mesela burası S olmuş olsaydı, iki değeri elde etmeyecektik herhalde. Bakalım mı ona da?
+
+320
+00:41:29,811 --> 00:41:32,951
+Bir hepsi sevinliyorum. Söyle.
+
+321
+00:41:33,291 --> 00:41:42,531
+Eğer diagonele bakacaksak, sonuçta kare matris değil, belki aşağıdan başlayarak diagonele bakarsak dediğimiz koşul doğru olabilir.
+
+322
+00:41:43,731 --> 00:41:51,152
+Bir saniye, bir şunu yapalım, ondan sonra dediğini değerlendirelim. Burası 4 oldu, burası 3 oldu.
+
+323
+00:41:53,715 --> 00:42:12,375
+E dediğimiz zaman yine birbirine eşit değil. Burası da 3 oldu. Demin söyleyen arkadaşımızın dediği doğru arkadaşlar. Minimum artı 1 yaptık, 4. Yani bu satırda 2'yi görmedi. Yani 2'den büyükse bütün değerler burada durabiliyoruz.
+
+324
+00:42:13,715 --> 00:42:28,175
+Şimdi demin söylediğiniz o kelimeyi hiç düşünmediğim için benim de aklıma gelmedi açıkçası ama siz söyleyince aynen öyle, öyle bir değerde yani öyle bir kelime geldiği zaman farklı hatalı bir sonuç elde edebiliyoruz.
+
+325
+00:42:28,296 --> 00:42:33,816
+Bu şekilde şu anda aklına hatalı gelen yanlış gördüğünüz bir değerlendirme var mı?
+
+326
+00:42:37,460 --> 00:43:01,324
+Çünkü bu koşulda baktığımız zaman bir önceki arkadaşımızın dediği gibi burası E olsaydı, burası da D olmuş olsaydı, hiçbir şekilde son satıra kadar 2'yi hep görmüş olacağımız için uzaklık 2'de kalacaktı. Yani 2'nin üstüne çıkmamış olacaktı. Yani biz de yanlış yerde durmamış olacaktık. Sonucumuzu sonuna kadar...
+
+327
+00:43:01,364 --> 00:43:05,483
+Tablo bitene kadar hesaplamış olacaktık değil mi? Hemfikir miyiz şu an?
+
+328
+00:43:09,940 --> 00:43:22,420
+Hocam, sanırsam sizin bu üçü limit olarak belirlediğiniz durumda, diagonal için. Eğer editli sinnesimizi biz ikiden küçük değil de birden küçük olarak arıyor olsaydık, doğru olacaktı sizin yaptığınız sözünde.
+
+329
+00:43:24,739 --> 00:43:31,619
+Yani bizim şu an editli sinnesimiz ikiden küçük aradığımız için bu üç limiti hatalı oluyor galiba.
+
+330
+00:43:33,860 --> 00:43:35,539
+Bir saniye arkadaşlar.
+
+331
+00:43:53,012 --> 00:43:54,012
+Bisaniakasabene.
+
+332
+00:44:43,987 --> 00:44:53,487
+Ama bir için de doğru olmazdı çünkü o zaman başka bir şekilde çaprazdan hep bir gelerek sonuca gelinebilirdi.
+
+333
+00:44:54,688 --> 00:45:00,987
+İşte o çaprazdan sürekli bir geleneceği zaman üçe ulaşmayacak ya, o yüzden yani.
+
+334
+00:46:33,108 --> 00:46:34,608
+Kusura bakmayın arkadaşlar.
+
+335
+00:46:36,708 --> 00:46:39,228
+Şimdi tekrar bir değerlendirelim.
+
+336
+00:46:43,059 --> 00:46:46,819
+Burada şimdi devam etledik. Şu üçe diyagonal dedik ya arkadaşlar.
+
+337
+00:46:48,179 --> 00:46:52,539
+F ve S'yi değerlendirdiğimiz zaman burası beş oluyor. Artık yazmaktan şey oldum.
+
+338
+00:46:53,819 --> 00:46:55,099
+Beş oluyor.
+
+339
+00:46:56,879 --> 00:46:58,420
+R için ne oluyor?
+
+340
+00:46:59,440 --> 00:47:00,219
+Dört.
+
+341
+00:47:00,719 --> 00:47:02,259
+I için ne oluyor?
+
+342
+00:47:02,519 --> 00:47:03,799
+Farklı üç.
+
+343
+00:47:09,179 --> 00:47:10,699
+E için ne oluyor?
+
+344
+00:47:11,380 --> 00:47:15,880
+yine 3 oluyor.
+
+345
+00:47:15,880 --> 00:47:17,880
+D içinde
+
+346
+00:47:22,036 --> 00:47:30,356
+Dört oluyor. Yani biz burada şu üçe değil de aslında şuraya baktığımız zaman sanırım doğruyu elde etmiş olacağız.
+
+347
+00:47:48,659 --> 00:47:54,079
+Yani şu satırda değil de, burada hala ikiyi elde ediyoruz.
+
+348
+00:47:54,539 --> 00:48:01,179
+Şurada, yani aslında kelimelerin uzunlukları birbirinden farklı olduğu için böyle bir sıkıntı yaşadık ama,
+
+349
+00:48:01,999 --> 00:48:05,259
+şunu kontrol ettiğimizde sanırım olacak.
+
+350
+00:48:07,979 --> 00:48:14,379
+Hani dönerken, çünkü sonuç dönerken şu kutuyu dönüyoruz ya, mesela atıyorum burası dört olsun, dört değil de.
+
+351
+00:48:17,076 --> 00:48:19,076
+Anlatmak istediğimi anladınız mı?
+
+352
+00:48:27,123 --> 00:48:38,243
+Hocam, soru zaten ana diagonalin neresine bakarsak nerede biteceğini anlamamız değil mi?
+
+353
+00:48:39,323 --> 00:48:51,023
+Hani kelimelerin uzunluklarına göre ana diagonalin kaç adım gerisine ya da ilerisine bakacağımız değişecek.
+
+354
+00:48:51,023 --> 00:48:53,423
+Ana diagonal değiştiği için.
+
+355
+00:48:54,099 --> 00:48:57,059
+Ben şimdi üçü işaretlemiş oldum ya.
+
+356
+00:48:57,679 --> 00:48:59,460
+Aslında ikiyi işaretlememiz.
+
+357
+00:48:59,460 --> 00:49:01,519
+Aynen. Aslında ikiyi kontrol ettim.
+
+358
+00:49:01,519 --> 00:49:07,340
+Çünkü şey, artist kelimesi 6'ar, Frag 5'ar.
+
+359
+00:49:08,059 --> 00:49:08,440
+Aynen.
+
+360
+00:49:08,440 --> 00:49:12,519
+Eğer yedi harfli bir şey olsaydı, iki adım gerisine bakmamız gerekecekti ama.
+
+361
+00:49:13,940 --> 00:49:18,159
+Sonuncu kutudan, yani şuradaki sonucu döneceğiz ya biz.
+
+362
+00:49:19,259 --> 00:49:20,279
+Distance olarak.
+
+363
+00:49:21,139 --> 00:49:25,400
+Buna takiben, yani diagonalimizi o şekilde belirleyebiliriz, tamam mı?
+
+364
+00:49:28,788 --> 00:49:42,428
+Anlaşıldı mı? Yani biz üçü değil de ikiyi kontrol edecektik aslında. Ve arkadaşınızın dediği durumda da onu düşündüğüm zaman, S'yi ve T'yi değiştirdiğim zaman o zaman başarılı bir sonuç elde ediyoruz.
+
+365
+00:49:43,748 --> 00:49:48,388
+Hocam, bu arada tekrar söyleyeyim. Her durumda bir öncekini kontrol etmiyoruz bence.
+
+366
+00:49:50,388 --> 00:49:51,388
+Her durumda bir öncekini kontrol etmiyoruz.
+
+367
+00:49:51,388 --> 00:49:55,388
+Harf sayısının, hayır, kelimelerin harf sayısının...
+
+368
+00:49:55,664 --> 00:49:58,064
+Farkı kadar gerisini kontrol ediyoruz.
+
+369
+00:49:59,264 --> 00:50:06,463
+Çünkü kelimelerin harf sayısı değişince, ana diagonalin doğrultusu da değişecek.
+
+370
+00:50:10,483 --> 00:50:17,523
+Bunu yine hocalara da soralım. Ben yanlış bir bilgi vermek istemiyorum size ama ben şu an hani yaptığım hatayı fark ettim.
+
+371
+00:50:17,923 --> 00:50:23,763
+Diagoneli kontrol edeceğiz derken sonuçta bunu dönüyoruz. En sondaki köşedekini dönüyoruz.
+
+372
+00:50:24,603 --> 00:50:28,823
+Diagonel 3 derken aslında burada ihala 2'yi ifade ediyordu.
+
+373
+00:50:30,543 --> 00:50:37,283
+Sonraki satırda devam etseydi harflerimizi değiştirmeden 3'ü burada görüyoruz ve burada durmamız gerekecekti.
+
+374
+00:50:38,483 --> 00:50:50,343
+Düzeltmiş olayım. Ama yine ben hocalarla da konuştuktan sonra bu sunumu paylaşırken son doğru formunda paylaşmış olayım sizlerle tamam mı?
+
+375
+00:50:55,443 --> 00:51:16,523
+Hocam, bence ortadan bir miktar diagonal kontrol edileceğiz ve bu da maksimum uzaklığın iki katı kadar olacak. Yani maksimum distance birse iki tane diagonal kontrol ederek emin olacağız. Ortadan iki. Üstten veya alttan başladığımız fark etmez. Dikdörtgen olsa bile işe yarıyor.
+
+376
+00:51:17,704 --> 00:51:20,324
+Neresi söylüyorsun? Bir daha ifade et bakayım.
+
+377
+00:51:22,963 --> 00:51:28,483
+Mesela Maximum Distance 1 için ortadaki iki diagonali kontrol etmeliyiz, o zaman emin olabiliriz.
+
+378
+00:51:28,903 --> 00:51:34,844
+Maximum Distance 2 için ortadaki dört diagonali kontrol etmeliyiz, o zaman emin oluyoruz.
+
+379
+00:51:35,724 --> 00:51:37,923
+Ortadaki dört diagonal dediğim bunlar mı?
+
+380
+00:51:42,291 --> 00:51:44,132
+Çizmem gerekir aslında.
+
+381
+00:52:06,003 --> 00:52:07,023
+Bundan bahsediyorsun.
+
+382
+00:52:09,764 --> 00:52:13,583
+Dört mü, üç mü emin olamadım ama herhalde üçte de işe yarıyor.
+
+383
+00:52:16,623 --> 00:52:24,563
+Ama o zaman olmaz ki. Dörde baktığın zaman burada üçü görüyorsun. O zaman bir öncekinde durman lazımdı değil mi?
+
+384
+00:52:25,304 --> 00:52:27,563
+Hayır, üçünü de kontrol edeceğiz.
+
+385
+00:52:32,436 --> 00:52:35,836
+Bu üçünden birisinde olma ihtimali var demek yani.
+
+386
+00:52:37,296 --> 00:52:41,436
+Yok ben bunun için şimdi bir şey söyleyemeyeceğim. Dediğim gibi benim...
+
+387
+00:52:42,387 --> 00:52:52,407
+Bildiğim, diagonalden kontrol ediyoruz ama ben 3'ü işaretlerken bunun aslında diagonal olmadığını ben yanlış fark etmemişim.
+
+388
+00:52:52,507 --> 00:52:58,668
+Kelimelerin uzunluğu farklı olduğu için yani sonuncuya bakarak işaretleme yapacağımızı düşünüyorum.
+
+389
+00:52:58,807 --> 00:53:03,307
+O yüzden zaten arkadaşın söylediğine de harfleri değiştirdiğimiz zaman da uyumlu oluyor.
+
+390
+00:53:03,307 --> 00:53:10,268
+Burada kontrol ettiğimizde mesela 3 yerine değil de şuraya bakmış olsaydık, 2'ye bakmış olsaydık hala 2 uzunluğunda.
+
+391
+00:53:10,387 --> 00:53:15,047
+deyip devam edecektik. Çünkü bu doğruyu ifade ediyor.
+
+392
+00:53:17,228 --> 00:53:25,347
+Sonuç olarak baktığımız zaman, Freight ve Artist kelimesi arasındaki mesafeye bakmak istediğimiz zaman buna bakacaktık değil mi?
+
+393
+00:53:28,487 --> 00:53:32,047
+Bu kelimeler arasındaki mesafeye bakmak istediğimde buna bakacaktım.
+
+394
+00:53:33,972 --> 00:53:59,812
+Buraya kadarki kelimeler, şey kelimeler diyorum, harfler arasındaki mesafe, yani Fry ve RT olan kısımdaki mesafeyi kontrol etmek istediğimde buna bakacaktım değil mi? İkiye bakacaktım. Bana sonucu o verecekti. Yani benim kelimem F, R ve I'dan oluşsaydı ve karşılaştırma yaptığım harflerim de A, R, T ve I olsaydı,
+
+395
+00:54:00,755 --> 00:54:03,315
+O zaman benim matrisim neresi olacaktı?
+
+396
+00:54:06,515 --> 00:54:11,815
+Şurası olacaktı ve aralarındaki mesafeyi veren sonucum benim iki olacaktı.
+
+397
+00:54:12,475 --> 00:54:17,275
+Ama ben dedim ki, diagonele bakıyoruz ve üç olduğu için artık durabiliriz dedim.
+
+398
+00:54:17,375 --> 00:54:18,915
+Buradaki ifadem yanlıştı.
+
+399
+00:54:20,500 --> 00:54:25,720
+Yani üçe değil, ikiye bakacaktık. Çünkü ikisinin arasındaki mesafeyi belirtin aslında bu.
+
+400
+00:54:26,300 --> 00:54:31,240
+Buradayken iki olduğu halde biz üçü gördük deyip tam artık kontrol etmememiz gerekiyor dedim.
+
+401
+00:54:31,380 --> 00:54:36,420
+Burada bir yanlış bir ifade kullandım. Matris boyutundan dolayı bunu fark edememişim.
+
+402
+00:54:36,580 --> 00:54:39,420
+Şu anda sizin sorduğunuz soruyla aydınlandık.
+
+403
+00:54:40,175 --> 00:54:53,775
+Harfleri burada ilk arkadaşınızın söylediği fikirle E ve D yapsaydık da o zaman iki şeklinde devam edecekti ve ikiyi görmüş olacaktık burada da ve mesafe olarak birbirlerine iki uzaklıkla diyecektik tamam mı?
+
+404
+00:54:54,655 --> 00:55:02,115
+Ama E ve D olmadığı haliyle S ve T olarak devam ettiğimizde burada üçü görüyoruz.
+
+405
+00:55:04,019 --> 00:55:20,400
+Diagonel'de. Burada üçü gördüğüm zaman diyorum ki artık üçten büyük bir mesafe, yani ikiden büyük bir mesafe var ve artık benim kontrol yapmaya devam etmeme gerek yok diyoruz. Anladık mı? Şimdi toparladım diye düşünüyorum.
+
+406
+00:55:25,556 --> 00:55:29,236
+Burada anlatmaya çalıştığımı anladınız mı? Bir daha temizleyeyim mi?
+
+407
+00:55:31,796 --> 00:55:33,796
+Şimdi şunları silelim.
+
+408
+00:55:35,116 --> 00:55:37,116
+Hocam, bir şey söyleyeceğim.
+
+409
+00:55:37,796 --> 00:55:46,596
+Ben böyle yapmadım aslında. Ben şey, kelimelerin uzunluğa bağlı diye Gönel'i seçtim ve ona göre yaptım.
+
+410
+00:55:47,316 --> 00:55:49,316
+Yani neresi diyor Gönel'in?
+
+411
+00:55:49,427 --> 00:55:53,587
+Yani şimdi uzun kelime hangisi şeydeki?
+
+412
+00:55:54,407 --> 00:55:56,667
+Diagonelimizin bizim şurası olması lazım.
+
+413
+00:55:57,387 --> 00:56:06,007
+Evet, yani şimdi uzun kelime artist kelimesi olduğu için yani diagonelimi ona göre seçtim.
+
+414
+00:56:08,007 --> 00:56:11,587
+Şu üç için hesapladığım zaman mesela.
+
+415
+00:56:14,547 --> 00:56:17,228
+Yani şurayı ifade etmemiz gerektiği zaman
+
+416
+00:56:17,228 --> 00:56:17,947
+Evet.
+
+417
+00:56:19,067 --> 00:56:20,728
+Şöyle işaretleyeceğim.
+
+418
+00:56:22,007 --> 00:56:25,248
+Şu kadar kısım için baktığım zaman
+
+419
+00:56:29,684 --> 00:56:37,443
+Ne oluyor aralarındaki mesafe? İki değil mi? Sonucu dönen çünkü burası. Öyle mi?
+
+420
+00:56:38,563 --> 00:56:50,724
+Yok, şey demek istedim yani, benim D'ye gönelim kelime uzunluğa bağlı seçtim yani. Hangisi uzunse ona göre D'ye gönelim seçiyorum ve gidiyorum, ilerliyorum.
+
+421
+00:56:50,724 --> 00:56:55,443
+Uçu bulduysam dönüyorum artık şu fonksiyondan yani.
+
+422
+00:56:56,884 --> 00:57:03,284
+Mesela burada hangimiz uzun? Artist daha uzun. Ona göre sen nereyi seçmiş oldun?
+
+423
+00:57:03,284 --> 00:57:12,244
+Şey, birden başlayarak, bir, iki, iki, iki, sonrasında şey, boş bıraktığınız D, Gönül.
+
+424
+00:57:12,244 --> 00:57:14,483
+Bir, iki.
+
+425
+00:57:16,596 --> 00:57:32,476
+Bir iki, iki, iki, yani ikiye giden şey, D-göneli seçtim. Ve sonunda uç olacak, olacağı için zaten çıkacak yani. Ben öyle. Mesela, Freud kelimesi daha uzun olsaydı bir üstteki D-göneli seçip ilerlerdim.
+
+426
+00:57:33,576 --> 00:57:40,676
+Anladım. Siz benim söylemek istediğimi anladınız mı peki? En son toparladığım halini?
+
+427
+00:57:42,115 --> 00:57:43,756
+Evet, hocam anladık.
+
+428
+00:57:44,275 --> 00:58:09,076
+Tamam, anladıysanız yine ben söylediğim gibi bu şeyi hocalara soracağım, en son doğru halini paylaşacağım ama bu son söylediğimin doğru olduğunu düşünüyorum. Onayladıktan sonra da doğru halini slide'da da paylaşırım, tamam mı arkadaşlar? Kusura bakmayın, böyle bir karışıklık oldu. Onu aynı seçmediğimiz için fark edememişiz. Tamam mı?
+
+429
+00:58:10,164 --> 00:58:11,744
+Hocam, ben de bir şey sorabilir miyim?
+
+430
+00:58:12,184 --> 00:58:12,824
+Hadi sor.
+
+431
+00:58:14,224 --> 00:58:20,624
+Mesela biz şimdi ana diagonal dedik, onun üstündekini aslında minimum mu kabul ettik devam etmek için?
+
+432
+00:58:21,344 --> 00:58:25,264
+Ben de mesela ilk söyleyen bir arkadaş vardı, tüm satırı kontrol ettim.
+
+433
+00:58:26,024 --> 00:58:29,404
+Tüm satır eğer ikiden büyükse o zaman devam etmeme gerek yok dedim.
+
+434
+00:58:31,644 --> 00:58:34,164
+Ama herhalde daha efişent bir şey mi arıyoruz?
+
+435
+00:58:35,027 --> 00:58:58,407
+Yani baktığımız zaman aslında o da aynı şeye geliyor. Çünkü biz burada ikiyi görüyoruz diyoruz ya diagonalde. İkiyi görüyoruz, o yüzden devam etmemiz gerekiyor dedik. Sonra bu satırı da hesaplamamız gerekiyor. Bu satırı da hesapladığımız zaman zaten burası da üç oluyor, burası dört oluyor. Öyle olunca bu satırda aslında durmamız gerekiyor diyoruz.
+
+436
+00:58:58,815 --> 00:59:02,576
+Kontrol ettiğimizde de burada ikiden küçük bir değer göremiyoruz.
+
+437
+00:59:04,536 --> 00:59:05,355
+Değil mi?
+
+438
+00:59:05,956 --> 00:59:09,996
+Yani aynı kapıya çıkıyor olabilir ama her durumda böyle mi olur?
+
+439
+00:59:11,675 --> 00:59:16,135
+Onu düşünmek lazım ama aynı kapıya geliyor olabilir diye düşünüyorum.
+
+440
+00:59:17,295 --> 00:59:17,536
+Tamam.
+
+441
+00:59:18,615 --> 00:59:19,635
+Tamam mı?
+
+442
+00:59:20,436 --> 00:59:21,596
+Başka sorunuz var mı?
+
+443
+00:59:22,579 --> 00:59:26,360
+Hocam, birinci soruya dönebilir misiniz birazcık?
+
+444
+00:59:26,960 --> 00:59:27,500
+Dönelim.
+
+445
+00:59:47,987 --> 00:59:48,867
+Nerede durayım?
+
+446
+00:59:49,668 --> 00:59:51,427
+Evet, şeyde durabilirsiniz.
+
+447
+00:59:52,027 --> 00:59:54,987
+Hocam, şey, ben öyle anlamamıştım soruyu.
+
+448
+00:59:55,788 --> 00:59:56,768
+Ben şöyle anladım.
+
+449
+00:59:57,067 --> 01:00:06,607
+İşte ikisi mesela A ve B'nin kazanma değerlerine ilerleyerek ikisi hesabladığım için sonuç sıfır olacak.
+
+450
+01:00:06,827 --> 01:00:09,327
+Yani zaten en son şeyde sıfır oluyor.
+
+451
+01:00:09,327 --> 01:00:13,668
+Çünkü ikisi dört maç kazanmış ve sıfır çıktı.
+
+452
+01:00:15,219 --> 01:00:17,179
+Nasıl anlayamadım?
+
+453
+01:00:17,499 --> 01:00:23,099
+Yani ben şeyi A takımına odaklamadım onun kazanma oranına.
+
+454
+01:00:23,419 --> 01:00:27,819
+Ben hem A'nın ve hem B'nin kazanmasına odakladım.
+
+455
+01:00:27,939 --> 01:00:30,399
+Onun için sonuç bende farklı oluyor.
+
+456
+01:00:30,819 --> 01:00:37,099
+Ama şey diye ifade etmiş hocada soruda, A takımının seriyi kazanması için.
+
+457
+01:00:37,940 --> 01:00:53,420
+Yani... Tamam da ama mesela ben şöyle düşündüm. Mesela A kazandıysa ve B şey kazanmadıysa bir değer çıkıyor. B kazandıysa bir değer çıkıyor. Böyle yani.
+
+458
+01:00:53,420 --> 01:01:02,240
+E tamam bizde de öyle. Mesela burada dörde dört olduğu zaman ay dörde dört diyorum.
+
+459
+01:01:02,900 --> 01:01:05,900
+P-i-j değerleri şimdi bir saniye.
+
+460
+01:01:10,708 --> 01:01:26,228
+İ'nin 0 ve J'nin 1 maçı kaldığı zaman, şuradan bahsedelim, şimdi J 4 olduğu zaman, yani ikisinin de 4 maç kazanmaya ihtiyacı olduğu zaman A takımının kazanma ihtimali neydi?
+
+461
+01:01:29,844 --> 01:01:30,403
+29.
+
+462
+01:01:31,523 --> 01:01:38,604
+Yani sonuç olarak 29 çıkıyordu. Yok, onu söylemek istemedim. Nasıl ifade edebilirim diye düşünüyorum.
+
+463
+01:01:43,668 --> 01:01:45,108
+Biraz daha düşüneyim.
+
+464
+01:01:47,927 --> 01:01:54,728
+Şimdi A takımının bir maç kazanması için gereken olasılığı neydi? 0.4.
+
+465
+01:01:56,467 --> 01:02:02,688
+İki maçı da kazanma olasılığı burada hesaplıyor bak. 0.16. Birbiriyle çarparak.
+
+466
+01:02:03,123 --> 01:02:08,163
+Sonra bir kere daha 0.4 ile çarpıyor, burayı hesaplıyor. Bir kere daha çarpıyor, burayı hesaplıyor.
+
+467
+01:02:08,763 --> 01:02:13,703
+Sonra artık ikinci ihtimalleri hesaplarken buradaki değerlerden de faydalanıyor.
+
+468
+01:02:14,983 --> 01:02:16,083
+Sen nasıl yaptın?
+
+469
+01:02:16,532 --> 01:02:20,291
+Ben de öyle yaptım ama şey yani
+
+470
+01:02:20,291 --> 01:02:22,271
+Kaç buldun? Aynı bulmadın mı sonucu?
+
+471
+01:02:22,271 --> 01:02:30,351
+Şey, ben sonuç şöyle düşündüm. Mesela siz mesela kaç kaldı diye hesaplıyor, hesapladınız.
+
+472
+01:02:30,351 --> 01:02:31,911
+Ben tam tersi gibi düşündüm.
+
+473
+01:02:31,931 --> 01:02:38,492
+Ben tam tersini düşündüm. İşte bir maç kazandı, ilerledi. İkinci maç kazandı, ilerledi.
+
+474
+01:02:38,552 --> 01:02:40,291
+En son sıfır oluyor.
+
+475
+01:02:41,112 --> 01:02:44,512
+Anladım. BBC değerleri için söylüyorsun sen.
+
+476
+01:02:44,532 --> 01:02:44,891
+Evet.
+
+477
+01:02:45,532 --> 01:02:47,592
+Tamam, yine aynı sonucu buldun ama.
+
+478
+01:02:48,552 --> 01:02:52,731
+Yok, ben sıfırladım en son. Çünkü ikisi dört, dört kazandı.
+
+479
+01:02:52,731 --> 01:02:57,972
+Sıfırladım derken i ve j değerlerin senin sıfır sıfır olduğu zaman sen sonucu buluyorsun sanırım.
+
+480
+01:03:00,211 --> 01:03:01,092
+Yani, evet.
+
+481
+01:03:01,771 --> 01:03:04,452
+Evet, sonucunu da sıfır nokta yirmi dokuz mu buldun?
+
+482
+01:03:05,672 --> 01:03:06,211
+Evet.
+
+483
+01:03:06,675 --> 01:03:22,956
+Tamam, aynı sonucu buldun. Olasılık olarak yaptığın hesaplama aynı ama sen bizim hocanın soruda belirttiği gibi yapmamışsın. Çünkü burada şey diyor, iyi değerinin kaç maç kazanması gerektiğini ifade ettiğini söylüyor. Orayı atlamışsın.
+
+484
+01:03:24,276 --> 01:03:24,516
+Tamam.
+
+485
+01:03:25,596 --> 01:03:33,316
+Ama yine sonucu aynı bulduysan, dediğim gibi şimdi kafamdan bir şey söylemeyeyim ama değerlendirilir. Tamam mı?
+
+486
+01:03:33,876 --> 01:03:35,076
+Tamam, teşekkürler.
+
+487
+01:03:35,176 --> 01:03:40,596
+Ben sana sıfır buldum deyince, al al diyorum, olasılığı mı sıfır buldum nasıl oluyor diye.
+
+488
+01:03:42,936 --> 01:03:46,076
+O yüzden bir anlamlandıramadım ilk sorduğunda.
+
+489
+01:03:48,436 --> 01:03:49,456
+Başka sorunuz var mı?
+
+490
+01:03:49,456 --> 01:03:50,976
+Tamam hocam, teşekkürler.
+
+491
+01:03:51,476 --> 01:03:52,176
+Rica ederim.
+
+492
+01:03:59,827 --> 01:04:04,187
+Tamam o zaman başka sorunuz yoksa bitirelim.
+
+493
+01:04:11,380 --> 01:04:15,420
+Ben teşekkür ederim. Kusura bakmayın, o sondaki şeyi fark edemedim.
+
+494
+01:04:18,520 --> 01:04:22,640
+Bakacağım, paylaşım yaparken buraya not düşerim, tamam mı arkadaşlar?
+
+495
+01:04:23,020 --> 01:04:23,980
+Hocam bir şey sorabilir miyim?
+
+496
+01:04:24,540 --> 01:04:25,120
+Hadi sor.
+
+497
+01:04:25,840 --> 01:04:28,440
+Birinci ödevleri ne zaman okuyacaksınız acaba, belli mi?
+
+498
+01:04:30,820 --> 01:04:32,900
+Bilemiyorum şu an, bir şey söyleyemeyeceğim.
+
+499
+01:04:33,300 --> 01:04:34,200
+Tamam, teşekkür ederim.
+
+500
+01:04:36,340 --> 01:04:37,960
+Rica ederim, hadi görüşürüz o zaman.

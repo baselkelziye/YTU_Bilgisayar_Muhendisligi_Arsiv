@@ -1,0 +1,2587 @@
+1
+00:00:38,771 --> 00:00:43,771
+Merhaba arkadaşlar. Umarım hepiniz iyisinizdir.
+
+2
+00:00:45,771 --> 00:00:50,771
+Ben paylaşayım.
+
+3
+00:00:53,204 --> 00:01:05,204
+Şimdi önce birazcık dinamik programlama ve geçen hafta şeyden bahsederken, non-discaming substance-tand bahsederken, laboratuvar olacağı için süremiz dolmuştu.
+
+4
+00:01:05,204 --> 00:01:11,204
+Tamamlayamamıştım geriye doğru ortak şeyin.
+
+5
+00:01:11,507 --> 00:01:18,227
+alt stringi nasıl çıkartılacağı kısmını tamamlayamamıştım. Önce oradan devam edeceğim, sonra bugünün dersine başlayacağım.
+
+6
+00:01:18,227 --> 00:01:28,067
+Önce unutmadan şeyle ilgili bilgi vereyim. Aslında önümüzdeki hafta ikinci vize haftası olarak gözüküyor.
+
+7
+00:01:28,067 --> 00:01:36,947
+Fakat göründen bir açıklama yapıldı. Yani isteyenler bize yapabilirler, istemeyenler...
+
+8
+00:01:37,492 --> 00:01:46,792
+yapmazlar ve yani ikinci vize haftası tatil şeklinde olmayacak o yüzden. Normalde vize haftasında ders yapılmıyor ya.
+
+9
+00:01:46,792 --> 00:01:53,991
+Normalde işte sınav okulanlar ders saatinde sınav yapabilirler şeklinde bir açıklama geldi.
+
+10
+00:01:53,991 --> 00:02:02,991
+Şimdi biz bunu değerlendirdik amaçla görüştük. Bu online ortamda vize sınavlarının bir...
+
+11
+00:02:03,444 --> 00:02:26,444
+öğrenciye çok fazla katkısı olmadı ve bir şeyde değerlendirmede de çok şey olmadı, yani objektif değerlendirme yapmanın çok mümkün olmadığı görüşündeyiz. O yüzden ödev notlarını, ödev ve proje notlarınızı bu sefer ikinci vize olarak değerlendirmeye.
+
+12
+00:02:26,548 --> 00:02:33,268
+daha uygun olacağını düşündük. Bir de zaten pek çok öğrencilerinde bu konuda bir istek vardı haklı olarak.
+
+13
+00:02:34,768 --> 00:02:39,027
+Önceki yıllarda biliyorsunuz algoritma analizi dersinde biz şey yapıyorduk,
+
+14
+00:02:39,108 --> 00:02:43,707
+V yapıları algoritma analizi, hatta ben görüntü işlemede de öyle yapıyordum verdiğim derslerde.
+
+15
+00:02:44,448 --> 00:02:50,347
+İki vizenin dışında ödevleri de üçüncü vize olarak hep sayıyorduk.
+
+16
+00:02:50,347 --> 00:02:54,407
+Yani işte yüzde altmış vize ise yüzde kırk.
+
+17
+00:02:54,548 --> 00:03:03,347
+Finansi, ödevler ve projede bayağı %20 vize olarak, 3. vize gibi değerlendiriyordu.
+
+18
+00:03:03,467 --> 00:03:06,788
+Yani ortalama yetkisi %20 şeklinde oluyordu.
+
+19
+00:03:07,987 --> 00:03:13,127
+Bu sene değişiklik olarak sadece görüntüleri zaten öyle yapma kararı aldım ben.
+
+20
+00:03:13,127 --> 00:03:20,907
+İkinci vize yerine ödev notlarını ve projeyi vize olarak değerlendirme kararı aldık.
+
+21
+00:03:21,395 --> 00:03:28,555
+Bunu sizinle paylaşmak istedim. Yani ikinci bize sınavı yapmayacağız. Ödevlerimizden değerlendirmeleri yapacağız.
+
+22
+00:03:28,555 --> 00:03:37,355
+Peki, sormak istediğiniz bununla ilgili bir şey var mı? Yoksa devam et, derse devam edeceğim.
+
+23
+00:03:37,355 --> 00:03:42,475
+Aklınıza takılan sormak istediğiniz senhan bir şey var mı?
+
+24
+00:03:45,524 --> 00:03:48,883
+Hocam, ben bir şey sorabilirim ödevlerle ilgili.
+
+25
+00:03:48,883 --> 00:03:57,123
+Otelde kaç tane ödev vermeyi planlıyorsunuz ve ağırlıklarını nasıl vermeyi düşünüyorsunuz ödevler için?
+
+26
+00:03:57,123 --> 00:03:57,923
+Eşit mi olacak?
+
+27
+00:03:57,923 --> 00:04:04,163
+Şimdi şeyle ilgili zaten şu anda bu üçüncü ödevimiz değil mi? Yanlış hatırlamıyorum. Üçteydik.
+
+28
+00:04:07,060 --> 00:04:09,280
+Şu anda verdiğimiz üçüncü ödevdi değil mi?
+
+29
+00:04:09,840 --> 00:04:10,240
+Evet hocam.
+
+30
+00:04:10,240 --> 00:04:10,540
+Evet.
+
+31
+00:04:10,740 --> 00:04:11,700
+Üç, tamam. Üç.
+
+32
+00:04:12,219 --> 00:04:18,500
+Şey diye düşünmüştük biz normalde, bir proje daha, yani üç ödev bir proje diye düşünmüştük.
+
+33
+00:04:18,580 --> 00:04:27,399
+Bu işte vizesini o isteyen yapar, isteyen yapmaz şeyinden sonra şey diye düşündük, yapabilirsek bir ödev daha olsun.
+
+34
+00:04:27,560 --> 00:04:29,540
+Yani dört ödev bir proje şeklinde olsun.
+
+35
+00:04:29,540 --> 00:04:35,060
+Yani çünkü zaten farkındaysanız hani ilk iki ödev şey değildir, yani kısa ödev.
+
+36
+00:04:35,060 --> 00:04:51,600
+Çabuk tutabilecek ödeylerdi. Fakat projeyi mutlaka şeyden önce vermek şeklinde, o konuda endişe etmeyin. Eskiden final sınavlarında, onu da aslında bir gecikmeden ötürü falan değil, bir tarz olarak öyle yapıyorduk proje.
+
+37
+00:04:52,596 --> 00:05:01,915
+sınav döneminde kontrol ediyoruz. Bütün dersleri verdik, artık öğrenci bir de proje yapsın gibi, finalin bir parçası gibi değerlendirdik ama onu öyle yapmayacağız.
+
+38
+00:05:02,016 --> 00:05:10,415
+Bu sene yine uzaktan eğitimin sizin açınızdan da zor olduğunu düşündüğümüz için finallerden önce ödevleri teslim edeceğimiz şekilde yapacağız.
+
+39
+00:05:11,375 --> 00:05:16,076
+Belki onu konuştuk ama nasıl yetiştiririz bakmamız lazım.
+
+40
+00:05:16,076 --> 00:05:20,596
+Yani hem size şey olmasın, sıkışık yaratma.
+
+41
+00:05:20,596 --> 00:05:44,256
+Sadece fayda sağlasın. O şekilde belki, yani çok uzun cevap verdim [öğrenci] ama bir ödev daha yani kısa ama böyle uzun olmayacak. Sadece işte öğrendiklerinizi pekiştirmenizi sağlayacak bir ödev daha verebiliriz. Normalde projeleri birazcık daha yani eşit görmüyorduk, birazcık daha ağırlıklı yapıyorduk.
+
+42
+00:05:44,851 --> 00:05:59,791
+Önümüzdeki hafta oranları da veririz. Şimdi ben tek başıma, yani aklımda bir şey var ama Amaçbey'le de görüşüp ortak karar vermemiz gerekir. Önümüzdeki hafta sizinle ağırlıklarını da paylaşırız. Olur mu?
+
+43
+00:06:01,211 --> 00:06:02,391
+Tamam hocam, teşekkür ederim.
+
+44
+00:06:02,951 --> 00:06:04,111
+[öğrenci] sınav olacak mı?
+
+45
+00:06:04,812 --> 00:06:05,351
+Duyamadım.
+
+46
+00:06:06,072 --> 00:06:07,132
+[öğrenci] sınav olacak mı?
+
+47
+00:06:07,572 --> 00:06:27,572
+Yani şu anda şimdi şöyle de bir sıkıntı var. Biliyorsunuz yani ileri çok görülemediği için bize de aslında sen [öğrenci] konuştuk az önce daha iyi biliyorsundur bunları açıklamalar geç geliyor şeylere. Yani YÖK'ten vesaire.
+
+48
+00:06:28,596 --> 00:06:51,435
+Açıklama gelince biz de yapıyoruz. Bence finaller de uzaktan olacak ve olacak. Yani ben olmayacak diye bir şey düşünmüyorum ama başka bir şey gelirse, yani mesela şeyi biliyorsun, o yökten geldi geçen sene, bize yapılmayacak, sadece ödevlere bakılacak. Ne gelirse o uygulanıyor. Bence öyle bir sıkıntı olmayacak, finaller yapılacak diye düşünüyorum ben.
+
+49
+00:06:51,759 --> 00:06:54,800
+Peki, final olursa defter açmak, açmak, serbest mi?
+
+50
+00:06:55,040 --> 00:07:00,800
+Yani şu anda tartışacağımız bir şey değil. Çünkü hakikaten biz de bilmiyoruz nasıl olacağını.
+
+51
+00:07:01,160 --> 00:07:08,319
+Final sınavlarından önce herhalde karar, yani bir de üniversite senatosu da yine dediğim gibi, aslında bunları sen çok iyi biliyorsun Egyen.
+
+52
+00:07:09,019 --> 00:07:12,759
+Üniversite senatosu karar açıklıyor aslında neyin nasıl yapılacağıyla ilgili.
+
+53
+00:07:12,759 --> 00:07:19,759
+O dönemde gelen ortak kararlara uygun olarak biz de bir açıklama yaparız nasıl yapılacağı.
+
+54
+00:07:19,759 --> 00:07:23,840
+Bir de şey sorayım, olursa defter açmak serbest.
+
+55
+00:07:24,372 --> 00:07:49,152
+Ya nerede? Bak ben sana ne diyorum, sen buna ne diyorsun? Önce bir ne olduğunu bilelim, ondan sonra ona göre karar veririz. Ama yani bugünden çalışmaya başlayacaksan bence çalış yani. Maksat öğrenmekse sınavdan önce. Bilmiyorum bakalım ne olacak? Belki de şey diyecekler, hiç sanmıyorum ama bir ara biliyorsun şey konuşuluyordu, finallerin üniversitelerde yapılması falan konuşuluyordu.
+
+56
+00:07:49,555 --> 00:07:56,555
+Bakalım ne çıkacak? Yani biz de kararları hep şey yapıyoruz, merakla izliyoruz.
+
+57
+00:07:56,555 --> 00:08:06,555
+Bana sorarsan yerinde yapılır sınav ama final yapılır diye düşünüyorum ben. Yani onunla ilgili bir sıkıntı olacağını hiç zannetmiyorum.
+
+58
+00:08:06,555 --> 00:08:08,555
+Peki var mı başka sorunuz?
+
+59
+00:08:08,660 --> 00:08:15,020
+Hocam, bir de ben bir tane soru soracaktım da, vizelere ne zaman cevaplarsınız hocam? Yani açıklarsınız sonuçları.
+
+60
+00:08:15,980 --> 00:08:19,680
+Yani en kısa zamanda diye ben de sana yuvarlak bir cevap vereyim.
+
+61
+00:08:21,108 --> 00:08:38,867
+Gerçekten şöyle söyleyeyim, geçen gün bunun sebebini de anladık bir grup hoca aramızda tartışırken. Normalde bir öğrenciler, hani biz üniversitedeyken şey yapıyorlardı, işte ne bileyim kapının önünden geçerken uğruyor, bir sorusunu soruyor veya randevu alıyor, geliyor, şey yapıyor.
+
+62
+00:08:39,412 --> 00:08:50,412
+Ama okulda değilse zaten gelip gitme şansı yok. Şimdi inanın biz akşam 9'ları 10'lara kadar sürekli öğrencilerle, hocalarla bilmem ne toplantı halindeyiz.
+
+63
+00:08:50,412 --> 00:08:59,412
+Gerçekten böyle ben kendi adım en azından, hiçbir şey yapmıyor, bir saat kalmıyor ama planım nasılsa hafta sonu sokağa çıkma yasalar da var yani oturuyoruz.
+
+64
+00:08:59,412 --> 00:09:07,412
+Pazar gününe her şeyi bitirmek istiyorum. Bir de şeyi okumak çok zor. Yani onu da söyleyeyim, algoritma analizinde o gönder...
+
+65
+00:09:07,412 --> 00:09:16,712
+Ödeğilenlere okumak da çok zor oluyor. Normalde biz kağıdınıza not alırdık, orada oldu, burada bu, burada bitti. Çünkü algoritmayı çok iyi okuman lazım ki hata yapma.
+
+66
+00:09:16,712 --> 00:09:25,912
+Ondan sonra gerçekten o kağıtları okumak da, yani kağıt değil aslında, ekranda okumak da bayağı sıkıntılı. Hepsinin çıkışını alacak halimiz de o.
+
+67
+00:09:25,912 --> 00:09:35,412
+En kısa zamanda açıklayacağız. Ödevleri zaten arkadaşlardan da rica ettik bir an önce açıklamaları için. Sizi mağdur etmemeye çalışıyoruz elimizden gel.
+
+68
+00:09:35,412 --> 00:09:37,792
+Başka var mı sormak istediğiniz bir şey?
+
+69
+00:09:40,132 --> 00:09:41,732
+O zaman devam ediyorum.
+
+70
+00:09:43,112 --> 00:09:50,132
+Şimdi, dinamik programlamada bizim son örneğimiz şey, Dynamik Scan'ın Subsequence'da ve şeyden bahsetmiştim,
+
+71
+00:09:50,132 --> 00:10:00,000
+yani bu şeylerde pek çok kelime işlemcisi uygulamalarında, doğal bil işleme uygulamalarında hem editli...
+
+72
+00:10:00,000 --> 00:10:16,259
+Distance hem de Longus Common Subsequence uygulanan bir şey, yöntem. Özellikle bu bioinformatikte, bu DNA dizilimlerindeki ortak parçaların bulunmasında vesaire kullanılan bir yöntem.
+
+73
+00:10:16,259 --> 00:10:26,259
+Burada Subsequence dediğimiz şey, kısacık özetleyeceğim 5 dakikada. Bir örneğin burada bir Yakamoz gibi kemiği varken, bunun alt...
+
+74
+00:10:27,220 --> 00:10:37,220
+dizilimleri, işte yap dediğiniz, yaka dediğiniz, yama dediğiniz, işte kama dediğiniz, yani illa ye ile başlaması gerekmiyor. Ondan sonra...
+
+75
+00:10:37,875 --> 00:10:59,875
+İşte ne bileyim ama dediğiniz zaman bunlar alt dizilimler. Bu da ana kural. Seçtiğiniz harflerin sırası i1, i2, i3 ile gösterirsek bir sonraki seçtiğiniz harf sıralama olarak bir önceki seçtiğiniz harften ileride olmalı. Yani ne diyeyim...
+
+76
+00:11:02,515 --> 00:11:12,895
+Yorgan diyeyim mesela. Yani burada şey diyebilirsiniz mesela ne bileyim yoga diyebilirsiniz ama
+
+77
+00:11:15,923 --> 00:11:42,683
+R diyemezsiniz mesela, çünkü R geriye doğru olduğu için. R diyemezsiniz mesela. Bir kere Subsequence bu. Common Subsequence dediğimiz şey ise, birden fazla kelimeniz varken, burada iki kelime için bakıyoruz biz, kelimecikleri için değerlendirilir çünkü. İki kelime arasındaki ortak olan alt dizilimlerin bulunması.
+
+78
+00:11:43,923 --> 00:11:53,063
+bir en karakterli bir kelimemiz gibi, en karakterli bir kelimemiz varken, bu iki kelimenin ortak sequence dediğimiz şey,
+
+79
+00:11:53,884 --> 00:12:03,063
+bunlar da ortak olarak artarak giden alt dizilimlerin bulunması. Longus da tabii ki en uzun alt dizilimi bulunması.
+
+80
+00:12:03,203 --> 00:12:09,624
+Çünkü mesela bu dediğimiz gibi bioinformatik vesaire uygulamalarda şeyler bulunmaya çalışıyor.
+
+81
+00:12:11,731 --> 00:12:39,292
+kimlerde mesela hangi durumlardaki DNA dizilimlerinin daha çok benzer olduğu kurulmaya çalışıyor? Şimdi burada da bir benzerlik ölçülmesi var. O zaman benzer dediğimiz zaman ne olması lazım? En çok benzeyen alt dizilimi, ortak alt dizilimi en uzun olandır. Dolayısıyla donbus common subsecones dediğimizde iki farklı şey arasında, veri arasında
+
+82
+00:12:39,731 --> 00:12:41,227
+Evet.
+
+83
+00:12:41,268 --> 00:12:44,548
+Ortak olan en uzun dizilimin bulunması.
+
+84
+00:12:44,548 --> 00:12:49,708
+Şimdi biz burada şey demiştik, üç tane durum olur demiştik geçen hafta.
+
+85
+00:12:49,968 --> 00:12:58,148
+İşte birinci durumda iki karşılaştığımız iki değişkenliğinin değeri birbirine eşit olabilir.
+
+86
+00:12:58,568 --> 00:13:01,228
+İkincisinde de birbirinden farklı olabilir demiştik.
+
+87
+00:13:01,688 --> 00:13:04,968
+Hızlı geçiyorum çünkü geçen dersinleri uzun uzun yapmıştık aslında.
+
+88
+00:13:05,648 --> 00:13:09,248
+Eğer şeyse, x'i eşittir y'yeceği ise yani
+
+89
+00:13:09,268 --> 00:13:19,748
+Yani herhangi bir anda yinci karakterle jinci karakteri karşılaştırdığınızda bunların değeri eşitse bir tane daha ortak karakter buldunuz demektir.
+
+90
+00:13:20,108 --> 00:13:31,188
+O yüzden bir önceki durum, bir önceki durumda şu anda ben x'i ve y'e bakıyorsam y-1 ve j-1. karakterler için olan elde ettiğim sonuçtur.
+
+91
+00:13:31,188 --> 00:13:34,688
+Buna bir eklerim, yani bir tane daha ortak buldum anlamında.
+
+92
+00:13:35,188 --> 00:13:37,188
+Eğer x'i y'e eşit değilse...
+
+93
+00:13:37,268 --> 00:13:46,268
+İki ise, bunun anlamı, bu alt dizilimde ya X'i karakteri olmayacak demektir ya da YG karakteri olmayacak. Belki ikisi de olmayacak demektir.
+
+94
+00:13:46,268 --> 00:14:00,268
+Ben şimdi Longus, yani en uzun ortak dizilimin peşinde olduğuma göre, o zaman bu eşitlik bozulmasının sebebinin X'i'den mi YG'den mi geldiğinde bilmediğime göre,
+
+95
+00:14:01,748 --> 00:14:11,128
+Ya X, Y'den gelen bir önceki durumu, yani X, Y, J eksi 1'e, pardon, bu Y özür dilerim arkadaşlar.
+
+96
+00:14:12,668 --> 00:14:20,128
+Pardon, şu Y, J, yani X, Y ve...
+
+97
+00:14:20,755 --> 00:14:38,235
+Y, J'ye baktığımıza göre şeyi almış oluyorsunuz. Nedir? Y'nin stringde olduğunu kabul ediyorsunuz ve X'yi şeyde değil diyorsunuz. Pardon şunu şöyle yazarsam daha iyi olacak herhalde.
+
+98
+00:14:43,764 --> 00:14:45,083
+Şunu dediğimiz zaman
+
+99
+00:14:52,851 --> 00:15:15,351
+Y, J yok diyorsunuz. Bunu dediğiniz zaman da X, Y yok diyorsunuz. Yani belirlediğiniz ortak alt dizilinde X'in veya Y, J'nin olmadığını kabul ediyorsunuz. Tabii maksimum alacaksınız ki en uzununu bulmak için. Şimdi başladığınız zaman da bunu yapmaya şöyle bir şekilde başlayacağız.
+
+100
+00:15:15,443 --> 00:15:35,743
+Şimdi bir kere eğer şeyse ilk şartlar i eşittir 0 ve j eşittir 0 için 0. Neden? Çünkü kelimelerden birisi yoksa yani şurada gördüğünüz bbcb'nin karşısı boş ise o zaman longus camus afsetme 0 olur.
+
+101
+00:15:43,443 --> 00:15:50,251
+karşısı boş yani ye yok karşısında. Bunun anlamı nedir aslında bizim için?
+
+102
+00:15:50,451 --> 00:15:52,891
+Dediğimiz şeyle biz aslında ne yapmaya çalışıyoruz?
+
+103
+00:15:53,692 --> 00:15:56,572
+İlk case, initialization yapmaya çalışıyoruz.
+
+104
+00:15:56,991 --> 00:16:02,471
+Çünkü üzerine ekleye gideceksek bir ilk değer olmalı ki onun üzerine ekleyelim.
+
+105
+00:16:02,572 --> 00:16:04,032
+Burada ilk değerlerimiz sıfır.
+
+106
+00:16:04,172 --> 00:16:08,131
+Yani karşısı boşsa ortak bir alt dizim yoktur.
+
+107
+00:16:08,532 --> 00:16:09,591
+Sonra devam ediyoruz.
+
+108
+00:16:09,591 --> 00:16:18,451
+Şimdi B ile B dediğimiz zaman birbirlerine eşit olduklarına göre şuradaki şeyi kullanacağız, kuralı kullanacağız.
+
+109
+00:16:18,451 --> 00:16:45,731
+kullanacağız ve ne diyeceğiz? Lc-1, Lcsi-1, J-1'in durumu sıfırtı. Buna bir eklersek bir diyeceğiz. Bb eşit olmadığına göre o zaman ya yukarıdan ya soldan gireceğiz. Bu da sol daha karlı olduğu için soldan. Bc birbirine eşit olmadığı için aynı şekilde soldan geldik. Şimdi bb eşit olduğu için yukarıdan gelmemiz gerekiyor.
+
+110
+00:16:46,451 --> 00:17:06,771
+Şimdi önce bir dolduracağımızda, bunu hatırlatmak için yapıyorum. AB yukarıdan bir, AD soldan da gelebilir, yukarıdan da gelebilir bir, AC soldan da gelebilir, yukarıdan da gelebilir. Aynı şekilde bu şekilde gittik bir bir. Şimdi CB'ye bakıyoruz.
+
+111
+00:17:08,019 --> 00:17:20,180
+C, B, 1. Şimdi bu şu demek aslında, B, A, C ile şu anda yaptığımız şey B'yi karşılaştırıyoruz. Yani X'de C harbine gelmişiz, Y'de de B'deyiz şu anda.
+
+112
+00:17:20,639 --> 00:17:27,240
+B, A, C ile B'yi karşılaştırdığımızda sizin de gördüğünüz gibi ortak bir karakter vardı. Yani bu durum onu gösteriyor.
+
+113
+00:17:28,692 --> 00:17:56,251
+BAC ile BD'yi karşılaştırıyoruz. Orada da hala ortak bir tane var. Şimdi BAC ile BDC'yi karşılaştırdığınızda bakın ne oldu? Ortak iki tane var. Gerçekten de BAC ile BDC'yi var. Anlatabildim mi? Yani yaptığımız şey şu. BAC ile BDC'ye B'yi karşılaştırıyoruz. O da iki tane. Neden? Çünkü işte B ile C ortak olduğu için.
+
+114
+00:17:56,980 --> 00:18:18,319
+Şimdi aşağı geçtik, B, A, C, D ile B'yi karşılaştırıyoruz şimdi önce. Bir, bir tek ortak bir var. B, A, C, D ile B, D'yi karşılaştırıyoruz. İki, çünkü gerçekten değil mi bu durumda B ve D ortak ikisinde de B, D, C'yi karşılaştırıyoruz. Hala iki.
+
+115
+00:18:19,220 --> 00:18:35,460
+BACD ile BDCB'yi karşılaştırıyoruz. Hala iki. Bakın, gözle de görüyorsunuz. İki tane ortak karakter var burada. Birisi BD olabilir. Yani şuradan iki şey çıkıyor aslında. Birisi BD olabilir ortak olan.
+
+116
+00:18:35,988 --> 00:18:44,587
+İkincisi de BC olabilir ama çünkü zaten siz iki olasılık veriyorsunuz ve soldan da gelebilirsin, yukarıdan da gelebilirsin diyorsunuz.
+
+117
+00:18:44,587 --> 00:18:53,288
+Bu iki duruma göre de en fazla iki uzunluklu durum çıkıyor. Yani ya BD ya BC dediğimizde iki uzunluklu durum çıkıyor.
+
+118
+00:18:53,807 --> 00:18:55,867
+Şimdi BB'yi karşılaştırdık. Bir.
+
+119
+00:18:56,788 --> 00:19:21,268
+BD'yi karşılaştırdık, 2, BC, 2, BB, şimdi bakın 3 oldu. Şu anda şeyi karşılaştırmışsınız, BACDB ile son adında, BDCB'yi karşılaştırmışsınız, 3 çıktı. Gerçekten de buradan baktığınızda, bakın BCB olabilir, uzunluğu 3.
+
+120
+00:19:23,508 --> 00:19:28,788
+B, D, B olabilir.
+
+121
+00:19:32,660 --> 00:19:59,420
+Uzunluğu 3, iki tane uzunluğu 3 durum var. Birden fazla olabilmesinin sebebi sizin de gördüğünüz gibi mesela şöyle bir durumda diyorsunuz ki soldan da gelmiş olabilir, yukarıdan da gelmiş olabilir. Yani bu ne demek aslında? Geriye doğru ararken şey değişecek, yani ister ne bileyim şuradan şey de gidebilirim, şuradan dönüklenerken buradan da gidebilirim, buradan da gidebilirim. Nereden geldiğime bağlı olarak.
+
+122
+00:20:00,000 --> 00:20:07,820
+ortak, en uzun, ortak, alt dizinin mi değişecek? Şimdi bunu hatırladık, buraya kadar bir sorunuz var mı?
+
+123
+00:20:10,340 --> 00:20:13,980
+Yoksa şuraya çözeceğim çünkü. Yok herhalde.
+
+124
+00:20:13,980 --> 00:20:15,500
+Hocam, bir şey soracaktım.
+
+125
+00:20:16,080 --> 00:20:18,140
+Ay, sildiklerimle ilgili mi?
+
+126
+00:20:18,140 --> 00:20:22,900
+Yok yok, onunla alakalıydı. Bu başlangıç durumlarında sıfırlıyoruz ya.
+
+127
+00:20:24,223 --> 00:20:36,303
+Bazı şeylerde, örneklerde baktığımda ben 0-1-2-3-4, 0-1-2-3-4 diye başlatmışlar. Daha sonraki döngülerde işte birden başlıyor. O şekilde de fikri alıyor.
+
+128
+00:20:36,303 --> 00:20:44,463
+Hayır, şimdi long-stimus-up-seconds değildir o. Başka bir şeydir. Bu tamamen, bak şimdi etiklisiniz de bizim, bak.
+
+129
+00:20:44,980 --> 00:21:01,559
+Bak, bu edit distance'ımız bizim. Burada initial değerler 0, 1, 2, 3, 4 diye gidiyordu. 0, 1, 2, 3, 4, 5 diye gidiyordu. Neden? Çünkü bunun sebebi şu. Şimdi sen M'yi, pardon görmüyorsun. Şimdi görüyor musun şu okumu?
+
+130
+00:21:02,519 --> 00:21:03,480
+Görüyorum hocam, evet.
+
+131
+00:21:03,480 --> 00:21:11,899
+Tamam, şimdi bak M ile boşluğu karşılaştırıyorsun, tamam mı? M'nin karşısında kimse yoksa distance nedir?
+
+132
+00:21:12,596 --> 00:21:22,539
+Biridir, değil mi? Bir yani yok çünkü karşısı boş. İlk durum oluşturuyorsun ya, ilk durum ne demek? Kelimelerden birisi varken öbürü...
+
+133
+00:21:23,155 --> 00:21:31,335
+olmadığı durum veya kelimelerden bu arts varken medsinin olmadığı durum, yani ilk durum bilginin olmadığı durumu gösteriyor.
+
+134
+00:21:31,655 --> 00:21:38,915
+Şimdi edit distance'da bir arttıra arttıra gidiyorsun. Neden? Çünkü M'nin karşısı boşsa bir distance var demektir.
+
+135
+00:21:38,995 --> 00:21:42,635
+M karşısı boş, değil mi? Onu da bir arttıracaksın.
+
+136
+00:21:42,635 --> 00:21:43,195
+Evet.
+
+137
+00:21:43,435 --> 00:21:50,615
+A'ya geldiğinde M'a'nın, çünkü buraya kadar diyoruz ya biz hep, yani A'yı tek başına yerlendirmiyoruz aslında.
+
+138
+00:21:51,155 --> 00:21:59,035
+A bizim için. B A'nın karşısı boşsa, distans nedir? 1 artı 1, 2 demektir. Burada bunu arttıra arttıra yapıyorsun.
+
+139
+00:21:59,155 --> 00:22:04,735
+Arttırma sebebi ne? Anlatabildim mi? Ama burada... Tamam, tamam hocam anladım. Anladım. Ne anlıyorsun?
+
+140
+00:22:04,735 --> 00:22:13,295
+Sen şey istiyorsun, tam tersine, eşitseler, ortak bir tane daha buldun, bir arttırayım bulduğumu istiyorsun.
+
+141
+00:22:13,735 --> 00:22:19,155
+O yüzden şimdi bak, bu B A C B B'nin karşısı boşsa, ortak hiçbir şey olmadığı için bunlar hep sıfır.
+
+142
+00:22:19,155 --> 00:22:21,155
+10'dan oldu değil mi şimdi?
+
+143
+00:22:22,067 --> 00:22:27,247
+Tamam hocam oldu, kullanım amacım yani yazdığımız programa göre değişecek tabii.
+
+144
+00:22:27,467 --> 00:22:31,867
+Aynen öyle yani senin amacına bağlı olarak initial değerler değişir.
+
+145
+00:22:31,947 --> 00:22:39,847
+Hatta bazen initial değer olmayabilir yani o öyle bir sorudur ki şey yoktur yani initial değer yoktur.
+
+146
+00:22:40,048 --> 00:22:42,407
+Eklemiyorsundur çünkü üzerine ekleyerek gitmiyorsundur.
+
+147
+00:22:42,527 --> 00:22:45,687
+Mesela diyelim ki bir önceki durumu kullanıyorsundur sadece.
+
+148
+00:22:46,307 --> 00:22:49,347
+O zaman eklemezsin mesela o da olabilir yani.
+
+149
+00:22:50,067 --> 00:22:58,007
+sadece şeye dikkat etmeniz gerekiyor. Yani başlangıçta ne oluyor, ne istiyorumı dikkat etmeniz gerekiyor. Çok güzel bir soru bu arada, teşekkür ederim.
+
+150
+00:22:58,427 --> 00:23:11,607
+Şimdi gelelim geriye nasıl gideceğiz. Şimdi burada problem bu. Yani ben aslında şimdi bunu buldum. Peki, şeyi nasıl yapacağım? Nedir? Geriye doğru nasıl gideceğim?
+
+151
+00:23:11,607 --> 00:23:17,407
+Şimdi bir kere al, yani almak için ne olması gerekir?
+
+152
+00:23:18,067 --> 00:23:23,387
+Ne olunca ben harfleri kullanacağım, yani o harfleri alacağım.
+
+153
+00:23:26,900 --> 00:23:33,400
+Longus Comus, Hapsikums oluşturuyorsa, çok üzülürüm, ne olursa alman lazım.
+
+154
+00:23:37,875 --> 00:23:39,435
+Harfler aynı olursa değil mi?
+
+155
+00:23:39,736 --> 00:23:48,355
+Aynen öyle. İki harfi birine eşitse bunu almam lazım. Eğer x'i eşittir yj ise bunu almam lazım.
+
+156
+00:23:48,816 --> 00:23:57,056
+Yani şöyle yazalım. x'i eşittir yj ise o da nerede neresi şu şeyden geldiği durum.
+
+157
+00:23:58,276 --> 00:24:02,935
+Diagonalden geldiği durum. O zaman alacağım ben o harfleri.
+
+158
+00:24:02,935 --> 00:24:05,256
+Ama x'i farklıdır.
+
+159
+00:24:05,332 --> 00:24:21,332
+yg ise o harfini almayacağım. O da eksiğini yg'den farklı olduğu durum ne? Ya o zaman soldan devam etmişim ya da yukarı devam etmişim. Yolum da bu. Tamam mı? Olay da bu. Şimdi...
+
+160
+00:24:23,423 --> 00:24:28,823
+O zaman şimdi şeyi düşüneceğiz. Yolumuzu nasıl vuracağımızı düşüneceğiz.
+
+161
+00:24:29,123 --> 00:24:32,903
+Şimdi bakın, algoritmalarınızı şuraya tasarlayabilirsiniz. Şimdi şuradan başladım.
+
+162
+00:24:33,523 --> 00:24:41,543
+Burada bir sıkıntı yok. Eşit oldukları için B'yi aldım. X'de ve Y'de ikisinde de B var çünkü.
+
+163
+00:24:41,623 --> 00:24:44,803
+B'yi aldım ve şuraya geldim. Tamam mı?
+
+164
+00:24:45,332 --> 00:25:11,672
+Diagonale geldi çünkü eşitlerdi şey. Şimdi buradan dikkat edin, solada gidebilirsiniz, yukarıda gidebilirsiniz. İkisi de mümkün. Birini seçeceksiniz çünkü ikisinden iki farklı çözüm bulacağız. Hani nebilecek bir BV var, bir BC var. Şimdi yukarı gittiğimizi varsayalım. Şimdi böyle gittim ama buradaki harfleri almayacağım. Yani D ve C iki farklı harf olduğu için. Bunu almayacağım. Şimdi buradan çapraza gittim.
+
+165
+00:25:12,064 --> 00:25:34,144
+Demek ki burada C'leri de alacağım. Çaprasa gittim. Şimdi yukarı veya sola gidebilirim. Yine ben hani bu soruyu öyle çözmek istediğim için öyle çözüyorum. İstediğiniz gibi gidebilirsiniz. Yukarı gittim. Yine doğal olarak A ve D birbirinden farklı iki ayı almayacağım. Buradan sola gittim. Yine almayacağım.
+
+166
+00:25:34,644 --> 00:26:02,644
+Bu da diagonaline gittim. Diagonaline gitmek demek iki harfinin aynı olması demek B aldım. BCB benim Longest Common Subsequence'larından birisi. Başka yoldan gisiydi BDB çıkacaktı karşına. Şimdi ben size soruyorum. O zaman ben şeyi anlamak için hangi harfleri alacağım yani Common Subsequence, Longest Common Subsequence'ın hangi harfleri alacağım?
+
+167
+00:26:02,644 --> 00:26:12,403
+Hangi string olduğunu anlamak için algoritmalarını da nasıl tasarlayabileyim? Ne önerirsiniz? Çok basit bir şekilde düşünürseniz ne önerirsiniz?
+
+168
+00:26:21,203 --> 00:26:22,263
+Evet, dinliyorum.
+
+169
+00:26:28,403 --> 00:26:35,403
+Ne yapsak size iyi? Hiç şey yapmayın lütfen. Akla zevklerini söyleyin. Rahat olun.
+
+170
+00:26:39,763 --> 00:26:43,763
+Oradasınız değil mi? Sizden ses çıkmayınca korkuyorum.
+
+171
+00:26:43,763 --> 00:26:44,763
+Bu da durayım.
+
+172
+00:26:44,763 --> 00:26:46,763
+Evet, söyleyin yani ne yaparsınız?
+
+173
+00:26:46,763 --> 00:26:50,763
+Satır sütun birbirine eşitse, satırı bir sütunu bir atlılır.
+
+174
+00:26:50,763 --> 00:26:54,763
+Eksilt. Geri gidiyorsun.
+
+175
+00:26:55,923 --> 00:26:58,844
+Eksilikler, ben bir şey baştan sona...
+
+176
+00:26:58,844 --> 00:27:17,683
+Baştan sona yapa, bir kere şimdi düzgün yolu baştan sona bulamazsınız, sondan başa. Bir kere her zaman genellikle, her zaman diyerek de yine bir şey yapmayayım ama şeyi bulmak istediğinizde, doğru çözüm neymişi bulmak istediğinizde, mesela hatırlarsanız nefsekte de öyle yaptık, sondan çözmektik.
+
+177
+00:27:23,923 --> 00:27:36,923
+Long-Bus-Cummon Subsequences'ın size'ını bulduğunuz nokta burası. Ve bunun nasıl oluştuğunu bulmak için de geriye gitmek gerekiyor. Tamam mı? Geriye giderek çözüyorsunuz.
+
+178
+00:27:36,923 --> 00:27:46,923
+Şey için ileriye giderek çözmek de mümkün. Nasıl çözersin ileriye giderek?
+
+179
+00:27:49,556 --> 00:27:52,516
+Onu oluşturma anında yapabilirsiniz.
+
+180
+00:27:52,655 --> 00:27:54,296
+Oluşturma anında yapabilirsiniz.
+
+181
+00:27:54,455 --> 00:28:00,256
+Şimdi ya oluşturduktan sonra geriye gideceksiniz ve şuna bakacaksınız.
+
+182
+00:28:00,435 --> 00:28:02,155
+Mesela burası üç dünya.
+
+183
+00:28:02,556 --> 00:28:04,855
+Diagonali şey olabilir mi?
+
+184
+00:28:05,155 --> 00:28:07,216
+Nedir? Bir eksiği olabilir mi?
+
+185
+00:28:07,736 --> 00:28:09,895
+İki. Ondan sonra.
+
+186
+00:28:10,016 --> 00:28:12,915
+Ama baktınız, bakın bak şimdi size şey göstereceğim.
+
+187
+00:28:13,336 --> 00:28:15,615
+Bunun da diagonali bir eksiği almış mıyım?
+
+188
+00:28:21,076 --> 00:28:22,275
+Problemi anladınız mı?
+
+189
+00:28:23,955 --> 00:28:26,615
+Hocam şu anda nereye gösteriyorsun? Mouse'tanlık gözükmez mi?
+
+190
+00:28:27,096 --> 00:28:28,975
+Yeşil çizim, görmüyor musun?
+
+191
+00:28:28,995 --> 00:28:29,915
+Tamam, okey okey.
+
+192
+00:28:31,535 --> 00:28:34,275
+Bak şurası, diyorum ki...
+
+193
+00:28:35,635 --> 00:28:44,395
+Şimdi geri giderek şeyi bulmaya çalışıyorum ya, sekonası bulmaya çalışıyorum ya, şimdi bu tamam, bunu buradan geri gitti, buraya geldi.
+
+194
+00:28:45,675 --> 00:29:02,135
+Eğer ben işte 3, diagonali 1-2H, B'leri alayım dersen, bu mantığa göre 2, diagonali 1-1, buradaki D ve C'yi de almaya çalışmam gerekiyor. Doğru mu? Oradan bir yere varabilir miyim?
+
+195
+00:29:02,740 --> 00:29:05,040
+Harfler de aynı olması lazım hocam, o yüzden almadık.
+
+196
+00:29:05,395 --> 00:29:15,195
+Aynen öyle. Harflerin de aynı olması lazım. O da ne demek? Ben tutacağım, hadi bu sefer bir de şeyi karşılaştıracağım, şu harfleri karşılaştıracağım.
+
+197
+00:29:15,295 --> 00:29:24,975
+B, B'ye eşitme, tamam o zaman al, diyak öner. Yani neredeyse bu matrisi oluştururken yaptığım işi bir kere daha yapıyor gibi olacağım.
+
+198
+00:29:24,975 --> 00:29:32,975
+Onun yerine yapabileceğiniz şey ne olabilir? Matrisi oluştururken...
+
+199
+00:29:33,395 --> 00:29:47,675
+alıp almama şeyini sağlamak olabilir. Şimdi burada bir matrisimiz var. Bu diyelim ki cost matrisimiz olsun. Yeşil gözükmüyor mu?
+
+200
+00:29:51,155 --> 00:29:52,515
+Cost'u bir okudunuz mu?
+
+201
+00:29:53,096 --> 00:29:53,635
+Görünüyor.
+
+202
+00:29:54,495 --> 00:29:54,915
+Tamam.
+
+203
+00:29:55,635 --> 00:29:57,115
+Gözüküyor da çok aşağılara gittik.
+
+204
+00:29:57,615 --> 00:29:58,836
+Tamam, peki tamam.
+
+205
+00:29:59,235 --> 00:30:00,875
+Bu Cost matrisiniz olsun.
+
+206
+00:30:01,735 --> 00:30:07,295
+Bire bir de oluşturmak için kullanacağınız ikinci bir matrisiniz daha olsun.
+
+207
+00:30:08,415 --> 00:30:09,576
+Mesela ne bileyim işte?
+
+208
+00:30:10,324 --> 00:30:28,324
+Diyelim ki bir B matrisiniz olsun. Eğer şeye geldiyseniz, x'in i'incisi ve y'nin j'incisini karşılaştırıyorsanız, eğer x'i y'ci'yi eşitse, b'ci'yi o zaman...
+
+209
+00:30:31,859 --> 00:30:36,299
+Yani bu harp alınacak anlamında Add-XE label'unu içersin.
+
+210
+00:30:36,299 --> 00:30:47,639
+Eğer XE farklıdır, YEJ ise ve eğer şey ise nedir?
+
+211
+00:30:51,639 --> 00:30:55,679
+Eğer şeyi aldıysak
+
+212
+00:30:56,276 --> 00:30:57,516
+Harfler Yeşitsin.
+
+213
+00:30:58,236 --> 00:31:10,456
+Hayır, hayır değil. X, Y, Y, Y. Birden gelip tutuldu arkadaşlar, çok özür dilerim. X, Y, J, A. X, Y farklıdır, Y, I, J ise ya şey olmuştur.
+
+214
+00:31:12,211 --> 00:31:39,072
+x, i, eksi bir, y, j durumu maksimumdur. Ya da x, i, y, j, eksi bir durumu maksimumdur. Maksimum olanı alacağız ya. O zaman ya bi, eksi bir, j, maks ise yani şöyle söyleyeyim. Bunu yapamadım, anlatamadım. Eğer cost i, eksi bir, j büyüktür, cost i,
+
+215
+00:31:40,115 --> 00:31:44,875
+j-1 ise o zaman şu durum oluşmuş demektir.
+
+216
+00:31:45,135 --> 00:31:47,796
+Truys'a şu, değil mi?
+
+217
+00:31:48,375 --> 00:31:52,115
+Yani ben b-1 j yazacağım demektir.
+
+218
+00:31:52,675 --> 00:31:58,375
+O zaman b-1 j x'i almıyorum demektir.
+
+219
+00:31:58,475 --> 00:31:59,796
+Skip x diyeceğim buraya.
+
+220
+00:31:59,935 --> 00:32:01,715
+Buna da skip y diyeceğim.
+
+221
+00:32:01,855 --> 00:32:03,715
+Yani x'i almıyorum veya y'yi almıyorum.
+
+222
+00:32:03,796 --> 00:32:07,016
+Neyi almadığının çok bir önemi yok aslında.
+
+223
+00:32:08,084 --> 00:32:09,420
+Ön...
+
+224
+00:32:12,819 --> 00:32:31,500
+Böylece eğer ed, x, y varsa o karakterleri aldıma almayacağım. O zaman şöyle bir şey yapacağım. Eğer x, y eşittir y, j ise bi, j ed, x, y olacak. Neden? Çünkü o karakter alındı.
+
+225
+00:32:31,763 --> 00:32:44,395
+Eğer x, i farklıdır y, j ise ya bi-1, j'yi alacağım ya da bi-j-1'i alacağım.
+
+226
+00:32:44,468 --> 00:33:08,008
+değiştireceğim. B i-1 j şeyi gösteriyor. Skip x, x'i almadığımı gösteriyor. Bu da skip y, y'yi almadığımı gösteriyor. Ne zaman? Cost i-1 j büyüktür. Cost i j-1'si. O zaman ben şeyi oluştururken nedir?
+
+227
+00:33:09,107 --> 00:33:25,307
+Longus common subseconds'ı oluştururken şöyle yapacağım. Diyeceğim ki, diyelim ki Longus common subseconds için bir x şöyle yapayım.
+
+228
+00:33:30,708 --> 00:33:44,788
+Bir x'im var, birden m'e kadar olan, bir y'im var, birden n'e kadar olan, bir de b olacak, sıfırdan m'e ve sıfırdan n'e bir m olacak.
+
+229
+00:33:45,508 --> 00:33:53,208
+Şimdi başta i'yi m'den başlatacağım, j'yi de n'den başlatacağım ve ne olacak?
+
+230
+00:34:04,564 --> 00:34:06,564
+Geri geri gidiyorum.
+
+231
+00:34:08,163 --> 00:34:10,220
+Diyeceğim ki...
+
+232
+00:34:14,356 --> 00:34:18,856
+Eğer Pij et xye ise
+
+233
+00:34:25,856 --> 00:34:27,856
+et diyeceğim xye.
+
+234
+00:34:43,059 --> 00:35:05,059
+x'i almış olacağım, i'yi biraz azaltacağım, j'yi biraz azaltacağım ve break burada çıkacağım. Eğer şey ise, skip x ise sadece şey yapacağım, i'yi biraz azaltacağım.
+
+235
+00:35:09,588 --> 00:35:11,128
+Sı ki biye ise de...
+
+236
+00:35:15,635 --> 00:35:17,516
+Jeyi biraz azaltacağım.
+
+237
+00:35:20,820 --> 00:35:48,820
+Ve böylece devam edeceğim. Şimdi bakın ne olmuş olacak? Skip x olması demek, y'yi biraz azaltmanız demek. Yani bir üst satıra çıkıyorsunuz. Şöyle bir üst satıra çıkıyorsunuz demek. Skip y demek de y'yi biraz azaltmanız demek. Yani j'yi biraz azaltmanız demek. Yani bir sol sütuna geçiyorsunuz. Böylece siz hiçbir şeyi tekrar tekrar harfleri falan kontrol etmeden sadece etiketlerin durumuna bakarak şeyi yapabilirsiniz.
+
+238
+00:35:48,820 --> 00:35:55,820
+stringi elde edebilir hale geleceksiniz. Burada sormak istediniz bir şey var mı?
+
+239
+00:36:00,211 --> 00:36:01,092
+Birden fazla yol yok mu?
+
+240
+00:36:01,872 --> 00:36:02,471
+Diyomadım.
+
+241
+00:36:03,471 --> 00:36:05,591
+Birden fazla geri gitme yolu yok mu burada?
+
+242
+00:36:07,072 --> 00:36:08,532
+Matrice bir dönerseniz.
+
+243
+00:36:09,811 --> 00:36:13,252
+Matrice geri dönersen şöyle, evet tabii tabii.
+
+244
+00:36:13,252 --> 00:36:15,252
+Birden fazla...
+
+245
+00:36:15,731 --> 00:36:25,731
+Geri gitme yolu var aslında ama bu maksimumunu, ikisi eşitse iken birini seçtiği için sadece bu birini görecek.
+
+246
+00:36:25,731 --> 00:36:36,731
+Yani eğer bir daha fazla gitmek istiyorsan onun için üçüncü bir etiket kullanman lazım ki işte bir turda bir yolu seçsin, altlısın o konuda bir turda bir yolu seçsin.
+
+247
+00:36:36,731 --> 00:36:43,731
+Oluşturulmasını anlatmamı ister misiniz? Bu B matrisinin nasıl oluştuğunu anlatmamı ister misiniz?
+
+248
+00:36:43,731 --> 00:37:10,452
+Bu çünkü geri gitmek için. Yani matris hazırlı oluştu. Cost matrisi ve B matrisi varken, yani cost'u kullanmıyorsunuz da, burada yaptığınız şey B matrisi varken LCS'yi elde etmek. B matrisini nasıl elde edildiğini anlatalım ister misiniz?
+
+249
+00:37:13,108 --> 00:37:13,947
+Olur hocam.
+
+250
+00:37:14,947 --> 00:37:23,927
+Tamam, peki. O zaman bir de onu anlatayım. Pardon. Ben hani onu, neyse o anlatayım ama bir sıkıntı yok.
+
+251
+00:37:35,315 --> 00:37:36,815
+Ne, bunu vereyim.
+
+252
+00:37:41,043 --> 00:38:02,043
+D, C, S diyemedi bir şey valla. Bir X matrisimiz var, X dizimiz var, M elemanlı, bir de Y dizimiz var, N elemanlı. Şimdi bu da cost şeyimiz, matrisimiz. O sıfırdan M'e kadar gidiyor ve sıfırdan N'e kadar gidiyor. Şimdi başlangıçta...
+
+253
+00:38:02,963 --> 00:38:21,684
+ne yapmamız lazım? Initial değerler yapmamız lazım. Önce CI0'ı 0 diyorsunuz. BI0'lara da skip x diyorsunuz. Neden? Şu CI0'ın 0 olması demek, şöyle şu sütunu şey yaptığımız demek.
+
+254
+00:38:22,036 --> 00:38:40,684
+sıfırladınız demek. Yani herkes kendisinden önce geleni durumuna, durumundan aldı. Şurada yaptınız ya. Yani şöyle şöyle gittiniz. Skip x yaptınız demek. B-i mantresinde. Arkasından da işte
+
+255
+00:38:43,699 --> 00:39:03,579
+0J'yi sıfırladık. B0J'de sıkıp G demek. Tamam mı? Bu üstteki sıfırıncı kolumu sıfırladı, alttaki de sıfırıncı satırı sıfırladı. Şimdi işe başlıyorsunuz.
+
+256
+00:39:12,403 --> 00:39:16,903
+Şimdi iki tane durum vardı. X, i, i, i, i, i, i. Bu kadar basit aslında bu.
+
+257
+00:39:16,903 --> 00:39:24,403
+Bir rekürans bağlantısını oluşturursanız oldukça kolay biliyorsunuz bunlar.
+
+258
+00:39:24,403 --> 00:39:31,403
+Eğer X, i, i, i, i, i eşitse, pardon şu C değil de cost olacak, onları C yazdım, özür dilerim.
+
+259
+00:39:31,403 --> 00:39:39,403
+X, i, i, i, i eşitse ne olacak? Cost, i, i, i, i eşit olacak.
+
+260
+00:39:40,371 --> 00:39:44,531
+i-1, j-1 artı 1'e eşit olacak. Bunu biliyorsunuz.
+
+261
+00:39:45,011 --> 00:39:52,471
+Ve bu karakteri aldığımızı göstermek için bi-j'ye ediksiye etiketini koyuyoruz.
+
+262
+00:39:52,531 --> 00:39:53,611
+Ediksiye diyoruz.
+
+263
+00:39:54,491 --> 00:39:58,211
+Eğer eşit değilse o zaman neye bakacaksınız?
+
+264
+00:40:08,052 --> 00:40:14,052
+ij-1'den büyükse, o zaman
+
+265
+00:40:14,052 --> 00:40:25,052
+cos ij nereden gelecek? cos i-1j'den gelecek ve bij'de
+
+266
+00:40:26,068 --> 00:40:44,068
+Skip x olacak. Yani x yok bu sekvensin anlamında. Skip x olacak. Eğer şeyse, değilse o zaman da post iyice
+
+267
+00:40:46,003 --> 00:40:58,483
+cost i j-1 eşit ama re-le-transplantısını yazdım biliyorsunuz. Sadece b i j'ye gerekçe de yazıyorum. Bu benim ne taraftan yukarıya doğru gideceğimi de gösteriyor çünkü.
+
+268
+00:40:58,996 --> 00:41:23,076
+Böyle işte bu şekilde olacak. O zaman ne oldu? Burada şeye bakarsak, bu Sequence, String'i elde etme işine bakarsak, şimdi bak geri doğru gidiyorum. i'yi 0 olana kadar ve g0 olana kadar geri doğru gidiyorum ve tek yaptığım şey bg matrisine bakmak. Yani yok o iki karakter eşit mi değil mi bilmem ne diye kontrollere girmek yerine bg matrisine bakıyorum.
+
+269
+00:41:23,572 --> 00:41:48,592
+Eğer Bj matrisi ediksiye ise bu şey demektir, x'i eşittir, y'ymiş, bu karakter alınacak demektir. Dolayısıyla ikisinci karakteri stringinizi başına ekliyorsunuz. Yani şöyle şöyle gidiyorduk ya mesela B'leri aldık, sonra C'leri aldık, böyle gidiyoruz. O yüzden başına ekliyorsunuz. Bir sonraki fark geliyorsa onu başa ekleyeceksiniz. Geri geri gidiyoruz çünkü.
+
+270
+00:41:51,572 --> 00:42:13,572
+Gabonel'den gittiğimiz için de ne yapıyoruz? i ve j'yi biraz azaltıyoruz. Eğer skip x ise, bakın nedir skip x dediği şey? Skip x dediği şey, i-1, j'nin, i-j-1'den daha büyük olduğu durum. Yani şu durum.
+
+271
+00:42:16,307 --> 00:42:44,307
+Şu durum, yani eşitler şu anda da, şu yukarı doğru gittiğiniz durum. Yukarı doğru gittiğiniz için ne yapacaksınız? İ'yi azaltacaksınız. Matris de bir sonraki adım yukarıdan devam edecek. Skip-ya ise J'yi azaltacaksınız. Bir sonraki adım soldan devam edecek. Yani şurada bir sonra yukarı mı gideceksiniz, sol mu gideceksiniz ona karar vermek için. Şimdi az önce bir arkadaşımız güzelce şeyi sordu.
+
+272
+00:42:44,307 --> 00:43:12,307
+Dedi ki, ama dedi o zaman ben bir tek çözümü görebilirim. Mesela şu çözümü göremiyorsun o zaman. Evet, yani bu algoritma sadece bir tane çözümü veriyor. Çünkü neden? Cost i, j-1 ile cost i-1, j birbirine eşit. Yani ikisi de iki olduğu için birini seçiyor sonuçta ifinizi nasıl koyduğunuza bağlı olarak. Yani orada eğer bütün çözümleri görmek istiyorsanız, şeyi burayı...
+
+273
+00:43:12,307 --> 00:43:34,748
+Daha şey yaparsınız, skip-x, skip-x, geri doğru dışında, yani şurada şey yapıyorsunuz ya, işte i-1j büyük eşittir, cos i-j-1 diyorsunuz ya, burada 3 seçenek yaparsınız. Ondan sonra işledimden ona göre algoritmalarınızı genişletebilirsiniz. Mantığı anladınız mı? Önemli olan o. Şuraya kadar sormak istediğiniz bir şey var mı?
+
+274
+00:43:38,996 --> 00:43:44,755
+Anladınız mı arkadaşlar mantığı? Sormak istediğiniz bir şey var mı? Yoksa ara vereceğim.
+
+275
+00:43:46,856 --> 00:43:48,155
+Anladık herhalde hocam.
+
+276
+00:43:48,655 --> 00:43:52,576
+Anladık herhalde. Niye öyle dedin şimdi birden? Anladık herhalde deyince.
+
+277
+00:43:52,576 --> 00:43:54,456
+Herhalde deyince ben de bir şümeye düştüm şimdi.
+
+278
+00:43:55,796 --> 00:44:03,695
+Tamam, peki. Hadi ara verelim o zaman. 15 dakika ara verelim, dinlenin lütfen. Ondan sonra devam edelim.
+
+279
+00:59:25,588 --> 00:59:27,588
+Evet arkadaşlar, geri geldim.
+
+280
+00:59:28,988 --> 00:59:40,588
+Şimdi, bu dönem biz ayrı kanalizmde farkındaysanız, farklı problem çözme mantıklarını gösteriyoruz.
+
+281
+00:59:40,588 --> 00:59:48,588
+Yani işte bölge ümiti gördük, problemleri alt parçalara bölerek her parçalara...
+
+282
+00:59:48,588 --> 00:59:50,252
+Demek ki paylaşım yok şu anda.
+
+283
+00:59:50,356 --> 01:00:03,275
+Çözlük sonucunu birleştirmek şeklinde. Zaten bir şey yazmadı ama uyarmak için çok teşekkür ederim. Bir ara şey oldu, kapandı, o ara gitti herhalde. Tamam, şimdi gelmiş olması lazım.
+
+284
+01:00:04,255 --> 01:00:08,316
+Hocam, sözünüzü kesiyorum ama derse geçmeden önce ödevle ilgili bir soru sorabilir miyim?
+
+285
+01:00:09,684 --> 01:00:10,764
+Sorabilirsin.
+
+286
+01:00:11,364 --> 01:00:12,644
+Ama cevap verilmiyoruz.
+
+287
+01:00:13,724 --> 01:00:22,324
+Peki hocam, ben sorayım da. Bu üçüncü ödülük, ikinci şıkkında hatalı kelime tablosu oluşturuyoruz. Yani bir kullanıcı, benim gibi kelime girdi.
+
+288
+01:00:22,324 --> 01:00:23,923
+Tamam, ona da söyleyeyim.
+
+289
+01:00:24,000 --> 01:00:39,560
+Evet, birinci soruyla ilgili şey dedik çünkü o yüzden ikinci soruda bir de bonus var. Yani hani biraz kendilerini zorlayarak çözmeyi denesinler. Birinci soru hani biraz farklı bir soru ona dikkat edin çözerken. İkinci soru daha böyle rahat hani alışık olduğumuz türlü bir soru. Söyle şimdi.
+
+290
+01:00:40,180 --> 01:00:51,900
+Hocam şimdi diyelim ki bir kişi yanlış bir kelimeyi girdi daha sonra yani öneri verdik ona. Sonra dedik ki bunu kastediyorum onu girdi. Daha sonra aynı kelimeyi tekrar girdik. Hani daha önceki girişinde.
+
+291
+01:00:52,000 --> 01:01:05,640
+yazdığı kelimeyi ekrana önermemiz gerekiyor. Yani tek bir kelime önereceğiz ona. Eğer kullanıcıya tekrar kelime girme şansı verecek miyiz? Yani yoksa direkt o daha önce girdiği kelimeyi mi alacağız? Yoksa kullanıcı durumda farklı bir kelimeye de girebilir mi?
+
+292
+01:01:05,967 --> 01:01:11,627
+Oradaki öneriler, yani şimdi bu tabii aslında gerçek hayatta bu böyle olmuyor.
+
+293
+01:01:11,627 --> 01:01:15,987
+Yani ama biz çok da zorlamak istemedik.
+
+294
+01:01:16,187 --> 01:01:21,707
+Yani mantığa alıştırıp temel bir şey çözün, önerin bizim için yeter diye.
+
+295
+01:01:22,147 --> 01:01:24,347
+Yani mesela orada şöyle bir örnek vardı.
+
+296
+01:01:24,427 --> 01:01:26,587
+İtis Komut yazıyordu galiba, öyle miydi?
+
+297
+01:01:27,067 --> 01:01:27,467
+Evet hocam.
+
+298
+01:01:27,467 --> 01:01:28,487
+Öyleydi galiba.
+
+299
+01:01:29,147 --> 01:01:29,807
+Hatırlamıyorum.
+
+300
+01:01:30,147 --> 01:01:32,767
+Şimdi sizin orada yapacağınız, o size şey önerdi.
+
+301
+01:01:33,967 --> 01:01:56,567
+old dedi veya cool önerdi aslında. Sizin orada yapacağınız şey, işte cool'u seçtiniz sizde mesela. Cool'u şu hash table biriniz, şu da hash table ikiniz, eyluah kaleminin şeyi bitiyor. Nedir? Hash table ikiniz. Bunu şey yapıyorsunuz.
+
+302
+01:01:57,684 --> 01:02:13,440
+cool'u önerdiğinde cool'u buraya yazıyorsunuz, karşılığına da cool diyorsunuz. Yaptığınız şey bu. Bir daha aynı şekilde cool yazarsa sizin tek yapacağınız şey ona şeyden bakıp...
+
+303
+01:02:13,440 --> 01:02:27,960
+İkinci tablodan bakıp, kuru dönemek. İkinci tablodan bakabilmek için ne yapmanız gerekiyor? Önce birinci tabloda arayacaksınız, birinci tabloda olmadığını görünce yanlış yazıldığını anlayıp,
+
+304
+01:02:28,211 --> 01:02:47,131
+İkinci tabloya bakacaksınız. İkinci tabloda varsa cool diye düzelteceksiniz. İkinci tabloda yoksa şeye bakacaksınız bir sefer. Birinci tabloda distansı bir ve iki olanlara sırasıyla bakacaksınız. Oldu mu şimdi?
+
+305
+01:02:48,011 --> 01:02:49,431
+Anladım hocam. Teşekkür ederim.
+
+306
+01:02:50,051 --> 01:02:52,911
+Rica ederim. Birinci soru yaptın mı?
+
+307
+01:02:53,876 --> 01:02:57,516
+Yok hocam, ben ikinci sorudan başladım. Biraz geç başladım ödeme de, o yüzden.
+
+308
+01:02:57,616 --> 01:03:05,516
+Yok yok, sorun yok. Yani birinci soru dedim gibi, birazcık böyle değişik bir soru. Sadece şeyi görmek istedik.
+
+309
+01:03:06,516 --> 01:03:16,636
+Nasıl yapacağımızı, nasıl çözüm ödeyeceğinizi görmek istedik. Yani orada olasılık hesaplarını kullanacağımızı dikkat edin lütfen.
+
+310
+01:03:17,296 --> 01:03:21,876
+Olasılık değerlerini kullanmanız gerekiyor. Maç kazanma olasılıklarını da kullanmanız gerekiyor.
+
+311
+01:03:21,876 --> 01:03:34,856
+gerekiyor. Ona dikkat edin olur mu? Yani matrisin kaça kaça olması gerekir falan onlara dikkat edin. A ve B takımları için onları dikkat ederek çözün. Peki.
+
+312
+01:03:34,856 --> 01:03:48,016
+Hocam, o soru da, ilk soru da ben baktım birden fazla çözüm ürettim. Hangisi istenilen şekilde bilmiyorum ve hatta matris de kullanmadım.
+
+313
+01:03:48,755 --> 01:03:50,615
+Çok değişik çözümler çıktı.
+
+314
+01:03:51,375 --> 01:03:51,915
+Hayır, hayır.
+
+315
+01:03:51,915 --> 01:03:53,075
+Tamam istediğinizi anlamadım.
+
+316
+01:03:53,075 --> 01:03:55,495
+Bu dinamik programlama sorusu.
+
+317
+01:03:55,635 --> 01:03:59,195
+Yani sorduğumuz her soru başka yöntemlerle çözülebilir.
+
+318
+01:03:59,195 --> 01:04:03,375
+Yani illaki dinamik programlama kullanacaksın diye bir konu yok.
+
+319
+01:04:03,495 --> 01:04:07,596
+Ama dinamik programlamayla çözersen matriz kullanmak zorundasın.
+
+320
+01:04:07,695 --> 01:04:09,535
+Çünkü bir rekürans bağıntısı yazacaksın.
+
+321
+01:04:09,715 --> 01:04:12,655
+Önce zaten rekürans bağıntısı soruluyor size.
+
+322
+01:04:12,855 --> 01:04:13,096
+Değil mi?
+
+323
+01:04:13,495 --> 01:04:16,315
+Önce bir şey gibi, kimle konuştuğumu görüyorum.
+
+324
+01:04:16,375 --> 01:04:16,735
+Doruk sen.
+
+325
+01:04:16,755 --> 01:04:25,135
+Sen de mi konuşuyorum? Önce bir rekürans bağıntısı yazmamız lazım. O rekürans bağıntısını çözebilmek için de bir matrisi ihtiyacınız var.
+
+326
+01:04:25,315 --> 01:04:32,735
+Yani ben baştan uyarayım seni. Dinamik mi çözdün? Dinamik programlamada rekürans bağıntısı yazdın, matrisi mi çözdün?
+
+327
+01:04:32,735 --> 01:04:40,295
+Evet, yani dinamik programlamada daha önce üretilen sonuçlar saklanmalı. Yani gerekli olan kadarı saklanmalı ya.
+
+328
+01:04:40,615 --> 01:04:44,295
+Sonuçta mesela bir erreyle de dinamik programlama yapılabilir değil mi?
+
+329
+01:04:44,820 --> 01:05:12,400
+Kesinlikle yapılabilir. Yaptıysam çok güzel yani ama bu da matris olması lazım. Niye? Çünkü şeyleri karşılaştıracaksın. Yani A takımının ve B takımının kazandığı maçlara bakacaksın. Dolayısıyla orada matrissiz onu yapman, hani görmek isterim tabiisiyle nasıl yaptığımı da yaptıysan eğer. Hani şimdi biz ne yapıyoruz? İşte bir kelimeye karşılıklı bir kelimenin durumuna bakıyoruz. Burada da.
+
+330
+01:05:12,820 --> 01:05:25,940
+Bir takımın kazandığı, oynanan maçlarda bir takım kazanırsa ne olur, bir takım kazanırsa ne olura bakacağı için matrissiz yapmak biraz zor gözüküyor bana.
+
+331
+01:05:26,460 --> 01:05:31,079
+Peki şey buldun mu? Orada biz bir tane yanlış hatırlamıyorsam bir örnek verdik.
+
+332
+01:05:31,079 --> 01:05:33,900
+Şey nedir?
+
+333
+01:05:35,027 --> 01:05:38,447
+A2-2 maçı kazanırsa ne olur falan gibi bir örnek vardı yani.
+
+334
+01:05:38,587 --> 01:05:44,507
+A4-4 olasılıkla 0-29 diye bir örnek varmış hocam.
+
+335
+01:05:44,607 --> 01:05:48,347
+A4 maçı kazanırsa.
+
+336
+01:05:48,851 --> 01:05:51,511
+Buna 0.28 olması gerekmiyor mu hocam?
+
+337
+01:05:51,691 --> 01:05:57,731
+Evet, 0.28 çıkıyor. 0.28, yani 289 gibi herhalde yuvarlanmış sonucu değil mi hocam?
+
+338
+01:05:57,891 --> 01:06:04,851
+Evet, evet, öyledir. Yani şey, 285'e geçtiyse 9'a yuvarlanmıştır aşk olsun arkadaşlar.
+
+339
+01:06:05,131 --> 01:06:08,631
+Yani yuvarlanmıştır. Ha bulduğumuzda çok iyi, mutluyum, güzel. Enzi sanırım.
+
+340
+01:06:08,671 --> 01:06:14,671
+Hocam, evet yani o bahsettiğim çözümlerde, yöntemlerde buldum o sonucu.
+
+341
+01:06:14,671 --> 01:06:16,851
+Tamam, çok güzel. Yani gerçekten...
+
+342
+01:06:16,851 --> 01:06:25,211
+Mutlu olurum. O soruyu çünkü nasıl yaptığınızı görmek için sormuştuk. Yani yapıyorsanız ne mutlu. Güzel bir şey.
+
+343
+01:06:25,991 --> 01:06:31,611
+Hocam, orada şey, yedi tane maç olacaktı ve dördünün alan kazanır demiş ya verdi örnekte.
+
+344
+01:06:32,651 --> 01:06:37,711
+Bu dört farklı olabilir mi? Yoksa işte yedinin yarısını biraz geçtiği için mi dört otomatik alıyoruz?
+
+345
+01:06:38,031 --> 01:06:43,531
+Yoksa bize onun vermesi mi lazım programı çalıştıran kişinin? Hani yedi maç oynanacak ve dördü kazanırsa diye.
+
+346
+01:06:44,019 --> 01:06:49,960
+Hayır ama şimdi kazanabilmesi için, mesela 9 maç oynanırsa 5'in kazanması lazım değil mi?
+
+347
+01:06:52,759 --> 01:06:55,699
+Evet yani daha fazla kazandığı durum da olabilir herhalde.
+
+348
+01:06:56,039 --> 01:07:04,399
+Hayır hayır yani en az, en az. Tabii tabii en az. Yani o yüzden senin şeye bakman yeterli. Mesela 9 maç için 5'e bakman yeterli.
+
+349
+01:07:05,331 --> 01:07:14,711
+Enaz demiyor aslında, şöyle bir şey var, 4 olunca maç orada bitecek. 4-0 bitti, orada bitmesi lazım gibi anladım.
+
+350
+01:07:14,711 --> 01:07:31,871
+Evet, iyi eksi bir, yani şey varsa, bir fazla kazanması gerektiği için şey olması da yeterli. Yani 4 maça mesela, sizde 7'ydi galiba diye hatırlıyorum.
+
+351
+01:07:32,884 --> 01:07:34,884
+Evet, yediydi.
+
+352
+01:07:34,884 --> 01:07:44,884
+Ama şimdi, yani şimdi zaten dört maçta şey yapamadıysan, yani dört maçın durumu belli ediyor, onu demek istiyor zaten.
+
+353
+01:07:44,884 --> 01:07:53,884
+Yani zaten dört maça bakarak şeyi görüyorsun, kazanma olasılığını görüyorsun.
+
+354
+01:07:53,884 --> 01:07:57,516
+Yani onun için yeterli aslında.
+
+355
+01:07:57,940 --> 01:08:01,940
+Daha fazla açıklama verirsem soruyu çözmem gerekir. Şeyi söylemeyelim.
+
+356
+01:08:02,320 --> 01:08:08,200
+Bir de şey, kaç maç en fazla hesaplanacak? Yani orada örnekte yedi var da.
+
+357
+01:08:08,300 --> 01:08:09,920
+Ya, soruyoruz onu söylemeyeceğiz.
+
+358
+01:08:10,180 --> 01:08:11,100
+Yedi maç da olabilir.
+
+359
+01:08:12,148 --> 01:08:40,128
+Olurum yani. Biz özellikle şey diye konuştuk. Matris'in kaça kaçlık olduğu, nasıl olduğu hakkında bilgi vermeyelim. Ne yaptıklarını öğrencilerin değerlendirelim diye konuştuk. Özellikle de hani şey yaşamayın, sıkıntı yaşamayın diye ikinci soruya bir bonus koydum ki hani çok düşük bir puan almayacaksınız aslında. Yani şeyi görmek istedik. Bir çözmeye çalışın. Önemli olan nasıl bir şey yaptığınızı gör.
+
+360
+01:08:40,148 --> 01:08:51,148
+Çözüme ulaştığınızı görmek. Yoksa ben oraya ipucu olarak yazalım demiştim. Sonra dedik ki tamam yazmayalım, bakalım ne yapacaklar.
+
+361
+01:08:51,148 --> 01:08:55,148
+Bayağı bir düşündük ama hocam basit değil.
+
+362
+01:08:55,148 --> 01:09:02,148
+Ama ne güzel işte, çok güzel yani çok sevindim düşündüğünüzü ama bulmuşunuz sanki 0-0-8 nokta ünlemde dediğinize göre.
+
+363
+01:09:02,148 --> 01:09:05,148
+Bulmuşunuz mu? Bulmuşunuz öyle anlıyor.
+
+364
+01:09:07,923 --> 01:09:15,123
+Bütün hafta sonu uğraştım kendi adına ama duyduk yani. Duyamadım, yüksek sesi söyler misin?
+
+365
+01:09:15,123 --> 01:09:19,283
+Bütün hafta sonu uğraştım hocam, diyorum ama sonunda buldum.
+
+366
+01:09:19,283 --> 01:09:21,603
+Buldu mu ama bak ne kadar da sevmişsin.
+
+367
+01:09:21,603 --> 01:09:28,324
+Hocam otomatik olarak 7 maç üzerinden 4 maç kazanıyorsa zaten her maç 0-7 ise 4 maç 0-28 etmiyor yani.
+
+368
+01:09:28,324 --> 01:09:34,163
+Ya tamam mı, sonuçta sen onun rekürans bağıntısına alıştırdın mı onu söyle [öğrenci].
+
+369
+01:09:36,020 --> 01:09:40,560
+7 maç için tamam peki 9 maç verirse ya da 13 maç verirse ne olur?
+
+370
+01:09:42,780 --> 01:09:59,820
+Tamam, buna bu sorulara şu anda daha çok cevap vermeyeceğim. Yaparsınız işte, yapın yani. Bak 7 için ne olacağına olasılık hesaplamışsınız. Sadece hani gönlümler vermeyerek şey de söyleyeceğim, rekürans bağımsızında olasılık hesaplarını doğal olarak kullanacaksınız.
+
+371
+01:10:01,076 --> 01:10:18,047
+Ona dikkat edin. Yani A'nın maç kazanma olasılığı, B'nin maç kazanma olasılığı, onları kullanacaksınız. Yani A'nın maç kazanma olasılığı neyse, B'nin ikisi 1-A'nın kazanma olasılığıdır.
+
+372
+01:10:18,047 --> 01:10:35,047
+yani rekürans bağıntısında onları da kullanacaksınız. Neyse. Yani yapın dediğim gibi biz burada sadece gerçekten şeyi görmek istedik. Ne kadar, ne tür sonuçlara ulaşıyorsunuz. Biraz zorlamanızı istedik. Güzel bir şey. Peki.
+
+373
+01:10:36,724 --> 01:10:49,004
+Şimdi, yani puan da çok değil farkındaysanız, siz mağdur olmayın, sadece uğraşın, oluyorsa ödevden 120 alırsınız mesela, olmuyorsa da en yüksek 90 alırsınız, yani bu sizi zarara sokmaz.
+
+374
+01:10:49,004 --> 01:10:57,524
+Peki, şimdi arkadaşlar, bugün tam güzel giriş yapmıştım aslında az önce, farklı algoritma türleri için farklı çözümleri gördüm.
+
+375
+01:10:57,623 --> 01:11:04,724
+Mesela dinamik programlamada daha önceden hesapladığımız sonuçları kullanarak, işte Blutforce'da bütün...
+
+376
+01:11:04,724 --> 01:11:19,104
+o masyarakları denememiz gerekirken önceden hesapladığımız sonuçları kullanarak işte karmaşıklığı genellikle saklamak için kullandığımız vektörün veya işte saklamak için kullandığımız maddesin büyüklüğü.
+
+377
+01:11:19,104 --> 01:11:36,423
+kadar olan karmaşıklıkta mesela bu Long-Scan's Subsequence'da karmaşıklık nedir aslında? N çarpı, N'dir mesela. Problemi çözebilen algoritmalar kurabiliyoruz. Şimdi yeni bir türden bahsedeceğim bugün sizlere. Bu da backtracking.
+
+378
+01:11:39,699 --> 01:11:52,699
+Backtracking'de mantık şu, diyelim ki labirentteki bir fareyi düşünün. Fare işte buradan yola çıktı. Ondan sonra...
+
+379
+01:11:55,091 --> 01:12:05,412
+Şurada iki tane şey var, şurada karar verecek. Sola mı, yukarıdan mı gitsin, aşağıdan mı gitsin? Ne yapar mantıken? Birini seçer. Yani yapacak bir şey yok.
+
+380
+01:12:05,412 --> 01:12:16,091
+Seçti şuradan, görüyorsunuz sanıyorum çizdiğim çizdiği geldi. Burada bir tane daha seçenek var. O da böyle gidiyor, iki yöne gidiyor.
+
+381
+01:12:16,091 --> 01:12:23,091
+Şimdi mantıken biz bunu bilgisayar problemleri yapıyorsak bir hiyerarşi takip etmek zorundayız ki nereden geldi, nereye gidiyor?
+
+382
+01:12:23,091 --> 01:12:36,091
+Bilelim, o yüzden biz yine üsttekini seçeriz. Alttakini seçmeyiz ve sırayla yapalım mantığında. Üsttekini seçti ve burada deden burdan daha ileriye gidilmiyor.
+
+383
+01:12:36,091 --> 01:12:45,091
+O zaman ne yaparsınız? Burdan böyle geri dönersiniz. En başa kadar mı dönersiniz yoksa bu noktadaki ikinci seçeneği mi denersiniz?
+
+384
+01:12:45,091 --> 01:12:47,723
+Bu noktadaki ikinci seçeneğe dönemez.
+
+385
+01:12:47,731 --> 01:13:05,731
+Çok doğru. Niye? Çünkü bunu unutmamanız lazım. Belki buradan bir sonuç elde ediliyordu. Bu da neden de olsun? Ondan sonra ne yaparsınız? Demek ki burada bir umut yok. Şöyle geri dönersiniz, bu tarafı denersiniz değil mi?
+
+386
+01:13:15,731 --> 01:13:27,332
+Bir hedefe ulaşana kadar, yani burada da mesela şöyle bir yer var, mesela burada da böyle var, böyle var, işte böyle devam ediyor.
+
+387
+01:13:27,667 --> 01:13:37,667
+Mesela bu hatta şöyle de devam etsin. Böyle bir sürü seçenek var aslında. Ama bu [öğrenci]'nin derdi canını kurtarmak olduğu için Nabilat'ten geldi bunu denedi.
+
+388
+01:13:37,667 --> 01:13:44,667
+Buradan buraya geldi ve burada bir çıkış var diyelim ki ya da koyayım şuraya.
+
+389
+01:13:47,347 --> 01:14:15,347
+Daha fazla denemez. Ondan sonra şeye karar verir. Buradan çıkıp canını kurtarmaya karar verir. Şimdi dinamik programlama da bizim yaptığımız şey olası bütün alt işlemleri gerçekleştirmekte. Backtracking'te yaptığımız şeyde bir noktadan sonra bir eğer çözüme ulaşılamayacaksa, gidilemeyecekse oradan...
+
+390
+01:14:15,347 --> 01:14:42,315
+Buradan geri dönmek, backtracking'in esas mantığı bu. Yani daha fazla bir çözüm çıkmayacağını gördüğünüz noktadan geri dönmek ama geri dönerken de bunu bir hiyerarşiyle yapmak. Yani en başa geri dönmek değil, iyi tamam bu da olmadı, peki o zaman buradan deneseydim ne olacaktı, o olmadı geri dönseydim ne olacaktı şeklinde bir şeye göre adım adım geri dönmek, backtracking'in yapmak.
+
+391
+01:14:42,579 --> 01:14:58,579
+Peki, o zaman sizce backtracking'de temel olarak mesela kullanabileceğiniz bir şey geliyor mu aklınıza bildiğiniz yöntemlerden? Backtracking yapmak için ne kullanabiliriz geliyor mu?
+
+392
+01:14:58,579 --> 01:15:03,579
+Depth first search vardı sanırım. Benziyor.
+
+393
+01:15:08,500 --> 01:15:11,760
+yöntemlerden birisi Death First Search.
+
+394
+01:15:12,532 --> 01:15:31,832
+DFS yöntemi. Şimdi ilerlemeden önce size birazcık şeyi hatırlatacağım. Matrislerde şeyleri nasıl yaptığımızı hatırlatacağım. Bugün öyle yaparız diye konuştuk, üzerinden geçme yaparız diye konuştuk.
+
+395
+01:15:32,451 --> 01:15:40,512
+Bread first search, debt first search nasıl yapılıyordu, ne oluyordu bunlardan bahsedeceğim. Graflarla ilgili yapılabilir.
+
+396
+01:15:40,532 --> 01:16:04,532
+yapabilecek şeylerden bahsedeceğim. Hatırlarsanız, sıraplarla çalışırken bir şey vardı, iki temel öncelikle kullanabileceğimiz veri yapısı vardı. Aslında graf bir şey, abstrakt veri yapısı. Yani gerçekte böyle bir veri yapısı yok. Biz bunu elimizdeki mevcut veri yapılarıyla kullanarak...
+
+397
+01:16:04,659 --> 01:16:15,819
+gerçekleştiriyorduk. Bunlardan birincisi komşuluk madresi idi. İkincisi de komşuluk.
+
+398
+01:16:17,043 --> 01:16:44,103
+listesiydi. Matris olduğunda, şimdi şöyle bir, yani çok basit hatırlatacağım, endişe etmeyin. Çünkü bunları iyi bildiğinizi varsayıyorum. Diyelim ki şöyle bir matrisiniz varsa, şey, grafınız varsa, biz bunu konşunluk matrisinde yaptığımızda ne yapıyorduk? Şöyle düşüncek olursak, A, B, C, D diye düşüncek olursak, A.
+
+399
+01:16:45,811 --> 01:17:08,672
+C, D şeklinde. Yani aslında gerçekte burası 0-1-2-3. sütunlar. Burası 0-1-2-3. satırlar. Eğer bu sadece Edge'lerin bir ağırlığı yoksa o da olabilir. Mesela ağırlık da koyayım buraya. Bu directed olmayan, undirected bir graf.
+
+400
+01:17:11,060 --> 01:17:15,319
+Ne yapıyorduk? İşte AB'ye 5 yazdık, AD'ye 12 yazdık. Pardon.
+
+401
+01:17:18,399 --> 01:17:26,360
+AD'ye 12 yazdık. Tabii ki BA'ya da 5 yazdık. Mesela ne bileyim işte. Şurada BC'ye de bağlı olsun.
+
+402
+01:17:27,572 --> 01:17:41,871
+BC'ye 8 yazdık, CB'ye de 8 yazdık, görsüz çünkü. AC'ye 21 yazdık, CA'ye 21 yazdık. Bu şekilde matrisle bunu gerçekleştiriyorduk.
+
+403
+01:17:41,871 --> 01:17:53,871
+Eğer liste yapacak olursak da şöyle yapıyorduk. Şurası A düğümü için, şurası B düğümü için, burası C düğümü için, burası D düğümü için bir...
+
+404
+01:17:54,612 --> 01:18:19,211
+linkli liste yapısı kuruyorduk ve A'nın bağlı olduğu düğümler işte B'ye bağlı değeri 5, C'ye bağlı değeri 21 ve D'ye bağlı değeri 12 şeklinde şey yapıyorduk.
+
+405
+01:18:20,532 --> 01:18:34,212
+bağlı olduğu düğümleri gösteriyorduk sadece. Aynı şekilde yani bunu B, C, D her şeyi yazmamışım. Söylemiyorsunuz ya, D A bağlı onun için. D için de bunları yapıyorduk.
+
+406
+01:18:34,492 --> 01:18:38,052
+Peki ne zaman matris, ne zaman graf kullanmak mümkün sizce?
+
+407
+01:18:45,939 --> 01:18:52,319
+Yani düğümlerin adediyle alakalı olabilir hocam. Mesela çok karmaşıksa matris de daha kolay gözlemlenir gibi düşüneceğiz.
+
+408
+01:18:55,920 --> 01:19:01,799
+Yani düğümlerin durumu derken, düğüm değil de eclerin durumu aslında demek istediğini anladım.
+
+409
+01:19:02,420 --> 01:19:05,059
+Basit bir şey yok büyük şey ama dolu değilse drafta.
+
+410
+01:19:05,059 --> 01:19:12,799
+Evet. Eğer spars ise problemde spars bir matris oluşuyorsa,
+
+411
+01:19:14,228 --> 01:19:18,228
+O zaman, Adjustment List kullanmanız...
+
+412
+01:19:19,699 --> 01:19:41,059
+İdeal. Neden? Çünkü yani diyelim ki işte hep ben aynı örneği veriyorum çok akılda kalıcı olduğu için. Facebook'ta bir milyar kullanıcı var ama her kullanıcının işte en fazla 200 komşusu oluyor yani 200 tane pardon arkadaşı oluyorsa bir milyara 200 bir graftan bahsediyorsunuz.
+
+413
+01:19:47,699 --> 01:19:59,699
+Sipars bir matristen bahsediyorsunuz demektir. Ama bunu bir liste olarak düşünecek olursak, bir milyar tane linkli listeniz var ama her linkli, yani bir milyar tane...
+
+414
+01:20:00,000 --> 01:20:16,479
+Bir milyon dizimiz var ve her dizi bir LinkedIn listeyi gösteriyor. O LinkedIn listelerde en uzun 200 tane yaklaşık oluyor. O zaman diğer kazancınız çok bariz bir şekilde oluyor.
+
+415
+01:20:16,479 --> 01:20:26,079
+Demek ki eğer spars olursa dizi, dance olursa matriz kullanacaksınız demektir.
+
+416
+01:20:28,000 --> 01:20:29,868
+devam edeceğim.
+
+417
+01:23:31,667 --> 01:23:36,827
+Evet arkadaşlar, pardon dil geldi ama aa kalemimi kaybettim. Bir saniye durayım, bir daha gidip geleceğim.
+
+418
+01:23:52,404 --> 01:23:53,744
+Ekranımı görüyorsunuz değil mi?
+
+419
+01:23:55,744 --> 01:24:01,424
+O zaman eğer bir şeyiniz varsa, ekranımı görüyor musunuz?
+
+420
+01:24:01,864 --> 01:24:02,744
+Görüyoruz hocam.
+
+421
+01:24:02,904 --> 01:24:03,304
+Evet hocam.
+
+422
+01:24:03,344 --> 01:24:04,864
+Tamam, bir an korktum.
+
+423
+01:24:05,543 --> 01:24:11,703
+Eğer şeyiniz varsa, bir matrisiniz varsa, ne kadar bir yere ihtiyacınız var?
+
+424
+01:24:13,924 --> 01:24:15,364
+V tane düğümünüz varsa?
+
+425
+01:24:23,028 --> 01:24:25,908
+Ne kadarlık? Bir tamamlamadım size soruyorum.
+
+426
+01:24:26,908 --> 01:24:29,468
+V çarpı V'likli matrize ihtiyacımız yok mu hocam?
+
+427
+01:24:29,468 --> 01:24:30,507
+Aynen öyle.
+
+428
+01:24:36,851 --> 01:24:50,612
+Bir V düğümünden bir V üstü düğümüne Edge var mıdır sorusunun cevabını almak istersen, matriste çalışıyorsan ne kadar zamanda bulabilirim bunu?
+
+429
+01:24:54,163 --> 01:25:02,163
+Yani A düğümü C'ye bağlı mı diye sorduğumda bunun cevabı için matrisle çalışıyorsam kaç adım iş yapmam gerekir?
+
+430
+01:25:06,676 --> 01:25:10,596
+Bir işlem değil mi direkt o kısmında bir değer var mı bakmamız lazım?
+
+431
+01:25:10,836 --> 01:25:12,855
+Evet, kendimizden şüphe etmeyin.
+
+432
+01:25:12,855 --> 01:25:17,076
+Yani AA kendinden kendine şey olmadığı için sıfır.
+
+433
+01:25:17,496 --> 01:25:24,195
+Mesela B'den D'ye sıfırsa, yani şuralar sıfır böyle, kendisinden kendisine yol olmadığı için,
+
+434
+01:25:24,736 --> 01:25:29,636
+B'de sıfırsa demek ki V düğümü W düğümüne bağlı değildir diyeceksiniz.
+
+435
+01:25:29,807 --> 01:25:35,887
+Listede peki ne kadarlık yere ihtiyacınız var?
+
+436
+01:25:42,931 --> 01:25:45,091
+Worst case'de not sayısı kadar galiba.
+
+437
+01:25:47,572 --> 01:25:49,451
+Eğer hepsi birbirine bağlıysa diyelim.
+
+438
+01:25:51,531 --> 01:25:53,572
+Yani ne kadar ihtiyacınız var arkadaşlar?
+
+439
+01:25:57,587 --> 01:26:25,167
+Bak şimdi, kaç tane şey var, düğüm var? 1, 2, 3, 4 tane düğüm var. Kaç tane bağlantı var? Bu çift yönlü olduğu için alacağız. 1, 2, 3, 4, 5, 6, 7, 8 tane bağlantı var. Size ne gerekiyor? 4 düğüm için buradan 4 gerekecek. Burada da maksimum 8'e kadar gidersiniz. Yani burada V artı E'lik yere ihtiyacınız var.
+
+440
+01:26:25,587 --> 01:26:30,108
+Yani burada 3 gideceksiniz, burada diyelim 2 gideceksiniz, burada 2 gideceksiniz falan.
+
+441
+01:26:30,268 --> 01:26:34,787
+Toplamın düğüm sayısı artı eş sayısı kadar olmak zorunda değil mi?
+
+442
+01:26:35,147 --> 01:26:38,028
+Yani bir kere 4 düğüm için bir dizi tanımlayacaksınız.
+
+443
+01:26:38,587 --> 01:26:47,207
+Arkasından da işte her düğüm kaç düğüme bağlıysa, yani toplam kaç eş varsa o kadarlık yer harcayacaksınız değil mi?
+
+444
+01:26:49,147 --> 01:26:49,907
+Mantığı bu.
+
+445
+01:26:52,532 --> 01:26:54,072
+Mantığı bu değil mi arkadaşlar?
+
+446
+01:26:54,612 --> 01:26:55,931
+Evet hocam, tamam anlaşıldı.
+
+447
+01:26:56,072 --> 01:26:57,211
+Tamam anlaşıldı.
+
+448
+01:26:57,211 --> 01:27:06,152
+Peki, eğer şeyse, burada sorarsanız, Digri ve Digri meyle Digri'yi hatırlatmak istiyorum.
+
+449
+01:27:07,532 --> 01:27:09,211
+Yani şöyle bir A düğümünün...
+
+450
+01:27:09,823 --> 01:27:26,703
+bağlı olduğu düğüm sayısıydı. Mesela burada Digri-A dediğimiz zaman, A'nın bağlı olduğu, iki düğüm olduğun için şey sayısı 2. Nedir? Digrisi 2. Tamam mı?
+
+451
+01:27:28,243 --> 01:27:39,983
+Dolayısıyla ben bir V düğümü W düğümüne bağlı mıdır dediğim zaman ne olmak zorunda? Mesela A düğümü D düğümüne bağlı mıdır dediğinizde ne yapmanız gerekiyor?
+
+452
+01:27:39,983 --> 01:27:48,523
+Linkli liste üzerinde ilerlemeniz gerekiyor. Buraya baktığınız D mi? Hayır. Buraya baktığınız D mi? Hayır. Buraya baktığınız D mi? Evet.
+
+453
+01:27:56,243 --> 01:28:09,243
+yani kaç düğme bağlıysa, worst case'de o kadar ilerlememiz lazım ki, herhangi iki düğümün bağlı olup olmadığını anlayabilirsiniz. Anlaşıldı mı bu?
+
+454
+01:28:09,243 --> 01:28:14,243
+Hocam aşağıda degree i 2 demişsiniz de 3 değil mi? B, C, D bağlı.
+
+455
+01:28:14,243 --> 01:28:16,243
+Şuna dedim ya.
+
+456
+01:28:16,243 --> 01:28:18,243
+Pardon, o örnek için tamam.
+
+457
+01:28:18,243 --> 01:28:22,243
+Yukarısı çok karışıktı da aşağıda gösterdi.
+
+458
+01:28:23,391 --> 01:28:46,971
+Tamam, oldu. Şimdi, o zaman demek ki ne oluyor? Sparse matris varsa liste mantıklı ama dense bir matrisiniz varsa, pardon, sparse bir graf yapınız varsa, yani her düğüm bütün düğümlere bağlı değil ise, o zaman bir liste yapısı kullanmanız, adjacency list, yani link liste mantığıyla bir yapı kurmanız mantıklı.
+
+459
+01:28:46,971 --> 01:28:51,391
+Ama düğümlerin çoğunlukla birbirine bağlı olduğu bir yapınız varsa,
+
+460
+01:28:51,391 --> 01:29:17,711
+Bu sefer mantris kurmanız mantıklı. Neden? Çünkü düğümlerle ilgili sorgulama yapmanız gerektiğinde herkesin çok gübüne bağlı olduğu bir şey dediği gibi değil ve sizi yoracak. Öbüründe bir adımda yaşıyorsunuz. Diyelim ki 10 bin tane düğümünüz var. Bunların işte her düğün 9 bin tane başka düğüme bağlıysa sürekli search yapmak, listeniz varsa efektif bir çözüm olmayacak.
+
+461
+01:29:17,711 --> 01:29:19,391
+Bu ne kadar sormak istediğim...
+
+462
+01:29:19,391 --> 01:29:21,228
+İzlediğiniz bir şey var mı?
+
+463
+01:29:25,492 --> 01:29:37,771
+Peki. Yani şeyde de, directed yani bir graf dediğiniz zamanda aslında benzer bir mantıkla problemi çözeceksiniz.
+
+464
+01:29:39,311 --> 01:29:47,012
+Buraya kadar şeyiniz yoksa, sorunuz yoksa, graflarla ilgili geçen sene çok zaten detaylı olarak gördüğünüz için
+
+465
+01:29:47,012 --> 01:29:53,492
+ben sadece depth-first search ve breadth-first search mantıklarından bahsedip onları hazırlayacağım.
+
+466
+01:29:53,492 --> 01:30:05,891
+sadece hatırlatmak istiyorum size. Ama lütfen sorunuz olursa şey olarak yani neyse sorunuz onu sorun. Oradan şey yapalım, devam edelim.
+
+467
+01:30:05,891 --> 01:30:19,011
+Şimdi diyelim ki şöyle bir şeyiniz olsun, matrisiniz olsun, bırakınız olsun. Şöyle bir A duyumumuz var, bir B duyumumuz var.
+
+468
+01:30:20,275 --> 01:30:22,188
+Çeviri ve Sıra.
+
+469
+01:30:27,828 --> 01:30:29,004
+Ema.
+
+470
+01:30:43,315 --> 01:30:44,915
+Ukadaar yeteri rade.
+
+471
+01:30:50,036 --> 01:30:59,155
+Böyle bir şey yeter herhalde. Şimdi Depth First Search'de yaptığımız dep sonuna kadar bakarak gitmek.
+
+472
+01:30:59,155 --> 01:31:14,036
+Yani şöyle bir şey olduğunda, grafımız olduğunda yaptığımız şey şu, diyelim ki A'dan çıktınız ve soru şu, A'dan G'ye...
+
+473
+01:31:15,283 --> 01:31:42,283
+Yol var mı? Sorunuz bu. A ve G birbirine bağlandı mı? Depth-for-search'e bakmak istiyordunuz. Şimdi A'dan yola çıktınız ve şöyle ilerlersiniz. A'dan B'ye gidersiniz. Sonuna kadar gidiyorsunuz. B'den E'ye gidersiniz. Neydi? Dur, G'ye buradan yol olmasın da başka birinden olsun. Tak diye hemen durmayın.
+
+474
+01:31:42,899 --> 01:31:51,899
+İstedim. D'den G olsun, şöyle yapayım. Aa, o da hemen buluyor yalnız, bir dakika. Hemen bulmayan başka ne olabilir?
+
+475
+01:31:56,564 --> 01:32:05,463
+C'den G'ye gideyim şöyle olsun. Tamam. E'den F'ye gidersiniz. E'den pardon D'ye gidersiniz.
+
+476
+01:32:09,652 --> 01:32:19,652
+Burada durdunuz şimdi. D'den başka bir yere gitmek mümkün değil. Burada durdunuz. O zaman bir adım geri dönersiniz. Az önce konuştuğunuz şey, D'den gidiş yok.
+
+477
+01:32:19,652 --> 01:32:33,652
+E'den F'ye gidersiniz mesela. F'den B'ye olsun. Şuradan şöyle bir şey yapayım. E'den F'ye gidersiniz. F'den de bir tek B'ye geri dönüş var. B zaten gezilmiş olduğu için oradan da geri dönersiniz.
+
+478
+01:32:37,652 --> 01:33:05,652
+B'ye gidiliyor, E'ye. E zaten gezilmiş bir yerde. Şimdi o zaman demek ki ne önem ortaya çıktı? Gidilen yerlere bir daha gitmenin anlamı yok. O zaman gidilen yerleri işaretleyelim. B'ye gittik işaretledik, E'ye gittik işaretledik, D'ye gittik işaretledik, F'ye gittik işaretledik. Bir daha bir daha buralara gitmenin anlamı yok. Şimdi B'den gidebileceğiniz bir tek E vardı. E'ye gidildiği için buradan da geri döndük. O zaman şimdi A...
+
+479
+01:33:05,652 --> 01:33:08,912
+A'dan nereye gideceğimize bakacağız. A'dan B'ye gidilebiliyor.
+
+480
+01:33:09,460 --> 01:33:34,939
+C'ye gidilebiliyor. Şimdi şuraya geldik. Bakın ne yaptınız? Geçen seneden bunları çok iyi biliyorsunuz ama hatırlamayanlar için hatırlatacağım. Ne yaptınız? Şöyle bir yol izlediniz hiç durmadan. A'dan B'ye geldiniz, B'den E'ye geldiniz, E'den B'ye geldiniz. Bu bir yolunuz oldu.
+
+481
+01:33:37,460 --> 01:34:04,639
+E'den F'ye geldiniz. Bu ikinci yolunuz oldu. Sonra bir adım geri döndünüz. B'den gidecek bir yol yok. A'dan şimdi C yolu deniyorsunuz. A'dan C'ye geldiniz. E'ye gidildiği için C'den E'ye gidemiyorsunuz. C'den G'ye geldiniz ve böylece aradığınız büyüme ulaşmış oldunuz.
+
+482
+01:34:04,851 --> 01:34:23,712
+Yani burada başladığımız bir noktadan durmadan devam ediyorsunuz. Ziyaret sıramız ne? A, B, E, D, A, B, E, D, F, ondan sonra C ve G. Buraya kadar sormak istediğiniz bir şey var mı?
+
+483
+01:34:33,492 --> 01:34:56,492
+Peki. Şimdi mantıken o zaman benim ne yapmam gerekiyor? A'dan B'ye gidip oradan hiç durmadan yoluma devam edeceksen, yani bu labirent meselesi gibi böyle geldim, durmadan yoluma devam ediyorsam ne yapmam lazım? Buradan geri dönersen nerede kaldığımı hatırlamam lazım. Yani E'den D'ye gittiğimde...
+
+484
+01:34:56,948 --> 01:35:16,108
+Bir de şeyi bilmem lazım, yani E'de kalmıştım, E'den D olmuyorsa F'ye gideceğimi biliyor olman lazım. Bu da bana neyi gösteriyor? Aslında Depth or Search'te bir adım öncesini aklımda tutmam gerektiğine göre bu akıda tutmalar için biz ne kullanıyorduk? Hangi veriyakısını kullanıyorduk?
+
+485
+01:35:16,108 --> 01:35:16,427
+Stag.
+
+486
+01:35:16,847 --> 01:35:37,108
+Harika. Stag veri yapısını kullanarak ben bu problemi çözerim. Şimdi stag veri yapısı kullanarak Depth for Search'u, bunları geçen sene anlatmıştım o yüzden böyle çok ağır ağır anlatmıyorum. Sizin de bildiğiniz gibi iki türlü çözebilirim. Gerçekten stag implement ederim ve bu siteyi kullanarak push-push-push öyle çözerim.
+
+487
+01:35:37,391 --> 01:35:53,631
+ya da kendisi zaten stake mount'unu kullanan bir başka yaklaşım olan Recurgeon'la çözebilirim. Eğer rekürsif çözersem çünkü o zaten aslında Recurgeon'un yaptığı şeydi.
+
+488
+01:35:56,083 --> 01:36:08,083
+şey yapmak, stack kullanarak çözmek. O zaman recursion ile çözersem, diyelim ki bu sadece şeyi göstermek için verilen bir G grafından.
+
+489
+01:36:09,619 --> 01:36:22,240
+Bir S-source düğümünden yola çıktığında, yani bütün grafı nasıl gezdiğini göstermek için, burada biz şeyi sormuştuk, A'dan G'ye yol var mı diye sormuştuk.
+
+490
+01:36:22,640 --> 01:36:34,720
+Bütün grafı yani bütün düğümleri nasıl gezdiğini göstermek için bu ana algoritma siz bunu kendi isteğinize göre, probleminize göre şekillendirebilirsiniz.
+
+491
+01:36:34,720 --> 01:36:37,160
+Mantıken ne yapmamız gerekiyor?
+
+492
+01:36:37,619 --> 01:36:45,180
+Bir kere her uğradığım düğümü bir işaretlemem gerekiyor.
+
+493
+01:36:45,876 --> 01:37:13,876
+Çünkü neden? Şurada şey diyorduk biz. Yani mesela B'de E'yi ziyaret etmek istiyor. Ben eğer bu şekilde davranırsam, labirent bantını düşünüp defalarca aynı düğünlerden gidip gidip işte o zaman E'ye geldiysem E'den D'ye gideceğim bilmem ne, o labirentten çıkamayacağım. Ama ben zaten E'ye geldiysem artık bir daha E ile ilgili yoldan devam etmem.
+
+494
+01:37:13,876 --> 01:37:22,876
+O yüzden uğradığım düğümleri mutlaka bu düğümden geçildiği anlamında işaretlemem gerekiyor.
+
+495
+01:37:22,876 --> 01:37:27,876
+Yaptığım şey bu. Yani eski düğümünden işe başladım, bunu işaretledim. Ondan sonra...
+
+496
+01:37:29,844 --> 01:37:42,563
+ne yapacağım? Esim bütün düğümlerini ziyaret edeceğim. Bunu da nasıl yapacağım? Şöyle yapacağım. Şuraya yazayım ve üzerinden anlatayım.
+
+497
+01:37:54,228 --> 01:38:05,467
+Bu kadar. Nasıl yapacağım? Şimdi B'nin ziyaret edilmemiş bütün düğümleri için DPST'yi çağır dediğimde, o az önce söylediğim şey oluyor.
+
+498
+01:38:05,467 --> 01:38:15,467
+Diyelim A'dan B'ye de gidiliyordu, C'ye de gidiliyordu, B'den B'ye gidiliyor. Ne oldu? A'nın komşu düğümü olan B'ye geldi.
+
+499
+01:38:16,047 --> 01:38:21,167
+B için de first search'u çağırması demek. Artık B'nin komşularına bakacak demek.
+
+500
+01:38:21,716 --> 01:38:35,716
+B'nin komşuları bitince A'nın öbür komşusuna geçecek. Yani bu sizin de bildiğiniz gibi, Ritöroj'un kendi kendine zaten bu stek mantığını kullanmış oluyor.
+
+501
+01:38:35,716 --> 01:38:44,716
+Buraya kadar bir sorunuz var mı? Yani hatırlatma açısından faydalı oldum, hatırladınız değil mi?
+
+502
+01:38:46,003 --> 01:38:48,003
+İyi mi şu anda?
+
+503
+01:38:48,003 --> 01:38:54,003
+Hocam, ben şey soracaktım. Bu arama işlemini yani kodsal olarak düşünüyorum.
+
+504
+01:38:54,003 --> 01:38:58,895
+[öğrenci] hocam. Kodsal olarak düşünüyorum. Mesela tüm...
+
+505
+01:38:58,895 --> 01:39:08,376
+Eğer tüm hani şeyleri, Ecz'leri visited olarak işaretlediysek ve hala aradığımız işaretlenmemişse o zaman mı şey kararı vereceğiz? Bir yol yoktur.
+
+506
+01:39:08,536 --> 01:39:11,275
+Aynen öyle, çok güzel söyledin. Aynen öyle.
+
+507
+01:39:12,136 --> 01:39:18,596
+Eğer tabii ki şey var yani o zaman sen şöyle bir etiket şeyi tutuyorsun normalde.
+
+508
+01:39:18,596 --> 01:39:25,916
+Mesela işte A, B, C, D düğümlerin için yani sıfırıncının, birincinin, ikinci.
+
+509
+01:39:26,612 --> 01:39:45,612
+İngiliz üçüncü indiz. Sıfır bunlar diyelim ki. Ondan sonra işte visited diye de şey yapıyorsun. Visited olunca bir bir bir yaptım böyle. Ondan sonra şey üzerinde de gezdikçe bunları birledim. Yolada çıktım. Artık ziyaret edecek yani şurada mesela böyle bir...
+
+510
+01:39:46,003 --> 01:39:56,803
+graf olduğunu düşün. A'dan B'ye gitti, B'den D'ye gitti, D'nin komşusu yok döndü, B'nin komşusu yok döndü, A'ya geldi, C'ye gitti, sen G'ye bağlı mıydı diyorsun mesela.
+
+511
+01:39:56,903 --> 01:40:05,983
+G'ye bağlı tek başına duran bir şeydi. Ondan sonra artık gidebileceği bir şey kalmadı. O zaman diyorsun ki tamam G'ye bağlı değilmiş diyorsun mesela.
+
+512
+01:40:06,387 --> 01:40:15,127
+Yani her soruya göre değişir. Mesela kaç tane alt graf vardı dersen, başka şey yaparsın falan. Oldu bunun sorunun cevabını?
+
+513
+01:40:16,327 --> 01:40:17,667
+Evet hocam anladım. Teşekkürler.
+
+514
+01:40:18,268 --> 01:40:27,947
+Ben teşekkür ederim. Şimdi bunun eğer non-recursive çözersek, o zaman stack kullanarak çözmemiz gerekecek.
+
+515
+01:40:38,323 --> 01:40:43,523
+O zaman biz kendimiz bir stack fonksiyonlarımız olduğunu düşünelim.
+
+516
+01:40:44,123 --> 01:40:49,323
+Siteye bu S source düğümünü atacağız.
+
+517
+01:40:50,063 --> 01:40:54,843
+Ondan sonra bu source düğümünü visited olarak işaretleyeceğiz.
+
+518
+01:40:54,843 --> 01:40:58,699
+Bu sefer stack boşalana kadar...
+
+519
+01:41:02,003 --> 01:41:07,003
+Çünkü steak boy ise artık bakacak şey komşu kalmamış demektir.
+
+520
+01:41:07,003 --> 01:41:15,003
+Steğin üstündeki düğümü çekeceğiz ve onun komşularına bakacağız.
+
+521
+01:41:36,916 --> 01:41:46,436
+Eğer komşu W değil mi şey yapılmamışsa, az önce fonksiyonu çağırıyorduk, Left-Four Search'u çağırıyorduk.
+
+522
+01:41:46,436 --> 01:41:52,811
+Bunu da onun yerine V siteye basıp, onu...
+
+523
+01:41:53,268 --> 01:42:06,408
+visited diye işaretleyip döngüye geri döneceğiz. Döngüye geri döndüğümüzde ne olacak? Yine steyreyn üstünde ne varsa onu çağıracak falan. Bu şekilde yoluna devam edecek. Burada sormak istediğiniz bir şey var mı?
+
+524
+01:42:22,195 --> 01:42:34,596
+Şimdi, en yakın zamanda gördüğümüzde, VSA application topolojik sortu. Topolojik sortu hatırlıyorsunuz değil mi? şeyde görmüştük, Big Risen Conquer'da görmüştük.
+
+525
+01:42:36,627 --> 01:42:39,948
+Yapılacak işlerde öncelik sırası galiba.
+
+526
+01:42:39,948 --> 01:42:58,728
+Aynen öyle. Kesinlikle öyle. Mesela ön şartı olan dersleri almadan sonraki dersi alamazsın şeklinde. Topolojik sortta şeyi görmüştük. Hatta şuralarda, şurada çıkabilir. Dur bakayım. Bu da çok iyi bir şeymiş. Böyle ne anlattıysam.
+
+527
+01:43:02,963 --> 01:43:04,963
+Bu tarafta mı bilmiyorum tabi de.
+
+528
+01:43:11,123 --> 01:43:14,123
+Bu kadar da çok şey anlatmışız dönemden, hocam.
+
+529
+01:43:18,131 --> 01:43:19,771
+Bir de bunun geri dönmesi var arkadaşlar.
+
+530
+01:43:21,831 --> 01:43:22,491
+Doğru neyse.
+
+531
+01:43:23,531 --> 01:43:25,291
+Evet, topolojik sort.
+
+532
+01:43:26,171 --> 01:43:28,331
+Şey nedir?
+
+533
+01:43:28,951 --> 01:43:32,791
+Mesela sırasıyla hangi işleri yapabilirsiniz?
+
+534
+01:43:32,991 --> 01:43:37,191
+Bakın topolojik sortta şeye bakıyorsunuz.
+
+535
+01:43:37,191 --> 01:43:44,191
+Önce degresi sıfır olan bir işten yani kendisine hiçbir düğümün bağlı olmadığı bir...
+
+536
+01:43:44,819 --> 01:43:52,699
+şeyden başlıyorsunuz, işten başlıyorsunuz. Ondan sonra da A'dan başladık mesela. Ondan sonra, hatırlıyor musunuz bunu?
+
+537
+01:43:55,500 --> 01:43:56,340
+Evet hocam.
+
+538
+01:43:57,059 --> 01:44:07,819
+Tamam, A'dan başladınız. Burada mesela şey yapa yapa sırayla baka baka gidiyorsunuz. Mesela bunu çözmenin yollarından birisi şey...
+
+539
+01:44:07,823 --> 01:44:18,764
+Depth-first search yöntemiyle çözebilirsiniz. Yollardan birisi bu. Sonra işte az önce gördüğünüz gibi, ay çok fena.
+
+540
+01:44:21,483 --> 01:44:22,724
+Bir de bize sordun hocam.
+
+541
+01:44:23,503 --> 01:44:26,103
+Sizde ne oluyor? Ekranı bir freç ediyor mu?
+
+542
+01:44:27,783 --> 01:44:28,384
+Ediyordu.
+
+543
+01:44:29,332 --> 01:44:34,592
+Edemiyor değil mi? Şu anda normale geldi mi? Keşke paylaşmasaydım ekranı. Neyse, üzgünüm.
+
+544
+01:44:35,931 --> 01:44:44,632
+Şey mesela, az önce konuştuğumuz bir A düğümünden bir B düğümüne şey var mı, yol var mı mesela?
+
+545
+01:44:44,851 --> 01:44:47,652
+İşte Ayşe ile Ali arkadaş mı Facebook'ta?
+
+546
+01:44:48,047 --> 01:44:54,487
+Ondan sonra mesela Cycle Detection, A düğümünden çıktım, tekrar A düğümüne dönebiliyor muyum?
+
+547
+01:44:54,487 --> 01:45:04,067
+Yani şöyle gittim A'dan geldim, B'ye gittim, C'ye geldim, tekrar hop buraya dönüyorsam Cycle'ı böyle Depth First Search ile yakalayabilirim.
+
+548
+01:45:05,067 --> 01:45:08,167
+Mesela bunlar Connected Component.
+
+549
+01:45:10,287 --> 01:45:11,727
+Yine aynı mantıkta.
+
+550
+01:45:13,235 --> 01:45:32,796
+Diyelim ki iki tane komponentiniz var. Şu bir komponent. ABC bir komponent, DEF bir komponent. Yine Depth First Search ile burası bitti mi sayacaksınız bir diye. Kalan ürünler için tekrar başlayacaksınız. Bu bittiğinde sayacaksınız iki diye.
+
+551
+01:45:40,851 --> 01:45:48,851
+oluştuğunu, yani kaç tane birbirine bağlı birleşen olduğunu bulabilmiş olacaksınız. Buraya kadar sormak istediğiniz bir şey var mı?
+
+552
+01:45:53,844 --> 01:46:07,043
+Peki. Peki o zaman şeyden bahsedeyim bir de. Bu hafta burada bitiririz. Haftaya backtracking'in nasıl yapıldığından bahsederiz.
+
+553
+01:46:08,404 --> 01:46:28,744
+Bradford Search'de az önceki problemin aksine enine arama yapıyor. A mesela şöyle gidiyordu diyelim ki D, ondan sonra işte E, F mesela şöyle bir yapı vardı.
+
+554
+01:46:34,579 --> 01:46:47,420
+C'ye ve E'ye, pardon, C'ye ve E'ye gidiliyor. Sonra işte B'den nerelere gidiliyorsa diye yapılıyor. O yüzden de yani bu da şöyle olacak aslında.
+
+555
+01:46:49,920 --> 01:47:00,639
+A'dan B'ye gitti, C'ye gitti, E'ye gitti. Sonra sıra B'ye geldi. B'den D'ye gitti.
+
+556
+01:47:02,228 --> 01:47:06,307
+Bir dakika arkadaşlar, iki dakika görevereceğim.
+
+557
+01:48:43,283 --> 01:48:45,903
+Evet, pardon arkadaşlar, devam ediyorum.
+
+558
+01:48:48,443 --> 01:48:55,003
+Şimdi burada A, B, C'de E, D, D'den B'ye gitti, B'nin giden başka bir şey yok.
+
+559
+01:48:55,144 --> 01:48:57,524
+C'ye geldi, C'den G'ye gidecek.
+
+560
+01:48:57,524 --> 01:49:03,524
+Bu şekilde, C'den G'ye gidecek, bu şekilde...
+
+561
+01:49:05,043 --> 01:49:10,323
+en son A'dan E'ye, E'den F'ye gidecek. Bu şekilde tutmak zorunda bilgileri.
+
+562
+01:49:10,323 --> 01:49:13,603
+O zaman Red First Sorucu'nun geçen seneden hatırlarsınız.
+
+563
+01:49:13,603 --> 01:49:18,804
+Bunun bu bilgileri bu şekilde saklayabilmesi için kullanması gereken bir yapısını.
+
+564
+01:49:22,931 --> 01:49:24,931
+Yiyon kullanacaklar.
+
+565
+01:49:24,931 --> 01:49:26,931
+Ne?
+
+566
+01:49:26,931 --> 01:49:30,635
+Kuyruk parlamış.
+
+567
+01:49:30,963 --> 01:49:33,723
+Tamam, kuyruk kullanacağız. Nasıl yapacak aslında?
+
+568
+01:49:34,983 --> 01:49:40,663
+A düğümü geldiğinde A'nın bağlı olduğu düğükleri kuyruğa yazacak. B, C, E diye.
+
+569
+01:49:40,844 --> 01:49:48,723
+Ki A'dan sonra B'yi işleyebilsin ve yazdıklarını da işaretleyecek. B, C, E şeklinde.
+
+570
+01:49:48,723 --> 01:49:53,723
+Ve A'yı kuyruktan çıkartacak. Kuyruğun başında B, C, E var.
+
+571
+01:49:54,899 --> 01:50:17,379
+B gelince, ondan sonra B'nin bağlı olduğu düğümleri kuyruğa ekleyecek. B'nin bağlı olduğu bir tek D var. B'yi kuyruktan çıkartacak. C gelince C'nin bağlı olduğu, ne oldu şimdi? Bakın A'yı yaptık, B'yi yaptık, C'deyiz. C'nin bağlı olduğu düğümleri kuyruğa ekleyecek. A var.
+
+572
+01:50:18,036 --> 01:50:44,996
+A, vizitit olduğu için girmez, D var, o da işaretli olduğu için girmeyecek, vizitit olduğu için. G var, G'yi kuyruğa yerleştirecek, C de bitti. C kuyruktan çıktı, E geldi, E'nin komşularına bakılıyor. E'nin şimdi A var, A işareti, F'yi yazacak, F'yi yazdık. E çıktı kuyruktan, işte D'ye bakılacak, D'nin işaretlenmemiş komşusu yok.
+
+573
+01:50:46,036 --> 01:50:53,696
+D çıktı, G'ye geldi, G'nin işaretlenmemiş komşusu yok, F geldi, F'nin işaretlenmemiş komşusu yok.
+
+574
+01:50:55,216 --> 01:51:02,576
+Bu sayede ne oldu? Kuyruk boş şu anda, kuyrukta kimse kalmayınca işlem tamamlanmış olacak.
+
+575
+01:51:02,916 --> 01:51:10,596
+O zaman Bread First Search'ta bizim yaptığımız şey, kuyruk yapısıyla problemi çözmeye çalışmak.
+
+576
+01:51:13,492 --> 01:51:20,492
+Bradford Search'ta o zaman Algorithman'ın nasıl çalıştığını hatırlatayım size, kuyruk kullanarak.
+
+577
+01:51:20,912 --> 01:51:29,652
+Yine bir graftan çıkıp, grafta bir S büyüğümden yola çıkıp bütün büyüğümleri nasıl ziyaret ettiğimize bakalım.
+
+578
+01:51:30,851 --> 01:51:41,492
+Diyelim ki S büyüğümden yola çıktık, o zaman S büyüğümünü kuyruğa yerleştireceğim ve S büyüğümünü işaretleyelim.
+
+579
+01:51:41,492 --> 01:51:51,492
+ziyaret edildi olarak. Ve bu sefer kuyruk boşalana kadar, kuyruktaki elemanlar bitene kadar,
+
+580
+01:51:51,492 --> 01:51:58,188
+ne yapacağım? Kuyruğun başındaki elemanı çekeceğim.
+
+581
+01:52:02,387 --> 01:52:11,627
+kuyruğun en başındaki elemanı çekeceğim. Bu sefer bunun komşuları için aynı işlemini tekrar edeceğim.
+
+582
+01:52:22,836 --> 01:52:34,695
+Komşu düğümleri için, G grafındaki, eğer bu W düğümü ziyaret edilmediyse,
+
+583
+01:52:44,115 --> 01:52:54,115
+bu yuva yerleştireceğim ve bunu ziyaret edildi olarak işaretleyeceğim. Yaptığım şey bu.
+
+584
+01:52:54,115 --> 01:52:59,435
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+585
+01:53:03,283 --> 01:53:08,583
+Şimdi baktığınız zaman Bradford Search'un bir kere şöyle bir şey var yani.
+
+586
+01:53:12,148 --> 01:53:31,627
+Hem Bradford Search'in hem Bradford Search'in pek çok problemi çözebilme durumu var zaten.
+
+587
+01:53:31,627 --> 01:53:37,108
+Yani aynı problemi hem Bradford Search'te hem de Bradford Search'te çözebilirsiniz aslında.
+
+588
+01:53:37,768 --> 01:53:40,148
+Ama birinin diğerine göre avantajlı olur.
+
+589
+01:53:40,148 --> 01:53:44,148
+A düğümünden B düğümüne gidebilir miyim?
+
+590
+01:53:44,340 --> 01:54:12,020
+bilgimizde. Depth first search daha mantıklı. Neden? Çünkü orada böyle yola çıkıyorsunuz, hiç durmadan gidiyorsunuz. Yani o şey yapıyor, böyle hiç durmadan bakıyor. Ama öbürü ne yapıyor? Yani önce birinci kattaki komşulara bakıyor. O bitiyor, ikinci kattaki komşulara bakıyor. Dolayısıyla yani öyle bir durumda depth first search daha mantıklı mesela. Ama depth first search de mesela shortest pet de daha mantıklı. Yani
+
+591
+01:54:12,340 --> 01:54:20,140
+bir A'dan bir B düğümüne en kısa yolu bulma dediğimizde, o da kademe kademe gittiği için daha avantaj.
+
+592
+01:54:20,140 --> 01:54:30,779
+Çünkü buradan şeyi yakalayabilmemiz çok zor. Yani A'dan bir C düğümüne olan en kısa mesafeyi bu şekilde Dead First Search'ta yakalayabilmemiz daha zor.
+
+593
+01:54:30,859 --> 01:54:40,340
+Ama Red First Search'ta kademe kademe gittiği için A'ya bir uzaklıktaki düğümleri, iki uzaklıktaki düğümleri, üç uzaklıktaki düğümleri görebilmiş oluyorsunuz.
+
+594
+01:54:40,340 --> 01:54:50,340
+Ağırlık değerleri yoksa tabi. Mesela işte şey diyelim ki BitTorrent.
+
+595
+01:54:54,003 --> 01:55:04,003
+İşte komşu şeyleri, düğümleri bulmak için BitTorrent'ta işte şeylerde, peer-to-peer network'ta
+
+596
+01:55:06,804 --> 01:55:16,003
+nerelerden bilgi alabileceğini bulmak için şey kullanılıyor BitTorrent'ta, Red-first Search kullanılıyor.
+
+597
+01:55:16,003 --> 01:55:19,003
+Mesela şeyler işte GPS...
+
+598
+01:55:19,475 --> 01:55:35,635
+şeyleri, sistemleri şey kullanıyor, bread first search kullanıyor şey için. Google Map'te, işte Kadıköy'den çıktım Beşiktaş'a nasıl gideyim, en uygun yol nedir dediğimizde aslında o bread first, aa!
+
+599
+01:55:36,467 --> 01:55:52,467
+Bread-first search'ı kullanıyor. İşte şeyler, minimum spinning tree mantıklı sorular yine aynı şekilde. Onlar da bread-first search'ı kullanıyor. Başka şeyler...
+
+600
+01:55:53,971 --> 01:55:58,351
+Search engine'lerdeki crawler'lar Bradford Search'u kullanıyor.
+
+601
+01:55:58,351 --> 01:56:11,271
+Yani bunlar şey kullanabileceğiniz, Bradford Search'u kullanabileceğiniz farklı şeyler, imkanlar, ortamlar.
+
+602
+01:56:13,871 --> 01:56:16,351
+Fakat şey yani...
+
+603
+01:56:17,427 --> 01:56:23,967
+Dediğim gibi aslında ikisinin de genelde hepsine çözümün var aslında.
+
+604
+01:56:24,448 --> 01:56:30,368
+Şimdi biz önümüzdeki haftadan itibaren birkaç hafta backtracking'i göreceğiz.
+
+605
+01:56:30,368 --> 01:56:37,368
+Yani işte bir noktadan çıktığımızda...
+
+606
+01:56:37,779 --> 01:57:00,331
+çıkış noktasına ulaşmak için işte bir yol kapalıysa öbür yoldan nasıl devam ederiz onu göreceğiz. İlk göreceğimiz soru n-queen algoritması. Şimdi sadece soruyu verip burada dersi bırakacağım. n-queen algoritmasında
+
+607
+01:57:00,595 --> 01:57:08,835
+soru aslında vezirleri birbirini görmeyecek şekilde yerleştirmek.
+
+608
+01:57:16,948 --> 01:57:23,707
+4 tane veziriniz var. Bir satranç tahtasına, örneğin en eşitli 4 için, şimdi 8 için altından kalkamayız bugün bunu.
+
+609
+01:57:24,828 --> 01:57:30,188
+Şeyi yerleştireceksiniz, vezirleri yerleştireceksiniz, birbirini görmeyecek şekilde.
+
+610
+01:57:30,707 --> 01:57:33,467
+Yani şu vezir buradaysa, ikinci vezir burada olmalı.
+
+611
+01:57:33,967 --> 01:57:37,387
+4 veziri nasıl yerleştirirsiniz? Soru bu.
+
+612
+01:57:39,967 --> 01:57:44,028
+Satranç tahtasına, 4 vezir birbirini görmeyecek şekilde.
+
+613
+01:57:44,564 --> 01:58:02,704
+nasıl yerleşir? Soru bu. Şimdi siz önce bir kendiniz uğraşın, nasıl yerleştirdiğinizi bulmaya çalışın, algoritmayla ne yapardınız? Ondan sonra önümüzdeki hafta üzerinde birlikte düşünelim. Sormak istediğiniz bir şey var mı bu yakada?
+
+614
+01:58:04,372 --> 01:58:12,812
+Hocam, şey soracaktım, Bread First Search'te ortada rekürsif olarak yazılabilir değil mi? Ama karmaşıklık mı artar?
+
+615
+01:58:13,932 --> 01:58:15,752
+Yok, onu rekürsif yazma.
+
+616
+01:58:16,948 --> 01:58:25,748
+Yani onun mantığı çünkü rekürsif çözülecek bir mantık değil. Orada gerçekten kuyruk mantığı şey olması gerekiyor.
+
+617
+01:58:25,908 --> 01:58:34,348
+Yani şöyle gidiyorsun ya, rekürsifte bir yere kadar, hep öyle bir yere kadar gider, toplaya toplaya geri dönersin mesela.
+
+618
+01:58:34,528 --> 01:58:42,448
+Hani mantık odur ya rekürsiflikte. Burada öyle bir şey yok. Yani A'nın komşusu B ama C'de yani o kuyruk kullanıyorsun.
+
+619
+01:58:42,448 --> 01:58:44,928
+Yani şu seviyeyi bitirdim, hadi bakalım B'nin.
+
+620
+01:58:44,948 --> 01:58:57,428
+C'nin komşularına, hadi bu seviyeyi bitirdim, hadi C'nin komşularına falan. Orada rekürsif, yani evet çözersin, eminim ki çözümü vardır ama çok daha şey olur, kompleks olur, mantık rekürsü olur.
+
+621
+01:58:57,428 --> 01:58:57,628
+Mantıklı olur.
+
+622
+01:58:58,008 --> 01:59:00,748
+Evet, yani mantığı rekürsüte uygun bir mantık değil.
+
+623
+01:59:01,619 --> 01:59:08,740
+Tamam hocam, stek yapısı kullanıyorsak recursive yazmak daha olabilir dediniz de oradan dikkatimi çekti.
+
+624
+01:59:08,740 --> 01:59:12,500
+Ama bak dikkat et ne dedim, Brad First Search ne kullanıyor dedik.
+
+625
+01:59:12,680 --> 01:59:16,119
+Evet o kıyı kullandığı için onu kullanmamız saçma.
+
+626
+01:59:16,119 --> 01:59:20,940
+O kuyruk kullanıyor, yani kuyruk kullanma sebebi de o zaten.
+
+627
+01:59:21,220 --> 01:59:26,100
+Yani sen diyorsun ki ben A'dan sonra B'ye bakacağım, sonra C'ye bakacağım.
+
+628
+01:59:26,420 --> 01:59:29,140
+Bu da bu arada graf böyle değilmiş yani.
+
+629
+01:59:30,019 --> 01:59:31,059
+Tamam, şimdi şöyle.
+
+630
+01:59:31,519 --> 01:59:36,840
+A'dan sonra B'ye bakacağım, B'den sonra C'ye bakacağım, sonra da E'ye bakacağım diyorsun.
+
+631
+01:59:37,059 --> 01:59:40,939
+Yani önce Bradford Surge kademe kademe yapıyor.
+
+632
+01:59:40,939 --> 01:59:44,420
+Yani bak şunu şöyle çizersem aslında daha rahat alacaksın.
+
+633
+01:59:44,539 --> 01:59:46,279
+Şöyle ağaçmış gibi göstereyim sana.
+
+634
+01:59:47,199 --> 01:59:47,739
+Tamam mı?
+
+635
+01:59:48,199 --> 01:59:49,819
+Bu böyle olsaydı mesela.
+
+636
+01:59:55,123 --> 02:00:20,483
+Mesela bu böyle olsaydı. Bradford Search diyor ki sana, bak önce bunu ziyaret edeceksin diyor. Sonra bunu, sonra bunu, sonra bunu. Yani birinci kademe bitti. Hop. Sonra ikinci kademede B'nin komşularını ziyaret edeceksin diyor. İkinci kademe bitti. Sonra C'nin komşusunu. Bunu ziyaret edeceksin diyor. Anlatabildim mi? Bu böyle gidiyor yani. Enine gidiyor böyle hop, şöyle gidiyor.
+
+637
+02:00:21,876 --> 02:00:43,596
+Mesela bunun da komşusu olur. Yani şurada H olsaydı, tamam şimdi H'ye şimdi sıra gelecekti. Sekizinci olarak H'ye sıra gelecekti. Şimdi bunu o yüzden kuyruk kullanıyor. Çünkü kuyruk kullandığında şeyi kaybetmiyor. Yani A dedi, hop B çıktı, B'ninkileri yazdı buraya D ve G diye. D ve G'yi kaybetmedim ama.
+
+638
+02:00:44,115 --> 02:01:11,496
+B'den iş sonra işim bitince C'ye bakacağım. Yani D ile G'ye bekleyecekler orada. O yüzden kuyruk bu da çok mantıklı. İşte C'nin komşusu F. F'yi kaybetmedim ama F'ye sıra gelene kadar O daha önünde kimler var? Yani önce E'ye bakacağım falan. O yüzden bu Q yani. Bunun başka mantıklı yolu yok. Ama eminim ki uğraşsam rekürsif de bir şekilde. Ya emin değilim açıkçası. Yani ben otursam nasıl yazardım bilmiyorum ama.
+
+639
+02:01:12,115 --> 02:01:16,216
+Her şeyin bir çözümü vardır. O da iptirsen, zorlasan bir şekilde rekürsük çözülüyordur.
+
+640
+02:01:16,876 --> 02:01:19,756
+Peki, var mı başka sonunuz aklınıza takılan?
+
+641
+02:01:20,395 --> 02:01:21,836
+Teşekkürler hocam, sağ olun.
+
+642
+02:01:22,216 --> 02:01:24,956
+Rica ederim. Var mı sonunuz aklınıza takılan?
+
+643
+02:01:27,436 --> 02:01:27,735
+Peki.
+
+644
+02:01:30,296 --> 02:01:31,676
+O zaman günlük bu kadar.
+
+645
+02:01:32,395 --> 02:01:36,496
+Haftaya görüşürüz. Ödev cuma mıydı? Ne demiştik ödev? Pazartesi ne gün demişiz?
+
+646
+02:01:39,036 --> 02:01:39,596
+20'sindeydi.
+
+647
+02:01:40,979 --> 02:01:51,139
+Yenisi pazar akşamıymış. Tamam, peki oldu. Çok teşekkürler dinlediğiniz için. Size güzel bir hafta diliyorum. Haftaya tekrar görüşmek üzere. İyi günler arkadaşlar.
