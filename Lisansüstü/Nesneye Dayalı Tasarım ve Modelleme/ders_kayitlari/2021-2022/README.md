@@ -1,4 +1,4 @@
-# Nesneye Dayalı Tasarım ve Modelleme Ders Kayıtları
+# Nesneye Dayalı Tasarım ve Modelleme Ders Kayıtları & Çalışma Özetleri
 
 > **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
@@ -9,19 +9,23 @@
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM5111 - 1
 
-Bu dizin, ilgili ders kayıtlarının altyazılarını (.srt) içermektedir. Notlar henüz yazılmamıştır.
+Bu dizin, ilgili ders kayıtlarının altyazılarını ve notu yazılmış dersler için kısa ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Kayıtları Dizini
 
 Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir). Notu olmayan dersler "—" ile gösterilmiştir.
 
-| Ders No | Tarih | Altyazı |
-| :---: | :---: | :---: |
-| **Ders 3** | 4 Kasım 2021 Perşembe | [SRT](altyazilar/ders_3.srt) |
-| **Ders 4** | 11 Kasım 2021 Perşembe | [SRT](altyazilar/ders_4.srt) |
-| **Ders 5** | 18 Kasım 2021 Perşembe | [SRT](altyazilar/ders_5.srt) |
-| **Ders 7** | 16 Aralık 2021 Perşembe | [SRT](altyazilar/ders_7.srt) |
-| **Ders 9** | 30 Aralık 2021 Perşembe | [SRT](altyazilar/ders_9.srt) |
+| Ders No | Tarih | Ders İçeriği / Konu Başlıkları | Altyazı | Kısa Not | Genişletilmiş Not |
+| :---: | :---: | :--- | :---: | :---: | :---: |
+| **Ders 3** | 4 Kasım 2021 Perşembe | Singleton, Adapter, Bridge, Composite ve Decorator Kalıpları | [SRT](altyazilar/ders_3.srt) | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | 11 Kasım 2021 Perşembe | Facade, Flyweight, Proxy, Chain of Responsibility ve Command Kalıpları | [SRT](altyazilar/ders_4.srt) | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | 18 Kasım 2021 Perşembe | Iterator, Memento ve Observer Kalıpları | [SRT](altyazilar/ders_5.srt) | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 7** | 16 Aralık 2021 Perşembe | Refactoring'e Giriş, JUnit ile Birim Sınaması ve İlk Kod Kusurları | [SRT](altyazilar/ders_7.srt) | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 9** | 30 Aralık 2021 Perşembe | Kod Kusurlarının Devamı ve Kiralama Örneğinin Adım Adım Refactoring'i | [SRT](altyazilar/ders_9.srt) | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
 
 > [!NOTE]
 > 1 numaralı ders kaydı kayıt arşivinde bulunmamaktadır.
