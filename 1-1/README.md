@@ -215,6 +215,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1RP4nCQInEXmM37EqY38MDMNV2YD2WMik?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Lineer Cebir Ders Kayıtları](./Lineer%20Cebir/ders_kayitlari/) ✨
 - 📄 **Not:** [Esma'nın el yazısı notu](./Lineer%20Cebir/slaytlar_notlar/2020/esma%20ekmek%C3%A7i%20notlar%C4%B1.pdf) GitHub'da açılmazsa indirin. ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
